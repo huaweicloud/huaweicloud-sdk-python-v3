@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteScalingInstanceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteScalingInstanceRequest:
     }
 
     def __init__(self, instance_id=None, instance_delete=None):
-        """DeleteScalingInstanceRequest - a model defined in huaweicloud sdk"""
+        """DeleteScalingInstanceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID，可参考[查询弹性伸缩组中的实例列表](https://support.huaweicloud.com/api-as/as_06_0301.html)获取。
+        :type instance_id: str
+        :param instance_delete: 实例移出伸缩组，是否删除云服务器实例。默认为no；可选值为yes或no。
+        :type instance_delete: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class DeleteScalingInstanceRequest:
         实例ID，可参考[查询弹性伸缩组中的实例列表](https://support.huaweicloud.com/api-as/as_06_0301.html)获取。
 
         :param instance_id: The instance_id of this DeleteScalingInstanceRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -84,7 +91,7 @@ class DeleteScalingInstanceRequest:
         实例移出伸缩组，是否删除云服务器实例。默认为no；可选值为yes或no。
 
         :param instance_delete: The instance_delete of this DeleteScalingInstanceRequest.
-        :type: str
+        :type instance_delete: str
         """
         self._instance_delete = instance_delete
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListServiceDiscoveryRulesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListServiceDiscoveryRulesResponse(SdkResponse):
     }
 
     def __init__(self, app_rules=None, error_code=None, error_message=None):
-        """ListServiceDiscoveryRulesResponse - a model defined in huaweicloud sdk"""
+        """ListServiceDiscoveryRulesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param app_rules: 查询结果规则信息。
+        :type app_rules: list[:class:`huaweicloudsdkaom.v2.AppRules`]
+        :param error_code: 响应码,AOM_INVENTORY_2000000代表正常返回。
+        :type error_code: str
+        :param error_message: 响应信息描述。
+        :type error_message: str
+        """
         
         super(ListServiceDiscoveryRulesResponse, self).__init__()
 
@@ -57,7 +66,7 @@ class ListServiceDiscoveryRulesResponse(SdkResponse):
         查询结果规则信息。
 
         :return: The app_rules of this ListServiceDiscoveryRulesResponse.
-        :rtype: list[AppRules]
+        :rtype: list[:class:`huaweicloudsdkaom.v2.AppRules`]
         """
         return self._app_rules
 
@@ -68,7 +77,7 @@ class ListServiceDiscoveryRulesResponse(SdkResponse):
         查询结果规则信息。
 
         :param app_rules: The app_rules of this ListServiceDiscoveryRulesResponse.
-        :type: list[AppRules]
+        :type app_rules: list[:class:`huaweicloudsdkaom.v2.AppRules`]
         """
         self._app_rules = app_rules
 
@@ -90,7 +99,7 @@ class ListServiceDiscoveryRulesResponse(SdkResponse):
         响应码,AOM_INVENTORY_2000000代表正常返回。
 
         :param error_code: The error_code of this ListServiceDiscoveryRulesResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -112,7 +121,7 @@ class ListServiceDiscoveryRulesResponse(SdkResponse):
         响应信息描述。
 
         :param error_message: The error_message of this ListServiceDiscoveryRulesResponse.
-        :type: str
+        :type error_message: str
         """
         self._error_message = error_message
 

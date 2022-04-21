@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowCompletionRateResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ShowCompletionRateResponse(SdkResponse):
     }
 
     def __init__(self, dividend_value=None, divisor_value=None, metric_name=None, metric_value=None, project_id=None, project_name=None):
-        """ShowCompletionRateResponse - a model defined in huaweicloud sdk"""
+        """ShowCompletionRateResponse
+
+        The model defined in huaweicloud sdk
+
+        :param dividend_value: 指标分子数值
+        :type dividend_value: str
+        :param divisor_value: 指标分母数值
+        :type divisor_value: str
+        :param metric_name: 指标名称
+        :type metric_name: str
+        :param metric_value: 指标数值
+        :type metric_value: str
+        :param project_id: 项目ID
+        :type project_id: str
+        :param project_name: 项目名称
+        :type project_name: str
+        """
         
         super(ShowCompletionRateResponse, self).__init__()
 
@@ -83,7 +98,7 @@ class ShowCompletionRateResponse(SdkResponse):
         指标分子数值
 
         :param dividend_value: The dividend_value of this ShowCompletionRateResponse.
-        :type: str
+        :type dividend_value: str
         """
         self._dividend_value = dividend_value
 
@@ -105,7 +120,7 @@ class ShowCompletionRateResponse(SdkResponse):
         指标分母数值
 
         :param divisor_value: The divisor_value of this ShowCompletionRateResponse.
-        :type: str
+        :type divisor_value: str
         """
         self._divisor_value = divisor_value
 
@@ -127,7 +142,7 @@ class ShowCompletionRateResponse(SdkResponse):
         指标名称
 
         :param metric_name: The metric_name of this ShowCompletionRateResponse.
-        :type: str
+        :type metric_name: str
         """
         self._metric_name = metric_name
 
@@ -149,7 +164,7 @@ class ShowCompletionRateResponse(SdkResponse):
         指标数值
 
         :param metric_value: The metric_value of this ShowCompletionRateResponse.
-        :type: str
+        :type metric_value: str
         """
         self._metric_value = metric_value
 
@@ -171,7 +186,7 @@ class ShowCompletionRateResponse(SdkResponse):
         项目ID
 
         :param project_id: The project_id of this ShowCompletionRateResponse.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -193,7 +208,7 @@ class ShowCompletionRateResponse(SdkResponse):
         项目名称
 
         :param project_name: The project_name of this ShowCompletionRateResponse.
-        :type: str
+        :type project_name: str
         """
         self._project_name = project_name
 

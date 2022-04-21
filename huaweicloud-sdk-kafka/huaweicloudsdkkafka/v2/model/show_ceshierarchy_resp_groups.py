@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowCeshierarchyRespGroups:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowCeshierarchyRespGroups:
     }
 
     def __init__(self, name=None, queues=None):
-        """ShowCeshierarchyRespGroups - a model defined in huaweicloud sdk"""
+        """ShowCeshierarchyRespGroups
+
+        The model defined in huaweicloud sdk
+
+        :param name: 消费组名称。
+        :type name: str
+        :param queues: topic信息。
+        :type queues: list[:class:`huaweicloudsdkkafka.v2.ShowCeshierarchyRespQueues1`]
+        """
         
         
 
@@ -63,7 +70,7 @@ class ShowCeshierarchyRespGroups:
         消费组名称。
 
         :param name: The name of this ShowCeshierarchyRespGroups.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -74,7 +81,7 @@ class ShowCeshierarchyRespGroups:
         topic信息。
 
         :return: The queues of this ShowCeshierarchyRespGroups.
-        :rtype: list[ShowCeshierarchyRespQueues1]
+        :rtype: list[:class:`huaweicloudsdkkafka.v2.ShowCeshierarchyRespQueues1`]
         """
         return self._queues
 
@@ -85,7 +92,7 @@ class ShowCeshierarchyRespGroups:
         topic信息。
 
         :param queues: The queues of this ShowCeshierarchyRespGroups.
-        :type: list[ShowCeshierarchyRespQueues1]
+        :type queues: list[:class:`huaweicloudsdkkafka.v2.ShowCeshierarchyRespQueues1`]
         """
         self._queues = queues
 

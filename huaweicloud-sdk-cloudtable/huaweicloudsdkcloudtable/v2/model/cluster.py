@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Cluster:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class Cluster:
     }
 
     def __init__(self, auth_mode=None, enable_lemon=None, enable_open_tsdb=None, instance=None, name=None, storage_size=None, storage_type=None, vpc_id=None, datastore=None):
-        """Cluster - a model defined in huaweicloud sdk"""
+        """Cluster
+
+        The model defined in huaweicloud sdk
+
+        :param auth_mode: 是否开启IAM权限认证。 - false：不开启 - true：开启
+        :type auth_mode: str
+        :param enable_lemon: 是否开启Lemon(目前已关闭该参数，填false即可) - false：不开启 - true：开启
+        :type enable_lemon: bool
+        :param enable_open_tsdb: 是否开启OpenTSDB。 - false：不开启 - true：开启
+        :type enable_open_tsdb: bool
+        :param instance: 
+        :type instance: :class:`huaweicloudsdkcloudtable.v2.Instance`
+        :param name: CloudTable集群的名称。
+        :type name: str
+        :param storage_size: 存储值的大小。  取值范围: 1-[10240-1024*1024*1024]
+        :type storage_size: int
+        :param storage_type: 存储类型： - ULTRAHIGH：超高IO - COMMON：普通IO
+        :type storage_type: str
+        :param vpc_id: 集群所在的（虚拟网络私有云）VPC。
+        :type vpc_id: str
+        :param datastore: 
+        :type datastore: :class:`huaweicloudsdkcloudtable.v2.Datastore`
+        """
         
         
 
@@ -93,7 +114,7 @@ class Cluster:
         是否开启IAM权限认证。 - false：不开启 - true：开启
 
         :param auth_mode: The auth_mode of this Cluster.
-        :type: str
+        :type auth_mode: str
         """
         self._auth_mode = auth_mode
 
@@ -115,7 +136,7 @@ class Cluster:
         是否开启Lemon(目前已关闭该参数，填false即可) - false：不开启 - true：开启
 
         :param enable_lemon: The enable_lemon of this Cluster.
-        :type: bool
+        :type enable_lemon: bool
         """
         self._enable_lemon = enable_lemon
 
@@ -137,7 +158,7 @@ class Cluster:
         是否开启OpenTSDB。 - false：不开启 - true：开启
 
         :param enable_open_tsdb: The enable_open_tsdb of this Cluster.
-        :type: bool
+        :type enable_open_tsdb: bool
         """
         self._enable_open_tsdb = enable_open_tsdb
 
@@ -147,7 +168,7 @@ class Cluster:
 
 
         :return: The instance of this Cluster.
-        :rtype: Instance
+        :rtype: :class:`huaweicloudsdkcloudtable.v2.Instance`
         """
         return self._instance
 
@@ -157,7 +178,7 @@ class Cluster:
 
 
         :param instance: The instance of this Cluster.
-        :type: Instance
+        :type instance: :class:`huaweicloudsdkcloudtable.v2.Instance`
         """
         self._instance = instance
 
@@ -179,7 +200,7 @@ class Cluster:
         CloudTable集群的名称。
 
         :param name: The name of this Cluster.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -201,7 +222,7 @@ class Cluster:
         存储值的大小。  取值范围: 1-[10240-1024*1024*1024]
 
         :param storage_size: The storage_size of this Cluster.
-        :type: int
+        :type storage_size: int
         """
         self._storage_size = storage_size
 
@@ -223,7 +244,7 @@ class Cluster:
         存储类型： - ULTRAHIGH：超高IO - COMMON：普通IO
 
         :param storage_type: The storage_type of this Cluster.
-        :type: str
+        :type storage_type: str
         """
         self._storage_type = storage_type
 
@@ -245,7 +266,7 @@ class Cluster:
         集群所在的（虚拟网络私有云）VPC。
 
         :param vpc_id: The vpc_id of this Cluster.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -255,7 +276,7 @@ class Cluster:
 
 
         :return: The datastore of this Cluster.
-        :rtype: Datastore
+        :rtype: :class:`huaweicloudsdkcloudtable.v2.Datastore`
         """
         return self._datastore
 
@@ -265,7 +286,7 @@ class Cluster:
 
 
         :param datastore: The datastore of this Cluster.
-        :type: Datastore
+        :type datastore: :class:`huaweicloudsdkcloudtable.v2.Datastore`
         """
         self._datastore = datastore
 

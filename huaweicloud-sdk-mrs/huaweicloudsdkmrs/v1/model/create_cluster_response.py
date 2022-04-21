@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateClusterResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateClusterResponse(SdkResponse):
     }
 
     def __init__(self, result=None, msg=None, cluster_id=None):
-        """CreateClusterResponse - a model defined in huaweicloud sdk"""
+        """CreateClusterResponse
+
+        The model defined in huaweicloud sdk
+
+        :param result:   操作结果。  true：操作成功  false：操作失败
+        :type result: bool
+        :param msg: 系统提示信息，可为空。
+        :type msg: str
+        :param cluster_id: 集群创建成功后系统返回的集群ID值。
+        :type cluster_id: str
+        """
         
         super(CreateClusterResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class CreateClusterResponse(SdkResponse):
           操作结果。  true：操作成功  false：操作失败
 
         :param result: The result of this CreateClusterResponse.
-        :type: bool
+        :type result: bool
         """
         self._result = result
 
@@ -90,7 +99,7 @@ class CreateClusterResponse(SdkResponse):
         系统提示信息，可为空。
 
         :param msg: The msg of this CreateClusterResponse.
-        :type: str
+        :type msg: str
         """
         self._msg = msg
 
@@ -112,7 +121,7 @@ class CreateClusterResponse(SdkResponse):
         集群创建成功后系统返回的集群ID值。
 
         :param cluster_id: The cluster_id of this CreateClusterResponse.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 

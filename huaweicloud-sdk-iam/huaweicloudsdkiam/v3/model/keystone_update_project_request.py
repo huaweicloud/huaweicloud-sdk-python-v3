@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneUpdateProjectRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class KeystoneUpdateProjectRequest:
     }
 
     def __init__(self, project_id=None, body=None):
-        """KeystoneUpdateProjectRequest - a model defined in huaweicloud sdk"""
+        """KeystoneUpdateProjectRequest
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: 待修改的项目ID，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
+        :type project_id: str
+        :param body: Body of the KeystoneUpdateProjectRequest
+        :type body: :class:`huaweicloudsdkiam.v3.KeystoneUpdateProjectRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class KeystoneUpdateProjectRequest:
         待修改的项目ID，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param project_id: The project_id of this KeystoneUpdateProjectRequest.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -72,7 +79,7 @@ class KeystoneUpdateProjectRequest:
 
 
         :return: The body of this KeystoneUpdateProjectRequest.
-        :rtype: KeystoneUpdateProjectRequestBody
+        :rtype: :class:`huaweicloudsdkiam.v3.KeystoneUpdateProjectRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class KeystoneUpdateProjectRequest:
 
 
         :param body: The body of this KeystoneUpdateProjectRequest.
-        :type: KeystoneUpdateProjectRequestBody
+        :type body: :class:`huaweicloudsdkiam.v3.KeystoneUpdateProjectRequestBody`
         """
         self._body = body
 

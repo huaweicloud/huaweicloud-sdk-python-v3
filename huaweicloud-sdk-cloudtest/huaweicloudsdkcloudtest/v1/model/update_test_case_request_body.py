@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateTestCaseRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class UpdateTestCaseRequestBody:
     }
 
     def __init__(self, name=None, service_id=None, rank_id=None, testcase_number=None, extend_info=None):
-        """UpdateTestCaseRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateTestCaseRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param name: 云测页面上显示的用例名称，长度为[3-128]位字符
+        :type name: str
+        :param service_id: 注册测试类型服务接口返回的服务id，取值范围为10-9999
+        :type service_id: int
+        :param rank_id: 测试用例等级，可选值为[0,1,2,3,4]，不填时云测默认为2
+        :type rank_id: str
+        :param testcase_number: 用例编号，不填该值时云测会自动生成，长度为[3-128]位字符
+        :type testcase_number: str
+        :param extend_info: 
+        :type extend_info: :class:`huaweicloudsdkcloudtest.v1.ExternalServiceBizCase`
+        """
         
         
 
@@ -76,7 +89,7 @@ class UpdateTestCaseRequestBody:
         云测页面上显示的用例名称，长度为[3-128]位字符
 
         :param name: The name of this UpdateTestCaseRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -98,7 +111,7 @@ class UpdateTestCaseRequestBody:
         注册测试类型服务接口返回的服务id，取值范围为10-9999
 
         :param service_id: The service_id of this UpdateTestCaseRequestBody.
-        :type: int
+        :type service_id: int
         """
         self._service_id = service_id
 
@@ -120,7 +133,7 @@ class UpdateTestCaseRequestBody:
         测试用例等级，可选值为[0,1,2,3,4]，不填时云测默认为2
 
         :param rank_id: The rank_id of this UpdateTestCaseRequestBody.
-        :type: str
+        :type rank_id: str
         """
         self._rank_id = rank_id
 
@@ -142,7 +155,7 @@ class UpdateTestCaseRequestBody:
         用例编号，不填该值时云测会自动生成，长度为[3-128]位字符
 
         :param testcase_number: The testcase_number of this UpdateTestCaseRequestBody.
-        :type: str
+        :type testcase_number: str
         """
         self._testcase_number = testcase_number
 
@@ -152,7 +165,7 @@ class UpdateTestCaseRequestBody:
 
 
         :return: The extend_info of this UpdateTestCaseRequestBody.
-        :rtype: ExternalServiceBizCase
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ExternalServiceBizCase`
         """
         return self._extend_info
 
@@ -162,7 +175,7 @@ class UpdateTestCaseRequestBody:
 
 
         :param extend_info: The extend_info of this UpdateTestCaseRequestBody.
-        :type: ExternalServiceBizCase
+        :type extend_info: :class:`huaweicloudsdkcloudtest.v1.ExternalServiceBizCase`
         """
         self._extend_info = extend_info
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateClusterPublicEip:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateClusterPublicEip:
     }
 
     def __init__(self, band_width=None):
-        """CreateClusterPublicEip - a model defined in huaweicloud sdk"""
+        """CreateClusterPublicEip
+
+        The model defined in huaweicloud sdk
+
+        :param band_width: 
+        :type band_width: :class:`huaweicloudsdkcss.v2.CreateClusterPublicEipSize`
+        """
         
         
 
@@ -45,7 +50,7 @@ class CreateClusterPublicEip:
 
 
         :return: The band_width of this CreateClusterPublicEip.
-        :rtype: CreateClusterPublicEipSize
+        :rtype: :class:`huaweicloudsdkcss.v2.CreateClusterPublicEipSize`
         """
         return self._band_width
 
@@ -55,7 +60,7 @@ class CreateClusterPublicEip:
 
 
         :param band_width: The band_width of this CreateClusterPublicEip.
-        :type: CreateClusterPublicEipSize
+        :type band_width: :class:`huaweicloudsdkcss.v2.CreateClusterPublicEipSize`
         """
         self._band_width = band_width
 

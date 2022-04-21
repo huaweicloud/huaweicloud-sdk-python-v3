@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AvailableZone:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class AvailableZone:
     }
 
     def __init__(self, name=None, id=None, code=None, port=None, local_name=None, specs=None):
-        """AvailableZone - a model defined in huaweicloud sdk"""
+        """AvailableZone
+
+        The model defined in huaweicloud sdk
+
+        :param name: 可用区名称。
+        :type name: str
+        :param id: 实例创建失败错误信息
+        :type id: str
+        :param code: 可用区编码。
+        :type code: str
+        :param port: 可用区端口号。
+        :type port: str
+        :param local_name: 
+        :type local_name: :class:`huaweicloudsdkapig.v2.LocalName`
+        :param specs: 可用区支持的实例规格。
+        :type specs: dict(str, bool)
+        """
         
         
 
@@ -83,7 +98,7 @@ class AvailableZone:
         可用区名称。
 
         :param name: The name of this AvailableZone.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -105,7 +120,7 @@ class AvailableZone:
         实例创建失败错误信息
 
         :param id: The id of this AvailableZone.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -127,7 +142,7 @@ class AvailableZone:
         可用区编码。
 
         :param code: The code of this AvailableZone.
-        :type: str
+        :type code: str
         """
         self._code = code
 
@@ -149,7 +164,7 @@ class AvailableZone:
         可用区端口号。
 
         :param port: The port of this AvailableZone.
-        :type: str
+        :type port: str
         """
         self._port = port
 
@@ -159,7 +174,7 @@ class AvailableZone:
 
 
         :return: The local_name of this AvailableZone.
-        :rtype: LocalName
+        :rtype: :class:`huaweicloudsdkapig.v2.LocalName`
         """
         return self._local_name
 
@@ -169,7 +184,7 @@ class AvailableZone:
 
 
         :param local_name: The local_name of this AvailableZone.
-        :type: LocalName
+        :type local_name: :class:`huaweicloudsdkapig.v2.LocalName`
         """
         self._local_name = local_name
 
@@ -191,7 +206,7 @@ class AvailableZone:
         可用区支持的实例规格。
 
         :param specs: The specs of this AvailableZone.
-        :type: dict(str, bool)
+        :type specs: dict(str, bool)
         """
         self._specs = specs
 

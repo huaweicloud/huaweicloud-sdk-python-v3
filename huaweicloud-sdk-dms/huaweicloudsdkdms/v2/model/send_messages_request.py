@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SendMessagesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class SendMessagesRequest:
     }
 
     def __init__(self, queue_id=None, body=None):
-        """SendMessagesRequest - a model defined in huaweicloud sdk"""
+        """SendMessagesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param queue_id: 指定的队列ID。
+        :type queue_id: str
+        :param body: Body of the SendMessagesRequest
+        :type body: :class:`huaweicloudsdkdms.v2.SendMessagesReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class SendMessagesRequest:
         指定的队列ID。
 
         :param queue_id: The queue_id of this SendMessagesRequest.
-        :type: str
+        :type queue_id: str
         """
         self._queue_id = queue_id
 
@@ -72,7 +79,7 @@ class SendMessagesRequest:
 
 
         :return: The body of this SendMessagesRequest.
-        :rtype: SendMessagesReq
+        :rtype: :class:`huaweicloudsdkdms.v2.SendMessagesReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class SendMessagesRequest:
 
 
         :param body: The body of this SendMessagesRequest.
-        :type: SendMessagesReq
+        :type body: :class:`huaweicloudsdkdms.v2.SendMessagesReq`
         """
         self._body = body
 

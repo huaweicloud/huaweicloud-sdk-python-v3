@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCommonPoolsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListCommonPoolsRequest:
     }
 
     def __init__(self, fields=None, name=None, public_border_group=None):
-        """ListCommonPoolsRequest - a model defined in huaweicloud sdk"""
+        """ListCommonPoolsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param fields: 显示，形式为\&quot;fields&#x3D;id&amp;fields&#x3D;name&amp;...\&quot;  支持字段：id/name/status/type/used/allow_share_bandwidth_types/public_border_group
+        :type fields: str
+        :param name: 公共池名称
+        :type name: str
+        :param public_border_group: 公共池位于中心还是边缘
+        :type public_border_group: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class ListCommonPoolsRequest:
         显示，形式为\"fields=id&fields=name&...\"  支持字段：id/name/status/type/used/allow_share_bandwidth_types/public_border_group
 
         :param fields: The fields of this ListCommonPoolsRequest.
-        :type: str
+        :type fields: str
         """
         self._fields = fields
 
@@ -90,7 +99,7 @@ class ListCommonPoolsRequest:
         公共池名称
 
         :param name: The name of this ListCommonPoolsRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -112,7 +121,7 @@ class ListCommonPoolsRequest:
         公共池位于中心还是边缘
 
         :param public_border_group: The public_border_group of this ListCommonPoolsRequest.
-        :type: str
+        :type public_border_group: str
         """
         self._public_border_group = public_border_group
 

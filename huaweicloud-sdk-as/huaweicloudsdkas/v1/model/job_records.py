@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class JobRecords:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class JobRecords:
     }
 
     def __init__(self, job_name=None, record_type=None, record_time=None, request=None, response=None, code=None, message=None, job_status=None):
-        """JobRecords - a model defined in huaweicloud sdk"""
+        """JobRecords
+
+        The model defined in huaweicloud sdk
+
+        :param job_name: 任务名称
+        :type job_name: str
+        :param record_type: 记录类型。API：接口调用类型。MEG：消息类型。
+        :type record_type: str
+        :param record_time: 记录时间。
+        :type record_time: str
+        :param request: 请求体，仅当record_type为API时有效
+        :type request: str
+        :param response: 返回体，仅当record_type为API时有效
+        :type response: str
+        :param code: 返回码，仅当record_type为API时有效
+        :type code: str
+        :param message: 消息，仅当record_type为MEG时有效
+        :type message: str
+        :param job_status: job执行状态：SUCCESS：成功。FAIL：失败。
+        :type job_status: str
+        """
         
         
 
@@ -93,7 +112,7 @@ class JobRecords:
         任务名称
 
         :param job_name: The job_name of this JobRecords.
-        :type: str
+        :type job_name: str
         """
         self._job_name = job_name
 
@@ -115,7 +134,7 @@ class JobRecords:
         记录类型。API：接口调用类型。MEG：消息类型。
 
         :param record_type: The record_type of this JobRecords.
-        :type: str
+        :type record_type: str
         """
         self._record_type = record_type
 
@@ -137,7 +156,7 @@ class JobRecords:
         记录时间。
 
         :param record_time: The record_time of this JobRecords.
-        :type: str
+        :type record_time: str
         """
         self._record_time = record_time
 
@@ -159,7 +178,7 @@ class JobRecords:
         请求体，仅当record_type为API时有效
 
         :param request: The request of this JobRecords.
-        :type: str
+        :type request: str
         """
         self._request = request
 
@@ -181,7 +200,7 @@ class JobRecords:
         返回体，仅当record_type为API时有效
 
         :param response: The response of this JobRecords.
-        :type: str
+        :type response: str
         """
         self._response = response
 
@@ -203,7 +222,7 @@ class JobRecords:
         返回码，仅当record_type为API时有效
 
         :param code: The code of this JobRecords.
-        :type: str
+        :type code: str
         """
         self._code = code
 
@@ -225,7 +244,7 @@ class JobRecords:
         消息，仅当record_type为MEG时有效
 
         :param message: The message of this JobRecords.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -247,7 +266,7 @@ class JobRecords:
         job执行状态：SUCCESS：成功。FAIL：失败。
 
         :param job_status: The job_status of this JobRecords.
-        :type: str
+        :type job_status: str
         """
         self._job_status = job_status
 

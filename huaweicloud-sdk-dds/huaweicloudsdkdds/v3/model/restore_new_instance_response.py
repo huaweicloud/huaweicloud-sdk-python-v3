@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestoreNewInstanceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -64,7 +63,47 @@ class RestoreNewInstanceResponse(SdkResponse):
     }
 
     def __init__(self, id=None, datastore=None, name=None, created=None, status=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, disk_encryption_id=None, mode=None, flavor=None, backup_strategy=None, enterprise_project_id=None, ssl_option=None, dss_pool_id=None, job_id=None):
-        """RestoreNewInstanceResponse - a model defined in huaweicloud sdk"""
+        """RestoreNewInstanceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 实例ID。
+        :type id: str
+        :param datastore: 
+        :type datastore: :class:`huaweicloudsdkdds.v3.Datastore`
+        :param name: 实例名称，与请求参数相同。
+        :type name: str
+        :param created: 创建时间为本地时间，格式为“yyyy-mm-dd hh:mm:ss”。
+        :type created: str
+        :param status: 实例状态，取值为“creating”。
+        :type status: str
+        :param region: 区域ID，与请求参数相同。
+        :type region: str
+        :param availability_zone: 可用区ID，与请求参数相同。
+        :type availability_zone: str
+        :param vpc_id: 虚拟私有云ID，与请求参数相同。
+        :type vpc_id: str
+        :param subnet_id: 子网ID，与请求参数相同。
+        :type subnet_id: str
+        :param security_group_id: 实例所属的安全组ID，与请求参数相同。
+        :type security_group_id: str
+        :param disk_encryption_id: 磁盘加密的密钥ID，与请求参数相同。
+        :type disk_encryption_id: str
+        :param mode: 实例类型，与请求参数相同。
+        :type mode: str
+        :param flavor: 实例规格详情，与请求参数相同。
+        :type flavor: list[:class:`huaweicloudsdkdds.v3.RestoreNewInstanceFlavorOption`]
+        :param backup_strategy: 
+        :type backup_strategy: :class:`huaweicloudsdkdds.v3.BackupStrategy`
+        :param enterprise_project_id: 企业项目ID。取值为“0”，表示为default企业项目。
+        :type enterprise_project_id: str
+        :param ssl_option: SSL开关选项，与请求参数相同。
+        :type ssl_option: str
+        :param dss_pool_id: 专属存储池ID。
+        :type dss_pool_id: str
+        :param job_id: 创建实例的工作流ID。
+        :type job_id: str
+        """
         
         super(RestoreNewInstanceResponse, self).__init__()
 
@@ -143,7 +182,7 @@ class RestoreNewInstanceResponse(SdkResponse):
         实例ID。
 
         :param id: The id of this RestoreNewInstanceResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -153,7 +192,7 @@ class RestoreNewInstanceResponse(SdkResponse):
 
 
         :return: The datastore of this RestoreNewInstanceResponse.
-        :rtype: Datastore
+        :rtype: :class:`huaweicloudsdkdds.v3.Datastore`
         """
         return self._datastore
 
@@ -163,7 +202,7 @@ class RestoreNewInstanceResponse(SdkResponse):
 
 
         :param datastore: The datastore of this RestoreNewInstanceResponse.
-        :type: Datastore
+        :type datastore: :class:`huaweicloudsdkdds.v3.Datastore`
         """
         self._datastore = datastore
 
@@ -185,7 +224,7 @@ class RestoreNewInstanceResponse(SdkResponse):
         实例名称，与请求参数相同。
 
         :param name: The name of this RestoreNewInstanceResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -207,7 +246,7 @@ class RestoreNewInstanceResponse(SdkResponse):
         创建时间为本地时间，格式为“yyyy-mm-dd hh:mm:ss”。
 
         :param created: The created of this RestoreNewInstanceResponse.
-        :type: str
+        :type created: str
         """
         self._created = created
 
@@ -229,7 +268,7 @@ class RestoreNewInstanceResponse(SdkResponse):
         实例状态，取值为“creating”。
 
         :param status: The status of this RestoreNewInstanceResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -251,7 +290,7 @@ class RestoreNewInstanceResponse(SdkResponse):
         区域ID，与请求参数相同。
 
         :param region: The region of this RestoreNewInstanceResponse.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -273,7 +312,7 @@ class RestoreNewInstanceResponse(SdkResponse):
         可用区ID，与请求参数相同。
 
         :param availability_zone: The availability_zone of this RestoreNewInstanceResponse.
-        :type: str
+        :type availability_zone: str
         """
         self._availability_zone = availability_zone
 
@@ -295,7 +334,7 @@ class RestoreNewInstanceResponse(SdkResponse):
         虚拟私有云ID，与请求参数相同。
 
         :param vpc_id: The vpc_id of this RestoreNewInstanceResponse.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -317,7 +356,7 @@ class RestoreNewInstanceResponse(SdkResponse):
         子网ID，与请求参数相同。
 
         :param subnet_id: The subnet_id of this RestoreNewInstanceResponse.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -339,7 +378,7 @@ class RestoreNewInstanceResponse(SdkResponse):
         实例所属的安全组ID，与请求参数相同。
 
         :param security_group_id: The security_group_id of this RestoreNewInstanceResponse.
-        :type: str
+        :type security_group_id: str
         """
         self._security_group_id = security_group_id
 
@@ -361,7 +400,7 @@ class RestoreNewInstanceResponse(SdkResponse):
         磁盘加密的密钥ID，与请求参数相同。
 
         :param disk_encryption_id: The disk_encryption_id of this RestoreNewInstanceResponse.
-        :type: str
+        :type disk_encryption_id: str
         """
         self._disk_encryption_id = disk_encryption_id
 
@@ -383,7 +422,7 @@ class RestoreNewInstanceResponse(SdkResponse):
         实例类型，与请求参数相同。
 
         :param mode: The mode of this RestoreNewInstanceResponse.
-        :type: str
+        :type mode: str
         """
         self._mode = mode
 
@@ -394,7 +433,7 @@ class RestoreNewInstanceResponse(SdkResponse):
         实例规格详情，与请求参数相同。
 
         :return: The flavor of this RestoreNewInstanceResponse.
-        :rtype: list[RestoreNewInstanceFlavorOption]
+        :rtype: list[:class:`huaweicloudsdkdds.v3.RestoreNewInstanceFlavorOption`]
         """
         return self._flavor
 
@@ -405,7 +444,7 @@ class RestoreNewInstanceResponse(SdkResponse):
         实例规格详情，与请求参数相同。
 
         :param flavor: The flavor of this RestoreNewInstanceResponse.
-        :type: list[RestoreNewInstanceFlavorOption]
+        :type flavor: list[:class:`huaweicloudsdkdds.v3.RestoreNewInstanceFlavorOption`]
         """
         self._flavor = flavor
 
@@ -415,7 +454,7 @@ class RestoreNewInstanceResponse(SdkResponse):
 
 
         :return: The backup_strategy of this RestoreNewInstanceResponse.
-        :rtype: BackupStrategy
+        :rtype: :class:`huaweicloudsdkdds.v3.BackupStrategy`
         """
         return self._backup_strategy
 
@@ -425,7 +464,7 @@ class RestoreNewInstanceResponse(SdkResponse):
 
 
         :param backup_strategy: The backup_strategy of this RestoreNewInstanceResponse.
-        :type: BackupStrategy
+        :type backup_strategy: :class:`huaweicloudsdkdds.v3.BackupStrategy`
         """
         self._backup_strategy = backup_strategy
 
@@ -447,7 +486,7 @@ class RestoreNewInstanceResponse(SdkResponse):
         企业项目ID。取值为“0”，表示为default企业项目。
 
         :param enterprise_project_id: The enterprise_project_id of this RestoreNewInstanceResponse.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -469,7 +508,7 @@ class RestoreNewInstanceResponse(SdkResponse):
         SSL开关选项，与请求参数相同。
 
         :param ssl_option: The ssl_option of this RestoreNewInstanceResponse.
-        :type: str
+        :type ssl_option: str
         """
         self._ssl_option = ssl_option
 
@@ -491,7 +530,7 @@ class RestoreNewInstanceResponse(SdkResponse):
         专属存储池ID。
 
         :param dss_pool_id: The dss_pool_id of this RestoreNewInstanceResponse.
-        :type: str
+        :type dss_pool_id: str
         """
         self._dss_pool_id = dss_pool_id
 
@@ -513,7 +552,7 @@ class RestoreNewInstanceResponse(SdkResponse):
         创建实例的工作流ID。
 
         :param job_id: The job_id of this RestoreNewInstanceResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 

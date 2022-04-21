@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ClassroomCard:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ClassroomCard:
     }
 
     def __init__(self, classroom_id=None, name=None, description=None, credit=None, status=None):
-        """ClassroomCard - a model defined in huaweicloud sdk"""
+        """ClassroomCard
+
+        The model defined in huaweicloud sdk
+
+        :param classroom_id: 课堂ID
+        :type classroom_id: str
+        :param name: 课堂名称
+        :type name: str
+        :param description: 课堂描述
+        :type description: str
+        :param credit: 课堂学分
+        :type credit: float
+        :param status: 课堂当前的状态，normal：课堂处于正常状态，archive：课堂已归档
+        :type status: str
+        """
         
         
 
@@ -73,7 +86,7 @@ class ClassroomCard:
         课堂ID
 
         :param classroom_id: The classroom_id of this ClassroomCard.
-        :type: str
+        :type classroom_id: str
         """
         self._classroom_id = classroom_id
 
@@ -95,7 +108,7 @@ class ClassroomCard:
         课堂名称
 
         :param name: The name of this ClassroomCard.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -117,7 +130,7 @@ class ClassroomCard:
         课堂描述
 
         :param description: The description of this ClassroomCard.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -139,7 +152,7 @@ class ClassroomCard:
         课堂学分
 
         :param credit: The credit of this ClassroomCard.
-        :type: float
+        :type credit: float
         """
         self._credit = credit
 
@@ -161,7 +174,7 @@ class ClassroomCard:
         课堂当前的状态，normal：课堂处于正常状态，archive：课堂已归档
 
         :param status: The status of this ClassroomCard.
-        :type: str
+        :type status: str
         """
         self._status = status
 

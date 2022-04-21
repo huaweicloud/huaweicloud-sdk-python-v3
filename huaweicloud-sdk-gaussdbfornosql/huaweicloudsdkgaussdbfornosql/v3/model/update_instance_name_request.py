@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateInstanceNameRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateInstanceNameRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """UpdateInstanceNameRequest - a model defined in huaweicloud sdk"""
+        """UpdateInstanceNameRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param body: Body of the UpdateInstanceNameRequest
+        :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.UpdateInstanceNameRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateInstanceNameRequest:
         实例ID。
 
         :param instance_id: The instance_id of this UpdateInstanceNameRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -72,7 +79,7 @@ class UpdateInstanceNameRequest:
 
 
         :return: The body of this UpdateInstanceNameRequest.
-        :rtype: UpdateInstanceNameRequestBody
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.UpdateInstanceNameRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateInstanceNameRequest:
 
 
         :param body: The body of this UpdateInstanceNameRequest.
-        :type: UpdateInstanceNameRequestBody
+        :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.UpdateInstanceNameRequestBody`
         """
         self._body = body
 

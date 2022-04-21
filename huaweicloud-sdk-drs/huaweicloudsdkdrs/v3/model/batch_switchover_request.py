@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchSwitchoverRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchSwitchoverRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """BatchSwitchoverRequest - a model defined in huaweicloud sdk"""
+        """BatchSwitchoverRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 请求语言类型
+        :type x_language: str
+        :param body: Body of the BatchSwitchoverRequest
+        :type body: :class:`huaweicloudsdkdrs.v3.BatchSwitchoverReq`
+        """
         
         
 
@@ -63,7 +70,7 @@ class BatchSwitchoverRequest:
         请求语言类型
 
         :param x_language: The x_language of this BatchSwitchoverRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -73,7 +80,7 @@ class BatchSwitchoverRequest:
 
 
         :return: The body of this BatchSwitchoverRequest.
-        :rtype: BatchSwitchoverReq
+        :rtype: :class:`huaweicloudsdkdrs.v3.BatchSwitchoverReq`
         """
         return self._body
 
@@ -83,7 +90,7 @@ class BatchSwitchoverRequest:
 
 
         :param body: The body of this BatchSwitchoverRequest.
-        :type: BatchSwitchoverReq
+        :type body: :class:`huaweicloudsdkdrs.v3.BatchSwitchoverReq`
         """
         self._body = body
 

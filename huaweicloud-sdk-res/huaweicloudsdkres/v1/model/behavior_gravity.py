@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BehaviorGravity:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class BehaviorGravity:
     }
 
     def __init__(self, weaken_factor=None, view_type=None, algo_type=None):
-        """BehaviorGravity - a model defined in huaweicloud sdk"""
+        """BehaviorGravity
+
+        The model defined in huaweicloud sdk
+
+        :param weaken_factor: 衰减因子。
+        :type weaken_factor: float
+        :param view_type: 行为次数统计方法： - pv，访问量 - uv，独立访客
+        :type view_type: str
+        :param algo_type: 算法类型: - normal，通用 - time，时间
+        :type algo_type: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class BehaviorGravity:
         衰减因子。
 
         :param weaken_factor: The weaken_factor of this BehaviorGravity.
-        :type: float
+        :type weaken_factor: float
         """
         self._weaken_factor = weaken_factor
 
@@ -90,7 +99,7 @@ class BehaviorGravity:
         行为次数统计方法： - pv，访问量 - uv，独立访客
 
         :param view_type: The view_type of this BehaviorGravity.
-        :type: str
+        :type view_type: str
         """
         self._view_type = view_type
 
@@ -112,7 +121,7 @@ class BehaviorGravity:
         算法类型: - normal，通用 - time，时间
 
         :param algo_type: The algo_type of this BehaviorGravity.
-        :type: str
+        :type algo_type: str
         """
         self._algo_type = algo_type
 

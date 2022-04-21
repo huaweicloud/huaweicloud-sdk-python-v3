@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ClusterDetailActionProgress:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ClusterDetailActionProgress:
     }
 
     def __init__(self, creating=None):
-        """ClusterDetailActionProgress - a model defined in huaweicloud sdk"""
+        """ClusterDetailActionProgress
+
+        The model defined in huaweicloud sdk
+
+        :param creating: 进度百分比。
+        :type creating: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class ClusterDetailActionProgress:
         进度百分比。
 
         :param creating: The creating of this ClusterDetailActionProgress.
-        :type: str
+        :type creating: str
         """
         self._creating = creating
 

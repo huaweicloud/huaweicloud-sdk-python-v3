@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowKeypairResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowKeypairResponse(SdkResponse):
     }
 
     def __init__(self, name=None, public_key=None, user_id=None, fingerprint=None):
-        """ShowKeypairResponse - a model defined in huaweicloud sdk"""
+        """ShowKeypairResponse
+
+        The model defined in huaweicloud sdk
+
+        :param name: 密钥名称。
+        :type name: str
+        :param public_key:   密钥对应publicKey信息。
+        :type public_key: str
+        :param user_id: 用户ID。
+        :type user_id: str
+        :param fingerprint:   密钥对应指纹信息。
+        :type fingerprint: str
+        """
         
         super(ShowKeypairResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class ShowKeypairResponse(SdkResponse):
         密钥名称。
 
         :param name: The name of this ShowKeypairResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -95,7 +106,7 @@ class ShowKeypairResponse(SdkResponse):
           密钥对应publicKey信息。
 
         :param public_key: The public_key of this ShowKeypairResponse.
-        :type: str
+        :type public_key: str
         """
         self._public_key = public_key
 
@@ -117,7 +128,7 @@ class ShowKeypairResponse(SdkResponse):
         用户ID。
 
         :param user_id: The user_id of this ShowKeypairResponse.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -139,7 +150,7 @@ class ShowKeypairResponse(SdkResponse):
           密钥对应指纹信息。
 
         :param fingerprint: The fingerprint of this ShowKeypairResponse.
-        :type: str
+        :type fingerprint: str
         """
         self._fingerprint = fingerprint
 

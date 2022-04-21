@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTasksResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListTasksResponse(SdkResponse):
     }
 
     def __init__(self, total=None, size=None, entities=None):
-        """ListTasksResponse - a model defined in huaweicloud sdk"""
+        """ListTasksResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 查询任务列表任务总个数
+        :type total: int
+        :param size: 查询任务列表返回的当前页的任务个数
+        :type size: int
+        :param entities: 查询任务列表返回的对象
+        :type entities: list[:class:`huaweicloudsdkroma.v2.BriefTaskRespBean`]
+        """
         
         super(ListTasksResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListTasksResponse(SdkResponse):
         查询任务列表任务总个数
 
         :param total: The total of this ListTasksResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -90,7 +99,7 @@ class ListTasksResponse(SdkResponse):
         查询任务列表返回的当前页的任务个数
 
         :param size: The size of this ListTasksResponse.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -101,7 +110,7 @@ class ListTasksResponse(SdkResponse):
         查询任务列表返回的对象
 
         :return: The entities of this ListTasksResponse.
-        :rtype: list[BriefTaskRespBean]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.BriefTaskRespBean`]
         """
         return self._entities
 
@@ -112,7 +121,7 @@ class ListTasksResponse(SdkResponse):
         查询任务列表返回的对象
 
         :param entities: The entities of this ListTasksResponse.
-        :type: list[BriefTaskRespBean]
+        :type entities: list[:class:`huaweicloudsdkroma.v2.BriefTaskRespBean`]
         """
         self._entities = entities
 

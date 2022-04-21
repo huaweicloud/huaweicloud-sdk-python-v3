@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteNotificationRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteNotificationRequest:
     }
 
     def __init__(self, instance_id=None, notification_id=None):
-        """DeleteNotificationRequest - a model defined in huaweicloud sdk"""
+        """DeleteNotificationRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param notification_id: 订阅管理ID
+        :type notification_id: int
+        """
         
         
 
@@ -61,7 +68,7 @@ class DeleteNotificationRequest:
         实例ID
 
         :param instance_id: The instance_id of this DeleteNotificationRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -83,7 +90,7 @@ class DeleteNotificationRequest:
         订阅管理ID
 
         :param notification_id: The notification_id of this DeleteNotificationRequest.
-        :type: int
+        :type notification_id: int
         """
         self._notification_id = notification_id
 

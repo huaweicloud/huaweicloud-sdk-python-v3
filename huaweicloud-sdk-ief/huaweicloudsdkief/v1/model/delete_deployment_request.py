@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteDeploymentRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class DeleteDeploymentRequest:
     }
 
     def __init__(self, ief_instance_id=None, deployment_id=None, force_delete=None):
-        """DeleteDeploymentRequest - a model defined in huaweicloud sdk"""
+        """DeleteDeploymentRequest
+
+        The model defined in huaweicloud sdk
+
+        :param ief_instance_id: 铂金版实例ID，专业版实例为空值
+        :type ief_instance_id: str
+        :param deployment_id: 应用部署ID
+        :type deployment_id: str
+        :param force_delete: 是否强制删除；默认为false。
+        :type force_delete: str
+        """
         
         
 
@@ -67,7 +76,7 @@ class DeleteDeploymentRequest:
         铂金版实例ID，专业版实例为空值
 
         :param ief_instance_id: The ief_instance_id of this DeleteDeploymentRequest.
-        :type: str
+        :type ief_instance_id: str
         """
         self._ief_instance_id = ief_instance_id
 
@@ -89,7 +98,7 @@ class DeleteDeploymentRequest:
         应用部署ID
 
         :param deployment_id: The deployment_id of this DeleteDeploymentRequest.
-        :type: str
+        :type deployment_id: str
         """
         self._deployment_id = deployment_id
 
@@ -111,7 +120,7 @@ class DeleteDeploymentRequest:
         是否强制删除；默认为false。
 
         :param force_delete: The force_delete of this DeleteDeploymentRequest.
-        :type: str
+        :type force_delete: str
         """
         self._force_delete = force_delete
 

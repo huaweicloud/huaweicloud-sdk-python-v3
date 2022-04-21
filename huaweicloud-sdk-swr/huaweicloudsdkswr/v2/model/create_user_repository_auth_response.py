@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateUserRepositoryAuthResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class CreateUserRepositoryAuthResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateUserRepositoryAuthResponse - a model defined in huaweicloud sdk"""
+        """CreateUserRepositoryAuthResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(CreateUserRepositoryAuthResponse, self).__init__()
         self.discriminator = None

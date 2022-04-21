@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateManualBackupOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateManualBackupOption:
     }
 
     def __init__(self, instance_id=None, name=None, description=None):
-        """CreateManualBackupOption - a model defined in huaweicloud sdk"""
+        """CreateManualBackupOption
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
+        :type instance_id: str
+        :param name: 手动备份名称。 取值范围：长度为4~64位，必须以字母开头（A~Z或a~z），区分大小写，可以包含字母、数字（0~9）、中划线（-）或者下划线（_），不能包含其他特殊字符。
+        :type name: str
+        :param description: 手动备份描述。 取值范围：长度不超过256位，且不能包含&gt;!&lt;\&quot;&amp;&#39;&#x3D;特殊字符。
+        :type description: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class CreateManualBackupOption:
         实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
         :param instance_id: The instance_id of this CreateManualBackupOption.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -88,7 +97,7 @@ class CreateManualBackupOption:
         手动备份名称。 取值范围：长度为4~64位，必须以字母开头（A~Z或a~z），区分大小写，可以包含字母、数字（0~9）、中划线（-）或者下划线（_），不能包含其他特殊字符。
 
         :param name: The name of this CreateManualBackupOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -110,7 +119,7 @@ class CreateManualBackupOption:
         手动备份描述。 取值范围：长度不超过256位，且不能包含>!<\"&'=特殊字符。
 
         :param description: The description of this CreateManualBackupOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 

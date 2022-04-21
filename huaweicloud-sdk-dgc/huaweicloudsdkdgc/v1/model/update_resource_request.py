@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateResourceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateResourceRequest:
     }
 
     def __init__(self, resource_id=None, body=None):
-        """UpdateResourceRequest - a model defined in huaweicloud sdk"""
+        """UpdateResourceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param resource_id: 资源id.
+        :type resource_id: str
+        :param body: Body of the UpdateResourceRequest
+        :type body: :class:`huaweicloudsdkdgc.v1.ResourceInfo`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateResourceRequest:
         资源id.
 
         :param resource_id: The resource_id of this UpdateResourceRequest.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -72,7 +79,7 @@ class UpdateResourceRequest:
 
 
         :return: The body of this UpdateResourceRequest.
-        :rtype: ResourceInfo
+        :rtype: :class:`huaweicloudsdkdgc.v1.ResourceInfo`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateResourceRequest:
 
 
         :param body: The body of this UpdateResourceRequest.
-        :type: ResourceInfo
+        :type body: :class:`huaweicloudsdkdgc.v1.ResourceInfo`
         """
         self._body = body
 

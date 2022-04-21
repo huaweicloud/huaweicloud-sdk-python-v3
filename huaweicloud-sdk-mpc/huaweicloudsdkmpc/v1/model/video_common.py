@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VideoCommon:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class VideoCommon:
     }
 
     def __init__(self, output_policy=None, codec=None, profile=None, level=None, preset=None, ref_frames_count=None, max_iframes_interval=None, bframes_count=None, frame_rate=None, aspect_ratio=None, black_cut=None):
-        """VideoCommon - a model defined in huaweicloud sdk"""
+        """VideoCommon
+
+        The model defined in huaweicloud sdk
+
+        :param output_policy: 输出策略。  取值如下： - discard - transcode  &gt;- 当视频参数中的“output_policy”为\&quot;discard\&quot;，且音频参数中的“output_policy”为“transcode”时，表示只输出音频。 &gt;- 当视频参数中的“output_policy”为\&quot;transcode\&quot;，且音频参数中的“output_policy”为“discard”时，表示只输出视频。 &gt;- 同时为\&quot;discard\&quot;时不合法。 &gt;- 同时为“transcode”时，表示输出音视频。 
+        :type output_policy: str
+        :param codec: 视频编码格式。  取值如下： - 1：表示H.264。 - 2：表示H.265。 
+        :type codec: int
+        :param profile: 编码档次，建议设为3。  取值如下： - 1：VIDEO_PROFILE_H264_BASE - 2：VIDEO_PROFILE_H264_MAIN - 3：VIDEO_PROFILE_H264_HIGH - 4：VIDEO_PROFILE_H265_MAIN 
+        :type profile: int
+        :param level: 编码级别。  取值如下： - 1：VIDEO_LEVEL_1_0 - 2：VIDEO_LEVEL_1_1 - 3：VIDEO_LEVEL_1_2 - 4：VIDEO_LEVEL_1_3 - 5：VIDEO_LEVEL_2_0 - 6：VIDEO_LEVEL_2_1 - 7：VIDEO_LEVEL_2_2 - 8：VIDEO_LEVEL_3_0 - 9：VIDEO_LEVEL_3_1 - 10：VIDEO_LEVEL_3_2 - 11：VIDEO_LEVEL_4_0 - 12：VIDEO_LEVEL_4_1 - 13：VIDEO_LEVEL_4_2 - 14：VIDEO_LEVEL_5_0 - 15：VIDEO_LEVEL_5_1 
+        :type level: int
+        :param preset: 编码质量等级。  取值如下： - 1：VIDEO_PRESET_HSPEED2 - 2：VIDEO_PRESET_HSPEED - 3：VIDEO_PRESET_NORMAL &gt; 值越大，表示编码的质量越高，转码耗时也越长。 
+        :type preset: int
+        :param ref_frames_count: 最大参考帧数。  取值范围： - H264：[1，8]，默认值为4 。 - H265：固定值4。  单位：帧。 
+        :type ref_frames_count: int
+        :param max_iframes_interval: I帧最大间隔  取值范围：[2，10]。  默认值：5。  单位：秒。 
+        :type max_iframes_interval: int
+        :param bframes_count: 最大B帧间隔。  取值范围： - H264：[0，7]，默认值为4。 - H265：[0，7]，默认值为7。  单位：帧。 
+        :type bframes_count: int
+        :param frame_rate: 帧率  取值范围：0或[5,60]之间的整数，0表示自适应  单位：帧每秒 
+        :type frame_rate: int
+        :param aspect_ratio: 纵横比，图像缩放方式 
+        :type aspect_ratio: int
+        :param black_cut: 黑边剪裁类型  取值如下： - 0：不开启黑边剪裁 - 1：开启黑边剪裁，低复杂度算法，针对长视频（&gt;5分钟） - 2：开启黑边剪裁，高复杂度算法，针对短视频（&lt;&#x3D;5分钟） 
+        :type black_cut: int
+        """
         
         
 
@@ -108,7 +133,7 @@ class VideoCommon:
         输出策略。  取值如下： - discard - transcode  >- 当视频参数中的“output_policy”为\"discard\"，且音频参数中的“output_policy”为“transcode”时，表示只输出音频。 >- 当视频参数中的“output_policy”为\"transcode\"，且音频参数中的“output_policy”为“discard”时，表示只输出视频。 >- 同时为\"discard\"时不合法。 >- 同时为“transcode”时，表示输出音视频。 
 
         :param output_policy: The output_policy of this VideoCommon.
-        :type: str
+        :type output_policy: str
         """
         self._output_policy = output_policy
 
@@ -130,7 +155,7 @@ class VideoCommon:
         视频编码格式。  取值如下： - 1：表示H.264。 - 2：表示H.265。 
 
         :param codec: The codec of this VideoCommon.
-        :type: int
+        :type codec: int
         """
         self._codec = codec
 
@@ -152,7 +177,7 @@ class VideoCommon:
         编码档次，建议设为3。  取值如下： - 1：VIDEO_PROFILE_H264_BASE - 2：VIDEO_PROFILE_H264_MAIN - 3：VIDEO_PROFILE_H264_HIGH - 4：VIDEO_PROFILE_H265_MAIN 
 
         :param profile: The profile of this VideoCommon.
-        :type: int
+        :type profile: int
         """
         self._profile = profile
 
@@ -174,7 +199,7 @@ class VideoCommon:
         编码级别。  取值如下： - 1：VIDEO_LEVEL_1_0 - 2：VIDEO_LEVEL_1_1 - 3：VIDEO_LEVEL_1_2 - 4：VIDEO_LEVEL_1_3 - 5：VIDEO_LEVEL_2_0 - 6：VIDEO_LEVEL_2_1 - 7：VIDEO_LEVEL_2_2 - 8：VIDEO_LEVEL_3_0 - 9：VIDEO_LEVEL_3_1 - 10：VIDEO_LEVEL_3_2 - 11：VIDEO_LEVEL_4_0 - 12：VIDEO_LEVEL_4_1 - 13：VIDEO_LEVEL_4_2 - 14：VIDEO_LEVEL_5_0 - 15：VIDEO_LEVEL_5_1 
 
         :param level: The level of this VideoCommon.
-        :type: int
+        :type level: int
         """
         self._level = level
 
@@ -196,7 +221,7 @@ class VideoCommon:
         编码质量等级。  取值如下： - 1：VIDEO_PRESET_HSPEED2 - 2：VIDEO_PRESET_HSPEED - 3：VIDEO_PRESET_NORMAL > 值越大，表示编码的质量越高，转码耗时也越长。 
 
         :param preset: The preset of this VideoCommon.
-        :type: int
+        :type preset: int
         """
         self._preset = preset
 
@@ -218,7 +243,7 @@ class VideoCommon:
         最大参考帧数。  取值范围： - H264：[1，8]，默认值为4 。 - H265：固定值4。  单位：帧。 
 
         :param ref_frames_count: The ref_frames_count of this VideoCommon.
-        :type: int
+        :type ref_frames_count: int
         """
         self._ref_frames_count = ref_frames_count
 
@@ -240,7 +265,7 @@ class VideoCommon:
         I帧最大间隔  取值范围：[2，10]。  默认值：5。  单位：秒。 
 
         :param max_iframes_interval: The max_iframes_interval of this VideoCommon.
-        :type: int
+        :type max_iframes_interval: int
         """
         self._max_iframes_interval = max_iframes_interval
 
@@ -262,7 +287,7 @@ class VideoCommon:
         最大B帧间隔。  取值范围： - H264：[0，7]，默认值为4。 - H265：[0，7]，默认值为7。  单位：帧。 
 
         :param bframes_count: The bframes_count of this VideoCommon.
-        :type: int
+        :type bframes_count: int
         """
         self._bframes_count = bframes_count
 
@@ -284,7 +309,7 @@ class VideoCommon:
         帧率  取值范围：0或[5,60]之间的整数，0表示自适应  单位：帧每秒 
 
         :param frame_rate: The frame_rate of this VideoCommon.
-        :type: int
+        :type frame_rate: int
         """
         self._frame_rate = frame_rate
 
@@ -306,7 +331,7 @@ class VideoCommon:
         纵横比，图像缩放方式 
 
         :param aspect_ratio: The aspect_ratio of this VideoCommon.
-        :type: int
+        :type aspect_ratio: int
         """
         self._aspect_ratio = aspect_ratio
 
@@ -328,7 +353,7 @@ class VideoCommon:
         黑边剪裁类型  取值如下： - 0：不开启黑边剪裁 - 1：开启黑边剪裁，低复杂度算法，针对长视频（>5分钟） - 2：开启黑边剪裁，高复杂度算法，针对短视频（<=5分钟） 
 
         :param black_cut: The black_cut of this VideoCommon.
-        :type: int
+        :type black_cut: int
         """
         self._black_cut = black_cut
 

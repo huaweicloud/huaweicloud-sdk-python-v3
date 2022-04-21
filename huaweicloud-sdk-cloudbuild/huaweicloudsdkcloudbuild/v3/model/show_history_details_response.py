@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowHistoryDetailsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ShowHistoryDetailsResponse(SdkResponse):
     }
 
     def __init__(self, job_name=None, build_number=None, project_id=None, project_name=None, parameters=None, build_steps=None):
-        """ShowHistoryDetailsResponse - a model defined in huaweicloud sdk"""
+        """ShowHistoryDetailsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param job_name: 构建任务名称
+        :type job_name: str
+        :param build_number: 构建编号
+        :type build_number: int
+        :param project_id: 构建任务所在项目的ID
+        :type project_id: str
+        :param project_name: 构建任务所在项目的名称
+        :type project_name: str
+        :param parameters: 本次构建的参数，Map类型，敏感参数值返回*号
+        :type parameters: dict(str, str)
+        :param build_steps: 本次任务的构建步骤详情，返回的步骤为页面可见步骤
+        :type build_steps: list[:class:`huaweicloudsdkcloudbuild.v3.BuildStep`]
+        """
         
         super(ShowHistoryDetailsResponse, self).__init__()
 
@@ -83,7 +98,7 @@ class ShowHistoryDetailsResponse(SdkResponse):
         构建任务名称
 
         :param job_name: The job_name of this ShowHistoryDetailsResponse.
-        :type: str
+        :type job_name: str
         """
         self._job_name = job_name
 
@@ -105,7 +120,7 @@ class ShowHistoryDetailsResponse(SdkResponse):
         构建编号
 
         :param build_number: The build_number of this ShowHistoryDetailsResponse.
-        :type: int
+        :type build_number: int
         """
         self._build_number = build_number
 
@@ -127,7 +142,7 @@ class ShowHistoryDetailsResponse(SdkResponse):
         构建任务所在项目的ID
 
         :param project_id: The project_id of this ShowHistoryDetailsResponse.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -149,7 +164,7 @@ class ShowHistoryDetailsResponse(SdkResponse):
         构建任务所在项目的名称
 
         :param project_name: The project_name of this ShowHistoryDetailsResponse.
-        :type: str
+        :type project_name: str
         """
         self._project_name = project_name
 
@@ -171,7 +186,7 @@ class ShowHistoryDetailsResponse(SdkResponse):
         本次构建的参数，Map类型，敏感参数值返回*号
 
         :param parameters: The parameters of this ShowHistoryDetailsResponse.
-        :type: dict(str, str)
+        :type parameters: dict(str, str)
         """
         self._parameters = parameters
 
@@ -182,7 +197,7 @@ class ShowHistoryDetailsResponse(SdkResponse):
         本次任务的构建步骤详情，返回的步骤为页面可见步骤
 
         :return: The build_steps of this ShowHistoryDetailsResponse.
-        :rtype: list[BuildStep]
+        :rtype: list[:class:`huaweicloudsdkcloudbuild.v3.BuildStep`]
         """
         return self._build_steps
 
@@ -193,7 +208,7 @@ class ShowHistoryDetailsResponse(SdkResponse):
         本次任务的构建步骤详情，返回的步骤为页面可见步骤
 
         :param build_steps: The build_steps of this ShowHistoryDetailsResponse.
-        :type: list[BuildStep]
+        :type build_steps: list[:class:`huaweicloudsdkcloudbuild.v3.BuildStep`]
         """
         self._build_steps = build_steps
 

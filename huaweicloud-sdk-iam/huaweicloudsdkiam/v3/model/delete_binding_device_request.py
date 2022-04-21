@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteBindingDeviceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteBindingDeviceRequest:
     }
 
     def __init__(self, body=None):
-        """DeleteBindingDeviceRequest - a model defined in huaweicloud sdk"""
+        """DeleteBindingDeviceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the DeleteBindingDeviceRequest
+        :type body: :class:`huaweicloudsdkiam.v3.UnbindMfaDevice`
+        """
         
         
 
@@ -46,7 +51,7 @@ class DeleteBindingDeviceRequest:
 
 
         :return: The body of this DeleteBindingDeviceRequest.
-        :rtype: UnbindMfaDevice
+        :rtype: :class:`huaweicloudsdkiam.v3.UnbindMfaDevice`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class DeleteBindingDeviceRequest:
 
 
         :param body: The body of this DeleteBindingDeviceRequest.
-        :type: UnbindMfaDevice
+        :type body: :class:`huaweicloudsdkiam.v3.UnbindMfaDevice`
         """
         self._body = body
 

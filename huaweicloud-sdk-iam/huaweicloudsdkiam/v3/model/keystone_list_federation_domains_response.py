@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneListFederationDomainsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class KeystoneListFederationDomainsResponse(SdkResponse):
     }
 
     def __init__(self, domains=None, links=None):
-        """KeystoneListFederationDomainsResponse - a model defined in huaweicloud sdk"""
+        """KeystoneListFederationDomainsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param domains: 账号信息列表。
+        :type domains: list[:class:`huaweicloudsdkiam.v3.Domains`]
+        :param links: 
+        :type links: :class:`huaweicloudsdkiam.v3.LinksSelf`
+        """
         
         super(KeystoneListFederationDomainsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class KeystoneListFederationDomainsResponse(SdkResponse):
         账号信息列表。
 
         :return: The domains of this KeystoneListFederationDomainsResponse.
-        :rtype: list[Domains]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.Domains`]
         """
         return self._domains
 
@@ -63,7 +70,7 @@ class KeystoneListFederationDomainsResponse(SdkResponse):
         账号信息列表。
 
         :param domains: The domains of this KeystoneListFederationDomainsResponse.
-        :type: list[Domains]
+        :type domains: list[:class:`huaweicloudsdkiam.v3.Domains`]
         """
         self._domains = domains
 
@@ -73,7 +80,7 @@ class KeystoneListFederationDomainsResponse(SdkResponse):
 
 
         :return: The links of this KeystoneListFederationDomainsResponse.
-        :rtype: LinksSelf
+        :rtype: :class:`huaweicloudsdkiam.v3.LinksSelf`
         """
         return self._links
 
@@ -83,7 +90,7 @@ class KeystoneListFederationDomainsResponse(SdkResponse):
 
 
         :param links: The links of this KeystoneListFederationDomainsResponse.
-        :type: LinksSelf
+        :type links: :class:`huaweicloudsdkiam.v3.LinksSelf`
         """
         self._links = links
 

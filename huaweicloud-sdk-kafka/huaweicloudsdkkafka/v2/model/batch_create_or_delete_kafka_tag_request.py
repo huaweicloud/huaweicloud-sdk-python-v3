@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchCreateOrDeleteKafkaTagRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchCreateOrDeleteKafkaTagRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """BatchCreateOrDeleteKafkaTagRequest - a model defined in huaweicloud sdk"""
+        """BatchCreateOrDeleteKafkaTagRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param body: Body of the BatchCreateOrDeleteKafkaTagRequest
+        :type body: :class:`huaweicloudsdkkafka.v2.BatchCreateOrDeleteTagReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class BatchCreateOrDeleteKafkaTagRequest:
         实例ID。
 
         :param instance_id: The instance_id of this BatchCreateOrDeleteKafkaTagRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -72,7 +79,7 @@ class BatchCreateOrDeleteKafkaTagRequest:
 
 
         :return: The body of this BatchCreateOrDeleteKafkaTagRequest.
-        :rtype: BatchCreateOrDeleteTagReq
+        :rtype: :class:`huaweicloudsdkkafka.v2.BatchCreateOrDeleteTagReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class BatchCreateOrDeleteKafkaTagRequest:
 
 
         :param body: The body of this BatchCreateOrDeleteKafkaTagRequest.
-        :type: BatchCreateOrDeleteTagReq
+        :type body: :class:`huaweicloudsdkkafka.v2.BatchCreateOrDeleteTagReq`
         """
         self._body = body
 

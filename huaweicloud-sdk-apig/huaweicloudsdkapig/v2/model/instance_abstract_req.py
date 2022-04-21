@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InstanceAbstractReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class InstanceAbstractReq:
     }
 
     def __init__(self, description=None, maintain_begin=None, maintain_end=None):
-        """InstanceAbstractReq - a model defined in huaweicloud sdk"""
+        """InstanceAbstractReq
+
+        The model defined in huaweicloud sdk
+
+        :param description: 实例描述
+        :type description: str
+        :param maintain_begin: &#39;维护时间窗开始时间。时间格式为 xx:00:00，xx取值为02,06,10,14,18,22。&#39;  &#39;在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次。&#39;
+        :type maintain_begin: str
+        :param maintain_end: &#39;维护时间窗结束时间。时间格式为 xx:00:00，与维护时间窗开始时间相差4个小时。&#39;  &#39;在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次&#39;。
+        :type maintain_end: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class InstanceAbstractReq:
         实例描述
 
         :param description: The description of this InstanceAbstractReq.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -90,7 +99,7 @@ class InstanceAbstractReq:
         '维护时间窗开始时间。时间格式为 xx:00:00，xx取值为02,06,10,14,18,22。'  '在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次。'
 
         :param maintain_begin: The maintain_begin of this InstanceAbstractReq.
-        :type: str
+        :type maintain_begin: str
         """
         self._maintain_begin = maintain_begin
 
@@ -112,7 +121,7 @@ class InstanceAbstractReq:
         '维护时间窗结束时间。时间格式为 xx:00:00，与维护时间窗开始时间相差4个小时。'  '在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次'。
 
         :param maintain_end: The maintain_end of this InstanceAbstractReq.
-        :type: str
+        :type maintain_end: str
         """
         self._maintain_end = maintain_end
 

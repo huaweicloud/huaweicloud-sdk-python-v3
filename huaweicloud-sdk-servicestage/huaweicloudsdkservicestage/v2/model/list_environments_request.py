@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListEnvironmentsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListEnvironmentsRequest:
     }
 
     def __init__(self, limit=None, offset=None, order_by=None, order=None):
-        """ListEnvironmentsRequest - a model defined in huaweicloud sdk"""
+        """ListEnvironmentsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 指定个数，明确指定的时候用于分页，取值[0, 100]。不指定的时候表示不分页，最多查询1000条记录。
+        :type limit: int
+        :param offset: 指定查询偏移量，默认偏移量为0.
+        :type offset: int
+        :param order_by: 排序字段，默认按创建时间排序。  排序字段支持枚举值：create_time、name、update_time。 
+        :type order_by: str
+        :param order: desc/asc，默认desc。
+        :type order: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class ListEnvironmentsRequest:
         指定个数，明确指定的时候用于分页，取值[0, 100]。不指定的时候表示不分页，最多查询1000条记录。
 
         :param limit: The limit of this ListEnvironmentsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -95,7 +106,7 @@ class ListEnvironmentsRequest:
         指定查询偏移量，默认偏移量为0.
 
         :param offset: The offset of this ListEnvironmentsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -117,7 +128,7 @@ class ListEnvironmentsRequest:
         排序字段，默认按创建时间排序。  排序字段支持枚举值：create_time、name、update_time。 
 
         :param order_by: The order_by of this ListEnvironmentsRequest.
-        :type: str
+        :type order_by: str
         """
         self._order_by = order_by
 
@@ -139,7 +150,7 @@ class ListEnvironmentsRequest:
         desc/asc，默认desc。
 
         :param order: The order of this ListEnvironmentsRequest.
-        :type: str
+        :type order: str
         """
         self._order = order
 

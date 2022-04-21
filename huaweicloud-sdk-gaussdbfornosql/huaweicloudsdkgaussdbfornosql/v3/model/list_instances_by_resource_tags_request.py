@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListInstancesByResourceTagsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListInstancesByResourceTagsRequest:
     }
 
     def __init__(self, body=None):
-        """ListInstancesByResourceTagsRequest - a model defined in huaweicloud sdk"""
+        """ListInstancesByResourceTagsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the ListInstancesByResourceTagsRequest
+        :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesByTagsRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class ListInstancesByResourceTagsRequest:
 
 
         :return: The body of this ListInstancesByResourceTagsRequest.
-        :rtype: ListInstancesByTagsRequestBody
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesByTagsRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class ListInstancesByResourceTagsRequest:
 
 
         :param body: The body of this ListInstancesByResourceTagsRequest.
-        :type: ListInstancesByTagsRequestBody
+        :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesByTagsRequestBody`
         """
         self._body = body
 

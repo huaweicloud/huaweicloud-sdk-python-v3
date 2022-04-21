@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MetricRequest3:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class MetricRequest3:
     }
 
     def __init__(self, date_range=None, metric_type=None, sprint_id=None, dividend=None, divisor=None):
-        """MetricRequest3 - a model defined in huaweicloud sdk"""
+        """MetricRequest3
+
+        The model defined in huaweicloud sdk
+
+        :param date_range: 统计周期
+        :type date_range: str
+        :param metric_type: 指标类型
+        :type metric_type: str
+        :param sprint_id: 迭代ID
+        :type sprint_id: str
+        :param dividend: 
+        :type dividend: :class:`huaweicloudsdkprojectman.v4.MetricRequest3Dividend`
+        :param divisor: 指标分母过滤条件
+        :type divisor: object
+        """
         
         
 
@@ -78,7 +91,7 @@ class MetricRequest3:
         统计周期
 
         :param date_range: The date_range of this MetricRequest3.
-        :type: str
+        :type date_range: str
         """
         self._date_range = date_range
 
@@ -100,7 +113,7 @@ class MetricRequest3:
         指标类型
 
         :param metric_type: The metric_type of this MetricRequest3.
-        :type: str
+        :type metric_type: str
         """
         self._metric_type = metric_type
 
@@ -122,7 +135,7 @@ class MetricRequest3:
         迭代ID
 
         :param sprint_id: The sprint_id of this MetricRequest3.
-        :type: str
+        :type sprint_id: str
         """
         self._sprint_id = sprint_id
 
@@ -132,7 +145,7 @@ class MetricRequest3:
 
 
         :return: The dividend of this MetricRequest3.
-        :rtype: MetricRequest3Dividend
+        :rtype: :class:`huaweicloudsdkprojectman.v4.MetricRequest3Dividend`
         """
         return self._dividend
 
@@ -142,7 +155,7 @@ class MetricRequest3:
 
 
         :param dividend: The dividend of this MetricRequest3.
-        :type: MetricRequest3Dividend
+        :type dividend: :class:`huaweicloudsdkprojectman.v4.MetricRequest3Dividend`
         """
         self._dividend = dividend
 
@@ -164,7 +177,7 @@ class MetricRequest3:
         指标分母过滤条件
 
         :param divisor: The divisor of this MetricRequest3.
-        :type: object
+        :type divisor: object
         """
         self._divisor = divisor
 

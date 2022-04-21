@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAuditlogsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListAuditlogsResponse(SdkResponse):
     }
 
     def __init__(self, auditlogs=None, total_record=None):
-        """ListAuditlogsResponse - a model defined in huaweicloud sdk"""
+        """ListAuditlogsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param auditlogs: 
+        :type auditlogs: list[:class:`huaweicloudsdkrds.v3.Auditlog`]
+        :param total_record: 总记录数。
+        :type total_record: int
+        """
         
         super(ListAuditlogsResponse, self).__init__()
 
@@ -51,7 +58,7 @@ class ListAuditlogsResponse(SdkResponse):
 
 
         :return: The auditlogs of this ListAuditlogsResponse.
-        :rtype: list[Auditlog]
+        :rtype: list[:class:`huaweicloudsdkrds.v3.Auditlog`]
         """
         return self._auditlogs
 
@@ -61,7 +68,7 @@ class ListAuditlogsResponse(SdkResponse):
 
 
         :param auditlogs: The auditlogs of this ListAuditlogsResponse.
-        :type: list[Auditlog]
+        :type auditlogs: list[:class:`huaweicloudsdkrds.v3.Auditlog`]
         """
         self._auditlogs = auditlogs
 
@@ -83,7 +90,7 @@ class ListAuditlogsResponse(SdkResponse):
         总记录数。
 
         :param total_record: The total_record of this ListAuditlogsResponse.
-        :type: int
+        :type total_record: int
         """
         self._total_record = total_record
 

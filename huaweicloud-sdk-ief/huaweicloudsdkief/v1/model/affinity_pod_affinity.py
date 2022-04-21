@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AffinityPodAffinity:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AffinityPodAffinity:
     }
 
     def __init__(self, preferred_during_scheduling_ignored_during_execution=None, required_during_scheduling_ignored_during_execution=None):
-        """AffinityPodAffinity - a model defined in huaweicloud sdk"""
+        """AffinityPodAffinity
+
+        The model defined in huaweicloud sdk
+
+        :param preferred_during_scheduling_ignored_during_execution: 优先使用定义的规则调度，且不会影响已经在节点上运行的Pod。即优先选择调度到满足规则的节点，但也可能会调度到不满足规则的节点。
+        :type preferred_during_scheduling_ignored_during_execution: list[:class:`huaweicloudsdkief.v1.WeightPodAffinityTerms`]
+        :param required_during_scheduling_ignored_during_execution: 强制使用定义的规则调度，且不会影响已经在节点上运行的Pod。即强制选择调度到满足规则的节点，不会调度到不满足规则的节点。
+        :type required_during_scheduling_ignored_during_execution: list[:class:`huaweicloudsdkief.v1.PodAffinityTerm`]
+        """
         
         
 
@@ -52,7 +59,7 @@ class AffinityPodAffinity:
         优先使用定义的规则调度，且不会影响已经在节点上运行的Pod。即优先选择调度到满足规则的节点，但也可能会调度到不满足规则的节点。
 
         :return: The preferred_during_scheduling_ignored_during_execution of this AffinityPodAffinity.
-        :rtype: list[WeightPodAffinityTerms]
+        :rtype: list[:class:`huaweicloudsdkief.v1.WeightPodAffinityTerms`]
         """
         return self._preferred_during_scheduling_ignored_during_execution
 
@@ -63,7 +70,7 @@ class AffinityPodAffinity:
         优先使用定义的规则调度，且不会影响已经在节点上运行的Pod。即优先选择调度到满足规则的节点，但也可能会调度到不满足规则的节点。
 
         :param preferred_during_scheduling_ignored_during_execution: The preferred_during_scheduling_ignored_during_execution of this AffinityPodAffinity.
-        :type: list[WeightPodAffinityTerms]
+        :type preferred_during_scheduling_ignored_during_execution: list[:class:`huaweicloudsdkief.v1.WeightPodAffinityTerms`]
         """
         self._preferred_during_scheduling_ignored_during_execution = preferred_during_scheduling_ignored_during_execution
 
@@ -74,7 +81,7 @@ class AffinityPodAffinity:
         强制使用定义的规则调度，且不会影响已经在节点上运行的Pod。即强制选择调度到满足规则的节点，不会调度到不满足规则的节点。
 
         :return: The required_during_scheduling_ignored_during_execution of this AffinityPodAffinity.
-        :rtype: list[PodAffinityTerm]
+        :rtype: list[:class:`huaweicloudsdkief.v1.PodAffinityTerm`]
         """
         return self._required_during_scheduling_ignored_during_execution
 
@@ -85,7 +92,7 @@ class AffinityPodAffinity:
         强制使用定义的规则调度，且不会影响已经在节点上运行的Pod。即强制选择调度到满足规则的节点，不会调度到不满足规则的节点。
 
         :param required_during_scheduling_ignored_during_execution: The required_during_scheduling_ignored_during_execution of this AffinityPodAffinity.
-        :type: list[PodAffinityTerm]
+        :type required_during_scheduling_ignored_during_execution: list[:class:`huaweicloudsdkief.v1.PodAffinityTerm`]
         """
         self._required_during_scheduling_ignored_during_execution = required_during_scheduling_ignored_during_execution
 

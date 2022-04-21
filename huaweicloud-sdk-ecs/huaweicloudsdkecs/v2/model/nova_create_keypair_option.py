@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NovaCreateKeypairOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class NovaCreateKeypairOption:
     }
 
     def __init__(self, public_key=None, type=None, name=None, user_id=None):
-        """NovaCreateKeypairOption - a model defined in huaweicloud sdk"""
+        """NovaCreateKeypairOption
+
+        The model defined in huaweicloud sdk
+
+        :param public_key: 导入的公钥信息。  建议导入的公钥长度不大于1024字节。  说明：  - 长度超过1024字节会导致云服务器注入该密钥失败。
+        :type public_key: str
+        :param type: 密钥类型，值为“ssh”或“x509”。  说明：  - 微版本2.2支持。
+        :type type: str
+        :param name: 密钥名称。  新创建的密钥名称不能和已有密钥名称相同。
+        :type name: str
+        :param user_id: 密钥的用户ID。  说明：  - 微版本2.10支持。
+        :type user_id: str
+        """
         
         
 
@@ -72,7 +83,7 @@ class NovaCreateKeypairOption:
         导入的公钥信息。  建议导入的公钥长度不大于1024字节。  说明：  - 长度超过1024字节会导致云服务器注入该密钥失败。
 
         :param public_key: The public_key of this NovaCreateKeypairOption.
-        :type: str
+        :type public_key: str
         """
         self._public_key = public_key
 
@@ -94,7 +105,7 @@ class NovaCreateKeypairOption:
         密钥类型，值为“ssh”或“x509”。  说明：  - 微版本2.2支持。
 
         :param type: The type of this NovaCreateKeypairOption.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -116,7 +127,7 @@ class NovaCreateKeypairOption:
         密钥名称。  新创建的密钥名称不能和已有密钥名称相同。
 
         :param name: The name of this NovaCreateKeypairOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -138,7 +149,7 @@ class NovaCreateKeypairOption:
         密钥的用户ID。  说明：  - 微版本2.10支持。
 
         :param user_id: The user_id of this NovaCreateKeypairOption.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 

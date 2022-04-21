@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowCaseStatusResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowCaseStatusResponse(SdkResponse):
     }
 
     def __init__(self, status=None):
-        """ShowCaseStatusResponse - a model defined in huaweicloud sdk"""
+        """ShowCaseStatusResponse
+
+        The model defined in huaweicloud sdk
+
+        :param status: 状态 0：待受理 1：处理中 2：待确认结果 3：已完成 4：已撤销 12：无效 17： 待反馈
+        :type status: int
+        """
         
         super(ShowCaseStatusResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class ShowCaseStatusResponse(SdkResponse):
         状态 0：待受理 1：处理中 2：待确认结果 3：已完成 4：已撤销 12：无效 17： 待反馈
 
         :param status: The status of this ShowCaseStatusResponse.
-        :type: int
+        :type status: int
         """
         self._status = status
 

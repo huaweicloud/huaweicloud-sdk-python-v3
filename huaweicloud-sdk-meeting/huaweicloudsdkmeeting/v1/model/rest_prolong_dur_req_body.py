@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestProlongDurReqBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RestProlongDurReqBody:
     }
 
     def __init__(self, auto=None, duration=None):
-        """RestProlongDurReqBody - a model defined in huaweicloud sdk"""
+        """RestProlongDurReqBody
+
+        The model defined in huaweicloud sdk
+
+        :param auto: - 0: 手动延长。 - 1: 自动延长（未携带延长时间时，默认每次延长15分钟）。
+        :type auto: int
+        :param duration: 延长时间，单位为分钟。 默认值：15
+        :type duration: int
+        """
         
         
 
@@ -62,7 +69,7 @@ class RestProlongDurReqBody:
         - 0: 手动延长。 - 1: 自动延长（未携带延长时间时，默认每次延长15分钟）。
 
         :param auto: The auto of this RestProlongDurReqBody.
-        :type: int
+        :type auto: int
         """
         self._auto = auto
 
@@ -84,7 +91,7 @@ class RestProlongDurReqBody:
         延长时间，单位为分钟。 默认值：15
 
         :param duration: The duration of this RestProlongDurReqBody.
-        :type: int
+        :type duration: int
         """
         self._duration = duration
 

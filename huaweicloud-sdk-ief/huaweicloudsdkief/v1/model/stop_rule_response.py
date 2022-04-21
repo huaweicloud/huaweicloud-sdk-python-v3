@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StopRuleResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class StopRuleResponse(SdkResponse):
     }
 
     def __init__(self):
-        """StopRuleResponse - a model defined in huaweicloud sdk"""
+        """StopRuleResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(StopRuleResponse, self).__init__()
         self.discriminator = None

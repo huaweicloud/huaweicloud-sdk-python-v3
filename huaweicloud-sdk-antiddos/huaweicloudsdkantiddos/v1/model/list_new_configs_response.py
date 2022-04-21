@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListNewConfigsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListNewConfigsResponse(SdkResponse):
     }
 
     def __init__(self, traffic_limited_list=None, http_limited_list=None, connection_limited_list=None, extend_ddos_config=None):
-        """ListNewConfigsResponse - a model defined in huaweicloud sdk"""
+        """ListNewConfigsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param traffic_limited_list: 流量限制列表
+        :type traffic_limited_list: list[:class:`huaweicloudsdkantiddos.v1.TriggerBpsDict`]
+        :param http_limited_list: HTTP限制列表
+        :type http_limited_list: list[:class:`huaweicloudsdkantiddos.v1.TriggerQpsDict`]
+        :param connection_limited_list: 连接数限制列表
+        :type connection_limited_list: list[:class:`huaweicloudsdkantiddos.v1.CleanLimitDict`]
+        :param extend_ddos_config: 扩展配置列表
+        :type extend_ddos_config: list[:class:`huaweicloudsdkantiddos.v1.ExtendDDoSSet`]
+        """
         
         super(ListNewConfigsResponse, self).__init__()
 
@@ -62,7 +73,7 @@ class ListNewConfigsResponse(SdkResponse):
         流量限制列表
 
         :return: The traffic_limited_list of this ListNewConfigsResponse.
-        :rtype: list[TriggerBpsDict]
+        :rtype: list[:class:`huaweicloudsdkantiddos.v1.TriggerBpsDict`]
         """
         return self._traffic_limited_list
 
@@ -73,7 +84,7 @@ class ListNewConfigsResponse(SdkResponse):
         流量限制列表
 
         :param traffic_limited_list: The traffic_limited_list of this ListNewConfigsResponse.
-        :type: list[TriggerBpsDict]
+        :type traffic_limited_list: list[:class:`huaweicloudsdkantiddos.v1.TriggerBpsDict`]
         """
         self._traffic_limited_list = traffic_limited_list
 
@@ -84,7 +95,7 @@ class ListNewConfigsResponse(SdkResponse):
         HTTP限制列表
 
         :return: The http_limited_list of this ListNewConfigsResponse.
-        :rtype: list[TriggerQpsDict]
+        :rtype: list[:class:`huaweicloudsdkantiddos.v1.TriggerQpsDict`]
         """
         return self._http_limited_list
 
@@ -95,7 +106,7 @@ class ListNewConfigsResponse(SdkResponse):
         HTTP限制列表
 
         :param http_limited_list: The http_limited_list of this ListNewConfigsResponse.
-        :type: list[TriggerQpsDict]
+        :type http_limited_list: list[:class:`huaweicloudsdkantiddos.v1.TriggerQpsDict`]
         """
         self._http_limited_list = http_limited_list
 
@@ -106,7 +117,7 @@ class ListNewConfigsResponse(SdkResponse):
         连接数限制列表
 
         :return: The connection_limited_list of this ListNewConfigsResponse.
-        :rtype: list[CleanLimitDict]
+        :rtype: list[:class:`huaweicloudsdkantiddos.v1.CleanLimitDict`]
         """
         return self._connection_limited_list
 
@@ -117,7 +128,7 @@ class ListNewConfigsResponse(SdkResponse):
         连接数限制列表
 
         :param connection_limited_list: The connection_limited_list of this ListNewConfigsResponse.
-        :type: list[CleanLimitDict]
+        :type connection_limited_list: list[:class:`huaweicloudsdkantiddos.v1.CleanLimitDict`]
         """
         self._connection_limited_list = connection_limited_list
 
@@ -128,7 +139,7 @@ class ListNewConfigsResponse(SdkResponse):
         扩展配置列表
 
         :return: The extend_ddos_config of this ListNewConfigsResponse.
-        :rtype: list[ExtendDDoSSet]
+        :rtype: list[:class:`huaweicloudsdkantiddos.v1.ExtendDDoSSet`]
         """
         return self._extend_ddos_config
 
@@ -139,7 +150,7 @@ class ListNewConfigsResponse(SdkResponse):
         扩展配置列表
 
         :param extend_ddos_config: The extend_ddos_config of this ListNewConfigsResponse.
-        :type: list[ExtendDDoSSet]
+        :type extend_ddos_config: list[:class:`huaweicloudsdkantiddos.v1.ExtendDDoSSet`]
         """
         self._extend_ddos_config = extend_ddos_config
 

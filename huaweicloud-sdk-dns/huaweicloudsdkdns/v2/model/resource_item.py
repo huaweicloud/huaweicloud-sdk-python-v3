@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResourceItem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ResourceItem:
     }
 
     def __init__(self, resource_id=None, resource_detail=None, tags=None, resource_name=None):
-        """ResourceItem - a model defined in huaweicloud sdk"""
+        """ResourceItem
+
+        The model defined in huaweicloud sdk
+
+        :param resource_id: 资源ID
+        :type resource_id: str
+        :param resource_detail: 资源详情。资源对象，用于扩展，默认为空。
+        :type resource_detail: object
+        :param tags: 标签列表，没有标签默认为空数组。
+        :type tags: list[:class:`huaweicloudsdkdns.v2.Tag`]
+        :param resource_name: 资源名称，没有默认为空字符串
+        :type resource_name: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class ResourceItem:
         资源ID
 
         :param resource_id: The resource_id of this ResourceItem.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -95,7 +106,7 @@ class ResourceItem:
         资源详情。资源对象，用于扩展，默认为空。
 
         :param resource_detail: The resource_detail of this ResourceItem.
-        :type: object
+        :type resource_detail: object
         """
         self._resource_detail = resource_detail
 
@@ -106,7 +117,7 @@ class ResourceItem:
         标签列表，没有标签默认为空数组。
 
         :return: The tags of this ResourceItem.
-        :rtype: list[Tag]
+        :rtype: list[:class:`huaweicloudsdkdns.v2.Tag`]
         """
         return self._tags
 
@@ -117,7 +128,7 @@ class ResourceItem:
         标签列表，没有标签默认为空数组。
 
         :param tags: The tags of this ResourceItem.
-        :type: list[Tag]
+        :type tags: list[:class:`huaweicloudsdkdns.v2.Tag`]
         """
         self._tags = tags
 
@@ -139,7 +150,7 @@ class ResourceItem:
         资源名称，没有默认为空字符串
 
         :param resource_name: The resource_name of this ResourceItem.
-        :type: str
+        :type resource_name: str
         """
         self._resource_name = resource_name
 

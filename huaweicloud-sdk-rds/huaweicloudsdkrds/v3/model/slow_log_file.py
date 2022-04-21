@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SlowLogFile:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class SlowLogFile:
     }
 
     def __init__(self, file_name=None, file_size=None):
-        """SlowLogFile - a model defined in huaweicloud sdk"""
+        """SlowLogFile
+
+        The model defined in huaweicloud sdk
+
+        :param file_name: 文件名。
+        :type file_name: str
+        :param file_size: 文件大小（单位Byte）
+        :type file_size: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class SlowLogFile:
         文件名。
 
         :param file_name: The file_name of this SlowLogFile.
-        :type: str
+        :type file_name: str
         """
         self._file_name = file_name
 
@@ -83,7 +90,7 @@ class SlowLogFile:
         文件大小（单位Byte）
 
         :param file_size: The file_size of this SlowLogFile.
-        :type: str
+        :type file_size: str
         """
         self._file_size = file_size
 

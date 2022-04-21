@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPartnerAdjustRecordsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ListPartnerAdjustRecordsRequest:
     }
 
     def __init__(self, customer_id=None, operation_type=None, operation_time_begin=None, operation_time_end=None, trans_id=None, offset=None, limit=None, indirect_partner_id=None):
-        """ListPartnerAdjustRecordsRequest - a model defined in huaweicloud sdk"""
+        """ListPartnerAdjustRecordsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param customer_id: 客户账号ID。您可以调用查询客户列表接口获取customer_id。为空表示查询所有的调账记录。不为空表示仅查询与该客户相关的调账记录。默认查询所有客户的调账记录。 说明： 此处的客户包含伙伴的子客户，以及华为云伙伴能力中心关联的精英服务商（二级经销商）。
+        :type customer_id: str
+        :param operation_type: 操作类型。SOURCE_OPERATION_BEADJUST：拨款SOURCE_OPERATION_BERETRIEVE：回收SOURCE_OPERATION_BEUNBIND：解绑回收不传递默认查询所有类型。
+        :type operation_type: str
+        :param operation_time_begin: 调账起始时间。UTC时间，格式为：2016-03-28T14:45:38Z
+        :type operation_time_begin: str
+        :param operation_time_end: 调账截止时间。UTC时间，格式为：2016-03-28T14:45:38Z
+        :type operation_time_end: str
+        :param trans_id: 事务ID。
+        :type trans_id: str
+        :param offset: 偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset &#x3D; 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
+        :type offset: int
+        :param limit: 每页的显示条数。默认值为10。
+        :type limit: int
+        :param indirect_partner_id: 精英服务商ID。获取方法请参见查询精英服务商列表。华为云伙伴能力中心（一级经销商）查询精英服务商（二级经销商）的子客户调账记录时，需携带此参数；否则只能查询自己的子客户调账记录。
+        :type indirect_partner_id: str
+        """
         
         
 
@@ -93,7 +112,7 @@ class ListPartnerAdjustRecordsRequest:
         客户账号ID。您可以调用查询客户列表接口获取customer_id。为空表示查询所有的调账记录。不为空表示仅查询与该客户相关的调账记录。默认查询所有客户的调账记录。 说明： 此处的客户包含伙伴的子客户，以及华为云伙伴能力中心关联的精英服务商（二级经销商）。
 
         :param customer_id: The customer_id of this ListPartnerAdjustRecordsRequest.
-        :type: str
+        :type customer_id: str
         """
         self._customer_id = customer_id
 
@@ -115,7 +134,7 @@ class ListPartnerAdjustRecordsRequest:
         操作类型。SOURCE_OPERATION_BEADJUST：拨款SOURCE_OPERATION_BERETRIEVE：回收SOURCE_OPERATION_BEUNBIND：解绑回收不传递默认查询所有类型。
 
         :param operation_type: The operation_type of this ListPartnerAdjustRecordsRequest.
-        :type: str
+        :type operation_type: str
         """
         self._operation_type = operation_type
 
@@ -137,7 +156,7 @@ class ListPartnerAdjustRecordsRequest:
         调账起始时间。UTC时间，格式为：2016-03-28T14:45:38Z
 
         :param operation_time_begin: The operation_time_begin of this ListPartnerAdjustRecordsRequest.
-        :type: str
+        :type operation_time_begin: str
         """
         self._operation_time_begin = operation_time_begin
 
@@ -159,7 +178,7 @@ class ListPartnerAdjustRecordsRequest:
         调账截止时间。UTC时间，格式为：2016-03-28T14:45:38Z
 
         :param operation_time_end: The operation_time_end of this ListPartnerAdjustRecordsRequest.
-        :type: str
+        :type operation_time_end: str
         """
         self._operation_time_end = operation_time_end
 
@@ -181,7 +200,7 @@ class ListPartnerAdjustRecordsRequest:
         事务ID。
 
         :param trans_id: The trans_id of this ListPartnerAdjustRecordsRequest.
-        :type: str
+        :type trans_id: str
         """
         self._trans_id = trans_id
 
@@ -203,7 +222,7 @@ class ListPartnerAdjustRecordsRequest:
         偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
         :param offset: The offset of this ListPartnerAdjustRecordsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -225,7 +244,7 @@ class ListPartnerAdjustRecordsRequest:
         每页的显示条数。默认值为10。
 
         :param limit: The limit of this ListPartnerAdjustRecordsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -247,7 +266,7 @@ class ListPartnerAdjustRecordsRequest:
         精英服务商ID。获取方法请参见查询精英服务商列表。华为云伙伴能力中心（一级经销商）查询精英服务商（二级经销商）的子客户调账记录时，需携带此参数；否则只能查询自己的子客户调账记录。
 
         :param indirect_partner_id: The indirect_partner_id of this ListPartnerAdjustRecordsRequest.
-        :type: str
+        :type indirect_partner_id: str
         """
         self._indirect_partner_id = indirect_partner_id
 

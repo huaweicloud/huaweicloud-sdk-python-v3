@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StartClusterRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class StartClusterRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """StartClusterRequest - a model defined in huaweicloud sdk"""
+        """StartClusterRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 集群ID
+        :type cluster_id: str
+        :param body: Body of the StartClusterRequest
+        :type body: :class:`huaweicloudsdkcdm.v1.CdmStartClusterReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class StartClusterRequest:
         集群ID
 
         :param cluster_id: The cluster_id of this StartClusterRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -72,7 +79,7 @@ class StartClusterRequest:
 
 
         :return: The body of this StartClusterRequest.
-        :rtype: CdmStartClusterReq
+        :rtype: :class:`huaweicloudsdkcdm.v1.CdmStartClusterReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class StartClusterRequest:
 
 
         :param body: The body of this StartClusterRequest.
-        :type: CdmStartClusterReq
+        :type body: :class:`huaweicloudsdkcdm.v1.CdmStartClusterReq`
         """
         self._body = body
 

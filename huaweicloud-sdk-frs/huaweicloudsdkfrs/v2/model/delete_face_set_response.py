@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteFaceSetResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteFaceSetResponse(SdkResponse):
     }
 
     def __init__(self, face_set_name=None):
-        """DeleteFaceSetResponse - a model defined in huaweicloud sdk"""
+        """DeleteFaceSetResponse
+
+        The model defined in huaweicloud sdk
+
+        :param face_set_name: 人脸库名称。 调用失败时无此字段。
+        :type face_set_name: str
+        """
         
         super(DeleteFaceSetResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class DeleteFaceSetResponse(SdkResponse):
         人脸库名称。 调用失败时无此字段。
 
         :param face_set_name: The face_set_name of this DeleteFaceSetResponse.
-        :type: str
+        :type face_set_name: str
         """
         self._face_set_name = face_set_name
 

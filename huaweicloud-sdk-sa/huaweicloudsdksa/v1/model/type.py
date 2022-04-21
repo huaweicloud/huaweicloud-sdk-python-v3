@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Type:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class Type:
     }
 
     def __init__(self, business=None, category=None, classifier=None, tech_domain=None, properties=None):
-        """Type - a model defined in huaweicloud sdk"""
+        """Type
+
+        The model defined in huaweicloud sdk
+
+        :param business: 事件所属业务领域标签，可选类别如下： attack – 攻击 vulnerability – 漏洞 compliance check – 合规检查 risk - 风险 public opinion - 舆情 illegal&amp;violation - 违法违规 security bulletin - 公告
+        :type business: str
+        :param category: 类别，推荐使用预定义的类型分类。
+        :type category: str
+        :param classifier: 分类器，推荐使用预定义的分类器。 如果指定了分类器，则必须指定类别。
+        :type classifier: str
+        :param tech_domain: 技术领域标签： OS：主机 APP：应用 NET：网络 OPS：运维 CS：云服务 CSP：平台云服务
+        :type tech_domain: str
+        :param properties: 
+        :type properties: :class:`huaweicloudsdksa.v1.TypeProperties`
+        """
         
         
 
@@ -78,7 +91,7 @@ class Type:
         事件所属业务领域标签，可选类别如下： attack – 攻击 vulnerability – 漏洞 compliance check – 合规检查 risk - 风险 public opinion - 舆情 illegal&violation - 违法违规 security bulletin - 公告
 
         :param business: The business of this Type.
-        :type: str
+        :type business: str
         """
         self._business = business
 
@@ -100,7 +113,7 @@ class Type:
         类别，推荐使用预定义的类型分类。
 
         :param category: The category of this Type.
-        :type: str
+        :type category: str
         """
         self._category = category
 
@@ -122,7 +135,7 @@ class Type:
         分类器，推荐使用预定义的分类器。 如果指定了分类器，则必须指定类别。
 
         :param classifier: The classifier of this Type.
-        :type: str
+        :type classifier: str
         """
         self._classifier = classifier
 
@@ -144,7 +157,7 @@ class Type:
         技术领域标签： OS：主机 APP：应用 NET：网络 OPS：运维 CS：云服务 CSP：平台云服务
 
         :param tech_domain: The tech_domain of this Type.
-        :type: str
+        :type tech_domain: str
         """
         self._tech_domain = tech_domain
 
@@ -154,7 +167,7 @@ class Type:
 
 
         :return: The properties of this Type.
-        :rtype: TypeProperties
+        :rtype: :class:`huaweicloudsdksa.v1.TypeProperties`
         """
         return self._properties
 
@@ -164,7 +177,7 @@ class Type:
 
 
         :param properties: The properties of this Type.
-        :type: TypeProperties
+        :type properties: :class:`huaweicloudsdksa.v1.TypeProperties`
         """
         self._properties = properties
 

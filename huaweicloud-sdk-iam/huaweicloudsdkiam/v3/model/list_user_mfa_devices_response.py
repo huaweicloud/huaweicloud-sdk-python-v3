@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListUserMfaDevicesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListUserMfaDevicesResponse(SdkResponse):
     }
 
     def __init__(self, virtual_mfa_devices=None):
-        """ListUserMfaDevicesResponse - a model defined in huaweicloud sdk"""
+        """ListUserMfaDevicesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param virtual_mfa_devices: 虚拟MFA设备信息列表。
+        :type virtual_mfa_devices: list[:class:`huaweicloudsdkiam.v3.MfaDeviceResult`]
+        """
         
         super(ListUserMfaDevicesResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListUserMfaDevicesResponse(SdkResponse):
         虚拟MFA设备信息列表。
 
         :return: The virtual_mfa_devices of this ListUserMfaDevicesResponse.
-        :rtype: list[MfaDeviceResult]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.MfaDeviceResult`]
         """
         return self._virtual_mfa_devices
 
@@ -58,7 +63,7 @@ class ListUserMfaDevicesResponse(SdkResponse):
         虚拟MFA设备信息列表。
 
         :param virtual_mfa_devices: The virtual_mfa_devices of this ListUserMfaDevicesResponse.
-        :type: list[MfaDeviceResult]
+        :type virtual_mfa_devices: list[:class:`huaweicloudsdkiam.v3.MfaDeviceResult`]
         """
         self._virtual_mfa_devices = virtual_mfa_devices
 

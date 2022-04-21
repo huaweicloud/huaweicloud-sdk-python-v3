@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UnchangeableParam:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UnchangeableParam:
     }
 
     def __init__(self, lower_case_table_names=None):
-        """UnchangeableParam - a model defined in huaweicloud sdk"""
+        """UnchangeableParam
+
+        The model defined in huaweicloud sdk
+
+        :param lower_case_table_names: 表名大小写是否敏感，默认值是“1”，当前仅MySQL 8.0支持。 取值范围： - 0：表名被存储成固定且表名称大小写敏感。 - 1：表名将被存储成小写且表名称大小写不敏感。
+        :type lower_case_table_names: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class UnchangeableParam:
         表名大小写是否敏感，默认值是“1”，当前仅MySQL 8.0支持。 取值范围： - 0：表名被存储成固定且表名称大小写敏感。 - 1：表名将被存储成小写且表名称大小写不敏感。
 
         :param lower_case_table_names: The lower_case_table_names of this UnchangeableParam.
-        :type: str
+        :type lower_case_table_names: str
         """
         self._lower_case_table_names = lower_case_table_names
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowMonitoringDataRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowMonitoringDataRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """ShowMonitoringDataRequest - a model defined in huaweicloud sdk"""
+        """ShowMonitoringDataRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 请求语言类型
+        :type x_language: str
+        :param body: Body of the ShowMonitoringDataRequest
+        :type body: :class:`huaweicloudsdkdrs.v3.BatchQueryJobReq`
+        """
         
         
 
@@ -63,7 +70,7 @@ class ShowMonitoringDataRequest:
         请求语言类型
 
         :param x_language: The x_language of this ShowMonitoringDataRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -73,7 +80,7 @@ class ShowMonitoringDataRequest:
 
 
         :return: The body of this ShowMonitoringDataRequest.
-        :rtype: BatchQueryJobReq
+        :rtype: :class:`huaweicloudsdkdrs.v3.BatchQueryJobReq`
         """
         return self._body
 
@@ -83,7 +90,7 @@ class ShowMonitoringDataRequest:
 
 
         :param body: The body of this ShowMonitoringDataRequest.
-        :type: BatchQueryJobReq
+        :type body: :class:`huaweicloudsdkdrs.v3.BatchQueryJobReq`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AccessAkskVO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class AccessAkskVO:
     }
 
     def __init__(self, id=None, gmt_create=None, gmt_modify=None, inner_domain_id=None, ak=None, sk=None, status=None, descp=None):
-        """AccessAkskVO - a model defined in huaweicloud sdk"""
+        """AccessAkskVO
+
+        The model defined in huaweicloud sdk
+
+        :param id: ak-sk的id
+        :type id: int
+        :param gmt_create: ak-sk的生成时间
+        :type gmt_create: date
+        :param gmt_modify: ak-sk的修改时间
+        :type gmt_modify: date
+        :param inner_domain_id: 内部租户id
+        :type inner_domain_id: int
+        :param ak: 生成的ak
+        :type ak: str
+        :param sk: 生成的sk
+        :type sk: str
+        :param status: ak-sk的状态
+        :type status: str
+        :param descp: ak-sk的描述信息
+        :type descp: str
+        """
         
         
 
@@ -93,7 +112,7 @@ class AccessAkskVO:
         ak-sk的id
 
         :param id: The id of this AccessAkskVO.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -115,7 +134,7 @@ class AccessAkskVO:
         ak-sk的生成时间
 
         :param gmt_create: The gmt_create of this AccessAkskVO.
-        :type: date
+        :type gmt_create: date
         """
         self._gmt_create = gmt_create
 
@@ -137,7 +156,7 @@ class AccessAkskVO:
         ak-sk的修改时间
 
         :param gmt_modify: The gmt_modify of this AccessAkskVO.
-        :type: date
+        :type gmt_modify: date
         """
         self._gmt_modify = gmt_modify
 
@@ -159,7 +178,7 @@ class AccessAkskVO:
         内部租户id
 
         :param inner_domain_id: The inner_domain_id of this AccessAkskVO.
-        :type: int
+        :type inner_domain_id: int
         """
         self._inner_domain_id = inner_domain_id
 
@@ -181,7 +200,7 @@ class AccessAkskVO:
         生成的ak
 
         :param ak: The ak of this AccessAkskVO.
-        :type: str
+        :type ak: str
         """
         self._ak = ak
 
@@ -203,7 +222,7 @@ class AccessAkskVO:
         生成的sk
 
         :param sk: The sk of this AccessAkskVO.
-        :type: str
+        :type sk: str
         """
         self._sk = sk
 
@@ -225,7 +244,7 @@ class AccessAkskVO:
         ak-sk的状态
 
         :param status: The status of this AccessAkskVO.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -247,7 +266,7 @@ class AccessAkskVO:
         ak-sk的描述信息
 
         :param descp: The descp of this AccessAkskVO.
-        :type: str
+        :type descp: str
         """
         self._descp = descp
 

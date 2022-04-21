@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LogicalVolumes:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class LogicalVolumes:
     }
 
     def __init__(self, block_count=None, block_size=None, file_system=None, inode_size=None, mount_point=None, name=None, size=None, used_size=None, free_size=None):
-        """LogicalVolumes - a model defined in huaweicloud sdk"""
+        """LogicalVolumes
+
+        The model defined in huaweicloud sdk
+
+        :param block_count: 块数量
+        :type block_count: int
+        :param block_size: 块大小
+        :type block_size: int
+        :param file_system: 文件系统
+        :type file_system: str
+        :param inode_size: inode数量
+        :type inode_size: int
+        :param mount_point: 挂载点
+        :type mount_point: str
+        :param name: 名称
+        :type name: str
+        :param size: 大小
+        :type size: int
+        :param used_size: 使用大小
+        :type used_size: int
+        :param free_size: 剩余空间
+        :type free_size: int
+        """
         
         
 
@@ -91,7 +112,7 @@ class LogicalVolumes:
         块数量
 
         :param block_count: The block_count of this LogicalVolumes.
-        :type: int
+        :type block_count: int
         """
         self._block_count = block_count
 
@@ -113,7 +134,7 @@ class LogicalVolumes:
         块大小
 
         :param block_size: The block_size of this LogicalVolumes.
-        :type: int
+        :type block_size: int
         """
         self._block_size = block_size
 
@@ -135,7 +156,7 @@ class LogicalVolumes:
         文件系统
 
         :param file_system: The file_system of this LogicalVolumes.
-        :type: str
+        :type file_system: str
         """
         self._file_system = file_system
 
@@ -157,7 +178,7 @@ class LogicalVolumes:
         inode数量
 
         :param inode_size: The inode_size of this LogicalVolumes.
-        :type: int
+        :type inode_size: int
         """
         self._inode_size = inode_size
 
@@ -179,7 +200,7 @@ class LogicalVolumes:
         挂载点
 
         :param mount_point: The mount_point of this LogicalVolumes.
-        :type: str
+        :type mount_point: str
         """
         self._mount_point = mount_point
 
@@ -201,7 +222,7 @@ class LogicalVolumes:
         名称
 
         :param name: The name of this LogicalVolumes.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -223,7 +244,7 @@ class LogicalVolumes:
         大小
 
         :param size: The size of this LogicalVolumes.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -245,7 +266,7 @@ class LogicalVolumes:
         使用大小
 
         :param used_size: The used_size of this LogicalVolumes.
-        :type: int
+        :type used_size: int
         """
         self._used_size = used_size
 
@@ -267,7 +288,7 @@ class LogicalVolumes:
         剩余空间
 
         :param free_size: The free_size of this LogicalVolumes.
-        :type: int
+        :type free_size: int
         """
         self._free_size = free_size
 

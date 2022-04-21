@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TagPlain:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class TagPlain:
     }
 
     def __init__(self, key=None, value=None):
-        """TagPlain - a model defined in huaweicloud sdk"""
+        """TagPlain
+
+        The model defined in huaweicloud sdk
+
+        :param key: 键。标签的key值不能包含“&#x3D;”,“*”,“&lt;”,“&gt;”,“\\”,“,”,“|”,“/”，且首尾字符不能为空格。
+        :type key: str
+        :param value: 值。标签的value值不能包含“&#x3D;”,“*”,“&lt;”,“&gt;”,“\\”,“,”,“|”,“/”，且首尾字符不能为空格。
+        :type value: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class TagPlain:
         键。标签的key值不能包含“=”,“*”,“<”,“>”,“\\”,“,”,“|”,“/”，且首尾字符不能为空格。
 
         :param key: The key of this TagPlain.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -85,7 +92,7 @@ class TagPlain:
         值。标签的value值不能包含“=”,“*”,“<”,“>”,“\\”,“,”,“|”,“/”，且首尾字符不能为空格。
 
         :param value: The value of this TagPlain.
-        :type: str
+        :type value: str
         """
         self._value = value
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateInstanceFlavorResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CreateInstanceFlavorResult:
     }
 
     def __init__(self, num=None, storage=None, size=None, spec_code=None):
-        """CreateInstanceFlavorResult - a model defined in huaweicloud sdk"""
+        """CreateInstanceFlavorResult
+
+        The model defined in huaweicloud sdk
+
+        :param num: 节点数量。   - GaussDB(for Cassandra)实例的节点数量可取3~12。   - GaussDB(for Mongo)4.0版本副本集实例的节点数量可取3。   - GaussDB(for Influx)实例的节点数量可取3~16。
+        :type num: str
+        :param storage: 磁盘类型。 取值为“ULTRAHIGH”，表示SSD盘。
+        :type storage: str
+        :param size: 磁盘大小。必须为10的整数倍。单位为GB。最小磁盘容量100GB，最大磁盘容量与实例的性能规格有关，详见数据库实例规格。
+        :type size: str
+        :param spec_code: 资源规格编码。获取方法请参见查询所有实例规格信息中响应参数“spec_code”的值。
+        :type spec_code: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class CreateInstanceFlavorResult:
         节点数量。   - GaussDB(for Cassandra)实例的节点数量可取3~12。   - GaussDB(for Mongo)4.0版本副本集实例的节点数量可取3。   - GaussDB(for Influx)实例的节点数量可取3~16。
 
         :param num: The num of this CreateInstanceFlavorResult.
-        :type: str
+        :type num: str
         """
         self._num = num
 
@@ -95,7 +106,7 @@ class CreateInstanceFlavorResult:
         磁盘类型。 取值为“ULTRAHIGH”，表示SSD盘。
 
         :param storage: The storage of this CreateInstanceFlavorResult.
-        :type: str
+        :type storage: str
         """
         self._storage = storage
 
@@ -117,7 +128,7 @@ class CreateInstanceFlavorResult:
         磁盘大小。必须为10的整数倍。单位为GB。最小磁盘容量100GB，最大磁盘容量与实例的性能规格有关，详见数据库实例规格。
 
         :param size: The size of this CreateInstanceFlavorResult.
-        :type: str
+        :type size: str
         """
         self._size = size
 
@@ -139,7 +150,7 @@ class CreateInstanceFlavorResult:
         资源规格编码。获取方法请参见查询所有实例规格信息中响应参数“spec_code”的值。
 
         :param spec_code: The spec_code of this CreateInstanceFlavorResult.
-        :type: str
+        :type spec_code: str
         """
         self._spec_code = spec_code
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SearchCorpResourcesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class SearchCorpResourcesRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, offset=None, limit=None, search_key=None, start_expire_date=None, end_expire_date=None, type=None, vmr_mode=None, type_id=None, order_id=None, status=None):
-        """SearchCorpResourcesRequest - a model defined in huaweicloud sdk"""
+        """SearchCorpResourcesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        :type x_request_id: str
+        :param accept_language: 语言参数，默认为中文zh-CN, 英文为en-US
+        :type accept_language: str
+        :param offset: 查询偏移量,若超过最大数量，则返回最后一页的数据 默认值：0 
+        :type offset: int
+        :param limit: 查询数量 默认值：0 
+        :type limit: int
+        :param search_key: 搜索条件，支持resourceId模糊查询。
+        :type search_key: str
+        :param start_expire_date: 查询过期时间在该时间戳之后的资源项
+        :type start_expire_date: int
+        :param end_expire_date: 查询过期时间在该时间戳之前的资源项
+        :type end_expire_date: int
+        :param type: 资源类型。 - VMR        - 云会议室 - CONF_CALL  - 会议并发数 - HARD_1080P - 1080P硬终端 - HARD_720P  - 720P硬终端 - SOFT       - 软终端用户数 - ROOM       - 大屏软终端 - LIVE       - 直播推流 - RECORD     - 录播空间 - HARD_THIRD_PARTY - 第三方硬终端账号 - HUAWEI_VISION -智慧屏 说明：查询网络研讨会资源时type字段需上送VMR 
+        :type type: str
+        :param vmr_mode: VMR模式，type为vmr时传递该参数 * 0：个人会议ID * 1：云会议室 * 2：网络研讨会 
+        :type vmr_mode: int
+        :param type_id: 资源类型Id,若想搜索5方VMR时，需携带5方vmrpkg对应的id
+        :type type_id: str
+        :param order_id: 订单Id
+        :type order_id: str
+        :param status: 订单状态。 - 0：正常 - 1：到期 - 2：停用 
+        :type status: int
+        """
         
         
 
@@ -113,7 +140,7 @@ class SearchCorpResourcesRequest:
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
 
         :param x_request_id: The x_request_id of this SearchCorpResourcesRequest.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 
@@ -135,7 +162,7 @@ class SearchCorpResourcesRequest:
         语言参数，默认为中文zh-CN, 英文为en-US
 
         :param accept_language: The accept_language of this SearchCorpResourcesRequest.
-        :type: str
+        :type accept_language: str
         """
         self._accept_language = accept_language
 
@@ -157,7 +184,7 @@ class SearchCorpResourcesRequest:
         查询偏移量,若超过最大数量，则返回最后一页的数据 默认值：0 
 
         :param offset: The offset of this SearchCorpResourcesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -179,7 +206,7 @@ class SearchCorpResourcesRequest:
         查询数量 默认值：0 
 
         :param limit: The limit of this SearchCorpResourcesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -201,7 +228,7 @@ class SearchCorpResourcesRequest:
         搜索条件，支持resourceId模糊查询。
 
         :param search_key: The search_key of this SearchCorpResourcesRequest.
-        :type: str
+        :type search_key: str
         """
         self._search_key = search_key
 
@@ -223,7 +250,7 @@ class SearchCorpResourcesRequest:
         查询过期时间在该时间戳之后的资源项
 
         :param start_expire_date: The start_expire_date of this SearchCorpResourcesRequest.
-        :type: int
+        :type start_expire_date: int
         """
         self._start_expire_date = start_expire_date
 
@@ -245,7 +272,7 @@ class SearchCorpResourcesRequest:
         查询过期时间在该时间戳之前的资源项
 
         :param end_expire_date: The end_expire_date of this SearchCorpResourcesRequest.
-        :type: int
+        :type end_expire_date: int
         """
         self._end_expire_date = end_expire_date
 
@@ -267,7 +294,7 @@ class SearchCorpResourcesRequest:
         资源类型。 - VMR        - 云会议室 - CONF_CALL  - 会议并发数 - HARD_1080P - 1080P硬终端 - HARD_720P  - 720P硬终端 - SOFT       - 软终端用户数 - ROOM       - 大屏软终端 - LIVE       - 直播推流 - RECORD     - 录播空间 - HARD_THIRD_PARTY - 第三方硬终端账号 - HUAWEI_VISION -智慧屏 说明：查询网络研讨会资源时type字段需上送VMR 
 
         :param type: The type of this SearchCorpResourcesRequest.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -289,7 +316,7 @@ class SearchCorpResourcesRequest:
         VMR模式，type为vmr时传递该参数 * 0：个人会议ID * 1：云会议室 * 2：网络研讨会 
 
         :param vmr_mode: The vmr_mode of this SearchCorpResourcesRequest.
-        :type: int
+        :type vmr_mode: int
         """
         self._vmr_mode = vmr_mode
 
@@ -311,7 +338,7 @@ class SearchCorpResourcesRequest:
         资源类型Id,若想搜索5方VMR时，需携带5方vmrpkg对应的id
 
         :param type_id: The type_id of this SearchCorpResourcesRequest.
-        :type: str
+        :type type_id: str
         """
         self._type_id = type_id
 
@@ -333,7 +360,7 @@ class SearchCorpResourcesRequest:
         订单Id
 
         :param order_id: The order_id of this SearchCorpResourcesRequest.
-        :type: str
+        :type order_id: str
         """
         self._order_id = order_id
 
@@ -355,7 +382,7 @@ class SearchCorpResourcesRequest:
         订单状态。 - 0：正常 - 1：到期 - 2：停用 
 
         :param status: The status of this SearchCorpResourcesRequest.
-        :type: int
+        :type status: int
         """
         self._status = status
 

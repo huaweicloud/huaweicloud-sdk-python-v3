@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FileAddr:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class FileAddr:
     }
 
     def __init__(self, bucket=None, location=None, object=None):
-        """FileAddr - a model defined in huaweicloud sdk"""
+        """FileAddr
+
+        The model defined in huaweicloud sdk
+
+        :param bucket: OBS的bucket名称。
+        :type bucket: str
+        :param location: 桶所在的区域名， 如“华北-北京四”的区域名为“cn-north-4”，创建的桶所在区域必须和点播服务所在区域保持一致。
+        :type location: str
+        :param object: 文件的存储路径。
+        :type object: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class FileAddr:
         OBS的bucket名称。
 
         :param bucket: The bucket of this FileAddr.
-        :type: str
+        :type bucket: str
         """
         self._bucket = bucket
 
@@ -87,7 +96,7 @@ class FileAddr:
         桶所在的区域名， 如“华北-北京四”的区域名为“cn-north-4”，创建的桶所在区域必须和点播服务所在区域保持一致。
 
         :param location: The location of this FileAddr.
-        :type: str
+        :type location: str
         """
         self._location = location
 
@@ -109,7 +118,7 @@ class FileAddr:
         文件的存储路径。
 
         :param object: The object of this FileAddr.
-        :type: str
+        :type object: str
         """
         self._object = object
 

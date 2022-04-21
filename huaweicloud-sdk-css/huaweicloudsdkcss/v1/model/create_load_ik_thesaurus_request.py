@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateLoadIkThesaurusRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateLoadIkThesaurusRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """CreateLoadIkThesaurusRequest - a model defined in huaweicloud sdk"""
+        """CreateLoadIkThesaurusRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 指定配置自定义词库的集群ID。
+        :type cluster_id: str
+        :param body: Body of the CreateLoadIkThesaurusRequest
+        :type body: :class:`huaweicloudsdkcss.v1.LoadCustomThesaurusReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateLoadIkThesaurusRequest:
         指定配置自定义词库的集群ID。
 
         :param cluster_id: The cluster_id of this CreateLoadIkThesaurusRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -72,7 +79,7 @@ class CreateLoadIkThesaurusRequest:
 
 
         :return: The body of this CreateLoadIkThesaurusRequest.
-        :rtype: LoadCustomThesaurusReq
+        :rtype: :class:`huaweicloudsdkcss.v1.LoadCustomThesaurusReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CreateLoadIkThesaurusRequest:
 
 
         :param body: The body of this CreateLoadIkThesaurusRequest.
-        :type: LoadCustomThesaurusReq
+        :type body: :class:`huaweicloudsdkcss.v1.LoadCustomThesaurusReq`
         """
         self._body = body
 

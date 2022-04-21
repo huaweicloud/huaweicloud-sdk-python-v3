@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateDiagnosisTaskRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateDiagnosisTaskRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreateDiagnosisTaskRequest - a model defined in huaweicloud sdk"""
+        """CreateDiagnosisTaskRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param body: Body of the CreateDiagnosisTaskRequest
+        :type body: :class:`huaweicloudsdkdcs.v2.CreateDiagnosisTaskBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateDiagnosisTaskRequest:
         实例ID
 
         :param instance_id: The instance_id of this CreateDiagnosisTaskRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -72,7 +79,7 @@ class CreateDiagnosisTaskRequest:
 
 
         :return: The body of this CreateDiagnosisTaskRequest.
-        :rtype: CreateDiagnosisTaskBody
+        :rtype: :class:`huaweicloudsdkdcs.v2.CreateDiagnosisTaskBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CreateDiagnosisTaskRequest:
 
 
         :param body: The body of this CreateDiagnosisTaskRequest.
-        :type: CreateDiagnosisTaskBody
+        :type body: :class:`huaweicloudsdkdcs.v2.CreateDiagnosisTaskBody`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CustomerInformation:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -58,7 +57,41 @@ class CustomerInformation:
     }
 
     def __init__(self, customer=None, account_name=None, customer_id=None, associated_on=None, association_type=None, label=None, telephone=None, verified_status=None, country_code=None, customer_type=None, is_frozen=None, account_managers=None, xaccount_id=None, xaccount_type=None, customer_level=None):
-        """CustomerInformation - a model defined in huaweicloud sdk"""
+        """CustomerInformation
+
+        The model defined in huaweicloud sdk
+
+        :param customer: 实名认证名称。
+        :type customer: str
+        :param account_name: 客户经理登录名称。
+        :type account_name: str
+        :param customer_id: 客户账号ID。
+        :type customer_id: str
+        :param associated_on: 客户和伙伴关联时间。 UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”，其中，HH范围是0～23，mm和ss范围是0～59。
+        :type associated_on: str
+        :param association_type: 关联类型： 1：顾问销售3：转售
+        :type association_type: str
+        :param label: 标签。
+        :type label: str
+        :param telephone: 客户电话号码。
+        :type telephone: str
+        :param verified_status: 实名认证状态： -1：未实名认证0：实名认证审核中1：实名认证不通过2：已实名认证3：实名认证失败
+        :type verified_status: str
+        :param country_code: 国家码，电话号码的国家码前缀。 例如：中国 0086。
+        :type country_code: str
+        :param customer_type: 客户类型： -1：无类型0：个人1：企业 客户刚注册的时候，没有具体的客户类型，为“-1：无类型”，客户可以在账号中心通过设置客户类型或者在实名认证的时候，选择对应的企业/个人实名认证来决定自己的类型。
+        :type customer_type: int
+        :param is_frozen: 是否冻结： 0：否1：是
+        :type is_frozen: int
+        :param account_managers: 该客户对应的客户经理信息，目前只支持1个，具体参见表2。
+        :type account_managers: list[:class:`huaweicloudsdkbssintl.v2.AccountManager`]
+        :param xaccount_id: 伙伴销售平台的用户唯一标识，该标识的具体值由伙伴分配。
+        :type xaccount_id: str
+        :param xaccount_type: 华为分配给合作伙伴的平台标识。 该标识的具体值由华为分配。获取方法请参见如何获取xaccountType的取值。
+        :type xaccount_type: str
+        :param customer_level: 客户等级。 V0 V1 V2 V3 V4 V5
+        :type customer_level: str
+        """
         
         
 
@@ -126,7 +159,7 @@ class CustomerInformation:
         实名认证名称。
 
         :param customer: The customer of this CustomerInformation.
-        :type: str
+        :type customer: str
         """
         self._customer = customer
 
@@ -148,7 +181,7 @@ class CustomerInformation:
         客户经理登录名称。
 
         :param account_name: The account_name of this CustomerInformation.
-        :type: str
+        :type account_name: str
         """
         self._account_name = account_name
 
@@ -170,7 +203,7 @@ class CustomerInformation:
         客户账号ID。
 
         :param customer_id: The customer_id of this CustomerInformation.
-        :type: str
+        :type customer_id: str
         """
         self._customer_id = customer_id
 
@@ -192,7 +225,7 @@ class CustomerInformation:
         客户和伙伴关联时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”，其中，HH范围是0～23，mm和ss范围是0～59。
 
         :param associated_on: The associated_on of this CustomerInformation.
-        :type: str
+        :type associated_on: str
         """
         self._associated_on = associated_on
 
@@ -214,7 +247,7 @@ class CustomerInformation:
         关联类型： 1：顾问销售3：转售
 
         :param association_type: The association_type of this CustomerInformation.
-        :type: str
+        :type association_type: str
         """
         self._association_type = association_type
 
@@ -236,7 +269,7 @@ class CustomerInformation:
         标签。
 
         :param label: The label of this CustomerInformation.
-        :type: str
+        :type label: str
         """
         self._label = label
 
@@ -258,7 +291,7 @@ class CustomerInformation:
         客户电话号码。
 
         :param telephone: The telephone of this CustomerInformation.
-        :type: str
+        :type telephone: str
         """
         self._telephone = telephone
 
@@ -280,7 +313,7 @@ class CustomerInformation:
         实名认证状态： -1：未实名认证0：实名认证审核中1：实名认证不通过2：已实名认证3：实名认证失败
 
         :param verified_status: The verified_status of this CustomerInformation.
-        :type: str
+        :type verified_status: str
         """
         self._verified_status = verified_status
 
@@ -302,7 +335,7 @@ class CustomerInformation:
         国家码，电话号码的国家码前缀。 例如：中国 0086。
 
         :param country_code: The country_code of this CustomerInformation.
-        :type: str
+        :type country_code: str
         """
         self._country_code = country_code
 
@@ -324,7 +357,7 @@ class CustomerInformation:
         客户类型： -1：无类型0：个人1：企业 客户刚注册的时候，没有具体的客户类型，为“-1：无类型”，客户可以在账号中心通过设置客户类型或者在实名认证的时候，选择对应的企业/个人实名认证来决定自己的类型。
 
         :param customer_type: The customer_type of this CustomerInformation.
-        :type: int
+        :type customer_type: int
         """
         self._customer_type = customer_type
 
@@ -346,7 +379,7 @@ class CustomerInformation:
         是否冻结： 0：否1：是
 
         :param is_frozen: The is_frozen of this CustomerInformation.
-        :type: int
+        :type is_frozen: int
         """
         self._is_frozen = is_frozen
 
@@ -357,7 +390,7 @@ class CustomerInformation:
         该客户对应的客户经理信息，目前只支持1个，具体参见表2。
 
         :return: The account_managers of this CustomerInformation.
-        :rtype: list[AccountManager]
+        :rtype: list[:class:`huaweicloudsdkbssintl.v2.AccountManager`]
         """
         return self._account_managers
 
@@ -368,7 +401,7 @@ class CustomerInformation:
         该客户对应的客户经理信息，目前只支持1个，具体参见表2。
 
         :param account_managers: The account_managers of this CustomerInformation.
-        :type: list[AccountManager]
+        :type account_managers: list[:class:`huaweicloudsdkbssintl.v2.AccountManager`]
         """
         self._account_managers = account_managers
 
@@ -390,7 +423,7 @@ class CustomerInformation:
         伙伴销售平台的用户唯一标识，该标识的具体值由伙伴分配。
 
         :param xaccount_id: The xaccount_id of this CustomerInformation.
-        :type: str
+        :type xaccount_id: str
         """
         self._xaccount_id = xaccount_id
 
@@ -412,7 +445,7 @@ class CustomerInformation:
         华为分配给合作伙伴的平台标识。 该标识的具体值由华为分配。获取方法请参见如何获取xaccountType的取值。
 
         :param xaccount_type: The xaccount_type of this CustomerInformation.
-        :type: str
+        :type xaccount_type: str
         """
         self._xaccount_type = xaccount_type
 
@@ -434,7 +467,7 @@ class CustomerInformation:
         客户等级。 V0 V1 V2 V3 V4 V5
 
         :param customer_level: The customer_level of this CustomerInformation.
-        :type: str
+        :type customer_level: str
         """
         self._customer_level = customer_level
 

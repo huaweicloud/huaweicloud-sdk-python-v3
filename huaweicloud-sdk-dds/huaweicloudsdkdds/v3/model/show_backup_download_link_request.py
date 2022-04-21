@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowBackupDownloadLinkRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowBackupDownloadLinkRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, backup_id=None):
-        """ShowBackupDownloadLinkRequest - a model defined in huaweicloud sdk"""
+        """ShowBackupDownloadLinkRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言。
+        :type x_language: str
+        :param instance_id: 实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
+        :type instance_id: str
+        :param backup_id: 备份ID。
+        :type backup_id: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class ShowBackupDownloadLinkRequest:
         语言。
 
         :param x_language: The x_language of this ShowBackupDownloadLinkRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -88,7 +97,7 @@ class ShowBackupDownloadLinkRequest:
         实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
         :param instance_id: The instance_id of this ShowBackupDownloadLinkRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -110,7 +119,7 @@ class ShowBackupDownloadLinkRequest:
         备份ID。
 
         :param backup_id: The backup_id of this ShowBackupDownloadLinkRequest.
-        :type: str
+        :type backup_id: str
         """
         self._backup_id = backup_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateTasksRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateTasksRequest:
     }
 
     def __init__(self, service_name=None, body=None):
-        """CreateTasksRequest - a model defined in huaweicloud sdk"""
+        """CreateTasksRequest
+
+        The model defined in huaweicloud sdk
+
+        :param service_name: 服务API,具体API名称见园区智能体提供的API参考列表中URI描述[API列表](https://support.huaweicloud.com/api-campusgo/campusgo_03_0013.html)
+        :type service_name: str
+        :param body: Body of the CreateTasksRequest
+        :type body: :class:`huaweicloudsdkcampusgo.v2.CreateTasksRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateTasksRequest:
         服务API,具体API名称见园区智能体提供的API参考列表中URI描述[API列表](https://support.huaweicloud.com/api-campusgo/campusgo_03_0013.html)
 
         :param service_name: The service_name of this CreateTasksRequest.
-        :type: str
+        :type service_name: str
         """
         self._service_name = service_name
 
@@ -72,7 +79,7 @@ class CreateTasksRequest:
 
 
         :return: The body of this CreateTasksRequest.
-        :rtype: CreateTasksRequestBody
+        :rtype: :class:`huaweicloudsdkcampusgo.v2.CreateTasksRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CreateTasksRequest:
 
 
         :param body: The body of this CreateTasksRequest.
-        :type: CreateTasksRequestBody
+        :type body: :class:`huaweicloudsdkcampusgo.v2.CreateTasksRequestBody`
         """
         self._body = body
 

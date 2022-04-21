@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ProfileResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ProfileResp:
     }
 
     def __init__(self, order_id=None, product_id=None, region_id=None, user_id=None):
-        """ProfileResp - a model defined in huaweicloud sdk"""
+        """ProfileResp
+
+        The model defined in huaweicloud sdk
+
+        :param order_id: 订单的id
+        :type order_id: str
+        :param product_id: 产品的id
+        :type product_id: str
+        :param region_id: region的id
+        :type region_id: str
+        :param user_id: 用户的id
+        :type user_id: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class ProfileResp:
         订单的id
 
         :param order_id: The order_id of this ProfileResp.
-        :type: str
+        :type order_id: str
         """
         self._order_id = order_id
 
@@ -95,7 +106,7 @@ class ProfileResp:
         产品的id
 
         :param product_id: The product_id of this ProfileResp.
-        :type: str
+        :type product_id: str
         """
         self._product_id = product_id
 
@@ -117,7 +128,7 @@ class ProfileResp:
         region的id
 
         :param region_id: The region_id of this ProfileResp.
-        :type: str
+        :type region_id: str
         """
         self._region_id = region_id
 
@@ -139,7 +150,7 @@ class ProfileResp:
         用户的id
 
         :param user_id: The user_id of this ProfileResp.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 

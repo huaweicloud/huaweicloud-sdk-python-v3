@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AclApiBindingInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class AclApiBindingInfo:
     }
 
     def __init__(self, id=None, api_id=None, env_id=None, acl_id=None, create_time=None):
-        """AclApiBindingInfo - a model defined in huaweicloud sdk"""
+        """AclApiBindingInfo
+
+        The model defined in huaweicloud sdk
+
+        :param id: 绑定关系编号
+        :type id: str
+        :param api_id: API编号
+        :type api_id: str
+        :param env_id: 环境编号
+        :type env_id: str
+        :param acl_id: ACL策略编号
+        :type acl_id: str
+        :param create_time: 绑定时间
+        :type create_time: datetime
+        """
         
         
 
@@ -78,7 +91,7 @@ class AclApiBindingInfo:
         绑定关系编号
 
         :param id: The id of this AclApiBindingInfo.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -100,7 +113,7 @@ class AclApiBindingInfo:
         API编号
 
         :param api_id: The api_id of this AclApiBindingInfo.
-        :type: str
+        :type api_id: str
         """
         self._api_id = api_id
 
@@ -122,7 +135,7 @@ class AclApiBindingInfo:
         环境编号
 
         :param env_id: The env_id of this AclApiBindingInfo.
-        :type: str
+        :type env_id: str
         """
         self._env_id = env_id
 
@@ -144,7 +157,7 @@ class AclApiBindingInfo:
         ACL策略编号
 
         :param acl_id: The acl_id of this AclApiBindingInfo.
-        :type: str
+        :type acl_id: str
         """
         self._acl_id = acl_id
 
@@ -166,7 +179,7 @@ class AclApiBindingInfo:
         绑定时间
 
         :param create_time: The create_time of this AclApiBindingInfo.
-        :type: datetime
+        :type create_time: datetime
         """
         self._create_time = create_time
 

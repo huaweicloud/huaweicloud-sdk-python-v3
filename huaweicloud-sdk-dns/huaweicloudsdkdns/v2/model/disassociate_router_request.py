@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DisassociateRouterRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DisassociateRouterRequest:
     }
 
     def __init__(self, zone_id=None, body=None):
-        """DisassociateRouterRequest - a model defined in huaweicloud sdk"""
+        """DisassociateRouterRequest
+
+        The model defined in huaweicloud sdk
+
+        :param zone_id: 待解关联zone的ID。
+        :type zone_id: str
+        :param body: Body of the DisassociateRouterRequest
+        :type body: :class:`huaweicloudsdkdns.v2.DisassociaterouterReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class DisassociateRouterRequest:
         待解关联zone的ID。
 
         :param zone_id: The zone_id of this DisassociateRouterRequest.
-        :type: str
+        :type zone_id: str
         """
         self._zone_id = zone_id
 
@@ -72,7 +79,7 @@ class DisassociateRouterRequest:
 
 
         :return: The body of this DisassociateRouterRequest.
-        :rtype: DisassociaterouterReq
+        :rtype: :class:`huaweicloudsdkdns.v2.DisassociaterouterReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class DisassociateRouterRequest:
 
 
         :param body: The body of this DisassociateRouterRequest.
-        :type: DisassociaterouterReq
+        :type body: :class:`huaweicloudsdkdns.v2.DisassociaterouterReq`
         """
         self._body = body
 

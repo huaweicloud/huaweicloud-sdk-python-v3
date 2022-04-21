@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowSingleCommitRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowSingleCommitRequest:
     }
 
     def __init__(self, repo_id=None, sha=None, stats=None):
-        """ShowSingleCommitRequest - a model defined in huaweicloud sdk"""
+        """ShowSingleCommitRequest
+
+        The model defined in huaweicloud sdk
+
+        :param repo_id: 仓库短id
+        :type repo_id: int
+        :param sha: commit id，仓库的branch名或tag名
+        :type sha: str
+        :param stats: 包括提交统计信息。默认值为true
+        :type stats: bool
+        """
         
         
 
@@ -66,7 +75,7 @@ class ShowSingleCommitRequest:
         仓库短id
 
         :param repo_id: The repo_id of this ShowSingleCommitRequest.
-        :type: int
+        :type repo_id: int
         """
         self._repo_id = repo_id
 
@@ -88,7 +97,7 @@ class ShowSingleCommitRequest:
         commit id，仓库的branch名或tag名
 
         :param sha: The sha of this ShowSingleCommitRequest.
-        :type: str
+        :type sha: str
         """
         self._sha = sha
 
@@ -110,7 +119,7 @@ class ShowSingleCommitRequest:
         包括提交统计信息。默认值为true
 
         :param stats: The stats of this ShowSingleCommitRequest.
-        :type: bool
+        :type stats: bool
         """
         self._stats = stats
 

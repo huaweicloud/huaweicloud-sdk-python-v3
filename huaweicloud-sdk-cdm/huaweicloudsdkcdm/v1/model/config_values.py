@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ConfigValues:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ConfigValues:
     }
 
     def __init__(self, configs=None):
-        """ConfigValues - a model defined in huaweicloud sdk"""
+        """ConfigValues
+
+        The model defined in huaweicloud sdk
+
+        :param configs: 源连接参数、目的连接参数和作业任务参数，它们的配置数据结构相同，其中“inputs”里的参数不一样，详细请参见configs数据结构说明
+        :type configs: list[:class:`huaweicloudsdkcdm.v1.Configs`]
+        """
         
         
 
@@ -47,7 +52,7 @@ class ConfigValues:
         源连接参数、目的连接参数和作业任务参数，它们的配置数据结构相同，其中“inputs”里的参数不一样，详细请参见configs数据结构说明
 
         :return: The configs of this ConfigValues.
-        :rtype: list[Configs]
+        :rtype: list[:class:`huaweicloudsdkcdm.v1.Configs`]
         """
         return self._configs
 
@@ -58,7 +63,7 @@ class ConfigValues:
         源连接参数、目的连接参数和作业任务参数，它们的配置数据结构相同，其中“inputs”里的参数不一样，详细请参见configs数据结构说明
 
         :param configs: The configs of this ConfigValues.
-        :type: list[Configs]
+        :type configs: list[:class:`huaweicloudsdkcdm.v1.Configs`]
         """
         self._configs = configs
 

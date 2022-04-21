@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowPolicyAndInstanceQuotaRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowPolicyAndInstanceQuotaRequest:
     }
 
     def __init__(self, scaling_group_id=None):
-        """ShowPolicyAndInstanceQuotaRequest - a model defined in huaweicloud sdk"""
+        """ShowPolicyAndInstanceQuotaRequest
+
+        The model defined in huaweicloud sdk
+
+        :param scaling_group_id: 伸缩组ID。
+        :type scaling_group_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowPolicyAndInstanceQuotaRequest:
         伸缩组ID。
 
         :param scaling_group_id: The scaling_group_id of this ShowPolicyAndInstanceQuotaRequest.
-        :type: str
+        :type scaling_group_id: str
         """
         self._scaling_group_id = scaling_group_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchSetPolicyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchSetPolicyResponse(SdkResponse):
     }
 
     def __init__(self, results=None, count=None):
-        """BatchSetPolicyResponse - a model defined in huaweicloud sdk"""
+        """BatchSetPolicyResponse
+
+        The model defined in huaweicloud sdk
+
+        :param results: 批量设置同步策略响应体
+        :type results: list[:class:`huaweicloudsdkdrs.v3.SyncPolicyResp`]
+        :param count: 总数
+        :type count: int
+        """
         
         super(BatchSetPolicyResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class BatchSetPolicyResponse(SdkResponse):
         批量设置同步策略响应体
 
         :return: The results of this BatchSetPolicyResponse.
-        :rtype: list[SyncPolicyResp]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.SyncPolicyResp`]
         """
         return self._results
 
@@ -63,7 +70,7 @@ class BatchSetPolicyResponse(SdkResponse):
         批量设置同步策略响应体
 
         :param results: The results of this BatchSetPolicyResponse.
-        :type: list[SyncPolicyResp]
+        :type results: list[:class:`huaweicloudsdkdrs.v3.SyncPolicyResp`]
         """
         self._results = results
 
@@ -85,7 +92,7 @@ class BatchSetPolicyResponse(SdkResponse):
         总数
 
         :param count: The count of this BatchSetPolicyResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

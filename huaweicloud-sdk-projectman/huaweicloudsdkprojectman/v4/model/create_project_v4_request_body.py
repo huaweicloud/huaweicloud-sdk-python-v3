@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateProjectV4RequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class CreateProjectV4RequestBody:
     }
 
     def __init__(self, project_name=None, description=None, source=None, project_type=None, enterprise_id=None, template_id=None):
-        """CreateProjectV4RequestBody - a model defined in huaweicloud sdk"""
+        """CreateProjectV4RequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param project_name: 项目名称
+        :type project_name: str
+        :param description: 项目描述
+        :type description: str
+        :param source: 项目来源
+        :type source: str
+        :param project_type: 项目类型 scrum, xboard(看板项目), basic, phoenix(凤凰项目)
+        :type project_type: str
+        :param enterprise_id: 项目要绑定的企业项目ID
+        :type enterprise_id: str
+        :param template_id: 用户创建的项目模板id
+        :type template_id: int
+        """
         
         
 
@@ -81,7 +96,7 @@ class CreateProjectV4RequestBody:
         项目名称
 
         :param project_name: The project_name of this CreateProjectV4RequestBody.
-        :type: str
+        :type project_name: str
         """
         self._project_name = project_name
 
@@ -103,7 +118,7 @@ class CreateProjectV4RequestBody:
         项目描述
 
         :param description: The description of this CreateProjectV4RequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -125,7 +140,7 @@ class CreateProjectV4RequestBody:
         项目来源
 
         :param source: The source of this CreateProjectV4RequestBody.
-        :type: str
+        :type source: str
         """
         self._source = source
 
@@ -147,7 +162,7 @@ class CreateProjectV4RequestBody:
         项目类型 scrum, xboard(看板项目), basic, phoenix(凤凰项目)
 
         :param project_type: The project_type of this CreateProjectV4RequestBody.
-        :type: str
+        :type project_type: str
         """
         self._project_type = project_type
 
@@ -169,7 +184,7 @@ class CreateProjectV4RequestBody:
         项目要绑定的企业项目ID
 
         :param enterprise_id: The enterprise_id of this CreateProjectV4RequestBody.
-        :type: str
+        :type enterprise_id: str
         """
         self._enterprise_id = enterprise_id
 
@@ -191,7 +206,7 @@ class CreateProjectV4RequestBody:
         用户创建的项目模板id
 
         :param template_id: The template_id of this CreateProjectV4RequestBody.
-        :type: int
+        :type template_id: int
         """
         self._template_id = template_id
 

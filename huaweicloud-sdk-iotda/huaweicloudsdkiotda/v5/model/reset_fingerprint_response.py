@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResetFingerprintResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ResetFingerprintResponse(SdkResponse):
     }
 
     def __init__(self, device_id=None, fingerprint=None):
-        """ResetFingerprintResponse - a model defined in huaweicloud sdk"""
+        """ResetFingerprintResponse
+
+        The model defined in huaweicloud sdk
+
+        :param device_id: 设备ID，用于唯一标识一个设备。在注册设备时直接指定，或者由物联网平台分配获得。由物联网平台分配时，生成规则为\&quot;product_id\&quot; + \&quot;_\&quot; + \&quot;node_id\&quot;拼接而成。
+        :type device_id: str
+        :param fingerprint: 设备指纹。
+        :type fingerprint: str
+        """
         
         super(ResetFingerprintResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ResetFingerprintResponse(SdkResponse):
         设备ID，用于唯一标识一个设备。在注册设备时直接指定，或者由物联网平台分配获得。由物联网平台分配时，生成规则为\"product_id\" + \"_\" + \"node_id\"拼接而成。
 
         :param device_id: The device_id of this ResetFingerprintResponse.
-        :type: str
+        :type device_id: str
         """
         self._device_id = device_id
 
@@ -85,7 +92,7 @@ class ResetFingerprintResponse(SdkResponse):
         设备指纹。
 
         :param fingerprint: The fingerprint of this ResetFingerprintResponse.
-        :type: str
+        :type fingerprint: str
         """
         self._fingerprint = fingerprint
 

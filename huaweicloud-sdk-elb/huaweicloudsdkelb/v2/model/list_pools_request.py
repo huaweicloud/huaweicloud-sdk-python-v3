@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPoolsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class ListPoolsRequest:
     }
 
     def __init__(self, limit=None, marker=None, page_reverse=None, id=None, name=None, description=None, healthmonitor_id=None, loadbalancer_id=None, protocol=None, lb_algorithm=None, member_address=None, member_device_id=None, enterprise_project_id=None):
-        """ListPoolsRequest - a model defined in huaweicloud sdk"""
+        """ListPoolsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 分页查询中每页的监听器个数
+        :type limit: int
+        :param marker: 分页查询的起始的资源id，表示上一页最后一条查询记录的负载均衡器的id。不指定时表示查询第一页。
+        :type marker: str
+        :param page_reverse: 分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。
+        :type page_reverse: bool
+        :param id: 后端云服务器组ID。
+        :type id: str
+        :param name: 后端云服务器组名称。
+        :type name: str
+        :param description: 后端云服务器组的描述信息。
+        :type description: str
+        :param healthmonitor_id: 后端云服务器组关联的健康检查的ID。
+        :type healthmonitor_id: str
+        :param loadbalancer_id: 后端云服务器组关联的负载均衡器ID。
+        :type loadbalancer_id: str
+        :param protocol: 后端云服务器组的后端协议。支持TCP、UDP和HTTP。
+        :type protocol: str
+        :param lb_algorithm: 后端云服务器组的负载均衡算法。取值范围：ROUND_ROBIN：加权轮询算法。LEAST_CONNECTIONS：加权最少连接算法。SOURCE_IP：源IP算法。当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。
+        :type lb_algorithm: str
+        :param member_address: 后端云服务器组关联的后端云服务器IP。
+        :type member_address: str
+        :param member_device_id: 后端云服务器组关联的后端云服务器对应的弹性云服务器的ID。
+        :type member_device_id: str
+        :param enterprise_project_id: 企业项目ID，仅用于基于企业项目的细粒度鉴权使用；如果参数中传递了loadbalancer_id，则用该负载均衡器对应企业项目ID鉴权；如果参数中没有传递loadbalancer_id，而传递了healthmonitor_id，则使用健康检查器对应的企业项目id鉴权。
+        :type enterprise_project_id: str
+        """
         
         
 
@@ -118,7 +147,7 @@ class ListPoolsRequest:
         分页查询中每页的监听器个数
 
         :param limit: The limit of this ListPoolsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -140,7 +169,7 @@ class ListPoolsRequest:
         分页查询的起始的资源id，表示上一页最后一条查询记录的负载均衡器的id。不指定时表示查询第一页。
 
         :param marker: The marker of this ListPoolsRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -162,7 +191,7 @@ class ListPoolsRequest:
         分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。
 
         :param page_reverse: The page_reverse of this ListPoolsRequest.
-        :type: bool
+        :type page_reverse: bool
         """
         self._page_reverse = page_reverse
 
@@ -184,7 +213,7 @@ class ListPoolsRequest:
         后端云服务器组ID。
 
         :param id: The id of this ListPoolsRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -206,7 +235,7 @@ class ListPoolsRequest:
         后端云服务器组名称。
 
         :param name: The name of this ListPoolsRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -228,7 +257,7 @@ class ListPoolsRequest:
         后端云服务器组的描述信息。
 
         :param description: The description of this ListPoolsRequest.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -250,7 +279,7 @@ class ListPoolsRequest:
         后端云服务器组关联的健康检查的ID。
 
         :param healthmonitor_id: The healthmonitor_id of this ListPoolsRequest.
-        :type: str
+        :type healthmonitor_id: str
         """
         self._healthmonitor_id = healthmonitor_id
 
@@ -272,7 +301,7 @@ class ListPoolsRequest:
         后端云服务器组关联的负载均衡器ID。
 
         :param loadbalancer_id: The loadbalancer_id of this ListPoolsRequest.
-        :type: str
+        :type loadbalancer_id: str
         """
         self._loadbalancer_id = loadbalancer_id
 
@@ -294,7 +323,7 @@ class ListPoolsRequest:
         后端云服务器组的后端协议。支持TCP、UDP和HTTP。
 
         :param protocol: The protocol of this ListPoolsRequest.
-        :type: str
+        :type protocol: str
         """
         self._protocol = protocol
 
@@ -316,7 +345,7 @@ class ListPoolsRequest:
         后端云服务器组的负载均衡算法。取值范围：ROUND_ROBIN：加权轮询算法。LEAST_CONNECTIONS：加权最少连接算法。SOURCE_IP：源IP算法。当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。
 
         :param lb_algorithm: The lb_algorithm of this ListPoolsRequest.
-        :type: str
+        :type lb_algorithm: str
         """
         self._lb_algorithm = lb_algorithm
 
@@ -338,7 +367,7 @@ class ListPoolsRequest:
         后端云服务器组关联的后端云服务器IP。
 
         :param member_address: The member_address of this ListPoolsRequest.
-        :type: str
+        :type member_address: str
         """
         self._member_address = member_address
 
@@ -360,7 +389,7 @@ class ListPoolsRequest:
         后端云服务器组关联的后端云服务器对应的弹性云服务器的ID。
 
         :param member_device_id: The member_device_id of this ListPoolsRequest.
-        :type: str
+        :type member_device_id: str
         """
         self._member_device_id = member_device_id
 
@@ -382,7 +411,7 @@ class ListPoolsRequest:
         企业项目ID，仅用于基于企业项目的细粒度鉴权使用；如果参数中传递了loadbalancer_id，则用该负载均衡器对应企业项目ID鉴权；如果参数中没有传递loadbalancer_id，而传递了healthmonitor_id，则使用健康检查器对应的企业项目id鉴权。
 
         :param enterprise_project_id: The enterprise_project_id of this ListPoolsRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 

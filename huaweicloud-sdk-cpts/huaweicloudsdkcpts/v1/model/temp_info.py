@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TempInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class TempInfo:
     }
 
     def __init__(self, id=None, project_id=None, name=None, description=None, variables=None, contents=None, temp_type=None, for_loop_params=None, logic_controller=None, enable_pre=None):
-        """TempInfo - a model defined in huaweicloud sdk"""
+        """TempInfo
+
+        The model defined in huaweicloud sdk
+
+        :param id: id
+        :type id: int
+        :param project_id: project_id
+        :type project_id: int
+        :param name: name
+        :type name: str
+        :param description: description
+        :type description: str
+        :param variables: variables
+        :type variables: str
+        :param contents: contents
+        :type contents: list[object]
+        :param temp_type: temp_type
+        :type temp_type: int
+        :param for_loop_params: for_loop_params
+        :type for_loop_params: list[object]
+        :param logic_controller: 
+        :type logic_controller: :class:`huaweicloudsdkcpts.v1.LogicController`
+        :param enable_pre: enable_pre
+        :type enable_pre: bool
+        """
         
         
 
@@ -103,7 +126,7 @@ class TempInfo:
         id
 
         :param id: The id of this TempInfo.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -125,7 +148,7 @@ class TempInfo:
         project_id
 
         :param project_id: The project_id of this TempInfo.
-        :type: int
+        :type project_id: int
         """
         self._project_id = project_id
 
@@ -147,7 +170,7 @@ class TempInfo:
         name
 
         :param name: The name of this TempInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -169,7 +192,7 @@ class TempInfo:
         description
 
         :param description: The description of this TempInfo.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -191,7 +214,7 @@ class TempInfo:
         variables
 
         :param variables: The variables of this TempInfo.
-        :type: str
+        :type variables: str
         """
         self._variables = variables
 
@@ -213,7 +236,7 @@ class TempInfo:
         contents
 
         :param contents: The contents of this TempInfo.
-        :type: list[object]
+        :type contents: list[object]
         """
         self._contents = contents
 
@@ -235,7 +258,7 @@ class TempInfo:
         temp_type
 
         :param temp_type: The temp_type of this TempInfo.
-        :type: int
+        :type temp_type: int
         """
         self._temp_type = temp_type
 
@@ -257,7 +280,7 @@ class TempInfo:
         for_loop_params
 
         :param for_loop_params: The for_loop_params of this TempInfo.
-        :type: list[object]
+        :type for_loop_params: list[object]
         """
         self._for_loop_params = for_loop_params
 
@@ -267,7 +290,7 @@ class TempInfo:
 
 
         :return: The logic_controller of this TempInfo.
-        :rtype: LogicController
+        :rtype: :class:`huaweicloudsdkcpts.v1.LogicController`
         """
         return self._logic_controller
 
@@ -277,7 +300,7 @@ class TempInfo:
 
 
         :param logic_controller: The logic_controller of this TempInfo.
-        :type: LogicController
+        :type logic_controller: :class:`huaweicloudsdkcpts.v1.LogicController`
         """
         self._logic_controller = logic_controller
 
@@ -299,7 +322,7 @@ class TempInfo:
         enable_pre
 
         :param enable_pre: The enable_pre of this TempInfo.
-        :type: bool
+        :type enable_pre: bool
         """
         self._enable_pre = enable_pre
 

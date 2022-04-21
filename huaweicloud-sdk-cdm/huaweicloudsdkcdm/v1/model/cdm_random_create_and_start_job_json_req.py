@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CdmRandomCreateAndStartJobJsonReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CdmRandomCreateAndStartJobJsonReq:
     }
 
     def __init__(self, jobs=None, clusters=None):
-        """CdmRandomCreateAndStartJobJsonReq - a model defined in huaweicloud sdk"""
+        """CdmRandomCreateAndStartJobJsonReq
+
+        The model defined in huaweicloud sdk
+
+        :param jobs: 作业列表，请参见jobs数据结构说明。
+        :type jobs: list[:class:`huaweicloudsdkcdm.v1.Job`]
+        :param clusters: CDM集群ID列表，系统会从里面随机选择一个开机状态的集群，在该集群中创建作业并执行作业。
+        :type clusters: list[str]
+        """
         
         
 
@@ -50,7 +57,7 @@ class CdmRandomCreateAndStartJobJsonReq:
         作业列表，请参见jobs数据结构说明。
 
         :return: The jobs of this CdmRandomCreateAndStartJobJsonReq.
-        :rtype: list[Job]
+        :rtype: list[:class:`huaweicloudsdkcdm.v1.Job`]
         """
         return self._jobs
 
@@ -61,7 +68,7 @@ class CdmRandomCreateAndStartJobJsonReq:
         作业列表，请参见jobs数据结构说明。
 
         :param jobs: The jobs of this CdmRandomCreateAndStartJobJsonReq.
-        :type: list[Job]
+        :type jobs: list[:class:`huaweicloudsdkcdm.v1.Job`]
         """
         self._jobs = jobs
 
@@ -83,7 +90,7 @@ class CdmRandomCreateAndStartJobJsonReq:
         CDM集群ID列表，系统会从里面随机选择一个开机状态的集群，在该集群中创建作业并执行作业。
 
         :param clusters: The clusters of this CdmRandomCreateAndStartJobJsonReq.
-        :type: list[str]
+        :type clusters: list[str]
         """
         self._clusters = clusters
 

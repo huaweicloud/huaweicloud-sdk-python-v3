@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VaultCreate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class VaultCreate:
     }
 
     def __init__(self, backup_policy_id=None, billing=None, description=None, name=None, resources=None, tags=None, enterprise_project_id=None, auto_bind=None, bind_rules=None, auto_expand=None):
-        """VaultCreate - a model defined in huaweicloud sdk"""
+        """VaultCreate
+
+        The model defined in huaweicloud sdk
+
+        :param backup_policy_id: 备份策略ID，不设置时为null，不自动备份。
+        :type backup_policy_id: str
+        :param billing: 
+        :type billing: :class:`huaweicloudsdkcbr.v1.BillingCreate`
+        :param description: 描述
+        :type description: str
+        :param name: 存储库名称
+        :type name: str
+        :param resources: 绑定的备份资源，未在创建时绑定资源填[]
+        :type resources: list[:class:`huaweicloudsdkcbr.v1.ResourceCreate`]
+        :param tags: 标签列表 tags不允许为空列表。 tags中最多包含10个key。 tags中key不允许重复。
+        :type tags: list[:class:`huaweicloudsdkcbr.v1.Tag`]
+        :param enterprise_project_id: 企业项目ID，默认为‘0’。
+        :type enterprise_project_id: str
+        :param auto_bind: 是否支持自动挂载。
+        :type auto_bind: bool
+        :param bind_rules: 
+        :type bind_rules: :class:`huaweicloudsdkcbr.v1.VaultBindRules`
+        :param auto_expand: 是否自动扩容。按需存储库支持自动扩容，包周期存储库不支持扩容。
+        :type auto_expand: bool
+        """
         
         
 
@@ -100,7 +123,7 @@ class VaultCreate:
         备份策略ID，不设置时为null，不自动备份。
 
         :param backup_policy_id: The backup_policy_id of this VaultCreate.
-        :type: str
+        :type backup_policy_id: str
         """
         self._backup_policy_id = backup_policy_id
 
@@ -110,7 +133,7 @@ class VaultCreate:
 
 
         :return: The billing of this VaultCreate.
-        :rtype: BillingCreate
+        :rtype: :class:`huaweicloudsdkcbr.v1.BillingCreate`
         """
         return self._billing
 
@@ -120,7 +143,7 @@ class VaultCreate:
 
 
         :param billing: The billing of this VaultCreate.
-        :type: BillingCreate
+        :type billing: :class:`huaweicloudsdkcbr.v1.BillingCreate`
         """
         self._billing = billing
 
@@ -142,7 +165,7 @@ class VaultCreate:
         描述
 
         :param description: The description of this VaultCreate.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -164,7 +187,7 @@ class VaultCreate:
         存储库名称
 
         :param name: The name of this VaultCreate.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -175,7 +198,7 @@ class VaultCreate:
         绑定的备份资源，未在创建时绑定资源填[]
 
         :return: The resources of this VaultCreate.
-        :rtype: list[ResourceCreate]
+        :rtype: list[:class:`huaweicloudsdkcbr.v1.ResourceCreate`]
         """
         return self._resources
 
@@ -186,7 +209,7 @@ class VaultCreate:
         绑定的备份资源，未在创建时绑定资源填[]
 
         :param resources: The resources of this VaultCreate.
-        :type: list[ResourceCreate]
+        :type resources: list[:class:`huaweicloudsdkcbr.v1.ResourceCreate`]
         """
         self._resources = resources
 
@@ -197,7 +220,7 @@ class VaultCreate:
         标签列表 tags不允许为空列表。 tags中最多包含10个key。 tags中key不允许重复。
 
         :return: The tags of this VaultCreate.
-        :rtype: list[Tag]
+        :rtype: list[:class:`huaweicloudsdkcbr.v1.Tag`]
         """
         return self._tags
 
@@ -208,7 +231,7 @@ class VaultCreate:
         标签列表 tags不允许为空列表。 tags中最多包含10个key。 tags中key不允许重复。
 
         :param tags: The tags of this VaultCreate.
-        :type: list[Tag]
+        :type tags: list[:class:`huaweicloudsdkcbr.v1.Tag`]
         """
         self._tags = tags
 
@@ -230,7 +253,7 @@ class VaultCreate:
         企业项目ID，默认为‘0’。
 
         :param enterprise_project_id: The enterprise_project_id of this VaultCreate.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -252,7 +275,7 @@ class VaultCreate:
         是否支持自动挂载。
 
         :param auto_bind: The auto_bind of this VaultCreate.
-        :type: bool
+        :type auto_bind: bool
         """
         self._auto_bind = auto_bind
 
@@ -262,7 +285,7 @@ class VaultCreate:
 
 
         :return: The bind_rules of this VaultCreate.
-        :rtype: VaultBindRules
+        :rtype: :class:`huaweicloudsdkcbr.v1.VaultBindRules`
         """
         return self._bind_rules
 
@@ -272,7 +295,7 @@ class VaultCreate:
 
 
         :param bind_rules: The bind_rules of this VaultCreate.
-        :type: VaultBindRules
+        :type bind_rules: :class:`huaweicloudsdkcbr.v1.VaultBindRules`
         """
         self._bind_rules = bind_rules
 
@@ -294,7 +317,7 @@ class VaultCreate:
         是否自动扩容。按需存储库支持自动扩容，包周期存储库不支持扩容。
 
         :param auto_expand: The auto_expand of this VaultCreate.
-        :type: bool
+        :type auto_expand: bool
         """
         self._auto_expand = auto_expand
 

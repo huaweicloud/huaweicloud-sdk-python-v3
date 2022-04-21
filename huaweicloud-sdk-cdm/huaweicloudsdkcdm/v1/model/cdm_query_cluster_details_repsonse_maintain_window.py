@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CdmQueryClusterDetailsRepsonseMaintainWindow:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CdmQueryClusterDetailsRepsonseMaintainWindow:
     }
 
     def __init__(self, day=None, start_time=None, end_time=None):
-        """CdmQueryClusterDetailsRepsonseMaintainWindow - a model defined in huaweicloud sdk"""
+        """CdmQueryClusterDetailsRepsonseMaintainWindow
+
+        The model defined in huaweicloud sdk
+
+        :param day: 周几
+        :type day: str
+        :param start_time: 开始时间。
+        :type start_time: str
+        :param end_time: 结束时间。
+        :type end_time: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class CdmQueryClusterDetailsRepsonseMaintainWindow:
         周几
 
         :param day: The day of this CdmQueryClusterDetailsRepsonseMaintainWindow.
-        :type: str
+        :type day: str
         """
         self._day = day
 
@@ -90,7 +99,7 @@ class CdmQueryClusterDetailsRepsonseMaintainWindow:
         开始时间。
 
         :param start_time: The start_time of this CdmQueryClusterDetailsRepsonseMaintainWindow.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -112,7 +121,7 @@ class CdmQueryClusterDetailsRepsonseMaintainWindow:
         结束时间。
 
         :param end_time: The end_time of this CdmQueryClusterDetailsRepsonseMaintainWindow.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 

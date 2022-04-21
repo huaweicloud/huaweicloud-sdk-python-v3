@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateClusterBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class CreateClusterBody:
     }
 
     def __init__(self, name=None, backup_strategy=None, instance_num=None, instance=None, enterprise_project_id=None, tags=None, datastore=None, pay_info=None):
-        """CreateClusterBody - a model defined in huaweicloud sdk"""
+        """CreateClusterBody
+
+        The model defined in huaweicloud sdk
+
+        :param name: 集群名称。4～32个字符，只能包含数字、字母、中划线和下划线，且必须以字母开头。
+        :type name: str
+        :param backup_strategy: 
+        :type backup_strategy: :class:`huaweicloudsdkcss.v1.CreateClusterBackupStrategyBody`
+        :param instance_num: 集群实例个数，取值范围为1~32。
+        :type instance_num: int
+        :param instance: 
+        :type instance: :class:`huaweicloudsdkcss.v1.CreateClusterInstanceBody`
+        :param enterprise_project_id: 企业项目ID。创建集群时，给集群绑定企业项目ID。最大长度36个字符，带\&quot;-\&quot;连字符的UUID格式，或者是字符串\&quot;0\&quot;。\&quot;0\&quot;表示默认企业项目。  说明：关于企业项目ID的获取及企业项目特性的详细信息，请参见[《企业管理服务用户指南》](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0123692049.html)。
+        :type enterprise_project_id: str
+        :param tags: 集群标签。 关于标签特性的详细信息，请参见[《标签管理产品介绍》](https://support.huaweicloud.com/productdesc-tms/zh-cn_topic_0071335169.html)。
+        :type tags: list[:class:`huaweicloudsdkcss.v1.CreateClusterTagsBody`]
+        :param datastore: 
+        :type datastore: :class:`huaweicloudsdkcss.v1.CreateClusterDatastoreBody`
+        :param pay_info: 
+        :type pay_info: :class:`huaweicloudsdkcss.v1.PayInfoBody`
+        """
         
         
 
@@ -89,7 +108,7 @@ class CreateClusterBody:
         集群名称。4～32个字符，只能包含数字、字母、中划线和下划线，且必须以字母开头。
 
         :param name: The name of this CreateClusterBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -99,7 +118,7 @@ class CreateClusterBody:
 
 
         :return: The backup_strategy of this CreateClusterBody.
-        :rtype: CreateClusterBackupStrategyBody
+        :rtype: :class:`huaweicloudsdkcss.v1.CreateClusterBackupStrategyBody`
         """
         return self._backup_strategy
 
@@ -109,7 +128,7 @@ class CreateClusterBody:
 
 
         :param backup_strategy: The backup_strategy of this CreateClusterBody.
-        :type: CreateClusterBackupStrategyBody
+        :type backup_strategy: :class:`huaweicloudsdkcss.v1.CreateClusterBackupStrategyBody`
         """
         self._backup_strategy = backup_strategy
 
@@ -131,7 +150,7 @@ class CreateClusterBody:
         集群实例个数，取值范围为1~32。
 
         :param instance_num: The instance_num of this CreateClusterBody.
-        :type: int
+        :type instance_num: int
         """
         self._instance_num = instance_num
 
@@ -141,7 +160,7 @@ class CreateClusterBody:
 
 
         :return: The instance of this CreateClusterBody.
-        :rtype: CreateClusterInstanceBody
+        :rtype: :class:`huaweicloudsdkcss.v1.CreateClusterInstanceBody`
         """
         return self._instance
 
@@ -151,7 +170,7 @@ class CreateClusterBody:
 
 
         :param instance: The instance of this CreateClusterBody.
-        :type: CreateClusterInstanceBody
+        :type instance: :class:`huaweicloudsdkcss.v1.CreateClusterInstanceBody`
         """
         self._instance = instance
 
@@ -173,7 +192,7 @@ class CreateClusterBody:
         企业项目ID。创建集群时，给集群绑定企业项目ID。最大长度36个字符，带\"-\"连字符的UUID格式，或者是字符串\"0\"。\"0\"表示默认企业项目。  说明：关于企业项目ID的获取及企业项目特性的详细信息，请参见[《企业管理服务用户指南》](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0123692049.html)。
 
         :param enterprise_project_id: The enterprise_project_id of this CreateClusterBody.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -184,7 +203,7 @@ class CreateClusterBody:
         集群标签。 关于标签特性的详细信息，请参见[《标签管理产品介绍》](https://support.huaweicloud.com/productdesc-tms/zh-cn_topic_0071335169.html)。
 
         :return: The tags of this CreateClusterBody.
-        :rtype: list[CreateClusterTagsBody]
+        :rtype: list[:class:`huaweicloudsdkcss.v1.CreateClusterTagsBody`]
         """
         return self._tags
 
@@ -195,7 +214,7 @@ class CreateClusterBody:
         集群标签。 关于标签特性的详细信息，请参见[《标签管理产品介绍》](https://support.huaweicloud.com/productdesc-tms/zh-cn_topic_0071335169.html)。
 
         :param tags: The tags of this CreateClusterBody.
-        :type: list[CreateClusterTagsBody]
+        :type tags: list[:class:`huaweicloudsdkcss.v1.CreateClusterTagsBody`]
         """
         self._tags = tags
 
@@ -205,7 +224,7 @@ class CreateClusterBody:
 
 
         :return: The datastore of this CreateClusterBody.
-        :rtype: CreateClusterDatastoreBody
+        :rtype: :class:`huaweicloudsdkcss.v1.CreateClusterDatastoreBody`
         """
         return self._datastore
 
@@ -215,7 +234,7 @@ class CreateClusterBody:
 
 
         :param datastore: The datastore of this CreateClusterBody.
-        :type: CreateClusterDatastoreBody
+        :type datastore: :class:`huaweicloudsdkcss.v1.CreateClusterDatastoreBody`
         """
         self._datastore = datastore
 
@@ -225,7 +244,7 @@ class CreateClusterBody:
 
 
         :return: The pay_info of this CreateClusterBody.
-        :rtype: PayInfoBody
+        :rtype: :class:`huaweicloudsdkcss.v1.PayInfoBody`
         """
         return self._pay_info
 
@@ -235,7 +254,7 @@ class CreateClusterBody:
 
 
         :param pay_info: The pay_info of this CreateClusterBody.
-        :type: PayInfoBody
+        :type pay_info: :class:`huaweicloudsdkcss.v1.PayInfoBody`
         """
         self._pay_info = pay_info
 

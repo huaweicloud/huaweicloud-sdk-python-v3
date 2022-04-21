@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RouteTableRoute:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class RouteTableRoute:
     }
 
     def __init__(self, type=None, destination=None, nexthop=None, description=None):
-        """RouteTableRoute - a model defined in huaweicloud sdk"""
+        """RouteTableRoute
+
+        The model defined in huaweicloud sdk
+
+        :param type: 功能说明：路由的类型 取值范围： ecs：弹性云服务器 eni：网卡 vip：虚拟IP nat：NAT网关 peering：对等连接 vpn：虚拟专用网络 dc：云专线 cc：云连接 egw：VPC终端节点
+        :type type: str
+        :param destination: 功能说明：路由目的网段 约束：合法的CIDR格式
+        :type destination: str
+        :param nexthop: 功能说明：路由下一跳对象的ID 取值范围： 当type为ecs时，传入ecs实例ID 当type为eni时，取值为从网卡ID 当type为vip时，取值为vip对应的IP地址 当type为nat时，取值为nat实例对应的ID 当type为peering时，取值为peering对应实例ID 当type为vpn时，取值为vpn实例ID 当type为dc时，取值为dc实例ID 当type为cc时，取值为cc的实例ID
+        :type nexthop: str
+        :param description: 功能说明：路由的描述信息 取值范围：0-255个字符，不能包含“&lt;”和“&gt;”
+        :type description: str
+        """
         
         
 
@@ -70,7 +81,7 @@ class RouteTableRoute:
         功能说明：路由的类型 取值范围： ecs：弹性云服务器 eni：网卡 vip：虚拟IP nat：NAT网关 peering：对等连接 vpn：虚拟专用网络 dc：云专线 cc：云连接 egw：VPC终端节点
 
         :param type: The type of this RouteTableRoute.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -92,7 +103,7 @@ class RouteTableRoute:
         功能说明：路由目的网段 约束：合法的CIDR格式
 
         :param destination: The destination of this RouteTableRoute.
-        :type: str
+        :type destination: str
         """
         self._destination = destination
 
@@ -114,7 +125,7 @@ class RouteTableRoute:
         功能说明：路由下一跳对象的ID 取值范围： 当type为ecs时，传入ecs实例ID 当type为eni时，取值为从网卡ID 当type为vip时，取值为vip对应的IP地址 当type为nat时，取值为nat实例对应的ID 当type为peering时，取值为peering对应实例ID 当type为vpn时，取值为vpn实例ID 当type为dc时，取值为dc实例ID 当type为cc时，取值为cc的实例ID
 
         :param nexthop: The nexthop of this RouteTableRoute.
-        :type: str
+        :type nexthop: str
         """
         self._nexthop = nexthop
 
@@ -136,7 +147,7 @@ class RouteTableRoute:
         功能说明：路由的描述信息 取值范围：0-255个字符，不能包含“<”和“>”
 
         :param description: The description of this RouteTableRoute.
-        :type: str
+        :type description: str
         """
         self._description = description
 

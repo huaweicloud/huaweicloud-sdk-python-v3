@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowGaussMySqlQuotasResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowGaussMySqlQuotasResponse(SdkResponse):
     }
 
     def __init__(self, quota_list=None, total_count=None):
-        """ShowGaussMySqlQuotasResponse - a model defined in huaweicloud sdk"""
+        """ShowGaussMySqlQuotasResponse
+
+        The model defined in huaweicloud sdk
+
+        :param quota_list: 资源列表对象。
+        :type quota_list: list[:class:`huaweicloudsdkgaussdb.v3.Quota`]
+        :param total_count: 配额记录的条数。
+        :type total_count: int
+        """
         
         super(ShowGaussMySqlQuotasResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ShowGaussMySqlQuotasResponse(SdkResponse):
         资源列表对象。
 
         :return: The quota_list of this ShowGaussMySqlQuotasResponse.
-        :rtype: list[Quota]
+        :rtype: list[:class:`huaweicloudsdkgaussdb.v3.Quota`]
         """
         return self._quota_list
 
@@ -63,7 +70,7 @@ class ShowGaussMySqlQuotasResponse(SdkResponse):
         资源列表对象。
 
         :param quota_list: The quota_list of this ShowGaussMySqlQuotasResponse.
-        :type: list[Quota]
+        :type quota_list: list[:class:`huaweicloudsdkgaussdb.v3.Quota`]
         """
         self._quota_list = quota_list
 
@@ -85,7 +92,7 @@ class ShowGaussMySqlQuotasResponse(SdkResponse):
         配额记录的条数。
 
         :param total_count: The total_count of this ShowGaussMySqlQuotasResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 

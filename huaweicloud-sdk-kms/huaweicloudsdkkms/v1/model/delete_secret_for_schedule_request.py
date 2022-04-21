@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteSecretForScheduleRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteSecretForScheduleRequest:
     }
 
     def __init__(self, secret_id=None, body=None):
-        """DeleteSecretForScheduleRequest - a model defined in huaweicloud sdk"""
+        """DeleteSecretForScheduleRequest
+
+        The model defined in huaweicloud sdk
+
+        :param secret_id: 凭据的资源标识符。
+        :type secret_id: str
+        :param body: Body of the DeleteSecretForScheduleRequest
+        :type body: :class:`huaweicloudsdkkms.v1.DeleteSecretForScheduleRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class DeleteSecretForScheduleRequest:
         凭据的资源标识符。
 
         :param secret_id: The secret_id of this DeleteSecretForScheduleRequest.
-        :type: str
+        :type secret_id: str
         """
         self._secret_id = secret_id
 
@@ -72,7 +79,7 @@ class DeleteSecretForScheduleRequest:
 
 
         :return: The body of this DeleteSecretForScheduleRequest.
-        :rtype: DeleteSecretForScheduleRequestBody
+        :rtype: :class:`huaweicloudsdkkms.v1.DeleteSecretForScheduleRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class DeleteSecretForScheduleRequest:
 
 
         :param body: The body of this DeleteSecretForScheduleRequest.
-        :type: DeleteSecretForScheduleRequestBody
+        :type body: :class:`huaweicloudsdkkms.v1.DeleteSecretForScheduleRequestBody`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateDedicatedHostResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateDedicatedHostResponse(SdkResponse):
     }
 
     def __init__(self, dedicated_host_ids=None):
-        """CreateDedicatedHostResponse - a model defined in huaweicloud sdk"""
+        """CreateDedicatedHostResponse
+
+        The model defined in huaweicloud sdk
+
+        :param dedicated_host_ids: 已分配的专属主机ID数组。租户可以在这些专属主机上创建云服务器。
+        :type dedicated_host_ids: list[str]
+        """
         
         super(CreateDedicatedHostResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class CreateDedicatedHostResponse(SdkResponse):
         已分配的专属主机ID数组。租户可以在这些专属主机上创建云服务器。
 
         :param dedicated_host_ids: The dedicated_host_ids of this CreateDedicatedHostResponse.
-        :type: list[str]
+        :type dedicated_host_ids: list[str]
         """
         self._dedicated_host_ids = dedicated_host_ids
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneShowPermissionResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class KeystoneShowPermissionResponse(SdkResponse):
     }
 
     def __init__(self, role=None):
-        """KeystoneShowPermissionResponse - a model defined in huaweicloud sdk"""
+        """KeystoneShowPermissionResponse
+
+        The model defined in huaweicloud sdk
+
+        :param role: 
+        :type role: :class:`huaweicloudsdkiam.v3.RoleResult`
+        """
         
         super(KeystoneShowPermissionResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class KeystoneShowPermissionResponse(SdkResponse):
 
 
         :return: The role of this KeystoneShowPermissionResponse.
-        :rtype: RoleResult
+        :rtype: :class:`huaweicloudsdkiam.v3.RoleResult`
         """
         return self._role
 
@@ -56,7 +61,7 @@ class KeystoneShowPermissionResponse(SdkResponse):
 
 
         :param role: The role of this KeystoneShowPermissionResponse.
-        :type: RoleResult
+        :type role: :class:`huaweicloudsdkiam.v3.RoleResult`
         """
         self._role = role
 

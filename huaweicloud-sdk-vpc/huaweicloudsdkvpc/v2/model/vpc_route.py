@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VpcRoute:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class VpcRoute:
     }
 
     def __init__(self, id=None, destination=None, nexthop=None, type=None, vpc_id=None, tenant_id=None):
-        """VpcRoute - a model defined in huaweicloud sdk"""
+        """VpcRoute
+
+        The model defined in huaweicloud sdk
+
+        :param id: 路由ID
+        :type id: str
+        :param destination: 路由目的地址CIDR，如192.168.200.0/24。
+        :type destination: str
+        :param nexthop: 功能说明：路由下一跳 取值范围：如果type为peering类型，则nexthop为peering的ID
+        :type nexthop: str
+        :param type: 功能说明：路由类型 取值范围：peering
+        :type type: str
+        :param vpc_id: 请求添加路由的VPC ID
+        :type vpc_id: str
+        :param tenant_id: 项目ID
+        :type tenant_id: str
+        """
         
         
 
@@ -77,7 +92,7 @@ class VpcRoute:
         路由ID
 
         :param id: The id of this VpcRoute.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -99,7 +114,7 @@ class VpcRoute:
         路由目的地址CIDR，如192.168.200.0/24。
 
         :param destination: The destination of this VpcRoute.
-        :type: str
+        :type destination: str
         """
         self._destination = destination
 
@@ -121,7 +136,7 @@ class VpcRoute:
         功能说明：路由下一跳 取值范围：如果type为peering类型，则nexthop为peering的ID
 
         :param nexthop: The nexthop of this VpcRoute.
-        :type: str
+        :type nexthop: str
         """
         self._nexthop = nexthop
 
@@ -143,7 +158,7 @@ class VpcRoute:
         功能说明：路由类型 取值范围：peering
 
         :param type: The type of this VpcRoute.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -165,7 +180,7 @@ class VpcRoute:
         请求添加路由的VPC ID
 
         :param vpc_id: The vpc_id of this VpcRoute.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -187,7 +202,7 @@ class VpcRoute:
         项目ID
 
         :param tenant_id: The tenant_id of this VpcRoute.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 

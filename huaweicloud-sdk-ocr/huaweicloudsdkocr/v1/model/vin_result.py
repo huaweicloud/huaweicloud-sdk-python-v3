@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VINResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class VINResult:
     }
 
     def __init__(self, vin=None):
-        """VINResult - a model defined in huaweicloud sdk"""
+        """VINResult
+
+        The model defined in huaweicloud sdk
+
+        :param vin: 识别检测到的车架号。 
+        :type vin: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class VINResult:
         识别检测到的车架号。 
 
         :param vin: The vin of this VINResult.
-        :type: str
+        :type vin: str
         """
         self._vin = vin
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListUserLoginProtectsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class ListUserLoginProtectsRequest:
     }
 
     def __init__(self):
-        """ListUserLoginProtectsRequest - a model defined in huaweicloud sdk"""
+        """ListUserLoginProtectsRequest
+
+        The model defined in huaweicloud sdk
+
+        """
         
         
         self.discriminator = None

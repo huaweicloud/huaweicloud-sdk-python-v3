@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowBaremetalServerTagsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowBaremetalServerTagsResponse(SdkResponse):
     }
 
     def __init__(self, tags=None):
-        """ShowBaremetalServerTagsResponse - a model defined in huaweicloud sdk"""
+        """ShowBaremetalServerTagsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param tags: 
+        :type tags: list[:class:`huaweicloudsdkbms.v1.BaremetalServerTag`]
+        """
         
         super(ShowBaremetalServerTagsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ShowBaremetalServerTagsResponse(SdkResponse):
         
 
         :return: The tags of this ShowBaremetalServerTagsResponse.
-        :rtype: list[BaremetalServerTag]
+        :rtype: list[:class:`huaweicloudsdkbms.v1.BaremetalServerTag`]
         """
         return self._tags
 
@@ -58,7 +63,7 @@ class ShowBaremetalServerTagsResponse(SdkResponse):
         
 
         :param tags: The tags of this ShowBaremetalServerTagsResponse.
-        :type: list[BaremetalServerTag]
+        :type tags: list[:class:`huaweicloudsdkbms.v1.BaremetalServerTag`]
         """
         self._tags = tags
 

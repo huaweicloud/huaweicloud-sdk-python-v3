@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BackupRestoreReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BackupRestoreReq:
     }
 
     def __init__(self, restore=None):
-        """BackupRestoreReq - a model defined in huaweicloud sdk"""
+        """BackupRestoreReq
+
+        The model defined in huaweicloud sdk
+
+        :param restore: 
+        :type restore: :class:`huaweicloudsdkcbr.v1.BackupRestore`
+        """
         
         
 
@@ -45,7 +50,7 @@ class BackupRestoreReq:
 
 
         :return: The restore of this BackupRestoreReq.
-        :rtype: BackupRestore
+        :rtype: :class:`huaweicloudsdkcbr.v1.BackupRestore`
         """
         return self._restore
 
@@ -55,7 +60,7 @@ class BackupRestoreReq:
 
 
         :param restore: The restore of this BackupRestoreReq.
-        :type: BackupRestore
+        :type restore: :class:`huaweicloudsdkcbr.v1.BackupRestore`
         """
         self._restore = restore
 

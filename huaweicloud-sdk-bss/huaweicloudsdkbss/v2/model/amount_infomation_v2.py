@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AmountInfomationV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class AmountInfomationV2:
     }
 
     def __init__(self, discounts=None, flexipurchase_coupon_amount=None, coupon_amount=None, stored_card_amount=None, commission_amount=None, consumed_amount=None):
-        """AmountInfomationV2 - a model defined in huaweicloud sdk"""
+        """AmountInfomationV2
+
+        The model defined in huaweicloud sdk
+
+        :param discounts: 费用项。 具体请参见表7。
+        :type discounts: list[:class:`huaweicloudsdkbss.v2.DiscountItemV2`]
+        :param flexipurchase_coupon_amount: 现金券金额。
+        :type flexipurchase_coupon_amount: float
+        :param coupon_amount: 代金券金额。
+        :type coupon_amount: float
+        :param stored_card_amount: 储值卡金额。
+        :type stored_card_amount: float
+        :param commission_amount: 手续费（仅退订订单存在）。
+        :type commission_amount: float
+        :param consumed_amount: 消费金额（仅退订订单存在）。
+        :type consumed_amount: float
+        """
         
         
 
@@ -72,7 +87,7 @@ class AmountInfomationV2:
         费用项。 具体请参见表7。
 
         :return: The discounts of this AmountInfomationV2.
-        :rtype: list[DiscountItemV2]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.DiscountItemV2`]
         """
         return self._discounts
 
@@ -83,7 +98,7 @@ class AmountInfomationV2:
         费用项。 具体请参见表7。
 
         :param discounts: The discounts of this AmountInfomationV2.
-        :type: list[DiscountItemV2]
+        :type discounts: list[:class:`huaweicloudsdkbss.v2.DiscountItemV2`]
         """
         self._discounts = discounts
 
@@ -105,7 +120,7 @@ class AmountInfomationV2:
         现金券金额。
 
         :param flexipurchase_coupon_amount: The flexipurchase_coupon_amount of this AmountInfomationV2.
-        :type: float
+        :type flexipurchase_coupon_amount: float
         """
         self._flexipurchase_coupon_amount = flexipurchase_coupon_amount
 
@@ -127,7 +142,7 @@ class AmountInfomationV2:
         代金券金额。
 
         :param coupon_amount: The coupon_amount of this AmountInfomationV2.
-        :type: float
+        :type coupon_amount: float
         """
         self._coupon_amount = coupon_amount
 
@@ -149,7 +164,7 @@ class AmountInfomationV2:
         储值卡金额。
 
         :param stored_card_amount: The stored_card_amount of this AmountInfomationV2.
-        :type: float
+        :type stored_card_amount: float
         """
         self._stored_card_amount = stored_card_amount
 
@@ -171,7 +186,7 @@ class AmountInfomationV2:
         手续费（仅退订订单存在）。
 
         :param commission_amount: The commission_amount of this AmountInfomationV2.
-        :type: float
+        :type commission_amount: float
         """
         self._commission_amount = commission_amount
 
@@ -193,7 +208,7 @@ class AmountInfomationV2:
         消费金额（仅退订订单存在）。
 
         :param consumed_amount: The consumed_amount of this AmountInfomationV2.
-        :type: float
+        :type consumed_amount: float
         """
         self._consumed_amount = consumed_amount
 

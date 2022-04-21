@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListInstanceMetricResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListInstanceMetricResponse(SdkResponse):
     }
 
     def __init__(self, metrics=None):
-        """ListInstanceMetricResponse - a model defined in huaweicloud sdk"""
+        """ListInstanceMetricResponse
+
+        The model defined in huaweicloud sdk
+
+        :param metrics: 指标对象列表。
+        :type metrics: list[:class:`huaweicloudsdkbcs.v2.MetricItemResultAPI`]
+        """
         
         super(ListInstanceMetricResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListInstanceMetricResponse(SdkResponse):
         指标对象列表。
 
         :return: The metrics of this ListInstanceMetricResponse.
-        :rtype: list[MetricItemResultAPI]
+        :rtype: list[:class:`huaweicloudsdkbcs.v2.MetricItemResultAPI`]
         """
         return self._metrics
 
@@ -58,7 +63,7 @@ class ListInstanceMetricResponse(SdkResponse):
         指标对象列表。
 
         :param metrics: The metrics of this ListInstanceMetricResponse.
-        :type: list[MetricItemResultAPI]
+        :type metrics: list[:class:`huaweicloudsdkbcs.v2.MetricItemResultAPI`]
         """
         self._metrics = metrics
 

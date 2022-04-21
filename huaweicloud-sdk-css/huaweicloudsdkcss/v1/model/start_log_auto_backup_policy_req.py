@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StartLogAutoBackupPolicyReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class StartLogAutoBackupPolicyReq:
     }
 
     def __init__(self, period=None):
-        """StartLogAutoBackupPolicyReq - a model defined in huaweicloud sdk"""
+        """StartLogAutoBackupPolicyReq
+
+        The model defined in huaweicloud sdk
+
+        :param period: 备份开始时间。
+        :type period: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class StartLogAutoBackupPolicyReq:
         备份开始时间。
 
         :param period: The period of this StartLogAutoBackupPolicyReq.
-        :type: str
+        :type period: str
         """
         self._period = period
 

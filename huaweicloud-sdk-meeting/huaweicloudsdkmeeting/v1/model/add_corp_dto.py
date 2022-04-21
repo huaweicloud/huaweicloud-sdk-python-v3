@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddCorpDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class AddCorpDTO:
     }
 
     def __init__(self, basic_info=None, admin_info=None, res_info=None, group_id=None, property_info=None):
-        """AddCorpDTO - a model defined in huaweicloud sdk"""
+        """AddCorpDTO
+
+        The model defined in huaweicloud sdk
+
+        :param basic_info: 
+        :type basic_info: :class:`huaweicloudsdkmeeting.v1.CorpBasicDTO`
+        :param admin_info: 
+        :type admin_info: :class:`huaweicloudsdkmeeting.v1.AdminDTO`
+        :param res_info: 
+        :type res_info: :class:`huaweicloudsdkmeeting.v1.AddCorpResDTO`
+        :param group_id: 媒体接入（包括SBC和MCU）分组id, 可通过企业资源管理下的SP管理员查询资源信息接口获取。
+        :type group_id: str
+        :param property_info: 可配置项信息。
+        :type property_info: list[:class:`huaweicloudsdkmeeting.v1.OrgPropertyDTO`]
+        """
         
         
 
@@ -64,7 +77,7 @@ class AddCorpDTO:
 
 
         :return: The basic_info of this AddCorpDTO.
-        :rtype: CorpBasicDTO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.CorpBasicDTO`
         """
         return self._basic_info
 
@@ -74,7 +87,7 @@ class AddCorpDTO:
 
 
         :param basic_info: The basic_info of this AddCorpDTO.
-        :type: CorpBasicDTO
+        :type basic_info: :class:`huaweicloudsdkmeeting.v1.CorpBasicDTO`
         """
         self._basic_info = basic_info
 
@@ -84,7 +97,7 @@ class AddCorpDTO:
 
 
         :return: The admin_info of this AddCorpDTO.
-        :rtype: AdminDTO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.AdminDTO`
         """
         return self._admin_info
 
@@ -94,7 +107,7 @@ class AddCorpDTO:
 
 
         :param admin_info: The admin_info of this AddCorpDTO.
-        :type: AdminDTO
+        :type admin_info: :class:`huaweicloudsdkmeeting.v1.AdminDTO`
         """
         self._admin_info = admin_info
 
@@ -104,7 +117,7 @@ class AddCorpDTO:
 
 
         :return: The res_info of this AddCorpDTO.
-        :rtype: AddCorpResDTO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.AddCorpResDTO`
         """
         return self._res_info
 
@@ -114,7 +127,7 @@ class AddCorpDTO:
 
 
         :param res_info: The res_info of this AddCorpDTO.
-        :type: AddCorpResDTO
+        :type res_info: :class:`huaweicloudsdkmeeting.v1.AddCorpResDTO`
         """
         self._res_info = res_info
 
@@ -136,7 +149,7 @@ class AddCorpDTO:
         媒体接入（包括SBC和MCU）分组id, 可通过企业资源管理下的SP管理员查询资源信息接口获取。
 
         :param group_id: The group_id of this AddCorpDTO.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -147,7 +160,7 @@ class AddCorpDTO:
         可配置项信息。
 
         :return: The property_info of this AddCorpDTO.
-        :rtype: list[OrgPropertyDTO]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.OrgPropertyDTO`]
         """
         return self._property_info
 
@@ -158,7 +171,7 @@ class AddCorpDTO:
         可配置项信息。
 
         :param property_info: The property_info of this AddCorpDTO.
-        :type: list[OrgPropertyDTO]
+        :type property_info: list[:class:`huaweicloudsdkmeeting.v1.OrgPropertyDTO`]
         """
         self._property_info = property_info
 

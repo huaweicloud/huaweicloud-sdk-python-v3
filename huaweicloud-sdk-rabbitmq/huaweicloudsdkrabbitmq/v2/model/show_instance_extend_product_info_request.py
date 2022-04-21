@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowInstanceExtendProductInfoRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowInstanceExtendProductInfoRequest:
     }
 
     def __init__(self, instance_id=None, type=None, engine=None):
-        """ShowInstanceExtendProductInfoRequest - a model defined in huaweicloud sdk"""
+        """ShowInstanceExtendProductInfoRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param type: 产品的类型。   - advanced：专享版   - platinum：铂金版   - dec：专属云版   - exp：体验版
+        :type type: str
+        :param engine: 消息引擎的类型。支持的类型为rabbitmq。
+        :type engine: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class ShowInstanceExtendProductInfoRequest:
         实例ID。
 
         :param instance_id: The instance_id of this ShowInstanceExtendProductInfoRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -87,7 +96,7 @@ class ShowInstanceExtendProductInfoRequest:
         产品的类型。   - advanced：专享版   - platinum：铂金版   - dec：专属云版   - exp：体验版
 
         :param type: The type of this ShowInstanceExtendProductInfoRequest.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -109,7 +118,7 @@ class ShowInstanceExtendProductInfoRequest:
         消息引擎的类型。支持的类型为rabbitmq。
 
         :param engine: The engine of this ShowInstanceExtendProductInfoRequest.
-        :type: str
+        :type engine: str
         """
         self._engine = engine
 

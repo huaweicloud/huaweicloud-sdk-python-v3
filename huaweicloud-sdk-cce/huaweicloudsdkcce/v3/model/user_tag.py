@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UserTag:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UserTag:
     }
 
     def __init__(self, key=None, value=None):
-        """UserTag - a model defined in huaweicloud sdk"""
+        """UserTag
+
+        The model defined in huaweicloud sdk
+
+        :param key: 云服务器标签的键。不得以\&quot;CCE-\&quot;或\&quot;__type_baremetal\&quot;开头
+        :type key: str
+        :param value: 云服务器标签的值
+        :type value: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class UserTag:
         云服务器标签的键。不得以\"CCE-\"或\"__type_baremetal\"开头
 
         :param key: The key of this UserTag.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -85,7 +92,7 @@ class UserTag:
         云服务器标签的值
 
         :param value: The value of this UserTag.
-        :type: str
+        :type value: str
         """
         self._value = value
 

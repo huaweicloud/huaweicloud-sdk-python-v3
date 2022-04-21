@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateMediaProcessReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateMediaProcessReq:
     }
 
     def __init__(self, input=None, output=None, template_id=None):
-        """CreateMediaProcessReq - a model defined in huaweicloud sdk"""
+        """CreateMediaProcessReq
+
+        The model defined in huaweicloud sdk
+
+        :param input: 
+        :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        :param output: 
+        :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        :param template_id: 模板ID 
+        :type template_id: str
+        """
         
         
 
@@ -56,7 +65,7 @@ class CreateMediaProcessReq:
 
 
         :return: The input of this CreateMediaProcessReq.
-        :rtype: ObsObjInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         return self._input
 
@@ -66,7 +75,7 @@ class CreateMediaProcessReq:
 
 
         :param input: The input of this CreateMediaProcessReq.
-        :type: ObsObjInfo
+        :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         self._input = input
 
@@ -76,7 +85,7 @@ class CreateMediaProcessReq:
 
 
         :return: The output of this CreateMediaProcessReq.
-        :rtype: ObsObjInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         return self._output
 
@@ -86,7 +95,7 @@ class CreateMediaProcessReq:
 
 
         :param output: The output of this CreateMediaProcessReq.
-        :type: ObsObjInfo
+        :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         self._output = output
 
@@ -108,7 +117,7 @@ class CreateMediaProcessReq:
         模板ID 
 
         :param template_id: The template_id of this CreateMediaProcessReq.
-        :type: str
+        :type template_id: str
         """
         self._template_id = template_id
 

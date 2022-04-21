@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowAgencyMappingResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowAgencyMappingResponse(SdkResponse):
     }
 
     def __init__(self, agency_mappings=None):
-        """ShowAgencyMappingResponse - a model defined in huaweicloud sdk"""
+        """ShowAgencyMappingResponse
+
+        The model defined in huaweicloud sdk
+
+        :param agency_mappings: 用户（组）与委托之间的映射关系详细信息。
+        :type agency_mappings: list[:class:`huaweicloudsdkmrs.v2.AgencyMapping`]
+        """
         
         super(ShowAgencyMappingResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ShowAgencyMappingResponse(SdkResponse):
         用户（组）与委托之间的映射关系详细信息。
 
         :return: The agency_mappings of this ShowAgencyMappingResponse.
-        :rtype: list[AgencyMapping]
+        :rtype: list[:class:`huaweicloudsdkmrs.v2.AgencyMapping`]
         """
         return self._agency_mappings
 
@@ -58,7 +63,7 @@ class ShowAgencyMappingResponse(SdkResponse):
         用户（组）与委托之间的映射关系详细信息。
 
         :param agency_mappings: The agency_mappings of this ShowAgencyMappingResponse.
-        :type: list[AgencyMapping]
+        :type agency_mappings: list[:class:`huaweicloudsdkmrs.v2.AgencyMapping`]
         """
         self._agency_mappings = agency_mappings
 

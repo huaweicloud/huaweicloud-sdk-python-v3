@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AcceptOrRejectEndpointResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class AcceptOrRejectEndpointResponse(SdkResponse):
     }
 
     def __init__(self, connections=None):
-        """AcceptOrRejectEndpointResponse - a model defined in huaweicloud sdk"""
+        """AcceptOrRejectEndpointResponse
+
+        The model defined in huaweicloud sdk
+
+        :param connections: 连接列表
+        :type connections: list[:class:`huaweicloudsdkvpcep.v1.ConnectionEndpoints`]
+        """
         
         super(AcceptOrRejectEndpointResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class AcceptOrRejectEndpointResponse(SdkResponse):
         连接列表
 
         :return: The connections of this AcceptOrRejectEndpointResponse.
-        :rtype: list[ConnectionEndpoints]
+        :rtype: list[:class:`huaweicloudsdkvpcep.v1.ConnectionEndpoints`]
         """
         return self._connections
 
@@ -58,7 +63,7 @@ class AcceptOrRejectEndpointResponse(SdkResponse):
         连接列表
 
         :param connections: The connections of this AcceptOrRejectEndpointResponse.
-        :type: list[ConnectionEndpoints]
+        :type connections: list[:class:`huaweicloudsdkvpcep.v1.ConnectionEndpoints`]
         """
         self._connections = connections
 

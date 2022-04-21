@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PostgresqlDatabaseSchemaReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class PostgresqlDatabaseSchemaReq:
     }
 
     def __init__(self, db_name=None, schemas=None):
-        """PostgresqlDatabaseSchemaReq - a model defined in huaweicloud sdk"""
+        """PostgresqlDatabaseSchemaReq
+
+        The model defined in huaweicloud sdk
+
+        :param db_name: 数据库名称。  数据库名称在1到63个字符之间，由字母、数字、或下划线组成，不能包含其他特殊字符，不能以“pg”和数字开头，且不能和RDS for PostgreSQL模板库重名。  RDS for PostgreSQL模板库包括postgres， template0 ，template1。
+        :type db_name: str
+        :param schemas: 每个元素都是与数据库相关联的schmea信息。单次请求最多支持20个元素。
+        :type schemas: list[:class:`huaweicloudsdkrds.v3.PostgresqlCreateSchemaReq`]
+        """
         
         
 
@@ -61,7 +68,7 @@ class PostgresqlDatabaseSchemaReq:
         数据库名称。  数据库名称在1到63个字符之间，由字母、数字、或下划线组成，不能包含其他特殊字符，不能以“pg”和数字开头，且不能和RDS for PostgreSQL模板库重名。  RDS for PostgreSQL模板库包括postgres， template0 ，template1。
 
         :param db_name: The db_name of this PostgresqlDatabaseSchemaReq.
-        :type: str
+        :type db_name: str
         """
         self._db_name = db_name
 
@@ -72,7 +79,7 @@ class PostgresqlDatabaseSchemaReq:
         每个元素都是与数据库相关联的schmea信息。单次请求最多支持20个元素。
 
         :return: The schemas of this PostgresqlDatabaseSchemaReq.
-        :rtype: list[PostgresqlCreateSchemaReq]
+        :rtype: list[:class:`huaweicloudsdkrds.v3.PostgresqlCreateSchemaReq`]
         """
         return self._schemas
 
@@ -83,7 +90,7 @@ class PostgresqlDatabaseSchemaReq:
         每个元素都是与数据库相关联的schmea信息。单次请求最多支持20个元素。
 
         :param schemas: The schemas of this PostgresqlDatabaseSchemaReq.
-        :type: list[PostgresqlCreateSchemaReq]
+        :type schemas: list[:class:`huaweicloudsdkrds.v3.PostgresqlCreateSchemaReq`]
         """
         self._schemas = schemas
 

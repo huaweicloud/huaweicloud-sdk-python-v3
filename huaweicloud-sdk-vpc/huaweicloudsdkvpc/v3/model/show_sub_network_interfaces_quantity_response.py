@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowSubNetworkInterfacesQuantityResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowSubNetworkInterfacesQuantityResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, sub_network_interfaces=None):
-        """ShowSubNetworkInterfacesQuantityResponse - a model defined in huaweicloud sdk"""
+        """ShowSubNetworkInterfacesQuantityResponse
+
+        The model defined in huaweicloud sdk
+
+        :param request_id: 请求ID
+        :type request_id: str
+        :param sub_network_interfaces: 辅助弹性网卡数目
+        :type sub_network_interfaces: int
+        """
         
         super(ShowSubNetworkInterfacesQuantityResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ShowSubNetworkInterfacesQuantityResponse(SdkResponse):
         请求ID
 
         :param request_id: The request_id of this ShowSubNetworkInterfacesQuantityResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 
@@ -85,7 +92,7 @@ class ShowSubNetworkInterfacesQuantityResponse(SdkResponse):
         辅助弹性网卡数目
 
         :param sub_network_interfaces: The sub_network_interfaces of this ShowSubNetworkInterfacesQuantityResponse.
-        :type: int
+        :type sub_network_interfaces: int
         """
         self._sub_network_interfaces = sub_network_interfaces
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDomainSettingsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowDomainSettingsRequest:
     }
 
     def __init__(self, domain_id=None):
-        """ShowDomainSettingsRequest - a model defined in huaweicloud sdk"""
+        """ShowDomainSettingsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param domain_id: 域名ID
+        :type domain_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowDomainSettingsRequest:
         域名ID
 
         :param domain_id: The domain_id of this ShowDomainSettingsRequest.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 

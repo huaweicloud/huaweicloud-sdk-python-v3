@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AcceptOrRejectEndpointRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AcceptOrRejectEndpointRequest:
     }
 
     def __init__(self, vpc_endpoint_service_id=None, body=None):
-        """AcceptOrRejectEndpointRequest - a model defined in huaweicloud sdk"""
+        """AcceptOrRejectEndpointRequest
+
+        The model defined in huaweicloud sdk
+
+        :param vpc_endpoint_service_id: 终端节点服务的ID。
+        :type vpc_endpoint_service_id: str
+        :param body: Body of the AcceptOrRejectEndpointRequest
+        :type body: :class:`huaweicloudsdkvpcep.v1.AcceptOrRejectEndpointRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class AcceptOrRejectEndpointRequest:
         终端节点服务的ID。
 
         :param vpc_endpoint_service_id: The vpc_endpoint_service_id of this AcceptOrRejectEndpointRequest.
-        :type: str
+        :type vpc_endpoint_service_id: str
         """
         self._vpc_endpoint_service_id = vpc_endpoint_service_id
 
@@ -72,7 +79,7 @@ class AcceptOrRejectEndpointRequest:
 
 
         :return: The body of this AcceptOrRejectEndpointRequest.
-        :rtype: AcceptOrRejectEndpointRequestBody
+        :rtype: :class:`huaweicloudsdkvpcep.v1.AcceptOrRejectEndpointRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class AcceptOrRejectEndpointRequest:
 
 
         :param body: The body of this AcceptOrRejectEndpointRequest.
-        :type: AcceptOrRejectEndpointRequestBody
+        :type body: :class:`huaweicloudsdkvpcep.v1.AcceptOrRejectEndpointRequestBody`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateHostGroupRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UpdateHostGroupRequestBody:
     }
 
     def __init__(self, host_group_id=None, host_group_name=None, host_id_list=None, host_group_tag=None):
-        """UpdateHostGroupRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateHostGroupRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param host_group_id: 主机组ID
+        :type host_group_id: str
+        :param host_group_name: 主机组名称
+        :type host_group_name: str
+        :param host_id_list: 主机ID列表。主机类型必须与主机组类型一致
+        :type host_id_list: list[str]
+        :param host_group_tag: 主机组标签。KEY不能重复
+        :type host_group_tag: list[:class:`huaweicloudsdklts.v2.HostGroupTag`]
+        """
         
         
 
@@ -72,7 +83,7 @@ class UpdateHostGroupRequestBody:
         主机组ID
 
         :param host_group_id: The host_group_id of this UpdateHostGroupRequestBody.
-        :type: str
+        :type host_group_id: str
         """
         self._host_group_id = host_group_id
 
@@ -94,7 +105,7 @@ class UpdateHostGroupRequestBody:
         主机组名称
 
         :param host_group_name: The host_group_name of this UpdateHostGroupRequestBody.
-        :type: str
+        :type host_group_name: str
         """
         self._host_group_name = host_group_name
 
@@ -116,7 +127,7 @@ class UpdateHostGroupRequestBody:
         主机ID列表。主机类型必须与主机组类型一致
 
         :param host_id_list: The host_id_list of this UpdateHostGroupRequestBody.
-        :type: list[str]
+        :type host_id_list: list[str]
         """
         self._host_id_list = host_id_list
 
@@ -127,7 +138,7 @@ class UpdateHostGroupRequestBody:
         主机组标签。KEY不能重复
 
         :return: The host_group_tag of this UpdateHostGroupRequestBody.
-        :rtype: list[HostGroupTag]
+        :rtype: list[:class:`huaweicloudsdklts.v2.HostGroupTag`]
         """
         return self._host_group_tag
 
@@ -138,7 +149,7 @@ class UpdateHostGroupRequestBody:
         主机组标签。KEY不能重复
 
         :param host_group_tag: The host_group_tag of this UpdateHostGroupRequestBody.
-        :type: list[HostGroupTag]
+        :type host_group_tag: list[:class:`huaweicloudsdklts.v2.HostGroupTag`]
         """
         self._host_group_tag = host_group_tag
 

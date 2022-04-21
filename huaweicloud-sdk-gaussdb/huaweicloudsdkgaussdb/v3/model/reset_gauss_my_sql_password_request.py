@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResetGaussMySqlPasswordRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ResetGaussMySqlPasswordRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """ResetGaussMySqlPasswordRequest - a model defined in huaweicloud sdk"""
+        """ResetGaussMySqlPasswordRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言
+        :type x_language: str
+        :param instance_id: 实例ID，严格匹配UUID规则。
+        :type instance_id: str
+        :param body: Body of the ResetGaussMySqlPasswordRequest
+        :type body: :class:`huaweicloudsdkgaussdb.v3.MysqlResetPasswordRequest`
+        """
         
         
 
@@ -67,7 +76,7 @@ class ResetGaussMySqlPasswordRequest:
         语言
 
         :param x_language: The x_language of this ResetGaussMySqlPasswordRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -89,7 +98,7 @@ class ResetGaussMySqlPasswordRequest:
         实例ID，严格匹配UUID规则。
 
         :param instance_id: The instance_id of this ResetGaussMySqlPasswordRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -99,7 +108,7 @@ class ResetGaussMySqlPasswordRequest:
 
 
         :return: The body of this ResetGaussMySqlPasswordRequest.
-        :rtype: MysqlResetPasswordRequest
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlResetPasswordRequest`
         """
         return self._body
 
@@ -109,7 +118,7 @@ class ResetGaussMySqlPasswordRequest:
 
 
         :param body: The body of this ResetGaussMySqlPasswordRequest.
-        :type: MysqlResetPasswordRequest
+        :type body: :class:`huaweicloudsdkgaussdb.v3.MysqlResetPasswordRequest`
         """
         self._body = body
 

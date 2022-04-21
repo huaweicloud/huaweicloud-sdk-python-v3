@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTemplatesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListTemplatesRequest:
     }
 
     def __init__(self, type=None):
-        """ListTemplatesRequest - a model defined in huaweicloud sdk"""
+        """ListTemplatesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param type: 模板类型。custom为自定义模板，system为系统模板。不指定查询模板类型默认查找自定义模板和系统模板。
+        :type type: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class ListTemplatesRequest:
         模板类型。custom为自定义模板，system为系统模板。不指定查询模板类型默认查找自定义模板和系统模板。
 
         :param type: The type of this ListTemplatesRequest.
-        :type: str
+        :type type: str
         """
         self._type = type
 

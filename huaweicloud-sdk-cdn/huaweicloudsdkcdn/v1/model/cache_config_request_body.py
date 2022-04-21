@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CacheConfigRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CacheConfigRequestBody:
     }
 
     def __init__(self, cache_config=None):
-        """CacheConfigRequestBody - a model defined in huaweicloud sdk"""
+        """CacheConfigRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param cache_config: 
+        :type cache_config: :class:`huaweicloudsdkcdn.v1.CacheConfigRequest`
+        """
         
         
 
@@ -45,7 +50,7 @@ class CacheConfigRequestBody:
 
 
         :return: The cache_config of this CacheConfigRequestBody.
-        :rtype: CacheConfigRequest
+        :rtype: :class:`huaweicloudsdkcdn.v1.CacheConfigRequest`
         """
         return self._cache_config
 
@@ -55,7 +60,7 @@ class CacheConfigRequestBody:
 
 
         :param cache_config: The cache_config of this CacheConfigRequestBody.
-        :type: CacheConfigRequest
+        :type cache_config: :class:`huaweicloudsdkcdn.v1.CacheConfigRequest`
         """
         self._cache_config = cache_config
 

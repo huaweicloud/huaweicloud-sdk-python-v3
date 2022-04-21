@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OpenGaussBackupStrategyForListResponse:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class OpenGaussBackupStrategyForListResponse:
     }
 
     def __init__(self, start_time=None, keep_days=None):
-        """OpenGaussBackupStrategyForListResponse - a model defined in huaweicloud sdk"""
+        """OpenGaussBackupStrategyForListResponse
+
+        The model defined in huaweicloud sdk
+
+        :param start_time: 备份时间段。自动备份将在该时间段内触发。  当前时间指UTC时间。
+        :type start_time: str
+        :param keep_days: 已生成的备份文件可以保存的天数。  取值范围：1～732。
+        :type keep_days: int
+        """
         
         
 
@@ -61,7 +68,7 @@ class OpenGaussBackupStrategyForListResponse:
         备份时间段。自动备份将在该时间段内触发。  当前时间指UTC时间。
 
         :param start_time: The start_time of this OpenGaussBackupStrategyForListResponse.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -83,7 +90,7 @@ class OpenGaussBackupStrategyForListResponse:
         已生成的备份文件可以保存的天数。  取值范围：1～732。
 
         :param keep_days: The keep_days of this OpenGaussBackupStrategyForListResponse.
-        :type: int
+        :type keep_days: int
         """
         self._keep_days = keep_days
 

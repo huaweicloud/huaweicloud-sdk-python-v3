@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCertificatesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListCertificatesRequest:
     }
 
     def __init__(self, enterprise_project_id=None, page=None, pagesize=None, name=None, host=None, exp_status=None):
-        """ListCertificatesRequest - a model defined in huaweicloud sdk"""
+        """ListCertificatesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        :type enterprise_project_id: str
+        :param page: 分页查询时，返回第几页数据。范围0-100000，默认值为1，表示返回第1页数据。
+        :type page: int
+        :param pagesize: 分页查询时，每页包含多少条结果。范围1-100，默认值为10，表示每页包含10条结果。
+        :type pagesize: int
+        :param name: 证书名称
+        :type name: str
+        :param host: 是否获取证书关联的域名，默认为false   -true:获取已关联域名的证书   -false:获取未关联域名的证书
+        :type host: bool
+        :param exp_status: 证书过期状态，0-未过期，1-已过期，2-即将过期（证书将在一个月内过期）
+        :type exp_status: int
+        """
         
         
 
@@ -83,7 +98,7 @@ class ListCertificatesRequest:
         您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this ListCertificatesRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -105,7 +120,7 @@ class ListCertificatesRequest:
         分页查询时，返回第几页数据。范围0-100000，默认值为1，表示返回第1页数据。
 
         :param page: The page of this ListCertificatesRequest.
-        :type: int
+        :type page: int
         """
         self._page = page
 
@@ -127,7 +142,7 @@ class ListCertificatesRequest:
         分页查询时，每页包含多少条结果。范围1-100，默认值为10，表示每页包含10条结果。
 
         :param pagesize: The pagesize of this ListCertificatesRequest.
-        :type: int
+        :type pagesize: int
         """
         self._pagesize = pagesize
 
@@ -149,7 +164,7 @@ class ListCertificatesRequest:
         证书名称
 
         :param name: The name of this ListCertificatesRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -171,7 +186,7 @@ class ListCertificatesRequest:
         是否获取证书关联的域名，默认为false   -true:获取已关联域名的证书   -false:获取未关联域名的证书
 
         :param host: The host of this ListCertificatesRequest.
-        :type: bool
+        :type host: bool
         """
         self._host = host
 
@@ -193,7 +208,7 @@ class ListCertificatesRequest:
         证书过期状态，0-未过期，1-已过期，2-即将过期（证书将在一个月内过期）
 
         :param exp_status: The exp_status of this ListCertificatesRequest.
-        :type: int
+        :type exp_status: int
         """
         self._exp_status = exp_status
 

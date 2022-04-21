@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ServerInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ServerInfo:
     }
 
     def __init__(self, server_id=None, flavor_ref=None):
-        """ServerInfo - a model defined in huaweicloud sdk"""
+        """ServerInfo
+
+        The model defined in huaweicloud sdk
+
+        :param server_id: 指定的生产站点云服务器ID。
+        :type server_id: str
+        :param flavor_ref: 指定的容灾站点云服务器的flavor ID。
+        :type flavor_ref: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ServerInfo:
         指定的生产站点云服务器ID。
 
         :param server_id: The server_id of this ServerInfo.
-        :type: str
+        :type server_id: str
         """
         self._server_id = server_id
 
@@ -84,7 +91,7 @@ class ServerInfo:
         指定的容灾站点云服务器的flavor ID。
 
         :param flavor_ref: The flavor_ref of this ServerInfo.
-        :type: str
+        :type flavor_ref: str
         """
         self._flavor_ref = flavor_ref
 

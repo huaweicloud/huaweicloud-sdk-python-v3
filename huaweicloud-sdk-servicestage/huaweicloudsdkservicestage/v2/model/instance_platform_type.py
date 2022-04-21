@@ -12,10 +12,8 @@ class InstancePlatformType:
     """
     allowed enum values
     """
-
     CCE = "cce"
     VMAPP = "vmapp"
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -33,7 +31,11 @@ class InstancePlatformType:
     }
 
     def __init__(self):
-        """InstancePlatformType - a model defined in huaweicloud sdk"""
+        """InstancePlatformType
+
+        The model defined in huaweicloud sdk
+
+        """
         
         
         self.discriminator = None

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateNotificationRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateNotificationRequest:
     }
 
     def __init__(self, body=None):
-        """CreateNotificationRequest - a model defined in huaweicloud sdk"""
+        """CreateNotificationRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateNotificationRequest
+        :type body: :class:`huaweicloudsdkcts.v3.CreateNotificationRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateNotificationRequest:
 
 
         :return: The body of this CreateNotificationRequest.
-        :rtype: CreateNotificationRequestBody
+        :rtype: :class:`huaweicloudsdkcts.v3.CreateNotificationRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateNotificationRequest:
 
 
         :param body: The body of this CreateNotificationRequest.
-        :type: CreateNotificationRequestBody
+        :type body: :class:`huaweicloudsdkcts.v3.CreateNotificationRequestBody`
         """
         self._body = body
 

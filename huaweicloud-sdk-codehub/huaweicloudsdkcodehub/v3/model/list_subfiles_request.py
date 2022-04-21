@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSubfilesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListSubfilesRequest:
     }
 
     def __init__(self, repository_uuid=None, branch_name=None, path=None, offset=None, limit=None):
-        """ListSubfilesRequest - a model defined in huaweicloud sdk"""
+        """ListSubfilesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param repository_uuid: 仓库id
+        :type repository_uuid: str
+        :param branch_name: 分支名称
+        :type branch_name: str
+        :param path: 文件路径
+        :type path: str
+        :param offset: 偏移量
+        :type offset: int
+        :param limit: 记录数量
+        :type limit: int
+        """
         
         
 
@@ -76,7 +89,7 @@ class ListSubfilesRequest:
         仓库id
 
         :param repository_uuid: The repository_uuid of this ListSubfilesRequest.
-        :type: str
+        :type repository_uuid: str
         """
         self._repository_uuid = repository_uuid
 
@@ -98,7 +111,7 @@ class ListSubfilesRequest:
         分支名称
 
         :param branch_name: The branch_name of this ListSubfilesRequest.
-        :type: str
+        :type branch_name: str
         """
         self._branch_name = branch_name
 
@@ -120,7 +133,7 @@ class ListSubfilesRequest:
         文件路径
 
         :param path: The path of this ListSubfilesRequest.
-        :type: str
+        :type path: str
         """
         self._path = path
 
@@ -142,7 +155,7 @@ class ListSubfilesRequest:
         偏移量
 
         :param offset: The offset of this ListSubfilesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -164,7 +177,7 @@ class ListSubfilesRequest:
         记录数量
 
         :param limit: The limit of this ListSubfilesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

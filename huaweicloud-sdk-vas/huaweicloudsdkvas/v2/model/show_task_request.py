@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowTaskRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowTaskRequest:
     }
 
     def __init__(self, service_name=None, task_id=None):
-        """ShowTaskRequest - a model defined in huaweicloud sdk"""
+        """ShowTaskRequest
+
+        The model defined in huaweicloud sdk
+
+        :param service_name: 服务名称
+        :type service_name: str
+        :param task_id: 指定的服务作业ID
+        :type task_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ShowTaskRequest:
         服务名称
 
         :param service_name: The service_name of this ShowTaskRequest.
-        :type: str
+        :type service_name: str
         """
         self._service_name = service_name
 
@@ -83,7 +90,7 @@ class ShowTaskRequest:
         指定的服务作业ID
 
         :param task_id: The task_id of this ShowTaskRequest.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ProjectVpcCreate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class ProjectVpcCreate:
     }
 
     def __init__(self, name=None, port=None, balance_strategy=None, member_type=None, dict_code=None, member_groups=None, members=None, vpc_health_config=None, instance_ids=None):
-        """ProjectVpcCreate - a model defined in huaweicloud sdk"""
+        """ProjectVpcCreate
+
+        The model defined in huaweicloud sdk
+
+        :param name: VPC通道的名称。  长度为3 ~ 64位的字符串，字符串由中文、英文字母、数字、中划线、下划线组成，且只能以英文或中文开头。 &gt; 中文字符必须为UTF-8或者unicode编码。
+        :type name: str
+        :param port: VPC通道中主机的端口号。  取值范围1 ~ 65535。
+        :type port: int
+        :param balance_strategy: 分发算法。 - 1：加权轮询（wrr） - 2：加权最少连接（wleastconn） - 3：源地址哈希（source） - 4：URI哈希（uri）
+        :type balance_strategy: int
+        :param member_type: VPC通道的成员类型。[site场景必须修改成IP类型](tag:Site) - ip - ecs
+        :type member_type: str
+        :param dict_code: VPC通道的字典编码  支持英文，数字，特殊字符（-_.）  暂不支持
+        :type dict_code: str
+        :param member_groups: VPC通道后端服务器组列表
+        :type member_groups: list[:class:`huaweicloudsdkroma.v2.MemberGroupCreate`]
+        :param members: VPC后端实例列表。
+        :type members: list[:class:`huaweicloudsdkroma.v2.MemberInfo`]
+        :param vpc_health_config: 
+        :type vpc_health_config: :class:`huaweicloudsdkroma.v2.VpcHealthConfig`
+        :param instance_ids: 关联实例列表。至少包含一个实例编号，最多10个，如需扩大配额请联系技术工程师修改PROJECT_VPC_OPERATOR_NUM_LIMIT配置。
+        :type instance_ids: list[str]
+        """
         
         
 
@@ -93,7 +114,7 @@ class ProjectVpcCreate:
         VPC通道的名称。  长度为3 ~ 64位的字符串，字符串由中文、英文字母、数字、中划线、下划线组成，且只能以英文或中文开头。 > 中文字符必须为UTF-8或者unicode编码。
 
         :param name: The name of this ProjectVpcCreate.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -115,7 +136,7 @@ class ProjectVpcCreate:
         VPC通道中主机的端口号。  取值范围1 ~ 65535。
 
         :param port: The port of this ProjectVpcCreate.
-        :type: int
+        :type port: int
         """
         self._port = port
 
@@ -137,7 +158,7 @@ class ProjectVpcCreate:
         分发算法。 - 1：加权轮询（wrr） - 2：加权最少连接（wleastconn） - 3：源地址哈希（source） - 4：URI哈希（uri）
 
         :param balance_strategy: The balance_strategy of this ProjectVpcCreate.
-        :type: int
+        :type balance_strategy: int
         """
         self._balance_strategy = balance_strategy
 
@@ -159,7 +180,7 @@ class ProjectVpcCreate:
         VPC通道的成员类型。[site场景必须修改成IP类型](tag:Site) - ip - ecs
 
         :param member_type: The member_type of this ProjectVpcCreate.
-        :type: str
+        :type member_type: str
         """
         self._member_type = member_type
 
@@ -181,7 +202,7 @@ class ProjectVpcCreate:
         VPC通道的字典编码  支持英文，数字，特殊字符（-_.）  暂不支持
 
         :param dict_code: The dict_code of this ProjectVpcCreate.
-        :type: str
+        :type dict_code: str
         """
         self._dict_code = dict_code
 
@@ -192,7 +213,7 @@ class ProjectVpcCreate:
         VPC通道后端服务器组列表
 
         :return: The member_groups of this ProjectVpcCreate.
-        :rtype: list[MemberGroupCreate]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.MemberGroupCreate`]
         """
         return self._member_groups
 
@@ -203,7 +224,7 @@ class ProjectVpcCreate:
         VPC通道后端服务器组列表
 
         :param member_groups: The member_groups of this ProjectVpcCreate.
-        :type: list[MemberGroupCreate]
+        :type member_groups: list[:class:`huaweicloudsdkroma.v2.MemberGroupCreate`]
         """
         self._member_groups = member_groups
 
@@ -214,7 +235,7 @@ class ProjectVpcCreate:
         VPC后端实例列表。
 
         :return: The members of this ProjectVpcCreate.
-        :rtype: list[MemberInfo]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.MemberInfo`]
         """
         return self._members
 
@@ -225,7 +246,7 @@ class ProjectVpcCreate:
         VPC后端实例列表。
 
         :param members: The members of this ProjectVpcCreate.
-        :type: list[MemberInfo]
+        :type members: list[:class:`huaweicloudsdkroma.v2.MemberInfo`]
         """
         self._members = members
 
@@ -235,7 +256,7 @@ class ProjectVpcCreate:
 
 
         :return: The vpc_health_config of this ProjectVpcCreate.
-        :rtype: VpcHealthConfig
+        :rtype: :class:`huaweicloudsdkroma.v2.VpcHealthConfig`
         """
         return self._vpc_health_config
 
@@ -245,7 +266,7 @@ class ProjectVpcCreate:
 
 
         :param vpc_health_config: The vpc_health_config of this ProjectVpcCreate.
-        :type: VpcHealthConfig
+        :type vpc_health_config: :class:`huaweicloudsdkroma.v2.VpcHealthConfig`
         """
         self._vpc_health_config = vpc_health_config
 
@@ -267,7 +288,7 @@ class ProjectVpcCreate:
         关联实例列表。至少包含一个实例编号，最多10个，如需扩大配额请联系技术工程师修改PROJECT_VPC_OPERATOR_NUM_LIMIT配置。
 
         :param instance_ids: The instance_ids of this ProjectVpcCreate.
-        :type: list[str]
+        :type instance_ids: list[str]
         """
         self._instance_ids = instance_ids
 

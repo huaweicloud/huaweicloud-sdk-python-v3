@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdatePrePaidBandwidthExtendParamOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdatePrePaidBandwidthExtendParamOption:
     }
 
     def __init__(self, is_auto_pay=None):
-        """UpdatePrePaidBandwidthExtendParamOption - a model defined in huaweicloud sdk"""
+        """UpdatePrePaidBandwidthExtendParamOption
+
+        The model defined in huaweicloud sdk
+
+        :param is_auto_pay: 功能说明：下单订购后，是否自动从客户的账户中支付，而不需要客户手动去进行支付；系统默认是“非自动支付”。  取值范围：  true：是（自动支付）  false：否（默认值，需要客户手动去支付）  约束：自动支付时，只能使用账户的现金支付；如果要使用代金券，请选择不自动支付，然后在用户费用中心，选择代金券支付。
+        :type is_auto_pay: bool
+        """
         
         
 
@@ -58,7 +63,7 @@ class UpdatePrePaidBandwidthExtendParamOption:
         功能说明：下单订购后，是否自动从客户的账户中支付，而不需要客户手动去进行支付；系统默认是“非自动支付”。  取值范围：  true：是（自动支付）  false：否（默认值，需要客户手动去支付）  约束：自动支付时，只能使用账户的现金支付；如果要使用代金券，请选择不自动支付，然后在用户费用中心，选择代金券支付。
 
         :param is_auto_pay: The is_auto_pay of this UpdatePrePaidBandwidthExtendParamOption.
-        :type: bool
+        :type is_auto_pay: bool
         """
         self._is_auto_pay = is_auto_pay
 

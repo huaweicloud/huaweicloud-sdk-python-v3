@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TokenCatalog:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class TokenCatalog:
     }
 
     def __init__(self, type=None, id=None, name=None, endpoints=None):
-        """TokenCatalog - a model defined in huaweicloud sdk"""
+        """TokenCatalog
+
+        The model defined in huaweicloud sdk
+
+        :param type: 该接口所属服务。
+        :type type: str
+        :param id: 服务ID。
+        :type id: str
+        :param name: 服务名称。
+        :type name: str
+        :param endpoints: 终端节点。
+        :type endpoints: list[:class:`huaweicloudsdkiam.v3.TokenCatalogEndpoint`]
+        """
         
         
 
@@ -69,7 +80,7 @@ class TokenCatalog:
         该接口所属服务。
 
         :param type: The type of this TokenCatalog.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -91,7 +102,7 @@ class TokenCatalog:
         服务ID。
 
         :param id: The id of this TokenCatalog.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -113,7 +124,7 @@ class TokenCatalog:
         服务名称。
 
         :param name: The name of this TokenCatalog.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -124,7 +135,7 @@ class TokenCatalog:
         终端节点。
 
         :return: The endpoints of this TokenCatalog.
-        :rtype: list[TokenCatalogEndpoint]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.TokenCatalogEndpoint`]
         """
         return self._endpoints
 
@@ -135,7 +146,7 @@ class TokenCatalog:
         终端节点。
 
         :param endpoints: The endpoints of this TokenCatalog.
-        :type: list[TokenCatalogEndpoint]
+        :type endpoints: list[:class:`huaweicloudsdkiam.v3.TokenCatalogEndpoint`]
         """
         self._endpoints = endpoints
 

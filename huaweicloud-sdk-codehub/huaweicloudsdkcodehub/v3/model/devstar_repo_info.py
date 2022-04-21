@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DevstarRepoInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class DevstarRepoInfo:
     }
 
     def __init__(self, uuid=None, repo_id=None, repo_name=None, ssh_url=None, code_url=None, detail_url=None):
-        """DevstarRepoInfo - a model defined in huaweicloud sdk"""
+        """DevstarRepoInfo
+
+        The model defined in huaweicloud sdk
+
+        :param uuid: 仓库的uuid
+        :type uuid: str
+        :param repo_id: 仓库ID
+        :type repo_id: str
+        :param repo_name: 仓库名称
+        :type repo_name: str
+        :param ssh_url: 仓库SSH地址
+        :type ssh_url: str
+        :param code_url: 仓库HTTPS地址
+        :type code_url: str
+        :param detail_url: 仓库预览地址
+        :type detail_url: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class DevstarRepoInfo:
         仓库的uuid
 
         :param uuid: The uuid of this DevstarRepoInfo.
-        :type: str
+        :type uuid: str
         """
         self._uuid = uuid
 
@@ -105,7 +120,7 @@ class DevstarRepoInfo:
         仓库ID
 
         :param repo_id: The repo_id of this DevstarRepoInfo.
-        :type: str
+        :type repo_id: str
         """
         self._repo_id = repo_id
 
@@ -127,7 +142,7 @@ class DevstarRepoInfo:
         仓库名称
 
         :param repo_name: The repo_name of this DevstarRepoInfo.
-        :type: str
+        :type repo_name: str
         """
         self._repo_name = repo_name
 
@@ -149,7 +164,7 @@ class DevstarRepoInfo:
         仓库SSH地址
 
         :param ssh_url: The ssh_url of this DevstarRepoInfo.
-        :type: str
+        :type ssh_url: str
         """
         self._ssh_url = ssh_url
 
@@ -171,7 +186,7 @@ class DevstarRepoInfo:
         仓库HTTPS地址
 
         :param code_url: The code_url of this DevstarRepoInfo.
-        :type: str
+        :type code_url: str
         """
         self._code_url = code_url
 
@@ -193,7 +208,7 @@ class DevstarRepoInfo:
         仓库预览地址
 
         :param detail_url: The detail_url of this DevstarRepoInfo.
-        :type: str
+        :type detail_url: str
         """
         self._detail_url = detail_url
 

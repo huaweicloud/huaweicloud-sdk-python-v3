@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateGaussMySqlInstanceNameResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateGaussMySqlInstanceNameResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """UpdateGaussMySqlInstanceNameResponse - a model defined in huaweicloud sdk"""
+        """UpdateGaussMySqlInstanceNameResponse
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 修改实例名称的任务id
+        :type job_id: str
+        """
         
         super(UpdateGaussMySqlInstanceNameResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class UpdateGaussMySqlInstanceNameResponse(SdkResponse):
         修改实例名称的任务id
 
         :param job_id: The job_id of this UpdateGaussMySqlInstanceNameResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 

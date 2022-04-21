@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class JudgementCaseResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class JudgementCaseResult:
     }
 
     def __init__(self, output=None, case_status=None):
-        """JudgementCaseResult - a model defined in huaweicloud sdk"""
+        """JudgementCaseResult
+
+        The model defined in huaweicloud sdk
+
+        :param output: 用例实际运行结果输出
+        :type output: str
+        :param case_status: 用例运行结果状态： judgeout判题类型对应：pass（用例比对成功）、failed（用例比对失败）； caseout判题类型对应：success（用例运行成功）、error（用例运行失败）；run_timeout（用例运行超时）
+        :type case_status: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class JudgementCaseResult:
         用例实际运行结果输出
 
         :param output: The output of this JudgementCaseResult.
-        :type: str
+        :type output: str
         """
         self._output = output
 
@@ -83,7 +90,7 @@ class JudgementCaseResult:
         用例运行结果状态： judgeout判题类型对应：pass（用例比对成功）、failed（用例比对失败）； caseout判题类型对应：success（用例运行成功）、error（用例运行失败）；run_timeout（用例运行超时）
 
         :param case_status: The case_status of this JudgementCaseResult.
-        :type: str
+        :type case_status: str
         """
         self._case_status = case_status
 

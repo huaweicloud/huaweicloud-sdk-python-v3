@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowStructTemplateResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class ShowStructTemplateResponse(SdkResponse):
     }
 
     def __init__(self, demo_fields=None, tag_fields=None, demo_log=None, demo_label=None, id=None, log_group_id=None, rule=None, cluster_info=None, log_stream_id=None, project_id=None, template_name=None, regex=None):
-        """ShowStructTemplateResponse - a model defined in huaweicloud sdk"""
+        """ShowStructTemplateResponse
+
+        The model defined in huaweicloud sdk
+
+        :param demo_fields: 结构化字段
+        :type demo_fields: list[:class:`huaweicloudsdklts.v2.StructFieldInfoReturn`]
+        :param tag_fields: 关键词详细信息
+        :type tag_fields: list[:class:`huaweicloudsdklts.v2.TagFieldsInfo`]
+        :param demo_log: 示例日志
+        :type demo_log: str
+        :param demo_label: 测试
+        :type demo_label: str
+        :param id: id
+        :type id: str
+        :param log_group_id: 日志组ID
+        :type log_group_id: str
+        :param rule: 
+        :type rule: :class:`huaweicloudsdklts.v2.ShowStructTemplateRule`
+        :param cluster_info: 
+        :type cluster_info: :class:`huaweicloudsdklts.v2.ShowStructTemplateclusterInfo`
+        :param log_stream_id: 日志流ID
+        :type log_stream_id: str
+        :param project_id: 项目ID
+        :type project_id: str
+        :param template_name: 测试
+        :type template_name: str
+        :param regex: 为了兼容前台数据格式
+        :type regex: str
+        """
         
         super(ShowStructTemplateResponse, self).__init__()
 
@@ -102,7 +129,7 @@ class ShowStructTemplateResponse(SdkResponse):
         结构化字段
 
         :return: The demo_fields of this ShowStructTemplateResponse.
-        :rtype: list[StructFieldInfoReturn]
+        :rtype: list[:class:`huaweicloudsdklts.v2.StructFieldInfoReturn`]
         """
         return self._demo_fields
 
@@ -113,7 +140,7 @@ class ShowStructTemplateResponse(SdkResponse):
         结构化字段
 
         :param demo_fields: The demo_fields of this ShowStructTemplateResponse.
-        :type: list[StructFieldInfoReturn]
+        :type demo_fields: list[:class:`huaweicloudsdklts.v2.StructFieldInfoReturn`]
         """
         self._demo_fields = demo_fields
 
@@ -124,7 +151,7 @@ class ShowStructTemplateResponse(SdkResponse):
         关键词详细信息
 
         :return: The tag_fields of this ShowStructTemplateResponse.
-        :rtype: list[TagFieldsInfo]
+        :rtype: list[:class:`huaweicloudsdklts.v2.TagFieldsInfo`]
         """
         return self._tag_fields
 
@@ -135,7 +162,7 @@ class ShowStructTemplateResponse(SdkResponse):
         关键词详细信息
 
         :param tag_fields: The tag_fields of this ShowStructTemplateResponse.
-        :type: list[TagFieldsInfo]
+        :type tag_fields: list[:class:`huaweicloudsdklts.v2.TagFieldsInfo`]
         """
         self._tag_fields = tag_fields
 
@@ -157,7 +184,7 @@ class ShowStructTemplateResponse(SdkResponse):
         示例日志
 
         :param demo_log: The demo_log of this ShowStructTemplateResponse.
-        :type: str
+        :type demo_log: str
         """
         self._demo_log = demo_log
 
@@ -179,7 +206,7 @@ class ShowStructTemplateResponse(SdkResponse):
         测试
 
         :param demo_label: The demo_label of this ShowStructTemplateResponse.
-        :type: str
+        :type demo_label: str
         """
         self._demo_label = demo_label
 
@@ -201,7 +228,7 @@ class ShowStructTemplateResponse(SdkResponse):
         id
 
         :param id: The id of this ShowStructTemplateResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -223,7 +250,7 @@ class ShowStructTemplateResponse(SdkResponse):
         日志组ID
 
         :param log_group_id: The log_group_id of this ShowStructTemplateResponse.
-        :type: str
+        :type log_group_id: str
         """
         self._log_group_id = log_group_id
 
@@ -233,7 +260,7 @@ class ShowStructTemplateResponse(SdkResponse):
 
 
         :return: The rule of this ShowStructTemplateResponse.
-        :rtype: ShowStructTemplateRule
+        :rtype: :class:`huaweicloudsdklts.v2.ShowStructTemplateRule`
         """
         return self._rule
 
@@ -243,7 +270,7 @@ class ShowStructTemplateResponse(SdkResponse):
 
 
         :param rule: The rule of this ShowStructTemplateResponse.
-        :type: ShowStructTemplateRule
+        :type rule: :class:`huaweicloudsdklts.v2.ShowStructTemplateRule`
         """
         self._rule = rule
 
@@ -253,7 +280,7 @@ class ShowStructTemplateResponse(SdkResponse):
 
 
         :return: The cluster_info of this ShowStructTemplateResponse.
-        :rtype: ShowStructTemplateclusterInfo
+        :rtype: :class:`huaweicloudsdklts.v2.ShowStructTemplateclusterInfo`
         """
         return self._cluster_info
 
@@ -263,7 +290,7 @@ class ShowStructTemplateResponse(SdkResponse):
 
 
         :param cluster_info: The cluster_info of this ShowStructTemplateResponse.
-        :type: ShowStructTemplateclusterInfo
+        :type cluster_info: :class:`huaweicloudsdklts.v2.ShowStructTemplateclusterInfo`
         """
         self._cluster_info = cluster_info
 
@@ -285,7 +312,7 @@ class ShowStructTemplateResponse(SdkResponse):
         日志流ID
 
         :param log_stream_id: The log_stream_id of this ShowStructTemplateResponse.
-        :type: str
+        :type log_stream_id: str
         """
         self._log_stream_id = log_stream_id
 
@@ -307,7 +334,7 @@ class ShowStructTemplateResponse(SdkResponse):
         项目ID
 
         :param project_id: The project_id of this ShowStructTemplateResponse.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -329,7 +356,7 @@ class ShowStructTemplateResponse(SdkResponse):
         测试
 
         :param template_name: The template_name of this ShowStructTemplateResponse.
-        :type: str
+        :type template_name: str
         """
         self._template_name = template_name
 
@@ -351,7 +378,7 @@ class ShowStructTemplateResponse(SdkResponse):
         为了兼容前台数据格式
 
         :param regex: The regex of this ShowStructTemplateResponse.
-        :type: str
+        :type regex: str
         """
         self._regex = regex
 

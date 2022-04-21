@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListInstancesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class ListInstancesRequest:
     }
 
     def __init__(self, offset=None, limit=None, status=None, name=None, area=None, province=None, city=None, edgecloud_id=None, site_id=None):
-        """ListInstancesRequest - a model defined in huaweicloud sdk"""
+        """ListInstancesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param offset: 页码。 当前页面数，默认为0。 取值大于等于0，取值为0时返回第1页
+        :type offset: int
+        :param limit: 查询返回边缘实例列表当前页面的数量。 每页默认值是25，最多返回1000台边缘实例的信息，如果数据量过大建议设置成100。
+        :type limit: int
+        :param status: 边缘实例的状态。 取值范围：ACTIVE、BUILD、DELETED、ERROR、HARD_REBOOT、MIGRATING、PAUSED、REBOOT、REBUILD、RESIZE、REVERT_RESIZE、SHUTOFF、SHELVED、SHELVED_OFFLOADED、SOFT_DELETED、SUSPENDED、VERIFY_RESIZE。  非上面范围的status字段将返回空列表。 &gt; 当边缘实例处于中间状态时，查询范围如下： - ACTIVE，查询范围：ACTIVE，REBOOT，HARD_REBOOT，REBUILD，MIGRATING - SHUTOFF，查询范围：SHUTOFF，RESIZE，REBUILD - ERROR，查询范围：ERROR，REBUILD - VERIFY_RESIZE，查询范围：VERIFY_RESIZE，REVERT_RESIZE
+        :type status: str
+        :param name: 查询条件，边缘实例名称。
+        :type name: str
+        :param area: 边缘实例所在大区。
+        :type area: str
+        :param province: 边缘实例所在省份。
+        :type province: str
+        :param city: 边缘实例所在城市。
+        :type city: str
+        :param edgecloud_id: 边缘业务ID。
+        :type edgecloud_id: str
+        :param site_id: 站点ID。
+        :type site_id: str
+        """
         
         
 
@@ -98,7 +119,7 @@ class ListInstancesRequest:
         页码。 当前页面数，默认为0。 取值大于等于0，取值为0时返回第1页
 
         :param offset: The offset of this ListInstancesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -120,7 +141,7 @@ class ListInstancesRequest:
         查询返回边缘实例列表当前页面的数量。 每页默认值是25，最多返回1000台边缘实例的信息，如果数据量过大建议设置成100。
 
         :param limit: The limit of this ListInstancesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -142,7 +163,7 @@ class ListInstancesRequest:
         边缘实例的状态。 取值范围：ACTIVE、BUILD、DELETED、ERROR、HARD_REBOOT、MIGRATING、PAUSED、REBOOT、REBUILD、RESIZE、REVERT_RESIZE、SHUTOFF、SHELVED、SHELVED_OFFLOADED、SOFT_DELETED、SUSPENDED、VERIFY_RESIZE。  非上面范围的status字段将返回空列表。 > 当边缘实例处于中间状态时，查询范围如下： - ACTIVE，查询范围：ACTIVE，REBOOT，HARD_REBOOT，REBUILD，MIGRATING - SHUTOFF，查询范围：SHUTOFF，RESIZE，REBUILD - ERROR，查询范围：ERROR，REBUILD - VERIFY_RESIZE，查询范围：VERIFY_RESIZE，REVERT_RESIZE
 
         :param status: The status of this ListInstancesRequest.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -164,7 +185,7 @@ class ListInstancesRequest:
         查询条件，边缘实例名称。
 
         :param name: The name of this ListInstancesRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -186,7 +207,7 @@ class ListInstancesRequest:
         边缘实例所在大区。
 
         :param area: The area of this ListInstancesRequest.
-        :type: str
+        :type area: str
         """
         self._area = area
 
@@ -208,7 +229,7 @@ class ListInstancesRequest:
         边缘实例所在省份。
 
         :param province: The province of this ListInstancesRequest.
-        :type: str
+        :type province: str
         """
         self._province = province
 
@@ -230,7 +251,7 @@ class ListInstancesRequest:
         边缘实例所在城市。
 
         :param city: The city of this ListInstancesRequest.
-        :type: str
+        :type city: str
         """
         self._city = city
 
@@ -252,7 +273,7 @@ class ListInstancesRequest:
         边缘业务ID。
 
         :param edgecloud_id: The edgecloud_id of this ListInstancesRequest.
-        :type: str
+        :type edgecloud_id: str
         """
         self._edgecloud_id = edgecloud_id
 
@@ -274,7 +295,7 @@ class ListInstancesRequest:
         站点ID。
 
         :param site_id: The site_id of this ListInstancesRequest.
-        :type: str
+        :type site_id: str
         """
         self._site_id = site_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ThumbnailInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ThumbnailInfo:
     }
 
     def __init__(self, sample=None, dots=None, exec_desc=None, thumbnail_status=None):
-        """ThumbnailInfo - a model defined in huaweicloud sdk"""
+        """ThumbnailInfo
+
+        The model defined in huaweicloud sdk
+
+        :param sample: 视频截图信息。
+        :type sample: list[:class:`huaweicloudsdkvod.v1.ThumbnailRsp`]
+        :param dots: 
+        :type dots: list[:class:`huaweicloudsdkvod.v1.ThumbnailRsp`]
+        :param exec_desc: 执行情况描述。
+        :type exec_desc: str
+        :param thumbnail_status: 截图状态。  取值如下： - UN_THUMBNAIL：未截图 - THUMBNAILING：截图中 - THUMBNAIL_SUCCEED：截图成功 - THUMBNAIL_FAILED：截图失败
+        :type thumbnail_status: str
+        """
         
         
 
@@ -62,7 +73,7 @@ class ThumbnailInfo:
         视频截图信息。
 
         :return: The sample of this ThumbnailInfo.
-        :rtype: list[ThumbnailRsp]
+        :rtype: list[:class:`huaweicloudsdkvod.v1.ThumbnailRsp`]
         """
         return self._sample
 
@@ -73,7 +84,7 @@ class ThumbnailInfo:
         视频截图信息。
 
         :param sample: The sample of this ThumbnailInfo.
-        :type: list[ThumbnailRsp]
+        :type sample: list[:class:`huaweicloudsdkvod.v1.ThumbnailRsp`]
         """
         self._sample = sample
 
@@ -83,7 +94,7 @@ class ThumbnailInfo:
 
 
         :return: The dots of this ThumbnailInfo.
-        :rtype: list[ThumbnailRsp]
+        :rtype: list[:class:`huaweicloudsdkvod.v1.ThumbnailRsp`]
         """
         return self._dots
 
@@ -93,7 +104,7 @@ class ThumbnailInfo:
 
 
         :param dots: The dots of this ThumbnailInfo.
-        :type: list[ThumbnailRsp]
+        :type dots: list[:class:`huaweicloudsdkvod.v1.ThumbnailRsp`]
         """
         self._dots = dots
 
@@ -115,7 +126,7 @@ class ThumbnailInfo:
         执行情况描述。
 
         :param exec_desc: The exec_desc of this ThumbnailInfo.
-        :type: str
+        :type exec_desc: str
         """
         self._exec_desc = exec_desc
 
@@ -137,7 +148,7 @@ class ThumbnailInfo:
         截图状态。  取值如下： - UN_THUMBNAIL：未截图 - THUMBNAILING：截图中 - THUMBNAIL_SUCCEED：截图成功 - THUMBNAIL_FAILED：截图失败
 
         :param thumbnail_status: The thumbnail_status of this ThumbnailInfo.
-        :type: str
+        :type thumbnail_status: str
         """
         self._thumbnail_status = thumbnail_status
 

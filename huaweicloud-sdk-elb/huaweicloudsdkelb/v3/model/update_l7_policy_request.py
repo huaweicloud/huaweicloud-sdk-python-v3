@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateL7PolicyRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateL7PolicyRequest:
     }
 
     def __init__(self, l7policy_id=None, body=None):
-        """UpdateL7PolicyRequest - a model defined in huaweicloud sdk"""
+        """UpdateL7PolicyRequest
+
+        The model defined in huaweicloud sdk
+
+        :param l7policy_id: 转发策略ID。
+        :type l7policy_id: str
+        :param body: Body of the UpdateL7PolicyRequest
+        :type body: :class:`huaweicloudsdkelb.v3.UpdateL7PolicyRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateL7PolicyRequest:
         转发策略ID。
 
         :param l7policy_id: The l7policy_id of this UpdateL7PolicyRequest.
-        :type: str
+        :type l7policy_id: str
         """
         self._l7policy_id = l7policy_id
 
@@ -72,7 +79,7 @@ class UpdateL7PolicyRequest:
 
 
         :return: The body of this UpdateL7PolicyRequest.
-        :rtype: UpdateL7PolicyRequestBody
+        :rtype: :class:`huaweicloudsdkelb.v3.UpdateL7PolicyRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateL7PolicyRequest:
 
 
         :param body: The body of this UpdateL7PolicyRequest.
-        :type: UpdateL7PolicyRequestBody
+        :type body: :class:`huaweicloudsdkelb.v3.UpdateL7PolicyRequestBody`
         """
         self._body = body
 

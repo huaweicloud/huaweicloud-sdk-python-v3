@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SlowlogDownloadRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class SlowlogDownloadRequest:
     }
 
     def __init__(self, file_name=None):
-        """SlowlogDownloadRequest - a model defined in huaweicloud sdk"""
+        """SlowlogDownloadRequest
+
+        The model defined in huaweicloud sdk
+
+        :param file_name: - 需要下载的文件的文件名, 当引擎为SQL Server时为必选。
+        :type file_name: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class SlowlogDownloadRequest:
         - 需要下载的文件的文件名, 当引擎为SQL Server时为必选。
 
         :param file_name: The file_name of this SlowlogDownloadRequest.
-        :type: str
+        :type file_name: str
         """
         self._file_name = file_name
 

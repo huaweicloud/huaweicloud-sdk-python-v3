@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListResourceReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ListResourceReq:
     }
 
     def __init__(self, tags=None, tags_any=None, not_tags=None, not_tags_any=None, action=None, limit=None, offset=None, matches=None):
-        """ListResourceReq - a model defined in huaweicloud sdk"""
+        """ListResourceReq
+
+        The model defined in huaweicloud sdk
+
+        :param tags: 返回结果包含该参数中所有标签对应的资源，该参数最多包含10个key，每个key下面的value最多10个，结构体不能缺失，key不能为空或者空字符串。
+        :type tags: list[:class:`huaweicloudsdkmrs.v1.TagWithMultiValue`]
+        :param tags_any: 返回结果包含该参数中任意一个标签对应的资源，该参数最多包含10个key，每个key下面的value最多10个，结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。
+        :type tags_any: list[:class:`huaweicloudsdkmrs.v1.TagWithMultiValue`]
+        :param not_tags: 返回结果不包含该参数中所有标签对应的资源，该参数最多包含10个key，每个key下面的value最多10个, 结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。
+        :type not_tags: list[:class:`huaweicloudsdkmrs.v1.TagWithMultiValue`]
+        :param not_tags_any: 返回结果不包含该参数中任意一个标签对应的资源，该参数最多包含10个key，每个key下面的value最多10个，结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。
+        :type not_tags_any: list[:class:`huaweicloudsdkmrs.v1.TagWithMultiValue`]
+        :param action: 操作标识（仅限于filter，count）：filter（过滤），count(查询总条数)。  如果是filter则为分页查询，如果是count会按照条件将总条数返回。
+        :type action: str
+        :param limit: 查询记录数（action为count时无此参数）如果action为filter默认为1000，limit最多为1000,不能为负数，最小值为1。
+        :type limit: int
+        :param offset: （索引位置），从offset指定的下一条数据开始查询。查询第一页数据时，不需要传入此参数，查询后续页码数据时，将查询前一页数据时响应体中的值带入此参数（action为count时无此参数）如果action为filter默认为0,必须为数字，不能为负数。
+        :type offset: int
+        :param matches: 搜索字段，key为要匹配的字段，如resource_name等。value为匹配的值。此字段为固定字典值。 根据不同的字段确认是否需要模糊匹配，如resource_name默认为模糊搜索，如果value为空字符串精确匹配。
+        :type matches: list[:class:`huaweicloudsdkmrs.v1.Match`]
+        """
         
         
 
@@ -81,7 +100,7 @@ class ListResourceReq:
         返回结果包含该参数中所有标签对应的资源，该参数最多包含10个key，每个key下面的value最多10个，结构体不能缺失，key不能为空或者空字符串。
 
         :return: The tags of this ListResourceReq.
-        :rtype: list[TagWithMultiValue]
+        :rtype: list[:class:`huaweicloudsdkmrs.v1.TagWithMultiValue`]
         """
         return self._tags
 
@@ -92,7 +111,7 @@ class ListResourceReq:
         返回结果包含该参数中所有标签对应的资源，该参数最多包含10个key，每个key下面的value最多10个，结构体不能缺失，key不能为空或者空字符串。
 
         :param tags: The tags of this ListResourceReq.
-        :type: list[TagWithMultiValue]
+        :type tags: list[:class:`huaweicloudsdkmrs.v1.TagWithMultiValue`]
         """
         self._tags = tags
 
@@ -103,7 +122,7 @@ class ListResourceReq:
         返回结果包含该参数中任意一个标签对应的资源，该参数最多包含10个key，每个key下面的value最多10个，结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。
 
         :return: The tags_any of this ListResourceReq.
-        :rtype: list[TagWithMultiValue]
+        :rtype: list[:class:`huaweicloudsdkmrs.v1.TagWithMultiValue`]
         """
         return self._tags_any
 
@@ -114,7 +133,7 @@ class ListResourceReq:
         返回结果包含该参数中任意一个标签对应的资源，该参数最多包含10个key，每个key下面的value最多10个，结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。
 
         :param tags_any: The tags_any of this ListResourceReq.
-        :type: list[TagWithMultiValue]
+        :type tags_any: list[:class:`huaweicloudsdkmrs.v1.TagWithMultiValue`]
         """
         self._tags_any = tags_any
 
@@ -125,7 +144,7 @@ class ListResourceReq:
         返回结果不包含该参数中所有标签对应的资源，该参数最多包含10个key，每个key下面的value最多10个, 结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。
 
         :return: The not_tags of this ListResourceReq.
-        :rtype: list[TagWithMultiValue]
+        :rtype: list[:class:`huaweicloudsdkmrs.v1.TagWithMultiValue`]
         """
         return self._not_tags
 
@@ -136,7 +155,7 @@ class ListResourceReq:
         返回结果不包含该参数中所有标签对应的资源，该参数最多包含10个key，每个key下面的value最多10个, 结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。
 
         :param not_tags: The not_tags of this ListResourceReq.
-        :type: list[TagWithMultiValue]
+        :type not_tags: list[:class:`huaweicloudsdkmrs.v1.TagWithMultiValue`]
         """
         self._not_tags = not_tags
 
@@ -147,7 +166,7 @@ class ListResourceReq:
         返回结果不包含该参数中任意一个标签对应的资源，该参数最多包含10个key，每个key下面的value最多10个，结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。
 
         :return: The not_tags_any of this ListResourceReq.
-        :rtype: list[TagWithMultiValue]
+        :rtype: list[:class:`huaweicloudsdkmrs.v1.TagWithMultiValue`]
         """
         return self._not_tags_any
 
@@ -158,7 +177,7 @@ class ListResourceReq:
         返回结果不包含该参数中任意一个标签对应的资源，该参数最多包含10个key，每个key下面的value最多10个，结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。
 
         :param not_tags_any: The not_tags_any of this ListResourceReq.
-        :type: list[TagWithMultiValue]
+        :type not_tags_any: list[:class:`huaweicloudsdkmrs.v1.TagWithMultiValue`]
         """
         self._not_tags_any = not_tags_any
 
@@ -180,7 +199,7 @@ class ListResourceReq:
         操作标识（仅限于filter，count）：filter（过滤），count(查询总条数)。  如果是filter则为分页查询，如果是count会按照条件将总条数返回。
 
         :param action: The action of this ListResourceReq.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -202,7 +221,7 @@ class ListResourceReq:
         查询记录数（action为count时无此参数）如果action为filter默认为1000，limit最多为1000,不能为负数，最小值为1。
 
         :param limit: The limit of this ListResourceReq.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -224,7 +243,7 @@ class ListResourceReq:
         （索引位置），从offset指定的下一条数据开始查询。查询第一页数据时，不需要传入此参数，查询后续页码数据时，将查询前一页数据时响应体中的值带入此参数（action为count时无此参数）如果action为filter默认为0,必须为数字，不能为负数。
 
         :param offset: The offset of this ListResourceReq.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -235,7 +254,7 @@ class ListResourceReq:
         搜索字段，key为要匹配的字段，如resource_name等。value为匹配的值。此字段为固定字典值。 根据不同的字段确认是否需要模糊匹配，如resource_name默认为模糊搜索，如果value为空字符串精确匹配。
 
         :return: The matches of this ListResourceReq.
-        :rtype: list[Match]
+        :rtype: list[:class:`huaweicloudsdkmrs.v1.Match`]
         """
         return self._matches
 
@@ -246,7 +265,7 @@ class ListResourceReq:
         搜索字段，key为要匹配的字段，如resource_name等。value为匹配的值。此字段为固定字典值。 根据不同的字段确认是否需要模糊匹配，如resource_name默认为模糊搜索，如果value为空字符串精确匹配。
 
         :param matches: The matches of this ListResourceReq.
-        :type: list[Match]
+        :type matches: list[:class:`huaweicloudsdkmrs.v1.Match`]
         """
         self._matches = matches
 

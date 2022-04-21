@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListShadowsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListShadowsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListShadowsResponse - a model defined in huaweicloud sdk"""
+        """ListShadowsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param body: 
+        :type body: list[:class:`huaweicloudsdkroma.v2.ShadowService`]
+        """
         
         super(ListShadowsResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class ListShadowsResponse(SdkResponse):
 
 
         :return: The body of this ListShadowsResponse.
-        :rtype: list[ShadowService]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.ShadowService`]
         """
         return self._body
 
@@ -56,7 +61,7 @@ class ListShadowsResponse(SdkResponse):
 
 
         :param body: The body of this ListShadowsResponse.
-        :type: list[ShadowService]
+        :type body: list[:class:`huaweicloudsdkroma.v2.ShadowService`]
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DisableCertificateAuthorityResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class DisableCertificateAuthorityResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DisableCertificateAuthorityResponse - a model defined in huaweicloud sdk"""
+        """DisableCertificateAuthorityResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(DisableCertificateAuthorityResponse, self).__init__()
         self.discriminator = None

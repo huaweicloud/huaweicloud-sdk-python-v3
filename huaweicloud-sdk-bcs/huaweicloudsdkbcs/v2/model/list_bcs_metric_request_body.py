@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListBcsMetricRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListBcsMetricRequestBody:
     }
 
     def __init__(self, metric_names=None):
-        """ListBcsMetricRequestBody - a model defined in huaweicloud sdk"""
+        """ListBcsMetricRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param metric_names: 指标列表 取值范围 cpuUsage：CPU使用率 diskUsedRate：磁盘使用率 memUsedRate：物理内存使用率 sendBytesRate：上行Bps recvBytesRate：下行Bps cpuCoreLimit：CPU内核总量 cpuCoreUsed：CPU内核占用 totalMem：物理内存总量 freeMem：可用物理内存 diskCapacity：磁盘空间容量 diskAvailableCapacity：可用磁盘空间 默认值：前5项 
+        :type metric_names: list[str]
+        """
         
         
 
@@ -58,7 +63,7 @@ class ListBcsMetricRequestBody:
         指标列表 取值范围 cpuUsage：CPU使用率 diskUsedRate：磁盘使用率 memUsedRate：物理内存使用率 sendBytesRate：上行Bps recvBytesRate：下行Bps cpuCoreLimit：CPU内核总量 cpuCoreUsed：CPU内核占用 totalMem：物理内存总量 freeMem：可用物理内存 diskCapacity：磁盘空间容量 diskAvailableCapacity：可用磁盘空间 默认值：前5项 
 
         :param metric_names: The metric_names of this ListBcsMetricRequestBody.
-        :type: list[str]
+        :type metric_names: list[str]
         """
         self._metric_names = metric_names
 

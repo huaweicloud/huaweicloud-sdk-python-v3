@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteInstanceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class DeleteInstanceRequest:
     }
 
     def __init__(self, application_id=None, component_id=None, instance_id=None, force=None):
-        """DeleteInstanceRequest - a model defined in huaweicloud sdk"""
+        """DeleteInstanceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param application_id: 应用ID。
+        :type application_id: str
+        :param component_id: 组件ID。
+        :type component_id: str
+        :param instance_id: 组件实例ID。
+        :type instance_id: str
+        :param force: 是否强制删除。
+        :type force: bool
+        """
         
         
 
@@ -70,7 +81,7 @@ class DeleteInstanceRequest:
         应用ID。
 
         :param application_id: The application_id of this DeleteInstanceRequest.
-        :type: str
+        :type application_id: str
         """
         self._application_id = application_id
 
@@ -92,7 +103,7 @@ class DeleteInstanceRequest:
         组件ID。
 
         :param component_id: The component_id of this DeleteInstanceRequest.
-        :type: str
+        :type component_id: str
         """
         self._component_id = component_id
 
@@ -114,7 +125,7 @@ class DeleteInstanceRequest:
         组件实例ID。
 
         :param instance_id: The instance_id of this DeleteInstanceRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -136,7 +147,7 @@ class DeleteInstanceRequest:
         是否强制删除。
 
         :param force: The force of this DeleteInstanceRequest.
-        :type: bool
+        :type force: bool
         """
         self._force = force
 

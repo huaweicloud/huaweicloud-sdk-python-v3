@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Flavor:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class Flavor:
     }
 
     def __init__(self, id=None, vcpus=None, ram=None, spec_code=None, instance_mode=None, az_status=None, az_desc=None, version_name=None, group_type=None):
-        """Flavor - a model defined in huaweicloud sdk"""
+        """Flavor
+
+        The model defined in huaweicloud sdk
+
+        :param id: 规格id
+        :type id: str
+        :param vcpus: CPU个数。
+        :type vcpus: str
+        :param ram: 内存大小，单位为GB。
+        :type ram: int
+        :param spec_code: 资源规格编码。例如：rds.mysql.m1.xlarge.rr。  其中形如“xxx.xxx.mcs.i3.xxx.xxx.xxx”是超高性能型（尊享版），需要申请一定权限才可使用，更多规格说明请参考数据库实例规格。 - “rds”代表RDS产品。 - “mysql”代表数据库引擎。 - “m1.xlarge”代表性能规格，为高内存类型。
+        :type spec_code: str
+        :param instance_mode: 实例模型，包括如下类型： - ha，主备实例。 - replica，只读实例。 - single，单实例。
+        :type instance_mode: str
+        :param az_status: 其中key是可用区编号，value是规格所在az的状态，包含以下状态： - normal，在售。 - unsupported，暂不支持该规格。 - sellout，售罄。
+        :type az_status: dict(str, str)
+        :param az_desc: 规格所在az的描述。
+        :type az_desc: dict(str, str)
+        :param version_name: 数组形式版本号
+        :type version_name: list[str]
+        :param group_type: 性能规格，包含以下状态： - normal：通用增强型。 - normal2：通用增强Ⅱ型。 - armFlavors：鲲鹏通用增强型。 - dedicicatenormal ：x86独享型。 - armlocalssd：鲲鹏通用型。 - normallocalssd：x86通用型。 - general：通用型。 - dedicated：独享型，仅云盘SSD支持。 - rapid：独享型，仅极速型SSD支持。 - bigmen：超大内存型。
+        :type group_type: str
+        """
         
         
 
@@ -90,7 +111,7 @@ class Flavor:
         规格id
 
         :param id: The id of this Flavor.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -112,7 +133,7 @@ class Flavor:
         CPU个数。
 
         :param vcpus: The vcpus of this Flavor.
-        :type: str
+        :type vcpus: str
         """
         self._vcpus = vcpus
 
@@ -134,7 +155,7 @@ class Flavor:
         内存大小，单位为GB。
 
         :param ram: The ram of this Flavor.
-        :type: int
+        :type ram: int
         """
         self._ram = ram
 
@@ -156,7 +177,7 @@ class Flavor:
         资源规格编码。例如：rds.mysql.m1.xlarge.rr。  其中形如“xxx.xxx.mcs.i3.xxx.xxx.xxx”是超高性能型（尊享版），需要申请一定权限才可使用，更多规格说明请参考数据库实例规格。 - “rds”代表RDS产品。 - “mysql”代表数据库引擎。 - “m1.xlarge”代表性能规格，为高内存类型。
 
         :param spec_code: The spec_code of this Flavor.
-        :type: str
+        :type spec_code: str
         """
         self._spec_code = spec_code
 
@@ -178,7 +199,7 @@ class Flavor:
         实例模型，包括如下类型： - ha，主备实例。 - replica，只读实例。 - single，单实例。
 
         :param instance_mode: The instance_mode of this Flavor.
-        :type: str
+        :type instance_mode: str
         """
         self._instance_mode = instance_mode
 
@@ -200,7 +221,7 @@ class Flavor:
         其中key是可用区编号，value是规格所在az的状态，包含以下状态： - normal，在售。 - unsupported，暂不支持该规格。 - sellout，售罄。
 
         :param az_status: The az_status of this Flavor.
-        :type: dict(str, str)
+        :type az_status: dict(str, str)
         """
         self._az_status = az_status
 
@@ -222,7 +243,7 @@ class Flavor:
         规格所在az的描述。
 
         :param az_desc: The az_desc of this Flavor.
-        :type: dict(str, str)
+        :type az_desc: dict(str, str)
         """
         self._az_desc = az_desc
 
@@ -244,7 +265,7 @@ class Flavor:
         数组形式版本号
 
         :param version_name: The version_name of this Flavor.
-        :type: list[str]
+        :type version_name: list[str]
         """
         self._version_name = version_name
 
@@ -266,7 +287,7 @@ class Flavor:
         性能规格，包含以下状态： - normal：通用增强型。 - normal2：通用增强Ⅱ型。 - armFlavors：鲲鹏通用增强型。 - dedicicatenormal ：x86独享型。 - armlocalssd：鲲鹏通用型。 - normallocalssd：x86通用型。 - general：通用型。 - dedicated：独享型，仅云盘SSD支持。 - rapid：独享型，仅极速型SSD支持。 - bigmen：超大内存型。
 
         :param group_type: The group_type of this Flavor.
-        :type: str
+        :type group_type: str
         """
         self._group_type = group_type
 

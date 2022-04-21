@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CancelResourcesSubscriptionResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CancelResourcesSubscriptionResponse(SdkResponse):
     }
 
     def __init__(self, order_ids=None):
-        """CancelResourcesSubscriptionResponse - a model defined in huaweicloud sdk"""
+        """CancelResourcesSubscriptionResponse
+
+        The model defined in huaweicloud sdk
+
+        :param order_ids: 客户退订订单ID的列表信息。
+        :type order_ids: list[str]
+        """
         
         super(CancelResourcesSubscriptionResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class CancelResourcesSubscriptionResponse(SdkResponse):
         客户退订订单ID的列表信息。
 
         :param order_ids: The order_ids of this CancelResourcesSubscriptionResponse.
-        :type: list[str]
+        :type order_ids: list[str]
         """
         self._order_ids = order_ids
 

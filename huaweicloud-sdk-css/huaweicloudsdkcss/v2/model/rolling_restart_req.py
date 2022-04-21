@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RollingRestartReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RollingRestartReq:
     }
 
     def __init__(self, type=None, value=None):
-        """RollingRestartReq - a model defined in huaweicloud sdk"""
+        """RollingRestartReq
+
+        The model defined in huaweicloud sdk
+
+        :param type: 操作角色
+        :type type: str
+        :param value: 实例类型。例如，  - ess-master对应Master节点。 - ess-client对应Clinet节点。 - ess-cold对应冷数据节点。 - ess对应数据节点。 - all对应所有节点。
+        :type value: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class RollingRestartReq:
         操作角色
 
         :param type: The type of this RollingRestartReq.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -83,7 +90,7 @@ class RollingRestartReq:
         实例类型。例如，  - ess-master对应Master节点。 - ess-client对应Clinet节点。 - ess-cold对应冷数据节点。 - ess对应数据节点。 - all对应所有节点。
 
         :param value: The value of this RollingRestartReq.
-        :type: str
+        :type value: str
         """
         self._value = value
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateAgencyOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UpdateAgencyOption:
     }
 
     def __init__(self, trust_domain_id=None, trust_domain_name=None, description=None, duration=None):
-        """UpdateAgencyOption - a model defined in huaweicloud sdk"""
+        """UpdateAgencyOption
+
+        The model defined in huaweicloud sdk
+
+        :param trust_domain_id: 被委托方账号ID。如果trust_domain_id和trust_domain_name都填写，则优先校验trust_domain_name。四个参数至少填写一个。
+        :type trust_domain_id: str
+        :param trust_domain_name: 被委托方账号名。如果trust_domain_id和trust_domain_name都填写，则优先校验trust_domain_name。四个参数至少填写一个。
+        :type trust_domain_name: str
+        :param description: 委托描述信息，长度不大于255位。四个参数至少填写一个。
+        :type description: str
+        :param duration: 委托的期限。取值为“FOREVER\&quot;表示委托的期限为永久，取值为\&quot;ONEDAY\&quot;表示委托的期限为一天。四个参数至少填写一个。
+        :type duration: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class UpdateAgencyOption:
         被委托方账号ID。如果trust_domain_id和trust_domain_name都填写，则优先校验trust_domain_name。四个参数至少填写一个。
 
         :param trust_domain_id: The trust_domain_id of this UpdateAgencyOption.
-        :type: str
+        :type trust_domain_id: str
         """
         self._trust_domain_id = trust_domain_id
 
@@ -95,7 +106,7 @@ class UpdateAgencyOption:
         被委托方账号名。如果trust_domain_id和trust_domain_name都填写，则优先校验trust_domain_name。四个参数至少填写一个。
 
         :param trust_domain_name: The trust_domain_name of this UpdateAgencyOption.
-        :type: str
+        :type trust_domain_name: str
         """
         self._trust_domain_name = trust_domain_name
 
@@ -117,7 +128,7 @@ class UpdateAgencyOption:
         委托描述信息，长度不大于255位。四个参数至少填写一个。
 
         :param description: The description of this UpdateAgencyOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -139,7 +150,7 @@ class UpdateAgencyOption:
         委托的期限。取值为“FOREVER\"表示委托的期限为永久，取值为\"ONEDAY\"表示委托的期限为一天。四个参数至少填写一个。
 
         :param duration: The duration of this UpdateAgencyOption.
-        :type: str
+        :type duration: str
         """
         self._duration = duration
 

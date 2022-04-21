@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreatePolicyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class CreatePolicyResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, level=None, action=None, options=None, full_detection=None, hosts=None, bind_host=None, timestamp=None, extend=None):
-        """CreatePolicyResponse - a model defined in huaweicloud sdk"""
+        """CreatePolicyResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 防护策略id
+        :type id: str
+        :param name: 防护策略名
+        :type name: str
+        :param level: 防护等级
+        :type level: int
+        :param action: 
+        :type action: :class:`huaweicloudsdkwaf.v1.PolicyAction`
+        :param options: 
+        :type options: :class:`huaweicloudsdkwaf.v1.PolicyOption`
+        :param full_detection: 精准防护中的检测模式
+        :type full_detection: bool
+        :param hosts: 防护的网站id
+        :type hosts: list[str]
+        :param bind_host: 防护的网站信息
+        :type bind_host: list[:class:`huaweicloudsdkwaf.v1.BindHost`]
+        :param timestamp: 创建防护策略的时间
+        :type timestamp: int
+        :param extend: 扩展字段
+        :type extend: object
+        """
         
         super(CreatePolicyResponse, self).__init__()
 
@@ -103,7 +126,7 @@ class CreatePolicyResponse(SdkResponse):
         防护策略id
 
         :param id: The id of this CreatePolicyResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -125,7 +148,7 @@ class CreatePolicyResponse(SdkResponse):
         防护策略名
 
         :param name: The name of this CreatePolicyResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -147,7 +170,7 @@ class CreatePolicyResponse(SdkResponse):
         防护等级
 
         :param level: The level of this CreatePolicyResponse.
-        :type: int
+        :type level: int
         """
         self._level = level
 
@@ -157,7 +180,7 @@ class CreatePolicyResponse(SdkResponse):
 
 
         :return: The action of this CreatePolicyResponse.
-        :rtype: PolicyAction
+        :rtype: :class:`huaweicloudsdkwaf.v1.PolicyAction`
         """
         return self._action
 
@@ -167,7 +190,7 @@ class CreatePolicyResponse(SdkResponse):
 
 
         :param action: The action of this CreatePolicyResponse.
-        :type: PolicyAction
+        :type action: :class:`huaweicloudsdkwaf.v1.PolicyAction`
         """
         self._action = action
 
@@ -177,7 +200,7 @@ class CreatePolicyResponse(SdkResponse):
 
 
         :return: The options of this CreatePolicyResponse.
-        :rtype: PolicyOption
+        :rtype: :class:`huaweicloudsdkwaf.v1.PolicyOption`
         """
         return self._options
 
@@ -187,7 +210,7 @@ class CreatePolicyResponse(SdkResponse):
 
 
         :param options: The options of this CreatePolicyResponse.
-        :type: PolicyOption
+        :type options: :class:`huaweicloudsdkwaf.v1.PolicyOption`
         """
         self._options = options
 
@@ -209,7 +232,7 @@ class CreatePolicyResponse(SdkResponse):
         精准防护中的检测模式
 
         :param full_detection: The full_detection of this CreatePolicyResponse.
-        :type: bool
+        :type full_detection: bool
         """
         self._full_detection = full_detection
 
@@ -231,7 +254,7 @@ class CreatePolicyResponse(SdkResponse):
         防护的网站id
 
         :param hosts: The hosts of this CreatePolicyResponse.
-        :type: list[str]
+        :type hosts: list[str]
         """
         self._hosts = hosts
 
@@ -242,7 +265,7 @@ class CreatePolicyResponse(SdkResponse):
         防护的网站信息
 
         :return: The bind_host of this CreatePolicyResponse.
-        :rtype: list[BindHost]
+        :rtype: list[:class:`huaweicloudsdkwaf.v1.BindHost`]
         """
         return self._bind_host
 
@@ -253,7 +276,7 @@ class CreatePolicyResponse(SdkResponse):
         防护的网站信息
 
         :param bind_host: The bind_host of this CreatePolicyResponse.
-        :type: list[BindHost]
+        :type bind_host: list[:class:`huaweicloudsdkwaf.v1.BindHost`]
         """
         self._bind_host = bind_host
 
@@ -275,7 +298,7 @@ class CreatePolicyResponse(SdkResponse):
         创建防护策略的时间
 
         :param timestamp: The timestamp of this CreatePolicyResponse.
-        :type: int
+        :type timestamp: int
         """
         self._timestamp = timestamp
 
@@ -297,7 +320,7 @@ class CreatePolicyResponse(SdkResponse):
         扩展字段
 
         :param extend: The extend of this CreatePolicyResponse.
-        :type: object
+        :type extend: object
         """
         self._extend = extend
 

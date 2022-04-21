@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneDeleteMappingResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class KeystoneDeleteMappingResponse(SdkResponse):
     }
 
     def __init__(self):
-        """KeystoneDeleteMappingResponse - a model defined in huaweicloud sdk"""
+        """KeystoneDeleteMappingResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(KeystoneDeleteMappingResponse, self).__init__()
         self.discriminator = None

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateSecurityGroupRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateSecurityGroupRequestBody:
     }
 
     def __init__(self, dry_run=None, security_group=None):
-        """UpdateSecurityGroupRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateSecurityGroupRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param dry_run: 功能说明：是否只预检此次请求 取值范围： -true：发送检查请求，不会更新安全组。检查项包括是否填写了必需参数、请求格式、业务限制。如果检查不通过，则返回对应错误。如果检查通过，则返回响应码202。 -false（默认值）：发送正常请求，并直接更新安全组。
+        :type dry_run: bool
+        :param security_group: 
+        :type security_group: :class:`huaweicloudsdkvpc.v3.UpdateSecurityGroupOption`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateSecurityGroupRequestBody:
         功能说明：是否只预检此次请求 取值范围： -true：发送检查请求，不会更新安全组。检查项包括是否填写了必需参数、请求格式、业务限制。如果检查不通过，则返回对应错误。如果检查通过，则返回响应码202。 -false（默认值）：发送正常请求，并直接更新安全组。
 
         :param dry_run: The dry_run of this UpdateSecurityGroupRequestBody.
-        :type: bool
+        :type dry_run: bool
         """
         self._dry_run = dry_run
 
@@ -72,7 +79,7 @@ class UpdateSecurityGroupRequestBody:
 
 
         :return: The security_group of this UpdateSecurityGroupRequestBody.
-        :rtype: UpdateSecurityGroupOption
+        :rtype: :class:`huaweicloudsdkvpc.v3.UpdateSecurityGroupOption`
         """
         return self._security_group
 
@@ -82,7 +89,7 @@ class UpdateSecurityGroupRequestBody:
 
 
         :param security_group: The security_group of this UpdateSecurityGroupRequestBody.
-        :type: UpdateSecurityGroupOption
+        :type security_group: :class:`huaweicloudsdkvpc.v3.UpdateSecurityGroupOption`
         """
         self._security_group = security_group
 

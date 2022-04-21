@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Metadata:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class Metadata:
     }
 
     def __init__(self, event_type=None, event_id=None, event_severity=None, event_name=None, resource_type=None, resource_id=None, resource_provider=None, lts_alarm_type=None):
-        """Metadata - a model defined in huaweicloud sdk"""
+        """Metadata
+
+        The model defined in huaweicloud sdk
+
+        :param event_type: 告警类型
+        :type event_type: str
+        :param event_id: 告警id
+        :type event_id: str
+        :param event_severity: 告警级别
+        :type event_severity: str
+        :param event_name: 告警名称
+        :type event_name: str
+        :param resource_type: 资源类型
+        :type resource_type: str
+        :param resource_id: 日志组/流名称
+        :type resource_id: str
+        :param resource_provider: 告警源
+        :type resource_provider: str
+        :param lts_alarm_type: 告警规则类型(SQL/关键词)
+        :type lts_alarm_type: str
+        """
         
         
 
@@ -85,7 +104,7 @@ class Metadata:
         告警类型
 
         :param event_type: The event_type of this Metadata.
-        :type: str
+        :type event_type: str
         """
         self._event_type = event_type
 
@@ -107,7 +126,7 @@ class Metadata:
         告警id
 
         :param event_id: The event_id of this Metadata.
-        :type: str
+        :type event_id: str
         """
         self._event_id = event_id
 
@@ -129,7 +148,7 @@ class Metadata:
         告警级别
 
         :param event_severity: The event_severity of this Metadata.
-        :type: str
+        :type event_severity: str
         """
         self._event_severity = event_severity
 
@@ -151,7 +170,7 @@ class Metadata:
         告警名称
 
         :param event_name: The event_name of this Metadata.
-        :type: str
+        :type event_name: str
         """
         self._event_name = event_name
 
@@ -173,7 +192,7 @@ class Metadata:
         资源类型
 
         :param resource_type: The resource_type of this Metadata.
-        :type: str
+        :type resource_type: str
         """
         self._resource_type = resource_type
 
@@ -195,7 +214,7 @@ class Metadata:
         日志组/流名称
 
         :param resource_id: The resource_id of this Metadata.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -217,7 +236,7 @@ class Metadata:
         告警源
 
         :param resource_provider: The resource_provider of this Metadata.
-        :type: str
+        :type resource_provider: str
         """
         self._resource_provider = resource_provider
 
@@ -239,7 +258,7 @@ class Metadata:
         告警规则类型(SQL/关键词)
 
         :param lts_alarm_type: The lts_alarm_type of this Metadata.
-        :type: str
+        :type lts_alarm_type: str
         """
         self._lts_alarm_type = lts_alarm_type
 

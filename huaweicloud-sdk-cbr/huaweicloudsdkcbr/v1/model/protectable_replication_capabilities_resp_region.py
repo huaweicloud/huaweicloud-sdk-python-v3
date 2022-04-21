@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ProtectableReplicationCapabilitiesRespRegion:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ProtectableReplicationCapabilitiesRespRegion:
     }
 
     def __init__(self, name=None, replication_destinations=None):
-        """ProtectableReplicationCapabilitiesRespRegion - a model defined in huaweicloud sdk"""
+        """ProtectableReplicationCapabilitiesRespRegion
+
+        The model defined in huaweicloud sdk
+
+        :param name: 云服务所在的区域
+        :type name: str
+        :param replication_destinations: 支持复制的目标区域列表
+        :type replication_destinations: list[str]
+        """
         
         
 
@@ -61,7 +68,7 @@ class ProtectableReplicationCapabilitiesRespRegion:
         云服务所在的区域
 
         :param name: The name of this ProtectableReplicationCapabilitiesRespRegion.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -83,7 +90,7 @@ class ProtectableReplicationCapabilitiesRespRegion:
         支持复制的目标区域列表
 
         :param replication_destinations: The replication_destinations of this ProtectableReplicationCapabilitiesRespRegion.
-        :type: list[str]
+        :type replication_destinations: list[str]
         """
         self._replication_destinations = replication_destinations
 

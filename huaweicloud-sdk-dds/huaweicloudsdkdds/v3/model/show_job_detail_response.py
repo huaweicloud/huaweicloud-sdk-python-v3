@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowJobDetailResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowJobDetailResponse(SdkResponse):
     }
 
     def __init__(self, job=None):
-        """ShowJobDetailResponse - a model defined in huaweicloud sdk"""
+        """ShowJobDetailResponse
+
+        The model defined in huaweicloud sdk
+
+        :param job: 
+        :type job: :class:`huaweicloudsdkdds.v3.JobDetail`
+        """
         
         super(ShowJobDetailResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class ShowJobDetailResponse(SdkResponse):
 
 
         :return: The job of this ShowJobDetailResponse.
-        :rtype: JobDetail
+        :rtype: :class:`huaweicloudsdkdds.v3.JobDetail`
         """
         return self._job
 
@@ -56,7 +61,7 @@ class ShowJobDetailResponse(SdkResponse):
 
 
         :param job: The job of this ShowJobDetailResponse.
-        :type: JobDetail
+        :type job: :class:`huaweicloudsdkdds.v3.JobDetail`
         """
         self._job = job
 

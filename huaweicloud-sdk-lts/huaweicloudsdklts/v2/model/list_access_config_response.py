@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAccessConfigResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListAccessConfigResponse(SdkResponse):
     }
 
     def __init__(self, result=None, total=None):
-        """ListAccessConfigResponse - a model defined in huaweicloud sdk"""
+        """ListAccessConfigResponse
+
+        The model defined in huaweicloud sdk
+
+        :param result: 日志接入列表
+        :type result: list[:class:`huaweicloudsdklts.v2.AccessConfigInfo`]
+        :param total: 日志接入总数
+        :type total: int
+        """
         
         super(ListAccessConfigResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListAccessConfigResponse(SdkResponse):
         日志接入列表
 
         :return: The result of this ListAccessConfigResponse.
-        :rtype: list[AccessConfigInfo]
+        :rtype: list[:class:`huaweicloudsdklts.v2.AccessConfigInfo`]
         """
         return self._result
 
@@ -63,7 +70,7 @@ class ListAccessConfigResponse(SdkResponse):
         日志接入列表
 
         :param result: The result of this ListAccessConfigResponse.
-        :type: list[AccessConfigInfo]
+        :type result: list[:class:`huaweicloudsdklts.v2.AccessConfigInfo`]
         """
         self._result = result
 
@@ -85,7 +92,7 @@ class ListAccessConfigResponse(SdkResponse):
         日志接入总数
 
         :param total: The total of this ListAccessConfigResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 

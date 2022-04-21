@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowRepositoryNameExistRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowRepositoryNameExistRequest:
     }
 
     def __init__(self, project_uuid=None, repository_name=None):
-        """ShowRepositoryNameExistRequest - a model defined in huaweicloud sdk"""
+        """ShowRepositoryNameExistRequest
+
+        The model defined in huaweicloud sdk
+
+        :param project_uuid: 项目的uuid
+        :type project_uuid: str
+        :param repository_name: 仓库名
+        :type repository_name: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ShowRepositoryNameExistRequest:
         项目的uuid
 
         :param project_uuid: The project_uuid of this ShowRepositoryNameExistRequest.
-        :type: str
+        :type project_uuid: str
         """
         self._project_uuid = project_uuid
 
@@ -83,7 +90,7 @@ class ShowRepositoryNameExistRequest:
         仓库名
 
         :param repository_name: The repository_name of this ShowRepositoryNameExistRequest.
-        :type: str
+        :type repository_name: str
         """
         self._repository_name = repository_name
 

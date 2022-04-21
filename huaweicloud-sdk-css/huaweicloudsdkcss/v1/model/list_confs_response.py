@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListConfsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListConfsResponse(SdkResponse):
     }
 
     def __init__(self, confs=None):
-        """ListConfsResponse - a model defined in huaweicloud sdk"""
+        """ListConfsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param confs: 配置文件列表。
+        :type confs: list[:class:`huaweicloudsdkcss.v1.Confs`]
+        """
         
         super(ListConfsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListConfsResponse(SdkResponse):
         配置文件列表。
 
         :return: The confs of this ListConfsResponse.
-        :rtype: list[Confs]
+        :rtype: list[:class:`huaweicloudsdkcss.v1.Confs`]
         """
         return self._confs
 
@@ -58,7 +63,7 @@ class ListConfsResponse(SdkResponse):
         配置文件列表。
 
         :param confs: The confs of this ListConfsResponse.
-        :type: list[Confs]
+        :type confs: list[:class:`huaweicloudsdkcss.v1.Confs`]
         """
         self._confs = confs
 

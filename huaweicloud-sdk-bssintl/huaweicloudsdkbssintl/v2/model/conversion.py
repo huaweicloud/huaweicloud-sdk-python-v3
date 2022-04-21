@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Conversion:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class Conversion:
     }
 
     def __init__(self, measure_id=None, ref_measure_id=None, conversion_ratio=None, measure_type=None):
-        """Conversion - a model defined in huaweicloud sdk"""
+        """Conversion
+
+        The model defined in huaweicloud sdk
+
+        :param measure_id: 度量单位ID。 例如：10表示GB。
+        :type measure_id: int
+        :param ref_measure_id: 转换后的度量单位ID。 例如：11表示MB。
+        :type ref_measure_id: int
+        :param conversion_ratio: 度量单位和转换后的度量单位之间的转换比率。 例如： 度量单位为GB，转换度量单位为MB时，转换比率为1024，两者之间的转换公式为：1GB&#x3D;1024MB。
+        :type conversion_ratio: int
+        :param measure_type: 度量类型。 1：货币2：时长3：流量4：数量7：容量9：行数10：周期11：频率12：个数16：带宽速率17：容量时长18：查询速率19：带宽速率（1000进制）20：性能测试用量21：面积22：视频23：吞吐量25：测试类型
+        :type measure_type: int
+        """
         
         
 
@@ -73,7 +84,7 @@ class Conversion:
         度量单位ID。 例如：10表示GB。
 
         :param measure_id: The measure_id of this Conversion.
-        :type: int
+        :type measure_id: int
         """
         self._measure_id = measure_id
 
@@ -95,7 +106,7 @@ class Conversion:
         转换后的度量单位ID。 例如：11表示MB。
 
         :param ref_measure_id: The ref_measure_id of this Conversion.
-        :type: int
+        :type ref_measure_id: int
         """
         self._ref_measure_id = ref_measure_id
 
@@ -117,7 +128,7 @@ class Conversion:
         度量单位和转换后的度量单位之间的转换比率。 例如： 度量单位为GB，转换度量单位为MB时，转换比率为1024，两者之间的转换公式为：1GB=1024MB。
 
         :param conversion_ratio: The conversion_ratio of this Conversion.
-        :type: int
+        :type conversion_ratio: int
         """
         self._conversion_ratio = conversion_ratio
 
@@ -139,7 +150,7 @@ class Conversion:
         度量类型。 1：货币2：时长3：流量4：数量7：容量9：行数10：周期11：频率12：个数16：带宽速率17：容量时长18：查询速率19：带宽速率（1000进制）20：性能测试用量21：面积22：视频23：吞吐量25：测试类型
 
         :param measure_type: The measure_type of this Conversion.
-        :type: int
+        :type measure_type: int
         """
         self._measure_type = measure_type
 

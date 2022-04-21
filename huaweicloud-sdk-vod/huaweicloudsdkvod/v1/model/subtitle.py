@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Subtitle:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class Subtitle:
     }
 
     def __init__(self, id=None, type=None, language=None, md5=None, description=None):
-        """Subtitle - a model defined in huaweicloud sdk"""
+        """Subtitle
+
+        The model defined in huaweicloud sdk
+
+        :param id: 字幕id。  取值范围：[1,8]。
+        :type id: int
+        :param type: 字幕文件类型，目前暂只支持“SRT”。
+        :type type: str
+        :param language: 字幕语音类型。  取值如下： - CN：表示中文字幕。 - EN：表示英文字幕。
+        :type language: str
+        :param md5: 字幕文件的MD5值。
+        :type md5: str
+        :param description: 字幕描述。
+        :type description: str
+        """
         
         
 
@@ -75,7 +88,7 @@ class Subtitle:
         字幕id。  取值范围：[1,8]。
 
         :param id: The id of this Subtitle.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -97,7 +110,7 @@ class Subtitle:
         字幕文件类型，目前暂只支持“SRT”。
 
         :param type: The type of this Subtitle.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -119,7 +132,7 @@ class Subtitle:
         字幕语音类型。  取值如下： - CN：表示中文字幕。 - EN：表示英文字幕。
 
         :param language: The language of this Subtitle.
-        :type: str
+        :type language: str
         """
         self._language = language
 
@@ -141,7 +154,7 @@ class Subtitle:
         字幕文件的MD5值。
 
         :param md5: The md5 of this Subtitle.
-        :type: str
+        :type md5: str
         """
         self._md5 = md5
 
@@ -163,7 +176,7 @@ class Subtitle:
         字幕描述。
 
         :param description: The description of this Subtitle.
-        :type: str
+        :type description: str
         """
         self._description = description
 

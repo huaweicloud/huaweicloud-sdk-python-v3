@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MetaDataInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class MetaDataInfo:
     }
 
     def __init__(self, op_svc_userid=None, admin_pass=None, byol=None, agency_name=None):
-        """MetaDataInfo - a model defined in huaweicloud sdk"""
+        """MetaDataInfo
+
+        The model defined in huaweicloud sdk
+
+        :param op_svc_userid: 用户ID（登录管理控制台，进入我的凭证，即可看到“用户ID”）。
+        :type op_svc_userid: str
+        :param admin_pass: 以Windows镜像创建的裸金属服务器Administrator用户的密码，示例：cloud.1234。密码复杂度要求：长度为8-26位。密码至少必须包含大写字母、小写字母、数字和特殊字符（!@$%^-_&#x3D;+[{}]:,./?）中的三种。密码不能包含用户名或用户名的逆序，不能包含用户名中超过两个连续字符的部分。
+        :type admin_pass: str
+        :param byol: 否自带许可，取值“true”或“false”。
+        :type byol: str
+        :param agency_name: 委托的名称。委托是由租户管理员在统一身份认证服务（Identity and Access Management，IAM）上创建的，可以作为其他租户访问此裸金属服务器的临时凭证。 说明:委托获取、更新请参考如下步骤：使用IAM服务提供的查询委托列表，获取有效可用的委托名称。使用更新裸金属服务器元数据接口，更新metadata中agency_name字段为新的委托名称。
+        :type agency_name: str
+        """
         
         
 
@@ -72,7 +83,7 @@ class MetaDataInfo:
         用户ID（登录管理控制台，进入我的凭证，即可看到“用户ID”）。
 
         :param op_svc_userid: The op_svc_userid of this MetaDataInfo.
-        :type: str
+        :type op_svc_userid: str
         """
         self._op_svc_userid = op_svc_userid
 
@@ -94,7 +105,7 @@ class MetaDataInfo:
         以Windows镜像创建的裸金属服务器Administrator用户的密码，示例：cloud.1234。密码复杂度要求：长度为8-26位。密码至少必须包含大写字母、小写字母、数字和特殊字符（!@$%^-_=+[{}]:,./?）中的三种。密码不能包含用户名或用户名的逆序，不能包含用户名中超过两个连续字符的部分。
 
         :param admin_pass: The admin_pass of this MetaDataInfo.
-        :type: str
+        :type admin_pass: str
         """
         self._admin_pass = admin_pass
 
@@ -116,7 +127,7 @@ class MetaDataInfo:
         否自带许可，取值“true”或“false”。
 
         :param byol: The byol of this MetaDataInfo.
-        :type: str
+        :type byol: str
         """
         self._byol = byol
 
@@ -138,7 +149,7 @@ class MetaDataInfo:
         委托的名称。委托是由租户管理员在统一身份认证服务（Identity and Access Management，IAM）上创建的，可以作为其他租户访问此裸金属服务器的临时凭证。 说明:委托获取、更新请参考如下步骤：使用IAM服务提供的查询委托列表，获取有效可用的委托名称。使用更新裸金属服务器元数据接口，更新metadata中agency_name字段为新的委托名称。
 
         :param agency_name: The agency_name of this MetaDataInfo.
-        :type: str
+        :type agency_name: str
         """
         self._agency_name = agency_name
 

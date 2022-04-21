@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowPublicipRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowPublicipRequest:
     }
 
     def __init__(self, publicip_id=None, fields=None):
-        """ShowPublicipRequest - a model defined in huaweicloud sdk"""
+        """ShowPublicipRequest
+
+        The model defined in huaweicloud sdk
+
+        :param publicip_id: 弹性公网IP的ID
+        :type publicip_id: str
+        :param fields: 显示，形式为\&quot;fields&#x3D;id&amp;fields&#x3D;owner&amp;...\&quot;  支持字段：id/project_id/ip_version/type/public_ip_address/public_ipv6_address/network_type/status/description/created_at/updated_at/vnic/bandwidth/associate_instance_type/associate_instance_id/lock_status/billing_info/tags/enterprise_project_id/publicip_pool_name/allow_share_bandwidth_types/alias/publicip_pool_id/public_border_group
+        :type fields: list[str]
+        """
         
         
 
@@ -62,7 +69,7 @@ class ShowPublicipRequest:
         弹性公网IP的ID
 
         :param publicip_id: The publicip_id of this ShowPublicipRequest.
-        :type: str
+        :type publicip_id: str
         """
         self._publicip_id = publicip_id
 
@@ -84,7 +91,7 @@ class ShowPublicipRequest:
         显示，形式为\"fields=id&fields=owner&...\"  支持字段：id/project_id/ip_version/type/public_ip_address/public_ipv6_address/network_type/status/description/created_at/updated_at/vnic/bandwidth/associate_instance_type/associate_instance_id/lock_status/billing_info/tags/enterprise_project_id/publicip_pool_name/allow_share_bandwidth_types/alias/publicip_pool_id/public_border_group
 
         :param fields: The fields of this ShowPublicipRequest.
-        :type: list[str]
+        :type fields: list[str]
         """
         self._fields = fields
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CompareTableInfoWithToken:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CompareTableInfoWithToken:
     }
 
     def __init__(self, table_name=None, min_token=None, max_token=None):
-        """CompareTableInfoWithToken - a model defined in huaweicloud sdk"""
+        """CompareTableInfoWithToken
+
+        The model defined in huaweicloud sdk
+
+        :param table_name: 表名。
+        :type table_name: str
+        :param min_token: 该表的min token。
+        :type min_token: str
+        :param max_token: 该表的max token。
+        :type max_token: str
+        """
         
         
 
@@ -67,7 +76,7 @@ class CompareTableInfoWithToken:
         表名。
 
         :param table_name: The table_name of this CompareTableInfoWithToken.
-        :type: str
+        :type table_name: str
         """
         self._table_name = table_name
 
@@ -89,7 +98,7 @@ class CompareTableInfoWithToken:
         该表的min token。
 
         :param min_token: The min_token of this CompareTableInfoWithToken.
-        :type: str
+        :type min_token: str
         """
         self._min_token = min_token
 
@@ -111,7 +120,7 @@ class CompareTableInfoWithToken:
         该表的max token。
 
         :param max_token: The max_token of this CompareTableInfoWithToken.
-        :type: str
+        :type max_token: str
         """
         self._max_token = max_token
 

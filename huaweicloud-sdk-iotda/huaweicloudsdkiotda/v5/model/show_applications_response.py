@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowApplicationsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowApplicationsResponse(SdkResponse):
     }
 
     def __init__(self, applications=None):
-        """ShowApplicationsResponse - a model defined in huaweicloud sdk"""
+        """ShowApplicationsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param applications: 资源空间信息列表。
+        :type applications: list[:class:`huaweicloudsdkiotda.v5.ApplicationDTO`]
+        """
         
         super(ShowApplicationsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ShowApplicationsResponse(SdkResponse):
         资源空间信息列表。
 
         :return: The applications of this ShowApplicationsResponse.
-        :rtype: list[ApplicationDTO]
+        :rtype: list[:class:`huaweicloudsdkiotda.v5.ApplicationDTO`]
         """
         return self._applications
 
@@ -58,7 +63,7 @@ class ShowApplicationsResponse(SdkResponse):
         资源空间信息列表。
 
         :param applications: The applications of this ShowApplicationsResponse.
-        :type: list[ApplicationDTO]
+        :type applications: list[:class:`huaweicloudsdkiotda.v5.ApplicationDTO`]
         """
         self._applications = applications
 

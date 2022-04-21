@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MemberGroupCreateBatch:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class MemberGroupCreateBatch:
     }
 
     def __init__(self, member_groups=None):
-        """MemberGroupCreateBatch - a model defined in huaweicloud sdk"""
+        """MemberGroupCreateBatch
+
+        The model defined in huaweicloud sdk
+
+        :param member_groups: 后端服务器组列表
+        :type member_groups: list[:class:`huaweicloudsdkroma.v2.MemberGroupCreate`]
+        """
         
         
 
@@ -47,7 +52,7 @@ class MemberGroupCreateBatch:
         后端服务器组列表
 
         :return: The member_groups of this MemberGroupCreateBatch.
-        :rtype: list[MemberGroupCreate]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.MemberGroupCreate`]
         """
         return self._member_groups
 
@@ -58,7 +63,7 @@ class MemberGroupCreateBatch:
         后端服务器组列表
 
         :param member_groups: The member_groups of this MemberGroupCreateBatch.
-        :type: list[MemberGroupCreate]
+        :type member_groups: list[:class:`huaweicloudsdkroma.v2.MemberGroupCreate`]
         """
         self._member_groups = member_groups
 

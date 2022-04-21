@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CloneServer:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class CloneServer:
     }
 
     def __init__(self, vm_id=None, name=None, clone_error=None, clone_state=None, error_msg=None):
-        """CloneServer - a model defined in huaweicloud sdk"""
+        """CloneServer
+
+        The model defined in huaweicloud sdk
+
+        :param vm_id: 克隆服务器ID
+        :type vm_id: str
+        :param name: 克隆虚拟机的名称
+        :type name: str
+        :param clone_error: 克隆错误信息
+        :type clone_error: str
+        :param clone_state: 克隆状态
+        :type clone_state: str
+        :param error_msg: 克隆错误信息描述
+        :type error_msg: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class CloneServer:
         克隆服务器ID
 
         :param vm_id: The vm_id of this CloneServer.
-        :type: str
+        :type vm_id: str
         """
         self._vm_id = vm_id
 
@@ -100,7 +113,7 @@ class CloneServer:
         克隆虚拟机的名称
 
         :param name: The name of this CloneServer.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -122,7 +135,7 @@ class CloneServer:
         克隆错误信息
 
         :param clone_error: The clone_error of this CloneServer.
-        :type: str
+        :type clone_error: str
         """
         self._clone_error = clone_error
 
@@ -144,7 +157,7 @@ class CloneServer:
         克隆状态
 
         :param clone_state: The clone_state of this CloneServer.
-        :type: str
+        :type clone_state: str
         """
         self._clone_state = clone_state
 
@@ -166,7 +179,7 @@ class CloneServer:
         克隆错误信息描述
 
         :param error_msg: The error_msg of this CloneServer.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 

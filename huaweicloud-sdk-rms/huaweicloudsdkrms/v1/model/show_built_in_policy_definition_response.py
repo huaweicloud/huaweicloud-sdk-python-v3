@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowBuiltInPolicyDefinitionResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ShowBuiltInPolicyDefinitionResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, policy_type=None, description=None, policy_rule_type=None, policy_rule=None, keywords=None, parameters=None):
-        """ShowBuiltInPolicyDefinitionResponse - a model defined in huaweicloud sdk"""
+        """ShowBuiltInPolicyDefinitionResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 策略id
+        :type id: str
+        :param name: 策略名字
+        :type name: str
+        :param policy_type: 策略类型
+        :type policy_type: str
+        :param description: 策略描述
+        :type description: str
+        :param policy_rule_type: 策略语法类型
+        :type policy_rule_type: str
+        :param policy_rule: 策略规则
+        :type policy_rule: object
+        :param keywords: 关键词列表
+        :type keywords: list[str]
+        :param parameters: 策略参数
+        :type parameters: dict(str, PolicyParameterDefinition)
+        """
         
         super(ShowBuiltInPolicyDefinitionResponse, self).__init__()
 
@@ -93,7 +112,7 @@ class ShowBuiltInPolicyDefinitionResponse(SdkResponse):
         策略id
 
         :param id: The id of this ShowBuiltInPolicyDefinitionResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -115,7 +134,7 @@ class ShowBuiltInPolicyDefinitionResponse(SdkResponse):
         策略名字
 
         :param name: The name of this ShowBuiltInPolicyDefinitionResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -137,7 +156,7 @@ class ShowBuiltInPolicyDefinitionResponse(SdkResponse):
         策略类型
 
         :param policy_type: The policy_type of this ShowBuiltInPolicyDefinitionResponse.
-        :type: str
+        :type policy_type: str
         """
         self._policy_type = policy_type
 
@@ -159,7 +178,7 @@ class ShowBuiltInPolicyDefinitionResponse(SdkResponse):
         策略描述
 
         :param description: The description of this ShowBuiltInPolicyDefinitionResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -181,7 +200,7 @@ class ShowBuiltInPolicyDefinitionResponse(SdkResponse):
         策略语法类型
 
         :param policy_rule_type: The policy_rule_type of this ShowBuiltInPolicyDefinitionResponse.
-        :type: str
+        :type policy_rule_type: str
         """
         self._policy_rule_type = policy_rule_type
 
@@ -203,7 +222,7 @@ class ShowBuiltInPolicyDefinitionResponse(SdkResponse):
         策略规则
 
         :param policy_rule: The policy_rule of this ShowBuiltInPolicyDefinitionResponse.
-        :type: object
+        :type policy_rule: object
         """
         self._policy_rule = policy_rule
 
@@ -225,7 +244,7 @@ class ShowBuiltInPolicyDefinitionResponse(SdkResponse):
         关键词列表
 
         :param keywords: The keywords of this ShowBuiltInPolicyDefinitionResponse.
-        :type: list[str]
+        :type keywords: list[str]
         """
         self._keywords = keywords
 
@@ -247,7 +266,7 @@ class ShowBuiltInPolicyDefinitionResponse(SdkResponse):
         策略参数
 
         :param parameters: The parameters of this ShowBuiltInPolicyDefinitionResponse.
-        :type: dict(str, PolicyParameterDefinition)
+        :type parameters: dict(str, PolicyParameterDefinition)
         """
         self._parameters = parameters
 

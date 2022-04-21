@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListStructuredLogsWithTimeRangeResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListStructuredLogsWithTimeRangeResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListStructuredLogsWithTimeRangeResponse - a model defined in huaweicloud sdk"""
+        """ListStructuredLogsWithTimeRangeResponse
+
+        The model defined in huaweicloud sdk
+
+        :param body: 此参数在请求实体中，采用json字符串格式。
+        :type body: dict(str, list[object])
+        """
         
         super(ListStructuredLogsWithTimeRangeResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class ListStructuredLogsWithTimeRangeResponse(SdkResponse):
         此参数在请求实体中，采用json字符串格式。
 
         :param body: The body of this ListStructuredLogsWithTimeRangeResponse.
-        :type: dict(str, list[object])
+        :type body: dict(str, list[object])
         """
         self._body = body
 

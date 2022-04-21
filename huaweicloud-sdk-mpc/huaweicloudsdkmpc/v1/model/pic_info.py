@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PicInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class PicInfo:
     }
 
     def __init__(self, pic_name=None):
-        """PicInfo - a model defined in huaweicloud sdk"""
+        """PicInfo
+
+        The model defined in huaweicloud sdk
+
+        :param pic_name: 截图文件名。 
+        :type pic_name: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class PicInfo:
         截图文件名。 
 
         :param pic_name: The pic_name of this PicInfo.
-        :type: str
+        :type pic_name: str
         """
         self._pic_name = pic_name
 

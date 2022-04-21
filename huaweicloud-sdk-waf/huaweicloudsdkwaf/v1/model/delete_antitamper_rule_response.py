@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteAntitamperRuleResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class DeleteAntitamperRuleResponse(SdkResponse):
     }
 
     def __init__(self, id=None, policyid=None, url=None, timestamp=None):
-        """DeleteAntitamperRuleResponse - a model defined in huaweicloud sdk"""
+        """DeleteAntitamperRuleResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 规则id
+        :type id: str
+        :param policyid: 策略id
+        :type policyid: str
+        :param url: 防篡改的url
+        :type url: str
+        :param timestamp: 创建规则的时间戳
+        :type timestamp: int
+        """
         
         super(DeleteAntitamperRuleResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class DeleteAntitamperRuleResponse(SdkResponse):
         规则id
 
         :param id: The id of this DeleteAntitamperRuleResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -95,7 +106,7 @@ class DeleteAntitamperRuleResponse(SdkResponse):
         策略id
 
         :param policyid: The policyid of this DeleteAntitamperRuleResponse.
-        :type: str
+        :type policyid: str
         """
         self._policyid = policyid
 
@@ -117,7 +128,7 @@ class DeleteAntitamperRuleResponse(SdkResponse):
         防篡改的url
 
         :param url: The url of this DeleteAntitamperRuleResponse.
-        :type: str
+        :type url: str
         """
         self._url = url
 
@@ -139,7 +150,7 @@ class DeleteAntitamperRuleResponse(SdkResponse):
         创建规则的时间戳
 
         :param timestamp: The timestamp of this DeleteAntitamperRuleResponse.
-        :type: int
+        :type timestamp: int
         """
         self._timestamp = timestamp
 

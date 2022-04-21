@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListInvoicesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListInvoicesResponse(SdkResponse):
     }
 
     def __init__(self, count=None, invoices=None):
-        """ListInvoicesResponse - a model defined in huaweicloud sdk"""
+        """ListInvoicesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 记录数，只有成功的时候才返回这个字段
+        :type count: int
+        :param invoices: 发票信息列表，参见表2。
+        :type invoices: list[:class:`huaweicloudsdkbssintl.v2.InvoiceRequestInfoIntl`]
+        """
         
         super(ListInvoicesResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListInvoicesResponse(SdkResponse):
         记录数，只有成功的时候才返回这个字段
 
         :param count: The count of this ListInvoicesResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -74,7 +81,7 @@ class ListInvoicesResponse(SdkResponse):
         发票信息列表，参见表2。
 
         :return: The invoices of this ListInvoicesResponse.
-        :rtype: list[InvoiceRequestInfoIntl]
+        :rtype: list[:class:`huaweicloudsdkbssintl.v2.InvoiceRequestInfoIntl`]
         """
         return self._invoices
 
@@ -85,7 +92,7 @@ class ListInvoicesResponse(SdkResponse):
         发票信息列表，参见表2。
 
         :param invoices: The invoices of this ListInvoicesResponse.
-        :type: list[InvoiceRequestInfoIntl]
+        :type invoices: list[:class:`huaweicloudsdkbssintl.v2.InvoiceRequestInfoIntl`]
         """
         self._invoices = invoices
 

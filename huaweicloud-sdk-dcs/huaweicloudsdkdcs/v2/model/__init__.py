@@ -77,11 +77,14 @@ from huaweicloudsdkdcs.v2.model.diagnosis_item import DiagnosisItem
 from huaweicloudsdkdcs.v2.model.diagnosis_node_report import DiagnosisNodeReport
 from huaweicloudsdkdcs.v2.model.diagnosis_report_info import DiagnosisReportInfo
 from huaweicloudsdkdcs.v2.model.dim_child import DimChild
+from huaweicloudsdkdcs.v2.model.domain_name_entity import DomainNameEntity
+from huaweicloudsdkdcs.v2.model.domain_name_info import DomainNameInfo
 from huaweicloudsdkdcs.v2.model.download_backup_files_req import DownloadBackupFilesReq
 from huaweicloudsdkdcs.v2.model.files import Files
 from huaweicloudsdkdcs.v2.model.flavor_az_object import FlavorAzObject
 from huaweicloudsdkdcs.v2.model.flavors_items import FlavorsItems
 from huaweicloudsdkdcs.v2.model.hotkeys_body import HotkeysBody
+from huaweicloudsdkdcs.v2.model.instance_backup_policy import InstanceBackupPolicy
 from huaweicloudsdkdcs.v2.model.instance_group_list_info import InstanceGroupListInfo
 from huaweicloudsdkdcs.v2.model.instance_list_info import InstanceListInfo
 from huaweicloudsdkdcs.v2.model.instance_nodes_info_resp import InstanceNodesInfoResp

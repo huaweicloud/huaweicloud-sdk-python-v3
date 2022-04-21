@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AspectAdvanceOpinion:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class AspectAdvanceOpinion:
     }
 
     def __init__(self, aspect_category=None, label=None, confidence=None, aspect_term=None, opinion_term=None, span=None, tag=None):
-        """AspectAdvanceOpinion - a model defined in huaweicloud sdk"""
+        """AspectAdvanceOpinion
+
+        The model defined in huaweicloud sdk
+
+        :param aspect_category: 属性类别 手机领域：[&#39;整体&#39;,&#39;内存&#39;,&#39;外形设计&#39;,&#39;屏幕&#39;,&#39;性价比&#39;,&#39;拍照&#39;,&#39;散热&#39;,&#39;电池&#39;,&#39;人脸识别&#39;,&#39;信号&#39;,&#39;指纹识别&#39;,&#39;音质&#39;,&#39;握持手感&#39;,&#39;活动配件赠品&#39;,&#39;防水&#39;,&#39;客服&#39;,&#39;物流派送&#39;,&#39;包装&#39;] 汽车领域：[&#39;动力&#39;,&#39;外观&#39;,&#39;内饰&#39;,&#39;空间&#39;,&#39;操控&#39;, &#39;舒适性&#39;, &#39;性价比&#39;,&#39;能耗&#39;]
+        :type aspect_category: str
+        :param label: 情感标签，0：负向，1：正向
+        :type label: int
+        :param confidence: 情感标签置信度
+        :type confidence: float
+        :param aspect_term: 属性描述词，预留参数，暂不支持。
+        :type aspect_term: str
+        :param opinion_term: 观点描述词，预留参数，暂不支持。
+        :type opinion_term: str
+        :param span: 属性评价起始位置，预留参数，暂不支持。
+        :type span: list[int]
+        :param tag: 观点标签，预留参数，暂不支持。
+        :type tag: str
+        """
         
         
 
@@ -83,7 +100,7 @@ class AspectAdvanceOpinion:
         属性类别 手机领域：['整体','内存','外形设计','屏幕','性价比','拍照','散热','电池','人脸识别','信号','指纹识别','音质','握持手感','活动配件赠品','防水','客服','物流派送','包装'] 汽车领域：['动力','外观','内饰','空间','操控', '舒适性', '性价比','能耗']
 
         :param aspect_category: The aspect_category of this AspectAdvanceOpinion.
-        :type: str
+        :type aspect_category: str
         """
         self._aspect_category = aspect_category
 
@@ -105,7 +122,7 @@ class AspectAdvanceOpinion:
         情感标签，0：负向，1：正向
 
         :param label: The label of this AspectAdvanceOpinion.
-        :type: int
+        :type label: int
         """
         self._label = label
 
@@ -127,7 +144,7 @@ class AspectAdvanceOpinion:
         情感标签置信度
 
         :param confidence: The confidence of this AspectAdvanceOpinion.
-        :type: float
+        :type confidence: float
         """
         self._confidence = confidence
 
@@ -149,7 +166,7 @@ class AspectAdvanceOpinion:
         属性描述词，预留参数，暂不支持。
 
         :param aspect_term: The aspect_term of this AspectAdvanceOpinion.
-        :type: str
+        :type aspect_term: str
         """
         self._aspect_term = aspect_term
 
@@ -171,7 +188,7 @@ class AspectAdvanceOpinion:
         观点描述词，预留参数，暂不支持。
 
         :param opinion_term: The opinion_term of this AspectAdvanceOpinion.
-        :type: str
+        :type opinion_term: str
         """
         self._opinion_term = opinion_term
 
@@ -193,7 +210,7 @@ class AspectAdvanceOpinion:
         属性评价起始位置，预留参数，暂不支持。
 
         :param span: The span of this AspectAdvanceOpinion.
-        :type: list[int]
+        :type span: list[int]
         """
         self._span = span
 
@@ -215,7 +232,7 @@ class AspectAdvanceOpinion:
         观点标签，预留参数，暂不支持。
 
         :param tag: The tag of this AspectAdvanceOpinion.
-        :type: str
+        :type tag: str
         """
         self._tag = tag
 

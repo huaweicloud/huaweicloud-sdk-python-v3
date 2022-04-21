@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CancelSelfGrantResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class CancelSelfGrantResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CancelSelfGrantResponse - a model defined in huaweicloud sdk"""
+        """CancelSelfGrantResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(CancelSelfGrantResponse, self).__init__()
         self.discriminator = None

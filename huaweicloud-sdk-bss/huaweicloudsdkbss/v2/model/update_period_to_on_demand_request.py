@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdatePeriodToOnDemandRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdatePeriodToOnDemandRequest:
     }
 
     def __init__(self, body=None):
-        """UpdatePeriodToOnDemandRequest - a model defined in huaweicloud sdk"""
+        """UpdatePeriodToOnDemandRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the UpdatePeriodToOnDemandRequest
+        :type body: :class:`huaweicloudsdkbss.v2.PeriodToOnDemandReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class UpdatePeriodToOnDemandRequest:
 
 
         :return: The body of this UpdatePeriodToOnDemandRequest.
-        :rtype: PeriodToOnDemandReq
+        :rtype: :class:`huaweicloudsdkbss.v2.PeriodToOnDemandReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class UpdatePeriodToOnDemandRequest:
 
 
         :param body: The body of this UpdatePeriodToOnDemandRequest.
-        :type: PeriodToOnDemandReq
+        :type body: :class:`huaweicloudsdkbss.v2.PeriodToOnDemandReq`
         """
         self._body = body
 

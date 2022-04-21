@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunJobRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RunJobRequest:
     }
 
     def __init__(self, body=None):
-        """RunJobRequest - a model defined in huaweicloud sdk"""
+        """RunJobRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the RunJobRequest
+        :type body: :class:`huaweicloudsdkcloudbuild.v3.RunJobRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class RunJobRequest:
 
 
         :return: The body of this RunJobRequest.
-        :rtype: RunJobRequestBody
+        :rtype: :class:`huaweicloudsdkcloudbuild.v3.RunJobRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class RunJobRequest:
 
 
         :param body: The body of this RunJobRequest.
-        :type: RunJobRequestBody
+        :type body: :class:`huaweicloudsdkcloudbuild.v3.RunJobRequestBody`
         """
         self._body = body
 

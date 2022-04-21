@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTranscodeDetailResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListTranscodeDetailResponse(SdkResponse):
     }
 
     def __init__(self, task_array=None):
-        """ListTranscodeDetailResponse - a model defined in huaweicloud sdk"""
+        """ListTranscodeDetailResponse
+
+        The model defined in huaweicloud sdk
+
+        :param task_array: 转码详情任务组
+        :type task_array: list[:class:`huaweicloudsdkmpc.v1.TaskDetailInfo`]
+        """
         
         super(ListTranscodeDetailResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListTranscodeDetailResponse(SdkResponse):
         转码详情任务组
 
         :return: The task_array of this ListTranscodeDetailResponse.
-        :rtype: list[TaskDetailInfo]
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.TaskDetailInfo`]
         """
         return self._task_array
 
@@ -58,7 +63,7 @@ class ListTranscodeDetailResponse(SdkResponse):
         转码详情任务组
 
         :param task_array: The task_array of this ListTranscodeDetailResponse.
-        :type: list[TaskDetailInfo]
+        :type task_array: list[:class:`huaweicloudsdkmpc.v1.TaskDetailInfo`]
         """
         self._task_array = task_array
 

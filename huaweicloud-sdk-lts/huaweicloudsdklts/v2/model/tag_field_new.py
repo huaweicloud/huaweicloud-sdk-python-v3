@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TagFieldNew:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class TagFieldNew:
     }
 
     def __init__(self, field_name=None, content=None, type=None, is_analysis=None, index=None):
-        """TagFieldNew - a model defined in huaweicloud sdk"""
+        """TagFieldNew
+
+        The model defined in huaweicloud sdk
+
+        :param field_name: 字段名称
+        :type field_name: str
+        :param content: 字段示例内容
+        :type content: str
+        :param type: 字段数据类型。 可选范围：string、long、float
+        :type type: str
+        :param is_analysis: 是否开启快速分析
+        :type is_analysis: bool
+        :param index: 序号，从0开始
+        :type index: int
+        """
         
         
 
@@ -76,7 +89,7 @@ class TagFieldNew:
         字段名称
 
         :param field_name: The field_name of this TagFieldNew.
-        :type: str
+        :type field_name: str
         """
         self._field_name = field_name
 
@@ -98,7 +111,7 @@ class TagFieldNew:
         字段示例内容
 
         :param content: The content of this TagFieldNew.
-        :type: str
+        :type content: str
         """
         self._content = content
 
@@ -120,7 +133,7 @@ class TagFieldNew:
         字段数据类型。 可选范围：string、long、float
 
         :param type: The type of this TagFieldNew.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -142,7 +155,7 @@ class TagFieldNew:
         是否开启快速分析
 
         :param is_analysis: The is_analysis of this TagFieldNew.
-        :type: bool
+        :type is_analysis: bool
         """
         self._is_analysis = is_analysis
 
@@ -164,7 +177,7 @@ class TagFieldNew:
         序号，从0开始
 
         :param index: The index of this TagFieldNew.
-        :type: int
+        :type index: int
         """
         self._index = index
 

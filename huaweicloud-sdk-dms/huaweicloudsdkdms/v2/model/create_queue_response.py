@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateQueueResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateQueueResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, kafka_topic=None):
-        """CreateQueueResponse - a model defined in huaweicloud sdk"""
+        """CreateQueueResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 队列ID。
+        :type id: str
+        :param name: 队列的名称。
+        :type name: str
+        :param kafka_topic: 仅Kafka队列才有该响应参数。  使用Kafka SDK时的Kafka topic的ID。
+        :type kafka_topic: str
+        """
         
         super(CreateQueueResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class CreateQueueResponse(SdkResponse):
         队列ID。
 
         :param id: The id of this CreateQueueResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -90,7 +99,7 @@ class CreateQueueResponse(SdkResponse):
         队列的名称。
 
         :param name: The name of this CreateQueueResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -112,7 +121,7 @@ class CreateQueueResponse(SdkResponse):
         仅Kafka队列才有该响应参数。  使用Kafka SDK时的Kafka topic的ID。
 
         :param kafka_topic: The kafka_topic of this CreateQueueResponse.
-        :type: str
+        :type kafka_topic: str
         """
         self._kafka_topic = kafka_topic
 

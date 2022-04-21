@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NovaCreateKeypairResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class NovaCreateKeypairResponse(SdkResponse):
     }
 
     def __init__(self, keypair=None):
-        """NovaCreateKeypairResponse - a model defined in huaweicloud sdk"""
+        """NovaCreateKeypairResponse
+
+        The model defined in huaweicloud sdk
+
+        :param keypair: 
+        :type keypair: :class:`huaweicloudsdkecs.v2.NovaKeypair`
+        """
         
         super(NovaCreateKeypairResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class NovaCreateKeypairResponse(SdkResponse):
 
 
         :return: The keypair of this NovaCreateKeypairResponse.
-        :rtype: NovaKeypair
+        :rtype: :class:`huaweicloudsdkecs.v2.NovaKeypair`
         """
         return self._keypair
 
@@ -56,7 +61,7 @@ class NovaCreateKeypairResponse(SdkResponse):
 
 
         :param keypair: The keypair of this NovaCreateKeypairResponse.
-        :type: NovaKeypair
+        :type keypair: :class:`huaweicloudsdkecs.v2.NovaKeypair`
         """
         self._keypair = keypair
 

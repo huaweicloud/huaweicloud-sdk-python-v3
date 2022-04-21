@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTriggersDetailsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListTriggersDetailsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListTriggersDetailsResponse - a model defined in huaweicloud sdk"""
+        """ListTriggersDetailsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param body: 触发器列表
+        :type body: list[:class:`huaweicloudsdkswr.v2.Trigger`]
+        """
         
         super(ListTriggersDetailsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListTriggersDetailsResponse(SdkResponse):
         触发器列表
 
         :return: The body of this ListTriggersDetailsResponse.
-        :rtype: list[Trigger]
+        :rtype: list[:class:`huaweicloudsdkswr.v2.Trigger`]
         """
         return self._body
 
@@ -58,7 +63,7 @@ class ListTriggersDetailsResponse(SdkResponse):
         触发器列表
 
         :param body: The body of this ListTriggersDetailsResponse.
-        :type: list[Trigger]
+        :type body: list[:class:`huaweicloudsdkswr.v2.Trigger`]
         """
         self._body = body
 

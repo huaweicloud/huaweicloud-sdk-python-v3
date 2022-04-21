@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExportSqlStatementsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ExportSqlStatementsResponse(SdkResponse):
     }
 
     def __init__(self, statements=None, next_marker=None):
-        """ExportSqlStatementsResponse - a model defined in huaweicloud sdk"""
+        """ExportSqlStatementsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param statements: 全量SQL集合。当集合为空时，说明SQL已全部导出。
+        :type statements: list[:class:`huaweicloudsdkdas.v3.FullSql`]
+        :param next_marker: 获取下一页所需的标识符。marker仅在3分钟内有效。
+        :type next_marker: str
+        """
         
         super(ExportSqlStatementsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ExportSqlStatementsResponse(SdkResponse):
         全量SQL集合。当集合为空时，说明SQL已全部导出。
 
         :return: The statements of this ExportSqlStatementsResponse.
-        :rtype: list[FullSql]
+        :rtype: list[:class:`huaweicloudsdkdas.v3.FullSql`]
         """
         return self._statements
 
@@ -63,7 +70,7 @@ class ExportSqlStatementsResponse(SdkResponse):
         全量SQL集合。当集合为空时，说明SQL已全部导出。
 
         :param statements: The statements of this ExportSqlStatementsResponse.
-        :type: list[FullSql]
+        :type statements: list[:class:`huaweicloudsdkdas.v3.FullSql`]
         """
         self._statements = statements
 
@@ -85,7 +92,7 @@ class ExportSqlStatementsResponse(SdkResponse):
         获取下一页所需的标识符。marker仅在3分钟内有效。
 
         :param next_marker: The next_marker of this ExportSqlStatementsResponse.
-        :type: str
+        :type next_marker: str
         """
         self._next_marker = next_marker
 

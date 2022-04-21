@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTemplatesV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListTemplatesV2Response(SdkResponse):
     }
 
     def __init__(self, count=None, invalid_count=None, templates=None):
-        """ListTemplatesV2Response - a model defined in huaweicloud sdk"""
+        """ListTemplatesV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param count: 返回模板的数量。
+        :type count: int
+        :param invalid_count: 返回关联了失效资源的模板数量。
+        :type invalid_count: int
+        :param templates: 返回模板的列表。
+        :type templates: list[:class:`huaweicloudsdkdevstar.v1.TemplateInfo`]
+        """
         
         super(ListTemplatesV2Response, self).__init__()
 
@@ -68,7 +77,7 @@ class ListTemplatesV2Response(SdkResponse):
         返回模板的数量。
 
         :param count: The count of this ListTemplatesV2Response.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -90,7 +99,7 @@ class ListTemplatesV2Response(SdkResponse):
         返回关联了失效资源的模板数量。
 
         :param invalid_count: The invalid_count of this ListTemplatesV2Response.
-        :type: int
+        :type invalid_count: int
         """
         self._invalid_count = invalid_count
 
@@ -101,7 +110,7 @@ class ListTemplatesV2Response(SdkResponse):
         返回模板的列表。
 
         :return: The templates of this ListTemplatesV2Response.
-        :rtype: list[TemplateInfo]
+        :rtype: list[:class:`huaweicloudsdkdevstar.v1.TemplateInfo`]
         """
         return self._templates
 
@@ -112,7 +121,7 @@ class ListTemplatesV2Response(SdkResponse):
         返回模板的列表。
 
         :param templates: The templates of this ListTemplatesV2Response.
-        :type: list[TemplateInfo]
+        :type templates: list[:class:`huaweicloudsdkdevstar.v1.TemplateInfo`]
         """
         self._templates = templates
 

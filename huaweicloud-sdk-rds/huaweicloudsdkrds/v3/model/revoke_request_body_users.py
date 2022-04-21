@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RevokeRequestBodyUsers:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RevokeRequestBodyUsers:
     }
 
     def __init__(self, name=None):
-        """RevokeRequestBodyUsers - a model defined in huaweicloud sdk"""
+        """RevokeRequestBodyUsers
+
+        The model defined in huaweicloud sdk
+
+        :param name: 数据库用户名称。
+        :type name: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class RevokeRequestBodyUsers:
         数据库用户名称。
 
         :param name: The name of this RevokeRequestBodyUsers.
-        :type: str
+        :type name: str
         """
         self._name = name
 

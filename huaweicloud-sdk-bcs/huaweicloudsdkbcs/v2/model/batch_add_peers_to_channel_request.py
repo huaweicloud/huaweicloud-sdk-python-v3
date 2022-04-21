@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchAddPeersToChannelRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchAddPeersToChannelRequest:
     }
 
     def __init__(self, blockchain_id=None, body=None):
-        """BatchAddPeersToChannelRequest - a model defined in huaweicloud sdk"""
+        """BatchAddPeersToChannelRequest
+
+        The model defined in huaweicloud sdk
+
+        :param blockchain_id: bcs 服务id
+        :type blockchain_id: str
+        :param body: Body of the BatchAddPeersToChannelRequest
+        :type body: :class:`huaweicloudsdkbcs.v2.BatchAddPeersToChannelRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class BatchAddPeersToChannelRequest:
         bcs 服务id
 
         :param blockchain_id: The blockchain_id of this BatchAddPeersToChannelRequest.
-        :type: str
+        :type blockchain_id: str
         """
         self._blockchain_id = blockchain_id
 
@@ -72,7 +79,7 @@ class BatchAddPeersToChannelRequest:
 
 
         :return: The body of this BatchAddPeersToChannelRequest.
-        :rtype: BatchAddPeersToChannelRequestBody
+        :rtype: :class:`huaweicloudsdkbcs.v2.BatchAddPeersToChannelRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class BatchAddPeersToChannelRequest:
 
 
         :param body: The body of this BatchAddPeersToChannelRequest.
-        :type: BatchAddPeersToChannelRequestBody
+        :type body: :class:`huaweicloudsdkbcs.v2.BatchAddPeersToChannelRequestBody`
         """
         self._body = body
 

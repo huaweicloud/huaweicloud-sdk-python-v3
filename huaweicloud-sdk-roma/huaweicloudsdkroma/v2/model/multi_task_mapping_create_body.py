@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MultiTaskMappingCreateBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class MultiTaskMappingCreateBody:
     }
 
     def __init__(self, ext_info=None, source_datasource_id=None, target_datasource_id=None, source_columns=None, target_columns=None, source_table=None, target_table=None, mapping_columns=None):
-        """MultiTaskMappingCreateBody - a model defined in huaweicloud sdk"""
+        """MultiTaskMappingCreateBody
+
+        The model defined in huaweicloud sdk
+
+        :param ext_info: 
+        :type ext_info: :class:`huaweicloudsdkroma.v2.MultiTaskInitElementExtInfo`
+        :param source_datasource_id: 源端数据源ID
+        :type source_datasource_id: str
+        :param target_datasource_id: 目标端数据源ID
+        :type target_datasource_id: str
+        :param source_columns: 源端字段列表
+        :type source_columns: list[:class:`huaweicloudsdkroma.v2.MultiTaskColumnInfo`]
+        :param target_columns: 目标端字段列表
+        :type target_columns: list[:class:`huaweicloudsdkroma.v2.MultiTaskColumnInfo`]
+        :param source_table: 源表名
+        :type source_table: str
+        :param target_table: 目标表名
+        :type target_table: str
+        :param mapping_columns: 字段映射列表
+        :type mapping_columns: list[:class:`huaweicloudsdkroma.v2.MappingInfo`]
+        """
         
         
 
@@ -81,7 +100,7 @@ class MultiTaskMappingCreateBody:
 
 
         :return: The ext_info of this MultiTaskMappingCreateBody.
-        :rtype: MultiTaskInitElementExtInfo
+        :rtype: :class:`huaweicloudsdkroma.v2.MultiTaskInitElementExtInfo`
         """
         return self._ext_info
 
@@ -91,7 +110,7 @@ class MultiTaskMappingCreateBody:
 
 
         :param ext_info: The ext_info of this MultiTaskMappingCreateBody.
-        :type: MultiTaskInitElementExtInfo
+        :type ext_info: :class:`huaweicloudsdkroma.v2.MultiTaskInitElementExtInfo`
         """
         self._ext_info = ext_info
 
@@ -113,7 +132,7 @@ class MultiTaskMappingCreateBody:
         源端数据源ID
 
         :param source_datasource_id: The source_datasource_id of this MultiTaskMappingCreateBody.
-        :type: str
+        :type source_datasource_id: str
         """
         self._source_datasource_id = source_datasource_id
 
@@ -135,7 +154,7 @@ class MultiTaskMappingCreateBody:
         目标端数据源ID
 
         :param target_datasource_id: The target_datasource_id of this MultiTaskMappingCreateBody.
-        :type: str
+        :type target_datasource_id: str
         """
         self._target_datasource_id = target_datasource_id
 
@@ -146,7 +165,7 @@ class MultiTaskMappingCreateBody:
         源端字段列表
 
         :return: The source_columns of this MultiTaskMappingCreateBody.
-        :rtype: list[MultiTaskColumnInfo]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.MultiTaskColumnInfo`]
         """
         return self._source_columns
 
@@ -157,7 +176,7 @@ class MultiTaskMappingCreateBody:
         源端字段列表
 
         :param source_columns: The source_columns of this MultiTaskMappingCreateBody.
-        :type: list[MultiTaskColumnInfo]
+        :type source_columns: list[:class:`huaweicloudsdkroma.v2.MultiTaskColumnInfo`]
         """
         self._source_columns = source_columns
 
@@ -168,7 +187,7 @@ class MultiTaskMappingCreateBody:
         目标端字段列表
 
         :return: The target_columns of this MultiTaskMappingCreateBody.
-        :rtype: list[MultiTaskColumnInfo]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.MultiTaskColumnInfo`]
         """
         return self._target_columns
 
@@ -179,7 +198,7 @@ class MultiTaskMappingCreateBody:
         目标端字段列表
 
         :param target_columns: The target_columns of this MultiTaskMappingCreateBody.
-        :type: list[MultiTaskColumnInfo]
+        :type target_columns: list[:class:`huaweicloudsdkroma.v2.MultiTaskColumnInfo`]
         """
         self._target_columns = target_columns
 
@@ -201,7 +220,7 @@ class MultiTaskMappingCreateBody:
         源表名
 
         :param source_table: The source_table of this MultiTaskMappingCreateBody.
-        :type: str
+        :type source_table: str
         """
         self._source_table = source_table
 
@@ -223,7 +242,7 @@ class MultiTaskMappingCreateBody:
         目标表名
 
         :param target_table: The target_table of this MultiTaskMappingCreateBody.
-        :type: str
+        :type target_table: str
         """
         self._target_table = target_table
 
@@ -234,7 +253,7 @@ class MultiTaskMappingCreateBody:
         字段映射列表
 
         :return: The mapping_columns of this MultiTaskMappingCreateBody.
-        :rtype: list[MappingInfo]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.MappingInfo`]
         """
         return self._mapping_columns
 
@@ -245,7 +264,7 @@ class MultiTaskMappingCreateBody:
         字段映射列表
 
         :param mapping_columns: The mapping_columns of this MultiTaskMappingCreateBody.
-        :type: list[MappingInfo]
+        :type mapping_columns: list[:class:`huaweicloudsdkroma.v2.MappingInfo`]
         """
         self._mapping_columns = mapping_columns
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CustomPage:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CustomPage:
     }
 
     def __init__(self, status_code=None, content_type=None, content=None):
-        """CustomPage - a model defined in huaweicloud sdk"""
+        """CustomPage
+
+        The model defined in huaweicloud sdk
+
+        :param status_code: 返回状态码
+        :type status_code: str
+        :param content_type: 页面内容类型
+        :type content_type: str
+        :param content: 页面内容
+        :type content: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class CustomPage:
         返回状态码
 
         :param status_code: The status_code of this CustomPage.
-        :type: str
+        :type status_code: str
         """
         self._status_code = status_code
 
@@ -87,7 +96,7 @@ class CustomPage:
         页面内容类型
 
         :param content_type: The content_type of this CustomPage.
-        :type: str
+        :type content_type: str
         """
         self._content_type = content_type
 
@@ -109,7 +118,7 @@ class CustomPage:
         页面内容
 
         :param content: The content of this CustomPage.
-        :type: str
+        :type content: str
         """
         self._content = content
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListEnterpriseMultiAccountRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListEnterpriseMultiAccountRequest:
     }
 
     def __init__(self, sub_customer_id=None, balance_type=None, offset=None, limit=None):
-        """ListEnterpriseMultiAccountRequest - a model defined in huaweicloud sdk"""
+        """ListEnterpriseMultiAccountRequest
+
+        The model defined in huaweicloud sdk
+
+        :param sub_customer_id: 企业子账户的账号ID。
+        :type sub_customer_id: str
+        :param balance_type: 账户类型：BALANCE_TYPE_DEBIT：余额账户（默认）BALANCE_TYPE_CREDIT：信用账户
+        :type balance_type: str
+        :param offset: 偏移量，默认值为0。只有信用账户有效。
+        :type offset: int
+        :param limit: 每次查询条数，默认值为10。只有信用账户有效。
+        :type limit: int
+        """
         
         
 
@@ -71,7 +82,7 @@ class ListEnterpriseMultiAccountRequest:
         企业子账户的账号ID。
 
         :param sub_customer_id: The sub_customer_id of this ListEnterpriseMultiAccountRequest.
-        :type: str
+        :type sub_customer_id: str
         """
         self._sub_customer_id = sub_customer_id
 
@@ -93,7 +104,7 @@ class ListEnterpriseMultiAccountRequest:
         账户类型：BALANCE_TYPE_DEBIT：余额账户（默认）BALANCE_TYPE_CREDIT：信用账户
 
         :param balance_type: The balance_type of this ListEnterpriseMultiAccountRequest.
-        :type: str
+        :type balance_type: str
         """
         self._balance_type = balance_type
 
@@ -115,7 +126,7 @@ class ListEnterpriseMultiAccountRequest:
         偏移量，默认值为0。只有信用账户有效。
 
         :param offset: The offset of this ListEnterpriseMultiAccountRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -137,7 +148,7 @@ class ListEnterpriseMultiAccountRequest:
         每次查询条数，默认值为10。只有信用账户有效。
 
         :param limit: The limit of this ListEnterpriseMultiAccountRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

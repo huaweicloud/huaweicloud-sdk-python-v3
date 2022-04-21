@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListVpcPeeringsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListVpcPeeringsResponse(SdkResponse):
     }
 
     def __init__(self, peerings=None, peerings_links=None):
-        """ListVpcPeeringsResponse - a model defined in huaweicloud sdk"""
+        """ListVpcPeeringsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param peerings: peering对象列表
+        :type peerings: list[:class:`huaweicloudsdkvpc.v2.VpcPeering`]
+        :param peerings_links: 分页信息
+        :type peerings_links: list[:class:`huaweicloudsdkvpc.v2.NeutronPageLink`]
+        """
         
         super(ListVpcPeeringsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListVpcPeeringsResponse(SdkResponse):
         peering对象列表
 
         :return: The peerings of this ListVpcPeeringsResponse.
-        :rtype: list[VpcPeering]
+        :rtype: list[:class:`huaweicloudsdkvpc.v2.VpcPeering`]
         """
         return self._peerings
 
@@ -63,7 +70,7 @@ class ListVpcPeeringsResponse(SdkResponse):
         peering对象列表
 
         :param peerings: The peerings of this ListVpcPeeringsResponse.
-        :type: list[VpcPeering]
+        :type peerings: list[:class:`huaweicloudsdkvpc.v2.VpcPeering`]
         """
         self._peerings = peerings
 
@@ -74,7 +81,7 @@ class ListVpcPeeringsResponse(SdkResponse):
         分页信息
 
         :return: The peerings_links of this ListVpcPeeringsResponse.
-        :rtype: list[NeutronPageLink]
+        :rtype: list[:class:`huaweicloudsdkvpc.v2.NeutronPageLink`]
         """
         return self._peerings_links
 
@@ -85,7 +92,7 @@ class ListVpcPeeringsResponse(SdkResponse):
         分页信息
 
         :param peerings_links: The peerings_links of this ListVpcPeeringsResponse.
-        :type: list[NeutronPageLink]
+        :type peerings_links: list[:class:`huaweicloudsdkvpc.v2.NeutronPageLink`]
         """
         self._peerings_links = peerings_links
 

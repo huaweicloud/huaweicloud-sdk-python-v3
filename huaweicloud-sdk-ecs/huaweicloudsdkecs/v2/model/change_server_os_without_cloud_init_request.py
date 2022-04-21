@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ChangeServerOsWithoutCloudInitRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ChangeServerOsWithoutCloudInitRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """ChangeServerOsWithoutCloudInitRequest - a model defined in huaweicloud sdk"""
+        """ChangeServerOsWithoutCloudInitRequest
+
+        The model defined in huaweicloud sdk
+
+        :param server_id: 云服务器ID。
+        :type server_id: str
+        :param body: Body of the ChangeServerOsWithoutCloudInitRequest
+        :type body: :class:`huaweicloudsdkecs.v2.ChangeServerOsWithoutCloudInitRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class ChangeServerOsWithoutCloudInitRequest:
         云服务器ID。
 
         :param server_id: The server_id of this ChangeServerOsWithoutCloudInitRequest.
-        :type: str
+        :type server_id: str
         """
         self._server_id = server_id
 
@@ -72,7 +79,7 @@ class ChangeServerOsWithoutCloudInitRequest:
 
 
         :return: The body of this ChangeServerOsWithoutCloudInitRequest.
-        :rtype: ChangeServerOsWithoutCloudInitRequestBody
+        :rtype: :class:`huaweicloudsdkecs.v2.ChangeServerOsWithoutCloudInitRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class ChangeServerOsWithoutCloudInitRequest:
 
 
         :param body: The body of this ChangeServerOsWithoutCloudInitRequest.
-        :type: ChangeServerOsWithoutCloudInitRequestBody
+        :type body: :class:`huaweicloudsdkecs.v2.ChangeServerOsWithoutCloudInitRequestBody`
         """
         self._body = body
 

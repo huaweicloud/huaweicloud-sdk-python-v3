@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowLogBackupRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowLogBackupRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """ShowLogBackupRequest - a model defined in huaweicloud sdk"""
+        """ShowLogBackupRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 指定查询集群ID。
+        :type cluster_id: str
+        :param body: Body of the ShowLogBackupRequest
+        :type body: :class:`huaweicloudsdkcss.v1.GetLogBackupReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class ShowLogBackupRequest:
         指定查询集群ID。
 
         :param cluster_id: The cluster_id of this ShowLogBackupRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -72,7 +79,7 @@ class ShowLogBackupRequest:
 
 
         :return: The body of this ShowLogBackupRequest.
-        :rtype: GetLogBackupReq
+        :rtype: :class:`huaweicloudsdkcss.v1.GetLogBackupReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class ShowLogBackupRequest:
 
 
         :param body: The body of this ShowLogBackupRequest.
-        :type: GetLogBackupReq
+        :type body: :class:`huaweicloudsdkcss.v1.GetLogBackupReq`
         """
         self._body = body
 

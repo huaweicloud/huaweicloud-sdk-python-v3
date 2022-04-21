@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SlideVerifyCodeSendDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class SlideVerifyCodeSendDTO:
     }
 
     def __init__(self, user=None, client_type=None, check_type=None):
-        """SlideVerifyCodeSendDTO - a model defined in huaweicloud sdk"""
+        """SlideVerifyCodeSendDTO
+
+        The model defined in huaweicloud sdk
+
+        :param user: 用户身份信息（手机号码或邮箱账号或用户真实账号） maxLength：255 minLength：1 
+        :type user: str
+        :param client_type: 登录客户端类型。 * 0：Web客户端类型； * 5：cloudlink pc； * 6：cloudlink mobile； * 16：workplace pc 
+        :type client_type: int
+        :param check_type: 校验类型。 * 0：登录； * 1：忘记密码； 默认值：0 
+        :type check_type: int
+        """
         
         
 
@@ -66,7 +75,7 @@ class SlideVerifyCodeSendDTO:
         用户身份信息（手机号码或邮箱账号或用户真实账号） maxLength：255 minLength：1 
 
         :param user: The user of this SlideVerifyCodeSendDTO.
-        :type: str
+        :type user: str
         """
         self._user = user
 
@@ -88,7 +97,7 @@ class SlideVerifyCodeSendDTO:
         登录客户端类型。 * 0：Web客户端类型； * 5：cloudlink pc； * 6：cloudlink mobile； * 16：workplace pc 
 
         :param client_type: The client_type of this SlideVerifyCodeSendDTO.
-        :type: int
+        :type client_type: int
         """
         self._client_type = client_type
 
@@ -110,7 +119,7 @@ class SlideVerifyCodeSendDTO:
         校验类型。 * 0：登录； * 1：忘记密码； 默认值：0 
 
         :param check_type: The check_type of this SlideVerifyCodeSendDTO.
-        :type: int
+        :type check_type: int
         """
         self._check_type = check_type
 

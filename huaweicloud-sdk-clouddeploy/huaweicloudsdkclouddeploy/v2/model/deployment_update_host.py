@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeploymentUpdateHost:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class DeploymentUpdateHost:
     }
 
     def __init__(self, host_name=None, ip=None, port=None, as_proxy=None, proxy_host_id=None, authorization=None, install_icagent=None):
-        """DeploymentUpdateHost - a model defined in huaweicloud sdk"""
+        """DeploymentUpdateHost
+
+        The model defined in huaweicloud sdk
+
+        :param host_name: 主机名称
+        :type host_name: str
+        :param ip: IP，请输入弹性ip格式：161.17.101.12
+        :type ip: str
+        :param port: ssh端口，如：22
+        :type port: int
+        :param as_proxy: 是否为代理机
+        :type as_proxy: bool
+        :param proxy_host_id: 代理机id
+        :type proxy_host_id: str
+        :param authorization: 
+        :type authorization: :class:`huaweicloudsdkclouddeploy.v2.DeploymentHostAuthorizationBody`
+        :param install_icagent: 免费启用应用运维服务（AOM），提供指标监控、日志查询、告警功能（自动安装数据采集器 ICAgent，仅支持华为云linux主机）
+        :type install_icagent: bool
+        """
         
         
 
@@ -83,7 +100,7 @@ class DeploymentUpdateHost:
         主机名称
 
         :param host_name: The host_name of this DeploymentUpdateHost.
-        :type: str
+        :type host_name: str
         """
         self._host_name = host_name
 
@@ -105,7 +122,7 @@ class DeploymentUpdateHost:
         IP，请输入弹性ip格式：161.17.101.12
 
         :param ip: The ip of this DeploymentUpdateHost.
-        :type: str
+        :type ip: str
         """
         self._ip = ip
 
@@ -127,7 +144,7 @@ class DeploymentUpdateHost:
         ssh端口，如：22
 
         :param port: The port of this DeploymentUpdateHost.
-        :type: int
+        :type port: int
         """
         self._port = port
 
@@ -149,7 +166,7 @@ class DeploymentUpdateHost:
         是否为代理机
 
         :param as_proxy: The as_proxy of this DeploymentUpdateHost.
-        :type: bool
+        :type as_proxy: bool
         """
         self._as_proxy = as_proxy
 
@@ -171,7 +188,7 @@ class DeploymentUpdateHost:
         代理机id
 
         :param proxy_host_id: The proxy_host_id of this DeploymentUpdateHost.
-        :type: str
+        :type proxy_host_id: str
         """
         self._proxy_host_id = proxy_host_id
 
@@ -181,7 +198,7 @@ class DeploymentUpdateHost:
 
 
         :return: The authorization of this DeploymentUpdateHost.
-        :rtype: DeploymentHostAuthorizationBody
+        :rtype: :class:`huaweicloudsdkclouddeploy.v2.DeploymentHostAuthorizationBody`
         """
         return self._authorization
 
@@ -191,7 +208,7 @@ class DeploymentUpdateHost:
 
 
         :param authorization: The authorization of this DeploymentUpdateHost.
-        :type: DeploymentHostAuthorizationBody
+        :type authorization: :class:`huaweicloudsdkclouddeploy.v2.DeploymentHostAuthorizationBody`
         """
         self._authorization = authorization
 
@@ -213,7 +230,7 @@ class DeploymentUpdateHost:
         免费启用应用运维服务（AOM），提供指标监控、日志查询、告警功能（自动安装数据采集器 ICAgent，仅支持华为云linux主机）
 
         :param install_icagent: The install_icagent of this DeploymentUpdateHost.
-        :type: bool
+        :type install_icagent: bool
         """
         self._install_icagent = install_icagent
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LoadBalancerStatusListener:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class LoadBalancerStatusListener:
     }
 
     def __init__(self, name=None, provisioning_status=None, pools=None, l7policies=None, id=None, operating_status=None):
-        """LoadBalancerStatusListener - a model defined in huaweicloud sdk"""
+        """LoadBalancerStatusListener
+
+        The model defined in huaweicloud sdk
+
+        :param name: 监听器的名称。
+        :type name: str
+        :param provisioning_status: 监听器的配置状态。取值： - ACTIVE：使用中。
+        :type provisioning_status: str
+        :param pools: 监听器下的后端主机组操作状态。
+        :type pools: list[:class:`huaweicloudsdkelb.v3.LoadBalancerStatusPool`]
+        :param l7policies: 监听器下的7层转发策略操作状态。
+        :type l7policies: list[:class:`huaweicloudsdkelb.v3.LoadBalancerStatusPolicy`]
+        :param id: 监听器ID。
+        :type id: str
+        :param operating_status: 监听器的操作状态。取值：  - ONLINE：创建时默认状态，表示监听器正常运行。  - DEGRADED：   -该监听器下存在l7policy或l7rule的Provisioning_status&#x3D;ERROR时返回这个状态。   -状态树该监听器下存在member的operating_status&#x3D;OFFLINE。 - DISABLED：负载均衡器或监听器的admin_state_up&#x3D;false。 使用说明：  - DEGRADED和DISABLED状态仅在当前接口返回，查询监听器详情等其他接口返回字段operating_status不存在这两个状态值。
+        :type operating_status: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class LoadBalancerStatusListener:
         监听器的名称。
 
         :param name: The name of this LoadBalancerStatusListener.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -105,7 +120,7 @@ class LoadBalancerStatusListener:
         监听器的配置状态。取值： - ACTIVE：使用中。
 
         :param provisioning_status: The provisioning_status of this LoadBalancerStatusListener.
-        :type: str
+        :type provisioning_status: str
         """
         self._provisioning_status = provisioning_status
 
@@ -116,7 +131,7 @@ class LoadBalancerStatusListener:
         监听器下的后端主机组操作状态。
 
         :return: The pools of this LoadBalancerStatusListener.
-        :rtype: list[LoadBalancerStatusPool]
+        :rtype: list[:class:`huaweicloudsdkelb.v3.LoadBalancerStatusPool`]
         """
         return self._pools
 
@@ -127,7 +142,7 @@ class LoadBalancerStatusListener:
         监听器下的后端主机组操作状态。
 
         :param pools: The pools of this LoadBalancerStatusListener.
-        :type: list[LoadBalancerStatusPool]
+        :type pools: list[:class:`huaweicloudsdkelb.v3.LoadBalancerStatusPool`]
         """
         self._pools = pools
 
@@ -138,7 +153,7 @@ class LoadBalancerStatusListener:
         监听器下的7层转发策略操作状态。
 
         :return: The l7policies of this LoadBalancerStatusListener.
-        :rtype: list[LoadBalancerStatusPolicy]
+        :rtype: list[:class:`huaweicloudsdkelb.v3.LoadBalancerStatusPolicy`]
         """
         return self._l7policies
 
@@ -149,7 +164,7 @@ class LoadBalancerStatusListener:
         监听器下的7层转发策略操作状态。
 
         :param l7policies: The l7policies of this LoadBalancerStatusListener.
-        :type: list[LoadBalancerStatusPolicy]
+        :type l7policies: list[:class:`huaweicloudsdkelb.v3.LoadBalancerStatusPolicy`]
         """
         self._l7policies = l7policies
 
@@ -171,7 +186,7 @@ class LoadBalancerStatusListener:
         监听器ID。
 
         :param id: The id of this LoadBalancerStatusListener.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -193,7 +208,7 @@ class LoadBalancerStatusListener:
         监听器的操作状态。取值：  - ONLINE：创建时默认状态，表示监听器正常运行。  - DEGRADED：   -该监听器下存在l7policy或l7rule的Provisioning_status=ERROR时返回这个状态。   -状态树该监听器下存在member的operating_status=OFFLINE。 - DISABLED：负载均衡器或监听器的admin_state_up=false。 使用说明：  - DEGRADED和DISABLED状态仅在当前接口返回，查询监听器详情等其他接口返回字段operating_status不存在这两个状态值。
 
         :param operating_status: The operating_status of this LoadBalancerStatusListener.
-        :type: str
+        :type operating_status: str
         """
         self._operating_status = operating_status
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QuotaInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class QuotaInfo:
     }
 
     def __init__(self, quota_key=None, quota_limit=None, used=None, unit=None):
-        """QuotaInfo - a model defined in huaweicloud sdk"""
+        """QuotaInfo
+
+        The model defined in huaweicloud sdk
+
+        :param quota_key: 资源类型。  取值：loadbalancer、listener、ipgroup、pool、member、members_per_pool、healthmonitor、l7policy、certificate、security_policy，其中members_per_pool表示一个pool下最多可关联的member数量。
+        :type quota_key: str
+        :param quota_limit: 总配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+        :type quota_limit: int
+        :param used: 已使用配额。
+        :type used: int
+        :param unit: 配额单位。 取值：count，表示个数。
+        :type unit: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class QuotaInfo:
         资源类型。  取值：loadbalancer、listener、ipgroup、pool、member、members_per_pool、healthmonitor、l7policy、certificate、security_policy，其中members_per_pool表示一个pool下最多可关联的member数量。
 
         :param quota_key: The quota_key of this QuotaInfo.
-        :type: str
+        :type quota_key: str
         """
         self._quota_key = quota_key
 
@@ -91,7 +102,7 @@ class QuotaInfo:
         总配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
         :param quota_limit: The quota_limit of this QuotaInfo.
-        :type: int
+        :type quota_limit: int
         """
         self._quota_limit = quota_limit
 
@@ -113,7 +124,7 @@ class QuotaInfo:
         已使用配额。
 
         :param used: The used of this QuotaInfo.
-        :type: int
+        :type used: int
         """
         self._used = used
 
@@ -135,7 +146,7 @@ class QuotaInfo:
         配额单位。 取值：count，表示个数。
 
         :param unit: The unit of this QuotaInfo.
-        :type: str
+        :type unit: str
         """
         self._unit = unit
 

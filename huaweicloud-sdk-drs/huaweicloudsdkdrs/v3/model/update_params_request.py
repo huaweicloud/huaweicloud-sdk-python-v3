@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateParamsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateParamsRequest:
     }
 
     def __init__(self, job_id=None, x_language=None, body=None):
-        """UpdateParamsRequest - a model defined in huaweicloud sdk"""
+        """UpdateParamsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 任务ID
+        :type job_id: str
+        :param x_language: 请求语言类型
+        :type x_language: str
+        :param body: Body of the UpdateParamsRequest
+        :type body: :class:`huaweicloudsdkdrs.v3.ModifyTargetParamsReq`
+        """
         
         
 
@@ -67,7 +76,7 @@ class UpdateParamsRequest:
         任务ID
 
         :param job_id: The job_id of this UpdateParamsRequest.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -89,7 +98,7 @@ class UpdateParamsRequest:
         请求语言类型
 
         :param x_language: The x_language of this UpdateParamsRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -99,7 +108,7 @@ class UpdateParamsRequest:
 
 
         :return: The body of this UpdateParamsRequest.
-        :rtype: ModifyTargetParamsReq
+        :rtype: :class:`huaweicloudsdkdrs.v3.ModifyTargetParamsReq`
         """
         return self._body
 
@@ -109,7 +118,7 @@ class UpdateParamsRequest:
 
 
         :param body: The body of this UpdateParamsRequest.
-        :type: ModifyTargetParamsReq
+        :type body: :class:`huaweicloudsdkdrs.v3.ModifyTargetParamsReq`
         """
         self._body = body
 

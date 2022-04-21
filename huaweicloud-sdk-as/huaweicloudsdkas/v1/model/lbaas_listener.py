@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LbaasListener:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class LbaasListener:
     }
 
     def __init__(self, listener_id=None, pool_id=None, protocol_port=None, weight=None):
-        """LbaasListener - a model defined in huaweicloud sdk"""
+        """LbaasListener
+
+        The model defined in huaweicloud sdk
+
+        :param listener_id: 监听器ID。
+        :type listener_id: str
+        :param pool_id: 后端云服务器组ID。
+        :type pool_id: str
+        :param protocol_port: 后端协议端口，指后端云服务器监听的端口。
+        :type protocol_port: int
+        :param weight: 权重，指后端云服务器分发得到请求的数量比例。
+        :type weight: int
+        """
         
         
 
@@ -73,7 +84,7 @@ class LbaasListener:
         监听器ID。
 
         :param listener_id: The listener_id of this LbaasListener.
-        :type: str
+        :type listener_id: str
         """
         self._listener_id = listener_id
 
@@ -95,7 +106,7 @@ class LbaasListener:
         后端云服务器组ID。
 
         :param pool_id: The pool_id of this LbaasListener.
-        :type: str
+        :type pool_id: str
         """
         self._pool_id = pool_id
 
@@ -117,7 +128,7 @@ class LbaasListener:
         后端协议端口，指后端云服务器监听的端口。
 
         :param protocol_port: The protocol_port of this LbaasListener.
-        :type: int
+        :type protocol_port: int
         """
         self._protocol_port = protocol_port
 
@@ -139,7 +150,7 @@ class LbaasListener:
         权重，指后端云服务器分发得到请求的数量比例。
 
         :param weight: The weight of this LbaasListener.
-        :type: int
+        :type weight: int
         """
         self._weight = weight
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowResRecallSetResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowResRecallSetResponse(SdkResponse):
     }
 
     def __init__(self, result_set=None, is_success=None, message=None, error_code=None):
-        """ShowResRecallSetResponse - a model defined in huaweicloud sdk"""
+        """ShowResRecallSetResponse
+
+        The model defined in huaweicloud sdk
+
+        :param result_set: 候选集列表
+        :type result_set: list[:class:`huaweicloudsdkres.v1.ResultSet`]
+        :param is_success: 是否成功
+        :type is_success: bool
+        :param message: 返回消息（请求成功时，不返回此字段）
+        :type message: str
+        :param error_code: 错误码（请求成功时，不返回此字段）
+        :type error_code: str
+        """
         
         super(ShowResRecallSetResponse, self).__init__()
 
@@ -62,7 +73,7 @@ class ShowResRecallSetResponse(SdkResponse):
         候选集列表
 
         :return: The result_set of this ShowResRecallSetResponse.
-        :rtype: list[ResultSet]
+        :rtype: list[:class:`huaweicloudsdkres.v1.ResultSet`]
         """
         return self._result_set
 
@@ -73,7 +84,7 @@ class ShowResRecallSetResponse(SdkResponse):
         候选集列表
 
         :param result_set: The result_set of this ShowResRecallSetResponse.
-        :type: list[ResultSet]
+        :type result_set: list[:class:`huaweicloudsdkres.v1.ResultSet`]
         """
         self._result_set = result_set
 
@@ -95,7 +106,7 @@ class ShowResRecallSetResponse(SdkResponse):
         是否成功
 
         :param is_success: The is_success of this ShowResRecallSetResponse.
-        :type: bool
+        :type is_success: bool
         """
         self._is_success = is_success
 
@@ -117,7 +128,7 @@ class ShowResRecallSetResponse(SdkResponse):
         返回消息（请求成功时，不返回此字段）
 
         :param message: The message of this ShowResRecallSetResponse.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -139,7 +150,7 @@ class ShowResRecallSetResponse(SdkResponse):
         错误码（请求成功时，不返回此字段）
 
         :param error_code: The error_code of this ShowResRecallSetResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 

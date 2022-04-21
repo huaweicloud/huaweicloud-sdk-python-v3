@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SqlserverRevokeRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class SqlserverRevokeRequest:
     }
 
     def __init__(self, db_name=None, users=None):
-        """SqlserverRevokeRequest - a model defined in huaweicloud sdk"""
+        """SqlserverRevokeRequest
+
+        The model defined in huaweicloud sdk
+
+        :param db_name: 数据库名称。
+        :type db_name: str
+        :param users: 每个元素都是与数据库相关联的帐号。单次请求最多支持50个元素。
+        :type users: list[:class:`huaweicloudsdkrds.v3.SqlserverUserWithPrivilege`]
+        """
         
         
 
@@ -61,7 +68,7 @@ class SqlserverRevokeRequest:
         数据库名称。
 
         :param db_name: The db_name of this SqlserverRevokeRequest.
-        :type: str
+        :type db_name: str
         """
         self._db_name = db_name
 
@@ -72,7 +79,7 @@ class SqlserverRevokeRequest:
         每个元素都是与数据库相关联的帐号。单次请求最多支持50个元素。
 
         :return: The users of this SqlserverRevokeRequest.
-        :rtype: list[SqlserverUserWithPrivilege]
+        :rtype: list[:class:`huaweicloudsdkrds.v3.SqlserverUserWithPrivilege`]
         """
         return self._users
 
@@ -83,7 +90,7 @@ class SqlserverRevokeRequest:
         每个元素都是与数据库相关联的帐号。单次请求最多支持50个元素。
 
         :param users: The users of this SqlserverRevokeRequest.
-        :type: list[SqlserverUserWithPrivilege]
+        :type users: list[:class:`huaweicloudsdkrds.v3.SqlserverUserWithPrivilege`]
         """
         self._users = users
 

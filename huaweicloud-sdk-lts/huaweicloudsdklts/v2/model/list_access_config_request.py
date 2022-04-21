@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAccessConfigRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListAccessConfigRequest:
     }
 
     def __init__(self, body=None):
-        """ListAccessConfigRequest - a model defined in huaweicloud sdk"""
+        """ListAccessConfigRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the ListAccessConfigRequest
+        :type body: :class:`huaweicloudsdklts.v2.GetAccessConfigListRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class ListAccessConfigRequest:
 
 
         :return: The body of this ListAccessConfigRequest.
-        :rtype: GetAccessConfigListRequestBody
+        :rtype: :class:`huaweicloudsdklts.v2.GetAccessConfigListRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class ListAccessConfigRequest:
 
 
         :param body: The body of this ListAccessConfigRequest.
-        :type: GetAccessConfigListRequestBody
+        :type body: :class:`huaweicloudsdklts.v2.GetAccessConfigListRequestBody`
         """
         self._body = body
 

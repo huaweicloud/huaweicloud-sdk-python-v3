@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPoliciesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListPoliciesResponse(SdkResponse):
     }
 
     def __init__(self, policies=None, count=None):
-        """ListPoliciesResponse - a model defined in huaweicloud sdk"""
+        """ListPoliciesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param policies: 
+        :type policies: list[:class:`huaweicloudsdkcbr.v1.Policy`]
+        :param count: 策略总数
+        :type count: int
+        """
         
         super(ListPoliciesResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListPoliciesResponse(SdkResponse):
         
 
         :return: The policies of this ListPoliciesResponse.
-        :rtype: list[Policy]
+        :rtype: list[:class:`huaweicloudsdkcbr.v1.Policy`]
         """
         return self._policies
 
@@ -63,7 +70,7 @@ class ListPoliciesResponse(SdkResponse):
         
 
         :param policies: The policies of this ListPoliciesResponse.
-        :type: list[Policy]
+        :type policies: list[:class:`huaweicloudsdkcbr.v1.Policy`]
         """
         self._policies = policies
 
@@ -85,7 +92,7 @@ class ListPoliciesResponse(SdkResponse):
         策略总数
 
         :param count: The count of this ListPoliciesResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

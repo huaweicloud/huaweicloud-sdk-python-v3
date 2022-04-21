@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowVocabularyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ShowVocabularyResponse(SdkResponse):
     }
 
     def __init__(self, vocabulary_id=None, name=None, description=None, language=None, contents=None):
-        """ShowVocabularyResponse - a model defined in huaweicloud sdk"""
+        """ShowVocabularyResponse
+
+        The model defined in huaweicloud sdk
+
+        :param vocabulary_id: 调用成功返回热词表ID，调用失败时无此字段。
+        :type vocabulary_id: str
+        :param name: 调用成功返回热词表名，调用失败时无此字段。
+        :type name: str
+        :param description: 调用成功返回热词表描述，调用失败时无此字段。
+        :type description: str
+        :param language: 调用成功返回热词表语言类型，调用失败时无此字段。
+        :type language: str
+        :param contents: 调用成功返回热词列表，调用失败时无此字段。
+        :type contents: list[str]
+        """
         
         super(ShowVocabularyResponse, self).__init__()
 
@@ -78,7 +91,7 @@ class ShowVocabularyResponse(SdkResponse):
         调用成功返回热词表ID，调用失败时无此字段。
 
         :param vocabulary_id: The vocabulary_id of this ShowVocabularyResponse.
-        :type: str
+        :type vocabulary_id: str
         """
         self._vocabulary_id = vocabulary_id
 
@@ -100,7 +113,7 @@ class ShowVocabularyResponse(SdkResponse):
         调用成功返回热词表名，调用失败时无此字段。
 
         :param name: The name of this ShowVocabularyResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -122,7 +135,7 @@ class ShowVocabularyResponse(SdkResponse):
         调用成功返回热词表描述，调用失败时无此字段。
 
         :param description: The description of this ShowVocabularyResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -144,7 +157,7 @@ class ShowVocabularyResponse(SdkResponse):
         调用成功返回热词表语言类型，调用失败时无此字段。
 
         :param language: The language of this ShowVocabularyResponse.
-        :type: str
+        :type language: str
         """
         self._language = language
 
@@ -166,7 +179,7 @@ class ShowVocabularyResponse(SdkResponse):
         调用成功返回热词列表，调用失败时无此字段。
 
         :param contents: The contents of this ShowVocabularyResponse.
-        :type: list[str]
+        :type contents: list[str]
         """
         self._contents = contents
 

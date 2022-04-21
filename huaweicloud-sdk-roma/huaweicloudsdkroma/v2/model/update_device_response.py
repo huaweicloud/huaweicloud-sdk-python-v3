@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDeviceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -92,7 +91,75 @@ class UpdateDeviceResponse(SdkResponse):
     }
 
     def __init__(self, permissions=None, id=None, parent_device_id=None, parent_device_name=None, product=None, device_name=None, instance_id=None, client_id=None, node_id=None, app_name=None, status=None, online_status=None, description=None, authentication=None, created_user=None, last_updated_user=None, tags=None, created_datetime=None, last_updated_datetime=None, connect_address=None, ssl_connect_address=None, ipv6_connect_address=None, ipv6_ssl_connect_address=None, last_login_datetime=None, node_type=None, device_type=None, client_ip=None, keep_alive=None, last_active_time=None, version=None, plugin_id=None, app_id=None):
-        """UpdateDeviceResponse - a model defined in huaweicloud sdk"""
+        """UpdateDeviceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param permissions: 权限
+        :type permissions: list[str]
+        :param id: 设备ID
+        :type id: int
+        :param parent_device_id: 父设备ID
+        :type parent_device_id: int
+        :param parent_device_name: 父设备名称
+        :type parent_device_name: str
+        :param product: 
+        :type product: :class:`huaweicloudsdkroma.v2.ProductReferer`
+        :param device_name: 设备名称，支持中文、中文标点符号（）。；，：“”、？《》及英文大小写、数字及英文符号()_,#.?&#39;-@%&amp;!, 长度2-64
+        :type device_name: str
+        :param instance_id: 实例id
+        :type instance_id: str
+        :param client_id: 设备客户端ID，平台生成的设备唯一标识
+        :type client_id: str
+        :param node_id: 设备物理编号，通常使用MAC或者IMEI号，支持英文大小写，数字，下划线和中划线，长度2-64
+        :type node_id: str
+        :param app_name: 应用名称
+        :type app_name: str
+        :param status: 设备状态 0-启用 1-禁用
+        :type status: int
+        :param online_status: 是否在线 0-未连接 1-在线 2-离线
+        :type online_status: int
+        :param description: 备注
+        :type description: str
+        :param authentication: 
+        :type authentication: :class:`huaweicloudsdkroma.v2.Authentication`
+        :param created_user: 
+        :type created_user: :class:`huaweicloudsdkroma.v2.CreatedUser`
+        :param last_updated_user: 
+        :type last_updated_user: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
+        :param tags: 标签
+        :type tags: list[str]
+        :param created_datetime: 创建时间，timestamp(ms)，使用UTC时区
+        :type created_datetime: int
+        :param last_updated_datetime: 最后修改时间，timestamp(ms)，使用UTC时区
+        :type last_updated_datetime: int
+        :param connect_address: 设备接入地址
+        :type connect_address: str
+        :param ssl_connect_address: 设备接入SSL地址
+        :type ssl_connect_address: str
+        :param ipv6_connect_address: 设备接入IPV6地址
+        :type ipv6_connect_address: str
+        :param ipv6_ssl_connect_address: 设备接入IPV6 SSL地址
+        :type ipv6_ssl_connect_address: str
+        :param last_login_datetime: 最后登录时间
+        :type last_login_datetime: int
+        :param node_type: 节点类型 0-直连 1-网关 2-子设备
+        :type node_type: int
+        :param device_type: 设备类型&lt;br&gt;0-普通设备（无子设备也无父设备）&lt;br&gt;1-网关设备(可挂载子设备)&lt;br&gt;2-子设备(归属于某个网关设备)
+        :type device_type: int
+        :param client_ip: 客户端ip
+        :type client_ip: str
+        :param keep_alive: 心跳时间
+        :type keep_alive: str
+        :param last_active_time: 最后登录时间
+        :type last_active_time: int
+        :param version: 设备版本
+        :type version: str
+        :param plugin_id: modbus和opcua设备特有,表示设备所属产品的类型 0-普通产品 1-modbus网关产品 2-opcua网关产品
+        :type plugin_id: int
+        :param app_id: 应用ID
+        :type app_id: str
+        """
         
         super(UpdateDeviceResponse, self).__init__()
 
@@ -213,7 +280,7 @@ class UpdateDeviceResponse(SdkResponse):
         权限
 
         :param permissions: The permissions of this UpdateDeviceResponse.
-        :type: list[str]
+        :type permissions: list[str]
         """
         self._permissions = permissions
 
@@ -235,7 +302,7 @@ class UpdateDeviceResponse(SdkResponse):
         设备ID
 
         :param id: The id of this UpdateDeviceResponse.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -257,7 +324,7 @@ class UpdateDeviceResponse(SdkResponse):
         父设备ID
 
         :param parent_device_id: The parent_device_id of this UpdateDeviceResponse.
-        :type: int
+        :type parent_device_id: int
         """
         self._parent_device_id = parent_device_id
 
@@ -279,7 +346,7 @@ class UpdateDeviceResponse(SdkResponse):
         父设备名称
 
         :param parent_device_name: The parent_device_name of this UpdateDeviceResponse.
-        :type: str
+        :type parent_device_name: str
         """
         self._parent_device_name = parent_device_name
 
@@ -289,7 +356,7 @@ class UpdateDeviceResponse(SdkResponse):
 
 
         :return: The product of this UpdateDeviceResponse.
-        :rtype: ProductReferer
+        :rtype: :class:`huaweicloudsdkroma.v2.ProductReferer`
         """
         return self._product
 
@@ -299,7 +366,7 @@ class UpdateDeviceResponse(SdkResponse):
 
 
         :param product: The product of this UpdateDeviceResponse.
-        :type: ProductReferer
+        :type product: :class:`huaweicloudsdkroma.v2.ProductReferer`
         """
         self._product = product
 
@@ -321,7 +388,7 @@ class UpdateDeviceResponse(SdkResponse):
         设备名称，支持中文、中文标点符号（）。；，：“”、？《》及英文大小写、数字及英文符号()_,#.?'-@%&!, 长度2-64
 
         :param device_name: The device_name of this UpdateDeviceResponse.
-        :type: str
+        :type device_name: str
         """
         self._device_name = device_name
 
@@ -343,7 +410,7 @@ class UpdateDeviceResponse(SdkResponse):
         实例id
 
         :param instance_id: The instance_id of this UpdateDeviceResponse.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -365,7 +432,7 @@ class UpdateDeviceResponse(SdkResponse):
         设备客户端ID，平台生成的设备唯一标识
 
         :param client_id: The client_id of this UpdateDeviceResponse.
-        :type: str
+        :type client_id: str
         """
         self._client_id = client_id
 
@@ -387,7 +454,7 @@ class UpdateDeviceResponse(SdkResponse):
         设备物理编号，通常使用MAC或者IMEI号，支持英文大小写，数字，下划线和中划线，长度2-64
 
         :param node_id: The node_id of this UpdateDeviceResponse.
-        :type: str
+        :type node_id: str
         """
         self._node_id = node_id
 
@@ -409,7 +476,7 @@ class UpdateDeviceResponse(SdkResponse):
         应用名称
 
         :param app_name: The app_name of this UpdateDeviceResponse.
-        :type: str
+        :type app_name: str
         """
         self._app_name = app_name
 
@@ -431,7 +498,7 @@ class UpdateDeviceResponse(SdkResponse):
         设备状态 0-启用 1-禁用
 
         :param status: The status of this UpdateDeviceResponse.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -453,7 +520,7 @@ class UpdateDeviceResponse(SdkResponse):
         是否在线 0-未连接 1-在线 2-离线
 
         :param online_status: The online_status of this UpdateDeviceResponse.
-        :type: int
+        :type online_status: int
         """
         self._online_status = online_status
 
@@ -475,7 +542,7 @@ class UpdateDeviceResponse(SdkResponse):
         备注
 
         :param description: The description of this UpdateDeviceResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -485,7 +552,7 @@ class UpdateDeviceResponse(SdkResponse):
 
 
         :return: The authentication of this UpdateDeviceResponse.
-        :rtype: Authentication
+        :rtype: :class:`huaweicloudsdkroma.v2.Authentication`
         """
         return self._authentication
 
@@ -495,7 +562,7 @@ class UpdateDeviceResponse(SdkResponse):
 
 
         :param authentication: The authentication of this UpdateDeviceResponse.
-        :type: Authentication
+        :type authentication: :class:`huaweicloudsdkroma.v2.Authentication`
         """
         self._authentication = authentication
 
@@ -505,7 +572,7 @@ class UpdateDeviceResponse(SdkResponse):
 
 
         :return: The created_user of this UpdateDeviceResponse.
-        :rtype: CreatedUser
+        :rtype: :class:`huaweicloudsdkroma.v2.CreatedUser`
         """
         return self._created_user
 
@@ -515,7 +582,7 @@ class UpdateDeviceResponse(SdkResponse):
 
 
         :param created_user: The created_user of this UpdateDeviceResponse.
-        :type: CreatedUser
+        :type created_user: :class:`huaweicloudsdkroma.v2.CreatedUser`
         """
         self._created_user = created_user
 
@@ -525,7 +592,7 @@ class UpdateDeviceResponse(SdkResponse):
 
 
         :return: The last_updated_user of this UpdateDeviceResponse.
-        :rtype: LastUpdatedUser
+        :rtype: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
         """
         return self._last_updated_user
 
@@ -535,7 +602,7 @@ class UpdateDeviceResponse(SdkResponse):
 
 
         :param last_updated_user: The last_updated_user of this UpdateDeviceResponse.
-        :type: LastUpdatedUser
+        :type last_updated_user: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
         """
         self._last_updated_user = last_updated_user
 
@@ -557,7 +624,7 @@ class UpdateDeviceResponse(SdkResponse):
         标签
 
         :param tags: The tags of this UpdateDeviceResponse.
-        :type: list[str]
+        :type tags: list[str]
         """
         self._tags = tags
 
@@ -579,7 +646,7 @@ class UpdateDeviceResponse(SdkResponse):
         创建时间，timestamp(ms)，使用UTC时区
 
         :param created_datetime: The created_datetime of this UpdateDeviceResponse.
-        :type: int
+        :type created_datetime: int
         """
         self._created_datetime = created_datetime
 
@@ -601,7 +668,7 @@ class UpdateDeviceResponse(SdkResponse):
         最后修改时间，timestamp(ms)，使用UTC时区
 
         :param last_updated_datetime: The last_updated_datetime of this UpdateDeviceResponse.
-        :type: int
+        :type last_updated_datetime: int
         """
         self._last_updated_datetime = last_updated_datetime
 
@@ -623,7 +690,7 @@ class UpdateDeviceResponse(SdkResponse):
         设备接入地址
 
         :param connect_address: The connect_address of this UpdateDeviceResponse.
-        :type: str
+        :type connect_address: str
         """
         self._connect_address = connect_address
 
@@ -645,7 +712,7 @@ class UpdateDeviceResponse(SdkResponse):
         设备接入SSL地址
 
         :param ssl_connect_address: The ssl_connect_address of this UpdateDeviceResponse.
-        :type: str
+        :type ssl_connect_address: str
         """
         self._ssl_connect_address = ssl_connect_address
 
@@ -667,7 +734,7 @@ class UpdateDeviceResponse(SdkResponse):
         设备接入IPV6地址
 
         :param ipv6_connect_address: The ipv6_connect_address of this UpdateDeviceResponse.
-        :type: str
+        :type ipv6_connect_address: str
         """
         self._ipv6_connect_address = ipv6_connect_address
 
@@ -689,7 +756,7 @@ class UpdateDeviceResponse(SdkResponse):
         设备接入IPV6 SSL地址
 
         :param ipv6_ssl_connect_address: The ipv6_ssl_connect_address of this UpdateDeviceResponse.
-        :type: str
+        :type ipv6_ssl_connect_address: str
         """
         self._ipv6_ssl_connect_address = ipv6_ssl_connect_address
 
@@ -711,7 +778,7 @@ class UpdateDeviceResponse(SdkResponse):
         最后登录时间
 
         :param last_login_datetime: The last_login_datetime of this UpdateDeviceResponse.
-        :type: int
+        :type last_login_datetime: int
         """
         self._last_login_datetime = last_login_datetime
 
@@ -733,7 +800,7 @@ class UpdateDeviceResponse(SdkResponse):
         节点类型 0-直连 1-网关 2-子设备
 
         :param node_type: The node_type of this UpdateDeviceResponse.
-        :type: int
+        :type node_type: int
         """
         self._node_type = node_type
 
@@ -755,7 +822,7 @@ class UpdateDeviceResponse(SdkResponse):
         设备类型<br>0-普通设备（无子设备也无父设备）<br>1-网关设备(可挂载子设备)<br>2-子设备(归属于某个网关设备)
 
         :param device_type: The device_type of this UpdateDeviceResponse.
-        :type: int
+        :type device_type: int
         """
         self._device_type = device_type
 
@@ -777,7 +844,7 @@ class UpdateDeviceResponse(SdkResponse):
         客户端ip
 
         :param client_ip: The client_ip of this UpdateDeviceResponse.
-        :type: str
+        :type client_ip: str
         """
         self._client_ip = client_ip
 
@@ -799,7 +866,7 @@ class UpdateDeviceResponse(SdkResponse):
         心跳时间
 
         :param keep_alive: The keep_alive of this UpdateDeviceResponse.
-        :type: str
+        :type keep_alive: str
         """
         self._keep_alive = keep_alive
 
@@ -821,7 +888,7 @@ class UpdateDeviceResponse(SdkResponse):
         最后登录时间
 
         :param last_active_time: The last_active_time of this UpdateDeviceResponse.
-        :type: int
+        :type last_active_time: int
         """
         self._last_active_time = last_active_time
 
@@ -843,7 +910,7 @@ class UpdateDeviceResponse(SdkResponse):
         设备版本
 
         :param version: The version of this UpdateDeviceResponse.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -865,7 +932,7 @@ class UpdateDeviceResponse(SdkResponse):
         modbus和opcua设备特有,表示设备所属产品的类型 0-普通产品 1-modbus网关产品 2-opcua网关产品
 
         :param plugin_id: The plugin_id of this UpdateDeviceResponse.
-        :type: int
+        :type plugin_id: int
         """
         self._plugin_id = plugin_id
 
@@ -887,7 +954,7 @@ class UpdateDeviceResponse(SdkResponse):
         应用ID
 
         :param app_id: The app_id of this UpdateDeviceResponse.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 

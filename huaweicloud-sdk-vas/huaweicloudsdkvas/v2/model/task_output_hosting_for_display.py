@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TaskOutputHostingForDisplay:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class TaskOutputHostingForDisplay:
     }
 
     def __init__(self, obs=None, result_json_overdue_at=None, data_category=None):
-        """TaskOutputHostingForDisplay - a model defined in huaweicloud sdk"""
+        """TaskOutputHostingForDisplay
+
+        The model defined in huaweicloud sdk
+
+        :param obs: 作业所有结果文件所在的OBS桶和路径
+        :type obs: list[:class:`huaweicloudsdkvas.v2.TaskOutputHostingForDisplayObs`]
+        :param result_json_overdue_at: 作业结果文件的过期时间
+        :type result_json_overdue_at: int
+        :param data_category: 作业输出数据类别的列表，当输出类型下有这个列表时，表示希望这个输出类型下存放dataCategory列表内的数据，部分服务需要
+        :type data_category: list[str]
+        """
         
         
 
@@ -57,7 +66,7 @@ class TaskOutputHostingForDisplay:
         作业所有结果文件所在的OBS桶和路径
 
         :return: The obs of this TaskOutputHostingForDisplay.
-        :rtype: list[TaskOutputHostingForDisplayObs]
+        :rtype: list[:class:`huaweicloudsdkvas.v2.TaskOutputHostingForDisplayObs`]
         """
         return self._obs
 
@@ -68,7 +77,7 @@ class TaskOutputHostingForDisplay:
         作业所有结果文件所在的OBS桶和路径
 
         :param obs: The obs of this TaskOutputHostingForDisplay.
-        :type: list[TaskOutputHostingForDisplayObs]
+        :type obs: list[:class:`huaweicloudsdkvas.v2.TaskOutputHostingForDisplayObs`]
         """
         self._obs = obs
 
@@ -90,7 +99,7 @@ class TaskOutputHostingForDisplay:
         作业结果文件的过期时间
 
         :param result_json_overdue_at: The result_json_overdue_at of this TaskOutputHostingForDisplay.
-        :type: int
+        :type result_json_overdue_at: int
         """
         self._result_json_overdue_at = result_json_overdue_at
 
@@ -112,7 +121,7 @@ class TaskOutputHostingForDisplay:
         作业输出数据类别的列表，当输出类型下有这个列表时，表示希望这个输出类型下存放dataCategory列表内的数据，部分服务需要
 
         :param data_category: The data_category of this TaskOutputHostingForDisplay.
-        :type: list[str]
+        :type data_category: list[str]
         """
         self._data_category = data_category
 

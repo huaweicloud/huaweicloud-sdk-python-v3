@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BachTags:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BachTags:
     }
 
     def __init__(self, tags=None, action=None):
-        """BachTags - a model defined in huaweicloud sdk"""
+        """BachTags
+
+        The model defined in huaweicloud sdk
+
+        :param tags: 标签列表
+        :type tags: list[:class:`huaweicloudsdkief.v1.ResourceTag`]
+        :param action: 操作标识：仅限于create（创建）、delete（删除）
+        :type action: str
+        """
         
         
 
@@ -51,7 +58,7 @@ class BachTags:
         标签列表
 
         :return: The tags of this BachTags.
-        :rtype: list[ResourceTag]
+        :rtype: list[:class:`huaweicloudsdkief.v1.ResourceTag`]
         """
         return self._tags
 
@@ -62,7 +69,7 @@ class BachTags:
         标签列表
 
         :param tags: The tags of this BachTags.
-        :type: list[ResourceTag]
+        :type tags: list[:class:`huaweicloudsdkief.v1.ResourceTag`]
         """
         self._tags = tags
 
@@ -84,7 +91,7 @@ class BachTags:
         操作标识：仅限于create（创建）、delete（删除）
 
         :param action: The action of this BachTags.
-        :type: str
+        :type action: str
         """
         self._action = action
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateLoginProtectResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateLoginProtectResponse(SdkResponse):
     }
 
     def __init__(self, login_protect=None):
-        """UpdateLoginProtectResponse - a model defined in huaweicloud sdk"""
+        """UpdateLoginProtectResponse
+
+        The model defined in huaweicloud sdk
+
+        :param login_protect: 
+        :type login_protect: :class:`huaweicloudsdkiam.v3.UpdateLoginProtectRespon`
+        """
         
         super(UpdateLoginProtectResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class UpdateLoginProtectResponse(SdkResponse):
 
 
         :return: The login_protect of this UpdateLoginProtectResponse.
-        :rtype: UpdateLoginProtectRespon
+        :rtype: :class:`huaweicloudsdkiam.v3.UpdateLoginProtectRespon`
         """
         return self._login_protect
 
@@ -56,7 +61,7 @@ class UpdateLoginProtectResponse(SdkResponse):
 
 
         :param login_protect: The login_protect of this UpdateLoginProtectResponse.
-        :type: UpdateLoginProtectRespon
+        :type login_protect: :class:`huaweicloudsdkiam.v3.UpdateLoginProtectRespon`
         """
         self._login_protect = login_protect
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddSubsetsToGatewayRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class AddSubsetsToGatewayRequest:
     }
 
     def __init__(self, instance_id=None, device_id=None, body=None):
-        """AddSubsetsToGatewayRequest - a model defined in huaweicloud sdk"""
+        """AddSubsetsToGatewayRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param device_id: 设备ID
+        :type device_id: int
+        :param body: Body of the AddSubsetsToGatewayRequest
+        :type body: :class:`huaweicloudsdkroma.v2.AddSubsetsToGatewayRequestBody`
+        """
         
         
 
@@ -66,7 +75,7 @@ class AddSubsetsToGatewayRequest:
         实例ID
 
         :param instance_id: The instance_id of this AddSubsetsToGatewayRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -88,7 +97,7 @@ class AddSubsetsToGatewayRequest:
         设备ID
 
         :param device_id: The device_id of this AddSubsetsToGatewayRequest.
-        :type: int
+        :type device_id: int
         """
         self._device_id = device_id
 
@@ -98,7 +107,7 @@ class AddSubsetsToGatewayRequest:
 
 
         :return: The body of this AddSubsetsToGatewayRequest.
-        :rtype: AddSubsetsToGatewayRequestBody
+        :rtype: :class:`huaweicloudsdkroma.v2.AddSubsetsToGatewayRequestBody`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class AddSubsetsToGatewayRequest:
 
 
         :param body: The body of this AddSubsetsToGatewayRequest.
-        :type: AddSubsetsToGatewayRequestBody
+        :type body: :class:`huaweicloudsdkroma.v2.AddSubsetsToGatewayRequestBody`
         """
         self._body = body
 

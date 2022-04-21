@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CaseRealtionInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CaseRealtionInfo:
     }
 
     def __init__(self, case_id=None, simple_description=None, user_name=None):
-        """CaseRealtionInfo - a model defined in huaweicloud sdk"""
+        """CaseRealtionInfo
+
+        The model defined in huaweicloud sdk
+
+        :param case_id: 工单id
+        :type case_id: str
+        :param simple_description: 简要描述
+        :type simple_description: str
+        :param user_name: 提交人，即用户名称
+        :type user_name: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class CaseRealtionInfo:
         工单id
 
         :param case_id: The case_id of this CaseRealtionInfo.
-        :type: str
+        :type case_id: str
         """
         self._case_id = case_id
 
@@ -90,7 +99,7 @@ class CaseRealtionInfo:
         简要描述
 
         :param simple_description: The simple_description of this CaseRealtionInfo.
-        :type: str
+        :type simple_description: str
         """
         self._simple_description = simple_description
 
@@ -112,7 +121,7 @@ class CaseRealtionInfo:
         提交人，即用户名称
 
         :param user_name: The user_name of this CaseRealtionInfo.
-        :type: str
+        :type user_name: str
         """
         self._user_name = user_name
 

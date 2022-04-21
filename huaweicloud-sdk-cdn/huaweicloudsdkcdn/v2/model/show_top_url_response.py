@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowTopUrlResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowTopUrlResponse(SdkResponse):
     }
 
     def __init__(self, service_area=None, top_url_summary=None):
-        """ShowTopUrlResponse - a model defined in huaweicloud sdk"""
+        """ShowTopUrlResponse
+
+        The model defined in huaweicloud sdk
+
+        :param service_area: 服务区域
+        :type service_area: str
+        :param top_url_summary: 详情数据对象。
+        :type top_url_summary: list[dict(str, object)]
+        """
         
         super(ShowTopUrlResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ShowTopUrlResponse(SdkResponse):
         服务区域
 
         :param service_area: The service_area of this ShowTopUrlResponse.
-        :type: str
+        :type service_area: str
         """
         self._service_area = service_area
 
@@ -85,7 +92,7 @@ class ShowTopUrlResponse(SdkResponse):
         详情数据对象。
 
         :param top_url_summary: The top_url_summary of this ShowTopUrlResponse.
-        :type: list[dict(str, object)]
+        :type top_url_summary: list[dict(str, object)]
         """
         self._top_url_summary = top_url_summary
 

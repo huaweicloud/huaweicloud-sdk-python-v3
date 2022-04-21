@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Schedule:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class Schedule:
     }
 
     def __init__(self, sche_type=None, cron=None, event=None):
-        """Schedule - a model defined in huaweicloud sdk"""
+        """Schedule
+
+        The model defined in huaweicloud sdk
+
+        :param sche_type: 
+        :type sche_type: str
+        :param cron: 
+        :type cron: :class:`huaweicloudsdkdgc.v1.Cron`
+        :param event: 
+        :type event: :class:`huaweicloudsdkdgc.v1.Event`
+        """
         
         
 
@@ -66,7 +75,7 @@ class Schedule:
 
 
         :param sche_type: The sche_type of this Schedule.
-        :type: str
+        :type sche_type: str
         """
         self._sche_type = sche_type
 
@@ -76,7 +85,7 @@ class Schedule:
 
 
         :return: The cron of this Schedule.
-        :rtype: Cron
+        :rtype: :class:`huaweicloudsdkdgc.v1.Cron`
         """
         return self._cron
 
@@ -86,7 +95,7 @@ class Schedule:
 
 
         :param cron: The cron of this Schedule.
-        :type: Cron
+        :type cron: :class:`huaweicloudsdkdgc.v1.Cron`
         """
         self._cron = cron
 
@@ -96,7 +105,7 @@ class Schedule:
 
 
         :return: The event of this Schedule.
-        :rtype: Event
+        :rtype: :class:`huaweicloudsdkdgc.v1.Event`
         """
         return self._event
 
@@ -106,7 +115,7 @@ class Schedule:
 
 
         :param event: The event of this Schedule.
-        :type: Event
+        :type event: :class:`huaweicloudsdkdgc.v1.Event`
         """
         self._event = event
 

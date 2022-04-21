@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchCreateChannelsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchCreateChannelsRequest:
     }
 
     def __init__(self, blockchain_id=None, body=None):
-        """BatchCreateChannelsRequest - a model defined in huaweicloud sdk"""
+        """BatchCreateChannelsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param blockchain_id: bcs 服务id
+        :type blockchain_id: str
+        :param body: Body of the BatchCreateChannelsRequest
+        :type body: :class:`huaweicloudsdkbcs.v2.BatchCreateChannelsRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class BatchCreateChannelsRequest:
         bcs 服务id
 
         :param blockchain_id: The blockchain_id of this BatchCreateChannelsRequest.
-        :type: str
+        :type blockchain_id: str
         """
         self._blockchain_id = blockchain_id
 
@@ -72,7 +79,7 @@ class BatchCreateChannelsRequest:
 
 
         :return: The body of this BatchCreateChannelsRequest.
-        :rtype: BatchCreateChannelsRequestBody
+        :rtype: :class:`huaweicloudsdkbcs.v2.BatchCreateChannelsRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class BatchCreateChannelsRequest:
 
 
         :param body: The body of this BatchCreateChannelsRequest.
-        :type: BatchCreateChannelsRequestBody
+        :type body: :class:`huaweicloudsdkbcs.v2.BatchCreateChannelsRequestBody`
         """
         self._body = body
 

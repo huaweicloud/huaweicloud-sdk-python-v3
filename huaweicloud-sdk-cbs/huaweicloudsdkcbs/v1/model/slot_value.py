@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SlotValue:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class SlotValue:
     }
 
     def __init__(self, word=None, norm_word=None, begin_position=None, end_position=None):
-        """SlotValue - a model defined in huaweicloud sdk"""
+        """SlotValue
+
+        The model defined in huaweicloud sdk
+
+        :param word: 词。
+        :type word: str
+        :param norm_word: 归一化后的标准词。
+        :type norm_word: str
+        :param begin_position: 词的起始位置。
+        :type begin_position: int
+        :param end_position: 词的结束位置。
+        :type end_position: int
+        """
         
         
 
@@ -69,7 +80,7 @@ class SlotValue:
         词。
 
         :param word: The word of this SlotValue.
-        :type: str
+        :type word: str
         """
         self._word = word
 
@@ -91,7 +102,7 @@ class SlotValue:
         归一化后的标准词。
 
         :param norm_word: The norm_word of this SlotValue.
-        :type: str
+        :type norm_word: str
         """
         self._norm_word = norm_word
 
@@ -113,7 +124,7 @@ class SlotValue:
         词的起始位置。
 
         :param begin_position: The begin_position of this SlotValue.
-        :type: int
+        :type begin_position: int
         """
         self._begin_position = begin_position
 
@@ -135,7 +146,7 @@ class SlotValue:
         词的结束位置。
 
         :param end_position: The end_position of this SlotValue.
-        :type: int
+        :type end_position: int
         """
         self._end_position = end_position
 

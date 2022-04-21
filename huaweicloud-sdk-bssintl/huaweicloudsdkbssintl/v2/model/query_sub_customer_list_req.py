@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QuerySubCustomerListReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class QuerySubCustomerListReq:
     }
 
     def __init__(self, account_name=None, customer=None, offset=None, limit=None, label=None, association_type=None, associated_on_begin=None, associated_on_end=None):
-        """QuerySubCustomerListReq - a model defined in huaweicloud sdk"""
+        """QuerySubCustomerListReq
+
+        The model defined in huaweicloud sdk
+
+        :param account_name: 客户登录名称（如果客户创建了IAM用户，此处需要填写主账号登录名称。关于主账号和IAM用户的具体介绍请参见身份管理中“账号”和“IAM用户”的描述）。 支持模糊查询。
+        :type account_name: str
+        :param customer: 客户的实名认证名称，支持模糊查询。
+        :type customer: str
+        :param offset: 偏移量，从0开始。默认值为0。  说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset &#x3D; 1，则返回满足条件的第二个数据至最后一个数据。 例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
+        :type offset: int
+        :param limit: 每次查询的客户数量。默认值为10。
+        :type limit: int
+        :param label: 标签，支持模糊查找。
+        :type label: str
+        :param association_type: 关联类型： 1：顾问销售3：转售
+        :type association_type: str
+        :param associated_on_begin: 关联时间区间段开始，UTC时间。 格式：YYYY-MM-DD&#39;T&#39;hh:mm:ss&#39;Z&#39;，例如“2019-05-06T08:05:01Z”。
+        :type associated_on_begin: str
+        :param associated_on_end: 关联时间区间段结束，UTC时间。 格式：YYYY-MM-DD&#39;T&#39;hh:mm:ss&#39;Z&#39;，例如“2019-05-06T08:05:01Z”。
+        :type associated_on_end: str
+        """
         
         
 
@@ -93,7 +112,7 @@ class QuerySubCustomerListReq:
         客户登录名称（如果客户创建了IAM用户，此处需要填写主账号登录名称。关于主账号和IAM用户的具体介绍请参见身份管理中“账号”和“IAM用户”的描述）。 支持模糊查询。
 
         :param account_name: The account_name of this QuerySubCustomerListReq.
-        :type: str
+        :type account_name: str
         """
         self._account_name = account_name
 
@@ -115,7 +134,7 @@ class QuerySubCustomerListReq:
         客户的实名认证名称，支持模糊查询。
 
         :param customer: The customer of this QuerySubCustomerListReq.
-        :type: str
+        :type customer: str
         """
         self._customer = customer
 
@@ -137,7 +156,7 @@ class QuerySubCustomerListReq:
         偏移量，从0开始。默认值为0。  说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。 例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
         :param offset: The offset of this QuerySubCustomerListReq.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -159,7 +178,7 @@ class QuerySubCustomerListReq:
         每次查询的客户数量。默认值为10。
 
         :param limit: The limit of this QuerySubCustomerListReq.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -181,7 +200,7 @@ class QuerySubCustomerListReq:
         标签，支持模糊查找。
 
         :param label: The label of this QuerySubCustomerListReq.
-        :type: str
+        :type label: str
         """
         self._label = label
 
@@ -203,7 +222,7 @@ class QuerySubCustomerListReq:
         关联类型： 1：顾问销售3：转售
 
         :param association_type: The association_type of this QuerySubCustomerListReq.
-        :type: str
+        :type association_type: str
         """
         self._association_type = association_type
 
@@ -225,7 +244,7 @@ class QuerySubCustomerListReq:
         关联时间区间段开始，UTC时间。 格式：YYYY-MM-DD'T'hh:mm:ss'Z'，例如“2019-05-06T08:05:01Z”。
 
         :param associated_on_begin: The associated_on_begin of this QuerySubCustomerListReq.
-        :type: str
+        :type associated_on_begin: str
         """
         self._associated_on_begin = associated_on_begin
 
@@ -247,7 +266,7 @@ class QuerySubCustomerListReq:
         关联时间区间段结束，UTC时间。 格式：YYYY-MM-DD'T'hh:mm:ss'Z'，例如“2019-05-06T08:05:01Z”。
 
         :param associated_on_end: The associated_on_end of this QuerySubCustomerListReq.
-        :type: str
+        :type associated_on_end: str
         """
         self._associated_on_end = associated_on_end
 

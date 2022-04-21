@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCustomLineResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListCustomLineResponse(SdkResponse):
     }
 
     def __init__(self, lines=None, metadata=None):
-        """ListCustomLineResponse - a model defined in huaweicloud sdk"""
+        """ListCustomLineResponse
+
+        The model defined in huaweicloud sdk
+
+        :param lines: 
+        :type lines: list[:class:`huaweicloudsdkdns.v2.Line`]
+        :param metadata: 
+        :type metadata: :class:`huaweicloudsdkdns.v2.Metedata`
+        """
         
         super(ListCustomLineResponse, self).__init__()
 
@@ -51,7 +58,7 @@ class ListCustomLineResponse(SdkResponse):
 
 
         :return: The lines of this ListCustomLineResponse.
-        :rtype: list[Line]
+        :rtype: list[:class:`huaweicloudsdkdns.v2.Line`]
         """
         return self._lines
 
@@ -61,7 +68,7 @@ class ListCustomLineResponse(SdkResponse):
 
 
         :param lines: The lines of this ListCustomLineResponse.
-        :type: list[Line]
+        :type lines: list[:class:`huaweicloudsdkdns.v2.Line`]
         """
         self._lines = lines
 
@@ -71,7 +78,7 @@ class ListCustomLineResponse(SdkResponse):
 
 
         :return: The metadata of this ListCustomLineResponse.
-        :rtype: Metedata
+        :rtype: :class:`huaweicloudsdkdns.v2.Metedata`
         """
         return self._metadata
 
@@ -81,7 +88,7 @@ class ListCustomLineResponse(SdkResponse):
 
 
         :param metadata: The metadata of this ListCustomLineResponse.
-        :type: Metedata
+        :type metadata: :class:`huaweicloudsdkdns.v2.Metedata`
         """
         self._metadata = metadata
 

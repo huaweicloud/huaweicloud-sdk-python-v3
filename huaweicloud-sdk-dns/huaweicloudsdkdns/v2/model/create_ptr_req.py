@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreatePtrReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class CreatePtrReq:
     }
 
     def __init__(self, ptrdname=None, description=None, ttl=None, enterprise_project_id=None, tags=None):
-        """CreatePtrReq - a model defined in huaweicloud sdk"""
+        """CreatePtrReq
+
+        The model defined in huaweicloud sdk
+
+        :param ptrdname: PTR记录对应的域名。
+        :type ptrdname: str
+        :param description: 对PTR记录的描述。
+        :type description: str
+        :param ttl: PTR记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。取值范围：1～2147483647
+        :type ttl: int
+        :param enterprise_project_id: 反向解析关联的企业项目ID，长度不超过36个字符。
+        :type enterprise_project_id: str
+        :param tags: 资源标签。
+        :type tags: list[:class:`huaweicloudsdkdns.v2.Tag`]
+        """
         
         
 
@@ -77,7 +90,7 @@ class CreatePtrReq:
         PTR记录对应的域名。
 
         :param ptrdname: The ptrdname of this CreatePtrReq.
-        :type: str
+        :type ptrdname: str
         """
         self._ptrdname = ptrdname
 
@@ -99,7 +112,7 @@ class CreatePtrReq:
         对PTR记录的描述。
 
         :param description: The description of this CreatePtrReq.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -121,7 +134,7 @@ class CreatePtrReq:
         PTR记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。取值范围：1～2147483647
 
         :param ttl: The ttl of this CreatePtrReq.
-        :type: int
+        :type ttl: int
         """
         self._ttl = ttl
 
@@ -143,7 +156,7 @@ class CreatePtrReq:
         反向解析关联的企业项目ID，长度不超过36个字符。
 
         :param enterprise_project_id: The enterprise_project_id of this CreatePtrReq.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -154,7 +167,7 @@ class CreatePtrReq:
         资源标签。
 
         :return: The tags of this CreatePtrReq.
-        :rtype: list[Tag]
+        :rtype: list[:class:`huaweicloudsdkdns.v2.Tag`]
         """
         return self._tags
 
@@ -165,7 +178,7 @@ class CreatePtrReq:
         资源标签。
 
         :param tags: The tags of this CreatePtrReq.
-        :type: list[Tag]
+        :type tags: list[:class:`huaweicloudsdkdns.v2.Tag`]
         """
         self._tags = tags
 

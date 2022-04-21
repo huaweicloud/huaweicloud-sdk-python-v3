@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowStreamCountResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowStreamCountResponse(SdkResponse):
     }
 
     def __init__(self, data_list=None, x_request_id=None):
-        """ShowStreamCountResponse - a model defined in huaweicloud sdk"""
+        """ShowStreamCountResponse
+
+        The model defined in huaweicloud sdk
+
+        :param data_list: 采样数据列表。
+        :type data_list: list[:class:`huaweicloudsdklive.v2.StreamCountData`]
+        :param x_request_id: 
+        :type x_request_id: str
+        """
         
         super(ShowStreamCountResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ShowStreamCountResponse(SdkResponse):
         采样数据列表。
 
         :return: The data_list of this ShowStreamCountResponse.
-        :rtype: list[StreamCountData]
+        :rtype: list[:class:`huaweicloudsdklive.v2.StreamCountData`]
         """
         return self._data_list
 
@@ -63,7 +70,7 @@ class ShowStreamCountResponse(SdkResponse):
         采样数据列表。
 
         :param data_list: The data_list of this ShowStreamCountResponse.
-        :type: list[StreamCountData]
+        :type data_list: list[:class:`huaweicloudsdklive.v2.StreamCountData`]
         """
         self._data_list = data_list
 
@@ -83,7 +90,7 @@ class ShowStreamCountResponse(SdkResponse):
 
 
         :param x_request_id: The x_request_id of this ShowStreamCountResponse.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 

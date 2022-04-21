@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListEventDetailResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListEventDetailResponse(SdkResponse):
     }
 
     def __init__(self, event_name=None, event_type=None, event_users=None, event_sources=None, event_info=None, meta_data=None):
-        """ListEventDetailResponse - a model defined in huaweicloud sdk"""
+        """ListEventDetailResponse
+
+        The model defined in huaweicloud sdk
+
+        :param event_name: 事件名称，值为系统产生的事件名称，或用户自定义上报的事件名称。
+        :type event_name: str
+        :param event_type: 事件类型，值为EVENT.SYS或EVENT.CUSTOM，EVENT.SYS表示系统事件，EVENT.CUSTOM表示自定义事件。
+        :type event_type: str
+        :param event_users: 上报事件时用户的名称，也可能为projectID。
+        :type event_users: list[str]
+        :param event_sources: 事件来源，如果是系统事件则值为各服务的命名空间，各服务的命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”；如果是自定义事件，则为用户自定义上报定义。
+        :type event_sources: list[str]
+        :param event_info: 一条或者多条事件详细信息。
+        :type event_info: list[:class:`huaweicloudsdkces.v1.EventInfoDetail`]
+        :param meta_data: 
+        :type meta_data: :class:`huaweicloudsdkces.v1.TotalMetaData`
+        """
         
         super(ListEventDetailResponse, self).__init__()
 
@@ -83,7 +98,7 @@ class ListEventDetailResponse(SdkResponse):
         事件名称，值为系统产生的事件名称，或用户自定义上报的事件名称。
 
         :param event_name: The event_name of this ListEventDetailResponse.
-        :type: str
+        :type event_name: str
         """
         self._event_name = event_name
 
@@ -105,7 +120,7 @@ class ListEventDetailResponse(SdkResponse):
         事件类型，值为EVENT.SYS或EVENT.CUSTOM，EVENT.SYS表示系统事件，EVENT.CUSTOM表示自定义事件。
 
         :param event_type: The event_type of this ListEventDetailResponse.
-        :type: str
+        :type event_type: str
         """
         self._event_type = event_type
 
@@ -127,7 +142,7 @@ class ListEventDetailResponse(SdkResponse):
         上报事件时用户的名称，也可能为projectID。
 
         :param event_users: The event_users of this ListEventDetailResponse.
-        :type: list[str]
+        :type event_users: list[str]
         """
         self._event_users = event_users
 
@@ -149,7 +164,7 @@ class ListEventDetailResponse(SdkResponse):
         事件来源，如果是系统事件则值为各服务的命名空间，各服务的命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”；如果是自定义事件，则为用户自定义上报定义。
 
         :param event_sources: The event_sources of this ListEventDetailResponse.
-        :type: list[str]
+        :type event_sources: list[str]
         """
         self._event_sources = event_sources
 
@@ -160,7 +175,7 @@ class ListEventDetailResponse(SdkResponse):
         一条或者多条事件详细信息。
 
         :return: The event_info of this ListEventDetailResponse.
-        :rtype: list[EventInfoDetail]
+        :rtype: list[:class:`huaweicloudsdkces.v1.EventInfoDetail`]
         """
         return self._event_info
 
@@ -171,7 +186,7 @@ class ListEventDetailResponse(SdkResponse):
         一条或者多条事件详细信息。
 
         :param event_info: The event_info of this ListEventDetailResponse.
-        :type: list[EventInfoDetail]
+        :type event_info: list[:class:`huaweicloudsdkces.v1.EventInfoDetail`]
         """
         self._event_info = event_info
 
@@ -181,7 +196,7 @@ class ListEventDetailResponse(SdkResponse):
 
 
         :return: The meta_data of this ListEventDetailResponse.
-        :rtype: TotalMetaData
+        :rtype: :class:`huaweicloudsdkces.v1.TotalMetaData`
         """
         return self._meta_data
 
@@ -191,7 +206,7 @@ class ListEventDetailResponse(SdkResponse):
 
 
         :param meta_data: The meta_data of this ListEventDetailResponse.
-        :type: TotalMetaData
+        :type meta_data: :class:`huaweicloudsdkces.v1.TotalMetaData`
         """
         self._meta_data = meta_data
 

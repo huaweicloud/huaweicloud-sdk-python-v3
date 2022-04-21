@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TagInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class TagInfo:
     }
 
     def __init__(self, id=None, name=None):
-        """TagInfo - a model defined in huaweicloud sdk"""
+        """TagInfo
+
+        The model defined in huaweicloud sdk
+
+        :param id: 自定义标签id。
+        :type id: str
+        :param name: 自定义标签名称。
+        :type name: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class TagInfo:
         自定义标签id。
 
         :param id: The id of this TagInfo.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -85,7 +92,7 @@ class TagInfo:
         自定义标签名称。
 
         :param name: The name of this TagInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 

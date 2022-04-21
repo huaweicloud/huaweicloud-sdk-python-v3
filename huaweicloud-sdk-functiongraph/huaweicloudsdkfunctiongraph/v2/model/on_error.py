@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OnError:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class OnError:
     }
 
     def __init__(self, error=None, transition=None, retry_ref=None):
-        """OnError - a model defined in huaweicloud sdk"""
+        """OnError
+
+        The model defined in huaweicloud sdk
+
+        :param error: 错误匹配表达式，用来过滤需要处理的异常
+        :type error: str
+        :param transition: 下一步骤节点ID
+        :type transition: str
+        :param retry_ref: 重试策略名称
+        :type retry_ref: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class OnError:
         错误匹配表达式，用来过滤需要处理的异常
 
         :param error: The error of this OnError.
-        :type: str
+        :type error: str
         """
         self._error = error
 
@@ -90,7 +99,7 @@ class OnError:
         下一步骤节点ID
 
         :param transition: The transition of this OnError.
-        :type: str
+        :type transition: str
         """
         self._transition = transition
 
@@ -112,7 +121,7 @@ class OnError:
         重试策略名称
 
         :param retry_ref: The retry_ref of this OnError.
-        :type: str
+        :type retry_ref: str
         """
         self._retry_ref = retry_ref
 

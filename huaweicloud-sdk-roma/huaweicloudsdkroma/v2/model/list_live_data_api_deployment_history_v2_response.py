@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListLiveDataApiDeploymentHistoryV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListLiveDataApiDeploymentHistoryV2Response(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, histories=None):
-        """ListLiveDataApiDeploymentHistoryV2Response - a model defined in huaweicloud sdk"""
+        """ListLiveDataApiDeploymentHistoryV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param size: 本次返回的列表长度
+        :type size: int
+        :param total: 满足条件的记录数
+        :type total: int
+        :param histories: 本次查询到的后端API部署结果对象列表
+        :type histories: list[:class:`huaweicloudsdkroma.v2.LdApiDeployHistoryInfo`]
+        """
         
         super(ListLiveDataApiDeploymentHistoryV2Response, self).__init__()
 
@@ -66,7 +75,7 @@ class ListLiveDataApiDeploymentHistoryV2Response(SdkResponse):
         本次返回的列表长度
 
         :param size: The size of this ListLiveDataApiDeploymentHistoryV2Response.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -88,7 +97,7 @@ class ListLiveDataApiDeploymentHistoryV2Response(SdkResponse):
         满足条件的记录数
 
         :param total: The total of this ListLiveDataApiDeploymentHistoryV2Response.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -99,7 +108,7 @@ class ListLiveDataApiDeploymentHistoryV2Response(SdkResponse):
         本次查询到的后端API部署结果对象列表
 
         :return: The histories of this ListLiveDataApiDeploymentHistoryV2Response.
-        :rtype: list[LdApiDeployHistoryInfo]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.LdApiDeployHistoryInfo`]
         """
         return self._histories
 
@@ -110,7 +119,7 @@ class ListLiveDataApiDeploymentHistoryV2Response(SdkResponse):
         本次查询到的后端API部署结果对象列表
 
         :param histories: The histories of this ListLiveDataApiDeploymentHistoryV2Response.
-        :type: list[LdApiDeployHistoryInfo]
+        :type histories: list[:class:`huaweicloudsdkroma.v2.LdApiDeployHistoryInfo`]
         """
         self._histories = histories
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListImageByTagsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListImageByTagsRequest:
     }
 
     def __init__(self, body=None):
-        """ListImageByTagsRequest - a model defined in huaweicloud sdk"""
+        """ListImageByTagsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the ListImageByTagsRequest
+        :type body: :class:`huaweicloudsdkims.v2.ListImageByTagsRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class ListImageByTagsRequest:
 
 
         :return: The body of this ListImageByTagsRequest.
-        :rtype: ListImageByTagsRequestBody
+        :rtype: :class:`huaweicloudsdkims.v2.ListImageByTagsRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class ListImageByTagsRequest:
 
 
         :param body: The body of this ListImageByTagsRequest.
-        :type: ListImageByTagsRequestBody
+        :type body: :class:`huaweicloudsdkims.v2.ListImageByTagsRequestBody`
         """
         self._body = body
 

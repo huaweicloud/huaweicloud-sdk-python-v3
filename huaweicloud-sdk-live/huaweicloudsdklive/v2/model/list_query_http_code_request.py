@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListQueryHttpCodeRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListQueryHttpCodeRequest:
     }
 
     def __init__(self, play_domains=None, code=None, region=None, isp=None, start_time=None, end_time=None):
-        """ListQueryHttpCodeRequest - a model defined in huaweicloud sdk"""
+        """ListQueryHttpCodeRequest
+
+        The model defined in huaweicloud sdk
+
+        :param play_domains: 播放域名列表，最多支持查询100个域名，多个域名以逗号分隔。 
+        :type play_domains: list[str]
+        :param code: 状态码。 
+        :type code: list[str]
+        :param region: 区域列表。具体取值请参考[省份名称缩写](live_03_0043.xml)，不填写查询所有区域。 
+        :type region: list[str]
+        :param isp: 运营商列表，取值如下： - CMCC ：移动 - CTCC ： 电信 - CUCC ：联通 - OTHER ：其他  不填写查询所有运营商。 
+        :type isp: list[str]
+        :param start_time: 起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。若参数为空，默认查询最近1小时数据。  最大查询跨度1天，最大查询周期7天。 
+        :type start_time: str
+        :param end_time: 结束时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。  若参数为空，默认为当前时间。结束时间需大于起始时间。  最大查询跨度1天，最大查询周期7天。 
+        :type end_time: str
+        """
         
         
 
@@ -82,7 +97,7 @@ class ListQueryHttpCodeRequest:
         播放域名列表，最多支持查询100个域名，多个域名以逗号分隔。 
 
         :param play_domains: The play_domains of this ListQueryHttpCodeRequest.
-        :type: list[str]
+        :type play_domains: list[str]
         """
         self._play_domains = play_domains
 
@@ -104,7 +119,7 @@ class ListQueryHttpCodeRequest:
         状态码。 
 
         :param code: The code of this ListQueryHttpCodeRequest.
-        :type: list[str]
+        :type code: list[str]
         """
         self._code = code
 
@@ -126,7 +141,7 @@ class ListQueryHttpCodeRequest:
         区域列表。具体取值请参考[省份名称缩写](live_03_0043.xml)，不填写查询所有区域。 
 
         :param region: The region of this ListQueryHttpCodeRequest.
-        :type: list[str]
+        :type region: list[str]
         """
         self._region = region
 
@@ -148,7 +163,7 @@ class ListQueryHttpCodeRequest:
         运营商列表，取值如下： - CMCC ：移动 - CTCC ： 电信 - CUCC ：联通 - OTHER ：其他  不填写查询所有运营商。 
 
         :param isp: The isp of this ListQueryHttpCodeRequest.
-        :type: list[str]
+        :type isp: list[str]
         """
         self._isp = isp
 
@@ -170,7 +185,7 @@ class ListQueryHttpCodeRequest:
         起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。若参数为空，默认查询最近1小时数据。  最大查询跨度1天，最大查询周期7天。 
 
         :param start_time: The start_time of this ListQueryHttpCodeRequest.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -192,7 +207,7 @@ class ListQueryHttpCodeRequest:
         结束时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。  若参数为空，默认为当前时间。结束时间需大于起始时间。  最大查询跨度1天，最大查询周期7天。 
 
         :param end_time: The end_time of this ListQueryHttpCodeRequest.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 

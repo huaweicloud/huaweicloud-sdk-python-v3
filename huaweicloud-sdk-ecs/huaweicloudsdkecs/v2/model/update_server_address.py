@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateServerAddress:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateServerAddress:
     }
 
     def __init__(self, version=None, addr=None):
-        """UpdateServerAddress - a model defined in huaweicloud sdk"""
+        """UpdateServerAddress
+
+        The model defined in huaweicloud sdk
+
+        :param version: IP地址版本。  - 4：代表IPv4。 - 6：代表IPv6。
+        :type version: int
+        :param addr: IP地址。
+        :type addr: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class UpdateServerAddress:
         IP地址版本。  - 4：代表IPv4。 - 6：代表IPv6。
 
         :param version: The version of this UpdateServerAddress.
-        :type: int
+        :type version: int
         """
         self._version = version
 
@@ -83,7 +90,7 @@ class UpdateServerAddress:
         IP地址。
 
         :param addr: The addr of this UpdateServerAddress.
-        :type: str
+        :type addr: str
         """
         self._addr = addr
 

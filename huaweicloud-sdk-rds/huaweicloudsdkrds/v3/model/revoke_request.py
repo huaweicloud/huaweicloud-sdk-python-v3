@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RevokeRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class RevokeRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """RevokeRequest - a model defined in huaweicloud sdk"""
+        """RevokeRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言
+        :type x_language: str
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param body: Body of the RevokeRequest
+        :type body: :class:`huaweicloudsdkrds.v3.RevokeRequestBody`
+        """
         
         
 
@@ -67,7 +76,7 @@ class RevokeRequest:
         语言
 
         :param x_language: The x_language of this RevokeRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -89,7 +98,7 @@ class RevokeRequest:
         实例ID。
 
         :param instance_id: The instance_id of this RevokeRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -99,7 +108,7 @@ class RevokeRequest:
 
 
         :return: The body of this RevokeRequest.
-        :rtype: RevokeRequestBody
+        :rtype: :class:`huaweicloudsdkrds.v3.RevokeRequestBody`
         """
         return self._body
 
@@ -109,7 +118,7 @@ class RevokeRequest:
 
 
         :param body: The body of this RevokeRequest.
-        :type: RevokeRequestBody
+        :type body: :class:`huaweicloudsdkrds.v3.RevokeRequestBody`
         """
         self._body = body
 

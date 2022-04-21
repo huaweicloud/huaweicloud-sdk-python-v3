@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ChannelInfoV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ChannelInfoV2:
     }
 
     def __init__(self, name=None, org_names=None, description=None):
-        """ChannelInfoV2 - a model defined in huaweicloud sdk"""
+        """ChannelInfoV2
+
+        The model defined in huaweicloud sdk
+
+        :param name: 通道名
+        :type name: str
+        :param org_names: 通道中组织名
+        :type org_names: list[str]
+        :param description: 通道描述
+        :type description: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class ChannelInfoV2:
         通道名
 
         :param name: The name of this ChannelInfoV2.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -88,7 +97,7 @@ class ChannelInfoV2:
         通道中组织名
 
         :param org_names: The org_names of this ChannelInfoV2.
-        :type: list[str]
+        :type org_names: list[str]
         """
         self._org_names = org_names
 
@@ -110,7 +119,7 @@ class ChannelInfoV2:
         通道描述
 
         :param description: The description of this ChannelInfoV2.
-        :type: str
+        :type description: str
         """
         self._description = description
 

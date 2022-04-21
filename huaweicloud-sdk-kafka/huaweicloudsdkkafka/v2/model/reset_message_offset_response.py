@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResetMessageOffsetResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class ResetMessageOffsetResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ResetMessageOffsetResponse - a model defined in huaweicloud sdk"""
+        """ResetMessageOffsetResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(ResetMessageOffsetResponse, self).__init__()
         self.discriminator = None

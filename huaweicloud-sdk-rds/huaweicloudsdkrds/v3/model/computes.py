@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Computes:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Computes:
     }
 
     def __init__(self, group_type=None, compute_flavors=None):
-        """Computes - a model defined in huaweicloud sdk"""
+        """Computes
+
+        The model defined in huaweicloud sdk
+
+        :param group_type: 群组类型。  - X86：X86架构。 - ARM：ARM架构。
+        :type group_type: str
+        :param compute_flavors: 计算规格信息。
+        :type compute_flavors: list[:class:`huaweicloudsdkrds.v3.ScaleFlavors`]
+        """
         
         
 
@@ -63,7 +70,7 @@ class Computes:
         群组类型。  - X86：X86架构。 - ARM：ARM架构。
 
         :param group_type: The group_type of this Computes.
-        :type: str
+        :type group_type: str
         """
         self._group_type = group_type
 
@@ -74,7 +81,7 @@ class Computes:
         计算规格信息。
 
         :return: The compute_flavors of this Computes.
-        :rtype: list[ScaleFlavors]
+        :rtype: list[:class:`huaweicloudsdkrds.v3.ScaleFlavors`]
         """
         return self._compute_flavors
 
@@ -85,7 +92,7 @@ class Computes:
         计算规格信息。
 
         :param compute_flavors: The compute_flavors of this Computes.
-        :type: list[ScaleFlavors]
+        :type compute_flavors: list[:class:`huaweicloudsdkrds.v3.ScaleFlavors`]
         """
         self._compute_flavors = compute_flavors
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PauseInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class PauseInfo:
     }
 
     def __init__(self, job_id=None, pause_mode=None):
-        """PauseInfo - a model defined in huaweicloud sdk"""
+        """PauseInfo
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 任务id
+        :type job_id: str
+        :param pause_mode: 暂停类型，target:停回放,all:停日志抓取和回放
+        :type pause_mode: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class PauseInfo:
         任务id
 
         :param job_id: The job_id of this PauseInfo.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -83,7 +90,7 @@ class PauseInfo:
         暂停类型，target:停回放,all:停日志抓取和回放
 
         :param pause_mode: The pause_mode of this PauseInfo.
-        :type: str
+        :type pause_mode: str
         """
         self._pause_mode = pause_mode
 

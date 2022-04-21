@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteAssetsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteAssetsRequest:
     }
 
     def __init__(self, asset_id=None, delete_type=None):
-        """DeleteAssetsRequest - a model defined in huaweicloud sdk"""
+        """DeleteAssetsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param asset_id: 媒资ID，支持一次删除多个媒资，批量删除时以逗号分隔。
+        :type asset_id: list[str]
+        :param delete_type: 删除类型，当值为origin时只删除源文件，保留转码后文件。
+        :type delete_type: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class DeleteAssetsRequest:
         媒资ID，支持一次删除多个媒资，批量删除时以逗号分隔。
 
         :param asset_id: The asset_id of this DeleteAssetsRequest.
-        :type: list[str]
+        :type asset_id: list[str]
         """
         self._asset_id = asset_id
 
@@ -84,7 +91,7 @@ class DeleteAssetsRequest:
         删除类型，当值为origin时只删除源文件，保留转码后文件。
 
         :param delete_type: The delete_type of this DeleteAssetsRequest.
-        :type: str
+        :type delete_type: str
         """
         self._delete_type = delete_type
 

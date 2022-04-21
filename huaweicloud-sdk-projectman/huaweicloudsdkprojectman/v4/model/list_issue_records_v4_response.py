@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListIssueRecordsV4Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListIssueRecordsV4Response(SdkResponse):
     }
 
     def __init__(self, id=None, created_time=None, records=None, total=None):
-        """ListIssueRecordsV4Response - a model defined in huaweicloud sdk"""
+        """ListIssueRecordsV4Response
+
+        The model defined in huaweicloud sdk
+
+        :param id: 操作记录id (已废弃)
+        :type id: int
+        :param created_time: 创建时间 (已废弃)
+        :type created_time: int
+        :param records: 
+        :type records: list[:class:`huaweicloudsdkprojectman.v4.IssueRecordV4`]
+        :param total: 操作记录总数
+        :type total: int
+        """
         
         super(ListIssueRecordsV4Response, self).__init__()
 
@@ -73,7 +84,7 @@ class ListIssueRecordsV4Response(SdkResponse):
         操作记录id (已废弃)
 
         :param id: The id of this ListIssueRecordsV4Response.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -95,7 +106,7 @@ class ListIssueRecordsV4Response(SdkResponse):
         创建时间 (已废弃)
 
         :param created_time: The created_time of this ListIssueRecordsV4Response.
-        :type: int
+        :type created_time: int
         """
         self._created_time = created_time
 
@@ -105,7 +116,7 @@ class ListIssueRecordsV4Response(SdkResponse):
 
 
         :return: The records of this ListIssueRecordsV4Response.
-        :rtype: list[IssueRecordV4]
+        :rtype: list[:class:`huaweicloudsdkprojectman.v4.IssueRecordV4`]
         """
         return self._records
 
@@ -115,7 +126,7 @@ class ListIssueRecordsV4Response(SdkResponse):
 
 
         :param records: The records of this ListIssueRecordsV4Response.
-        :type: list[IssueRecordV4]
+        :type records: list[:class:`huaweicloudsdkprojectman.v4.IssueRecordV4`]
         """
         self._records = records
 
@@ -137,7 +148,7 @@ class ListIssueRecordsV4Response(SdkResponse):
         操作记录总数
 
         :param total: The total of this ListIssueRecordsV4Response.
-        :type: int
+        :type total: int
         """
         self._total = total
 

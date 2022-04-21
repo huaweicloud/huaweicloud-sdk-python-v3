@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateTransferResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class CreateTransferResponse(SdkResponse):
     }
 
     def __init__(self, log_group_id=None, log_group_name=None, log_streams=None, log_transfer_id=None, log_transfer_info=None):
-        """CreateTransferResponse - a model defined in huaweicloud sdk"""
+        """CreateTransferResponse
+
+        The model defined in huaweicloud sdk
+
+        :param log_group_id: 日志组ID
+        :type log_group_id: str
+        :param log_group_name: 日志组名称
+        :type log_group_name: str
+        :param log_streams: 日志流ID集合
+        :type log_streams: list[:class:`huaweicloudsdklts.v2.CreateTransferResponseBodyLogStreams`]
+        :param log_transfer_id: 日志转储ID
+        :type log_transfer_id: str
+        :param log_transfer_info: 
+        :type log_transfer_info: :class:`huaweicloudsdklts.v2.CreateTransferResponseBodyLogTransferInfo`
+        """
         
         super(CreateTransferResponse, self).__init__()
 
@@ -78,7 +91,7 @@ class CreateTransferResponse(SdkResponse):
         日志组ID
 
         :param log_group_id: The log_group_id of this CreateTransferResponse.
-        :type: str
+        :type log_group_id: str
         """
         self._log_group_id = log_group_id
 
@@ -100,7 +113,7 @@ class CreateTransferResponse(SdkResponse):
         日志组名称
 
         :param log_group_name: The log_group_name of this CreateTransferResponse.
-        :type: str
+        :type log_group_name: str
         """
         self._log_group_name = log_group_name
 
@@ -111,7 +124,7 @@ class CreateTransferResponse(SdkResponse):
         日志流ID集合
 
         :return: The log_streams of this CreateTransferResponse.
-        :rtype: list[CreateTransferResponseBodyLogStreams]
+        :rtype: list[:class:`huaweicloudsdklts.v2.CreateTransferResponseBodyLogStreams`]
         """
         return self._log_streams
 
@@ -122,7 +135,7 @@ class CreateTransferResponse(SdkResponse):
         日志流ID集合
 
         :param log_streams: The log_streams of this CreateTransferResponse.
-        :type: list[CreateTransferResponseBodyLogStreams]
+        :type log_streams: list[:class:`huaweicloudsdklts.v2.CreateTransferResponseBodyLogStreams`]
         """
         self._log_streams = log_streams
 
@@ -144,7 +157,7 @@ class CreateTransferResponse(SdkResponse):
         日志转储ID
 
         :param log_transfer_id: The log_transfer_id of this CreateTransferResponse.
-        :type: str
+        :type log_transfer_id: str
         """
         self._log_transfer_id = log_transfer_id
 
@@ -154,7 +167,7 @@ class CreateTransferResponse(SdkResponse):
 
 
         :return: The log_transfer_info of this CreateTransferResponse.
-        :rtype: CreateTransferResponseBodyLogTransferInfo
+        :rtype: :class:`huaweicloudsdklts.v2.CreateTransferResponseBodyLogTransferInfo`
         """
         return self._log_transfer_info
 
@@ -164,7 +177,7 @@ class CreateTransferResponse(SdkResponse):
 
 
         :param log_transfer_info: The log_transfer_info of this CreateTransferResponse.
-        :type: CreateTransferResponseBodyLogTransferInfo
+        :type log_transfer_info: :class:`huaweicloudsdklts.v2.CreateTransferResponseBodyLogTransferInfo`
         """
         self._log_transfer_info = log_transfer_info
 

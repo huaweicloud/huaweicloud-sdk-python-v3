@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Detail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -22,59 +21,47 @@ class Detail:
     sensitive_list = []
 
     openapi_types = {
-        'unit': 'str',
         'type': 'str',
-        'value': 'str'
+        'value': 'str',
+        'unit': 'str'
     }
 
     attribute_map = {
-        'unit': 'unit',
         'type': 'type',
-        'value': 'value'
+        'value': 'value',
+        'unit': 'unit'
     }
 
-    def __init__(self, unit=None, type=None, value=None):
-        """Detail - a model defined in huaweicloud sdk"""
+    def __init__(self, type=None, value=None, unit=None):
+        """Detail
+
+        The model defined in huaweicloud sdk
+
+        :param type: 属性类型。
+        :type type: str
+        :param value: 属性值。
+        :type value: str
+        :param unit: 属性单位。
+        :type unit: str
+        """
         
         
 
-        self._unit = None
         self._type = None
         self._value = None
+        self._unit = None
         self.discriminator = None
 
-        self.unit = unit
         if type is not None:
             self.type = type
         self.value = value
-
-    @property
-    def unit(self):
-        """Gets the unit of this Detail.
-
-        属性单位
-
-        :return: The unit of this Detail.
-        :rtype: str
-        """
-        return self._unit
-
-    @unit.setter
-    def unit(self, unit):
-        """Sets the unit of this Detail.
-
-        属性单位
-
-        :param unit: The unit of this Detail.
-        :type: str
-        """
-        self._unit = unit
+        self.unit = unit
 
     @property
     def type(self):
         """Gets the type of this Detail.
 
-        属性类型
+        属性类型。
 
         :return: The type of this Detail.
         :rtype: str
@@ -85,10 +72,10 @@ class Detail:
     def type(self, type):
         """Sets the type of this Detail.
 
-        属性类型
+        属性类型。
 
         :param type: The type of this Detail.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -96,7 +83,7 @@ class Detail:
     def value(self):
         """Gets the value of this Detail.
 
-        属性值
+        属性值。
 
         :return: The value of this Detail.
         :rtype: str
@@ -107,12 +94,34 @@ class Detail:
     def value(self, value):
         """Sets the value of this Detail.
 
-        属性值
+        属性值。
 
         :param value: The value of this Detail.
-        :type: str
+        :type value: str
         """
         self._value = value
+
+    @property
+    def unit(self):
+        """Gets the unit of this Detail.
+
+        属性单位。
+
+        :return: The unit of this Detail.
+        :rtype: str
+        """
+        return self._unit
+
+    @unit.setter
+    def unit(self, unit):
+        """Sets the unit of this Detail.
+
+        属性单位。
+
+        :param unit: The unit of this Detail.
+        :type unit: str
+        """
+        self._unit = unit
 
     def to_dict(self):
         """Returns the model properties as a dict"""

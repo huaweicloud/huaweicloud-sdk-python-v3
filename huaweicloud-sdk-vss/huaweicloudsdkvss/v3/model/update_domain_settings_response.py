@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDomainSettingsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateDomainSettingsResponse(SdkResponse):
     }
 
     def __init__(self, info_code=None, info_description=None):
-        """UpdateDomainSettingsResponse - a model defined in huaweicloud sdk"""
+        """UpdateDomainSettingsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param info_code: 状态码:   * success - 成功   * failure - 失败 
+        :type info_code: str
+        :param info_description: 返回的提示信息
+        :type info_description: str
+        """
         
         super(UpdateDomainSettingsResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class UpdateDomainSettingsResponse(SdkResponse):
         状态码:   * success - 成功   * failure - 失败 
 
         :param info_code: The info_code of this UpdateDomainSettingsResponse.
-        :type: str
+        :type info_code: str
         """
         self._info_code = info_code
 
@@ -85,7 +92,7 @@ class UpdateDomainSettingsResponse(SdkResponse):
         返回的提示信息
 
         :param info_description: The info_description of this UpdateDomainSettingsResponse.
-        :type: str
+        :type info_description: str
         """
         self._info_description = info_description
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OrganizationV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class OrganizationV2:
     }
 
     def __init__(self, name=None, name_hash=None, node_count=None, status=None, status_detail=None):
-        """OrganizationV2 - a model defined in huaweicloud sdk"""
+        """OrganizationV2
+
+        The model defined in huaweicloud sdk
+
+        :param name: 组织名称
+        :type name: str
+        :param name_hash: 组织hash
+        :type name_hash: str
+        :param node_count: 组织节点
+        :type node_count: str
+        :param status: 状态
+        :type status: str
+        :param status_detail: 状态描述
+        :type status_detail: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class OrganizationV2:
         组织名称
 
         :param name: The name of this OrganizationV2.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -100,7 +113,7 @@ class OrganizationV2:
         组织hash
 
         :param name_hash: The name_hash of this OrganizationV2.
-        :type: str
+        :type name_hash: str
         """
         self._name_hash = name_hash
 
@@ -122,7 +135,7 @@ class OrganizationV2:
         组织节点
 
         :param node_count: The node_count of this OrganizationV2.
-        :type: str
+        :type node_count: str
         """
         self._node_count = node_count
 
@@ -144,7 +157,7 @@ class OrganizationV2:
         状态
 
         :param status: The status of this OrganizationV2.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -166,7 +179,7 @@ class OrganizationV2:
         状态描述
 
         :param status_detail: The status_detail of this OrganizationV2.
-        :type: str
+        :type status_detail: str
         """
         self._status_detail = status_detail
 

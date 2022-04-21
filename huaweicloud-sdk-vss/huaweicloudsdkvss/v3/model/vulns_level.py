@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VulnsLevel:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class VulnsLevel:
     }
 
     def __init__(self, high=None, middle=None, low=None, hint=None):
-        """VulnsLevel - a model defined in huaweicloud sdk"""
+        """VulnsLevel
+
+        The model defined in huaweicloud sdk
+
+        :param high: 高危漏洞数
+        :type high: int
+        :param middle: 中危漏洞数
+        :type middle: int
+        :param low: 低危漏洞数
+        :type low: int
+        :param hint: 提示危漏洞数
+        :type hint: int
+        """
         
         
 
@@ -73,7 +84,7 @@ class VulnsLevel:
         高危漏洞数
 
         :param high: The high of this VulnsLevel.
-        :type: int
+        :type high: int
         """
         self._high = high
 
@@ -95,7 +106,7 @@ class VulnsLevel:
         中危漏洞数
 
         :param middle: The middle of this VulnsLevel.
-        :type: int
+        :type middle: int
         """
         self._middle = middle
 
@@ -117,7 +128,7 @@ class VulnsLevel:
         低危漏洞数
 
         :param low: The low of this VulnsLevel.
-        :type: int
+        :type low: int
         """
         self._low = low
 
@@ -139,7 +150,7 @@ class VulnsLevel:
         提示危漏洞数
 
         :param hint: The hint of this VulnsLevel.
-        :type: int
+        :type hint: int
         """
         self._hint = hint
 

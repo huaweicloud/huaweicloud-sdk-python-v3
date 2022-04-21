@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPartnerAccountChangeRecordsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListPartnerAccountChangeRecordsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, currency=None, records=None):
-        """ListPartnerAccountChangeRecordsResponse - a model defined in huaweicloud sdk"""
+        """ListPartnerAccountChangeRecordsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total_count: 返回总条数。
+        :type total_count: int
+        :param currency: 币种。 CNY：人民币。
+        :type currency: str
+        :param records: 调账记录列表。 具体请参见表2。
+        :type records: list[:class:`huaweicloudsdkbss.v2.AccountChangeRecord`]
+        """
         
         super(ListPartnerAccountChangeRecordsResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListPartnerAccountChangeRecordsResponse(SdkResponse):
         返回总条数。
 
         :param total_count: The total_count of this ListPartnerAccountChangeRecordsResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 
@@ -90,7 +99,7 @@ class ListPartnerAccountChangeRecordsResponse(SdkResponse):
         币种。 CNY：人民币。
 
         :param currency: The currency of this ListPartnerAccountChangeRecordsResponse.
-        :type: str
+        :type currency: str
         """
         self._currency = currency
 
@@ -101,7 +110,7 @@ class ListPartnerAccountChangeRecordsResponse(SdkResponse):
         调账记录列表。 具体请参见表2。
 
         :return: The records of this ListPartnerAccountChangeRecordsResponse.
-        :rtype: list[AccountChangeRecord]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.AccountChangeRecord`]
         """
         return self._records
 
@@ -112,7 +121,7 @@ class ListPartnerAccountChangeRecordsResponse(SdkResponse):
         调账记录列表。 具体请参见表2。
 
         :param records: The records of this ListPartnerAccountChangeRecordsResponse.
-        :type: list[AccountChangeRecord]
+        :type records: list[:class:`huaweicloudsdkbss.v2.AccountChangeRecord`]
         """
         self._records = records
 

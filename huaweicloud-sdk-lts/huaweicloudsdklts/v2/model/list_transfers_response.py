@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTransfersResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListTransfersResponse(SdkResponse):
     }
 
     def __init__(self, log_transfers=None):
-        """ListTransfersResponse - a model defined in huaweicloud sdk"""
+        """ListTransfersResponse
+
+        The model defined in huaweicloud sdk
+
+        :param log_transfers: 查询日志转储信息数组
+        :type log_transfers: list[:class:`huaweicloudsdklts.v2.CreateTransferResponseBody`]
+        """
         
         super(ListTransfersResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListTransfersResponse(SdkResponse):
         查询日志转储信息数组
 
         :return: The log_transfers of this ListTransfersResponse.
-        :rtype: list[CreateTransferResponseBody]
+        :rtype: list[:class:`huaweicloudsdklts.v2.CreateTransferResponseBody`]
         """
         return self._log_transfers
 
@@ -58,7 +63,7 @@ class ListTransfersResponse(SdkResponse):
         查询日志转储信息数组
 
         :param log_transfers: The log_transfers of this ListTransfersResponse.
-        :type: list[CreateTransferResponseBody]
+        :type log_transfers: list[:class:`huaweicloudsdklts.v2.CreateTransferResponseBody`]
         """
         self._log_transfers = log_transfers
 

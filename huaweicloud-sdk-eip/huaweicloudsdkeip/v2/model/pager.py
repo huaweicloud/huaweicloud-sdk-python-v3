@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Pager:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Pager:
     }
 
     def __init__(self, href=None, rel=None):
-        """Pager - a model defined in huaweicloud sdk"""
+        """Pager
+
+        The model defined in huaweicloud sdk
+
+        :param href: 页码url
+        :type href: str
+        :param rel: next:下一页  previous:前一页
+        :type rel: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class Pager:
         页码url
 
         :param href: The href of this Pager.
-        :type: str
+        :type href: str
         """
         self._href = href
 
@@ -85,7 +92,7 @@ class Pager:
         next:下一页  previous:前一页
 
         :param rel: The rel of this Pager.
-        :type: str
+        :type rel: str
         """
         self._rel = rel
 

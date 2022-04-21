@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListGeoipRuleRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListGeoipRuleRequest:
     }
 
     def __init__(self, enterprise_project_id=None, policy_id=None, page=None, pagesize=None):
-        """ListGeoipRuleRequest - a model defined in huaweicloud sdk"""
+        """ListGeoipRuleRequest
+
+        The model defined in huaweicloud sdk
+
+        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        :type enterprise_project_id: str
+        :param policy_id: 防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
+        :type policy_id: str
+        :param page: 分页查询时，返回第几页数据。范围0-100000，默认值为1，表示返回第1页数据。
+        :type page: int
+        :param pagesize: 分页查询时，每页包含多少条结果。范围1-100，默认值为10，表示每页包含10条结果。
+        :type pagesize: int
+        """
         
         
 
@@ -72,7 +83,7 @@ class ListGeoipRuleRequest:
         您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this ListGeoipRuleRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -94,7 +105,7 @@ class ListGeoipRuleRequest:
         防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
 
         :param policy_id: The policy_id of this ListGeoipRuleRequest.
-        :type: str
+        :type policy_id: str
         """
         self._policy_id = policy_id
 
@@ -116,7 +127,7 @@ class ListGeoipRuleRequest:
         分页查询时，返回第几页数据。范围0-100000，默认值为1，表示返回第1页数据。
 
         :param page: The page of this ListGeoipRuleRequest.
-        :type: int
+        :type page: int
         """
         self._page = page
 
@@ -138,7 +149,7 @@ class ListGeoipRuleRequest:
         分页查询时，每页包含多少条结果。范围1-100，默认值为10，表示每页包含10条结果。
 
         :param pagesize: The pagesize of this ListGeoipRuleRequest.
-        :type: int
+        :type pagesize: int
         """
         self._pagesize = pagesize
 

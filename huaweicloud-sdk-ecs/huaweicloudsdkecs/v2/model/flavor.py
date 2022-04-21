@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Flavor:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -58,7 +57,41 @@ class Flavor:
     }
 
     def __init__(self, id=None, name=None, vcpus=None, ram=None, disk=None, swap=None, os_flv_ext_dat_aephemeral=None, os_flv_disable_ddisabled=None, rxtx_factor=None, rxtx_quota=None, rxtx_cap=None, os_flavor_accessis_public=None, links=None, os_extra_specs=None, attachable_quantity=None):
-        """Flavor - a model defined in huaweicloud sdk"""
+        """Flavor
+
+        The model defined in huaweicloud sdk
+
+        :param id: 云服务器规格的ID。
+        :type id: str
+        :param name: 云服务器规格的名称。
+        :type name: str
+        :param vcpus: 云服务器规格对应的CPU核数。
+        :type vcpus: str
+        :param ram: 云服务器规格对应的内存大小，单位为MB。
+        :type ram: int
+        :param disk: 云服务器规格对应要求的系统盘大小。  当前未使用该参数，缺省值为0。
+        :type disk: str
+        :param swap: 云服务器规格对应要求的交换分区大小。  当前未使用该参数，缺省值为\&quot;\&quot;。
+        :type swap: str
+        :param os_flv_ext_dat_aephemeral: 扩展属性，临时盘大小。  当前未使用该参数，缺省值为0
+        :type os_flv_ext_dat_aephemeral: int
+        :param os_flv_disable_ddisabled: 扩展属性，该云服务器规格是否禁用。  当前未使用该参数，缺省值为false。
+        :type os_flv_disable_ddisabled: bool
+        :param rxtx_factor: 云服务器可使用网络带宽与网络硬件带宽的比例。  当前未使用该参数，缺省值为1.0。
+        :type rxtx_factor: float
+        :param rxtx_quota: 云服务器可使用网络带宽的软限制。  当前未使用该参数，缺省值为null。
+        :type rxtx_quota: str
+        :param rxtx_cap:   云服务器可使用网络带宽的硬限制。  当前未使用该参数，缺省值为null。
+        :type rxtx_cap: str
+        :param os_flavor_accessis_public: 扩展属性，flavor是否给所有租户使用。  - true：表示给所有租户使用。 - false：表示给指定租户使用。  缺省值为true。
+        :type os_flavor_accessis_public: bool
+        :param links: 规格相关快捷链接地址。
+        :type links: list[:class:`huaweicloudsdkecs.v2.FlavorLink`]
+        :param os_extra_specs: 
+        :type os_extra_specs: :class:`huaweicloudsdkecs.v2.FlavorExtraSpec`
+        :param attachable_quantity: 
+        :type attachable_quantity: :class:`huaweicloudsdkecs.v2.ServerAttachableQuantity`
+        """
         
         
 
@@ -114,7 +147,7 @@ class Flavor:
         云服务器规格的ID。
 
         :param id: The id of this Flavor.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -136,7 +169,7 @@ class Flavor:
         云服务器规格的名称。
 
         :param name: The name of this Flavor.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -158,7 +191,7 @@ class Flavor:
         云服务器规格对应的CPU核数。
 
         :param vcpus: The vcpus of this Flavor.
-        :type: str
+        :type vcpus: str
         """
         self._vcpus = vcpus
 
@@ -180,7 +213,7 @@ class Flavor:
         云服务器规格对应的内存大小，单位为MB。
 
         :param ram: The ram of this Flavor.
-        :type: int
+        :type ram: int
         """
         self._ram = ram
 
@@ -202,7 +235,7 @@ class Flavor:
         云服务器规格对应要求的系统盘大小。  当前未使用该参数，缺省值为0。
 
         :param disk: The disk of this Flavor.
-        :type: str
+        :type disk: str
         """
         self._disk = disk
 
@@ -224,7 +257,7 @@ class Flavor:
         云服务器规格对应要求的交换分区大小。  当前未使用该参数，缺省值为\"\"。
 
         :param swap: The swap of this Flavor.
-        :type: str
+        :type swap: str
         """
         self._swap = swap
 
@@ -246,7 +279,7 @@ class Flavor:
         扩展属性，临时盘大小。  当前未使用该参数，缺省值为0
 
         :param os_flv_ext_dat_aephemeral: The os_flv_ext_dat_aephemeral of this Flavor.
-        :type: int
+        :type os_flv_ext_dat_aephemeral: int
         """
         self._os_flv_ext_dat_aephemeral = os_flv_ext_dat_aephemeral
 
@@ -268,7 +301,7 @@ class Flavor:
         扩展属性，该云服务器规格是否禁用。  当前未使用该参数，缺省值为false。
 
         :param os_flv_disable_ddisabled: The os_flv_disable_ddisabled of this Flavor.
-        :type: bool
+        :type os_flv_disable_ddisabled: bool
         """
         self._os_flv_disable_ddisabled = os_flv_disable_ddisabled
 
@@ -290,7 +323,7 @@ class Flavor:
         云服务器可使用网络带宽与网络硬件带宽的比例。  当前未使用该参数，缺省值为1.0。
 
         :param rxtx_factor: The rxtx_factor of this Flavor.
-        :type: float
+        :type rxtx_factor: float
         """
         self._rxtx_factor = rxtx_factor
 
@@ -312,7 +345,7 @@ class Flavor:
         云服务器可使用网络带宽的软限制。  当前未使用该参数，缺省值为null。
 
         :param rxtx_quota: The rxtx_quota of this Flavor.
-        :type: str
+        :type rxtx_quota: str
         """
         self._rxtx_quota = rxtx_quota
 
@@ -334,7 +367,7 @@ class Flavor:
           云服务器可使用网络带宽的硬限制。  当前未使用该参数，缺省值为null。
 
         :param rxtx_cap: The rxtx_cap of this Flavor.
-        :type: str
+        :type rxtx_cap: str
         """
         self._rxtx_cap = rxtx_cap
 
@@ -356,7 +389,7 @@ class Flavor:
         扩展属性，flavor是否给所有租户使用。  - true：表示给所有租户使用。 - false：表示给指定租户使用。  缺省值为true。
 
         :param os_flavor_accessis_public: The os_flavor_accessis_public of this Flavor.
-        :type: bool
+        :type os_flavor_accessis_public: bool
         """
         self._os_flavor_accessis_public = os_flavor_accessis_public
 
@@ -367,7 +400,7 @@ class Flavor:
         规格相关快捷链接地址。
 
         :return: The links of this Flavor.
-        :rtype: list[FlavorLink]
+        :rtype: list[:class:`huaweicloudsdkecs.v2.FlavorLink`]
         """
         return self._links
 
@@ -378,7 +411,7 @@ class Flavor:
         规格相关快捷链接地址。
 
         :param links: The links of this Flavor.
-        :type: list[FlavorLink]
+        :type links: list[:class:`huaweicloudsdkecs.v2.FlavorLink`]
         """
         self._links = links
 
@@ -388,7 +421,7 @@ class Flavor:
 
 
         :return: The os_extra_specs of this Flavor.
-        :rtype: FlavorExtraSpec
+        :rtype: :class:`huaweicloudsdkecs.v2.FlavorExtraSpec`
         """
         return self._os_extra_specs
 
@@ -398,7 +431,7 @@ class Flavor:
 
 
         :param os_extra_specs: The os_extra_specs of this Flavor.
-        :type: FlavorExtraSpec
+        :type os_extra_specs: :class:`huaweicloudsdkecs.v2.FlavorExtraSpec`
         """
         self._os_extra_specs = os_extra_specs
 
@@ -408,7 +441,7 @@ class Flavor:
 
 
         :return: The attachable_quantity of this Flavor.
-        :rtype: ServerAttachableQuantity
+        :rtype: :class:`huaweicloudsdkecs.v2.ServerAttachableQuantity`
         """
         return self._attachable_quantity
 
@@ -418,7 +451,7 @@ class Flavor:
 
 
         :param attachable_quantity: The attachable_quantity of this Flavor.
-        :type: ServerAttachableQuantity
+        :type attachable_quantity: :class:`huaweicloudsdkecs.v2.ServerAttachableQuantity`
         """
         self._attachable_quantity = attachable_quantity
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateNetworkInstanceRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateNetworkInstanceRequestBody:
     }
 
     def __init__(self, network_instance=None):
-        """UpdateNetworkInstanceRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateNetworkInstanceRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param network_instance: 
+        :type network_instance: :class:`huaweicloudsdkcc.v3.UpdateNetworkInstance`
+        """
         
         
 
@@ -45,7 +50,7 @@ class UpdateNetworkInstanceRequestBody:
 
 
         :return: The network_instance of this UpdateNetworkInstanceRequestBody.
-        :rtype: UpdateNetworkInstance
+        :rtype: :class:`huaweicloudsdkcc.v3.UpdateNetworkInstance`
         """
         return self._network_instance
 
@@ -55,7 +60,7 @@ class UpdateNetworkInstanceRequestBody:
 
 
         :param network_instance: The network_instance of this UpdateNetworkInstanceRequestBody.
-        :type: UpdateNetworkInstance
+        :type network_instance: :class:`huaweicloudsdkcc.v3.UpdateNetworkInstance`
         """
         self._network_instance = network_instance
 

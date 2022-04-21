@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TemplateResponseBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -60,7 +59,43 @@ class TemplateResponseBody:
     }
 
     def __init__(self, id=None, name=None, is_template=None, region=None, projectid=None, target_server_name=None, availability_zone=None, volumetype=None, flavor=None, vpc=None, nics=None, security_groups=None, publicip=None, disk=None, data_volume_type=None, target_password=None):
-        """TemplateResponseBody - a model defined in huaweicloud sdk"""
+        """TemplateResponseBody
+
+        The model defined in huaweicloud sdk
+
+        :param id: 模板ID
+        :type id: str
+        :param name: 模板名称
+        :type name: str
+        :param is_template: 是否是通用模板，如果模板关联一个任务，则不算通用模板
+        :type is_template: str
+        :param region: Region信息
+        :type region: str
+        :param projectid: 项目ID
+        :type projectid: str
+        :param target_server_name: 目标端服务器名称
+        :type target_server_name: str
+        :param availability_zone: 可用区
+        :type availability_zone: str
+        :param volumetype: 磁盘类型
+        :type volumetype: str
+        :param flavor: 虚拟机规格
+        :type flavor: str
+        :param vpc: 
+        :type vpc: :class:`huaweicloudsdksms.v3.VpcObject`
+        :param nics: 网卡信息，支持多个网卡，如果是自动创建，只填一个，id使用“autoCreate”
+        :type nics: list[:class:`huaweicloudsdksms.v3.Nics`]
+        :param security_groups: 安全组，支持多个安全组，如果是自动创建，只填一个，id使用“autoCreate”
+        :type security_groups: list[:class:`huaweicloudsdksms.v3.SgObject`]
+        :param publicip: 
+        :type publicip: :class:`huaweicloudsdksms.v3.PublicIp`
+        :param disk: 磁盘信息
+        :type disk: list[:class:`huaweicloudsdksms.v3.TemplateDisk`]
+        :param data_volume_type: 数据盘磁盘类型
+        :type data_volume_type: str
+        :param target_password: 目的端密码
+        :type target_password: str
+        """
         
         
 
@@ -119,7 +154,7 @@ class TemplateResponseBody:
         模板ID
 
         :param id: The id of this TemplateResponseBody.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -141,7 +176,7 @@ class TemplateResponseBody:
         模板名称
 
         :param name: The name of this TemplateResponseBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -163,7 +198,7 @@ class TemplateResponseBody:
         是否是通用模板，如果模板关联一个任务，则不算通用模板
 
         :param is_template: The is_template of this TemplateResponseBody.
-        :type: str
+        :type is_template: str
         """
         self._is_template = is_template
 
@@ -185,7 +220,7 @@ class TemplateResponseBody:
         Region信息
 
         :param region: The region of this TemplateResponseBody.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -207,7 +242,7 @@ class TemplateResponseBody:
         项目ID
 
         :param projectid: The projectid of this TemplateResponseBody.
-        :type: str
+        :type projectid: str
         """
         self._projectid = projectid
 
@@ -229,7 +264,7 @@ class TemplateResponseBody:
         目标端服务器名称
 
         :param target_server_name: The target_server_name of this TemplateResponseBody.
-        :type: str
+        :type target_server_name: str
         """
         self._target_server_name = target_server_name
 
@@ -251,7 +286,7 @@ class TemplateResponseBody:
         可用区
 
         :param availability_zone: The availability_zone of this TemplateResponseBody.
-        :type: str
+        :type availability_zone: str
         """
         self._availability_zone = availability_zone
 
@@ -273,7 +308,7 @@ class TemplateResponseBody:
         磁盘类型
 
         :param volumetype: The volumetype of this TemplateResponseBody.
-        :type: str
+        :type volumetype: str
         """
         self._volumetype = volumetype
 
@@ -295,7 +330,7 @@ class TemplateResponseBody:
         虚拟机规格
 
         :param flavor: The flavor of this TemplateResponseBody.
-        :type: str
+        :type flavor: str
         """
         self._flavor = flavor
 
@@ -305,7 +340,7 @@ class TemplateResponseBody:
 
 
         :return: The vpc of this TemplateResponseBody.
-        :rtype: VpcObject
+        :rtype: :class:`huaweicloudsdksms.v3.VpcObject`
         """
         return self._vpc
 
@@ -315,7 +350,7 @@ class TemplateResponseBody:
 
 
         :param vpc: The vpc of this TemplateResponseBody.
-        :type: VpcObject
+        :type vpc: :class:`huaweicloudsdksms.v3.VpcObject`
         """
         self._vpc = vpc
 
@@ -326,7 +361,7 @@ class TemplateResponseBody:
         网卡信息，支持多个网卡，如果是自动创建，只填一个，id使用“autoCreate”
 
         :return: The nics of this TemplateResponseBody.
-        :rtype: list[Nics]
+        :rtype: list[:class:`huaweicloudsdksms.v3.Nics`]
         """
         return self._nics
 
@@ -337,7 +372,7 @@ class TemplateResponseBody:
         网卡信息，支持多个网卡，如果是自动创建，只填一个，id使用“autoCreate”
 
         :param nics: The nics of this TemplateResponseBody.
-        :type: list[Nics]
+        :type nics: list[:class:`huaweicloudsdksms.v3.Nics`]
         """
         self._nics = nics
 
@@ -348,7 +383,7 @@ class TemplateResponseBody:
         安全组，支持多个安全组，如果是自动创建，只填一个，id使用“autoCreate”
 
         :return: The security_groups of this TemplateResponseBody.
-        :rtype: list[SgObject]
+        :rtype: list[:class:`huaweicloudsdksms.v3.SgObject`]
         """
         return self._security_groups
 
@@ -359,7 +394,7 @@ class TemplateResponseBody:
         安全组，支持多个安全组，如果是自动创建，只填一个，id使用“autoCreate”
 
         :param security_groups: The security_groups of this TemplateResponseBody.
-        :type: list[SgObject]
+        :type security_groups: list[:class:`huaweicloudsdksms.v3.SgObject`]
         """
         self._security_groups = security_groups
 
@@ -369,7 +404,7 @@ class TemplateResponseBody:
 
 
         :return: The publicip of this TemplateResponseBody.
-        :rtype: PublicIp
+        :rtype: :class:`huaweicloudsdksms.v3.PublicIp`
         """
         return self._publicip
 
@@ -379,7 +414,7 @@ class TemplateResponseBody:
 
 
         :param publicip: The publicip of this TemplateResponseBody.
-        :type: PublicIp
+        :type publicip: :class:`huaweicloudsdksms.v3.PublicIp`
         """
         self._publicip = publicip
 
@@ -390,7 +425,7 @@ class TemplateResponseBody:
         磁盘信息
 
         :return: The disk of this TemplateResponseBody.
-        :rtype: list[TemplateDisk]
+        :rtype: list[:class:`huaweicloudsdksms.v3.TemplateDisk`]
         """
         return self._disk
 
@@ -401,7 +436,7 @@ class TemplateResponseBody:
         磁盘信息
 
         :param disk: The disk of this TemplateResponseBody.
-        :type: list[TemplateDisk]
+        :type disk: list[:class:`huaweicloudsdksms.v3.TemplateDisk`]
         """
         self._disk = disk
 
@@ -423,7 +458,7 @@ class TemplateResponseBody:
         数据盘磁盘类型
 
         :param data_volume_type: The data_volume_type of this TemplateResponseBody.
-        :type: str
+        :type data_volume_type: str
         """
         self._data_volume_type = data_volume_type
 
@@ -445,7 +480,7 @@ class TemplateResponseBody:
         目的端密码
 
         :param target_password: The target_password of this TemplateResponseBody.
-        :type: str
+        :type target_password: str
         """
         self._target_password = target_password
 

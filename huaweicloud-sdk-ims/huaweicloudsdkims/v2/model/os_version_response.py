@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OsVersionResponse:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class OsVersionResponse:
     }
 
     def __init__(self, status=None, id=None, links=None):
-        """OsVersionResponse - a model defined in huaweicloud sdk"""
+        """OsVersionResponse
+
+        The model defined in huaweicloud sdk
+
+        :param status: 接口状态。
+        :type status: str
+        :param id: 接口ID。
+        :type id: str
+        :param links: 自描述信息。
+        :type links: list[:class:`huaweicloudsdkims.v2.Links`]
+        """
         
         
 
@@ -67,7 +76,7 @@ class OsVersionResponse:
         接口状态。
 
         :param status: The status of this OsVersionResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -89,7 +98,7 @@ class OsVersionResponse:
         接口ID。
 
         :param id: The id of this OsVersionResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -100,7 +109,7 @@ class OsVersionResponse:
         自描述信息。
 
         :return: The links of this OsVersionResponse.
-        :rtype: list[Links]
+        :rtype: list[:class:`huaweicloudsdkims.v2.Links`]
         """
         return self._links
 
@@ -111,7 +120,7 @@ class OsVersionResponse:
         自描述信息。
 
         :param links: The links of this OsVersionResponse.
-        :type: list[Links]
+        :type links: list[:class:`huaweicloudsdkims.v2.Links`]
         """
         self._links = links
 

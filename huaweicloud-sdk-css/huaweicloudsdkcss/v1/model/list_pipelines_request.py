@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPipelinesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListPipelinesRequest:
     }
 
     def __init__(self, cluster_id=None):
-        """ListPipelinesRequest - a model defined in huaweicloud sdk"""
+        """ListPipelinesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 指定查询集群ID。
+        :type cluster_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ListPipelinesRequest:
         指定查询集群ID。
 
         :param cluster_id: The cluster_id of this ListPipelinesRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 

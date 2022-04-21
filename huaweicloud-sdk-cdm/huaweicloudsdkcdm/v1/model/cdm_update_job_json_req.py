@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CdmUpdateJobJsonReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CdmUpdateJobJsonReq:
     }
 
     def __init__(self, jobs=None):
-        """CdmUpdateJobJsonReq - a model defined in huaweicloud sdk"""
+        """CdmUpdateJobJsonReq
+
+        The model defined in huaweicloud sdk
+
+        :param jobs: 作业列表，请参见jobs数据结构说明。
+        :type jobs: list[:class:`huaweicloudsdkcdm.v1.Job`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class CdmUpdateJobJsonReq:
         作业列表，请参见jobs数据结构说明。
 
         :return: The jobs of this CdmUpdateJobJsonReq.
-        :rtype: list[Job]
+        :rtype: list[:class:`huaweicloudsdkcdm.v1.Job`]
         """
         return self._jobs
 
@@ -57,7 +62,7 @@ class CdmUpdateJobJsonReq:
         作业列表，请参见jobs数据结构说明。
 
         :param jobs: The jobs of this CdmUpdateJobJsonReq.
-        :type: list[Job]
+        :type jobs: list[:class:`huaweicloudsdkcdm.v1.Job`]
         """
         self._jobs = jobs
 

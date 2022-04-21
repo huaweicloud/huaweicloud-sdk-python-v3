@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateMetadataResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateMetadataResponse(SdkResponse):
     }
 
     def __init__(self, message=None):
-        """CreateMetadataResponse - a model defined in huaweicloud sdk"""
+        """CreateMetadataResponse
+
+        The model defined in huaweicloud sdk
+
+        :param message: 导入结果信息。
+        :type message: str
+        """
         
         super(CreateMetadataResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class CreateMetadataResponse(SdkResponse):
         导入结果信息。
 
         :param message: The message of this CreateMetadataResponse.
-        :type: str
+        :type message: str
         """
         self._message = message
 

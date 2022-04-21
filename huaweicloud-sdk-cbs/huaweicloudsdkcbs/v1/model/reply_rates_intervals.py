@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ReplyRatesIntervals:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class ReplyRatesIntervals:
     }
 
     def __init__(self, start=None, question_count=None, direct_count=None, recommend_count=None, notmatch_count=None, invalid_count=None, chat_count=None, direct_rate=None, recommend_rate=None, notmatch_rate=None, chat_rate=None, invalid_rate=None, dialog_count=None, dialog_rate=None):
-        """ReplyRatesIntervals - a model defined in huaweicloud sdk"""
+        """ReplyRatesIntervals
+
+        The model defined in huaweicloud sdk
+
+        :param start: 间隔周期开始时间。
+        :type start: str
+        :param question_count: 间隔周期用户提问总数。
+        :type question_count: int
+        :param direct_count: 间隔周期直接回答个数。
+        :type direct_count: int
+        :param recommend_count: 间隔周期推荐回答个数。
+        :type recommend_count: int
+        :param notmatch_count: 间隔周期未匹配个数。
+        :type notmatch_count: int
+        :param invalid_count: 间隔周期无效问题个数。
+        :type invalid_count: int
+        :param chat_count: 间隔周期闲聊匹配个数。
+        :type chat_count: int
+        :param direct_rate: 间隔周期直接回答比率，保留小数点后三位。
+        :type direct_rate: float
+        :param recommend_rate: 间隔周期推荐回答比率，保留小数点后三位。
+        :type recommend_rate: float
+        :param notmatch_rate: 间隔周期未匹配比率，保留小数点后三位。
+        :type notmatch_rate: float
+        :param chat_rate: 间隔周期闲聊匹配比率，保留小数点后三位。
+        :type chat_rate: float
+        :param invalid_rate: 间隔周期无效问题比率，保留小数点后三位。
+        :type invalid_rate: float
+        :param dialog_count: 多轮会话次数。
+        :type dialog_count: int
+        :param dialog_rate: 多轮会话比例。
+        :type dialog_rate: float
+        """
         
         
 
@@ -109,7 +140,7 @@ class ReplyRatesIntervals:
         间隔周期开始时间。
 
         :param start: The start of this ReplyRatesIntervals.
-        :type: str
+        :type start: str
         """
         self._start = start
 
@@ -131,7 +162,7 @@ class ReplyRatesIntervals:
         间隔周期用户提问总数。
 
         :param question_count: The question_count of this ReplyRatesIntervals.
-        :type: int
+        :type question_count: int
         """
         self._question_count = question_count
 
@@ -153,7 +184,7 @@ class ReplyRatesIntervals:
         间隔周期直接回答个数。
 
         :param direct_count: The direct_count of this ReplyRatesIntervals.
-        :type: int
+        :type direct_count: int
         """
         self._direct_count = direct_count
 
@@ -175,7 +206,7 @@ class ReplyRatesIntervals:
         间隔周期推荐回答个数。
 
         :param recommend_count: The recommend_count of this ReplyRatesIntervals.
-        :type: int
+        :type recommend_count: int
         """
         self._recommend_count = recommend_count
 
@@ -197,7 +228,7 @@ class ReplyRatesIntervals:
         间隔周期未匹配个数。
 
         :param notmatch_count: The notmatch_count of this ReplyRatesIntervals.
-        :type: int
+        :type notmatch_count: int
         """
         self._notmatch_count = notmatch_count
 
@@ -219,7 +250,7 @@ class ReplyRatesIntervals:
         间隔周期无效问题个数。
 
         :param invalid_count: The invalid_count of this ReplyRatesIntervals.
-        :type: int
+        :type invalid_count: int
         """
         self._invalid_count = invalid_count
 
@@ -241,7 +272,7 @@ class ReplyRatesIntervals:
         间隔周期闲聊匹配个数。
 
         :param chat_count: The chat_count of this ReplyRatesIntervals.
-        :type: int
+        :type chat_count: int
         """
         self._chat_count = chat_count
 
@@ -263,7 +294,7 @@ class ReplyRatesIntervals:
         间隔周期直接回答比率，保留小数点后三位。
 
         :param direct_rate: The direct_rate of this ReplyRatesIntervals.
-        :type: float
+        :type direct_rate: float
         """
         self._direct_rate = direct_rate
 
@@ -285,7 +316,7 @@ class ReplyRatesIntervals:
         间隔周期推荐回答比率，保留小数点后三位。
 
         :param recommend_rate: The recommend_rate of this ReplyRatesIntervals.
-        :type: float
+        :type recommend_rate: float
         """
         self._recommend_rate = recommend_rate
 
@@ -307,7 +338,7 @@ class ReplyRatesIntervals:
         间隔周期未匹配比率，保留小数点后三位。
 
         :param notmatch_rate: The notmatch_rate of this ReplyRatesIntervals.
-        :type: float
+        :type notmatch_rate: float
         """
         self._notmatch_rate = notmatch_rate
 
@@ -329,7 +360,7 @@ class ReplyRatesIntervals:
         间隔周期闲聊匹配比率，保留小数点后三位。
 
         :param chat_rate: The chat_rate of this ReplyRatesIntervals.
-        :type: float
+        :type chat_rate: float
         """
         self._chat_rate = chat_rate
 
@@ -351,7 +382,7 @@ class ReplyRatesIntervals:
         间隔周期无效问题比率，保留小数点后三位。
 
         :param invalid_rate: The invalid_rate of this ReplyRatesIntervals.
-        :type: float
+        :type invalid_rate: float
         """
         self._invalid_rate = invalid_rate
 
@@ -373,7 +404,7 @@ class ReplyRatesIntervals:
         多轮会话次数。
 
         :param dialog_count: The dialog_count of this ReplyRatesIntervals.
-        :type: int
+        :type dialog_count: int
         """
         self._dialog_count = dialog_count
 
@@ -395,7 +426,7 @@ class ReplyRatesIntervals:
         多轮会话比例。
 
         :param dialog_rate: The dialog_rate of this ReplyRatesIntervals.
-        :type: float
+        :type dialog_rate: float
         """
         self._dialog_rate = dialog_rate
 

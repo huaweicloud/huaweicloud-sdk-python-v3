@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RuleConfig:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class RuleConfig:
     }
 
     def __init__(self, id=None, rule_id=None, default_value=None, option_value=None, option_key=None, option_name=None, template_id=None, description=None):
-        """RuleConfig - a model defined in huaweicloud sdk"""
+        """RuleConfig
+
+        The model defined in huaweicloud sdk
+
+        :param id: 规则配置ID
+        :type id: int
+        :param rule_id: 规则ID
+        :type rule_id: int
+        :param default_value: 默认值
+        :type default_value: str
+        :param option_value: 当前
+        :type option_value: str
+        :param option_key: 当前规则配置项key
+        :type option_key: str
+        :param option_name: 当前规则配置项名称
+        :type option_name: str
+        :param template_id: 规则集id
+        :type template_id: str
+        :param description: 描述
+        :type description: str
+        """
         
         
 
@@ -93,7 +112,7 @@ class RuleConfig:
         规则配置ID
 
         :param id: The id of this RuleConfig.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -115,7 +134,7 @@ class RuleConfig:
         规则ID
 
         :param rule_id: The rule_id of this RuleConfig.
-        :type: int
+        :type rule_id: int
         """
         self._rule_id = rule_id
 
@@ -137,7 +156,7 @@ class RuleConfig:
         默认值
 
         :param default_value: The default_value of this RuleConfig.
-        :type: str
+        :type default_value: str
         """
         self._default_value = default_value
 
@@ -159,7 +178,7 @@ class RuleConfig:
         当前
 
         :param option_value: The option_value of this RuleConfig.
-        :type: str
+        :type option_value: str
         """
         self._option_value = option_value
 
@@ -181,7 +200,7 @@ class RuleConfig:
         当前规则配置项key
 
         :param option_key: The option_key of this RuleConfig.
-        :type: str
+        :type option_key: str
         """
         self._option_key = option_key
 
@@ -203,7 +222,7 @@ class RuleConfig:
         当前规则配置项名称
 
         :param option_name: The option_name of this RuleConfig.
-        :type: str
+        :type option_name: str
         """
         self._option_name = option_name
 
@@ -225,7 +244,7 @@ class RuleConfig:
         规则集id
 
         :param template_id: The template_id of this RuleConfig.
-        :type: str
+        :type template_id: str
         """
         self._template_id = template_id
 
@@ -247,7 +266,7 @@ class RuleConfig:
         描述
 
         :param description: The description of this RuleConfig.
-        :type: str
+        :type description: str
         """
         self._description = description
 

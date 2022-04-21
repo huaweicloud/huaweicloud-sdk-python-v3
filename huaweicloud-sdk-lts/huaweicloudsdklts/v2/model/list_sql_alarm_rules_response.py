@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSqlAlarmRulesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListSqlAlarmRulesResponse(SdkResponse):
     }
 
     def __init__(self, sql_alarm_rules=None):
-        """ListSqlAlarmRulesResponse - a model defined in huaweicloud sdk"""
+        """ListSqlAlarmRulesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param sql_alarm_rules: SQL告警
+        :type sql_alarm_rules: list[:class:`huaweicloudsdklts.v2.SqlAlarmRuleRespList`]
+        """
         
         super(ListSqlAlarmRulesResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListSqlAlarmRulesResponse(SdkResponse):
         SQL告警
 
         :return: The sql_alarm_rules of this ListSqlAlarmRulesResponse.
-        :rtype: list[SqlAlarmRuleRespList]
+        :rtype: list[:class:`huaweicloudsdklts.v2.SqlAlarmRuleRespList`]
         """
         return self._sql_alarm_rules
 
@@ -58,7 +63,7 @@ class ListSqlAlarmRulesResponse(SdkResponse):
         SQL告警
 
         :param sql_alarm_rules: The sql_alarm_rules of this ListSqlAlarmRulesResponse.
-        :type: list[SqlAlarmRuleRespList]
+        :type sql_alarm_rules: list[:class:`huaweicloudsdklts.v2.SqlAlarmRuleRespList`]
         """
         self._sql_alarm_rules = sql_alarm_rules
 

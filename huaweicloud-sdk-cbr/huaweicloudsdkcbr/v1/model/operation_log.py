@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OperationLog:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -58,7 +57,41 @@ class OperationLog:
     }
 
     def __init__(self, checkpoint_id=None, created_at=None, ended_at=None, error_info=None, extra_info=None, id=None, operation_type=None, policy_id=None, project_id=None, provider_id=None, started_at=None, status=None, updated_at=None, vault_id=None, vault_name=None):
-        """OperationLog - a model defined in huaweicloud sdk"""
+        """OperationLog
+
+        The model defined in huaweicloud sdk
+
+        :param checkpoint_id: 备份记录id
+        :type checkpoint_id: str
+        :param created_at: 创建时间,例如: \&quot;2020-02-23T01:00:32Z\&quot;
+        :type created_at: str
+        :param ended_at: 任务结束时间,例如: \&quot;2020-02-23T01:00:32Z\&quot;
+        :type ended_at: str
+        :param error_info: 
+        :type error_info: :class:`huaweicloudsdkcbr.v1.OpErrorInfo`
+        :param extra_info: 
+        :type extra_info: :class:`huaweicloudsdkcbr.v1.OpExtraInfo`
+        :param id: 任务id
+        :type id: str
+        :param operation_type: 任务类型
+        :type operation_type: str
+        :param policy_id: 策略ID
+        :type policy_id: str
+        :param project_id: 项目ID
+        :type project_id: str
+        :param provider_id: 备份提供商ID。用于区分备份对象。
+        :type provider_id: str
+        :param started_at: 任务开始时间,例如: \&quot;2020-02-23T01:00:32Z\&quot;
+        :type started_at: str
+        :param status: 任务状态
+        :type status: str
+        :param updated_at: 修改时间,例如: \&quot;2020-02-23T01:00:32Z\&quot;
+        :type updated_at: str
+        :param vault_id: 任务操作资源所属存储库ID
+        :type vault_id: str
+        :param vault_name: 任务操作资源所属存储库名称
+        :type vault_name: str
+        """
         
         
 
@@ -121,7 +154,7 @@ class OperationLog:
         备份记录id
 
         :param checkpoint_id: The checkpoint_id of this OperationLog.
-        :type: str
+        :type checkpoint_id: str
         """
         self._checkpoint_id = checkpoint_id
 
@@ -143,7 +176,7 @@ class OperationLog:
         创建时间,例如: \"2020-02-23T01:00:32Z\"
 
         :param created_at: The created_at of this OperationLog.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -165,7 +198,7 @@ class OperationLog:
         任务结束时间,例如: \"2020-02-23T01:00:32Z\"
 
         :param ended_at: The ended_at of this OperationLog.
-        :type: str
+        :type ended_at: str
         """
         self._ended_at = ended_at
 
@@ -175,7 +208,7 @@ class OperationLog:
 
 
         :return: The error_info of this OperationLog.
-        :rtype: OpErrorInfo
+        :rtype: :class:`huaweicloudsdkcbr.v1.OpErrorInfo`
         """
         return self._error_info
 
@@ -185,7 +218,7 @@ class OperationLog:
 
 
         :param error_info: The error_info of this OperationLog.
-        :type: OpErrorInfo
+        :type error_info: :class:`huaweicloudsdkcbr.v1.OpErrorInfo`
         """
         self._error_info = error_info
 
@@ -195,7 +228,7 @@ class OperationLog:
 
 
         :return: The extra_info of this OperationLog.
-        :rtype: OpExtraInfo
+        :rtype: :class:`huaweicloudsdkcbr.v1.OpExtraInfo`
         """
         return self._extra_info
 
@@ -205,7 +238,7 @@ class OperationLog:
 
 
         :param extra_info: The extra_info of this OperationLog.
-        :type: OpExtraInfo
+        :type extra_info: :class:`huaweicloudsdkcbr.v1.OpExtraInfo`
         """
         self._extra_info = extra_info
 
@@ -227,7 +260,7 @@ class OperationLog:
         任务id
 
         :param id: The id of this OperationLog.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -249,7 +282,7 @@ class OperationLog:
         任务类型
 
         :param operation_type: The operation_type of this OperationLog.
-        :type: str
+        :type operation_type: str
         """
         self._operation_type = operation_type
 
@@ -271,7 +304,7 @@ class OperationLog:
         策略ID
 
         :param policy_id: The policy_id of this OperationLog.
-        :type: str
+        :type policy_id: str
         """
         self._policy_id = policy_id
 
@@ -293,7 +326,7 @@ class OperationLog:
         项目ID
 
         :param project_id: The project_id of this OperationLog.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -315,7 +348,7 @@ class OperationLog:
         备份提供商ID。用于区分备份对象。
 
         :param provider_id: The provider_id of this OperationLog.
-        :type: str
+        :type provider_id: str
         """
         self._provider_id = provider_id
 
@@ -337,7 +370,7 @@ class OperationLog:
         任务开始时间,例如: \"2020-02-23T01:00:32Z\"
 
         :param started_at: The started_at of this OperationLog.
-        :type: str
+        :type started_at: str
         """
         self._started_at = started_at
 
@@ -359,7 +392,7 @@ class OperationLog:
         任务状态
 
         :param status: The status of this OperationLog.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -381,7 +414,7 @@ class OperationLog:
         修改时间,例如: \"2020-02-23T01:00:32Z\"
 
         :param updated_at: The updated_at of this OperationLog.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 
@@ -403,7 +436,7 @@ class OperationLog:
         任务操作资源所属存储库ID
 
         :param vault_id: The vault_id of this OperationLog.
-        :type: str
+        :type vault_id: str
         """
         self._vault_id = vault_id
 
@@ -425,7 +458,7 @@ class OperationLog:
         任务操作资源所属存储库名称
 
         :param vault_name: The vault_name of this OperationLog.
-        :type: str
+        :type vault_name: str
         """
         self._vault_name = vault_name
 

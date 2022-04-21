@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddCorpResDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class AddCorpResDTO:
     }
 
     def __init__(self, resource=None):
-        """AddCorpResDTO - a model defined in huaweicloud sdk"""
+        """AddCorpResDTO
+
+        The model defined in huaweicloud sdk
+
+        :param resource: 企业待添加的资源列表
+        :type resource: list[:class:`huaweicloudsdkmeeting.v1.ResourceDTO`]
+        """
         
         
 
@@ -47,7 +52,7 @@ class AddCorpResDTO:
         企业待添加的资源列表
 
         :return: The resource of this AddCorpResDTO.
-        :rtype: list[ResourceDTO]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.ResourceDTO`]
         """
         return self._resource
 
@@ -58,7 +63,7 @@ class AddCorpResDTO:
         企业待添加的资源列表
 
         :param resource: The resource of this AddCorpResDTO.
-        :type: list[ResourceDTO]
+        :type resource: list[:class:`huaweicloudsdkmeeting.v1.ResourceDTO`]
         """
         self._resource = resource
 

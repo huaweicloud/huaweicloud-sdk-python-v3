@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MigrateSubNetworkInterfaceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class MigrateSubNetworkInterfaceRequest:
     }
 
     def __init__(self, body=None):
-        """MigrateSubNetworkInterfaceRequest - a model defined in huaweicloud sdk"""
+        """MigrateSubNetworkInterfaceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the MigrateSubNetworkInterfaceRequest
+        :type body: :class:`huaweicloudsdkvpc.v3.MigrateSubNetworkInterfaceRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class MigrateSubNetworkInterfaceRequest:
 
 
         :return: The body of this MigrateSubNetworkInterfaceRequest.
-        :rtype: MigrateSubNetworkInterfaceRequestBody
+        :rtype: :class:`huaweicloudsdkvpc.v3.MigrateSubNetworkInterfaceRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class MigrateSubNetworkInterfaceRequest:
 
 
         :param body: The body of this MigrateSubNetworkInterfaceRequest.
-        :type: MigrateSubNetworkInterfaceRequestBody
+        :type body: :class:`huaweicloudsdkvpc.v3.MigrateSubNetworkInterfaceRequestBody`
         """
         self._body = body
 

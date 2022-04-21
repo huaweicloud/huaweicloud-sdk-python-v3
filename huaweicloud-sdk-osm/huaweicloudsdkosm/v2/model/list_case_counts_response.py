@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCaseCountsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListCaseCountsResponse(SdkResponse):
     }
 
     def __init__(self, incident_status_counts=None):
-        """ListCaseCountsResponse - a model defined in huaweicloud sdk"""
+        """ListCaseCountsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param incident_status_counts: 状态数量统计列表
+        :type incident_status_counts: list[:class:`huaweicloudsdkosm.v2.IncidentStatusCount`]
+        """
         
         super(ListCaseCountsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListCaseCountsResponse(SdkResponse):
         状态数量统计列表
 
         :return: The incident_status_counts of this ListCaseCountsResponse.
-        :rtype: list[IncidentStatusCount]
+        :rtype: list[:class:`huaweicloudsdkosm.v2.IncidentStatusCount`]
         """
         return self._incident_status_counts
 
@@ -58,7 +63,7 @@ class ListCaseCountsResponse(SdkResponse):
         状态数量统计列表
 
         :param incident_status_counts: The incident_status_counts of this ListCaseCountsResponse.
-        :type: list[IncidentStatusCount]
+        :type incident_status_counts: list[:class:`huaweicloudsdkosm.v2.IncidentStatusCount`]
         """
         self._incident_status_counts = incident_status_counts
 

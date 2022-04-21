@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteAddonInstanceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteAddonInstanceRequest:
     }
 
     def __init__(self, id=None, cluster_id=None):
-        """DeleteAddonInstanceRequest - a model defined in huaweicloud sdk"""
+        """DeleteAddonInstanceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param id: 插件实例id
+        :type id: str
+        :param cluster_id: 集群 ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)
+        :type cluster_id: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class DeleteAddonInstanceRequest:
         插件实例id
 
         :param id: The id of this DeleteAddonInstanceRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -84,7 +91,7 @@ class DeleteAddonInstanceRequest:
         集群 ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)
 
         :param cluster_id: The cluster_id of this DeleteAddonInstanceRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 

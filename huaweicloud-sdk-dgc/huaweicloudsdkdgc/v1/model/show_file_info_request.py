@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowFileInfoRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowFileInfoRequest:
     }
 
     def __init__(self, body=None):
-        """ShowFileInfoRequest - a model defined in huaweicloud sdk"""
+        """ShowFileInfoRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the ShowFileInfoRequest
+        :type body: :class:`huaweicloudsdkdgc.v1.FilePath`
+        """
         
         
 
@@ -46,7 +51,7 @@ class ShowFileInfoRequest:
 
 
         :return: The body of this ShowFileInfoRequest.
-        :rtype: FilePath
+        :rtype: :class:`huaweicloudsdkdgc.v1.FilePath`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class ShowFileInfoRequest:
 
 
         :param body: The body of this ShowFileInfoRequest.
-        :type: FilePath
+        :type body: :class:`huaweicloudsdkdgc.v1.FilePath`
         """
         self._body = body
 

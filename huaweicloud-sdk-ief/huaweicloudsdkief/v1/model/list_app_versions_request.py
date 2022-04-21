@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAppVersionsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListAppVersionsRequest:
     }
 
     def __init__(self, ief_instance_id=None, app_id=None, limit=None, offset=None):
-        """ListAppVersionsRequest - a model defined in huaweicloud sdk"""
+        """ListAppVersionsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param ief_instance_id: 铂金版实例ID，专业版实例为空值
+        :type ief_instance_id: str
+        :param app_id: 应用模板ID
+        :type app_id: str
+        :param limit: 每页显示的条目数量，取值范围1~1000，默认为1000
+        :type limit: str
+        :param offset: 查询的起始位置，取值范围为非负整数，默认为0
+        :type offset: str
+        """
         
         
 
@@ -72,7 +83,7 @@ class ListAppVersionsRequest:
         铂金版实例ID，专业版实例为空值
 
         :param ief_instance_id: The ief_instance_id of this ListAppVersionsRequest.
-        :type: str
+        :type ief_instance_id: str
         """
         self._ief_instance_id = ief_instance_id
 
@@ -94,7 +105,7 @@ class ListAppVersionsRequest:
         应用模板ID
 
         :param app_id: The app_id of this ListAppVersionsRequest.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -116,7 +127,7 @@ class ListAppVersionsRequest:
         每页显示的条目数量，取值范围1~1000，默认为1000
 
         :param limit: The limit of this ListAppVersionsRequest.
-        :type: str
+        :type limit: str
         """
         self._limit = limit
 
@@ -138,7 +149,7 @@ class ListAppVersionsRequest:
         查询的起始位置，取值范围为非负整数，默认为0
 
         :param offset: The offset of this ListAppVersionsRequest.
-        :type: str
+        :type offset: str
         """
         self._offset = offset
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ComponentCreate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ComponentCreate:
     }
 
     def __init__(self, name=None, runtime=None, category=None, sub_category=None, description=None, source=None, build=None):
-        """ComponentCreate - a model defined in huaweicloud sdk"""
+        """ComponentCreate
+
+        The model defined in huaweicloud sdk
+
+        :param name: 应用组件名称。
+        :type name: str
+        :param runtime: 
+        :type runtime: :class:`huaweicloudsdkservicestage.v2.RuntimeType`
+        :param category: 
+        :type category: :class:`huaweicloudsdkservicestage.v2.ComponentCategory`
+        :param sub_category: 
+        :type sub_category: :class:`huaweicloudsdkservicestage.v2.ComponentSubCategory`
+        :param description: 描述。
+        :type description: str
+        :param source: 
+        :type source: :class:`huaweicloudsdkservicestage.v2.SourceObject`
+        :param build: 
+        :type build: :class:`huaweicloudsdkservicestage.v2.Build`
+        """
         
         
 
@@ -85,7 +102,7 @@ class ComponentCreate:
         应用组件名称。
 
         :param name: The name of this ComponentCreate.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -95,7 +112,7 @@ class ComponentCreate:
 
 
         :return: The runtime of this ComponentCreate.
-        :rtype: RuntimeType
+        :rtype: :class:`huaweicloudsdkservicestage.v2.RuntimeType`
         """
         return self._runtime
 
@@ -105,7 +122,7 @@ class ComponentCreate:
 
 
         :param runtime: The runtime of this ComponentCreate.
-        :type: RuntimeType
+        :type runtime: :class:`huaweicloudsdkservicestage.v2.RuntimeType`
         """
         self._runtime = runtime
 
@@ -115,7 +132,7 @@ class ComponentCreate:
 
 
         :return: The category of this ComponentCreate.
-        :rtype: ComponentCategory
+        :rtype: :class:`huaweicloudsdkservicestage.v2.ComponentCategory`
         """
         return self._category
 
@@ -125,7 +142,7 @@ class ComponentCreate:
 
 
         :param category: The category of this ComponentCreate.
-        :type: ComponentCategory
+        :type category: :class:`huaweicloudsdkservicestage.v2.ComponentCategory`
         """
         self._category = category
 
@@ -135,7 +152,7 @@ class ComponentCreate:
 
 
         :return: The sub_category of this ComponentCreate.
-        :rtype: ComponentSubCategory
+        :rtype: :class:`huaweicloudsdkservicestage.v2.ComponentSubCategory`
         """
         return self._sub_category
 
@@ -145,7 +162,7 @@ class ComponentCreate:
 
 
         :param sub_category: The sub_category of this ComponentCreate.
-        :type: ComponentSubCategory
+        :type sub_category: :class:`huaweicloudsdkservicestage.v2.ComponentSubCategory`
         """
         self._sub_category = sub_category
 
@@ -167,7 +184,7 @@ class ComponentCreate:
         描述。
 
         :param description: The description of this ComponentCreate.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -177,7 +194,7 @@ class ComponentCreate:
 
 
         :return: The source of this ComponentCreate.
-        :rtype: SourceObject
+        :rtype: :class:`huaweicloudsdkservicestage.v2.SourceObject`
         """
         return self._source
 
@@ -187,7 +204,7 @@ class ComponentCreate:
 
 
         :param source: The source of this ComponentCreate.
-        :type: SourceObject
+        :type source: :class:`huaweicloudsdkservicestage.v2.SourceObject`
         """
         self._source = source
 
@@ -197,7 +214,7 @@ class ComponentCreate:
 
 
         :return: The build of this ComponentCreate.
-        :rtype: Build
+        :rtype: :class:`huaweicloudsdkservicestage.v2.Build`
         """
         return self._build
 
@@ -207,7 +224,7 @@ class ComponentCreate:
 
 
         :param build: The build of this ComponentCreate.
-        :type: Build
+        :type build: :class:`huaweicloudsdkservicestage.v2.Build`
         """
         self._build = build
 

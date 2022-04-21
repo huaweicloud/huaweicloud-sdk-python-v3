@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAddressGroupResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListAddressGroupResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, address_groups=None, page_info=None):
-        """ListAddressGroupResponse - a model defined in huaweicloud sdk"""
+        """ListAddressGroupResponse
+
+        The model defined in huaweicloud sdk
+
+        :param request_id: 请求ID
+        :type request_id: str
+        :param address_groups: 地址组列表响应体
+        :type address_groups: list[:class:`huaweicloudsdkvpc.v3.AddressGroup`]
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkvpc.v3.PageInfo`
+        """
         
         super(ListAddressGroupResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListAddressGroupResponse(SdkResponse):
         请求ID
 
         :param request_id: The request_id of this ListAddressGroupResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 
@@ -79,7 +88,7 @@ class ListAddressGroupResponse(SdkResponse):
         地址组列表响应体
 
         :return: The address_groups of this ListAddressGroupResponse.
-        :rtype: list[AddressGroup]
+        :rtype: list[:class:`huaweicloudsdkvpc.v3.AddressGroup`]
         """
         return self._address_groups
 
@@ -90,7 +99,7 @@ class ListAddressGroupResponse(SdkResponse):
         地址组列表响应体
 
         :param address_groups: The address_groups of this ListAddressGroupResponse.
-        :type: list[AddressGroup]
+        :type address_groups: list[:class:`huaweicloudsdkvpc.v3.AddressGroup`]
         """
         self._address_groups = address_groups
 
@@ -100,7 +109,7 @@ class ListAddressGroupResponse(SdkResponse):
 
 
         :return: The page_info of this ListAddressGroupResponse.
-        :rtype: PageInfo
+        :rtype: :class:`huaweicloudsdkvpc.v3.PageInfo`
         """
         return self._page_info
 
@@ -110,7 +119,7 @@ class ListAddressGroupResponse(SdkResponse):
 
 
         :param page_info: The page_info of this ListAddressGroupResponse.
-        :type: PageInfo
+        :type page_info: :class:`huaweicloudsdkvpc.v3.PageInfo`
         """
         self._page_info = page_info
 

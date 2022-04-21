@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCompetitionWorksResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListCompetitionWorksResponse(SdkResponse):
     }
 
     def __init__(self, works=None, total=None):
-        """ListCompetitionWorksResponse - a model defined in huaweicloud sdk"""
+        """ListCompetitionWorksResponse
+
+        The model defined in huaweicloud sdk
+
+        :param works: 作品列表
+        :type works: list[:class:`huaweicloudsdkcodecraft.v5.ListWorksResponseModel`]
+        :param total: 作品总数
+        :type total: int
+        """
         
         super(ListCompetitionWorksResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListCompetitionWorksResponse(SdkResponse):
         作品列表
 
         :return: The works of this ListCompetitionWorksResponse.
-        :rtype: list[ListWorksResponseModel]
+        :rtype: list[:class:`huaweicloudsdkcodecraft.v5.ListWorksResponseModel`]
         """
         return self._works
 
@@ -63,7 +70,7 @@ class ListCompetitionWorksResponse(SdkResponse):
         作品列表
 
         :param works: The works of this ListCompetitionWorksResponse.
-        :type: list[ListWorksResponseModel]
+        :type works: list[:class:`huaweicloudsdkcodecraft.v5.ListWorksResponseModel`]
         """
         self._works = works
 
@@ -85,7 +92,7 @@ class ListCompetitionWorksResponse(SdkResponse):
         作品总数
 
         :param total: The total of this ListCompetitionWorksResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 

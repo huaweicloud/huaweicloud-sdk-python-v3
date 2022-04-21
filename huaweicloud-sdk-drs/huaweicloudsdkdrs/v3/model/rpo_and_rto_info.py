@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RpoAndRtoInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class RpoAndRtoInfo:
     }
 
     def __init__(self, check_point=None, delay=None, gtid_set=None, time=None):
-        """RpoAndRtoInfo - a model defined in huaweicloud sdk"""
+        """RpoAndRtoInfo
+
+        The model defined in huaweicloud sdk
+
+        :param check_point: 检查点
+        :type check_point: str
+        :param delay: 延迟
+        :type delay: str
+        :param gtid_set: gtid集合
+        :type gtid_set: str
+        :param time: 当前时间 ，格式为“yyyy-MM-dd HH:mm:ss”
+        :type time: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class RpoAndRtoInfo:
         检查点
 
         :param check_point: The check_point of this RpoAndRtoInfo.
-        :type: str
+        :type check_point: str
         """
         self._check_point = check_point
 
@@ -95,7 +106,7 @@ class RpoAndRtoInfo:
         延迟
 
         :param delay: The delay of this RpoAndRtoInfo.
-        :type: str
+        :type delay: str
         """
         self._delay = delay
 
@@ -117,7 +128,7 @@ class RpoAndRtoInfo:
         gtid集合
 
         :param gtid_set: The gtid_set of this RpoAndRtoInfo.
-        :type: str
+        :type gtid_set: str
         """
         self._gtid_set = gtid_set
 
@@ -139,7 +150,7 @@ class RpoAndRtoInfo:
         当前时间 ，格式为“yyyy-MM-dd HH:mm:ss”
 
         :param time: The time of this RpoAndRtoInfo.
-        :type: str
+        :type time: str
         """
         self._time = time
 

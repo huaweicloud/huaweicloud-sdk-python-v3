@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListNodePoolsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListNodePoolsResponse(SdkResponse):
     }
 
     def __init__(self, kind=None, api_version=None, items=None):
-        """ListNodePoolsResponse - a model defined in huaweicloud sdk"""
+        """ListNodePoolsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param kind: API type. The value is fixed to List.
+        :type kind: str
+        :param api_version: API version. The value is fixed to v3.
+        :type api_version: str
+        :param items: /
+        :type items: list[:class:`huaweicloudsdkcce.v3.NodePool`]
+        """
         
         super(ListNodePoolsResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListNodePoolsResponse(SdkResponse):
         API type. The value is fixed to List.
 
         :param kind: The kind of this ListNodePoolsResponse.
-        :type: str
+        :type kind: str
         """
         self._kind = kind
 
@@ -90,7 +99,7 @@ class ListNodePoolsResponse(SdkResponse):
         API version. The value is fixed to v3.
 
         :param api_version: The api_version of this ListNodePoolsResponse.
-        :type: str
+        :type api_version: str
         """
         self._api_version = api_version
 
@@ -101,7 +110,7 @@ class ListNodePoolsResponse(SdkResponse):
         /
 
         :return: The items of this ListNodePoolsResponse.
-        :rtype: list[NodePool]
+        :rtype: list[:class:`huaweicloudsdkcce.v3.NodePool`]
         """
         return self._items
 
@@ -112,7 +121,7 @@ class ListNodePoolsResponse(SdkResponse):
         /
 
         :param items: The items of this ListNodePoolsResponse.
-        :type: list[NodePool]
+        :type items: list[:class:`huaweicloudsdkcce.v3.NodePool`]
         """
         self._items = items
 

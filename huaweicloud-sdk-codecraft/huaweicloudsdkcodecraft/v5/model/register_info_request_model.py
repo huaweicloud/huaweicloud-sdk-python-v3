@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RegisterInfoRequestModel:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class RegisterInfoRequestModel:
     }
 
     def __init__(self, competition_id=None, stage_id=None, domain_id=None):
-        """RegisterInfoRequestModel - a model defined in huaweicloud sdk"""
+        """RegisterInfoRequestModel
+
+        The model defined in huaweicloud sdk
+
+        :param competition_id: 大赛ID，大赛平台提供
+        :type competition_id: str
+        :param stage_id: 大赛阶段ID，大赛平台提供
+        :type stage_id: str
+        :param domain_id: 租户ID
+        :type domain_id: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class RegisterInfoRequestModel:
         大赛ID，大赛平台提供
 
         :param competition_id: The competition_id of this RegisterInfoRequestModel.
-        :type: str
+        :type competition_id: str
         """
         self._competition_id = competition_id
 
@@ -87,7 +96,7 @@ class RegisterInfoRequestModel:
         大赛阶段ID，大赛平台提供
 
         :param stage_id: The stage_id of this RegisterInfoRequestModel.
-        :type: str
+        :type stage_id: str
         """
         self._stage_id = stage_id
 
@@ -109,7 +118,7 @@ class RegisterInfoRequestModel:
         租户ID
 
         :param domain_id: The domain_id of this RegisterInfoRequestModel.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 

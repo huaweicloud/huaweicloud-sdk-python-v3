@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPublishedTemplatesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListPublishedTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, count=None, templates=None):
-        """ListPublishedTemplatesResponse - a model defined in huaweicloud sdk"""
+        """ListPublishedTemplatesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 返回模板的数量。
+        :type count: int
+        :param templates: 返回模板的列表。
+        :type templates: list[:class:`huaweicloudsdkdevstar.v1.TemplateSimpleInfo`]
+        """
         
         super(ListPublishedTemplatesResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListPublishedTemplatesResponse(SdkResponse):
         返回模板的数量。
 
         :param count: The count of this ListPublishedTemplatesResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -74,7 +81,7 @@ class ListPublishedTemplatesResponse(SdkResponse):
         返回模板的列表。
 
         :return: The templates of this ListPublishedTemplatesResponse.
-        :rtype: list[TemplateSimpleInfo]
+        :rtype: list[:class:`huaweicloudsdkdevstar.v1.TemplateSimpleInfo`]
         """
         return self._templates
 
@@ -85,7 +92,7 @@ class ListPublishedTemplatesResponse(SdkResponse):
         返回模板的列表。
 
         :param templates: The templates of this ListPublishedTemplatesResponse.
-        :type: list[TemplateSimpleInfo]
+        :type templates: list[:class:`huaweicloudsdkdevstar.v1.TemplateSimpleInfo`]
         """
         self._templates = templates
 

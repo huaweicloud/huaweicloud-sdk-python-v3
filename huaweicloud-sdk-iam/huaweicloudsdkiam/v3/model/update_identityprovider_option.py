@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateIdentityproviderOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateIdentityproviderOption:
     }
 
     def __init__(self, description=None, enabled=None):
-        """UpdateIdentityproviderOption - a model defined in huaweicloud sdk"""
+        """UpdateIdentityproviderOption
+
+        The model defined in huaweicloud sdk
+
+        :param description: 身份提供商描述信息。
+        :type description: str
+        :param enabled: 身份提供商是否启用，true为启用，false为停用，默认为false。
+        :type enabled: bool
+        """
         
         
 
@@ -63,7 +70,7 @@ class UpdateIdentityproviderOption:
         身份提供商描述信息。
 
         :param description: The description of this UpdateIdentityproviderOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -85,7 +92,7 @@ class UpdateIdentityproviderOption:
         身份提供商是否启用，true为启用，false为停用，默认为false。
 
         :param enabled: The enabled of this UpdateIdentityproviderOption.
-        :type: bool
+        :type enabled: bool
         """
         self._enabled = enabled
 

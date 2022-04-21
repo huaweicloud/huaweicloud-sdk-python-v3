@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CdmCreateClusterReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CdmCreateClusterReq:
     }
 
     def __init__(self, cluster=None, auto_remind=None, phone_num=None, email=None):
-        """CdmCreateClusterReq - a model defined in huaweicloud sdk"""
+        """CdmCreateClusterReq
+
+        The model defined in huaweicloud sdk
+
+        :param cluster: 
+        :type cluster: :class:`huaweicloudsdkcdm.v1.CdmCreateClusterReqCluster`
+        :param auto_remind: 选择是否开启消息通知。开启后，支持配置5个手机号码或邮箱，作业（目前仅支持表/文件迁移的作业）失败时、EIP异常时会发送短信或邮件通知用户
+        :type auto_remind: bool
+        :param phone_num: 接收消息通知的手机号码
+        :type phone_num: str
+        :param email: 接收消息通知的邮箱
+        :type email: str
+        """
         
         
 
@@ -60,7 +71,7 @@ class CdmCreateClusterReq:
 
 
         :return: The cluster of this CdmCreateClusterReq.
-        :rtype: CdmCreateClusterReqCluster
+        :rtype: :class:`huaweicloudsdkcdm.v1.CdmCreateClusterReqCluster`
         """
         return self._cluster
 
@@ -70,7 +81,7 @@ class CdmCreateClusterReq:
 
 
         :param cluster: The cluster of this CdmCreateClusterReq.
-        :type: CdmCreateClusterReqCluster
+        :type cluster: :class:`huaweicloudsdkcdm.v1.CdmCreateClusterReqCluster`
         """
         self._cluster = cluster
 
@@ -92,7 +103,7 @@ class CdmCreateClusterReq:
         选择是否开启消息通知。开启后，支持配置5个手机号码或邮箱，作业（目前仅支持表/文件迁移的作业）失败时、EIP异常时会发送短信或邮件通知用户
 
         :param auto_remind: The auto_remind of this CdmCreateClusterReq.
-        :type: bool
+        :type auto_remind: bool
         """
         self._auto_remind = auto_remind
 
@@ -114,7 +125,7 @@ class CdmCreateClusterReq:
         接收消息通知的手机号码
 
         :param phone_num: The phone_num of this CdmCreateClusterReq.
-        :type: str
+        :type phone_num: str
         """
         self._phone_num = phone_num
 
@@ -136,7 +147,7 @@ class CdmCreateClusterReq:
         接收消息通知的邮箱
 
         :param email: The email of this CdmCreateClusterReq.
-        :type: str
+        :type email: str
         """
         self._email = email
 

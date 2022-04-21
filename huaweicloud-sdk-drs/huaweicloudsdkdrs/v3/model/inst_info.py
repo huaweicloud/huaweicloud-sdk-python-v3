@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InstInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class InstInfo:
     }
 
     def __init__(self, engine_type=None, inst_type=None, ip=None, public_ip=None, start_time=None, status=None, volume_size=None):
-        """InstInfo - a model defined in huaweicloud sdk"""
+        """InstInfo
+
+        The model defined in huaweicloud sdk
+
+        :param engine_type: 引擎类型
+        :type engine_type: str
+        :param inst_type: 实例类型
+        :type inst_type: str
+        :param ip: 迁移实例所在的私有IP
+        :type ip: str
+        :param public_ip: 迁移实例所在的公网IP
+        :type public_ip: str
+        :param start_time: 迁移实例任务定时启动时间
+        :type start_time: str
+        :param status: 迁移实例的状态
+        :type status: str
+        :param volume_size: 迁移实例的磁盘大小
+        :type volume_size: int
+        """
         
         
 
@@ -88,7 +105,7 @@ class InstInfo:
         引擎类型
 
         :param engine_type: The engine_type of this InstInfo.
-        :type: str
+        :type engine_type: str
         """
         self._engine_type = engine_type
 
@@ -110,7 +127,7 @@ class InstInfo:
         实例类型
 
         :param inst_type: The inst_type of this InstInfo.
-        :type: str
+        :type inst_type: str
         """
         self._inst_type = inst_type
 
@@ -132,7 +149,7 @@ class InstInfo:
         迁移实例所在的私有IP
 
         :param ip: The ip of this InstInfo.
-        :type: str
+        :type ip: str
         """
         self._ip = ip
 
@@ -154,7 +171,7 @@ class InstInfo:
         迁移实例所在的公网IP
 
         :param public_ip: The public_ip of this InstInfo.
-        :type: str
+        :type public_ip: str
         """
         self._public_ip = public_ip
 
@@ -176,7 +193,7 @@ class InstInfo:
         迁移实例任务定时启动时间
 
         :param start_time: The start_time of this InstInfo.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -198,7 +215,7 @@ class InstInfo:
         迁移实例的状态
 
         :param status: The status of this InstInfo.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -220,7 +237,7 @@ class InstInfo:
         迁移实例的磁盘大小
 
         :param volume_size: The volume_size of this InstInfo.
-        :type: int
+        :type volume_size: int
         """
         self._volume_size = volume_size
 

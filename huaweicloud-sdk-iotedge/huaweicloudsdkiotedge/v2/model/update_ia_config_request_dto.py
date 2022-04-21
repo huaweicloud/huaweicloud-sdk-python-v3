@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateIaConfigRequestDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateIaConfigRequestDTO:
     }
 
     def __init__(self, name=None, value=None, description=None):
-        """UpdateIaConfigRequestDTO - a model defined in huaweicloud sdk"""
+        """UpdateIaConfigRequestDTO
+
+        The model defined in huaweicloud sdk
+
+        :param name: 配置项名称
+        :type name: str
+        :param value: 配置项详情，长度2MB以内
+        :type value: str
+        :param description: 配置项描述
+        :type description: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class UpdateIaConfigRequestDTO:
         配置项名称
 
         :param name: The name of this UpdateIaConfigRequestDTO.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -88,7 +97,7 @@ class UpdateIaConfigRequestDTO:
         配置项详情，长度2MB以内
 
         :param value: The value of this UpdateIaConfigRequestDTO.
-        :type: str
+        :type value: str
         """
         self._value = value
 
@@ -110,7 +119,7 @@ class UpdateIaConfigRequestDTO:
         配置项描述
 
         :param description: The description of this UpdateIaConfigRequestDTO.
-        :type: str
+        :type description: str
         """
         self._description = description
 

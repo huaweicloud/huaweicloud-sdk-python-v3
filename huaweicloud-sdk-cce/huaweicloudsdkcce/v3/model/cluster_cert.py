@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ClusterCert:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ClusterCert:
     }
 
     def __init__(self, server=None, certificate_authority_data=None, insecure_skip_tls_verify=None):
-        """ClusterCert - a model defined in huaweicloud sdk"""
+        """ClusterCert
+
+        The model defined in huaweicloud sdk
+
+        :param server: 服务器地址。
+        :type server: str
+        :param certificate_authority_data: 证书授权数据。
+        :type certificate_authority_data: str
+        :param insecure_skip_tls_verify: 不校验服务端证书，在 cluster 类型为 externalCluster 时，该值为 true。
+        :type insecure_skip_tls_verify: bool
+        """
         
         
 
@@ -68,7 +77,7 @@ class ClusterCert:
         服务器地址。
 
         :param server: The server of this ClusterCert.
-        :type: str
+        :type server: str
         """
         self._server = server
 
@@ -90,7 +99,7 @@ class ClusterCert:
         证书授权数据。
 
         :param certificate_authority_data: The certificate_authority_data of this ClusterCert.
-        :type: str
+        :type certificate_authority_data: str
         """
         self._certificate_authority_data = certificate_authority_data
 
@@ -112,7 +121,7 @@ class ClusterCert:
         不校验服务端证书，在 cluster 类型为 externalCluster 时，该值为 true。
 
         :param insecure_skip_tls_verify: The insecure_skip_tls_verify of this ClusterCert.
-        :type: bool
+        :type insecure_skip_tls_verify: bool
         """
         self._insecure_skip_tls_verify = insecure_skip_tls_verify
 

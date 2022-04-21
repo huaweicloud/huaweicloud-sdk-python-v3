@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExportCertificateResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ExportCertificateResponse(SdkResponse):
     }
 
     def __init__(self, private_key=None, certificate=None, certificate_chain=None):
-        """ExportCertificateResponse - a model defined in huaweicloud sdk"""
+        """ExportCertificateResponse
+
+        The model defined in huaweicloud sdk
+
+        :param private_key: 私钥内容。
+        :type private_key: str
+        :param certificate: 证书内容。
+        :type certificate: str
+        :param certificate_chain: 证书链内容。
+        :type certificate_chain: str
+        """
         
         super(ExportCertificateResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ExportCertificateResponse(SdkResponse):
         私钥内容。
 
         :param private_key: The private_key of this ExportCertificateResponse.
-        :type: str
+        :type private_key: str
         """
         self._private_key = private_key
 
@@ -90,7 +99,7 @@ class ExportCertificateResponse(SdkResponse):
         证书内容。
 
         :param certificate: The certificate of this ExportCertificateResponse.
-        :type: str
+        :type certificate: str
         """
         self._certificate = certificate
 
@@ -112,7 +121,7 @@ class ExportCertificateResponse(SdkResponse):
         证书链内容。
 
         :param certificate_chain: The certificate_chain of this ExportCertificateResponse.
-        :type: str
+        :type certificate_chain: str
         """
         self._certificate_chain = certificate_chain
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateGeoipRuleRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateGeoipRuleRequest:
     }
 
     def __init__(self, enterprise_project_id=None, policy_id=None, body=None):
-        """CreateGeoipRuleRequest - a model defined in huaweicloud sdk"""
+        """CreateGeoipRuleRequest
+
+        The model defined in huaweicloud sdk
+
+        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        :type enterprise_project_id: str
+        :param policy_id: 防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
+        :type policy_id: str
+        :param body: Body of the CreateGeoipRuleRequest
+        :type body: :class:`huaweicloudsdkwaf.v1.CreateGeoIpRuleRequestBody`
+        """
         
         
 
@@ -67,7 +76,7 @@ class CreateGeoipRuleRequest:
         您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this CreateGeoipRuleRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -89,7 +98,7 @@ class CreateGeoipRuleRequest:
         防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
 
         :param policy_id: The policy_id of this CreateGeoipRuleRequest.
-        :type: str
+        :type policy_id: str
         """
         self._policy_id = policy_id
 
@@ -99,7 +108,7 @@ class CreateGeoipRuleRequest:
 
 
         :return: The body of this CreateGeoipRuleRequest.
-        :rtype: CreateGeoIpRuleRequestBody
+        :rtype: :class:`huaweicloudsdkwaf.v1.CreateGeoIpRuleRequestBody`
         """
         return self._body
 
@@ -109,7 +118,7 @@ class CreateGeoipRuleRequest:
 
 
         :param body: The body of this CreateGeoipRuleRequest.
-        :type: CreateGeoIpRuleRequestBody
+        :type body: :class:`huaweicloudsdkwaf.v1.CreateGeoIpRuleRequestBody`
         """
         self._body = body
 

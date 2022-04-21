@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PostMultiGainedSegmentResponseItem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class PostMultiGainedSegmentResponseItem:
     }
 
     def __init__(self, content=None, type=None, sub_contents=None):
-        """PostMultiGainedSegmentResponseItem - a model defined in huaweicloud sdk"""
+        """PostMultiGainedSegmentResponseItem
+
+        The model defined in huaweicloud sdk
+
+        :param content: 当前节点对应的文本内容
+        :type content: str
+        :param type: 文本类型，取值如下： WORD-词汇类型 CHAR-字符类型
+        :type type: str
+        :param sub_contents: 当前节点的子节点列表
+        :type sub_contents: list[:class:`huaweicloudsdknlp.v2.PostMultiGainedSegmentResponseItemCopy`]
+        """
         
         
 
@@ -66,7 +75,7 @@ class PostMultiGainedSegmentResponseItem:
         当前节点对应的文本内容
 
         :param content: The content of this PostMultiGainedSegmentResponseItem.
-        :type: str
+        :type content: str
         """
         self._content = content
 
@@ -88,7 +97,7 @@ class PostMultiGainedSegmentResponseItem:
         文本类型，取值如下： WORD-词汇类型 CHAR-字符类型
 
         :param type: The type of this PostMultiGainedSegmentResponseItem.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -99,7 +108,7 @@ class PostMultiGainedSegmentResponseItem:
         当前节点的子节点列表
 
         :return: The sub_contents of this PostMultiGainedSegmentResponseItem.
-        :rtype: list[PostMultiGainedSegmentResponseItemCopy]
+        :rtype: list[:class:`huaweicloudsdknlp.v2.PostMultiGainedSegmentResponseItemCopy`]
         """
         return self._sub_contents
 
@@ -110,7 +119,7 @@ class PostMultiGainedSegmentResponseItem:
         当前节点的子节点列表
 
         :param sub_contents: The sub_contents of this PostMultiGainedSegmentResponseItem.
-        :type: list[PostMultiGainedSegmentResponseItemCopy]
+        :type sub_contents: list[:class:`huaweicloudsdknlp.v2.PostMultiGainedSegmentResponseItemCopy`]
         """
         self._sub_contents = sub_contents
 

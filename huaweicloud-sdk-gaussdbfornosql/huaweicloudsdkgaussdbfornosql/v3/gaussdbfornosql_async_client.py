@@ -52,21 +52,17 @@ class GaussDBforNoSQLAsyncClient(Client):
         """应用参数模板
 
         将参数模板应用到实例，可以指定一个或多个实例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ApplyConfigurationRequest request
-        :return: ApplyConfigurationResponse
+        :param request: Request instance for ApplyConfiguration
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ApplyConfigurationRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ApplyConfigurationResponse`
         """
         return self.apply_configuration_with_http_info(request)
 
     def apply_configuration_with_http_info(self, request):
-        """应用参数模板
-
-        将参数模板应用到实例，可以指定一个或多个实例。
-
-        :param ApplyConfigurationRequest request
-        :return: ApplyConfigurationResponse
-        """
-
         all_params = ['config_id', 'apply_configuration_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -112,26 +108,21 @@ class GaussDBforNoSQLAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_tag_action_async(self, request):
         """批量添加或删除资源标签
 
         批量添加或删除指定数据库实例的标签。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchTagActionRequest request
-        :return: BatchTagActionResponse
+        :param request: Request instance for BatchTagAction
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.BatchTagActionRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.BatchTagActionResponse`
         """
         return self.batch_tag_action_with_http_info(request)
 
     def batch_tag_action_with_http_info(self, request):
-        """批量添加或删除资源标签
-
-        批量添加或删除指定数据库实例的标签。
-
-        :param BatchTagActionRequest request
-        :return: BatchTagActionResponse
-        """
-
         all_params = ['instance_id', 'batch_tag_action_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -177,26 +168,21 @@ class GaussDBforNoSQLAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_configuration_async(self, request):
         """创建参数模板
 
         创建参数模板。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateConfigurationRequest request
-        :return: CreateConfigurationResponse
+        :param request: Request instance for CreateConfiguration
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.CreateConfigurationRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.CreateConfigurationResponse`
         """
         return self.create_configuration_with_http_info(request)
 
     def create_configuration_with_http_info(self, request):
-        """创建参数模板
-
-        创建参数模板。
-
-        :param CreateConfigurationRequest request
-        :return: CreateConfigurationResponse
-        """
-
         all_params = ['create_configuration_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -240,26 +226,21 @@ class GaussDBforNoSQLAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_instance_async(self, request):
         """创建实例
 
         创建数据库实例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateInstanceRequest request
-        :return: CreateInstanceResponse
+        :param request: Request instance for CreateInstance
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.CreateInstanceRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.CreateInstanceResponse`
         """
         return self.create_instance_with_http_info(request)
 
     def create_instance_with_http_info(self, request):
-        """创建实例
-
-        创建数据库实例。
-
-        :param CreateInstanceRequest request
-        :return: CreateInstanceResponse
-        """
-
         all_params = ['create_instance_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -303,26 +284,21 @@ class GaussDBforNoSQLAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_configuration_async(self, request):
         """删除参数模板
 
         删除指定参数模板。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteConfigurationRequest request
-        :return: DeleteConfigurationResponse
+        :param request: Request instance for DeleteConfiguration
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.DeleteConfigurationRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.DeleteConfigurationResponse`
         """
         return self.delete_configuration_with_http_info(request)
 
     def delete_configuration_with_http_info(self, request):
-        """删除参数模板
-
-        删除指定参数模板。
-
-        :param DeleteConfigurationRequest request
-        :return: DeleteConfigurationResponse
-        """
-
         all_params = ['config_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -366,26 +342,21 @@ class GaussDBforNoSQLAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_instance_async(self, request):
         """删除实例
 
         删除数据库实例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteInstanceRequest request
-        :return: DeleteInstanceResponse
+        :param request: Request instance for DeleteInstance
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.DeleteInstanceRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.DeleteInstanceResponse`
         """
         return self.delete_instance_with_http_info(request)
 
     def delete_instance_with_http_info(self, request):
-        """删除实例
-
-        删除数据库实例。
-
-        :param DeleteInstanceRequest request
-        :return: DeleteInstanceResponse
-        """
-
         all_params = ['instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -429,26 +400,21 @@ class GaussDBforNoSQLAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def expand_instance_node_async(self, request):
         """扩容指定集群实例的节点数量
 
         扩容指定集群实例的节点数量。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ExpandInstanceNodeRequest request
-        :return: ExpandInstanceNodeResponse
+        :param request: Request instance for ExpandInstanceNode
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ExpandInstanceNodeRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ExpandInstanceNodeResponse`
         """
         return self.expand_instance_node_with_http_info(request)
 
     def expand_instance_node_with_http_info(self, request):
-        """扩容指定集群实例的节点数量
-
-        扩容指定集群实例的节点数量。
-
-        :param ExpandInstanceNodeRequest request
-        :return: ExpandInstanceNodeResponse
-        """
-
         all_params = ['instance_id', 'enlarge_instance_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -494,26 +460,21 @@ class GaussDBforNoSQLAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_configuration_templates_async(self, request):
         """获取参数模板列表
 
         获取参数模板列表，包括所有数据库的默认参数模板和用户创建的参数模板。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListConfigurationTemplatesRequest request
-        :return: ListConfigurationTemplatesResponse
+        :param request: Request instance for ListConfigurationTemplates
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListConfigurationTemplatesRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListConfigurationTemplatesResponse`
         """
         return self.list_configuration_templates_with_http_info(request)
 
     def list_configuration_templates_with_http_info(self, request):
-        """获取参数模板列表
-
-        获取参数模板列表，包括所有数据库的默认参数模板和用户创建的参数模板。
-
-        :param ListConfigurationTemplatesRequest request
-        :return: ListConfigurationTemplatesResponse
-        """
-
         all_params = ['offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -559,26 +520,21 @@ class GaussDBforNoSQLAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_configurations_async(self, request):
         """获取参数模板列表
 
         获取参数模板列表，包括所有数据库的默认参数模板和用户创建的参数模板。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListConfigurationsRequest request
-        :return: ListConfigurationsResponse
+        :param request: Request instance for ListConfigurations
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListConfigurationsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListConfigurationsResponse`
         """
         return self.list_configurations_with_http_info(request)
 
     def list_configurations_with_http_info(self, request):
-        """获取参数模板列表
-
-        获取参数模板列表，包括所有数据库的默认参数模板和用户创建的参数模板。
-
-        :param ListConfigurationsRequest request
-        :return: ListConfigurationsResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -620,26 +576,21 @@ class GaussDBforNoSQLAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_datastores_async(self, request):
         """查询指定实例类型的数据库版本信息
 
         查询指定实例类型的数据库版本信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListDatastoresRequest request
-        :return: ListDatastoresResponse
+        :param request: Request instance for ListDatastores
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListDatastoresRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListDatastoresResponse`
         """
         return self.list_datastores_with_http_info(request)
 
     def list_datastores_with_http_info(self, request):
-        """查询指定实例类型的数据库版本信息
-
-        查询指定实例类型的数据库版本信息。
-
-        :param ListDatastoresRequest request
-        :return: ListDatastoresResponse
-        """
-
         all_params = ['datastore_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -683,26 +634,21 @@ class GaussDBforNoSQLAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_dedicated_resources_async(self, request):
         """查询专属资源列表
 
         查询专属资源列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListDedicatedResourcesRequest request
-        :return: ListDedicatedResourcesResponse
+        :param request: Request instance for ListDedicatedResources
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListDedicatedResourcesRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListDedicatedResourcesResponse`
         """
         return self.list_dedicated_resources_with_http_info(request)
 
     def list_dedicated_resources_with_http_info(self, request):
-        """查询专属资源列表
-
-        查询专属资源列表。
-
-        :param ListDedicatedResourcesRequest request
-        :return: ListDedicatedResourcesResponse
-        """
-
         all_params = ['offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -748,26 +694,21 @@ class GaussDBforNoSQLAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_flavor_infos_async(self, request):
         """查询数据库规格
 
         查询指定条件下的实例规格信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListFlavorInfosRequest request
-        :return: ListFlavorInfosResponse
+        :param request: Request instance for ListFlavorInfos
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListFlavorInfosRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListFlavorInfosResponse`
         """
         return self.list_flavor_infos_with_http_info(request)
 
     def list_flavor_infos_with_http_info(self, request):
-        """查询数据库规格
-
-        查询指定条件下的实例规格信息。
-
-        :param ListFlavorInfosRequest request
-        :return: ListFlavorInfosResponse
-        """
-
         all_params = ['engine_name', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -815,26 +756,21 @@ class GaussDBforNoSQLAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_flavors_async(self, request):
         """查询指定条件下的所有实例规格信息
 
         查询指定条件下的所有实例规格信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListFlavorsRequest request
-        :return: ListFlavorsResponse
+        :param request: Request instance for ListFlavors
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListFlavorsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListFlavorsResponse`
         """
         return self.list_flavors_with_http_info(request)
 
     def list_flavors_with_http_info(self, request):
-        """查询指定条件下的所有实例规格信息
-
-        查询指定条件下的所有实例规格信息。
-
-        :param ListFlavorsRequest request
-        :return: ListFlavorsResponse
-        """
-
         all_params = ['region', 'engine_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -880,26 +816,21 @@ class GaussDBforNoSQLAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_instance_tags_async(self, request):
         """查询资源标签
 
         查询指定实例的标签信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListInstanceTagsRequest request
-        :return: ListInstanceTagsResponse
+        :param request: Request instance for ListInstanceTags
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInstanceTagsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInstanceTagsResponse`
         """
         return self.list_instance_tags_with_http_info(request)
 
     def list_instance_tags_with_http_info(self, request):
-        """查询资源标签
-
-        查询指定实例的标签信息。
-
-        :param ListInstanceTagsRequest request
-        :return: ListInstanceTagsResponse
-        """
-
         all_params = ['instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -943,26 +874,21 @@ class GaussDBforNoSQLAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_instances_async(self, request):
         """查询实例列表和详情
 
         根据指定条件查询数据库实例列表和详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListInstancesRequest request
-        :return: ListInstancesResponse
+        :param request: Request instance for ListInstances
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesResponse`
         """
         return self.list_instances_with_http_info(request)
 
     def list_instances_with_http_info(self, request):
-        """查询实例列表和详情
-
-        根据指定条件查询数据库实例列表和详情。
-
-        :param ListInstancesRequest request
-        :return: ListInstancesResponse
-        """
-
         all_params = ['id', 'name', 'mode', 'datastore_type', 'vpc_id', 'subnet_id', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1020,26 +946,21 @@ class GaussDBforNoSQLAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_instances_by_resource_tags_async(self, request):
         """查询资源实例
 
         根据标签查询指定的数据库实例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListInstancesByResourceTagsRequest request
-        :return: ListInstancesByResourceTagsResponse
+        :param request: Request instance for ListInstancesByResourceTags
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesByResourceTagsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesByResourceTagsResponse`
         """
         return self.list_instances_by_resource_tags_with_http_info(request)
 
     def list_instances_by_resource_tags_with_http_info(self, request):
-        """查询资源实例
-
-        根据标签查询指定的数据库实例。
-
-        :param ListInstancesByResourceTagsRequest request
-        :return: ListInstancesByResourceTagsResponse
-        """
-
         all_params = ['list_instances_by_tags_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1083,26 +1004,21 @@ class GaussDBforNoSQLAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_instances_by_tags_async(self, request):
         """查询资源实例
 
         根据标签查询指定的数据库实例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListInstancesByTagsRequest request
-        :return: ListInstancesByTagsResponse
+        :param request: Request instance for ListInstancesByTags
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesByTagsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesByTagsResponse`
         """
         return self.list_instances_by_tags_with_http_info(request)
 
     def list_instances_by_tags_with_http_info(self, request):
-        """查询资源实例
-
-        根据标签查询指定的数据库实例。
-
-        :param ListInstancesByTagsRequest request
-        :return: ListInstancesByTagsResponse
-        """
-
         all_params = ['list_instances_by_tags_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1146,26 +1062,21 @@ class GaussDBforNoSQLAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_slow_logs_async(self, request):
         """查询数据库慢日志
 
         查询数据库慢日志信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListSlowLogsRequest request
-        :return: ListSlowLogsResponse
+        :param request: Request instance for ListSlowLogs
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListSlowLogsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListSlowLogsResponse`
         """
         return self.list_slow_logs_with_http_info(request)
 
     def list_slow_logs_with_http_info(self, request):
-        """查询数据库慢日志
-
-        查询数据库慢日志信息。
-
-        :param ListSlowLogsRequest request
-        :return: ListSlowLogsResponse
-        """
-
         all_params = ['instance_id', 'start_date', 'end_date', 'node_id', 'type', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1221,26 +1132,21 @@ class GaussDBforNoSQLAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def reset_password_async(self, request):
         """修改实例的管理员密码
 
         修改实例的管理员密码。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ResetPasswordRequest request
-        :return: ResetPasswordResponse
+        :param request: Request instance for ResetPassword
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ResetPasswordRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ResetPasswordResponse`
         """
         return self.reset_password_with_http_info(request)
 
     def reset_password_with_http_info(self, request):
-        """修改实例的管理员密码
-
-        修改实例的管理员密码。
-
-        :param ResetPasswordRequest request
-        :return: ResetPasswordResponse
-        """
-
         all_params = ['instance_id', 'reset_password_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1286,26 +1192,21 @@ class GaussDBforNoSQLAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def resize_instance_async(self, request):
         """变更实例规格
 
         变更实例的规格。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ResizeInstanceRequest request
-        :return: ResizeInstanceResponse
+        :param request: Request instance for ResizeInstance
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ResizeInstanceRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ResizeInstanceResponse`
         """
         return self.resize_instance_with_http_info(request)
 
     def resize_instance_with_http_info(self, request):
-        """变更实例规格
-
-        变更实例的规格。
-
-        :param ResizeInstanceRequest request
-        :return: ResizeInstanceResponse
-        """
-
         all_params = ['instance_id', 'resize_instance_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1351,26 +1252,21 @@ class GaussDBforNoSQLAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def resize_instance_volume_async(self, request):
         """扩容实例存储容量
 
         扩容实例的存储容量大小。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ResizeInstanceVolumeRequest request
-        :return: ResizeInstanceVolumeResponse
+        :param request: Request instance for ResizeInstanceVolume
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ResizeInstanceVolumeRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ResizeInstanceVolumeResponse`
         """
         return self.resize_instance_volume_with_http_info(request)
 
     def resize_instance_volume_with_http_info(self, request):
-        """扩容实例存储容量
-
-        扩容实例的存储容量大小。
-
-        :param ResizeInstanceVolumeRequest request
-        :return: ResizeInstanceVolumeResponse
-        """
-
         all_params = ['instance_id', 'resize_instance_volume_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1416,26 +1312,21 @@ class GaussDBforNoSQLAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def set_backup_policy_async(self, request):
         """设置自动备份策略
 
         设置自动备份策略。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param SetBackupPolicyRequest request
-        :return: SetBackupPolicyResponse
+        :param request: Request instance for SetBackupPolicy
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.SetBackupPolicyRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.SetBackupPolicyResponse`
         """
         return self.set_backup_policy_with_http_info(request)
 
     def set_backup_policy_with_http_info(self, request):
-        """设置自动备份策略
-
-        设置自动备份策略。
-
-        :param SetBackupPolicyRequest request
-        :return: SetBackupPolicyResponse
-        """
-
         all_params = ['instance_id', 'set_backup_policy_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1481,26 +1372,21 @@ class GaussDBforNoSQLAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_backup_policy_async(self, request):
         """查询自动备份策略
 
         查询自动备份策略。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowBackupPolicyRequest request
-        :return: ShowBackupPolicyResponse
+        :param request: Request instance for ShowBackupPolicy
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowBackupPolicyRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowBackupPolicyResponse`
         """
         return self.show_backup_policy_with_http_info(request)
 
     def show_backup_policy_with_http_info(self, request):
-        """查询自动备份策略
-
-        查询自动备份策略。
-
-        :param ShowBackupPolicyRequest request
-        :return: ShowBackupPolicyResponse
-        """
-
         all_params = ['instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1544,26 +1430,21 @@ class GaussDBforNoSQLAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_configuration_detail_async(self, request):
         """获取指定参数模板的参数
 
         获取指定参数模板的详细信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowConfigurationDetailRequest request
-        :return: ShowConfigurationDetailResponse
+        :param request: Request instance for ShowConfigurationDetail
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowConfigurationDetailRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowConfigurationDetailResponse`
         """
         return self.show_configuration_detail_with_http_info(request)
 
     def show_configuration_detail_with_http_info(self, request):
-        """获取指定参数模板的参数
-
-        获取指定参数模板的详细信息。
-
-        :param ShowConfigurationDetailRequest request
-        :return: ShowConfigurationDetailResponse
-        """
-
         all_params = ['config_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1607,26 +1488,21 @@ class GaussDBforNoSQLAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_instance_configuration_async(self, request):
         """获取指定实例的参数模板
 
         获取指定实例的参数模板。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowInstanceConfigurationRequest request
-        :return: ShowInstanceConfigurationResponse
+        :param request: Request instance for ShowInstanceConfiguration
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowInstanceConfigurationRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowInstanceConfigurationResponse`
         """
         return self.show_instance_configuration_with_http_info(request)
 
     def show_instance_configuration_with_http_info(self, request):
-        """获取指定实例的参数模板
-
-        获取指定实例的参数模板。
-
-        :param ShowInstanceConfigurationRequest request
-        :return: ShowInstanceConfigurationResponse
-        """
-
         all_params = ['instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1670,26 +1546,21 @@ class GaussDBforNoSQLAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_quotas_async(self, request):
         """查询配额
 
         查询单租户在GaussDBforNoSQL服务下的资源配额。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowQuotasRequest request
-        :return: ShowQuotasResponse
+        :param request: Request instance for ShowQuotas
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowQuotasRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowQuotasResponse`
         """
         return self.show_quotas_with_http_info(request)
 
     def show_quotas_with_http_info(self, request):
-        """查询配额
-
-        查询单租户在GaussDBforNoSQL服务下的资源配额。
-
-        :param ShowQuotasRequest request
-        :return: ShowQuotasResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1731,26 +1602,21 @@ class GaussDBforNoSQLAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def shrink_instance_node_async(self, request):
         """缩容指定集群实例的节点数量
 
         缩容指定集群实例的节点数量。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShrinkInstanceNodeRequest request
-        :return: ShrinkInstanceNodeResponse
+        :param request: Request instance for ShrinkInstanceNode
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ShrinkInstanceNodeRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ShrinkInstanceNodeResponse`
         """
         return self.shrink_instance_node_with_http_info(request)
 
     def shrink_instance_node_with_http_info(self, request):
-        """缩容指定集群实例的节点数量
-
-        缩容指定集群实例的节点数量。
-
-        :param ShrinkInstanceNodeRequest request
-        :return: ShrinkInstanceNodeResponse
-        """
-
         all_params = ['instance_id', 'enlarge_instance_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1796,26 +1662,21 @@ class GaussDBforNoSQLAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_configuration_async(self, request):
         """修改参数模板参数
 
         修改参数模板参数。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateConfigurationRequest request
-        :return: UpdateConfigurationResponse
+        :param request: Request instance for UpdateConfiguration
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.UpdateConfigurationRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.UpdateConfigurationResponse`
         """
         return self.update_configuration_with_http_info(request)
 
     def update_configuration_with_http_info(self, request):
-        """修改参数模板参数
-
-        修改参数模板参数。
-
-        :param UpdateConfigurationRequest request
-        :return: UpdateConfigurationResponse
-        """
-
         all_params = ['config_id', 'update_configuration_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1861,26 +1722,21 @@ class GaussDBforNoSQLAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_instance_configuration_async(self, request):
         """修改指定实例的参数
 
         修改指定实例的参数。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateInstanceConfigurationRequest request
-        :return: UpdateInstanceConfigurationResponse
+        :param request: Request instance for UpdateInstanceConfiguration
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.UpdateInstanceConfigurationRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.UpdateInstanceConfigurationResponse`
         """
         return self.update_instance_configuration_with_http_info(request)
 
     def update_instance_configuration_with_http_info(self, request):
-        """修改指定实例的参数
-
-        修改指定实例的参数。
-
-        :param UpdateInstanceConfigurationRequest request
-        :return: UpdateInstanceConfigurationResponse
-        """
-
         all_params = ['instance_id', 'update_instance_configuration_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1926,26 +1782,21 @@ class GaussDBforNoSQLAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_instance_name_async(self, request):
         """修改实例名称
 
         修改实例名称
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateInstanceNameRequest request
-        :return: UpdateInstanceNameResponse
+        :param request: Request instance for UpdateInstanceName
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.UpdateInstanceNameRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.UpdateInstanceNameResponse`
         """
         return self.update_instance_name_with_http_info(request)
 
     def update_instance_name_with_http_info(self, request):
-        """修改实例名称
-
-        修改实例名称
-
-        :param UpdateInstanceNameRequest request
-        :return: UpdateInstanceNameResponse
-        """
-
         all_params = ['instance_id', 'update_instance_name_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1991,26 +1842,21 @@ class GaussDBforNoSQLAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_security_group_async(self, request):
         """变更实例安全组
 
         变更实例关联的安全组
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateSecurityGroupRequest request
-        :return: UpdateSecurityGroupResponse
+        :param request: Request instance for UpdateSecurityGroup
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.UpdateSecurityGroupRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.UpdateSecurityGroupResponse`
         """
         return self.update_security_group_with_http_info(request)
 
     def update_security_group_with_http_info(self, request):
-        """变更实例安全组
-
-        变更实例关联的安全组
-
-        :param UpdateSecurityGroupRequest request
-        :return: UpdateSecurityGroupResponse
-        """
-
         all_params = ['instance_id', 'update_security_group_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2056,26 +1902,21 @@ class GaussDBforNoSQLAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_api_version_async(self, request):
         """查询当前支持的API版本信息列表
 
         查询当前支持的API版本信息列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListApiVersionRequest request
-        :return: ListApiVersionResponse
+        :param request: Request instance for ListApiVersion
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListApiVersionRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListApiVersionResponse`
         """
         return self.list_api_version_with_http_info(request)
 
     def list_api_version_with_http_info(self, request):
-        """查询当前支持的API版本信息列表
-
-        查询当前支持的API版本信息列表。
-
-        :param ListApiVersionRequest request
-        :return: ListApiVersionResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2117,26 +1958,21 @@ class GaussDBforNoSQLAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_api_version_async(self, request):
         """查询指定API版本信息
 
         查询指定API版本信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowApiVersionRequest request
-        :return: ShowApiVersionResponse
+        :param request: Request instance for ShowApiVersion
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowApiVersionRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowApiVersionResponse`
         """
         return self.show_api_version_with_http_info(request)
 
     def show_api_version_with_http_info(self, request):
-        """查询指定API版本信息
-
-        查询指定API版本信息。
-
-        :param ShowApiVersionRequest request
-        :return: ShowApiVersionResponse
-        """
-
         all_params = ['version']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2179,7 +2015,6 @@ class GaussDBforNoSQLAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

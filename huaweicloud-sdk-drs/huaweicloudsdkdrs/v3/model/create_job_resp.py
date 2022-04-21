@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateJobResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class CreateJobResp:
     }
 
     def __init__(self, id=None, name=None, status=None, create_time=None, error_code=None, error_msg=None, child_ids=None):
-        """CreateJobResp - a model defined in huaweicloud sdk"""
+        """CreateJobResp
+
+        The model defined in huaweicloud sdk
+
+        :param id: 任务ID
+        :type id: str
+        :param name: 任务名称
+        :type name: str
+        :param status: 任务状态
+        :type status: str
+        :param create_time: 创建时间，时间戳
+        :type create_time: str
+        :param error_code: 错误码
+        :type error_code: str
+        :param error_msg: 错误信息
+        :type error_msg: str
+        :param child_ids: 子任务ID，有子任务时返回该字段。
+        :type child_ids: list[str]
+        """
         
         
 
@@ -87,7 +104,7 @@ class CreateJobResp:
         任务ID
 
         :param id: The id of this CreateJobResp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -109,7 +126,7 @@ class CreateJobResp:
         任务名称
 
         :param name: The name of this CreateJobResp.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -131,7 +148,7 @@ class CreateJobResp:
         任务状态
 
         :param status: The status of this CreateJobResp.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -153,7 +170,7 @@ class CreateJobResp:
         创建时间，时间戳
 
         :param create_time: The create_time of this CreateJobResp.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -175,7 +192,7 @@ class CreateJobResp:
         错误码
 
         :param error_code: The error_code of this CreateJobResp.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -197,7 +214,7 @@ class CreateJobResp:
         错误信息
 
         :param error_msg: The error_msg of this CreateJobResp.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 
@@ -219,7 +236,7 @@ class CreateJobResp:
         子任务ID，有子任务时返回该字段。
 
         :param child_ids: The child_ids of this CreateJobResp.
-        :type: list[str]
+        :type child_ids: list[str]
         """
         self._child_ids = child_ids
 

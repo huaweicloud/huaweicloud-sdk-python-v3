@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowPolicyRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowPolicyRequest:
     }
 
     def __init__(self, enterprise_project_id=None, policy_id=None):
-        """ShowPolicyRequest - a model defined in huaweicloud sdk"""
+        """ShowPolicyRequest
+
+        The model defined in huaweicloud sdk
+
+        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        :type enterprise_project_id: str
+        :param policy_id: 防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
+        :type policy_id: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ShowPolicyRequest:
         您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this ShowPolicyRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -84,7 +91,7 @@ class ShowPolicyRequest:
         防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
 
         :param policy_id: The policy_id of this ShowPolicyRequest.
-        :type: str
+        :type policy_id: str
         """
         self._policy_id = policy_id
 

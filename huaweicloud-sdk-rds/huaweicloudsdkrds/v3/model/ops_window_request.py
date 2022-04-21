@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OpsWindowRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class OpsWindowRequest:
     }
 
     def __init__(self, start_time=None, end_time=None):
-        """OpsWindowRequest - a model defined in huaweicloud sdk"""
+        """OpsWindowRequest
+
+        The model defined in huaweicloud sdk
+
+        :param start_time: - 开始时间， UTC时间
+        :type start_time: str
+        :param end_time: - 结束时间，UTC时间
+        :type end_time: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class OpsWindowRequest:
         - 开始时间， UTC时间
 
         :param start_time: The start_time of this OpsWindowRequest.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -83,7 +90,7 @@ class OpsWindowRequest:
         - 结束时间，UTC时间
 
         :param end_time: The end_time of this OpsWindowRequest.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 

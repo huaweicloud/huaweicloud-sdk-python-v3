@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OpExtendInfoSync:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class OpExtendInfoSync:
     }
 
     def __init__(self, sync_backup_num=None, delete_backup_num=None, err_sync_backup_num=None):
-        """OpExtendInfoSync - a model defined in huaweicloud sdk"""
+        """OpExtendInfoSync
+
+        The model defined in huaweicloud sdk
+
+        :param sync_backup_num: 同步备份副本数
+        :type sync_backup_num: int
+        :param delete_backup_num: 删除的备份副本数
+        :type delete_backup_num: int
+        :param err_sync_backup_num: 同步失败备副本数
+        :type err_sync_backup_num: int
+        """
         
         
 
@@ -68,7 +77,7 @@ class OpExtendInfoSync:
         同步备份副本数
 
         :param sync_backup_num: The sync_backup_num of this OpExtendInfoSync.
-        :type: int
+        :type sync_backup_num: int
         """
         self._sync_backup_num = sync_backup_num
 
@@ -90,7 +99,7 @@ class OpExtendInfoSync:
         删除的备份副本数
 
         :param delete_backup_num: The delete_backup_num of this OpExtendInfoSync.
-        :type: int
+        :type delete_backup_num: int
         """
         self._delete_backup_num = delete_backup_num
 
@@ -112,7 +121,7 @@ class OpExtendInfoSync:
         同步失败备副本数
 
         :param err_sync_backup_num: The err_sync_backup_num of this OpExtendInfoSync.
-        :type: int
+        :type err_sync_backup_num: int
         """
         self._err_sync_backup_num = err_sync_backup_num
 

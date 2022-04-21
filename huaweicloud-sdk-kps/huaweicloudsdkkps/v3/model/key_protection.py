@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeyProtection:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class KeyProtection:
     }
 
     def __init__(self, private_key=None, encryption=None):
-        """KeyProtection - a model defined in huaweicloud sdk"""
+        """KeyProtection
+
+        The model defined in huaweicloud sdk
+
+        :param private_key: 导入SSH密钥对的私钥。
+        :type private_key: str
+        :param encryption: 
+        :type encryption: :class:`huaweicloudsdkkps.v3.Encryption`
+        """
         
         
 
@@ -63,7 +70,7 @@ class KeyProtection:
         导入SSH密钥对的私钥。
 
         :param private_key: The private_key of this KeyProtection.
-        :type: str
+        :type private_key: str
         """
         self._private_key = private_key
 
@@ -73,7 +80,7 @@ class KeyProtection:
 
 
         :return: The encryption of this KeyProtection.
-        :rtype: Encryption
+        :rtype: :class:`huaweicloudsdkkps.v3.Encryption`
         """
         return self._encryption
 
@@ -83,7 +90,7 @@ class KeyProtection:
 
 
         :param encryption: The encryption of this KeyProtection.
-        :type: Encryption
+        :type encryption: :class:`huaweicloudsdkkps.v3.Encryption`
         """
         self._encryption = encryption
 

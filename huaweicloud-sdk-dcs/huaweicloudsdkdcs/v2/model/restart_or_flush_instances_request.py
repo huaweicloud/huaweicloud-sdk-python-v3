@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestartOrFlushInstancesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RestartOrFlushInstancesRequest:
     }
 
     def __init__(self, body=None):
-        """RestartOrFlushInstancesRequest - a model defined in huaweicloud sdk"""
+        """RestartOrFlushInstancesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the RestartOrFlushInstancesRequest
+        :type body: :class:`huaweicloudsdkdcs.v2.ChangeInstanceStatusBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class RestartOrFlushInstancesRequest:
 
 
         :return: The body of this RestartOrFlushInstancesRequest.
-        :rtype: ChangeInstanceStatusBody
+        :rtype: :class:`huaweicloudsdkdcs.v2.ChangeInstanceStatusBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class RestartOrFlushInstancesRequest:
 
 
         :param body: The body of this RestartOrFlushInstancesRequest.
-        :type: ChangeInstanceStatusBody
+        :type body: :class:`huaweicloudsdkdcs.v2.ChangeInstanceStatusBody`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateSnapshotReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateSnapshotReq:
     }
 
     def __init__(self, name=None, description=None, indices=None):
-        """CreateSnapshotReq - a model defined in huaweicloud sdk"""
+        """CreateSnapshotReq
+
+        The model defined in huaweicloud sdk
+
+        :param name: 快照名称，快照名称在4位到64位之间，必须以字母开头，可以包含字母、数字、中划线或者下划线，注意字母不能大写且不能包含其他特殊字符。
+        :type name: str
+        :param description: 快照描述，0～256个字符，不能包含“&lt;&gt;”字符。
+        :type description: str
+        :param indices: 指定要备份的索引名称，多个索引用逗号隔开，默认备份所有索引。支持使用“\\*”匹配多个索引，例如：2018-06\\*，表示备份名称前缀是2018-06的所有索引的数据。  0～1024个字符，不能包含空格和大写字母，且不能包含\\\&quot;\\\\&lt;|&gt;/?特殊字符。
+        :type indices: str
+        """
         
         
 
@@ -67,7 +76,7 @@ class CreateSnapshotReq:
         快照名称，快照名称在4位到64位之间，必须以字母开头，可以包含字母、数字、中划线或者下划线，注意字母不能大写且不能包含其他特殊字符。
 
         :param name: The name of this CreateSnapshotReq.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -89,7 +98,7 @@ class CreateSnapshotReq:
         快照描述，0～256个字符，不能包含“<>”字符。
 
         :param description: The description of this CreateSnapshotReq.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -111,7 +120,7 @@ class CreateSnapshotReq:
         指定要备份的索引名称，多个索引用逗号隔开，默认备份所有索引。支持使用“\\*”匹配多个索引，例如：2018-06\\*，表示备份名称前缀是2018-06的所有索引的数据。  0～1024个字符，不能包含空格和大写字母，且不能包含\\\"\\\\<|>/?特殊字符。
 
         :param indices: The indices of this CreateSnapshotReq.
-        :type: str
+        :type indices: str
         """
         self._indices = indices
 

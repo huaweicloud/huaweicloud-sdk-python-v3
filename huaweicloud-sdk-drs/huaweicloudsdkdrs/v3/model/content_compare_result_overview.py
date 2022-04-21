@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ContentCompareResultOverview:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ContentCompareResultOverview:
     }
 
     def __init__(self, source_db_name=None, target_db_name=None, content_compare_result=None):
-        """ContentCompareResultOverview - a model defined in huaweicloud sdk"""
+        """ContentCompareResultOverview
+
+        The model defined in huaweicloud sdk
+
+        :param source_db_name: 源库名称。
+        :type source_db_name: str
+        :param target_db_name: 目标库名称。
+        :type target_db_name: str
+        :param content_compare_result: 对比结果。
+        :type content_compare_result: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class ContentCompareResultOverview:
         源库名称。
 
         :param source_db_name: The source_db_name of this ContentCompareResultOverview.
-        :type: str
+        :type source_db_name: str
         """
         self._source_db_name = source_db_name
 
@@ -87,7 +96,7 @@ class ContentCompareResultOverview:
         目标库名称。
 
         :param target_db_name: The target_db_name of this ContentCompareResultOverview.
-        :type: str
+        :type target_db_name: str
         """
         self._target_db_name = target_db_name
 
@@ -109,7 +118,7 @@ class ContentCompareResultOverview:
         对比结果。
 
         :param content_compare_result: The content_compare_result of this ContentCompareResultOverview.
-        :type: str
+        :type content_compare_result: str
         """
         self._content_compare_result = content_compare_result
 

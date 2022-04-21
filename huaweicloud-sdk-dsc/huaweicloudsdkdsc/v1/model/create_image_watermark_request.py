@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateImageWatermarkRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateImageWatermarkRequest:
     }
 
     def __init__(self, body=None):
-        """CreateImageWatermarkRequest - a model defined in huaweicloud sdk"""
+        """CreateImageWatermarkRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateImageWatermarkRequest
+        :type body: :class:`huaweicloudsdkdsc.v1.CreateImageWatermarkRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateImageWatermarkRequest:
 
 
         :return: The body of this CreateImageWatermarkRequest.
-        :rtype: CreateImageWatermarkRequestBody
+        :rtype: :class:`huaweicloudsdkdsc.v1.CreateImageWatermarkRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateImageWatermarkRequest:
 
 
         :param body: The body of this CreateImageWatermarkRequest.
-        :type: CreateImageWatermarkRequestBody
+        :type body: :class:`huaweicloudsdkdsc.v1.CreateImageWatermarkRequestBody`
         """
         self._body = body
 

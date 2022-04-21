@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateSqlserverDbUserResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateSqlserverDbUserResponse(SdkResponse):
     }
 
     def __init__(self, resp=None):
-        """CreateSqlserverDbUserResponse - a model defined in huaweicloud sdk"""
+        """CreateSqlserverDbUserResponse
+
+        The model defined in huaweicloud sdk
+
+        :param resp: 操作结果。
+        :type resp: str
+        """
         
         super(CreateSqlserverDbUserResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class CreateSqlserverDbUserResponse(SdkResponse):
         操作结果。
 
         :param resp: The resp of this CreateSqlserverDbUserResponse.
-        :type: str
+        :type resp: str
         """
         self._resp = resp
 

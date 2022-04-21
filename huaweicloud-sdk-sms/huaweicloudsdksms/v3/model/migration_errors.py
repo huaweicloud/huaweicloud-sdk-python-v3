@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MigrationErrors:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class MigrationErrors:
     }
 
     def __init__(self, error_json=None, host_name=None, name=None, source_id=None, source_ip=None, target_ip=None):
-        """MigrationErrors - a model defined in huaweicloud sdk"""
+        """MigrationErrors
+
+        The model defined in huaweicloud sdk
+
+        :param error_json: 保存错误信息的json字符串
+        :type error_json: str
+        :param host_name: 主机名称（从用户系统获取，可能为空）
+        :type host_name: str
+        :param name: 源端在主机迁移服务中的名称
+        :type name: str
+        :param source_id: 源端服务器id
+        :type source_id: str
+        :param source_ip: 源端服务器的ip
+        :type source_ip: str
+        :param target_ip: 目的端服务器的ip 
+        :type target_ip: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class MigrationErrors:
         保存错误信息的json字符串
 
         :param error_json: The error_json of this MigrationErrors.
-        :type: str
+        :type error_json: str
         """
         self._error_json = error_json
 
@@ -105,7 +120,7 @@ class MigrationErrors:
         主机名称（从用户系统获取，可能为空）
 
         :param host_name: The host_name of this MigrationErrors.
-        :type: str
+        :type host_name: str
         """
         self._host_name = host_name
 
@@ -127,7 +142,7 @@ class MigrationErrors:
         源端在主机迁移服务中的名称
 
         :param name: The name of this MigrationErrors.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -149,7 +164,7 @@ class MigrationErrors:
         源端服务器id
 
         :param source_id: The source_id of this MigrationErrors.
-        :type: str
+        :type source_id: str
         """
         self._source_id = source_id
 
@@ -171,7 +186,7 @@ class MigrationErrors:
         源端服务器的ip
 
         :param source_ip: The source_ip of this MigrationErrors.
-        :type: str
+        :type source_ip: str
         """
         self._source_ip = source_ip
 
@@ -193,7 +208,7 @@ class MigrationErrors:
         目的端服务器的ip 
 
         :param target_ip: The target_ip of this MigrationErrors.
-        :type: str
+        :type target_ip: str
         """
         self._target_ip = target_ip
 

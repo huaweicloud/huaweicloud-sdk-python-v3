@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApiBackendVpcReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ApiBackendVpcReq:
     }
 
     def __init__(self, vpc_channel_proxy_host=None, vpc_channel_id=None):
-        """ApiBackendVpcReq - a model defined in huaweicloud sdk"""
+        """ApiBackendVpcReq
+
+        The model defined in huaweicloud sdk
+
+        :param vpc_channel_proxy_host: 代理主机
+        :type vpc_channel_proxy_host: str
+        :param vpc_channel_id: VPC通道编号
+        :type vpc_channel_id: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ApiBackendVpcReq:
         代理主机
 
         :param vpc_channel_proxy_host: The vpc_channel_proxy_host of this ApiBackendVpcReq.
-        :type: str
+        :type vpc_channel_proxy_host: str
         """
         self._vpc_channel_proxy_host = vpc_channel_proxy_host
 
@@ -84,7 +91,7 @@ class ApiBackendVpcReq:
         VPC通道编号
 
         :param vpc_channel_id: The vpc_channel_id of this ApiBackendVpcReq.
-        :type: str
+        :type vpc_channel_id: str
         """
         self._vpc_channel_id = vpc_channel_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Bandwidth:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class Bandwidth:
     }
 
     def __init__(self, bandwidth_type=None, charge_mode=None, create_time=None, id=None, name=None, operator=None, publicip_info=None, share_type=None, site_id=None, site_info=None, size=None, status=None, update_time=None, pool_id=None):
-        """Bandwidth - a model defined in huaweicloud sdk"""
+        """Bandwidth
+
+        The model defined in huaweicloud sdk
+
+        :param bandwidth_type: 带宽类型。 取值范围： share：共享类型
+        :type bandwidth_type: str
+        :param charge_mode: 计费模式，当前只支持峰值95计费。  取值范围：  - 95peak_plus：峰值95计费
+        :type charge_mode: str
+        :param create_time: 创建时间。
+        :type create_time: str
+        :param id: 带宽ID。
+        :type id: str
+        :param name: 带宽名称。
+        :type name: str
+        :param operator: 
+        :type operator: :class:`huaweicloudsdkiec.v1.Operator`
+        :param publicip_info: 弹性公网IP信息。
+        :type publicip_info: list[:class:`huaweicloudsdkiec.v1.PublicipInfo`]
+        :param share_type: 共享带宽类型，标识是否是共享带宽。  取值范围：  - WHOLE：共享带宽
+        :type share_type: str
+        :param site_id: 边缘站点ID。
+        :type site_id: str
+        :param site_info: 站点信息。
+        :type site_info: str
+        :param size: 带宽大小。
+        :type size: int
+        :param status: 带宽的状态。  取值范围：  - FREEZED：冻结  - NORMAL：正常
+        :type status: str
+        :param update_time: 更新时间。
+        :type update_time: str
+        :param pool_id: 线路ID。
+        :type pool_id: str
+        """
         
         
 
@@ -123,7 +154,7 @@ class Bandwidth:
         带宽类型。 取值范围： share：共享类型
 
         :param bandwidth_type: The bandwidth_type of this Bandwidth.
-        :type: str
+        :type bandwidth_type: str
         """
         self._bandwidth_type = bandwidth_type
 
@@ -145,7 +176,7 @@ class Bandwidth:
         计费模式，当前只支持峰值95计费。  取值范围：  - 95peak_plus：峰值95计费
 
         :param charge_mode: The charge_mode of this Bandwidth.
-        :type: str
+        :type charge_mode: str
         """
         self._charge_mode = charge_mode
 
@@ -167,7 +198,7 @@ class Bandwidth:
         创建时间。
 
         :param create_time: The create_time of this Bandwidth.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -189,7 +220,7 @@ class Bandwidth:
         带宽ID。
 
         :param id: The id of this Bandwidth.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -211,7 +242,7 @@ class Bandwidth:
         带宽名称。
 
         :param name: The name of this Bandwidth.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -221,7 +252,7 @@ class Bandwidth:
 
 
         :return: The operator of this Bandwidth.
-        :rtype: Operator
+        :rtype: :class:`huaweicloudsdkiec.v1.Operator`
         """
         return self._operator
 
@@ -231,7 +262,7 @@ class Bandwidth:
 
 
         :param operator: The operator of this Bandwidth.
-        :type: Operator
+        :type operator: :class:`huaweicloudsdkiec.v1.Operator`
         """
         self._operator = operator
 
@@ -242,7 +273,7 @@ class Bandwidth:
         弹性公网IP信息。
 
         :return: The publicip_info of this Bandwidth.
-        :rtype: list[PublicipInfo]
+        :rtype: list[:class:`huaweicloudsdkiec.v1.PublicipInfo`]
         """
         return self._publicip_info
 
@@ -253,7 +284,7 @@ class Bandwidth:
         弹性公网IP信息。
 
         :param publicip_info: The publicip_info of this Bandwidth.
-        :type: list[PublicipInfo]
+        :type publicip_info: list[:class:`huaweicloudsdkiec.v1.PublicipInfo`]
         """
         self._publicip_info = publicip_info
 
@@ -275,7 +306,7 @@ class Bandwidth:
         共享带宽类型，标识是否是共享带宽。  取值范围：  - WHOLE：共享带宽
 
         :param share_type: The share_type of this Bandwidth.
-        :type: str
+        :type share_type: str
         """
         self._share_type = share_type
 
@@ -297,7 +328,7 @@ class Bandwidth:
         边缘站点ID。
 
         :param site_id: The site_id of this Bandwidth.
-        :type: str
+        :type site_id: str
         """
         self._site_id = site_id
 
@@ -319,7 +350,7 @@ class Bandwidth:
         站点信息。
 
         :param site_info: The site_info of this Bandwidth.
-        :type: str
+        :type site_info: str
         """
         self._site_info = site_info
 
@@ -341,7 +372,7 @@ class Bandwidth:
         带宽大小。
 
         :param size: The size of this Bandwidth.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -363,7 +394,7 @@ class Bandwidth:
         带宽的状态。  取值范围：  - FREEZED：冻结  - NORMAL：正常
 
         :param status: The status of this Bandwidth.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -385,7 +416,7 @@ class Bandwidth:
         更新时间。
 
         :param update_time: The update_time of this Bandwidth.
-        :type: str
+        :type update_time: str
         """
         self._update_time = update_time
 
@@ -407,7 +438,7 @@ class Bandwidth:
         线路ID。
 
         :param pool_id: The pool_id of this Bandwidth.
-        :type: str
+        :type pool_id: str
         """
         self._pool_id = pool_id
 

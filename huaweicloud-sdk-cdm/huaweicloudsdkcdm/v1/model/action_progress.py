@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ActionProgress:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ActionProgress:
     }
 
     def __init__(self, creating=None, growing=None, restoring=None, snapshotting=None, repairing=None):
-        """ActionProgress - a model defined in huaweicloud sdk"""
+        """ActionProgress
+
+        The model defined in huaweicloud sdk
+
+        :param creating: 创建集群进度，例如：29%
+        :type creating: str
+        :param growing: 扩容集群进度，例如：29%
+        :type growing: str
+        :param restoring: 恢复集群进度，例如：29%
+        :type restoring: str
+        :param snapshotting: 集群快照进度，例如：29%
+        :type snapshotting: str
+        :param repairing: 修复集群进度，例如：29%
+        :type repairing: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class ActionProgress:
         创建集群进度，例如：29%
 
         :param creating: The creating of this ActionProgress.
-        :type: str
+        :type creating: str
         """
         self._creating = creating
 
@@ -100,7 +113,7 @@ class ActionProgress:
         扩容集群进度，例如：29%
 
         :param growing: The growing of this ActionProgress.
-        :type: str
+        :type growing: str
         """
         self._growing = growing
 
@@ -122,7 +135,7 @@ class ActionProgress:
         恢复集群进度，例如：29%
 
         :param restoring: The restoring of this ActionProgress.
-        :type: str
+        :type restoring: str
         """
         self._restoring = restoring
 
@@ -144,7 +157,7 @@ class ActionProgress:
         集群快照进度，例如：29%
 
         :param snapshotting: The snapshotting of this ActionProgress.
-        :type: str
+        :type snapshotting: str
         """
         self._snapshotting = snapshotting
 
@@ -166,7 +179,7 @@ class ActionProgress:
         修复集群进度，例如：29%
 
         :param repairing: The repairing of this ActionProgress.
-        :type: str
+        :type repairing: str
         """
         self._repairing = repairing
 

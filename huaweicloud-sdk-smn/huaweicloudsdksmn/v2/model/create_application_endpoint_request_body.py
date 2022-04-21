@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateApplicationEndpointRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateApplicationEndpointRequestBody:
     }
 
     def __init__(self, token=None, user_data=None):
-        """CreateApplicationEndpointRequestBody - a model defined in huaweicloud sdk"""
+        """CreateApplicationEndpointRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param token: 移动应用设备token，最大长度512个字节。
+        :type token: str
+        :param user_data: 用户自定义数据，最大长度支持UTF-8编码后2048字节。
+        :type user_data: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class CreateApplicationEndpointRequestBody:
         移动应用设备token，最大长度512个字节。
 
         :param token: The token of this CreateApplicationEndpointRequestBody.
-        :type: str
+        :type token: str
         """
         self._token = token
 
@@ -83,7 +90,7 @@ class CreateApplicationEndpointRequestBody:
         用户自定义数据，最大长度支持UTF-8编码后2048字节。
 
         :param user_data: The user_data of this CreateApplicationEndpointRequestBody.
-        :type: str
+        :type user_data: str
         """
         self._user_data = user_data
 

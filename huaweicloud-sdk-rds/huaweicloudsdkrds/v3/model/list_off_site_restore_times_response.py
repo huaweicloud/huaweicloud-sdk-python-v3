@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListOffSiteRestoreTimesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListOffSiteRestoreTimesResponse(SdkResponse):
     }
 
     def __init__(self, restore_time=None):
-        """ListOffSiteRestoreTimesResponse - a model defined in huaweicloud sdk"""
+        """ListOffSiteRestoreTimesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param restore_time: 可恢复时间段列表。
+        :type restore_time: list[:class:`huaweicloudsdkrds.v3.GetRestoreTimeResponseRestoreTime`]
+        """
         
         super(ListOffSiteRestoreTimesResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListOffSiteRestoreTimesResponse(SdkResponse):
         可恢复时间段列表。
 
         :return: The restore_time of this ListOffSiteRestoreTimesResponse.
-        :rtype: list[GetRestoreTimeResponseRestoreTime]
+        :rtype: list[:class:`huaweicloudsdkrds.v3.GetRestoreTimeResponseRestoreTime`]
         """
         return self._restore_time
 
@@ -58,7 +63,7 @@ class ListOffSiteRestoreTimesResponse(SdkResponse):
         可恢复时间段列表。
 
         :param restore_time: The restore_time of this ListOffSiteRestoreTimesResponse.
-        :type: list[GetRestoreTimeResponseRestoreTime]
+        :type restore_time: list[:class:`huaweicloudsdkrds.v3.GetRestoreTimeResponseRestoreTime`]
         """
         self._restore_time = restore_time
 

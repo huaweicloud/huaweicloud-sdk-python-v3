@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TranscodeInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class TranscodeInfo:
     }
 
     def __init__(self, template_group_name=None, output=None, exec_desc=None, transcode_status=None):
-        """TranscodeInfo - a model defined in huaweicloud sdk"""
+        """TranscodeInfo
+
+        The model defined in huaweicloud sdk
+
+        :param template_group_name: 转码模板组名称。
+        :type template_group_name: str
+        :param output: 转码输出数组。 - HLS或DASH格式：此数组的成员个数为n+1，n为转码输出路数。 - MP4格式：此数组的成员个数为n，n为转码输出路数。
+        :type output: list[:class:`huaweicloudsdkvod.v1.Output`]
+        :param exec_desc: 执行情况描述。
+        :type exec_desc: str
+        :param transcode_status: 转码状态。  取值如下： - UN_TRANSCODE：未转码 - WAITING_TRANSCODE：待转码 - TRANSCODING：转码中 - TRANSCODE_SUCCEED：转码成功 - TRANSCODE_FAILED：转码失败
+        :type transcode_status: str
+        """
         
         
 
@@ -71,7 +82,7 @@ class TranscodeInfo:
         转码模板组名称。
 
         :param template_group_name: The template_group_name of this TranscodeInfo.
-        :type: str
+        :type template_group_name: str
         """
         self._template_group_name = template_group_name
 
@@ -82,7 +93,7 @@ class TranscodeInfo:
         转码输出数组。 - HLS或DASH格式：此数组的成员个数为n+1，n为转码输出路数。 - MP4格式：此数组的成员个数为n，n为转码输出路数。
 
         :return: The output of this TranscodeInfo.
-        :rtype: list[Output]
+        :rtype: list[:class:`huaweicloudsdkvod.v1.Output`]
         """
         return self._output
 
@@ -93,7 +104,7 @@ class TranscodeInfo:
         转码输出数组。 - HLS或DASH格式：此数组的成员个数为n+1，n为转码输出路数。 - MP4格式：此数组的成员个数为n，n为转码输出路数。
 
         :param output: The output of this TranscodeInfo.
-        :type: list[Output]
+        :type output: list[:class:`huaweicloudsdkvod.v1.Output`]
         """
         self._output = output
 
@@ -115,7 +126,7 @@ class TranscodeInfo:
         执行情况描述。
 
         :param exec_desc: The exec_desc of this TranscodeInfo.
-        :type: str
+        :type exec_desc: str
         """
         self._exec_desc = exec_desc
 
@@ -137,7 +148,7 @@ class TranscodeInfo:
         转码状态。  取值如下： - UN_TRANSCODE：未转码 - WAITING_TRANSCODE：待转码 - TRANSCODING：转码中 - TRANSCODE_SUCCEED：转码成功 - TRANSCODE_FAILED：转码失败
 
         :param transcode_status: The transcode_status of this TranscodeInfo.
-        :type: str
+        :type transcode_status: str
         """
         self._transcode_status = transcode_status
 

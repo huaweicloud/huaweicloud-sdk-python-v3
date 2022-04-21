@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowCertificateAuthorityRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowCertificateAuthorityRequest:
     }
 
     def __init__(self, ca_id=None):
-        """ShowCertificateAuthorityRequest - a model defined in huaweicloud sdk"""
+        """ShowCertificateAuthorityRequest
+
+        The model defined in huaweicloud sdk
+
+        :param ca_id: CA证书ID。
+        :type ca_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowCertificateAuthorityRequest:
         CA证书ID。
 
         :param ca_id: The ca_id of this ShowCertificateAuthorityRequest.
-        :type: str
+        :type ca_id: str
         """
         self._ca_id = ca_id
 

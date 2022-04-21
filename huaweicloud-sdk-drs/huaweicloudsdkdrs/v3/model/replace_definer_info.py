@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ReplaceDefinerInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ReplaceDefinerInfo:
     }
 
     def __init__(self, job_id=None, replace_definer=None):
-        """ReplaceDefinerInfo - a model defined in huaweicloud sdk"""
+        """ReplaceDefinerInfo
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 任务id
+        :type job_id: str
+        :param replace_definer: 是否使用目标库的用户替换掉definer
+        :type replace_definer: bool
+        """
         
         
 
@@ -61,7 +68,7 @@ class ReplaceDefinerInfo:
         任务id
 
         :param job_id: The job_id of this ReplaceDefinerInfo.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -83,7 +90,7 @@ class ReplaceDefinerInfo:
         是否使用目标库的用户替换掉definer
 
         :param replace_definer: The replace_definer of this ReplaceDefinerInfo.
-        :type: bool
+        :type replace_definer: bool
         """
         self._replace_definer = replace_definer
 

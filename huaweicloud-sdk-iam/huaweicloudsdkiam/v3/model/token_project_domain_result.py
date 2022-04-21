@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TokenProjectDomainResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class TokenProjectDomainResult:
     }
 
     def __init__(self, name=None, id=None):
-        """TokenProjectDomainResult - a model defined in huaweicloud sdk"""
+        """TokenProjectDomainResult
+
+        The model defined in huaweicloud sdk
+
+        :param name: 账号名。
+        :type name: str
+        :param id: 账号ID。
+        :type id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class TokenProjectDomainResult:
         账号名。
 
         :param name: The name of this TokenProjectDomainResult.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -83,7 +90,7 @@ class TokenProjectDomainResult:
         账号ID。
 
         :param id: The id of this TokenProjectDomainResult.
-        :type: str
+        :type id: str
         """
         self._id = id
 

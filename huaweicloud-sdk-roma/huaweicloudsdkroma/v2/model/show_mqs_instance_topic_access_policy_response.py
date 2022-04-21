@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowMqsInstanceTopicAccessPolicyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ShowMqsInstanceTopicAccessPolicyResponse(SdkResponse):
     }
 
     def __init__(self, name=None, policies=None, total=None, size=None, operation=None):
-        """ShowMqsInstanceTopicAccessPolicyResponse - a model defined in huaweicloud sdk"""
+        """ShowMqsInstanceTopicAccessPolicyResponse
+
+        The model defined in huaweicloud sdk
+
+        :param name: topic名称。
+        :type name: str
+        :param policies: 策略列表。
+        :type policies: list[:class:`huaweicloudsdkroma.v2.ShowMqsInstanceTopicAccessPolicyRespPolicies`]
+        :param total: 权限策略的总数。
+        :type total: int
+        :param size: 查询权限策略的数量。
+        :type size: int
+        :param operation: topic名称。
+        :type operation: str
+        """
         
         super(ShowMqsInstanceTopicAccessPolicyResponse, self).__init__()
 
@@ -78,7 +91,7 @@ class ShowMqsInstanceTopicAccessPolicyResponse(SdkResponse):
         topic名称。
 
         :param name: The name of this ShowMqsInstanceTopicAccessPolicyResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -89,7 +102,7 @@ class ShowMqsInstanceTopicAccessPolicyResponse(SdkResponse):
         策略列表。
 
         :return: The policies of this ShowMqsInstanceTopicAccessPolicyResponse.
-        :rtype: list[ShowMqsInstanceTopicAccessPolicyRespPolicies]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.ShowMqsInstanceTopicAccessPolicyRespPolicies`]
         """
         return self._policies
 
@@ -100,7 +113,7 @@ class ShowMqsInstanceTopicAccessPolicyResponse(SdkResponse):
         策略列表。
 
         :param policies: The policies of this ShowMqsInstanceTopicAccessPolicyResponse.
-        :type: list[ShowMqsInstanceTopicAccessPolicyRespPolicies]
+        :type policies: list[:class:`huaweicloudsdkroma.v2.ShowMqsInstanceTopicAccessPolicyRespPolicies`]
         """
         self._policies = policies
 
@@ -122,7 +135,7 @@ class ShowMqsInstanceTopicAccessPolicyResponse(SdkResponse):
         权限策略的总数。
 
         :param total: The total of this ShowMqsInstanceTopicAccessPolicyResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -144,7 +157,7 @@ class ShowMqsInstanceTopicAccessPolicyResponse(SdkResponse):
         查询权限策略的数量。
 
         :param size: The size of this ShowMqsInstanceTopicAccessPolicyResponse.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -166,7 +179,7 @@ class ShowMqsInstanceTopicAccessPolicyResponse(SdkResponse):
         topic名称。
 
         :param operation: The operation of this ShowMqsInstanceTopicAccessPolicyResponse.
-        :type: str
+        :type operation: str
         """
         self._operation = operation
 

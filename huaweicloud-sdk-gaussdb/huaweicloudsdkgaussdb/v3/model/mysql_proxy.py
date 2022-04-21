@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MysqlProxy:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class MysqlProxy:
     }
 
     def __init__(self, pool_id=None, status=None, address=None, port=None, pool_status=None, delay_threshold_in_seconds=None, elb_vip=None, eip=None, vcpus=None, ram=None, node_num=None, mode=None, nodes=None, flavor_ref=None):
-        """MysqlProxy - a model defined in huaweicloud sdk"""
+        """MysqlProxy
+
+        The model defined in huaweicloud sdk
+
+        :param pool_id: Proxy实例id。
+        :type pool_id: str
+        :param status: Proxy实例开启状态。  取值范围：closed、open、frozen、opening、closing、enlarging、freezing和unfreezin。
+        :type status: str
+        :param address: Proxy读写分离地址。
+        :type address: str
+        :param port: Proxy端口信息。
+        :type port: int
+        :param pool_status: Proxy实例状态。 取值范围：abnormal、normal、creating和deleted。
+        :type pool_status: str
+        :param delay_threshold_in_seconds: 延时阈值，单位：秒。
+        :type delay_threshold_in_seconds: int
+        :param elb_vip: Elb模式的虚拟ip信息。
+        :type elb_vip: str
+        :param eip: 弹性公网IP信息。
+        :type eip: str
+        :param vcpus: Proxy实例规格的CPU数量。
+        :type vcpus: str
+        :param ram: Proxy实例规格的内存数量。
+        :type ram: str
+        :param node_num: Proxy节点个数。
+        :type node_num: int
+        :param mode: Proxy主备模式，取值范围：Cluster。
+        :type mode: str
+        :param nodes: Proxy节点信息。
+        :type nodes: list[:class:`huaweicloudsdkgaussdb.v3.MysqlProxyNodes`]
+        :param flavor_ref: Proxy规格信息。
+        :type flavor_ref: str
+        """
         
         
 
@@ -123,7 +154,7 @@ class MysqlProxy:
         Proxy实例id。
 
         :param pool_id: The pool_id of this MysqlProxy.
-        :type: str
+        :type pool_id: str
         """
         self._pool_id = pool_id
 
@@ -145,7 +176,7 @@ class MysqlProxy:
         Proxy实例开启状态。  取值范围：closed、open、frozen、opening、closing、enlarging、freezing和unfreezin。
 
         :param status: The status of this MysqlProxy.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -167,7 +198,7 @@ class MysqlProxy:
         Proxy读写分离地址。
 
         :param address: The address of this MysqlProxy.
-        :type: str
+        :type address: str
         """
         self._address = address
 
@@ -189,7 +220,7 @@ class MysqlProxy:
         Proxy端口信息。
 
         :param port: The port of this MysqlProxy.
-        :type: int
+        :type port: int
         """
         self._port = port
 
@@ -211,7 +242,7 @@ class MysqlProxy:
         Proxy实例状态。 取值范围：abnormal、normal、creating和deleted。
 
         :param pool_status: The pool_status of this MysqlProxy.
-        :type: str
+        :type pool_status: str
         """
         self._pool_status = pool_status
 
@@ -233,7 +264,7 @@ class MysqlProxy:
         延时阈值，单位：秒。
 
         :param delay_threshold_in_seconds: The delay_threshold_in_seconds of this MysqlProxy.
-        :type: int
+        :type delay_threshold_in_seconds: int
         """
         self._delay_threshold_in_seconds = delay_threshold_in_seconds
 
@@ -255,7 +286,7 @@ class MysqlProxy:
         Elb模式的虚拟ip信息。
 
         :param elb_vip: The elb_vip of this MysqlProxy.
-        :type: str
+        :type elb_vip: str
         """
         self._elb_vip = elb_vip
 
@@ -277,7 +308,7 @@ class MysqlProxy:
         弹性公网IP信息。
 
         :param eip: The eip of this MysqlProxy.
-        :type: str
+        :type eip: str
         """
         self._eip = eip
 
@@ -299,7 +330,7 @@ class MysqlProxy:
         Proxy实例规格的CPU数量。
 
         :param vcpus: The vcpus of this MysqlProxy.
-        :type: str
+        :type vcpus: str
         """
         self._vcpus = vcpus
 
@@ -321,7 +352,7 @@ class MysqlProxy:
         Proxy实例规格的内存数量。
 
         :param ram: The ram of this MysqlProxy.
-        :type: str
+        :type ram: str
         """
         self._ram = ram
 
@@ -343,7 +374,7 @@ class MysqlProxy:
         Proxy节点个数。
 
         :param node_num: The node_num of this MysqlProxy.
-        :type: int
+        :type node_num: int
         """
         self._node_num = node_num
 
@@ -365,7 +396,7 @@ class MysqlProxy:
         Proxy主备模式，取值范围：Cluster。
 
         :param mode: The mode of this MysqlProxy.
-        :type: str
+        :type mode: str
         """
         self._mode = mode
 
@@ -376,7 +407,7 @@ class MysqlProxy:
         Proxy节点信息。
 
         :return: The nodes of this MysqlProxy.
-        :rtype: list[MysqlProxyNodes]
+        :rtype: list[:class:`huaweicloudsdkgaussdb.v3.MysqlProxyNodes`]
         """
         return self._nodes
 
@@ -387,7 +418,7 @@ class MysqlProxy:
         Proxy节点信息。
 
         :param nodes: The nodes of this MysqlProxy.
-        :type: list[MysqlProxyNodes]
+        :type nodes: list[:class:`huaweicloudsdkgaussdb.v3.MysqlProxyNodes`]
         """
         self._nodes = nodes
 
@@ -409,7 +440,7 @@ class MysqlProxy:
         Proxy规格信息。
 
         :param flavor_ref: The flavor_ref of this MysqlProxy.
-        :type: str
+        :type flavor_ref: str
         """
         self._flavor_ref = flavor_ref
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListQpsTimelineRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListQpsTimelineRequest:
     }
 
     def __init__(self, enterprise_project_id=None, _from=None, to=None, hosts=None, instances=None, group_by=None):
-        """ListQpsTimelineRequest - a model defined in huaweicloud sdk"""
+        """ListQpsTimelineRequest
+
+        The model defined in huaweicloud sdk
+
+        :param enterprise_project_id: 通过企业项目管理服务的查询企业项目列表接口ListEnterpriseProject查询通过企业项目管理服务的查询企业项目列表接口ListEnterpriseProject查询企业项目ID
+        :type enterprise_project_id: str
+        :param _from: 起始时间（13位毫秒时间戳），需要和to同时使用
+        :type _from: int
+        :param to: 结束时间（13位毫秒时间戳），需要和from同时使用
+        :type to: int
+        :param hosts: 域名id（通过ListHost接口查询）
+        :type hosts: str
+        :param instances: 独享实例实例id（仅实例化模式涉及）
+        :type instances: str
+        :param group_by: 展示维度，需要按天展示时传\&quot;DAY\&quot;
+        :type group_by: str
+        """
         
         
 
@@ -81,7 +96,7 @@ class ListQpsTimelineRequest:
         通过企业项目管理服务的查询企业项目列表接口ListEnterpriseProject查询通过企业项目管理服务的查询企业项目列表接口ListEnterpriseProject查询企业项目ID
 
         :param enterprise_project_id: The enterprise_project_id of this ListQpsTimelineRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -103,7 +118,7 @@ class ListQpsTimelineRequest:
         起始时间（13位毫秒时间戳），需要和to同时使用
 
         :param _from: The _from of this ListQpsTimelineRequest.
-        :type: int
+        :type _from: int
         """
         self.__from = _from
 
@@ -125,7 +140,7 @@ class ListQpsTimelineRequest:
         结束时间（13位毫秒时间戳），需要和from同时使用
 
         :param to: The to of this ListQpsTimelineRequest.
-        :type: int
+        :type to: int
         """
         self._to = to
 
@@ -147,7 +162,7 @@ class ListQpsTimelineRequest:
         域名id（通过ListHost接口查询）
 
         :param hosts: The hosts of this ListQpsTimelineRequest.
-        :type: str
+        :type hosts: str
         """
         self._hosts = hosts
 
@@ -169,7 +184,7 @@ class ListQpsTimelineRequest:
         独享实例实例id（仅实例化模式涉及）
 
         :param instances: The instances of this ListQpsTimelineRequest.
-        :type: str
+        :type instances: str
         """
         self._instances = instances
 
@@ -191,7 +206,7 @@ class ListQpsTimelineRequest:
         展示维度，需要按天展示时传\"DAY\"
 
         :param group_by: The group_by of this ListQpsTimelineRequest.
-        :type: str
+        :type group_by: str
         """
         self._group_by = group_by
 

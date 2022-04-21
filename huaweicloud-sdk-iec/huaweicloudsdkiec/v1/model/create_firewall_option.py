@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateFirewallOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateFirewallOption:
     }
 
     def __init__(self, name=None, description=None):
-        """CreateFirewallOption - a model defined in huaweicloud sdk"""
+        """CreateFirewallOption
+
+        The model defined in huaweicloud sdk
+
+        :param name: 中文字符、字母、数字、中划线和下划线组成，长度为1~64个字符
+        :type name: str
+        :param description: 网络ACL描述。  取值范围：0-64
+        :type description: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateFirewallOption:
         中文字符、字母、数字、中划线和下划线组成，长度为1~64个字符
 
         :param name: The name of this CreateFirewallOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -84,7 +91,7 @@ class CreateFirewallOption:
         网络ACL描述。  取值范围：0-64
 
         :param description: The description of this CreateFirewallOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 

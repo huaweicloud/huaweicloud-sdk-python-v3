@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RealTimeConfInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RealTimeConfInfo:
     }
 
     def __init__(self, chair_id=None):
-        """RealTimeConfInfo - a model defined in huaweicloud sdk"""
+        """RealTimeConfInfo
+
+        The model defined in huaweicloud sdk
+
+        :param chair_id: 主持人与会者标识。
+        :type chair_id: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class RealTimeConfInfo:
         主持人与会者标识。
 
         :param chair_id: The chair_id of this RealTimeConfInfo.
-        :type: str
+        :type chair_id: str
         """
         self._chair_id = chair_id
 

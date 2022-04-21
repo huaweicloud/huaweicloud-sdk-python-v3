@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VirtualSpace:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class VirtualSpace:
     }
 
     def __init__(self, name=None, size=None, lvm_config=None, runtime_config=None):
-        """VirtualSpace - a model defined in huaweicloud sdk"""
+        """VirtualSpace
+
+        The model defined in huaweicloud sdk
+
+        :param name: virtualSpace的名称，当前仅支持三种类型：kubernetes、runtime、user。kubernetes：k8s空间配置，需配置lvmConfig；runtime：运行时空间配置，需配置runtimeConfig；user：用户空间配置，需配置lvmConfig
+        :type name: str
+        :param size: virtualSpace的大小，仅支持整数百分比。例如：90%。 需要注意：一个group中所有virtualSpace的百分比之和不得超过100%
+        :type size: str
+        :param lvm_config: 
+        :type lvm_config: :class:`huaweicloudsdkcce.v3.LVMConfig`
+        :param runtime_config: 
+        :type runtime_config: :class:`huaweicloudsdkcce.v3.RuntimeConfig`
+        """
         
         
 
@@ -71,7 +82,7 @@ class VirtualSpace:
         virtualSpace的名称，当前仅支持三种类型：kubernetes、runtime、user。kubernetes：k8s空间配置，需配置lvmConfig；runtime：运行时空间配置，需配置runtimeConfig；user：用户空间配置，需配置lvmConfig
 
         :param name: The name of this VirtualSpace.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -93,7 +104,7 @@ class VirtualSpace:
         virtualSpace的大小，仅支持整数百分比。例如：90%。 需要注意：一个group中所有virtualSpace的百分比之和不得超过100%
 
         :param size: The size of this VirtualSpace.
-        :type: str
+        :type size: str
         """
         self._size = size
 
@@ -103,7 +114,7 @@ class VirtualSpace:
 
 
         :return: The lvm_config of this VirtualSpace.
-        :rtype: LVMConfig
+        :rtype: :class:`huaweicloudsdkcce.v3.LVMConfig`
         """
         return self._lvm_config
 
@@ -113,7 +124,7 @@ class VirtualSpace:
 
 
         :param lvm_config: The lvm_config of this VirtualSpace.
-        :type: LVMConfig
+        :type lvm_config: :class:`huaweicloudsdkcce.v3.LVMConfig`
         """
         self._lvm_config = lvm_config
 
@@ -123,7 +134,7 @@ class VirtualSpace:
 
 
         :return: The runtime_config of this VirtualSpace.
-        :rtype: RuntimeConfig
+        :rtype: :class:`huaweicloudsdkcce.v3.RuntimeConfig`
         """
         return self._runtime_config
 
@@ -133,7 +144,7 @@ class VirtualSpace:
 
 
         :param runtime_config: The runtime_config of this VirtualSpace.
-        :type: RuntimeConfig
+        :type runtime_config: :class:`huaweicloudsdkcce.v3.RuntimeConfig`
         """
         self._runtime_config = runtime_config
 

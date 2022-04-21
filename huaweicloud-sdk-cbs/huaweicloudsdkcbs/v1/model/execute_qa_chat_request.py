@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExecuteQaChatRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ExecuteQaChatRequest:
     }
 
     def __init__(self, qabot_id=None, body=None):
-        """ExecuteQaChatRequest - a model defined in huaweicloud sdk"""
+        """ExecuteQaChatRequest
+
+        The model defined in huaweicloud sdk
+
+        :param qabot_id: 机器人标识符，qabot编号，UUID格式。
+        :type qabot_id: str
+        :param body: Body of the ExecuteQaChatRequest
+        :type body: :class:`huaweicloudsdkcbs.v1.PostRequestsReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class ExecuteQaChatRequest:
         机器人标识符，qabot编号，UUID格式。
 
         :param qabot_id: The qabot_id of this ExecuteQaChatRequest.
-        :type: str
+        :type qabot_id: str
         """
         self._qabot_id = qabot_id
 
@@ -72,7 +79,7 @@ class ExecuteQaChatRequest:
 
 
         :return: The body of this ExecuteQaChatRequest.
-        :rtype: PostRequestsReq
+        :rtype: :class:`huaweicloudsdkcbs.v1.PostRequestsReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class ExecuteQaChatRequest:
 
 
         :param body: The body of this ExecuteQaChatRequest.
-        :type: PostRequestsReq
+        :type body: :class:`huaweicloudsdkcbs.v1.PostRequestsReq`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PrivateZoneResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -64,7 +63,47 @@ class PrivateZoneResp:
     }
 
     def __init__(self, id=None, name=None, description=None, email=None, zone_type=None, ttl=None, serial=None, status=None, record_num=None, pool_id=None, project_id=None, created_at=None, updated_at=None, links=None, tags=None, masters=None, routers=None, enterprise_project_id=None):
-        """PrivateZoneResp - a model defined in huaweicloud sdk"""
+        """PrivateZoneResp
+
+        The model defined in huaweicloud sdk
+
+        :param id: zone的ID，uuid形式的一个资源标识。
+        :type id: str
+        :param name: zone名称。
+        :type name: str
+        :param description: 对zone的描述信息。
+        :type description: str
+        :param email: 管理该zone的管理员邮箱。
+        :type email: str
+        :param zone_type: zone类型，公网（public）或者内网（private）。
+        :type zone_type: str
+        :param ttl: 该zone下SOA记录中的ttl值。
+        :type ttl: int
+        :param serial: 该zone下SOA记录中用于标识zone文件变更的序列值，用于主从节点同步。
+        :type serial: int
+        :param status: 资源状态。
+        :type status: str
+        :param record_num: 该zone下的recordset个数。
+        :type record_num: int
+        :param pool_id: 托管该zone的pool，由系统分配。
+        :type pool_id: str
+        :param project_id: zone所属的项目ID。
+        :type project_id: str
+        :param created_at: 创建时间。
+        :type created_at: str
+        :param updated_at: 更新时间。
+        :type updated_at: str
+        :param links: 
+        :type links: :class:`huaweicloudsdkdns.v2.PageLink`
+        :param tags: 资源标签。
+        :type tags: list[:class:`huaweicloudsdkdns.v2.Tag`]
+        :param masters: 主从模式中，从DNS服务器用以获取DNS信息。
+        :type masters: list[str]
+        :param routers: 与该zone关联的Router(VPC)列表。
+        :type routers: list[:class:`huaweicloudsdkdns.v2.RouterWithStatus`]
+        :param enterprise_project_id: 域名关联的企业项目ID，长度不超过36个字符。
+        :type enterprise_project_id: str
+        """
         
         
 
@@ -143,7 +182,7 @@ class PrivateZoneResp:
         zone的ID，uuid形式的一个资源标识。
 
         :param id: The id of this PrivateZoneResp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -165,7 +204,7 @@ class PrivateZoneResp:
         zone名称。
 
         :param name: The name of this PrivateZoneResp.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -187,7 +226,7 @@ class PrivateZoneResp:
         对zone的描述信息。
 
         :param description: The description of this PrivateZoneResp.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -209,7 +248,7 @@ class PrivateZoneResp:
         管理该zone的管理员邮箱。
 
         :param email: The email of this PrivateZoneResp.
-        :type: str
+        :type email: str
         """
         self._email = email
 
@@ -231,7 +270,7 @@ class PrivateZoneResp:
         zone类型，公网（public）或者内网（private）。
 
         :param zone_type: The zone_type of this PrivateZoneResp.
-        :type: str
+        :type zone_type: str
         """
         self._zone_type = zone_type
 
@@ -253,7 +292,7 @@ class PrivateZoneResp:
         该zone下SOA记录中的ttl值。
 
         :param ttl: The ttl of this PrivateZoneResp.
-        :type: int
+        :type ttl: int
         """
         self._ttl = ttl
 
@@ -275,7 +314,7 @@ class PrivateZoneResp:
         该zone下SOA记录中用于标识zone文件变更的序列值，用于主从节点同步。
 
         :param serial: The serial of this PrivateZoneResp.
-        :type: int
+        :type serial: int
         """
         self._serial = serial
 
@@ -297,7 +336,7 @@ class PrivateZoneResp:
         资源状态。
 
         :param status: The status of this PrivateZoneResp.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -319,7 +358,7 @@ class PrivateZoneResp:
         该zone下的recordset个数。
 
         :param record_num: The record_num of this PrivateZoneResp.
-        :type: int
+        :type record_num: int
         """
         self._record_num = record_num
 
@@ -341,7 +380,7 @@ class PrivateZoneResp:
         托管该zone的pool，由系统分配。
 
         :param pool_id: The pool_id of this PrivateZoneResp.
-        :type: str
+        :type pool_id: str
         """
         self._pool_id = pool_id
 
@@ -363,7 +402,7 @@ class PrivateZoneResp:
         zone所属的项目ID。
 
         :param project_id: The project_id of this PrivateZoneResp.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -385,7 +424,7 @@ class PrivateZoneResp:
         创建时间。
 
         :param created_at: The created_at of this PrivateZoneResp.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -407,7 +446,7 @@ class PrivateZoneResp:
         更新时间。
 
         :param updated_at: The updated_at of this PrivateZoneResp.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 
@@ -417,7 +456,7 @@ class PrivateZoneResp:
 
 
         :return: The links of this PrivateZoneResp.
-        :rtype: PageLink
+        :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
         """
         return self._links
 
@@ -427,7 +466,7 @@ class PrivateZoneResp:
 
 
         :param links: The links of this PrivateZoneResp.
-        :type: PageLink
+        :type links: :class:`huaweicloudsdkdns.v2.PageLink`
         """
         self._links = links
 
@@ -438,7 +477,7 @@ class PrivateZoneResp:
         资源标签。
 
         :return: The tags of this PrivateZoneResp.
-        :rtype: list[Tag]
+        :rtype: list[:class:`huaweicloudsdkdns.v2.Tag`]
         """
         return self._tags
 
@@ -449,7 +488,7 @@ class PrivateZoneResp:
         资源标签。
 
         :param tags: The tags of this PrivateZoneResp.
-        :type: list[Tag]
+        :type tags: list[:class:`huaweicloudsdkdns.v2.Tag`]
         """
         self._tags = tags
 
@@ -471,7 +510,7 @@ class PrivateZoneResp:
         主从模式中，从DNS服务器用以获取DNS信息。
 
         :param masters: The masters of this PrivateZoneResp.
-        :type: list[str]
+        :type masters: list[str]
         """
         self._masters = masters
 
@@ -482,7 +521,7 @@ class PrivateZoneResp:
         与该zone关联的Router(VPC)列表。
 
         :return: The routers of this PrivateZoneResp.
-        :rtype: list[RouterWithStatus]
+        :rtype: list[:class:`huaweicloudsdkdns.v2.RouterWithStatus`]
         """
         return self._routers
 
@@ -493,7 +532,7 @@ class PrivateZoneResp:
         与该zone关联的Router(VPC)列表。
 
         :param routers: The routers of this PrivateZoneResp.
-        :type: list[RouterWithStatus]
+        :type routers: list[:class:`huaweicloudsdkdns.v2.RouterWithStatus`]
         """
         self._routers = routers
 
@@ -515,7 +554,7 @@ class PrivateZoneResp:
         域名关联的企业项目ID，长度不超过36个字符。
 
         :param enterprise_project_id: The enterprise_project_id of this PrivateZoneResp.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 

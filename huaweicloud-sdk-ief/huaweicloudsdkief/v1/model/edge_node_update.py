@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EdgeNodeUpdate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class EdgeNodeUpdate:
     }
 
     def __init__(self, description=None, log_configs=None, ntp_servers=None, attributes=None):
-        """EdgeNodeUpdate - a model defined in huaweicloud sdk"""
+        """EdgeNodeUpdate
+
+        The model defined in huaweicloud sdk
+
+        :param description: 边缘节点描述，最大长度255，不允许^ ~ # $ % &amp; * &lt; &gt; ( ) [ ] { } &#39; \&quot; \\
+        :type description: str
+        :param log_configs: 边缘节点日志配置
+        :type log_configs: list[:class:`huaweicloudsdkief.v1.LogConfigs`]
+        :param ntp_servers: ntp服务器地址，每个节点最多仅能配置两个  D310表示D310类型。  D910表示D910类型。  不填表示为D310类型。
+        :type ntp_servers: list[str]
+        :param attributes: 边缘节点属性，关联属性个数最多为32个
+        :type attributes: list[:class:`huaweicloudsdkief.v1.Attributes`]
+        """
         
         
 
@@ -73,7 +84,7 @@ class EdgeNodeUpdate:
         边缘节点描述，最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
         :param description: The description of this EdgeNodeUpdate.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -84,7 +95,7 @@ class EdgeNodeUpdate:
         边缘节点日志配置
 
         :return: The log_configs of this EdgeNodeUpdate.
-        :rtype: list[LogConfigs]
+        :rtype: list[:class:`huaweicloudsdkief.v1.LogConfigs`]
         """
         return self._log_configs
 
@@ -95,7 +106,7 @@ class EdgeNodeUpdate:
         边缘节点日志配置
 
         :param log_configs: The log_configs of this EdgeNodeUpdate.
-        :type: list[LogConfigs]
+        :type log_configs: list[:class:`huaweicloudsdkief.v1.LogConfigs`]
         """
         self._log_configs = log_configs
 
@@ -117,7 +128,7 @@ class EdgeNodeUpdate:
         ntp服务器地址，每个节点最多仅能配置两个  D310表示D310类型。  D910表示D910类型。  不填表示为D310类型。
 
         :param ntp_servers: The ntp_servers of this EdgeNodeUpdate.
-        :type: list[str]
+        :type ntp_servers: list[str]
         """
         self._ntp_servers = ntp_servers
 
@@ -128,7 +139,7 @@ class EdgeNodeUpdate:
         边缘节点属性，关联属性个数最多为32个
 
         :return: The attributes of this EdgeNodeUpdate.
-        :rtype: list[Attributes]
+        :rtype: list[:class:`huaweicloudsdkief.v1.Attributes`]
         """
         return self._attributes
 
@@ -139,7 +150,7 @@ class EdgeNodeUpdate:
         边缘节点属性，关联属性个数最多为32个
 
         :param attributes: The attributes of this EdgeNodeUpdate.
-        :type: list[Attributes]
+        :type attributes: list[:class:`huaweicloudsdkief.v1.Attributes`]
         """
         self._attributes = attributes
 

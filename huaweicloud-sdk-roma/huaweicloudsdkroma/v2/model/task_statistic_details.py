@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TaskStatisticDetails:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class TaskStatisticDetails:
     }
 
     def __init__(self, running_tasks_count=None, abnormal_tasks_count=None, terminated_tasks_count=None, completed_tasks_count=None):
-        """TaskStatisticDetails - a model defined in huaweicloud sdk"""
+        """TaskStatisticDetails
+
+        The model defined in huaweicloud sdk
+
+        :param running_tasks_count: 运行任务数量
+        :type running_tasks_count: int
+        :param abnormal_tasks_count: 异常任务数量
+        :type abnormal_tasks_count: int
+        :param terminated_tasks_count: 终止任务数量
+        :type terminated_tasks_count: int
+        :param completed_tasks_count: 成功任务数量
+        :type completed_tasks_count: int
+        """
         
         
 
@@ -73,7 +84,7 @@ class TaskStatisticDetails:
         运行任务数量
 
         :param running_tasks_count: The running_tasks_count of this TaskStatisticDetails.
-        :type: int
+        :type running_tasks_count: int
         """
         self._running_tasks_count = running_tasks_count
 
@@ -95,7 +106,7 @@ class TaskStatisticDetails:
         异常任务数量
 
         :param abnormal_tasks_count: The abnormal_tasks_count of this TaskStatisticDetails.
-        :type: int
+        :type abnormal_tasks_count: int
         """
         self._abnormal_tasks_count = abnormal_tasks_count
 
@@ -117,7 +128,7 @@ class TaskStatisticDetails:
         终止任务数量
 
         :param terminated_tasks_count: The terminated_tasks_count of this TaskStatisticDetails.
-        :type: int
+        :type terminated_tasks_count: int
         """
         self._terminated_tasks_count = terminated_tasks_count
 
@@ -139,7 +150,7 @@ class TaskStatisticDetails:
         成功任务数量
 
         :param completed_tasks_count: The completed_tasks_count of this TaskStatisticDetails.
-        :type: int
+        :type completed_tasks_count: int
         """
         self._completed_tasks_count = completed_tasks_count
 

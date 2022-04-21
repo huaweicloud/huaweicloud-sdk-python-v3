@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchPauseScalingPoliciesOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class BatchPauseScalingPoliciesOption:
     }
 
     def __init__(self, scaling_policy_id=None, force_delete=None, action=None, delete_alarm=None):
-        """BatchPauseScalingPoliciesOption - a model defined in huaweicloud sdk"""
+        """BatchPauseScalingPoliciesOption
+
+        The model defined in huaweicloud sdk
+
+        :param scaling_policy_id: 伸缩策略ID。
+        :type scaling_policy_id: list[str]
+        :param force_delete: 是否强制删除伸缩策略。默认为no，可选值为yes或no。只有action为delete时，该字段才生效。
+        :type force_delete: str
+        :param action: 批量操作伸缩策略action标识：删除：delete。启用：resume。停止：pause。
+        :type action: str
+        :param delete_alarm: 是否删除告警策略使用的告警规则。可选值为yes或no，默认为no。  只有action为delete时，该字段才生效。
+        :type delete_alarm: str
+        """
         
         
 
@@ -71,7 +82,7 @@ class BatchPauseScalingPoliciesOption:
         伸缩策略ID。
 
         :param scaling_policy_id: The scaling_policy_id of this BatchPauseScalingPoliciesOption.
-        :type: list[str]
+        :type scaling_policy_id: list[str]
         """
         self._scaling_policy_id = scaling_policy_id
 
@@ -93,7 +104,7 @@ class BatchPauseScalingPoliciesOption:
         是否强制删除伸缩策略。默认为no，可选值为yes或no。只有action为delete时，该字段才生效。
 
         :param force_delete: The force_delete of this BatchPauseScalingPoliciesOption.
-        :type: str
+        :type force_delete: str
         """
         self._force_delete = force_delete
 
@@ -115,7 +126,7 @@ class BatchPauseScalingPoliciesOption:
         批量操作伸缩策略action标识：删除：delete。启用：resume。停止：pause。
 
         :param action: The action of this BatchPauseScalingPoliciesOption.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -137,7 +148,7 @@ class BatchPauseScalingPoliciesOption:
         是否删除告警策略使用的告警规则。可选值为yes或no，默认为no。  只有action为delete时，该字段才生效。
 
         :param delete_alarm: The delete_alarm of this BatchPauseScalingPoliciesOption.
-        :type: str
+        :type delete_alarm: str
         """
         self._delete_alarm = delete_alarm
 

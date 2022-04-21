@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EnableConfigurationRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class EnableConfigurationRequest:
     }
 
     def __init__(self, x_language=None, config_id=None, body=None):
-        """EnableConfigurationRequest - a model defined in huaweicloud sdk"""
+        """EnableConfigurationRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言
+        :type x_language: str
+        :param config_id: 参数模板ID。
+        :type config_id: str
+        :param body: Body of the EnableConfigurationRequest
+        :type body: :class:`huaweicloudsdkrds.v3.ApplyConfigurationRequest`
+        """
         
         
 
@@ -67,7 +76,7 @@ class EnableConfigurationRequest:
         语言
 
         :param x_language: The x_language of this EnableConfigurationRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -89,7 +98,7 @@ class EnableConfigurationRequest:
         参数模板ID。
 
         :param config_id: The config_id of this EnableConfigurationRequest.
-        :type: str
+        :type config_id: str
         """
         self._config_id = config_id
 
@@ -99,7 +108,7 @@ class EnableConfigurationRequest:
 
 
         :return: The body of this EnableConfigurationRequest.
-        :rtype: ApplyConfigurationRequest
+        :rtype: :class:`huaweicloudsdkrds.v3.ApplyConfigurationRequest`
         """
         return self._body
 
@@ -109,7 +118,7 @@ class EnableConfigurationRequest:
 
 
         :param body: The body of this EnableConfigurationRequest.
-        :type: ApplyConfigurationRequest
+        :type body: :class:`huaweicloudsdkrds.v3.ApplyConfigurationRequest`
         """
         self._body = body
 

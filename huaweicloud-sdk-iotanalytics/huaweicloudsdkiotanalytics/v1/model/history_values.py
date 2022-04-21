@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class HistoryValues:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class HistoryValues:
     }
 
     def __init__(self, property_name=None, values=None):
-        """HistoryValues - a model defined in huaweicloud sdk"""
+        """HistoryValues
+
+        The model defined in huaweicloud sdk
+
+        :param property_name: 属性名称
+        :type property_name: str
+        :param values: 属性值
+        :type values: list[object]
+        """
         
         
 
@@ -63,7 +70,7 @@ class HistoryValues:
         属性名称
 
         :param property_name: The property_name of this HistoryValues.
-        :type: str
+        :type property_name: str
         """
         self._property_name = property_name
 
@@ -85,7 +92,7 @@ class HistoryValues:
         属性值
 
         :param values: The values of this HistoryValues.
-        :type: list[object]
+        :type values: list[object]
         """
         self._values = values
 

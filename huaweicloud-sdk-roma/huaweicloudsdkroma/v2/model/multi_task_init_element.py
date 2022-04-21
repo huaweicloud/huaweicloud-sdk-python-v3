@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MultiTaskInitElement:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -64,7 +63,47 @@ class MultiTaskInitElement:
     }
 
     def __init__(self, ext_info=None, task_id=None, source_datasource_id=None, target_datasource_id=None, source_group=None, target_group=None, source_ds_id=None, target_ds_id=None, source_instance_id=None, target_instance_id=None, source_app_id=None, target_app_id=None, source_datasource_name=None, target_datasource_name=None, source_datasource_type=None, target_datasource_type=None, mappings=None, mappings_total_count=None):
-        """MultiTaskInitElement - a model defined in huaweicloud sdk"""
+        """MultiTaskInitElement
+
+        The model defined in huaweicloud sdk
+
+        :param ext_info: 
+        :type ext_info: :class:`huaweicloudsdkroma.v2.MultiTaskInitElementExtInfo`
+        :param task_id: 任务ID
+        :type task_id: str
+        :param source_datasource_id: 源端数据源ID
+        :type source_datasource_id: str
+        :param target_datasource_id: 目标端数据源ID
+        :type target_datasource_id: str
+        :param source_group: 源端组
+        :type source_group: str
+        :param target_group: 目标端组
+        :type target_group: str
+        :param source_ds_id: 源端数据源ID
+        :type source_ds_id: str
+        :param target_ds_id: 目标端数据源ID
+        :type target_ds_id: str
+        :param source_instance_id: 源端实例ID
+        :type source_instance_id: str
+        :param target_instance_id: 目标端实例ID
+        :type target_instance_id: str
+        :param source_app_id: 源端数据源所属集成应用ID
+        :type source_app_id: str
+        :param target_app_id: 目标端数据源所属集成应用ID
+        :type target_app_id: str
+        :param source_datasource_name: 源端数据源的名称
+        :type source_datasource_name: str
+        :param target_datasource_name: 目标端数据源的名称
+        :type target_datasource_name: str
+        :param source_datasource_type: 源端数据源的类型
+        :type source_datasource_type: str
+        :param target_datasource_type: 目标端数据源的类型
+        :type target_datasource_type: str
+        :param mappings: 映射关系列表，只返回前10条
+        :type mappings: list[:class:`huaweicloudsdkroma.v2.MultiTaskMappingElement`]
+        :param mappings_total_count: 映射关系总数
+        :type mappings_total_count: int
+        """
         
         
 
@@ -131,7 +170,7 @@ class MultiTaskInitElement:
 
 
         :return: The ext_info of this MultiTaskInitElement.
-        :rtype: MultiTaskInitElementExtInfo
+        :rtype: :class:`huaweicloudsdkroma.v2.MultiTaskInitElementExtInfo`
         """
         return self._ext_info
 
@@ -141,7 +180,7 @@ class MultiTaskInitElement:
 
 
         :param ext_info: The ext_info of this MultiTaskInitElement.
-        :type: MultiTaskInitElementExtInfo
+        :type ext_info: :class:`huaweicloudsdkroma.v2.MultiTaskInitElementExtInfo`
         """
         self._ext_info = ext_info
 
@@ -163,7 +202,7 @@ class MultiTaskInitElement:
         任务ID
 
         :param task_id: The task_id of this MultiTaskInitElement.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -185,7 +224,7 @@ class MultiTaskInitElement:
         源端数据源ID
 
         :param source_datasource_id: The source_datasource_id of this MultiTaskInitElement.
-        :type: str
+        :type source_datasource_id: str
         """
         self._source_datasource_id = source_datasource_id
 
@@ -207,7 +246,7 @@ class MultiTaskInitElement:
         目标端数据源ID
 
         :param target_datasource_id: The target_datasource_id of this MultiTaskInitElement.
-        :type: str
+        :type target_datasource_id: str
         """
         self._target_datasource_id = target_datasource_id
 
@@ -229,7 +268,7 @@ class MultiTaskInitElement:
         源端组
 
         :param source_group: The source_group of this MultiTaskInitElement.
-        :type: str
+        :type source_group: str
         """
         self._source_group = source_group
 
@@ -251,7 +290,7 @@ class MultiTaskInitElement:
         目标端组
 
         :param target_group: The target_group of this MultiTaskInitElement.
-        :type: str
+        :type target_group: str
         """
         self._target_group = target_group
 
@@ -273,7 +312,7 @@ class MultiTaskInitElement:
         源端数据源ID
 
         :param source_ds_id: The source_ds_id of this MultiTaskInitElement.
-        :type: str
+        :type source_ds_id: str
         """
         self._source_ds_id = source_ds_id
 
@@ -295,7 +334,7 @@ class MultiTaskInitElement:
         目标端数据源ID
 
         :param target_ds_id: The target_ds_id of this MultiTaskInitElement.
-        :type: str
+        :type target_ds_id: str
         """
         self._target_ds_id = target_ds_id
 
@@ -317,7 +356,7 @@ class MultiTaskInitElement:
         源端实例ID
 
         :param source_instance_id: The source_instance_id of this MultiTaskInitElement.
-        :type: str
+        :type source_instance_id: str
         """
         self._source_instance_id = source_instance_id
 
@@ -339,7 +378,7 @@ class MultiTaskInitElement:
         目标端实例ID
 
         :param target_instance_id: The target_instance_id of this MultiTaskInitElement.
-        :type: str
+        :type target_instance_id: str
         """
         self._target_instance_id = target_instance_id
 
@@ -361,7 +400,7 @@ class MultiTaskInitElement:
         源端数据源所属集成应用ID
 
         :param source_app_id: The source_app_id of this MultiTaskInitElement.
-        :type: str
+        :type source_app_id: str
         """
         self._source_app_id = source_app_id
 
@@ -383,7 +422,7 @@ class MultiTaskInitElement:
         目标端数据源所属集成应用ID
 
         :param target_app_id: The target_app_id of this MultiTaskInitElement.
-        :type: str
+        :type target_app_id: str
         """
         self._target_app_id = target_app_id
 
@@ -405,7 +444,7 @@ class MultiTaskInitElement:
         源端数据源的名称
 
         :param source_datasource_name: The source_datasource_name of this MultiTaskInitElement.
-        :type: str
+        :type source_datasource_name: str
         """
         self._source_datasource_name = source_datasource_name
 
@@ -427,7 +466,7 @@ class MultiTaskInitElement:
         目标端数据源的名称
 
         :param target_datasource_name: The target_datasource_name of this MultiTaskInitElement.
-        :type: str
+        :type target_datasource_name: str
         """
         self._target_datasource_name = target_datasource_name
 
@@ -449,7 +488,7 @@ class MultiTaskInitElement:
         源端数据源的类型
 
         :param source_datasource_type: The source_datasource_type of this MultiTaskInitElement.
-        :type: str
+        :type source_datasource_type: str
         """
         self._source_datasource_type = source_datasource_type
 
@@ -471,7 +510,7 @@ class MultiTaskInitElement:
         目标端数据源的类型
 
         :param target_datasource_type: The target_datasource_type of this MultiTaskInitElement.
-        :type: str
+        :type target_datasource_type: str
         """
         self._target_datasource_type = target_datasource_type
 
@@ -482,7 +521,7 @@ class MultiTaskInitElement:
         映射关系列表，只返回前10条
 
         :return: The mappings of this MultiTaskInitElement.
-        :rtype: list[MultiTaskMappingElement]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.MultiTaskMappingElement`]
         """
         return self._mappings
 
@@ -493,7 +532,7 @@ class MultiTaskInitElement:
         映射关系列表，只返回前10条
 
         :param mappings: The mappings of this MultiTaskInitElement.
-        :type: list[MultiTaskMappingElement]
+        :type mappings: list[:class:`huaweicloudsdkroma.v2.MultiTaskMappingElement`]
         """
         self._mappings = mappings
 
@@ -515,7 +554,7 @@ class MultiTaskInitElement:
         映射关系总数
 
         :param mappings_total_count: The mappings_total_count of this MultiTaskInitElement.
-        :type: int
+        :type mappings_total_count: int
         """
         self._mappings_total_count = mappings_total_count
 

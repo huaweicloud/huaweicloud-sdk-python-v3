@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ImageInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -146,7 +145,129 @@ class ImageInfo:
     }
 
     def __init__(self, backup_id=None, data_origin=None, description=None, image_size=None, image_source_type=None, imagetype=None, isregistered=None, originalimagename=None, os_bit=None, os_type=None, os_version=None, platform=None, productcode=None, support_diskintensive=None, support_highperformance=None, support_kvm=None, support_kvm_gpu_type=None, support_kvm_infiniband=None, support_largememory=None, support_xen=None, support_xen_gpu_type=None, support_xen_hana=None, system_support_market=None, checksum=None, container_format=None, created_at=None, disk_format=None, enterprise_project_id=None, file=None, id=None, min_disk=None, min_ram=None, name=None, owner=None, protected=None, schema=None, _self=None, size=None, status=None, tags=None, updated_at=None, virtual_env_type=None, virtual_size=None, visibility=None, support_fc_inject=None, hw_firmware_type=None, support_arm=None, max_ram=None, system__cmkid=None, os_feature_list=None, account_code=None, hw_vif_multiqueue_enabled=None, is_offshelved=None, lazyloading=None, root_origin=None, sequence_num=None, active_at=None, support_agent_list=None, support_amd=None):
-        """ImageInfo - a model defined in huaweicloud sdk"""
+        """ImageInfo
+
+        The model defined in huaweicloud sdk
+
+        :param backup_id: 备份ID。如果是备份创建的镜像，则填写为备份的ID，否则为空
+        :type backup_id: str
+        :param data_origin: 镜像来源。公共镜像为空
+        :type data_origin: str
+        :param description: 镜像描述信息。 支持字母、数字、中文等，不支持回车、&lt;、 &gt;，长度不能超过1024个字符。
+        :type description: str
+        :param image_size: 镜像文件的大小，单位为字节
+        :type image_size: str
+        :param image_source_type: 镜像后端存储类型，目前只支持uds
+        :type image_source_type: str
+        :param imagetype: 镜像类型，目前支持以下类型： 公共镜像：gold 私有镜像：private 共享镜像：shared
+        :type imagetype: str
+        :param isregistered: 是否是注册过的镜像，取值为“true”或者“false”
+        :type isregistered: str
+        :param originalimagename: 父镜像ID。公共镜像或通过文件创建的私有镜像，取值为空
+        :type originalimagename: str
+        :param os_bit: 操作系统位数，一般取值为“32”或者“64”
+        :type os_bit: str
+        :param os_type: 操作系统类型，目前取值Linux， Windows，Other
+        :type os_type: str
+        :param os_version: 操作系统具体版本
+        :type os_version: str
+        :param platform: 镜像平台分类
+        :type platform: str
+        :param productcode: 市场镜像的产品ID
+        :type productcode: str
+        :param support_diskintensive: 镜像来源表示该镜像支持密集存储。如果镜像支持密集存储性能，则值为true，否则无需增加该属性。
+        :type support_diskintensive: str
+        :param support_highperformance: 表示该镜像支持高计算性能。如果镜像支持高计算性能，则值为true，否则无需增加该属性。
+        :type support_highperformance: str
+        :param support_kvm: 如果镜像支持KVM，取值为true，否则无需增加该属性。
+        :type support_kvm: str
+        :param support_kvm_gpu_type: 表示该镜像是支持KVM虚拟化平台下的GPU类型，如果不支持KVM虚拟机下GPU类型，无需添加该属性。该属性与“__support_xen”和“__support_kvm”属性不共存。
+        :type support_kvm_gpu_type: str
+        :param support_kvm_infiniband: 如果镜像支持KVM虚拟化下Infiniband网卡类型，取值为true。否则，无需添加该属性。该属性与“__support_xen”属性不共存。
+        :type support_kvm_infiniband: str
+        :param support_largememory: 表示该镜像支持超大内存。如果镜像支持超大内存，取值为true，否则无需增加该属性。
+        :type support_largememory: str
+        :param support_xen: 如果镜像支持XEN，取值为true，否则无需增加该属性。
+        :type support_xen: str
+        :param support_xen_gpu_type: 表示该镜像是支持XEN虚拟化平台下的GPU优化类型，如果不支持XEN虚拟化下GPU类型，无需添加该属性            。该属性与“__support_xen”和“__support_kvm”属性不共存。
+        :type support_xen_gpu_type: str
+        :param support_xen_hana: 如果镜像支持XEN虚拟化下HANA类型，取值为true。否则，无需添加该属性。该属性与“__support_xen”             和“__support_kvm”属性不共存。
+        :type support_xen_hana: str
+        :param system_support_market: 表示当前镜像是否支持发布为市场镜像,true表示支持,false 表示不支持
+        :type system_support_market: bool
+        :param checksum: 目前暂时不使用
+        :type checksum: str
+        :param container_format: 容器类型
+        :type container_format: str
+        :param created_at: 创建时间。格式为UTC时间
+        :type created_at: str
+        :param disk_format: 镜像的格式，目前支持vhd，zvhd、raw，qcow2。默认值是vhd
+        :type disk_format: str
+        :param enterprise_project_id: 表示当前镜像所属的企业项目。取值为0或无该值，表示属于default企业项目，取值为UUID，表示属于该UUID对应的企业项目。
+        :type enterprise_project_id: str
+        :param file: 镜像文件下载和上传链接
+        :type file: str
+        :param id: 镜像ID
+        :type id: str
+        :param min_disk: 镜像运行需要的最小磁盘容量，单位为GB。取值为40～1024GB。
+        :type min_disk: int
+        :param min_ram: 镜像运行需要的最小内存，单位为MB。参数取值依据弹性云服务器的规格限制，默认设置为0
+        :type min_ram: int
+        :param name: 镜像名称。 名称的首尾字母不能为空格。 名称的长度至为1～128位。 名称包含以下4种字符： 大写字母 小写字母 数字 特殊字符包含-、.、_、空格和中文。
+        :type name: str
+        :param owner: 镜像属于哪个租户
+        :type owner: str
+        :param protected: 是否是受保护的，受保护的镜像不允许删除。取值为true或false
+        :type protected: bool
+        :param schema: 镜像视图
+        :type schema: str
+        :param _self: 镜像链接信息
+        :type _self: str
+        :param size: 目前暂时不使用
+        :type size: int
+        :param status: 镜像状态。取值如下：queued：表示镜像元数据已经创建成功，等待 上传镜像文件。saving：表示镜像 正在上传文件到后端存储。deleted：表示镜像已经删除。killed：表示镜像上传错误。active：表示镜像可以正常使用
+        :type status: str
+        :param tags: 镜像标签列表
+        :type tags: list[str]
+        :param updated_at: 更新时间。格式为UTC时间
+        :type updated_at: str
+        :param virtual_env_type: 镜像使用环境类型：FusionCompute，Ironic，DataImage。如果弹性云服务器镜像，则取值为FusionCompute，如果是数据卷镜像则取Dat            aImage，如果是裸金属服务器镜像，则取值是Ironic
+        :type virtual_env_type: str
+        :param virtual_size: 目前暂时不使用
+        :type virtual_size: int
+        :param visibility: 是否被其他租户可见，取值为private或public
+        :type visibility: str
+        :param support_fc_inject: 表示当前镜像支持CloudInit密码/密钥注入方式，建议设置为\&quot;true\&quot;或者\&quot;false\&quot;。 如果取值为\&quot;true\&quot;，表示该镜像不支持CloudInit注入密码/密钥，其他取值时表示支持CloudInit注入密钥/密码。
+        :type support_fc_inject: str
+        :param hw_firmware_type: 云服务器的启动方式。目前支持： bios：表示bios引导启动。 uefi：表示uefi引导启动。
+        :type hw_firmware_type: str
+        :param support_arm: 是否是ARM架构类型的镜像，取值为“true”或者“false”。
+        :type support_arm: str
+        :param max_ram: 镜像支持的最大内存，单位为MB。取值可以参考云服务器规格限制，一般不设置。
+        :type max_ram: str
+        :param system__cmkid: 加密镜像所使用的密钥ID。
+        :type system__cmkid: str
+        :param os_feature_list: 镜像附加属性。该属性采用JSON格式来标识镜像支持的高级特性清单。
+        :type os_feature_list: str
+        :param account_code: 收费镜像标识。
+        :type account_code: str
+        :param hw_vif_multiqueue_enabled: 镜像是否支持网卡多队列。取值为“true”或者“false”。
+        :type hw_vif_multiqueue_enabled: str
+        :param is_offshelved: 表示当前市场镜像是否下架。true：已下架 false：未下架
+        :type is_offshelved: str
+        :param lazyloading: 镜像是否支持延迟加载。取值为“True”或“False”。
+        :type lazyloading: str
+        :param root_origin: 表示当前镜像来源是从外部导入。取值：file。
+        :type root_origin: str
+        :param sequence_num: 表示当前镜像对应云服务器的系统盘插槽位置。目前暂时不用
+        :type sequence_num: str
+        :param active_at: 镜像状态变为正常的时间。
+        :type active_at: str
+        :param support_agent_list: 镜像是否支持企业主机安全或主机监控。 hss：企业主机安全 ces：主机监控
+        :type support_agent_list: str
+        :param support_amd: 是否是AMD架构类型的镜像。取值为“true”或者“false”。
+        :type support_amd: str
+        """
         
         
 
@@ -328,7 +449,7 @@ class ImageInfo:
         备份ID。如果是备份创建的镜像，则填写为备份的ID，否则为空
 
         :param backup_id: The backup_id of this ImageInfo.
-        :type: str
+        :type backup_id: str
         """
         self._backup_id = backup_id
 
@@ -350,7 +471,7 @@ class ImageInfo:
         镜像来源。公共镜像为空
 
         :param data_origin: The data_origin of this ImageInfo.
-        :type: str
+        :type data_origin: str
         """
         self._data_origin = data_origin
 
@@ -372,7 +493,7 @@ class ImageInfo:
         镜像描述信息。 支持字母、数字、中文等，不支持回车、<、 >，长度不能超过1024个字符。
 
         :param description: The description of this ImageInfo.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -394,7 +515,7 @@ class ImageInfo:
         镜像文件的大小，单位为字节
 
         :param image_size: The image_size of this ImageInfo.
-        :type: str
+        :type image_size: str
         """
         self._image_size = image_size
 
@@ -416,7 +537,7 @@ class ImageInfo:
         镜像后端存储类型，目前只支持uds
 
         :param image_source_type: The image_source_type of this ImageInfo.
-        :type: str
+        :type image_source_type: str
         """
         self._image_source_type = image_source_type
 
@@ -438,7 +559,7 @@ class ImageInfo:
         镜像类型，目前支持以下类型： 公共镜像：gold 私有镜像：private 共享镜像：shared
 
         :param imagetype: The imagetype of this ImageInfo.
-        :type: str
+        :type imagetype: str
         """
         self._imagetype = imagetype
 
@@ -460,7 +581,7 @@ class ImageInfo:
         是否是注册过的镜像，取值为“true”或者“false”
 
         :param isregistered: The isregistered of this ImageInfo.
-        :type: str
+        :type isregistered: str
         """
         self._isregistered = isregistered
 
@@ -482,7 +603,7 @@ class ImageInfo:
         父镜像ID。公共镜像或通过文件创建的私有镜像，取值为空
 
         :param originalimagename: The originalimagename of this ImageInfo.
-        :type: str
+        :type originalimagename: str
         """
         self._originalimagename = originalimagename
 
@@ -504,7 +625,7 @@ class ImageInfo:
         操作系统位数，一般取值为“32”或者“64”
 
         :param os_bit: The os_bit of this ImageInfo.
-        :type: str
+        :type os_bit: str
         """
         self._os_bit = os_bit
 
@@ -526,7 +647,7 @@ class ImageInfo:
         操作系统类型，目前取值Linux， Windows，Other
 
         :param os_type: The os_type of this ImageInfo.
-        :type: str
+        :type os_type: str
         """
         self._os_type = os_type
 
@@ -548,7 +669,7 @@ class ImageInfo:
         操作系统具体版本
 
         :param os_version: The os_version of this ImageInfo.
-        :type: str
+        :type os_version: str
         """
         self._os_version = os_version
 
@@ -570,7 +691,7 @@ class ImageInfo:
         镜像平台分类
 
         :param platform: The platform of this ImageInfo.
-        :type: str
+        :type platform: str
         """
         self._platform = platform
 
@@ -592,7 +713,7 @@ class ImageInfo:
         市场镜像的产品ID
 
         :param productcode: The productcode of this ImageInfo.
-        :type: str
+        :type productcode: str
         """
         self._productcode = productcode
 
@@ -614,7 +735,7 @@ class ImageInfo:
         镜像来源表示该镜像支持密集存储。如果镜像支持密集存储性能，则值为true，否则无需增加该属性。
 
         :param support_diskintensive: The support_diskintensive of this ImageInfo.
-        :type: str
+        :type support_diskintensive: str
         """
         self._support_diskintensive = support_diskintensive
 
@@ -636,7 +757,7 @@ class ImageInfo:
         表示该镜像支持高计算性能。如果镜像支持高计算性能，则值为true，否则无需增加该属性。
 
         :param support_highperformance: The support_highperformance of this ImageInfo.
-        :type: str
+        :type support_highperformance: str
         """
         self._support_highperformance = support_highperformance
 
@@ -658,7 +779,7 @@ class ImageInfo:
         如果镜像支持KVM，取值为true，否则无需增加该属性。
 
         :param support_kvm: The support_kvm of this ImageInfo.
-        :type: str
+        :type support_kvm: str
         """
         self._support_kvm = support_kvm
 
@@ -680,7 +801,7 @@ class ImageInfo:
         表示该镜像是支持KVM虚拟化平台下的GPU类型，如果不支持KVM虚拟机下GPU类型，无需添加该属性。该属性与“__support_xen”和“__support_kvm”属性不共存。
 
         :param support_kvm_gpu_type: The support_kvm_gpu_type of this ImageInfo.
-        :type: str
+        :type support_kvm_gpu_type: str
         """
         self._support_kvm_gpu_type = support_kvm_gpu_type
 
@@ -702,7 +823,7 @@ class ImageInfo:
         如果镜像支持KVM虚拟化下Infiniband网卡类型，取值为true。否则，无需添加该属性。该属性与“__support_xen”属性不共存。
 
         :param support_kvm_infiniband: The support_kvm_infiniband of this ImageInfo.
-        :type: str
+        :type support_kvm_infiniband: str
         """
         self._support_kvm_infiniband = support_kvm_infiniband
 
@@ -724,7 +845,7 @@ class ImageInfo:
         表示该镜像支持超大内存。如果镜像支持超大内存，取值为true，否则无需增加该属性。
 
         :param support_largememory: The support_largememory of this ImageInfo.
-        :type: str
+        :type support_largememory: str
         """
         self._support_largememory = support_largememory
 
@@ -746,7 +867,7 @@ class ImageInfo:
         如果镜像支持XEN，取值为true，否则无需增加该属性。
 
         :param support_xen: The support_xen of this ImageInfo.
-        :type: str
+        :type support_xen: str
         """
         self._support_xen = support_xen
 
@@ -768,7 +889,7 @@ class ImageInfo:
         表示该镜像是支持XEN虚拟化平台下的GPU优化类型，如果不支持XEN虚拟化下GPU类型，无需添加该属性            。该属性与“__support_xen”和“__support_kvm”属性不共存。
 
         :param support_xen_gpu_type: The support_xen_gpu_type of this ImageInfo.
-        :type: str
+        :type support_xen_gpu_type: str
         """
         self._support_xen_gpu_type = support_xen_gpu_type
 
@@ -790,7 +911,7 @@ class ImageInfo:
         如果镜像支持XEN虚拟化下HANA类型，取值为true。否则，无需添加该属性。该属性与“__support_xen”             和“__support_kvm”属性不共存。
 
         :param support_xen_hana: The support_xen_hana of this ImageInfo.
-        :type: str
+        :type support_xen_hana: str
         """
         self._support_xen_hana = support_xen_hana
 
@@ -812,7 +933,7 @@ class ImageInfo:
         表示当前镜像是否支持发布为市场镜像,true表示支持,false 表示不支持
 
         :param system_support_market: The system_support_market of this ImageInfo.
-        :type: bool
+        :type system_support_market: bool
         """
         self._system_support_market = system_support_market
 
@@ -834,7 +955,7 @@ class ImageInfo:
         目前暂时不使用
 
         :param checksum: The checksum of this ImageInfo.
-        :type: str
+        :type checksum: str
         """
         self._checksum = checksum
 
@@ -856,7 +977,7 @@ class ImageInfo:
         容器类型
 
         :param container_format: The container_format of this ImageInfo.
-        :type: str
+        :type container_format: str
         """
         self._container_format = container_format
 
@@ -878,7 +999,7 @@ class ImageInfo:
         创建时间。格式为UTC时间
 
         :param created_at: The created_at of this ImageInfo.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -900,7 +1021,7 @@ class ImageInfo:
         镜像的格式，目前支持vhd，zvhd、raw，qcow2。默认值是vhd
 
         :param disk_format: The disk_format of this ImageInfo.
-        :type: str
+        :type disk_format: str
         """
         self._disk_format = disk_format
 
@@ -922,7 +1043,7 @@ class ImageInfo:
         表示当前镜像所属的企业项目。取值为0或无该值，表示属于default企业项目，取值为UUID，表示属于该UUID对应的企业项目。
 
         :param enterprise_project_id: The enterprise_project_id of this ImageInfo.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -944,7 +1065,7 @@ class ImageInfo:
         镜像文件下载和上传链接
 
         :param file: The file of this ImageInfo.
-        :type: str
+        :type file: str
         """
         self._file = file
 
@@ -966,7 +1087,7 @@ class ImageInfo:
         镜像ID
 
         :param id: The id of this ImageInfo.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -988,7 +1109,7 @@ class ImageInfo:
         镜像运行需要的最小磁盘容量，单位为GB。取值为40～1024GB。
 
         :param min_disk: The min_disk of this ImageInfo.
-        :type: int
+        :type min_disk: int
         """
         self._min_disk = min_disk
 
@@ -1010,7 +1131,7 @@ class ImageInfo:
         镜像运行需要的最小内存，单位为MB。参数取值依据弹性云服务器的规格限制，默认设置为0
 
         :param min_ram: The min_ram of this ImageInfo.
-        :type: int
+        :type min_ram: int
         """
         self._min_ram = min_ram
 
@@ -1032,7 +1153,7 @@ class ImageInfo:
         镜像名称。 名称的首尾字母不能为空格。 名称的长度至为1～128位。 名称包含以下4种字符： 大写字母 小写字母 数字 特殊字符包含-、.、_、空格和中文。
 
         :param name: The name of this ImageInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -1054,7 +1175,7 @@ class ImageInfo:
         镜像属于哪个租户
 
         :param owner: The owner of this ImageInfo.
-        :type: str
+        :type owner: str
         """
         self._owner = owner
 
@@ -1076,7 +1197,7 @@ class ImageInfo:
         是否是受保护的，受保护的镜像不允许删除。取值为true或false
 
         :param protected: The protected of this ImageInfo.
-        :type: bool
+        :type protected: bool
         """
         self._protected = protected
 
@@ -1098,7 +1219,7 @@ class ImageInfo:
         镜像视图
 
         :param schema: The schema of this ImageInfo.
-        :type: str
+        :type schema: str
         """
         self._schema = schema
 
@@ -1120,7 +1241,7 @@ class ImageInfo:
         镜像链接信息
 
         :param _self: The _self of this ImageInfo.
-        :type: str
+        :type _self: str
         """
         self.__self = _self
 
@@ -1142,7 +1263,7 @@ class ImageInfo:
         目前暂时不使用
 
         :param size: The size of this ImageInfo.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -1164,7 +1285,7 @@ class ImageInfo:
         镜像状态。取值如下：queued：表示镜像元数据已经创建成功，等待 上传镜像文件。saving：表示镜像 正在上传文件到后端存储。deleted：表示镜像已经删除。killed：表示镜像上传错误。active：表示镜像可以正常使用
 
         :param status: The status of this ImageInfo.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -1186,7 +1307,7 @@ class ImageInfo:
         镜像标签列表
 
         :param tags: The tags of this ImageInfo.
-        :type: list[str]
+        :type tags: list[str]
         """
         self._tags = tags
 
@@ -1208,7 +1329,7 @@ class ImageInfo:
         更新时间。格式为UTC时间
 
         :param updated_at: The updated_at of this ImageInfo.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 
@@ -1230,7 +1351,7 @@ class ImageInfo:
         镜像使用环境类型：FusionCompute，Ironic，DataImage。如果弹性云服务器镜像，则取值为FusionCompute，如果是数据卷镜像则取Dat            aImage，如果是裸金属服务器镜像，则取值是Ironic
 
         :param virtual_env_type: The virtual_env_type of this ImageInfo.
-        :type: str
+        :type virtual_env_type: str
         """
         self._virtual_env_type = virtual_env_type
 
@@ -1252,7 +1373,7 @@ class ImageInfo:
         目前暂时不使用
 
         :param virtual_size: The virtual_size of this ImageInfo.
-        :type: int
+        :type virtual_size: int
         """
         self._virtual_size = virtual_size
 
@@ -1274,7 +1395,7 @@ class ImageInfo:
         是否被其他租户可见，取值为private或public
 
         :param visibility: The visibility of this ImageInfo.
-        :type: str
+        :type visibility: str
         """
         self._visibility = visibility
 
@@ -1296,7 +1417,7 @@ class ImageInfo:
         表示当前镜像支持CloudInit密码/密钥注入方式，建议设置为\"true\"或者\"false\"。 如果取值为\"true\"，表示该镜像不支持CloudInit注入密码/密钥，其他取值时表示支持CloudInit注入密钥/密码。
 
         :param support_fc_inject: The support_fc_inject of this ImageInfo.
-        :type: str
+        :type support_fc_inject: str
         """
         self._support_fc_inject = support_fc_inject
 
@@ -1318,7 +1439,7 @@ class ImageInfo:
         云服务器的启动方式。目前支持： bios：表示bios引导启动。 uefi：表示uefi引导启动。
 
         :param hw_firmware_type: The hw_firmware_type of this ImageInfo.
-        :type: str
+        :type hw_firmware_type: str
         """
         self._hw_firmware_type = hw_firmware_type
 
@@ -1340,7 +1461,7 @@ class ImageInfo:
         是否是ARM架构类型的镜像，取值为“true”或者“false”。
 
         :param support_arm: The support_arm of this ImageInfo.
-        :type: str
+        :type support_arm: str
         """
         self._support_arm = support_arm
 
@@ -1362,7 +1483,7 @@ class ImageInfo:
         镜像支持的最大内存，单位为MB。取值可以参考云服务器规格限制，一般不设置。
 
         :param max_ram: The max_ram of this ImageInfo.
-        :type: str
+        :type max_ram: str
         """
         self._max_ram = max_ram
 
@@ -1384,7 +1505,7 @@ class ImageInfo:
         加密镜像所使用的密钥ID。
 
         :param system__cmkid: The system__cmkid of this ImageInfo.
-        :type: str
+        :type system__cmkid: str
         """
         self._system__cmkid = system__cmkid
 
@@ -1406,7 +1527,7 @@ class ImageInfo:
         镜像附加属性。该属性采用JSON格式来标识镜像支持的高级特性清单。
 
         :param os_feature_list: The os_feature_list of this ImageInfo.
-        :type: str
+        :type os_feature_list: str
         """
         self._os_feature_list = os_feature_list
 
@@ -1428,7 +1549,7 @@ class ImageInfo:
         收费镜像标识。
 
         :param account_code: The account_code of this ImageInfo.
-        :type: str
+        :type account_code: str
         """
         self._account_code = account_code
 
@@ -1450,7 +1571,7 @@ class ImageInfo:
         镜像是否支持网卡多队列。取值为“true”或者“false”。
 
         :param hw_vif_multiqueue_enabled: The hw_vif_multiqueue_enabled of this ImageInfo.
-        :type: str
+        :type hw_vif_multiqueue_enabled: str
         """
         self._hw_vif_multiqueue_enabled = hw_vif_multiqueue_enabled
 
@@ -1472,7 +1593,7 @@ class ImageInfo:
         表示当前市场镜像是否下架。true：已下架 false：未下架
 
         :param is_offshelved: The is_offshelved of this ImageInfo.
-        :type: str
+        :type is_offshelved: str
         """
         self._is_offshelved = is_offshelved
 
@@ -1494,7 +1615,7 @@ class ImageInfo:
         镜像是否支持延迟加载。取值为“True”或“False”。
 
         :param lazyloading: The lazyloading of this ImageInfo.
-        :type: str
+        :type lazyloading: str
         """
         self._lazyloading = lazyloading
 
@@ -1516,7 +1637,7 @@ class ImageInfo:
         表示当前镜像来源是从外部导入。取值：file。
 
         :param root_origin: The root_origin of this ImageInfo.
-        :type: str
+        :type root_origin: str
         """
         self._root_origin = root_origin
 
@@ -1538,7 +1659,7 @@ class ImageInfo:
         表示当前镜像对应云服务器的系统盘插槽位置。目前暂时不用
 
         :param sequence_num: The sequence_num of this ImageInfo.
-        :type: str
+        :type sequence_num: str
         """
         self._sequence_num = sequence_num
 
@@ -1560,7 +1681,7 @@ class ImageInfo:
         镜像状态变为正常的时间。
 
         :param active_at: The active_at of this ImageInfo.
-        :type: str
+        :type active_at: str
         """
         self._active_at = active_at
 
@@ -1582,7 +1703,7 @@ class ImageInfo:
         镜像是否支持企业主机安全或主机监控。 hss：企业主机安全 ces：主机监控
 
         :param support_agent_list: The support_agent_list of this ImageInfo.
-        :type: str
+        :type support_agent_list: str
         """
         self._support_agent_list = support_agent_list
 
@@ -1604,7 +1725,7 @@ class ImageInfo:
         是否是AMD架构类型的镜像。取值为“true”或者“false”。
 
         :param support_amd: The support_amd of this ImageInfo.
-        :type: str
+        :type support_amd: str
         """
         self._support_amd = support_amd
 

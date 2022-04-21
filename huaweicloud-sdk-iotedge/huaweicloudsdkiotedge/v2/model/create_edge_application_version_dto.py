@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateEdgeApplicationVersionDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class CreateEdgeApplicationVersionDTO:
     }
 
     def __init__(self, version=None, description=None, deploy_type=None, container_settings=None, liveness_probe=None, readiness_probe=None, arch=None, command=None, args=None, outputs=None, inputs=None, services=None):
-        """CreateEdgeApplicationVersionDTO - a model defined in huaweicloud sdk"""
+        """CreateEdgeApplicationVersionDTO
+
+        The model defined in huaweicloud sdk
+
+        :param version: 应用版本
+        :type version: str
+        :param description: 应用描述
+        :type description: str
+        :param deploy_type: 应用部署类型，分为docker容器部署类型和process进程部署类型，兼容之前数据，此字段可以为空，为空情况为docker类型
+        :type deploy_type: str
+        :param container_settings: 
+        :type container_settings: :class:`huaweicloudsdkiotedge.v2.ContainerSettingsDTO`
+        :param liveness_probe: 
+        :type liveness_probe: :class:`huaweicloudsdkiotedge.v2.ProbeDTO`
+        :param readiness_probe: 
+        :type readiness_probe: :class:`huaweicloudsdkiotedge.v2.ProbeDTO`
+        :param arch: 架构
+        :type arch: object
+        :param command: 启动命令
+        :type command: object
+        :param args: 启动参数
+        :type args: object
+        :param outputs: 应用输出路由端点
+        :type outputs: object
+        :param inputs: 应用输入路由
+        :type inputs: object
+        :param services: 应用实现的服务列表
+        :type services: object
+        """
         
         
 
@@ -110,7 +137,7 @@ class CreateEdgeApplicationVersionDTO:
         应用版本
 
         :param version: The version of this CreateEdgeApplicationVersionDTO.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -132,7 +159,7 @@ class CreateEdgeApplicationVersionDTO:
         应用描述
 
         :param description: The description of this CreateEdgeApplicationVersionDTO.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -154,7 +181,7 @@ class CreateEdgeApplicationVersionDTO:
         应用部署类型，分为docker容器部署类型和process进程部署类型，兼容之前数据，此字段可以为空，为空情况为docker类型
 
         :param deploy_type: The deploy_type of this CreateEdgeApplicationVersionDTO.
-        :type: str
+        :type deploy_type: str
         """
         self._deploy_type = deploy_type
 
@@ -164,7 +191,7 @@ class CreateEdgeApplicationVersionDTO:
 
 
         :return: The container_settings of this CreateEdgeApplicationVersionDTO.
-        :rtype: ContainerSettingsDTO
+        :rtype: :class:`huaweicloudsdkiotedge.v2.ContainerSettingsDTO`
         """
         return self._container_settings
 
@@ -174,7 +201,7 @@ class CreateEdgeApplicationVersionDTO:
 
 
         :param container_settings: The container_settings of this CreateEdgeApplicationVersionDTO.
-        :type: ContainerSettingsDTO
+        :type container_settings: :class:`huaweicloudsdkiotedge.v2.ContainerSettingsDTO`
         """
         self._container_settings = container_settings
 
@@ -184,7 +211,7 @@ class CreateEdgeApplicationVersionDTO:
 
 
         :return: The liveness_probe of this CreateEdgeApplicationVersionDTO.
-        :rtype: ProbeDTO
+        :rtype: :class:`huaweicloudsdkiotedge.v2.ProbeDTO`
         """
         return self._liveness_probe
 
@@ -194,7 +221,7 @@ class CreateEdgeApplicationVersionDTO:
 
 
         :param liveness_probe: The liveness_probe of this CreateEdgeApplicationVersionDTO.
-        :type: ProbeDTO
+        :type liveness_probe: :class:`huaweicloudsdkiotedge.v2.ProbeDTO`
         """
         self._liveness_probe = liveness_probe
 
@@ -204,7 +231,7 @@ class CreateEdgeApplicationVersionDTO:
 
 
         :return: The readiness_probe of this CreateEdgeApplicationVersionDTO.
-        :rtype: ProbeDTO
+        :rtype: :class:`huaweicloudsdkiotedge.v2.ProbeDTO`
         """
         return self._readiness_probe
 
@@ -214,7 +241,7 @@ class CreateEdgeApplicationVersionDTO:
 
 
         :param readiness_probe: The readiness_probe of this CreateEdgeApplicationVersionDTO.
-        :type: ProbeDTO
+        :type readiness_probe: :class:`huaweicloudsdkiotedge.v2.ProbeDTO`
         """
         self._readiness_probe = readiness_probe
 
@@ -236,7 +263,7 @@ class CreateEdgeApplicationVersionDTO:
         架构
 
         :param arch: The arch of this CreateEdgeApplicationVersionDTO.
-        :type: object
+        :type arch: object
         """
         self._arch = arch
 
@@ -258,7 +285,7 @@ class CreateEdgeApplicationVersionDTO:
         启动命令
 
         :param command: The command of this CreateEdgeApplicationVersionDTO.
-        :type: object
+        :type command: object
         """
         self._command = command
 
@@ -280,7 +307,7 @@ class CreateEdgeApplicationVersionDTO:
         启动参数
 
         :param args: The args of this CreateEdgeApplicationVersionDTO.
-        :type: object
+        :type args: object
         """
         self._args = args
 
@@ -302,7 +329,7 @@ class CreateEdgeApplicationVersionDTO:
         应用输出路由端点
 
         :param outputs: The outputs of this CreateEdgeApplicationVersionDTO.
-        :type: object
+        :type outputs: object
         """
         self._outputs = outputs
 
@@ -324,7 +351,7 @@ class CreateEdgeApplicationVersionDTO:
         应用输入路由
 
         :param inputs: The inputs of this CreateEdgeApplicationVersionDTO.
-        :type: object
+        :type inputs: object
         """
         self._inputs = inputs
 
@@ -346,7 +373,7 @@ class CreateEdgeApplicationVersionDTO:
         应用实现的服务列表
 
         :param services: The services of this CreateEdgeApplicationVersionDTO.
-        :type: object
+        :type services: object
         """
         self._services = services
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListStoredValueCardsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListStoredValueCardsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, stored_value_cards=None):
-        """ListStoredValueCardsResponse - a model defined in huaweicloud sdk"""
+        """ListStoredValueCardsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total_count: 符合查询条件的总条数。
+        :type total_count: int
+        :param stored_value_cards: 优惠券记录。 具体请参见表2。
+        :type stored_value_cards: list[:class:`huaweicloudsdkbss.v2.UserStoredValueCard`]
+        """
         
         super(ListStoredValueCardsResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListStoredValueCardsResponse(SdkResponse):
         符合查询条件的总条数。
 
         :param total_count: The total_count of this ListStoredValueCardsResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 
@@ -74,7 +81,7 @@ class ListStoredValueCardsResponse(SdkResponse):
         优惠券记录。 具体请参见表2。
 
         :return: The stored_value_cards of this ListStoredValueCardsResponse.
-        :rtype: list[UserStoredValueCard]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.UserStoredValueCard`]
         """
         return self._stored_value_cards
 
@@ -85,7 +92,7 @@ class ListStoredValueCardsResponse(SdkResponse):
         优惠券记录。 具体请参见表2。
 
         :param stored_value_cards: The stored_value_cards of this ListStoredValueCardsResponse.
-        :type: list[UserStoredValueCard]
+        :type stored_value_cards: list[:class:`huaweicloudsdkbss.v2.UserStoredValueCard`]
         """
         self._stored_value_cards = stored_value_cards
 

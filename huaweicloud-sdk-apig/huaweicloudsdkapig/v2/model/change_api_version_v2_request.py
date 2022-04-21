@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ChangeApiVersionV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ChangeApiVersionV2Request:
     }
 
     def __init__(self, instance_id=None, api_id=None, body=None):
-        """ChangeApiVersionV2Request - a model defined in huaweicloud sdk"""
+        """ChangeApiVersionV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param api_id: API的编号
+        :type api_id: str
+        :param body: Body of the ChangeApiVersionV2Request
+        :type body: :class:`huaweicloudsdkapig.v2.ApiVersion`
+        """
         
         
 
@@ -66,7 +75,7 @@ class ChangeApiVersionV2Request:
         实例ID
 
         :param instance_id: The instance_id of this ChangeApiVersionV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -88,7 +97,7 @@ class ChangeApiVersionV2Request:
         API的编号
 
         :param api_id: The api_id of this ChangeApiVersionV2Request.
-        :type: str
+        :type api_id: str
         """
         self._api_id = api_id
 
@@ -98,7 +107,7 @@ class ChangeApiVersionV2Request:
 
 
         :return: The body of this ChangeApiVersionV2Request.
-        :rtype: ApiVersion
+        :rtype: :class:`huaweicloudsdkapig.v2.ApiVersion`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class ChangeApiVersionV2Request:
 
 
         :param body: The body of this ChangeApiVersionV2Request.
-        :type: ApiVersion
+        :type body: :class:`huaweicloudsdkapig.v2.ApiVersion`
         """
         self._body = body
 

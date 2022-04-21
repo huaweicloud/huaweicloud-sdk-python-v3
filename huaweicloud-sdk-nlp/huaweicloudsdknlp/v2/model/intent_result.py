@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IntentResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class IntentResult:
     }
 
     def __init__(self, confidence=None, label=None, slots=None, text=None):
-        """IntentResult - a model defined in huaweicloud sdk"""
+        """IntentResult
+
+        The model defined in huaweicloud sdk
+
+        :param confidence: 标签label的置信度。
+        :type confidence: float
+        :param label: 文本的意图标签。标签共有以下9类，取值如下： weather：天气 time：报时 news：新闻 joke：笑话 translation：翻译 notification：提醒 alarm：闹钟 music：音乐 other：其它
+        :type label: str
+        :param slots: slot数据结构
+        :type slots: list[:class:`huaweicloudsdknlp.v2.Slot`]
+        :param text: 返回待分析文本。
+        :type text: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class IntentResult:
         标签label的置信度。
 
         :param confidence: The confidence of this IntentResult.
-        :type: float
+        :type confidence: float
         """
         self._confidence = confidence
 
@@ -91,7 +102,7 @@ class IntentResult:
         文本的意图标签。标签共有以下9类，取值如下： weather：天气 time：报时 news：新闻 joke：笑话 translation：翻译 notification：提醒 alarm：闹钟 music：音乐 other：其它
 
         :param label: The label of this IntentResult.
-        :type: str
+        :type label: str
         """
         self._label = label
 
@@ -102,7 +113,7 @@ class IntentResult:
         slot数据结构
 
         :return: The slots of this IntentResult.
-        :rtype: list[Slot]
+        :rtype: list[:class:`huaweicloudsdknlp.v2.Slot`]
         """
         return self._slots
 
@@ -113,7 +124,7 @@ class IntentResult:
         slot数据结构
 
         :param slots: The slots of this IntentResult.
-        :type: list[Slot]
+        :type slots: list[:class:`huaweicloudsdknlp.v2.Slot`]
         """
         self._slots = slots
 
@@ -135,7 +146,7 @@ class IntentResult:
         返回待分析文本。
 
         :param text: The text of this IntentResult.
-        :type: str
+        :type text: str
         """
         self._text = text
 

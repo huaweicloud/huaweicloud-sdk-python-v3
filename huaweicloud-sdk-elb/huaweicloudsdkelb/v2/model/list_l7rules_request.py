@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListL7rulesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class ListL7rulesRequest:
     }
 
     def __init__(self, limit=None, marker=None, page_reverse=None, l7policy_id=None, id=None, admin_state_up=None, type=None, compare_type=None, invert=None, key=None, value=None, provisioning_status=None):
-        """ListL7rulesRequest - a model defined in huaweicloud sdk"""
+        """ListL7rulesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 分页查询中每页的转发规则个数
+        :type limit: int
+        :param marker: 分页查询的起始的资源id，表示上一页最后一条查询记录的转发规则的id。不指定时表示查询第一页。
+        :type marker: str
+        :param page_reverse: 分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。
+        :type page_reverse: bool
+        :param l7policy_id: 转发策略id
+        :type l7policy_id: str
+        :param id: 转发规则ID。
+        :type id: str
+        :param admin_state_up: 转发规则的管理状态；取值范围： true/false。该字段为预留字段，暂未启用。默认为true。
+        :type admin_state_up: bool
+        :param type: 转发规则的匹配类型。取值范围：HOST_NAME：匹配请求中的域名；PATH：匹配请求中的路径；同一个转发策略下转发规则的type不能重复。
+        :type type: str
+        :param compare_type: 转发匹配方式： type为HOST_NAME时，取值范围：EQUAL_TO：精确匹配； type为PATH时，取值范围：REGEX：正则匹配；STARTS_WITH：前缀匹配；EQUAL_TO：精确匹配。
+        :type compare_type: str
+        :param invert: 是否反向匹配；取值范围：true/false。默认值：false；该字段为预留字段，暂未启用。
+        :type invert: bool
+        :param key: 匹配内容的键值。默认为null。该字段为预留字段，暂未启用。
+        :type key: str
+        :param value: 匹配内容的值。 当type为HOST_NAME时，取值范围：String (100)，字符串只能包含英文字母、数字、“-”或“.”，且必须以字母或数字开头。 当type为PATH时，取值范围：String (128)。当转发规则的compare_type为STARTS_WITH、EQUAL_TO时，字符串只能包含英文字母、数字、_~&#39;;@^-%#&amp;$.*+?,&#x3D;!:| /()[]{}，且必须以\&quot;/\&quot;开头。
+        :type value: str
+        :param provisioning_status: 转发规则的配置状态，可以为ACTIVE、PENDING_CREATE 或者ERROR。默认值：ACTIVE；该字段为预留字段，暂未启用。
+        :type provisioning_status: str
+        """
         
         
 
@@ -112,7 +139,7 @@ class ListL7rulesRequest:
         分页查询中每页的转发规则个数
 
         :param limit: The limit of this ListL7rulesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -134,7 +161,7 @@ class ListL7rulesRequest:
         分页查询的起始的资源id，表示上一页最后一条查询记录的转发规则的id。不指定时表示查询第一页。
 
         :param marker: The marker of this ListL7rulesRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -156,7 +183,7 @@ class ListL7rulesRequest:
         分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。
 
         :param page_reverse: The page_reverse of this ListL7rulesRequest.
-        :type: bool
+        :type page_reverse: bool
         """
         self._page_reverse = page_reverse
 
@@ -178,7 +205,7 @@ class ListL7rulesRequest:
         转发策略id
 
         :param l7policy_id: The l7policy_id of this ListL7rulesRequest.
-        :type: str
+        :type l7policy_id: str
         """
         self._l7policy_id = l7policy_id
 
@@ -200,7 +227,7 @@ class ListL7rulesRequest:
         转发规则ID。
 
         :param id: The id of this ListL7rulesRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -222,7 +249,7 @@ class ListL7rulesRequest:
         转发规则的管理状态；取值范围： true/false。该字段为预留字段，暂未启用。默认为true。
 
         :param admin_state_up: The admin_state_up of this ListL7rulesRequest.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 
@@ -244,7 +271,7 @@ class ListL7rulesRequest:
         转发规则的匹配类型。取值范围：HOST_NAME：匹配请求中的域名；PATH：匹配请求中的路径；同一个转发策略下转发规则的type不能重复。
 
         :param type: The type of this ListL7rulesRequest.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -266,7 +293,7 @@ class ListL7rulesRequest:
         转发匹配方式： type为HOST_NAME时，取值范围：EQUAL_TO：精确匹配； type为PATH时，取值范围：REGEX：正则匹配；STARTS_WITH：前缀匹配；EQUAL_TO：精确匹配。
 
         :param compare_type: The compare_type of this ListL7rulesRequest.
-        :type: str
+        :type compare_type: str
         """
         self._compare_type = compare_type
 
@@ -288,7 +315,7 @@ class ListL7rulesRequest:
         是否反向匹配；取值范围：true/false。默认值：false；该字段为预留字段，暂未启用。
 
         :param invert: The invert of this ListL7rulesRequest.
-        :type: bool
+        :type invert: bool
         """
         self._invert = invert
 
@@ -310,7 +337,7 @@ class ListL7rulesRequest:
         匹配内容的键值。默认为null。该字段为预留字段，暂未启用。
 
         :param key: The key of this ListL7rulesRequest.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -332,7 +359,7 @@ class ListL7rulesRequest:
         匹配内容的值。 当type为HOST_NAME时，取值范围：String (100)，字符串只能包含英文字母、数字、“-”或“.”，且必须以字母或数字开头。 当type为PATH时，取值范围：String (128)。当转发规则的compare_type为STARTS_WITH、EQUAL_TO时，字符串只能包含英文字母、数字、_~';@^-%#&$.*+?,=!:| /()[]{}，且必须以\"/\"开头。
 
         :param value: The value of this ListL7rulesRequest.
-        :type: str
+        :type value: str
         """
         self._value = value
 
@@ -354,7 +381,7 @@ class ListL7rulesRequest:
         转发规则的配置状态，可以为ACTIVE、PENDING_CREATE 或者ERROR。默认值：ACTIVE；该字段为预留字段，暂未启用。
 
         :param provisioning_status: The provisioning_status of this ListL7rulesRequest.
-        :type: str
+        :type provisioning_status: str
         """
         self._provisioning_status = provisioning_status
 

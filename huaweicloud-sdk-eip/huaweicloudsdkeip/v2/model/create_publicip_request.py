@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreatePublicipRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreatePublicipRequest:
     }
 
     def __init__(self, body=None):
-        """CreatePublicipRequest - a model defined in huaweicloud sdk"""
+        """CreatePublicipRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreatePublicipRequest
+        :type body: :class:`huaweicloudsdkeip.v2.CreatePublicipRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreatePublicipRequest:
 
 
         :return: The body of this CreatePublicipRequest.
-        :rtype: CreatePublicipRequestBody
+        :rtype: :class:`huaweicloudsdkeip.v2.CreatePublicipRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreatePublicipRequest:
 
 
         :param body: The body of this CreatePublicipRequest.
-        :type: CreatePublicipRequestBody
+        :type body: :class:`huaweicloudsdkeip.v2.CreatePublicipRequestBody`
         """
         self._body = body
 

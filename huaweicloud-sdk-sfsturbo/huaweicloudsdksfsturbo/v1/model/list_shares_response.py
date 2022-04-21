@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSharesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListSharesResponse(SdkResponse):
     }
 
     def __init__(self, shares=None, count=None):
-        """ListSharesResponse - a model defined in huaweicloud sdk"""
+        """ListSharesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param shares: SFS Turbo文件系统的列表。
+        :type shares: list[:class:`huaweicloudsdksfsturbo.v1.Shares`]
+        :param count: SFS Turbo文件系统的数量。
+        :type count: int
+        """
         
         super(ListSharesResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListSharesResponse(SdkResponse):
         SFS Turbo文件系统的列表。
 
         :return: The shares of this ListSharesResponse.
-        :rtype: list[Shares]
+        :rtype: list[:class:`huaweicloudsdksfsturbo.v1.Shares`]
         """
         return self._shares
 
@@ -63,7 +70,7 @@ class ListSharesResponse(SdkResponse):
         SFS Turbo文件系统的列表。
 
         :param shares: The shares of this ListSharesResponse.
-        :type: list[Shares]
+        :type shares: list[:class:`huaweicloudsdksfsturbo.v1.Shares`]
         """
         self._shares = shares
 
@@ -85,7 +92,7 @@ class ListSharesResponse(SdkResponse):
         SFS Turbo文件系统的数量。
 
         :param count: The count of this ListSharesResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteMfaDeviceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteMfaDeviceRequest:
     }
 
     def __init__(self, user_id=None, serial_number=None):
-        """DeleteMfaDeviceRequest - a model defined in huaweicloud sdk"""
+        """DeleteMfaDeviceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param user_id: 绑定MFA设备的IAM 用户ID。
+        :type user_id: str
+        :param serial_number: MFA设备序列号。
+        :type serial_number: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class DeleteMfaDeviceRequest:
         绑定MFA设备的IAM 用户ID。
 
         :param user_id: The user_id of this DeleteMfaDeviceRequest.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -83,7 +90,7 @@ class DeleteMfaDeviceRequest:
         MFA设备序列号。
 
         :param serial_number: The serial_number of this DeleteMfaDeviceRequest.
-        :type: str
+        :type serial_number: str
         """
         self._serial_number = serial_number
 

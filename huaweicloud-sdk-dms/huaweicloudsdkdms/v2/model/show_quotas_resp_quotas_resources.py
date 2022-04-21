@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowQuotasRespQuotasResources:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ShowQuotasRespQuotasResources:
     }
 
     def __init__(self, type=None, quota=None, used=None, min=None, max=None):
-        """ShowQuotasRespQuotasResources - a model defined in huaweicloud sdk"""
+        """ShowQuotasRespQuotasResources
+
+        The model defined in huaweicloud sdk
+
+        :param type: 配额名称。
+        :type type: str
+        :param quota: 配额数量。
+        :type quota: int
+        :param used: 已使用的数量。
+        :type used: int
+        :param min: 配额调整的最小值。
+        :type min: int
+        :param max: 配额调整的最大值。
+        :type max: int
+        """
         
         
 
@@ -78,7 +91,7 @@ class ShowQuotasRespQuotasResources:
         配额名称。
 
         :param type: The type of this ShowQuotasRespQuotasResources.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -100,7 +113,7 @@ class ShowQuotasRespQuotasResources:
         配额数量。
 
         :param quota: The quota of this ShowQuotasRespQuotasResources.
-        :type: int
+        :type quota: int
         """
         self._quota = quota
 
@@ -122,7 +135,7 @@ class ShowQuotasRespQuotasResources:
         已使用的数量。
 
         :param used: The used of this ShowQuotasRespQuotasResources.
-        :type: int
+        :type used: int
         """
         self._used = used
 
@@ -144,7 +157,7 @@ class ShowQuotasRespQuotasResources:
         配额调整的最小值。
 
         :param min: The min of this ShowQuotasRespQuotasResources.
-        :type: int
+        :type min: int
         """
         self._min = min
 
@@ -166,7 +179,7 @@ class ShowQuotasRespQuotasResources:
         配额调整的最大值。
 
         :param max: The max of this ShowQuotasRespQuotasResources.
-        :type: int
+        :type max: int
         """
         self._max = max
 

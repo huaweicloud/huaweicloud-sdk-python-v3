@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestoreExistInstanceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RestoreExistInstanceRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """RestoreExistInstanceRequest - a model defined in huaweicloud sdk"""
+        """RestoreExistInstanceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言
+        :type x_language: str
+        :param body: Body of the RestoreExistInstanceRequest
+        :type body: :class:`huaweicloudsdkrds.v3.RestoreExistingInstanceRequestBody`
+        """
         
         
 
@@ -63,7 +70,7 @@ class RestoreExistInstanceRequest:
         语言
 
         :param x_language: The x_language of this RestoreExistInstanceRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -73,7 +80,7 @@ class RestoreExistInstanceRequest:
 
 
         :return: The body of this RestoreExistInstanceRequest.
-        :rtype: RestoreExistingInstanceRequestBody
+        :rtype: :class:`huaweicloudsdkrds.v3.RestoreExistingInstanceRequestBody`
         """
         return self._body
 
@@ -83,7 +90,7 @@ class RestoreExistInstanceRequest:
 
 
         :param body: The body of this RestoreExistInstanceRequest.
-        :type: RestoreExistingInstanceRequestBody
+        :type body: :class:`huaweicloudsdkrds.v3.RestoreExistingInstanceRequestBody`
         """
         self._body = body
 

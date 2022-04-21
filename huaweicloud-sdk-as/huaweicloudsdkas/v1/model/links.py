@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Links:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Links:
     }
 
     def __init__(self, href=None, rel=None):
-        """Links - a model defined in huaweicloud sdk"""
+        """Links
+
+        The model defined in huaweicloud sdk
+
+        :param href: API的URL地址。
+        :type href: str
+        :param rel: API的URL依赖。
+        :type rel: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class Links:
         API的URL地址。
 
         :param href: The href of this Links.
-        :type: str
+        :type href: str
         """
         self._href = href
 
@@ -85,7 +92,7 @@ class Links:
         API的URL依赖。
 
         :param rel: The rel of this Links.
-        :type: str
+        :type rel: str
         """
         self._rel = rel
 

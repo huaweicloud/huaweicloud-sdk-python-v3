@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Port:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -58,7 +57,41 @@ class Port:
     }
 
     def __init__(self, id=None, name=None, status=None, admin_state_up=None, fixed_ips=None, mac_address=None, network_id=None, device_id=None, device_owner=None, security_groups=None, extra_dhcp_opts=None, allowed_address_pairs=None, site_id=None, dns_assignment=None, dns_name=None):
-        """Port - a model defined in huaweicloud sdk"""
+        """Port
+
+        The model defined in huaweicloud sdk
+
+        :param id: 端口唯一标识
+        :type id: str
+        :param name: 端口名称  取值：默认为空，最大长度不超过255
+        :type name: str
+        :param status: 端口状态，Hana硬直通虚拟机端口状态总为DOWN  取值范围：ACTIVE、BUILD、DOWN
+        :type status: str
+        :param admin_state_up: 管理状态  约束：只支持true，默认为true
+        :type admin_state_up: bool
+        :param fixed_ips: 端口IP。  约束：一个端口只支持一个fixed_ip，且不支持更新。
+        :type fixed_ips: list[:class:`huaweicloudsdkiec.v1.FixedIp`]
+        :param mac_address: 端口MAC地址  约束：由系统分配，不支持指定
+        :type mac_address: str
+        :param network_id: 端口所属网络的ID  约束：必须是存在的网络ID
+        :type network_id: str
+        :param device_id: 端口所属设备ID  约束：不支持设置和更新，由系统自动维护
+        :type device_id: str
+        :param device_owner: 设备所属（DHCP/Router/ lb/Nova）  约束：不支持设置和更新，由系统自动维护 
+        :type device_owner: str
+        :param security_groups: 安全组的UUID(扩展属性)
+        :type security_groups: list[str]
+        :param extra_dhcp_opts: DHCP的扩展属性。
+        :type extra_dhcp_opts: list[:class:`huaweicloudsdkiec.v1.ExtraDhcpOption`]
+        :param allowed_address_pairs: IP/Mac对列表。  约束：IP地址不允许为 “0.0.0.0/0”  建议：如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组。
+        :type allowed_address_pairs: list[:class:`huaweicloudsdkiec.v1.AllowedAddressPair`]
+        :param site_id: 站点ID
+        :type site_id: str
+        :param dns_assignment: 主网卡默认内网域名信息  约束：不支持设置和更新，由系统自动维护
+        :type dns_assignment: list[:class:`huaweicloudsdkiec.v1.DnsAssignment`]
+        :param dns_name: 主网卡默认内网DNS名称  约束：不支持设置和更新，由系统自动维护
+        :type dns_name: str
+        """
         
         
 
@@ -128,7 +161,7 @@ class Port:
         端口唯一标识
 
         :param id: The id of this Port.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -150,7 +183,7 @@ class Port:
         端口名称  取值：默认为空，最大长度不超过255
 
         :param name: The name of this Port.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -172,7 +205,7 @@ class Port:
         端口状态，Hana硬直通虚拟机端口状态总为DOWN  取值范围：ACTIVE、BUILD、DOWN
 
         :param status: The status of this Port.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -194,7 +227,7 @@ class Port:
         管理状态  约束：只支持true，默认为true
 
         :param admin_state_up: The admin_state_up of this Port.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 
@@ -205,7 +238,7 @@ class Port:
         端口IP。  约束：一个端口只支持一个fixed_ip，且不支持更新。
 
         :return: The fixed_ips of this Port.
-        :rtype: list[FixedIp]
+        :rtype: list[:class:`huaweicloudsdkiec.v1.FixedIp`]
         """
         return self._fixed_ips
 
@@ -216,7 +249,7 @@ class Port:
         端口IP。  约束：一个端口只支持一个fixed_ip，且不支持更新。
 
         :param fixed_ips: The fixed_ips of this Port.
-        :type: list[FixedIp]
+        :type fixed_ips: list[:class:`huaweicloudsdkiec.v1.FixedIp`]
         """
         self._fixed_ips = fixed_ips
 
@@ -238,7 +271,7 @@ class Port:
         端口MAC地址  约束：由系统分配，不支持指定
 
         :param mac_address: The mac_address of this Port.
-        :type: str
+        :type mac_address: str
         """
         self._mac_address = mac_address
 
@@ -260,7 +293,7 @@ class Port:
         端口所属网络的ID  约束：必须是存在的网络ID
 
         :param network_id: The network_id of this Port.
-        :type: str
+        :type network_id: str
         """
         self._network_id = network_id
 
@@ -282,7 +315,7 @@ class Port:
         端口所属设备ID  约束：不支持设置和更新，由系统自动维护
 
         :param device_id: The device_id of this Port.
-        :type: str
+        :type device_id: str
         """
         self._device_id = device_id
 
@@ -304,7 +337,7 @@ class Port:
         设备所属（DHCP/Router/ lb/Nova）  约束：不支持设置和更新，由系统自动维护 
 
         :param device_owner: The device_owner of this Port.
-        :type: str
+        :type device_owner: str
         """
         self._device_owner = device_owner
 
@@ -326,7 +359,7 @@ class Port:
         安全组的UUID(扩展属性)
 
         :param security_groups: The security_groups of this Port.
-        :type: list[str]
+        :type security_groups: list[str]
         """
         self._security_groups = security_groups
 
@@ -337,7 +370,7 @@ class Port:
         DHCP的扩展属性。
 
         :return: The extra_dhcp_opts of this Port.
-        :rtype: list[ExtraDhcpOption]
+        :rtype: list[:class:`huaweicloudsdkiec.v1.ExtraDhcpOption`]
         """
         return self._extra_dhcp_opts
 
@@ -348,7 +381,7 @@ class Port:
         DHCP的扩展属性。
 
         :param extra_dhcp_opts: The extra_dhcp_opts of this Port.
-        :type: list[ExtraDhcpOption]
+        :type extra_dhcp_opts: list[:class:`huaweicloudsdkiec.v1.ExtraDhcpOption`]
         """
         self._extra_dhcp_opts = extra_dhcp_opts
 
@@ -359,7 +392,7 @@ class Port:
         IP/Mac对列表。  约束：IP地址不允许为 “0.0.0.0/0”  建议：如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组。
 
         :return: The allowed_address_pairs of this Port.
-        :rtype: list[AllowedAddressPair]
+        :rtype: list[:class:`huaweicloudsdkiec.v1.AllowedAddressPair`]
         """
         return self._allowed_address_pairs
 
@@ -370,7 +403,7 @@ class Port:
         IP/Mac对列表。  约束：IP地址不允许为 “0.0.0.0/0”  建议：如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组。
 
         :param allowed_address_pairs: The allowed_address_pairs of this Port.
-        :type: list[AllowedAddressPair]
+        :type allowed_address_pairs: list[:class:`huaweicloudsdkiec.v1.AllowedAddressPair`]
         """
         self._allowed_address_pairs = allowed_address_pairs
 
@@ -392,7 +425,7 @@ class Port:
         站点ID
 
         :param site_id: The site_id of this Port.
-        :type: str
+        :type site_id: str
         """
         self._site_id = site_id
 
@@ -403,7 +436,7 @@ class Port:
         主网卡默认内网域名信息  约束：不支持设置和更新，由系统自动维护
 
         :return: The dns_assignment of this Port.
-        :rtype: list[DnsAssignment]
+        :rtype: list[:class:`huaweicloudsdkiec.v1.DnsAssignment`]
         """
         return self._dns_assignment
 
@@ -414,7 +447,7 @@ class Port:
         主网卡默认内网域名信息  约束：不支持设置和更新，由系统自动维护
 
         :param dns_assignment: The dns_assignment of this Port.
-        :type: list[DnsAssignment]
+        :type dns_assignment: list[:class:`huaweicloudsdkiec.v1.DnsAssignment`]
         """
         self._dns_assignment = dns_assignment
 
@@ -436,7 +469,7 @@ class Port:
         主网卡默认内网DNS名称  约束：不支持设置和更新，由系统自动维护
 
         :param dns_name: The dns_name of this Port.
-        :type: str
+        :type dns_name: str
         """
         self._dns_name = dns_name
 

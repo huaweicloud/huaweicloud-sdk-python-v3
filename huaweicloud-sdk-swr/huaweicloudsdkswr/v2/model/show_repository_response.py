@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowRepositoryResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -64,7 +63,47 @@ class ShowRepositoryResponse(SdkResponse):
     }
 
     def __init__(self, id=None, ns_id=None, name=None, category=None, description=None, creator_id=None, creator_name=None, size=None, is_public=None, num_images=None, num_download=None, url=None, path=None, internal_path=None, created=None, updated=None, domain_id=None, priority=None):
-        """ShowRepositoryResponse - a model defined in huaweicloud sdk"""
+        """ShowRepositoryResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 仓库编号
+        :type id: int
+        :param ns_id: 命名空间编号
+        :type ns_id: int
+        :param name: 仓库名称
+        :type name: str
+        :param category: 仓库类型（计划改造，每个镜像会有多个lable标示）
+        :type category: str
+        :param description: 仓库描述信息
+        :type description: str
+        :param creator_id: 仓库创建者id
+        :type creator_id: str
+        :param creator_name: 仓库创建者
+        :type creator_name: str
+        :param size: 仓库大小 
+        :type size: int
+        :param is_public: 仓库是否为公共仓库，值为true或false
+        :type is_public: bool
+        :param num_images: 仓库中镜像个数，0 ~ 9223372036854775807
+        :type num_images: int
+        :param num_download: 仓库下载次数
+        :type num_download: int
+        :param url: 仓库logo图片的URL，URL格式。（暂时未用）
+        :type url: str
+        :param path: 镜像pull路径，格式为 swr.cn-north-1.myhuaweicloud.com/namespace/repository
+        :type path: str
+        :param internal_path: 镜像pull路径，格式为 10.125.0.198:20202/namespace/repository
+        :type internal_path: str
+        :param created: 仓库创建时间，UTC日期格式，时间为UTC标准时间，用户需要根据本地时间计算偏移量；如东8区需要+8:00
+        :type created: str
+        :param updated: 仓库更新时间，UTC日期格式，时间为UTC标准时间，用户需要根据本地时间计算偏移量；如东8区需要+8:00
+        :type updated: str
+        :param domain_id: 帐号ID
+        :type domain_id: str
+        :param priority: 镜像排序优先级
+        :type priority: int
+        """
         
         super(ShowRepositoryResponse, self).__init__()
 
@@ -143,7 +182,7 @@ class ShowRepositoryResponse(SdkResponse):
         仓库编号
 
         :param id: The id of this ShowRepositoryResponse.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -165,7 +204,7 @@ class ShowRepositoryResponse(SdkResponse):
         命名空间编号
 
         :param ns_id: The ns_id of this ShowRepositoryResponse.
-        :type: int
+        :type ns_id: int
         """
         self._ns_id = ns_id
 
@@ -187,7 +226,7 @@ class ShowRepositoryResponse(SdkResponse):
         仓库名称
 
         :param name: The name of this ShowRepositoryResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -209,7 +248,7 @@ class ShowRepositoryResponse(SdkResponse):
         仓库类型（计划改造，每个镜像会有多个lable标示）
 
         :param category: The category of this ShowRepositoryResponse.
-        :type: str
+        :type category: str
         """
         self._category = category
 
@@ -231,7 +270,7 @@ class ShowRepositoryResponse(SdkResponse):
         仓库描述信息
 
         :param description: The description of this ShowRepositoryResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -253,7 +292,7 @@ class ShowRepositoryResponse(SdkResponse):
         仓库创建者id
 
         :param creator_id: The creator_id of this ShowRepositoryResponse.
-        :type: str
+        :type creator_id: str
         """
         self._creator_id = creator_id
 
@@ -275,7 +314,7 @@ class ShowRepositoryResponse(SdkResponse):
         仓库创建者
 
         :param creator_name: The creator_name of this ShowRepositoryResponse.
-        :type: str
+        :type creator_name: str
         """
         self._creator_name = creator_name
 
@@ -297,7 +336,7 @@ class ShowRepositoryResponse(SdkResponse):
         仓库大小 
 
         :param size: The size of this ShowRepositoryResponse.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -319,7 +358,7 @@ class ShowRepositoryResponse(SdkResponse):
         仓库是否为公共仓库，值为true或false
 
         :param is_public: The is_public of this ShowRepositoryResponse.
-        :type: bool
+        :type is_public: bool
         """
         self._is_public = is_public
 
@@ -341,7 +380,7 @@ class ShowRepositoryResponse(SdkResponse):
         仓库中镜像个数，0 ~ 9223372036854775807
 
         :param num_images: The num_images of this ShowRepositoryResponse.
-        :type: int
+        :type num_images: int
         """
         self._num_images = num_images
 
@@ -363,7 +402,7 @@ class ShowRepositoryResponse(SdkResponse):
         仓库下载次数
 
         :param num_download: The num_download of this ShowRepositoryResponse.
-        :type: int
+        :type num_download: int
         """
         self._num_download = num_download
 
@@ -385,7 +424,7 @@ class ShowRepositoryResponse(SdkResponse):
         仓库logo图片的URL，URL格式。（暂时未用）
 
         :param url: The url of this ShowRepositoryResponse.
-        :type: str
+        :type url: str
         """
         self._url = url
 
@@ -407,7 +446,7 @@ class ShowRepositoryResponse(SdkResponse):
         镜像pull路径，格式为 swr.cn-north-1.myhuaweicloud.com/namespace/repository
 
         :param path: The path of this ShowRepositoryResponse.
-        :type: str
+        :type path: str
         """
         self._path = path
 
@@ -429,7 +468,7 @@ class ShowRepositoryResponse(SdkResponse):
         镜像pull路径，格式为 10.125.0.198:20202/namespace/repository
 
         :param internal_path: The internal_path of this ShowRepositoryResponse.
-        :type: str
+        :type internal_path: str
         """
         self._internal_path = internal_path
 
@@ -451,7 +490,7 @@ class ShowRepositoryResponse(SdkResponse):
         仓库创建时间，UTC日期格式，时间为UTC标准时间，用户需要根据本地时间计算偏移量；如东8区需要+8:00
 
         :param created: The created of this ShowRepositoryResponse.
-        :type: str
+        :type created: str
         """
         self._created = created
 
@@ -473,7 +512,7 @@ class ShowRepositoryResponse(SdkResponse):
         仓库更新时间，UTC日期格式，时间为UTC标准时间，用户需要根据本地时间计算偏移量；如东8区需要+8:00
 
         :param updated: The updated of this ShowRepositoryResponse.
-        :type: str
+        :type updated: str
         """
         self._updated = updated
 
@@ -495,7 +534,7 @@ class ShowRepositoryResponse(SdkResponse):
         帐号ID
 
         :param domain_id: The domain_id of this ShowRepositoryResponse.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -517,7 +556,7 @@ class ShowRepositoryResponse(SdkResponse):
         镜像排序优先级
 
         :param priority: The priority of this ShowRepositoryResponse.
-        :type: int
+        :type priority: int
         """
         self._priority = priority
 

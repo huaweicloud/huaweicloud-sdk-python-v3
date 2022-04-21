@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListBlockchainChannelsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListBlockchainChannelsResponse(SdkResponse):
     }
 
     def __init__(self, channels=None):
-        """ListBlockchainChannelsResponse - a model defined in huaweicloud sdk"""
+        """ListBlockchainChannelsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param channels: 通道信息列表
+        :type channels: list[:class:`huaweicloudsdkbcs.v2.Channel`]
+        """
         
         super(ListBlockchainChannelsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListBlockchainChannelsResponse(SdkResponse):
         通道信息列表
 
         :return: The channels of this ListBlockchainChannelsResponse.
-        :rtype: list[Channel]
+        :rtype: list[:class:`huaweicloudsdkbcs.v2.Channel`]
         """
         return self._channels
 
@@ -58,7 +63,7 @@ class ListBlockchainChannelsResponse(SdkResponse):
         通道信息列表
 
         :param channels: The channels of this ListBlockchainChannelsResponse.
-        :type: list[Channel]
+        :type channels: list[:class:`huaweicloudsdkbcs.v2.Channel`]
         """
         self._channels = channels
 

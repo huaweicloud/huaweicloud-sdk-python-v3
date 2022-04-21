@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListComponentsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListComponentsRequest:
     }
 
     def __init__(self, application_id=None, limit=None, offset=None, order_by=None, order=None):
-        """ListComponentsRequest - a model defined in huaweicloud sdk"""
+        """ListComponentsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param application_id: 应用ID。
+        :type application_id: str
+        :param limit: 指定个数，明确指定的时候用于分页，取值[0, 100]。不指定的时候表示不分页，最多查询1000条记录。
+        :type limit: int
+        :param offset: 指定查询偏移量，默认偏移量为0.
+        :type offset: int
+        :param order_by: 排序字段，默认按创建时间排序。  排序字段支持枚举值：create_time、name、update_time。 
+        :type order_by: str
+        :param order: desc/asc，默认desc。
+        :type order: str
+        """
         
         
 
@@ -77,7 +90,7 @@ class ListComponentsRequest:
         应用ID。
 
         :param application_id: The application_id of this ListComponentsRequest.
-        :type: str
+        :type application_id: str
         """
         self._application_id = application_id
 
@@ -99,7 +112,7 @@ class ListComponentsRequest:
         指定个数，明确指定的时候用于分页，取值[0, 100]。不指定的时候表示不分页，最多查询1000条记录。
 
         :param limit: The limit of this ListComponentsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -121,7 +134,7 @@ class ListComponentsRequest:
         指定查询偏移量，默认偏移量为0.
 
         :param offset: The offset of this ListComponentsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -143,7 +156,7 @@ class ListComponentsRequest:
         排序字段，默认按创建时间排序。  排序字段支持枚举值：create_time、name、update_time。 
 
         :param order_by: The order_by of this ListComponentsRequest.
-        :type: str
+        :type order_by: str
         """
         self._order_by = order_by
 
@@ -165,7 +178,7 @@ class ListComponentsRequest:
         desc/asc，默认desc。
 
         :param order: The order of this ListComponentsRequest.
-        :type: str
+        :type order: str
         """
         self._order = order
 

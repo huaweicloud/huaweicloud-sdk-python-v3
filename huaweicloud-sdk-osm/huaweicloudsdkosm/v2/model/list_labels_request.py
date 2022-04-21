@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListLabelsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ListLabelsRequest:
     }
 
     def __init__(self, offset=None, limit=None, name=None, label_id=None, x_site=None, x_language=None, x_time_zone=None):
-        """ListLabelsRequest - a model defined in huaweicloud sdk"""
+        """ListLabelsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param offset: 查询偏移量，默认0
+        :type offset: int
+        :param limit: 查询数量，默认10，最大100
+        :type limit: int
+        :param name: 标签名称，最大64，支持模糊查询
+        :type name: str
+        :param label_id: 标签标识
+        :type label_id: int
+        :param x_site: 对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
+        :type x_site: int
+        :param x_language: 语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
+        :type x_language: str
+        :param x_time_zone: 环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
+        :type x_time_zone: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class ListLabelsRequest:
         查询偏移量，默认0
 
         :param offset: The offset of this ListLabelsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -110,7 +127,7 @@ class ListLabelsRequest:
         查询数量，默认10，最大100
 
         :param limit: The limit of this ListLabelsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -132,7 +149,7 @@ class ListLabelsRequest:
         标签名称，最大64，支持模糊查询
 
         :param name: The name of this ListLabelsRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -154,7 +171,7 @@ class ListLabelsRequest:
         标签标识
 
         :param label_id: The label_id of this ListLabelsRequest.
-        :type: int
+        :type label_id: int
         """
         self._label_id = label_id
 
@@ -176,7 +193,7 @@ class ListLabelsRequest:
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
         :param x_site: The x_site of this ListLabelsRequest.
-        :type: int
+        :type x_site: int
         """
         self._x_site = x_site
 
@@ -198,7 +215,7 @@ class ListLabelsRequest:
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
         :param x_language: The x_language of this ListLabelsRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -220,7 +237,7 @@ class ListLabelsRequest:
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 
         :param x_time_zone: The x_time_zone of this ListLabelsRequest.
-        :type: str
+        :type x_time_zone: str
         """
         self._x_time_zone = x_time_zone
 

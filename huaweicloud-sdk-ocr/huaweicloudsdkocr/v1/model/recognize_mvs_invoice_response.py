@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RecognizeMvsInvoiceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RecognizeMvsInvoiceResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """RecognizeMvsInvoiceResponse - a model defined in huaweicloud sdk"""
+        """RecognizeMvsInvoiceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param result: 
+        :type result: :class:`huaweicloudsdkocr.v1.MvsInvoiceResult`
+        """
         
         super(RecognizeMvsInvoiceResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class RecognizeMvsInvoiceResponse(SdkResponse):
 
 
         :return: The result of this RecognizeMvsInvoiceResponse.
-        :rtype: MvsInvoiceResult
+        :rtype: :class:`huaweicloudsdkocr.v1.MvsInvoiceResult`
         """
         return self._result
 
@@ -56,7 +61,7 @@ class RecognizeMvsInvoiceResponse(SdkResponse):
 
 
         :param result: The result of this RecognizeMvsInvoiceResponse.
-        :type: MvsInvoiceResult
+        :type result: :class:`huaweicloudsdkocr.v1.MvsInvoiceResult`
         """
         self._result = result
 

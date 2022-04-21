@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowSpResResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowSpResResponse(SdkResponse):
     }
 
     def __init__(self, used_accounts_count=None):
-        """ShowSpResResponse - a model defined in huaweicloud sdk"""
+        """ShowSpResResponse
+
+        The model defined in huaweicloud sdk
+
+        :param used_accounts_count: 已用的企业并发数
+        :type used_accounts_count: int
+        """
         
         super(ShowSpResResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class ShowSpResResponse(SdkResponse):
         已用的企业并发数
 
         :param used_accounts_count: The used_accounts_count of this ShowSpResResponse.
-        :type: int
+        :type used_accounts_count: int
         """
         self._used_accounts_count = used_accounts_count
 

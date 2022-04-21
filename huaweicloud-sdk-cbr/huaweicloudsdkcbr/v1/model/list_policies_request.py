@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPoliciesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListPoliciesRequest:
     }
 
     def __init__(self, operation_type=None, vault_id=None):
-        """ListPoliciesRequest - a model defined in huaweicloud sdk"""
+        """ListPoliciesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param operation_type: 策略类型：备份（backup）、复制(replication)
+        :type operation_type: str
+        :param vault_id: 存储库ID
+        :type vault_id: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class ListPoliciesRequest:
         策略类型：备份（backup）、复制(replication)
 
         :param operation_type: The operation_type of this ListPoliciesRequest.
-        :type: str
+        :type operation_type: str
         """
         self._operation_type = operation_type
 
@@ -85,7 +92,7 @@ class ListPoliciesRequest:
         存储库ID
 
         :param vault_id: The vault_id of this ListPoliciesRequest.
-        :type: str
+        :type vault_id: str
         """
         self._vault_id = vault_id
 

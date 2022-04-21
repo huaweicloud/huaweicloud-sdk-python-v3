@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DelAttendInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DelAttendInfo:
     }
 
     def __init__(self, number=None, participant_id=None):
-        """DelAttendInfo - a model defined in huaweicloud sdk"""
+        """DelAttendInfo
+
+        The model defined in huaweicloud sdk
+
+        :param number: 会场呼叫号码。
+        :type number: str
+        :param participant_id: 与会者标识，已入会的必须填写该字段。
+        :type participant_id: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class DelAttendInfo:
         会场呼叫号码。
 
         :param number: The number of this DelAttendInfo.
-        :type: str
+        :type number: str
         """
         self._number = number
 
@@ -84,7 +91,7 @@ class DelAttendInfo:
         与会者标识，已入会的必须填写该字段。
 
         :param participant_id: The participant_id of this DelAttendInfo.
-        :type: str
+        :type participant_id: str
         """
         self._participant_id = participant_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ProtectedInstanceAddTagsRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ProtectedInstanceAddTagsRequestBody:
     }
 
     def __init__(self, tag=None):
-        """ProtectedInstanceAddTagsRequestBody - a model defined in huaweicloud sdk"""
+        """ProtectedInstanceAddTagsRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param tag: 
+        :type tag: :class:`huaweicloudsdksdrs.v1.ResourceTag`
+        """
         
         
 
@@ -45,7 +50,7 @@ class ProtectedInstanceAddTagsRequestBody:
 
 
         :return: The tag of this ProtectedInstanceAddTagsRequestBody.
-        :rtype: ResourceTag
+        :rtype: :class:`huaweicloudsdksdrs.v1.ResourceTag`
         """
         return self._tag
 
@@ -55,7 +60,7 @@ class ProtectedInstanceAddTagsRequestBody:
 
 
         :param tag: The tag of this ProtectedInstanceAddTagsRequestBody.
-        :type: ResourceTag
+        :type tag: :class:`huaweicloudsdksdrs.v1.ResourceTag`
         """
         self._tag = tag
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResourceBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ResourceBody:
     }
 
     def __init__(self, sources=None):
-        """ResourceBody - a model defined in huaweicloud sdk"""
+        """ResourceBody
+
+        The model defined in huaweicloud sdk
+
+        :param sources: 源站域名或源站IP，源站为IP类型时，仅支持IPv4，如需传入多个源站IP，以多个源站对象传入，除IP其他参数请保持一致，主源站最多支持15个源站IP对象，备源站最多支持15个源站IP对象；源站为域名类型时仅支持1个源站对象。不支持IP源站和域名源站混用。
+        :type sources: list[:class:`huaweicloudsdkcdn.v1.SourceWithPort`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class ResourceBody:
         源站域名或源站IP，源站为IP类型时，仅支持IPv4，如需传入多个源站IP，以多个源站对象传入，除IP其他参数请保持一致，主源站最多支持15个源站IP对象，备源站最多支持15个源站IP对象；源站为域名类型时仅支持1个源站对象。不支持IP源站和域名源站混用。
 
         :return: The sources of this ResourceBody.
-        :rtype: list[SourceWithPort]
+        :rtype: list[:class:`huaweicloudsdkcdn.v1.SourceWithPort`]
         """
         return self._sources
 
@@ -57,7 +62,7 @@ class ResourceBody:
         源站域名或源站IP，源站为IP类型时，仅支持IPv4，如需传入多个源站IP，以多个源站对象传入，除IP其他参数请保持一致，主源站最多支持15个源站IP对象，备源站最多支持15个源站IP对象；源站为域名类型时仅支持1个源站对象。不支持IP源站和域名源站混用。
 
         :param sources: The sources of this ResourceBody.
-        :type: list[SourceWithPort]
+        :type sources: list[:class:`huaweicloudsdkcdn.v1.SourceWithPort`]
         """
         self._sources = sources
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RomaInstanceCheckListRespInstances:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -74,7 +73,57 @@ class RomaInstanceCheckListRespInstances:
     }
 
     def __init__(self, id=None, name=None, description=None, flavor_id=None, flavor_type=None, cpu_arch=None, vpc_id=None, subnet_id=None, security_group_id=None, publicip_enable=None, publicip_id=None, publicip_address=None, status=None, error_code=None, error_msg=None, charge_type=None, project_id=None, create_time=None, update_time=None, maintain_begin=None, maintain_end=None, available_zone_ids=None, enterprise_project_id=None):
-        """RomaInstanceCheckListRespInstances - a model defined in huaweicloud sdk"""
+        """RomaInstanceCheckListRespInstances
+
+        The model defined in huaweicloud sdk
+
+        :param id: 实例ID
+        :type id: str
+        :param name: 实例名称
+        :type name: str
+        :param description: 实例描述
+        :type description: str
+        :param flavor_id: 实例规格ID
+        :type flavor_id: str
+        :param flavor_type: 实例规格类型
+        :type flavor_type: str
+        :param cpu_arch: CPU架构类型，取值如下： - x86_64: x86架构 - aarch64: arm架构 
+        :type cpu_arch: str
+        :param vpc_id: 实例指定虚拟私有云ID
+        :type vpc_id: str
+        :param subnet_id: 实例指定虚拟私有云子网ID
+        :type subnet_id: str
+        :param security_group_id: 实例指定安全组ID
+        :type security_group_id: str
+        :param publicip_enable: 是否开启公网访问，开启时publicip_id字段必填。 
+        :type publicip_enable: bool
+        :param publicip_id: 实例绑定的弹性公网地址ID
+        :type publicip_id: str
+        :param publicip_address: 实例绑定的弹性公网地址
+        :type publicip_address: str
+        :param status: 实例运行状态
+        :type status: str
+        :param error_code: 错误码
+        :type error_code: str
+        :param error_msg: 错误消息
+        :type error_msg: str
+        :param charge_type: 实例计费模式
+        :type charge_type: str
+        :param project_id: 租户项目ID
+        :type project_id: str
+        :param create_time: 创建时间
+        :type create_time: str
+        :param update_time: 更新时间
+        :type update_time: str
+        :param maintain_begin: 运维开始时间
+        :type maintain_begin: str
+        :param maintain_end: 运维结束时间
+        :type maintain_end: str
+        :param available_zone_ids: 创实例使用的可用区列表
+        :type available_zone_ids: list[str]
+        :param enterprise_project_id: 实例所属企业项目ID
+        :type enterprise_project_id: str
+        """
         
         
 
@@ -168,7 +217,7 @@ class RomaInstanceCheckListRespInstances:
         实例ID
 
         :param id: The id of this RomaInstanceCheckListRespInstances.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -190,7 +239,7 @@ class RomaInstanceCheckListRespInstances:
         实例名称
 
         :param name: The name of this RomaInstanceCheckListRespInstances.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -212,7 +261,7 @@ class RomaInstanceCheckListRespInstances:
         实例描述
 
         :param description: The description of this RomaInstanceCheckListRespInstances.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -234,7 +283,7 @@ class RomaInstanceCheckListRespInstances:
         实例规格ID
 
         :param flavor_id: The flavor_id of this RomaInstanceCheckListRespInstances.
-        :type: str
+        :type flavor_id: str
         """
         self._flavor_id = flavor_id
 
@@ -256,7 +305,7 @@ class RomaInstanceCheckListRespInstances:
         实例规格类型
 
         :param flavor_type: The flavor_type of this RomaInstanceCheckListRespInstances.
-        :type: str
+        :type flavor_type: str
         """
         self._flavor_type = flavor_type
 
@@ -278,7 +327,7 @@ class RomaInstanceCheckListRespInstances:
         CPU架构类型，取值如下： - x86_64: x86架构 - aarch64: arm架构 
 
         :param cpu_arch: The cpu_arch of this RomaInstanceCheckListRespInstances.
-        :type: str
+        :type cpu_arch: str
         """
         self._cpu_arch = cpu_arch
 
@@ -300,7 +349,7 @@ class RomaInstanceCheckListRespInstances:
         实例指定虚拟私有云ID
 
         :param vpc_id: The vpc_id of this RomaInstanceCheckListRespInstances.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -322,7 +371,7 @@ class RomaInstanceCheckListRespInstances:
         实例指定虚拟私有云子网ID
 
         :param subnet_id: The subnet_id of this RomaInstanceCheckListRespInstances.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -344,7 +393,7 @@ class RomaInstanceCheckListRespInstances:
         实例指定安全组ID
 
         :param security_group_id: The security_group_id of this RomaInstanceCheckListRespInstances.
-        :type: str
+        :type security_group_id: str
         """
         self._security_group_id = security_group_id
 
@@ -366,7 +415,7 @@ class RomaInstanceCheckListRespInstances:
         是否开启公网访问，开启时publicip_id字段必填。 
 
         :param publicip_enable: The publicip_enable of this RomaInstanceCheckListRespInstances.
-        :type: bool
+        :type publicip_enable: bool
         """
         self._publicip_enable = publicip_enable
 
@@ -388,7 +437,7 @@ class RomaInstanceCheckListRespInstances:
         实例绑定的弹性公网地址ID
 
         :param publicip_id: The publicip_id of this RomaInstanceCheckListRespInstances.
-        :type: str
+        :type publicip_id: str
         """
         self._publicip_id = publicip_id
 
@@ -410,7 +459,7 @@ class RomaInstanceCheckListRespInstances:
         实例绑定的弹性公网地址
 
         :param publicip_address: The publicip_address of this RomaInstanceCheckListRespInstances.
-        :type: str
+        :type publicip_address: str
         """
         self._publicip_address = publicip_address
 
@@ -432,7 +481,7 @@ class RomaInstanceCheckListRespInstances:
         实例运行状态
 
         :param status: The status of this RomaInstanceCheckListRespInstances.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -454,7 +503,7 @@ class RomaInstanceCheckListRespInstances:
         错误码
 
         :param error_code: The error_code of this RomaInstanceCheckListRespInstances.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -476,7 +525,7 @@ class RomaInstanceCheckListRespInstances:
         错误消息
 
         :param error_msg: The error_msg of this RomaInstanceCheckListRespInstances.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 
@@ -498,7 +547,7 @@ class RomaInstanceCheckListRespInstances:
         实例计费模式
 
         :param charge_type: The charge_type of this RomaInstanceCheckListRespInstances.
-        :type: str
+        :type charge_type: str
         """
         self._charge_type = charge_type
 
@@ -520,7 +569,7 @@ class RomaInstanceCheckListRespInstances:
         租户项目ID
 
         :param project_id: The project_id of this RomaInstanceCheckListRespInstances.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -542,7 +591,7 @@ class RomaInstanceCheckListRespInstances:
         创建时间
 
         :param create_time: The create_time of this RomaInstanceCheckListRespInstances.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -564,7 +613,7 @@ class RomaInstanceCheckListRespInstances:
         更新时间
 
         :param update_time: The update_time of this RomaInstanceCheckListRespInstances.
-        :type: str
+        :type update_time: str
         """
         self._update_time = update_time
 
@@ -586,7 +635,7 @@ class RomaInstanceCheckListRespInstances:
         运维开始时间
 
         :param maintain_begin: The maintain_begin of this RomaInstanceCheckListRespInstances.
-        :type: str
+        :type maintain_begin: str
         """
         self._maintain_begin = maintain_begin
 
@@ -608,7 +657,7 @@ class RomaInstanceCheckListRespInstances:
         运维结束时间
 
         :param maintain_end: The maintain_end of this RomaInstanceCheckListRespInstances.
-        :type: str
+        :type maintain_end: str
         """
         self._maintain_end = maintain_end
 
@@ -630,7 +679,7 @@ class RomaInstanceCheckListRespInstances:
         创实例使用的可用区列表
 
         :param available_zone_ids: The available_zone_ids of this RomaInstanceCheckListRespInstances.
-        :type: list[str]
+        :type available_zone_ids: list[str]
         """
         self._available_zone_ids = available_zone_ids
 
@@ -652,7 +701,7 @@ class RomaInstanceCheckListRespInstances:
         实例所属企业项目ID
 
         :param enterprise_project_id: The enterprise_project_id of this RomaInstanceCheckListRespInstances.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 

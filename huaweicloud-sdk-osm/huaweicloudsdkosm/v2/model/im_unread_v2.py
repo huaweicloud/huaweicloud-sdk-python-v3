@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ImUnreadV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ImUnreadV2:
     }
 
     def __init__(self, status=None, incident_id=None, unread_num=None):
-        """ImUnreadV2 - a model defined in huaweicloud sdk"""
+        """ImUnreadV2
+
+        The model defined in huaweicloud sdk
+
+        :param status: 状态
+        :type status: int
+        :param incident_id: 工单id
+        :type incident_id: str
+        :param unread_num: 未读数量
+        :type unread_num: int
+        """
         
         
 
@@ -68,7 +77,7 @@ class ImUnreadV2:
         状态
 
         :param status: The status of this ImUnreadV2.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -90,7 +99,7 @@ class ImUnreadV2:
         工单id
 
         :param incident_id: The incident_id of this ImUnreadV2.
-        :type: str
+        :type incident_id: str
         """
         self._incident_id = incident_id
 
@@ -112,7 +121,7 @@ class ImUnreadV2:
         未读数量
 
         :param unread_num: The unread_num of this ImUnreadV2.
-        :type: int
+        :type unread_num: int
         """
         self._unread_num = unread_num
 

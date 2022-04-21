@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateApplicationEndpointRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateApplicationEndpointRequest:
     }
 
     def __init__(self, endpoint_urn=None, body=None):
-        """UpdateApplicationEndpointRequest - a model defined in huaweicloud sdk"""
+        """UpdateApplicationEndpointRequest
+
+        The model defined in huaweicloud sdk
+
+        :param endpoint_urn: Endpoint的唯一资源标识，可通过[查询Application的Endpoint列表](https://support.huaweicloud.com/api-smn/ListApplicationEndpoints.html)获取该标识。
+        :type endpoint_urn: str
+        :param body: Body of the UpdateApplicationEndpointRequest
+        :type body: :class:`huaweicloudsdksmn.v2.UpdateApplicationEndpointRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateApplicationEndpointRequest:
         Endpoint的唯一资源标识，可通过[查询Application的Endpoint列表](https://support.huaweicloud.com/api-smn/ListApplicationEndpoints.html)获取该标识。
 
         :param endpoint_urn: The endpoint_urn of this UpdateApplicationEndpointRequest.
-        :type: str
+        :type endpoint_urn: str
         """
         self._endpoint_urn = endpoint_urn
 
@@ -72,7 +79,7 @@ class UpdateApplicationEndpointRequest:
 
 
         :return: The body of this UpdateApplicationEndpointRequest.
-        :rtype: UpdateApplicationEndpointRequestBody
+        :rtype: :class:`huaweicloudsdksmn.v2.UpdateApplicationEndpointRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateApplicationEndpointRequest:
 
 
         :param body: The body of this UpdateApplicationEndpointRequest.
-        :type: UpdateApplicationEndpointRequestBody
+        :type body: :class:`huaweicloudsdksmn.v2.UpdateApplicationEndpointRequestBody`
         """
         self._body = body
 

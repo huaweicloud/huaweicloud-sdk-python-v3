@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RemuxOutputParam:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class RemuxOutputParam:
     }
 
     def __init__(self, format=None, segment_duration=None, remove_meta=None):
-        """RemuxOutputParam - a model defined in huaweicloud sdk"""
+        """RemuxOutputParam
+
+        The model defined in huaweicloud sdk
+
+        :param format: 输出格式。取值范围： - HLS - MP4 
+        :type format: str
+        :param segment_duration: 分片时长，仅当“format”为“HLS”时有效。  取值范围：[2，10]。  默认值： 5。  单位：秒。 
+        :type segment_duration: int
+        :param remove_meta: 输出媒体是否去除片源的中metadata自定义信息。默认值：false 
+        :type remove_meta: bool
+        """
         
         
 
@@ -68,7 +77,7 @@ class RemuxOutputParam:
         输出格式。取值范围： - HLS - MP4 
 
         :param format: The format of this RemuxOutputParam.
-        :type: str
+        :type format: str
         """
         self._format = format
 
@@ -90,7 +99,7 @@ class RemuxOutputParam:
         分片时长，仅当“format”为“HLS”时有效。  取值范围：[2，10]。  默认值： 5。  单位：秒。 
 
         :param segment_duration: The segment_duration of this RemuxOutputParam.
-        :type: int
+        :type segment_duration: int
         """
         self._segment_duration = segment_duration
 
@@ -112,7 +121,7 @@ class RemuxOutputParam:
         输出媒体是否去除片源的中metadata自定义信息。默认值：false 
 
         :param remove_meta: The remove_meta of this RemuxOutputParam.
-        :type: bool
+        :type remove_meta: bool
         """
         self._remove_meta = remove_meta
 

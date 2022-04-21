@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateCloudConnection:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CreateCloudConnection:
     }
 
     def __init__(self, name=None, description=None, enterprise_project_id=None, used_scene=None):
-        """CreateCloudConnection - a model defined in huaweicloud sdk"""
+        """CreateCloudConnection
+
+        The model defined in huaweicloud sdk
+
+        :param name: 云连接实例的名字。
+        :type name: str
+        :param description: 云连接实例的描述。
+        :type description: str
+        :param enterprise_project_id: 云连接实例所属的企业项目ID。
+        :type enterprise_project_id: str
+        :param used_scene: 云连接使用场景。|- VPC：虚拟私有云。 ER：虚拟路由器。
+        :type used_scene: str
+        """
         
         
 
@@ -72,7 +83,7 @@ class CreateCloudConnection:
         云连接实例的名字。
 
         :param name: The name of this CreateCloudConnection.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -94,7 +105,7 @@ class CreateCloudConnection:
         云连接实例的描述。
 
         :param description: The description of this CreateCloudConnection.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -116,7 +127,7 @@ class CreateCloudConnection:
         云连接实例所属的企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this CreateCloudConnection.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -138,7 +149,7 @@ class CreateCloudConnection:
         云连接使用场景。|- VPC：虚拟私有云。 ER：虚拟路由器。
 
         :param used_scene: The used_scene of this CreateCloudConnection.
-        :type: str
+        :type used_scene: str
         """
         self._used_scene = used_scene
 

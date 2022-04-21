@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PredefineTagRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class PredefineTagRequest:
     }
 
     def __init__(self, key=None, value=None):
-        """PredefineTagRequest - a model defined in huaweicloud sdk"""
+        """PredefineTagRequest
+
+        The model defined in huaweicloud sdk
+
+        :param key: 键。最大长度36个字符。字符集：A-Z，a-z ， 0-9，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
+        :type key: str
+        :param value: 值。每个值最大长度43个字符，可以为空字符串。字符集：AZ，a-z ， 0-9，‘.’，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
+        :type value: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class PredefineTagRequest:
         键。最大长度36个字符。字符集：A-Z，a-z ， 0-9，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
 
         :param key: The key of this PredefineTagRequest.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -83,7 +90,7 @@ class PredefineTagRequest:
         值。每个值最大长度43个字符，可以为空字符串。字符集：AZ，a-z ， 0-9，‘.’，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
 
         :param value: The value of this PredefineTagRequest.
-        :type: str
+        :type value: str
         """
         self._value = value
 

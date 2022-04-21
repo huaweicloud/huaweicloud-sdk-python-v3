@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ConfirmMessageEntity:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ConfirmMessageEntity:
     }
 
     def __init__(self, handler=None, status=None):
-        """ConfirmMessageEntity - a model defined in huaweicloud sdk"""
+        """ConfirmMessageEntity
+
+        The model defined in huaweicloud sdk
+
+        :param handler: 消费时返回的ID。
+        :type handler: str
+        :param status: 客户端处理数据的状态。 取值为“success”或者“fail”。
+        :type status: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class ConfirmMessageEntity:
         消费时返回的ID。
 
         :param handler: The handler of this ConfirmMessageEntity.
-        :type: str
+        :type handler: str
         """
         self._handler = handler
 
@@ -85,7 +92,7 @@ class ConfirmMessageEntity:
         客户端处理数据的状态。 取值为“success”或者“fail”。
 
         :param status: The status of this ConfirmMessageEntity.
-        :type: str
+        :type status: str
         """
         self._status = status
 

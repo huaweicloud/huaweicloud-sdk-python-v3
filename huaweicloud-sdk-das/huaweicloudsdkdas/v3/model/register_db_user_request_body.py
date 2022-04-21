@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RegisterDbUserRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class RegisterDbUserRequestBody:
     }
 
     def __init__(self, db_username=None, db_user_password=None, datastore_type=None):
-        """RegisterDbUserRequestBody - a model defined in huaweicloud sdk"""
+        """RegisterDbUserRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param db_username: 数据库用户名称
+        :type db_username: str
+        :param db_user_password: 数据库用户密码
+        :type db_user_password: str
+        :param datastore_type: 数据库类型，取值为MySQL
+        :type datastore_type: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class RegisterDbUserRequestBody:
         数据库用户名称
 
         :param db_username: The db_username of this RegisterDbUserRequestBody.
-        :type: str
+        :type db_username: str
         """
         self._db_username = db_username
 
@@ -87,7 +96,7 @@ class RegisterDbUserRequestBody:
         数据库用户密码
 
         :param db_user_password: The db_user_password of this RegisterDbUserRequestBody.
-        :type: str
+        :type db_user_password: str
         """
         self._db_user_password = db_user_password
 
@@ -109,7 +118,7 @@ class RegisterDbUserRequestBody:
         数据库类型，取值为MySQL
 
         :param datastore_type: The datastore_type of this RegisterDbUserRequestBody.
-        :type: str
+        :type datastore_type: str
         """
         self._datastore_type = datastore_type
 

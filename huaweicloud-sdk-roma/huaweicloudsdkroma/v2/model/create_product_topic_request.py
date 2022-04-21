@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateProductTopicRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateProductTopicRequest:
     }
 
     def __init__(self, instance_id=None, product_id=None, body=None):
-        """CreateProductTopicRequest - a model defined in huaweicloud sdk"""
+        """CreateProductTopicRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param product_id: 产品ID
+        :type product_id: int
+        :param body: Body of the CreateProductTopicRequest
+        :type body: :class:`huaweicloudsdkroma.v2.CreateProductTopicRequestBody`
+        """
         
         
 
@@ -66,7 +75,7 @@ class CreateProductTopicRequest:
         实例ID
 
         :param instance_id: The instance_id of this CreateProductTopicRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -88,7 +97,7 @@ class CreateProductTopicRequest:
         产品ID
 
         :param product_id: The product_id of this CreateProductTopicRequest.
-        :type: int
+        :type product_id: int
         """
         self._product_id = product_id
 
@@ -98,7 +107,7 @@ class CreateProductTopicRequest:
 
 
         :return: The body of this CreateProductTopicRequest.
-        :rtype: CreateProductTopicRequestBody
+        :rtype: :class:`huaweicloudsdkroma.v2.CreateProductTopicRequestBody`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class CreateProductTopicRequest:
 
 
         :param body: The body of this CreateProductTopicRequest.
-        :type: CreateProductTopicRequestBody
+        :type body: :class:`huaweicloudsdkroma.v2.CreateProductTopicRequestBody`
         """
         self._body = body
 

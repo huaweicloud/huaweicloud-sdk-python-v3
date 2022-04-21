@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListProtectedInstancesProjectTagsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class ListProtectedInstancesProjectTagsRequest:
     }
 
     def __init__(self):
-        """ListProtectedInstancesProjectTagsRequest - a model defined in huaweicloud sdk"""
+        """ListProtectedInstancesProjectTagsRequest
+
+        The model defined in huaweicloud sdk
+
+        """
         
         
         self.discriminator = None

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AttributesExpression:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AttributesExpression:
     }
 
     def __init__(self, type=None, probability=None):
-        """AttributesExpression - a model defined in huaweicloud sdk"""
+        """AttributesExpression
+
+        The model defined in huaweicloud sdk
+
+        :param type: 人脸表情类型： • neutral：中性 • happy：高兴 • fear：害怕 • surprise：惊讶 • sad：伤心 • angry：生气 • disgust：厌恶 • unknown：图片质量问题导致未识别
+        :type type: str
+        :param probability: 表情置信度，取值范围[0-1]。
+        :type probability: float
+        """
         
         
 
@@ -63,7 +70,7 @@ class AttributesExpression:
         人脸表情类型： • neutral：中性 • happy：高兴 • fear：害怕 • surprise：惊讶 • sad：伤心 • angry：生气 • disgust：厌恶 • unknown：图片质量问题导致未识别
 
         :param type: The type of this AttributesExpression.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -85,7 +92,7 @@ class AttributesExpression:
         表情置信度，取值范围[0-1]。
 
         :param probability: The probability of this AttributesExpression.
-        :type: float
+        :type probability: float
         """
         self._probability = probability
 

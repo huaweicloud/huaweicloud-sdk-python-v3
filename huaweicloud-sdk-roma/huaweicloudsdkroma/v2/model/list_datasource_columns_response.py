@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDatasourceColumnsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListDatasourceColumnsResponse(SdkResponse):
     }
 
     def __init__(self, columns=None):
-        """ListDatasourceColumnsResponse - a model defined in huaweicloud sdk"""
+        """ListDatasourceColumnsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param columns: 返回的实体对象
+        :type columns: list[:class:`huaweicloudsdkroma.v2.ColumnInfo`]
+        """
         
         super(ListDatasourceColumnsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListDatasourceColumnsResponse(SdkResponse):
         返回的实体对象
 
         :return: The columns of this ListDatasourceColumnsResponse.
-        :rtype: list[ColumnInfo]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.ColumnInfo`]
         """
         return self._columns
 
@@ -58,7 +63,7 @@ class ListDatasourceColumnsResponse(SdkResponse):
         返回的实体对象
 
         :param columns: The columns of this ListDatasourceColumnsResponse.
-        :type: list[ColumnInfo]
+        :type columns: list[:class:`huaweicloudsdkroma.v2.ColumnInfo`]
         """
         self._columns = columns
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateAsyncCommandResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class CreateAsyncCommandResponse(SdkResponse):
     }
 
     def __init__(self, device_id=None, command_id=None, service_id=None, command_name=None, paras=None, expire_time=None, status=None, created_time=None, send_strategy=None):
-        """CreateAsyncCommandResponse - a model defined in huaweicloud sdk"""
+        """CreateAsyncCommandResponse
+
+        The model defined in huaweicloud sdk
+
+        :param device_id: 设备ID，用于唯一标识一个设备，在注册设备时由物联网平台分配获得。
+        :type device_id: str
+        :param command_id: 设备命令ID，用于唯一标识一条命令，在下发设备命令时由物联网平台分配获得。
+        :type command_id: str
+        :param service_id: 设备命令所属的设备服务ID，在设备关联的产品模型中定义。
+        :type service_id: str
+        :param command_name: 设备命令名称，在设备关联的产品模型中定义。
+        :type command_name: str
+        :param paras: 设备执行的命令，Json格式，里面是一个个健值对，如果service_id不为空，每个健都是profile中命令的参数名（paraName）;如果service_id为空则由用户自定义命令格式。设备命令示例：{\&quot;value\&quot;:\&quot;1\&quot;}，具体格式需要应用和设备约定。 
+        :type paras: object
+        :param expire_time: 物联网平台缓存命令的时长， 单位秒。
+        :type expire_time: int
+        :param status: 设备命令状态,如果命令被缓存，返回PENDING, 如果命令下发给设备，返回SENT。
+        :type status: str
+        :param created_time: 命令的创建时间，\&quot;yyyyMMdd&#39;T&#39;HHmmss&#39;Z&#39;\&quot;格式的UTC字符串。
+        :type created_time: str
+        :param send_strategy: 下发策略， immediately表示立即下发，delay表示缓存起来，等数据上报或者设备上线之后下发。
+        :type send_strategy: str
+        """
         
         super(CreateAsyncCommandResponse, self).__init__()
 
@@ -98,7 +119,7 @@ class CreateAsyncCommandResponse(SdkResponse):
         设备ID，用于唯一标识一个设备，在注册设备时由物联网平台分配获得。
 
         :param device_id: The device_id of this CreateAsyncCommandResponse.
-        :type: str
+        :type device_id: str
         """
         self._device_id = device_id
 
@@ -120,7 +141,7 @@ class CreateAsyncCommandResponse(SdkResponse):
         设备命令ID，用于唯一标识一条命令，在下发设备命令时由物联网平台分配获得。
 
         :param command_id: The command_id of this CreateAsyncCommandResponse.
-        :type: str
+        :type command_id: str
         """
         self._command_id = command_id
 
@@ -142,7 +163,7 @@ class CreateAsyncCommandResponse(SdkResponse):
         设备命令所属的设备服务ID，在设备关联的产品模型中定义。
 
         :param service_id: The service_id of this CreateAsyncCommandResponse.
-        :type: str
+        :type service_id: str
         """
         self._service_id = service_id
 
@@ -164,7 +185,7 @@ class CreateAsyncCommandResponse(SdkResponse):
         设备命令名称，在设备关联的产品模型中定义。
 
         :param command_name: The command_name of this CreateAsyncCommandResponse.
-        :type: str
+        :type command_name: str
         """
         self._command_name = command_name
 
@@ -186,7 +207,7 @@ class CreateAsyncCommandResponse(SdkResponse):
         设备执行的命令，Json格式，里面是一个个健值对，如果service_id不为空，每个健都是profile中命令的参数名（paraName）;如果service_id为空则由用户自定义命令格式。设备命令示例：{\"value\":\"1\"}，具体格式需要应用和设备约定。 
 
         :param paras: The paras of this CreateAsyncCommandResponse.
-        :type: object
+        :type paras: object
         """
         self._paras = paras
 
@@ -208,7 +229,7 @@ class CreateAsyncCommandResponse(SdkResponse):
         物联网平台缓存命令的时长， 单位秒。
 
         :param expire_time: The expire_time of this CreateAsyncCommandResponse.
-        :type: int
+        :type expire_time: int
         """
         self._expire_time = expire_time
 
@@ -230,7 +251,7 @@ class CreateAsyncCommandResponse(SdkResponse):
         设备命令状态,如果命令被缓存，返回PENDING, 如果命令下发给设备，返回SENT。
 
         :param status: The status of this CreateAsyncCommandResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -252,7 +273,7 @@ class CreateAsyncCommandResponse(SdkResponse):
         命令的创建时间，\"yyyyMMdd'T'HHmmss'Z'\"格式的UTC字符串。
 
         :param created_time: The created_time of this CreateAsyncCommandResponse.
-        :type: str
+        :type created_time: str
         """
         self._created_time = created_time
 
@@ -274,7 +295,7 @@ class CreateAsyncCommandResponse(SdkResponse):
         下发策略， immediately表示立即下发，delay表示缓存起来，等数据上报或者设备上线之后下发。
 
         :param send_strategy: The send_strategy of this CreateAsyncCommandResponse.
-        :type: str
+        :type send_strategy: str
         """
         self._send_strategy = send_strategy
 

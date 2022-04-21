@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryTransTemplate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class QueryTransTemplate:
     }
 
     def __init__(self, template_name=None, video=None, audio=None, common=None):
-        """QueryTransTemplate - a model defined in huaweicloud sdk"""
+        """QueryTransTemplate
+
+        The model defined in huaweicloud sdk
+
+        :param template_name: 转码模板名称。 
+        :type template_name: str
+        :param video: 
+        :type video: :class:`huaweicloudsdkmpc.v1.Video`
+        :param audio: 
+        :type audio: :class:`huaweicloudsdkmpc.v1.Audio`
+        :param common: 
+        :type common: :class:`huaweicloudsdkmpc.v1.Common`
+        """
         
         
 
@@ -71,7 +82,7 @@ class QueryTransTemplate:
         转码模板名称。 
 
         :param template_name: The template_name of this QueryTransTemplate.
-        :type: str
+        :type template_name: str
         """
         self._template_name = template_name
 
@@ -81,7 +92,7 @@ class QueryTransTemplate:
 
 
         :return: The video of this QueryTransTemplate.
-        :rtype: Video
+        :rtype: :class:`huaweicloudsdkmpc.v1.Video`
         """
         return self._video
 
@@ -91,7 +102,7 @@ class QueryTransTemplate:
 
 
         :param video: The video of this QueryTransTemplate.
-        :type: Video
+        :type video: :class:`huaweicloudsdkmpc.v1.Video`
         """
         self._video = video
 
@@ -101,7 +112,7 @@ class QueryTransTemplate:
 
 
         :return: The audio of this QueryTransTemplate.
-        :rtype: Audio
+        :rtype: :class:`huaweicloudsdkmpc.v1.Audio`
         """
         return self._audio
 
@@ -111,7 +122,7 @@ class QueryTransTemplate:
 
 
         :param audio: The audio of this QueryTransTemplate.
-        :type: Audio
+        :type audio: :class:`huaweicloudsdkmpc.v1.Audio`
         """
         self._audio = audio
 
@@ -121,7 +132,7 @@ class QueryTransTemplate:
 
 
         :return: The common of this QueryTransTemplate.
-        :rtype: Common
+        :rtype: :class:`huaweicloudsdkmpc.v1.Common`
         """
         return self._common
 
@@ -131,7 +142,7 @@ class QueryTransTemplate:
 
 
         :param common: The common of this QueryTransTemplate.
-        :type: Common
+        :type common: :class:`huaweicloudsdkmpc.v1.Common`
         """
         self._common = common
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ReqParamBase:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -60,7 +59,43 @@ class ReqParamBase:
     }
 
     def __init__(self, name=None, type=None, location=None, default_value=None, sample_value=None, required=None, valid_enable=None, remark=None, enumerations=None, min_num=None, max_num=None, min_size=None, max_size=None, regular=None, json_schema=None, pass_through=None):
-        """ReqParamBase - a model defined in huaweicloud sdk"""
+        """ReqParamBase
+
+        The model defined in huaweicloud sdk
+
+        :param name: 参数名称。 由英文字母、数字、中划线、下划线、英文句号组成，且只能以英文开头。 
+        :type name: str
+        :param type: 参数类型
+        :type type: str
+        :param location: 参数位置
+        :type location: str
+        :param default_value: 参数默认值
+        :type default_value: str
+        :param sample_value: 参数示例值
+        :type sample_value: str
+        :param required: 是否必须 - 1：是 - 2：否  location为PATH时，required默认为1，其他场景required默认为2
+        :type required: int
+        :param valid_enable: 是否开启校验 - 1：开启校验 - 2：不开启校验
+        :type valid_enable: int
+        :param remark: 描述信息。 &gt; 中文字符必须为UTF-8或者unicode编码。
+        :type remark: str
+        :param enumerations: 参数枚举值
+        :type enumerations: str
+        :param min_num: 参数最小值  参数类型为NUMBER时有效
+        :type min_num: int
+        :param max_num: 参数最大值  参数类型为NUMBER时有效
+        :type max_num: int
+        :param min_size: 参数最小长度  参数类型为STRING时有效
+        :type min_size: int
+        :param max_size: 参数最大长度  参数类型为STRING时有效
+        :type max_size: int
+        :param regular: 正则校验规则  暂不支持
+        :type regular: str
+        :param json_schema: JSON校验规则  暂不支持
+        :type json_schema: str
+        :param pass_through: 是否透传 - 1：是 - 2：否
+        :type pass_through: int
+        """
         
         
 
@@ -130,7 +165,7 @@ class ReqParamBase:
         参数名称。 由英文字母、数字、中划线、下划线、英文句号组成，且只能以英文开头。 
 
         :param name: The name of this ReqParamBase.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -152,7 +187,7 @@ class ReqParamBase:
         参数类型
 
         :param type: The type of this ReqParamBase.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -174,7 +209,7 @@ class ReqParamBase:
         参数位置
 
         :param location: The location of this ReqParamBase.
-        :type: str
+        :type location: str
         """
         self._location = location
 
@@ -196,7 +231,7 @@ class ReqParamBase:
         参数默认值
 
         :param default_value: The default_value of this ReqParamBase.
-        :type: str
+        :type default_value: str
         """
         self._default_value = default_value
 
@@ -218,7 +253,7 @@ class ReqParamBase:
         参数示例值
 
         :param sample_value: The sample_value of this ReqParamBase.
-        :type: str
+        :type sample_value: str
         """
         self._sample_value = sample_value
 
@@ -240,7 +275,7 @@ class ReqParamBase:
         是否必须 - 1：是 - 2：否  location为PATH时，required默认为1，其他场景required默认为2
 
         :param required: The required of this ReqParamBase.
-        :type: int
+        :type required: int
         """
         self._required = required
 
@@ -262,7 +297,7 @@ class ReqParamBase:
         是否开启校验 - 1：开启校验 - 2：不开启校验
 
         :param valid_enable: The valid_enable of this ReqParamBase.
-        :type: int
+        :type valid_enable: int
         """
         self._valid_enable = valid_enable
 
@@ -284,7 +319,7 @@ class ReqParamBase:
         描述信息。 > 中文字符必须为UTF-8或者unicode编码。
 
         :param remark: The remark of this ReqParamBase.
-        :type: str
+        :type remark: str
         """
         self._remark = remark
 
@@ -306,7 +341,7 @@ class ReqParamBase:
         参数枚举值
 
         :param enumerations: The enumerations of this ReqParamBase.
-        :type: str
+        :type enumerations: str
         """
         self._enumerations = enumerations
 
@@ -328,7 +363,7 @@ class ReqParamBase:
         参数最小值  参数类型为NUMBER时有效
 
         :param min_num: The min_num of this ReqParamBase.
-        :type: int
+        :type min_num: int
         """
         self._min_num = min_num
 
@@ -350,7 +385,7 @@ class ReqParamBase:
         参数最大值  参数类型为NUMBER时有效
 
         :param max_num: The max_num of this ReqParamBase.
-        :type: int
+        :type max_num: int
         """
         self._max_num = max_num
 
@@ -372,7 +407,7 @@ class ReqParamBase:
         参数最小长度  参数类型为STRING时有效
 
         :param min_size: The min_size of this ReqParamBase.
-        :type: int
+        :type min_size: int
         """
         self._min_size = min_size
 
@@ -394,7 +429,7 @@ class ReqParamBase:
         参数最大长度  参数类型为STRING时有效
 
         :param max_size: The max_size of this ReqParamBase.
-        :type: int
+        :type max_size: int
         """
         self._max_size = max_size
 
@@ -416,7 +451,7 @@ class ReqParamBase:
         正则校验规则  暂不支持
 
         :param regular: The regular of this ReqParamBase.
-        :type: str
+        :type regular: str
         """
         self._regular = regular
 
@@ -438,7 +473,7 @@ class ReqParamBase:
         JSON校验规则  暂不支持
 
         :param json_schema: The json_schema of this ReqParamBase.
-        :type: str
+        :type json_schema: str
         """
         self._json_schema = json_schema
 
@@ -460,7 +495,7 @@ class ReqParamBase:
         是否透传 - 1：是 - 2：否
 
         :param pass_through: The pass_through of this ReqParamBase.
-        :type: int
+        :type pass_through: int
         """
         self._pass_through = pass_through
 

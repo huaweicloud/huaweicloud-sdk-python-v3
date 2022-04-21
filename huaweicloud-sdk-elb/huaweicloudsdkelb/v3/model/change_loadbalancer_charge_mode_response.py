@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ChangeLoadbalancerChargeModeResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ChangeLoadbalancerChargeModeResponse(SdkResponse):
     }
 
     def __init__(self, eip_id_list=None, loadbalancer_id_list=None, order_id=None, request_id=None):
-        """ChangeLoadbalancerChargeModeResponse - a model defined in huaweicloud sdk"""
+        """ChangeLoadbalancerChargeModeResponse
+
+        The model defined in huaweicloud sdk
+
+        :param eip_id_list: 转包周期下单成功的EIP ID列表
+        :type eip_id_list: list[str]
+        :param loadbalancer_id_list: 转包周期下单成功的LB ID列表
+        :type loadbalancer_id_list: list[str]
+        :param order_id: 转包周期订单号
+        :type order_id: str
+        :param request_id: 请求的UUIID
+        :type request_id: str
+        """
         
         super(ChangeLoadbalancerChargeModeResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class ChangeLoadbalancerChargeModeResponse(SdkResponse):
         转包周期下单成功的EIP ID列表
 
         :param eip_id_list: The eip_id_list of this ChangeLoadbalancerChargeModeResponse.
-        :type: list[str]
+        :type eip_id_list: list[str]
         """
         self._eip_id_list = eip_id_list
 
@@ -95,7 +106,7 @@ class ChangeLoadbalancerChargeModeResponse(SdkResponse):
         转包周期下单成功的LB ID列表
 
         :param loadbalancer_id_list: The loadbalancer_id_list of this ChangeLoadbalancerChargeModeResponse.
-        :type: list[str]
+        :type loadbalancer_id_list: list[str]
         """
         self._loadbalancer_id_list = loadbalancer_id_list
 
@@ -117,7 +128,7 @@ class ChangeLoadbalancerChargeModeResponse(SdkResponse):
         转包周期订单号
 
         :param order_id: The order_id of this ChangeLoadbalancerChargeModeResponse.
-        :type: str
+        :type order_id: str
         """
         self._order_id = order_id
 
@@ -139,7 +150,7 @@ class ChangeLoadbalancerChargeModeResponse(SdkResponse):
         请求的UUIID
 
         :param request_id: The request_id of this ChangeLoadbalancerChargeModeResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 

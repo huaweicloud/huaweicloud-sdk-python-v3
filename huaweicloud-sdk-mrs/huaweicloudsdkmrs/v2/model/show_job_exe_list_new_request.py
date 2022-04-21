@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowJobExeListNewRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class ShowJobExeListNewRequest:
     }
 
     def __init__(self, cluster_id=None, job_name=None, job_id=None, user=None, job_type=None, job_state=None, job_result=None, queue=None, limit=None, offset=None, sort_by=None, submitted_time_begin=None, submitted_time_end=None):
-        """ShowJobExeListNewRequest - a model defined in huaweicloud sdk"""
+        """ShowJobExeListNewRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 集群ID。获取方法，请参见[获取集群ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
+        :type cluster_id: str
+        :param job_name: 作业名称，只能由字母、数字、中划线和下划线组成，并且长度为1～36个字符。
+        :type job_name: str
+        :param job_id: 作业ID，只能由字母、数字、中划线(-)组成，并且长度为1~36字符。
+        :type job_id: str
+        :param user: 用户名称、只能由字母、数字、特殊字符(-_.)组成，且不能以数字开头，并且长度为1～32字符。
+        :type user: str
+        :param job_type: 作业类型。 - MapReduce - SparkSubmit - SparkSubmit：SparkPython类型的作业在查询时作业类型请选择SparkSubmit。 - HiveScript - HiveSql - DistCp，导入、导出数据。 - SparkScript - SparkSql - Flink
+        :type job_type: str
+        :param job_state: 作业运行状态。 - FAILED：失败 - KILLED：已终止 - NEW：已创建 - NEW_SAVING：已创建保存中 - SUBMITTED：已提交 - ACCEPTED：已接受 - RUNNING：运行中 - FINISHED：已完成
+        :type job_state: str
+        :param job_result: 作业运行结果。 - FAILED：执行失败的作业。 - KILLED：执行中被手动终止的作业。 - UNDEFINED：正在执行的作业。 - SUCCEEDED：执行成功的作业。
+        :type job_result: str
+        :param queue: 作业的资源对列类型名称，作业的资源对列类型名称，只能由数字、字母和特殊字符(-_)组成, 并且长度为1～64字符。
+        :type queue: str
+        :param limit: 返回结果中每页显示条数。缺省值：10
+        :type limit: str
+        :param offset: 表示作业列表从该偏移量开始查询。缺省值：1
+        :type offset: str
+        :param sort_by: 返回结果的排序方式，默认值为desc。 - asc：按升序排列 - desc：按降序排列
+        :type sort_by: str
+        :param submitted_time_begin: 查询该时间之后提交的作业，UTC的毫秒时间戳。例如：1562032041362。
+        :type submitted_time_begin: int
+        :param submitted_time_end: 查询该时间之前提交的作业UTC的毫秒时间戳。例如：1562032041362。
+        :type submitted_time_end: int
+        """
         
         
 
@@ -117,7 +146,7 @@ class ShowJobExeListNewRequest:
         集群ID。获取方法，请参见[获取集群ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
 
         :param cluster_id: The cluster_id of this ShowJobExeListNewRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -139,7 +168,7 @@ class ShowJobExeListNewRequest:
         作业名称，只能由字母、数字、中划线和下划线组成，并且长度为1～36个字符。
 
         :param job_name: The job_name of this ShowJobExeListNewRequest.
-        :type: str
+        :type job_name: str
         """
         self._job_name = job_name
 
@@ -161,7 +190,7 @@ class ShowJobExeListNewRequest:
         作业ID，只能由字母、数字、中划线(-)组成，并且长度为1~36字符。
 
         :param job_id: The job_id of this ShowJobExeListNewRequest.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -183,7 +212,7 @@ class ShowJobExeListNewRequest:
         用户名称、只能由字母、数字、特殊字符(-_.)组成，且不能以数字开头，并且长度为1～32字符。
 
         :param user: The user of this ShowJobExeListNewRequest.
-        :type: str
+        :type user: str
         """
         self._user = user
 
@@ -205,7 +234,7 @@ class ShowJobExeListNewRequest:
         作业类型。 - MapReduce - SparkSubmit - SparkSubmit：SparkPython类型的作业在查询时作业类型请选择SparkSubmit。 - HiveScript - HiveSql - DistCp，导入、导出数据。 - SparkScript - SparkSql - Flink
 
         :param job_type: The job_type of this ShowJobExeListNewRequest.
-        :type: str
+        :type job_type: str
         """
         self._job_type = job_type
 
@@ -227,7 +256,7 @@ class ShowJobExeListNewRequest:
         作业运行状态。 - FAILED：失败 - KILLED：已终止 - NEW：已创建 - NEW_SAVING：已创建保存中 - SUBMITTED：已提交 - ACCEPTED：已接受 - RUNNING：运行中 - FINISHED：已完成
 
         :param job_state: The job_state of this ShowJobExeListNewRequest.
-        :type: str
+        :type job_state: str
         """
         self._job_state = job_state
 
@@ -249,7 +278,7 @@ class ShowJobExeListNewRequest:
         作业运行结果。 - FAILED：执行失败的作业。 - KILLED：执行中被手动终止的作业。 - UNDEFINED：正在执行的作业。 - SUCCEEDED：执行成功的作业。
 
         :param job_result: The job_result of this ShowJobExeListNewRequest.
-        :type: str
+        :type job_result: str
         """
         self._job_result = job_result
 
@@ -271,7 +300,7 @@ class ShowJobExeListNewRequest:
         作业的资源对列类型名称，作业的资源对列类型名称，只能由数字、字母和特殊字符(-_)组成, 并且长度为1～64字符。
 
         :param queue: The queue of this ShowJobExeListNewRequest.
-        :type: str
+        :type queue: str
         """
         self._queue = queue
 
@@ -293,7 +322,7 @@ class ShowJobExeListNewRequest:
         返回结果中每页显示条数。缺省值：10
 
         :param limit: The limit of this ShowJobExeListNewRequest.
-        :type: str
+        :type limit: str
         """
         self._limit = limit
 
@@ -315,7 +344,7 @@ class ShowJobExeListNewRequest:
         表示作业列表从该偏移量开始查询。缺省值：1
 
         :param offset: The offset of this ShowJobExeListNewRequest.
-        :type: str
+        :type offset: str
         """
         self._offset = offset
 
@@ -337,7 +366,7 @@ class ShowJobExeListNewRequest:
         返回结果的排序方式，默认值为desc。 - asc：按升序排列 - desc：按降序排列
 
         :param sort_by: The sort_by of this ShowJobExeListNewRequest.
-        :type: str
+        :type sort_by: str
         """
         self._sort_by = sort_by
 
@@ -359,7 +388,7 @@ class ShowJobExeListNewRequest:
         查询该时间之后提交的作业，UTC的毫秒时间戳。例如：1562032041362。
 
         :param submitted_time_begin: The submitted_time_begin of this ShowJobExeListNewRequest.
-        :type: int
+        :type submitted_time_begin: int
         """
         self._submitted_time_begin = submitted_time_begin
 
@@ -381,7 +410,7 @@ class ShowJobExeListNewRequest:
         查询该时间之前提交的作业UTC的毫秒时间戳。例如：1562032041362。
 
         :param submitted_time_end: The submitted_time_end of this ShowJobExeListNewRequest.
-        :type: int
+        :type submitted_time_end: int
         """
         self._submitted_time_end = submitted_time_end
 

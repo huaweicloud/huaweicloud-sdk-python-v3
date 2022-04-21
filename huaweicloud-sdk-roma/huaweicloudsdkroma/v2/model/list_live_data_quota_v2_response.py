@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListLiveDataQuotaV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListLiveDataQuotaV2Response(SdkResponse):
     }
 
     def __init__(self, datasource=None, api=None, scripts=None, datasource_used=None, api_used=None):
-        """ListLiveDataQuotaV2Response - a model defined in huaweicloud sdk"""
+        """ListLiveDataQuotaV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param datasource: 数据源配额
+        :type datasource: str
+        :param api: 后端api配额
+        :type api: str
+        :param scripts: 脚本配额
+        :type scripts: str
+        :param datasource_used: 已使用的数据源数量
+        :type datasource_used: str
+        :param api_used: 已使用的后端api数量
+        :type api_used: str
+        """
         
         super(ListLiveDataQuotaV2Response, self).__init__()
 
@@ -78,7 +91,7 @@ class ListLiveDataQuotaV2Response(SdkResponse):
         数据源配额
 
         :param datasource: The datasource of this ListLiveDataQuotaV2Response.
-        :type: str
+        :type datasource: str
         """
         self._datasource = datasource
 
@@ -100,7 +113,7 @@ class ListLiveDataQuotaV2Response(SdkResponse):
         后端api配额
 
         :param api: The api of this ListLiveDataQuotaV2Response.
-        :type: str
+        :type api: str
         """
         self._api = api
 
@@ -122,7 +135,7 @@ class ListLiveDataQuotaV2Response(SdkResponse):
         脚本配额
 
         :param scripts: The scripts of this ListLiveDataQuotaV2Response.
-        :type: str
+        :type scripts: str
         """
         self._scripts = scripts
 
@@ -144,7 +157,7 @@ class ListLiveDataQuotaV2Response(SdkResponse):
         已使用的数据源数量
 
         :param datasource_used: The datasource_used of this ListLiveDataQuotaV2Response.
-        :type: str
+        :type datasource_used: str
         """
         self._datasource_used = datasource_used
 
@@ -166,7 +179,7 @@ class ListLiveDataQuotaV2Response(SdkResponse):
         已使用的后端api数量
 
         :param api_used: The api_used of this ListLiveDataQuotaV2Response.
-        :type: str
+        :type api_used: str
         """
         self._api_used = api_used
 

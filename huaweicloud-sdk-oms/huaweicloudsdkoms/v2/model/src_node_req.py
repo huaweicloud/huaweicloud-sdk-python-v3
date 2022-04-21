@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SrcNodeReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class SrcNodeReq:
     }
 
     def __init__(self, cloud_type=None, region=None, ak=None, sk=None, security_token=None, app_id=None, bucket=None, object_key=None, list_file=None):
-        """SrcNodeReq - a model defined in huaweicloud sdk"""
+        """SrcNodeReq
+
+        The model defined in huaweicloud sdk
+
+        :param cloud_type: 源端云服务提供商，task_type为非url_list时，本参数为URLSource。  可选值有AWS、Azure、Aliyun、Tencent、HuaweiCloud、QingCloud、KingsoftCloud、Baidu、Qiniu、URLSource或者UCloud。默认值为Aliyun。
+        :type cloud_type: str
+        :param region: 源端桶所处的区域，task_type为非url_list时，本参数为必选。
+        :type region: str
+        :param ak: 源端桶的AK（最大长度100个字符），task_type为非url_list时，本参数为必选。
+        :type ak: str
+        :param sk: 源端桶的SK（最大长度100个字符），task_type为非url_list时，本参数为必选。
+        :type sk: str
+        :param security_token: 源端桶的临时Token（最大长度16384个字符）
+        :type security_token: str
+        :param app_id: 当源端为腾讯云时，需要填写此参数。
+        :type app_id: str
+        :param bucket: 源端桶的名称，task_type为非url_list时，本参数为必选。
+        :type bucket: str
+        :param object_key: 任务类型为对象迁移任务时，表示待迁移对象名称（以“/”结尾的字符串代表待迁移的文件夹，非“/”结尾的字符串代表待迁移的文件。）； 任务类型为前缀迁移任务时，表示待迁移前缀。 整桶迁移时，此参数设置为[\&quot;\&quot;]。
+        :type object_key: list[str]
+        :param list_file: 
+        :type list_file: :class:`huaweicloudsdkoms.v2.ListFile`
+        """
         
         
 
@@ -98,7 +119,7 @@ class SrcNodeReq:
         源端云服务提供商，task_type为非url_list时，本参数为URLSource。  可选值有AWS、Azure、Aliyun、Tencent、HuaweiCloud、QingCloud、KingsoftCloud、Baidu、Qiniu、URLSource或者UCloud。默认值为Aliyun。
 
         :param cloud_type: The cloud_type of this SrcNodeReq.
-        :type: str
+        :type cloud_type: str
         """
         self._cloud_type = cloud_type
 
@@ -120,7 +141,7 @@ class SrcNodeReq:
         源端桶所处的区域，task_type为非url_list时，本参数为必选。
 
         :param region: The region of this SrcNodeReq.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -142,7 +163,7 @@ class SrcNodeReq:
         源端桶的AK（最大长度100个字符），task_type为非url_list时，本参数为必选。
 
         :param ak: The ak of this SrcNodeReq.
-        :type: str
+        :type ak: str
         """
         self._ak = ak
 
@@ -164,7 +185,7 @@ class SrcNodeReq:
         源端桶的SK（最大长度100个字符），task_type为非url_list时，本参数为必选。
 
         :param sk: The sk of this SrcNodeReq.
-        :type: str
+        :type sk: str
         """
         self._sk = sk
 
@@ -186,7 +207,7 @@ class SrcNodeReq:
         源端桶的临时Token（最大长度16384个字符）
 
         :param security_token: The security_token of this SrcNodeReq.
-        :type: str
+        :type security_token: str
         """
         self._security_token = security_token
 
@@ -208,7 +229,7 @@ class SrcNodeReq:
         当源端为腾讯云时，需要填写此参数。
 
         :param app_id: The app_id of this SrcNodeReq.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -230,7 +251,7 @@ class SrcNodeReq:
         源端桶的名称，task_type为非url_list时，本参数为必选。
 
         :param bucket: The bucket of this SrcNodeReq.
-        :type: str
+        :type bucket: str
         """
         self._bucket = bucket
 
@@ -252,7 +273,7 @@ class SrcNodeReq:
         任务类型为对象迁移任务时，表示待迁移对象名称（以“/”结尾的字符串代表待迁移的文件夹，非“/”结尾的字符串代表待迁移的文件。）； 任务类型为前缀迁移任务时，表示待迁移前缀。 整桶迁移时，此参数设置为[\"\"]。
 
         :param object_key: The object_key of this SrcNodeReq.
-        :type: list[str]
+        :type object_key: list[str]
         """
         self._object_key = object_key
 
@@ -262,7 +283,7 @@ class SrcNodeReq:
 
 
         :return: The list_file of this SrcNodeReq.
-        :rtype: ListFile
+        :rtype: :class:`huaweicloudsdkoms.v2.ListFile`
         """
         return self._list_file
 
@@ -272,7 +293,7 @@ class SrcNodeReq:
 
 
         :param list_file: The list_file of this SrcNodeReq.
-        :type: ListFile
+        :type list_file: :class:`huaweicloudsdkoms.v2.ListFile`
         """
         self._list_file = list_file
 

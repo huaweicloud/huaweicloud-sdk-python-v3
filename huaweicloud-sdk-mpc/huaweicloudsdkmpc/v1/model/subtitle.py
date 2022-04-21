@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Subtitle:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class Subtitle:
     }
 
     def __init__(self, input=None, inputs=None, subtitle_type=None):
-        """Subtitle - a model defined in huaweicloud sdk"""
+        """Subtitle
+
+        The model defined in huaweicloud sdk
+
+        :param input: 
+        :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        :param inputs: 多字幕文件地址。 
+        :type inputs: list[:class:`huaweicloudsdkmpc.v1.MulInputFileInfo`]
+        :param subtitle_type: 字幕类型。取值如下：  - 0，表示不输出字幕 - 1，表示外部字幕文件嵌入视频流 - 2，表示输出WebVTT格式字幕 
+        :type subtitle_type: int
+        """
         
         
 
@@ -56,7 +65,7 @@ class Subtitle:
 
 
         :return: The input of this Subtitle.
-        :rtype: ObsObjInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         return self._input
 
@@ -66,7 +75,7 @@ class Subtitle:
 
 
         :param input: The input of this Subtitle.
-        :type: ObsObjInfo
+        :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         self._input = input
 
@@ -77,7 +86,7 @@ class Subtitle:
         多字幕文件地址。 
 
         :return: The inputs of this Subtitle.
-        :rtype: list[MulInputFileInfo]
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.MulInputFileInfo`]
         """
         return self._inputs
 
@@ -88,7 +97,7 @@ class Subtitle:
         多字幕文件地址。 
 
         :param inputs: The inputs of this Subtitle.
-        :type: list[MulInputFileInfo]
+        :type inputs: list[:class:`huaweicloudsdkmpc.v1.MulInputFileInfo`]
         """
         self._inputs = inputs
 
@@ -110,7 +119,7 @@ class Subtitle:
         字幕类型。取值如下：  - 0，表示不输出字幕 - 1，表示外部字幕文件嵌入视频流 - 2，表示输出WebVTT格式字幕 
 
         :param subtitle_type: The subtitle_type of this Subtitle.
-        :type: int
+        :type subtitle_type: int
         """
         self._subtitle_type = subtitle_type
 

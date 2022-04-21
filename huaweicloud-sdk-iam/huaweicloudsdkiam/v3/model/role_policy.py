@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RolePolicy:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class RolePolicy:
     }
 
     def __init__(self, depends=None, statement=None, version=None):
-        """RolePolicy - a model defined in huaweicloud sdk"""
+        """RolePolicy
+
+        The model defined in huaweicloud sdk
+
+        :param depends: 该权限所依赖的权限。
+        :type depends: list[:class:`huaweicloudsdkiam.v3.PolicyDepends`]
+        :param statement: 授权语句，描述权限的具体内容。
+        :type statement: list[:class:`huaweicloudsdkiam.v3.PolicyStatement`]
+        :param version: 权限版本号。 &gt; - 1.0：系统预置的角色。以服务为粒度，提供有限的服务相关角色用于授权。 &gt; - 1.1：策略。IAM最新提供的一种细粒度授权的能力，可以精确到具体服务的操作、资源以及请求条件等。
+        :type version: str
+        """
         
         
 
@@ -55,7 +64,7 @@ class RolePolicy:
         该权限所依赖的权限。
 
         :return: The depends of this RolePolicy.
-        :rtype: list[PolicyDepends]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.PolicyDepends`]
         """
         return self._depends
 
@@ -66,7 +75,7 @@ class RolePolicy:
         该权限所依赖的权限。
 
         :param depends: The depends of this RolePolicy.
-        :type: list[PolicyDepends]
+        :type depends: list[:class:`huaweicloudsdkiam.v3.PolicyDepends`]
         """
         self._depends = depends
 
@@ -77,7 +86,7 @@ class RolePolicy:
         授权语句，描述权限的具体内容。
 
         :return: The statement of this RolePolicy.
-        :rtype: list[PolicyStatement]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.PolicyStatement`]
         """
         return self._statement
 
@@ -88,7 +97,7 @@ class RolePolicy:
         授权语句，描述权限的具体内容。
 
         :param statement: The statement of this RolePolicy.
-        :type: list[PolicyStatement]
+        :type statement: list[:class:`huaweicloudsdkiam.v3.PolicyStatement`]
         """
         self._statement = statement
 
@@ -110,7 +119,7 @@ class RolePolicy:
         权限版本号。 > - 1.0：系统预置的角色。以服务为粒度，提供有限的服务相关角色用于授权。 > - 1.1：策略。IAM最新提供的一种细粒度授权的能力，可以精确到具体服务的操作、资源以及请求条件等。
 
         :param version: The version of this RolePolicy.
-        :type: str
+        :type version: str
         """
         self._version = version
 

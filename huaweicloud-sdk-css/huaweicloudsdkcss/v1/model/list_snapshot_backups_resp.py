@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSnapshotBackupsResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -72,7 +71,55 @@ class ListSnapshotBackupsResp:
     }
 
     def __init__(self, created=None, datastore=None, description=None, id=None, cluster_id=None, cluster_name=None, name=None, status=None, updated=None, backup_type=None, backup_method=None, backup_expected_start_time=None, backup_keep_day=None, backup_period=None, indices=None, total_shards=None, failed_shards=None, version=None, restore_status=None, start_time=None, end_time=None, bucket_name=None):
-        """ListSnapshotBackupsResp - a model defined in huaweicloud sdk"""
+        """ListSnapshotBackupsResp
+
+        The model defined in huaweicloud sdk
+
+        :param created: 快照创建时间。
+        :type created: str
+        :param datastore: 
+        :type datastore: :class:`huaweicloudsdkcss.v1.ListSnapshotBackupsDatastoreResp`
+        :param description: 快照描述信息。
+        :type description: str
+        :param id: 快照ID。
+        :type id: str
+        :param cluster_id: 集群ID。
+        :type cluster_id: str
+        :param cluster_name: 集群名字。
+        :type cluster_name: str
+        :param name: 快照名称。
+        :type name: str
+        :param status: 快照状态。
+        :type status: str
+        :param updated: 快照状态是否更新。
+        :type updated: str
+        :param backup_type: “0”表示自动创建，“1”表示手动创建。
+        :type backup_type: str
+        :param backup_method: 创建快照方式。
+        :type backup_method: str
+        :param backup_expected_start_time: 快照开始执行时间。
+        :type backup_expected_start_time: str
+        :param backup_keep_day: 快照保留时间。
+        :type backup_keep_day: int
+        :param backup_period: 快照每天执行的时间点。
+        :type backup_period: str
+        :param indices: 要备份的索引。
+        :type indices: str
+        :param total_shards: 要备份的索引的总shard数。
+        :type total_shards: int
+        :param failed_shards: 备份失败的shard数。
+        :type failed_shards: int
+        :param version: 快照的版本。
+        :type version: str
+        :param restore_status: 快照恢复的状态。
+        :type restore_status: str
+        :param start_time: 快照开始执行的时间戳。
+        :type start_time: int
+        :param end_time: 快照执行结束的时间戳。
+        :type end_time: int
+        :param bucket_name: 保存快照数据的桶。
+        :type bucket_name: str
+        """
         
         
 
@@ -163,7 +210,7 @@ class ListSnapshotBackupsResp:
         快照创建时间。
 
         :param created: The created of this ListSnapshotBackupsResp.
-        :type: str
+        :type created: str
         """
         self._created = created
 
@@ -173,7 +220,7 @@ class ListSnapshotBackupsResp:
 
 
         :return: The datastore of this ListSnapshotBackupsResp.
-        :rtype: ListSnapshotBackupsDatastoreResp
+        :rtype: :class:`huaweicloudsdkcss.v1.ListSnapshotBackupsDatastoreResp`
         """
         return self._datastore
 
@@ -183,7 +230,7 @@ class ListSnapshotBackupsResp:
 
 
         :param datastore: The datastore of this ListSnapshotBackupsResp.
-        :type: ListSnapshotBackupsDatastoreResp
+        :type datastore: :class:`huaweicloudsdkcss.v1.ListSnapshotBackupsDatastoreResp`
         """
         self._datastore = datastore
 
@@ -205,7 +252,7 @@ class ListSnapshotBackupsResp:
         快照描述信息。
 
         :param description: The description of this ListSnapshotBackupsResp.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -227,7 +274,7 @@ class ListSnapshotBackupsResp:
         快照ID。
 
         :param id: The id of this ListSnapshotBackupsResp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -249,7 +296,7 @@ class ListSnapshotBackupsResp:
         集群ID。
 
         :param cluster_id: The cluster_id of this ListSnapshotBackupsResp.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -271,7 +318,7 @@ class ListSnapshotBackupsResp:
         集群名字。
 
         :param cluster_name: The cluster_name of this ListSnapshotBackupsResp.
-        :type: str
+        :type cluster_name: str
         """
         self._cluster_name = cluster_name
 
@@ -293,7 +340,7 @@ class ListSnapshotBackupsResp:
         快照名称。
 
         :param name: The name of this ListSnapshotBackupsResp.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -315,7 +362,7 @@ class ListSnapshotBackupsResp:
         快照状态。
 
         :param status: The status of this ListSnapshotBackupsResp.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -337,7 +384,7 @@ class ListSnapshotBackupsResp:
         快照状态是否更新。
 
         :param updated: The updated of this ListSnapshotBackupsResp.
-        :type: str
+        :type updated: str
         """
         self._updated = updated
 
@@ -359,7 +406,7 @@ class ListSnapshotBackupsResp:
         “0”表示自动创建，“1”表示手动创建。
 
         :param backup_type: The backup_type of this ListSnapshotBackupsResp.
-        :type: str
+        :type backup_type: str
         """
         self._backup_type = backup_type
 
@@ -381,7 +428,7 @@ class ListSnapshotBackupsResp:
         创建快照方式。
 
         :param backup_method: The backup_method of this ListSnapshotBackupsResp.
-        :type: str
+        :type backup_method: str
         """
         self._backup_method = backup_method
 
@@ -403,7 +450,7 @@ class ListSnapshotBackupsResp:
         快照开始执行时间。
 
         :param backup_expected_start_time: The backup_expected_start_time of this ListSnapshotBackupsResp.
-        :type: str
+        :type backup_expected_start_time: str
         """
         self._backup_expected_start_time = backup_expected_start_time
 
@@ -425,7 +472,7 @@ class ListSnapshotBackupsResp:
         快照保留时间。
 
         :param backup_keep_day: The backup_keep_day of this ListSnapshotBackupsResp.
-        :type: int
+        :type backup_keep_day: int
         """
         self._backup_keep_day = backup_keep_day
 
@@ -447,7 +494,7 @@ class ListSnapshotBackupsResp:
         快照每天执行的时间点。
 
         :param backup_period: The backup_period of this ListSnapshotBackupsResp.
-        :type: str
+        :type backup_period: str
         """
         self._backup_period = backup_period
 
@@ -469,7 +516,7 @@ class ListSnapshotBackupsResp:
         要备份的索引。
 
         :param indices: The indices of this ListSnapshotBackupsResp.
-        :type: str
+        :type indices: str
         """
         self._indices = indices
 
@@ -491,7 +538,7 @@ class ListSnapshotBackupsResp:
         要备份的索引的总shard数。
 
         :param total_shards: The total_shards of this ListSnapshotBackupsResp.
-        :type: int
+        :type total_shards: int
         """
         self._total_shards = total_shards
 
@@ -513,7 +560,7 @@ class ListSnapshotBackupsResp:
         备份失败的shard数。
 
         :param failed_shards: The failed_shards of this ListSnapshotBackupsResp.
-        :type: int
+        :type failed_shards: int
         """
         self._failed_shards = failed_shards
 
@@ -535,7 +582,7 @@ class ListSnapshotBackupsResp:
         快照的版本。
 
         :param version: The version of this ListSnapshotBackupsResp.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -557,7 +604,7 @@ class ListSnapshotBackupsResp:
         快照恢复的状态。
 
         :param restore_status: The restore_status of this ListSnapshotBackupsResp.
-        :type: str
+        :type restore_status: str
         """
         self._restore_status = restore_status
 
@@ -579,7 +626,7 @@ class ListSnapshotBackupsResp:
         快照开始执行的时间戳。
 
         :param start_time: The start_time of this ListSnapshotBackupsResp.
-        :type: int
+        :type start_time: int
         """
         self._start_time = start_time
 
@@ -601,7 +648,7 @@ class ListSnapshotBackupsResp:
         快照执行结束的时间戳。
 
         :param end_time: The end_time of this ListSnapshotBackupsResp.
-        :type: int
+        :type end_time: int
         """
         self._end_time = end_time
 
@@ -623,7 +670,7 @@ class ListSnapshotBackupsResp:
         保存快照数据的桶。
 
         :param bucket_name: The bucket_name of this ListSnapshotBackupsResp.
-        :type: str
+        :type bucket_name: str
         """
         self._bucket_name = bucket_name
 

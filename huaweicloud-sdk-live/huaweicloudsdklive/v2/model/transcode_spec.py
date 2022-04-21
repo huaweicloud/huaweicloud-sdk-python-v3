@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TranscodeSpec:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class TranscodeSpec:
     }
 
     def __init__(self, type=None, value=None):
-        """TranscodeSpec - a model defined in huaweicloud sdk"""
+        """TranscodeSpec
+
+        The model defined in huaweicloud sdk
+
+        :param type: 转码规格，格式是“编码格式_分辨率档位”（未开启高清低码）和“编码格式_PVC_分辨率档位”（开启高清低码）。  其中编码格式包括H264、H265，分辨率档位包括：  4K（3840 x 2160）及以下，2K（2560 x 1440）及以下，FHD（1920 x 1080）及以下，HD（1280 x 720）及以下，SD（640 x 480）及以下。 
+        :type type: str
+        :param value: 采样时间点转码时长，单位为分钟，保留两位小数。
+        :type value: float
+        """
         
         
 
@@ -63,7 +70,7 @@ class TranscodeSpec:
         转码规格，格式是“编码格式_分辨率档位”（未开启高清低码）和“编码格式_PVC_分辨率档位”（开启高清低码）。  其中编码格式包括H264、H265，分辨率档位包括：  4K（3840 x 2160）及以下，2K（2560 x 1440）及以下，FHD（1920 x 1080）及以下，HD（1280 x 720）及以下，SD（640 x 480）及以下。 
 
         :param type: The type of this TranscodeSpec.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -85,7 +92,7 @@ class TranscodeSpec:
         采样时间点转码时长，单位为分钟，保留两位小数。
 
         :param value: The value of this TranscodeSpec.
-        :type: float
+        :type value: float
         """
         self._value = value
 

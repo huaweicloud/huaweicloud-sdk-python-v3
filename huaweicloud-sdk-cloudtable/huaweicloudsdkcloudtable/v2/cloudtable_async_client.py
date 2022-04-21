@@ -51,22 +51,23 @@ class CloudTableAsyncClient(Client):
     def create_cluster_async(self, request):
         """创建CloudTable集群
 
-        创建一个CloudTable集群。 使用接口前，您需要先获取如下资源信息。 - 通过VPC创建或查询VPC、子网 - 通过安全组创建或查询可用的security_group_id  本接口是一个同步接口，当创建CloudTable集群成功后会返回集群id。
+        创建一个CloudTable集群。
+        使用接口前，您需要先获取如下资源信息。
+        - 通过VPC创建或查询VPC、子网
+        - 通过安全组创建或查询可用的security_group_id
+        
+        本接口是一个同步接口，当创建CloudTable集群成功后会返回集群id。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateClusterRequest request
-        :return: CreateClusterResponse
+        :param request: Request instance for CreateCluster
+        :type request: :class:`huaweicloudsdkcloudtable.v2.CreateClusterRequest`
+        :rtype: :class:`huaweicloudsdkcloudtable.v2.CreateClusterResponse`
         """
         return self.create_cluster_with_http_info(request)
 
     def create_cluster_with_http_info(self, request):
-        """创建CloudTable集群
-
-        创建一个CloudTable集群。 使用接口前，您需要先获取如下资源信息。 - 通过VPC创建或查询VPC、子网 - 通过安全组创建或查询可用的security_group_id  本接口是一个同步接口，当创建CloudTable集群成功后会返回集群id。
-
-        :param CreateClusterRequest request
-        :return: CreateClusterResponse
-        """
-
         all_params = ['x_language', 'create_cluster_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -112,26 +113,24 @@ class CloudTableAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_cluster_async(self, request):
         """删除CloudTable指定集群
 
-        集群ID为集群唯一标识，根据集群ID删除指定集群。 如下状态的集群不允许删除： - 创建中 - 扩容中
+        集群ID为集群唯一标识，根据集群ID删除指定集群。
+        如下状态的集群不允许删除：
+        - 创建中
+        - 扩容中
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteClusterRequest request
-        :return: DeleteClusterResponse
+        :param request: Request instance for DeleteCluster
+        :type request: :class:`huaweicloudsdkcloudtable.v2.DeleteClusterRequest`
+        :rtype: :class:`huaweicloudsdkcloudtable.v2.DeleteClusterResponse`
         """
         return self.delete_cluster_with_http_info(request)
 
     def delete_cluster_with_http_info(self, request):
-        """删除CloudTable指定集群
-
-        集群ID为集群唯一标识，根据集群ID删除指定集群。 如下状态的集群不允许删除： - 创建中 - 扩容中
-
-        :param DeleteClusterRequest request
-        :return: DeleteClusterResponse
-        """
-
         all_params = ['x_language', 'cluster_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -177,26 +176,21 @@ class CloudTableAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_clusters_async(self, request):
         """查询CloudTable集群列表
 
         查看用户创建的集群列表信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListClustersRequest request
-        :return: ListClustersResponse
+        :param request: Request instance for ListClusters
+        :type request: :class:`huaweicloudsdkcloudtable.v2.ListClustersRequest`
+        :rtype: :class:`huaweicloudsdkcloudtable.v2.ListClustersResponse`
         """
         return self.list_clusters_with_http_info(request)
 
     def list_clusters_with_http_info(self, request):
-        """查询CloudTable集群列表
-
-        查看用户创建的集群列表信息。
-
-        :param ListClustersRequest request
-        :return: ListClustersResponse
-        """
-
         all_params = ['offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -242,26 +236,21 @@ class CloudTableAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_cluster_detail_async(self, request):
         """查询CloudTable集群详情
 
         通过集群ID唯一标识一个集群，根据集群ID查询特定CloudTable集群的详情信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowClusterDetailRequest request
-        :return: ShowClusterDetailResponse
+        :param request: Request instance for ShowClusterDetail
+        :type request: :class:`huaweicloudsdkcloudtable.v2.ShowClusterDetailRequest`
+        :rtype: :class:`huaweicloudsdkcloudtable.v2.ShowClusterDetailResponse`
         """
         return self.show_cluster_detail_with_http_info(request)
 
     def show_cluster_detail_with_http_info(self, request):
-        """查询CloudTable集群详情
-
-        通过集群ID唯一标识一个集群，根据集群ID查询特定CloudTable集群的详情信息。
-
-        :param ShowClusterDetailRequest request
-        :return: ShowClusterDetailResponse
-        """
-
         all_params = ['x_language', 'cluster_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -306,7 +295,6 @@ class CloudTableAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

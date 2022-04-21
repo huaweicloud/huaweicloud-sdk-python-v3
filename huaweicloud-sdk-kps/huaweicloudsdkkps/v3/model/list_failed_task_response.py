@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListFailedTaskResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListFailedTaskResponse(SdkResponse):
     }
 
     def __init__(self, total=None, tasks=None):
-        """ListFailedTaskResponse - a model defined in huaweicloud sdk"""
+        """ListFailedTaskResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 失败任务总数。
+        :type total: int
+        :param tasks: 失败的任务列表
+        :type tasks: list[:class:`huaweicloudsdkkps.v3.FailedTasks`]
+        """
         
         super(ListFailedTaskResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListFailedTaskResponse(SdkResponse):
         失败任务总数。
 
         :param total: The total of this ListFailedTaskResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -74,7 +81,7 @@ class ListFailedTaskResponse(SdkResponse):
         失败的任务列表
 
         :return: The tasks of this ListFailedTaskResponse.
-        :rtype: list[FailedTasks]
+        :rtype: list[:class:`huaweicloudsdkkps.v3.FailedTasks`]
         """
         return self._tasks
 
@@ -85,7 +92,7 @@ class ListFailedTaskResponse(SdkResponse):
         失败的任务列表
 
         :param tasks: The tasks of this ListFailedTaskResponse.
-        :type: list[FailedTasks]
+        :type tasks: list[:class:`huaweicloudsdkkps.v3.FailedTasks`]
         """
         self._tasks = tasks
 

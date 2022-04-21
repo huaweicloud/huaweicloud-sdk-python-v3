@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ConfigurationParameterList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ConfigurationParameterList:
     }
 
     def __init__(self, name=None, value=None, need_restart=None, read_only=None, value_range=None, data_type=None, description=None):
-        """ConfigurationParameterList - a model defined in huaweicloud sdk"""
+        """ConfigurationParameterList
+
+        The model defined in huaweicloud sdk
+
+        :param name: 参数名称。
+        :type name: str
+        :param value: 参数值。
+        :type value: str
+        :param need_restart: 是否需要重启实例。
+        :type need_restart: str
+        :param read_only: 参数是否只读。
+        :type read_only: str
+        :param value_range: 参数取值范围。
+        :type value_range: str
+        :param data_type: 参数类型。
+        :type data_type: str
+        :param description: 参数描述。
+        :type description: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class ConfigurationParameterList:
         参数名称。
 
         :param name: The name of this ConfigurationParameterList.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -110,7 +127,7 @@ class ConfigurationParameterList:
         参数值。
 
         :param value: The value of this ConfigurationParameterList.
-        :type: str
+        :type value: str
         """
         self._value = value
 
@@ -132,7 +149,7 @@ class ConfigurationParameterList:
         是否需要重启实例。
 
         :param need_restart: The need_restart of this ConfigurationParameterList.
-        :type: str
+        :type need_restart: str
         """
         self._need_restart = need_restart
 
@@ -154,7 +171,7 @@ class ConfigurationParameterList:
         参数是否只读。
 
         :param read_only: The read_only of this ConfigurationParameterList.
-        :type: str
+        :type read_only: str
         """
         self._read_only = read_only
 
@@ -176,7 +193,7 @@ class ConfigurationParameterList:
         参数取值范围。
 
         :param value_range: The value_range of this ConfigurationParameterList.
-        :type: str
+        :type value_range: str
         """
         self._value_range = value_range
 
@@ -198,7 +215,7 @@ class ConfigurationParameterList:
         参数类型。
 
         :param data_type: The data_type of this ConfigurationParameterList.
-        :type: str
+        :type data_type: str
         """
         self._data_type = data_type
 
@@ -220,7 +237,7 @@ class ConfigurationParameterList:
         参数描述。
 
         :param description: The description of this ConfigurationParameterList.
-        :type: str
+        :type description: str
         """
         self._description = description
 

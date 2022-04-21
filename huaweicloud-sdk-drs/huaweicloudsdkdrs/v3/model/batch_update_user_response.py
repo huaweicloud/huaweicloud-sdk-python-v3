@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchUpdateUserResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchUpdateUserResponse(SdkResponse):
     }
 
     def __init__(self, all_counts=None, results=None):
-        """BatchUpdateUserResponse - a model defined in huaweicloud sdk"""
+        """BatchUpdateUserResponse
+
+        The model defined in huaweicloud sdk
+
+        :param all_counts: 总数
+        :type all_counts: int
+        :param results: 迁移用户信息
+        :type results: list[:class:`huaweicloudsdkdrs.v3.QueryUserResp`]
+        """
         
         super(BatchUpdateUserResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class BatchUpdateUserResponse(SdkResponse):
         总数
 
         :param all_counts: The all_counts of this BatchUpdateUserResponse.
-        :type: int
+        :type all_counts: int
         """
         self._all_counts = all_counts
 
@@ -74,7 +81,7 @@ class BatchUpdateUserResponse(SdkResponse):
         迁移用户信息
 
         :return: The results of this BatchUpdateUserResponse.
-        :rtype: list[QueryUserResp]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.QueryUserResp`]
         """
         return self._results
 
@@ -85,7 +92,7 @@ class BatchUpdateUserResponse(SdkResponse):
         迁移用户信息
 
         :param results: The results of this BatchUpdateUserResponse.
-        :type: list[QueryUserResp]
+        :type results: list[:class:`huaweicloudsdkdrs.v3.QueryUserResp`]
         """
         self._results = results
 

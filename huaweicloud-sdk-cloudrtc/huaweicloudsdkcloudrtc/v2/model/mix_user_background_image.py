@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MixUserBackgroundImage:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class MixUserBackgroundImage:
     }
 
     def __init__(self, user_id=None, image_uri=None):
-        """MixUserBackgroundImage - a model defined in huaweicloud sdk"""
+        """MixUserBackgroundImage
+
+        The model defined in huaweicloud sdk
+
+        :param user_id: 需要设置背景图的用户ID
+        :type user_id: str
+        :param image_uri: 需要设置背景图的地址，图片先上传obs，格式s3://bucket/object
+        :type image_uri: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class MixUserBackgroundImage:
         需要设置背景图的用户ID
 
         :param user_id: The user_id of this MixUserBackgroundImage.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -83,7 +90,7 @@ class MixUserBackgroundImage:
         需要设置背景图的地址，图片先上传obs，格式s3://bucket/object
 
         :param image_uri: The image_uri of this MixUserBackgroundImage.
-        :type: str
+        :type image_uri: str
         """
         self._image_uri = image_uri
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RecordCallbackConfigRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class RecordCallbackConfigRequest:
     }
 
     def __init__(self, publish_domain=None, app=None, notify_callback_url=None, notify_event_subscription=None, sign_type=None):
-        """RecordCallbackConfigRequest - a model defined in huaweicloud sdk"""
+        """RecordCallbackConfigRequest
+
+        The model defined in huaweicloud sdk
+
+        :param publish_domain: 直播推流域名
+        :type publish_domain: str
+        :param app: app名称。如果需要匹配任意应用则需填写*。录制规则匹配的时候，优先精确app匹配，如果匹配不到，则匹配*
+        :type app: str
+        :param notify_callback_url: 录制回调通知url地址
+        :type notify_callback_url: str
+        :param notify_event_subscription: 订阅录制通知消息。消息类型。RECORD_NEW_FILE_START开始创建新的录制文件。RECORD_FILE_COMPLETE录制文件生成完成。RECORD_OVER录制结束。RECORD_FAILED表示录制失败。如果不填写,默认订阅RECORD_FILE_COMPLETE
+        :type notify_event_subscription: list[str]
+        :param sign_type: 加密类型
+        :type sign_type: str
+        """
         
         
 
@@ -76,7 +89,7 @@ class RecordCallbackConfigRequest:
         直播推流域名
 
         :param publish_domain: The publish_domain of this RecordCallbackConfigRequest.
-        :type: str
+        :type publish_domain: str
         """
         self._publish_domain = publish_domain
 
@@ -98,7 +111,7 @@ class RecordCallbackConfigRequest:
         app名称。如果需要匹配任意应用则需填写*。录制规则匹配的时候，优先精确app匹配，如果匹配不到，则匹配*
 
         :param app: The app of this RecordCallbackConfigRequest.
-        :type: str
+        :type app: str
         """
         self._app = app
 
@@ -120,7 +133,7 @@ class RecordCallbackConfigRequest:
         录制回调通知url地址
 
         :param notify_callback_url: The notify_callback_url of this RecordCallbackConfigRequest.
-        :type: str
+        :type notify_callback_url: str
         """
         self._notify_callback_url = notify_callback_url
 
@@ -142,7 +155,7 @@ class RecordCallbackConfigRequest:
         订阅录制通知消息。消息类型。RECORD_NEW_FILE_START开始创建新的录制文件。RECORD_FILE_COMPLETE录制文件生成完成。RECORD_OVER录制结束。RECORD_FAILED表示录制失败。如果不填写,默认订阅RECORD_FILE_COMPLETE
 
         :param notify_event_subscription: The notify_event_subscription of this RecordCallbackConfigRequest.
-        :type: list[str]
+        :type notify_event_subscription: list[str]
         """
         self._notify_event_subscription = notify_event_subscription
 
@@ -164,7 +177,7 @@ class RecordCallbackConfigRequest:
         加密类型
 
         :param sign_type: The sign_type of this RecordCallbackConfigRequest.
-        :type: str
+        :type sign_type: str
         """
         self._sign_type = sign_type
 

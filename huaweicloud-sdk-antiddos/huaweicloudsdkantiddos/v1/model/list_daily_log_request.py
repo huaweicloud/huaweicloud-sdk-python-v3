@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDailyLogRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListDailyLogRequest:
     }
 
     def __init__(self, floating_ip_id=None, sort_dir=None, limit=None, offset=None, ip=None):
-        """ListDailyLogRequest - a model defined in huaweicloud sdk"""
+        """ListDailyLogRequest
+
+        The model defined in huaweicloud sdk
+
+        :param floating_ip_id: 用户EIP对应的ID
+        :type floating_ip_id: str
+        :param sort_dir: 可选范围： - desc：表示时间降序 - asc：表示时间升序 默认值为“desc”。
+        :type sort_dir: str
+        :param limit: 返回结果个数限制，此次查询返回数量最大值，取值范围：1～100，与offset配合使用。 若“limit”与“offset”均不携带则返回所有主机列表。
+        :type limit: str
+        :param offset: 偏移量，“limit”携带时此字段有效。
+        :type offset: str
+        :param ip: 用户EIP
+        :type ip: str
+        """
         
         
 
@@ -77,7 +90,7 @@ class ListDailyLogRequest:
         用户EIP对应的ID
 
         :param floating_ip_id: The floating_ip_id of this ListDailyLogRequest.
-        :type: str
+        :type floating_ip_id: str
         """
         self._floating_ip_id = floating_ip_id
 
@@ -99,7 +112,7 @@ class ListDailyLogRequest:
         可选范围： - desc：表示时间降序 - asc：表示时间升序 默认值为“desc”。
 
         :param sort_dir: The sort_dir of this ListDailyLogRequest.
-        :type: str
+        :type sort_dir: str
         """
         self._sort_dir = sort_dir
 
@@ -121,7 +134,7 @@ class ListDailyLogRequest:
         返回结果个数限制，此次查询返回数量最大值，取值范围：1～100，与offset配合使用。 若“limit”与“offset”均不携带则返回所有主机列表。
 
         :param limit: The limit of this ListDailyLogRequest.
-        :type: str
+        :type limit: str
         """
         self._limit = limit
 
@@ -143,7 +156,7 @@ class ListDailyLogRequest:
         偏移量，“limit”携带时此字段有效。
 
         :param offset: The offset of this ListDailyLogRequest.
-        :type: str
+        :type offset: str
         """
         self._offset = offset
 
@@ -165,7 +178,7 @@ class ListDailyLogRequest:
         用户EIP
 
         :param ip: The ip of this ListDailyLogRequest.
-        :type: str
+        :type ip: str
         """
         self._ip = ip
 

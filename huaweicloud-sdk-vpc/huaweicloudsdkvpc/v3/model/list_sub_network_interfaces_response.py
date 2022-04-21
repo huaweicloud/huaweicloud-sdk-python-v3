@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSubNetworkInterfacesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListSubNetworkInterfacesResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, sub_network_interfaces=None, page_info=None):
-        """ListSubNetworkInterfacesResponse - a model defined in huaweicloud sdk"""
+        """ListSubNetworkInterfacesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param request_id: 1、功能说明：请求ID 2、取值范围：标准UUID 3、约束：N/A 4、默认值：N/A 5、权限：N/A
+        :type request_id: str
+        :param sub_network_interfaces: 1、功能说明：辅助弹性网卡查询对象 2、取值范围：N/A 3、约束：N/A 4、默认值：N/A 5、权限：N/A
+        :type sub_network_interfaces: list[:class:`huaweicloudsdkvpc.v3.SubNetworkInterface`]
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkvpc.v3.PageInfo`
+        """
         
         super(ListSubNetworkInterfacesResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListSubNetworkInterfacesResponse(SdkResponse):
         1、功能说明：请求ID 2、取值范围：标准UUID 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
         :param request_id: The request_id of this ListSubNetworkInterfacesResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 
@@ -79,7 +88,7 @@ class ListSubNetworkInterfacesResponse(SdkResponse):
         1、功能说明：辅助弹性网卡查询对象 2、取值范围：N/A 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
         :return: The sub_network_interfaces of this ListSubNetworkInterfacesResponse.
-        :rtype: list[SubNetworkInterface]
+        :rtype: list[:class:`huaweicloudsdkvpc.v3.SubNetworkInterface`]
         """
         return self._sub_network_interfaces
 
@@ -90,7 +99,7 @@ class ListSubNetworkInterfacesResponse(SdkResponse):
         1、功能说明：辅助弹性网卡查询对象 2、取值范围：N/A 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
         :param sub_network_interfaces: The sub_network_interfaces of this ListSubNetworkInterfacesResponse.
-        :type: list[SubNetworkInterface]
+        :type sub_network_interfaces: list[:class:`huaweicloudsdkvpc.v3.SubNetworkInterface`]
         """
         self._sub_network_interfaces = sub_network_interfaces
 
@@ -100,7 +109,7 @@ class ListSubNetworkInterfacesResponse(SdkResponse):
 
 
         :return: The page_info of this ListSubNetworkInterfacesResponse.
-        :rtype: PageInfo
+        :rtype: :class:`huaweicloudsdkvpc.v3.PageInfo`
         """
         return self._page_info
 
@@ -110,7 +119,7 @@ class ListSubNetworkInterfacesResponse(SdkResponse):
 
 
         :param page_info: The page_info of this ListSubNetworkInterfacesResponse.
-        :type: PageInfo
+        :type page_info: :class:`huaweicloudsdkvpc.v3.PageInfo`
         """
         self._page_info = page_info
 

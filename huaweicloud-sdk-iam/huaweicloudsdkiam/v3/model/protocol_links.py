@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ProtocolLinks:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ProtocolLinks:
     }
 
     def __init__(self, identity_provider=None, _self=None):
-        """ProtocolLinks - a model defined in huaweicloud sdk"""
+        """ProtocolLinks
+
+        The model defined in huaweicloud sdk
+
+        :param identity_provider: 身份提供商的资源链接地址。
+        :type identity_provider: str
+        :param _self: 资源链接地址。
+        :type _self: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ProtocolLinks:
         身份提供商的资源链接地址。
 
         :param identity_provider: The identity_provider of this ProtocolLinks.
-        :type: str
+        :type identity_provider: str
         """
         self._identity_provider = identity_provider
 
@@ -83,7 +90,7 @@ class ProtocolLinks:
         资源链接地址。
 
         :param _self: The _self of this ProtocolLinks.
-        :type: str
+        :type _self: str
         """
         self.__self = _self
 

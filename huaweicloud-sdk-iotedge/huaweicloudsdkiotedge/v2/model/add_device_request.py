@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddDeviceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AddDeviceRequest:
     }
 
     def __init__(self, edge_node_id=None, body=None):
-        """AddDeviceRequest - a model defined in huaweicloud sdk"""
+        """AddDeviceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param edge_node_id: 边缘节点ID
+        :type edge_node_id: str
+        :param body: Body of the AddDeviceRequest
+        :type body: :class:`huaweicloudsdkiotedge.v2.AddDeviceRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class AddDeviceRequest:
         边缘节点ID
 
         :param edge_node_id: The edge_node_id of this AddDeviceRequest.
-        :type: str
+        :type edge_node_id: str
         """
         self._edge_node_id = edge_node_id
 
@@ -72,7 +79,7 @@ class AddDeviceRequest:
 
 
         :return: The body of this AddDeviceRequest.
-        :rtype: AddDeviceRequestBody
+        :rtype: :class:`huaweicloudsdkiotedge.v2.AddDeviceRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class AddDeviceRequest:
 
 
         :param body: The body of this AddDeviceRequest.
-        :type: AddDeviceRequestBody
+        :type body: :class:`huaweicloudsdkiotedge.v2.AddDeviceRequestBody`
         """
         self._body = body
 

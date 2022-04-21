@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowResourceByIdResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -58,7 +57,41 @@ class ShowResourceByIdResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, provider=None, type=None, region_id=None, project_id=None, project_name=None, ep_id=None, ep_name=None, checksum=None, created=None, updated=None, provisioning_state=None, tags=None, properties=None):
-        """ShowResourceByIdResponse - a model defined in huaweicloud sdk"""
+        """ShowResourceByIdResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 资源id
+        :type id: str
+        :param name: 资源名称
+        :type name: str
+        :param provider: 云服务名称
+        :type provider: str
+        :param type: 资源类型
+        :type type: str
+        :param region_id: region id
+        :type region_id: str
+        :param project_id: Openstack中的project id
+        :type project_id: str
+        :param project_name: Openstack中的project名称
+        :type project_name: str
+        :param ep_id: 企业项目id
+        :type ep_id: str
+        :param ep_name: 企业项目名称
+        :type ep_name: str
+        :param checksum: 资源详情校验码
+        :type checksum: str
+        :param created: 资源创建时间
+        :type created: str
+        :param updated: 资源更新时间
+        :type updated: str
+        :param provisioning_state: 资源操作状态
+        :type provisioning_state: str
+        :param tags: 资源Tag
+        :type tags: dict(str, str)
+        :param properties: 资源详细属性
+        :type properties: dict(str, object)
+        """
         
         super(ShowResourceByIdResponse, self).__init__()
 
@@ -128,7 +161,7 @@ class ShowResourceByIdResponse(SdkResponse):
         资源id
 
         :param id: The id of this ShowResourceByIdResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -150,7 +183,7 @@ class ShowResourceByIdResponse(SdkResponse):
         资源名称
 
         :param name: The name of this ShowResourceByIdResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -172,7 +205,7 @@ class ShowResourceByIdResponse(SdkResponse):
         云服务名称
 
         :param provider: The provider of this ShowResourceByIdResponse.
-        :type: str
+        :type provider: str
         """
         self._provider = provider
 
@@ -194,7 +227,7 @@ class ShowResourceByIdResponse(SdkResponse):
         资源类型
 
         :param type: The type of this ShowResourceByIdResponse.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -216,7 +249,7 @@ class ShowResourceByIdResponse(SdkResponse):
         region id
 
         :param region_id: The region_id of this ShowResourceByIdResponse.
-        :type: str
+        :type region_id: str
         """
         self._region_id = region_id
 
@@ -238,7 +271,7 @@ class ShowResourceByIdResponse(SdkResponse):
         Openstack中的project id
 
         :param project_id: The project_id of this ShowResourceByIdResponse.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -260,7 +293,7 @@ class ShowResourceByIdResponse(SdkResponse):
         Openstack中的project名称
 
         :param project_name: The project_name of this ShowResourceByIdResponse.
-        :type: str
+        :type project_name: str
         """
         self._project_name = project_name
 
@@ -282,7 +315,7 @@ class ShowResourceByIdResponse(SdkResponse):
         企业项目id
 
         :param ep_id: The ep_id of this ShowResourceByIdResponse.
-        :type: str
+        :type ep_id: str
         """
         self._ep_id = ep_id
 
@@ -304,7 +337,7 @@ class ShowResourceByIdResponse(SdkResponse):
         企业项目名称
 
         :param ep_name: The ep_name of this ShowResourceByIdResponse.
-        :type: str
+        :type ep_name: str
         """
         self._ep_name = ep_name
 
@@ -326,7 +359,7 @@ class ShowResourceByIdResponse(SdkResponse):
         资源详情校验码
 
         :param checksum: The checksum of this ShowResourceByIdResponse.
-        :type: str
+        :type checksum: str
         """
         self._checksum = checksum
 
@@ -348,7 +381,7 @@ class ShowResourceByIdResponse(SdkResponse):
         资源创建时间
 
         :param created: The created of this ShowResourceByIdResponse.
-        :type: str
+        :type created: str
         """
         self._created = created
 
@@ -370,7 +403,7 @@ class ShowResourceByIdResponse(SdkResponse):
         资源更新时间
 
         :param updated: The updated of this ShowResourceByIdResponse.
-        :type: str
+        :type updated: str
         """
         self._updated = updated
 
@@ -392,7 +425,7 @@ class ShowResourceByIdResponse(SdkResponse):
         资源操作状态
 
         :param provisioning_state: The provisioning_state of this ShowResourceByIdResponse.
-        :type: str
+        :type provisioning_state: str
         """
         self._provisioning_state = provisioning_state
 
@@ -414,7 +447,7 @@ class ShowResourceByIdResponse(SdkResponse):
         资源Tag
 
         :param tags: The tags of this ShowResourceByIdResponse.
-        :type: dict(str, str)
+        :type tags: dict(str, str)
         """
         self._tags = tags
 
@@ -436,7 +469,7 @@ class ShowResourceByIdResponse(SdkResponse):
         资源详细属性
 
         :param properties: The properties of this ShowResourceByIdResponse.
-        :type: dict(str, object)
+        :type properties: dict(str, object)
         """
         self._properties = properties
 

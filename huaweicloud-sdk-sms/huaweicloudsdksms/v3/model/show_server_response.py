@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowServerResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -84,7 +83,67 @@ class ShowServerResponse(SdkResponse):
     }
 
     def __init__(self, id=None, ip=None, name=None, hostname=None, enterprise_project_id=None, add_date=None, os_type=None, os_version=None, oem_system=None, state=None, connected=None, firmware=None, init_target_server=None, cpu_quantity=None, memory=None, current_task=None, disks=None, volume_groups=None, btrfs_list=None, networks=None, checks=None, migration_cycle=None, state_action_time=None, replicatesize=None, totalsize=None, last_visit_time=None, stage_action_time=None, agent_version=None):
-        """ShowServerResponse - a model defined in huaweicloud sdk"""
+        """ShowServerResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 源端服务器id
+        :type id: str
+        :param ip: 源端服务器的ip
+        :type ip: str
+        :param name: 用来区分不同源端服务器的名称
+        :type name: str
+        :param hostname: 源端主机名，注册源端必选，更新非必选
+        :type hostname: str
+        :param enterprise_project_id: 企业项目id
+        :type enterprise_project_id: str
+        :param add_date: 源端服务器注册的时间
+        :type add_date: int
+        :param os_type: 源端服务器的OS类型，分为Windows和Linux，注册必选，更新非必选
+        :type os_type: str
+        :param os_version: 操作系统版本，注册必选，更新非必选
+        :type os_version: str
+        :param oem_system: 是否是OEM操作系统(Windows)
+        :type oem_system: bool
+        :param state: 当前源端服务器状态
+        :type state: str
+        :param connected: 与Agent连接状态
+        :type connected: bool
+        :param firmware: 源端服务器启动类型，如BIOS或者UEFI
+        :type firmware: str
+        :param init_target_server: 
+        :type init_target_server: :class:`huaweicloudsdksms.v3.InitTargetServer`
+        :param cpu_quantity: 源端CPU核心数
+        :type cpu_quantity: int
+        :param memory: 源端服务器物理内存大小，单位MB
+        :type memory: int
+        :param current_task: 
+        :type current_task: :class:`huaweicloudsdksms.v3.TaskByServerSource`
+        :param disks: 源端服务器磁盘信息
+        :type disks: list[:class:`huaweicloudsdksms.v3.ServerDisk`]
+        :param volume_groups: 源端服务器的卷组信息，Linux必选，如果没有卷组，输入[]
+        :type volume_groups: list[:class:`huaweicloudsdksms.v3.VolumeGroups`]
+        :param btrfs_list: Linux 必选，源端的Btrfs信息。如果源端不存在Btrfs，则为[]
+        :type btrfs_list: list[:class:`huaweicloudsdksms.v3.BtrfsFileSystem`]
+        :param networks: 源端服务器的网卡信息
+        :type networks: list[:class:`huaweicloudsdksms.v3.NetWork`]
+        :param checks: 源端环境校验信息
+        :type checks: list[:class:`huaweicloudsdksms.v3.EnvironmentCheck`]
+        :param migration_cycle: 迁移周期
+        :type migration_cycle: str
+        :param state_action_time: 源端状态（state）上次发生变化的时间戳
+        :type state_action_time: int
+        :param replicatesize: 已经完成迁移的大小（B）
+        :type replicatesize: int
+        :param totalsize: 需要迁移的数据量总大小（B）
+        :type totalsize: int
+        :param last_visit_time: agent上一次连接状态发生变化的时间戳
+        :type last_visit_time: int
+        :param stage_action_time: 迁移周期（migration_cycle）上一次变化的时间戳
+        :type stage_action_time: int
+        :param agent_version: Agent版本信息
+        :type agent_version: str
+        """
         
         super(ShowServerResponse, self).__init__()
 
@@ -193,7 +252,7 @@ class ShowServerResponse(SdkResponse):
         源端服务器id
 
         :param id: The id of this ShowServerResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -215,7 +274,7 @@ class ShowServerResponse(SdkResponse):
         源端服务器的ip
 
         :param ip: The ip of this ShowServerResponse.
-        :type: str
+        :type ip: str
         """
         self._ip = ip
 
@@ -237,7 +296,7 @@ class ShowServerResponse(SdkResponse):
         用来区分不同源端服务器的名称
 
         :param name: The name of this ShowServerResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -259,7 +318,7 @@ class ShowServerResponse(SdkResponse):
         源端主机名，注册源端必选，更新非必选
 
         :param hostname: The hostname of this ShowServerResponse.
-        :type: str
+        :type hostname: str
         """
         self._hostname = hostname
 
@@ -281,7 +340,7 @@ class ShowServerResponse(SdkResponse):
         企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this ShowServerResponse.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -303,7 +362,7 @@ class ShowServerResponse(SdkResponse):
         源端服务器注册的时间
 
         :param add_date: The add_date of this ShowServerResponse.
-        :type: int
+        :type add_date: int
         """
         self._add_date = add_date
 
@@ -325,7 +384,7 @@ class ShowServerResponse(SdkResponse):
         源端服务器的OS类型，分为Windows和Linux，注册必选，更新非必选
 
         :param os_type: The os_type of this ShowServerResponse.
-        :type: str
+        :type os_type: str
         """
         self._os_type = os_type
 
@@ -347,7 +406,7 @@ class ShowServerResponse(SdkResponse):
         操作系统版本，注册必选，更新非必选
 
         :param os_version: The os_version of this ShowServerResponse.
-        :type: str
+        :type os_version: str
         """
         self._os_version = os_version
 
@@ -369,7 +428,7 @@ class ShowServerResponse(SdkResponse):
         是否是OEM操作系统(Windows)
 
         :param oem_system: The oem_system of this ShowServerResponse.
-        :type: bool
+        :type oem_system: bool
         """
         self._oem_system = oem_system
 
@@ -391,7 +450,7 @@ class ShowServerResponse(SdkResponse):
         当前源端服务器状态
 
         :param state: The state of this ShowServerResponse.
-        :type: str
+        :type state: str
         """
         self._state = state
 
@@ -413,7 +472,7 @@ class ShowServerResponse(SdkResponse):
         与Agent连接状态
 
         :param connected: The connected of this ShowServerResponse.
-        :type: bool
+        :type connected: bool
         """
         self._connected = connected
 
@@ -435,7 +494,7 @@ class ShowServerResponse(SdkResponse):
         源端服务器启动类型，如BIOS或者UEFI
 
         :param firmware: The firmware of this ShowServerResponse.
-        :type: str
+        :type firmware: str
         """
         self._firmware = firmware
 
@@ -445,7 +504,7 @@ class ShowServerResponse(SdkResponse):
 
 
         :return: The init_target_server of this ShowServerResponse.
-        :rtype: InitTargetServer
+        :rtype: :class:`huaweicloudsdksms.v3.InitTargetServer`
         """
         return self._init_target_server
 
@@ -455,7 +514,7 @@ class ShowServerResponse(SdkResponse):
 
 
         :param init_target_server: The init_target_server of this ShowServerResponse.
-        :type: InitTargetServer
+        :type init_target_server: :class:`huaweicloudsdksms.v3.InitTargetServer`
         """
         self._init_target_server = init_target_server
 
@@ -477,7 +536,7 @@ class ShowServerResponse(SdkResponse):
         源端CPU核心数
 
         :param cpu_quantity: The cpu_quantity of this ShowServerResponse.
-        :type: int
+        :type cpu_quantity: int
         """
         self._cpu_quantity = cpu_quantity
 
@@ -499,7 +558,7 @@ class ShowServerResponse(SdkResponse):
         源端服务器物理内存大小，单位MB
 
         :param memory: The memory of this ShowServerResponse.
-        :type: int
+        :type memory: int
         """
         self._memory = memory
 
@@ -509,7 +568,7 @@ class ShowServerResponse(SdkResponse):
 
 
         :return: The current_task of this ShowServerResponse.
-        :rtype: TaskByServerSource
+        :rtype: :class:`huaweicloudsdksms.v3.TaskByServerSource`
         """
         return self._current_task
 
@@ -519,7 +578,7 @@ class ShowServerResponse(SdkResponse):
 
 
         :param current_task: The current_task of this ShowServerResponse.
-        :type: TaskByServerSource
+        :type current_task: :class:`huaweicloudsdksms.v3.TaskByServerSource`
         """
         self._current_task = current_task
 
@@ -530,7 +589,7 @@ class ShowServerResponse(SdkResponse):
         源端服务器磁盘信息
 
         :return: The disks of this ShowServerResponse.
-        :rtype: list[ServerDisk]
+        :rtype: list[:class:`huaweicloudsdksms.v3.ServerDisk`]
         """
         return self._disks
 
@@ -541,7 +600,7 @@ class ShowServerResponse(SdkResponse):
         源端服务器磁盘信息
 
         :param disks: The disks of this ShowServerResponse.
-        :type: list[ServerDisk]
+        :type disks: list[:class:`huaweicloudsdksms.v3.ServerDisk`]
         """
         self._disks = disks
 
@@ -552,7 +611,7 @@ class ShowServerResponse(SdkResponse):
         源端服务器的卷组信息，Linux必选，如果没有卷组，输入[]
 
         :return: The volume_groups of this ShowServerResponse.
-        :rtype: list[VolumeGroups]
+        :rtype: list[:class:`huaweicloudsdksms.v3.VolumeGroups`]
         """
         return self._volume_groups
 
@@ -563,7 +622,7 @@ class ShowServerResponse(SdkResponse):
         源端服务器的卷组信息，Linux必选，如果没有卷组，输入[]
 
         :param volume_groups: The volume_groups of this ShowServerResponse.
-        :type: list[VolumeGroups]
+        :type volume_groups: list[:class:`huaweicloudsdksms.v3.VolumeGroups`]
         """
         self._volume_groups = volume_groups
 
@@ -574,7 +633,7 @@ class ShowServerResponse(SdkResponse):
         Linux 必选，源端的Btrfs信息。如果源端不存在Btrfs，则为[]
 
         :return: The btrfs_list of this ShowServerResponse.
-        :rtype: list[BtrfsFileSystem]
+        :rtype: list[:class:`huaweicloudsdksms.v3.BtrfsFileSystem`]
         """
         return self._btrfs_list
 
@@ -585,7 +644,7 @@ class ShowServerResponse(SdkResponse):
         Linux 必选，源端的Btrfs信息。如果源端不存在Btrfs，则为[]
 
         :param btrfs_list: The btrfs_list of this ShowServerResponse.
-        :type: list[BtrfsFileSystem]
+        :type btrfs_list: list[:class:`huaweicloudsdksms.v3.BtrfsFileSystem`]
         """
         self._btrfs_list = btrfs_list
 
@@ -596,7 +655,7 @@ class ShowServerResponse(SdkResponse):
         源端服务器的网卡信息
 
         :return: The networks of this ShowServerResponse.
-        :rtype: list[NetWork]
+        :rtype: list[:class:`huaweicloudsdksms.v3.NetWork`]
         """
         return self._networks
 
@@ -607,7 +666,7 @@ class ShowServerResponse(SdkResponse):
         源端服务器的网卡信息
 
         :param networks: The networks of this ShowServerResponse.
-        :type: list[NetWork]
+        :type networks: list[:class:`huaweicloudsdksms.v3.NetWork`]
         """
         self._networks = networks
 
@@ -618,7 +677,7 @@ class ShowServerResponse(SdkResponse):
         源端环境校验信息
 
         :return: The checks of this ShowServerResponse.
-        :rtype: list[EnvironmentCheck]
+        :rtype: list[:class:`huaweicloudsdksms.v3.EnvironmentCheck`]
         """
         return self._checks
 
@@ -629,7 +688,7 @@ class ShowServerResponse(SdkResponse):
         源端环境校验信息
 
         :param checks: The checks of this ShowServerResponse.
-        :type: list[EnvironmentCheck]
+        :type checks: list[:class:`huaweicloudsdksms.v3.EnvironmentCheck`]
         """
         self._checks = checks
 
@@ -651,7 +710,7 @@ class ShowServerResponse(SdkResponse):
         迁移周期
 
         :param migration_cycle: The migration_cycle of this ShowServerResponse.
-        :type: str
+        :type migration_cycle: str
         """
         self._migration_cycle = migration_cycle
 
@@ -673,7 +732,7 @@ class ShowServerResponse(SdkResponse):
         源端状态（state）上次发生变化的时间戳
 
         :param state_action_time: The state_action_time of this ShowServerResponse.
-        :type: int
+        :type state_action_time: int
         """
         self._state_action_time = state_action_time
 
@@ -695,7 +754,7 @@ class ShowServerResponse(SdkResponse):
         已经完成迁移的大小（B）
 
         :param replicatesize: The replicatesize of this ShowServerResponse.
-        :type: int
+        :type replicatesize: int
         """
         self._replicatesize = replicatesize
 
@@ -717,7 +776,7 @@ class ShowServerResponse(SdkResponse):
         需要迁移的数据量总大小（B）
 
         :param totalsize: The totalsize of this ShowServerResponse.
-        :type: int
+        :type totalsize: int
         """
         self._totalsize = totalsize
 
@@ -739,7 +798,7 @@ class ShowServerResponse(SdkResponse):
         agent上一次连接状态发生变化的时间戳
 
         :param last_visit_time: The last_visit_time of this ShowServerResponse.
-        :type: int
+        :type last_visit_time: int
         """
         self._last_visit_time = last_visit_time
 
@@ -761,7 +820,7 @@ class ShowServerResponse(SdkResponse):
         迁移周期（migration_cycle）上一次变化的时间戳
 
         :param stage_action_time: The stage_action_time of this ShowServerResponse.
-        :type: int
+        :type stage_action_time: int
         """
         self._stage_action_time = stage_action_time
 
@@ -783,7 +842,7 @@ class ShowServerResponse(SdkResponse):
         Agent版本信息
 
         :param agent_version: The agent_version of this ShowServerResponse.
-        :type: str
+        :type agent_version: str
         """
         self._agent_version = agent_version
 

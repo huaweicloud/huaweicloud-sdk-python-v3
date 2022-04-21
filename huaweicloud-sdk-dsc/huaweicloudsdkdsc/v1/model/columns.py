@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Columns:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class Columns:
     }
 
     def __init__(self, name=None, type=None, primary_key=None):
-        """Columns - a model defined in huaweicloud sdk"""
+        """Columns
+
+        The model defined in huaweicloud sdk
+
+        :param name: 数据的字段名称，最大支持长度256
+        :type name: str
+        :param type: 数据的字段类型
+        :type type: str
+        :param primary_key: 标记该字段是否为主键。true为主键，表示用来定位水印位置；false为非主键，将在该列嵌入/提取水印内容。字段类型列表中可同时包含多个为true或为false的字段
+        :type primary_key: bool
+        """
         
         
 
@@ -65,7 +74,7 @@ class Columns:
         数据的字段名称，最大支持长度256
 
         :param name: The name of this Columns.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -87,7 +96,7 @@ class Columns:
         数据的字段类型
 
         :param type: The type of this Columns.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -109,7 +118,7 @@ class Columns:
         标记该字段是否为主键。true为主键，表示用来定位水印位置；false为非主键，将在该列嵌入/提取水印内容。字段类型列表中可同时包含多个为true或为false的字段
 
         :param primary_key: The primary_key of this Columns.
-        :type: bool
+        :type primary_key: bool
         """
         self._primary_key = primary_key
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CheckProductHealthyRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CheckProductHealthyRequest:
     }
 
     def __init__(self, x_language=None, project_id=None, body=None):
-        """CheckProductHealthyRequest - a model defined in huaweicloud sdk"""
+        """CheckProductHealthyRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 
+        :type x_language: str
+        :param project_id: 租户项目ID。
+        :type project_id: str
+        :param body: Body of the CheckProductHealthyRequest
+        :type body: :class:`huaweicloudsdksa.v1.ProductInfo`
+        """
         
         
 
@@ -65,7 +74,7 @@ class CheckProductHealthyRequest:
 
 
         :param x_language: The x_language of this CheckProductHealthyRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -87,7 +96,7 @@ class CheckProductHealthyRequest:
         租户项目ID。
 
         :param project_id: The project_id of this CheckProductHealthyRequest.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -97,7 +106,7 @@ class CheckProductHealthyRequest:
 
 
         :return: The body of this CheckProductHealthyRequest.
-        :rtype: ProductInfo
+        :rtype: :class:`huaweicloudsdksa.v1.ProductInfo`
         """
         return self._body
 
@@ -107,7 +116,7 @@ class CheckProductHealthyRequest:
 
 
         :param body: The body of this CheckProductHealthyRequest.
-        :type: ProductInfo
+        :type body: :class:`huaweicloudsdksa.v1.ProductInfo`
         """
         self._body = body
 

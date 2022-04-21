@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListWorkflowsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListWorkflowsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, size=None, workflows=None):
-        """ListWorkflowsResponse - a model defined in huaweicloud sdk"""
+        """ListWorkflowsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 返回所有满足条件的对象个数
+        :type total: int
+        :param size: 返回对象的大小
+        :type size: int
+        :param workflows: 返回的实体对象
+        :type workflows: list[:class:`huaweicloudsdkfunctiongraph.v2.ListWorkflowsResult`]
+        """
         
         super(ListWorkflowsResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListWorkflowsResponse(SdkResponse):
         返回所有满足条件的对象个数
 
         :param total: The total of this ListWorkflowsResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -90,7 +99,7 @@ class ListWorkflowsResponse(SdkResponse):
         返回对象的大小
 
         :param size: The size of this ListWorkflowsResponse.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -101,7 +110,7 @@ class ListWorkflowsResponse(SdkResponse):
         返回的实体对象
 
         :return: The workflows of this ListWorkflowsResponse.
-        :rtype: list[ListWorkflowsResult]
+        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.ListWorkflowsResult`]
         """
         return self._workflows
 
@@ -112,7 +121,7 @@ class ListWorkflowsResponse(SdkResponse):
         返回的实体对象
 
         :param workflows: The workflows of this ListWorkflowsResponse.
-        :type: list[ListWorkflowsResult]
+        :type workflows: list[:class:`huaweicloudsdkfunctiongraph.v2.ListWorkflowsResult`]
         """
         self._workflows = workflows
 

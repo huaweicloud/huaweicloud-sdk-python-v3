@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListResEnterprisesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListResEnterprisesResponse(SdkResponse):
     }
 
     def __init__(self, enterprise_projects=None, is_success=None, message=None, error_code=None):
-        """ListResEnterprisesResponse - a model defined in huaweicloud sdk"""
+        """ListResEnterprisesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param enterprise_projects: 企业项目列表。
+        :type enterprise_projects: list[:class:`huaweicloudsdkres.v1.EnterpriseProjects`]
+        :param is_success: 是否成功。
+        :type is_success: bool
+        :param message: 返回消息（请求成功时，不返回此字段）。
+        :type message: str
+        :param error_code: 错误码（请求成功时，不返回此字段）。
+        :type error_code: str
+        """
         
         super(ListResEnterprisesResponse, self).__init__()
 
@@ -62,7 +73,7 @@ class ListResEnterprisesResponse(SdkResponse):
         企业项目列表。
 
         :return: The enterprise_projects of this ListResEnterprisesResponse.
-        :rtype: list[EnterpriseProjects]
+        :rtype: list[:class:`huaweicloudsdkres.v1.EnterpriseProjects`]
         """
         return self._enterprise_projects
 
@@ -73,7 +84,7 @@ class ListResEnterprisesResponse(SdkResponse):
         企业项目列表。
 
         :param enterprise_projects: The enterprise_projects of this ListResEnterprisesResponse.
-        :type: list[EnterpriseProjects]
+        :type enterprise_projects: list[:class:`huaweicloudsdkres.v1.EnterpriseProjects`]
         """
         self._enterprise_projects = enterprise_projects
 
@@ -95,7 +106,7 @@ class ListResEnterprisesResponse(SdkResponse):
         是否成功。
 
         :param is_success: The is_success of this ListResEnterprisesResponse.
-        :type: bool
+        :type is_success: bool
         """
         self._is_success = is_success
 
@@ -117,7 +128,7 @@ class ListResEnterprisesResponse(SdkResponse):
         返回消息（请求成功时，不返回此字段）。
 
         :param message: The message of this ListResEnterprisesResponse.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -139,7 +150,7 @@ class ListResEnterprisesResponse(SdkResponse):
         错误码（请求成功时，不返回此字段）。
 
         :param error_code: The error_code of this ListResEnterprisesResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 

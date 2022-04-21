@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchListStructDetailRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class BatchListStructDetailRequest:
     }
 
     def __init__(self, type=None, x_language=None, body=None):
-        """BatchListStructDetailRequest - a model defined in huaweicloud sdk"""
+        """BatchListStructDetailRequest
+
+        The model defined in huaweicloud sdk
+
+        :param type: 数据库支持迁移对象类型
+        :type type: str
+        :param x_language: 请求语言类型
+        :type x_language: str
+        :param body: Body of the BatchListStructDetailRequest
+        :type body: :class:`huaweicloudsdkdrs.v3.BatchQueryJobReqPage`
+        """
         
         
 
@@ -67,7 +76,7 @@ class BatchListStructDetailRequest:
         数据库支持迁移对象类型
 
         :param type: The type of this BatchListStructDetailRequest.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -89,7 +98,7 @@ class BatchListStructDetailRequest:
         请求语言类型
 
         :param x_language: The x_language of this BatchListStructDetailRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -99,7 +108,7 @@ class BatchListStructDetailRequest:
 
 
         :return: The body of this BatchListStructDetailRequest.
-        :rtype: BatchQueryJobReqPage
+        :rtype: :class:`huaweicloudsdkdrs.v3.BatchQueryJobReqPage`
         """
         return self._body
 
@@ -109,7 +118,7 @@ class BatchListStructDetailRequest:
 
 
         :param body: The body of this BatchListStructDetailRequest.
-        :type: BatchQueryJobReqPage
+        :type body: :class:`huaweicloudsdkdrs.v3.BatchQueryJobReqPage`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MetricRequest2Dividend:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -78,7 +77,61 @@ class MetricRequest2Dividend:
     }
 
     def __init__(self, custom_field16=None, custom_field17=None, custom_field18=None, custom_field19=None, custom_field20=None, custom_field21=None, custom_field22=None, custom_field23=None, custom_field24=None, custom_field25=None, custom_field26=None, custom_field27=None, custom_field28=None, custom_field29=None, custom_field30=None, custom_field31=None, custom_field32=None, custom_field33=None, custom_field34=None, custom_field35=None, custom_field36=None, custom_field37=None, custom_field38=None, custom_field39=None, custom_field40=None):
-        """MetricRequest2Dividend - a model defined in huaweicloud sdk"""
+        """MetricRequest2Dividend
+
+        The model defined in huaweicloud sdk
+
+        :param custom_field16: 自定义字段
+        :type custom_field16: str
+        :param custom_field17: 自定义字段
+        :type custom_field17: str
+        :param custom_field18: 自定义字段
+        :type custom_field18: str
+        :param custom_field19: 自定义字段
+        :type custom_field19: str
+        :param custom_field20: 自定义字段
+        :type custom_field20: str
+        :param custom_field21: 自定义字段
+        :type custom_field21: str
+        :param custom_field22: 自定义字段
+        :type custom_field22: str
+        :param custom_field23: 自定义字段
+        :type custom_field23: str
+        :param custom_field24: 自定义字段
+        :type custom_field24: str
+        :param custom_field25: 自定义字段
+        :type custom_field25: str
+        :param custom_field26: 自定义字段
+        :type custom_field26: str
+        :param custom_field27: 自定义字段
+        :type custom_field27: str
+        :param custom_field28: 自定义字段
+        :type custom_field28: str
+        :param custom_field29: 自定义字段
+        :type custom_field29: str
+        :param custom_field30: 自定义字段
+        :type custom_field30: str
+        :param custom_field31: 自定义字段
+        :type custom_field31: str
+        :param custom_field32: 自定义字段
+        :type custom_field32: str
+        :param custom_field33: 自定义字段
+        :type custom_field33: str
+        :param custom_field34: 自定义字段
+        :type custom_field34: str
+        :param custom_field35: 自定义字段
+        :type custom_field35: str
+        :param custom_field36: 自定义字段
+        :type custom_field36: str
+        :param custom_field37: 自定义字段
+        :type custom_field37: str
+        :param custom_field38: 自定义字段
+        :type custom_field38: str
+        :param custom_field39: 自定义字段
+        :type custom_field39: str
+        :param custom_field40: 自定义字段
+        :type custom_field40: str
+        """
         
         
 
@@ -178,7 +231,7 @@ class MetricRequest2Dividend:
         自定义字段
 
         :param custom_field16: The custom_field16 of this MetricRequest2Dividend.
-        :type: str
+        :type custom_field16: str
         """
         self._custom_field16 = custom_field16
 
@@ -200,7 +253,7 @@ class MetricRequest2Dividend:
         自定义字段
 
         :param custom_field17: The custom_field17 of this MetricRequest2Dividend.
-        :type: str
+        :type custom_field17: str
         """
         self._custom_field17 = custom_field17
 
@@ -222,7 +275,7 @@ class MetricRequest2Dividend:
         自定义字段
 
         :param custom_field18: The custom_field18 of this MetricRequest2Dividend.
-        :type: str
+        :type custom_field18: str
         """
         self._custom_field18 = custom_field18
 
@@ -244,7 +297,7 @@ class MetricRequest2Dividend:
         自定义字段
 
         :param custom_field19: The custom_field19 of this MetricRequest2Dividend.
-        :type: str
+        :type custom_field19: str
         """
         self._custom_field19 = custom_field19
 
@@ -266,7 +319,7 @@ class MetricRequest2Dividend:
         自定义字段
 
         :param custom_field20: The custom_field20 of this MetricRequest2Dividend.
-        :type: str
+        :type custom_field20: str
         """
         self._custom_field20 = custom_field20
 
@@ -288,7 +341,7 @@ class MetricRequest2Dividend:
         自定义字段
 
         :param custom_field21: The custom_field21 of this MetricRequest2Dividend.
-        :type: str
+        :type custom_field21: str
         """
         self._custom_field21 = custom_field21
 
@@ -310,7 +363,7 @@ class MetricRequest2Dividend:
         自定义字段
 
         :param custom_field22: The custom_field22 of this MetricRequest2Dividend.
-        :type: str
+        :type custom_field22: str
         """
         self._custom_field22 = custom_field22
 
@@ -332,7 +385,7 @@ class MetricRequest2Dividend:
         自定义字段
 
         :param custom_field23: The custom_field23 of this MetricRequest2Dividend.
-        :type: str
+        :type custom_field23: str
         """
         self._custom_field23 = custom_field23
 
@@ -354,7 +407,7 @@ class MetricRequest2Dividend:
         自定义字段
 
         :param custom_field24: The custom_field24 of this MetricRequest2Dividend.
-        :type: str
+        :type custom_field24: str
         """
         self._custom_field24 = custom_field24
 
@@ -376,7 +429,7 @@ class MetricRequest2Dividend:
         自定义字段
 
         :param custom_field25: The custom_field25 of this MetricRequest2Dividend.
-        :type: str
+        :type custom_field25: str
         """
         self._custom_field25 = custom_field25
 
@@ -398,7 +451,7 @@ class MetricRequest2Dividend:
         自定义字段
 
         :param custom_field26: The custom_field26 of this MetricRequest2Dividend.
-        :type: str
+        :type custom_field26: str
         """
         self._custom_field26 = custom_field26
 
@@ -420,7 +473,7 @@ class MetricRequest2Dividend:
         自定义字段
 
         :param custom_field27: The custom_field27 of this MetricRequest2Dividend.
-        :type: str
+        :type custom_field27: str
         """
         self._custom_field27 = custom_field27
 
@@ -442,7 +495,7 @@ class MetricRequest2Dividend:
         自定义字段
 
         :param custom_field28: The custom_field28 of this MetricRequest2Dividend.
-        :type: str
+        :type custom_field28: str
         """
         self._custom_field28 = custom_field28
 
@@ -464,7 +517,7 @@ class MetricRequest2Dividend:
         自定义字段
 
         :param custom_field29: The custom_field29 of this MetricRequest2Dividend.
-        :type: str
+        :type custom_field29: str
         """
         self._custom_field29 = custom_field29
 
@@ -486,7 +539,7 @@ class MetricRequest2Dividend:
         自定义字段
 
         :param custom_field30: The custom_field30 of this MetricRequest2Dividend.
-        :type: str
+        :type custom_field30: str
         """
         self._custom_field30 = custom_field30
 
@@ -508,7 +561,7 @@ class MetricRequest2Dividend:
         自定义字段
 
         :param custom_field31: The custom_field31 of this MetricRequest2Dividend.
-        :type: str
+        :type custom_field31: str
         """
         self._custom_field31 = custom_field31
 
@@ -530,7 +583,7 @@ class MetricRequest2Dividend:
         自定义字段
 
         :param custom_field32: The custom_field32 of this MetricRequest2Dividend.
-        :type: str
+        :type custom_field32: str
         """
         self._custom_field32 = custom_field32
 
@@ -552,7 +605,7 @@ class MetricRequest2Dividend:
         自定义字段
 
         :param custom_field33: The custom_field33 of this MetricRequest2Dividend.
-        :type: str
+        :type custom_field33: str
         """
         self._custom_field33 = custom_field33
 
@@ -574,7 +627,7 @@ class MetricRequest2Dividend:
         自定义字段
 
         :param custom_field34: The custom_field34 of this MetricRequest2Dividend.
-        :type: str
+        :type custom_field34: str
         """
         self._custom_field34 = custom_field34
 
@@ -596,7 +649,7 @@ class MetricRequest2Dividend:
         自定义字段
 
         :param custom_field35: The custom_field35 of this MetricRequest2Dividend.
-        :type: str
+        :type custom_field35: str
         """
         self._custom_field35 = custom_field35
 
@@ -618,7 +671,7 @@ class MetricRequest2Dividend:
         自定义字段
 
         :param custom_field36: The custom_field36 of this MetricRequest2Dividend.
-        :type: str
+        :type custom_field36: str
         """
         self._custom_field36 = custom_field36
 
@@ -640,7 +693,7 @@ class MetricRequest2Dividend:
         自定义字段
 
         :param custom_field37: The custom_field37 of this MetricRequest2Dividend.
-        :type: str
+        :type custom_field37: str
         """
         self._custom_field37 = custom_field37
 
@@ -662,7 +715,7 @@ class MetricRequest2Dividend:
         自定义字段
 
         :param custom_field38: The custom_field38 of this MetricRequest2Dividend.
-        :type: str
+        :type custom_field38: str
         """
         self._custom_field38 = custom_field38
 
@@ -684,7 +737,7 @@ class MetricRequest2Dividend:
         自定义字段
 
         :param custom_field39: The custom_field39 of this MetricRequest2Dividend.
-        :type: str
+        :type custom_field39: str
         """
         self._custom_field39 = custom_field39
 
@@ -706,7 +759,7 @@ class MetricRequest2Dividend:
         自定义字段
 
         :param custom_field40: The custom_field40 of this MetricRequest2Dividend.
-        :type: str
+        :type custom_field40: str
         """
         self._custom_field40 = custom_field40
 

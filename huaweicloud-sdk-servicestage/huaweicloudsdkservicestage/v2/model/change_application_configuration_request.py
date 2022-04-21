@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ChangeApplicationConfigurationRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ChangeApplicationConfigurationRequest:
     }
 
     def __init__(self, application_id=None, body=None):
-        """ChangeApplicationConfigurationRequest - a model defined in huaweicloud sdk"""
+        """ChangeApplicationConfigurationRequest
+
+        The model defined in huaweicloud sdk
+
+        :param application_id: 应用ID。
+        :type application_id: str
+        :param body: Body of the ChangeApplicationConfigurationRequest
+        :type body: :class:`huaweicloudsdkservicestage.v2.ApplicationConfigModify`
+        """
         
         
 
@@ -62,7 +69,7 @@ class ChangeApplicationConfigurationRequest:
         应用ID。
 
         :param application_id: The application_id of this ChangeApplicationConfigurationRequest.
-        :type: str
+        :type application_id: str
         """
         self._application_id = application_id
 
@@ -72,7 +79,7 @@ class ChangeApplicationConfigurationRequest:
 
 
         :return: The body of this ChangeApplicationConfigurationRequest.
-        :rtype: ApplicationConfigModify
+        :rtype: :class:`huaweicloudsdkservicestage.v2.ApplicationConfigModify`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class ChangeApplicationConfigurationRequest:
 
 
         :param body: The body of this ChangeApplicationConfigurationRequest.
-        :type: ApplicationConfigModify
+        :type body: :class:`huaweicloudsdkservicestage.v2.ApplicationConfigModify`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StructProcessResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class StructProcessResp:
     }
 
     def __init__(self, create_time=None, result=None):
-        """StructProcessResp - a model defined in huaweicloud sdk"""
+        """StructProcessResp
+
+        The model defined in huaweicloud sdk
+
+        :param create_time: 数据生成时间
+        :type create_time: str
+        :param result: 对比结果
+        :type result: list[:class:`huaweicloudsdkdrs.v3.StructProcessVO`]
+        """
         
         
 
@@ -63,7 +70,7 @@ class StructProcessResp:
         数据生成时间
 
         :param create_time: The create_time of this StructProcessResp.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -74,7 +81,7 @@ class StructProcessResp:
         对比结果
 
         :return: The result of this StructProcessResp.
-        :rtype: list[StructProcessVO]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.StructProcessVO`]
         """
         return self._result
 
@@ -85,7 +92,7 @@ class StructProcessResp:
         对比结果
 
         :param result: The result of this StructProcessResp.
-        :type: list[StructProcessVO]
+        :type result: list[:class:`huaweicloudsdkdrs.v3.StructProcessVO`]
         """
         self._result = result
 

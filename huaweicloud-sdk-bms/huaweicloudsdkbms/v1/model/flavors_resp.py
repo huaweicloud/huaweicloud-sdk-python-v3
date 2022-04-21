@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FlavorsResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class FlavorsResp:
     }
 
     def __init__(self, id=None, name=None, vcpus=None, ram=None, disk=None, swap=None, os_flv_ext_dat_aephemeral=None, os_flv_disable_ddisabled=None, rxtx_factor=None, rxtx_quota=None, rxtx_cap=None, os_flavor_accessis_public=None, links=None, os_extra_specs=None):
-        """FlavorsResp - a model defined in huaweicloud sdk"""
+        """FlavorsResp
+
+        The model defined in huaweicloud sdk
+
+        :param id: 裸金属服务器规格的ID
+        :type id: str
+        :param name: 裸金属服务器规格的名称
+        :type name: str
+        :param vcpus: 该裸金属服务器规格对应的CPU核数。
+        :type vcpus: str
+        :param ram: 该裸金属服务器规格对应的内存大小，单位为MB。
+        :type ram: int
+        :param disk: 该裸金属服务器规格对应要求系统盘大小，0为不限制。
+        :type disk: str
+        :param swap: 未使用
+        :type swap: str
+        :param os_flv_ext_dat_aephemeral: 未使用
+        :type os_flv_ext_dat_aephemeral: int
+        :param os_flv_disable_ddisabled: 未使用
+        :type os_flv_disable_ddisabled: bool
+        :param rxtx_factor: 未使用
+        :type rxtx_factor: float
+        :param rxtx_quota: 未使用
+        :type rxtx_quota: str
+        :param rxtx_cap: 未使用
+        :type rxtx_cap: str
+        :param os_flavor_accessis_public: 是否是公共规格。false：私有规格；true：公共规格
+        :type os_flavor_accessis_public: bool
+        :param links: 规格相关快捷链接地址，详情请参见表3 links字段数据结构说明。
+        :type links: list[:class:`huaweicloudsdkbms.v1.LinksInfo`]
+        :param os_extra_specs: 
+        :type os_extra_specs: :class:`huaweicloudsdkbms.v1.OsExtraSpecs`
+        """
         
         
 
@@ -120,7 +151,7 @@ class FlavorsResp:
         裸金属服务器规格的ID
 
         :param id: The id of this FlavorsResp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -142,7 +173,7 @@ class FlavorsResp:
         裸金属服务器规格的名称
 
         :param name: The name of this FlavorsResp.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -164,7 +195,7 @@ class FlavorsResp:
         该裸金属服务器规格对应的CPU核数。
 
         :param vcpus: The vcpus of this FlavorsResp.
-        :type: str
+        :type vcpus: str
         """
         self._vcpus = vcpus
 
@@ -186,7 +217,7 @@ class FlavorsResp:
         该裸金属服务器规格对应的内存大小，单位为MB。
 
         :param ram: The ram of this FlavorsResp.
-        :type: int
+        :type ram: int
         """
         self._ram = ram
 
@@ -208,7 +239,7 @@ class FlavorsResp:
         该裸金属服务器规格对应要求系统盘大小，0为不限制。
 
         :param disk: The disk of this FlavorsResp.
-        :type: str
+        :type disk: str
         """
         self._disk = disk
 
@@ -230,7 +261,7 @@ class FlavorsResp:
         未使用
 
         :param swap: The swap of this FlavorsResp.
-        :type: str
+        :type swap: str
         """
         self._swap = swap
 
@@ -252,7 +283,7 @@ class FlavorsResp:
         未使用
 
         :param os_flv_ext_dat_aephemeral: The os_flv_ext_dat_aephemeral of this FlavorsResp.
-        :type: int
+        :type os_flv_ext_dat_aephemeral: int
         """
         self._os_flv_ext_dat_aephemeral = os_flv_ext_dat_aephemeral
 
@@ -274,7 +305,7 @@ class FlavorsResp:
         未使用
 
         :param os_flv_disable_ddisabled: The os_flv_disable_ddisabled of this FlavorsResp.
-        :type: bool
+        :type os_flv_disable_ddisabled: bool
         """
         self._os_flv_disable_ddisabled = os_flv_disable_ddisabled
 
@@ -296,7 +327,7 @@ class FlavorsResp:
         未使用
 
         :param rxtx_factor: The rxtx_factor of this FlavorsResp.
-        :type: float
+        :type rxtx_factor: float
         """
         self._rxtx_factor = rxtx_factor
 
@@ -318,7 +349,7 @@ class FlavorsResp:
         未使用
 
         :param rxtx_quota: The rxtx_quota of this FlavorsResp.
-        :type: str
+        :type rxtx_quota: str
         """
         self._rxtx_quota = rxtx_quota
 
@@ -340,7 +371,7 @@ class FlavorsResp:
         未使用
 
         :param rxtx_cap: The rxtx_cap of this FlavorsResp.
-        :type: str
+        :type rxtx_cap: str
         """
         self._rxtx_cap = rxtx_cap
 
@@ -362,7 +393,7 @@ class FlavorsResp:
         是否是公共规格。false：私有规格；true：公共规格
 
         :param os_flavor_accessis_public: The os_flavor_accessis_public of this FlavorsResp.
-        :type: bool
+        :type os_flavor_accessis_public: bool
         """
         self._os_flavor_accessis_public = os_flavor_accessis_public
 
@@ -373,7 +404,7 @@ class FlavorsResp:
         规格相关快捷链接地址，详情请参见表3 links字段数据结构说明。
 
         :return: The links of this FlavorsResp.
-        :rtype: list[LinksInfo]
+        :rtype: list[:class:`huaweicloudsdkbms.v1.LinksInfo`]
         """
         return self._links
 
@@ -384,7 +415,7 @@ class FlavorsResp:
         规格相关快捷链接地址，详情请参见表3 links字段数据结构说明。
 
         :param links: The links of this FlavorsResp.
-        :type: list[LinksInfo]
+        :type links: list[:class:`huaweicloudsdkbms.v1.LinksInfo`]
         """
         self._links = links
 
@@ -394,7 +425,7 @@ class FlavorsResp:
 
 
         :return: The os_extra_specs of this FlavorsResp.
-        :rtype: OsExtraSpecs
+        :rtype: :class:`huaweicloudsdkbms.v1.OsExtraSpecs`
         """
         return self._os_extra_specs
 
@@ -404,7 +435,7 @@ class FlavorsResp:
 
 
         :param os_extra_specs: The os_extra_specs of this FlavorsResp.
-        :type: OsExtraSpecs
+        :type os_extra_specs: :class:`huaweicloudsdkbms.v1.OsExtraSpecs`
         """
         self._os_extra_specs = os_extra_specs
 

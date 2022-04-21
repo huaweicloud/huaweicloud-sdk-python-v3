@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NeutronInsertFirewallRuleRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class NeutronInsertFirewallRuleRequestBody:
     }
 
     def __init__(self, firewall_rule_id=None, insert_after=None, insert_before=None):
-        """NeutronInsertFirewallRuleRequestBody - a model defined in huaweicloud sdk"""
+        """NeutronInsertFirewallRuleRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param firewall_rule_id: 功能说明：网络ACL规则ID
+        :type firewall_rule_id: str
+        :param insert_after: insert_after参数表示已经和某个policy关联的rule，新的rule将会直接被插入到insert_after参数指定的rule后面。如果insert_after和insert_before都被指定了，insert_after参数值将被忽略。
+        :type insert_after: str
+        :param insert_before: insert_before参数表示已经和某个policy关联的rule，新的firewall rule将会直接被插入到insert_ before参数指定的firewall rule前面。如果insert_after和insert_before都被指定了，insert_after参数值将被忽略。
+        :type insert_before: str
+        """
         
         
 
@@ -67,7 +76,7 @@ class NeutronInsertFirewallRuleRequestBody:
         功能说明：网络ACL规则ID
 
         :param firewall_rule_id: The firewall_rule_id of this NeutronInsertFirewallRuleRequestBody.
-        :type: str
+        :type firewall_rule_id: str
         """
         self._firewall_rule_id = firewall_rule_id
 
@@ -89,7 +98,7 @@ class NeutronInsertFirewallRuleRequestBody:
         insert_after参数表示已经和某个policy关联的rule，新的rule将会直接被插入到insert_after参数指定的rule后面。如果insert_after和insert_before都被指定了，insert_after参数值将被忽略。
 
         :param insert_after: The insert_after of this NeutronInsertFirewallRuleRequestBody.
-        :type: str
+        :type insert_after: str
         """
         self._insert_after = insert_after
 
@@ -111,7 +120,7 @@ class NeutronInsertFirewallRuleRequestBody:
         insert_before参数表示已经和某个policy关联的rule，新的firewall rule将会直接被插入到insert_ before参数指定的firewall rule前面。如果insert_after和insert_before都被指定了，insert_after参数值将被忽略。
 
         :param insert_before: The insert_before of this NeutronInsertFirewallRuleRequestBody.
-        :type: str
+        :type insert_before: str
         """
         self._insert_before = insert_before
 

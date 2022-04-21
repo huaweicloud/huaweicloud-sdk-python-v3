@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SetOnlineMigrationTaskBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class SetOnlineMigrationTaskBody:
     }
 
     def __init__(self, migration_method=None, resume_mode=None, bandwidth_limit_mb=None, source_instance=None, target_instance=None):
-        """SetOnlineMigrationTaskBody - a model defined in huaweicloud sdk"""
+        """SetOnlineMigrationTaskBody
+
+        The model defined in huaweicloud sdk
+
+        :param migration_method: 迁移方式，包括全量迁移和增量迁移两种类型。 - 全量迁移：该模式为Redis的一次性迁移，适用于可中断业务的迁移场景。   全量迁移过程中，如果源Redis有数据更新，这部分更新数据不会被迁移到目标Redis。 - 增量迁移：该模式为Redis的持续性迁移，适用于对业务中断敏感的迁移场景。   增量迁移阶段通过解析日志等技术， 持续保持源Redis和目标端Redis的数据一致。 取值范围： - full_amount_migration：表示全量迁移。 - incremental_migration：表示增量迁移。 
+        :type migration_method: str
+        :param resume_mode: 自动重连，根据参数决定是否自动重连。 自动重连模式在遇到网络等异常情况时，会无限自动重试。 自动重连模式在无法进行增量同步时，会触发全量同步，增加带宽占用，请谨慎选择。 取值范围： - auto：自动重连。 - manual：手动重连。 
+        :type resume_mode: str
+        :param bandwidth_limit_mb: 带宽限制，当迁移方式为增量迁移时，为保证业务正常运行，您可以启用带宽限制功能，当数据同步速度达到带宽限制时，将限制同步速度的继续增长。 -限制为MB/s -取值范围：1-10,241(大于0小于10,241的整数)
+        :type bandwidth_limit_mb: str
+        :param source_instance: 
+        :type source_instance: :class:`huaweicloudsdkdcs.v2.ConfigMigrationInstanceBody`
+        :param target_instance: 
+        :type target_instance: :class:`huaweicloudsdkdcs.v2.ConfigMigrationInstanceBody`
+        """
         
         
 
@@ -74,7 +87,7 @@ class SetOnlineMigrationTaskBody:
         迁移方式，包括全量迁移和增量迁移两种类型。 - 全量迁移：该模式为Redis的一次性迁移，适用于可中断业务的迁移场景。   全量迁移过程中，如果源Redis有数据更新，这部分更新数据不会被迁移到目标Redis。 - 增量迁移：该模式为Redis的持续性迁移，适用于对业务中断敏感的迁移场景。   增量迁移阶段通过解析日志等技术， 持续保持源Redis和目标端Redis的数据一致。 取值范围： - full_amount_migration：表示全量迁移。 - incremental_migration：表示增量迁移。 
 
         :param migration_method: The migration_method of this SetOnlineMigrationTaskBody.
-        :type: str
+        :type migration_method: str
         """
         self._migration_method = migration_method
 
@@ -96,7 +109,7 @@ class SetOnlineMigrationTaskBody:
         自动重连，根据参数决定是否自动重连。 自动重连模式在遇到网络等异常情况时，会无限自动重试。 自动重连模式在无法进行增量同步时，会触发全量同步，增加带宽占用，请谨慎选择。 取值范围： - auto：自动重连。 - manual：手动重连。 
 
         :param resume_mode: The resume_mode of this SetOnlineMigrationTaskBody.
-        :type: str
+        :type resume_mode: str
         """
         self._resume_mode = resume_mode
 
@@ -118,7 +131,7 @@ class SetOnlineMigrationTaskBody:
         带宽限制，当迁移方式为增量迁移时，为保证业务正常运行，您可以启用带宽限制功能，当数据同步速度达到带宽限制时，将限制同步速度的继续增长。 -限制为MB/s -取值范围：1-10,241(大于0小于10,241的整数)
 
         :param bandwidth_limit_mb: The bandwidth_limit_mb of this SetOnlineMigrationTaskBody.
-        :type: str
+        :type bandwidth_limit_mb: str
         """
         self._bandwidth_limit_mb = bandwidth_limit_mb
 
@@ -128,7 +141,7 @@ class SetOnlineMigrationTaskBody:
 
 
         :return: The source_instance of this SetOnlineMigrationTaskBody.
-        :rtype: ConfigMigrationInstanceBody
+        :rtype: :class:`huaweicloudsdkdcs.v2.ConfigMigrationInstanceBody`
         """
         return self._source_instance
 
@@ -138,7 +151,7 @@ class SetOnlineMigrationTaskBody:
 
 
         :param source_instance: The source_instance of this SetOnlineMigrationTaskBody.
-        :type: ConfigMigrationInstanceBody
+        :type source_instance: :class:`huaweicloudsdkdcs.v2.ConfigMigrationInstanceBody`
         """
         self._source_instance = source_instance
 
@@ -148,7 +161,7 @@ class SetOnlineMigrationTaskBody:
 
 
         :return: The target_instance of this SetOnlineMigrationTaskBody.
-        :rtype: ConfigMigrationInstanceBody
+        :rtype: :class:`huaweicloudsdkdcs.v2.ConfigMigrationInstanceBody`
         """
         return self._target_instance
 
@@ -158,7 +171,7 @@ class SetOnlineMigrationTaskBody:
 
 
         :param target_instance: The target_instance of this SetOnlineMigrationTaskBody.
-        :type: ConfigMigrationInstanceBody
+        :type target_instance: :class:`huaweicloudsdkdcs.v2.ConfigMigrationInstanceBody`
         """
         self._target_instance = target_instance
 

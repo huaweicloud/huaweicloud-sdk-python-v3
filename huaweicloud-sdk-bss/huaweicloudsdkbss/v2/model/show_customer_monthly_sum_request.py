@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowCustomerMonthlySumRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ShowCustomerMonthlySumRequest:
     }
 
     def __init__(self, bill_cycle=None, service_type_code=None, enterprise_project_id=None, offset=None, limit=None, method=None, sub_customer_id=None):
-        """ShowCustomerMonthlySumRequest - a model defined in huaweicloud sdk"""
+        """ShowCustomerMonthlySumRequest
+
+        The model defined in huaweicloud sdk
+
+        :param bill_cycle: 查询消费汇总数据所在的账期，格式为YYYY-MM。
+        :type bill_cycle: str
+        :param service_type_code: 云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
+        :type service_type_code: str
+        :param enterprise_project_id: 企业项目标识（企业项目ID）。default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见如何获取企业项目ID。
+        :type enterprise_project_id: str
+        :param offset: 偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset &#x3D; 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
+        :type offset: int
+        :param limit: 每次查询的数量。默认值为10。
+        :type limit: int
+        :param method: 查询方式。oneself：自身sub_customer：企业子客户all：自己和企业子客户默认为all，如果没有企业子客户，all的时候也是查询自己的。
+        :type method: str
+        :param sub_customer_id: 企业子客户的账号ID。 说明： 如果method取值不为sub_customer，则该参数无效。如果method取值为sub_customer，则该参数不能为空。
+        :type sub_customer_id: str
+        """
         
         
 
@@ -87,7 +104,7 @@ class ShowCustomerMonthlySumRequest:
         查询消费汇总数据所在的账期，格式为YYYY-MM。
 
         :param bill_cycle: The bill_cycle of this ShowCustomerMonthlySumRequest.
-        :type: str
+        :type bill_cycle: str
         """
         self._bill_cycle = bill_cycle
 
@@ -109,7 +126,7 @@ class ShowCustomerMonthlySumRequest:
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
         :param service_type_code: The service_type_code of this ShowCustomerMonthlySumRequest.
-        :type: str
+        :type service_type_code: str
         """
         self._service_type_code = service_type_code
 
@@ -131,7 +148,7 @@ class ShowCustomerMonthlySumRequest:
         企业项目标识（企业项目ID）。default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见如何获取企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this ShowCustomerMonthlySumRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -153,7 +170,7 @@ class ShowCustomerMonthlySumRequest:
         偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
         :param offset: The offset of this ShowCustomerMonthlySumRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -175,7 +192,7 @@ class ShowCustomerMonthlySumRequest:
         每次查询的数量。默认值为10。
 
         :param limit: The limit of this ShowCustomerMonthlySumRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -197,7 +214,7 @@ class ShowCustomerMonthlySumRequest:
         查询方式。oneself：自身sub_customer：企业子客户all：自己和企业子客户默认为all，如果没有企业子客户，all的时候也是查询自己的。
 
         :param method: The method of this ShowCustomerMonthlySumRequest.
-        :type: str
+        :type method: str
         """
         self._method = method
 
@@ -219,7 +236,7 @@ class ShowCustomerMonthlySumRequest:
         企业子客户的账号ID。 说明： 如果method取值不为sub_customer，则该参数无效。如果method取值为sub_customer，则该参数不能为空。
 
         :param sub_customer_id: The sub_customer_id of this ShowCustomerMonthlySumRequest.
-        :type: str
+        :type sub_customer_id: str
         """
         self._sub_customer_id = sub_customer_id
 

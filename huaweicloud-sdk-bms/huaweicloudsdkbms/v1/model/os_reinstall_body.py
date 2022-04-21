@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OsReinstallBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class OsReinstallBody:
     }
 
     def __init__(self, os_reinstall=None):
-        """OsReinstallBody - a model defined in huaweicloud sdk"""
+        """OsReinstallBody
+
+        The model defined in huaweicloud sdk
+
+        :param os_reinstall: 
+        :type os_reinstall: :class:`huaweicloudsdkbms.v1.OsReinstall`
+        """
         
         
 
@@ -45,7 +50,7 @@ class OsReinstallBody:
 
 
         :return: The os_reinstall of this OsReinstallBody.
-        :rtype: OsReinstall
+        :rtype: :class:`huaweicloudsdkbms.v1.OsReinstall`
         """
         return self._os_reinstall
 
@@ -55,7 +60,7 @@ class OsReinstallBody:
 
 
         :param os_reinstall: The os_reinstall of this OsReinstallBody.
-        :type: OsReinstall
+        :type os_reinstall: :class:`huaweicloudsdkbms.v1.OsReinstall`
         """
         self._os_reinstall = os_reinstall
 

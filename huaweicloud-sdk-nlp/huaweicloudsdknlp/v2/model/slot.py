@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Slot:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class Slot:
     }
 
     def __init__(self, word=None, tag=None, offset=None, length=None, normalized_word=None):
-        """Slot - a model defined in huaweicloud sdk"""
+        """Slot
+
+        The model defined in huaweicloud sdk
+
+        :param word: 实体文本。
+        :type word: str
+        :param tag: 实体类型。对于每个意图类别所支持的实体类型分别为： weather：date(日期)，time(时间)，location(位置) time：location(位置)，timezone(时区) news：genre(风格) joke：genre(风格) translation：content(内容) notification：content(内容)，date(日期)，time(时间)，singer(歌手) alarm：date(日期)，time:(时间) music：singer(歌手)，song(歌曲)，content(内容)
+        :type tag: str
+        :param offset: 实体文本在待分析文本中的起始位置。
+        :type offset: int
+        :param length: 实体文本长度。
+        :type length: int
+        :param normalized_word: 同义词或者其他标准表达的词，默认为原始的word。
+        :type normalized_word: str
+        """
         
         
 
@@ -73,7 +86,7 @@ class Slot:
         实体文本。
 
         :param word: The word of this Slot.
-        :type: str
+        :type word: str
         """
         self._word = word
 
@@ -95,7 +108,7 @@ class Slot:
         实体类型。对于每个意图类别所支持的实体类型分别为： weather：date(日期)，time(时间)，location(位置) time：location(位置)，timezone(时区) news：genre(风格) joke：genre(风格) translation：content(内容) notification：content(内容)，date(日期)，time(时间)，singer(歌手) alarm：date(日期)，time:(时间) music：singer(歌手)，song(歌曲)，content(内容)
 
         :param tag: The tag of this Slot.
-        :type: str
+        :type tag: str
         """
         self._tag = tag
 
@@ -117,7 +130,7 @@ class Slot:
         实体文本在待分析文本中的起始位置。
 
         :param offset: The offset of this Slot.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -139,7 +152,7 @@ class Slot:
         实体文本长度。
 
         :param length: The length of this Slot.
-        :type: int
+        :type length: int
         """
         self._length = length
 
@@ -161,7 +174,7 @@ class Slot:
         同义词或者其他标准表达的词，默认为原始的word。
 
         :param normalized_word: The normalized_word of this Slot.
-        :type: str
+        :type normalized_word: str
         """
         self._normalized_word = normalized_word
 

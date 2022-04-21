@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowLastHistoryResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ShowLastHistoryResponse(SdkResponse):
     }
 
     def __init__(self, record_id=None, job_id=None, job_name=None, build_number=None, start_time=None, end_time=None, result=None, commit_id=None):
-        """ShowLastHistoryResponse - a model defined in huaweicloud sdk"""
+        """ShowLastHistoryResponse
+
+        The model defined in huaweicloud sdk
+
+        :param record_id: 构建记录id--唯一key
+        :type record_id: str
+        :param job_id: 构建任务ID
+        :type job_id: str
+        :param job_name: 构建任务名称
+        :type job_name: str
+        :param build_number: 构建编号
+        :type build_number: int
+        :param start_time: 构建开始时间
+        :type start_time: str
+        :param end_time: 构建结束时间
+        :type end_time: str
+        :param result: 构建执行结果
+        :type result: str
+        :param commit_id: commitId
+        :type commit_id: str
+        """
         
         super(ShowLastHistoryResponse, self).__init__()
 
@@ -93,7 +112,7 @@ class ShowLastHistoryResponse(SdkResponse):
         构建记录id--唯一key
 
         :param record_id: The record_id of this ShowLastHistoryResponse.
-        :type: str
+        :type record_id: str
         """
         self._record_id = record_id
 
@@ -115,7 +134,7 @@ class ShowLastHistoryResponse(SdkResponse):
         构建任务ID
 
         :param job_id: The job_id of this ShowLastHistoryResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -137,7 +156,7 @@ class ShowLastHistoryResponse(SdkResponse):
         构建任务名称
 
         :param job_name: The job_name of this ShowLastHistoryResponse.
-        :type: str
+        :type job_name: str
         """
         self._job_name = job_name
 
@@ -159,7 +178,7 @@ class ShowLastHistoryResponse(SdkResponse):
         构建编号
 
         :param build_number: The build_number of this ShowLastHistoryResponse.
-        :type: int
+        :type build_number: int
         """
         self._build_number = build_number
 
@@ -181,7 +200,7 @@ class ShowLastHistoryResponse(SdkResponse):
         构建开始时间
 
         :param start_time: The start_time of this ShowLastHistoryResponse.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -203,7 +222,7 @@ class ShowLastHistoryResponse(SdkResponse):
         构建结束时间
 
         :param end_time: The end_time of this ShowLastHistoryResponse.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -225,7 +244,7 @@ class ShowLastHistoryResponse(SdkResponse):
         构建执行结果
 
         :param result: The result of this ShowLastHistoryResponse.
-        :type: str
+        :type result: str
         """
         self._result = result
 
@@ -247,7 +266,7 @@ class ShowLastHistoryResponse(SdkResponse):
         commitId
 
         :param commit_id: The commit_id of this ShowLastHistoryResponse.
-        :type: str
+        :type commit_id: str
         """
         self._commit_id = commit_id
 

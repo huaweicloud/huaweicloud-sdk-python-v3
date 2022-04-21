@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OpExtendInfoBckup:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class OpExtendInfoBckup:
     }
 
     def __init__(self, app_consistency_error_code=None, app_consistency_error_message=None, app_consistency_status=None, backup_id=None, backup_name=None, incremental=None):
-        """OpExtendInfoBckup - a model defined in huaweicloud sdk"""
+        """OpExtendInfoBckup
+
+        The model defined in huaweicloud sdk
+
+        :param app_consistency_error_code: 应用一致性备份失败错误码。请参见[错误码](ErrorCode.xml)。
+        :type app_consistency_error_code: str
+        :param app_consistency_error_message: 应用一致性备份错误信息
+        :type app_consistency_error_message: str
+        :param app_consistency_status: 应用一致性备份状态；0:非应用一致性，1：应用一致性备份
+        :type app_consistency_status: str
+        :param backup_id: 备份副本ID
+        :type backup_id: str
+        :param backup_name: 备份名称
+        :type backup_name: str
+        :param incremental: 是否增备
+        :type incremental: str
+        """
         
         
 
@@ -82,7 +97,7 @@ class OpExtendInfoBckup:
         应用一致性备份失败错误码。请参见[错误码](ErrorCode.xml)。
 
         :param app_consistency_error_code: The app_consistency_error_code of this OpExtendInfoBckup.
-        :type: str
+        :type app_consistency_error_code: str
         """
         self._app_consistency_error_code = app_consistency_error_code
 
@@ -104,7 +119,7 @@ class OpExtendInfoBckup:
         应用一致性备份错误信息
 
         :param app_consistency_error_message: The app_consistency_error_message of this OpExtendInfoBckup.
-        :type: str
+        :type app_consistency_error_message: str
         """
         self._app_consistency_error_message = app_consistency_error_message
 
@@ -126,7 +141,7 @@ class OpExtendInfoBckup:
         应用一致性备份状态；0:非应用一致性，1：应用一致性备份
 
         :param app_consistency_status: The app_consistency_status of this OpExtendInfoBckup.
-        :type: str
+        :type app_consistency_status: str
         """
         self._app_consistency_status = app_consistency_status
 
@@ -148,7 +163,7 @@ class OpExtendInfoBckup:
         备份副本ID
 
         :param backup_id: The backup_id of this OpExtendInfoBckup.
-        :type: str
+        :type backup_id: str
         """
         self._backup_id = backup_id
 
@@ -170,7 +185,7 @@ class OpExtendInfoBckup:
         备份名称
 
         :param backup_name: The backup_name of this OpExtendInfoBckup.
-        :type: str
+        :type backup_name: str
         """
         self._backup_name = backup_name
 
@@ -192,7 +207,7 @@ class OpExtendInfoBckup:
         是否增备
 
         :param incremental: The incremental of this OpExtendInfoBckup.
-        :type: str
+        :type incremental: str
         """
         self._incremental = incremental
 

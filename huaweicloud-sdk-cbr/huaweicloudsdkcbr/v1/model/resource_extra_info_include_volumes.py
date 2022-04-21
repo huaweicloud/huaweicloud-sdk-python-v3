@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResourceExtraInfoIncludeVolumes:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ResourceExtraInfoIncludeVolumes:
     }
 
     def __init__(self, id=None, os_version=None):
-        """ResourceExtraInfoIncludeVolumes - a model defined in huaweicloud sdk"""
+        """ResourceExtraInfoIncludeVolumes
+
+        The model defined in huaweicloud sdk
+
+        :param id: 卷ID，仅支持uuid
+        :type id: str
+        :param os_version: 操作系统类型
+        :type os_version: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ResourceExtraInfoIncludeVolumes:
         卷ID，仅支持uuid
 
         :param id: The id of this ResourceExtraInfoIncludeVolumes.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -84,7 +91,7 @@ class ResourceExtraInfoIncludeVolumes:
         操作系统类型
 
         :param os_version: The os_version of this ResourceExtraInfoIncludeVolumes.
-        :type: str
+        :type os_version: str
         """
         self._os_version = os_version
 

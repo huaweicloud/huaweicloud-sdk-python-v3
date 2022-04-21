@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateTaskReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class CreateTaskReq:
     }
 
     def __init__(self, task_type=None, src_node=None, dst_node=None, enable_kms=None, description=None, migrate_since=None, bandwidth_policy=None, source_cdn=None, smn_config=None, enable_restore=None, enable_failed_object_recording=None):
-        """CreateTaskReq - a model defined in huaweicloud sdk"""
+        """CreateTaskReq
+
+        The model defined in huaweicloud sdk
+
+        :param task_type: 任务类型，默认为object。  list：对象列表迁移 url_list：URL列表迁移 object：文件/文件夹迁移，默认 prefix：对象前缀迁移
+        :type task_type: str
+        :param src_node: 
+        :type src_node: :class:`huaweicloudsdkoms.v2.SrcNodeReq`
+        :param dst_node: 
+        :type dst_node: :class:`huaweicloudsdkoms.v2.DstNodeReq`
+        :param enable_kms: 是否开启KMS加密，默认不开启。
+        :type enable_kms: bool
+        :param description: 任务描述，不能超过255个字符，且不能包含^&lt;&gt;&amp;\&quot;&#39;等特殊字符。
+        :type description: str
+        :param migrate_since: 以时间戳方式表示的迁移指定时间（单位：秒），表示仅迁移在指定时间之后修改的源端待迁移对象。默认不设置迁移指定时间。
+        :type migrate_since: int
+        :param bandwidth_policy: 配置流量控制策略。数组中一个元素对应一个时段的最大带宽，最多允许5个时段，且时段不能重叠。
+        :type bandwidth_policy: list[:class:`huaweicloudsdkoms.v2.BandwidthPolicyDto`]
+        :param source_cdn: 
+        :type source_cdn: :class:`huaweicloudsdkoms.v2.SourceCdnReq`
+        :param smn_config: 
+        :type smn_config: :class:`huaweicloudsdkoms.v2.SmnConfig`
+        :param enable_restore: 是否自动解冻归档数据，默认否。  开启后，如果遇到归档类型数据，会自动解冻再进行迁移。
+        :type enable_restore: bool
+        :param enable_failed_object_recording: 是否记录失败对象，默认开启。  开启后，如果有迁移失败对象，会在目的端存储失败对象信息。
+        :type enable_failed_object_recording: bool
+        """
         
         
 
@@ -106,7 +131,7 @@ class CreateTaskReq:
         任务类型，默认为object。  list：对象列表迁移 url_list：URL列表迁移 object：文件/文件夹迁移，默认 prefix：对象前缀迁移
 
         :param task_type: The task_type of this CreateTaskReq.
-        :type: str
+        :type task_type: str
         """
         self._task_type = task_type
 
@@ -116,7 +141,7 @@ class CreateTaskReq:
 
 
         :return: The src_node of this CreateTaskReq.
-        :rtype: SrcNodeReq
+        :rtype: :class:`huaweicloudsdkoms.v2.SrcNodeReq`
         """
         return self._src_node
 
@@ -126,7 +151,7 @@ class CreateTaskReq:
 
 
         :param src_node: The src_node of this CreateTaskReq.
-        :type: SrcNodeReq
+        :type src_node: :class:`huaweicloudsdkoms.v2.SrcNodeReq`
         """
         self._src_node = src_node
 
@@ -136,7 +161,7 @@ class CreateTaskReq:
 
 
         :return: The dst_node of this CreateTaskReq.
-        :rtype: DstNodeReq
+        :rtype: :class:`huaweicloudsdkoms.v2.DstNodeReq`
         """
         return self._dst_node
 
@@ -146,7 +171,7 @@ class CreateTaskReq:
 
 
         :param dst_node: The dst_node of this CreateTaskReq.
-        :type: DstNodeReq
+        :type dst_node: :class:`huaweicloudsdkoms.v2.DstNodeReq`
         """
         self._dst_node = dst_node
 
@@ -168,7 +193,7 @@ class CreateTaskReq:
         是否开启KMS加密，默认不开启。
 
         :param enable_kms: The enable_kms of this CreateTaskReq.
-        :type: bool
+        :type enable_kms: bool
         """
         self._enable_kms = enable_kms
 
@@ -190,7 +215,7 @@ class CreateTaskReq:
         任务描述，不能超过255个字符，且不能包含^<>&\"'等特殊字符。
 
         :param description: The description of this CreateTaskReq.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -212,7 +237,7 @@ class CreateTaskReq:
         以时间戳方式表示的迁移指定时间（单位：秒），表示仅迁移在指定时间之后修改的源端待迁移对象。默认不设置迁移指定时间。
 
         :param migrate_since: The migrate_since of this CreateTaskReq.
-        :type: int
+        :type migrate_since: int
         """
         self._migrate_since = migrate_since
 
@@ -223,7 +248,7 @@ class CreateTaskReq:
         配置流量控制策略。数组中一个元素对应一个时段的最大带宽，最多允许5个时段，且时段不能重叠。
 
         :return: The bandwidth_policy of this CreateTaskReq.
-        :rtype: list[BandwidthPolicyDto]
+        :rtype: list[:class:`huaweicloudsdkoms.v2.BandwidthPolicyDto`]
         """
         return self._bandwidth_policy
 
@@ -234,7 +259,7 @@ class CreateTaskReq:
         配置流量控制策略。数组中一个元素对应一个时段的最大带宽，最多允许5个时段，且时段不能重叠。
 
         :param bandwidth_policy: The bandwidth_policy of this CreateTaskReq.
-        :type: list[BandwidthPolicyDto]
+        :type bandwidth_policy: list[:class:`huaweicloudsdkoms.v2.BandwidthPolicyDto`]
         """
         self._bandwidth_policy = bandwidth_policy
 
@@ -244,7 +269,7 @@ class CreateTaskReq:
 
 
         :return: The source_cdn of this CreateTaskReq.
-        :rtype: SourceCdnReq
+        :rtype: :class:`huaweicloudsdkoms.v2.SourceCdnReq`
         """
         return self._source_cdn
 
@@ -254,7 +279,7 @@ class CreateTaskReq:
 
 
         :param source_cdn: The source_cdn of this CreateTaskReq.
-        :type: SourceCdnReq
+        :type source_cdn: :class:`huaweicloudsdkoms.v2.SourceCdnReq`
         """
         self._source_cdn = source_cdn
 
@@ -264,7 +289,7 @@ class CreateTaskReq:
 
 
         :return: The smn_config of this CreateTaskReq.
-        :rtype: SmnConfig
+        :rtype: :class:`huaweicloudsdkoms.v2.SmnConfig`
         """
         return self._smn_config
 
@@ -274,7 +299,7 @@ class CreateTaskReq:
 
 
         :param smn_config: The smn_config of this CreateTaskReq.
-        :type: SmnConfig
+        :type smn_config: :class:`huaweicloudsdkoms.v2.SmnConfig`
         """
         self._smn_config = smn_config
 
@@ -296,7 +321,7 @@ class CreateTaskReq:
         是否自动解冻归档数据，默认否。  开启后，如果遇到归档类型数据，会自动解冻再进行迁移。
 
         :param enable_restore: The enable_restore of this CreateTaskReq.
-        :type: bool
+        :type enable_restore: bool
         """
         self._enable_restore = enable_restore
 
@@ -318,7 +343,7 @@ class CreateTaskReq:
         是否记录失败对象，默认开启。  开启后，如果有迁移失败对象，会在目的端存储失败对象信息。
 
         :param enable_failed_object_recording: The enable_failed_object_recording of this CreateTaskReq.
-        :type: bool
+        :type enable_failed_object_recording: bool
         """
         self._enable_failed_object_recording = enable_failed_object_recording
 

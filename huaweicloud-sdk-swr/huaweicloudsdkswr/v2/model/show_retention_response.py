@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowRetentionResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowRetentionResponse(SdkResponse):
     }
 
     def __init__(self, algorithm=None, id=None, rules=None, scope=None):
-        """ShowRetentionResponse - a model defined in huaweicloud sdk"""
+        """ShowRetentionResponse
+
+        The model defined in huaweicloud sdk
+
+        :param algorithm: 回收规则匹配策略，or
+        :type algorithm: str
+        :param id: ID
+        :type id: int
+        :param rules: 镜像老化规则
+        :type rules: list[:class:`huaweicloudsdkswr.v2.Rule`]
+        :param scope: 保留字段
+        :type scope: str
+        """
         
         super(ShowRetentionResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class ShowRetentionResponse(SdkResponse):
         回收规则匹配策略，or
 
         :param algorithm: The algorithm of this ShowRetentionResponse.
-        :type: str
+        :type algorithm: str
         """
         self._algorithm = algorithm
 
@@ -95,7 +106,7 @@ class ShowRetentionResponse(SdkResponse):
         ID
 
         :param id: The id of this ShowRetentionResponse.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -106,7 +117,7 @@ class ShowRetentionResponse(SdkResponse):
         镜像老化规则
 
         :return: The rules of this ShowRetentionResponse.
-        :rtype: list[Rule]
+        :rtype: list[:class:`huaweicloudsdkswr.v2.Rule`]
         """
         return self._rules
 
@@ -117,7 +128,7 @@ class ShowRetentionResponse(SdkResponse):
         镜像老化规则
 
         :param rules: The rules of this ShowRetentionResponse.
-        :type: list[Rule]
+        :type rules: list[:class:`huaweicloudsdkswr.v2.Rule`]
         """
         self._rules = rules
 
@@ -139,7 +150,7 @@ class ShowRetentionResponse(SdkResponse):
         保留字段
 
         :param scope: The scope of this ShowRetentionResponse.
-        :type: str
+        :type scope: str
         """
         self._scope = scope
 

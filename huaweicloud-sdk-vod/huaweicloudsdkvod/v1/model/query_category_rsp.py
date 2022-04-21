@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryCategoryRsp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class QueryCategoryRsp:
     }
 
     def __init__(self, id=None, name=None, children=None):
-        """QueryCategoryRsp - a model defined in huaweicloud sdk"""
+        """QueryCategoryRsp
+
+        The model defined in huaweicloud sdk
+
+        :param id: 分类ID。
+        :type id: str
+        :param name: 分类名称。
+        :type name: str
+        :param children: 子分类列表。
+        :type children: list[:class:`huaweicloudsdkvod.v1.QueryCategoryRsp`]
+        """
         
         
 
@@ -68,7 +77,7 @@ class QueryCategoryRsp:
         分类ID。
 
         :param id: The id of this QueryCategoryRsp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -90,7 +99,7 @@ class QueryCategoryRsp:
         分类名称。
 
         :param name: The name of this QueryCategoryRsp.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -101,7 +110,7 @@ class QueryCategoryRsp:
         子分类列表。
 
         :return: The children of this QueryCategoryRsp.
-        :rtype: list[QueryCategoryRsp]
+        :rtype: list[:class:`huaweicloudsdkvod.v1.QueryCategoryRsp`]
         """
         return self._children
 
@@ -112,7 +121,7 @@ class QueryCategoryRsp:
         子分类列表。
 
         :param children: The children of this QueryCategoryRsp.
-        :type: list[QueryCategoryRsp]
+        :type children: list[:class:`huaweicloudsdkvod.v1.QueryCategoryRsp`]
         """
         self._children = children
 

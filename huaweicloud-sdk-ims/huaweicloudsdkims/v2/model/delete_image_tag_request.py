@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteImageTagRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteImageTagRequest:
     }
 
     def __init__(self, image_id=None, key=None):
-        """DeleteImageTagRequest - a model defined in huaweicloud sdk"""
+        """DeleteImageTagRequest
+
+        The model defined in huaweicloud sdk
+
+        :param image_id: 镜像ID。
+        :type image_id: str
+        :param key: 要删除的标签的键。
+        :type key: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class DeleteImageTagRequest:
         镜像ID。
 
         :param image_id: The image_id of this DeleteImageTagRequest.
-        :type: str
+        :type image_id: str
         """
         self._image_id = image_id
 
@@ -83,7 +90,7 @@ class DeleteImageTagRequest:
         要删除的标签的键。
 
         :param key: The key of this DeleteImageTagRequest.
-        :type: str
+        :type key: str
         """
         self._key = key
 

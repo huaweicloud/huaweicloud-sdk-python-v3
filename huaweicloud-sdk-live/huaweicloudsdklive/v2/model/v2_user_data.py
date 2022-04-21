@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class V2UserData:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class V2UserData:
     }
 
     def __init__(self, value=None, time=None):
-        """V2UserData - a model defined in huaweicloud sdk"""
+        """V2UserData
+
+        The model defined in huaweicloud sdk
+
+        :param value: 采样点观众数。
+        :type value: int
+        :param time: 采样时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。
+        :type time: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class V2UserData:
         采样点观众数。
 
         :param value: The value of this V2UserData.
-        :type: int
+        :type value: int
         """
         self._value = value
 
@@ -85,7 +92,7 @@ class V2UserData:
         采样时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。
 
         :param time: The time of this V2UserData.
-        :type: str
+        :type time: str
         """
         self._time = time
 

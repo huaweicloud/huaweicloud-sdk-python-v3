@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateLinkRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateLinkRequest:
     }
 
     def __init__(self, cluster_id=None, link_name=None, body=None):
-        """UpdateLinkRequest - a model defined in huaweicloud sdk"""
+        """UpdateLinkRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 集群ID
+        :type cluster_id: str
+        :param link_name: 连接名称
+        :type link_name: str
+        :param body: Body of the UpdateLinkRequest
+        :type body: :class:`huaweicloudsdkcdm.v1.CdmCreateAndUpdateLinkReq`
+        """
         
         
 
@@ -66,7 +75,7 @@ class UpdateLinkRequest:
         集群ID
 
         :param cluster_id: The cluster_id of this UpdateLinkRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -88,7 +97,7 @@ class UpdateLinkRequest:
         连接名称
 
         :param link_name: The link_name of this UpdateLinkRequest.
-        :type: str
+        :type link_name: str
         """
         self._link_name = link_name
 
@@ -98,7 +107,7 @@ class UpdateLinkRequest:
 
 
         :return: The body of this UpdateLinkRequest.
-        :rtype: CdmCreateAndUpdateLinkReq
+        :rtype: :class:`huaweicloudsdkcdm.v1.CdmCreateAndUpdateLinkReq`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class UpdateLinkRequest:
 
 
         :param body: The body of this UpdateLinkRequest.
-        :type: CdmCreateAndUpdateLinkReq
+        :type body: :class:`huaweicloudsdkcdm.v1.CdmCreateAndUpdateLinkReq`
         """
         self._body = body
 

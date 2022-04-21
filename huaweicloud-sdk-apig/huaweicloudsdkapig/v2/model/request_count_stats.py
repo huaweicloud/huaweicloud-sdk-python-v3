@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RequestCountStats:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class RequestCountStats:
     }
 
     def __init__(self, req_count=None, req_count2xx=None, req_count4xx=None, req_count5xx=None, req_count_error=None):
-        """RequestCountStats - a model defined in huaweicloud sdk"""
+        """RequestCountStats
+
+        The model defined in huaweicloud sdk
+
+        :param req_count: 请求总次数
+        :type req_count: int
+        :param req_count2xx: 2xx响应码总次数
+        :type req_count2xx: int
+        :param req_count4xx: 4xx响应码总次数
+        :type req_count4xx: int
+        :param req_count5xx: 5xx响应码总次数
+        :type req_count5xx: int
+        :param req_count_error: 错误次数
+        :type req_count_error: int
+        """
         
         
 
@@ -78,7 +91,7 @@ class RequestCountStats:
         请求总次数
 
         :param req_count: The req_count of this RequestCountStats.
-        :type: int
+        :type req_count: int
         """
         self._req_count = req_count
 
@@ -100,7 +113,7 @@ class RequestCountStats:
         2xx响应码总次数
 
         :param req_count2xx: The req_count2xx of this RequestCountStats.
-        :type: int
+        :type req_count2xx: int
         """
         self._req_count2xx = req_count2xx
 
@@ -122,7 +135,7 @@ class RequestCountStats:
         4xx响应码总次数
 
         :param req_count4xx: The req_count4xx of this RequestCountStats.
-        :type: int
+        :type req_count4xx: int
         """
         self._req_count4xx = req_count4xx
 
@@ -144,7 +157,7 @@ class RequestCountStats:
         5xx响应码总次数
 
         :param req_count5xx: The req_count5xx of this RequestCountStats.
-        :type: int
+        :type req_count5xx: int
         """
         self._req_count5xx = req_count5xx
 
@@ -166,7 +179,7 @@ class RequestCountStats:
         错误次数
 
         :param req_count_error: The req_count_error of this RequestCountStats.
-        :type: int
+        :type req_count_error: int
         """
         self._req_count_error = req_count_error
 

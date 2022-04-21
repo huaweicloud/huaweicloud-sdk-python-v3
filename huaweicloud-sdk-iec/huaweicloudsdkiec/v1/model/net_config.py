@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NetConfig:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class NetConfig:
     }
 
     def __init__(self, vpc_id=None, nic_num=None):
-        """NetConfig - a model defined in huaweicloud sdk"""
+        """NetConfig
+
+        The model defined in huaweicloud sdk
+
+        :param vpc_id: 边缘网络ID。  约束： - 创建边缘业务仅支持使用系统规划的虚拟私有云。
+        :type vpc_id: str
+        :param nic_num: 边缘实例绑定的网卡数量。  约束：一台边缘实例最少绑定一张网卡，最多绑定8张网卡。
+        :type nic_num: int
+        """
         
         
 
@@ -61,7 +68,7 @@ class NetConfig:
         边缘网络ID。  约束： - 创建边缘业务仅支持使用系统规划的虚拟私有云。
 
         :param vpc_id: The vpc_id of this NetConfig.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -83,7 +90,7 @@ class NetConfig:
         边缘实例绑定的网卡数量。  约束：一台边缘实例最少绑定一张网卡，最多绑定8张网卡。
 
         :param nic_num: The nic_num of this NetConfig.
-        :type: int
+        :type nic_num: int
         """
         self._nic_num = nic_num
 

@@ -52,21 +52,17 @@ class VpcClient(Client):
         """批量创建辅助弹性网卡
 
         批量创建辅助弹性网卡
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchCreateSubNetworkInterfaceRequest request
-        :return: BatchCreateSubNetworkInterfaceResponse
+        :param request: Request instance for BatchCreateSubNetworkInterface
+        :type request: :class:`huaweicloudsdkvpc.v3.BatchCreateSubNetworkInterfaceRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.BatchCreateSubNetworkInterfaceResponse`
         """
         return self.batch_create_sub_network_interface_with_http_info(request)
 
     def batch_create_sub_network_interface_with_http_info(self, request):
-        """批量创建辅助弹性网卡
-
-        批量创建辅助弹性网卡
-
-        :param BatchCreateSubNetworkInterfaceRequest request
-        :return: BatchCreateSubNetworkInterfaceResponse
-        """
-
         all_params = ['batch_create_sub_network_interface_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -110,26 +106,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_security_group(self, request):
         """创建安全组
 
         创建安全组
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateSecurityGroupRequest request
-        :return: CreateSecurityGroupResponse
+        :param request: Request instance for CreateSecurityGroup
+        :type request: :class:`huaweicloudsdkvpc.v3.CreateSecurityGroupRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.CreateSecurityGroupResponse`
         """
         return self.create_security_group_with_http_info(request)
 
     def create_security_group_with_http_info(self, request):
-        """创建安全组
-
-        创建安全组
-
-        :param CreateSecurityGroupRequest request
-        :return: CreateSecurityGroupResponse
-        """
-
         all_params = ['create_security_group_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -173,26 +164,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_security_group_rule(self, request):
         """创建安全组规则
 
         创建安全组规则
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateSecurityGroupRuleRequest request
-        :return: CreateSecurityGroupRuleResponse
+        :param request: Request instance for CreateSecurityGroupRule
+        :type request: :class:`huaweicloudsdkvpc.v3.CreateSecurityGroupRuleRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.CreateSecurityGroupRuleResponse`
         """
         return self.create_security_group_rule_with_http_info(request)
 
     def create_security_group_rule_with_http_info(self, request):
-        """创建安全组规则
-
-        创建安全组规则
-
-        :param CreateSecurityGroupRuleRequest request
-        :return: CreateSecurityGroupRuleResponse
-        """
-
         all_params = ['create_security_group_rule_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -236,26 +222,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_sub_network_interface(self, request):
         """创建辅助弹性网卡
 
         创建辅助弹性网卡
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateSubNetworkInterfaceRequest request
-        :return: CreateSubNetworkInterfaceResponse
+        :param request: Request instance for CreateSubNetworkInterface
+        :type request: :class:`huaweicloudsdkvpc.v3.CreateSubNetworkInterfaceRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.CreateSubNetworkInterfaceResponse`
         """
         return self.create_sub_network_interface_with_http_info(request)
 
     def create_sub_network_interface_with_http_info(self, request):
-        """创建辅助弹性网卡
-
-        创建辅助弹性网卡
-
-        :param CreateSubNetworkInterfaceRequest request
-        :return: CreateSubNetworkInterfaceResponse
-        """
-
         all_params = ['create_sub_network_interface_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -299,26 +280,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_security_group(self, request):
         """删除安全组
 
         删除安全组
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteSecurityGroupRequest request
-        :return: DeleteSecurityGroupResponse
+        :param request: Request instance for DeleteSecurityGroup
+        :type request: :class:`huaweicloudsdkvpc.v3.DeleteSecurityGroupRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.DeleteSecurityGroupResponse`
         """
         return self.delete_security_group_with_http_info(request)
 
     def delete_security_group_with_http_info(self, request):
-        """删除安全组
-
-        删除安全组
-
-        :param DeleteSecurityGroupRequest request
-        :return: DeleteSecurityGroupResponse
-        """
-
         all_params = ['security_group_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -362,26 +338,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_security_group_rule(self, request):
         """删除安全组规则
 
         删除安全组规则
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteSecurityGroupRuleRequest request
-        :return: DeleteSecurityGroupRuleResponse
+        :param request: Request instance for DeleteSecurityGroupRule
+        :type request: :class:`huaweicloudsdkvpc.v3.DeleteSecurityGroupRuleRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.DeleteSecurityGroupRuleResponse`
         """
         return self.delete_security_group_rule_with_http_info(request)
 
     def delete_security_group_rule_with_http_info(self, request):
-        """删除安全组规则
-
-        删除安全组规则
-
-        :param DeleteSecurityGroupRuleRequest request
-        :return: DeleteSecurityGroupRuleResponse
-        """
-
         all_params = ['security_group_rule_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -425,26 +396,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_sub_network_interface(self, request):
         """删除辅助弹性网卡
 
         删除辅助弹性网卡
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteSubNetworkInterfaceRequest request
-        :return: DeleteSubNetworkInterfaceResponse
+        :param request: Request instance for DeleteSubNetworkInterface
+        :type request: :class:`huaweicloudsdkvpc.v3.DeleteSubNetworkInterfaceRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.DeleteSubNetworkInterfaceResponse`
         """
         return self.delete_sub_network_interface_with_http_info(request)
 
     def delete_sub_network_interface_with_http_info(self, request):
-        """删除辅助弹性网卡
-
-        删除辅助弹性网卡
-
-        :param DeleteSubNetworkInterfaceRequest request
-        :return: DeleteSubNetworkInterfaceResponse
-        """
-
         all_params = ['sub_network_interface_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -488,26 +454,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_security_group_rules(self, request):
         """查询安全组规则列表
 
         查询安全组规则列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListSecurityGroupRulesRequest request
-        :return: ListSecurityGroupRulesResponse
+        :param request: Request instance for ListSecurityGroupRules
+        :type request: :class:`huaweicloudsdkvpc.v3.ListSecurityGroupRulesRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.ListSecurityGroupRulesResponse`
         """
         return self.list_security_group_rules_with_http_info(request)
 
     def list_security_group_rules_with_http_info(self, request):
-        """查询安全组规则列表
-
-        查询安全组规则列表
-
-        :param ListSecurityGroupRulesRequest request
-        :return: ListSecurityGroupRulesResponse
-        """
-
         all_params = ['limit', 'marker', 'id', 'security_group_id', 'protocol', 'description', 'remote_group_id', 'direction', 'action']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -572,26 +533,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_security_groups(self, request):
         """查询安全组列表
 
         查询某租户下的安全组列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListSecurityGroupsRequest request
-        :return: ListSecurityGroupsResponse
+        :param request: Request instance for ListSecurityGroups
+        :type request: :class:`huaweicloudsdkvpc.v3.ListSecurityGroupsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.ListSecurityGroupsResponse`
         """
         return self.list_security_groups_with_http_info(request)
 
     def list_security_groups_with_http_info(self, request):
-        """查询安全组列表
-
-        查询某租户下的安全组列表
-
-        :param ListSecurityGroupsRequest request
-        :return: ListSecurityGroupsResponse
-        """
-
         all_params = ['limit', 'marker', 'id', 'name', 'description', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -648,26 +604,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_sub_network_interfaces(self, request):
         """查询租户下辅助弹性网卡列表
 
         查询辅助弹性网卡列表，单次查询最多返回2000条数据
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListSubNetworkInterfacesRequest request
-        :return: ListSubNetworkInterfacesResponse
+        :param request: Request instance for ListSubNetworkInterfaces
+        :type request: :class:`huaweicloudsdkvpc.v3.ListSubNetworkInterfacesRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.ListSubNetworkInterfacesResponse`
         """
         return self.list_sub_network_interfaces_with_http_info(request)
 
     def list_sub_network_interfaces_with_http_info(self, request):
-        """查询租户下辅助弹性网卡列表
-
-        查询辅助弹性网卡列表，单次查询最多返回2000条数据
-
-        :param ListSubNetworkInterfacesRequest request
-        :return: ListSubNetworkInterfacesResponse
-        """
-
         all_params = ['limit', 'marker', 'id', 'virsubnet_id', 'private_ip_address', 'mac_address', 'vpc_id', 'description', 'parent_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -734,26 +685,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def migrate_sub_network_interface(self, request):
         """迁移辅助弹性网卡
 
         批量迁移辅助弹性网卡
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param MigrateSubNetworkInterfaceRequest request
-        :return: MigrateSubNetworkInterfaceResponse
+        :param request: Request instance for MigrateSubNetworkInterface
+        :type request: :class:`huaweicloudsdkvpc.v3.MigrateSubNetworkInterfaceRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.MigrateSubNetworkInterfaceResponse`
         """
         return self.migrate_sub_network_interface_with_http_info(request)
 
     def migrate_sub_network_interface_with_http_info(self, request):
-        """迁移辅助弹性网卡
-
-        批量迁移辅助弹性网卡
-
-        :param MigrateSubNetworkInterfaceRequest request
-        :return: MigrateSubNetworkInterfaceResponse
-        """
-
         all_params = ['migrate_sub_network_interface_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -797,26 +743,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_security_group(self, request):
         """查询安全组
 
         查询单个安全组详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowSecurityGroupRequest request
-        :return: ShowSecurityGroupResponse
+        :param request: Request instance for ShowSecurityGroup
+        :type request: :class:`huaweicloudsdkvpc.v3.ShowSecurityGroupRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.ShowSecurityGroupResponse`
         """
         return self.show_security_group_with_http_info(request)
 
     def show_security_group_with_http_info(self, request):
-        """查询安全组
-
-        查询单个安全组详情
-
-        :param ShowSecurityGroupRequest request
-        :return: ShowSecurityGroupResponse
-        """
-
         all_params = ['security_group_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -860,26 +801,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_security_group_rule(self, request):
         """查询安全组规则
 
         查询单个安全组规则
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowSecurityGroupRuleRequest request
-        :return: ShowSecurityGroupRuleResponse
+        :param request: Request instance for ShowSecurityGroupRule
+        :type request: :class:`huaweicloudsdkvpc.v3.ShowSecurityGroupRuleRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.ShowSecurityGroupRuleResponse`
         """
         return self.show_security_group_rule_with_http_info(request)
 
     def show_security_group_rule_with_http_info(self, request):
-        """查询安全组规则
-
-        查询单个安全组规则
-
-        :param ShowSecurityGroupRuleRequest request
-        :return: ShowSecurityGroupRuleResponse
-        """
-
         all_params = ['security_group_rule_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -923,26 +859,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_sub_network_interface(self, request):
         """查询租户下辅助弹性网卡
 
         查询辅助弹性网卡详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowSubNetworkInterfaceRequest request
-        :return: ShowSubNetworkInterfaceResponse
+        :param request: Request instance for ShowSubNetworkInterface
+        :type request: :class:`huaweicloudsdkvpc.v3.ShowSubNetworkInterfaceRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.ShowSubNetworkInterfaceResponse`
         """
         return self.show_sub_network_interface_with_http_info(request)
 
     def show_sub_network_interface_with_http_info(self, request):
-        """查询租户下辅助弹性网卡
-
-        查询辅助弹性网卡详情
-
-        :param ShowSubNetworkInterfaceRequest request
-        :return: ShowSubNetworkInterfaceResponse
-        """
-
         all_params = ['sub_network_interface_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -986,26 +917,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_sub_network_interfaces_quantity(self, request):
         """查询租户下辅助弹性网卡数目
 
         查询辅助弹性网卡数目
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowSubNetworkInterfacesQuantityRequest request
-        :return: ShowSubNetworkInterfacesQuantityResponse
+        :param request: Request instance for ShowSubNetworkInterfacesQuantity
+        :type request: :class:`huaweicloudsdkvpc.v3.ShowSubNetworkInterfacesQuantityRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.ShowSubNetworkInterfacesQuantityResponse`
         """
         return self.show_sub_network_interfaces_quantity_with_http_info(request)
 
     def show_sub_network_interfaces_quantity_with_http_info(self, request):
-        """查询租户下辅助弹性网卡数目
-
-        查询辅助弹性网卡数目
-
-        :param ShowSubNetworkInterfacesQuantityRequest request
-        :return: ShowSubNetworkInterfacesQuantityResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1047,26 +973,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_security_group(self, request):
         """更新安全组
 
         更新安全组
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateSecurityGroupRequest request
-        :return: UpdateSecurityGroupResponse
+        :param request: Request instance for UpdateSecurityGroup
+        :type request: :class:`huaweicloudsdkvpc.v3.UpdateSecurityGroupRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.UpdateSecurityGroupResponse`
         """
         return self.update_security_group_with_http_info(request)
 
     def update_security_group_with_http_info(self, request):
-        """更新安全组
-
-        更新安全组
-
-        :param UpdateSecurityGroupRequest request
-        :return: UpdateSecurityGroupResponse
-        """
-
         all_params = ['security_group_id', 'update_security_group_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1112,26 +1033,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_sub_network_interface(self, request):
         """更新辅助弹性网卡
 
         更新辅助弹性网卡
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateSubNetworkInterfaceRequest request
-        :return: UpdateSubNetworkInterfaceResponse
+        :param request: Request instance for UpdateSubNetworkInterface
+        :type request: :class:`huaweicloudsdkvpc.v3.UpdateSubNetworkInterfaceRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.UpdateSubNetworkInterfaceResponse`
         """
         return self.update_sub_network_interface_with_http_info(request)
 
     def update_sub_network_interface_with_http_info(self, request):
-        """更新辅助弹性网卡
-
-        更新辅助弹性网卡
-
-        :param UpdateSubNetworkInterfaceRequest request
-        :return: UpdateSubNetworkInterfaceResponse
-        """
-
         all_params = ['sub_network_interface_id', 'update_sub_network_interface_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1177,26 +1093,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_address_group(self, request):
         """创建地址组
 
         创建地址组
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateAddressGroupRequest request
-        :return: CreateAddressGroupResponse
+        :param request: Request instance for CreateAddressGroup
+        :type request: :class:`huaweicloudsdkvpc.v3.CreateAddressGroupRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.CreateAddressGroupResponse`
         """
         return self.create_address_group_with_http_info(request)
 
     def create_address_group_with_http_info(self, request):
-        """创建地址组
-
-        创建地址组
-
-        :param CreateAddressGroupRequest request
-        :return: CreateAddressGroupResponse
-        """
-
         all_params = ['create_address_group_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1240,26 +1151,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_address_group(self, request):
         """删除地址组
 
         删除地址组，非强制删除，删除前请确保未被其他资源引用
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteAddressGroupRequest request
-        :return: DeleteAddressGroupResponse
+        :param request: Request instance for DeleteAddressGroup
+        :type request: :class:`huaweicloudsdkvpc.v3.DeleteAddressGroupRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.DeleteAddressGroupResponse`
         """
         return self.delete_address_group_with_http_info(request)
 
     def delete_address_group_with_http_info(self, request):
-        """删除地址组
-
-        删除地址组，非强制删除，删除前请确保未被其他资源引用
-
-        :param DeleteAddressGroupRequest request
-        :return: DeleteAddressGroupResponse
-        """
-
         all_params = ['address_group_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1303,26 +1209,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_ip_address_group_force(self, request):
         """强制删除地址组
 
         强制删除地址组，删除的地址组与安全组规则关联时，会删除地址组与关联的安全组规则。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteIpAddressGroupForceRequest request
-        :return: DeleteIpAddressGroupForceResponse
+        :param request: Request instance for DeleteIpAddressGroupForce
+        :type request: :class:`huaweicloudsdkvpc.v3.DeleteIpAddressGroupForceRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.DeleteIpAddressGroupForceResponse`
         """
         return self.delete_ip_address_group_force_with_http_info(request)
 
     def delete_ip_address_group_force_with_http_info(self, request):
-        """强制删除地址组
-
-        强制删除地址组，删除的地址组与安全组规则关联时，会删除地址组与关联的安全组规则。
-
-        :param DeleteIpAddressGroupForceRequest request
-        :return: DeleteIpAddressGroupForceResponse
-        """
-
         all_params = ['address_group_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1366,26 +1267,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_address_group(self, request):
         """查询地址组列表
 
         查询地址组列表，根据过滤条件进行过滤。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListAddressGroupRequest request
-        :return: ListAddressGroupResponse
+        :param request: Request instance for ListAddressGroup
+        :type request: :class:`huaweicloudsdkvpc.v3.ListAddressGroupRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.ListAddressGroupResponse`
         """
         return self.list_address_group_with_http_info(request)
 
     def list_address_group_with_http_info(self, request):
-        """查询地址组列表
-
-        查询地址组列表，根据过滤条件进行过滤。
-
-        :param ListAddressGroupRequest request
-        :return: ListAddressGroupResponse
-        """
-
         all_params = ['limit', 'marker', 'id', 'name', 'ip_version', 'description']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1442,26 +1338,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_address_group(self, request):
         """查询地址组
 
         查询地址组详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowAddressGroupRequest request
-        :return: ShowAddressGroupResponse
+        :param request: Request instance for ShowAddressGroup
+        :type request: :class:`huaweicloudsdkvpc.v3.ShowAddressGroupRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.ShowAddressGroupResponse`
         """
         return self.show_address_group_with_http_info(request)
 
     def show_address_group_with_http_info(self, request):
-        """查询地址组
-
-        查询地址组详情。
-
-        :param ShowAddressGroupRequest request
-        :return: ShowAddressGroupResponse
-        """
-
         all_params = ['address_group_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1505,26 +1396,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_address_group(self, request):
         """更新地址组
 
         更新地址组。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateAddressGroupRequest request
-        :return: UpdateAddressGroupResponse
+        :param request: Request instance for UpdateAddressGroup
+        :type request: :class:`huaweicloudsdkvpc.v3.UpdateAddressGroupRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.UpdateAddressGroupResponse`
         """
         return self.update_address_group_with_http_info(request)
 
     def update_address_group_with_http_info(self, request):
-        """更新地址组
-
-        更新地址组。
-
-        :param UpdateAddressGroupRequest request
-        :return: UpdateAddressGroupResponse
-        """
-
         all_params = ['address_group_id', 'update_address_group_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1570,26 +1456,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def add_vpc_extend_cidr(self, request):
         """添加VPC扩展网段
 
         添加VPC的扩展网段
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param AddVpcExtendCidrRequest request
-        :return: AddVpcExtendCidrResponse
+        :param request: Request instance for AddVpcExtendCidr
+        :type request: :class:`huaweicloudsdkvpc.v3.AddVpcExtendCidrRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.AddVpcExtendCidrResponse`
         """
         return self.add_vpc_extend_cidr_with_http_info(request)
 
     def add_vpc_extend_cidr_with_http_info(self, request):
-        """添加VPC扩展网段
-
-        添加VPC的扩展网段
-
-        :param AddVpcExtendCidrRequest request
-        :return: AddVpcExtendCidrResponse
-        """
-
         all_params = ['vpc_id', 'add_vpc_extend_cidr_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1635,26 +1516,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_vpc(self, request):
         """创建VPC
 
         创建虚拟私有云
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateVpcRequest request
-        :return: CreateVpcResponse
+        :param request: Request instance for CreateVpc
+        :type request: :class:`huaweicloudsdkvpc.v3.CreateVpcRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.CreateVpcResponse`
         """
         return self.create_vpc_with_http_info(request)
 
     def create_vpc_with_http_info(self, request):
-        """创建VPC
-
-        创建虚拟私有云
-
-        :param CreateVpcRequest request
-        :return: CreateVpcResponse
-        """
-
         all_params = ['create_vpc_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1698,26 +1574,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_vpc(self, request):
         """删除VPC
 
         删除VPC
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteVpcRequest request
-        :return: DeleteVpcResponse
+        :param request: Request instance for DeleteVpc
+        :type request: :class:`huaweicloudsdkvpc.v3.DeleteVpcRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.DeleteVpcResponse`
         """
         return self.delete_vpc_with_http_info(request)
 
     def delete_vpc_with_http_info(self, request):
-        """删除VPC
-
-        删除VPC
-
-        :param DeleteVpcRequest request
-        :return: DeleteVpcResponse
-        """
-
         all_params = ['vpc_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1761,26 +1632,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_vpcs(self, request):
         """查询VPC列表
 
         查询vpc列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListVpcsRequest request
-        :return: ListVpcsResponse
+        :param request: Request instance for ListVpcs
+        :type request: :class:`huaweicloudsdkvpc.v3.ListVpcsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.ListVpcsResponse`
         """
         return self.list_vpcs_with_http_info(request)
 
     def list_vpcs_with_http_info(self, request):
-        """查询VPC列表
-
-        查询vpc列表
-
-        :param ListVpcsRequest request
-        :return: ListVpcsResponse
-        """
-
         all_params = ['limit', 'marker', 'id', 'name', 'description', 'cidr']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1838,26 +1704,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def remove_vpc_extend_cidr(self, request):
         """移除VPC扩展网段
 
         移除VPC扩展网段
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param RemoveVpcExtendCidrRequest request
-        :return: RemoveVpcExtendCidrResponse
+        :param request: Request instance for RemoveVpcExtendCidr
+        :type request: :class:`huaweicloudsdkvpc.v3.RemoveVpcExtendCidrRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.RemoveVpcExtendCidrResponse`
         """
         return self.remove_vpc_extend_cidr_with_http_info(request)
 
     def remove_vpc_extend_cidr_with_http_info(self, request):
-        """移除VPC扩展网段
-
-        移除VPC扩展网段
-
-        :param RemoveVpcExtendCidrRequest request
-        :return: RemoveVpcExtendCidrResponse
-        """
-
         all_params = ['vpc_id', 'remove_vpc_extend_cidr_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1903,26 +1764,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_vpc(self, request):
         """查询VPC详情
 
         查询vpc详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowVpcRequest request
-        :return: ShowVpcResponse
+        :param request: Request instance for ShowVpc
+        :type request: :class:`huaweicloudsdkvpc.v3.ShowVpcRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.ShowVpcResponse`
         """
         return self.show_vpc_with_http_info(request)
 
     def show_vpc_with_http_info(self, request):
-        """查询VPC详情
-
-        查询vpc详情
-
-        :param ShowVpcRequest request
-        :return: ShowVpcResponse
-        """
-
         all_params = ['vpc_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1966,26 +1822,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_vpc(self, request):
         """更新VPC
 
         更新vpc
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateVpcRequest request
-        :return: UpdateVpcResponse
+        :param request: Request instance for UpdateVpc
+        :type request: :class:`huaweicloudsdkvpc.v3.UpdateVpcRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.UpdateVpcResponse`
         """
         return self.update_vpc_with_http_info(request)
 
     def update_vpc_with_http_info(self, request):
-        """更新VPC
-
-        更新vpc
-
-        :param UpdateVpcRequest request
-        :return: UpdateVpcResponse
-        """
-
         all_params = ['vpc_id', 'update_vpc_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2030,7 +1881,6 @@ class VpcClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

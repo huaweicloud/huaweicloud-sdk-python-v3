@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AppAuthReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AppAuthReq:
     }
 
     def __init__(self, enable=None, expire=None):
-        """AppAuthReq - a model defined in huaweicloud sdk"""
+        """AppAuthReq
+
+        The model defined in huaweicloud sdk
+
+        :param enable: 开启或关闭URL鉴权
+        :type enable: bool
+        :param expire: 有效期，当开启鉴权时必填。  取值范围：[60，2592000]，缺省为300。  单位：秒。 
+        :type expire: int
+        """
         
         
 
@@ -62,7 +69,7 @@ class AppAuthReq:
         开启或关闭URL鉴权
 
         :param enable: The enable of this AppAuthReq.
-        :type: bool
+        :type enable: bool
         """
         self._enable = enable
 
@@ -84,7 +91,7 @@ class AppAuthReq:
         有效期，当开启鉴权时必填。  取值范围：[60，2592000]，缺省为300。  单位：秒。 
 
         :param expire: The expire of this AppAuthReq.
-        :type: int
+        :type expire: int
         """
         self._expire = expire
 

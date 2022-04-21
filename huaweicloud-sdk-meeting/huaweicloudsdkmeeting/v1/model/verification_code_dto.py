@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VerificationCodeDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class VerificationCodeDTO:
     }
 
     def __init__(self, contact=None, verification_code=None, country=None):
-        """VerificationCodeDTO - a model defined in huaweicloud sdk"""
+        """VerificationCodeDTO
+
+        The model defined in huaweicloud sdk
+
+        :param contact: 后台自动识别是手机号还是邮箱。 如果为手机号，必须加上国家码，例如中国大陆手机为“+86xxxxxxxxxxx”，当填写手机号时 “country”参数必填。 maxLength：255 minLength：1 
+        :type contact: str
+        :param verification_code: 验证码，在校验的场景时需要携带
+        :type verification_code: str
+        :param country: contact为手机号，则需带上手机号所属的国家。 例如国家为中国大陆则country参数取值为chinaPR 国家和国家码的对应关系请参考：https://support.huaweicloud.com/api-meeting/meeting_21_0109.html 
+        :type country: str
+        """
         
         
 
@@ -67,7 +76,7 @@ class VerificationCodeDTO:
         后台自动识别是手机号还是邮箱。 如果为手机号，必须加上国家码，例如中国大陆手机为“+86xxxxxxxxxxx”，当填写手机号时 “country”参数必填。 maxLength：255 minLength：1 
 
         :param contact: The contact of this VerificationCodeDTO.
-        :type: str
+        :type contact: str
         """
         self._contact = contact
 
@@ -89,7 +98,7 @@ class VerificationCodeDTO:
         验证码，在校验的场景时需要携带
 
         :param verification_code: The verification_code of this VerificationCodeDTO.
-        :type: str
+        :type verification_code: str
         """
         self._verification_code = verification_code
 
@@ -111,7 +120,7 @@ class VerificationCodeDTO:
         contact为手机号，则需带上手机号所属的国家。 例如国家为中国大陆则country参数取值为chinaPR 国家和国家码的对应关系请参考：https://support.huaweicloud.com/api-meeting/meeting_21_0109.html 
 
         :param country: The country of this VerificationCodeDTO.
-        :type: str
+        :type country: str
         """
         self._country = country
 

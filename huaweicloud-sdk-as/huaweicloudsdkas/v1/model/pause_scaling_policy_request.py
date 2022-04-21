@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PauseScalingPolicyRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class PauseScalingPolicyRequest:
     }
 
     def __init__(self, scaling_policy_id=None, body=None):
-        """PauseScalingPolicyRequest - a model defined in huaweicloud sdk"""
+        """PauseScalingPolicyRequest
+
+        The model defined in huaweicloud sdk
+
+        :param scaling_policy_id: 伸缩策略ID。
+        :type scaling_policy_id: str
+        :param body: Body of the PauseScalingPolicyRequest
+        :type body: :class:`huaweicloudsdkas.v1.PauseScalingPolicyOption`
+        """
         
         
 
@@ -62,7 +69,7 @@ class PauseScalingPolicyRequest:
         伸缩策略ID。
 
         :param scaling_policy_id: The scaling_policy_id of this PauseScalingPolicyRequest.
-        :type: str
+        :type scaling_policy_id: str
         """
         self._scaling_policy_id = scaling_policy_id
 
@@ -72,7 +79,7 @@ class PauseScalingPolicyRequest:
 
 
         :return: The body of this PauseScalingPolicyRequest.
-        :rtype: PauseScalingPolicyOption
+        :rtype: :class:`huaweicloudsdkas.v1.PauseScalingPolicyOption`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class PauseScalingPolicyRequest:
 
 
         :param body: The body of this PauseScalingPolicyRequest.
-        :type: PauseScalingPolicyOption
+        :type body: :class:`huaweicloudsdkas.v1.PauseScalingPolicyOption`
         """
         self._body = body
 

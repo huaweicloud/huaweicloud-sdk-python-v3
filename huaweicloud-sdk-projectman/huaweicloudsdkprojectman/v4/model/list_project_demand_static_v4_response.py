@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListProjectDemandStaticV4Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListProjectDemandStaticV4Response(SdkResponse):
     }
 
     def __init__(self, demand_statistics=None):
-        """ListProjectDemandStaticV4Response - a model defined in huaweicloud sdk"""
+        """ListProjectDemandStaticV4Response
+
+        The model defined in huaweicloud sdk
+
+        :param demand_statistics: 需求统计
+        :type demand_statistics: list[:class:`huaweicloudsdkprojectman.v4.DemandStatisticResponseV4`]
+        """
         
         super(ListProjectDemandStaticV4Response, self).__init__()
 
@@ -47,7 +52,7 @@ class ListProjectDemandStaticV4Response(SdkResponse):
         需求统计
 
         :return: The demand_statistics of this ListProjectDemandStaticV4Response.
-        :rtype: list[DemandStatisticResponseV4]
+        :rtype: list[:class:`huaweicloudsdkprojectman.v4.DemandStatisticResponseV4`]
         """
         return self._demand_statistics
 
@@ -58,7 +63,7 @@ class ListProjectDemandStaticV4Response(SdkResponse):
         需求统计
 
         :param demand_statistics: The demand_statistics of this ListProjectDemandStaticV4Response.
-        :type: list[DemandStatisticResponseV4]
+        :type demand_statistics: list[:class:`huaweicloudsdkprojectman.v4.DemandStatisticResponseV4`]
         """
         self._demand_statistics = demand_statistics
 

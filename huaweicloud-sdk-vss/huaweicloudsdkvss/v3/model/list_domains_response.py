@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDomainsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListDomainsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, top_level_domain_num=None, domains=None):
-        """ListDomainsResponse - a model defined in huaweicloud sdk"""
+        """ListDomainsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 域名总数
+        :type total: int
+        :param top_level_domain_num: 一级域名总数
+        :type top_level_domain_num: int
+        :param domains: 域名列表
+        :type domains: list[:class:`huaweicloudsdkvss.v3.DomainItem`]
+        """
         
         super(ListDomainsResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListDomainsResponse(SdkResponse):
         域名总数
 
         :param total: The total of this ListDomainsResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -90,7 +99,7 @@ class ListDomainsResponse(SdkResponse):
         一级域名总数
 
         :param top_level_domain_num: The top_level_domain_num of this ListDomainsResponse.
-        :type: int
+        :type top_level_domain_num: int
         """
         self._top_level_domain_num = top_level_domain_num
 
@@ -101,7 +110,7 @@ class ListDomainsResponse(SdkResponse):
         域名列表
 
         :return: The domains of this ListDomainsResponse.
-        :rtype: list[DomainItem]
+        :rtype: list[:class:`huaweicloudsdkvss.v3.DomainItem`]
         """
         return self._domains
 
@@ -112,7 +121,7 @@ class ListDomainsResponse(SdkResponse):
         域名列表
 
         :param domains: The domains of this ListDomainsResponse.
-        :type: list[DomainItem]
+        :type domains: list[:class:`huaweicloudsdkvss.v3.DomainItem`]
         """
         self._domains = domains
 

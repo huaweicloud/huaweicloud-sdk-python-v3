@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SetBackupPolicyRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class SetBackupPolicyRequestBody:
     }
 
     def __init__(self, backup_policy=None, reserve_backups=None):
-        """SetBackupPolicyRequestBody - a model defined in huaweicloud sdk"""
+        """SetBackupPolicyRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param backup_policy: 
+        :type backup_policy: :class:`huaweicloudsdkrds.v3.BackupPolicy`
+        :param reserve_backups: 仅关闭备份策略时有效。  - true（默认），表示保留自动备份和差异备份。 - false，表示关闭备份策略的同时，删除已有的自动备份和差异备份。
+        :type reserve_backups: bool
+        """
         
         
 
@@ -50,7 +57,7 @@ class SetBackupPolicyRequestBody:
 
 
         :return: The backup_policy of this SetBackupPolicyRequestBody.
-        :rtype: BackupPolicy
+        :rtype: :class:`huaweicloudsdkrds.v3.BackupPolicy`
         """
         return self._backup_policy
 
@@ -60,7 +67,7 @@ class SetBackupPolicyRequestBody:
 
 
         :param backup_policy: The backup_policy of this SetBackupPolicyRequestBody.
-        :type: BackupPolicy
+        :type backup_policy: :class:`huaweicloudsdkrds.v3.BackupPolicy`
         """
         self._backup_policy = backup_policy
 
@@ -82,7 +89,7 @@ class SetBackupPolicyRequestBody:
         仅关闭备份策略时有效。  - true（默认），表示保留自动备份和差异备份。 - false，表示关闭备份策略的同时，删除已有的自动备份和差异备份。
 
         :param reserve_backups: The reserve_backups of this SetBackupPolicyRequestBody.
-        :type: bool
+        :type reserve_backups: bool
         """
         self._reserve_backups = reserve_backups
 

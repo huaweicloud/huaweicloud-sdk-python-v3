@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowStatisticalDataResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ShowStatisticalDataResponse(SdkResponse):
     }
 
     def __init__(self, repo_name=None, commit_count=None, repo_size=None, last_commit_time=None, code_lines=None, branch_count=None, archive_url=None):
-        """ShowStatisticalDataResponse - a model defined in huaweicloud sdk"""
+        """ShowStatisticalDataResponse
+
+        The model defined in huaweicloud sdk
+
+        :param repo_name: 仓库名称
+        :type repo_name: str
+        :param commit_count: 提交次数
+        :type commit_count: int
+        :param repo_size: 仓库容量
+        :type repo_size: str
+        :param last_commit_time: 最近一次提交时间
+        :type last_commit_time: str
+        :param code_lines: 代码行数
+        :type code_lines: int
+        :param branch_count: 分支数量
+        :type branch_count: int
+        :param archive_url: 代码仓下载地址
+        :type archive_url: str
+        """
         
         super(ShowStatisticalDataResponse, self).__init__()
 
@@ -88,7 +105,7 @@ class ShowStatisticalDataResponse(SdkResponse):
         仓库名称
 
         :param repo_name: The repo_name of this ShowStatisticalDataResponse.
-        :type: str
+        :type repo_name: str
         """
         self._repo_name = repo_name
 
@@ -110,7 +127,7 @@ class ShowStatisticalDataResponse(SdkResponse):
         提交次数
 
         :param commit_count: The commit_count of this ShowStatisticalDataResponse.
-        :type: int
+        :type commit_count: int
         """
         self._commit_count = commit_count
 
@@ -132,7 +149,7 @@ class ShowStatisticalDataResponse(SdkResponse):
         仓库容量
 
         :param repo_size: The repo_size of this ShowStatisticalDataResponse.
-        :type: str
+        :type repo_size: str
         """
         self._repo_size = repo_size
 
@@ -154,7 +171,7 @@ class ShowStatisticalDataResponse(SdkResponse):
         最近一次提交时间
 
         :param last_commit_time: The last_commit_time of this ShowStatisticalDataResponse.
-        :type: str
+        :type last_commit_time: str
         """
         self._last_commit_time = last_commit_time
 
@@ -176,7 +193,7 @@ class ShowStatisticalDataResponse(SdkResponse):
         代码行数
 
         :param code_lines: The code_lines of this ShowStatisticalDataResponse.
-        :type: int
+        :type code_lines: int
         """
         self._code_lines = code_lines
 
@@ -198,7 +215,7 @@ class ShowStatisticalDataResponse(SdkResponse):
         分支数量
 
         :param branch_count: The branch_count of this ShowStatisticalDataResponse.
-        :type: int
+        :type branch_count: int
         """
         self._branch_count = branch_count
 
@@ -220,7 +237,7 @@ class ShowStatisticalDataResponse(SdkResponse):
         代码仓下载地址
 
         :param archive_url: The archive_url of this ShowStatisticalDataResponse.
-        :type: str
+        :type archive_url: str
         """
         self._archive_url = archive_url
 

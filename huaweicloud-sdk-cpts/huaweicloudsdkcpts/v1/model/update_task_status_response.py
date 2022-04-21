@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateTaskStatusResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UpdateTaskStatusResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, extend=None, result=None):
-        """UpdateTaskStatusResponse - a model defined in huaweicloud sdk"""
+        """UpdateTaskStatusResponse
+
+        The model defined in huaweicloud sdk
+
+        :param code: code
+        :type code: str
+        :param message: message
+        :type message: str
+        :param extend: extend
+        :type extend: str
+        :param result: 
+        :type result: :class:`huaweicloudsdkcpts.v1.UpdateTaskStatusResult`
+        """
         
         super(UpdateTaskStatusResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class UpdateTaskStatusResponse(SdkResponse):
         code
 
         :param code: The code of this UpdateTaskStatusResponse.
-        :type: str
+        :type code: str
         """
         self._code = code
 
@@ -95,7 +106,7 @@ class UpdateTaskStatusResponse(SdkResponse):
         message
 
         :param message: The message of this UpdateTaskStatusResponse.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -117,7 +128,7 @@ class UpdateTaskStatusResponse(SdkResponse):
         extend
 
         :param extend: The extend of this UpdateTaskStatusResponse.
-        :type: str
+        :type extend: str
         """
         self._extend = extend
 
@@ -127,7 +138,7 @@ class UpdateTaskStatusResponse(SdkResponse):
 
 
         :return: The result of this UpdateTaskStatusResponse.
-        :rtype: UpdateTaskStatusResult
+        :rtype: :class:`huaweicloudsdkcpts.v1.UpdateTaskStatusResult`
         """
         return self._result
 
@@ -137,7 +148,7 @@ class UpdateTaskStatusResponse(SdkResponse):
 
 
         :param result: The result of this UpdateTaskStatusResponse.
-        :type: UpdateTaskStatusResult
+        :type result: :class:`huaweicloudsdkcpts.v1.UpdateTaskStatusResult`
         """
         self._result = result
 

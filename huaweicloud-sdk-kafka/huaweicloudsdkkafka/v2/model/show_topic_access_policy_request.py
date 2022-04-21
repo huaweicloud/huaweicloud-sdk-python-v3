@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowTopicAccessPolicyRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowTopicAccessPolicyRequest:
     }
 
     def __init__(self, instance_id=None, topic_name=None):
-        """ShowTopicAccessPolicyRequest - a model defined in huaweicloud sdk"""
+        """ShowTopicAccessPolicyRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param topic_name: Topic名称。
+        :type topic_name: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ShowTopicAccessPolicyRequest:
         实例ID。
 
         :param instance_id: The instance_id of this ShowTopicAccessPolicyRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -83,7 +90,7 @@ class ShowTopicAccessPolicyRequest:
         Topic名称。
 
         :param topic_name: The topic_name of this ShowTopicAccessPolicyRequest.
-        :type: str
+        :type topic_name: str
         """
         self._topic_name = topic_name
 

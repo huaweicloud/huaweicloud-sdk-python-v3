@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AssetProcessReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class AssetProcessReq:
     }
 
     def __init__(self, asset_id=None, template_group_name=None, auto_encrypt=None, thumbnail=None, subtitle_id=None):
-        """AssetProcessReq - a model defined in huaweicloud sdk"""
+        """AssetProcessReq
+
+        The model defined in huaweicloud sdk
+
+        :param asset_id: 媒资ID。
+        :type asset_id: str
+        :param template_group_name: 转码模板组名称。   若不为空，则使用指定的转码模板对上传的音视频进行转码，您可以在视频点播控制台配置转码模板，具体请参见[转码设置](https://support.huaweicloud.com/usermanual-vod/vod_01_0072.html)。
+        :type template_group_name: str
+        :param auto_encrypt: 是否自动加密。  取值如下： - 0：表示不加密。 - 1：表示需要加密。  默认值：0。  加密与转码必须要一起进行，当需要加密时，转码参数不能为空，且转码输出格式必须要为HLS。
+        :type auto_encrypt: int
+        :param thumbnail: 
+        :type thumbnail: :class:`huaweicloudsdkvod.v1.Thumbnail`
+        :param subtitle_id: 字幕文件ID。  &gt; 仅在[创建媒资](https://support.huaweicloud.com/api-vod/vod_04_0196.html)时，请求参数设置了“**subtitles**”时，该参数设置才生效。
+        :type subtitle_id: list[int]
+        """
         
         
 
@@ -77,7 +90,7 @@ class AssetProcessReq:
         媒资ID。
 
         :param asset_id: The asset_id of this AssetProcessReq.
-        :type: str
+        :type asset_id: str
         """
         self._asset_id = asset_id
 
@@ -99,7 +112,7 @@ class AssetProcessReq:
         转码模板组名称。   若不为空，则使用指定的转码模板对上传的音视频进行转码，您可以在视频点播控制台配置转码模板，具体请参见[转码设置](https://support.huaweicloud.com/usermanual-vod/vod_01_0072.html)。
 
         :param template_group_name: The template_group_name of this AssetProcessReq.
-        :type: str
+        :type template_group_name: str
         """
         self._template_group_name = template_group_name
 
@@ -121,7 +134,7 @@ class AssetProcessReq:
         是否自动加密。  取值如下： - 0：表示不加密。 - 1：表示需要加密。  默认值：0。  加密与转码必须要一起进行，当需要加密时，转码参数不能为空，且转码输出格式必须要为HLS。
 
         :param auto_encrypt: The auto_encrypt of this AssetProcessReq.
-        :type: int
+        :type auto_encrypt: int
         """
         self._auto_encrypt = auto_encrypt
 
@@ -131,7 +144,7 @@ class AssetProcessReq:
 
 
         :return: The thumbnail of this AssetProcessReq.
-        :rtype: Thumbnail
+        :rtype: :class:`huaweicloudsdkvod.v1.Thumbnail`
         """
         return self._thumbnail
 
@@ -141,7 +154,7 @@ class AssetProcessReq:
 
 
         :param thumbnail: The thumbnail of this AssetProcessReq.
-        :type: Thumbnail
+        :type thumbnail: :class:`huaweicloudsdkvod.v1.Thumbnail`
         """
         self._thumbnail = thumbnail
 
@@ -163,7 +176,7 @@ class AssetProcessReq:
         字幕文件ID。  > 仅在[创建媒资](https://support.huaweicloud.com/api-vod/vod_04_0196.html)时，请求参数设置了“**subtitles**”时，该参数设置才生效。
 
         :param subtitle_id: The subtitle_id of this AssetProcessReq.
-        :type: list[int]
+        :type subtitle_id: list[int]
         """
         self._subtitle_id = subtitle_id
 

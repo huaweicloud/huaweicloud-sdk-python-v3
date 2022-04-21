@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NotificationList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class NotificationList:
     }
 
     def __init__(self, channel_name=None, status=None, updated_time=None, tc3_need=None, invitor_info=None, invitee_info=None, hide=None, invitee_orgs=None, read_status=None, cross_version_upgrade=None):
-        """NotificationList - a model defined in huaweicloud sdk"""
+        """NotificationList
+
+        The model defined in huaweicloud sdk
+
+        :param channel_name: 通道名称
+        :type channel_name: str
+        :param status: 当前状态
+        :type status: str
+        :param updated_time: 更新时间
+        :type updated_time: str
+        :param tc3_need: 是否开启可信
+        :type tc3_need: bool
+        :param invitor_info: 
+        :type invitor_info: :class:`huaweicloudsdkbcs.v2.InvitorInfo`
+        :param invitee_info: 
+        :type invitee_info: :class:`huaweicloudsdkbcs.v2.InviteeInfo`
+        :param hide: 是否删除
+        :type hide: int
+        :param invitee_orgs: 被邀请的组织信息
+        :type invitee_orgs: list[:class:`huaweicloudsdkbcs.v2.OrganizationV2`]
+        :param read_status: 阅读状态值
+        :type read_status: int
+        :param cross_version_upgrade: 跨版本进行升级
+        :type cross_version_upgrade: str
+        """
         
         
 
@@ -103,7 +126,7 @@ class NotificationList:
         通道名称
 
         :param channel_name: The channel_name of this NotificationList.
-        :type: str
+        :type channel_name: str
         """
         self._channel_name = channel_name
 
@@ -125,7 +148,7 @@ class NotificationList:
         当前状态
 
         :param status: The status of this NotificationList.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -147,7 +170,7 @@ class NotificationList:
         更新时间
 
         :param updated_time: The updated_time of this NotificationList.
-        :type: str
+        :type updated_time: str
         """
         self._updated_time = updated_time
 
@@ -169,7 +192,7 @@ class NotificationList:
         是否开启可信
 
         :param tc3_need: The tc3_need of this NotificationList.
-        :type: bool
+        :type tc3_need: bool
         """
         self._tc3_need = tc3_need
 
@@ -179,7 +202,7 @@ class NotificationList:
 
 
         :return: The invitor_info of this NotificationList.
-        :rtype: InvitorInfo
+        :rtype: :class:`huaweicloudsdkbcs.v2.InvitorInfo`
         """
         return self._invitor_info
 
@@ -189,7 +212,7 @@ class NotificationList:
 
 
         :param invitor_info: The invitor_info of this NotificationList.
-        :type: InvitorInfo
+        :type invitor_info: :class:`huaweicloudsdkbcs.v2.InvitorInfo`
         """
         self._invitor_info = invitor_info
 
@@ -199,7 +222,7 @@ class NotificationList:
 
 
         :return: The invitee_info of this NotificationList.
-        :rtype: InviteeInfo
+        :rtype: :class:`huaweicloudsdkbcs.v2.InviteeInfo`
         """
         return self._invitee_info
 
@@ -209,7 +232,7 @@ class NotificationList:
 
 
         :param invitee_info: The invitee_info of this NotificationList.
-        :type: InviteeInfo
+        :type invitee_info: :class:`huaweicloudsdkbcs.v2.InviteeInfo`
         """
         self._invitee_info = invitee_info
 
@@ -231,7 +254,7 @@ class NotificationList:
         是否删除
 
         :param hide: The hide of this NotificationList.
-        :type: int
+        :type hide: int
         """
         self._hide = hide
 
@@ -242,7 +265,7 @@ class NotificationList:
         被邀请的组织信息
 
         :return: The invitee_orgs of this NotificationList.
-        :rtype: list[OrganizationV2]
+        :rtype: list[:class:`huaweicloudsdkbcs.v2.OrganizationV2`]
         """
         return self._invitee_orgs
 
@@ -253,7 +276,7 @@ class NotificationList:
         被邀请的组织信息
 
         :param invitee_orgs: The invitee_orgs of this NotificationList.
-        :type: list[OrganizationV2]
+        :type invitee_orgs: list[:class:`huaweicloudsdkbcs.v2.OrganizationV2`]
         """
         self._invitee_orgs = invitee_orgs
 
@@ -275,7 +298,7 @@ class NotificationList:
         阅读状态值
 
         :param read_status: The read_status of this NotificationList.
-        :type: int
+        :type read_status: int
         """
         self._read_status = read_status
 
@@ -297,7 +320,7 @@ class NotificationList:
         跨版本进行升级
 
         :param cross_version_upgrade: The cross_version_upgrade of this NotificationList.
-        :type: str
+        :type cross_version_upgrade: str
         """
         self._cross_version_upgrade = cross_version_upgrade
 

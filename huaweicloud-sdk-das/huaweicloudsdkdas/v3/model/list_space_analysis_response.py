@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSpaceAnalysisResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListSpaceAnalysisResponse(SdkResponse):
     }
 
     def __init__(self, total=None, db_objects=None, instance_info=None):
-        """ListSpaceAnalysisResponse - a model defined in huaweicloud sdk"""
+        """ListSpaceAnalysisResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 记录总数
+        :type total: int
+        :param db_objects: 数据库对象列表
+        :type db_objects: list[:class:`huaweicloudsdkdas.v3.DbObjectSpaceInfo`]
+        :param instance_info: 
+        :type instance_info: :class:`huaweicloudsdkdas.v3.InstanceSpaceInfo`
+        """
         
         super(ListSpaceAnalysisResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListSpaceAnalysisResponse(SdkResponse):
         记录总数
 
         :param total: The total of this ListSpaceAnalysisResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -79,7 +88,7 @@ class ListSpaceAnalysisResponse(SdkResponse):
         数据库对象列表
 
         :return: The db_objects of this ListSpaceAnalysisResponse.
-        :rtype: list[DbObjectSpaceInfo]
+        :rtype: list[:class:`huaweicloudsdkdas.v3.DbObjectSpaceInfo`]
         """
         return self._db_objects
 
@@ -90,7 +99,7 @@ class ListSpaceAnalysisResponse(SdkResponse):
         数据库对象列表
 
         :param db_objects: The db_objects of this ListSpaceAnalysisResponse.
-        :type: list[DbObjectSpaceInfo]
+        :type db_objects: list[:class:`huaweicloudsdkdas.v3.DbObjectSpaceInfo`]
         """
         self._db_objects = db_objects
 
@@ -100,7 +109,7 @@ class ListSpaceAnalysisResponse(SdkResponse):
 
 
         :return: The instance_info of this ListSpaceAnalysisResponse.
-        :rtype: InstanceSpaceInfo
+        :rtype: :class:`huaweicloudsdkdas.v3.InstanceSpaceInfo`
         """
         return self._instance_info
 
@@ -110,7 +119,7 @@ class ListSpaceAnalysisResponse(SdkResponse):
 
 
         :param instance_info: The instance_info of this ListSpaceAnalysisResponse.
-        :type: InstanceSpaceInfo
+        :type instance_info: :class:`huaweicloudsdkdas.v3.InstanceSpaceInfo`
         """
         self._instance_info = instance_info
 

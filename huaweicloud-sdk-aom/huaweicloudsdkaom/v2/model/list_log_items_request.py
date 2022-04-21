@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListLogItemsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListLogItemsRequest:
     }
 
     def __init__(self, type=None, body=None):
-        """ListLogItemsRequest - a model defined in huaweicloud sdk"""
+        """ListLogItemsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param type: 日志接口调用方式,当值为\&quot;querylogs\&quot;时接口功能为查询日志内容。
+        :type type: str
+        :param body: Body of the ListLogItemsRequest
+        :type body: :class:`huaweicloudsdkaom.v2.QueryBodyParam`
+        """
         
         
 
@@ -62,7 +69,7 @@ class ListLogItemsRequest:
         日志接口调用方式,当值为\"querylogs\"时接口功能为查询日志内容。
 
         :param type: The type of this ListLogItemsRequest.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -72,7 +79,7 @@ class ListLogItemsRequest:
 
 
         :return: The body of this ListLogItemsRequest.
-        :rtype: QueryBodyParam
+        :rtype: :class:`huaweicloudsdkaom.v2.QueryBodyParam`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class ListLogItemsRequest:
 
 
         :param body: The body of this ListLogItemsRequest.
-        :type: QueryBodyParam
+        :type body: :class:`huaweicloudsdkaom.v2.QueryBodyParam`
         """
         self._body = body
 

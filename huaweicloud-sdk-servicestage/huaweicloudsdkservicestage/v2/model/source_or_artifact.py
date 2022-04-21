@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SourceOrArtifact:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class SourceOrArtifact:
     }
 
     def __init__(self, storage=None, type=None, url=None, auth=None, repo_type=None, repo_url=None, repo_ref=None, repo_auth=None):
-        """SourceOrArtifact - a model defined in huaweicloud sdk"""
+        """SourceOrArtifact
+
+        The model defined in huaweicloud sdk
+
+        :param storage: 存储方式，支持软件仓库swr和对象存储obs。
+        :type storage: str
+        :param type: 类别，支持package。
+        :type type: str
+        :param url: 软件包源码地址，如https://{IP}:20202/xxx/xxx.jar。
+        :type url: str
+        :param auth: 认证方式，支持iam，none，默认是iam。
+        :type auth: str
+        :param repo_type: 
+        :type repo_type: :class:`huaweicloudsdkservicestage.v2.SourceRepoType`
+        :param repo_url: 代码仓url，如：https://github.com/example/demo.git
+        :type repo_url: str
+        :param repo_ref: 代码分支或者Tag，默认是master。
+        :type repo_ref: str
+        :param repo_auth: 授权名称，在授权列表获取。
+        :type repo_auth: str
+        """
         
         
 
@@ -93,7 +112,7 @@ class SourceOrArtifact:
         存储方式，支持软件仓库swr和对象存储obs。
 
         :param storage: The storage of this SourceOrArtifact.
-        :type: str
+        :type storage: str
         """
         self._storage = storage
 
@@ -115,7 +134,7 @@ class SourceOrArtifact:
         类别，支持package。
 
         :param type: The type of this SourceOrArtifact.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -137,7 +156,7 @@ class SourceOrArtifact:
         软件包源码地址，如https://{IP}:20202/xxx/xxx.jar。
 
         :param url: The url of this SourceOrArtifact.
-        :type: str
+        :type url: str
         """
         self._url = url
 
@@ -159,7 +178,7 @@ class SourceOrArtifact:
         认证方式，支持iam，none，默认是iam。
 
         :param auth: The auth of this SourceOrArtifact.
-        :type: str
+        :type auth: str
         """
         self._auth = auth
 
@@ -169,7 +188,7 @@ class SourceOrArtifact:
 
 
         :return: The repo_type of this SourceOrArtifact.
-        :rtype: SourceRepoType
+        :rtype: :class:`huaweicloudsdkservicestage.v2.SourceRepoType`
         """
         return self._repo_type
 
@@ -179,7 +198,7 @@ class SourceOrArtifact:
 
 
         :param repo_type: The repo_type of this SourceOrArtifact.
-        :type: SourceRepoType
+        :type repo_type: :class:`huaweicloudsdkservicestage.v2.SourceRepoType`
         """
         self._repo_type = repo_type
 
@@ -201,7 +220,7 @@ class SourceOrArtifact:
         代码仓url，如：https://github.com/example/demo.git
 
         :param repo_url: The repo_url of this SourceOrArtifact.
-        :type: str
+        :type repo_url: str
         """
         self._repo_url = repo_url
 
@@ -223,7 +242,7 @@ class SourceOrArtifact:
         代码分支或者Tag，默认是master。
 
         :param repo_ref: The repo_ref of this SourceOrArtifact.
-        :type: str
+        :type repo_ref: str
         """
         self._repo_ref = repo_ref
 
@@ -245,7 +264,7 @@ class SourceOrArtifact:
         授权名称，在授权列表获取。
 
         :param repo_auth: The repo_auth of this SourceOrArtifact.
-        :type: str
+        :type repo_auth: str
         """
         self._repo_auth = repo_auth
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdatePolicyProtectHostRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdatePolicyProtectHostRequest:
     }
 
     def __init__(self, enterprise_project_id=None, policy_id=None, hosts=None):
-        """UpdatePolicyProtectHostRequest - a model defined in huaweicloud sdk"""
+        """UpdatePolicyProtectHostRequest
+
+        The model defined in huaweicloud sdk
+
+        :param enterprise_project_id: 企业项目id
+        :type enterprise_project_id: str
+        :param policy_id: 防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
+        :type policy_id: str
+        :param hosts: 域名id，您可以通过调用查询云模式防护域名列表（ListHost）获取域名id
+        :type hosts: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class UpdatePolicyProtectHostRequest:
         企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this UpdatePolicyProtectHostRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -88,7 +97,7 @@ class UpdatePolicyProtectHostRequest:
         防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
 
         :param policy_id: The policy_id of this UpdatePolicyProtectHostRequest.
-        :type: str
+        :type policy_id: str
         """
         self._policy_id = policy_id
 
@@ -110,7 +119,7 @@ class UpdatePolicyProtectHostRequest:
         域名id，您可以通过调用查询云模式防护域名列表（ListHost）获取域名id
 
         :param hosts: The hosts of this UpdatePolicyProtectHostRequest.
-        :type: str
+        :type hosts: str
         """
         self._hosts = hosts
 

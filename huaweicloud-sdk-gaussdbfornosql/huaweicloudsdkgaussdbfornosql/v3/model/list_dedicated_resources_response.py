@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDedicatedResourcesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListDedicatedResourcesResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, resources=None):
-        """ListDedicatedResourcesResponse - a model defined in huaweicloud sdk"""
+        """ListDedicatedResourcesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total_count: 总记录数。
+        :type total_count: int
+        :param resources: 专属资源信息列表。
+        :type resources: list[:class:`huaweicloudsdkgaussdbfornosql.v3.ListDedicatedResourceResult`]
+        """
         
         super(ListDedicatedResourcesResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListDedicatedResourcesResponse(SdkResponse):
         总记录数。
 
         :param total_count: The total_count of this ListDedicatedResourcesResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 
@@ -74,7 +81,7 @@ class ListDedicatedResourcesResponse(SdkResponse):
         专属资源信息列表。
 
         :return: The resources of this ListDedicatedResourcesResponse.
-        :rtype: list[ListDedicatedResourceResult]
+        :rtype: list[:class:`huaweicloudsdkgaussdbfornosql.v3.ListDedicatedResourceResult`]
         """
         return self._resources
 
@@ -85,7 +92,7 @@ class ListDedicatedResourcesResponse(SdkResponse):
         专属资源信息列表。
 
         :param resources: The resources of this ListDedicatedResourcesResponse.
-        :type: list[ListDedicatedResourceResult]
+        :type resources: list[:class:`huaweicloudsdkgaussdbfornosql.v3.ListDedicatedResourceResult`]
         """
         self._resources = resources
 

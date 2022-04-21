@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SlowLogList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class SlowLogList:
     }
 
     def __init__(self, users=None, database=None, query_sample=None, log_time=None, time=None, shards=None, rows_examined=None):
-        """SlowLogList - a model defined in huaweicloud sdk"""
+        """SlowLogList
+
+        The model defined in huaweicloud sdk
+
+        :param users: 执行慢sql的DDM账号名称。
+        :type users: str
+        :param database: 慢sql所属逻辑库的名称。
+        :type database: str
+        :param query_sample: 慢sql执行语法。
+        :type query_sample: str
+        :param log_time: DDM慢sql开始执行时间。
+        :type log_time: str
+        :param time: 慢sql的执行时长，精确到毫秒。
+        :type time: str
+        :param shards: 逻辑库物理分片名称。
+        :type shards: str
+        :param rows_examined: 慢sql影响行数。
+        :type rows_examined: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class SlowLogList:
         执行慢sql的DDM账号名称。
 
         :param users: The users of this SlowLogList.
-        :type: str
+        :type users: str
         """
         self._users = users
 
@@ -110,7 +127,7 @@ class SlowLogList:
         慢sql所属逻辑库的名称。
 
         :param database: The database of this SlowLogList.
-        :type: str
+        :type database: str
         """
         self._database = database
 
@@ -132,7 +149,7 @@ class SlowLogList:
         慢sql执行语法。
 
         :param query_sample: The query_sample of this SlowLogList.
-        :type: str
+        :type query_sample: str
         """
         self._query_sample = query_sample
 
@@ -154,7 +171,7 @@ class SlowLogList:
         DDM慢sql开始执行时间。
 
         :param log_time: The log_time of this SlowLogList.
-        :type: str
+        :type log_time: str
         """
         self._log_time = log_time
 
@@ -176,7 +193,7 @@ class SlowLogList:
         慢sql的执行时长，精确到毫秒。
 
         :param time: The time of this SlowLogList.
-        :type: str
+        :type time: str
         """
         self._time = time
 
@@ -198,7 +215,7 @@ class SlowLogList:
         逻辑库物理分片名称。
 
         :param shards: The shards of this SlowLogList.
-        :type: str
+        :type shards: str
         """
         self._shards = shards
 
@@ -220,7 +237,7 @@ class SlowLogList:
         慢sql影响行数。
 
         :param rows_examined: The rows_examined of this SlowLogList.
-        :type: str
+        :type rows_examined: str
         """
         self._rows_examined = rows_examined
 

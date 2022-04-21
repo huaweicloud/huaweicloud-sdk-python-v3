@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchDeleteUsersRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class BatchDeleteUsersRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, account_type=None, body=None):
-        """BatchDeleteUsersRequest - a model defined in huaweicloud sdk"""
+        """BatchDeleteUsersRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        :type x_request_id: str
+        :param accept_language: 语言参数，默认为中文zh-CN, 英文为en-US
+        :type accept_language: str
+        :param account_type: 账号类型 * 0：会议账号； * 1：第三方账号。 默认0 
+        :type account_type: int
+        :param body: 企业用户帐号列表。
+        :type body: list[str]
+        """
         
         
 
@@ -73,7 +84,7 @@ class BatchDeleteUsersRequest:
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
 
         :param x_request_id: The x_request_id of this BatchDeleteUsersRequest.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 
@@ -95,7 +106,7 @@ class BatchDeleteUsersRequest:
         语言参数，默认为中文zh-CN, 英文为en-US
 
         :param accept_language: The accept_language of this BatchDeleteUsersRequest.
-        :type: str
+        :type accept_language: str
         """
         self._accept_language = accept_language
 
@@ -117,7 +128,7 @@ class BatchDeleteUsersRequest:
         账号类型 * 0：会议账号； * 1：第三方账号。 默认0 
 
         :param account_type: The account_type of this BatchDeleteUsersRequest.
-        :type: int
+        :type account_type: int
         """
         self._account_type = account_type
 
@@ -139,7 +150,7 @@ class BatchDeleteUsersRequest:
         企业用户帐号列表。
 
         :param body: The body of this BatchDeleteUsersRequest.
-        :type: list[str]
+        :type body: list[str]
         """
         self._body = body
 

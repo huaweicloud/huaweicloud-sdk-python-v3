@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NovaAssociateSecurityGroupResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class NovaAssociateSecurityGroupResponse(SdkResponse):
     }
 
     def __init__(self):
-        """NovaAssociateSecurityGroupResponse - a model defined in huaweicloud sdk"""
+        """NovaAssociateSecurityGroupResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(NovaAssociateSecurityGroupResponse, self).__init__()
         self.discriminator = None

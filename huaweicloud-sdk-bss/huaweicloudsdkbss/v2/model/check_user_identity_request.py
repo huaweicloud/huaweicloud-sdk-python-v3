@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CheckUserIdentityRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CheckUserIdentityRequest:
     }
 
     def __init__(self, body=None):
-        """CheckUserIdentityRequest - a model defined in huaweicloud sdk"""
+        """CheckUserIdentityRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CheckUserIdentityRequest
+        :type body: :class:`huaweicloudsdkbss.v2.CheckSubcustomerUserReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CheckUserIdentityRequest:
 
 
         :return: The body of this CheckUserIdentityRequest.
-        :rtype: CheckSubcustomerUserReq
+        :rtype: :class:`huaweicloudsdkbss.v2.CheckSubcustomerUserReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CheckUserIdentityRequest:
 
 
         :param body: The body of this CheckUserIdentityRequest.
-        :type: CheckSubcustomerUserReq
+        :type body: :class:`huaweicloudsdkbss.v2.CheckSubcustomerUserReq`
         """
         self._body = body
 

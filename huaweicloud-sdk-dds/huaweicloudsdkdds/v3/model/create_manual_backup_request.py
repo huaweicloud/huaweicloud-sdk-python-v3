@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateManualBackupRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateManualBackupRequest:
     }
 
     def __init__(self, body=None):
-        """CreateManualBackupRequest - a model defined in huaweicloud sdk"""
+        """CreateManualBackupRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateManualBackupRequest
+        :type body: :class:`huaweicloudsdkdds.v3.CreateManualBackupRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateManualBackupRequest:
 
 
         :return: The body of this CreateManualBackupRequest.
-        :rtype: CreateManualBackupRequestBody
+        :rtype: :class:`huaweicloudsdkdds.v3.CreateManualBackupRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateManualBackupRequest:
 
 
         :param body: The body of this CreateManualBackupRequest.
-        :type: CreateManualBackupRequestBody
+        :type body: :class:`huaweicloudsdkdds.v3.CreateManualBackupRequestBody`
         """
         self._body = body
 

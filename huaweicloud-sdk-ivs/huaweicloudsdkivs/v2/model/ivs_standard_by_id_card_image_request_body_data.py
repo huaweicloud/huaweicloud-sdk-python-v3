@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IvsStandardByIdCardImageRequestBodyData:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class IvsStandardByIdCardImageRequestBodyData:
     }
 
     def __init__(self, req_data=None):
-        """IvsStandardByIdCardImageRequestBodyData - a model defined in huaweicloud sdk"""
+        """IvsStandardByIdCardImageRequestBodyData
+
+        The model defined in huaweicloud sdk
+
+        :param req_data: 请求列表，用于支持批量调用。目前暂时只支持单个数据查询。
+        :type req_data: list[:class:`huaweicloudsdkivs.v2.ReqDataByIdCardImage`]
+        """
         
         
 
@@ -47,7 +52,7 @@ class IvsStandardByIdCardImageRequestBodyData:
         请求列表，用于支持批量调用。目前暂时只支持单个数据查询。
 
         :return: The req_data of this IvsStandardByIdCardImageRequestBodyData.
-        :rtype: list[ReqDataByIdCardImage]
+        :rtype: list[:class:`huaweicloudsdkivs.v2.ReqDataByIdCardImage`]
         """
         return self._req_data
 
@@ -58,7 +63,7 @@ class IvsStandardByIdCardImageRequestBodyData:
         请求列表，用于支持批量调用。目前暂时只支持单个数据查询。
 
         :param req_data: The req_data of this IvsStandardByIdCardImageRequestBodyData.
-        :type: list[ReqDataByIdCardImage]
+        :type req_data: list[:class:`huaweicloudsdkivs.v2.ReqDataByIdCardImage`]
         """
         self._req_data = req_data
 

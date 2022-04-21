@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowRefundOrderDetailsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowRefundOrderDetailsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, refund_infos=None):
-        """ShowRefundOrderDetailsResponse - a model defined in huaweicloud sdk"""
+        """ShowRefundOrderDetailsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total_count: 查询总数。
+        :type total_count: int
+        :param refund_infos: 资源信息列表。 具体请参见表2。
+        :type refund_infos: list[:class:`huaweicloudsdkbssintl.v2.OrderRefundInfoV2`]
+        """
         
         super(ShowRefundOrderDetailsResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ShowRefundOrderDetailsResponse(SdkResponse):
         查询总数。
 
         :param total_count: The total_count of this ShowRefundOrderDetailsResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 
@@ -74,7 +81,7 @@ class ShowRefundOrderDetailsResponse(SdkResponse):
         资源信息列表。 具体请参见表2。
 
         :return: The refund_infos of this ShowRefundOrderDetailsResponse.
-        :rtype: list[OrderRefundInfoV2]
+        :rtype: list[:class:`huaweicloudsdkbssintl.v2.OrderRefundInfoV2`]
         """
         return self._refund_infos
 
@@ -85,7 +92,7 @@ class ShowRefundOrderDetailsResponse(SdkResponse):
         资源信息列表。 具体请参见表2。
 
         :param refund_infos: The refund_infos of this ShowRefundOrderDetailsResponse.
-        :type: list[OrderRefundInfoV2]
+        :type refund_infos: list[:class:`huaweicloudsdkbssintl.v2.OrderRefundInfoV2`]
         """
         self._refund_infos = refund_infos
 

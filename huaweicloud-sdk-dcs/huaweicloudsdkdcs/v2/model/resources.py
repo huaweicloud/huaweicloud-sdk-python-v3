@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Resources:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class Resources:
     }
 
     def __init__(self, unit=None, min=None, max=None, quota=None, used=None, type=None):
-        """Resources - a model defined in huaweicloud sdk"""
+        """Resources
+
+        The model defined in huaweicloud sdk
+
+        :param unit: 资源的计数单位。 - 当type为instance时，无单位。 - 当type为ram时，单位为GB。 
+        :type unit: str
+        :param min: - 当type为instance时，表示可申请实例配额的最小值。 - 当type为ram时，表示可申请内存配额的最小值。 
+        :type min: int
+        :param max: - 当type为instance时，表示可申请实例配额的最大值。 - 当type为ram时，表示可申请内存配额的最大值。 
+        :type max: int
+        :param quota: 可以创建的实例最大数和总内存的配额限制。
+        :type quota: int
+        :param used: 已创建的实例个数和已使用的内存配额。
+        :type used: int
+        :param type: 支持instance、ram两种。 - instance表示实例配额。 - ram表示内存配额。 
+        :type type: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class Resources:
         资源的计数单位。 - 当type为instance时，无单位。 - 当type为ram时，单位为GB。 
 
         :param unit: The unit of this Resources.
-        :type: str
+        :type unit: str
         """
         self._unit = unit
 
@@ -105,7 +120,7 @@ class Resources:
         - 当type为instance时，表示可申请实例配额的最小值。 - 当type为ram时，表示可申请内存配额的最小值。 
 
         :param min: The min of this Resources.
-        :type: int
+        :type min: int
         """
         self._min = min
 
@@ -127,7 +142,7 @@ class Resources:
         - 当type为instance时，表示可申请实例配额的最大值。 - 当type为ram时，表示可申请内存配额的最大值。 
 
         :param max: The max of this Resources.
-        :type: int
+        :type max: int
         """
         self._max = max
 
@@ -149,7 +164,7 @@ class Resources:
         可以创建的实例最大数和总内存的配额限制。
 
         :param quota: The quota of this Resources.
-        :type: int
+        :type quota: int
         """
         self._quota = quota
 
@@ -171,7 +186,7 @@ class Resources:
         已创建的实例个数和已使用的内存配额。
 
         :param used: The used of this Resources.
-        :type: int
+        :type used: int
         """
         self._used = used
 
@@ -193,7 +208,7 @@ class Resources:
         支持instance、ram两种。 - instance表示实例配额。 - ram表示内存配额。 
 
         :param type: The type of this Resources.
-        :type: str
+        :type type: str
         """
         self._type = type
 

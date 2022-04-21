@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NamespacesNamespaces:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class NamespacesNamespaces:
     }
 
     def __init__(self, id=None, name=None):
-        """NamespacesNamespaces - a model defined in huaweicloud sdk"""
+        """NamespacesNamespaces
+
+        The model defined in huaweicloud sdk
+
+        :param id: 命名空间ID。
+        :type id: str
+        :param name: 命名空间名称。
+        :type name: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class NamespacesNamespaces:
         命名空间ID。
 
         :param id: The id of this NamespacesNamespaces.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -83,7 +90,7 @@ class NamespacesNamespaces:
         命名空间名称。
 
         :param name: The name of this NamespacesNamespaces.
-        :type: str
+        :type name: str
         """
         self._name = name
 

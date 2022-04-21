@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateCredentialOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateCredentialOption:
     }
 
     def __init__(self, user_id=None, description=None):
-        """CreateCredentialOption - a model defined in huaweicloud sdk"""
+        """CreateCredentialOption
+
+        The model defined in huaweicloud sdk
+
+        :param user_id: 待创建访问秘钥（AK/SK）的IAM用户ID，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
+        :type user_id: str
+        :param description: 访问密钥描述信息。
+        :type description: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateCredentialOption:
         待创建访问秘钥（AK/SK）的IAM用户ID，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param user_id: The user_id of this CreateCredentialOption.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -84,7 +91,7 @@ class CreateCredentialOption:
         访问密钥描述信息。
 
         :param description: The description of this CreateCredentialOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 

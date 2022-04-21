@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDatasourceReqDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateDatasourceReqDTO:
     }
 
     def __init__(self, name=None, type=None, content=None):
-        """UpdateDatasourceReqDTO - a model defined in huaweicloud sdk"""
+        """UpdateDatasourceReqDTO
+
+        The model defined in huaweicloud sdk
+
+        :param name: 数据源名称
+        :type name: str
+        :param type: 数据源类型, 包括：IOTDA、API[、OBS、DIS、SMN、FUNCTION_GRAPH、MODEL_ARTS、DCS、KAFKA](tag:IoTA-Cloud-Only)、NODE。数据源不支持修改类型。
+        :type type: str
+        :param content: 
+        :type content: :class:`huaweicloudsdkiotanalytics.v1.ContentDetailReq`
+        """
         
         
 
@@ -66,7 +75,7 @@ class UpdateDatasourceReqDTO:
         数据源名称
 
         :param name: The name of this UpdateDatasourceReqDTO.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -88,7 +97,7 @@ class UpdateDatasourceReqDTO:
         数据源类型, 包括：IOTDA、API[、OBS、DIS、SMN、FUNCTION_GRAPH、MODEL_ARTS、DCS、KAFKA](tag:IoTA-Cloud-Only)、NODE。数据源不支持修改类型。
 
         :param type: The type of this UpdateDatasourceReqDTO.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -98,7 +107,7 @@ class UpdateDatasourceReqDTO:
 
 
         :return: The content of this UpdateDatasourceReqDTO.
-        :rtype: ContentDetailReq
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.ContentDetailReq`
         """
         return self._content
 
@@ -108,7 +117,7 @@ class UpdateDatasourceReqDTO:
 
 
         :param content: The content of this UpdateDatasourceReqDTO.
-        :type: ContentDetailReq
+        :type content: :class:`huaweicloudsdkiotanalytics.v1.ContentDetailReq`
         """
         self._content = content
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowSqlSwitchStatusResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowSqlSwitchStatusResponse(SdkResponse):
     }
 
     def __init__(self, status=None, retention_days=None):
-        """ShowSqlSwitchStatusResponse - a model defined in huaweicloud sdk"""
+        """ShowSqlSwitchStatusResponse
+
+        The model defined in huaweicloud sdk
+
+        :param status: 开关状态。取值： Enabled：已开启， Disabled：已关闭， Switching：开关切换中
+        :type status: str
+        :param retention_days: SQL数据保存天数。
+        :type retention_days: int
+        """
         
         super(ShowSqlSwitchStatusResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ShowSqlSwitchStatusResponse(SdkResponse):
         开关状态。取值： Enabled：已开启， Disabled：已关闭， Switching：开关切换中
 
         :param status: The status of this ShowSqlSwitchStatusResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -85,7 +92,7 @@ class ShowSqlSwitchStatusResponse(SdkResponse):
         SQL数据保存天数。
 
         :param retention_days: The retention_days of this ShowSqlSwitchStatusResponse.
-        :type: int
+        :type retention_days: int
         """
         self._retention_days = retention_days
 

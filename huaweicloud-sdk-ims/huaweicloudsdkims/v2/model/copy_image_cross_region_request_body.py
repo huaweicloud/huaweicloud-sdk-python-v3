@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CopyImageCrossRegionRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class CopyImageCrossRegionRequestBody:
     }
 
     def __init__(self, agency_name=None, description=None, name=None, project_name=None, region=None):
-        """CopyImageCrossRegionRequestBody - a model defined in huaweicloud sdk"""
+        """CopyImageCrossRegionRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param agency_name: IMS服务委托名称。
+        :type agency_name: str
+        :param description: 镜像描述信息。支持字母、数字、中文等，不支持回车、&lt;、 &gt;，长度不能超过1024个字符。默认为空。
+        :type description: str
+        :param name: 镜像名称
+        :type name: str
+        :param project_name: 目的区域的项目名称。
+        :type project_name: str
+        :param region: 目的区域的Region ID。
+        :type region: str
+        """
         
         
 
@@ -74,7 +87,7 @@ class CopyImageCrossRegionRequestBody:
         IMS服务委托名称。
 
         :param agency_name: The agency_name of this CopyImageCrossRegionRequestBody.
-        :type: str
+        :type agency_name: str
         """
         self._agency_name = agency_name
 
@@ -96,7 +109,7 @@ class CopyImageCrossRegionRequestBody:
         镜像描述信息。支持字母、数字、中文等，不支持回车、<、 >，长度不能超过1024个字符。默认为空。
 
         :param description: The description of this CopyImageCrossRegionRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -118,7 +131,7 @@ class CopyImageCrossRegionRequestBody:
         镜像名称
 
         :param name: The name of this CopyImageCrossRegionRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -140,7 +153,7 @@ class CopyImageCrossRegionRequestBody:
         目的区域的项目名称。
 
         :param project_name: The project_name of this CopyImageCrossRegionRequestBody.
-        :type: str
+        :type project_name: str
         """
         self._project_name = project_name
 
@@ -162,7 +175,7 @@ class CopyImageCrossRegionRequestBody:
         目的区域的Region ID。
 
         :param region: The region of this CopyImageCrossRegionRequestBody.
-        :type: str
+        :type region: str
         """
         self._region = region
 

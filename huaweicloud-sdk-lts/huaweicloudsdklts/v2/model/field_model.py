@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FieldModel:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class FieldModel:
     }
 
     def __init__(self, field_name=None, is_analysis=None):
-        """FieldModel - a model defined in huaweicloud sdk"""
+        """FieldModel
+
+        The model defined in huaweicloud sdk
+
+        :param field_name: 字段名称
+        :type field_name: str
+        :param is_analysis: 是否开启快速分析。
+        :type is_analysis: bool
+        """
         
         
 
@@ -61,7 +68,7 @@ class FieldModel:
         字段名称
 
         :param field_name: The field_name of this FieldModel.
-        :type: str
+        :type field_name: str
         """
         self._field_name = field_name
 
@@ -83,7 +90,7 @@ class FieldModel:
         是否开启快速分析。
 
         :param is_analysis: The is_analysis of this FieldModel.
-        :type: bool
+        :type is_analysis: bool
         """
         self._is_analysis = is_analysis
 

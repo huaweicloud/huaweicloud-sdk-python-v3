@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeypairDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class KeypairDetail:
     }
 
     def __init__(self, name=None, id=None, type=None, scope=None, public_key=None, fingerprint=None, is_key_protection=None, deleted=None, description=None, user_id=None, create_time=None, delete_time=None, update_time=None, frozen_state=None):
-        """KeypairDetail - a model defined in huaweicloud sdk"""
+        """KeypairDetail
+
+        The model defined in huaweicloud sdk
+
+        :param name: SSH密钥对的名称
+        :type name: str
+        :param id: SSH密钥对的ID
+        :type id: int
+        :param type: SSH密钥对的类型
+        :type type: str
+        :param scope: 租户级或者用户级
+        :type scope: str
+        :param public_key: SSH密钥对对应的publicKey信息
+        :type public_key: str
+        :param fingerprint: SSH密钥对应指纹信息
+        :type fingerprint: str
+        :param is_key_protection: 是否托管密钥
+        :type is_key_protection: bool
+        :param deleted: SSH密钥对删除的标记
+        :type deleted: bool
+        :param description: SSH密钥对的描述信息
+        :type description: str
+        :param user_id: SSH密钥对所属的用户信息
+        :type user_id: str
+        :param create_time: SSH密钥对创建的时间，时间戳，即从1970年1月1日至该时间的总秒数
+        :type create_time: int
+        :param delete_time: SSH密钥对删除的时间，时间戳，即从1970年1月1日至该时间的总秒数
+        :type delete_time: int
+        :param update_time: SSH密钥对的更新时间，时间戳，即从1970年1月1日至该时间的总秒数
+        :type update_time: int
+        :param frozen_state: 冻结状态 - 0：正常状态 - 1：普通冻结 - 2：公安冻结 - 3：普通冻结及公安冻结 - 4：违规冻结 - 5：普通冻结及违规冻结 - 6：公安冻结及违规冻结 - 7：普通冻结、公安冻结及违规冻结 - 8：未实名认证冻结 - 9：普通冻结及未实名认证冻结 - 10：公安冻结及未实名认证冻结
+        :type frozen_state: int
+        """
         
         
 
@@ -123,7 +154,7 @@ class KeypairDetail:
         SSH密钥对的名称
 
         :param name: The name of this KeypairDetail.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -145,7 +176,7 @@ class KeypairDetail:
         SSH密钥对的ID
 
         :param id: The id of this KeypairDetail.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -167,7 +198,7 @@ class KeypairDetail:
         SSH密钥对的类型
 
         :param type: The type of this KeypairDetail.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -189,7 +220,7 @@ class KeypairDetail:
         租户级或者用户级
 
         :param scope: The scope of this KeypairDetail.
-        :type: str
+        :type scope: str
         """
         self._scope = scope
 
@@ -211,7 +242,7 @@ class KeypairDetail:
         SSH密钥对对应的publicKey信息
 
         :param public_key: The public_key of this KeypairDetail.
-        :type: str
+        :type public_key: str
         """
         self._public_key = public_key
 
@@ -233,7 +264,7 @@ class KeypairDetail:
         SSH密钥对应指纹信息
 
         :param fingerprint: The fingerprint of this KeypairDetail.
-        :type: str
+        :type fingerprint: str
         """
         self._fingerprint = fingerprint
 
@@ -255,7 +286,7 @@ class KeypairDetail:
         是否托管密钥
 
         :param is_key_protection: The is_key_protection of this KeypairDetail.
-        :type: bool
+        :type is_key_protection: bool
         """
         self._is_key_protection = is_key_protection
 
@@ -277,7 +308,7 @@ class KeypairDetail:
         SSH密钥对删除的标记
 
         :param deleted: The deleted of this KeypairDetail.
-        :type: bool
+        :type deleted: bool
         """
         self._deleted = deleted
 
@@ -299,7 +330,7 @@ class KeypairDetail:
         SSH密钥对的描述信息
 
         :param description: The description of this KeypairDetail.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -321,7 +352,7 @@ class KeypairDetail:
         SSH密钥对所属的用户信息
 
         :param user_id: The user_id of this KeypairDetail.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -343,7 +374,7 @@ class KeypairDetail:
         SSH密钥对创建的时间，时间戳，即从1970年1月1日至该时间的总秒数
 
         :param create_time: The create_time of this KeypairDetail.
-        :type: int
+        :type create_time: int
         """
         self._create_time = create_time
 
@@ -365,7 +396,7 @@ class KeypairDetail:
         SSH密钥对删除的时间，时间戳，即从1970年1月1日至该时间的总秒数
 
         :param delete_time: The delete_time of this KeypairDetail.
-        :type: int
+        :type delete_time: int
         """
         self._delete_time = delete_time
 
@@ -387,7 +418,7 @@ class KeypairDetail:
         SSH密钥对的更新时间，时间戳，即从1970年1月1日至该时间的总秒数
 
         :param update_time: The update_time of this KeypairDetail.
-        :type: int
+        :type update_time: int
         """
         self._update_time = update_time
 
@@ -409,7 +440,7 @@ class KeypairDetail:
         冻结状态 - 0：正常状态 - 1：普通冻结 - 2：公安冻结 - 3：普通冻结及公安冻结 - 4：违规冻结 - 5：普通冻结及违规冻结 - 6：公安冻结及违规冻结 - 7：普通冻结、公安冻结及违规冻结 - 8：未实名认证冻结 - 9：普通冻结及未实名认证冻结 - 10：公安冻结及未实名认证冻结
 
         :param frozen_state: The frozen_state of this KeypairDetail.
-        :type: int
+        :type frozen_state: int
         """
         self._frozen_state = frozen_state
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Task:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class Task:
     }
 
     def __init__(self, bench_concurrent=None, description=None, id=None, name=None, operate_mode=None, task_run_info=None, update_time=None):
-        """Task - a model defined in huaweicloud sdk"""
+        """Task
+
+        The model defined in huaweicloud sdk
+
+        :param bench_concurrent: bench_concurrent
+        :type bench_concurrent: int
+        :param description: description
+        :type description: str
+        :param id: id
+        :type id: int
+        :param name: name
+        :type name: str
+        :param operate_mode: operate_mode
+        :type operate_mode: int
+        :param task_run_info: 
+        :type task_run_info: :class:`huaweicloudsdkcpts.v1.TaskRunInfo`
+        :param update_time: update_time
+        :type update_time: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class Task:
         bench_concurrent
 
         :param bench_concurrent: The bench_concurrent of this Task.
-        :type: int
+        :type bench_concurrent: int
         """
         self._bench_concurrent = bench_concurrent
 
@@ -110,7 +127,7 @@ class Task:
         description
 
         :param description: The description of this Task.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -132,7 +149,7 @@ class Task:
         id
 
         :param id: The id of this Task.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -154,7 +171,7 @@ class Task:
         name
 
         :param name: The name of this Task.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -176,7 +193,7 @@ class Task:
         operate_mode
 
         :param operate_mode: The operate_mode of this Task.
-        :type: int
+        :type operate_mode: int
         """
         self._operate_mode = operate_mode
 
@@ -186,7 +203,7 @@ class Task:
 
 
         :return: The task_run_info of this Task.
-        :rtype: TaskRunInfo
+        :rtype: :class:`huaweicloudsdkcpts.v1.TaskRunInfo`
         """
         return self._task_run_info
 
@@ -196,7 +213,7 @@ class Task:
 
 
         :param task_run_info: The task_run_info of this Task.
-        :type: TaskRunInfo
+        :type task_run_info: :class:`huaweicloudsdkcpts.v1.TaskRunInfo`
         """
         self._task_run_info = task_run_info
 
@@ -218,7 +235,7 @@ class Task:
         update_time
 
         :param update_time: The update_time of this Task.
-        :type: str
+        :type update_time: str
         """
         self._update_time = update_time
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TaskTimingPeriods:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class TaskTimingPeriods:
     }
 
     def __init__(self, begin_at=None, end_at=None):
-        """TaskTimingPeriods - a model defined in huaweicloud sdk"""
+        """TaskTimingPeriods
+
+        The model defined in huaweicloud sdk
+
+        :param begin_at: 单个时间段执行的起始时间，和end_at需成对出现。计划任务类型为once时，格式为yyyy-MM-ddThh:mm:ss，其余计划任务类型时，格式为hh:mm:ss。
+        :type begin_at: str
+        :param end_at: 单个时间段执行的结束时间，和begin_at需成对出现。计划任务类型为once时，格式为yyyy-MM-ddThh:mm:ss，其余计划任务类型时，格式为hh:mm:ss。
+        :type end_at: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class TaskTimingPeriods:
         单个时间段执行的起始时间，和end_at需成对出现。计划任务类型为once时，格式为yyyy-MM-ddThh:mm:ss，其余计划任务类型时，格式为hh:mm:ss。
 
         :param begin_at: The begin_at of this TaskTimingPeriods.
-        :type: str
+        :type begin_at: str
         """
         self._begin_at = begin_at
 
@@ -85,7 +92,7 @@ class TaskTimingPeriods:
         单个时间段执行的结束时间，和begin_at需成对出现。计划任务类型为once时，格式为yyyy-MM-ddThh:mm:ss，其余计划任务类型时，格式为hh:mm:ss。
 
         :param end_at: The end_at of this TaskTimingPeriods.
-        :type: str
+        :type end_at: str
         """
         self._end_at = end_at
 

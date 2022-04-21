@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeyValueDO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class KeyValueDO:
     }
 
     def __init__(self, name=None, value=None, limits=None):
-        """KeyValueDO - a model defined in huaweicloud sdk"""
+        """KeyValueDO
+
+        The model defined in huaweicloud sdk
+
+        :param name: 执行部署任务时传递的参数名称
+        :type name: str
+        :param value: 执行部署任务时传递的参数值
+        :type value: str
+        :param limits: 参数值为枚举类型时，返回可选值列表
+        :type limits: list[:class:`huaweicloudsdkclouddeploy.v2.ParamTypeLimits`]
+        """
         
         
 
@@ -68,7 +77,7 @@ class KeyValueDO:
         执行部署任务时传递的参数名称
 
         :param name: The name of this KeyValueDO.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -90,7 +99,7 @@ class KeyValueDO:
         执行部署任务时传递的参数值
 
         :param value: The value of this KeyValueDO.
-        :type: str
+        :type value: str
         """
         self._value = value
 
@@ -101,7 +110,7 @@ class KeyValueDO:
         参数值为枚举类型时，返回可选值列表
 
         :return: The limits of this KeyValueDO.
-        :rtype: list[ParamTypeLimits]
+        :rtype: list[:class:`huaweicloudsdkclouddeploy.v2.ParamTypeLimits`]
         """
         return self._limits
 
@@ -112,7 +121,7 @@ class KeyValueDO:
         参数值为枚举类型时，返回可选值列表
 
         :param limits: The limits of this KeyValueDO.
-        :type: list[ParamTypeLimits]
+        :type limits: list[:class:`huaweicloudsdkclouddeploy.v2.ParamTypeLimits`]
         """
         self._limits = limits
 

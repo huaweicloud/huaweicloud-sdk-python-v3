@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TargetServerByTask:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class TargetServerByTask:
     }
 
     def __init__(self, btrfs_list=None, disks=None, name=None, vm_id=None, volume_groups=None):
-        """TargetServerByTask - a model defined in huaweicloud sdk"""
+        """TargetServerByTask
+
+        The model defined in huaweicloud sdk
+
+        :param btrfs_list: btrfs信息，数据从源端获取
+        :type btrfs_list: list[:class:`huaweicloudsdksms.v3.BtrfsFileSystem`]
+        :param disks: 磁盘信息
+        :type disks: list[:class:`huaweicloudsdksms.v3.TargetDisks`]
+        :param name: 名称
+        :type name: str
+        :param vm_id: 虚拟机id
+        :type vm_id: str
+        :param volume_groups: 卷组，数据从源端获取
+        :type volume_groups: list[:class:`huaweicloudsdksms.v3.VolumeGroups`]
+        """
         
         
 
@@ -64,7 +77,7 @@ class TargetServerByTask:
         btrfs信息，数据从源端获取
 
         :return: The btrfs_list of this TargetServerByTask.
-        :rtype: list[BtrfsFileSystem]
+        :rtype: list[:class:`huaweicloudsdksms.v3.BtrfsFileSystem`]
         """
         return self._btrfs_list
 
@@ -75,7 +88,7 @@ class TargetServerByTask:
         btrfs信息，数据从源端获取
 
         :param btrfs_list: The btrfs_list of this TargetServerByTask.
-        :type: list[BtrfsFileSystem]
+        :type btrfs_list: list[:class:`huaweicloudsdksms.v3.BtrfsFileSystem`]
         """
         self._btrfs_list = btrfs_list
 
@@ -86,7 +99,7 @@ class TargetServerByTask:
         磁盘信息
 
         :return: The disks of this TargetServerByTask.
-        :rtype: list[TargetDisks]
+        :rtype: list[:class:`huaweicloudsdksms.v3.TargetDisks`]
         """
         return self._disks
 
@@ -97,7 +110,7 @@ class TargetServerByTask:
         磁盘信息
 
         :param disks: The disks of this TargetServerByTask.
-        :type: list[TargetDisks]
+        :type disks: list[:class:`huaweicloudsdksms.v3.TargetDisks`]
         """
         self._disks = disks
 
@@ -119,7 +132,7 @@ class TargetServerByTask:
         名称
 
         :param name: The name of this TargetServerByTask.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -141,7 +154,7 @@ class TargetServerByTask:
         虚拟机id
 
         :param vm_id: The vm_id of this TargetServerByTask.
-        :type: str
+        :type vm_id: str
         """
         self._vm_id = vm_id
 
@@ -152,7 +165,7 @@ class TargetServerByTask:
         卷组，数据从源端获取
 
         :return: The volume_groups of this TargetServerByTask.
-        :rtype: list[VolumeGroups]
+        :rtype: list[:class:`huaweicloudsdksms.v3.VolumeGroups`]
         """
         return self._volume_groups
 
@@ -163,7 +176,7 @@ class TargetServerByTask:
         卷组，数据从源端获取
 
         :param volume_groups: The volume_groups of this TargetServerByTask.
-        :type: list[VolumeGroups]
+        :type volume_groups: list[:class:`huaweicloudsdksms.v3.VolumeGroups`]
         """
         self._volume_groups = volume_groups
 

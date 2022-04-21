@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ScalingPolicyV2MetaData:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ScalingPolicyV2MetaData:
     }
 
     def __init__(self, metadata_bandwidth_share_type=None, metadata_eip_id=None, metadata_eip_address=None):
-        """ScalingPolicyV2MetaData - a model defined in huaweicloud sdk"""
+        """ScalingPolicyV2MetaData
+
+        The model defined in huaweicloud sdk
+
+        :param metadata_bandwidth_share_type: 伸缩带宽策略中带宽对应的共享类型
+        :type metadata_bandwidth_share_type: str
+        :param metadata_eip_id: 伸缩带宽策略中带宽对应的EIP的ID
+        :type metadata_eip_id: str
+        :param metadata_eip_address: 伸缩带宽策略中带宽对应的EIP地址
+        :type metadata_eip_address: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class ScalingPolicyV2MetaData:
         伸缩带宽策略中带宽对应的共享类型
 
         :param metadata_bandwidth_share_type: The metadata_bandwidth_share_type of this ScalingPolicyV2MetaData.
-        :type: str
+        :type metadata_bandwidth_share_type: str
         """
         self._metadata_bandwidth_share_type = metadata_bandwidth_share_type
 
@@ -90,7 +99,7 @@ class ScalingPolicyV2MetaData:
         伸缩带宽策略中带宽对应的EIP的ID
 
         :param metadata_eip_id: The metadata_eip_id of this ScalingPolicyV2MetaData.
-        :type: str
+        :type metadata_eip_id: str
         """
         self._metadata_eip_id = metadata_eip_id
 
@@ -112,7 +121,7 @@ class ScalingPolicyV2MetaData:
         伸缩带宽策略中带宽对应的EIP地址
 
         :param metadata_eip_address: The metadata_eip_address of this ScalingPolicyV2MetaData.
-        :type: str
+        :type metadata_eip_address: str
         """
         self._metadata_eip_address = metadata_eip_address
 

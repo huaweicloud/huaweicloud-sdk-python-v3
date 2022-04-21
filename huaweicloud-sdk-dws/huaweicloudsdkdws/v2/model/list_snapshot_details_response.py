@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSnapshotDetailsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -22,7 +21,7 @@ class ListSnapshotDetailsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'snapshot': 'SnapshoDetail'
+        'snapshot': 'SnapshotDetail'
     }
 
     attribute_map = {
@@ -30,7 +29,13 @@ class ListSnapshotDetailsResponse(SdkResponse):
     }
 
     def __init__(self, snapshot=None):
-        """ListSnapshotDetailsResponse - a model defined in huaweicloud sdk"""
+        """ListSnapshotDetailsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param snapshot: 
+        :type snapshot: :class:`huaweicloudsdkdws.v2.SnapshotDetail`
+        """
         
         super(ListSnapshotDetailsResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class ListSnapshotDetailsResponse(SdkResponse):
 
 
         :return: The snapshot of this ListSnapshotDetailsResponse.
-        :rtype: SnapshoDetail
+        :rtype: :class:`huaweicloudsdkdws.v2.SnapshotDetail`
         """
         return self._snapshot
 
@@ -56,7 +61,7 @@ class ListSnapshotDetailsResponse(SdkResponse):
 
 
         :param snapshot: The snapshot of this ListSnapshotDetailsResponse.
-        :type: SnapshoDetail
+        :type snapshot: :class:`huaweicloudsdkdws.v2.SnapshotDetail`
         """
         self._snapshot = snapshot
 

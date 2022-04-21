@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NumericalAttr:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class NumericalAttr:
     }
 
     def __init__(self, name=None, weight=None):
-        """NumericalAttr - a model defined in huaweicloud sdk"""
+        """NumericalAttr
+
+        The model defined in huaweicloud sdk
+
+        :param name: 特征名。
+        :type name: str
+        :param weight: 权重。
+        :type weight: float
+        """
         
         
 
@@ -61,7 +68,7 @@ class NumericalAttr:
         特征名。
 
         :param name: The name of this NumericalAttr.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -83,7 +90,7 @@ class NumericalAttr:
         权重。
 
         :param weight: The weight of this NumericalAttr.
-        :type: float
+        :type weight: float
         """
         self._weight = weight
 

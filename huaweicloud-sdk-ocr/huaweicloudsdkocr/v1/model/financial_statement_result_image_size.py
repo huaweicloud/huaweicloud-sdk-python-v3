@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FinancialStatementResultImageSize:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class FinancialStatementResultImageSize:
     }
 
     def __init__(self, height=None, width=None):
-        """FinancialStatementResultImageSize - a model defined in huaweicloud sdk"""
+        """FinancialStatementResultImageSize
+
+        The model defined in huaweicloud sdk
+
+        :param height: 矫正后图像的高。 
+        :type height: int
+        :param width: 矫正后图像的宽。 
+        :type width: int
+        """
         
         
 
@@ -63,7 +70,7 @@ class FinancialStatementResultImageSize:
         矫正后图像的高。 
 
         :param height: The height of this FinancialStatementResultImageSize.
-        :type: int
+        :type height: int
         """
         self._height = height
 
@@ -85,7 +92,7 @@ class FinancialStatementResultImageSize:
         矫正后图像的宽。 
 
         :param width: The width of this FinancialStatementResultImageSize.
-        :type: int
+        :type width: int
         """
         self._width = width
 

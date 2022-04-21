@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RepoDailyCodeline:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class RepoDailyCodeline:
     }
 
     def __init__(self, additions=None, date=None, deletions=None):
-        """RepoDailyCodeline - a model defined in huaweicloud sdk"""
+        """RepoDailyCodeline
+
+        The model defined in huaweicloud sdk
+
+        :param additions: 每日增加代码行
+        :type additions: int
+        :param date: 日期
+        :type date: str
+        :param deletions: 每日删除代码行
+        :type deletions: int
+        """
         
         
 
@@ -68,7 +77,7 @@ class RepoDailyCodeline:
         每日增加代码行
 
         :param additions: The additions of this RepoDailyCodeline.
-        :type: int
+        :type additions: int
         """
         self._additions = additions
 
@@ -90,7 +99,7 @@ class RepoDailyCodeline:
         日期
 
         :param date: The date of this RepoDailyCodeline.
-        :type: str
+        :type date: str
         """
         self._date = date
 
@@ -112,7 +121,7 @@ class RepoDailyCodeline:
         每日删除代码行
 
         :param deletions: The deletions of this RepoDailyCodeline.
-        :type: int
+        :type deletions: int
         """
         self._deletions = deletions
 

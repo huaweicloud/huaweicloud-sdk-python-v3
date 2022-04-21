@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowPartitionMessageEntity:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ShowPartitionMessageEntity:
     }
 
     def __init__(self, key=None, value=None, topic=None, partition=None, message_offset=None, size=None, timestamp=None):
-        """ShowPartitionMessageEntity - a model defined in huaweicloud sdk"""
+        """ShowPartitionMessageEntity
+
+        The model defined in huaweicloud sdk
+
+        :param key: 消息的key。
+        :type key: str
+        :param value: 消息内容。
+        :type value: str
+        :param topic: Topic名称。
+        :type topic: str
+        :param partition: 分区编号。
+        :type partition: int
+        :param message_offset: 消息位置。
+        :type message_offset: int
+        :param size: 消息大小，单位字节。
+        :type size: int
+        :param timestamp: 生产消息的时间。 格式为Unix时间戳。单位为毫秒。
+        :type timestamp: int
+        """
         
         
 
@@ -88,7 +105,7 @@ class ShowPartitionMessageEntity:
         消息的key。
 
         :param key: The key of this ShowPartitionMessageEntity.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -110,7 +127,7 @@ class ShowPartitionMessageEntity:
         消息内容。
 
         :param value: The value of this ShowPartitionMessageEntity.
-        :type: str
+        :type value: str
         """
         self._value = value
 
@@ -132,7 +149,7 @@ class ShowPartitionMessageEntity:
         Topic名称。
 
         :param topic: The topic of this ShowPartitionMessageEntity.
-        :type: str
+        :type topic: str
         """
         self._topic = topic
 
@@ -154,7 +171,7 @@ class ShowPartitionMessageEntity:
         分区编号。
 
         :param partition: The partition of this ShowPartitionMessageEntity.
-        :type: int
+        :type partition: int
         """
         self._partition = partition
 
@@ -176,7 +193,7 @@ class ShowPartitionMessageEntity:
         消息位置。
 
         :param message_offset: The message_offset of this ShowPartitionMessageEntity.
-        :type: int
+        :type message_offset: int
         """
         self._message_offset = message_offset
 
@@ -198,7 +215,7 @@ class ShowPartitionMessageEntity:
         消息大小，单位字节。
 
         :param size: The size of this ShowPartitionMessageEntity.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -220,7 +237,7 @@ class ShowPartitionMessageEntity:
         生产消息的时间。 格式为Unix时间戳。单位为毫秒。
 
         :param timestamp: The timestamp of this ShowPartitionMessageEntity.
-        :type: int
+        :type timestamp: int
         """
         self._timestamp = timestamp
 

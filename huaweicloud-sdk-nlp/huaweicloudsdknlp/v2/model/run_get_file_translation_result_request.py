@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunGetFileTranslationResultRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RunGetFileTranslationResultRequest:
     }
 
     def __init__(self, job_id=None):
-        """RunGetFileTranslationResultRequest - a model defined in huaweicloud sdk"""
+        """RunGetFileTranslationResultRequest
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 文档翻译任务标识符。通过文档翻译接口获取。
+        :type job_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class RunGetFileTranslationResultRequest:
         文档翻译任务标识符。通过文档翻译接口获取。
 
         :param job_id: The job_id of this RunGetFileTranslationResultRequest.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 

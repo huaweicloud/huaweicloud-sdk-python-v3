@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListFunctionAsyncInvocationsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListFunctionAsyncInvocationsRequest:
     }
 
     def __init__(self, function_urn=None, request_id=None, limit=None, status=None, query_begin_time=None, query_end_time=None):
-        """ListFunctionAsyncInvocationsRequest - a model defined in huaweicloud sdk"""
+        """ListFunctionAsyncInvocationsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param function_urn: 函数URN
+        :type function_urn: str
+        :param request_id: 需要查询的异步请求ID。如果不指定，默认查询所有异步调用记录
+        :type request_id: str
+        :param limit: 本次查询最大返回的数据条数，最大值500，默认值100
+        :type limit: str
+        :param status: 本次查询指定的异步调用状态，支持5种状态，如果不指定，则查询所有状态的调用记录 WAIT: 等待 RUNNING: 执行中 SUCCESS: 执行成功 FAIL: 执行失败 DISCARD: 请求丢弃
+        :type status: str
+        :param query_begin_time: 搜索起始时间（格式为YYYY-MM-DD&#39;T&#39;HH:mm:ss,UTC时间）。如果不指定默认为当前时间前1小时
+        :type query_begin_time: datetime
+        :param query_end_time: 搜索结束时间（格式为YYYY-MM-DD&#39;T&#39;HH:mm:ss,UTC时间）。如果不指定默认为当前时间
+        :type query_end_time: datetime
+        """
         
         
 
@@ -82,7 +97,7 @@ class ListFunctionAsyncInvocationsRequest:
         函数URN
 
         :param function_urn: The function_urn of this ListFunctionAsyncInvocationsRequest.
-        :type: str
+        :type function_urn: str
         """
         self._function_urn = function_urn
 
@@ -104,7 +119,7 @@ class ListFunctionAsyncInvocationsRequest:
         需要查询的异步请求ID。如果不指定，默认查询所有异步调用记录
 
         :param request_id: The request_id of this ListFunctionAsyncInvocationsRequest.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 
@@ -126,7 +141,7 @@ class ListFunctionAsyncInvocationsRequest:
         本次查询最大返回的数据条数，最大值500，默认值100
 
         :param limit: The limit of this ListFunctionAsyncInvocationsRequest.
-        :type: str
+        :type limit: str
         """
         self._limit = limit
 
@@ -148,7 +163,7 @@ class ListFunctionAsyncInvocationsRequest:
         本次查询指定的异步调用状态，支持5种状态，如果不指定，则查询所有状态的调用记录 WAIT: 等待 RUNNING: 执行中 SUCCESS: 执行成功 FAIL: 执行失败 DISCARD: 请求丢弃
 
         :param status: The status of this ListFunctionAsyncInvocationsRequest.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -170,7 +185,7 @@ class ListFunctionAsyncInvocationsRequest:
         搜索起始时间（格式为YYYY-MM-DD'T'HH:mm:ss,UTC时间）。如果不指定默认为当前时间前1小时
 
         :param query_begin_time: The query_begin_time of this ListFunctionAsyncInvocationsRequest.
-        :type: datetime
+        :type query_begin_time: datetime
         """
         self._query_begin_time = query_begin_time
 
@@ -192,7 +207,7 @@ class ListFunctionAsyncInvocationsRequest:
         搜索结束时间（格式为YYYY-MM-DD'T'HH:mm:ss,UTC时间）。如果不指定默认为当前时间
 
         :param query_end_time: The query_end_time of this ListFunctionAsyncInvocationsRequest.
-        :type: datetime
+        :type query_end_time: datetime
         """
         self._query_end_time = query_end_time
 

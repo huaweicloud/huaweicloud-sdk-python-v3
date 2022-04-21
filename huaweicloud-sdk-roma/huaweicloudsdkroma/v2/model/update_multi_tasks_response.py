@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateMultiTasksResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateMultiTasksResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None):
-        """UpdateMultiTasksResponse - a model defined in huaweicloud sdk"""
+        """UpdateMultiTasksResponse
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 任务ID, 可为空
+        :type task_id: str
+        """
         
         super(UpdateMultiTasksResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class UpdateMultiTasksResponse(SdkResponse):
         任务ID, 可为空
 
         :param task_id: The task_id of this UpdateMultiTasksResponse.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 

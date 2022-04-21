@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDevicesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListDevicesResponse(SdkResponse):
     }
 
     def __init__(self, devices=None, count=None, page_info=None):
-        """ListDevicesResponse - a model defined in huaweicloud sdk"""
+        """ListDevicesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param devices: 查询设备列表响应结构体
+        :type devices: list[:class:`huaweicloudsdkiotedge.v2.QueryDeviceSimplifyDto`]
+        :param count: 满足查询条件的记录总数。
+        :type count: int
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkiotedge.v2.PageInfoDTO`
+        """
         
         super(ListDevicesResponse, self).__init__()
 
@@ -57,7 +66,7 @@ class ListDevicesResponse(SdkResponse):
         查询设备列表响应结构体
 
         :return: The devices of this ListDevicesResponse.
-        :rtype: list[QueryDeviceSimplifyDto]
+        :rtype: list[:class:`huaweicloudsdkiotedge.v2.QueryDeviceSimplifyDto`]
         """
         return self._devices
 
@@ -68,7 +77,7 @@ class ListDevicesResponse(SdkResponse):
         查询设备列表响应结构体
 
         :param devices: The devices of this ListDevicesResponse.
-        :type: list[QueryDeviceSimplifyDto]
+        :type devices: list[:class:`huaweicloudsdkiotedge.v2.QueryDeviceSimplifyDto`]
         """
         self._devices = devices
 
@@ -90,7 +99,7 @@ class ListDevicesResponse(SdkResponse):
         满足查询条件的记录总数。
 
         :param count: The count of this ListDevicesResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -100,7 +109,7 @@ class ListDevicesResponse(SdkResponse):
 
 
         :return: The page_info of this ListDevicesResponse.
-        :rtype: PageInfoDTO
+        :rtype: :class:`huaweicloudsdkiotedge.v2.PageInfoDTO`
         """
         return self._page_info
 
@@ -110,7 +119,7 @@ class ListDevicesResponse(SdkResponse):
 
 
         :param page_info: The page_info of this ListDevicesResponse.
-        :type: PageInfoDTO
+        :type page_info: :class:`huaweicloudsdkiotedge.v2.PageInfoDTO`
         """
         self._page_info = page_info
 

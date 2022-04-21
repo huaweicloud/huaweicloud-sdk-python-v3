@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteAlarmRuleResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteAlarmRuleResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """DeleteAlarmRuleResponse - a model defined in huaweicloud sdk"""
+        """DeleteAlarmRuleResponse
+
+        The model defined in huaweicloud sdk
+
+        :param body: 
+        :type body: str
+        """
         
         super(DeleteAlarmRuleResponse, self).__init__()
 
@@ -56,7 +61,7 @@ class DeleteAlarmRuleResponse(SdkResponse):
 
 
         :param body: The body of this DeleteAlarmRuleResponse.
-        :type: str
+        :type body: str
         """
         self._body = body
 

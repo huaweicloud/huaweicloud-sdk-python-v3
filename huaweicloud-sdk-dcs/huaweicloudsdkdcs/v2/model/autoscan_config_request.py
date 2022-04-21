@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AutoscanConfigRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AutoscanConfigRequest:
     }
 
     def __init__(self, enable_auto_scan=None, schedule_at=None):
-        """AutoscanConfigRequest - a model defined in huaweicloud sdk"""
+        """AutoscanConfigRequest
+
+        The model defined in huaweicloud sdk
+
+        :param enable_auto_scan: 是否开启自动分析
+        :type enable_auto_scan: bool
+        :param schedule_at: 每日分析时间，时间格式为21:00，时间为UTC时间
+        :type schedule_at: list[str]
+        """
         
         
 
@@ -63,7 +70,7 @@ class AutoscanConfigRequest:
         是否开启自动分析
 
         :param enable_auto_scan: The enable_auto_scan of this AutoscanConfigRequest.
-        :type: bool
+        :type enable_auto_scan: bool
         """
         self._enable_auto_scan = enable_auto_scan
 
@@ -85,7 +92,7 @@ class AutoscanConfigRequest:
         每日分析时间，时间格式为21:00，时间为UTC时间
 
         :param schedule_at: The schedule_at of this AutoscanConfigRequest.
-        :type: list[str]
+        :type schedule_at: list[str]
         """
         self._schedule_at = schedule_at
 

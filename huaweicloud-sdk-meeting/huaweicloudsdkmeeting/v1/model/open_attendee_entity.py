@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OpenAttendeeEntity:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class OpenAttendeeEntity:
     }
 
     def __init__(self, app_id=None, user_account=None, user_name=None, dept_name=None, phone=None, email=None, sms=None, is_hard_terminal=None):
-        """OpenAttendeeEntity - a model defined in huaweicloud sdk"""
+        """OpenAttendeeEntity
+
+        The model defined in huaweicloud sdk
+
+        :param app_id: App ID，应用标识，一个应用只需创建一次。必填字段
+        :type app_id: str
+        :param user_account: 与会者的账号ID。如果是账号/密码鉴权场景，表示华为云会议帐号ID。如果是APP ID鉴权场景，表示第三方的User ID。必填字段
+        :type user_account: str
+        :param user_name: 与会者名称或昵称。长度限制为96个字符
+        :type user_name: str
+        :param dept_name: 部门名称
+        :type dept_name: str
+        :param phone: 号码（可支持SIP、TEL号码格式）。最大不超过127个字符。phone、email和sms三者需至少填写一个。
+        :type phone: str
+        :param email: 邮件地址。最大不超过255个字符。phone、email和sms三者需至少填写一个（用于预定、修改、取消会议的信息通知）。
+        :type email: str
+        :param sms: 短信通知的手机号码。最大不超过32个字符。phone、email和sms三者需至少填写一个。（用于预定、修改、取消会议的信息通知）。
+        :type sms: str
+        :param is_hard_terminal: 是否硬终端（会议室或硬终端）。
+        :type is_hard_terminal: bool
+        """
         
         
 
@@ -92,7 +111,7 @@ class OpenAttendeeEntity:
         App ID，应用标识，一个应用只需创建一次。必填字段
 
         :param app_id: The app_id of this OpenAttendeeEntity.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -114,7 +133,7 @@ class OpenAttendeeEntity:
         与会者的账号ID。如果是账号/密码鉴权场景，表示华为云会议帐号ID。如果是APP ID鉴权场景，表示第三方的User ID。必填字段
 
         :param user_account: The user_account of this OpenAttendeeEntity.
-        :type: str
+        :type user_account: str
         """
         self._user_account = user_account
 
@@ -136,7 +155,7 @@ class OpenAttendeeEntity:
         与会者名称或昵称。长度限制为96个字符
 
         :param user_name: The user_name of this OpenAttendeeEntity.
-        :type: str
+        :type user_name: str
         """
         self._user_name = user_name
 
@@ -158,7 +177,7 @@ class OpenAttendeeEntity:
         部门名称
 
         :param dept_name: The dept_name of this OpenAttendeeEntity.
-        :type: str
+        :type dept_name: str
         """
         self._dept_name = dept_name
 
@@ -180,7 +199,7 @@ class OpenAttendeeEntity:
         号码（可支持SIP、TEL号码格式）。最大不超过127个字符。phone、email和sms三者需至少填写一个。
 
         :param phone: The phone of this OpenAttendeeEntity.
-        :type: str
+        :type phone: str
         """
         self._phone = phone
 
@@ -202,7 +221,7 @@ class OpenAttendeeEntity:
         邮件地址。最大不超过255个字符。phone、email和sms三者需至少填写一个（用于预定、修改、取消会议的信息通知）。
 
         :param email: The email of this OpenAttendeeEntity.
-        :type: str
+        :type email: str
         """
         self._email = email
 
@@ -224,7 +243,7 @@ class OpenAttendeeEntity:
         短信通知的手机号码。最大不超过32个字符。phone、email和sms三者需至少填写一个。（用于预定、修改、取消会议的信息通知）。
 
         :param sms: The sms of this OpenAttendeeEntity.
-        :type: str
+        :type sms: str
         """
         self._sms = sms
 
@@ -246,7 +265,7 @@ class OpenAttendeeEntity:
         是否硬终端（会议室或硬终端）。
 
         :param is_hard_terminal: The is_hard_terminal of this OpenAttendeeEntity.
-        :type: bool
+        :type is_hard_terminal: bool
         """
         self._is_hard_terminal = is_hard_terminal
 

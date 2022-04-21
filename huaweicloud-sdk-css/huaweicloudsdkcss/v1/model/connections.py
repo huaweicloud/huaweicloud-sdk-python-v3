@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Connections:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class Connections:
     }
 
     def __init__(self, id=None, status=None, max_session=None, specification_name=None, created_at=None, update_at=None, domain_id=None):
-        """Connections - a model defined in huaweicloud sdk"""
+        """Connections
+
+        The model defined in huaweicloud sdk
+
+        :param id: 终端节点ID。
+        :type id: str
+        :param status: 状态。
+        :type status: str
+        :param max_session: 最大连接数。
+        :type max_session: str
+        :param specification_name: 终端节点名称。
+        :type specification_name: str
+        :param created_at: 创建时间。
+        :type created_at: str
+        :param update_at: 更新时间。
+        :type update_at: str
+        :param domain_id: 拥有者。
+        :type domain_id: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class Connections:
         终端节点ID。
 
         :param id: The id of this Connections.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -110,7 +127,7 @@ class Connections:
         状态。
 
         :param status: The status of this Connections.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -132,7 +149,7 @@ class Connections:
         最大连接数。
 
         :param max_session: The max_session of this Connections.
-        :type: str
+        :type max_session: str
         """
         self._max_session = max_session
 
@@ -154,7 +171,7 @@ class Connections:
         终端节点名称。
 
         :param specification_name: The specification_name of this Connections.
-        :type: str
+        :type specification_name: str
         """
         self._specification_name = specification_name
 
@@ -176,7 +193,7 @@ class Connections:
         创建时间。
 
         :param created_at: The created_at of this Connections.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -198,7 +215,7 @@ class Connections:
         更新时间。
 
         :param update_at: The update_at of this Connections.
-        :type: str
+        :type update_at: str
         """
         self._update_at = update_at
 
@@ -220,7 +237,7 @@ class Connections:
         拥有者。
 
         :param domain_id: The domain_id of this Connections.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 

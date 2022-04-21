@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RuleResponse:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class RuleResponse:
     }
 
     def __init__(self, created_at=None, description=None, fail_messages=None, id=None, ief_instance_id=None, in_using=None, name=None, project_id=None, source=None, source_resource=None, target=None, target_resource=None, updated_at=None, success_messages=None):
-        """RuleResponse - a model defined in huaweicloud sdk"""
+        """RuleResponse
+
+        The model defined in huaweicloud sdk
+
+        :param created_at: 创建时间
+        :type created_at: str
+        :param description: 规则描述，最大长度255，不允许^~#$%&amp;*&lt;&gt;()[]{}&#39;\&quot;\\
+        :type description: str
+        :param fail_messages: 转发失败的消息数
+        :type fail_messages: int
+        :param id: 规则ID
+        :type id: str
+        :param ief_instance_id: 铂金版实例ID，如果为空则表示是专业版实例。
+        :type ief_instance_id: str
+        :param in_using: 是否启用规则，默认为true(启用)
+        :type in_using: bool
+        :param name: 规则名称，只允许中文字符、英文字符、数字、下划线、中划线，最大长度64 同一个帐号中创建的规则名唯一
+        :type name: str
+        :param project_id: 项目ID
+        :type project_id: str
+        :param source: 
+        :type source: :class:`huaweicloudsdkief.v1.EndpointObjResp`
+        :param source_resource: 源端点资源。 示例： - rest: path取值需要为标准URI格式。 {\&quot;path\&quot;:\&quot;/a/b/c\&quot;} - eventbus: {\&quot;topic\&quot;: \&quot;&lt;project id&gt;/nodes/&lt;node id&gt;/user/&lt;租户自定义且满足eventbus topic要求的字符串&gt;\&quot;,\&quot;node_id\&quot;:\&quot;&lt;node id&gt;\&quot;}
+        :type source_resource: dict(str, str)
+        :param target: 
+        :type target: :class:`huaweicloudsdkief.v1.EndpointObjResp`
+        :param target_resource: 目的端点资源，示例： - dis: {\&quot;channel\&quot;: \&quot;dis channel name\&quot;} - servicebus: {\&quot;path\&quot;: \&quot;/request path\&quot;} - apigw: {\&quot;resource\&quot;: \&quot;http://ssss.com\&quot;} - eventbus: {\&quot;topic\&quot;: \&quot;/xxxx\&quot;}
+        :type target_resource: dict(str, str)
+        :param updated_at: 更新时间
+        :type updated_at: str
+        :param success_messages: 转发成功的消息数
+        :type success_messages: int
+        """
         
         
 
@@ -115,7 +146,7 @@ class RuleResponse:
         创建时间
 
         :param created_at: The created_at of this RuleResponse.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -137,7 +168,7 @@ class RuleResponse:
         规则描述，最大长度255，不允许^~#$%&*<>()[]{}'\"\\
 
         :param description: The description of this RuleResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -159,7 +190,7 @@ class RuleResponse:
         转发失败的消息数
 
         :param fail_messages: The fail_messages of this RuleResponse.
-        :type: int
+        :type fail_messages: int
         """
         self._fail_messages = fail_messages
 
@@ -181,7 +212,7 @@ class RuleResponse:
         规则ID
 
         :param id: The id of this RuleResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -203,7 +234,7 @@ class RuleResponse:
         铂金版实例ID，如果为空则表示是专业版实例。
 
         :param ief_instance_id: The ief_instance_id of this RuleResponse.
-        :type: str
+        :type ief_instance_id: str
         """
         self._ief_instance_id = ief_instance_id
 
@@ -225,7 +256,7 @@ class RuleResponse:
         是否启用规则，默认为true(启用)
 
         :param in_using: The in_using of this RuleResponse.
-        :type: bool
+        :type in_using: bool
         """
         self._in_using = in_using
 
@@ -247,7 +278,7 @@ class RuleResponse:
         规则名称，只允许中文字符、英文字符、数字、下划线、中划线，最大长度64 同一个帐号中创建的规则名唯一
 
         :param name: The name of this RuleResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -269,7 +300,7 @@ class RuleResponse:
         项目ID
 
         :param project_id: The project_id of this RuleResponse.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -279,7 +310,7 @@ class RuleResponse:
 
 
         :return: The source of this RuleResponse.
-        :rtype: EndpointObjResp
+        :rtype: :class:`huaweicloudsdkief.v1.EndpointObjResp`
         """
         return self._source
 
@@ -289,7 +320,7 @@ class RuleResponse:
 
 
         :param source: The source of this RuleResponse.
-        :type: EndpointObjResp
+        :type source: :class:`huaweicloudsdkief.v1.EndpointObjResp`
         """
         self._source = source
 
@@ -311,7 +342,7 @@ class RuleResponse:
         源端点资源。 示例： - rest: path取值需要为标准URI格式。 {\"path\":\"/a/b/c\"} - eventbus: {\"topic\": \"<project id>/nodes/<node id>/user/<租户自定义且满足eventbus topic要求的字符串>\",\"node_id\":\"<node id>\"}
 
         :param source_resource: The source_resource of this RuleResponse.
-        :type: dict(str, str)
+        :type source_resource: dict(str, str)
         """
         self._source_resource = source_resource
 
@@ -321,7 +352,7 @@ class RuleResponse:
 
 
         :return: The target of this RuleResponse.
-        :rtype: EndpointObjResp
+        :rtype: :class:`huaweicloudsdkief.v1.EndpointObjResp`
         """
         return self._target
 
@@ -331,7 +362,7 @@ class RuleResponse:
 
 
         :param target: The target of this RuleResponse.
-        :type: EndpointObjResp
+        :type target: :class:`huaweicloudsdkief.v1.EndpointObjResp`
         """
         self._target = target
 
@@ -353,7 +384,7 @@ class RuleResponse:
         目的端点资源，示例： - dis: {\"channel\": \"dis channel name\"} - servicebus: {\"path\": \"/request path\"} - apigw: {\"resource\": \"http://ssss.com\"} - eventbus: {\"topic\": \"/xxxx\"}
 
         :param target_resource: The target_resource of this RuleResponse.
-        :type: dict(str, str)
+        :type target_resource: dict(str, str)
         """
         self._target_resource = target_resource
 
@@ -375,7 +406,7 @@ class RuleResponse:
         更新时间
 
         :param updated_at: The updated_at of this RuleResponse.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 
@@ -397,7 +428,7 @@ class RuleResponse:
         转发成功的消息数
 
         :param success_messages: The success_messages of this RuleResponse.
-        :type: int
+        :type success_messages: int
         """
         self._success_messages = success_messages
 

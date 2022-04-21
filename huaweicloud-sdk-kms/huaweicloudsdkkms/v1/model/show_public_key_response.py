@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowPublicKeyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowPublicKeyResponse(SdkResponse):
     }
 
     def __init__(self, key_id=None, public_key=None):
-        """ShowPublicKeyResponse - a model defined in huaweicloud sdk"""
+        """ShowPublicKeyResponse
+
+        The model defined in huaweicloud sdk
+
+        :param key_id: 密钥ID。
+        :type key_id: str
+        :param public_key: 公钥信息。
+        :type public_key: str
+        """
         
         super(ShowPublicKeyResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ShowPublicKeyResponse(SdkResponse):
         密钥ID。
 
         :param key_id: The key_id of this ShowPublicKeyResponse.
-        :type: str
+        :type key_id: str
         """
         self._key_id = key_id
 
@@ -85,7 +92,7 @@ class ShowPublicKeyResponse(SdkResponse):
         公钥信息。
 
         :param public_key: The public_key of this ShowPublicKeyResponse.
-        :type: str
+        :type public_key: str
         """
         self._public_key = public_key
 

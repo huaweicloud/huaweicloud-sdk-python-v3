@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListBreifStructTemplateResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListBreifStructTemplateResponse(SdkResponse):
     }
 
     def __init__(self, results=None):
-        """ListBreifStructTemplateResponse - a model defined in huaweicloud sdk"""
+        """ListBreifStructTemplateResponse
+
+        The model defined in huaweicloud sdk
+
+        :param results: 结构化模板缩略信息列表
+        :type results: list[:class:`huaweicloudsdklts.v2.BriefStructTemplateModel`]
+        """
         
         super(ListBreifStructTemplateResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListBreifStructTemplateResponse(SdkResponse):
         结构化模板缩略信息列表
 
         :return: The results of this ListBreifStructTemplateResponse.
-        :rtype: list[BriefStructTemplateModel]
+        :rtype: list[:class:`huaweicloudsdklts.v2.BriefStructTemplateModel`]
         """
         return self._results
 
@@ -58,7 +63,7 @@ class ListBreifStructTemplateResponse(SdkResponse):
         结构化模板缩略信息列表
 
         :param results: The results of this ListBreifStructTemplateResponse.
-        :type: list[BriefStructTemplateModel]
+        :type results: list[:class:`huaweicloudsdklts.v2.BriefStructTemplateModel`]
         """
         self._results = results
 

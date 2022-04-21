@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SearchVisionActiveCodeRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class SearchVisionActiveCodeRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, offset=None, limit=None, search_key=None, dev_type=None):
-        """SearchVisionActiveCodeRequest - a model defined in huaweicloud sdk"""
+        """SearchVisionActiveCodeRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        :type x_request_id: str
+        :param accept_language: 语言参数，默认为中文zh-CN, 英文为en-US
+        :type accept_language: str
+        :param offset: 查询偏移量,若超过最大数量，则返回最后一页的数据 默认值：0 
+        :type offset: int
+        :param limit: 查询数量 默认值：0 
+        :type limit: int
+        :param search_key: 搜索条件,支持激活码、终端名称模糊搜索。
+        :type search_key: str
+        :param dev_type: 终端类型 - idea-hub:智能协作大屏 - huawei-vision:智慧屏TV - welink-desktop(iwb):电子白板 
+        :type dev_type: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class SearchVisionActiveCodeRequest:
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
 
         :param x_request_id: The x_request_id of this SearchVisionActiveCodeRequest.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 
@@ -105,7 +120,7 @@ class SearchVisionActiveCodeRequest:
         语言参数，默认为中文zh-CN, 英文为en-US
 
         :param accept_language: The accept_language of this SearchVisionActiveCodeRequest.
-        :type: str
+        :type accept_language: str
         """
         self._accept_language = accept_language
 
@@ -127,7 +142,7 @@ class SearchVisionActiveCodeRequest:
         查询偏移量,若超过最大数量，则返回最后一页的数据 默认值：0 
 
         :param offset: The offset of this SearchVisionActiveCodeRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -149,7 +164,7 @@ class SearchVisionActiveCodeRequest:
         查询数量 默认值：0 
 
         :param limit: The limit of this SearchVisionActiveCodeRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -171,7 +186,7 @@ class SearchVisionActiveCodeRequest:
         搜索条件,支持激活码、终端名称模糊搜索。
 
         :param search_key: The search_key of this SearchVisionActiveCodeRequest.
-        :type: str
+        :type search_key: str
         """
         self._search_key = search_key
 
@@ -193,7 +208,7 @@ class SearchVisionActiveCodeRequest:
         终端类型 - idea-hub:智能协作大屏 - huawei-vision:智慧屏TV - welink-desktop(iwb):电子白板 
 
         :param dev_type: The dev_type of this SearchVisionActiveCodeRequest.
-        :type: str
+        :type dev_type: str
         """
         self._dev_type = dev_type
 

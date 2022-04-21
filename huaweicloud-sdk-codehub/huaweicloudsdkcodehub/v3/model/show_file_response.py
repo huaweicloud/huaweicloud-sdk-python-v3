@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowFileResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowFileResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """ShowFileResponse - a model defined in huaweicloud sdk"""
+        """ShowFileResponse
+
+        The model defined in huaweicloud sdk
+
+        :param error: 
+        :type error: :class:`huaweicloudsdkcodehub.v3.Error`
+        :param result: 差异列表
+        :type result: list[:class:`huaweicloudsdkcodehub.v3.FileContentInfo`]
+        :param status: 响应状态
+        :type status: str
+        """
         
         super(ShowFileResponse, self).__init__()
 
@@ -56,7 +65,7 @@ class ShowFileResponse(SdkResponse):
 
 
         :return: The error of this ShowFileResponse.
-        :rtype: Error
+        :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
         """
         return self._error
 
@@ -66,7 +75,7 @@ class ShowFileResponse(SdkResponse):
 
 
         :param error: The error of this ShowFileResponse.
-        :type: Error
+        :type error: :class:`huaweicloudsdkcodehub.v3.Error`
         """
         self._error = error
 
@@ -77,7 +86,7 @@ class ShowFileResponse(SdkResponse):
         差异列表
 
         :return: The result of this ShowFileResponse.
-        :rtype: list[FileContentInfo]
+        :rtype: list[:class:`huaweicloudsdkcodehub.v3.FileContentInfo`]
         """
         return self._result
 
@@ -88,7 +97,7 @@ class ShowFileResponse(SdkResponse):
         差异列表
 
         :param result: The result of this ShowFileResponse.
-        :type: list[FileContentInfo]
+        :type result: list[:class:`huaweicloudsdkcodehub.v3.FileContentInfo`]
         """
         self._result = result
 
@@ -110,7 +119,7 @@ class ShowFileResponse(SdkResponse):
         响应状态
 
         :param status: The status of this ShowFileResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 

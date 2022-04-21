@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AgencyTokenScope:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AgencyTokenScope:
     }
 
     def __init__(self, domain=None, project=None):
-        """AgencyTokenScope - a model defined in huaweicloud sdk"""
+        """AgencyTokenScope
+
+        The model defined in huaweicloud sdk
+
+        :param domain: 
+        :type domain: :class:`huaweicloudsdkiam.v3.AgencyTokenScopeDomain`
+        :param project: 
+        :type project: :class:`huaweicloudsdkiam.v3.AgencyTokenScopeProject`
+        """
         
         
 
@@ -51,7 +58,7 @@ class AgencyTokenScope:
 
 
         :return: The domain of this AgencyTokenScope.
-        :rtype: AgencyTokenScopeDomain
+        :rtype: :class:`huaweicloudsdkiam.v3.AgencyTokenScopeDomain`
         """
         return self._domain
 
@@ -61,7 +68,7 @@ class AgencyTokenScope:
 
 
         :param domain: The domain of this AgencyTokenScope.
-        :type: AgencyTokenScopeDomain
+        :type domain: :class:`huaweicloudsdkiam.v3.AgencyTokenScopeDomain`
         """
         self._domain = domain
 
@@ -71,7 +78,7 @@ class AgencyTokenScope:
 
 
         :return: The project of this AgencyTokenScope.
-        :rtype: AgencyTokenScopeProject
+        :rtype: :class:`huaweicloudsdkiam.v3.AgencyTokenScopeProject`
         """
         return self._project
 
@@ -81,7 +88,7 @@ class AgencyTokenScope:
 
 
         :param project: The project of this AgencyTokenScope.
-        :type: AgencyTokenScopeProject
+        :type project: :class:`huaweicloudsdkiam.v3.AgencyTokenScopeProject`
         """
         self._project = project
 

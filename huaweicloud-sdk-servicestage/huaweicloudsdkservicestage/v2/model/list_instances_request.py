@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListInstancesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListInstancesRequest:
     }
 
     def __init__(self, application_id=None, component_id=None, limit=None, offset=None, order_by=None, order=None):
-        """ListInstancesRequest - a model defined in huaweicloud sdk"""
+        """ListInstancesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param application_id: 应用ID。
+        :type application_id: str
+        :param component_id: 组件ID。
+        :type component_id: str
+        :param limit: 指定个数，明确指定的时候用于分页，取值[0, 100]。不指定的时候表示不分页，最多查询1000条记录。
+        :type limit: int
+        :param offset: 指定查询偏移量，默认偏移量为0.
+        :type offset: int
+        :param order_by: 排序字段，默认按创建时间排序。  排序字段支持枚举值：create_time、name、update_time。 
+        :type order_by: str
+        :param order: desc/asc，默认desc。
+        :type order: str
+        """
         
         
 
@@ -81,7 +96,7 @@ class ListInstancesRequest:
         应用ID。
 
         :param application_id: The application_id of this ListInstancesRequest.
-        :type: str
+        :type application_id: str
         """
         self._application_id = application_id
 
@@ -103,7 +118,7 @@ class ListInstancesRequest:
         组件ID。
 
         :param component_id: The component_id of this ListInstancesRequest.
-        :type: str
+        :type component_id: str
         """
         self._component_id = component_id
 
@@ -125,7 +140,7 @@ class ListInstancesRequest:
         指定个数，明确指定的时候用于分页，取值[0, 100]。不指定的时候表示不分页，最多查询1000条记录。
 
         :param limit: The limit of this ListInstancesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -147,7 +162,7 @@ class ListInstancesRequest:
         指定查询偏移量，默认偏移量为0.
 
         :param offset: The offset of this ListInstancesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -169,7 +184,7 @@ class ListInstancesRequest:
         排序字段，默认按创建时间排序。  排序字段支持枚举值：create_time、name、update_time。 
 
         :param order_by: The order_by of this ListInstancesRequest.
-        :type: str
+        :type order_by: str
         """
         self._order_by = order_by
 
@@ -191,7 +206,7 @@ class ListInstancesRequest:
         desc/asc，默认desc。
 
         :param order: The order of this ListInstancesRequest.
-        :type: str
+        :type order: str
         """
         self._order = order
 

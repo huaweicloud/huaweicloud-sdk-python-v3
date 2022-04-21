@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QuotaInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class QuotaInfo:
     }
 
     def __init__(self, type=None, used=None, quota=None, min=None, max=None):
-        """QuotaInfo - a model defined in huaweicloud sdk"""
+        """QuotaInfo
+
+        The model defined in huaweicloud sdk
+
+        :param type: 查询的资源类型。
+        :type type: str
+        :param used: 已使用的资源配额。
+        :type used: int
+        :param quota: 查询出的资源的总配额。
+        :type quota: int
+        :param min: 资源的最小配额。
+        :type min: int
+        :param max: 资源的最大配额。
+        :type max: int
+        """
         
         
 
@@ -73,7 +86,7 @@ class QuotaInfo:
         查询的资源类型。
 
         :param type: The type of this QuotaInfo.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -95,7 +108,7 @@ class QuotaInfo:
         已使用的资源配额。
 
         :param used: The used of this QuotaInfo.
-        :type: int
+        :type used: int
         """
         self._used = used
 
@@ -117,7 +130,7 @@ class QuotaInfo:
         查询出的资源的总配额。
 
         :param quota: The quota of this QuotaInfo.
-        :type: int
+        :type quota: int
         """
         self._quota = quota
 
@@ -139,7 +152,7 @@ class QuotaInfo:
         资源的最小配额。
 
         :param min: The min of this QuotaInfo.
-        :type: int
+        :type min: int
         """
         self._min = min
 
@@ -161,7 +174,7 @@ class QuotaInfo:
         资源的最大配额。
 
         :param max: The max of this QuotaInfo.
-        :type: int
+        :type max: int
         """
         self._max = max
 

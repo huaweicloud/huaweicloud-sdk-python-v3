@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CheckApiGroupsV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CheckApiGroupsV2Request:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CheckApiGroupsV2Request - a model defined in huaweicloud sdk"""
+        """CheckApiGroupsV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param body: Body of the CheckApiGroupsV2Request
+        :type body: :class:`huaweicloudsdkroma.v2.ApiGroupCheck`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CheckApiGroupsV2Request:
         实例ID
 
         :param instance_id: The instance_id of this CheckApiGroupsV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -72,7 +79,7 @@ class CheckApiGroupsV2Request:
 
 
         :return: The body of this CheckApiGroupsV2Request.
-        :rtype: ApiGroupCheck
+        :rtype: :class:`huaweicloudsdkroma.v2.ApiGroupCheck`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CheckApiGroupsV2Request:
 
 
         :param body: The body of this CheckApiGroupsV2Request.
-        :type: ApiGroupCheck
+        :type body: :class:`huaweicloudsdkroma.v2.ApiGroupCheck`
         """
         self._body = body
 

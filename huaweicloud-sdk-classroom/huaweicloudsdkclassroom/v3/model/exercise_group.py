@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExerciseGroup:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ExerciseGroup:
     }
 
     def __init__(self, exercises=None, type=None):
-        """ExerciseGroup - a model defined in huaweicloud sdk"""
+        """ExerciseGroup
+
+        The model defined in huaweicloud sdk
+
+        :param exercises: 习题列表
+        :type exercises: list[:class:`huaweicloudsdkclassroom.v3.ExerciseCard`]
+        :param type: 习题分类
+        :type type: str
+        """
         
         
 
@@ -50,7 +57,7 @@ class ExerciseGroup:
         习题列表
 
         :return: The exercises of this ExerciseGroup.
-        :rtype: list[ExerciseCard]
+        :rtype: list[:class:`huaweicloudsdkclassroom.v3.ExerciseCard`]
         """
         return self._exercises
 
@@ -61,7 +68,7 @@ class ExerciseGroup:
         习题列表
 
         :param exercises: The exercises of this ExerciseGroup.
-        :type: list[ExerciseCard]
+        :type exercises: list[:class:`huaweicloudsdkclassroom.v3.ExerciseCard`]
         """
         self._exercises = exercises
 
@@ -83,7 +90,7 @@ class ExerciseGroup:
         习题分类
 
         :param type: The type of this ExerciseGroup.
-        :type: str
+        :type type: str
         """
         self._type = type
 

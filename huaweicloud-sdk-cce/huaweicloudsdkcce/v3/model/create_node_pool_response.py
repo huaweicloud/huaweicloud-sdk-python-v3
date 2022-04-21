@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateNodePoolResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class CreateNodePoolResponse(SdkResponse):
     }
 
     def __init__(self, kind=None, api_version=None, metadata=None, spec=None, status=None):
-        """CreateNodePoolResponse - a model defined in huaweicloud sdk"""
+        """CreateNodePoolResponse
+
+        The model defined in huaweicloud sdk
+
+        :param kind: API类型，固定值“NodePool”。
+        :type kind: str
+        :param api_version: API版本，固定值“v3”。
+        :type api_version: str
+        :param metadata: 
+        :type metadata: :class:`huaweicloudsdkcce.v3.NodePoolMetadata`
+        :param spec: 
+        :type spec: :class:`huaweicloudsdkcce.v3.NodePoolSpec`
+        :param status: 
+        :type status: :class:`huaweicloudsdkcce.v3.NodePoolStatus`
+        """
         
         super(CreateNodePoolResponse, self).__init__()
 
@@ -78,7 +91,7 @@ class CreateNodePoolResponse(SdkResponse):
         API类型，固定值“NodePool”。
 
         :param kind: The kind of this CreateNodePoolResponse.
-        :type: str
+        :type kind: str
         """
         self._kind = kind
 
@@ -100,7 +113,7 @@ class CreateNodePoolResponse(SdkResponse):
         API版本，固定值“v3”。
 
         :param api_version: The api_version of this CreateNodePoolResponse.
-        :type: str
+        :type api_version: str
         """
         self._api_version = api_version
 
@@ -110,7 +123,7 @@ class CreateNodePoolResponse(SdkResponse):
 
 
         :return: The metadata of this CreateNodePoolResponse.
-        :rtype: NodePoolMetadata
+        :rtype: :class:`huaweicloudsdkcce.v3.NodePoolMetadata`
         """
         return self._metadata
 
@@ -120,7 +133,7 @@ class CreateNodePoolResponse(SdkResponse):
 
 
         :param metadata: The metadata of this CreateNodePoolResponse.
-        :type: NodePoolMetadata
+        :type metadata: :class:`huaweicloudsdkcce.v3.NodePoolMetadata`
         """
         self._metadata = metadata
 
@@ -130,7 +143,7 @@ class CreateNodePoolResponse(SdkResponse):
 
 
         :return: The spec of this CreateNodePoolResponse.
-        :rtype: NodePoolSpec
+        :rtype: :class:`huaweicloudsdkcce.v3.NodePoolSpec`
         """
         return self._spec
 
@@ -140,7 +153,7 @@ class CreateNodePoolResponse(SdkResponse):
 
 
         :param spec: The spec of this CreateNodePoolResponse.
-        :type: NodePoolSpec
+        :type spec: :class:`huaweicloudsdkcce.v3.NodePoolSpec`
         """
         self._spec = spec
 
@@ -150,7 +163,7 @@ class CreateNodePoolResponse(SdkResponse):
 
 
         :return: The status of this CreateNodePoolResponse.
-        :rtype: NodePoolStatus
+        :rtype: :class:`huaweicloudsdkcce.v3.NodePoolStatus`
         """
         return self._status
 
@@ -160,7 +173,7 @@ class CreateNodePoolResponse(SdkResponse):
 
 
         :param status: The status of this CreateNodePoolResponse.
-        :type: NodePoolStatus
+        :type status: :class:`huaweicloudsdkcce.v3.NodePoolStatus`
         """
         self._status = status
 

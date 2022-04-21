@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MysqlChangeSpecificationRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class MysqlChangeSpecificationRequest:
     }
 
     def __init__(self, resize_flavor=None, is_auto_pay=None):
-        """MysqlChangeSpecificationRequest - a model defined in huaweicloud sdk"""
+        """MysqlChangeSpecificationRequest
+
+        The model defined in huaweicloud sdk
+
+        :param resize_flavor: 
+        :type resize_flavor: :class:`huaweicloudsdkgaussdb.v3.MysqlResizeFlavor`
+        :param is_auto_pay: 变更包周期实例规格时可指定，表示是否自动从客户的账户中支付。true，为自动支付，默认该方式。false，为手动支付。
+        :type is_auto_pay: str
+        """
         
         
 
@@ -50,7 +57,7 @@ class MysqlChangeSpecificationRequest:
 
 
         :return: The resize_flavor of this MysqlChangeSpecificationRequest.
-        :rtype: MysqlResizeFlavor
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlResizeFlavor`
         """
         return self._resize_flavor
 
@@ -60,7 +67,7 @@ class MysqlChangeSpecificationRequest:
 
 
         :param resize_flavor: The resize_flavor of this MysqlChangeSpecificationRequest.
-        :type: MysqlResizeFlavor
+        :type resize_flavor: :class:`huaweicloudsdkgaussdb.v3.MysqlResizeFlavor`
         """
         self._resize_flavor = resize_flavor
 
@@ -82,7 +89,7 @@ class MysqlChangeSpecificationRequest:
         变更包周期实例规格时可指定，表示是否自动从客户的账户中支付。true，为自动支付，默认该方式。false，为手动支付。
 
         :param is_auto_pay: The is_auto_pay of this MysqlChangeSpecificationRequest.
-        :type: str
+        :type is_auto_pay: str
         """
         self._is_auto_pay = is_auto_pay
 

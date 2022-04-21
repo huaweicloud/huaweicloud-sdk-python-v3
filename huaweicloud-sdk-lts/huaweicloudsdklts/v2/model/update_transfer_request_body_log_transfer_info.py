@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateTransferRequestBodyLogTransferInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateTransferRequestBodyLogTransferInfo:
     }
 
     def __init__(self, log_storage_format=None, log_transfer_status=None, log_transfer_detail=None):
-        """UpdateTransferRequestBodyLogTransferInfo - a model defined in huaweicloud sdk"""
+        """UpdateTransferRequestBodyLogTransferInfo
+
+        The model defined in huaweicloud sdk
+
+        :param log_storage_format: 日志转储格式。只支持\&quot;RAW\&quot;, \&quot;JSON\&quot;。RAW是指原始日志格式，JSON是指JSON日志格式。OBS转储和DIS转储支持JSON和RAW，DMS转储仅支持RAW
+        :type log_storage_format: str
+        :param log_transfer_status: 日志转储状态，ENABLE是指日志转储开启状态，DISABLE是指日志转储关闭状态，EXCEPTION是指日志转储异常状态
+        :type log_transfer_status: str
+        :param log_transfer_detail: 
+        :type log_transfer_detail: :class:`huaweicloudsdklts.v2.TransferDetail`
+        """
         
         
 
@@ -65,7 +74,7 @@ class UpdateTransferRequestBodyLogTransferInfo:
         日志转储格式。只支持\"RAW\", \"JSON\"。RAW是指原始日志格式，JSON是指JSON日志格式。OBS转储和DIS转储支持JSON和RAW，DMS转储仅支持RAW
 
         :param log_storage_format: The log_storage_format of this UpdateTransferRequestBodyLogTransferInfo.
-        :type: str
+        :type log_storage_format: str
         """
         self._log_storage_format = log_storage_format
 
@@ -87,7 +96,7 @@ class UpdateTransferRequestBodyLogTransferInfo:
         日志转储状态，ENABLE是指日志转储开启状态，DISABLE是指日志转储关闭状态，EXCEPTION是指日志转储异常状态
 
         :param log_transfer_status: The log_transfer_status of this UpdateTransferRequestBodyLogTransferInfo.
-        :type: str
+        :type log_transfer_status: str
         """
         self._log_transfer_status = log_transfer_status
 
@@ -97,7 +106,7 @@ class UpdateTransferRequestBodyLogTransferInfo:
 
 
         :return: The log_transfer_detail of this UpdateTransferRequestBodyLogTransferInfo.
-        :rtype: TransferDetail
+        :rtype: :class:`huaweicloudsdklts.v2.TransferDetail`
         """
         return self._log_transfer_detail
 
@@ -107,7 +116,7 @@ class UpdateTransferRequestBodyLogTransferInfo:
 
 
         :param log_transfer_detail: The log_transfer_detail of this UpdateTransferRequestBodyLogTransferInfo.
-        :type: TransferDetail
+        :type log_transfer_detail: :class:`huaweicloudsdklts.v2.TransferDetail`
         """
         self._log_transfer_detail = log_transfer_detail
 

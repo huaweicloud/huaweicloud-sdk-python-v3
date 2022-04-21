@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AssetDetails:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class AssetDetails:
     }
 
     def __init__(self, asset_id=None, asset_status=None, transcode_status=None, base_info=None, transcode_info=None):
-        """AssetDetails - a model defined in huaweicloud sdk"""
+        """AssetDetails
+
+        The model defined in huaweicloud sdk
+
+        :param asset_id: 媒资ID。
+        :type asset_id: str
+        :param asset_status: 媒资状态。 - \&quot;CREATING\&quot;：上传中 - \&quot;FAILED\&quot;：上传失败 - \&quot;CREATED\&quot;：上传成功 - \&quot;PUBLISHED\&quot;：已发布 - \&quot;DELETED\&quot;：已删除
+        :type asset_status: str
+        :param transcode_status: 转码状态。 - \&quot;UN_TRANSCODE\&quot;：未转码 - \&quot;WAITING_TRANSCODE\&quot;：等待转码，排队中 - \&quot;TRANSCODING\&quot;：转码中 - \&quot;TRANSCODE_SUCCEED\&quot;：转码成功 - \&quot;TRANSCODE_FAILED\&quot;：转码失败
+        :type transcode_status: str
+        :param base_info: 
+        :type base_info: :class:`huaweicloudsdkvod.v1.BaseInfo`
+        :param transcode_info: 
+        :type transcode_info: :class:`huaweicloudsdkvod.v1.TranscodeInfo`
+        """
         
         
 
@@ -77,7 +90,7 @@ class AssetDetails:
         媒资ID。
 
         :param asset_id: The asset_id of this AssetDetails.
-        :type: str
+        :type asset_id: str
         """
         self._asset_id = asset_id
 
@@ -99,7 +112,7 @@ class AssetDetails:
         媒资状态。 - \"CREATING\"：上传中 - \"FAILED\"：上传失败 - \"CREATED\"：上传成功 - \"PUBLISHED\"：已发布 - \"DELETED\"：已删除
 
         :param asset_status: The asset_status of this AssetDetails.
-        :type: str
+        :type asset_status: str
         """
         self._asset_status = asset_status
 
@@ -121,7 +134,7 @@ class AssetDetails:
         转码状态。 - \"UN_TRANSCODE\"：未转码 - \"WAITING_TRANSCODE\"：等待转码，排队中 - \"TRANSCODING\"：转码中 - \"TRANSCODE_SUCCEED\"：转码成功 - \"TRANSCODE_FAILED\"：转码失败
 
         :param transcode_status: The transcode_status of this AssetDetails.
-        :type: str
+        :type transcode_status: str
         """
         self._transcode_status = transcode_status
 
@@ -131,7 +144,7 @@ class AssetDetails:
 
 
         :return: The base_info of this AssetDetails.
-        :rtype: BaseInfo
+        :rtype: :class:`huaweicloudsdkvod.v1.BaseInfo`
         """
         return self._base_info
 
@@ -141,7 +154,7 @@ class AssetDetails:
 
 
         :param base_info: The base_info of this AssetDetails.
-        :type: BaseInfo
+        :type base_info: :class:`huaweicloudsdkvod.v1.BaseInfo`
         """
         self._base_info = base_info
 
@@ -151,7 +164,7 @@ class AssetDetails:
 
 
         :return: The transcode_info of this AssetDetails.
-        :rtype: TranscodeInfo
+        :rtype: :class:`huaweicloudsdkvod.v1.TranscodeInfo`
         """
         return self._transcode_info
 
@@ -161,7 +174,7 @@ class AssetDetails:
 
 
         :param transcode_info: The transcode_info of this AssetDetails.
-        :type: TranscodeInfo
+        :type transcode_info: :class:`huaweicloudsdkvod.v1.TranscodeInfo`
         """
         self._transcode_info = transcode_info
 

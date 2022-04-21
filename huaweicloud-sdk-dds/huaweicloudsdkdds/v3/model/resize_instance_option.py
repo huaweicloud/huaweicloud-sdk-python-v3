@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResizeInstanceOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ResizeInstanceOption:
     }
 
     def __init__(self, target_type=None, target_id=None, target_spec_code=None):
-        """ResizeInstanceOption - a model defined in huaweicloud sdk"""
+        """ResizeInstanceOption
+
+        The model defined in huaweicloud sdk
+
+        :param target_type: 对象类型。 - 对于集群实例，该参数为必选。变更mongos节点规格时，取值为“mongos”；变更shard组规格时，取值为“shard”。 - 对于副本集和单节点实例，不传该参数。
+        :type target_type: str
+        :param target_id: 待变更规格的节点ID或实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。 - 对于集群实例，变更mongos节点规格时，取值为mongos节点ID；变更shard组规格时，取值为shard组ID。 - 对于副本集实例，取值为相应的实例ID。 - 对于单节点实例，取值为相应的实例ID。
+        :type target_id: str
+        :param target_spec_code: 变更至新规格的资源规格编码。
+        :type target_spec_code: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class ResizeInstanceOption:
         对象类型。 - 对于集群实例，该参数为必选。变更mongos节点规格时，取值为“mongos”；变更shard组规格时，取值为“shard”。 - 对于副本集和单节点实例，不传该参数。
 
         :param target_type: The target_type of this ResizeInstanceOption.
-        :type: str
+        :type target_type: str
         """
         self._target_type = target_type
 
@@ -88,7 +97,7 @@ class ResizeInstanceOption:
         待变更规格的节点ID或实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。 - 对于集群实例，变更mongos节点规格时，取值为mongos节点ID；变更shard组规格时，取值为shard组ID。 - 对于副本集实例，取值为相应的实例ID。 - 对于单节点实例，取值为相应的实例ID。
 
         :param target_id: The target_id of this ResizeInstanceOption.
-        :type: str
+        :type target_id: str
         """
         self._target_id = target_id
 
@@ -110,7 +119,7 @@ class ResizeInstanceOption:
         变更至新规格的资源规格编码。
 
         :param target_spec_code: The target_spec_code of this ResizeInstanceOption.
-        :type: str
+        :type target_spec_code: str
         """
         self._target_spec_code = target_spec_code
 

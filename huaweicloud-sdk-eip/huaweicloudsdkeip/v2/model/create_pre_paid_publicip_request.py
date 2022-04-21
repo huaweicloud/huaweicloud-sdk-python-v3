@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreatePrePaidPublicipRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreatePrePaidPublicipRequest:
     }
 
     def __init__(self, body=None):
-        """CreatePrePaidPublicipRequest - a model defined in huaweicloud sdk"""
+        """CreatePrePaidPublicipRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreatePrePaidPublicipRequest
+        :type body: :class:`huaweicloudsdkeip.v2.CreatePrePaidPublicipRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreatePrePaidPublicipRequest:
 
 
         :return: The body of this CreatePrePaidPublicipRequest.
-        :rtype: CreatePrePaidPublicipRequestBody
+        :rtype: :class:`huaweicloudsdkeip.v2.CreatePrePaidPublicipRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreatePrePaidPublicipRequest:
 
 
         :param body: The body of this CreatePrePaidPublicipRequest.
-        :type: CreatePrePaidPublicipRequestBody
+        :type body: :class:`huaweicloudsdkeip.v2.CreatePrePaidPublicipRequestBody`
         """
         self._body = body
 

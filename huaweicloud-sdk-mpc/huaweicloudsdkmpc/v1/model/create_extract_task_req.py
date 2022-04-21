@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateExtractTaskReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CreateExtractTaskReq:
     }
 
     def __init__(self, input=None, output=None, user_data=None, sync=None):
-        """CreateExtractTaskReq - a model defined in huaweicloud sdk"""
+        """CreateExtractTaskReq
+
+        The model defined in huaweicloud sdk
+
+        :param input: 
+        :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        :param output: 
+        :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        :param user_data: 用户自定义数据。 
+        :type user_data: str
+        :param sync: 是否同步处理, - 0：排队处理 - 1：同步处理  默认值：0 
+        :type sync: int
+        """
         
         
 
@@ -61,7 +72,7 @@ class CreateExtractTaskReq:
 
 
         :return: The input of this CreateExtractTaskReq.
-        :rtype: ObsObjInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         return self._input
 
@@ -71,7 +82,7 @@ class CreateExtractTaskReq:
 
 
         :param input: The input of this CreateExtractTaskReq.
-        :type: ObsObjInfo
+        :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         self._input = input
 
@@ -81,7 +92,7 @@ class CreateExtractTaskReq:
 
 
         :return: The output of this CreateExtractTaskReq.
-        :rtype: ObsObjInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         return self._output
 
@@ -91,7 +102,7 @@ class CreateExtractTaskReq:
 
 
         :param output: The output of this CreateExtractTaskReq.
-        :type: ObsObjInfo
+        :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         self._output = output
 
@@ -113,7 +124,7 @@ class CreateExtractTaskReq:
         用户自定义数据。 
 
         :param user_data: The user_data of this CreateExtractTaskReq.
-        :type: str
+        :type user_data: str
         """
         self._user_data = user_data
 
@@ -135,7 +146,7 @@ class CreateExtractTaskReq:
         是否同步处理, - 0：排队处理 - 1：同步处理  默认值：0 
 
         :param sync: The sync of this CreateExtractTaskReq.
-        :type: int
+        :type sync: int
         """
         self._sync = sync
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RecyclePolicyRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RecyclePolicyRequestBody:
     }
 
     def __init__(self, recycle_policy=None):
-        """RecyclePolicyRequestBody - a model defined in huaweicloud sdk"""
+        """RecyclePolicyRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param recycle_policy: 
+        :type recycle_policy: :class:`huaweicloudsdkrds.v3.RecyclePolicy`
+        """
         
         
 
@@ -45,7 +50,7 @@ class RecyclePolicyRequestBody:
 
 
         :return: The recycle_policy of this RecyclePolicyRequestBody.
-        :rtype: RecyclePolicy
+        :rtype: :class:`huaweicloudsdkrds.v3.RecyclePolicy`
         """
         return self._recycle_policy
 
@@ -55,7 +60,7 @@ class RecyclePolicyRequestBody:
 
 
         :param recycle_policy: The recycle_policy of this RecyclePolicyRequestBody.
-        :type: RecyclePolicy
+        :type recycle_policy: :class:`huaweicloudsdkrds.v3.RecyclePolicy`
         """
         self._recycle_policy = recycle_policy
 

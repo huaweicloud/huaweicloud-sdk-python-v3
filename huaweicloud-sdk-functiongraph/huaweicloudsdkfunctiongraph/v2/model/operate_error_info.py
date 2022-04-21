@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OperateErrorInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class OperateErrorInfo:
     }
 
     def __init__(self, workflow_urn=None, error_detail=None):
-        """OperateErrorInfo - a model defined in huaweicloud sdk"""
+        """OperateErrorInfo
+
+        The model defined in huaweicloud sdk
+
+        :param workflow_urn: 唯一标识ID，流程URN
+        :type workflow_urn: str
+        :param error_detail: 错误详情
+        :type error_detail: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class OperateErrorInfo:
         唯一标识ID，流程URN
 
         :param workflow_urn: The workflow_urn of this OperateErrorInfo.
-        :type: str
+        :type workflow_urn: str
         """
         self._workflow_urn = workflow_urn
 
@@ -85,7 +92,7 @@ class OperateErrorInfo:
         错误详情
 
         :param error_detail: The error_detail of this OperateErrorInfo.
-        :type: str
+        :type error_detail: str
         """
         self._error_detail = error_detail
 

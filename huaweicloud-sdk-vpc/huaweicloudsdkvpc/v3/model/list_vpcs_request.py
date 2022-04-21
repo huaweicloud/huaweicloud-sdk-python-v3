@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListVpcsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListVpcsRequest:
     }
 
     def __init__(self, limit=None, marker=None, id=None, name=None, description=None, cidr=None):
-        """ListVpcsRequest - a model defined in huaweicloud sdk"""
+        """ListVpcsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 功能说明：每页返回的个数 取值范围：0-2000
+        :type limit: int
+        :param marker: 分页查询起始的资源ID，为空时查询第一页
+        :type marker: str
+        :param id: VPC资源ID。可以使用该字段过滤VPC
+        :type id: list[str]
+        :param name: VPC的name信息，可以使用该字段过滤VPC
+        :type name: list[str]
+        :param description: VPC的描述信息。可以使用该字段过滤VPC
+        :type description: list[str]
+        :param cidr: VPC的CIDR。可以使用该字段过滤VPC
+        :type cidr: list[str]
+        """
         
         
 
@@ -83,7 +98,7 @@ class ListVpcsRequest:
         功能说明：每页返回的个数 取值范围：0-2000
 
         :param limit: The limit of this ListVpcsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -105,7 +120,7 @@ class ListVpcsRequest:
         分页查询起始的资源ID，为空时查询第一页
 
         :param marker: The marker of this ListVpcsRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -127,7 +142,7 @@ class ListVpcsRequest:
         VPC资源ID。可以使用该字段过滤VPC
 
         :param id: The id of this ListVpcsRequest.
-        :type: list[str]
+        :type id: list[str]
         """
         self._id = id
 
@@ -149,7 +164,7 @@ class ListVpcsRequest:
         VPC的name信息，可以使用该字段过滤VPC
 
         :param name: The name of this ListVpcsRequest.
-        :type: list[str]
+        :type name: list[str]
         """
         self._name = name
 
@@ -171,7 +186,7 @@ class ListVpcsRequest:
         VPC的描述信息。可以使用该字段过滤VPC
 
         :param description: The description of this ListVpcsRequest.
-        :type: list[str]
+        :type description: list[str]
         """
         self._description = description
 
@@ -193,7 +208,7 @@ class ListVpcsRequest:
         VPC的CIDR。可以使用该字段过滤VPC
 
         :param cidr: The cidr of this ListVpcsRequest.
-        :type: list[str]
+        :type cidr: list[str]
         """
         self._cidr = cidr
 

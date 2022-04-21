@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GetIdTokenAuthParams:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class GetIdTokenAuthParams:
     }
 
     def __init__(self, id_token=None, scope=None):
-        """GetIdTokenAuthParams - a model defined in huaweicloud sdk"""
+        """GetIdTokenAuthParams
+
+        The model defined in huaweicloud sdk
+
+        :param id_token: 
+        :type id_token: :class:`huaweicloudsdkiam.v3.GetIdTokenIdTokenBody`
+        :param scope: 
+        :type scope: :class:`huaweicloudsdkiam.v3.GetIdTokenIdScopeBody`
+        """
         
         
 
@@ -50,7 +57,7 @@ class GetIdTokenAuthParams:
 
 
         :return: The id_token of this GetIdTokenAuthParams.
-        :rtype: GetIdTokenIdTokenBody
+        :rtype: :class:`huaweicloudsdkiam.v3.GetIdTokenIdTokenBody`
         """
         return self._id_token
 
@@ -60,7 +67,7 @@ class GetIdTokenAuthParams:
 
 
         :param id_token: The id_token of this GetIdTokenAuthParams.
-        :type: GetIdTokenIdTokenBody
+        :type id_token: :class:`huaweicloudsdkiam.v3.GetIdTokenIdTokenBody`
         """
         self._id_token = id_token
 
@@ -70,7 +77,7 @@ class GetIdTokenAuthParams:
 
 
         :return: The scope of this GetIdTokenAuthParams.
-        :rtype: GetIdTokenIdScopeBody
+        :rtype: :class:`huaweicloudsdkiam.v3.GetIdTokenIdScopeBody`
         """
         return self._scope
 
@@ -80,7 +87,7 @@ class GetIdTokenAuthParams:
 
 
         :param scope: The scope of this GetIdTokenAuthParams.
-        :type: GetIdTokenIdScopeBody
+        :type scope: :class:`huaweicloudsdkiam.v3.GetIdTokenIdScopeBody`
         """
         self._scope = scope
 

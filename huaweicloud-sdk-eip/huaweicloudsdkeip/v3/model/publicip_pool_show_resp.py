@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PublicipPoolShowResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -62,7 +61,45 @@ class PublicipPoolShowResp:
     }
 
     def __init__(self, id=None, name=None, status=None, type=None, description=None, project_id=None, size=None, used=None, created_at=None, updated_at=None, billing_info=None, public_border_group=None, shared=None, is_common=None, tags=None, enterprise_project_id=None, allow_share_bandwidth_types=None):
-        """PublicipPoolShowResp - a model defined in huaweicloud sdk"""
+        """PublicipPoolShowResp
+
+        The model defined in huaweicloud sdk
+
+        :param id: 公网IP池id
+        :type id: str
+        :param name: 公网IP池名字
+        :type name: str
+        :param status: 状态
+        :type status: str
+        :param type: 取值, spec_bgp(专属离散动态), spec_sbgp(专属离散静态)
+        :type type: str
+        :param description: 描述
+        :type description: str
+        :param project_id: 租户id
+        :type project_id: str
+        :param size: 池子大小
+        :type size: int
+        :param used: 已经使用的ip数量
+        :type used: int
+        :param created_at: 公网IP池创建时间
+        :type created_at: str
+        :param updated_at: 公网IP池更新时间
+        :type updated_at: str
+        :param billing_info: 
+        :type billing_info: :class:`huaweicloudsdkeip.v3.BillingInfoDict`
+        :param public_border_group: 功能说明：中心还是边缘。公网IP池取值为center
+        :type public_border_group: str
+        :param shared: 功能说明：是否共享
+        :type shared: bool
+        :param is_common: 功能说明：是否公共池
+        :type is_common: bool
+        :param tags: 默认不显示。用户标签
+        :type tags: list[:class:`huaweicloudsdkeip.v3.TagsInfo`]
+        :param enterprise_project_id: 功能说明：企业项目ID。最大长度36字节,带“-”连字符的UUID格式,或者是字符串“0”。创建弹性公网IP时,给弹性公网IP绑定企业项目ID。
+        :type enterprise_project_id: str
+        :param allow_share_bandwidth_types: 功能说明：表示此publicip可以加入的共享带宽类型列表，如果为空列表，则表示该           publicip不能加入任何共享带宽 约束：publicip只能加入到有该带宽类型的共享带宽中
+        :type allow_share_bandwidth_types: list[str]
+        """
         
         
 
@@ -138,7 +175,7 @@ class PublicipPoolShowResp:
         公网IP池id
 
         :param id: The id of this PublicipPoolShowResp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -160,7 +197,7 @@ class PublicipPoolShowResp:
         公网IP池名字
 
         :param name: The name of this PublicipPoolShowResp.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -182,7 +219,7 @@ class PublicipPoolShowResp:
         状态
 
         :param status: The status of this PublicipPoolShowResp.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -204,7 +241,7 @@ class PublicipPoolShowResp:
         取值, spec_bgp(专属离散动态), spec_sbgp(专属离散静态)
 
         :param type: The type of this PublicipPoolShowResp.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -226,7 +263,7 @@ class PublicipPoolShowResp:
         描述
 
         :param description: The description of this PublicipPoolShowResp.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -248,7 +285,7 @@ class PublicipPoolShowResp:
         租户id
 
         :param project_id: The project_id of this PublicipPoolShowResp.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -270,7 +307,7 @@ class PublicipPoolShowResp:
         池子大小
 
         :param size: The size of this PublicipPoolShowResp.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -292,7 +329,7 @@ class PublicipPoolShowResp:
         已经使用的ip数量
 
         :param used: The used of this PublicipPoolShowResp.
-        :type: int
+        :type used: int
         """
         self._used = used
 
@@ -314,7 +351,7 @@ class PublicipPoolShowResp:
         公网IP池创建时间
 
         :param created_at: The created_at of this PublicipPoolShowResp.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -336,7 +373,7 @@ class PublicipPoolShowResp:
         公网IP池更新时间
 
         :param updated_at: The updated_at of this PublicipPoolShowResp.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 
@@ -346,7 +383,7 @@ class PublicipPoolShowResp:
 
 
         :return: The billing_info of this PublicipPoolShowResp.
-        :rtype: BillingInfoDict
+        :rtype: :class:`huaweicloudsdkeip.v3.BillingInfoDict`
         """
         return self._billing_info
 
@@ -356,7 +393,7 @@ class PublicipPoolShowResp:
 
 
         :param billing_info: The billing_info of this PublicipPoolShowResp.
-        :type: BillingInfoDict
+        :type billing_info: :class:`huaweicloudsdkeip.v3.BillingInfoDict`
         """
         self._billing_info = billing_info
 
@@ -378,7 +415,7 @@ class PublicipPoolShowResp:
         功能说明：中心还是边缘。公网IP池取值为center
 
         :param public_border_group: The public_border_group of this PublicipPoolShowResp.
-        :type: str
+        :type public_border_group: str
         """
         self._public_border_group = public_border_group
 
@@ -400,7 +437,7 @@ class PublicipPoolShowResp:
         功能说明：是否共享
 
         :param shared: The shared of this PublicipPoolShowResp.
-        :type: bool
+        :type shared: bool
         """
         self._shared = shared
 
@@ -422,7 +459,7 @@ class PublicipPoolShowResp:
         功能说明：是否公共池
 
         :param is_common: The is_common of this PublicipPoolShowResp.
-        :type: bool
+        :type is_common: bool
         """
         self._is_common = is_common
 
@@ -433,7 +470,7 @@ class PublicipPoolShowResp:
         默认不显示。用户标签
 
         :return: The tags of this PublicipPoolShowResp.
-        :rtype: list[TagsInfo]
+        :rtype: list[:class:`huaweicloudsdkeip.v3.TagsInfo`]
         """
         return self._tags
 
@@ -444,7 +481,7 @@ class PublicipPoolShowResp:
         默认不显示。用户标签
 
         :param tags: The tags of this PublicipPoolShowResp.
-        :type: list[TagsInfo]
+        :type tags: list[:class:`huaweicloudsdkeip.v3.TagsInfo`]
         """
         self._tags = tags
 
@@ -466,7 +503,7 @@ class PublicipPoolShowResp:
         功能说明：企业项目ID。最大长度36字节,带“-”连字符的UUID格式,或者是字符串“0”。创建弹性公网IP时,给弹性公网IP绑定企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this PublicipPoolShowResp.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -488,7 +525,7 @@ class PublicipPoolShowResp:
         功能说明：表示此publicip可以加入的共享带宽类型列表，如果为空列表，则表示该           publicip不能加入任何共享带宽 约束：publicip只能加入到有该带宽类型的共享带宽中
 
         :param allow_share_bandwidth_types: The allow_share_bandwidth_types of this PublicipPoolShowResp.
-        :type: list[str]
+        :type allow_share_bandwidth_types: list[str]
         """
         self._allow_share_bandwidth_types = allow_share_bandwidth_types
 

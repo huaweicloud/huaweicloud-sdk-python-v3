@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LiveDetectRespVideoresult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class LiveDetectRespVideoresult:
     }
 
     def __init__(self, alive=None, actions=None, picture=None):
-        """LiveDetectRespVideoresult - a model defined in huaweicloud sdk"""
+        """LiveDetectRespVideoresult
+
+        The model defined in huaweicloud sdk
+
+        :param alive: 是否是活体。
+        :type alive: bool
+        :param actions: 动作列表。
+        :type actions: list[:class:`huaweicloudsdkfrs.v2.ActionsList`]
+        :param picture: 检测出最大人脸的图片base64。
+        :type picture: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class LiveDetectRespVideoresult:
         是否是活体。
 
         :param alive: The alive of this LiveDetectRespVideoresult.
-        :type: bool
+        :type alive: bool
         """
         self._alive = alive
 
@@ -79,7 +88,7 @@ class LiveDetectRespVideoresult:
         动作列表。
 
         :return: The actions of this LiveDetectRespVideoresult.
-        :rtype: list[ActionsList]
+        :rtype: list[:class:`huaweicloudsdkfrs.v2.ActionsList`]
         """
         return self._actions
 
@@ -90,7 +99,7 @@ class LiveDetectRespVideoresult:
         动作列表。
 
         :param actions: The actions of this LiveDetectRespVideoresult.
-        :type: list[ActionsList]
+        :type actions: list[:class:`huaweicloudsdkfrs.v2.ActionsList`]
         """
         self._actions = actions
 
@@ -112,7 +121,7 @@ class LiveDetectRespVideoresult:
         检测出最大人脸的图片base64。
 
         :param picture: The picture of this LiveDetectRespVideoresult.
-        :type: str
+        :type picture: str
         """
         self._picture = picture
 

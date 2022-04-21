@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowReplicationParams:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -60,7 +59,43 @@ class ShowReplicationParams:
     }
 
     def __init__(self, id=None, name=None, description=None, status=None, volume_ids=None, attachment=None, created_at=None, updated_at=None, replication_model=None, progress=None, failure_detail=None, record_metadata=None, fault_level=None, server_group_id=None, priority_station=None, replication_status=None):
-        """ShowReplicationParams - a model defined in huaweicloud sdk"""
+        """ShowReplicationParams
+
+        The model defined in huaweicloud sdk
+
+        :param id: 复制对的ID。
+        :type id: str
+        :param name: 复制对的名称。
+        :type name: str
+        :param description: 复制对的描述。
+        :type description: str
+        :param status: 复制对的状态。
+        :type status: str
+        :param volume_ids: 复制对使用的云硬盘ID。
+        :type volume_ids: str
+        :param attachment: 挂载点。
+        :type attachment: list[:class:`huaweicloudsdksdrs.v1.ReplicationAttachment`]
+        :param created_at: 创建时间。默认格式为：\&quot;yyyy-MM-ddTHH:mm:ss.SSSZ\&quot;，例如：\&quot;2019-04-01T12:00:00.000Z\&quot;
+        :type created_at: str
+        :param updated_at: 更新时间。默认格式为：\&quot;yyyy-MM-ddTHH:mm:ss.SSSZ\&quot;，例如：\&quot;2019-04-01T12:00:00.000Z\&quot;
+        :type updated_at: str
+        :param replication_model: 复制对的复制类型。默认值为“hypermetro”，表示同步复制。
+        :type replication_model: str
+        :param progress: 复制对的同步进度。单位：百分比（%）。
+        :type progress: int
+        :param failure_detail: 仅在复制对的状态“status”为“error”时，返回的错误码。
+        :type failure_detail: str
+        :param record_metadata: 
+        :type record_metadata: :class:`huaweicloudsdksdrs.v1.ReplicationRecordMetadata`
+        :param fault_level: 复制对的故障等级。0：表示无故障。2：表示当前生产站点的云硬盘无读写数据权限，此时建议执行故障切换操作。5：表示复制链路已断，不能执行故障切换操作，需联系技术支持工程师。
+        :type fault_level: str
+        :param server_group_id: 保护组的ID。
+        :type server_group_id: str
+        :param priority_station: 标识复制对所在保护组的当前生产站点可用区。source：表示当前生产站点可用区为保护组source_availability_zone的值。target：表示当前生产站点可用区为保护组target_availability_zone的值。
+        :type priority_station: str
+        :param replication_status: 数据同步状态。active：表示数据已同步完成。inactive：表示数据未同步。copying：表示数据正在同步。active-stopped：表示数据已停止同步。
+        :type replication_status: str
+        """
         
         
 
@@ -117,7 +152,7 @@ class ShowReplicationParams:
         复制对的ID。
 
         :param id: The id of this ShowReplicationParams.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -139,7 +174,7 @@ class ShowReplicationParams:
         复制对的名称。
 
         :param name: The name of this ShowReplicationParams.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -161,7 +196,7 @@ class ShowReplicationParams:
         复制对的描述。
 
         :param description: The description of this ShowReplicationParams.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -183,7 +218,7 @@ class ShowReplicationParams:
         复制对的状态。
 
         :param status: The status of this ShowReplicationParams.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -205,7 +240,7 @@ class ShowReplicationParams:
         复制对使用的云硬盘ID。
 
         :param volume_ids: The volume_ids of this ShowReplicationParams.
-        :type: str
+        :type volume_ids: str
         """
         self._volume_ids = volume_ids
 
@@ -216,7 +251,7 @@ class ShowReplicationParams:
         挂载点。
 
         :return: The attachment of this ShowReplicationParams.
-        :rtype: list[ReplicationAttachment]
+        :rtype: list[:class:`huaweicloudsdksdrs.v1.ReplicationAttachment`]
         """
         return self._attachment
 
@@ -227,7 +262,7 @@ class ShowReplicationParams:
         挂载点。
 
         :param attachment: The attachment of this ShowReplicationParams.
-        :type: list[ReplicationAttachment]
+        :type attachment: list[:class:`huaweicloudsdksdrs.v1.ReplicationAttachment`]
         """
         self._attachment = attachment
 
@@ -249,7 +284,7 @@ class ShowReplicationParams:
         创建时间。默认格式为：\"yyyy-MM-ddTHH:mm:ss.SSSZ\"，例如：\"2019-04-01T12:00:00.000Z\"
 
         :param created_at: The created_at of this ShowReplicationParams.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -271,7 +306,7 @@ class ShowReplicationParams:
         更新时间。默认格式为：\"yyyy-MM-ddTHH:mm:ss.SSSZ\"，例如：\"2019-04-01T12:00:00.000Z\"
 
         :param updated_at: The updated_at of this ShowReplicationParams.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 
@@ -293,7 +328,7 @@ class ShowReplicationParams:
         复制对的复制类型。默认值为“hypermetro”，表示同步复制。
 
         :param replication_model: The replication_model of this ShowReplicationParams.
-        :type: str
+        :type replication_model: str
         """
         self._replication_model = replication_model
 
@@ -315,7 +350,7 @@ class ShowReplicationParams:
         复制对的同步进度。单位：百分比（%）。
 
         :param progress: The progress of this ShowReplicationParams.
-        :type: int
+        :type progress: int
         """
         self._progress = progress
 
@@ -337,7 +372,7 @@ class ShowReplicationParams:
         仅在复制对的状态“status”为“error”时，返回的错误码。
 
         :param failure_detail: The failure_detail of this ShowReplicationParams.
-        :type: str
+        :type failure_detail: str
         """
         self._failure_detail = failure_detail
 
@@ -347,7 +382,7 @@ class ShowReplicationParams:
 
 
         :return: The record_metadata of this ShowReplicationParams.
-        :rtype: ReplicationRecordMetadata
+        :rtype: :class:`huaweicloudsdksdrs.v1.ReplicationRecordMetadata`
         """
         return self._record_metadata
 
@@ -357,7 +392,7 @@ class ShowReplicationParams:
 
 
         :param record_metadata: The record_metadata of this ShowReplicationParams.
-        :type: ReplicationRecordMetadata
+        :type record_metadata: :class:`huaweicloudsdksdrs.v1.ReplicationRecordMetadata`
         """
         self._record_metadata = record_metadata
 
@@ -379,7 +414,7 @@ class ShowReplicationParams:
         复制对的故障等级。0：表示无故障。2：表示当前生产站点的云硬盘无读写数据权限，此时建议执行故障切换操作。5：表示复制链路已断，不能执行故障切换操作，需联系技术支持工程师。
 
         :param fault_level: The fault_level of this ShowReplicationParams.
-        :type: str
+        :type fault_level: str
         """
         self._fault_level = fault_level
 
@@ -401,7 +436,7 @@ class ShowReplicationParams:
         保护组的ID。
 
         :param server_group_id: The server_group_id of this ShowReplicationParams.
-        :type: str
+        :type server_group_id: str
         """
         self._server_group_id = server_group_id
 
@@ -423,7 +458,7 @@ class ShowReplicationParams:
         标识复制对所在保护组的当前生产站点可用区。source：表示当前生产站点可用区为保护组source_availability_zone的值。target：表示当前生产站点可用区为保护组target_availability_zone的值。
 
         :param priority_station: The priority_station of this ShowReplicationParams.
-        :type: str
+        :type priority_station: str
         """
         self._priority_station = priority_station
 
@@ -445,7 +480,7 @@ class ShowReplicationParams:
         数据同步状态。active：表示数据已同步完成。inactive：表示数据未同步。copying：表示数据正在同步。active-stopped：表示数据已停止同步。
 
         :param replication_status: The replication_status of this ShowReplicationParams.
-        :type: str
+        :type replication_status: str
         """
         self._replication_status = replication_status
 

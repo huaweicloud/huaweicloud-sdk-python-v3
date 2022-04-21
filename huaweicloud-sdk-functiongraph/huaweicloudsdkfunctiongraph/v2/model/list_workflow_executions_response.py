@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListWorkflowExecutionsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListWorkflowExecutionsResponse(SdkResponse):
     }
 
     def __init__(self, executions=None):
-        """ListWorkflowExecutionsResponse - a model defined in huaweicloud sdk"""
+        """ListWorkflowExecutionsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param executions: 流程执行信息列表
+        :type executions: list[:class:`huaweicloudsdkfunctiongraph.v2.ListWorkflowExecutionResult`]
+        """
         
         super(ListWorkflowExecutionsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListWorkflowExecutionsResponse(SdkResponse):
         流程执行信息列表
 
         :return: The executions of this ListWorkflowExecutionsResponse.
-        :rtype: list[ListWorkflowExecutionResult]
+        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.ListWorkflowExecutionResult`]
         """
         return self._executions
 
@@ -58,7 +63,7 @@ class ListWorkflowExecutionsResponse(SdkResponse):
         流程执行信息列表
 
         :param executions: The executions of this ListWorkflowExecutionsResponse.
-        :type: list[ListWorkflowExecutionResult]
+        :type executions: list[:class:`huaweicloudsdkfunctiongraph.v2.ListWorkflowExecutionResult`]
         """
         self._executions = executions
 

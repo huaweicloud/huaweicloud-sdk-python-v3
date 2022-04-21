@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTemplatesTwoRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListTemplatesTwoRequest:
     }
 
     def __init__(self, repository_uuid=None, body=None):
-        """ListTemplatesTwoRequest - a model defined in huaweicloud sdk"""
+        """ListTemplatesTwoRequest
+
+        The model defined in huaweicloud sdk
+
+        :param repository_uuid: 仓库id
+        :type repository_uuid: str
+        :param body: Body of the ListTemplatesTwoRequest
+        :type body: :class:`huaweicloudsdkcodehub.v3.RepositoryTemplateVO2`
+        """
         
         
 
@@ -62,7 +69,7 @@ class ListTemplatesTwoRequest:
         仓库id
 
         :param repository_uuid: The repository_uuid of this ListTemplatesTwoRequest.
-        :type: str
+        :type repository_uuid: str
         """
         self._repository_uuid = repository_uuid
 
@@ -72,7 +79,7 @@ class ListTemplatesTwoRequest:
 
 
         :return: The body of this ListTemplatesTwoRequest.
-        :rtype: RepositoryTemplateVO2
+        :rtype: :class:`huaweicloudsdkcodehub.v3.RepositoryTemplateVO2`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class ListTemplatesTwoRequest:
 
 
         :param body: The body of this ListTemplatesTwoRequest.
-        :type: RepositoryTemplateVO2
+        :type body: :class:`huaweicloudsdkcodehub.v3.RepositoryTemplateVO2`
         """
         self._body = body
 

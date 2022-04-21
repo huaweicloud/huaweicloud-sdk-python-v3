@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowCredential:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ShowCredential:
     }
 
     def __init__(self, user_id=None, access=None, status=None, create_time=None, last_use_time=None, description=None):
-        """ShowCredential - a model defined in huaweicloud sdk"""
+        """ShowCredential
+
+        The model defined in huaweicloud sdk
+
+        :param user_id: IAM用户ID。
+        :type user_id: str
+        :param access: 查询的AK。
+        :type access: str
+        :param status: 访问密钥状态。
+        :type status: str
+        :param create_time: 访问密钥创建时间。
+        :type create_time: str
+        :param last_use_time: 访问密钥的上次使用时间。
+        :type last_use_time: str
+        :param description: 访问密钥描述信息。
+        :type description: str
+        """
         
         
 
@@ -77,7 +92,7 @@ class ShowCredential:
         IAM用户ID。
 
         :param user_id: The user_id of this ShowCredential.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -99,7 +114,7 @@ class ShowCredential:
         查询的AK。
 
         :param access: The access of this ShowCredential.
-        :type: str
+        :type access: str
         """
         self._access = access
 
@@ -121,7 +136,7 @@ class ShowCredential:
         访问密钥状态。
 
         :param status: The status of this ShowCredential.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -143,7 +158,7 @@ class ShowCredential:
         访问密钥创建时间。
 
         :param create_time: The create_time of this ShowCredential.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -165,7 +180,7 @@ class ShowCredential:
         访问密钥的上次使用时间。
 
         :param last_use_time: The last_use_time of this ShowCredential.
-        :type: str
+        :type last_use_time: str
         """
         self._last_use_time = last_use_time
 
@@ -187,7 +202,7 @@ class ShowCredential:
         访问密钥描述信息。
 
         :param description: The description of this ShowCredential.
-        :type: str
+        :type description: str
         """
         self._description = description
 

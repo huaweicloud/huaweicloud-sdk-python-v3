@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class JobStatus:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class JobStatus:
     }
 
     def __init__(self, phase=None, reason=None):
-        """JobStatus - a model defined in huaweicloud sdk"""
+        """JobStatus
+
+        The model defined in huaweicloud sdk
+
+        :param phase: 任务的状态，有如下四种状态：  - JobPhaseInitializing JobPhase &#x3D; \&quot;Initializing\&quot; - JobPhaseRunning JobPhase &#x3D; \&quot;Running\&quot; - JobPhaseFailed JobPhase &#x3D; \&quot;Failed\&quot; - JobPhaseSuccess JobPhase &#x3D; \&quot;Success\&quot;
+        :type phase: str
+        :param reason: 任务变为当前状态的原因
+        :type reason: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class JobStatus:
         任务的状态，有如下四种状态：  - JobPhaseInitializing JobPhase = \"Initializing\" - JobPhaseRunning JobPhase = \"Running\" - JobPhaseFailed JobPhase = \"Failed\" - JobPhaseSuccess JobPhase = \"Success\"
 
         :param phase: The phase of this JobStatus.
-        :type: str
+        :type phase: str
         """
         self._phase = phase
 
@@ -85,7 +92,7 @@ class JobStatus:
         任务变为当前状态的原因
 
         :param reason: The reason of this JobStatus.
-        :type: str
+        :type reason: str
         """
         self._reason = reason
 

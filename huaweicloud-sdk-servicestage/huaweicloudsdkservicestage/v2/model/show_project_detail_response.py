@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowProjectDetailResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowProjectDetailResponse(SdkResponse):
     }
 
     def __init__(self, namespace_id=None, namespace=None, project_id=None, project=None):
-        """ShowProjectDetailResponse - a model defined in huaweicloud sdk"""
+        """ShowProjectDetailResponse
+
+        The model defined in huaweicloud sdk
+
+        :param namespace_id: 命名空间ID。
+        :type namespace_id: str
+        :param namespace: 命名空间。
+        :type namespace: str
+        :param project_id: 仓库项目ID。
+        :type project_id: str
+        :param project: 仓库项目。
+        :type project: str
+        """
         
         super(ShowProjectDetailResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class ShowProjectDetailResponse(SdkResponse):
         命名空间ID。
 
         :param namespace_id: The namespace_id of this ShowProjectDetailResponse.
-        :type: str
+        :type namespace_id: str
         """
         self._namespace_id = namespace_id
 
@@ -95,7 +106,7 @@ class ShowProjectDetailResponse(SdkResponse):
         命名空间。
 
         :param namespace: The namespace of this ShowProjectDetailResponse.
-        :type: str
+        :type namespace: str
         """
         self._namespace = namespace
 
@@ -117,7 +128,7 @@ class ShowProjectDetailResponse(SdkResponse):
         仓库项目ID。
 
         :param project_id: The project_id of this ShowProjectDetailResponse.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -139,7 +150,7 @@ class ShowProjectDetailResponse(SdkResponse):
         仓库项目。
 
         :param project: The project of this ShowProjectDetailResponse.
-        :type: str
+        :type project: str
         """
         self._project = project
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExternalAccesses:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ExternalAccesses:
     }
 
     def __init__(self, id=None, protocol=None, address=None, forward_port=None, type=None, status=None, create_time=None, update_time=None):
-        """ExternalAccesses - a model defined in huaweicloud sdk"""
+        """ExternalAccesses
+
+        The model defined in huaweicloud sdk
+
+        :param id: ID。
+        :type id: str
+        :param protocol: 
+        :type protocol: :class:`huaweicloudsdkservicestage.v2.ExternalAccessProtocol`
+        :param address: 访问地址。
+        :type address: str
+        :param forward_port: 应用组件进程监听端口
+        :type forward_port: int
+        :param type: 
+        :type type: :class:`huaweicloudsdkservicestage.v2.ExternalAccessType`
+        :param status: 
+        :type status: :class:`huaweicloudsdkservicestage.v2.ExternalAccessStatus`
+        :param create_time: 创建时间。
+        :type create_time: int
+        :param update_time: 修改时间。
+        :type update_time: int
+        """
         
         
 
@@ -90,7 +109,7 @@ class ExternalAccesses:
         ID。
 
         :param id: The id of this ExternalAccesses.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -100,7 +119,7 @@ class ExternalAccesses:
 
 
         :return: The protocol of this ExternalAccesses.
-        :rtype: ExternalAccessProtocol
+        :rtype: :class:`huaweicloudsdkservicestage.v2.ExternalAccessProtocol`
         """
         return self._protocol
 
@@ -110,7 +129,7 @@ class ExternalAccesses:
 
 
         :param protocol: The protocol of this ExternalAccesses.
-        :type: ExternalAccessProtocol
+        :type protocol: :class:`huaweicloudsdkservicestage.v2.ExternalAccessProtocol`
         """
         self._protocol = protocol
 
@@ -132,7 +151,7 @@ class ExternalAccesses:
         访问地址。
 
         :param address: The address of this ExternalAccesses.
-        :type: str
+        :type address: str
         """
         self._address = address
 
@@ -154,7 +173,7 @@ class ExternalAccesses:
         应用组件进程监听端口
 
         :param forward_port: The forward_port of this ExternalAccesses.
-        :type: int
+        :type forward_port: int
         """
         self._forward_port = forward_port
 
@@ -164,7 +183,7 @@ class ExternalAccesses:
 
 
         :return: The type of this ExternalAccesses.
-        :rtype: ExternalAccessType
+        :rtype: :class:`huaweicloudsdkservicestage.v2.ExternalAccessType`
         """
         return self._type
 
@@ -174,7 +193,7 @@ class ExternalAccesses:
 
 
         :param type: The type of this ExternalAccesses.
-        :type: ExternalAccessType
+        :type type: :class:`huaweicloudsdkservicestage.v2.ExternalAccessType`
         """
         self._type = type
 
@@ -184,7 +203,7 @@ class ExternalAccesses:
 
 
         :return: The status of this ExternalAccesses.
-        :rtype: ExternalAccessStatus
+        :rtype: :class:`huaweicloudsdkservicestage.v2.ExternalAccessStatus`
         """
         return self._status
 
@@ -194,7 +213,7 @@ class ExternalAccesses:
 
 
         :param status: The status of this ExternalAccesses.
-        :type: ExternalAccessStatus
+        :type status: :class:`huaweicloudsdkservicestage.v2.ExternalAccessStatus`
         """
         self._status = status
 
@@ -216,7 +235,7 @@ class ExternalAccesses:
         创建时间。
 
         :param create_time: The create_time of this ExternalAccesses.
-        :type: int
+        :type create_time: int
         """
         self._create_time = create_time
 
@@ -238,7 +257,7 @@ class ExternalAccesses:
         修改时间。
 
         :param update_time: The update_time of this ExternalAccesses.
-        :type: int
+        :type update_time: int
         """
         self._update_time = update_time
 

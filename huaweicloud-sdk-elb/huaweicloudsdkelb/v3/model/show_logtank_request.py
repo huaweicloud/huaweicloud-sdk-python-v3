@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowLogtankRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowLogtankRequest:
     }
 
     def __init__(self, logtank_id=None):
-        """ShowLogtankRequest - a model defined in huaweicloud sdk"""
+        """ShowLogtankRequest
+
+        The model defined in huaweicloud sdk
+
+        :param logtank_id: 云日志ID。
+        :type logtank_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowLogtankRequest:
         云日志ID。
 
         :param logtank_id: The logtank_id of this ShowLogtankRequest.
-        :type: str
+        :type logtank_id: str
         """
         self._logtank_id = logtank_id
 

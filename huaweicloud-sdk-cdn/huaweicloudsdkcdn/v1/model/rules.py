@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Rules:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class Rules:
     }
 
     def __init__(self, rule_type=None, content=None, ttl=None, ttl_type=None, priority=None):
-        """Rules - a model defined in huaweicloud sdk"""
+        """Rules
+
+        The model defined in huaweicloud sdk
+
+        :param rule_type: 0：全部类型，表示匹配所有文件，默认值。  1：文件类型，表示按文件后缀匹配。  2：文件夹类型，表示按目录匹配。  3：文件全路径类型，表示按文件全路径匹配。
+        :type rule_type: int
+        :param content: 缓存匹配设置。  当rule_type为0时，为空。  当rule_type为1时，为文件后缀，输入首字符为“.”，以“;”进行分隔，如.jpg;.zip;.exe，并且输入的文件名后缀总数不超过20个。 当rule_type为2时，为目录，输入要求以“/”作为首字符，以“;”进行分隔，如/test/folder01;/test/folder02，并且输入的目录路径总数不超过20个。 当rule_type为3时，为全路径，输入要求以“/”作为首字符，支持匹配指定目录下的具体文件，或者带通配符“*”的文件，如/test/index.html或/test/*.jpg。
+        :type content: str
+        :param ttl: 缓存时间。最大支持365天。
+        :type ttl: int
+        :param ttl_type: 缓存时间单位。1：秒；2：分；3：小时；4：天。
+        :type ttl_type: int
+        :param priority: 此条配置的权重值, 默认值1，数值越大，优先级越高。取值范围为1-100，权重值不能相同。
+        :type priority: int
+        """
         
         
 
@@ -74,7 +87,7 @@ class Rules:
         0：全部类型，表示匹配所有文件，默认值。  1：文件类型，表示按文件后缀匹配。  2：文件夹类型，表示按目录匹配。  3：文件全路径类型，表示按文件全路径匹配。
 
         :param rule_type: The rule_type of this Rules.
-        :type: int
+        :type rule_type: int
         """
         self._rule_type = rule_type
 
@@ -96,7 +109,7 @@ class Rules:
         缓存匹配设置。  当rule_type为0时，为空。  当rule_type为1时，为文件后缀，输入首字符为“.”，以“;”进行分隔，如.jpg;.zip;.exe，并且输入的文件名后缀总数不超过20个。 当rule_type为2时，为目录，输入要求以“/”作为首字符，以“;”进行分隔，如/test/folder01;/test/folder02，并且输入的目录路径总数不超过20个。 当rule_type为3时，为全路径，输入要求以“/”作为首字符，支持匹配指定目录下的具体文件，或者带通配符“*”的文件，如/test/index.html或/test/*.jpg。
 
         :param content: The content of this Rules.
-        :type: str
+        :type content: str
         """
         self._content = content
 
@@ -118,7 +131,7 @@ class Rules:
         缓存时间。最大支持365天。
 
         :param ttl: The ttl of this Rules.
-        :type: int
+        :type ttl: int
         """
         self._ttl = ttl
 
@@ -140,7 +153,7 @@ class Rules:
         缓存时间单位。1：秒；2：分；3：小时；4：天。
 
         :param ttl_type: The ttl_type of this Rules.
-        :type: int
+        :type ttl_type: int
         """
         self._ttl_type = ttl_type
 
@@ -162,7 +175,7 @@ class Rules:
         此条配置的权重值, 默认值1，数值越大，优先级越高。取值范围为1-100，权重值不能相同。
 
         :param priority: The priority of this Rules.
-        :type: int
+        :type priority: int
         """
         self._priority = priority
 

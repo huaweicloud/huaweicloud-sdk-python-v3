@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NovaCreateServersResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class NovaCreateServersResult:
     }
 
     def __init__(self, id=None, links=None, security_groups=None, os_dc_fdisk_config=None, reservation_id=None, admin_pass=None):
-        """NovaCreateServersResult - a model defined in huaweicloud sdk"""
+        """NovaCreateServersResult
+
+        The model defined in huaweicloud sdk
+
+        :param id: 弹性云服务器uuid。
+        :type id: str
+        :param links: 弹性云服务器URI自描述信息。
+        :type links: list[:class:`huaweicloudsdkecs.v2.NovaLink`]
+        :param security_groups: 弹性云服务器所在安全组。
+        :type security_groups: list[:class:`huaweicloudsdkecs.v2.NovaServerSecurityGroup`]
+        :param os_dc_fdisk_config: diskConfig方式。  - MANUAL，镜像空间不会扩展。 - AUTO，系统盘镜像空间会自动扩展为与flavor大小一致。
+        :type os_dc_fdisk_config: str
+        :param reservation_id: 通过返回的reservation_id，可以过滤查询到本次创建的弹性云服务器。  &gt; 说明： &gt;  &gt; 批量创建弹性云服务器时，支持使用该字段。
+        :type reservation_id: str
+        :param admin_pass: Windows弹性云服务器Administrator用户的密码。
+        :type admin_pass: str
+        """
         
         
 
@@ -78,7 +93,7 @@ class NovaCreateServersResult:
         弹性云服务器uuid。
 
         :param id: The id of this NovaCreateServersResult.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -89,7 +104,7 @@ class NovaCreateServersResult:
         弹性云服务器URI自描述信息。
 
         :return: The links of this NovaCreateServersResult.
-        :rtype: list[NovaLink]
+        :rtype: list[:class:`huaweicloudsdkecs.v2.NovaLink`]
         """
         return self._links
 
@@ -100,7 +115,7 @@ class NovaCreateServersResult:
         弹性云服务器URI自描述信息。
 
         :param links: The links of this NovaCreateServersResult.
-        :type: list[NovaLink]
+        :type links: list[:class:`huaweicloudsdkecs.v2.NovaLink`]
         """
         self._links = links
 
@@ -111,7 +126,7 @@ class NovaCreateServersResult:
         弹性云服务器所在安全组。
 
         :return: The security_groups of this NovaCreateServersResult.
-        :rtype: list[NovaServerSecurityGroup]
+        :rtype: list[:class:`huaweicloudsdkecs.v2.NovaServerSecurityGroup`]
         """
         return self._security_groups
 
@@ -122,7 +137,7 @@ class NovaCreateServersResult:
         弹性云服务器所在安全组。
 
         :param security_groups: The security_groups of this NovaCreateServersResult.
-        :type: list[NovaServerSecurityGroup]
+        :type security_groups: list[:class:`huaweicloudsdkecs.v2.NovaServerSecurityGroup`]
         """
         self._security_groups = security_groups
 
@@ -144,7 +159,7 @@ class NovaCreateServersResult:
         diskConfig方式。  - MANUAL，镜像空间不会扩展。 - AUTO，系统盘镜像空间会自动扩展为与flavor大小一致。
 
         :param os_dc_fdisk_config: The os_dc_fdisk_config of this NovaCreateServersResult.
-        :type: str
+        :type os_dc_fdisk_config: str
         """
         self._os_dc_fdisk_config = os_dc_fdisk_config
 
@@ -166,7 +181,7 @@ class NovaCreateServersResult:
         通过返回的reservation_id，可以过滤查询到本次创建的弹性云服务器。  > 说明： >  > 批量创建弹性云服务器时，支持使用该字段。
 
         :param reservation_id: The reservation_id of this NovaCreateServersResult.
-        :type: str
+        :type reservation_id: str
         """
         self._reservation_id = reservation_id
 
@@ -188,7 +203,7 @@ class NovaCreateServersResult:
         Windows弹性云服务器Administrator用户的密码。
 
         :param admin_pass: The admin_pass of this NovaCreateServersResult.
-        :type: str
+        :type admin_pass: str
         """
         self._admin_pass = admin_pass
 

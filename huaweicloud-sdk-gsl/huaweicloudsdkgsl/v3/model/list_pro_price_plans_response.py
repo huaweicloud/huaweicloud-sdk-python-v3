@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListProPricePlansResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListProPricePlansResponse(SdkResponse):
     }
 
     def __init__(self, limit=None, offset=None, count=None, price_plans=None):
-        """ListProPricePlansResponse - a model defined in huaweicloud sdk"""
+        """ListProPricePlansResponse
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 每页的记录数
+        :type limit: int
+        :param offset: 页码，最小值是1，最大值为1000000。默认值是1.
+        :type offset: int
+        :param count: 记录总数
+        :type count: int
+        :param price_plans: 套餐列表
+        :type price_plans: list[:class:`huaweicloudsdkgsl.v3.ProPricePlanVo`]
+        """
         
         super(ListProPricePlansResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class ListProPricePlansResponse(SdkResponse):
         每页的记录数
 
         :param limit: The limit of this ListProPricePlansResponse.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -95,7 +106,7 @@ class ListProPricePlansResponse(SdkResponse):
         页码，最小值是1，最大值为1000000。默认值是1.
 
         :param offset: The offset of this ListProPricePlansResponse.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -117,7 +128,7 @@ class ListProPricePlansResponse(SdkResponse):
         记录总数
 
         :param count: The count of this ListProPricePlansResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -128,7 +139,7 @@ class ListProPricePlansResponse(SdkResponse):
         套餐列表
 
         :return: The price_plans of this ListProPricePlansResponse.
-        :rtype: list[ProPricePlanVo]
+        :rtype: list[:class:`huaweicloudsdkgsl.v3.ProPricePlanVo`]
         """
         return self._price_plans
 
@@ -139,7 +150,7 @@ class ListProPricePlansResponse(SdkResponse):
         套餐列表
 
         :param price_plans: The price_plans of this ListProPricePlansResponse.
-        :type: list[ProPricePlanVo]
+        :type price_plans: list[:class:`huaweicloudsdkgsl.v3.ProPricePlanVo`]
         """
         self._price_plans = price_plans
 

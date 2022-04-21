@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateTransferRequestBodyLogTransferInfoLogAgencyTransfer:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class CreateTransferRequestBodyLogTransferInfoLogAgencyTransfer:
     }
 
     def __init__(self, agency_domain_id=None, agency_domain_name=None, agency_name=None, agency_project_id=None, be_agency_domain_id=None, be_agency_project_id=None):
-        """CreateTransferRequestBodyLogTransferInfoLogAgencyTransfer - a model defined in huaweicloud sdk"""
+        """CreateTransferRequestBodyLogTransferInfoLogAgencyTransfer
+
+        The model defined in huaweicloud sdk
+
+        :param agency_domain_id: 委托方账号ID
+        :type agency_domain_id: str
+        :param agency_domain_name: 委托方账号名称
+        :type agency_domain_name: str
+        :param agency_name: 委托方配置的委托名称
+        :type agency_name: str
+        :param agency_project_id: 委托方项目ID
+        :type agency_project_id: str
+        :param be_agency_domain_id: 被委托方账号ID，实际配置转储的账号ID
+        :type be_agency_domain_id: str
+        :param be_agency_project_id: 被委托方项目ID，实际配置转储的账号的项目ID
+        :type be_agency_project_id: str
+        """
         
         
 
@@ -77,7 +92,7 @@ class CreateTransferRequestBodyLogTransferInfoLogAgencyTransfer:
         委托方账号ID
 
         :param agency_domain_id: The agency_domain_id of this CreateTransferRequestBodyLogTransferInfoLogAgencyTransfer.
-        :type: str
+        :type agency_domain_id: str
         """
         self._agency_domain_id = agency_domain_id
 
@@ -99,7 +114,7 @@ class CreateTransferRequestBodyLogTransferInfoLogAgencyTransfer:
         委托方账号名称
 
         :param agency_domain_name: The agency_domain_name of this CreateTransferRequestBodyLogTransferInfoLogAgencyTransfer.
-        :type: str
+        :type agency_domain_name: str
         """
         self._agency_domain_name = agency_domain_name
 
@@ -121,7 +136,7 @@ class CreateTransferRequestBodyLogTransferInfoLogAgencyTransfer:
         委托方配置的委托名称
 
         :param agency_name: The agency_name of this CreateTransferRequestBodyLogTransferInfoLogAgencyTransfer.
-        :type: str
+        :type agency_name: str
         """
         self._agency_name = agency_name
 
@@ -143,7 +158,7 @@ class CreateTransferRequestBodyLogTransferInfoLogAgencyTransfer:
         委托方项目ID
 
         :param agency_project_id: The agency_project_id of this CreateTransferRequestBodyLogTransferInfoLogAgencyTransfer.
-        :type: str
+        :type agency_project_id: str
         """
         self._agency_project_id = agency_project_id
 
@@ -165,7 +180,7 @@ class CreateTransferRequestBodyLogTransferInfoLogAgencyTransfer:
         被委托方账号ID，实际配置转储的账号ID
 
         :param be_agency_domain_id: The be_agency_domain_id of this CreateTransferRequestBodyLogTransferInfoLogAgencyTransfer.
-        :type: str
+        :type be_agency_domain_id: str
         """
         self._be_agency_domain_id = be_agency_domain_id
 
@@ -187,7 +202,7 @@ class CreateTransferRequestBodyLogTransferInfoLogAgencyTransfer:
         被委托方项目ID，实际配置转储的账号的项目ID
 
         :param be_agency_project_id: The be_agency_project_id of this CreateTransferRequestBodyLogTransferInfoLogAgencyTransfer.
-        :type: str
+        :type be_agency_project_id: str
         """
         self._be_agency_project_id = be_agency_project_id
 

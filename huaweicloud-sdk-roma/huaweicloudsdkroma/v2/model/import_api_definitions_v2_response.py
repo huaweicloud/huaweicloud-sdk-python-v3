@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ImportApiDefinitionsV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ImportApiDefinitionsV2Response(SdkResponse):
     }
 
     def __init__(self, success=None, failure=None, swagger=None, group_id=None, ignore=None):
-        """ImportApiDefinitionsV2Response - a model defined in huaweicloud sdk"""
+        """ImportApiDefinitionsV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param success: 导入成功信息
+        :type success: list[:class:`huaweicloudsdkroma.v2.Success`]
+        :param failure: 导入失败信息
+        :type failure: list[:class:`huaweicloudsdkroma.v2.Failure`]
+        :param swagger: 
+        :type swagger: :class:`huaweicloudsdkroma.v2.Swagger`
+        :param group_id: API分组编号
+        :type group_id: str
+        :param ignore: 被忽略导入的API信息
+        :type ignore: list[:class:`huaweicloudsdkroma.v2.Ignore`]
+        """
         
         super(ImportApiDefinitionsV2Response, self).__init__()
 
@@ -67,7 +80,7 @@ class ImportApiDefinitionsV2Response(SdkResponse):
         导入成功信息
 
         :return: The success of this ImportApiDefinitionsV2Response.
-        :rtype: list[Success]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.Success`]
         """
         return self._success
 
@@ -78,7 +91,7 @@ class ImportApiDefinitionsV2Response(SdkResponse):
         导入成功信息
 
         :param success: The success of this ImportApiDefinitionsV2Response.
-        :type: list[Success]
+        :type success: list[:class:`huaweicloudsdkroma.v2.Success`]
         """
         self._success = success
 
@@ -89,7 +102,7 @@ class ImportApiDefinitionsV2Response(SdkResponse):
         导入失败信息
 
         :return: The failure of this ImportApiDefinitionsV2Response.
-        :rtype: list[Failure]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.Failure`]
         """
         return self._failure
 
@@ -100,7 +113,7 @@ class ImportApiDefinitionsV2Response(SdkResponse):
         导入失败信息
 
         :param failure: The failure of this ImportApiDefinitionsV2Response.
-        :type: list[Failure]
+        :type failure: list[:class:`huaweicloudsdkroma.v2.Failure`]
         """
         self._failure = failure
 
@@ -110,7 +123,7 @@ class ImportApiDefinitionsV2Response(SdkResponse):
 
 
         :return: The swagger of this ImportApiDefinitionsV2Response.
-        :rtype: Swagger
+        :rtype: :class:`huaweicloudsdkroma.v2.Swagger`
         """
         return self._swagger
 
@@ -120,7 +133,7 @@ class ImportApiDefinitionsV2Response(SdkResponse):
 
 
         :param swagger: The swagger of this ImportApiDefinitionsV2Response.
-        :type: Swagger
+        :type swagger: :class:`huaweicloudsdkroma.v2.Swagger`
         """
         self._swagger = swagger
 
@@ -142,7 +155,7 @@ class ImportApiDefinitionsV2Response(SdkResponse):
         API分组编号
 
         :param group_id: The group_id of this ImportApiDefinitionsV2Response.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -153,7 +166,7 @@ class ImportApiDefinitionsV2Response(SdkResponse):
         被忽略导入的API信息
 
         :return: The ignore of this ImportApiDefinitionsV2Response.
-        :rtype: list[Ignore]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.Ignore`]
         """
         return self._ignore
 
@@ -164,7 +177,7 @@ class ImportApiDefinitionsV2Response(SdkResponse):
         被忽略导入的API信息
 
         :param ignore: The ignore of this ImportApiDefinitionsV2Response.
-        :type: list[Ignore]
+        :type ignore: list[:class:`huaweicloudsdkroma.v2.Ignore`]
         """
         self._ignore = ignore
 

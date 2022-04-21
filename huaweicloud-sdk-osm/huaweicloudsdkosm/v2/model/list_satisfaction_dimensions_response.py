@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSatisfactionDimensionsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListSatisfactionDimensionsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, satisfaction_dimension_list=None):
-        """ListSatisfactionDimensionsResponse - a model defined in huaweicloud sdk"""
+        """ListSatisfactionDimensionsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total_count: 总数
+        :type total_count: int
+        :param satisfaction_dimension_list: 满意度分类列表
+        :type satisfaction_dimension_list: list[:class:`huaweicloudsdkosm.v2.SatisfactionDimensionSimpleInfoV2`]
+        """
         
         super(ListSatisfactionDimensionsResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListSatisfactionDimensionsResponse(SdkResponse):
         总数
 
         :param total_count: The total_count of this ListSatisfactionDimensionsResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 
@@ -74,7 +81,7 @@ class ListSatisfactionDimensionsResponse(SdkResponse):
         满意度分类列表
 
         :return: The satisfaction_dimension_list of this ListSatisfactionDimensionsResponse.
-        :rtype: list[SatisfactionDimensionSimpleInfoV2]
+        :rtype: list[:class:`huaweicloudsdkosm.v2.SatisfactionDimensionSimpleInfoV2`]
         """
         return self._satisfaction_dimension_list
 
@@ -85,7 +92,7 @@ class ListSatisfactionDimensionsResponse(SdkResponse):
         满意度分类列表
 
         :param satisfaction_dimension_list: The satisfaction_dimension_list of this ListSatisfactionDimensionsResponse.
-        :type: list[SatisfactionDimensionSimpleInfoV2]
+        :type satisfaction_dimension_list: list[:class:`huaweicloudsdkosm.v2.SatisfactionDimensionSimpleInfoV2`]
         """
         self._satisfaction_dimension_list = satisfaction_dimension_list
 

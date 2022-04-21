@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateCategoryReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateCategoryReq:
     }
 
     def __init__(self, name=None, id=None):
-        """UpdateCategoryReq - a model defined in huaweicloud sdk"""
+        """UpdateCategoryReq
+
+        The model defined in huaweicloud sdk
+
+        :param name: 媒资分类名称。
+        :type name: str
+        :param id: 媒资分类ID。
+        :type id: int
+        """
         
         
 
@@ -61,7 +68,7 @@ class UpdateCategoryReq:
         媒资分类名称。
 
         :param name: The name of this UpdateCategoryReq.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -83,7 +90,7 @@ class UpdateCategoryReq:
         媒资分类ID。
 
         :param id: The id of this UpdateCategoryReq.
-        :type: int
+        :type id: int
         """
         self._id = id
 

@@ -12,7 +12,6 @@ class ComponentSubCategory:
     """
     allowed enum values
     """
-
     WEB = "Web"
     MAGENTO = "Magento"
     WORDPRESS = "Wordpress"
@@ -20,7 +19,6 @@ class ComponentSubCategory:
     JAVA_CHASSIS = "Java Chassis"
     GO_CHASSIS = "Go Chassis"
     MESHER = "Mesher"
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +36,11 @@ class ComponentSubCategory:
     }
 
     def __init__(self):
-        """ComponentSubCategory - a model defined in huaweicloud sdk"""
+        """ComponentSubCategory
+
+        The model defined in huaweicloud sdk
+
+        """
         
         
         self.discriminator = None

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GetJobInstanceInfoDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class GetJobInstanceInfoDetail:
     }
 
     def __init__(self, id=None, name=None):
-        """GetJobInstanceInfoDetail - a model defined in huaweicloud sdk"""
+        """GetJobInstanceInfoDetail
+
+        The model defined in huaweicloud sdk
+
+        :param id: 实例ID。
+        :type id: str
+        :param name: 实例名称。
+        :type name: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class GetJobInstanceInfoDetail:
         实例ID。
 
         :param id: The id of this GetJobInstanceInfoDetail.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -83,7 +90,7 @@ class GetJobInstanceInfoDetail:
         实例名称。
 
         :param name: The name of this GetJobInstanceInfoDetail.
-        :type: str
+        :type name: str
         """
         self._name = name
 

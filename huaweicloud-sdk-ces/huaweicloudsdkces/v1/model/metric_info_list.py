@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MetricInfoList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class MetricInfoList:
     }
 
     def __init__(self, dimensions=None, metric_name=None, namespace=None, unit=None):
-        """MetricInfoList - a model defined in huaweicloud sdk"""
+        """MetricInfoList
+
+        The model defined in huaweicloud sdk
+
+        :param dimensions: 指标维度
+        :type dimensions: list[:class:`huaweicloudsdkces.v1.MetricsDimension`]
+        :param metric_name: 指标名称，必须以字母开头，只能包含0-9/a-z/A-Z/_，长度最短为1，最大为64；各服务的指标名称可查看：“[服务指标名称](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
+        :type metric_name: str
+        :param namespace: 指标命名空间，例如弹性云服务器命名空间SYS.ECS；格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_，总长度最短为3，最大为32。说明： 当alarm_type为（EVENT.SYS| EVENT.CUSTOM）时允许为空；各服务的命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
+        :type namespace: str
+        :param unit: 指标单位。
+        :type unit: str
+        """
         
         
 
@@ -58,7 +69,7 @@ class MetricInfoList:
         指标维度
 
         :return: The dimensions of this MetricInfoList.
-        :rtype: list[MetricsDimension]
+        :rtype: list[:class:`huaweicloudsdkces.v1.MetricsDimension`]
         """
         return self._dimensions
 
@@ -69,7 +80,7 @@ class MetricInfoList:
         指标维度
 
         :param dimensions: The dimensions of this MetricInfoList.
-        :type: list[MetricsDimension]
+        :type dimensions: list[:class:`huaweicloudsdkces.v1.MetricsDimension`]
         """
         self._dimensions = dimensions
 
@@ -91,7 +102,7 @@ class MetricInfoList:
         指标名称，必须以字母开头，只能包含0-9/a-z/A-Z/_，长度最短为1，最大为64；各服务的指标名称可查看：“[服务指标名称](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
         :param metric_name: The metric_name of this MetricInfoList.
-        :type: str
+        :type metric_name: str
         """
         self._metric_name = metric_name
 
@@ -113,7 +124,7 @@ class MetricInfoList:
         指标命名空间，例如弹性云服务器命名空间SYS.ECS；格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_，总长度最短为3，最大为32。说明： 当alarm_type为（EVENT.SYS| EVENT.CUSTOM）时允许为空；各服务的命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
         :param namespace: The namespace of this MetricInfoList.
-        :type: str
+        :type namespace: str
         """
         self._namespace = namespace
 
@@ -135,7 +146,7 @@ class MetricInfoList:
         指标单位。
 
         :param unit: The unit of this MetricInfoList.
-        :type: str
+        :type unit: str
         """
         self._unit = unit
 

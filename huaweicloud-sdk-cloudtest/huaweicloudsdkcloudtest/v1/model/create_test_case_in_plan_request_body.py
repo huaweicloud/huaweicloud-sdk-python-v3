@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateTestCaseInPlanRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateTestCaseInPlanRequestBody:
     }
 
     def __init__(self, service_id=None, testcase_id_list=None):
-        """CreateTestCaseInPlanRequestBody - a model defined in huaweicloud sdk"""
+        """CreateTestCaseInPlanRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param service_id: 注册测试类型服务接口返回的服务id
+        :type service_id: int
+        :param testcase_id_list: 计划下包含的用例个数，数组长度小于50个，只能包含一种测试类型
+        :type testcase_id_list: list[str]
+        """
         
         
 
@@ -61,7 +68,7 @@ class CreateTestCaseInPlanRequestBody:
         注册测试类型服务接口返回的服务id
 
         :param service_id: The service_id of this CreateTestCaseInPlanRequestBody.
-        :type: int
+        :type service_id: int
         """
         self._service_id = service_id
 
@@ -83,7 +90,7 @@ class CreateTestCaseInPlanRequestBody:
         计划下包含的用例个数，数组长度小于50个，只能包含一种测试类型
 
         :param testcase_id_list: The testcase_id_list of this CreateTestCaseInPlanRequestBody.
-        :type: list[str]
+        :type testcase_id_list: list[str]
         """
         self._testcase_id_list = testcase_id_list
 

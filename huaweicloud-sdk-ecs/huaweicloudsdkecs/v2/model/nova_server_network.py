@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NovaServerNetwork:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class NovaServerNetwork:
     }
 
     def __init__(self, port=None, uuid=None, fixed_ip=None):
-        """NovaServerNetwork - a model defined in huaweicloud sdk"""
+        """NovaServerNetwork
+
+        The model defined in huaweicloud sdk
+
+        :param port: 网络port uuid。  没有指定网络uuid时必须指定。
+        :type port: str
+        :param uuid: 网络uuid。  没有指定网络port时必须指定。
+        :type uuid: str
+        :param fixed_ip: 指定的IP地址。网络的三个参数（port、uuid和fixed_ip）中，port优先级最高；指定fixed_ip时必须指明uuid。
+        :type fixed_ip: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class NovaServerNetwork:
         网络port uuid。  没有指定网络uuid时必须指定。
 
         :param port: The port of this NovaServerNetwork.
-        :type: str
+        :type port: str
         """
         self._port = port
 
@@ -90,7 +99,7 @@ class NovaServerNetwork:
         网络uuid。  没有指定网络port时必须指定。
 
         :param uuid: The uuid of this NovaServerNetwork.
-        :type: str
+        :type uuid: str
         """
         self._uuid = uuid
 
@@ -112,7 +121,7 @@ class NovaServerNetwork:
         指定的IP地址。网络的三个参数（port、uuid和fixed_ip）中，port优先级最高；指定fixed_ip时必须指明uuid。
 
         :param fixed_ip: The fixed_ip of this NovaServerNetwork.
-        :type: str
+        :type fixed_ip: str
         """
         self._fixed_ip = fixed_ip
 

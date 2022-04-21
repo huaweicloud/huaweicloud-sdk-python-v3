@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CompressResponse:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CompressResponse:
     }
 
     def __init__(self, compress_switch=None, compress_rules=None):
-        """CompressResponse - a model defined in huaweicloud sdk"""
+        """CompressResponse
+
+        The model defined in huaweicloud sdk
+
+        :param compress_switch: GZIP压缩开关。0关闭。1打开
+        :type compress_switch: int
+        :param compress_rules: GZIP压缩规则
+        :type compress_rules: list[:class:`huaweicloudsdkcdn.v1.CompressRules`]
+        """
         
         
 
@@ -62,7 +69,7 @@ class CompressResponse:
         GZIP压缩开关。0关闭。1打开
 
         :param compress_switch: The compress_switch of this CompressResponse.
-        :type: int
+        :type compress_switch: int
         """
         self._compress_switch = compress_switch
 
@@ -73,7 +80,7 @@ class CompressResponse:
         GZIP压缩规则
 
         :return: The compress_rules of this CompressResponse.
-        :rtype: list[CompressRules]
+        :rtype: list[:class:`huaweicloudsdkcdn.v1.CompressRules`]
         """
         return self._compress_rules
 
@@ -84,7 +91,7 @@ class CompressResponse:
         GZIP压缩规则
 
         :param compress_rules: The compress_rules of this CompressResponse.
-        :type: list[CompressRules]
+        :type compress_rules: list[:class:`huaweicloudsdkcdn.v1.CompressRules`]
         """
         self._compress_rules = compress_rules
 

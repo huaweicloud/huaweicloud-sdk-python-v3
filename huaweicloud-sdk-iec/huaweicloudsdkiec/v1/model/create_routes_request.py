@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateRoutesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateRoutesRequest:
     }
 
     def __init__(self, routetable_id=None, body=None):
-        """CreateRoutesRequest - a model defined in huaweicloud sdk"""
+        """CreateRoutesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param routetable_id: 路由表ID
+        :type routetable_id: str
+        :param body: Body of the CreateRoutesRequest
+        :type body: :class:`huaweicloudsdkiec.v1.CreateRoutesRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateRoutesRequest:
         路由表ID
 
         :param routetable_id: The routetable_id of this CreateRoutesRequest.
-        :type: str
+        :type routetable_id: str
         """
         self._routetable_id = routetable_id
 
@@ -72,7 +79,7 @@ class CreateRoutesRequest:
 
 
         :return: The body of this CreateRoutesRequest.
-        :rtype: CreateRoutesRequestBody
+        :rtype: :class:`huaweicloudsdkiec.v1.CreateRoutesRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CreateRoutesRequest:
 
 
         :param body: The body of this CreateRoutesRequest.
-        :type: CreateRoutesRequestBody
+        :type body: :class:`huaweicloudsdkiec.v1.CreateRoutesRequestBody`
         """
         self._body = body
 

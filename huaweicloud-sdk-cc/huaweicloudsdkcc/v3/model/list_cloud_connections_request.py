@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCloudConnectionsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ListCloudConnectionsRequest:
     }
 
     def __init__(self, limit=None, marker=None, id=None, name=None, description=None, status=None, enterprise_project_id=None, type=None):
-        """ListCloudConnectionsRequest - a model defined in huaweicloud sdk"""
+        """ListCloudConnectionsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 分页查询时，每页返回的个数。
+        :type limit: int
+        :param marker: 分页查询时，上一页最后一条记录的ID，为空时为查询第一页。 使用说明：必须与limit一起使用。
+        :type marker: str
+        :param id: 根据ID过滤云连接实例列表。
+        :type id: list[str]
+        :param name: 根据名称过滤云连接实例列表。
+        :type name: list[str]
+        :param description: 根据描述过滤云连接实例列表。
+        :type description: list[str]
+        :param status: 根据状态过滤云连接实例列表。ACTIVE：表示状态可用。
+        :type status: list[str]
+        :param enterprise_project_id: 根据企业项目ID过滤云连接实例列表。
+        :type enterprise_project_id: list[str]
+        :param type: 根据类型过滤云连接实例列表。
+        :type type: list[str]
+        """
         
         
 
@@ -93,7 +112,7 @@ class ListCloudConnectionsRequest:
         分页查询时，每页返回的个数。
 
         :param limit: The limit of this ListCloudConnectionsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -115,7 +134,7 @@ class ListCloudConnectionsRequest:
         分页查询时，上一页最后一条记录的ID，为空时为查询第一页。 使用说明：必须与limit一起使用。
 
         :param marker: The marker of this ListCloudConnectionsRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -137,7 +156,7 @@ class ListCloudConnectionsRequest:
         根据ID过滤云连接实例列表。
 
         :param id: The id of this ListCloudConnectionsRequest.
-        :type: list[str]
+        :type id: list[str]
         """
         self._id = id
 
@@ -159,7 +178,7 @@ class ListCloudConnectionsRequest:
         根据名称过滤云连接实例列表。
 
         :param name: The name of this ListCloudConnectionsRequest.
-        :type: list[str]
+        :type name: list[str]
         """
         self._name = name
 
@@ -181,7 +200,7 @@ class ListCloudConnectionsRequest:
         根据描述过滤云连接实例列表。
 
         :param description: The description of this ListCloudConnectionsRequest.
-        :type: list[str]
+        :type description: list[str]
         """
         self._description = description
 
@@ -203,7 +222,7 @@ class ListCloudConnectionsRequest:
         根据状态过滤云连接实例列表。ACTIVE：表示状态可用。
 
         :param status: The status of this ListCloudConnectionsRequest.
-        :type: list[str]
+        :type status: list[str]
         """
         self._status = status
 
@@ -225,7 +244,7 @@ class ListCloudConnectionsRequest:
         根据企业项目ID过滤云连接实例列表。
 
         :param enterprise_project_id: The enterprise_project_id of this ListCloudConnectionsRequest.
-        :type: list[str]
+        :type enterprise_project_id: list[str]
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -247,7 +266,7 @@ class ListCloudConnectionsRequest:
         根据类型过滤云连接实例列表。
 
         :param type: The type of this ListCloudConnectionsRequest.
-        :type: list[str]
+        :type type: list[str]
         """
         self._type = type
 

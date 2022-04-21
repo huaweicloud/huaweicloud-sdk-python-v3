@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryCorpVcResResultDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class QueryCorpVcResResultDTO:
     }
 
     def __init__(self, vmr_pkg_list=None, te1080p_hard_count=None, te720p_hard_count=None, te_soft_count=None, room_count=None, record_capability=None, conf_call_count=None, live_count=None, third_party_hard_count=None, hw_vision_count=None, idea_hub_count=None):
-        """QueryCorpVcResResultDTO - a model defined in huaweicloud sdk"""
+        """QueryCorpVcResResultDTO
+
+        The model defined in huaweicloud sdk
+
+        :param vmr_pkg_list: 虚拟会议室类型列表,最多支持8个，暂不限制
+        :type vmr_pkg_list: list[:class:`huaweicloudsdkmeeting.v1.QueryVmrPkgResResultDTO`]
+        :param te1080p_hard_count: 1080P硬终端账户数
+        :type te1080p_hard_count: int
+        :param te720p_hard_count: 720P硬终端账户数
+        :type te720p_hard_count: int
+        :param te_soft_count: 软终端账户数
+        :type te_soft_count: int
+        :param room_count: 大屏软终端数量
+        :type room_count: int
+        :param record_capability: 录播存储空间 （单位：G）
+        :type record_capability: int
+        :param conf_call_count: 会议并发方数
+        :type conf_call_count: int
+        :param live_count: 推流并发数量
+        :type live_count: int
+        :param third_party_hard_count: 第三方硬终端接入数
+        :type third_party_hard_count: int
+        :param hw_vision_count: 智慧屏终端接入数
+        :type hw_vision_count: int
+        :param idea_hub_count: ideahub终端接入数
+        :type idea_hub_count: int
+        """
         
         
 
@@ -97,7 +122,7 @@ class QueryCorpVcResResultDTO:
         虚拟会议室类型列表,最多支持8个，暂不限制
 
         :return: The vmr_pkg_list of this QueryCorpVcResResultDTO.
-        :rtype: list[QueryVmrPkgResResultDTO]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.QueryVmrPkgResResultDTO`]
         """
         return self._vmr_pkg_list
 
@@ -108,7 +133,7 @@ class QueryCorpVcResResultDTO:
         虚拟会议室类型列表,最多支持8个，暂不限制
 
         :param vmr_pkg_list: The vmr_pkg_list of this QueryCorpVcResResultDTO.
-        :type: list[QueryVmrPkgResResultDTO]
+        :type vmr_pkg_list: list[:class:`huaweicloudsdkmeeting.v1.QueryVmrPkgResResultDTO`]
         """
         self._vmr_pkg_list = vmr_pkg_list
 
@@ -130,7 +155,7 @@ class QueryCorpVcResResultDTO:
         1080P硬终端账户数
 
         :param te1080p_hard_count: The te1080p_hard_count of this QueryCorpVcResResultDTO.
-        :type: int
+        :type te1080p_hard_count: int
         """
         self._te1080p_hard_count = te1080p_hard_count
 
@@ -152,7 +177,7 @@ class QueryCorpVcResResultDTO:
         720P硬终端账户数
 
         :param te720p_hard_count: The te720p_hard_count of this QueryCorpVcResResultDTO.
-        :type: int
+        :type te720p_hard_count: int
         """
         self._te720p_hard_count = te720p_hard_count
 
@@ -174,7 +199,7 @@ class QueryCorpVcResResultDTO:
         软终端账户数
 
         :param te_soft_count: The te_soft_count of this QueryCorpVcResResultDTO.
-        :type: int
+        :type te_soft_count: int
         """
         self._te_soft_count = te_soft_count
 
@@ -196,7 +221,7 @@ class QueryCorpVcResResultDTO:
         大屏软终端数量
 
         :param room_count: The room_count of this QueryCorpVcResResultDTO.
-        :type: int
+        :type room_count: int
         """
         self._room_count = room_count
 
@@ -218,7 +243,7 @@ class QueryCorpVcResResultDTO:
         录播存储空间 （单位：G）
 
         :param record_capability: The record_capability of this QueryCorpVcResResultDTO.
-        :type: int
+        :type record_capability: int
         """
         self._record_capability = record_capability
 
@@ -240,7 +265,7 @@ class QueryCorpVcResResultDTO:
         会议并发方数
 
         :param conf_call_count: The conf_call_count of this QueryCorpVcResResultDTO.
-        :type: int
+        :type conf_call_count: int
         """
         self._conf_call_count = conf_call_count
 
@@ -262,7 +287,7 @@ class QueryCorpVcResResultDTO:
         推流并发数量
 
         :param live_count: The live_count of this QueryCorpVcResResultDTO.
-        :type: int
+        :type live_count: int
         """
         self._live_count = live_count
 
@@ -284,7 +309,7 @@ class QueryCorpVcResResultDTO:
         第三方硬终端接入数
 
         :param third_party_hard_count: The third_party_hard_count of this QueryCorpVcResResultDTO.
-        :type: int
+        :type third_party_hard_count: int
         """
         self._third_party_hard_count = third_party_hard_count
 
@@ -306,7 +331,7 @@ class QueryCorpVcResResultDTO:
         智慧屏终端接入数
 
         :param hw_vision_count: The hw_vision_count of this QueryCorpVcResResultDTO.
-        :type: int
+        :type hw_vision_count: int
         """
         self._hw_vision_count = hw_vision_count
 
@@ -328,7 +353,7 @@ class QueryCorpVcResResultDTO:
         ideahub终端接入数
 
         :param idea_hub_count: The idea_hub_count of this QueryCorpVcResResultDTO.
-        :type: int
+        :type idea_hub_count: int
         """
         self._idea_hub_count = idea_hub_count
 

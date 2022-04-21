@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowPropertyRawValueRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowPropertyRawValueRequest:
     }
 
     def __init__(self, asset_id=None, body=None):
-        """ShowPropertyRawValueRequest - a model defined in huaweicloud sdk"""
+        """ShowPropertyRawValueRequest
+
+        The model defined in huaweicloud sdk
+
+        :param asset_id: 资产ID
+        :type asset_id: str
+        :param body: Body of the ShowPropertyRawValueRequest
+        :type body: :class:`huaweicloudsdkiotanalytics.v1.RawRequest`
+        """
         
         
 
@@ -62,7 +69,7 @@ class ShowPropertyRawValueRequest:
         资产ID
 
         :param asset_id: The asset_id of this ShowPropertyRawValueRequest.
-        :type: str
+        :type asset_id: str
         """
         self._asset_id = asset_id
 
@@ -72,7 +79,7 @@ class ShowPropertyRawValueRequest:
 
 
         :return: The body of this ShowPropertyRawValueRequest.
-        :rtype: RawRequest
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.RawRequest`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class ShowPropertyRawValueRequest:
 
 
         :param body: The body of this ShowPropertyRawValueRequest.
-        :type: RawRequest
+        :type body: :class:`huaweicloudsdkiotanalytics.v1.RawRequest`
         """
         self._body = body
 

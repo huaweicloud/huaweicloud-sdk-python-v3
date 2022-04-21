@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FloatingIpResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class FloatingIpResp:
     }
 
     def __init__(self, fixed_ip_address=None, floating_ip_address=None, floating_network_id=None, id=None, port_id=None, router_id=None, status=None, tenant_id=None, project_id=None, dns_name=None, dns_domain=None, created_at=None, updated_at=None):
-        """FloatingIpResp - a model defined in huaweicloud sdk"""
+        """FloatingIpResp
+
+        The model defined in huaweicloud sdk
+
+        :param fixed_ip_address: 关联端口的私有IP地址。
+        :type fixed_ip_address: str
+        :param floating_ip_address: 浮动IP地址。
+        :type floating_ip_address: str
+        :param floating_network_id: 外部网络的id。只能使用固定的外网，外部网络的信息请通过GET /v2.0/networks?router:external&#x3D;True或GET /v2.0/networks?name&#x3D;{floating_network}或neutron net-external-list方式查询。
+        :type floating_network_id: str
+        :param id: 浮动IP地址的id。
+        :type id: str
+        :param port_id: 端口id。
+        :type port_id: str
+        :param router_id: 所属路由器id。
+        :type router_id: str
+        :param status: 网络状态，可以为ACTIVE， DOWN或ERROR。  DOWN：未绑定  ACTIVE：绑定  ERROR：异常
+        :type status: str
+        :param tenant_id: 项目id。
+        :type tenant_id: str
+        :param project_id: 项目id。
+        :type project_id: str
+        :param dns_name: DNS名称(目前仅广州局点支持)
+        :type dns_name: str
+        :param dns_domain: DNS域地址(目前仅广州局点支持)
+        :type dns_domain: str
+        :param created_at: 资源创建时间  采用UTC时间  格式：YYYY-MM-DDTHH:MM:SS
+        :type created_at: datetime
+        :param updated_at: 资源更新时间  采用UTC时间  格式：YYYY-MM-DDTHH:MM:SS
+        :type updated_at: datetime
+        """
         
         
 
@@ -118,7 +147,7 @@ class FloatingIpResp:
         关联端口的私有IP地址。
 
         :param fixed_ip_address: The fixed_ip_address of this FloatingIpResp.
-        :type: str
+        :type fixed_ip_address: str
         """
         self._fixed_ip_address = fixed_ip_address
 
@@ -140,7 +169,7 @@ class FloatingIpResp:
         浮动IP地址。
 
         :param floating_ip_address: The floating_ip_address of this FloatingIpResp.
-        :type: str
+        :type floating_ip_address: str
         """
         self._floating_ip_address = floating_ip_address
 
@@ -162,7 +191,7 @@ class FloatingIpResp:
         外部网络的id。只能使用固定的外网，外部网络的信息请通过GET /v2.0/networks?router:external=True或GET /v2.0/networks?name={floating_network}或neutron net-external-list方式查询。
 
         :param floating_network_id: The floating_network_id of this FloatingIpResp.
-        :type: str
+        :type floating_network_id: str
         """
         self._floating_network_id = floating_network_id
 
@@ -184,7 +213,7 @@ class FloatingIpResp:
         浮动IP地址的id。
 
         :param id: The id of this FloatingIpResp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -206,7 +235,7 @@ class FloatingIpResp:
         端口id。
 
         :param port_id: The port_id of this FloatingIpResp.
-        :type: str
+        :type port_id: str
         """
         self._port_id = port_id
 
@@ -228,7 +257,7 @@ class FloatingIpResp:
         所属路由器id。
 
         :param router_id: The router_id of this FloatingIpResp.
-        :type: str
+        :type router_id: str
         """
         self._router_id = router_id
 
@@ -250,7 +279,7 @@ class FloatingIpResp:
         网络状态，可以为ACTIVE， DOWN或ERROR。  DOWN：未绑定  ACTIVE：绑定  ERROR：异常
 
         :param status: The status of this FloatingIpResp.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -272,7 +301,7 @@ class FloatingIpResp:
         项目id。
 
         :param tenant_id: The tenant_id of this FloatingIpResp.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 
@@ -294,7 +323,7 @@ class FloatingIpResp:
         项目id。
 
         :param project_id: The project_id of this FloatingIpResp.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -316,7 +345,7 @@ class FloatingIpResp:
         DNS名称(目前仅广州局点支持)
 
         :param dns_name: The dns_name of this FloatingIpResp.
-        :type: str
+        :type dns_name: str
         """
         self._dns_name = dns_name
 
@@ -338,7 +367,7 @@ class FloatingIpResp:
         DNS域地址(目前仅广州局点支持)
 
         :param dns_domain: The dns_domain of this FloatingIpResp.
-        :type: str
+        :type dns_domain: str
         """
         self._dns_domain = dns_domain
 
@@ -360,7 +389,7 @@ class FloatingIpResp:
         资源创建时间  采用UTC时间  格式：YYYY-MM-DDTHH:MM:SS
 
         :param created_at: The created_at of this FloatingIpResp.
-        :type: datetime
+        :type created_at: datetime
         """
         self._created_at = created_at
 
@@ -382,7 +411,7 @@ class FloatingIpResp:
         资源更新时间  采用UTC时间  格式：YYYY-MM-DDTHH:MM:SS
 
         :param updated_at: The updated_at of this FloatingIpResp.
-        :type: datetime
+        :type updated_at: datetime
         """
         self._updated_at = updated_at
 

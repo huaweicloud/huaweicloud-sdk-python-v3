@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PermissionGroupDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class PermissionGroupDetail:
     }
 
     def __init__(self, can_view=None, can_edit=None, can_delete=None, can_add_host=None, can_manage=None):
-        """PermissionGroupDetail - a model defined in huaweicloud sdk"""
+        """PermissionGroupDetail
+
+        The model defined in huaweicloud sdk
+
+        :param can_view: 是否有查看权限
+        :type can_view: bool
+        :param can_edit: 是否有编辑权限
+        :type can_edit: bool
+        :param can_delete: 是否有删除权限
+        :type can_delete: bool
+        :param can_add_host: 是否有添加主机权限
+        :type can_add_host: bool
+        :param can_manage: 是否有管理权限
+        :type can_manage: bool
+        """
         
         
 
@@ -78,7 +91,7 @@ class PermissionGroupDetail:
         是否有查看权限
 
         :param can_view: The can_view of this PermissionGroupDetail.
-        :type: bool
+        :type can_view: bool
         """
         self._can_view = can_view
 
@@ -100,7 +113,7 @@ class PermissionGroupDetail:
         是否有编辑权限
 
         :param can_edit: The can_edit of this PermissionGroupDetail.
-        :type: bool
+        :type can_edit: bool
         """
         self._can_edit = can_edit
 
@@ -122,7 +135,7 @@ class PermissionGroupDetail:
         是否有删除权限
 
         :param can_delete: The can_delete of this PermissionGroupDetail.
-        :type: bool
+        :type can_delete: bool
         """
         self._can_delete = can_delete
 
@@ -144,7 +157,7 @@ class PermissionGroupDetail:
         是否有添加主机权限
 
         :param can_add_host: The can_add_host of this PermissionGroupDetail.
-        :type: bool
+        :type can_add_host: bool
         """
         self._can_add_host = can_add_host
 
@@ -166,7 +179,7 @@ class PermissionGroupDetail:
         是否有管理权限
 
         :param can_manage: The can_manage of this PermissionGroupDetail.
-        :type: bool
+        :type can_manage: bool
         """
         self._can_manage = can_manage
 

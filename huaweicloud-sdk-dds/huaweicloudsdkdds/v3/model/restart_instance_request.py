@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestartInstanceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RestartInstanceRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """RestartInstanceRequest - a model defined in huaweicloud sdk"""
+        """RestartInstanceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
+        :type instance_id: str
+        :param body: Body of the RestartInstanceRequest
+        :type body: :class:`huaweicloudsdkdds.v3.RestartInstanceRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class RestartInstanceRequest:
         实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
         :param instance_id: The instance_id of this RestartInstanceRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -72,7 +79,7 @@ class RestartInstanceRequest:
 
 
         :return: The body of this RestartInstanceRequest.
-        :rtype: RestartInstanceRequestBody
+        :rtype: :class:`huaweicloudsdkdds.v3.RestartInstanceRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class RestartInstanceRequest:
 
 
         :param body: The body of this RestartInstanceRequest.
-        :type: RestartInstanceRequestBody
+        :type body: :class:`huaweicloudsdkdds.v3.RestartInstanceRequestBody`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListApplicationAttributesResponseBodyAttributes:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListApplicationAttributesResponseBodyAttributes:
     }
 
     def __init__(self, enabled=None, apple_certificate_expiration_date=None):
-        """ListApplicationAttributesResponseBodyAttributes - a model defined in huaweicloud sdk"""
+        """ListApplicationAttributesResponseBodyAttributes
+
+        The model defined in huaweicloud sdk
+
+        :param enabled: 应用平台是否启用。
+        :type enabled: str
+        :param apple_certificate_expiration_date: 苹果证书过期时间，APNS、APNS_SANDBOX平台特有属性 时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
+        :type apple_certificate_expiration_date: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ListApplicationAttributesResponseBodyAttributes:
         应用平台是否启用。
 
         :param enabled: The enabled of this ListApplicationAttributesResponseBodyAttributes.
-        :type: str
+        :type enabled: str
         """
         self._enabled = enabled
 
@@ -84,7 +91,7 @@ class ListApplicationAttributesResponseBodyAttributes:
         苹果证书过期时间，APNS、APNS_SANDBOX平台特有属性 时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
 
         :param apple_certificate_expiration_date: The apple_certificate_expiration_date of this ListApplicationAttributesResponseBodyAttributes.
-        :type: str
+        :type apple_certificate_expiration_date: str
         """
         self._apple_certificate_expiration_date = apple_certificate_expiration_date
 

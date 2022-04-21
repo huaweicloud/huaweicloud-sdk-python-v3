@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryRoleDetailResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class QueryRoleDetailResp:
     }
 
     def __init__(self, role=None, comment=None, is_transfer=None, privileges=None, inherits_roles=None, selected=None):
-        """QueryRoleDetailResp - a model defined in huaweicloud sdk"""
+        """QueryRoleDetailResp
+
+        The model defined in huaweicloud sdk
+
+        :param role: 角色。
+        :type role: str
+        :param comment: 说明。
+        :type comment: str
+        :param is_transfer: 是否支持迁移。
+        :type is_transfer: bool
+        :param privileges: 角色权限。
+        :type privileges: str
+        :param inherits_roles: 继承的角色。
+        :type inherits_roles: list[str]
+        :param selected: 是否选择。
+        :type selected: bool
+        """
         
         
 
@@ -83,7 +98,7 @@ class QueryRoleDetailResp:
         角色。
 
         :param role: The role of this QueryRoleDetailResp.
-        :type: str
+        :type role: str
         """
         self._role = role
 
@@ -105,7 +120,7 @@ class QueryRoleDetailResp:
         说明。
 
         :param comment: The comment of this QueryRoleDetailResp.
-        :type: str
+        :type comment: str
         """
         self._comment = comment
 
@@ -127,7 +142,7 @@ class QueryRoleDetailResp:
         是否支持迁移。
 
         :param is_transfer: The is_transfer of this QueryRoleDetailResp.
-        :type: bool
+        :type is_transfer: bool
         """
         self._is_transfer = is_transfer
 
@@ -149,7 +164,7 @@ class QueryRoleDetailResp:
         角色权限。
 
         :param privileges: The privileges of this QueryRoleDetailResp.
-        :type: str
+        :type privileges: str
         """
         self._privileges = privileges
 
@@ -171,7 +186,7 @@ class QueryRoleDetailResp:
         继承的角色。
 
         :param inherits_roles: The inherits_roles of this QueryRoleDetailResp.
-        :type: list[str]
+        :type inherits_roles: list[str]
         """
         self._inherits_roles = inherits_roles
 
@@ -193,7 +208,7 @@ class QueryRoleDetailResp:
         是否选择。
 
         :param selected: The selected of this QueryRoleDetailResp.
-        :type: bool
+        :type selected: bool
         """
         self._selected = selected
 

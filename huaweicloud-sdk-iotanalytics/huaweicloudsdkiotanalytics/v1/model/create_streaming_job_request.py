@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateStreamingJobRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateStreamingJobRequest:
     }
 
     def __init__(self, check=None, body=None):
-        """CreateStreamingJobRequest - a model defined in huaweicloud sdk"""
+        """CreateStreamingJobRequest
+
+        The model defined in huaweicloud sdk
+
+        :param check: 是否需要校验配置是否正确
+        :type check: bool
+        :param body: 实时分析作业详细配置，每个作业可选择不同的算子进行组合，各算子的使用方法详见：实时分析算子配置指南。
+        :type body: dict(str, object)
+        """
         
         
 
@@ -63,7 +70,7 @@ class CreateStreamingJobRequest:
         是否需要校验配置是否正确
 
         :param check: The check of this CreateStreamingJobRequest.
-        :type: bool
+        :type check: bool
         """
         self._check = check
 
@@ -85,7 +92,7 @@ class CreateStreamingJobRequest:
         实时分析作业详细配置，每个作业可选择不同的算子进行组合，各算子的使用方法详见：实时分析算子配置指南。
 
         :param body: The body of this CreateStreamingJobRequest.
-        :type: dict(str, object)
+        :type body: dict(str, object)
         """
         self._body = body
 

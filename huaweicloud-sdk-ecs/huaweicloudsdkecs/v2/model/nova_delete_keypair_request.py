@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NovaDeleteKeypairRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class NovaDeleteKeypairRequest:
     }
 
     def __init__(self, keypair_name=None):
-        """NovaDeleteKeypairRequest - a model defined in huaweicloud sdk"""
+        """NovaDeleteKeypairRequest
+
+        The model defined in huaweicloud sdk
+
+        :param keypair_name: 密钥名称。
+        :type keypair_name: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class NovaDeleteKeypairRequest:
         密钥名称。
 
         :param keypair_name: The keypair_name of this NovaDeleteKeypairRequest.
-        :type: str
+        :type keypair_name: str
         """
         self._keypair_name = keypair_name
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdatePublicIpOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdatePublicIpOption:
     }
 
     def __init__(self, port_id=None):
-        """UpdatePublicIpOption - a model defined in huaweicloud sdk"""
+        """UpdatePublicIpOption
+
+        The model defined in huaweicloud sdk
+
+        :param port_id: vip对应的port的ID可为空。当为空的时候，代表解绑原有eip的关系。不为空时，代表绑定eip和vip。
+        :type port_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class UpdatePublicIpOption:
         vip对应的port的ID可为空。当为空的时候，代表解绑原有eip的关系。不为空时，代表绑定eip和vip。
 
         :param port_id: The port_id of this UpdatePublicIpOption.
-        :type: str
+        :type port_id: str
         """
         self._port_id = port_id
 

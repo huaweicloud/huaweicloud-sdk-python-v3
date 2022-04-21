@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LimitValue:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class LimitValue:
     }
 
     def __init__(self, value1=None, value2=None):
-        """LimitValue - a model defined in huaweicloud sdk"""
+        """LimitValue
+
+        The model defined in huaweicloud sdk
+
+        :param value1: 属性值1。
+        :type value1: str
+        :param value2: 属性值2。
+        :type value2: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class LimitValue:
         属性值1。
 
         :param value1: The value1 of this LimitValue.
-        :type: str
+        :type value1: str
         """
         self._value1 = value1
 
@@ -85,7 +92,7 @@ class LimitValue:
         属性值2。
 
         :param value2: The value2 of this LimitValue.
-        :type: str
+        :type value2: str
         """
         self._value2 = value2
 

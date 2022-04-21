@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddProtectedInstanceTagsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AddProtectedInstanceTagsRequest:
     }
 
     def __init__(self, protected_instance_id=None, body=None):
-        """AddProtectedInstanceTagsRequest - a model defined in huaweicloud sdk"""
+        """AddProtectedInstanceTagsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param protected_instance_id: 保护实例的ID。
+        :type protected_instance_id: str
+        :param body: Body of the AddProtectedInstanceTagsRequest
+        :type body: :class:`huaweicloudsdksdrs.v1.ProtectedInstanceAddTagsRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class AddProtectedInstanceTagsRequest:
         保护实例的ID。
 
         :param protected_instance_id: The protected_instance_id of this AddProtectedInstanceTagsRequest.
-        :type: str
+        :type protected_instance_id: str
         """
         self._protected_instance_id = protected_instance_id
 
@@ -72,7 +79,7 @@ class AddProtectedInstanceTagsRequest:
 
 
         :return: The body of this AddProtectedInstanceTagsRequest.
-        :rtype: ProtectedInstanceAddTagsRequestBody
+        :rtype: :class:`huaweicloudsdksdrs.v1.ProtectedInstanceAddTagsRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class AddProtectedInstanceTagsRequest:
 
 
         :param body: The body of this AddProtectedInstanceTagsRequest.
-        :type: ProtectedInstanceAddTagsRequestBody
+        :type body: :class:`huaweicloudsdksdrs.v1.ProtectedInstanceAddTagsRequestBody`
         """
         self._body = body
 

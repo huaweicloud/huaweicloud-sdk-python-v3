@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTopicDetailsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ListTopicDetailsResponse(SdkResponse):
     }
 
     def __init__(self, update_time=None, push_policy=None, create_time=None, name=None, topic_urn=None, display_name=None, request_id=None, enterprise_project_id=None):
-        """ListTopicDetailsResponse - a model defined in huaweicloud sdk"""
+        """ListTopicDetailsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param update_time: 更新时间。时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
+        :type update_time: str
+        :param push_policy: 消息推送的策略。0表示发送失败，保留到失败队列，1表示直接丢弃发送失败的消息。
+        :type push_policy: int
+        :param create_time: 创建时间。时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
+        :type create_time: str
+        :param name: 创建Topic的名字。
+        :type name: str
+        :param topic_urn: Topic的唯一的资源标识。可以通过[查看主题列表获](https://support.huaweicloud.com/api-smn/smn_api_51004.html)取该标识。
+        :type topic_urn: str
+        :param display_name: Topic的显示名，推送邮件消息时，作为邮件发件人显示。
+        :type display_name: str
+        :param request_id: 请求的唯一标识ID。
+        :type request_id: str
+        :param enterprise_project_id: 企业项目ID。
+        :type enterprise_project_id: str
+        """
         
         super(ListTopicDetailsResponse, self).__init__()
 
@@ -93,7 +112,7 @@ class ListTopicDetailsResponse(SdkResponse):
         更新时间。时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
 
         :param update_time: The update_time of this ListTopicDetailsResponse.
-        :type: str
+        :type update_time: str
         """
         self._update_time = update_time
 
@@ -115,7 +134,7 @@ class ListTopicDetailsResponse(SdkResponse):
         消息推送的策略。0表示发送失败，保留到失败队列，1表示直接丢弃发送失败的消息。
 
         :param push_policy: The push_policy of this ListTopicDetailsResponse.
-        :type: int
+        :type push_policy: int
         """
         self._push_policy = push_policy
 
@@ -137,7 +156,7 @@ class ListTopicDetailsResponse(SdkResponse):
         创建时间。时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
 
         :param create_time: The create_time of this ListTopicDetailsResponse.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -159,7 +178,7 @@ class ListTopicDetailsResponse(SdkResponse):
         创建Topic的名字。
 
         :param name: The name of this ListTopicDetailsResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -181,7 +200,7 @@ class ListTopicDetailsResponse(SdkResponse):
         Topic的唯一的资源标识。可以通过[查看主题列表获](https://support.huaweicloud.com/api-smn/smn_api_51004.html)取该标识。
 
         :param topic_urn: The topic_urn of this ListTopicDetailsResponse.
-        :type: str
+        :type topic_urn: str
         """
         self._topic_urn = topic_urn
 
@@ -203,7 +222,7 @@ class ListTopicDetailsResponse(SdkResponse):
         Topic的显示名，推送邮件消息时，作为邮件发件人显示。
 
         :param display_name: The display_name of this ListTopicDetailsResponse.
-        :type: str
+        :type display_name: str
         """
         self._display_name = display_name
 
@@ -225,7 +244,7 @@ class ListTopicDetailsResponse(SdkResponse):
         请求的唯一标识ID。
 
         :param request_id: The request_id of this ListTopicDetailsResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 
@@ -247,7 +266,7 @@ class ListTopicDetailsResponse(SdkResponse):
         企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this ListTopicDetailsResponse.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 

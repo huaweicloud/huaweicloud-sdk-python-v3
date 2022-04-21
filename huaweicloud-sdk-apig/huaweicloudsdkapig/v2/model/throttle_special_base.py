@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ThrottleSpecialBase:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ThrottleSpecialBase:
     }
 
     def __init__(self, id=None, call_limits=None, apply_time=None, app_name=None, app_id=None):
-        """ThrottleSpecialBase - a model defined in huaweicloud sdk"""
+        """ThrottleSpecialBase
+
+        The model defined in huaweicloud sdk
+
+        :param id: 特殊配置的编号
+        :type id: str
+        :param call_limits: 特殊对象在流控时间内能够访问API的最大次数限制
+        :type call_limits: int
+        :param apply_time: 设置时间
+        :type apply_time: datetime
+        :param app_name: 作用的APP名称
+        :type app_name: str
+        :param app_id: 作用的APP编号
+        :type app_id: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class ThrottleSpecialBase:
         特殊配置的编号
 
         :param id: The id of this ThrottleSpecialBase.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -100,7 +113,7 @@ class ThrottleSpecialBase:
         特殊对象在流控时间内能够访问API的最大次数限制
 
         :param call_limits: The call_limits of this ThrottleSpecialBase.
-        :type: int
+        :type call_limits: int
         """
         self._call_limits = call_limits
 
@@ -122,7 +135,7 @@ class ThrottleSpecialBase:
         设置时间
 
         :param apply_time: The apply_time of this ThrottleSpecialBase.
-        :type: datetime
+        :type apply_time: datetime
         """
         self._apply_time = apply_time
 
@@ -144,7 +157,7 @@ class ThrottleSpecialBase:
         作用的APP名称
 
         :param app_name: The app_name of this ThrottleSpecialBase.
-        :type: str
+        :type app_name: str
         """
         self._app_name = app_name
 
@@ -166,7 +179,7 @@ class ThrottleSpecialBase:
         作用的APP编号
 
         :param app_id: The app_id of this ThrottleSpecialBase.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 

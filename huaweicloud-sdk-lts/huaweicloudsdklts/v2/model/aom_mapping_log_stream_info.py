@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AomMappingLogStreamInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class AomMappingLogStreamInfo:
     }
 
     def __init__(self, target_log_group_id=None, target_log_group_name=None, target_log_stream_id=None, target_log_stream_name=None):
-        """AomMappingLogStreamInfo - a model defined in huaweicloud sdk"""
+        """AomMappingLogStreamInfo
+
+        The model defined in huaweicloud sdk
+
+        :param target_log_group_id: 日志组id
+        :type target_log_group_id: str
+        :param target_log_group_name: 目标日志组名称。
+        :type target_log_group_name: str
+        :param target_log_stream_id: 日志流id
+        :type target_log_stream_id: str
+        :param target_log_stream_name: 目标日志组名称。
+        :type target_log_stream_name: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class AomMappingLogStreamInfo:
         日志组id
 
         :param target_log_group_id: The target_log_group_id of this AomMappingLogStreamInfo.
-        :type: str
+        :type target_log_group_id: str
         """
         self._target_log_group_id = target_log_group_id
 
@@ -91,7 +102,7 @@ class AomMappingLogStreamInfo:
         目标日志组名称。
 
         :param target_log_group_name: The target_log_group_name of this AomMappingLogStreamInfo.
-        :type: str
+        :type target_log_group_name: str
         """
         self._target_log_group_name = target_log_group_name
 
@@ -113,7 +124,7 @@ class AomMappingLogStreamInfo:
         日志流id
 
         :param target_log_stream_id: The target_log_stream_id of this AomMappingLogStreamInfo.
-        :type: str
+        :type target_log_stream_id: str
         """
         self._target_log_stream_id = target_log_stream_id
 
@@ -135,7 +146,7 @@ class AomMappingLogStreamInfo:
         目标日志组名称。
 
         :param target_log_stream_name: The target_log_stream_name of this AomMappingLogStreamInfo.
-        :type: str
+        :type target_log_stream_name: str
         """
         self._target_log_stream_name = target_log_stream_name
 

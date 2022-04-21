@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateProjectResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateProjectResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, clone_url=None):
-        """CreateProjectResponse - a model defined in huaweicloud sdk"""
+        """CreateProjectResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 项目ID。
+        :type id: str
+        :param name: 项目名称。
+        :type name: str
+        :param clone_url: 项目的clone url路径。
+        :type clone_url: str
+        """
         
         super(CreateProjectResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class CreateProjectResponse(SdkResponse):
         项目ID。
 
         :param id: The id of this CreateProjectResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -90,7 +99,7 @@ class CreateProjectResponse(SdkResponse):
         项目名称。
 
         :param name: The name of this CreateProjectResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -112,7 +121,7 @@ class CreateProjectResponse(SdkResponse):
         项目的clone url路径。
 
         :param clone_url: The clone_url of this CreateProjectResponse.
-        :type: str
+        :type clone_url: str
         """
         self._clone_url = clone_url
 

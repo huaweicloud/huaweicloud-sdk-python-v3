@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SwitchAgentResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class SwitchAgentResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """SwitchAgentResponse - a model defined in huaweicloud sdk"""
+        """SwitchAgentResponse
+
+        The model defined in huaweicloud sdk
+
+        :param result: 响应状态
+        :type result: str
+        """
         
         super(SwitchAgentResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class SwitchAgentResponse(SdkResponse):
         响应状态
 
         :param result: The result of this SwitchAgentResponse.
-        :type: str
+        :type result: str
         """
         self._result = result
 

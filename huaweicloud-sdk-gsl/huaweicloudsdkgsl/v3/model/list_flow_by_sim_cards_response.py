@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListFlowBySimCardsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListFlowBySimCardsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListFlowBySimCardsResponse - a model defined in huaweicloud sdk"""
+        """ListFlowBySimCardsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param body: 
+        :type body: list[:class:`huaweicloudsdkgsl.v3.SimCardsFlowVO`]
+        """
         
         super(ListFlowBySimCardsResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class ListFlowBySimCardsResponse(SdkResponse):
 
 
         :return: The body of this ListFlowBySimCardsResponse.
-        :rtype: list[SimCardsFlowVO]
+        :rtype: list[:class:`huaweicloudsdkgsl.v3.SimCardsFlowVO`]
         """
         return self._body
 
@@ -56,7 +61,7 @@ class ListFlowBySimCardsResponse(SdkResponse):
 
 
         :param body: The body of this ListFlowBySimCardsResponse.
-        :type: list[SimCardsFlowVO]
+        :type body: list[:class:`huaweicloudsdkgsl.v3.SimCardsFlowVO`]
         """
         self._body = body
 

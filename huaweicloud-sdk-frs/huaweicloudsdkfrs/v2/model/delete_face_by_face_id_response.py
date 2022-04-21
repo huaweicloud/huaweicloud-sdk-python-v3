@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteFaceByFaceIdResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class DeleteFaceByFaceIdResponse(SdkResponse):
     }
 
     def __init__(self, face_number=None, face_set_id=None, face_set_name=None):
-        """DeleteFaceByFaceIdResponse - a model defined in huaweicloud sdk"""
+        """DeleteFaceByFaceIdResponse
+
+        The model defined in huaweicloud sdk
+
+        :param face_number: 删除的人脸数量。 调用失败时无此字段。
+        :type face_number: int
+        :param face_set_id: 人脸库ID。 调用失败时无此字段。
+        :type face_set_id: str
+        :param face_set_name: 人脸库名称。 调用失败时无此字段。
+        :type face_set_name: str
+        """
         
         super(DeleteFaceByFaceIdResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class DeleteFaceByFaceIdResponse(SdkResponse):
         删除的人脸数量。 调用失败时无此字段。
 
         :param face_number: The face_number of this DeleteFaceByFaceIdResponse.
-        :type: int
+        :type face_number: int
         """
         self._face_number = face_number
 
@@ -90,7 +99,7 @@ class DeleteFaceByFaceIdResponse(SdkResponse):
         人脸库ID。 调用失败时无此字段。
 
         :param face_set_id: The face_set_id of this DeleteFaceByFaceIdResponse.
-        :type: str
+        :type face_set_id: str
         """
         self._face_set_id = face_set_id
 
@@ -112,7 +121,7 @@ class DeleteFaceByFaceIdResponse(SdkResponse):
         人脸库名称。 调用失败时无此字段。
 
         :param face_set_name: The face_set_name of this DeleteFaceByFaceIdResponse.
-        :type: str
+        :type face_set_name: str
         """
         self._face_set_name = face_set_name
 

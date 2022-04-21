@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StartRecyclePolicyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class StartRecyclePolicyResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """StartRecyclePolicyResponse - a model defined in huaweicloud sdk"""
+        """StartRecyclePolicyResponse
+
+        The model defined in huaweicloud sdk
+
+        :param result: 操作结果。
+        :type result: str
+        """
         
         super(StartRecyclePolicyResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class StartRecyclePolicyResponse(SdkResponse):
         操作结果。
 
         :param result: The result of this StartRecyclePolicyResponse.
-        :type: str
+        :type result: str
         """
         self._result = result
 

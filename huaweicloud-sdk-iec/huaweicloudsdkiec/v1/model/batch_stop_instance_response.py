@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchStopInstanceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchStopInstanceResponse(SdkResponse):
     }
 
     def __init__(self, jobs=None):
-        """BatchStopInstanceResponse - a model defined in huaweicloud sdk"""
+        """BatchStopInstanceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param jobs: 任务列表对象。
+        :type jobs: list[:class:`huaweicloudsdkiec.v1.JobResult`]
+        """
         
         super(BatchStopInstanceResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class BatchStopInstanceResponse(SdkResponse):
         任务列表对象。
 
         :return: The jobs of this BatchStopInstanceResponse.
-        :rtype: list[JobResult]
+        :rtype: list[:class:`huaweicloudsdkiec.v1.JobResult`]
         """
         return self._jobs
 
@@ -58,7 +63,7 @@ class BatchStopInstanceResponse(SdkResponse):
         任务列表对象。
 
         :param jobs: The jobs of this BatchStopInstanceResponse.
-        :type: list[JobResult]
+        :type jobs: list[:class:`huaweicloudsdkiec.v1.JobResult`]
         """
         self._jobs = jobs
 

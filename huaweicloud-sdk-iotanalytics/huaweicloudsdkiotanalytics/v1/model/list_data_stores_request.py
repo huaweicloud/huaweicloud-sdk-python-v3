@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDataStoresRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListDataStoresRequest:
     }
 
     def __init__(self, group_id=None, data_store_id=None, name=None, offset=None, limit=None):
-        """ListDataStoresRequest - a model defined in huaweicloud sdk"""
+        """ListDataStoresRequest
+
+        The model defined in huaweicloud sdk
+
+        :param group_id: 存储组 ID
+        :type group_id: str
+        :param data_store_id: 存储 ID
+        :type data_store_id: str
+        :param name: 存储名称
+        :type name: str
+        :param offset: 页码
+        :type offset: int
+        :param limit: 返回条数限制
+        :type limit: int
+        """
         
         
 
@@ -78,7 +91,7 @@ class ListDataStoresRequest:
         存储组 ID
 
         :param group_id: The group_id of this ListDataStoresRequest.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -100,7 +113,7 @@ class ListDataStoresRequest:
         存储 ID
 
         :param data_store_id: The data_store_id of this ListDataStoresRequest.
-        :type: str
+        :type data_store_id: str
         """
         self._data_store_id = data_store_id
 
@@ -122,7 +135,7 @@ class ListDataStoresRequest:
         存储名称
 
         :param name: The name of this ListDataStoresRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -144,7 +157,7 @@ class ListDataStoresRequest:
         页码
 
         :param offset: The offset of this ListDataStoresRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -166,7 +179,7 @@ class ListDataStoresRequest:
         返回条数限制
 
         :param limit: The limit of this ListDataStoresRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

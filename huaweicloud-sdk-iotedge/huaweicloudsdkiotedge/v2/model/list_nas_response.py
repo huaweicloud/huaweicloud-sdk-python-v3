@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListNasResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListNasResponse(SdkResponse):
     }
 
     def __init__(self, nas=None):
-        """ListNasResponse - a model defined in huaweicloud sdk"""
+        """ListNasResponse
+
+        The model defined in huaweicloud sdk
+
+        :param nas: 北向NA列表
+        :type nas: list[:class:`huaweicloudsdkiotedge.v2.QueryNaBriefResponseDTO`]
+        """
         
         super(ListNasResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListNasResponse(SdkResponse):
         北向NA列表
 
         :return: The nas of this ListNasResponse.
-        :rtype: list[QueryNaBriefResponseDTO]
+        :rtype: list[:class:`huaweicloudsdkiotedge.v2.QueryNaBriefResponseDTO`]
         """
         return self._nas
 
@@ -58,7 +63,7 @@ class ListNasResponse(SdkResponse):
         北向NA列表
 
         :param nas: The nas of this ListNasResponse.
-        :type: list[QueryNaBriefResponseDTO]
+        :type nas: list[:class:`huaweicloudsdkiotedge.v2.QueryNaBriefResponseDTO`]
         """
         self._nas = nas
 

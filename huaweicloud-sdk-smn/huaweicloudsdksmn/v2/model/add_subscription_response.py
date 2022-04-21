@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddSubscriptionResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AddSubscriptionResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, subscription_urn=None):
-        """AddSubscriptionResponse - a model defined in huaweicloud sdk"""
+        """AddSubscriptionResponse
+
+        The model defined in huaweicloud sdk
+
+        :param request_id: 请求的唯一标识ID。
+        :type request_id: str
+        :param subscription_urn: 订阅者的唯一资源标识。
+        :type subscription_urn: str
+        """
         
         super(AddSubscriptionResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class AddSubscriptionResponse(SdkResponse):
         请求的唯一标识ID。
 
         :param request_id: The request_id of this AddSubscriptionResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 
@@ -85,7 +92,7 @@ class AddSubscriptionResponse(SdkResponse):
         订阅者的唯一资源标识。
 
         :param subscription_urn: The subscription_urn of this AddSubscriptionResponse.
-        :type: str
+        :type subscription_urn: str
         """
         self._subscription_urn = subscription_urn
 

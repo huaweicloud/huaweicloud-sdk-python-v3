@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDomainApiAclPolicyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowDomainApiAclPolicyResponse(SdkResponse):
     }
 
     def __init__(self, api_acl_policy=None):
-        """ShowDomainApiAclPolicyResponse - a model defined in huaweicloud sdk"""
+        """ShowDomainApiAclPolicyResponse
+
+        The model defined in huaweicloud sdk
+
+        :param api_acl_policy: 
+        :type api_acl_policy: :class:`huaweicloudsdkiam.v3.AclPolicyResult`
+        """
         
         super(ShowDomainApiAclPolicyResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class ShowDomainApiAclPolicyResponse(SdkResponse):
 
 
         :return: The api_acl_policy of this ShowDomainApiAclPolicyResponse.
-        :rtype: AclPolicyResult
+        :rtype: :class:`huaweicloudsdkiam.v3.AclPolicyResult`
         """
         return self._api_acl_policy
 
@@ -56,7 +61,7 @@ class ShowDomainApiAclPolicyResponse(SdkResponse):
 
 
         :param api_acl_policy: The api_acl_policy of this ShowDomainApiAclPolicyResponse.
-        :type: AclPolicyResult
+        :type api_acl_policy: :class:`huaweicloudsdkiam.v3.AclPolicyResult`
         """
         self._api_acl_policy = api_acl_policy
 

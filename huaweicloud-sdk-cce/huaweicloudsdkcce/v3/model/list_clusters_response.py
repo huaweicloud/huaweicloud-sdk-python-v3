@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListClustersResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListClustersResponse(SdkResponse):
     }
 
     def __init__(self, kind=None, api_version=None, items=None):
-        """ListClustersResponse - a model defined in huaweicloud sdk"""
+        """ListClustersResponse
+
+        The model defined in huaweicloud sdk
+
+        :param kind: Api type
+        :type kind: str
+        :param api_version: API version
+        :type api_version: str
+        :param items: 集群对象列表，包含了当前项目下所有集群的详细信息。您可通过items.metadata.name下的值来找到对应的集群。
+        :type items: list[:class:`huaweicloudsdkcce.v3.Cluster`]
+        """
         
         super(ListClustersResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListClustersResponse(SdkResponse):
         Api type
 
         :param kind: The kind of this ListClustersResponse.
-        :type: str
+        :type kind: str
         """
         self._kind = kind
 
@@ -90,7 +99,7 @@ class ListClustersResponse(SdkResponse):
         API version
 
         :param api_version: The api_version of this ListClustersResponse.
-        :type: str
+        :type api_version: str
         """
         self._api_version = api_version
 
@@ -101,7 +110,7 @@ class ListClustersResponse(SdkResponse):
         集群对象列表，包含了当前项目下所有集群的详细信息。您可通过items.metadata.name下的值来找到对应的集群。
 
         :return: The items of this ListClustersResponse.
-        :rtype: list[Cluster]
+        :rtype: list[:class:`huaweicloudsdkcce.v3.Cluster`]
         """
         return self._items
 
@@ -112,7 +121,7 @@ class ListClustersResponse(SdkResponse):
         集群对象列表，包含了当前项目下所有集群的详细信息。您可通过items.metadata.name下的值来找到对应的集群。
 
         :param items: The items of this ListClustersResponse.
-        :type: list[Cluster]
+        :type items: list[:class:`huaweicloudsdkcce.v3.Cluster`]
         """
         self._items = items
 

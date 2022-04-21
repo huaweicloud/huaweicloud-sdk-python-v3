@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListQueryStructuredLogsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListQueryStructuredLogsRequest:
     }
 
     def __init__(self, log_group_id=None, log_stream_id=None, body=None):
-        """ListQueryStructuredLogsRequest - a model defined in huaweicloud sdk"""
+        """ListQueryStructuredLogsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param log_group_id: 日志组id。
+        :type log_group_id: str
+        :param log_stream_id: 日志流id。
+        :type log_stream_id: str
+        :param body: Body of the ListQueryStructuredLogsRequest
+        :type body: :class:`huaweicloudsdklts.v2.QueryLtsStructLogParams`
+        """
         
         
 
@@ -66,7 +75,7 @@ class ListQueryStructuredLogsRequest:
         日志组id。
 
         :param log_group_id: The log_group_id of this ListQueryStructuredLogsRequest.
-        :type: str
+        :type log_group_id: str
         """
         self._log_group_id = log_group_id
 
@@ -88,7 +97,7 @@ class ListQueryStructuredLogsRequest:
         日志流id。
 
         :param log_stream_id: The log_stream_id of this ListQueryStructuredLogsRequest.
-        :type: str
+        :type log_stream_id: str
         """
         self._log_stream_id = log_stream_id
 
@@ -98,7 +107,7 @@ class ListQueryStructuredLogsRequest:
 
 
         :return: The body of this ListQueryStructuredLogsRequest.
-        :rtype: QueryLtsStructLogParams
+        :rtype: :class:`huaweicloudsdklts.v2.QueryLtsStructLogParams`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class ListQueryStructuredLogsRequest:
 
 
         :param body: The body of this ListQueryStructuredLogsRequest.
-        :type: QueryLtsStructLogParams
+        :type body: :class:`huaweicloudsdklts.v2.QueryLtsStructLogParams`
         """
         self._body = body
 

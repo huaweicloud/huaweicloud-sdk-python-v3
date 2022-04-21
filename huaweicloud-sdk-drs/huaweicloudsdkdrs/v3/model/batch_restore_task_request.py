@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchRestoreTaskRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchRestoreTaskRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """BatchRestoreTaskRequest - a model defined in huaweicloud sdk"""
+        """BatchRestoreTaskRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 请求语言类型
+        :type x_language: str
+        :param body: Body of the BatchRestoreTaskRequest
+        :type body: :class:`huaweicloudsdkdrs.v3.BatchRetryReq`
+        """
         
         
 
@@ -63,7 +70,7 @@ class BatchRestoreTaskRequest:
         请求语言类型
 
         :param x_language: The x_language of this BatchRestoreTaskRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -73,7 +80,7 @@ class BatchRestoreTaskRequest:
 
 
         :return: The body of this BatchRestoreTaskRequest.
-        :rtype: BatchRetryReq
+        :rtype: :class:`huaweicloudsdkdrs.v3.BatchRetryReq`
         """
         return self._body
 
@@ -83,7 +90,7 @@ class BatchRestoreTaskRequest:
 
 
         :param body: The body of this BatchRestoreTaskRequest.
-        :type: BatchRetryReq
+        :type body: :class:`huaweicloudsdkdrs.v3.BatchRetryReq`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListQueueGroupsRespGroups:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ListQueueGroupsRespGroups:
     }
 
     def __init__(self, id=None, name=None, produced_messages=None, consumed_messages=None, available_messages=None, produced_deadletters=None, available_deadletters=None):
-        """ListQueueGroupsRespGroups - a model defined in huaweicloud sdk"""
+        """ListQueueGroupsRespGroups
+
+        The model defined in huaweicloud sdk
+
+        :param id: 队列的名称。
+        :type id: str
+        :param name: 队列的名称。
+        :type name: str
+        :param produced_messages: 队列的消息总数，不包含过期删除的消息数。
+        :type produced_messages: int
+        :param consumed_messages: 已正常消费的消息总数。
+        :type consumed_messages: int
+        :param available_messages: 该消费组可以消费的普通消息数。
+        :type available_messages: int
+        :param produced_deadletters: 该消费组产生的死信息消息总数。仅当include_deadletter为true时，才有该响应参数。
+        :type produced_deadletters: int
+        :param available_deadletters: 该消费组未消费的死信消息数。仅当include_deadletter为true时，才有该响应参数。
+        :type available_deadletters: int
+        """
         
         
 
@@ -88,7 +105,7 @@ class ListQueueGroupsRespGroups:
         队列的名称。
 
         :param id: The id of this ListQueueGroupsRespGroups.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -110,7 +127,7 @@ class ListQueueGroupsRespGroups:
         队列的名称。
 
         :param name: The name of this ListQueueGroupsRespGroups.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -132,7 +149,7 @@ class ListQueueGroupsRespGroups:
         队列的消息总数，不包含过期删除的消息数。
 
         :param produced_messages: The produced_messages of this ListQueueGroupsRespGroups.
-        :type: int
+        :type produced_messages: int
         """
         self._produced_messages = produced_messages
 
@@ -154,7 +171,7 @@ class ListQueueGroupsRespGroups:
         已正常消费的消息总数。
 
         :param consumed_messages: The consumed_messages of this ListQueueGroupsRespGroups.
-        :type: int
+        :type consumed_messages: int
         """
         self._consumed_messages = consumed_messages
 
@@ -176,7 +193,7 @@ class ListQueueGroupsRespGroups:
         该消费组可以消费的普通消息数。
 
         :param available_messages: The available_messages of this ListQueueGroupsRespGroups.
-        :type: int
+        :type available_messages: int
         """
         self._available_messages = available_messages
 
@@ -198,7 +215,7 @@ class ListQueueGroupsRespGroups:
         该消费组产生的死信息消息总数。仅当include_deadletter为true时，才有该响应参数。
 
         :param produced_deadletters: The produced_deadletters of this ListQueueGroupsRespGroups.
-        :type: int
+        :type produced_deadletters: int
         """
         self._produced_deadletters = produced_deadletters
 
@@ -220,7 +237,7 @@ class ListQueueGroupsRespGroups:
         该消费组未消费的死信消息数。仅当include_deadletter为true时，才有该响应参数。
 
         :param available_deadletters: The available_deadletters of this ListQueueGroupsRespGroups.
-        :type: int
+        :type available_deadletters: int
         """
         self._available_deadletters = available_deadletters
 

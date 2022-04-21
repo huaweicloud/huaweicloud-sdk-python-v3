@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AttrPairRules:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class AttrPairRules:
     }
 
     def __init__(self, attr_pairs=None):
-        """AttrPairRules - a model defined in huaweicloud sdk"""
+        """AttrPairRules
+
+        The model defined in huaweicloud sdk
+
+        :param attr_pairs: 属性对。
+        :type attr_pairs: list[:class:`huaweicloudsdkres.v1.AttrPair`]
+        """
         
         
 
@@ -47,7 +52,7 @@ class AttrPairRules:
         属性对。
 
         :return: The attr_pairs of this AttrPairRules.
-        :rtype: list[AttrPair]
+        :rtype: list[:class:`huaweicloudsdkres.v1.AttrPair`]
         """
         return self._attr_pairs
 
@@ -58,7 +63,7 @@ class AttrPairRules:
         属性对。
 
         :param attr_pairs: The attr_pairs of this AttrPairRules.
-        :type: list[AttrPair]
+        :type attr_pairs: list[:class:`huaweicloudsdkres.v1.AttrPair`]
         """
         self._attr_pairs = attr_pairs
 

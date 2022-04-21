@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateLoadBalancerResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UpdateLoadBalancerResponse(SdkResponse):
     }
 
     def __init__(self, loadbalancer=None, loadbalancer_id=None, order_id=None, request_id=None):
-        """UpdateLoadBalancerResponse - a model defined in huaweicloud sdk"""
+        """UpdateLoadBalancerResponse
+
+        The model defined in huaweicloud sdk
+
+        :param loadbalancer: 
+        :type loadbalancer: :class:`huaweicloudsdkelb.v3.LoadBalancer`
+        :param loadbalancer_id: 负载均衡器的id（包周期场景返回该字段）
+        :type loadbalancer_id: str
+        :param order_id: 订单号（包周期规格变更场景返回该字段）
+        :type order_id: str
+        :param request_id: 请求ID。  注：自动生成 。
+        :type request_id: str
+        """
         
         super(UpdateLoadBalancerResponse, self).__init__()
 
@@ -61,7 +72,7 @@ class UpdateLoadBalancerResponse(SdkResponse):
 
 
         :return: The loadbalancer of this UpdateLoadBalancerResponse.
-        :rtype: LoadBalancer
+        :rtype: :class:`huaweicloudsdkelb.v3.LoadBalancer`
         """
         return self._loadbalancer
 
@@ -71,7 +82,7 @@ class UpdateLoadBalancerResponse(SdkResponse):
 
 
         :param loadbalancer: The loadbalancer of this UpdateLoadBalancerResponse.
-        :type: LoadBalancer
+        :type loadbalancer: :class:`huaweicloudsdkelb.v3.LoadBalancer`
         """
         self._loadbalancer = loadbalancer
 
@@ -93,7 +104,7 @@ class UpdateLoadBalancerResponse(SdkResponse):
         负载均衡器的id（包周期场景返回该字段）
 
         :param loadbalancer_id: The loadbalancer_id of this UpdateLoadBalancerResponse.
-        :type: str
+        :type loadbalancer_id: str
         """
         self._loadbalancer_id = loadbalancer_id
 
@@ -115,7 +126,7 @@ class UpdateLoadBalancerResponse(SdkResponse):
         订单号（包周期规格变更场景返回该字段）
 
         :param order_id: The order_id of this UpdateLoadBalancerResponse.
-        :type: str
+        :type order_id: str
         """
         self._order_id = order_id
 
@@ -137,7 +148,7 @@ class UpdateLoadBalancerResponse(SdkResponse):
         请求ID。  注：自动生成 。
 
         :param request_id: The request_id of this UpdateLoadBalancerResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 

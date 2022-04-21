@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CancelMeetingRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class CancelMeetingRequest:
     }
 
     def __init__(self, conference_id=None, user_uuid=None, type=None, x_authorization_type=None, x_site_id=None):
-        """CancelMeetingRequest - a model defined in huaweicloud sdk"""
+        """CancelMeetingRequest
+
+        The model defined in huaweicloud sdk
+
+        :param conference_id: 会议ID。
+        :type conference_id: str
+        :param user_uuid: 用户的UUID（已在USG注册过的）
+        :type user_uuid: str
+        :param type: 取消会议操作类型，1表示需要结束在线会议。
+        :type type: int
+        :param x_authorization_type: 标识是否为第三方portal过来的请求。
+        :type x_authorization_type: str
+        :param x_site_id: 用于区分到哪个HCSO站点鉴权。
+        :type x_site_id: str
+        """
         
         
 
@@ -77,7 +90,7 @@ class CancelMeetingRequest:
         会议ID。
 
         :param conference_id: The conference_id of this CancelMeetingRequest.
-        :type: str
+        :type conference_id: str
         """
         self._conference_id = conference_id
 
@@ -99,7 +112,7 @@ class CancelMeetingRequest:
         用户的UUID（已在USG注册过的）
 
         :param user_uuid: The user_uuid of this CancelMeetingRequest.
-        :type: str
+        :type user_uuid: str
         """
         self._user_uuid = user_uuid
 
@@ -121,7 +134,7 @@ class CancelMeetingRequest:
         取消会议操作类型，1表示需要结束在线会议。
 
         :param type: The type of this CancelMeetingRequest.
-        :type: int
+        :type type: int
         """
         self._type = type
 
@@ -143,7 +156,7 @@ class CancelMeetingRequest:
         标识是否为第三方portal过来的请求。
 
         :param x_authorization_type: The x_authorization_type of this CancelMeetingRequest.
-        :type: str
+        :type x_authorization_type: str
         """
         self._x_authorization_type = x_authorization_type
 
@@ -165,7 +178,7 @@ class CancelMeetingRequest:
         用于区分到哪个HCSO站点鉴权。
 
         :param x_site_id: The x_site_id of this CancelMeetingRequest.
-        :type: str
+        :type x_site_id: str
         """
         self._x_site_id = x_site_id
 

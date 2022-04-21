@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTagRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListTagRequest:
     }
 
     def __init__(self, resource_type=None, body=None):
-        """ListTagRequest - a model defined in huaweicloud sdk"""
+        """ListTagRequest
+
+        The model defined in huaweicloud sdk
+
+        :param resource_type: 资源的类型：DNS-public_zone，DNS-private_zone，DNS-public_recordset，DNS-private_recordset，DNS-ptr_record。
+        :type resource_type: str
+        :param body: Body of the ListTagRequest
+        :type body: :class:`huaweicloudsdkdns.v2.ListTagReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class ListTagRequest:
         资源的类型：DNS-public_zone，DNS-private_zone，DNS-public_recordset，DNS-private_recordset，DNS-ptr_record。
 
         :param resource_type: The resource_type of this ListTagRequest.
-        :type: str
+        :type resource_type: str
         """
         self._resource_type = resource_type
 
@@ -72,7 +79,7 @@ class ListTagRequest:
 
 
         :return: The body of this ListTagRequest.
-        :rtype: ListTagReq
+        :rtype: :class:`huaweicloudsdkdns.v2.ListTagReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class ListTagRequest:
 
 
         :param body: The body of this ListTagRequest.
-        :type: ListTagReq
+        :type body: :class:`huaweicloudsdkdns.v2.ListTagReq`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SetAuditlogPolicyRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class SetAuditlogPolicyRequestBody:
     }
 
     def __init__(self, keep_days=None, reserve_auditlogs=None):
-        """SetAuditlogPolicyRequestBody - a model defined in huaweicloud sdk"""
+        """SetAuditlogPolicyRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param keep_days: 审计日志保存天数，取值范围0~732。0表示关闭审计日志策略。
+        :type keep_days: int
+        :param reserve_auditlogs: 仅关闭审计日志策略时有效。  - true（默认），表示关闭审计日志策略的同时，保留历史审计日志。 - false，表示关闭审计日志策略的同时，删除已有的历史审计日志。
+        :type reserve_auditlogs: bool
+        """
         
         
 
@@ -62,7 +69,7 @@ class SetAuditlogPolicyRequestBody:
         审计日志保存天数，取值范围0~732。0表示关闭审计日志策略。
 
         :param keep_days: The keep_days of this SetAuditlogPolicyRequestBody.
-        :type: int
+        :type keep_days: int
         """
         self._keep_days = keep_days
 
@@ -84,7 +91,7 @@ class SetAuditlogPolicyRequestBody:
         仅关闭审计日志策略时有效。  - true（默认），表示关闭审计日志策略的同时，保留历史审计日志。 - false，表示关闭审计日志策略的同时，删除已有的历史审计日志。
 
         :param reserve_auditlogs: The reserve_auditlogs of this SetAuditlogPolicyRequestBody.
-        :type: bool
+        :type reserve_auditlogs: bool
         """
         self._reserve_auditlogs = reserve_auditlogs
 

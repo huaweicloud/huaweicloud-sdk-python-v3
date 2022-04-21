@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSecretVersionsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListSecretVersionsResponse(SdkResponse):
     }
 
     def __init__(self, version_metadatas=None):
-        """ListSecretVersionsResponse - a model defined in huaweicloud sdk"""
+        """ListSecretVersionsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param version_metadatas: version_metadata对象。
+        :type version_metadatas: list[:class:`huaweicloudsdkkms.v1.VersionMetadata`]
+        """
         
         super(ListSecretVersionsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListSecretVersionsResponse(SdkResponse):
         version_metadata对象。
 
         :return: The version_metadatas of this ListSecretVersionsResponse.
-        :rtype: list[VersionMetadata]
+        :rtype: list[:class:`huaweicloudsdkkms.v1.VersionMetadata`]
         """
         return self._version_metadatas
 
@@ -58,7 +63,7 @@ class ListSecretVersionsResponse(SdkResponse):
         version_metadata对象。
 
         :param version_metadatas: The version_metadatas of this ListSecretVersionsResponse.
-        :type: list[VersionMetadata]
+        :type version_metadatas: list[:class:`huaweicloudsdkkms.v1.VersionMetadata`]
         """
         self._version_metadatas = version_metadatas
 

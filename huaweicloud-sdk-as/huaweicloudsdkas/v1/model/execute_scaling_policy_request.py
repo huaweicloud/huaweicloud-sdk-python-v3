@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExecuteScalingPolicyRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ExecuteScalingPolicyRequest:
     }
 
     def __init__(self, scaling_policy_id=None, body=None):
-        """ExecuteScalingPolicyRequest - a model defined in huaweicloud sdk"""
+        """ExecuteScalingPolicyRequest
+
+        The model defined in huaweicloud sdk
+
+        :param scaling_policy_id: 伸缩策略ID。
+        :type scaling_policy_id: str
+        :param body: Body of the ExecuteScalingPolicyRequest
+        :type body: :class:`huaweicloudsdkas.v1.ExecuteScalingPolicyOption`
+        """
         
         
 
@@ -62,7 +69,7 @@ class ExecuteScalingPolicyRequest:
         伸缩策略ID。
 
         :param scaling_policy_id: The scaling_policy_id of this ExecuteScalingPolicyRequest.
-        :type: str
+        :type scaling_policy_id: str
         """
         self._scaling_policy_id = scaling_policy_id
 
@@ -72,7 +79,7 @@ class ExecuteScalingPolicyRequest:
 
 
         :return: The body of this ExecuteScalingPolicyRequest.
-        :rtype: ExecuteScalingPolicyOption
+        :rtype: :class:`huaweicloudsdkas.v1.ExecuteScalingPolicyOption`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class ExecuteScalingPolicyRequest:
 
 
         :param body: The body of this ExecuteScalingPolicyRequest.
-        :type: ExecuteScalingPolicyOption
+        :type body: :class:`huaweicloudsdkas.v1.ExecuteScalingPolicyOption`
         """
         self._body = body
 

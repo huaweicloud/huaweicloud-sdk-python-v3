@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowBugsPerDeveloperRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowBugsPerDeveloperRequest:
     }
 
     def __init__(self, project_id=None, body=None):
-        """ShowBugsPerDeveloperRequest - a model defined in huaweicloud sdk"""
+        """ShowBugsPerDeveloperRequest
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: devcloud的项目ID
+        :type project_id: str
+        :param body: Body of the ShowBugsPerDeveloperRequest
+        :type body: :class:`huaweicloudsdkprojectman.v4.MetricRequest2`
+        """
         
         
 
@@ -62,7 +69,7 @@ class ShowBugsPerDeveloperRequest:
         devcloud的项目ID
 
         :param project_id: The project_id of this ShowBugsPerDeveloperRequest.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -72,7 +79,7 @@ class ShowBugsPerDeveloperRequest:
 
 
         :return: The body of this ShowBugsPerDeveloperRequest.
-        :rtype: MetricRequest2
+        :rtype: :class:`huaweicloudsdkprojectman.v4.MetricRequest2`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class ShowBugsPerDeveloperRequest:
 
 
         :param body: The body of this ShowBugsPerDeveloperRequest.
-        :type: MetricRequest2
+        :type body: :class:`huaweicloudsdkprojectman.v4.MetricRequest2`
         """
         self._body = body
 

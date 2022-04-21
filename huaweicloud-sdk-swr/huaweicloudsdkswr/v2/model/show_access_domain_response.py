@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowAccessDomainResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class ShowAccessDomainResponse(SdkResponse):
     }
 
     def __init__(self, exist=None, namespace=None, repository=None, access_domain=None, permit=None, deadline=None, description=None, creator_id=None, creator_name=None, created=None, updated=None, status=None):
-        """ShowAccessDomainResponse - a model defined in huaweicloud sdk"""
+        """ShowAccessDomainResponse
+
+        The model defined in huaweicloud sdk
+
+        :param exist: true：存在；false：不存在
+        :type exist: bool
+        :param namespace: 组织名称
+        :type namespace: str
+        :param repository: 镜像仓库名称
+        :type repository: str
+        :param access_domain: 共享帐号名
+        :type access_domain: str
+        :param permit: 权限
+        :type permit: str
+        :param deadline: 截止时间
+        :type deadline: str
+        :param description: 描述
+        :type description: str
+        :param creator_id: 创建者ID
+        :type creator_id: str
+        :param creator_name: 创建者名称
+        :type creator_name: str
+        :param created: 镜像创建时间，UTC时间格式，时间为UTC标准时间
+        :type created: str
+        :param updated: 镜像更新时间，UTC时间格式，时间为UTC标准时间
+        :type updated: str
+        :param status: 是否过期，true：有效；false：过期
+        :type status: bool
+        """
         
         super(ShowAccessDomainResponse, self).__init__()
 
@@ -113,7 +140,7 @@ class ShowAccessDomainResponse(SdkResponse):
         true：存在；false：不存在
 
         :param exist: The exist of this ShowAccessDomainResponse.
-        :type: bool
+        :type exist: bool
         """
         self._exist = exist
 
@@ -135,7 +162,7 @@ class ShowAccessDomainResponse(SdkResponse):
         组织名称
 
         :param namespace: The namespace of this ShowAccessDomainResponse.
-        :type: str
+        :type namespace: str
         """
         self._namespace = namespace
 
@@ -157,7 +184,7 @@ class ShowAccessDomainResponse(SdkResponse):
         镜像仓库名称
 
         :param repository: The repository of this ShowAccessDomainResponse.
-        :type: str
+        :type repository: str
         """
         self._repository = repository
 
@@ -179,7 +206,7 @@ class ShowAccessDomainResponse(SdkResponse):
         共享帐号名
 
         :param access_domain: The access_domain of this ShowAccessDomainResponse.
-        :type: str
+        :type access_domain: str
         """
         self._access_domain = access_domain
 
@@ -201,7 +228,7 @@ class ShowAccessDomainResponse(SdkResponse):
         权限
 
         :param permit: The permit of this ShowAccessDomainResponse.
-        :type: str
+        :type permit: str
         """
         self._permit = permit
 
@@ -223,7 +250,7 @@ class ShowAccessDomainResponse(SdkResponse):
         截止时间
 
         :param deadline: The deadline of this ShowAccessDomainResponse.
-        :type: str
+        :type deadline: str
         """
         self._deadline = deadline
 
@@ -245,7 +272,7 @@ class ShowAccessDomainResponse(SdkResponse):
         描述
 
         :param description: The description of this ShowAccessDomainResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -267,7 +294,7 @@ class ShowAccessDomainResponse(SdkResponse):
         创建者ID
 
         :param creator_id: The creator_id of this ShowAccessDomainResponse.
-        :type: str
+        :type creator_id: str
         """
         self._creator_id = creator_id
 
@@ -289,7 +316,7 @@ class ShowAccessDomainResponse(SdkResponse):
         创建者名称
 
         :param creator_name: The creator_name of this ShowAccessDomainResponse.
-        :type: str
+        :type creator_name: str
         """
         self._creator_name = creator_name
 
@@ -311,7 +338,7 @@ class ShowAccessDomainResponse(SdkResponse):
         镜像创建时间，UTC时间格式，时间为UTC标准时间
 
         :param created: The created of this ShowAccessDomainResponse.
-        :type: str
+        :type created: str
         """
         self._created = created
 
@@ -333,7 +360,7 @@ class ShowAccessDomainResponse(SdkResponse):
         镜像更新时间，UTC时间格式，时间为UTC标准时间
 
         :param updated: The updated of this ShowAccessDomainResponse.
-        :type: str
+        :type updated: str
         """
         self._updated = updated
 
@@ -355,7 +382,7 @@ class ShowAccessDomainResponse(SdkResponse):
         是否过期，true：有效；false：过期
 
         :param status: The status of this ShowAccessDomainResponse.
-        :type: bool
+        :type status: bool
         """
         self._status = status
 

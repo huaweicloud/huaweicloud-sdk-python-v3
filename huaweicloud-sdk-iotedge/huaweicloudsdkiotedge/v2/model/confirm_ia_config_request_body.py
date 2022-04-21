@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ConfirmIaConfigRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ConfirmIaConfigRequestBody:
     }
 
     def __init__(self, id=None, version=None):
-        """ConfirmIaConfigRequestBody - a model defined in huaweicloud sdk"""
+        """ConfirmIaConfigRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param id: 配置项ID
+        :type id: str
+        :param version: 版本号
+        :type version: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ConfirmIaConfigRequestBody:
         配置项ID
 
         :param id: The id of this ConfirmIaConfigRequestBody.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -83,7 +90,7 @@ class ConfirmIaConfigRequestBody:
         版本号
 
         :param version: The version of this ConfirmIaConfigRequestBody.
-        :type: str
+        :type version: str
         """
         self._version = version
 

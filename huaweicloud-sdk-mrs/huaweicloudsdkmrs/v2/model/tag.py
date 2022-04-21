@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Tag:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Tag:
     }
 
     def __init__(self, key=None, value=None):
-        """Tag - a model defined in huaweicloud sdk"""
+        """Tag
+
+        The model defined in huaweicloud sdk
+
+        :param key: 键。 - 最大长度36个unicode字符，不能为空字符串。  - 标签的key值不能包含非打印字符ASCII(0-31)，“&#x3D;”,“*”,“&lt;”,“&gt;”,“\\”,“,”,“|”,“/”，且首尾字符不能为空格。  - 同一资源的key值不能重复。
+        :type key: str
+        :param value: 值。 - 最大长度43个unicode字符，可以为空字符串。  - 标签的value值不能包含非打印字符ASCII(0-31)，“&#x3D;”,“*”,“&lt;”,“&gt;”,“\\”,“,”,“|”,“/”，且首尾字符不能为空格。
+        :type value: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class Tag:
         键。 - 最大长度36个unicode字符，不能为空字符串。  - 标签的key值不能包含非打印字符ASCII(0-31)，“=”,“*”,“<”,“>”,“\\”,“,”,“|”,“/”，且首尾字符不能为空格。  - 同一资源的key值不能重复。
 
         :param key: The key of this Tag.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -83,7 +90,7 @@ class Tag:
         值。 - 最大长度43个unicode字符，可以为空字符串。  - 标签的value值不能包含非打印字符ASCII(0-31)，“=”,“*”,“<”,“>”,“\\”,“,”,“|”,“/”，且首尾字符不能为空格。
 
         :param value: The value of this Tag.
-        :type: str
+        :type value: str
         """
         self._value = value
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Deployment:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class Deployment:
     }
 
     def __init__(self, id=None, distribution=None, edgecloud=None):
-        """Deployment - a model defined in huaweicloud sdk"""
+        """Deployment
+
+        The model defined in huaweicloud sdk
+
+        :param id: 部署计划ID。
+        :type id: str
+        :param distribution: 部署位置信息列表
+        :type distribution: list[:class:`huaweicloudsdkiec.v1.Distribution`]
+        :param edgecloud: 
+        :type edgecloud: :class:`huaweicloudsdkiec.v1.DeploymentEdgecloud`
+        """
         
         
 
@@ -68,7 +77,7 @@ class Deployment:
         部署计划ID。
 
         :param id: The id of this Deployment.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -79,7 +88,7 @@ class Deployment:
         部署位置信息列表
 
         :return: The distribution of this Deployment.
-        :rtype: list[Distribution]
+        :rtype: list[:class:`huaweicloudsdkiec.v1.Distribution`]
         """
         return self._distribution
 
@@ -90,7 +99,7 @@ class Deployment:
         部署位置信息列表
 
         :param distribution: The distribution of this Deployment.
-        :type: list[Distribution]
+        :type distribution: list[:class:`huaweicloudsdkiec.v1.Distribution`]
         """
         self._distribution = distribution
 
@@ -100,7 +109,7 @@ class Deployment:
 
 
         :return: The edgecloud of this Deployment.
-        :rtype: DeploymentEdgecloud
+        :rtype: :class:`huaweicloudsdkiec.v1.DeploymentEdgecloud`
         """
         return self._edgecloud
 
@@ -110,7 +119,7 @@ class Deployment:
 
 
         :param edgecloud: The edgecloud of this Deployment.
-        :type: DeploymentEdgecloud
+        :type edgecloud: :class:`huaweicloudsdkiec.v1.DeploymentEdgecloud`
         """
         self._edgecloud = edgecloud
 

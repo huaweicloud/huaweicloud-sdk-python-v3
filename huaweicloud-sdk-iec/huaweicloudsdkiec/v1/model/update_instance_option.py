@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateInstanceOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateInstanceOption:
     }
 
     def __init__(self, name=None, description=None):
-        """UpdateInstanceOption - a model defined in huaweicloud sdk"""
+        """UpdateInstanceOption
+
+        The model defined in huaweicloud sdk
+
+        :param name: 修改后的边缘实例名称， 只能由中文字符、英文字母、数字及“_”、“-”、“.”组成。
+        :type name: str
+        :param description: 描述， 不能包含“&lt;”，“&gt;”。
+        :type description: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class UpdateInstanceOption:
         修改后的边缘实例名称， 只能由中文字符、英文字母、数字及“_”、“-”、“.”组成。
 
         :param name: The name of this UpdateInstanceOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -85,7 +92,7 @@ class UpdateInstanceOption:
         描述， 不能包含“<”，“>”。
 
         :param description: The description of this UpdateInstanceOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 

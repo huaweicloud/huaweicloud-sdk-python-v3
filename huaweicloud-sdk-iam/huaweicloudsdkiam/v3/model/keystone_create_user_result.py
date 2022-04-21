@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneCreateUserResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class KeystoneCreateUserResult:
     }
 
     def __init__(self, domain_id=None, name=None, description=None, password_expires_at=None, links=None, id=None, enabled=None):
-        """KeystoneCreateUserResult - a model defined in huaweicloud sdk"""
+        """KeystoneCreateUserResult
+
+        The model defined in huaweicloud sdk
+
+        :param domain_id: IAM用户所属账号ID。
+        :type domain_id: str
+        :param name: IAM用户名。
+        :type name: str
+        :param description: IAM用户描述信息。
+        :type description: str
+        :param password_expires_at: IAM用户密码过期时间（UTC时间），“null”表示密码不过期。
+        :type password_expires_at: str
+        :param links: 
+        :type links: :class:`huaweicloudsdkiam.v3.LinksSelf`
+        :param id: IAM用户ID。
+        :type id: str
+        :param enabled: IAM用户是否启用。true表示启用，false表示停用，默认为true。
+        :type enabled: bool
+        """
         
         
 
@@ -82,7 +99,7 @@ class KeystoneCreateUserResult:
         IAM用户所属账号ID。
 
         :param domain_id: The domain_id of this KeystoneCreateUserResult.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -104,7 +121,7 @@ class KeystoneCreateUserResult:
         IAM用户名。
 
         :param name: The name of this KeystoneCreateUserResult.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -126,7 +143,7 @@ class KeystoneCreateUserResult:
         IAM用户描述信息。
 
         :param description: The description of this KeystoneCreateUserResult.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -148,7 +165,7 @@ class KeystoneCreateUserResult:
         IAM用户密码过期时间（UTC时间），“null”表示密码不过期。
 
         :param password_expires_at: The password_expires_at of this KeystoneCreateUserResult.
-        :type: str
+        :type password_expires_at: str
         """
         self._password_expires_at = password_expires_at
 
@@ -158,7 +175,7 @@ class KeystoneCreateUserResult:
 
 
         :return: The links of this KeystoneCreateUserResult.
-        :rtype: LinksSelf
+        :rtype: :class:`huaweicloudsdkiam.v3.LinksSelf`
         """
         return self._links
 
@@ -168,7 +185,7 @@ class KeystoneCreateUserResult:
 
 
         :param links: The links of this KeystoneCreateUserResult.
-        :type: LinksSelf
+        :type links: :class:`huaweicloudsdkiam.v3.LinksSelf`
         """
         self._links = links
 
@@ -190,7 +207,7 @@ class KeystoneCreateUserResult:
         IAM用户ID。
 
         :param id: The id of this KeystoneCreateUserResult.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -212,7 +229,7 @@ class KeystoneCreateUserResult:
         IAM用户是否启用。true表示启用，false表示停用，默认为true。
 
         :param enabled: The enabled of this KeystoneCreateUserResult.
-        :type: bool
+        :type enabled: bool
         """
         self._enabled = enabled
 

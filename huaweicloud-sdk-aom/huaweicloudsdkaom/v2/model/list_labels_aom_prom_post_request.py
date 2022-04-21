@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListLabelsAomPromPostRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class ListLabelsAomPromPostRequest:
     }
 
     def __init__(self):
-        """ListLabelsAomPromPostRequest - a model defined in huaweicloud sdk"""
+        """ListLabelsAomPromPostRequest
+
+        The model defined in huaweicloud sdk
+
+        """
         
         
         self.discriminator = None

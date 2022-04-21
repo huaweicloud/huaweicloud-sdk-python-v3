@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneListAllProjectPermissionsForGroupRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class KeystoneListAllProjectPermissionsForGroupRequest:
     }
 
     def __init__(self, domain_id=None, group_id=None):
-        """KeystoneListAllProjectPermissionsForGroupRequest - a model defined in huaweicloud sdk"""
+        """KeystoneListAllProjectPermissionsForGroupRequest
+
+        The model defined in huaweicloud sdk
+
+        :param domain_id: 租户ID，获取方式请参见：[获取项目名称、项目ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
+        :type domain_id: str
+        :param group_id: 用户组ID，获取方式请参见：[获取用户组ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
+        :type group_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class KeystoneListAllProjectPermissionsForGroupRequest:
         租户ID，获取方式请参见：[获取项目名称、项目ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param domain_id: The domain_id of this KeystoneListAllProjectPermissionsForGroupRequest.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -83,7 +90,7 @@ class KeystoneListAllProjectPermissionsForGroupRequest:
         用户组ID，获取方式请参见：[获取用户组ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param group_id: The group_id of this KeystoneListAllProjectPermissionsForGroupRequest.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 

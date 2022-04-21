@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IncidentDetailExtInfoV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class IncidentDetailExtInfoV2:
     }
 
     def __init__(self, area_code=None, remind_mobile=None, remind_mail=None, contact_type=None, remind_time=None, cc_email=None, commodity_id=None):
-        """IncidentDetailExtInfoV2 - a model defined in huaweicloud sdk"""
+        """IncidentDetailExtInfoV2
+
+        The model defined in huaweicloud sdk
+
+        :param area_code: 国家码
+        :type area_code: str
+        :param remind_mobile: 提醒手机
+        :type remind_mobile: str
+        :param remind_mail: 提醒邮箱
+        :type remind_mail: str
+        :param contact_type: 联系方式类型
+        :type contact_type: str
+        :param remind_time: 提醒时间
+        :type remind_time: str
+        :param cc_email: 抄送邮箱
+        :type cc_email: str
+        :param commodity_id: ISV商品id
+        :type commodity_id: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class IncidentDetailExtInfoV2:
         国家码
 
         :param area_code: The area_code of this IncidentDetailExtInfoV2.
-        :type: str
+        :type area_code: str
         """
         self._area_code = area_code
 
@@ -110,7 +127,7 @@ class IncidentDetailExtInfoV2:
         提醒手机
 
         :param remind_mobile: The remind_mobile of this IncidentDetailExtInfoV2.
-        :type: str
+        :type remind_mobile: str
         """
         self._remind_mobile = remind_mobile
 
@@ -132,7 +149,7 @@ class IncidentDetailExtInfoV2:
         提醒邮箱
 
         :param remind_mail: The remind_mail of this IncidentDetailExtInfoV2.
-        :type: str
+        :type remind_mail: str
         """
         self._remind_mail = remind_mail
 
@@ -154,7 +171,7 @@ class IncidentDetailExtInfoV2:
         联系方式类型
 
         :param contact_type: The contact_type of this IncidentDetailExtInfoV2.
-        :type: str
+        :type contact_type: str
         """
         self._contact_type = contact_type
 
@@ -176,7 +193,7 @@ class IncidentDetailExtInfoV2:
         提醒时间
 
         :param remind_time: The remind_time of this IncidentDetailExtInfoV2.
-        :type: str
+        :type remind_time: str
         """
         self._remind_time = remind_time
 
@@ -198,7 +215,7 @@ class IncidentDetailExtInfoV2:
         抄送邮箱
 
         :param cc_email: The cc_email of this IncidentDetailExtInfoV2.
-        :type: str
+        :type cc_email: str
         """
         self._cc_email = cc_email
 
@@ -220,7 +237,7 @@ class IncidentDetailExtInfoV2:
         ISV商品id
 
         :param commodity_id: The commodity_id of this IncidentDetailExtInfoV2.
-        :type: str
+        :type commodity_id: str
         """
         self._commodity_id = commodity_id
 

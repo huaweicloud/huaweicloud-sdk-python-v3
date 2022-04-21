@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSourcesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListSourcesRequest:
     }
 
     def __init__(self, instance_id=None, rule_id=None, limit=None, offset=None):
-        """ListSourcesRequest - a model defined in huaweicloud sdk"""
+        """ListSourcesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param rule_id: 规则ID
+        :type rule_id: str
+        :param limit: 每页显示条目数量，最大数量999，超过999后只返回999
+        :type limit: int
+        :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0
+        :type offset: int
+        """
         
         
 
@@ -71,7 +82,7 @@ class ListSourcesRequest:
         实例ID
 
         :param instance_id: The instance_id of this ListSourcesRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -93,7 +104,7 @@ class ListSourcesRequest:
         规则ID
 
         :param rule_id: The rule_id of this ListSourcesRequest.
-        :type: str
+        :type rule_id: str
         """
         self._rule_id = rule_id
 
@@ -115,7 +126,7 @@ class ListSourcesRequest:
         每页显示条目数量，最大数量999，超过999后只返回999
 
         :param limit: The limit of this ListSourcesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -137,7 +148,7 @@ class ListSourcesRequest:
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
         :param offset: The offset of this ListSourcesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 

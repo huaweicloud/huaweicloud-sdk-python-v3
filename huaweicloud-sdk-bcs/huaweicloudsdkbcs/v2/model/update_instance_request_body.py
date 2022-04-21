@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateInstanceRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateInstanceRequestBody:
     }
 
     def __init__(self, node_orgs=None, publicips=None, is_delete_org=None):
-        """UpdateInstanceRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateInstanceRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param node_orgs: 添加节点的组织列表
+        :type node_orgs: list[:class:`huaweicloudsdkbcs.v2.NodeOrgs`]
+        :param publicips: ief添加组织时，ief节点信息。绑定模式的IEF服务，新增组织时，该字段必填
+        :type publicips: list[:class:`huaweicloudsdkbcs.v2.IefNodeinfo`]
+        :param is_delete_org: 是否是删除组织
+        :type is_delete_org: bool
+        """
         
         
 
@@ -56,7 +65,7 @@ class UpdateInstanceRequestBody:
         添加节点的组织列表
 
         :return: The node_orgs of this UpdateInstanceRequestBody.
-        :rtype: list[NodeOrgs]
+        :rtype: list[:class:`huaweicloudsdkbcs.v2.NodeOrgs`]
         """
         return self._node_orgs
 
@@ -67,7 +76,7 @@ class UpdateInstanceRequestBody:
         添加节点的组织列表
 
         :param node_orgs: The node_orgs of this UpdateInstanceRequestBody.
-        :type: list[NodeOrgs]
+        :type node_orgs: list[:class:`huaweicloudsdkbcs.v2.NodeOrgs`]
         """
         self._node_orgs = node_orgs
 
@@ -78,7 +87,7 @@ class UpdateInstanceRequestBody:
         ief添加组织时，ief节点信息。绑定模式的IEF服务，新增组织时，该字段必填
 
         :return: The publicips of this UpdateInstanceRequestBody.
-        :rtype: list[IefNodeinfo]
+        :rtype: list[:class:`huaweicloudsdkbcs.v2.IefNodeinfo`]
         """
         return self._publicips
 
@@ -89,7 +98,7 @@ class UpdateInstanceRequestBody:
         ief添加组织时，ief节点信息。绑定模式的IEF服务，新增组织时，该字段必填
 
         :param publicips: The publicips of this UpdateInstanceRequestBody.
-        :type: list[IefNodeinfo]
+        :type publicips: list[:class:`huaweicloudsdkbcs.v2.IefNodeinfo`]
         """
         self._publicips = publicips
 
@@ -111,7 +120,7 @@ class UpdateInstanceRequestBody:
         是否是删除组织
 
         :param is_delete_org: The is_delete_org of this UpdateInstanceRequestBody.
-        :type: bool
+        :type is_delete_org: bool
         """
         self._is_delete_org = is_delete_org
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TransportationLicenseResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class TransportationLicenseResult:
     }
 
     def __init__(self, owner_name=None, license_number=None, vehicle_number=None, vehicle_type=None, vehicle_weight=None, vehicle_size=None, issuing_authority=None, issue_date=None, owner_address=None, economic_type=None, business_certificate=None, business_scope=None, confidence=None):
-        """TransportationLicenseResult - a model defined in huaweicloud sdk"""
+        """TransportationLicenseResult
+
+        The model defined in huaweicloud sdk
+
+        :param owner_name: 业户名称。 
+        :type owner_name: str
+        :param license_number: 道路运输证号。 
+        :type license_number: str
+        :param vehicle_number: 车辆号牌。 
+        :type vehicle_number: str
+        :param vehicle_type: 车辆类型。 
+        :type vehicle_type: str
+        :param vehicle_weight: 吨(座)位。 
+        :type vehicle_weight: str
+        :param vehicle_size: 车辆尺寸。 
+        :type vehicle_size: str
+        :param issuing_authority: 核发机关（非必有，依赖对应运输证板式）。 
+        :type issuing_authority: str
+        :param issue_date: 签发日期（非必有，依赖对应运输证板式）。 
+        :type issue_date: str
+        :param owner_address: 业户地址（非必有，依赖对应运输证板式）。 
+        :type owner_address: str
+        :param economic_type: 经济类型（非必有，依赖对应运输证板式）。 
+        :type economic_type: str
+        :param business_certificate: 经营许可证号（非必有，依赖对应运输证板式）。 
+        :type business_certificate: str
+        :param business_scope: 道路普通货物运输（非必有，依赖对应运输证板式）。 
+        :type business_scope: str
+        :param confidence: 相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。 
+        :type confidence: object
+        """
         
         
 
@@ -118,7 +147,7 @@ class TransportationLicenseResult:
         业户名称。 
 
         :param owner_name: The owner_name of this TransportationLicenseResult.
-        :type: str
+        :type owner_name: str
         """
         self._owner_name = owner_name
 
@@ -140,7 +169,7 @@ class TransportationLicenseResult:
         道路运输证号。 
 
         :param license_number: The license_number of this TransportationLicenseResult.
-        :type: str
+        :type license_number: str
         """
         self._license_number = license_number
 
@@ -162,7 +191,7 @@ class TransportationLicenseResult:
         车辆号牌。 
 
         :param vehicle_number: The vehicle_number of this TransportationLicenseResult.
-        :type: str
+        :type vehicle_number: str
         """
         self._vehicle_number = vehicle_number
 
@@ -184,7 +213,7 @@ class TransportationLicenseResult:
         车辆类型。 
 
         :param vehicle_type: The vehicle_type of this TransportationLicenseResult.
-        :type: str
+        :type vehicle_type: str
         """
         self._vehicle_type = vehicle_type
 
@@ -206,7 +235,7 @@ class TransportationLicenseResult:
         吨(座)位。 
 
         :param vehicle_weight: The vehicle_weight of this TransportationLicenseResult.
-        :type: str
+        :type vehicle_weight: str
         """
         self._vehicle_weight = vehicle_weight
 
@@ -228,7 +257,7 @@ class TransportationLicenseResult:
         车辆尺寸。 
 
         :param vehicle_size: The vehicle_size of this TransportationLicenseResult.
-        :type: str
+        :type vehicle_size: str
         """
         self._vehicle_size = vehicle_size
 
@@ -250,7 +279,7 @@ class TransportationLicenseResult:
         核发机关（非必有，依赖对应运输证板式）。 
 
         :param issuing_authority: The issuing_authority of this TransportationLicenseResult.
-        :type: str
+        :type issuing_authority: str
         """
         self._issuing_authority = issuing_authority
 
@@ -272,7 +301,7 @@ class TransportationLicenseResult:
         签发日期（非必有，依赖对应运输证板式）。 
 
         :param issue_date: The issue_date of this TransportationLicenseResult.
-        :type: str
+        :type issue_date: str
         """
         self._issue_date = issue_date
 
@@ -294,7 +323,7 @@ class TransportationLicenseResult:
         业户地址（非必有，依赖对应运输证板式）。 
 
         :param owner_address: The owner_address of this TransportationLicenseResult.
-        :type: str
+        :type owner_address: str
         """
         self._owner_address = owner_address
 
@@ -316,7 +345,7 @@ class TransportationLicenseResult:
         经济类型（非必有，依赖对应运输证板式）。 
 
         :param economic_type: The economic_type of this TransportationLicenseResult.
-        :type: str
+        :type economic_type: str
         """
         self._economic_type = economic_type
 
@@ -338,7 +367,7 @@ class TransportationLicenseResult:
         经营许可证号（非必有，依赖对应运输证板式）。 
 
         :param business_certificate: The business_certificate of this TransportationLicenseResult.
-        :type: str
+        :type business_certificate: str
         """
         self._business_certificate = business_certificate
 
@@ -360,7 +389,7 @@ class TransportationLicenseResult:
         道路普通货物运输（非必有，依赖对应运输证板式）。 
 
         :param business_scope: The business_scope of this TransportationLicenseResult.
-        :type: str
+        :type business_scope: str
         """
         self._business_scope = business_scope
 
@@ -382,7 +411,7 @@ class TransportationLicenseResult:
         相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。 
 
         :param confidence: The confidence of this TransportationLicenseResult.
-        :type: object
+        :type confidence: object
         """
         self._confidence = confidence
 

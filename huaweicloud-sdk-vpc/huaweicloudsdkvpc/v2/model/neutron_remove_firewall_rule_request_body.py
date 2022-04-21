@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NeutronRemoveFirewallRuleRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class NeutronRemoveFirewallRuleRequestBody:
     }
 
     def __init__(self, firewall_rule_id=None):
-        """NeutronRemoveFirewallRuleRequestBody - a model defined in huaweicloud sdk"""
+        """NeutronRemoveFirewallRuleRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param firewall_rule_id: 功能说明：待移除的ACL规则ID
+        :type firewall_rule_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class NeutronRemoveFirewallRuleRequestBody:
         功能说明：待移除的ACL规则ID
 
         :param firewall_rule_id: The firewall_rule_id of this NeutronRemoveFirewallRuleRequestBody.
-        :type: str
+        :type firewall_rule_id: str
         """
         self._firewall_rule_id = firewall_rule_id
 

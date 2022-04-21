@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PublicipUpdateResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -62,7 +61,45 @@ class PublicipUpdateResp:
     }
 
     def __init__(self, bandwidth_id=None, bandwidth_name=None, bandwidth_share_type=None, bandwidth_size=None, create_time=None, enterprise_project_id=None, id=None, port_id=None, private_ip_address=None, profile=None, public_ip_address=None, status=None, tenant_id=None, type=None, public_ipv6_address=None, ip_version=None, alias=None):
-        """PublicipUpdateResp - a model defined in huaweicloud sdk"""
+        """PublicipUpdateResp
+
+        The model defined in huaweicloud sdk
+
+        :param bandwidth_id: 弹性公网IP对应带宽ID
+        :type bandwidth_id: str
+        :param bandwidth_name: 带宽名称
+        :type bandwidth_name: str
+        :param bandwidth_share_type: 表示共享带宽或者独享带宽  取值范围：PER，WHOLE。  WHOLE表示共享带宽  PER表示独享带宽  约束：其中IPv6暂不支持WHOLE类型带宽。
+        :type bandwidth_share_type: str
+        :param bandwidth_size: 带宽大小，单位为Mbit/s。
+        :type bandwidth_size: int
+        :param create_time: 弹性公网IP申请时间（UTC）
+        :type create_time: datetime
+        :param enterprise_project_id: 企业项目ID。最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。  创建弹性公网IP时，给弹性公网IP绑定企业项目ID。
+        :type enterprise_project_id: str
+        :param id: 弹性公网IP唯一标识
+        :type id: str
+        :param port_id: 功能说明：端口id。  约束：只有绑定了的弹性公网IP查询才会返回该参数
+        :type port_id: str
+        :param private_ip_address: 功能说明：绑定弹性公网IP的私有IP地址  约束：只有绑定了的弹性公网IP查询才会返回该参数
+        :type private_ip_address: str
+        :param profile: 
+        :type profile: :class:`huaweicloudsdkeip.v2.ProfileResp`
+        :param public_ip_address: IPv4时是申请到的弹性公网IP地址，IPv6时是IPv6地址对应的IPv4地址
+        :type public_ip_address: str
+        :param status: 功能说明：弹性公网IP的状态  取值范围：冻结FREEZED，绑定失败BIND_ERROR，绑定中BINDING，释放中PENDING_DELETE， 创建中PENDING_CREATE，创建中NOTIFYING，释放中NOTIFY_DELETE，更新中PENDING_UPDATE， 未绑定DOWN ，绑定ACTIVE，绑定ELB，绑定VPN，失败ERROR。
+        :type status: str
+        :param tenant_id: 项目ID
+        :type tenant_id: str
+        :param type: 弹性公网IP的类型
+        :type type: str
+        :param public_ipv6_address: IPv4时无此字段，IPv6时为申请到的弹性公网IP地址
+        :type public_ipv6_address: str
+        :param ip_version: IP版本信息，取值范围是4和6  4：表示IPv4  6：表示IPv6
+        :type ip_version: int
+        :param alias: 功能说明：弹性公网IP名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
+        :type alias: str
+        """
         
         
 
@@ -138,7 +175,7 @@ class PublicipUpdateResp:
         弹性公网IP对应带宽ID
 
         :param bandwidth_id: The bandwidth_id of this PublicipUpdateResp.
-        :type: str
+        :type bandwidth_id: str
         """
         self._bandwidth_id = bandwidth_id
 
@@ -160,7 +197,7 @@ class PublicipUpdateResp:
         带宽名称
 
         :param bandwidth_name: The bandwidth_name of this PublicipUpdateResp.
-        :type: str
+        :type bandwidth_name: str
         """
         self._bandwidth_name = bandwidth_name
 
@@ -182,7 +219,7 @@ class PublicipUpdateResp:
         表示共享带宽或者独享带宽  取值范围：PER，WHOLE。  WHOLE表示共享带宽  PER表示独享带宽  约束：其中IPv6暂不支持WHOLE类型带宽。
 
         :param bandwidth_share_type: The bandwidth_share_type of this PublicipUpdateResp.
-        :type: str
+        :type bandwidth_share_type: str
         """
         self._bandwidth_share_type = bandwidth_share_type
 
@@ -204,7 +241,7 @@ class PublicipUpdateResp:
         带宽大小，单位为Mbit/s。
 
         :param bandwidth_size: The bandwidth_size of this PublicipUpdateResp.
-        :type: int
+        :type bandwidth_size: int
         """
         self._bandwidth_size = bandwidth_size
 
@@ -226,7 +263,7 @@ class PublicipUpdateResp:
         弹性公网IP申请时间（UTC）
 
         :param create_time: The create_time of this PublicipUpdateResp.
-        :type: datetime
+        :type create_time: datetime
         """
         self._create_time = create_time
 
@@ -248,7 +285,7 @@ class PublicipUpdateResp:
         企业项目ID。最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。  创建弹性公网IP时，给弹性公网IP绑定企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this PublicipUpdateResp.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -270,7 +307,7 @@ class PublicipUpdateResp:
         弹性公网IP唯一标识
 
         :param id: The id of this PublicipUpdateResp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -292,7 +329,7 @@ class PublicipUpdateResp:
         功能说明：端口id。  约束：只有绑定了的弹性公网IP查询才会返回该参数
 
         :param port_id: The port_id of this PublicipUpdateResp.
-        :type: str
+        :type port_id: str
         """
         self._port_id = port_id
 
@@ -314,7 +351,7 @@ class PublicipUpdateResp:
         功能说明：绑定弹性公网IP的私有IP地址  约束：只有绑定了的弹性公网IP查询才会返回该参数
 
         :param private_ip_address: The private_ip_address of this PublicipUpdateResp.
-        :type: str
+        :type private_ip_address: str
         """
         self._private_ip_address = private_ip_address
 
@@ -324,7 +361,7 @@ class PublicipUpdateResp:
 
 
         :return: The profile of this PublicipUpdateResp.
-        :rtype: ProfileResp
+        :rtype: :class:`huaweicloudsdkeip.v2.ProfileResp`
         """
         return self._profile
 
@@ -334,7 +371,7 @@ class PublicipUpdateResp:
 
 
         :param profile: The profile of this PublicipUpdateResp.
-        :type: ProfileResp
+        :type profile: :class:`huaweicloudsdkeip.v2.ProfileResp`
         """
         self._profile = profile
 
@@ -356,7 +393,7 @@ class PublicipUpdateResp:
         IPv4时是申请到的弹性公网IP地址，IPv6时是IPv6地址对应的IPv4地址
 
         :param public_ip_address: The public_ip_address of this PublicipUpdateResp.
-        :type: str
+        :type public_ip_address: str
         """
         self._public_ip_address = public_ip_address
 
@@ -378,7 +415,7 @@ class PublicipUpdateResp:
         功能说明：弹性公网IP的状态  取值范围：冻结FREEZED，绑定失败BIND_ERROR，绑定中BINDING，释放中PENDING_DELETE， 创建中PENDING_CREATE，创建中NOTIFYING，释放中NOTIFY_DELETE，更新中PENDING_UPDATE， 未绑定DOWN ，绑定ACTIVE，绑定ELB，绑定VPN，失败ERROR。
 
         :param status: The status of this PublicipUpdateResp.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -400,7 +437,7 @@ class PublicipUpdateResp:
         项目ID
 
         :param tenant_id: The tenant_id of this PublicipUpdateResp.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 
@@ -422,7 +459,7 @@ class PublicipUpdateResp:
         弹性公网IP的类型
 
         :param type: The type of this PublicipUpdateResp.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -444,7 +481,7 @@ class PublicipUpdateResp:
         IPv4时无此字段，IPv6时为申请到的弹性公网IP地址
 
         :param public_ipv6_address: The public_ipv6_address of this PublicipUpdateResp.
-        :type: str
+        :type public_ipv6_address: str
         """
         self._public_ipv6_address = public_ipv6_address
 
@@ -466,7 +503,7 @@ class PublicipUpdateResp:
         IP版本信息，取值范围是4和6  4：表示IPv4  6：表示IPv6
 
         :param ip_version: The ip_version of this PublicipUpdateResp.
-        :type: int
+        :type ip_version: int
         """
         self._ip_version = ip_version
 
@@ -488,7 +525,7 @@ class PublicipUpdateResp:
         功能说明：弹性公网IP名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
         :param alias: The alias of this PublicipUpdateResp.
-        :type: str
+        :type alias: str
         """
         self._alias = alias
 

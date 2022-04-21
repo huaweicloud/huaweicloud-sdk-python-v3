@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class HttpResponseHeader:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class HttpResponseHeader:
     }
 
     def __init__(self, name=None, value=None, action=None):
-        """HttpResponseHeader - a model defined in huaweicloud sdk"""
+        """HttpResponseHeader
+
+        The model defined in huaweicloud sdk
+
+        :param name: 设置HTTP响应头参数。取值：\&quot;Content-Disposition\&quot;, \&quot;Content-Language\&quot;, \&quot;Access-Control-Allow-Origin\&quot;,\&quot;Access-Control-Allow-Methods\&quot;, \&quot;Access-Control-Max-Age\&quot;, \&quot;Access-Control-Expose-Headers\&quot;或自定义头部。格式要求：长度1~100，以字母开头，可以使用字母、数字和短横杠。
+        :type name: str
+        :param value: 设置HTTP响应头参数的值。自定义HTTP响应头参数长度范围1~256，支持字母、数字和特定字符（.-_*#!%&amp;+|^~&#39;\&quot;/:;,&#x3D;@?）。
+        :type value: str
+        :param action: 设置http响应头操作类型，取值“set/delete”。set代表设置，delete代表删除。
+        :type action: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class HttpResponseHeader:
         设置HTTP响应头参数。取值：\"Content-Disposition\", \"Content-Language\", \"Access-Control-Allow-Origin\",\"Access-Control-Allow-Methods\", \"Access-Control-Max-Age\", \"Access-Control-Expose-Headers\"或自定义头部。格式要求：长度1~100，以字母开头，可以使用字母、数字和短横杠。
 
         :param name: The name of this HttpResponseHeader.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -88,7 +97,7 @@ class HttpResponseHeader:
         设置HTTP响应头参数的值。自定义HTTP响应头参数长度范围1~256，支持字母、数字和特定字符（.-_*#!%&+|^~'\"/:;,=@?）。
 
         :param value: The value of this HttpResponseHeader.
-        :type: str
+        :type value: str
         """
         self._value = value
 
@@ -110,7 +119,7 @@ class HttpResponseHeader:
         设置http响应头操作类型，取值“set/delete”。set代表设置，delete代表删除。
 
         :param action: The action of this HttpResponseHeader.
-        :type: str
+        :type action: str
         """
         self._action = action
 

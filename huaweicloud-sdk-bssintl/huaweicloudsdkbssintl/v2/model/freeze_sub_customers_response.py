@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FreezeSubCustomersResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class FreezeSubCustomersResponse(SdkResponse):
     }
 
     def __init__(self, error_details=None):
-        """FreezeSubCustomersResponse - a model defined in huaweicloud sdk"""
+        """FreezeSubCustomersResponse
+
+        The model defined in huaweicloud sdk
+
+        :param error_details: 错误原因，只有部分失败的时候才返回。 具体请参见表1。
+        :type error_details: list[:class:`huaweicloudsdkbssintl.v2.CustomerErrorDetail`]
+        """
         
         super(FreezeSubCustomersResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class FreezeSubCustomersResponse(SdkResponse):
         错误原因，只有部分失败的时候才返回。 具体请参见表1。
 
         :return: The error_details of this FreezeSubCustomersResponse.
-        :rtype: list[CustomerErrorDetail]
+        :rtype: list[:class:`huaweicloudsdkbssintl.v2.CustomerErrorDetail`]
         """
         return self._error_details
 
@@ -58,7 +63,7 @@ class FreezeSubCustomersResponse(SdkResponse):
         错误原因，只有部分失败的时候才返回。 具体请参见表1。
 
         :param error_details: The error_details of this FreezeSubCustomersResponse.
-        :type: list[CustomerErrorDetail]
+        :type error_details: list[:class:`huaweicloudsdkbssintl.v2.CustomerErrorDetail`]
         """
         self._error_details = error_details
 

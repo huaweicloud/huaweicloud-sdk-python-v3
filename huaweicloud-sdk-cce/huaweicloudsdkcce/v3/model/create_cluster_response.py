@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateClusterResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class CreateClusterResponse(SdkResponse):
     }
 
     def __init__(self, kind=None, api_version=None, metadata=None, spec=None, status=None):
-        """CreateClusterResponse - a model defined in huaweicloud sdk"""
+        """CreateClusterResponse
+
+        The model defined in huaweicloud sdk
+
+        :param kind: API类型，固定值“Cluster”或“cluster”，该值不可修改。  
+        :type kind: str
+        :param api_version: API版本，固定值“v3”，该值不可修改。  
+        :type api_version: str
+        :param metadata: 
+        :type metadata: :class:`huaweicloudsdkcce.v3.ClusterMetadata`
+        :param spec: 
+        :type spec: :class:`huaweicloudsdkcce.v3.ClusterSpec`
+        :param status: 
+        :type status: :class:`huaweicloudsdkcce.v3.ClusterStatus`
+        """
         
         super(CreateClusterResponse, self).__init__()
 
@@ -78,7 +91,7 @@ class CreateClusterResponse(SdkResponse):
         API类型，固定值“Cluster”或“cluster”，该值不可修改。  
 
         :param kind: The kind of this CreateClusterResponse.
-        :type: str
+        :type kind: str
         """
         self._kind = kind
 
@@ -100,7 +113,7 @@ class CreateClusterResponse(SdkResponse):
         API版本，固定值“v3”，该值不可修改。  
 
         :param api_version: The api_version of this CreateClusterResponse.
-        :type: str
+        :type api_version: str
         """
         self._api_version = api_version
 
@@ -110,7 +123,7 @@ class CreateClusterResponse(SdkResponse):
 
 
         :return: The metadata of this CreateClusterResponse.
-        :rtype: ClusterMetadata
+        :rtype: :class:`huaweicloudsdkcce.v3.ClusterMetadata`
         """
         return self._metadata
 
@@ -120,7 +133,7 @@ class CreateClusterResponse(SdkResponse):
 
 
         :param metadata: The metadata of this CreateClusterResponse.
-        :type: ClusterMetadata
+        :type metadata: :class:`huaweicloudsdkcce.v3.ClusterMetadata`
         """
         self._metadata = metadata
 
@@ -130,7 +143,7 @@ class CreateClusterResponse(SdkResponse):
 
 
         :return: The spec of this CreateClusterResponse.
-        :rtype: ClusterSpec
+        :rtype: :class:`huaweicloudsdkcce.v3.ClusterSpec`
         """
         return self._spec
 
@@ -140,7 +153,7 @@ class CreateClusterResponse(SdkResponse):
 
 
         :param spec: The spec of this CreateClusterResponse.
-        :type: ClusterSpec
+        :type spec: :class:`huaweicloudsdkcce.v3.ClusterSpec`
         """
         self._spec = spec
 
@@ -150,7 +163,7 @@ class CreateClusterResponse(SdkResponse):
 
 
         :return: The status of this CreateClusterResponse.
-        :rtype: ClusterStatus
+        :rtype: :class:`huaweicloudsdkcce.v3.ClusterStatus`
         """
         return self._status
 
@@ -160,7 +173,7 @@ class CreateClusterResponse(SdkResponse):
 
 
         :param status: The status of this CreateClusterResponse.
-        :type: ClusterStatus
+        :type status: :class:`huaweicloudsdkcce.v3.ClusterStatus`
         """
         self._status = status
 

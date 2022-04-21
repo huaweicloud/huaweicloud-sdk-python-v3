@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListChartsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class ListChartsResponse(SdkResponse):
     }
 
     def __init__(self, id=None, sql=None, title=None, type=None, log_group_id=None, log_group_name=None, log_stream_id=None, log_stream_name=None, config=None):
-        """ListChartsResponse - a model defined in huaweicloud sdk"""
+        """ListChartsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: id
+        :type id: str
+        :param sql: sql语句
+        :type sql: str
+        :param title: 图表名称
+        :type title: str
+        :param type: 图表类型
+        :type type: str
+        :param log_group_id: 日志组id
+        :type log_group_id: str
+        :param log_group_name: 日志组名称
+        :type log_group_name: str
+        :param log_stream_id: 日志组id
+        :type log_stream_id: str
+        :param log_stream_name: 日志流名称
+        :type log_stream_name: str
+        :param config: 图表配置详情
+        :type config: :class:`huaweicloudsdklts.v2.ChartConfig`
+        """
         
         super(ListChartsResponse, self).__init__()
 
@@ -98,7 +119,7 @@ class ListChartsResponse(SdkResponse):
         id
 
         :param id: The id of this ListChartsResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -120,7 +141,7 @@ class ListChartsResponse(SdkResponse):
         sql语句
 
         :param sql: The sql of this ListChartsResponse.
-        :type: str
+        :type sql: str
         """
         self._sql = sql
 
@@ -142,7 +163,7 @@ class ListChartsResponse(SdkResponse):
         图表名称
 
         :param title: The title of this ListChartsResponse.
-        :type: str
+        :type title: str
         """
         self._title = title
 
@@ -164,7 +185,7 @@ class ListChartsResponse(SdkResponse):
         图表类型
 
         :param type: The type of this ListChartsResponse.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -186,7 +207,7 @@ class ListChartsResponse(SdkResponse):
         日志组id
 
         :param log_group_id: The log_group_id of this ListChartsResponse.
-        :type: str
+        :type log_group_id: str
         """
         self._log_group_id = log_group_id
 
@@ -208,7 +229,7 @@ class ListChartsResponse(SdkResponse):
         日志组名称
 
         :param log_group_name: The log_group_name of this ListChartsResponse.
-        :type: str
+        :type log_group_name: str
         """
         self._log_group_name = log_group_name
 
@@ -230,7 +251,7 @@ class ListChartsResponse(SdkResponse):
         日志组id
 
         :param log_stream_id: The log_stream_id of this ListChartsResponse.
-        :type: str
+        :type log_stream_id: str
         """
         self._log_stream_id = log_stream_id
 
@@ -252,7 +273,7 @@ class ListChartsResponse(SdkResponse):
         日志流名称
 
         :param log_stream_name: The log_stream_name of this ListChartsResponse.
-        :type: str
+        :type log_stream_name: str
         """
         self._log_stream_name = log_stream_name
 
@@ -263,7 +284,7 @@ class ListChartsResponse(SdkResponse):
         图表配置详情
 
         :return: The config of this ListChartsResponse.
-        :rtype: ChartConfig
+        :rtype: :class:`huaweicloudsdklts.v2.ChartConfig`
         """
         return self._config
 
@@ -274,7 +295,7 @@ class ListChartsResponse(SdkResponse):
         图表配置详情
 
         :param config: The config of this ListChartsResponse.
-        :type: ChartConfig
+        :type config: :class:`huaweicloudsdklts.v2.ChartConfig`
         """
         self._config = config
 

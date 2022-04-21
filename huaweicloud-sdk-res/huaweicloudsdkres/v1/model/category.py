@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Category:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Category:
     }
 
     def __init__(self, user_meta_list=None, item_meta_list=None):
-        """Category - a model defined in huaweicloud sdk"""
+        """Category
+
+        The model defined in huaweicloud sdk
+
+        :param user_meta_list: 用户特征。
+        :type user_meta_list: list[str]
+        :param item_meta_list: 物品特征。
+        :type item_meta_list: list[str]
+        """
         
         
 
@@ -63,7 +70,7 @@ class Category:
         用户特征。
 
         :param user_meta_list: The user_meta_list of this Category.
-        :type: list[str]
+        :type user_meta_list: list[str]
         """
         self._user_meta_list = user_meta_list
 
@@ -85,7 +92,7 @@ class Category:
         物品特征。
 
         :param item_meta_list: The item_meta_list of this Category.
-        :type: list[str]
+        :type item_meta_list: list[str]
         """
         self._item_meta_list = item_meta_list
 

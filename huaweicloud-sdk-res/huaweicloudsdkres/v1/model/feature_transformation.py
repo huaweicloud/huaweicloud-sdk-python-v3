@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FeatureTransformation:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class FeatureTransformation:
     }
 
     def __init__(self, attr=None, discrete_method=None, params=None):
-        """FeatureTransformation - a model defined in huaweicloud sdk"""
+        """FeatureTransformation
+
+        The model defined in huaweicloud sdk
+
+        :param attr: 
+        :type attr: :class:`huaweicloudsdkres.v1.Attribute`
+        :param discrete_method: 离散方法： - equal_distance_discrete，等距离散 - user_define_discrete，自定义离散 - normalize，归一化 - null，不离散 
+        :type discrete_method: str
+        :param params: 具体处理参数。
+        :type params: object
+        """
         
         
 
@@ -56,7 +65,7 @@ class FeatureTransformation:
 
 
         :return: The attr of this FeatureTransformation.
-        :rtype: Attribute
+        :rtype: :class:`huaweicloudsdkres.v1.Attribute`
         """
         return self._attr
 
@@ -66,7 +75,7 @@ class FeatureTransformation:
 
 
         :param attr: The attr of this FeatureTransformation.
-        :type: Attribute
+        :type attr: :class:`huaweicloudsdkres.v1.Attribute`
         """
         self._attr = attr
 
@@ -88,7 +97,7 @@ class FeatureTransformation:
         离散方法： - equal_distance_discrete，等距离散 - user_define_discrete，自定义离散 - normalize，归一化 - null，不离散 
 
         :param discrete_method: The discrete_method of this FeatureTransformation.
-        :type: str
+        :type discrete_method: str
         """
         self._discrete_method = discrete_method
 
@@ -110,7 +119,7 @@ class FeatureTransformation:
         具体处理参数。
 
         :param params: The params of this FeatureTransformation.
-        :type: object
+        :type params: object
         """
         self._params = params
 

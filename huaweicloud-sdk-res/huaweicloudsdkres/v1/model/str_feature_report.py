@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StrFeatureReport:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class StrFeatureReport:
     }
 
     def __init__(self, name=None, data_type=None, str_count=None):
-        """StrFeatureReport - a model defined in huaweicloud sdk"""
+        """StrFeatureReport
+
+        The model defined in huaweicloud sdk
+
+        :param name: 特征名。
+        :type name: str
+        :param data_type: 特征类型。
+        :type data_type: str
+        :param str_count: 离散类型特征出现次数统计。
+        :type str_count: dict(str, int)
+        """
         
         
 
@@ -68,7 +77,7 @@ class StrFeatureReport:
         特征名。
 
         :param name: The name of this StrFeatureReport.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -90,7 +99,7 @@ class StrFeatureReport:
         特征类型。
 
         :param data_type: The data_type of this StrFeatureReport.
-        :type: str
+        :type data_type: str
         """
         self._data_type = data_type
 
@@ -112,7 +121,7 @@ class StrFeatureReport:
         离散类型特征出现次数统计。
 
         :param str_count: The str_count of this StrFeatureReport.
-        :type: dict(str, int)
+        :type str_count: dict(str, int)
         """
         self._str_count = str_count
 

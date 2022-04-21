@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListMaintenanceWindowsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListMaintenanceWindowsResponse(SdkResponse):
     }
 
     def __init__(self, maintain_windows=None):
-        """ListMaintenanceWindowsResponse - a model defined in huaweicloud sdk"""
+        """ListMaintenanceWindowsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param maintain_windows: 支持的维护时间窗列表。
+        :type maintain_windows: list[:class:`huaweicloudsdkdcs.v2.MaintainWindowsEntity`]
+        """
         
         super(ListMaintenanceWindowsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListMaintenanceWindowsResponse(SdkResponse):
         支持的维护时间窗列表。
 
         :return: The maintain_windows of this ListMaintenanceWindowsResponse.
-        :rtype: list[MaintainWindowsEntity]
+        :rtype: list[:class:`huaweicloudsdkdcs.v2.MaintainWindowsEntity`]
         """
         return self._maintain_windows
 
@@ -58,7 +63,7 @@ class ListMaintenanceWindowsResponse(SdkResponse):
         支持的维护时间窗列表。
 
         :param maintain_windows: The maintain_windows of this ListMaintenanceWindowsResponse.
-        :type: list[MaintainWindowsEntity]
+        :type maintain_windows: list[:class:`huaweicloudsdkdcs.v2.MaintainWindowsEntity`]
         """
         self._maintain_windows = maintain_windows
 

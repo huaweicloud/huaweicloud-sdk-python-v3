@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateTransTemplateResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateTransTemplateResponse(SdkResponse):
     }
 
     def __init__(self, template_id=None):
-        """CreateTransTemplateResponse - a model defined in huaweicloud sdk"""
+        """CreateTransTemplateResponse
+
+        The model defined in huaweicloud sdk
+
+        :param template_id: 自定义转码模板编号。 
+        :type template_id: int
+        """
         
         super(CreateTransTemplateResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class CreateTransTemplateResponse(SdkResponse):
         自定义转码模板编号。 
 
         :param template_id: The template_id of this CreateTransTemplateResponse.
-        :type: int
+        :type template_id: int
         """
         self._template_id = template_id
 

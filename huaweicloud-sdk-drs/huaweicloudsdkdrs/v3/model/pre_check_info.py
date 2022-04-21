@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PreCheckInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class PreCheckInfo:
     }
 
     def __init__(self, job_id=None, precheck_mode=None):
-        """PreCheckInfo - a model defined in huaweicloud sdk"""
+        """PreCheckInfo
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 任务id
+        :type job_id: str
+        :param precheck_mode: 预检查模式
+        :type precheck_mode: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class PreCheckInfo:
         任务id
 
         :param job_id: The job_id of this PreCheckInfo.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -83,7 +90,7 @@ class PreCheckInfo:
         预检查模式
 
         :param precheck_mode: The precheck_mode of this PreCheckInfo.
-        :type: str
+        :type precheck_mode: str
         """
         self._precheck_mode = precheck_mode
 

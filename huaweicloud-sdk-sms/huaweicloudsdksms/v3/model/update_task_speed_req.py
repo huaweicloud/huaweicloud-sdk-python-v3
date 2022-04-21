@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateTaskSpeedReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class UpdateTaskSpeedReq:
     }
 
     def __init__(self, subtask_name=None, progress=None, replicatesize=None, totalsize=None, process_trace=None, migrate_speed=None, compress_rate=None):
-        """UpdateTaskSpeedReq - a model defined in huaweicloud sdk"""
+        """UpdateTaskSpeedReq
+
+        The model defined in huaweicloud sdk
+
+        :param subtask_name: 当前上报进度的子任务名称，子任务名称包括： 创建虚拟机 CREATE_CLOUD_SERVER 配置安全通道 SSL_CONFIG 挂载代理镜像 ATTACH_AGENT_IMAGE 卸载载代理镜像 DETTACH_AGENT_IMAGE Linux分区格式化 FORMAT_DISK_LINUX Linux分区格式化(文件级级） FORMAT_DISK_LINUX_FILE Linux分区格式化(块级） FORMAT_DISK_LINUX_BLOCK Windows分区格式化 FORMAT_DISK_WINDOWS Linux文件级数据迁移 MIGRATE_LINUX_FILE, Linux块级数据迁移 MIGRATE_LINUX_BLOCK Windows块级数据迁移 MIGRATE_WINDOWS_BLOCK 克隆一个虚拟机 CLONE_VM Linux文件级数据同步 SYNC_LINUX_FILE Linux块级数据同步 SYNC_LINUX_BLOCK Windows块级数据同步 SYNC_WINDOWS_BLOCK Linux配置修改 CONFIGURE_LINUX Linux配置修改(块级）CONFIGURE_LINUX_BLOCK Linux配置修改（文件级） CONFIGURE_LINUX_FILE Windows配置修改 CONFIGURE_WINDOWS
+        :type subtask_name: str
+        :param progress: 当前上报的子任务的最新百分比进度
+        :type progress: int
+        :param replicatesize: 当前任务已经复制的数据量大小（B）
+        :type replicatesize: int
+        :param totalsize: 当前任务的总迁移数据大小
+        :type totalsize: int
+        :param process_trace: 迁移或同步时，具体的迁移详情
+        :type process_trace: str
+        :param migrate_speed: 实施迁移速率，单位Mb/s
+        :type migrate_speed: float
+        :param compress_rate: 实施文件压缩率
+        :type compress_rate: float
+        """
         
         
 
@@ -83,7 +100,7 @@ class UpdateTaskSpeedReq:
         当前上报进度的子任务名称，子任务名称包括： 创建虚拟机 CREATE_CLOUD_SERVER 配置安全通道 SSL_CONFIG 挂载代理镜像 ATTACH_AGENT_IMAGE 卸载载代理镜像 DETTACH_AGENT_IMAGE Linux分区格式化 FORMAT_DISK_LINUX Linux分区格式化(文件级级） FORMAT_DISK_LINUX_FILE Linux分区格式化(块级） FORMAT_DISK_LINUX_BLOCK Windows分区格式化 FORMAT_DISK_WINDOWS Linux文件级数据迁移 MIGRATE_LINUX_FILE, Linux块级数据迁移 MIGRATE_LINUX_BLOCK Windows块级数据迁移 MIGRATE_WINDOWS_BLOCK 克隆一个虚拟机 CLONE_VM Linux文件级数据同步 SYNC_LINUX_FILE Linux块级数据同步 SYNC_LINUX_BLOCK Windows块级数据同步 SYNC_WINDOWS_BLOCK Linux配置修改 CONFIGURE_LINUX Linux配置修改(块级）CONFIGURE_LINUX_BLOCK Linux配置修改（文件级） CONFIGURE_LINUX_FILE Windows配置修改 CONFIGURE_WINDOWS
 
         :param subtask_name: The subtask_name of this UpdateTaskSpeedReq.
-        :type: str
+        :type subtask_name: str
         """
         self._subtask_name = subtask_name
 
@@ -105,7 +122,7 @@ class UpdateTaskSpeedReq:
         当前上报的子任务的最新百分比进度
 
         :param progress: The progress of this UpdateTaskSpeedReq.
-        :type: int
+        :type progress: int
         """
         self._progress = progress
 
@@ -127,7 +144,7 @@ class UpdateTaskSpeedReq:
         当前任务已经复制的数据量大小（B）
 
         :param replicatesize: The replicatesize of this UpdateTaskSpeedReq.
-        :type: int
+        :type replicatesize: int
         """
         self._replicatesize = replicatesize
 
@@ -149,7 +166,7 @@ class UpdateTaskSpeedReq:
         当前任务的总迁移数据大小
 
         :param totalsize: The totalsize of this UpdateTaskSpeedReq.
-        :type: int
+        :type totalsize: int
         """
         self._totalsize = totalsize
 
@@ -171,7 +188,7 @@ class UpdateTaskSpeedReq:
         迁移或同步时，具体的迁移详情
 
         :param process_trace: The process_trace of this UpdateTaskSpeedReq.
-        :type: str
+        :type process_trace: str
         """
         self._process_trace = process_trace
 
@@ -193,7 +210,7 @@ class UpdateTaskSpeedReq:
         实施迁移速率，单位Mb/s
 
         :param migrate_speed: The migrate_speed of this UpdateTaskSpeedReq.
-        :type: float
+        :type migrate_speed: float
         """
         self._migrate_speed = migrate_speed
 
@@ -215,7 +232,7 @@ class UpdateTaskSpeedReq:
         实施文件压缩率
 
         :param compress_rate: The compress_rate of this UpdateTaskSpeedReq.
-        :type: float
+        :type compress_rate: float
         """
         self._compress_rate = compress_rate
 

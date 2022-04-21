@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowVpcPeeringRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowVpcPeeringRequest:
     }
 
     def __init__(self, peering_id=None):
-        """ShowVpcPeeringRequest - a model defined in huaweicloud sdk"""
+        """ShowVpcPeeringRequest
+
+        The model defined in huaweicloud sdk
+
+        :param peering_id: 对等连接ID
+        :type peering_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowVpcPeeringRequest:
         对等连接ID
 
         :param peering_id: The peering_id of this ShowVpcPeeringRequest.
-        :type: str
+        :type peering_id: str
         """
         self._peering_id = peering_id
 

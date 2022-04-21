@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteConfRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteConfRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """DeleteConfRequest - a model defined in huaweicloud sdk"""
+        """DeleteConfRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 指定待删除的集群ID。
+        :type cluster_id: str
+        :param body: Body of the DeleteConfRequest
+        :type body: :class:`huaweicloudsdkcss.v1.DeleteConfReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class DeleteConfRequest:
         指定待删除的集群ID。
 
         :param cluster_id: The cluster_id of this DeleteConfRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -72,7 +79,7 @@ class DeleteConfRequest:
 
 
         :return: The body of this DeleteConfRequest.
-        :rtype: DeleteConfReq
+        :rtype: :class:`huaweicloudsdkcss.v1.DeleteConfReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class DeleteConfRequest:
 
 
         :param body: The body of this DeleteConfRequest.
-        :type: DeleteConfReq
+        :type body: :class:`huaweicloudsdkcss.v1.DeleteConfReq`
         """
         self._body = body
 

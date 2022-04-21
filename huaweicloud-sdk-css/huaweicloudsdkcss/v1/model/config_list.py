@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ConfigList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ConfigList:
     }
 
     def __init__(self, id=None, cluster_id=None, create_at=None, status=None, finished_at=None, modify_delete_reset=None, failed_msg=None):
-        """ConfigList - a model defined in huaweicloud sdk"""
+        """ConfigList
+
+        The model defined in huaweicloud sdk
+
+        :param id: 操作ID
+        :type id: str
+        :param cluster_id: 集群ID。
+        :type cluster_id: str
+        :param create_at: 创建时间。
+        :type create_at: object
+        :param status: 状态。
+        :type status: str
+        :param finished_at: 结束时间。
+        :type finished_at: object
+        :param modify_delete_reset: 修改参数配置记录。
+        :type modify_delete_reset: str
+        :param failed_msg: 返回错误信息。
+        :type failed_msg: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class ConfigList:
         操作ID
 
         :param id: The id of this ConfigList.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -110,7 +127,7 @@ class ConfigList:
         集群ID。
 
         :param cluster_id: The cluster_id of this ConfigList.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -132,7 +149,7 @@ class ConfigList:
         创建时间。
 
         :param create_at: The create_at of this ConfigList.
-        :type: object
+        :type create_at: object
         """
         self._create_at = create_at
 
@@ -154,7 +171,7 @@ class ConfigList:
         状态。
 
         :param status: The status of this ConfigList.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -176,7 +193,7 @@ class ConfigList:
         结束时间。
 
         :param finished_at: The finished_at of this ConfigList.
-        :type: object
+        :type finished_at: object
         """
         self._finished_at = finished_at
 
@@ -198,7 +215,7 @@ class ConfigList:
         修改参数配置记录。
 
         :param modify_delete_reset: The modify_delete_reset of this ConfigList.
-        :type: str
+        :type modify_delete_reset: str
         """
         self._modify_delete_reset = modify_delete_reset
 
@@ -220,7 +237,7 @@ class ConfigList:
         返回错误信息。
 
         :param failed_msg: The failed_msg of this ConfigList.
-        :type: str
+        :type failed_msg: str
         """
         self._failed_msg = failed_msg
 

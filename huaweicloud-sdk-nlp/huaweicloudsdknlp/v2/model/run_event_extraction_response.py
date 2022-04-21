@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunEventExtractionResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class RunEventExtractionResponse(SdkResponse):
     }
 
     def __init__(self, events=None, error_code=None, error_msg=None):
-        """RunEventExtractionResponse - a model defined in huaweicloud sdk"""
+        """RunEventExtractionResponse
+
+        The model defined in huaweicloud sdk
+
+        :param events: 事件抽取结果。调用失败时无此字段。
+        :type events: list[:class:`huaweicloudsdknlp.v2.EventExtractionResponseItem`]
+        :param error_code: 调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
+        :type error_code: str
+        :param error_msg: 调用失败时的错误信息。调用成功时无此字段。
+        :type error_msg: str
+        """
         
         super(RunEventExtractionResponse, self).__init__()
 
@@ -57,7 +66,7 @@ class RunEventExtractionResponse(SdkResponse):
         事件抽取结果。调用失败时无此字段。
 
         :return: The events of this RunEventExtractionResponse.
-        :rtype: list[EventExtractionResponseItem]
+        :rtype: list[:class:`huaweicloudsdknlp.v2.EventExtractionResponseItem`]
         """
         return self._events
 
@@ -68,7 +77,7 @@ class RunEventExtractionResponse(SdkResponse):
         事件抽取结果。调用失败时无此字段。
 
         :param events: The events of this RunEventExtractionResponse.
-        :type: list[EventExtractionResponseItem]
+        :type events: list[:class:`huaweicloudsdknlp.v2.EventExtractionResponseItem`]
         """
         self._events = events
 
@@ -90,7 +99,7 @@ class RunEventExtractionResponse(SdkResponse):
         调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
 
         :param error_code: The error_code of this RunEventExtractionResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -112,7 +121,7 @@ class RunEventExtractionResponse(SdkResponse):
         调用失败时的错误信息。调用成功时无此字段。
 
         :param error_msg: The error_msg of this RunEventExtractionResponse.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 

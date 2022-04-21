@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDedicatedResourceResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ListDedicatedResourceResult:
     }
 
     def __init__(self, id=None, resource_name=None, engine_name=None, availability_zone=None, architecture=None, capacity=None, status=None):
-        """ListDedicatedResourceResult - a model defined in huaweicloud sdk"""
+        """ListDedicatedResourceResult
+
+        The model defined in huaweicloud sdk
+
+        :param id: 专属资源ID。
+        :type id: str
+        :param resource_name: 专属资源的名称。
+        :type resource_name: str
+        :param engine_name: 引擎名称。
+        :type engine_name: str
+        :param availability_zone: 可用区信息。
+        :type availability_zone: str
+        :param architecture: 专属资源的计算架构。
+        :type architecture: str
+        :param capacity: 
+        :type capacity: :class:`huaweicloudsdkgaussdbfornosql.v3.DedicatedResourceCapacity`
+        :param status: 专属资源的状态信息。
+        :type status: str
+        """
         
         
 
@@ -81,7 +98,7 @@ class ListDedicatedResourceResult:
         专属资源ID。
 
         :param id: The id of this ListDedicatedResourceResult.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -103,7 +120,7 @@ class ListDedicatedResourceResult:
         专属资源的名称。
 
         :param resource_name: The resource_name of this ListDedicatedResourceResult.
-        :type: str
+        :type resource_name: str
         """
         self._resource_name = resource_name
 
@@ -125,7 +142,7 @@ class ListDedicatedResourceResult:
         引擎名称。
 
         :param engine_name: The engine_name of this ListDedicatedResourceResult.
-        :type: str
+        :type engine_name: str
         """
         self._engine_name = engine_name
 
@@ -147,7 +164,7 @@ class ListDedicatedResourceResult:
         可用区信息。
 
         :param availability_zone: The availability_zone of this ListDedicatedResourceResult.
-        :type: str
+        :type availability_zone: str
         """
         self._availability_zone = availability_zone
 
@@ -169,7 +186,7 @@ class ListDedicatedResourceResult:
         专属资源的计算架构。
 
         :param architecture: The architecture of this ListDedicatedResourceResult.
-        :type: str
+        :type architecture: str
         """
         self._architecture = architecture
 
@@ -179,7 +196,7 @@ class ListDedicatedResourceResult:
 
 
         :return: The capacity of this ListDedicatedResourceResult.
-        :rtype: DedicatedResourceCapacity
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.DedicatedResourceCapacity`
         """
         return self._capacity
 
@@ -189,7 +206,7 @@ class ListDedicatedResourceResult:
 
 
         :param capacity: The capacity of this ListDedicatedResourceResult.
-        :type: DedicatedResourceCapacity
+        :type capacity: :class:`huaweicloudsdkgaussdbfornosql.v3.DedicatedResourceCapacity`
         """
         self._capacity = capacity
 
@@ -211,7 +228,7 @@ class ListDedicatedResourceResult:
         专属资源的状态信息。
 
         :param status: The status of this ListDedicatedResourceResult.
-        :type: str
+        :type status: str
         """
         self._status = status
 

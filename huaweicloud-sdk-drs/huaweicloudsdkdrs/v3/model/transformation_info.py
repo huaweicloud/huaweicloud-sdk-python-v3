@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TransformationInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class TransformationInfo:
     }
 
     def __init__(self, transformation_type=None, value=None):
-        """TransformationInfo - a model defined in huaweicloud sdk"""
+        """TransformationInfo
+
+        The model defined in huaweicloud sdk
+
+        :param transformation_type: - 生成加工规则值为contentConditionalFilter - 生成配置规则值为configConditionalFilter
+        :type transformation_type: str
+        :param value: 过滤条件，生成加工规则值为sql条件语句，生成配置规则值为config。长度限制256。
+        :type value: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class TransformationInfo:
         - 生成加工规则值为contentConditionalFilter - 生成配置规则值为configConditionalFilter
 
         :param transformation_type: The transformation_type of this TransformationInfo.
-        :type: str
+        :type transformation_type: str
         """
         self._transformation_type = transformation_type
 
@@ -83,7 +90,7 @@ class TransformationInfo:
         过滤条件，生成加工规则值为sql条件语句，生成配置规则值为config。长度限制256。
 
         :param value: The value of this TransformationInfo.
-        :type: str
+        :type value: str
         """
         self._value = value
 

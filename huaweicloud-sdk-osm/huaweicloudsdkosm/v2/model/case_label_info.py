@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CaseLabelInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CaseLabelInfo:
     }
 
     def __init__(self, label_id=None, name=None, color=None):
-        """CaseLabelInfo - a model defined in huaweicloud sdk"""
+        """CaseLabelInfo
+
+        The model defined in huaweicloud sdk
+
+        :param label_id: 标签标识
+        :type label_id: int
+        :param name: 标签名称
+        :type name: str
+        :param color: 标签颜色
+        :type color: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class CaseLabelInfo:
         标签标识
 
         :param label_id: The label_id of this CaseLabelInfo.
-        :type: int
+        :type label_id: int
         """
         self._label_id = label_id
 
@@ -90,7 +99,7 @@ class CaseLabelInfo:
         标签名称
 
         :param name: The name of this CaseLabelInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -112,7 +121,7 @@ class CaseLabelInfo:
         标签颜色
 
         :param color: The color of this CaseLabelInfo.
-        :type: str
+        :type color: str
         """
         self._color = color
 

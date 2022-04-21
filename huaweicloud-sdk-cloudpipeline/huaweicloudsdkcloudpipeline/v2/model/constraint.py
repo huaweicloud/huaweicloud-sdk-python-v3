@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Constraint:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class Constraint:
     }
 
     def __init__(self, type=None, value=None, errormsg=None):
-        """Constraint - a model defined in huaweicloud sdk"""
+        """Constraint
+
+        The model defined in huaweicloud sdk
+
+        :param type: 校验规则类型
+        :type type: str
+        :param value: 校验规则
+        :type value: str
+        :param errormsg: 校验失败描述
+        :type errormsg: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class Constraint:
         校验规则类型
 
         :param type: The type of this Constraint.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -87,7 +96,7 @@ class Constraint:
         校验规则
 
         :param value: The value of this Constraint.
-        :type: str
+        :type value: str
         """
         self._value = value
 
@@ -109,7 +118,7 @@ class Constraint:
         校验失败描述
 
         :param errormsg: The errormsg of this Constraint.
-        :type: str
+        :type errormsg: str
         """
         self._errormsg = errormsg
 

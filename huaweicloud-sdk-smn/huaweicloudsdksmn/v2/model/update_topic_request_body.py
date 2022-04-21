@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateTopicRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateTopicRequestBody:
     }
 
     def __init__(self, display_name=None):
-        """UpdateTopicRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateTopicRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param display_name: Topic的显示名，推送邮件消息时，作为邮件发件人显示。显示名的长度为192byte或64个中文。
+        :type display_name: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class UpdateTopicRequestBody:
         Topic的显示名，推送邮件消息时，作为邮件发件人显示。显示名的长度为192byte或64个中文。
 
         :param display_name: The display_name of this UpdateTopicRequestBody.
-        :type: str
+        :type display_name: str
         """
         self._display_name = display_name
 

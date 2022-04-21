@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateServiceRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class CreateServiceRequestBody:
     }
 
     def __init__(self, product_template_id=None, product_id=None, service_name=None, description=None, status=None):
-        """CreateServiceRequestBody - a model defined in huaweicloud sdk"""
+        """CreateServiceRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param product_template_id: 服务归属的产品模板ID，产品模板ID和产品ID二选一必填，自动向下取整
+        :type product_template_id: int
+        :param product_id: 服务归属的产品ID，产品模板ID和产品ID二选一必填，自动向下取整
+        :type product_id: int
+        :param service_name: 服务名称，支持中文,英文大小写，数字，下划线和中划线,长度2-64
+        :type service_name: str
+        :param description: 服务描述，长度0-200
+        :type description: str
+        :param status: 服务状态 0-启用 1-停用
+        :type status: int
+        """
         
         
 
@@ -76,7 +89,7 @@ class CreateServiceRequestBody:
         服务归属的产品模板ID，产品模板ID和产品ID二选一必填，自动向下取整
 
         :param product_template_id: The product_template_id of this CreateServiceRequestBody.
-        :type: int
+        :type product_template_id: int
         """
         self._product_template_id = product_template_id
 
@@ -98,7 +111,7 @@ class CreateServiceRequestBody:
         服务归属的产品ID，产品模板ID和产品ID二选一必填，自动向下取整
 
         :param product_id: The product_id of this CreateServiceRequestBody.
-        :type: int
+        :type product_id: int
         """
         self._product_id = product_id
 
@@ -120,7 +133,7 @@ class CreateServiceRequestBody:
         服务名称，支持中文,英文大小写，数字，下划线和中划线,长度2-64
 
         :param service_name: The service_name of this CreateServiceRequestBody.
-        :type: str
+        :type service_name: str
         """
         self._service_name = service_name
 
@@ -142,7 +155,7 @@ class CreateServiceRequestBody:
         服务描述，长度0-200
 
         :param description: The description of this CreateServiceRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -164,7 +177,7 @@ class CreateServiceRequestBody:
         服务状态 0-启用 1-停用
 
         :param status: The status of this CreateServiceRequestBody.
-        :type: int
+        :type status: int
         """
         self._status = status
 

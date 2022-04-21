@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BaseUser:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class BaseUser:
     }
 
     def __init__(self, name=None, contact=None, country=None, dept_code=None, title=None, sort_level=None, desc=None):
-        """BaseUser - a model defined in huaweicloud sdk"""
+        """BaseUser
+
+        The model defined in huaweicloud sdk
+
+        :param name: 用户名称
+        :type name: str
+        :param contact: 后台自动识别是手机还是邮箱,若为手机号，则要求和国家码匹配
+        :type contact: str
+        :param country: 国家码。 国家和国家码的对应关系请参考:https://support.huaweicloud.com/api-meeting/meeting_21_0109.html 
+        :type country: str
+        :param dept_code: 部门编号，若不携带则默认根部门
+        :type dept_code: str
+        :param title: 职位
+        :type title: str
+        :param sort_level: 通讯录排序等级，序号越低优先级越高
+        :type sort_level: int
+        :param desc: 备注
+        :type desc: str
+        """
         
         
 
@@ -86,7 +103,7 @@ class BaseUser:
         用户名称
 
         :param name: The name of this BaseUser.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -108,7 +125,7 @@ class BaseUser:
         后台自动识别是手机还是邮箱,若为手机号，则要求和国家码匹配
 
         :param contact: The contact of this BaseUser.
-        :type: str
+        :type contact: str
         """
         self._contact = contact
 
@@ -130,7 +147,7 @@ class BaseUser:
         国家码。 国家和国家码的对应关系请参考:https://support.huaweicloud.com/api-meeting/meeting_21_0109.html 
 
         :param country: The country of this BaseUser.
-        :type: str
+        :type country: str
         """
         self._country = country
 
@@ -152,7 +169,7 @@ class BaseUser:
         部门编号，若不携带则默认根部门
 
         :param dept_code: The dept_code of this BaseUser.
-        :type: str
+        :type dept_code: str
         """
         self._dept_code = dept_code
 
@@ -174,7 +191,7 @@ class BaseUser:
         职位
 
         :param title: The title of this BaseUser.
-        :type: str
+        :type title: str
         """
         self._title = title
 
@@ -196,7 +213,7 @@ class BaseUser:
         通讯录排序等级，序号越低优先级越高
 
         :param sort_level: The sort_level of this BaseUser.
-        :type: int
+        :type sort_level: int
         """
         self._sort_level = sort_level
 
@@ -218,7 +235,7 @@ class BaseUser:
         备注
 
         :param desc: The desc of this BaseUser.
-        :type: str
+        :type desc: str
         """
         self._desc = desc
 

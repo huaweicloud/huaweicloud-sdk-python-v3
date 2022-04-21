@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AgencyAssumedbyUser:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class AgencyAssumedbyUser:
     }
 
     def __init__(self, name=None, id=None, domain=None, password_expires_at=None):
-        """AgencyAssumedbyUser - a model defined in huaweicloud sdk"""
+        """AgencyAssumedbyUser
+
+        The model defined in huaweicloud sdk
+
+        :param name: 被委托方B中IAM用户的用户名。
+        :type name: str
+        :param id: 被委托方B中IAM用户的用户ID。
+        :type id: str
+        :param domain: 
+        :type domain: :class:`huaweicloudsdkiam.v3.AgencyAssumedbyUserDomain`
+        :param password_expires_at: 被委托方B中IAM用户的密码过期时间（UTC时间），“”表示密码不过期。
+        :type password_expires_at: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class AgencyAssumedbyUser:
         被委托方B中IAM用户的用户名。
 
         :param name: The name of this AgencyAssumedbyUser.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -91,7 +102,7 @@ class AgencyAssumedbyUser:
         被委托方B中IAM用户的用户ID。
 
         :param id: The id of this AgencyAssumedbyUser.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -101,7 +112,7 @@ class AgencyAssumedbyUser:
 
 
         :return: The domain of this AgencyAssumedbyUser.
-        :rtype: AgencyAssumedbyUserDomain
+        :rtype: :class:`huaweicloudsdkiam.v3.AgencyAssumedbyUserDomain`
         """
         return self._domain
 
@@ -111,7 +122,7 @@ class AgencyAssumedbyUser:
 
 
         :param domain: The domain of this AgencyAssumedbyUser.
-        :type: AgencyAssumedbyUserDomain
+        :type domain: :class:`huaweicloudsdkiam.v3.AgencyAssumedbyUserDomain`
         """
         self._domain = domain
 
@@ -133,7 +144,7 @@ class AgencyAssumedbyUser:
         被委托方B中IAM用户的密码过期时间（UTC时间），“”表示密码不过期。
 
         :param password_expires_at: The password_expires_at of this AgencyAssumedbyUser.
-        :type: str
+        :type password_expires_at: str
         """
         self._password_expires_at = password_expires_at
 

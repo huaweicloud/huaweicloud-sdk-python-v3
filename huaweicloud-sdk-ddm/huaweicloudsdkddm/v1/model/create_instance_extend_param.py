@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateInstanceExtendParam:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class CreateInstanceExtendParam:
     }
 
     def __init__(self, charge_mode=None, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None):
-        """CreateInstanceExtendParam - a model defined in huaweicloud sdk"""
+        """CreateInstanceExtendParam
+
+        The model defined in huaweicloud sdk
+
+        :param charge_mode: 计费模式，取值范围： - prePaid：预付费，即包年/包月。 - postPaid：后付费，即按需付费。 默认值为postPaid。
+        :type charge_mode: str
+        :param period_type: 订购周期类型，取值范围： - month：月。 - year：年。 “charge_mode”参数配置为“prePaid”时该参数有效且为必选值。
+        :type period_type: str
+        :param period_num: 订购周期数，取值范围： - period_type&#x3D;month（周期类型为月）时，取值为[1，9]。 - period_type&#x3D;year（周期类型为年）时，取值为1。 “charge_mode”参数配置为“prePaid”时该参数有效且为必选值。
+        :type period_num: int
+        :param is_auto_renew: 是否自动续订，取值范围： - “true”：自动续订。 - “false”：不自动续订。 “charge_mode”参数配置为“prePaid”时该参数有效，不传该字段时默认为不自动续订。\&quot;
+        :type is_auto_renew: str
+        :param is_auto_pay: 下单订购后，是否自动从客户的账户的余额中支付，取值范围： - “true”：是（自动从客户账户的余额中支付）。 - “false”：否（需要客户手动支付）。 “charge_mode”参数配置为“prePaid”时该参数有效，不传该字段时默认为客户手动支付。\&quot;
+        :type is_auto_pay: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class CreateInstanceExtendParam:
         计费模式，取值范围： - prePaid：预付费，即包年/包月。 - postPaid：后付费，即按需付费。 默认值为postPaid。
 
         :param charge_mode: The charge_mode of this CreateInstanceExtendParam.
-        :type: str
+        :type charge_mode: str
         """
         self._charge_mode = charge_mode
 
@@ -100,7 +113,7 @@ class CreateInstanceExtendParam:
         订购周期类型，取值范围： - month：月。 - year：年。 “charge_mode”参数配置为“prePaid”时该参数有效且为必选值。
 
         :param period_type: The period_type of this CreateInstanceExtendParam.
-        :type: str
+        :type period_type: str
         """
         self._period_type = period_type
 
@@ -122,7 +135,7 @@ class CreateInstanceExtendParam:
         订购周期数，取值范围： - period_type=month（周期类型为月）时，取值为[1，9]。 - period_type=year（周期类型为年）时，取值为1。 “charge_mode”参数配置为“prePaid”时该参数有效且为必选值。
 
         :param period_num: The period_num of this CreateInstanceExtendParam.
-        :type: int
+        :type period_num: int
         """
         self._period_num = period_num
 
@@ -144,7 +157,7 @@ class CreateInstanceExtendParam:
         是否自动续订，取值范围： - “true”：自动续订。 - “false”：不自动续订。 “charge_mode”参数配置为“prePaid”时该参数有效，不传该字段时默认为不自动续订。\"
 
         :param is_auto_renew: The is_auto_renew of this CreateInstanceExtendParam.
-        :type: str
+        :type is_auto_renew: str
         """
         self._is_auto_renew = is_auto_renew
 
@@ -166,7 +179,7 @@ class CreateInstanceExtendParam:
         下单订购后，是否自动从客户的账户的余额中支付，取值范围： - “true”：是（自动从客户账户的余额中支付）。 - “false”：否（需要客户手动支付）。 “charge_mode”参数配置为“prePaid”时该参数有效，不传该字段时默认为客户手动支付。\"
 
         :param is_auto_pay: The is_auto_pay of this CreateInstanceExtendParam.
-        :type: str
+        :type is_auto_pay: str
         """
         self._is_auto_pay = is_auto_pay
 

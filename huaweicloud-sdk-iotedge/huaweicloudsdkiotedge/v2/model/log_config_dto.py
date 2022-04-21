@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LogConfigDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class LogConfigDTO:
     }
 
     def __init__(self, size=None, level=None, rotate_num=None, rotate_period=None, type=None, component=None):
-        """LogConfigDTO - a model defined in huaweicloud sdk"""
+        """LogConfigDTO
+
+        The model defined in huaweicloud sdk
+
+        :param size: 应用日志文件大小限制，单位MB，默认50，取值范围10-1000
+        :type size: int
+        :param level: 应用日志级别，可选项：on/off，当type为LTS时有效
+        :type level: str
+        :param rotate_num: 应用日志rotate个数，默认5，取值范围1-10
+        :type rotate_num: int
+        :param rotate_period: 应用日志rotate周期，可选项： daily/monthly/weekly/yearly
+        :type rotate_period: str
+        :param type: LTS:将日志发送到LTS, local 本地日志
+        :type type: str
+        :param component: app:部署到边缘设备上的应用的日志, system 边缘设备上系统的日志
+        :type component: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class LogConfigDTO:
         应用日志文件大小限制，单位MB，默认50，取值范围10-1000
 
         :param size: The size of this LogConfigDTO.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -105,7 +120,7 @@ class LogConfigDTO:
         应用日志级别，可选项：on/off，当type为LTS时有效
 
         :param level: The level of this LogConfigDTO.
-        :type: str
+        :type level: str
         """
         self._level = level
 
@@ -127,7 +142,7 @@ class LogConfigDTO:
         应用日志rotate个数，默认5，取值范围1-10
 
         :param rotate_num: The rotate_num of this LogConfigDTO.
-        :type: int
+        :type rotate_num: int
         """
         self._rotate_num = rotate_num
 
@@ -149,7 +164,7 @@ class LogConfigDTO:
         应用日志rotate周期，可选项： daily/monthly/weekly/yearly
 
         :param rotate_period: The rotate_period of this LogConfigDTO.
-        :type: str
+        :type rotate_period: str
         """
         self._rotate_period = rotate_period
 
@@ -171,7 +186,7 @@ class LogConfigDTO:
         LTS:将日志发送到LTS, local 本地日志
 
         :param type: The type of this LogConfigDTO.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -193,7 +208,7 @@ class LogConfigDTO:
         app:部署到边缘设备上的应用的日志, system 边缘设备上系统的日志
 
         :param component: The component of this LogConfigDTO.
-        :type: str
+        :type component: str
         """
         self._component = component
 

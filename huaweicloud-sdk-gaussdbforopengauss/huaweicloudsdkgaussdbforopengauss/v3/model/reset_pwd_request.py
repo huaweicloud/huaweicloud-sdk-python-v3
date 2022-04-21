@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResetPwdRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ResetPwdRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """ResetPwdRequest - a model defined in huaweicloud sdk"""
+        """ResetPwdRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言
+        :type x_language: str
+        :param instance_id: 实例ID，严格匹配UUID规则。
+        :type instance_id: str
+        :param body: Body of the ResetPwdRequest
+        :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.PwdResetRequest`
+        """
         
         
 
@@ -67,7 +76,7 @@ class ResetPwdRequest:
         语言
 
         :param x_language: The x_language of this ResetPwdRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -89,7 +98,7 @@ class ResetPwdRequest:
         实例ID，严格匹配UUID规则。
 
         :param instance_id: The instance_id of this ResetPwdRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -99,7 +108,7 @@ class ResetPwdRequest:
 
 
         :return: The body of this ResetPwdRequest.
-        :rtype: PwdResetRequest
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.PwdResetRequest`
         """
         return self._body
 
@@ -109,7 +118,7 @@ class ResetPwdRequest:
 
 
         :param body: The body of this ResetPwdRequest.
-        :type: PwdResetRequest
+        :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.PwdResetRequest`
         """
         self._body = body
 

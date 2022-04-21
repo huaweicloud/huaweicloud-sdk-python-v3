@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListIssuedPartnerCouponsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class ListIssuedPartnerCouponsRequest:
     }
 
     def __init__(self, coupon_id=None, customer_id=None, order_id=None, coupon_type=None, status=None, create_time_begin=None, create_time_end=None, effective_time_begin=None, effective_time_end=None, expire_time_begin=None, expire_time_end=None, offset=None, limit=None, indirect_partner_id=None):
-        """ListIssuedPartnerCouponsRequest - a model defined in huaweicloud sdk"""
+        """ListIssuedPartnerCouponsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param coupon_id: 优惠券ID。
+        :type coupon_id: str
+        :param customer_id: 客户账号ID。您可以调用查询客户列表接口获取customer_id。
+        :type customer_id: str
+        :param order_id: 订单ID。
+        :type order_id: str
+        :param coupon_type: 优惠券类型：1：代金券4：现金券
+        :type coupon_type: int
+        :param status: 客户优惠券实例状态：1：未激活2：可使用3：已使用4：已过期5：已回收
+        :type status: int
+        :param create_time_begin: 创建时间（开始）。UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。输入这个条件，会查询出创建时间大于这个时间的记录。
+        :type create_time_begin: str
+        :param create_time_end: 创建时间（结束）。UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。输入这个条件，会查询出创建时间小于这个时间的记录。
+        :type create_time_end: str
+        :param effective_time_begin: 生效时间（开始）。UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。输入这个条件，会查询出生效时间大于这个时间的记录。
+        :type effective_time_begin: str
+        :param effective_time_end: 生效时间（结束）。UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。输入这个条件，会查询出生效时间小于这个时间的记录。
+        :type effective_time_end: str
+        :param expire_time_begin: 失效时间（开始）。UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。输入这个条件，会查询出失效时间大于这个时间的记录。
+        :type expire_time_begin: str
+        :param expire_time_end: 失效时间（结束）。UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。输入这个条件，会查询出失效时间小于这个时间的记录。
+        :type expire_time_end: str
+        :param offset: 偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset &#x3D; 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
+        :type offset: int
+        :param limit: 查询的每页数量。默认值为10。
+        :type limit: int
+        :param indirect_partner_id: 精英服务商ID。获取方法请参见查询精英服务商列表。华为云伙伴能力中心（一级经销商）查询精英服务商发放给子客户的优惠券时，需要携带该参数；否则只能查询发放给自己子客户的优惠券。
+        :type indirect_partner_id: str
+        """
         
         
 
@@ -123,7 +154,7 @@ class ListIssuedPartnerCouponsRequest:
         优惠券ID。
 
         :param coupon_id: The coupon_id of this ListIssuedPartnerCouponsRequest.
-        :type: str
+        :type coupon_id: str
         """
         self._coupon_id = coupon_id
 
@@ -145,7 +176,7 @@ class ListIssuedPartnerCouponsRequest:
         客户账号ID。您可以调用查询客户列表接口获取customer_id。
 
         :param customer_id: The customer_id of this ListIssuedPartnerCouponsRequest.
-        :type: str
+        :type customer_id: str
         """
         self._customer_id = customer_id
 
@@ -167,7 +198,7 @@ class ListIssuedPartnerCouponsRequest:
         订单ID。
 
         :param order_id: The order_id of this ListIssuedPartnerCouponsRequest.
-        :type: str
+        :type order_id: str
         """
         self._order_id = order_id
 
@@ -189,7 +220,7 @@ class ListIssuedPartnerCouponsRequest:
         优惠券类型：1：代金券4：现金券
 
         :param coupon_type: The coupon_type of this ListIssuedPartnerCouponsRequest.
-        :type: int
+        :type coupon_type: int
         """
         self._coupon_type = coupon_type
 
@@ -211,7 +242,7 @@ class ListIssuedPartnerCouponsRequest:
         客户优惠券实例状态：1：未激活2：可使用3：已使用4：已过期5：已回收
 
         :param status: The status of this ListIssuedPartnerCouponsRequest.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -233,7 +264,7 @@ class ListIssuedPartnerCouponsRequest:
         创建时间（开始）。UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。输入这个条件，会查询出创建时间大于这个时间的记录。
 
         :param create_time_begin: The create_time_begin of this ListIssuedPartnerCouponsRequest.
-        :type: str
+        :type create_time_begin: str
         """
         self._create_time_begin = create_time_begin
 
@@ -255,7 +286,7 @@ class ListIssuedPartnerCouponsRequest:
         创建时间（结束）。UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。输入这个条件，会查询出创建时间小于这个时间的记录。
 
         :param create_time_end: The create_time_end of this ListIssuedPartnerCouponsRequest.
-        :type: str
+        :type create_time_end: str
         """
         self._create_time_end = create_time_end
 
@@ -277,7 +308,7 @@ class ListIssuedPartnerCouponsRequest:
         生效时间（开始）。UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。输入这个条件，会查询出生效时间大于这个时间的记录。
 
         :param effective_time_begin: The effective_time_begin of this ListIssuedPartnerCouponsRequest.
-        :type: str
+        :type effective_time_begin: str
         """
         self._effective_time_begin = effective_time_begin
 
@@ -299,7 +330,7 @@ class ListIssuedPartnerCouponsRequest:
         生效时间（结束）。UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。输入这个条件，会查询出生效时间小于这个时间的记录。
 
         :param effective_time_end: The effective_time_end of this ListIssuedPartnerCouponsRequest.
-        :type: str
+        :type effective_time_end: str
         """
         self._effective_time_end = effective_time_end
 
@@ -321,7 +352,7 @@ class ListIssuedPartnerCouponsRequest:
         失效时间（开始）。UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。输入这个条件，会查询出失效时间大于这个时间的记录。
 
         :param expire_time_begin: The expire_time_begin of this ListIssuedPartnerCouponsRequest.
-        :type: str
+        :type expire_time_begin: str
         """
         self._expire_time_begin = expire_time_begin
 
@@ -343,7 +374,7 @@ class ListIssuedPartnerCouponsRequest:
         失效时间（结束）。UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。输入这个条件，会查询出失效时间小于这个时间的记录。
 
         :param expire_time_end: The expire_time_end of this ListIssuedPartnerCouponsRequest.
-        :type: str
+        :type expire_time_end: str
         """
         self._expire_time_end = expire_time_end
 
@@ -365,7 +396,7 @@ class ListIssuedPartnerCouponsRequest:
         偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
         :param offset: The offset of this ListIssuedPartnerCouponsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -387,7 +418,7 @@ class ListIssuedPartnerCouponsRequest:
         查询的每页数量。默认值为10。
 
         :param limit: The limit of this ListIssuedPartnerCouponsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -409,7 +440,7 @@ class ListIssuedPartnerCouponsRequest:
         精英服务商ID。获取方法请参见查询精英服务商列表。华为云伙伴能力中心（一级经销商）查询精英服务商发放给子客户的优惠券时，需要携带该参数；否则只能查询发放给自己子客户的优惠券。
 
         :param indirect_partner_id: The indirect_partner_id of this ListIssuedPartnerCouponsRequest.
-        :type: str
+        :type indirect_partner_id: str
         """
         self._indirect_partner_id = indirect_partner_id
 

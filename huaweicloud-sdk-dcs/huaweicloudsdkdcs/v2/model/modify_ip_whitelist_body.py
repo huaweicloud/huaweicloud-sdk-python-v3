@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ModifyIpWhitelistBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ModifyIpWhitelistBody:
     }
 
     def __init__(self, enable_whitelist=None, whitelist=None):
-        """ModifyIpWhitelistBody - a model defined in huaweicloud sdk"""
+        """ModifyIpWhitelistBody
+
+        The model defined in huaweicloud sdk
+
+        :param enable_whitelist: 是否启用白名单（true/false）。
+        :type enable_whitelist: bool
+        :param whitelist: IP白名单分组列表。
+        :type whitelist: list[:class:`huaweicloudsdkdcs.v2.Whitelist`]
+        """
         
         
 
@@ -61,7 +68,7 @@ class ModifyIpWhitelistBody:
         是否启用白名单（true/false）。
 
         :param enable_whitelist: The enable_whitelist of this ModifyIpWhitelistBody.
-        :type: bool
+        :type enable_whitelist: bool
         """
         self._enable_whitelist = enable_whitelist
 
@@ -72,7 +79,7 @@ class ModifyIpWhitelistBody:
         IP白名单分组列表。
 
         :return: The whitelist of this ModifyIpWhitelistBody.
-        :rtype: list[Whitelist]
+        :rtype: list[:class:`huaweicloudsdkdcs.v2.Whitelist`]
         """
         return self._whitelist
 
@@ -83,7 +90,7 @@ class ModifyIpWhitelistBody:
         IP白名单分组列表。
 
         :param whitelist: The whitelist of this ModifyIpWhitelistBody.
-        :type: list[Whitelist]
+        :type whitelist: list[:class:`huaweicloudsdkdcs.v2.Whitelist`]
         """
         self._whitelist = whitelist
 

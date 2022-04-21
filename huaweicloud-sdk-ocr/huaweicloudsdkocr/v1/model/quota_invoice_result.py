@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QuotaInvoiceResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class QuotaInvoiceResult:
     }
 
     def __init__(self, number=None, code=None, location=None, amount=None, confidence=None):
-        """QuotaInvoiceResult - a model defined in huaweicloud sdk"""
+        """QuotaInvoiceResult
+
+        The model defined in huaweicloud sdk
+
+        :param number: 发票号码。 
+        :type number: str
+        :param code: 发票代码。 
+        :type code: str
+        :param location: 地址。 
+        :type location: str
+        :param amount: 发票金额。 
+        :type amount: str
+        :param confidence: 相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。
+        :type confidence: object
+        """
         
         
 
@@ -78,7 +91,7 @@ class QuotaInvoiceResult:
         发票号码。 
 
         :param number: The number of this QuotaInvoiceResult.
-        :type: str
+        :type number: str
         """
         self._number = number
 
@@ -100,7 +113,7 @@ class QuotaInvoiceResult:
         发票代码。 
 
         :param code: The code of this QuotaInvoiceResult.
-        :type: str
+        :type code: str
         """
         self._code = code
 
@@ -122,7 +135,7 @@ class QuotaInvoiceResult:
         地址。 
 
         :param location: The location of this QuotaInvoiceResult.
-        :type: str
+        :type location: str
         """
         self._location = location
 
@@ -144,7 +157,7 @@ class QuotaInvoiceResult:
         发票金额。 
 
         :param amount: The amount of this QuotaInvoiceResult.
-        :type: str
+        :type amount: str
         """
         self._amount = amount
 
@@ -166,7 +179,7 @@ class QuotaInvoiceResult:
         相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。
 
         :param confidence: The confidence of this QuotaInvoiceResult.
-        :type: object
+        :type confidence: object
         """
         self._confidence = confidence
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteTagRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class DeleteTagRequest:
     }
 
     def __init__(self, resource_type=None, resource_id=None, key=None):
-        """DeleteTagRequest - a model defined in huaweicloud sdk"""
+        """DeleteTagRequest
+
+        The model defined in huaweicloud sdk
+
+        :param resource_type: 资源的类型：DNS-public_zone，DNS-private_zone，DNS-public_recordset，DNS-private_recordset，DNS-ptr_record。  
+        :type resource_type: str
+        :param resource_id: 资源id。  
+        :type resource_id: str
+        :param key: 标签key。  标签key不能为空或者空字符串。
+        :type key: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class DeleteTagRequest:
         资源的类型：DNS-public_zone，DNS-private_zone，DNS-public_recordset，DNS-private_recordset，DNS-ptr_record。  
 
         :param resource_type: The resource_type of this DeleteTagRequest.
-        :type: str
+        :type resource_type: str
         """
         self._resource_type = resource_type
 
@@ -87,7 +96,7 @@ class DeleteTagRequest:
         资源id。  
 
         :param resource_id: The resource_id of this DeleteTagRequest.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -109,7 +118,7 @@ class DeleteTagRequest:
         标签key。  标签key不能为空或者空字符串。
 
         :param key: The key of this DeleteTagRequest.
-        :type: str
+        :type key: str
         """
         self._key = key
 

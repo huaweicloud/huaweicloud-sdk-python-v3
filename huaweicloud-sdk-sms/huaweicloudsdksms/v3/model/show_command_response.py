@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowCommandResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowCommandResponse(SdkResponse):
     }
 
     def __init__(self, command_name=None, command_param=None):
-        """ShowCommandResponse - a model defined in huaweicloud sdk"""
+        """ShowCommandResponse
+
+        The model defined in huaweicloud sdk
+
+        :param command_name: 命令名称，分为：START、STOP、DELETE、SYNC
+        :type command_name: str
+        :param command_param: 
+        :type command_param: :class:`huaweicloudsdksms.v3.ComandParam`
+        """
         
         super(ShowCommandResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ShowCommandResponse(SdkResponse):
         命令名称，分为：START、STOP、DELETE、SYNC
 
         :param command_name: The command_name of this ShowCommandResponse.
-        :type: str
+        :type command_name: str
         """
         self._command_name = command_name
 
@@ -73,7 +80,7 @@ class ShowCommandResponse(SdkResponse):
 
 
         :return: The command_param of this ShowCommandResponse.
-        :rtype: ComandParam
+        :rtype: :class:`huaweicloudsdksms.v3.ComandParam`
         """
         return self._command_param
 
@@ -83,7 +90,7 @@ class ShowCommandResponse(SdkResponse):
 
 
         :param command_param: The command_param of this ShowCommandResponse.
-        :type: ComandParam
+        :type command_param: :class:`huaweicloudsdksms.v3.ComandParam`
         """
         self._command_param = command_param
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RespServer:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class RespServer:
     }
 
     def __init__(self, addresses=None, created=None, flavor=None, id=None, name=None, status=None, tenant_id=None, updated=None, user_id=None, task_state=None, image=None, metadata=None):
-        """RespServer - a model defined in huaweicloud sdk"""
+        """RespServer
+
+        The model defined in huaweicloud sdk
+
+        :param addresses: 
+        :type addresses: :class:`huaweicloudsdkdeh.v1.RespAddresses`
+        :param created: 弹性云服务器创建时间。
+        :type created: str
+        :param flavor: 
+        :type flavor: :class:`huaweicloudsdkdeh.v1.RespFlavor`
+        :param id: 弹性云服务器ID，格式为UUID。
+        :type id: str
+        :param name: 弹性云服务器名称。
+        :type name: str
+        :param status: 弹性云服务器状态。  取值范围：ACTIVE、BUILD、DELETED、ERROR、HARD_REBOOT、MIGRATING、PASSWORD、PAUSED、REBOOT、REBUILD、RESIZE、REVERT_RESIZE、SHUTOFF、SHELVED、SHELVED_OFFLOADED、SOFT_DELETED、SUSPENDED、VERIFY_RESIZE
+        :type status: str
+        :param tenant_id: 弹性云服务器所属租户ID，格式为UUID。
+        :type tenant_id: str
+        :param updated: 弹性云服务器更新时间。
+        :type updated: str
+        :param user_id: 创建弹性云服务器的用户ID，格式为UUID。
+        :type user_id: str
+        :param task_state: 弹性云服务器当前任务的状态。
+        :type task_state: str
+        :param image: 
+        :type image: :class:`huaweicloudsdkdeh.v1.RespImage`
+        :param metadata: 
+        :type metadata: :class:`huaweicloudsdkdeh.v1.RespMetadata`
+        """
         
         
 
@@ -89,7 +116,7 @@ class RespServer:
 
 
         :return: The addresses of this RespServer.
-        :rtype: RespAddresses
+        :rtype: :class:`huaweicloudsdkdeh.v1.RespAddresses`
         """
         return self._addresses
 
@@ -99,7 +126,7 @@ class RespServer:
 
 
         :param addresses: The addresses of this RespServer.
-        :type: RespAddresses
+        :type addresses: :class:`huaweicloudsdkdeh.v1.RespAddresses`
         """
         self._addresses = addresses
 
@@ -121,7 +148,7 @@ class RespServer:
         弹性云服务器创建时间。
 
         :param created: The created of this RespServer.
-        :type: str
+        :type created: str
         """
         self._created = created
 
@@ -131,7 +158,7 @@ class RespServer:
 
 
         :return: The flavor of this RespServer.
-        :rtype: RespFlavor
+        :rtype: :class:`huaweicloudsdkdeh.v1.RespFlavor`
         """
         return self._flavor
 
@@ -141,7 +168,7 @@ class RespServer:
 
 
         :param flavor: The flavor of this RespServer.
-        :type: RespFlavor
+        :type flavor: :class:`huaweicloudsdkdeh.v1.RespFlavor`
         """
         self._flavor = flavor
 
@@ -163,7 +190,7 @@ class RespServer:
         弹性云服务器ID，格式为UUID。
 
         :param id: The id of this RespServer.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -185,7 +212,7 @@ class RespServer:
         弹性云服务器名称。
 
         :param name: The name of this RespServer.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -207,7 +234,7 @@ class RespServer:
         弹性云服务器状态。  取值范围：ACTIVE、BUILD、DELETED、ERROR、HARD_REBOOT、MIGRATING、PASSWORD、PAUSED、REBOOT、REBUILD、RESIZE、REVERT_RESIZE、SHUTOFF、SHELVED、SHELVED_OFFLOADED、SOFT_DELETED、SUSPENDED、VERIFY_RESIZE
 
         :param status: The status of this RespServer.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -229,7 +256,7 @@ class RespServer:
         弹性云服务器所属租户ID，格式为UUID。
 
         :param tenant_id: The tenant_id of this RespServer.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 
@@ -251,7 +278,7 @@ class RespServer:
         弹性云服务器更新时间。
 
         :param updated: The updated of this RespServer.
-        :type: str
+        :type updated: str
         """
         self._updated = updated
 
@@ -273,7 +300,7 @@ class RespServer:
         创建弹性云服务器的用户ID，格式为UUID。
 
         :param user_id: The user_id of this RespServer.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -295,7 +322,7 @@ class RespServer:
         弹性云服务器当前任务的状态。
 
         :param task_state: The task_state of this RespServer.
-        :type: str
+        :type task_state: str
         """
         self._task_state = task_state
 
@@ -305,7 +332,7 @@ class RespServer:
 
 
         :return: The image of this RespServer.
-        :rtype: RespImage
+        :rtype: :class:`huaweicloudsdkdeh.v1.RespImage`
         """
         return self._image
 
@@ -315,7 +342,7 @@ class RespServer:
 
 
         :param image: The image of this RespServer.
-        :type: RespImage
+        :type image: :class:`huaweicloudsdkdeh.v1.RespImage`
         """
         self._image = image
 
@@ -325,7 +352,7 @@ class RespServer:
 
 
         :return: The metadata of this RespServer.
-        :rtype: RespMetadata
+        :rtype: :class:`huaweicloudsdkdeh.v1.RespMetadata`
         """
         return self._metadata
 
@@ -335,7 +362,7 @@ class RespServer:
 
 
         :param metadata: The metadata of this RespServer.
-        :type: RespMetadata
+        :type metadata: :class:`huaweicloudsdkdeh.v1.RespMetadata`
         """
         self._metadata = metadata
 

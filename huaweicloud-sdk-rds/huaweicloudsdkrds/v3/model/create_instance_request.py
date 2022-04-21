@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateInstanceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateInstanceRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """CreateInstanceRequest - a model defined in huaweicloud sdk"""
+        """CreateInstanceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言
+        :type x_language: str
+        :param body: Body of the CreateInstanceRequest
+        :type body: :class:`huaweicloudsdkrds.v3.InstanceRequest`
+        """
         
         
 
@@ -63,7 +70,7 @@ class CreateInstanceRequest:
         语言
 
         :param x_language: The x_language of this CreateInstanceRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -73,7 +80,7 @@ class CreateInstanceRequest:
 
 
         :return: The body of this CreateInstanceRequest.
-        :rtype: InstanceRequest
+        :rtype: :class:`huaweicloudsdkrds.v3.InstanceRequest`
         """
         return self._body
 
@@ -83,7 +90,7 @@ class CreateInstanceRequest:
 
 
         :param body: The body of this CreateInstanceRequest.
-        :type: InstanceRequest
+        :type body: :class:`huaweicloudsdkrds.v3.InstanceRequest`
         """
         self._body = body
 

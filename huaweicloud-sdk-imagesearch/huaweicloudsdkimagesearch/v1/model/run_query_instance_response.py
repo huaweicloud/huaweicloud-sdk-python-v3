@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunQueryInstanceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class RunQueryInstanceResponse(SdkResponse):
     }
 
     def __init__(self, domain=None, desc=None, register_date=None, expired_date=None, level=None, tags=None, status=None, instance_name=None):
-        """RunQueryInstanceResponse - a model defined in huaweicloud sdk"""
+        """RunQueryInstanceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param domain: 模型展示名或领域名称。
+        :type domain: str
+        :param desc: 描述。
+        :type desc: str
+        :param register_date: 注册时间。
+        :type register_date: int
+        :param expired_date: 过期时间，-1表示永不过期。
+        :type expired_date: int
+        :param level: 规格，即实例的图片数量规格，默认为30000000（单位：张）。
+        :type level: int
+        :param tags: 图片自定义标签。
+        :type tags: list[str]
+        :param status: 实例的状态，有以下状态信息：   - NORMAL：正常。   - ARREARAGE：欠费。   - CREATION：创建中。   - CREATION_FAILD：创建失败。   - DELETING：删除中。   - DELETING_FAILED：删除失败。   - ABNORMAL：异常。
+        :type status: str
+        :param instance_name: 实例名称。
+        :type instance_name: str
+        """
         
         super(RunQueryInstanceResponse, self).__init__()
 
@@ -93,7 +112,7 @@ class RunQueryInstanceResponse(SdkResponse):
         模型展示名或领域名称。
 
         :param domain: The domain of this RunQueryInstanceResponse.
-        :type: str
+        :type domain: str
         """
         self._domain = domain
 
@@ -115,7 +134,7 @@ class RunQueryInstanceResponse(SdkResponse):
         描述。
 
         :param desc: The desc of this RunQueryInstanceResponse.
-        :type: str
+        :type desc: str
         """
         self._desc = desc
 
@@ -137,7 +156,7 @@ class RunQueryInstanceResponse(SdkResponse):
         注册时间。
 
         :param register_date: The register_date of this RunQueryInstanceResponse.
-        :type: int
+        :type register_date: int
         """
         self._register_date = register_date
 
@@ -159,7 +178,7 @@ class RunQueryInstanceResponse(SdkResponse):
         过期时间，-1表示永不过期。
 
         :param expired_date: The expired_date of this RunQueryInstanceResponse.
-        :type: int
+        :type expired_date: int
         """
         self._expired_date = expired_date
 
@@ -181,7 +200,7 @@ class RunQueryInstanceResponse(SdkResponse):
         规格，即实例的图片数量规格，默认为30000000（单位：张）。
 
         :param level: The level of this RunQueryInstanceResponse.
-        :type: int
+        :type level: int
         """
         self._level = level
 
@@ -203,7 +222,7 @@ class RunQueryInstanceResponse(SdkResponse):
         图片自定义标签。
 
         :param tags: The tags of this RunQueryInstanceResponse.
-        :type: list[str]
+        :type tags: list[str]
         """
         self._tags = tags
 
@@ -225,7 +244,7 @@ class RunQueryInstanceResponse(SdkResponse):
         实例的状态，有以下状态信息：   - NORMAL：正常。   - ARREARAGE：欠费。   - CREATION：创建中。   - CREATION_FAILD：创建失败。   - DELETING：删除中。   - DELETING_FAILED：删除失败。   - ABNORMAL：异常。
 
         :param status: The status of this RunQueryInstanceResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -247,7 +266,7 @@ class RunQueryInstanceResponse(SdkResponse):
         实例名称。
 
         :param instance_name: The instance_name of this RunQueryInstanceResponse.
-        :type: str
+        :type instance_name: str
         """
         self._instance_name = instance_name
 

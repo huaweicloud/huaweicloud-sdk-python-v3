@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowReplicationCapabilitiesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowReplicationCapabilitiesResponse(SdkResponse):
     }
 
     def __init__(self, regions=None):
-        """ShowReplicationCapabilitiesResponse - a model defined in huaweicloud sdk"""
+        """ShowReplicationCapabilitiesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param regions: 支持复制的区域列表
+        :type regions: list[:class:`huaweicloudsdkcbr.v1.ProtectableReplicationCapabilitiesRespRegion`]
+        """
         
         super(ShowReplicationCapabilitiesResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ShowReplicationCapabilitiesResponse(SdkResponse):
         支持复制的区域列表
 
         :return: The regions of this ShowReplicationCapabilitiesResponse.
-        :rtype: list[ProtectableReplicationCapabilitiesRespRegion]
+        :rtype: list[:class:`huaweicloudsdkcbr.v1.ProtectableReplicationCapabilitiesRespRegion`]
         """
         return self._regions
 
@@ -58,7 +63,7 @@ class ShowReplicationCapabilitiesResponse(SdkResponse):
         支持复制的区域列表
 
         :param regions: The regions of this ShowReplicationCapabilitiesResponse.
-        :type: list[ProtectableReplicationCapabilitiesRespRegion]
+        :type regions: list[:class:`huaweicloudsdkcbr.v1.ProtectableReplicationCapabilitiesRespRegion`]
         """
         self._regions = regions
 

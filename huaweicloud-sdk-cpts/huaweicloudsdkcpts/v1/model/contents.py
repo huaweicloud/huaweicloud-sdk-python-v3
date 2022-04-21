@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Contents:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class Contents:
     }
 
     def __init__(self, content_id=None, content=None, index=None, selected_temp_name=None, data=None, data_type=None):
-        """Contents - a model defined in huaweicloud sdk"""
+        """Contents
+
+        The model defined in huaweicloud sdk
+
+        :param content_id: content_id
+        :type content_id: int
+        :param content: content
+        :type content: list[:class:`huaweicloudsdkcpts.v1.Content`]
+        :param index: index
+        :type index: int
+        :param selected_temp_name: selected_temp_name
+        :type selected_temp_name: str
+        :param data: data
+        :type data: str
+        :param data_type: data_type
+        :type data_type: int
+        """
         
         
 
@@ -83,7 +98,7 @@ class Contents:
         content_id
 
         :param content_id: The content_id of this Contents.
-        :type: int
+        :type content_id: int
         """
         self._content_id = content_id
 
@@ -94,7 +109,7 @@ class Contents:
         content
 
         :return: The content of this Contents.
-        :rtype: list[Content]
+        :rtype: list[:class:`huaweicloudsdkcpts.v1.Content`]
         """
         return self._content
 
@@ -105,7 +120,7 @@ class Contents:
         content
 
         :param content: The content of this Contents.
-        :type: list[Content]
+        :type content: list[:class:`huaweicloudsdkcpts.v1.Content`]
         """
         self._content = content
 
@@ -127,7 +142,7 @@ class Contents:
         index
 
         :param index: The index of this Contents.
-        :type: int
+        :type index: int
         """
         self._index = index
 
@@ -149,7 +164,7 @@ class Contents:
         selected_temp_name
 
         :param selected_temp_name: The selected_temp_name of this Contents.
-        :type: str
+        :type selected_temp_name: str
         """
         self._selected_temp_name = selected_temp_name
 
@@ -171,7 +186,7 @@ class Contents:
         data
 
         :param data: The data of this Contents.
-        :type: str
+        :type data: str
         """
         self._data = data
 
@@ -193,7 +208,7 @@ class Contents:
         data_type
 
         :param data_type: The data_type of this Contents.
-        :type: int
+        :type data_type: int
         """
         self._data_type = data_type
 

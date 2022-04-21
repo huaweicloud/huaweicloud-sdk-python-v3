@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListBackupFileLinksResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListBackupFileLinksResponse(SdkResponse):
     }
 
     def __init__(self, file_path=None, bucket_name=None, links=None):
-        """ListBackupFileLinksResponse - a model defined in huaweicloud sdk"""
+        """ListBackupFileLinksResponse
+
+        The model defined in huaweicloud sdk
+
+        :param file_path: OBS桶内文件路径。
+        :type file_path: str
+        :param bucket_name: OBS桶名。
+        :type bucket_name: str
+        :param links: 备份文件下链接集合，链接数最大为64个。
+        :type links: list[:class:`huaweicloudsdkdcs.v2.LinksItem`]
+        """
         
         super(ListBackupFileLinksResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListBackupFileLinksResponse(SdkResponse):
         OBS桶内文件路径。
 
         :param file_path: The file_path of this ListBackupFileLinksResponse.
-        :type: str
+        :type file_path: str
         """
         self._file_path = file_path
 
@@ -90,7 +99,7 @@ class ListBackupFileLinksResponse(SdkResponse):
         OBS桶名。
 
         :param bucket_name: The bucket_name of this ListBackupFileLinksResponse.
-        :type: str
+        :type bucket_name: str
         """
         self._bucket_name = bucket_name
 
@@ -101,7 +110,7 @@ class ListBackupFileLinksResponse(SdkResponse):
         备份文件下链接集合，链接数最大为64个。
 
         :return: The links of this ListBackupFileLinksResponse.
-        :rtype: list[LinksItem]
+        :rtype: list[:class:`huaweicloudsdkdcs.v2.LinksItem`]
         """
         return self._links
 
@@ -112,7 +121,7 @@ class ListBackupFileLinksResponse(SdkResponse):
         备份文件下链接集合，链接数最大为64个。
 
         :param links: The links of this ListBackupFileLinksResponse.
-        :type: list[LinksItem]
+        :type links: list[:class:`huaweicloudsdkdcs.v2.LinksItem`]
         """
         self._links = links
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeletePrivacyRuleRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class DeletePrivacyRuleRequest:
     }
 
     def __init__(self, enterprise_project_id=None, policy_id=None, rule_id=None):
-        """DeletePrivacyRuleRequest - a model defined in huaweicloud sdk"""
+        """DeletePrivacyRuleRequest
+
+        The model defined in huaweicloud sdk
+
+        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        :type enterprise_project_id: str
+        :param policy_id: 防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
+        :type policy_id: str
+        :param rule_id: 隐私屏蔽规则id，从查询隐私屏蔽防护规则接口https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product&#x3D;WAF&amp;api&#x3D;ListPrivacyRule获取
+        :type rule_id: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class DeletePrivacyRuleRequest:
         您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this DeletePrivacyRuleRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -88,7 +97,7 @@ class DeletePrivacyRuleRequest:
         防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
 
         :param policy_id: The policy_id of this DeletePrivacyRuleRequest.
-        :type: str
+        :type policy_id: str
         """
         self._policy_id = policy_id
 
@@ -110,7 +119,7 @@ class DeletePrivacyRuleRequest:
         隐私屏蔽规则id，从查询隐私屏蔽防护规则接口https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=WAF&api=ListPrivacyRule获取
 
         :param rule_id: The rule_id of this DeletePrivacyRuleRequest.
-        :type: str
+        :type rule_id: str
         """
         self._rule_id = rule_id
 

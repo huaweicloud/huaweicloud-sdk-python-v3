@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowCeshierarchyRespChildren:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowCeshierarchyRespChildren:
     }
 
     def __init__(self, name=None, metrics=None, key_name=None, dim_router=None):
-        """ShowCeshierarchyRespChildren - a model defined in huaweicloud sdk"""
+        """ShowCeshierarchyRespChildren
+
+        The model defined in huaweicloud sdk
+
+        :param name: 子维度名称。
+        :type name: str
+        :param metrics: 监控指标名称列表。
+        :type metrics: list[str]
+        :param key_name: 监控查询使用的key。
+        :type key_name: list[str]
+        :param dim_router: 监控维度路由。
+        :type dim_router: list[str]
+        """
         
         
 
@@ -73,7 +84,7 @@ class ShowCeshierarchyRespChildren:
         子维度名称。
 
         :param name: The name of this ShowCeshierarchyRespChildren.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -95,7 +106,7 @@ class ShowCeshierarchyRespChildren:
         监控指标名称列表。
 
         :param metrics: The metrics of this ShowCeshierarchyRespChildren.
-        :type: list[str]
+        :type metrics: list[str]
         """
         self._metrics = metrics
 
@@ -117,7 +128,7 @@ class ShowCeshierarchyRespChildren:
         监控查询使用的key。
 
         :param key_name: The key_name of this ShowCeshierarchyRespChildren.
-        :type: list[str]
+        :type key_name: list[str]
         """
         self._key_name = key_name
 
@@ -139,7 +150,7 @@ class ShowCeshierarchyRespChildren:
         监控维度路由。
 
         :param dim_router: The dim_router of this ShowCeshierarchyRespChildren.
-        :type: list[str]
+        :type dim_router: list[str]
         """
         self._dim_router = dim_router
 

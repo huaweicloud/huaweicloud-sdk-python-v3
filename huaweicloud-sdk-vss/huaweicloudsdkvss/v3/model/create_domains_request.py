@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateDomainsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateDomainsRequest:
     }
 
     def __init__(self, body=None):
-        """CreateDomainsRequest - a model defined in huaweicloud sdk"""
+        """CreateDomainsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateDomainsRequest
+        :type body: :class:`huaweicloudsdkvss.v3.CreateDomainsRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateDomainsRequest:
 
 
         :return: The body of this CreateDomainsRequest.
-        :rtype: CreateDomainsRequestBody
+        :rtype: :class:`huaweicloudsdkvss.v3.CreateDomainsRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateDomainsRequest:
 
 
         :param body: The body of this CreateDomainsRequest.
-        :type: CreateDomainsRequestBody
+        :type body: :class:`huaweicloudsdkvss.v3.CreateDomainsRequestBody`
         """
         self._body = body
 

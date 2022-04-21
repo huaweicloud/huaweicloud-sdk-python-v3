@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CommitsCommits:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CommitsCommits:
     }
 
     def __init__(self, sha=None, message=None, authored_date=None):
-        """CommitsCommits - a model defined in huaweicloud sdk"""
+        """CommitsCommits
+
+        The model defined in huaweicloud sdk
+
+        :param sha: 提交记录sha值。
+        :type sha: str
+        :param message: 提交记录描述。
+        :type message: str
+        :param authored_date: 合入时间。
+        :type authored_date: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class CommitsCommits:
         提交记录sha值。
 
         :param sha: The sha of this CommitsCommits.
-        :type: str
+        :type sha: str
         """
         self._sha = sha
 
@@ -87,7 +96,7 @@ class CommitsCommits:
         提交记录描述。
 
         :param message: The message of this CommitsCommits.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -109,7 +118,7 @@ class CommitsCommits:
         合入时间。
 
         :param authored_date: The authored_date of this CommitsCommits.
-        :type: str
+        :type authored_date: str
         """
         self._authored_date = authored_date
 

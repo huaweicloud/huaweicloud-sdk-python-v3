@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateRuleReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class UpdateRuleReq:
     }
 
     def __init__(self, rule_name=None, description=None, select=None, where=None, active=None):
-        """UpdateRuleReq - a model defined in huaweicloud sdk"""
+        """UpdateRuleReq
+
+        The model defined in huaweicloud sdk
+
+        :param rule_name: **参数说明**：规则名称。 **取值范围**：长度不超过256，只允许中文、字母、数字、以及_?&#39;#().,&amp;%@!-等字符的组合
+        :type rule_name: str
+        :param description: **参数说明**：用户自定义的规则描述。
+        :type description: str
+        :param select: **参数说明**：用户自定义sql select语句，最大长度500，更新sql时，select跟where必须同时传参，如果需要清除该参数的值，输入空字符串，该参数仅供标准版和企业版用户使用。
+        :type select: str
+        :param where: **参数说明**：用户自定义sql where语句，最大长度500，更新操作时，select跟where必须同时传参，如果需要清除该参数的值，输入空字符串，该参数仅供标准版和企业版用户使用。
+        :type where: str
+        :param active: **参数说明**：修改规则条件的状态是否为激活。
+        :type active: bool
+        """
         
         
 
@@ -78,7 +91,7 @@ class UpdateRuleReq:
         **参数说明**：规则名称。 **取值范围**：长度不超过256，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合
 
         :param rule_name: The rule_name of this UpdateRuleReq.
-        :type: str
+        :type rule_name: str
         """
         self._rule_name = rule_name
 
@@ -100,7 +113,7 @@ class UpdateRuleReq:
         **参数说明**：用户自定义的规则描述。
 
         :param description: The description of this UpdateRuleReq.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -122,7 +135,7 @@ class UpdateRuleReq:
         **参数说明**：用户自定义sql select语句，最大长度500，更新sql时，select跟where必须同时传参，如果需要清除该参数的值，输入空字符串，该参数仅供标准版和企业版用户使用。
 
         :param select: The select of this UpdateRuleReq.
-        :type: str
+        :type select: str
         """
         self._select = select
 
@@ -144,7 +157,7 @@ class UpdateRuleReq:
         **参数说明**：用户自定义sql where语句，最大长度500，更新操作时，select跟where必须同时传参，如果需要清除该参数的值，输入空字符串，该参数仅供标准版和企业版用户使用。
 
         :param where: The where of this UpdateRuleReq.
-        :type: str
+        :type where: str
         """
         self._where = where
 
@@ -166,7 +179,7 @@ class UpdateRuleReq:
         **参数说明**：修改规则条件的状态是否为激活。
 
         :param active: The active of this UpdateRuleReq.
-        :type: bool
+        :type active: bool
         """
         self._active = active
 

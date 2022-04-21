@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunCheckPictureRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RunCheckPictureRequest:
     }
 
     def __init__(self, instance_name=None, body=None):
-        """RunCheckPictureRequest - a model defined in huaweicloud sdk"""
+        """RunCheckPictureRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_name: 实例名称。
+        :type instance_name: str
+        :param body: Body of the RunCheckPictureRequest
+        :type body: :class:`huaweicloudsdkimagesearch.v1.DeletePictureReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class RunCheckPictureRequest:
         实例名称。
 
         :param instance_name: The instance_name of this RunCheckPictureRequest.
-        :type: str
+        :type instance_name: str
         """
         self._instance_name = instance_name
 
@@ -72,7 +79,7 @@ class RunCheckPictureRequest:
 
 
         :return: The body of this RunCheckPictureRequest.
-        :rtype: DeletePictureReq
+        :rtype: :class:`huaweicloudsdkimagesearch.v1.DeletePictureReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class RunCheckPictureRequest:
 
 
         :param body: The body of this RunCheckPictureRequest.
-        :type: DeletePictureReq
+        :type body: :class:`huaweicloudsdkimagesearch.v1.DeletePictureReq`
         """
         self._body = body
 

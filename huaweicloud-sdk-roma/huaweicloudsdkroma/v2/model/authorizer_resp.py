@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AuthorizerResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class AuthorizerResp:
     }
 
     def __init__(self, name=None, type=None, authorizer_type=None, authorizer_uri=None, identities=None, ttl=None, user_data=None, ld_api_id=None, need_body=None, id=None, create_time=None, roma_app_id=None, roma_app_name=None):
-        """AuthorizerResp - a model defined in huaweicloud sdk"""
+        """AuthorizerResp
+
+        The model defined in huaweicloud sdk
+
+        :param name: 自定义认证的名称。 长度为3 ~ 64位的字符串，字符串由中文、英文字母、数字、“_”组成，且只能以英文或中文开头。 
+        :type name: str
+        :param type: 自定义认证类型  - FRONTEND：前端 - BACKEND：后端
+        :type type: str
+        :param authorizer_type: 自定义认证函数类型： - LD：自定义后端函数 - FUNC：函数服务函数
+        :type authorizer_type: str
+        :param authorizer_uri: 函数地址。  注意：使用自定义后端的函数API，API请求方法必须为POST，且API状态必须为已部署。
+        :type authorizer_uri: str
+        :param identities: 认证来源
+        :type identities: list[:class:`huaweicloudsdkroma.v2.Identity`]
+        :param ttl: 缓存时间
+        :type ttl: int
+        :param user_data: 用户数据
+        :type user_data: str
+        :param ld_api_id: 自定义后端服务ID。  自定义认证函数类型为LD时必填
+        :type ld_api_id: str
+        :param need_body: 是否发送body
+        :type need_body: bool
+        :param id: 自定义认证编号
+        :type id: str
+        :param create_time: 创建时间
+        :type create_time: datetime
+        :param roma_app_id: 自定义认证所属应用编号
+        :type roma_app_id: str
+        :param roma_app_name: 自定义认证所属应用名称
+        :type roma_app_name: str
+        """
         
         
 
@@ -114,7 +143,7 @@ class AuthorizerResp:
         自定义认证的名称。 长度为3 ~ 64位的字符串，字符串由中文、英文字母、数字、“_”组成，且只能以英文或中文开头。 
 
         :param name: The name of this AuthorizerResp.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -136,7 +165,7 @@ class AuthorizerResp:
         自定义认证类型  - FRONTEND：前端 - BACKEND：后端
 
         :param type: The type of this AuthorizerResp.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -158,7 +187,7 @@ class AuthorizerResp:
         自定义认证函数类型： - LD：自定义后端函数 - FUNC：函数服务函数
 
         :param authorizer_type: The authorizer_type of this AuthorizerResp.
-        :type: str
+        :type authorizer_type: str
         """
         self._authorizer_type = authorizer_type
 
@@ -180,7 +209,7 @@ class AuthorizerResp:
         函数地址。  注意：使用自定义后端的函数API，API请求方法必须为POST，且API状态必须为已部署。
 
         :param authorizer_uri: The authorizer_uri of this AuthorizerResp.
-        :type: str
+        :type authorizer_uri: str
         """
         self._authorizer_uri = authorizer_uri
 
@@ -191,7 +220,7 @@ class AuthorizerResp:
         认证来源
 
         :return: The identities of this AuthorizerResp.
-        :rtype: list[Identity]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.Identity`]
         """
         return self._identities
 
@@ -202,7 +231,7 @@ class AuthorizerResp:
         认证来源
 
         :param identities: The identities of this AuthorizerResp.
-        :type: list[Identity]
+        :type identities: list[:class:`huaweicloudsdkroma.v2.Identity`]
         """
         self._identities = identities
 
@@ -224,7 +253,7 @@ class AuthorizerResp:
         缓存时间
 
         :param ttl: The ttl of this AuthorizerResp.
-        :type: int
+        :type ttl: int
         """
         self._ttl = ttl
 
@@ -246,7 +275,7 @@ class AuthorizerResp:
         用户数据
 
         :param user_data: The user_data of this AuthorizerResp.
-        :type: str
+        :type user_data: str
         """
         self._user_data = user_data
 
@@ -268,7 +297,7 @@ class AuthorizerResp:
         自定义后端服务ID。  自定义认证函数类型为LD时必填
 
         :param ld_api_id: The ld_api_id of this AuthorizerResp.
-        :type: str
+        :type ld_api_id: str
         """
         self._ld_api_id = ld_api_id
 
@@ -290,7 +319,7 @@ class AuthorizerResp:
         是否发送body
 
         :param need_body: The need_body of this AuthorizerResp.
-        :type: bool
+        :type need_body: bool
         """
         self._need_body = need_body
 
@@ -312,7 +341,7 @@ class AuthorizerResp:
         自定义认证编号
 
         :param id: The id of this AuthorizerResp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -334,7 +363,7 @@ class AuthorizerResp:
         创建时间
 
         :param create_time: The create_time of this AuthorizerResp.
-        :type: datetime
+        :type create_time: datetime
         """
         self._create_time = create_time
 
@@ -356,7 +385,7 @@ class AuthorizerResp:
         自定义认证所属应用编号
 
         :param roma_app_id: The roma_app_id of this AuthorizerResp.
-        :type: str
+        :type roma_app_id: str
         """
         self._roma_app_id = roma_app_id
 
@@ -378,7 +407,7 @@ class AuthorizerResp:
         自定义认证所属应用名称
 
         :param roma_app_name: The roma_app_name of this AuthorizerResp.
-        :type: str
+        :type roma_app_name: str
         """
         self._roma_app_name = roma_app_name
 

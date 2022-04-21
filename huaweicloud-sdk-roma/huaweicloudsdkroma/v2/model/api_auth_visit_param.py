@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApiAuthVisitParam:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ApiAuthVisitParam:
     }
 
     def __init__(self, api_id=None, app_id=None, visit_param=None):
-        """ApiAuthVisitParam - a model defined in huaweicloud sdk"""
+        """ApiAuthVisitParam
+
+        The model defined in huaweicloud sdk
+
+        :param api_id: 需要授权的API编号
+        :type api_id: str
+        :param app_id: 需要授权的APP编号
+        :type app_id: str
+        :param visit_param: 访问参数  支持英文、数字、下划线和中划线，多个参数以英文格式下的逗号隔开，单个参数须以英文或数字结尾且不能重复，且单个参数长度不超过255个字符。
+        :type visit_param: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class ApiAuthVisitParam:
         需要授权的API编号
 
         :param api_id: The api_id of this ApiAuthVisitParam.
-        :type: str
+        :type api_id: str
         """
         self._api_id = api_id
 
@@ -88,7 +97,7 @@ class ApiAuthVisitParam:
         需要授权的APP编号
 
         :param app_id: The app_id of this ApiAuthVisitParam.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -110,7 +119,7 @@ class ApiAuthVisitParam:
         访问参数  支持英文、数字、下划线和中划线，多个参数以英文格式下的逗号隔开，单个参数须以英文或数字结尾且不能重复，且单个参数长度不超过255个字符。
 
         :param visit_param: The visit_param of this ApiAuthVisitParam.
-        :type: str
+        :type visit_param: str
         """
         self._visit_param = visit_param
 

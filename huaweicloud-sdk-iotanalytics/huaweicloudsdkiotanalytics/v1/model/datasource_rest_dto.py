@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DatasourceRestDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class DatasourceRestDTO:
     }
 
     def __init__(self, id=None, name=None, type=None, content=None, created_time=None, modified_time=None):
-        """DatasourceRestDTO - a model defined in huaweicloud sdk"""
+        """DatasourceRestDTO
+
+        The model defined in huaweicloud sdk
+
+        :param id: 数据源id
+        :type id: str
+        :param name: 数据源名称
+        :type name: str
+        :param type: 数据源类型, 包括：IOTDA、API[、OBS、DIS、SMN、FUNCTION_GRAPH、MODEL_ARTS、DCS、KAFKA](tag:IoTA-Cloud-Only)、NODE。数据源不支持修改类型。
+        :type type: str
+        :param content: 
+        :type content: :class:`huaweicloudsdkiotanalytics.v1.ContentDetailRsp`
+        :param created_time: 创建时间，格式为：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;
+        :type created_time: str
+        :param modified_time: 修改时间，格式为：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;
+        :type modified_time: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class DatasourceRestDTO:
         数据源id
 
         :param id: The id of this DatasourceRestDTO.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -105,7 +120,7 @@ class DatasourceRestDTO:
         数据源名称
 
         :param name: The name of this DatasourceRestDTO.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -127,7 +142,7 @@ class DatasourceRestDTO:
         数据源类型, 包括：IOTDA、API[、OBS、DIS、SMN、FUNCTION_GRAPH、MODEL_ARTS、DCS、KAFKA](tag:IoTA-Cloud-Only)、NODE。数据源不支持修改类型。
 
         :param type: The type of this DatasourceRestDTO.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -137,7 +152,7 @@ class DatasourceRestDTO:
 
 
         :return: The content of this DatasourceRestDTO.
-        :rtype: ContentDetailRsp
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.ContentDetailRsp`
         """
         return self._content
 
@@ -147,7 +162,7 @@ class DatasourceRestDTO:
 
 
         :param content: The content of this DatasourceRestDTO.
-        :type: ContentDetailRsp
+        :type content: :class:`huaweicloudsdkiotanalytics.v1.ContentDetailRsp`
         """
         self._content = content
 
@@ -169,7 +184,7 @@ class DatasourceRestDTO:
         创建时间，格式为：yyyy-MM-dd'T'HH:mm:ss'Z'
 
         :param created_time: The created_time of this DatasourceRestDTO.
-        :type: str
+        :type created_time: str
         """
         self._created_time = created_time
 
@@ -191,7 +206,7 @@ class DatasourceRestDTO:
         修改时间，格式为：yyyy-MM-dd'T'HH:mm:ss'Z'
 
         :param modified_time: The modified_time of this DatasourceRestDTO.
-        :type: str
+        :type modified_time: str
         """
         self._modified_time = modified_time
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AssociateSubnetResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class AssociateSubnetResponse(SdkResponse):
     }
 
     def __init__(self, routetable=None):
-        """AssociateSubnetResponse - a model defined in huaweicloud sdk"""
+        """AssociateSubnetResponse
+
+        The model defined in huaweicloud sdk
+
+        :param routetable: 
+        :type routetable: :class:`huaweicloudsdkiec.v1.Routetable`
+        """
         
         super(AssociateSubnetResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class AssociateSubnetResponse(SdkResponse):
 
 
         :return: The routetable of this AssociateSubnetResponse.
-        :rtype: Routetable
+        :rtype: :class:`huaweicloudsdkiec.v1.Routetable`
         """
         return self._routetable
 
@@ -56,7 +61,7 @@ class AssociateSubnetResponse(SdkResponse):
 
 
         :param routetable: The routetable of this AssociateSubnetResponse.
-        :type: Routetable
+        :type routetable: :class:`huaweicloudsdkiec.v1.Routetable`
         """
         self._routetable = routetable
 

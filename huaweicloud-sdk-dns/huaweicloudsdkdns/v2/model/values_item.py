@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ValuesItem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ValuesItem:
     }
 
     def __init__(self, values=None):
-        """ValuesItem - a model defined in huaweicloud sdk"""
+        """ValuesItem
+
+        The model defined in huaweicloud sdk
+
+        :param values: 所有版本列表。
+        :type values: list[:class:`huaweicloudsdkdns.v2.ListApiVersionsItem`]
+        """
         
         
 
@@ -47,7 +52,7 @@ class ValuesItem:
         所有版本列表。
 
         :return: The values of this ValuesItem.
-        :rtype: list[ListApiVersionsItem]
+        :rtype: list[:class:`huaweicloudsdkdns.v2.ListApiVersionsItem`]
         """
         return self._values
 
@@ -58,7 +63,7 @@ class ValuesItem:
         所有版本列表。
 
         :param values: The values of this ValuesItem.
-        :type: list[ListApiVersionsItem]
+        :type values: list[:class:`huaweicloudsdkdns.v2.ListApiVersionsItem`]
         """
         self._values = values
 

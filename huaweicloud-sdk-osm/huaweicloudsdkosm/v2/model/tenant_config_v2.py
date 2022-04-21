@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TenantConfigV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class TenantConfigV2:
     }
 
     def __init__(self, create_case_ccemail_max_count=None):
-        """TenantConfigV2 - a model defined in huaweicloud sdk"""
+        """TenantConfigV2
+
+        The model defined in huaweicloud sdk
+
+        :param create_case_ccemail_max_count: 抄送邮箱最大个数
+        :type create_case_ccemail_max_count: int
+        """
         
         
 
@@ -58,7 +63,7 @@ class TenantConfigV2:
         抄送邮箱最大个数
 
         :param create_case_ccemail_max_count: The create_case_ccemail_max_count of this TenantConfigV2.
-        :type: int
+        :type create_case_ccemail_max_count: int
         """
         self._create_case_ccemail_max_count = create_case_ccemail_max_count
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateRuleResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class UpdateRuleResponse(SdkResponse):
     }
 
     def __init__(self, rule_id=None, name=None, description=None, condition_group=None, actions=None, rule_type=None, status=None, app_id=None, edge_node_ids=None, last_update_time=None):
-        """UpdateRuleResponse - a model defined in huaweicloud sdk"""
+        """UpdateRuleResponse
+
+        The model defined in huaweicloud sdk
+
+        :param rule_id: 规则id。
+        :type rule_id: str
+        :param name: 规则名称。
+        :type name: str
+        :param description: 规则的描述信息。
+        :type description: str
+        :param condition_group: 
+        :type condition_group: :class:`huaweicloudsdkiotda.v5.ConditionGroup`
+        :param actions: 规则的动作列表，单个规则最多支持设置10个动作。
+        :type actions: list[:class:`huaweicloudsdkiotda.v5.RuleAction`]
+        :param rule_type: 规则的类型 - DEVICE_LINKAGE：设备联动。 - DATA_FORWARDING：数据转发。 - EDGE：边缘侧。 
+        :type rule_type: str
+        :param status: 规则的状态，默认值：active。 - active：激活。 - inactive：未激活。 
+        :type status: str
+        :param app_id: 资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，建议携带该参数指定创建的规则归属到哪个资源空间下，否则创建的规则将会归属到[默认资源空间](https://support.huaweicloud.com/usermanual-iothub/iot_01_0006.html#section0)下。
+        :type app_id: str
+        :param edge_node_ids: 归属边缘侧节点设备ID列表。
+        :type edge_node_ids: list[str]
+        :param last_update_time: 规则最后更新时间，使用UTC时区，格式：yyyyMMdd&#39;T&#39;HHmmss&#39;Z&#39;。
+        :type last_update_time: str
+        """
         
         super(UpdateRuleResponse, self).__init__()
 
@@ -103,7 +126,7 @@ class UpdateRuleResponse(SdkResponse):
         规则id。
 
         :param rule_id: The rule_id of this UpdateRuleResponse.
-        :type: str
+        :type rule_id: str
         """
         self._rule_id = rule_id
 
@@ -125,7 +148,7 @@ class UpdateRuleResponse(SdkResponse):
         规则名称。
 
         :param name: The name of this UpdateRuleResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -147,7 +170,7 @@ class UpdateRuleResponse(SdkResponse):
         规则的描述信息。
 
         :param description: The description of this UpdateRuleResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -157,7 +180,7 @@ class UpdateRuleResponse(SdkResponse):
 
 
         :return: The condition_group of this UpdateRuleResponse.
-        :rtype: ConditionGroup
+        :rtype: :class:`huaweicloudsdkiotda.v5.ConditionGroup`
         """
         return self._condition_group
 
@@ -167,7 +190,7 @@ class UpdateRuleResponse(SdkResponse):
 
 
         :param condition_group: The condition_group of this UpdateRuleResponse.
-        :type: ConditionGroup
+        :type condition_group: :class:`huaweicloudsdkiotda.v5.ConditionGroup`
         """
         self._condition_group = condition_group
 
@@ -178,7 +201,7 @@ class UpdateRuleResponse(SdkResponse):
         规则的动作列表，单个规则最多支持设置10个动作。
 
         :return: The actions of this UpdateRuleResponse.
-        :rtype: list[RuleAction]
+        :rtype: list[:class:`huaweicloudsdkiotda.v5.RuleAction`]
         """
         return self._actions
 
@@ -189,7 +212,7 @@ class UpdateRuleResponse(SdkResponse):
         规则的动作列表，单个规则最多支持设置10个动作。
 
         :param actions: The actions of this UpdateRuleResponse.
-        :type: list[RuleAction]
+        :type actions: list[:class:`huaweicloudsdkiotda.v5.RuleAction`]
         """
         self._actions = actions
 
@@ -211,7 +234,7 @@ class UpdateRuleResponse(SdkResponse):
         规则的类型 - DEVICE_LINKAGE：设备联动。 - DATA_FORWARDING：数据转发。 - EDGE：边缘侧。 
 
         :param rule_type: The rule_type of this UpdateRuleResponse.
-        :type: str
+        :type rule_type: str
         """
         self._rule_type = rule_type
 
@@ -233,7 +256,7 @@ class UpdateRuleResponse(SdkResponse):
         规则的状态，默认值：active。 - active：激活。 - inactive：未激活。 
 
         :param status: The status of this UpdateRuleResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -255,7 +278,7 @@ class UpdateRuleResponse(SdkResponse):
         资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，建议携带该参数指定创建的规则归属到哪个资源空间下，否则创建的规则将会归属到[默认资源空间](https://support.huaweicloud.com/usermanual-iothub/iot_01_0006.html#section0)下。
 
         :param app_id: The app_id of this UpdateRuleResponse.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -277,7 +300,7 @@ class UpdateRuleResponse(SdkResponse):
         归属边缘侧节点设备ID列表。
 
         :param edge_node_ids: The edge_node_ids of this UpdateRuleResponse.
-        :type: list[str]
+        :type edge_node_ids: list[str]
         """
         self._edge_node_ids = edge_node_ids
 
@@ -299,7 +322,7 @@ class UpdateRuleResponse(SdkResponse):
         规则最后更新时间，使用UTC时区，格式：yyyyMMdd'T'HHmmss'Z'。
 
         :param last_update_time: The last_update_time of this UpdateRuleResponse.
-        :type: str
+        :type last_update_time: str
         """
         self._last_update_time = last_update_time
 

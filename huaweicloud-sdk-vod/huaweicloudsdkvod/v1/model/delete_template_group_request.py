@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteTemplateGroupRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteTemplateGroupRequest:
     }
 
     def __init__(self, group_id=None):
-        """DeleteTemplateGroupRequest - a model defined in huaweicloud sdk"""
+        """DeleteTemplateGroupRequest
+
+        The model defined in huaweicloud sdk
+
+        :param group_id: 模板组id
+        :type group_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteTemplateGroupRequest:
         模板组id
 
         :param group_id: The group_id of this DeleteTemplateGroupRequest.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 

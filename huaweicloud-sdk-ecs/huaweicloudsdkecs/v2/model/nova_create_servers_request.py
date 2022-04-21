@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NovaCreateServersRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class NovaCreateServersRequest:
     }
 
     def __init__(self, open_stack_api_version=None, body=None):
-        """NovaCreateServersRequest - a model defined in huaweicloud sdk"""
+        """NovaCreateServersRequest
+
+        The model defined in huaweicloud sdk
+
+        :param open_stack_api_version: 微版本头
+        :type open_stack_api_version: str
+        :param body: Body of the NovaCreateServersRequest
+        :type body: :class:`huaweicloudsdkecs.v2.NovaCreateServersRequestBody`
+        """
         
         
 
@@ -63,7 +70,7 @@ class NovaCreateServersRequest:
         微版本头
 
         :param open_stack_api_version: The open_stack_api_version of this NovaCreateServersRequest.
-        :type: str
+        :type open_stack_api_version: str
         """
         self._open_stack_api_version = open_stack_api_version
 
@@ -73,7 +80,7 @@ class NovaCreateServersRequest:
 
 
         :return: The body of this NovaCreateServersRequest.
-        :rtype: NovaCreateServersRequestBody
+        :rtype: :class:`huaweicloudsdkecs.v2.NovaCreateServersRequestBody`
         """
         return self._body
 
@@ -83,7 +90,7 @@ class NovaCreateServersRequest:
 
 
         :param body: The body of this NovaCreateServersRequest.
-        :type: NovaCreateServersRequestBody
+        :type body: :class:`huaweicloudsdkecs.v2.NovaCreateServersRequestBody`
         """
         self._body = body
 

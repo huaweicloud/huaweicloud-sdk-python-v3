@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateAssetResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UpdateAssetResponse(SdkResponse):
     }
 
     def __init__(self, asset_id=None, video_upload_url=None, cover_upload_url=None, subtitle_upload_urls=None):
-        """UpdateAssetResponse - a model defined in huaweicloud sdk"""
+        """UpdateAssetResponse
+
+        The model defined in huaweicloud sdk
+
+        :param asset_id: 媒资ID。
+        :type asset_id: str
+        :param video_upload_url: 视频上传地址。  用于客户端上传不超过20MB的小视频文件（&lt;&#x3D;20MB）。该URL中携带了临时授权信息，当文件大于20MB时，需要采用分段方式上传。  &gt; 您可以使用PUT请求向“**video_upload_url**”中上传视频文件。其中，“**Content-Type**”需要根据上传的视频文件类型进行设置，如下所示：视频文件：video/视频格式，如：“video/mp4”。
+        :type video_upload_url: str
+        :param cover_upload_url: 封面上传地址，用于上传封面文件。  &gt; 您可以使用PUT请求向“**cover_upload_url**”中上传封面图片。其中，“**Content-Type**”需要根据上传的封面文件类型进行设置，如下所示：图片文件：image/图片格式，如：“image/png”。
+        :type cover_upload_url: str
+        :param subtitle_upload_urls: 字幕上传地址，用于上传字幕。  &gt; 您可以使用PUT请求向“**subtitle_upload_urls**”中上传字幕文件。其中，“**Content-Type**”需要根据上传的字幕文件类型进行设置，如下所示：字幕文件：application/octet-stream。
+        :type subtitle_upload_urls: list[str]
+        """
         
         super(UpdateAssetResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class UpdateAssetResponse(SdkResponse):
         媒资ID。
 
         :param asset_id: The asset_id of this UpdateAssetResponse.
-        :type: str
+        :type asset_id: str
         """
         self._asset_id = asset_id
 
@@ -95,7 +106,7 @@ class UpdateAssetResponse(SdkResponse):
         视频上传地址。  用于客户端上传不超过20MB的小视频文件（<=20MB）。该URL中携带了临时授权信息，当文件大于20MB时，需要采用分段方式上传。  > 您可以使用PUT请求向“**video_upload_url**”中上传视频文件。其中，“**Content-Type**”需要根据上传的视频文件类型进行设置，如下所示：视频文件：video/视频格式，如：“video/mp4”。
 
         :param video_upload_url: The video_upload_url of this UpdateAssetResponse.
-        :type: str
+        :type video_upload_url: str
         """
         self._video_upload_url = video_upload_url
 
@@ -117,7 +128,7 @@ class UpdateAssetResponse(SdkResponse):
         封面上传地址，用于上传封面文件。  > 您可以使用PUT请求向“**cover_upload_url**”中上传封面图片。其中，“**Content-Type**”需要根据上传的封面文件类型进行设置，如下所示：图片文件：image/图片格式，如：“image/png”。
 
         :param cover_upload_url: The cover_upload_url of this UpdateAssetResponse.
-        :type: str
+        :type cover_upload_url: str
         """
         self._cover_upload_url = cover_upload_url
 
@@ -139,7 +150,7 @@ class UpdateAssetResponse(SdkResponse):
         字幕上传地址，用于上传字幕。  > 您可以使用PUT请求向“**subtitle_upload_urls**”中上传字幕文件。其中，“**Content-Type**”需要根据上传的字幕文件类型进行设置，如下所示：字幕文件：application/octet-stream。
 
         :param subtitle_upload_urls: The subtitle_upload_urls of this UpdateAssetResponse.
-        :type: list[str]
+        :type subtitle_upload_urls: list[str]
         """
         self._subtitle_upload_urls = subtitle_upload_urls
 

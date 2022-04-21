@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowRepositoryStatisticalDataV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ShowRepositoryStatisticalDataV2Response(SdkResponse):
     }
 
     def __init__(self, name=None, commit_number=None, git_repo_cap=None, last_commit_time=None, code_lines=None, branch_number=None, detail_url=None, download_url=None):
-        """ShowRepositoryStatisticalDataV2Response - a model defined in huaweicloud sdk"""
+        """ShowRepositoryStatisticalDataV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param name: 代码仓的名称
+        :type name: str
+        :param commit_number: 提交数量
+        :type commit_number: int
+        :param git_repo_cap: Git库容量
+        :type git_repo_cap: str
+        :param last_commit_time: 近一次提交时间
+        :type last_commit_time: str
+        :param code_lines: 代码行数
+        :type code_lines: int
+        :param branch_number: 分支数量
+        :type branch_number: int
+        :param detail_url: 代码仓路径url
+        :type detail_url: str
+        :param download_url: 代码仓下载url
+        :type download_url: str
+        """
         
         super(ShowRepositoryStatisticalDataV2Response, self).__init__()
 
@@ -93,7 +112,7 @@ class ShowRepositoryStatisticalDataV2Response(SdkResponse):
         代码仓的名称
 
         :param name: The name of this ShowRepositoryStatisticalDataV2Response.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -115,7 +134,7 @@ class ShowRepositoryStatisticalDataV2Response(SdkResponse):
         提交数量
 
         :param commit_number: The commit_number of this ShowRepositoryStatisticalDataV2Response.
-        :type: int
+        :type commit_number: int
         """
         self._commit_number = commit_number
 
@@ -137,7 +156,7 @@ class ShowRepositoryStatisticalDataV2Response(SdkResponse):
         Git库容量
 
         :param git_repo_cap: The git_repo_cap of this ShowRepositoryStatisticalDataV2Response.
-        :type: str
+        :type git_repo_cap: str
         """
         self._git_repo_cap = git_repo_cap
 
@@ -159,7 +178,7 @@ class ShowRepositoryStatisticalDataV2Response(SdkResponse):
         近一次提交时间
 
         :param last_commit_time: The last_commit_time of this ShowRepositoryStatisticalDataV2Response.
-        :type: str
+        :type last_commit_time: str
         """
         self._last_commit_time = last_commit_time
 
@@ -181,7 +200,7 @@ class ShowRepositoryStatisticalDataV2Response(SdkResponse):
         代码行数
 
         :param code_lines: The code_lines of this ShowRepositoryStatisticalDataV2Response.
-        :type: int
+        :type code_lines: int
         """
         self._code_lines = code_lines
 
@@ -203,7 +222,7 @@ class ShowRepositoryStatisticalDataV2Response(SdkResponse):
         分支数量
 
         :param branch_number: The branch_number of this ShowRepositoryStatisticalDataV2Response.
-        :type: int
+        :type branch_number: int
         """
         self._branch_number = branch_number
 
@@ -225,7 +244,7 @@ class ShowRepositoryStatisticalDataV2Response(SdkResponse):
         代码仓路径url
 
         :param detail_url: The detail_url of this ShowRepositoryStatisticalDataV2Response.
-        :type: str
+        :type detail_url: str
         """
         self._detail_url = detail_url
 
@@ -247,7 +266,7 @@ class ShowRepositoryStatisticalDataV2Response(SdkResponse):
         代码仓下载url
 
         :param download_url: The download_url of this ShowRepositoryStatisticalDataV2Response.
-        :type: str
+        :type download_url: str
         """
         self._download_url = download_url
 

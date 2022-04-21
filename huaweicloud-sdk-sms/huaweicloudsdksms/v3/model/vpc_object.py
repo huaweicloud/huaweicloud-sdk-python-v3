@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VpcObject:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class VpcObject:
     }
 
     def __init__(self, id=None, name=None, cidr=None):
-        """VpcObject - a model defined in huaweicloud sdk"""
+        """VpcObject
+
+        The model defined in huaweicloud sdk
+
+        :param id: 虚拟私有云ID，如果是自动创建，填“autoCreate”
+        :type id: str
+        :param name: 虚拟私有云名称
+        :type name: str
+        :param cidr: VPC的网段，默认192.168.0.0/16
+        :type cidr: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class VpcObject:
         虚拟私有云ID，如果是自动创建，填“autoCreate”
 
         :param id: The id of this VpcObject.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -88,7 +97,7 @@ class VpcObject:
         虚拟私有云名称
 
         :param name: The name of this VpcObject.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -110,7 +119,7 @@ class VpcObject:
         VPC的网段，默认192.168.0.0/16
 
         :param cidr: The cidr of this VpcObject.
-        :type: str
+        :type cidr: str
         """
         self._cidr = cidr
 

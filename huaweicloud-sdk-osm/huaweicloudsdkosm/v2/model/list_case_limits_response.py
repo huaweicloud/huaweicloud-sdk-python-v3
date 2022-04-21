@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCaseLimitsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListCaseLimitsResponse(SdkResponse):
     }
 
     def __init__(self, config=None):
-        """ListCaseLimitsResponse - a model defined in huaweicloud sdk"""
+        """ListCaseLimitsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param config: 
+        :type config: :class:`huaweicloudsdkosm.v2.TenantConfigV2`
+        """
         
         super(ListCaseLimitsResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class ListCaseLimitsResponse(SdkResponse):
 
 
         :return: The config of this ListCaseLimitsResponse.
-        :rtype: TenantConfigV2
+        :rtype: :class:`huaweicloudsdkosm.v2.TenantConfigV2`
         """
         return self._config
 
@@ -56,7 +61,7 @@ class ListCaseLimitsResponse(SdkResponse):
 
 
         :param config: The config of this ListCaseLimitsResponse.
-        :type: TenantConfigV2
+        :type config: :class:`huaweicloudsdkosm.v2.TenantConfigV2`
         """
         self._config = config
 

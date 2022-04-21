@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ThumbTask:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class ThumbTask:
     }
 
     def __init__(self, task_id=None, status=None, create_time=None, end_time=None, input=None, output=None, output_file_name=None, user_data=None, description=None, thumbnail_info=None):
-        """ThumbTask - a model defined in huaweicloud sdk"""
+        """ThumbTask
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 任务ID。  截图服务接受任务后产生的任务ID。一次最多10个。 
+        :type task_id: str
+        :param status: 任务状态
+        :type status: str
+        :param create_time: 起始时间。  格式为yyyymmddhhmmss。必须是与时区无关的UTC时间，指定task_id时该参数无效。 
+        :type create_time: str
+        :param end_time: 结束时间。  格式为yyyymmddhhmmss。必须是与时区无关的UTC时间，指定task_id时该参数无效。 
+        :type end_time: str
+        :param input: 
+        :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        :param output: 
+        :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        :param output_file_name: 输出文件名。
+        :type output_file_name: str
+        :param user_data: 用户数据。 
+        :type user_data: str
+        :param description: 任务描述。
+        :type description: str
+        :param thumbnail_info: 截图文件信息。 
+        :type thumbnail_info: list[:class:`huaweicloudsdkmpc.v1.PicInfo`]
+        """
         
         
 
@@ -103,7 +126,7 @@ class ThumbTask:
         任务ID。  截图服务接受任务后产生的任务ID。一次最多10个。 
 
         :param task_id: The task_id of this ThumbTask.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -125,7 +148,7 @@ class ThumbTask:
         任务状态
 
         :param status: The status of this ThumbTask.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -147,7 +170,7 @@ class ThumbTask:
         起始时间。  格式为yyyymmddhhmmss。必须是与时区无关的UTC时间，指定task_id时该参数无效。 
 
         :param create_time: The create_time of this ThumbTask.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -169,7 +192,7 @@ class ThumbTask:
         结束时间。  格式为yyyymmddhhmmss。必须是与时区无关的UTC时间，指定task_id时该参数无效。 
 
         :param end_time: The end_time of this ThumbTask.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -179,7 +202,7 @@ class ThumbTask:
 
 
         :return: The input of this ThumbTask.
-        :rtype: ObsObjInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         return self._input
 
@@ -189,7 +212,7 @@ class ThumbTask:
 
 
         :param input: The input of this ThumbTask.
-        :type: ObsObjInfo
+        :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         self._input = input
 
@@ -199,7 +222,7 @@ class ThumbTask:
 
 
         :return: The output of this ThumbTask.
-        :rtype: ObsObjInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         return self._output
 
@@ -209,7 +232,7 @@ class ThumbTask:
 
 
         :param output: The output of this ThumbTask.
-        :type: ObsObjInfo
+        :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         self._output = output
 
@@ -231,7 +254,7 @@ class ThumbTask:
         输出文件名。
 
         :param output_file_name: The output_file_name of this ThumbTask.
-        :type: str
+        :type output_file_name: str
         """
         self._output_file_name = output_file_name
 
@@ -253,7 +276,7 @@ class ThumbTask:
         用户数据。 
 
         :param user_data: The user_data of this ThumbTask.
-        :type: str
+        :type user_data: str
         """
         self._user_data = user_data
 
@@ -275,7 +298,7 @@ class ThumbTask:
         任务描述。
 
         :param description: The description of this ThumbTask.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -286,7 +309,7 @@ class ThumbTask:
         截图文件信息。 
 
         :return: The thumbnail_info of this ThumbTask.
-        :rtype: list[PicInfo]
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.PicInfo`]
         """
         return self._thumbnail_info
 
@@ -297,7 +320,7 @@ class ThumbTask:
         截图文件信息。 
 
         :param thumbnail_info: The thumbnail_info of this ThumbTask.
-        :type: list[PicInfo]
+        :type thumbnail_info: list[:class:`huaweicloudsdkmpc.v1.PicInfo`]
         """
         self._thumbnail_info = thumbnail_info
 

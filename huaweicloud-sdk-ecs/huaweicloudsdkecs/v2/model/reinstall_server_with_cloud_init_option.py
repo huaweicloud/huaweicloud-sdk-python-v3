@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ReinstallServerWithCloudInitOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ReinstallServerWithCloudInitOption:
     }
 
     def __init__(self, adminpass=None, keyname=None, userid=None, metadata=None, mode=None):
-        """ReinstallServerWithCloudInitOption - a model defined in huaweicloud sdk"""
+        """ReinstallServerWithCloudInitOption
+
+        The model defined in huaweicloud sdk
+
+        :param adminpass: 云服务器管理员帐户的初始登录密码。 其中，Windows管理员帐户的用户名为Administrator。 建议密码复杂度如下：  - 长度为8-26位。 - 密码至少必须包含大写字母、小写字母、数字和特殊字符（!@$%^-_&#x3D;+[{}]:,./?）中的三种。   &gt; 说明：  - 对于Windows弹性云服务器，密码不能包含用户名或用户名的逆序，不能包含用户名中超过两个连续字符的部分。 - 对于Linux弹性云服务器也可使用user_data字段实现密码注入，此时adminpass字段无效。 - adminpass和keyname不能同时有值。 - adminpass和keyname如果同时为空，此时，metadata中的user_data属性必须有值。
+        :type adminpass: str
+        :param keyname: 密钥名称。  密钥可以通过密钥创建接口进行创建（请参见[创建和导入SSH密钥](https://support.huaweicloud.com/api-ecs/zh-cn_topic_0020212678.html)），或使用SSH密钥查询接口查询已有的密钥（请参见[查询SSH密钥列表](https://support.huaweicloud.com/api-ecs/ecs_03_1201.html) ）。
+        :type keyname: str
+        :param userid: 用户ID。当传入keyname参数时，此参数为必选。
+        :type userid: str
+        :param metadata: 
+        :type metadata: :class:`huaweicloudsdkecs.v2.ReinstallSeverMetadata`
+        :param mode: 取值为withStopServer ，支持开机状态下重装弹性云服务器。 mode取值为withStopServer时，对开机状态的弹性云服务器执行重装操作，系统自动对云服务器先执行关机，再重装操作系统。
+        :type mode: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class ReinstallServerWithCloudInitOption:
         云服务器管理员帐户的初始登录密码。 其中，Windows管理员帐户的用户名为Administrator。 建议密码复杂度如下：  - 长度为8-26位。 - 密码至少必须包含大写字母、小写字母、数字和特殊字符（!@$%^-_=+[{}]:,./?）中的三种。   > 说明：  - 对于Windows弹性云服务器，密码不能包含用户名或用户名的逆序，不能包含用户名中超过两个连续字符的部分。 - 对于Linux弹性云服务器也可使用user_data字段实现密码注入，此时adminpass字段无效。 - adminpass和keyname不能同时有值。 - adminpass和keyname如果同时为空，此时，metadata中的user_data属性必须有值。
 
         :param adminpass: The adminpass of this ReinstallServerWithCloudInitOption.
-        :type: str
+        :type adminpass: str
         """
         self._adminpass = adminpass
 
@@ -100,7 +113,7 @@ class ReinstallServerWithCloudInitOption:
         密钥名称。  密钥可以通过密钥创建接口进行创建（请参见[创建和导入SSH密钥](https://support.huaweicloud.com/api-ecs/zh-cn_topic_0020212678.html)），或使用SSH密钥查询接口查询已有的密钥（请参见[查询SSH密钥列表](https://support.huaweicloud.com/api-ecs/ecs_03_1201.html) ）。
 
         :param keyname: The keyname of this ReinstallServerWithCloudInitOption.
-        :type: str
+        :type keyname: str
         """
         self._keyname = keyname
 
@@ -122,7 +135,7 @@ class ReinstallServerWithCloudInitOption:
         用户ID。当传入keyname参数时，此参数为必选。
 
         :param userid: The userid of this ReinstallServerWithCloudInitOption.
-        :type: str
+        :type userid: str
         """
         self._userid = userid
 
@@ -132,7 +145,7 @@ class ReinstallServerWithCloudInitOption:
 
 
         :return: The metadata of this ReinstallServerWithCloudInitOption.
-        :rtype: ReinstallSeverMetadata
+        :rtype: :class:`huaweicloudsdkecs.v2.ReinstallSeverMetadata`
         """
         return self._metadata
 
@@ -142,7 +155,7 @@ class ReinstallServerWithCloudInitOption:
 
 
         :param metadata: The metadata of this ReinstallServerWithCloudInitOption.
-        :type: ReinstallSeverMetadata
+        :type metadata: :class:`huaweicloudsdkecs.v2.ReinstallSeverMetadata`
         """
         self._metadata = metadata
 
@@ -164,7 +177,7 @@ class ReinstallServerWithCloudInitOption:
         取值为withStopServer ，支持开机状态下重装弹性云服务器。 mode取值为withStopServer时，对开机状态的弹性云服务器执行重装操作，系统自动对云服务器先执行关机，再重装操作系统。
 
         :param mode: The mode of this ReinstallServerWithCloudInitOption.
-        :type: str
+        :type mode: str
         """
         self._mode = mode
 

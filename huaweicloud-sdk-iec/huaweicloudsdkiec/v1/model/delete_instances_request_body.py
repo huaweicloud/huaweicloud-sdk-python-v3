@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteInstancesRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteInstancesRequestBody:
     }
 
     def __init__(self, servers=None):
-        """DeleteInstancesRequestBody - a model defined in huaweicloud sdk"""
+        """DeleteInstancesRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param servers: 边缘实例ID列表。 &gt; IEC默认同步删除边缘实例的弹性公网IP和磁盘。
+        :type servers: list[:class:`huaweicloudsdkiec.v1.BaseId`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class DeleteInstancesRequestBody:
         边缘实例ID列表。 > IEC默认同步删除边缘实例的弹性公网IP和磁盘。
 
         :return: The servers of this DeleteInstancesRequestBody.
-        :rtype: list[BaseId]
+        :rtype: list[:class:`huaweicloudsdkiec.v1.BaseId`]
         """
         return self._servers
 
@@ -57,7 +62,7 @@ class DeleteInstancesRequestBody:
         边缘实例ID列表。 > IEC默认同步删除边缘实例的弹性公网IP和磁盘。
 
         :param servers: The servers of this DeleteInstancesRequestBody.
-        :type: list[BaseId]
+        :type servers: list[:class:`huaweicloudsdkiec.v1.BaseId`]
         """
         self._servers = servers
 

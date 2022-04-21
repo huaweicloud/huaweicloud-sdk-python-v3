@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Plugin:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Plugin:
     }
 
     def __init__(self, attribute=None, name=None):
-        """Plugin - a model defined in huaweicloud sdk"""
+        """Plugin
+
+        The model defined in huaweicloud sdk
+
+        :param attribute: 插件属性
+        :type attribute: str
+        :param name: 插件名
+        :type name: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class Plugin:
         插件属性
 
         :param attribute: The attribute of this Plugin.
-        :type: str
+        :type attribute: str
         """
         self._attribute = attribute
 
@@ -85,7 +92,7 @@ class Plugin:
         插件名
 
         :param name: The name of this Plugin.
-        :type: str
+        :type name: str
         """
         self._name = name
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TaskOutputWebhook:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class TaskOutputWebhook:
     }
 
     def __init__(self, url=None, headers=None, data_category=None):
-        """TaskOutputWebhook - a model defined in huaweicloud sdk"""
+        """TaskOutputWebhook
+
+        The model defined in huaweicloud sdk
+
+        :param url: 结果回调地址
+        :type url: str
+        :param headers: 结果回调时需要携带的请求头
+        :type headers: object
+        :param data_category: 作业输出数据类别的列表，当输出类型下有这个列表时，表示希望这个输出类型下存放dataCategory列表内的数据，部分服务需要
+        :type data_category: list[str]
+        """
         
         
 
@@ -66,7 +75,7 @@ class TaskOutputWebhook:
         结果回调地址
 
         :param url: The url of this TaskOutputWebhook.
-        :type: str
+        :type url: str
         """
         self._url = url
 
@@ -88,7 +97,7 @@ class TaskOutputWebhook:
         结果回调时需要携带的请求头
 
         :param headers: The headers of this TaskOutputWebhook.
-        :type: object
+        :type headers: object
         """
         self._headers = headers
 
@@ -110,7 +119,7 @@ class TaskOutputWebhook:
         作业输出数据类别的列表，当输出类型下有这个列表时，表示希望这个输出类型下存放dataCategory列表内的数据，部分服务需要
 
         :param data_category: The data_category of this TaskOutputWebhook.
-        :type: list[str]
+        :type data_category: list[str]
         """
         self._data_category = data_category
 

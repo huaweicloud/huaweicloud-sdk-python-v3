@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ProtocolResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ProtocolResult:
     }
 
     def __init__(self, id=None, mapping_id=None, links=None):
-        """ProtocolResult - a model defined in huaweicloud sdk"""
+        """ProtocolResult
+
+        The model defined in huaweicloud sdk
+
+        :param id: 协议ID。
+        :type id: str
+        :param mapping_id: 映射ID。
+        :type mapping_id: str
+        :param links: 
+        :type links: :class:`huaweicloudsdkiam.v3.ProtocolLinks`
+        """
         
         
 
@@ -65,7 +74,7 @@ class ProtocolResult:
         协议ID。
 
         :param id: The id of this ProtocolResult.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -87,7 +96,7 @@ class ProtocolResult:
         映射ID。
 
         :param mapping_id: The mapping_id of this ProtocolResult.
-        :type: str
+        :type mapping_id: str
         """
         self._mapping_id = mapping_id
 
@@ -97,7 +106,7 @@ class ProtocolResult:
 
 
         :return: The links of this ProtocolResult.
-        :rtype: ProtocolLinks
+        :rtype: :class:`huaweicloudsdkiam.v3.ProtocolLinks`
         """
         return self._links
 
@@ -107,7 +116,7 @@ class ProtocolResult:
 
 
         :param links: The links of this ProtocolResult.
-        :type: ProtocolLinks
+        :type links: :class:`huaweicloudsdkiam.v3.ProtocolLinks`
         """
         self._links = links
 

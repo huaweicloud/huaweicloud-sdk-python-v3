@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DailyTimerType:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DailyTimerType:
     }
 
     def __init__(self, time=None, days_of_week=None):
-        """DailyTimerType - a model defined in huaweicloud sdk"""
+        """DailyTimerType
+
+        The model defined in huaweicloud sdk
+
+        :param time: **参数说明**：规则触发的时间，格式：HH:MM。
+        :type time: str
+        :param days_of_week: **参数说明**：星期列表，以逗号分隔。1代表周日，2代表周一，依次类推，默认为每天。 **取值范围**：只允许数字和逗号的组合，数字不小于1不大于7，数量不超过7个，以逗号隔开
+        :type days_of_week: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class DailyTimerType:
         **参数说明**：规则触发的时间，格式：HH:MM。
 
         :param time: The time of this DailyTimerType.
-        :type: str
+        :type time: str
         """
         self._time = time
 
@@ -84,7 +91,7 @@ class DailyTimerType:
         **参数说明**：星期列表，以逗号分隔。1代表周日，2代表周一，依次类推，默认为每天。 **取值范围**：只允许数字和逗号的组合，数字不小于1不大于7，数量不超过7个，以逗号隔开
 
         :param days_of_week: The days_of_week of this DailyTimerType.
-        :type: str
+        :type days_of_week: str
         """
         self._days_of_week = days_of_week
 

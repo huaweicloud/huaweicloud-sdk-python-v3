@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SubscriptionInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class SubscriptionInfo:
     }
 
     def __init__(self, endpoints=None, protocol=None):
-        """SubscriptionInfo - a model defined in huaweicloud sdk"""
+        """SubscriptionInfo
+
+        The model defined in huaweicloud sdk
+
+        :param endpoints: 短信或者邮件列表
+        :type endpoints: list[str]
+        :param protocol: 收件方式，sms：短信,email：邮件
+        :type protocol: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class SubscriptionInfo:
         短信或者邮件列表
 
         :param endpoints: The endpoints of this SubscriptionInfo.
-        :type: list[str]
+        :type endpoints: list[str]
         """
         self._endpoints = endpoints
 
@@ -85,7 +92,7 @@ class SubscriptionInfo:
         收件方式，sms：短信,email：邮件
 
         :param protocol: The protocol of this SubscriptionInfo.
-        :type: str
+        :type protocol: str
         """
         self._protocol = protocol
 

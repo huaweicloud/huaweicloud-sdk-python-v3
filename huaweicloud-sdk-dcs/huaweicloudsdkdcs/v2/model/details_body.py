@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DetailsBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class DetailsBody:
     }
 
     def __init__(self, old_capacity=None, new_capacity=None, enable_public_ip=None, public_ip_id=None, public_ip_address=None, enable_ssl=None, old_cache_mode=None, new_cache_mode=None):
-        """DetailsBody - a model defined in huaweicloud sdk"""
+        """DetailsBody
+
+        The model defined in huaweicloud sdk
+
+        :param old_capacity: 变更前的容量，仅在变更规格时有值
+        :type old_capacity: str
+        :param new_capacity: 变更后的容量，仅在变更规格时有值
+        :type new_capacity: str
+        :param enable_public_ip: 是否开启公网访问，仅在开启公网访问时有值
+        :type enable_public_ip: bool
+        :param public_ip_id: 公网IP的ID，仅在开启公网访问时有值
+        :type public_ip_id: str
+        :param public_ip_address: 公网IP地址，仅在开启公网访问时有值
+        :type public_ip_address: str
+        :param enable_ssl: 是否开启ssl，仅在开启ssl时有值
+        :type enable_ssl: bool
+        :param old_cache_mode: 变更前的缓存类型，仅在变更规格时有值
+        :type old_cache_mode: str
+        :param new_cache_mode: 变更后的缓存类型，仅在变更规格时有值
+        :type new_cache_mode: str
+        """
         
         
 
@@ -93,7 +112,7 @@ class DetailsBody:
         变更前的容量，仅在变更规格时有值
 
         :param old_capacity: The old_capacity of this DetailsBody.
-        :type: str
+        :type old_capacity: str
         """
         self._old_capacity = old_capacity
 
@@ -115,7 +134,7 @@ class DetailsBody:
         变更后的容量，仅在变更规格时有值
 
         :param new_capacity: The new_capacity of this DetailsBody.
-        :type: str
+        :type new_capacity: str
         """
         self._new_capacity = new_capacity
 
@@ -137,7 +156,7 @@ class DetailsBody:
         是否开启公网访问，仅在开启公网访问时有值
 
         :param enable_public_ip: The enable_public_ip of this DetailsBody.
-        :type: bool
+        :type enable_public_ip: bool
         """
         self._enable_public_ip = enable_public_ip
 
@@ -159,7 +178,7 @@ class DetailsBody:
         公网IP的ID，仅在开启公网访问时有值
 
         :param public_ip_id: The public_ip_id of this DetailsBody.
-        :type: str
+        :type public_ip_id: str
         """
         self._public_ip_id = public_ip_id
 
@@ -181,7 +200,7 @@ class DetailsBody:
         公网IP地址，仅在开启公网访问时有值
 
         :param public_ip_address: The public_ip_address of this DetailsBody.
-        :type: str
+        :type public_ip_address: str
         """
         self._public_ip_address = public_ip_address
 
@@ -203,7 +222,7 @@ class DetailsBody:
         是否开启ssl，仅在开启ssl时有值
 
         :param enable_ssl: The enable_ssl of this DetailsBody.
-        :type: bool
+        :type enable_ssl: bool
         """
         self._enable_ssl = enable_ssl
 
@@ -225,7 +244,7 @@ class DetailsBody:
         变更前的缓存类型，仅在变更规格时有值
 
         :param old_cache_mode: The old_cache_mode of this DetailsBody.
-        :type: str
+        :type old_cache_mode: str
         """
         self._old_cache_mode = old_cache_mode
 
@@ -247,7 +266,7 @@ class DetailsBody:
         变更后的缓存类型，仅在变更规格时有值
 
         :param new_cache_mode: The new_cache_mode of this DetailsBody.
-        :type: str
+        :type new_cache_mode: str
         """
         self._new_cache_mode = new_cache_mode
 

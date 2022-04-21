@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CheckpointResourceResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class CheckpointResourceResp:
     }
 
     def __init__(self, extra_info=None, id=None, name=None, protect_status=None, resource_size=None, type=None, backup_size=None, backup_count=None):
-        """CheckpointResourceResp - a model defined in huaweicloud sdk"""
+        """CheckpointResourceResp
+
+        The model defined in huaweicloud sdk
+
+        :param extra_info: 资源附加信息
+        :type extra_info: str
+        :param id: 待备份资源id
+        :type id: str
+        :param name: 待备份资源名称
+        :type name: str
+        :param protect_status: 保护状态。available（可用），error（错误），protecting（备份中），restoring（恢复中），removing（删除中）。
+        :type protect_status: str
+        :param resource_size: 资源已分配容量,单位为GB
+        :type resource_size: str
+        :param type: 待备份资源的类型: OS::Nova::Server, OS::Cinder::Volume, OS::Ironic::BareMetalServer, OS::Native::Server, OS::Sfs::Turbo
+        :type type: str
+        :param backup_size: 副本大小
+        :type backup_size: str
+        :param backup_count: 副本数量
+        :type backup_count: str
+        """
         
         
 
@@ -90,7 +109,7 @@ class CheckpointResourceResp:
         资源附加信息
 
         :param extra_info: The extra_info of this CheckpointResourceResp.
-        :type: str
+        :type extra_info: str
         """
         self._extra_info = extra_info
 
@@ -112,7 +131,7 @@ class CheckpointResourceResp:
         待备份资源id
 
         :param id: The id of this CheckpointResourceResp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -134,7 +153,7 @@ class CheckpointResourceResp:
         待备份资源名称
 
         :param name: The name of this CheckpointResourceResp.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -156,7 +175,7 @@ class CheckpointResourceResp:
         保护状态。available（可用），error（错误），protecting（备份中），restoring（恢复中），removing（删除中）。
 
         :param protect_status: The protect_status of this CheckpointResourceResp.
-        :type: str
+        :type protect_status: str
         """
         self._protect_status = protect_status
 
@@ -178,7 +197,7 @@ class CheckpointResourceResp:
         资源已分配容量,单位为GB
 
         :param resource_size: The resource_size of this CheckpointResourceResp.
-        :type: str
+        :type resource_size: str
         """
         self._resource_size = resource_size
 
@@ -200,7 +219,7 @@ class CheckpointResourceResp:
         待备份资源的类型: OS::Nova::Server, OS::Cinder::Volume, OS::Ironic::BareMetalServer, OS::Native::Server, OS::Sfs::Turbo
 
         :param type: The type of this CheckpointResourceResp.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -222,7 +241,7 @@ class CheckpointResourceResp:
         副本大小
 
         :param backup_size: The backup_size of this CheckpointResourceResp.
-        :type: str
+        :type backup_size: str
         """
         self._backup_size = backup_size
 
@@ -244,7 +263,7 @@ class CheckpointResourceResp:
         副本数量
 
         :param backup_count: The backup_count of this CheckpointResourceResp.
-        :type: str
+        :type backup_count: str
         """
         self._backup_count = backup_count
 

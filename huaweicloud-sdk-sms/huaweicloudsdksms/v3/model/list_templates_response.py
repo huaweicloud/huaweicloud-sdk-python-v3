@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTemplatesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, count=None, templates=None):
-        """ListTemplatesResponse - a model defined in huaweicloud sdk"""
+        """ListTemplatesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 模板个数
+        :type count: int
+        :param templates: 模板信息
+        :type templates: list[:class:`huaweicloudsdksms.v3.TemplateResponse`]
+        """
         
         super(ListTemplatesResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListTemplatesResponse(SdkResponse):
         模板个数
 
         :param count: The count of this ListTemplatesResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -74,7 +81,7 @@ class ListTemplatesResponse(SdkResponse):
         模板信息
 
         :return: The templates of this ListTemplatesResponse.
-        :rtype: list[TemplateResponse]
+        :rtype: list[:class:`huaweicloudsdksms.v3.TemplateResponse`]
         """
         return self._templates
 
@@ -85,7 +92,7 @@ class ListTemplatesResponse(SdkResponse):
         模板信息
 
         :param templates: The templates of this ListTemplatesResponse.
-        :type: list[TemplateResponse]
+        :type templates: list[:class:`huaweicloudsdksms.v3.TemplateResponse`]
         """
         self._templates = templates
 

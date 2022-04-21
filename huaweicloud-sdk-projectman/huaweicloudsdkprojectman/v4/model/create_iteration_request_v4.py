@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateIterationRequestV4:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CreateIterationRequestV4:
     }
 
     def __init__(self, begin_time=None, description=None, end_time=None, name=None):
-        """CreateIterationRequestV4 - a model defined in huaweicloud sdk"""
+        """CreateIterationRequestV4
+
+        The model defined in huaweicloud sdk
+
+        :param begin_time: 开始时间，年-月-日
+        :type begin_time: str
+        :param description: 描述
+        :type description: str
+        :param end_time: 结束时间，年-月-日
+        :type end_time: str
+        :param name: 标题
+        :type name: str
+        """
         
         
 
@@ -70,7 +81,7 @@ class CreateIterationRequestV4:
         开始时间，年-月-日
 
         :param begin_time: The begin_time of this CreateIterationRequestV4.
-        :type: str
+        :type begin_time: str
         """
         self._begin_time = begin_time
 
@@ -92,7 +103,7 @@ class CreateIterationRequestV4:
         描述
 
         :param description: The description of this CreateIterationRequestV4.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -114,7 +125,7 @@ class CreateIterationRequestV4:
         结束时间，年-月-日
 
         :param end_time: The end_time of this CreateIterationRequestV4.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -136,7 +147,7 @@ class CreateIterationRequestV4:
         标题
 
         :param name: The name of this CreateIterationRequestV4.
-        :type: str
+        :type name: str
         """
         self._name = name
 

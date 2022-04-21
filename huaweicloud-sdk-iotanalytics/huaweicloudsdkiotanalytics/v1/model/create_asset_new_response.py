@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateAssetNewResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -58,7 +57,41 @@ class CreateAssetNewResponse(SdkResponse):
     }
 
     def __init__(self, asset_id=None, asset_model_id=None, asset_model_name=None, name=None, display_name=None, properties=None, analyses=None, root=None, parent=None, children=None, state=None, publish_state=None, created_time=None, modified_time=None, published_time=None):
-        """CreateAssetNewResponse - a model defined in huaweicloud sdk"""
+        """CreateAssetNewResponse
+
+        The model defined in huaweicloud sdk
+
+        :param asset_id: 资产ID
+        :type asset_id: str
+        :param asset_model_id: 资产模型ID
+        :type asset_model_id: str
+        :param asset_model_name: 资产模型名称
+        :type asset_model_name: str
+        :param name: 资产名称
+        :type name: str
+        :param display_name: 资产显示名称
+        :type display_name: str
+        :param properties: 属性集
+        :type properties: list[:class:`huaweicloudsdkiotanalytics.v1.PropertyResponse`]
+        :param analyses: 分析任务集
+        :type analyses: list[:class:`huaweicloudsdkiotanalytics.v1.AnalysisResponse`]
+        :param root: 根资产ID
+        :type root: str
+        :param parent: 父资产ID，根资产的父资产ID为null
+        :type parent: str
+        :param children: 子资产ID集
+        :type children: list[str]
+        :param state: 资产状态，正常状态（ACTIVE），异常状态（INACTIVE）；只有草稿态（SKETCH）资产有此状态；资产处于异常状态的场景有：1、该资产存在未填写设备ID的测量数据类别的属性；2、该资产存在未填写静态值的静态配置类别的属性；3、该资产存在分析任务，该分析任务的输入参数存在属性引用类型为引用其他资产属性，且没有为该输入参数配置引用的其他资产的资产ID
+        :type state: str
+        :param publish_state: 资产发布状态，发布中（PUBLISHING），发布完成（PUBLISHED）；只能对草稿态（SKETCH）的根资产进行发布，也只有草稿态的根资产有此字段；如果根资产从未发布过则值为null
+        :type publish_state: str
+        :param created_time: 创建时间，格式\&quot;yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;\&quot;
+        :type created_time: str
+        :param modified_time: 修改时间，格式\&quot;yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;\&quot;
+        :type modified_time: str
+        :param published_time: 发布时间，只能对草稿态（SKETCH）的根资产进行发布，也只有草稿态的根资产有此字段；如果从未发布过则值为null；格式\&quot;yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;\&quot;
+        :type published_time: str
+        """
         
         super(CreateAssetNewResponse, self).__init__()
 
@@ -128,7 +161,7 @@ class CreateAssetNewResponse(SdkResponse):
         资产ID
 
         :param asset_id: The asset_id of this CreateAssetNewResponse.
-        :type: str
+        :type asset_id: str
         """
         self._asset_id = asset_id
 
@@ -150,7 +183,7 @@ class CreateAssetNewResponse(SdkResponse):
         资产模型ID
 
         :param asset_model_id: The asset_model_id of this CreateAssetNewResponse.
-        :type: str
+        :type asset_model_id: str
         """
         self._asset_model_id = asset_model_id
 
@@ -172,7 +205,7 @@ class CreateAssetNewResponse(SdkResponse):
         资产模型名称
 
         :param asset_model_name: The asset_model_name of this CreateAssetNewResponse.
-        :type: str
+        :type asset_model_name: str
         """
         self._asset_model_name = asset_model_name
 
@@ -194,7 +227,7 @@ class CreateAssetNewResponse(SdkResponse):
         资产名称
 
         :param name: The name of this CreateAssetNewResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -216,7 +249,7 @@ class CreateAssetNewResponse(SdkResponse):
         资产显示名称
 
         :param display_name: The display_name of this CreateAssetNewResponse.
-        :type: str
+        :type display_name: str
         """
         self._display_name = display_name
 
@@ -227,7 +260,7 @@ class CreateAssetNewResponse(SdkResponse):
         属性集
 
         :return: The properties of this CreateAssetNewResponse.
-        :rtype: list[PropertyResponse]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.PropertyResponse`]
         """
         return self._properties
 
@@ -238,7 +271,7 @@ class CreateAssetNewResponse(SdkResponse):
         属性集
 
         :param properties: The properties of this CreateAssetNewResponse.
-        :type: list[PropertyResponse]
+        :type properties: list[:class:`huaweicloudsdkiotanalytics.v1.PropertyResponse`]
         """
         self._properties = properties
 
@@ -249,7 +282,7 @@ class CreateAssetNewResponse(SdkResponse):
         分析任务集
 
         :return: The analyses of this CreateAssetNewResponse.
-        :rtype: list[AnalysisResponse]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.AnalysisResponse`]
         """
         return self._analyses
 
@@ -260,7 +293,7 @@ class CreateAssetNewResponse(SdkResponse):
         分析任务集
 
         :param analyses: The analyses of this CreateAssetNewResponse.
-        :type: list[AnalysisResponse]
+        :type analyses: list[:class:`huaweicloudsdkiotanalytics.v1.AnalysisResponse`]
         """
         self._analyses = analyses
 
@@ -282,7 +315,7 @@ class CreateAssetNewResponse(SdkResponse):
         根资产ID
 
         :param root: The root of this CreateAssetNewResponse.
-        :type: str
+        :type root: str
         """
         self._root = root
 
@@ -304,7 +337,7 @@ class CreateAssetNewResponse(SdkResponse):
         父资产ID，根资产的父资产ID为null
 
         :param parent: The parent of this CreateAssetNewResponse.
-        :type: str
+        :type parent: str
         """
         self._parent = parent
 
@@ -326,7 +359,7 @@ class CreateAssetNewResponse(SdkResponse):
         子资产ID集
 
         :param children: The children of this CreateAssetNewResponse.
-        :type: list[str]
+        :type children: list[str]
         """
         self._children = children
 
@@ -348,7 +381,7 @@ class CreateAssetNewResponse(SdkResponse):
         资产状态，正常状态（ACTIVE），异常状态（INACTIVE）；只有草稿态（SKETCH）资产有此状态；资产处于异常状态的场景有：1、该资产存在未填写设备ID的测量数据类别的属性；2、该资产存在未填写静态值的静态配置类别的属性；3、该资产存在分析任务，该分析任务的输入参数存在属性引用类型为引用其他资产属性，且没有为该输入参数配置引用的其他资产的资产ID
 
         :param state: The state of this CreateAssetNewResponse.
-        :type: str
+        :type state: str
         """
         self._state = state
 
@@ -370,7 +403,7 @@ class CreateAssetNewResponse(SdkResponse):
         资产发布状态，发布中（PUBLISHING），发布完成（PUBLISHED）；只能对草稿态（SKETCH）的根资产进行发布，也只有草稿态的根资产有此字段；如果根资产从未发布过则值为null
 
         :param publish_state: The publish_state of this CreateAssetNewResponse.
-        :type: str
+        :type publish_state: str
         """
         self._publish_state = publish_state
 
@@ -392,7 +425,7 @@ class CreateAssetNewResponse(SdkResponse):
         创建时间，格式\"yyyy-MM-dd'T'HH:mm:ss'Z'\"
 
         :param created_time: The created_time of this CreateAssetNewResponse.
-        :type: str
+        :type created_time: str
         """
         self._created_time = created_time
 
@@ -414,7 +447,7 @@ class CreateAssetNewResponse(SdkResponse):
         修改时间，格式\"yyyy-MM-dd'T'HH:mm:ss'Z'\"
 
         :param modified_time: The modified_time of this CreateAssetNewResponse.
-        :type: str
+        :type modified_time: str
         """
         self._modified_time = modified_time
 
@@ -436,7 +469,7 @@ class CreateAssetNewResponse(SdkResponse):
         发布时间，只能对草稿态（SKETCH）的根资产进行发布，也只有草稿态的根资产有此字段；如果从未发布过则值为null；格式\"yyyy-MM-dd'T'HH:mm:ss'Z'\"
 
         :param published_time: The published_time of this CreateAssetNewResponse.
-        :type: str
+        :type published_time: str
         """
         self._published_time = published_time
 

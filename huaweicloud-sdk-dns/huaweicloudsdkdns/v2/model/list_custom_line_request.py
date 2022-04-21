@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCustomLineRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListCustomLineRequest:
     }
 
     def __init__(self, line_id=None, name=None, limit=None, offset=None, show_detail=None):
-        """ListCustomLineRequest - a model defined in huaweicloud sdk"""
+        """ListCustomLineRequest
+
+        The model defined in huaweicloud sdk
+
+        :param line_id: 解析线路ID。
+        :type line_id: str
+        :param name: 解析线路名称。
+        :type name: str
+        :param limit: 每页返回的资源个数。取值范围为0~100。
+        :type limit: int
+        :param offset: 分页查询起始偏移量，表示从偏移量的下一个资源开始查询。
+        :type offset: int
+        :param show_detail: 是否查询详细信息。  取值范围：  true：是，查询详细信息。 false：否，不查询详细信息。 默认为true。
+        :type show_detail: bool
+        """
         
         
 
@@ -78,7 +91,7 @@ class ListCustomLineRequest:
         解析线路ID。
 
         :param line_id: The line_id of this ListCustomLineRequest.
-        :type: str
+        :type line_id: str
         """
         self._line_id = line_id
 
@@ -100,7 +113,7 @@ class ListCustomLineRequest:
         解析线路名称。
 
         :param name: The name of this ListCustomLineRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -122,7 +135,7 @@ class ListCustomLineRequest:
         每页返回的资源个数。取值范围为0~100。
 
         :param limit: The limit of this ListCustomLineRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -144,7 +157,7 @@ class ListCustomLineRequest:
         分页查询起始偏移量，表示从偏移量的下一个资源开始查询。
 
         :param offset: The offset of this ListCustomLineRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -166,7 +179,7 @@ class ListCustomLineRequest:
         是否查询详细信息。  取值范围：  true：是，查询详细信息。 false：否，不查询详细信息。 默认为true。
 
         :param show_detail: The show_detail of this ListCustomLineRequest.
-        :type: bool
+        :type show_detail: bool
         """
         self._show_detail = show_detail
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CheckApisV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CheckApisV2Request:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CheckApisV2Request - a model defined in huaweicloud sdk"""
+        """CheckApisV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param body: Body of the CheckApisV2Request
+        :type body: :class:`huaweicloudsdkroma.v2.ApiCheckInfoV2`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CheckApisV2Request:
         实例ID
 
         :param instance_id: The instance_id of this CheckApisV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -72,7 +79,7 @@ class CheckApisV2Request:
 
 
         :return: The body of this CheckApisV2Request.
-        :rtype: ApiCheckInfoV2
+        :rtype: :class:`huaweicloudsdkroma.v2.ApiCheckInfoV2`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CheckApisV2Request:
 
 
         :param body: The body of this CheckApisV2Request.
-        :type: ApiCheckInfoV2
+        :type body: :class:`huaweicloudsdkroma.v2.ApiCheckInfoV2`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowRecordingFileDownloadUrlsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowRecordingFileDownloadUrlsResponse(SdkResponse):
     }
 
     def __init__(self, record_urls=None):
-        """ShowRecordingFileDownloadUrlsResponse - a model defined in huaweicloud sdk"""
+        """ShowRecordingFileDownloadUrlsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param record_urls: 录制文件下载URL
+        :type record_urls: list[:class:`huaweicloudsdkmeeting.v1.RecordDownloadInfoBO`]
+        """
         
         super(ShowRecordingFileDownloadUrlsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ShowRecordingFileDownloadUrlsResponse(SdkResponse):
         录制文件下载URL
 
         :return: The record_urls of this ShowRecordingFileDownloadUrlsResponse.
-        :rtype: list[RecordDownloadInfoBO]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.RecordDownloadInfoBO`]
         """
         return self._record_urls
 
@@ -58,7 +63,7 @@ class ShowRecordingFileDownloadUrlsResponse(SdkResponse):
         录制文件下载URL
 
         :param record_urls: The record_urls of this ShowRecordingFileDownloadUrlsResponse.
-        :type: list[RecordDownloadInfoBO]
+        :type record_urls: list[:class:`huaweicloudsdkmeeting.v1.RecordDownloadInfoBO`]
         """
         self._record_urls = record_urls
 

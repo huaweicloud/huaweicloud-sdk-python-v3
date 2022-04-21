@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateRelationsReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateRelationsReq:
     }
 
     def __init__(self, related_id_list=None, group_id=None):
-        """CreateRelationsReq - a model defined in huaweicloud sdk"""
+        """CreateRelationsReq
+
+        The model defined in huaweicloud sdk
+
+        :param related_id_list: 要关联的工单id列表，最多3个
+        :type related_id_list: list[str]
+        :param group_id: 组id
+        :type group_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class CreateRelationsReq:
         要关联的工单id列表，最多3个
 
         :param related_id_list: The related_id_list of this CreateRelationsReq.
-        :type: list[str]
+        :type related_id_list: list[str]
         """
         self._related_id_list = related_id_list
 
@@ -83,7 +90,7 @@ class CreateRelationsReq:
         组id
 
         :param group_id: The group_id of this CreateRelationsReq.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 

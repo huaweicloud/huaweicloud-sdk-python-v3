@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SubCutomerInfoV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class SubCutomerInfoV2:
     }
 
     def __init__(self, mobile=None, email=None, customer_id=None, domain_id=None, customer_name=None, area_code=None):
-        """SubCutomerInfoV2 - a model defined in huaweicloud sdk"""
+        """SubCutomerInfoV2
+
+        The model defined in huaweicloud sdk
+
+        :param mobile: 手机号（匿名化）
+        :type mobile: str
+        :param email: 邮箱（匿名化）
+        :type email: str
+        :param customer_id: 客户id
+        :type customer_id: str
+        :param domain_id: 主账号id
+        :type domain_id: str
+        :param customer_name: 客户名称（匿名化）
+        :type customer_name: str
+        :param area_code: 国家码
+        :type area_code: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class SubCutomerInfoV2:
         手机号（匿名化）
 
         :param mobile: The mobile of this SubCutomerInfoV2.
-        :type: str
+        :type mobile: str
         """
         self._mobile = mobile
 
@@ -105,7 +120,7 @@ class SubCutomerInfoV2:
         邮箱（匿名化）
 
         :param email: The email of this SubCutomerInfoV2.
-        :type: str
+        :type email: str
         """
         self._email = email
 
@@ -127,7 +142,7 @@ class SubCutomerInfoV2:
         客户id
 
         :param customer_id: The customer_id of this SubCutomerInfoV2.
-        :type: str
+        :type customer_id: str
         """
         self._customer_id = customer_id
 
@@ -149,7 +164,7 @@ class SubCutomerInfoV2:
         主账号id
 
         :param domain_id: The domain_id of this SubCutomerInfoV2.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -171,7 +186,7 @@ class SubCutomerInfoV2:
         客户名称（匿名化）
 
         :param customer_name: The customer_name of this SubCutomerInfoV2.
-        :type: str
+        :type customer_name: str
         """
         self._customer_name = customer_name
 
@@ -193,7 +208,7 @@ class SubCutomerInfoV2:
         国家码
 
         :param area_code: The area_code of this SubCutomerInfoV2.
-        :type: str
+        :type area_code: str
         """
         self._area_code = area_code
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSimPoolsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListSimPoolsResponse(SdkResponse):
     }
 
     def __init__(self, limit=None, offset=None, count=None, pools=None):
-        """ListSimPoolsResponse - a model defined in huaweicloud sdk"""
+        """ListSimPoolsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 每页记录数
+        :type limit: int
+        :param offset: 页码
+        :type offset: int
+        :param count: 当前查询条件的流量池总数
+        :type count: int
+        :param pools: 当前页的流量池记录列表
+        :type pools: list[:class:`huaweicloudsdkgsl.v3.SimPoolVO`]
+        """
         
         super(ListSimPoolsResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class ListSimPoolsResponse(SdkResponse):
         每页记录数
 
         :param limit: The limit of this ListSimPoolsResponse.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -95,7 +106,7 @@ class ListSimPoolsResponse(SdkResponse):
         页码
 
         :param offset: The offset of this ListSimPoolsResponse.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -117,7 +128,7 @@ class ListSimPoolsResponse(SdkResponse):
         当前查询条件的流量池总数
 
         :param count: The count of this ListSimPoolsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -128,7 +139,7 @@ class ListSimPoolsResponse(SdkResponse):
         当前页的流量池记录列表
 
         :return: The pools of this ListSimPoolsResponse.
-        :rtype: list[SimPoolVO]
+        :rtype: list[:class:`huaweicloudsdkgsl.v3.SimPoolVO`]
         """
         return self._pools
 
@@ -139,7 +150,7 @@ class ListSimPoolsResponse(SdkResponse):
         当前页的流量池记录列表
 
         :param pools: The pools of this ListSimPoolsResponse.
-        :type: list[SimPoolVO]
+        :type pools: list[:class:`huaweicloudsdkgsl.v3.SimPoolVO`]
         """
         self._pools = pools
 

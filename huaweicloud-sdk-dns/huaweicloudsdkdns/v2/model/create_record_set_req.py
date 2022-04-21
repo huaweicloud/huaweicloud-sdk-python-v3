@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateRecordSetReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class CreateRecordSetReq:
     }
 
     def __init__(self, name=None, description=None, type=None, status=None, ttl=None, records=None, tags=None):
-        """CreateRecordSetReq - a model defined in huaweicloud sdk"""
+        """CreateRecordSetReq
+
+        The model defined in huaweicloud sdk
+
+        :param name: 域名，后缀需以zone name结束且为FQDN（即以“.”号结束的完整主机名）。
+        :type name: str
+        :param description: 
+        :type description: str
+        :param type: Record Set的类型。  取值范围：A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。
+        :type type: str
+        :param status: 
+        :type status: str
+        :param ttl: 
+        :type ttl: int
+        :param records: 解析记录的值。不同类型解析记录对应的值的规则不同。
+        :type records: list[str]
+        :param tags: 资源标签。
+        :type tags: list[:class:`huaweicloudsdkdns.v2.Tag`]
+        """
         
         
 
@@ -85,7 +102,7 @@ class CreateRecordSetReq:
         域名，后缀需以zone name结束且为FQDN（即以“.”号结束的完整主机名）。
 
         :param name: The name of this CreateRecordSetReq.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -105,7 +122,7 @@ class CreateRecordSetReq:
 
 
         :param description: The description of this CreateRecordSetReq.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -127,7 +144,7 @@ class CreateRecordSetReq:
         Record Set的类型。  取值范围：A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。
 
         :param type: The type of this CreateRecordSetReq.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -147,7 +164,7 @@ class CreateRecordSetReq:
 
 
         :param status: The status of this CreateRecordSetReq.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -167,7 +184,7 @@ class CreateRecordSetReq:
 
 
         :param ttl: The ttl of this CreateRecordSetReq.
-        :type: int
+        :type ttl: int
         """
         self._ttl = ttl
 
@@ -189,7 +206,7 @@ class CreateRecordSetReq:
         解析记录的值。不同类型解析记录对应的值的规则不同。
 
         :param records: The records of this CreateRecordSetReq.
-        :type: list[str]
+        :type records: list[str]
         """
         self._records = records
 
@@ -200,7 +217,7 @@ class CreateRecordSetReq:
         资源标签。
 
         :return: The tags of this CreateRecordSetReq.
-        :rtype: list[Tag]
+        :rtype: list[:class:`huaweicloudsdkdns.v2.Tag`]
         """
         return self._tags
 
@@ -211,7 +228,7 @@ class CreateRecordSetReq:
         资源标签。
 
         :param tags: The tags of this CreateRecordSetReq.
-        :type: list[Tag]
+        :type tags: list[:class:`huaweicloudsdkdns.v2.Tag`]
         """
         self._tags = tags
 

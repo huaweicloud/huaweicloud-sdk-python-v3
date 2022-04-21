@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AdjustAccountReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class AdjustAccountReq:
     }
 
     def __init__(self, customer_id=None, amount=None, indirect_partner_id=None):
-        """AdjustAccountReq - a model defined in huaweicloud sdk"""
+        """AdjustAccountReq
+
+        The model defined in huaweicloud sdk
+
+        :param customer_id: 客户账号ID。您可以调用查询客户列表接口获取customer_id。
+        :type customer_id: str
+        :param amount: 拨款金额。 单位：元。取值大于0且精确到小数点后2位。 注意该值不能大于“查询伙伴账户余额”接口响应消息表2中参数amount - designated_amount的值。
+        :type amount: float
+        :param indirect_partner_id: 精英服务商ID。获取方法请参见查询精英服务商列表。 精英服务商（二级经销商）给子客户拨款时，需携带该参数。  说明： 该参数存在的情况下，如果结果返回余额不足，表示对应的二级经销商的余额不足，如果该参数不存在，则余额不足表示调用的伙伴自身账号的余额不足。
+        :type indirect_partner_id: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class AdjustAccountReq:
         客户账号ID。您可以调用查询客户列表接口获取customer_id。
 
         :param customer_id: The customer_id of this AdjustAccountReq.
-        :type: str
+        :type customer_id: str
         """
         self._customer_id = customer_id
 
@@ -88,7 +97,7 @@ class AdjustAccountReq:
         拨款金额。 单位：元。取值大于0且精确到小数点后2位。 注意该值不能大于“查询伙伴账户余额”接口响应消息表2中参数amount - designated_amount的值。
 
         :param amount: The amount of this AdjustAccountReq.
-        :type: float
+        :type amount: float
         """
         self._amount = amount
 
@@ -110,7 +119,7 @@ class AdjustAccountReq:
         精英服务商ID。获取方法请参见查询精英服务商列表。 精英服务商（二级经销商）给子客户拨款时，需携带该参数。  说明： 该参数存在的情况下，如果结果返回余额不足，表示对应的二级经销商的余额不足，如果该参数不存在，则余额不足表示调用的伙伴自身账号的余额不足。
 
         :param indirect_partner_id: The indirect_partner_id of this AdjustAccountReq.
-        :type: str
+        :type indirect_partner_id: str
         """
         self._indirect_partner_id = indirect_partner_id
 

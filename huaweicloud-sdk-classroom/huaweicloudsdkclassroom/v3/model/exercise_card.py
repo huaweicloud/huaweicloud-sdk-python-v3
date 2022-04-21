@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExerciseCard:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ExerciseCard:
     }
 
     def __init__(self, name=None, exercise_id=None, description=None, resource_sub_type=None, target_score=None):
-        """ExerciseCard - a model defined in huaweicloud sdk"""
+        """ExerciseCard
+
+        The model defined in huaweicloud sdk
+
+        :param name: 习题名称
+        :type name: str
+        :param exercise_id: 习题ID
+        :type exercise_id: str
+        :param description: 习题描述
+        :type description: str
+        :param resource_sub_type: 习题子类型 1：函数c 2：函数c++ 3：函数Java 4：函数Python 5：单人项目java 6：单人项目Hadoop 7：通用 8：企业级软件项目 10：web习题 11：AI习题 12：单选题 13：多选题 14：填空题 15：单人项目C 16：单人项目C++
+        :type resource_sub_type: int
+        :param target_score: 习题分值
+        :type target_score: int
+        """
         
         
 
@@ -73,7 +86,7 @@ class ExerciseCard:
         习题名称
 
         :param name: The name of this ExerciseCard.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -95,7 +108,7 @@ class ExerciseCard:
         习题ID
 
         :param exercise_id: The exercise_id of this ExerciseCard.
-        :type: str
+        :type exercise_id: str
         """
         self._exercise_id = exercise_id
 
@@ -117,7 +130,7 @@ class ExerciseCard:
         习题描述
 
         :param description: The description of this ExerciseCard.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -139,7 +152,7 @@ class ExerciseCard:
         习题子类型 1：函数c 2：函数c++ 3：函数Java 4：函数Python 5：单人项目java 6：单人项目Hadoop 7：通用 8：企业级软件项目 10：web习题 11：AI习题 12：单选题 13：多选题 14：填空题 15：单人项目C 16：单人项目C++
 
         :param resource_sub_type: The resource_sub_type of this ExerciseCard.
-        :type: int
+        :type resource_sub_type: int
         """
         self._resource_sub_type = resource_sub_type
 
@@ -161,7 +174,7 @@ class ExerciseCard:
         习题分值
 
         :param target_score: The target_score of this ExerciseCard.
-        :type: int
+        :type target_score: int
         """
         self._target_score = target_score
 

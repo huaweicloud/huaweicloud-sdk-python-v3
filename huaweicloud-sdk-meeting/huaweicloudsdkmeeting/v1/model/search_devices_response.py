@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SearchDevicesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class SearchDevicesResponse(SdkResponse):
     }
 
     def __init__(self, offset=None, limit=None, count=None, data=None):
-        """SearchDevicesResponse - a model defined in huaweicloud sdk"""
+        """SearchDevicesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param offset: 页面起始页，从0开始
+        :type offset: int
+        :param limit: 每页显示的条目数量。 默认值：10。 
+        :type limit: int
+        :param count: 总数量。
+        :type count: int
+        :param data: 终端信息列表。
+        :type data: list[:class:`huaweicloudsdkmeeting.v1.QueryDeviceResultDTO`]
+        """
         
         super(SearchDevicesResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class SearchDevicesResponse(SdkResponse):
         页面起始页，从0开始
 
         :param offset: The offset of this SearchDevicesResponse.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -95,7 +106,7 @@ class SearchDevicesResponse(SdkResponse):
         每页显示的条目数量。 默认值：10。 
 
         :param limit: The limit of this SearchDevicesResponse.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -117,7 +128,7 @@ class SearchDevicesResponse(SdkResponse):
         总数量。
 
         :param count: The count of this SearchDevicesResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -128,7 +139,7 @@ class SearchDevicesResponse(SdkResponse):
         终端信息列表。
 
         :return: The data of this SearchDevicesResponse.
-        :rtype: list[QueryDeviceResultDTO]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.QueryDeviceResultDTO`]
         """
         return self._data
 
@@ -139,7 +150,7 @@ class SearchDevicesResponse(SdkResponse):
         终端信息列表。
 
         :param data: The data of this SearchDevicesResponse.
-        :type: list[QueryDeviceResultDTO]
+        :type data: list[:class:`huaweicloudsdkmeeting.v1.QueryDeviceResultDTO`]
         """
         self._data = data
 

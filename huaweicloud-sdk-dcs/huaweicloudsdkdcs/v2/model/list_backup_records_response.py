@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListBackupRecordsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListBackupRecordsResponse(SdkResponse):
     }
 
     def __init__(self, total_num=None, backup_record_response=None):
-        """ListBackupRecordsResponse - a model defined in huaweicloud sdk"""
+        """ListBackupRecordsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total_num: 返回记录数。
+        :type total_num: int
+        :param backup_record_response: 备份信息的详情数组。
+        :type backup_record_response: list[:class:`huaweicloudsdkdcs.v2.BackupRecordResponse`]
+        """
         
         super(ListBackupRecordsResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListBackupRecordsResponse(SdkResponse):
         返回记录数。
 
         :param total_num: The total_num of this ListBackupRecordsResponse.
-        :type: int
+        :type total_num: int
         """
         self._total_num = total_num
 
@@ -74,7 +81,7 @@ class ListBackupRecordsResponse(SdkResponse):
         备份信息的详情数组。
 
         :return: The backup_record_response of this ListBackupRecordsResponse.
-        :rtype: list[BackupRecordResponse]
+        :rtype: list[:class:`huaweicloudsdkdcs.v2.BackupRecordResponse`]
         """
         return self._backup_record_response
 
@@ -85,7 +92,7 @@ class ListBackupRecordsResponse(SdkResponse):
         备份信息的详情数组。
 
         :param backup_record_response: The backup_record_response of this ListBackupRecordsResponse.
-        :type: list[BackupRecordResponse]
+        :type backup_record_response: list[:class:`huaweicloudsdkdcs.v2.BackupRecordResponse`]
         """
         self._backup_record_response = backup_record_response
 

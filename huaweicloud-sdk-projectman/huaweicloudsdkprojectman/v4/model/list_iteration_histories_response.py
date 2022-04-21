@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListIterationHistoriesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListIterationHistoriesResponse(SdkResponse):
     }
 
     def __init__(self, total=None, histories=None):
-        """ListIterationHistoriesResponse - a model defined in huaweicloud sdk"""
+        """ListIterationHistoriesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 总数
+        :type total: int
+        :param histories: 历史记录
+        :type histories: list[:class:`huaweicloudsdkprojectman.v4.IterationHistory`]
+        """
         
         super(ListIterationHistoriesResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListIterationHistoriesResponse(SdkResponse):
         总数
 
         :param total: The total of this ListIterationHistoriesResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -74,7 +81,7 @@ class ListIterationHistoriesResponse(SdkResponse):
         历史记录
 
         :return: The histories of this ListIterationHistoriesResponse.
-        :rtype: list[IterationHistory]
+        :rtype: list[:class:`huaweicloudsdkprojectman.v4.IterationHistory`]
         """
         return self._histories
 
@@ -85,7 +92,7 @@ class ListIterationHistoriesResponse(SdkResponse):
         历史记录
 
         :param histories: The histories of this ListIterationHistoriesResponse.
-        :type: list[IterationHistory]
+        :type histories: list[:class:`huaweicloudsdkprojectman.v4.IterationHistory`]
         """
         self._histories = histories
 

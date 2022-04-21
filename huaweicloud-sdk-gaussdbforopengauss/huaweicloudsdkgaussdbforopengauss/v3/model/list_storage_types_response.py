@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListStorageTypesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListStorageTypesResponse(SdkResponse):
     }
 
     def __init__(self, storage_type=None):
-        """ListStorageTypesResponse - a model defined in huaweicloud sdk"""
+        """ListStorageTypesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param storage_type: 实例磁盘类型信息。
+        :type storage_type: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.Storage`]
+        """
         
         super(ListStorageTypesResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListStorageTypesResponse(SdkResponse):
         实例磁盘类型信息。
 
         :return: The storage_type of this ListStorageTypesResponse.
-        :rtype: list[Storage]
+        :rtype: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.Storage`]
         """
         return self._storage_type
 
@@ -58,7 +63,7 @@ class ListStorageTypesResponse(SdkResponse):
         实例磁盘类型信息。
 
         :param storage_type: The storage_type of this ListStorageTypesResponse.
-        :type: list[Storage]
+        :type storage_type: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.Storage`]
         """
         self._storage_type = storage_type
 

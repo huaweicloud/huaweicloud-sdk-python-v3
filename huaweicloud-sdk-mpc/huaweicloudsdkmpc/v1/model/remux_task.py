@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RemuxTask:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class RemuxTask:
     }
 
     def __init__(self, task_id=None, status=None, create_time=None, start_time=None, end_time=None, error_code=None, description=None, user_data=None, input=None, output=None, output_param=None, complete_ratio=None, output_metadata=None):
-        """RemuxTask - a model defined in huaweicloud sdk"""
+        """RemuxTask
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 任务ID 
+        :type task_id: str
+        :param status: 任务状态。  取值如下： - INIT：初始状态。 - WAITING：等待启动。 - PROCESSING：处理中。 - SUCCEED：处理成功。 - FAILED：处理失败。 - CANCELED：已取消。 
+        :type status: str
+        :param create_time: 任务创建时间 
+        :type create_time: str
+        :param start_time: 任务启动时间 
+        :type start_time: str
+        :param end_time: 任务结束时间 
+        :type end_time: str
+        :param error_code: 任务的返回码。 
+        :type error_code: str
+        :param description: 错误描述 
+        :type description: str
+        :param user_data: 用户数据。 
+        :type user_data: str
+        :param input: 
+        :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        :param output: 
+        :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        :param output_param: 
+        :type output_param: :class:`huaweicloudsdkmpc.v1.RemuxOutputParam`
+        :param complete_ratio: 任务完成进度百分比值。 
+        :type complete_ratio: int
+        :param output_metadata: 
+        :type output_metadata: :class:`huaweicloudsdkmpc.v1.MetaData`
+        """
         
         
 
@@ -118,7 +147,7 @@ class RemuxTask:
         任务ID 
 
         :param task_id: The task_id of this RemuxTask.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -140,7 +169,7 @@ class RemuxTask:
         任务状态。  取值如下： - INIT：初始状态。 - WAITING：等待启动。 - PROCESSING：处理中。 - SUCCEED：处理成功。 - FAILED：处理失败。 - CANCELED：已取消。 
 
         :param status: The status of this RemuxTask.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -162,7 +191,7 @@ class RemuxTask:
         任务创建时间 
 
         :param create_time: The create_time of this RemuxTask.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -184,7 +213,7 @@ class RemuxTask:
         任务启动时间 
 
         :param start_time: The start_time of this RemuxTask.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -206,7 +235,7 @@ class RemuxTask:
         任务结束时间 
 
         :param end_time: The end_time of this RemuxTask.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -228,7 +257,7 @@ class RemuxTask:
         任务的返回码。 
 
         :param error_code: The error_code of this RemuxTask.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -250,7 +279,7 @@ class RemuxTask:
         错误描述 
 
         :param description: The description of this RemuxTask.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -272,7 +301,7 @@ class RemuxTask:
         用户数据。 
 
         :param user_data: The user_data of this RemuxTask.
-        :type: str
+        :type user_data: str
         """
         self._user_data = user_data
 
@@ -282,7 +311,7 @@ class RemuxTask:
 
 
         :return: The input of this RemuxTask.
-        :rtype: ObsObjInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         return self._input
 
@@ -292,7 +321,7 @@ class RemuxTask:
 
 
         :param input: The input of this RemuxTask.
-        :type: ObsObjInfo
+        :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         self._input = input
 
@@ -302,7 +331,7 @@ class RemuxTask:
 
 
         :return: The output of this RemuxTask.
-        :rtype: ObsObjInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         return self._output
 
@@ -312,7 +341,7 @@ class RemuxTask:
 
 
         :param output: The output of this RemuxTask.
-        :type: ObsObjInfo
+        :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         self._output = output
 
@@ -322,7 +351,7 @@ class RemuxTask:
 
 
         :return: The output_param of this RemuxTask.
-        :rtype: RemuxOutputParam
+        :rtype: :class:`huaweicloudsdkmpc.v1.RemuxOutputParam`
         """
         return self._output_param
 
@@ -332,7 +361,7 @@ class RemuxTask:
 
 
         :param output_param: The output_param of this RemuxTask.
-        :type: RemuxOutputParam
+        :type output_param: :class:`huaweicloudsdkmpc.v1.RemuxOutputParam`
         """
         self._output_param = output_param
 
@@ -354,7 +383,7 @@ class RemuxTask:
         任务完成进度百分比值。 
 
         :param complete_ratio: The complete_ratio of this RemuxTask.
-        :type: int
+        :type complete_ratio: int
         """
         self._complete_ratio = complete_ratio
 
@@ -364,7 +393,7 @@ class RemuxTask:
 
 
         :return: The output_metadata of this RemuxTask.
-        :rtype: MetaData
+        :rtype: :class:`huaweicloudsdkmpc.v1.MetaData`
         """
         return self._output_metadata
 
@@ -374,7 +403,7 @@ class RemuxTask:
 
 
         :param output_metadata: The output_metadata of this RemuxTask.
-        :type: MetaData
+        :type output_metadata: :class:`huaweicloudsdkmpc.v1.MetaData`
         """
         self._output_metadata = output_metadata
 

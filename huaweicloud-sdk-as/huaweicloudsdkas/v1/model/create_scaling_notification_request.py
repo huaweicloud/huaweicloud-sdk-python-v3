@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateScalingNotificationRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateScalingNotificationRequest:
     }
 
     def __init__(self, scaling_group_id=None, body=None):
-        """CreateScalingNotificationRequest - a model defined in huaweicloud sdk"""
+        """CreateScalingNotificationRequest
+
+        The model defined in huaweicloud sdk
+
+        :param scaling_group_id: 伸缩组标识。
+        :type scaling_group_id: str
+        :param body: Body of the CreateScalingNotificationRequest
+        :type body: :class:`huaweicloudsdkas.v1.CreateNotificationOption`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateScalingNotificationRequest:
         伸缩组标识。
 
         :param scaling_group_id: The scaling_group_id of this CreateScalingNotificationRequest.
-        :type: str
+        :type scaling_group_id: str
         """
         self._scaling_group_id = scaling_group_id
 
@@ -72,7 +79,7 @@ class CreateScalingNotificationRequest:
 
 
         :return: The body of this CreateScalingNotificationRequest.
-        :rtype: CreateNotificationOption
+        :rtype: :class:`huaweicloudsdkas.v1.CreateNotificationOption`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CreateScalingNotificationRequest:
 
 
         :param body: The body of this CreateScalingNotificationRequest.
-        :type: CreateNotificationOption
+        :type body: :class:`huaweicloudsdkas.v1.CreateNotificationOption`
         """
         self._body = body
 

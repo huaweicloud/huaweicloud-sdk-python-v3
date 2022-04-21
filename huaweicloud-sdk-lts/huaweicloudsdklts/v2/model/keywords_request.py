@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeywordsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class KeywordsRequest:
     }
 
     def __init__(self, log_stream_id=None, log_stream_name=None, log_group_id=None, log_group_name=None, keywords=None, condition=None, number=None, search_time_range=None, search_time_range_unit=None):
-        """KeywordsRequest - a model defined in huaweicloud sdk"""
+        """KeywordsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param log_stream_id: 日志流id
+        :type log_stream_id: str
+        :param log_stream_name: 日志流名称
+        :type log_stream_name: str
+        :param log_group_id: 日志组id
+        :type log_group_id: str
+        :param log_group_name: 日志组名称
+        :type log_group_name: str
+        :param keywords: 关键词
+        :type keywords: str
+        :param condition: 条件
+        :type condition: str
+        :param number: 行数
+        :type number: int
+        :param search_time_range: 查询执行任务时最近数据的时间范围，最大值为60
+        :type search_time_range: int
+        :param search_time_range_unit: 查询时间单位
+        :type search_time_range_unit: str
+        """
         
         
 
@@ -91,7 +112,7 @@ class KeywordsRequest:
         日志流id
 
         :param log_stream_id: The log_stream_id of this KeywordsRequest.
-        :type: str
+        :type log_stream_id: str
         """
         self._log_stream_id = log_stream_id
 
@@ -113,7 +134,7 @@ class KeywordsRequest:
         日志流名称
 
         :param log_stream_name: The log_stream_name of this KeywordsRequest.
-        :type: str
+        :type log_stream_name: str
         """
         self._log_stream_name = log_stream_name
 
@@ -135,7 +156,7 @@ class KeywordsRequest:
         日志组id
 
         :param log_group_id: The log_group_id of this KeywordsRequest.
-        :type: str
+        :type log_group_id: str
         """
         self._log_group_id = log_group_id
 
@@ -157,7 +178,7 @@ class KeywordsRequest:
         日志组名称
 
         :param log_group_name: The log_group_name of this KeywordsRequest.
-        :type: str
+        :type log_group_name: str
         """
         self._log_group_name = log_group_name
 
@@ -179,7 +200,7 @@ class KeywordsRequest:
         关键词
 
         :param keywords: The keywords of this KeywordsRequest.
-        :type: str
+        :type keywords: str
         """
         self._keywords = keywords
 
@@ -201,7 +222,7 @@ class KeywordsRequest:
         条件
 
         :param condition: The condition of this KeywordsRequest.
-        :type: str
+        :type condition: str
         """
         self._condition = condition
 
@@ -223,7 +244,7 @@ class KeywordsRequest:
         行数
 
         :param number: The number of this KeywordsRequest.
-        :type: int
+        :type number: int
         """
         self._number = number
 
@@ -245,7 +266,7 @@ class KeywordsRequest:
         查询执行任务时最近数据的时间范围，最大值为60
 
         :param search_time_range: The search_time_range of this KeywordsRequest.
-        :type: int
+        :type search_time_range: int
         """
         self._search_time_range = search_time_range
 
@@ -267,7 +288,7 @@ class KeywordsRequest:
         查询时间单位
 
         :param search_time_range_unit: The search_time_range_unit of this KeywordsRequest.
-        :type: str
+        :type search_time_range_unit: str
         """
         self._search_time_range_unit = search_time_range_unit
 

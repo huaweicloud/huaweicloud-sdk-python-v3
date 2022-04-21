@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowExternalEntityRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowExternalEntityRequest:
     }
 
     def __init__(self, edge_node_id=None, external_id=None):
-        """ShowExternalEntityRequest - a model defined in huaweicloud sdk"""
+        """ShowExternalEntityRequest
+
+        The model defined in huaweicloud sdk
+
+        :param edge_node_id: 边缘节点ID
+        :type edge_node_id: str
+        :param external_id: 外部实体ID
+        :type external_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ShowExternalEntityRequest:
         边缘节点ID
 
         :param edge_node_id: The edge_node_id of this ShowExternalEntityRequest.
-        :type: str
+        :type edge_node_id: str
         """
         self._edge_node_id = edge_node_id
 
@@ -83,7 +90,7 @@ class ShowExternalEntityRequest:
         外部实体ID
 
         :param external_id: The external_id of this ShowExternalEntityRequest.
-        :type: str
+        :type external_id: str
         """
         self._external_id = external_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IterationHistoryDetails:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class IterationHistoryDetails:
     }
 
     def __init__(self, operate_field_name=None, new_value=None, old_value=None):
-        """IterationHistoryDetails - a model defined in huaweicloud sdk"""
+        """IterationHistoryDetails
+
+        The model defined in huaweicloud sdk
+
+        :param operate_field_name: 变更的字段
+        :type operate_field_name: str
+        :param new_value: 操作后的值
+        :type new_value: str
+        :param old_value: 操作前的值
+        :type old_value: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class IterationHistoryDetails:
         变更的字段
 
         :param operate_field_name: The operate_field_name of this IterationHistoryDetails.
-        :type: str
+        :type operate_field_name: str
         """
         self._operate_field_name = operate_field_name
 
@@ -90,7 +99,7 @@ class IterationHistoryDetails:
         操作后的值
 
         :param new_value: The new_value of this IterationHistoryDetails.
-        :type: str
+        :type new_value: str
         """
         self._new_value = new_value
 
@@ -112,7 +121,7 @@ class IterationHistoryDetails:
         操作前的值
 
         :param old_value: The old_value of this IterationHistoryDetails.
-        :type: str
+        :type old_value: str
         """
         self._old_value = old_value
 

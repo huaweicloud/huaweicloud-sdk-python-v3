@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DetectExtentionByNameAndIdResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DetectExtentionByNameAndIdResponse(SdkResponse):
     }
 
     def __init__(self, meta=None, result=None):
-        """DetectExtentionByNameAndIdResponse - a model defined in huaweicloud sdk"""
+        """DetectExtentionByNameAndIdResponse
+
+        The model defined in huaweicloud sdk
+
+        :param meta: 
+        :type meta: :class:`huaweicloudsdkivs.v2.Meta`
+        :param result: 
+        :type result: :class:`huaweicloudsdkivs.v2.IvsExtentionByNameAndIdResponseBodyResult`
+        """
         
         super(DetectExtentionByNameAndIdResponse, self).__init__()
 
@@ -51,7 +58,7 @@ class DetectExtentionByNameAndIdResponse(SdkResponse):
 
 
         :return: The meta of this DetectExtentionByNameAndIdResponse.
-        :rtype: Meta
+        :rtype: :class:`huaweicloudsdkivs.v2.Meta`
         """
         return self._meta
 
@@ -61,7 +68,7 @@ class DetectExtentionByNameAndIdResponse(SdkResponse):
 
 
         :param meta: The meta of this DetectExtentionByNameAndIdResponse.
-        :type: Meta
+        :type meta: :class:`huaweicloudsdkivs.v2.Meta`
         """
         self._meta = meta
 
@@ -71,7 +78,7 @@ class DetectExtentionByNameAndIdResponse(SdkResponse):
 
 
         :return: The result of this DetectExtentionByNameAndIdResponse.
-        :rtype: IvsExtentionByNameAndIdResponseBodyResult
+        :rtype: :class:`huaweicloudsdkivs.v2.IvsExtentionByNameAndIdResponseBodyResult`
         """
         return self._result
 
@@ -81,7 +88,7 @@ class DetectExtentionByNameAndIdResponse(SdkResponse):
 
 
         :param result: The result of this DetectExtentionByNameAndIdResponse.
-        :type: IvsExtentionByNameAndIdResponseBodyResult
+        :type result: :class:`huaweicloudsdkivs.v2.IvsExtentionByNameAndIdResponseBodyResult`
         """
         self._result = result
 

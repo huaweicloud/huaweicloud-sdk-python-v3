@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateMemberReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class CreateMemberReq:
     }
 
     def __init__(self, tenant_id=None, name=None, admin_state_up=None, protocol_port=None, subnet_id=None, address=None, weight=None):
-        """CreateMemberReq - a model defined in huaweicloud sdk"""
+        """CreateMemberReq
+
+        The model defined in huaweicloud sdk
+
+        :param tenant_id: 后端云服务器所在的项目ID。
+        :type tenant_id: str
+        :param name: 后端云服务器名称。
+        :type name: str
+        :param admin_state_up: 后端云服务器的管理状态；该字段虽然支持创建、更新，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。该字段虽然支持创建、更新，但实际取值决定于member对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
+        :type admin_state_up: bool
+        :param protocol_port: 后端端口和协议号
+        :type protocol_port: int
+        :param subnet_id: 后端云服务器所在的子网ID。该子网和后端云服务器关联的负载均衡器的子网必须在同一VPC下。只支持指定IPv4的子网ID。暂不支持IPv6。
+        :type subnet_id: str
+        :param address: 后端云服务器的对应的IP地址，这个IP必须在subnet_id字段的子网网段中。例如：192.168.3.11。只能指定为主网卡的IP。
+        :type address: str
+        :param weight: 后端云服务器的权重，请求按权重在同一后端云服务器组下的后端云服务器间分发。权重为0的后端不再接受新的请求。当后端云服务器所在的后端云服务器组的lb_algorithm的取值为SOURCE_IP时，该字段无效。
+        :type weight: int
+        """
         
         
 
@@ -85,7 +102,7 @@ class CreateMemberReq:
         后端云服务器所在的项目ID。
 
         :param tenant_id: The tenant_id of this CreateMemberReq.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 
@@ -107,7 +124,7 @@ class CreateMemberReq:
         后端云服务器名称。
 
         :param name: The name of this CreateMemberReq.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -129,7 +146,7 @@ class CreateMemberReq:
         后端云服务器的管理状态；该字段虽然支持创建、更新，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。该字段虽然支持创建、更新，但实际取值决定于member对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
 
         :param admin_state_up: The admin_state_up of this CreateMemberReq.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 
@@ -151,7 +168,7 @@ class CreateMemberReq:
         后端端口和协议号
 
         :param protocol_port: The protocol_port of this CreateMemberReq.
-        :type: int
+        :type protocol_port: int
         """
         self._protocol_port = protocol_port
 
@@ -173,7 +190,7 @@ class CreateMemberReq:
         后端云服务器所在的子网ID。该子网和后端云服务器关联的负载均衡器的子网必须在同一VPC下。只支持指定IPv4的子网ID。暂不支持IPv6。
 
         :param subnet_id: The subnet_id of this CreateMemberReq.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -195,7 +212,7 @@ class CreateMemberReq:
         后端云服务器的对应的IP地址，这个IP必须在subnet_id字段的子网网段中。例如：192.168.3.11。只能指定为主网卡的IP。
 
         :param address: The address of this CreateMemberReq.
-        :type: str
+        :type address: str
         """
         self._address = address
 
@@ -217,7 +234,7 @@ class CreateMemberReq:
         后端云服务器的权重，请求按权重在同一后端云服务器组下的后端云服务器间分发。权重为0的后端不再接受新的请求。当后端云服务器所在的后端云服务器组的lb_algorithm的取值为SOURCE_IP时，该字段无效。
 
         :param weight: The weight of this CreateMemberReq.
-        :type: int
+        :type weight: int
         """
         self._weight = weight
 

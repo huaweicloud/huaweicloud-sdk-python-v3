@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SwitchRiskRuleResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class SwitchRiskRuleResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """SwitchRiskRuleResponse - a model defined in huaweicloud sdk"""
+        """SwitchRiskRuleResponse
+
+        The model defined in huaweicloud sdk
+
+        :param result: 响应状态
+        :type result: str
+        """
         
         super(SwitchRiskRuleResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class SwitchRiskRuleResponse(SdkResponse):
         响应状态
 
         :param result: The result of this SwitchRiskRuleResponse.
-        :type: str
+        :type result: str
         """
         self._result = result
 

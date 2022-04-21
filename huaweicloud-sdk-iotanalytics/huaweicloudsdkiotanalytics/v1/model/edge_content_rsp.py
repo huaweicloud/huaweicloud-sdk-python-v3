@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EdgeContentRsp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class EdgeContentRsp:
     }
 
     def __init__(self, iotda_instance_id=None, rules=None):
-        """EdgeContentRsp - a model defined in huaweicloud sdk"""
+        """EdgeContentRsp
+
+        The model defined in huaweicloud sdk
+
+        :param iotda_instance_id: Edge实例Id
+        :type iotda_instance_id: str
+        :param rules: 在Edge实例中要配置的转发规则，包含推送数据的资源空间和产品列表
+        :type rules: list[:class:`huaweicloudsdkiotanalytics.v1.EdgeContentRuleRsp`]
+        """
         
         
 
@@ -61,7 +68,7 @@ class EdgeContentRsp:
         Edge实例Id
 
         :param iotda_instance_id: The iotda_instance_id of this EdgeContentRsp.
-        :type: str
+        :type iotda_instance_id: str
         """
         self._iotda_instance_id = iotda_instance_id
 
@@ -72,7 +79,7 @@ class EdgeContentRsp:
         在Edge实例中要配置的转发规则，包含推送数据的资源空间和产品列表
 
         :return: The rules of this EdgeContentRsp.
-        :rtype: list[EdgeContentRuleRsp]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.EdgeContentRuleRsp`]
         """
         return self._rules
 
@@ -83,7 +90,7 @@ class EdgeContentRsp:
         在Edge实例中要配置的转发规则，包含推送数据的资源空间和产品列表
 
         :param rules: The rules of this EdgeContentRsp.
-        :type: list[EdgeContentRuleRsp]
+        :type rules: list[:class:`huaweicloudsdkiotanalytics.v1.EdgeContentRuleRsp`]
         """
         self._rules = rules
 

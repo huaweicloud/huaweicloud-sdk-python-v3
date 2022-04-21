@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowImageRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowImageRequest:
     }
 
     def __init__(self, image_id=None):
-        """ShowImageRequest - a model defined in huaweicloud sdk"""
+        """ShowImageRequest
+
+        The model defined in huaweicloud sdk
+
+        :param image_id: 镜像ID。
+        :type image_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowImageRequest:
         镜像ID。
 
         :param image_id: The image_id of this ShowImageRequest.
-        :type: str
+        :type image_id: str
         """
         self._image_id = image_id
 

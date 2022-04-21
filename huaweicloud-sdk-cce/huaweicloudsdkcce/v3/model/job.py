@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Job:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class Job:
     }
 
     def __init__(self, kind=None, api_version=None, metadata=None, spec=None, status=None):
-        """Job - a model defined in huaweicloud sdk"""
+        """Job
+
+        The model defined in huaweicloud sdk
+
+        :param kind: API类型，固定值“Job”，该值不可修改。
+        :type kind: str
+        :param api_version: API版本，固定值“v3”，该值不可修改。
+        :type api_version: str
+        :param metadata: 
+        :type metadata: :class:`huaweicloudsdkcce.v3.JobMetadata`
+        :param spec: 
+        :type spec: :class:`huaweicloudsdkcce.v3.JobSpec`
+        :param status: 
+        :type status: :class:`huaweicloudsdkcce.v3.JobStatus`
+        """
         
         
 
@@ -78,7 +91,7 @@ class Job:
         API类型，固定值“Job”，该值不可修改。
 
         :param kind: The kind of this Job.
-        :type: str
+        :type kind: str
         """
         self._kind = kind
 
@@ -100,7 +113,7 @@ class Job:
         API版本，固定值“v3”，该值不可修改。
 
         :param api_version: The api_version of this Job.
-        :type: str
+        :type api_version: str
         """
         self._api_version = api_version
 
@@ -110,7 +123,7 @@ class Job:
 
 
         :return: The metadata of this Job.
-        :rtype: JobMetadata
+        :rtype: :class:`huaweicloudsdkcce.v3.JobMetadata`
         """
         return self._metadata
 
@@ -120,7 +133,7 @@ class Job:
 
 
         :param metadata: The metadata of this Job.
-        :type: JobMetadata
+        :type metadata: :class:`huaweicloudsdkcce.v3.JobMetadata`
         """
         self._metadata = metadata
 
@@ -130,7 +143,7 @@ class Job:
 
 
         :return: The spec of this Job.
-        :rtype: JobSpec
+        :rtype: :class:`huaweicloudsdkcce.v3.JobSpec`
         """
         return self._spec
 
@@ -140,7 +153,7 @@ class Job:
 
 
         :param spec: The spec of this Job.
-        :type: JobSpec
+        :type spec: :class:`huaweicloudsdkcce.v3.JobSpec`
         """
         self._spec = spec
 
@@ -150,7 +163,7 @@ class Job:
 
 
         :return: The status of this Job.
-        :rtype: JobStatus
+        :rtype: :class:`huaweicloudsdkcce.v3.JobStatus`
         """
         return self._status
 
@@ -160,7 +173,7 @@ class Job:
 
 
         :param status: The status of this Job.
-        :type: JobStatus
+        :type status: :class:`huaweicloudsdkcce.v3.JobStatus`
         """
         self._status = status
 

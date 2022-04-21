@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AppDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class AppDetail:
     }
 
     def __init__(self, name=None, alias=None, description=None, icon_url=None, tags=None):
-        """AppDetail - a model defined in huaweicloud sdk"""
+        """AppDetail
+
+        The model defined in huaweicloud sdk
+
+        :param name: 应用模板名称，只允许英文小写字母、数字、中划线，最大长度32, 英文小写字母或数字开头和结尾 Name为必填字段，且本租户中唯一
+        :type name: str
+        :param alias: 应用模板别名，中文英文字母、数字、中划线、下划线，最大64字符
+        :type alias: str
+        :param description: 应用模板描述，最大长度255，不允许^ ~ # $ % &amp; * &lt; &gt; ( ) [ ] { } &#39; \&quot; \\
+        :type description: str
+        :param icon_url: 应用图标存储url地址，最大长度2083
+        :type icon_url: str
+        :param tags: 应用模板标签
+        :type tags: list[:class:`huaweicloudsdkief.v1.NodeResTag`]
+        """
         
         
 
@@ -77,7 +90,7 @@ class AppDetail:
         应用模板名称，只允许英文小写字母、数字、中划线，最大长度32, 英文小写字母或数字开头和结尾 Name为必填字段，且本租户中唯一
 
         :param name: The name of this AppDetail.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -99,7 +112,7 @@ class AppDetail:
         应用模板别名，中文英文字母、数字、中划线、下划线，最大64字符
 
         :param alias: The alias of this AppDetail.
-        :type: str
+        :type alias: str
         """
         self._alias = alias
 
@@ -121,7 +134,7 @@ class AppDetail:
         应用模板描述，最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
         :param description: The description of this AppDetail.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -143,7 +156,7 @@ class AppDetail:
         应用图标存储url地址，最大长度2083
 
         :param icon_url: The icon_url of this AppDetail.
-        :type: str
+        :type icon_url: str
         """
         self._icon_url = icon_url
 
@@ -154,7 +167,7 @@ class AppDetail:
         应用模板标签
 
         :return: The tags of this AppDetail.
-        :rtype: list[NodeResTag]
+        :rtype: list[:class:`huaweicloudsdkief.v1.NodeResTag`]
         """
         return self._tags
 
@@ -165,7 +178,7 @@ class AppDetail:
         应用模板标签
 
         :param tags: The tags of this AppDetail.
-        :type: list[NodeResTag]
+        :type tags: list[:class:`huaweicloudsdkief.v1.NodeResTag`]
         """
         self._tags = tags
 

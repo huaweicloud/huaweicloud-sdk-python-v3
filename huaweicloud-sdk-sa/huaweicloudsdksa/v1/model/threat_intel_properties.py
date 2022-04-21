@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ThreatIntelProperties:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -64,7 +63,47 @@ class ThreatIntelProperties:
     }
 
     def __init__(self, file_md5=None, file_sha1=None, file_sha256=None, file_name=None, create_time=None, file_class=None, file_family=None, file_maltype=None, ip_resolves_to_refs=None, belongs_to_refs=None, ip_location=None, domain_family=None, domain_resolves_to_refs=None, domain_dns_type=None, url_host=None, url_resolves_to_refs=None, display_name=None, url_belongs_to_ref=None):
-        """ThreatIntelProperties - a model defined in huaweicloud sdk"""
+        """ThreatIntelProperties
+
+        The model defined in huaweicloud sdk
+
+        :param file_md5: 恶意软件Md5。
+        :type file_md5: str
+        :param file_sha1: 恶意软件Sha1。
+        :type file_sha1: str
+        :param file_sha256: 恶意软件Sha256值。
+        :type file_sha256: str
+        :param file_name: 文件名称。
+        :type file_name: str
+        :param create_time: 编译时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区。
+        :type create_time: str
+        :param file_class: 文件类别，TEXT|XCODE。
+        :type file_class: str
+        :param file_family: 家族，例如：wannacry（勒索软件）。
+        :type file_family: str
+        :param file_maltype: 类别，例如：trojan（特洛伊）。
+        :type file_maltype: str
+        :param ip_resolves_to_refs: mac地址。
+        :type ip_resolves_to_refs: str
+        :param belongs_to_refs: IP AS 自治系统。
+        :type belongs_to_refs: str
+        :param ip_location: 地区 格式：country/provice/city/lngwgs/latwgs。
+        :type ip_location: str
+        :param domain_family: 例如：banjori|iodine。
+        :type domain_family: str
+        :param domain_resolves_to_refs: 解析的IP地址。
+        :type domain_resolves_to_refs: str
+        :param domain_dns_type: DNS类别。A|NS|CNAME|TXT。
+        :type domain_dns_type: str
+        :param url_host: 例：3ms.huawei.com。
+        :type url_host: str
+        :param url_resolves_to_refs: IP地址。
+        :type url_resolves_to_refs: str
+        :param display_name: 显示名称。
+        :type display_name: str
+        :param url_belongs_to_ref: 邮箱账户，@之前部分。
+        :type url_belongs_to_ref: str
+        """
         
         
 
@@ -143,7 +182,7 @@ class ThreatIntelProperties:
         恶意软件Md5。
 
         :param file_md5: The file_md5 of this ThreatIntelProperties.
-        :type: str
+        :type file_md5: str
         """
         self._file_md5 = file_md5
 
@@ -165,7 +204,7 @@ class ThreatIntelProperties:
         恶意软件Sha1。
 
         :param file_sha1: The file_sha1 of this ThreatIntelProperties.
-        :type: str
+        :type file_sha1: str
         """
         self._file_sha1 = file_sha1
 
@@ -187,7 +226,7 @@ class ThreatIntelProperties:
         恶意软件Sha256值。
 
         :param file_sha256: The file_sha256 of this ThreatIntelProperties.
-        :type: str
+        :type file_sha256: str
         """
         self._file_sha256 = file_sha256
 
@@ -209,7 +248,7 @@ class ThreatIntelProperties:
         文件名称。
 
         :param file_name: The file_name of this ThreatIntelProperties.
-        :type: str
+        :type file_name: str
         """
         self._file_name = file_name
 
@@ -231,7 +270,7 @@ class ThreatIntelProperties:
         编译时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区。
 
         :param create_time: The create_time of this ThreatIntelProperties.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -253,7 +292,7 @@ class ThreatIntelProperties:
         文件类别，TEXT|XCODE。
 
         :param file_class: The file_class of this ThreatIntelProperties.
-        :type: str
+        :type file_class: str
         """
         self._file_class = file_class
 
@@ -275,7 +314,7 @@ class ThreatIntelProperties:
         家族，例如：wannacry（勒索软件）。
 
         :param file_family: The file_family of this ThreatIntelProperties.
-        :type: str
+        :type file_family: str
         """
         self._file_family = file_family
 
@@ -297,7 +336,7 @@ class ThreatIntelProperties:
         类别，例如：trojan（特洛伊）。
 
         :param file_maltype: The file_maltype of this ThreatIntelProperties.
-        :type: str
+        :type file_maltype: str
         """
         self._file_maltype = file_maltype
 
@@ -319,7 +358,7 @@ class ThreatIntelProperties:
         mac地址。
 
         :param ip_resolves_to_refs: The ip_resolves_to_refs of this ThreatIntelProperties.
-        :type: str
+        :type ip_resolves_to_refs: str
         """
         self._ip_resolves_to_refs = ip_resolves_to_refs
 
@@ -341,7 +380,7 @@ class ThreatIntelProperties:
         IP AS 自治系统。
 
         :param belongs_to_refs: The belongs_to_refs of this ThreatIntelProperties.
-        :type: str
+        :type belongs_to_refs: str
         """
         self._belongs_to_refs = belongs_to_refs
 
@@ -363,7 +402,7 @@ class ThreatIntelProperties:
         地区 格式：country/provice/city/lngwgs/latwgs。
 
         :param ip_location: The ip_location of this ThreatIntelProperties.
-        :type: str
+        :type ip_location: str
         """
         self._ip_location = ip_location
 
@@ -385,7 +424,7 @@ class ThreatIntelProperties:
         例如：banjori|iodine。
 
         :param domain_family: The domain_family of this ThreatIntelProperties.
-        :type: str
+        :type domain_family: str
         """
         self._domain_family = domain_family
 
@@ -407,7 +446,7 @@ class ThreatIntelProperties:
         解析的IP地址。
 
         :param domain_resolves_to_refs: The domain_resolves_to_refs of this ThreatIntelProperties.
-        :type: str
+        :type domain_resolves_to_refs: str
         """
         self._domain_resolves_to_refs = domain_resolves_to_refs
 
@@ -429,7 +468,7 @@ class ThreatIntelProperties:
         DNS类别。A|NS|CNAME|TXT。
 
         :param domain_dns_type: The domain_dns_type of this ThreatIntelProperties.
-        :type: str
+        :type domain_dns_type: str
         """
         self._domain_dns_type = domain_dns_type
 
@@ -451,7 +490,7 @@ class ThreatIntelProperties:
         例：3ms.huawei.com。
 
         :param url_host: The url_host of this ThreatIntelProperties.
-        :type: str
+        :type url_host: str
         """
         self._url_host = url_host
 
@@ -473,7 +512,7 @@ class ThreatIntelProperties:
         IP地址。
 
         :param url_resolves_to_refs: The url_resolves_to_refs of this ThreatIntelProperties.
-        :type: str
+        :type url_resolves_to_refs: str
         """
         self._url_resolves_to_refs = url_resolves_to_refs
 
@@ -495,7 +534,7 @@ class ThreatIntelProperties:
         显示名称。
 
         :param display_name: The display_name of this ThreatIntelProperties.
-        :type: str
+        :type display_name: str
         """
         self._display_name = display_name
 
@@ -517,7 +556,7 @@ class ThreatIntelProperties:
         邮箱账户，@之前部分。
 
         :param url_belongs_to_ref: The url_belongs_to_ref of this ThreatIntelProperties.
-        :type: str
+        :type url_belongs_to_ref: str
         """
         self._url_belongs_to_ref = url_belongs_to_ref
 

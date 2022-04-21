@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RecordControlInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class RecordControlInfo:
     }
 
     def __init__(self, publish_domain=None, app=None, stream=None):
-        """RecordControlInfo - a model defined in huaweicloud sdk"""
+        """RecordControlInfo
+
+        The model defined in huaweicloud sdk
+
+        :param publish_domain: 直播推流域名
+        :type publish_domain: str
+        :param app: 应用名
+        :type app: str
+        :param stream: 待启动或停止录制的流名
+        :type stream: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class RecordControlInfo:
         直播推流域名
 
         :param publish_domain: The publish_domain of this RecordControlInfo.
-        :type: str
+        :type publish_domain: str
         """
         self._publish_domain = publish_domain
 
@@ -87,7 +96,7 @@ class RecordControlInfo:
         应用名
 
         :param app: The app of this RecordControlInfo.
-        :type: str
+        :type app: str
         """
         self._app = app
 
@@ -109,7 +118,7 @@ class RecordControlInfo:
         待启动或停止录制的流名
 
         :param stream: The stream of this RecordControlInfo.
-        :type: str
+        :type stream: str
         """
         self._stream = stream
 

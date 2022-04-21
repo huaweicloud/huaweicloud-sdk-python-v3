@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeviceShadowData:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class DeviceShadowData:
     }
 
     def __init__(self, service_id=None, desired=None, reported=None, version=None):
-        """DeviceShadowData - a model defined in huaweicloud sdk"""
+        """DeviceShadowData
+
+        The model defined in huaweicloud sdk
+
+        :param service_id: 设备的服务ID，在设备关联的产品模型中定义。
+        :type service_id: str
+        :param desired: 
+        :type desired: :class:`huaweicloudsdkiotda.v5.DeviceShadowProperties`
+        :param reported: 
+        :type reported: :class:`huaweicloudsdkiotda.v5.DeviceShadowProperties`
+        :param version: 设备影子的版本，携带该参数时平台会校验值必须等于当前影子版本，初始从0开始。
+        :type version: int
+        """
         
         
 
@@ -72,7 +83,7 @@ class DeviceShadowData:
         设备的服务ID，在设备关联的产品模型中定义。
 
         :param service_id: The service_id of this DeviceShadowData.
-        :type: str
+        :type service_id: str
         """
         self._service_id = service_id
 
@@ -82,7 +93,7 @@ class DeviceShadowData:
 
 
         :return: The desired of this DeviceShadowData.
-        :rtype: DeviceShadowProperties
+        :rtype: :class:`huaweicloudsdkiotda.v5.DeviceShadowProperties`
         """
         return self._desired
 
@@ -92,7 +103,7 @@ class DeviceShadowData:
 
 
         :param desired: The desired of this DeviceShadowData.
-        :type: DeviceShadowProperties
+        :type desired: :class:`huaweicloudsdkiotda.v5.DeviceShadowProperties`
         """
         self._desired = desired
 
@@ -102,7 +113,7 @@ class DeviceShadowData:
 
 
         :return: The reported of this DeviceShadowData.
-        :rtype: DeviceShadowProperties
+        :rtype: :class:`huaweicloudsdkiotda.v5.DeviceShadowProperties`
         """
         return self._reported
 
@@ -112,7 +123,7 @@ class DeviceShadowData:
 
 
         :param reported: The reported of this DeviceShadowData.
-        :type: DeviceShadowProperties
+        :type reported: :class:`huaweicloudsdkiotda.v5.DeviceShadowProperties`
         """
         self._reported = reported
 
@@ -134,7 +145,7 @@ class DeviceShadowData:
         设备影子的版本，携带该参数时平台会校验值必须等于当前影子版本，初始从0开始。
 
         :param version: The version of this DeviceShadowData.
-        :type: int
+        :type version: int
         """
         self._version = version
 

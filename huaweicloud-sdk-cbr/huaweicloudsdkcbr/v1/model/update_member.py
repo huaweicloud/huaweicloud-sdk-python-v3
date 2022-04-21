@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateMember:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateMember:
     }
 
     def __init__(self, status=None, vault_id=None):
-        """UpdateMember - a model defined in huaweicloud sdk"""
+        """UpdateMember
+
+        The model defined in huaweicloud sdk
+
+        :param status: 备份共享状态
+        :type status: str
+        :param vault_id: 共享的备份将存入的存储库，仅支持uuid 更新member状态的时候，如果是接受，必须传入vault_id，如果是拒绝，则无需
+        :type vault_id: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateMember:
         备份共享状态
 
         :param status: The status of this UpdateMember.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -84,7 +91,7 @@ class UpdateMember:
         共享的备份将存入的存储库，仅支持uuid 更新member状态的时候，如果是接受，必须传入vault_id，如果是拒绝，则无需
 
         :param vault_id: The vault_id of this UpdateMember.
-        :type: str
+        :type vault_id: str
         """
         self._vault_id = vault_id
 

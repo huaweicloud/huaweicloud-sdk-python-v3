@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EntityMetricListItem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class EntityMetricListItem:
     }
 
     def __init__(self, cpu_usage=None, disk_read_rate=None, disk_write_rate=None, mem_usage=None, recv_bytes_rate=None, send_bytes_rate=None):
-        """EntityMetricListItem - a model defined in huaweicloud sdk"""
+        """EntityMetricListItem
+
+        The model defined in huaweicloud sdk
+
+        :param cpu_usage: cpu使用率
+        :type cpu_usage: str
+        :param disk_read_rate: 磁盘使用率
+        :type disk_read_rate: str
+        :param disk_write_rate: 磁盘写入速率
+        :type disk_write_rate: str
+        :param mem_usage: 物理内存使用率
+        :type mem_usage: str
+        :param recv_bytes_rate: 下行BPs
+        :type recv_bytes_rate: str
+        :param send_bytes_rate: 上行BPs
+        :type send_bytes_rate: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class EntityMetricListItem:
         cpu使用率
 
         :param cpu_usage: The cpu_usage of this EntityMetricListItem.
-        :type: str
+        :type cpu_usage: str
         """
         self._cpu_usage = cpu_usage
 
@@ -105,7 +120,7 @@ class EntityMetricListItem:
         磁盘使用率
 
         :param disk_read_rate: The disk_read_rate of this EntityMetricListItem.
-        :type: str
+        :type disk_read_rate: str
         """
         self._disk_read_rate = disk_read_rate
 
@@ -127,7 +142,7 @@ class EntityMetricListItem:
         磁盘写入速率
 
         :param disk_write_rate: The disk_write_rate of this EntityMetricListItem.
-        :type: str
+        :type disk_write_rate: str
         """
         self._disk_write_rate = disk_write_rate
 
@@ -149,7 +164,7 @@ class EntityMetricListItem:
         物理内存使用率
 
         :param mem_usage: The mem_usage of this EntityMetricListItem.
-        :type: str
+        :type mem_usage: str
         """
         self._mem_usage = mem_usage
 
@@ -171,7 +186,7 @@ class EntityMetricListItem:
         下行BPs
 
         :param recv_bytes_rate: The recv_bytes_rate of this EntityMetricListItem.
-        :type: str
+        :type recv_bytes_rate: str
         """
         self._recv_bytes_rate = recv_bytes_rate
 
@@ -193,7 +208,7 @@ class EntityMetricListItem:
         上行BPs
 
         :param send_bytes_rate: The send_bytes_rate of this EntityMetricListItem.
-        :type: str
+        :type send_bytes_rate: str
         """
         self._send_bytes_rate = send_bytes_rate
 

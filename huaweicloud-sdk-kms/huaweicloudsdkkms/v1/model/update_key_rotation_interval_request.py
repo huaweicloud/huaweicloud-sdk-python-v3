@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateKeyRotationIntervalRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateKeyRotationIntervalRequest:
     }
 
     def __init__(self, version_id=None, body=None):
-        """UpdateKeyRotationIntervalRequest - a model defined in huaweicloud sdk"""
+        """UpdateKeyRotationIntervalRequest
+
+        The model defined in huaweicloud sdk
+
+        :param version_id: API版本号
+        :type version_id: str
+        :param body: Body of the UpdateKeyRotationIntervalRequest
+        :type body: :class:`huaweicloudsdkkms.v1.UpdateKeyRotationIntervalRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateKeyRotationIntervalRequest:
         API版本号
 
         :param version_id: The version_id of this UpdateKeyRotationIntervalRequest.
-        :type: str
+        :type version_id: str
         """
         self._version_id = version_id
 
@@ -72,7 +79,7 @@ class UpdateKeyRotationIntervalRequest:
 
 
         :return: The body of this UpdateKeyRotationIntervalRequest.
-        :rtype: UpdateKeyRotationIntervalRequestBody
+        :rtype: :class:`huaweicloudsdkkms.v1.UpdateKeyRotationIntervalRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateKeyRotationIntervalRequest:
 
 
         :param body: The body of this UpdateKeyRotationIntervalRequest.
-        :type: UpdateKeyRotationIntervalRequestBody
+        :type body: :class:`huaweicloudsdkkms.v1.UpdateKeyRotationIntervalRequestBody`
         """
         self._body = body
 

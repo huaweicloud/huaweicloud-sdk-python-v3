@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VideoInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class VideoInfo:
     }
 
     def __init__(self, width=None, height=None, bitrate=None, bitrate_bps=None, frame_rate=None, codec=None):
-        """VideoInfo - a model defined in huaweicloud sdk"""
+        """VideoInfo
+
+        The model defined in huaweicloud sdk
+
+        :param width: 视频宽度
+        :type width: int
+        :param height: 视频高度
+        :type height: int
+        :param bitrate: 视频码率，单位: kbit/s 
+        :type bitrate: int
+        :param bitrate_bps: 视频码率，单位: bit/s 
+        :type bitrate_bps: int
+        :param frame_rate: 帧率。    取值范围：0或[5,60]，0表示自适应。    单位：帧每秒。    &gt; 若设置的帧率不在取值范围内，则自动调整为0，若设置的帧率高于片源帧率，则自动调整为片源帧率。 
+        :type frame_rate: int
+        :param codec: 视频编码格式
+        :type codec: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class VideoInfo:
         视频宽度
 
         :param width: The width of this VideoInfo.
-        :type: int
+        :type width: int
         """
         self._width = width
 
@@ -105,7 +120,7 @@ class VideoInfo:
         视频高度
 
         :param height: The height of this VideoInfo.
-        :type: int
+        :type height: int
         """
         self._height = height
 
@@ -127,7 +142,7 @@ class VideoInfo:
         视频码率，单位: kbit/s 
 
         :param bitrate: The bitrate of this VideoInfo.
-        :type: int
+        :type bitrate: int
         """
         self._bitrate = bitrate
 
@@ -149,7 +164,7 @@ class VideoInfo:
         视频码率，单位: bit/s 
 
         :param bitrate_bps: The bitrate_bps of this VideoInfo.
-        :type: int
+        :type bitrate_bps: int
         """
         self._bitrate_bps = bitrate_bps
 
@@ -171,7 +186,7 @@ class VideoInfo:
         帧率。    取值范围：0或[5,60]，0表示自适应。    单位：帧每秒。    > 若设置的帧率不在取值范围内，则自动调整为0，若设置的帧率高于片源帧率，则自动调整为片源帧率。 
 
         :param frame_rate: The frame_rate of this VideoInfo.
-        :type: int
+        :type frame_rate: int
         """
         self._frame_rate = frame_rate
 
@@ -193,7 +208,7 @@ class VideoInfo:
         视频编码格式
 
         :param codec: The codec of this VideoInfo.
-        :type: str
+        :type codec: str
         """
         self._codec = codec
 

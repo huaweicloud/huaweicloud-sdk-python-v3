@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VusersBrokens:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class VusersBrokens:
     }
 
     def __init__(self, vusers=None):
-        """VusersBrokens - a model defined in huaweicloud sdk"""
+        """VusersBrokens
+
+        The model defined in huaweicloud sdk
+
+        :param vusers: vusers
+        :type vusers: list[float]
+        """
         
         
 
@@ -58,7 +63,7 @@ class VusersBrokens:
         vusers
 
         :param vusers: The vusers of this VusersBrokens.
-        :type: list[float]
+        :type vusers: list[float]
         """
         self._vusers = vusers
 

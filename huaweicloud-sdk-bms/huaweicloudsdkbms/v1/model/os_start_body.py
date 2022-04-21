@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OsStartBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class OsStartBody:
     }
 
     def __init__(self, os_start=None):
-        """OsStartBody - a model defined in huaweicloud sdk"""
+        """OsStartBody
+
+        The model defined in huaweicloud sdk
+
+        :param os_start: 
+        :type os_start: :class:`huaweicloudsdkbms.v1.StartServersInfo`
+        """
         
         
 
@@ -45,7 +50,7 @@ class OsStartBody:
 
 
         :return: The os_start of this OsStartBody.
-        :rtype: StartServersInfo
+        :rtype: :class:`huaweicloudsdkbms.v1.StartServersInfo`
         """
         return self._os_start
 
@@ -55,7 +60,7 @@ class OsStartBody:
 
 
         :param os_start: The os_start of this OsStartBody.
-        :type: StartServersInfo
+        :type os_start: :class:`huaweicloudsdkbms.v1.StartServersInfo`
         """
         self._os_start = os_start
 

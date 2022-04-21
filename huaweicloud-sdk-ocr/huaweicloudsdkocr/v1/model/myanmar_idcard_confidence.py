@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MyanmarIdcardConfidence:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class MyanmarIdcardConfidence:
     }
 
     def __init__(self, nrc_id=None, issue_date=None, name=None, birth=None, bloodlines_religion=None, height=None, blood_group=None, card_id=None, nrc_id_back=None, profession=None, address=None):
-        """MyanmarIdcardConfidence - a model defined in huaweicloud sdk"""
+        """MyanmarIdcardConfidence
+
+        The model defined in huaweicloud sdk
+
+        :param nrc_id: 身份证号码置信度。 
+        :type nrc_id: float
+        :param issue_date: 签发日期置信度。 
+        :type issue_date: float
+        :param name: 姓名置信度。 
+        :type name: float
+        :param birth: 出生日期置信度。 
+        :type birth: float
+        :param bloodlines_religion: 族群或宗教置信度。 
+        :type bloodlines_religion: float
+        :param height: 身高置信度。 
+        :type height: float
+        :param blood_group: 血型置信度。 
+        :type blood_group: float
+        :param card_id: 身份证的卡号（背面）置信度。 
+        :type card_id: float
+        :param nrc_id_back: 背面的身份证号码。 
+        :type nrc_id_back: float
+        :param profession: 职业置信度。 
+        :type profession: float
+        :param address: 地址置信度。 
+        :type address: float
+        """
         
         
 
@@ -108,7 +133,7 @@ class MyanmarIdcardConfidence:
         身份证号码置信度。 
 
         :param nrc_id: The nrc_id of this MyanmarIdcardConfidence.
-        :type: float
+        :type nrc_id: float
         """
         self._nrc_id = nrc_id
 
@@ -130,7 +155,7 @@ class MyanmarIdcardConfidence:
         签发日期置信度。 
 
         :param issue_date: The issue_date of this MyanmarIdcardConfidence.
-        :type: float
+        :type issue_date: float
         """
         self._issue_date = issue_date
 
@@ -152,7 +177,7 @@ class MyanmarIdcardConfidence:
         姓名置信度。 
 
         :param name: The name of this MyanmarIdcardConfidence.
-        :type: float
+        :type name: float
         """
         self._name = name
 
@@ -174,7 +199,7 @@ class MyanmarIdcardConfidence:
         出生日期置信度。 
 
         :param birth: The birth of this MyanmarIdcardConfidence.
-        :type: float
+        :type birth: float
         """
         self._birth = birth
 
@@ -196,7 +221,7 @@ class MyanmarIdcardConfidence:
         族群或宗教置信度。 
 
         :param bloodlines_religion: The bloodlines_religion of this MyanmarIdcardConfidence.
-        :type: float
+        :type bloodlines_religion: float
         """
         self._bloodlines_religion = bloodlines_religion
 
@@ -218,7 +243,7 @@ class MyanmarIdcardConfidence:
         身高置信度。 
 
         :param height: The height of this MyanmarIdcardConfidence.
-        :type: float
+        :type height: float
         """
         self._height = height
 
@@ -240,7 +265,7 @@ class MyanmarIdcardConfidence:
         血型置信度。 
 
         :param blood_group: The blood_group of this MyanmarIdcardConfidence.
-        :type: float
+        :type blood_group: float
         """
         self._blood_group = blood_group
 
@@ -262,7 +287,7 @@ class MyanmarIdcardConfidence:
         身份证的卡号（背面）置信度。 
 
         :param card_id: The card_id of this MyanmarIdcardConfidence.
-        :type: float
+        :type card_id: float
         """
         self._card_id = card_id
 
@@ -284,7 +309,7 @@ class MyanmarIdcardConfidence:
         背面的身份证号码。 
 
         :param nrc_id_back: The nrc_id_back of this MyanmarIdcardConfidence.
-        :type: float
+        :type nrc_id_back: float
         """
         self._nrc_id_back = nrc_id_back
 
@@ -306,7 +331,7 @@ class MyanmarIdcardConfidence:
         职业置信度。 
 
         :param profession: The profession of this MyanmarIdcardConfidence.
-        :type: float
+        :type profession: float
         """
         self._profession = profession
 
@@ -328,7 +353,7 @@ class MyanmarIdcardConfidence:
         地址置信度。 
 
         :param address: The address of this MyanmarIdcardConfidence.
-        :type: float
+        :type address: float
         """
         self._address = address
 

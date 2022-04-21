@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SearchQosOnlineMeetingsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class SearchQosOnlineMeetingsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, limit=None, offset=None, data=None):
-        """SearchQosOnlineMeetingsResponse - a model defined in huaweicloud sdk"""
+        """SearchQosOnlineMeetingsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 总记录数。
+        :type count: int
+        :param limit: 查询条目数量。
+        :type limit: int
+        :param offset: 查询偏移量。
+        :type offset: int
+        :param data: QoS会议列表，按照会议开始时间降序排序。
+        :type data: list[:class:`huaweicloudsdkmeeting.v1.QosConferenceInfo`]
+        """
         
         super(SearchQosOnlineMeetingsResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class SearchQosOnlineMeetingsResponse(SdkResponse):
         总记录数。
 
         :param count: The count of this SearchQosOnlineMeetingsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -95,7 +106,7 @@ class SearchQosOnlineMeetingsResponse(SdkResponse):
         查询条目数量。
 
         :param limit: The limit of this SearchQosOnlineMeetingsResponse.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -117,7 +128,7 @@ class SearchQosOnlineMeetingsResponse(SdkResponse):
         查询偏移量。
 
         :param offset: The offset of this SearchQosOnlineMeetingsResponse.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -128,7 +139,7 @@ class SearchQosOnlineMeetingsResponse(SdkResponse):
         QoS会议列表，按照会议开始时间降序排序。
 
         :return: The data of this SearchQosOnlineMeetingsResponse.
-        :rtype: list[QosConferenceInfo]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.QosConferenceInfo`]
         """
         return self._data
 
@@ -139,7 +150,7 @@ class SearchQosOnlineMeetingsResponse(SdkResponse):
         QoS会议列表，按照会议开始时间降序排序。
 
         :param data: The data of this SearchQosOnlineMeetingsResponse.
-        :type: list[QosConferenceInfo]
+        :type data: list[:class:`huaweicloudsdkmeeting.v1.QosConferenceInfo`]
         """
         self._data = data
 

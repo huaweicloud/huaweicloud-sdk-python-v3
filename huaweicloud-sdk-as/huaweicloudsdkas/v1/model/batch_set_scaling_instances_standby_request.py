@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchSetScalingInstancesStandbyRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchSetScalingInstancesStandbyRequest:
     }
 
     def __init__(self, scaling_group_id=None, body=None):
-        """BatchSetScalingInstancesStandbyRequest - a model defined in huaweicloud sdk"""
+        """BatchSetScalingInstancesStandbyRequest
+
+        The model defined in huaweicloud sdk
+
+        :param scaling_group_id: 实例ID。
+        :type scaling_group_id: str
+        :param body: Body of the BatchSetScalingInstancesStandbyRequest
+        :type body: :class:`huaweicloudsdkas.v1.BatchEnterStandbyInstancesOption`
+        """
         
         
 
@@ -62,7 +69,7 @@ class BatchSetScalingInstancesStandbyRequest:
         实例ID。
 
         :param scaling_group_id: The scaling_group_id of this BatchSetScalingInstancesStandbyRequest.
-        :type: str
+        :type scaling_group_id: str
         """
         self._scaling_group_id = scaling_group_id
 
@@ -72,7 +79,7 @@ class BatchSetScalingInstancesStandbyRequest:
 
 
         :return: The body of this BatchSetScalingInstancesStandbyRequest.
-        :rtype: BatchEnterStandbyInstancesOption
+        :rtype: :class:`huaweicloudsdkas.v1.BatchEnterStandbyInstancesOption`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class BatchSetScalingInstancesStandbyRequest:
 
 
         :param body: The body of this BatchSetScalingInstancesStandbyRequest.
-        :type: BatchEnterStandbyInstancesOption
+        :type body: :class:`huaweicloudsdkas.v1.BatchEnterStandbyInstancesOption`
         """
         self._body = body
 

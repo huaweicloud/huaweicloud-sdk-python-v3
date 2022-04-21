@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchCreateBaremetalServerTagsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchCreateBaremetalServerTagsRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """BatchCreateBaremetalServerTagsRequest - a model defined in huaweicloud sdk"""
+        """BatchCreateBaremetalServerTagsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param server_id: 裸金属服务器ID。
+        :type server_id: str
+        :param body: Body of the BatchCreateBaremetalServerTagsRequest
+        :type body: :class:`huaweicloudsdkbms.v1.BatchCreateBaremetalServerTagsRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class BatchCreateBaremetalServerTagsRequest:
         裸金属服务器ID。
 
         :param server_id: The server_id of this BatchCreateBaremetalServerTagsRequest.
-        :type: str
+        :type server_id: str
         """
         self._server_id = server_id
 
@@ -72,7 +79,7 @@ class BatchCreateBaremetalServerTagsRequest:
 
 
         :return: The body of this BatchCreateBaremetalServerTagsRequest.
-        :rtype: BatchCreateBaremetalServerTagsRequestBody
+        :rtype: :class:`huaweicloudsdkbms.v1.BatchCreateBaremetalServerTagsRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class BatchCreateBaremetalServerTagsRequest:
 
 
         :param body: The body of this BatchCreateBaremetalServerTagsRequest.
-        :type: BatchCreateBaremetalServerTagsRequestBody
+        :type body: :class:`huaweicloudsdkbms.v1.BatchCreateBaremetalServerTagsRequestBody`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowPublicZoneNameServerRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowPublicZoneNameServerRequest:
     }
 
     def __init__(self, zone_id=None):
-        """ShowPublicZoneNameServerRequest - a model defined in huaweicloud sdk"""
+        """ShowPublicZoneNameServerRequest
+
+        The model defined in huaweicloud sdk
+
+        :param zone_id: 待查询zone的ID。  可以通过查询公网Zone列表获取。
+        :type zone_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowPublicZoneNameServerRequest:
         待查询zone的ID。  可以通过查询公网Zone列表获取。
 
         :param zone_id: The zone_id of this ShowPublicZoneNameServerRequest.
-        :type: str
+        :type zone_id: str
         """
         self._zone_id = zone_id
 

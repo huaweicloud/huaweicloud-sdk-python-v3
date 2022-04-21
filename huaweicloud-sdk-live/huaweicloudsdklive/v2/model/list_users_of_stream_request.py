@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListUsersOfStreamRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class ListUsersOfStreamRequest:
     }
 
     def __init__(self, play_domain=None, app=None, stream=None, isp=None, country=None, region=None, protocol=None, interval=None, start_time=None, end_time=None):
-        """ListUsersOfStreamRequest - a model defined in huaweicloud sdk"""
+        """ListUsersOfStreamRequest
+
+        The model defined in huaweicloud sdk
+
+        :param play_domain: 播放域名。 
+        :type play_domain: str
+        :param app: app名。 
+        :type app: str
+        :param stream: 流名。 
+        :type stream: str
+        :param isp: 运营商列表，取值如下： - CMCC ：移动 - CTCC ： 电信 - CUCC ：联通 - OTHER ：其他  不填写查询所有运营商。 
+        :type isp: list[str]
+        :param country: 国家列表。具体取值请参考[国家名称缩写](vod_08_0172.xml)，不填写查询所有国家。 
+        :type country: list[str]
+        :param region: 区域列表。具体取值请参考[省份名称缩写](live_03_0043.xml)，不填写查询所有区域。 
+        :type region: list[str]
+        :param protocol: 请求协议
+        :type protocol: str
+        :param interval: 查询数据的时间粒度，支持60（默认值）, 300秒。不传值时，使用默认值60秒。 
+        :type interval: int
+        :param start_time: 起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度31天，最大查询周期一年。  若参数为空，默认查询7天数据。 
+        :type start_time: str
+        :param end_time: 结束时间。日期格式按照ISO8601表示法，并使用UTC时间。格式为：YYYY-MM-DDThh:mm:ssZ。  若参数为空，默认为当前时间。结束时间需大于起始时间。 
+        :type end_time: str
+        """
         
         
 
@@ -102,7 +125,7 @@ class ListUsersOfStreamRequest:
         播放域名。 
 
         :param play_domain: The play_domain of this ListUsersOfStreamRequest.
-        :type: str
+        :type play_domain: str
         """
         self._play_domain = play_domain
 
@@ -124,7 +147,7 @@ class ListUsersOfStreamRequest:
         app名。 
 
         :param app: The app of this ListUsersOfStreamRequest.
-        :type: str
+        :type app: str
         """
         self._app = app
 
@@ -146,7 +169,7 @@ class ListUsersOfStreamRequest:
         流名。 
 
         :param stream: The stream of this ListUsersOfStreamRequest.
-        :type: str
+        :type stream: str
         """
         self._stream = stream
 
@@ -168,7 +191,7 @@ class ListUsersOfStreamRequest:
         运营商列表，取值如下： - CMCC ：移动 - CTCC ： 电信 - CUCC ：联通 - OTHER ：其他  不填写查询所有运营商。 
 
         :param isp: The isp of this ListUsersOfStreamRequest.
-        :type: list[str]
+        :type isp: list[str]
         """
         self._isp = isp
 
@@ -190,7 +213,7 @@ class ListUsersOfStreamRequest:
         国家列表。具体取值请参考[国家名称缩写](vod_08_0172.xml)，不填写查询所有国家。 
 
         :param country: The country of this ListUsersOfStreamRequest.
-        :type: list[str]
+        :type country: list[str]
         """
         self._country = country
 
@@ -212,7 +235,7 @@ class ListUsersOfStreamRequest:
         区域列表。具体取值请参考[省份名称缩写](live_03_0043.xml)，不填写查询所有区域。 
 
         :param region: The region of this ListUsersOfStreamRequest.
-        :type: list[str]
+        :type region: list[str]
         """
         self._region = region
 
@@ -234,7 +257,7 @@ class ListUsersOfStreamRequest:
         请求协议
 
         :param protocol: The protocol of this ListUsersOfStreamRequest.
-        :type: str
+        :type protocol: str
         """
         self._protocol = protocol
 
@@ -256,7 +279,7 @@ class ListUsersOfStreamRequest:
         查询数据的时间粒度，支持60（默认值）, 300秒。不传值时，使用默认值60秒。 
 
         :param interval: The interval of this ListUsersOfStreamRequest.
-        :type: int
+        :type interval: int
         """
         self._interval = interval
 
@@ -278,7 +301,7 @@ class ListUsersOfStreamRequest:
         起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度31天，最大查询周期一年。  若参数为空，默认查询7天数据。 
 
         :param start_time: The start_time of this ListUsersOfStreamRequest.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -300,7 +323,7 @@ class ListUsersOfStreamRequest:
         结束时间。日期格式按照ISO8601表示法，并使用UTC时间。格式为：YYYY-MM-DDThh:mm:ssZ。  若参数为空，默认为当前时间。结束时间需大于起始时间。 
 
         :param end_time: The end_time of this ListUsersOfStreamRequest.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 

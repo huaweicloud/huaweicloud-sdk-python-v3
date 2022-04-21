@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class JudgementTaskRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class JudgementTaskRequestBody:
     }
 
     def __init__(self, notify_url=None, code_type=None, source_code=None, description=None, runtime_type=None, timeout=None, output_type=None, testcases=None):
-        """JudgementTaskRequestBody - a model defined in huaweicloud sdk"""
+        """JudgementTaskRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param notify_url: 第三方指定的判题结果回调url，取值来源于伙伴通道“判题管理配置”-“接口管理”中设置的回调地址相同
+        :type notify_url: str
+        :param code_type: 代码来源：inline（源代码）
+        :type code_type: str
+        :param source_code: 源代码，需Base64编码
+        :type source_code: str
+        :param description: 任务描述
+        :type description: str
+        :param runtime_type: 支持语言类型：java、c、cpp、python
+        :type runtime_type: str
+        :param timeout: 代码运行超时时间，单位为秒
+        :type timeout: int
+        :param output_type: 结果返回类型：sysout（标准输出）、fileout（以文件形式输出）、imgout（以图片形式输出）、caseout（用例运行返回）、judgeout（用例对比返回）
+        :type output_type: str
+        :param testcases: 当判题结果类型是caseout和judgeout类型才需要传的字段，表示用例数据
+        :type testcases: list[:class:`huaweicloudsdkclassroom.v3.JudgementCaseInfo`]
+        """
         
         
 
@@ -88,7 +107,7 @@ class JudgementTaskRequestBody:
         第三方指定的判题结果回调url，取值来源于伙伴通道“判题管理配置”-“接口管理”中设置的回调地址相同
 
         :param notify_url: The notify_url of this JudgementTaskRequestBody.
-        :type: str
+        :type notify_url: str
         """
         self._notify_url = notify_url
 
@@ -110,7 +129,7 @@ class JudgementTaskRequestBody:
         代码来源：inline（源代码）
 
         :param code_type: The code_type of this JudgementTaskRequestBody.
-        :type: str
+        :type code_type: str
         """
         self._code_type = code_type
 
@@ -132,7 +151,7 @@ class JudgementTaskRequestBody:
         源代码，需Base64编码
 
         :param source_code: The source_code of this JudgementTaskRequestBody.
-        :type: str
+        :type source_code: str
         """
         self._source_code = source_code
 
@@ -154,7 +173,7 @@ class JudgementTaskRequestBody:
         任务描述
 
         :param description: The description of this JudgementTaskRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -176,7 +195,7 @@ class JudgementTaskRequestBody:
         支持语言类型：java、c、cpp、python
 
         :param runtime_type: The runtime_type of this JudgementTaskRequestBody.
-        :type: str
+        :type runtime_type: str
         """
         self._runtime_type = runtime_type
 
@@ -198,7 +217,7 @@ class JudgementTaskRequestBody:
         代码运行超时时间，单位为秒
 
         :param timeout: The timeout of this JudgementTaskRequestBody.
-        :type: int
+        :type timeout: int
         """
         self._timeout = timeout
 
@@ -220,7 +239,7 @@ class JudgementTaskRequestBody:
         结果返回类型：sysout（标准输出）、fileout（以文件形式输出）、imgout（以图片形式输出）、caseout（用例运行返回）、judgeout（用例对比返回）
 
         :param output_type: The output_type of this JudgementTaskRequestBody.
-        :type: str
+        :type output_type: str
         """
         self._output_type = output_type
 
@@ -231,7 +250,7 @@ class JudgementTaskRequestBody:
         当判题结果类型是caseout和judgeout类型才需要传的字段，表示用例数据
 
         :return: The testcases of this JudgementTaskRequestBody.
-        :rtype: list[JudgementCaseInfo]
+        :rtype: list[:class:`huaweicloudsdkclassroom.v3.JudgementCaseInfo`]
         """
         return self._testcases
 
@@ -242,7 +261,7 @@ class JudgementTaskRequestBody:
         当判题结果类型是caseout和judgeout类型才需要传的字段，表示用例数据
 
         :param testcases: The testcases of this JudgementTaskRequestBody.
-        :type: list[JudgementCaseInfo]
+        :type testcases: list[:class:`huaweicloudsdkclassroom.v3.JudgementCaseInfo`]
         """
         self._testcases = testcases
 

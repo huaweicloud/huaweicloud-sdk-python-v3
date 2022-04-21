@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowEdgeCloudResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class ShowEdgeCloudResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, stacks=None, coverage=None, success_num=None, failed_num=None, status=None, fail_reason=None, edge_regions=None, description=None, create_at=None, update_at=None):
-        """ShowEdgeCloudResponse - a model defined in huaweicloud sdk"""
+        """ShowEdgeCloudResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 边缘业务ID。
+        :type id: str
+        :param name: 边缘业务名称。
+        :type name: str
+        :param stacks: 边缘业务资源组。
+        :type stacks: list[:class:`huaweicloudsdkiec.v1.Stack`]
+        :param coverage: 
+        :type coverage: :class:`huaweicloudsdkiec.v1.CoverageResp`
+        :param success_num: 边缘业务成功创建的虚拟机数量。
+        :type success_num: int
+        :param failed_num: 边缘业务创建失败的虚拟机数量。
+        :type failed_num: int
+        :param status: 边缘业务状态。
+        :type status: str
+        :param fail_reason: 
+        :type fail_reason: :class:`huaweicloudsdkiec.v1.FailReason`
+        :param edge_regions: 边缘业务支持的边缘区域数目，等同于边缘业务下所有实例的区域数目总和
+        :type edge_regions: int
+        :param description: 描述。
+        :type description: str
+        :param create_at: 创建时间。
+        :type create_at: str
+        :param update_at: 修改时间。
+        :type update_at: str
+        """
         
         super(ShowEdgeCloudResponse, self).__init__()
 
@@ -113,7 +140,7 @@ class ShowEdgeCloudResponse(SdkResponse):
         边缘业务ID。
 
         :param id: The id of this ShowEdgeCloudResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -135,7 +162,7 @@ class ShowEdgeCloudResponse(SdkResponse):
         边缘业务名称。
 
         :param name: The name of this ShowEdgeCloudResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -146,7 +173,7 @@ class ShowEdgeCloudResponse(SdkResponse):
         边缘业务资源组。
 
         :return: The stacks of this ShowEdgeCloudResponse.
-        :rtype: list[Stack]
+        :rtype: list[:class:`huaweicloudsdkiec.v1.Stack`]
         """
         return self._stacks
 
@@ -157,7 +184,7 @@ class ShowEdgeCloudResponse(SdkResponse):
         边缘业务资源组。
 
         :param stacks: The stacks of this ShowEdgeCloudResponse.
-        :type: list[Stack]
+        :type stacks: list[:class:`huaweicloudsdkiec.v1.Stack`]
         """
         self._stacks = stacks
 
@@ -167,7 +194,7 @@ class ShowEdgeCloudResponse(SdkResponse):
 
 
         :return: The coverage of this ShowEdgeCloudResponse.
-        :rtype: CoverageResp
+        :rtype: :class:`huaweicloudsdkiec.v1.CoverageResp`
         """
         return self._coverage
 
@@ -177,7 +204,7 @@ class ShowEdgeCloudResponse(SdkResponse):
 
 
         :param coverage: The coverage of this ShowEdgeCloudResponse.
-        :type: CoverageResp
+        :type coverage: :class:`huaweicloudsdkiec.v1.CoverageResp`
         """
         self._coverage = coverage
 
@@ -199,7 +226,7 @@ class ShowEdgeCloudResponse(SdkResponse):
         边缘业务成功创建的虚拟机数量。
 
         :param success_num: The success_num of this ShowEdgeCloudResponse.
-        :type: int
+        :type success_num: int
         """
         self._success_num = success_num
 
@@ -221,7 +248,7 @@ class ShowEdgeCloudResponse(SdkResponse):
         边缘业务创建失败的虚拟机数量。
 
         :param failed_num: The failed_num of this ShowEdgeCloudResponse.
-        :type: int
+        :type failed_num: int
         """
         self._failed_num = failed_num
 
@@ -243,7 +270,7 @@ class ShowEdgeCloudResponse(SdkResponse):
         边缘业务状态。
 
         :param status: The status of this ShowEdgeCloudResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -253,7 +280,7 @@ class ShowEdgeCloudResponse(SdkResponse):
 
 
         :return: The fail_reason of this ShowEdgeCloudResponse.
-        :rtype: FailReason
+        :rtype: :class:`huaweicloudsdkiec.v1.FailReason`
         """
         return self._fail_reason
 
@@ -263,7 +290,7 @@ class ShowEdgeCloudResponse(SdkResponse):
 
 
         :param fail_reason: The fail_reason of this ShowEdgeCloudResponse.
-        :type: FailReason
+        :type fail_reason: :class:`huaweicloudsdkiec.v1.FailReason`
         """
         self._fail_reason = fail_reason
 
@@ -285,7 +312,7 @@ class ShowEdgeCloudResponse(SdkResponse):
         边缘业务支持的边缘区域数目，等同于边缘业务下所有实例的区域数目总和
 
         :param edge_regions: The edge_regions of this ShowEdgeCloudResponse.
-        :type: int
+        :type edge_regions: int
         """
         self._edge_regions = edge_regions
 
@@ -307,7 +334,7 @@ class ShowEdgeCloudResponse(SdkResponse):
         描述。
 
         :param description: The description of this ShowEdgeCloudResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -329,7 +356,7 @@ class ShowEdgeCloudResponse(SdkResponse):
         创建时间。
 
         :param create_at: The create_at of this ShowEdgeCloudResponse.
-        :type: str
+        :type create_at: str
         """
         self._create_at = create_at
 
@@ -351,7 +378,7 @@ class ShowEdgeCloudResponse(SdkResponse):
         修改时间。
 
         :param update_at: The update_at of this ShowEdgeCloudResponse.
-        :type: str
+        :type update_at: str
         """
         self._update_at = update_at
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TaskRunInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class TaskRunInfo:
     }
 
     def __init__(self, id=None, run_type=None):
-        """TaskRunInfo - a model defined in huaweicloud sdk"""
+        """TaskRunInfo
+
+        The model defined in huaweicloud sdk
+
+        :param id: id
+        :type id: int
+        :param run_type: run_type
+        :type run_type: int
+        """
         
         
 
@@ -63,7 +70,7 @@ class TaskRunInfo:
         id
 
         :param id: The id of this TaskRunInfo.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -85,7 +92,7 @@ class TaskRunInfo:
         run_type
 
         :param run_type: The run_type of this TaskRunInfo.
-        :type: int
+        :type run_type: int
         """
         self._run_type = run_type
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LiveDataExportReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class LiveDataExportReq:
     }
 
     def __init__(self, app_id=None, format=None, apis=None, status=None):
-        """LiveDataExportReq - a model defined in huaweicloud sdk"""
+        """LiveDataExportReq
+
+        The model defined in huaweicloud sdk
+
+        :param app_id: API所属的应用ID
+        :type app_id: str
+        :param format: 导出的API定义的格式
+        :type format: str
+        :param apis: 导出的自定义后端API ID列表
+        :type apis: list[str]
+        :param status: 导出的后端API状态： - 1：待开发 - 3：开发中 - 4：已部署
+        :type status: int
+        """
         
         
 
@@ -73,7 +84,7 @@ class LiveDataExportReq:
         API所属的应用ID
 
         :param app_id: The app_id of this LiveDataExportReq.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -95,7 +106,7 @@ class LiveDataExportReq:
         导出的API定义的格式
 
         :param format: The format of this LiveDataExportReq.
-        :type: str
+        :type format: str
         """
         self._format = format
 
@@ -117,7 +128,7 @@ class LiveDataExportReq:
         导出的自定义后端API ID列表
 
         :param apis: The apis of this LiveDataExportReq.
-        :type: list[str]
+        :type apis: list[str]
         """
         self._apis = apis
 
@@ -139,7 +150,7 @@ class LiveDataExportReq:
         导出的后端API状态： - 1：待开发 - 3：开发中 - 4：已部署
 
         :param status: The status of this LiveDataExportReq.
-        :type: int
+        :type status: int
         """
         self._status = status
 

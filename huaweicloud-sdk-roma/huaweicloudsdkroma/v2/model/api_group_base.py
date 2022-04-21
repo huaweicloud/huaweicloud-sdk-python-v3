@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApiGroupBase:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ApiGroupBase:
     }
 
     def __init__(self, name=None, remark=None):
-        """ApiGroupBase - a model defined in huaweicloud sdk"""
+        """ApiGroupBase
+
+        The model defined in huaweicloud sdk
+
+        :param name: API分组的名称。  支持汉字、英文、数字、中划线、下划线、点、斜杠、中英文格式下的小括号和冒号、中文格式下的顿号，且只能以英文、汉字和数字开头，3-255个字符。 &gt; 中文字符必须为UTF-8或者unicode编码。
+        :type name: str
+        :param remark: API分组描述。 &gt; 中文字符必须为UTF-8或者unicode编码。
+        :type remark: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ApiGroupBase:
         API分组的名称。  支持汉字、英文、数字、中划线、下划线、点、斜杠、中英文格式下的小括号和冒号、中文格式下的顿号，且只能以英文、汉字和数字开头，3-255个字符。 > 中文字符必须为UTF-8或者unicode编码。
 
         :param name: The name of this ApiGroupBase.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -84,7 +91,7 @@ class ApiGroupBase:
         API分组描述。 > 中文字符必须为UTF-8或者unicode编码。
 
         :param remark: The remark of this ApiGroupBase.
-        :type: str
+        :type remark: str
         """
         self._remark = remark
 

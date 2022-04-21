@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRecordContentsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListRecordContentsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, record_contents=None, x_request_id=None):
-        """ListRecordContentsResponse - a model defined in huaweicloud sdk"""
+        """ListRecordContentsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 查询结果的总元素数量
+        :type total: int
+        :param record_contents: 录制内容数组
+        :type record_contents: list[:class:`huaweicloudsdklive.v1.RecordContentInfoV2`]
+        :param x_request_id: 
+        :type x_request_id: str
+        """
         
         super(ListRecordContentsResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListRecordContentsResponse(SdkResponse):
         查询结果的总元素数量
 
         :param total: The total of this ListRecordContentsResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -79,7 +88,7 @@ class ListRecordContentsResponse(SdkResponse):
         录制内容数组
 
         :return: The record_contents of this ListRecordContentsResponse.
-        :rtype: list[RecordContentInfoV2]
+        :rtype: list[:class:`huaweicloudsdklive.v1.RecordContentInfoV2`]
         """
         return self._record_contents
 
@@ -90,7 +99,7 @@ class ListRecordContentsResponse(SdkResponse):
         录制内容数组
 
         :param record_contents: The record_contents of this ListRecordContentsResponse.
-        :type: list[RecordContentInfoV2]
+        :type record_contents: list[:class:`huaweicloudsdklive.v1.RecordContentInfoV2`]
         """
         self._record_contents = record_contents
 
@@ -110,7 +119,7 @@ class ListRecordContentsResponse(SdkResponse):
 
 
         :param x_request_id: The x_request_id of this ListRecordContentsResponse.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 

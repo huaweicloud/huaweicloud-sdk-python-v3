@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeletePermanentAccessKeyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class DeletePermanentAccessKeyResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeletePermanentAccessKeyResponse - a model defined in huaweicloud sdk"""
+        """DeletePermanentAccessKeyResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(DeletePermanentAccessKeyResponse, self).__init__()
         self.discriminator = None

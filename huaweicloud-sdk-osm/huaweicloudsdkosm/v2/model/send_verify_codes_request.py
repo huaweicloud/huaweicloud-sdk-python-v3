@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SendVerifyCodesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class SendVerifyCodesRequest:
     }
 
     def __init__(self, contact_value=None, contact_way=None, area_code=None, x_site=None, x_language=None, x_time_zone=None):
-        """SendVerifyCodesRequest - a model defined in huaweicloud sdk"""
+        """SendVerifyCodesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param contact_value: 联系方式的值
+        :type contact_value: str
+        :param contact_way: 联系方式类型：0：手机；1：邮箱
+        :type contact_way: int
+        :param area_code: 国家码
+        :type area_code: str
+        :param x_site: 对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
+        :type x_site: int
+        :param x_language: 语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
+        :type x_language: str
+        :param x_time_zone: 环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
+        :type x_time_zone: str
+        """
         
         
 
@@ -81,7 +96,7 @@ class SendVerifyCodesRequest:
         联系方式的值
 
         :param contact_value: The contact_value of this SendVerifyCodesRequest.
-        :type: str
+        :type contact_value: str
         """
         self._contact_value = contact_value
 
@@ -103,7 +118,7 @@ class SendVerifyCodesRequest:
         联系方式类型：0：手机；1：邮箱
 
         :param contact_way: The contact_way of this SendVerifyCodesRequest.
-        :type: int
+        :type contact_way: int
         """
         self._contact_way = contact_way
 
@@ -125,7 +140,7 @@ class SendVerifyCodesRequest:
         国家码
 
         :param area_code: The area_code of this SendVerifyCodesRequest.
-        :type: str
+        :type area_code: str
         """
         self._area_code = area_code
 
@@ -147,7 +162,7 @@ class SendVerifyCodesRequest:
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
         :param x_site: The x_site of this SendVerifyCodesRequest.
-        :type: int
+        :type x_site: int
         """
         self._x_site = x_site
 
@@ -169,7 +184,7 @@ class SendVerifyCodesRequest:
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
         :param x_language: The x_language of this SendVerifyCodesRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -191,7 +206,7 @@ class SendVerifyCodesRequest:
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 
         :param x_time_zone: The x_time_zone of this SendVerifyCodesRequest.
-        :type: str
+        :type x_time_zone: str
         """
         self._x_time_zone = x_time_zone
 

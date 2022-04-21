@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRpoStatisticsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListRpoStatisticsRequest:
     }
 
     def __init__(self, limit=None, offset=None, start_time=None, end_time=None, resource_type=None):
-        """ListRpoStatisticsRequest - a model defined in huaweicloud sdk"""
+        """ListRpoStatisticsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 每次请求返回结果个数限制，取值范围为[0,1000]的正整数，默认值为1000。
+        :type limit: int
+        :param offset: 每次请求开始的下标，即偏移量，默认值为0。offset必须为数字，不能为负数。
+        :type offset: int
+        :param start_time: 开始时间。默认格式为：\&quot;yyyy-MM-dd HH:mm:ss.SSS\&quot;，例：\&quot;2019-04-01 12:00:00.000\&quot;。
+        :type start_time: str
+        :param end_time: 结束时间。默认格式为：\&quot;yyyy-MM-dd HH:mm:ss.SSS\&quot;，例：\&quot;2019-04-01 12:00:00.000\&quot;。
+        :type end_time: str
+        :param resource_type: 资源类型。replication：表示查询复制对的RPO超标趋势记录。
+        :type resource_type: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class ListRpoStatisticsRequest:
         每次请求返回结果个数限制，取值范围为[0,1000]的正整数，默认值为1000。
 
         :param limit: The limit of this ListRpoStatisticsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -100,7 +113,7 @@ class ListRpoStatisticsRequest:
         每次请求开始的下标，即偏移量，默认值为0。offset必须为数字，不能为负数。
 
         :param offset: The offset of this ListRpoStatisticsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -122,7 +135,7 @@ class ListRpoStatisticsRequest:
         开始时间。默认格式为：\"yyyy-MM-dd HH:mm:ss.SSS\"，例：\"2019-04-01 12:00:00.000\"。
 
         :param start_time: The start_time of this ListRpoStatisticsRequest.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -144,7 +157,7 @@ class ListRpoStatisticsRequest:
         结束时间。默认格式为：\"yyyy-MM-dd HH:mm:ss.SSS\"，例：\"2019-04-01 12:00:00.000\"。
 
         :param end_time: The end_time of this ListRpoStatisticsRequest.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -166,7 +179,7 @@ class ListRpoStatisticsRequest:
         资源类型。replication：表示查询复制对的RPO超标趋势记录。
 
         :param resource_type: The resource_type of this ListRpoStatisticsRequest.
-        :type: str
+        :type resource_type: str
         """
         self._resource_type = resource_type
 

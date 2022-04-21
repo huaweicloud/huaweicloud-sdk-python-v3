@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LineCompareResultOverview:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class LineCompareResultOverview:
     }
 
     def __init__(self, source_db_name=None, target_db_name=None, line_compare_result=None):
-        """LineCompareResultOverview - a model defined in huaweicloud sdk"""
+        """LineCompareResultOverview
+
+        The model defined in huaweicloud sdk
+
+        :param source_db_name: 源库名称。
+        :type source_db_name: str
+        :param target_db_name: 目标库名称。
+        :type target_db_name: str
+        :param line_compare_result: 对比结果。
+        :type line_compare_result: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class LineCompareResultOverview:
         源库名称。
 
         :param source_db_name: The source_db_name of this LineCompareResultOverview.
-        :type: str
+        :type source_db_name: str
         """
         self._source_db_name = source_db_name
 
@@ -87,7 +96,7 @@ class LineCompareResultOverview:
         目标库名称。
 
         :param target_db_name: The target_db_name of this LineCompareResultOverview.
-        :type: str
+        :type target_db_name: str
         """
         self._target_db_name = target_db_name
 
@@ -109,7 +118,7 @@ class LineCompareResultOverview:
         对比结果。
 
         :param line_compare_result: The line_compare_result of this LineCompareResultOverview.
-        :type: str
+        :type line_compare_result: str
         """
         self._line_compare_result = line_compare_result
 

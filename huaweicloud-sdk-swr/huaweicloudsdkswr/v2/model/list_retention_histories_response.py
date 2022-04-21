@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRetentionHistoriesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListRetentionHistoriesResponse(SdkResponse):
     }
 
     def __init__(self, retention_log=None, total=None, content_range=None):
-        """ListRetentionHistoriesResponse - a model defined in huaweicloud sdk"""
+        """ListRetentionHistoriesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param retention_log: 镜像老化日志
+        :type retention_log: list[:class:`huaweicloudsdkswr.v2.RetentionLog`]
+        :param total: 总个数
+        :type total: int
+        :param content_range: 
+        :type content_range: str
+        """
         
         super(ListRetentionHistoriesResponse, self).__init__()
 
@@ -57,7 +66,7 @@ class ListRetentionHistoriesResponse(SdkResponse):
         镜像老化日志
 
         :return: The retention_log of this ListRetentionHistoriesResponse.
-        :rtype: list[RetentionLog]
+        :rtype: list[:class:`huaweicloudsdkswr.v2.RetentionLog`]
         """
         return self._retention_log
 
@@ -68,7 +77,7 @@ class ListRetentionHistoriesResponse(SdkResponse):
         镜像老化日志
 
         :param retention_log: The retention_log of this ListRetentionHistoriesResponse.
-        :type: list[RetentionLog]
+        :type retention_log: list[:class:`huaweicloudsdkswr.v2.RetentionLog`]
         """
         self._retention_log = retention_log
 
@@ -90,7 +99,7 @@ class ListRetentionHistoriesResponse(SdkResponse):
         总个数
 
         :param total: The total of this ListRetentionHistoriesResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -110,7 +119,7 @@ class ListRetentionHistoriesResponse(SdkResponse):
 
 
         :param content_range: The content_range of this ListRetentionHistoriesResponse.
-        :type: str
+        :type content_range: str
         """
         self._content_range = content_range
 

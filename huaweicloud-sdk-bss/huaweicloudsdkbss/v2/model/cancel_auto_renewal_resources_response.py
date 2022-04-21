@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CancelAutoRenewalResourcesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class CancelAutoRenewalResourcesResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CancelAutoRenewalResourcesResponse - a model defined in huaweicloud sdk"""
+        """CancelAutoRenewalResourcesResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(CancelAutoRenewalResourcesResponse, self).__init__()
         self.discriminator = None

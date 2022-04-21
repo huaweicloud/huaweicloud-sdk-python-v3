@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IdentityproviderOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class IdentityproviderOption:
     }
 
     def __init__(self, sso_type=None, description=None, enabled=None):
-        """IdentityproviderOption - a model defined in huaweicloud sdk"""
+        """IdentityproviderOption
+
+        The model defined in huaweicloud sdk
+
+        :param sso_type: 身份提供商类型。当前支持virtual_user_sso和iam_user_sso两种，缺省配置默认为virtual_user_sso类型。
+        :type sso_type: str
+        :param description: 身份提供商描述信息。
+        :type description: str
+        :param enabled: 身份提供商是否启用，true为启用，false为停用，默认为false。
+        :type enabled: bool
+        """
         
         
 
@@ -68,7 +77,7 @@ class IdentityproviderOption:
         身份提供商类型。当前支持virtual_user_sso和iam_user_sso两种，缺省配置默认为virtual_user_sso类型。
 
         :param sso_type: The sso_type of this IdentityproviderOption.
-        :type: str
+        :type sso_type: str
         """
         self._sso_type = sso_type
 
@@ -90,7 +99,7 @@ class IdentityproviderOption:
         身份提供商描述信息。
 
         :param description: The description of this IdentityproviderOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -112,7 +121,7 @@ class IdentityproviderOption:
         身份提供商是否启用，true为启用，false为停用，默认为false。
 
         :param enabled: The enabled of this IdentityproviderOption.
-        :type: bool
+        :type enabled: bool
         """
         self._enabled = enabled
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ChangeAlarmRuleStatus:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ChangeAlarmRuleStatus:
     }
 
     def __init__(self, alarm_rule_id=None, status=None, type=None):
-        """ChangeAlarmRuleStatus - a model defined in huaweicloud sdk"""
+        """ChangeAlarmRuleStatus
+
+        The model defined in huaweicloud sdk
+
+        :param alarm_rule_id: 告警规则ID
+        :type alarm_rule_id: str
+        :param status: 状态（RUNNING/STOPPING）
+        :type status: str
+        :param type: 类型
+        :type type: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class ChangeAlarmRuleStatus:
         告警规则ID
 
         :param alarm_rule_id: The alarm_rule_id of this ChangeAlarmRuleStatus.
-        :type: str
+        :type alarm_rule_id: str
         """
         self._alarm_rule_id = alarm_rule_id
 
@@ -87,7 +96,7 @@ class ChangeAlarmRuleStatus:
         状态（RUNNING/STOPPING）
 
         :param status: The status of this ChangeAlarmRuleStatus.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -109,7 +118,7 @@ class ChangeAlarmRuleStatus:
         类型
 
         :param type: The type of this ChangeAlarmRuleStatus.
-        :type: str
+        :type type: str
         """
         self._type = type
 

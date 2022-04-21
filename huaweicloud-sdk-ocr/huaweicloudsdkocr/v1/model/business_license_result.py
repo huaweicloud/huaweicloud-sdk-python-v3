@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BusinessLicenseResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class BusinessLicenseResult:
     }
 
     def __init__(self, registration_number=None, name=None, type=None, address=None, legal_representative=None, registered_capital=None, found_date=None, business_term=None, business_scope=None, issue_date=None, confidence=None):
-        """BusinessLicenseResult - a model defined in huaweicloud sdk"""
+        """BusinessLicenseResult
+
+        The model defined in huaweicloud sdk
+
+        :param registration_number:   - 老版本营业执照对应注册号。  - 新三证合一版本营业执照对应社会保障号。 
+        :type registration_number: str
+        :param name: 企业名称。 
+        :type name: str
+        :param type: 公司/企业类型/主体类型。 
+        :type type: str
+        :param address: 住所/营业场所/企业住所。 
+        :type address: str
+        :param legal_representative: 法定代表人/负责人。 
+        :type legal_representative: str
+        :param registered_capital: 注册资本。 
+        :type registered_capital: str
+        :param found_date: 成立日期。 
+        :type found_date: str
+        :param business_term: 营业期限。 
+        :type business_term: str
+        :param business_scope: 经营范围。 
+        :type business_scope: str
+        :param issue_date: 发照日期。 
+        :type issue_date: str
+        :param confidence: 相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。 
+        :type confidence: object
+        """
         
         
 
@@ -108,7 +133,7 @@ class BusinessLicenseResult:
           - 老版本营业执照对应注册号。  - 新三证合一版本营业执照对应社会保障号。 
 
         :param registration_number: The registration_number of this BusinessLicenseResult.
-        :type: str
+        :type registration_number: str
         """
         self._registration_number = registration_number
 
@@ -130,7 +155,7 @@ class BusinessLicenseResult:
         企业名称。 
 
         :param name: The name of this BusinessLicenseResult.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -152,7 +177,7 @@ class BusinessLicenseResult:
         公司/企业类型/主体类型。 
 
         :param type: The type of this BusinessLicenseResult.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -174,7 +199,7 @@ class BusinessLicenseResult:
         住所/营业场所/企业住所。 
 
         :param address: The address of this BusinessLicenseResult.
-        :type: str
+        :type address: str
         """
         self._address = address
 
@@ -196,7 +221,7 @@ class BusinessLicenseResult:
         法定代表人/负责人。 
 
         :param legal_representative: The legal_representative of this BusinessLicenseResult.
-        :type: str
+        :type legal_representative: str
         """
         self._legal_representative = legal_representative
 
@@ -218,7 +243,7 @@ class BusinessLicenseResult:
         注册资本。 
 
         :param registered_capital: The registered_capital of this BusinessLicenseResult.
-        :type: str
+        :type registered_capital: str
         """
         self._registered_capital = registered_capital
 
@@ -240,7 +265,7 @@ class BusinessLicenseResult:
         成立日期。 
 
         :param found_date: The found_date of this BusinessLicenseResult.
-        :type: str
+        :type found_date: str
         """
         self._found_date = found_date
 
@@ -262,7 +287,7 @@ class BusinessLicenseResult:
         营业期限。 
 
         :param business_term: The business_term of this BusinessLicenseResult.
-        :type: str
+        :type business_term: str
         """
         self._business_term = business_term
 
@@ -284,7 +309,7 @@ class BusinessLicenseResult:
         经营范围。 
 
         :param business_scope: The business_scope of this BusinessLicenseResult.
-        :type: str
+        :type business_scope: str
         """
         self._business_scope = business_scope
 
@@ -306,7 +331,7 @@ class BusinessLicenseResult:
         发照日期。 
 
         :param issue_date: The issue_date of this BusinessLicenseResult.
-        :type: str
+        :type issue_date: str
         """
         self._issue_date = issue_date
 
@@ -328,7 +353,7 @@ class BusinessLicenseResult:
         相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。 
 
         :param confidence: The confidence of this BusinessLicenseResult.
-        :type: object
+        :type confidence: object
         """
         self._confidence = confidence
 

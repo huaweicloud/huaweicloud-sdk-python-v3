@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListLoadbalancersByTagsRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListLoadbalancersByTagsRequestBody:
     }
 
     def __init__(self, offset=None, limit=None, action=None, matches=None, tags=None, without_any_tag=None):
-        """ListLoadbalancersByTagsRequestBody - a model defined in huaweicloud sdk"""
+        """ListLoadbalancersByTagsRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param offset: 分页起始。
+        :type offset: int
+        :param limit: 分页大小。
+        :type limit: int
+        :param action: 操作标识（仅限于filter，count）： filter（过滤），如果是filter就是分页查询 count(查询总条数)，按照条件将总条数返回。
+        :type action: str
+        :param matches: 搜索字段，key为要匹配的字段，如resource_name等。value为匹配的值。key为固定字典值。根据不同的字段确认是否需要模糊匹配，如resource_name默认为模糊搜索，如果value为空字符串精确匹配。key如果是resource_id则精确匹配。
+        :type matches: list[:class:`huaweicloudsdkelb.v2.ActionMatch`]
+        :param tags: 要搜索的标签值
+        :type tags: list[:class:`huaweicloudsdkelb.v2.ActionTag`]
+        :param without_any_tag: 查询不包含任何标签的资源，该字段为true时，忽略tags字段的查询条件。
+        :type without_any_tag: bool
+        """
         
         
 
@@ -82,7 +97,7 @@ class ListLoadbalancersByTagsRequestBody:
         分页起始。
 
         :param offset: The offset of this ListLoadbalancersByTagsRequestBody.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -104,7 +119,7 @@ class ListLoadbalancersByTagsRequestBody:
         分页大小。
 
         :param limit: The limit of this ListLoadbalancersByTagsRequestBody.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -126,7 +141,7 @@ class ListLoadbalancersByTagsRequestBody:
         操作标识（仅限于filter，count）： filter（过滤），如果是filter就是分页查询 count(查询总条数)，按照条件将总条数返回。
 
         :param action: The action of this ListLoadbalancersByTagsRequestBody.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -137,7 +152,7 @@ class ListLoadbalancersByTagsRequestBody:
         搜索字段，key为要匹配的字段，如resource_name等。value为匹配的值。key为固定字典值。根据不同的字段确认是否需要模糊匹配，如resource_name默认为模糊搜索，如果value为空字符串精确匹配。key如果是resource_id则精确匹配。
 
         :return: The matches of this ListLoadbalancersByTagsRequestBody.
-        :rtype: list[ActionMatch]
+        :rtype: list[:class:`huaweicloudsdkelb.v2.ActionMatch`]
         """
         return self._matches
 
@@ -148,7 +163,7 @@ class ListLoadbalancersByTagsRequestBody:
         搜索字段，key为要匹配的字段，如resource_name等。value为匹配的值。key为固定字典值。根据不同的字段确认是否需要模糊匹配，如resource_name默认为模糊搜索，如果value为空字符串精确匹配。key如果是resource_id则精确匹配。
 
         :param matches: The matches of this ListLoadbalancersByTagsRequestBody.
-        :type: list[ActionMatch]
+        :type matches: list[:class:`huaweicloudsdkelb.v2.ActionMatch`]
         """
         self._matches = matches
 
@@ -159,7 +174,7 @@ class ListLoadbalancersByTagsRequestBody:
         要搜索的标签值
 
         :return: The tags of this ListLoadbalancersByTagsRequestBody.
-        :rtype: list[ActionTag]
+        :rtype: list[:class:`huaweicloudsdkelb.v2.ActionTag`]
         """
         return self._tags
 
@@ -170,7 +185,7 @@ class ListLoadbalancersByTagsRequestBody:
         要搜索的标签值
 
         :param tags: The tags of this ListLoadbalancersByTagsRequestBody.
-        :type: list[ActionTag]
+        :type tags: list[:class:`huaweicloudsdkelb.v2.ActionTag`]
         """
         self._tags = tags
 
@@ -192,7 +207,7 @@ class ListLoadbalancersByTagsRequestBody:
         查询不包含任何标签的资源，该字段为true时，忽略tags字段的查询条件。
 
         :param without_any_tag: The without_any_tag of this ListLoadbalancersByTagsRequestBody.
-        :type: bool
+        :type without_any_tag: bool
         """
         self._without_any_tag = without_any_tag
 

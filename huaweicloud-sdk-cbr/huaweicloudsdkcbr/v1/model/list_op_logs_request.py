@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListOpLogsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class ListOpLogsRequest:
     }
 
     def __init__(self, end_time=None, limit=None, offset=None, operation_type=None, provider_id=None, resource_id=None, resource_name=None, start_time=None, status=None, vault_id=None, vault_name=None, enterprise_project_id=None):
-        """ListOpLogsRequest - a model defined in huaweicloud sdk"""
+        """ListOpLogsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param end_time: 任务结束时间，格式为%YYYY-%mm-%ddT%HH:%MM:%SSZ，例如2018-02-01T12:00:00Z
+        :type end_time: str
+        :param limit: 每页显示的条目数量，正整数
+        :type limit: int
+        :param offset: 偏移值，正整数
+        :type offset: int
+        :param operation_type: 任务类型
+        :type operation_type: str
+        :param provider_id: 备份提供商ID
+        :type provider_id: str
+        :param resource_id: 该任务操作的资源ID
+        :type resource_id: str
+        :param resource_name: 该任务操作的资源名称
+        :type resource_name: str
+        :param start_time: 任务开始时间，格式为%YYYY-%mm-%ddT%HH:%MM:%SSZ，例如2018-01-01T12:00:00Z
+        :type start_time: str
+        :param status: 任务状态
+        :type status: str
+        :param vault_id: 存储库ID,该任务操作的资源所属绑定的存储库。
+        :type vault_id: str
+        :param vault_name: 存储库名称，该任务操作资源所绑定的存储库名称。
+        :type vault_name: str
+        :param enterprise_project_id: 企业项目id或all_granted_eps，all_granted_eps表示查询用户有权限的所有企业项目id
+        :type enterprise_project_id: str
+        """
         
         
 
@@ -113,7 +140,7 @@ class ListOpLogsRequest:
         任务结束时间，格式为%YYYY-%mm-%ddT%HH:%MM:%SSZ，例如2018-02-01T12:00:00Z
 
         :param end_time: The end_time of this ListOpLogsRequest.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -135,7 +162,7 @@ class ListOpLogsRequest:
         每页显示的条目数量，正整数
 
         :param limit: The limit of this ListOpLogsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -157,7 +184,7 @@ class ListOpLogsRequest:
         偏移值，正整数
 
         :param offset: The offset of this ListOpLogsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -179,7 +206,7 @@ class ListOpLogsRequest:
         任务类型
 
         :param operation_type: The operation_type of this ListOpLogsRequest.
-        :type: str
+        :type operation_type: str
         """
         self._operation_type = operation_type
 
@@ -201,7 +228,7 @@ class ListOpLogsRequest:
         备份提供商ID
 
         :param provider_id: The provider_id of this ListOpLogsRequest.
-        :type: str
+        :type provider_id: str
         """
         self._provider_id = provider_id
 
@@ -223,7 +250,7 @@ class ListOpLogsRequest:
         该任务操作的资源ID
 
         :param resource_id: The resource_id of this ListOpLogsRequest.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -245,7 +272,7 @@ class ListOpLogsRequest:
         该任务操作的资源名称
 
         :param resource_name: The resource_name of this ListOpLogsRequest.
-        :type: str
+        :type resource_name: str
         """
         self._resource_name = resource_name
 
@@ -267,7 +294,7 @@ class ListOpLogsRequest:
         任务开始时间，格式为%YYYY-%mm-%ddT%HH:%MM:%SSZ，例如2018-01-01T12:00:00Z
 
         :param start_time: The start_time of this ListOpLogsRequest.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -289,7 +316,7 @@ class ListOpLogsRequest:
         任务状态
 
         :param status: The status of this ListOpLogsRequest.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -311,7 +338,7 @@ class ListOpLogsRequest:
         存储库ID,该任务操作的资源所属绑定的存储库。
 
         :param vault_id: The vault_id of this ListOpLogsRequest.
-        :type: str
+        :type vault_id: str
         """
         self._vault_id = vault_id
 
@@ -333,7 +360,7 @@ class ListOpLogsRequest:
         存储库名称，该任务操作资源所绑定的存储库名称。
 
         :param vault_name: The vault_name of this ListOpLogsRequest.
-        :type: str
+        :type vault_name: str
         """
         self._vault_name = vault_name
 
@@ -355,7 +382,7 @@ class ListOpLogsRequest:
         企业项目id或all_granted_eps，all_granted_eps表示查询用户有权限的所有企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this ListOpLogsRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 

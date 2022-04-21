@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LoadbalancerResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -64,7 +63,47 @@ class LoadbalancerResp:
     }
 
     def __init__(self, id=None, tenant_id=None, name=None, description=None, vip_subnet_id=None, vip_port_id=None, vip_address=None, listeners=None, pools=None, provider=None, operating_status=None, provisioning_status=None, admin_state_up=None, created_at=None, updated_at=None, enterprise_project_id=None, project_id=None, tags=None):
-        """LoadbalancerResp - a model defined in huaweicloud sdk"""
+        """LoadbalancerResp
+
+        The model defined in huaweicloud sdk
+
+        :param id: 负载均衡器ID
+        :type id: str
+        :param tenant_id: 负载均衡器所在的项目ID。
+        :type tenant_id: str
+        :param name: 负载均衡器名称。
+        :type name: str
+        :param description: 负载均衡器的描述信息
+        :type description: str
+        :param vip_subnet_id: 负载均衡器所在的子网ID。仅支持内网类型。
+        :type vip_subnet_id: str
+        :param vip_port_id: 负载均衡器虚拟IP对应的端口ID
+        :type vip_port_id: str
+        :param vip_address: 负载均衡器的虚拟IP。
+        :type vip_address: str
+        :param listeners: 负载均衡器关联的监听器ID的列表
+        :type listeners: list[:class:`huaweicloudsdkelb.v2.ResourceList`]
+        :param pools: 负载均衡器关联的后端云服务器组ID的列表。
+        :type pools: list[:class:`huaweicloudsdkelb.v2.ResourceList`]
+        :param provider: 负载均衡器的供应者名称。只支持vlb
+        :type provider: str
+        :param operating_status: 负载均衡器的操作状态
+        :type operating_status: str
+        :param provisioning_status: 负载均衡器的配置状态
+        :type provisioning_status: str
+        :param admin_state_up: 负载均衡器的管理状态。只支持设定为true，该字段的值无实际意义。
+        :type admin_state_up: bool
+        :param created_at: 负载均衡器的创建时间
+        :type created_at: str
+        :param updated_at: 负载均衡器的更新时间
+        :type updated_at: str
+        :param enterprise_project_id: 负载均衡器的企业项目ID。
+        :type enterprise_project_id: str
+        :param project_id: 负载均衡器所在的项目ID。
+        :type project_id: str
+        :param tags: 负载均衡器的标签列表
+        :type tags: list[str]
+        """
         
         
 
@@ -125,7 +164,7 @@ class LoadbalancerResp:
         负载均衡器ID
 
         :param id: The id of this LoadbalancerResp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -147,7 +186,7 @@ class LoadbalancerResp:
         负载均衡器所在的项目ID。
 
         :param tenant_id: The tenant_id of this LoadbalancerResp.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 
@@ -169,7 +208,7 @@ class LoadbalancerResp:
         负载均衡器名称。
 
         :param name: The name of this LoadbalancerResp.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -191,7 +230,7 @@ class LoadbalancerResp:
         负载均衡器的描述信息
 
         :param description: The description of this LoadbalancerResp.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -213,7 +252,7 @@ class LoadbalancerResp:
         负载均衡器所在的子网ID。仅支持内网类型。
 
         :param vip_subnet_id: The vip_subnet_id of this LoadbalancerResp.
-        :type: str
+        :type vip_subnet_id: str
         """
         self._vip_subnet_id = vip_subnet_id
 
@@ -235,7 +274,7 @@ class LoadbalancerResp:
         负载均衡器虚拟IP对应的端口ID
 
         :param vip_port_id: The vip_port_id of this LoadbalancerResp.
-        :type: str
+        :type vip_port_id: str
         """
         self._vip_port_id = vip_port_id
 
@@ -257,7 +296,7 @@ class LoadbalancerResp:
         负载均衡器的虚拟IP。
 
         :param vip_address: The vip_address of this LoadbalancerResp.
-        :type: str
+        :type vip_address: str
         """
         self._vip_address = vip_address
 
@@ -268,7 +307,7 @@ class LoadbalancerResp:
         负载均衡器关联的监听器ID的列表
 
         :return: The listeners of this LoadbalancerResp.
-        :rtype: list[ResourceList]
+        :rtype: list[:class:`huaweicloudsdkelb.v2.ResourceList`]
         """
         return self._listeners
 
@@ -279,7 +318,7 @@ class LoadbalancerResp:
         负载均衡器关联的监听器ID的列表
 
         :param listeners: The listeners of this LoadbalancerResp.
-        :type: list[ResourceList]
+        :type listeners: list[:class:`huaweicloudsdkelb.v2.ResourceList`]
         """
         self._listeners = listeners
 
@@ -290,7 +329,7 @@ class LoadbalancerResp:
         负载均衡器关联的后端云服务器组ID的列表。
 
         :return: The pools of this LoadbalancerResp.
-        :rtype: list[ResourceList]
+        :rtype: list[:class:`huaweicloudsdkelb.v2.ResourceList`]
         """
         return self._pools
 
@@ -301,7 +340,7 @@ class LoadbalancerResp:
         负载均衡器关联的后端云服务器组ID的列表。
 
         :param pools: The pools of this LoadbalancerResp.
-        :type: list[ResourceList]
+        :type pools: list[:class:`huaweicloudsdkelb.v2.ResourceList`]
         """
         self._pools = pools
 
@@ -323,7 +362,7 @@ class LoadbalancerResp:
         负载均衡器的供应者名称。只支持vlb
 
         :param provider: The provider of this LoadbalancerResp.
-        :type: str
+        :type provider: str
         """
         self._provider = provider
 
@@ -345,7 +384,7 @@ class LoadbalancerResp:
         负载均衡器的操作状态
 
         :param operating_status: The operating_status of this LoadbalancerResp.
-        :type: str
+        :type operating_status: str
         """
         self._operating_status = operating_status
 
@@ -367,7 +406,7 @@ class LoadbalancerResp:
         负载均衡器的配置状态
 
         :param provisioning_status: The provisioning_status of this LoadbalancerResp.
-        :type: str
+        :type provisioning_status: str
         """
         self._provisioning_status = provisioning_status
 
@@ -389,7 +428,7 @@ class LoadbalancerResp:
         负载均衡器的管理状态。只支持设定为true，该字段的值无实际意义。
 
         :param admin_state_up: The admin_state_up of this LoadbalancerResp.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 
@@ -411,7 +450,7 @@ class LoadbalancerResp:
         负载均衡器的创建时间
 
         :param created_at: The created_at of this LoadbalancerResp.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -433,7 +472,7 @@ class LoadbalancerResp:
         负载均衡器的更新时间
 
         :param updated_at: The updated_at of this LoadbalancerResp.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 
@@ -455,7 +494,7 @@ class LoadbalancerResp:
         负载均衡器的企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this LoadbalancerResp.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -477,7 +516,7 @@ class LoadbalancerResp:
         负载均衡器所在的项目ID。
 
         :param project_id: The project_id of this LoadbalancerResp.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -499,7 +538,7 @@ class LoadbalancerResp:
         负载均衡器的标签列表
 
         :param tags: The tags of this LoadbalancerResp.
-        :type: list[str]
+        :type tags: list[str]
         """
         self._tags = tags
 

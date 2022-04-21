@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDomainNotAddedProjectsV4Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListDomainNotAddedProjectsV4Response(SdkResponse):
     }
 
     def __init__(self, projects=None, total=None):
-        """ListDomainNotAddedProjectsV4Response - a model defined in huaweicloud sdk"""
+        """ListDomainNotAddedProjectsV4Response
+
+        The model defined in huaweicloud sdk
+
+        :param projects: 项目信息列表
+        :type projects: list[:class:`huaweicloudsdkprojectman.v4.ListDomainNotAddedProjectsV4ResponseBodyProjects`]
+        :param total: 总数
+        :type total: int
+        """
         
         super(ListDomainNotAddedProjectsV4Response, self).__init__()
 
@@ -52,7 +59,7 @@ class ListDomainNotAddedProjectsV4Response(SdkResponse):
         项目信息列表
 
         :return: The projects of this ListDomainNotAddedProjectsV4Response.
-        :rtype: list[ListDomainNotAddedProjectsV4ResponseBodyProjects]
+        :rtype: list[:class:`huaweicloudsdkprojectman.v4.ListDomainNotAddedProjectsV4ResponseBodyProjects`]
         """
         return self._projects
 
@@ -63,7 +70,7 @@ class ListDomainNotAddedProjectsV4Response(SdkResponse):
         项目信息列表
 
         :param projects: The projects of this ListDomainNotAddedProjectsV4Response.
-        :type: list[ListDomainNotAddedProjectsV4ResponseBodyProjects]
+        :type projects: list[:class:`huaweicloudsdkprojectman.v4.ListDomainNotAddedProjectsV4ResponseBodyProjects`]
         """
         self._projects = projects
 
@@ -85,7 +92,7 @@ class ListDomainNotAddedProjectsV4Response(SdkResponse):
         总数
 
         :param total: The total of this ListDomainNotAddedProjectsV4Response.
-        :type: int
+        :type total: int
         """
         self._total = total
 

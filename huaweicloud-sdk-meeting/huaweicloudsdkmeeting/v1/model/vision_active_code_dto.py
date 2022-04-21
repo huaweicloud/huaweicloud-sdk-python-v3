@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VisionActiveCodeDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class VisionActiveCodeDTO:
     }
 
     def __init__(self, dev_type=None, dept_code=None, dev_name=None, description=None, sms_number=None, country=None, email_addr=None):
-        """VisionActiveCodeDTO - a model defined in huaweicloud sdk"""
+        """VisionActiveCodeDTO
+
+        The model defined in huaweicloud sdk
+
+        :param dev_type: 终端类型 - idea-hub:智能协作大屏 - huawei-vision:智慧屏TV - welink-desktop(iwb):电子白板 
+        :type dev_type: str
+        :param dept_code: 部门编号，若不携带则默认根部门
+        :type dept_code: str
+        :param dev_name: 终端的名称
+        :type dev_name: str
+        :param description: 描述信息
+        :type description: str
+        :param sms_number: 号码信息，如果为手机号，必须加上国家码。 例如中国大陆手机+86xxxxxxx，当填写手机号时 “country”参数必填,手机格式必须满足(^$|^[+]?[0-9]+$) 
+        :type sms_number: str
+        :param country: 若smsNumber为手机号,则需带上手机号所属的国家。 例如国家为中国大陆则country参数取值为chinaPR 国家和国家码的对应关系请参考：https://support.huaweicloud.com/api-meeting/meeting_21_0109.html 
+        :type country: str
+        :param email_addr: 邮箱地址
+        :type email_addr: str
+        """
         
         
 
@@ -86,7 +103,7 @@ class VisionActiveCodeDTO:
         终端类型 - idea-hub:智能协作大屏 - huawei-vision:智慧屏TV - welink-desktop(iwb):电子白板 
 
         :param dev_type: The dev_type of this VisionActiveCodeDTO.
-        :type: str
+        :type dev_type: str
         """
         self._dev_type = dev_type
 
@@ -108,7 +125,7 @@ class VisionActiveCodeDTO:
         部门编号，若不携带则默认根部门
 
         :param dept_code: The dept_code of this VisionActiveCodeDTO.
-        :type: str
+        :type dept_code: str
         """
         self._dept_code = dept_code
 
@@ -130,7 +147,7 @@ class VisionActiveCodeDTO:
         终端的名称
 
         :param dev_name: The dev_name of this VisionActiveCodeDTO.
-        :type: str
+        :type dev_name: str
         """
         self._dev_name = dev_name
 
@@ -152,7 +169,7 @@ class VisionActiveCodeDTO:
         描述信息
 
         :param description: The description of this VisionActiveCodeDTO.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -174,7 +191,7 @@ class VisionActiveCodeDTO:
         号码信息，如果为手机号，必须加上国家码。 例如中国大陆手机+86xxxxxxx，当填写手机号时 “country”参数必填,手机格式必须满足(^$|^[+]?[0-9]+$) 
 
         :param sms_number: The sms_number of this VisionActiveCodeDTO.
-        :type: str
+        :type sms_number: str
         """
         self._sms_number = sms_number
 
@@ -196,7 +213,7 @@ class VisionActiveCodeDTO:
         若smsNumber为手机号,则需带上手机号所属的国家。 例如国家为中国大陆则country参数取值为chinaPR 国家和国家码的对应关系请参考：https://support.huaweicloud.com/api-meeting/meeting_21_0109.html 
 
         :param country: The country of this VisionActiveCodeDTO.
-        :type: str
+        :type country: str
         """
         self._country = country
 
@@ -218,7 +235,7 @@ class VisionActiveCodeDTO:
         邮箱地址
 
         :param email_addr: The email_addr of this VisionActiveCodeDTO.
-        :type: str
+        :type email_addr: str
         """
         self._email_addr = email_addr
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateLoadBalancerOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class UpdateLoadBalancerOption:
     }
 
     def __init__(self, name=None, admin_state_up=None, description=None, ipv6_vip_virsubnet_id=None, vip_subnet_cidr_id=None, vip_address=None, l4_flavor_id=None, l7_flavor_id=None, ipv6_bandwidth=None, ip_target_enable=None, elb_virsubnet_ids=None, deletion_protection_enable=None, prepaid_options=None, autoscaling=None):
-        """UpdateLoadBalancerOption - a model defined in huaweicloud sdk"""
+        """UpdateLoadBalancerOption
+
+        The model defined in huaweicloud sdk
+
+        :param name: 负载均衡器的名称。
+        :type name: str
+        :param admin_state_up: 负载均衡器的管理状态。只能设置为true。  [不支持该字段，请勿使用。](tag:dt,dt_test)
+        :type admin_state_up: bool
+        :param description: 负载均衡器的描述。
+        :type description: str
+        :param ipv6_vip_virsubnet_id: 双栈类型负载均衡器所在子网的IPv6网络ID。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的id得到。  通过更新ipv6_vip_virsubnet_id可以更新负载均衡器所在IPv6子网，且负载均衡器的内网IPv6地址将发生变化。  使用说明： - ipv6_vip_virsubnet_id 对应的子网必须属于当前负载均衡器所在VPC，且子网需开启支持IPv6。 - 只有guaranteed是true的负载均衡器才支持更新ipv6_vip_virsubnet_id。 - *传入为null表示解绑IPv6子网。* - 更新IPv6子网不会导致IPv4子网发生变化。  [不支持IPv6，请勿使用。](tag:dt,dt_test)
+        :type ipv6_vip_virsubnet_id: str
+        :param vip_subnet_cidr_id: 负载均衡器所在的IPv4子网ID。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_subnet_id得到。 通过更新vip_subnet_cidr_id可以更新负载均衡器所在IPv4子网，并且负载均衡器的内网IPv4地址将发生变化。 使用说明： - 若同时设置了vip_address，则必须保证vip_address对应的IP在vip_subnet_cidr_id的子网网段中。 - vip_subnet_cidr_id对应的子网必须属于当前负载均衡器vpc_id对应的VPC。 - 只有guaranteed是true的负载均衡器才支持更新vip_subnet_cidr_id。 - *传入null表示解绑IPv4子网。* - 更新IPv子网不会导致IPv4子网发生变化。
+        :type vip_subnet_cidr_id: str
+        :param vip_address: 负载均衡器的IPv4虚拟IP。该地址必须包含在所在子网的IPv4网段内，且未被占用。  注：仅当guaranteed是true的场合，才支持更新。
+        :type vip_address: str
+        :param l4_flavor_id: 四层Flavor ID。  注： 1.仅当guaranteed是true的场合，才支持更新。 2.不允许非null变成null，null变成非null，只允许改大，不允许改小。  [hcso场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hws,hcso)
+        :type l4_flavor_id: str
+        :param l7_flavor_id: 七层Flavor ID。  注： 1.仅当guaranteed是true的场合，才支持更新。 2.不允许非null变成null，null变成非null；只允许改大，不允许改小。  [hcso场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hws,hcso)
+        :type l7_flavor_id: str
+        :param ipv6_bandwidth: 
+        :type ipv6_bandwidth: :class:`huaweicloudsdkelb.v3.BandwidthRef`
+        :param ip_target_enable: 是否启用跨VPC后端转发，开启跨VPC后端转发后，支持添加其他VPC、其他公有云、云下数据中心的服务器。取值： - true：开启。 - false：不开启。 [仅独享型负载均衡器支持该特性，且只能更新为true，即开启后不支持关闭。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42,dt,dt_test)  [不支持该字段，请勿使用。](tag:dt,dt_test)
+        :type ip_target_enable: bool
+        :param elb_virsubnet_ids: 下联面子网的网络ID列表。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的id得到。  已绑定的下联面子网也在传参elb_virsubnet_ids列表中，则绑定关系保留。  已绑定的下联面子网若不在传参elb_virsubnet_ids列表中，则将移除LB与该下联面子网的关联关系。但不允许移除已被ELB使用的子网，否则将报错，不做任何修改。  在传参elb_virsubnet_ids列表中但不在已绑定的下联面子网列表中，则将新增LB与下联面的绑定关系。   使用说明：  - 所有ID同属于该LB所在的VPC。  - 不支持边缘云子网。
+        :type elb_virsubnet_ids: list[str]
+        :param deletion_protection_enable: 是否开启删除保护。取值：false不开启，true开启。 &gt; 退场时需要先关闭所有资源的删除保护开关。  [不支持该字段，请勿使用](tag:dt,dt_test)
+        :type deletion_protection_enable: bool
+        :param prepaid_options: 
+        :type prepaid_options: :class:`huaweicloudsdkelb.v3.PrepaidUpdateOption`
+        :param autoscaling: 
+        :type autoscaling: :class:`huaweicloudsdkelb.v3.UpdateLoadbalancerAutoscalingOption`
+        """
         
         
 
@@ -123,7 +154,7 @@ class UpdateLoadBalancerOption:
         负载均衡器的名称。
 
         :param name: The name of this UpdateLoadBalancerOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -145,7 +176,7 @@ class UpdateLoadBalancerOption:
         负载均衡器的管理状态。只能设置为true。  [不支持该字段，请勿使用。](tag:dt,dt_test)
 
         :param admin_state_up: The admin_state_up of this UpdateLoadBalancerOption.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 
@@ -167,7 +198,7 @@ class UpdateLoadBalancerOption:
         负载均衡器的描述。
 
         :param description: The description of this UpdateLoadBalancerOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -189,7 +220,7 @@ class UpdateLoadBalancerOption:
         双栈类型负载均衡器所在子网的IPv6网络ID。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的id得到。  通过更新ipv6_vip_virsubnet_id可以更新负载均衡器所在IPv6子网，且负载均衡器的内网IPv6地址将发生变化。  使用说明： - ipv6_vip_virsubnet_id 对应的子网必须属于当前负载均衡器所在VPC，且子网需开启支持IPv6。 - 只有guaranteed是true的负载均衡器才支持更新ipv6_vip_virsubnet_id。 - *传入为null表示解绑IPv6子网。* - 更新IPv6子网不会导致IPv4子网发生变化。  [不支持IPv6，请勿使用。](tag:dt,dt_test)
 
         :param ipv6_vip_virsubnet_id: The ipv6_vip_virsubnet_id of this UpdateLoadBalancerOption.
-        :type: str
+        :type ipv6_vip_virsubnet_id: str
         """
         self._ipv6_vip_virsubnet_id = ipv6_vip_virsubnet_id
 
@@ -211,7 +242,7 @@ class UpdateLoadBalancerOption:
         负载均衡器所在的IPv4子网ID。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_subnet_id得到。 通过更新vip_subnet_cidr_id可以更新负载均衡器所在IPv4子网，并且负载均衡器的内网IPv4地址将发生变化。 使用说明： - 若同时设置了vip_address，则必须保证vip_address对应的IP在vip_subnet_cidr_id的子网网段中。 - vip_subnet_cidr_id对应的子网必须属于当前负载均衡器vpc_id对应的VPC。 - 只有guaranteed是true的负载均衡器才支持更新vip_subnet_cidr_id。 - *传入null表示解绑IPv4子网。* - 更新IPv子网不会导致IPv4子网发生变化。
 
         :param vip_subnet_cidr_id: The vip_subnet_cidr_id of this UpdateLoadBalancerOption.
-        :type: str
+        :type vip_subnet_cidr_id: str
         """
         self._vip_subnet_cidr_id = vip_subnet_cidr_id
 
@@ -233,7 +264,7 @@ class UpdateLoadBalancerOption:
         负载均衡器的IPv4虚拟IP。该地址必须包含在所在子网的IPv4网段内，且未被占用。  注：仅当guaranteed是true的场合，才支持更新。
 
         :param vip_address: The vip_address of this UpdateLoadBalancerOption.
-        :type: str
+        :type vip_address: str
         """
         self._vip_address = vip_address
 
@@ -255,7 +286,7 @@ class UpdateLoadBalancerOption:
         四层Flavor ID。  注： 1.仅当guaranteed是true的场合，才支持更新。 2.不允许非null变成null，null变成非null，只允许改大，不允许改小。  [hcso场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hws,hcso)
 
         :param l4_flavor_id: The l4_flavor_id of this UpdateLoadBalancerOption.
-        :type: str
+        :type l4_flavor_id: str
         """
         self._l4_flavor_id = l4_flavor_id
 
@@ -277,7 +308,7 @@ class UpdateLoadBalancerOption:
         七层Flavor ID。  注： 1.仅当guaranteed是true的场合，才支持更新。 2.不允许非null变成null，null变成非null；只允许改大，不允许改小。  [hcso场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hws,hcso)
 
         :param l7_flavor_id: The l7_flavor_id of this UpdateLoadBalancerOption.
-        :type: str
+        :type l7_flavor_id: str
         """
         self._l7_flavor_id = l7_flavor_id
 
@@ -287,7 +318,7 @@ class UpdateLoadBalancerOption:
 
 
         :return: The ipv6_bandwidth of this UpdateLoadBalancerOption.
-        :rtype: BandwidthRef
+        :rtype: :class:`huaweicloudsdkelb.v3.BandwidthRef`
         """
         return self._ipv6_bandwidth
 
@@ -297,7 +328,7 @@ class UpdateLoadBalancerOption:
 
 
         :param ipv6_bandwidth: The ipv6_bandwidth of this UpdateLoadBalancerOption.
-        :type: BandwidthRef
+        :type ipv6_bandwidth: :class:`huaweicloudsdkelb.v3.BandwidthRef`
         """
         self._ipv6_bandwidth = ipv6_bandwidth
 
@@ -319,7 +350,7 @@ class UpdateLoadBalancerOption:
         是否启用跨VPC后端转发，开启跨VPC后端转发后，支持添加其他VPC、其他公有云、云下数据中心的服务器。取值： - true：开启。 - false：不开启。 [仅独享型负载均衡器支持该特性，且只能更新为true，即开启后不支持关闭。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42,dt,dt_test)  [不支持该字段，请勿使用。](tag:dt,dt_test)
 
         :param ip_target_enable: The ip_target_enable of this UpdateLoadBalancerOption.
-        :type: bool
+        :type ip_target_enable: bool
         """
         self._ip_target_enable = ip_target_enable
 
@@ -341,7 +372,7 @@ class UpdateLoadBalancerOption:
         下联面子网的网络ID列表。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的id得到。  已绑定的下联面子网也在传参elb_virsubnet_ids列表中，则绑定关系保留。  已绑定的下联面子网若不在传参elb_virsubnet_ids列表中，则将移除LB与该下联面子网的关联关系。但不允许移除已被ELB使用的子网，否则将报错，不做任何修改。  在传参elb_virsubnet_ids列表中但不在已绑定的下联面子网列表中，则将新增LB与下联面的绑定关系。   使用说明：  - 所有ID同属于该LB所在的VPC。  - 不支持边缘云子网。
 
         :param elb_virsubnet_ids: The elb_virsubnet_ids of this UpdateLoadBalancerOption.
-        :type: list[str]
+        :type elb_virsubnet_ids: list[str]
         """
         self._elb_virsubnet_ids = elb_virsubnet_ids
 
@@ -363,7 +394,7 @@ class UpdateLoadBalancerOption:
         是否开启删除保护。取值：false不开启，true开启。 > 退场时需要先关闭所有资源的删除保护开关。  [不支持该字段，请勿使用](tag:dt,dt_test)
 
         :param deletion_protection_enable: The deletion_protection_enable of this UpdateLoadBalancerOption.
-        :type: bool
+        :type deletion_protection_enable: bool
         """
         self._deletion_protection_enable = deletion_protection_enable
 
@@ -373,7 +404,7 @@ class UpdateLoadBalancerOption:
 
 
         :return: The prepaid_options of this UpdateLoadBalancerOption.
-        :rtype: PrepaidUpdateOption
+        :rtype: :class:`huaweicloudsdkelb.v3.PrepaidUpdateOption`
         """
         return self._prepaid_options
 
@@ -383,7 +414,7 @@ class UpdateLoadBalancerOption:
 
 
         :param prepaid_options: The prepaid_options of this UpdateLoadBalancerOption.
-        :type: PrepaidUpdateOption
+        :type prepaid_options: :class:`huaweicloudsdkelb.v3.PrepaidUpdateOption`
         """
         self._prepaid_options = prepaid_options
 
@@ -393,7 +424,7 @@ class UpdateLoadBalancerOption:
 
 
         :return: The autoscaling of this UpdateLoadBalancerOption.
-        :rtype: UpdateLoadbalancerAutoscalingOption
+        :rtype: :class:`huaweicloudsdkelb.v3.UpdateLoadbalancerAutoscalingOption`
         """
         return self._autoscaling
 
@@ -403,7 +434,7 @@ class UpdateLoadBalancerOption:
 
 
         :param autoscaling: The autoscaling of this UpdateLoadBalancerOption.
-        :type: UpdateLoadbalancerAutoscalingOption
+        :type autoscaling: :class:`huaweicloudsdkelb.v3.UpdateLoadbalancerAutoscalingOption`
         """
         self._autoscaling = autoscaling
 

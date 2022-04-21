@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchResetServersPasswordResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchResetServersPasswordResponse(SdkResponse):
     }
 
     def __init__(self, response=None):
-        """BatchResetServersPasswordResponse - a model defined in huaweicloud sdk"""
+        """BatchResetServersPasswordResponse
+
+        The model defined in huaweicloud sdk
+
+        :param response: 提交请求成功后返回的响应列表。
+        :type response: list[:class:`huaweicloudsdkecs.v2.ServerId`]
+        """
         
         super(BatchResetServersPasswordResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class BatchResetServersPasswordResponse(SdkResponse):
         提交请求成功后返回的响应列表。
 
         :return: The response of this BatchResetServersPasswordResponse.
-        :rtype: list[ServerId]
+        :rtype: list[:class:`huaweicloudsdkecs.v2.ServerId`]
         """
         return self._response
 
@@ -58,7 +63,7 @@ class BatchResetServersPasswordResponse(SdkResponse):
         提交请求成功后返回的响应列表。
 
         :param response: The response of this BatchResetServersPasswordResponse.
-        :type: list[ServerId]
+        :type response: list[:class:`huaweicloudsdkecs.v2.ServerId`]
         """
         self._response = response
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchTagActionDelRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchTagActionDelRequestBody:
     }
 
     def __init__(self, action=None, tags=None):
-        """BatchTagActionDelRequestBody - a model defined in huaweicloud sdk"""
+        """BatchTagActionDelRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param action: 操作标识（区分大小写）：删除时为“delete”。
+        :type action: str
+        :param tags: 标签列表。单个实例总标签数上限10个。
+        :type tags: list[:class:`huaweicloudsdkrds.v3.TagDelWithKeyValue`]
+        """
         
         
 
@@ -61,7 +68,7 @@ class BatchTagActionDelRequestBody:
         操作标识（区分大小写）：删除时为“delete”。
 
         :param action: The action of this BatchTagActionDelRequestBody.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -72,7 +79,7 @@ class BatchTagActionDelRequestBody:
         标签列表。单个实例总标签数上限10个。
 
         :return: The tags of this BatchTagActionDelRequestBody.
-        :rtype: list[TagDelWithKeyValue]
+        :rtype: list[:class:`huaweicloudsdkrds.v3.TagDelWithKeyValue`]
         """
         return self._tags
 
@@ -83,7 +90,7 @@ class BatchTagActionDelRequestBody:
         标签列表。单个实例总标签数上限10个。
 
         :param tags: The tags of this BatchTagActionDelRequestBody.
-        :type: list[TagDelWithKeyValue]
+        :type tags: list[:class:`huaweicloudsdkrds.v3.TagDelWithKeyValue`]
         """
         self._tags = tags
 

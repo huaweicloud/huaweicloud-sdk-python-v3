@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowJobExercisesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowJobExercisesResponse(SdkResponse):
     }
 
     def __init__(self, group_exercises=None, total=None):
-        """ShowJobExercisesResponse - a model defined in huaweicloud sdk"""
+        """ShowJobExercisesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param group_exercises: 作业下习题列表
+        :type group_exercises: list[:class:`huaweicloudsdkclassroom.v3.ExerciseGroup`]
+        :param total: 作业下习题总数
+        :type total: int
+        """
         
         super(ShowJobExercisesResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ShowJobExercisesResponse(SdkResponse):
         作业下习题列表
 
         :return: The group_exercises of this ShowJobExercisesResponse.
-        :rtype: list[ExerciseGroup]
+        :rtype: list[:class:`huaweicloudsdkclassroom.v3.ExerciseGroup`]
         """
         return self._group_exercises
 
@@ -63,7 +70,7 @@ class ShowJobExercisesResponse(SdkResponse):
         作业下习题列表
 
         :param group_exercises: The group_exercises of this ShowJobExercisesResponse.
-        :type: list[ExerciseGroup]
+        :type group_exercises: list[:class:`huaweicloudsdkclassroom.v3.ExerciseGroup`]
         """
         self._group_exercises = group_exercises
 
@@ -85,7 +92,7 @@ class ShowJobExercisesResponse(SdkResponse):
         作业下习题总数
 
         :param total: The total of this ShowJobExercisesResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 

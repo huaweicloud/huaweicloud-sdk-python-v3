@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRtcAbnormalEventsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ListRtcAbnormalEventsRequest:
     }
 
     def __init__(self, app=None, room_id=None, uid=None, start_time=None, end_time=None, limit=None, offset=None):
-        """ListRtcAbnormalEventsRequest - a model defined in huaweicloud sdk"""
+        """ListRtcAbnormalEventsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param app: 应用ID 
+        :type app: str
+        :param room_id: 房间ID 
+        :type room_id: str
+        :param uid: 用户ID 
+        :type uid: str
+        :param start_time: 查询起始时间。UTC时间，格式：YYYY-MM-DDThh:mm:ssZ，如2020-04-23T06:00:00Z，不填写则默认读取过去1小时数据数据。 
+        :type start_time: str
+        :param end_time: 查询结束时间。UTC时间，格式：YYYY-MM-DDThh:mm:ssZ，如2020-04-23T07:00:00Z，不填写则默认为当前时间。 
+        :type end_time: str
+        :param limit: 查询结果条数 
+        :type limit: int
+        :param offset: 查询偏移量 
+        :type offset: int
+        """
         
         
 
@@ -87,7 +104,7 @@ class ListRtcAbnormalEventsRequest:
         应用ID 
 
         :param app: The app of this ListRtcAbnormalEventsRequest.
-        :type: str
+        :type app: str
         """
         self._app = app
 
@@ -109,7 +126,7 @@ class ListRtcAbnormalEventsRequest:
         房间ID 
 
         :param room_id: The room_id of this ListRtcAbnormalEventsRequest.
-        :type: str
+        :type room_id: str
         """
         self._room_id = room_id
 
@@ -131,7 +148,7 @@ class ListRtcAbnormalEventsRequest:
         用户ID 
 
         :param uid: The uid of this ListRtcAbnormalEventsRequest.
-        :type: str
+        :type uid: str
         """
         self._uid = uid
 
@@ -153,7 +170,7 @@ class ListRtcAbnormalEventsRequest:
         查询起始时间。UTC时间，格式：YYYY-MM-DDThh:mm:ssZ，如2020-04-23T06:00:00Z，不填写则默认读取过去1小时数据数据。 
 
         :param start_time: The start_time of this ListRtcAbnormalEventsRequest.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -175,7 +192,7 @@ class ListRtcAbnormalEventsRequest:
         查询结束时间。UTC时间，格式：YYYY-MM-DDThh:mm:ssZ，如2020-04-23T07:00:00Z，不填写则默认为当前时间。 
 
         :param end_time: The end_time of this ListRtcAbnormalEventsRequest.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -197,7 +214,7 @@ class ListRtcAbnormalEventsRequest:
         查询结果条数 
 
         :param limit: The limit of this ListRtcAbnormalEventsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -219,7 +236,7 @@ class ListRtcAbnormalEventsRequest:
         查询偏移量 
 
         :param offset: The offset of this ListRtcAbnormalEventsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 

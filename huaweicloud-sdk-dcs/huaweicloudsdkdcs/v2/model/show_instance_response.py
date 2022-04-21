@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowInstanceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -39,7 +38,7 @@ class ShowInstanceResponse(SdkResponse):
         'engine': 'str',
         'no_password_access': 'str',
         'ip': 'str',
-        'instance_backup_policy': 'BackupPolicy',
+        'instance_backup_policy': 'InstanceBackupPolicy',
         'az_codes': 'list[str]',
         'access_user': 'str',
         'instance_id': 'str',
@@ -62,7 +61,8 @@ class ShowInstanceResponse(SdkResponse):
         'service_upgrade': 'bool',
         'service_task_id': 'str',
         'enterprise_project_id': 'str',
-        'backend_addrs': 'str'
+        'backend_addrs': 'str',
+        'domain_name_info': 'DomainNameInfo'
     }
 
     attribute_map = {
@@ -106,11 +106,100 @@ class ShowInstanceResponse(SdkResponse):
         'service_upgrade': 'service_upgrade',
         'service_task_id': 'service_task_id',
         'enterprise_project_id': 'enterprise_project_id',
-        'backend_addrs': 'backend_addrs'
+        'backend_addrs': 'backend_addrs',
+        'domain_name_info': 'domain_name_info'
     }
 
-    def __init__(self, vpc_name=None, charging_mode=None, vpc_id=None, user_name=None, created_at=None, description=None, security_group_id=None, security_group_name=None, max_memory=None, used_memory=None, capacity=None, capacity_minor=None, maintain_begin=None, maintain_end=None, engine=None, no_password_access=None, ip=None, instance_backup_policy=None, az_codes=None, access_user=None, instance_id=None, port=None, user_id=None, name=None, spec_code=None, subnet_id=None, subnet_name=None, subnet_cidr=None, engine_version=None, order_id=None, status=None, domain_name=None, readonly_domain_name=None, enable_publicip=None, publicip_id=None, publicip_address=None, enable_ssl=None, service_upgrade=None, service_task_id=None, enterprise_project_id=None, backend_addrs=None):
-        """ShowInstanceResponse - a model defined in huaweicloud sdk"""
+    def __init__(self, vpc_name=None, charging_mode=None, vpc_id=None, user_name=None, created_at=None, description=None, security_group_id=None, security_group_name=None, max_memory=None, used_memory=None, capacity=None, capacity_minor=None, maintain_begin=None, maintain_end=None, engine=None, no_password_access=None, ip=None, instance_backup_policy=None, az_codes=None, access_user=None, instance_id=None, port=None, user_id=None, name=None, spec_code=None, subnet_id=None, subnet_name=None, subnet_cidr=None, engine_version=None, order_id=None, status=None, domain_name=None, readonly_domain_name=None, enable_publicip=None, publicip_id=None, publicip_address=None, enable_ssl=None, service_upgrade=None, service_task_id=None, enterprise_project_id=None, backend_addrs=None, domain_name_info=None):
+        """ShowInstanceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param vpc_name: VPC的名称。
+        :type vpc_name: str
+        :param charging_mode: 付费模式，0表示按需计费，1表示包年/包月计费。
+        :type charging_mode: int
+        :param vpc_id: VPC ID
+        :type vpc_id: str
+        :param user_name: 用户名。
+        :type user_name: str
+        :param created_at: 完成创建时间。格式为：2017-03-31T12:24:46.297Z
+        :type created_at: str
+        :param description: 实例描述。
+        :type description: str
+        :param security_group_id: 安全组ID。
+        :type security_group_id: str
+        :param security_group_name: 租户安全组名称。
+        :type security_group_name: str
+        :param max_memory: 总内存，单位：MB。
+        :type max_memory: int
+        :param used_memory: 已使用的内存，单位：MB。
+        :type used_memory: int
+        :param capacity: 缓存实例的容量（G Byte）。
+        :type capacity: int
+        :param capacity_minor: 单机小规格的缓存容量。
+        :type capacity_minor: str
+        :param maintain_begin: 维护时间窗开始时间，为UTC时间，格式为HH:mm:ss
+        :type maintain_begin: str
+        :param maintain_end: 维护时间窗结束时间，为UTC时间，格式为HH:mm:ss
+        :type maintain_end: str
+        :param engine: 缓存实例的引擎类型。
+        :type engine: str
+        :param no_password_access: 是否允许免密码访问缓存实例。 - true：该实例无需密码即可访问。 - false：该实例必须通过密码认证才能访问。 
+        :type no_password_access: str
+        :param ip: 连接缓存实例的IP地址。如果是集群实例，返回多个IP地址，使用逗号分隔。如：192.168.0.1，192.168.0.2。
+        :type ip: str
+        :param instance_backup_policy: 
+        :type instance_backup_policy: :class:`huaweicloudsdkdcs.v2.InstanceBackupPolicy`
+        :param az_codes: 实例所在的可用区。返回“可用区Code”
+        :type az_codes: list[str]
+        :param access_user: 通过密码认证访问缓存实例的认证用户名。
+        :type access_user: str
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param port: 缓存的端口。
+        :type port: int
+        :param user_id: 用户id。
+        :type user_id: str
+        :param name: 实例名称。
+        :type name: str
+        :param spec_code: 产品规格编码
+        :type spec_code: str
+        :param subnet_id: 子网ID。
+        :type subnet_id: str
+        :param subnet_name: 子网名称。
+        :type subnet_name: str
+        :param subnet_cidr: 子网网段。
+        :type subnet_cidr: str
+        :param engine_version: 缓存版本。
+        :type engine_version: str
+        :param order_id: 订单ID。
+        :type order_id: str
+        :param status: 缓存实例的状态。详细状态说明见[缓存实例状态说明](https://support.huaweicloud.com/api-dcs/dcs-api-0312047.html)
+        :type status: str
+        :param domain_name: 实例的域名。
+        :type domain_name: str
+        :param readonly_domain_name: 实例的只读域名，只有主备实例有该字段。
+        :type readonly_domain_name: str
+        :param enable_publicip: Redis缓存实例是否开启公网访问功能。 - true：开启 - false：不开启 
+        :type enable_publicip: bool
+        :param publicip_id: Redis缓存实例绑定的弹性IP地址的id。 如果未开启公网访问功能，该字段值为null。 
+        :type publicip_id: str
+        :param publicip_address: Redis缓存实例绑定的弹性IP地址。 如果未开启公网访问功能，该字段值为null。 
+        :type publicip_address: str
+        :param enable_ssl: Redis缓存实例开启公网访问功能时，是否选择支持ssl。 - true：开启 - false：不开启 
+        :type enable_ssl: bool
+        :param service_upgrade: 实例是否存在升级任务。 - true：存在 - false：不存在 
+        :type service_upgrade: bool
+        :param service_task_id: 升级任务的ID。 - 当service_upgrade为true时，为升级任务的ID。 - 当service_upgrade为false时，该参数为空。 
+        :type service_task_id: str
+        :param enterprise_project_id: 企业项目ID。
+        :type enterprise_project_id: str
+        :param backend_addrs: 集群实例的后端服务地址。
+        :type backend_addrs: str
+        :param domain_name_info: 
+        :type domain_name_info: :class:`huaweicloudsdkdcs.v2.DomainNameInfo`
+        """
         
         super(ShowInstanceResponse, self).__init__()
 
@@ -155,6 +244,7 @@ class ShowInstanceResponse(SdkResponse):
         self._service_task_id = None
         self._enterprise_project_id = None
         self._backend_addrs = None
+        self._domain_name_info = None
         self.discriminator = None
 
         if vpc_name is not None:
@@ -239,6 +329,8 @@ class ShowInstanceResponse(SdkResponse):
             self.enterprise_project_id = enterprise_project_id
         if backend_addrs is not None:
             self.backend_addrs = backend_addrs
+        if domain_name_info is not None:
+            self.domain_name_info = domain_name_info
 
     @property
     def vpc_name(self):
@@ -258,7 +350,7 @@ class ShowInstanceResponse(SdkResponse):
         VPC的名称。
 
         :param vpc_name: The vpc_name of this ShowInstanceResponse.
-        :type: str
+        :type vpc_name: str
         """
         self._vpc_name = vpc_name
 
@@ -280,7 +372,7 @@ class ShowInstanceResponse(SdkResponse):
         付费模式，0表示按需计费，1表示包年/包月计费。
 
         :param charging_mode: The charging_mode of this ShowInstanceResponse.
-        :type: int
+        :type charging_mode: int
         """
         self._charging_mode = charging_mode
 
@@ -302,7 +394,7 @@ class ShowInstanceResponse(SdkResponse):
         VPC ID
 
         :param vpc_id: The vpc_id of this ShowInstanceResponse.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -324,7 +416,7 @@ class ShowInstanceResponse(SdkResponse):
         用户名。
 
         :param user_name: The user_name of this ShowInstanceResponse.
-        :type: str
+        :type user_name: str
         """
         self._user_name = user_name
 
@@ -346,7 +438,7 @@ class ShowInstanceResponse(SdkResponse):
         完成创建时间。格式为：2017-03-31T12:24:46.297Z
 
         :param created_at: The created_at of this ShowInstanceResponse.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -368,7 +460,7 @@ class ShowInstanceResponse(SdkResponse):
         实例描述。
 
         :param description: The description of this ShowInstanceResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -390,7 +482,7 @@ class ShowInstanceResponse(SdkResponse):
         安全组ID。
 
         :param security_group_id: The security_group_id of this ShowInstanceResponse.
-        :type: str
+        :type security_group_id: str
         """
         self._security_group_id = security_group_id
 
@@ -412,7 +504,7 @@ class ShowInstanceResponse(SdkResponse):
         租户安全组名称。
 
         :param security_group_name: The security_group_name of this ShowInstanceResponse.
-        :type: str
+        :type security_group_name: str
         """
         self._security_group_name = security_group_name
 
@@ -434,7 +526,7 @@ class ShowInstanceResponse(SdkResponse):
         总内存，单位：MB。
 
         :param max_memory: The max_memory of this ShowInstanceResponse.
-        :type: int
+        :type max_memory: int
         """
         self._max_memory = max_memory
 
@@ -456,7 +548,7 @@ class ShowInstanceResponse(SdkResponse):
         已使用的内存，单位：MB。
 
         :param used_memory: The used_memory of this ShowInstanceResponse.
-        :type: int
+        :type used_memory: int
         """
         self._used_memory = used_memory
 
@@ -478,7 +570,7 @@ class ShowInstanceResponse(SdkResponse):
         缓存实例的容量（G Byte）。
 
         :param capacity: The capacity of this ShowInstanceResponse.
-        :type: int
+        :type capacity: int
         """
         self._capacity = capacity
 
@@ -500,7 +592,7 @@ class ShowInstanceResponse(SdkResponse):
         单机小规格的缓存容量。
 
         :param capacity_minor: The capacity_minor of this ShowInstanceResponse.
-        :type: str
+        :type capacity_minor: str
         """
         self._capacity_minor = capacity_minor
 
@@ -522,7 +614,7 @@ class ShowInstanceResponse(SdkResponse):
         维护时间窗开始时间，为UTC时间，格式为HH:mm:ss
 
         :param maintain_begin: The maintain_begin of this ShowInstanceResponse.
-        :type: str
+        :type maintain_begin: str
         """
         self._maintain_begin = maintain_begin
 
@@ -544,7 +636,7 @@ class ShowInstanceResponse(SdkResponse):
         维护时间窗结束时间，为UTC时间，格式为HH:mm:ss
 
         :param maintain_end: The maintain_end of this ShowInstanceResponse.
-        :type: str
+        :type maintain_end: str
         """
         self._maintain_end = maintain_end
 
@@ -566,7 +658,7 @@ class ShowInstanceResponse(SdkResponse):
         缓存实例的引擎类型。
 
         :param engine: The engine of this ShowInstanceResponse.
-        :type: str
+        :type engine: str
         """
         self._engine = engine
 
@@ -588,7 +680,7 @@ class ShowInstanceResponse(SdkResponse):
         是否允许免密码访问缓存实例。 - true：该实例无需密码即可访问。 - false：该实例必须通过密码认证才能访问。 
 
         :param no_password_access: The no_password_access of this ShowInstanceResponse.
-        :type: str
+        :type no_password_access: str
         """
         self._no_password_access = no_password_access
 
@@ -610,7 +702,7 @@ class ShowInstanceResponse(SdkResponse):
         连接缓存实例的IP地址。如果是集群实例，返回多个IP地址，使用逗号分隔。如：192.168.0.1，192.168.0.2。
 
         :param ip: The ip of this ShowInstanceResponse.
-        :type: str
+        :type ip: str
         """
         self._ip = ip
 
@@ -620,7 +712,7 @@ class ShowInstanceResponse(SdkResponse):
 
 
         :return: The instance_backup_policy of this ShowInstanceResponse.
-        :rtype: BackupPolicy
+        :rtype: :class:`huaweicloudsdkdcs.v2.InstanceBackupPolicy`
         """
         return self._instance_backup_policy
 
@@ -630,7 +722,7 @@ class ShowInstanceResponse(SdkResponse):
 
 
         :param instance_backup_policy: The instance_backup_policy of this ShowInstanceResponse.
-        :type: BackupPolicy
+        :type instance_backup_policy: :class:`huaweicloudsdkdcs.v2.InstanceBackupPolicy`
         """
         self._instance_backup_policy = instance_backup_policy
 
@@ -652,7 +744,7 @@ class ShowInstanceResponse(SdkResponse):
         实例所在的可用区。返回“可用区Code”
 
         :param az_codes: The az_codes of this ShowInstanceResponse.
-        :type: list[str]
+        :type az_codes: list[str]
         """
         self._az_codes = az_codes
 
@@ -674,7 +766,7 @@ class ShowInstanceResponse(SdkResponse):
         通过密码认证访问缓存实例的认证用户名。
 
         :param access_user: The access_user of this ShowInstanceResponse.
-        :type: str
+        :type access_user: str
         """
         self._access_user = access_user
 
@@ -696,7 +788,7 @@ class ShowInstanceResponse(SdkResponse):
         实例ID。
 
         :param instance_id: The instance_id of this ShowInstanceResponse.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -718,7 +810,7 @@ class ShowInstanceResponse(SdkResponse):
         缓存的端口。
 
         :param port: The port of this ShowInstanceResponse.
-        :type: int
+        :type port: int
         """
         self._port = port
 
@@ -740,7 +832,7 @@ class ShowInstanceResponse(SdkResponse):
         用户id。
 
         :param user_id: The user_id of this ShowInstanceResponse.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -762,7 +854,7 @@ class ShowInstanceResponse(SdkResponse):
         实例名称。
 
         :param name: The name of this ShowInstanceResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -784,7 +876,7 @@ class ShowInstanceResponse(SdkResponse):
         产品规格编码
 
         :param spec_code: The spec_code of this ShowInstanceResponse.
-        :type: str
+        :type spec_code: str
         """
         self._spec_code = spec_code
 
@@ -806,7 +898,7 @@ class ShowInstanceResponse(SdkResponse):
         子网ID。
 
         :param subnet_id: The subnet_id of this ShowInstanceResponse.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -828,7 +920,7 @@ class ShowInstanceResponse(SdkResponse):
         子网名称。
 
         :param subnet_name: The subnet_name of this ShowInstanceResponse.
-        :type: str
+        :type subnet_name: str
         """
         self._subnet_name = subnet_name
 
@@ -850,7 +942,7 @@ class ShowInstanceResponse(SdkResponse):
         子网网段。
 
         :param subnet_cidr: The subnet_cidr of this ShowInstanceResponse.
-        :type: str
+        :type subnet_cidr: str
         """
         self._subnet_cidr = subnet_cidr
 
@@ -872,7 +964,7 @@ class ShowInstanceResponse(SdkResponse):
         缓存版本。
 
         :param engine_version: The engine_version of this ShowInstanceResponse.
-        :type: str
+        :type engine_version: str
         """
         self._engine_version = engine_version
 
@@ -894,7 +986,7 @@ class ShowInstanceResponse(SdkResponse):
         订单ID。
 
         :param order_id: The order_id of this ShowInstanceResponse.
-        :type: str
+        :type order_id: str
         """
         self._order_id = order_id
 
@@ -916,7 +1008,7 @@ class ShowInstanceResponse(SdkResponse):
         缓存实例的状态。详细状态说明见[缓存实例状态说明](https://support.huaweicloud.com/api-dcs/dcs-api-0312047.html)
 
         :param status: The status of this ShowInstanceResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -938,7 +1030,7 @@ class ShowInstanceResponse(SdkResponse):
         实例的域名。
 
         :param domain_name: The domain_name of this ShowInstanceResponse.
-        :type: str
+        :type domain_name: str
         """
         self._domain_name = domain_name
 
@@ -960,7 +1052,7 @@ class ShowInstanceResponse(SdkResponse):
         实例的只读域名，只有主备实例有该字段。
 
         :param readonly_domain_name: The readonly_domain_name of this ShowInstanceResponse.
-        :type: str
+        :type readonly_domain_name: str
         """
         self._readonly_domain_name = readonly_domain_name
 
@@ -982,7 +1074,7 @@ class ShowInstanceResponse(SdkResponse):
         Redis缓存实例是否开启公网访问功能。 - true：开启 - false：不开启 
 
         :param enable_publicip: The enable_publicip of this ShowInstanceResponse.
-        :type: bool
+        :type enable_publicip: bool
         """
         self._enable_publicip = enable_publicip
 
@@ -1004,7 +1096,7 @@ class ShowInstanceResponse(SdkResponse):
         Redis缓存实例绑定的弹性IP地址的id。 如果未开启公网访问功能，该字段值为null。 
 
         :param publicip_id: The publicip_id of this ShowInstanceResponse.
-        :type: str
+        :type publicip_id: str
         """
         self._publicip_id = publicip_id
 
@@ -1026,7 +1118,7 @@ class ShowInstanceResponse(SdkResponse):
         Redis缓存实例绑定的弹性IP地址。 如果未开启公网访问功能，该字段值为null。 
 
         :param publicip_address: The publicip_address of this ShowInstanceResponse.
-        :type: str
+        :type publicip_address: str
         """
         self._publicip_address = publicip_address
 
@@ -1048,7 +1140,7 @@ class ShowInstanceResponse(SdkResponse):
         Redis缓存实例开启公网访问功能时，是否选择支持ssl。 - true：开启 - false：不开启 
 
         :param enable_ssl: The enable_ssl of this ShowInstanceResponse.
-        :type: bool
+        :type enable_ssl: bool
         """
         self._enable_ssl = enable_ssl
 
@@ -1070,7 +1162,7 @@ class ShowInstanceResponse(SdkResponse):
         实例是否存在升级任务。 - true：存在 - false：不存在 
 
         :param service_upgrade: The service_upgrade of this ShowInstanceResponse.
-        :type: bool
+        :type service_upgrade: bool
         """
         self._service_upgrade = service_upgrade
 
@@ -1092,7 +1184,7 @@ class ShowInstanceResponse(SdkResponse):
         升级任务的ID。 - 当service_upgrade为true时，为升级任务的ID。 - 当service_upgrade为false时，该参数为空。 
 
         :param service_task_id: The service_task_id of this ShowInstanceResponse.
-        :type: str
+        :type service_task_id: str
         """
         self._service_task_id = service_task_id
 
@@ -1114,7 +1206,7 @@ class ShowInstanceResponse(SdkResponse):
         企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this ShowInstanceResponse.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -1136,9 +1228,29 @@ class ShowInstanceResponse(SdkResponse):
         集群实例的后端服务地址。
 
         :param backend_addrs: The backend_addrs of this ShowInstanceResponse.
-        :type: str
+        :type backend_addrs: str
         """
         self._backend_addrs = backend_addrs
+
+    @property
+    def domain_name_info(self):
+        """Gets the domain_name_info of this ShowInstanceResponse.
+
+
+        :return: The domain_name_info of this ShowInstanceResponse.
+        :rtype: :class:`huaweicloudsdkdcs.v2.DomainNameInfo`
+        """
+        return self._domain_name_info
+
+    @domain_name_info.setter
+    def domain_name_info(self, domain_name_info):
+        """Sets the domain_name_info of this ShowInstanceResponse.
+
+
+        :param domain_name_info: The domain_name_info of this ShowInstanceResponse.
+        :type domain_name_info: :class:`huaweicloudsdkdcs.v2.DomainNameInfo`
+        """
+        self._domain_name_info = domain_name_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

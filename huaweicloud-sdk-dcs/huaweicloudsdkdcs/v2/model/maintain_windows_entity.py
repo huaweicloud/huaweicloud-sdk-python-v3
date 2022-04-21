@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MaintainWindowsEntity:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class MaintainWindowsEntity:
     }
 
     def __init__(self, seq=None, default=None, begin=None, end=None):
-        """MaintainWindowsEntity - a model defined in huaweicloud sdk"""
+        """MaintainWindowsEntity
+
+        The model defined in huaweicloud sdk
+
+        :param seq: 序号。
+        :type seq: int
+        :param default: 是否为默认时间段。
+        :type default: bool
+        :param begin: 维护时间窗开始时间
+        :type begin: str
+        :param end: 维护时间窗结束时间。
+        :type end: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class MaintainWindowsEntity:
         序号。
 
         :param seq: The seq of this MaintainWindowsEntity.
-        :type: int
+        :type seq: int
         """
         self._seq = seq
 
@@ -95,7 +106,7 @@ class MaintainWindowsEntity:
         是否为默认时间段。
 
         :param default: The default of this MaintainWindowsEntity.
-        :type: bool
+        :type default: bool
         """
         self._default = default
 
@@ -117,7 +128,7 @@ class MaintainWindowsEntity:
         维护时间窗开始时间
 
         :param begin: The begin of this MaintainWindowsEntity.
-        :type: str
+        :type begin: str
         """
         self._begin = begin
 
@@ -139,7 +150,7 @@ class MaintainWindowsEntity:
         维护时间窗结束时间。
 
         :param end: The end of this MaintainWindowsEntity.
-        :type: str
+        :type end: str
         """
         self._end = end
 

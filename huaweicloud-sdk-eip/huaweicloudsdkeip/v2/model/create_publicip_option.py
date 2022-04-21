@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreatePublicipOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CreatePublicipOption:
     }
 
     def __init__(self, ip_address=None, type=None, ip_version=None, alias=None):
-        """CreatePublicipOption - a model defined in huaweicloud sdk"""
+        """CreatePublicipOption
+
+        The model defined in huaweicloud sdk
+
+        :param ip_address: 功能说明：希望申请到的弹性公网IP的地址，不指定时由系统自动分配  约束：必须为IP地址格式，且必须在可用地址池范围内
+        :type ip_address: str
+        :param type: 功能说明：弹性公网IP的类型  取值范围：5_telcom（电信），5_union（联通），5_bgp（全动态BGP），5_sbgp（静态BGP），5_ipv6  东北-大连：5_telcom、5_union  华南-广州：5_bgp、5_sbgp  华东-上海二：5_bgp、5_sbgp  华北-北京一：5_bgp、5_sbgp、5_ipv6  亚太-香港：5_bgp  亚太-曼谷：5_bgp  亚太-新加坡：5_bgp  非洲-约翰内斯堡：5_bgp  西南-贵阳一：5_bgp、5_sbgp  华北-北京四：5_bgp、5_sbgp  约束：必须是系统具体支持的类型。  publicip_id为IPv4端口，所以\&quot;publicip_type\&quot;字段未给定时，默认为5_bgp。
+        :type type: str
+        :param ip_version: 功能说明：弹性IP弹性公网IP的版本  取值范围：4、6，分别表示创建ipv4和ipv6  约束：必须是系统具体支持的类型  不填或空字符串时，默认创建ipv4
+        :type ip_version: int
+        :param alias: 功能说明：弹性公网IP名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
+        :type alias: str
+        """
         
         
 
@@ -72,7 +83,7 @@ class CreatePublicipOption:
         功能说明：希望申请到的弹性公网IP的地址，不指定时由系统自动分配  约束：必须为IP地址格式，且必须在可用地址池范围内
 
         :param ip_address: The ip_address of this CreatePublicipOption.
-        :type: str
+        :type ip_address: str
         """
         self._ip_address = ip_address
 
@@ -94,7 +105,7 @@ class CreatePublicipOption:
         功能说明：弹性公网IP的类型  取值范围：5_telcom（电信），5_union（联通），5_bgp（全动态BGP），5_sbgp（静态BGP），5_ipv6  东北-大连：5_telcom、5_union  华南-广州：5_bgp、5_sbgp  华东-上海二：5_bgp、5_sbgp  华北-北京一：5_bgp、5_sbgp、5_ipv6  亚太-香港：5_bgp  亚太-曼谷：5_bgp  亚太-新加坡：5_bgp  非洲-约翰内斯堡：5_bgp  西南-贵阳一：5_bgp、5_sbgp  华北-北京四：5_bgp、5_sbgp  约束：必须是系统具体支持的类型。  publicip_id为IPv4端口，所以\"publicip_type\"字段未给定时，默认为5_bgp。
 
         :param type: The type of this CreatePublicipOption.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -116,7 +127,7 @@ class CreatePublicipOption:
         功能说明：弹性IP弹性公网IP的版本  取值范围：4、6，分别表示创建ipv4和ipv6  约束：必须是系统具体支持的类型  不填或空字符串时，默认创建ipv4
 
         :param ip_version: The ip_version of this CreatePublicipOption.
-        :type: int
+        :type ip_version: int
         """
         self._ip_version = ip_version
 
@@ -138,7 +149,7 @@ class CreatePublicipOption:
         功能说明：弹性公网IP名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
         :param alias: The alias of this CreatePublicipOption.
-        :type: str
+        :type alias: str
         """
         self._alias = alias
 

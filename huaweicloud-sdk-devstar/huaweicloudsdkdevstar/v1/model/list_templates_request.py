@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTemplatesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListTemplatesRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """ListTemplatesRequest - a model defined in huaweicloud sdk"""
+        """ListTemplatesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言类型，缺省值为“zh-cn”。  枚举值： - zh-cn：中文 - en-us：英文 
+        :type x_language: str
+        :param body: Body of the ListTemplatesRequest
+        :type body: :class:`huaweicloudsdkdevstar.v1.TemplateQuery`
+        """
         
         
 
@@ -63,7 +70,7 @@ class ListTemplatesRequest:
         语言类型，缺省值为“zh-cn”。  枚举值： - zh-cn：中文 - en-us：英文 
 
         :param x_language: The x_language of this ListTemplatesRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -73,7 +80,7 @@ class ListTemplatesRequest:
 
 
         :return: The body of this ListTemplatesRequest.
-        :rtype: TemplateQuery
+        :rtype: :class:`huaweicloudsdkdevstar.v1.TemplateQuery`
         """
         return self._body
 
@@ -83,7 +90,7 @@ class ListTemplatesRequest:
 
 
         :param body: The body of this ListTemplatesRequest.
-        :type: TemplateQuery
+        :type body: :class:`huaweicloudsdkdevstar.v1.TemplateQuery`
         """
         self._body = body
 

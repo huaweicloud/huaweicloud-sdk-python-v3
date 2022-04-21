@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AclApiBindingCreate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AclApiBindingCreate:
     }
 
     def __init__(self, acl_id=None, publish_ids=None):
-        """AclApiBindingCreate - a model defined in huaweicloud sdk"""
+        """AclApiBindingCreate
+
+        The model defined in huaweicloud sdk
+
+        :param acl_id: ACL策略编号
+        :type acl_id: str
+        :param publish_ids: API发布记录编号
+        :type publish_ids: list[str]
+        """
         
         
 
@@ -63,7 +70,7 @@ class AclApiBindingCreate:
         ACL策略编号
 
         :param acl_id: The acl_id of this AclApiBindingCreate.
-        :type: str
+        :type acl_id: str
         """
         self._acl_id = acl_id
 
@@ -85,7 +92,7 @@ class AclApiBindingCreate:
         API发布记录编号
 
         :param publish_ids: The publish_ids of this AclApiBindingCreate.
-        :type: list[str]
+        :type publish_ids: list[str]
         """
         self._publish_ids = publish_ids
 

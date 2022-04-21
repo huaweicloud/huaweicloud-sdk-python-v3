@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListProjectPermissionsForAgencyRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListProjectPermissionsForAgencyRequest:
     }
 
     def __init__(self, project_id=None, agency_id=None):
-        """ListProjectPermissionsForAgencyRequest - a model defined in huaweicloud sdk"""
+        """ListProjectPermissionsForAgencyRequest
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: 委托方的项目ID，获取方式请参见：[获取项目名称、项目ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
+        :type project_id: str
+        :param agency_id: 委托ID，获取方式请参见：[获取委托名、委托ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
+        :type agency_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ListProjectPermissionsForAgencyRequest:
         委托方的项目ID，获取方式请参见：[获取项目名称、项目ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param project_id: The project_id of this ListProjectPermissionsForAgencyRequest.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -83,7 +90,7 @@ class ListProjectPermissionsForAgencyRequest:
         委托ID，获取方式请参见：[获取委托名、委托ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param agency_id: The agency_id of this ListProjectPermissionsForAgencyRequest.
-        :type: str
+        :type agency_id: str
         """
         self._agency_id = agency_id
 

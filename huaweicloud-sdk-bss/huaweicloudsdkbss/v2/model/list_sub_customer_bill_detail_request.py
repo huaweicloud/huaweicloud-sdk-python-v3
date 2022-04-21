@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSubCustomerBillDetailRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -62,7 +61,45 @@ class ListSubCustomerBillDetailRequest:
     }
 
     def __init__(self, x_language=None, bill_cycle=None, customer_id=None, service_type_code=None, region_code=None, charging_mode=None, bill_detail_type=None, resource_id=None, resource_name=None, trade_id=None, account_manager_id=None, association_type=None, offset=None, limit=None, indirect_partner_id=None, bill_date_begin=None, bill_date_end=None):
-        """ListSubCustomerBillDetailRequest - a model defined in huaweicloud sdk"""
+        """ListSubCustomerBillDetailRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: |忽略大小写，默认 zh_cn：中文 en_us：英文|
+        :type x_language: str
+        :param bill_cycle: 账期所在月份。格式：YYYY-MM
+        :type bill_cycle: str
+        :param customer_id: 客户账号ID。您可以调用查询客户列表接口获取customer_id。
+        :type customer_id: str
+        :param service_type_code: 云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
+        :type service_type_code: str
+        :param region_code: 云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
+        :type region_code: str
+        :param charging_mode: 计费模式。不传数据时默认查询所有计费模式下的消费记录。1：包周期3：按需10：预留实例
+        :type charging_mode: int
+        :param bill_detail_type: 账单类型。1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更
+        :type bill_detail_type: int
+        :param resource_id: 资源标识。
+        :type resource_id: str
+        :param resource_name: 资源名称。
+        :type resource_name: str
+        :param trade_id: 订单ID或交易ID，扣费维度的唯一标识。账单类型为1，2，3，4，8时为订单ID。其它场景下为交易ID。非月末扣费：应收ID月末扣费：账单ID
+        :type trade_id: str
+        :param account_manager_id: 客户经理标识。
+        :type account_manager_id: str
+        :param association_type: 子客户的关联类型：1：顾问销售2：代售
+        :type association_type: str
+        :param offset: 偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset &#x3D; 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
+        :type offset: int
+        :param limit: 每次查询的数量限制。默认值为10。
+        :type limit: int
+        :param indirect_partner_id: 精英服务商ID。获取方法请参见查询精英服务商列表。 说明： 华为云伙伴能力中心可以查询名下所有子客户消费（包括精英服务商子客户）。如果是普通经销商，那么此处可以为空。
+        :type indirect_partner_id: str
+        :param bill_date_begin: 查询的资源消费记录的开始日期，格式为YYYY-MM-DD。 说明： 必须和cycle（即资源的消费账期）在同一个月。
+        :type bill_date_begin: str
+        :param bill_date_end: 查询的资源消费记录的结束日期，格式为YYYY-MM-DD。 说明： 必须和cycle（即资源的消费账期）在同一个月。bill_date_begin和bill_date_end两个参数必须同时出现，否则仅按照cycle（即资源的消费账期）进行查询。
+        :type bill_date_end: str
+        """
         
         
 
@@ -136,7 +173,7 @@ class ListSubCustomerBillDetailRequest:
         |忽略大小写，默认 zh_cn：中文 en_us：英文|
 
         :param x_language: The x_language of this ListSubCustomerBillDetailRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -158,7 +195,7 @@ class ListSubCustomerBillDetailRequest:
         账期所在月份。格式：YYYY-MM
 
         :param bill_cycle: The bill_cycle of this ListSubCustomerBillDetailRequest.
-        :type: str
+        :type bill_cycle: str
         """
         self._bill_cycle = bill_cycle
 
@@ -180,7 +217,7 @@ class ListSubCustomerBillDetailRequest:
         客户账号ID。您可以调用查询客户列表接口获取customer_id。
 
         :param customer_id: The customer_id of this ListSubCustomerBillDetailRequest.
-        :type: str
+        :type customer_id: str
         """
         self._customer_id = customer_id
 
@@ -202,7 +239,7 @@ class ListSubCustomerBillDetailRequest:
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
         :param service_type_code: The service_type_code of this ListSubCustomerBillDetailRequest.
-        :type: str
+        :type service_type_code: str
         """
         self._service_type_code = service_type_code
 
@@ -224,7 +261,7 @@ class ListSubCustomerBillDetailRequest:
         云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
         :param region_code: The region_code of this ListSubCustomerBillDetailRequest.
-        :type: str
+        :type region_code: str
         """
         self._region_code = region_code
 
@@ -246,7 +283,7 @@ class ListSubCustomerBillDetailRequest:
         计费模式。不传数据时默认查询所有计费模式下的消费记录。1：包周期3：按需10：预留实例
 
         :param charging_mode: The charging_mode of this ListSubCustomerBillDetailRequest.
-        :type: int
+        :type charging_mode: int
         """
         self._charging_mode = charging_mode
 
@@ -268,7 +305,7 @@ class ListSubCustomerBillDetailRequest:
         账单类型。1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更
 
         :param bill_detail_type: The bill_detail_type of this ListSubCustomerBillDetailRequest.
-        :type: int
+        :type bill_detail_type: int
         """
         self._bill_detail_type = bill_detail_type
 
@@ -290,7 +327,7 @@ class ListSubCustomerBillDetailRequest:
         资源标识。
 
         :param resource_id: The resource_id of this ListSubCustomerBillDetailRequest.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -312,7 +349,7 @@ class ListSubCustomerBillDetailRequest:
         资源名称。
 
         :param resource_name: The resource_name of this ListSubCustomerBillDetailRequest.
-        :type: str
+        :type resource_name: str
         """
         self._resource_name = resource_name
 
@@ -334,7 +371,7 @@ class ListSubCustomerBillDetailRequest:
         订单ID或交易ID，扣费维度的唯一标识。账单类型为1，2，3，4，8时为订单ID。其它场景下为交易ID。非月末扣费：应收ID月末扣费：账单ID
 
         :param trade_id: The trade_id of this ListSubCustomerBillDetailRequest.
-        :type: str
+        :type trade_id: str
         """
         self._trade_id = trade_id
 
@@ -356,7 +393,7 @@ class ListSubCustomerBillDetailRequest:
         客户经理标识。
 
         :param account_manager_id: The account_manager_id of this ListSubCustomerBillDetailRequest.
-        :type: str
+        :type account_manager_id: str
         """
         self._account_manager_id = account_manager_id
 
@@ -378,7 +415,7 @@ class ListSubCustomerBillDetailRequest:
         子客户的关联类型：1：顾问销售2：代售
 
         :param association_type: The association_type of this ListSubCustomerBillDetailRequest.
-        :type: str
+        :type association_type: str
         """
         self._association_type = association_type
 
@@ -400,7 +437,7 @@ class ListSubCustomerBillDetailRequest:
         偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
         :param offset: The offset of this ListSubCustomerBillDetailRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -422,7 +459,7 @@ class ListSubCustomerBillDetailRequest:
         每次查询的数量限制。默认值为10。
 
         :param limit: The limit of this ListSubCustomerBillDetailRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -444,7 +481,7 @@ class ListSubCustomerBillDetailRequest:
         精英服务商ID。获取方法请参见查询精英服务商列表。 说明： 华为云伙伴能力中心可以查询名下所有子客户消费（包括精英服务商子客户）。如果是普通经销商，那么此处可以为空。
 
         :param indirect_partner_id: The indirect_partner_id of this ListSubCustomerBillDetailRequest.
-        :type: str
+        :type indirect_partner_id: str
         """
         self._indirect_partner_id = indirect_partner_id
 
@@ -466,7 +503,7 @@ class ListSubCustomerBillDetailRequest:
         查询的资源消费记录的开始日期，格式为YYYY-MM-DD。 说明： 必须和cycle（即资源的消费账期）在同一个月。
 
         :param bill_date_begin: The bill_date_begin of this ListSubCustomerBillDetailRequest.
-        :type: str
+        :type bill_date_begin: str
         """
         self._bill_date_begin = bill_date_begin
 
@@ -488,7 +525,7 @@ class ListSubCustomerBillDetailRequest:
         查询的资源消费记录的结束日期，格式为YYYY-MM-DD。 说明： 必须和cycle（即资源的消费账期）在同一个月。bill_date_begin和bill_date_end两个参数必须同时出现，否则仅按照cycle（即资源的消费账期）进行查询。
 
         :param bill_date_end: The bill_date_end of this ListSubCustomerBillDetailRequest.
-        :type: str
+        :type bill_date_end: str
         """
         self._bill_date_end = bill_date_end
 

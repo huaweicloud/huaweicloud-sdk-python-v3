@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RegisterServerAutoRecoveryRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RegisterServerAutoRecoveryRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """RegisterServerAutoRecoveryRequest - a model defined in huaweicloud sdk"""
+        """RegisterServerAutoRecoveryRequest
+
+        The model defined in huaweicloud sdk
+
+        :param server_id: 云服务器ID。
+        :type server_id: str
+        :param body: Body of the RegisterServerAutoRecoveryRequest
+        :type body: :class:`huaweicloudsdkecs.v2.RegisterServerAutoRecoveryRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class RegisterServerAutoRecoveryRequest:
         云服务器ID。
 
         :param server_id: The server_id of this RegisterServerAutoRecoveryRequest.
-        :type: str
+        :type server_id: str
         """
         self._server_id = server_id
 
@@ -72,7 +79,7 @@ class RegisterServerAutoRecoveryRequest:
 
 
         :return: The body of this RegisterServerAutoRecoveryRequest.
-        :rtype: RegisterServerAutoRecoveryRequestBody
+        :rtype: :class:`huaweicloudsdkecs.v2.RegisterServerAutoRecoveryRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class RegisterServerAutoRecoveryRequest:
 
 
         :param body: The body of this RegisterServerAutoRecoveryRequest.
-        :type: RegisterServerAutoRecoveryRequestBody
+        :type body: :class:`huaweicloudsdkecs.v2.RegisterServerAutoRecoveryRequestBody`
         """
         self._body = body
 

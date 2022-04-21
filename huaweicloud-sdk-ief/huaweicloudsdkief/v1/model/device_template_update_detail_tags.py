@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeviceTemplateUpdateDetailTags:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeviceTemplateUpdateDetailTags:
     }
 
     def __init__(self, key=None, value=None):
-        """DeviceTemplateUpdateDetailTags - a model defined in huaweicloud sdk"""
+        """DeviceTemplateUpdateDetailTags
+
+        The model defined in huaweicloud sdk
+
+        :param key: 标签key值，长度取值范围为1~36， 仅允许大小写英文字母、数字、下划线、中划线
+        :type key: str
+        :param value: 标签value值，长度取值范围为0~43， 仅允许大小写英文字母、数字、下划线、中划线
+        :type value: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class DeviceTemplateUpdateDetailTags:
         标签key值，长度取值范围为1~36， 仅允许大小写英文字母、数字、下划线、中划线
 
         :param key: The key of this DeviceTemplateUpdateDetailTags.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -85,7 +92,7 @@ class DeviceTemplateUpdateDetailTags:
         标签value值，长度取值范围为0~43， 仅允许大小写英文字母、数字、下划线、中划线
 
         :param value: The value of this DeviceTemplateUpdateDetailTags.
-        :type: str
+        :type value: str
         """
         self._value = value
 

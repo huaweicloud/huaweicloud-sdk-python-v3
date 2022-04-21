@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddDevDataRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AddDevDataRequest:
     }
 
     def __init__(self, datasource_id=None, body=None):
-        """AddDevDataRequest - a model defined in huaweicloud sdk"""
+        """AddDevDataRequest
+
+        The model defined in huaweicloud sdk
+
+        :param datasource_id: 数据源id
+        :type datasource_id: str
+        :param body: Body of the AddDevDataRequest
+        :type body: object
+        """
         
         
 
@@ -62,7 +69,7 @@ class AddDevDataRequest:
         数据源id
 
         :param datasource_id: The datasource_id of this AddDevDataRequest.
-        :type: str
+        :type datasource_id: str
         """
         self._datasource_id = datasource_id
 
@@ -82,7 +89,7 @@ class AddDevDataRequest:
 
 
         :param body: The body of this AddDevDataRequest.
-        :type: object
+        :type body: object
         """
         self._body = body
 

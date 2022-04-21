@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunModerationAudioResponseBodyResultDetailAudio:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RunModerationAudioResponseBodyResultDetailAudio:
     }
 
     def __init__(self, porn=None):
-        """RunModerationAudioResponseBodyResultDetailAudio - a model defined in huaweicloud sdk"""
+        """RunModerationAudioResponseBodyResultDetailAudio
+
+        The model defined in huaweicloud sdk
+
+        :param porn: 涉黄场景审核结果
+        :type porn: list[:class:`huaweicloudsdkmoderation.v2.PornModerationResultDetail`]
+        """
         
         
 
@@ -47,7 +52,7 @@ class RunModerationAudioResponseBodyResultDetailAudio:
         涉黄场景审核结果
 
         :return: The porn of this RunModerationAudioResponseBodyResultDetailAudio.
-        :rtype: list[PornModerationResultDetail]
+        :rtype: list[:class:`huaweicloudsdkmoderation.v2.PornModerationResultDetail`]
         """
         return self._porn
 
@@ -58,7 +63,7 @@ class RunModerationAudioResponseBodyResultDetailAudio:
         涉黄场景审核结果
 
         :param porn: The porn of this RunModerationAudioResponseBodyResultDetailAudio.
-        :type: list[PornModerationResultDetail]
+        :type porn: list[:class:`huaweicloudsdkmoderation.v2.PornModerationResultDetail`]
         """
         self._porn = porn
 

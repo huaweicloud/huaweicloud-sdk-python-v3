@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DownloadCasesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -60,7 +59,43 @@ class DownloadCasesRequest:
     }
 
     def __init__(self, language=None, timezone=None, incident_id=None, query_start_time=None, query_end_time=None, x_customer_name=None, search_key=None, status=None, customer_id=None, tenant_source_id_list=None, sub_customer_id=None, offset=None, limit=None, x_site=None, x_language=None, x_time_zone=None):
-        """DownloadCasesRequest - a model defined in huaweicloud sdk"""
+        """DownloadCasesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param language: 语言
+        :type language: str
+        :param timezone: 时区
+        :type timezone: str
+        :param incident_id: 工单id
+        :type incident_id: str
+        :param query_start_time: 查询开始时间
+        :type query_start_time: str
+        :param query_end_time: 查询结束时间
+        :type query_end_time: str
+        :param x_customer_name: 子用户名称
+        :type x_customer_name: str
+        :param search_key: 搜索关键字
+        :type search_key: str
+        :param status: 状态 0：待受理 1：处理中 2：待确认结果 3：已完成 4：已撤销 12：无效 17： 待反馈
+        :type status: int
+        :param customer_id: 用户id
+        :type customer_id: str
+        :param tenant_source_id_list: 来源id
+        :type tenant_source_id_list: list[str]
+        :param sub_customer_id: 子用户id
+        :type sub_customer_id: str
+        :param offset: 查询偏移量
+        :type offset: int
+        :param limit: 查询数量
+        :type limit: int
+        :param x_site: 对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
+        :type x_site: int
+        :param x_language: 语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
+        :type x_language: str
+        :param x_time_zone: 环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
+        :type x_time_zone: str
+        """
         
         
 
@@ -131,7 +166,7 @@ class DownloadCasesRequest:
         语言
 
         :param language: The language of this DownloadCasesRequest.
-        :type: str
+        :type language: str
         """
         self._language = language
 
@@ -153,7 +188,7 @@ class DownloadCasesRequest:
         时区
 
         :param timezone: The timezone of this DownloadCasesRequest.
-        :type: str
+        :type timezone: str
         """
         self._timezone = timezone
 
@@ -175,7 +210,7 @@ class DownloadCasesRequest:
         工单id
 
         :param incident_id: The incident_id of this DownloadCasesRequest.
-        :type: str
+        :type incident_id: str
         """
         self._incident_id = incident_id
 
@@ -197,7 +232,7 @@ class DownloadCasesRequest:
         查询开始时间
 
         :param query_start_time: The query_start_time of this DownloadCasesRequest.
-        :type: str
+        :type query_start_time: str
         """
         self._query_start_time = query_start_time
 
@@ -219,7 +254,7 @@ class DownloadCasesRequest:
         查询结束时间
 
         :param query_end_time: The query_end_time of this DownloadCasesRequest.
-        :type: str
+        :type query_end_time: str
         """
         self._query_end_time = query_end_time
 
@@ -241,7 +276,7 @@ class DownloadCasesRequest:
         子用户名称
 
         :param x_customer_name: The x_customer_name of this DownloadCasesRequest.
-        :type: str
+        :type x_customer_name: str
         """
         self._x_customer_name = x_customer_name
 
@@ -263,7 +298,7 @@ class DownloadCasesRequest:
         搜索关键字
 
         :param search_key: The search_key of this DownloadCasesRequest.
-        :type: str
+        :type search_key: str
         """
         self._search_key = search_key
 
@@ -285,7 +320,7 @@ class DownloadCasesRequest:
         状态 0：待受理 1：处理中 2：待确认结果 3：已完成 4：已撤销 12：无效 17： 待反馈
 
         :param status: The status of this DownloadCasesRequest.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -307,7 +342,7 @@ class DownloadCasesRequest:
         用户id
 
         :param customer_id: The customer_id of this DownloadCasesRequest.
-        :type: str
+        :type customer_id: str
         """
         self._customer_id = customer_id
 
@@ -329,7 +364,7 @@ class DownloadCasesRequest:
         来源id
 
         :param tenant_source_id_list: The tenant_source_id_list of this DownloadCasesRequest.
-        :type: list[str]
+        :type tenant_source_id_list: list[str]
         """
         self._tenant_source_id_list = tenant_source_id_list
 
@@ -351,7 +386,7 @@ class DownloadCasesRequest:
         子用户id
 
         :param sub_customer_id: The sub_customer_id of this DownloadCasesRequest.
-        :type: str
+        :type sub_customer_id: str
         """
         self._sub_customer_id = sub_customer_id
 
@@ -373,7 +408,7 @@ class DownloadCasesRequest:
         查询偏移量
 
         :param offset: The offset of this DownloadCasesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -395,7 +430,7 @@ class DownloadCasesRequest:
         查询数量
 
         :param limit: The limit of this DownloadCasesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -417,7 +452,7 @@ class DownloadCasesRequest:
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
         :param x_site: The x_site of this DownloadCasesRequest.
-        :type: int
+        :type x_site: int
         """
         self._x_site = x_site
 
@@ -439,7 +474,7 @@ class DownloadCasesRequest:
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
         :param x_language: The x_language of this DownloadCasesRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -461,7 +496,7 @@ class DownloadCasesRequest:
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 
         :param x_time_zone: The x_time_zone of this DownloadCasesRequest.
-        :type: str
+        :type x_time_zone: str
         """
         self._x_time_zone = x_time_zone
 

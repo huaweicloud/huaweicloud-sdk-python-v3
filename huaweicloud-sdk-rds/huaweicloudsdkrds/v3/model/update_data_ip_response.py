@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDataIpResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateDataIpResponse(SdkResponse):
     }
 
     def __init__(self, workflow_id=None):
-        """UpdateDataIpResponse - a model defined in huaweicloud sdk"""
+        """UpdateDataIpResponse
+
+        The model defined in huaweicloud sdk
+
+        :param workflow_id: 任务ID
+        :type workflow_id: str
+        """
         
         super(UpdateDataIpResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class UpdateDataIpResponse(SdkResponse):
         任务ID
 
         :param workflow_id: The workflow_id of this UpdateDataIpResponse.
-        :type: str
+        :type workflow_id: str
         """
         self._workflow_id = workflow_id
 

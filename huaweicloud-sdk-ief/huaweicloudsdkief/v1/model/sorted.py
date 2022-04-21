@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Sorted:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Sorted:
     }
 
     def __init__(self, key=None, reverse=None):
-        """Sorted - a model defined in huaweicloud sdk"""
+        """Sorted
+
+        The model defined in huaweicloud sdk
+
+        :param key: 按key值对请求内容进行排序
+        :type key: str
+        :param reverse: 是否采用倒序
+        :type reverse: bool
+        """
         
         
 
@@ -63,7 +70,7 @@ class Sorted:
         按key值对请求内容进行排序
 
         :param key: The key of this Sorted.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -85,7 +92,7 @@ class Sorted:
         是否采用倒序
 
         :param reverse: The reverse of this Sorted.
-        :type: bool
+        :type reverse: bool
         """
         self._reverse = reverse
 

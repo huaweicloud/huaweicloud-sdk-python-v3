@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCouponQuotasRecordsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListCouponQuotasRecordsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, records=None):
-        """ListCouponQuotasRecordsResponse - a model defined in huaweicloud sdk"""
+        """ListCouponQuotasRecordsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total_count: 返回总条数。
+        :type total_count: int
+        :param records: 记录列表。 具体请参见表2。
+        :type records: list[:class:`huaweicloudsdkbss.v2.QuotaRecord`]
+        """
         
         super(ListCouponQuotasRecordsResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListCouponQuotasRecordsResponse(SdkResponse):
         返回总条数。
 
         :param total_count: The total_count of this ListCouponQuotasRecordsResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 
@@ -74,7 +81,7 @@ class ListCouponQuotasRecordsResponse(SdkResponse):
         记录列表。 具体请参见表2。
 
         :return: The records of this ListCouponQuotasRecordsResponse.
-        :rtype: list[QuotaRecord]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.QuotaRecord`]
         """
         return self._records
 
@@ -85,7 +92,7 @@ class ListCouponQuotasRecordsResponse(SdkResponse):
         记录列表。 具体请参见表2。
 
         :param records: The records of this ListCouponQuotasRecordsResponse.
-        :type: list[QuotaRecord]
+        :type records: list[:class:`huaweicloudsdkbss.v2.QuotaRecord`]
         """
         self._records = records
 

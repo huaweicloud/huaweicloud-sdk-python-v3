@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteSessionRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteSessionRequestBody:
     }
 
     def __init__(self, sessions=None):
-        """DeleteSessionRequestBody - a model defined in huaweicloud sdk"""
+        """DeleteSessionRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param sessions: 需要终结的会话ID列表。
+        :type sessions: list[str]
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteSessionRequestBody:
         需要终结的会话ID列表。
 
         :param sessions: The sessions of this DeleteSessionRequestBody.
-        :type: list[str]
+        :type sessions: list[str]
         """
         self._sessions = sessions
 

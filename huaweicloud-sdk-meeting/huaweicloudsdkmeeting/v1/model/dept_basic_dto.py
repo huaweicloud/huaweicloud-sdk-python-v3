@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeptBasicDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class DeptBasicDTO:
     }
 
     def __init__(self, dept_code=None, corp_id=None, dept_name=None, dept_name_path=None, parent_dept_code=None):
-        """DeptBasicDTO - a model defined in huaweicloud sdk"""
+        """DeptBasicDTO
+
+        The model defined in huaweicloud sdk
+
+        :param dept_code: 部门编码
+        :type dept_code: str
+        :param corp_id: 企业id
+        :type corp_id: str
+        :param dept_name: 部门名称
+        :type dept_name: str
+        :param dept_name_path: 部门名称路径
+        :type dept_name_path: str
+        :param parent_dept_code: 父部门编码
+        :type parent_dept_code: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class DeptBasicDTO:
         部门编码
 
         :param dept_code: The dept_code of this DeptBasicDTO.
-        :type: str
+        :type dept_code: str
         """
         self._dept_code = dept_code
 
@@ -100,7 +113,7 @@ class DeptBasicDTO:
         企业id
 
         :param corp_id: The corp_id of this DeptBasicDTO.
-        :type: str
+        :type corp_id: str
         """
         self._corp_id = corp_id
 
@@ -122,7 +135,7 @@ class DeptBasicDTO:
         部门名称
 
         :param dept_name: The dept_name of this DeptBasicDTO.
-        :type: str
+        :type dept_name: str
         """
         self._dept_name = dept_name
 
@@ -144,7 +157,7 @@ class DeptBasicDTO:
         部门名称路径
 
         :param dept_name_path: The dept_name_path of this DeptBasicDTO.
-        :type: str
+        :type dept_name_path: str
         """
         self._dept_name_path = dept_name_path
 
@@ -166,7 +179,7 @@ class DeptBasicDTO:
         父部门编码
 
         :param parent_dept_code: The parent_dept_code of this DeptBasicDTO.
-        :type: str
+        :type parent_dept_code: str
         """
         self._parent_dept_code = parent_dept_code
 

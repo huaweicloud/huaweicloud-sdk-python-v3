@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateOpenIdConnectConfigRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateOpenIdConnectConfigRequest:
     }
 
     def __init__(self, idp_id=None, body=None):
-        """UpdateOpenIdConnectConfigRequest - a model defined in huaweicloud sdk"""
+        """UpdateOpenIdConnectConfigRequest
+
+        The model defined in huaweicloud sdk
+
+        :param idp_id: 身份提供商ID
+        :type idp_id: str
+        :param body: Body of the UpdateOpenIdConnectConfigRequest
+        :type body: :class:`huaweicloudsdkiam.v3.UpdateOpenIdConnectConfigRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateOpenIdConnectConfigRequest:
         身份提供商ID
 
         :param idp_id: The idp_id of this UpdateOpenIdConnectConfigRequest.
-        :type: str
+        :type idp_id: str
         """
         self._idp_id = idp_id
 
@@ -72,7 +79,7 @@ class UpdateOpenIdConnectConfigRequest:
 
 
         :return: The body of this UpdateOpenIdConnectConfigRequest.
-        :rtype: UpdateOpenIdConnectConfigRequestBody
+        :rtype: :class:`huaweicloudsdkiam.v3.UpdateOpenIdConnectConfigRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateOpenIdConnectConfigRequest:
 
 
         :param body: The body of this UpdateOpenIdConnectConfigRequest.
-        :type: UpdateOpenIdConnectConfigRequestBody
+        :type body: :class:`huaweicloudsdkiam.v3.UpdateOpenIdConnectConfigRequestBody`
         """
         self._body = body
 

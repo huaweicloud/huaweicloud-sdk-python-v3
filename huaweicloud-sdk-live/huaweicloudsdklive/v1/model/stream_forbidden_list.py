@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StreamForbiddenList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class StreamForbiddenList:
     }
 
     def __init__(self, app_name=None, stream_name=None, resume_time=None):
-        """StreamForbiddenList - a model defined in huaweicloud sdk"""
+        """StreamForbiddenList
+
+        The model defined in huaweicloud sdk
+
+        :param app_name: 流应用名称
+        :type app_name: str
+        :param stream_name: 流名称
+        :type stream_name: str
+        :param resume_time: 恢复流时间，格式：yyyy-mm-ddThh:mm:ssZ，UTC时间，不指定则默认7天，最大禁推为90天
+        :type resume_time: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class StreamForbiddenList:
         流应用名称
 
         :param app_name: The app_name of this StreamForbiddenList.
-        :type: str
+        :type app_name: str
         """
         self._app_name = app_name
 
@@ -88,7 +97,7 @@ class StreamForbiddenList:
         流名称
 
         :param stream_name: The stream_name of this StreamForbiddenList.
-        :type: str
+        :type stream_name: str
         """
         self._stream_name = stream_name
 
@@ -110,7 +119,7 @@ class StreamForbiddenList:
         恢复流时间，格式：yyyy-mm-ddThh:mm:ssZ，UTC时间，不指定则默认7天，最大禁推为90天
 
         :param resume_time: The resume_time of this StreamForbiddenList.
-        :type: str
+        :type resume_time: str
         """
         self._resume_time = resume_time
 

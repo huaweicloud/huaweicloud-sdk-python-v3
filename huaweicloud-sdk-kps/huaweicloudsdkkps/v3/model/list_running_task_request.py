@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRunningTaskRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListRunningTaskRequest:
     }
 
     def __init__(self, limit=None, offset=None):
-        """ListRunningTaskRequest - a model defined in huaweicloud sdk"""
+        """ListRunningTaskRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 每页显示的条目数量。默认值1000。
+        :type limit: int
+        :param offset: 首个展示的正在处理任务信息的偏移量
+        :type offset: int
+        """
         
         
 
@@ -63,7 +70,7 @@ class ListRunningTaskRequest:
         每页显示的条目数量。默认值1000。
 
         :param limit: The limit of this ListRunningTaskRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -85,7 +92,7 @@ class ListRunningTaskRequest:
         首个展示的正在处理任务信息的偏移量
 
         :param offset: The offset of this ListRunningTaskRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 

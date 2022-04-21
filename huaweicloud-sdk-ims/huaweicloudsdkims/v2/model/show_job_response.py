@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowJobResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ShowJobResponse(SdkResponse):
     }
 
     def __init__(self, status=None, job_id=None, job_type=None, begin_time=None, end_time=None, error_code=None, fail_reason=None, entities=None):
-        """ShowJobResponse - a model defined in huaweicloud sdk"""
+        """ShowJobResponse
+
+        The model defined in huaweicloud sdk
+
+        :param status: 任务状态，目前取值如下： SUCCESS：表示该任务执行已经结束，任务执行成功。 FAIL：表示该任务执行已经结束，任务执行失败。 RUNNING：表示该任务正在执行。 INIT：表给任务还未执行，正在初始化。
+        :type status: str
+        :param job_id: 任务ID。
+        :type job_id: str
+        :param job_type: 任务类型。
+        :type job_type: str
+        :param begin_time: 任务开始执行时间。格式为UTC时间。
+        :type begin_time: str
+        :param end_time: 任务结束时间。格式为UTC时间。
+        :type end_time: str
+        :param error_code: 错误码。
+        :type error_code: str
+        :param fail_reason: 失败原因。
+        :type fail_reason: str
+        :param entities: 
+        :type entities: :class:`huaweicloudsdkims.v2.JobEntities`
+        """
         
         super(ShowJobResponse, self).__init__()
 
@@ -93,7 +112,7 @@ class ShowJobResponse(SdkResponse):
         任务状态，目前取值如下： SUCCESS：表示该任务执行已经结束，任务执行成功。 FAIL：表示该任务执行已经结束，任务执行失败。 RUNNING：表示该任务正在执行。 INIT：表给任务还未执行，正在初始化。
 
         :param status: The status of this ShowJobResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -115,7 +134,7 @@ class ShowJobResponse(SdkResponse):
         任务ID。
 
         :param job_id: The job_id of this ShowJobResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -137,7 +156,7 @@ class ShowJobResponse(SdkResponse):
         任务类型。
 
         :param job_type: The job_type of this ShowJobResponse.
-        :type: str
+        :type job_type: str
         """
         self._job_type = job_type
 
@@ -159,7 +178,7 @@ class ShowJobResponse(SdkResponse):
         任务开始执行时间。格式为UTC时间。
 
         :param begin_time: The begin_time of this ShowJobResponse.
-        :type: str
+        :type begin_time: str
         """
         self._begin_time = begin_time
 
@@ -181,7 +200,7 @@ class ShowJobResponse(SdkResponse):
         任务结束时间。格式为UTC时间。
 
         :param end_time: The end_time of this ShowJobResponse.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -203,7 +222,7 @@ class ShowJobResponse(SdkResponse):
         错误码。
 
         :param error_code: The error_code of this ShowJobResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -225,7 +244,7 @@ class ShowJobResponse(SdkResponse):
         失败原因。
 
         :param fail_reason: The fail_reason of this ShowJobResponse.
-        :type: str
+        :type fail_reason: str
         """
         self._fail_reason = fail_reason
 
@@ -235,7 +254,7 @@ class ShowJobResponse(SdkResponse):
 
 
         :return: The entities of this ShowJobResponse.
-        :rtype: JobEntities
+        :rtype: :class:`huaweicloudsdkims.v2.JobEntities`
         """
         return self._entities
 
@@ -245,7 +264,7 @@ class ShowJobResponse(SdkResponse):
 
 
         :param entities: The entities of this ShowJobResponse.
-        :type: JobEntities
+        :type entities: :class:`huaweicloudsdkims.v2.JobEntities`
         """
         self._entities = entities
 

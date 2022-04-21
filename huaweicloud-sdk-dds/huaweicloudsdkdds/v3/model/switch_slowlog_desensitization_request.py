@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SwitchSlowlogDesensitizationRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class SwitchSlowlogDesensitizationRequest:
     }
 
     def __init__(self, instance_id=None, status=None):
-        """SwitchSlowlogDesensitizationRequest - a model defined in huaweicloud sdk"""
+        """SwitchSlowlogDesensitizationRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
+        :type instance_id: str
+        :param status: 开启或关闭慢日志脱敏，取值为on或off。
+        :type status: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class SwitchSlowlogDesensitizationRequest:
         实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
         :param instance_id: The instance_id of this SwitchSlowlogDesensitizationRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -83,7 +90,7 @@ class SwitchSlowlogDesensitizationRequest:
         开启或关闭慢日志脱敏，取值为on或off。
 
         :param status: The status of this SwitchSlowlogDesensitizationRequest.
-        :type: str
+        :type status: str
         """
         self._status = status
 

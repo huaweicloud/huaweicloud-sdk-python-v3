@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestoreDatabasesInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RestoreDatabasesInfo:
     }
 
     def __init__(self, database=None, tables=None):
-        """RestoreDatabasesInfo - a model defined in huaweicloud sdk"""
+        """RestoreDatabasesInfo
+
+        The model defined in huaweicloud sdk
+
+        :param database: 库名
+        :type database: str
+        :param tables: 表信息
+        :type tables: list[:class:`huaweicloudsdkrds.v3.RestoreTableInfo`]
+        """
         
         
 
@@ -61,7 +68,7 @@ class RestoreDatabasesInfo:
         库名
 
         :param database: The database of this RestoreDatabasesInfo.
-        :type: str
+        :type database: str
         """
         self._database = database
 
@@ -72,7 +79,7 @@ class RestoreDatabasesInfo:
         表信息
 
         :return: The tables of this RestoreDatabasesInfo.
-        :rtype: list[RestoreTableInfo]
+        :rtype: list[:class:`huaweicloudsdkrds.v3.RestoreTableInfo`]
         """
         return self._tables
 
@@ -83,7 +90,7 @@ class RestoreDatabasesInfo:
         表信息
 
         :param tables: The tables of this RestoreDatabasesInfo.
-        :type: list[RestoreTableInfo]
+        :type tables: list[:class:`huaweicloudsdkrds.v3.RestoreTableInfo`]
         """
         self._tables = tables
 

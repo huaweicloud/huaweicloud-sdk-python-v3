@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowAppVersionDetailRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowAppVersionDetailRequest:
     }
 
     def __init__(self, ief_instance_id=None, app_id=None, version_id=None):
-        """ShowAppVersionDetailRequest - a model defined in huaweicloud sdk"""
+        """ShowAppVersionDetailRequest
+
+        The model defined in huaweicloud sdk
+
+        :param ief_instance_id: 铂金版实例ID，专业版实例为空值
+        :type ief_instance_id: str
+        :param app_id: 应用模板ID
+        :type app_id: str
+        :param version_id: 应用模板版本ID
+        :type version_id: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class ShowAppVersionDetailRequest:
         铂金版实例ID，专业版实例为空值
 
         :param ief_instance_id: The ief_instance_id of this ShowAppVersionDetailRequest.
-        :type: str
+        :type ief_instance_id: str
         """
         self._ief_instance_id = ief_instance_id
 
@@ -88,7 +97,7 @@ class ShowAppVersionDetailRequest:
         应用模板ID
 
         :param app_id: The app_id of this ShowAppVersionDetailRequest.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -110,7 +119,7 @@ class ShowAppVersionDetailRequest:
         应用模板版本ID
 
         :param version_id: The version_id of this ShowAppVersionDetailRequest.
-        :type: str
+        :type version_id: str
         """
         self._version_id = version_id
 

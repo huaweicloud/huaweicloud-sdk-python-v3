@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateFunctionConfigRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -64,7 +63,47 @@ class UpdateFunctionConfigRequestBody:
     }
 
     def __init__(self, func_name=None, runtime=None, timeout=None, handler=None, memory_size=None, user_data=None, encrypted_user_data=None, xrole=None, app_xrole=None, description=None, func_vpc=None, mount_config=None, strategy_config=None, extend_config=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None, is_stateful_function=None):
-        """UpdateFunctionConfigRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateFunctionConfigRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param func_name: 函数名称。
+        :type func_name: str
+        :param runtime: FunctionGraph函数的执行环境 支持Node.js6.10、Python2.7、Python3.6、Java8、Go1.8、Node.js 8.10、C#.NET Core 2.0、C#.NET Core 2.1、PHP7.3。 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 Java11、Nodejs14.18、Python3.9在type为v2时支持
+        :type runtime: str
+        :param timeout: 函数执行超时时间，超时函数将被强行停止，范围3～900秒
+        :type timeout: int
+        :param handler: 函数执行入口 规则：xx.xx，必须包含“. ” 举例：对于node.js函数：myfunction.handler，则表示函数的文件名为myfunction.js，执行的入口函数名为handler。
+        :type handler: str
+        :param memory_size: 函数消耗的内存。 单位M。 取值范围为：128、256、512、768、1024、1280、1536、1792、2048、2560、3072、3584、4096。 最小值为128，最大值为4096。
+        :type memory_size: int
+        :param user_data: 用户自定义的name/value信息。 在函数中使用的参数。 举例：如函数要访问某个主机，可以设置自定义参数：Host&#x3D;{host_ip}，最多定义20个，总长度不超过4KB。
+        :type user_data: str
+        :param encrypted_user_data: 用户自定义的name/value信息，用于需要加密的配置。
+        :type encrypted_user_data: str
+        :param xrole: 函数使用的权限委托名称，需要IAM支持，并在IAM界面创建委托，当函数需要访问其他服务时，必须提供该字段。
+        :type xrole: str
+        :param app_xrole: 函数app使用的权限委托名称，需要IAM支持，并在IAM界面创建委托，当函数需要访问其他服务时，必须提供该字段。
+        :type app_xrole: str
+        :param description: 函数描述。
+        :type description: str
+        :param func_vpc: 
+        :type func_vpc: :class:`huaweicloudsdkfunctiongraph.v2.FuncVpc`
+        :param mount_config: 
+        :type mount_config: :class:`huaweicloudsdkfunctiongraph.v2.MountConfig`
+        :param strategy_config: 
+        :type strategy_config: :class:`huaweicloudsdkfunctiongraph.v2.StrategyConfig`
+        :param extend_config: 函数扩展配置。
+        :type extend_config: str
+        :param initializer_handler: 函数初始化入口，规则：xx.xx，必须包含“. ”。 举例：对于node.js函数：myfunction.initializer，则表示函数的文件名为myfunction.js，初始化的入口函数名为initializer。
+        :type initializer_handler: str
+        :param initializer_timeout: 初始化超时时间，超时函数将被强行停止，范围1～300秒。
+        :type initializer_timeout: int
+        :param enterprise_project_id: 企业项目ID，在企业用户创建函数时必填。
+        :type enterprise_project_id: str
+        :param is_stateful_function: 是否支持有状态，如果需要支持，需要固定传参为true，v2版本支持
+        :type is_stateful_function: bool
+        """
         
         
 
@@ -138,7 +177,7 @@ class UpdateFunctionConfigRequestBody:
         函数名称。
 
         :param func_name: The func_name of this UpdateFunctionConfigRequestBody.
-        :type: str
+        :type func_name: str
         """
         self._func_name = func_name
 
@@ -160,7 +199,7 @@ class UpdateFunctionConfigRequestBody:
         FunctionGraph函数的执行环境 支持Node.js6.10、Python2.7、Python3.6、Java8、Go1.8、Node.js 8.10、C#.NET Core 2.0、C#.NET Core 2.1、PHP7.3。 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 Java11、Nodejs14.18、Python3.9在type为v2时支持
 
         :param runtime: The runtime of this UpdateFunctionConfigRequestBody.
-        :type: str
+        :type runtime: str
         """
         self._runtime = runtime
 
@@ -182,7 +221,7 @@ class UpdateFunctionConfigRequestBody:
         函数执行超时时间，超时函数将被强行停止，范围3～900秒
 
         :param timeout: The timeout of this UpdateFunctionConfigRequestBody.
-        :type: int
+        :type timeout: int
         """
         self._timeout = timeout
 
@@ -204,7 +243,7 @@ class UpdateFunctionConfigRequestBody:
         函数执行入口 规则：xx.xx，必须包含“. ” 举例：对于node.js函数：myfunction.handler，则表示函数的文件名为myfunction.js，执行的入口函数名为handler。
 
         :param handler: The handler of this UpdateFunctionConfigRequestBody.
-        :type: str
+        :type handler: str
         """
         self._handler = handler
 
@@ -226,7 +265,7 @@ class UpdateFunctionConfigRequestBody:
         函数消耗的内存。 单位M。 取值范围为：128、256、512、768、1024、1280、1536、1792、2048、2560、3072、3584、4096。 最小值为128，最大值为4096。
 
         :param memory_size: The memory_size of this UpdateFunctionConfigRequestBody.
-        :type: int
+        :type memory_size: int
         """
         self._memory_size = memory_size
 
@@ -248,7 +287,7 @@ class UpdateFunctionConfigRequestBody:
         用户自定义的name/value信息。 在函数中使用的参数。 举例：如函数要访问某个主机，可以设置自定义参数：Host={host_ip}，最多定义20个，总长度不超过4KB。
 
         :param user_data: The user_data of this UpdateFunctionConfigRequestBody.
-        :type: str
+        :type user_data: str
         """
         self._user_data = user_data
 
@@ -270,7 +309,7 @@ class UpdateFunctionConfigRequestBody:
         用户自定义的name/value信息，用于需要加密的配置。
 
         :param encrypted_user_data: The encrypted_user_data of this UpdateFunctionConfigRequestBody.
-        :type: str
+        :type encrypted_user_data: str
         """
         self._encrypted_user_data = encrypted_user_data
 
@@ -292,7 +331,7 @@ class UpdateFunctionConfigRequestBody:
         函数使用的权限委托名称，需要IAM支持，并在IAM界面创建委托，当函数需要访问其他服务时，必须提供该字段。
 
         :param xrole: The xrole of this UpdateFunctionConfigRequestBody.
-        :type: str
+        :type xrole: str
         """
         self._xrole = xrole
 
@@ -314,7 +353,7 @@ class UpdateFunctionConfigRequestBody:
         函数app使用的权限委托名称，需要IAM支持，并在IAM界面创建委托，当函数需要访问其他服务时，必须提供该字段。
 
         :param app_xrole: The app_xrole of this UpdateFunctionConfigRequestBody.
-        :type: str
+        :type app_xrole: str
         """
         self._app_xrole = app_xrole
 
@@ -336,7 +375,7 @@ class UpdateFunctionConfigRequestBody:
         函数描述。
 
         :param description: The description of this UpdateFunctionConfigRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -346,7 +385,7 @@ class UpdateFunctionConfigRequestBody:
 
 
         :return: The func_vpc of this UpdateFunctionConfigRequestBody.
-        :rtype: FuncVpc
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.FuncVpc`
         """
         return self._func_vpc
 
@@ -356,7 +395,7 @@ class UpdateFunctionConfigRequestBody:
 
 
         :param func_vpc: The func_vpc of this UpdateFunctionConfigRequestBody.
-        :type: FuncVpc
+        :type func_vpc: :class:`huaweicloudsdkfunctiongraph.v2.FuncVpc`
         """
         self._func_vpc = func_vpc
 
@@ -366,7 +405,7 @@ class UpdateFunctionConfigRequestBody:
 
 
         :return: The mount_config of this UpdateFunctionConfigRequestBody.
-        :rtype: MountConfig
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.MountConfig`
         """
         return self._mount_config
 
@@ -376,7 +415,7 @@ class UpdateFunctionConfigRequestBody:
 
 
         :param mount_config: The mount_config of this UpdateFunctionConfigRequestBody.
-        :type: MountConfig
+        :type mount_config: :class:`huaweicloudsdkfunctiongraph.v2.MountConfig`
         """
         self._mount_config = mount_config
 
@@ -386,7 +425,7 @@ class UpdateFunctionConfigRequestBody:
 
 
         :return: The strategy_config of this UpdateFunctionConfigRequestBody.
-        :rtype: StrategyConfig
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.StrategyConfig`
         """
         return self._strategy_config
 
@@ -396,7 +435,7 @@ class UpdateFunctionConfigRequestBody:
 
 
         :param strategy_config: The strategy_config of this UpdateFunctionConfigRequestBody.
-        :type: StrategyConfig
+        :type strategy_config: :class:`huaweicloudsdkfunctiongraph.v2.StrategyConfig`
         """
         self._strategy_config = strategy_config
 
@@ -418,7 +457,7 @@ class UpdateFunctionConfigRequestBody:
         函数扩展配置。
 
         :param extend_config: The extend_config of this UpdateFunctionConfigRequestBody.
-        :type: str
+        :type extend_config: str
         """
         self._extend_config = extend_config
 
@@ -440,7 +479,7 @@ class UpdateFunctionConfigRequestBody:
         函数初始化入口，规则：xx.xx，必须包含“. ”。 举例：对于node.js函数：myfunction.initializer，则表示函数的文件名为myfunction.js，初始化的入口函数名为initializer。
 
         :param initializer_handler: The initializer_handler of this UpdateFunctionConfigRequestBody.
-        :type: str
+        :type initializer_handler: str
         """
         self._initializer_handler = initializer_handler
 
@@ -462,7 +501,7 @@ class UpdateFunctionConfigRequestBody:
         初始化超时时间，超时函数将被强行停止，范围1～300秒。
 
         :param initializer_timeout: The initializer_timeout of this UpdateFunctionConfigRequestBody.
-        :type: int
+        :type initializer_timeout: int
         """
         self._initializer_timeout = initializer_timeout
 
@@ -484,7 +523,7 @@ class UpdateFunctionConfigRequestBody:
         企业项目ID，在企业用户创建函数时必填。
 
         :param enterprise_project_id: The enterprise_project_id of this UpdateFunctionConfigRequestBody.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -506,7 +545,7 @@ class UpdateFunctionConfigRequestBody:
         是否支持有状态，如果需要支持，需要固定传参为true，v2版本支持
 
         :param is_stateful_function: The is_stateful_function of this UpdateFunctionConfigRequestBody.
-        :type: bool
+        :type is_stateful_function: bool
         """
         self._is_stateful_function = is_stateful_function
 

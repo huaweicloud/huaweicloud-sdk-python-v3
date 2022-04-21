@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RecomendAnswer:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class RecomendAnswer:
     }
 
     def __init__(self, qa_pair_id=None, st_question=None, score=None, domain=None, top_score_question=None):
-        """RecomendAnswer - a model defined in huaweicloud sdk"""
+        """RecomendAnswer
+
+        The model defined in huaweicloud sdk
+
+        :param qa_pair_id: 问答对ID。
+        :type qa_pair_id: str
+        :param st_question: 标准问题。
+        :type st_question: str
+        :param score: 相似度得分，精确到小数点后3位。
+        :type score: float
+        :param domain: 所属领域。
+        :type domain: str
+        :param top_score_question: 最高评分的扩展问或标准问。
+        :type top_score_question: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class RecomendAnswer:
         问答对ID。
 
         :param qa_pair_id: The qa_pair_id of this RecomendAnswer.
-        :type: str
+        :type qa_pair_id: str
         """
         self._qa_pair_id = qa_pair_id
 
@@ -100,7 +113,7 @@ class RecomendAnswer:
         标准问题。
 
         :param st_question: The st_question of this RecomendAnswer.
-        :type: str
+        :type st_question: str
         """
         self._st_question = st_question
 
@@ -122,7 +135,7 @@ class RecomendAnswer:
         相似度得分，精确到小数点后3位。
 
         :param score: The score of this RecomendAnswer.
-        :type: float
+        :type score: float
         """
         self._score = score
 
@@ -144,7 +157,7 @@ class RecomendAnswer:
         所属领域。
 
         :param domain: The domain of this RecomendAnswer.
-        :type: str
+        :type domain: str
         """
         self._domain = domain
 
@@ -166,7 +179,7 @@ class RecomendAnswer:
         最高评分的扩展问或标准问。
 
         :param top_score_question: The top_score_question of this RecomendAnswer.
-        :type: str
+        :type top_score_question: str
         """
         self._top_score_question = top_score_question
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateApplicationRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CreateApplicationRequestBody:
     }
 
     def __init__(self, name=None, platform=None, platform_principal=None, platform_credential=None):
-        """CreateApplicationRequestBody - a model defined in huaweicloud sdk"""
+        """CreateApplicationRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param name: 应用名。  最大支持64个字符，只能包含英文字母、下划线和数字。
+        :type name: str
+        :param platform: 应用平台。  目前仅支持HMS、APNS、APNS_SANDBOX。  HMS是为开发者提供的消息推送平台。  APNS和APNS_SANDBOX是用于推送iOS消息的服务平台。
+        :type platform: str
+        :param platform_principal: 对于HMS平台是APP ID，只能包含英文字母和数字，最大20个字符。 对于苹果APNS、APNS_SandBox平台是推送证书，大小不超过8K，且是Base64编码。
+        :type platform_principal: str
+        :param platform_credential: 对于HMS平台是APP SECRET， 只能包含英文字母和数字，32到64个字符。  对于苹果APNS、APNS_SandBox平台是推送证书的私钥（private key）， 大小不超过8K，且是Base64编码。
+        :type platform_credential: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class CreateApplicationRequestBody:
         应用名。  最大支持64个字符，只能包含英文字母、下划线和数字。
 
         :param name: The name of this CreateApplicationRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -91,7 +102,7 @@ class CreateApplicationRequestBody:
         应用平台。  目前仅支持HMS、APNS、APNS_SANDBOX。  HMS是为开发者提供的消息推送平台。  APNS和APNS_SANDBOX是用于推送iOS消息的服务平台。
 
         :param platform: The platform of this CreateApplicationRequestBody.
-        :type: str
+        :type platform: str
         """
         self._platform = platform
 
@@ -113,7 +124,7 @@ class CreateApplicationRequestBody:
         对于HMS平台是APP ID，只能包含英文字母和数字，最大20个字符。 对于苹果APNS、APNS_SandBox平台是推送证书，大小不超过8K，且是Base64编码。
 
         :param platform_principal: The platform_principal of this CreateApplicationRequestBody.
-        :type: str
+        :type platform_principal: str
         """
         self._platform_principal = platform_principal
 
@@ -135,7 +146,7 @@ class CreateApplicationRequestBody:
         对于HMS平台是APP SECRET， 只能包含英文字母和数字，32到64个字符。  对于苹果APNS、APNS_SandBox平台是推送证书的私钥（private key）， 大小不超过8K，且是Base64编码。
 
         :param platform_credential: The platform_credential of this CreateApplicationRequestBody.
-        :type: str
+        :type platform_credential: str
         """
         self._platform_credential = platform_credential
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCertificateAuthorityResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListCertificateAuthorityResponse(SdkResponse):
     }
 
     def __init__(self, total=None, certificate_authorities=None):
-        """ListCertificateAuthorityResponse - a model defined in huaweicloud sdk"""
+        """ListCertificateAuthorityResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: CA证书总数。
+        :type total: int
+        :param certificate_authorities: CA列表，详情请参见**CertificateAuthorities**字段数据结构说明。
+        :type certificate_authorities: list[:class:`huaweicloudsdkccm.v1.CertificateAuthorities`]
+        """
         
         super(ListCertificateAuthorityResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListCertificateAuthorityResponse(SdkResponse):
         CA证书总数。
 
         :param total: The total of this ListCertificateAuthorityResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -74,7 +81,7 @@ class ListCertificateAuthorityResponse(SdkResponse):
         CA列表，详情请参见**CertificateAuthorities**字段数据结构说明。
 
         :return: The certificate_authorities of this ListCertificateAuthorityResponse.
-        :rtype: list[CertificateAuthorities]
+        :rtype: list[:class:`huaweicloudsdkccm.v1.CertificateAuthorities`]
         """
         return self._certificate_authorities
 
@@ -85,7 +92,7 @@ class ListCertificateAuthorityResponse(SdkResponse):
         CA列表，详情请参见**CertificateAuthorities**字段数据结构说明。
 
         :param certificate_authorities: The certificate_authorities of this ListCertificateAuthorityResponse.
-        :type: list[CertificateAuthorities]
+        :type certificate_authorities: list[:class:`huaweicloudsdkccm.v1.CertificateAuthorities`]
         """
         self._certificate_authorities = certificate_authorities
 

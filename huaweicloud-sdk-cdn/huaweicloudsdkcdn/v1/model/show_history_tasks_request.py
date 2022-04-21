@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowHistoryTasksRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class ShowHistoryTasksRequest:
     }
 
     def __init__(self, enterprise_project_id=None, page_size=None, page_number=None, status=None, start_date=None, end_date=None, order_field=None, order_type=None, file_type=None):
-        """ShowHistoryTasksRequest - a model defined in huaweicloud sdk"""
+        """ShowHistoryTasksRequest
+
+        The model defined in huaweicloud sdk
+
+        :param enterprise_project_id: 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子账号调用接口时，该参数必传。
+        :type enterprise_project_id: str
+        :param page_size: 单页最大数量，取值范围为1-10000。page_size和page_number必须同时传值。默认值30。
+        :type page_size: int
+        :param page_number: 当前查询第几页，取值范围为1-65535。默认值1。
+        :type page_number: int
+        :param status: 任务状态。 task_inprocess 表示任务处理中，task_done表示任务完成。
+        :type status: str
+        :param start_date: 查询起始时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
+        :type start_date: int
+        :param end_date: 查询结束时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
+        :type end_date: int
+        :param order_field: 用来排序的字段，支持的字段有“task_type”，“total”，“processing”， “succeed”，“failed”，“create_time”。order_field和order_type必须同时传值，否则使用默认值\&quot;create_time\&quot; 和 \&quot;desc\&quot;。
+        :type order_field: str
+        :param order_type: desc 或者asc。默认值desc。
+        :type order_type: str
+        :param file_type: 默认是文件file。file：文件,directory：目录。
+        :type file_type: str
+        """
         
         
 
@@ -98,7 +119,7 @@ class ShowHistoryTasksRequest:
         当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子账号调用接口时，该参数必传。
 
         :param enterprise_project_id: The enterprise_project_id of this ShowHistoryTasksRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -120,7 +141,7 @@ class ShowHistoryTasksRequest:
         单页最大数量，取值范围为1-10000。page_size和page_number必须同时传值。默认值30。
 
         :param page_size: The page_size of this ShowHistoryTasksRequest.
-        :type: int
+        :type page_size: int
         """
         self._page_size = page_size
 
@@ -142,7 +163,7 @@ class ShowHistoryTasksRequest:
         当前查询第几页，取值范围为1-65535。默认值1。
 
         :param page_number: The page_number of this ShowHistoryTasksRequest.
-        :type: int
+        :type page_number: int
         """
         self._page_number = page_number
 
@@ -164,7 +185,7 @@ class ShowHistoryTasksRequest:
         任务状态。 task_inprocess 表示任务处理中，task_done表示任务完成。
 
         :param status: The status of this ShowHistoryTasksRequest.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -186,7 +207,7 @@ class ShowHistoryTasksRequest:
         查询起始时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
 
         :param start_date: The start_date of this ShowHistoryTasksRequest.
-        :type: int
+        :type start_date: int
         """
         self._start_date = start_date
 
@@ -208,7 +229,7 @@ class ShowHistoryTasksRequest:
         查询结束时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
 
         :param end_date: The end_date of this ShowHistoryTasksRequest.
-        :type: int
+        :type end_date: int
         """
         self._end_date = end_date
 
@@ -230,7 +251,7 @@ class ShowHistoryTasksRequest:
         用来排序的字段，支持的字段有“task_type”，“total”，“processing”， “succeed”，“failed”，“create_time”。order_field和order_type必须同时传值，否则使用默认值\"create_time\" 和 \"desc\"。
 
         :param order_field: The order_field of this ShowHistoryTasksRequest.
-        :type: str
+        :type order_field: str
         """
         self._order_field = order_field
 
@@ -252,7 +273,7 @@ class ShowHistoryTasksRequest:
         desc 或者asc。默认值desc。
 
         :param order_type: The order_type of this ShowHistoryTasksRequest.
-        :type: str
+        :type order_type: str
         """
         self._order_type = order_type
 
@@ -274,7 +295,7 @@ class ShowHistoryTasksRequest:
         默认是文件file。file：文件,directory：目录。
 
         :param file_type: The file_type of this ShowHistoryTasksRequest.
-        :type: str
+        :type file_type: str
         """
         self._file_type = file_type
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AppVersionDetailLivenessProbe:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class AppVersionDetailLivenessProbe:
     }
 
     def __init__(self, exec_command=None, http_get=None, initial_delay_seconds=None, timeout_seconds=None):
-        """AppVersionDetailLivenessProbe - a model defined in huaweicloud sdk"""
+        """AppVersionDetailLivenessProbe
+
+        The model defined in huaweicloud sdk
+
+        :param exec_command: 执行探测的命令行命令，长度1-10240内的字符串
+        :type exec_command: str
+        :param http_get: 
+        :type http_get: :class:`huaweicloudsdkief.v1.InstancesLivenessProbeHttpGet`
+        :param initial_delay_seconds: 表示从工作负载启动后从多久开始探测，大于0且不大于3600的整数，默认为10
+        :type initial_delay_seconds: int
+        :param timeout_seconds: 表示探测超时时间，大于0且不大于3600的整数，默认为1
+        :type timeout_seconds: int
+        """
         
         
 
@@ -71,7 +82,7 @@ class AppVersionDetailLivenessProbe:
         执行探测的命令行命令，长度1-10240内的字符串
 
         :param exec_command: The exec_command of this AppVersionDetailLivenessProbe.
-        :type: str
+        :type exec_command: str
         """
         self._exec_command = exec_command
 
@@ -81,7 +92,7 @@ class AppVersionDetailLivenessProbe:
 
 
         :return: The http_get of this AppVersionDetailLivenessProbe.
-        :rtype: InstancesLivenessProbeHttpGet
+        :rtype: :class:`huaweicloudsdkief.v1.InstancesLivenessProbeHttpGet`
         """
         return self._http_get
 
@@ -91,7 +102,7 @@ class AppVersionDetailLivenessProbe:
 
 
         :param http_get: The http_get of this AppVersionDetailLivenessProbe.
-        :type: InstancesLivenessProbeHttpGet
+        :type http_get: :class:`huaweicloudsdkief.v1.InstancesLivenessProbeHttpGet`
         """
         self._http_get = http_get
 
@@ -113,7 +124,7 @@ class AppVersionDetailLivenessProbe:
         表示从工作负载启动后从多久开始探测，大于0且不大于3600的整数，默认为10
 
         :param initial_delay_seconds: The initial_delay_seconds of this AppVersionDetailLivenessProbe.
-        :type: int
+        :type initial_delay_seconds: int
         """
         self._initial_delay_seconds = initial_delay_seconds
 
@@ -135,7 +146,7 @@ class AppVersionDetailLivenessProbe:
         表示探测超时时间，大于0且不大于3600的整数，默认为1
 
         :param timeout_seconds: The timeout_seconds of this AppVersionDetailLivenessProbe.
-        :type: int
+        :type timeout_seconds: int
         """
         self._timeout_seconds = timeout_seconds
 

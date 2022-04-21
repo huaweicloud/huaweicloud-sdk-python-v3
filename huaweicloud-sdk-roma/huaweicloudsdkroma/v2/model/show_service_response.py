@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowServiceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class ShowServiceResponse(SdkResponse):
     }
 
     def __init__(self, product_template_id=None, product_id=None, service_id=None, service_name=None, description=None, status=None, created_user=None, last_updated_user=None, created_datetime=None, last_updated_datetime=None):
-        """ShowServiceResponse - a model defined in huaweicloud sdk"""
+        """ShowServiceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param product_template_id: 服务归属的产品模板ID
+        :type product_template_id: int
+        :param product_id: 服务归属的产品ID
+        :type product_id: int
+        :param service_id: 服务ID
+        :type service_id: int
+        :param service_name: 服务名称，支持中文,英文大小写，数字，下划线和中划线,长度2-64
+        :type service_name: str
+        :param description: 服务描述，长度0-200
+        :type description: str
+        :param status: 服务状态 0-启用 1-停用
+        :type status: int
+        :param created_user: 
+        :type created_user: :class:`huaweicloudsdkroma.v2.CreatedUser`
+        :param last_updated_user: 
+        :type last_updated_user: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
+        :param created_datetime: 创建时间止，格式timestamp(ms)，使用UTC时区
+        :type created_datetime: int
+        :param last_updated_datetime: 最后修改时间止，格式timestamp(ms)，使用UTC时区
+        :type last_updated_datetime: int
+        """
         
         super(ShowServiceResponse, self).__init__()
 
@@ -103,7 +126,7 @@ class ShowServiceResponse(SdkResponse):
         服务归属的产品模板ID
 
         :param product_template_id: The product_template_id of this ShowServiceResponse.
-        :type: int
+        :type product_template_id: int
         """
         self._product_template_id = product_template_id
 
@@ -125,7 +148,7 @@ class ShowServiceResponse(SdkResponse):
         服务归属的产品ID
 
         :param product_id: The product_id of this ShowServiceResponse.
-        :type: int
+        :type product_id: int
         """
         self._product_id = product_id
 
@@ -147,7 +170,7 @@ class ShowServiceResponse(SdkResponse):
         服务ID
 
         :param service_id: The service_id of this ShowServiceResponse.
-        :type: int
+        :type service_id: int
         """
         self._service_id = service_id
 
@@ -169,7 +192,7 @@ class ShowServiceResponse(SdkResponse):
         服务名称，支持中文,英文大小写，数字，下划线和中划线,长度2-64
 
         :param service_name: The service_name of this ShowServiceResponse.
-        :type: str
+        :type service_name: str
         """
         self._service_name = service_name
 
@@ -191,7 +214,7 @@ class ShowServiceResponse(SdkResponse):
         服务描述，长度0-200
 
         :param description: The description of this ShowServiceResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -213,7 +236,7 @@ class ShowServiceResponse(SdkResponse):
         服务状态 0-启用 1-停用
 
         :param status: The status of this ShowServiceResponse.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -223,7 +246,7 @@ class ShowServiceResponse(SdkResponse):
 
 
         :return: The created_user of this ShowServiceResponse.
-        :rtype: CreatedUser
+        :rtype: :class:`huaweicloudsdkroma.v2.CreatedUser`
         """
         return self._created_user
 
@@ -233,7 +256,7 @@ class ShowServiceResponse(SdkResponse):
 
 
         :param created_user: The created_user of this ShowServiceResponse.
-        :type: CreatedUser
+        :type created_user: :class:`huaweicloudsdkroma.v2.CreatedUser`
         """
         self._created_user = created_user
 
@@ -243,7 +266,7 @@ class ShowServiceResponse(SdkResponse):
 
 
         :return: The last_updated_user of this ShowServiceResponse.
-        :rtype: LastUpdatedUser
+        :rtype: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
         """
         return self._last_updated_user
 
@@ -253,7 +276,7 @@ class ShowServiceResponse(SdkResponse):
 
 
         :param last_updated_user: The last_updated_user of this ShowServiceResponse.
-        :type: LastUpdatedUser
+        :type last_updated_user: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
         """
         self._last_updated_user = last_updated_user
 
@@ -275,7 +298,7 @@ class ShowServiceResponse(SdkResponse):
         创建时间止，格式timestamp(ms)，使用UTC时区
 
         :param created_datetime: The created_datetime of this ShowServiceResponse.
-        :type: int
+        :type created_datetime: int
         """
         self._created_datetime = created_datetime
 
@@ -297,7 +320,7 @@ class ShowServiceResponse(SdkResponse):
         最后修改时间止，格式timestamp(ms)，使用UTC时区
 
         :param last_updated_datetime: The last_updated_datetime of this ShowServiceResponse.
-        :type: int
+        :type last_updated_datetime: int
         """
         self._last_updated_datetime = last_updated_datetime
 

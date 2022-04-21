@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DataConfig:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DataConfig:
     }
 
     def __init__(self, offline=None, nearline=None):
-        """DataConfig - a model defined in huaweicloud sdk"""
+        """DataConfig
+
+        The model defined in huaweicloud sdk
+
+        :param offline: 
+        :type offline: :class:`huaweicloudsdkres.v1.Offline`
+        :param nearline: 
+        :type nearline: :class:`huaweicloudsdkres.v1.Nearline`
+        """
         
         
 
@@ -50,7 +57,7 @@ class DataConfig:
 
 
         :return: The offline of this DataConfig.
-        :rtype: Offline
+        :rtype: :class:`huaweicloudsdkres.v1.Offline`
         """
         return self._offline
 
@@ -60,7 +67,7 @@ class DataConfig:
 
 
         :param offline: The offline of this DataConfig.
-        :type: Offline
+        :type offline: :class:`huaweicloudsdkres.v1.Offline`
         """
         self._offline = offline
 
@@ -70,7 +77,7 @@ class DataConfig:
 
 
         :return: The nearline of this DataConfig.
-        :rtype: Nearline
+        :rtype: :class:`huaweicloudsdkres.v1.Nearline`
         """
         return self._nearline
 
@@ -80,7 +87,7 @@ class DataConfig:
 
 
         :param nearline: The nearline of this DataConfig.
-        :type: Nearline
+        :type nearline: :class:`huaweicloudsdkres.v1.Nearline`
         """
         self._nearline = nearline
 

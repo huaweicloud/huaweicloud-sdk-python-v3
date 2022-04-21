@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchListProgressesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchListProgressesResponse(SdkResponse):
     }
 
     def __init__(self, count=None, results=None):
-        """BatchListProgressesResponse - a model defined in huaweicloud sdk"""
+        """BatchListProgressesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 总数
+        :type count: int
+        :param results: 批量查询迁移进度的响应体集合
+        :type results: list[:class:`huaweicloudsdkdrs.v3.QueryProgressResp`]
+        """
         
         super(BatchListProgressesResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class BatchListProgressesResponse(SdkResponse):
         总数
 
         :param count: The count of this BatchListProgressesResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -74,7 +81,7 @@ class BatchListProgressesResponse(SdkResponse):
         批量查询迁移进度的响应体集合
 
         :return: The results of this BatchListProgressesResponse.
-        :rtype: list[QueryProgressResp]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.QueryProgressResp`]
         """
         return self._results
 
@@ -85,7 +92,7 @@ class BatchListProgressesResponse(SdkResponse):
         批量查询迁移进度的响应体集合
 
         :param results: The results of this BatchListProgressesResponse.
-        :type: list[QueryProgressResp]
+        :type results: list[:class:`huaweicloudsdkdrs.v3.QueryProgressResp`]
         """
         self._results = results
 

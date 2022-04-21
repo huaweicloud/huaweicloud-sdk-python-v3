@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QaBotAnswers:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class QaBotAnswers:
     }
 
     def __init__(self, answers=None, request_id=None):
-        """QaBotAnswers - a model defined in huaweicloud sdk"""
+        """QaBotAnswers
+
+        The model defined in huaweicloud sdk
+
+        :param answers: 问答机器人回复。
+        :type answers: list[:class:`huaweicloudsdkcbs.v1.QaBotAnswer`]
+        :param request_id: 请求ID。
+        :type request_id: str
+        """
         
         
 
@@ -51,7 +58,7 @@ class QaBotAnswers:
         问答机器人回复。
 
         :return: The answers of this QaBotAnswers.
-        :rtype: list[QaBotAnswer]
+        :rtype: list[:class:`huaweicloudsdkcbs.v1.QaBotAnswer`]
         """
         return self._answers
 
@@ -62,7 +69,7 @@ class QaBotAnswers:
         问答机器人回复。
 
         :param answers: The answers of this QaBotAnswers.
-        :type: list[QaBotAnswer]
+        :type answers: list[:class:`huaweicloudsdkcbs.v1.QaBotAnswer`]
         """
         self._answers = answers
 
@@ -84,7 +91,7 @@ class QaBotAnswers:
         请求ID。
 
         :param request_id: The request_id of this QaBotAnswers.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 

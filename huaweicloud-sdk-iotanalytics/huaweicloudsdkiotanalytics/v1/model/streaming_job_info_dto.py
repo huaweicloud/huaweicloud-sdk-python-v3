@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StreamingJobInfoDto:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class StreamingJobInfoDto:
     }
 
     def __init__(self, job_id=None, job_name=None, job_input_type=None, job_description=None, job_state=None, status=None, rtu=None, created_time=None, modified_time=None, user_id=None, has_savepoint=None):
-        """StreamingJobInfoDto - a model defined in huaweicloud sdk"""
+        """StreamingJobInfoDto
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 作业ID
+        :type job_id: str
+        :param job_name: 作业名称
+        :type job_name: str
+        :param job_input_type: 接收数据类型
+        :type job_input_type: str
+        :param job_description: 作业描述
+        :type job_description: str
+        :param job_state: 作业状态
+        :type job_state: str
+        :param status: 操作状态
+        :type status: str
+        :param rtu: 运行作业的RTU个数
+        :type rtu: int
+        :param created_time: 创建时间
+        :type created_time: str
+        :param modified_time: 修改时间
+        :type modified_time: str
+        :param user_id: 用户ID
+        :type user_id: str
+        :param has_savepoint: 已停止作业是否有历史缓存数据
+        :type has_savepoint: bool
+        """
         
         
 
@@ -108,7 +133,7 @@ class StreamingJobInfoDto:
         作业ID
 
         :param job_id: The job_id of this StreamingJobInfoDto.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -130,7 +155,7 @@ class StreamingJobInfoDto:
         作业名称
 
         :param job_name: The job_name of this StreamingJobInfoDto.
-        :type: str
+        :type job_name: str
         """
         self._job_name = job_name
 
@@ -152,7 +177,7 @@ class StreamingJobInfoDto:
         接收数据类型
 
         :param job_input_type: The job_input_type of this StreamingJobInfoDto.
-        :type: str
+        :type job_input_type: str
         """
         self._job_input_type = job_input_type
 
@@ -174,7 +199,7 @@ class StreamingJobInfoDto:
         作业描述
 
         :param job_description: The job_description of this StreamingJobInfoDto.
-        :type: str
+        :type job_description: str
         """
         self._job_description = job_description
 
@@ -196,7 +221,7 @@ class StreamingJobInfoDto:
         作业状态
 
         :param job_state: The job_state of this StreamingJobInfoDto.
-        :type: str
+        :type job_state: str
         """
         self._job_state = job_state
 
@@ -218,7 +243,7 @@ class StreamingJobInfoDto:
         操作状态
 
         :param status: The status of this StreamingJobInfoDto.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -240,7 +265,7 @@ class StreamingJobInfoDto:
         运行作业的RTU个数
 
         :param rtu: The rtu of this StreamingJobInfoDto.
-        :type: int
+        :type rtu: int
         """
         self._rtu = rtu
 
@@ -262,7 +287,7 @@ class StreamingJobInfoDto:
         创建时间
 
         :param created_time: The created_time of this StreamingJobInfoDto.
-        :type: str
+        :type created_time: str
         """
         self._created_time = created_time
 
@@ -284,7 +309,7 @@ class StreamingJobInfoDto:
         修改时间
 
         :param modified_time: The modified_time of this StreamingJobInfoDto.
-        :type: str
+        :type modified_time: str
         """
         self._modified_time = modified_time
 
@@ -306,7 +331,7 @@ class StreamingJobInfoDto:
         用户ID
 
         :param user_id: The user_id of this StreamingJobInfoDto.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -328,7 +353,7 @@ class StreamingJobInfoDto:
         已停止作业是否有历史缓存数据
 
         :param has_savepoint: The has_savepoint of this StreamingJobInfoDto.
-        :type: bool
+        :type has_savepoint: bool
         """
         self._has_savepoint = has_savepoint
 

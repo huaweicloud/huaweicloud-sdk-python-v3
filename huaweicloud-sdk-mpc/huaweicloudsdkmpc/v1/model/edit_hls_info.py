@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EditHlsInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class EditHlsInfo:
     }
 
     def __init__(self, interval=None):
-        """EditHlsInfo - a model defined in huaweicloud sdk"""
+        """EditHlsInfo
+
+        The model defined in huaweicloud sdk
+
+        :param interval: 切片间隔。
+        :type interval: int
+        """
         
         
 
@@ -58,7 +63,7 @@ class EditHlsInfo:
         切片间隔。
 
         :param interval: The interval of this EditHlsInfo.
-        :type: int
+        :type interval: int
         """
         self._interval = interval
 

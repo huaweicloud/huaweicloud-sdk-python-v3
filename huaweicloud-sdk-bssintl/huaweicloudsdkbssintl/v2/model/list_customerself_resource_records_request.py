@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCustomerselfResourceRecordsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -60,7 +59,43 @@ class ListCustomerselfResourceRecordsRequest:
     }
 
     def __init__(self, x_language=None, cycle=None, cloud_service_type=None, region=None, charge_mode=None, bill_type=None, offset=None, limit=None, resource_id=None, enterprise_project_id=None, include_zero_record=None, method=None, sub_customer_id=None, trade_id=None, bill_date_begin=None, bill_date_end=None):
-        """ListCustomerselfResourceRecordsRequest - a model defined in huaweicloud sdk"""
+        """ListCustomerselfResourceRecordsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言：中文：zh_CN 英文：en_US。缺省为zh_CN
+        :type x_language: str
+        :param cycle: 查询的资源消费记录所在账期，格式：YYYY-MM。
+        :type cycle: str
+        :param cloud_service_type: 云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
+        :type cloud_service_type: str
+        :param region: 云服务区编码，例如：“ap-southeast-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
+        :type region: str
+        :param charge_mode: 计费模式。1：包年/包月3：按需10：预留实例
+        :type charge_mode: str
+        :param bill_type: 账单类型。1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费15：消费-税金16：调账-扣费17：消费-保底差额 说明： 保底差额&#x3D;客户签约保底合同后，如果没有达到保底消费，客户需要补交的费用，仅限于直销或者伙伴顾问销售类子客户，且为后付费用户。20：退款-变更100：退款-退订税金101：调账-补偿税金102：调账-扣费税金
+        :type bill_type: int
+        :param offset: 偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset &#x3D; 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
+        :type offset: int
+        :param limit: 每次查询的数量限制。默认值为10。
+        :type limit: int
+        :param resource_id: 资源ID。
+        :type resource_id: str
+        :param enterprise_project_id: 企业项目标识（企业项目ID）。default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见如何获取企业项目ID。
+        :type enterprise_project_id: str
+        :param include_zero_record: 返回是否包含应付金额为0的记录。true：包含false：不包含
+        :type include_zero_record: bool
+        :param method: 查询资源消费记录的方式。oneself：客户自己sub_customer：企业子客户all：客户自己和企业子客户默认为all，如果没有企业子客户，取值为all时查询的是客户自己的资源消费记录。
+        :type method: str
+        :param sub_customer_id: 企业子账号ID。 说明： 如果method取值不为sub_customer，则该参数无效。如果method取值为sub_customer，则该参数不能为空。
+        :type sub_customer_id: str
+        :param trade_id: 订单ID或交易ID。账单类型为1、2、3、4和8时此处为订单ID。账单类型为其它场景时此处为交易ID，为扣费维度的唯一标识。例如非月末扣费时为应收ID；月末扣费时为账单ID。
+        :type trade_id: str
+        :param bill_date_begin: 查询的资源消费记录的开始日期，格式为YYYY-MM-DD。 说明： 必须和cycle（即资源的消费账期）在同一个月。bill_date_begin和bill_date_end两个参数必须同时出现，否则仅按照cycle（即资源的消费账期）进行查询。
+        :type bill_date_begin: str
+        :param bill_date_end: 查询的资源消费记录的结束日期，格式为YYYY-MM-DD。 说明： 必须和cycle（即资源的消费账期）在同一个月。bill_date_begin和bill_date_end两个参数必须同时出现，否则仅按照cycle（即资源的消费账期）进行查询。
+        :type bill_date_end: str
+        """
         
         
 
@@ -132,7 +167,7 @@ class ListCustomerselfResourceRecordsRequest:
         语言：中文：zh_CN 英文：en_US。缺省为zh_CN
 
         :param x_language: The x_language of this ListCustomerselfResourceRecordsRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -154,7 +189,7 @@ class ListCustomerselfResourceRecordsRequest:
         查询的资源消费记录所在账期，格式：YYYY-MM。
 
         :param cycle: The cycle of this ListCustomerselfResourceRecordsRequest.
-        :type: str
+        :type cycle: str
         """
         self._cycle = cycle
 
@@ -176,7 +211,7 @@ class ListCustomerselfResourceRecordsRequest:
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
         :param cloud_service_type: The cloud_service_type of this ListCustomerselfResourceRecordsRequest.
-        :type: str
+        :type cloud_service_type: str
         """
         self._cloud_service_type = cloud_service_type
 
@@ -198,7 +233,7 @@ class ListCustomerselfResourceRecordsRequest:
         云服务区编码，例如：“ap-southeast-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
         :param region: The region of this ListCustomerselfResourceRecordsRequest.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -220,7 +255,7 @@ class ListCustomerselfResourceRecordsRequest:
         计费模式。1：包年/包月3：按需10：预留实例
 
         :param charge_mode: The charge_mode of this ListCustomerselfResourceRecordsRequest.
-        :type: str
+        :type charge_mode: str
         """
         self._charge_mode = charge_mode
 
@@ -242,7 +277,7 @@ class ListCustomerselfResourceRecordsRequest:
         账单类型。1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费15：消费-税金16：调账-扣费17：消费-保底差额 说明： 保底差额=客户签约保底合同后，如果没有达到保底消费，客户需要补交的费用，仅限于直销或者伙伴顾问销售类子客户，且为后付费用户。20：退款-变更100：退款-退订税金101：调账-补偿税金102：调账-扣费税金
 
         :param bill_type: The bill_type of this ListCustomerselfResourceRecordsRequest.
-        :type: int
+        :type bill_type: int
         """
         self._bill_type = bill_type
 
@@ -264,7 +299,7 @@ class ListCustomerselfResourceRecordsRequest:
         偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
         :param offset: The offset of this ListCustomerselfResourceRecordsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -286,7 +321,7 @@ class ListCustomerselfResourceRecordsRequest:
         每次查询的数量限制。默认值为10。
 
         :param limit: The limit of this ListCustomerselfResourceRecordsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -308,7 +343,7 @@ class ListCustomerselfResourceRecordsRequest:
         资源ID。
 
         :param resource_id: The resource_id of this ListCustomerselfResourceRecordsRequest.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -330,7 +365,7 @@ class ListCustomerselfResourceRecordsRequest:
         企业项目标识（企业项目ID）。default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见如何获取企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this ListCustomerselfResourceRecordsRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -352,7 +387,7 @@ class ListCustomerselfResourceRecordsRequest:
         返回是否包含应付金额为0的记录。true：包含false：不包含
 
         :param include_zero_record: The include_zero_record of this ListCustomerselfResourceRecordsRequest.
-        :type: bool
+        :type include_zero_record: bool
         """
         self._include_zero_record = include_zero_record
 
@@ -374,7 +409,7 @@ class ListCustomerselfResourceRecordsRequest:
         查询资源消费记录的方式。oneself：客户自己sub_customer：企业子客户all：客户自己和企业子客户默认为all，如果没有企业子客户，取值为all时查询的是客户自己的资源消费记录。
 
         :param method: The method of this ListCustomerselfResourceRecordsRequest.
-        :type: str
+        :type method: str
         """
         self._method = method
 
@@ -396,7 +431,7 @@ class ListCustomerselfResourceRecordsRequest:
         企业子账号ID。 说明： 如果method取值不为sub_customer，则该参数无效。如果method取值为sub_customer，则该参数不能为空。
 
         :param sub_customer_id: The sub_customer_id of this ListCustomerselfResourceRecordsRequest.
-        :type: str
+        :type sub_customer_id: str
         """
         self._sub_customer_id = sub_customer_id
 
@@ -418,7 +453,7 @@ class ListCustomerselfResourceRecordsRequest:
         订单ID或交易ID。账单类型为1、2、3、4和8时此处为订单ID。账单类型为其它场景时此处为交易ID，为扣费维度的唯一标识。例如非月末扣费时为应收ID；月末扣费时为账单ID。
 
         :param trade_id: The trade_id of this ListCustomerselfResourceRecordsRequest.
-        :type: str
+        :type trade_id: str
         """
         self._trade_id = trade_id
 
@@ -440,7 +475,7 @@ class ListCustomerselfResourceRecordsRequest:
         查询的资源消费记录的开始日期，格式为YYYY-MM-DD。 说明： 必须和cycle（即资源的消费账期）在同一个月。bill_date_begin和bill_date_end两个参数必须同时出现，否则仅按照cycle（即资源的消费账期）进行查询。
 
         :param bill_date_begin: The bill_date_begin of this ListCustomerselfResourceRecordsRequest.
-        :type: str
+        :type bill_date_begin: str
         """
         self._bill_date_begin = bill_date_begin
 
@@ -462,7 +497,7 @@ class ListCustomerselfResourceRecordsRequest:
         查询的资源消费记录的结束日期，格式为YYYY-MM-DD。 说明： 必须和cycle（即资源的消费账期）在同一个月。bill_date_begin和bill_date_end两个参数必须同时出现，否则仅按照cycle（即资源的消费账期）进行查询。
 
         :param bill_date_end: The bill_date_end of this ListCustomerselfResourceRecordsRequest.
-        :type: str
+        :type bill_date_end: str
         """
         self._bill_date_end = bill_date_end
 

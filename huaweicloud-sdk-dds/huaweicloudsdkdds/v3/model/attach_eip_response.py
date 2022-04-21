@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AttachEipResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class AttachEipResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, node_id=None, node_name=None, public_ip_id=None, public_ip=None):
-        """AttachEipResponse - a model defined in huaweicloud sdk"""
+        """AttachEipResponse
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 任务ID。
+        :type job_id: str
+        :param node_id: 节点ID。
+        :type node_id: str
+        :param node_name: 节点名称。
+        :type node_name: str
+        :param public_ip_id: 公网IP的ID。
+        :type public_ip_id: str
+        :param public_ip: 公网IP。
+        :type public_ip: str
+        """
         
         super(AttachEipResponse, self).__init__()
 
@@ -78,7 +91,7 @@ class AttachEipResponse(SdkResponse):
         任务ID。
 
         :param job_id: The job_id of this AttachEipResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -100,7 +113,7 @@ class AttachEipResponse(SdkResponse):
         节点ID。
 
         :param node_id: The node_id of this AttachEipResponse.
-        :type: str
+        :type node_id: str
         """
         self._node_id = node_id
 
@@ -122,7 +135,7 @@ class AttachEipResponse(SdkResponse):
         节点名称。
 
         :param node_name: The node_name of this AttachEipResponse.
-        :type: str
+        :type node_name: str
         """
         self._node_name = node_name
 
@@ -144,7 +157,7 @@ class AttachEipResponse(SdkResponse):
         公网IP的ID。
 
         :param public_ip_id: The public_ip_id of this AttachEipResponse.
-        :type: str
+        :type public_ip_id: str
         """
         self._public_ip_id = public_ip_id
 
@@ -166,7 +179,7 @@ class AttachEipResponse(SdkResponse):
         公网IP。
 
         :param public_ip: The public_ip of this AttachEipResponse.
-        :type: str
+        :type public_ip: str
         """
         self._public_ip = public_ip
 

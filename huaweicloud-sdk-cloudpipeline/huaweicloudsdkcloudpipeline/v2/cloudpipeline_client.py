@@ -52,21 +52,17 @@ class CloudPipelineClient(Client):
         """批量获取流水线状态
 
         批量获取流水线状态和阶段信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchShowPipelinesStatusRequest request
-        :return: BatchShowPipelinesStatusResponse
+        :param request: Request instance for BatchShowPipelinesStatus
+        :type request: :class:`huaweicloudsdkcloudpipeline.v2.BatchShowPipelinesStatusRequest`
+        :rtype: :class:`huaweicloudsdkcloudpipeline.v2.BatchShowPipelinesStatusResponse`
         """
         return self.batch_show_pipelines_status_with_http_info(request)
 
     def batch_show_pipelines_status_with_http_info(self, request):
-        """批量获取流水线状态
-
-        批量获取流水线状态和阶段信息
-
-        :param BatchShowPipelinesStatusRequest request
-        :return: BatchShowPipelinesStatusResponse
-        """
-
         all_params = ['pipeline_ids', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -112,26 +108,21 @@ class CloudPipelineClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_pipeline_by_template(self, request):
         """基于模板快速创建流水线及流水线内任务
 
         基于模板快速创建流水线及流水线内任务
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreatePipelineByTemplateRequest request
-        :return: CreatePipelineByTemplateResponse
+        :param request: Request instance for CreatePipelineByTemplate
+        :type request: :class:`huaweicloudsdkcloudpipeline.v2.CreatePipelineByTemplateRequest`
+        :rtype: :class:`huaweicloudsdkcloudpipeline.v2.CreatePipelineByTemplateResponse`
         """
         return self.create_pipeline_by_template_with_http_info(request)
 
     def create_pipeline_by_template_with_http_info(self, request):
-        """基于模板快速创建流水线及流水线内任务
-
-        基于模板快速创建流水线及流水线内任务
-
-        :param CreatePipelineByTemplateRequest request
-        :return: CreatePipelineByTemplateResponse
-        """
-
         all_params = ['create_pipeline_by_template_request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -177,26 +168,21 @@ class CloudPipelineClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_pipeline_simple_info(self, request):
         """获取流水线列表接口
 
         获取流水线列表接口
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListPipelineSimpleInfoRequest request
-        :return: ListPipelineSimpleInfoResponse
+        :param request: Request instance for ListPipelineSimpleInfo
+        :type request: :class:`huaweicloudsdkcloudpipeline.v2.ListPipelineSimpleInfoRequest`
+        :rtype: :class:`huaweicloudsdkcloudpipeline.v2.ListPipelineSimpleInfoResponse`
         """
         return self.list_pipeline_simple_info_with_http_info(request)
 
     def list_pipeline_simple_info_with_http_info(self, request):
-        """获取流水线列表接口
-
-        获取流水线列表接口
-
-        :param ListPipelineSimpleInfoRequest request
-        :return: ListPipelineSimpleInfoResponse
-        """
-
         all_params = ['x_language', 'list_pipeline_simple_info_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -242,26 +228,21 @@ class CloudPipelineClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_pipleine_build_result(self, request):
         """获取项目下流水线执行状况
 
         获取项目下流水线执行状况
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListPipleineBuildResultRequest request
-        :return: ListPipleineBuildResultResponse
+        :param request: Request instance for ListPipleineBuildResult
+        :type request: :class:`huaweicloudsdkcloudpipeline.v2.ListPipleineBuildResultRequest`
+        :rtype: :class:`huaweicloudsdkcloudpipeline.v2.ListPipleineBuildResultResponse`
         """
         return self.list_pipleine_build_result_with_http_info(request)
 
     def list_pipleine_build_result_with_http_info(self, request):
-        """获取项目下流水线执行状况
-
-        获取项目下流水线执行状况
-
-        :param ListPipleineBuildResultRequest request
-        :return: ListPipleineBuildResultResponse
-        """
-
         all_params = ['project_id', 'start_date', 'end_date', 'offset', 'limit', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -315,26 +296,21 @@ class CloudPipelineClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_templates(self, request):
         """查询模板列表
 
         查询模板列表，支持分页查询,支持模板名字模糊查询
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListTemplatesRequest request
-        :return: ListTemplatesResponse
+        :param request: Request instance for ListTemplates
+        :type request: :class:`huaweicloudsdkcloudpipeline.v2.ListTemplatesRequest`
+        :rtype: :class:`huaweicloudsdkcloudpipeline.v2.ListTemplatesResponse`
         """
         return self.list_templates_with_http_info(request)
 
     def list_templates_with_http_info(self, request):
-        """查询模板列表
-
-        查询模板列表，支持分页查询,支持模板名字模糊查询
-
-        :param ListTemplatesRequest request
-        :return: ListTemplatesResponse
-        """
-
         all_params = ['template_type', 'is_build_in', 'x_language', 'offset', 'limit', 'name', 'sort', 'asc']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -392,26 +368,21 @@ class CloudPipelineClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def register_agent(self, request):
         """register注册Slave接口
 
         注册创建Slave接口
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param RegisterAgentRequest request
-        :return: RegisterAgentResponse
+        :param request: Request instance for RegisterAgent
+        :type request: :class:`huaweicloudsdkcloudpipeline.v2.RegisterAgentRequest`
+        :rtype: :class:`huaweicloudsdkcloudpipeline.v2.RegisterAgentResponse`
         """
         return self.register_agent_with_http_info(request)
 
     def register_agent_with_http_info(self, request):
-        """register注册Slave接口
-
-        注册创建Slave接口
-
-        :param RegisterAgentRequest request
-        :return: RegisterAgentResponse
-        """
-
         all_params = ['register_agent_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -455,26 +426,21 @@ class CloudPipelineClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def remove_pipeline(self, request):
         """删除流水线
 
         根据id删除流水线
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param RemovePipelineRequest request
-        :return: RemovePipelineResponse
+        :param request: Request instance for RemovePipeline
+        :type request: :class:`huaweicloudsdkcloudpipeline.v2.RemovePipelineRequest`
+        :rtype: :class:`huaweicloudsdkcloudpipeline.v2.RemovePipelineResponse`
         """
         return self.remove_pipeline_with_http_info(request)
 
     def remove_pipeline_with_http_info(self, request):
-        """删除流水线
-
-        根据id删除流水线
-
-        :param RemovePipelineRequest request
-        :return: RemovePipelineResponse
-        """
-
         all_params = ['pipeline_id', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -520,26 +486,21 @@ class CloudPipelineClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_agent_status(self, request):
         """Agent状态查询
 
         Agent状态查询
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowAgentStatusRequest request
-        :return: ShowAgentStatusResponse
+        :param request: Request instance for ShowAgentStatus
+        :type request: :class:`huaweicloudsdkcloudpipeline.v2.ShowAgentStatusRequest`
+        :rtype: :class:`huaweicloudsdkcloudpipeline.v2.ShowAgentStatusResponse`
         """
         return self.show_agent_status_with_http_info(request)
 
     def show_agent_status_with_http_info(self, request):
-        """Agent状态查询
-
-        Agent状态查询
-
-        :param ShowAgentStatusRequest request
-        :return: ShowAgentStatusResponse
-        """
-
         all_params = ['agent_id', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -585,26 +546,21 @@ class CloudPipelineClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_instance_status(self, request):
         """检查流水线创建状态
 
         检查流水线创建状态
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowInstanceStatusRequest request
-        :return: ShowInstanceStatusResponse
+        :param request: Request instance for ShowInstanceStatus
+        :type request: :class:`huaweicloudsdkcloudpipeline.v2.ShowInstanceStatusRequest`
+        :rtype: :class:`huaweicloudsdkcloudpipeline.v2.ShowInstanceStatusResponse`
         """
         return self.show_instance_status_with_http_info(request)
 
     def show_instance_status_with_http_info(self, request):
-        """检查流水线创建状态
-
-        检查流水线创建状态
-
-        :param ShowInstanceStatusRequest request
-        :return: ShowInstanceStatusResponse
-        """
-
         all_params = ['task_id', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -650,26 +606,21 @@ class CloudPipelineClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_pipleine_status(self, request):
         """获取流水线状态
 
         获取流水线状态,阶段及任务信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowPipleineStatusRequest request
-        :return: ShowPipleineStatusResponse
+        :param request: Request instance for ShowPipleineStatus
+        :type request: :class:`huaweicloudsdkcloudpipeline.v2.ShowPipleineStatusRequest`
+        :rtype: :class:`huaweicloudsdkcloudpipeline.v2.ShowPipleineStatusResponse`
         """
         return self.show_pipleine_status_with_http_info(request)
 
     def show_pipleine_status_with_http_info(self, request):
-        """获取流水线状态
-
-        获取流水线状态,阶段及任务信息
-
-        :param ShowPipleineStatusRequest request
-        :return: ShowPipleineStatusResponse
-        """
-
         all_params = ['pipeline_id', 'x_language', 'build_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -717,26 +668,21 @@ class CloudPipelineClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_template_detail(self, request):
         """查询模板详情
 
         查询模板详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowTemplateDetailRequest request
-        :return: ShowTemplateDetailResponse
+        :param request: Request instance for ShowTemplateDetail
+        :type request: :class:`huaweicloudsdkcloudpipeline.v2.ShowTemplateDetailRequest`
+        :rtype: :class:`huaweicloudsdkcloudpipeline.v2.ShowTemplateDetailResponse`
         """
         return self.show_template_detail_with_http_info(request)
 
     def show_template_detail_with_http_info(self, request):
-        """查询模板详情
-
-        查询模板详情
-
-        :param ShowTemplateDetailRequest request
-        :return: ShowTemplateDetailResponse
-        """
-
         all_params = ['template_id', 'template_type', 'x_language', 'source']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -786,26 +732,21 @@ class CloudPipelineClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def start_new_pipeline(self, request):
         """启动流水线
 
         启动流水线
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param StartNewPipelineRequest request
-        :return: StartNewPipelineResponse
+        :param request: Request instance for StartNewPipeline
+        :type request: :class:`huaweicloudsdkcloudpipeline.v2.StartNewPipelineRequest`
+        :rtype: :class:`huaweicloudsdkcloudpipeline.v2.StartNewPipelineResponse`
         """
         return self.start_new_pipeline_with_http_info(request)
 
     def start_new_pipeline_with_http_info(self, request):
-        """启动流水线
-
-        启动流水线
-
-        :param StartNewPipelineRequest request
-        :return: StartNewPipelineResponse
-        """
-
         all_params = ['pipeline_id', 'x_language', 'start_new_pipeline_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -853,26 +794,21 @@ class CloudPipelineClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def stop_pipeline_new(self, request):
         """停止流水线
 
         停止流水线
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param StopPipelineNewRequest request
-        :return: StopPipelineNewResponse
+        :param request: Request instance for StopPipelineNew
+        :type request: :class:`huaweicloudsdkcloudpipeline.v2.StopPipelineNewRequest`
+        :rtype: :class:`huaweicloudsdkcloudpipeline.v2.StopPipelineNewResponse`
         """
         return self.stop_pipeline_new_with_http_info(request)
 
     def stop_pipeline_new_with_http_info(self, request):
-        """停止流水线
-
-        停止流水线
-
-        :param StopPipelineNewRequest request
-        :return: StopPipelineNewResponse
-        """
-
         all_params = ['pipeline_id', 'build_id', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -919,7 +855,6 @@ class CloudPipelineClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

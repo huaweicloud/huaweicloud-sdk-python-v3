@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunCelebrityRecognitionRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RunCelebrityRecognitionRequest:
     }
 
     def __init__(self, body=None):
-        """RunCelebrityRecognitionRequest - a model defined in huaweicloud sdk"""
+        """RunCelebrityRecognitionRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the RunCelebrityRecognitionRequest
+        :type body: :class:`huaweicloudsdkimage.v2.CelebrityRecognitionReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class RunCelebrityRecognitionRequest:
 
 
         :return: The body of this RunCelebrityRecognitionRequest.
-        :rtype: CelebrityRecognitionReq
+        :rtype: :class:`huaweicloudsdkimage.v2.CelebrityRecognitionReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class RunCelebrityRecognitionRequest:
 
 
         :param body: The body of this RunCelebrityRecognitionRequest.
-        :type: CelebrityRecognitionReq
+        :type body: :class:`huaweicloudsdkimage.v2.CelebrityRecognitionReq`
         """
         self._body = body
 

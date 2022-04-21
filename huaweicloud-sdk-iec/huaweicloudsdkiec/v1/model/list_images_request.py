@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListImagesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -66,7 +65,49 @@ class ListImagesRequest:
     }
 
     def __init__(self, imagetype=None, protected=None, id=None, visibility=None, status=None, name=None, os_type=None, virtual_env_type=None, isregistered=None, limit=None, offset=None, sort_key=None, sort_dir=None, support_kvm=None, support_kvm_gpu_type=None, support_kvm_ascend_310=None, support_kvm_hi1822_hiovs=None, support_arm=None, support_gpu_t4=None):
-        """ListImagesRequest - a model defined in huaweicloud sdk"""
+        """ListImagesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param imagetype: 镜像类型，目前支持以下类型：  - 公共镜像：gold  - 私有镜像：private
+        :type imagetype: str
+        :param protected: 镜像是否是受保护，取值为true/false，一般查询公共镜像时候取值为true，查询私有镜像可以不指定。
+        :type protected: str
+        :param id: 镜像ID，精确匹配。
+        :type id: str
+        :param visibility: 是否被其他租户可见，取值如下：  - public：公共镜像  - private：私有镜像
+        :type visibility: str
+        :param status: 镜像状态。取值如下：  - saving：表示镜像正在上传文件到后端存储  - deleted：表示镜像已经删除  - killed：表示镜像上传错误  - active：表示镜像可以正常使用
+        :type status: str
+        :param name: 镜像名称，匹配规则为精确匹配。
+        :type name: str
+        :param os_type: 镜像系统类型，取值如下：  - Linux - Windows - Other
+        :type os_type: str
+        :param virtual_env_type: 镜像使用环境类型。  目前仅支持系统盘镜像，取值为：FusionCompute
+        :type virtual_env_type: str
+        :param isregistered: 镜像是否可用，取值为true/false。 &gt; 查询公共镜像时，该参数无效。
+        :type isregistered: str
+        :param limit: 用于分页，表示查询几条镜像记录，取值为正整数，最大（默认）取值为500
+        :type limit: int
+        :param offset: 用于分页，表示查询偏移量，表示从整个列表查询结果中的该位置向后进行查询，并非页数偏移，默认取值为0，表示查询第一页。
+        :type offset: int
+        :param sort_key: 用于排序，表示按照哪个字段排序，取值为镜像属性name、status、disk_format、created_at，默认取值为created_at。
+        :type sort_key: str
+        :param sort_dir: 用于排序，表示升序还是降序，取值为asc和desc，与sort_key一起组合使用，默认为降序desc。
+        :type sort_dir: str
+        :param support_kvm: 如果镜像支持KVM，取值为true，否则无该属性。
+        :type support_kvm: str
+        :param support_kvm_gpu_type: 如果镜像是支持KVM虚拟化平台下的GPU类型，取值为“V100_vGPU”或者“RTX5000”，否则无该属性。
+        :type support_kvm_gpu_type: str
+        :param support_kvm_ascend_310: 如果镜像支持AI加速，取值为true，否则无该属性。
+        :type support_kvm_ascend_310: str
+        :param support_kvm_hi1822_hiovs: 如果镜像支持计算增强，取值为true，否则无该属性。
+        :type support_kvm_hi1822_hiovs: str
+        :param support_arm: 如果镜像为ARM架构类型，取值为true，否则无该属性。
+        :type support_arm: str
+        :param support_gpu_t4: 如果镜像支持GPU T4，取值为true，否则无该属性。
+        :type support_gpu_t4: str
+        """
         
         
 
@@ -148,7 +189,7 @@ class ListImagesRequest:
         镜像类型，目前支持以下类型：  - 公共镜像：gold  - 私有镜像：private
 
         :param imagetype: The imagetype of this ListImagesRequest.
-        :type: str
+        :type imagetype: str
         """
         self._imagetype = imagetype
 
@@ -170,7 +211,7 @@ class ListImagesRequest:
         镜像是否是受保护，取值为true/false，一般查询公共镜像时候取值为true，查询私有镜像可以不指定。
 
         :param protected: The protected of this ListImagesRequest.
-        :type: str
+        :type protected: str
         """
         self._protected = protected
 
@@ -192,7 +233,7 @@ class ListImagesRequest:
         镜像ID，精确匹配。
 
         :param id: The id of this ListImagesRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -214,7 +255,7 @@ class ListImagesRequest:
         是否被其他租户可见，取值如下：  - public：公共镜像  - private：私有镜像
 
         :param visibility: The visibility of this ListImagesRequest.
-        :type: str
+        :type visibility: str
         """
         self._visibility = visibility
 
@@ -236,7 +277,7 @@ class ListImagesRequest:
         镜像状态。取值如下：  - saving：表示镜像正在上传文件到后端存储  - deleted：表示镜像已经删除  - killed：表示镜像上传错误  - active：表示镜像可以正常使用
 
         :param status: The status of this ListImagesRequest.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -258,7 +299,7 @@ class ListImagesRequest:
         镜像名称，匹配规则为精确匹配。
 
         :param name: The name of this ListImagesRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -280,7 +321,7 @@ class ListImagesRequest:
         镜像系统类型，取值如下：  - Linux - Windows - Other
 
         :param os_type: The os_type of this ListImagesRequest.
-        :type: str
+        :type os_type: str
         """
         self._os_type = os_type
 
@@ -302,7 +343,7 @@ class ListImagesRequest:
         镜像使用环境类型。  目前仅支持系统盘镜像，取值为：FusionCompute
 
         :param virtual_env_type: The virtual_env_type of this ListImagesRequest.
-        :type: str
+        :type virtual_env_type: str
         """
         self._virtual_env_type = virtual_env_type
 
@@ -324,7 +365,7 @@ class ListImagesRequest:
         镜像是否可用，取值为true/false。 > 查询公共镜像时，该参数无效。
 
         :param isregistered: The isregistered of this ListImagesRequest.
-        :type: str
+        :type isregistered: str
         """
         self._isregistered = isregistered
 
@@ -346,7 +387,7 @@ class ListImagesRequest:
         用于分页，表示查询几条镜像记录，取值为正整数，最大（默认）取值为500
 
         :param limit: The limit of this ListImagesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -368,7 +409,7 @@ class ListImagesRequest:
         用于分页，表示查询偏移量，表示从整个列表查询结果中的该位置向后进行查询，并非页数偏移，默认取值为0，表示查询第一页。
 
         :param offset: The offset of this ListImagesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -390,7 +431,7 @@ class ListImagesRequest:
         用于排序，表示按照哪个字段排序，取值为镜像属性name、status、disk_format、created_at，默认取值为created_at。
 
         :param sort_key: The sort_key of this ListImagesRequest.
-        :type: str
+        :type sort_key: str
         """
         self._sort_key = sort_key
 
@@ -412,7 +453,7 @@ class ListImagesRequest:
         用于排序，表示升序还是降序，取值为asc和desc，与sort_key一起组合使用，默认为降序desc。
 
         :param sort_dir: The sort_dir of this ListImagesRequest.
-        :type: str
+        :type sort_dir: str
         """
         self._sort_dir = sort_dir
 
@@ -434,7 +475,7 @@ class ListImagesRequest:
         如果镜像支持KVM，取值为true，否则无该属性。
 
         :param support_kvm: The support_kvm of this ListImagesRequest.
-        :type: str
+        :type support_kvm: str
         """
         self._support_kvm = support_kvm
 
@@ -456,7 +497,7 @@ class ListImagesRequest:
         如果镜像是支持KVM虚拟化平台下的GPU类型，取值为“V100_vGPU”或者“RTX5000”，否则无该属性。
 
         :param support_kvm_gpu_type: The support_kvm_gpu_type of this ListImagesRequest.
-        :type: str
+        :type support_kvm_gpu_type: str
         """
         self._support_kvm_gpu_type = support_kvm_gpu_type
 
@@ -478,7 +519,7 @@ class ListImagesRequest:
         如果镜像支持AI加速，取值为true，否则无该属性。
 
         :param support_kvm_ascend_310: The support_kvm_ascend_310 of this ListImagesRequest.
-        :type: str
+        :type support_kvm_ascend_310: str
         """
         self._support_kvm_ascend_310 = support_kvm_ascend_310
 
@@ -500,7 +541,7 @@ class ListImagesRequest:
         如果镜像支持计算增强，取值为true，否则无该属性。
 
         :param support_kvm_hi1822_hiovs: The support_kvm_hi1822_hiovs of this ListImagesRequest.
-        :type: str
+        :type support_kvm_hi1822_hiovs: str
         """
         self._support_kvm_hi1822_hiovs = support_kvm_hi1822_hiovs
 
@@ -522,7 +563,7 @@ class ListImagesRequest:
         如果镜像为ARM架构类型，取值为true，否则无该属性。
 
         :param support_arm: The support_arm of this ListImagesRequest.
-        :type: str
+        :type support_arm: str
         """
         self._support_arm = support_arm
 
@@ -544,7 +585,7 @@ class ListImagesRequest:
         如果镜像支持GPU T4，取值为true，否则无该属性。
 
         :param support_gpu_t4: The support_gpu_t4 of this ListImagesRequest.
-        :type: str
+        :type support_gpu_t4: str
         """
         self._support_gpu_t4 = support_gpu_t4
 

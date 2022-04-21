@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListProductsRespValues:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListProductsRespValues:
     }
 
     def __init__(self, detail=None, name=None, unavailable_zones=None, available_zones=None):
-        """ListProductsRespValues - a model defined in huaweicloud sdk"""
+        """ListProductsRespValues
+
+        The model defined in huaweicloud sdk
+
+        :param detail: 规格详情。
+        :type detail: list[:class:`huaweicloudsdkkafka.v2.ListProductsRespDetail`]
+        :param name: 实例类型。
+        :type name: str
+        :param unavailable_zones: 资源售罄的可用区列表。
+        :type unavailable_zones: list[str]
+        :param available_zones: 有可用资源的可用区列表。
+        :type available_zones: list[str]
+        """
         
         
 
@@ -62,7 +73,7 @@ class ListProductsRespValues:
         规格详情。
 
         :return: The detail of this ListProductsRespValues.
-        :rtype: list[ListProductsRespDetail]
+        :rtype: list[:class:`huaweicloudsdkkafka.v2.ListProductsRespDetail`]
         """
         return self._detail
 
@@ -73,7 +84,7 @@ class ListProductsRespValues:
         规格详情。
 
         :param detail: The detail of this ListProductsRespValues.
-        :type: list[ListProductsRespDetail]
+        :type detail: list[:class:`huaweicloudsdkkafka.v2.ListProductsRespDetail`]
         """
         self._detail = detail
 
@@ -95,7 +106,7 @@ class ListProductsRespValues:
         实例类型。
 
         :param name: The name of this ListProductsRespValues.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -117,7 +128,7 @@ class ListProductsRespValues:
         资源售罄的可用区列表。
 
         :param unavailable_zones: The unavailable_zones of this ListProductsRespValues.
-        :type: list[str]
+        :type unavailable_zones: list[str]
         """
         self._unavailable_zones = unavailable_zones
 
@@ -139,7 +150,7 @@ class ListProductsRespValues:
         有可用资源的可用区列表。
 
         :param available_zones: The available_zones of this ListProductsRespValues.
-        :type: list[str]
+        :type available_zones: list[str]
         """
         self._available_zones = available_zones
 

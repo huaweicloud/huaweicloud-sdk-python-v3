@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteDomainsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteDomainsRequest:
     }
 
     def __init__(self, domain_name=None):
-        """DeleteDomainsRequest - a model defined in huaweicloud sdk"""
+        """DeleteDomainsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param domain_name: 域名
+        :type domain_name: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteDomainsRequest:
         域名
 
         :param domain_name: The domain_name of this DeleteDomainsRequest.
-        :type: str
+        :type domain_name: str
         """
         self._domain_name = domain_name
 

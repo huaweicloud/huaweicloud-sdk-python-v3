@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NtpConfigs:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class NtpConfigs:
     }
 
     def __init__(self, ntp_enabled=None, ntpservers=None):
-        """NtpConfigs - a model defined in huaweicloud sdk"""
+        """NtpConfigs
+
+        The model defined in huaweicloud sdk
+
+        :param ntp_enabled: ntp服务是否开启
+        :type ntp_enabled: bool
+        :param ntpservers: ntp server地址
+        :type ntpservers: list[str]
+        """
         
         
 
@@ -63,7 +70,7 @@ class NtpConfigs:
         ntp服务是否开启
 
         :param ntp_enabled: The ntp_enabled of this NtpConfigs.
-        :type: bool
+        :type ntp_enabled: bool
         """
         self._ntp_enabled = ntp_enabled
 
@@ -85,7 +92,7 @@ class NtpConfigs:
         ntp server地址
 
         :param ntpservers: The ntpservers of this NtpConfigs.
-        :type: list[str]
+        :type ntpservers: list[str]
         """
         self._ntpservers = ntpservers
 

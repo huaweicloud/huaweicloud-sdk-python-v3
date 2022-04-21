@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApplyIndividualRealnameAuthsReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ApplyIndividualRealnameAuthsReq:
     }
 
     def __init__(self, customer_id=None, identify_type=None, verified_type=None, verified_file_url=None, name=None, verified_number=None, change_type=None, xaccount_type=None):
-        """ApplyIndividualRealnameAuthsReq - a model defined in huaweicloud sdk"""
+        """ApplyIndividualRealnameAuthsReq
+
+        The model defined in huaweicloud sdk
+
+        :param customer_id: 客户账号ID。您可以调用查询客户列表接口获取customer_id。
+        :type customer_id: str
+        :param identify_type: 认证方案： 0：个人证件认证
+        :type identify_type: int
+        :param verified_type: 证件类型： 3：护照，上传的附件为2张，第1张是护照个人资料页，第2张是手持护照个人资料页； 5：港澳通行证，上传的附件为3张，第1张是港澳居民来往内地通行证正面（人像面），第2张是港澳居民来往内地通行证反面，第3张是手持港澳居民来往内地通行证人像面； 6：台湾通行证，上传的附件为3张，第1张是台湾居民来往大陆通行证正面（人像面），第2张是台湾居民来往大陆通行证反面，第3张是手持台湾居民来往大陆通行证人像面； 7：海外驾照，上传的附件为2张，第1张是中国以外驾照正面照片（人像面），第2张是手持中国以外驾照人像面照片； 9：港澳居民居住证，上传的附件为3张，第1张是港澳居民居住证人像面，第2张是，港澳居民居住证国徽面，第3张是手持港澳居民居住证人像面照片； 10：台湾居民居住证，上传的附件为3张，第1张是台湾居民居住证人像面，第2张是台湾居民居住证国徽面，第3张是手持台湾居民居住证人像面照片。 当identifyType&#x3D;0的时候，该字段需要填写，否则忽略该字段的取值。
+        :type verified_type: int
+        :param verified_file_url: 个人证件认证时证件附件的文件URL，该URL地址必须按照顺序填写。以护照举例，譬如护照个人资料页文件名称是abc023，手持护照个人资料页是def004，那么这个地方需要按照 abc023 def004 的顺序填写URL（文件名称区分大小写）。 证件附件目前仅仅支持jpg、jpeg、bmp、png、gif、pdf格式，单个文件最大不超过10M。这个URL是相对URL，不需要包含桶名和download目录，只要包含download目录下的子目录和对应文件名称即可。举例如下：如果上传的证件附件在桶中的位置是：https://bucketname.obs.Endpoint.myhuaweicloud.com/download/abc023.jpg，该字段填写abc023.jpg； 如果上传的证件附件在桶中的位置是：https://bucketname.obs.Endpoint.myhuaweicloud.com/download/test/abc023.jpg，该字段填写test/abc023.jpg。
+        :type verified_file_url: list[str]
+        :param name: 姓名。
+        :type name: str
+        :param verified_number: 证件号码。
+        :type verified_number: str
+        :param change_type: 变更类型： -1：首次实名认证
+        :type change_type: int
+        :param xaccount_type: 华为分给合作伙伴的平台标识。 该标识的具体值由华为分配。获取方法请参见如何获取xaccountType的取值。
+        :type xaccount_type: str
+        """
         
         
 
@@ -87,7 +106,7 @@ class ApplyIndividualRealnameAuthsReq:
         客户账号ID。您可以调用查询客户列表接口获取customer_id。
 
         :param customer_id: The customer_id of this ApplyIndividualRealnameAuthsReq.
-        :type: str
+        :type customer_id: str
         """
         self._customer_id = customer_id
 
@@ -109,7 +128,7 @@ class ApplyIndividualRealnameAuthsReq:
         认证方案： 0：个人证件认证
 
         :param identify_type: The identify_type of this ApplyIndividualRealnameAuthsReq.
-        :type: int
+        :type identify_type: int
         """
         self._identify_type = identify_type
 
@@ -131,7 +150,7 @@ class ApplyIndividualRealnameAuthsReq:
         证件类型： 3：护照，上传的附件为2张，第1张是护照个人资料页，第2张是手持护照个人资料页； 5：港澳通行证，上传的附件为3张，第1张是港澳居民来往内地通行证正面（人像面），第2张是港澳居民来往内地通行证反面，第3张是手持港澳居民来往内地通行证人像面； 6：台湾通行证，上传的附件为3张，第1张是台湾居民来往大陆通行证正面（人像面），第2张是台湾居民来往大陆通行证反面，第3张是手持台湾居民来往大陆通行证人像面； 7：海外驾照，上传的附件为2张，第1张是中国以外驾照正面照片（人像面），第2张是手持中国以外驾照人像面照片； 9：港澳居民居住证，上传的附件为3张，第1张是港澳居民居住证人像面，第2张是，港澳居民居住证国徽面，第3张是手持港澳居民居住证人像面照片； 10：台湾居民居住证，上传的附件为3张，第1张是台湾居民居住证人像面，第2张是台湾居民居住证国徽面，第3张是手持台湾居民居住证人像面照片。 当identifyType=0的时候，该字段需要填写，否则忽略该字段的取值。
 
         :param verified_type: The verified_type of this ApplyIndividualRealnameAuthsReq.
-        :type: int
+        :type verified_type: int
         """
         self._verified_type = verified_type
 
@@ -153,7 +172,7 @@ class ApplyIndividualRealnameAuthsReq:
         个人证件认证时证件附件的文件URL，该URL地址必须按照顺序填写。以护照举例，譬如护照个人资料页文件名称是abc023，手持护照个人资料页是def004，那么这个地方需要按照 abc023 def004 的顺序填写URL（文件名称区分大小写）。 证件附件目前仅仅支持jpg、jpeg、bmp、png、gif、pdf格式，单个文件最大不超过10M。这个URL是相对URL，不需要包含桶名和download目录，只要包含download目录下的子目录和对应文件名称即可。举例如下：如果上传的证件附件在桶中的位置是：https://bucketname.obs.Endpoint.myhuaweicloud.com/download/abc023.jpg，该字段填写abc023.jpg； 如果上传的证件附件在桶中的位置是：https://bucketname.obs.Endpoint.myhuaweicloud.com/download/test/abc023.jpg，该字段填写test/abc023.jpg。
 
         :param verified_file_url: The verified_file_url of this ApplyIndividualRealnameAuthsReq.
-        :type: list[str]
+        :type verified_file_url: list[str]
         """
         self._verified_file_url = verified_file_url
 
@@ -175,7 +194,7 @@ class ApplyIndividualRealnameAuthsReq:
         姓名。
 
         :param name: The name of this ApplyIndividualRealnameAuthsReq.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -197,7 +216,7 @@ class ApplyIndividualRealnameAuthsReq:
         证件号码。
 
         :param verified_number: The verified_number of this ApplyIndividualRealnameAuthsReq.
-        :type: str
+        :type verified_number: str
         """
         self._verified_number = verified_number
 
@@ -219,7 +238,7 @@ class ApplyIndividualRealnameAuthsReq:
         变更类型： -1：首次实名认证
 
         :param change_type: The change_type of this ApplyIndividualRealnameAuthsReq.
-        :type: int
+        :type change_type: int
         """
         self._change_type = change_type
 
@@ -241,7 +260,7 @@ class ApplyIndividualRealnameAuthsReq:
         华为分给合作伙伴的平台标识。 该标识的具体值由华为分配。获取方法请参见如何获取xaccountType的取值。
 
         :param xaccount_type: The xaccount_type of this ApplyIndividualRealnameAuthsReq.
-        :type: str
+        :type xaccount_type: str
         """
         self._xaccount_type = xaccount_type
 

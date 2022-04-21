@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ServerOsSchedulerHints:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ServerOsSchedulerHints:
     }
 
     def __init__(self, group=None):
-        """ServerOsSchedulerHints - a model defined in huaweicloud sdk"""
+        """ServerOsSchedulerHints
+
+        The model defined in huaweicloud sdk
+
+        :param group: 反亲和性组信息。  UUID格式。
+        :type group: list[str]
+        """
         
         
 
@@ -58,7 +63,7 @@ class ServerOsSchedulerHints:
         反亲和性组信息。  UUID格式。
 
         :param group: The group of this ServerOsSchedulerHints.
-        :type: list[str]
+        :type group: list[str]
         """
         self._group = group
 

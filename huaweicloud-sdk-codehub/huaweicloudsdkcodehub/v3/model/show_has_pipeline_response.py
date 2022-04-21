@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowHasPipelineResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowHasPipelineResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """ShowHasPipelineResponse - a model defined in huaweicloud sdk"""
+        """ShowHasPipelineResponse
+
+        The model defined in huaweicloud sdk
+
+        :param error: 
+        :type error: :class:`huaweicloudsdkcodehub.v3.Error`
+        :param result: 响应结果
+        :type result: bool
+        :param status: 响应状态
+        :type status: str
+        """
         
         super(ShowHasPipelineResponse, self).__init__()
 
@@ -56,7 +65,7 @@ class ShowHasPipelineResponse(SdkResponse):
 
 
         :return: The error of this ShowHasPipelineResponse.
-        :rtype: Error
+        :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
         """
         return self._error
 
@@ -66,7 +75,7 @@ class ShowHasPipelineResponse(SdkResponse):
 
 
         :param error: The error of this ShowHasPipelineResponse.
-        :type: Error
+        :type error: :class:`huaweicloudsdkcodehub.v3.Error`
         """
         self._error = error
 
@@ -88,7 +97,7 @@ class ShowHasPipelineResponse(SdkResponse):
         响应结果
 
         :param result: The result of this ShowHasPipelineResponse.
-        :type: bool
+        :type result: bool
         """
         self._result = result
 
@@ -110,7 +119,7 @@ class ShowHasPipelineResponse(SdkResponse):
         响应状态
 
         :param status: The status of this ShowHasPipelineResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 

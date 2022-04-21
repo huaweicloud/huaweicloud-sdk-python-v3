@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateMbTasksReportResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class CreateMbTasksReportResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateMbTasksReportResponse - a model defined in huaweicloud sdk"""
+        """CreateMbTasksReportResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(CreateMbTasksReportResponse, self).__init__()
         self.discriminator = None

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateNameRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateNameRequestBody:
     }
 
     def __init__(self, new_instance_name=None):
-        """UpdateNameRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateNameRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param new_instance_name: 新实例名称。用于表示实例的名称，允许和已有名称重复。取值范围：长度为4~64位，必须以字母开头（A~Z或a~z），区分大小写，可以包含字母、数字（0~9）、中划线（-）或者下划线（_），不能包含其他特殊字符。
+        :type new_instance_name: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class UpdateNameRequestBody:
         新实例名称。用于表示实例的名称，允许和已有名称重复。取值范围：长度为4~64位，必须以字母开头（A~Z或a~z），区分大小写，可以包含字母、数字（0~9）、中划线（-）或者下划线（_），不能包含其他特殊字符。
 
         :param new_instance_name: The new_instance_name of this UpdateNameRequestBody.
-        :type: str
+        :type new_instance_name: str
         """
         self._new_instance_name = new_instance_name
 

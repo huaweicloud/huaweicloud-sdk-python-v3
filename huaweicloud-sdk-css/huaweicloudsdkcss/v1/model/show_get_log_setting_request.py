@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowGetLogSettingRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowGetLogSettingRequest:
     }
 
     def __init__(self, cluster_id=None):
-        """ShowGetLogSettingRequest - a model defined in huaweicloud sdk"""
+        """ShowGetLogSettingRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 指定查询集群ID。
+        :type cluster_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowGetLogSettingRequest:
         指定查询集群ID。
 
         :param cluster_id: The cluster_id of this ShowGetLogSettingRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 

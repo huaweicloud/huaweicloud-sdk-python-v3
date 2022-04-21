@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteSubnetTagRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteSubnetTagRequest:
     }
 
     def __init__(self, subnet_id=None, key=None):
-        """DeleteSubnetTagRequest - a model defined in huaweicloud sdk"""
+        """DeleteSubnetTagRequest
+
+        The model defined in huaweicloud sdk
+
+        :param subnet_id: 子网ID
+        :type subnet_id: str
+        :param key: 功能说明：键值
+        :type key: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class DeleteSubnetTagRequest:
         子网ID
 
         :param subnet_id: The subnet_id of this DeleteSubnetTagRequest.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -83,7 +90,7 @@ class DeleteSubnetTagRequest:
         功能说明：键值
 
         :param key: The key of this DeleteSubnetTagRequest.
-        :type: str
+        :type key: str
         """
         self._key = key
 

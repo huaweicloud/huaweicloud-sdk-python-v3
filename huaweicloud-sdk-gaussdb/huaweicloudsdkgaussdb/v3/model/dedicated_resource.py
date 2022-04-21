@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DedicatedResource:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class DedicatedResource:
     }
 
     def __init__(self, id=None, resource_name=None, engine_name=None, architecture=None, status=None, capacity=None, availability_zone=None):
-        """DedicatedResource - a model defined in huaweicloud sdk"""
+        """DedicatedResource
+
+        The model defined in huaweicloud sdk
+
+        :param id: 专属资源池ID。
+        :type id: str
+        :param resource_name: 专属资源池名称
+        :type resource_name: str
+        :param engine_name: 数据库引擎名称
+        :type engine_name: str
+        :param architecture: CPU架构
+        :type architecture: str
+        :param status: 专属资源池状态
+        :type status: str
+        :param capacity: 
+        :type capacity: :class:`huaweicloudsdkgaussdb.v3.DedicatedResourceCapacity`
+        :param availability_zone: 专属资源池可用区信息。
+        :type availability_zone: list[str]
+        """
         
         
 
@@ -88,7 +105,7 @@ class DedicatedResource:
         专属资源池ID。
 
         :param id: The id of this DedicatedResource.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -110,7 +127,7 @@ class DedicatedResource:
         专属资源池名称
 
         :param resource_name: The resource_name of this DedicatedResource.
-        :type: str
+        :type resource_name: str
         """
         self._resource_name = resource_name
 
@@ -132,7 +149,7 @@ class DedicatedResource:
         数据库引擎名称
 
         :param engine_name: The engine_name of this DedicatedResource.
-        :type: str
+        :type engine_name: str
         """
         self._engine_name = engine_name
 
@@ -154,7 +171,7 @@ class DedicatedResource:
         CPU架构
 
         :param architecture: The architecture of this DedicatedResource.
-        :type: str
+        :type architecture: str
         """
         self._architecture = architecture
 
@@ -176,7 +193,7 @@ class DedicatedResource:
         专属资源池状态
 
         :param status: The status of this DedicatedResource.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -186,7 +203,7 @@ class DedicatedResource:
 
 
         :return: The capacity of this DedicatedResource.
-        :rtype: DedicatedResourceCapacity
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.DedicatedResourceCapacity`
         """
         return self._capacity
 
@@ -196,7 +213,7 @@ class DedicatedResource:
 
 
         :param capacity: The capacity of this DedicatedResource.
-        :type: DedicatedResourceCapacity
+        :type capacity: :class:`huaweicloudsdkgaussdb.v3.DedicatedResourceCapacity`
         """
         self._capacity = capacity
 
@@ -218,7 +235,7 @@ class DedicatedResource:
         专属资源池可用区信息。
 
         :param availability_zone: The availability_zone of this DedicatedResource.
-        :type: list[str]
+        :type availability_zone: list[str]
         """
         self._availability_zone = availability_zone
 

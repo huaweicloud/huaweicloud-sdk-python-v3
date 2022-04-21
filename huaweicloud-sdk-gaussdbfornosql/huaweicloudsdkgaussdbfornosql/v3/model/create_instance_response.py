@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateInstanceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -66,7 +65,49 @@ class CreateInstanceResponse(SdkResponse):
     }
 
     def __init__(self, id=None, datastore=None, name=None, created=None, status=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, mode=None, flavor=None, backup_strategy=None, enterprise_project_id=None, dedicated_resource_id=None, ssl_option=None, job_id=None, order_id=None, charge_info=None):
-        """CreateInstanceResponse - a model defined in huaweicloud sdk"""
+        """CreateInstanceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 实例ID。
+        :type id: str
+        :param datastore: 
+        :type datastore: :class:`huaweicloudsdkgaussdbfornosql.v3.DatastoreResult`
+        :param name: 实例名称，与请求参数相同。
+        :type name: str
+        :param created: 创建时间为本地时间，格式为“yyyy-mm-dd hh:mm:ss”。
+        :type created: str
+        :param status: 实例状态，取值为“creating”。
+        :type status: str
+        :param region: 区域ID，与请求参数相同。
+        :type region: str
+        :param availability_zone: 可用区ID，与请求参数相同。
+        :type availability_zone: str
+        :param vpc_id: 虚拟私有云ID，与请求参数相同。
+        :type vpc_id: str
+        :param subnet_id: 子网ID，与请求参数相同。
+        :type subnet_id: str
+        :param security_group_id: 实例所属的安全组ID，与请求参数相同。
+        :type security_group_id: str
+        :param mode: 实例类型，与请求参数相同。
+        :type mode: str
+        :param flavor: 实例规格详情，与请求参数相同。
+        :type flavor: list[:class:`huaweicloudsdkgaussdbfornosql.v3.CreateInstanceFlavorResult`]
+        :param backup_strategy: 
+        :type backup_strategy: :class:`huaweicloudsdkgaussdbfornosql.v3.BackupStrategyResult`
+        :param enterprise_project_id: 企业项目ID。取值为“0”，表示为default企业项目。
+        :type enterprise_project_id: str
+        :param dedicated_resource_id: 专属资源ID，只有创建在专属资源上的实例才会返回该字段。
+        :type dedicated_resource_id: str
+        :param ssl_option: SSL开关选项，与请求参数相同。
+        :type ssl_option: str
+        :param job_id: 创建实例的工作流ID, 仅创建按需实例时会返回该参数。
+        :type job_id: str
+        :param order_id: 创建实例的订单ID，仅创建包年包月时返回该参数。
+        :type order_id: str
+        :param charge_info: 
+        :type charge_info: :class:`huaweicloudsdkgaussdbfornosql.v3.ChargeInfoResult`
+        """
         
         super(CreateInstanceResponse, self).__init__()
 
@@ -148,7 +189,7 @@ class CreateInstanceResponse(SdkResponse):
         实例ID。
 
         :param id: The id of this CreateInstanceResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -158,7 +199,7 @@ class CreateInstanceResponse(SdkResponse):
 
 
         :return: The datastore of this CreateInstanceResponse.
-        :rtype: DatastoreResult
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.DatastoreResult`
         """
         return self._datastore
 
@@ -168,7 +209,7 @@ class CreateInstanceResponse(SdkResponse):
 
 
         :param datastore: The datastore of this CreateInstanceResponse.
-        :type: DatastoreResult
+        :type datastore: :class:`huaweicloudsdkgaussdbfornosql.v3.DatastoreResult`
         """
         self._datastore = datastore
 
@@ -190,7 +231,7 @@ class CreateInstanceResponse(SdkResponse):
         实例名称，与请求参数相同。
 
         :param name: The name of this CreateInstanceResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -212,7 +253,7 @@ class CreateInstanceResponse(SdkResponse):
         创建时间为本地时间，格式为“yyyy-mm-dd hh:mm:ss”。
 
         :param created: The created of this CreateInstanceResponse.
-        :type: str
+        :type created: str
         """
         self._created = created
 
@@ -234,7 +275,7 @@ class CreateInstanceResponse(SdkResponse):
         实例状态，取值为“creating”。
 
         :param status: The status of this CreateInstanceResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -256,7 +297,7 @@ class CreateInstanceResponse(SdkResponse):
         区域ID，与请求参数相同。
 
         :param region: The region of this CreateInstanceResponse.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -278,7 +319,7 @@ class CreateInstanceResponse(SdkResponse):
         可用区ID，与请求参数相同。
 
         :param availability_zone: The availability_zone of this CreateInstanceResponse.
-        :type: str
+        :type availability_zone: str
         """
         self._availability_zone = availability_zone
 
@@ -300,7 +341,7 @@ class CreateInstanceResponse(SdkResponse):
         虚拟私有云ID，与请求参数相同。
 
         :param vpc_id: The vpc_id of this CreateInstanceResponse.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -322,7 +363,7 @@ class CreateInstanceResponse(SdkResponse):
         子网ID，与请求参数相同。
 
         :param subnet_id: The subnet_id of this CreateInstanceResponse.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -344,7 +385,7 @@ class CreateInstanceResponse(SdkResponse):
         实例所属的安全组ID，与请求参数相同。
 
         :param security_group_id: The security_group_id of this CreateInstanceResponse.
-        :type: str
+        :type security_group_id: str
         """
         self._security_group_id = security_group_id
 
@@ -366,7 +407,7 @@ class CreateInstanceResponse(SdkResponse):
         实例类型，与请求参数相同。
 
         :param mode: The mode of this CreateInstanceResponse.
-        :type: str
+        :type mode: str
         """
         self._mode = mode
 
@@ -377,7 +418,7 @@ class CreateInstanceResponse(SdkResponse):
         实例规格详情，与请求参数相同。
 
         :return: The flavor of this CreateInstanceResponse.
-        :rtype: list[CreateInstanceFlavorResult]
+        :rtype: list[:class:`huaweicloudsdkgaussdbfornosql.v3.CreateInstanceFlavorResult`]
         """
         return self._flavor
 
@@ -388,7 +429,7 @@ class CreateInstanceResponse(SdkResponse):
         实例规格详情，与请求参数相同。
 
         :param flavor: The flavor of this CreateInstanceResponse.
-        :type: list[CreateInstanceFlavorResult]
+        :type flavor: list[:class:`huaweicloudsdkgaussdbfornosql.v3.CreateInstanceFlavorResult`]
         """
         self._flavor = flavor
 
@@ -398,7 +439,7 @@ class CreateInstanceResponse(SdkResponse):
 
 
         :return: The backup_strategy of this CreateInstanceResponse.
-        :rtype: BackupStrategyResult
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.BackupStrategyResult`
         """
         return self._backup_strategy
 
@@ -408,7 +449,7 @@ class CreateInstanceResponse(SdkResponse):
 
 
         :param backup_strategy: The backup_strategy of this CreateInstanceResponse.
-        :type: BackupStrategyResult
+        :type backup_strategy: :class:`huaweicloudsdkgaussdbfornosql.v3.BackupStrategyResult`
         """
         self._backup_strategy = backup_strategy
 
@@ -430,7 +471,7 @@ class CreateInstanceResponse(SdkResponse):
         企业项目ID。取值为“0”，表示为default企业项目。
 
         :param enterprise_project_id: The enterprise_project_id of this CreateInstanceResponse.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -452,7 +493,7 @@ class CreateInstanceResponse(SdkResponse):
         专属资源ID，只有创建在专属资源上的实例才会返回该字段。
 
         :param dedicated_resource_id: The dedicated_resource_id of this CreateInstanceResponse.
-        :type: str
+        :type dedicated_resource_id: str
         """
         self._dedicated_resource_id = dedicated_resource_id
 
@@ -474,7 +515,7 @@ class CreateInstanceResponse(SdkResponse):
         SSL开关选项，与请求参数相同。
 
         :param ssl_option: The ssl_option of this CreateInstanceResponse.
-        :type: str
+        :type ssl_option: str
         """
         self._ssl_option = ssl_option
 
@@ -496,7 +537,7 @@ class CreateInstanceResponse(SdkResponse):
         创建实例的工作流ID, 仅创建按需实例时会返回该参数。
 
         :param job_id: The job_id of this CreateInstanceResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -518,7 +559,7 @@ class CreateInstanceResponse(SdkResponse):
         创建实例的订单ID，仅创建包年包月时返回该参数。
 
         :param order_id: The order_id of this CreateInstanceResponse.
-        :type: str
+        :type order_id: str
         """
         self._order_id = order_id
 
@@ -528,7 +569,7 @@ class CreateInstanceResponse(SdkResponse):
 
 
         :return: The charge_info of this CreateInstanceResponse.
-        :rtype: ChargeInfoResult
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ChargeInfoResult`
         """
         return self._charge_info
 
@@ -538,7 +579,7 @@ class CreateInstanceResponse(SdkResponse):
 
 
         :param charge_info: The charge_info of this CreateInstanceResponse.
-        :type: ChargeInfoResult
+        :type charge_info: :class:`huaweicloudsdkgaussdbfornosql.v3.ChargeInfoResult`
         """
         self._charge_info = charge_info
 

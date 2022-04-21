@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class L7Policy:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -60,7 +59,43 @@ class L7Policy:
     }
 
     def __init__(self, action=None, admin_state_up=None, description=None, id=None, listener_id=None, name=None, position=None, priority=None, project_id=None, provisioning_status=None, redirect_pool_id=None, redirect_listener_id=None, redirect_url=None, rules=None, redirect_url_config=None, fixed_response_config=None):
-        """L7Policy - a model defined in huaweicloud sdk"""
+        """L7Policy
+
+        The model defined in huaweicloud sdk
+
+        :param action: 转发策略的转发动作。取值：  - REDIRECT_TO_POOL：转发到后端云服务器组；  - REDIRECT_TO_LISTENER：重定向到监听器；  - REDIRECT_TO_URL：重定向到URL；  -FIXED_RESPONSE：返回固定响应体。  使用说明：  - REDIRECT_TO_LISTENER的优先级最高，配置了以后，该监听器下的其他policy会失效。  - 当action为REDIRECT_TO_POOL时，只支持创建在PROTOCOL为HTTP、HTTPS、TERMINATED_HTTPS的listener上。  - 当action为REDIRECT_TO_LISTENER时，只支持创建在PROTOCOL为HTTP的listener上。
+        :type action: str
+        :param admin_state_up: 转发策略的管理状态，默认为true。  不支持该字段，请勿使用。
+        :type admin_state_up: bool
+        :param description: 转发策略描述信息。
+        :type description: str
+        :param id: 转发策略ID。
+        :type id: str
+        :param listener_id: 转发策略所属的监听器ID。
+        :type listener_id: str
+        :param name: 转发策略名称
+        :type name: str
+        :param position: 转发策略的优先级，不支持更新。  不支持该字段，请勿使用。
+        :type position: int
+        :param priority: 转发策略的优先级。当监听器的高级转发策略功能（enhance_l7policy_enable）开启后才会生效，未开启传入该字段会报错。[共享型负载均衡器下的转发策略不支持该字段。](tag:hcso_dt)  数字越小表示优先级越高，同一监听器下不允许重复。  当action为REDIRECT_TO_LISTENER时，仅支持指定为0，优先级最高。 当关联的listener没有开启enhance_l7policy_enable，按原有policy的排序逻辑，自动排序。各域名之间优先级独立，相同域名下，按path的compare_type排序，精确&gt;前缀&gt;正则，匹配类型相同时，path的长度越长优先级越高。若policy下只有域名rule，没有路径rule，默认path为前缀匹配/。 当关联的listener开启了enhance_l7policy_enable，且不传该字段，则新创建的转发策略的优先级的值为：同一监听器下已有转发策略的优先级的最大值+1。因此，若当前已有转发策略的优先级的最大值是10000，新创建会因超出取值范围10000而失败。此时可通过传入指定priority，或调整原有policy的优先级来避免错误。若监听器下没有转发策略，则新建的转发策略的优先级为1。  [不支持该字段，请勿使用。](tag:dt,dt_test)
+        :type priority: int
+        :param project_id: 转发策略所在的项目ID。
+        :type project_id: str
+        :param provisioning_status: 转发策略的配置状态。 取值范围：  - ACTIVE：默认值，表示正常。 - ERROR：表示当前策略与同一监听器下的其他策略存在相同的规则配置。
+        :type provisioning_status: str
+        :param redirect_pool_id: 转发到pool的ID。当action为REDIRECT_TO_POOL时生效。  使用说明： - 指定的pool不能是listener的default_pool。不能是其他listener的l7policy使用的pool。 - 当action为REDIRECT_TO_POOL时为必选字段。当action为REDIRECT_TO_LISTENER时，不可指定。
+        :type redirect_pool_id: str
+        :param redirect_listener_id: 转发到的listener的ID，当action为REDIRECT_TO_LISTENER时必选。  使用说明： - 只支持protocol为HTTPS/TERMINATED_HTTPS的listener。 - 不能指定为其他loadbalancer下的listener。 - 当action为REDIRECT_TO_POOL时，创建或更新时不能传入该参数。
+        :type redirect_listener_id: str
+        :param redirect_url: 转发到的url。必须满足格式: protocol://host:port/path?query。  不支持该字段，请勿使用。
+        :type redirect_url: str
+        :param rules: 转发策略关联的转发规则列表
+        :type rules: list[:class:`huaweicloudsdkelb.v3.RuleRef`]
+        :param redirect_url_config: 
+        :type redirect_url_config: :class:`huaweicloudsdkelb.v3.RedirectUrlConfig`
+        :param fixed_response_config: 
+        :type fixed_response_config: :class:`huaweicloudsdkelb.v3.FixtedResponseConfig`
+        """
         
         
 
@@ -118,7 +153,7 @@ class L7Policy:
         转发策略的转发动作。取值：  - REDIRECT_TO_POOL：转发到后端云服务器组；  - REDIRECT_TO_LISTENER：重定向到监听器；  - REDIRECT_TO_URL：重定向到URL；  -FIXED_RESPONSE：返回固定响应体。  使用说明：  - REDIRECT_TO_LISTENER的优先级最高，配置了以后，该监听器下的其他policy会失效。  - 当action为REDIRECT_TO_POOL时，只支持创建在PROTOCOL为HTTP、HTTPS、TERMINATED_HTTPS的listener上。  - 当action为REDIRECT_TO_LISTENER时，只支持创建在PROTOCOL为HTTP的listener上。
 
         :param action: The action of this L7Policy.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -140,7 +175,7 @@ class L7Policy:
         转发策略的管理状态，默认为true。  不支持该字段，请勿使用。
 
         :param admin_state_up: The admin_state_up of this L7Policy.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 
@@ -162,7 +197,7 @@ class L7Policy:
         转发策略描述信息。
 
         :param description: The description of this L7Policy.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -184,7 +219,7 @@ class L7Policy:
         转发策略ID。
 
         :param id: The id of this L7Policy.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -206,7 +241,7 @@ class L7Policy:
         转发策略所属的监听器ID。
 
         :param listener_id: The listener_id of this L7Policy.
-        :type: str
+        :type listener_id: str
         """
         self._listener_id = listener_id
 
@@ -228,7 +263,7 @@ class L7Policy:
         转发策略名称
 
         :param name: The name of this L7Policy.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -250,7 +285,7 @@ class L7Policy:
         转发策略的优先级，不支持更新。  不支持该字段，请勿使用。
 
         :param position: The position of this L7Policy.
-        :type: int
+        :type position: int
         """
         self._position = position
 
@@ -272,7 +307,7 @@ class L7Policy:
         转发策略的优先级。当监听器的高级转发策略功能（enhance_l7policy_enable）开启后才会生效，未开启传入该字段会报错。[共享型负载均衡器下的转发策略不支持该字段。](tag:hcso_dt)  数字越小表示优先级越高，同一监听器下不允许重复。  当action为REDIRECT_TO_LISTENER时，仅支持指定为0，优先级最高。 当关联的listener没有开启enhance_l7policy_enable，按原有policy的排序逻辑，自动排序。各域名之间优先级独立，相同域名下，按path的compare_type排序，精确>前缀>正则，匹配类型相同时，path的长度越长优先级越高。若policy下只有域名rule，没有路径rule，默认path为前缀匹配/。 当关联的listener开启了enhance_l7policy_enable，且不传该字段，则新创建的转发策略的优先级的值为：同一监听器下已有转发策略的优先级的最大值+1。因此，若当前已有转发策略的优先级的最大值是10000，新创建会因超出取值范围10000而失败。此时可通过传入指定priority，或调整原有policy的优先级来避免错误。若监听器下没有转发策略，则新建的转发策略的优先级为1。  [不支持该字段，请勿使用。](tag:dt,dt_test)
 
         :param priority: The priority of this L7Policy.
-        :type: int
+        :type priority: int
         """
         self._priority = priority
 
@@ -294,7 +329,7 @@ class L7Policy:
         转发策略所在的项目ID。
 
         :param project_id: The project_id of this L7Policy.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -316,7 +351,7 @@ class L7Policy:
         转发策略的配置状态。 取值范围：  - ACTIVE：默认值，表示正常。 - ERROR：表示当前策略与同一监听器下的其他策略存在相同的规则配置。
 
         :param provisioning_status: The provisioning_status of this L7Policy.
-        :type: str
+        :type provisioning_status: str
         """
         self._provisioning_status = provisioning_status
 
@@ -338,7 +373,7 @@ class L7Policy:
         转发到pool的ID。当action为REDIRECT_TO_POOL时生效。  使用说明： - 指定的pool不能是listener的default_pool。不能是其他listener的l7policy使用的pool。 - 当action为REDIRECT_TO_POOL时为必选字段。当action为REDIRECT_TO_LISTENER时，不可指定。
 
         :param redirect_pool_id: The redirect_pool_id of this L7Policy.
-        :type: str
+        :type redirect_pool_id: str
         """
         self._redirect_pool_id = redirect_pool_id
 
@@ -360,7 +395,7 @@ class L7Policy:
         转发到的listener的ID，当action为REDIRECT_TO_LISTENER时必选。  使用说明： - 只支持protocol为HTTPS/TERMINATED_HTTPS的listener。 - 不能指定为其他loadbalancer下的listener。 - 当action为REDIRECT_TO_POOL时，创建或更新时不能传入该参数。
 
         :param redirect_listener_id: The redirect_listener_id of this L7Policy.
-        :type: str
+        :type redirect_listener_id: str
         """
         self._redirect_listener_id = redirect_listener_id
 
@@ -382,7 +417,7 @@ class L7Policy:
         转发到的url。必须满足格式: protocol://host:port/path?query。  不支持该字段，请勿使用。
 
         :param redirect_url: The redirect_url of this L7Policy.
-        :type: str
+        :type redirect_url: str
         """
         self._redirect_url = redirect_url
 
@@ -393,7 +428,7 @@ class L7Policy:
         转发策略关联的转发规则列表
 
         :return: The rules of this L7Policy.
-        :rtype: list[RuleRef]
+        :rtype: list[:class:`huaweicloudsdkelb.v3.RuleRef`]
         """
         return self._rules
 
@@ -404,7 +439,7 @@ class L7Policy:
         转发策略关联的转发规则列表
 
         :param rules: The rules of this L7Policy.
-        :type: list[RuleRef]
+        :type rules: list[:class:`huaweicloudsdkelb.v3.RuleRef`]
         """
         self._rules = rules
 
@@ -414,7 +449,7 @@ class L7Policy:
 
 
         :return: The redirect_url_config of this L7Policy.
-        :rtype: RedirectUrlConfig
+        :rtype: :class:`huaweicloudsdkelb.v3.RedirectUrlConfig`
         """
         return self._redirect_url_config
 
@@ -424,7 +459,7 @@ class L7Policy:
 
 
         :param redirect_url_config: The redirect_url_config of this L7Policy.
-        :type: RedirectUrlConfig
+        :type redirect_url_config: :class:`huaweicloudsdkelb.v3.RedirectUrlConfig`
         """
         self._redirect_url_config = redirect_url_config
 
@@ -434,7 +469,7 @@ class L7Policy:
 
 
         :return: The fixed_response_config of this L7Policy.
-        :rtype: FixtedResponseConfig
+        :rtype: :class:`huaweicloudsdkelb.v3.FixtedResponseConfig`
         """
         return self._fixed_response_config
 
@@ -444,7 +479,7 @@ class L7Policy:
 
 
         :param fixed_response_config: The fixed_response_config of this L7Policy.
-        :type: FixtedResponseConfig
+        :type fixed_response_config: :class:`huaweicloudsdkelb.v3.FixtedResponseConfig`
         """
         self._fixed_response_config = fixed_response_config
 

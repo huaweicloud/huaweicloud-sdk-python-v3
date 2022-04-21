@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class HandleNotificationRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class HandleNotificationRequestBody:
     }
 
     def __init__(self, channel_name=None, status=None, invitor_info=None, invitee_info=None, invited_orgs=None):
-        """HandleNotificationRequestBody - a model defined in huaweicloud sdk"""
+        """HandleNotificationRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param channel_name: 邀请目标通道
+        :type channel_name: str
+        :param status: 处理邀请
+        :type status: str
+        :param invitor_info: 
+        :type invitor_info: :class:`huaweicloudsdkbcs.v2.HandleNotificationInvitor`
+        :param invitee_info: 
+        :type invitee_info: :class:`huaweicloudsdkbcs.v2.HandleNotificationInvitee`
+        :param invited_orgs: 加入联盟的组织，同意加入时必填
+        :type invited_orgs: list[:class:`huaweicloudsdkbcs.v2.HandleNotificationOrg`]
+        """
         
         
 
@@ -75,7 +88,7 @@ class HandleNotificationRequestBody:
         邀请目标通道
 
         :param channel_name: The channel_name of this HandleNotificationRequestBody.
-        :type: str
+        :type channel_name: str
         """
         self._channel_name = channel_name
 
@@ -97,7 +110,7 @@ class HandleNotificationRequestBody:
         处理邀请
 
         :param status: The status of this HandleNotificationRequestBody.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -107,7 +120,7 @@ class HandleNotificationRequestBody:
 
 
         :return: The invitor_info of this HandleNotificationRequestBody.
-        :rtype: HandleNotificationInvitor
+        :rtype: :class:`huaweicloudsdkbcs.v2.HandleNotificationInvitor`
         """
         return self._invitor_info
 
@@ -117,7 +130,7 @@ class HandleNotificationRequestBody:
 
 
         :param invitor_info: The invitor_info of this HandleNotificationRequestBody.
-        :type: HandleNotificationInvitor
+        :type invitor_info: :class:`huaweicloudsdkbcs.v2.HandleNotificationInvitor`
         """
         self._invitor_info = invitor_info
 
@@ -127,7 +140,7 @@ class HandleNotificationRequestBody:
 
 
         :return: The invitee_info of this HandleNotificationRequestBody.
-        :rtype: HandleNotificationInvitee
+        :rtype: :class:`huaweicloudsdkbcs.v2.HandleNotificationInvitee`
         """
         return self._invitee_info
 
@@ -137,7 +150,7 @@ class HandleNotificationRequestBody:
 
 
         :param invitee_info: The invitee_info of this HandleNotificationRequestBody.
-        :type: HandleNotificationInvitee
+        :type invitee_info: :class:`huaweicloudsdkbcs.v2.HandleNotificationInvitee`
         """
         self._invitee_info = invitee_info
 
@@ -148,7 +161,7 @@ class HandleNotificationRequestBody:
         加入联盟的组织，同意加入时必填
 
         :return: The invited_orgs of this HandleNotificationRequestBody.
-        :rtype: list[HandleNotificationOrg]
+        :rtype: list[:class:`huaweicloudsdkbcs.v2.HandleNotificationOrg`]
         """
         return self._invited_orgs
 
@@ -159,7 +172,7 @@ class HandleNotificationRequestBody:
         加入联盟的组织，同意加入时必填
 
         :param invited_orgs: The invited_orgs of this HandleNotificationRequestBody.
-        :type: list[HandleNotificationOrg]
+        :type invited_orgs: list[:class:`huaweicloudsdkbcs.v2.HandleNotificationOrg`]
         """
         self._invited_orgs = invited_orgs
 

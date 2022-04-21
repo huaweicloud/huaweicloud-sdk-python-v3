@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CheckHostsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class CheckHostsRequest:
     }
 
     def __init__(self, authorization_detail_id=None, x_site=None, x_language=None, x_time_zone=None, body=None):
-        """CheckHostsRequest - a model defined in huaweicloud sdk"""
+        """CheckHostsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param authorization_detail_id: 授权详情id
+        :type authorization_detail_id: int
+        :param x_site: 对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
+        :type x_site: int
+        :param x_language: 语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
+        :type x_language: str
+        :param x_time_zone: 环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
+        :type x_time_zone: str
+        :param body: Body of the CheckHostsRequest
+        :type body: :class:`huaweicloudsdkosm.v2.VerifyHostV2Req`
+        """
         
         
 
@@ -77,7 +90,7 @@ class CheckHostsRequest:
         授权详情id
 
         :param authorization_detail_id: The authorization_detail_id of this CheckHostsRequest.
-        :type: int
+        :type authorization_detail_id: int
         """
         self._authorization_detail_id = authorization_detail_id
 
@@ -99,7 +112,7 @@ class CheckHostsRequest:
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
         :param x_site: The x_site of this CheckHostsRequest.
-        :type: int
+        :type x_site: int
         """
         self._x_site = x_site
 
@@ -121,7 +134,7 @@ class CheckHostsRequest:
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
         :param x_language: The x_language of this CheckHostsRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -143,7 +156,7 @@ class CheckHostsRequest:
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 
         :param x_time_zone: The x_time_zone of this CheckHostsRequest.
-        :type: str
+        :type x_time_zone: str
         """
         self._x_time_zone = x_time_zone
 
@@ -153,7 +166,7 @@ class CheckHostsRequest:
 
 
         :return: The body of this CheckHostsRequest.
-        :rtype: VerifyHostV2Req
+        :rtype: :class:`huaweicloudsdkosm.v2.VerifyHostV2Req`
         """
         return self._body
 
@@ -163,7 +176,7 @@ class CheckHostsRequest:
 
 
         :param body: The body of this CheckHostsRequest.
-        :type: VerifyHostV2Req
+        :type body: :class:`huaweicloudsdkosm.v2.VerifyHostV2Req`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateMultiTasksRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateMultiTasksRequest:
     }
 
     def __init__(self, instance_id=None, task_id=None, body=None):
-        """UpdateMultiTasksRequest - a model defined in huaweicloud sdk"""
+        """UpdateMultiTasksRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param task_id: 任务ID
+        :type task_id: str
+        :param body: Body of the UpdateMultiTasksRequest
+        :type body: :class:`huaweicloudsdkroma.v2.MultiTaskUpdateBody`
+        """
         
         
 
@@ -66,7 +75,7 @@ class UpdateMultiTasksRequest:
         实例ID
 
         :param instance_id: The instance_id of this UpdateMultiTasksRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -88,7 +97,7 @@ class UpdateMultiTasksRequest:
         任务ID
 
         :param task_id: The task_id of this UpdateMultiTasksRequest.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -98,7 +107,7 @@ class UpdateMultiTasksRequest:
 
 
         :return: The body of this UpdateMultiTasksRequest.
-        :rtype: MultiTaskUpdateBody
+        :rtype: :class:`huaweicloudsdkroma.v2.MultiTaskUpdateBody`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class UpdateMultiTasksRequest:
 
 
         :param body: The body of this UpdateMultiTasksRequest.
-        :type: MultiTaskUpdateBody
+        :type body: :class:`huaweicloudsdkroma.v2.MultiTaskUpdateBody`
         """
         self._body = body
 

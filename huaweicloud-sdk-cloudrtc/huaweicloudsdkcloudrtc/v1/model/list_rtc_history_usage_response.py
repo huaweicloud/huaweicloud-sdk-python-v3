@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRtcHistoryUsageResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListRtcHistoryUsageResponse(SdkResponse):
     }
 
     def __init__(self, usage=None, x_request_id=None):
-        """ListRtcHistoryUsageResponse - a model defined in huaweicloud sdk"""
+        """ListRtcHistoryUsageResponse
+
+        The model defined in huaweicloud sdk
+
+        :param usage: 时间戳及相应时间的指标数值列表
+        :type usage: list[:class:`huaweicloudsdkcloudrtc.v1.RtcHistoryUsage`]
+        :param x_request_id: 
+        :type x_request_id: str
+        """
         
         super(ListRtcHistoryUsageResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListRtcHistoryUsageResponse(SdkResponse):
         时间戳及相应时间的指标数值列表
 
         :return: The usage of this ListRtcHistoryUsageResponse.
-        :rtype: list[RtcHistoryUsage]
+        :rtype: list[:class:`huaweicloudsdkcloudrtc.v1.RtcHistoryUsage`]
         """
         return self._usage
 
@@ -63,7 +70,7 @@ class ListRtcHistoryUsageResponse(SdkResponse):
         时间戳及相应时间的指标数值列表
 
         :param usage: The usage of this ListRtcHistoryUsageResponse.
-        :type: list[RtcHistoryUsage]
+        :type usage: list[:class:`huaweicloudsdkcloudrtc.v1.RtcHistoryUsage`]
         """
         self._usage = usage
 
@@ -83,7 +90,7 @@ class ListRtcHistoryUsageResponse(SdkResponse):
 
 
         :param x_request_id: The x_request_id of this ListRtcHistoryUsageResponse.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 

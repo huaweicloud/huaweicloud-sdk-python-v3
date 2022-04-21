@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListResourceGroupResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListResourceGroupResponse(SdkResponse):
     }
 
     def __init__(self, resource_groups=None, meta_data=None):
-        """ListResourceGroupResponse - a model defined in huaweicloud sdk"""
+        """ListResourceGroupResponse
+
+        The model defined in huaweicloud sdk
+
+        :param resource_groups: 一个或者多个资源分组信息。
+        :type resource_groups: list[:class:`huaweicloudsdkces.v1.ResourceGroupInfo`]
+        :param meta_data: 
+        :type meta_data: :class:`huaweicloudsdkces.v1.TotalMetaData`
+        """
         
         super(ListResourceGroupResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListResourceGroupResponse(SdkResponse):
         一个或者多个资源分组信息。
 
         :return: The resource_groups of this ListResourceGroupResponse.
-        :rtype: list[ResourceGroupInfo]
+        :rtype: list[:class:`huaweicloudsdkces.v1.ResourceGroupInfo`]
         """
         return self._resource_groups
 
@@ -63,7 +70,7 @@ class ListResourceGroupResponse(SdkResponse):
         一个或者多个资源分组信息。
 
         :param resource_groups: The resource_groups of this ListResourceGroupResponse.
-        :type: list[ResourceGroupInfo]
+        :type resource_groups: list[:class:`huaweicloudsdkces.v1.ResourceGroupInfo`]
         """
         self._resource_groups = resource_groups
 
@@ -73,7 +80,7 @@ class ListResourceGroupResponse(SdkResponse):
 
 
         :return: The meta_data of this ListResourceGroupResponse.
-        :rtype: TotalMetaData
+        :rtype: :class:`huaweicloudsdkces.v1.TotalMetaData`
         """
         return self._meta_data
 
@@ -83,7 +90,7 @@ class ListResourceGroupResponse(SdkResponse):
 
 
         :param meta_data: The meta_data of this ListResourceGroupResponse.
-        :type: TotalMetaData
+        :type meta_data: :class:`huaweicloudsdkces.v1.TotalMetaData`
         """
         self._meta_data = meta_data
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListGroupsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListGroupsRequest:
     }
 
     def __init__(self, unit=None, type=None, group_id=None, name=None, offset=None, limit=None):
-        """ListGroupsRequest - a model defined in huaweicloud sdk"""
+        """ListGroupsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param unit: 存储用量单位
+        :type unit: str
+        :param type: 存储类型，有资产存储(取值:AssetStorage)、设备存储(取值:DeviceStorage)两种类型
+        :type type: str
+        :param group_id: 存储组 ID
+        :type group_id: str
+        :param name: 存储组名称
+        :type name: str
+        :param offset: 页码
+        :type offset: int
+        :param limit: 返回条数限制
+        :type limit: int
+        """
         
         
 
@@ -83,7 +98,7 @@ class ListGroupsRequest:
         存储用量单位
 
         :param unit: The unit of this ListGroupsRequest.
-        :type: str
+        :type unit: str
         """
         self._unit = unit
 
@@ -105,7 +120,7 @@ class ListGroupsRequest:
         存储类型，有资产存储(取值:AssetStorage)、设备存储(取值:DeviceStorage)两种类型
 
         :param type: The type of this ListGroupsRequest.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -127,7 +142,7 @@ class ListGroupsRequest:
         存储组 ID
 
         :param group_id: The group_id of this ListGroupsRequest.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -149,7 +164,7 @@ class ListGroupsRequest:
         存储组名称
 
         :param name: The name of this ListGroupsRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -171,7 +186,7 @@ class ListGroupsRequest:
         页码
 
         :param offset: The offset of this ListGroupsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -193,7 +208,7 @@ class ListGroupsRequest:
         返回条数限制
 
         :param limit: The limit of this ListGroupsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

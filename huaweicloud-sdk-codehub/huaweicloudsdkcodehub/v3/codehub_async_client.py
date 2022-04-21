@@ -52,21 +52,17 @@ class CodeHubAsyncClient(Client):
         """创建提交
 
         能够一次提交位于不同目录的多个文件，目录不存在时，能自动创建目录。支持强制覆盖选项，当选择强制覆盖标志为true时，忽略冲突，强制提交。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateCommitRequest request
-        :return: CreateCommitResponse
+        :param request: Request instance for CreateCommit
+        :type request: :class:`huaweicloudsdkcodehub.v3.CreateCommitRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.CreateCommitResponse`
         """
         return self.create_commit_with_http_info(request)
 
     def create_commit_with_http_info(self, request):
-        """创建提交
-
-        能够一次提交位于不同目录的多个文件，目录不存在时，能自动创建目录。支持强制覆盖选项，当选择强制覆盖标志为true时，忽略冲突，强制提交。
-
-        :param CreateCommitRequest request
-        :return: CreateCommitResponse
-        """
-
         all_params = ['repo_id', 'create_commit_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -112,26 +108,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_commits_async(self, request):
         """查询某个仓库的提交信息
 
         根据仓库短ID获取提交信息，支持根据文件路径，查询这个路径下所有的commits列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListCommitsRequest request
-        :return: ListCommitsResponse
+        :param request: Request instance for ListCommits
+        :type request: :class:`huaweicloudsdkcodehub.v3.ListCommitsRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.ListCommitsResponse`
         """
         return self.list_commits_with_http_info(request)
 
     def list_commits_with_http_info(self, request):
-        """查询某个仓库的提交信息
-
-        根据仓库短ID获取提交信息，支持根据文件路径，查询这个路径下所有的commits列表。
-
-        :param ListCommitsRequest request
-        :return: ListCommitsResponse
-        """
-
         all_params = ['repo_id', 'ref_name', 'since', 'until', 'path', 'all', 'with_stats']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -187,26 +178,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_diff_commit_async(self, request):
         """查询某个仓库的提交差异信息
 
         根据commit id查询提交差异信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowDiffCommitRequest request
-        :return: ShowDiffCommitResponse
+        :param request: Request instance for ShowDiffCommit
+        :type request: :class:`huaweicloudsdkcodehub.v3.ShowDiffCommitRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.ShowDiffCommitResponse`
         """
         return self.show_diff_commit_with_http_info(request)
 
     def show_diff_commit_with_http_info(self, request):
-        """查询某个仓库的提交差异信息
-
-        根据commit id查询提交差异信息。
-
-        :param ShowDiffCommitRequest request
-        :return: ShowDiffCommitResponse
-        """
-
         all_params = ['repo_id', 'sha']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -252,26 +238,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_single_commit_async(self, request):
         """查询某个仓库的特定提交信息
 
         获取由commit id或分支或标记的名称标识的特定提交。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowSingleCommitRequest request
-        :return: ShowSingleCommitResponse
+        :param request: Request instance for ShowSingleCommit
+        :type request: :class:`huaweicloudsdkcodehub.v3.ShowSingleCommitRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.ShowSingleCommitResponse`
         """
         return self.show_single_commit_with_http_info(request)
 
     def show_single_commit_with_http_info(self, request):
-        """查询某个仓库的特定提交信息
-
-        获取由commit id或分支或标记的名称标识的特定提交。
-
-        :param ShowSingleCommitRequest request
-        :return: ShowSingleCommitResponse
-        """
-
         all_params = ['repo_id', 'sha', 'stats']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -319,26 +300,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_file_async(self, request):
         """查询某个仓库的文件信息
 
         获取仓库中文件的信息，如名称、大小、内容。请注意，文件内容是Base64编码的。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowFileRequest request
-        :return: ShowFileResponse
+        :param request: Request instance for ShowFile
+        :type request: :class:`huaweicloudsdkcodehub.v3.ShowFileRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.ShowFileResponse`
         """
         return self.show_file_with_http_info(request)
 
     def show_file_with_http_info(self, request):
-        """查询某个仓库的文件信息
-
-        获取仓库中文件的信息，如名称、大小、内容。请注意，文件内容是Base64编码的。
-
-        :param ShowFileRequest request
-        :return: ShowFileResponse
-        """
-
         all_params = ['repo_id', 'file_path', 'ref']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -386,26 +362,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def get_all_repository_by_project_id_async(self, request):
         """获取项目下所有仓库信息
 
         获取仓库列表 模糊查询支持范围,如果未传入project_id，则支持按仓库名或项目名模糊查询，否则，只按仓库名模糊匹配。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param GetAllRepositoryByProjectIdRequest request
-        :return: GetAllRepositoryByProjectIdResponse
+        :param request: Request instance for GetAllRepositoryByProjectId
+        :type request: :class:`huaweicloudsdkcodehub.v3.GetAllRepositoryByProjectIdRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.GetAllRepositoryByProjectIdResponse`
         """
         return self.get_all_repository_by_project_id_with_http_info(request)
 
     def get_all_repository_by_project_id_with_http_info(self, request):
-        """获取项目下所有仓库信息
-
-        获取仓库列表 模糊查询支持范围,如果未传入project_id，则支持按仓库名或项目名模糊查询，否则，只按仓库名模糊匹配。
-
-        :param GetAllRepositoryByProjectIdRequest request
-        :return: GetAllRepositoryByProjectIdResponse
-        """
-
         all_params = ['project_uuid', 'page_index', 'page_size', 'search']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -455,26 +426,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def get_product_templates_async(self, request):
         """获取一个项目下可以设置为公开状态的仓库列表
 
         获取一个项目下可以设置为公开状态的仓库列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param GetProductTemplatesRequest request
-        :return: GetProductTemplatesResponse
+        :param request: Request instance for GetProductTemplates
+        :type request: :class:`huaweicloudsdkcodehub.v3.GetProductTemplatesRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.GetProductTemplatesResponse`
         """
         return self.get_product_templates_with_http_info(request)
 
     def get_product_templates_with_http_info(self, request):
-        """获取一个项目下可以设置为公开状态的仓库列表
-
-        获取一个项目下可以设置为公开状态的仓库列表
-
-        :param GetProductTemplatesRequest request
-        :return: GetProductTemplatesResponse
-        """
-
         all_params = ['project_uuid', 'page_no', 'page_size']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -522,26 +488,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_product_two_templates_async(self, request):
         """获取一个项目下可以设置为公开状态的仓库列表
 
         获取一个项目下可以设置为公开状态的仓库列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListProductTwoTemplatesRequest request
-        :return: ListProductTwoTemplatesResponse
+        :param request: Request instance for ListProductTwoTemplates
+        :type request: :class:`huaweicloudsdkcodehub.v3.ListProductTwoTemplatesRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.ListProductTwoTemplatesResponse`
         """
         return self.list_product_two_templates_with_http_info(request)
 
     def list_product_two_templates_with_http_info(self, request):
-        """获取一个项目下可以设置为公开状态的仓库列表
-
-        获取一个项目下可以设置为公开状态的仓库列表
-
-        :param ListProductTwoTemplatesRequest request
-        :return: ListProductTwoTemplatesResponse
-        """
-
         all_params = ['project_uuid', 'page_no', 'page_size']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -589,26 +550,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_repository_name_exist_async(self, request):
         """校验指定项目下的仓库名
 
         一般创建仓库时调用。通过传入项目uuid,仓库名，调用CoudeHubAdapter接口，查询数据库来判断仓库是否重名。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowRepositoryNameExistRequest request
-        :return: ShowRepositoryNameExistResponse
+        :param request: Request instance for ShowRepositoryNameExist
+        :type request: :class:`huaweicloudsdkcodehub.v3.ShowRepositoryNameExistRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.ShowRepositoryNameExistResponse`
         """
         return self.show_repository_name_exist_with_http_info(request)
 
     def show_repository_name_exist_with_http_info(self, request):
-        """校验指定项目下的仓库名
-
-        一般创建仓库时调用。通过传入项目uuid,仓库名，调用CoudeHubAdapter接口，查询数据库来判断仓库是否重名。
-
-        :param ShowRepositoryNameExistRequest request
-        :return: ShowRepositoryNameExistResponse
-        """
-
         all_params = ['project_uuid', 'repository_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -654,26 +610,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def add_repo_members_async(self, request):
         """添加仓库成员
 
         调用方codehubportal,添加仓库成员。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param AddRepoMembersRequest request
-        :return: AddRepoMembersResponse
+        :param request: Request instance for AddRepoMembers
+        :type request: :class:`huaweicloudsdkcodehub.v3.AddRepoMembersRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.AddRepoMembersResponse`
         """
         return self.add_repo_members_with_http_info(request)
 
     def add_repo_members_with_http_info(self, request):
-        """添加仓库成员
-
-        调用方codehubportal,添加仓库成员。
-
-        :param AddRepoMembersRequest request
-        :return: AddRepoMembersResponse
-        """
-
         all_params = ['repository_uuid', 'create_repo_member_request']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -719,26 +670,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_repo_member_async(self, request):
         """删除仓库成员
 
         删除仓库成员
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteRepoMemberRequest request
-        :return: DeleteRepoMemberResponse
+        :param request: Request instance for DeleteRepoMember
+        :type request: :class:`huaweicloudsdkcodehub.v3.DeleteRepoMemberRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.DeleteRepoMemberResponse`
         """
         return self.delete_repo_member_with_http_info(request)
 
     def delete_repo_member_with_http_info(self, request):
-        """删除仓库成员
-
-        删除仓库成员
-
-        :param DeleteRepoMemberRequest request
-        :return: DeleteRepoMemberResponse
-        """
-
         all_params = ['member_id', 'repository_uuid']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -784,26 +730,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_repo_members_async(self, request):
         """获取仓库所有成员记录
 
         获取仓库成员列表,可通过关键字搜索某成员。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListRepoMembersRequest request
-        :return: ListRepoMembersResponse
+        :param request: Request instance for ListRepoMembers
+        :type request: :class:`huaweicloudsdkcodehub.v3.ListRepoMembersRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.ListRepoMembersResponse`
         """
         return self.list_repo_members_with_http_info(request)
 
     def list_repo_members_with_http_info(self, request):
-        """获取仓库所有成员记录
-
-        获取仓库成员列表,可通过关键字搜索某成员。
-
-        :param ListRepoMembersRequest request
-        :return: ListRepoMembersResponse
-        """
-
         all_params = ['repository_uuid', 'page_index', 'page_size', 'subject']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -853,26 +794,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def set_repo_role_async(self, request):
         """设置成员在仓库中的角色
 
         给仓库中成员设置仓库的操作权限，
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param SetRepoRoleRequest request
-        :return: SetRepoRoleResponse
+        :param request: Request instance for SetRepoRole
+        :type request: :class:`huaweicloudsdkcodehub.v3.SetRepoRoleRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.SetRepoRoleResponse`
         """
         return self.set_repo_role_with_http_info(request)
 
     def set_repo_role_with_http_info(self, request):
-        """设置成员在仓库中的角色
-
-        给仓库中成员设置仓库的操作权限，
-
-        :param SetRepoRoleRequest request
-        :return: SetRepoRoleResponse
-        """
-
         all_params = ['member_id', 'repository_uuid', 'set_repo_role_request']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -920,26 +856,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def add_deploy_key_async(self, request):
         """添加部署密钥
 
         添加部署密钥
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param AddDeployKeyRequest request
-        :return: AddDeployKeyResponse
+        :param request: Request instance for AddDeployKey
+        :type request: :class:`huaweicloudsdkcodehub.v3.AddDeployKeyRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.AddDeployKeyResponse`
         """
         return self.add_deploy_key_with_http_info(request)
 
     def add_deploy_key_with_http_info(self, request):
-        """添加部署密钥
-
-        添加部署密钥
-
-        :param AddDeployKeyRequest request
-        :return: AddDeployKeyResponse
-        """
-
         all_params = ['repository_id', 'add_deploy_key_request']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -985,26 +916,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def add_deploy_key_v2_async(self, request):
         """添加部署密钥
 
         添加部署密钥
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param AddDeployKeyV2Request request
-        :return: AddDeployKeyV2Response
+        :param request: Request instance for AddDeployKeyV2
+        :type request: :class:`huaweicloudsdkcodehub.v3.AddDeployKeyV2Request`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.AddDeployKeyV2Response`
         """
         return self.add_deploy_key_v2_with_http_info(request)
 
     def add_deploy_key_v2_with_http_info(self, request):
-        """添加部署密钥
-
-        添加部署密钥
-
-        :param AddDeployKeyV2Request request
-        :return: AddDeployKeyV2Response
-        """
-
         all_params = ['repository_id', 'add_deploy_key_request']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1050,26 +976,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_repository_async(self, request):
         """创建仓库
 
         用指定的名称在指定项目上创建仓库。传入参数：仓库名、模板id、是否导入项目成员、归属项目
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateRepositoryRequest request
-        :return: CreateRepositoryResponse
+        :param request: Request instance for CreateRepository
+        :type request: :class:`huaweicloudsdkcodehub.v3.CreateRepositoryRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.CreateRepositoryResponse`
         """
         return self.create_repository_with_http_info(request)
 
     def create_repository_with_http_info(self, request):
-        """创建仓库
-
-        用指定的名称在指定项目上创建仓库。传入参数：仓库名、模板id、是否导入项目成员、归属项目
-
-        :param CreateRepositoryRequest request
-        :return: CreateRepositoryResponse
-        """
-
         all_params = ['create_repo_request']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1113,26 +1034,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_deploy_key_async(self, request):
         """删除仓库部署密钥
 
         删除仓库部署密钥
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteDeployKeyRequest request
-        :return: DeleteDeployKeyResponse
+        :param request: Request instance for DeleteDeployKey
+        :type request: :class:`huaweicloudsdkcodehub.v3.DeleteDeployKeyRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.DeleteDeployKeyResponse`
         """
         return self.delete_deploy_key_with_http_info(request)
 
     def delete_deploy_key_with_http_info(self, request):
-        """删除仓库部署密钥
-
-        删除仓库部署密钥
-
-        :param DeleteDeployKeyRequest request
-        :return: DeleteDeployKeyResponse
-        """
-
         all_params = ['key_id', 'repository_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1178,26 +1094,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_deploy_key_v2_async(self, request):
         """删除仓库部署密钥
 
         删除仓库部署密钥
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteDeployKeyV2Request request
-        :return: DeleteDeployKeyV2Response
+        :param request: Request instance for DeleteDeployKeyV2
+        :type request: :class:`huaweicloudsdkcodehub.v3.DeleteDeployKeyV2Request`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.DeleteDeployKeyV2Response`
         """
         return self.delete_deploy_key_v2_with_http_info(request)
 
     def delete_deploy_key_v2_with_http_info(self, request):
-        """删除仓库部署密钥
-
-        删除仓库部署密钥
-
-        :param DeleteDeployKeyV2Request request
-        :return: DeleteDeployKeyV2Response
-        """
-
         all_params = ['key_id', 'repository_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1243,26 +1154,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_repository_async(self, request):
         """删除仓库
 
         根据仓库32位uuid删除指定的仓库
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteRepositoryRequest request
-        :return: DeleteRepositoryResponse
+        :param request: Request instance for DeleteRepository
+        :type request: :class:`huaweicloudsdkcodehub.v3.DeleteRepositoryRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.DeleteRepositoryResponse`
         """
         return self.delete_repository_with_http_info(request)
 
     def delete_repository_with_http_info(self, request):
-        """删除仓库
-
-        根据仓库32位uuid删除指定的仓库
-
-        :param DeleteRepositoryRequest request
-        :return: DeleteRepositoryResponse
-        """
-
         all_params = ['repository_uuid']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1306,26 +1212,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def get_repository_by_project_id_async(self, request):
         """查询项目下的某个仓库
 
         不建议再使用,建议使用/{repository_uuid}/status
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param GetRepositoryByProjectIdRequest request
-        :return: GetRepositoryByProjectIdResponse
+        :param request: Request instance for GetRepositoryByProjectId
+        :type request: :class:`huaweicloudsdkcodehub.v3.GetRepositoryByProjectIdRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.GetRepositoryByProjectIdResponse`
         """
         return self.get_repository_by_project_id_with_http_info(request)
 
     def get_repository_by_project_id_with_http_info(self, request):
-        """查询项目下的某个仓库
-
-        不建议再使用,建议使用/{repository_uuid}/status
-
-        :param GetRepositoryByProjectIdRequest request
-        :return: GetRepositoryByProjectIdResponse
-        """
-
         all_params = ['repository_uuid']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1369,26 +1270,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def get_templates_async(self, request):
         """获取公开示例模板列表
 
         获取公开示例模板列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param GetTemplatesRequest request
-        :return: GetTemplatesResponse
+        :param request: Request instance for GetTemplates
+        :type request: :class:`huaweicloudsdkcodehub.v3.GetTemplatesRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.GetTemplatesResponse`
         """
         return self.get_templates_with_http_info(request)
 
     def get_templates_with_http_info(self, request):
-        """获取公开示例模板列表
-
-        获取公开示例模板列表
-
-        :param GetTemplatesRequest request
-        :return: GetTemplatesResponse
-        """
-
         all_params = ['page_no', 'page_size', 'platform', 'language', 'pipeline', 'entertype', 'search', 'dateorder', 'usedtimeorder', 'type', 'region']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1452,26 +1348,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_commit_statistics_async(self, request):
         """获取仓库上一次的提交统计信息
 
         获取仓库上一次的提交统计信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListCommitStatisticsRequest request
-        :return: ListCommitStatisticsResponse
+        :param request: Request instance for ListCommitStatistics
+        :type request: :class:`huaweicloudsdkcodehub.v3.ListCommitStatisticsRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.ListCommitStatisticsResponse`
         """
         return self.list_commit_statistics_with_http_info(request)
 
     def list_commit_statistics_with_http_info(self, request):
-        """获取仓库上一次的提交统计信息
-
-        获取仓库上一次的提交统计信息
-
-        :param ListCommitStatisticsRequest request
-        :return: ListCommitStatisticsResponse
-        """
-
         all_params = ['branch_name', 'repository_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1517,26 +1408,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_files_async(self, request):
         """获取一个仓库下特定分支指定文件内容
 
         获取一个仓库下特定分支指定文件内容
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListFilesRequest request
-        :return: ListFilesResponse
+        :param request: Request instance for ListFiles
+        :type request: :class:`huaweicloudsdkcodehub.v3.ListFilesRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.ListFilesResponse`
         """
         return self.list_files_with_http_info(request)
 
     def list_files_with_http_info(self, request):
-        """获取一个仓库下特定分支指定文件内容
-
-        获取一个仓库下特定分支指定文件内容
-
-        :param ListFilesRequest request
-        :return: ListFilesResponse
-        """
-
         all_params = ['repository_uuid', 'branch_name', 'path']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1584,26 +1470,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_repository_status_async(self, request):
         """查看仓库的创建状态
 
         获取仓库状态。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListRepositoryStatusRequest request
-        :return: ListRepositoryStatusResponse
+        :param request: Request instance for ListRepositoryStatus
+        :type request: :class:`huaweicloudsdkcodehub.v3.ListRepositoryStatusRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.ListRepositoryStatusResponse`
         """
         return self.list_repository_status_with_http_info(request)
 
     def list_repository_status_with_http_info(self, request):
-        """查看仓库的创建状态
-
-        获取仓库状态。
-
-        :param ListRepositoryStatusRequest request
-        :return: ListRepositoryStatusResponse
-        """
-
         all_params = ['repository_uuid']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1647,26 +1528,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_subfiles_async(self, request):
         """获取分支目录下的文件
 
         获取分支目录下的文件
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListSubfilesRequest request
-        :return: ListSubfilesResponse
+        :param request: Request instance for ListSubfiles
+        :type request: :class:`huaweicloudsdkcodehub.v3.ListSubfilesRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.ListSubfilesResponse`
         """
         return self.list_subfiles_with_http_info(request)
 
     def list_subfiles_with_http_info(self, request):
-        """获取分支目录下的文件
-
-        获取分支目录下的文件
-
-        :param ListSubfilesRequest request
-        :return: ListSubfilesResponse
-        """
-
         all_params = ['repository_uuid', 'branch_name', 'path', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1718,26 +1594,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_templates_two_async(self, request):
         """设置仓库是公开状态还是私有状态
 
         设置仓库是公开状态还是私有状态
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListTemplatesTwoRequest request
-        :return: ListTemplatesTwoResponse
+        :param request: Request instance for ListTemplatesTwo
+        :type request: :class:`huaweicloudsdkcodehub.v3.ListTemplatesTwoRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.ListTemplatesTwoResponse`
         """
         return self.list_templates_two_with_http_info(request)
 
     def list_templates_two_with_http_info(self, request):
-        """设置仓库是公开状态还是私有状态
-
-        设置仓库是公开状态还是私有状态
-
-        :param ListTemplatesTwoRequest request
-        :return: ListTemplatesTwoResponse
-        """
-
         all_params = ['repository_uuid', 'repository_template_vo2']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1783,26 +1654,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_two_templates_async(self, request):
         """获取公开示例模板列表
 
         获取公开示例模板列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListTwoTemplatesRequest request
-        :return: ListTwoTemplatesResponse
+        :param request: Request instance for ListTwoTemplates
+        :type request: :class:`huaweicloudsdkcodehub.v3.ListTwoTemplatesRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.ListTwoTemplatesResponse`
         """
         return self.list_two_templates_with_http_info(request)
 
     def list_two_templates_with_http_info(self, request):
-        """获取公开示例模板列表
-
-        获取公开示例模板列表
-
-        :param ListTwoTemplatesRequest request
-        :return: ListTwoTemplatesResponse
-        """
-
         all_params = ['page_no', 'page_size', 'platform', 'language', 'pipeline', 'enter_type', 'search', 'date_order', 'used_time_order', 'type', 'region']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1866,26 +1732,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def share_templates_async(self, request):
         """设置仓库是公开状态还是私有状态
 
         设置仓库是公开状态还是私有状态
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShareTemplatesRequest request
-        :return: ShareTemplatesResponse
+        :param request: Request instance for ShareTemplates
+        :type request: :class:`huaweicloudsdkcodehub.v3.ShareTemplatesRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.ShareTemplatesResponse`
         """
         return self.share_templates_with_http_info(request)
 
     def share_templates_with_http_info(self, request):
-        """设置仓库是公开状态还是私有状态
-
-        设置仓库是公开状态还是私有状态
-
-        :param ShareTemplatesRequest request
-        :return: ShareTemplatesResponse
-        """
-
         all_params = ['repository_uuid', 'repository_template_vo']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1931,26 +1792,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_branches_by_repository_id_async(self, request):
         """查询某仓库对应的分支
 
         根据仓库id获取指定仓库的分支列表.
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowBranchesByRepositoryIdRequest request
-        :return: ShowBranchesByRepositoryIdResponse
+        :param request: Request instance for ShowBranchesByRepositoryId
+        :type request: :class:`huaweicloudsdkcodehub.v3.ShowBranchesByRepositoryIdRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.ShowBranchesByRepositoryIdResponse`
         """
         return self.show_branches_by_repository_id_with_http_info(request)
 
     def show_branches_by_repository_id_with_http_info(self, request):
-        """查询某仓库对应的分支
-
-        根据仓库id获取指定仓库的分支列表.
-
-        :param ShowBranchesByRepositoryIdRequest request
-        :return: ShowBranchesByRepositoryIdResponse
-        """
-
         all_params = ['repository_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1994,26 +1850,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_branches_by_two_repository_id_async(self, request):
         """查询某仓库的标签列表
 
         查询指定仓库对应的分支。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowBranchesByTwoRepositoryIdRequest request
-        :return: ShowBranchesByTwoRepositoryIdResponse
+        :param request: Request instance for ShowBranchesByTwoRepositoryId
+        :type request: :class:`huaweicloudsdkcodehub.v3.ShowBranchesByTwoRepositoryIdRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.ShowBranchesByTwoRepositoryIdResponse`
         """
         return self.show_branches_by_two_repository_id_with_http_info(request)
 
     def show_branches_by_two_repository_id_with_http_info(self, request):
-        """查询某仓库的标签列表
-
-        查询指定仓库对应的分支。
-
-        :param ShowBranchesByTwoRepositoryIdRequest request
-        :return: ShowBranchesByTwoRepositoryIdResponse
-        """
-
         all_params = ['repository_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2057,26 +1908,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_commits_by_branch_async(self, request):
         """根据组名和仓库名查询某仓库某分支对应的提交
 
         根据仓库组名、仓库名和分支获取提交列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowCommitsByBranchRequest request
-        :return: ShowCommitsByBranchResponse
+        :param request: Request instance for ShowCommitsByBranch
+        :type request: :class:`huaweicloudsdkcodehub.v3.ShowCommitsByBranchRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.ShowCommitsByBranchResponse`
         """
         return self.show_commits_by_branch_with_http_info(request)
 
     def show_commits_by_branch_with_http_info(self, request):
-        """根据组名和仓库名查询某仓库某分支对应的提交
-
-        根据仓库组名、仓库名和分支获取提交列表。
-
-        :param ShowCommitsByBranchRequest request
-        :return: ShowCommitsByBranchResponse
-        """
-
         all_params = ['group_name', 'ref_name', 'repository_name', 'page_index', 'page_size']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2128,26 +1974,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_commits_by_repo_id_async(self, request):
         """根据仓库id查询仓库某分支对应的提交，提供更多可选参数
 
         根据仓库id查询仓库某分支对应的提交.
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowCommitsByRepoIdRequest request
-        :return: ShowCommitsByRepoIdResponse
+        :param request: Request instance for ShowCommitsByRepoId
+        :type request: :class:`huaweicloudsdkcodehub.v3.ShowCommitsByRepoIdRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.ShowCommitsByRepoIdResponse`
         """
         return self.show_commits_by_repo_id_with_http_info(request)
 
     def show_commits_by_repo_id_with_http_info(self, request):
-        """根据仓库id查询仓库某分支对应的提交，提供更多可选参数
-
-        根据仓库id查询仓库某分支对应的提交.
-
-        :param ShowCommitsByRepoIdRequest request
-        :return: ShowCommitsByRepoIdResponse
-        """
-
         all_params = ['ref_name', 'repository_id', 'author', 'begin_date', 'end_date', 'message', 'page_index', 'page_size', 'path', 'stat_format']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2209,26 +2050,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_has_pipeline_async(self, request):
         """修改被流水线引用的仓库状态
 
         修改被流水线引用的仓库状态
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowHasPipelineRequest request
-        :return: ShowHasPipelineResponse
+        :param request: Request instance for ShowHasPipeline
+        :type request: :class:`huaweicloudsdkcodehub.v3.ShowHasPipelineRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.ShowHasPipelineResponse`
         """
         return self.show_has_pipeline_with_http_info(request)
 
     def show_has_pipeline_with_http_info(self, request):
-        """修改被流水线引用的仓库状态
-
-        修改被流水线引用的仓库状态
-
-        :param ShowHasPipelineRequest request
-        :return: ShowHasPipelineResponse
-        """
-
         all_params = ['repository_uuid']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2272,26 +2108,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_image_blob_async(self, request):
         """获取一个仓库下特定分支的图片文件
 
         获取一个仓库下特定分支的图片文件
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowImageBlobRequest request
-        :return: ShowImageBlobResponse
+        :param request: Request instance for ShowImageBlob
+        :type request: :class:`huaweicloudsdkcodehub.v3.ShowImageBlobRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.ShowImageBlobResponse`
         """
         return self.show_image_blob_with_http_info(request)
 
     def show_image_blob_with_http_info(self, request):
-        """获取一个仓库下特定分支的图片文件
-
-        获取一个仓库下特定分支的图片文件
-
-        :param ShowImageBlobRequest request
-        :return: ShowImageBlobResponse
-        """
-
         all_params = ['repository_uuid', 'branch_name', 'path']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2339,26 +2170,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_master_async(self, request):
         """判断用户是否有仓库的管理员权限
 
         判断用户是否有仓库的管理员权限
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowMasterRequest request
-        :return: ShowMasterResponse
+        :param request: Request instance for ShowMaster
+        :type request: :class:`huaweicloudsdkcodehub.v3.ShowMasterRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.ShowMasterResponse`
         """
         return self.show_master_with_http_info(request)
 
     def show_master_with_http_info(self, request):
-        """判断用户是否有仓库的管理员权限
-
-        判断用户是否有仓库的管理员权限
-
-        :param ShowMasterRequest request
-        :return: ShowMasterResponse
-        """
-
         all_params = ['repository_uuid']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2402,26 +2228,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_repo_id_async(self, request):
         """根据仓库名组名获取仓库短id，用以拼接与commitid对应提交详情页面url
 
         获取仓库短id,用于获取仓库详情页面url
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowRepoIdRequest request
-        :return: ShowRepoIdResponse
+        :param request: Request instance for ShowRepoId
+        :type request: :class:`huaweicloudsdkcodehub.v3.ShowRepoIdRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.ShowRepoIdResponse`
         """
         return self.show_repo_id_with_http_info(request)
 
     def show_repo_id_with_http_info(self, request):
-        """根据仓库名组名获取仓库短id，用以拼接与commitid对应提交详情页面url
-
-        获取仓库短id,用于获取仓库详情页面url
-
-        :param ShowRepoIdRequest request
-        :return: ShowRepoIdResponse
-        """
-
         all_params = ['group_name', 'repository_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2467,26 +2288,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_repository_archive_async(self, request):
         """下载仓库
 
         按照指定格式下载仓库
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowRepositoryArchiveRequest request
-        :return: ShowRepositoryArchiveResponse
+        :param request: Request instance for ShowRepositoryArchive
+        :type request: :class:`huaweicloudsdkcodehub.v3.ShowRepositoryArchiveRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.ShowRepositoryArchiveResponse`
         """
         return self.show_repository_archive_with_http_info(request)
 
     def show_repository_archive_with_http_info(self, request):
-        """下载仓库
-
-        按照指定格式下载仓库
-
-        :param ShowRepositoryArchiveRequest request
-        :return: ShowRepositoryArchiveResponse
-        """
-
         all_params = ['repository_uuid', 'sha', 'format']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2534,26 +2350,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_repository_by_uuid_async(self, request):
         """查询某个仓库的详细信息
 
         根据仓库UUID获取仓库信息仓库信息。返回 包含id，name，组名，仓库访问URL。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowRepositoryByUuidRequest request
-        :return: ShowRepositoryByUuidResponse
+        :param request: Request instance for ShowRepositoryByUuid
+        :type request: :class:`huaweicloudsdkcodehub.v3.ShowRepositoryByUuidRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.ShowRepositoryByUuidResponse`
         """
         return self.show_repository_by_uuid_with_http_info(request)
 
     def show_repository_by_uuid_with_http_info(self, request):
-        """查询某个仓库的详细信息
-
-        根据仓库UUID获取仓库信息仓库信息。返回 包含id，name，组名，仓库访问URL。
-
-        :param ShowRepositoryByUuidRequest request
-        :return: ShowRepositoryByUuidResponse
-        """
-
         all_params = ['repository_uuid']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2597,26 +2408,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_repository_statistics_async(self, request):
         """仓库统计
 
         根据仓库短id，查询仓库的代码提交记录统计
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowRepositoryStatisticsRequest request
-        :return: ShowRepositoryStatisticsResponse
+        :param request: Request instance for ShowRepositoryStatistics
+        :type request: :class:`huaweicloudsdkcodehub.v3.ShowRepositoryStatisticsRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.ShowRepositoryStatisticsResponse`
         """
         return self.show_repository_statistics_with_http_info(request)
 
     def show_repository_statistics_with_http_info(self, request):
-        """仓库统计
-
-        根据仓库短id，查询仓库的代码提交记录统计
-
-        :param ShowRepositoryStatisticsRequest request
-        :return: ShowRepositoryStatisticsResponse
-        """
-
         all_params = ['repository_id', 'show_repository_statistics_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2662,26 +2468,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_statistic_commit_async(self, request):
         """获取代码提交行数
 
         获取指定日期内代码仓指定分支的代码提交行数
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowStatisticCommitRequest request
-        :return: ShowStatisticCommitResponse
+        :param request: Request instance for ShowStatisticCommit
+        :type request: :class:`huaweicloudsdkcodehub.v3.ShowStatisticCommitRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.ShowStatisticCommitResponse`
         """
         return self.show_statistic_commit_with_http_info(request)
 
     def show_statistic_commit_with_http_info(self, request):
-        """获取代码提交行数
-
-        获取指定日期内代码仓指定分支的代码提交行数
-
-        :param ShowStatisticCommitRequest request
-        :return: ShowStatisticCommitResponse
-        """
-
         all_params = ['repository_id', 'ref_name', 'begin_date', 'end_date']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2731,26 +2532,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_statistic_commit_v3_async(self, request):
         """获取代码提交行数
 
         获取指定日期内代码仓指定分支的代码提交行数
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowStatisticCommitV3Request request
-        :return: ShowStatisticCommitV3Response
+        :param request: Request instance for ShowStatisticCommitV3
+        :type request: :class:`huaweicloudsdkcodehub.v3.ShowStatisticCommitV3Request`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.ShowStatisticCommitV3Response`
         """
         return self.show_statistic_commit_v3_with_http_info(request)
 
     def show_statistic_commit_v3_with_http_info(self, request):
-        """获取代码提交行数
-
-        获取指定日期内代码仓指定分支的代码提交行数
-
-        :param ShowStatisticCommitV3Request request
-        :return: ShowStatisticCommitV3Response
-        """
-
         all_params = ['repository_id', 'ref_name', 'begin_date', 'end_date']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2800,26 +2596,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_statistical_data_async(self, request):
         """获取仓库统计数据
 
         获取仓库统计数据
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowStatisticalDataRequest request
-        :return: ShowStatisticalDataResponse
+        :param request: Request instance for ShowStatisticalData
+        :type request: :class:`huaweicloudsdkcodehub.v3.ShowStatisticalDataRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.ShowStatisticalDataResponse`
         """
         return self.show_statistical_data_with_http_info(request)
 
     def show_statistical_data_with_http_info(self, request):
-        """获取仓库统计数据
-
-        获取仓库统计数据
-
-        :param ShowStatisticalDataRequest request
-        :return: ShowStatisticalDataResponse
-        """
-
         all_params = ['repository_uuid']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2863,26 +2654,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def add_ssh_key_async(self, request):
         """添加ssh key
 
         添加ssh key
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param AddSshKeyRequest request
-        :return: AddSshKeyResponse
+        :param request: Request instance for AddSshKey
+        :type request: :class:`huaweicloudsdkcodehub.v3.AddSshKeyRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.AddSshKeyResponse`
         """
         return self.add_ssh_key_with_http_info(request)
 
     def add_ssh_key_with_http_info(self, request):
-        """添加ssh key
-
-        添加ssh key
-
-        :param AddSshKeyRequest request
-        :return: AddSshKeyResponse
-        """
-
         all_params = ['public_key']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2926,26 +2712,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_s_shkey_async(self, request):
         """删除用户公钥
 
         调用gitlab原生接口删除用户公钥。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteSShkeyRequest request
-        :return: DeleteSShkeyResponse
+        :param request: Request instance for DeleteSShkey
+        :type request: :class:`huaweicloudsdkcodehub.v3.DeleteSShkeyRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.DeleteSShkeyResponse`
         """
         return self.delete_s_shkey_with_http_info(request)
 
     def delete_s_shkey_with_http_info(self, request):
-        """删除用户公钥
-
-        调用gitlab原生接口删除用户公钥。
-
-        :param DeleteSShkeyRequest request
-        :return: DeleteSShkeyResponse
-        """
-
         all_params = ['id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2989,26 +2770,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_ssh_keys_async(self, request):
         """获取ssh key列表
 
         获取ssh key列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListSshKeysRequest request
-        :return: ListSshKeysResponse
+        :param request: Request instance for ListSshKeys
+        :type request: :class:`huaweicloudsdkcodehub.v3.ListSshKeysRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.ListSshKeysResponse`
         """
         return self.list_ssh_keys_with_http_info(request)
 
     def list_ssh_keys_with_http_info(self, request):
-        """获取ssh key列表
-
-        获取ssh key列表。
-
-        :param ListSshKeysRequest request
-        :return: ListSshKeysResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3050,26 +2826,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_private_key_verify_async(self, request):
         """检验私钥是否有拉取代码的权限
 
         检验私钥是否有拉取代码的权限
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowPrivateKeyVerifyRequest request
-        :return: ShowPrivateKeyVerifyResponse
+        :param request: Request instance for ShowPrivateKeyVerify
+        :type request: :class:`huaweicloudsdkcodehub.v3.ShowPrivateKeyVerifyRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.ShowPrivateKeyVerifyResponse`
         """
         return self.show_private_key_verify_with_http_info(request)
 
     def show_private_key_verify_with_http_info(self, request):
-        """检验私钥是否有拉取代码的权限
-
-        检验私钥是否有拉取代码的权限
-
-        :param ShowPrivateKeyVerifyRequest request
-        :return: ShowPrivateKeyVerifyResponse
-        """
-
         all_params = ['private_key']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3113,26 +2884,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def validate_https_info_async(self, request):
         """ https账号密码校验
 
         调用 gitlab 接口判断用户使用 https 上传/下载代码时输入的用户名和密码是否合法。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ValidateHttpsInfoRequest request
-        :return: ValidateHttpsInfoResponse
+        :param request: Request instance for ValidateHttpsInfo
+        :type request: :class:`huaweicloudsdkcodehub.v3.ValidateHttpsInfoRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.ValidateHttpsInfoResponse`
         """
         return self.validate_https_info_with_http_info(request)
 
     def validate_https_info_with_http_info(self, request):
-        """ https账号密码校验
-
-        调用 gitlab 接口判断用户使用 https 上传/下载代码时输入的用户名和密码是否合法。
-
-        :param ValidateHttpsInfoRequest request
-        :return: ValidateHttpsInfoResponse
-        """
-
         all_params = ['iam_user_uuid', 'password']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3178,26 +2944,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def validate_https_info_v2_async(self, request):
         """ https账号密码校验
 
         调用 gitlab 接口判断用户使用 https 上传/下载代码时输入的用户名和密码是否合法。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ValidateHttpsInfoV2Request request
-        :return: ValidateHttpsInfoV2Response
+        :param request: Request instance for ValidateHttpsInfoV2
+        :type request: :class:`huaweicloudsdkcodehub.v3.ValidateHttpsInfoV2Request`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.ValidateHttpsInfoV2Response`
         """
         return self.validate_https_info_v2_with_http_info(request)
 
     def validate_https_info_v2_with_http_info(self, request):
-        """ https账号密码校验
-
-        调用 gitlab 接口判断用户使用 https 上传/下载代码时输入的用户名和密码是否合法。
-
-        :param ValidateHttpsInfoV2Request request
-        :return: ValidateHttpsInfoV2Response
-        """
-
         all_params = ['iam_user_uuid', 'password']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3243,26 +3004,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_project_and_repositories_async(self, request):
         """创建项目、仓库
 
         创建项目后，创建仓库组由后台生成方式 传入参数：仓库名、模板id、是否导入项目成员、归属项目
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateProjectAndRepositoriesRequest request
-        :return: CreateProjectAndRepositoriesResponse
+        :param request: Request instance for CreateProjectAndRepositories
+        :type request: :class:`huaweicloudsdkcodehub.v3.CreateProjectAndRepositoriesRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.CreateProjectAndRepositoriesResponse`
         """
         return self.create_project_and_repositories_with_http_info(request)
 
     def create_project_and_repositories_with_http_info(self, request):
-        """创建项目、仓库
-
-        创建项目后，创建仓库组由后台生成方式 传入参数：仓库名、模板id、是否导入项目成员、归属项目
-
-        :param CreateProjectAndRepositoriesRequest request
-        :return: CreateProjectAndRepositoriesResponse
-        """
-
         all_params = ['create_info']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3306,26 +3062,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_project_andfork_repositories_async(self, request):
         """创建项目并fork仓库
 
         创建仓库后fork仓库 传入参数：仓库名、是否导入项目成员、归属项目
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateProjectAndforkRepositoriesRequest request
-        :return: CreateProjectAndforkRepositoriesResponse
+        :param request: Request instance for CreateProjectAndforkRepositories
+        :type request: :class:`huaweicloudsdkcodehub.v3.CreateProjectAndforkRepositoriesRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.CreateProjectAndforkRepositoriesResponse`
         """
         return self.create_project_andfork_repositories_with_http_info(request)
 
     def create_project_andfork_repositories_with_http_info(self, request):
-        """创建项目并fork仓库
-
-        创建仓库后fork仓库 传入参数：仓库名、是否导入项目成员、归属项目
-
-        :param CreateProjectAndforkRepositoriesRequest request
-        :return: CreateProjectAndforkRepositoriesResponse
-        """
-
         all_params = ['create_info']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3369,26 +3120,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_user_all_repositories_async(self, request):
         """查询用户的所有仓库
 
         获取用户的所有仓库信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListUserAllRepositoriesRequest request
-        :return: ListUserAllRepositoriesResponse
+        :param request: Request instance for ListUserAllRepositories
+        :type request: :class:`huaweicloudsdkcodehub.v3.ListUserAllRepositoriesRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.ListUserAllRepositoriesResponse`
         """
         return self.list_user_all_repositories_with_http_info(request)
 
     def list_user_all_repositories_with_http_info(self, request):
-        """查询用户的所有仓库
-
-        获取用户的所有仓库信息
-
-        :param ListUserAllRepositoriesRequest request
-        :return: ListUserAllRepositoriesResponse
-        """
-
         all_params = ['page_index', 'page_size', 'search']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3436,26 +3182,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_all_repository_by_two_project_id_async(self, request):
         """查询项目下的所有仓库
 
         获取仓库列表,模糊查询支持范围,如果未传入project uuid，则支持按仓库名或项目名模糊查询，否则，只按仓库名模糊匹配
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowAllRepositoryByTwoProjectIdRequest request
-        :return: ShowAllRepositoryByTwoProjectIdResponse
+        :param request: Request instance for ShowAllRepositoryByTwoProjectId
+        :type request: :class:`huaweicloudsdkcodehub.v3.ShowAllRepositoryByTwoProjectIdRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.ShowAllRepositoryByTwoProjectIdResponse`
         """
         return self.show_all_repository_by_two_project_id_with_http_info(request)
 
     def show_all_repository_by_two_project_id_with_http_info(self, request):
-        """查询项目下的所有仓库
-
-        获取仓库列表,模糊查询支持范围,如果未传入project uuid，则支持按仓库名或项目名模糊查询，否则，只按仓库名模糊匹配
-
-        :param ShowAllRepositoryByTwoProjectIdRequest request
-        :return: ShowAllRepositoryByTwoProjectIdResponse
-        """
-
         all_params = ['project_uuid', 'page_index', 'page_size', 'search']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3505,26 +3246,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def add_hooks_async(self, request):
         """为指定仓库添加hook
 
         提交代码自动触发编译构建，添加仓库钩子
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param AddHooksRequest request
-        :return: AddHooksResponse
+        :param request: Request instance for AddHooks
+        :type request: :class:`huaweicloudsdkcodehub.v3.AddHooksRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.AddHooksResponse`
         """
         return self.add_hooks_with_http_info(request)
 
     def add_hooks_with_http_info(self, request):
-        """为指定仓库添加hook
-
-        提交代码自动触发编译构建，添加仓库钩子
-
-        :param AddHooksRequest request
-        :return: AddHooksResponse
-        """
-
         all_params = ['group_name', 'repository_name', 'repository_hook_request']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3572,26 +3308,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_hooks_async(self, request):
         """删除指定仓库的 hook
 
         提交代码自动触发编译构建，删除仓库钩子
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteHooksRequest request
-        :return: DeleteHooksResponse
+        :param request: Request instance for DeleteHooks
+        :type request: :class:`huaweicloudsdkcodehub.v3.DeleteHooksRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.DeleteHooksResponse`
         """
         return self.delete_hooks_with_http_info(request)
 
     def delete_hooks_with_http_info(self, request):
-        """删除指定仓库的 hook
-
-        提交代码自动触发编译构建，删除仓库钩子
-
-        :param DeleteHooksRequest request
-        :return: DeleteHooksResponse
-        """
-
         all_params = ['group_name', 'hook_id', 'repository_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3639,26 +3370,21 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_hooks_async(self, request):
         """查询指定仓库的webhook
 
         获取仓库webhook
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListHooksRequest request
-        :return: ListHooksResponse
+        :param request: Request instance for ListHooks
+        :type request: :class:`huaweicloudsdkcodehub.v3.ListHooksRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.ListHooksResponse`
         """
         return self.list_hooks_with_http_info(request)
 
     def list_hooks_with_http_info(self, request):
-        """查询指定仓库的webhook
-
-        获取仓库webhook
-
-        :param ListHooksRequest request
-        :return: ListHooksResponse
-        """
-
         all_params = ['group_name', 'repository_name', 'hook_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3705,7 +3431,6 @@ class CodeHubAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

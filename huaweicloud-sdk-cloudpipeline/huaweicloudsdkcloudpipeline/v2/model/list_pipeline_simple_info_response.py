@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPipelineSimpleInfoResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListPipelineSimpleInfoResponse(SdkResponse):
     }
 
     def __init__(self, offset=None, limit=None, total=None, result=None):
-        """ListPipelineSimpleInfoResponse - a model defined in huaweicloud sdk"""
+        """ListPipelineSimpleInfoResponse
+
+        The model defined in huaweicloud sdk
+
+        :param offset: 偏移量,表示从此偏移量开始查询,offset大于等于0
+        :type offset: int
+        :param limit: 每次查询的条目数量
+        :type limit: int
+        :param total: 总条目数量
+        :type total: int
+        :param result: 执行状况数据列表
+        :type result: list[:class:`huaweicloudsdkcloudpipeline.v2.PipelineBasicInfo`]
+        """
         
         super(ListPipelineSimpleInfoResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class ListPipelineSimpleInfoResponse(SdkResponse):
         偏移量,表示从此偏移量开始查询,offset大于等于0
 
         :param offset: The offset of this ListPipelineSimpleInfoResponse.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -95,7 +106,7 @@ class ListPipelineSimpleInfoResponse(SdkResponse):
         每次查询的条目数量
 
         :param limit: The limit of this ListPipelineSimpleInfoResponse.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -117,7 +128,7 @@ class ListPipelineSimpleInfoResponse(SdkResponse):
         总条目数量
 
         :param total: The total of this ListPipelineSimpleInfoResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -128,7 +139,7 @@ class ListPipelineSimpleInfoResponse(SdkResponse):
         执行状况数据列表
 
         :return: The result of this ListPipelineSimpleInfoResponse.
-        :rtype: list[PipelineBasicInfo]
+        :rtype: list[:class:`huaweicloudsdkcloudpipeline.v2.PipelineBasicInfo`]
         """
         return self._result
 
@@ -139,7 +150,7 @@ class ListPipelineSimpleInfoResponse(SdkResponse):
         执行状况数据列表
 
         :param result: The result of this ListPipelineSimpleInfoResponse.
-        :type: list[PipelineBasicInfo]
+        :type result: list[:class:`huaweicloudsdkcloudpipeline.v2.PipelineBasicInfo`]
         """
         self._result = result
 

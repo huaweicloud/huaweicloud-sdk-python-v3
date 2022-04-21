@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowLinkResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowLinkResponse(SdkResponse):
     }
 
     def __init__(self, links=None, from_to_un_mapping=None, batch_from_to_mapping=None):
-        """ShowLinkResponse - a model defined in huaweicloud sdk"""
+        """ShowLinkResponse
+
+        The model defined in huaweicloud sdk
+
+        :param links: 连接列表，请参见links数据结构说明
+        :type links: list[:class:`huaweicloudsdkcdm.v1.Links`]
+        :param from_to_un_mapping: 表/文件迁移不支持哪些数据源迁移到哪些数据源
+        :type from_to_un_mapping: str
+        :param batch_from_to_mapping: 整库迁移支持哪些数据源迁移到哪些数据源
+        :type batch_from_to_mapping: str
+        """
         
         super(ShowLinkResponse, self).__init__()
 
@@ -57,7 +66,7 @@ class ShowLinkResponse(SdkResponse):
         连接列表，请参见links数据结构说明
 
         :return: The links of this ShowLinkResponse.
-        :rtype: list[Links]
+        :rtype: list[:class:`huaweicloudsdkcdm.v1.Links`]
         """
         return self._links
 
@@ -68,7 +77,7 @@ class ShowLinkResponse(SdkResponse):
         连接列表，请参见links数据结构说明
 
         :param links: The links of this ShowLinkResponse.
-        :type: list[Links]
+        :type links: list[:class:`huaweicloudsdkcdm.v1.Links`]
         """
         self._links = links
 
@@ -90,7 +99,7 @@ class ShowLinkResponse(SdkResponse):
         表/文件迁移不支持哪些数据源迁移到哪些数据源
 
         :param from_to_un_mapping: The from_to_un_mapping of this ShowLinkResponse.
-        :type: str
+        :type from_to_un_mapping: str
         """
         self._from_to_un_mapping = from_to_un_mapping
 
@@ -112,7 +121,7 @@ class ShowLinkResponse(SdkResponse):
         整库迁移支持哪些数据源迁移到哪些数据源
 
         :param batch_from_to_mapping: The batch_from_to_mapping of this ShowLinkResponse.
-        :type: str
+        :type batch_from_to_mapping: str
         """
         self._batch_from_to_mapping = batch_from_to_mapping
 

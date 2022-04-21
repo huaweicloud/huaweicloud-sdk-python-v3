@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateLoginProtectRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateLoginProtectRequest:
     }
 
     def __init__(self, user_id=None, body=None):
-        """UpdateLoginProtectRequest - a model defined in huaweicloud sdk"""
+        """UpdateLoginProtectRequest
+
+        The model defined in huaweicloud sdk
+
+        :param user_id: 待修改登录保护状态信息的IAM用户ID。
+        :type user_id: str
+        :param body: Body of the UpdateLoginProtectRequest
+        :type body: :class:`huaweicloudsdkiam.v3.UpdateLoginProjectReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateLoginProtectRequest:
         待修改登录保护状态信息的IAM用户ID。
 
         :param user_id: The user_id of this UpdateLoginProtectRequest.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -72,7 +79,7 @@ class UpdateLoginProtectRequest:
 
 
         :return: The body of this UpdateLoginProtectRequest.
-        :rtype: UpdateLoginProjectReq
+        :rtype: :class:`huaweicloudsdkiam.v3.UpdateLoginProjectReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateLoginProtectRequest:
 
 
         :param body: The body of this UpdateLoginProtectRequest.
-        :type: UpdateLoginProjectReq
+        :type body: :class:`huaweicloudsdkiam.v3.UpdateLoginProjectReq`
         """
         self._body = body
 

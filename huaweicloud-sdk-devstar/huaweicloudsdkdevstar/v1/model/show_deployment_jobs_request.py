@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDeploymentJobsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowDeploymentJobsRequest:
     }
 
     def __init__(self, x_language=None, application_id=None, environment_tag=None):
-        """ShowDeploymentJobsRequest - a model defined in huaweicloud sdk"""
+        """ShowDeploymentJobsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言类型 中文:zh-cn 英文:en-us
+        :type x_language: str
+        :param application_id: 应用id
+        :type application_id: str
+        :param environment_tag: 环境标识，从 [应用详情接口](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product&#x3D;DevStar&amp;api&#x3D;ShowApplication) 返回报文中的环境信息获取。
+        :type environment_tag: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class ShowDeploymentJobsRequest:
         语言类型 中文:zh-cn 英文:en-us
 
         :param x_language: The x_language of this ShowDeploymentJobsRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -88,7 +97,7 @@ class ShowDeploymentJobsRequest:
         应用id
 
         :param application_id: The application_id of this ShowDeploymentJobsRequest.
-        :type: str
+        :type application_id: str
         """
         self._application_id = application_id
 
@@ -110,7 +119,7 @@ class ShowDeploymentJobsRequest:
         环境标识，从 [应用详情接口](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=DevStar&api=ShowApplication) 返回报文中的环境信息获取。
 
         :param environment_tag: The environment_tag of this ShowDeploymentJobsRequest.
-        :type: str
+        :type environment_tag: str
         """
         self._environment_tag = environment_tag
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateMqsInstanceTopicReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateMqsInstanceTopicReq:
     }
 
     def __init__(self, topics=None):
-        """UpdateMqsInstanceTopicReq - a model defined in huaweicloud sdk"""
+        """UpdateMqsInstanceTopicReq
+
+        The model defined in huaweicloud sdk
+
+        :param topics: Topic列表。
+        :type topics: list[:class:`huaweicloudsdkroma.v2.UpdateTopicObject`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class UpdateMqsInstanceTopicReq:
         Topic列表。
 
         :return: The topics of this UpdateMqsInstanceTopicReq.
-        :rtype: list[UpdateTopicObject]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.UpdateTopicObject`]
         """
         return self._topics
 
@@ -57,7 +62,7 @@ class UpdateMqsInstanceTopicReq:
         Topic列表。
 
         :param topics: The topics of this UpdateMqsInstanceTopicReq.
-        :type: list[UpdateTopicObject]
+        :type topics: list[:class:`huaweicloudsdkroma.v2.UpdateTopicObject`]
         """
         self._topics = topics
 

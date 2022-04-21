@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SimpleFlavor:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class SimpleFlavor:
     }
 
     def __init__(self, id=None, links=None):
-        """SimpleFlavor - a model defined in huaweicloud sdk"""
+        """SimpleFlavor
+
+        The model defined in huaweicloud sdk
+
+        :param id: 云服务器规格的ID。
+        :type id: str
+        :param links: 规格相关快捷链接地址。
+        :type links: list[:class:`huaweicloudsdkecs.v2.Link`]
+        """
         
         
 
@@ -61,7 +68,7 @@ class SimpleFlavor:
         云服务器规格的ID。
 
         :param id: The id of this SimpleFlavor.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -72,7 +79,7 @@ class SimpleFlavor:
         规格相关快捷链接地址。
 
         :return: The links of this SimpleFlavor.
-        :rtype: list[Link]
+        :rtype: list[:class:`huaweicloudsdkecs.v2.Link`]
         """
         return self._links
 
@@ -83,7 +90,7 @@ class SimpleFlavor:
         规格相关快捷链接地址。
 
         :param links: The links of this SimpleFlavor.
-        :type: list[Link]
+        :type links: list[:class:`huaweicloudsdkecs.v2.Link`]
         """
         self._links = links
 

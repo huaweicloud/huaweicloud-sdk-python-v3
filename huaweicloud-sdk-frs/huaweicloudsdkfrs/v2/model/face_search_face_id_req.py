@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FaceSearchFaceIdReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class FaceSearchFaceIdReq:
     }
 
     def __init__(self, filter=None, top_n=None, face_id=None, return_fields=None, threshold=None, sort=None):
-        """FaceSearchFaceIdReq - a model defined in huaweicloud sdk"""
+        """FaceSearchFaceIdReq
+
+        The model defined in huaweicloud sdk
+
+        :param filter: 过滤条件，参考[filter语法](https://support.huaweicloud.com/api-face/face_02_0014.html)。
+        :type filter: str
+        :param top_n: 返回查询到的最相似的N张人脸，N默认为10。
+        :type top_n: int
+        :param face_id: 导入人脸时，系统返回的人脸编号，即人脸ID。
+        :type face_id: str
+        :param return_fields: 指定返回的自定义字段。
+        :type return_fields: list[str]
+        :param threshold: 人脸相似度阈值，低于这个阈值则不返回，取值范围0~1，一般情况下建议取值0.93，默认为0。
+        :type threshold: float
+        :param sort: 支持字段排序，参考[sort语法](https://support.huaweicloud.com/api-face/face_02_0013.html)。
+        :type sort: list[dict(str, str)]
+        """
         
         
 
@@ -82,7 +97,7 @@ class FaceSearchFaceIdReq:
         过滤条件，参考[filter语法](https://support.huaweicloud.com/api-face/face_02_0014.html)。
 
         :param filter: The filter of this FaceSearchFaceIdReq.
-        :type: str
+        :type filter: str
         """
         self._filter = filter
 
@@ -104,7 +119,7 @@ class FaceSearchFaceIdReq:
         返回查询到的最相似的N张人脸，N默认为10。
 
         :param top_n: The top_n of this FaceSearchFaceIdReq.
-        :type: int
+        :type top_n: int
         """
         self._top_n = top_n
 
@@ -126,7 +141,7 @@ class FaceSearchFaceIdReq:
         导入人脸时，系统返回的人脸编号，即人脸ID。
 
         :param face_id: The face_id of this FaceSearchFaceIdReq.
-        :type: str
+        :type face_id: str
         """
         self._face_id = face_id
 
@@ -148,7 +163,7 @@ class FaceSearchFaceIdReq:
         指定返回的自定义字段。
 
         :param return_fields: The return_fields of this FaceSearchFaceIdReq.
-        :type: list[str]
+        :type return_fields: list[str]
         """
         self._return_fields = return_fields
 
@@ -170,7 +185,7 @@ class FaceSearchFaceIdReq:
         人脸相似度阈值，低于这个阈值则不返回，取值范围0~1，一般情况下建议取值0.93，默认为0。
 
         :param threshold: The threshold of this FaceSearchFaceIdReq.
-        :type: float
+        :type threshold: float
         """
         self._threshold = threshold
 
@@ -192,7 +207,7 @@ class FaceSearchFaceIdReq:
         支持字段排序，参考[sort语法](https://support.huaweicloud.com/api-face/face_02_0013.html)。
 
         :param sort: The sort of this FaceSearchFaceIdReq.
-        :type: list[dict(str, str)]
+        :type sort: list[dict(str, str)]
         """
         self._sort = sort
 

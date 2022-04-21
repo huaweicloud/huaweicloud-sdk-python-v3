@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDeviceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -64,7 +63,47 @@ class UpdateDeviceResponse(SdkResponse):
     }
 
     def __init__(self, app_id=None, app_name=None, device_id=None, node_id=None, gateway_id=None, device_name=None, node_type=None, description=None, fw_version=None, sw_version=None, device_sdk_version=None, auth_info=None, product_id=None, product_name=None, status=None, create_time=None, tags=None, extension_info=None):
-        """UpdateDeviceResponse - a model defined in huaweicloud sdk"""
+        """UpdateDeviceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param app_id: 资源空间ID。
+        :type app_id: str
+        :param app_name: 资源空间名称。
+        :type app_name: str
+        :param device_id: 设备ID，用于唯一标识一个设备。在注册设备时直接指定，或者由物联网平台分配获得。由物联网平台分配时，生成规则为\&quot;product_id\&quot; + \&quot;_\&quot; + \&quot;node_id\&quot;拼接而成。
+        :type device_id: str
+        :param node_id: 设备标识码，通常使用IMEI、MAC地址或Serial No作为node_id。
+        :type node_id: str
+        :param gateway_id: 网关ID，用于标识设备所属的父设备，即父设备的设备ID。当设备是直连设备时，gateway_id与设备的device_id一致。当设备是非直连设备时，gateway_id为设备所关联的父设备的device_id。
+        :type gateway_id: str
+        :param device_name: 设备名称。
+        :type device_name: str
+        :param node_type: 设备节点类型。 - ENDPOINT：非直连设备。 - GATEWAY：直连设备或网关。 - UNKNOWN：未知。 
+        :type node_type: str
+        :param description: 设备的描述信息。
+        :type description: str
+        :param fw_version: 设备的固件版本。
+        :type fw_version: str
+        :param sw_version: 设备的软件版本。
+        :type sw_version: str
+        :param device_sdk_version: 设备的sdk信息。
+        :type device_sdk_version: str
+        :param auth_info: 
+        :type auth_info: :class:`huaweicloudsdkiotda.v5.AuthInfo`
+        :param product_id: 设备关联的产品ID，用于唯一标识一个产品模型。
+        :type product_id: str
+        :param product_name: 设备关联的产品名称。
+        :type product_name: str
+        :param status: 设备的状态。 - ONLINE：设备在线。 - OFFLINE：设备离线。 - ABNORMAL：设备异常。 - INACTIVE：设备未激活。 - FROZEN：设备冻结。 
+        :type status: str
+        :param create_time: 在物联网平台注册设备的时间。格式：yyyyMMdd&#39;T&#39;HHmmss&#39;Z&#39;，如20151212T121212Z。
+        :type create_time: str
+        :param tags: 设备的标签列表。
+        :type tags: list[:class:`huaweicloudsdkiotda.v5.TagV5DTO`]
+        :param extension_info: 设备扩展信息。用户可以自定义任何想要的扩展信息，如果在创建设备时为子设备指定该字段，将会通过MQTT接口“平台通知网关子设备新增“将该信息通知给网关。
+        :type extension_info: object
+        """
         
         super(UpdateDeviceResponse, self).__init__()
 
@@ -143,7 +182,7 @@ class UpdateDeviceResponse(SdkResponse):
         资源空间ID。
 
         :param app_id: The app_id of this UpdateDeviceResponse.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -165,7 +204,7 @@ class UpdateDeviceResponse(SdkResponse):
         资源空间名称。
 
         :param app_name: The app_name of this UpdateDeviceResponse.
-        :type: str
+        :type app_name: str
         """
         self._app_name = app_name
 
@@ -187,7 +226,7 @@ class UpdateDeviceResponse(SdkResponse):
         设备ID，用于唯一标识一个设备。在注册设备时直接指定，或者由物联网平台分配获得。由物联网平台分配时，生成规则为\"product_id\" + \"_\" + \"node_id\"拼接而成。
 
         :param device_id: The device_id of this UpdateDeviceResponse.
-        :type: str
+        :type device_id: str
         """
         self._device_id = device_id
 
@@ -209,7 +248,7 @@ class UpdateDeviceResponse(SdkResponse):
         设备标识码，通常使用IMEI、MAC地址或Serial No作为node_id。
 
         :param node_id: The node_id of this UpdateDeviceResponse.
-        :type: str
+        :type node_id: str
         """
         self._node_id = node_id
 
@@ -231,7 +270,7 @@ class UpdateDeviceResponse(SdkResponse):
         网关ID，用于标识设备所属的父设备，即父设备的设备ID。当设备是直连设备时，gateway_id与设备的device_id一致。当设备是非直连设备时，gateway_id为设备所关联的父设备的device_id。
 
         :param gateway_id: The gateway_id of this UpdateDeviceResponse.
-        :type: str
+        :type gateway_id: str
         """
         self._gateway_id = gateway_id
 
@@ -253,7 +292,7 @@ class UpdateDeviceResponse(SdkResponse):
         设备名称。
 
         :param device_name: The device_name of this UpdateDeviceResponse.
-        :type: str
+        :type device_name: str
         """
         self._device_name = device_name
 
@@ -275,7 +314,7 @@ class UpdateDeviceResponse(SdkResponse):
         设备节点类型。 - ENDPOINT：非直连设备。 - GATEWAY：直连设备或网关。 - UNKNOWN：未知。 
 
         :param node_type: The node_type of this UpdateDeviceResponse.
-        :type: str
+        :type node_type: str
         """
         self._node_type = node_type
 
@@ -297,7 +336,7 @@ class UpdateDeviceResponse(SdkResponse):
         设备的描述信息。
 
         :param description: The description of this UpdateDeviceResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -319,7 +358,7 @@ class UpdateDeviceResponse(SdkResponse):
         设备的固件版本。
 
         :param fw_version: The fw_version of this UpdateDeviceResponse.
-        :type: str
+        :type fw_version: str
         """
         self._fw_version = fw_version
 
@@ -341,7 +380,7 @@ class UpdateDeviceResponse(SdkResponse):
         设备的软件版本。
 
         :param sw_version: The sw_version of this UpdateDeviceResponse.
-        :type: str
+        :type sw_version: str
         """
         self._sw_version = sw_version
 
@@ -363,7 +402,7 @@ class UpdateDeviceResponse(SdkResponse):
         设备的sdk信息。
 
         :param device_sdk_version: The device_sdk_version of this UpdateDeviceResponse.
-        :type: str
+        :type device_sdk_version: str
         """
         self._device_sdk_version = device_sdk_version
 
@@ -373,7 +412,7 @@ class UpdateDeviceResponse(SdkResponse):
 
 
         :return: The auth_info of this UpdateDeviceResponse.
-        :rtype: AuthInfo
+        :rtype: :class:`huaweicloudsdkiotda.v5.AuthInfo`
         """
         return self._auth_info
 
@@ -383,7 +422,7 @@ class UpdateDeviceResponse(SdkResponse):
 
 
         :param auth_info: The auth_info of this UpdateDeviceResponse.
-        :type: AuthInfo
+        :type auth_info: :class:`huaweicloudsdkiotda.v5.AuthInfo`
         """
         self._auth_info = auth_info
 
@@ -405,7 +444,7 @@ class UpdateDeviceResponse(SdkResponse):
         设备关联的产品ID，用于唯一标识一个产品模型。
 
         :param product_id: The product_id of this UpdateDeviceResponse.
-        :type: str
+        :type product_id: str
         """
         self._product_id = product_id
 
@@ -427,7 +466,7 @@ class UpdateDeviceResponse(SdkResponse):
         设备关联的产品名称。
 
         :param product_name: The product_name of this UpdateDeviceResponse.
-        :type: str
+        :type product_name: str
         """
         self._product_name = product_name
 
@@ -449,7 +488,7 @@ class UpdateDeviceResponse(SdkResponse):
         设备的状态。 - ONLINE：设备在线。 - OFFLINE：设备离线。 - ABNORMAL：设备异常。 - INACTIVE：设备未激活。 - FROZEN：设备冻结。 
 
         :param status: The status of this UpdateDeviceResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -471,7 +510,7 @@ class UpdateDeviceResponse(SdkResponse):
         在物联网平台注册设备的时间。格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
         :param create_time: The create_time of this UpdateDeviceResponse.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -482,7 +521,7 @@ class UpdateDeviceResponse(SdkResponse):
         设备的标签列表。
 
         :return: The tags of this UpdateDeviceResponse.
-        :rtype: list[TagV5DTO]
+        :rtype: list[:class:`huaweicloudsdkiotda.v5.TagV5DTO`]
         """
         return self._tags
 
@@ -493,7 +532,7 @@ class UpdateDeviceResponse(SdkResponse):
         设备的标签列表。
 
         :param tags: The tags of this UpdateDeviceResponse.
-        :type: list[TagV5DTO]
+        :type tags: list[:class:`huaweicloudsdkiotda.v5.TagV5DTO`]
         """
         self._tags = tags
 
@@ -515,7 +554,7 @@ class UpdateDeviceResponse(SdkResponse):
         设备扩展信息。用户可以自定义任何想要的扩展信息，如果在创建设备时为子设备指定该字段，将会通过MQTT接口“平台通知网关子设备新增“将该信息通知给网关。
 
         :param extension_info: The extension_info of this UpdateDeviceResponse.
-        :type: object
+        :type extension_info: object
         """
         self._extension_info = extension_info
 

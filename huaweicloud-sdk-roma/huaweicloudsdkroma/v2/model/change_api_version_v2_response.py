@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ChangeApiVersionV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ChangeApiVersionV2Response(SdkResponse):
     }
 
     def __init__(self, publish_id=None, api_id=None, api_name=None, env_id=None, remark=None, publish_time=None, version_id=None):
-        """ChangeApiVersionV2Response - a model defined in huaweicloud sdk"""
+        """ChangeApiVersionV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param publish_id: 发布记录的ID
+        :type publish_id: str
+        :param api_id: API编号
+        :type api_id: str
+        :param api_name: API名称
+        :type api_name: str
+        :param env_id: 发布的环境编号
+        :type env_id: str
+        :param remark: 发布描述
+        :type remark: str
+        :param publish_time: 发布时间
+        :type publish_time: datetime
+        :param version_id: 在线的版本号
+        :type version_id: str
+        """
         
         super(ChangeApiVersionV2Response, self).__init__()
 
@@ -88,7 +105,7 @@ class ChangeApiVersionV2Response(SdkResponse):
         发布记录的ID
 
         :param publish_id: The publish_id of this ChangeApiVersionV2Response.
-        :type: str
+        :type publish_id: str
         """
         self._publish_id = publish_id
 
@@ -110,7 +127,7 @@ class ChangeApiVersionV2Response(SdkResponse):
         API编号
 
         :param api_id: The api_id of this ChangeApiVersionV2Response.
-        :type: str
+        :type api_id: str
         """
         self._api_id = api_id
 
@@ -132,7 +149,7 @@ class ChangeApiVersionV2Response(SdkResponse):
         API名称
 
         :param api_name: The api_name of this ChangeApiVersionV2Response.
-        :type: str
+        :type api_name: str
         """
         self._api_name = api_name
 
@@ -154,7 +171,7 @@ class ChangeApiVersionV2Response(SdkResponse):
         发布的环境编号
 
         :param env_id: The env_id of this ChangeApiVersionV2Response.
-        :type: str
+        :type env_id: str
         """
         self._env_id = env_id
 
@@ -176,7 +193,7 @@ class ChangeApiVersionV2Response(SdkResponse):
         发布描述
 
         :param remark: The remark of this ChangeApiVersionV2Response.
-        :type: str
+        :type remark: str
         """
         self._remark = remark
 
@@ -198,7 +215,7 @@ class ChangeApiVersionV2Response(SdkResponse):
         发布时间
 
         :param publish_time: The publish_time of this ChangeApiVersionV2Response.
-        :type: datetime
+        :type publish_time: datetime
         """
         self._publish_time = publish_time
 
@@ -220,7 +237,7 @@ class ChangeApiVersionV2Response(SdkResponse):
         在线的版本号
 
         :param version_id: The version_id of this ChangeApiVersionV2Response.
-        :type: str
+        :type version_id: str
         """
         self._version_id = version_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UploadMetaDataByUrlReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UploadMetaDataByUrlReq:
     }
 
     def __init__(self, upload_metadatas=None):
-        """UploadMetaDataByUrlReq - a model defined in huaweicloud sdk"""
+        """UploadMetaDataByUrlReq
+
+        The model defined in huaweicloud sdk
+
+        :param upload_metadatas: 待拉取创建的媒资元数据
+        :type upload_metadatas: list[:class:`huaweicloudsdkvod.v1.UploadMetaDataByUrl`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class UploadMetaDataByUrlReq:
         待拉取创建的媒资元数据
 
         :return: The upload_metadatas of this UploadMetaDataByUrlReq.
-        :rtype: list[UploadMetaDataByUrl]
+        :rtype: list[:class:`huaweicloudsdkvod.v1.UploadMetaDataByUrl`]
         """
         return self._upload_metadatas
 
@@ -57,7 +62,7 @@ class UploadMetaDataByUrlReq:
         待拉取创建的媒资元数据
 
         :param upload_metadatas: The upload_metadatas of this UploadMetaDataByUrlReq.
-        :type: list[UploadMetaDataByUrl]
+        :type upload_metadatas: list[:class:`huaweicloudsdkvod.v1.UploadMetaDataByUrl`]
         """
         self._upload_metadatas = upload_metadatas
 

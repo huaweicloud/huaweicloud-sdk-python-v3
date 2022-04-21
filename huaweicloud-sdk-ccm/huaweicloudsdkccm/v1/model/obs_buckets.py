@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ObsBuckets:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ObsBuckets:
     }
 
     def __init__(self, bucket_name=None, create_time=None):
-        """ObsBuckets - a model defined in huaweicloud sdk"""
+        """ObsBuckets
+
+        The model defined in huaweicloud sdk
+
+        :param bucket_name: 桶名称。
+        :type bucket_name: str
+        :param create_time: 创建时间,格式为时间戳（毫秒级）。
+        :type create_time: int
+        """
         
         
 
@@ -61,7 +68,7 @@ class ObsBuckets:
         桶名称。
 
         :param bucket_name: The bucket_name of this ObsBuckets.
-        :type: str
+        :type bucket_name: str
         """
         self._bucket_name = bucket_name
 
@@ -83,7 +90,7 @@ class ObsBuckets:
         创建时间,格式为时间戳（毫秒级）。
 
         :param create_time: The create_time of this ObsBuckets.
-        :type: int
+        :type create_time: int
         """
         self._create_time = create_time
 

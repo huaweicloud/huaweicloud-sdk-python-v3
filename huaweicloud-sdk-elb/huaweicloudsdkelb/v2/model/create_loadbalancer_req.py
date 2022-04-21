@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateLoadbalancerReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class CreateLoadbalancerReq:
     }
 
     def __init__(self, tenant_id=None, name=None, description=None, vip_subnet_id=None, vip_address=None, provider=None, admin_state_up=None, enterprise_project_id=None):
-        """CreateLoadbalancerReq - a model defined in huaweicloud sdk"""
+        """CreateLoadbalancerReq
+
+        The model defined in huaweicloud sdk
+
+        :param tenant_id: 负载均衡器所在的项目ID。
+        :type tenant_id: str
+        :param name: 负载均衡器名称。
+        :type name: str
+        :param description: 负载均衡器的描述信息
+        :type description: str
+        :param vip_subnet_id: 负载均衡器所在的子网ID
+        :type vip_subnet_id: str
+        :param vip_address: 负载均衡器的虚拟IP。
+        :type vip_address: str
+        :param provider: 负载均衡器的供应者名称。只支持vlb
+        :type provider: str
+        :param admin_state_up: 负载均衡器的管理状态。只支持设定为true，该字段的值无实际意义。
+        :type admin_state_up: bool
+        :param enterprise_project_id: 企业项目ID。创建负载均衡器时，给负载均衡器绑定企业项目ID。取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。 关于企业项目ID的获取及企业项目特性的详细信息，请参见《企业管理用户指南》。
+        :type enterprise_project_id: str
+        """
         
         
 
@@ -92,7 +111,7 @@ class CreateLoadbalancerReq:
         负载均衡器所在的项目ID。
 
         :param tenant_id: The tenant_id of this CreateLoadbalancerReq.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 
@@ -114,7 +133,7 @@ class CreateLoadbalancerReq:
         负载均衡器名称。
 
         :param name: The name of this CreateLoadbalancerReq.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -136,7 +155,7 @@ class CreateLoadbalancerReq:
         负载均衡器的描述信息
 
         :param description: The description of this CreateLoadbalancerReq.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -158,7 +177,7 @@ class CreateLoadbalancerReq:
         负载均衡器所在的子网ID
 
         :param vip_subnet_id: The vip_subnet_id of this CreateLoadbalancerReq.
-        :type: str
+        :type vip_subnet_id: str
         """
         self._vip_subnet_id = vip_subnet_id
 
@@ -180,7 +199,7 @@ class CreateLoadbalancerReq:
         负载均衡器的虚拟IP。
 
         :param vip_address: The vip_address of this CreateLoadbalancerReq.
-        :type: str
+        :type vip_address: str
         """
         self._vip_address = vip_address
 
@@ -202,7 +221,7 @@ class CreateLoadbalancerReq:
         负载均衡器的供应者名称。只支持vlb
 
         :param provider: The provider of this CreateLoadbalancerReq.
-        :type: str
+        :type provider: str
         """
         self._provider = provider
 
@@ -224,7 +243,7 @@ class CreateLoadbalancerReq:
         负载均衡器的管理状态。只支持设定为true，该字段的值无实际意义。
 
         :param admin_state_up: The admin_state_up of this CreateLoadbalancerReq.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 
@@ -246,7 +265,7 @@ class CreateLoadbalancerReq:
         企业项目ID。创建负载均衡器时，给负载均衡器绑定企业项目ID。取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。 关于企业项目ID的获取及企业项目特性的详细信息，请参见《企业管理用户指南》。
 
         :param enterprise_project_id: The enterprise_project_id of this CreateLoadbalancerReq.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 

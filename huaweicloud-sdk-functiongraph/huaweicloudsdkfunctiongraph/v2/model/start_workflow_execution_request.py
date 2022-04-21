@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StartWorkflowExecutionRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class StartWorkflowExecutionRequest:
     }
 
     def __init__(self, workflow_id=None, x_create_time=None, x_workflow_run_id=None, body=None):
-        """StartWorkflowExecutionRequest - a model defined in huaweicloud sdk"""
+        """StartWorkflowExecutionRequest
+
+        The model defined in huaweicloud sdk
+
+        :param workflow_id: 函数工作流ID
+        :type workflow_id: str
+        :param x_create_time: workflowRun task create time
+        :type x_create_time: str
+        :param x_workflow_run_id: workflowRun id
+        :type x_workflow_run_id: str
+        :param body: Body of the StartWorkflowExecutionRequest
+        :type body: :class:`huaweicloudsdkfunctiongraph.v2.StartWorkflowExecutionRequestBody`
+        """
         
         
 
@@ -72,7 +83,7 @@ class StartWorkflowExecutionRequest:
         函数工作流ID
 
         :param workflow_id: The workflow_id of this StartWorkflowExecutionRequest.
-        :type: str
+        :type workflow_id: str
         """
         self._workflow_id = workflow_id
 
@@ -94,7 +105,7 @@ class StartWorkflowExecutionRequest:
         workflowRun task create time
 
         :param x_create_time: The x_create_time of this StartWorkflowExecutionRequest.
-        :type: str
+        :type x_create_time: str
         """
         self._x_create_time = x_create_time
 
@@ -116,7 +127,7 @@ class StartWorkflowExecutionRequest:
         workflowRun id
 
         :param x_workflow_run_id: The x_workflow_run_id of this StartWorkflowExecutionRequest.
-        :type: str
+        :type x_workflow_run_id: str
         """
         self._x_workflow_run_id = x_workflow_run_id
 
@@ -126,7 +137,7 @@ class StartWorkflowExecutionRequest:
 
 
         :return: The body of this StartWorkflowExecutionRequest.
-        :rtype: StartWorkflowExecutionRequestBody
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.StartWorkflowExecutionRequestBody`
         """
         return self._body
 
@@ -136,7 +147,7 @@ class StartWorkflowExecutionRequest:
 
 
         :param body: The body of this StartWorkflowExecutionRequest.
-        :type: StartWorkflowExecutionRequestBody
+        :type body: :class:`huaweicloudsdkfunctiongraph.v2.StartWorkflowExecutionRequestBody`
         """
         self._body = body
 

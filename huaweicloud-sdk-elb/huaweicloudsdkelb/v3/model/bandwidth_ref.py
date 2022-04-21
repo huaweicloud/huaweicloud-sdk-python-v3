@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BandwidthRef:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BandwidthRef:
     }
 
     def __init__(self, id=None):
-        """BandwidthRef - a model defined in huaweicloud sdk"""
+        """BandwidthRef
+
+        The model defined in huaweicloud sdk
+
+        :param id: 共享带宽的id
+        :type id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class BandwidthRef:
         共享带宽的id
 
         :param id: The id of this BandwidthRef.
-        :type: str
+        :type id: str
         """
         self._id = id
 

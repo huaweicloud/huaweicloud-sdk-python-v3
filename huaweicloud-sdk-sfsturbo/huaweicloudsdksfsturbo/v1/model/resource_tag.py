@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResourceTag:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ResourceTag:
     }
 
     def __init__(self, key=None, value=None):
-        """ResourceTag - a model defined in huaweicloud sdk"""
+        """ResourceTag
+
+        The model defined in huaweicloud sdk
+
+        :param key: 标签的键。  最大长度36个字符。   key不能为空，不能包含非打印字符ASCII(0-31)，“&#x3D;”,“*”,“&lt;”,“&gt;”,“\\”,“,”,“|”,“/”。只能包含大写字母、小写字母、数字，特殊字符\&quot;-\&quot;和\&quot;_\&quot;。
+        :type key: str
+        :param value: 标签的值。  每个值最大长度43个字符，可以为空字符串。  不能包含非打印字符ASCII(0-31)，“&#x3D;”,“*”,“&lt;”,“&gt;”,“\\”,“,”,“|”,“/”。只能包含大写字母、小写字母、数字，特殊字符\&quot;-\&quot;和\&quot;_\&quot;。
+        :type value: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ResourceTag:
         标签的键。  最大长度36个字符。   key不能为空，不能包含非打印字符ASCII(0-31)，“=”,“*”,“<”,“>”,“\\”,“,”,“|”,“/”。只能包含大写字母、小写字母、数字，特殊字符\"-\"和\"_\"。
 
         :param key: The key of this ResourceTag.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -83,7 +90,7 @@ class ResourceTag:
         标签的值。  每个值最大长度43个字符，可以为空字符串。  不能包含非打印字符ASCII(0-31)，“=”,“*”,“<”,“>”,“\\”,“,”,“|”,“/”。只能包含大写字母、小写字母、数字，特殊字符\"-\"和\"_\"。
 
         :param value: The value of this ResourceTag.
-        :type: str
+        :type value: str
         """
         self._value = value
 

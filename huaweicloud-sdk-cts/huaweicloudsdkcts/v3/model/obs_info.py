@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ObsInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ObsInfo:
     }
 
     def __init__(self, bucket_name=None, file_prefix_name=None, is_obs_created=None, is_authorized_bucket=None, bucket_lifecycle=None):
-        """ObsInfo - a model defined in huaweicloud sdk"""
+        """ObsInfo
+
+        The model defined in huaweicloud sdk
+
+        :param bucket_name: 标识OBS桶名称。由数字或字母开头，支持小写字母、数字、“-”、“.”，长度为3～63个字符。
+        :type bucket_name: str
+        :param file_prefix_name: 标识需要存储于OBS的日志文件前缀，0-9，a-z，A-Z，&#39;-&#39;，&#39;.&#39;，&#39;_&#39;长度为0～64字符。
+        :type file_prefix_name: str
+        :param is_obs_created: 标识配置桶是否由追踪器自动创建。
+        :type is_obs_created: bool
+        :param is_authorized_bucket: 标识配置桶是否已经授权给CTS服务账号。
+        :type is_authorized_bucket: bool
+        :param bucket_lifecycle: 标识配置桶内对象存储周期。 当\&quot;tracker_type\&quot;参数值为\&quot;data\&quot;时该参数值有效。
+        :type bucket_lifecycle: int
+        """
         
         
 
@@ -78,7 +91,7 @@ class ObsInfo:
         标识OBS桶名称。由数字或字母开头，支持小写字母、数字、“-”、“.”，长度为3～63个字符。
 
         :param bucket_name: The bucket_name of this ObsInfo.
-        :type: str
+        :type bucket_name: str
         """
         self._bucket_name = bucket_name
 
@@ -100,7 +113,7 @@ class ObsInfo:
         标识需要存储于OBS的日志文件前缀，0-9，a-z，A-Z，'-'，'.'，'_'长度为0～64字符。
 
         :param file_prefix_name: The file_prefix_name of this ObsInfo.
-        :type: str
+        :type file_prefix_name: str
         """
         self._file_prefix_name = file_prefix_name
 
@@ -122,7 +135,7 @@ class ObsInfo:
         标识配置桶是否由追踪器自动创建。
 
         :param is_obs_created: The is_obs_created of this ObsInfo.
-        :type: bool
+        :type is_obs_created: bool
         """
         self._is_obs_created = is_obs_created
 
@@ -144,7 +157,7 @@ class ObsInfo:
         标识配置桶是否已经授权给CTS服务账号。
 
         :param is_authorized_bucket: The is_authorized_bucket of this ObsInfo.
-        :type: bool
+        :type is_authorized_bucket: bool
         """
         self._is_authorized_bucket = is_authorized_bucket
 
@@ -166,7 +179,7 @@ class ObsInfo:
         标识配置桶内对象存储周期。 当\"tracker_type\"参数值为\"data\"时该参数值有效。
 
         :param bucket_lifecycle: The bucket_lifecycle of this ObsInfo.
-        :type: int
+        :type bucket_lifecycle: int
         """
         self._bucket_lifecycle = bucket_lifecycle
 

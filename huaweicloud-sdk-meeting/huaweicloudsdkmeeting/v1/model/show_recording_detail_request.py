@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowRecordingDetailRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowRecordingDetailRequest:
     }
 
     def __init__(self, conf_uuid=None, user_uuid=None, x_authorization_type=None, x_site_id=None):
-        """ShowRecordingDetailRequest - a model defined in huaweicloud sdk"""
+        """ShowRecordingDetailRequest
+
+        The model defined in huaweicloud sdk
+
+        :param conf_uuid: 会议的ConfUUID(通过查询录制列表获取)。
+        :type conf_uuid: str
+        :param user_uuid: 用户的UUID（已在USG注册过的）。
+        :type user_uuid: str
+        :param x_authorization_type: 标识是否为第三方portal过来的请求。
+        :type x_authorization_type: str
+        :param x_site_id: 用于区分到哪个HCSO站点鉴权。
+        :type x_site_id: str
+        """
         
         
 
@@ -72,7 +83,7 @@ class ShowRecordingDetailRequest:
         会议的ConfUUID(通过查询录制列表获取)。
 
         :param conf_uuid: The conf_uuid of this ShowRecordingDetailRequest.
-        :type: str
+        :type conf_uuid: str
         """
         self._conf_uuid = conf_uuid
 
@@ -94,7 +105,7 @@ class ShowRecordingDetailRequest:
         用户的UUID（已在USG注册过的）。
 
         :param user_uuid: The user_uuid of this ShowRecordingDetailRequest.
-        :type: str
+        :type user_uuid: str
         """
         self._user_uuid = user_uuid
 
@@ -116,7 +127,7 @@ class ShowRecordingDetailRequest:
         标识是否为第三方portal过来的请求。
 
         :param x_authorization_type: The x_authorization_type of this ShowRecordingDetailRequest.
-        :type: str
+        :type x_authorization_type: str
         """
         self._x_authorization_type = x_authorization_type
 
@@ -138,7 +149,7 @@ class ShowRecordingDetailRequest:
         用于区分到哪个HCSO站点鉴权。
 
         :param x_site_id: The x_site_id of this ShowRecordingDetailRequest.
-        :type: str
+        :type x_site_id: str
         """
         self._x_site_id = x_site_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ConfigTaskParameterBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ConfigTaskParameterBody:
     }
 
     def __init__(self, check_id=None, ruleset_id=None, language=None, status=None, task_check_settings=None):
-        """ConfigTaskParameterBody - a model defined in huaweicloud sdk"""
+        """ConfigTaskParameterBody
+
+        The model defined in huaweicloud sdk
+
+        :param check_id: 检查工具ID
+        :type check_id: int
+        :param ruleset_id: 规则集ID
+        :type ruleset_id: str
+        :param language: 规则集语言
+        :type language: str
+        :param status: off：关闭，on：开启
+        :type status: str
+        :param task_check_settings: 检查参数信息
+        :type task_check_settings: list[:class:`huaweicloudsdkcodecheck.v2.TaskCheckSettingsItem`]
+        """
         
         
 
@@ -73,7 +86,7 @@ class ConfigTaskParameterBody:
         检查工具ID
 
         :param check_id: The check_id of this ConfigTaskParameterBody.
-        :type: int
+        :type check_id: int
         """
         self._check_id = check_id
 
@@ -95,7 +108,7 @@ class ConfigTaskParameterBody:
         规则集ID
 
         :param ruleset_id: The ruleset_id of this ConfigTaskParameterBody.
-        :type: str
+        :type ruleset_id: str
         """
         self._ruleset_id = ruleset_id
 
@@ -117,7 +130,7 @@ class ConfigTaskParameterBody:
         规则集语言
 
         :param language: The language of this ConfigTaskParameterBody.
-        :type: str
+        :type language: str
         """
         self._language = language
 
@@ -139,7 +152,7 @@ class ConfigTaskParameterBody:
         off：关闭，on：开启
 
         :param status: The status of this ConfigTaskParameterBody.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -150,7 +163,7 @@ class ConfigTaskParameterBody:
         检查参数信息
 
         :return: The task_check_settings of this ConfigTaskParameterBody.
-        :rtype: list[TaskCheckSettingsItem]
+        :rtype: list[:class:`huaweicloudsdkcodecheck.v2.TaskCheckSettingsItem`]
         """
         return self._task_check_settings
 
@@ -161,7 +174,7 @@ class ConfigTaskParameterBody:
         检查参数信息
 
         :param task_check_settings: The task_check_settings of this ConfigTaskParameterBody.
-        :type: list[TaskCheckSettingsItem]
+        :type task_check_settings: list[:class:`huaweicloudsdkcodecheck.v2.TaskCheckSettingsItem`]
         """
         self._task_check_settings = task_check_settings
 

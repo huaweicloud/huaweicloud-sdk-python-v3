@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSessionsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListSessionsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, sessions=None):
-        """ListSessionsResponse - a model defined in huaweicloud sdk"""
+        """ListSessionsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total_count: 总记录数。
+        :type total_count: int
+        :param sessions: 具体信息。
+        :type sessions: list[:class:`huaweicloudsdkdds.v3.QuerySessionResponse`]
+        """
         
         super(ListSessionsResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListSessionsResponse(SdkResponse):
         总记录数。
 
         :param total_count: The total_count of this ListSessionsResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 
@@ -74,7 +81,7 @@ class ListSessionsResponse(SdkResponse):
         具体信息。
 
         :return: The sessions of this ListSessionsResponse.
-        :rtype: list[QuerySessionResponse]
+        :rtype: list[:class:`huaweicloudsdkdds.v3.QuerySessionResponse`]
         """
         return self._sessions
 
@@ -85,7 +92,7 @@ class ListSessionsResponse(SdkResponse):
         具体信息。
 
         :param sessions: The sessions of this ListSessionsResponse.
-        :type: list[QuerySessionResponse]
+        :type sessions: list[:class:`huaweicloudsdkdds.v3.QuerySessionResponse`]
         """
         self._sessions = sessions
 

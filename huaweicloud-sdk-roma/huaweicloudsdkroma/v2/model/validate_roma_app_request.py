@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ValidateRomaAppRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ValidateRomaAppRequest:
     }
 
     def __init__(self, instance_id=None, name=None, id=None, key=None):
-        """ValidateRomaAppRequest - a model defined in huaweicloud sdk"""
+        """ValidateRomaAppRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param name: 应用名称，不支持模糊匹配
+        :type name: str
+        :param id: 应用ID
+        :type id: str
+        :param key: 应用key
+        :type key: str
+        """
         
         
 
@@ -72,7 +83,7 @@ class ValidateRomaAppRequest:
         实例ID
 
         :param instance_id: The instance_id of this ValidateRomaAppRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -94,7 +105,7 @@ class ValidateRomaAppRequest:
         应用名称，不支持模糊匹配
 
         :param name: The name of this ValidateRomaAppRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -116,7 +127,7 @@ class ValidateRomaAppRequest:
         应用ID
 
         :param id: The id of this ValidateRomaAppRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -138,7 +149,7 @@ class ValidateRomaAppRequest:
         应用key
 
         :param key: The key of this ValidateRomaAppRequest.
-        :type: str
+        :type key: str
         """
         self._key = key
 

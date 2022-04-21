@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Counters:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class Counters:
     }
 
     def __init__(self, org_apache_sqoop_submission_counter_sqoop_counters=None):
-        """Counters - a model defined in huaweicloud sdk"""
+        """Counters
+
+        The model defined in huaweicloud sdk
+
+        :param org_apache_sqoop_submission_counter_sqoop_counters: 
+        :type org_apache_sqoop_submission_counter_sqoop_counters: :class:`huaweicloudsdkcdm.v1.Counter`
+        """
         
         
 
@@ -45,7 +50,7 @@ class Counters:
 
 
         :return: The org_apache_sqoop_submission_counter_sqoop_counters of this Counters.
-        :rtype: Counter
+        :rtype: :class:`huaweicloudsdkcdm.v1.Counter`
         """
         return self._org_apache_sqoop_submission_counter_sqoop_counters
 
@@ -55,7 +60,7 @@ class Counters:
 
 
         :param org_apache_sqoop_submission_counter_sqoop_counters: The org_apache_sqoop_submission_counter_sqoop_counters of this Counters.
-        :type: Counter
+        :type org_apache_sqoop_submission_counter_sqoop_counters: :class:`huaweicloudsdkcdm.v1.Counter`
         """
         self._org_apache_sqoop_submission_counter_sqoop_counters = org_apache_sqoop_submission_counter_sqoop_counters
 

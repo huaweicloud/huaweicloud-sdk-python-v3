@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PassportResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -58,7 +57,41 @@ class PassportResult:
     }
 
     def __init__(self, passport_type=None, country_code=None, passport_number=None, nationality=None, surname=None, given_name=None, sex=None, date_of_birth=None, date_of_expiry=None, date_of_issue=None, place_of_birth=None, place_of_issue=None, issuing_authority=None, confidence=None, extra_info=None):
-        """PassportResult - a model defined in huaweicloud sdk"""
+        """PassportResult
+
+        The model defined in huaweicloud sdk
+
+        :param passport_type: 护照类型（P:普通因私护照、W:外交护照、G:公务护照）（英文）。 
+        :type passport_type: str
+        :param country_code: 护照签发国的国家码（英文）。 
+        :type country_code: str
+        :param passport_number: 护照号码（英文）。 
+        :type passport_number: str
+        :param nationality: 护照持有人国籍（英文）。 
+        :type nationality: str
+        :param surname: 姓（英文）。 
+        :type surname: str
+        :param given_name: 名字（英文）。 
+        :type given_name: str
+        :param sex: 性别（英文）。 
+        :type sex: str
+        :param date_of_birth: 出生日期（英文）。 
+        :type date_of_birth: str
+        :param date_of_expiry: 护照有效期（英文）。 
+        :type date_of_expiry: str
+        :param date_of_issue: 护照签发日期（英文）。 
+        :type date_of_issue: str
+        :param place_of_birth: 出生地（英文）。 
+        :type place_of_birth: str
+        :param place_of_issue: 签发地（英文）。 
+        :type place_of_issue: str
+        :param issuing_authority: 签发机构（英文），其中对中国的英文简写统一输出为P.R.China。 
+        :type issuing_authority: str
+        :param confidence: 相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。 
+        :type confidence: object
+        :param extra_info: 默认为空。对于部分常见国家的护照OCR服务，extra_info内会包含护照上由本地官方语言描述的字段信息及其他信息。 如中国护照，里面会包含汉字表达的姓名、出生地等信息。 
+        :type extra_info: object
+        """
         
         
 
@@ -128,7 +161,7 @@ class PassportResult:
         护照类型（P:普通因私护照、W:外交护照、G:公务护照）（英文）。 
 
         :param passport_type: The passport_type of this PassportResult.
-        :type: str
+        :type passport_type: str
         """
         self._passport_type = passport_type
 
@@ -150,7 +183,7 @@ class PassportResult:
         护照签发国的国家码（英文）。 
 
         :param country_code: The country_code of this PassportResult.
-        :type: str
+        :type country_code: str
         """
         self._country_code = country_code
 
@@ -172,7 +205,7 @@ class PassportResult:
         护照号码（英文）。 
 
         :param passport_number: The passport_number of this PassportResult.
-        :type: str
+        :type passport_number: str
         """
         self._passport_number = passport_number
 
@@ -194,7 +227,7 @@ class PassportResult:
         护照持有人国籍（英文）。 
 
         :param nationality: The nationality of this PassportResult.
-        :type: str
+        :type nationality: str
         """
         self._nationality = nationality
 
@@ -216,7 +249,7 @@ class PassportResult:
         姓（英文）。 
 
         :param surname: The surname of this PassportResult.
-        :type: str
+        :type surname: str
         """
         self._surname = surname
 
@@ -238,7 +271,7 @@ class PassportResult:
         名字（英文）。 
 
         :param given_name: The given_name of this PassportResult.
-        :type: str
+        :type given_name: str
         """
         self._given_name = given_name
 
@@ -260,7 +293,7 @@ class PassportResult:
         性别（英文）。 
 
         :param sex: The sex of this PassportResult.
-        :type: str
+        :type sex: str
         """
         self._sex = sex
 
@@ -282,7 +315,7 @@ class PassportResult:
         出生日期（英文）。 
 
         :param date_of_birth: The date_of_birth of this PassportResult.
-        :type: str
+        :type date_of_birth: str
         """
         self._date_of_birth = date_of_birth
 
@@ -304,7 +337,7 @@ class PassportResult:
         护照有效期（英文）。 
 
         :param date_of_expiry: The date_of_expiry of this PassportResult.
-        :type: str
+        :type date_of_expiry: str
         """
         self._date_of_expiry = date_of_expiry
 
@@ -326,7 +359,7 @@ class PassportResult:
         护照签发日期（英文）。 
 
         :param date_of_issue: The date_of_issue of this PassportResult.
-        :type: str
+        :type date_of_issue: str
         """
         self._date_of_issue = date_of_issue
 
@@ -348,7 +381,7 @@ class PassportResult:
         出生地（英文）。 
 
         :param place_of_birth: The place_of_birth of this PassportResult.
-        :type: str
+        :type place_of_birth: str
         """
         self._place_of_birth = place_of_birth
 
@@ -370,7 +403,7 @@ class PassportResult:
         签发地（英文）。 
 
         :param place_of_issue: The place_of_issue of this PassportResult.
-        :type: str
+        :type place_of_issue: str
         """
         self._place_of_issue = place_of_issue
 
@@ -392,7 +425,7 @@ class PassportResult:
         签发机构（英文），其中对中国的英文简写统一输出为P.R.China。 
 
         :param issuing_authority: The issuing_authority of this PassportResult.
-        :type: str
+        :type issuing_authority: str
         """
         self._issuing_authority = issuing_authority
 
@@ -414,7 +447,7 @@ class PassportResult:
         相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。 
 
         :param confidence: The confidence of this PassportResult.
-        :type: object
+        :type confidence: object
         """
         self._confidence = confidence
 
@@ -436,7 +469,7 @@ class PassportResult:
         默认为空。对于部分常见国家的护照OCR服务，extra_info内会包含护照上由本地官方语言描述的字段信息及其他信息。 如中国护照，里面会包含汉字表达的姓名、出生地等信息。 
 
         :param extra_info: The extra_info of this PassportResult.
-        :type: object
+        :type extra_info: object
         """
         self._extra_info = extra_info
 

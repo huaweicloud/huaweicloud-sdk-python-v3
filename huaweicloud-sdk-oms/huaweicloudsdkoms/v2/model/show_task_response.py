@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowTaskResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -94,7 +93,77 @@ class ShowTaskResponse(SdkResponse):
     }
 
     def __init__(self, bandwidth_policy=None, complete_size=None, description=None, dst_node=None, enable_failed_object_recording=None, enable_kms=None, enable_restore=None, error_reason=None, failed_num=None, failed_object_record=None, group_id=None, id=None, is_query_over=None, left_time=None, migrate_since=None, migrate_speed=None, name=None, progress=None, real_size=None, skipped_num=None, src_node=None, start_time=None, status=None, successful_num=None, task_type=None, group_type=None, total_num=None, total_size=None, total_time=None, smn_info=None, source_cdn=None, success_record_error_reason=None, skip_record_error_reason=None):
-        """ShowTaskResponse - a model defined in huaweicloud sdk"""
+        """ShowTaskResponse
+
+        The model defined in huaweicloud sdk
+
+        :param bandwidth_policy: 流量控制策略，每个任务最多可设置5条限速策略。
+        :type bandwidth_policy: list[:class:`huaweicloudsdkoms.v2.BandwidthPolicyDto`]
+        :param complete_size: 任务迁移完成大小（Byte）。
+        :type complete_size: int
+        :param description: 任务描述，没有设置时为空字符串。
+        :type description: str
+        :param dst_node: 
+        :type dst_node: :class:`huaweicloudsdkoms.v2.DstNodeResp`
+        :param enable_failed_object_recording: 是否记录失败对象。开启后，如果有迁移失败对象，会在目的端存储失败对象信息。
+        :type enable_failed_object_recording: bool
+        :param enable_kms: 存储入OBS时是否使用KMS加密。
+        :type enable_kms: bool
+        :param enable_restore: 是否自动解冻归档数据，（由于对象存储解冻需要源端存储等待一定时间，开启自动解冻会对迁移速度有较大影响，建议先完成归档存储数据解冻后再启动迁移）。 开启后，如果遇到归档类型数据，会自动解冻再进行迁移；如果遇到归档类型的对象直接跳过相应对象，系统默认对象迁移失败并记录相关信息到失败对象列表中。
+        :type enable_restore: bool
+        :param error_reason: 
+        :type error_reason: :class:`huaweicloudsdkoms.v2.ErrorReasonResp`
+        :param failed_num: 迁移失败对象数量。
+        :type failed_num: int
+        :param failed_object_record: 
+        :type failed_object_record: :class:`huaweicloudsdkoms.v2.FailedObjectRecordDto`
+        :param group_id: 迁移任务组ID，当任务由迁移任务组创建时会包含迁移任务组的id信息。
+        :type group_id: str
+        :param id: 任务ID。
+        :type id: int
+        :param is_query_over: 迁移任务是否完成源端对象统计数据扫描。
+        :type is_query_over: bool
+        :param left_time: 任务剩余时间（毫秒）。
+        :type left_time: int
+        :param migrate_since: 迁移指定时间（时间戳，毫秒），表示仅迁移在指定时间之后修改的源端待迁移对象。默认为0，表示不设置迁移指定时间。
+        :type migrate_since: int
+        :param migrate_speed: 任务迁移速度（Byte/s）。
+        :type migrate_speed: int
+        :param name: 任务名称。
+        :type name: str
+        :param progress: 任务进度，例如：0.522代表任务进度为52.2%，1代表任务进度为100%。
+        :type progress: float
+        :param real_size: 实际迁移对象总大小（Byte），忽略对象的大小不会统计在内。
+        :type real_size: int
+        :param skipped_num: 迁移忽略对象数（存在以下两种情况会自动跳过：1.源端对象最后修改时间在迁移指定时间前；2.目的端已有该对象。）
+        :type skipped_num: int
+        :param src_node: 
+        :type src_node: :class:`huaweicloudsdkoms.v2.SrcNodeResp`
+        :param start_time: 任务启动时间（Unix时间戳，毫秒）。
+        :type start_time: int
+        :param status: 任务状态。 1：等待调度 2：正在执行 3：停止 4：失败 5：成功
+        :type status: int
+        :param successful_num: 迁移成功对象数量。
+        :type successful_num: int
+        :param task_type: 任务类型，为空默认设置为object。 list：对象列表迁移 object：文件/文件夹迁移 prefix：对象前缀迁移 url_list: url对象列表
+        :type task_type: str
+        :param group_type: 分组类型 NORMAL_TASK：一般迁移任务 SYNC_TASK：同步任务所属迁移任务 GROUP_TASK：任务组所属迁移任务
+        :type group_type: str
+        :param total_num: 迁移任务对象总数量。
+        :type total_num: int
+        :param total_size: 任务迁移总大小（Byte）。
+        :type total_size: int
+        :param total_time: 任务总耗时（毫秒）。
+        :type total_time: int
+        :param smn_info: 
+        :type smn_info: :class:`huaweicloudsdkoms.v2.SmnInfo`
+        :param source_cdn: 
+        :type source_cdn: :class:`huaweicloudsdkoms.v2.SourceCdnResp`
+        :param success_record_error_reason: 迁移成功对象列表记录失败错误码，记录成功时为空
+        :type success_record_error_reason: str
+        :param skip_record_error_reason: 迁移忽略对象列表记录失败错误码,记录记录成功时为空。
+        :type skip_record_error_reason: str
+        """
         
         super(ShowTaskResponse, self).__init__()
 
@@ -207,7 +276,7 @@ class ShowTaskResponse(SdkResponse):
         流量控制策略，每个任务最多可设置5条限速策略。
 
         :return: The bandwidth_policy of this ShowTaskResponse.
-        :rtype: list[BandwidthPolicyDto]
+        :rtype: list[:class:`huaweicloudsdkoms.v2.BandwidthPolicyDto`]
         """
         return self._bandwidth_policy
 
@@ -218,7 +287,7 @@ class ShowTaskResponse(SdkResponse):
         流量控制策略，每个任务最多可设置5条限速策略。
 
         :param bandwidth_policy: The bandwidth_policy of this ShowTaskResponse.
-        :type: list[BandwidthPolicyDto]
+        :type bandwidth_policy: list[:class:`huaweicloudsdkoms.v2.BandwidthPolicyDto`]
         """
         self._bandwidth_policy = bandwidth_policy
 
@@ -240,7 +309,7 @@ class ShowTaskResponse(SdkResponse):
         任务迁移完成大小（Byte）。
 
         :param complete_size: The complete_size of this ShowTaskResponse.
-        :type: int
+        :type complete_size: int
         """
         self._complete_size = complete_size
 
@@ -262,7 +331,7 @@ class ShowTaskResponse(SdkResponse):
         任务描述，没有设置时为空字符串。
 
         :param description: The description of this ShowTaskResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -272,7 +341,7 @@ class ShowTaskResponse(SdkResponse):
 
 
         :return: The dst_node of this ShowTaskResponse.
-        :rtype: DstNodeResp
+        :rtype: :class:`huaweicloudsdkoms.v2.DstNodeResp`
         """
         return self._dst_node
 
@@ -282,7 +351,7 @@ class ShowTaskResponse(SdkResponse):
 
 
         :param dst_node: The dst_node of this ShowTaskResponse.
-        :type: DstNodeResp
+        :type dst_node: :class:`huaweicloudsdkoms.v2.DstNodeResp`
         """
         self._dst_node = dst_node
 
@@ -304,7 +373,7 @@ class ShowTaskResponse(SdkResponse):
         是否记录失败对象。开启后，如果有迁移失败对象，会在目的端存储失败对象信息。
 
         :param enable_failed_object_recording: The enable_failed_object_recording of this ShowTaskResponse.
-        :type: bool
+        :type enable_failed_object_recording: bool
         """
         self._enable_failed_object_recording = enable_failed_object_recording
 
@@ -326,7 +395,7 @@ class ShowTaskResponse(SdkResponse):
         存储入OBS时是否使用KMS加密。
 
         :param enable_kms: The enable_kms of this ShowTaskResponse.
-        :type: bool
+        :type enable_kms: bool
         """
         self._enable_kms = enable_kms
 
@@ -348,7 +417,7 @@ class ShowTaskResponse(SdkResponse):
         是否自动解冻归档数据，（由于对象存储解冻需要源端存储等待一定时间，开启自动解冻会对迁移速度有较大影响，建议先完成归档存储数据解冻后再启动迁移）。 开启后，如果遇到归档类型数据，会自动解冻再进行迁移；如果遇到归档类型的对象直接跳过相应对象，系统默认对象迁移失败并记录相关信息到失败对象列表中。
 
         :param enable_restore: The enable_restore of this ShowTaskResponse.
-        :type: bool
+        :type enable_restore: bool
         """
         self._enable_restore = enable_restore
 
@@ -358,7 +427,7 @@ class ShowTaskResponse(SdkResponse):
 
 
         :return: The error_reason of this ShowTaskResponse.
-        :rtype: ErrorReasonResp
+        :rtype: :class:`huaweicloudsdkoms.v2.ErrorReasonResp`
         """
         return self._error_reason
 
@@ -368,7 +437,7 @@ class ShowTaskResponse(SdkResponse):
 
 
         :param error_reason: The error_reason of this ShowTaskResponse.
-        :type: ErrorReasonResp
+        :type error_reason: :class:`huaweicloudsdkoms.v2.ErrorReasonResp`
         """
         self._error_reason = error_reason
 
@@ -390,7 +459,7 @@ class ShowTaskResponse(SdkResponse):
         迁移失败对象数量。
 
         :param failed_num: The failed_num of this ShowTaskResponse.
-        :type: int
+        :type failed_num: int
         """
         self._failed_num = failed_num
 
@@ -400,7 +469,7 @@ class ShowTaskResponse(SdkResponse):
 
 
         :return: The failed_object_record of this ShowTaskResponse.
-        :rtype: FailedObjectRecordDto
+        :rtype: :class:`huaweicloudsdkoms.v2.FailedObjectRecordDto`
         """
         return self._failed_object_record
 
@@ -410,7 +479,7 @@ class ShowTaskResponse(SdkResponse):
 
 
         :param failed_object_record: The failed_object_record of this ShowTaskResponse.
-        :type: FailedObjectRecordDto
+        :type failed_object_record: :class:`huaweicloudsdkoms.v2.FailedObjectRecordDto`
         """
         self._failed_object_record = failed_object_record
 
@@ -432,7 +501,7 @@ class ShowTaskResponse(SdkResponse):
         迁移任务组ID，当任务由迁移任务组创建时会包含迁移任务组的id信息。
 
         :param group_id: The group_id of this ShowTaskResponse.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -454,7 +523,7 @@ class ShowTaskResponse(SdkResponse):
         任务ID。
 
         :param id: The id of this ShowTaskResponse.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -476,7 +545,7 @@ class ShowTaskResponse(SdkResponse):
         迁移任务是否完成源端对象统计数据扫描。
 
         :param is_query_over: The is_query_over of this ShowTaskResponse.
-        :type: bool
+        :type is_query_over: bool
         """
         self._is_query_over = is_query_over
 
@@ -498,7 +567,7 @@ class ShowTaskResponse(SdkResponse):
         任务剩余时间（毫秒）。
 
         :param left_time: The left_time of this ShowTaskResponse.
-        :type: int
+        :type left_time: int
         """
         self._left_time = left_time
 
@@ -520,7 +589,7 @@ class ShowTaskResponse(SdkResponse):
         迁移指定时间（时间戳，毫秒），表示仅迁移在指定时间之后修改的源端待迁移对象。默认为0，表示不设置迁移指定时间。
 
         :param migrate_since: The migrate_since of this ShowTaskResponse.
-        :type: int
+        :type migrate_since: int
         """
         self._migrate_since = migrate_since
 
@@ -542,7 +611,7 @@ class ShowTaskResponse(SdkResponse):
         任务迁移速度（Byte/s）。
 
         :param migrate_speed: The migrate_speed of this ShowTaskResponse.
-        :type: int
+        :type migrate_speed: int
         """
         self._migrate_speed = migrate_speed
 
@@ -564,7 +633,7 @@ class ShowTaskResponse(SdkResponse):
         任务名称。
 
         :param name: The name of this ShowTaskResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -586,7 +655,7 @@ class ShowTaskResponse(SdkResponse):
         任务进度，例如：0.522代表任务进度为52.2%，1代表任务进度为100%。
 
         :param progress: The progress of this ShowTaskResponse.
-        :type: float
+        :type progress: float
         """
         self._progress = progress
 
@@ -608,7 +677,7 @@ class ShowTaskResponse(SdkResponse):
         实际迁移对象总大小（Byte），忽略对象的大小不会统计在内。
 
         :param real_size: The real_size of this ShowTaskResponse.
-        :type: int
+        :type real_size: int
         """
         self._real_size = real_size
 
@@ -630,7 +699,7 @@ class ShowTaskResponse(SdkResponse):
         迁移忽略对象数（存在以下两种情况会自动跳过：1.源端对象最后修改时间在迁移指定时间前；2.目的端已有该对象。）
 
         :param skipped_num: The skipped_num of this ShowTaskResponse.
-        :type: int
+        :type skipped_num: int
         """
         self._skipped_num = skipped_num
 
@@ -640,7 +709,7 @@ class ShowTaskResponse(SdkResponse):
 
 
         :return: The src_node of this ShowTaskResponse.
-        :rtype: SrcNodeResp
+        :rtype: :class:`huaweicloudsdkoms.v2.SrcNodeResp`
         """
         return self._src_node
 
@@ -650,7 +719,7 @@ class ShowTaskResponse(SdkResponse):
 
 
         :param src_node: The src_node of this ShowTaskResponse.
-        :type: SrcNodeResp
+        :type src_node: :class:`huaweicloudsdkoms.v2.SrcNodeResp`
         """
         self._src_node = src_node
 
@@ -672,7 +741,7 @@ class ShowTaskResponse(SdkResponse):
         任务启动时间（Unix时间戳，毫秒）。
 
         :param start_time: The start_time of this ShowTaskResponse.
-        :type: int
+        :type start_time: int
         """
         self._start_time = start_time
 
@@ -694,7 +763,7 @@ class ShowTaskResponse(SdkResponse):
         任务状态。 1：等待调度 2：正在执行 3：停止 4：失败 5：成功
 
         :param status: The status of this ShowTaskResponse.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -716,7 +785,7 @@ class ShowTaskResponse(SdkResponse):
         迁移成功对象数量。
 
         :param successful_num: The successful_num of this ShowTaskResponse.
-        :type: int
+        :type successful_num: int
         """
         self._successful_num = successful_num
 
@@ -738,7 +807,7 @@ class ShowTaskResponse(SdkResponse):
         任务类型，为空默认设置为object。 list：对象列表迁移 object：文件/文件夹迁移 prefix：对象前缀迁移 url_list: url对象列表
 
         :param task_type: The task_type of this ShowTaskResponse.
-        :type: str
+        :type task_type: str
         """
         self._task_type = task_type
 
@@ -760,7 +829,7 @@ class ShowTaskResponse(SdkResponse):
         分组类型 NORMAL_TASK：一般迁移任务 SYNC_TASK：同步任务所属迁移任务 GROUP_TASK：任务组所属迁移任务
 
         :param group_type: The group_type of this ShowTaskResponse.
-        :type: str
+        :type group_type: str
         """
         self._group_type = group_type
 
@@ -782,7 +851,7 @@ class ShowTaskResponse(SdkResponse):
         迁移任务对象总数量。
 
         :param total_num: The total_num of this ShowTaskResponse.
-        :type: int
+        :type total_num: int
         """
         self._total_num = total_num
 
@@ -804,7 +873,7 @@ class ShowTaskResponse(SdkResponse):
         任务迁移总大小（Byte）。
 
         :param total_size: The total_size of this ShowTaskResponse.
-        :type: int
+        :type total_size: int
         """
         self._total_size = total_size
 
@@ -826,7 +895,7 @@ class ShowTaskResponse(SdkResponse):
         任务总耗时（毫秒）。
 
         :param total_time: The total_time of this ShowTaskResponse.
-        :type: int
+        :type total_time: int
         """
         self._total_time = total_time
 
@@ -836,7 +905,7 @@ class ShowTaskResponse(SdkResponse):
 
 
         :return: The smn_info of this ShowTaskResponse.
-        :rtype: SmnInfo
+        :rtype: :class:`huaweicloudsdkoms.v2.SmnInfo`
         """
         return self._smn_info
 
@@ -846,7 +915,7 @@ class ShowTaskResponse(SdkResponse):
 
 
         :param smn_info: The smn_info of this ShowTaskResponse.
-        :type: SmnInfo
+        :type smn_info: :class:`huaweicloudsdkoms.v2.SmnInfo`
         """
         self._smn_info = smn_info
 
@@ -856,7 +925,7 @@ class ShowTaskResponse(SdkResponse):
 
 
         :return: The source_cdn of this ShowTaskResponse.
-        :rtype: SourceCdnResp
+        :rtype: :class:`huaweicloudsdkoms.v2.SourceCdnResp`
         """
         return self._source_cdn
 
@@ -866,7 +935,7 @@ class ShowTaskResponse(SdkResponse):
 
 
         :param source_cdn: The source_cdn of this ShowTaskResponse.
-        :type: SourceCdnResp
+        :type source_cdn: :class:`huaweicloudsdkoms.v2.SourceCdnResp`
         """
         self._source_cdn = source_cdn
 
@@ -888,7 +957,7 @@ class ShowTaskResponse(SdkResponse):
         迁移成功对象列表记录失败错误码，记录成功时为空
 
         :param success_record_error_reason: The success_record_error_reason of this ShowTaskResponse.
-        :type: str
+        :type success_record_error_reason: str
         """
         self._success_record_error_reason = success_record_error_reason
 
@@ -910,7 +979,7 @@ class ShowTaskResponse(SdkResponse):
         迁移忽略对象列表记录失败错误码,记录记录成功时为空。
 
         :param skip_record_error_reason: The skip_record_error_reason of this ShowTaskResponse.
-        :type: str
+        :type skip_record_error_reason: str
         """
         self._skip_record_error_reason = skip_record_error_reason
 

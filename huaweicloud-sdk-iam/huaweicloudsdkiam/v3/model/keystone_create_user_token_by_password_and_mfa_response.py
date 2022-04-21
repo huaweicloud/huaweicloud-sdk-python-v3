@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneCreateUserTokenByPasswordAndMfaResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class KeystoneCreateUserTokenByPasswordAndMfaResponse(SdkResponse):
     }
 
     def __init__(self, token=None, x_subject_token=None):
-        """KeystoneCreateUserTokenByPasswordAndMfaResponse - a model defined in huaweicloud sdk"""
+        """KeystoneCreateUserTokenByPasswordAndMfaResponse
+
+        The model defined in huaweicloud sdk
+
+        :param token: 
+        :type token: :class:`huaweicloudsdkiam.v3.TokenResult`
+        :param x_subject_token: 
+        :type x_subject_token: str
+        """
         
         super(KeystoneCreateUserTokenByPasswordAndMfaResponse, self).__init__()
 
@@ -51,7 +58,7 @@ class KeystoneCreateUserTokenByPasswordAndMfaResponse(SdkResponse):
 
 
         :return: The token of this KeystoneCreateUserTokenByPasswordAndMfaResponse.
-        :rtype: TokenResult
+        :rtype: :class:`huaweicloudsdkiam.v3.TokenResult`
         """
         return self._token
 
@@ -61,7 +68,7 @@ class KeystoneCreateUserTokenByPasswordAndMfaResponse(SdkResponse):
 
 
         :param token: The token of this KeystoneCreateUserTokenByPasswordAndMfaResponse.
-        :type: TokenResult
+        :type token: :class:`huaweicloudsdkiam.v3.TokenResult`
         """
         self._token = token
 
@@ -81,7 +88,7 @@ class KeystoneCreateUserTokenByPasswordAndMfaResponse(SdkResponse):
 
 
         :param x_subject_token: The x_subject_token of this KeystoneCreateUserTokenByPasswordAndMfaResponse.
-        :type: str
+        :type x_subject_token: str
         """
         self._x_subject_token = x_subject_token
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ReqAllocateDeh:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ReqAllocateDeh:
     }
 
     def __init__(self, name=None, auto_placement=None, availability_zone=None, host_type=None, quantity=None, tags=None):
-        """ReqAllocateDeh - a model defined in huaweicloud sdk"""
+        """ReqAllocateDeh
+
+        The model defined in huaweicloud sdk
+
+        :param name: 专属主机名称。
+        :type name: str
+        :param auto_placement: 在创建云服务器时（未指定专属主机ID），是否允许云服务器自动分配在一台可用的专属主机上。 取值范围：“on”或“off”。 默认值：“on”。
+        :type auto_placement: str
+        :param availability_zone: 专属主机所属AZ。
+        :type availability_zone: str
+        :param host_type: 专属主机类型。
+        :type host_type: str
+        :param quantity: 待分配的专属主机数量。
+        :type quantity: int
+        :param tags: 专属主机标签列表。
+        :type tags: list[:class:`huaweicloudsdkdeh.v1.ResourceTag`]
+        """
         
         
 
@@ -79,7 +94,7 @@ class ReqAllocateDeh:
         专属主机名称。
 
         :param name: The name of this ReqAllocateDeh.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -101,7 +116,7 @@ class ReqAllocateDeh:
         在创建云服务器时（未指定专属主机ID），是否允许云服务器自动分配在一台可用的专属主机上。 取值范围：“on”或“off”。 默认值：“on”。
 
         :param auto_placement: The auto_placement of this ReqAllocateDeh.
-        :type: str
+        :type auto_placement: str
         """
         self._auto_placement = auto_placement
 
@@ -123,7 +138,7 @@ class ReqAllocateDeh:
         专属主机所属AZ。
 
         :param availability_zone: The availability_zone of this ReqAllocateDeh.
-        :type: str
+        :type availability_zone: str
         """
         self._availability_zone = availability_zone
 
@@ -145,7 +160,7 @@ class ReqAllocateDeh:
         专属主机类型。
 
         :param host_type: The host_type of this ReqAllocateDeh.
-        :type: str
+        :type host_type: str
         """
         self._host_type = host_type
 
@@ -167,7 +182,7 @@ class ReqAllocateDeh:
         待分配的专属主机数量。
 
         :param quantity: The quantity of this ReqAllocateDeh.
-        :type: int
+        :type quantity: int
         """
         self._quantity = quantity
 
@@ -178,7 +193,7 @@ class ReqAllocateDeh:
         专属主机标签列表。
 
         :return: The tags of this ReqAllocateDeh.
-        :rtype: list[ResourceTag]
+        :rtype: list[:class:`huaweicloudsdkdeh.v1.ResourceTag`]
         """
         return self._tags
 
@@ -189,7 +204,7 @@ class ReqAllocateDeh:
         专属主机标签列表。
 
         :param tags: The tags of this ReqAllocateDeh.
-        :type: list[ResourceTag]
+        :type tags: list[:class:`huaweicloudsdkdeh.v1.ResourceTag`]
         """
         self._tags = tags
 

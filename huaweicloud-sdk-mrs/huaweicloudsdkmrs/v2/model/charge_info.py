@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ChargeInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ChargeInfo:
     }
 
     def __init__(self, charge_mode=None):
-        """ChargeInfo - a model defined in huaweicloud sdk"""
+        """ChargeInfo
+
+        The model defined in huaweicloud sdk
+
+        :param charge_mode: 计费模式。 取值范围： - prePaid：预付费，即包年/包月。暂不支持。 - postPaid：后付费，即按需计费。
+        :type charge_mode: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ChargeInfo:
         计费模式。 取值范围： - prePaid：预付费，即包年/包月。暂不支持。 - postPaid：后付费，即按需计费。
 
         :param charge_mode: The charge_mode of this ChargeInfo.
-        :type: str
+        :type charge_mode: str
         """
         self._charge_mode = charge_mode
 

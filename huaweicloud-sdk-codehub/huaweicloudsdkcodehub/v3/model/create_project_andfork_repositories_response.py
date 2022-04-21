@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateProjectAndforkRepositoriesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateProjectAndforkRepositoriesResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """CreateProjectAndforkRepositoriesResponse - a model defined in huaweicloud sdk"""
+        """CreateProjectAndforkRepositoriesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param error: 
+        :type error: :class:`huaweicloudsdkcodehub.v3.Error`
+        :param result: 
+        :type result: :class:`huaweicloudsdkcodehub.v3.ProjectRepository`
+        :param status: 响应状态
+        :type status: str
+        """
         
         super(CreateProjectAndforkRepositoriesResponse, self).__init__()
 
@@ -56,7 +65,7 @@ class CreateProjectAndforkRepositoriesResponse(SdkResponse):
 
 
         :return: The error of this CreateProjectAndforkRepositoriesResponse.
-        :rtype: Error
+        :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
         """
         return self._error
 
@@ -66,7 +75,7 @@ class CreateProjectAndforkRepositoriesResponse(SdkResponse):
 
 
         :param error: The error of this CreateProjectAndforkRepositoriesResponse.
-        :type: Error
+        :type error: :class:`huaweicloudsdkcodehub.v3.Error`
         """
         self._error = error
 
@@ -76,7 +85,7 @@ class CreateProjectAndforkRepositoriesResponse(SdkResponse):
 
 
         :return: The result of this CreateProjectAndforkRepositoriesResponse.
-        :rtype: ProjectRepository
+        :rtype: :class:`huaweicloudsdkcodehub.v3.ProjectRepository`
         """
         return self._result
 
@@ -86,7 +95,7 @@ class CreateProjectAndforkRepositoriesResponse(SdkResponse):
 
 
         :param result: The result of this CreateProjectAndforkRepositoriesResponse.
-        :type: ProjectRepository
+        :type result: :class:`huaweicloudsdkcodehub.v3.ProjectRepository`
         """
         self._result = result
 
@@ -108,7 +117,7 @@ class CreateProjectAndforkRepositoriesResponse(SdkResponse):
         响应状态
 
         :param status: The status of this CreateProjectAndforkRepositoriesResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 

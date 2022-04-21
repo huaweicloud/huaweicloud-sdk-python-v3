@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDailyLogResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListDailyLogResponse(SdkResponse):
     }
 
     def __init__(self, total=None, logs=None):
-        """ListDailyLogResponse - a model defined in huaweicloud sdk"""
+        """ListDailyLogResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 弹性IP总数
+        :type total: int
+        :param logs: 异常事件列表
+        :type logs: list[:class:`huaweicloudsdkantiddos.v1.DailyLog`]
+        """
         
         super(ListDailyLogResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListDailyLogResponse(SdkResponse):
         弹性IP总数
 
         :param total: The total of this ListDailyLogResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -74,7 +81,7 @@ class ListDailyLogResponse(SdkResponse):
         异常事件列表
 
         :return: The logs of this ListDailyLogResponse.
-        :rtype: list[DailyLog]
+        :rtype: list[:class:`huaweicloudsdkantiddos.v1.DailyLog`]
         """
         return self._logs
 
@@ -85,7 +92,7 @@ class ListDailyLogResponse(SdkResponse):
         异常事件列表
 
         :param logs: The logs of this ListDailyLogResponse.
-        :type: list[DailyLog]
+        :type logs: list[:class:`huaweicloudsdkantiddos.v1.DailyLog`]
         """
         self._logs = logs
 

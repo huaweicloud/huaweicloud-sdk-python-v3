@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSubnetsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListSubnetsRequest:
     }
 
     def __init__(self, limit=None, marker=None, vpc_id=None):
-        """ListSubnetsRequest - a model defined in huaweicloud sdk"""
+        """ListSubnetsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 每页返回的个数
+        :type limit: int
+        :param marker: 分页查询起始的资源id，为空时查询第一页
+        :type marker: str
+        :param vpc_id: 按照vpc_id过滤查询  企业项目细粒度授权场景下，该字段必传
+        :type vpc_id: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class ListSubnetsRequest:
         每页返回的个数
 
         :param limit: The limit of this ListSubnetsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -90,7 +99,7 @@ class ListSubnetsRequest:
         分页查询起始的资源id，为空时查询第一页
 
         :param marker: The marker of this ListSubnetsRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -112,7 +121,7 @@ class ListSubnetsRequest:
         按照vpc_id过滤查询  企业项目细粒度授权场景下，该字段必传
 
         :param vpc_id: The vpc_id of this ListSubnetsRequest.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LoadBalancer:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -100,7 +99,83 @@ class LoadBalancer:
     }
 
     def __init__(self, id=None, description=None, provisioning_status=None, admin_state_up=None, provider=None, pools=None, listeners=None, operating_status=None, name=None, project_id=None, vip_subnet_cidr_id=None, vip_address=None, vip_port_id=None, tags=None, created_at=None, updated_at=None, guaranteed=None, vpc_id=None, eips=None, ipv6_vip_address=None, ipv6_vip_virsubnet_id=None, ipv6_vip_port_id=None, availability_zone_list=None, enterprise_project_id=None, l4_flavor_id=None, l4_scale_flavor_id=None, l7_flavor_id=None, l7_scale_flavor_id=None, publicips=None, elb_virsubnet_ids=None, elb_virsubnet_type=None, ip_target_enable=None, frozen_scene=None, ipv6_bandwidth=None, deletion_protection_enable=None, autoscaling=None):
-        """LoadBalancer - a model defined in huaweicloud sdk"""
+        """LoadBalancer
+
+        The model defined in huaweicloud sdk
+
+        :param id: 负载均衡器ID。
+        :type id: str
+        :param description: 负载均衡器描述信息。
+        :type description: str
+        :param provisioning_status: 负载均衡器的配置状态。取值： - ACTIVE：使用中。 - PENDING_DELETE：删除中。
+        :type provisioning_status: str
+        :param admin_state_up: 负载均衡器的管理状态。固定为true。
+        :type admin_state_up: bool
+        :param provider: 负载均衡器的生产者名称。固定为vlb。
+        :type provider: str
+        :param pools: 负载均衡器直接关联的后端云服务器组的ID列表。
+        :type pools: list[:class:`huaweicloudsdkelb.v3.PoolRef`]
+        :param listeners: 负载均衡器关联的监听器的ID列表。
+        :type listeners: list[:class:`huaweicloudsdkelb.v3.ListenerRef`]
+        :param operating_status: 负载均衡器的操作状态。取值： - ONLINE：在线。
+        :type operating_status: str
+        :param name: 负载均衡器的名称。
+        :type name: str
+        :param project_id: 负载均衡器所属的项目ID。
+        :type project_id: str
+        :param vip_subnet_cidr_id: 负载均衡器所在子网的IPv4子网ID。
+        :type vip_subnet_cidr_id: str
+        :param vip_address: 负载均衡器的IPv4虚拟IP地址。
+        :type vip_address: str
+        :param vip_port_id: 负载均衡器的IPv4对应的port ID。[创建弹性负载均衡时，会自动为负载均衡创建一个port并关联一个默认的安全组，这个安全组对所有流量不生效。](tag:dt,dt_test,hcso_dt)
+        :type vip_port_id: str
+        :param tags: 负载均衡的标签列表。
+        :type tags: list[:class:`huaweicloudsdkelb.v3.Tag`]
+        :param created_at: 负载均衡器的创建时间。格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;
+        :type created_at: str
+        :param updated_at: 负载均衡器的更新时间。格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;
+        :type updated_at: str
+        :param guaranteed: 是否独享型LB，取值： - false：共享型。 - true：独享型。
+        :type guaranteed: bool
+        :param vpc_id: 负载均衡器所在VPC ID。
+        :type vpc_id: str
+        :param eips: 负载均衡器绑定的EIP。只支持绑定一个EIP。  注：该字段与publicips一致。
+        :type eips: list[:class:`huaweicloudsdkelb.v3.EipInfo`]
+        :param ipv6_vip_address: 双栈类型负载均衡器的IPv6地址。  [不支持IPv6，请勿使用。](tag:dt,dt_test)
+        :type ipv6_vip_address: str
+        :param ipv6_vip_virsubnet_id: 双栈类型负载均衡器所在子网的IPv6网络ID。  [不支持IPv6，请勿使用。](tag:dt,dt_test)
+        :type ipv6_vip_virsubnet_id: str
+        :param ipv6_vip_port_id: 双栈类型负载均衡器的IPv6对应的port ID。  [不支持IPv6，请勿使用。](tag:dt,dt_test)
+        :type ipv6_vip_port_id: str
+        :param availability_zone_list: 负载均衡器所在的可用区列表。
+        :type availability_zone_list: list[str]
+        :param enterprise_project_id: 企业项目ID。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
+        :type enterprise_project_id: str
+        :param l4_flavor_id: 四层Flavor ID。  [hcso场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hws,hcso)
+        :type l4_flavor_id: str
+        :param l4_scale_flavor_id: 四层弹性Flavor ID。  不支持该字段，请勿使用。
+        :type l4_scale_flavor_id: str
+        :param l7_flavor_id: 七层Flavor ID。  [hcso场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hws,hcso)
+        :type l7_flavor_id: str
+        :param l7_scale_flavor_id: 七层弹性Flavor ID。  不支持该字段，请勿使用。
+        :type l7_scale_flavor_id: str
+        :param publicips: 负载均衡器绑定的公网IP。只支持绑定一个公网IP。  注：该字段与eips一致。
+        :type publicips: list[:class:`huaweicloudsdkelb.v3.PublicIpInfo`]
+        :param elb_virsubnet_ids: 下联面子网的网络ID列表。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的id得到。  使用说明： - 若不指定该字段，则会在当前负载均衡器所在子网作为下联面子网。  - 若指定多个下联面子网，则按顺序优先使用第一个子网来为负载均衡器下联面端口分配ip地址。  - 下联面子网必须属于该LB所在的VPC。  - 不支持边缘云子网。
+        :type elb_virsubnet_ids: list[str]
+        :param elb_virsubnet_type: 下联面子网类型 - ipv4：ipv4 - dualstack：双栈
+        :type elb_virsubnet_type: str
+        :param ip_target_enable: 是否启用跨VPC后端转发。开启跨VPC后端转发后，后端服务器组支持添加其他VPC、其他公有云、云下数据中心的服务器。取值： - true：开启。 - false：不开启。 [仅独享型负载均衡器支持该特性。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42,dt,dt_test) [不支持该字段，请勿使用。](tag:dt,dt_test)
+        :type ip_target_enable: bool
+        :param frozen_scene: 负载均衡器的冻结场景。若负载均衡器有多个冻结场景，用逗号分隔。取值： - POLICE：公安冻结场景。 - ILLEGAL：违规冻结场景。 - VERIFY：客户未实名认证冻结场景。 - RTNER：合作伙伴冻结（合作伙伴冻结子客户资源）。 - REAR：欠费冻结场景。  [不支持该字段，请勿使用。](tag:dt,dt_test)
+        :type frozen_scene: str
+        :param ipv6_bandwidth: 
+        :type ipv6_bandwidth: :class:`huaweicloudsdkelb.v3.BandwidthRef`
+        :param deletion_protection_enable: 是否开启删除保护，取值： - false：不开启。 - true：开启。  仅当前局点启用删除保护特性后才会返回该字段。  &gt;退场时需要先关闭所有资源的删除保护开关。
+        :type deletion_protection_enable: bool
+        :param autoscaling: 
+        :type autoscaling: :class:`huaweicloudsdkelb.v3.AutoscalingRef`
+        """
         
         
 
@@ -199,7 +274,7 @@ class LoadBalancer:
         负载均衡器ID。
 
         :param id: The id of this LoadBalancer.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -221,7 +296,7 @@ class LoadBalancer:
         负载均衡器描述信息。
 
         :param description: The description of this LoadBalancer.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -243,7 +318,7 @@ class LoadBalancer:
         负载均衡器的配置状态。取值： - ACTIVE：使用中。 - PENDING_DELETE：删除中。
 
         :param provisioning_status: The provisioning_status of this LoadBalancer.
-        :type: str
+        :type provisioning_status: str
         """
         self._provisioning_status = provisioning_status
 
@@ -265,7 +340,7 @@ class LoadBalancer:
         负载均衡器的管理状态。固定为true。
 
         :param admin_state_up: The admin_state_up of this LoadBalancer.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 
@@ -287,7 +362,7 @@ class LoadBalancer:
         负载均衡器的生产者名称。固定为vlb。
 
         :param provider: The provider of this LoadBalancer.
-        :type: str
+        :type provider: str
         """
         self._provider = provider
 
@@ -298,7 +373,7 @@ class LoadBalancer:
         负载均衡器直接关联的后端云服务器组的ID列表。
 
         :return: The pools of this LoadBalancer.
-        :rtype: list[PoolRef]
+        :rtype: list[:class:`huaweicloudsdkelb.v3.PoolRef`]
         """
         return self._pools
 
@@ -309,7 +384,7 @@ class LoadBalancer:
         负载均衡器直接关联的后端云服务器组的ID列表。
 
         :param pools: The pools of this LoadBalancer.
-        :type: list[PoolRef]
+        :type pools: list[:class:`huaweicloudsdkelb.v3.PoolRef`]
         """
         self._pools = pools
 
@@ -320,7 +395,7 @@ class LoadBalancer:
         负载均衡器关联的监听器的ID列表。
 
         :return: The listeners of this LoadBalancer.
-        :rtype: list[ListenerRef]
+        :rtype: list[:class:`huaweicloudsdkelb.v3.ListenerRef`]
         """
         return self._listeners
 
@@ -331,7 +406,7 @@ class LoadBalancer:
         负载均衡器关联的监听器的ID列表。
 
         :param listeners: The listeners of this LoadBalancer.
-        :type: list[ListenerRef]
+        :type listeners: list[:class:`huaweicloudsdkelb.v3.ListenerRef`]
         """
         self._listeners = listeners
 
@@ -353,7 +428,7 @@ class LoadBalancer:
         负载均衡器的操作状态。取值： - ONLINE：在线。
 
         :param operating_status: The operating_status of this LoadBalancer.
-        :type: str
+        :type operating_status: str
         """
         self._operating_status = operating_status
 
@@ -375,7 +450,7 @@ class LoadBalancer:
         负载均衡器的名称。
 
         :param name: The name of this LoadBalancer.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -397,7 +472,7 @@ class LoadBalancer:
         负载均衡器所属的项目ID。
 
         :param project_id: The project_id of this LoadBalancer.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -419,7 +494,7 @@ class LoadBalancer:
         负载均衡器所在子网的IPv4子网ID。
 
         :param vip_subnet_cidr_id: The vip_subnet_cidr_id of this LoadBalancer.
-        :type: str
+        :type vip_subnet_cidr_id: str
         """
         self._vip_subnet_cidr_id = vip_subnet_cidr_id
 
@@ -441,7 +516,7 @@ class LoadBalancer:
         负载均衡器的IPv4虚拟IP地址。
 
         :param vip_address: The vip_address of this LoadBalancer.
-        :type: str
+        :type vip_address: str
         """
         self._vip_address = vip_address
 
@@ -463,7 +538,7 @@ class LoadBalancer:
         负载均衡器的IPv4对应的port ID。[创建弹性负载均衡时，会自动为负载均衡创建一个port并关联一个默认的安全组，这个安全组对所有流量不生效。](tag:dt,dt_test,hcso_dt)
 
         :param vip_port_id: The vip_port_id of this LoadBalancer.
-        :type: str
+        :type vip_port_id: str
         """
         self._vip_port_id = vip_port_id
 
@@ -474,7 +549,7 @@ class LoadBalancer:
         负载均衡的标签列表。
 
         :return: The tags of this LoadBalancer.
-        :rtype: list[Tag]
+        :rtype: list[:class:`huaweicloudsdkelb.v3.Tag`]
         """
         return self._tags
 
@@ -485,7 +560,7 @@ class LoadBalancer:
         负载均衡的标签列表。
 
         :param tags: The tags of this LoadBalancer.
-        :type: list[Tag]
+        :type tags: list[:class:`huaweicloudsdkelb.v3.Tag`]
         """
         self._tags = tags
 
@@ -507,7 +582,7 @@ class LoadBalancer:
         负载均衡器的创建时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'
 
         :param created_at: The created_at of this LoadBalancer.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -529,7 +604,7 @@ class LoadBalancer:
         负载均衡器的更新时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'
 
         :param updated_at: The updated_at of this LoadBalancer.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 
@@ -551,7 +626,7 @@ class LoadBalancer:
         是否独享型LB，取值： - false：共享型。 - true：独享型。
 
         :param guaranteed: The guaranteed of this LoadBalancer.
-        :type: bool
+        :type guaranteed: bool
         """
         self._guaranteed = guaranteed
 
@@ -573,7 +648,7 @@ class LoadBalancer:
         负载均衡器所在VPC ID。
 
         :param vpc_id: The vpc_id of this LoadBalancer.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -584,7 +659,7 @@ class LoadBalancer:
         负载均衡器绑定的EIP。只支持绑定一个EIP。  注：该字段与publicips一致。
 
         :return: The eips of this LoadBalancer.
-        :rtype: list[EipInfo]
+        :rtype: list[:class:`huaweicloudsdkelb.v3.EipInfo`]
         """
         return self._eips
 
@@ -595,7 +670,7 @@ class LoadBalancer:
         负载均衡器绑定的EIP。只支持绑定一个EIP。  注：该字段与publicips一致。
 
         :param eips: The eips of this LoadBalancer.
-        :type: list[EipInfo]
+        :type eips: list[:class:`huaweicloudsdkelb.v3.EipInfo`]
         """
         self._eips = eips
 
@@ -617,7 +692,7 @@ class LoadBalancer:
         双栈类型负载均衡器的IPv6地址。  [不支持IPv6，请勿使用。](tag:dt,dt_test)
 
         :param ipv6_vip_address: The ipv6_vip_address of this LoadBalancer.
-        :type: str
+        :type ipv6_vip_address: str
         """
         self._ipv6_vip_address = ipv6_vip_address
 
@@ -639,7 +714,7 @@ class LoadBalancer:
         双栈类型负载均衡器所在子网的IPv6网络ID。  [不支持IPv6，请勿使用。](tag:dt,dt_test)
 
         :param ipv6_vip_virsubnet_id: The ipv6_vip_virsubnet_id of this LoadBalancer.
-        :type: str
+        :type ipv6_vip_virsubnet_id: str
         """
         self._ipv6_vip_virsubnet_id = ipv6_vip_virsubnet_id
 
@@ -661,7 +736,7 @@ class LoadBalancer:
         双栈类型负载均衡器的IPv6对应的port ID。  [不支持IPv6，请勿使用。](tag:dt,dt_test)
 
         :param ipv6_vip_port_id: The ipv6_vip_port_id of this LoadBalancer.
-        :type: str
+        :type ipv6_vip_port_id: str
         """
         self._ipv6_vip_port_id = ipv6_vip_port_id
 
@@ -683,7 +758,7 @@ class LoadBalancer:
         负载均衡器所在的可用区列表。
 
         :param availability_zone_list: The availability_zone_list of this LoadBalancer.
-        :type: list[str]
+        :type availability_zone_list: list[str]
         """
         self._availability_zone_list = availability_zone_list
 
@@ -705,7 +780,7 @@ class LoadBalancer:
         企业项目ID。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
 
         :param enterprise_project_id: The enterprise_project_id of this LoadBalancer.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -727,7 +802,7 @@ class LoadBalancer:
         四层Flavor ID。  [hcso场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hws,hcso)
 
         :param l4_flavor_id: The l4_flavor_id of this LoadBalancer.
-        :type: str
+        :type l4_flavor_id: str
         """
         self._l4_flavor_id = l4_flavor_id
 
@@ -749,7 +824,7 @@ class LoadBalancer:
         四层弹性Flavor ID。  不支持该字段，请勿使用。
 
         :param l4_scale_flavor_id: The l4_scale_flavor_id of this LoadBalancer.
-        :type: str
+        :type l4_scale_flavor_id: str
         """
         self._l4_scale_flavor_id = l4_scale_flavor_id
 
@@ -771,7 +846,7 @@ class LoadBalancer:
         七层Flavor ID。  [hcso场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hws,hcso)
 
         :param l7_flavor_id: The l7_flavor_id of this LoadBalancer.
-        :type: str
+        :type l7_flavor_id: str
         """
         self._l7_flavor_id = l7_flavor_id
 
@@ -793,7 +868,7 @@ class LoadBalancer:
         七层弹性Flavor ID。  不支持该字段，请勿使用。
 
         :param l7_scale_flavor_id: The l7_scale_flavor_id of this LoadBalancer.
-        :type: str
+        :type l7_scale_flavor_id: str
         """
         self._l7_scale_flavor_id = l7_scale_flavor_id
 
@@ -804,7 +879,7 @@ class LoadBalancer:
         负载均衡器绑定的公网IP。只支持绑定一个公网IP。  注：该字段与eips一致。
 
         :return: The publicips of this LoadBalancer.
-        :rtype: list[PublicIpInfo]
+        :rtype: list[:class:`huaweicloudsdkelb.v3.PublicIpInfo`]
         """
         return self._publicips
 
@@ -815,7 +890,7 @@ class LoadBalancer:
         负载均衡器绑定的公网IP。只支持绑定一个公网IP。  注：该字段与eips一致。
 
         :param publicips: The publicips of this LoadBalancer.
-        :type: list[PublicIpInfo]
+        :type publicips: list[:class:`huaweicloudsdkelb.v3.PublicIpInfo`]
         """
         self._publicips = publicips
 
@@ -837,7 +912,7 @@ class LoadBalancer:
         下联面子网的网络ID列表。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的id得到。  使用说明： - 若不指定该字段，则会在当前负载均衡器所在子网作为下联面子网。  - 若指定多个下联面子网，则按顺序优先使用第一个子网来为负载均衡器下联面端口分配ip地址。  - 下联面子网必须属于该LB所在的VPC。  - 不支持边缘云子网。
 
         :param elb_virsubnet_ids: The elb_virsubnet_ids of this LoadBalancer.
-        :type: list[str]
+        :type elb_virsubnet_ids: list[str]
         """
         self._elb_virsubnet_ids = elb_virsubnet_ids
 
@@ -859,7 +934,7 @@ class LoadBalancer:
         下联面子网类型 - ipv4：ipv4 - dualstack：双栈
 
         :param elb_virsubnet_type: The elb_virsubnet_type of this LoadBalancer.
-        :type: str
+        :type elb_virsubnet_type: str
         """
         self._elb_virsubnet_type = elb_virsubnet_type
 
@@ -881,7 +956,7 @@ class LoadBalancer:
         是否启用跨VPC后端转发。开启跨VPC后端转发后，后端服务器组支持添加其他VPC、其他公有云、云下数据中心的服务器。取值： - true：开启。 - false：不开启。 [仅独享型负载均衡器支持该特性。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42,dt,dt_test) [不支持该字段，请勿使用。](tag:dt,dt_test)
 
         :param ip_target_enable: The ip_target_enable of this LoadBalancer.
-        :type: bool
+        :type ip_target_enable: bool
         """
         self._ip_target_enable = ip_target_enable
 
@@ -903,7 +978,7 @@ class LoadBalancer:
         负载均衡器的冻结场景。若负载均衡器有多个冻结场景，用逗号分隔。取值： - POLICE：公安冻结场景。 - ILLEGAL：违规冻结场景。 - VERIFY：客户未实名认证冻结场景。 - RTNER：合作伙伴冻结（合作伙伴冻结子客户资源）。 - REAR：欠费冻结场景。  [不支持该字段，请勿使用。](tag:dt,dt_test)
 
         :param frozen_scene: The frozen_scene of this LoadBalancer.
-        :type: str
+        :type frozen_scene: str
         """
         self._frozen_scene = frozen_scene
 
@@ -913,7 +988,7 @@ class LoadBalancer:
 
 
         :return: The ipv6_bandwidth of this LoadBalancer.
-        :rtype: BandwidthRef
+        :rtype: :class:`huaweicloudsdkelb.v3.BandwidthRef`
         """
         return self._ipv6_bandwidth
 
@@ -923,7 +998,7 @@ class LoadBalancer:
 
 
         :param ipv6_bandwidth: The ipv6_bandwidth of this LoadBalancer.
-        :type: BandwidthRef
+        :type ipv6_bandwidth: :class:`huaweicloudsdkelb.v3.BandwidthRef`
         """
         self._ipv6_bandwidth = ipv6_bandwidth
 
@@ -945,7 +1020,7 @@ class LoadBalancer:
         是否开启删除保护，取值： - false：不开启。 - true：开启。  仅当前局点启用删除保护特性后才会返回该字段。  >退场时需要先关闭所有资源的删除保护开关。
 
         :param deletion_protection_enable: The deletion_protection_enable of this LoadBalancer.
-        :type: bool
+        :type deletion_protection_enable: bool
         """
         self._deletion_protection_enable = deletion_protection_enable
 
@@ -955,7 +1030,7 @@ class LoadBalancer:
 
 
         :return: The autoscaling of this LoadBalancer.
-        :rtype: AutoscalingRef
+        :rtype: :class:`huaweicloudsdkelb.v3.AutoscalingRef`
         """
         return self._autoscaling
 
@@ -965,7 +1040,7 @@ class LoadBalancer:
 
 
         :param autoscaling: The autoscaling of this LoadBalancer.
-        :type: AutoscalingRef
+        :type autoscaling: :class:`huaweicloudsdkelb.v3.AutoscalingRef`
         """
         self._autoscaling = autoscaling
 

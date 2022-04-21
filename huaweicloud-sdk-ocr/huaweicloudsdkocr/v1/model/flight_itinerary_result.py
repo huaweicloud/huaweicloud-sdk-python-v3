@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FlightItineraryResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -66,7 +65,49 @@ class FlightItineraryResult:
     }
 
     def __init__(self, serial_number=None, passenger_name=None, id_number=None, endorsements_restrictions=None, order_number=None, fare=None, caac_development_fund=None, fuel_surcharge=None, other_taxes=None, total=None, e_ticket_number=None, check_code=None, reference_information=None, insurance=None, agent_code=None, issue_organization=None, issue_date=None, itinerary_list=None, confidence=None):
-        """FlightItineraryResult - a model defined in huaweicloud sdk"""
+        """FlightItineraryResult
+
+        The model defined in huaweicloud sdk
+
+        :param serial_number: 印刷序号。 
+        :type serial_number: str
+        :param passenger_name: 旅客姓名。 
+        :type passenger_name: str
+        :param id_number: 有效身份证件号码。 
+        :type id_number: str
+        :param endorsements_restrictions: 备注。 
+        :type endorsements_restrictions: str
+        :param order_number: 订单号。 
+        :type order_number: str
+        :param fare: 票价。 
+        :type fare: str
+        :param caac_development_fund: 民航（CAAC)发展基金。 
+        :type caac_development_fund: str
+        :param fuel_surcharge: 燃油附加费。 
+        :type fuel_surcharge: str
+        :param other_taxes: 其他税费。 
+        :type other_taxes: str
+        :param total: 合计。 
+        :type total: str
+        :param e_ticket_number: 电子客票号码。 
+        :type e_ticket_number: str
+        :param check_code: 验证码。 
+        :type check_code: str
+        :param reference_information: 提示信息。 
+        :type reference_information: str
+        :param insurance: 保险费。 
+        :type insurance: str
+        :param agent_code: 销售单位代号。 
+        :type agent_code: str
+        :param issue_organization: 填开单位。 
+        :type issue_organization: str
+        :param issue_date: 填开日期。 
+        :type issue_date: str
+        :param itinerary_list: 机票行程列表。 
+        :type itinerary_list: list[:class:`huaweicloudsdkocr.v1.ItineraryList`]
+        :param confidence: 相关字段的置信度信息，取值范围0~1。  置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。  置信度由算法给出，不直接等价于对应字段的准确率。  &gt; 说明：  - （1）置信度中的相关字段均与返回值中的相关字段一一对应；  - （2）置信度中的itinerary_list的顺序与返回值中的itinerary_list的顺序是一致的。 
+        :type confidence: object
+        """
         
         
 
@@ -148,7 +189,7 @@ class FlightItineraryResult:
         印刷序号。 
 
         :param serial_number: The serial_number of this FlightItineraryResult.
-        :type: str
+        :type serial_number: str
         """
         self._serial_number = serial_number
 
@@ -170,7 +211,7 @@ class FlightItineraryResult:
         旅客姓名。 
 
         :param passenger_name: The passenger_name of this FlightItineraryResult.
-        :type: str
+        :type passenger_name: str
         """
         self._passenger_name = passenger_name
 
@@ -192,7 +233,7 @@ class FlightItineraryResult:
         有效身份证件号码。 
 
         :param id_number: The id_number of this FlightItineraryResult.
-        :type: str
+        :type id_number: str
         """
         self._id_number = id_number
 
@@ -214,7 +255,7 @@ class FlightItineraryResult:
         备注。 
 
         :param endorsements_restrictions: The endorsements_restrictions of this FlightItineraryResult.
-        :type: str
+        :type endorsements_restrictions: str
         """
         self._endorsements_restrictions = endorsements_restrictions
 
@@ -236,7 +277,7 @@ class FlightItineraryResult:
         订单号。 
 
         :param order_number: The order_number of this FlightItineraryResult.
-        :type: str
+        :type order_number: str
         """
         self._order_number = order_number
 
@@ -258,7 +299,7 @@ class FlightItineraryResult:
         票价。 
 
         :param fare: The fare of this FlightItineraryResult.
-        :type: str
+        :type fare: str
         """
         self._fare = fare
 
@@ -280,7 +321,7 @@ class FlightItineraryResult:
         民航（CAAC)发展基金。 
 
         :param caac_development_fund: The caac_development_fund of this FlightItineraryResult.
-        :type: str
+        :type caac_development_fund: str
         """
         self._caac_development_fund = caac_development_fund
 
@@ -302,7 +343,7 @@ class FlightItineraryResult:
         燃油附加费。 
 
         :param fuel_surcharge: The fuel_surcharge of this FlightItineraryResult.
-        :type: str
+        :type fuel_surcharge: str
         """
         self._fuel_surcharge = fuel_surcharge
 
@@ -324,7 +365,7 @@ class FlightItineraryResult:
         其他税费。 
 
         :param other_taxes: The other_taxes of this FlightItineraryResult.
-        :type: str
+        :type other_taxes: str
         """
         self._other_taxes = other_taxes
 
@@ -346,7 +387,7 @@ class FlightItineraryResult:
         合计。 
 
         :param total: The total of this FlightItineraryResult.
-        :type: str
+        :type total: str
         """
         self._total = total
 
@@ -368,7 +409,7 @@ class FlightItineraryResult:
         电子客票号码。 
 
         :param e_ticket_number: The e_ticket_number of this FlightItineraryResult.
-        :type: str
+        :type e_ticket_number: str
         """
         self._e_ticket_number = e_ticket_number
 
@@ -390,7 +431,7 @@ class FlightItineraryResult:
         验证码。 
 
         :param check_code: The check_code of this FlightItineraryResult.
-        :type: str
+        :type check_code: str
         """
         self._check_code = check_code
 
@@ -412,7 +453,7 @@ class FlightItineraryResult:
         提示信息。 
 
         :param reference_information: The reference_information of this FlightItineraryResult.
-        :type: str
+        :type reference_information: str
         """
         self._reference_information = reference_information
 
@@ -434,7 +475,7 @@ class FlightItineraryResult:
         保险费。 
 
         :param insurance: The insurance of this FlightItineraryResult.
-        :type: str
+        :type insurance: str
         """
         self._insurance = insurance
 
@@ -456,7 +497,7 @@ class FlightItineraryResult:
         销售单位代号。 
 
         :param agent_code: The agent_code of this FlightItineraryResult.
-        :type: str
+        :type agent_code: str
         """
         self._agent_code = agent_code
 
@@ -478,7 +519,7 @@ class FlightItineraryResult:
         填开单位。 
 
         :param issue_organization: The issue_organization of this FlightItineraryResult.
-        :type: str
+        :type issue_organization: str
         """
         self._issue_organization = issue_organization
 
@@ -500,7 +541,7 @@ class FlightItineraryResult:
         填开日期。 
 
         :param issue_date: The issue_date of this FlightItineraryResult.
-        :type: str
+        :type issue_date: str
         """
         self._issue_date = issue_date
 
@@ -511,7 +552,7 @@ class FlightItineraryResult:
         机票行程列表。 
 
         :return: The itinerary_list of this FlightItineraryResult.
-        :rtype: list[ItineraryList]
+        :rtype: list[:class:`huaweicloudsdkocr.v1.ItineraryList`]
         """
         return self._itinerary_list
 
@@ -522,7 +563,7 @@ class FlightItineraryResult:
         机票行程列表。 
 
         :param itinerary_list: The itinerary_list of this FlightItineraryResult.
-        :type: list[ItineraryList]
+        :type itinerary_list: list[:class:`huaweicloudsdkocr.v1.ItineraryList`]
         """
         self._itinerary_list = itinerary_list
 
@@ -544,7 +585,7 @@ class FlightItineraryResult:
         相关字段的置信度信息，取值范围0~1。  置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。  置信度由算法给出，不直接等价于对应字段的准确率。  > 说明：  - （1）置信度中的相关字段均与返回值中的相关字段一一对应；  - （2）置信度中的itinerary_list的顺序与返回值中的itinerary_list的顺序是一致的。 
 
         :param confidence: The confidence of this FlightItineraryResult.
-        :type: object
+        :type confidence: object
         """
         self._confidence = confidence
 

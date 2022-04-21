@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchSetSmnResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchSetSmnResponse(SdkResponse):
     }
 
     def __init__(self, results=None, count=None):
-        """BatchSetSmnResponse - a model defined in huaweicloud sdk"""
+        """BatchSetSmnResponse
+
+        The model defined in huaweicloud sdk
+
+        :param results: 
+        :type results: list[:class:`huaweicloudsdkdrs.v3.ImportSmnResp`]
+        :param count: 
+        :type count: int
+        """
         
         super(BatchSetSmnResponse, self).__init__()
 
@@ -51,7 +58,7 @@ class BatchSetSmnResponse(SdkResponse):
 
 
         :return: The results of this BatchSetSmnResponse.
-        :rtype: list[ImportSmnResp]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.ImportSmnResp`]
         """
         return self._results
 
@@ -61,7 +68,7 @@ class BatchSetSmnResponse(SdkResponse):
 
 
         :param results: The results of this BatchSetSmnResponse.
-        :type: list[ImportSmnResp]
+        :type results: list[:class:`huaweicloudsdkdrs.v3.ImportSmnResp`]
         """
         self._results = results
 
@@ -81,7 +88,7 @@ class BatchSetSmnResponse(SdkResponse):
 
 
         :param count: The count of this BatchSetSmnResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

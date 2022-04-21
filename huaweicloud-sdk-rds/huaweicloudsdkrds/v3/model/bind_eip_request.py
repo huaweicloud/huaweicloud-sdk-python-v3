@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BindEipRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class BindEipRequest:
     }
 
     def __init__(self, public_ip=None, public_ip_id=None, is_bind=None):
-        """BindEipRequest - a model defined in huaweicloud sdk"""
+        """BindEipRequest
+
+        The model defined in huaweicloud sdk
+
+        :param public_ip: 待绑定的弹性公网IP地址，仅允许使用标准的IP地址格式。is_bind为true时必选
+        :type public_ip: str
+        :param public_ip_id: 弹性公网IP对应的ID，仅允许使用标准的UUID格式。is_bind为true时必选
+        :type public_ip_id: str
+        :param is_bind: - true，绑定弹性公网IP。 - false，解绑弹性公网IP。
+        :type is_bind: bool
+        """
         
         
 
@@ -67,7 +76,7 @@ class BindEipRequest:
         待绑定的弹性公网IP地址，仅允许使用标准的IP地址格式。is_bind为true时必选
 
         :param public_ip: The public_ip of this BindEipRequest.
-        :type: str
+        :type public_ip: str
         """
         self._public_ip = public_ip
 
@@ -89,7 +98,7 @@ class BindEipRequest:
         弹性公网IP对应的ID，仅允许使用标准的UUID格式。is_bind为true时必选
 
         :param public_ip_id: The public_ip_id of this BindEipRequest.
-        :type: str
+        :type public_ip_id: str
         """
         self._public_ip_id = public_ip_id
 
@@ -111,7 +120,7 @@ class BindEipRequest:
         - true，绑定弹性公网IP。 - false，解绑弹性公网IP。
 
         :param is_bind: The is_bind of this BindEipRequest.
-        :type: bool
+        :type is_bind: bool
         """
         self._is_bind = is_bind
 

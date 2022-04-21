@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AuthOpt:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class AuthOpt:
     }
 
     def __init__(self, app_code_auth_type=None):
-        """AuthOpt - a model defined in huaweicloud sdk"""
+        """AuthOpt
+
+        The model defined in huaweicloud sdk
+
+        :param app_code_auth_type: AppCode简易认证类型，仅在auth_type为APP时生效，默认为DISABLE： - DISABLE：不开启简易认证 - HEADER：开启简易认证且AppCode位置在HEADER
+        :type app_code_auth_type: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class AuthOpt:
         AppCode简易认证类型，仅在auth_type为APP时生效，默认为DISABLE： - DISABLE：不开启简易认证 - HEADER：开启简易认证且AppCode位置在HEADER
 
         :param app_code_auth_type: The app_code_auth_type of this AuthOpt.
-        :type: str
+        :type app_code_auth_type: str
         """
         self._app_code_auth_type = app_code_auth_type
 

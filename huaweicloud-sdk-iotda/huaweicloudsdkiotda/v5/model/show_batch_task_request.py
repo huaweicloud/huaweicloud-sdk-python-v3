@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowBatchTaskRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ShowBatchTaskRequest:
     }
 
     def __init__(self, instance_id=None, task_id=None, limit=None, marker=None, offset=None):
-        """ShowBatchTaskRequest - a model defined in huaweicloud sdk"""
+        """ShowBatchTaskRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
+        :type instance_id: str
+        :param task_id: **参数说明**：批量任务ID，创建批量任务时由物联网平台分配获得。 **取值范围**：长度不超过24，只允许小写字母a到f、数字的组合。
+        :type task_id: str
+        :param limit: **参数说明**：分页查询时每页显示的记录数。 **取值范围**：1-50的整数，默认值为10。
+        :type limit: int
+        :param marker: **参数说明**：上一次分页查询结果中最后一条记录的ID，在上一次分页查询时由物联网平台返回获得。分页查询时物联网平台是按marker也就是记录ID降序查询的，越新的数据记录ID也会越大。若填写marker，则本次只查询记录ID小于marker的数据记录。若不填写，则从记录ID最大也就是最新的一条数据开始查询。如果需要依次查询所有数据，则每次查询时必须填写上一次查询响应中的marker值。 **取值范围**：长度为24的十六进制字符串，默认值为ffffffffffffffffffffffff。
+        :type marker: str
+        :param offset: **参数说明**：表示从marker后偏移offset条记录开始查询。默认为0，取值范围为0-500的整数。当offset为0时，表示从marker后第一条记录开始输出。限制offset最大值是出于API性能考虑，您可以搭配marker使用该参数实现翻页，例如每页50条记录，1-11页内都可以直接使用offset跳转到指定页，但到11页后，由于offset限制为500，您需要使用第11页返回的marker作为下次查询的marker，以实现翻页到12-22页。  **取值范围**：0-500的整数，默认为0。
+        :type offset: int
+        """
         
         
 
@@ -77,7 +90,7 @@ class ShowBatchTaskRequest:
         **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
         :param instance_id: The instance_id of this ShowBatchTaskRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -99,7 +112,7 @@ class ShowBatchTaskRequest:
         **参数说明**：批量任务ID，创建批量任务时由物联网平台分配获得。 **取值范围**：长度不超过24，只允许小写字母a到f、数字的组合。
 
         :param task_id: The task_id of this ShowBatchTaskRequest.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -121,7 +134,7 @@ class ShowBatchTaskRequest:
         **参数说明**：分页查询时每页显示的记录数。 **取值范围**：1-50的整数，默认值为10。
 
         :param limit: The limit of this ShowBatchTaskRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -143,7 +156,7 @@ class ShowBatchTaskRequest:
         **参数说明**：上一次分页查询结果中最后一条记录的ID，在上一次分页查询时由物联网平台返回获得。分页查询时物联网平台是按marker也就是记录ID降序查询的，越新的数据记录ID也会越大。若填写marker，则本次只查询记录ID小于marker的数据记录。若不填写，则从记录ID最大也就是最新的一条数据开始查询。如果需要依次查询所有数据，则每次查询时必须填写上一次查询响应中的marker值。 **取值范围**：长度为24的十六进制字符串，默认值为ffffffffffffffffffffffff。
 
         :param marker: The marker of this ShowBatchTaskRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -165,7 +178,7 @@ class ShowBatchTaskRequest:
         **参数说明**：表示从marker后偏移offset条记录开始查询。默认为0，取值范围为0-500的整数。当offset为0时，表示从marker后第一条记录开始输出。限制offset最大值是出于API性能考虑，您可以搭配marker使用该参数实现翻页，例如每页50条记录，1-11页内都可以直接使用offset跳转到指定页，但到11页后，由于offset限制为500，您需要使用第11页返回的marker作为下次查询的marker，以实现翻页到12-22页。  **取值范围**：0-500的整数，默认为0。
 
         :param offset: The offset of this ShowBatchTaskRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 

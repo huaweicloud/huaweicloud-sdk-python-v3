@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListImageByTagsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListImageByTagsResponse(SdkResponse):
     }
 
     def __init__(self, resources=None, total_count=None):
-        """ListImageByTagsResponse - a model defined in huaweicloud sdk"""
+        """ListImageByTagsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param resources: 镜像信息列表
+        :type resources: list[:class:`huaweicloudsdkims.v2.ShowImageByTagsResource`]
+        :param total_count: 总记录数
+        :type total_count: int
+        """
         
         super(ListImageByTagsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListImageByTagsResponse(SdkResponse):
         镜像信息列表
 
         :return: The resources of this ListImageByTagsResponse.
-        :rtype: list[ShowImageByTagsResource]
+        :rtype: list[:class:`huaweicloudsdkims.v2.ShowImageByTagsResource`]
         """
         return self._resources
 
@@ -63,7 +70,7 @@ class ListImageByTagsResponse(SdkResponse):
         镜像信息列表
 
         :param resources: The resources of this ListImageByTagsResponse.
-        :type: list[ShowImageByTagsResource]
+        :type resources: list[:class:`huaweicloudsdkims.v2.ShowImageByTagsResource`]
         """
         self._resources = resources
 
@@ -85,7 +92,7 @@ class ListImageByTagsResponse(SdkResponse):
         总记录数
 
         :param total_count: The total_count of this ListImageByTagsResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ReqDataByIdCardImage:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ReqDataByIdCardImage:
     }
 
     def __init__(self, idcard_image1=None, idcard_image2=None, face_image=None):
-        """ReqDataByIdCardImage - a model defined in huaweicloud sdk"""
+        """ReqDataByIdCardImage
+
+        The model defined in huaweicloud sdk
+
+        :param idcard_image1: 身份证人像面图像数据，使用base64编码，要求base64编码后大小不超过4M。图像各边的像素大小在300到4000之间，支持JPG格式。
+        :type idcard_image1: str
+        :param idcard_image2: 身份证国徽面图像数据，使用base64编码，要求base64编码后大小不超过4M。图像各边的像素大小在300到4000之间，支持JPG格式。
+        :type idcard_image2: str
+        :param face_image: 现场人像图像数据，使用base64编码，要求base64编码后大小不超过4M。图像各边的像素大小在300到4000之间，支持JPG格式。
+        :type face_image: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class ReqDataByIdCardImage:
         身份证人像面图像数据，使用base64编码，要求base64编码后大小不超过4M。图像各边的像素大小在300到4000之间，支持JPG格式。
 
         :param idcard_image1: The idcard_image1 of this ReqDataByIdCardImage.
-        :type: str
+        :type idcard_image1: str
         """
         self._idcard_image1 = idcard_image1
 
@@ -88,7 +97,7 @@ class ReqDataByIdCardImage:
         身份证国徽面图像数据，使用base64编码，要求base64编码后大小不超过4M。图像各边的像素大小在300到4000之间，支持JPG格式。
 
         :param idcard_image2: The idcard_image2 of this ReqDataByIdCardImage.
-        :type: str
+        :type idcard_image2: str
         """
         self._idcard_image2 = idcard_image2
 
@@ -110,7 +119,7 @@ class ReqDataByIdCardImage:
         现场人像图像数据，使用base64编码，要求base64编码后大小不超过4M。图像各边的像素大小在300到4000之间，支持JPG格式。
 
         :param face_image: The face_image of this ReqDataByIdCardImage.
-        :type: str
+        :type face_image: str
         """
         self._face_image = face_image
 

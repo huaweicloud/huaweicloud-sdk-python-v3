@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Validity:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class Validity:
     }
 
     def __init__(self, type=None, value=None, start_from=None):
-        """Validity - a model defined in huaweicloud sdk"""
+        """Validity
+
+        The model defined in huaweicloud sdk
+
+        :param type: 有效期类型，为必填值：   - **YEAR** : 年（12个月）   - **MONTH** : 月（统一按31天）   - **DAY** : 日   - **HOUR** : 小时
+        :type type: str
+        :param value: 证书有效期值，与type对应的类型值，换算成年需满足以下规则：   - 根CA，有效期小于等于30年；   - 从属CA与私有证书，有效期小于等于20年。
+        :type value: int
+        :param start_from: 起始时间，为可选值:   - 格式为时间戳（毫秒级），如1645146939688代表2022-02-18 09:15:39；   - 不早于当前时间5分钟，即start_from &gt; (current_time - 5min)。
+        :type start_from: int
+        """
         
         
 
@@ -66,7 +75,7 @@ class Validity:
         有效期类型，为必填值：   - **YEAR** : 年（12个月）   - **MONTH** : 月（统一按31天）   - **DAY** : 日   - **HOUR** : 小时
 
         :param type: The type of this Validity.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -88,7 +97,7 @@ class Validity:
         证书有效期值，与type对应的类型值，换算成年需满足以下规则：   - 根CA，有效期小于等于30年；   - 从属CA与私有证书，有效期小于等于20年。
 
         :param value: The value of this Validity.
-        :type: int
+        :type value: int
         """
         self._value = value
 
@@ -110,7 +119,7 @@ class Validity:
         起始时间，为可选值:   - 格式为时间戳（毫秒级），如1645146939688代表2022-02-18 09:15:39；   - 不早于当前时间5分钟，即start_from > (current_time - 5min)。
 
         :param start_from: The start_from of this Validity.
-        :type: int
+        :type start_from: int
         """
         self._start_from = start_from
 

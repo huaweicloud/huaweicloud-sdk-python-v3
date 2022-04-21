@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListContainerNodesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListContainerNodesRequest:
     }
 
     def __init__(self, host_name=None, agent_status=None, limit=None, offset=None):
-        """ListContainerNodesRequest - a model defined in huaweicloud sdk"""
+        """ListContainerNodesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param host_name: 节点（服务器）名称
+        :type host_name: str
+        :param agent_status: Agent状态，包含如下3种。   - not_installed ：未安装   - online ：在线   - offline ：离线
+        :type agent_status: str
+        :param limit: 查询返回查询容器节点列表当前页面的数，量默认10
+        :type limit: int
+        :param offset: 查询游标，初始传入0
+        :type offset: int
+        """
         
         
 
@@ -73,7 +84,7 @@ class ListContainerNodesRequest:
         节点（服务器）名称
 
         :param host_name: The host_name of this ListContainerNodesRequest.
-        :type: str
+        :type host_name: str
         """
         self._host_name = host_name
 
@@ -95,7 +106,7 @@ class ListContainerNodesRequest:
         Agent状态，包含如下3种。   - not_installed ：未安装   - online ：在线   - offline ：离线
 
         :param agent_status: The agent_status of this ListContainerNodesRequest.
-        :type: str
+        :type agent_status: str
         """
         self._agent_status = agent_status
 
@@ -117,7 +128,7 @@ class ListContainerNodesRequest:
         查询返回查询容器节点列表当前页面的数，量默认10
 
         :param limit: The limit of this ListContainerNodesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -139,7 +150,7 @@ class ListContainerNodesRequest:
         查询游标，初始传入0
 
         :param offset: The offset of this ListContainerNodesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VersionInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class VersionInfo:
     }
 
     def __init__(self, id=None, links=None, min_version=None, status=None, update=None, version=None):
-        """VersionInfo - a model defined in huaweicloud sdk"""
+        """VersionInfo
+
+        The model defined in huaweicloud sdk
+
+        :param id: API版本ID。
+        :type id: str
+        :param links: API的URL相关信息。
+        :type links: list[:class:`huaweicloudsdkas.v1.Links`]
+        :param min_version: 该版本API支持的最小微版本号。
+        :type min_version: str
+        :param status: 版本状态，为如下3种：CURRENT：表示该版本为主推版本；SUPPORT：表示为老版本，但是现在还继续支持；DEPRECATED：表示为废弃版本，存在后续删除的可能。
+        :type status: str
+        :param update: 版本发布时间，使用UTC时间。
+        :type update: datetime
+        :param version: 该版本API支持的最大微版本号。
+        :type version: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class VersionInfo:
         API版本ID。
 
         :param id: The id of this VersionInfo.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -94,7 +109,7 @@ class VersionInfo:
         API的URL相关信息。
 
         :return: The links of this VersionInfo.
-        :rtype: list[Links]
+        :rtype: list[:class:`huaweicloudsdkas.v1.Links`]
         """
         return self._links
 
@@ -105,7 +120,7 @@ class VersionInfo:
         API的URL相关信息。
 
         :param links: The links of this VersionInfo.
-        :type: list[Links]
+        :type links: list[:class:`huaweicloudsdkas.v1.Links`]
         """
         self._links = links
 
@@ -127,7 +142,7 @@ class VersionInfo:
         该版本API支持的最小微版本号。
 
         :param min_version: The min_version of this VersionInfo.
-        :type: str
+        :type min_version: str
         """
         self._min_version = min_version
 
@@ -149,7 +164,7 @@ class VersionInfo:
         版本状态，为如下3种：CURRENT：表示该版本为主推版本；SUPPORT：表示为老版本，但是现在还继续支持；DEPRECATED：表示为废弃版本，存在后续删除的可能。
 
         :param status: The status of this VersionInfo.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -171,7 +186,7 @@ class VersionInfo:
         版本发布时间，使用UTC时间。
 
         :param update: The update of this VersionInfo.
-        :type: datetime
+        :type update: datetime
         """
         self._update = update
 
@@ -193,7 +208,7 @@ class VersionInfo:
         该版本API支持的最大微版本号。
 
         :param version: The version of this VersionInfo.
-        :type: str
+        :type version: str
         """
         self._version = version
 

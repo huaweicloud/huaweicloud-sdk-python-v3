@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CancelExtractAudioTaskRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CancelExtractAudioTaskRequest:
     }
 
     def __init__(self, asset_id=None):
-        """CancelExtractAudioTaskRequest - a model defined in huaweicloud sdk"""
+        """CancelExtractAudioTaskRequest
+
+        The model defined in huaweicloud sdk
+
+        :param asset_id: 媒资ID。
+        :type asset_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class CancelExtractAudioTaskRequest:
         媒资ID。
 
         :param asset_id: The asset_id of this CancelExtractAudioTaskRequest.
-        :type: str
+        :type asset_id: str
         """
         self._asset_id = asset_id
 

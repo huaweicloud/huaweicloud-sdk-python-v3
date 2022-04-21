@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CdmDeleteClusterReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CdmDeleteClusterReq:
     }
 
     def __init__(self, keep_last_manual_backup=None):
-        """CdmDeleteClusterReq - a model defined in huaweicloud sdk"""
+        """CdmDeleteClusterReq
+
+        The model defined in huaweicloud sdk
+
+        :param keep_last_manual_backup: 日志备份数，填写为默认填0即可。
+        :type keep_last_manual_backup: int
+        """
         
         
 
@@ -57,7 +62,7 @@ class CdmDeleteClusterReq:
         日志备份数，填写为默认填0即可。
 
         :param keep_last_manual_backup: The keep_last_manual_backup of this CdmDeleteClusterReq.
-        :type: int
+        :type keep_last_manual_backup: int
         """
         self._keep_last_manual_backup = keep_last_manual_backup
 

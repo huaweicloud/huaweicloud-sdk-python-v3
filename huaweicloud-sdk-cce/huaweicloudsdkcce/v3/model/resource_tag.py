@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResourceTag:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ResourceTag:
     }
 
     def __init__(self, key=None, value=None):
-        """ResourceTag - a model defined in huaweicloud sdk"""
+        """ResourceTag
+
+        The model defined in huaweicloud sdk
+
+        :param key: Key值。 - 支持最大长度为36个UTF-8字符。 - 不支持特殊字符[\\&#x3D;\\*\\&lt;\\&gt;\\\\\\,\\|/]+ - 不支持ASCII控制字符(0-31)
+        :type key: str
+        :param value: Value值。 - 支持最大长度为43个UTF-8字符。 - 不支持特殊字符[\\&#x3D;\\*\\&lt;\\&gt;\\\\\\,\\|/]+ - 不支持ASCII控制字符(0-31)
+        :type value: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class ResourceTag:
         Key值。 - 支持最大长度为36个UTF-8字符。 - 不支持特殊字符[\\=\\*\\<\\>\\\\\\,\\|/]+ - 不支持ASCII控制字符(0-31)
 
         :param key: The key of this ResourceTag.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -85,7 +92,7 @@ class ResourceTag:
         Value值。 - 支持最大长度为43个UTF-8字符。 - 不支持特殊字符[\\=\\*\\<\\>\\\\\\,\\|/]+ - 不支持ASCII控制字符(0-31)
 
         :param value: The value of this ResourceTag.
-        :type: str
+        :type value: str
         """
         self._value = value
 

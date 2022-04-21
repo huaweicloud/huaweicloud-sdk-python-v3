@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BlockPage:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class BlockPage:
     }
 
     def __init__(self, template=None, custom_page=None, redirect_url=None):
-        """BlockPage - a model defined in huaweicloud sdk"""
+        """BlockPage
+
+        The model defined in huaweicloud sdk
+
+        :param template: 模板名称
+        :type template: str
+        :param custom_page: 
+        :type custom_page: :class:`huaweicloudsdkwaf.v1.CustomPage`
+        :param redirect_url: 重定向URL
+        :type redirect_url: str
+        """
         
         
 
@@ -67,7 +76,7 @@ class BlockPage:
         模板名称
 
         :param template: The template of this BlockPage.
-        :type: str
+        :type template: str
         """
         self._template = template
 
@@ -77,7 +86,7 @@ class BlockPage:
 
 
         :return: The custom_page of this BlockPage.
-        :rtype: CustomPage
+        :rtype: :class:`huaweicloudsdkwaf.v1.CustomPage`
         """
         return self._custom_page
 
@@ -87,7 +96,7 @@ class BlockPage:
 
 
         :param custom_page: The custom_page of this BlockPage.
-        :type: CustomPage
+        :type custom_page: :class:`huaweicloudsdkwaf.v1.CustomPage`
         """
         self._custom_page = custom_page
 
@@ -109,7 +118,7 @@ class BlockPage:
         重定向URL
 
         :param redirect_url: The redirect_url of this BlockPage.
-        :type: str
+        :type redirect_url: str
         """
         self._redirect_url = redirect_url
 

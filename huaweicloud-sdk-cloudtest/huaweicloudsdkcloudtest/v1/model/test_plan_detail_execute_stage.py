@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TestPlanDetailExecuteStage:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class TestPlanDetailExecuteStage:
     }
 
     def __init__(self, defect_count=None, completed_defect_count=None, case_pass_rate=None, executed_case_count=None):
-        """TestPlanDetailExecuteStage - a model defined in huaweicloud sdk"""
+        """TestPlanDetailExecuteStage
+
+        The model defined in huaweicloud sdk
+
+        :param defect_count: 缺陷个数
+        :type defect_count: int
+        :param completed_defect_count: 已完成缺陷个数
+        :type completed_defect_count: int
+        :param case_pass_rate: 用例通过率,按用例结果计算
+        :type case_pass_rate: str
+        :param executed_case_count: 已执行用例数, 按用例状态统计
+        :type executed_case_count: int
+        """
         
         
 
@@ -73,7 +84,7 @@ class TestPlanDetailExecuteStage:
         缺陷个数
 
         :param defect_count: The defect_count of this TestPlanDetailExecuteStage.
-        :type: int
+        :type defect_count: int
         """
         self._defect_count = defect_count
 
@@ -95,7 +106,7 @@ class TestPlanDetailExecuteStage:
         已完成缺陷个数
 
         :param completed_defect_count: The completed_defect_count of this TestPlanDetailExecuteStage.
-        :type: int
+        :type completed_defect_count: int
         """
         self._completed_defect_count = completed_defect_count
 
@@ -117,7 +128,7 @@ class TestPlanDetailExecuteStage:
         用例通过率,按用例结果计算
 
         :param case_pass_rate: The case_pass_rate of this TestPlanDetailExecuteStage.
-        :type: str
+        :type case_pass_rate: str
         """
         self._case_pass_rate = case_pass_rate
 
@@ -139,7 +150,7 @@ class TestPlanDetailExecuteStage:
         已执行用例数, 按用例状态统计
 
         :param executed_case_count: The executed_case_count of this TestPlanDetailExecuteStage.
-        :type: int
+        :type executed_case_count: int
         """
         self._executed_case_count = executed_case_count
 

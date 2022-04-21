@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UserForCreation:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UserForCreation:
     }
 
     def __init__(self, name=None, password=None):
-        """UserForCreation - a model defined in huaweicloud sdk"""
+        """UserForCreation
+
+        The model defined in huaweicloud sdk
+
+        :param name: 数据库用户名称。 数据库帐号名称在1到32个字符之间，由小写字母、数字、中划线、或下划线组成，不能包含其他特殊字符。 - 若数据库版本为MySQL5.6和8.0，帐号长度为1～16个字符。 - 若数据库版本为MySQL5.7，帐号长度为1～32个字符。
+        :type name: str
+        :param password: 数据库帐号密码。  取值范围：  非空，由大小写字母、数字和特殊符号~!@#%^*-_&#x3D;+?组成，长度8~32个字符，不能和数据库帐号“name”或“name”的逆序相同。  建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。
+        :type password: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class UserForCreation:
         数据库用户名称。 数据库帐号名称在1到32个字符之间，由小写字母、数字、中划线、或下划线组成，不能包含其他特殊字符。 - 若数据库版本为MySQL5.6和8.0，帐号长度为1～16个字符。 - 若数据库版本为MySQL5.7，帐号长度为1～32个字符。
 
         :param name: The name of this UserForCreation.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -83,7 +90,7 @@ class UserForCreation:
         数据库帐号密码。  取值范围：  非空，由大小写字母、数字和特殊符号~!@#%^*-_=+?组成，长度8~32个字符，不能和数据库帐号“name”或“name”的逆序相同。  建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。
 
         :param password: The password of this UserForCreation.
-        :type: str
+        :type password: str
         """
         self._password = password
 

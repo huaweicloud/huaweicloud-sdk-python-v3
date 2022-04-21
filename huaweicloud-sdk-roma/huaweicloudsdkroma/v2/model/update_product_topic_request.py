@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateProductTopicRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UpdateProductTopicRequest:
     }
 
     def __init__(self, instance_id=None, product_id=None, topic_id=None, body=None):
-        """UpdateProductTopicRequest - a model defined in huaweicloud sdk"""
+        """UpdateProductTopicRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param product_id: 产品ID
+        :type product_id: int
+        :param topic_id: 产品主题ID
+        :type topic_id: int
+        :param body: Body of the UpdateProductTopicRequest
+        :type body: :class:`huaweicloudsdkroma.v2.UpdateProductTopicRequestBody`
+        """
         
         
 
@@ -70,7 +81,7 @@ class UpdateProductTopicRequest:
         实例ID
 
         :param instance_id: The instance_id of this UpdateProductTopicRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -92,7 +103,7 @@ class UpdateProductTopicRequest:
         产品ID
 
         :param product_id: The product_id of this UpdateProductTopicRequest.
-        :type: int
+        :type product_id: int
         """
         self._product_id = product_id
 
@@ -114,7 +125,7 @@ class UpdateProductTopicRequest:
         产品主题ID
 
         :param topic_id: The topic_id of this UpdateProductTopicRequest.
-        :type: int
+        :type topic_id: int
         """
         self._topic_id = topic_id
 
@@ -124,7 +135,7 @@ class UpdateProductTopicRequest:
 
 
         :return: The body of this UpdateProductTopicRequest.
-        :rtype: UpdateProductTopicRequestBody
+        :rtype: :class:`huaweicloudsdkroma.v2.UpdateProductTopicRequestBody`
         """
         return self._body
 
@@ -134,7 +145,7 @@ class UpdateProductTopicRequest:
 
 
         :param body: The body of this UpdateProductTopicRequest.
-        :type: UpdateProductTopicRequestBody
+        :type body: :class:`huaweicloudsdkroma.v2.UpdateProductTopicRequestBody`
         """
         self._body = body
 

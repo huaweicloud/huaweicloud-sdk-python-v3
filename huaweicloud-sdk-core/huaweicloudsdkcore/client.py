@@ -46,6 +46,7 @@ from huaweicloudsdkcore.http.formdata import FormFile
 
 
 class ClientBuilder(object):
+
     def __init__(self, client_type, credential_type=BasicCredentials.__name__):
         self._client_type = client_type
         self._credential_type = credential_type.split(',')
@@ -63,22 +64,42 @@ class ClientBuilder(object):
         self._https_scheme = "https"
 
     def with_http_config(self, config):
+        """
+        :param config: Config for ClientBuilder
+        :type config: :class:`huaweicloudsdkcore.http.http_config.HttpConfig`
+        """
         self._config = config
         return self
 
     def with_credentials(self, credentials):
+        """
+        :param credentials: Credential for ClientBuilder
+        :type credentials: :class:`huaweicloudsdkcore.auth.credentials.Credentials`
+        """
         self._credentials = credentials
         return self
 
     def with_region(self, region):
+        """
+        :param region: Region for ClientBuilder
+        :type region: :class:`huaweicloudsdkcore.region.region.Region`
+        """
         self._region = region
         return self
 
     def with_endpoint(self, endpoint):
+        """
+        :param endpoint: Endpoint for ClientBuilder
+        :type endpoint: str
+        """
         self._endpoint = endpoint
         return self
 
     def with_http_handler(self, http_handler):
+        """
+        :param http_handler: HttpHandler for ClientBuilder
+        :type http_handler: :class:`huaweicloudsdkcore.http.http_handler.HttpHandler`
+        """
         self._http_handler = http_handler
         return self
 
@@ -173,18 +194,34 @@ class Client(object):
         return logger
 
     def with_config(self, config):
+        """
+        :param config: Config for Client
+        :type config: :class:`huaweicloudsdkcore.http.http_config.HttpConfig`
+        """
         self._config = config
         return self
 
     def with_credentials(self, credentials):
+        """
+        :param credentials: Credential for Client
+        :type credentials: :class:`huaweicloudsdkcore.auth.credentials.Credentials`
+        """
         self._credentials = credentials
         return self
 
     def with_endpoint(self, endpoint):
+        """
+        :param endpoint: Endpoint for Client
+        :type endpoint: str
+        """
         self._endpoint = endpoint
         return self
 
     def with_http_handler(self, http_handler):
+        """
+        :param http_handler: HttpHandler for Client
+        :type http_handler: :class:`huaweicloudsdkcore.http.http_handler.HttpHandler`
+        """
         self._http_handler = http_handler if http_handler is not None else HttpHandler()
         return self
 
@@ -293,7 +330,6 @@ class Client(object):
             if issubclass(klass, SdkStreamResponse):
                 return True
         return False
-
 
     @classmethod
     def post_process_params(cls, params):

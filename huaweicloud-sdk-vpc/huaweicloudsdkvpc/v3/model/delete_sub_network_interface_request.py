@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteSubNetworkInterfaceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteSubNetworkInterfaceRequest:
     }
 
     def __init__(self, sub_network_interface_id=None):
-        """DeleteSubNetworkInterfaceRequest - a model defined in huaweicloud sdk"""
+        """DeleteSubNetworkInterfaceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param sub_network_interface_id: 弹性辅助网卡唯一标识
+        :type sub_network_interface_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteSubNetworkInterfaceRequest:
         弹性辅助网卡唯一标识
 
         :param sub_network_interface_id: The sub_network_interface_id of this DeleteSubNetworkInterfaceRequest.
-        :type: str
+        :type sub_network_interface_id: str
         """
         self._sub_network_interface_id = sub_network_interface_id
 

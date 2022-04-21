@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDataStoresResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListDataStoresResponse(SdkResponse):
     }
 
     def __init__(self, data_stores=None, count=None):
-        """ListDataStoresResponse - a model defined in huaweicloud sdk"""
+        """ListDataStoresResponse
+
+        The model defined in huaweicloud sdk
+
+        :param data_stores: 数据结构列表
+        :type data_stores: list[:class:`huaweicloudsdkiotanalytics.v1.GetDataStore`]
+        :param count: 返回的 data-store 数量
+        :type count: int
+        """
         
         super(ListDataStoresResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListDataStoresResponse(SdkResponse):
         数据结构列表
 
         :return: The data_stores of this ListDataStoresResponse.
-        :rtype: list[GetDataStore]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.GetDataStore`]
         """
         return self._data_stores
 
@@ -63,7 +70,7 @@ class ListDataStoresResponse(SdkResponse):
         数据结构列表
 
         :param data_stores: The data_stores of this ListDataStoresResponse.
-        :type: list[GetDataStore]
+        :type data_stores: list[:class:`huaweicloudsdkiotanalytics.v1.GetDataStore`]
         """
         self._data_stores = data_stores
 
@@ -85,7 +92,7 @@ class ListDataStoresResponse(SdkResponse):
         返回的 data-store 数量
 
         :param count: The count of this ListDataStoresResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

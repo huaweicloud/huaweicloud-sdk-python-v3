@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CommonQueryTaskRsp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CommonQueryTaskRsp:
     }
 
     def __init__(self, total=None):
-        """CommonQueryTaskRsp - a model defined in huaweicloud sdk"""
+        """CommonQueryTaskRsp
+
+        The model defined in huaweicloud sdk
+
+        :param total: 任务总数
+        :type total: int
+        """
         
         
 
@@ -58,7 +63,7 @@ class CommonQueryTaskRsp:
         任务总数
 
         :param total: The total of this CommonQueryTaskRsp.
-        :type: int
+        :type total: int
         """
         self._total = total
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResponseInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ResponseInfo:
     }
 
     def __init__(self, status=None, body=None):
-        """ResponseInfo - a model defined in huaweicloud sdk"""
+        """ResponseInfo
+
+        The model defined in huaweicloud sdk
+
+        :param status: 响应的HTTP状态码
+        :type status: int
+        :param body: 响应的Body模板
+        :type body: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class ResponseInfo:
         响应的HTTP状态码
 
         :param status: The status of this ResponseInfo.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -85,7 +92,7 @@ class ResponseInfo:
         响应的Body模板
 
         :param body: The body of this ResponseInfo.
-        :type: str
+        :type body: str
         """
         self._body = body
 

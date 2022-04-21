@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryRpoAndRtoResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class QueryRpoAndRtoResp:
     }
 
     def __init__(self, job_id=None, rpo_info=None, rto_info=None, error_code=None, error_msg=None):
-        """QueryRpoAndRtoResp - a model defined in huaweicloud sdk"""
+        """QueryRpoAndRtoResp
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 任务ID
+        :type job_id: str
+        :param rpo_info: 
+        :type rpo_info: :class:`huaweicloudsdkdrs.v3.RpoAndRtoInfo`
+        :param rto_info: 
+        :type rto_info: :class:`huaweicloudsdkdrs.v3.RpoAndRtoInfo`
+        :param error_code: 错误码
+        :type error_code: str
+        :param error_msg: 错误信息
+        :type error_msg: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class QueryRpoAndRtoResp:
         任务ID
 
         :param job_id: The job_id of this QueryRpoAndRtoResp.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -88,7 +101,7 @@ class QueryRpoAndRtoResp:
 
 
         :return: The rpo_info of this QueryRpoAndRtoResp.
-        :rtype: RpoAndRtoInfo
+        :rtype: :class:`huaweicloudsdkdrs.v3.RpoAndRtoInfo`
         """
         return self._rpo_info
 
@@ -98,7 +111,7 @@ class QueryRpoAndRtoResp:
 
 
         :param rpo_info: The rpo_info of this QueryRpoAndRtoResp.
-        :type: RpoAndRtoInfo
+        :type rpo_info: :class:`huaweicloudsdkdrs.v3.RpoAndRtoInfo`
         """
         self._rpo_info = rpo_info
 
@@ -108,7 +121,7 @@ class QueryRpoAndRtoResp:
 
 
         :return: The rto_info of this QueryRpoAndRtoResp.
-        :rtype: RpoAndRtoInfo
+        :rtype: :class:`huaweicloudsdkdrs.v3.RpoAndRtoInfo`
         """
         return self._rto_info
 
@@ -118,7 +131,7 @@ class QueryRpoAndRtoResp:
 
 
         :param rto_info: The rto_info of this QueryRpoAndRtoResp.
-        :type: RpoAndRtoInfo
+        :type rto_info: :class:`huaweicloudsdkdrs.v3.RpoAndRtoInfo`
         """
         self._rto_info = rto_info
 
@@ -140,7 +153,7 @@ class QueryRpoAndRtoResp:
         错误码
 
         :param error_code: The error_code of this QueryRpoAndRtoResp.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -162,7 +175,7 @@ class QueryRpoAndRtoResp:
         错误信息
 
         :param error_msg: The error_msg of this QueryRpoAndRtoResp.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 

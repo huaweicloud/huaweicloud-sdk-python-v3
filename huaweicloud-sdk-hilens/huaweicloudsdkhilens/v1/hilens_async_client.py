@@ -52,21 +52,17 @@ class HiLensAsyncClient(Client):
         """获取设备告警列表
 
         获取设备告警列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListDeviceAlarmsRequest request
-        :return: ListDeviceAlarmsResponse
+        :param request: Request instance for ListDeviceAlarms
+        :type request: :class:`huaweicloudsdkhilens.v1.ListDeviceAlarmsRequest`
+        :rtype: :class:`huaweicloudsdkhilens.v1.ListDeviceAlarmsResponse`
         """
         return self.list_device_alarms_with_http_info(request)
 
     def list_device_alarms_with_http_info(self, request):
-        """获取设备告警列表
-
-        获取设备告警列表
-
-        :param ListDeviceAlarmsRequest request
-        :return: ListDeviceAlarmsResponse
-        """
-
         all_params = ['offset', 'limit', 'device_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -114,26 +110,21 @@ class HiLensAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_devices_async(self, request):
         """获取设备列表
 
         获取设备列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListDevicesRequest request
-        :return: ListDevicesResponse
+        :param request: Request instance for ListDevices
+        :type request: :class:`huaweicloudsdkhilens.v1.ListDevicesRequest`
+        :rtype: :class:`huaweicloudsdkhilens.v1.ListDevicesResponse`
         """
         return self.list_devices_with_http_info(request)
 
     def list_devices_with_http_info(self, request):
-        """获取设备列表
-
-        获取设备列表
-
-        :param ListDevicesRequest request
-        :return: ListDevicesResponse
-        """
-
         all_params = ['offset', 'limit', 'name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -180,7 +171,6 @@ class HiLensAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

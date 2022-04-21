@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApiDebugInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class ApiDebugInfo:
     }
 
     def __init__(self, body=None, header=None, method=None, mode=None, path=None, query=None, scheme=None, app_key=None, app_secret=None, domain=None, stage=None):
-        """ApiDebugInfo - a model defined in huaweicloud sdk"""
+        """ApiDebugInfo
+
+        The model defined in huaweicloud sdk
+
+        :param body: 请求消息体，最长2097152字节
+        :type body: str
+        :param header: 头域参数，每个参数值为字符串数组，每个参数名称有如下约束： - 英文字母、数字、点、中连线组成 - 必须以英文字母开头，最长32字节 - 不支持以\&quot;X-Apig-\&quot;或\&quot;X-Sdk-\&quot;开头，不区分大小写 - 不支持取值为\&quot;X-Stage\&quot;，不区分大小写 - mode为MARKET或CONSUMER时，不支持取值为\&quot;X-Auth-Token\&quot;和\&quot;Authorization\&quot;，不区分大小写 &gt; 头域名称在使用前会被规范化，如：\&quot;x-MY-hEaDer\&quot;会被规范化为\&quot;X-My-Header\&quot;
+        :type header: dict(str, list[str])
+        :param method: API的请求方法
+        :type method: str
+        :param mode: 调试模式 - DEVELOPER 调试尚未发布的API定义 - MARKET 调试云市场已购买的API - CONSUMER 调试指定运行环境下的API定义 &gt; DEVELOPER模式，接口调用者必须是API拥有者。    MARKET模式，接口调用者必须是API购买者或拥有者。    CONSUMER模式，接口调用者必须有API在指定环境上的授权信息或是API拥有者。
+        :type mode: str
+        :param path: API的请求路径，需以\&quot;/\&quot;开头，最大长度1024 &gt; 须符合路径规范，百分号编码格式可被正确解码
+        :type path: str
+        :param query: 查询参数，每个参数值为字符串数组，每个参数名称有如下约束： - 英文字母、数字、点、下划线、中连线组成 - 必须以英文字母开头，最长32字节 - 不支持以\&quot;X-Apig-\&quot;或\&quot;X-Sdk-\&quot;开头，不区分大小写 - 不支持取值为\&quot;X-Stage\&quot;，不区分大小写
+        :type query: dict(str, list[str])
+        :param scheme: API的请求协议 - HTTP - HTTPS
+        :type scheme: str
+        :param app_key: 调试请求使用的APP的key
+        :type app_key: str
+        :param app_secret: 调试请求使用的APP的密钥
+        :type app_secret: str
+        :param domain: API的访问域名，未提供时根据mode的取值使用如下默认值： - DEVELOPER API分组的子域名 - MARKET 云市场为API分组分配的域名 - CONSUMER API分组的子域名
+        :type domain: str
+        :param stage: 调试请求指定的运行环境，仅在mode为CONSUMER时有效，未提供时有如下默认值: - CONSUMER RELEASE
+        :type stage: str
+        """
         
         
 
@@ -104,7 +129,7 @@ class ApiDebugInfo:
         请求消息体，最长2097152字节
 
         :param body: The body of this ApiDebugInfo.
-        :type: str
+        :type body: str
         """
         self._body = body
 
@@ -126,7 +151,7 @@ class ApiDebugInfo:
         头域参数，每个参数值为字符串数组，每个参数名称有如下约束： - 英文字母、数字、点、中连线组成 - 必须以英文字母开头，最长32字节 - 不支持以\"X-Apig-\"或\"X-Sdk-\"开头，不区分大小写 - 不支持取值为\"X-Stage\"，不区分大小写 - mode为MARKET或CONSUMER时，不支持取值为\"X-Auth-Token\"和\"Authorization\"，不区分大小写 > 头域名称在使用前会被规范化，如：\"x-MY-hEaDer\"会被规范化为\"X-My-Header\"
 
         :param header: The header of this ApiDebugInfo.
-        :type: dict(str, list[str])
+        :type header: dict(str, list[str])
         """
         self._header = header
 
@@ -148,7 +173,7 @@ class ApiDebugInfo:
         API的请求方法
 
         :param method: The method of this ApiDebugInfo.
-        :type: str
+        :type method: str
         """
         self._method = method
 
@@ -170,7 +195,7 @@ class ApiDebugInfo:
         调试模式 - DEVELOPER 调试尚未发布的API定义 - MARKET 调试云市场已购买的API - CONSUMER 调试指定运行环境下的API定义 > DEVELOPER模式，接口调用者必须是API拥有者。    MARKET模式，接口调用者必须是API购买者或拥有者。    CONSUMER模式，接口调用者必须有API在指定环境上的授权信息或是API拥有者。
 
         :param mode: The mode of this ApiDebugInfo.
-        :type: str
+        :type mode: str
         """
         self._mode = mode
 
@@ -192,7 +217,7 @@ class ApiDebugInfo:
         API的请求路径，需以\"/\"开头，最大长度1024 > 须符合路径规范，百分号编码格式可被正确解码
 
         :param path: The path of this ApiDebugInfo.
-        :type: str
+        :type path: str
         """
         self._path = path
 
@@ -214,7 +239,7 @@ class ApiDebugInfo:
         查询参数，每个参数值为字符串数组，每个参数名称有如下约束： - 英文字母、数字、点、下划线、中连线组成 - 必须以英文字母开头，最长32字节 - 不支持以\"X-Apig-\"或\"X-Sdk-\"开头，不区分大小写 - 不支持取值为\"X-Stage\"，不区分大小写
 
         :param query: The query of this ApiDebugInfo.
-        :type: dict(str, list[str])
+        :type query: dict(str, list[str])
         """
         self._query = query
 
@@ -236,7 +261,7 @@ class ApiDebugInfo:
         API的请求协议 - HTTP - HTTPS
 
         :param scheme: The scheme of this ApiDebugInfo.
-        :type: str
+        :type scheme: str
         """
         self._scheme = scheme
 
@@ -258,7 +283,7 @@ class ApiDebugInfo:
         调试请求使用的APP的key
 
         :param app_key: The app_key of this ApiDebugInfo.
-        :type: str
+        :type app_key: str
         """
         self._app_key = app_key
 
@@ -280,7 +305,7 @@ class ApiDebugInfo:
         调试请求使用的APP的密钥
 
         :param app_secret: The app_secret of this ApiDebugInfo.
-        :type: str
+        :type app_secret: str
         """
         self._app_secret = app_secret
 
@@ -302,7 +327,7 @@ class ApiDebugInfo:
         API的访问域名，未提供时根据mode的取值使用如下默认值： - DEVELOPER API分组的子域名 - MARKET 云市场为API分组分配的域名 - CONSUMER API分组的子域名
 
         :param domain: The domain of this ApiDebugInfo.
-        :type: str
+        :type domain: str
         """
         self._domain = domain
 
@@ -324,7 +349,7 @@ class ApiDebugInfo:
         调试请求指定的运行环境，仅在mode为CONSUMER时有效，未提供时有如下默认值: - CONSUMER RELEASE
 
         :param stage: The stage of this ApiDebugInfo.
-        :type: str
+        :type stage: str
         """
         self._stage = stage
 

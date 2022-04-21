@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateBlackWhiteListResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateBlackWhiteListResponse(SdkResponse):
     }
 
     def __init__(self, code=None, result=None, data=None):
-        """UpdateBlackWhiteListResponse - a model defined in huaweicloud sdk"""
+        """UpdateBlackWhiteListResponse
+
+        The model defined in huaweicloud sdk
+
+        :param code: 编码
+        :type code: str
+        :param result: 结果
+        :type result: str
+        :param data: 数据
+        :type data: object
+        """
         
         super(UpdateBlackWhiteListResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class UpdateBlackWhiteListResponse(SdkResponse):
         编码
 
         :param code: The code of this UpdateBlackWhiteListResponse.
-        :type: str
+        :type code: str
         """
         self._code = code
 
@@ -90,7 +99,7 @@ class UpdateBlackWhiteListResponse(SdkResponse):
         结果
 
         :param result: The result of this UpdateBlackWhiteListResponse.
-        :type: str
+        :type result: str
         """
         self._result = result
 
@@ -112,7 +121,7 @@ class UpdateBlackWhiteListResponse(SdkResponse):
         数据
 
         :param data: The data of this UpdateBlackWhiteListResponse.
-        :type: object
+        :type data: object
         """
         self._data = data
 

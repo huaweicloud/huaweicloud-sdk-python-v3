@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DynamicDataMask:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DynamicDataMask:
     }
 
     def __init__(self, mask_strategies=None, data=None):
-        """DynamicDataMask - a model defined in huaweicloud sdk"""
+        """DynamicDataMask
+
+        The model defined in huaweicloud sdk
+
+        :param mask_strategies: 脱敏策略列表，每一个策略对应一个字段，脱敏策略数最多100个。
+        :type mask_strategies: list[:class:`huaweicloudsdkdsc.v1.MaskStrategies`]
+        :param data: 数据列表。
+        :type data: list[dict(str, object)]
+        """
         
         
 
@@ -50,7 +57,7 @@ class DynamicDataMask:
         脱敏策略列表，每一个策略对应一个字段，脱敏策略数最多100个。
 
         :return: The mask_strategies of this DynamicDataMask.
-        :rtype: list[MaskStrategies]
+        :rtype: list[:class:`huaweicloudsdkdsc.v1.MaskStrategies`]
         """
         return self._mask_strategies
 
@@ -61,7 +68,7 @@ class DynamicDataMask:
         脱敏策略列表，每一个策略对应一个字段，脱敏策略数最多100个。
 
         :param mask_strategies: The mask_strategies of this DynamicDataMask.
-        :type: list[MaskStrategies]
+        :type mask_strategies: list[:class:`huaweicloudsdkdsc.v1.MaskStrategies`]
         """
         self._mask_strategies = mask_strategies
 
@@ -83,7 +90,7 @@ class DynamicDataMask:
         数据列表。
 
         :param data: The data of this DynamicDataMask.
-        :type: list[dict(str, object)]
+        :type data: list[dict(str, object)]
         """
         self._data = data
 

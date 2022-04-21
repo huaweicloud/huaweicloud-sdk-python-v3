@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StartLogsReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class StartLogsReq:
     }
 
     def __init__(self, agency=None, log_base_path=None, log_bucket=None):
-        """StartLogsReq - a model defined in huaweicloud sdk"""
+        """StartLogsReq
+
+        The model defined in huaweicloud sdk
+
+        :param agency: IAM委托。
+        :type agency: str
+        :param log_base_path: 备份路径。
+        :type log_base_path: str
+        :param log_bucket: OBS桶。
+        :type log_bucket: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class StartLogsReq:
         IAM委托。
 
         :param agency: The agency of this StartLogsReq.
-        :type: str
+        :type agency: str
         """
         self._agency = agency
 
@@ -87,7 +96,7 @@ class StartLogsReq:
         备份路径。
 
         :param log_base_path: The log_base_path of this StartLogsReq.
-        :type: str
+        :type log_base_path: str
         """
         self._log_base_path = log_base_path
 
@@ -109,7 +118,7 @@ class StartLogsReq:
         OBS桶。
 
         :param log_bucket: The log_bucket of this StartLogsReq.
-        :type: str
+        :type log_bucket: str
         """
         self._log_bucket = log_bucket
 

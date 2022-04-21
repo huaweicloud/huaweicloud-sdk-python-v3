@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VaultPolicyResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class VaultPolicyResp:
     }
 
     def __init__(self, destination_vault_id=None, policy_id=None, vault_id=None):
-        """VaultPolicyResp - a model defined in huaweicloud sdk"""
+        """VaultPolicyResp
+
+        The model defined in huaweicloud sdk
+
+        :param destination_vault_id: 目标region的vault ID，仅设置复制策略时有。
+        :type destination_vault_id: str
+        :param policy_id: 设置的策略ID
+        :type policy_id: str
+        :param vault_id: 设置策略的vault ID
+        :type vault_id: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class VaultPolicyResp:
         目标region的vault ID，仅设置复制策略时有。
 
         :param destination_vault_id: The destination_vault_id of this VaultPolicyResp.
-        :type: str
+        :type destination_vault_id: str
         """
         self._destination_vault_id = destination_vault_id
 
@@ -88,7 +97,7 @@ class VaultPolicyResp:
         设置的策略ID
 
         :param policy_id: The policy_id of this VaultPolicyResp.
-        :type: str
+        :type policy_id: str
         """
         self._policy_id = policy_id
 
@@ -110,7 +119,7 @@ class VaultPolicyResp:
         设置策略的vault ID
 
         :param vault_id: The vault_id of this VaultPolicyResp.
-        :type: str
+        :type vault_id: str
         """
         self._vault_id = vault_id
 

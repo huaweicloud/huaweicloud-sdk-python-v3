@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListExternalEntityResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListExternalEntityResponse(SdkResponse):
     }
 
     def __init__(self, externals=None):
-        """ListExternalEntityResponse - a model defined in huaweicloud sdk"""
+        """ListExternalEntityResponse
+
+        The model defined in huaweicloud sdk
+
+        :param externals: 外部实体列表
+        :type externals: list[:class:`huaweicloudsdkiotedge.v2.ExternalEntityRespDTO`]
+        """
         
         super(ListExternalEntityResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListExternalEntityResponse(SdkResponse):
         外部实体列表
 
         :return: The externals of this ListExternalEntityResponse.
-        :rtype: list[ExternalEntityRespDTO]
+        :rtype: list[:class:`huaweicloudsdkiotedge.v2.ExternalEntityRespDTO`]
         """
         return self._externals
 
@@ -58,7 +63,7 @@ class ListExternalEntityResponse(SdkResponse):
         外部实体列表
 
         :param externals: The externals of this ListExternalEntityResponse.
-        :type: list[ExternalEntityRespDTO]
+        :type externals: list[:class:`huaweicloudsdkiotedge.v2.ExternalEntityRespDTO`]
         """
         self._externals = externals
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowRecordingFileDownloadUrlsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ShowRecordingFileDownloadUrlsRequest:
     }
 
     def __init__(self, conf_uuid=None, offset=None, limit=None, x_authorization_type=None, x_site_id=None):
-        """ShowRecordingFileDownloadUrlsRequest - a model defined in huaweicloud sdk"""
+        """ShowRecordingFileDownloadUrlsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param conf_uuid: 会议的ConfUUID(通过查询录制文件列表获取)。
+        :type conf_uuid: str
+        :param offset: 数据偏移记录。
+        :type offset: int
+        :param limit: 指定返回的记录数，最大500条。
+        :type limit: int
+        :param x_authorization_type: 标识是否为第三方portal过来的请求。
+        :type x_authorization_type: str
+        :param x_site_id: 用于区分到哪个HCSO站点鉴权。
+        :type x_site_id: str
+        """
         
         
 
@@ -77,7 +90,7 @@ class ShowRecordingFileDownloadUrlsRequest:
         会议的ConfUUID(通过查询录制文件列表获取)。
 
         :param conf_uuid: The conf_uuid of this ShowRecordingFileDownloadUrlsRequest.
-        :type: str
+        :type conf_uuid: str
         """
         self._conf_uuid = conf_uuid
 
@@ -99,7 +112,7 @@ class ShowRecordingFileDownloadUrlsRequest:
         数据偏移记录。
 
         :param offset: The offset of this ShowRecordingFileDownloadUrlsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -121,7 +134,7 @@ class ShowRecordingFileDownloadUrlsRequest:
         指定返回的记录数，最大500条。
 
         :param limit: The limit of this ShowRecordingFileDownloadUrlsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -143,7 +156,7 @@ class ShowRecordingFileDownloadUrlsRequest:
         标识是否为第三方portal过来的请求。
 
         :param x_authorization_type: The x_authorization_type of this ShowRecordingFileDownloadUrlsRequest.
-        :type: str
+        :type x_authorization_type: str
         """
         self._x_authorization_type = x_authorization_type
 
@@ -165,7 +178,7 @@ class ShowRecordingFileDownloadUrlsRequest:
         用于区分到哪个HCSO站点鉴权。
 
         :param x_site_id: The x_site_id of this ShowRecordingFileDownloadUrlsRequest.
-        :type: str
+        :type x_site_id: str
         """
         self._x_site_id = x_site_id
 

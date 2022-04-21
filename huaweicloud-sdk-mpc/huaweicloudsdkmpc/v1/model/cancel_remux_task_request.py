@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CancelRemuxTaskRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CancelRemuxTaskRequest:
     }
 
     def __init__(self, task_id=None):
-        """CancelRemuxTaskRequest - a model defined in huaweicloud sdk"""
+        """CancelRemuxTaskRequest
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 任务ID 
+        :type task_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class CancelRemuxTaskRequest:
         任务ID 
 
         :param task_id: The task_id of this CancelRemuxTaskRequest.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 

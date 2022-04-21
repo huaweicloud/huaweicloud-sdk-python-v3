@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateDestinationRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateDestinationRequest:
     }
 
     def __init__(self, instance_id=None, rule_id=None, body=None):
-        """CreateDestinationRequest - a model defined in huaweicloud sdk"""
+        """CreateDestinationRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param rule_id: 规则ID
+        :type rule_id: str
+        :param body: Body of the CreateDestinationRequest
+        :type body: :class:`huaweicloudsdkroma.v2.CreateDestinationRequestBody`
+        """
         
         
 
@@ -66,7 +75,7 @@ class CreateDestinationRequest:
         实例ID
 
         :param instance_id: The instance_id of this CreateDestinationRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -88,7 +97,7 @@ class CreateDestinationRequest:
         规则ID
 
         :param rule_id: The rule_id of this CreateDestinationRequest.
-        :type: str
+        :type rule_id: str
         """
         self._rule_id = rule_id
 
@@ -98,7 +107,7 @@ class CreateDestinationRequest:
 
 
         :return: The body of this CreateDestinationRequest.
-        :rtype: CreateDestinationRequestBody
+        :rtype: :class:`huaweicloudsdkroma.v2.CreateDestinationRequestBody`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class CreateDestinationRequest:
 
 
         :param body: The body of this CreateDestinationRequest.
-        :type: CreateDestinationRequestBody
+        :type body: :class:`huaweicloudsdkroma.v2.CreateDestinationRequestBody`
         """
         self._body = body
 

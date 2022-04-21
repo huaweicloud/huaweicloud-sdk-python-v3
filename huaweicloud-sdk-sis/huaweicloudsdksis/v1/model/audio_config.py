@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AudioConfig:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class AudioConfig:
     }
 
     def __init__(self, audio_format=None, language=None, mode=None):
-        """AudioConfig - a model defined in huaweicloud sdk"""
+        """AudioConfig
+
+        The model defined in huaweicloud sdk
+
+        :param audio_format: 语音的格式。不填写此字段，则默认为auto。注意音频不论何种格式，均要求采样率在16000Hz以上。  auto  自动判断，系统会自动判断并支持WAV（内部支持pcm/ulaw/alaw编码格式）、MP3、M4A、ogg-opus、AMR等格式。推荐使用此取值。  wav  wav格式。  aac  aac格式。  mp3  mp3格式。  amr  amr格式。  m4a  m4a格式。  opus  ogg-opus格式。 
+        :type audio_format: str
+        :param language: 评测语言  en_gb  英语-英式口音。
+        :type language: str
+        :param mode: 评测模式  word 单词模式  sentence 句子模式
+        :type mode: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class AudioConfig:
         语音的格式。不填写此字段，则默认为auto。注意音频不论何种格式，均要求采样率在16000Hz以上。  auto  自动判断，系统会自动判断并支持WAV（内部支持pcm/ulaw/alaw编码格式）、MP3、M4A、ogg-opus、AMR等格式。推荐使用此取值。  wav  wav格式。  aac  aac格式。  mp3  mp3格式。  amr  amr格式。  m4a  m4a格式。  opus  ogg-opus格式。 
 
         :param audio_format: The audio_format of this AudioConfig.
-        :type: str
+        :type audio_format: str
         """
         self._audio_format = audio_format
 
@@ -88,7 +97,7 @@ class AudioConfig:
         评测语言  en_gb  英语-英式口音。
 
         :param language: The language of this AudioConfig.
-        :type: str
+        :type language: str
         """
         self._language = language
 
@@ -110,7 +119,7 @@ class AudioConfig:
         评测模式  word 单词模式  sentence 句子模式
 
         :param mode: The mode of this AudioConfig.
-        :type: str
+        :type mode: str
         """
         self._mode = mode
 

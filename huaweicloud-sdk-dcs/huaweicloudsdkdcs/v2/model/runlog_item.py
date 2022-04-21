@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunlogItem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class RunlogItem:
     }
 
     def __init__(self, id=None, file_name=None, group_name=None, replication_ip=None, status=None, time=None):
-        """RunlogItem - a model defined in huaweicloud sdk"""
+        """RunlogItem
+
+        The model defined in huaweicloud sdk
+
+        :param id: 日志的唯一标识
+        :type id: str
+        :param file_name: 运行日志文件名
+        :type file_name: str
+        :param group_name: 分片名称
+        :type group_name: str
+        :param replication_ip: 采集运行日志所在副本的IP
+        :type replication_ip: str
+        :param status: 获取运行日志状态
+        :type status: str
+        :param time: 运行日志采集的日期，格式为\&quot;yyyy-MM-dd\&quot;
+        :type time: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class RunlogItem:
         日志的唯一标识
 
         :param id: The id of this RunlogItem.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -105,7 +120,7 @@ class RunlogItem:
         运行日志文件名
 
         :param file_name: The file_name of this RunlogItem.
-        :type: str
+        :type file_name: str
         """
         self._file_name = file_name
 
@@ -127,7 +142,7 @@ class RunlogItem:
         分片名称
 
         :param group_name: The group_name of this RunlogItem.
-        :type: str
+        :type group_name: str
         """
         self._group_name = group_name
 
@@ -149,7 +164,7 @@ class RunlogItem:
         采集运行日志所在副本的IP
 
         :param replication_ip: The replication_ip of this RunlogItem.
-        :type: str
+        :type replication_ip: str
         """
         self._replication_ip = replication_ip
 
@@ -171,7 +186,7 @@ class RunlogItem:
         获取运行日志状态
 
         :param status: The status of this RunlogItem.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -193,7 +208,7 @@ class RunlogItem:
         运行日志采集的日期，格式为\"yyyy-MM-dd\"
 
         :param time: The time of this RunlogItem.
-        :type: str
+        :type time: str
         """
         self._time = time
 

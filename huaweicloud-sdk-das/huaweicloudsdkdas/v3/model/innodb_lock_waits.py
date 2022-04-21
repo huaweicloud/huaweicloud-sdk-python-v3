@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InnodbLockWaits:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class InnodbLockWaits:
     }
 
     def __init__(self, requesting_trx_id=None, requested_lock_id=None, blocking_trx_id=None, blocking_lock_id=None):
-        """InnodbLockWaits - a model defined in huaweicloud sdk"""
+        """InnodbLockWaits
+
+        The model defined in huaweicloud sdk
+
+        :param requesting_trx_id: 申请锁资源的事务ID
+        :type requesting_trx_id: str
+        :param requested_lock_id: 申请的锁的ID
+        :type requested_lock_id: str
+        :param blocking_trx_id: 阻塞的事务ID
+        :type blocking_trx_id: str
+        :param blocking_lock_id: 阻塞的锁的ID
+        :type blocking_lock_id: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class InnodbLockWaits:
         申请锁资源的事务ID
 
         :param requesting_trx_id: The requesting_trx_id of this InnodbLockWaits.
-        :type: str
+        :type requesting_trx_id: str
         """
         self._requesting_trx_id = requesting_trx_id
 
@@ -91,7 +102,7 @@ class InnodbLockWaits:
         申请的锁的ID
 
         :param requested_lock_id: The requested_lock_id of this InnodbLockWaits.
-        :type: str
+        :type requested_lock_id: str
         """
         self._requested_lock_id = requested_lock_id
 
@@ -113,7 +124,7 @@ class InnodbLockWaits:
         阻塞的事务ID
 
         :param blocking_trx_id: The blocking_trx_id of this InnodbLockWaits.
-        :type: str
+        :type blocking_trx_id: str
         """
         self._blocking_trx_id = blocking_trx_id
 
@@ -135,7 +146,7 @@ class InnodbLockWaits:
         阻塞的锁的ID
 
         :param blocking_lock_id: The blocking_lock_id of this InnodbLockWaits.
-        :type: str
+        :type blocking_lock_id: str
         """
         self._blocking_lock_id = blocking_lock_id
 

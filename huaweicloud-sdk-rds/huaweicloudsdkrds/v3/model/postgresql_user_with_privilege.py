@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PostgresqlUserWithPrivilege:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class PostgresqlUserWithPrivilege:
     }
 
     def __init__(self, name=None, readonly=None, schema_name=None):
-        """PostgresqlUserWithPrivilege - a model defined in huaweicloud sdk"""
+        """PostgresqlUserWithPrivilege
+
+        The model defined in huaweicloud sdk
+
+        :param name: 数据库帐号名称。  数据库帐号名称在1到63个字符之间，由字母、数字、或下划线组成，不能包含其他特殊字符，不能以“pg”和数字开头，不能和系统用户名称相同且帐号名称必须存在。  系统用户包括“rdsAdmin”,“ rdsMetric”, “rdsBackup”, “rdsRepl”,“ rdsProxy”, “rdsDdm”。
+        :type name: str
+        :param readonly: 数据库帐号权限。 - true：只读。 - false：可读可写。
+        :type readonly: bool
+        :param schema_name: schema名称。  schema名称在1到63个字符之间，由字母、数字、或下划线组成，不能包含其他特殊字符，不能以“pg”和数字开头，不能和RDS for PostgreSQL模板库重名，且schema名称必须存在。  RDS for PostgreSQL模板库包括postgres， template0 ，template1。
+        :type schema_name: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class PostgresqlUserWithPrivilege:
         数据库帐号名称。  数据库帐号名称在1到63个字符之间，由字母、数字、或下划线组成，不能包含其他特殊字符，不能以“pg”和数字开头，不能和系统用户名称相同且帐号名称必须存在。  系统用户包括“rdsAdmin”,“ rdsMetric”, “rdsBackup”, “rdsRepl”,“ rdsProxy”, “rdsDdm”。
 
         :param name: The name of this PostgresqlUserWithPrivilege.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -87,7 +96,7 @@ class PostgresqlUserWithPrivilege:
         数据库帐号权限。 - true：只读。 - false：可读可写。
 
         :param readonly: The readonly of this PostgresqlUserWithPrivilege.
-        :type: bool
+        :type readonly: bool
         """
         self._readonly = readonly
 
@@ -109,7 +118,7 @@ class PostgresqlUserWithPrivilege:
         schema名称。  schema名称在1到63个字符之间，由字母、数字、或下划线组成，不能包含其他特殊字符，不能以“pg”和数字开头，不能和RDS for PostgreSQL模板库重名，且schema名称必须存在。  RDS for PostgreSQL模板库包括postgres， template0 ，template1。
 
         :param schema_name: The schema_name of this PostgresqlUserWithPrivilege.
-        :type: str
+        :type schema_name: str
         """
         self._schema_name = schema_name
 

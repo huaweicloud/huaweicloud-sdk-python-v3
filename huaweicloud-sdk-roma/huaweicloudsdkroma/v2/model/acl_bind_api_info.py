@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AclBindApiInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class AclBindApiInfo:
     }
 
     def __init__(self, api_id=None, api_name=None, group_name=None, api_type=None, api_remark=None, env_id=None, env_name=None, bind_id=None, bind_time=None, publish_id=None):
-        """AclBindApiInfo - a model defined in huaweicloud sdk"""
+        """AclBindApiInfo
+
+        The model defined in huaweicloud sdk
+
+        :param api_id: API编号
+        :type api_id: str
+        :param api_name: API名称
+        :type api_name: str
+        :param group_name: API分组名称
+        :type group_name: str
+        :param api_type: API类型
+        :type api_type: int
+        :param api_remark: API的描述信息
+        :type api_remark: str
+        :param env_id: 生效的环境编号
+        :type env_id: str
+        :param env_name: 生效的环境名称
+        :type env_name: str
+        :param bind_id: 绑定关系编号
+        :type bind_id: str
+        :param bind_time: 绑定时间
+        :type bind_time: datetime
+        :param publish_id: API发布记录编号
+        :type publish_id: str
+        """
         
         
 
@@ -103,7 +126,7 @@ class AclBindApiInfo:
         API编号
 
         :param api_id: The api_id of this AclBindApiInfo.
-        :type: str
+        :type api_id: str
         """
         self._api_id = api_id
 
@@ -125,7 +148,7 @@ class AclBindApiInfo:
         API名称
 
         :param api_name: The api_name of this AclBindApiInfo.
-        :type: str
+        :type api_name: str
         """
         self._api_name = api_name
 
@@ -147,7 +170,7 @@ class AclBindApiInfo:
         API分组名称
 
         :param group_name: The group_name of this AclBindApiInfo.
-        :type: str
+        :type group_name: str
         """
         self._group_name = group_name
 
@@ -169,7 +192,7 @@ class AclBindApiInfo:
         API类型
 
         :param api_type: The api_type of this AclBindApiInfo.
-        :type: int
+        :type api_type: int
         """
         self._api_type = api_type
 
@@ -191,7 +214,7 @@ class AclBindApiInfo:
         API的描述信息
 
         :param api_remark: The api_remark of this AclBindApiInfo.
-        :type: str
+        :type api_remark: str
         """
         self._api_remark = api_remark
 
@@ -213,7 +236,7 @@ class AclBindApiInfo:
         生效的环境编号
 
         :param env_id: The env_id of this AclBindApiInfo.
-        :type: str
+        :type env_id: str
         """
         self._env_id = env_id
 
@@ -235,7 +258,7 @@ class AclBindApiInfo:
         生效的环境名称
 
         :param env_name: The env_name of this AclBindApiInfo.
-        :type: str
+        :type env_name: str
         """
         self._env_name = env_name
 
@@ -257,7 +280,7 @@ class AclBindApiInfo:
         绑定关系编号
 
         :param bind_id: The bind_id of this AclBindApiInfo.
-        :type: str
+        :type bind_id: str
         """
         self._bind_id = bind_id
 
@@ -279,7 +302,7 @@ class AclBindApiInfo:
         绑定时间
 
         :param bind_time: The bind_time of this AclBindApiInfo.
-        :type: datetime
+        :type bind_time: datetime
         """
         self._bind_time = bind_time
 
@@ -301,7 +324,7 @@ class AclBindApiInfo:
         API发布记录编号
 
         :param publish_id: The publish_id of this AclBindApiInfo.
-        :type: str
+        :type publish_id: str
         """
         self._publish_id = publish_id
 

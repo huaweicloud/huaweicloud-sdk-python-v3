@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StatisticResourceDataItem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class StatisticResourceDataItem:
     }
 
     def __init__(self, time=None, vmr_parties=None, max_concurrency_vmr_count=None, live_port_used_count=None, record_used_size=None, pstn_used_duration=None):
-        """StatisticResourceDataItem - a model defined in huaweicloud sdk"""
+        """StatisticResourceDataItem
+
+        The model defined in huaweicloud sdk
+
+        :param time: 日期/月份。
+        :type time: str
+        :param vmr_parties: VMR方数。 category &#x3D; used_vmr_info时有效。
+        :type vmr_parties: str
+        :param max_concurrency_vmr_count: VMR并发使用数。 category &#x3D; used_vmr_info时有效。
+        :type max_concurrency_vmr_count: str
+        :param live_port_used_count: 直播端口并发使用数。 category &#x3D; used_live_info时有效。
+        :type live_port_used_count: str
+        :param record_used_size: 录播使用空间(G)。 category &#x3D; used_record_info时有效。
+        :type record_used_size: str
+        :param pstn_used_duration: PSTN外呼时长(分钟)。 category &#x3D; used_pstn_info时有效。
+        :type pstn_used_duration: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class StatisticResourceDataItem:
         日期/月份。
 
         :param time: The time of this StatisticResourceDataItem.
-        :type: str
+        :type time: str
         """
         self._time = time
 
@@ -105,7 +120,7 @@ class StatisticResourceDataItem:
         VMR方数。 category = used_vmr_info时有效。
 
         :param vmr_parties: The vmr_parties of this StatisticResourceDataItem.
-        :type: str
+        :type vmr_parties: str
         """
         self._vmr_parties = vmr_parties
 
@@ -127,7 +142,7 @@ class StatisticResourceDataItem:
         VMR并发使用数。 category = used_vmr_info时有效。
 
         :param max_concurrency_vmr_count: The max_concurrency_vmr_count of this StatisticResourceDataItem.
-        :type: str
+        :type max_concurrency_vmr_count: str
         """
         self._max_concurrency_vmr_count = max_concurrency_vmr_count
 
@@ -149,7 +164,7 @@ class StatisticResourceDataItem:
         直播端口并发使用数。 category = used_live_info时有效。
 
         :param live_port_used_count: The live_port_used_count of this StatisticResourceDataItem.
-        :type: str
+        :type live_port_used_count: str
         """
         self._live_port_used_count = live_port_used_count
 
@@ -171,7 +186,7 @@ class StatisticResourceDataItem:
         录播使用空间(G)。 category = used_record_info时有效。
 
         :param record_used_size: The record_used_size of this StatisticResourceDataItem.
-        :type: str
+        :type record_used_size: str
         """
         self._record_used_size = record_used_size
 
@@ -193,7 +208,7 @@ class StatisticResourceDataItem:
         PSTN外呼时长(分钟)。 category = used_pstn_info时有效。
 
         :param pstn_used_duration: The pstn_used_duration of this StatisticResourceDataItem.
-        :type: str
+        :type pstn_used_duration: str
         """
         self._pstn_used_duration = pstn_used_duration
 

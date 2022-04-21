@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MysqlVolume:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class MysqlVolume:
     }
 
     def __init__(self, size=None):
-        """MysqlVolume - a model defined in huaweicloud sdk"""
+        """MysqlVolume
+
+        The model defined in huaweicloud sdk
+
+        :param size: 磁盘大小。默认值为40，单位GB。 取值范围：40~128000，必须为10的整数倍。
+        :type size: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class MysqlVolume:
         磁盘大小。默认值为40，单位GB。 取值范围：40~128000，必须为10的整数倍。
 
         :param size: The size of this MysqlVolume.
-        :type: str
+        :type size: str
         """
         self._size = size
 

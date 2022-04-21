@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPostgresqlDbUserPaginatedResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListPostgresqlDbUserPaginatedResponse(SdkResponse):
     }
 
     def __init__(self, users=None, total_count=None):
-        """ListPostgresqlDbUserPaginatedResponse - a model defined in huaweicloud sdk"""
+        """ListPostgresqlDbUserPaginatedResponse
+
+        The model defined in huaweicloud sdk
+
+        :param users: 列表中每个元素表示一个数据库用户。
+        :type users: list[:class:`huaweicloudsdkrds.v3.PostgresqlUserForList`]
+        :param total_count: 数据库用户总数。
+        :type total_count: int
+        """
         
         super(ListPostgresqlDbUserPaginatedResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListPostgresqlDbUserPaginatedResponse(SdkResponse):
         列表中每个元素表示一个数据库用户。
 
         :return: The users of this ListPostgresqlDbUserPaginatedResponse.
-        :rtype: list[PostgresqlUserForList]
+        :rtype: list[:class:`huaweicloudsdkrds.v3.PostgresqlUserForList`]
         """
         return self._users
 
@@ -63,7 +70,7 @@ class ListPostgresqlDbUserPaginatedResponse(SdkResponse):
         列表中每个元素表示一个数据库用户。
 
         :param users: The users of this ListPostgresqlDbUserPaginatedResponse.
-        :type: list[PostgresqlUserForList]
+        :type users: list[:class:`huaweicloudsdkrds.v3.PostgresqlUserForList`]
         """
         self._users = users
 
@@ -85,7 +92,7 @@ class ListPostgresqlDbUserPaginatedResponse(SdkResponse):
         数据库用户总数。
 
         :param total_count: The total_count of this ListPostgresqlDbUserPaginatedResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 

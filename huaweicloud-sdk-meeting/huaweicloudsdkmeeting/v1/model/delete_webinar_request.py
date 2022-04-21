@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteWebinarRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class DeleteWebinarRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, conference_id=None):
-        """DeleteWebinarRequest - a model defined in huaweicloud sdk"""
+        """DeleteWebinarRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        :type x_request_id: str
+        :param accept_language: 语言参数，默认为中文zh-CN, 英文为en-US
+        :type accept_language: str
+        :param conference_id: 会议ID
+        :type conference_id: str
+        """
         
         
 
@@ -67,7 +76,7 @@ class DeleteWebinarRequest:
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
 
         :param x_request_id: The x_request_id of this DeleteWebinarRequest.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 
@@ -89,7 +98,7 @@ class DeleteWebinarRequest:
         语言参数，默认为中文zh-CN, 英文为en-US
 
         :param accept_language: The accept_language of this DeleteWebinarRequest.
-        :type: str
+        :type accept_language: str
         """
         self._accept_language = accept_language
 
@@ -111,7 +120,7 @@ class DeleteWebinarRequest:
         会议ID
 
         :param conference_id: The conference_id of this DeleteWebinarRequest.
-        :type: str
+        :type conference_id: str
         """
         self._conference_id = conference_id
 

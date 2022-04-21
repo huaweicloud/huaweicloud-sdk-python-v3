@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListConversionsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListConversionsRequest:
     }
 
     def __init__(self, x_language=None, measure_type=None):
-        """ListConversionsRequest - a model defined in huaweicloud sdk"""
+        """ListConversionsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言。zh_CN：中文en_US：英文缺省为zh_CN。
+        :type x_language: str
+        :param measure_type: 度量类型。1：货币2：时长3：流量4：数量7：容量9：行数10：周期11：频率12：个数16：带宽速率17：容量时长18：查询速率19：带宽速率（1000进制）20：性能测试用量21：面积22：视频23：吞吐量25：测试类型
+        :type measure_type: int
+        """
         
         
 
@@ -63,7 +70,7 @@ class ListConversionsRequest:
         语言。zh_CN：中文en_US：英文缺省为zh_CN。
 
         :param x_language: The x_language of this ListConversionsRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -85,7 +92,7 @@ class ListConversionsRequest:
         度量类型。1：货币2：时长3：流量4：数量7：容量9：行数10：周期11：频率12：个数16：带宽速率17：容量时长18：查询速率19：带宽速率（1000进制）20：性能测试用量21：面积22：视频23：吞吐量25：测试类型
 
         :param measure_type: The measure_type of this ListConversionsRequest.
-        :type: int
+        :type measure_type: int
         """
         self._measure_type = measure_type
 

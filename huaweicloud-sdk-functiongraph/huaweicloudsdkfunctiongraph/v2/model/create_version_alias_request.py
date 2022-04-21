@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateVersionAliasRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateVersionAliasRequest:
     }
 
     def __init__(self, function_urn=None, body=None):
-        """CreateVersionAliasRequest - a model defined in huaweicloud sdk"""
+        """CreateVersionAliasRequest
+
+        The model defined in huaweicloud sdk
+
+        :param function_urn: 函数的URN。
+        :type function_urn: str
+        :param body: Body of the CreateVersionAliasRequest
+        :type body: :class:`huaweicloudsdkfunctiongraph.v2.CreateVersionAliasRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateVersionAliasRequest:
         函数的URN。
 
         :param function_urn: The function_urn of this CreateVersionAliasRequest.
-        :type: str
+        :type function_urn: str
         """
         self._function_urn = function_urn
 
@@ -72,7 +79,7 @@ class CreateVersionAliasRequest:
 
 
         :return: The body of this CreateVersionAliasRequest.
-        :rtype: CreateVersionAliasRequestBody
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CreateVersionAliasRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CreateVersionAliasRequest:
 
 
         :param body: The body of this CreateVersionAliasRequest.
-        :type: CreateVersionAliasRequestBody
+        :type body: :class:`huaweicloudsdkfunctiongraph.v2.CreateVersionAliasRequestBody`
         """
         self._body = body
 

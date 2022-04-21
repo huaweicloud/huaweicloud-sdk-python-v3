@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateRunResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class CreateRunResponse(SdkResponse):
     }
 
     def __init__(self, run_id=None, job_id=None, job_type=None, created_time=None, sql_job=None):
-        """CreateRunResponse - a model defined in huaweicloud sdk"""
+        """CreateRunResponse
+
+        The model defined in huaweicloud sdk
+
+        :param run_id: 作业运行ID。
+        :type run_id: str
+        :param job_id: 作业ID。
+        :type job_id: str
+        :param job_type: 作业类型。
+        :type job_type: str
+        :param created_time: 创建运行时间。
+        :type created_time: str
+        :param sql_job: 
+        :type sql_job: :class:`huaweicloudsdkiotanalytics.v1.SqlJobRunResponseBody`
+        """
         
         super(CreateRunResponse, self).__init__()
 
@@ -78,7 +91,7 @@ class CreateRunResponse(SdkResponse):
         作业运行ID。
 
         :param run_id: The run_id of this CreateRunResponse.
-        :type: str
+        :type run_id: str
         """
         self._run_id = run_id
 
@@ -100,7 +113,7 @@ class CreateRunResponse(SdkResponse):
         作业ID。
 
         :param job_id: The job_id of this CreateRunResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -122,7 +135,7 @@ class CreateRunResponse(SdkResponse):
         作业类型。
 
         :param job_type: The job_type of this CreateRunResponse.
-        :type: str
+        :type job_type: str
         """
         self._job_type = job_type
 
@@ -144,7 +157,7 @@ class CreateRunResponse(SdkResponse):
         创建运行时间。
 
         :param created_time: The created_time of this CreateRunResponse.
-        :type: str
+        :type created_time: str
         """
         self._created_time = created_time
 
@@ -154,7 +167,7 @@ class CreateRunResponse(SdkResponse):
 
 
         :return: The sql_job of this CreateRunResponse.
-        :rtype: SqlJobRunResponseBody
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.SqlJobRunResponseBody`
         """
         return self._sql_job
 
@@ -164,7 +177,7 @@ class CreateRunResponse(SdkResponse):
 
 
         :param sql_job: The sql_job of this CreateRunResponse.
-        :type: SqlJobRunResponseBody
+        :type sql_job: :class:`huaweicloudsdkiotanalytics.v1.SqlJobRunResponseBody`
         """
         self._sql_job = sql_job
 

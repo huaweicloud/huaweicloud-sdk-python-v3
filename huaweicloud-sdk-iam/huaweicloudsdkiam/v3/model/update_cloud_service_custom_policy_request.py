@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateCloudServiceCustomPolicyRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateCloudServiceCustomPolicyRequest:
     }
 
     def __init__(self, role_id=None, body=None):
-        """UpdateCloudServiceCustomPolicyRequest - a model defined in huaweicloud sdk"""
+        """UpdateCloudServiceCustomPolicyRequest
+
+        The model defined in huaweicloud sdk
+
+        :param role_id: 待修改的自定义策略ID，获取方式请参见：[自定义策略ID](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product&#x3D;IAM&amp;api&#x3D;ListCustomPolicies)。
+        :type role_id: str
+        :param body: Body of the UpdateCloudServiceCustomPolicyRequest
+        :type body: :class:`huaweicloudsdkiam.v3.UpdateCloudServiceCustomPolicyRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateCloudServiceCustomPolicyRequest:
         待修改的自定义策略ID，获取方式请参见：[自定义策略ID](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=IAM&api=ListCustomPolicies)。
 
         :param role_id: The role_id of this UpdateCloudServiceCustomPolicyRequest.
-        :type: str
+        :type role_id: str
         """
         self._role_id = role_id
 
@@ -72,7 +79,7 @@ class UpdateCloudServiceCustomPolicyRequest:
 
 
         :return: The body of this UpdateCloudServiceCustomPolicyRequest.
-        :rtype: UpdateCloudServiceCustomPolicyRequestBody
+        :rtype: :class:`huaweicloudsdkiam.v3.UpdateCloudServiceCustomPolicyRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateCloudServiceCustomPolicyRequest:
 
 
         :param body: The body of this UpdateCloudServiceCustomPolicyRequest.
-        :type: UpdateCloudServiceCustomPolicyRequestBody
+        :type body: :class:`huaweicloudsdkiam.v3.UpdateCloudServiceCustomPolicyRequestBody`
         """
         self._body = body
 

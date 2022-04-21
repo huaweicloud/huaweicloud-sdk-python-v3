@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DemandDiscountRatingResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class DemandDiscountRatingResult:
     }
 
     def __init__(self, discount_id=None, discount_type=None, amount=None, measure_id=None, discount_name=None):
-        """DemandDiscountRatingResult - a model defined in huaweicloud sdk"""
+        """DemandDiscountRatingResult
+
+        The model defined in huaweicloud sdk
+
+        :param discount_id: 优惠标识ID。
+        :type discount_id: str
+        :param discount_type: 折扣优惠类型。 合同商务折扣：605：华为云BE场景下的合同商务折扣606：分销商BE场景下的合同商务折扣 伙伴授予折扣：607：合作伙伴授予折扣-折扣率
+        :type discount_type: int
+        :param amount: 折扣的金额。
+        :type amount: float
+        :param measure_id: 度量单位标识。 1：元
+        :type measure_id: int
+        :param discount_name: 折扣名称。
+        :type discount_name: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class DemandDiscountRatingResult:
         优惠标识ID。
 
         :param discount_id: The discount_id of this DemandDiscountRatingResult.
-        :type: str
+        :type discount_id: str
         """
         self._discount_id = discount_id
 
@@ -100,7 +113,7 @@ class DemandDiscountRatingResult:
         折扣优惠类型。 合同商务折扣：605：华为云BE场景下的合同商务折扣606：分销商BE场景下的合同商务折扣 伙伴授予折扣：607：合作伙伴授予折扣-折扣率
 
         :param discount_type: The discount_type of this DemandDiscountRatingResult.
-        :type: int
+        :type discount_type: int
         """
         self._discount_type = discount_type
 
@@ -122,7 +135,7 @@ class DemandDiscountRatingResult:
         折扣的金额。
 
         :param amount: The amount of this DemandDiscountRatingResult.
-        :type: float
+        :type amount: float
         """
         self._amount = amount
 
@@ -144,7 +157,7 @@ class DemandDiscountRatingResult:
         度量单位标识。 1：元
 
         :param measure_id: The measure_id of this DemandDiscountRatingResult.
-        :type: int
+        :type measure_id: int
         """
         self._measure_id = measure_id
 
@@ -166,7 +179,7 @@ class DemandDiscountRatingResult:
         折扣名称。
 
         :param discount_name: The discount_name of this DemandDiscountRatingResult.
-        :type: str
+        :type discount_name: str
         """
         self._discount_name = discount_name
 

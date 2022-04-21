@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListBackgroundTaskRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListBackgroundTaskRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, start_time=None, end_time=None):
-        """ListBackgroundTaskRequest - a model defined in huaweicloud sdk"""
+        """ListBackgroundTaskRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0
+        :type offset: int
+        :param limit: 每页显示的条目数量。
+        :type limit: int
+        :param start_time: 查询开始时间，时间为UTC时间。格式：yyyyMMddHHmmss，如：20200609160000。
+        :type start_time: str
+        :param end_time: 查询结束时间，时间为UTC时间。格式：yyyyMMddHHmmss，如：20200617155959。
+        :type end_time: str
+        """
         
         
 
@@ -77,7 +90,7 @@ class ListBackgroundTaskRequest:
         实例ID。
 
         :param instance_id: The instance_id of this ListBackgroundTaskRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -99,7 +112,7 @@ class ListBackgroundTaskRequest:
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
         :param offset: The offset of this ListBackgroundTaskRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -121,7 +134,7 @@ class ListBackgroundTaskRequest:
         每页显示的条目数量。
 
         :param limit: The limit of this ListBackgroundTaskRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -143,7 +156,7 @@ class ListBackgroundTaskRequest:
         查询开始时间，时间为UTC时间。格式：yyyyMMddHHmmss，如：20200609160000。
 
         :param start_time: The start_time of this ListBackgroundTaskRequest.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -165,7 +178,7 @@ class ListBackgroundTaskRequest:
         查询结束时间，时间为UTC时间。格式：yyyyMMddHHmmss，如：20200617155959。
 
         :param end_time: The end_time of this ListBackgroundTaskRequest.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 

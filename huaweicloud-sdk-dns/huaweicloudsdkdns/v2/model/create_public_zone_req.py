@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreatePublicZoneReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class CreatePublicZoneReq:
     }
 
     def __init__(self, name=None, description=None, zone_type=None, email=None, ttl=None, enterprise_project_id=None, tags=None):
-        """CreatePublicZoneReq - a model defined in huaweicloud sdk"""
+        """CreatePublicZoneReq
+
+        The model defined in huaweicloud sdk
+
+        :param name: Zone名称
+        :type name: str
+        :param description: 描述
+        :type description: str
+        :param zone_type: Zone类型,取值public。
+        :type zone_type: str
+        :param email: 管理该zone的管理员邮箱
+        :type email: str
+        :param ttl: 用于填写默认生成的SOA记录中有效缓存时间，以秒为单位.
+        :type ttl: int
+        :param enterprise_project_id: 域名关联的企业项目ID，长度不超过36个字符.
+        :type enterprise_project_id: str
+        :param tags: 资源标签。
+        :type tags: list[:class:`huaweicloudsdkdns.v2.Tag`]
+        """
         
         
 
@@ -87,7 +104,7 @@ class CreatePublicZoneReq:
         Zone名称
 
         :param name: The name of this CreatePublicZoneReq.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -109,7 +126,7 @@ class CreatePublicZoneReq:
         描述
 
         :param description: The description of this CreatePublicZoneReq.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -131,7 +148,7 @@ class CreatePublicZoneReq:
         Zone类型,取值public。
 
         :param zone_type: The zone_type of this CreatePublicZoneReq.
-        :type: str
+        :type zone_type: str
         """
         self._zone_type = zone_type
 
@@ -153,7 +170,7 @@ class CreatePublicZoneReq:
         管理该zone的管理员邮箱
 
         :param email: The email of this CreatePublicZoneReq.
-        :type: str
+        :type email: str
         """
         self._email = email
 
@@ -175,7 +192,7 @@ class CreatePublicZoneReq:
         用于填写默认生成的SOA记录中有效缓存时间，以秒为单位.
 
         :param ttl: The ttl of this CreatePublicZoneReq.
-        :type: int
+        :type ttl: int
         """
         self._ttl = ttl
 
@@ -197,7 +214,7 @@ class CreatePublicZoneReq:
         域名关联的企业项目ID，长度不超过36个字符.
 
         :param enterprise_project_id: The enterprise_project_id of this CreatePublicZoneReq.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -208,7 +225,7 @@ class CreatePublicZoneReq:
         资源标签。
 
         :return: The tags of this CreatePublicZoneReq.
-        :rtype: list[Tag]
+        :rtype: list[:class:`huaweicloudsdkdns.v2.Tag`]
         """
         return self._tags
 
@@ -219,7 +236,7 @@ class CreatePublicZoneReq:
         资源标签。
 
         :param tags: The tags of this CreatePublicZoneReq.
-        :type: list[Tag]
+        :type tags: list[:class:`huaweicloudsdkdns.v2.Tag`]
         """
         self._tags = tags
 

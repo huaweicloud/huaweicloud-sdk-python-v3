@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunEntitySentimentResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class RunEntitySentimentResponse(SdkResponse):
     }
 
     def __init__(self, content=None, entity=None, label=None, confidence=None, error_code=None, error_msg=None):
-        """RunEntitySentimentResponse - a model defined in huaweicloud sdk"""
+        """RunEntitySentimentResponse
+
+        The model defined in huaweicloud sdk
+
+        :param content: 响应的文本
+        :type content: str
+        :param entity: 响应的实体
+        :type entity: str
+        :param label: 响应的情感标签，0表示负面，1表示非负面，2表示不相关
+        :type label: int
+        :param confidence: 该实体在文本中的情感label的置信度
+        :type confidence: float
+        :param error_code: 调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
+        :type error_code: str
+        :param error_msg: 调用失败时的错误信息。调用成功时无此字段。
+        :type error_msg: str
+        """
         
         super(RunEntitySentimentResponse, self).__init__()
 
@@ -83,7 +98,7 @@ class RunEntitySentimentResponse(SdkResponse):
         响应的文本
 
         :param content: The content of this RunEntitySentimentResponse.
-        :type: str
+        :type content: str
         """
         self._content = content
 
@@ -105,7 +120,7 @@ class RunEntitySentimentResponse(SdkResponse):
         响应的实体
 
         :param entity: The entity of this RunEntitySentimentResponse.
-        :type: str
+        :type entity: str
         """
         self._entity = entity
 
@@ -127,7 +142,7 @@ class RunEntitySentimentResponse(SdkResponse):
         响应的情感标签，0表示负面，1表示非负面，2表示不相关
 
         :param label: The label of this RunEntitySentimentResponse.
-        :type: int
+        :type label: int
         """
         self._label = label
 
@@ -149,7 +164,7 @@ class RunEntitySentimentResponse(SdkResponse):
         该实体在文本中的情感label的置信度
 
         :param confidence: The confidence of this RunEntitySentimentResponse.
-        :type: float
+        :type confidence: float
         """
         self._confidence = confidence
 
@@ -171,7 +186,7 @@ class RunEntitySentimentResponse(SdkResponse):
         调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
 
         :param error_code: The error_code of this RunEntitySentimentResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -193,7 +208,7 @@ class RunEntitySentimentResponse(SdkResponse):
         调用失败时的错误信息。调用成功时无此字段。
 
         :param error_msg: The error_msg of this RunEntitySentimentResponse.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 

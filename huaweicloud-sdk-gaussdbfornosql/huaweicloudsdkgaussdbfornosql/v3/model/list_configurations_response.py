@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListConfigurationsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListConfigurationsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, configurations=None):
-        """ListConfigurationsResponse - a model defined in huaweicloud sdk"""
+        """ListConfigurationsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 总记录数。
+        :type count: int
+        :param configurations: 
+        :type configurations: list[:class:`huaweicloudsdkgaussdbfornosql.v3.ListConfigurationsResult`]
+        """
         
         super(ListConfigurationsResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListConfigurationsResponse(SdkResponse):
         总记录数。
 
         :param count: The count of this ListConfigurationsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -73,7 +80,7 @@ class ListConfigurationsResponse(SdkResponse):
 
 
         :return: The configurations of this ListConfigurationsResponse.
-        :rtype: list[ListConfigurationsResult]
+        :rtype: list[:class:`huaweicloudsdkgaussdbfornosql.v3.ListConfigurationsResult`]
         """
         return self._configurations
 
@@ -83,7 +90,7 @@ class ListConfigurationsResponse(SdkResponse):
 
 
         :param configurations: The configurations of this ListConfigurationsResponse.
-        :type: list[ListConfigurationsResult]
+        :type configurations: list[:class:`huaweicloudsdkgaussdbfornosql.v3.ListConfigurationsResult`]
         """
         self._configurations = configurations
 

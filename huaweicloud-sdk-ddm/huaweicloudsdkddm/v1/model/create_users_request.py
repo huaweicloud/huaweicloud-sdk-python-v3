@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateUsersRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateUsersRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreateUsersRequest - a model defined in huaweicloud sdk"""
+        """CreateUsersRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: DDM实例ID。
+        :type instance_id: str
+        :param body: Body of the CreateUsersRequest
+        :type body: :class:`huaweicloudsdkddm.v1.CreateUsersReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateUsersRequest:
         DDM实例ID。
 
         :param instance_id: The instance_id of this CreateUsersRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -72,7 +79,7 @@ class CreateUsersRequest:
 
 
         :return: The body of this CreateUsersRequest.
-        :rtype: CreateUsersReq
+        :rtype: :class:`huaweicloudsdkddm.v1.CreateUsersReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CreateUsersRequest:
 
 
         :param body: The body of this CreateUsersRequest.
-        :type: CreateUsersReq
+        :type body: :class:`huaweicloudsdkddm.v1.CreateUsersReq`
         """
         self._body = body
 

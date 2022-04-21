@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Frequency:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class Frequency:
     }
 
     def __init__(self, type=None, cron_expr=None, hour_of_day=None, day_of_week=None, fixed_rate=None, fixed_rate_unit=None):
-        """Frequency - a model defined in huaweicloud sdk"""
+        """Frequency
+
+        The model defined in huaweicloud sdk
+
+        :param type: 时间类型
+        :type type: str
+        :param cron_expr: 当字段type为\&quot;CRON\&quot;时取该字段
+        :type cron_expr: str
+        :param hour_of_day: 当字段type为\&quot;DAILY\&quot;或者\&quot;WEEKLY\&quot;时取该字段
+        :type hour_of_day: int
+        :param day_of_week: 当字段type为\&quot;WEEKLY\&quot;时取该字段(周日~周六)
+        :type day_of_week: int
+        :param fixed_rate: 当字段type为\&quot;FIXED_RATE\&quot;时取该字段(当fixed_rate_unit单位为minute，最大值60;当fixed_rate_unit单位为hour，最大值24)
+        :type fixed_rate: int
+        :param fixed_rate_unit: 时间单位
+        :type fixed_rate_unit: str
+        """
         
         
 
@@ -82,7 +97,7 @@ class Frequency:
         时间类型
 
         :param type: The type of this Frequency.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -104,7 +119,7 @@ class Frequency:
         当字段type为\"CRON\"时取该字段
 
         :param cron_expr: The cron_expr of this Frequency.
-        :type: str
+        :type cron_expr: str
         """
         self._cron_expr = cron_expr
 
@@ -126,7 +141,7 @@ class Frequency:
         当字段type为\"DAILY\"或者\"WEEKLY\"时取该字段
 
         :param hour_of_day: The hour_of_day of this Frequency.
-        :type: int
+        :type hour_of_day: int
         """
         self._hour_of_day = hour_of_day
 
@@ -148,7 +163,7 @@ class Frequency:
         当字段type为\"WEEKLY\"时取该字段(周日~周六)
 
         :param day_of_week: The day_of_week of this Frequency.
-        :type: int
+        :type day_of_week: int
         """
         self._day_of_week = day_of_week
 
@@ -170,7 +185,7 @@ class Frequency:
         当字段type为\"FIXED_RATE\"时取该字段(当fixed_rate_unit单位为minute，最大值60;当fixed_rate_unit单位为hour，最大值24)
 
         :param fixed_rate: The fixed_rate of this Frequency.
-        :type: int
+        :type fixed_rate: int
         """
         self._fixed_rate = fixed_rate
 
@@ -192,7 +207,7 @@ class Frequency:
         时间单位
 
         :param fixed_rate_unit: The fixed_rate_unit of this Frequency.
-        :type: str
+        :type fixed_rate_unit: str
         """
         self._fixed_rate_unit = fixed_rate_unit
 

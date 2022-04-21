@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TasksResponseBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -72,7 +71,55 @@ class TasksResponseBody:
     }
 
     def __init__(self, id=None, name=None, type=None, os_type=None, state=None, estimate_complete_time=None, create_date=None, priority=None, speed_limit=None, migrate_speed=None, compress_rate=None, start_target_server=None, error_json=None, total_time=None, migration_ip=None, sub_tasks=None, source_server=None, enterprise_project_id=None, target_server=None, log_collect_status=None, clone_server=None, syncing=None):
-        """TasksResponseBody - a model defined in huaweicloud sdk"""
+        """TasksResponseBody
+
+        The model defined in huaweicloud sdk
+
+        :param id: 迁移任务id
+        :type id: str
+        :param name: 任务名称（用户自定义）
+        :type name: str
+        :param type: 任务类型，创建迁移任务时必选，更新迁移任务时可选
+        :type type: str
+        :param os_type: 操作系统类型，分为WINDOWS和LINUX，创建时必选，更新时可选
+        :type os_type: str
+        :param state: 任务状态
+        :type state: str
+        :param estimate_complete_time: 预估完成时间
+        :type estimate_complete_time: int
+        :param create_date: 任务创建时间
+        :type create_date: int
+        :param priority: 进程优先级 0：低 1：标准 2：高
+        :type priority: int
+        :param speed_limit: 迁移限速
+        :type speed_limit: int
+        :param migrate_speed: 迁移速率，单位：MB/S
+        :type migrate_speed: float
+        :param compress_rate: 压缩率
+        :type compress_rate: float
+        :param start_target_server: 迁移完成后是否启动目的端服务器 true：启动 false：停止
+        :type start_target_server: bool
+        :param error_json: 错误信息
+        :type error_json: str
+        :param total_time: 任务总耗时
+        :type total_time: int
+        :param migration_ip: 目的端服务器的IP地址。 公网迁移时请填写弹性IP地址 专线迁移时请填写私有IP地址
+        :type migration_ip: str
+        :param sub_tasks: 任务关联的子任务信息
+        :type sub_tasks: list[:class:`huaweicloudsdksms.v3.SubTaskAssociatedWithTask`]
+        :param source_server: 
+        :type source_server: :class:`huaweicloudsdksms.v3.SourceServerAssociatedWithTask`
+        :param enterprise_project_id: 迁移项目id
+        :type enterprise_project_id: str
+        :param target_server: 
+        :type target_server: :class:`huaweicloudsdksms.v3.TargetServerAssociatedWithTask`
+        :param log_collect_status: 日志收集状态
+        :type log_collect_status: str
+        :param clone_server: 
+        :type clone_server: :class:`huaweicloudsdksms.v3.CloneServerBrief`
+        :param syncing: 是否同步
+        :type syncing: bool
+        """
         
         
 
@@ -163,7 +210,7 @@ class TasksResponseBody:
         迁移任务id
 
         :param id: The id of this TasksResponseBody.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -185,7 +232,7 @@ class TasksResponseBody:
         任务名称（用户自定义）
 
         :param name: The name of this TasksResponseBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -207,7 +254,7 @@ class TasksResponseBody:
         任务类型，创建迁移任务时必选，更新迁移任务时可选
 
         :param type: The type of this TasksResponseBody.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -229,7 +276,7 @@ class TasksResponseBody:
         操作系统类型，分为WINDOWS和LINUX，创建时必选，更新时可选
 
         :param os_type: The os_type of this TasksResponseBody.
-        :type: str
+        :type os_type: str
         """
         self._os_type = os_type
 
@@ -251,7 +298,7 @@ class TasksResponseBody:
         任务状态
 
         :param state: The state of this TasksResponseBody.
-        :type: str
+        :type state: str
         """
         self._state = state
 
@@ -273,7 +320,7 @@ class TasksResponseBody:
         预估完成时间
 
         :param estimate_complete_time: The estimate_complete_time of this TasksResponseBody.
-        :type: int
+        :type estimate_complete_time: int
         """
         self._estimate_complete_time = estimate_complete_time
 
@@ -295,7 +342,7 @@ class TasksResponseBody:
         任务创建时间
 
         :param create_date: The create_date of this TasksResponseBody.
-        :type: int
+        :type create_date: int
         """
         self._create_date = create_date
 
@@ -317,7 +364,7 @@ class TasksResponseBody:
         进程优先级 0：低 1：标准 2：高
 
         :param priority: The priority of this TasksResponseBody.
-        :type: int
+        :type priority: int
         """
         self._priority = priority
 
@@ -339,7 +386,7 @@ class TasksResponseBody:
         迁移限速
 
         :param speed_limit: The speed_limit of this TasksResponseBody.
-        :type: int
+        :type speed_limit: int
         """
         self._speed_limit = speed_limit
 
@@ -361,7 +408,7 @@ class TasksResponseBody:
         迁移速率，单位：MB/S
 
         :param migrate_speed: The migrate_speed of this TasksResponseBody.
-        :type: float
+        :type migrate_speed: float
         """
         self._migrate_speed = migrate_speed
 
@@ -383,7 +430,7 @@ class TasksResponseBody:
         压缩率
 
         :param compress_rate: The compress_rate of this TasksResponseBody.
-        :type: float
+        :type compress_rate: float
         """
         self._compress_rate = compress_rate
 
@@ -405,7 +452,7 @@ class TasksResponseBody:
         迁移完成后是否启动目的端服务器 true：启动 false：停止
 
         :param start_target_server: The start_target_server of this TasksResponseBody.
-        :type: bool
+        :type start_target_server: bool
         """
         self._start_target_server = start_target_server
 
@@ -427,7 +474,7 @@ class TasksResponseBody:
         错误信息
 
         :param error_json: The error_json of this TasksResponseBody.
-        :type: str
+        :type error_json: str
         """
         self._error_json = error_json
 
@@ -449,7 +496,7 @@ class TasksResponseBody:
         任务总耗时
 
         :param total_time: The total_time of this TasksResponseBody.
-        :type: int
+        :type total_time: int
         """
         self._total_time = total_time
 
@@ -471,7 +518,7 @@ class TasksResponseBody:
         目的端服务器的IP地址。 公网迁移时请填写弹性IP地址 专线迁移时请填写私有IP地址
 
         :param migration_ip: The migration_ip of this TasksResponseBody.
-        :type: str
+        :type migration_ip: str
         """
         self._migration_ip = migration_ip
 
@@ -482,7 +529,7 @@ class TasksResponseBody:
         任务关联的子任务信息
 
         :return: The sub_tasks of this TasksResponseBody.
-        :rtype: list[SubTaskAssociatedWithTask]
+        :rtype: list[:class:`huaweicloudsdksms.v3.SubTaskAssociatedWithTask`]
         """
         return self._sub_tasks
 
@@ -493,7 +540,7 @@ class TasksResponseBody:
         任务关联的子任务信息
 
         :param sub_tasks: The sub_tasks of this TasksResponseBody.
-        :type: list[SubTaskAssociatedWithTask]
+        :type sub_tasks: list[:class:`huaweicloudsdksms.v3.SubTaskAssociatedWithTask`]
         """
         self._sub_tasks = sub_tasks
 
@@ -503,7 +550,7 @@ class TasksResponseBody:
 
 
         :return: The source_server of this TasksResponseBody.
-        :rtype: SourceServerAssociatedWithTask
+        :rtype: :class:`huaweicloudsdksms.v3.SourceServerAssociatedWithTask`
         """
         return self._source_server
 
@@ -513,7 +560,7 @@ class TasksResponseBody:
 
 
         :param source_server: The source_server of this TasksResponseBody.
-        :type: SourceServerAssociatedWithTask
+        :type source_server: :class:`huaweicloudsdksms.v3.SourceServerAssociatedWithTask`
         """
         self._source_server = source_server
 
@@ -535,7 +582,7 @@ class TasksResponseBody:
         迁移项目id
 
         :param enterprise_project_id: The enterprise_project_id of this TasksResponseBody.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -545,7 +592,7 @@ class TasksResponseBody:
 
 
         :return: The target_server of this TasksResponseBody.
-        :rtype: TargetServerAssociatedWithTask
+        :rtype: :class:`huaweicloudsdksms.v3.TargetServerAssociatedWithTask`
         """
         return self._target_server
 
@@ -555,7 +602,7 @@ class TasksResponseBody:
 
 
         :param target_server: The target_server of this TasksResponseBody.
-        :type: TargetServerAssociatedWithTask
+        :type target_server: :class:`huaweicloudsdksms.v3.TargetServerAssociatedWithTask`
         """
         self._target_server = target_server
 
@@ -577,7 +624,7 @@ class TasksResponseBody:
         日志收集状态
 
         :param log_collect_status: The log_collect_status of this TasksResponseBody.
-        :type: str
+        :type log_collect_status: str
         """
         self._log_collect_status = log_collect_status
 
@@ -587,7 +634,7 @@ class TasksResponseBody:
 
 
         :return: The clone_server of this TasksResponseBody.
-        :rtype: CloneServerBrief
+        :rtype: :class:`huaweicloudsdksms.v3.CloneServerBrief`
         """
         return self._clone_server
 
@@ -597,7 +644,7 @@ class TasksResponseBody:
 
 
         :param clone_server: The clone_server of this TasksResponseBody.
-        :type: CloneServerBrief
+        :type clone_server: :class:`huaweicloudsdksms.v3.CloneServerBrief`
         """
         self._clone_server = clone_server
 
@@ -619,7 +666,7 @@ class TasksResponseBody:
         是否同步
 
         :param syncing: The syncing of this TasksResponseBody.
-        :type: bool
+        :type syncing: bool
         """
         self._syncing = syncing
 

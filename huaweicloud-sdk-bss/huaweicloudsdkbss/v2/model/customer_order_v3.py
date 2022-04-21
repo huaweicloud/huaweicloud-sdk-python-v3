@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CustomerOrderV3:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -60,7 +59,43 @@ class CustomerOrderV3:
     }
 
     def __init__(self, order_id=None, customer_id=None, service_type_code=None, service_type_name=None, source_type=None, status=None, order_type=None, amount_after_discount=None, official_amount=None, measure_id=None, create_time=None, payment_time=None, currency=None, contract_id=None, amount_info=None, user_name=None):
-        """CustomerOrderV3 - a model defined in huaweicloud sdk"""
+        """CustomerOrderV3
+
+        The model defined in huaweicloud sdk
+
+        :param order_id: 订单ID。
+        :type order_id: str
+        :param customer_id: 客户账号ID。
+        :type customer_id: str
+        :param service_type_code: 云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
+        :type service_type_code: str
+        :param service_type_name: 云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
+        :type service_type_name: str
+        :param source_type: 客户订单来源类型： 1：客户2：代理3：合同4：分销商
+        :type source_type: int
+        :param status: 订单状态。 1：待审核3：处理中4：已取消5：已完成6：待付款9：待确认
+        :type status: int
+        :param order_type: 订单类型。 1：开通2：续订3：变更4：退订11：按需转包年/包月13：试用14：转商用15：费用调整
+        :type order_type: int
+        :param amount_after_discount: 订单优惠后金额（实付价格，不含券不含卡）。
+        :type amount_after_discount: float
+        :param official_amount: 订单金额（官网价）。 退订订单中，该金额等于currencyAfterDiscount。
+        :type official_amount: float
+        :param measure_id: 订单金额度量单位。 1：元
+        :type measure_id: int
+        :param create_time: 创建时间 。 UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。
+        :type create_time: str
+        :param payment_time: 支付时间。 UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。
+        :type payment_time: str
+        :param currency: 货币编码。
+        :type currency: str
+        :param contract_id: 合同ID。
+        :type contract_id: str
+        :param amount_info: 
+        :type amount_info: :class:`huaweicloudsdkbss.v2.AmountInfomationV2`
+        :param user_name: 订单创建者名称。 如果是客户自己下单，则此处返回下单操作员的登录名称；如果是运营人员从后台下单，则此处返回“运营人员”；如果是运营系统自动触发下单，则此处返回“运营系统”。
+        :type user_name: str
+        """
         
         
 
@@ -133,7 +168,7 @@ class CustomerOrderV3:
         订单ID。
 
         :param order_id: The order_id of this CustomerOrderV3.
-        :type: str
+        :type order_id: str
         """
         self._order_id = order_id
 
@@ -155,7 +190,7 @@ class CustomerOrderV3:
         客户账号ID。
 
         :param customer_id: The customer_id of this CustomerOrderV3.
-        :type: str
+        :type customer_id: str
         """
         self._customer_id = customer_id
 
@@ -177,7 +212,7 @@ class CustomerOrderV3:
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
         :param service_type_code: The service_type_code of this CustomerOrderV3.
-        :type: str
+        :type service_type_code: str
         """
         self._service_type_code = service_type_code
 
@@ -199,7 +234,7 @@ class CustomerOrderV3:
         云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
 
         :param service_type_name: The service_type_name of this CustomerOrderV3.
-        :type: str
+        :type service_type_name: str
         """
         self._service_type_name = service_type_name
 
@@ -221,7 +256,7 @@ class CustomerOrderV3:
         客户订单来源类型： 1：客户2：代理3：合同4：分销商
 
         :param source_type: The source_type of this CustomerOrderV3.
-        :type: int
+        :type source_type: int
         """
         self._source_type = source_type
 
@@ -243,7 +278,7 @@ class CustomerOrderV3:
         订单状态。 1：待审核3：处理中4：已取消5：已完成6：待付款9：待确认
 
         :param status: The status of this CustomerOrderV3.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -265,7 +300,7 @@ class CustomerOrderV3:
         订单类型。 1：开通2：续订3：变更4：退订11：按需转包年/包月13：试用14：转商用15：费用调整
 
         :param order_type: The order_type of this CustomerOrderV3.
-        :type: int
+        :type order_type: int
         """
         self._order_type = order_type
 
@@ -287,7 +322,7 @@ class CustomerOrderV3:
         订单优惠后金额（实付价格，不含券不含卡）。
 
         :param amount_after_discount: The amount_after_discount of this CustomerOrderV3.
-        :type: float
+        :type amount_after_discount: float
         """
         self._amount_after_discount = amount_after_discount
 
@@ -309,7 +344,7 @@ class CustomerOrderV3:
         订单金额（官网价）。 退订订单中，该金额等于currencyAfterDiscount。
 
         :param official_amount: The official_amount of this CustomerOrderV3.
-        :type: float
+        :type official_amount: float
         """
         self._official_amount = official_amount
 
@@ -331,7 +366,7 @@ class CustomerOrderV3:
         订单金额度量单位。 1：元
 
         :param measure_id: The measure_id of this CustomerOrderV3.
-        :type: int
+        :type measure_id: int
         """
         self._measure_id = measure_id
 
@@ -353,7 +388,7 @@ class CustomerOrderV3:
         创建时间 。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。
 
         :param create_time: The create_time of this CustomerOrderV3.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -375,7 +410,7 @@ class CustomerOrderV3:
         支付时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。
 
         :param payment_time: The payment_time of this CustomerOrderV3.
-        :type: str
+        :type payment_time: str
         """
         self._payment_time = payment_time
 
@@ -397,7 +432,7 @@ class CustomerOrderV3:
         货币编码。
 
         :param currency: The currency of this CustomerOrderV3.
-        :type: str
+        :type currency: str
         """
         self._currency = currency
 
@@ -419,7 +454,7 @@ class CustomerOrderV3:
         合同ID。
 
         :param contract_id: The contract_id of this CustomerOrderV3.
-        :type: str
+        :type contract_id: str
         """
         self._contract_id = contract_id
 
@@ -429,7 +464,7 @@ class CustomerOrderV3:
 
 
         :return: The amount_info of this CustomerOrderV3.
-        :rtype: AmountInfomationV2
+        :rtype: :class:`huaweicloudsdkbss.v2.AmountInfomationV2`
         """
         return self._amount_info
 
@@ -439,7 +474,7 @@ class CustomerOrderV3:
 
 
         :param amount_info: The amount_info of this CustomerOrderV3.
-        :type: AmountInfomationV2
+        :type amount_info: :class:`huaweicloudsdkbss.v2.AmountInfomationV2`
         """
         self._amount_info = amount_info
 
@@ -461,7 +496,7 @@ class CustomerOrderV3:
         订单创建者名称。 如果是客户自己下单，则此处返回下单操作员的登录名称；如果是运营人员从后台下单，则此处返回“运营人员”；如果是运营系统自动触发下单，则此处返回“运营系统”。
 
         :param user_name: The user_name of this CustomerOrderV3.
-        :type: str
+        :type user_name: str
         """
         self._user_name = user_name
 

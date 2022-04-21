@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TextDetectionItemsReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class TextDetectionItemsReq:
     }
 
     def __init__(self, text=None, type=None):
-        """TextDetectionItemsReq - a model defined in huaweicloud sdk"""
+        """TextDetectionItemsReq
+
+        The model defined in huaweicloud sdk
+
+        :param text: 待检测文本，编码格式为“utf-8”，限定5000个字符以内，文本长度超过5000个字符时，只检测前5000个字符。
+        :type text: str
+        :param type: 文本类型，默认为“content”，即正文内容，当前只支持“content”类型，未来会扩大支持类型范围。
+        :type type: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class TextDetectionItemsReq:
         待检测文本，编码格式为“utf-8”，限定5000个字符以内，文本长度超过5000个字符时，只检测前5000个字符。
 
         :param text: The text of this TextDetectionItemsReq.
-        :type: str
+        :type text: str
         """
         self._text = text
 
@@ -84,7 +91,7 @@ class TextDetectionItemsReq:
         文本类型，默认为“content”，即正文内容，当前只支持“content”类型，未来会扩大支持类型范围。
 
         :param type: The type of this TextDetectionItemsReq.
-        :type: str
+        :type type: str
         """
         self._type = type
 

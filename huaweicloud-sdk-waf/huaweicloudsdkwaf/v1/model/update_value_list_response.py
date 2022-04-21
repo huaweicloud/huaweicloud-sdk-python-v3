@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateValueListResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class UpdateValueListResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, type=None, description=None, timestamp=None, values=None, producer=None):
-        """UpdateValueListResponse - a model defined in huaweicloud sdk"""
+        """UpdateValueListResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 引用表id
+        :type id: str
+        :param name: 引用表名称
+        :type name: str
+        :param type: 引用表类型
+        :type type: str
+        :param description: 引用表描述
+        :type description: str
+        :param timestamp: 引用表时间戳
+        :type timestamp: int
+        :param values: 引用表的值
+        :type values: list[str]
+        :param producer: 引用表来源：  - 1:表示来源于用户手动创建  - 2:表示来源于moduleX自动创建
+        :type producer: int
+        """
         
         super(UpdateValueListResponse, self).__init__()
 
@@ -88,7 +105,7 @@ class UpdateValueListResponse(SdkResponse):
         引用表id
 
         :param id: The id of this UpdateValueListResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -110,7 +127,7 @@ class UpdateValueListResponse(SdkResponse):
         引用表名称
 
         :param name: The name of this UpdateValueListResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -132,7 +149,7 @@ class UpdateValueListResponse(SdkResponse):
         引用表类型
 
         :param type: The type of this UpdateValueListResponse.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -154,7 +171,7 @@ class UpdateValueListResponse(SdkResponse):
         引用表描述
 
         :param description: The description of this UpdateValueListResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -176,7 +193,7 @@ class UpdateValueListResponse(SdkResponse):
         引用表时间戳
 
         :param timestamp: The timestamp of this UpdateValueListResponse.
-        :type: int
+        :type timestamp: int
         """
         self._timestamp = timestamp
 
@@ -198,7 +215,7 @@ class UpdateValueListResponse(SdkResponse):
         引用表的值
 
         :param values: The values of this UpdateValueListResponse.
-        :type: list[str]
+        :type values: list[str]
         """
         self._values = values
 
@@ -220,7 +237,7 @@ class UpdateValueListResponse(SdkResponse):
         引用表来源：  - 1:表示来源于用户手动创建  - 2:表示来源于moduleX自动创建
 
         :param producer: The producer of this UpdateValueListResponse.
-        :type: int
+        :type producer: int
         """
         self._producer = producer
 

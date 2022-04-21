@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddImageTagRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AddImageTagRequest:
     }
 
     def __init__(self, image_id=None, body=None):
-        """AddImageTagRequest - a model defined in huaweicloud sdk"""
+        """AddImageTagRequest
+
+        The model defined in huaweicloud sdk
+
+        :param image_id: 镜像ID。
+        :type image_id: str
+        :param body: Body of the AddImageTagRequest
+        :type body: :class:`huaweicloudsdkims.v2.AddImageTagRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class AddImageTagRequest:
         镜像ID。
 
         :param image_id: The image_id of this AddImageTagRequest.
-        :type: str
+        :type image_id: str
         """
         self._image_id = image_id
 
@@ -72,7 +79,7 @@ class AddImageTagRequest:
 
 
         :return: The body of this AddImageTagRequest.
-        :rtype: AddImageTagRequestBody
+        :rtype: :class:`huaweicloudsdkims.v2.AddImageTagRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class AddImageTagRequest:
 
 
         :param body: The body of this AddImageTagRequest.
-        :type: AddImageTagRequestBody
+        :type body: :class:`huaweicloudsdkims.v2.AddImageTagRequestBody`
         """
         self._body = body
 

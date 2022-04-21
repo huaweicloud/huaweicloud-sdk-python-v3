@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTaskParameterResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class ListTaskParameterResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ListTaskParameterResponse - a model defined in huaweicloud sdk"""
+        """ListTaskParameterResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(ListTaskParameterResponse, self).__init__()
         self.discriminator = None

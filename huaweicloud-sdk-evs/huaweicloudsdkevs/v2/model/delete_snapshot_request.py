@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteSnapshotRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteSnapshotRequest:
     }
 
     def __init__(self, snapshot_id=None):
-        """DeleteSnapshotRequest - a model defined in huaweicloud sdk"""
+        """DeleteSnapshotRequest
+
+        The model defined in huaweicloud sdk
+
+        :param snapshot_id: 快照ID。
+        :type snapshot_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteSnapshotRequest:
         快照ID。
 
         :param snapshot_id: The snapshot_id of this DeleteSnapshotRequest.
-        :type: str
+        :type snapshot_id: str
         """
         self._snapshot_id = snapshot_id
 

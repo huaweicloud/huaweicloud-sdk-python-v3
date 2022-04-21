@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CdmRestartClusterReqRestart:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class CdmRestartClusterReqRestart:
     }
 
     def __init__(self, restart_delay_time=None, restart_mode=None, restart_level=None, type=None, instance=None, group=None):
-        """CdmRestartClusterReqRestart - a model defined in huaweicloud sdk"""
+        """CdmRestartClusterReqRestart
+
+        The model defined in huaweicloud sdk
+
+        :param restart_delay_time: 重启时延，单位：秒
+        :type restart_delay_time: int
+        :param restart_mode: 重启类型： - IMMEDIATELY：立即重启。 - GRACEFULL：优雅重启。 - FORCELY：强制重启。 - SOFTLY：一般重启。  默认值为“IMMEDIATELY”。优雅重启等作业执行完后，有序的释放资源再重启，并且只重启CDM服务的进程，不会重启集群虚拟机。强制重启业务进程会中断，并重启集群的虚拟机。
+        :type restart_mode: str
+        :param restart_level: 重启级别： - SERVICE：重启服务。 - VM：重启虚拟机。  默认值为“SERVICE”。
+        :type restart_level: str
+        :param type: 集群节点类型，只支持“cdm”
+        :type type: str
+        :param instance: 预留字段，“restartLevel” 为“SERVICE”时，“instance”必填，填空字串。
+        :type instance: str
+        :param group: 预留字段，“restartLevel” 为“SERVICE”时，“group”必填，填空字串。
+        :type group: str
+        """
         
         
 
@@ -82,7 +97,7 @@ class CdmRestartClusterReqRestart:
         重启时延，单位：秒
 
         :param restart_delay_time: The restart_delay_time of this CdmRestartClusterReqRestart.
-        :type: int
+        :type restart_delay_time: int
         """
         self._restart_delay_time = restart_delay_time
 
@@ -104,7 +119,7 @@ class CdmRestartClusterReqRestart:
         重启类型： - IMMEDIATELY：立即重启。 - GRACEFULL：优雅重启。 - FORCELY：强制重启。 - SOFTLY：一般重启。  默认值为“IMMEDIATELY”。优雅重启等作业执行完后，有序的释放资源再重启，并且只重启CDM服务的进程，不会重启集群虚拟机。强制重启业务进程会中断，并重启集群的虚拟机。
 
         :param restart_mode: The restart_mode of this CdmRestartClusterReqRestart.
-        :type: str
+        :type restart_mode: str
         """
         self._restart_mode = restart_mode
 
@@ -126,7 +141,7 @@ class CdmRestartClusterReqRestart:
         重启级别： - SERVICE：重启服务。 - VM：重启虚拟机。  默认值为“SERVICE”。
 
         :param restart_level: The restart_level of this CdmRestartClusterReqRestart.
-        :type: str
+        :type restart_level: str
         """
         self._restart_level = restart_level
 
@@ -148,7 +163,7 @@ class CdmRestartClusterReqRestart:
         集群节点类型，只支持“cdm”
 
         :param type: The type of this CdmRestartClusterReqRestart.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -170,7 +185,7 @@ class CdmRestartClusterReqRestart:
         预留字段，“restartLevel” 为“SERVICE”时，“instance”必填，填空字串。
 
         :param instance: The instance of this CdmRestartClusterReqRestart.
-        :type: str
+        :type instance: str
         """
         self._instance = instance
 
@@ -192,7 +207,7 @@ class CdmRestartClusterReqRestart:
         预留字段，“restartLevel” 为“SERVICE”时，“group”必填，填空字串。
 
         :param group: The group of this CdmRestartClusterReqRestart.
-        :type: str
+        :type group: str
         """
         self._group = group
 

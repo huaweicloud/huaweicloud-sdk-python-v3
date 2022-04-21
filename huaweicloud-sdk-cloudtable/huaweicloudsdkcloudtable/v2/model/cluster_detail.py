@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ClusterDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -58,7 +57,41 @@ class ClusterDetail:
     }
 
     def __init__(self, action_progress=None, actions=None, auth_mode=None, az_code=None, cluster_id=None, cluster_name=None, created=None, enable_dfv=None, enable_free=None, enable_lemon=None, enable_open_tsdb=None, status=None, tags=None, version=None, zookeeper_link=None):
-        """ClusterDetail - a model defined in huaweicloud sdk"""
+        """ClusterDetail
+
+        The model defined in huaweicloud sdk
+
+        :param action_progress: 
+        :type action_progress: :class:`huaweicloudsdkcloudtable.v2.ActionProgress`
+        :param actions: 集群操作记录
+        :type actions: list[str]
+        :param auth_mode: 是否开启IAM权限认证。 - false：不开启 - true：开启
+        :type auth_mode: str
+        :param az_code: 集群所在的可用区（AZ)。
+        :type az_code: str
+        :param cluster_id: 集群ID，集群唯一标识。
+        :type cluster_id: str
+        :param cluster_name: CloudTable集群名称。
+        :type cluster_name: str
+        :param created: 集群创建时间。
+        :type created: str
+        :param enable_dfv: 是否开启DFV。 - false：不开启 - true：开启
+        :type enable_dfv: str
+        :param enable_free: 集群是否免费。 - false：不免费 - true：免费
+        :type enable_free: str
+        :param enable_lemon: 是否开启Lemon。 - false：不开启 - true：开启
+        :type enable_lemon: str
+        :param enable_open_tsdb: 是否开启OpenTSDB。 - false：不开启 - true：开启
+        :type enable_open_tsdb: str
+        :param status: 集群状态： - 200：集群正常 - 300：集群异常 - 303：集群创建失败 - 400：集群已删除
+        :type status: str
+        :param tags: 集群标识符。
+        :type tags: str
+        :param version: 集群版本号。
+        :type version: str
+        :param zookeeper_link: CloudTable集群ZooKeeper的链接地址。例如：cloudtable-3058-zk3-Dqcwuh6R.mycloudtable.com:2181,cloudtable-3058-zk2-TCwkZEie.mycloudtable.com:2181,cloudtable-3058-zk1-TBELUFOK.mycloudtable.com:2181
+        :type zookeeper_link: str
+        """
         
         
 
@@ -116,7 +149,7 @@ class ClusterDetail:
 
 
         :return: The action_progress of this ClusterDetail.
-        :rtype: ActionProgress
+        :rtype: :class:`huaweicloudsdkcloudtable.v2.ActionProgress`
         """
         return self._action_progress
 
@@ -126,7 +159,7 @@ class ClusterDetail:
 
 
         :param action_progress: The action_progress of this ClusterDetail.
-        :type: ActionProgress
+        :type action_progress: :class:`huaweicloudsdkcloudtable.v2.ActionProgress`
         """
         self._action_progress = action_progress
 
@@ -148,7 +181,7 @@ class ClusterDetail:
         集群操作记录
 
         :param actions: The actions of this ClusterDetail.
-        :type: list[str]
+        :type actions: list[str]
         """
         self._actions = actions
 
@@ -170,7 +203,7 @@ class ClusterDetail:
         是否开启IAM权限认证。 - false：不开启 - true：开启
 
         :param auth_mode: The auth_mode of this ClusterDetail.
-        :type: str
+        :type auth_mode: str
         """
         self._auth_mode = auth_mode
 
@@ -192,7 +225,7 @@ class ClusterDetail:
         集群所在的可用区（AZ)。
 
         :param az_code: The az_code of this ClusterDetail.
-        :type: str
+        :type az_code: str
         """
         self._az_code = az_code
 
@@ -214,7 +247,7 @@ class ClusterDetail:
         集群ID，集群唯一标识。
 
         :param cluster_id: The cluster_id of this ClusterDetail.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -236,7 +269,7 @@ class ClusterDetail:
         CloudTable集群名称。
 
         :param cluster_name: The cluster_name of this ClusterDetail.
-        :type: str
+        :type cluster_name: str
         """
         self._cluster_name = cluster_name
 
@@ -258,7 +291,7 @@ class ClusterDetail:
         集群创建时间。
 
         :param created: The created of this ClusterDetail.
-        :type: str
+        :type created: str
         """
         self._created = created
 
@@ -280,7 +313,7 @@ class ClusterDetail:
         是否开启DFV。 - false：不开启 - true：开启
 
         :param enable_dfv: The enable_dfv of this ClusterDetail.
-        :type: str
+        :type enable_dfv: str
         """
         self._enable_dfv = enable_dfv
 
@@ -302,7 +335,7 @@ class ClusterDetail:
         集群是否免费。 - false：不免费 - true：免费
 
         :param enable_free: The enable_free of this ClusterDetail.
-        :type: str
+        :type enable_free: str
         """
         self._enable_free = enable_free
 
@@ -324,7 +357,7 @@ class ClusterDetail:
         是否开启Lemon。 - false：不开启 - true：开启
 
         :param enable_lemon: The enable_lemon of this ClusterDetail.
-        :type: str
+        :type enable_lemon: str
         """
         self._enable_lemon = enable_lemon
 
@@ -346,7 +379,7 @@ class ClusterDetail:
         是否开启OpenTSDB。 - false：不开启 - true：开启
 
         :param enable_open_tsdb: The enable_open_tsdb of this ClusterDetail.
-        :type: str
+        :type enable_open_tsdb: str
         """
         self._enable_open_tsdb = enable_open_tsdb
 
@@ -368,7 +401,7 @@ class ClusterDetail:
         集群状态： - 200：集群正常 - 300：集群异常 - 303：集群创建失败 - 400：集群已删除
 
         :param status: The status of this ClusterDetail.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -390,7 +423,7 @@ class ClusterDetail:
         集群标识符。
 
         :param tags: The tags of this ClusterDetail.
-        :type: str
+        :type tags: str
         """
         self._tags = tags
 
@@ -412,7 +445,7 @@ class ClusterDetail:
         集群版本号。
 
         :param version: The version of this ClusterDetail.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -434,7 +467,7 @@ class ClusterDetail:
         CloudTable集群ZooKeeper的链接地址。例如：cloudtable-3058-zk3-Dqcwuh6R.mycloudtable.com:2181,cloudtable-3058-zk2-TCwkZEie.mycloudtable.com:2181,cloudtable-3058-zk1-TBELUFOK.mycloudtable.com:2181
 
         :param zookeeper_link: The zookeeper_link of this ClusterDetail.
-        :type: str
+        :type zookeeper_link: str
         """
         self._zookeeper_link = zookeeper_link
 

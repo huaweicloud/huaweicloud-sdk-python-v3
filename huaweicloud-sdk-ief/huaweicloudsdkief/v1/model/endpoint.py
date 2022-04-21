@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Endpoint:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class Endpoint:
     }
 
     def __init__(self, endpoint=None):
-        """Endpoint - a model defined in huaweicloud sdk"""
+        """Endpoint
+
+        The model defined in huaweicloud sdk
+
+        :param endpoint: 
+        :type endpoint: :class:`huaweicloudsdkief.v1.EndpointObj`
+        """
         
         
 
@@ -46,7 +51,7 @@ class Endpoint:
 
 
         :return: The endpoint of this Endpoint.
-        :rtype: EndpointObj
+        :rtype: :class:`huaweicloudsdkief.v1.EndpointObj`
         """
         return self._endpoint
 
@@ -56,7 +61,7 @@ class Endpoint:
 
 
         :param endpoint: The endpoint of this Endpoint.
-        :type: EndpointObj
+        :type endpoint: :class:`huaweicloudsdkief.v1.EndpointObj`
         """
         self._endpoint = endpoint
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LogGroup:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class LogGroup:
     }
 
     def __init__(self, creation_time=None, log_group_name=None, log_group_id=None, ttl_in_days=None, tag=None):
-        """LogGroup - a model defined in huaweicloud sdk"""
+        """LogGroup
+
+        The model defined in huaweicloud sdk
+
+        :param creation_time: 创建时间 
+        :type creation_time: int
+        :param log_group_name: 日志组名称 
+        :type log_group_name: str
+        :param log_group_id: 日志组ID 
+        :type log_group_id: str
+        :param ttl_in_days: 日志存储时间 天 
+        :type ttl_in_days: int
+        :param tag: 日志流所属标签
+        :type tag: dict(str, str)
+        """
         
         
 
@@ -74,7 +87,7 @@ class LogGroup:
         创建时间 
 
         :param creation_time: The creation_time of this LogGroup.
-        :type: int
+        :type creation_time: int
         """
         self._creation_time = creation_time
 
@@ -96,7 +109,7 @@ class LogGroup:
         日志组名称 
 
         :param log_group_name: The log_group_name of this LogGroup.
-        :type: str
+        :type log_group_name: str
         """
         self._log_group_name = log_group_name
 
@@ -118,7 +131,7 @@ class LogGroup:
         日志组ID 
 
         :param log_group_id: The log_group_id of this LogGroup.
-        :type: str
+        :type log_group_id: str
         """
         self._log_group_id = log_group_id
 
@@ -140,7 +153,7 @@ class LogGroup:
         日志存储时间 天 
 
         :param ttl_in_days: The ttl_in_days of this LogGroup.
-        :type: int
+        :type ttl_in_days: int
         """
         self._ttl_in_days = ttl_in_days
 
@@ -162,7 +175,7 @@ class LogGroup:
         日志流所属标签
 
         :param tag: The tag of this LogGroup.
-        :type: dict(str, str)
+        :type tag: dict(str, str)
         """
         self._tag = tag
 

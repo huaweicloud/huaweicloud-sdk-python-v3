@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateImageRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateImageRequest:
     }
 
     def __init__(self, image_id=None, body=None):
-        """UpdateImageRequest - a model defined in huaweicloud sdk"""
+        """UpdateImageRequest
+
+        The model defined in huaweicloud sdk
+
+        :param image_id: 镜像ID
+        :type image_id: str
+        :param body: Body of the UpdateImageRequest
+        :type body: list[:class:`huaweicloudsdkims.v2.UpdateImageRequestBody`]
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateImageRequest:
         镜像ID
 
         :param image_id: The image_id of this UpdateImageRequest.
-        :type: str
+        :type image_id: str
         """
         self._image_id = image_id
 
@@ -72,7 +79,7 @@ class UpdateImageRequest:
 
 
         :return: The body of this UpdateImageRequest.
-        :rtype: list[UpdateImageRequestBody]
+        :rtype: list[:class:`huaweicloudsdkims.v2.UpdateImageRequestBody`]
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateImageRequest:
 
 
         :param body: The body of this UpdateImageRequest.
-        :type: list[UpdateImageRequestBody]
+        :type body: list[:class:`huaweicloudsdkims.v2.UpdateImageRequestBody`]
         """
         self._body = body
 

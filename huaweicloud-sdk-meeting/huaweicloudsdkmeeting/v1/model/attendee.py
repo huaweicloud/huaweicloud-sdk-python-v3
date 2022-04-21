@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Attendee:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class Attendee:
     }
 
     def __init__(self, user_uuid=None, account_id=None, name=None, role=None, phone=None, phone2=None, phone3=None, email=None, sms=None, type=None, dept_uuid=None, dept_name=None):
-        """Attendee - a model defined in huaweicloud sdk"""
+        """Attendee
+
+        The model defined in huaweicloud sdk
+
+        :param user_uuid: 与会者的用户UUID。
+        :type user_uuid: str
+        :param account_id: 与会者帐号，兼容终端老版本。如果没有携带userUUID，就通过accountId查询用户信息。
+        :type account_id: str
+        :param name: 与会者名称或昵称，长度限制为96个字符。
+        :type name: str
+        :param role: 会议中的角色。 - 0: 普通与会者。 - 1: 会议主席。 - 2: 预留字段，暂不对外开放。 default: 0
+        :type role: int
+        :param phone: 电话号码(可支持SIP、TEL号码格式)。最大不超过127个字符。phone、email和sms三者需至少填写一个。当type为telepresence时，且设备为三屏智真，则该字段填写中屏号码。
+        :type phone: str
+        :param phone2: 预留字段，取值类型同phone。当type为telepresence时，且设备为三屏智真，则该字段填写左屏号码
+        :type phone2: str
+        :param phone3: 预留字段，取值类型同phone。当type为telepresence时，且设备为三屏智真，则该字段填写右屏号码
+        :type phone3: str
+        :param email: 邮件地址。最大不超过255个字符。phone、email和sms三者需至少填写一个。
+        :type email: str
+        :param sms: 短信通知的手机号码。最大不超过32个字符。phone、email和sms三者需至少填写一个。
+        :type sms: str
+        :param type: 默认值由会议AS定义，号码类型枚举如下： - normal: 软终端。 - telepresence: 智真。单屏、三屏智真均属此类。（预留字段） - terminal: 会议室或硬终端。 - outside: 外部与会人。 - mobile: 用户手机号码。 - telephone: 软终端用户固定电话，暂不使用。
+        :type type: str
+        :param dept_uuid: 部门ID。最大不超过64个字符。
+        :type dept_uuid: str
+        :param dept_name: 部门名称。最大不超过128个字符。
+        :type dept_name: str
+        """
         
         
 
@@ -110,7 +137,7 @@ class Attendee:
         与会者的用户UUID。
 
         :param user_uuid: The user_uuid of this Attendee.
-        :type: str
+        :type user_uuid: str
         """
         self._user_uuid = user_uuid
 
@@ -132,7 +159,7 @@ class Attendee:
         与会者帐号，兼容终端老版本。如果没有携带userUUID，就通过accountId查询用户信息。
 
         :param account_id: The account_id of this Attendee.
-        :type: str
+        :type account_id: str
         """
         self._account_id = account_id
 
@@ -154,7 +181,7 @@ class Attendee:
         与会者名称或昵称，长度限制为96个字符。
 
         :param name: The name of this Attendee.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -176,7 +203,7 @@ class Attendee:
         会议中的角色。 - 0: 普通与会者。 - 1: 会议主席。 - 2: 预留字段，暂不对外开放。 default: 0
 
         :param role: The role of this Attendee.
-        :type: int
+        :type role: int
         """
         self._role = role
 
@@ -198,7 +225,7 @@ class Attendee:
         电话号码(可支持SIP、TEL号码格式)。最大不超过127个字符。phone、email和sms三者需至少填写一个。当type为telepresence时，且设备为三屏智真，则该字段填写中屏号码。
 
         :param phone: The phone of this Attendee.
-        :type: str
+        :type phone: str
         """
         self._phone = phone
 
@@ -220,7 +247,7 @@ class Attendee:
         预留字段，取值类型同phone。当type为telepresence时，且设备为三屏智真，则该字段填写左屏号码
 
         :param phone2: The phone2 of this Attendee.
-        :type: str
+        :type phone2: str
         """
         self._phone2 = phone2
 
@@ -242,7 +269,7 @@ class Attendee:
         预留字段，取值类型同phone。当type为telepresence时，且设备为三屏智真，则该字段填写右屏号码
 
         :param phone3: The phone3 of this Attendee.
-        :type: str
+        :type phone3: str
         """
         self._phone3 = phone3
 
@@ -264,7 +291,7 @@ class Attendee:
         邮件地址。最大不超过255个字符。phone、email和sms三者需至少填写一个。
 
         :param email: The email of this Attendee.
-        :type: str
+        :type email: str
         """
         self._email = email
 
@@ -286,7 +313,7 @@ class Attendee:
         短信通知的手机号码。最大不超过32个字符。phone、email和sms三者需至少填写一个。
 
         :param sms: The sms of this Attendee.
-        :type: str
+        :type sms: str
         """
         self._sms = sms
 
@@ -308,7 +335,7 @@ class Attendee:
         默认值由会议AS定义，号码类型枚举如下： - normal: 软终端。 - telepresence: 智真。单屏、三屏智真均属此类。（预留字段） - terminal: 会议室或硬终端。 - outside: 外部与会人。 - mobile: 用户手机号码。 - telephone: 软终端用户固定电话，暂不使用。
 
         :param type: The type of this Attendee.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -330,7 +357,7 @@ class Attendee:
         部门ID。最大不超过64个字符。
 
         :param dept_uuid: The dept_uuid of this Attendee.
-        :type: str
+        :type dept_uuid: str
         """
         self._dept_uuid = dept_uuid
 
@@ -352,7 +379,7 @@ class Attendee:
         部门名称。最大不超过128个字符。
 
         :param dept_name: The dept_name of this Attendee.
-        :type: str
+        :type dept_name: str
         """
         self._dept_name = dept_name
 

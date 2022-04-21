@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SlowlogDownloadInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class SlowlogDownloadInfo:
     }
 
     def __init__(self, workflow_id=None, file_name=None, status=None, file_size=None, file_link=None, create_at=None, update_at=None):
-        """SlowlogDownloadInfo - a model defined in huaweicloud sdk"""
+        """SlowlogDownloadInfo
+
+        The model defined in huaweicloud sdk
+
+        :param workflow_id: 任务ID
+        :type workflow_id: str
+        :param file_name: 生成的下载文件名
+        :type file_name: str
+        :param status: 生成链接的生成状态
+        :type status: str
+        :param file_size: 文件大小
+        :type file_size: str
+        :param file_link: 下载链接
+        :type file_link: str
+        :param create_at: 生成时间
+        :type create_at: int
+        :param update_at: 更新时间
+        :type update_at: int
+        """
         
         
 
@@ -81,7 +98,7 @@ class SlowlogDownloadInfo:
         任务ID
 
         :param workflow_id: The workflow_id of this SlowlogDownloadInfo.
-        :type: str
+        :type workflow_id: str
         """
         self._workflow_id = workflow_id
 
@@ -103,7 +120,7 @@ class SlowlogDownloadInfo:
         生成的下载文件名
 
         :param file_name: The file_name of this SlowlogDownloadInfo.
-        :type: str
+        :type file_name: str
         """
         self._file_name = file_name
 
@@ -125,7 +142,7 @@ class SlowlogDownloadInfo:
         生成链接的生成状态
 
         :param status: The status of this SlowlogDownloadInfo.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -147,7 +164,7 @@ class SlowlogDownloadInfo:
         文件大小
 
         :param file_size: The file_size of this SlowlogDownloadInfo.
-        :type: str
+        :type file_size: str
         """
         self._file_size = file_size
 
@@ -169,7 +186,7 @@ class SlowlogDownloadInfo:
         下载链接
 
         :param file_link: The file_link of this SlowlogDownloadInfo.
-        :type: str
+        :type file_link: str
         """
         self._file_link = file_link
 
@@ -191,7 +208,7 @@ class SlowlogDownloadInfo:
         生成时间
 
         :param create_at: The create_at of this SlowlogDownloadInfo.
-        :type: int
+        :type create_at: int
         """
         self._create_at = create_at
 
@@ -213,7 +230,7 @@ class SlowlogDownloadInfo:
         更新时间
 
         :param update_at: The update_at of this SlowlogDownloadInfo.
-        :type: int
+        :type update_at: int
         """
         self._update_at = update_at
 

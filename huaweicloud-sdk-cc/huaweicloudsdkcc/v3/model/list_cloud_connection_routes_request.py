@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCloudConnectionRoutesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListCloudConnectionRoutesRequest:
     }
 
     def __init__(self, limit=None, marker=None, id=None, cloud_connection_id=None, instance_id=None, region_id=None):
-        """ListCloudConnectionRoutesRequest - a model defined in huaweicloud sdk"""
+        """ListCloudConnectionRoutesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 分页查询时，每页返回的个数。
+        :type limit: int
+        :param marker: 分页查询时，上一页最后一条记录的ID，为空时为查询第一页。 使用说明：必须与limit一起使用。
+        :type marker: str
+        :param id: 根据云连接路由ID过滤云连接路由条目列表。
+        :type id: str
+        :param cloud_connection_id: 根据云连接实例ID过滤云连接路由条目列表。
+        :type cloud_connection_id: list[str]
+        :param instance_id: 根据网络实例ID过滤云连接路由条目列表。
+        :type instance_id: list[str]
+        :param region_id: 根据Region ID过滤云连接路由条目列表。
+        :type region_id: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class ListCloudConnectionRoutesRequest:
         分页查询时，每页返回的个数。
 
         :param limit: The limit of this ListCloudConnectionRoutesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -105,7 +120,7 @@ class ListCloudConnectionRoutesRequest:
         分页查询时，上一页最后一条记录的ID，为空时为查询第一页。 使用说明：必须与limit一起使用。
 
         :param marker: The marker of this ListCloudConnectionRoutesRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -127,7 +142,7 @@ class ListCloudConnectionRoutesRequest:
         根据云连接路由ID过滤云连接路由条目列表。
 
         :param id: The id of this ListCloudConnectionRoutesRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -149,7 +164,7 @@ class ListCloudConnectionRoutesRequest:
         根据云连接实例ID过滤云连接路由条目列表。
 
         :param cloud_connection_id: The cloud_connection_id of this ListCloudConnectionRoutesRequest.
-        :type: list[str]
+        :type cloud_connection_id: list[str]
         """
         self._cloud_connection_id = cloud_connection_id
 
@@ -171,7 +186,7 @@ class ListCloudConnectionRoutesRequest:
         根据网络实例ID过滤云连接路由条目列表。
 
         :param instance_id: The instance_id of this ListCloudConnectionRoutesRequest.
-        :type: list[str]
+        :type instance_id: list[str]
         """
         self._instance_id = instance_id
 
@@ -193,7 +208,7 @@ class ListCloudConnectionRoutesRequest:
         根据Region ID过滤云连接路由条目列表。
 
         :param region_id: The region_id of this ListCloudConnectionRoutesRequest.
-        :type: str
+        :type region_id: str
         """
         self._region_id = region_id
 

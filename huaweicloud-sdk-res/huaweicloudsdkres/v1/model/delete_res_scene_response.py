@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteResSceneResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class DeleteResSceneResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, error_code=None):
-        """DeleteResSceneResponse - a model defined in huaweicloud sdk"""
+        """DeleteResSceneResponse
+
+        The model defined in huaweicloud sdk
+
+        :param is_success: 是否成功。
+        :type is_success: bool
+        :param message: 返回消息（请求成功时，不返回此字段）。
+        :type message: str
+        :param error_code: 错误码（请求成功时，不返回此字段）。
+        :type error_code: str
+        """
         
         super(DeleteResSceneResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class DeleteResSceneResponse(SdkResponse):
         是否成功。
 
         :param is_success: The is_success of this DeleteResSceneResponse.
-        :type: bool
+        :type is_success: bool
         """
         self._is_success = is_success
 
@@ -90,7 +99,7 @@ class DeleteResSceneResponse(SdkResponse):
         返回消息（请求成功时，不返回此字段）。
 
         :param message: The message of this DeleteResSceneResponse.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -112,7 +121,7 @@ class DeleteResSceneResponse(SdkResponse):
         错误码（请求成功时，不返回此字段）。
 
         :param error_code: The error_code of this DeleteResSceneResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 

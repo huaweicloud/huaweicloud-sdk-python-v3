@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BasePage:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BasePage:
     }
 
     def __init__(self, size=None, total=None):
-        """BasePage - a model defined in huaweicloud sdk"""
+        """BasePage
+
+        The model defined in huaweicloud sdk
+
+        :param size: 本次返回的列表长度
+        :type size: int
+        :param total: 满足条件的记录数
+        :type total: int
+        """
         
         
 
@@ -61,7 +68,7 @@ class BasePage:
         本次返回的列表长度
 
         :param size: The size of this BasePage.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -83,7 +90,7 @@ class BasePage:
         满足条件的记录数
 
         :param total: The total of this BasePage.
-        :type: int
+        :type total: int
         """
         self._total = total
 

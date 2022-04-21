@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OpenApiCalledRecord:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class OpenApiCalledRecord:
     }
 
     def __init__(self, user_name=None, user_id=None, domain_name=None, domain_id=None, request_url=None, request_method=None, response_code=None, fail_reason=None, timestamp=None):
-        """OpenApiCalledRecord - a model defined in huaweicloud sdk"""
+        """OpenApiCalledRecord
+
+        The model defined in huaweicloud sdk
+
+        :param user_name: 调用API的user_name
+        :type user_name: str
+        :param user_id: 调用API的user_id
+        :type user_id: str
+        :param domain_name: 调用API的domain_name
+        :type domain_name: str
+        :param domain_id: 调用API的domain_id
+        :type domain_id: str
+        :param request_url: 调用API的URL
+        :type request_url: str
+        :param request_method: http请求方法
+        :type request_method: str
+        :param response_code: http状态码
+        :type response_code: str
+        :param fail_reason: 调用API失败原因
+        :type fail_reason: str
+        :param timestamp: 调用API的时间（Unix timestamp），单位：毫秒
+        :type timestamp: int
+        """
         
         
 
@@ -98,7 +119,7 @@ class OpenApiCalledRecord:
         调用API的user_name
 
         :param user_name: The user_name of this OpenApiCalledRecord.
-        :type: str
+        :type user_name: str
         """
         self._user_name = user_name
 
@@ -120,7 +141,7 @@ class OpenApiCalledRecord:
         调用API的user_id
 
         :param user_id: The user_id of this OpenApiCalledRecord.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -142,7 +163,7 @@ class OpenApiCalledRecord:
         调用API的domain_name
 
         :param domain_name: The domain_name of this OpenApiCalledRecord.
-        :type: str
+        :type domain_name: str
         """
         self._domain_name = domain_name
 
@@ -164,7 +185,7 @@ class OpenApiCalledRecord:
         调用API的domain_id
 
         :param domain_id: The domain_id of this OpenApiCalledRecord.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -186,7 +207,7 @@ class OpenApiCalledRecord:
         调用API的URL
 
         :param request_url: The request_url of this OpenApiCalledRecord.
-        :type: str
+        :type request_url: str
         """
         self._request_url = request_url
 
@@ -208,7 +229,7 @@ class OpenApiCalledRecord:
         http请求方法
 
         :param request_method: The request_method of this OpenApiCalledRecord.
-        :type: str
+        :type request_method: str
         """
         self._request_method = request_method
 
@@ -230,7 +251,7 @@ class OpenApiCalledRecord:
         http状态码
 
         :param response_code: The response_code of this OpenApiCalledRecord.
-        :type: str
+        :type response_code: str
         """
         self._response_code = response_code
 
@@ -252,7 +273,7 @@ class OpenApiCalledRecord:
         调用API失败原因
 
         :param fail_reason: The fail_reason of this OpenApiCalledRecord.
-        :type: str
+        :type fail_reason: str
         """
         self._fail_reason = fail_reason
 
@@ -274,7 +295,7 @@ class OpenApiCalledRecord:
         调用API的时间（Unix timestamp），单位：毫秒
 
         :param timestamp: The timestamp of this OpenApiCalledRecord.
-        :type: int
+        :type timestamp: int
         """
         self._timestamp = timestamp
 

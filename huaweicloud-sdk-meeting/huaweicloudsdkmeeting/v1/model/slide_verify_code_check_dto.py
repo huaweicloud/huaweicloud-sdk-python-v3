@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SlideVerifyCodeCheckDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class SlideVerifyCodeCheckDTO:
     }
 
     def __init__(self, user=None, client_type=None, check_type=None, token=None, point_x=None, slide_time=None):
-        """SlideVerifyCodeCheckDTO - a model defined in huaweicloud sdk"""
+        """SlideVerifyCodeCheckDTO
+
+        The model defined in huaweicloud sdk
+
+        :param user: 必须和发送验证码时带的用户身份信息相同 maxLength：255 minLength：1 
+        :type user: str
+        :param client_type: 登录客户端类型。 * 0：Web客户端类型； * 5：cloudlink pc； * 6：cloudlink mobile； * 16：workplace pc； * 18：workplace mobile 
+        :type client_type: int
+        :param check_type: 校验类型。 * 0：登录； * 1：忘记密码; 默认值：0 
+        :type check_type: int
+        :param token: 发送滑块验证码返回的token字符串 maxLength：255 minLength：1 
+        :type token: str
+        :param point_x: 抠出图形的X轴坐标。
+        :type point_x: int
+        :param slide_time: 滑动时间，单位ms。
+        :type slide_time: int
+        """
         
         
 
@@ -78,7 +93,7 @@ class SlideVerifyCodeCheckDTO:
         必须和发送验证码时带的用户身份信息相同 maxLength：255 minLength：1 
 
         :param user: The user of this SlideVerifyCodeCheckDTO.
-        :type: str
+        :type user: str
         """
         self._user = user
 
@@ -100,7 +115,7 @@ class SlideVerifyCodeCheckDTO:
         登录客户端类型。 * 0：Web客户端类型； * 5：cloudlink pc； * 6：cloudlink mobile； * 16：workplace pc； * 18：workplace mobile 
 
         :param client_type: The client_type of this SlideVerifyCodeCheckDTO.
-        :type: int
+        :type client_type: int
         """
         self._client_type = client_type
 
@@ -122,7 +137,7 @@ class SlideVerifyCodeCheckDTO:
         校验类型。 * 0：登录； * 1：忘记密码; 默认值：0 
 
         :param check_type: The check_type of this SlideVerifyCodeCheckDTO.
-        :type: int
+        :type check_type: int
         """
         self._check_type = check_type
 
@@ -144,7 +159,7 @@ class SlideVerifyCodeCheckDTO:
         发送滑块验证码返回的token字符串 maxLength：255 minLength：1 
 
         :param token: The token of this SlideVerifyCodeCheckDTO.
-        :type: str
+        :type token: str
         """
         self._token = token
 
@@ -166,7 +181,7 @@ class SlideVerifyCodeCheckDTO:
         抠出图形的X轴坐标。
 
         :param point_x: The point_x of this SlideVerifyCodeCheckDTO.
-        :type: int
+        :type point_x: int
         """
         self._point_x = point_x
 
@@ -188,7 +203,7 @@ class SlideVerifyCodeCheckDTO:
         滑动时间，单位ms。
 
         :param slide_time: The slide_time of this SlideVerifyCodeCheckDTO.
-        :type: int
+        :type slide_time: int
         """
         self._slide_time = slide_time
 

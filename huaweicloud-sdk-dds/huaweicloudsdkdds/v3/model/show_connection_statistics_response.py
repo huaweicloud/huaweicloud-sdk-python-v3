@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowConnectionStatisticsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ShowConnectionStatisticsResponse(SdkResponse):
     }
 
     def __init__(self, total_connections=None, total_inner_connections=None, total_outer_connections=None, inner_connections=None, outer_connections=None):
-        """ShowConnectionStatisticsResponse - a model defined in huaweicloud sdk"""
+        """ShowConnectionStatisticsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total_connections: 总连接数，包括内部连接与外部连接。
+        :type total_connections: int
+        :param total_inner_connections: 内部总连接数。
+        :type total_inner_connections: int
+        :param total_outer_connections: 外部总连接数。
+        :type total_outer_connections: int
+        :param inner_connections: 内部连接统计信息数组，最大记录数为200条。
+        :type inner_connections: list[:class:`huaweicloudsdkdds.v3.QueryConnectionsResponse`]
+        :param outer_connections: 外部连接统计信息数组，最大记录数为200条。
+        :type outer_connections: list[:class:`huaweicloudsdkdds.v3.QueryConnectionsResponse`]
+        """
         
         super(ShowConnectionStatisticsResponse, self).__init__()
 
@@ -78,7 +91,7 @@ class ShowConnectionStatisticsResponse(SdkResponse):
         总连接数，包括内部连接与外部连接。
 
         :param total_connections: The total_connections of this ShowConnectionStatisticsResponse.
-        :type: int
+        :type total_connections: int
         """
         self._total_connections = total_connections
 
@@ -100,7 +113,7 @@ class ShowConnectionStatisticsResponse(SdkResponse):
         内部总连接数。
 
         :param total_inner_connections: The total_inner_connections of this ShowConnectionStatisticsResponse.
-        :type: int
+        :type total_inner_connections: int
         """
         self._total_inner_connections = total_inner_connections
 
@@ -122,7 +135,7 @@ class ShowConnectionStatisticsResponse(SdkResponse):
         外部总连接数。
 
         :param total_outer_connections: The total_outer_connections of this ShowConnectionStatisticsResponse.
-        :type: int
+        :type total_outer_connections: int
         """
         self._total_outer_connections = total_outer_connections
 
@@ -133,7 +146,7 @@ class ShowConnectionStatisticsResponse(SdkResponse):
         内部连接统计信息数组，最大记录数为200条。
 
         :return: The inner_connections of this ShowConnectionStatisticsResponse.
-        :rtype: list[QueryConnectionsResponse]
+        :rtype: list[:class:`huaweicloudsdkdds.v3.QueryConnectionsResponse`]
         """
         return self._inner_connections
 
@@ -144,7 +157,7 @@ class ShowConnectionStatisticsResponse(SdkResponse):
         内部连接统计信息数组，最大记录数为200条。
 
         :param inner_connections: The inner_connections of this ShowConnectionStatisticsResponse.
-        :type: list[QueryConnectionsResponse]
+        :type inner_connections: list[:class:`huaweicloudsdkdds.v3.QueryConnectionsResponse`]
         """
         self._inner_connections = inner_connections
 
@@ -155,7 +168,7 @@ class ShowConnectionStatisticsResponse(SdkResponse):
         外部连接统计信息数组，最大记录数为200条。
 
         :return: The outer_connections of this ShowConnectionStatisticsResponse.
-        :rtype: list[QueryConnectionsResponse]
+        :rtype: list[:class:`huaweicloudsdkdds.v3.QueryConnectionsResponse`]
         """
         return self._outer_connections
 
@@ -166,7 +179,7 @@ class ShowConnectionStatisticsResponse(SdkResponse):
         外部连接统计信息数组，最大记录数为200条。
 
         :param outer_connections: The outer_connections of this ShowConnectionStatisticsResponse.
-        :type: list[QueryConnectionsResponse]
+        :type outer_connections: list[:class:`huaweicloudsdkdds.v3.QueryConnectionsResponse`]
         """
         self._outer_connections = outer_connections
 

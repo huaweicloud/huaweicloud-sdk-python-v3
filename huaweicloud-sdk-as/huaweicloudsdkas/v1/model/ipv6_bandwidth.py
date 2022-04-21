@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Ipv6Bandwidth:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class Ipv6Bandwidth:
     }
 
     def __init__(self, id=None):
-        """Ipv6Bandwidth - a model defined in huaweicloud sdk"""
+        """Ipv6Bandwidth
+
+        The model defined in huaweicloud sdk
+
+        :param id: IPv6共享带宽的ID。
+        :type id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class Ipv6Bandwidth:
         IPv6共享带宽的ID。
 
         :param id: The id of this Ipv6Bandwidth.
-        :type: str
+        :type id: str
         """
         self._id = id
 

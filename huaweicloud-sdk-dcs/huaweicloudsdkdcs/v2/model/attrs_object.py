@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AttrsObject:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class AttrsObject:
     }
 
     def __init__(self, capacity=None, name=None, value=None):
-        """AttrsObject - a model defined in huaweicloud sdk"""
+        """AttrsObject
+
+        The model defined in huaweicloud sdk
+
+        :param capacity: 缓存容量（G Byte）。
+        :type capacity: str
+        :param name: 额外信息名，取值范围如下： - sharding_num：该规格实例支持的分片数。 - proxy_num：该规格Proxy实例支持的Proxy节点数量。如果不是Proxy实例，该参数为0。 - db_number：该规格实例的DB数量。 - max_memory：实际可使用的最大内存。 - max_connections：该规格支持的最大连接数。 - max_clients：该规格支持的最大客户端数，一般等于最大连接数。 - max_bandwidth：该规格支持的最大带宽。 - max_in_bandwidth：该规格支持的最大接入带宽，一般等于最大带宽。 
+        :type name: str
+        :param value: 额外信息值。
+        :type value: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class AttrsObject:
         缓存容量（G Byte）。
 
         :param capacity: The capacity of this AttrsObject.
-        :type: str
+        :type capacity: str
         """
         self._capacity = capacity
 
@@ -90,7 +99,7 @@ class AttrsObject:
         额外信息名，取值范围如下： - sharding_num：该规格实例支持的分片数。 - proxy_num：该规格Proxy实例支持的Proxy节点数量。如果不是Proxy实例，该参数为0。 - db_number：该规格实例的DB数量。 - max_memory：实际可使用的最大内存。 - max_connections：该规格支持的最大连接数。 - max_clients：该规格支持的最大客户端数，一般等于最大连接数。 - max_bandwidth：该规格支持的最大带宽。 - max_in_bandwidth：该规格支持的最大接入带宽，一般等于最大带宽。 
 
         :param name: The name of this AttrsObject.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -112,7 +121,7 @@ class AttrsObject:
         额外信息值。
 
         :param value: The value of this AttrsObject.
-        :type: str
+        :type value: str
         """
         self._value = value
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RecognizeInsurancePolicyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RecognizeInsurancePolicyResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """RecognizeInsurancePolicyResponse - a model defined in huaweicloud sdk"""
+        """RecognizeInsurancePolicyResponse
+
+        The model defined in huaweicloud sdk
+
+        :param result: 
+        :type result: :class:`huaweicloudsdkocr.v1.InsurancePolicyResult`
+        """
         
         super(RecognizeInsurancePolicyResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class RecognizeInsurancePolicyResponse(SdkResponse):
 
 
         :return: The result of this RecognizeInsurancePolicyResponse.
-        :rtype: InsurancePolicyResult
+        :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyResult`
         """
         return self._result
 
@@ -56,7 +61,7 @@ class RecognizeInsurancePolicyResponse(SdkResponse):
 
 
         :param result: The result of this RecognizeInsurancePolicyResponse.
-        :type: InsurancePolicyResult
+        :type result: :class:`huaweicloudsdkocr.v1.InsurancePolicyResult`
         """
         self._result = result
 

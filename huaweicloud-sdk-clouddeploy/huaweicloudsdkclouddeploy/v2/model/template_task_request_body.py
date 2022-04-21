@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TemplateTaskRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class TemplateTaskRequestBody:
     }
 
     def __init__(self, project_id=None, project_name=None, template_id=None, task_name=None, slave_cluster_id=None, configs=None):
-        """TemplateTaskRequestBody - a model defined in huaweicloud sdk"""
+        """TemplateTaskRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: devcloud创建的项目id
+        :type project_id: str
+        :param project_name: devcloud创建的项目名称
+        :type project_name: str
+        :param template_id: 部署模板id
+        :type template_id: str
+        :param task_name: 部署任务名称
+        :type task_name: str
+        :param slave_cluster_id: 自定义slave资源池id
+        :type slave_cluster_id: str
+        :param configs: 部署参数类
+        :type configs: list[:class:`huaweicloudsdkclouddeploy.v2.ConfigInfoDO`]
+        """
         
         
 
@@ -79,7 +94,7 @@ class TemplateTaskRequestBody:
         devcloud创建的项目id
 
         :param project_id: The project_id of this TemplateTaskRequestBody.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -101,7 +116,7 @@ class TemplateTaskRequestBody:
         devcloud创建的项目名称
 
         :param project_name: The project_name of this TemplateTaskRequestBody.
-        :type: str
+        :type project_name: str
         """
         self._project_name = project_name
 
@@ -123,7 +138,7 @@ class TemplateTaskRequestBody:
         部署模板id
 
         :param template_id: The template_id of this TemplateTaskRequestBody.
-        :type: str
+        :type template_id: str
         """
         self._template_id = template_id
 
@@ -145,7 +160,7 @@ class TemplateTaskRequestBody:
         部署任务名称
 
         :param task_name: The task_name of this TemplateTaskRequestBody.
-        :type: str
+        :type task_name: str
         """
         self._task_name = task_name
 
@@ -167,7 +182,7 @@ class TemplateTaskRequestBody:
         自定义slave资源池id
 
         :param slave_cluster_id: The slave_cluster_id of this TemplateTaskRequestBody.
-        :type: str
+        :type slave_cluster_id: str
         """
         self._slave_cluster_id = slave_cluster_id
 
@@ -178,7 +193,7 @@ class TemplateTaskRequestBody:
         部署参数类
 
         :return: The configs of this TemplateTaskRequestBody.
-        :rtype: list[ConfigInfoDO]
+        :rtype: list[:class:`huaweicloudsdkclouddeploy.v2.ConfigInfoDO`]
         """
         return self._configs
 
@@ -189,7 +204,7 @@ class TemplateTaskRequestBody:
         部署参数类
 
         :param configs: The configs of this TemplateTaskRequestBody.
-        :type: list[ConfigInfoDO]
+        :type configs: list[:class:`huaweicloudsdkclouddeploy.v2.ConfigInfoDO`]
         """
         self._configs = configs
 

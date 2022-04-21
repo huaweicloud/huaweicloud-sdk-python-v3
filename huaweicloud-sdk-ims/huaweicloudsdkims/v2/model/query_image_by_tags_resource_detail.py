@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryImageByTagsResourceDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class QueryImageByTagsResourceDetail:
     }
 
     def __init__(self, status=None):
-        """QueryImageByTagsResourceDetail - a model defined in huaweicloud sdk"""
+        """QueryImageByTagsResourceDetail
+
+        The model defined in huaweicloud sdk
+
+        :param status: 镜像状态
+        :type status: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class QueryImageByTagsResourceDetail:
         镜像状态
 
         :param status: The status of this QueryImageByTagsResourceDetail.
-        :type: str
+        :type status: str
         """
         self._status = status
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateMbTasksReportRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateMbTasksReportRequest:
     }
 
     def __init__(self, body=None):
-        """CreateMbTasksReportRequest - a model defined in huaweicloud sdk"""
+        """CreateMbTasksReportRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateMbTasksReportRequest
+        :type body: :class:`huaweicloudsdkmpc.v1.MbTasksReportReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateMbTasksReportRequest:
 
 
         :return: The body of this CreateMbTasksReportRequest.
-        :rtype: MbTasksReportReq
+        :rtype: :class:`huaweicloudsdkmpc.v1.MbTasksReportReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateMbTasksReportRequest:
 
 
         :param body: The body of this CreateMbTasksReportRequest.
-        :type: MbTasksReportReq
+        :type body: :class:`huaweicloudsdkmpc.v1.MbTasksReportReq`
         """
         self._body = body
 

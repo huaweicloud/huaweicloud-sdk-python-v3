@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RolesOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RolesOption:
     }
 
     def __init__(self, role_db_name=None, role_name=None):
-        """RolesOption - a model defined in huaweicloud sdk"""
+        """RolesOption
+
+        The model defined in huaweicloud sdk
+
+        :param role_db_name: 被继承角色所在数据库名称。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、下划线。
+        :type role_db_name: str
+        :param role_name: 被继承角色的名称。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、中划线、下划线和点。
+        :type role_name: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class RolesOption:
         被继承角色所在数据库名称。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、下划线。
 
         :param role_db_name: The role_db_name of this RolesOption.
-        :type: str
+        :type role_db_name: str
         """
         self._role_db_name = role_db_name
 
@@ -83,7 +90,7 @@ class RolesOption:
         被继承角色的名称。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、中划线、下划线和点。
 
         :param role_name: The role_name of this RolesOption.
-        :type: str
+        :type role_name: str
         """
         self._role_name = role_name
 

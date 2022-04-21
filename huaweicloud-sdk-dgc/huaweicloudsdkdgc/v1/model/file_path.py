@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FilePath:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class FilePath:
     }
 
     def __init__(self, path=None):
-        """FilePath - a model defined in huaweicloud sdk"""
+        """FilePath
+
+        The model defined in huaweicloud sdk
+
+        :param path: 文件在OBS上的路径
+        :type path: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class FilePath:
         文件在OBS上的路径
 
         :param path: The path of this FilePath.
-        :type: str
+        :type path: str
         """
         self._path = path
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QuotaShowResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class QuotaShowResp:
     }
 
     def __init__(self, type=None, used=None, quota=None, min=None):
-        """QuotaShowResp - a model defined in huaweicloud sdk"""
+        """QuotaShowResp
+
+        The model defined in huaweicloud sdk
+
+        :param type: 功能说明：根据type过滤查询指定类型的配额 取值范围：vpc，subnet，securityGroup，securityGroupRule，publicIp，vpn，vpngw，vpcPeer，firewall，shareBandwidth，shareBandwidthIP
+        :type type: str
+        :param used: 功能说明：已创建的资源个数 取值范围：0~quota数
+        :type used: int
+        :param quota: 功能说明：资源的最大配额数 取值范围：各类型资源默认配额数~Integer最大值 约束：资源的默认配额数可以修改，而且配额需要提前在底层配置，参考默认配置为：vpc默认5，子网默认100，安全组默认100，安全组规则默认5000，弹性公网IP默认10，vpn默认5，vpngw默认2，vpcPeer默认50，firewall默认200，shareBandwidth默认5，shareBandwidthIP默认20
+        :type quota: int
+        :param min: 允许修改的配额最小值
+        :type min: int
+        """
         
         
 
@@ -73,7 +84,7 @@ class QuotaShowResp:
         功能说明：根据type过滤查询指定类型的配额 取值范围：vpc，subnet，securityGroup，securityGroupRule，publicIp，vpn，vpngw，vpcPeer，firewall，shareBandwidth，shareBandwidthIP
 
         :param type: The type of this QuotaShowResp.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -95,7 +106,7 @@ class QuotaShowResp:
         功能说明：已创建的资源个数 取值范围：0~quota数
 
         :param used: The used of this QuotaShowResp.
-        :type: int
+        :type used: int
         """
         self._used = used
 
@@ -117,7 +128,7 @@ class QuotaShowResp:
         功能说明：资源的最大配额数 取值范围：各类型资源默认配额数~Integer最大值 约束：资源的默认配额数可以修改，而且配额需要提前在底层配置，参考默认配置为：vpc默认5，子网默认100，安全组默认100，安全组规则默认5000，弹性公网IP默认10，vpn默认5，vpngw默认2，vpcPeer默认50，firewall默认200，shareBandwidth默认5，shareBandwidthIP默认20
 
         :param quota: The quota of this QuotaShowResp.
-        :type: int
+        :type quota: int
         """
         self._quota = quota
 
@@ -139,7 +150,7 @@ class QuotaShowResp:
         允许修改的配额最小值
 
         :param min: The min of this QuotaShowResp.
-        :type: int
+        :type min: int
         """
         self._min = min
 

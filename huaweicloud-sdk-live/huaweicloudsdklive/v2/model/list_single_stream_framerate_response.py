@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSingleStreamFramerateResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListSingleStreamFramerateResponse(SdkResponse):
     }
 
     def __init__(self, framerate_info_list=None, x_request_id=None):
-        """ListSingleStreamFramerateResponse - a model defined in huaweicloud sdk"""
+        """ListSingleStreamFramerateResponse
+
+        The model defined in huaweicloud sdk
+
+        :param framerate_info_list: 用量详情。 
+        :type framerate_info_list: list[:class:`huaweicloudsdklive.v2.V2FramerateInfo`]
+        :param x_request_id: 
+        :type x_request_id: str
+        """
         
         super(ListSingleStreamFramerateResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListSingleStreamFramerateResponse(SdkResponse):
         用量详情。 
 
         :return: The framerate_info_list of this ListSingleStreamFramerateResponse.
-        :rtype: list[V2FramerateInfo]
+        :rtype: list[:class:`huaweicloudsdklive.v2.V2FramerateInfo`]
         """
         return self._framerate_info_list
 
@@ -63,7 +70,7 @@ class ListSingleStreamFramerateResponse(SdkResponse):
         用量详情。 
 
         :param framerate_info_list: The framerate_info_list of this ListSingleStreamFramerateResponse.
-        :type: list[V2FramerateInfo]
+        :type framerate_info_list: list[:class:`huaweicloudsdklive.v2.V2FramerateInfo`]
         """
         self._framerate_info_list = framerate_info_list
 
@@ -83,7 +90,7 @@ class ListSingleStreamFramerateResponse(SdkResponse):
 
 
         :param x_request_id: The x_request_id of this ListSingleStreamFramerateResponse.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 

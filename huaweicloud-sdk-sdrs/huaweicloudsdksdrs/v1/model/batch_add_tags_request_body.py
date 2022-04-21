@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchAddTagsRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchAddTagsRequestBody:
     }
 
     def __init__(self, tags=None, action=None):
-        """BatchAddTagsRequestBody - a model defined in huaweicloud sdk"""
+        """BatchAddTagsRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param tags: 标签列表。
+        :type tags: list[:class:`huaweicloudsdksdrs.v1.ResourceTag`]
+        :param action: 操作标识，取值仅限于：create：创建
+        :type action: str
+        """
         
         
 
@@ -50,7 +57,7 @@ class BatchAddTagsRequestBody:
         标签列表。
 
         :return: The tags of this BatchAddTagsRequestBody.
-        :rtype: list[ResourceTag]
+        :rtype: list[:class:`huaweicloudsdksdrs.v1.ResourceTag`]
         """
         return self._tags
 
@@ -61,7 +68,7 @@ class BatchAddTagsRequestBody:
         标签列表。
 
         :param tags: The tags of this BatchAddTagsRequestBody.
-        :type: list[ResourceTag]
+        :type tags: list[:class:`huaweicloudsdksdrs.v1.ResourceTag`]
         """
         self._tags = tags
 
@@ -83,7 +90,7 @@ class BatchAddTagsRequestBody:
         操作标识，取值仅限于：create：创建
 
         :param action: The action of this BatchAddTagsRequestBody.
-        :type: str
+        :type action: str
         """
         self._action = action
 

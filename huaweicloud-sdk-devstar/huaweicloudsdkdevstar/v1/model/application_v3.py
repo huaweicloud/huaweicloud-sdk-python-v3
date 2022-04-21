@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApplicationV3:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -64,7 +63,47 @@ class ApplicationV3:
     }
 
     def __init__(self, id=None, name=None, description=None, region_id=None, region_name=None, project_id=None, project_name=None, icon=None, pipeline_creation_result=None, repository_creation_result=None, environment_creation_result=None, template_types=None, template_deployment=None, deploy_type=None, creator_name=None, created_at=None, updated_at=None, version=None):
-        """ApplicationV3 - a model defined in huaweicloud sdk"""
+        """ApplicationV3
+
+        The model defined in huaweicloud sdk
+
+        :param id: 应用id
+        :type id: str
+        :param name: 应用名称
+        :type name: str
+        :param description: 应用描述
+        :type description: str
+        :param region_id: 区域id
+        :type region_id: str
+        :param region_name: 区域名称
+        :type region_name: str
+        :param project_id: 所属项目id
+        :type project_id: str
+        :param project_name: 项目名称
+        :type project_name: str
+        :param icon: 应用图标
+        :type icon: str
+        :param pipeline_creation_result: 流水线列表
+        :type pipeline_creation_result: list[:class:`huaweicloudsdkdevstar.v1.PipelineCreationResult`]
+        :param repository_creation_result: 
+        :type repository_creation_result: :class:`huaweicloudsdkdevstar.v1.RepositoryCreationResult`
+        :param environment_creation_result: 环境信息
+        :type environment_creation_result: list[str]
+        :param template_types: 模板类型
+        :type template_types: list[:class:`huaweicloudsdkdevstar.v1.TemplateType`]
+        :param template_deployment: 模板部署信息
+        :type template_deployment: str
+        :param deploy_type: 部署类型, function:函数部署,cci:cci容器部署,ServiceStage(Jar):ServiceStage jar包部署,ServiceStage(Docker):ServiceStage Docker容器部署
+        :type deploy_type: str
+        :param creator_name: 创建者名称
+        :type creator_name: str
+        :param created_at: 创建时间
+        :type created_at: str
+        :param updated_at: 更新时间
+        :type updated_at: str
+        :param version: 应用版本号
+        :type version: str
+        """
         
         
 
@@ -138,7 +177,7 @@ class ApplicationV3:
         应用id
 
         :param id: The id of this ApplicationV3.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -160,7 +199,7 @@ class ApplicationV3:
         应用名称
 
         :param name: The name of this ApplicationV3.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -182,7 +221,7 @@ class ApplicationV3:
         应用描述
 
         :param description: The description of this ApplicationV3.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -204,7 +243,7 @@ class ApplicationV3:
         区域id
 
         :param region_id: The region_id of this ApplicationV3.
-        :type: str
+        :type region_id: str
         """
         self._region_id = region_id
 
@@ -226,7 +265,7 @@ class ApplicationV3:
         区域名称
 
         :param region_name: The region_name of this ApplicationV3.
-        :type: str
+        :type region_name: str
         """
         self._region_name = region_name
 
@@ -248,7 +287,7 @@ class ApplicationV3:
         所属项目id
 
         :param project_id: The project_id of this ApplicationV3.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -270,7 +309,7 @@ class ApplicationV3:
         项目名称
 
         :param project_name: The project_name of this ApplicationV3.
-        :type: str
+        :type project_name: str
         """
         self._project_name = project_name
 
@@ -292,7 +331,7 @@ class ApplicationV3:
         应用图标
 
         :param icon: The icon of this ApplicationV3.
-        :type: str
+        :type icon: str
         """
         self._icon = icon
 
@@ -303,7 +342,7 @@ class ApplicationV3:
         流水线列表
 
         :return: The pipeline_creation_result of this ApplicationV3.
-        :rtype: list[PipelineCreationResult]
+        :rtype: list[:class:`huaweicloudsdkdevstar.v1.PipelineCreationResult`]
         """
         return self._pipeline_creation_result
 
@@ -314,7 +353,7 @@ class ApplicationV3:
         流水线列表
 
         :param pipeline_creation_result: The pipeline_creation_result of this ApplicationV3.
-        :type: list[PipelineCreationResult]
+        :type pipeline_creation_result: list[:class:`huaweicloudsdkdevstar.v1.PipelineCreationResult`]
         """
         self._pipeline_creation_result = pipeline_creation_result
 
@@ -324,7 +363,7 @@ class ApplicationV3:
 
 
         :return: The repository_creation_result of this ApplicationV3.
-        :rtype: RepositoryCreationResult
+        :rtype: :class:`huaweicloudsdkdevstar.v1.RepositoryCreationResult`
         """
         return self._repository_creation_result
 
@@ -334,7 +373,7 @@ class ApplicationV3:
 
 
         :param repository_creation_result: The repository_creation_result of this ApplicationV3.
-        :type: RepositoryCreationResult
+        :type repository_creation_result: :class:`huaweicloudsdkdevstar.v1.RepositoryCreationResult`
         """
         self._repository_creation_result = repository_creation_result
 
@@ -356,7 +395,7 @@ class ApplicationV3:
         环境信息
 
         :param environment_creation_result: The environment_creation_result of this ApplicationV3.
-        :type: list[str]
+        :type environment_creation_result: list[str]
         """
         self._environment_creation_result = environment_creation_result
 
@@ -367,7 +406,7 @@ class ApplicationV3:
         模板类型
 
         :return: The template_types of this ApplicationV3.
-        :rtype: list[TemplateType]
+        :rtype: list[:class:`huaweicloudsdkdevstar.v1.TemplateType`]
         """
         return self._template_types
 
@@ -378,7 +417,7 @@ class ApplicationV3:
         模板类型
 
         :param template_types: The template_types of this ApplicationV3.
-        :type: list[TemplateType]
+        :type template_types: list[:class:`huaweicloudsdkdevstar.v1.TemplateType`]
         """
         self._template_types = template_types
 
@@ -400,7 +439,7 @@ class ApplicationV3:
         模板部署信息
 
         :param template_deployment: The template_deployment of this ApplicationV3.
-        :type: str
+        :type template_deployment: str
         """
         self._template_deployment = template_deployment
 
@@ -422,7 +461,7 @@ class ApplicationV3:
         部署类型, function:函数部署,cci:cci容器部署,ServiceStage(Jar):ServiceStage jar包部署,ServiceStage(Docker):ServiceStage Docker容器部署
 
         :param deploy_type: The deploy_type of this ApplicationV3.
-        :type: str
+        :type deploy_type: str
         """
         self._deploy_type = deploy_type
 
@@ -444,7 +483,7 @@ class ApplicationV3:
         创建者名称
 
         :param creator_name: The creator_name of this ApplicationV3.
-        :type: str
+        :type creator_name: str
         """
         self._creator_name = creator_name
 
@@ -466,7 +505,7 @@ class ApplicationV3:
         创建时间
 
         :param created_at: The created_at of this ApplicationV3.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -488,7 +527,7 @@ class ApplicationV3:
         更新时间
 
         :param updated_at: The updated_at of this ApplicationV3.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 
@@ -510,7 +549,7 @@ class ApplicationV3:
         应用版本号
 
         :param version: The version of this ApplicationV3.
-        :type: str
+        :type version: str
         """
         self._version = version
 

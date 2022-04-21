@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MysqlEngineVersionInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class MysqlEngineVersionInfo:
     }
 
     def __init__(self, id=None, name=None):
-        """MysqlEngineVersionInfo - a model defined in huaweicloud sdk"""
+        """MysqlEngineVersionInfo
+
+        The model defined in huaweicloud sdk
+
+        :param id: 数据库版本ID，该字段不会有重复
+        :type id: str
+        :param name: 数据库版本号，只返回两位数的大版本号
+        :type name: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class MysqlEngineVersionInfo:
         数据库版本ID，该字段不会有重复
 
         :param id: The id of this MysqlEngineVersionInfo.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -83,7 +90,7 @@ class MysqlEngineVersionInfo:
         数据库版本号，只返回两位数的大版本号
 
         :param name: The name of this MysqlEngineVersionInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 

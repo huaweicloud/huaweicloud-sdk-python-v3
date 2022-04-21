@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateResourceTagRequestBodyTag:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateResourceTagRequestBodyTag:
     }
 
     def __init__(self, key=None, value=None):
-        """CreateResourceTagRequestBodyTag - a model defined in huaweicloud sdk"""
+        """CreateResourceTagRequestBodyTag
+
+        The model defined in huaweicloud sdk
+
+        :param key: 键，表示要匹配的字段。  当前key的参数值只能取“resource_name”，此时value的参数值为云服务器名称。  - key不能重复，value为匹配的值。  - 此字段为固定字典值。  - 不允许为空字符串。
+        :type key: str
+        :param value: 值。  当前key的参数值只能取“resource_name”，此时value的参数值为云服务器名称。  - 每个值最大长度255个unicode字符。  - 不可以为空。
+        :type value: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class CreateResourceTagRequestBodyTag:
         键，表示要匹配的字段。  当前key的参数值只能取“resource_name”，此时value的参数值为云服务器名称。  - key不能重复，value为匹配的值。  - 此字段为固定字典值。  - 不允许为空字符串。
 
         :param key: The key of this CreateResourceTagRequestBodyTag.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -83,7 +90,7 @@ class CreateResourceTagRequestBodyTag:
         值。  当前key的参数值只能取“resource_name”，此时value的参数值为云服务器名称。  - 每个值最大长度255个unicode字符。  - 不可以为空。
 
         :param value: The value of this CreateResourceTagRequestBodyTag.
-        :type: str
+        :type value: str
         """
         self._value = value
 

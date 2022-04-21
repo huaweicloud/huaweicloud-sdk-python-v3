@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPostpaidBillSumRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListPostpaidBillSumRequest:
     }
 
     def __init__(self, bill_cycle=None):
-        """ListPostpaidBillSumRequest - a model defined in huaweicloud sdk"""
+        """ListPostpaidBillSumRequest
+
+        The model defined in huaweicloud sdk
+
+        :param bill_cycle: 账单所归属的月份。格式：YYYY-MM。
+        :type bill_cycle: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ListPostpaidBillSumRequest:
         账单所归属的月份。格式：YYYY-MM。
 
         :param bill_cycle: The bill_cycle of this ListPostpaidBillSumRequest.
-        :type: str
+        :type bill_cycle: str
         """
         self._bill_cycle = bill_cycle
 

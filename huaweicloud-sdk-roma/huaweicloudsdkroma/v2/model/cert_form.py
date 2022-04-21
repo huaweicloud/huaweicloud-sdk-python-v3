@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CertForm:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CertForm:
     }
 
     def __init__(self, cert_content=None, name=None, private_key=None):
-        """CertForm - a model defined in huaweicloud sdk"""
+        """CertForm
+
+        The model defined in huaweicloud sdk
+
+        :param cert_content: 证书内容
+        :type cert_content: str
+        :param name: 证书名称。长度为4 ~ 50位的字符串，字符串由中文、英文字母、数字、下划线组成，且只能以英文或中文开头。
+        :type name: str
+        :param private_key: 私钥内容
+        :type private_key: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class CertForm:
         证书内容
 
         :param cert_content: The cert_content of this CertForm.
-        :type: str
+        :type cert_content: str
         """
         self._cert_content = cert_content
 
@@ -87,7 +96,7 @@ class CertForm:
         证书名称。长度为4 ~ 50位的字符串，字符串由中文、英文字母、数字、下划线组成，且只能以英文或中文开头。
 
         :param name: The name of this CertForm.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -109,7 +118,7 @@ class CertForm:
         私钥内容
 
         :param private_key: The private_key of this CertForm.
-        :type: str
+        :type private_key: str
         """
         self._private_key = private_key
 

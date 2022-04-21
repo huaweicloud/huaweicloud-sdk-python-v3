@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BackupReplicateReqBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class BackupReplicateReqBody:
     }
 
     def __init__(self, description=None, destination_project_id=None, destination_region=None, destination_vault_id=None, enable_acceleration=None, name=None):
-        """BackupReplicateReqBody - a model defined in huaweicloud sdk"""
+        """BackupReplicateReqBody
+
+        The model defined in huaweicloud sdk
+
+        :param description: 复制的描述
+        :type description: str
+        :param destination_project_id: 复制的目标项目ID
+        :type destination_project_id: str
+        :param destination_region: 复制的目标区域
+        :type destination_region: str
+        :param destination_vault_id: 复制的目标区域的存储库ID
+        :type destination_vault_id: str
+        :param enable_acceleration: 跨区域复制时，是否启用加速从而缩短复制的时间，如果不指定，默认不启用加速。
+        :type enable_acceleration: bool
+        :param name: 复制名称
+        :type name: str
+        """
         
         
 
@@ -80,7 +95,7 @@ class BackupReplicateReqBody:
         复制的描述
 
         :param description: The description of this BackupReplicateReqBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -102,7 +117,7 @@ class BackupReplicateReqBody:
         复制的目标项目ID
 
         :param destination_project_id: The destination_project_id of this BackupReplicateReqBody.
-        :type: str
+        :type destination_project_id: str
         """
         self._destination_project_id = destination_project_id
 
@@ -124,7 +139,7 @@ class BackupReplicateReqBody:
         复制的目标区域
 
         :param destination_region: The destination_region of this BackupReplicateReqBody.
-        :type: str
+        :type destination_region: str
         """
         self._destination_region = destination_region
 
@@ -146,7 +161,7 @@ class BackupReplicateReqBody:
         复制的目标区域的存储库ID
 
         :param destination_vault_id: The destination_vault_id of this BackupReplicateReqBody.
-        :type: str
+        :type destination_vault_id: str
         """
         self._destination_vault_id = destination_vault_id
 
@@ -168,7 +183,7 @@ class BackupReplicateReqBody:
         跨区域复制时，是否启用加速从而缩短复制的时间，如果不指定，默认不启用加速。
 
         :param enable_acceleration: The enable_acceleration of this BackupReplicateReqBody.
-        :type: bool
+        :type enable_acceleration: bool
         """
         self._enable_acceleration = enable_acceleration
 
@@ -190,7 +205,7 @@ class BackupReplicateReqBody:
         复制名称
 
         :param name: The name of this BackupReplicateReqBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 

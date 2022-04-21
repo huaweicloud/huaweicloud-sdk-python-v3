@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAlarmHistoriesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class ListAlarmHistoriesRequest:
     }
 
     def __init__(self, alarm_id=None, name=None, status=None, level=None, namespace=None, resource_id=None, _from=None, to=None, offset=None, limit=None):
-        """ListAlarmHistoriesRequest - a model defined in huaweicloud sdk"""
+        """ListAlarmHistoriesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param alarm_id: 告警ID,以al开头，后跟22位由字母或数字组成的字符串
+        :type alarm_id: str
+        :param name: 告警规则名称
+        :type name: str
+        :param status: 告警规则状态
+        :type status: str
+        :param level: 告警规则等级
+        :type level: int
+        :param namespace: 服务的命名空间
+        :type namespace: str
+        :param resource_id: 告警资源ID，多维度情况使用逗号分隔
+        :type resource_id: str
+        :param _from: 通过时间筛选traces的起始时间(不包括传入时间) 例如：2022-02-10T10:05:46+08:00
+        :type _from: str
+        :param to: 通过时间筛选traces的终止时间(不包括传入时间) 例如：2022-02-10T10:05:47+08:00
+        :type to: str
+        :param offset: 偏移量
+        :type offset: int
+        :param limit: 希望的查询的数据量
+        :type limit: int
+        """
         
         
 
@@ -103,7 +126,7 @@ class ListAlarmHistoriesRequest:
         告警ID,以al开头，后跟22位由字母或数字组成的字符串
 
         :param alarm_id: The alarm_id of this ListAlarmHistoriesRequest.
-        :type: str
+        :type alarm_id: str
         """
         self._alarm_id = alarm_id
 
@@ -125,7 +148,7 @@ class ListAlarmHistoriesRequest:
         告警规则名称
 
         :param name: The name of this ListAlarmHistoriesRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -147,7 +170,7 @@ class ListAlarmHistoriesRequest:
         告警规则状态
 
         :param status: The status of this ListAlarmHistoriesRequest.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -169,7 +192,7 @@ class ListAlarmHistoriesRequest:
         告警规则等级
 
         :param level: The level of this ListAlarmHistoriesRequest.
-        :type: int
+        :type level: int
         """
         self._level = level
 
@@ -191,7 +214,7 @@ class ListAlarmHistoriesRequest:
         服务的命名空间
 
         :param namespace: The namespace of this ListAlarmHistoriesRequest.
-        :type: str
+        :type namespace: str
         """
         self._namespace = namespace
 
@@ -213,7 +236,7 @@ class ListAlarmHistoriesRequest:
         告警资源ID，多维度情况使用逗号分隔
 
         :param resource_id: The resource_id of this ListAlarmHistoriesRequest.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -235,7 +258,7 @@ class ListAlarmHistoriesRequest:
         通过时间筛选traces的起始时间(不包括传入时间) 例如：2022-02-10T10:05:46+08:00
 
         :param _from: The _from of this ListAlarmHistoriesRequest.
-        :type: str
+        :type _from: str
         """
         self.__from = _from
 
@@ -257,7 +280,7 @@ class ListAlarmHistoriesRequest:
         通过时间筛选traces的终止时间(不包括传入时间) 例如：2022-02-10T10:05:47+08:00
 
         :param to: The to of this ListAlarmHistoriesRequest.
-        :type: str
+        :type to: str
         """
         self._to = to
 
@@ -279,7 +302,7 @@ class ListAlarmHistoriesRequest:
         偏移量
 
         :param offset: The offset of this ListAlarmHistoriesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -301,7 +324,7 @@ class ListAlarmHistoriesRequest:
         希望的查询的数据量
 
         :param limit: The limit of this ListAlarmHistoriesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

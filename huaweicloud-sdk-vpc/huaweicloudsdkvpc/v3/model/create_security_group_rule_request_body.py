@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateSecurityGroupRuleRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateSecurityGroupRuleRequestBody:
     }
 
     def __init__(self, dry_run=None, security_group_rule=None):
-        """CreateSecurityGroupRuleRequestBody - a model defined in huaweicloud sdk"""
+        """CreateSecurityGroupRuleRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param dry_run: 功能说明：是否只预检此次请求 取值范围： -true：发送检查请求，不会创建安全组规则。检查项包括是否填写了必需参数、请求格式、业务限制。如果检查不通过，则返回对应错误。如果检查通过，则返回响应码202。 -false（默认值）：发送正常请求，并直接创建安全组规则。
+        :type dry_run: bool
+        :param security_group_rule: 
+        :type security_group_rule: :class:`huaweicloudsdkvpc.v3.CreateSecurityGroupRuleOption`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateSecurityGroupRuleRequestBody:
         功能说明：是否只预检此次请求 取值范围： -true：发送检查请求，不会创建安全组规则。检查项包括是否填写了必需参数、请求格式、业务限制。如果检查不通过，则返回对应错误。如果检查通过，则返回响应码202。 -false（默认值）：发送正常请求，并直接创建安全组规则。
 
         :param dry_run: The dry_run of this CreateSecurityGroupRuleRequestBody.
-        :type: bool
+        :type dry_run: bool
         """
         self._dry_run = dry_run
 
@@ -72,7 +79,7 @@ class CreateSecurityGroupRuleRequestBody:
 
 
         :return: The security_group_rule of this CreateSecurityGroupRuleRequestBody.
-        :rtype: CreateSecurityGroupRuleOption
+        :rtype: :class:`huaweicloudsdkvpc.v3.CreateSecurityGroupRuleOption`
         """
         return self._security_group_rule
 
@@ -82,7 +89,7 @@ class CreateSecurityGroupRuleRequestBody:
 
 
         :param security_group_rule: The security_group_rule of this CreateSecurityGroupRuleRequestBody.
-        :type: CreateSecurityGroupRuleOption
+        :type security_group_rule: :class:`huaweicloudsdkvpc.v3.CreateSecurityGroupRuleOption`
         """
         self._security_group_rule = security_group_rule
 

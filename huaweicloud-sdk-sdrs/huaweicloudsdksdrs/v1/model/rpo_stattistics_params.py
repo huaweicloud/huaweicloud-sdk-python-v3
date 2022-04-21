@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RpoStattisticsParams:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class RpoStattisticsParams:
     }
 
     def __init__(self, id=None, point_time=None, resource_num=None, resource_type=None, created_at=None, updated_at=None):
-        """RpoStattisticsParams - a model defined in huaweicloud sdk"""
+        """RpoStattisticsParams
+
+        The model defined in huaweicloud sdk
+
+        :param id: 资源的RPO超标趋势记录id。
+        :type id: str
+        :param point_time: 资源的RPO超标趋势记录打点时间。默认格式为：\&quot;yyyy-MM-dd HH:mm\&quot;。
+        :type point_time: str
+        :param resource_num: RPO超标的资源个数。
+        :type resource_num: int
+        :param resource_type: RPO超标的资源类型。replication：表示查询复制对的RPO超标趋势记录。
+        :type resource_type: str
+        :param created_at: 创建时间。默认格式为：\&quot;yyyy-MM-dd HH:mm:ss.SSS\&quot;，例：\&quot;2019-04-01 12:00:00.000\&quot;。
+        :type created_at: str
+        :param updated_at: 更新时间。默认格式为：\&quot;yyyy-MM-dd HH:mm:ss.SSS\&quot;，例：\&quot;2019-04-01 12:00:00.000\&quot;。
+        :type updated_at: str
+        """
         
         
 
@@ -77,7 +92,7 @@ class RpoStattisticsParams:
         资源的RPO超标趋势记录id。
 
         :param id: The id of this RpoStattisticsParams.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -99,7 +114,7 @@ class RpoStattisticsParams:
         资源的RPO超标趋势记录打点时间。默认格式为：\"yyyy-MM-dd HH:mm\"。
 
         :param point_time: The point_time of this RpoStattisticsParams.
-        :type: str
+        :type point_time: str
         """
         self._point_time = point_time
 
@@ -121,7 +136,7 @@ class RpoStattisticsParams:
         RPO超标的资源个数。
 
         :param resource_num: The resource_num of this RpoStattisticsParams.
-        :type: int
+        :type resource_num: int
         """
         self._resource_num = resource_num
 
@@ -143,7 +158,7 @@ class RpoStattisticsParams:
         RPO超标的资源类型。replication：表示查询复制对的RPO超标趋势记录。
 
         :param resource_type: The resource_type of this RpoStattisticsParams.
-        :type: str
+        :type resource_type: str
         """
         self._resource_type = resource_type
 
@@ -165,7 +180,7 @@ class RpoStattisticsParams:
         创建时间。默认格式为：\"yyyy-MM-dd HH:mm:ss.SSS\"，例：\"2019-04-01 12:00:00.000\"。
 
         :param created_at: The created_at of this RpoStattisticsParams.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -187,7 +202,7 @@ class RpoStattisticsParams:
         更新时间。默认格式为：\"yyyy-MM-dd HH:mm:ss.SSS\"，例：\"2019-04-01 12:00:00.000\"。
 
         :param updated_at: The updated_at of this RpoStattisticsParams.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 

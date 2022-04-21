@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneUpdateMappingResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class KeystoneUpdateMappingResponse(SdkResponse):
     }
 
     def __init__(self, mapping=None):
-        """KeystoneUpdateMappingResponse - a model defined in huaweicloud sdk"""
+        """KeystoneUpdateMappingResponse
+
+        The model defined in huaweicloud sdk
+
+        :param mapping: 
+        :type mapping: :class:`huaweicloudsdkiam.v3.MappingResult`
+        """
         
         super(KeystoneUpdateMappingResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class KeystoneUpdateMappingResponse(SdkResponse):
 
 
         :return: The mapping of this KeystoneUpdateMappingResponse.
-        :rtype: MappingResult
+        :rtype: :class:`huaweicloudsdkiam.v3.MappingResult`
         """
         return self._mapping
 
@@ -56,7 +61,7 @@ class KeystoneUpdateMappingResponse(SdkResponse):
 
 
         :param mapping: The mapping of this KeystoneUpdateMappingResponse.
-        :type: MappingResult
+        :type mapping: :class:`huaweicloudsdkiam.v3.MappingResult`
         """
         self._mapping = mapping
 

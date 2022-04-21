@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteDomainMappingRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class DeleteDomainMappingRequest:
     }
 
     def __init__(self, specify_project=None, pull_domain=None, push_domain=None):
-        """DeleteDomainMappingRequest - a model defined in huaweicloud sdk"""
+        """DeleteDomainMappingRequest
+
+        The model defined in huaweicloud sdk
+
+        :param specify_project: op账号需要携带的特定project_id，当使用op账号时该值为所操作租户的project_id
+        :type specify_project: str
+        :param pull_domain: 直播播放域名
+        :type pull_domain: str
+        :param push_domain: 直播推流域名
+        :type push_domain: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class DeleteDomainMappingRequest:
         op账号需要携带的特定project_id，当使用op账号时该值为所操作租户的project_id
 
         :param specify_project: The specify_project of this DeleteDomainMappingRequest.
-        :type: str
+        :type specify_project: str
         """
         self._specify_project = specify_project
 
@@ -88,7 +97,7 @@ class DeleteDomainMappingRequest:
         直播播放域名
 
         :param pull_domain: The pull_domain of this DeleteDomainMappingRequest.
-        :type: str
+        :type pull_domain: str
         """
         self._pull_domain = pull_domain
 
@@ -110,7 +119,7 @@ class DeleteDomainMappingRequest:
         直播推流域名
 
         :param push_domain: The push_domain of this DeleteDomainMappingRequest.
-        :type: str
+        :type push_domain: str
         """
         self._push_domain = push_domain
 

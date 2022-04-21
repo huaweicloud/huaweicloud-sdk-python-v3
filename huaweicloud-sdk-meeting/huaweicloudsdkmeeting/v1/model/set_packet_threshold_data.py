@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SetPacketThresholdData:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class SetPacketThresholdData:
     }
 
     def __init__(self, receiving=None, sending=None):
-        """SetPacketThresholdData - a model defined in huaweicloud sdk"""
+        """SetPacketThresholdData
+
+        The model defined in huaweicloud sdk
+
+        :param receiving: 接收方向阈值设定值，单位为百分比(%)。 取值范围：0 - 100。
+        :type receiving: int
+        :param sending: 发送方向阈值设定值，单位为百分比(%)。 取值范围：0 - 100。
+        :type sending: int
+        """
         
         
 
@@ -63,7 +70,7 @@ class SetPacketThresholdData:
         接收方向阈值设定值，单位为百分比(%)。 取值范围：0 - 100。
 
         :param receiving: The receiving of this SetPacketThresholdData.
-        :type: int
+        :type receiving: int
         """
         self._receiving = receiving
 
@@ -85,7 +92,7 @@ class SetPacketThresholdData:
         发送方向阈值设定值，单位为百分比(%)。 取值范围：0 - 100。
 
         :param sending: The sending of this SetPacketThresholdData.
-        :type: int
+        :type sending: int
         """
         self._sending = sending
 

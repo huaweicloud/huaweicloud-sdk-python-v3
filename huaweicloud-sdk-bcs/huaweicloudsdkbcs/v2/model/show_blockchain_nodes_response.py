@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowBlockchainNodesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowBlockchainNodesResponse(SdkResponse):
     }
 
     def __init__(self, node_orgs=None):
-        """ShowBlockchainNodesResponse - a model defined in huaweicloud sdk"""
+        """ShowBlockchainNodesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param node_orgs: key:组织名，value：组织详细信息
+        :type node_orgs: dict(str, Org)
+        """
         
         super(ShowBlockchainNodesResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class ShowBlockchainNodesResponse(SdkResponse):
         key:组织名，value：组织详细信息
 
         :param node_orgs: The node_orgs of this ShowBlockchainNodesResponse.
-        :type: dict(str, Org)
+        :type node_orgs: dict(str, Org)
         """
         self._node_orgs = node_orgs
 

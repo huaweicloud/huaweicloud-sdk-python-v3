@@ -52,21 +52,17 @@ class ElbClient(Client):
         """批量创建后端服务器
 
         在指定pool下批量创建后端服务器。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchCreateMembersRequest request
-        :return: BatchCreateMembersResponse
+        :param request: Request instance for BatchCreateMembers
+        :type request: :class:`huaweicloudsdkelb.v3.BatchCreateMembersRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.BatchCreateMembersResponse`
         """
         return self.batch_create_members_with_http_info(request)
 
     def batch_create_members_with_http_info(self, request):
-        """批量创建后端服务器
-
-        在指定pool下批量创建后端服务器。
-
-        :param BatchCreateMembersRequest request
-        :return: BatchCreateMembersResponse
-        """
-
         all_params = ['pool_id', 'batch_create_member_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -112,26 +108,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_delete_members(self, request):
         """批量删除后端服务器
 
         在指定pool下批量删除后端服务器。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchDeleteMembersRequest request
-        :return: BatchDeleteMembersResponse
+        :param request: Request instance for BatchDeleteMembers
+        :type request: :class:`huaweicloudsdkelb.v3.BatchDeleteMembersRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.BatchDeleteMembersResponse`
         """
         return self.batch_delete_members_with_http_info(request)
 
     def batch_delete_members_with_http_info(self, request):
-        """批量删除后端服务器
-
-        在指定pool下批量删除后端服务器。
-
-        :param BatchDeleteMembersRequest request
-        :return: BatchDeleteMembersResponse
-        """
-
         all_params = ['pool_id', 'batch_delete_member_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -177,26 +168,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_update_policies_priority(self, request):
         """批量更新转发策略优先级
 
         批量更新转发策略的优先级。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchUpdatePoliciesPriorityRequest request
-        :return: BatchUpdatePoliciesPriorityResponse
+        :param request: Request instance for BatchUpdatePoliciesPriority
+        :type request: :class:`huaweicloudsdkelb.v3.BatchUpdatePoliciesPriorityRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.BatchUpdatePoliciesPriorityResponse`
         """
         return self.batch_update_policies_priority_with_http_info(request)
 
     def batch_update_policies_priority_with_http_info(self, request):
-        """批量更新转发策略优先级
-
-        批量更新转发策略的优先级。
-
-        :param BatchUpdatePoliciesPriorityRequest request
-        :return: BatchUpdatePoliciesPriorityResponse
-        """
-
         all_params = ['batch_update_policies_priority_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -240,26 +226,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def change_loadbalancer_charge_mode(self, request):
         """负载均衡器计费模式变更
 
         负载均衡器计费模式变更，当前只支持按需计费转包周期计费。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ChangeLoadbalancerChargeModeRequest request
-        :return: ChangeLoadbalancerChargeModeResponse
+        :param request: Request instance for ChangeLoadbalancerChargeMode
+        :type request: :class:`huaweicloudsdkelb.v3.ChangeLoadbalancerChargeModeRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.ChangeLoadbalancerChargeModeResponse`
         """
         return self.change_loadbalancer_charge_mode_with_http_info(request)
 
     def change_loadbalancer_charge_mode_with_http_info(self, request):
-        """负载均衡器计费模式变更
-
-        负载均衡器计费模式变更，当前只支持按需计费转包周期计费。
-
-        :param ChangeLoadbalancerChargeModeRequest request
-        :return: ChangeLoadbalancerChargeModeResponse
-        """
-
         all_params = ['change_loadbalancer_charge_mode_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -303,26 +284,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_certificate(self, request):
         """创建证书
 
         创建证书。用于HTTPS协议监听器。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateCertificateRequest request
-        :return: CreateCertificateResponse
+        :param request: Request instance for CreateCertificate
+        :type request: :class:`huaweicloudsdkelb.v3.CreateCertificateRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.CreateCertificateResponse`
         """
         return self.create_certificate_with_http_info(request)
 
     def create_certificate_with_http_info(self, request):
-        """创建证书
-
-        创建证书。用于HTTPS协议监听器。
-
-        :param CreateCertificateRequest request
-        :return: CreateCertificateResponse
-        """
-
         all_params = ['create_certificate_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -366,26 +342,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_health_monitor(self, request):
         """创建健康检查
 
         创建健康检查。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateHealthMonitorRequest request
-        :return: CreateHealthMonitorResponse
+        :param request: Request instance for CreateHealthMonitor
+        :type request: :class:`huaweicloudsdkelb.v3.CreateHealthMonitorRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.CreateHealthMonitorResponse`
         """
         return self.create_health_monitor_with_http_info(request)
 
     def create_health_monitor_with_http_info(self, request):
-        """创建健康检查
-
-        创建健康检查。
-
-        :param CreateHealthMonitorRequest request
-        :return: CreateHealthMonitorResponse
-        """
-
         all_params = ['create_health_monitor_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -429,26 +400,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_l7_policy(self, request):
         """创建转发策略
 
         创建七层转发策略。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateL7PolicyRequest request
-        :return: CreateL7PolicyResponse
+        :param request: Request instance for CreateL7Policy
+        :type request: :class:`huaweicloudsdkelb.v3.CreateL7PolicyRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.CreateL7PolicyResponse`
         """
         return self.create_l7_policy_with_http_info(request)
 
     def create_l7_policy_with_http_info(self, request):
-        """创建转发策略
-
-        创建七层转发策略。
-
-        :param CreateL7PolicyRequest request
-        :return: CreateL7PolicyResponse
-        """
-
         all_params = ['create_l7_policy_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -492,26 +458,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_l7_rule(self, request):
         """创建转发规则
 
         创建七层转发规则。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateL7RuleRequest request
-        :return: CreateL7RuleResponse
+        :param request: Request instance for CreateL7Rule
+        :type request: :class:`huaweicloudsdkelb.v3.CreateL7RuleRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.CreateL7RuleResponse`
         """
         return self.create_l7_rule_with_http_info(request)
 
     def create_l7_rule_with_http_info(self, request):
-        """创建转发规则
-
-        创建七层转发规则。
-
-        :param CreateL7RuleRequest request
-        :return: CreateL7RuleResponse
-        """
-
         all_params = ['l7policy_id', 'create_l7_rule_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -557,26 +518,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_listener(self, request):
         """创建监听器
 
         创建监听器。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateListenerRequest request
-        :return: CreateListenerResponse
+        :param request: Request instance for CreateListener
+        :type request: :class:`huaweicloudsdkelb.v3.CreateListenerRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.CreateListenerResponse`
         """
         return self.create_listener_with_http_info(request)
 
     def create_listener_with_http_info(self, request):
-        """创建监听器
-
-        创建监听器。
-
-        :param CreateListenerRequest request
-        :return: CreateListenerResponse
-        """
-
         all_params = ['create_listener_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -620,26 +576,35 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_load_balancer(self, request):
         """创建负载均衡器
 
-        创建负载均衡器。  1.若要创建内网IPv4负载均衡器，则需要设置vip_subnet_cidr_id。  2.若要创建公网IPv4负载均衡器，则需要设置publicip，以及设置vpc_id和vip_subnet_cidr_id这两个参数中的一个。  3.若要绑定有已有公网IPv4地址，需要设置publicip_ids，以及设置vpc_id和vip_subnet_cidr_id这两个参数中的一个。  4.若要创建内网双栈负载均衡器，则需要设置ipv6_vip_virsubnet_id。  5.若要创建公网双栈负载均衡器，则需要设置ipv6_vip_virsubnet_id和ipv6_bandwidth。  6.不支持绑定已有未使用的内网IPv4、内网IPv6或公网IPv6地址。  [>不支持创建IPv6地址负载均衡器](tag:dt,dt_test)
+        创建负载均衡器。
+        
+        1.若要创建内网IPv4负载均衡器，则需要设置vip_subnet_cidr_id。
+        
+        2.若要创建公网IPv4负载均衡器，则需要设置publicip，以及设置vpc_id和vip_subnet_cidr_id这两个参数中的一个。
+        
+        3.若要绑定有已有公网IPv4地址，需要设置publicip_ids，以及设置vpc_id和vip_subnet_cidr_id这两个参数中的一个。
+        
+        4.若要创建内网双栈负载均衡器，则需要设置ipv6_vip_virsubnet_id。
+        
+        5.若要创建公网双栈负载均衡器，则需要设置ipv6_vip_virsubnet_id和ipv6_bandwidth。
+        
+        6.不支持绑定已有未使用的内网IPv4、内网IPv6或公网IPv6地址。
+        
+        [&gt;不支持创建IPv6地址负载均衡器](tag:dt,dt_test)
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateLoadBalancerRequest request
-        :return: CreateLoadBalancerResponse
+        :param request: Request instance for CreateLoadBalancer
+        :type request: :class:`huaweicloudsdkelb.v3.CreateLoadBalancerRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.CreateLoadBalancerResponse`
         """
         return self.create_load_balancer_with_http_info(request)
 
     def create_load_balancer_with_http_info(self, request):
-        """创建负载均衡器
-
-        创建负载均衡器。  1.若要创建内网IPv4负载均衡器，则需要设置vip_subnet_cidr_id。  2.若要创建公网IPv4负载均衡器，则需要设置publicip，以及设置vpc_id和vip_subnet_cidr_id这两个参数中的一个。  3.若要绑定有已有公网IPv4地址，需要设置publicip_ids，以及设置vpc_id和vip_subnet_cidr_id这两个参数中的一个。  4.若要创建内网双栈负载均衡器，则需要设置ipv6_vip_virsubnet_id。  5.若要创建公网双栈负载均衡器，则需要设置ipv6_vip_virsubnet_id和ipv6_bandwidth。  6.不支持绑定已有未使用的内网IPv4、内网IPv6或公网IPv6地址。  [>不支持创建IPv6地址负载均衡器](tag:dt,dt_test)
-
-        :param CreateLoadBalancerRequest request
-        :return: CreateLoadBalancerResponse
-        """
-
         all_params = ['create_load_balancer_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -683,26 +648,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_logtank(self, request):
         """创建云日志
 
         创建云日志
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateLogtankRequest request
-        :return: CreateLogtankResponse
+        :param request: Request instance for CreateLogtank
+        :type request: :class:`huaweicloudsdkelb.v3.CreateLogtankRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.CreateLogtankResponse`
         """
         return self.create_logtank_with_http_info(request)
 
     def create_logtank_with_http_info(self, request):
-        """创建云日志
-
-        创建云日志
-
-        :param CreateLogtankRequest request
-        :return: CreateLogtankResponse
-        """
-
         all_params = ['create_logtank_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -746,26 +706,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_member(self, request):
         """创建后端服务器
 
         创建后端服务器。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateMemberRequest request
-        :return: CreateMemberResponse
+        :param request: Request instance for CreateMember
+        :type request: :class:`huaweicloudsdkelb.v3.CreateMemberRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.CreateMemberResponse`
         """
         return self.create_member_with_http_info(request)
 
     def create_member_with_http_info(self, request):
-        """创建后端服务器
-
-        创建后端服务器。
-
-        :param CreateMemberRequest request
-        :return: CreateMemberResponse
-        """
-
         all_params = ['pool_id', 'create_member_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -811,26 +766,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_pool(self, request):
         """创建后端服务器组
 
         创建后端服务器组。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreatePoolRequest request
-        :return: CreatePoolResponse
+        :param request: Request instance for CreatePool
+        :type request: :class:`huaweicloudsdkelb.v3.CreatePoolRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.CreatePoolResponse`
         """
         return self.create_pool_with_http_info(request)
 
     def create_pool_with_http_info(self, request):
-        """创建后端服务器组
-
-        创建后端服务器组。
-
-        :param CreatePoolRequest request
-        :return: CreatePoolResponse
-        """
-
         all_params = ['create_pool_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -874,26 +824,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_security_policy(self, request):
         """创建自定义安全策略
 
         创建自定义安全策略。用于在创建HTTPS监听器时，请求参数中指定security_policy_id来设置监听器的自定义安全策略。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateSecurityPolicyRequest request
-        :return: CreateSecurityPolicyResponse
+        :param request: Request instance for CreateSecurityPolicy
+        :type request: :class:`huaweicloudsdkelb.v3.CreateSecurityPolicyRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.CreateSecurityPolicyResponse`
         """
         return self.create_security_policy_with_http_info(request)
 
     def create_security_policy_with_http_info(self, request):
-        """创建自定义安全策略
-
-        创建自定义安全策略。用于在创建HTTPS监听器时，请求参数中指定security_policy_id来设置监听器的自定义安全策略。
-
-        :param CreateSecurityPolicyRequest request
-        :return: CreateSecurityPolicyResponse
-        """
-
         all_params = ['create_security_policy_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -937,26 +882,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_certificate(self, request):
         """删除证书
 
         删除证书。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteCertificateRequest request
-        :return: DeleteCertificateResponse
+        :param request: Request instance for DeleteCertificate
+        :type request: :class:`huaweicloudsdkelb.v3.DeleteCertificateRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.DeleteCertificateResponse`
         """
         return self.delete_certificate_with_http_info(request)
 
     def delete_certificate_with_http_info(self, request):
-        """删除证书
-
-        删除证书。
-
-        :param DeleteCertificateRequest request
-        :return: DeleteCertificateResponse
-        """
-
         all_params = ['certificate_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1000,26 +940,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_health_monitor(self, request):
         """删除健康检查
 
         删除健康检查。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteHealthMonitorRequest request
-        :return: DeleteHealthMonitorResponse
+        :param request: Request instance for DeleteHealthMonitor
+        :type request: :class:`huaweicloudsdkelb.v3.DeleteHealthMonitorRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.DeleteHealthMonitorResponse`
         """
         return self.delete_health_monitor_with_http_info(request)
 
     def delete_health_monitor_with_http_info(self, request):
-        """删除健康检查
-
-        删除健康检查。
-
-        :param DeleteHealthMonitorRequest request
-        :return: DeleteHealthMonitorResponse
-        """
-
         all_params = ['healthmonitor_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1063,26 +998,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_l7_policy(self, request):
         """删除转发策略
 
         删除七层转发策略。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteL7PolicyRequest request
-        :return: DeleteL7PolicyResponse
+        :param request: Request instance for DeleteL7Policy
+        :type request: :class:`huaweicloudsdkelb.v3.DeleteL7PolicyRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.DeleteL7PolicyResponse`
         """
         return self.delete_l7_policy_with_http_info(request)
 
     def delete_l7_policy_with_http_info(self, request):
-        """删除转发策略
-
-        删除七层转发策略。
-
-        :param DeleteL7PolicyRequest request
-        :return: DeleteL7PolicyResponse
-        """
-
         all_params = ['l7policy_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1126,26 +1056,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_l7_rule(self, request):
         """删除转发规则
 
         删除七层转发规则。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteL7RuleRequest request
-        :return: DeleteL7RuleResponse
+        :param request: Request instance for DeleteL7Rule
+        :type request: :class:`huaweicloudsdkelb.v3.DeleteL7RuleRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.DeleteL7RuleResponse`
         """
         return self.delete_l7_rule_with_http_info(request)
 
     def delete_l7_rule_with_http_info(self, request):
-        """删除转发规则
-
-        删除七层转发规则。
-
-        :param DeleteL7RuleRequest request
-        :return: DeleteL7RuleResponse
-        """
-
         all_params = ['l7policy_id', 'l7rule_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1191,26 +1116,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_listener(self, request):
         """删除监听器
 
         删除监听器。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteListenerRequest request
-        :return: DeleteListenerResponse
+        :param request: Request instance for DeleteListener
+        :type request: :class:`huaweicloudsdkelb.v3.DeleteListenerRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.DeleteListenerResponse`
         """
         return self.delete_listener_with_http_info(request)
 
     def delete_listener_with_http_info(self, request):
-        """删除监听器
-
-        删除监听器。
-
-        :param DeleteListenerRequest request
-        :return: DeleteListenerResponse
-        """
-
         all_params = ['listener_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1254,26 +1174,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_load_balancer(self, request):
         """删除负载均衡器
 
         删除负载均衡器。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteLoadBalancerRequest request
-        :return: DeleteLoadBalancerResponse
+        :param request: Request instance for DeleteLoadBalancer
+        :type request: :class:`huaweicloudsdkelb.v3.DeleteLoadBalancerRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.DeleteLoadBalancerResponse`
         """
         return self.delete_load_balancer_with_http_info(request)
 
     def delete_load_balancer_with_http_info(self, request):
-        """删除负载均衡器
-
-        删除负载均衡器。
-
-        :param DeleteLoadBalancerRequest request
-        :return: DeleteLoadBalancerResponse
-        """
-
         all_params = ['loadbalancer_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1317,26 +1232,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_logtank(self, request):
         """删除云日志
 
         删除云日志。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteLogtankRequest request
-        :return: DeleteLogtankResponse
+        :param request: Request instance for DeleteLogtank
+        :type request: :class:`huaweicloudsdkelb.v3.DeleteLogtankRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.DeleteLogtankResponse`
         """
         return self.delete_logtank_with_http_info(request)
 
     def delete_logtank_with_http_info(self, request):
-        """删除云日志
-
-        删除云日志。
-
-        :param DeleteLogtankRequest request
-        :return: DeleteLogtankResponse
-        """
-
         all_params = ['logtank_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1380,26 +1290,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_member(self, request):
         """删除后端服务器
 
         删除后端服务器。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteMemberRequest request
-        :return: DeleteMemberResponse
+        :param request: Request instance for DeleteMember
+        :type request: :class:`huaweicloudsdkelb.v3.DeleteMemberRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.DeleteMemberResponse`
         """
         return self.delete_member_with_http_info(request)
 
     def delete_member_with_http_info(self, request):
-        """删除后端服务器
-
-        删除后端服务器。
-
-        :param DeleteMemberRequest request
-        :return: DeleteMemberResponse
-        """
-
         all_params = ['pool_id', 'member_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1445,26 +1350,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_pool(self, request):
         """删除后端服务器组
 
         删除后端服务器组。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeletePoolRequest request
-        :return: DeletePoolResponse
+        :param request: Request instance for DeletePool
+        :type request: :class:`huaweicloudsdkelb.v3.DeletePoolRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.DeletePoolResponse`
         """
         return self.delete_pool_with_http_info(request)
 
     def delete_pool_with_http_info(self, request):
-        """删除后端服务器组
-
-        删除后端服务器组。
-
-        :param DeletePoolRequest request
-        :return: DeletePoolResponse
-        """
-
         all_params = ['pool_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1508,26 +1408,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_security_policy(self, request):
         """删除自定义安全策略
 
         删除自定义安全策略。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteSecurityPolicyRequest request
-        :return: DeleteSecurityPolicyResponse
+        :param request: Request instance for DeleteSecurityPolicy
+        :type request: :class:`huaweicloudsdkelb.v3.DeleteSecurityPolicyRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.DeleteSecurityPolicyResponse`
         """
         return self.delete_security_policy_with_http_info(request)
 
     def delete_security_policy_with_http_info(self, request):
-        """删除自定义安全策略
-
-        删除自定义安全策略。
-
-        :param DeleteSecurityPolicyRequest request
-        :return: DeleteSecurityPolicyResponse
-        """
-
         all_params = ['security_policy_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1571,26 +1466,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_all_members(self, request):
         """后端服务器全局列表
 
         查询当前租户下的后端服务器列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListAllMembersRequest request
-        :return: ListAllMembersResponse
+        :param request: Request instance for ListAllMembers
+        :type request: :class:`huaweicloudsdkelb.v3.ListAllMembersRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.ListAllMembersResponse`
         """
         return self.list_all_members_with_http_info(request)
 
     def list_all_members_with_http_info(self, request):
-        """后端服务器全局列表
-
-        查询当前租户下的后端服务器列表。
-
-        :param ListAllMembersRequest request
-        :return: ListAllMembersResponse
-        """
-
         all_params = ['marker', 'limit', 'page_reverse', 'name', 'weight', 'admin_state_up', 'subnet_cidr_id', 'address', 'protocol_port', 'id', 'operating_status', 'enterprise_project_id', 'ip_version', 'pool_id', 'loadbalancer_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1673,26 +1563,26 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_availability_zones(self, request):
         """查询可用区列表
 
-        返回租户创建LB时可使用的可用区集合列表情况。  默认情况下，会返回一个可用区集合。在（如创建LB）设置可用区时，填写的可用区必须包含在可用区集合中、为这个可用区集合的子集。  [特殊场景下，部分客户要求负载均衡只能创建在指定可用区集合中，此时会返回客户定制的可用区集合。返回可用区集合可能为一个也可能为多个，比如列表有两个可用区集合[az1,az2], [az2,az3]。在创建负载均衡器时，可以选择创建在多个可用区，但所选的多个可用区必须同属于其中一个可用区集合，如可以选az2和az3，但不能选择az1和az3。你可以选择多个可用区，只要这些可用区在一个子集中](tag:hws,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42)
+        返回租户创建LB时可使用的可用区集合列表情况。
+        
+        默认情况下，会返回一个可用区集合。在（如创建LB）设置可用区时，填写的可用区必须包含在可用区集合中、为这个可用区集合的子集。
+        
+        [特殊场景下，部分客户要求负载均衡只能创建在指定可用区集合中，此时会返回客户定制的可用区集合。返回可用区集合可能为一个也可能为多个，比如列表有两个可用区集合[az1,az2],
+        [az2,az3]。在创建负载均衡器时，可以选择创建在多个可用区，但所选的多个可用区必须同属于其中一个可用区集合，如可以选az2和az3，但不能选择az1和az3。你可以选择多个可用区，只要这些可用区在一个子集中](tag:hws,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42)
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListAvailabilityZonesRequest request
-        :return: ListAvailabilityZonesResponse
+        :param request: Request instance for ListAvailabilityZones
+        :type request: :class:`huaweicloudsdkelb.v3.ListAvailabilityZonesRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.ListAvailabilityZonesResponse`
         """
         return self.list_availability_zones_with_http_info(request)
 
     def list_availability_zones_with_http_info(self, request):
-        """查询可用区列表
-
-        返回租户创建LB时可使用的可用区集合列表情况。  默认情况下，会返回一个可用区集合。在（如创建LB）设置可用区时，填写的可用区必须包含在可用区集合中、为这个可用区集合的子集。  [特殊场景下，部分客户要求负载均衡只能创建在指定可用区集合中，此时会返回客户定制的可用区集合。返回可用区集合可能为一个也可能为多个，比如列表有两个可用区集合[az1,az2], [az2,az3]。在创建负载均衡器时，可以选择创建在多个可用区，但所选的多个可用区必须同属于其中一个可用区集合，如可以选az2和az3，但不能选择az1和az3。你可以选择多个可用区，只要这些可用区在一个子集中](tag:hws,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42)
-
-        :param ListAvailabilityZonesRequest request
-        :return: ListAvailabilityZonesResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1734,26 +1624,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_certificates(self, request):
         """证书列表
 
         查询证书列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListCertificatesRequest request
-        :return: ListCertificatesResponse
+        :param request: Request instance for ListCertificates
+        :type request: :class:`huaweicloudsdkelb.v3.ListCertificatesRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.ListCertificatesResponse`
         """
         return self.list_certificates_with_http_info(request)
 
     def list_certificates_with_http_info(self, request):
-        """证书列表
-
-        查询证书列表。
-
-        :param ListCertificatesRequest request
-        :return: ListCertificatesResponse
-        """
-
         all_params = ['marker', 'limit', 'page_reverse', 'id', 'name', 'description', 'admin_state_up', 'domain', 'type']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1818,26 +1703,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_flavors(self, request):
         """查询规格列表
 
         查询租户在当前region下可用的负载均衡规格列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListFlavorsRequest request
-        :return: ListFlavorsResponse
+        :param request: Request instance for ListFlavors
+        :type request: :class:`huaweicloudsdkelb.v3.ListFlavorsRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.ListFlavorsResponse`
         """
         return self.list_flavors_with_http_info(request)
 
     def list_flavors_with_http_info(self, request):
-        """查询规格列表
-
-        查询租户在当前region下可用的负载均衡规格列表。
-
-        :param ListFlavorsRequest request
-        :return: ListFlavorsResponse
-        """
-
         all_params = ['marker', 'limit', 'page_reverse', 'id', 'name', 'type', 'shared']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1896,26 +1776,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_health_monitors(self, request):
         """查询健康检查列表
 
         健康检查列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListHealthMonitorsRequest request
-        :return: ListHealthMonitorsResponse
+        :param request: Request instance for ListHealthMonitors
+        :type request: :class:`huaweicloudsdkelb.v3.ListHealthMonitorsRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.ListHealthMonitorsResponse`
         """
         return self.list_health_monitors_with_http_info(request)
 
     def list_health_monitors_with_http_info(self, request):
-        """查询健康检查列表
-
-        健康检查列表。
-
-        :param ListHealthMonitorsRequest request
-        :return: ListHealthMonitorsResponse
-        """
-
         all_params = ['marker', 'limit', 'page_reverse', 'id', 'monitor_port', 'domain_name', 'name', 'delay', 'max_retries', 'admin_state_up', 'max_retries_down', 'timeout', 'type', 'expected_codes', 'url_path', 'http_method', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2003,26 +1878,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_l7_policies(self, request):
         """查询转发策略列表
 
         查询七层转发策略列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListL7PoliciesRequest request
-        :return: ListL7PoliciesResponse
+        :param request: Request instance for ListL7Policies
+        :type request: :class:`huaweicloudsdkelb.v3.ListL7PoliciesRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.ListL7PoliciesResponse`
         """
         return self.list_l7_policies_with_http_info(request)
 
     def list_l7_policies_with_http_info(self, request):
-        """查询转发策略列表
-
-        查询七层转发策略列表。
-
-        :param ListL7PoliciesRequest request
-        :return: ListL7PoliciesResponse
-        """
-
         all_params = ['marker', 'limit', 'page_reverse', 'enterprise_project_id', 'id', 'name', 'description', 'admin_state_up', 'listener_id', 'position', 'action', 'redirect_url', 'redirect_pool_id', 'redirect_listener_id', 'provisioning_status', 'display_all_rules', 'priority']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2110,26 +1980,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_l7_rules(self, request):
         """查询转发规则列表
 
         查询转发规则列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListL7RulesRequest request
-        :return: ListL7RulesResponse
+        :param request: Request instance for ListL7Rules
+        :type request: :class:`huaweicloudsdkelb.v3.ListL7RulesRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.ListL7RulesResponse`
         """
         return self.list_l7_rules_with_http_info(request)
 
     def list_l7_rules_with_http_info(self, request):
-        """查询转发规则列表
-
-        查询转发规则列表。
-
-        :param ListL7RulesRequest request
-        :return: ListL7RulesResponse
-        """
-
         all_params = ['l7policy_id', 'limit', 'marker', 'page_reverse', 'id', 'compare_type', 'provisioning_status', 'invert', 'admin_state_up', 'value', 'key', 'type', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2204,26 +2069,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_listeners(self, request):
         """查询监听器列表
 
         查询监听器列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListListenersRequest request
-        :return: ListListenersResponse
+        :param request: Request instance for ListListeners
+        :type request: :class:`huaweicloudsdkelb.v3.ListListenersRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.ListListenersResponse`
         """
         return self.list_listeners_with_http_info(request)
 
     def list_listeners_with_http_info(self, request):
-        """查询监听器列表
-
-        查询监听器列表。
-
-        :param ListListenersRequest request
-        :return: ListListenersResponse
-        """
-
         all_params = ['limit', 'marker', 'page_reverse', 'protocol_port', 'protocol', 'description', 'default_tls_container_ref', 'client_ca_tls_container_ref', 'admin_state_up', 'connection_limit', 'default_pool_id', 'id', 'name', 'http2_enable', 'loadbalancer_id', 'tls_ciphers_policy', 'member_address', 'member_device_id', 'enterprise_project_id', 'enable_member_retry', 'member_timeout', 'client_timeout', 'keepalive_timeout', 'transparent_client_ip_enable', 'enhance_l7policy_enable', 'member_instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2335,26 +2195,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_load_balancers(self, request):
         """查询负载均衡器列表
 
         查询负载均衡器列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListLoadBalancersRequest request
-        :return: ListLoadBalancersResponse
+        :param request: Request instance for ListLoadBalancers
+        :type request: :class:`huaweicloudsdkelb.v3.ListLoadBalancersRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.ListLoadBalancersResponse`
         """
         return self.list_load_balancers_with_http_info(request)
 
     def list_load_balancers_with_http_info(self, request):
-        """查询负载均衡器列表
-
-        查询负载均衡器列表。
-
-        :param ListLoadBalancersRequest request
-        :return: ListLoadBalancersResponse
-        """
-
         all_params = ['marker', 'limit', 'page_reverse', 'id', 'name', 'description', 'admin_state_up', 'provisioning_status', 'operating_status', 'guaranteed', 'vpc_id', 'vip_port_id', 'vip_address', 'vip_subnet_cidr_id', 'ipv6_vip_port_id', 'ipv6_vip_address', 'ipv6_vip_virsubnet_id', 'eips', 'publicips', 'availability_zone_list', 'l4_flavor_id', 'l4_scale_flavor_id', 'l7_flavor_id', 'l7_scale_flavor_id', 'billing_info', 'member_device_id', 'member_address', 'enterprise_project_id', 'ip_version', 'deletion_protection_enable', 'elb_virsubnet_type', 'autoscaling']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2486,26 +2341,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_logtanks(self, request):
         """云日志列表
 
         云日志列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListLogtanksRequest request
-        :return: ListLogtanksResponse
+        :param request: Request instance for ListLogtanks
+        :type request: :class:`huaweicloudsdkelb.v3.ListLogtanksRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.ListLogtanksResponse`
         """
         return self.list_logtanks_with_http_info(request)
 
     def list_logtanks_with_http_info(self, request):
-        """云日志列表
-
-        云日志列表
-
-        :param ListLogtanksRequest request
-        :return: ListLogtanksResponse
-        """
-
         all_params = ['limit', 'marker', 'page_reverse', 'enterprise_project_id', 'id', 'loadbalancer_id', 'log_group_id', 'log_topic_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2568,26 +2418,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_members(self, request):
         """后端服务器列表
 
         Pool下的后端服务器列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListMembersRequest request
-        :return: ListMembersResponse
+        :param request: Request instance for ListMembers
+        :type request: :class:`huaweicloudsdkelb.v3.ListMembersRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.ListMembersResponse`
         """
         return self.list_members_with_http_info(request)
 
     def list_members_with_http_info(self, request):
-        """后端服务器列表
-
-        Pool下的后端服务器列表。
-
-        :param ListMembersRequest request
-        :return: ListMembersResponse
-        """
-
         all_params = ['pool_id', 'marker', 'limit', 'page_reverse', 'name', 'weight', 'admin_state_up', 'subnet_cidr_id', 'address', 'protocol_port', 'id', 'operating_status', 'enterprise_project_id', 'ip_version', 'member_type', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2672,26 +2517,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_pools(self, request):
         """查询后端服务器组列表
 
         后端服务器组列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListPoolsRequest request
-        :return: ListPoolsResponse
+        :param request: Request instance for ListPools
+        :type request: :class:`huaweicloudsdkelb.v3.ListPoolsRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.ListPoolsResponse`
         """
         return self.list_pools_with_http_info(request)
 
     def list_pools_with_http_info(self, request):
-        """查询后端服务器组列表
-
-        后端服务器组列表。
-
-        :param ListPoolsRequest request
-        :return: ListPoolsResponse
-        """
-
         all_params = ['marker', 'limit', 'page_reverse', 'description', 'admin_state_up', 'healthmonitor_id', 'id', 'name', 'loadbalancer_id', 'protocol', 'lb_algorithm', 'enterprise_project_id', 'ip_version', 'member_address', 'member_device_id', 'member_deletion_protection_enable', 'listener_id', 'member_instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2782,26 +2622,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_quota_details(self, request):
         """查询配额使用详情
 
         查询指定项目中负载均衡相关的各类资源的当前配额和已使用配额信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListQuotaDetailsRequest request
-        :return: ListQuotaDetailsResponse
+        :param request: Request instance for ListQuotaDetails
+        :type request: :class:`huaweicloudsdkelb.v3.ListQuotaDetailsRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.ListQuotaDetailsResponse`
         """
         return self.list_quota_details_with_http_info(request)
 
     def list_quota_details_with_http_info(self, request):
-        """查询配额使用详情
-
-        查询指定项目中负载均衡相关的各类资源的当前配额和已使用配额信息。
-
-        :param ListQuotaDetailsRequest request
-        :return: ListQuotaDetailsResponse
-        """
-
         all_params = ['type']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2845,26 +2680,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_security_policies(self, request):
         """查询自定义安全策略列表
 
         查询自定义安全策略列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListSecurityPoliciesRequest request
-        :return: ListSecurityPoliciesResponse
+        :param request: Request instance for ListSecurityPolicies
+        :type request: :class:`huaweicloudsdkelb.v3.ListSecurityPoliciesRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.ListSecurityPoliciesResponse`
         """
         return self.list_security_policies_with_http_info(request)
 
     def list_security_policies_with_http_info(self, request):
-        """查询自定义安全策略列表
-
-        查询自定义安全策略列表。
-
-        :param ListSecurityPoliciesRequest request
-        :return: ListSecurityPoliciesResponse
-        """
-
         all_params = ['marker', 'limit', 'page_reverse', 'id', 'name', 'description', 'protocols', 'ciphers']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2927,26 +2757,23 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_system_security_policies(self, request):
         """查询系统安全策略列表
 
-        查询系统安全策略列表。  系统安全策略为预置的所有租户通用的安全策略，租户不可新增或修改。
+        查询系统安全策略列表。
+        
+        系统安全策略为预置的所有租户通用的安全策略，租户不可新增或修改。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListSystemSecurityPoliciesRequest request
-        :return: ListSystemSecurityPoliciesResponse
+        :param request: Request instance for ListSystemSecurityPolicies
+        :type request: :class:`huaweicloudsdkelb.v3.ListSystemSecurityPoliciesRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.ListSystemSecurityPoliciesResponse`
         """
         return self.list_system_security_policies_with_http_info(request)
 
     def list_system_security_policies_with_http_info(self, request):
-        """查询系统安全策略列表
-
-        查询系统安全策略列表。  系统安全策略为预置的所有租户通用的安全策略，租户不可新增或修改。
-
-        :param ListSystemSecurityPoliciesRequest request
-        :return: ListSystemSecurityPoliciesResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2988,26 +2815,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_certificate(self, request):
         """证书详情
 
         查询证书详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowCertificateRequest request
-        :return: ShowCertificateResponse
+        :param request: Request instance for ShowCertificate
+        :type request: :class:`huaweicloudsdkelb.v3.ShowCertificateRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.ShowCertificateResponse`
         """
         return self.show_certificate_with_http_info(request)
 
     def show_certificate_with_http_info(self, request):
-        """证书详情
-
-        查询证书详情。
-
-        :param ShowCertificateRequest request
-        :return: ShowCertificateResponse
-        """
-
         all_params = ['certificate_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3051,26 +2873,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_flavor(self, request):
         """查询规格详情
 
         查询规格的详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowFlavorRequest request
-        :return: ShowFlavorResponse
+        :param request: Request instance for ShowFlavor
+        :type request: :class:`huaweicloudsdkelb.v3.ShowFlavorRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.ShowFlavorResponse`
         """
         return self.show_flavor_with_http_info(request)
 
     def show_flavor_with_http_info(self, request):
-        """查询规格详情
-
-        查询规格的详情。
-
-        :param ShowFlavorRequest request
-        :return: ShowFlavorResponse
-        """
-
         all_params = ['flavor_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3114,26 +2931,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_health_monitor(self, request):
         """查询健康检查详情
 
         查询健康检查详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowHealthMonitorRequest request
-        :return: ShowHealthMonitorResponse
+        :param request: Request instance for ShowHealthMonitor
+        :type request: :class:`huaweicloudsdkelb.v3.ShowHealthMonitorRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.ShowHealthMonitorResponse`
         """
         return self.show_health_monitor_with_http_info(request)
 
     def show_health_monitor_with_http_info(self, request):
-        """查询健康检查详情
-
-        查询健康检查详情。
-
-        :param ShowHealthMonitorRequest request
-        :return: ShowHealthMonitorResponse
-        """
-
         all_params = ['healthmonitor_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3177,26 +2989,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_l7_policy(self, request):
         """查询转发策略详情
 
         查询七层转发策略详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowL7PolicyRequest request
-        :return: ShowL7PolicyResponse
+        :param request: Request instance for ShowL7Policy
+        :type request: :class:`huaweicloudsdkelb.v3.ShowL7PolicyRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.ShowL7PolicyResponse`
         """
         return self.show_l7_policy_with_http_info(request)
 
     def show_l7_policy_with_http_info(self, request):
-        """查询转发策略详情
-
-        查询七层转发策略详情。
-
-        :param ShowL7PolicyRequest request
-        :return: ShowL7PolicyResponse
-        """
-
         all_params = ['l7policy_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3240,26 +3047,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_l7_rule(self, request):
         """查询转发规则详情
 
         查询七层转发规则详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowL7RuleRequest request
-        :return: ShowL7RuleResponse
+        :param request: Request instance for ShowL7Rule
+        :type request: :class:`huaweicloudsdkelb.v3.ShowL7RuleRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.ShowL7RuleResponse`
         """
         return self.show_l7_rule_with_http_info(request)
 
     def show_l7_rule_with_http_info(self, request):
-        """查询转发规则详情
-
-        查询七层转发规则详情。
-
-        :param ShowL7RuleRequest request
-        :return: ShowL7RuleResponse
-        """
-
         all_params = ['l7policy_id', 'l7rule_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3305,26 +3107,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_listener(self, request):
         """查询监听器详情
 
         监听器详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowListenerRequest request
-        :return: ShowListenerResponse
+        :param request: Request instance for ShowListener
+        :type request: :class:`huaweicloudsdkelb.v3.ShowListenerRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.ShowListenerResponse`
         """
         return self.show_listener_with_http_info(request)
 
     def show_listener_with_http_info(self, request):
-        """查询监听器详情
-
-        监听器详情。
-
-        :param ShowListenerRequest request
-        :return: ShowListenerResponse
-        """
-
         all_params = ['listener_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3368,26 +3165,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_load_balancer(self, request):
         """查询负载均衡器详情
 
         查询负载均衡器详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowLoadBalancerRequest request
-        :return: ShowLoadBalancerResponse
+        :param request: Request instance for ShowLoadBalancer
+        :type request: :class:`huaweicloudsdkelb.v3.ShowLoadBalancerRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.ShowLoadBalancerResponse`
         """
         return self.show_load_balancer_with_http_info(request)
 
     def show_load_balancer_with_http_info(self, request):
-        """查询负载均衡器详情
-
-        查询负载均衡器详情。
-
-        :param ShowLoadBalancerRequest request
-        :return: ShowLoadBalancerResponse
-        """
-
         all_params = ['loadbalancer_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3431,26 +3223,23 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_load_balancer_status(self, request):
         """查询负载均衡器状态树
 
-        查询负载均衡器状态树，包括负载均衡器及其关联的子资源的状态信息。  注意：该接口中的operating_status不一定与对应资源的operating_status相同。如：当Member的admin_state_up=false且operating_status=OFFLINE时，该接口返回member的operating_status=DISABLE。
+        查询负载均衡器状态树，包括负载均衡器及其关联的子资源的状态信息。
+        
+        注意：该接口中的operating_status不一定与对应资源的operating_status相同。如：当Member的admin_state_up&#x3D;false且operating_status&#x3D;OFFLINE时，该接口返回member的operating_status&#x3D;DISABLE。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowLoadBalancerStatusRequest request
-        :return: ShowLoadBalancerStatusResponse
+        :param request: Request instance for ShowLoadBalancerStatus
+        :type request: :class:`huaweicloudsdkelb.v3.ShowLoadBalancerStatusRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.ShowLoadBalancerStatusResponse`
         """
         return self.show_load_balancer_status_with_http_info(request)
 
     def show_load_balancer_status_with_http_info(self, request):
-        """查询负载均衡器状态树
-
-        查询负载均衡器状态树，包括负载均衡器及其关联的子资源的状态信息。  注意：该接口中的operating_status不一定与对应资源的operating_status相同。如：当Member的admin_state_up=false且operating_status=OFFLINE时，该接口返回member的operating_status=DISABLE。
-
-        :param ShowLoadBalancerStatusRequest request
-        :return: ShowLoadBalancerStatusResponse
-        """
-
         all_params = ['loadbalancer_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3494,26 +3283,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_logtank(self, request):
         """云日志配置详情
 
         云日志详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowLogtankRequest request
-        :return: ShowLogtankResponse
+        :param request: Request instance for ShowLogtank
+        :type request: :class:`huaweicloudsdkelb.v3.ShowLogtankRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.ShowLogtankResponse`
         """
         return self.show_logtank_with_http_info(request)
 
     def show_logtank_with_http_info(self, request):
-        """云日志配置详情
-
-        云日志详情。
-
-        :param ShowLogtankRequest request
-        :return: ShowLogtankResponse
-        """
-
         all_params = ['logtank_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3557,26 +3341,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_member(self, request):
         """后端服务器详情
 
         后端服务器详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowMemberRequest request
-        :return: ShowMemberResponse
+        :param request: Request instance for ShowMember
+        :type request: :class:`huaweicloudsdkelb.v3.ShowMemberRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.ShowMemberResponse`
         """
         return self.show_member_with_http_info(request)
 
     def show_member_with_http_info(self, request):
-        """后端服务器详情
-
-        后端服务器详情。
-
-        :param ShowMemberRequest request
-        :return: ShowMemberResponse
-        """
-
         all_params = ['pool_id', 'member_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3622,26 +3401,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_pool(self, request):
         """查询后端服务器组详情
 
         后端服务器组详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowPoolRequest request
-        :return: ShowPoolResponse
+        :param request: Request instance for ShowPool
+        :type request: :class:`huaweicloudsdkelb.v3.ShowPoolRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.ShowPoolResponse`
         """
         return self.show_pool_with_http_info(request)
 
     def show_pool_with_http_info(self, request):
-        """查询后端服务器组详情
-
-        后端服务器组详情。
-
-        :param ShowPoolRequest request
-        :return: ShowPoolResponse
-        """
-
         all_params = ['pool_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3685,26 +3459,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_quota(self, request):
         """查询配额
 
         查询指定项目中负载均衡相关的各类资源的当前配额。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowQuotaRequest request
-        :return: ShowQuotaResponse
+        :param request: Request instance for ShowQuota
+        :type request: :class:`huaweicloudsdkelb.v3.ShowQuotaRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.ShowQuotaResponse`
         """
         return self.show_quota_with_http_info(request)
 
     def show_quota_with_http_info(self, request):
-        """查询配额
-
-        查询指定项目中负载均衡相关的各类资源的当前配额。
-
-        :param ShowQuotaRequest request
-        :return: ShowQuotaResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3746,26 +3515,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_security_policy(self, request):
         """查询自定义安全策略详情
 
         查询自定义安全策略详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowSecurityPolicyRequest request
-        :return: ShowSecurityPolicyResponse
+        :param request: Request instance for ShowSecurityPolicy
+        :type request: :class:`huaweicloudsdkelb.v3.ShowSecurityPolicyRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.ShowSecurityPolicyResponse`
         """
         return self.show_security_policy_with_http_info(request)
 
     def show_security_policy_with_http_info(self, request):
-        """查询自定义安全策略详情
-
-        查询自定义安全策略详情。
-
-        :param ShowSecurityPolicyRequest request
-        :return: ShowSecurityPolicyResponse
-        """
-
         all_params = ['security_policy_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3809,26 +3573,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_certificate(self, request):
         """更新证书
 
         更新证书。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateCertificateRequest request
-        :return: UpdateCertificateResponse
+        :param request: Request instance for UpdateCertificate
+        :type request: :class:`huaweicloudsdkelb.v3.UpdateCertificateRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.UpdateCertificateResponse`
         """
         return self.update_certificate_with_http_info(request)
 
     def update_certificate_with_http_info(self, request):
-        """更新证书
-
-        更新证书。
-
-        :param UpdateCertificateRequest request
-        :return: UpdateCertificateResponse
-        """
-
         all_params = ['certificate_id', 'update_certificate_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3874,26 +3633,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_health_monitor(self, request):
         """更新健康检查
 
         更新健康检查。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateHealthMonitorRequest request
-        :return: UpdateHealthMonitorResponse
+        :param request: Request instance for UpdateHealthMonitor
+        :type request: :class:`huaweicloudsdkelb.v3.UpdateHealthMonitorRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.UpdateHealthMonitorResponse`
         """
         return self.update_health_monitor_with_http_info(request)
 
     def update_health_monitor_with_http_info(self, request):
-        """更新健康检查
-
-        更新健康检查。
-
-        :param UpdateHealthMonitorRequest request
-        :return: UpdateHealthMonitorResponse
-        """
-
         all_params = ['healthmonitor_id', 'update_health_monitor_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3939,26 +3693,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_l7_policy(self, request):
         """更新转发策略
 
         更新七层转发策略。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateL7PolicyRequest request
-        :return: UpdateL7PolicyResponse
+        :param request: Request instance for UpdateL7Policy
+        :type request: :class:`huaweicloudsdkelb.v3.UpdateL7PolicyRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.UpdateL7PolicyResponse`
         """
         return self.update_l7_policy_with_http_info(request)
 
     def update_l7_policy_with_http_info(self, request):
-        """更新转发策略
-
-        更新七层转发策略。
-
-        :param UpdateL7PolicyRequest request
-        :return: UpdateL7PolicyResponse
-        """
-
         all_params = ['l7policy_id', 'update_l7_policy_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4004,26 +3753,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_l7_rule(self, request):
         """更新转发规则
 
         更新七层转发规则。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateL7RuleRequest request
-        :return: UpdateL7RuleResponse
+        :param request: Request instance for UpdateL7Rule
+        :type request: :class:`huaweicloudsdkelb.v3.UpdateL7RuleRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.UpdateL7RuleResponse`
         """
         return self.update_l7_rule_with_http_info(request)
 
     def update_l7_rule_with_http_info(self, request):
-        """更新转发规则
-
-        更新七层转发规则。
-
-        :param UpdateL7RuleRequest request
-        :return: UpdateL7RuleResponse
-        """
-
         all_params = ['l7policy_id', 'l7rule_id', 'update_l7_rule_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4071,26 +3815,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_listener(self, request):
         """更新监听器
 
         更新监听器。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateListenerRequest request
-        :return: UpdateListenerResponse
+        :param request: Request instance for UpdateListener
+        :type request: :class:`huaweicloudsdkelb.v3.UpdateListenerRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.UpdateListenerResponse`
         """
         return self.update_listener_with_http_info(request)
 
     def update_listener_with_http_info(self, request):
-        """更新监听器
-
-        更新监听器。
-
-        :param UpdateListenerRequest request
-        :return: UpdateListenerResponse
-        """
-
         all_params = ['listener_id', 'update_listener_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4136,26 +3875,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_load_balancer(self, request):
         """更新负载均衡器
 
         更新负载均衡器。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateLoadBalancerRequest request
-        :return: UpdateLoadBalancerResponse
+        :param request: Request instance for UpdateLoadBalancer
+        :type request: :class:`huaweicloudsdkelb.v3.UpdateLoadBalancerRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.UpdateLoadBalancerResponse`
         """
         return self.update_load_balancer_with_http_info(request)
 
     def update_load_balancer_with_http_info(self, request):
-        """更新负载均衡器
-
-        更新负载均衡器。
-
-        :param UpdateLoadBalancerRequest request
-        :return: UpdateLoadBalancerResponse
-        """
-
         all_params = ['loadbalancer_id', 'update_load_balancer_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4201,26 +3935,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_logtank(self, request):
         """更新云日志
 
         更新云日志
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateLogtankRequest request
-        :return: UpdateLogtankResponse
+        :param request: Request instance for UpdateLogtank
+        :type request: :class:`huaweicloudsdkelb.v3.UpdateLogtankRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.UpdateLogtankResponse`
         """
         return self.update_logtank_with_http_info(request)
 
     def update_logtank_with_http_info(self, request):
-        """更新云日志
-
-        更新云日志
-
-        :param UpdateLogtankRequest request
-        :return: UpdateLogtankResponse
-        """
-
         all_params = ['logtank_id', 'logtank']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4266,26 +3995,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_member(self, request):
         """更新后端服务器
 
         更新后端服务器。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateMemberRequest request
-        :return: UpdateMemberResponse
+        :param request: Request instance for UpdateMember
+        :type request: :class:`huaweicloudsdkelb.v3.UpdateMemberRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.UpdateMemberResponse`
         """
         return self.update_member_with_http_info(request)
 
     def update_member_with_http_info(self, request):
-        """更新后端服务器
-
-        更新后端服务器。
-
-        :param UpdateMemberRequest request
-        :return: UpdateMemberResponse
-        """
-
         all_params = ['member_id', 'pool_id', 'update_member_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4333,26 +4057,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_pool(self, request):
         """更新后端服务器组
 
         更新后端服务器组。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdatePoolRequest request
-        :return: UpdatePoolResponse
+        :param request: Request instance for UpdatePool
+        :type request: :class:`huaweicloudsdkelb.v3.UpdatePoolRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.UpdatePoolResponse`
         """
         return self.update_pool_with_http_info(request)
 
     def update_pool_with_http_info(self, request):
-        """更新后端服务器组
-
-        更新后端服务器组。
-
-        :param UpdatePoolRequest request
-        :return: UpdatePoolResponse
-        """
-
         all_params = ['pool_id', 'update_pool_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4398,26 +4117,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_security_policy(self, request):
         """更新自定义安全策略
 
         更新自定义安全策略。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateSecurityPolicyRequest request
-        :return: UpdateSecurityPolicyResponse
+        :param request: Request instance for UpdateSecurityPolicy
+        :type request: :class:`huaweicloudsdkelb.v3.UpdateSecurityPolicyRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.UpdateSecurityPolicyResponse`
         """
         return self.update_security_policy_with_http_info(request)
 
     def update_security_policy_with_http_info(self, request):
-        """更新自定义安全策略
-
-        更新自定义安全策略。
-
-        :param UpdateSecurityPolicyRequest request
-        :return: UpdateSecurityPolicyResponse
-        """
-
         all_params = ['security_policy_id', 'update_security_policy_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4463,26 +4177,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_api_versions(self, request):
         """查询API版本列表信息
 
         返回ELB当前所有可用的API版本。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListApiVersionsRequest request
-        :return: ListApiVersionsResponse
+        :param request: Request instance for ListApiVersions
+        :type request: :class:`huaweicloudsdkelb.v3.ListApiVersionsRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.ListApiVersionsResponse`
         """
         return self.list_api_versions_with_http_info(request)
 
     def list_api_versions_with_http_info(self, request):
-        """查询API版本列表信息
-
-        返回ELB当前所有可用的API版本。
-
-        :param ListApiVersionsRequest request
-        :return: ListApiVersionsResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4524,26 +4233,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_delete_ip_list(self, request):
         """删除IP地址组的IP列表项
 
         批量删除IP地址组的IP列表项。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchDeleteIpListRequest request
-        :return: BatchDeleteIpListResponse
+        :param request: Request instance for BatchDeleteIpList
+        :type request: :class:`huaweicloudsdkelb.v3.BatchDeleteIpListRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.BatchDeleteIpListResponse`
         """
         return self.batch_delete_ip_list_with_http_info(request)
 
     def batch_delete_ip_list_with_http_info(self, request):
-        """删除IP地址组的IP列表项
-
-        批量删除IP地址组的IP列表项。
-
-        :param BatchDeleteIpListRequest request
-        :return: BatchDeleteIpListResponse
-        """
-
         all_params = ['ipgroup_id', 'batch_delete_ip_group_ip_list_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4589,26 +4293,25 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def count_preoccupy_ip_num(self, request):
         """计算预占IP数
 
-        计算以下几种场景的预占用IP数量： - 计算创建LB的第一个七层监听器后总占用IP数量：传入loadbalancer_id、l7_flavor_id为空、ip_target_enable不传或为false。 - 计算LB规格变更或开启跨VPC后总占用IP数量：传入参数loadbalancer_id，及l7_flavor_id不为空或ip_target_enable为true。 - 计算创建LB所需IP数量：传入参数availability_zone_id，及可选参数l7_flavor_id、ip_target_enable、ip_version，不能传loadbalancer_id。 > 查询出的预占IP数大于等于最终实际占用的IP数。
+        计算以下几种场景的预占用IP数量：
+        - 计算创建LB的第一个七层监听器后总占用IP数量：传入loadbalancer_id、l7_flavor_id为空、ip_target_enable不传或为false。
+        - 计算LB规格变更或开启跨VPC后总占用IP数量：传入参数loadbalancer_id，及l7_flavor_id不为空或ip_target_enable为true。
+        - 计算创建LB所需IP数量：传入参数availability_zone_id，及可选参数l7_flavor_id、ip_target_enable、ip_version，不能传loadbalancer_id。
+        &gt; 查询出的预占IP数大于等于最终实际占用的IP数。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CountPreoccupyIpNumRequest request
-        :return: CountPreoccupyIpNumResponse
+        :param request: Request instance for CountPreoccupyIpNum
+        :type request: :class:`huaweicloudsdkelb.v3.CountPreoccupyIpNumRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.CountPreoccupyIpNumResponse`
         """
         return self.count_preoccupy_ip_num_with_http_info(request)
 
     def count_preoccupy_ip_num_with_http_info(self, request):
-        """计算预占IP数
-
-        计算以下几种场景的预占用IP数量： - 计算创建LB的第一个七层监听器后总占用IP数量：传入loadbalancer_id、l7_flavor_id为空、ip_target_enable不传或为false。 - 计算LB规格变更或开启跨VPC后总占用IP数量：传入参数loadbalancer_id，及l7_flavor_id不为空或ip_target_enable为true。 - 计算创建LB所需IP数量：传入参数availability_zone_id，及可选参数l7_flavor_id、ip_target_enable、ip_version，不能传loadbalancer_id。 > 查询出的预占IP数大于等于最终实际占用的IP数。
-
-        :param CountPreoccupyIpNumRequest request
-        :return: CountPreoccupyIpNumResponse
-        """
-
         all_params = ['l7_flavor_id', 'ip_target_enable', 'ip_version', 'loadbalancer_id', 'availability_zone_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4661,26 +4364,22 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_ip_group(self, request):
         """创建IP地址组
 
-        创建IP地址组。输入的ip可为ip地址或者CIDR子网，支持IPV4和IPV6。需要注意，0.0.0.0与0.0.0.0/32视为重复，0:0:0:0:0:0:0:1与::1与::1/128视为重复，会只保留其中一个写入。 [不支持IPv6，请勿传入IPv6地址。](tag:dt,dt_test)
+        创建IP地址组。输入的ip可为ip地址或者CIDR子网，支持IPV4和IPV6。需要注意，0.0.0.0与0.0.0.0/32视为重复，0:0:0:0:0:0:0:1与::1与::1/128视为重复，会只保留其中一个写入。
+        [不支持IPv6，请勿传入IPv6地址。](tag:dt,dt_test)
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateIpGroupRequest request
-        :return: CreateIpGroupResponse
+        :param request: Request instance for CreateIpGroup
+        :type request: :class:`huaweicloudsdkelb.v3.CreateIpGroupRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.CreateIpGroupResponse`
         """
         return self.create_ip_group_with_http_info(request)
 
     def create_ip_group_with_http_info(self, request):
-        """创建IP地址组
-
-        创建IP地址组。输入的ip可为ip地址或者CIDR子网，支持IPV4和IPV6。需要注意，0.0.0.0与0.0.0.0/32视为重复，0:0:0:0:0:0:0:1与::1与::1/128视为重复，会只保留其中一个写入。 [不支持IPv6，请勿传入IPv6地址。](tag:dt,dt_test)
-
-        :param CreateIpGroupRequest request
-        :return: CreateIpGroupResponse
-        """
-
         all_params = ['create_ip_group_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4724,26 +4423,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_ip_group(self, request):
         """删除IP地址组
 
         删除ip地址组。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteIpGroupRequest request
-        :return: DeleteIpGroupResponse
+        :param request: Request instance for DeleteIpGroup
+        :type request: :class:`huaweicloudsdkelb.v3.DeleteIpGroupRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.DeleteIpGroupResponse`
         """
         return self.delete_ip_group_with_http_info(request)
 
     def delete_ip_group_with_http_info(self, request):
-        """删除IP地址组
-
-        删除ip地址组。
-
-        :param DeleteIpGroupRequest request
-        :return: DeleteIpGroupResponse
-        """
-
         all_params = ['ipgroup_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4787,26 +4481,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_ip_groups(self, request):
         """查询IP地址组列表
 
         查询IP地址组列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListIpGroupsRequest request
-        :return: ListIpGroupsResponse
+        :param request: Request instance for ListIpGroups
+        :type request: :class:`huaweicloudsdkelb.v3.ListIpGroupsRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.ListIpGroupsResponse`
         """
         return self.list_ip_groups_with_http_info(request)
 
     def list_ip_groups_with_http_info(self, request):
-        """查询IP地址组列表
-
-        查询IP地址组列表。
-
-        :param ListIpGroupsRequest request
-        :return: ListIpGroupsResponse
-        """
-
         all_params = ['marker', 'limit', 'page_reverse', 'id', 'name', 'description', 'ip_list']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4866,26 +4555,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_ip_group(self, request):
         """查询IP地址组详情
 
         获取IP地址组详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowIpGroupRequest request
-        :return: ShowIpGroupResponse
+        :param request: Request instance for ShowIpGroup
+        :type request: :class:`huaweicloudsdkelb.v3.ShowIpGroupRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.ShowIpGroupResponse`
         """
         return self.show_ip_group_with_http_info(request)
 
     def show_ip_group_with_http_info(self, request):
-        """查询IP地址组详情
-
-        获取IP地址组详情。
-
-        :param ShowIpGroupRequest request
-        :return: ShowIpGroupResponse
-        """
-
         all_params = ['ipgroup_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4929,26 +4613,22 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_ip_group(self, request):
         """更新IP地址组
 
-        更新IP地址组，只支持全量更新IP。即IP地址组中的ip_list将被全量覆盖，不在请求参数中的IP地址将被移除。输入的ip可为ip地址或者CIDR子网，支持IPV4和IPV6。需要注意，0.0.0.0与0.0.0.0/32视为重复，0:0:0:0:0:0:0:1与::1与::1/128视为重复，会只保留其中一个写入。 [不支持IPv6，请勿传入IPv6地址。](tag:dt,dt_test)
+        更新IP地址组，只支持全量更新IP。即IP地址组中的ip_list将被全量覆盖，不在请求参数中的IP地址将被移除。输入的ip可为ip地址或者CIDR子网，支持IPV4和IPV6。需要注意，0.0.0.0与0.0.0.0/32视为重复，0:0:0:0:0:0:0:1与::1与::1/128视为重复，会只保留其中一个写入。
+        [不支持IPv6，请勿传入IPv6地址。](tag:dt,dt_test)
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateIpGroupRequest request
-        :return: UpdateIpGroupResponse
+        :param request: Request instance for UpdateIpGroup
+        :type request: :class:`huaweicloudsdkelb.v3.UpdateIpGroupRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.UpdateIpGroupResponse`
         """
         return self.update_ip_group_with_http_info(request)
 
     def update_ip_group_with_http_info(self, request):
-        """更新IP地址组
-
-        更新IP地址组，只支持全量更新IP。即IP地址组中的ip_list将被全量覆盖，不在请求参数中的IP地址将被移除。输入的ip可为ip地址或者CIDR子网，支持IPV4和IPV6。需要注意，0.0.0.0与0.0.0.0/32视为重复，0:0:0:0:0:0:0:1与::1与::1/128视为重复，会只保留其中一个写入。 [不支持IPv6，请勿传入IPv6地址。](tag:dt,dt_test)
-
-        :param UpdateIpGroupRequest request
-        :return: UpdateIpGroupResponse
-        """
-
         all_params = ['ipgroup_id', 'update_ip_group_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4994,26 +4674,21 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_ip_list(self, request):
         """更新IP地址组的IP列表项
 
         更新IP地址组的IP列表信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateIpListRequest request
-        :return: UpdateIpListResponse
+        :param request: Request instance for UpdateIpList
+        :type request: :class:`huaweicloudsdkelb.v3.UpdateIpListRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.UpdateIpListResponse`
         """
         return self.update_ip_list_with_http_info(request)
 
     def update_ip_list_with_http_info(self, request):
-        """更新IP地址组的IP列表项
-
-        更新IP地址组的IP列表信息。
-
-        :param UpdateIpListRequest request
-        :return: UpdateIpListResponse
-        """
-
         all_params = ['ipgroup_id', 'update_ip_list_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -5058,7 +4733,6 @@ class ElbClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

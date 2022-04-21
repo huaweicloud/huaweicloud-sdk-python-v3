@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchDisassociateThrottlingPolicyV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class BatchDisassociateThrottlingPolicyV2Request:
     }
 
     def __init__(self, instance_id=None, action=None, body=None):
-        """BatchDisassociateThrottlingPolicyV2Request - a model defined in huaweicloud sdk"""
+        """BatchDisassociateThrottlingPolicyV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param action: 必须为delete
+        :type action: str
+        :param body: Body of the BatchDisassociateThrottlingPolicyV2Request
+        :type body: :class:`huaweicloudsdkapig.v2.ThrottleBindingBatchDelete`
+        """
         
         
 
@@ -66,7 +75,7 @@ class BatchDisassociateThrottlingPolicyV2Request:
         实例ID
 
         :param instance_id: The instance_id of this BatchDisassociateThrottlingPolicyV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -88,7 +97,7 @@ class BatchDisassociateThrottlingPolicyV2Request:
         必须为delete
 
         :param action: The action of this BatchDisassociateThrottlingPolicyV2Request.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -98,7 +107,7 @@ class BatchDisassociateThrottlingPolicyV2Request:
 
 
         :return: The body of this BatchDisassociateThrottlingPolicyV2Request.
-        :rtype: ThrottleBindingBatchDelete
+        :rtype: :class:`huaweicloudsdkapig.v2.ThrottleBindingBatchDelete`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class BatchDisassociateThrottlingPolicyV2Request:
 
 
         :param body: The body of this BatchDisassociateThrottlingPolicyV2Request.
-        :type: ThrottleBindingBatchDelete
+        :type body: :class:`huaweicloudsdkapig.v2.ThrottleBindingBatchDelete`
         """
         self._body = body
 

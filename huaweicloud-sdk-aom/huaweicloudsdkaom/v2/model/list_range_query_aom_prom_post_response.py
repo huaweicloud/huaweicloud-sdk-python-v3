@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRangeQueryAomPromPostResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListRangeQueryAomPromPostResponse(SdkResponse):
     }
 
     def __init__(self, status=None, data=None):
-        """ListRangeQueryAomPromPostResponse - a model defined in huaweicloud sdk"""
+        """ListRangeQueryAomPromPostResponse
+
+        The model defined in huaweicloud sdk
+
+        :param status: 响应状态。
+        :type status: str
+        :param data: 
+        :type data: :class:`huaweicloudsdkaom.v2.Data`
+        """
         
         super(ListRangeQueryAomPromPostResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListRangeQueryAomPromPostResponse(SdkResponse):
         响应状态。
 
         :param status: The status of this ListRangeQueryAomPromPostResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -73,7 +80,7 @@ class ListRangeQueryAomPromPostResponse(SdkResponse):
 
 
         :return: The data of this ListRangeQueryAomPromPostResponse.
-        :rtype: Data
+        :rtype: :class:`huaweicloudsdkaom.v2.Data`
         """
         return self._data
 
@@ -83,7 +90,7 @@ class ListRangeQueryAomPromPostResponse(SdkResponse):
 
 
         :param data: The data of this ListRangeQueryAomPromPostResponse.
-        :type: Data
+        :type data: :class:`huaweicloudsdkaom.v2.Data`
         """
         self._data = data
 

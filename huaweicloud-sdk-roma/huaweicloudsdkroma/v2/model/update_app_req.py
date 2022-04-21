@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateAppReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateAppReq:
     }
 
     def __init__(self, name=None, remark=None, favorite=None):
-        """UpdateAppReq - a model defined in huaweicloud sdk"""
+        """UpdateAppReq
+
+        The model defined in huaweicloud sdk
+
+        :param name: 应用名称 - 字符集：支持中文、英文字母、数字、中划线、下划线、点、空格和中英文圆括号 - 约束：实例下唯一
+        :type name: str
+        :param remark: 应用描述
+        :type remark: str
+        :param favorite: 是否收藏应用，收藏的应用会在列表里优先显示
+        :type favorite: bool
+        """
         
         
 
@@ -68,7 +77,7 @@ class UpdateAppReq:
         应用名称 - 字符集：支持中文、英文字母、数字、中划线、下划线、点、空格和中英文圆括号 - 约束：实例下唯一
 
         :param name: The name of this UpdateAppReq.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -90,7 +99,7 @@ class UpdateAppReq:
         应用描述
 
         :param remark: The remark of this UpdateAppReq.
-        :type: str
+        :type remark: str
         """
         self._remark = remark
 
@@ -112,7 +121,7 @@ class UpdateAppReq:
         是否收藏应用，收藏的应用会在列表里优先显示
 
         :param favorite: The favorite of this UpdateAppReq.
-        :type: bool
+        :type favorite: bool
         """
         self._favorite = favorite
 

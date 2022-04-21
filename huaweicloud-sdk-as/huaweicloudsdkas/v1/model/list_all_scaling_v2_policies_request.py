@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAllScalingV2PoliciesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class ListAllScalingV2PoliciesRequest:
     }
 
     def __init__(self, scaling_resource_id=None, scaling_resource_type=None, scaling_policy_name=None, scaling_policy_type=None, scaling_policy_id=None, start_number=None, limit=None, sort_by=None, order=None, enterprise_project_id=None, alarm_id=None):
-        """ListAllScalingV2PoliciesRequest - a model defined in huaweicloud sdk"""
+        """ListAllScalingV2PoliciesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param scaling_resource_id: 伸缩组ID。
+        :type scaling_resource_id: str
+        :param scaling_resource_type: 伸缩资源类型：伸缩组：SCALING_GROUP；带宽：BANDWIDTH
+        :type scaling_resource_type: str
+        :param scaling_policy_name: 伸缩策略名称。
+        :type scaling_policy_name: str
+        :param scaling_policy_type: 策略类型。  告警策略：ALARM ,定时策略：SCHEDULED, 周期策略：RECURRENCE
+        :type scaling_policy_type: str
+        :param scaling_policy_id: 伸缩策略ID。
+        :type scaling_policy_id: str
+        :param start_number: 查询的起始行号，默认为0。
+        :type start_number: int
+        :param limit: 查询记录数，默认20，最大100。
+        :type limit: int
+        :param sort_by: 排序方法POLICY_NAME：根据策略名称排序;TRIGGER_CONDITION：根据触发条件排序，如升序下，告警策略最先，其余根据最近一次触发时间升序排列;CREATE_TIME：根据策略的创建时间排序。
+        :type sort_by: str
+        :param order: 排序顺序ASC：升序；DESC：降序
+        :type order: str
+        :param enterprise_project_id: 企业项目ID。  当scaling_resource_type指定为：SCALING_GROUP 传入all_granted_eps时：  华为云帐号和拥有全局权限的IAM用户可以查询该用户所有的伸缩组对应的伸缩策略。 授予部分企业项目的IAM用户，可以查询该用户所有授权企业项目下的伸缩组对应的伸缩策略。 说明： 如果授予部分企业项目的IAM用户拥有超过100个企业项目，则只能返回有权限的前100个企业项目对应伸缩组的伸缩策略列表。  当scaling_resource_type指定为：BANDWIDTH 传入all_granted_eps时:  华为云帐号和拥有全局权限的IAM用户可以查询该用户所有带宽对应的伸缩策略。 授予部分企业项目的IAM用户，可以查询该用户所有授权企业项目下的带宽对应的伸缩策略，带宽在all_granted_eps场景下返回策略请参见[《EIP接口参口》查询带宽列表](https://support.huaweicloud.com/api-eip/eip_apiBandwidth_0002.html)。 不指定scaling_resource_type 当传入all_granted_eps时：  华为云帐号和拥有全局权限的IAM用户可以查询该用户所有的伸缩组和带宽对应的伸缩策略。 授予部分企业项目的IAM用户，可以查询该用户所有授权企业项目下的伸缩组和带宽对应的伸缩策略。 说明： 如果授予部分企业项目的IAM用户拥有超过100个企业项目，则只能返回有权限的前100个企业项目对应伸缩组的伸缩策略列表；带宽在all_granted_eps场景下返回策略请参见[《EIP接口参口》查询带宽列表](https://support.huaweicloud.com/api-eip/eip_apiBandwidth_0002.html)。
+        :type enterprise_project_id: str
+        :param alarm_id: 告警ID，即告警规则的ID。
+        :type alarm_id: str
+        """
         
         
 
@@ -108,7 +133,7 @@ class ListAllScalingV2PoliciesRequest:
         伸缩组ID。
 
         :param scaling_resource_id: The scaling_resource_id of this ListAllScalingV2PoliciesRequest.
-        :type: str
+        :type scaling_resource_id: str
         """
         self._scaling_resource_id = scaling_resource_id
 
@@ -130,7 +155,7 @@ class ListAllScalingV2PoliciesRequest:
         伸缩资源类型：伸缩组：SCALING_GROUP；带宽：BANDWIDTH
 
         :param scaling_resource_type: The scaling_resource_type of this ListAllScalingV2PoliciesRequest.
-        :type: str
+        :type scaling_resource_type: str
         """
         self._scaling_resource_type = scaling_resource_type
 
@@ -152,7 +177,7 @@ class ListAllScalingV2PoliciesRequest:
         伸缩策略名称。
 
         :param scaling_policy_name: The scaling_policy_name of this ListAllScalingV2PoliciesRequest.
-        :type: str
+        :type scaling_policy_name: str
         """
         self._scaling_policy_name = scaling_policy_name
 
@@ -174,7 +199,7 @@ class ListAllScalingV2PoliciesRequest:
         策略类型。  告警策略：ALARM ,定时策略：SCHEDULED, 周期策略：RECURRENCE
 
         :param scaling_policy_type: The scaling_policy_type of this ListAllScalingV2PoliciesRequest.
-        :type: str
+        :type scaling_policy_type: str
         """
         self._scaling_policy_type = scaling_policy_type
 
@@ -196,7 +221,7 @@ class ListAllScalingV2PoliciesRequest:
         伸缩策略ID。
 
         :param scaling_policy_id: The scaling_policy_id of this ListAllScalingV2PoliciesRequest.
-        :type: str
+        :type scaling_policy_id: str
         """
         self._scaling_policy_id = scaling_policy_id
 
@@ -218,7 +243,7 @@ class ListAllScalingV2PoliciesRequest:
         查询的起始行号，默认为0。
 
         :param start_number: The start_number of this ListAllScalingV2PoliciesRequest.
-        :type: int
+        :type start_number: int
         """
         self._start_number = start_number
 
@@ -240,7 +265,7 @@ class ListAllScalingV2PoliciesRequest:
         查询记录数，默认20，最大100。
 
         :param limit: The limit of this ListAllScalingV2PoliciesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -262,7 +287,7 @@ class ListAllScalingV2PoliciesRequest:
         排序方法POLICY_NAME：根据策略名称排序;TRIGGER_CONDITION：根据触发条件排序，如升序下，告警策略最先，其余根据最近一次触发时间升序排列;CREATE_TIME：根据策略的创建时间排序。
 
         :param sort_by: The sort_by of this ListAllScalingV2PoliciesRequest.
-        :type: str
+        :type sort_by: str
         """
         self._sort_by = sort_by
 
@@ -284,7 +309,7 @@ class ListAllScalingV2PoliciesRequest:
         排序顺序ASC：升序；DESC：降序
 
         :param order: The order of this ListAllScalingV2PoliciesRequest.
-        :type: str
+        :type order: str
         """
         self._order = order
 
@@ -306,7 +331,7 @@ class ListAllScalingV2PoliciesRequest:
         企业项目ID。  当scaling_resource_type指定为：SCALING_GROUP 传入all_granted_eps时：  华为云帐号和拥有全局权限的IAM用户可以查询该用户所有的伸缩组对应的伸缩策略。 授予部分企业项目的IAM用户，可以查询该用户所有授权企业项目下的伸缩组对应的伸缩策略。 说明： 如果授予部分企业项目的IAM用户拥有超过100个企业项目，则只能返回有权限的前100个企业项目对应伸缩组的伸缩策略列表。  当scaling_resource_type指定为：BANDWIDTH 传入all_granted_eps时:  华为云帐号和拥有全局权限的IAM用户可以查询该用户所有带宽对应的伸缩策略。 授予部分企业项目的IAM用户，可以查询该用户所有授权企业项目下的带宽对应的伸缩策略，带宽在all_granted_eps场景下返回策略请参见[《EIP接口参口》查询带宽列表](https://support.huaweicloud.com/api-eip/eip_apiBandwidth_0002.html)。 不指定scaling_resource_type 当传入all_granted_eps时：  华为云帐号和拥有全局权限的IAM用户可以查询该用户所有的伸缩组和带宽对应的伸缩策略。 授予部分企业项目的IAM用户，可以查询该用户所有授权企业项目下的伸缩组和带宽对应的伸缩策略。 说明： 如果授予部分企业项目的IAM用户拥有超过100个企业项目，则只能返回有权限的前100个企业项目对应伸缩组的伸缩策略列表；带宽在all_granted_eps场景下返回策略请参见[《EIP接口参口》查询带宽列表](https://support.huaweicloud.com/api-eip/eip_apiBandwidth_0002.html)。
 
         :param enterprise_project_id: The enterprise_project_id of this ListAllScalingV2PoliciesRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -328,7 +353,7 @@ class ListAllScalingV2PoliciesRequest:
         告警ID，即告警规则的ID。
 
         :param alarm_id: The alarm_id of this ListAllScalingV2PoliciesRequest.
-        :type: str
+        :type alarm_id: str
         """
         self._alarm_id = alarm_id
 

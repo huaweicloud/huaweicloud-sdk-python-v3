@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SqlserverUserWithPrivilege:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class SqlserverUserWithPrivilege:
     }
 
     def __init__(self, name=None, readonly=None):
-        """SqlserverUserWithPrivilege - a model defined in huaweicloud sdk"""
+        """SqlserverUserWithPrivilege
+
+        The model defined in huaweicloud sdk
+
+        :param name: 数据库帐号名称。
+        :type name: str
+        :param readonly: 是否为只读权限。
+        :type readonly: bool
+        """
         
         
 
@@ -62,7 +69,7 @@ class SqlserverUserWithPrivilege:
         数据库帐号名称。
 
         :param name: The name of this SqlserverUserWithPrivilege.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -84,7 +91,7 @@ class SqlserverUserWithPrivilege:
         是否为只读权限。
 
         :param readonly: The readonly of this SqlserverUserWithPrivilege.
-        :type: bool
+        :type readonly: bool
         """
         self._readonly = readonly
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BinlogClearPolicyRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BinlogClearPolicyRequestBody:
     }
 
     def __init__(self, binlog_retention_hours=None):
-        """BinlogClearPolicyRequestBody - a model defined in huaweicloud sdk"""
+        """BinlogClearPolicyRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param binlog_retention_hours: 取值范围0-7*24
+        :type binlog_retention_hours: int
+        """
         
         
 
@@ -57,7 +62,7 @@ class BinlogClearPolicyRequestBody:
         取值范围0-7*24
 
         :param binlog_retention_hours: The binlog_retention_hours of this BinlogClearPolicyRequestBody.
-        :type: int
+        :type binlog_retention_hours: int
         """
         self._binlog_retention_hours = binlog_retention_hours
 

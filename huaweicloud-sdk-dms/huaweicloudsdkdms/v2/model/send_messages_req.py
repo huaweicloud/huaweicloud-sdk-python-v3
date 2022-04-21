@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SendMessagesReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class SendMessagesReq:
     }
 
     def __init__(self, return_id=None, messages=None):
-        """SendMessagesReq - a model defined in huaweicloud sdk"""
+        """SendMessagesReq
+
+        The model defined in huaweicloud sdk
+
+        :param return_id: 发送消息成功后，是否返回Message ID，默认为false，设置为true时，返回参数才有Message ID。
+        :type return_id: bool
+        :param messages: 消息列表。
+        :type messages: list[:class:`huaweicloudsdkdms.v2.SendMessageEntity`]
+        """
         
         
 
@@ -62,7 +69,7 @@ class SendMessagesReq:
         发送消息成功后，是否返回Message ID，默认为false，设置为true时，返回参数才有Message ID。
 
         :param return_id: The return_id of this SendMessagesReq.
-        :type: bool
+        :type return_id: bool
         """
         self._return_id = return_id
 
@@ -73,7 +80,7 @@ class SendMessagesReq:
         消息列表。
 
         :return: The messages of this SendMessagesReq.
-        :rtype: list[SendMessageEntity]
+        :rtype: list[:class:`huaweicloudsdkdms.v2.SendMessageEntity`]
         """
         return self._messages
 
@@ -84,7 +91,7 @@ class SendMessagesReq:
         消息列表。
 
         :param messages: The messages of this SendMessagesReq.
-        :type: list[SendMessageEntity]
+        :type messages: list[:class:`huaweicloudsdkdms.v2.SendMessageEntity`]
         """
         self._messages = messages
 

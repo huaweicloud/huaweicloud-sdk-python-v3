@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DebugCaseRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class DebugCaseRequest:
     }
 
     def __init__(self, test_suite_id=None, task_id=None, case_id=None, body=None):
-        """DebugCaseRequest - a model defined in huaweicloud sdk"""
+        """DebugCaseRequest
+
+        The model defined in huaweicloud sdk
+
+        :param test_suite_id: 测试工程id
+        :type test_suite_id: int
+        :param task_id: 任务id
+        :type task_id: int
+        :param case_id: 用例id
+        :type case_id: int
+        :param body: Body of the DebugCaseRequest
+        :type body: :class:`huaweicloudsdkcpts.v1.DebugCaseRequestBody`
+        """
         
         
 
@@ -70,7 +81,7 @@ class DebugCaseRequest:
         测试工程id
 
         :param test_suite_id: The test_suite_id of this DebugCaseRequest.
-        :type: int
+        :type test_suite_id: int
         """
         self._test_suite_id = test_suite_id
 
@@ -92,7 +103,7 @@ class DebugCaseRequest:
         任务id
 
         :param task_id: The task_id of this DebugCaseRequest.
-        :type: int
+        :type task_id: int
         """
         self._task_id = task_id
 
@@ -114,7 +125,7 @@ class DebugCaseRequest:
         用例id
 
         :param case_id: The case_id of this DebugCaseRequest.
-        :type: int
+        :type case_id: int
         """
         self._case_id = case_id
 
@@ -124,7 +135,7 @@ class DebugCaseRequest:
 
 
         :return: The body of this DebugCaseRequest.
-        :rtype: DebugCaseRequestBody
+        :rtype: :class:`huaweicloudsdkcpts.v1.DebugCaseRequestBody`
         """
         return self._body
 
@@ -134,7 +145,7 @@ class DebugCaseRequest:
 
 
         :param body: The body of this DebugCaseRequest.
-        :type: DebugCaseRequestBody
+        :type body: :class:`huaweicloudsdkcpts.v1.DebugCaseRequestBody`
         """
         self._body = body
 

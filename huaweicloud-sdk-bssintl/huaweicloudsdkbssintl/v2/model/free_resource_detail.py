@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FreeResourceDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class FreeResourceDetail:
     }
 
     def __init__(self, free_resource_id=None, free_resource_type_name=None, quota_reuse_cycle=None, quota_reuse_cycle_type=None, usage_type_name=None, start_time=None, end_time=None, amount=None, original_amount=None, measure_id=None):
-        """FreeResourceDetail - a model defined in huaweicloud sdk"""
+        """FreeResourceDetail
+
+        The model defined in huaweicloud sdk
+
+        :param free_resource_id: 资源项ID，一个资源包中会含有多个资源项，一个使用量类型对应一个资源项。
+        :type free_resource_id: str
+        :param free_resource_type_name: 资源项类型名称。
+        :type free_resource_type_name: str
+        :param quota_reuse_cycle: 重置周期，只有quota_reuse_mode为可重置，该字段才有意义。 1：小时2：天3：周4：月5：年
+        :type quota_reuse_cycle: int
+        :param quota_reuse_cycle_type: 重置周期类别，只有quota_reuse_mode为可重置，该字段才有意义。 1：按自然周期重置是指重置周期是按照自然月/年来重置，例如如果周期是月，按自然周期重置，表示每个月的1号重置。 2：按订购周期重置。是指重置周期是按照订购时间来重置，例如如果周期是月，按订购周期重置，15号订购了该套餐，表示每个月的15号重置。
+        :type quota_reuse_cycle_type: int
+        :param usage_type_name: 使用量类型名称。
+        :type usage_type_name: str
+        :param start_time: 开始时间，格式UTC。 如果quota_reuse_mode为可重置，则此时间为当前时间所在的重置周期的开始时间。如果quota_reuse_mode为不可重置，则此时间为订购实例的生效时间。
+        :type start_time: str
+        :param end_time: 结束时间，格式UTC。 如果quota_reuse_mode为可重置，则此时间为当前时间所在的重置周期的结束时间。如果quota_reuse_mode为不可重置，则此时间为订购实例的失效时间。
+        :type end_time: str
+        :param amount: 资源剩余额度，针对可重置资源包，是指当前重置周期内的剩余量。
+        :type amount: float
+        :param original_amount: 资源原始额度，针对可重置资源包，是指每个重置周期内的总量。
+        :type original_amount: float
+        :param measure_id: 度量单位，免费资源套餐额度度量单位。您可以调用查询度量单位列表接口获取。
+        :type measure_id: int
+        """
         
         
 
@@ -103,7 +126,7 @@ class FreeResourceDetail:
         资源项ID，一个资源包中会含有多个资源项，一个使用量类型对应一个资源项。
 
         :param free_resource_id: The free_resource_id of this FreeResourceDetail.
-        :type: str
+        :type free_resource_id: str
         """
         self._free_resource_id = free_resource_id
 
@@ -125,7 +148,7 @@ class FreeResourceDetail:
         资源项类型名称。
 
         :param free_resource_type_name: The free_resource_type_name of this FreeResourceDetail.
-        :type: str
+        :type free_resource_type_name: str
         """
         self._free_resource_type_name = free_resource_type_name
 
@@ -147,7 +170,7 @@ class FreeResourceDetail:
         重置周期，只有quota_reuse_mode为可重置，该字段才有意义。 1：小时2：天3：周4：月5：年
 
         :param quota_reuse_cycle: The quota_reuse_cycle of this FreeResourceDetail.
-        :type: int
+        :type quota_reuse_cycle: int
         """
         self._quota_reuse_cycle = quota_reuse_cycle
 
@@ -169,7 +192,7 @@ class FreeResourceDetail:
         重置周期类别，只有quota_reuse_mode为可重置，该字段才有意义。 1：按自然周期重置是指重置周期是按照自然月/年来重置，例如如果周期是月，按自然周期重置，表示每个月的1号重置。 2：按订购周期重置。是指重置周期是按照订购时间来重置，例如如果周期是月，按订购周期重置，15号订购了该套餐，表示每个月的15号重置。
 
         :param quota_reuse_cycle_type: The quota_reuse_cycle_type of this FreeResourceDetail.
-        :type: int
+        :type quota_reuse_cycle_type: int
         """
         self._quota_reuse_cycle_type = quota_reuse_cycle_type
 
@@ -191,7 +214,7 @@ class FreeResourceDetail:
         使用量类型名称。
 
         :param usage_type_name: The usage_type_name of this FreeResourceDetail.
-        :type: str
+        :type usage_type_name: str
         """
         self._usage_type_name = usage_type_name
 
@@ -213,7 +236,7 @@ class FreeResourceDetail:
         开始时间，格式UTC。 如果quota_reuse_mode为可重置，则此时间为当前时间所在的重置周期的开始时间。如果quota_reuse_mode为不可重置，则此时间为订购实例的生效时间。
 
         :param start_time: The start_time of this FreeResourceDetail.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -235,7 +258,7 @@ class FreeResourceDetail:
         结束时间，格式UTC。 如果quota_reuse_mode为可重置，则此时间为当前时间所在的重置周期的结束时间。如果quota_reuse_mode为不可重置，则此时间为订购实例的失效时间。
 
         :param end_time: The end_time of this FreeResourceDetail.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -257,7 +280,7 @@ class FreeResourceDetail:
         资源剩余额度，针对可重置资源包，是指当前重置周期内的剩余量。
 
         :param amount: The amount of this FreeResourceDetail.
-        :type: float
+        :type amount: float
         """
         self._amount = amount
 
@@ -279,7 +302,7 @@ class FreeResourceDetail:
         资源原始额度，针对可重置资源包，是指每个重置周期内的总量。
 
         :param original_amount: The original_amount of this FreeResourceDetail.
-        :type: float
+        :type original_amount: float
         """
         self._original_amount = original_amount
 
@@ -301,7 +324,7 @@ class FreeResourceDetail:
         度量单位，免费资源套餐额度度量单位。您可以调用查询度量单位列表接口获取。
 
         :param measure_id: The measure_id of this FreeResourceDetail.
-        :type: int
+        :type measure_id: int
         """
         self._measure_id = measure_id
 

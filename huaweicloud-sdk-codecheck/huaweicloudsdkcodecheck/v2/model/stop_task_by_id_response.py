@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StopTaskByIdResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class StopTaskByIdResponse(SdkResponse):
     }
 
     def __init__(self):
-        """StopTaskByIdResponse - a model defined in huaweicloud sdk"""
+        """StopTaskByIdResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(StopTaskByIdResponse, self).__init__()
         self.discriminator = None

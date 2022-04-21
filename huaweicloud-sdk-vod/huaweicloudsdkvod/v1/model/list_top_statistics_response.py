@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTopStatisticsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListTopStatisticsResponse(SdkResponse):
     }
 
     def __init__(self, top_urls=None):
-        """ListTopStatisticsResponse - a model defined in huaweicloud sdk"""
+        """ListTopStatisticsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param top_urls: 
+        :type top_urls: list[:class:`huaweicloudsdkvod.v1.TopUrl`]
+        """
         
         super(ListTopStatisticsResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class ListTopStatisticsResponse(SdkResponse):
 
 
         :return: The top_urls of this ListTopStatisticsResponse.
-        :rtype: list[TopUrl]
+        :rtype: list[:class:`huaweicloudsdkvod.v1.TopUrl`]
         """
         return self._top_urls
 
@@ -56,7 +61,7 @@ class ListTopStatisticsResponse(SdkResponse):
 
 
         :param top_urls: The top_urls of this ListTopStatisticsResponse.
-        :type: list[TopUrl]
+        :type top_urls: list[:class:`huaweicloudsdkvod.v1.TopUrl`]
         """
         self._top_urls = top_urls
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AssociateVmrResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class AssociateVmrResponse(SdkResponse):
     }
 
     def __init__(self):
-        """AssociateVmrResponse - a model defined in huaweicloud sdk"""
+        """AssociateVmrResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(AssociateVmrResponse, self).__init__()
         self.discriminator = None

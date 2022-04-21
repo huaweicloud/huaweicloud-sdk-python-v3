@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OpenGaussShard:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class OpenGaussShard:
     }
 
     def __init__(self, count=None):
-        """OpenGaussShard - a model defined in huaweicloud sdk"""
+        """OpenGaussShard
+
+        The model defined in huaweicloud sdk
+
+        :param count: 新增的DN分片扩容数大小
+        :type count: int
+        """
         
         
 
@@ -57,7 +62,7 @@ class OpenGaussShard:
         新增的DN分片扩容数大小
 
         :param count: The count of this OpenGaussShard.
-        :type: int
+        :type count: int
         """
         self._count = count
 

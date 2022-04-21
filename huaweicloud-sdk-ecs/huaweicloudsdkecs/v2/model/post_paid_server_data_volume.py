@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PostPaidServerDataVolume:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class PostPaidServerDataVolume:
     }
 
     def __init__(self, volumetype=None, size=None, shareable=None, multiattach=None, hwpassthrough=None, extendparam=None, cluster_type=None, cluster_id=None, metadata=None, data_image_id=None):
-        """PostPaidServerDataVolume - a model defined in huaweicloud sdk"""
+        """PostPaidServerDataVolume
+
+        The model defined in huaweicloud sdk
+
+        :param volumetype: 云服务器数据盘对应的磁盘类型，需要与系统所提供的磁盘类型相匹配。  磁盘类型枚举值：  - SATA：普通IO磁盘类型。 - SAS：高IO磁盘类型。 - SSD：超高IO磁盘类型。 - co-p1：高IO (性能优化Ⅰ型) - uh-l1：超高IO (时延优化)磁盘类型。  &gt; 说明： &gt;  &gt; 对于HANA云服务器、HL1型云服务器、HL2型云服务器，需使用co-p1和uh-l1两种磁盘类型。对于其他类型的云服务器，不能使用co-p1和uh-l1两种磁盘类型。
+        :type volumetype: str
+        :param size: 数据盘大小，容量单位为GB，输入大小范围为[10,32768]。
+        :type size: int
+        :param shareable: 是否为共享磁盘。true为共享盘，false为普通云硬盘。  &gt; 说明： &gt;  &gt; 该字段已废弃，请使用multiattach。
+        :type shareable: bool
+        :param multiattach: 创建共享磁盘的信息。  - true：创建的磁盘为共享盘。 - false：创建的磁盘为普通云硬盘。  &gt; 说明： &gt;  &gt; shareable当前为废弃字段，如果确实需要同时使用shareable字段和multiattach字段，此时，请确保两个字段的参数值相同。当不指定该字段时，系统默认创建普通云硬盘。
+        :type multiattach: bool
+        :param hwpassthrough: 数据卷是否使用SCSI锁。  - true表示云硬盘的设备类型为SCSI类型，即允许ECS操作系统直接访问底层存储介质。支持SCSI锁命令。 - false表示云硬盘的设备类型为VBD (虚拟块存储设备 , Virtual Block Device)类型，即为默认类型，VBD只能支持简单的SCSI读写命令。 - 该字段不存在时，云硬盘默认为VBD类型。  &gt; 说明： &gt;  &gt; 此参数为boolean类型，若传入非boolean类型字符，程序将按照【false】方式处理。
+        :type hwpassthrough: bool
+        :param extendparam: 
+        :type extendparam: :class:`huaweicloudsdkecs.v2.PostPaidServerDataVolumeExtendParam`
+        :param cluster_type: 云服务器数据盘对应的磁盘存储类型。 磁盘存储类型枚举值： DSS：专属存储类型
+        :type cluster_type: str
+        :param cluster_id: 云服务器数据盘对应的存储池的ID。
+        :type cluster_id: str
+        :param metadata: 
+        :type metadata: :class:`huaweicloudsdkecs.v2.PostPaidServerDataVolumeMetadata`
+        :param data_image_id: 数据镜像的ID，UUID格式。  如果使用数据盘镜像创建数据盘，则data_image_id为必选参数，且不支持使用metadata。
+        :type data_image_id: str
+        """
         
         
 
@@ -101,7 +124,7 @@ class PostPaidServerDataVolume:
         云服务器数据盘对应的磁盘类型，需要与系统所提供的磁盘类型相匹配。  磁盘类型枚举值：  - SATA：普通IO磁盘类型。 - SAS：高IO磁盘类型。 - SSD：超高IO磁盘类型。 - co-p1：高IO (性能优化Ⅰ型) - uh-l1：超高IO (时延优化)磁盘类型。  > 说明： >  > 对于HANA云服务器、HL1型云服务器、HL2型云服务器，需使用co-p1和uh-l1两种磁盘类型。对于其他类型的云服务器，不能使用co-p1和uh-l1两种磁盘类型。
 
         :param volumetype: The volumetype of this PostPaidServerDataVolume.
-        :type: str
+        :type volumetype: str
         """
         self._volumetype = volumetype
 
@@ -123,7 +146,7 @@ class PostPaidServerDataVolume:
         数据盘大小，容量单位为GB，输入大小范围为[10,32768]。
 
         :param size: The size of this PostPaidServerDataVolume.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -145,7 +168,7 @@ class PostPaidServerDataVolume:
         是否为共享磁盘。true为共享盘，false为普通云硬盘。  > 说明： >  > 该字段已废弃，请使用multiattach。
 
         :param shareable: The shareable of this PostPaidServerDataVolume.
-        :type: bool
+        :type shareable: bool
         """
         self._shareable = shareable
 
@@ -167,7 +190,7 @@ class PostPaidServerDataVolume:
         创建共享磁盘的信息。  - true：创建的磁盘为共享盘。 - false：创建的磁盘为普通云硬盘。  > 说明： >  > shareable当前为废弃字段，如果确实需要同时使用shareable字段和multiattach字段，此时，请确保两个字段的参数值相同。当不指定该字段时，系统默认创建普通云硬盘。
 
         :param multiattach: The multiattach of this PostPaidServerDataVolume.
-        :type: bool
+        :type multiattach: bool
         """
         self._multiattach = multiattach
 
@@ -189,7 +212,7 @@ class PostPaidServerDataVolume:
         数据卷是否使用SCSI锁。  - true表示云硬盘的设备类型为SCSI类型，即允许ECS操作系统直接访问底层存储介质。支持SCSI锁命令。 - false表示云硬盘的设备类型为VBD (虚拟块存储设备 , Virtual Block Device)类型，即为默认类型，VBD只能支持简单的SCSI读写命令。 - 该字段不存在时，云硬盘默认为VBD类型。  > 说明： >  > 此参数为boolean类型，若传入非boolean类型字符，程序将按照【false】方式处理。
 
         :param hwpassthrough: The hwpassthrough of this PostPaidServerDataVolume.
-        :type: bool
+        :type hwpassthrough: bool
         """
         self._hwpassthrough = hwpassthrough
 
@@ -199,7 +222,7 @@ class PostPaidServerDataVolume:
 
 
         :return: The extendparam of this PostPaidServerDataVolume.
-        :rtype: PostPaidServerDataVolumeExtendParam
+        :rtype: :class:`huaweicloudsdkecs.v2.PostPaidServerDataVolumeExtendParam`
         """
         return self._extendparam
 
@@ -209,7 +232,7 @@ class PostPaidServerDataVolume:
 
 
         :param extendparam: The extendparam of this PostPaidServerDataVolume.
-        :type: PostPaidServerDataVolumeExtendParam
+        :type extendparam: :class:`huaweicloudsdkecs.v2.PostPaidServerDataVolumeExtendParam`
         """
         self._extendparam = extendparam
 
@@ -231,7 +254,7 @@ class PostPaidServerDataVolume:
         云服务器数据盘对应的磁盘存储类型。 磁盘存储类型枚举值： DSS：专属存储类型
 
         :param cluster_type: The cluster_type of this PostPaidServerDataVolume.
-        :type: str
+        :type cluster_type: str
         """
         self._cluster_type = cluster_type
 
@@ -253,7 +276,7 @@ class PostPaidServerDataVolume:
         云服务器数据盘对应的存储池的ID。
 
         :param cluster_id: The cluster_id of this PostPaidServerDataVolume.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -263,7 +286,7 @@ class PostPaidServerDataVolume:
 
 
         :return: The metadata of this PostPaidServerDataVolume.
-        :rtype: PostPaidServerDataVolumeMetadata
+        :rtype: :class:`huaweicloudsdkecs.v2.PostPaidServerDataVolumeMetadata`
         """
         return self._metadata
 
@@ -273,7 +296,7 @@ class PostPaidServerDataVolume:
 
 
         :param metadata: The metadata of this PostPaidServerDataVolume.
-        :type: PostPaidServerDataVolumeMetadata
+        :type metadata: :class:`huaweicloudsdkecs.v2.PostPaidServerDataVolumeMetadata`
         """
         self._metadata = metadata
 
@@ -295,7 +318,7 @@ class PostPaidServerDataVolume:
         数据镜像的ID，UUID格式。  如果使用数据盘镜像创建数据盘，则data_image_id为必选参数，且不支持使用metadata。
 
         :param data_image_id: The data_image_id of this PostPaidServerDataVolume.
-        :type: str
+        :type data_image_id: str
         """
         self._data_image_id = data_image_id
 

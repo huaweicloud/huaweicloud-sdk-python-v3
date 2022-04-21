@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VersionMediatypes:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class VersionMediatypes:
     }
 
     def __init__(self, type=None, base=None):
-        """VersionMediatypes - a model defined in huaweicloud sdk"""
+        """VersionMediatypes
+
+        The model defined in huaweicloud sdk
+
+        :param type: 媒体类型。
+        :type type: str
+        :param base: 基础类型。
+        :type base: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class VersionMediatypes:
         媒体类型。
 
         :param type: The type of this VersionMediatypes.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -83,7 +90,7 @@ class VersionMediatypes:
         基础类型。
 
         :param base: The base of this VersionMediatypes.
-        :type: str
+        :type base: str
         """
         self._base = base
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OriginRequestHeader:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class OriginRequestHeader:
     }
 
     def __init__(self, name=None, value=None, action=None):
-        """OriginRequestHeader - a model defined in huaweicloud sdk"""
+        """OriginRequestHeader
+
+        The model defined in huaweicloud sdk
+
+        :param name: 设置回源请求头参数。格式要求：长度1~64，由数字，大小写字母，中划线-组成。
+        :type name: str
+        :param value: 设置回源请求头参数的值。当为删除动作时，可不填。格式要求：长度1~512。不支持中文，不支持变量配置，如：$client_ip,$remote_port等。
+        :type value: str
+        :param action: 回源请求头设置类型。delete：删除，set：设置。同一个请求头字段只允许删除或者设置。设置：若原始回源请求中不存在该字段，先执行新增再执行设置。
+        :type action: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class OriginRequestHeader:
         设置回源请求头参数。格式要求：长度1~64，由数字，大小写字母，中划线-组成。
 
         :param name: The name of this OriginRequestHeader.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -88,7 +97,7 @@ class OriginRequestHeader:
         设置回源请求头参数的值。当为删除动作时，可不填。格式要求：长度1~512。不支持中文，不支持变量配置，如：$client_ip,$remote_port等。
 
         :param value: The value of this OriginRequestHeader.
-        :type: str
+        :type value: str
         """
         self._value = value
 
@@ -110,7 +119,7 @@ class OriginRequestHeader:
         回源请求头设置类型。delete：删除，set：设置。同一个请求头字段只允许删除或者设置。设置：若原始回源请求中不存在该字段，先执行新增再执行设置。
 
         :param action: The action of this OriginRequestHeader.
-        :type: str
+        :type action: str
         """
         self._action = action
 

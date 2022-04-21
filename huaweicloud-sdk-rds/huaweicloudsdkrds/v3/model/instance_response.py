@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InstanceResponse:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -106,7 +105,89 @@ class InstanceResponse:
     }
 
     def __init__(self, id=None, status=None, enable_ssl=None, private_ips=None, private_dns_names=None, public_ips=None, type=None, created=None, updated=None, db_user_name=None, switch_strategy=None, maintenance_window=None, nodes=None, related_instance=None, name=None, datastore=None, ha=None, port=None, backup_strategy=None, enterprise_project_id=None, disk_encryption_id=None, flavor_ref=None, cpu=None, mem=None, volume=None, region=None, vpc_id=None, subnet_id=None, security_group_id=None, charge_info=None, time_zone=None, tags=None, backup_used_space=None, storage_used_space=None, order_id=None, associated_with_ddm=None, alias=None, max_iops=None, expiration_time=None):
-        """InstanceResponse - a model defined in huaweicloud sdk"""
+        """InstanceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 实例ID。
+        :type id: str
+        :param status: 实例状态。 - 值为“BUILD”，表示实例正在创建。 - 值为“ACTIVE”，表示实例正常。 - 值为“FAILED”，表示实例异常。 - 值为“FROZEN”，表示实例冻结。 - 值为“MODIFYING”，表示实例正在扩容。 - 值为“REBOOTING”，表示实例正在重启。 - 值为“RESTORING”，表示实例正在恢复。 - 值为“MODIFYING INSTANCE TYPE”，表示实例正在转主备。 - 值为“SWITCHOVER”，表示实例正在主备切换。 - 值为“MIGRATING”，表示实例正在迁移。 - 值为“BACKING UP”，表示实例正在进行备份。 - 值为“MODIFYING DATABASE PORT”，表示实例正在修改数据库端口。 - 值为“STORAGE FULL”，表示实例磁盘空间满。
+        :type status: str
+        :param enable_ssl: 实例是否开启SSL，取值为\&quot;true\&quot;表示实例开启了SSL，取值为\&quot;false\&quot;表示实例未开启SSL。
+        :type enable_ssl: bool
+        :param private_ips: 实例内网IP地址列表。弹性云服务器创建成功后该值存在，其他情况下为空字符串。
+        :type private_ips: list[str]
+        :param private_dns_names: 
+        :type private_dns_names: list[str]
+        :param public_ips: 实例外网IP地址列表。
+        :type public_ips: list[str]
+        :param type: 实例类型，取值为“Single”，“Ha”或“Replica”，分别对应于单机实例、主备实例、只读实例。
+        :type type: str
+        :param created: 创建时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。  说明：创建时返回值为空，数据库实例创建成功后该值不为空。
+        :type created: str
+        :param updated: 更新时间，格式与“created”字段对应格式完全相同。  说明：创建时返回值为空，数据库实例创建成功后该值不为空。
+        :type updated: str
+        :param db_user_name: 默认用户名。
+        :type db_user_name: str
+        :param switch_strategy: 数据库切换策略。取值为“reliability”或“availability”，分别对应于可靠性优先和可用性优先。
+        :type switch_strategy: str
+        :param maintenance_window: 可维护时间窗，为UTC时间。
+        :type maintenance_window: str
+        :param nodes: 
+        :type nodes: list[:class:`huaweicloudsdkrds.v3.NodeResponse`]
+        :param related_instance: 
+        :type related_instance: list[:class:`huaweicloudsdkrds.v3.RelatedInstance`]
+        :param name: 实例名称。
+        :type name: str
+        :param datastore: 
+        :type datastore: :class:`huaweicloudsdkrds.v3.Datastore`
+        :param ha: 
+        :type ha: :class:`huaweicloudsdkrds.v3.HaResponse`
+        :param port: 数据库端口信息。  - MySQL数据库端口设置范围为1024～65535（其中12017和33071被RDS系统占用不可设置）。 - PostgreSQL数据库端口修改范围为2100～9500。 - Microsoft SQL Server实例的端口设置范围为1433和2100~9500（其中5355和5985不可设置。对于2017 EE版，5050、5353和5986不可设置）。  当不传该参数时，默认端口如下：  - MySQL默认3306。 - PostgreSQL默认5432。 - Microsoft SQL Server默认1433。
+        :type port: int
+        :param backup_strategy: 
+        :type backup_strategy: :class:`huaweicloudsdkrds.v3.BackupStrategyForResponse`
+        :param enterprise_project_id: 企业项目ID。
+        :type enterprise_project_id: str
+        :param disk_encryption_id: 用于磁盘加密的密钥ID。
+        :type disk_encryption_id: str
+        :param flavor_ref: 规格码。
+        :type flavor_ref: str
+        :param cpu: CPU大小。例如，1表示1U。
+        :type cpu: str
+        :param mem: 内存大小（单位：GB）。
+        :type mem: str
+        :param volume: 
+        :type volume: :class:`huaweicloudsdkrds.v3.Volume`
+        :param region: 区域ID。
+        :type region: str
+        :param vpc_id: 虚拟私有云ID。
+        :type vpc_id: str
+        :param subnet_id: 子网ID。
+        :type subnet_id: str
+        :param security_group_id: 安全组ID。
+        :type security_group_id: str
+        :param charge_info: 
+        :type charge_info: :class:`huaweicloudsdkrds.v3.ChargeInfoResponse`
+        :param time_zone: 时区。
+        :type time_zone: str
+        :param tags: 
+        :type tags: list[:class:`huaweicloudsdkrds.v3.TagResponse`]
+        :param backup_used_space: 备份空间使用量，单位GB。  该字段仅用于查询指定SQL Server实例信息时返回。
+        :type backup_used_space: float
+        :param storage_used_space: 磁盘空间使用量，单位GB。  该字段仅用于查询指定SQL Server实例信息时返回。
+        :type storage_used_space: float
+        :param order_id: 订单ID，仅包周期场景返回。
+        :type order_id: str
+        :param associated_with_ddm: 是否已被DDM实例关联。
+        :type associated_with_ddm: bool
+        :param alias: 实例的备注信息。
+        :type alias: str
+        :param max_iops: 实例磁盘的最大IOPS值。  当前该字段仅对于SQL Server引擎实例返回。
+        :type max_iops: int
+        :param expiration_time: 实例的到期时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  仅包周期场景返回。
+        :type expiration_time: str
+        """
         
         
 
@@ -220,7 +301,7 @@ class InstanceResponse:
         实例ID。
 
         :param id: The id of this InstanceResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -242,7 +323,7 @@ class InstanceResponse:
         实例状态。 - 值为“BUILD”，表示实例正在创建。 - 值为“ACTIVE”，表示实例正常。 - 值为“FAILED”，表示实例异常。 - 值为“FROZEN”，表示实例冻结。 - 值为“MODIFYING”，表示实例正在扩容。 - 值为“REBOOTING”，表示实例正在重启。 - 值为“RESTORING”，表示实例正在恢复。 - 值为“MODIFYING INSTANCE TYPE”，表示实例正在转主备。 - 值为“SWITCHOVER”，表示实例正在主备切换。 - 值为“MIGRATING”，表示实例正在迁移。 - 值为“BACKING UP”，表示实例正在进行备份。 - 值为“MODIFYING DATABASE PORT”，表示实例正在修改数据库端口。 - 值为“STORAGE FULL”，表示实例磁盘空间满。
 
         :param status: The status of this InstanceResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -264,7 +345,7 @@ class InstanceResponse:
         实例是否开启SSL，取值为\"true\"表示实例开启了SSL，取值为\"false\"表示实例未开启SSL。
 
         :param enable_ssl: The enable_ssl of this InstanceResponse.
-        :type: bool
+        :type enable_ssl: bool
         """
         self._enable_ssl = enable_ssl
 
@@ -286,7 +367,7 @@ class InstanceResponse:
         实例内网IP地址列表。弹性云服务器创建成功后该值存在，其他情况下为空字符串。
 
         :param private_ips: The private_ips of this InstanceResponse.
-        :type: list[str]
+        :type private_ips: list[str]
         """
         self._private_ips = private_ips
 
@@ -306,7 +387,7 @@ class InstanceResponse:
 
 
         :param private_dns_names: The private_dns_names of this InstanceResponse.
-        :type: list[str]
+        :type private_dns_names: list[str]
         """
         self._private_dns_names = private_dns_names
 
@@ -328,7 +409,7 @@ class InstanceResponse:
         实例外网IP地址列表。
 
         :param public_ips: The public_ips of this InstanceResponse.
-        :type: list[str]
+        :type public_ips: list[str]
         """
         self._public_ips = public_ips
 
@@ -350,7 +431,7 @@ class InstanceResponse:
         实例类型，取值为“Single”，“Ha”或“Replica”，分别对应于单机实例、主备实例、只读实例。
 
         :param type: The type of this InstanceResponse.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -372,7 +453,7 @@ class InstanceResponse:
         创建时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。  说明：创建时返回值为空，数据库实例创建成功后该值不为空。
 
         :param created: The created of this InstanceResponse.
-        :type: str
+        :type created: str
         """
         self._created = created
 
@@ -394,7 +475,7 @@ class InstanceResponse:
         更新时间，格式与“created”字段对应格式完全相同。  说明：创建时返回值为空，数据库实例创建成功后该值不为空。
 
         :param updated: The updated of this InstanceResponse.
-        :type: str
+        :type updated: str
         """
         self._updated = updated
 
@@ -416,7 +497,7 @@ class InstanceResponse:
         默认用户名。
 
         :param db_user_name: The db_user_name of this InstanceResponse.
-        :type: str
+        :type db_user_name: str
         """
         self._db_user_name = db_user_name
 
@@ -438,7 +519,7 @@ class InstanceResponse:
         数据库切换策略。取值为“reliability”或“availability”，分别对应于可靠性优先和可用性优先。
 
         :param switch_strategy: The switch_strategy of this InstanceResponse.
-        :type: str
+        :type switch_strategy: str
         """
         self._switch_strategy = switch_strategy
 
@@ -460,7 +541,7 @@ class InstanceResponse:
         可维护时间窗，为UTC时间。
 
         :param maintenance_window: The maintenance_window of this InstanceResponse.
-        :type: str
+        :type maintenance_window: str
         """
         self._maintenance_window = maintenance_window
 
@@ -470,7 +551,7 @@ class InstanceResponse:
 
 
         :return: The nodes of this InstanceResponse.
-        :rtype: list[NodeResponse]
+        :rtype: list[:class:`huaweicloudsdkrds.v3.NodeResponse`]
         """
         return self._nodes
 
@@ -480,7 +561,7 @@ class InstanceResponse:
 
 
         :param nodes: The nodes of this InstanceResponse.
-        :type: list[NodeResponse]
+        :type nodes: list[:class:`huaweicloudsdkrds.v3.NodeResponse`]
         """
         self._nodes = nodes
 
@@ -490,7 +571,7 @@ class InstanceResponse:
 
 
         :return: The related_instance of this InstanceResponse.
-        :rtype: list[RelatedInstance]
+        :rtype: list[:class:`huaweicloudsdkrds.v3.RelatedInstance`]
         """
         return self._related_instance
 
@@ -500,7 +581,7 @@ class InstanceResponse:
 
 
         :param related_instance: The related_instance of this InstanceResponse.
-        :type: list[RelatedInstance]
+        :type related_instance: list[:class:`huaweicloudsdkrds.v3.RelatedInstance`]
         """
         self._related_instance = related_instance
 
@@ -522,7 +603,7 @@ class InstanceResponse:
         实例名称。
 
         :param name: The name of this InstanceResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -532,7 +613,7 @@ class InstanceResponse:
 
 
         :return: The datastore of this InstanceResponse.
-        :rtype: Datastore
+        :rtype: :class:`huaweicloudsdkrds.v3.Datastore`
         """
         return self._datastore
 
@@ -542,7 +623,7 @@ class InstanceResponse:
 
 
         :param datastore: The datastore of this InstanceResponse.
-        :type: Datastore
+        :type datastore: :class:`huaweicloudsdkrds.v3.Datastore`
         """
         self._datastore = datastore
 
@@ -552,7 +633,7 @@ class InstanceResponse:
 
 
         :return: The ha of this InstanceResponse.
-        :rtype: HaResponse
+        :rtype: :class:`huaweicloudsdkrds.v3.HaResponse`
         """
         return self._ha
 
@@ -562,7 +643,7 @@ class InstanceResponse:
 
 
         :param ha: The ha of this InstanceResponse.
-        :type: HaResponse
+        :type ha: :class:`huaweicloudsdkrds.v3.HaResponse`
         """
         self._ha = ha
 
@@ -584,7 +665,7 @@ class InstanceResponse:
         数据库端口信息。  - MySQL数据库端口设置范围为1024～65535（其中12017和33071被RDS系统占用不可设置）。 - PostgreSQL数据库端口修改范围为2100～9500。 - Microsoft SQL Server实例的端口设置范围为1433和2100~9500（其中5355和5985不可设置。对于2017 EE版，5050、5353和5986不可设置）。  当不传该参数时，默认端口如下：  - MySQL默认3306。 - PostgreSQL默认5432。 - Microsoft SQL Server默认1433。
 
         :param port: The port of this InstanceResponse.
-        :type: int
+        :type port: int
         """
         self._port = port
 
@@ -594,7 +675,7 @@ class InstanceResponse:
 
 
         :return: The backup_strategy of this InstanceResponse.
-        :rtype: BackupStrategyForResponse
+        :rtype: :class:`huaweicloudsdkrds.v3.BackupStrategyForResponse`
         """
         return self._backup_strategy
 
@@ -604,7 +685,7 @@ class InstanceResponse:
 
 
         :param backup_strategy: The backup_strategy of this InstanceResponse.
-        :type: BackupStrategyForResponse
+        :type backup_strategy: :class:`huaweicloudsdkrds.v3.BackupStrategyForResponse`
         """
         self._backup_strategy = backup_strategy
 
@@ -626,7 +707,7 @@ class InstanceResponse:
         企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this InstanceResponse.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -648,7 +729,7 @@ class InstanceResponse:
         用于磁盘加密的密钥ID。
 
         :param disk_encryption_id: The disk_encryption_id of this InstanceResponse.
-        :type: str
+        :type disk_encryption_id: str
         """
         self._disk_encryption_id = disk_encryption_id
 
@@ -670,7 +751,7 @@ class InstanceResponse:
         规格码。
 
         :param flavor_ref: The flavor_ref of this InstanceResponse.
-        :type: str
+        :type flavor_ref: str
         """
         self._flavor_ref = flavor_ref
 
@@ -692,7 +773,7 @@ class InstanceResponse:
         CPU大小。例如，1表示1U。
 
         :param cpu: The cpu of this InstanceResponse.
-        :type: str
+        :type cpu: str
         """
         self._cpu = cpu
 
@@ -714,7 +795,7 @@ class InstanceResponse:
         内存大小（单位：GB）。
 
         :param mem: The mem of this InstanceResponse.
-        :type: str
+        :type mem: str
         """
         self._mem = mem
 
@@ -724,7 +805,7 @@ class InstanceResponse:
 
 
         :return: The volume of this InstanceResponse.
-        :rtype: Volume
+        :rtype: :class:`huaweicloudsdkrds.v3.Volume`
         """
         return self._volume
 
@@ -734,7 +815,7 @@ class InstanceResponse:
 
 
         :param volume: The volume of this InstanceResponse.
-        :type: Volume
+        :type volume: :class:`huaweicloudsdkrds.v3.Volume`
         """
         self._volume = volume
 
@@ -756,7 +837,7 @@ class InstanceResponse:
         区域ID。
 
         :param region: The region of this InstanceResponse.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -778,7 +859,7 @@ class InstanceResponse:
         虚拟私有云ID。
 
         :param vpc_id: The vpc_id of this InstanceResponse.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -800,7 +881,7 @@ class InstanceResponse:
         子网ID。
 
         :param subnet_id: The subnet_id of this InstanceResponse.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -822,7 +903,7 @@ class InstanceResponse:
         安全组ID。
 
         :param security_group_id: The security_group_id of this InstanceResponse.
-        :type: str
+        :type security_group_id: str
         """
         self._security_group_id = security_group_id
 
@@ -832,7 +913,7 @@ class InstanceResponse:
 
 
         :return: The charge_info of this InstanceResponse.
-        :rtype: ChargeInfoResponse
+        :rtype: :class:`huaweicloudsdkrds.v3.ChargeInfoResponse`
         """
         return self._charge_info
 
@@ -842,7 +923,7 @@ class InstanceResponse:
 
 
         :param charge_info: The charge_info of this InstanceResponse.
-        :type: ChargeInfoResponse
+        :type charge_info: :class:`huaweicloudsdkrds.v3.ChargeInfoResponse`
         """
         self._charge_info = charge_info
 
@@ -864,7 +945,7 @@ class InstanceResponse:
         时区。
 
         :param time_zone: The time_zone of this InstanceResponse.
-        :type: str
+        :type time_zone: str
         """
         self._time_zone = time_zone
 
@@ -874,7 +955,7 @@ class InstanceResponse:
 
 
         :return: The tags of this InstanceResponse.
-        :rtype: list[TagResponse]
+        :rtype: list[:class:`huaweicloudsdkrds.v3.TagResponse`]
         """
         return self._tags
 
@@ -884,7 +965,7 @@ class InstanceResponse:
 
 
         :param tags: The tags of this InstanceResponse.
-        :type: list[TagResponse]
+        :type tags: list[:class:`huaweicloudsdkrds.v3.TagResponse`]
         """
         self._tags = tags
 
@@ -906,7 +987,7 @@ class InstanceResponse:
         备份空间使用量，单位GB。  该字段仅用于查询指定SQL Server实例信息时返回。
 
         :param backup_used_space: The backup_used_space of this InstanceResponse.
-        :type: float
+        :type backup_used_space: float
         """
         self._backup_used_space = backup_used_space
 
@@ -928,7 +1009,7 @@ class InstanceResponse:
         磁盘空间使用量，单位GB。  该字段仅用于查询指定SQL Server实例信息时返回。
 
         :param storage_used_space: The storage_used_space of this InstanceResponse.
-        :type: float
+        :type storage_used_space: float
         """
         self._storage_used_space = storage_used_space
 
@@ -950,7 +1031,7 @@ class InstanceResponse:
         订单ID，仅包周期场景返回。
 
         :param order_id: The order_id of this InstanceResponse.
-        :type: str
+        :type order_id: str
         """
         self._order_id = order_id
 
@@ -972,7 +1053,7 @@ class InstanceResponse:
         是否已被DDM实例关联。
 
         :param associated_with_ddm: The associated_with_ddm of this InstanceResponse.
-        :type: bool
+        :type associated_with_ddm: bool
         """
         self._associated_with_ddm = associated_with_ddm
 
@@ -994,7 +1075,7 @@ class InstanceResponse:
         实例的备注信息。
 
         :param alias: The alias of this InstanceResponse.
-        :type: str
+        :type alias: str
         """
         self._alias = alias
 
@@ -1016,7 +1097,7 @@ class InstanceResponse:
         实例磁盘的最大IOPS值。  当前该字段仅对于SQL Server引擎实例返回。
 
         :param max_iops: The max_iops of this InstanceResponse.
-        :type: int
+        :type max_iops: int
         """
         self._max_iops = max_iops
 
@@ -1038,7 +1119,7 @@ class InstanceResponse:
         实例的到期时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  仅包周期场景返回。
 
         :param expiration_time: The expiration_time of this InstanceResponse.
-        :type: str
+        :type expiration_time: str
         """
         self._expiration_time = expiration_time
 

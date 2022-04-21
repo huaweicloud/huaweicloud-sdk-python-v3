@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteMediaProcessTaskResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class DeleteMediaProcessTaskResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteMediaProcessTaskResponse - a model defined in huaweicloud sdk"""
+        """DeleteMediaProcessTaskResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(DeleteMediaProcessTaskResponse, self).__init__()
         self.discriminator = None

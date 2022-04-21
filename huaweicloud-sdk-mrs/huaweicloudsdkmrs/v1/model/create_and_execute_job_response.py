@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateAndExecuteJobResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -114,7 +113,97 @@ class CreateAndExecuteJobResponse(SdkResponse):
     }
 
     def __init__(self, templated=None, created_at=None, updated_at=None, id=None, tenant_id=None, job_id=None, job_name=None, input_id=None, output_id=None, start_time=None, end_time=None, cluster_id=None, engine_job_id=None, return_code=None, is_public=None, is_protected=None, group_id=None, jar_path=None, input=None, output=None, job_log=None, job_type=None, file_action=None, arguments=None, hql=None, job_state=None, job_final_status=None, hive_script_path=None, create_by=None, finished_step=None, job_main_id=None, job_step_id=None, postpone_at=None, step_name=None, step_num=None, task_num=None, update_by=None, credentials=None, user_id=None, job_configs=None, extra=None, data_source_urls=None, info=None):
-        """CreateAndExecuteJobResponse - a model defined in huaweicloud sdk"""
+        """CreateAndExecuteJobResponse
+
+        The model defined in huaweicloud sdk
+
+        :param templated: 作业执行对象是否由作业模板生成。
+        :type templated: bool
+        :param created_at: 作业创建时间，十位时间戳。
+        :type created_at: int
+        :param updated_at: 作业更新时间，十位时间戳。
+        :type updated_at: int
+        :param id: 作业ID。
+        :type id: str
+        :param tenant_id: 项目编号。获取方法，请参见[获取项目ID](https://support.huaweicloud.com/api-mrs/mrs_02_0011.html)。
+        :type tenant_id: str
+        :param job_id: 作业应用ID。
+        :type job_id: str
+        :param job_name: 作业名称，只能由字母、数字、中划线和下划线组成，并且长度为1～64个字符。  说明： 不同作业的名称允许相同，但不建议设置相同。
+        :type job_name: str
+        :param input_id:   数据输入ID。
+        :type input_id: str
+        :param output_id: 数据输出ID。
+        :type output_id: str
+        :param start_time: 作业执行开始时间，十位时间戳。
+        :type start_time: int
+        :param end_time: 作业执行结束时间，十位时间戳。
+        :type end_time: int
+        :param cluster_id: 集群ID。
+        :type cluster_id: str
+        :param engine_job_id: Oozie工作流ID。
+        :type engine_job_id: str
+        :param return_code: 运行结果返回码。
+        :type return_code: str
+        :param is_public: 是否公开。 当前版本不支持该功能。
+        :type is_public: bool
+        :param is_protected: 是否受保护。 当前版本不支持该功能。
+        :type is_protected: bool
+        :param group_id: 作业执行组ID。
+        :type group_id: str
+        :param jar_path: 执行程序Jar包或sql文件地址，需要满足如下要求：  - 最多为1023字符，不能包含;|&amp;&gt;&lt;&#39;$特殊字符，且不可为空或全空格。  - 需要以“/”或“s3a://”开头。OBS路径不支持KMS加密的文件或程序。  - Spark Script需要以“.sql”结尾，MapReduce和Spark Jar需要以“.jar”结尾，sql和jar不区分大小写。
+        :type jar_path: str
+        :param input: 数据输入地址，必须以“/”或“s3a://”开头。请配置为正确的OBS路径，OBS路径不支持KMS加密的文件或程序。  最多为1023字符，不能包含;|&amp;&gt;&#39;&lt;$特殊字符，可为空。
+        :type input: str
+        :param output: 数据输出地址，必须以“/”或“s3a://”开头。请配置为正确的OBS路径，如果该路径不存在，系统会自动创建。  最多为1023字符，不能包含;|&amp;&gt;&#39;&lt;$特殊字符，可为空。
+        :type output: str
+        :param job_log: 作业日志存储地址，该日志信息记录作业运行状态。必须以“/”或“s3a://”开头，请配置为正确的OBS路径。  最多为1023字符，不能包含;|&amp;&gt;&#39;&lt;$特殊字符，可为空。
+        :type job_log: str
+        :param job_type: 作业类型码。 - 1：MapReduce - 2：Spark - 3：Hive Script - 4：HiveSQL（当前不支持） - 5：DistCp，导入、导出数据。 - 6：Spark Script - 7：Spark SQL，提交SQL语句，（该接口当前不支持）  说明： 只有包含Spark和Hive组件的集群才能新增Spark和Hive类型的作业。
+        :type job_type: int
+        :param file_action:   文件操作类型，包括： - export：从HDFS导出数据至OBS - import：从OBS导入数据至HDFS
+        :type file_action: str
+        :param arguments: 程序执行的关键参数，该参数由用户程序内的函数指定，MRS只负责参数的传入。 最多为150000字符，不能包含;|&amp;&gt;&#39;&lt;$!\\\&quot;\\特殊字符，可为空。 说明： 用户输入带有敏感信息（如登录密码）的参数时，可通过在参数名前添加“@”的方式，为该参数值加密，以防止敏感信息被明文形式持久化。在查看作业信息时，敏感信息显示为“*”。 例如：username&#x3D;admin @password&#x3D;admin_123
+        :type arguments: str
+        :param hql: Hive&amp;Spark Sql语句
+        :type hql: str
+        :param job_state: 作业状态码。  - -1：Terminated - 1：Starting - 2：Running - 3：Completed - 4：Abnormal - 5：Error
+        :type job_state: int
+        :param job_final_status: 作业最终状态码。  - 0：未完成 - 1：执行错误，终止执行 - 2：执行完成并且成功 - 3：已取消
+        :type job_final_status: int
+        :param hive_script_path: sql程序路径，仅Spark Script和Hive Script作业需要使用此参数。需要满足如下要求：  - 最多为1023字符，不能包含;|&amp;&gt;&lt;&#39;$特殊字符，且不可为空或全空格。 - 需要以“/”或“s3a://”开头，OBS路径不支持KMS加密的文件或程序。 - 需要以“.sql”结尾，sql不区分大小写。
+        :type hive_script_path: str
+        :param create_by: 创建作业的用户ID。  为兼容历史版本，保留此参数。
+        :type create_by: str
+        :param finished_step: 当前已完成的步骤数。  为兼容历史版本，保留此参数。
+        :type finished_step: int
+        :param job_main_id: 作业主ID。  为兼容历史版本，保留此参数。
+        :type job_main_id: str
+        :param job_step_id: 作业步骤ID。  为兼容历史版本，保留此参数。
+        :type job_step_id: str
+        :param postpone_at: 延迟时间，十位时间戳。  为兼容历史版本，保留此参数。
+        :type postpone_at: int
+        :param step_name: 作业步骤名。  为兼容历史版本，保留此参数。
+        :type step_name: str
+        :param step_num: 步骤数量  为兼容历史版本，保留此参数。
+        :type step_num: int
+        :param task_num:   任务数量。 为兼容历史版本，保留此参数。
+        :type task_num: int
+        :param update_by: 更新作业的用户ID。
+        :type update_by: str
+        :param credentials: 令牌，当前版本不支持。
+        :type credentials: str
+        :param user_id: 创建作业的用户ID。  历史版本兼容，不再使用。
+        :type user_id: str
+        :param job_configs: 键值对集合，用于保存作业运行配置。
+        :type job_configs: dict(str, object)
+        :param extra: 认证信息，当前版本不支持。
+        :type extra: dict(str, object)
+        :param data_source_urls: 数据源URL。
+        :type data_source_urls: dict(str, object)
+        :param info: 键值对集合，包含oozie返回的作业运行信息。
+        :type info: dict(str, object)
+        """
         
         super(CreateAndExecuteJobResponse, self).__init__()
 
@@ -268,7 +357,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
         作业执行对象是否由作业模板生成。
 
         :param templated: The templated of this CreateAndExecuteJobResponse.
-        :type: bool
+        :type templated: bool
         """
         self._templated = templated
 
@@ -290,7 +379,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
         作业创建时间，十位时间戳。
 
         :param created_at: The created_at of this CreateAndExecuteJobResponse.
-        :type: int
+        :type created_at: int
         """
         self._created_at = created_at
 
@@ -312,7 +401,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
         作业更新时间，十位时间戳。
 
         :param updated_at: The updated_at of this CreateAndExecuteJobResponse.
-        :type: int
+        :type updated_at: int
         """
         self._updated_at = updated_at
 
@@ -334,7 +423,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
         作业ID。
 
         :param id: The id of this CreateAndExecuteJobResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -356,7 +445,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
         项目编号。获取方法，请参见[获取项目ID](https://support.huaweicloud.com/api-mrs/mrs_02_0011.html)。
 
         :param tenant_id: The tenant_id of this CreateAndExecuteJobResponse.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 
@@ -378,7 +467,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
         作业应用ID。
 
         :param job_id: The job_id of this CreateAndExecuteJobResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -400,7 +489,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
         作业名称，只能由字母、数字、中划线和下划线组成，并且长度为1～64个字符。  说明： 不同作业的名称允许相同，但不建议设置相同。
 
         :param job_name: The job_name of this CreateAndExecuteJobResponse.
-        :type: str
+        :type job_name: str
         """
         self._job_name = job_name
 
@@ -422,7 +511,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
           数据输入ID。
 
         :param input_id: The input_id of this CreateAndExecuteJobResponse.
-        :type: str
+        :type input_id: str
         """
         self._input_id = input_id
 
@@ -444,7 +533,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
         数据输出ID。
 
         :param output_id: The output_id of this CreateAndExecuteJobResponse.
-        :type: str
+        :type output_id: str
         """
         self._output_id = output_id
 
@@ -466,7 +555,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
         作业执行开始时间，十位时间戳。
 
         :param start_time: The start_time of this CreateAndExecuteJobResponse.
-        :type: int
+        :type start_time: int
         """
         self._start_time = start_time
 
@@ -488,7 +577,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
         作业执行结束时间，十位时间戳。
 
         :param end_time: The end_time of this CreateAndExecuteJobResponse.
-        :type: int
+        :type end_time: int
         """
         self._end_time = end_time
 
@@ -510,7 +599,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
         集群ID。
 
         :param cluster_id: The cluster_id of this CreateAndExecuteJobResponse.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -532,7 +621,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
         Oozie工作流ID。
 
         :param engine_job_id: The engine_job_id of this CreateAndExecuteJobResponse.
-        :type: str
+        :type engine_job_id: str
         """
         self._engine_job_id = engine_job_id
 
@@ -554,7 +643,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
         运行结果返回码。
 
         :param return_code: The return_code of this CreateAndExecuteJobResponse.
-        :type: str
+        :type return_code: str
         """
         self._return_code = return_code
 
@@ -576,7 +665,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
         是否公开。 当前版本不支持该功能。
 
         :param is_public: The is_public of this CreateAndExecuteJobResponse.
-        :type: bool
+        :type is_public: bool
         """
         self._is_public = is_public
 
@@ -598,7 +687,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
         是否受保护。 当前版本不支持该功能。
 
         :param is_protected: The is_protected of this CreateAndExecuteJobResponse.
-        :type: bool
+        :type is_protected: bool
         """
         self._is_protected = is_protected
 
@@ -620,7 +709,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
         作业执行组ID。
 
         :param group_id: The group_id of this CreateAndExecuteJobResponse.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -642,7 +731,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
         执行程序Jar包或sql文件地址，需要满足如下要求：  - 最多为1023字符，不能包含;|&><'$特殊字符，且不可为空或全空格。  - 需要以“/”或“s3a://”开头。OBS路径不支持KMS加密的文件或程序。  - Spark Script需要以“.sql”结尾，MapReduce和Spark Jar需要以“.jar”结尾，sql和jar不区分大小写。
 
         :param jar_path: The jar_path of this CreateAndExecuteJobResponse.
-        :type: str
+        :type jar_path: str
         """
         self._jar_path = jar_path
 
@@ -664,7 +753,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
         数据输入地址，必须以“/”或“s3a://”开头。请配置为正确的OBS路径，OBS路径不支持KMS加密的文件或程序。  最多为1023字符，不能包含;|&>'<$特殊字符，可为空。
 
         :param input: The input of this CreateAndExecuteJobResponse.
-        :type: str
+        :type input: str
         """
         self._input = input
 
@@ -686,7 +775,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
         数据输出地址，必须以“/”或“s3a://”开头。请配置为正确的OBS路径，如果该路径不存在，系统会自动创建。  最多为1023字符，不能包含;|&>'<$特殊字符，可为空。
 
         :param output: The output of this CreateAndExecuteJobResponse.
-        :type: str
+        :type output: str
         """
         self._output = output
 
@@ -708,7 +797,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
         作业日志存储地址，该日志信息记录作业运行状态。必须以“/”或“s3a://”开头，请配置为正确的OBS路径。  最多为1023字符，不能包含;|&>'<$特殊字符，可为空。
 
         :param job_log: The job_log of this CreateAndExecuteJobResponse.
-        :type: str
+        :type job_log: str
         """
         self._job_log = job_log
 
@@ -730,7 +819,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
         作业类型码。 - 1：MapReduce - 2：Spark - 3：Hive Script - 4：HiveSQL（当前不支持） - 5：DistCp，导入、导出数据。 - 6：Spark Script - 7：Spark SQL，提交SQL语句，（该接口当前不支持）  说明： 只有包含Spark和Hive组件的集群才能新增Spark和Hive类型的作业。
 
         :param job_type: The job_type of this CreateAndExecuteJobResponse.
-        :type: int
+        :type job_type: int
         """
         self._job_type = job_type
 
@@ -752,7 +841,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
           文件操作类型，包括： - export：从HDFS导出数据至OBS - import：从OBS导入数据至HDFS
 
         :param file_action: The file_action of this CreateAndExecuteJobResponse.
-        :type: str
+        :type file_action: str
         """
         self._file_action = file_action
 
@@ -774,7 +863,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
         程序执行的关键参数，该参数由用户程序内的函数指定，MRS只负责参数的传入。 最多为150000字符，不能包含;|&>'<$!\\\"\\特殊字符，可为空。 说明： 用户输入带有敏感信息（如登录密码）的参数时，可通过在参数名前添加“@”的方式，为该参数值加密，以防止敏感信息被明文形式持久化。在查看作业信息时，敏感信息显示为“*”。 例如：username=admin @password=admin_123
 
         :param arguments: The arguments of this CreateAndExecuteJobResponse.
-        :type: str
+        :type arguments: str
         """
         self._arguments = arguments
 
@@ -796,7 +885,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
         Hive&Spark Sql语句
 
         :param hql: The hql of this CreateAndExecuteJobResponse.
-        :type: str
+        :type hql: str
         """
         self._hql = hql
 
@@ -818,7 +907,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
         作业状态码。  - -1：Terminated - 1：Starting - 2：Running - 3：Completed - 4：Abnormal - 5：Error
 
         :param job_state: The job_state of this CreateAndExecuteJobResponse.
-        :type: int
+        :type job_state: int
         """
         self._job_state = job_state
 
@@ -840,7 +929,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
         作业最终状态码。  - 0：未完成 - 1：执行错误，终止执行 - 2：执行完成并且成功 - 3：已取消
 
         :param job_final_status: The job_final_status of this CreateAndExecuteJobResponse.
-        :type: int
+        :type job_final_status: int
         """
         self._job_final_status = job_final_status
 
@@ -862,7 +951,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
         sql程序路径，仅Spark Script和Hive Script作业需要使用此参数。需要满足如下要求：  - 最多为1023字符，不能包含;|&><'$特殊字符，且不可为空或全空格。 - 需要以“/”或“s3a://”开头，OBS路径不支持KMS加密的文件或程序。 - 需要以“.sql”结尾，sql不区分大小写。
 
         :param hive_script_path: The hive_script_path of this CreateAndExecuteJobResponse.
-        :type: str
+        :type hive_script_path: str
         """
         self._hive_script_path = hive_script_path
 
@@ -884,7 +973,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
         创建作业的用户ID。  为兼容历史版本，保留此参数。
 
         :param create_by: The create_by of this CreateAndExecuteJobResponse.
-        :type: str
+        :type create_by: str
         """
         self._create_by = create_by
 
@@ -906,7 +995,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
         当前已完成的步骤数。  为兼容历史版本，保留此参数。
 
         :param finished_step: The finished_step of this CreateAndExecuteJobResponse.
-        :type: int
+        :type finished_step: int
         """
         self._finished_step = finished_step
 
@@ -928,7 +1017,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
         作业主ID。  为兼容历史版本，保留此参数。
 
         :param job_main_id: The job_main_id of this CreateAndExecuteJobResponse.
-        :type: str
+        :type job_main_id: str
         """
         self._job_main_id = job_main_id
 
@@ -950,7 +1039,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
         作业步骤ID。  为兼容历史版本，保留此参数。
 
         :param job_step_id: The job_step_id of this CreateAndExecuteJobResponse.
-        :type: str
+        :type job_step_id: str
         """
         self._job_step_id = job_step_id
 
@@ -972,7 +1061,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
         延迟时间，十位时间戳。  为兼容历史版本，保留此参数。
 
         :param postpone_at: The postpone_at of this CreateAndExecuteJobResponse.
-        :type: int
+        :type postpone_at: int
         """
         self._postpone_at = postpone_at
 
@@ -994,7 +1083,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
         作业步骤名。  为兼容历史版本，保留此参数。
 
         :param step_name: The step_name of this CreateAndExecuteJobResponse.
-        :type: str
+        :type step_name: str
         """
         self._step_name = step_name
 
@@ -1016,7 +1105,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
         步骤数量  为兼容历史版本，保留此参数。
 
         :param step_num: The step_num of this CreateAndExecuteJobResponse.
-        :type: int
+        :type step_num: int
         """
         self._step_num = step_num
 
@@ -1038,7 +1127,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
           任务数量。 为兼容历史版本，保留此参数。
 
         :param task_num: The task_num of this CreateAndExecuteJobResponse.
-        :type: int
+        :type task_num: int
         """
         self._task_num = task_num
 
@@ -1060,7 +1149,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
         更新作业的用户ID。
 
         :param update_by: The update_by of this CreateAndExecuteJobResponse.
-        :type: str
+        :type update_by: str
         """
         self._update_by = update_by
 
@@ -1082,7 +1171,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
         令牌，当前版本不支持。
 
         :param credentials: The credentials of this CreateAndExecuteJobResponse.
-        :type: str
+        :type credentials: str
         """
         self._credentials = credentials
 
@@ -1104,7 +1193,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
         创建作业的用户ID。  历史版本兼容，不再使用。
 
         :param user_id: The user_id of this CreateAndExecuteJobResponse.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -1126,7 +1215,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
         键值对集合，用于保存作业运行配置。
 
         :param job_configs: The job_configs of this CreateAndExecuteJobResponse.
-        :type: dict(str, object)
+        :type job_configs: dict(str, object)
         """
         self._job_configs = job_configs
 
@@ -1148,7 +1237,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
         认证信息，当前版本不支持。
 
         :param extra: The extra of this CreateAndExecuteJobResponse.
-        :type: dict(str, object)
+        :type extra: dict(str, object)
         """
         self._extra = extra
 
@@ -1170,7 +1259,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
         数据源URL。
 
         :param data_source_urls: The data_source_urls of this CreateAndExecuteJobResponse.
-        :type: dict(str, object)
+        :type data_source_urls: dict(str, object)
         """
         self._data_source_urls = data_source_urls
 
@@ -1192,7 +1281,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
         键值对集合，包含oozie返回的作业运行信息。
 
         :param info: The info of this CreateAndExecuteJobResponse.
-        :type: dict(str, object)
+        :type info: dict(str, object)
         """
         self._info = info
 

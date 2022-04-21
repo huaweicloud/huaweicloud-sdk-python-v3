@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Resource:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class Resource:
     }
 
     def __init__(self, type=None, unit=None, min=None, max=None, quota=None, used=None, free=None):
-        """Resource - a model defined in huaweicloud sdk"""
+        """Resource
+
+        The model defined in huaweicloud sdk
+
+        :param type: 资源类型，包含instance（服务实例数）
+        :type type: str
+        :param unit: 单位
+        :type unit: str
+        :param min: 最小值
+        :type min: int
+        :param max: 最大值
+        :type max: int
+        :param quota: 配额
+        :type quota: int
+        :param used: 已使用配额
+        :type used: int
+        :param free: 剩余配额
+        :type free: int
+        """
         
         
 
@@ -88,7 +105,7 @@ class Resource:
         资源类型，包含instance（服务实例数）
 
         :param type: The type of this Resource.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -110,7 +127,7 @@ class Resource:
         单位
 
         :param unit: The unit of this Resource.
-        :type: str
+        :type unit: str
         """
         self._unit = unit
 
@@ -132,7 +149,7 @@ class Resource:
         最小值
 
         :param min: The min of this Resource.
-        :type: int
+        :type min: int
         """
         self._min = min
 
@@ -154,7 +171,7 @@ class Resource:
         最大值
 
         :param max: The max of this Resource.
-        :type: int
+        :type max: int
         """
         self._max = max
 
@@ -176,7 +193,7 @@ class Resource:
         配额
 
         :param quota: The quota of this Resource.
-        :type: int
+        :type quota: int
         """
         self._quota = quota
 
@@ -198,7 +215,7 @@ class Resource:
         已使用配额
 
         :param used: The used of this Resource.
-        :type: int
+        :type used: int
         """
         self._used = used
 
@@ -220,7 +237,7 @@ class Resource:
         剩余配额
 
         :param free: The free of this Resource.
-        :type: int
+        :type free: int
         """
         self._free = free
 

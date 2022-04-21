@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAssetModelsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListAssetModelsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, asset_models=None):
-        """ListAssetModelsResponse - a model defined in huaweicloud sdk"""
+        """ListAssetModelsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 总数
+        :type count: int
+        :param asset_models: 模型集，数量不超过limit
+        :type asset_models: list[:class:`huaweicloudsdkiotanalytics.v1.AssetModelResponse`]
+        """
         
         super(ListAssetModelsResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListAssetModelsResponse(SdkResponse):
         总数
 
         :param count: The count of this ListAssetModelsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -74,7 +81,7 @@ class ListAssetModelsResponse(SdkResponse):
         模型集，数量不超过limit
 
         :return: The asset_models of this ListAssetModelsResponse.
-        :rtype: list[AssetModelResponse]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.AssetModelResponse`]
         """
         return self._asset_models
 
@@ -85,7 +92,7 @@ class ListAssetModelsResponse(SdkResponse):
         模型集，数量不超过limit
 
         :param asset_models: The asset_models of this ListAssetModelsResponse.
-        :type: list[AssetModelResponse]
+        :type asset_models: list[:class:`huaweicloudsdkiotanalytics.v1.AssetModelResponse`]
         """
         self._asset_models = asset_models
 

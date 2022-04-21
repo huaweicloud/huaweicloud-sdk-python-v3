@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowEventItems:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -66,7 +65,49 @@ class ShowEventItems:
     }
 
     def __init__(self, time=None, policyid=None, sip=None, host=None, url=None, attack=None, rule=None, action=None, cookie=None, headers=None, host_id=None, id=None, payload=None, payload_location=None, region=None, request_line=None, response_size=None, response_time=None, status=None):
-        """ShowEventItems - a model defined in huaweicloud sdk"""
+        """ShowEventItems
+
+        The model defined in huaweicloud sdk
+
+        :param time: 攻击发生时的时间戳（毫秒）
+        :type time: int
+        :param policyid: 策略id
+        :type policyid: str
+        :param sip: 源ip
+        :type sip: str
+        :param host: 域名
+        :type host: str
+        :param url: 攻击的url链接
+        :type url: str
+        :param attack: 攻击类型
+        :type attack: str
+        :param rule: 命中的规则id
+        :type rule: str
+        :param action: 防护动作
+        :type action: str
+        :param cookie: 攻击请求的cookie
+        :type cookie: str
+        :param headers: 攻击请求的headers
+        :type headers: str
+        :param host_id: 被攻击的域名id
+        :type host_id: str
+        :param id: 攻击请求的id
+        :type id: str
+        :param payload: 恶意负载
+        :type payload: str
+        :param payload_location: 恶意负载位置
+        :type payload_location: str
+        :param region: 源ip地理位置
+        :type region: str
+        :param request_line: 攻击请求的请求行
+        :type request_line: str
+        :param response_size: 返回大小（字节）
+        :type response_size: str
+        :param response_time: 响应时间（毫秒）
+        :type response_time: str
+        :param status: 响应码
+        :type status: str
+        """
         
         
 
@@ -148,7 +189,7 @@ class ShowEventItems:
         攻击发生时的时间戳（毫秒）
 
         :param time: The time of this ShowEventItems.
-        :type: int
+        :type time: int
         """
         self._time = time
 
@@ -170,7 +211,7 @@ class ShowEventItems:
         策略id
 
         :param policyid: The policyid of this ShowEventItems.
-        :type: str
+        :type policyid: str
         """
         self._policyid = policyid
 
@@ -192,7 +233,7 @@ class ShowEventItems:
         源ip
 
         :param sip: The sip of this ShowEventItems.
-        :type: str
+        :type sip: str
         """
         self._sip = sip
 
@@ -214,7 +255,7 @@ class ShowEventItems:
         域名
 
         :param host: The host of this ShowEventItems.
-        :type: str
+        :type host: str
         """
         self._host = host
 
@@ -236,7 +277,7 @@ class ShowEventItems:
         攻击的url链接
 
         :param url: The url of this ShowEventItems.
-        :type: str
+        :type url: str
         """
         self._url = url
 
@@ -258,7 +299,7 @@ class ShowEventItems:
         攻击类型
 
         :param attack: The attack of this ShowEventItems.
-        :type: str
+        :type attack: str
         """
         self._attack = attack
 
@@ -280,7 +321,7 @@ class ShowEventItems:
         命中的规则id
 
         :param rule: The rule of this ShowEventItems.
-        :type: str
+        :type rule: str
         """
         self._rule = rule
 
@@ -302,7 +343,7 @@ class ShowEventItems:
         防护动作
 
         :param action: The action of this ShowEventItems.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -324,7 +365,7 @@ class ShowEventItems:
         攻击请求的cookie
 
         :param cookie: The cookie of this ShowEventItems.
-        :type: str
+        :type cookie: str
         """
         self._cookie = cookie
 
@@ -346,7 +387,7 @@ class ShowEventItems:
         攻击请求的headers
 
         :param headers: The headers of this ShowEventItems.
-        :type: str
+        :type headers: str
         """
         self._headers = headers
 
@@ -368,7 +409,7 @@ class ShowEventItems:
         被攻击的域名id
 
         :param host_id: The host_id of this ShowEventItems.
-        :type: str
+        :type host_id: str
         """
         self._host_id = host_id
 
@@ -390,7 +431,7 @@ class ShowEventItems:
         攻击请求的id
 
         :param id: The id of this ShowEventItems.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -412,7 +453,7 @@ class ShowEventItems:
         恶意负载
 
         :param payload: The payload of this ShowEventItems.
-        :type: str
+        :type payload: str
         """
         self._payload = payload
 
@@ -434,7 +475,7 @@ class ShowEventItems:
         恶意负载位置
 
         :param payload_location: The payload_location of this ShowEventItems.
-        :type: str
+        :type payload_location: str
         """
         self._payload_location = payload_location
 
@@ -456,7 +497,7 @@ class ShowEventItems:
         源ip地理位置
 
         :param region: The region of this ShowEventItems.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -478,7 +519,7 @@ class ShowEventItems:
         攻击请求的请求行
 
         :param request_line: The request_line of this ShowEventItems.
-        :type: str
+        :type request_line: str
         """
         self._request_line = request_line
 
@@ -500,7 +541,7 @@ class ShowEventItems:
         返回大小（字节）
 
         :param response_size: The response_size of this ShowEventItems.
-        :type: str
+        :type response_size: str
         """
         self._response_size = response_size
 
@@ -522,7 +563,7 @@ class ShowEventItems:
         响应时间（毫秒）
 
         :param response_time: The response_time of this ShowEventItems.
-        :type: str
+        :type response_time: str
         """
         self._response_time = response_time
 
@@ -544,7 +585,7 @@ class ShowEventItems:
         响应码
 
         :param status: The status of this ShowEventItems.
-        :type: str
+        :type status: str
         """
         self._status = status
 

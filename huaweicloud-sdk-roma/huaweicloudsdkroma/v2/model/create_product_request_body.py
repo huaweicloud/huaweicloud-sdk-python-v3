@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateProductRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class CreateProductRequestBody:
     }
 
     def __init__(self, app_id=None, name=None, manufacturer_id=None, manufacturer_name=None, model=None, product_type=None, description=None, protocol_type=None, device_type=None, template_id=None, version=None, data_format=None):
-        """CreateProductRequestBody - a model defined in huaweicloud sdk"""
+        """CreateProductRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param app_id: 应用ID
+        :type app_id: str
+        :param name: 产品名称，创建产品时租户内唯一，长度最大64，仅支持中文，英文字母，数字，下划线和中划线
+        :type name: str
+        :param manufacturer_id: 产品供应商ID
+        :type manufacturer_id: str
+        :param manufacturer_name: 厂商名称
+        :type manufacturer_name: str
+        :param model: 产品型号
+        :type model: str
+        :param product_type: 产品类型，0-普通产品(不支持子设备) 1-网关产品
+        :type product_type: int
+        :param description: 产品描述，长度0-200
+        :type description: str
+        :param protocol_type: 产品的协议类型 0-mqtt 2-modbus 4-opcua
+        :type protocol_type: int
+        :param device_type: 产品的设备类型（默认Default）
+        :type device_type: str
+        :param template_id: 关联产品模板ID（使用产品模板创建产品时使用，否则为空），自动向下取整
+        :type template_id: int
+        :param version: 模型版本
+        :type version: str
+        :param data_format: 产品的数据格式 0-JSON 1-USER_DEFINED
+        :type data_format: int
+        """
         
         
 
@@ -106,7 +133,7 @@ class CreateProductRequestBody:
         应用ID
 
         :param app_id: The app_id of this CreateProductRequestBody.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -128,7 +155,7 @@ class CreateProductRequestBody:
         产品名称，创建产品时租户内唯一，长度最大64，仅支持中文，英文字母，数字，下划线和中划线
 
         :param name: The name of this CreateProductRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -150,7 +177,7 @@ class CreateProductRequestBody:
         产品供应商ID
 
         :param manufacturer_id: The manufacturer_id of this CreateProductRequestBody.
-        :type: str
+        :type manufacturer_id: str
         """
         self._manufacturer_id = manufacturer_id
 
@@ -172,7 +199,7 @@ class CreateProductRequestBody:
         厂商名称
 
         :param manufacturer_name: The manufacturer_name of this CreateProductRequestBody.
-        :type: str
+        :type manufacturer_name: str
         """
         self._manufacturer_name = manufacturer_name
 
@@ -194,7 +221,7 @@ class CreateProductRequestBody:
         产品型号
 
         :param model: The model of this CreateProductRequestBody.
-        :type: str
+        :type model: str
         """
         self._model = model
 
@@ -216,7 +243,7 @@ class CreateProductRequestBody:
         产品类型，0-普通产品(不支持子设备) 1-网关产品
 
         :param product_type: The product_type of this CreateProductRequestBody.
-        :type: int
+        :type product_type: int
         """
         self._product_type = product_type
 
@@ -238,7 +265,7 @@ class CreateProductRequestBody:
         产品描述，长度0-200
 
         :param description: The description of this CreateProductRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -260,7 +287,7 @@ class CreateProductRequestBody:
         产品的协议类型 0-mqtt 2-modbus 4-opcua
 
         :param protocol_type: The protocol_type of this CreateProductRequestBody.
-        :type: int
+        :type protocol_type: int
         """
         self._protocol_type = protocol_type
 
@@ -282,7 +309,7 @@ class CreateProductRequestBody:
         产品的设备类型（默认Default）
 
         :param device_type: The device_type of this CreateProductRequestBody.
-        :type: str
+        :type device_type: str
         """
         self._device_type = device_type
 
@@ -304,7 +331,7 @@ class CreateProductRequestBody:
         关联产品模板ID（使用产品模板创建产品时使用，否则为空），自动向下取整
 
         :param template_id: The template_id of this CreateProductRequestBody.
-        :type: int
+        :type template_id: int
         """
         self._template_id = template_id
 
@@ -326,7 +353,7 @@ class CreateProductRequestBody:
         模型版本
 
         :param version: The version of this CreateProductRequestBody.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -348,7 +375,7 @@ class CreateProductRequestBody:
         产品的数据格式 0-JSON 1-USER_DEFINED
 
         :param data_format: The data_format of this CreateProductRequestBody.
-        :type: int
+        :type data_format: int
         """
         self._data_format = data_format
 

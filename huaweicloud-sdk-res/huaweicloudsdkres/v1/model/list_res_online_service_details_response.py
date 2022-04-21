@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListResOnlineServiceDetailsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListResOnlineServiceDetailsResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, jobs=None, message=None, error_code=None):
-        """ListResOnlineServiceDetailsResponse - a model defined in huaweicloud sdk"""
+        """ListResOnlineServiceDetailsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param is_success: 是否成功。
+        :type is_success: bool
+        :param jobs: 
+        :type jobs: :class:`huaweicloudsdkres.v1.Jobs`
+        :param message: 返回消息（请求成功时，不返回此字段）。
+        :type message: str
+        :param error_code: 错误码（请求成功时，不返回此字段）。
+        :type error_code: str
+        """
         
         super(ListResOnlineServiceDetailsResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class ListResOnlineServiceDetailsResponse(SdkResponse):
         是否成功。
 
         :param is_success: The is_success of this ListResOnlineServiceDetailsResponse.
-        :type: bool
+        :type is_success: bool
         """
         self._is_success = is_success
 
@@ -83,7 +94,7 @@ class ListResOnlineServiceDetailsResponse(SdkResponse):
 
 
         :return: The jobs of this ListResOnlineServiceDetailsResponse.
-        :rtype: Jobs
+        :rtype: :class:`huaweicloudsdkres.v1.Jobs`
         """
         return self._jobs
 
@@ -93,7 +104,7 @@ class ListResOnlineServiceDetailsResponse(SdkResponse):
 
 
         :param jobs: The jobs of this ListResOnlineServiceDetailsResponse.
-        :type: Jobs
+        :type jobs: :class:`huaweicloudsdkres.v1.Jobs`
         """
         self._jobs = jobs
 
@@ -115,7 +126,7 @@ class ListResOnlineServiceDetailsResponse(SdkResponse):
         返回消息（请求成功时，不返回此字段）。
 
         :param message: The message of this ListResOnlineServiceDetailsResponse.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -137,7 +148,7 @@ class ListResOnlineServiceDetailsResponse(SdkResponse):
         错误码（请求成功时，不返回此字段）。
 
         :param error_code: The error_code of this ListResOnlineServiceDetailsResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 

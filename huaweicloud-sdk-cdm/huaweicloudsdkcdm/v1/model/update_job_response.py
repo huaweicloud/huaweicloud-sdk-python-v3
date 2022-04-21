@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateJobResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateJobResponse(SdkResponse):
     }
 
     def __init__(self, validation_result=None):
-        """UpdateJobResponse - a model defined in huaweicloud sdk"""
+        """UpdateJobResponse
+
+        The model defined in huaweicloud sdk
+
+        :param validation_result: 校验结果：如果修改失败，返回失败原因。如果修改成功，返回空列表
+        :type validation_result: list[:class:`huaweicloudsdkcdm.v1.JobValidationResult`]
+        """
         
         super(UpdateJobResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class UpdateJobResponse(SdkResponse):
         校验结果：如果修改失败，返回失败原因。如果修改成功，返回空列表
 
         :return: The validation_result of this UpdateJobResponse.
-        :rtype: list[JobValidationResult]
+        :rtype: list[:class:`huaweicloudsdkcdm.v1.JobValidationResult`]
         """
         return self._validation_result
 
@@ -58,7 +63,7 @@ class UpdateJobResponse(SdkResponse):
         校验结果：如果修改失败，返回失败原因。如果修改成功，返回空列表
 
         :param validation_result: The validation_result of this UpdateJobResponse.
-        :type: list[JobValidationResult]
+        :type validation_result: list[:class:`huaweicloudsdkcdm.v1.JobValidationResult`]
         """
         self._validation_result = validation_result
 

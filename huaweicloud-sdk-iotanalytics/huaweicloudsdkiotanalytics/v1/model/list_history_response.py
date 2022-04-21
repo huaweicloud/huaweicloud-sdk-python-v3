@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListHistoryResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListHistoryResponse(SdkResponse):
     }
 
     def __init__(self, timestamps=None, properties=None):
-        """ListHistoryResponse - a model defined in huaweicloud sdk"""
+        """ListHistoryResponse
+
+        The model defined in huaweicloud sdk
+
+        :param timestamps: 时间序列
+        :type timestamps: list[str]
+        :param properties: 查询设备的属性值
+        :type properties: list[:class:`huaweicloudsdkiotanalytics.v1.HistoryValues`]
+        """
         
         super(ListHistoryResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListHistoryResponse(SdkResponse):
         时间序列
 
         :param timestamps: The timestamps of this ListHistoryResponse.
-        :type: list[str]
+        :type timestamps: list[str]
         """
         self._timestamps = timestamps
 
@@ -74,7 +81,7 @@ class ListHistoryResponse(SdkResponse):
         查询设备的属性值
 
         :return: The properties of this ListHistoryResponse.
-        :rtype: list[HistoryValues]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.HistoryValues`]
         """
         return self._properties
 
@@ -85,7 +92,7 @@ class ListHistoryResponse(SdkResponse):
         查询设备的属性值
 
         :param properties: The properties of this ListHistoryResponse.
-        :type: list[HistoryValues]
+        :type properties: list[:class:`huaweicloudsdkiotanalytics.v1.HistoryValues`]
         """
         self._properties = properties
 

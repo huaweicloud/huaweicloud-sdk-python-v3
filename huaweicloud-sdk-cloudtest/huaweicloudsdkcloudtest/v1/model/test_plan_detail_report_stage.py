@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TestPlanDetailReportStage:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class TestPlanDetailReportStage:
     }
 
     def __init__(self, case_complete_rate=None):
-        """TestPlanDetailReportStage - a model defined in huaweicloud sdk"""
+        """TestPlanDetailReportStage
+
+        The model defined in huaweicloud sdk
+
+        :param case_complete_rate: 用例完成率,按状态统计
+        :type case_complete_rate: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class TestPlanDetailReportStage:
         用例完成率,按状态统计
 
         :param case_complete_rate: The case_complete_rate of this TestPlanDetailReportStage.
-        :type: str
+        :type case_complete_rate: str
         """
         self._case_complete_rate = case_complete_rate
 

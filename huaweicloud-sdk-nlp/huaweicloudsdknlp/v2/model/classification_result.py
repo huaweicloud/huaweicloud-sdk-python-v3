@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ClassificationResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ClassificationResult:
     }
 
     def __init__(self, content=None, label=None, confidence=None):
-        """ClassificationResult - a model defined in huaweicloud sdk"""
+        """ClassificationResult
+
+        The model defined in huaweicloud sdk
+
+        :param content: 待分析文本。
+        :type content: str
+        :param label: 分类标签。 1：广告 0：非广告
+        :type label: int
+        :param confidence: 标签label的置信度。
+        :type confidence: float
+        """
         
         
 
@@ -65,7 +74,7 @@ class ClassificationResult:
         待分析文本。
 
         :param content: The content of this ClassificationResult.
-        :type: str
+        :type content: str
         """
         self._content = content
 
@@ -87,7 +96,7 @@ class ClassificationResult:
         分类标签。 1：广告 0：非广告
 
         :param label: The label of this ClassificationResult.
-        :type: int
+        :type label: int
         """
         self._label = label
 
@@ -109,7 +118,7 @@ class ClassificationResult:
         标签label的置信度。
 
         :param confidence: The confidence of this ClassificationResult.
-        :type: float
+        :type confidence: float
         """
         self._confidence = confidence
 

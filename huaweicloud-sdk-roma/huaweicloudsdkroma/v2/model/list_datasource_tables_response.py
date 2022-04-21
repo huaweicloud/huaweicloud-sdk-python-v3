@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDatasourceTablesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListDatasourceTablesResponse(SdkResponse):
     }
 
     def __init__(self, tables=None):
-        """ListDatasourceTablesResponse - a model defined in huaweicloud sdk"""
+        """ListDatasourceTablesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param tables: 数据源中所有的表名称
+        :type tables: list[str]
+        """
         
         super(ListDatasourceTablesResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class ListDatasourceTablesResponse(SdkResponse):
         数据源中所有的表名称
 
         :param tables: The tables of this ListDatasourceTablesResponse.
-        :type: list[str]
+        :type tables: list[str]
         """
         self._tables = tables
 

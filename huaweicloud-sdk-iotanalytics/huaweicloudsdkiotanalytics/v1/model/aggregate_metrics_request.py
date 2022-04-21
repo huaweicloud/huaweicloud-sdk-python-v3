@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AggregateMetricsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class AggregateMetricsRequest:
     }
 
     def __init__(self, time_span=None, interval=None, offset=None, tags=None, property_filter=None, metrics=None, limit=None):
-        """AggregateMetricsRequest - a model defined in huaweicloud sdk"""
+        """AggregateMetricsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param time_span: 
+        :type time_span: :class:`huaweicloudsdkiotanalytics.v1.TimeSpanDT`
+        :param interval: 聚合时间间隔，正则：\&quot;^[1-9][0-9]*[dhms]$\&quot;，示例：\&quot;1d|1h|10m|10s\&quot;
+        :type interval: str
+        :param offset: 聚合时间偏移量，需要小于interval，正则： \&quot;^[1-9][0-9]*[hms]$\&quot;，示例： \&quot;1h|10m|10s\&quot;
+        :type offset: str
+        :param tags: 对property按指定tags标签进行过滤查询，填入资产标签属性的属性名与属性值，不可为空，例如 {\&quot;tagPropertyA\&quot;: \&quot;id0001\&quot;}；注意，标签过滤只对打上标签时刻之后的数据生效，打标签之前的数据不能通过标签过滤
+        :type tags: dict(str, object)
+        :param property_filter: 属性过滤器，最多5个
+        :type property_filter: list[:class:`huaweicloudsdkiotanalytics.v1.PropertyFilter`]
+        :param metrics: 聚合查询指标列表，对资产属性进行聚合查询得到指标
+        :type metrics: list[:class:`huaweicloudsdkiotanalytics.v1.DTAggregateMetrics`]
+        :param limit: 返回值个数限制，最多2000个
+        :type limit: int
+        """
         
         
 
@@ -74,7 +91,7 @@ class AggregateMetricsRequest:
 
 
         :return: The time_span of this AggregateMetricsRequest.
-        :rtype: TimeSpanDT
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.TimeSpanDT`
         """
         return self._time_span
 
@@ -84,7 +101,7 @@ class AggregateMetricsRequest:
 
 
         :param time_span: The time_span of this AggregateMetricsRequest.
-        :type: TimeSpanDT
+        :type time_span: :class:`huaweicloudsdkiotanalytics.v1.TimeSpanDT`
         """
         self._time_span = time_span
 
@@ -106,7 +123,7 @@ class AggregateMetricsRequest:
         聚合时间间隔，正则：\"^[1-9][0-9]*[dhms]$\"，示例：\"1d|1h|10m|10s\"
 
         :param interval: The interval of this AggregateMetricsRequest.
-        :type: str
+        :type interval: str
         """
         self._interval = interval
 
@@ -128,7 +145,7 @@ class AggregateMetricsRequest:
         聚合时间偏移量，需要小于interval，正则： \"^[1-9][0-9]*[hms]$\"，示例： \"1h|10m|10s\"
 
         :param offset: The offset of this AggregateMetricsRequest.
-        :type: str
+        :type offset: str
         """
         self._offset = offset
 
@@ -150,7 +167,7 @@ class AggregateMetricsRequest:
         对property按指定tags标签进行过滤查询，填入资产标签属性的属性名与属性值，不可为空，例如 {\"tagPropertyA\": \"id0001\"}；注意，标签过滤只对打上标签时刻之后的数据生效，打标签之前的数据不能通过标签过滤
 
         :param tags: The tags of this AggregateMetricsRequest.
-        :type: dict(str, object)
+        :type tags: dict(str, object)
         """
         self._tags = tags
 
@@ -161,7 +178,7 @@ class AggregateMetricsRequest:
         属性过滤器，最多5个
 
         :return: The property_filter of this AggregateMetricsRequest.
-        :rtype: list[PropertyFilter]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.PropertyFilter`]
         """
         return self._property_filter
 
@@ -172,7 +189,7 @@ class AggregateMetricsRequest:
         属性过滤器，最多5个
 
         :param property_filter: The property_filter of this AggregateMetricsRequest.
-        :type: list[PropertyFilter]
+        :type property_filter: list[:class:`huaweicloudsdkiotanalytics.v1.PropertyFilter`]
         """
         self._property_filter = property_filter
 
@@ -183,7 +200,7 @@ class AggregateMetricsRequest:
         聚合查询指标列表，对资产属性进行聚合查询得到指标
 
         :return: The metrics of this AggregateMetricsRequest.
-        :rtype: list[DTAggregateMetrics]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.DTAggregateMetrics`]
         """
         return self._metrics
 
@@ -194,7 +211,7 @@ class AggregateMetricsRequest:
         聚合查询指标列表，对资产属性进行聚合查询得到指标
 
         :param metrics: The metrics of this AggregateMetricsRequest.
-        :type: list[DTAggregateMetrics]
+        :type metrics: list[:class:`huaweicloudsdkiotanalytics.v1.DTAggregateMetrics`]
         """
         self._metrics = metrics
 
@@ -216,7 +233,7 @@ class AggregateMetricsRequest:
         返回值个数限制，最多2000个
 
         :param limit: The limit of this AggregateMetricsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

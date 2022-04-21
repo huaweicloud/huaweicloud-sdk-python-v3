@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListNewInstantMessagesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListNewInstantMessagesResponse(SdkResponse):
     }
 
     def __init__(self, imstatus=None, immsg=None, last_message_time_id=None):
-        """ListNewInstantMessagesResponse - a model defined in huaweicloud sdk"""
+        """ListNewInstantMessagesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param imstatus: 状态列表
+        :type imstatus: list[:class:`huaweicloudsdkosm.v2.ImStatusV2`]
+        :param immsg: 留言内容列表
+        :type immsg: list[:class:`huaweicloudsdkosm.v2.UserInstantIncidentMsgV2`]
+        :param last_message_time_id: 上次查询留言时间
+        :type last_message_time_id: str
+        """
         
         super(ListNewInstantMessagesResponse, self).__init__()
 
@@ -57,7 +66,7 @@ class ListNewInstantMessagesResponse(SdkResponse):
         状态列表
 
         :return: The imstatus of this ListNewInstantMessagesResponse.
-        :rtype: list[ImStatusV2]
+        :rtype: list[:class:`huaweicloudsdkosm.v2.ImStatusV2`]
         """
         return self._imstatus
 
@@ -68,7 +77,7 @@ class ListNewInstantMessagesResponse(SdkResponse):
         状态列表
 
         :param imstatus: The imstatus of this ListNewInstantMessagesResponse.
-        :type: list[ImStatusV2]
+        :type imstatus: list[:class:`huaweicloudsdkosm.v2.ImStatusV2`]
         """
         self._imstatus = imstatus
 
@@ -79,7 +88,7 @@ class ListNewInstantMessagesResponse(SdkResponse):
         留言内容列表
 
         :return: The immsg of this ListNewInstantMessagesResponse.
-        :rtype: list[UserInstantIncidentMsgV2]
+        :rtype: list[:class:`huaweicloudsdkosm.v2.UserInstantIncidentMsgV2`]
         """
         return self._immsg
 
@@ -90,7 +99,7 @@ class ListNewInstantMessagesResponse(SdkResponse):
         留言内容列表
 
         :param immsg: The immsg of this ListNewInstantMessagesResponse.
-        :type: list[UserInstantIncidentMsgV2]
+        :type immsg: list[:class:`huaweicloudsdkosm.v2.UserInstantIncidentMsgV2`]
         """
         self._immsg = immsg
 
@@ -112,7 +121,7 @@ class ListNewInstantMessagesResponse(SdkResponse):
         上次查询留言时间
 
         :param last_message_time_id: The last_message_time_id of this ListNewInstantMessagesResponse.
-        :type: str
+        :type last_message_time_id: str
         """
         self._last_message_time_id = last_message_time_id
 

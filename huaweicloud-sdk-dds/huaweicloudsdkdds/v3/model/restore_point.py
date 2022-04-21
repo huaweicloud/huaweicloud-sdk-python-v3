@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestorePoint:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class RestorePoint:
     }
 
     def __init__(self, instance_id=None, type=None, backup_id=None, restore_time=None):
-        """RestorePoint - a model defined in huaweicloud sdk"""
+        """RestorePoint
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。当type为“backup”，为非必选。当type为“timestamp”，为必选。
+        :type instance_id: str
+        :param type: 恢复方式，枚举值： - “backup”，表示使用备份文件恢复，按照此方式恢复时，当“type”字段为非必选时，“backup_id”必选。 - “timestamp”，表示按时间点恢复，按照此方式恢复时，当“type”字段必选时，“restore_time”必选。
+        :type type: str
+        :param backup_id: 用于恢复的备份ID。当使用备份文件恢复时需要指定该参数。当“type”字段为非必选时，“backup_id”必选。
+        :type backup_id: str
+        :param restore_time: 恢复数据的时间点，格式为UNIX时间戳，单位是毫秒，时区为UTC。须知：当“type”字段必选时，“restore_time”必选。
+        :type restore_time: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class RestorePoint:
         实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。当type为“backup”，为非必选。当type为“timestamp”，为必选。
 
         :param instance_id: The instance_id of this RestorePoint.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -95,7 +106,7 @@ class RestorePoint:
         恢复方式，枚举值： - “backup”，表示使用备份文件恢复，按照此方式恢复时，当“type”字段为非必选时，“backup_id”必选。 - “timestamp”，表示按时间点恢复，按照此方式恢复时，当“type”字段必选时，“restore_time”必选。
 
         :param type: The type of this RestorePoint.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -117,7 +128,7 @@ class RestorePoint:
         用于恢复的备份ID。当使用备份文件恢复时需要指定该参数。当“type”字段为非必选时，“backup_id”必选。
 
         :param backup_id: The backup_id of this RestorePoint.
-        :type: str
+        :type backup_id: str
         """
         self._backup_id = backup_id
 
@@ -139,7 +150,7 @@ class RestorePoint:
         恢复数据的时间点，格式为UNIX时间戳，单位是毫秒，时区为UTC。须知：当“type”字段必选时，“restore_time”必选。
 
         :param restore_time: The restore_time of this RestorePoint.
-        :type: str
+        :type restore_time: str
         """
         self._restore_time = restore_time
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RecordDownloadInfoBO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RecordDownloadInfoBO:
     }
 
     def __init__(self, conf_uuid=None, urls=None):
-        """RecordDownloadInfoBO - a model defined in huaweicloud sdk"""
+        """RecordDownloadInfoBO
+
+        The model defined in huaweicloud sdk
+
+        :param conf_uuid: 会议UUID
+        :type conf_uuid: str
+        :param urls: 录制文件下载URL
+        :type urls: list[:class:`huaweicloudsdkmeeting.v1.RecordDownloadUrlDO`]
+        """
         
         
 
@@ -63,7 +70,7 @@ class RecordDownloadInfoBO:
         会议UUID
 
         :param conf_uuid: The conf_uuid of this RecordDownloadInfoBO.
-        :type: str
+        :type conf_uuid: str
         """
         self._conf_uuid = conf_uuid
 
@@ -74,7 +81,7 @@ class RecordDownloadInfoBO:
         录制文件下载URL
 
         :return: The urls of this RecordDownloadInfoBO.
-        :rtype: list[RecordDownloadUrlDO]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.RecordDownloadUrlDO`]
         """
         return self._urls
 
@@ -85,7 +92,7 @@ class RecordDownloadInfoBO:
         录制文件下载URL
 
         :param urls: The urls of this RecordDownloadInfoBO.
-        :type: list[RecordDownloadUrlDO]
+        :type urls: list[:class:`huaweicloudsdkmeeting.v1.RecordDownloadUrlDO`]
         """
         self._urls = urls
 

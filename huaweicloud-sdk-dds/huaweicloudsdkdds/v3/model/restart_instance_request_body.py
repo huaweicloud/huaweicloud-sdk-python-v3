@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestartInstanceRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RestartInstanceRequestBody:
     }
 
     def __init__(self, target_type=None, target_id=None):
-        """RestartInstanceRequestBody - a model defined in huaweicloud sdk"""
+        """RestartInstanceRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param target_type: 待重启对象的类型。 - 重启集群实例下的节点时，该参数必选。取值为“mongos”、“shard”、或“config”。 - 重启整个实例时，不传该参数。
+        :type target_type: str
+        :param target_id: 待重启对象的ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。 - 重启集群实例下的节点时，对于mongos节点，取值为mongos节点ID，对于shard和config组，取值为shard和config组ID。 - 重启整个实例时，取值为实例ID。
+        :type target_id: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class RestartInstanceRequestBody:
         待重启对象的类型。 - 重启集群实例下的节点时，该参数必选。取值为“mongos”、“shard”、或“config”。 - 重启整个实例时，不传该参数。
 
         :param target_type: The target_type of this RestartInstanceRequestBody.
-        :type: str
+        :type target_type: str
         """
         self._target_type = target_type
 
@@ -84,7 +91,7 @@ class RestartInstanceRequestBody:
         待重启对象的ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。 - 重启集群实例下的节点时，对于mongos节点，取值为mongos节点ID，对于shard和config组，取值为shard和config组ID。 - 重启整个实例时，取值为实例ID。
 
         :param target_id: The target_id of this RestartInstanceRequestBody.
-        :type: str
+        :type target_id: str
         """
         self._target_id = target_id
 

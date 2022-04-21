@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDomainBandwidthPeakRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ListDomainBandwidthPeakRequest:
     }
 
     def __init__(self, play_domains=None, app=None, stream=None, region=None, isp=None, protocol=None, start_time=None, end_time=None):
-        """ListDomainBandwidthPeakRequest - a model defined in huaweicloud sdk"""
+        """ListDomainBandwidthPeakRequest
+
+        The model defined in huaweicloud sdk
+
+        :param play_domains: 播放域名列表，最多支持查询100个域名，多个域名以逗号分隔。 
+        :type play_domains: list[str]
+        :param app: 应用名称。
+        :type app: str
+        :param stream: 流名。
+        :type stream: str
+        :param region: 区域列表。具体取值请参考[省份名称缩写](live_03_0043.xml)，不填写查询所有区域。 
+        :type region: list[str]
+        :param isp: 运营商列表，取值如下： - CMCC ：移动 - CTCC ： 电信 - CUCC ：联通 - OTHER ：其他  不填写查询所有运营商。 
+        :type isp: list[str]
+        :param protocol: 请求协议
+        :type protocol: str
+        :param start_time: 起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度31天，最大查询周期一年。  若参数为空，默认查询7天数据。 
+        :type start_time: str
+        :param end_time: 结束时间。日期格式按照ISO8601表示法，并使用UTC时间。格式为：YYYY-MM-DDThh:mm:ssZ。  若参数为空，默认为当前时间。结束时间需大于起始时间。 
+        :type end_time: str
+        """
         
         
 
@@ -92,7 +111,7 @@ class ListDomainBandwidthPeakRequest:
         播放域名列表，最多支持查询100个域名，多个域名以逗号分隔。 
 
         :param play_domains: The play_domains of this ListDomainBandwidthPeakRequest.
-        :type: list[str]
+        :type play_domains: list[str]
         """
         self._play_domains = play_domains
 
@@ -114,7 +133,7 @@ class ListDomainBandwidthPeakRequest:
         应用名称。
 
         :param app: The app of this ListDomainBandwidthPeakRequest.
-        :type: str
+        :type app: str
         """
         self._app = app
 
@@ -136,7 +155,7 @@ class ListDomainBandwidthPeakRequest:
         流名。
 
         :param stream: The stream of this ListDomainBandwidthPeakRequest.
-        :type: str
+        :type stream: str
         """
         self._stream = stream
 
@@ -158,7 +177,7 @@ class ListDomainBandwidthPeakRequest:
         区域列表。具体取值请参考[省份名称缩写](live_03_0043.xml)，不填写查询所有区域。 
 
         :param region: The region of this ListDomainBandwidthPeakRequest.
-        :type: list[str]
+        :type region: list[str]
         """
         self._region = region
 
@@ -180,7 +199,7 @@ class ListDomainBandwidthPeakRequest:
         运营商列表，取值如下： - CMCC ：移动 - CTCC ： 电信 - CUCC ：联通 - OTHER ：其他  不填写查询所有运营商。 
 
         :param isp: The isp of this ListDomainBandwidthPeakRequest.
-        :type: list[str]
+        :type isp: list[str]
         """
         self._isp = isp
 
@@ -202,7 +221,7 @@ class ListDomainBandwidthPeakRequest:
         请求协议
 
         :param protocol: The protocol of this ListDomainBandwidthPeakRequest.
-        :type: str
+        :type protocol: str
         """
         self._protocol = protocol
 
@@ -224,7 +243,7 @@ class ListDomainBandwidthPeakRequest:
         起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度31天，最大查询周期一年。  若参数为空，默认查询7天数据。 
 
         :param start_time: The start_time of this ListDomainBandwidthPeakRequest.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -246,7 +265,7 @@ class ListDomainBandwidthPeakRequest:
         结束时间。日期格式按照ISO8601表示法，并使用UTC时间。格式为：YYYY-MM-DDThh:mm:ssZ。  若参数为空，默认为当前时间。结束时间需大于起始时间。 
 
         :param end_time: The end_time of this ListDomainBandwidthPeakRequest.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 

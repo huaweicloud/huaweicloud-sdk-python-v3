@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowMetricDataResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowMetricDataResponse(SdkResponse):
     }
 
     def __init__(self, datapoints=None, metric_name=None):
-        """ShowMetricDataResponse - a model defined in huaweicloud sdk"""
+        """ShowMetricDataResponse
+
+        The model defined in huaweicloud sdk
+
+        :param datapoints: 指标数据列表。由于查询数据时，云监控会根据所选择的聚合粒度向前取整from参数，所以datapoints中包含的数据点有可能会多于预期。
+        :type datapoints: list[:class:`huaweicloudsdkces.v1.Datapoint`]
+        :param metric_name: 指标名称，例如弹性云服务器监控指标中的cpu_util。
+        :type metric_name: str
+        """
         
         super(ShowMetricDataResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ShowMetricDataResponse(SdkResponse):
         指标数据列表。由于查询数据时，云监控会根据所选择的聚合粒度向前取整from参数，所以datapoints中包含的数据点有可能会多于预期。
 
         :return: The datapoints of this ShowMetricDataResponse.
-        :rtype: list[Datapoint]
+        :rtype: list[:class:`huaweicloudsdkces.v1.Datapoint`]
         """
         return self._datapoints
 
@@ -63,7 +70,7 @@ class ShowMetricDataResponse(SdkResponse):
         指标数据列表。由于查询数据时，云监控会根据所选择的聚合粒度向前取整from参数，所以datapoints中包含的数据点有可能会多于预期。
 
         :param datapoints: The datapoints of this ShowMetricDataResponse.
-        :type: list[Datapoint]
+        :type datapoints: list[:class:`huaweicloudsdkces.v1.Datapoint`]
         """
         self._datapoints = datapoints
 
@@ -85,7 +92,7 @@ class ShowMetricDataResponse(SdkResponse):
         指标名称，例如弹性云服务器监控指标中的cpu_util。
 
         :param metric_name: The metric_name of this ShowMetricDataResponse.
-        :type: str
+        :type metric_name: str
         """
         self._metric_name = metric_name
 

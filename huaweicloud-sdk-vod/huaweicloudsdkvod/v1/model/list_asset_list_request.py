@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAssetListRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class ListAssetListRequest:
     }
 
     def __init__(self, asset_id=None, status=None, start_time=None, end_time=None, category_id=None, tags=None, query_string=None, media_type=None, page=None, size=None, order=None):
-        """ListAssetListRequest - a model defined in huaweicloud sdk"""
+        """ListAssetListRequest
+
+        The model defined in huaweicloud sdk
+
+        :param asset_id: 媒资ID，最多同时查询10个。
+        :type asset_id: list[str]
+        :param status: 媒资状态，同时查询多个状态的媒资。  取值如下： - CREATING：上传中 - FAILED：上传失败 - CREATED：上传成功 - PUBLISHED：已发布 - TRANSCODING：转码中 - TRANSCODE_SUCCEED：转码成功 - TRANSCODE_FAILED：转码失败 - THUMBNAILING：截图中 - THUMBNAIL_SUCCEED：截图成功 - THUMBNAIL_FAILED：截图失败 - UN_REVIEW：未审核 - REVIEWING：审核中 - REVIEW_SUSPICIOUS ：审核不过，待人工复审 - REVIEW_PASSED：审核通过 - REVIEW_FAILED：审核任务失败 - REVIEW_BLOCKED：已屏蔽
+        :type status: list[str]
+        :param start_time: 起始时间。  格式为yyyymmddhhm mss。必须是与时区无关的UTC时间。
+        :type start_time: str
+        :param end_time: 结束时间。  格式为yyyymmddhhm mss。必须是与时区无关的UTC时间。
+        :type end_time: str
+        :param category_id: 分类ID。
+        :type category_id: int
+        :param tags: 媒资标签。 单个标签不超过16个字节， 最多不超过16 个标签。 多个用英文逗号分隔，UTF8编码。
+        :type tags: str
+        :param query_string: 在媒资标题、 描述、分类名称中模糊查询的字符串。
+        :type query_string: str
+        :param media_type: 音视频文件的格式，支持多格式查询，最多不超过20个。  取值如下： - 视频文件格式：MP4、TS、MOV、MXF、MPG、FLV、WMV、AVI、M4V、F4V、MPEG - 音频文件格式：MP3、OGG、WAV、WMA、APE、FLAC、AAC、AC3、MMF、AMR、M4A、M4R、WV、MP2
+        :type media_type: list[str]
+        :param page: 分页编号。  默认值：0。
+        :type page: int
+        :param size: 每页记录数。  取值范围：[1,100]。  默认值：10。
+        :type size: int
+        :param order: 查询顺序，按createTime顺序还是倒序
+        :type order: str
+        """
         
         
 
@@ -108,7 +133,7 @@ class ListAssetListRequest:
         媒资ID，最多同时查询10个。
 
         :param asset_id: The asset_id of this ListAssetListRequest.
-        :type: list[str]
+        :type asset_id: list[str]
         """
         self._asset_id = asset_id
 
@@ -130,7 +155,7 @@ class ListAssetListRequest:
         媒资状态，同时查询多个状态的媒资。  取值如下： - CREATING：上传中 - FAILED：上传失败 - CREATED：上传成功 - PUBLISHED：已发布 - TRANSCODING：转码中 - TRANSCODE_SUCCEED：转码成功 - TRANSCODE_FAILED：转码失败 - THUMBNAILING：截图中 - THUMBNAIL_SUCCEED：截图成功 - THUMBNAIL_FAILED：截图失败 - UN_REVIEW：未审核 - REVIEWING：审核中 - REVIEW_SUSPICIOUS ：审核不过，待人工复审 - REVIEW_PASSED：审核通过 - REVIEW_FAILED：审核任务失败 - REVIEW_BLOCKED：已屏蔽
 
         :param status: The status of this ListAssetListRequest.
-        :type: list[str]
+        :type status: list[str]
         """
         self._status = status
 
@@ -152,7 +177,7 @@ class ListAssetListRequest:
         起始时间。  格式为yyyymmddhhm mss。必须是与时区无关的UTC时间。
 
         :param start_time: The start_time of this ListAssetListRequest.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -174,7 +199,7 @@ class ListAssetListRequest:
         结束时间。  格式为yyyymmddhhm mss。必须是与时区无关的UTC时间。
 
         :param end_time: The end_time of this ListAssetListRequest.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -196,7 +221,7 @@ class ListAssetListRequest:
         分类ID。
 
         :param category_id: The category_id of this ListAssetListRequest.
-        :type: int
+        :type category_id: int
         """
         self._category_id = category_id
 
@@ -218,7 +243,7 @@ class ListAssetListRequest:
         媒资标签。 单个标签不超过16个字节， 最多不超过16 个标签。 多个用英文逗号分隔，UTF8编码。
 
         :param tags: The tags of this ListAssetListRequest.
-        :type: str
+        :type tags: str
         """
         self._tags = tags
 
@@ -240,7 +265,7 @@ class ListAssetListRequest:
         在媒资标题、 描述、分类名称中模糊查询的字符串。
 
         :param query_string: The query_string of this ListAssetListRequest.
-        :type: str
+        :type query_string: str
         """
         self._query_string = query_string
 
@@ -262,7 +287,7 @@ class ListAssetListRequest:
         音视频文件的格式，支持多格式查询，最多不超过20个。  取值如下： - 视频文件格式：MP4、TS、MOV、MXF、MPG、FLV、WMV、AVI、M4V、F4V、MPEG - 音频文件格式：MP3、OGG、WAV、WMA、APE、FLAC、AAC、AC3、MMF、AMR、M4A、M4R、WV、MP2
 
         :param media_type: The media_type of this ListAssetListRequest.
-        :type: list[str]
+        :type media_type: list[str]
         """
         self._media_type = media_type
 
@@ -284,7 +309,7 @@ class ListAssetListRequest:
         分页编号。  默认值：0。
 
         :param page: The page of this ListAssetListRequest.
-        :type: int
+        :type page: int
         """
         self._page = page
 
@@ -306,7 +331,7 @@ class ListAssetListRequest:
         每页记录数。  取值范围：[1,100]。  默认值：10。
 
         :param size: The size of this ListAssetListRequest.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -328,7 +353,7 @@ class ListAssetListRequest:
         查询顺序，按createTime顺序还是倒序
 
         :param order: The order of this ListAssetListRequest.
-        :type: str
+        :type order: str
         """
         self._order = order
 

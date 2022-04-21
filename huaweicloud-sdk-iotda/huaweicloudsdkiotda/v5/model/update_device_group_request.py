@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDeviceGroupRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateDeviceGroupRequest:
     }
 
     def __init__(self, instance_id=None, group_id=None, body=None):
-        """UpdateDeviceGroupRequest - a model defined in huaweicloud sdk"""
+        """UpdateDeviceGroupRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
+        :type instance_id: str
+        :param group_id: **参数说明**：设备组ID，用于唯一标识一个设备组，在创建设备组时由物联网平台分配。 **取值范围**：长度不超过36，十六进制字符串和连接符（-）的组合。
+        :type group_id: str
+        :param body: Body of the UpdateDeviceGroupRequest
+        :type body: :class:`huaweicloudsdkiotda.v5.UpdateDeviceGroupDTO`
+        """
         
         
 
@@ -67,7 +76,7 @@ class UpdateDeviceGroupRequest:
         **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
         :param instance_id: The instance_id of this UpdateDeviceGroupRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -89,7 +98,7 @@ class UpdateDeviceGroupRequest:
         **参数说明**：设备组ID，用于唯一标识一个设备组，在创建设备组时由物联网平台分配。 **取值范围**：长度不超过36，十六进制字符串和连接符（-）的组合。
 
         :param group_id: The group_id of this UpdateDeviceGroupRequest.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -99,7 +108,7 @@ class UpdateDeviceGroupRequest:
 
 
         :return: The body of this UpdateDeviceGroupRequest.
-        :rtype: UpdateDeviceGroupDTO
+        :rtype: :class:`huaweicloudsdkiotda.v5.UpdateDeviceGroupDTO`
         """
         return self._body
 
@@ -109,7 +118,7 @@ class UpdateDeviceGroupRequest:
 
 
         :param body: The body of this UpdateDeviceGroupRequest.
-        :type: UpdateDeviceGroupDTO
+        :type body: :class:`huaweicloudsdkiotda.v5.UpdateDeviceGroupDTO`
         """
         self._body = body
 

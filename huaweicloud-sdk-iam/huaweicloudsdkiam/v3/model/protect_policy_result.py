@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ProtectPolicyResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ProtectPolicyResult:
     }
 
     def __init__(self, operation_protection=None):
-        """ProtectPolicyResult - a model defined in huaweicloud sdk"""
+        """ProtectPolicyResult
+
+        The model defined in huaweicloud sdk
+
+        :param operation_protection: 是否开启操作保护，开启为\&quot;true\&quot;，未开启为\&quot;false\&quot;。
+        :type operation_protection: bool
+        """
         
         
 
@@ -57,7 +62,7 @@ class ProtectPolicyResult:
         是否开启操作保护，开启为\"true\"，未开启为\"false\"。
 
         :param operation_protection: The operation_protection of this ProtectPolicyResult.
-        :type: bool
+        :type operation_protection: bool
         """
         self._operation_protection = operation_protection
 

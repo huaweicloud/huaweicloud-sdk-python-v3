@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowClusterRespCluster:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ShowClusterRespCluster:
     }
 
     def __init__(self, controller=None, brokers=None, topics_count=None, partitions_count=None, online_partitions_count=None, replicas_count=None, isr_replicas_count=None, consumers_count=None):
-        """ShowClusterRespCluster - a model defined in huaweicloud sdk"""
+        """ShowClusterRespCluster
+
+        The model defined in huaweicloud sdk
+
+        :param controller: 控制器ID。
+        :type controller: str
+        :param brokers: 节点列表。
+        :type brokers: list[:class:`huaweicloudsdkkafka.v2.ShowClusterRespClusterBrokers`]
+        :param topics_count: 主题数量。
+        :type topics_count: int
+        :param partitions_count: 分区数量。
+        :type partitions_count: int
+        :param online_partitions_count: 在线分区数量。
+        :type online_partitions_count: int
+        :param replicas_count: 副本数量。
+        :type replicas_count: int
+        :param isr_replicas_count: ISR（In-Sync Replicas） 副本总数。
+        :type isr_replicas_count: int
+        :param consumers_count: 消费组数量。
+        :type consumers_count: int
+        """
         
         
 
@@ -93,7 +112,7 @@ class ShowClusterRespCluster:
         控制器ID。
 
         :param controller: The controller of this ShowClusterRespCluster.
-        :type: str
+        :type controller: str
         """
         self._controller = controller
 
@@ -104,7 +123,7 @@ class ShowClusterRespCluster:
         节点列表。
 
         :return: The brokers of this ShowClusterRespCluster.
-        :rtype: list[ShowClusterRespClusterBrokers]
+        :rtype: list[:class:`huaweicloudsdkkafka.v2.ShowClusterRespClusterBrokers`]
         """
         return self._brokers
 
@@ -115,7 +134,7 @@ class ShowClusterRespCluster:
         节点列表。
 
         :param brokers: The brokers of this ShowClusterRespCluster.
-        :type: list[ShowClusterRespClusterBrokers]
+        :type brokers: list[:class:`huaweicloudsdkkafka.v2.ShowClusterRespClusterBrokers`]
         """
         self._brokers = brokers
 
@@ -137,7 +156,7 @@ class ShowClusterRespCluster:
         主题数量。
 
         :param topics_count: The topics_count of this ShowClusterRespCluster.
-        :type: int
+        :type topics_count: int
         """
         self._topics_count = topics_count
 
@@ -159,7 +178,7 @@ class ShowClusterRespCluster:
         分区数量。
 
         :param partitions_count: The partitions_count of this ShowClusterRespCluster.
-        :type: int
+        :type partitions_count: int
         """
         self._partitions_count = partitions_count
 
@@ -181,7 +200,7 @@ class ShowClusterRespCluster:
         在线分区数量。
 
         :param online_partitions_count: The online_partitions_count of this ShowClusterRespCluster.
-        :type: int
+        :type online_partitions_count: int
         """
         self._online_partitions_count = online_partitions_count
 
@@ -203,7 +222,7 @@ class ShowClusterRespCluster:
         副本数量。
 
         :param replicas_count: The replicas_count of this ShowClusterRespCluster.
-        :type: int
+        :type replicas_count: int
         """
         self._replicas_count = replicas_count
 
@@ -225,7 +244,7 @@ class ShowClusterRespCluster:
         ISR（In-Sync Replicas） 副本总数。
 
         :param isr_replicas_count: The isr_replicas_count of this ShowClusterRespCluster.
-        :type: int
+        :type isr_replicas_count: int
         """
         self._isr_replicas_count = isr_replicas_count
 
@@ -247,7 +266,7 @@ class ShowClusterRespCluster:
         消费组数量。
 
         :param consumers_count: The consumers_count of this ShowClusterRespCluster.
-        :type: int
+        :type consumers_count: int
         """
         self._consumers_count = consumers_count
 

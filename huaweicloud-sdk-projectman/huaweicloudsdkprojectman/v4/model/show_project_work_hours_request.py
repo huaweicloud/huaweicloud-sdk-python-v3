@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowProjectWorkHoursRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowProjectWorkHoursRequest:
     }
 
     def __init__(self, project_id=None, body=None):
-        """ShowProjectWorkHoursRequest - a model defined in huaweicloud sdk"""
+        """ShowProjectWorkHoursRequest
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: devcloud的项目id
+        :type project_id: str
+        :param body: Body of the ShowProjectWorkHoursRequest
+        :type body: :class:`huaweicloudsdkprojectman.v4.ShowProjectWorkHoursRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class ShowProjectWorkHoursRequest:
         devcloud的项目id
 
         :param project_id: The project_id of this ShowProjectWorkHoursRequest.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -72,7 +79,7 @@ class ShowProjectWorkHoursRequest:
 
 
         :return: The body of this ShowProjectWorkHoursRequest.
-        :rtype: ShowProjectWorkHoursRequestBody
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ShowProjectWorkHoursRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class ShowProjectWorkHoursRequest:
 
 
         :param body: The body of this ShowProjectWorkHoursRequest.
-        :type: ShowProjectWorkHoursRequestBody
+        :type body: :class:`huaweicloudsdkprojectman.v4.ShowProjectWorkHoursRequestBody`
         """
         self._body = body
 

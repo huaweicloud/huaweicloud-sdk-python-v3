@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreatePasswordAuthRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreatePasswordAuthRequest:
     }
 
     def __init__(self, repo_type=None, body=None):
-        """CreatePasswordAuthRequest - a model defined in huaweicloud sdk"""
+        """CreatePasswordAuthRequest
+
+        The model defined in huaweicloud sdk
+
+        :param repo_type: 仓库类型。 支持口令授权的仓库类型有：github、devcloud、bitbucket。
+        :type repo_type: str
+        :param body: Body of the CreatePasswordAuthRequest
+        :type body: :class:`huaweicloudsdkservicestage.v2.AccessPassword`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreatePasswordAuthRequest:
         仓库类型。 支持口令授权的仓库类型有：github、devcloud、bitbucket。
 
         :param repo_type: The repo_type of this CreatePasswordAuthRequest.
-        :type: str
+        :type repo_type: str
         """
         self._repo_type = repo_type
 
@@ -72,7 +79,7 @@ class CreatePasswordAuthRequest:
 
 
         :return: The body of this CreatePasswordAuthRequest.
-        :rtype: AccessPassword
+        :rtype: :class:`huaweicloudsdkservicestage.v2.AccessPassword`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CreatePasswordAuthRequest:
 
 
         :param body: The body of this CreatePasswordAuthRequest.
-        :type: AccessPassword
+        :type body: :class:`huaweicloudsdkservicestage.v2.AccessPassword`
         """
         self._body = body
 

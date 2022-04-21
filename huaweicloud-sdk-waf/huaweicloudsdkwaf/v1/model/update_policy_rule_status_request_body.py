@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdatePolicyRuleStatusRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdatePolicyRuleStatusRequestBody:
     }
 
     def __init__(self, status=None):
-        """UpdatePolicyRuleStatusRequestBody - a model defined in huaweicloud sdk"""
+        """UpdatePolicyRuleStatusRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param status: 状态（开启：1，关闭：0）
+        :type status: int
+        """
         
         
 
@@ -58,7 +63,7 @@ class UpdatePolicyRuleStatusRequestBody:
         状态（开启：1，关闭：0）
 
         :param status: The status of this UpdatePolicyRuleStatusRequestBody.
-        :type: int
+        :type status: int
         """
         self._status = status
 

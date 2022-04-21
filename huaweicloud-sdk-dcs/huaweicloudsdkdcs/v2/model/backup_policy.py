@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BackupPolicy:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class BackupPolicy:
     }
 
     def __init__(self, backup_type=None, save_days=None, periodical_backup_plan=None):
-        """BackupPolicy - a model defined in huaweicloud sdk"""
+        """BackupPolicy
+
+        The model defined in huaweicloud sdk
+
+        :param backup_type: 备份类型。 - auto：自动备份 - manual：手动备份 
+        :type backup_type: str
+        :param save_days: 当backup_type设置为auto时，该参数为必填。 保留天数，单位：天，取值范围：1-7。 
+        :type save_days: int
+        :param periodical_backup_plan: 
+        :type periodical_backup_plan: :class:`huaweicloudsdkdcs.v2.BackupPlan`
+        """
         
         
 
@@ -67,7 +76,7 @@ class BackupPolicy:
         备份类型。 - auto：自动备份 - manual：手动备份 
 
         :param backup_type: The backup_type of this BackupPolicy.
-        :type: str
+        :type backup_type: str
         """
         self._backup_type = backup_type
 
@@ -89,7 +98,7 @@ class BackupPolicy:
         当backup_type设置为auto时，该参数为必填。 保留天数，单位：天，取值范围：1-7。 
 
         :param save_days: The save_days of this BackupPolicy.
-        :type: int
+        :type save_days: int
         """
         self._save_days = save_days
 
@@ -99,7 +108,7 @@ class BackupPolicy:
 
 
         :return: The periodical_backup_plan of this BackupPolicy.
-        :rtype: BackupPlan
+        :rtype: :class:`huaweicloudsdkdcs.v2.BackupPlan`
         """
         return self._periodical_backup_plan
 
@@ -109,7 +118,7 @@ class BackupPolicy:
 
 
         :param periodical_backup_plan: The periodical_backup_plan of this BackupPolicy.
-        :type: BackupPlan
+        :type periodical_backup_plan: :class:`huaweicloudsdkdcs.v2.BackupPlan`
         """
         self._periodical_backup_plan = periodical_backup_plan
 

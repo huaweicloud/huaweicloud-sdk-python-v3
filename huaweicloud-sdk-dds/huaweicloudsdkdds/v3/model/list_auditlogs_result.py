@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAuditlogsResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListAuditlogsResult:
     }
 
     def __init__(self, node_id=None, id=None, name=None, size=None, start_time=None, end_time=None):
-        """ListAuditlogsResult - a model defined in huaweicloud sdk"""
+        """ListAuditlogsResult
+
+        The model defined in huaweicloud sdk
+
+        :param node_id: 节点ID。
+        :type node_id: str
+        :param id: 审计日志ID。
+        :type id: str
+        :param name: 审计日志文件名。
+        :type name: str
+        :param size: 审计日志大小，单位：byte。
+        :type size: int
+        :param start_time: 审计日志开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始，Z指时区偏移量，例如北京时间偏移显示为+0800。
+        :type start_time: str
+        :param end_time: 审计日志结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        :type end_time: str
+        """
         
         
 
@@ -77,7 +92,7 @@ class ListAuditlogsResult:
         节点ID。
 
         :param node_id: The node_id of this ListAuditlogsResult.
-        :type: str
+        :type node_id: str
         """
         self._node_id = node_id
 
@@ -99,7 +114,7 @@ class ListAuditlogsResult:
         审计日志ID。
 
         :param id: The id of this ListAuditlogsResult.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -121,7 +136,7 @@ class ListAuditlogsResult:
         审计日志文件名。
 
         :param name: The name of this ListAuditlogsResult.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -143,7 +158,7 @@ class ListAuditlogsResult:
         审计日志大小，单位：byte。
 
         :param size: The size of this ListAuditlogsResult.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -165,7 +180,7 @@ class ListAuditlogsResult:
         审计日志开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始，Z指时区偏移量，例如北京时间偏移显示为+0800。
 
         :param start_time: The start_time of this ListAuditlogsResult.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -187,7 +202,7 @@ class ListAuditlogsResult:
         审计日志结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
         :param end_time: The end_time of this ListAuditlogsResult.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 

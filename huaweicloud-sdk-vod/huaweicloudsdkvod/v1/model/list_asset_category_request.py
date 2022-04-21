@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAssetCategoryRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListAssetCategoryRequest:
     }
 
     def __init__(self, id=None):
-        """ListAssetCategoryRequest - a model defined in huaweicloud sdk"""
+        """ListAssetCategoryRequest
+
+        The model defined in huaweicloud sdk
+
+        :param id: 视频分类ID。  若设置为0，则查询所有一级分类。
+        :type id: int
+        """
         
         
 
@@ -57,7 +62,7 @@ class ListAssetCategoryRequest:
         视频分类ID。  若设置为0，则查询所有一级分类。
 
         :param id: The id of this ListAssetCategoryRequest.
-        :type: int
+        :type id: int
         """
         self._id = id
 

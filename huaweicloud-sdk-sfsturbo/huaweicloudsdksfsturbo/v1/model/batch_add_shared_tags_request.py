@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchAddSharedTagsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchAddSharedTagsRequest:
     }
 
     def __init__(self, share_id=None, body=None):
-        """BatchAddSharedTagsRequest - a model defined in huaweicloud sdk"""
+        """BatchAddSharedTagsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param share_id: 共享ID
+        :type share_id: str
+        :param body: Body of the BatchAddSharedTagsRequest
+        :type body: :class:`huaweicloudsdksfsturbo.v1.BatchAddSharedTagsRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class BatchAddSharedTagsRequest:
         共享ID
 
         :param share_id: The share_id of this BatchAddSharedTagsRequest.
-        :type: str
+        :type share_id: str
         """
         self._share_id = share_id
 
@@ -72,7 +79,7 @@ class BatchAddSharedTagsRequest:
 
 
         :return: The body of this BatchAddSharedTagsRequest.
-        :rtype: BatchAddSharedTagsRequestBody
+        :rtype: :class:`huaweicloudsdksfsturbo.v1.BatchAddSharedTagsRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class BatchAddSharedTagsRequest:
 
 
         :param body: The body of this BatchAddSharedTagsRequest.
-        :type: BatchAddSharedTagsRequestBody
+        :type body: :class:`huaweicloudsdksfsturbo.v1.BatchAddSharedTagsRequestBody`
         """
         self._body = body
 

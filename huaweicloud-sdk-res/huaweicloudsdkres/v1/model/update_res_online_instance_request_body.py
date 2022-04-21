@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateResOnlineInstanceRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class UpdateResOnlineInstanceRequestBody:
     }
 
     def __init__(self, category=None, description=None, job_config=None, job_name=None, job_type=None, schedule=None):
-        """UpdateResOnlineInstanceRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateResOnlineInstanceRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param category: 类别。
+        :type category: str
+        :param description: 描述。
+        :type description: str
+        :param job_config: 
+        :type job_config: :class:`huaweicloudsdkres.v1.JobConfig`
+        :param job_name: 作业名称。
+        :type job_name: str
+        :param job_type: 作业类型。
+        :type job_type: str
+        :param schedule: 调度参数。
+        :type schedule: str
+        """
         
         
 
@@ -78,7 +93,7 @@ class UpdateResOnlineInstanceRequestBody:
         类别。
 
         :param category: The category of this UpdateResOnlineInstanceRequestBody.
-        :type: str
+        :type category: str
         """
         self._category = category
 
@@ -100,7 +115,7 @@ class UpdateResOnlineInstanceRequestBody:
         描述。
 
         :param description: The description of this UpdateResOnlineInstanceRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -110,7 +125,7 @@ class UpdateResOnlineInstanceRequestBody:
 
 
         :return: The job_config of this UpdateResOnlineInstanceRequestBody.
-        :rtype: JobConfig
+        :rtype: :class:`huaweicloudsdkres.v1.JobConfig`
         """
         return self._job_config
 
@@ -120,7 +135,7 @@ class UpdateResOnlineInstanceRequestBody:
 
 
         :param job_config: The job_config of this UpdateResOnlineInstanceRequestBody.
-        :type: JobConfig
+        :type job_config: :class:`huaweicloudsdkres.v1.JobConfig`
         """
         self._job_config = job_config
 
@@ -142,7 +157,7 @@ class UpdateResOnlineInstanceRequestBody:
         作业名称。
 
         :param job_name: The job_name of this UpdateResOnlineInstanceRequestBody.
-        :type: str
+        :type job_name: str
         """
         self._job_name = job_name
 
@@ -164,7 +179,7 @@ class UpdateResOnlineInstanceRequestBody:
         作业类型。
 
         :param job_type: The job_type of this UpdateResOnlineInstanceRequestBody.
-        :type: str
+        :type job_type: str
         """
         self._job_type = job_type
 
@@ -186,7 +201,7 @@ class UpdateResOnlineInstanceRequestBody:
         调度参数。
 
         :param schedule: The schedule of this UpdateResOnlineInstanceRequestBody.
-        :type: str
+        :type schedule: str
         """
         self._schedule = schedule
 

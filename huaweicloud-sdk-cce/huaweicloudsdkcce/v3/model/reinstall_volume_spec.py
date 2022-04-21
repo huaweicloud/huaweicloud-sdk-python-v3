@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ReinstallVolumeSpec:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ReinstallVolumeSpec:
     }
 
     def __init__(self, image_id=None, cmk_id=None):
-        """ReinstallVolumeSpec - a model defined in huaweicloud sdk"""
+        """ReinstallVolumeSpec
+
+        The model defined in huaweicloud sdk
+
+        :param image_id: 用户自定义镜像ID
+        :type image_id: str
+        :param cmk_id: 用户主密钥ID。默认为空时，表示云硬盘不加密。
+        :type cmk_id: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class ReinstallVolumeSpec:
         用户自定义镜像ID
 
         :param image_id: The image_id of this ReinstallVolumeSpec.
-        :type: str
+        :type image_id: str
         """
         self._image_id = image_id
 
@@ -85,7 +92,7 @@ class ReinstallVolumeSpec:
         用户主密钥ID。默认为空时，表示云硬盘不加密。
 
         :param cmk_id: The cmk_id of this ReinstallVolumeSpec.
-        :type: str
+        :type cmk_id: str
         """
         self._cmk_id = cmk_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VodInfoV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class VodInfoV2:
     }
 
     def __init__(self, asset_id=None, play_url=None):
-        """VodInfoV2 - a model defined in huaweicloud sdk"""
+        """VodInfoV2
+
+        The model defined in huaweicloud sdk
+
+        :param asset_id: VOD媒资id
+        :type asset_id: str
+        :param play_url: 点播播放地址
+        :type play_url: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class VodInfoV2:
         VOD媒资id
 
         :param asset_id: The asset_id of this VodInfoV2.
-        :type: str
+        :type asset_id: str
         """
         self._asset_id = asset_id
 
@@ -84,7 +91,7 @@ class VodInfoV2:
         点播播放地址
 
         :param play_url: The play_url of this VodInfoV2.
-        :type: str
+        :type play_url: str
         """
         self._play_url = play_url
 

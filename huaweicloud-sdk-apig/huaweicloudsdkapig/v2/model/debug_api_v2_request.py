@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DebugApiV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class DebugApiV2Request:
     }
 
     def __init__(self, instance_id=None, api_id=None, body=None):
-        """DebugApiV2Request - a model defined in huaweicloud sdk"""
+        """DebugApiV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param api_id: API的编号
+        :type api_id: str
+        :param body: Body of the DebugApiV2Request
+        :type body: :class:`huaweicloudsdkapig.v2.ApiDebugInfo`
+        """
         
         
 
@@ -66,7 +75,7 @@ class DebugApiV2Request:
         实例ID
 
         :param instance_id: The instance_id of this DebugApiV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -88,7 +97,7 @@ class DebugApiV2Request:
         API的编号
 
         :param api_id: The api_id of this DebugApiV2Request.
-        :type: str
+        :type api_id: str
         """
         self._api_id = api_id
 
@@ -98,7 +107,7 @@ class DebugApiV2Request:
 
 
         :return: The body of this DebugApiV2Request.
-        :rtype: ApiDebugInfo
+        :rtype: :class:`huaweicloudsdkapig.v2.ApiDebugInfo`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class DebugApiV2Request:
 
 
         :param body: The body of this DebugApiV2Request.
-        :type: ApiDebugInfo
+        :type body: :class:`huaweicloudsdkapig.v2.ApiDebugInfo`
         """
         self._body = body
 

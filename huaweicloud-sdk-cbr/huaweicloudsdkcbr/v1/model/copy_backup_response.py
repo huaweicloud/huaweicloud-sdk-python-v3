@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CopyBackupResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CopyBackupResponse(SdkResponse):
     }
 
     def __init__(self, replication=None):
-        """CopyBackupResponse - a model defined in huaweicloud sdk"""
+        """CopyBackupResponse
+
+        The model defined in huaweicloud sdk
+
+        :param replication: 
+        :type replication: :class:`huaweicloudsdkcbr.v1.BackupReplicateRespBody`
+        """
         
         super(CopyBackupResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class CopyBackupResponse(SdkResponse):
 
 
         :return: The replication of this CopyBackupResponse.
-        :rtype: BackupReplicateRespBody
+        :rtype: :class:`huaweicloudsdkcbr.v1.BackupReplicateRespBody`
         """
         return self._replication
 
@@ -56,7 +61,7 @@ class CopyBackupResponse(SdkResponse):
 
 
         :param replication: The replication of this CopyBackupResponse.
-        :type: BackupReplicateRespBody
+        :type replication: :class:`huaweicloudsdkcbr.v1.BackupReplicateRespBody`
         """
         self._replication = replication
 

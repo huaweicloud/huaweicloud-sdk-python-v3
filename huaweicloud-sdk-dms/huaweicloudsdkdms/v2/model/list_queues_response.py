@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListQueuesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListQueuesResponse(SdkResponse):
     }
 
     def __init__(self, total=None, queues=None):
-        """ListQueuesResponse - a model defined in huaweicloud sdk"""
+        """ListQueuesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 该租户的所有队列总数。
+        :type total: int
+        :param queues: 该租户的所有队列数组。
+        :type queues: list[:class:`huaweicloudsdkdms.v2.ListQueuesRespQueues`]
+        """
         
         super(ListQueuesResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListQueuesResponse(SdkResponse):
         该租户的所有队列总数。
 
         :param total: The total of this ListQueuesResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -74,7 +81,7 @@ class ListQueuesResponse(SdkResponse):
         该租户的所有队列数组。
 
         :return: The queues of this ListQueuesResponse.
-        :rtype: list[ListQueuesRespQueues]
+        :rtype: list[:class:`huaweicloudsdkdms.v2.ListQueuesRespQueues`]
         """
         return self._queues
 
@@ -85,7 +92,7 @@ class ListQueuesResponse(SdkResponse):
         该租户的所有队列数组。
 
         :param queues: The queues of this ListQueuesResponse.
-        :type: list[ListQueuesRespQueues]
+        :type queues: list[:class:`huaweicloudsdkdms.v2.ListQueuesRespQueues`]
         """
         self._queues = queues
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Tag:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Tag:
     }
 
     def __init__(self, key=None, value=None):
-        """Tag - a model defined in huaweicloud sdk"""
+        """Tag
+
+        The model defined in huaweicloud sdk
+
+        :param key: 键。最大长度127个unicode字符。key不能为空。(搜索时不对此参数做字符集校验)，key不能为空或者空字符串，不能为空格，校验和使用之前先trim前后半角空格。
+        :type key: str
+        :param value: 值列表。每个值最大长度255个unicode字符，校验和使用之前先trim前后半角空格。  value可为空数组但不可缺省。  如果values为空列表，则表示any_value（查询任意value）。value之间为或的关系。  (搜索时不对此参数做字符集校验，只做长度校验)
+        :type value: list[str]
+        """
         
         
 
@@ -61,7 +68,7 @@ class Tag:
         键。最大长度127个unicode字符。key不能为空。(搜索时不对此参数做字符集校验)，key不能为空或者空字符串，不能为空格，校验和使用之前先trim前后半角空格。
 
         :param key: The key of this Tag.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -83,7 +90,7 @@ class Tag:
         值列表。每个值最大长度255个unicode字符，校验和使用之前先trim前后半角空格。  value可为空数组但不可缺省。  如果values为空列表，则表示any_value（查询任意value）。value之间为或的关系。  (搜索时不对此参数做字符集校验，只做长度校验)
 
         :param value: The value of this Tag.
-        :type: list[str]
+        :type value: list[str]
         """
         self._value = value
 

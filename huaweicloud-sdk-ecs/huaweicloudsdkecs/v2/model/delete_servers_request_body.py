@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteServersRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class DeleteServersRequestBody:
     }
 
     def __init__(self, delete_publicip=None, delete_volume=None, servers=None):
-        """DeleteServersRequestBody - a model defined in huaweicloud sdk"""
+        """DeleteServersRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param delete_publicip: 配置删除云服务器是否删除云服务器绑定的弹性IP。如果选择不删除，则系统仅做解绑定操作，保留弹性IP资源。 取值为true或false，默认为false。   - true：删除云服务器时会同时删除绑定在云服务器上的弹性IP。  - false：删除云服务器时，仅解绑定在云服务器上的弹性IP，不删除弹性IP
+        :type delete_publicip: bool
+        :param delete_volume: 配置删除云服务器是否删除云服务器对应的数据盘，如果选择不删除，则系统仅做解绑定操作，保留云磁盘资源。 取值为false或true，默认为false。  - true：删除云服务器时会同时删除挂载在云服务器上的数据盘。 - false：删除云服务器时，仅卸载云服务器上挂载的数据盘，不删除该数据盘。
+        :type delete_volume: bool
+        :param servers: 所需要删除的云服务器列表。
+        :type servers: list[:class:`huaweicloudsdkecs.v2.ServerId`]
+        """
         
         
 
@@ -67,7 +76,7 @@ class DeleteServersRequestBody:
         配置删除云服务器是否删除云服务器绑定的弹性IP。如果选择不删除，则系统仅做解绑定操作，保留弹性IP资源。 取值为true或false，默认为false。   - true：删除云服务器时会同时删除绑定在云服务器上的弹性IP。  - false：删除云服务器时，仅解绑定在云服务器上的弹性IP，不删除弹性IP
 
         :param delete_publicip: The delete_publicip of this DeleteServersRequestBody.
-        :type: bool
+        :type delete_publicip: bool
         """
         self._delete_publicip = delete_publicip
 
@@ -89,7 +98,7 @@ class DeleteServersRequestBody:
         配置删除云服务器是否删除云服务器对应的数据盘，如果选择不删除，则系统仅做解绑定操作，保留云磁盘资源。 取值为false或true，默认为false。  - true：删除云服务器时会同时删除挂载在云服务器上的数据盘。 - false：删除云服务器时，仅卸载云服务器上挂载的数据盘，不删除该数据盘。
 
         :param delete_volume: The delete_volume of this DeleteServersRequestBody.
-        :type: bool
+        :type delete_volume: bool
         """
         self._delete_volume = delete_volume
 
@@ -100,7 +109,7 @@ class DeleteServersRequestBody:
         所需要删除的云服务器列表。
 
         :return: The servers of this DeleteServersRequestBody.
-        :rtype: list[ServerId]
+        :rtype: list[:class:`huaweicloudsdkecs.v2.ServerId`]
         """
         return self._servers
 
@@ -111,7 +120,7 @@ class DeleteServersRequestBody:
         所需要删除的云服务器列表。
 
         :param servers: The servers of this DeleteServersRequestBody.
-        :type: list[ServerId]
+        :type servers: list[:class:`huaweicloudsdkecs.v2.ServerId`]
         """
         self._servers = servers
 

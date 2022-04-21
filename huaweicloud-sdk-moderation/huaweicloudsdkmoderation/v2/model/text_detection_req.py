@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TextDetectionReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class TextDetectionReq:
     }
 
     def __init__(self, categories=None, items=None):
-        """TextDetectionReq - a model defined in huaweicloud sdk"""
+        """TextDetectionReq
+
+        The model defined in huaweicloud sdk
+
+        :param categories: 检测场景。  当前支持的场景有默认场景和用户自定义场景：  - 默认场景为：     * politics：涉政     * porn：涉黄     * ad：广告     * abuse：辱骂     * contraband：违禁品     * flood：灌水   - 用户自定义场景为：自定义黑名单词库。  &gt; - 自定义词库的创建和使用请参见[配置自定义词库](https://support.huaweicloud.com/api-moderation/moderation_03_0027.html)。 &gt; - flood场景不支持使用自定义白名单词库。
+        :type categories: list[str]
+        :param items: 待检测的文本列表，目前暂时每次只支持传一个item。
+        :type items: list[:class:`huaweicloudsdkmoderation.v2.TextDetectionItemsReq`]
+        """
         
         
 
@@ -62,7 +69,7 @@ class TextDetectionReq:
         检测场景。  当前支持的场景有默认场景和用户自定义场景：  - 默认场景为：     * politics：涉政     * porn：涉黄     * ad：广告     * abuse：辱骂     * contraband：违禁品     * flood：灌水   - 用户自定义场景为：自定义黑名单词库。  > - 自定义词库的创建和使用请参见[配置自定义词库](https://support.huaweicloud.com/api-moderation/moderation_03_0027.html)。 > - flood场景不支持使用自定义白名单词库。
 
         :param categories: The categories of this TextDetectionReq.
-        :type: list[str]
+        :type categories: list[str]
         """
         self._categories = categories
 
@@ -73,7 +80,7 @@ class TextDetectionReq:
         待检测的文本列表，目前暂时每次只支持传一个item。
 
         :return: The items of this TextDetectionReq.
-        :rtype: list[TextDetectionItemsReq]
+        :rtype: list[:class:`huaweicloudsdkmoderation.v2.TextDetectionItemsReq`]
         """
         return self._items
 
@@ -84,7 +91,7 @@ class TextDetectionReq:
         待检测的文本列表，目前暂时每次只支持传一个item。
 
         :param items: The items of this TextDetectionReq.
-        :type: list[TextDetectionItemsReq]
+        :type items: list[:class:`huaweicloudsdkmoderation.v2.TextDetectionItemsReq`]
         """
         self._items = items
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateNewBlockchainRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateNewBlockchainRequest:
     }
 
     def __init__(self, body=None):
-        """CreateNewBlockchainRequest - a model defined in huaweicloud sdk"""
+        """CreateNewBlockchainRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateNewBlockchainRequest
+        :type body: :class:`huaweicloudsdkbcs.v2.CreateRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateNewBlockchainRequest:
 
 
         :return: The body of this CreateNewBlockchainRequest.
-        :rtype: CreateRequestBody
+        :rtype: :class:`huaweicloudsdkbcs.v2.CreateRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateNewBlockchainRequest:
 
 
         :param body: The body of this CreateNewBlockchainRequest.
-        :type: CreateRequestBody
+        :type body: :class:`huaweicloudsdkbcs.v2.CreateRequestBody`
         """
         self._body = body
 

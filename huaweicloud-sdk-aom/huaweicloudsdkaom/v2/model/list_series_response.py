@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSeriesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListSeriesResponse(SdkResponse):
     }
 
     def __init__(self, series=None, meta_data=None):
-        """ListSeriesResponse - a model defined in huaweicloud sdk"""
+        """ListSeriesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param series: 时间序列对象列表。
+        :type series: list[:class:`huaweicloudsdkaom.v2.SeriesQueryItemResult`]
+        :param meta_data: 
+        :type meta_data: :class:`huaweicloudsdkaom.v2.MetaDataSeries`
+        """
         
         super(ListSeriesResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListSeriesResponse(SdkResponse):
         时间序列对象列表。
 
         :return: The series of this ListSeriesResponse.
-        :rtype: list[SeriesQueryItemResult]
+        :rtype: list[:class:`huaweicloudsdkaom.v2.SeriesQueryItemResult`]
         """
         return self._series
 
@@ -63,7 +70,7 @@ class ListSeriesResponse(SdkResponse):
         时间序列对象列表。
 
         :param series: The series of this ListSeriesResponse.
-        :type: list[SeriesQueryItemResult]
+        :type series: list[:class:`huaweicloudsdkaom.v2.SeriesQueryItemResult`]
         """
         self._series = series
 
@@ -73,7 +80,7 @@ class ListSeriesResponse(SdkResponse):
 
 
         :return: The meta_data of this ListSeriesResponse.
-        :rtype: MetaDataSeries
+        :rtype: :class:`huaweicloudsdkaom.v2.MetaDataSeries`
         """
         return self._meta_data
 
@@ -83,7 +90,7 @@ class ListSeriesResponse(SdkResponse):
 
 
         :param meta_data: The meta_data of this ListSeriesResponse.
-        :type: MetaDataSeries
+        :type meta_data: :class:`huaweicloudsdkaom.v2.MetaDataSeries`
         """
         self._meta_data = meta_data
 

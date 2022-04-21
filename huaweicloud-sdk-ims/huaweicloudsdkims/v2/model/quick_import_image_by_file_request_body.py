@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QuickImportImageByFileRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class QuickImportImageByFileRequestBody:
     }
 
     def __init__(self, name=None, description=None, os_version=None, image_url=None, min_disk=None, tags=None, type=None, enterprise_project_id=None, architecture=None, os_type=None, image_tags=None):
-        """QuickImportImageByFileRequestBody - a model defined in huaweicloud sdk"""
+        """QuickImportImageByFileRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param name: 镜像名称
+        :type name: str
+        :param description: 镜像描述信息。_description参数说明请参考镜像属性。支持字母、数字、中文等，不支持回车、&lt;、 &gt;，长度不能超过1024个字符。默认为空。
+        :type description: str
+        :param os_version: 操作系统版本。使用上传至OBS桶中的外部镜像文件制作镜像时生效
+        :type os_version: str
+        :param image_url: OBS桶中外部镜像文件地址。在使用OBS桶的外部镜像文件制作镜像时生效且为必选字段。格式为&lt;OBS桶名&gt;:&lt;OBS镜像文件名称&gt;。注意：此处的OBS桶和镜像文件的存储类别必须是OBS标准存储。
+        :type image_url: str
+        :param min_disk: 最小系统盘大小。在使用OBS桶的外部镜像文件制作镜像时生效且为必选字段。取值为1至1024GB。
+        :type min_disk: int
+        :param tags: 镜像标签列表。默认为空。 tags和image_tags只能使用一个。
+        :type tags: list[str]
+        :param type: 制作的镜像类型。系统盘镜像为ECS/BMS，数据盘镜像为DataImage. 制作数据盘镜像时该参数必选.
+        :type type: str
+        :param enterprise_project_id: 表示当前镜像所属的企业项目。 取值为0或无该值，表示属于default企业项目。 取值为UUID，表示属于该UUID对应的企业项目。 关于企业项目ID的获取及企业项目特性的详细信息，请参考《企业管理用户指南》。
+        :type enterprise_project_id: str
+        :param architecture: 镜像的架构类型。取值包括： x86 arm 默认使用“x86”。
+        :type architecture: str
+        :param os_type: 操作系统版本。 创建数据盘镜像时该参数取值为Linux或Windows，默认Linux。
+        :type os_type: str
+        :param image_tags: 新规范的镜像标签列表。默认为空。 tags和image_tags只能使用一个。
+        :type image_tags: list[:class:`huaweicloudsdkims.v2.ResourceTag`]
+        """
         
         
 
@@ -104,7 +129,7 @@ class QuickImportImageByFileRequestBody:
         镜像名称
 
         :param name: The name of this QuickImportImageByFileRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -126,7 +151,7 @@ class QuickImportImageByFileRequestBody:
         镜像描述信息。_description参数说明请参考镜像属性。支持字母、数字、中文等，不支持回车、<、 >，长度不能超过1024个字符。默认为空。
 
         :param description: The description of this QuickImportImageByFileRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -148,7 +173,7 @@ class QuickImportImageByFileRequestBody:
         操作系统版本。使用上传至OBS桶中的外部镜像文件制作镜像时生效
 
         :param os_version: The os_version of this QuickImportImageByFileRequestBody.
-        :type: str
+        :type os_version: str
         """
         self._os_version = os_version
 
@@ -170,7 +195,7 @@ class QuickImportImageByFileRequestBody:
         OBS桶中外部镜像文件地址。在使用OBS桶的外部镜像文件制作镜像时生效且为必选字段。格式为<OBS桶名>:<OBS镜像文件名称>。注意：此处的OBS桶和镜像文件的存储类别必须是OBS标准存储。
 
         :param image_url: The image_url of this QuickImportImageByFileRequestBody.
-        :type: str
+        :type image_url: str
         """
         self._image_url = image_url
 
@@ -192,7 +217,7 @@ class QuickImportImageByFileRequestBody:
         最小系统盘大小。在使用OBS桶的外部镜像文件制作镜像时生效且为必选字段。取值为1至1024GB。
 
         :param min_disk: The min_disk of this QuickImportImageByFileRequestBody.
-        :type: int
+        :type min_disk: int
         """
         self._min_disk = min_disk
 
@@ -214,7 +239,7 @@ class QuickImportImageByFileRequestBody:
         镜像标签列表。默认为空。 tags和image_tags只能使用一个。
 
         :param tags: The tags of this QuickImportImageByFileRequestBody.
-        :type: list[str]
+        :type tags: list[str]
         """
         self._tags = tags
 
@@ -236,7 +261,7 @@ class QuickImportImageByFileRequestBody:
         制作的镜像类型。系统盘镜像为ECS/BMS，数据盘镜像为DataImage. 制作数据盘镜像时该参数必选.
 
         :param type: The type of this QuickImportImageByFileRequestBody.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -258,7 +283,7 @@ class QuickImportImageByFileRequestBody:
         表示当前镜像所属的企业项目。 取值为0或无该值，表示属于default企业项目。 取值为UUID，表示属于该UUID对应的企业项目。 关于企业项目ID的获取及企业项目特性的详细信息，请参考《企业管理用户指南》。
 
         :param enterprise_project_id: The enterprise_project_id of this QuickImportImageByFileRequestBody.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -280,7 +305,7 @@ class QuickImportImageByFileRequestBody:
         镜像的架构类型。取值包括： x86 arm 默认使用“x86”。
 
         :param architecture: The architecture of this QuickImportImageByFileRequestBody.
-        :type: str
+        :type architecture: str
         """
         self._architecture = architecture
 
@@ -302,7 +327,7 @@ class QuickImportImageByFileRequestBody:
         操作系统版本。 创建数据盘镜像时该参数取值为Linux或Windows，默认Linux。
 
         :param os_type: The os_type of this QuickImportImageByFileRequestBody.
-        :type: str
+        :type os_type: str
         """
         self._os_type = os_type
 
@@ -313,7 +338,7 @@ class QuickImportImageByFileRequestBody:
         新规范的镜像标签列表。默认为空。 tags和image_tags只能使用一个。
 
         :return: The image_tags of this QuickImportImageByFileRequestBody.
-        :rtype: list[ResourceTag]
+        :rtype: list[:class:`huaweicloudsdkims.v2.ResourceTag`]
         """
         return self._image_tags
 
@@ -324,7 +349,7 @@ class QuickImportImageByFileRequestBody:
         新规范的镜像标签列表。默认为空。 tags和image_tags只能使用一个。
 
         :param image_tags: The image_tags of this QuickImportImageByFileRequestBody.
-        :type: list[ResourceTag]
+        :type image_tags: list[:class:`huaweicloudsdkims.v2.ResourceTag`]
         """
         self._image_tags = image_tags
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NodeInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class NodeInfo:
     }
 
     def __init__(self, name=None, id=None):
-        """NodeInfo - a model defined in huaweicloud sdk"""
+        """NodeInfo
+
+        The model defined in huaweicloud sdk
+
+        :param name: 节点名
+        :type name: str
+        :param id: 节点ID
+        :type id: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class NodeInfo:
         节点名
 
         :param name: The name of this NodeInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -85,7 +92,7 @@ class NodeInfo:
         节点ID
 
         :param id: The id of this NodeInfo.
-        :type: str
+        :type id: str
         """
         self._id = id
 

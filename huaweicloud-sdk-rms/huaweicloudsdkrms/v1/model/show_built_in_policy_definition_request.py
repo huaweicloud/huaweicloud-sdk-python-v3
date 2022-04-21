@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowBuiltInPolicyDefinitionRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowBuiltInPolicyDefinitionRequest:
     }
 
     def __init__(self, policy_definition_id=None, x_language=None):
-        """ShowBuiltInPolicyDefinitionRequest - a model defined in huaweicloud sdk"""
+        """ShowBuiltInPolicyDefinitionRequest
+
+        The model defined in huaweicloud sdk
+
+        :param policy_definition_id: 策略ID
+        :type policy_definition_id: str
+        :param x_language: 选择接口返回的信息的语言，默认为\&quot;zh-cn\&quot;中文
+        :type x_language: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ShowBuiltInPolicyDefinitionRequest:
         策略ID
 
         :param policy_definition_id: The policy_definition_id of this ShowBuiltInPolicyDefinitionRequest.
-        :type: str
+        :type policy_definition_id: str
         """
         self._policy_definition_id = policy_definition_id
 
@@ -84,7 +91,7 @@ class ShowBuiltInPolicyDefinitionRequest:
         选择接口返回的信息的语言，默认为\"zh-cn\"中文
 
         :param x_language: The x_language of this ShowBuiltInPolicyDefinitionRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 

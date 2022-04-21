@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ServerSchedulerHints:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ServerSchedulerHints:
     }
 
     def __init__(self, group=None, tenancy=None, dedicated_host_id=None):
-        """ServerSchedulerHints - a model defined in huaweicloud sdk"""
+        """ServerSchedulerHints
+
+        The model defined in huaweicloud sdk
+
+        :param group: 反亲和性组信息。  UUID格式。
+        :type group: list[str]
+        :param tenancy: 在专属主机或共享池中创建弹性云服务器。默认为在共享池创建。值为： shared或dedicated。  - shared：表示共享池。 - dedicated:表示专属主机。  创建与查询此值均有效。
+        :type tenancy: list[str]
+        :param dedicated_host_id: 专属主机ID。  此属性仅在tenancy值为dedicated时有效。  不指定此属性，系统将自动分配租户可自动放置弹性云服务器的专属主机。  创建与查询此值均有效。
+        :type dedicated_host_id: list[str]
+        """
         
         
 
@@ -68,7 +77,7 @@ class ServerSchedulerHints:
         反亲和性组信息。  UUID格式。
 
         :param group: The group of this ServerSchedulerHints.
-        :type: list[str]
+        :type group: list[str]
         """
         self._group = group
 
@@ -90,7 +99,7 @@ class ServerSchedulerHints:
         在专属主机或共享池中创建弹性云服务器。默认为在共享池创建。值为： shared或dedicated。  - shared：表示共享池。 - dedicated:表示专属主机。  创建与查询此值均有效。
 
         :param tenancy: The tenancy of this ServerSchedulerHints.
-        :type: list[str]
+        :type tenancy: list[str]
         """
         self._tenancy = tenancy
 
@@ -112,7 +121,7 @@ class ServerSchedulerHints:
         专属主机ID。  此属性仅在tenancy值为dedicated时有效。  不指定此属性，系统将自动分配租户可自动放置弹性云服务器的专属主机。  创建与查询此值均有效。
 
         :param dedicated_host_id: The dedicated_host_id of this ServerSchedulerHints.
-        :type: list[str]
+        :type dedicated_host_id: list[str]
         """
         self._dedicated_host_id = dedicated_host_id
 

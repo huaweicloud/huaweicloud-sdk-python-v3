@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateRecordSetReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class UpdateRecordSetReq:
     }
 
     def __init__(self, name=None, description=None, type=None, ttl=None, records=None):
-        """UpdateRecordSetReq - a model defined in huaweicloud sdk"""
+        """UpdateRecordSetReq
+
+        The model defined in huaweicloud sdk
+
+        :param name: 域名，后缀需以zone name结束且为FQDN（即以“.”号结束的完整主机名）。
+        :type name: str
+        :param description: 可选配置，对域名的描述。
+        :type description: str
+        :param type: Record Set的类型。
+        :type type: str
+        :param ttl: 解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
+        :type ttl: int
+        :param records: 解析记录的值。不同类型解析记录对应的值的规则不同。
+        :type records: list[str]
+        """
         
         
 
@@ -76,7 +89,7 @@ class UpdateRecordSetReq:
         域名，后缀需以zone name结束且为FQDN（即以“.”号结束的完整主机名）。
 
         :param name: The name of this UpdateRecordSetReq.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -98,7 +111,7 @@ class UpdateRecordSetReq:
         可选配置，对域名的描述。
 
         :param description: The description of this UpdateRecordSetReq.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -120,7 +133,7 @@ class UpdateRecordSetReq:
         Record Set的类型。
 
         :param type: The type of this UpdateRecordSetReq.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -142,7 +155,7 @@ class UpdateRecordSetReq:
         解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
 
         :param ttl: The ttl of this UpdateRecordSetReq.
-        :type: int
+        :type ttl: int
         """
         self._ttl = ttl
 
@@ -164,7 +177,7 @@ class UpdateRecordSetReq:
         解析记录的值。不同类型解析记录对应的值的规则不同。
 
         :param records: The records of this UpdateRecordSetReq.
-        :type: list[str]
+        :type records: list[str]
         """
         self._records = records
 

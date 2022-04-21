@@ -52,21 +52,17 @@ class CptsAsyncClient(Client):
         """创建用例
 
         创建用例
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateCaseRequest request
-        :return: CreateCaseResponse
+        :param request: Request instance for CreateCase
+        :type request: :class:`huaweicloudsdkcpts.v1.CreateCaseRequest`
+        :rtype: :class:`huaweicloudsdkcpts.v1.CreateCaseResponse`
         """
         return self.create_case_with_http_info(request)
 
     def create_case_with_http_info(self, request):
-        """创建用例
-
-        创建用例
-
-        :param CreateCaseRequest request
-        :return: CreateCaseResponse
-        """
-
         all_params = ['create_case_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -110,26 +106,21 @@ class CptsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_task_async(self, request):
         """创建任务
 
         创建任务
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateTaskRequest request
-        :return: CreateTaskResponse
+        :param request: Request instance for CreateTask
+        :type request: :class:`huaweicloudsdkcpts.v1.CreateTaskRequest`
+        :rtype: :class:`huaweicloudsdkcpts.v1.CreateTaskResponse`
         """
         return self.create_task_with_http_info(request)
 
     def create_task_with_http_info(self, request):
-        """创建任务
-
-        创建任务
-
-        :param CreateTaskRequest request
-        :return: CreateTaskResponse
-        """
-
         all_params = ['create_task_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -173,26 +164,21 @@ class CptsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_temp_async(self, request):
         """创建事务
 
         创建事务
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateTempRequest request
-        :return: CreateTempResponse
+        :param request: Request instance for CreateTemp
+        :type request: :class:`huaweicloudsdkcpts.v1.CreateTempRequest`
+        :rtype: :class:`huaweicloudsdkcpts.v1.CreateTempResponse`
         """
         return self.create_temp_with_http_info(request)
 
     def create_temp_with_http_info(self, request):
-        """创建事务
-
-        创建事务
-
-        :param CreateTempRequest request
-        :return: CreateTempResponse
-        """
-
         all_params = ['create_temp_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -236,26 +222,21 @@ class CptsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_variable_async(self, request):
         """创建变量
 
         创建变量
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateVariableRequest request
-        :return: CreateVariableResponse
+        :param request: Request instance for CreateVariable
+        :type request: :class:`huaweicloudsdkcpts.v1.CreateVariableRequest`
+        :rtype: :class:`huaweicloudsdkcpts.v1.CreateVariableResponse`
         """
         return self.create_variable_with_http_info(request)
 
     def create_variable_with_http_info(self, request):
-        """创建变量
-
-        创建变量
-
-        :param CreateVariableRequest request
-        :return: CreateVariableResponse
-        """
-
         all_params = ['test_suite_id', 'create_variable_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -301,26 +282,21 @@ class CptsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def debug_case_async(self, request):
         """调试用例
 
         调试用例
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DebugCaseRequest request
-        :return: DebugCaseResponse
+        :param request: Request instance for DebugCase
+        :type request: :class:`huaweicloudsdkcpts.v1.DebugCaseRequest`
+        :rtype: :class:`huaweicloudsdkcpts.v1.DebugCaseResponse`
         """
         return self.debug_case_with_http_info(request)
 
     def debug_case_with_http_info(self, request):
-        """调试用例
-
-        调试用例
-
-        :param DebugCaseRequest request
-        :return: DebugCaseResponse
-        """
-
         all_params = ['test_suite_id', 'task_id', 'case_id', 'debug_case_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -370,26 +346,21 @@ class CptsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_case_async(self, request):
         """删除用例
 
         删除用例
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteCaseRequest request
-        :return: DeleteCaseResponse
+        :param request: Request instance for DeleteCase
+        :type request: :class:`huaweicloudsdkcpts.v1.DeleteCaseRequest`
+        :rtype: :class:`huaweicloudsdkcpts.v1.DeleteCaseResponse`
         """
         return self.delete_case_with_http_info(request)
 
     def delete_case_with_http_info(self, request):
-        """删除用例
-
-        删除用例
-
-        :param DeleteCaseRequest request
-        :return: DeleteCaseResponse
-        """
-
         all_params = ['case_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -433,26 +404,21 @@ class CptsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_task_async(self, request):
         """删除任务
 
         删除任务
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteTaskRequest request
-        :return: DeleteTaskResponse
+        :param request: Request instance for DeleteTask
+        :type request: :class:`huaweicloudsdkcpts.v1.DeleteTaskRequest`
+        :rtype: :class:`huaweicloudsdkcpts.v1.DeleteTaskResponse`
         """
         return self.delete_task_with_http_info(request)
 
     def delete_task_with_http_info(self, request):
-        """删除任务
-
-        删除任务
-
-        :param DeleteTaskRequest request
-        :return: DeleteTaskResponse
-        """
-
         all_params = ['task_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -496,26 +462,21 @@ class CptsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_temp_async(self, request):
         """删除事务
 
         删除事务
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteTempRequest request
-        :return: DeleteTempResponse
+        :param request: Request instance for DeleteTemp
+        :type request: :class:`huaweicloudsdkcpts.v1.DeleteTempRequest`
+        :rtype: :class:`huaweicloudsdkcpts.v1.DeleteTempResponse`
         """
         return self.delete_temp_with_http_info(request)
 
     def delete_temp_with_http_info(self, request):
-        """删除事务
-
-        删除事务
-
-        :param DeleteTempRequest request
-        :return: DeleteTempResponse
-        """
-
         all_params = ['template_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -559,26 +520,21 @@ class CptsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_variables_async(self, request):
         """查询全局变量
 
         查询全局变量
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListVariablesRequest request
-        :return: ListVariablesResponse
+        :param request: Request instance for ListVariables
+        :type request: :class:`huaweicloudsdkcpts.v1.ListVariablesRequest`
+        :rtype: :class:`huaweicloudsdkcpts.v1.ListVariablesResponse`
         """
         return self.list_variables_with_http_info(request)
 
     def list_variables_with_http_info(self, request):
-        """查询全局变量
-
-        查询全局变量
-
-        :param ListVariablesRequest request
-        :return: ListVariablesResponse
-        """
-
         all_params = ['variable_type', 'test_suite_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -624,26 +580,21 @@ class CptsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_history_run_info_async(self, request):
         """查询CPTS任务离线报告列表
 
         查询CPTS任务离线报告列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowHistoryRunInfoRequest request
-        :return: ShowHistoryRunInfoResponse
+        :param request: Request instance for ShowHistoryRunInfo
+        :type request: :class:`huaweicloudsdkcpts.v1.ShowHistoryRunInfoRequest`
+        :rtype: :class:`huaweicloudsdkcpts.v1.ShowHistoryRunInfoResponse`
         """
         return self.show_history_run_info_with_http_info(request)
 
     def show_history_run_info_with_http_info(self, request):
-        """查询CPTS任务离线报告列表
-
-        查询CPTS任务离线报告列表
-
-        :param ShowHistoryRunInfoRequest request
-        :return: ShowHistoryRunInfoResponse
-        """
-
         all_params = ['task_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -687,26 +638,21 @@ class CptsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_report_async(self, request):
         """查询报告
 
         查询报告
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowReportRequest request
-        :return: ShowReportResponse
+        :param request: Request instance for ShowReport
+        :type request: :class:`huaweicloudsdkcpts.v1.ShowReportRequest`
+        :rtype: :class:`huaweicloudsdkcpts.v1.ShowReportResponse`
         """
         return self.show_report_with_http_info(request)
 
     def show_report_with_http_info(self, request):
-        """查询报告
-
-        查询报告
-
-        :param ShowReportRequest request
-        :return: ShowReportResponse
-        """
-
         all_params = ['task_run_id', 'case_run_id', 'brokens_limit_count']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -754,26 +700,21 @@ class CptsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_task_async(self, request):
         """查询任务
 
         查询任务
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowTaskRequest request
-        :return: ShowTaskResponse
+        :param request: Request instance for ShowTask
+        :type request: :class:`huaweicloudsdkcpts.v1.ShowTaskRequest`
+        :rtype: :class:`huaweicloudsdkcpts.v1.ShowTaskResponse`
         """
         return self.show_task_with_http_info(request)
 
     def show_task_with_http_info(self, request):
-        """查询任务
-
-        查询任务
-
-        :param ShowTaskRequest request
-        :return: ShowTaskResponse
-        """
-
         all_params = ['task_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -817,26 +758,21 @@ class CptsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_task_set_async(self, request):
         """查询任务集
 
         查询任务集
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowTaskSetRequest request
-        :return: ShowTaskSetResponse
+        :param request: Request instance for ShowTaskSet
+        :type request: :class:`huaweicloudsdkcpts.v1.ShowTaskSetRequest`
+        :rtype: :class:`huaweicloudsdkcpts.v1.ShowTaskSetResponse`
         """
         return self.show_task_set_with_http_info(request)
 
     def show_task_set_with_http_info(self, request):
-        """查询任务集
-
-        查询任务集
-
-        :param ShowTaskSetRequest request
-        :return: ShowTaskSetResponse
-        """
-
         all_params = ['test_suite_id', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -884,26 +820,21 @@ class CptsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_temp_async(self, request):
         """查询事务
 
         查询事务
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowTempRequest request
-        :return: ShowTempResponse
+        :param request: Request instance for ShowTemp
+        :type request: :class:`huaweicloudsdkcpts.v1.ShowTempRequest`
+        :rtype: :class:`huaweicloudsdkcpts.v1.ShowTempResponse`
         """
         return self.show_temp_with_http_info(request)
 
     def show_temp_with_http_info(self, request):
-        """查询事务
-
-        查询事务
-
-        :param ShowTempRequest request
-        :return: ShowTempResponse
-        """
-
         all_params = ['template_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -947,26 +878,21 @@ class CptsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_temp_set_async(self, request):
         """查询事务集
 
         查询事务集
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowTempSetRequest request
-        :return: ShowTempSetResponse
+        :param request: Request instance for ShowTempSet
+        :type request: :class:`huaweicloudsdkcpts.v1.ShowTempSetRequest`
+        :rtype: :class:`huaweicloudsdkcpts.v1.ShowTempSetResponse`
         """
         return self.show_temp_set_with_http_info(request)
 
     def show_temp_set_with_http_info(self, request):
-        """查询事务集
-
-        查询事务集
-
-        :param ShowTempSetRequest request
-        :return: ShowTempSetResponse
-        """
-
         all_params = ['test_suite_id', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1014,26 +940,21 @@ class CptsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_case_async(self, request):
         """修改用例
 
         修改用例
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateCaseRequest request
-        :return: UpdateCaseResponse
+        :param request: Request instance for UpdateCase
+        :type request: :class:`huaweicloudsdkcpts.v1.UpdateCaseRequest`
+        :rtype: :class:`huaweicloudsdkcpts.v1.UpdateCaseResponse`
         """
         return self.update_case_with_http_info(request)
 
     def update_case_with_http_info(self, request):
-        """修改用例
-
-        修改用例
-
-        :param UpdateCaseRequest request
-        :return: UpdateCaseResponse
-        """
-
         all_params = ['case_id', 'target', 'update_case_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1081,26 +1002,21 @@ class CptsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_task_async(self, request):
         """修改任务
 
         修改任务
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateTaskRequest request
-        :return: UpdateTaskResponse
+        :param request: Request instance for UpdateTask
+        :type request: :class:`huaweicloudsdkcpts.v1.UpdateTaskRequest`
+        :rtype: :class:`huaweicloudsdkcpts.v1.UpdateTaskResponse`
         """
         return self.update_task_with_http_info(request)
 
     def update_task_with_http_info(self, request):
-        """修改任务
-
-        修改任务
-
-        :param UpdateTaskRequest request
-        :return: UpdateTaskResponse
-        """
-
         all_params = ['task_id', 'update_task_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1146,26 +1062,21 @@ class CptsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_task_status_async(self, request):
         """更新任务状态
 
         更新任务状态
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateTaskStatusRequest request
-        :return: UpdateTaskStatusResponse
+        :param request: Request instance for UpdateTaskStatus
+        :type request: :class:`huaweicloudsdkcpts.v1.UpdateTaskStatusRequest`
+        :rtype: :class:`huaweicloudsdkcpts.v1.UpdateTaskStatusResponse`
         """
         return self.update_task_status_with_http_info(request)
 
     def update_task_status_with_http_info(self, request):
-        """更新任务状态
-
-        更新任务状态
-
-        :param UpdateTaskStatusRequest request
-        :return: UpdateTaskStatusResponse
-        """
-
         all_params = ['test_suite_id', 'task_id', 'update_task_status_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1213,26 +1124,21 @@ class CptsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_temp_async(self, request):
         """修改事务
 
         修改事务
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateTempRequest request
-        :return: UpdateTempResponse
+        :param request: Request instance for UpdateTemp
+        :type request: :class:`huaweicloudsdkcpts.v1.UpdateTempRequest`
+        :rtype: :class:`huaweicloudsdkcpts.v1.UpdateTempResponse`
         """
         return self.update_temp_with_http_info(request)
 
     def update_temp_with_http_info(self, request):
-        """修改事务
-
-        修改事务
-
-        :param UpdateTempRequest request
-        :return: UpdateTempResponse
-        """
-
         all_params = ['template_id', 'update_temp_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1278,26 +1184,21 @@ class CptsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_variable_async(self, request):
         """修改变量
 
         修改变量
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateVariableRequest request
-        :return: UpdateVariableResponse
+        :param request: Request instance for UpdateVariable
+        :type request: :class:`huaweicloudsdkcpts.v1.UpdateVariableRequest`
+        :rtype: :class:`huaweicloudsdkcpts.v1.UpdateVariableResponse`
         """
         return self.update_variable_with_http_info(request)
 
     def update_variable_with_http_info(self, request):
-        """修改变量
-
-        修改变量
-
-        :param UpdateVariableRequest request
-        :return: UpdateVariableResponse
-        """
-
         all_params = ['test_suite_id', 'update_variable_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1343,26 +1244,21 @@ class CptsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_project_async(self, request):
         """创建工程
 
         创建工程
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateProjectRequest request
-        :return: CreateProjectResponse
+        :param request: Request instance for CreateProject
+        :type request: :class:`huaweicloudsdkcpts.v1.CreateProjectRequest`
+        :rtype: :class:`huaweicloudsdkcpts.v1.CreateProjectResponse`
         """
         return self.create_project_with_http_info(request)
 
     def create_project_with_http_info(self, request):
-        """创建工程
-
-        创建工程
-
-        :param CreateProjectRequest request
-        :return: CreateProjectResponse
-        """
-
         all_params = ['create_project_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1406,26 +1302,21 @@ class CptsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_project_async(self, request):
         """删除工程
 
         删除工程
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteProjectRequest request
-        :return: DeleteProjectResponse
+        :param request: Request instance for DeleteProject
+        :type request: :class:`huaweicloudsdkcpts.v1.DeleteProjectRequest`
+        :rtype: :class:`huaweicloudsdkcpts.v1.DeleteProjectResponse`
         """
         return self.delete_project_with_http_info(request)
 
     def delete_project_with_http_info(self, request):
-        """删除工程
-
-        删除工程
-
-        :param DeleteProjectRequest request
-        :return: DeleteProjectResponse
-        """
-
         all_params = ['test_suite_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1469,26 +1360,21 @@ class CptsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_project_sets_async(self, request):
         """查询工程集
 
         查询工程集
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListProjectSetsRequest request
-        :return: ListProjectSetsResponse
+        :param request: Request instance for ListProjectSets
+        :type request: :class:`huaweicloudsdkcpts.v1.ListProjectSetsRequest`
+        :rtype: :class:`huaweicloudsdkcpts.v1.ListProjectSetsResponse`
         """
         return self.list_project_sets_with_http_info(request)
 
     def list_project_sets_with_http_info(self, request):
-        """查询工程集
-
-        查询工程集
-
-        :param ListProjectSetsRequest request
-        :return: ListProjectSetsResponse
-        """
-
         all_params = ['offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1534,26 +1420,21 @@ class CptsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_process_async(self, request):
         """查询导入进度
 
         查询导入进度
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowProcessRequest request
-        :return: ShowProcessResponse
+        :param request: Request instance for ShowProcess
+        :type request: :class:`huaweicloudsdkcpts.v1.ShowProcessRequest`
+        :rtype: :class:`huaweicloudsdkcpts.v1.ShowProcessResponse`
         """
         return self.show_process_with_http_info(request)
 
     def show_process_with_http_info(self, request):
-        """查询导入进度
-
-        查询导入进度
-
-        :param ShowProcessRequest request
-        :return: ShowProcessResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1595,26 +1476,21 @@ class CptsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_project_async(self, request):
         """查询工程
 
         查询工程
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowProjectRequest request
-        :return: ShowProjectResponse
+        :param request: Request instance for ShowProject
+        :type request: :class:`huaweicloudsdkcpts.v1.ShowProjectRequest`
+        :rtype: :class:`huaweicloudsdkcpts.v1.ShowProjectResponse`
         """
         return self.show_project_with_http_info(request)
 
     def show_project_with_http_info(self, request):
-        """查询工程
-
-        查询工程
-
-        :param ShowProjectRequest request
-        :return: ShowProjectResponse
-        """
-
         all_params = ['test_suite_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1658,26 +1534,21 @@ class CptsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_project_async(self, request):
         """修改工程
 
         修改工程
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateProjectRequest request
-        :return: UpdateProjectResponse
+        :param request: Request instance for UpdateProject
+        :type request: :class:`huaweicloudsdkcpts.v1.UpdateProjectRequest`
+        :rtype: :class:`huaweicloudsdkcpts.v1.UpdateProjectResponse`
         """
         return self.update_project_with_http_info(request)
 
     def update_project_with_http_info(self, request):
-        """修改工程
-
-        修改工程
-
-        :param UpdateProjectRequest request
-        :return: UpdateProjectResponse
-        """
-
         all_params = ['test_suite_id', 'update_project_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1722,7 +1593,6 @@ class CptsAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

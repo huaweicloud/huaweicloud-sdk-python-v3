@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OpExtendInfoReplication:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class OpExtendInfoReplication:
     }
 
     def __init__(self, destination_backup_id=None, destination_checkpoint_id=None, destination_project_id=None, destination_region=None, source_backup_id=None, source_checkpoint_id=None, source_project_id=None, source_region=None, source_backup_name=None, destination_backup_name=None):
-        """OpExtendInfoReplication - a model defined in huaweicloud sdk"""
+        """OpExtendInfoReplication
+
+        The model defined in huaweicloud sdk
+
+        :param destination_backup_id: 目标副本ID
+        :type destination_backup_id: str
+        :param destination_checkpoint_id: 目标还原点ID
+        :type destination_checkpoint_id: str
+        :param destination_project_id: 目标project_id
+        :type destination_project_id: str
+        :param destination_region: 目标区域
+        :type destination_region: str
+        :param source_backup_id: 源副本ID
+        :type source_backup_id: str
+        :param source_checkpoint_id: 源还原点ID
+        :type source_checkpoint_id: str
+        :param source_project_id: 源project_id
+        :type source_project_id: str
+        :param source_region: 源区域
+        :type source_region: str
+        :param source_backup_name: 源备份名称
+        :type source_backup_name: str
+        :param destination_backup_name: 目标备份名称
+        :type destination_backup_name: str
+        """
         
         
 
@@ -98,7 +121,7 @@ class OpExtendInfoReplication:
         目标副本ID
 
         :param destination_backup_id: The destination_backup_id of this OpExtendInfoReplication.
-        :type: str
+        :type destination_backup_id: str
         """
         self._destination_backup_id = destination_backup_id
 
@@ -120,7 +143,7 @@ class OpExtendInfoReplication:
         目标还原点ID
 
         :param destination_checkpoint_id: The destination_checkpoint_id of this OpExtendInfoReplication.
-        :type: str
+        :type destination_checkpoint_id: str
         """
         self._destination_checkpoint_id = destination_checkpoint_id
 
@@ -142,7 +165,7 @@ class OpExtendInfoReplication:
         目标project_id
 
         :param destination_project_id: The destination_project_id of this OpExtendInfoReplication.
-        :type: str
+        :type destination_project_id: str
         """
         self._destination_project_id = destination_project_id
 
@@ -164,7 +187,7 @@ class OpExtendInfoReplication:
         目标区域
 
         :param destination_region: The destination_region of this OpExtendInfoReplication.
-        :type: str
+        :type destination_region: str
         """
         self._destination_region = destination_region
 
@@ -186,7 +209,7 @@ class OpExtendInfoReplication:
         源副本ID
 
         :param source_backup_id: The source_backup_id of this OpExtendInfoReplication.
-        :type: str
+        :type source_backup_id: str
         """
         self._source_backup_id = source_backup_id
 
@@ -208,7 +231,7 @@ class OpExtendInfoReplication:
         源还原点ID
 
         :param source_checkpoint_id: The source_checkpoint_id of this OpExtendInfoReplication.
-        :type: str
+        :type source_checkpoint_id: str
         """
         self._source_checkpoint_id = source_checkpoint_id
 
@@ -230,7 +253,7 @@ class OpExtendInfoReplication:
         源project_id
 
         :param source_project_id: The source_project_id of this OpExtendInfoReplication.
-        :type: str
+        :type source_project_id: str
         """
         self._source_project_id = source_project_id
 
@@ -252,7 +275,7 @@ class OpExtendInfoReplication:
         源区域
 
         :param source_region: The source_region of this OpExtendInfoReplication.
-        :type: str
+        :type source_region: str
         """
         self._source_region = source_region
 
@@ -274,7 +297,7 @@ class OpExtendInfoReplication:
         源备份名称
 
         :param source_backup_name: The source_backup_name of this OpExtendInfoReplication.
-        :type: str
+        :type source_backup_name: str
         """
         self._source_backup_name = source_backup_name
 
@@ -296,7 +319,7 @@ class OpExtendInfoReplication:
         目标备份名称
 
         :param destination_backup_name: The destination_backup_name of this OpExtendInfoReplication.
-        :type: str
+        :type destination_backup_name: str
         """
         self._destination_backup_name = destination_backup_name
 

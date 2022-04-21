@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateClusterBackupStrategyBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class CreateClusterBackupStrategyBody:
     }
 
     def __init__(self, period=None, prefix=None, keepday=None, bucket=None, base_path=None, agency=None):
-        """CreateClusterBackupStrategyBody - a model defined in huaweicloud sdk"""
+        """CreateClusterBackupStrategyBody
+
+        The model defined in huaweicloud sdk
+
+        :param period: 每天自动创建快照的时间点。只支持整点，后面需加上时区，格式为“HH:mm z”，“HH:mm”表示整点时间，“z”表示时区。比如“00:00 GMT+08:00”、“01:00 GMT+08:00”等。
+        :type period: str
+        :param prefix: 自动创建的快照的前缀。
+        :type prefix: str
+        :param keepday: 自动创建快照的保留天数。取值范围：1-90。
+        :type keepday: int
+        :param bucket: 备份使用的OBS桶名称，如果桶已经存放快照数据了，不可更改。
+        :type bucket: str
+        :param base_path: 快照在OBS桶中的存放路径。
+        :type base_path: str
+        :param agency: 访问OBS使用的IAM委托名称。   说明：如果bucket、basePath和agency三个参数同时为空，则系统会自动创建OBS桶和IAM代理，否则使用配置的参数值。
+        :type agency: str
+        """
         
         
 
@@ -80,7 +95,7 @@ class CreateClusterBackupStrategyBody:
         每天自动创建快照的时间点。只支持整点，后面需加上时区，格式为“HH:mm z”，“HH:mm”表示整点时间，“z”表示时区。比如“00:00 GMT+08:00”、“01:00 GMT+08:00”等。
 
         :param period: The period of this CreateClusterBackupStrategyBody.
-        :type: str
+        :type period: str
         """
         self._period = period
 
@@ -102,7 +117,7 @@ class CreateClusterBackupStrategyBody:
         自动创建的快照的前缀。
 
         :param prefix: The prefix of this CreateClusterBackupStrategyBody.
-        :type: str
+        :type prefix: str
         """
         self._prefix = prefix
 
@@ -124,7 +139,7 @@ class CreateClusterBackupStrategyBody:
         自动创建快照的保留天数。取值范围：1-90。
 
         :param keepday: The keepday of this CreateClusterBackupStrategyBody.
-        :type: int
+        :type keepday: int
         """
         self._keepday = keepday
 
@@ -146,7 +161,7 @@ class CreateClusterBackupStrategyBody:
         备份使用的OBS桶名称，如果桶已经存放快照数据了，不可更改。
 
         :param bucket: The bucket of this CreateClusterBackupStrategyBody.
-        :type: str
+        :type bucket: str
         """
         self._bucket = bucket
 
@@ -168,7 +183,7 @@ class CreateClusterBackupStrategyBody:
         快照在OBS桶中的存放路径。
 
         :param base_path: The base_path of this CreateClusterBackupStrategyBody.
-        :type: str
+        :type base_path: str
         """
         self._base_path = base_path
 
@@ -190,7 +205,7 @@ class CreateClusterBackupStrategyBody:
         访问OBS使用的IAM委托名称。   说明：如果bucket、basePath和agency三个参数同时为空，则系统会自动创建OBS桶和IAM代理，否则使用配置的参数值。
 
         :param agency: The agency of this CreateClusterBackupStrategyBody.
-        :type: str
+        :type agency: str
         """
         self._agency = agency
 

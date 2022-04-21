@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListQueuesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListQueuesRequest:
     }
 
     def __init__(self, include_deadletter=None):
-        """ListQueuesRequest - a model defined in huaweicloud sdk"""
+        """ListQueuesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param include_deadletter: 是否包含死信信息。  支持的值如下：  - true：包含死信消息。 - false：不包含死信消息。  默认值为：false。  Kafka队列没有死信功能，该参数对于Kafka队列无效。
+        :type include_deadletter: bool
+        """
         
         
 
@@ -58,7 +63,7 @@ class ListQueuesRequest:
         是否包含死信信息。  支持的值如下：  - true：包含死信消息。 - false：不包含死信消息。  默认值为：false。  Kafka队列没有死信功能，该参数对于Kafka队列无效。
 
         :param include_deadletter: The include_deadletter of this ListQueuesRequest.
-        :type: bool
+        :type include_deadletter: bool
         """
         self._include_deadletter = include_deadletter
 

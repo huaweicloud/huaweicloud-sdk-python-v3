@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTemplateGroupResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListTemplateGroupResponse(SdkResponse):
     }
 
     def __init__(self, template_group_list=None, total=None):
-        """ListTemplateGroupResponse - a model defined in huaweicloud sdk"""
+        """ListTemplateGroupResponse
+
+        The model defined in huaweicloud sdk
+
+        :param template_group_list: 模板组信息列表。 
+        :type template_group_list: list[:class:`huaweicloudsdkmpc.v1.TemplateGroup`]
+        :param total: 转码模板组总数 
+        :type total: int
+        """
         
         super(ListTemplateGroupResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListTemplateGroupResponse(SdkResponse):
         模板组信息列表。 
 
         :return: The template_group_list of this ListTemplateGroupResponse.
-        :rtype: list[TemplateGroup]
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.TemplateGroup`]
         """
         return self._template_group_list
 
@@ -63,7 +70,7 @@ class ListTemplateGroupResponse(SdkResponse):
         模板组信息列表。 
 
         :param template_group_list: The template_group_list of this ListTemplateGroupResponse.
-        :type: list[TemplateGroup]
+        :type template_group_list: list[:class:`huaweicloudsdkmpc.v1.TemplateGroup`]
         """
         self._template_group_list = template_group_list
 
@@ -85,7 +92,7 @@ class ListTemplateGroupResponse(SdkResponse):
         转码模板组总数 
 
         :param total: The total of this ListTemplateGroupResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 

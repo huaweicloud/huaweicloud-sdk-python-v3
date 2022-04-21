@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSecretVersionsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListSecretVersionsRequest:
     }
 
     def __init__(self, secret_name=None, marker=None, limit=None):
-        """ListSecretVersionsRequest - a model defined in huaweicloud sdk"""
+        """ListSecretVersionsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param secret_name: 凭据名称。
+        :type secret_name: str
+        :param marker: 分页参数，取值为上一页数据的最后一条记录的版本号。
+        :type marker: str
+        :param limit: 每页显示的条目数量。默认值50。
+        :type limit: int
+        """
         
         
 
@@ -67,7 +76,7 @@ class ListSecretVersionsRequest:
         凭据名称。
 
         :param secret_name: The secret_name of this ListSecretVersionsRequest.
-        :type: str
+        :type secret_name: str
         """
         self._secret_name = secret_name
 
@@ -89,7 +98,7 @@ class ListSecretVersionsRequest:
         分页参数，取值为上一页数据的最后一条记录的版本号。
 
         :param marker: The marker of this ListSecretVersionsRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -111,7 +120,7 @@ class ListSecretVersionsRequest:
         每页显示的条目数量。默认值50。
 
         :param limit: The limit of this ListSecretVersionsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

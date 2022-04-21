@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAllMembersResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListAllMembersResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, page_info=None, members=None):
-        """ListAllMembersResponse - a model defined in huaweicloud sdk"""
+        """ListAllMembersResponse
+
+        The model defined in huaweicloud sdk
+
+        :param request_id: 请求ID。  注：自动生成 。
+        :type request_id: str
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`
+        :param members: 后端服务器对象列表。
+        :type members: list[:class:`huaweicloudsdkelb.v3.Member`]
+        """
         
         super(ListAllMembersResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListAllMembersResponse(SdkResponse):
         请求ID。  注：自动生成 。
 
         :param request_id: The request_id of this ListAllMembersResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 
@@ -78,7 +87,7 @@ class ListAllMembersResponse(SdkResponse):
 
 
         :return: The page_info of this ListAllMembersResponse.
-        :rtype: PageInfo
+        :rtype: :class:`huaweicloudsdkelb.v3.PageInfo`
         """
         return self._page_info
 
@@ -88,7 +97,7 @@ class ListAllMembersResponse(SdkResponse):
 
 
         :param page_info: The page_info of this ListAllMembersResponse.
-        :type: PageInfo
+        :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`
         """
         self._page_info = page_info
 
@@ -99,7 +108,7 @@ class ListAllMembersResponse(SdkResponse):
         后端服务器对象列表。
 
         :return: The members of this ListAllMembersResponse.
-        :rtype: list[Member]
+        :rtype: list[:class:`huaweicloudsdkelb.v3.Member`]
         """
         return self._members
 
@@ -110,7 +119,7 @@ class ListAllMembersResponse(SdkResponse):
         后端服务器对象列表。
 
         :param members: The members of this ListAllMembersResponse.
-        :type: list[Member]
+        :type members: list[:class:`huaweicloudsdkelb.v3.Member`]
         """
         self._members = members
 

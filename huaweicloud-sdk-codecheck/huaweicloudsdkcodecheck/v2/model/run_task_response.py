@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunTaskResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RunTaskResponse(SdkResponse):
     }
 
     def __init__(self, exec_id=None):
-        """RunTaskResponse - a model defined in huaweicloud sdk"""
+        """RunTaskResponse
+
+        The model defined in huaweicloud sdk
+
+        :param exec_id: 执行id
+        :type exec_id: str
+        """
         
         super(RunTaskResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class RunTaskResponse(SdkResponse):
         执行id
 
         :param exec_id: The exec_id of this RunTaskResponse.
-        :type: str
+        :type exec_id: str
         """
         self._exec_id = exec_id
 

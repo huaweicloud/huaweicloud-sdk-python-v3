@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListEnginePropertiesEntity:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ListEnginePropertiesEntity:
     }
 
     def __init__(self, max_partition_per_broker=None, max_broker=None, max_storage_per_node=None, max_consumer_per_broker=None, min_broker=None, max_bandwidth_per_broker=None, min_storage_per_node=None, max_tps_per_broker=None):
-        """ListEnginePropertiesEntity - a model defined in huaweicloud sdk"""
+        """ListEnginePropertiesEntity
+
+        The model defined in huaweicloud sdk
+
+        :param max_partition_per_broker: 每个Broker的最大分区数。
+        :type max_partition_per_broker: str
+        :param max_broker: Broker的最大个数。
+        :type max_broker: str
+        :param max_storage_per_node: 每个节点的最大存储。单位为GB。
+        :type max_storage_per_node: str
+        :param max_consumer_per_broker: 每个Broker的最大消费者数。
+        :type max_consumer_per_broker: str
+        :param min_broker: Broker的最小个数。
+        :type min_broker: str
+        :param max_bandwidth_per_broker: 每个Broker的最大带宽。
+        :type max_bandwidth_per_broker: str
+        :param min_storage_per_node: 每个节点的最小存储。单位为GB。
+        :type min_storage_per_node: str
+        :param max_tps_per_broker: 每个Broker的最大TPS。
+        :type max_tps_per_broker: str
+        """
         
         
 
@@ -93,7 +112,7 @@ class ListEnginePropertiesEntity:
         每个Broker的最大分区数。
 
         :param max_partition_per_broker: The max_partition_per_broker of this ListEnginePropertiesEntity.
-        :type: str
+        :type max_partition_per_broker: str
         """
         self._max_partition_per_broker = max_partition_per_broker
 
@@ -115,7 +134,7 @@ class ListEnginePropertiesEntity:
         Broker的最大个数。
 
         :param max_broker: The max_broker of this ListEnginePropertiesEntity.
-        :type: str
+        :type max_broker: str
         """
         self._max_broker = max_broker
 
@@ -137,7 +156,7 @@ class ListEnginePropertiesEntity:
         每个节点的最大存储。单位为GB。
 
         :param max_storage_per_node: The max_storage_per_node of this ListEnginePropertiesEntity.
-        :type: str
+        :type max_storage_per_node: str
         """
         self._max_storage_per_node = max_storage_per_node
 
@@ -159,7 +178,7 @@ class ListEnginePropertiesEntity:
         每个Broker的最大消费者数。
 
         :param max_consumer_per_broker: The max_consumer_per_broker of this ListEnginePropertiesEntity.
-        :type: str
+        :type max_consumer_per_broker: str
         """
         self._max_consumer_per_broker = max_consumer_per_broker
 
@@ -181,7 +200,7 @@ class ListEnginePropertiesEntity:
         Broker的最小个数。
 
         :param min_broker: The min_broker of this ListEnginePropertiesEntity.
-        :type: str
+        :type min_broker: str
         """
         self._min_broker = min_broker
 
@@ -203,7 +222,7 @@ class ListEnginePropertiesEntity:
         每个Broker的最大带宽。
 
         :param max_bandwidth_per_broker: The max_bandwidth_per_broker of this ListEnginePropertiesEntity.
-        :type: str
+        :type max_bandwidth_per_broker: str
         """
         self._max_bandwidth_per_broker = max_bandwidth_per_broker
 
@@ -225,7 +244,7 @@ class ListEnginePropertiesEntity:
         每个节点的最小存储。单位为GB。
 
         :param min_storage_per_node: The min_storage_per_node of this ListEnginePropertiesEntity.
-        :type: str
+        :type min_storage_per_node: str
         """
         self._min_storage_per_node = min_storage_per_node
 
@@ -247,7 +266,7 @@ class ListEnginePropertiesEntity:
         每个Broker的最大TPS。
 
         :param max_tps_per_broker: The max_tps_per_broker of this ListEnginePropertiesEntity.
-        :type: str
+        :type max_tps_per_broker: str
         """
         self._max_tps_per_broker = max_tps_per_broker
 

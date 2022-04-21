@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowAuditlogPolicyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowAuditlogPolicyResponse(SdkResponse):
     }
 
     def __init__(self, keep_days=None, audit_scope=None, audit_types=None):
-        """ShowAuditlogPolicyResponse - a model defined in huaweicloud sdk"""
+        """ShowAuditlogPolicyResponse
+
+        The model defined in huaweicloud sdk
+
+        :param keep_days: 审计日志保存天数，审计日志策略关闭时为0。
+        :type keep_days: int
+        :param audit_scope: 审计范围。
+        :type audit_scope: str
+        :param audit_types: 审计类型。
+        :type audit_types: list[str]
+        """
         
         super(ShowAuditlogPolicyResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ShowAuditlogPolicyResponse(SdkResponse):
         审计日志保存天数，审计日志策略关闭时为0。
 
         :param keep_days: The keep_days of this ShowAuditlogPolicyResponse.
-        :type: int
+        :type keep_days: int
         """
         self._keep_days = keep_days
 
@@ -90,7 +99,7 @@ class ShowAuditlogPolicyResponse(SdkResponse):
         审计范围。
 
         :param audit_scope: The audit_scope of this ShowAuditlogPolicyResponse.
-        :type: str
+        :type audit_scope: str
         """
         self._audit_scope = audit_scope
 
@@ -112,7 +121,7 @@ class ShowAuditlogPolicyResponse(SdkResponse):
         审计类型。
 
         :param audit_types: The audit_types of this ShowAuditlogPolicyResponse.
-        :type: list[str]
+        :type audit_types: list[str]
         """
         self._audit_types = audit_types
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateUserRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class UpdateUserRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, account=None, account_type=None, body=None):
-        """UpdateUserRequest - a model defined in huaweicloud sdk"""
+        """UpdateUserRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        :type x_request_id: str
+        :param accept_language: 语言参数，默认为中文zh-CN, 英文为en-US
+        :type accept_language: str
+        :param account: account账号
+        :type account: str
+        :param account_type: 账号类型 * 0：会议账号； * 1：第三方账号，默认0。 
+        :type account_type: int
+        :param body: Body of the UpdateUserRequest
+        :type body: :class:`huaweicloudsdkmeeting.v1.ModUserDTO`
+        """
         
         
 
@@ -77,7 +90,7 @@ class UpdateUserRequest:
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
 
         :param x_request_id: The x_request_id of this UpdateUserRequest.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 
@@ -99,7 +112,7 @@ class UpdateUserRequest:
         语言参数，默认为中文zh-CN, 英文为en-US
 
         :param accept_language: The accept_language of this UpdateUserRequest.
-        :type: str
+        :type accept_language: str
         """
         self._accept_language = accept_language
 
@@ -121,7 +134,7 @@ class UpdateUserRequest:
         account账号
 
         :param account: The account of this UpdateUserRequest.
-        :type: str
+        :type account: str
         """
         self._account = account
 
@@ -143,7 +156,7 @@ class UpdateUserRequest:
         账号类型 * 0：会议账号； * 1：第三方账号，默认0。 
 
         :param account_type: The account_type of this UpdateUserRequest.
-        :type: int
+        :type account_type: int
         """
         self._account_type = account_type
 
@@ -153,7 +166,7 @@ class UpdateUserRequest:
 
 
         :return: The body of this UpdateUserRequest.
-        :rtype: ModUserDTO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.ModUserDTO`
         """
         return self._body
 
@@ -163,7 +176,7 @@ class UpdateUserRequest:
 
 
         :param body: The body of this UpdateUserRequest.
-        :type: ModUserDTO
+        :type body: :class:`huaweicloudsdkmeeting.v1.ModUserDTO`
         """
         self._body = body
 

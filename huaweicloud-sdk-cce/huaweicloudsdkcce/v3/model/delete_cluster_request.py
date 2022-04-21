@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteClusterRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class DeleteClusterRequest:
     }
 
     def __init__(self, cluster_id=None, delete_efs=None, delete_eni=None, delete_evs=None, delete_net=None, delete_obs=None, delete_sfs=None, tobedeleted=None):
-        """DeleteClusterRequest - a model defined in huaweicloud sdk"""
+        """DeleteClusterRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 集群 ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
+        :type cluster_id: str
+        :param delete_efs: 是否删除SFS Turbo（极速文件存储卷）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
+        :type delete_efs: str
+        :param delete_eni: 是否删除eni ports（原生弹性网卡）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程，默认选项) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程)
+        :type delete_eni: str
+        :param delete_evs: 是否删除evs（云硬盘）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
+        :type delete_evs: str
+        :param delete_net: 是否删除elb（弹性负载均衡）等集群Service/Ingress相关资源。 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程，默认选项) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程)
+        :type delete_net: str
+        :param delete_obs: 是否删除obs（对象存储卷）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
+        :type delete_obs: str
+        :param delete_sfs: 是否删除sfs（文件存储卷）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
+        :type delete_sfs: str
+        :param tobedeleted: 是否使用包周期集群删除参数预置模式（仅对包周期集群生效）。 需要和其他删除选项参数一起使用，未指定的参数，则使用默认值。 使用该参数，集群不执行真正的删除，仅将本次请求的全部query参数都预置到集群数据库中，用于包周期集群退订时识别用户要删除的资源。 允许重复执行，覆盖预置的删除参数。 枚举取值： - true  (预置模式，仅预置query参数，不执行删除)
+        :type tobedeleted: str
+        """
         
         
 
@@ -92,7 +111,7 @@ class DeleteClusterRequest:
         集群 ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
         :param cluster_id: The cluster_id of this DeleteClusterRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -114,7 +133,7 @@ class DeleteClusterRequest:
         是否删除SFS Turbo（极速文件存储卷）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
 
         :param delete_efs: The delete_efs of this DeleteClusterRequest.
-        :type: str
+        :type delete_efs: str
         """
         self._delete_efs = delete_efs
 
@@ -136,7 +155,7 @@ class DeleteClusterRequest:
         是否删除eni ports（原生弹性网卡）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程，默认选项) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程)
 
         :param delete_eni: The delete_eni of this DeleteClusterRequest.
-        :type: str
+        :type delete_eni: str
         """
         self._delete_eni = delete_eni
 
@@ -158,7 +177,7 @@ class DeleteClusterRequest:
         是否删除evs（云硬盘）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
 
         :param delete_evs: The delete_evs of this DeleteClusterRequest.
-        :type: str
+        :type delete_evs: str
         """
         self._delete_evs = delete_evs
 
@@ -180,7 +199,7 @@ class DeleteClusterRequest:
         是否删除elb（弹性负载均衡）等集群Service/Ingress相关资源。 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程，默认选项) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程)
 
         :param delete_net: The delete_net of this DeleteClusterRequest.
-        :type: str
+        :type delete_net: str
         """
         self._delete_net = delete_net
 
@@ -202,7 +221,7 @@ class DeleteClusterRequest:
         是否删除obs（对象存储卷）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
 
         :param delete_obs: The delete_obs of this DeleteClusterRequest.
-        :type: str
+        :type delete_obs: str
         """
         self._delete_obs = delete_obs
 
@@ -224,7 +243,7 @@ class DeleteClusterRequest:
         是否删除sfs（文件存储卷）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
 
         :param delete_sfs: The delete_sfs of this DeleteClusterRequest.
-        :type: str
+        :type delete_sfs: str
         """
         self._delete_sfs = delete_sfs
 
@@ -246,7 +265,7 @@ class DeleteClusterRequest:
         是否使用包周期集群删除参数预置模式（仅对包周期集群生效）。 需要和其他删除选项参数一起使用，未指定的参数，则使用默认值。 使用该参数，集群不执行真正的删除，仅将本次请求的全部query参数都预置到集群数据库中，用于包周期集群退订时识别用户要删除的资源。 允许重复执行，覆盖预置的删除参数。 枚举取值： - true  (预置模式，仅预置query参数，不执行删除)
 
         :param tobedeleted: The tobedeleted of this DeleteClusterRequest.
-        :type: str
+        :type tobedeleted: str
         """
         self._tobedeleted = tobedeleted
 

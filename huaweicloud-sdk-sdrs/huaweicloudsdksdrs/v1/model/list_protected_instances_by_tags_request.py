@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListProtectedInstancesByTagsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListProtectedInstancesByTagsRequest:
     }
 
     def __init__(self, body=None):
-        """ListProtectedInstancesByTagsRequest - a model defined in huaweicloud sdk"""
+        """ListProtectedInstancesByTagsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the ListProtectedInstancesByTagsRequest
+        :type body: :class:`huaweicloudsdksdrs.v1.ListProtectedInstancesByTagsRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class ListProtectedInstancesByTagsRequest:
 
 
         :return: The body of this ListProtectedInstancesByTagsRequest.
-        :rtype: ListProtectedInstancesByTagsRequestBody
+        :rtype: :class:`huaweicloudsdksdrs.v1.ListProtectedInstancesByTagsRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class ListProtectedInstancesByTagsRequest:
 
 
         :param body: The body of this ListProtectedInstancesByTagsRequest.
-        :type: ListProtectedInstancesByTagsRequestBody
+        :type body: :class:`huaweicloudsdksdrs.v1.ListProtectedInstancesByTagsRequestBody`
         """
         self._body = body
 

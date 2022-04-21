@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateProductResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -66,7 +65,49 @@ class CreateProductResponse(SdkResponse):
     }
 
     def __init__(self, permissions=None, id=None, product_serial=None, app_id=None, name=None, manufacturer_id=None, manufacturer_name=None, model=None, product_type=None, description=None, protocol_type=None, device_type=None, version=None, created_user=None, last_updated_user=None, authentication=None, created_datetime=None, app_name=None, data_format=None):
-        """CreateProductResponse - a model defined in huaweicloud sdk"""
+        """CreateProductResponse
+
+        The model defined in huaweicloud sdk
+
+        :param permissions: 权限
+        :type permissions: list[str]
+        :param id: 产品ID
+        :type id: int
+        :param product_serial: 产品唯一序列（系统唯一值，用于MQS的TOPIC中标记产品）
+        :type product_serial: str
+        :param app_id: 应用ID
+        :type app_id: str
+        :param name: 产品名称，创建产品时租户内唯一，长度最大64，仅支持中文，英文字母，数字，下划线和中划线
+        :type name: str
+        :param manufacturer_id: 产品供应商ID
+        :type manufacturer_id: str
+        :param manufacturer_name: 厂商名称
+        :type manufacturer_name: str
+        :param model: 产品型号
+        :type model: str
+        :param product_type: 产品类型，0-普通产品(不支持子设备) 1-网关产品
+        :type product_type: int
+        :param description: 产品描述，长度0-200
+        :type description: str
+        :param protocol_type: 产品的协议类型 0-mqtt 2-modbus 4-opcua
+        :type protocol_type: int
+        :param device_type: 产品的设备类型（默认Default）
+        :type device_type: str
+        :param version: 产品版本
+        :type version: str
+        :param created_user: 
+        :type created_user: :class:`huaweicloudsdkroma.v2.CreatedUser`
+        :param last_updated_user: 
+        :type last_updated_user: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
+        :param authentication: 
+        :type authentication: :class:`huaweicloudsdkroma.v2.Authentication`
+        :param created_datetime: 创建时间，timestamp(ms)，使用UTC时区
+        :type created_datetime: int
+        :param app_name: 应用名称
+        :type app_name: str
+        :param data_format: data_format 0-JSON 1-USER_DEFINED
+        :type data_format: int
+        """
         
         super(CreateProductResponse, self).__init__()
 
@@ -148,7 +189,7 @@ class CreateProductResponse(SdkResponse):
         权限
 
         :param permissions: The permissions of this CreateProductResponse.
-        :type: list[str]
+        :type permissions: list[str]
         """
         self._permissions = permissions
 
@@ -170,7 +211,7 @@ class CreateProductResponse(SdkResponse):
         产品ID
 
         :param id: The id of this CreateProductResponse.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -192,7 +233,7 @@ class CreateProductResponse(SdkResponse):
         产品唯一序列（系统唯一值，用于MQS的TOPIC中标记产品）
 
         :param product_serial: The product_serial of this CreateProductResponse.
-        :type: str
+        :type product_serial: str
         """
         self._product_serial = product_serial
 
@@ -214,7 +255,7 @@ class CreateProductResponse(SdkResponse):
         应用ID
 
         :param app_id: The app_id of this CreateProductResponse.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -236,7 +277,7 @@ class CreateProductResponse(SdkResponse):
         产品名称，创建产品时租户内唯一，长度最大64，仅支持中文，英文字母，数字，下划线和中划线
 
         :param name: The name of this CreateProductResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -258,7 +299,7 @@ class CreateProductResponse(SdkResponse):
         产品供应商ID
 
         :param manufacturer_id: The manufacturer_id of this CreateProductResponse.
-        :type: str
+        :type manufacturer_id: str
         """
         self._manufacturer_id = manufacturer_id
 
@@ -280,7 +321,7 @@ class CreateProductResponse(SdkResponse):
         厂商名称
 
         :param manufacturer_name: The manufacturer_name of this CreateProductResponse.
-        :type: str
+        :type manufacturer_name: str
         """
         self._manufacturer_name = manufacturer_name
 
@@ -302,7 +343,7 @@ class CreateProductResponse(SdkResponse):
         产品型号
 
         :param model: The model of this CreateProductResponse.
-        :type: str
+        :type model: str
         """
         self._model = model
 
@@ -324,7 +365,7 @@ class CreateProductResponse(SdkResponse):
         产品类型，0-普通产品(不支持子设备) 1-网关产品
 
         :param product_type: The product_type of this CreateProductResponse.
-        :type: int
+        :type product_type: int
         """
         self._product_type = product_type
 
@@ -346,7 +387,7 @@ class CreateProductResponse(SdkResponse):
         产品描述，长度0-200
 
         :param description: The description of this CreateProductResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -368,7 +409,7 @@ class CreateProductResponse(SdkResponse):
         产品的协议类型 0-mqtt 2-modbus 4-opcua
 
         :param protocol_type: The protocol_type of this CreateProductResponse.
-        :type: int
+        :type protocol_type: int
         """
         self._protocol_type = protocol_type
 
@@ -390,7 +431,7 @@ class CreateProductResponse(SdkResponse):
         产品的设备类型（默认Default）
 
         :param device_type: The device_type of this CreateProductResponse.
-        :type: str
+        :type device_type: str
         """
         self._device_type = device_type
 
@@ -412,7 +453,7 @@ class CreateProductResponse(SdkResponse):
         产品版本
 
         :param version: The version of this CreateProductResponse.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -422,7 +463,7 @@ class CreateProductResponse(SdkResponse):
 
 
         :return: The created_user of this CreateProductResponse.
-        :rtype: CreatedUser
+        :rtype: :class:`huaweicloudsdkroma.v2.CreatedUser`
         """
         return self._created_user
 
@@ -432,7 +473,7 @@ class CreateProductResponse(SdkResponse):
 
 
         :param created_user: The created_user of this CreateProductResponse.
-        :type: CreatedUser
+        :type created_user: :class:`huaweicloudsdkroma.v2.CreatedUser`
         """
         self._created_user = created_user
 
@@ -442,7 +483,7 @@ class CreateProductResponse(SdkResponse):
 
 
         :return: The last_updated_user of this CreateProductResponse.
-        :rtype: LastUpdatedUser
+        :rtype: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
         """
         return self._last_updated_user
 
@@ -452,7 +493,7 @@ class CreateProductResponse(SdkResponse):
 
 
         :param last_updated_user: The last_updated_user of this CreateProductResponse.
-        :type: LastUpdatedUser
+        :type last_updated_user: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
         """
         self._last_updated_user = last_updated_user
 
@@ -462,7 +503,7 @@ class CreateProductResponse(SdkResponse):
 
 
         :return: The authentication of this CreateProductResponse.
-        :rtype: Authentication
+        :rtype: :class:`huaweicloudsdkroma.v2.Authentication`
         """
         return self._authentication
 
@@ -472,7 +513,7 @@ class CreateProductResponse(SdkResponse):
 
 
         :param authentication: The authentication of this CreateProductResponse.
-        :type: Authentication
+        :type authentication: :class:`huaweicloudsdkroma.v2.Authentication`
         """
         self._authentication = authentication
 
@@ -494,7 +535,7 @@ class CreateProductResponse(SdkResponse):
         创建时间，timestamp(ms)，使用UTC时区
 
         :param created_datetime: The created_datetime of this CreateProductResponse.
-        :type: int
+        :type created_datetime: int
         """
         self._created_datetime = created_datetime
 
@@ -516,7 +557,7 @@ class CreateProductResponse(SdkResponse):
         应用名称
 
         :param app_name: The app_name of this CreateProductResponse.
-        :type: str
+        :type app_name: str
         """
         self._app_name = app_name
 
@@ -538,7 +579,7 @@ class CreateProductResponse(SdkResponse):
         data_format 0-JSON 1-USER_DEFINED
 
         :param data_format: The data_format of this CreateProductResponse.
-        :type: int
+        :type data_format: int
         """
         self._data_format = data_format
 

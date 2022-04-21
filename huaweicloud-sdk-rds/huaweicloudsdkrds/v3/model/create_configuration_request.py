@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateConfigurationRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateConfigurationRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """CreateConfigurationRequest - a model defined in huaweicloud sdk"""
+        """CreateConfigurationRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言
+        :type x_language: str
+        :param body: Body of the CreateConfigurationRequest
+        :type body: :class:`huaweicloudsdkrds.v3.ConfigurationForCreation`
+        """
         
         
 
@@ -63,7 +70,7 @@ class CreateConfigurationRequest:
         语言
 
         :param x_language: The x_language of this CreateConfigurationRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -73,7 +80,7 @@ class CreateConfigurationRequest:
 
 
         :return: The body of this CreateConfigurationRequest.
-        :rtype: ConfigurationForCreation
+        :rtype: :class:`huaweicloudsdkrds.v3.ConfigurationForCreation`
         """
         return self._body
 
@@ -83,7 +90,7 @@ class CreateConfigurationRequest:
 
 
         :param body: The body of this CreateConfigurationRequest.
-        :type: ConfigurationForCreation
+        :type body: :class:`huaweicloudsdkrds.v3.ConfigurationForCreation`
         """
         self._body = body
 

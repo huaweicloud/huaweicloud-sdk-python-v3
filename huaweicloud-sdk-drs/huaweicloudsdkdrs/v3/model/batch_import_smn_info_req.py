@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchImportSmnInfoReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchImportSmnInfoReq:
     }
 
     def __init__(self, jobs=None, alarm_notify_info=None):
-        """BatchImportSmnInfoReq - a model defined in huaweicloud sdk"""
+        """BatchImportSmnInfoReq
+
+        The model defined in huaweicloud sdk
+
+        :param jobs: 任务信息
+        :type jobs: list[:class:`huaweicloudsdkdrs.v3.SelectedSetAlarmTaskReq`]
+        :param alarm_notify_info: 
+        :type alarm_notify_info: :class:`huaweicloudsdkdrs.v3.BatchSetAlarmNotifyInfo`
+        """
         
         
 
@@ -50,7 +57,7 @@ class BatchImportSmnInfoReq:
         任务信息
 
         :return: The jobs of this BatchImportSmnInfoReq.
-        :rtype: list[SelectedSetAlarmTaskReq]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.SelectedSetAlarmTaskReq`]
         """
         return self._jobs
 
@@ -61,7 +68,7 @@ class BatchImportSmnInfoReq:
         任务信息
 
         :param jobs: The jobs of this BatchImportSmnInfoReq.
-        :type: list[SelectedSetAlarmTaskReq]
+        :type jobs: list[:class:`huaweicloudsdkdrs.v3.SelectedSetAlarmTaskReq`]
         """
         self._jobs = jobs
 
@@ -71,7 +78,7 @@ class BatchImportSmnInfoReq:
 
 
         :return: The alarm_notify_info of this BatchImportSmnInfoReq.
-        :rtype: BatchSetAlarmNotifyInfo
+        :rtype: :class:`huaweicloudsdkdrs.v3.BatchSetAlarmNotifyInfo`
         """
         return self._alarm_notify_info
 
@@ -81,7 +88,7 @@ class BatchImportSmnInfoReq:
 
 
         :param alarm_notify_info: The alarm_notify_info of this BatchImportSmnInfoReq.
-        :type: BatchSetAlarmNotifyInfo
+        :type alarm_notify_info: :class:`huaweicloudsdkdrs.v3.BatchSetAlarmNotifyInfo`
         """
         self._alarm_notify_info = alarm_notify_info
 

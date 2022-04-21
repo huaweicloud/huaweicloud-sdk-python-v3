@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateL7ruleRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateL7ruleRequest:
     }
 
     def __init__(self, l7policy_id=None, l7rule_id=None, body=None):
-        """UpdateL7ruleRequest - a model defined in huaweicloud sdk"""
+        """UpdateL7ruleRequest
+
+        The model defined in huaweicloud sdk
+
+        :param l7policy_id: 待更新的转发规则所在的转发策略id
+        :type l7policy_id: str
+        :param l7rule_id: 待更新的转发规则id
+        :type l7rule_id: str
+        :param body: Body of the UpdateL7ruleRequest
+        :type body: :class:`huaweicloudsdkelb.v2.UpdateL7ruleRequestBody`
+        """
         
         
 
@@ -66,7 +75,7 @@ class UpdateL7ruleRequest:
         待更新的转发规则所在的转发策略id
 
         :param l7policy_id: The l7policy_id of this UpdateL7ruleRequest.
-        :type: str
+        :type l7policy_id: str
         """
         self._l7policy_id = l7policy_id
 
@@ -88,7 +97,7 @@ class UpdateL7ruleRequest:
         待更新的转发规则id
 
         :param l7rule_id: The l7rule_id of this UpdateL7ruleRequest.
-        :type: str
+        :type l7rule_id: str
         """
         self._l7rule_id = l7rule_id
 
@@ -98,7 +107,7 @@ class UpdateL7ruleRequest:
 
 
         :return: The body of this UpdateL7ruleRequest.
-        :rtype: UpdateL7ruleRequestBody
+        :rtype: :class:`huaweicloudsdkelb.v2.UpdateL7ruleRequestBody`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class UpdateL7ruleRequest:
 
 
         :param body: The body of this UpdateL7ruleRequest.
-        :type: UpdateL7ruleRequestBody
+        :type body: :class:`huaweicloudsdkelb.v2.UpdateL7ruleRequestBody`
         """
         self._body = body
 

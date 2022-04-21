@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListGroupReplicationInfoResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListGroupReplicationInfoResponse(SdkResponse):
     }
 
     def __init__(self, group_list=None, group_count=None):
-        """ListGroupReplicationInfoResponse - a model defined in huaweicloud sdk"""
+        """ListGroupReplicationInfoResponse
+
+        The model defined in huaweicloud sdk
+
+        :param group_list: 分片列表
+        :type group_list: list[:class:`huaweicloudsdkdcs.v2.InstanceGroupListInfo`]
+        :param group_count: 实例分片总数。
+        :type group_count: int
+        """
         
         super(ListGroupReplicationInfoResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListGroupReplicationInfoResponse(SdkResponse):
         分片列表
 
         :return: The group_list of this ListGroupReplicationInfoResponse.
-        :rtype: list[InstanceGroupListInfo]
+        :rtype: list[:class:`huaweicloudsdkdcs.v2.InstanceGroupListInfo`]
         """
         return self._group_list
 
@@ -63,7 +70,7 @@ class ListGroupReplicationInfoResponse(SdkResponse):
         分片列表
 
         :param group_list: The group_list of this ListGroupReplicationInfoResponse.
-        :type: list[InstanceGroupListInfo]
+        :type group_list: list[:class:`huaweicloudsdkdcs.v2.InstanceGroupListInfo`]
         """
         self._group_list = group_list
 
@@ -85,7 +92,7 @@ class ListGroupReplicationInfoResponse(SdkResponse):
         实例分片总数。
 
         :param group_count: The group_count of this ListGroupReplicationInfoResponse.
-        :type: int
+        :type group_count: int
         """
         self._group_count = group_count
 

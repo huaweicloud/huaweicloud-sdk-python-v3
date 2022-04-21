@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSnapshotsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class ListSnapshotsRequest:
     }
 
     def __init__(self, offset=None, limit=None, name=None, status=None, volume_id=None, availability_zone=None, id=None, dedicated_storage_name=None, dedicated_storage_id=None, service_type=None, enterprise_project_id=None):
-        """ListSnapshotsRequest - a model defined in huaweicloud sdk"""
+        """ListSnapshotsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param offset: 偏移量。 说明:分页查询快照时使用，与limit配合使用。假如共有30个快照，设置offset为11，limit为10，即为从第12个快照开始查询，一次最多可读取10个快照。
+        :type offset: int
+        :param limit: 返回结果个数限制，值为大于0的整数。默认值为1000。
+        :type limit: int
+        :param name: 云硬盘快照名称。最大支持255个字节。
+        :type name: str
+        :param status: 云硬盘快照状态，具体请参见A.3 云硬盘快照状态。
+        :type status: str
+        :param volume_id: 快照所属云硬盘的ID。
+        :type volume_id: str
+        :param availability_zone: 快照所属云硬盘的可用区。
+        :type availability_zone: str
+        :param id: 指定快照id进行过滤。可以传入多个id过滤查询，格式：id&#x3D;id1&amp;id&#x3D;id2&amp;id&#x3D;id3
+        :type id: str
+        :param dedicated_storage_name: 专属存储的名称。
+        :type dedicated_storage_name: str
+        :param dedicated_storage_id: 专属存储ID。
+        :type dedicated_storage_id: str
+        :param service_type: 服务类型。仅支持EVS、DSS、DESS。
+        :type service_type: str
+        :param enterprise_project_id: 指定企业项目id进行过滤。 传入“all_granted_eps”，代表查询权限范围内的所有企业项目下的云硬盘。 &gt; 说明： &gt;  &gt; 关于企业项目ID的获取及企业项目特性的详细信息，请参考：\&quot;[企业管理用户指南](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0123692049.html)\&quot;。
+        :type enterprise_project_id: str
+        """
         
         
 
@@ -108,7 +133,7 @@ class ListSnapshotsRequest:
         偏移量。 说明:分页查询快照时使用，与limit配合使用。假如共有30个快照，设置offset为11，limit为10，即为从第12个快照开始查询，一次最多可读取10个快照。
 
         :param offset: The offset of this ListSnapshotsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -130,7 +155,7 @@ class ListSnapshotsRequest:
         返回结果个数限制，值为大于0的整数。默认值为1000。
 
         :param limit: The limit of this ListSnapshotsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -152,7 +177,7 @@ class ListSnapshotsRequest:
         云硬盘快照名称。最大支持255个字节。
 
         :param name: The name of this ListSnapshotsRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -174,7 +199,7 @@ class ListSnapshotsRequest:
         云硬盘快照状态，具体请参见A.3 云硬盘快照状态。
 
         :param status: The status of this ListSnapshotsRequest.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -196,7 +221,7 @@ class ListSnapshotsRequest:
         快照所属云硬盘的ID。
 
         :param volume_id: The volume_id of this ListSnapshotsRequest.
-        :type: str
+        :type volume_id: str
         """
         self._volume_id = volume_id
 
@@ -218,7 +243,7 @@ class ListSnapshotsRequest:
         快照所属云硬盘的可用区。
 
         :param availability_zone: The availability_zone of this ListSnapshotsRequest.
-        :type: str
+        :type availability_zone: str
         """
         self._availability_zone = availability_zone
 
@@ -240,7 +265,7 @@ class ListSnapshotsRequest:
         指定快照id进行过滤。可以传入多个id过滤查询，格式：id=id1&id=id2&id=id3
 
         :param id: The id of this ListSnapshotsRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -262,7 +287,7 @@ class ListSnapshotsRequest:
         专属存储的名称。
 
         :param dedicated_storage_name: The dedicated_storage_name of this ListSnapshotsRequest.
-        :type: str
+        :type dedicated_storage_name: str
         """
         self._dedicated_storage_name = dedicated_storage_name
 
@@ -284,7 +309,7 @@ class ListSnapshotsRequest:
         专属存储ID。
 
         :param dedicated_storage_id: The dedicated_storage_id of this ListSnapshotsRequest.
-        :type: str
+        :type dedicated_storage_id: str
         """
         self._dedicated_storage_id = dedicated_storage_id
 
@@ -306,7 +331,7 @@ class ListSnapshotsRequest:
         服务类型。仅支持EVS、DSS、DESS。
 
         :param service_type: The service_type of this ListSnapshotsRequest.
-        :type: str
+        :type service_type: str
         """
         self._service_type = service_type
 
@@ -328,7 +353,7 @@ class ListSnapshotsRequest:
         指定企业项目id进行过滤。 传入“all_granted_eps”，代表查询权限范围内的所有企业项目下的云硬盘。 > 说明： >  > 关于企业项目ID的获取及企业项目特性的详细信息，请参考：\"[企业管理用户指南](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0123692049.html)\"。
 
         :param enterprise_project_id: The enterprise_project_id of this ListSnapshotsRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListFunctionsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListFunctionsResponse(SdkResponse):
     }
 
     def __init__(self, functions=None, next_marker=None, count=None):
-        """ListFunctionsResponse - a model defined in huaweicloud sdk"""
+        """ListFunctionsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param functions: 函数列表。
+        :type functions: list[:class:`huaweicloudsdkfunctiongraph.v2.ListFunctionResult`]
+        :param next_marker: 函数下次记录读取位置。
+        :type next_marker: int
+        :param count: 满足查询条件的函数总数。
+        :type count: int
+        """
         
         super(ListFunctionsResponse, self).__init__()
 
@@ -57,7 +66,7 @@ class ListFunctionsResponse(SdkResponse):
         函数列表。
 
         :return: The functions of this ListFunctionsResponse.
-        :rtype: list[ListFunctionResult]
+        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.ListFunctionResult`]
         """
         return self._functions
 
@@ -68,7 +77,7 @@ class ListFunctionsResponse(SdkResponse):
         函数列表。
 
         :param functions: The functions of this ListFunctionsResponse.
-        :type: list[ListFunctionResult]
+        :type functions: list[:class:`huaweicloudsdkfunctiongraph.v2.ListFunctionResult`]
         """
         self._functions = functions
 
@@ -90,7 +99,7 @@ class ListFunctionsResponse(SdkResponse):
         函数下次记录读取位置。
 
         :param next_marker: The next_marker of this ListFunctionsResponse.
-        :type: int
+        :type next_marker: int
         """
         self._next_marker = next_marker
 
@@ -112,7 +121,7 @@ class ListFunctionsResponse(SdkResponse):
         满足查询条件的函数总数。
 
         :param count: The count of this ListFunctionsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

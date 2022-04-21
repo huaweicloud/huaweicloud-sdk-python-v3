@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestoreNewInstanceRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class RestoreNewInstanceRequestBody:
     }
 
     def __init__(self, name=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, password=None, disk_encryption_id=None, flavor=None, backup_strategy=None, enterprise_project_id=None, ssl_option=None, dss_pool_id=None, server_group_policies=None, restore_point=None):
-        """RestoreNewInstanceRequestBody - a model defined in huaweicloud sdk"""
+        """RestoreNewInstanceRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param name: 实例名称。用于表示实例的名称，用于表示实例的名称，允许和已有名称重复。 取值范围：长度为4~64位，必须以字母开头（A~Z或a~z），区分大小写，可以包含字母、数字（0~9）、中划线（-）或者下划线（_），不能包含其他特殊字符。
+        :type name: str
+        :param availability_zone: 可用区ID，请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
+        :type availability_zone: str
+        :param vpc_id: 虚拟私有云ID。获取方法请参见《虚拟私有云API参考》中“VPC”的内容。 取值：非空，字符长度校验，严格UUID正则校验。
+        :type vpc_id: str
+        :param subnet_id: 子网ID。获取方法请参见《虚拟私有云API参考》中“子网”的内容。
+        :type subnet_id: str
+        :param security_group_id: 指定实例所属的安全组ID。 获取方法请参见《虚拟私有云API参考》中“安全组”的内容。
+        :type security_group_id: str
+        :param password: 数据库密码。 取值范围：长度为8~32位，必须是大写字母（A~Z）、小写字母（a~z）、数字（0~9）、特殊字符~!@#%^*-_&#x3D;+?的组合。 建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。
+        :type password: str
+        :param disk_encryption_id: 磁盘加密时的密钥ID，严格UUID正则校验。 不传该参数时，表示不进行磁盘加密。
+        :type disk_encryption_id: str
+        :param flavor: 实例规格详情。
+        :type flavor: list[:class:`huaweicloudsdkdds.v3.RestoreNewInstanceFlavorOption`]
+        :param backup_strategy: 
+        :type backup_strategy: :class:`huaweicloudsdkdds.v3.BackupStrategy`
+        :param enterprise_project_id: 企业项目ID。
+        :type enterprise_project_id: str
+        :param ssl_option: SSL开关选项。 取值： - 取“0”，表示DDS实例默认不启用SSL连接。 - 取“1”，表示DDS实例默认启用SSL连接。 - 不传该参数时，默认启用SSL连接。
+        :type ssl_option: str
+        :param dss_pool_id: 创建新实例所在专属存储池ID，仅专属云创建实例时有效。
+        :type dss_pool_id: str
+        :param server_group_policies: 创建新实例设置云服务器组关联的策略名称列表，仅专属云创建实例时有效。 取值    - 取“anti-affinity”，表示DDS实例开启反亲和部署，反亲和部署是出于高可用性考虑，将您的Primary、Secondary和Hidden节点分别创建在不同的物理机上。当前仅支持该值，不传该值默认不开启反亲和部署。
+        :type server_group_policies: list[str]
+        :param restore_point: 
+        :type restore_point: :class:`huaweicloudsdkdds.v3.RestorePoint`
+        """
         
         
 
@@ -116,7 +147,7 @@ class RestoreNewInstanceRequestBody:
         实例名称。用于表示实例的名称，用于表示实例的名称，允许和已有名称重复。 取值范围：长度为4~64位，必须以字母开头（A~Z或a~z），区分大小写，可以包含字母、数字（0~9）、中划线（-）或者下划线（_），不能包含其他特殊字符。
 
         :param name: The name of this RestoreNewInstanceRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -138,7 +169,7 @@ class RestoreNewInstanceRequestBody:
         可用区ID，请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
 
         :param availability_zone: The availability_zone of this RestoreNewInstanceRequestBody.
-        :type: str
+        :type availability_zone: str
         """
         self._availability_zone = availability_zone
 
@@ -160,7 +191,7 @@ class RestoreNewInstanceRequestBody:
         虚拟私有云ID。获取方法请参见《虚拟私有云API参考》中“VPC”的内容。 取值：非空，字符长度校验，严格UUID正则校验。
 
         :param vpc_id: The vpc_id of this RestoreNewInstanceRequestBody.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -182,7 +213,7 @@ class RestoreNewInstanceRequestBody:
         子网ID。获取方法请参见《虚拟私有云API参考》中“子网”的内容。
 
         :param subnet_id: The subnet_id of this RestoreNewInstanceRequestBody.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -204,7 +235,7 @@ class RestoreNewInstanceRequestBody:
         指定实例所属的安全组ID。 获取方法请参见《虚拟私有云API参考》中“安全组”的内容。
 
         :param security_group_id: The security_group_id of this RestoreNewInstanceRequestBody.
-        :type: str
+        :type security_group_id: str
         """
         self._security_group_id = security_group_id
 
@@ -226,7 +257,7 @@ class RestoreNewInstanceRequestBody:
         数据库密码。 取值范围：长度为8~32位，必须是大写字母（A~Z）、小写字母（a~z）、数字（0~9）、特殊字符~!@#%^*-_=+?的组合。 建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。
 
         :param password: The password of this RestoreNewInstanceRequestBody.
-        :type: str
+        :type password: str
         """
         self._password = password
 
@@ -248,7 +279,7 @@ class RestoreNewInstanceRequestBody:
         磁盘加密时的密钥ID，严格UUID正则校验。 不传该参数时，表示不进行磁盘加密。
 
         :param disk_encryption_id: The disk_encryption_id of this RestoreNewInstanceRequestBody.
-        :type: str
+        :type disk_encryption_id: str
         """
         self._disk_encryption_id = disk_encryption_id
 
@@ -259,7 +290,7 @@ class RestoreNewInstanceRequestBody:
         实例规格详情。
 
         :return: The flavor of this RestoreNewInstanceRequestBody.
-        :rtype: list[RestoreNewInstanceFlavorOption]
+        :rtype: list[:class:`huaweicloudsdkdds.v3.RestoreNewInstanceFlavorOption`]
         """
         return self._flavor
 
@@ -270,7 +301,7 @@ class RestoreNewInstanceRequestBody:
         实例规格详情。
 
         :param flavor: The flavor of this RestoreNewInstanceRequestBody.
-        :type: list[RestoreNewInstanceFlavorOption]
+        :type flavor: list[:class:`huaweicloudsdkdds.v3.RestoreNewInstanceFlavorOption`]
         """
         self._flavor = flavor
 
@@ -280,7 +311,7 @@ class RestoreNewInstanceRequestBody:
 
 
         :return: The backup_strategy of this RestoreNewInstanceRequestBody.
-        :rtype: BackupStrategy
+        :rtype: :class:`huaweicloudsdkdds.v3.BackupStrategy`
         """
         return self._backup_strategy
 
@@ -290,7 +321,7 @@ class RestoreNewInstanceRequestBody:
 
 
         :param backup_strategy: The backup_strategy of this RestoreNewInstanceRequestBody.
-        :type: BackupStrategy
+        :type backup_strategy: :class:`huaweicloudsdkdds.v3.BackupStrategy`
         """
         self._backup_strategy = backup_strategy
 
@@ -312,7 +343,7 @@ class RestoreNewInstanceRequestBody:
         企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this RestoreNewInstanceRequestBody.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -334,7 +365,7 @@ class RestoreNewInstanceRequestBody:
         SSL开关选项。 取值： - 取“0”，表示DDS实例默认不启用SSL连接。 - 取“1”，表示DDS实例默认启用SSL连接。 - 不传该参数时，默认启用SSL连接。
 
         :param ssl_option: The ssl_option of this RestoreNewInstanceRequestBody.
-        :type: str
+        :type ssl_option: str
         """
         self._ssl_option = ssl_option
 
@@ -356,7 +387,7 @@ class RestoreNewInstanceRequestBody:
         创建新实例所在专属存储池ID，仅专属云创建实例时有效。
 
         :param dss_pool_id: The dss_pool_id of this RestoreNewInstanceRequestBody.
-        :type: str
+        :type dss_pool_id: str
         """
         self._dss_pool_id = dss_pool_id
 
@@ -378,7 +409,7 @@ class RestoreNewInstanceRequestBody:
         创建新实例设置云服务器组关联的策略名称列表，仅专属云创建实例时有效。 取值    - 取“anti-affinity”，表示DDS实例开启反亲和部署，反亲和部署是出于高可用性考虑，将您的Primary、Secondary和Hidden节点分别创建在不同的物理机上。当前仅支持该值，不传该值默认不开启反亲和部署。
 
         :param server_group_policies: The server_group_policies of this RestoreNewInstanceRequestBody.
-        :type: list[str]
+        :type server_group_policies: list[str]
         """
         self._server_group_policies = server_group_policies
 
@@ -388,7 +419,7 @@ class RestoreNewInstanceRequestBody:
 
 
         :return: The restore_point of this RestoreNewInstanceRequestBody.
-        :rtype: RestorePoint
+        :rtype: :class:`huaweicloudsdkdds.v3.RestorePoint`
         """
         return self._restore_point
 
@@ -398,7 +429,7 @@ class RestoreNewInstanceRequestBody:
 
 
         :param restore_point: The restore_point of this RestoreNewInstanceRequestBody.
-        :type: RestorePoint
+        :type restore_point: :class:`huaweicloudsdkdds.v3.RestorePoint`
         """
         self._restore_point = restore_point
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InstanceEdgeParam:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class InstanceEdgeParam:
     }
 
     def __init__(self, arch=None, cpu_memory=None, description=None, instance_name=None, instance_user_domain_id=None, instance_user_domain_name=None, instance_user_id=None, instance_user_name=None, is_temporary=None, plugins=None, pvc_quantity=None, refresh_time=None, stack_id=None):
-        """InstanceEdgeParam - a model defined in huaweicloud sdk"""
+        """InstanceEdgeParam
+
+        The model defined in huaweicloud sdk
+
+        :param arch: cpu架构 x86|arm
+        :type arch: str
+        :param cpu_memory: cpu规格.arm架构支持4U8G，x86架构支持1U1G,2U4G,2U8G 与技术栈配置的规格对应，可通过技术栈管理ListStacks接口获取。如果标签不为空，以标签配置的技术栈规格为准。 quantum技术栈，x86架构cpu规格为2U8G;其他技术栈，x86架构cpu规格为1U1G,2U4G
+        :type cpu_memory: str
+        :param description: 描述。长度不操过100个字符
+        :type description: str
+        :param instance_name: 实例名。 可以输入中文、数字、字母、下划线、点、破折号。长度介于3-100之间
+        :type instance_name: str
+        :param instance_user_domain_id: 租户id（对应华为云帐号的domainId）
+        :type instance_user_domain_id: str
+        :param instance_user_domain_name: 用户租户名
+        :type instance_user_domain_name: str
+        :param instance_user_id: 用户id
+        :type instance_user_id: str
+        :param instance_user_name: 用户名
+        :type instance_user_name: str
+        :param is_temporary: 是否页面显示（以标签配置为准）
+        :type is_temporary: bool
+        :param plugins: 插件列表
+        :type plugins: list[:class:`huaweicloudsdkcloudide.v2.Plugin`]
+        :param pvc_quantity: PVC规格 5GB|10GB|20GB
+        :type pvc_quantity: str
+        :param refresh_time: 自动休眠时长。 arm架构,自动休眠时长只能设置成30，60。x86架构可取值为30，60，240，1440和-1。除-1外，其它值的单位为“分钟”。实例无操作超过自动休眠时长后，将会被暂停（已保存的数据不会被删除）。-1表示实例不会自动停止。
+        :type refresh_time: str
+        :param stack_id: 技术栈ID，通过技术栈管理ListStacks接口获取。
+        :type stack_id: str
+        """
         
         
 
@@ -114,7 +143,7 @@ class InstanceEdgeParam:
         cpu架构 x86|arm
 
         :param arch: The arch of this InstanceEdgeParam.
-        :type: str
+        :type arch: str
         """
         self._arch = arch
 
@@ -136,7 +165,7 @@ class InstanceEdgeParam:
         cpu规格.arm架构支持4U8G，x86架构支持1U1G,2U4G,2U8G 与技术栈配置的规格对应，可通过技术栈管理ListStacks接口获取。如果标签不为空，以标签配置的技术栈规格为准。 quantum技术栈，x86架构cpu规格为2U8G;其他技术栈，x86架构cpu规格为1U1G,2U4G
 
         :param cpu_memory: The cpu_memory of this InstanceEdgeParam.
-        :type: str
+        :type cpu_memory: str
         """
         self._cpu_memory = cpu_memory
 
@@ -158,7 +187,7 @@ class InstanceEdgeParam:
         描述。长度不操过100个字符
 
         :param description: The description of this InstanceEdgeParam.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -180,7 +209,7 @@ class InstanceEdgeParam:
         实例名。 可以输入中文、数字、字母、下划线、点、破折号。长度介于3-100之间
 
         :param instance_name: The instance_name of this InstanceEdgeParam.
-        :type: str
+        :type instance_name: str
         """
         self._instance_name = instance_name
 
@@ -202,7 +231,7 @@ class InstanceEdgeParam:
         租户id（对应华为云帐号的domainId）
 
         :param instance_user_domain_id: The instance_user_domain_id of this InstanceEdgeParam.
-        :type: str
+        :type instance_user_domain_id: str
         """
         self._instance_user_domain_id = instance_user_domain_id
 
@@ -224,7 +253,7 @@ class InstanceEdgeParam:
         用户租户名
 
         :param instance_user_domain_name: The instance_user_domain_name of this InstanceEdgeParam.
-        :type: str
+        :type instance_user_domain_name: str
         """
         self._instance_user_domain_name = instance_user_domain_name
 
@@ -246,7 +275,7 @@ class InstanceEdgeParam:
         用户id
 
         :param instance_user_id: The instance_user_id of this InstanceEdgeParam.
-        :type: str
+        :type instance_user_id: str
         """
         self._instance_user_id = instance_user_id
 
@@ -268,7 +297,7 @@ class InstanceEdgeParam:
         用户名
 
         :param instance_user_name: The instance_user_name of this InstanceEdgeParam.
-        :type: str
+        :type instance_user_name: str
         """
         self._instance_user_name = instance_user_name
 
@@ -290,7 +319,7 @@ class InstanceEdgeParam:
         是否页面显示（以标签配置为准）
 
         :param is_temporary: The is_temporary of this InstanceEdgeParam.
-        :type: bool
+        :type is_temporary: bool
         """
         self._is_temporary = is_temporary
 
@@ -301,7 +330,7 @@ class InstanceEdgeParam:
         插件列表
 
         :return: The plugins of this InstanceEdgeParam.
-        :rtype: list[Plugin]
+        :rtype: list[:class:`huaweicloudsdkcloudide.v2.Plugin`]
         """
         return self._plugins
 
@@ -312,7 +341,7 @@ class InstanceEdgeParam:
         插件列表
 
         :param plugins: The plugins of this InstanceEdgeParam.
-        :type: list[Plugin]
+        :type plugins: list[:class:`huaweicloudsdkcloudide.v2.Plugin`]
         """
         self._plugins = plugins
 
@@ -334,7 +363,7 @@ class InstanceEdgeParam:
         PVC规格 5GB|10GB|20GB
 
         :param pvc_quantity: The pvc_quantity of this InstanceEdgeParam.
-        :type: str
+        :type pvc_quantity: str
         """
         self._pvc_quantity = pvc_quantity
 
@@ -356,7 +385,7 @@ class InstanceEdgeParam:
         自动休眠时长。 arm架构,自动休眠时长只能设置成30，60。x86架构可取值为30，60，240，1440和-1。除-1外，其它值的单位为“分钟”。实例无操作超过自动休眠时长后，将会被暂停（已保存的数据不会被删除）。-1表示实例不会自动停止。
 
         :param refresh_time: The refresh_time of this InstanceEdgeParam.
-        :type: str
+        :type refresh_time: str
         """
         self._refresh_time = refresh_time
 
@@ -378,7 +407,7 @@ class InstanceEdgeParam:
         技术栈ID，通过技术栈管理ListStacks接口获取。
 
         :param stack_id: The stack_id of this InstanceEdgeParam.
-        :type: str
+        :type stack_id: str
         """
         self._stack_id = stack_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SendSlideVerifyCodeResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class SendSlideVerifyCodeResponse(SdkResponse):
     }
 
     def __init__(self, shadow_image=None, cut_image=None, point_y=None, token=None, expire=None):
-        """SendSlideVerifyCodeResponse - a model defined in huaweicloud sdk"""
+        """SendSlideVerifyCodeResponse
+
+        The model defined in huaweicloud sdk
+
+        :param shadow_image: 抠出图形后的原背景图。通过“data:url”方式来定义图片。
+        :type shadow_image: str
+        :param cut_image: 抠出的图形。
+        :type cut_image: str
+        :param point_y: 抠出图形的Y轴座标。
+        :type point_y: int
+        :param token: 验证码token字符串。
+        :type token: str
+        :param expire: 验证码有效时间，单位：秒。
+        :type expire: int
+        """
         
         super(SendSlideVerifyCodeResponse, self).__init__()
 
@@ -78,7 +91,7 @@ class SendSlideVerifyCodeResponse(SdkResponse):
         抠出图形后的原背景图。通过“data:url”方式来定义图片。
 
         :param shadow_image: The shadow_image of this SendSlideVerifyCodeResponse.
-        :type: str
+        :type shadow_image: str
         """
         self._shadow_image = shadow_image
 
@@ -100,7 +113,7 @@ class SendSlideVerifyCodeResponse(SdkResponse):
         抠出的图形。
 
         :param cut_image: The cut_image of this SendSlideVerifyCodeResponse.
-        :type: str
+        :type cut_image: str
         """
         self._cut_image = cut_image
 
@@ -122,7 +135,7 @@ class SendSlideVerifyCodeResponse(SdkResponse):
         抠出图形的Y轴座标。
 
         :param point_y: The point_y of this SendSlideVerifyCodeResponse.
-        :type: int
+        :type point_y: int
         """
         self._point_y = point_y
 
@@ -144,7 +157,7 @@ class SendSlideVerifyCodeResponse(SdkResponse):
         验证码token字符串。
 
         :param token: The token of this SendSlideVerifyCodeResponse.
-        :type: str
+        :type token: str
         """
         self._token = token
 
@@ -166,7 +179,7 @@ class SendSlideVerifyCodeResponse(SdkResponse):
         验证码有效时间，单位：秒。
 
         :param expire: The expire of this SendSlideVerifyCodeResponse.
-        :type: int
+        :type expire: int
         """
         self._expire = expire
 

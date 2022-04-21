@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateInstanceRespItem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -68,7 +67,51 @@ class CreateInstanceRespItem:
     }
 
     def __init__(self, id=None, name=None, status=None, datastore=None, ha=None, configuration_id=None, port=None, backup_strategy=None, enterprise_project_id=None, disk_encryption_id=None, flavor_ref=None, volume=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, charge_info=None, collation=None, restore_point=None):
-        """CreateInstanceRespItem - a model defined in huaweicloud sdk"""
+        """CreateInstanceRespItem
+
+        The model defined in huaweicloud sdk
+
+        :param id: 实例id
+        :type id: str
+        :param name: 实例名称。 用于表示实例的名称，同一租户下，同类型的实例名可重名，其中，SQL Server实例名唯一。 取值范围：4~64个字符之间，必须以字母开头，区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他的特殊字符。
+        :type name: str
+        :param status: 实例状态。如BUILD，表示创建中。 仅创建按需实例时会返回该参数。
+        :type status: str
+        :param datastore: 
+        :type datastore: :class:`huaweicloudsdkrds.v3.Datastore`
+        :param ha: 
+        :type ha: :class:`huaweicloudsdkrds.v3.Ha`
+        :param configuration_id: 参数组ID。
+        :type configuration_id: str
+        :param port: 数据库端口信息。  - MySQL数据库端口设置范围为1024～65535（其中12017和33071被RDS系统占用不可设置）。 - PostgreSQL数据库端口修改范围为2100～9500。 - Microsoft SQL Server实例的端口设置范围为1433和2100~9500（其中5355和5985不可设置。对于2017 EE、2017 SE、2017 Web版，5050、5353和5986不可设置。  当不传该参数时，默认端口如下：  - MySQL默认3306。 - PostgreSQL默认5432。 - Microsoft SQL Server默认1433。
+        :type port: str
+        :param backup_strategy: 
+        :type backup_strategy: :class:`huaweicloudsdkrds.v3.BackupStrategy`
+        :param enterprise_project_id: 企业项目ID。
+        :type enterprise_project_id: str
+        :param disk_encryption_id: 用于磁盘加密的密钥ID。
+        :type disk_encryption_id: str
+        :param flavor_ref: 规格码。
+        :type flavor_ref: str
+        :param volume: 
+        :type volume: :class:`huaweicloudsdkrds.v3.Volume`
+        :param region: 区域ID。创建主实例时必选，其它场景不可选。 取值参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
+        :type region: str
+        :param availability_zone: 可用区ID。对于数据库实例类型不是单机的实例，需要分别为实例所有节点指定可用区，并用逗号隔开。 取值参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
+        :type availability_zone: str
+        :param vpc_id: 虚拟私有云ID。创建只读实例时不可选（只读实例的网络属性默认和主实例相同），其它场景必选。
+        :type vpc_id: str
+        :param subnet_id: 子网ID。创建只读实例时不可选（只读实例的网络属性默认和主实例相同），其它场景必选。
+        :type subnet_id: str
+        :param security_group_id: 安全组ID。创建只读实例时不可选（只读实例的网络属性默认和主实例相同），其它场景必选。
+        :type security_group_id: str
+        :param charge_info: 
+        :type charge_info: :class:`huaweicloudsdkrds.v3.ChargeInfo`
+        :param collation: 仅限Microsoft SQL Server实例使用。取值范围：根据查询SQL Server可用字符集的字符集查询列表查询可设置的字符集。
+        :type collation: str
+        :param restore_point: 
+        :type restore_point: :class:`huaweicloudsdkrds.v3.RestorePoint`
+        """
         
         
 
@@ -144,7 +187,7 @@ class CreateInstanceRespItem:
         实例id
 
         :param id: The id of this CreateInstanceRespItem.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -166,7 +209,7 @@ class CreateInstanceRespItem:
         实例名称。 用于表示实例的名称，同一租户下，同类型的实例名可重名，其中，SQL Server实例名唯一。 取值范围：4~64个字符之间，必须以字母开头，区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他的特殊字符。
 
         :param name: The name of this CreateInstanceRespItem.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -188,7 +231,7 @@ class CreateInstanceRespItem:
         实例状态。如BUILD，表示创建中。 仅创建按需实例时会返回该参数。
 
         :param status: The status of this CreateInstanceRespItem.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -198,7 +241,7 @@ class CreateInstanceRespItem:
 
 
         :return: The datastore of this CreateInstanceRespItem.
-        :rtype: Datastore
+        :rtype: :class:`huaweicloudsdkrds.v3.Datastore`
         """
         return self._datastore
 
@@ -208,7 +251,7 @@ class CreateInstanceRespItem:
 
 
         :param datastore: The datastore of this CreateInstanceRespItem.
-        :type: Datastore
+        :type datastore: :class:`huaweicloudsdkrds.v3.Datastore`
         """
         self._datastore = datastore
 
@@ -218,7 +261,7 @@ class CreateInstanceRespItem:
 
 
         :return: The ha of this CreateInstanceRespItem.
-        :rtype: Ha
+        :rtype: :class:`huaweicloudsdkrds.v3.Ha`
         """
         return self._ha
 
@@ -228,7 +271,7 @@ class CreateInstanceRespItem:
 
 
         :param ha: The ha of this CreateInstanceRespItem.
-        :type: Ha
+        :type ha: :class:`huaweicloudsdkrds.v3.Ha`
         """
         self._ha = ha
 
@@ -250,7 +293,7 @@ class CreateInstanceRespItem:
         参数组ID。
 
         :param configuration_id: The configuration_id of this CreateInstanceRespItem.
-        :type: str
+        :type configuration_id: str
         """
         self._configuration_id = configuration_id
 
@@ -272,7 +315,7 @@ class CreateInstanceRespItem:
         数据库端口信息。  - MySQL数据库端口设置范围为1024～65535（其中12017和33071被RDS系统占用不可设置）。 - PostgreSQL数据库端口修改范围为2100～9500。 - Microsoft SQL Server实例的端口设置范围为1433和2100~9500（其中5355和5985不可设置。对于2017 EE、2017 SE、2017 Web版，5050、5353和5986不可设置。  当不传该参数时，默认端口如下：  - MySQL默认3306。 - PostgreSQL默认5432。 - Microsoft SQL Server默认1433。
 
         :param port: The port of this CreateInstanceRespItem.
-        :type: str
+        :type port: str
         """
         self._port = port
 
@@ -282,7 +325,7 @@ class CreateInstanceRespItem:
 
 
         :return: The backup_strategy of this CreateInstanceRespItem.
-        :rtype: BackupStrategy
+        :rtype: :class:`huaweicloudsdkrds.v3.BackupStrategy`
         """
         return self._backup_strategy
 
@@ -292,7 +335,7 @@ class CreateInstanceRespItem:
 
 
         :param backup_strategy: The backup_strategy of this CreateInstanceRespItem.
-        :type: BackupStrategy
+        :type backup_strategy: :class:`huaweicloudsdkrds.v3.BackupStrategy`
         """
         self._backup_strategy = backup_strategy
 
@@ -314,7 +357,7 @@ class CreateInstanceRespItem:
         企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this CreateInstanceRespItem.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -336,7 +379,7 @@ class CreateInstanceRespItem:
         用于磁盘加密的密钥ID。
 
         :param disk_encryption_id: The disk_encryption_id of this CreateInstanceRespItem.
-        :type: str
+        :type disk_encryption_id: str
         """
         self._disk_encryption_id = disk_encryption_id
 
@@ -358,7 +401,7 @@ class CreateInstanceRespItem:
         规格码。
 
         :param flavor_ref: The flavor_ref of this CreateInstanceRespItem.
-        :type: str
+        :type flavor_ref: str
         """
         self._flavor_ref = flavor_ref
 
@@ -368,7 +411,7 @@ class CreateInstanceRespItem:
 
 
         :return: The volume of this CreateInstanceRespItem.
-        :rtype: Volume
+        :rtype: :class:`huaweicloudsdkrds.v3.Volume`
         """
         return self._volume
 
@@ -378,7 +421,7 @@ class CreateInstanceRespItem:
 
 
         :param volume: The volume of this CreateInstanceRespItem.
-        :type: Volume
+        :type volume: :class:`huaweicloudsdkrds.v3.Volume`
         """
         self._volume = volume
 
@@ -400,7 +443,7 @@ class CreateInstanceRespItem:
         区域ID。创建主实例时必选，其它场景不可选。 取值参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
 
         :param region: The region of this CreateInstanceRespItem.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -422,7 +465,7 @@ class CreateInstanceRespItem:
         可用区ID。对于数据库实例类型不是单机的实例，需要分别为实例所有节点指定可用区，并用逗号隔开。 取值参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
 
         :param availability_zone: The availability_zone of this CreateInstanceRespItem.
-        :type: str
+        :type availability_zone: str
         """
         self._availability_zone = availability_zone
 
@@ -444,7 +487,7 @@ class CreateInstanceRespItem:
         虚拟私有云ID。创建只读实例时不可选（只读实例的网络属性默认和主实例相同），其它场景必选。
 
         :param vpc_id: The vpc_id of this CreateInstanceRespItem.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -466,7 +509,7 @@ class CreateInstanceRespItem:
         子网ID。创建只读实例时不可选（只读实例的网络属性默认和主实例相同），其它场景必选。
 
         :param subnet_id: The subnet_id of this CreateInstanceRespItem.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -488,7 +531,7 @@ class CreateInstanceRespItem:
         安全组ID。创建只读实例时不可选（只读实例的网络属性默认和主实例相同），其它场景必选。
 
         :param security_group_id: The security_group_id of this CreateInstanceRespItem.
-        :type: str
+        :type security_group_id: str
         """
         self._security_group_id = security_group_id
 
@@ -498,7 +541,7 @@ class CreateInstanceRespItem:
 
 
         :return: The charge_info of this CreateInstanceRespItem.
-        :rtype: ChargeInfo
+        :rtype: :class:`huaweicloudsdkrds.v3.ChargeInfo`
         """
         return self._charge_info
 
@@ -508,7 +551,7 @@ class CreateInstanceRespItem:
 
 
         :param charge_info: The charge_info of this CreateInstanceRespItem.
-        :type: ChargeInfo
+        :type charge_info: :class:`huaweicloudsdkrds.v3.ChargeInfo`
         """
         self._charge_info = charge_info
 
@@ -530,7 +573,7 @@ class CreateInstanceRespItem:
         仅限Microsoft SQL Server实例使用。取值范围：根据查询SQL Server可用字符集的字符集查询列表查询可设置的字符集。
 
         :param collation: The collation of this CreateInstanceRespItem.
-        :type: str
+        :type collation: str
         """
         self._collation = collation
 
@@ -540,7 +583,7 @@ class CreateInstanceRespItem:
 
 
         :return: The restore_point of this CreateInstanceRespItem.
-        :rtype: RestorePoint
+        :rtype: :class:`huaweicloudsdkrds.v3.RestorePoint`
         """
         return self._restore_point
 
@@ -550,7 +593,7 @@ class CreateInstanceRespItem:
 
 
         :param restore_point: The restore_point of this CreateInstanceRespItem.
-        :type: RestorePoint
+        :type restore_point: :class:`huaweicloudsdkrds.v3.RestorePoint`
         """
         self._restore_point = restore_point
 

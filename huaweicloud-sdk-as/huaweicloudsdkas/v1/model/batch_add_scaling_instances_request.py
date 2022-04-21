@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchAddScalingInstancesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchAddScalingInstancesRequest:
     }
 
     def __init__(self, scaling_group_id=None, body=None):
-        """BatchAddScalingInstancesRequest - a model defined in huaweicloud sdk"""
+        """BatchAddScalingInstancesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param scaling_group_id: 实例ID。
+        :type scaling_group_id: str
+        :param body: Body of the BatchAddScalingInstancesRequest
+        :type body: :class:`huaweicloudsdkas.v1.BatchAddInstancesOption`
+        """
         
         
 
@@ -62,7 +69,7 @@ class BatchAddScalingInstancesRequest:
         实例ID。
 
         :param scaling_group_id: The scaling_group_id of this BatchAddScalingInstancesRequest.
-        :type: str
+        :type scaling_group_id: str
         """
         self._scaling_group_id = scaling_group_id
 
@@ -72,7 +79,7 @@ class BatchAddScalingInstancesRequest:
 
 
         :return: The body of this BatchAddScalingInstancesRequest.
-        :rtype: BatchAddInstancesOption
+        :rtype: :class:`huaweicloudsdkas.v1.BatchAddInstancesOption`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class BatchAddScalingInstancesRequest:
 
 
         :param body: The body of this BatchAddScalingInstancesRequest.
-        :type: BatchAddInstancesOption
+        :type body: :class:`huaweicloudsdkas.v1.BatchAddInstancesOption`
         """
         self._body = body
 

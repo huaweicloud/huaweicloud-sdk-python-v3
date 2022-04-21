@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BeneficiaryItem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class BeneficiaryItem:
     }
 
     def __init__(self, beneficiary_name=None, beneficiary_type=None, beneficiary_order=None, beneficiary_share=None):
-        """BeneficiaryItem - a model defined in huaweicloud sdk"""
+        """BeneficiaryItem
+
+        The model defined in huaweicloud sdk
+
+        :param beneficiary_name: 
+        :type beneficiary_name: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
+        :param beneficiary_type: 
+        :type beneficiary_type: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
+        :param beneficiary_order: 
+        :type beneficiary_order: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
+        :param beneficiary_share: 
+        :type beneficiary_share: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
+        """
         
         
 
@@ -61,7 +72,7 @@ class BeneficiaryItem:
 
 
         :return: The beneficiary_name of this BeneficiaryItem.
-        :rtype: InsurancePolicyDetail
+        :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
         return self._beneficiary_name
 
@@ -71,7 +82,7 @@ class BeneficiaryItem:
 
 
         :param beneficiary_name: The beneficiary_name of this BeneficiaryItem.
-        :type: InsurancePolicyDetail
+        :type beneficiary_name: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
         self._beneficiary_name = beneficiary_name
 
@@ -81,7 +92,7 @@ class BeneficiaryItem:
 
 
         :return: The beneficiary_type of this BeneficiaryItem.
-        :rtype: InsurancePolicyDetail
+        :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
         return self._beneficiary_type
 
@@ -91,7 +102,7 @@ class BeneficiaryItem:
 
 
         :param beneficiary_type: The beneficiary_type of this BeneficiaryItem.
-        :type: InsurancePolicyDetail
+        :type beneficiary_type: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
         self._beneficiary_type = beneficiary_type
 
@@ -101,7 +112,7 @@ class BeneficiaryItem:
 
 
         :return: The beneficiary_order of this BeneficiaryItem.
-        :rtype: InsurancePolicyDetail
+        :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
         return self._beneficiary_order
 
@@ -111,7 +122,7 @@ class BeneficiaryItem:
 
 
         :param beneficiary_order: The beneficiary_order of this BeneficiaryItem.
-        :type: InsurancePolicyDetail
+        :type beneficiary_order: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
         self._beneficiary_order = beneficiary_order
 
@@ -121,7 +132,7 @@ class BeneficiaryItem:
 
 
         :return: The beneficiary_share of this BeneficiaryItem.
-        :rtype: InsurancePolicyDetail
+        :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
         return self._beneficiary_share
 
@@ -131,7 +142,7 @@ class BeneficiaryItem:
 
 
         :param beneficiary_share: The beneficiary_share of this BeneficiaryItem.
-        :type: InsurancePolicyDetail
+        :type beneficiary_share: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
         self._beneficiary_share = beneficiary_share
 

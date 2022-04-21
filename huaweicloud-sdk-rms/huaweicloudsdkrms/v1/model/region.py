@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Region:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Region:
     }
 
     def __init__(self, region_id=None, display_name=None):
-        """Region - a model defined in huaweicloud sdk"""
+        """Region
+
+        The model defined in huaweicloud sdk
+
+        :param region_id: 区域ID
+        :type region_id: str
+        :param display_name: 显示名称
+        :type display_name: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class Region:
         区域ID
 
         :param region_id: The region_id of this Region.
-        :type: str
+        :type region_id: str
         """
         self._region_id = region_id
 
@@ -85,7 +92,7 @@ class Region:
         显示名称
 
         :param display_name: The display_name of this Region.
-        :type: str
+        :type display_name: str
         """
         self._display_name = display_name
 

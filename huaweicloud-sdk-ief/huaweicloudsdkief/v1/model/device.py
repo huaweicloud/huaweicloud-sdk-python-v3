@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Device:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class Device:
     }
 
     def __init__(self, id=None, name=None, access_protocol=None, description=None, project_id=None, created_at=None, updated_at=None, attributes=None, connection_type=None, twin=None, access_config=None, property_visitors=None):
-        """Device - a model defined in huaweicloud sdk"""
+        """Device
+
+        The model defined in huaweicloud sdk
+
+        :param id: 终端设备ID，只允许英文字母、数字、下划线、中划线，必须以英文字母和数字开头，长度限制为24~64之间
+        :type id: str
+        :param name: 终端设备名称，只允许中文字符、英文字母、数字、下划线、中划线，长度限制为1~64
+        :type name: str
+        :param access_protocol: 访问协议，有如下选项： - userdefine：自定义协议 - modbus：modbus协议 - opc-ua：opc-ua协议 默认为userdefine
+        :type access_protocol: str
+        :param description: 终端设备描述，最大长度255，不允许^ ~ # $ % &amp; * &lt; &gt; ( ) [ ] { } &#39; \&quot; \\
+        :type description: str
+        :param project_id: 项目ID
+        :type project_id: str
+        :param created_at: 创建时间
+        :type created_at: str
+        :param updated_at: 更新时间
+        :type updated_at: str
+        :param attributes: 
+        :type attributes: dict(str, ValueInAttributes)
+        :param connection_type: 连接类型，默认为edge
+        :type connection_type: str
+        :param twin: 终端设备静态属性信息
+        :type twin: dict(str, ValueInTwinResponse)
+        :param access_config: 
+        :type access_config: :class:`huaweicloudsdkief.v1.AccessConfig`
+        :param property_visitors: 孪生属性配置
+        :type property_visitors: dict(str, ValueInPropertyVisitors)
+        """
         
         
 
@@ -101,7 +128,7 @@ class Device:
         终端设备ID，只允许英文字母、数字、下划线、中划线，必须以英文字母和数字开头，长度限制为24~64之间
 
         :param id: The id of this Device.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -123,7 +150,7 @@ class Device:
         终端设备名称，只允许中文字符、英文字母、数字、下划线、中划线，长度限制为1~64
 
         :param name: The name of this Device.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -145,7 +172,7 @@ class Device:
         访问协议，有如下选项： - userdefine：自定义协议 - modbus：modbus协议 - opc-ua：opc-ua协议 默认为userdefine
 
         :param access_protocol: The access_protocol of this Device.
-        :type: str
+        :type access_protocol: str
         """
         self._access_protocol = access_protocol
 
@@ -167,7 +194,7 @@ class Device:
         终端设备描述，最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
         :param description: The description of this Device.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -189,7 +216,7 @@ class Device:
         项目ID
 
         :param project_id: The project_id of this Device.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -211,7 +238,7 @@ class Device:
         创建时间
 
         :param created_at: The created_at of this Device.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -233,7 +260,7 @@ class Device:
         更新时间
 
         :param updated_at: The updated_at of this Device.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 
@@ -253,7 +280,7 @@ class Device:
 
 
         :param attributes: The attributes of this Device.
-        :type: dict(str, ValueInAttributes)
+        :type attributes: dict(str, ValueInAttributes)
         """
         self._attributes = attributes
 
@@ -275,7 +302,7 @@ class Device:
         连接类型，默认为edge
 
         :param connection_type: The connection_type of this Device.
-        :type: str
+        :type connection_type: str
         """
         self._connection_type = connection_type
 
@@ -297,7 +324,7 @@ class Device:
         终端设备静态属性信息
 
         :param twin: The twin of this Device.
-        :type: dict(str, ValueInTwinResponse)
+        :type twin: dict(str, ValueInTwinResponse)
         """
         self._twin = twin
 
@@ -307,7 +334,7 @@ class Device:
 
 
         :return: The access_config of this Device.
-        :rtype: AccessConfig
+        :rtype: :class:`huaweicloudsdkief.v1.AccessConfig`
         """
         return self._access_config
 
@@ -317,7 +344,7 @@ class Device:
 
 
         :param access_config: The access_config of this Device.
-        :type: AccessConfig
+        :type access_config: :class:`huaweicloudsdkief.v1.AccessConfig`
         """
         self._access_config = access_config
 
@@ -339,7 +366,7 @@ class Device:
         孪生属性配置
 
         :param property_visitors: The property_visitors of this Device.
-        :type: dict(str, ValueInPropertyVisitors)
+        :type property_visitors: dict(str, ValueInPropertyVisitors)
         """
         self._property_visitors = property_visitors
 

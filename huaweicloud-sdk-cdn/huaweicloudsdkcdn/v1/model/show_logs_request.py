@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowLogsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ShowLogsRequest:
     }
 
     def __init__(self, domain_name=None, query_date=None, page_size=None, page_number=None, enterprise_project_id=None):
-        """ShowLogsRequest - a model defined in huaweicloud sdk"""
+        """ShowLogsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param domain_name: 只支持单个域名，如：www.test1.com。
+        :type domain_name: str
+        :param query_date: 查询开始时间，查询开始时间到开始时间+1天内的日志数据，取值范围是距离当前30天内。
+        :type query_date: int
+        :param page_size: 单页最大数量，取值范围为1-10000。
+        :type page_size: int
+        :param page_number: 当前查询第几页，取值范围为1-65535。
+        :type page_number: int
+        :param enterprise_project_id: 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子账号调用接口时，该参数必传。
+        :type enterprise_project_id: str
+        """
         
         
 
@@ -76,7 +89,7 @@ class ShowLogsRequest:
         只支持单个域名，如：www.test1.com。
 
         :param domain_name: The domain_name of this ShowLogsRequest.
-        :type: str
+        :type domain_name: str
         """
         self._domain_name = domain_name
 
@@ -98,7 +111,7 @@ class ShowLogsRequest:
         查询开始时间，查询开始时间到开始时间+1天内的日志数据，取值范围是距离当前30天内。
 
         :param query_date: The query_date of this ShowLogsRequest.
-        :type: int
+        :type query_date: int
         """
         self._query_date = query_date
 
@@ -120,7 +133,7 @@ class ShowLogsRequest:
         单页最大数量，取值范围为1-10000。
 
         :param page_size: The page_size of this ShowLogsRequest.
-        :type: int
+        :type page_size: int
         """
         self._page_size = page_size
 
@@ -142,7 +155,7 @@ class ShowLogsRequest:
         当前查询第几页，取值范围为1-65535。
 
         :param page_number: The page_number of this ShowLogsRequest.
-        :type: int
+        :type page_number: int
         """
         self._page_number = page_number
 
@@ -164,7 +177,7 @@ class ShowLogsRequest:
         当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子账号调用接口时，该参数必传。
 
         :param enterprise_project_id: The enterprise_project_id of this ShowLogsRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 

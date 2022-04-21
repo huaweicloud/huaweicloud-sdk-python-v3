@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ClusterDetailInstance:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -72,7 +71,55 @@ class ClusterDetailInstance:
     }
 
     def __init__(self, flavor=None, volume=None, status=None, actions=None, type=None, id=None, name=None, is_frozen=None, components=None, config_status=None, role=None, group=None, links=None, params_group_id=None, public_ip=None, manage_ip=None, traffic_ip=None, shard_id=None, manage_fix_ip=None, private_ip=None, internal_ip=None, resource=None):
-        """ClusterDetailInstance - a model defined in huaweicloud sdk"""
+        """ClusterDetailInstance
+
+        The model defined in huaweicloud sdk
+
+        :param flavor: 
+        :type flavor: :class:`huaweicloudsdkcdm.v1.ClusterDetailInstanceFlavor`
+        :param volume: 
+        :type volume: :class:`huaweicloudsdkcdm.v1.ClusterDetailInstanceVolume`
+        :param status: 节点状态： - 100：创建中。 - 200：正常。 - 300：失败。 - 303：创建失败。 - 400：已删除。 - 800：冻结。
+        :type status: str
+        :param actions: 节点操作状态列表： - REBOOTING：重启中。 - RESTORING：恢复中。 - REBOOT_FAILURE：重启失败。
+        :type actions: list[str]
+        :param type: 节点类型，只支持一种类型“cdm”。
+        :type type: str
+        :param id: 节点的虚拟机ID。
+        :type id: str
+        :param name: 节点的虚拟机名称。
+        :type name: str
+        :param is_frozen: 节点是否冻结：0：否。1：是。
+        :type is_frozen: str
+        :param components: 组件
+        :type components: str
+        :param config_status: 节点配置状态（查询集群列表时为null）： - In-Sync：配置已同步。 - Applying：配置中。 - Sync-Failure：配置失败。
+        :type config_status: str
+        :param role: 实例角色
+        :type role: str
+        :param group: 分组
+        :type group: str
+        :param links: 链接信息（查询集群列表时返回值为null）
+        :type links: list[:class:`huaweicloudsdkcdm.v1.ClusterLinks`]
+        :param params_group_id: 组件分组id
+        :type params_group_id: str
+        :param public_ip: 公网ip
+        :type public_ip: str
+        :param manage_ip: 管理ip
+        :type manage_ip: str
+        :param traffic_ip: 流量ip
+        :type traffic_ip: str
+        :param shard_id: 分片id
+        :type shard_id: str
+        :param manage_fix_ip: 管理修复ip
+        :type manage_fix_ip: str
+        :param private_ip: 私有ip
+        :type private_ip: str
+        :param internal_ip: 内部ip
+        :type internal_ip: str
+        :param resource: 资源信息（查询集群列表时返回值为null）
+        :type resource: list[:class:`huaweicloudsdkcdm.v1.Resource`]
+        """
         
         
 
@@ -144,7 +191,7 @@ class ClusterDetailInstance:
 
 
         :return: The flavor of this ClusterDetailInstance.
-        :rtype: ClusterDetailInstanceFlavor
+        :rtype: :class:`huaweicloudsdkcdm.v1.ClusterDetailInstanceFlavor`
         """
         return self._flavor
 
@@ -154,7 +201,7 @@ class ClusterDetailInstance:
 
 
         :param flavor: The flavor of this ClusterDetailInstance.
-        :type: ClusterDetailInstanceFlavor
+        :type flavor: :class:`huaweicloudsdkcdm.v1.ClusterDetailInstanceFlavor`
         """
         self._flavor = flavor
 
@@ -164,7 +211,7 @@ class ClusterDetailInstance:
 
 
         :return: The volume of this ClusterDetailInstance.
-        :rtype: ClusterDetailInstanceVolume
+        :rtype: :class:`huaweicloudsdkcdm.v1.ClusterDetailInstanceVolume`
         """
         return self._volume
 
@@ -174,7 +221,7 @@ class ClusterDetailInstance:
 
 
         :param volume: The volume of this ClusterDetailInstance.
-        :type: ClusterDetailInstanceVolume
+        :type volume: :class:`huaweicloudsdkcdm.v1.ClusterDetailInstanceVolume`
         """
         self._volume = volume
 
@@ -196,7 +243,7 @@ class ClusterDetailInstance:
         节点状态： - 100：创建中。 - 200：正常。 - 300：失败。 - 303：创建失败。 - 400：已删除。 - 800：冻结。
 
         :param status: The status of this ClusterDetailInstance.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -218,7 +265,7 @@ class ClusterDetailInstance:
         节点操作状态列表： - REBOOTING：重启中。 - RESTORING：恢复中。 - REBOOT_FAILURE：重启失败。
 
         :param actions: The actions of this ClusterDetailInstance.
-        :type: list[str]
+        :type actions: list[str]
         """
         self._actions = actions
 
@@ -240,7 +287,7 @@ class ClusterDetailInstance:
         节点类型，只支持一种类型“cdm”。
 
         :param type: The type of this ClusterDetailInstance.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -262,7 +309,7 @@ class ClusterDetailInstance:
         节点的虚拟机ID。
 
         :param id: The id of this ClusterDetailInstance.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -284,7 +331,7 @@ class ClusterDetailInstance:
         节点的虚拟机名称。
 
         :param name: The name of this ClusterDetailInstance.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -306,7 +353,7 @@ class ClusterDetailInstance:
         节点是否冻结：0：否。1：是。
 
         :param is_frozen: The is_frozen of this ClusterDetailInstance.
-        :type: str
+        :type is_frozen: str
         """
         self._is_frozen = is_frozen
 
@@ -328,7 +375,7 @@ class ClusterDetailInstance:
         组件
 
         :param components: The components of this ClusterDetailInstance.
-        :type: str
+        :type components: str
         """
         self._components = components
 
@@ -350,7 +397,7 @@ class ClusterDetailInstance:
         节点配置状态（查询集群列表时为null）： - In-Sync：配置已同步。 - Applying：配置中。 - Sync-Failure：配置失败。
 
         :param config_status: The config_status of this ClusterDetailInstance.
-        :type: str
+        :type config_status: str
         """
         self._config_status = config_status
 
@@ -372,7 +419,7 @@ class ClusterDetailInstance:
         实例角色
 
         :param role: The role of this ClusterDetailInstance.
-        :type: str
+        :type role: str
         """
         self._role = role
 
@@ -394,7 +441,7 @@ class ClusterDetailInstance:
         分组
 
         :param group: The group of this ClusterDetailInstance.
-        :type: str
+        :type group: str
         """
         self._group = group
 
@@ -405,7 +452,7 @@ class ClusterDetailInstance:
         链接信息（查询集群列表时返回值为null）
 
         :return: The links of this ClusterDetailInstance.
-        :rtype: list[ClusterLinks]
+        :rtype: list[:class:`huaweicloudsdkcdm.v1.ClusterLinks`]
         """
         return self._links
 
@@ -416,7 +463,7 @@ class ClusterDetailInstance:
         链接信息（查询集群列表时返回值为null）
 
         :param links: The links of this ClusterDetailInstance.
-        :type: list[ClusterLinks]
+        :type links: list[:class:`huaweicloudsdkcdm.v1.ClusterLinks`]
         """
         self._links = links
 
@@ -438,7 +485,7 @@ class ClusterDetailInstance:
         组件分组id
 
         :param params_group_id: The params_group_id of this ClusterDetailInstance.
-        :type: str
+        :type params_group_id: str
         """
         self._params_group_id = params_group_id
 
@@ -460,7 +507,7 @@ class ClusterDetailInstance:
         公网ip
 
         :param public_ip: The public_ip of this ClusterDetailInstance.
-        :type: str
+        :type public_ip: str
         """
         self._public_ip = public_ip
 
@@ -482,7 +529,7 @@ class ClusterDetailInstance:
         管理ip
 
         :param manage_ip: The manage_ip of this ClusterDetailInstance.
-        :type: str
+        :type manage_ip: str
         """
         self._manage_ip = manage_ip
 
@@ -504,7 +551,7 @@ class ClusterDetailInstance:
         流量ip
 
         :param traffic_ip: The traffic_ip of this ClusterDetailInstance.
-        :type: str
+        :type traffic_ip: str
         """
         self._traffic_ip = traffic_ip
 
@@ -526,7 +573,7 @@ class ClusterDetailInstance:
         分片id
 
         :param shard_id: The shard_id of this ClusterDetailInstance.
-        :type: str
+        :type shard_id: str
         """
         self._shard_id = shard_id
 
@@ -548,7 +595,7 @@ class ClusterDetailInstance:
         管理修复ip
 
         :param manage_fix_ip: The manage_fix_ip of this ClusterDetailInstance.
-        :type: str
+        :type manage_fix_ip: str
         """
         self._manage_fix_ip = manage_fix_ip
 
@@ -570,7 +617,7 @@ class ClusterDetailInstance:
         私有ip
 
         :param private_ip: The private_ip of this ClusterDetailInstance.
-        :type: str
+        :type private_ip: str
         """
         self._private_ip = private_ip
 
@@ -592,7 +639,7 @@ class ClusterDetailInstance:
         内部ip
 
         :param internal_ip: The internal_ip of this ClusterDetailInstance.
-        :type: str
+        :type internal_ip: str
         """
         self._internal_ip = internal_ip
 
@@ -603,7 +650,7 @@ class ClusterDetailInstance:
         资源信息（查询集群列表时返回值为null）
 
         :return: The resource of this ClusterDetailInstance.
-        :rtype: list[Resource]
+        :rtype: list[:class:`huaweicloudsdkcdm.v1.Resource`]
         """
         return self._resource
 
@@ -614,7 +661,7 @@ class ClusterDetailInstance:
         资源信息（查询集群列表时返回值为null）
 
         :param resource: The resource of this ClusterDetailInstance.
-        :type: list[Resource]
+        :type resource: list[:class:`huaweicloudsdkcdm.v1.Resource`]
         """
         self._resource = resource
 

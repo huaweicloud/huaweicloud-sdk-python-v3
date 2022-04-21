@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListServersDetailsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListServersDetailsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, servers=None):
-        """ListServersDetailsResponse - a model defined in huaweicloud sdk"""
+        """ListServersDetailsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 弹性云服务器的列表总数。
+        :type count: int
+        :param servers: 弹性云服务器详情列表，具体参照-查询云服务器详情接口。查询级别不同，返回的详情不同。
+        :type servers: list[:class:`huaweicloudsdkecs.v2.ServerDetail`]
+        """
         
         super(ListServersDetailsResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListServersDetailsResponse(SdkResponse):
         弹性云服务器的列表总数。
 
         :param count: The count of this ListServersDetailsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -74,7 +81,7 @@ class ListServersDetailsResponse(SdkResponse):
         弹性云服务器详情列表，具体参照-查询云服务器详情接口。查询级别不同，返回的详情不同。
 
         :return: The servers of this ListServersDetailsResponse.
-        :rtype: list[ServerDetail]
+        :rtype: list[:class:`huaweicloudsdkecs.v2.ServerDetail`]
         """
         return self._servers
 
@@ -85,7 +92,7 @@ class ListServersDetailsResponse(SdkResponse):
         弹性云服务器详情列表，具体参照-查询云服务器详情接口。查询级别不同，返回的详情不同。
 
         :param servers: The servers of this ListServersDetailsResponse.
-        :type: list[ServerDetail]
+        :type servers: list[:class:`huaweicloudsdkecs.v2.ServerDetail`]
         """
         self._servers = servers
 

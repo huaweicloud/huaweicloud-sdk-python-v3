@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateNotificationResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class CreateNotificationResponse(SdkResponse):
     }
 
     def __init__(self, notification_name=None, operation_type=None, operations=None, notify_user_list=None, status=None, topic_id=None, notification_id=None, notification_type=None, project_id=None, create_time=None):
-        """CreateNotificationResponse - a model defined in huaweicloud sdk"""
+        """CreateNotificationResponse
+
+        The model defined in huaweicloud sdk
+
+        :param notification_name: 通知名称。
+        :type notification_name: str
+        :param operation_type: 操作类型，完整和自定义。
+        :type operation_type: str
+        :param operations: 操作事件列表。
+        :type operations: list[:class:`huaweicloudsdkcts.v3.Operations`]
+        :param notify_user_list: 通知用户列表，目前最多支持对10个用户组和50个用户发起的操作进行配置。
+        :type notify_user_list: list[:class:`huaweicloudsdkcts.v3.NotificationUsers`]
+        :param status: 通知状态，启用和停用。
+        :type status: str
+        :param topic_id: 消息通知服务(SMN)主题的唯一的资源标识，可通过查询主题列表获取该标识。
+        :type topic_id: str
+        :param notification_id: 通知的唯一标识ID。
+        :type notification_id: str
+        :param notification_type: 通知类型，消息通知，函数触发器。
+        :type notification_type: str
+        :param project_id: 项目ID。
+        :type project_id: str
+        :param create_time: 通知规则创建时间。
+        :type create_time: int
+        """
         
         super(CreateNotificationResponse, self).__init__()
 
@@ -103,7 +126,7 @@ class CreateNotificationResponse(SdkResponse):
         通知名称。
 
         :param notification_name: The notification_name of this CreateNotificationResponse.
-        :type: str
+        :type notification_name: str
         """
         self._notification_name = notification_name
 
@@ -125,7 +148,7 @@ class CreateNotificationResponse(SdkResponse):
         操作类型，完整和自定义。
 
         :param operation_type: The operation_type of this CreateNotificationResponse.
-        :type: str
+        :type operation_type: str
         """
         self._operation_type = operation_type
 
@@ -136,7 +159,7 @@ class CreateNotificationResponse(SdkResponse):
         操作事件列表。
 
         :return: The operations of this CreateNotificationResponse.
-        :rtype: list[Operations]
+        :rtype: list[:class:`huaweicloudsdkcts.v3.Operations`]
         """
         return self._operations
 
@@ -147,7 +170,7 @@ class CreateNotificationResponse(SdkResponse):
         操作事件列表。
 
         :param operations: The operations of this CreateNotificationResponse.
-        :type: list[Operations]
+        :type operations: list[:class:`huaweicloudsdkcts.v3.Operations`]
         """
         self._operations = operations
 
@@ -158,7 +181,7 @@ class CreateNotificationResponse(SdkResponse):
         通知用户列表，目前最多支持对10个用户组和50个用户发起的操作进行配置。
 
         :return: The notify_user_list of this CreateNotificationResponse.
-        :rtype: list[NotificationUsers]
+        :rtype: list[:class:`huaweicloudsdkcts.v3.NotificationUsers`]
         """
         return self._notify_user_list
 
@@ -169,7 +192,7 @@ class CreateNotificationResponse(SdkResponse):
         通知用户列表，目前最多支持对10个用户组和50个用户发起的操作进行配置。
 
         :param notify_user_list: The notify_user_list of this CreateNotificationResponse.
-        :type: list[NotificationUsers]
+        :type notify_user_list: list[:class:`huaweicloudsdkcts.v3.NotificationUsers`]
         """
         self._notify_user_list = notify_user_list
 
@@ -191,7 +214,7 @@ class CreateNotificationResponse(SdkResponse):
         通知状态，启用和停用。
 
         :param status: The status of this CreateNotificationResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -213,7 +236,7 @@ class CreateNotificationResponse(SdkResponse):
         消息通知服务(SMN)主题的唯一的资源标识，可通过查询主题列表获取该标识。
 
         :param topic_id: The topic_id of this CreateNotificationResponse.
-        :type: str
+        :type topic_id: str
         """
         self._topic_id = topic_id
 
@@ -235,7 +258,7 @@ class CreateNotificationResponse(SdkResponse):
         通知的唯一标识ID。
 
         :param notification_id: The notification_id of this CreateNotificationResponse.
-        :type: str
+        :type notification_id: str
         """
         self._notification_id = notification_id
 
@@ -257,7 +280,7 @@ class CreateNotificationResponse(SdkResponse):
         通知类型，消息通知，函数触发器。
 
         :param notification_type: The notification_type of this CreateNotificationResponse.
-        :type: str
+        :type notification_type: str
         """
         self._notification_type = notification_type
 
@@ -279,7 +302,7 @@ class CreateNotificationResponse(SdkResponse):
         项目ID。
 
         :param project_id: The project_id of this CreateNotificationResponse.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -301,7 +324,7 @@ class CreateNotificationResponse(SdkResponse):
         通知规则创建时间。
 
         :param create_time: The create_time of this CreateNotificationResponse.
-        :type: int
+        :type create_time: int
         """
         self._create_time = create_time
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RuntimeConfig:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RuntimeConfig:
     }
 
     def __init__(self, lv_type=None):
-        """RuntimeConfig - a model defined in huaweicloud sdk"""
+        """RuntimeConfig
+
+        The model defined in huaweicloud sdk
+
+        :param lv_type: LVM写入模式：linear、striped。linear：线性模式；striped：条带模式，使用多块磁盘组成条带模式，能够提升磁盘性能。
+        :type lv_type: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class RuntimeConfig:
         LVM写入模式：linear、striped。linear：线性模式；striped：条带模式，使用多块磁盘组成条带模式，能够提升磁盘性能。
 
         :param lv_type: The lv_type of this RuntimeConfig.
-        :type: str
+        :type lv_type: str
         """
         self._lv_type = lv_type
 

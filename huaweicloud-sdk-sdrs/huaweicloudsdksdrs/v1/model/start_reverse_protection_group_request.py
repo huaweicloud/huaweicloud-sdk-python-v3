@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StartReverseProtectionGroupRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class StartReverseProtectionGroupRequest:
     }
 
     def __init__(self, server_group_id=None, body=None):
-        """StartReverseProtectionGroupRequest - a model defined in huaweicloud sdk"""
+        """StartReverseProtectionGroupRequest
+
+        The model defined in huaweicloud sdk
+
+        :param server_group_id: 保护组的ID。
+        :type server_group_id: str
+        :param body: Body of the StartReverseProtectionGroupRequest
+        :type body: :class:`huaweicloudsdksdrs.v1.ReverseProtectionGroupRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class StartReverseProtectionGroupRequest:
         保护组的ID。
 
         :param server_group_id: The server_group_id of this StartReverseProtectionGroupRequest.
-        :type: str
+        :type server_group_id: str
         """
         self._server_group_id = server_group_id
 
@@ -72,7 +79,7 @@ class StartReverseProtectionGroupRequest:
 
 
         :return: The body of this StartReverseProtectionGroupRequest.
-        :rtype: ReverseProtectionGroupRequestBody
+        :rtype: :class:`huaweicloudsdksdrs.v1.ReverseProtectionGroupRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class StartReverseProtectionGroupRequest:
 
 
         :param body: The body of this StartReverseProtectionGroupRequest.
-        :type: ReverseProtectionGroupRequestBody
+        :type body: :class:`huaweicloudsdksdrs.v1.ReverseProtectionGroupRequestBody`
         """
         self._body = body
 

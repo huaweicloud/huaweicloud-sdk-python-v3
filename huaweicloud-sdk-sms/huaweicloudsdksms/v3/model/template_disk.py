@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TemplateDisk:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class TemplateDisk:
     }
 
     def __init__(self, index=None, name=None, disktype=None, size=None):
-        """TemplateDisk - a model defined in huaweicloud sdk"""
+        """TemplateDisk
+
+        The model defined in huaweicloud sdk
+
+        :param index: 磁盘序号，从0开始
+        :type index: int
+        :param name: 磁盘名称
+        :type name: str
+        :param disktype: 磁盘类型，同volumetype字段
+        :type disktype: str
+        :param size: 磁盘大小，单位：GB
+        :type size: int
+        """
         
         
 
@@ -69,7 +80,7 @@ class TemplateDisk:
         磁盘序号，从0开始
 
         :param index: The index of this TemplateDisk.
-        :type: int
+        :type index: int
         """
         self._index = index
 
@@ -91,7 +102,7 @@ class TemplateDisk:
         磁盘名称
 
         :param name: The name of this TemplateDisk.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -113,7 +124,7 @@ class TemplateDisk:
         磁盘类型，同volumetype字段
 
         :param disktype: The disktype of this TemplateDisk.
-        :type: str
+        :type disktype: str
         """
         self._disktype = disktype
 
@@ -135,7 +146,7 @@ class TemplateDisk:
         磁盘大小，单位：GB
 
         :param size: The size of this TemplateDisk.
-        :type: int
+        :type size: int
         """
         self._size = size
 

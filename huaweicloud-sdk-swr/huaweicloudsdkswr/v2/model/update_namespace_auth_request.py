@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateNamespaceAuthRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateNamespaceAuthRequest:
     }
 
     def __init__(self, namespace=None, body=None):
-        """UpdateNamespaceAuthRequest - a model defined in huaweicloud sdk"""
+        """UpdateNamespaceAuthRequest
+
+        The model defined in huaweicloud sdk
+
+        :param namespace: 组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
+        :type namespace: str
+        :param body: Body of the UpdateNamespaceAuthRequest
+        :type body: list[:class:`huaweicloudsdkswr.v2.UserAuth`]
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateNamespaceAuthRequest:
         组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
 
         :param namespace: The namespace of this UpdateNamespaceAuthRequest.
-        :type: str
+        :type namespace: str
         """
         self._namespace = namespace
 
@@ -72,7 +79,7 @@ class UpdateNamespaceAuthRequest:
 
 
         :return: The body of this UpdateNamespaceAuthRequest.
-        :rtype: list[UserAuth]
+        :rtype: list[:class:`huaweicloudsdkswr.v2.UserAuth`]
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateNamespaceAuthRequest:
 
 
         :param body: The body of this UpdateNamespaceAuthRequest.
-        :type: list[UserAuth]
+        :type body: list[:class:`huaweicloudsdkswr.v2.UserAuth`]
         """
         self._body = body
 

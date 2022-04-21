@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DetectLiveFaceByFileRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DetectLiveFaceByFileRequestBody:
     }
 
     def __init__(self, image_file=None):
-        """DetectLiveFaceByFileRequestBody - a model defined in huaweicloud sdk"""
+        """DetectLiveFaceByFileRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param image_file: 本地图片文件。上传文件时，请求格式为multipart。
+        :type image_file: :class:`huaweicloudsdkcore.http.formdata.FormFile`
+        """
         
         
 
@@ -46,7 +51,7 @@ class DetectLiveFaceByFileRequestBody:
         本地图片文件。上传文件时，请求格式为multipart。
 
         :return: The image_file of this DetectLiveFaceByFileRequestBody.
-        :rtype: file
+        :rtype: :class:`huaweicloudsdkcore.http.formdata.FormFile`
         """
         return self._image_file
 
@@ -57,7 +62,7 @@ class DetectLiveFaceByFileRequestBody:
         本地图片文件。上传文件时，请求格式为multipart。
 
         :param image_file: The image_file of this DetectLiveFaceByFileRequestBody.
-        :type: file
+        :type image_file: :class:`huaweicloudsdkcore.http.formdata.FormFile`
         """
         self._image_file = image_file
 

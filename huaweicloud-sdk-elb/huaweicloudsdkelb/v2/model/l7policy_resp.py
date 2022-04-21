@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class L7policyResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class L7policyResp:
     }
 
     def __init__(self, id=None, name=None, rules=None, action=None, provisioning_status=None, tenant_id=None, project_id=None, admin_state_up=None, description=None, listener_id=None, redirect_pool_id=None, redirect_listener_id=None, redirect_url=None, position=None):
-        """L7policyResp - a model defined in huaweicloud sdk"""
+        """L7policyResp
+
+        The model defined in huaweicloud sdk
+
+        :param id: 转发策略ID
+        :type id: str
+        :param name: 转发策略名称
+        :type name: str
+        :param rules: 转发策略关联的转发规则列表
+        :type rules: list[:class:`huaweicloudsdkelb.v2.ResourceList`]
+        :param action: 转发策略的转发动作；取值：REDIRECT_TO_POOL：转发到后端云服务器组；REDIRECT_TO_LISTENER：重定向到监听器
+        :type action: str
+        :param provisioning_status: 健康检查的配置状态；该字段为预留字段，暂未启用。默认为ACTIVE。
+        :type provisioning_status: str
+        :param tenant_id: 转发策略所在的项目ID。
+        :type tenant_id: str
+        :param project_id: 转发策略所在的项目ID。
+        :type project_id: str
+        :param admin_state_up: 转发策略的管理状态；该字段为预留字段，暂未启用。默认为true。
+        :type admin_state_up: bool
+        :param description: 转发策略额描述信息
+        :type description: str
+        :param listener_id: 转发策略对应的监听器ID
+        :type listener_id: str
+        :param redirect_pool_id: 转发到pool的ID。转发到pool的ID。当action为REDIRECT_TO_POOL时生效。
+        :type redirect_pool_id: str
+        :param redirect_listener_id: 转发到的listener的ID，当action为REDIRECT_TO_LISTENER时生效。
+        :type redirect_listener_id: str
+        :param redirect_url: 转发到的url。该字段未启用。
+        :type redirect_url: str
+        :param position: 转发策略的优先级，从1递增，最高100。该字段为预留字段，暂未启用。
+        :type position: int
+        """
         
         
 
@@ -109,7 +140,7 @@ class L7policyResp:
         转发策略ID
 
         :param id: The id of this L7policyResp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -131,7 +162,7 @@ class L7policyResp:
         转发策略名称
 
         :param name: The name of this L7policyResp.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -142,7 +173,7 @@ class L7policyResp:
         转发策略关联的转发规则列表
 
         :return: The rules of this L7policyResp.
-        :rtype: list[ResourceList]
+        :rtype: list[:class:`huaweicloudsdkelb.v2.ResourceList`]
         """
         return self._rules
 
@@ -153,7 +184,7 @@ class L7policyResp:
         转发策略关联的转发规则列表
 
         :param rules: The rules of this L7policyResp.
-        :type: list[ResourceList]
+        :type rules: list[:class:`huaweicloudsdkelb.v2.ResourceList`]
         """
         self._rules = rules
 
@@ -175,7 +206,7 @@ class L7policyResp:
         转发策略的转发动作；取值：REDIRECT_TO_POOL：转发到后端云服务器组；REDIRECT_TO_LISTENER：重定向到监听器
 
         :param action: The action of this L7policyResp.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -197,7 +228,7 @@ class L7policyResp:
         健康检查的配置状态；该字段为预留字段，暂未启用。默认为ACTIVE。
 
         :param provisioning_status: The provisioning_status of this L7policyResp.
-        :type: str
+        :type provisioning_status: str
         """
         self._provisioning_status = provisioning_status
 
@@ -219,7 +250,7 @@ class L7policyResp:
         转发策略所在的项目ID。
 
         :param tenant_id: The tenant_id of this L7policyResp.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 
@@ -241,7 +272,7 @@ class L7policyResp:
         转发策略所在的项目ID。
 
         :param project_id: The project_id of this L7policyResp.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -263,7 +294,7 @@ class L7policyResp:
         转发策略的管理状态；该字段为预留字段，暂未启用。默认为true。
 
         :param admin_state_up: The admin_state_up of this L7policyResp.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 
@@ -285,7 +316,7 @@ class L7policyResp:
         转发策略额描述信息
 
         :param description: The description of this L7policyResp.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -307,7 +338,7 @@ class L7policyResp:
         转发策略对应的监听器ID
 
         :param listener_id: The listener_id of this L7policyResp.
-        :type: str
+        :type listener_id: str
         """
         self._listener_id = listener_id
 
@@ -329,7 +360,7 @@ class L7policyResp:
         转发到pool的ID。转发到pool的ID。当action为REDIRECT_TO_POOL时生效。
 
         :param redirect_pool_id: The redirect_pool_id of this L7policyResp.
-        :type: str
+        :type redirect_pool_id: str
         """
         self._redirect_pool_id = redirect_pool_id
 
@@ -351,7 +382,7 @@ class L7policyResp:
         转发到的listener的ID，当action为REDIRECT_TO_LISTENER时生效。
 
         :param redirect_listener_id: The redirect_listener_id of this L7policyResp.
-        :type: str
+        :type redirect_listener_id: str
         """
         self._redirect_listener_id = redirect_listener_id
 
@@ -373,7 +404,7 @@ class L7policyResp:
         转发到的url。该字段未启用。
 
         :param redirect_url: The redirect_url of this L7policyResp.
-        :type: str
+        :type redirect_url: str
         """
         self._redirect_url = redirect_url
 
@@ -395,7 +426,7 @@ class L7policyResp:
         转发策略的优先级，从1递增，最高100。该字段为预留字段，暂未启用。
 
         :param position: The position of this L7policyResp.
-        :type: int
+        :type position: int
         """
         self._position = position
 

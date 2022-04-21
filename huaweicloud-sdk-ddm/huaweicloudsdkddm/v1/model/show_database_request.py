@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDatabaseRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowDatabaseRequest:
     }
 
     def __init__(self, instance_id=None, ddm_dbname=None):
-        """ShowDatabaseRequest - a model defined in huaweicloud sdk"""
+        """ShowDatabaseRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: DDM实例ID
+        :type instance_id: str
+        :param ddm_dbname: 需要查询的逻辑库名称，不区分大小写。
+        :type ddm_dbname: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ShowDatabaseRequest:
         DDM实例ID
 
         :param instance_id: The instance_id of this ShowDatabaseRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -83,7 +90,7 @@ class ShowDatabaseRequest:
         需要查询的逻辑库名称，不区分大小写。
 
         :param ddm_dbname: The ddm_dbname of this ShowDatabaseRequest.
-        :type: str
+        :type ddm_dbname: str
         """
         self._ddm_dbname = ddm_dbname
 

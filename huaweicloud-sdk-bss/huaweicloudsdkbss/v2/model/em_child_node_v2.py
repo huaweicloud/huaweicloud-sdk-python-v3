@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EmChildNodeV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class EmChildNodeV2:
     }
 
     def __init__(self, relation_id=None, id=None, name=None, child_nodes=None):
-        """EmChildNodeV2 - a model defined in huaweicloud sdk"""
+        """EmChildNodeV2
+
+        The model defined in huaweicloud sdk
+
+        :param relation_id: 实体关系ID。
+        :type relation_id: str
+        :param id: 节点ID（即组织单元的Party ID）。
+        :type id: str
+        :param name: 节点名称。
+        :type name: str
+        :param child_nodes: 子节点列表。
+        :type child_nodes: list[:class:`huaweicloudsdkbss.v2.EmChildNodeV2`]
+        """
         
         
 
@@ -73,7 +84,7 @@ class EmChildNodeV2:
         实体关系ID。
 
         :param relation_id: The relation_id of this EmChildNodeV2.
-        :type: str
+        :type relation_id: str
         """
         self._relation_id = relation_id
 
@@ -95,7 +106,7 @@ class EmChildNodeV2:
         节点ID（即组织单元的Party ID）。
 
         :param id: The id of this EmChildNodeV2.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -117,7 +128,7 @@ class EmChildNodeV2:
         节点名称。
 
         :param name: The name of this EmChildNodeV2.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -128,7 +139,7 @@ class EmChildNodeV2:
         子节点列表。
 
         :return: The child_nodes of this EmChildNodeV2.
-        :rtype: list[EmChildNodeV2]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.EmChildNodeV2`]
         """
         return self._child_nodes
 
@@ -139,7 +150,7 @@ class EmChildNodeV2:
         子节点列表。
 
         :param child_nodes: The child_nodes of this EmChildNodeV2.
-        :type: list[EmChildNodeV2]
+        :type child_nodes: list[:class:`huaweicloudsdkbss.v2.EmChildNodeV2`]
         """
         self._child_nodes = child_nodes
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PutVolumeGroups:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class PutVolumeGroups:
     }
 
     def __init__(self, logical_volumes=None, id=None, need_migration=None, adjust_size=None):
-        """PutVolumeGroups - a model defined in huaweicloud sdk"""
+        """PutVolumeGroups
+
+        The model defined in huaweicloud sdk
+
+        :param logical_volumes: lv信息
+        :type logical_volumes: list[:class:`huaweicloudsdksms.v3.PutLogicalVolume`]
+        :param id: 卷组id
+        :type id: str
+        :param need_migration: 是否迁移
+        :type need_migration: bool
+        :param adjust_size: 调整大小
+        :type adjust_size: int
+        """
         
         
 
@@ -61,7 +72,7 @@ class PutVolumeGroups:
         lv信息
 
         :return: The logical_volumes of this PutVolumeGroups.
-        :rtype: list[PutLogicalVolume]
+        :rtype: list[:class:`huaweicloudsdksms.v3.PutLogicalVolume`]
         """
         return self._logical_volumes
 
@@ -72,7 +83,7 @@ class PutVolumeGroups:
         lv信息
 
         :param logical_volumes: The logical_volumes of this PutVolumeGroups.
-        :type: list[PutLogicalVolume]
+        :type logical_volumes: list[:class:`huaweicloudsdksms.v3.PutLogicalVolume`]
         """
         self._logical_volumes = logical_volumes
 
@@ -94,7 +105,7 @@ class PutVolumeGroups:
         卷组id
 
         :param id: The id of this PutVolumeGroups.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -116,7 +127,7 @@ class PutVolumeGroups:
         是否迁移
 
         :param need_migration: The need_migration of this PutVolumeGroups.
-        :type: bool
+        :type need_migration: bool
         """
         self._need_migration = need_migration
 
@@ -138,7 +149,7 @@ class PutVolumeGroups:
         调整大小
 
         :param adjust_size: The adjust_size of this PutVolumeGroups.
-        :type: int
+        :type adjust_size: int
         """
         self._adjust_size = adjust_size
 

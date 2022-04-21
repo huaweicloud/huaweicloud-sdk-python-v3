@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class JobEntitiesResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class JobEntitiesResult:
     }
 
     def __init__(self, image_id=None, project_id=None, status=None):
-        """JobEntitiesResult - a model defined in huaweicloud sdk"""
+        """JobEntitiesResult
+
+        The model defined in huaweicloud sdk
+
+        :param image_id: 镜像ID。
+        :type image_id: str
+        :param project_id: 项目ID。
+        :type project_id: str
+        :param status: 任务状态。
+        :type status: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class JobEntitiesResult:
         镜像ID。
 
         :param image_id: The image_id of this JobEntitiesResult.
-        :type: str
+        :type image_id: str
         """
         self._image_id = image_id
 
@@ -90,7 +99,7 @@ class JobEntitiesResult:
         项目ID。
 
         :param project_id: The project_id of this JobEntitiesResult.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -112,7 +121,7 @@ class JobEntitiesResult:
         任务状态。
 
         :param status: The status of this JobEntitiesResult.
-        :type: str
+        :type status: str
         """
         self._status = status
 

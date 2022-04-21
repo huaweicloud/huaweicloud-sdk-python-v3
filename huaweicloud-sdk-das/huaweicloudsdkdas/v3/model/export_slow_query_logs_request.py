@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExportSlowQueryLogsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ExportSlowQueryLogsRequest:
     }
 
     def __init__(self, instance_id=None, datastore_type=None, start_at=None, end_at=None, limit=None, marker=None, x_language=None):
-        """ExportSlowQueryLogsRequest - a model defined in huaweicloud sdk"""
+        """ExportSlowQueryLogsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param datastore_type: 数据库类型。支持MySQL、GaussDB(for MySQL)、PostgreSQL。
+        :type datastore_type: str
+        :param start_at: 开始时间（Unix timestamp），单位：毫秒。
+        :type start_at: int
+        :param end_at: 结束时间（Unix timestamp），单位：毫秒。
+        :type end_at: int
+        :param limit: 每页记录数。最大为2000。
+        :type limit: int
+        :param marker: 指定一个标识符。获取第一页时不用赋值，获取下一页时取上页查询结果的返回值。
+        :type marker: str
+        :param x_language: 请求语言类型。
+        :type x_language: str
+        """
         
         
 
@@ -83,7 +100,7 @@ class ExportSlowQueryLogsRequest:
         实例ID。
 
         :param instance_id: The instance_id of this ExportSlowQueryLogsRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -105,7 +122,7 @@ class ExportSlowQueryLogsRequest:
         数据库类型。支持MySQL、GaussDB(for MySQL)、PostgreSQL。
 
         :param datastore_type: The datastore_type of this ExportSlowQueryLogsRequest.
-        :type: str
+        :type datastore_type: str
         """
         self._datastore_type = datastore_type
 
@@ -127,7 +144,7 @@ class ExportSlowQueryLogsRequest:
         开始时间（Unix timestamp），单位：毫秒。
 
         :param start_at: The start_at of this ExportSlowQueryLogsRequest.
-        :type: int
+        :type start_at: int
         """
         self._start_at = start_at
 
@@ -149,7 +166,7 @@ class ExportSlowQueryLogsRequest:
         结束时间（Unix timestamp），单位：毫秒。
 
         :param end_at: The end_at of this ExportSlowQueryLogsRequest.
-        :type: int
+        :type end_at: int
         """
         self._end_at = end_at
 
@@ -171,7 +188,7 @@ class ExportSlowQueryLogsRequest:
         每页记录数。最大为2000。
 
         :param limit: The limit of this ExportSlowQueryLogsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -193,7 +210,7 @@ class ExportSlowQueryLogsRequest:
         指定一个标识符。获取第一页时不用赋值，获取下一页时取上页查询结果的返回值。
 
         :param marker: The marker of this ExportSlowQueryLogsRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -215,7 +232,7 @@ class ExportSlowQueryLogsRequest:
         请求语言类型。
 
         :param x_language: The x_language of this ExportSlowQueryLogsRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListProjectsV4Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListProjectsV4Request:
     }
 
     def __init__(self, x_language=None, keyword=None, limit=None, offset=None):
-        """ListProjectsV4Request - a model defined in huaweicloud sdk"""
+        """ListProjectsV4Request
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言类型 中文:zh-cn 英文:en-us
+        :type x_language: str
+        :param keyword: 搜索关键字,支持按名称和描述搜索，默认null
+        :type keyword: str
+        :param limit: 每页显示的条目数量,默认100
+        :type limit: int
+        :param offset: 偏移量，表示从此偏移量开始查询,默认0
+        :type offset: int
+        """
         
         
 
@@ -73,7 +84,7 @@ class ListProjectsV4Request:
         语言类型 中文:zh-cn 英文:en-us
 
         :param x_language: The x_language of this ListProjectsV4Request.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -95,7 +106,7 @@ class ListProjectsV4Request:
         搜索关键字,支持按名称和描述搜索，默认null
 
         :param keyword: The keyword of this ListProjectsV4Request.
-        :type: str
+        :type keyword: str
         """
         self._keyword = keyword
 
@@ -117,7 +128,7 @@ class ListProjectsV4Request:
         每页显示的条目数量,默认100
 
         :param limit: The limit of this ListProjectsV4Request.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -139,7 +150,7 @@ class ListProjectsV4Request:
         偏移量，表示从此偏移量开始查询,默认0
 
         :param offset: The offset of this ListProjectsV4Request.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MP4RecordConfig:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class MP4RecordConfig:
     }
 
     def __init__(self, record_cycle=None, record_prefix=None, record_max_duration_to_merge_file=None):
-        """MP4RecordConfig - a model defined in huaweicloud sdk"""
+        """MP4RecordConfig
+
+        The model defined in huaweicloud sdk
+
+        :param record_cycle:  周期录制时长。  取值范围：[60，10800]。  单位：秒。 
+        :type record_cycle: int
+        :param record_prefix: 录制文件含路径和文件名的前缀。  默认{app_id}/{record_format}/{stream}\\_{file_start_time}/{stream}\\_{file_start_time}  上述特殊变量含义： - {app_id}：应用id - {record_format}：录制格式 - {stream}：流名 - {file_start_time}：文件生成时间 
+        :type record_prefix: str
+        :param record_max_duration_to_merge_file: 录制MP4拼接时长，如果流中断超过该时间，则生成新文件。  取值范围：[0，300]，缺省为0。  单位：秒。  如果为0表示流中断就生成新文件。 
+        :type record_max_duration_to_merge_file: int
+        """
         
         
 
@@ -67,7 +76,7 @@ class MP4RecordConfig:
          周期录制时长。  取值范围：[60，10800]。  单位：秒。 
 
         :param record_cycle: The record_cycle of this MP4RecordConfig.
-        :type: int
+        :type record_cycle: int
         """
         self._record_cycle = record_cycle
 
@@ -89,7 +98,7 @@ class MP4RecordConfig:
         录制文件含路径和文件名的前缀。  默认{app_id}/{record_format}/{stream}\\_{file_start_time}/{stream}\\_{file_start_time}  上述特殊变量含义： - {app_id}：应用id - {record_format}：录制格式 - {stream}：流名 - {file_start_time}：文件生成时间 
 
         :param record_prefix: The record_prefix of this MP4RecordConfig.
-        :type: str
+        :type record_prefix: str
         """
         self._record_prefix = record_prefix
 
@@ -111,7 +120,7 @@ class MP4RecordConfig:
         录制MP4拼接时长，如果流中断超过该时间，则生成新文件。  取值范围：[0，300]，缺省为0。  单位：秒。  如果为0表示流中断就生成新文件。 
 
         :param record_max_duration_to_merge_file: The record_max_duration_to_merge_file of this MP4RecordConfig.
-        :type: int
+        :type record_max_duration_to_merge_file: int
         """
         self._record_max_duration_to_merge_file = record_max_duration_to_merge_file
 

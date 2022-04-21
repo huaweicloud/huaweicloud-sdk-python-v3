@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ProxyNodeMonitoredObject:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ProxyNodeMonitoredObject:
     }
 
     def __init__(self, dcs_instance_id=None, name=None, dcs_cluster_proxy_node=None, status=None):
-        """ProxyNodeMonitoredObject - a model defined in huaweicloud sdk"""
+        """ProxyNodeMonitoredObject
+
+        The model defined in huaweicloud sdk
+
+        :param dcs_instance_id: 测量对象ID，即节点的ID。
+        :type dcs_instance_id: str
+        :param name: 测量对象名称，即节点IP。
+        :type name: str
+        :param dcs_cluster_proxy_node: 维度dcs_cluster_proxy_node 的测量对象的ID。
+        :type dcs_cluster_proxy_node: str
+        :param status: 测量对象状态，即节点状态。
+        :type status: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class ProxyNodeMonitoredObject:
         测量对象ID，即节点的ID。
 
         :param dcs_instance_id: The dcs_instance_id of this ProxyNodeMonitoredObject.
-        :type: str
+        :type dcs_instance_id: str
         """
         self._dcs_instance_id = dcs_instance_id
 
@@ -95,7 +106,7 @@ class ProxyNodeMonitoredObject:
         测量对象名称，即节点IP。
 
         :param name: The name of this ProxyNodeMonitoredObject.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -117,7 +128,7 @@ class ProxyNodeMonitoredObject:
         维度dcs_cluster_proxy_node 的测量对象的ID。
 
         :param dcs_cluster_proxy_node: The dcs_cluster_proxy_node of this ProxyNodeMonitoredObject.
-        :type: str
+        :type dcs_cluster_proxy_node: str
         """
         self._dcs_cluster_proxy_node = dcs_cluster_proxy_node
 
@@ -139,7 +150,7 @@ class ProxyNodeMonitoredObject:
         测量对象状态，即节点状态。
 
         :param status: The status of this ProxyNodeMonitoredObject.
-        :type: str
+        :type status: str
         """
         self._status = status
 

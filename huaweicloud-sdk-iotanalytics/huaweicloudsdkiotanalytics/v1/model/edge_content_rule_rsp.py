@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EdgeContentRuleRsp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class EdgeContentRuleRsp:
     }
 
     def __init__(self, app_id=None, products=None, rule_actions=None):
-        """EdgeContentRuleRsp - a model defined in huaweicloud sdk"""
+        """EdgeContentRuleRsp
+
+        The model defined in huaweicloud sdk
+
+        :param app_id: Edge中的资源空间Id
+        :type app_id: str
+        :param products: Edge中某资源空间Id下的产品列表
+        :type products: list[str]
+        :param rule_actions: Edge中rule_id和action_id列表
+        :type rule_actions: list[:class:`huaweicloudsdkiotanalytics.v1.IotdaRuleAction`]
+        """
         
         
 
@@ -65,7 +74,7 @@ class EdgeContentRuleRsp:
         Edge中的资源空间Id
 
         :param app_id: The app_id of this EdgeContentRuleRsp.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -87,7 +96,7 @@ class EdgeContentRuleRsp:
         Edge中某资源空间Id下的产品列表
 
         :param products: The products of this EdgeContentRuleRsp.
-        :type: list[str]
+        :type products: list[str]
         """
         self._products = products
 
@@ -98,7 +107,7 @@ class EdgeContentRuleRsp:
         Edge中rule_id和action_id列表
 
         :return: The rule_actions of this EdgeContentRuleRsp.
-        :rtype: list[IotdaRuleAction]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.IotdaRuleAction`]
         """
         return self._rule_actions
 
@@ -109,7 +118,7 @@ class EdgeContentRuleRsp:
         Edge中rule_id和action_id列表
 
         :param rule_actions: The rule_actions of this EdgeContentRuleRsp.
-        :type: list[IotdaRuleAction]
+        :type rule_actions: list[:class:`huaweicloudsdkiotanalytics.v1.IotdaRuleAction`]
         """
         self._rule_actions = rule_actions
 

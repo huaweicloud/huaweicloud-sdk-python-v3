@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchDeleteIssuesV4Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchDeleteIssuesV4Request:
     }
 
     def __init__(self, project_id=None, body=None):
-        """BatchDeleteIssuesV4Request - a model defined in huaweicloud sdk"""
+        """BatchDeleteIssuesV4Request
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: devcloud的项目id
+        :type project_id: str
+        :param body: Body of the BatchDeleteIssuesV4Request
+        :type body: :class:`huaweicloudsdkprojectman.v4.BatchDelelteIssuesRequestV4`
+        """
         
         
 
@@ -62,7 +69,7 @@ class BatchDeleteIssuesV4Request:
         devcloud的项目id
 
         :param project_id: The project_id of this BatchDeleteIssuesV4Request.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -72,7 +79,7 @@ class BatchDeleteIssuesV4Request:
 
 
         :return: The body of this BatchDeleteIssuesV4Request.
-        :rtype: BatchDelelteIssuesRequestV4
+        :rtype: :class:`huaweicloudsdkprojectman.v4.BatchDelelteIssuesRequestV4`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class BatchDeleteIssuesV4Request:
 
 
         :param body: The body of this BatchDeleteIssuesV4Request.
-        :type: BatchDelelteIssuesRequestV4
+        :type body: :class:`huaweicloudsdkprojectman.v4.BatchDelelteIssuesRequestV4`
         """
         self._body = body
 

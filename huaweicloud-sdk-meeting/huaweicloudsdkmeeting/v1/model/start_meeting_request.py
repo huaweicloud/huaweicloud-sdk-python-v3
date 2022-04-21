@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StartMeetingRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class StartMeetingRequest:
     }
 
     def __init__(self, body=None):
-        """StartMeetingRequest - a model defined in huaweicloud sdk"""
+        """StartMeetingRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the StartMeetingRequest
+        :type body: :class:`huaweicloudsdkmeeting.v1.StartRequest`
+        """
         
         
 
@@ -46,7 +51,7 @@ class StartMeetingRequest:
 
 
         :return: The body of this StartMeetingRequest.
-        :rtype: StartRequest
+        :rtype: :class:`huaweicloudsdkmeeting.v1.StartRequest`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class StartMeetingRequest:
 
 
         :param body: The body of this StartMeetingRequest.
-        :type: StartRequest
+        :type body: :class:`huaweicloudsdkmeeting.v1.StartRequest`
         """
         self._body = body
 

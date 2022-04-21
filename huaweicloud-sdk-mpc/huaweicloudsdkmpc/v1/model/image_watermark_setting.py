@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ImageWatermarkSetting:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ImageWatermarkSetting:
     }
 
     def __init__(self, dx=None, dy=None, referpos=None, timeline_start=None, timeline_duration=None, overlay_input=None, input=None, base=None):
-        """ImageWatermarkSetting - a model defined in huaweicloud sdk"""
+        """ImageWatermarkSetting
+
+        The model defined in huaweicloud sdk
+
+        :param dx: 水印图片起点相对输出视频顶点的水平偏移量。  设置方法有如下两种：  - 整数型：表示图片起点水平偏移视频顶点的像素值，单位px。取值范围：[0，4096] - 小数型：表示图片起点相对于视频分辨率宽的水平偏移比率。取值范围：(0，1)，支持4位小数，如0.9999，超出部分系统自动丢弃。  示例：输出视频分辨率宽1920，设置“dx”为“0.1”，“referpos”为“TopRight”（右上角），则水印图片右上角到视频右顶点在水平方向上偏移距离为192。 
+        :type dx: str
+        :param dy: 水印图片起点相对输出视频顶点的垂直偏移量。  - 设置方法有如下两种：整数型：表示图片起点垂直偏移视频顶点的像素值，单位px。取值范围：[0，4096] - 小数型：表示图片起点相对于视频分辨率高的垂直偏移比率。取值范围：(0，1)，支持4位小数，如0.9999，超出部分系统自动丢弃。  示例：输出视频分辨率高1080，设置“dy”为“0.1”，“referpos”为“TopRight”（右上角），则水印图片右上角到视频右顶点在垂直方向上的偏移距离为108。 
+        :type dy: str
+        :param referpos: 水印的位置。  取值如下： - TopRight：右上角。 - TopLeft：左上角。 - BottomRight：右下角。 - BottomLeft：左下角。 
+        :type referpos: str
+        :param timeline_start: 水印开始时间，与“timeline_duration”配合使用。  取值范围：数字。  单位：秒。 
+        :type timeline_start: str
+        :param timeline_duration: 水印持续时间，与“timeline_start”配合使用。  取值范围：[数字，ToEND]。“ToEND”表示持续到视频结束。  默认值：ToEND。 
+        :type timeline_duration: str
+        :param overlay_input: 对应拼接列表中第几个片段打水印，从0开始，\&quot;0表示第1个，“1”表示第二个，不带或填\&quot;ALL\&quot;表示所有拼接片源打水印。 
+        :type overlay_input: str
+        :param input: 
+        :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        :param base: 水印叠加母体  取值如下： - input ：水印叠加在输入片源上，转码输出后实际大小按图像等比例缩放 - output ：水印叠加在转码输出文件上。 
+        :type base: str
+        """
         
         
 
@@ -93,7 +112,7 @@ class ImageWatermarkSetting:
         水印图片起点相对输出视频顶点的水平偏移量。  设置方法有如下两种：  - 整数型：表示图片起点水平偏移视频顶点的像素值，单位px。取值范围：[0，4096] - 小数型：表示图片起点相对于视频分辨率宽的水平偏移比率。取值范围：(0，1)，支持4位小数，如0.9999，超出部分系统自动丢弃。  示例：输出视频分辨率宽1920，设置“dx”为“0.1”，“referpos”为“TopRight”（右上角），则水印图片右上角到视频右顶点在水平方向上偏移距离为192。 
 
         :param dx: The dx of this ImageWatermarkSetting.
-        :type: str
+        :type dx: str
         """
         self._dx = dx
 
@@ -115,7 +134,7 @@ class ImageWatermarkSetting:
         水印图片起点相对输出视频顶点的垂直偏移量。  - 设置方法有如下两种：整数型：表示图片起点垂直偏移视频顶点的像素值，单位px。取值范围：[0，4096] - 小数型：表示图片起点相对于视频分辨率高的垂直偏移比率。取值范围：(0，1)，支持4位小数，如0.9999，超出部分系统自动丢弃。  示例：输出视频分辨率高1080，设置“dy”为“0.1”，“referpos”为“TopRight”（右上角），则水印图片右上角到视频右顶点在垂直方向上的偏移距离为108。 
 
         :param dy: The dy of this ImageWatermarkSetting.
-        :type: str
+        :type dy: str
         """
         self._dy = dy
 
@@ -137,7 +156,7 @@ class ImageWatermarkSetting:
         水印的位置。  取值如下： - TopRight：右上角。 - TopLeft：左上角。 - BottomRight：右下角。 - BottomLeft：左下角。 
 
         :param referpos: The referpos of this ImageWatermarkSetting.
-        :type: str
+        :type referpos: str
         """
         self._referpos = referpos
 
@@ -159,7 +178,7 @@ class ImageWatermarkSetting:
         水印开始时间，与“timeline_duration”配合使用。  取值范围：数字。  单位：秒。 
 
         :param timeline_start: The timeline_start of this ImageWatermarkSetting.
-        :type: str
+        :type timeline_start: str
         """
         self._timeline_start = timeline_start
 
@@ -181,7 +200,7 @@ class ImageWatermarkSetting:
         水印持续时间，与“timeline_start”配合使用。  取值范围：[数字，ToEND]。“ToEND”表示持续到视频结束。  默认值：ToEND。 
 
         :param timeline_duration: The timeline_duration of this ImageWatermarkSetting.
-        :type: str
+        :type timeline_duration: str
         """
         self._timeline_duration = timeline_duration
 
@@ -203,7 +222,7 @@ class ImageWatermarkSetting:
         对应拼接列表中第几个片段打水印，从0开始，\"0表示第1个，“1”表示第二个，不带或填\"ALL\"表示所有拼接片源打水印。 
 
         :param overlay_input: The overlay_input of this ImageWatermarkSetting.
-        :type: str
+        :type overlay_input: str
         """
         self._overlay_input = overlay_input
 
@@ -213,7 +232,7 @@ class ImageWatermarkSetting:
 
 
         :return: The input of this ImageWatermarkSetting.
-        :rtype: ObsObjInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         return self._input
 
@@ -223,7 +242,7 @@ class ImageWatermarkSetting:
 
 
         :param input: The input of this ImageWatermarkSetting.
-        :type: ObsObjInfo
+        :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         self._input = input
 
@@ -245,7 +264,7 @@ class ImageWatermarkSetting:
         水印叠加母体  取值如下： - input ：水印叠加在输入片源上，转码输出后实际大小按图像等比例缩放 - output ：水印叠加在转码输出文件上。 
 
         :param base: The base of this ImageWatermarkSetting.
-        :type: str
+        :type base: str
         """
         self._base = base
 

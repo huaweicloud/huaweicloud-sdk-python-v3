@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Taint:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class Taint:
     }
 
     def __init__(self, key=None, value=None, effect=None):
-        """Taint - a model defined in huaweicloud sdk"""
+        """Taint
+
+        The model defined in huaweicloud sdk
+
+        :param key: 键
+        :type key: str
+        :param value: 值
+        :type value: str
+        :param effect: 作用效果
+        :type effect: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class Taint:
         键
 
         :param key: The key of this Taint.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -90,7 +99,7 @@ class Taint:
         值
 
         :param value: The value of this Taint.
-        :type: str
+        :type value: str
         """
         self._value = value
 
@@ -112,7 +121,7 @@ class Taint:
         作用效果
 
         :param effect: The effect of this Taint.
-        :type: str
+        :type effect: str
         """
         self._effect = effect
 

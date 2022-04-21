@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListLatelyApiStatisticsV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListLatelyApiStatisticsV2Request:
     }
 
     def __init__(self, instance_id=None, api_id=None, duration=None):
-        """ListLatelyApiStatisticsV2Request - a model defined in huaweicloud sdk"""
+        """ListLatelyApiStatisticsV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param api_id: API的编号
+        :type api_id: str
+        :param duration: 最近统计时长，单位必须为h和m，比如1h和1m，分别代表最近1小时和最近1分钟
+        :type duration: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class ListLatelyApiStatisticsV2Request:
         实例ID
 
         :param instance_id: The instance_id of this ListLatelyApiStatisticsV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -87,7 +96,7 @@ class ListLatelyApiStatisticsV2Request:
         API的编号
 
         :param api_id: The api_id of this ListLatelyApiStatisticsV2Request.
-        :type: str
+        :type api_id: str
         """
         self._api_id = api_id
 
@@ -109,7 +118,7 @@ class ListLatelyApiStatisticsV2Request:
         最近统计时长，单位必须为h和m，比如1h和1m，分别代表最近1小时和最近1分钟
 
         :param duration: The duration of this ListLatelyApiStatisticsV2Request.
-        :type: str
+        :type duration: str
         """
         self._duration = duration
 

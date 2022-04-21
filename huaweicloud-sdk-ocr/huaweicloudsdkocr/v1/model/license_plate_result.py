@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LicensePlateResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class LicensePlateResult:
     }
 
     def __init__(self, plate_number=None, plate_color=None, plate_location=None, confidence=None):
-        """LicensePlateResult - a model defined in huaweicloud sdk"""
+        """LicensePlateResult
+
+        The model defined in huaweicloud sdk
+
+        :param plate_number: 车牌内容。 
+        :type plate_number: str
+        :param plate_color: 当前版本支持的车牌底色类型：  - blue: 蓝色  - green: 绿色  - black: 黑色  - white: 白色  - yellow: 黄色 
+        :type plate_color: str
+        :param plate_location: 车牌的区域位置信息，列表形式，包含文字区域四个顶点的二维坐标（x,y）;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
+        :type plate_location: list[list[int]]
+        :param confidence: 相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。 
+        :type confidence: float
+        """
         
         
 
@@ -69,7 +80,7 @@ class LicensePlateResult:
         车牌内容。 
 
         :param plate_number: The plate_number of this LicensePlateResult.
-        :type: str
+        :type plate_number: str
         """
         self._plate_number = plate_number
 
@@ -91,7 +102,7 @@ class LicensePlateResult:
         当前版本支持的车牌底色类型：  - blue: 蓝色  - green: 绿色  - black: 黑色  - white: 白色  - yellow: 黄色 
 
         :param plate_color: The plate_color of this LicensePlateResult.
-        :type: str
+        :type plate_color: str
         """
         self._plate_color = plate_color
 
@@ -113,7 +124,7 @@ class LicensePlateResult:
         车牌的区域位置信息，列表形式，包含文字区域四个顶点的二维坐标（x,y）;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
         :param plate_location: The plate_location of this LicensePlateResult.
-        :type: list[list[int]]
+        :type plate_location: list[list[int]]
         """
         self._plate_location = plate_location
 
@@ -135,7 +146,7 @@ class LicensePlateResult:
         相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。 
 
         :param confidence: The confidence of this LicensePlateResult.
-        :type: float
+        :type confidence: float
         """
         self._confidence = confidence
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AssociatePublicipsOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AssociatePublicipsOption:
     }
 
     def __init__(self, associate_instance_type=None, associate_instance_id=None):
-        """AssociatePublicipsOption - a model defined in huaweicloud sdk"""
+        """AssociatePublicipsOption
+
+        The model defined in huaweicloud sdk
+
+        :param associate_instance_type: 功能说明：端口所属实例类型 取值范围：PORT、NATGW、VPN、ELB、null 约束：associate_instance_type和associate_instance_id都不为空时表示绑定实例； associate_instance_type和associate_instance_id都为null时解绑实例 约束：双栈公网IP不允许修改绑定的实例
+        :type associate_instance_type: str
+        :param associate_instance_id: 功能说明：端口所属实例ID，例如RDS实例ID 约束：associate_instance_type和associate_instance_id都不为空时表示绑定实例； associate_instance_type和associate_instance_id都为null时解绑实例 约束：双栈公网IP不允许修改绑定的实例
+        :type associate_instance_id: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class AssociatePublicipsOption:
         功能说明：端口所属实例类型 取值范围：PORT、NATGW、VPN、ELB、null 约束：associate_instance_type和associate_instance_id都不为空时表示绑定实例； associate_instance_type和associate_instance_id都为null时解绑实例 约束：双栈公网IP不允许修改绑定的实例
 
         :param associate_instance_type: The associate_instance_type of this AssociatePublicipsOption.
-        :type: str
+        :type associate_instance_type: str
         """
         self._associate_instance_type = associate_instance_type
 
@@ -85,7 +92,7 @@ class AssociatePublicipsOption:
         功能说明：端口所属实例ID，例如RDS实例ID 约束：associate_instance_type和associate_instance_id都不为空时表示绑定实例； associate_instance_type和associate_instance_id都为null时解绑实例 约束：双栈公网IP不允许修改绑定的实例
 
         :param associate_instance_id: The associate_instance_id of this AssociatePublicipsOption.
-        :type: str
+        :type associate_instance_id: str
         """
         self._associate_instance_id = associate_instance_id
 

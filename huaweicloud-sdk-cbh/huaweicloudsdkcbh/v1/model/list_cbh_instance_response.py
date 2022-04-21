@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCbhInstanceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListCbhInstanceResponse(SdkResponse):
     }
 
     def __init__(self, total=None, quota_detail=None, instance=None):
-        """ListCbhInstanceResponse - a model defined in huaweicloud sdk"""
+        """ListCbhInstanceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 实例总数
+        :type total: int
+        :param quota_detail: 
+        :type quota_detail: :class:`huaweicloudsdkcbh.v1.QuotaDetail`
+        :param instance: 实例列表
+        :type instance: list[:class:`huaweicloudsdkcbh.v1.InstanceDetail`]
+        """
         
         super(ListCbhInstanceResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListCbhInstanceResponse(SdkResponse):
         实例总数
 
         :param total: The total of this ListCbhInstanceResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -78,7 +87,7 @@ class ListCbhInstanceResponse(SdkResponse):
 
 
         :return: The quota_detail of this ListCbhInstanceResponse.
-        :rtype: QuotaDetail
+        :rtype: :class:`huaweicloudsdkcbh.v1.QuotaDetail`
         """
         return self._quota_detail
 
@@ -88,7 +97,7 @@ class ListCbhInstanceResponse(SdkResponse):
 
 
         :param quota_detail: The quota_detail of this ListCbhInstanceResponse.
-        :type: QuotaDetail
+        :type quota_detail: :class:`huaweicloudsdkcbh.v1.QuotaDetail`
         """
         self._quota_detail = quota_detail
 
@@ -99,7 +108,7 @@ class ListCbhInstanceResponse(SdkResponse):
         实例列表
 
         :return: The instance of this ListCbhInstanceResponse.
-        :rtype: list[InstanceDetail]
+        :rtype: list[:class:`huaweicloudsdkcbh.v1.InstanceDetail`]
         """
         return self._instance
 
@@ -110,7 +119,7 @@ class ListCbhInstanceResponse(SdkResponse):
         实例列表
 
         :param instance: The instance of this ListCbhInstanceResponse.
-        :type: list[InstanceDetail]
+        :type instance: list[:class:`huaweicloudsdkcbh.v1.InstanceDetail`]
         """
         self._instance = instance
 

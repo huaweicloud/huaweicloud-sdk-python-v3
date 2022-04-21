@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddNodeList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class AddNodeList:
     }
 
     def __init__(self, api_version=None, kind=None, node_list=None):
-        """AddNodeList - a model defined in huaweicloud sdk"""
+        """AddNodeList
+
+        The model defined in huaweicloud sdk
+
+        :param api_version: API版本，固定值“v3”。
+        :type api_version: str
+        :param kind: API类型，固定值“List”。
+        :type kind: str
+        :param node_list: 纳管节点列表
+        :type node_list: list[:class:`huaweicloudsdkcce.v3.AddNode`]
+        """
         
         
 
@@ -65,7 +74,7 @@ class AddNodeList:
         API版本，固定值“v3”。
 
         :param api_version: The api_version of this AddNodeList.
-        :type: str
+        :type api_version: str
         """
         self._api_version = api_version
 
@@ -87,7 +96,7 @@ class AddNodeList:
         API类型，固定值“List”。
 
         :param kind: The kind of this AddNodeList.
-        :type: str
+        :type kind: str
         """
         self._kind = kind
 
@@ -98,7 +107,7 @@ class AddNodeList:
         纳管节点列表
 
         :return: The node_list of this AddNodeList.
-        :rtype: list[AddNode]
+        :rtype: list[:class:`huaweicloudsdkcce.v3.AddNode`]
         """
         return self._node_list
 
@@ -109,7 +118,7 @@ class AddNodeList:
         纳管节点列表
 
         :param node_list: The node_list of this AddNodeList.
-        :type: list[AddNode]
+        :type node_list: list[:class:`huaweicloudsdkcce.v3.AddNode`]
         """
         self._node_list = node_list
 

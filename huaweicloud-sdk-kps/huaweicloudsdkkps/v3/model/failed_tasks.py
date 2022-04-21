@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FailedTasks:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class FailedTasks:
     }
 
     def __init__(self, task_id=None, operate_type=None, task_time=None, task_error_code=None, task_error_msg=None, server_name=None, server_id=None, keypair_name=None):
-        """FailedTasks - a model defined in huaweicloud sdk"""
+        """FailedTasks
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 虚拟机ID
+        :type task_id: str
+        :param operate_type: 任务的操作类型。 - FAILED_RESET 重置 - FAILED_REPLACE 替换 - FAILED_UNBIND 解绑
+        :type operate_type: str
+        :param task_time: 任务时间
+        :type task_time: str
+        :param task_error_code: 任务失败错误码
+        :type task_error_code: str
+        :param task_error_msg: 任务失败错误码
+        :type task_error_msg: str
+        :param server_name: 虚拟机名称
+        :type server_name: str
+        :param server_id: 虚拟机ID
+        :type server_id: str
+        :param keypair_name: 密钥对名称
+        :type keypair_name: str
+        """
         
         
 
@@ -93,7 +112,7 @@ class FailedTasks:
         虚拟机ID
 
         :param task_id: The task_id of this FailedTasks.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -115,7 +134,7 @@ class FailedTasks:
         任务的操作类型。 - FAILED_RESET 重置 - FAILED_REPLACE 替换 - FAILED_UNBIND 解绑
 
         :param operate_type: The operate_type of this FailedTasks.
-        :type: str
+        :type operate_type: str
         """
         self._operate_type = operate_type
 
@@ -137,7 +156,7 @@ class FailedTasks:
         任务时间
 
         :param task_time: The task_time of this FailedTasks.
-        :type: str
+        :type task_time: str
         """
         self._task_time = task_time
 
@@ -159,7 +178,7 @@ class FailedTasks:
         任务失败错误码
 
         :param task_error_code: The task_error_code of this FailedTasks.
-        :type: str
+        :type task_error_code: str
         """
         self._task_error_code = task_error_code
 
@@ -181,7 +200,7 @@ class FailedTasks:
         任务失败错误码
 
         :param task_error_msg: The task_error_msg of this FailedTasks.
-        :type: str
+        :type task_error_msg: str
         """
         self._task_error_msg = task_error_msg
 
@@ -203,7 +222,7 @@ class FailedTasks:
         虚拟机名称
 
         :param server_name: The server_name of this FailedTasks.
-        :type: str
+        :type server_name: str
         """
         self._server_name = server_name
 
@@ -225,7 +244,7 @@ class FailedTasks:
         虚拟机ID
 
         :param server_id: The server_id of this FailedTasks.
-        :type: str
+        :type server_id: str
         """
         self._server_id = server_id
 
@@ -247,7 +266,7 @@ class FailedTasks:
         密钥对名称
 
         :param keypair_name: The keypair_name of this FailedTasks.
-        :type: str
+        :type keypair_name: str
         """
         self._keypair_name = keypair_name
 

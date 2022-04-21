@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ValueInTwin:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ValueInTwin:
     }
 
     def __init__(self, excepted=None, optional=None, metadata=None):
-        """ValueInTwin - a model defined in huaweicloud sdk"""
+        """ValueInTwin
+
+        The model defined in huaweicloud sdk
+
+        :param excepted: 
+        :type excepted: :class:`huaweicloudsdkief.v1.ValueInTwinExcepted`
+        :param optional: 动态属性的期望信息
+        :type optional: bool
+        :param metadata: 
+        :type metadata: :class:`huaweicloudsdkief.v1.Metadata`
+        """
         
         
 
@@ -55,7 +64,7 @@ class ValueInTwin:
 
 
         :return: The excepted of this ValueInTwin.
-        :rtype: ValueInTwinExcepted
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInTwinExcepted`
         """
         return self._excepted
 
@@ -65,7 +74,7 @@ class ValueInTwin:
 
 
         :param excepted: The excepted of this ValueInTwin.
-        :type: ValueInTwinExcepted
+        :type excepted: :class:`huaweicloudsdkief.v1.ValueInTwinExcepted`
         """
         self._excepted = excepted
 
@@ -87,7 +96,7 @@ class ValueInTwin:
         动态属性的期望信息
 
         :param optional: The optional of this ValueInTwin.
-        :type: bool
+        :type optional: bool
         """
         self._optional = optional
 
@@ -97,7 +106,7 @@ class ValueInTwin:
 
 
         :return: The metadata of this ValueInTwin.
-        :rtype: Metadata
+        :rtype: :class:`huaweicloudsdkief.v1.Metadata`
         """
         return self._metadata
 
@@ -107,7 +116,7 @@ class ValueInTwin:
 
 
         :param metadata: The metadata of this ValueInTwin.
-        :type: Metadata
+        :type metadata: :class:`huaweicloudsdkief.v1.Metadata`
         """
         self._metadata = metadata
 

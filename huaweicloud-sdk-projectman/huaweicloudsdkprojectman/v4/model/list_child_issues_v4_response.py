@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListChildIssuesV4Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListChildIssuesV4Response(SdkResponse):
     }
 
     def __init__(self, issues=None, total=None):
-        """ListChildIssuesV4Response - a model defined in huaweicloud sdk"""
+        """ListChildIssuesV4Response
+
+        The model defined in huaweicloud sdk
+
+        :param issues: 工作项列表
+        :type issues: list[:class:`huaweicloudsdkprojectman.v4.IssueResponseV4`]
+        :param total: 总数
+        :type total: int
+        """
         
         super(ListChildIssuesV4Response, self).__init__()
 
@@ -52,7 +59,7 @@ class ListChildIssuesV4Response(SdkResponse):
         工作项列表
 
         :return: The issues of this ListChildIssuesV4Response.
-        :rtype: list[IssueResponseV4]
+        :rtype: list[:class:`huaweicloudsdkprojectman.v4.IssueResponseV4`]
         """
         return self._issues
 
@@ -63,7 +70,7 @@ class ListChildIssuesV4Response(SdkResponse):
         工作项列表
 
         :param issues: The issues of this ListChildIssuesV4Response.
-        :type: list[IssueResponseV4]
+        :type issues: list[:class:`huaweicloudsdkprojectman.v4.IssueResponseV4`]
         """
         self._issues = issues
 
@@ -85,7 +92,7 @@ class ListChildIssuesV4Response(SdkResponse):
         总数
 
         :param total: The total of this ListChildIssuesV4Response.
-        :type: int
+        :type total: int
         """
         self._total = total
 

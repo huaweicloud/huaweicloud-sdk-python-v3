@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DetectStandardByNameAndIdRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DetectStandardByNameAndIdRequest:
     }
 
     def __init__(self, body=None):
-        """DetectStandardByNameAndIdRequest - a model defined in huaweicloud sdk"""
+        """DetectStandardByNameAndIdRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the DetectStandardByNameAndIdRequest
+        :type body: :class:`huaweicloudsdkivs.v2.IvsStandardByNameAndIdRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class DetectStandardByNameAndIdRequest:
 
 
         :return: The body of this DetectStandardByNameAndIdRequest.
-        :rtype: IvsStandardByNameAndIdRequestBody
+        :rtype: :class:`huaweicloudsdkivs.v2.IvsStandardByNameAndIdRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class DetectStandardByNameAndIdRequest:
 
 
         :param body: The body of this DetectStandardByNameAndIdRequest.
-        :type: IvsStandardByNameAndIdRequestBody
+        :type body: :class:`huaweicloudsdkivs.v2.IvsStandardByNameAndIdRequestBody`
         """
         self._body = body
 

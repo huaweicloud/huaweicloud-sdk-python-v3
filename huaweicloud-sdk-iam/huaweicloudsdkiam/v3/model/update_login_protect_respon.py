@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateLoginProtectRespon:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateLoginProtectRespon:
     }
 
     def __init__(self, user_id=None, enabled=None, verification_method=None):
-        """UpdateLoginProtectRespon - a model defined in huaweicloud sdk"""
+        """UpdateLoginProtectRespon
+
+        The model defined in huaweicloud sdk
+
+        :param user_id: 待修改信息的IAM用户ID。
+        :type user_id: str
+        :param enabled: IAM用户是否开启登录保护，开启为\&quot;true\&quot;，不开启为\&quot;false\&quot;。
+        :type enabled: bool
+        :param verification_method: IAM用户登录验证方式。手机验证为“sms”,邮箱验证为“email”,MFA验证为“vmfa”。
+        :type verification_method: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class UpdateLoginProtectRespon:
         待修改信息的IAM用户ID。
 
         :param user_id: The user_id of this UpdateLoginProtectRespon.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -87,7 +96,7 @@ class UpdateLoginProtectRespon:
         IAM用户是否开启登录保护，开启为\"true\"，不开启为\"false\"。
 
         :param enabled: The enabled of this UpdateLoginProtectRespon.
-        :type: bool
+        :type enabled: bool
         """
         self._enabled = enabled
 
@@ -109,7 +118,7 @@ class UpdateLoginProtectRespon:
         IAM用户登录验证方式。手机验证为“sms”,邮箱验证为“email”,MFA验证为“vmfa”。
 
         :param verification_method: The verification_method of this UpdateLoginProtectRespon.
-        :type: str
+        :type verification_method: str
         """
         self._verification_method = verification_method
 

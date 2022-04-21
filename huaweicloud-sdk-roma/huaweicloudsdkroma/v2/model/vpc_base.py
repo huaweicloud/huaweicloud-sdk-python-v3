@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VpcBase:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class VpcBase:
     }
 
     def __init__(self, name=None, port=None, balance_strategy=None, member_type=None, dict_code=None):
-        """VpcBase - a model defined in huaweicloud sdk"""
+        """VpcBase
+
+        The model defined in huaweicloud sdk
+
+        :param name: VPC通道的名称。  长度为3 ~ 64位的字符串，字符串由中文、英文字母、数字、中划线、下划线组成，且只能以英文或中文开头。 &gt; 中文字符必须为UTF-8或者unicode编码。
+        :type name: str
+        :param port: VPC通道中主机的端口号。  取值范围1 ~ 65535。
+        :type port: int
+        :param balance_strategy: 分发算法。 - 1：加权轮询（wrr） - 2：加权最少连接（wleastconn） - 3：源地址哈希（source） - 4：URI哈希（uri）
+        :type balance_strategy: int
+        :param member_type: VPC通道的成员类型。[site场景必须修改成IP类型](tag:Site) - ip - ecs
+        :type member_type: str
+        :param dict_code: VPC通道的字典编码  支持英文，数字，特殊字符（-_.）  暂不支持
+        :type dict_code: str
+        """
         
         
 
@@ -74,7 +87,7 @@ class VpcBase:
         VPC通道的名称。  长度为3 ~ 64位的字符串，字符串由中文、英文字母、数字、中划线、下划线组成，且只能以英文或中文开头。 > 中文字符必须为UTF-8或者unicode编码。
 
         :param name: The name of this VpcBase.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -96,7 +109,7 @@ class VpcBase:
         VPC通道中主机的端口号。  取值范围1 ~ 65535。
 
         :param port: The port of this VpcBase.
-        :type: int
+        :type port: int
         """
         self._port = port
 
@@ -118,7 +131,7 @@ class VpcBase:
         分发算法。 - 1：加权轮询（wrr） - 2：加权最少连接（wleastconn） - 3：源地址哈希（source） - 4：URI哈希（uri）
 
         :param balance_strategy: The balance_strategy of this VpcBase.
-        :type: int
+        :type balance_strategy: int
         """
         self._balance_strategy = balance_strategy
 
@@ -140,7 +153,7 @@ class VpcBase:
         VPC通道的成员类型。[site场景必须修改成IP类型](tag:Site) - ip - ecs
 
         :param member_type: The member_type of this VpcBase.
-        :type: str
+        :type member_type: str
         """
         self._member_type = member_type
 
@@ -162,7 +175,7 @@ class VpcBase:
         VPC通道的字典编码  支持英文，数字，特殊字符（-_.）  暂不支持
 
         :param dict_code: The dict_code of this VpcBase.
-        :type: str
+        :type dict_code: str
         """
         self._dict_code = dict_code
 

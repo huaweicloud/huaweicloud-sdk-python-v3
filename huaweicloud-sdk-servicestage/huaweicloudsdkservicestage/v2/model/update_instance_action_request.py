@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateInstanceActionRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UpdateInstanceActionRequest:
     }
 
     def __init__(self, application_id=None, component_id=None, instance_id=None, body=None):
-        """UpdateInstanceActionRequest - a model defined in huaweicloud sdk"""
+        """UpdateInstanceActionRequest
+
+        The model defined in huaweicloud sdk
+
+        :param application_id: 应用ID。
+        :type application_id: str
+        :param component_id: 组件ID。
+        :type component_id: str
+        :param instance_id: 组件实例ID。
+        :type instance_id: str
+        :param body: Body of the UpdateInstanceActionRequest
+        :type body: :class:`huaweicloudsdkservicestage.v2.InstanceAction`
+        """
         
         
 
@@ -70,7 +81,7 @@ class UpdateInstanceActionRequest:
         应用ID。
 
         :param application_id: The application_id of this UpdateInstanceActionRequest.
-        :type: str
+        :type application_id: str
         """
         self._application_id = application_id
 
@@ -92,7 +103,7 @@ class UpdateInstanceActionRequest:
         组件ID。
 
         :param component_id: The component_id of this UpdateInstanceActionRequest.
-        :type: str
+        :type component_id: str
         """
         self._component_id = component_id
 
@@ -114,7 +125,7 @@ class UpdateInstanceActionRequest:
         组件实例ID。
 
         :param instance_id: The instance_id of this UpdateInstanceActionRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -124,7 +135,7 @@ class UpdateInstanceActionRequest:
 
 
         :return: The body of this UpdateInstanceActionRequest.
-        :rtype: InstanceAction
+        :rtype: :class:`huaweicloudsdkservicestage.v2.InstanceAction`
         """
         return self._body
 
@@ -134,7 +145,7 @@ class UpdateInstanceActionRequest:
 
 
         :param body: The body of this UpdateInstanceActionRequest.
-        :type: InstanceAction
+        :type body: :class:`huaweicloudsdkservicestage.v2.InstanceAction`
         """
         self._body = body
 

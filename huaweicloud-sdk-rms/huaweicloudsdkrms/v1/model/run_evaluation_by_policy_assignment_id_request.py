@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunEvaluationByPolicyAssignmentIdRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RunEvaluationByPolicyAssignmentIdRequest:
     }
 
     def __init__(self, policy_assignment_id=None):
-        """RunEvaluationByPolicyAssignmentIdRequest - a model defined in huaweicloud sdk"""
+        """RunEvaluationByPolicyAssignmentIdRequest
+
+        The model defined in huaweicloud sdk
+
+        :param policy_assignment_id: 规则ID
+        :type policy_assignment_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class RunEvaluationByPolicyAssignmentIdRequest:
         规则ID
 
         :param policy_assignment_id: The policy_assignment_id of this RunEvaluationByPolicyAssignmentIdRequest.
-        :type: str
+        :type policy_assignment_id: str
         """
         self._policy_assignment_id = policy_assignment_id
 

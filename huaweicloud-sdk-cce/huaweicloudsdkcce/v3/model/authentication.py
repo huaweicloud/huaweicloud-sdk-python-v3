@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Authentication:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Authentication:
     }
 
     def __init__(self, mode=None, authenticating_proxy=None):
-        """Authentication - a model defined in huaweicloud sdk"""
+        """Authentication
+
+        The model defined in huaweicloud sdk
+
+        :param mode: 集群认证模式。   - kubernetes 1.11及之前版本的集群支持“x509”、“rbac”和“authenticating_proxy”，默认取值为“x509”。  - kubernetes 1.13及以上版本的集群支持“rbac”和“authenticating_proxy”，默认取值为“rbac”。
+        :type mode: str
+        :param authenticating_proxy: 
+        :type authenticating_proxy: :class:`huaweicloudsdkcce.v3.AuthenticatingProxy`
+        """
         
         
 
@@ -63,7 +70,7 @@ class Authentication:
         集群认证模式。   - kubernetes 1.11及之前版本的集群支持“x509”、“rbac”和“authenticating_proxy”，默认取值为“x509”。  - kubernetes 1.13及以上版本的集群支持“rbac”和“authenticating_proxy”，默认取值为“rbac”。
 
         :param mode: The mode of this Authentication.
-        :type: str
+        :type mode: str
         """
         self._mode = mode
 
@@ -73,7 +80,7 @@ class Authentication:
 
 
         :return: The authenticating_proxy of this Authentication.
-        :rtype: AuthenticatingProxy
+        :rtype: :class:`huaweicloudsdkcce.v3.AuthenticatingProxy`
         """
         return self._authenticating_proxy
 
@@ -83,7 +90,7 @@ class Authentication:
 
 
         :param authenticating_proxy: The authenticating_proxy of this Authentication.
-        :type: AuthenticatingProxy
+        :type authenticating_proxy: :class:`huaweicloudsdkcce.v3.AuthenticatingProxy`
         """
         self._authenticating_proxy = authenticating_proxy
 

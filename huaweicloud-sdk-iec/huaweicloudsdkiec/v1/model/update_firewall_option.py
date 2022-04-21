@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateFirewallOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UpdateFirewallOption:
     }
 
     def __init__(self, name=None, admin_state_up=None, description=None, subnets=None):
-        """UpdateFirewallOption - a model defined in huaweicloud sdk"""
+        """UpdateFirewallOption
+
+        The model defined in huaweicloud sdk
+
+        :param name: 网络ACL名称。更新时name不能为空。  中文字符、字母、数字、中划线和下划线组成，长度为1~64个字符
+        :type name: str
+        :param admin_state_up: 网络ACL的使能开关。  取值范围：true（开启），false（关闭） 
+        :type admin_state_up: bool
+        :param description: 网络ACL描述。
+        :type description: str
+        :param subnets: 关联子网列表。
+        :type subnets: list[:class:`huaweicloudsdkiec.v1.FirewallSubnetOption`]
+        """
         
         
 
@@ -72,7 +83,7 @@ class UpdateFirewallOption:
         网络ACL名称。更新时name不能为空。  中文字符、字母、数字、中划线和下划线组成，长度为1~64个字符
 
         :param name: The name of this UpdateFirewallOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -94,7 +105,7 @@ class UpdateFirewallOption:
         网络ACL的使能开关。  取值范围：true（开启），false（关闭） 
 
         :param admin_state_up: The admin_state_up of this UpdateFirewallOption.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 
@@ -116,7 +127,7 @@ class UpdateFirewallOption:
         网络ACL描述。
 
         :param description: The description of this UpdateFirewallOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -127,7 +138,7 @@ class UpdateFirewallOption:
         关联子网列表。
 
         :return: The subnets of this UpdateFirewallOption.
-        :rtype: list[FirewallSubnetOption]
+        :rtype: list[:class:`huaweicloudsdkiec.v1.FirewallSubnetOption`]
         """
         return self._subnets
 
@@ -138,7 +149,7 @@ class UpdateFirewallOption:
         关联子网列表。
 
         :param subnets: The subnets of this UpdateFirewallOption.
-        :type: list[FirewallSubnetOption]
+        :type subnets: list[:class:`huaweicloudsdkiec.v1.FirewallSubnetOption`]
         """
         self._subnets = subnets
 

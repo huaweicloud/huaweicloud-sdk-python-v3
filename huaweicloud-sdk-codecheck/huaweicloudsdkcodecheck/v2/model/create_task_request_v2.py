@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateTaskRequestV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class CreateTaskRequestV2:
     }
 
     def __init__(self, check_type=None, git_url=None, git_branch=None, language=None, rule_sets=None, task_type=None, username=None, access_token=None, endpoint_id=None, inc_config=None, enable_fossbot=None, resource_pool_id=None):
-        """CreateTaskRequestV2 - a model defined in huaweicloud sdk"""
+        """CreateTaskRequestV2
+
+        The model defined in huaweicloud sdk
+
+        :param check_type: 检查类型，数组格式，默认为source
+        :type check_type: list[str]
+        :param git_url: 仓库地址
+        :type git_url: str
+        :param git_branch: 仓库分支
+        :type git_branch: str
+        :param language: 检查语言，数组格式，支持cpp,java,js,python,php,css,html,go,typescript,csharp
+        :type language: list[str]
+        :param rule_sets: 指定规则集
+        :type rule_sets: list[:class:`huaweicloudsdkcodecheck.v2.RuleSetV2`]
+        :param task_type: 检查类型，支持full/inc两种类型，full表示全量检查，inc表示mr检查
+        :type task_type: str
+        :param username: 仓库有权限的用户名
+        :type username: str
+        :param access_token: 仓库有权限的用户token
+        :type access_token: str
+        :param endpoint_id: 仓库有权限的用户endpointId
+        :type endpoint_id: str
+        :param inc_config: 
+        :type inc_config: :class:`huaweicloudsdkcodecheck.v2.IncConfigV2`
+        :param enable_fossbot: 是否打开fossbot检查,默认不开
+        :type enable_fossbot: bool
+        :param resource_pool_id: 资源池id，可以从资源池管理页面获取
+        :type resource_pool_id: str
+        """
         
         
 
@@ -110,7 +137,7 @@ class CreateTaskRequestV2:
         检查类型，数组格式，默认为source
 
         :param check_type: The check_type of this CreateTaskRequestV2.
-        :type: list[str]
+        :type check_type: list[str]
         """
         self._check_type = check_type
 
@@ -132,7 +159,7 @@ class CreateTaskRequestV2:
         仓库地址
 
         :param git_url: The git_url of this CreateTaskRequestV2.
-        :type: str
+        :type git_url: str
         """
         self._git_url = git_url
 
@@ -154,7 +181,7 @@ class CreateTaskRequestV2:
         仓库分支
 
         :param git_branch: The git_branch of this CreateTaskRequestV2.
-        :type: str
+        :type git_branch: str
         """
         self._git_branch = git_branch
 
@@ -176,7 +203,7 @@ class CreateTaskRequestV2:
         检查语言，数组格式，支持cpp,java,js,python,php,css,html,go,typescript,csharp
 
         :param language: The language of this CreateTaskRequestV2.
-        :type: list[str]
+        :type language: list[str]
         """
         self._language = language
 
@@ -187,7 +214,7 @@ class CreateTaskRequestV2:
         指定规则集
 
         :return: The rule_sets of this CreateTaskRequestV2.
-        :rtype: list[RuleSetV2]
+        :rtype: list[:class:`huaweicloudsdkcodecheck.v2.RuleSetV2`]
         """
         return self._rule_sets
 
@@ -198,7 +225,7 @@ class CreateTaskRequestV2:
         指定规则集
 
         :param rule_sets: The rule_sets of this CreateTaskRequestV2.
-        :type: list[RuleSetV2]
+        :type rule_sets: list[:class:`huaweicloudsdkcodecheck.v2.RuleSetV2`]
         """
         self._rule_sets = rule_sets
 
@@ -220,7 +247,7 @@ class CreateTaskRequestV2:
         检查类型，支持full/inc两种类型，full表示全量检查，inc表示mr检查
 
         :param task_type: The task_type of this CreateTaskRequestV2.
-        :type: str
+        :type task_type: str
         """
         self._task_type = task_type
 
@@ -242,7 +269,7 @@ class CreateTaskRequestV2:
         仓库有权限的用户名
 
         :param username: The username of this CreateTaskRequestV2.
-        :type: str
+        :type username: str
         """
         self._username = username
 
@@ -264,7 +291,7 @@ class CreateTaskRequestV2:
         仓库有权限的用户token
 
         :param access_token: The access_token of this CreateTaskRequestV2.
-        :type: str
+        :type access_token: str
         """
         self._access_token = access_token
 
@@ -286,7 +313,7 @@ class CreateTaskRequestV2:
         仓库有权限的用户endpointId
 
         :param endpoint_id: The endpoint_id of this CreateTaskRequestV2.
-        :type: str
+        :type endpoint_id: str
         """
         self._endpoint_id = endpoint_id
 
@@ -296,7 +323,7 @@ class CreateTaskRequestV2:
 
 
         :return: The inc_config of this CreateTaskRequestV2.
-        :rtype: IncConfigV2
+        :rtype: :class:`huaweicloudsdkcodecheck.v2.IncConfigV2`
         """
         return self._inc_config
 
@@ -306,7 +333,7 @@ class CreateTaskRequestV2:
 
 
         :param inc_config: The inc_config of this CreateTaskRequestV2.
-        :type: IncConfigV2
+        :type inc_config: :class:`huaweicloudsdkcodecheck.v2.IncConfigV2`
         """
         self._inc_config = inc_config
 
@@ -328,7 +355,7 @@ class CreateTaskRequestV2:
         是否打开fossbot检查,默认不开
 
         :param enable_fossbot: The enable_fossbot of this CreateTaskRequestV2.
-        :type: bool
+        :type enable_fossbot: bool
         """
         self._enable_fossbot = enable_fossbot
 
@@ -350,7 +377,7 @@ class CreateTaskRequestV2:
         资源池id，可以从资源池管理页面获取
 
         :param resource_pool_id: The resource_pool_id of this CreateTaskRequestV2.
-        :type: str
+        :type resource_pool_id: str
         """
         self._resource_pool_id = resource_pool_id
 

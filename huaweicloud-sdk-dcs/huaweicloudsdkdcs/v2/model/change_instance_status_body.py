@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ChangeInstanceStatusBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ChangeInstanceStatusBody:
     }
 
     def __init__(self, instances=None, action=None):
-        """ChangeInstanceStatusBody - a model defined in huaweicloud sdk"""
+        """ChangeInstanceStatusBody
+
+        The model defined in huaweicloud sdk
+
+        :param instances: 实例的ID列表。
+        :type instances: list[str]
+        :param action: 对实例的操作：  restart: 强制重启  soft_restart: 软重启，只重启进程  flush: 清空数据 &gt; 当前版本，只有Redis 4.0和Redis 5.0实例支持清空数据功能，即flush操作。 
+        :type action: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class ChangeInstanceStatusBody:
         实例的ID列表。
 
         :param instances: The instances of this ChangeInstanceStatusBody.
-        :type: list[str]
+        :type instances: list[str]
         """
         self._instances = instances
 
@@ -85,7 +92,7 @@ class ChangeInstanceStatusBody:
         对实例的操作：  restart: 强制重启  soft_restart: 软重启，只重启进程  flush: 清空数据 > 当前版本，只有Redis 4.0和Redis 5.0实例支持清空数据功能，即flush操作。 
 
         :param action: The action of this ChangeInstanceStatusBody.
-        :type: str
+        :type action: str
         """
         self._action = action
 

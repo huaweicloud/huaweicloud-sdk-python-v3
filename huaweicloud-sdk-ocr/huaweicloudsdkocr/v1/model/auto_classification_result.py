@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AutoClassificationResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class AutoClassificationResult:
     }
 
     def __init__(self, status=None, content=None, type=None, location=None):
-        """AutoClassificationResult - a model defined in huaweicloud sdk"""
+        """AutoClassificationResult
+
+        The model defined in huaweicloud sdk
+
+        :param status: 
+        :type status: :class:`huaweicloudsdkocr.v1.AutoClassificationResultStatus`
+        :param content: 对应票证具体结构化识别的结果。 
+        :type content: object
+        :param type: 对应票证的类别。         
+        :type type: str
+        :param location: 文字块的区域位置信息，列表形式，包含文字区域四个顶点的二维坐标（x,y）;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
+        :type location: list[list[int]]
+        """
         
         
 
@@ -57,7 +68,7 @@ class AutoClassificationResult:
 
 
         :return: The status of this AutoClassificationResult.
-        :rtype: AutoClassificationResultStatus
+        :rtype: :class:`huaweicloudsdkocr.v1.AutoClassificationResultStatus`
         """
         return self._status
 
@@ -67,7 +78,7 @@ class AutoClassificationResult:
 
 
         :param status: The status of this AutoClassificationResult.
-        :type: AutoClassificationResultStatus
+        :type status: :class:`huaweicloudsdkocr.v1.AutoClassificationResultStatus`
         """
         self._status = status
 
@@ -89,7 +100,7 @@ class AutoClassificationResult:
         对应票证具体结构化识别的结果。 
 
         :param content: The content of this AutoClassificationResult.
-        :type: object
+        :type content: object
         """
         self._content = content
 
@@ -111,7 +122,7 @@ class AutoClassificationResult:
         对应票证的类别。         
 
         :param type: The type of this AutoClassificationResult.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -133,7 +144,7 @@ class AutoClassificationResult:
         文字块的区域位置信息，列表形式，包含文字区域四个顶点的二维坐标（x,y）;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
         :param location: The location of this AutoClassificationResult.
-        :type: list[list[int]]
+        :type location: list[list[int]]
         """
         self._location = location
 

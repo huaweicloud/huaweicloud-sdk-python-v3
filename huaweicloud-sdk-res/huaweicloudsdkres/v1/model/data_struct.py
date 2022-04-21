@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DataStruct:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class DataStruct:
     }
 
     def __init__(self, behaviors=None, item_attrs=None, user_attrs=None, user_dynamic_attr=None):
-        """DataStruct - a model defined in huaweicloud sdk"""
+        """DataStruct
+
+        The model defined in huaweicloud sdk
+
+        :param behaviors: 
+        :type behaviors: :class:`huaweicloudsdkres.v1.BehaviorsConfig`
+        :param item_attrs: 物品参数。
+        :type item_attrs: list[:class:`huaweicloudsdkres.v1.ItemAttrs`]
+        :param user_attrs: 用户参数。
+        :type user_attrs: list[:class:`huaweicloudsdkres.v1.UserAttrs`]
+        :param user_dynamic_attr: 
+        :type user_dynamic_attr: :class:`huaweicloudsdkres.v1.UserDynamicAttr`
+        """
         
         
 
@@ -61,7 +72,7 @@ class DataStruct:
 
 
         :return: The behaviors of this DataStruct.
-        :rtype: BehaviorsConfig
+        :rtype: :class:`huaweicloudsdkres.v1.BehaviorsConfig`
         """
         return self._behaviors
 
@@ -71,7 +82,7 @@ class DataStruct:
 
 
         :param behaviors: The behaviors of this DataStruct.
-        :type: BehaviorsConfig
+        :type behaviors: :class:`huaweicloudsdkres.v1.BehaviorsConfig`
         """
         self._behaviors = behaviors
 
@@ -82,7 +93,7 @@ class DataStruct:
         物品参数。
 
         :return: The item_attrs of this DataStruct.
-        :rtype: list[ItemAttrs]
+        :rtype: list[:class:`huaweicloudsdkres.v1.ItemAttrs`]
         """
         return self._item_attrs
 
@@ -93,7 +104,7 @@ class DataStruct:
         物品参数。
 
         :param item_attrs: The item_attrs of this DataStruct.
-        :type: list[ItemAttrs]
+        :type item_attrs: list[:class:`huaweicloudsdkres.v1.ItemAttrs`]
         """
         self._item_attrs = item_attrs
 
@@ -104,7 +115,7 @@ class DataStruct:
         用户参数。
 
         :return: The user_attrs of this DataStruct.
-        :rtype: list[UserAttrs]
+        :rtype: list[:class:`huaweicloudsdkres.v1.UserAttrs`]
         """
         return self._user_attrs
 
@@ -115,7 +126,7 @@ class DataStruct:
         用户参数。
 
         :param user_attrs: The user_attrs of this DataStruct.
-        :type: list[UserAttrs]
+        :type user_attrs: list[:class:`huaweicloudsdkres.v1.UserAttrs`]
         """
         self._user_attrs = user_attrs
 
@@ -125,7 +136,7 @@ class DataStruct:
 
 
         :return: The user_dynamic_attr of this DataStruct.
-        :rtype: UserDynamicAttr
+        :rtype: :class:`huaweicloudsdkres.v1.UserDynamicAttr`
         """
         return self._user_dynamic_attr
 
@@ -135,7 +146,7 @@ class DataStruct:
 
 
         :param user_dynamic_attr: The user_dynamic_attr of this DataStruct.
-        :type: UserDynamicAttr
+        :type user_dynamic_attr: :class:`huaweicloudsdkres.v1.UserDynamicAttr`
         """
         self._user_dynamic_attr = user_dynamic_attr
 

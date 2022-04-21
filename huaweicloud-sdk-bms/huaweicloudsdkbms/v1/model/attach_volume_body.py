@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AttachVolumeBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class AttachVolumeBody:
     }
 
     def __init__(self, volume_attachment=None):
-        """AttachVolumeBody - a model defined in huaweicloud sdk"""
+        """AttachVolumeBody
+
+        The model defined in huaweicloud sdk
+
+        :param volume_attachment: 
+        :type volume_attachment: :class:`huaweicloudsdkbms.v1.VolumeAttachment`
+        """
         
         
 
@@ -45,7 +50,7 @@ class AttachVolumeBody:
 
 
         :return: The volume_attachment of this AttachVolumeBody.
-        :rtype: VolumeAttachment
+        :rtype: :class:`huaweicloudsdkbms.v1.VolumeAttachment`
         """
         return self._volume_attachment
 
@@ -55,7 +60,7 @@ class AttachVolumeBody:
 
 
         :param volume_attachment: The volume_attachment of this AttachVolumeBody.
-        :type: VolumeAttachment
+        :type volume_attachment: :class:`huaweicloudsdkbms.v1.VolumeAttachment`
         """
         self._volume_attachment = volume_attachment
 

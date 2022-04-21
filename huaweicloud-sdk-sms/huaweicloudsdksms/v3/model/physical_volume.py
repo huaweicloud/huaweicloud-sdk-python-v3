@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PhysicalVolume:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class PhysicalVolume:
     }
 
     def __init__(self, device_use=None, file_system=None, index=None, mount_point=None, name=None, size=None, used_size=None, uuid=None, size_per_cluster=None):
-        """PhysicalVolume - a model defined in huaweicloud sdk"""
+        """PhysicalVolume
+
+        The model defined in huaweicloud sdk
+
+        :param device_use: 分区类型，普通分区，启动分区，系统分区
+        :type device_use: str
+        :param file_system: 文件系统类型
+        :type file_system: str
+        :param index: 顺序
+        :type index: int
+        :param mount_point: 挂载点
+        :type mount_point: str
+        :param name: 名称，windows表示盘符，Linux表示设备号
+        :type name: str
+        :param size: 大小
+        :type size: int
+        :param used_size: 使用大小
+        :type used_size: int
+        :param uuid: GUID，可从源端查询
+        :type uuid: str
+        :param size_per_cluster: 每个cluster大小
+        :type size_per_cluster: int
+        """
         
         
 
@@ -98,7 +119,7 @@ class PhysicalVolume:
         分区类型，普通分区，启动分区，系统分区
 
         :param device_use: The device_use of this PhysicalVolume.
-        :type: str
+        :type device_use: str
         """
         self._device_use = device_use
 
@@ -120,7 +141,7 @@ class PhysicalVolume:
         文件系统类型
 
         :param file_system: The file_system of this PhysicalVolume.
-        :type: str
+        :type file_system: str
         """
         self._file_system = file_system
 
@@ -142,7 +163,7 @@ class PhysicalVolume:
         顺序
 
         :param index: The index of this PhysicalVolume.
-        :type: int
+        :type index: int
         """
         self._index = index
 
@@ -164,7 +185,7 @@ class PhysicalVolume:
         挂载点
 
         :param mount_point: The mount_point of this PhysicalVolume.
-        :type: str
+        :type mount_point: str
         """
         self._mount_point = mount_point
 
@@ -186,7 +207,7 @@ class PhysicalVolume:
         名称，windows表示盘符，Linux表示设备号
 
         :param name: The name of this PhysicalVolume.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -208,7 +229,7 @@ class PhysicalVolume:
         大小
 
         :param size: The size of this PhysicalVolume.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -230,7 +251,7 @@ class PhysicalVolume:
         使用大小
 
         :param used_size: The used_size of this PhysicalVolume.
-        :type: int
+        :type used_size: int
         """
         self._used_size = used_size
 
@@ -252,7 +273,7 @@ class PhysicalVolume:
         GUID，可从源端查询
 
         :param uuid: The uuid of this PhysicalVolume.
-        :type: str
+        :type uuid: str
         """
         self._uuid = uuid
 
@@ -274,7 +295,7 @@ class PhysicalVolume:
         每个cluster大小
 
         :param size_per_cluster: The size_per_cluster of this PhysicalVolume.
-        :type: int
+        :type size_per_cluster: int
         """
         self._size_per_cluster = size_per_cluster
 

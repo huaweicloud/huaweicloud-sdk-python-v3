@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateConfTokenRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -39,7 +38,21 @@ class CreateConfTokenRequest:
     }
 
     def __init__(self, conference_id=None, x_conference_authorization=None, x_password=None, x_login_type=None, x_nonce=None):
-        """CreateConfTokenRequest - a model defined in huaweicloud sdk"""
+        """CreateConfTokenRequest
+
+        The model defined in huaweicloud sdk
+
+        :param conference_id: 会议ID。
+        :type conference_id: str
+        :param x_conference_authorization: 如果携带该值，则表示是保活消息，如果会话已过期并且请求中携带了密码，则进行重新鉴权并回复新的会话标识。 该头域统一为BASE64编码。
+        :type x_conference_authorization: str
+        :param x_password: 会议的主持人密码。 从创建会议的返回响应参数获取。 对于会控Token保活场景，可以不携带会议密码。
+        :type x_password: str
+        :param x_login_type: 请求类型。 - 1: 业务固定为1。
+        :type x_login_type: int
+        :param x_nonce: 用户临时nonce token。
+        :type x_nonce: str
+        """
         
         
 
@@ -76,7 +89,7 @@ class CreateConfTokenRequest:
         会议ID。
 
         :param conference_id: The conference_id of this CreateConfTokenRequest.
-        :type: str
+        :type conference_id: str
         """
         self._conference_id = conference_id
 
@@ -98,7 +111,7 @@ class CreateConfTokenRequest:
         如果携带该值，则表示是保活消息，如果会话已过期并且请求中携带了密码，则进行重新鉴权并回复新的会话标识。 该头域统一为BASE64编码。
 
         :param x_conference_authorization: The x_conference_authorization of this CreateConfTokenRequest.
-        :type: str
+        :type x_conference_authorization: str
         """
         self._x_conference_authorization = x_conference_authorization
 
@@ -120,7 +133,7 @@ class CreateConfTokenRequest:
         会议的主持人密码。 从创建会议的返回响应参数获取。 对于会控Token保活场景，可以不携带会议密码。
 
         :param x_password: The x_password of this CreateConfTokenRequest.
-        :type: str
+        :type x_password: str
         """
         self._x_password = x_password
 
@@ -142,7 +155,7 @@ class CreateConfTokenRequest:
         请求类型。 - 1: 业务固定为1。
 
         :param x_login_type: The x_login_type of this CreateConfTokenRequest.
-        :type: int
+        :type x_login_type: int
         """
         self._x_login_type = x_login_type
 
@@ -164,7 +177,7 @@ class CreateConfTokenRequest:
         用户临时nonce token。
 
         :param x_nonce: The x_nonce of this CreateConfTokenRequest.
-        :type: str
+        :type x_nonce: str
         """
         self._x_nonce = x_nonce
 

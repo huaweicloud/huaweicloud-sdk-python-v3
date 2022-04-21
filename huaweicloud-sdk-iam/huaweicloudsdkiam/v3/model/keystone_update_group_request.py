@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneUpdateGroupRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class KeystoneUpdateGroupRequest:
     }
 
     def __init__(self, group_id=None, body=None):
-        """KeystoneUpdateGroupRequest - a model defined in huaweicloud sdk"""
+        """KeystoneUpdateGroupRequest
+
+        The model defined in huaweicloud sdk
+
+        :param group_id: 待更新的用户组ID，获取方式请参见：[获取用户组ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
+        :type group_id: str
+        :param body: Body of the KeystoneUpdateGroupRequest
+        :type body: :class:`huaweicloudsdkiam.v3.KeystoneUpdateGroupRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class KeystoneUpdateGroupRequest:
         待更新的用户组ID，获取方式请参见：[获取用户组ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param group_id: The group_id of this KeystoneUpdateGroupRequest.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -72,7 +79,7 @@ class KeystoneUpdateGroupRequest:
 
 
         :return: The body of this KeystoneUpdateGroupRequest.
-        :rtype: KeystoneUpdateGroupRequestBody
+        :rtype: :class:`huaweicloudsdkiam.v3.KeystoneUpdateGroupRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class KeystoneUpdateGroupRequest:
 
 
         :param body: The body of this KeystoneUpdateGroupRequest.
-        :type: KeystoneUpdateGroupRequestBody
+        :type body: :class:`huaweicloudsdkiam.v3.KeystoneUpdateGroupRequestBody`
         """
         self._body = body
 

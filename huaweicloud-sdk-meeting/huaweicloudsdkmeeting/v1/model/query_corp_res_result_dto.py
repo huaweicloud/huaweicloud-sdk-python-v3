@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryCorpResResultDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class QueryCorpResResultDTO:
     }
 
     def __init__(self, corp_vc_res=None):
-        """QueryCorpResResultDTO - a model defined in huaweicloud sdk"""
+        """QueryCorpResResultDTO
+
+        The model defined in huaweicloud sdk
+
+        :param corp_vc_res: 
+        :type corp_vc_res: :class:`huaweicloudsdkmeeting.v1.QueryCorpVcResResultDTO`
+        """
         
         
 
@@ -46,7 +51,7 @@ class QueryCorpResResultDTO:
 
 
         :return: The corp_vc_res of this QueryCorpResResultDTO.
-        :rtype: QueryCorpVcResResultDTO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.QueryCorpVcResResultDTO`
         """
         return self._corp_vc_res
 
@@ -56,7 +61,7 @@ class QueryCorpResResultDTO:
 
 
         :param corp_vc_res: The corp_vc_res of this QueryCorpResResultDTO.
-        :type: QueryCorpVcResResultDTO
+        :type corp_vc_res: :class:`huaweicloudsdkmeeting.v1.QueryCorpVcResResultDTO`
         """
         self._corp_vc_res = corp_vc_res
 

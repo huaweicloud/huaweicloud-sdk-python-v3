@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateNodeRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateNodeRequest:
     }
 
     def __init__(self, cluster_id=None, node_id=None, body=None):
-        """UpdateNodeRequest - a model defined in huaweicloud sdk"""
+        """UpdateNodeRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 集群 ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
+        :type cluster_id: str
+        :param node_id: 节点ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
+        :type node_id: str
+        :param body: Body of the UpdateNodeRequest
+        :type body: :class:`huaweicloudsdkcce.v3.ClusterNodeInformation`
+        """
         
         
 
@@ -66,7 +75,7 @@ class UpdateNodeRequest:
         集群 ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
         :param cluster_id: The cluster_id of this UpdateNodeRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -88,7 +97,7 @@ class UpdateNodeRequest:
         节点ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
         :param node_id: The node_id of this UpdateNodeRequest.
-        :type: str
+        :type node_id: str
         """
         self._node_id = node_id
 
@@ -98,7 +107,7 @@ class UpdateNodeRequest:
 
 
         :return: The body of this UpdateNodeRequest.
-        :rtype: ClusterNodeInformation
+        :rtype: :class:`huaweicloudsdkcce.v3.ClusterNodeInformation`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class UpdateNodeRequest:
 
 
         :param body: The body of this UpdateNodeRequest.
-        :type: ClusterNodeInformation
+        :type body: :class:`huaweicloudsdkcce.v3.ClusterNodeInformation`
         """
         self._body = body
 

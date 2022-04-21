@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListWorkflowExecutionsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListWorkflowExecutionsRequest:
     }
 
     def __init__(self, workflow_id=None, limit=None, status=None, start_time=None, end_time=None):
-        """ListWorkflowExecutionsRequest - a model defined in huaweicloud sdk"""
+        """ListWorkflowExecutionsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param workflow_id: 函数工作流ID
+        :type workflow_id: str
+        :param limit: 分页查询，每页显示的条目数量，最大数量200，超过200后只返回200
+        :type limit: int
+        :param status: 需要过滤的流程实例状态
+        :type status: str
+        :param start_time: 查询开始时间，UTC时间。若起始时间未填写，以终止时间前推3天为起始时间
+        :type start_time: str
+        :param end_time: 查询开始时间，UTC时间。若终止时间未填写，以起始时间后退3天未终止时间。若均未填写，默认查询最近3天数据。
+        :type end_time: str
+        """
         
         
 
@@ -77,7 +90,7 @@ class ListWorkflowExecutionsRequest:
         函数工作流ID
 
         :param workflow_id: The workflow_id of this ListWorkflowExecutionsRequest.
-        :type: str
+        :type workflow_id: str
         """
         self._workflow_id = workflow_id
 
@@ -99,7 +112,7 @@ class ListWorkflowExecutionsRequest:
         分页查询，每页显示的条目数量，最大数量200，超过200后只返回200
 
         :param limit: The limit of this ListWorkflowExecutionsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -121,7 +134,7 @@ class ListWorkflowExecutionsRequest:
         需要过滤的流程实例状态
 
         :param status: The status of this ListWorkflowExecutionsRequest.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -143,7 +156,7 @@ class ListWorkflowExecutionsRequest:
         查询开始时间，UTC时间。若起始时间未填写，以终止时间前推3天为起始时间
 
         :param start_time: The start_time of this ListWorkflowExecutionsRequest.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -165,7 +178,7 @@ class ListWorkflowExecutionsRequest:
         查询开始时间，UTC时间。若终止时间未填写，以起始时间后退3天未终止时间。若均未填写，默认查询最近3天数据。
 
         :param end_time: The end_time of this ListWorkflowExecutionsRequest.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 

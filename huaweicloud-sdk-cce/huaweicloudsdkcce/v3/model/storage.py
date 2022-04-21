@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Storage:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Storage:
     }
 
     def __init__(self, storage_selectors=None, storage_groups=None):
-        """Storage - a model defined in huaweicloud sdk"""
+        """Storage
+
+        The model defined in huaweicloud sdk
+
+        :param storage_selectors: 磁盘选择，根据matchLabels和storageType对匹配的磁盘进行管理。磁盘匹配存在先后顺序，靠前的匹配规则优先匹配。
+        :type storage_selectors: list[:class:`huaweicloudsdkcce.v3.StorageSelectors`]
+        :param storage_groups: 由多个存储设备组成的存储组，用于各个存储空间的划分。
+        :type storage_groups: list[:class:`huaweicloudsdkcce.v3.StorageGroups`]
+        """
         
         
 
@@ -50,7 +57,7 @@ class Storage:
         磁盘选择，根据matchLabels和storageType对匹配的磁盘进行管理。磁盘匹配存在先后顺序，靠前的匹配规则优先匹配。
 
         :return: The storage_selectors of this Storage.
-        :rtype: list[StorageSelectors]
+        :rtype: list[:class:`huaweicloudsdkcce.v3.StorageSelectors`]
         """
         return self._storage_selectors
 
@@ -61,7 +68,7 @@ class Storage:
         磁盘选择，根据matchLabels和storageType对匹配的磁盘进行管理。磁盘匹配存在先后顺序，靠前的匹配规则优先匹配。
 
         :param storage_selectors: The storage_selectors of this Storage.
-        :type: list[StorageSelectors]
+        :type storage_selectors: list[:class:`huaweicloudsdkcce.v3.StorageSelectors`]
         """
         self._storage_selectors = storage_selectors
 
@@ -72,7 +79,7 @@ class Storage:
         由多个存储设备组成的存储组，用于各个存储空间的划分。
 
         :return: The storage_groups of this Storage.
-        :rtype: list[StorageGroups]
+        :rtype: list[:class:`huaweicloudsdkcce.v3.StorageGroups`]
         """
         return self._storage_groups
 
@@ -83,7 +90,7 @@ class Storage:
         由多个存储设备组成的存储组，用于各个存储空间的划分。
 
         :param storage_groups: The storage_groups of this Storage.
-        :type: list[StorageGroups]
+        :type storage_groups: list[:class:`huaweicloudsdkcce.v3.StorageGroups`]
         """
         self._storage_groups = storage_groups
 

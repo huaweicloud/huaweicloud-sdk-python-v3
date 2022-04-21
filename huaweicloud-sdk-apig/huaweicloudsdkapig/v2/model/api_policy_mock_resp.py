@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApiPolicyMockResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ApiPolicyMockResp:
     }
 
     def __init__(self, id=None, effect_mode=None, name=None, backend_params=None, conditions=None, authorizer_id=None, result_content=None):
-        """ApiPolicyMockResp - a model defined in huaweicloud sdk"""
+        """ApiPolicyMockResp
+
+        The model defined in huaweicloud sdk
+
+        :param id: 编号
+        :type id: str
+        :param effect_mode: 关联的策略组合模式： - ALL：满足全部条件 - ANY：满足任一条件
+        :type effect_mode: str
+        :param name: 策略后端名称。字符串由中文、英文字母、数字、下划线组成，且只能以中文或英文开头。
+        :type name: str
+        :param backend_params: 后端参数列表
+        :type backend_params: list[:class:`huaweicloudsdkapig.v2.BackendParam`]
+        :param conditions: 策略条件列表
+        :type conditions: list[:class:`huaweicloudsdkapig.v2.CoditionResp`]
+        :param authorizer_id: 后端自定义认证对象的ID
+        :type authorizer_id: str
+        :param result_content: 返回结果
+        :type result_content: str
+        """
         
         
 
@@ -85,7 +102,7 @@ class ApiPolicyMockResp:
         编号
 
         :param id: The id of this ApiPolicyMockResp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -107,7 +124,7 @@ class ApiPolicyMockResp:
         关联的策略组合模式： - ALL：满足全部条件 - ANY：满足任一条件
 
         :param effect_mode: The effect_mode of this ApiPolicyMockResp.
-        :type: str
+        :type effect_mode: str
         """
         self._effect_mode = effect_mode
 
@@ -129,7 +146,7 @@ class ApiPolicyMockResp:
         策略后端名称。字符串由中文、英文字母、数字、下划线组成，且只能以中文或英文开头。
 
         :param name: The name of this ApiPolicyMockResp.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -140,7 +157,7 @@ class ApiPolicyMockResp:
         后端参数列表
 
         :return: The backend_params of this ApiPolicyMockResp.
-        :rtype: list[BackendParam]
+        :rtype: list[:class:`huaweicloudsdkapig.v2.BackendParam`]
         """
         return self._backend_params
 
@@ -151,7 +168,7 @@ class ApiPolicyMockResp:
         后端参数列表
 
         :param backend_params: The backend_params of this ApiPolicyMockResp.
-        :type: list[BackendParam]
+        :type backend_params: list[:class:`huaweicloudsdkapig.v2.BackendParam`]
         """
         self._backend_params = backend_params
 
@@ -162,7 +179,7 @@ class ApiPolicyMockResp:
         策略条件列表
 
         :return: The conditions of this ApiPolicyMockResp.
-        :rtype: list[CoditionResp]
+        :rtype: list[:class:`huaweicloudsdkapig.v2.CoditionResp`]
         """
         return self._conditions
 
@@ -173,7 +190,7 @@ class ApiPolicyMockResp:
         策略条件列表
 
         :param conditions: The conditions of this ApiPolicyMockResp.
-        :type: list[CoditionResp]
+        :type conditions: list[:class:`huaweicloudsdkapig.v2.CoditionResp`]
         """
         self._conditions = conditions
 
@@ -195,7 +212,7 @@ class ApiPolicyMockResp:
         后端自定义认证对象的ID
 
         :param authorizer_id: The authorizer_id of this ApiPolicyMockResp.
-        :type: str
+        :type authorizer_id: str
         """
         self._authorizer_id = authorizer_id
 
@@ -217,7 +234,7 @@ class ApiPolicyMockResp:
         返回结果
 
         :param result_content: The result_content of this ApiPolicyMockResp.
-        :type: str
+        :type result_content: str
         """
         self._result_content = result_content
 

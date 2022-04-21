@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NodeResTag:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class NodeResTag:
     }
 
     def __init__(self, key=None, value=None):
-        """NodeResTag - a model defined in huaweicloud sdk"""
+        """NodeResTag
+
+        The model defined in huaweicloud sdk
+
+        :param key: 键。最大长度36个unicode字符。 不能为空，只能包含大小写字母，数字，中划线“-”，下划线“_”。
+        :type key: str
+        :param value: 值。每个值最大长度43个unicode字符，删除时如果value有值按照key/value删除，如果value没值，则按照key删除。 不能为空，只能包含大小写字母，数字，中划线“-”，下划线“_”。
+        :type value: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class NodeResTag:
         键。最大长度36个unicode字符。 不能为空，只能包含大小写字母，数字，中划线“-”，下划线“_”。
 
         :param key: The key of this NodeResTag.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -85,7 +92,7 @@ class NodeResTag:
         值。每个值最大长度43个unicode字符，删除时如果value有值按照key/value删除，如果value没值，则按照key删除。 不能为空，只能包含大小写字母，数字，中划线“-”，下划线“_”。
 
         :param value: The value of this NodeResTag.
-        :type: str
+        :type value: str
         """
         self._value = value
 

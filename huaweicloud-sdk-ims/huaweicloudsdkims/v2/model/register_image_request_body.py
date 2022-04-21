@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RegisterImageRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RegisterImageRequestBody:
     }
 
     def __init__(self, image_url=None):
-        """RegisterImageRequestBody - a model defined in huaweicloud sdk"""
+        """RegisterImageRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param image_url: 源镜像的URL，格式：&lt;bucket&gt;:&lt;file&gt; image_url对应的镜像桶中的文件，镜像文件格式的取值范围为：ZVHD、QCOW2、VHD、RAW、VHDX、QED、VDI、QCOW、ZVHD2、VMDK。
+        :type image_url: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class RegisterImageRequestBody:
         源镜像的URL，格式：<bucket>:<file> image_url对应的镜像桶中的文件，镜像文件格式的取值范围为：ZVHD、QCOW2、VHD、RAW、VHDX、QED、VDI、QCOW、ZVHD2、VMDK。
 
         :param image_url: The image_url of this RegisterImageRequestBody.
-        :type: str
+        :type image_url: str
         """
         self._image_url = image_url
 

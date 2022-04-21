@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DefaultRootDb:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DefaultRootDb:
     }
 
     def __init__(self, db_name=None, db_encoding=None):
-        """DefaultRootDb - a model defined in huaweicloud sdk"""
+        """DefaultRootDb
+
+        The model defined in huaweicloud sdk
+
+        :param db_name: 库名。
+        :type db_name: str
+        :param db_encoding: 编码格式。
+        :type db_encoding: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class DefaultRootDb:
         库名。
 
         :param db_name: The db_name of this DefaultRootDb.
-        :type: str
+        :type db_name: str
         """
         self._db_name = db_name
 
@@ -85,7 +92,7 @@ class DefaultRootDb:
         编码格式。
 
         :param db_encoding: The db_encoding of this DefaultRootDb.
-        :type: str
+        :type db_encoding: str
         """
         self._db_encoding = db_encoding
 

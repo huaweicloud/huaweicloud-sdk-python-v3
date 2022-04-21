@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CommandTimeTaken:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class CommandTimeTaken:
     }
 
     def __init__(self, calls_sum=None, usec_sum=None, command_name=None, per_usec=None, average_usec=None):
-        """CommandTimeTaken - a model defined in huaweicloud sdk"""
+        """CommandTimeTaken
+
+        The model defined in huaweicloud sdk
+
+        :param calls_sum: 调用次数
+        :type calls_sum: int
+        :param usec_sum: 耗时总数
+        :type usec_sum: float
+        :param command_name: 命令名称
+        :type command_name: str
+        :param per_usec: 耗时占比
+        :type per_usec: str
+        :param average_usec: 每次调用平均耗时
+        :type average_usec: float
+        """
         
         
 
@@ -73,7 +86,7 @@ class CommandTimeTaken:
         调用次数
 
         :param calls_sum: The calls_sum of this CommandTimeTaken.
-        :type: int
+        :type calls_sum: int
         """
         self._calls_sum = calls_sum
 
@@ -95,7 +108,7 @@ class CommandTimeTaken:
         耗时总数
 
         :param usec_sum: The usec_sum of this CommandTimeTaken.
-        :type: float
+        :type usec_sum: float
         """
         self._usec_sum = usec_sum
 
@@ -117,7 +130,7 @@ class CommandTimeTaken:
         命令名称
 
         :param command_name: The command_name of this CommandTimeTaken.
-        :type: str
+        :type command_name: str
         """
         self._command_name = command_name
 
@@ -139,7 +152,7 @@ class CommandTimeTaken:
         耗时占比
 
         :param per_usec: The per_usec of this CommandTimeTaken.
-        :type: str
+        :type per_usec: str
         """
         self._per_usec = per_usec
 
@@ -161,7 +174,7 @@ class CommandTimeTaken:
         每次调用平均耗时
 
         :param average_usec: The average_usec of this CommandTimeTaken.
-        :type: float
+        :type average_usec: float
         """
         self._average_usec = average_usec
 

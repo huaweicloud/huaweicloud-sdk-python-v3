@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateTrackerRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class UpdateTrackerRequestBody:
     }
 
     def __init__(self, tracker_type=None, tracker_name=None, status=None, is_lts_enabled=None, obs_info=None, is_support_trace_files_encryption=None, kms_id=None, is_support_validate=None, data_bucket=None):
-        """UpdateTrackerRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateTrackerRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param tracker_type: 标识追踪器类型。 目前支持系统追踪器类型有管理类追踪器(system)和数据类追踪器(data)。 数据类追踪器和管理类追踪器共同参数有：is_lts_enabled, obs_info; 管理类追踪器参数：is_support_trace_files_encryption, kms_id, is_support_validate, is_support_validate; 数据类追踪器参数：tracker_name, data_bucket。
+        :type tracker_type: str
+        :param tracker_name: 标识追踪器名称。 当\&quot;tracker_type\&quot;参数值为\&quot;system\&quot;时该参数为默认值\&quot;system\&quot;。 当\&quot;tracker_type\&quot;参数值为\&quot;data\&quot;时该参数需要指定追踪器名称\&quot;。
+        :type tracker_name: str
+        :param status: 标识追踪器状态，该接口中可修改的状态包括正常（enabled）和停止（disabled）。如果选择修改状态为停止，则修改成功后追踪器停止记录事件。
+        :type status: str
+        :param is_lts_enabled: 是否打开事件分析。
+        :type is_lts_enabled: bool
+        :param obs_info: 
+        :type obs_info: :class:`huaweicloudsdkcts.v3.TrackerObsInfo`
+        :param is_support_trace_files_encryption: 事件文件转储加密功能开关。 当\&quot;tracker_type\&quot;参数值为\&quot;system\&quot;时该参数值有效。 该参数必须与kms_id参数同时使用。
+        :type is_support_trace_files_encryption: bool
+        :param kms_id: 事件文件转储加密所采用的秘钥id（从KMS获取）。 当\&quot;tracker_type\&quot;参数值为\&quot;system\&quot;时该参数值有效。 当\&quot;is_support_trace_files_encryption\&quot;参数值为“是”时，此参数为必选项。
+        :type kms_id: str
+        :param is_support_validate: 事件文件转储时是否打开事件文件校验。 当\&quot;tracker_type\&quot;参数值为\&quot;system\&quot;时该参数值有效。
+        :type is_support_validate: bool
+        :param data_bucket: 
+        :type data_bucket: :class:`huaweicloudsdkcts.v3.DataBucket`
+        """
         
         
 
@@ -96,7 +117,7 @@ class UpdateTrackerRequestBody:
         标识追踪器类型。 目前支持系统追踪器类型有管理类追踪器(system)和数据类追踪器(data)。 数据类追踪器和管理类追踪器共同参数有：is_lts_enabled, obs_info; 管理类追踪器参数：is_support_trace_files_encryption, kms_id, is_support_validate, is_support_validate; 数据类追踪器参数：tracker_name, data_bucket。
 
         :param tracker_type: The tracker_type of this UpdateTrackerRequestBody.
-        :type: str
+        :type tracker_type: str
         """
         self._tracker_type = tracker_type
 
@@ -118,7 +139,7 @@ class UpdateTrackerRequestBody:
         标识追踪器名称。 当\"tracker_type\"参数值为\"system\"时该参数为默认值\"system\"。 当\"tracker_type\"参数值为\"data\"时该参数需要指定追踪器名称\"。
 
         :param tracker_name: The tracker_name of this UpdateTrackerRequestBody.
-        :type: str
+        :type tracker_name: str
         """
         self._tracker_name = tracker_name
 
@@ -140,7 +161,7 @@ class UpdateTrackerRequestBody:
         标识追踪器状态，该接口中可修改的状态包括正常（enabled）和停止（disabled）。如果选择修改状态为停止，则修改成功后追踪器停止记录事件。
 
         :param status: The status of this UpdateTrackerRequestBody.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -162,7 +183,7 @@ class UpdateTrackerRequestBody:
         是否打开事件分析。
 
         :param is_lts_enabled: The is_lts_enabled of this UpdateTrackerRequestBody.
-        :type: bool
+        :type is_lts_enabled: bool
         """
         self._is_lts_enabled = is_lts_enabled
 
@@ -172,7 +193,7 @@ class UpdateTrackerRequestBody:
 
 
         :return: The obs_info of this UpdateTrackerRequestBody.
-        :rtype: TrackerObsInfo
+        :rtype: :class:`huaweicloudsdkcts.v3.TrackerObsInfo`
         """
         return self._obs_info
 
@@ -182,7 +203,7 @@ class UpdateTrackerRequestBody:
 
 
         :param obs_info: The obs_info of this UpdateTrackerRequestBody.
-        :type: TrackerObsInfo
+        :type obs_info: :class:`huaweicloudsdkcts.v3.TrackerObsInfo`
         """
         self._obs_info = obs_info
 
@@ -204,7 +225,7 @@ class UpdateTrackerRequestBody:
         事件文件转储加密功能开关。 当\"tracker_type\"参数值为\"system\"时该参数值有效。 该参数必须与kms_id参数同时使用。
 
         :param is_support_trace_files_encryption: The is_support_trace_files_encryption of this UpdateTrackerRequestBody.
-        :type: bool
+        :type is_support_trace_files_encryption: bool
         """
         self._is_support_trace_files_encryption = is_support_trace_files_encryption
 
@@ -226,7 +247,7 @@ class UpdateTrackerRequestBody:
         事件文件转储加密所采用的秘钥id（从KMS获取）。 当\"tracker_type\"参数值为\"system\"时该参数值有效。 当\"is_support_trace_files_encryption\"参数值为“是”时，此参数为必选项。
 
         :param kms_id: The kms_id of this UpdateTrackerRequestBody.
-        :type: str
+        :type kms_id: str
         """
         self._kms_id = kms_id
 
@@ -248,7 +269,7 @@ class UpdateTrackerRequestBody:
         事件文件转储时是否打开事件文件校验。 当\"tracker_type\"参数值为\"system\"时该参数值有效。
 
         :param is_support_validate: The is_support_validate of this UpdateTrackerRequestBody.
-        :type: bool
+        :type is_support_validate: bool
         """
         self._is_support_validate = is_support_validate
 
@@ -258,7 +279,7 @@ class UpdateTrackerRequestBody:
 
 
         :return: The data_bucket of this UpdateTrackerRequestBody.
-        :rtype: DataBucket
+        :rtype: :class:`huaweicloudsdkcts.v3.DataBucket`
         """
         return self._data_bucket
 
@@ -268,7 +289,7 @@ class UpdateTrackerRequestBody:
 
 
         :param data_bucket: The data_bucket of this UpdateTrackerRequestBody.
-        :type: DataBucket
+        :type data_bucket: :class:`huaweicloudsdkcts.v3.DataBucket`
         """
         self._data_bucket = data_bucket
 

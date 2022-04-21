@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BoundingBox:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class BoundingBox:
     }
 
     def __init__(self, width=None, top_left_y=None, top_left_x=None, height=None):
-        """BoundingBox - a model defined in huaweicloud sdk"""
+        """BoundingBox
+
+        The model defined in huaweicloud sdk
+
+        :param width: 矩形框宽度。
+        :type width: int
+        :param top_left_y: 矩形框左上角纵坐标。
+        :type top_left_y: int
+        :param top_left_x: 矩形框左上角横坐标。
+        :type top_left_x: int
+        :param height: 矩形框高度。
+        :type height: int
+        """
         
         
 
@@ -69,7 +80,7 @@ class BoundingBox:
         矩形框宽度。
 
         :param width: The width of this BoundingBox.
-        :type: int
+        :type width: int
         """
         self._width = width
 
@@ -91,7 +102,7 @@ class BoundingBox:
         矩形框左上角纵坐标。
 
         :param top_left_y: The top_left_y of this BoundingBox.
-        :type: int
+        :type top_left_y: int
         """
         self._top_left_y = top_left_y
 
@@ -113,7 +124,7 @@ class BoundingBox:
         矩形框左上角横坐标。
 
         :param top_left_x: The top_left_x of this BoundingBox.
-        :type: int
+        :type top_left_x: int
         """
         self._top_left_x = top_left_x
 
@@ -135,7 +146,7 @@ class BoundingBox:
         矩形框高度。
 
         :param height: The height of this BoundingBox.
-        :type: int
+        :type height: int
         """
         self._height = height
 

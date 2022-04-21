@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowPipleineStatusResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class ShowPipleineStatusResponse(SdkResponse):
     }
 
     def __init__(self, pipeline_id=None, pipeline_name=None, executor=None, build_id=None, start_time=None, end_time=None, parameters=None, states=None, elapsed_time=None, status=None, outcome=None, detail_url=None):
-        """ShowPipleineStatusResponse - a model defined in huaweicloud sdk"""
+        """ShowPipleineStatusResponse
+
+        The model defined in huaweicloud sdk
+
+        :param pipeline_id: 流水线ID
+        :type pipeline_id: str
+        :param pipeline_name: 流水线名称
+        :type pipeline_name: str
+        :param executor: 执行人
+        :type executor: str
+        :param build_id: 流水线执行ID
+        :type build_id: str
+        :param start_time: 开始执行时间
+        :type start_time: str
+        :param end_time: 结束执行时间
+        :type end_time: str
+        :param parameters: 流水线参数
+        :type parameters: list[:class:`huaweicloudsdkcloudpipeline.v2.PipelineParameter`]
+        :param states: 流水线执行情况
+        :type states: list[:class:`huaweicloudsdkcloudpipeline.v2.PipelineStateStatus`]
+        :param elapsed_time: 执行耗时
+        :type elapsed_time: str
+        :param status: 流水线运行状态
+        :type status: str
+        :param outcome: 流水线执行结果
+        :type outcome: str
+        :param detail_url: 流水线详情页地址
+        :type detail_url: str
+        """
         
         super(ShowPipleineStatusResponse, self).__init__()
 
@@ -113,7 +140,7 @@ class ShowPipleineStatusResponse(SdkResponse):
         流水线ID
 
         :param pipeline_id: The pipeline_id of this ShowPipleineStatusResponse.
-        :type: str
+        :type pipeline_id: str
         """
         self._pipeline_id = pipeline_id
 
@@ -135,7 +162,7 @@ class ShowPipleineStatusResponse(SdkResponse):
         流水线名称
 
         :param pipeline_name: The pipeline_name of this ShowPipleineStatusResponse.
-        :type: str
+        :type pipeline_name: str
         """
         self._pipeline_name = pipeline_name
 
@@ -157,7 +184,7 @@ class ShowPipleineStatusResponse(SdkResponse):
         执行人
 
         :param executor: The executor of this ShowPipleineStatusResponse.
-        :type: str
+        :type executor: str
         """
         self._executor = executor
 
@@ -179,7 +206,7 @@ class ShowPipleineStatusResponse(SdkResponse):
         流水线执行ID
 
         :param build_id: The build_id of this ShowPipleineStatusResponse.
-        :type: str
+        :type build_id: str
         """
         self._build_id = build_id
 
@@ -201,7 +228,7 @@ class ShowPipleineStatusResponse(SdkResponse):
         开始执行时间
 
         :param start_time: The start_time of this ShowPipleineStatusResponse.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -223,7 +250,7 @@ class ShowPipleineStatusResponse(SdkResponse):
         结束执行时间
 
         :param end_time: The end_time of this ShowPipleineStatusResponse.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -234,7 +261,7 @@ class ShowPipleineStatusResponse(SdkResponse):
         流水线参数
 
         :return: The parameters of this ShowPipleineStatusResponse.
-        :rtype: list[PipelineParameter]
+        :rtype: list[:class:`huaweicloudsdkcloudpipeline.v2.PipelineParameter`]
         """
         return self._parameters
 
@@ -245,7 +272,7 @@ class ShowPipleineStatusResponse(SdkResponse):
         流水线参数
 
         :param parameters: The parameters of this ShowPipleineStatusResponse.
-        :type: list[PipelineParameter]
+        :type parameters: list[:class:`huaweicloudsdkcloudpipeline.v2.PipelineParameter`]
         """
         self._parameters = parameters
 
@@ -256,7 +283,7 @@ class ShowPipleineStatusResponse(SdkResponse):
         流水线执行情况
 
         :return: The states of this ShowPipleineStatusResponse.
-        :rtype: list[PipelineStateStatus]
+        :rtype: list[:class:`huaweicloudsdkcloudpipeline.v2.PipelineStateStatus`]
         """
         return self._states
 
@@ -267,7 +294,7 @@ class ShowPipleineStatusResponse(SdkResponse):
         流水线执行情况
 
         :param states: The states of this ShowPipleineStatusResponse.
-        :type: list[PipelineStateStatus]
+        :type states: list[:class:`huaweicloudsdkcloudpipeline.v2.PipelineStateStatus`]
         """
         self._states = states
 
@@ -289,7 +316,7 @@ class ShowPipleineStatusResponse(SdkResponse):
         执行耗时
 
         :param elapsed_time: The elapsed_time of this ShowPipleineStatusResponse.
-        :type: str
+        :type elapsed_time: str
         """
         self._elapsed_time = elapsed_time
 
@@ -311,7 +338,7 @@ class ShowPipleineStatusResponse(SdkResponse):
         流水线运行状态
 
         :param status: The status of this ShowPipleineStatusResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -333,7 +360,7 @@ class ShowPipleineStatusResponse(SdkResponse):
         流水线执行结果
 
         :param outcome: The outcome of this ShowPipleineStatusResponse.
-        :type: str
+        :type outcome: str
         """
         self._outcome = outcome
 
@@ -355,7 +382,7 @@ class ShowPipleineStatusResponse(SdkResponse):
         流水线详情页地址
 
         :param detail_url: The detail_url of this ShowPipleineStatusResponse.
-        :type: str
+        :type detail_url: str
         """
         self._detail_url = detail_url
 

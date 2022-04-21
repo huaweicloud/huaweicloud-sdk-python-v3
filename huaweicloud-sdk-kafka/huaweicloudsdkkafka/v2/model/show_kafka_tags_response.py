@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowKafkaTagsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowKafkaTagsResponse(SdkResponse):
     }
 
     def __init__(self, tags=None):
-        """ShowKafkaTagsResponse - a model defined in huaweicloud sdk"""
+        """ShowKafkaTagsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param tags: 标签列表
+        :type tags: list[:class:`huaweicloudsdkkafka.v2.TagEntity`]
+        """
         
         super(ShowKafkaTagsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ShowKafkaTagsResponse(SdkResponse):
         标签列表
 
         :return: The tags of this ShowKafkaTagsResponse.
-        :rtype: list[TagEntity]
+        :rtype: list[:class:`huaweicloudsdkkafka.v2.TagEntity`]
         """
         return self._tags
 
@@ -58,7 +63,7 @@ class ShowKafkaTagsResponse(SdkResponse):
         标签列表
 
         :param tags: The tags of this ShowKafkaTagsResponse.
-        :type: list[TagEntity]
+        :type tags: list[:class:`huaweicloudsdkkafka.v2.TagEntity`]
         """
         self._tags = tags
 

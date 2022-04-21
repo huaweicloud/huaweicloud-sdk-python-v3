@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateAssetByFileUploadResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class CreateAssetByFileUploadResponse(SdkResponse):
     }
 
     def __init__(self, asset_id=None, video_upload_url=None, cover_upload_url=None, subtitle_upload_urls=None, target=None):
-        """CreateAssetByFileUploadResponse - a model defined in huaweicloud sdk"""
+        """CreateAssetByFileUploadResponse
+
+        The model defined in huaweicloud sdk
+
+        :param asset_id: 媒体ID 
+        :type asset_id: str
+        :param video_upload_url: 视频上传URL 
+        :type video_upload_url: str
+        :param cover_upload_url: 封面上传地址 
+        :type cover_upload_url: str
+        :param subtitle_upload_urls: 字幕文件上传url数组 
+        :type subtitle_upload_urls: list[str]
+        :param target: 
+        :type target: :class:`huaweicloudsdkvod.v1.FileAddr`
+        """
         
         super(CreateAssetByFileUploadResponse, self).__init__()
 
@@ -78,7 +91,7 @@ class CreateAssetByFileUploadResponse(SdkResponse):
         媒体ID 
 
         :param asset_id: The asset_id of this CreateAssetByFileUploadResponse.
-        :type: str
+        :type asset_id: str
         """
         self._asset_id = asset_id
 
@@ -100,7 +113,7 @@ class CreateAssetByFileUploadResponse(SdkResponse):
         视频上传URL 
 
         :param video_upload_url: The video_upload_url of this CreateAssetByFileUploadResponse.
-        :type: str
+        :type video_upload_url: str
         """
         self._video_upload_url = video_upload_url
 
@@ -122,7 +135,7 @@ class CreateAssetByFileUploadResponse(SdkResponse):
         封面上传地址 
 
         :param cover_upload_url: The cover_upload_url of this CreateAssetByFileUploadResponse.
-        :type: str
+        :type cover_upload_url: str
         """
         self._cover_upload_url = cover_upload_url
 
@@ -144,7 +157,7 @@ class CreateAssetByFileUploadResponse(SdkResponse):
         字幕文件上传url数组 
 
         :param subtitle_upload_urls: The subtitle_upload_urls of this CreateAssetByFileUploadResponse.
-        :type: list[str]
+        :type subtitle_upload_urls: list[str]
         """
         self._subtitle_upload_urls = subtitle_upload_urls
 
@@ -154,7 +167,7 @@ class CreateAssetByFileUploadResponse(SdkResponse):
 
 
         :return: The target of this CreateAssetByFileUploadResponse.
-        :rtype: FileAddr
+        :rtype: :class:`huaweicloudsdkvod.v1.FileAddr`
         """
         return self._target
 
@@ -164,7 +177,7 @@ class CreateAssetByFileUploadResponse(SdkResponse):
 
 
         :param target: The target of this CreateAssetByFileUploadResponse.
-        :type: FileAddr
+        :type target: :class:`huaweicloudsdkvod.v1.FileAddr`
         """
         self._target = target
 

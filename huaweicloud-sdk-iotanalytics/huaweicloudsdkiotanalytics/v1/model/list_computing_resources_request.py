@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListComputingResourcesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListComputingResourcesRequest:
     }
 
     def __init__(self, computing_resource_name=None, offset=None, limit=None):
-        """ListComputingResourcesRequest - a model defined in huaweicloud sdk"""
+        """ListComputingResourcesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param computing_resource_name: 计算资源名称。
+        :type computing_resource_name: str
+        :param offset: 当前偏移量，默认为0。
+        :type offset: int
+        :param limit: 每页显示的最大作业个数，范围: [1, 100]。默认值：10。
+        :type limit: int
+        """
         
         
 
@@ -68,7 +77,7 @@ class ListComputingResourcesRequest:
         计算资源名称。
 
         :param computing_resource_name: The computing_resource_name of this ListComputingResourcesRequest.
-        :type: str
+        :type computing_resource_name: str
         """
         self._computing_resource_name = computing_resource_name
 
@@ -90,7 +99,7 @@ class ListComputingResourcesRequest:
         当前偏移量，默认为0。
 
         :param offset: The offset of this ListComputingResourcesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -112,7 +121,7 @@ class ListComputingResourcesRequest:
         每页显示的最大作业个数，范围: [1, 100]。默认值：10。
 
         :param limit: The limit of this ListComputingResourcesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

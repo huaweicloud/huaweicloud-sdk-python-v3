@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateQueueRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateQueueRequest:
     }
 
     def __init__(self, body=None):
-        """CreateQueueRequest - a model defined in huaweicloud sdk"""
+        """CreateQueueRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateQueueRequest
+        :type body: :class:`huaweicloudsdkdms.v2.CreateQueueReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateQueueRequest:
 
 
         :return: The body of this CreateQueueRequest.
-        :rtype: CreateQueueReq
+        :rtype: :class:`huaweicloudsdkdms.v2.CreateQueueReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateQueueRequest:
 
 
         :param body: The body of this CreateQueueRequest.
-        :type: CreateQueueReq
+        :type body: :class:`huaweicloudsdkdms.v2.CreateQueueReq`
         """
         self._body = body
 

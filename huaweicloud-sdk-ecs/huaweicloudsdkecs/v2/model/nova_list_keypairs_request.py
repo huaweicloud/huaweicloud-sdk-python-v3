@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NovaListKeypairsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class NovaListKeypairsRequest:
     }
 
     def __init__(self, limit=None, marker=None, open_stack_api_version=None):
-        """NovaListKeypairsRequest - a model defined in huaweicloud sdk"""
+        """NovaListKeypairsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 查询返回秘钥数量限制。  在微版本2.35后支持
+        :type limit: int
+        :param marker: 从marker指定的keypair的名称的下一条数据开始查询。  在微版本2.35后支持。
+        :type marker: str
+        :param open_stack_api_version: 微版本头
+        :type open_stack_api_version: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class NovaListKeypairsRequest:
         查询返回秘钥数量限制。  在微版本2.35后支持
 
         :param limit: The limit of this NovaListKeypairsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -90,7 +99,7 @@ class NovaListKeypairsRequest:
         从marker指定的keypair的名称的下一条数据开始查询。  在微版本2.35后支持。
 
         :param marker: The marker of this NovaListKeypairsRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -112,7 +121,7 @@ class NovaListKeypairsRequest:
         微版本头
 
         :param open_stack_api_version: The open_stack_api_version of this NovaListKeypairsRequest.
-        :type: str
+        :type open_stack_api_version: str
         """
         self._open_stack_api_version = open_stack_api_version
 

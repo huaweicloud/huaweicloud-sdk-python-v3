@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SeriesQueryItemResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class SeriesQueryItemResult:
     }
 
     def __init__(self, namespace=None, dimensions=None, metric_name=None, unit=None, dimension_value_hash=None):
-        """SeriesQueryItemResult - a model defined in huaweicloud sdk"""
+        """SeriesQueryItemResult
+
+        The model defined in huaweicloud sdk
+
+        :param namespace: 命名空间。
+        :type namespace: str
+        :param dimensions: 维度列表。
+        :type dimensions: list[:class:`huaweicloudsdkaom.v2.DimensionSeries`]
+        :param metric_name: 时间序列名称。
+        :type metric_name: str
+        :param unit: 时间序列单位。
+        :type unit: str
+        :param dimension_value_hash: 时间序列哈希值。
+        :type dimension_value_hash: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class SeriesQueryItemResult:
         命名空间。
 
         :param namespace: The namespace of this SeriesQueryItemResult.
-        :type: str
+        :type namespace: str
         """
         self._namespace = namespace
 
@@ -89,7 +102,7 @@ class SeriesQueryItemResult:
         维度列表。
 
         :return: The dimensions of this SeriesQueryItemResult.
-        :rtype: list[DimensionSeries]
+        :rtype: list[:class:`huaweicloudsdkaom.v2.DimensionSeries`]
         """
         return self._dimensions
 
@@ -100,7 +113,7 @@ class SeriesQueryItemResult:
         维度列表。
 
         :param dimensions: The dimensions of this SeriesQueryItemResult.
-        :type: list[DimensionSeries]
+        :type dimensions: list[:class:`huaweicloudsdkaom.v2.DimensionSeries`]
         """
         self._dimensions = dimensions
 
@@ -122,7 +135,7 @@ class SeriesQueryItemResult:
         时间序列名称。
 
         :param metric_name: The metric_name of this SeriesQueryItemResult.
-        :type: str
+        :type metric_name: str
         """
         self._metric_name = metric_name
 
@@ -144,7 +157,7 @@ class SeriesQueryItemResult:
         时间序列单位。
 
         :param unit: The unit of this SeriesQueryItemResult.
-        :type: str
+        :type unit: str
         """
         self._unit = unit
 
@@ -166,7 +179,7 @@ class SeriesQueryItemResult:
         时间序列哈希值。
 
         :param dimension_value_hash: The dimension_value_hash of this SeriesQueryItemResult.
-        :type: str
+        :type dimension_value_hash: str
         """
         self._dimension_value_hash = dimension_value_hash
 

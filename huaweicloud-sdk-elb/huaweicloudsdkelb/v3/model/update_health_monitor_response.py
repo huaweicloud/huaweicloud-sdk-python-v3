@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateHealthMonitorResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateHealthMonitorResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, healthmonitor=None):
-        """UpdateHealthMonitorResponse - a model defined in huaweicloud sdk"""
+        """UpdateHealthMonitorResponse
+
+        The model defined in huaweicloud sdk
+
+        :param request_id: 请求ID。  注：自动生成 。
+        :type request_id: str
+        :param healthmonitor: 
+        :type healthmonitor: :class:`huaweicloudsdkelb.v3.HealthMonitor`
+        """
         
         super(UpdateHealthMonitorResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class UpdateHealthMonitorResponse(SdkResponse):
         请求ID。  注：自动生成 。
 
         :param request_id: The request_id of this UpdateHealthMonitorResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 
@@ -73,7 +80,7 @@ class UpdateHealthMonitorResponse(SdkResponse):
 
 
         :return: The healthmonitor of this UpdateHealthMonitorResponse.
-        :rtype: HealthMonitor
+        :rtype: :class:`huaweicloudsdkelb.v3.HealthMonitor`
         """
         return self._healthmonitor
 
@@ -83,7 +90,7 @@ class UpdateHealthMonitorResponse(SdkResponse):
 
 
         :param healthmonitor: The healthmonitor of this UpdateHealthMonitorResponse.
-        :type: HealthMonitor
+        :type healthmonitor: :class:`huaweicloudsdkelb.v3.HealthMonitor`
         """
         self._healthmonitor = healthmonitor
 

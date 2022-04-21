@@ -52,21 +52,17 @@ class KpsClient(Client):
         """绑定SSH密钥对
 
         给指定的虚拟机绑定（替换或重置，替换需提供虚拟机已配置的SSH密钥对私钥；重置不需要提供虚拟机的SSH密钥对私钥）新的SSH密钥对。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param AssociateKeypairRequest request
-        :return: AssociateKeypairResponse
+        :param request: Request instance for AssociateKeypair
+        :type request: :class:`huaweicloudsdkkps.v3.AssociateKeypairRequest`
+        :rtype: :class:`huaweicloudsdkkps.v3.AssociateKeypairResponse`
         """
         return self.associate_keypair_with_http_info(request)
 
     def associate_keypair_with_http_info(self, request):
-        """绑定SSH密钥对
-
-        给指定的虚拟机绑定（替换或重置，替换需提供虚拟机已配置的SSH密钥对私钥；重置不需要提供虚拟机的SSH密钥对私钥）新的SSH密钥对。
-
-        :param AssociateKeypairRequest request
-        :return: AssociateKeypairResponse
-        """
-
         all_params = ['associate_keypair_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -110,26 +106,21 @@ class KpsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_keypair(self, request):
         """创建和导入SSH密钥对
 
         创建和导入SSH密钥对
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateKeypairRequest request
-        :return: CreateKeypairResponse
+        :param request: Request instance for CreateKeypair
+        :type request: :class:`huaweicloudsdkkps.v3.CreateKeypairRequest`
+        :rtype: :class:`huaweicloudsdkkps.v3.CreateKeypairResponse`
         """
         return self.create_keypair_with_http_info(request)
 
     def create_keypair_with_http_info(self, request):
-        """创建和导入SSH密钥对
-
-        创建和导入SSH密钥对
-
-        :param CreateKeypairRequest request
-        :return: CreateKeypairResponse
-        """
-
         all_params = ['create_keypair_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -173,26 +164,21 @@ class KpsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_all_failed_task(self, request):
         """删除所有失败的任务
 
         删除操作失败的任务信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteAllFailedTaskRequest request
-        :return: DeleteAllFailedTaskResponse
+        :param request: Request instance for DeleteAllFailedTask
+        :type request: :class:`huaweicloudsdkkps.v3.DeleteAllFailedTaskRequest`
+        :rtype: :class:`huaweicloudsdkkps.v3.DeleteAllFailedTaskResponse`
         """
         return self.delete_all_failed_task_with_http_info(request)
 
     def delete_all_failed_task_with_http_info(self, request):
-        """删除所有失败的任务
-
-        删除操作失败的任务信息。
-
-        :param DeleteAllFailedTaskRequest request
-        :return: DeleteAllFailedTaskResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -234,26 +220,21 @@ class KpsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_failed_task(self, request):
         """删除失败的任务
 
         删除失败的任务。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteFailedTaskRequest request
-        :return: DeleteFailedTaskResponse
+        :param request: Request instance for DeleteFailedTask
+        :type request: :class:`huaweicloudsdkkps.v3.DeleteFailedTaskRequest`
+        :rtype: :class:`huaweicloudsdkkps.v3.DeleteFailedTaskResponse`
         """
         return self.delete_failed_task_with_http_info(request)
 
     def delete_failed_task_with_http_info(self, request):
-        """删除失败的任务
-
-        删除失败的任务。
-
-        :param DeleteFailedTaskRequest request
-        :return: DeleteFailedTaskResponse
-        """
-
         all_params = ['task_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -297,26 +278,21 @@ class KpsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_keypair(self, request):
         """删除SSH密钥对
 
         删除SSH密钥对。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteKeypairRequest request
-        :return: DeleteKeypairResponse
+        :param request: Request instance for DeleteKeypair
+        :type request: :class:`huaweicloudsdkkps.v3.DeleteKeypairRequest`
+        :rtype: :class:`huaweicloudsdkkps.v3.DeleteKeypairResponse`
         """
         return self.delete_keypair_with_http_info(request)
 
     def delete_keypair_with_http_info(self, request):
-        """删除SSH密钥对
-
-        删除SSH密钥对。
-
-        :param DeleteKeypairRequest request
-        :return: DeleteKeypairResponse
-        """
-
         all_params = ['keypair_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -360,26 +336,21 @@ class KpsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def disassociate_keypair(self, request):
         """解绑SSH密钥对
 
         给指定的虚拟机解除绑定SSH密钥对并恢复SSH密码登录。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DisassociateKeypairRequest request
-        :return: DisassociateKeypairResponse
+        :param request: Request instance for DisassociateKeypair
+        :type request: :class:`huaweicloudsdkkps.v3.DisassociateKeypairRequest`
+        :rtype: :class:`huaweicloudsdkkps.v3.DisassociateKeypairResponse`
         """
         return self.disassociate_keypair_with_http_info(request)
 
     def disassociate_keypair_with_http_info(self, request):
-        """解绑SSH密钥对
-
-        给指定的虚拟机解除绑定SSH密钥对并恢复SSH密码登录。
-
-        :param DisassociateKeypairRequest request
-        :return: DisassociateKeypairResponse
-        """
-
         all_params = ['disassociate_keypair_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -423,26 +394,21 @@ class KpsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_failed_task(self, request):
         """查询失败的任务信息
 
         查询绑定、解绑等操作失败的任务信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListFailedTaskRequest request
-        :return: ListFailedTaskResponse
+        :param request: Request instance for ListFailedTask
+        :type request: :class:`huaweicloudsdkkps.v3.ListFailedTaskRequest`
+        :rtype: :class:`huaweicloudsdkkps.v3.ListFailedTaskResponse`
         """
         return self.list_failed_task_with_http_info(request)
 
     def list_failed_task_with_http_info(self, request):
-        """查询失败的任务信息
-
-        查询绑定、解绑等操作失败的任务信息。
-
-        :param ListFailedTaskRequest request
-        :return: ListFailedTaskResponse
-        """
-
         all_params = ['limit', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -488,26 +454,21 @@ class KpsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_keypair_detail(self, request):
         """查询SSH密钥对详细信息
 
         查询SSH密钥对详细信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListKeypairDetailRequest request
-        :return: ListKeypairDetailResponse
+        :param request: Request instance for ListKeypairDetail
+        :type request: :class:`huaweicloudsdkkps.v3.ListKeypairDetailRequest`
+        :rtype: :class:`huaweicloudsdkkps.v3.ListKeypairDetailResponse`
         """
         return self.list_keypair_detail_with_http_info(request)
 
     def list_keypair_detail_with_http_info(self, request):
-        """查询SSH密钥对详细信息
-
-        查询SSH密钥对详细信息
-
-        :param ListKeypairDetailRequest request
-        :return: ListKeypairDetailResponse
-        """
-
         all_params = ['keypair_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -551,26 +512,21 @@ class KpsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_keypair_task(self, request):
         """查询任务信息
 
         根据SSH密钥对接口返回的task_id，查询SSH密钥对当前任务的执行状态。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListKeypairTaskRequest request
-        :return: ListKeypairTaskResponse
+        :param request: Request instance for ListKeypairTask
+        :type request: :class:`huaweicloudsdkkps.v3.ListKeypairTaskRequest`
+        :rtype: :class:`huaweicloudsdkkps.v3.ListKeypairTaskResponse`
         """
         return self.list_keypair_task_with_http_info(request)
 
     def list_keypair_task_with_http_info(self, request):
-        """查询任务信息
-
-        根据SSH密钥对接口返回的task_id，查询SSH密钥对当前任务的执行状态。
-
-        :param ListKeypairTaskRequest request
-        :return: ListKeypairTaskResponse
-        """
-
         all_params = ['task_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -614,26 +570,21 @@ class KpsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_keypairs(self, request):
         """查询SSH密钥对列表
 
         查询SSH密钥对列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListKeypairsRequest request
-        :return: ListKeypairsResponse
+        :param request: Request instance for ListKeypairs
+        :type request: :class:`huaweicloudsdkkps.v3.ListKeypairsRequest`
+        :rtype: :class:`huaweicloudsdkkps.v3.ListKeypairsResponse`
         """
         return self.list_keypairs_with_http_info(request)
 
     def list_keypairs_with_http_info(self, request):
-        """查询SSH密钥对列表
-
-        查询SSH密钥对列表
-
-        :param ListKeypairsRequest request
-        :return: ListKeypairsResponse
-        """
-
         all_params = ['limit', 'marker']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -679,26 +630,21 @@ class KpsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_running_task(self, request):
         """查询正在处理的任务信息
 
         查询正在处理的任务信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListRunningTaskRequest request
-        :return: ListRunningTaskResponse
+        :param request: Request instance for ListRunningTask
+        :type request: :class:`huaweicloudsdkkps.v3.ListRunningTaskRequest`
+        :rtype: :class:`huaweicloudsdkkps.v3.ListRunningTaskResponse`
         """
         return self.list_running_task_with_http_info(request)
 
     def list_running_task_with_http_info(self, request):
-        """查询正在处理的任务信息
-
-        查询正在处理的任务信息。
-
-        :param ListRunningTaskRequest request
-        :return: ListRunningTaskResponse
-        """
-
         all_params = ['limit', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -744,26 +690,21 @@ class KpsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_keypair_description(self, request):
         """更新SSH密钥对描述
 
         更新SSH密钥对描述。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateKeypairDescriptionRequest request
-        :return: UpdateKeypairDescriptionResponse
+        :param request: Request instance for UpdateKeypairDescription
+        :type request: :class:`huaweicloudsdkkps.v3.UpdateKeypairDescriptionRequest`
+        :rtype: :class:`huaweicloudsdkkps.v3.UpdateKeypairDescriptionResponse`
         """
         return self.update_keypair_description_with_http_info(request)
 
     def update_keypair_description_with_http_info(self, request):
-        """更新SSH密钥对描述
-
-        更新SSH密钥对描述。
-
-        :param UpdateKeypairDescriptionRequest request
-        :return: UpdateKeypairDescriptionResponse
-        """
-
         all_params = ['keypair_name', 'update_keypair_description_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -808,7 +749,6 @@ class KpsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

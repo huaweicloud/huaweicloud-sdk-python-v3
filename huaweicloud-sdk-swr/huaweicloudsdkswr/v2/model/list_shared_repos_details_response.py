@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSharedReposDetailsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListSharedReposDetailsResponse(SdkResponse):
     }
 
     def __init__(self, body=None, content_range=None):
-        """ListSharedReposDetailsResponse - a model defined in huaweicloud sdk"""
+        """ListSharedReposDetailsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param body: 
+        :type body: list[:class:`huaweicloudsdkswr.v2.ShowReposResp`]
+        :param content_range: 
+        :type content_range: str
+        """
         
         super(ListSharedReposDetailsResponse, self).__init__()
 
@@ -51,7 +58,7 @@ class ListSharedReposDetailsResponse(SdkResponse):
 
 
         :return: The body of this ListSharedReposDetailsResponse.
-        :rtype: list[ShowReposResp]
+        :rtype: list[:class:`huaweicloudsdkswr.v2.ShowReposResp`]
         """
         return self._body
 
@@ -61,7 +68,7 @@ class ListSharedReposDetailsResponse(SdkResponse):
 
 
         :param body: The body of this ListSharedReposDetailsResponse.
-        :type: list[ShowReposResp]
+        :type body: list[:class:`huaweicloudsdkswr.v2.ShowReposResp`]
         """
         self._body = body
 
@@ -81,7 +88,7 @@ class ListSharedReposDetailsResponse(SdkResponse):
 
 
         :param content_range: The content_range of this ListSharedReposDetailsResponse.
-        :type: str
+        :type content_range: str
         """
         self._content_range = content_range
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateOrderIncidentV2Req:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -64,7 +63,47 @@ class CreateOrderIncidentV2Req:
     }
 
     def __init__(self, incident_sub_type_id=None, product_category_id=None, business_type_id=None, region_id=None, simple_description=None, source_id=None, is_authorized=None, authorization_content=None, remind_mobile=None, remind_mail=None, remind_time=None, project_id=None, accessory_ids=None, extends_map=None, extension_map=None, severity_id=None, verify_code=None, area_code=None):
-        """CreateOrderIncidentV2Req - a model defined in huaweicloud sdk"""
+        """CreateOrderIncidentV2Req
+
+        The model defined in huaweicloud sdk
+
+        :param incident_sub_type_id: 工单子类
+        :type incident_sub_type_id: str
+        :param product_category_id: 工单产品类型
+        :type product_category_id: str
+        :param business_type_id: 工单问题类型
+        :type business_type_id: str
+        :param region_id: 区域ID
+        :type region_id: str
+        :param simple_description: 问题描述
+        :type simple_description: str
+        :param source_id: 工单来源，当前固定为83aeb0f2834c4df49826c781d32a963e
+        :type source_id: str
+        :param is_authorized: 是否授权
+        :type is_authorized: int
+        :param authorization_content: 机密信息内容
+        :type authorization_content: str
+        :param remind_mobile: 提醒手机号
+        :type remind_mobile: str
+        :param remind_mail: 提醒邮箱
+        :type remind_mail: str
+        :param remind_time: 提醒时间，如果是任意时间传0，如果是指定时间，传客户首选项对应时区的时间，比如09:00-18:00
+        :type remind_time: str
+        :param project_id: 项目id
+        :type project_id: str
+        :param accessory_ids: 附件id列表
+        :type accessory_ids: list[str]
+        :param extends_map: 附加参数
+        :type extends_map: dict(str, object)
+        :param extension_map: 扩展参数
+        :type extension_map: dict(str, object)
+        :param severity_id: 严重性id
+        :type severity_id: str
+        :param verify_code: 验证码
+        :type verify_code: str
+        :param area_code: 国家码
+        :type area_code: str
+        """
         
         
 
@@ -140,7 +179,7 @@ class CreateOrderIncidentV2Req:
         工单子类
 
         :param incident_sub_type_id: The incident_sub_type_id of this CreateOrderIncidentV2Req.
-        :type: str
+        :type incident_sub_type_id: str
         """
         self._incident_sub_type_id = incident_sub_type_id
 
@@ -162,7 +201,7 @@ class CreateOrderIncidentV2Req:
         工单产品类型
 
         :param product_category_id: The product_category_id of this CreateOrderIncidentV2Req.
-        :type: str
+        :type product_category_id: str
         """
         self._product_category_id = product_category_id
 
@@ -184,7 +223,7 @@ class CreateOrderIncidentV2Req:
         工单问题类型
 
         :param business_type_id: The business_type_id of this CreateOrderIncidentV2Req.
-        :type: str
+        :type business_type_id: str
         """
         self._business_type_id = business_type_id
 
@@ -206,7 +245,7 @@ class CreateOrderIncidentV2Req:
         区域ID
 
         :param region_id: The region_id of this CreateOrderIncidentV2Req.
-        :type: str
+        :type region_id: str
         """
         self._region_id = region_id
 
@@ -228,7 +267,7 @@ class CreateOrderIncidentV2Req:
         问题描述
 
         :param simple_description: The simple_description of this CreateOrderIncidentV2Req.
-        :type: str
+        :type simple_description: str
         """
         self._simple_description = simple_description
 
@@ -250,7 +289,7 @@ class CreateOrderIncidentV2Req:
         工单来源，当前固定为83aeb0f2834c4df49826c781d32a963e
 
         :param source_id: The source_id of this CreateOrderIncidentV2Req.
-        :type: str
+        :type source_id: str
         """
         self._source_id = source_id
 
@@ -272,7 +311,7 @@ class CreateOrderIncidentV2Req:
         是否授权
 
         :param is_authorized: The is_authorized of this CreateOrderIncidentV2Req.
-        :type: int
+        :type is_authorized: int
         """
         self._is_authorized = is_authorized
 
@@ -294,7 +333,7 @@ class CreateOrderIncidentV2Req:
         机密信息内容
 
         :param authorization_content: The authorization_content of this CreateOrderIncidentV2Req.
-        :type: str
+        :type authorization_content: str
         """
         self._authorization_content = authorization_content
 
@@ -316,7 +355,7 @@ class CreateOrderIncidentV2Req:
         提醒手机号
 
         :param remind_mobile: The remind_mobile of this CreateOrderIncidentV2Req.
-        :type: str
+        :type remind_mobile: str
         """
         self._remind_mobile = remind_mobile
 
@@ -338,7 +377,7 @@ class CreateOrderIncidentV2Req:
         提醒邮箱
 
         :param remind_mail: The remind_mail of this CreateOrderIncidentV2Req.
-        :type: str
+        :type remind_mail: str
         """
         self._remind_mail = remind_mail
 
@@ -360,7 +399,7 @@ class CreateOrderIncidentV2Req:
         提醒时间，如果是任意时间传0，如果是指定时间，传客户首选项对应时区的时间，比如09:00-18:00
 
         :param remind_time: The remind_time of this CreateOrderIncidentV2Req.
-        :type: str
+        :type remind_time: str
         """
         self._remind_time = remind_time
 
@@ -382,7 +421,7 @@ class CreateOrderIncidentV2Req:
         项目id
 
         :param project_id: The project_id of this CreateOrderIncidentV2Req.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -404,7 +443,7 @@ class CreateOrderIncidentV2Req:
         附件id列表
 
         :param accessory_ids: The accessory_ids of this CreateOrderIncidentV2Req.
-        :type: list[str]
+        :type accessory_ids: list[str]
         """
         self._accessory_ids = accessory_ids
 
@@ -426,7 +465,7 @@ class CreateOrderIncidentV2Req:
         附加参数
 
         :param extends_map: The extends_map of this CreateOrderIncidentV2Req.
-        :type: dict(str, object)
+        :type extends_map: dict(str, object)
         """
         self._extends_map = extends_map
 
@@ -448,7 +487,7 @@ class CreateOrderIncidentV2Req:
         扩展参数
 
         :param extension_map: The extension_map of this CreateOrderIncidentV2Req.
-        :type: dict(str, object)
+        :type extension_map: dict(str, object)
         """
         self._extension_map = extension_map
 
@@ -470,7 +509,7 @@ class CreateOrderIncidentV2Req:
         严重性id
 
         :param severity_id: The severity_id of this CreateOrderIncidentV2Req.
-        :type: str
+        :type severity_id: str
         """
         self._severity_id = severity_id
 
@@ -492,7 +531,7 @@ class CreateOrderIncidentV2Req:
         验证码
 
         :param verify_code: The verify_code of this CreateOrderIncidentV2Req.
-        :type: str
+        :type verify_code: str
         """
         self._verify_code = verify_code
 
@@ -514,7 +553,7 @@ class CreateOrderIncidentV2Req:
         国家码
 
         :param area_code: The area_code of this CreateOrderIncidentV2Req.
-        :type: str
+        :type area_code: str
         """
         self._area_code = area_code
 

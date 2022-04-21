@@ -52,21 +52,17 @@ class CloudtestClient(Client):
         """批量删除自定义测试服务类型用例
 
         批量删除自定义测试服务类型用例
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchDeleteTestCaseRequest request
-        :return: BatchDeleteTestCaseResponse
+        :param request: Request instance for BatchDeleteTestCase
+        :type request: :class:`huaweicloudsdkcloudtest.v1.BatchDeleteTestCaseRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.BatchDeleteTestCaseResponse`
         """
         return self.batch_delete_test_case_with_http_info(request)
 
     def batch_delete_test_case_with_http_info(self, request):
-        """批量删除自定义测试服务类型用例
-
-        批量删除自定义测试服务类型用例
-
-        :param BatchDeleteTestCaseRequest request
-        :return: BatchDeleteTestCaseResponse
-        """
-
         all_params = ['project_id', 'batch_delete_test_case_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -112,26 +108,21 @@ class CloudtestClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_plan(self, request):
         """项目下创建计划
 
         项目下创建计划
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreatePlanRequest request
-        :return: CreatePlanResponse
+        :param request: Request instance for CreatePlan
+        :type request: :class:`huaweicloudsdkcloudtest.v1.CreatePlanRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.CreatePlanResponse`
         """
         return self.create_plan_with_http_info(request)
 
     def create_plan_with_http_info(self, request):
-        """项目下创建计划
-
-        项目下创建计划
-
-        :param CreatePlanRequest request
-        :return: CreatePlanResponse
-        """
-
         all_params = ['project_id', 'create_plan_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -177,26 +168,21 @@ class CloudtestClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_service(self, request):
         """新测试类型服务注册到云测
 
         通过接口CreateService注册成为云测的自定义服务。 注册完成后云测界面将会出现此自定义测试类型。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateServiceRequest request
-        :return: CreateServiceResponse
+        :param request: Request instance for CreateService
+        :type request: :class:`huaweicloudsdkcloudtest.v1.CreateServiceRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.CreateServiceResponse`
         """
         return self.create_service_with_http_info(request)
 
     def create_service_with_http_info(self, request):
-        """新测试类型服务注册到云测
-
-        通过接口CreateService注册成为云测的自定义服务。 注册完成后云测界面将会出现此自定义测试类型。
-
-        :param CreateServiceRequest request
-        :return: CreateServiceResponse
-        """
-
         all_params = ['create_service_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -240,26 +226,21 @@ class CloudtestClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_test_case(self, request):
         """创建自定义测试服务类型用例
 
         创建自定义测试服务类型用例
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateTestCaseRequest request
-        :return: CreateTestCaseResponse
+        :param request: Request instance for CreateTestCase
+        :type request: :class:`huaweicloudsdkcloudtest.v1.CreateTestCaseRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.CreateTestCaseResponse`
         """
         return self.create_test_case_with_http_info(request)
 
     def create_test_case_with_http_info(self, request):
-        """创建自定义测试服务类型用例
-
-        创建自定义测试服务类型用例
-
-        :param CreateTestCaseRequest request
-        :return: CreateTestCaseResponse
-        """
-
         all_params = ['project_id', 'create_test_case_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -305,26 +286,21 @@ class CloudtestClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_test_case_in_plan(self, request):
         """计划中批量添加测试用例
 
         计划中批量添加测试用例
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateTestCaseInPlanRequest request
-        :return: CreateTestCaseInPlanResponse
+        :param request: Request instance for CreateTestCaseInPlan
+        :type request: :class:`huaweicloudsdkcloudtest.v1.CreateTestCaseInPlanRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.CreateTestCaseInPlanResponse`
         """
         return self.create_test_case_in_plan_with_http_info(request)
 
     def create_test_case_in_plan_with_http_info(self, request):
-        """计划中批量添加测试用例
-
-        计划中批量添加测试用例
-
-        :param CreateTestCaseInPlanRequest request
-        :return: CreateTestCaseInPlanResponse
-        """
-
         all_params = ['project_id', 'plan_id', 'create_test_case_in_plan_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -372,26 +348,21 @@ class CloudtestClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_service(self, request):
         """删除已注册服务
 
         删除已注册服务
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteServiceRequest request
-        :return: DeleteServiceResponse
+        :param request: Request instance for DeleteService
+        :type request: :class:`huaweicloudsdkcloudtest.v1.DeleteServiceRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.DeleteServiceResponse`
         """
         return self.delete_service_with_http_info(request)
 
     def delete_service_with_http_info(self, request):
-        """删除已注册服务
-
-        删除已注册服务
-
-        :param DeleteServiceRequest request
-        :return: DeleteServiceResponse
-        """
-
         all_params = ['service_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -435,26 +406,21 @@ class CloudtestClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def run_test_case(self, request):
         """批量执行测试用例
 
         批量执行测试用例
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param RunTestCaseRequest request
-        :return: RunTestCaseResponse
+        :param request: Request instance for RunTestCase
+        :type request: :class:`huaweicloudsdkcloudtest.v1.RunTestCaseRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.RunTestCaseResponse`
         """
         return self.run_test_case_with_http_info(request)
 
     def run_test_case_with_http_info(self, request):
-        """批量执行测试用例
-
-        批量执行测试用例
-
-        :param RunTestCaseRequest request
-        :return: RunTestCaseResponse
-        """
-
         all_params = ['project_id', 'run_test_case_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -500,26 +466,21 @@ class CloudtestClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_issues_by_plan_id(self, request):
         """查询某个测试计划下的需求树
 
         查询某个测试计划下的需求列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowIssuesByPlanIdRequest request
-        :return: ShowIssuesByPlanIdResponse
+        :param request: Request instance for ShowIssuesByPlanId
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ShowIssuesByPlanIdRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ShowIssuesByPlanIdResponse`
         """
         return self.show_issues_by_plan_id_with_http_info(request)
 
     def show_issues_by_plan_id_with_http_info(self, request):
-        """查询某个测试计划下的需求树
-
-        查询某个测试计划下的需求列表
-
-        :param ShowIssuesByPlanIdRequest request
-        :return: ShowIssuesByPlanIdResponse
-        """
-
         all_params = ['project_id', 'plan_id', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -569,26 +530,21 @@ class CloudtestClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_plan_journals(self, request):
         """查询某测试计划下的操作历史
 
         查询某测试计划下的操作历史
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowPlanJournalsRequest request
-        :return: ShowPlanJournalsResponse
+        :param request: Request instance for ShowPlanJournals
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ShowPlanJournalsRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ShowPlanJournalsResponse`
         """
         return self.show_plan_journals_with_http_info(request)
 
     def show_plan_journals_with_http_info(self, request):
-        """查询某测试计划下的操作历史
-
-        查询某测试计划下的操作历史
-
-        :param ShowPlanJournalsRequest request
-        :return: ShowPlanJournalsResponse
-        """
-
         all_params = ['project_id', 'plan_id', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -638,26 +594,21 @@ class CloudtestClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_plan_list(self, request):
         """项目下查询测试计划列表v2
 
         项目下查询测试计划列表v2
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowPlanListRequest request
-        :return: ShowPlanListResponse
+        :param request: Request instance for ShowPlanList
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ShowPlanListRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ShowPlanListResponse`
         """
         return self.show_plan_list_with_http_info(request)
 
     def show_plan_list_with_http_info(self, request):
-        """项目下查询测试计划列表v2
-
-        项目下查询测试计划列表v2
-
-        :param ShowPlanListRequest request
-        :return: ShowPlanListResponse
-        """
-
         all_params = ['project_id', 'offset', 'limit', 'name', 'current_stage']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -709,26 +660,21 @@ class CloudtestClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_plans(self, request):
         """项目下查询测试计划列表
 
         项目下查询测试计划列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowPlansRequest request
-        :return: ShowPlansResponse
+        :param request: Request instance for ShowPlans
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ShowPlansRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ShowPlansResponse`
         """
         return self.show_plans_with_http_info(request)
 
     def show_plans_with_http_info(self, request):
-        """项目下查询测试计划列表
-
-        项目下查询测试计划列表
-
-        :param ShowPlansRequest request
-        :return: ShowPlansResponse
-        """
-
         all_params = ['project_id', 'offset', 'limit', 'name', 'current_stage']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -780,26 +726,21 @@ class CloudtestClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_register_service(self, request):
         """用户获取自己当前已经注册的服务
 
         用户获取自己当前已经注册的服务
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowRegisterServiceRequest request
-        :return: ShowRegisterServiceResponse
+        :param request: Request instance for ShowRegisterService
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ShowRegisterServiceRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ShowRegisterServiceResponse`
         """
         return self.show_register_service_with_http_info(request)
 
     def show_register_service_with_http_info(self, request):
-        """用户获取自己当前已经注册的服务
-
-        用户获取自己当前已经注册的服务
-
-        :param ShowRegisterServiceRequest request
-        :return: ShowRegisterServiceResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -841,26 +782,21 @@ class CloudtestClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_test_case_detail(self, request):
         """获取测试用例详情
 
         获取测试用例详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowTestCaseDetailRequest request
-        :return: ShowTestCaseDetailResponse
+        :param request: Request instance for ShowTestCaseDetail
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ShowTestCaseDetailRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ShowTestCaseDetailResponse`
         """
         return self.show_test_case_detail_with_http_info(request)
 
     def show_test_case_detail_with_http_info(self, request):
-        """获取测试用例详情
-
-        获取测试用例详情
-
-        :param ShowTestCaseDetailRequest request
-        :return: ShowTestCaseDetailResponse
-        """
-
         all_params = ['project_id', 'testcase_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -906,26 +842,21 @@ class CloudtestClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_test_case_detail_v2(self, request):
         """通过用例编号获取测试用例详情
 
         通过用例编号获取测试用例详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowTestCaseDetailV2Request request
-        :return: ShowTestCaseDetailV2Response
+        :param request: Request instance for ShowTestCaseDetailV2
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ShowTestCaseDetailV2Request`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ShowTestCaseDetailV2Response`
         """
         return self.show_test_case_detail_v2_with_http_info(request)
 
     def show_test_case_detail_v2_with_http_info(self, request):
-        """通过用例编号获取测试用例详情
-
-        通过用例编号获取测试用例详情
-
-        :param ShowTestCaseDetailV2Request request
-        :return: ShowTestCaseDetailV2Response
-        """
-
         all_params = ['project_id', 'testcase_number']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -971,26 +902,21 @@ class CloudtestClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_service(self, request):
         """更新已注册服务
 
         更新已注册服务
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateServiceRequest request
-        :return: UpdateServiceResponse
+        :param request: Request instance for UpdateService
+        :type request: :class:`huaweicloudsdkcloudtest.v1.UpdateServiceRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.UpdateServiceResponse`
         """
         return self.update_service_with_http_info(request)
 
     def update_service_with_http_info(self, request):
-        """更新已注册服务
-
-        更新已注册服务
-
-        :param UpdateServiceRequest request
-        :return: UpdateServiceResponse
-        """
-
         all_params = ['service_id', 'update_service_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1036,26 +962,21 @@ class CloudtestClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_test_case(self, request):
         """更新自定义测试服务类型用例
 
         更新自定义测试服务类型用例
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateTestCaseRequest request
-        :return: UpdateTestCaseResponse
+        :param request: Request instance for UpdateTestCase
+        :type request: :class:`huaweicloudsdkcloudtest.v1.UpdateTestCaseRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.UpdateTestCaseResponse`
         """
         return self.update_test_case_with_http_info(request)
 
     def update_test_case_with_http_info(self, request):
-        """更新自定义测试服务类型用例
-
-        更新自定义测试服务类型用例
-
-        :param UpdateTestCaseRequest request
-        :return: UpdateTestCaseResponse
-        """
-
         all_params = ['project_id', 'testcase_id', 'update_test_case_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1103,26 +1024,21 @@ class CloudtestClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_test_case_result(self, request):
         """批量更新测试用例结果
 
         批量更新测试用例结果
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateTestCaseResultRequest request
-        :return: UpdateTestCaseResultResponse
+        :param request: Request instance for UpdateTestCaseResult
+        :type request: :class:`huaweicloudsdkcloudtest.v1.UpdateTestCaseResultRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.UpdateTestCaseResultResponse`
         """
         return self.update_test_case_result_with_http_info(request)
 
     def update_test_case_result_with_http_info(self, request):
-        """批量更新测试用例结果
-
-        批量更新测试用例结果
-
-        :param UpdateTestCaseResultRequest request
-        :return: UpdateTestCaseResultResponse
-        """
-
         all_params = ['project_id', 'update_test_case_result_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1168,26 +1084,21 @@ class CloudtestClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_api_test_suite_by_repo_file(self, request):
         """通过导入仓库中的文件生成接口测试套
 
         通过导入仓库中的文件生成接口测试套
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateApiTestSuiteByRepoFileRequest request
-        :return: CreateApiTestSuiteByRepoFileResponse
+        :param request: Request instance for CreateApiTestSuiteByRepoFile
+        :type request: :class:`huaweicloudsdkcloudtest.v1.CreateApiTestSuiteByRepoFileRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.CreateApiTestSuiteByRepoFileResponse`
         """
         return self.create_api_test_suite_by_repo_file_with_http_info(request)
 
     def create_api_test_suite_by_repo_file_with_http_info(self, request):
-        """通过导入仓库中的文件生成接口测试套
-
-        通过导入仓库中的文件生成接口测试套
-
-        :param CreateApiTestSuiteByRepoFileRequest request
-        :return: CreateApiTestSuiteByRepoFileResponse
-        """
-
         all_params = ['project_id', 'create_api_test_suite_by_repo_file_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1233,26 +1144,21 @@ class CloudtestClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_environments(self, request):
         """获取云测的环境参数分组列表
 
         获取云测的环境参数分组列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListEnvironmentsRequest request
-        :return: ListEnvironmentsResponse
+        :param request: Request instance for ListEnvironments
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ListEnvironmentsRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ListEnvironmentsResponse`
         """
         return self.list_environments_with_http_info(request)
 
     def list_environments_with_http_info(self, request):
-        """获取云测的环境参数分组列表
-
-        获取云测的环境参数分组列表
-
-        :param ListEnvironmentsRequest request
-        :return: ListEnvironmentsResponse
-        """
-
         all_params = ['project_id', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1299,7 +1205,6 @@ class CloudtestClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

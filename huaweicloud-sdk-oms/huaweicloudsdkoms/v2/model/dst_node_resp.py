@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DstNodeResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class DstNodeResp:
     }
 
     def __init__(self, bucket=None, region=None, save_prefix=None):
-        """DstNodeResp - a model defined in huaweicloud sdk"""
+        """DstNodeResp
+
+        The model defined in huaweicloud sdk
+
+        :param bucket: 目的端桶的名称。
+        :type bucket: str
+        :param region: 目的端桶所处的区域。  请与Endpoint对应的区域保持一致。
+        :type region: str
+        :param save_prefix: 目的端桶内路径前缀（拼接在对象key前面,组成新的key,拼接后不能超过1024个字符）。
+        :type save_prefix: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class DstNodeResp:
         目的端桶的名称。
 
         :param bucket: The bucket of this DstNodeResp.
-        :type: str
+        :type bucket: str
         """
         self._bucket = bucket
 
@@ -90,7 +99,7 @@ class DstNodeResp:
         目的端桶所处的区域。  请与Endpoint对应的区域保持一致。
 
         :param region: The region of this DstNodeResp.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -112,7 +121,7 @@ class DstNodeResp:
         目的端桶内路径前缀（拼接在对象key前面,组成新的key,拼接后不能超过1024个字符）。
 
         :param save_prefix: The save_prefix of this DstNodeResp.
-        :type: str
+        :type save_prefix: str
         """
         self._save_prefix = save_prefix
 

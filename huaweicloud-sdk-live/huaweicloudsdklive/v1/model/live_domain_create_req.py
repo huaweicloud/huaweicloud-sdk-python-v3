@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LiveDomainCreateReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class LiveDomainCreateReq:
     }
 
     def __init__(self, domain=None, domain_type=None, region=None, service_area=None):
-        """LiveDomainCreateReq - a model defined in huaweicloud sdk"""
+        """LiveDomainCreateReq
+
+        The model defined in huaweicloud sdk
+
+        :param domain: 直播域名
+        :type domain: str
+        :param domain_type: 域名类型 - pull表示播放域名 - push表示推流域名 
+        :type domain_type: str
+        :param region: 直播所属的直播中心
+        :type region: str
+        :param service_area: 域名应用区域 - mainland_china表示中国大陆区域 - outside_mainland_china表示中国大陆以外区域 - global表示全球区域 
+        :type service_area: str
+        """
         
         
 
@@ -70,7 +81,7 @@ class LiveDomainCreateReq:
         直播域名
 
         :param domain: The domain of this LiveDomainCreateReq.
-        :type: str
+        :type domain: str
         """
         self._domain = domain
 
@@ -92,7 +103,7 @@ class LiveDomainCreateReq:
         域名类型 - pull表示播放域名 - push表示推流域名 
 
         :param domain_type: The domain_type of this LiveDomainCreateReq.
-        :type: str
+        :type domain_type: str
         """
         self._domain_type = domain_type
 
@@ -114,7 +125,7 @@ class LiveDomainCreateReq:
         直播所属的直播中心
 
         :param region: The region of this LiveDomainCreateReq.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -136,7 +147,7 @@ class LiveDomainCreateReq:
         域名应用区域 - mainland_china表示中国大陆区域 - outside_mainland_china表示中国大陆以外区域 - global表示全球区域 
 
         :param service_area: The service_area of this LiveDomainCreateReq.
-        :type: str
+        :type service_area: str
         """
         self._service_area = service_area
 

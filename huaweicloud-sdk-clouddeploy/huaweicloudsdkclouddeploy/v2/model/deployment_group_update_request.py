@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeploymentGroupUpdateRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class DeploymentGroupUpdateRequest:
     }
 
     def __init__(self, name=None, description=None, slave_cluster_id=None, auto_connection_test_switch=None):
-        """DeploymentGroupUpdateRequest - a model defined in huaweicloud sdk"""
+        """DeploymentGroupUpdateRequest
+
+        The model defined in huaweicloud sdk
+
+        :param name: 主机组名
+        :type name: str
+        :param description: 描述
+        :type description: str
+        :param slave_cluster_id: 自定义slave资源池id
+        :type slave_cluster_id: str
+        :param auto_connection_test_switch: 自动连通性验证 0不执行 1每日 2每周
+        :type auto_connection_test_switch: int
+        """
         
         
 
@@ -72,7 +83,7 @@ class DeploymentGroupUpdateRequest:
         主机组名
 
         :param name: The name of this DeploymentGroupUpdateRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -94,7 +105,7 @@ class DeploymentGroupUpdateRequest:
         描述
 
         :param description: The description of this DeploymentGroupUpdateRequest.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -116,7 +127,7 @@ class DeploymentGroupUpdateRequest:
         自定义slave资源池id
 
         :param slave_cluster_id: The slave_cluster_id of this DeploymentGroupUpdateRequest.
-        :type: str
+        :type slave_cluster_id: str
         """
         self._slave_cluster_id = slave_cluster_id
 
@@ -138,7 +149,7 @@ class DeploymentGroupUpdateRequest:
         自动连通性验证 0不执行 1每日 2每周
 
         :param auto_connection_test_switch: The auto_connection_test_switch of this DeploymentGroupUpdateRequest.
-        :type: int
+        :type auto_connection_test_switch: int
         """
         self._auto_connection_test_switch = auto_connection_test_switch
 

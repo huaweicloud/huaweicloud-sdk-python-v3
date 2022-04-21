@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowLastPropertyValueResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowLastPropertyValueResponse(SdkResponse):
     }
 
     def __init__(self, properties=None):
-        """ShowLastPropertyValueResponse - a model defined in huaweicloud sdk"""
+        """ShowLastPropertyValueResponse
+
+        The model defined in huaweicloud sdk
+
+        :param properties: 查询到的资产属性列表
+        :type properties: list[:class:`huaweicloudsdkiotanalytics.v1.AssetPropertyLastValue`]
+        """
         
         super(ShowLastPropertyValueResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ShowLastPropertyValueResponse(SdkResponse):
         查询到的资产属性列表
 
         :return: The properties of this ShowLastPropertyValueResponse.
-        :rtype: list[AssetPropertyLastValue]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.AssetPropertyLastValue`]
         """
         return self._properties
 
@@ -58,7 +63,7 @@ class ShowLastPropertyValueResponse(SdkResponse):
         查询到的资产属性列表
 
         :param properties: The properties of this ShowLastPropertyValueResponse.
-        :type: list[AssetPropertyLastValue]
+        :type properties: list[:class:`huaweicloudsdkiotanalytics.v1.AssetPropertyLastValue`]
         """
         self._properties = properties
 

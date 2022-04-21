@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowAutoRecordResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowAutoRecordResponse(SdkResponse):
     }
 
     def __init__(self, app_id=None, auto_record_mode=None, x_request_id=None):
-        """ShowAutoRecordResponse - a model defined in huaweicloud sdk"""
+        """ShowAutoRecordResponse
+
+        The model defined in huaweicloud sdk
+
+        :param app_id: 应用id
+        :type app_id: str
+        :param auto_record_mode: 
+        :type auto_record_mode: :class:`huaweicloudsdkcloudrtc.v2.AppAutoRecordMode`
+        :param x_request_id: 
+        :type x_request_id: str
+        """
         
         super(ShowAutoRecordResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ShowAutoRecordResponse(SdkResponse):
         应用id
 
         :param app_id: The app_id of this ShowAutoRecordResponse.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -78,7 +87,7 @@ class ShowAutoRecordResponse(SdkResponse):
 
 
         :return: The auto_record_mode of this ShowAutoRecordResponse.
-        :rtype: AppAutoRecordMode
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.AppAutoRecordMode`
         """
         return self._auto_record_mode
 
@@ -88,7 +97,7 @@ class ShowAutoRecordResponse(SdkResponse):
 
 
         :param auto_record_mode: The auto_record_mode of this ShowAutoRecordResponse.
-        :type: AppAutoRecordMode
+        :type auto_record_mode: :class:`huaweicloudsdkcloudrtc.v2.AppAutoRecordMode`
         """
         self._auto_record_mode = auto_record_mode
 
@@ -108,7 +117,7 @@ class ShowAutoRecordResponse(SdkResponse):
 
 
         :param x_request_id: The x_request_id of this ShowAutoRecordResponse.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CancelCustomerOrderRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CancelCustomerOrderRequest:
     }
 
     def __init__(self, body=None):
-        """CancelCustomerOrderRequest - a model defined in huaweicloud sdk"""
+        """CancelCustomerOrderRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CancelCustomerOrderRequest
+        :type body: :class:`huaweicloudsdkbss.v2.CancelCustomerOrderReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CancelCustomerOrderRequest:
 
 
         :return: The body of this CancelCustomerOrderRequest.
-        :rtype: CancelCustomerOrderReq
+        :rtype: :class:`huaweicloudsdkbss.v2.CancelCustomerOrderReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CancelCustomerOrderRequest:
 
 
         :param body: The body of this CancelCustomerOrderRequest.
-        :type: CancelCustomerOrderReq
+        :type body: :class:`huaweicloudsdkbss.v2.CancelCustomerOrderReq`
         """
         self._body = body
 

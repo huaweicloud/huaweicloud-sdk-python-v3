@@ -52,21 +52,17 @@ class CsmsClient(Client):
         """批量添加或删除凭据标签
 
         - 功能介绍：批量添加或删除凭据标签。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchCreateOrDeleteTagsRequest request
-        :return: BatchCreateOrDeleteTagsResponse
+        :param request: Request instance for BatchCreateOrDeleteTags
+        :type request: :class:`huaweicloudsdkcsms.v1.BatchCreateOrDeleteTagsRequest`
+        :rtype: :class:`huaweicloudsdkcsms.v1.BatchCreateOrDeleteTagsResponse`
         """
         return self.batch_create_or_delete_tags_with_http_info(request)
 
     def batch_create_or_delete_tags_with_http_info(self, request):
-        """批量添加或删除凭据标签
-
-        - 功能介绍：批量添加或删除凭据标签。
-
-        :param BatchCreateOrDeleteTagsRequest request
-        :return: BatchCreateOrDeleteTagsResponse
-        """
-
         all_params = ['secret_id', 'batch_create_or_delete_tags_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -112,26 +108,25 @@ class CsmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_secret(self, request):
         """创建凭据
 
-        创建新的凭据，并将凭据值存入凭据的初始版本。  凭据管理服务将凭据值加密后，存储在凭据对象下的版本中。每个版本可与多个凭据版本状态相关联，凭据版本状态用于标识凭据版本处于的阶段，没有版本状态标记的版本视为已弃用，可用凭据管理服务自动删除。  初始版本的状态被标记为SYSCURRENT。 
+        创建新的凭据，并将凭据值存入凭据的初始版本。
+        
+        凭据管理服务将凭据值加密后，存储在凭据对象下的版本中。每个版本可与多个凭据版本状态相关联，凭据版本状态用于标识凭据版本处于的阶段，没有版本状态标记的版本视为已弃用，可用凭据管理服务自动删除。
+        
+        初始版本的状态被标记为SYSCURRENT。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateSecretRequest request
-        :return: CreateSecretResponse
+        :param request: Request instance for CreateSecret
+        :type request: :class:`huaweicloudsdkcsms.v1.CreateSecretRequest`
+        :rtype: :class:`huaweicloudsdkcsms.v1.CreateSecretResponse`
         """
         return self.create_secret_with_http_info(request)
 
     def create_secret_with_http_info(self, request):
-        """创建凭据
-
-        创建新的凭据，并将凭据值存入凭据的初始版本。  凭据管理服务将凭据值加密后，存储在凭据对象下的版本中。每个版本可与多个凭据版本状态相关联，凭据版本状态用于标识凭据版本处于的阶段，没有版本状态标记的版本视为已弃用，可用凭据管理服务自动删除。  初始版本的状态被标记为SYSCURRENT。 
-
-        :param CreateSecretRequest request
-        :return: CreateSecretResponse
-        """
-
         all_params = ['create_secret_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -175,26 +170,21 @@ class CsmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_secret_tag(self, request):
         """添加凭据标签
 
         - 功能介绍：添加凭据标签。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateSecretTagRequest request
-        :return: CreateSecretTagResponse
+        :param request: Request instance for CreateSecretTag
+        :type request: :class:`huaweicloudsdkcsms.v1.CreateSecretTagRequest`
+        :rtype: :class:`huaweicloudsdkcsms.v1.CreateSecretTagResponse`
         """
         return self.create_secret_tag_with_http_info(request)
 
     def create_secret_tag_with_http_info(self, request):
-        """添加凭据标签
-
-        - 功能介绍：添加凭据标签。
-
-        :param CreateSecretTagRequest request
-        :return: CreateSecretTagResponse
-        """
-
         all_params = ['secret_id', 'create_secret_tag_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -240,26 +230,21 @@ class CsmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_secret_version(self, request):
         """创建凭据版本
 
-        在指定的凭据中，创建一个新的凭据版本，用于加密保管新的凭据值。默认情况下，新创建的凭据版本被标记为SYSCURRENT状态，而SYSCURRENT标记的前一个凭据版本被标记为SYSPREVIOUS状态。您可以通过指定VersionStage参数来覆盖默认行为。 
+        在指定的凭据中，创建一个新的凭据版本，用于加密保管新的凭据值。默认情况下，新创建的凭据版本被标记为SYSCURRENT状态，而SYSCURRENT标记的前一个凭据版本被标记为SYSPREVIOUS状态。您可以通过指定VersionStage参数来覆盖默认行为。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateSecretVersionRequest request
-        :return: CreateSecretVersionResponse
+        :param request: Request instance for CreateSecretVersion
+        :type request: :class:`huaweicloudsdkcsms.v1.CreateSecretVersionRequest`
+        :rtype: :class:`huaweicloudsdkcsms.v1.CreateSecretVersionResponse`
         """
         return self.create_secret_version_with_http_info(request)
 
     def create_secret_version_with_http_info(self, request):
-        """创建凭据版本
-
-        在指定的凭据中，创建一个新的凭据版本，用于加密保管新的凭据值。默认情况下，新创建的凭据版本被标记为SYSCURRENT状态，而SYSCURRENT标记的前一个凭据版本被标记为SYSPREVIOUS状态。您可以通过指定VersionStage参数来覆盖默认行为。 
-
-        :param CreateSecretVersionRequest request
-        :return: CreateSecretVersionResponse
-        """
-
         all_params = ['secret_name', 'create_secret_version_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -305,26 +290,21 @@ class CsmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_secret(self, request):
         """立即删除凭据
 
         立即删除指定的凭据，且无法恢复。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteSecretRequest request
-        :return: DeleteSecretResponse
+        :param request: Request instance for DeleteSecret
+        :type request: :class:`huaweicloudsdkcsms.v1.DeleteSecretRequest`
+        :rtype: :class:`huaweicloudsdkcsms.v1.DeleteSecretResponse`
         """
         return self.delete_secret_with_http_info(request)
 
     def delete_secret_with_http_info(self, request):
-        """立即删除凭据
-
-        立即删除指定的凭据，且无法恢复。
-
-        :param DeleteSecretRequest request
-        :return: DeleteSecretResponse
-        """
-
         all_params = ['secret_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -368,26 +348,21 @@ class CsmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_secret_for_schedule(self, request):
         """创建凭据的定时删除任务
 
         指定延迟删除时间，创建删除凭据的定时任务，可设置7~30天的的延迟删除时间。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteSecretForScheduleRequest request
-        :return: DeleteSecretForScheduleResponse
+        :param request: Request instance for DeleteSecretForSchedule
+        :type request: :class:`huaweicloudsdkcsms.v1.DeleteSecretForScheduleRequest`
+        :rtype: :class:`huaweicloudsdkcsms.v1.DeleteSecretForScheduleResponse`
         """
         return self.delete_secret_for_schedule_with_http_info(request)
 
     def delete_secret_for_schedule_with_http_info(self, request):
-        """创建凭据的定时删除任务
-
-        指定延迟删除时间，创建删除凭据的定时任务，可设置7~30天的的延迟删除时间。
-
-        :param DeleteSecretForScheduleRequest request
-        :return: DeleteSecretForScheduleResponse
-        """
-
         all_params = ['secret_name', 'delete_secret_for_schedule_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -433,26 +408,21 @@ class CsmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_secret_stage(self, request):
         """删除凭据的版本状态
 
-        删除指定的凭据版本状态。 
+        删除指定的凭据版本状态。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteSecretStageRequest request
-        :return: DeleteSecretStageResponse
+        :param request: Request instance for DeleteSecretStage
+        :type request: :class:`huaweicloudsdkcsms.v1.DeleteSecretStageRequest`
+        :rtype: :class:`huaweicloudsdkcsms.v1.DeleteSecretStageResponse`
         """
         return self.delete_secret_stage_with_http_info(request)
 
     def delete_secret_stage_with_http_info(self, request):
-        """删除凭据的版本状态
-
-        删除指定的凭据版本状态。 
-
-        :param DeleteSecretStageRequest request
-        :return: DeleteSecretStageResponse
-        """
-
         all_params = ['secret_name', 'stage_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -498,26 +468,21 @@ class CsmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_secret_tag(self, request):
         """删除凭据标签
 
         - 功能介绍：删除凭据标签。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteSecretTagRequest request
-        :return: DeleteSecretTagResponse
+        :param request: Request instance for DeleteSecretTag
+        :type request: :class:`huaweicloudsdkcsms.v1.DeleteSecretTagRequest`
+        :rtype: :class:`huaweicloudsdkcsms.v1.DeleteSecretTagResponse`
         """
         return self.delete_secret_tag_with_http_info(request)
 
     def delete_secret_tag_with_http_info(self, request):
-        """删除凭据标签
-
-        - 功能介绍：删除凭据标签。
-
-        :param DeleteSecretTagRequest request
-        :return: DeleteSecretTagResponse
-        """
-
         all_params = ['secret_id', 'key']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -563,26 +528,21 @@ class CsmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_project_secrets_tags(self, request):
         """查询项目标签
 
         - 功能介绍：查询用户在指定项目下的所有凭据标签集合。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListProjectSecretsTagsRequest request
-        :return: ListProjectSecretsTagsResponse
+        :param request: Request instance for ListProjectSecretsTags
+        :type request: :class:`huaweicloudsdkcsms.v1.ListProjectSecretsTagsRequest`
+        :rtype: :class:`huaweicloudsdkcsms.v1.ListProjectSecretsTagsResponse`
         """
         return self.list_project_secrets_tags_with_http_info(request)
 
     def list_project_secrets_tags_with_http_info(self, request):
-        """查询项目标签
-
-        - 功能介绍：查询用户在指定项目下的所有凭据标签集合。
-
-        :param ListProjectSecretsTagsRequest request
-        :return: ListProjectSecretsTagsResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -624,26 +584,21 @@ class CsmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_resource_instances(self, request):
         """查询凭据实例
 
         - 功能介绍：查询凭据实例。通过标签过滤，筛选用户凭据,返回凭据列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListResourceInstancesRequest request
-        :return: ListResourceInstancesResponse
+        :param request: Request instance for ListResourceInstances
+        :type request: :class:`huaweicloudsdkcsms.v1.ListResourceInstancesRequest`
+        :rtype: :class:`huaweicloudsdkcsms.v1.ListResourceInstancesResponse`
         """
         return self.list_resource_instances_with_http_info(request)
 
     def list_resource_instances_with_http_info(self, request):
-        """查询凭据实例
-
-        - 功能介绍：查询凭据实例。通过标签过滤，筛选用户凭据,返回凭据列表。
-
-        :param ListResourceInstancesRequest request
-        :return: ListResourceInstancesResponse
-        """
-
         all_params = ['resource_instances', 'list_resource_instances_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -689,26 +644,21 @@ class CsmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_secret_tags(self, request):
         """查询凭据标签
 
         - 功能介绍：查询凭据标签。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListSecretTagsRequest request
-        :return: ListSecretTagsResponse
+        :param request: Request instance for ListSecretTags
+        :type request: :class:`huaweicloudsdkcsms.v1.ListSecretTagsRequest`
+        :rtype: :class:`huaweicloudsdkcsms.v1.ListSecretTagsResponse`
         """
         return self.list_secret_tags_with_http_info(request)
 
     def list_secret_tags_with_http_info(self, request):
-        """查询凭据标签
-
-        - 功能介绍：查询凭据标签。
-
-        :param ListSecretTagsRequest request
-        :return: ListSecretTagsResponse
-        """
-
         all_params = ['secret_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -752,26 +702,21 @@ class CsmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_secret_versions(self, request):
         """查询凭据的版本列表
 
-        查询指定凭据下的版本列表信息。 
+        查询指定凭据下的版本列表信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListSecretVersionsRequest request
-        :return: ListSecretVersionsResponse
+        :param request: Request instance for ListSecretVersions
+        :type request: :class:`huaweicloudsdkcsms.v1.ListSecretVersionsRequest`
+        :rtype: :class:`huaweicloudsdkcsms.v1.ListSecretVersionsResponse`
         """
         return self.list_secret_versions_with_http_info(request)
 
     def list_secret_versions_with_http_info(self, request):
-        """查询凭据的版本列表
-
-        查询指定凭据下的版本列表信息。 
-
-        :param ListSecretVersionsRequest request
-        :return: ListSecretVersionsResponse
-        """
-
         all_params = ['secret_name', 'marker', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -819,26 +764,21 @@ class CsmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_secrets(self, request):
         """查询凭据列表
 
         查询当前用户在本项目下创建的所有凭据。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListSecretsRequest request
-        :return: ListSecretsResponse
+        :param request: Request instance for ListSecrets
+        :type request: :class:`huaweicloudsdkcsms.v1.ListSecretsRequest`
+        :rtype: :class:`huaweicloudsdkcsms.v1.ListSecretsResponse`
         """
         return self.list_secrets_with_http_info(request)
 
     def list_secrets_with_http_info(self, request):
-        """查询凭据列表
-
-        查询当前用户在本项目下创建的所有凭据。
-
-        :param ListSecretsRequest request
-        :return: ListSecretsResponse
-        """
-
         all_params = ['limit', 'marker']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -884,26 +824,21 @@ class CsmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def restore_secret(self, request):
         """取消凭据的定时删除任务
 
         取消凭据的定时删除任务，凭据对象恢复可使用状态。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param RestoreSecretRequest request
-        :return: RestoreSecretResponse
+        :param request: Request instance for RestoreSecret
+        :type request: :class:`huaweicloudsdkcsms.v1.RestoreSecretRequest`
+        :rtype: :class:`huaweicloudsdkcsms.v1.RestoreSecretResponse`
         """
         return self.restore_secret_with_http_info(request)
 
     def restore_secret_with_http_info(self, request):
-        """取消凭据的定时删除任务
-
-        取消凭据的定时删除任务，凭据对象恢复可使用状态。
-
-        :param RestoreSecretRequest request
-        :return: RestoreSecretResponse
-        """
-
         all_params = ['secret_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -947,26 +882,21 @@ class CsmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_secret(self, request):
         """查询凭据
 
         查询指定凭据的信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowSecretRequest request
-        :return: ShowSecretResponse
+        :param request: Request instance for ShowSecret
+        :type request: :class:`huaweicloudsdkcsms.v1.ShowSecretRequest`
+        :rtype: :class:`huaweicloudsdkcsms.v1.ShowSecretResponse`
         """
         return self.show_secret_with_http_info(request)
 
     def show_secret_with_http_info(self, request):
-        """查询凭据
-
-        查询指定凭据的信息。
-
-        :param ShowSecretRequest request
-        :return: ShowSecretResponse
-        """
-
         all_params = ['secret_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1010,26 +940,21 @@ class CsmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_secret_stage(self, request):
         """查询凭据的版本状态
 
-        查询指定凭据版本状态标记的版本信息。 
+        查询指定凭据版本状态标记的版本信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowSecretStageRequest request
-        :return: ShowSecretStageResponse
+        :param request: Request instance for ShowSecretStage
+        :type request: :class:`huaweicloudsdkcsms.v1.ShowSecretStageRequest`
+        :rtype: :class:`huaweicloudsdkcsms.v1.ShowSecretStageResponse`
         """
         return self.show_secret_stage_with_http_info(request)
 
     def show_secret_stage_with_http_info(self, request):
-        """查询凭据的版本状态
-
-        查询指定凭据版本状态标记的版本信息。 
-
-        :param ShowSecretStageRequest request
-        :return: ShowSecretStageResponse
-        """
-
         all_params = ['secret_name', 'stage_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1075,26 +1000,22 @@ class CsmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_secret_version(self, request):
         """查询凭据的版本与凭据值
 
-        查询指定凭据版本的信息和版本中的明文凭据值，只能查询ENABLED状态的凭据。 通过/v1/{project_id}/secrets/{secret_id}/versions/latest可访问凭据最新版本的凭据值。 
+        查询指定凭据版本的信息和版本中的明文凭据值，只能查询ENABLED状态的凭据。
+        通过/v1/{project_id}/secrets/{secret_id}/versions/latest可访问凭据最新版本的凭据值。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowSecretVersionRequest request
-        :return: ShowSecretVersionResponse
+        :param request: Request instance for ShowSecretVersion
+        :type request: :class:`huaweicloudsdkcsms.v1.ShowSecretVersionRequest`
+        :rtype: :class:`huaweicloudsdkcsms.v1.ShowSecretVersionResponse`
         """
         return self.show_secret_version_with_http_info(request)
 
     def show_secret_version_with_http_info(self, request):
-        """查询凭据的版本与凭据值
-
-        查询指定凭据版本的信息和版本中的明文凭据值，只能查询ENABLED状态的凭据。 通过/v1/{project_id}/secrets/{secret_id}/versions/latest可访问凭据最新版本的凭据值。 
-
-        :param ShowSecretVersionRequest request
-        :return: ShowSecretVersionResponse
-        """
-
         all_params = ['secret_name', 'version_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1140,26 +1061,21 @@ class CsmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_secret(self, request):
         """更新凭据
 
         更新指定凭据的元数据信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateSecretRequest request
-        :return: UpdateSecretResponse
+        :param request: Request instance for UpdateSecret
+        :type request: :class:`huaweicloudsdkcsms.v1.UpdateSecretRequest`
+        :rtype: :class:`huaweicloudsdkcsms.v1.UpdateSecretResponse`
         """
         return self.update_secret_with_http_info(request)
 
     def update_secret_with_http_info(self, request):
-        """更新凭据
-
-        更新指定凭据的元数据信息。
-
-        :param UpdateSecretRequest request
-        :return: UpdateSecretResponse
-        """
-
         all_params = ['secret_name', 'update_secret_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1205,26 +1121,21 @@ class CsmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_secret_stage(self, request):
         """更新凭据的版本状态
 
-        更新凭据的版本状态。 
+        更新凭据的版本状态。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateSecretStageRequest request
-        :return: UpdateSecretStageResponse
+        :param request: Request instance for UpdateSecretStage
+        :type request: :class:`huaweicloudsdkcsms.v1.UpdateSecretStageRequest`
+        :rtype: :class:`huaweicloudsdkcsms.v1.UpdateSecretStageResponse`
         """
         return self.update_secret_stage_with_http_info(request)
 
     def update_secret_stage_with_http_info(self, request):
-        """更新凭据的版本状态
-
-        更新凭据的版本状态。 
-
-        :param UpdateSecretStageRequest request
-        :return: UpdateSecretStageResponse
-        """
-
         all_params = ['secret_name', 'stage_name', 'update_secret_stage_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1271,7 +1182,6 @@ class CsmsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

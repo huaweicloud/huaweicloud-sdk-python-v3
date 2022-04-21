@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListIndirectPartnersResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListIndirectPartnersResponse(SdkResponse):
     }
 
     def __init__(self, count=None, indirect_partners=None):
-        """ListIndirectPartnersResponse - a model defined in huaweicloud sdk"""
+        """ListIndirectPartnersResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 符合条件的记录个数，只有成功的时候出现。
+        :type count: int
+        :param indirect_partners: 精英服务商列表，具体参见表1。
+        :type indirect_partners: list[:class:`huaweicloudsdkbss.v2.IndirectPartnerInfo`]
+        """
         
         super(ListIndirectPartnersResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListIndirectPartnersResponse(SdkResponse):
         符合条件的记录个数，只有成功的时候出现。
 
         :param count: The count of this ListIndirectPartnersResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -74,7 +81,7 @@ class ListIndirectPartnersResponse(SdkResponse):
         精英服务商列表，具体参见表1。
 
         :return: The indirect_partners of this ListIndirectPartnersResponse.
-        :rtype: list[IndirectPartnerInfo]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.IndirectPartnerInfo`]
         """
         return self._indirect_partners
 
@@ -85,7 +92,7 @@ class ListIndirectPartnersResponse(SdkResponse):
         精英服务商列表，具体参见表1。
 
         :param indirect_partners: The indirect_partners of this ListIndirectPartnersResponse.
-        :type: list[IndirectPartnerInfo]
+        :type indirect_partners: list[:class:`huaweicloudsdkbss.v2.IndirectPartnerInfo`]
         """
         self._indirect_partners = indirect_partners
 

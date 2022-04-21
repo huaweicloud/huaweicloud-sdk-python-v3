@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateRandomResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateRandomResponse(SdkResponse):
     }
 
     def __init__(self, random_data=None):
-        """CreateRandomResponse - a model defined in huaweicloud sdk"""
+        """CreateRandomResponse
+
+        The model defined in huaweicloud sdk
+
+        :param random_data: 随机数16进制表示，两位表示1byte。随机数的长度与用户传入的参数 “random_data_length”的长度保持一致。
+        :type random_data: str
+        """
         
         super(CreateRandomResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class CreateRandomResponse(SdkResponse):
         随机数16进制表示，两位表示1byte。随机数的长度与用户传入的参数 “random_data_length”的长度保持一致。
 
         :param random_data: The random_data of this CreateRandomResponse.
-        :type: str
+        :type random_data: str
         """
         self._random_data = random_data
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListIpGroupsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListIpGroupsResponse(SdkResponse):
     }
 
     def __init__(self, ipgroups=None, request_id=None, page_info=None):
-        """ListIpGroupsResponse - a model defined in huaweicloud sdk"""
+        """ListIpGroupsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param ipgroups: IP地址组列表返回对象。
+        :type ipgroups: list[:class:`huaweicloudsdkelb.v3.IpGroup`]
+        :param request_id: 请求ID。  注：自动生成 。
+        :type request_id: str
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`
+        """
         
         super(ListIpGroupsResponse, self).__init__()
 
@@ -57,7 +66,7 @@ class ListIpGroupsResponse(SdkResponse):
         IP地址组列表返回对象。
 
         :return: The ipgroups of this ListIpGroupsResponse.
-        :rtype: list[IpGroup]
+        :rtype: list[:class:`huaweicloudsdkelb.v3.IpGroup`]
         """
         return self._ipgroups
 
@@ -68,7 +77,7 @@ class ListIpGroupsResponse(SdkResponse):
         IP地址组列表返回对象。
 
         :param ipgroups: The ipgroups of this ListIpGroupsResponse.
-        :type: list[IpGroup]
+        :type ipgroups: list[:class:`huaweicloudsdkelb.v3.IpGroup`]
         """
         self._ipgroups = ipgroups
 
@@ -90,7 +99,7 @@ class ListIpGroupsResponse(SdkResponse):
         请求ID。  注：自动生成 。
 
         :param request_id: The request_id of this ListIpGroupsResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 
@@ -100,7 +109,7 @@ class ListIpGroupsResponse(SdkResponse):
 
 
         :return: The page_info of this ListIpGroupsResponse.
-        :rtype: PageInfo
+        :rtype: :class:`huaweicloudsdkelb.v3.PageInfo`
         """
         return self._page_info
 
@@ -110,7 +119,7 @@ class ListIpGroupsResponse(SdkResponse):
 
 
         :param page_info: The page_info of this ListIpGroupsResponse.
-        :type: PageInfo
+        :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`
         """
         self._page_info = page_info
 

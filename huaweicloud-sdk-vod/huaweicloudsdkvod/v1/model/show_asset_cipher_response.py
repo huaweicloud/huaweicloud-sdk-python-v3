@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowAssetCipherResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowAssetCipherResponse(SdkResponse):
     }
 
     def __init__(self, asset_id=None, edk=None, dk=None):
-        """ShowAssetCipherResponse - a model defined in huaweicloud sdk"""
+        """ShowAssetCipherResponse
+
+        The model defined in huaweicloud sdk
+
+        :param asset_id: 媒资ID。
+        :type asset_id: str
+        :param edk: 密钥密文。
+        :type edk: str
+        :param dk: 密钥明文。
+        :type dk: str
+        """
         
         super(ShowAssetCipherResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ShowAssetCipherResponse(SdkResponse):
         媒资ID。
 
         :param asset_id: The asset_id of this ShowAssetCipherResponse.
-        :type: str
+        :type asset_id: str
         """
         self._asset_id = asset_id
 
@@ -90,7 +99,7 @@ class ShowAssetCipherResponse(SdkResponse):
         密钥密文。
 
         :param edk: The edk of this ShowAssetCipherResponse.
-        :type: str
+        :type edk: str
         """
         self._edk = edk
 
@@ -112,7 +121,7 @@ class ShowAssetCipherResponse(SdkResponse):
         密钥明文。
 
         :param dk: The dk of this ShowAssetCipherResponse.
-        :type: str
+        :type dk: str
         """
         self._dk = dk
 

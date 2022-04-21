@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowMetricsDataResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowMetricsDataResponse(SdkResponse):
     }
 
     def __init__(self, error_code=None, error_message=None, metrics=None):
-        """ShowMetricsDataResponse - a model defined in huaweicloud sdk"""
+        """ShowMetricsDataResponse
+
+        The model defined in huaweicloud sdk
+
+        :param error_code: 响应码。
+        :type error_code: str
+        :param error_message: 响应信息描述。
+        :type error_message: str
+        :param metrics: 指标对象列表。
+        :type metrics: list[:class:`huaweicloudsdkaom.v2.MetricDataValue`]
+        """
         
         super(ShowMetricsDataResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ShowMetricsDataResponse(SdkResponse):
         响应码。
 
         :param error_code: The error_code of this ShowMetricsDataResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -90,7 +99,7 @@ class ShowMetricsDataResponse(SdkResponse):
         响应信息描述。
 
         :param error_message: The error_message of this ShowMetricsDataResponse.
-        :type: str
+        :type error_message: str
         """
         self._error_message = error_message
 
@@ -101,7 +110,7 @@ class ShowMetricsDataResponse(SdkResponse):
         指标对象列表。
 
         :return: The metrics of this ShowMetricsDataResponse.
-        :rtype: list[MetricDataValue]
+        :rtype: list[:class:`huaweicloudsdkaom.v2.MetricDataValue`]
         """
         return self._metrics
 
@@ -112,7 +121,7 @@ class ShowMetricsDataResponse(SdkResponse):
         指标对象列表。
 
         :param metrics: The metrics of this ShowMetricsDataResponse.
-        :type: list[MetricDataValue]
+        :type metrics: list[:class:`huaweicloudsdkaom.v2.MetricDataValue`]
         """
         self._metrics = metrics
 

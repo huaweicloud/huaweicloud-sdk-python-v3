@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class HotQuestionCount:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class HotQuestionCount:
     }
 
     def __init__(self, qa_pair_id=None, st_question=None, domain=None):
-        """HotQuestionCount - a model defined in huaweicloud sdk"""
+        """HotQuestionCount
+
+        The model defined in huaweicloud sdk
+
+        :param qa_pair_id: 问答对ID。
+        :type qa_pair_id: str
+        :param st_question: 标准问题。
+        :type st_question: str
+        :param domain: 标准问题所属领域。
+        :type domain: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class HotQuestionCount:
         问答对ID。
 
         :param qa_pair_id: The qa_pair_id of this HotQuestionCount.
-        :type: str
+        :type qa_pair_id: str
         """
         self._qa_pair_id = qa_pair_id
 
@@ -90,7 +99,7 @@ class HotQuestionCount:
         标准问题。
 
         :param st_question: The st_question of this HotQuestionCount.
-        :type: str
+        :type st_question: str
         """
         self._st_question = st_question
 
@@ -112,7 +121,7 @@ class HotQuestionCount:
         标准问题所属领域。
 
         :param domain: The domain of this HotQuestionCount.
-        :type: str
+        :type domain: str
         """
         self._domain = domain
 

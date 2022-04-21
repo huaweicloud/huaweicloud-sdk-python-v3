@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IotdaContentRsp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class IotdaContentRsp:
     }
 
     def __init__(self, iotda_instance_id=None, rules=None):
-        """IotdaContentRsp - a model defined in huaweicloud sdk"""
+        """IotdaContentRsp
+
+        The model defined in huaweicloud sdk
+
+        :param iotda_instance_id: IoTDA实例Id
+        :type iotda_instance_id: str
+        :param rules: 在IoTDA实例中要配置的转发规则，包含推送数据的资源空间和产品列表
+        :type rules: list[:class:`huaweicloudsdkiotanalytics.v1.IotdaContentRuleRsp`]
+        """
         
         
 
@@ -61,7 +68,7 @@ class IotdaContentRsp:
         IoTDA实例Id
 
         :param iotda_instance_id: The iotda_instance_id of this IotdaContentRsp.
-        :type: str
+        :type iotda_instance_id: str
         """
         self._iotda_instance_id = iotda_instance_id
 
@@ -72,7 +79,7 @@ class IotdaContentRsp:
         在IoTDA实例中要配置的转发规则，包含推送数据的资源空间和产品列表
 
         :return: The rules of this IotdaContentRsp.
-        :rtype: list[IotdaContentRuleRsp]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.IotdaContentRuleRsp`]
         """
         return self._rules
 
@@ -83,7 +90,7 @@ class IotdaContentRsp:
         在IoTDA实例中要配置的转发规则，包含推送数据的资源空间和产品列表
 
         :param rules: The rules of this IotdaContentRsp.
-        :type: list[IotdaContentRuleRsp]
+        :type rules: list[:class:`huaweicloudsdkiotanalytics.v1.IotdaContentRuleRsp`]
         """
         self._rules = rules
 

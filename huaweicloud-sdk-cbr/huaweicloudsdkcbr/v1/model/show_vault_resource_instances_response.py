@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowVaultResourceInstancesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowVaultResourceInstancesResponse(SdkResponse):
     }
 
     def __init__(self, resources=None, total_count=None):
-        """ShowVaultResourceInstancesResponse - a model defined in huaweicloud sdk"""
+        """ShowVaultResourceInstancesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param resources: 符合查询条件的资源列表（action为count时无此参数）。
+        :type resources: list[:class:`huaweicloudsdkcbr.v1.TagResource`]
+        :param total_count: 符合查询条件的资源总个数
+        :type total_count: int
+        """
         
         super(ShowVaultResourceInstancesResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ShowVaultResourceInstancesResponse(SdkResponse):
         符合查询条件的资源列表（action为count时无此参数）。
 
         :return: The resources of this ShowVaultResourceInstancesResponse.
-        :rtype: list[TagResource]
+        :rtype: list[:class:`huaweicloudsdkcbr.v1.TagResource`]
         """
         return self._resources
 
@@ -63,7 +70,7 @@ class ShowVaultResourceInstancesResponse(SdkResponse):
         符合查询条件的资源列表（action为count时无此参数）。
 
         :param resources: The resources of this ShowVaultResourceInstancesResponse.
-        :type: list[TagResource]
+        :type resources: list[:class:`huaweicloudsdkcbr.v1.TagResource`]
         """
         self._resources = resources
 
@@ -85,7 +92,7 @@ class ShowVaultResourceInstancesResponse(SdkResponse):
         符合查询条件的资源总个数
 
         :param total_count: The total_count of this ShowVaultResourceInstancesResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 

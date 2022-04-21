@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSpecifiedVersionDetailsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListSpecifiedVersionDetailsRequest:
     }
 
     def __init__(self, version=None):
-        """ListSpecifiedVersionDetailsRequest - a model defined in huaweicloud sdk"""
+        """ListSpecifiedVersionDetailsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param version: 待查询版本号。取值 以v开头，例如v1。 若为空，表示查询所 有API的版本号。
+        :type version: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ListSpecifiedVersionDetailsRequest:
         待查询版本号。取值 以v开头，例如v1。 若为空，表示查询所 有API的版本号。
 
         :param version: The version of this ListSpecifiedVersionDetailsRequest.
-        :type: str
+        :type version: str
         """
         self._version = version
 

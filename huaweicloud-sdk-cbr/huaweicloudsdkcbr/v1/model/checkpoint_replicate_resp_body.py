@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CheckpointReplicateRespBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class CheckpointReplicateRespBody:
     }
 
     def __init__(self, backups=None, destination_project_id=None, destination_region=None, destination_vault_id=None, project_id=None, provider_id=None, source_region=None, vault_id=None):
-        """CheckpointReplicateRespBody - a model defined in huaweicloud sdk"""
+        """CheckpointReplicateRespBody
+
+        The model defined in huaweicloud sdk
+
+        :param backups: 待复制的备份列表
+        :type backups: list[:class:`huaweicloudsdkcbr.v1.CheckpointReplicateRespbackups`]
+        :param destination_project_id: 复制的目标项目ID
+        :type destination_project_id: str
+        :param destination_region: 复制的目标区域
+        :type destination_region: str
+        :param destination_vault_id: 目标区域存储库ID
+        :type destination_vault_id: str
+        :param project_id: 执行复制的项目ID
+        :type project_id: str
+        :param provider_id: 备份提供商ID
+        :type provider_id: str
+        :param source_region: 复制的源区域
+        :type source_region: str
+        :param vault_id: 存储库ID
+        :type vault_id: str
+        """
         
         
 
@@ -74,7 +93,7 @@ class CheckpointReplicateRespBody:
         待复制的备份列表
 
         :return: The backups of this CheckpointReplicateRespBody.
-        :rtype: list[CheckpointReplicateRespbackups]
+        :rtype: list[:class:`huaweicloudsdkcbr.v1.CheckpointReplicateRespbackups`]
         """
         return self._backups
 
@@ -85,7 +104,7 @@ class CheckpointReplicateRespBody:
         待复制的备份列表
 
         :param backups: The backups of this CheckpointReplicateRespBody.
-        :type: list[CheckpointReplicateRespbackups]
+        :type backups: list[:class:`huaweicloudsdkcbr.v1.CheckpointReplicateRespbackups`]
         """
         self._backups = backups
 
@@ -107,7 +126,7 @@ class CheckpointReplicateRespBody:
         复制的目标项目ID
 
         :param destination_project_id: The destination_project_id of this CheckpointReplicateRespBody.
-        :type: str
+        :type destination_project_id: str
         """
         self._destination_project_id = destination_project_id
 
@@ -129,7 +148,7 @@ class CheckpointReplicateRespBody:
         复制的目标区域
 
         :param destination_region: The destination_region of this CheckpointReplicateRespBody.
-        :type: str
+        :type destination_region: str
         """
         self._destination_region = destination_region
 
@@ -151,7 +170,7 @@ class CheckpointReplicateRespBody:
         目标区域存储库ID
 
         :param destination_vault_id: The destination_vault_id of this CheckpointReplicateRespBody.
-        :type: str
+        :type destination_vault_id: str
         """
         self._destination_vault_id = destination_vault_id
 
@@ -173,7 +192,7 @@ class CheckpointReplicateRespBody:
         执行复制的项目ID
 
         :param project_id: The project_id of this CheckpointReplicateRespBody.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -195,7 +214,7 @@ class CheckpointReplicateRespBody:
         备份提供商ID
 
         :param provider_id: The provider_id of this CheckpointReplicateRespBody.
-        :type: str
+        :type provider_id: str
         """
         self._provider_id = provider_id
 
@@ -217,7 +236,7 @@ class CheckpointReplicateRespBody:
         复制的源区域
 
         :param source_region: The source_region of this CheckpointReplicateRespBody.
-        :type: str
+        :type source_region: str
         """
         self._source_region = source_region
 
@@ -239,7 +258,7 @@ class CheckpointReplicateRespBody:
         存储库ID
 
         :param vault_id: The vault_id of this CheckpointReplicateRespBody.
-        :type: str
+        :type vault_id: str
         """
         self._vault_id = vault_id
 

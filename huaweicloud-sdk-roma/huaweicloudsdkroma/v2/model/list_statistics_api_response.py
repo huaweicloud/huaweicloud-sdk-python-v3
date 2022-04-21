@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListStatisticsApiResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListStatisticsApiResponse(SdkResponse):
     }
 
     def __init__(self, code=None, start_time=None, end_time=None, list=None):
-        """ListStatisticsApiResponse - a model defined in huaweicloud sdk"""
+        """ListStatisticsApiResponse
+
+        The model defined in huaweicloud sdk
+
+        :param code: 响应码
+        :type code: str
+        :param start_time: 开始时间的UTC的时间戳
+        :type start_time: int
+        :param end_time: 截止时间的UTC的时间戳
+        :type end_time: int
+        :param list: 统计指标的数据结构结构体
+        :type list: list[:class:`huaweicloudsdkroma.v2.StatisticsAPI`]
+        """
         
         super(ListStatisticsApiResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class ListStatisticsApiResponse(SdkResponse):
         响应码
 
         :param code: The code of this ListStatisticsApiResponse.
-        :type: str
+        :type code: str
         """
         self._code = code
 
@@ -95,7 +106,7 @@ class ListStatisticsApiResponse(SdkResponse):
         开始时间的UTC的时间戳
 
         :param start_time: The start_time of this ListStatisticsApiResponse.
-        :type: int
+        :type start_time: int
         """
         self._start_time = start_time
 
@@ -117,7 +128,7 @@ class ListStatisticsApiResponse(SdkResponse):
         截止时间的UTC的时间戳
 
         :param end_time: The end_time of this ListStatisticsApiResponse.
-        :type: int
+        :type end_time: int
         """
         self._end_time = end_time
 
@@ -128,7 +139,7 @@ class ListStatisticsApiResponse(SdkResponse):
         统计指标的数据结构结构体
 
         :return: The list of this ListStatisticsApiResponse.
-        :rtype: list[StatisticsAPI]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.StatisticsAPI`]
         """
         return self._list
 
@@ -139,7 +150,7 @@ class ListStatisticsApiResponse(SdkResponse):
         统计指标的数据结构结构体
 
         :param list: The list of this ListStatisticsApiResponse.
-        :type: list[StatisticsAPI]
+        :type list: list[:class:`huaweicloudsdkroma.v2.StatisticsAPI`]
         """
         self._list = list
 

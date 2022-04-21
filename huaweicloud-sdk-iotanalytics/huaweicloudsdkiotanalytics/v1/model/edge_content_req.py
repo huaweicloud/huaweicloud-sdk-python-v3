@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EdgeContentReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class EdgeContentReq:
     }
 
     def __init__(self, iotda_instance_id=None, rules=None):
-        """EdgeContentReq - a model defined in huaweicloud sdk"""
+        """EdgeContentReq
+
+        The model defined in huaweicloud sdk
+
+        :param iotda_instance_id: edge实例Id
+        :type iotda_instance_id: str
+        :param rules: 在edge实例中要配置转发规则推送数据的资源空间和产品列表
+        :type rules: list[:class:`huaweicloudsdkiotanalytics.v1.EdgeContentRuleReq`]
+        """
         
         
 
@@ -62,7 +69,7 @@ class EdgeContentReq:
         edge实例Id
 
         :param iotda_instance_id: The iotda_instance_id of this EdgeContentReq.
-        :type: str
+        :type iotda_instance_id: str
         """
         self._iotda_instance_id = iotda_instance_id
 
@@ -73,7 +80,7 @@ class EdgeContentReq:
         在edge实例中要配置转发规则推送数据的资源空间和产品列表
 
         :return: The rules of this EdgeContentReq.
-        :rtype: list[EdgeContentRuleReq]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.EdgeContentRuleReq`]
         """
         return self._rules
 
@@ -84,7 +91,7 @@ class EdgeContentReq:
         在edge实例中要配置转发规则推送数据的资源空间和产品列表
 
         :param rules: The rules of this EdgeContentReq.
-        :type: list[EdgeContentRuleReq]
+        :type rules: list[:class:`huaweicloudsdkiotanalytics.v1.EdgeContentRuleReq`]
         """
         self._rules = rules
 

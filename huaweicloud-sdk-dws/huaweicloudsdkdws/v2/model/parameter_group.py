@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ParameterGroup:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -22,52 +21,40 @@ class ParameterGroup:
     sensitive_list = []
 
     openapi_types = {
-        'name': 'str',
         'id': 'str',
+        'name': 'str',
         'status': 'str'
     }
 
     attribute_map = {
-        'name': 'name',
         'id': 'id',
+        'name': 'name',
         'status': 'status'
     }
 
-    def __init__(self, name=None, id=None, status=None):
-        """ParameterGroup - a model defined in huaweicloud sdk"""
+    def __init__(self, id=None, name=None, status=None):
+        """ParameterGroup
+
+        The model defined in huaweicloud sdk
+
+        :param id: 参数组ID
+        :type id: str
+        :param name: 参数组名称
+        :type name: str
+        :param status: 集群参数状态，有效值包括：  - In-Sync：已同步 - Applying：应用中 - Pending-Reboot：需重启生效 - Sync-Failure：应用失败
+        :type status: str
+        """
         
         
 
-        self._name = None
         self._id = None
+        self._name = None
         self._status = None
         self.discriminator = None
 
-        self.name = name
         self.id = id
+        self.name = name
         self.status = status
-
-    @property
-    def name(self):
-        """Gets the name of this ParameterGroup.
-
-        参数组名称
-
-        :return: The name of this ParameterGroup.
-        :rtype: str
-        """
-        return self._name
-
-    @name.setter
-    def name(self, name):
-        """Sets the name of this ParameterGroup.
-
-        参数组名称
-
-        :param name: The name of this ParameterGroup.
-        :type: str
-        """
-        self._name = name
 
     @property
     def id(self):
@@ -87,15 +74,37 @@ class ParameterGroup:
         参数组ID
 
         :param id: The id of this ParameterGroup.
-        :type: str
+        :type id: str
         """
         self._id = id
+
+    @property
+    def name(self):
+        """Gets the name of this ParameterGroup.
+
+        参数组名称
+
+        :return: The name of this ParameterGroup.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this ParameterGroup.
+
+        参数组名称
+
+        :param name: The name of this ParameterGroup.
+        :type name: str
+        """
+        self._name = name
 
     @property
     def status(self):
         """Gets the status of this ParameterGroup.
 
-        集群参数状态，有效值包括：  In-Sync：已同步  Applying：应用中  Pending-Reboot：需重启生效  Sync-Failure：应用失败
+        集群参数状态，有效值包括：  - In-Sync：已同步 - Applying：应用中 - Pending-Reboot：需重启生效 - Sync-Failure：应用失败
 
         :return: The status of this ParameterGroup.
         :rtype: str
@@ -106,10 +115,10 @@ class ParameterGroup:
     def status(self, status):
         """Sets the status of this ParameterGroup.
 
-        集群参数状态，有效值包括：  In-Sync：已同步  Applying：应用中  Pending-Reboot：需重启生效  Sync-Failure：应用失败
+        集群参数状态，有效值包括：  - In-Sync：已同步 - Applying：应用中 - Pending-Reboot：需重启生效 - Sync-Failure：应用失败
 
         :param status: The status of this ParameterGroup.
-        :type: str
+        :type status: str
         """
         self._status = status
 

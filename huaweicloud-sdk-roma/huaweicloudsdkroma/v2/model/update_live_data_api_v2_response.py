@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateLiveDataApiV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -64,7 +63,47 @@ class UpdateLiveDataApiV2Response(SdkResponse):
     }
 
     def __init__(self, name=None, path=None, method=None, description=None, version=None, content_type=None, api_signature_id=None, roma_app_id=None, return_format=None, parameters=None, id=None, instance=None, type=None, status=None, created_time=None, modified_time=None, scripts=None, roma_app_name=None):
-        """UpdateLiveDataApiV2Response - a model defined in huaweicloud sdk"""
+        """UpdateLiveDataApiV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param name: 后端API名称。  支持汉字、英文、数字、中划线、下划线、点、斜杠、中英文格式下的小括号和冒号、中文格式下的顿号，且只能以英文、汉字和数字开头。
+        :type name: str
+        :param path: 后端API请求路径。  支持英文、数字、中划线、下划线、点等，且以斜杠（/）开头。
+        :type path: str
+        :param method: 后端API请求方法。  支持GET、PUT、POST、DELETE
+        :type method: str
+        :param description: 后端API描述。  不支持&lt;，&gt;字符
+        :type description: str
+        :param version: 后端API版本  支持英文，数字，下划线，中划线，点。
+        :type version: str
+        :param content_type: 后端API返回类型
+        :type content_type: str
+        :param api_signature_id: 后端API为签名认证时绑定的签名密钥编号
+        :type api_signature_id: str
+        :param roma_app_id: 后端API归属的集成应用编号
+        :type roma_app_id: str
+        :param return_format: API响应信息是否格式化  true： 对响应信息进行格式化  false：对响应信息格式化不进行格式化 
+        :type return_format: bool
+        :param parameters: 后端API的请求参数列表
+        :type parameters: list[:class:`huaweicloudsdkroma.v2.LdApiParameter`]
+        :param id: 后端API编号
+        :type id: str
+        :param instance: 后端API所属实例编号
+        :type instance: str
+        :param type: 后端API类型： - data：数据后端 - function： 函数后端
+        :type type: str
+        :param status: 后端API状态： - 1：待开发 - 3：开发中 - 4：已部署
+        :type status: int
+        :param created_time: 后端API创建时间
+        :type created_time: datetime
+        :param modified_time: 后端API修改时间
+        :type modified_time: datetime
+        :param scripts: 后端API脚本信息
+        :type scripts: list[:class:`huaweicloudsdkroma.v2.LdApiScript`]
+        :param roma_app_name: 后端API归属的集成应用名称
+        :type roma_app_name: str
+        """
         
         super(UpdateLiveDataApiV2Response, self).__init__()
 
@@ -137,7 +176,7 @@ class UpdateLiveDataApiV2Response(SdkResponse):
         后端API名称。  支持汉字、英文、数字、中划线、下划线、点、斜杠、中英文格式下的小括号和冒号、中文格式下的顿号，且只能以英文、汉字和数字开头。
 
         :param name: The name of this UpdateLiveDataApiV2Response.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -159,7 +198,7 @@ class UpdateLiveDataApiV2Response(SdkResponse):
         后端API请求路径。  支持英文、数字、中划线、下划线、点等，且以斜杠（/）开头。
 
         :param path: The path of this UpdateLiveDataApiV2Response.
-        :type: str
+        :type path: str
         """
         self._path = path
 
@@ -181,7 +220,7 @@ class UpdateLiveDataApiV2Response(SdkResponse):
         后端API请求方法。  支持GET、PUT、POST、DELETE
 
         :param method: The method of this UpdateLiveDataApiV2Response.
-        :type: str
+        :type method: str
         """
         self._method = method
 
@@ -203,7 +242,7 @@ class UpdateLiveDataApiV2Response(SdkResponse):
         后端API描述。  不支持<，>字符
 
         :param description: The description of this UpdateLiveDataApiV2Response.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -225,7 +264,7 @@ class UpdateLiveDataApiV2Response(SdkResponse):
         后端API版本  支持英文，数字，下划线，中划线，点。
 
         :param version: The version of this UpdateLiveDataApiV2Response.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -247,7 +286,7 @@ class UpdateLiveDataApiV2Response(SdkResponse):
         后端API返回类型
 
         :param content_type: The content_type of this UpdateLiveDataApiV2Response.
-        :type: str
+        :type content_type: str
         """
         self._content_type = content_type
 
@@ -269,7 +308,7 @@ class UpdateLiveDataApiV2Response(SdkResponse):
         后端API为签名认证时绑定的签名密钥编号
 
         :param api_signature_id: The api_signature_id of this UpdateLiveDataApiV2Response.
-        :type: str
+        :type api_signature_id: str
         """
         self._api_signature_id = api_signature_id
 
@@ -291,7 +330,7 @@ class UpdateLiveDataApiV2Response(SdkResponse):
         后端API归属的集成应用编号
 
         :param roma_app_id: The roma_app_id of this UpdateLiveDataApiV2Response.
-        :type: str
+        :type roma_app_id: str
         """
         self._roma_app_id = roma_app_id
 
@@ -313,7 +352,7 @@ class UpdateLiveDataApiV2Response(SdkResponse):
         API响应信息是否格式化  true： 对响应信息进行格式化  false：对响应信息格式化不进行格式化 
 
         :param return_format: The return_format of this UpdateLiveDataApiV2Response.
-        :type: bool
+        :type return_format: bool
         """
         self._return_format = return_format
 
@@ -324,7 +363,7 @@ class UpdateLiveDataApiV2Response(SdkResponse):
         后端API的请求参数列表
 
         :return: The parameters of this UpdateLiveDataApiV2Response.
-        :rtype: list[LdApiParameter]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.LdApiParameter`]
         """
         return self._parameters
 
@@ -335,7 +374,7 @@ class UpdateLiveDataApiV2Response(SdkResponse):
         后端API的请求参数列表
 
         :param parameters: The parameters of this UpdateLiveDataApiV2Response.
-        :type: list[LdApiParameter]
+        :type parameters: list[:class:`huaweicloudsdkroma.v2.LdApiParameter`]
         """
         self._parameters = parameters
 
@@ -357,7 +396,7 @@ class UpdateLiveDataApiV2Response(SdkResponse):
         后端API编号
 
         :param id: The id of this UpdateLiveDataApiV2Response.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -379,7 +418,7 @@ class UpdateLiveDataApiV2Response(SdkResponse):
         后端API所属实例编号
 
         :param instance: The instance of this UpdateLiveDataApiV2Response.
-        :type: str
+        :type instance: str
         """
         self._instance = instance
 
@@ -401,7 +440,7 @@ class UpdateLiveDataApiV2Response(SdkResponse):
         后端API类型： - data：数据后端 - function： 函数后端
 
         :param type: The type of this UpdateLiveDataApiV2Response.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -423,7 +462,7 @@ class UpdateLiveDataApiV2Response(SdkResponse):
         后端API状态： - 1：待开发 - 3：开发中 - 4：已部署
 
         :param status: The status of this UpdateLiveDataApiV2Response.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -445,7 +484,7 @@ class UpdateLiveDataApiV2Response(SdkResponse):
         后端API创建时间
 
         :param created_time: The created_time of this UpdateLiveDataApiV2Response.
-        :type: datetime
+        :type created_time: datetime
         """
         self._created_time = created_time
 
@@ -467,7 +506,7 @@ class UpdateLiveDataApiV2Response(SdkResponse):
         后端API修改时间
 
         :param modified_time: The modified_time of this UpdateLiveDataApiV2Response.
-        :type: datetime
+        :type modified_time: datetime
         """
         self._modified_time = modified_time
 
@@ -478,7 +517,7 @@ class UpdateLiveDataApiV2Response(SdkResponse):
         后端API脚本信息
 
         :return: The scripts of this UpdateLiveDataApiV2Response.
-        :rtype: list[LdApiScript]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.LdApiScript`]
         """
         return self._scripts
 
@@ -489,7 +528,7 @@ class UpdateLiveDataApiV2Response(SdkResponse):
         后端API脚本信息
 
         :param scripts: The scripts of this UpdateLiveDataApiV2Response.
-        :type: list[LdApiScript]
+        :type scripts: list[:class:`huaweicloudsdkroma.v2.LdApiScript`]
         """
         self._scripts = scripts
 
@@ -511,7 +550,7 @@ class UpdateLiveDataApiV2Response(SdkResponse):
         后端API归属的集成应用名称
 
         :param roma_app_name: The roma_app_name of this UpdateLiveDataApiV2Response.
-        :type: str
+        :type roma_app_name: str
         """
         self._roma_app_name = roma_app_name
 

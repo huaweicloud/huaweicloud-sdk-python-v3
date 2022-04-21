@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RegisterCompetitionInfoResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RegisterCompetitionInfoResponse(SdkResponse):
     }
 
     def __init__(self, is_permitted=None, team_id=None):
-        """RegisterCompetitionInfoResponse - a model defined in huaweicloud sdk"""
+        """RegisterCompetitionInfoResponse
+
+        The model defined in huaweicloud sdk
+
+        :param is_permitted: 是否允许提交作品，true-允许，false-不允许
+        :type is_permitted: bool
+        :param team_id: 团队ID
+        :type team_id: str
+        """
         
         super(RegisterCompetitionInfoResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class RegisterCompetitionInfoResponse(SdkResponse):
         是否允许提交作品，true-允许，false-不允许
 
         :param is_permitted: The is_permitted of this RegisterCompetitionInfoResponse.
-        :type: bool
+        :type is_permitted: bool
         """
         self._is_permitted = is_permitted
 
@@ -85,7 +92,7 @@ class RegisterCompetitionInfoResponse(SdkResponse):
         团队ID
 
         :param team_id: The team_id of this RegisterCompetitionInfoResponse.
-        :type: str
+        :type team_id: str
         """
         self._team_id = team_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VulnItem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -58,7 +57,41 @@ class VulnItem:
     }
 
     def __init__(self, vuln_id=None, domain_id=None, url=None, severity=None, vuln_status=None, vuln_class=None, vuln_type=None, description=None, advice=None, hit_details=None, request=None, response=None, provider=None, reason=None, find_time=None):
-        """VulnItem - a model defined in huaweicloud sdk"""
+        """VulnItem
+
+        The model defined in huaweicloud sdk
+
+        :param vuln_id: 漏洞ID
+        :type vuln_id: str
+        :param domain_id: 域名ID
+        :type domain_id: str
+        :param url: 目标网址
+        :type url: str
+        :param severity: 漏洞风险等级:   * high - 高风险   * middle - 中风险   * low - 低风险   * hint - 提示 
+        :type severity: str
+        :param vuln_status: 漏洞状态:   * repairing - 未修复   * repaired - 已修复   * false_report - 误报，已忽略 
+        :type vuln_status: str
+        :param vuln_class: 漏洞类别
+        :type vuln_class: str
+        :param vuln_type: 漏洞名称
+        :type vuln_type: str
+        :param description: 漏洞描述
+        :type description: str
+        :param advice: 修复建议
+        :type advice: str
+        :param hit_details: 命中详情
+        :type hit_details: str
+        :param request: 请求详情
+        :type request: str
+        :param response: 响应详情
+        :type response: str
+        :param provider: 漏洞确认人
+        :type provider: str
+        :param reason: 漏洞忽略理由
+        :type reason: str
+        :param find_time: 漏洞发现时间
+        :type find_time: str
+        """
         
         
 
@@ -128,7 +161,7 @@ class VulnItem:
         漏洞ID
 
         :param vuln_id: The vuln_id of this VulnItem.
-        :type: str
+        :type vuln_id: str
         """
         self._vuln_id = vuln_id
 
@@ -150,7 +183,7 @@ class VulnItem:
         域名ID
 
         :param domain_id: The domain_id of this VulnItem.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -172,7 +205,7 @@ class VulnItem:
         目标网址
 
         :param url: The url of this VulnItem.
-        :type: str
+        :type url: str
         """
         self._url = url
 
@@ -194,7 +227,7 @@ class VulnItem:
         漏洞风险等级:   * high - 高风险   * middle - 中风险   * low - 低风险   * hint - 提示 
 
         :param severity: The severity of this VulnItem.
-        :type: str
+        :type severity: str
         """
         self._severity = severity
 
@@ -216,7 +249,7 @@ class VulnItem:
         漏洞状态:   * repairing - 未修复   * repaired - 已修复   * false_report - 误报，已忽略 
 
         :param vuln_status: The vuln_status of this VulnItem.
-        :type: str
+        :type vuln_status: str
         """
         self._vuln_status = vuln_status
 
@@ -238,7 +271,7 @@ class VulnItem:
         漏洞类别
 
         :param vuln_class: The vuln_class of this VulnItem.
-        :type: str
+        :type vuln_class: str
         """
         self._vuln_class = vuln_class
 
@@ -260,7 +293,7 @@ class VulnItem:
         漏洞名称
 
         :param vuln_type: The vuln_type of this VulnItem.
-        :type: str
+        :type vuln_type: str
         """
         self._vuln_type = vuln_type
 
@@ -282,7 +315,7 @@ class VulnItem:
         漏洞描述
 
         :param description: The description of this VulnItem.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -304,7 +337,7 @@ class VulnItem:
         修复建议
 
         :param advice: The advice of this VulnItem.
-        :type: str
+        :type advice: str
         """
         self._advice = advice
 
@@ -326,7 +359,7 @@ class VulnItem:
         命中详情
 
         :param hit_details: The hit_details of this VulnItem.
-        :type: str
+        :type hit_details: str
         """
         self._hit_details = hit_details
 
@@ -348,7 +381,7 @@ class VulnItem:
         请求详情
 
         :param request: The request of this VulnItem.
-        :type: str
+        :type request: str
         """
         self._request = request
 
@@ -370,7 +403,7 @@ class VulnItem:
         响应详情
 
         :param response: The response of this VulnItem.
-        :type: str
+        :type response: str
         """
         self._response = response
 
@@ -392,7 +425,7 @@ class VulnItem:
         漏洞确认人
 
         :param provider: The provider of this VulnItem.
-        :type: str
+        :type provider: str
         """
         self._provider = provider
 
@@ -414,7 +447,7 @@ class VulnItem:
         漏洞忽略理由
 
         :param reason: The reason of this VulnItem.
-        :type: str
+        :type reason: str
         """
         self._reason = reason
 
@@ -436,7 +469,7 @@ class VulnItem:
         漏洞发现时间
 
         :param find_time: The find_time of this VulnItem.
-        :type: str
+        :type find_time: str
         """
         self._find_time = find_time
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MysqlFlavorsInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class MysqlFlavorsInfo:
     }
 
     def __init__(self, vcpus=None, ram=None, type=None, id=None, spec_code=None, version_name=None, instance_mode=None, az_status=None):
-        """MysqlFlavorsInfo - a model defined in huaweicloud sdk"""
+        """MysqlFlavorsInfo
+
+        The model defined in huaweicloud sdk
+
+        :param vcpus: CPU大小。例如：1表示1U。
+        :type vcpus: str
+        :param ram: 内存大小，单位为GB。
+        :type ram: str
+        :param type: 规格类型，取值为arm和x86。
+        :type type: str
+        :param id: 规格ID，该字段唯一
+        :type id: str
+        :param spec_code: 资源规格编码，同创建指定的flavor_ref。例如：gaussdb.mysql.xlarge.x86.4。
+        :type spec_code: str
+        :param version_name: 数据库版本号。
+        :type version_name: str
+        :param instance_mode: 实例类型。目前仅支持Cluster。
+        :type instance_mode: str
+        :param az_status: 规格所在az的状态，包含以下状态： - normal，在售 - unsupported，暂不支持该规格 - sellout，售罄。
+        :type az_status: dict(str, str)
+        """
         
         
 
@@ -85,7 +104,7 @@ class MysqlFlavorsInfo:
         CPU大小。例如：1表示1U。
 
         :param vcpus: The vcpus of this MysqlFlavorsInfo.
-        :type: str
+        :type vcpus: str
         """
         self._vcpus = vcpus
 
@@ -107,7 +126,7 @@ class MysqlFlavorsInfo:
         内存大小，单位为GB。
 
         :param ram: The ram of this MysqlFlavorsInfo.
-        :type: str
+        :type ram: str
         """
         self._ram = ram
 
@@ -129,7 +148,7 @@ class MysqlFlavorsInfo:
         规格类型，取值为arm和x86。
 
         :param type: The type of this MysqlFlavorsInfo.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -151,7 +170,7 @@ class MysqlFlavorsInfo:
         规格ID，该字段唯一
 
         :param id: The id of this MysqlFlavorsInfo.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -173,7 +192,7 @@ class MysqlFlavorsInfo:
         资源规格编码，同创建指定的flavor_ref。例如：gaussdb.mysql.xlarge.x86.4。
 
         :param spec_code: The spec_code of this MysqlFlavorsInfo.
-        :type: str
+        :type spec_code: str
         """
         self._spec_code = spec_code
 
@@ -195,7 +214,7 @@ class MysqlFlavorsInfo:
         数据库版本号。
 
         :param version_name: The version_name of this MysqlFlavorsInfo.
-        :type: str
+        :type version_name: str
         """
         self._version_name = version_name
 
@@ -217,7 +236,7 @@ class MysqlFlavorsInfo:
         实例类型。目前仅支持Cluster。
 
         :param instance_mode: The instance_mode of this MysqlFlavorsInfo.
-        :type: str
+        :type instance_mode: str
         """
         self._instance_mode = instance_mode
 
@@ -239,7 +258,7 @@ class MysqlFlavorsInfo:
         规格所在az的状态，包含以下状态： - normal，在售 - unsupported，暂不支持该规格 - sellout，售罄。
 
         :param az_status: The az_status of this MysqlFlavorsInfo.
-        :type: dict(str, str)
+        :type az_status: dict(str, str)
         """
         self._az_status = az_status
 

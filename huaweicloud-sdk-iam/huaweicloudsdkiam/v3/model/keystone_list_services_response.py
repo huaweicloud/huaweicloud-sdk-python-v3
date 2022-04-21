@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneListServicesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class KeystoneListServicesResponse(SdkResponse):
     }
 
     def __init__(self, services=None, links=None):
-        """KeystoneListServicesResponse - a model defined in huaweicloud sdk"""
+        """KeystoneListServicesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param services: 服务信息列表。
+        :type services: list[:class:`huaweicloudsdkiam.v3.Service`]
+        :param links: 
+        :type links: :class:`huaweicloudsdkiam.v3.Links`
+        """
         
         super(KeystoneListServicesResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class KeystoneListServicesResponse(SdkResponse):
         服务信息列表。
 
         :return: The services of this KeystoneListServicesResponse.
-        :rtype: list[Service]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.Service`]
         """
         return self._services
 
@@ -63,7 +70,7 @@ class KeystoneListServicesResponse(SdkResponse):
         服务信息列表。
 
         :param services: The services of this KeystoneListServicesResponse.
-        :type: list[Service]
+        :type services: list[:class:`huaweicloudsdkiam.v3.Service`]
         """
         self._services = services
 
@@ -73,7 +80,7 @@ class KeystoneListServicesResponse(SdkResponse):
 
 
         :return: The links of this KeystoneListServicesResponse.
-        :rtype: Links
+        :rtype: :class:`huaweicloudsdkiam.v3.Links`
         """
         return self._links
 
@@ -83,7 +90,7 @@ class KeystoneListServicesResponse(SdkResponse):
 
 
         :param links: The links of this KeystoneListServicesResponse.
-        :type: Links
+        :type links: :class:`huaweicloudsdkiam.v3.Links`
         """
         self._links = links
 

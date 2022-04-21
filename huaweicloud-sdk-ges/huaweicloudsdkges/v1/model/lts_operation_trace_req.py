@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LtsOperationTraceReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class LtsOperationTraceReq:
     }
 
     def __init__(self, enable_audit=None, audit_log_group_name=None):
-        """LtsOperationTraceReq - a model defined in huaweicloud sdk"""
+        """LtsOperationTraceReq
+
+        The model defined in huaweicloud sdk
+
+        :param enable_audit: 是否开启图审计，默认“false”。
+        :type enable_audit: bool
+        :param audit_log_group_name: LTS日志组名称。
+        :type audit_log_group_name: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class LtsOperationTraceReq:
         是否开启图审计，默认“false”。
 
         :param enable_audit: The enable_audit of this LtsOperationTraceReq.
-        :type: bool
+        :type enable_audit: bool
         """
         self._enable_audit = enable_audit
 
@@ -85,7 +92,7 @@ class LtsOperationTraceReq:
         LTS日志组名称。
 
         :param audit_log_group_name: The audit_log_group_name of this LtsOperationTraceReq.
-        :type: str
+        :type audit_log_group_name: str
         """
         self._audit_log_group_name = audit_log_group_name
 

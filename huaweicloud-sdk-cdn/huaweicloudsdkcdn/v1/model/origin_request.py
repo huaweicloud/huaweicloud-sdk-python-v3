@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OriginRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class OriginRequest:
     }
 
     def __init__(self, origin=None):
-        """OriginRequest - a model defined in huaweicloud sdk"""
+        """OriginRequest
+
+        The model defined in huaweicloud sdk
+
+        :param origin: 
+        :type origin: :class:`huaweicloudsdkcdn.v1.ResourceBody`
+        """
         
         
 
@@ -45,7 +50,7 @@ class OriginRequest:
 
 
         :return: The origin of this OriginRequest.
-        :rtype: ResourceBody
+        :rtype: :class:`huaweicloudsdkcdn.v1.ResourceBody`
         """
         return self._origin
 
@@ -55,7 +60,7 @@ class OriginRequest:
 
 
         :param origin: The origin of this OriginRequest.
-        :type: ResourceBody
+        :type origin: :class:`huaweicloudsdkcdn.v1.ResourceBody`
         """
         self._origin = origin
 

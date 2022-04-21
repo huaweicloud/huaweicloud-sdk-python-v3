@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EnvironmentCreate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class EnvironmentCreate:
     }
 
     def __init__(self, name=None, alias=None, description=None, enterprise_project_id=None, charge_mode=None, vpc_id=None, base_resources=None, optional_resources=None):
-        """EnvironmentCreate - a model defined in huaweicloud sdk"""
+        """EnvironmentCreate
+
+        The model defined in huaweicloud sdk
+
+        :param name: 环境名称。
+        :type name: str
+        :param alias: 环境别名。
+        :type alias: str
+        :param description: 环境描述。
+        :type description: str
+        :param enterprise_project_id: 企业项目ID。
+        :type enterprise_project_id: str
+        :param charge_mode: 
+        :type charge_mode: :class:`huaweicloudsdkservicestage.v2.ChargeMode`
+        :param vpc_id: 虚拟私有云ID。
+        :type vpc_id: str
+        :param base_resources: 基础资源。
+        :type base_resources: list[:class:`huaweicloudsdkservicestage.v2.Resource`]
+        :param optional_resources: 可选资源。
+        :type optional_resources: list[:class:`huaweicloudsdkservicestage.v2.Resource`]
+        """
         
         
 
@@ -90,7 +109,7 @@ class EnvironmentCreate:
         环境名称。
 
         :param name: The name of this EnvironmentCreate.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -112,7 +131,7 @@ class EnvironmentCreate:
         环境别名。
 
         :param alias: The alias of this EnvironmentCreate.
-        :type: str
+        :type alias: str
         """
         self._alias = alias
 
@@ -134,7 +153,7 @@ class EnvironmentCreate:
         环境描述。
 
         :param description: The description of this EnvironmentCreate.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -156,7 +175,7 @@ class EnvironmentCreate:
         企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this EnvironmentCreate.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -166,7 +185,7 @@ class EnvironmentCreate:
 
 
         :return: The charge_mode of this EnvironmentCreate.
-        :rtype: ChargeMode
+        :rtype: :class:`huaweicloudsdkservicestage.v2.ChargeMode`
         """
         return self._charge_mode
 
@@ -176,7 +195,7 @@ class EnvironmentCreate:
 
 
         :param charge_mode: The charge_mode of this EnvironmentCreate.
-        :type: ChargeMode
+        :type charge_mode: :class:`huaweicloudsdkservicestage.v2.ChargeMode`
         """
         self._charge_mode = charge_mode
 
@@ -198,7 +217,7 @@ class EnvironmentCreate:
         虚拟私有云ID。
 
         :param vpc_id: The vpc_id of this EnvironmentCreate.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -209,7 +228,7 @@ class EnvironmentCreate:
         基础资源。
 
         :return: The base_resources of this EnvironmentCreate.
-        :rtype: list[Resource]
+        :rtype: list[:class:`huaweicloudsdkservicestage.v2.Resource`]
         """
         return self._base_resources
 
@@ -220,7 +239,7 @@ class EnvironmentCreate:
         基础资源。
 
         :param base_resources: The base_resources of this EnvironmentCreate.
-        :type: list[Resource]
+        :type base_resources: list[:class:`huaweicloudsdkservicestage.v2.Resource`]
         """
         self._base_resources = base_resources
 
@@ -231,7 +250,7 @@ class EnvironmentCreate:
         可选资源。
 
         :return: The optional_resources of this EnvironmentCreate.
-        :rtype: list[Resource]
+        :rtype: list[:class:`huaweicloudsdkservicestage.v2.Resource`]
         """
         return self._optional_resources
 
@@ -242,7 +261,7 @@ class EnvironmentCreate:
         可选资源。
 
         :param optional_resources: The optional_resources of this EnvironmentCreate.
-        :type: list[Resource]
+        :type optional_resources: list[:class:`huaweicloudsdkservicestage.v2.Resource`]
         """
         self._optional_resources = optional_resources
 

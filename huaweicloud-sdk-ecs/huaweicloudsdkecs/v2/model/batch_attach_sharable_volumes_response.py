@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchAttachSharableVolumesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchAttachSharableVolumesResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """BatchAttachSharableVolumesResponse - a model defined in huaweicloud sdk"""
+        """BatchAttachSharableVolumesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 提交任务成功后返回的任务ID，用户可以使用该ID对任务执行情况进行查询。
+        :type job_id: str
+        """
         
         super(BatchAttachSharableVolumesResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class BatchAttachSharableVolumesResponse(SdkResponse):
         提交任务成功后返回的任务ID，用户可以使用该ID对任务执行情况进行查询。
 
         :param job_id: The job_id of this BatchAttachSharableVolumesResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 

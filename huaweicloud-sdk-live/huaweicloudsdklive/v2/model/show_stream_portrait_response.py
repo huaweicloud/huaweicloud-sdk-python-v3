@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowStreamPortraitResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowStreamPortraitResponse(SdkResponse):
     }
 
     def __init__(self, stream_portraits=None, x_request_id=None):
-        """ShowStreamPortraitResponse - a model defined in huaweicloud sdk"""
+        """ShowStreamPortraitResponse
+
+        The model defined in huaweicloud sdk
+
+        :param stream_portraits: 播放画像信息列表。
+        :type stream_portraits: list[:class:`huaweicloudsdklive.v2.StreamPortrait`]
+        :param x_request_id: 
+        :type x_request_id: str
+        """
         
         super(ShowStreamPortraitResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ShowStreamPortraitResponse(SdkResponse):
         播放画像信息列表。
 
         :return: The stream_portraits of this ShowStreamPortraitResponse.
-        :rtype: list[StreamPortrait]
+        :rtype: list[:class:`huaweicloudsdklive.v2.StreamPortrait`]
         """
         return self._stream_portraits
 
@@ -63,7 +70,7 @@ class ShowStreamPortraitResponse(SdkResponse):
         播放画像信息列表。
 
         :param stream_portraits: The stream_portraits of this ShowStreamPortraitResponse.
-        :type: list[StreamPortrait]
+        :type stream_portraits: list[:class:`huaweicloudsdklive.v2.StreamPortrait`]
         """
         self._stream_portraits = stream_portraits
 
@@ -83,7 +90,7 @@ class ShowStreamPortraitResponse(SdkResponse):
 
 
         :param x_request_id: The x_request_id of this ShowStreamPortraitResponse.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 

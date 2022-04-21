@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OutputWatermarkPara:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class OutputWatermarkPara:
     }
 
     def __init__(self, time_duration=None):
-        """OutputWatermarkPara - a model defined in huaweicloud sdk"""
+        """OutputWatermarkPara
+
+        The model defined in huaweicloud sdk
+
+        :param time_duration: 水印时长 
+        :type time_duration: int
+        """
         
         
 
@@ -58,7 +63,7 @@ class OutputWatermarkPara:
         水印时长 
 
         :param time_duration: The time_duration of this OutputWatermarkPara.
-        :type: int
+        :type time_duration: int
         """
         self._time_duration = time_duration
 

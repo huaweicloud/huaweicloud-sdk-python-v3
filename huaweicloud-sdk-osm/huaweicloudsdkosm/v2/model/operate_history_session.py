@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OperateHistorySession:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class OperateHistorySession:
     }
 
     def __init__(self, duration=None, session_id=None, start_time=None, end_time=None):
-        """OperateHistorySession - a model defined in huaweicloud sdk"""
+        """OperateHistorySession
+
+        The model defined in huaweicloud sdk
+
+        :param duration: 会话时长，格式：hh:ii:ss
+        :type duration: str
+        :param session_id: 会话id
+        :type session_id: int
+        :param start_time: 会话开始时间
+        :type start_time: str
+        :param end_time: 会话结束时间
+        :type end_time: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class OperateHistorySession:
         会话时长，格式：hh:ii:ss
 
         :param duration: The duration of this OperateHistorySession.
-        :type: str
+        :type duration: str
         """
         self._duration = duration
 
@@ -95,7 +106,7 @@ class OperateHistorySession:
         会话id
 
         :param session_id: The session_id of this OperateHistorySession.
-        :type: int
+        :type session_id: int
         """
         self._session_id = session_id
 
@@ -117,7 +128,7 @@ class OperateHistorySession:
         会话开始时间
 
         :param start_time: The start_time of this OperateHistorySession.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -139,7 +150,7 @@ class OperateHistorySession:
         会话结束时间
 
         :param end_time: The end_time of this OperateHistorySession.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 

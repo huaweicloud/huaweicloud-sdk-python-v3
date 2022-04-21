@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListListenersResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListListenersResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, page_info=None, listeners=None):
-        """ListListenersResponse - a model defined in huaweicloud sdk"""
+        """ListListenersResponse
+
+        The model defined in huaweicloud sdk
+
+        :param request_id: 请求ID。  注：自动生成 。
+        :type request_id: str
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`
+        :param listeners: Listener的列表。
+        :type listeners: list[:class:`huaweicloudsdkelb.v3.Listener`]
+        """
         
         super(ListListenersResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListListenersResponse(SdkResponse):
         请求ID。  注：自动生成 。
 
         :param request_id: The request_id of this ListListenersResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 
@@ -78,7 +87,7 @@ class ListListenersResponse(SdkResponse):
 
 
         :return: The page_info of this ListListenersResponse.
-        :rtype: PageInfo
+        :rtype: :class:`huaweicloudsdkelb.v3.PageInfo`
         """
         return self._page_info
 
@@ -88,7 +97,7 @@ class ListListenersResponse(SdkResponse):
 
 
         :param page_info: The page_info of this ListListenersResponse.
-        :type: PageInfo
+        :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`
         """
         self._page_info = page_info
 
@@ -99,7 +108,7 @@ class ListListenersResponse(SdkResponse):
         Listener的列表。
 
         :return: The listeners of this ListListenersResponse.
-        :rtype: list[Listener]
+        :rtype: list[:class:`huaweicloudsdkelb.v3.Listener`]
         """
         return self._listeners
 
@@ -110,7 +119,7 @@ class ListListenersResponse(SdkResponse):
         Listener的列表。
 
         :param listeners: The listeners of this ListListenersResponse.
-        :type: list[Listener]
+        :type listeners: list[:class:`huaweicloudsdkelb.v3.Listener`]
         """
         self._listeners = listeners
 

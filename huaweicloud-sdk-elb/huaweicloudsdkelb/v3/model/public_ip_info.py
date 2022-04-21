@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PublicIpInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class PublicIpInfo:
     }
 
     def __init__(self, publicip_id=None, publicip_address=None, ip_version=None):
-        """PublicIpInfo - a model defined in huaweicloud sdk"""
+        """PublicIpInfo
+
+        The model defined in huaweicloud sdk
+
+        :param publicip_id: 弹性公网ip配置id
+        :type publicip_id: str
+        :param publicip_address: IP地址
+        :type publicip_address: str
+        :param ip_version: IP版本信息。 取值： - 4：IPv4 - 6：IPv6  [不支持IPv6，请勿设置为6。](tag:dt,dt_test)
+        :type ip_version: int
+        """
         
         
 
@@ -65,7 +74,7 @@ class PublicIpInfo:
         弹性公网ip配置id
 
         :param publicip_id: The publicip_id of this PublicIpInfo.
-        :type: str
+        :type publicip_id: str
         """
         self._publicip_id = publicip_id
 
@@ -87,7 +96,7 @@ class PublicIpInfo:
         IP地址
 
         :param publicip_address: The publicip_address of this PublicIpInfo.
-        :type: str
+        :type publicip_address: str
         """
         self._publicip_address = publicip_address
 
@@ -109,7 +118,7 @@ class PublicIpInfo:
         IP版本信息。 取值： - 4：IPv4 - 6：IPv6  [不支持IPv6，请勿设置为6。](tag:dt,dt_test)
 
         :param ip_version: The ip_version of this PublicIpInfo.
-        :type: int
+        :type ip_version: int
         """
         self._ip_version = ip_version
 

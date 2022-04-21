@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowLastPropertyValueRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowLastPropertyValueRequest:
     }
 
     def __init__(self, asset_id=None, body=None):
-        """ShowLastPropertyValueRequest - a model defined in huaweicloud sdk"""
+        """ShowLastPropertyValueRequest
+
+        The model defined in huaweicloud sdk
+
+        :param asset_id: 资产ID
+        :type asset_id: str
+        :param body: Body of the ShowLastPropertyValueRequest
+        :type body: :class:`huaweicloudsdkiotanalytics.v1.LastAssetPropertyValueRequest`
+        """
         
         
 
@@ -62,7 +69,7 @@ class ShowLastPropertyValueRequest:
         资产ID
 
         :param asset_id: The asset_id of this ShowLastPropertyValueRequest.
-        :type: str
+        :type asset_id: str
         """
         self._asset_id = asset_id
 
@@ -72,7 +79,7 @@ class ShowLastPropertyValueRequest:
 
 
         :return: The body of this ShowLastPropertyValueRequest.
-        :rtype: LastAssetPropertyValueRequest
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.LastAssetPropertyValueRequest`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class ShowLastPropertyValueRequest:
 
 
         :param body: The body of this ShowLastPropertyValueRequest.
-        :type: LastAssetPropertyValueRequest
+        :type body: :class:`huaweicloudsdkiotanalytics.v1.LastAssetPropertyValueRequest`
         """
         self._body = body
 

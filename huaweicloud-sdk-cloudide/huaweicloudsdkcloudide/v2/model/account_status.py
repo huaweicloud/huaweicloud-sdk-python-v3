@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AccountStatus:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class AccountStatus:
     }
 
     def __init__(self, cur_org_create_role=None, cur_org_open=None, has_free_trial=None, show_manage=None):
-        """AccountStatus - a model defined in huaweicloud sdk"""
+        """AccountStatus
+
+        The model defined in huaweicloud sdk
+
+        :param cur_org_create_role: 是否有创建实例权限
+        :type cur_org_create_role: bool
+        :param cur_org_open: 帐号所属租户是否开通服务
+        :type cur_org_open: bool
+        :param has_free_trial: 免费试用
+        :type has_free_trial: bool
+        :param show_manage: 是否有管理入口的权限
+        :type show_manage: bool
+        """
         
         
 
@@ -73,7 +84,7 @@ class AccountStatus:
         是否有创建实例权限
 
         :param cur_org_create_role: The cur_org_create_role of this AccountStatus.
-        :type: bool
+        :type cur_org_create_role: bool
         """
         self._cur_org_create_role = cur_org_create_role
 
@@ -95,7 +106,7 @@ class AccountStatus:
         帐号所属租户是否开通服务
 
         :param cur_org_open: The cur_org_open of this AccountStatus.
-        :type: bool
+        :type cur_org_open: bool
         """
         self._cur_org_open = cur_org_open
 
@@ -117,7 +128,7 @@ class AccountStatus:
         免费试用
 
         :param has_free_trial: The has_free_trial of this AccountStatus.
-        :type: bool
+        :type has_free_trial: bool
         """
         self._has_free_trial = has_free_trial
 
@@ -139,7 +150,7 @@ class AccountStatus:
         是否有管理入口的权限
 
         :param show_manage: The show_manage of this AccountStatus.
-        :type: bool
+        :type show_manage: bool
         """
         self._show_manage = show_manage
 

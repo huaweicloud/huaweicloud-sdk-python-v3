@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FileCreate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class FileCreate:
     }
 
     def __init__(self, message=None, content=None):
-        """FileCreate - a model defined in huaweicloud sdk"""
+        """FileCreate
+
+        The model defined in huaweicloud sdk
+
+        :param message: 提交描述。
+        :type message: str
+        :param content: 经base64编码的文件内容。
+        :type content: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class FileCreate:
         提交描述。
 
         :param message: The message of this FileCreate.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -83,7 +90,7 @@ class FileCreate:
         经base64编码的文件内容。
 
         :param content: The content of this FileCreate.
-        :type: str
+        :type content: str
         """
         self._content = content
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchAddOrRemoveResourceInstanceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class BatchAddOrRemoveResourceInstanceRequest:
     }
 
     def __init__(self, resource_type=None, resource_id=None, body=None):
-        """BatchAddOrRemoveResourceInstanceRequest - a model defined in huaweicloud sdk"""
+        """BatchAddOrRemoveResourceInstanceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param resource_type: 资源类型，值为：endpoint_service或endpoint。
+        :type resource_type: str
+        :param resource_id: 资源ID，Endpoint ServiceID或Endpoint ID。
+        :type resource_id: str
+        :param body: Body of the BatchAddOrRemoveResourceInstanceRequest
+        :type body: :class:`huaweicloudsdkvpcep.v1.BatchAddOrRemoveResourceInstanceBody`
+        """
         
         
 
@@ -66,7 +75,7 @@ class BatchAddOrRemoveResourceInstanceRequest:
         资源类型，值为：endpoint_service或endpoint。
 
         :param resource_type: The resource_type of this BatchAddOrRemoveResourceInstanceRequest.
-        :type: str
+        :type resource_type: str
         """
         self._resource_type = resource_type
 
@@ -88,7 +97,7 @@ class BatchAddOrRemoveResourceInstanceRequest:
         资源ID，Endpoint ServiceID或Endpoint ID。
 
         :param resource_id: The resource_id of this BatchAddOrRemoveResourceInstanceRequest.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -98,7 +107,7 @@ class BatchAddOrRemoveResourceInstanceRequest:
 
 
         :return: The body of this BatchAddOrRemoveResourceInstanceRequest.
-        :rtype: BatchAddOrRemoveResourceInstanceBody
+        :rtype: :class:`huaweicloudsdkvpcep.v1.BatchAddOrRemoveResourceInstanceBody`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class BatchAddOrRemoveResourceInstanceRequest:
 
 
         :param body: The body of this BatchAddOrRemoveResourceInstanceRequest.
-        :type: BatchAddOrRemoveResourceInstanceBody
+        :type body: :class:`huaweicloudsdkvpcep.v1.BatchAddOrRemoveResourceInstanceBody`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LiveDetectFaceUrlReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class LiveDetectFaceUrlReq:
     }
 
     def __init__(self, image_url=None):
-        """LiveDetectFaceUrlReq - a model defined in huaweicloud sdk"""
+        """LiveDetectFaceUrlReq
+
+        The model defined in huaweicloud sdk
+
+        :param image_url: 图片的URL路径，目前仅支持华为云上OBS的URL，且人脸识别服务有权限读取该OBS桶的数据。开通读取权限的操作请参见[申请服务](https://support.huaweicloud.com/api-face/face_02_0006.html)。
+        :type image_url: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class LiveDetectFaceUrlReq:
         图片的URL路径，目前仅支持华为云上OBS的URL，且人脸识别服务有权限读取该OBS桶的数据。开通读取权限的操作请参见[申请服务](https://support.huaweicloud.com/api-face/face_02_0006.html)。
 
         :param image_url: The image_url of this LiveDetectFaceUrlReq.
-        :type: str
+        :type image_url: str
         """
         self._image_url = image_url
 

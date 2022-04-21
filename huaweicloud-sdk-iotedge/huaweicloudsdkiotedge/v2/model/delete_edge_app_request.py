@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteEdgeAppRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteEdgeAppRequest:
     }
 
     def __init__(self, edge_app_id=None):
-        """DeleteEdgeAppRequest - a model defined in huaweicloud sdk"""
+        """DeleteEdgeAppRequest
+
+        The model defined in huaweicloud sdk
+
+        :param edge_app_id: 应用ID，应用唯一。
+        :type edge_app_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteEdgeAppRequest:
         应用ID，应用唯一。
 
         :param edge_app_id: The edge_app_id of this DeleteEdgeAppRequest.
-        :type: str
+        :type edge_app_id: str
         """
         self._edge_app_id = edge_app_id
 

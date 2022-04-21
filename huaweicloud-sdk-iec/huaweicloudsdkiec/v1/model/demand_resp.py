@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DemandResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DemandResp:
     }
 
     def __init__(self, demand_count=None):
-        """DemandResp - a model defined in huaweicloud sdk"""
+        """DemandResp
+
+        The model defined in huaweicloud sdk
+
+        :param demand_count: 站点需要发放的资源(组)总数。  &gt; 实际发放实例数量为count*demand_count。
+        :type demand_count: int
+        """
         
         
 
@@ -57,7 +62,7 @@ class DemandResp:
         站点需要发放的资源(组)总数。  > 实际发放实例数量为count*demand_count。
 
         :param demand_count: The demand_count of this DemandResp.
-        :type: int
+        :type demand_count: int
         """
         self._demand_count = demand_count
 

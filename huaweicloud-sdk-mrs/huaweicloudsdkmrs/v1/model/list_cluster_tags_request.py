@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListClusterTagsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListClusterTagsRequest:
     }
 
     def __init__(self, cluster_id=None):
-        """ListClusterTagsRequest - a model defined in huaweicloud sdk"""
+        """ListClusterTagsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 集群ID。获取方法，请参见[获取集群ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
+        :type cluster_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ListClusterTagsRequest:
         集群ID。获取方法，请参见[获取集群ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
 
         :param cluster_id: The cluster_id of this ListClusterTagsRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 

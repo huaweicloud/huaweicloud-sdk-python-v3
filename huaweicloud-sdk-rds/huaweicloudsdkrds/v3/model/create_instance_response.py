@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateInstanceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateInstanceResponse(SdkResponse):
     }
 
     def __init__(self, instance=None, job_id=None, order_id=None):
-        """CreateInstanceResponse - a model defined in huaweicloud sdk"""
+        """CreateInstanceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param instance: 
+        :type instance: :class:`huaweicloudsdkrds.v3.CreateInstanceRespItem`
+        :param job_id: 实例创建的任务id。  仅创建按需实例时会返回该参数。
+        :type job_id: str
+        :param order_id: 订单号，创建包年包月时返回该参数。
+        :type order_id: str
+        """
         
         super(CreateInstanceResponse, self).__init__()
 
@@ -56,7 +65,7 @@ class CreateInstanceResponse(SdkResponse):
 
 
         :return: The instance of this CreateInstanceResponse.
-        :rtype: CreateInstanceRespItem
+        :rtype: :class:`huaweicloudsdkrds.v3.CreateInstanceRespItem`
         """
         return self._instance
 
@@ -66,7 +75,7 @@ class CreateInstanceResponse(SdkResponse):
 
 
         :param instance: The instance of this CreateInstanceResponse.
-        :type: CreateInstanceRespItem
+        :type instance: :class:`huaweicloudsdkrds.v3.CreateInstanceRespItem`
         """
         self._instance = instance
 
@@ -88,7 +97,7 @@ class CreateInstanceResponse(SdkResponse):
         实例创建的任务id。  仅创建按需实例时会返回该参数。
 
         :param job_id: The job_id of this CreateInstanceResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -110,7 +119,7 @@ class CreateInstanceResponse(SdkResponse):
         订单号，创建包年包月时返回该参数。
 
         :param order_id: The order_id of this CreateInstanceResponse.
-        :type: str
+        :type order_id: str
         """
         self._order_id = order_id
 

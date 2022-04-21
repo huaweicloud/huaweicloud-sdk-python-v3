@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AvailabilityZone:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class AvailabilityZone:
     }
 
     def __init__(self, code=None, state=None, protocol=None):
-        """AvailabilityZone - a model defined in huaweicloud sdk"""
+        """AvailabilityZone
+
+        The model defined in huaweicloud sdk
+
+        :param code: 可用区唯一编码。
+        :type code: str
+        :param state: 可用区状态。  取值：ACTIVE。
+        :type state: str
+        :param protocol: 未售罄的LB规格类别。取值： - L4：表示网络型LB未售罄。 - L7：表示应用型LB未售罄。
+        :type protocol: list[str]
+        """
         
         
 
@@ -66,7 +75,7 @@ class AvailabilityZone:
         可用区唯一编码。
 
         :param code: The code of this AvailabilityZone.
-        :type: str
+        :type code: str
         """
         self._code = code
 
@@ -88,7 +97,7 @@ class AvailabilityZone:
         可用区状态。  取值：ACTIVE。
 
         :param state: The state of this AvailabilityZone.
-        :type: str
+        :type state: str
         """
         self._state = state
 
@@ -110,7 +119,7 @@ class AvailabilityZone:
         未售罄的LB规格类别。取值： - L4：表示网络型LB未售罄。 - L7：表示应用型LB未售罄。
 
         :param protocol: The protocol of this AvailabilityZone.
-        :type: list[str]
+        :type protocol: list[str]
         """
         self._protocol = protocol
 

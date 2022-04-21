@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateNotificationRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateNotificationRequest:
     }
 
     def __init__(self, instance_id=None, notification_id=None, body=None):
-        """UpdateNotificationRequest - a model defined in huaweicloud sdk"""
+        """UpdateNotificationRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param notification_id: 订阅管理ID
+        :type notification_id: int
+        :param body: Body of the UpdateNotificationRequest
+        :type body: :class:`huaweicloudsdkroma.v2.UpdateNotificationRequestBody`
+        """
         
         
 
@@ -66,7 +75,7 @@ class UpdateNotificationRequest:
         实例ID
 
         :param instance_id: The instance_id of this UpdateNotificationRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -88,7 +97,7 @@ class UpdateNotificationRequest:
         订阅管理ID
 
         :param notification_id: The notification_id of this UpdateNotificationRequest.
-        :type: int
+        :type notification_id: int
         """
         self._notification_id = notification_id
 
@@ -98,7 +107,7 @@ class UpdateNotificationRequest:
 
 
         :return: The body of this UpdateNotificationRequest.
-        :rtype: UpdateNotificationRequestBody
+        :rtype: :class:`huaweicloudsdkroma.v2.UpdateNotificationRequestBody`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class UpdateNotificationRequest:
 
 
         :param body: The body of this UpdateNotificationRequest.
-        :type: UpdateNotificationRequestBody
+        :type body: :class:`huaweicloudsdkroma.v2.UpdateNotificationRequestBody`
         """
         self._body = body
 

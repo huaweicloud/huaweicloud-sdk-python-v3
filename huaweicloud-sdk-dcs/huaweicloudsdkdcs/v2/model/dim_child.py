@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DimChild:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DimChild:
     }
 
     def __init__(self, dim_name=None, dim_route=None):
-        """DimChild - a model defined in huaweicloud sdk"""
+        """DimChild
+
+        The model defined in huaweicloud sdk
+
+        :param dim_name: 维度名称，当前支持维度有dcs_instance_id、dcs_cluster_redis_node、 dcs_cluster_proxy_node和dcs_memcached_instance_id。
+        :type dim_name: str
+        :param dim_route: 维度的路由，结构为主维度名称,当前维度名称，比如： dim_name字段为dcs_cluster_redis_node时，这个字段的值为dcs_instance_id,dcs_cluster_redis_node。
+        :type dim_route: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class DimChild:
         维度名称，当前支持维度有dcs_instance_id、dcs_cluster_redis_node、 dcs_cluster_proxy_node和dcs_memcached_instance_id。
 
         :param dim_name: The dim_name of this DimChild.
-        :type: str
+        :type dim_name: str
         """
         self._dim_name = dim_name
 
@@ -85,7 +92,7 @@ class DimChild:
         维度的路由，结构为主维度名称,当前维度名称，比如： dim_name字段为dcs_cluster_redis_node时，这个字段的值为dcs_instance_id,dcs_cluster_redis_node。
 
         :param dim_route: The dim_route of this DimChild.
-        :type: str
+        :type dim_route: str
         """
         self._dim_route = dim_route
 

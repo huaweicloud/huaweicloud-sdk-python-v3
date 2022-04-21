@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteBatchTaskFileRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteBatchTaskFileRequest:
     }
 
     def __init__(self, instance_id=None, file_id=None):
-        """DeleteBatchTaskFileRequest - a model defined in huaweicloud sdk"""
+        """DeleteBatchTaskFileRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
+        :type instance_id: str
+        :param file_id: **参数说明**：要删除的批量任务文件ID。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
+        :type file_id: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class DeleteBatchTaskFileRequest:
         **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
         :param instance_id: The instance_id of this DeleteBatchTaskFileRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -84,7 +91,7 @@ class DeleteBatchTaskFileRequest:
         **参数说明**：要删除的批量任务文件ID。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :param file_id: The file_id of this DeleteBatchTaskFileRequest.
-        :type: str
+        :type file_id: str
         """
         self._file_id = file_id
 

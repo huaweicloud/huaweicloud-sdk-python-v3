@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RtcHistoryUsage:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class RtcHistoryUsage:
     }
 
     def __init__(self, date=None, video_sd=None, video_hd=None, video_hdp=None, audio=None, total_duration=None):
-        """RtcHistoryUsage - a model defined in huaweicloud sdk"""
+        """RtcHistoryUsage
+
+        The model defined in huaweicloud sdk
+
+        :param date: 采样时间。日期格式按照ISO8601表示法，并使用UTC时间。格式为YYYY-MM-DD
+        :type date: str
+        :param video_sd: 标清视频时长，单位秒
+        :type video_sd: int
+        :param video_hd: 高清视频时长，单位秒
+        :type video_hd: int
+        :param video_hdp: 超高清视频时长，单位秒
+        :type video_hdp: int
+        :param audio: 音频时长，单位秒
+        :type audio: int
+        :param total_duration: 音视频总时长，单位秒
+        :type total_duration: int
+        """
         
         
 
@@ -83,7 +98,7 @@ class RtcHistoryUsage:
         采样时间。日期格式按照ISO8601表示法，并使用UTC时间。格式为YYYY-MM-DD
 
         :param date: The date of this RtcHistoryUsage.
-        :type: str
+        :type date: str
         """
         self._date = date
 
@@ -105,7 +120,7 @@ class RtcHistoryUsage:
         标清视频时长，单位秒
 
         :param video_sd: The video_sd of this RtcHistoryUsage.
-        :type: int
+        :type video_sd: int
         """
         self._video_sd = video_sd
 
@@ -127,7 +142,7 @@ class RtcHistoryUsage:
         高清视频时长，单位秒
 
         :param video_hd: The video_hd of this RtcHistoryUsage.
-        :type: int
+        :type video_hd: int
         """
         self._video_hd = video_hd
 
@@ -149,7 +164,7 @@ class RtcHistoryUsage:
         超高清视频时长，单位秒
 
         :param video_hdp: The video_hdp of this RtcHistoryUsage.
-        :type: int
+        :type video_hdp: int
         """
         self._video_hdp = video_hdp
 
@@ -171,7 +186,7 @@ class RtcHistoryUsage:
         音频时长，单位秒
 
         :param audio: The audio of this RtcHistoryUsage.
-        :type: int
+        :type audio: int
         """
         self._audio = audio
 
@@ -193,7 +208,7 @@ class RtcHistoryUsage:
         音视频总时长，单位秒
 
         :param total_duration: The total_duration of this RtcHistoryUsage.
-        :type: int
+        :type total_duration: int
         """
         self._total_duration = total_duration
 

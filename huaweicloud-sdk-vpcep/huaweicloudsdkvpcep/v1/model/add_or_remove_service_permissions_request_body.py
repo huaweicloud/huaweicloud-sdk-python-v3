@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddOrRemoveServicePermissionsRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AddOrRemoveServicePermissionsRequestBody:
     }
 
     def __init__(self, permissions=None, action=None):
-        """AddOrRemoveServicePermissionsRequestBody - a model defined in huaweicloud sdk"""
+        """AddOrRemoveServicePermissionsRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param permissions: permission列表。 权限格式为：iam:domain::domain_id 其中， ● “iam:domain::”为固定格式。 ● “domain_id”为可连接用户的帐号ID。 支持输入1~64个字符，包括“a~z”、 “A~Z”、“0~9”或者“*”。“*”表示 所有终端节点可连接。 例如：iam:domain:: 6e9dfd51d1124e8d8498dce894923a0dd
+        :type permissions: list[str]
+        :param action: 要执行的操作。 add/remove。
+        :type action: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class AddOrRemoveServicePermissionsRequestBody:
         permission列表。 权限格式为：iam:domain::domain_id 其中， ● “iam:domain::”为固定格式。 ● “domain_id”为可连接用户的帐号ID。 支持输入1~64个字符，包括“a~z”、 “A~Z”、“0~9”或者“*”。“*”表示 所有终端节点可连接。 例如：iam:domain:: 6e9dfd51d1124e8d8498dce894923a0dd
 
         :param permissions: The permissions of this AddOrRemoveServicePermissionsRequestBody.
-        :type: list[str]
+        :type permissions: list[str]
         """
         self._permissions = permissions
 
@@ -83,7 +90,7 @@ class AddOrRemoveServicePermissionsRequestBody:
         要执行的操作。 add/remove。
 
         :param action: The action of this AddOrRemoveServicePermissionsRequestBody.
-        :type: str
+        :type action: str
         """
         self._action = action
 

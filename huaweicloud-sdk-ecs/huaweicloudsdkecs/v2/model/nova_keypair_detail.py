@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NovaKeypairDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class NovaKeypairDetail:
     }
 
     def __init__(self, public_key=None, name=None, fingerprint=None, created_at=None, deleted=None, deleted_at=None, id=None, updated_at=None, user_id=None, type=None):
-        """NovaKeypairDetail - a model defined in huaweicloud sdk"""
+        """NovaKeypairDetail
+
+        The model defined in huaweicloud sdk
+
+        :param public_key: 密钥对应publicKey信息。
+        :type public_key: str
+        :param name: 密钥名称。
+        :type name: str
+        :param fingerprint: 密钥对应指纹信息。
+        :type fingerprint: str
+        :param created_at: 密钥创建时间。
+        :type created_at: datetime
+        :param deleted: 密钥删除标记。   - true，表示密钥已被删除。   - false，表示密钥未被删除。
+        :type deleted: bool
+        :param deleted_at: 密钥删除时间。
+        :type deleted_at: datetime
+        :param id: 密钥ID。
+        :type id: int
+        :param updated_at: 密钥更新时间。
+        :type updated_at: datetime
+        :param user_id: 密钥所属用户信息。
+        :type user_id: str
+        :param type: 密钥类型，默认“ssh”  微版本2.2以上支持
+        :type type: str
+        """
         
         
 
@@ -94,7 +117,7 @@ class NovaKeypairDetail:
         密钥对应publicKey信息。
 
         :param public_key: The public_key of this NovaKeypairDetail.
-        :type: str
+        :type public_key: str
         """
         self._public_key = public_key
 
@@ -116,7 +139,7 @@ class NovaKeypairDetail:
         密钥名称。
 
         :param name: The name of this NovaKeypairDetail.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -138,7 +161,7 @@ class NovaKeypairDetail:
         密钥对应指纹信息。
 
         :param fingerprint: The fingerprint of this NovaKeypairDetail.
-        :type: str
+        :type fingerprint: str
         """
         self._fingerprint = fingerprint
 
@@ -160,7 +183,7 @@ class NovaKeypairDetail:
         密钥创建时间。
 
         :param created_at: The created_at of this NovaKeypairDetail.
-        :type: datetime
+        :type created_at: datetime
         """
         self._created_at = created_at
 
@@ -182,7 +205,7 @@ class NovaKeypairDetail:
         密钥删除标记。   - true，表示密钥已被删除。   - false，表示密钥未被删除。
 
         :param deleted: The deleted of this NovaKeypairDetail.
-        :type: bool
+        :type deleted: bool
         """
         self._deleted = deleted
 
@@ -204,7 +227,7 @@ class NovaKeypairDetail:
         密钥删除时间。
 
         :param deleted_at: The deleted_at of this NovaKeypairDetail.
-        :type: datetime
+        :type deleted_at: datetime
         """
         self._deleted_at = deleted_at
 
@@ -226,7 +249,7 @@ class NovaKeypairDetail:
         密钥ID。
 
         :param id: The id of this NovaKeypairDetail.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -248,7 +271,7 @@ class NovaKeypairDetail:
         密钥更新时间。
 
         :param updated_at: The updated_at of this NovaKeypairDetail.
-        :type: datetime
+        :type updated_at: datetime
         """
         self._updated_at = updated_at
 
@@ -270,7 +293,7 @@ class NovaKeypairDetail:
         密钥所属用户信息。
 
         :param user_id: The user_id of this NovaKeypairDetail.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -292,7 +315,7 @@ class NovaKeypairDetail:
         密钥类型，默认“ssh”  微版本2.2以上支持
 
         :param type: The type of this NovaKeypairDetail.
-        :type: str
+        :type type: str
         """
         self._type = type
 

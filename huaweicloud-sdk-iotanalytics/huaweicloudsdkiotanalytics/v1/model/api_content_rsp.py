@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApiContentRsp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ApiContentRsp:
     }
 
     def __init__(self, name=None, url=None):
-        """ApiContentRsp - a model defined in huaweicloud sdk"""
+        """ApiContentRsp
+
+        The model defined in huaweicloud sdk
+
+        :param name: 数据源名称
+        :type name: str
+        :param url: 数据上报url
+        :type url: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class ApiContentRsp:
         数据源名称
 
         :param name: The name of this ApiContentRsp.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -85,7 +92,7 @@ class ApiContentRsp:
         数据上报url
 
         :param url: The url of this ApiContentRsp.
-        :type: str
+        :type url: str
         """
         self._url = url
 

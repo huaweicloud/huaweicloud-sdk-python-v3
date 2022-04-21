@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddonInstance:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class AddonInstance:
     }
 
     def __init__(self, kind=None, api_version=None, metadata=None, spec=None, status=None):
-        """AddonInstance - a model defined in huaweicloud sdk"""
+        """AddonInstance
+
+        The model defined in huaweicloud sdk
+
+        :param kind: API类型，固定值“Addon”，该值不可修改。
+        :type kind: str
+        :param api_version: API版本，固定值“v3”，该值不可修改。
+        :type api_version: str
+        :param metadata: 
+        :type metadata: :class:`huaweicloudsdkcce.v3.Metadata`
+        :param spec: 
+        :type spec: :class:`huaweicloudsdkcce.v3.InstanceSpec`
+        :param status: 
+        :type status: :class:`huaweicloudsdkcce.v3.AddonInstanceStatus`
+        """
         
         
 
@@ -74,7 +87,7 @@ class AddonInstance:
         API类型，固定值“Addon”，该值不可修改。
 
         :param kind: The kind of this AddonInstance.
-        :type: str
+        :type kind: str
         """
         self._kind = kind
 
@@ -96,7 +109,7 @@ class AddonInstance:
         API版本，固定值“v3”，该值不可修改。
 
         :param api_version: The api_version of this AddonInstance.
-        :type: str
+        :type api_version: str
         """
         self._api_version = api_version
 
@@ -106,7 +119,7 @@ class AddonInstance:
 
 
         :return: The metadata of this AddonInstance.
-        :rtype: Metadata
+        :rtype: :class:`huaweicloudsdkcce.v3.Metadata`
         """
         return self._metadata
 
@@ -116,7 +129,7 @@ class AddonInstance:
 
 
         :param metadata: The metadata of this AddonInstance.
-        :type: Metadata
+        :type metadata: :class:`huaweicloudsdkcce.v3.Metadata`
         """
         self._metadata = metadata
 
@@ -126,7 +139,7 @@ class AddonInstance:
 
 
         :return: The spec of this AddonInstance.
-        :rtype: InstanceSpec
+        :rtype: :class:`huaweicloudsdkcce.v3.InstanceSpec`
         """
         return self._spec
 
@@ -136,7 +149,7 @@ class AddonInstance:
 
 
         :param spec: The spec of this AddonInstance.
-        :type: InstanceSpec
+        :type spec: :class:`huaweicloudsdkcce.v3.InstanceSpec`
         """
         self._spec = spec
 
@@ -146,7 +159,7 @@ class AddonInstance:
 
 
         :return: The status of this AddonInstance.
-        :rtype: AddonInstanceStatus
+        :rtype: :class:`huaweicloudsdkcce.v3.AddonInstanceStatus`
         """
         return self._status
 
@@ -156,7 +169,7 @@ class AddonInstance:
 
 
         :param status: The status of this AddonInstance.
-        :type: AddonInstanceStatus
+        :type status: :class:`huaweicloudsdkcce.v3.AddonInstanceStatus`
         """
         self._status = status
 

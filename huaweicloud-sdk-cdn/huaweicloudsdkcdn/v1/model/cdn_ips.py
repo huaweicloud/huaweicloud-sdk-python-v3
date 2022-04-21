@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CdnIps:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class CdnIps:
     }
 
     def __init__(self, ip=None, belongs=None, region=None, isp=None, platform=None):
-        """CdnIps - a model defined in huaweicloud sdk"""
+        """CdnIps
+
+        The model defined in huaweicloud sdk
+
+        :param ip: 需查询的IP地址。
+        :type ip: str
+        :param belongs: 是否是华为云CDN节点。（true:是华为云CDN节点，false:不是华为云CDN节点）
+        :type belongs: bool
+        :param region: IP归属地省份。（Unknown:表示未知归属地）
+        :type region: str
+        :param isp: 运营商名称。如果IP归属地未知，该字段返回null。
+        :type isp: str
+        :param platform: 平台。如果IP归属地未知，该字段返回null。
+        :type platform: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class CdnIps:
         需查询的IP地址。
 
         :param ip: The ip of this CdnIps.
-        :type: str
+        :type ip: str
         """
         self._ip = ip
 
@@ -100,7 +113,7 @@ class CdnIps:
         是否是华为云CDN节点。（true:是华为云CDN节点，false:不是华为云CDN节点）
 
         :param belongs: The belongs of this CdnIps.
-        :type: bool
+        :type belongs: bool
         """
         self._belongs = belongs
 
@@ -122,7 +135,7 @@ class CdnIps:
         IP归属地省份。（Unknown:表示未知归属地）
 
         :param region: The region of this CdnIps.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -144,7 +157,7 @@ class CdnIps:
         运营商名称。如果IP归属地未知，该字段返回null。
 
         :param isp: The isp of this CdnIps.
-        :type: str
+        :type isp: str
         """
         self._isp = isp
 
@@ -166,7 +179,7 @@ class CdnIps:
         平台。如果IP归属地未知，该字段返回null。
 
         :param platform: The platform of this CdnIps.
-        :type: str
+        :type platform: str
         """
         self._platform = platform
 

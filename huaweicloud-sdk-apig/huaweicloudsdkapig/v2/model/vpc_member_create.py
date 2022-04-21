@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VpcMemberCreate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class VpcMemberCreate:
     }
 
     def __init__(self, members=None):
-        """VpcMemberCreate - a model defined in huaweicloud sdk"""
+        """VpcMemberCreate
+
+        The model defined in huaweicloud sdk
+
+        :param members: 后端实例列表
+        :type members: list[:class:`huaweicloudsdkapig.v2.MemberInfo`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class VpcMemberCreate:
         后端实例列表
 
         :return: The members of this VpcMemberCreate.
-        :rtype: list[MemberInfo]
+        :rtype: list[:class:`huaweicloudsdkapig.v2.MemberInfo`]
         """
         return self._members
 
@@ -57,7 +62,7 @@ class VpcMemberCreate:
         后端实例列表
 
         :param members: The members of this VpcMemberCreate.
-        :type: list[MemberInfo]
+        :type members: list[:class:`huaweicloudsdkapig.v2.MemberInfo`]
         """
         self._members = members
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TaskInputVcn:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class TaskInputVcn:
     }
 
     def __init__(self, ip=None, port=None, username=None, password=None):
-        """TaskInputVcn - a model defined in huaweicloud sdk"""
+        """TaskInputVcn
+
+        The model defined in huaweicloud sdk
+
+        :param ip: VCN服务器的IP地址，仅输入类型为vcn时需填且必填。
+        :type ip: str
+        :param port: VCN服务器的端口号，仅输入类型为vcn时需填且必填。
+        :type port: int
+        :param username: VCN服务器的账号名，仅输入类型为vcn时需填且必填。
+        :type username: str
+        :param password: VCN服务器的与账号对应的密码，仅输入类型为vcn时需填且必填。
+        :type password: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class TaskInputVcn:
         VCN服务器的IP地址，仅输入类型为vcn时需填且必填。
 
         :param ip: The ip of this TaskInputVcn.
-        :type: str
+        :type ip: str
         """
         self._ip = ip
 
@@ -91,7 +102,7 @@ class TaskInputVcn:
         VCN服务器的端口号，仅输入类型为vcn时需填且必填。
 
         :param port: The port of this TaskInputVcn.
-        :type: int
+        :type port: int
         """
         self._port = port
 
@@ -113,7 +124,7 @@ class TaskInputVcn:
         VCN服务器的账号名，仅输入类型为vcn时需填且必填。
 
         :param username: The username of this TaskInputVcn.
-        :type: str
+        :type username: str
         """
         self._username = username
 
@@ -135,7 +146,7 @@ class TaskInputVcn:
         VCN服务器的与账号对应的密码，仅输入类型为vcn时需填且必填。
 
         :param password: The password of this TaskInputVcn.
-        :type: str
+        :type password: str
         """
         self._password = password
 

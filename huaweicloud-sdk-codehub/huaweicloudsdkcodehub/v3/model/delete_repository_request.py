@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteRepositoryRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteRepositoryRequest:
     }
 
     def __init__(self, repository_uuid=None):
-        """DeleteRepositoryRequest - a model defined in huaweicloud sdk"""
+        """DeleteRepositoryRequest
+
+        The model defined in huaweicloud sdk
+
+        :param repository_uuid: 仓库uuid，用来指定删除的仓库
+        :type repository_uuid: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteRepositoryRequest:
         仓库uuid，用来指定删除的仓库
 
         :param repository_uuid: The repository_uuid of this DeleteRepositoryRequest.
-        :type: str
+        :type repository_uuid: str
         """
         self._repository_uuid = repository_uuid
 

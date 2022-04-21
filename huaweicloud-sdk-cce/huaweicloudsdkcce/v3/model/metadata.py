@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Metadata:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class Metadata:
     }
 
     def __init__(self, uid=None, name=None, labels=None, annotations=None, update_timestamp=None, creation_timestamp=None):
-        """Metadata - a model defined in huaweicloud sdk"""
+        """Metadata
+
+        The model defined in huaweicloud sdk
+
+        :param uid: 唯一id标识
+        :type uid: str
+        :param name: 插件名称
+        :type name: str
+        :param labels: 插件标签，key/value对格式，接口保留字段，填写不会生效
+        :type labels: dict(str, str)
+        :param annotations: 插件注解，由key/value组成 - 安装：固定值为{\&quot;addon.install/type\&quot;:\&quot;install\&quot;} - 升级：固定值为{\&quot;addon.upgrade/type\&quot;:\&quot;upgrade\&quot;} 
+        :type annotations: dict(str, str)
+        :param update_timestamp: 更新时间
+        :type update_timestamp: date
+        :param creation_timestamp: 创建时间
+        :type creation_timestamp: date
+        """
         
         
 
@@ -83,7 +98,7 @@ class Metadata:
         唯一id标识
 
         :param uid: The uid of this Metadata.
-        :type: str
+        :type uid: str
         """
         self._uid = uid
 
@@ -105,7 +120,7 @@ class Metadata:
         插件名称
 
         :param name: The name of this Metadata.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -127,7 +142,7 @@ class Metadata:
         插件标签，key/value对格式，接口保留字段，填写不会生效
 
         :param labels: The labels of this Metadata.
-        :type: dict(str, str)
+        :type labels: dict(str, str)
         """
         self._labels = labels
 
@@ -149,7 +164,7 @@ class Metadata:
         插件注解，由key/value组成 - 安装：固定值为{\"addon.install/type\":\"install\"} - 升级：固定值为{\"addon.upgrade/type\":\"upgrade\"} 
 
         :param annotations: The annotations of this Metadata.
-        :type: dict(str, str)
+        :type annotations: dict(str, str)
         """
         self._annotations = annotations
 
@@ -171,7 +186,7 @@ class Metadata:
         更新时间
 
         :param update_timestamp: The update_timestamp of this Metadata.
-        :type: date
+        :type update_timestamp: date
         """
         self._update_timestamp = update_timestamp
 
@@ -193,7 +208,7 @@ class Metadata:
         创建时间
 
         :param creation_timestamp: The creation_timestamp of this Metadata.
-        :type: date
+        :type creation_timestamp: date
         """
         self._creation_timestamp = creation_timestamp
 

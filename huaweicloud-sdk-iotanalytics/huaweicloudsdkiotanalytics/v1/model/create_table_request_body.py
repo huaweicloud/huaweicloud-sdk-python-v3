@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateTableRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class CreateTableRequestBody:
     }
 
     def __init__(self, tags=None, table_name=None, table_alias=None, description=None, columns=None, data_type=None, data_source=None, data_store_id=None, with_column_header=None, delimiter=None, quote_char=None, escape_char=None, date_format=None, timestamp_format=None):
-        """CreateTableRequestBody - a model defined in huaweicloud sdk"""
+        """CreateTableRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param tags: 标签。只能包含数字、英文字母、中文字符、下划线、中划线、逗号以及斜杠。长度为0~128。
+        :type tags: str
+        :param table_name: 新增表名称。
+        :type table_name: str
+        :param table_alias: 新增表别名。只能包含数字、英文字母、中文字符、下划线以及中划线。长度为0~32。
+        :type table_alias: str
+        :param description: 新增表的描述信息。
+        :type description: str
+        :param columns: 新增表的描述信息。
+        :type columns: list[:class:`huaweicloudsdkiotanalytics.v1.Column`]
+        :param data_type: 新增表的数据类型，目前支持：Parquet、CSV格式。
+        :type data_type: str
+        :param data_source: 数据来源。来源类型有：pipeline, default. 默认为default.
+        :type data_source: str
+        :param data_store_id: 仅当数据来源为pipeline时使用。数据的Data Store ID.
+        :type data_store_id: str
+        :param with_column_header: 表数据是否包含表头。只有CSV类型数据具有该属性。
+        :type with_column_header: bool
+        :param delimiter: 用户自定义数据分隔符。只有CSV类型数据具有该属性。
+        :type delimiter: str
+        :param quote_char: 用户自定义引用字符，默认为双引号（即“\&quot;”）。只有CSV类型数据具有该属性。
+        :type quote_char: str
+        :param escape_char: 用户自定义转义字符，默认为反斜杠（即\\）。只有CSV类型数据具有该属性。
+        :type escape_char: str
+        :param date_format: 用户自定义日期类型，默认格式为“yyyy-MM-dd”。日期格式字符定义详见表3。只有CSV和JSON类型数据具有该属性。
+        :type date_format: str
+        :param timestamp_format: 用户自定义时间类型。默认格式为“yyyy-MM-dd HH:mm:ss”。时间戳格式字符定义详见表3。只有CSV和JSON类型数据具有该属性。
+        :type timestamp_format: str
+        """
         
         
 
@@ -120,7 +151,7 @@ class CreateTableRequestBody:
         标签。只能包含数字、英文字母、中文字符、下划线、中划线、逗号以及斜杠。长度为0~128。
 
         :param tags: The tags of this CreateTableRequestBody.
-        :type: str
+        :type tags: str
         """
         self._tags = tags
 
@@ -142,7 +173,7 @@ class CreateTableRequestBody:
         新增表名称。
 
         :param table_name: The table_name of this CreateTableRequestBody.
-        :type: str
+        :type table_name: str
         """
         self._table_name = table_name
 
@@ -164,7 +195,7 @@ class CreateTableRequestBody:
         新增表别名。只能包含数字、英文字母、中文字符、下划线以及中划线。长度为0~32。
 
         :param table_alias: The table_alias of this CreateTableRequestBody.
-        :type: str
+        :type table_alias: str
         """
         self._table_alias = table_alias
 
@@ -186,7 +217,7 @@ class CreateTableRequestBody:
         新增表的描述信息。
 
         :param description: The description of this CreateTableRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -197,7 +228,7 @@ class CreateTableRequestBody:
         新增表的描述信息。
 
         :return: The columns of this CreateTableRequestBody.
-        :rtype: list[Column]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.Column`]
         """
         return self._columns
 
@@ -208,7 +239,7 @@ class CreateTableRequestBody:
         新增表的描述信息。
 
         :param columns: The columns of this CreateTableRequestBody.
-        :type: list[Column]
+        :type columns: list[:class:`huaweicloudsdkiotanalytics.v1.Column`]
         """
         self._columns = columns
 
@@ -230,7 +261,7 @@ class CreateTableRequestBody:
         新增表的数据类型，目前支持：Parquet、CSV格式。
 
         :param data_type: The data_type of this CreateTableRequestBody.
-        :type: str
+        :type data_type: str
         """
         self._data_type = data_type
 
@@ -252,7 +283,7 @@ class CreateTableRequestBody:
         数据来源。来源类型有：pipeline, default. 默认为default.
 
         :param data_source: The data_source of this CreateTableRequestBody.
-        :type: str
+        :type data_source: str
         """
         self._data_source = data_source
 
@@ -274,7 +305,7 @@ class CreateTableRequestBody:
         仅当数据来源为pipeline时使用。数据的Data Store ID.
 
         :param data_store_id: The data_store_id of this CreateTableRequestBody.
-        :type: str
+        :type data_store_id: str
         """
         self._data_store_id = data_store_id
 
@@ -296,7 +327,7 @@ class CreateTableRequestBody:
         表数据是否包含表头。只有CSV类型数据具有该属性。
 
         :param with_column_header: The with_column_header of this CreateTableRequestBody.
-        :type: bool
+        :type with_column_header: bool
         """
         self._with_column_header = with_column_header
 
@@ -318,7 +349,7 @@ class CreateTableRequestBody:
         用户自定义数据分隔符。只有CSV类型数据具有该属性。
 
         :param delimiter: The delimiter of this CreateTableRequestBody.
-        :type: str
+        :type delimiter: str
         """
         self._delimiter = delimiter
 
@@ -340,7 +371,7 @@ class CreateTableRequestBody:
         用户自定义引用字符，默认为双引号（即“\"”）。只有CSV类型数据具有该属性。
 
         :param quote_char: The quote_char of this CreateTableRequestBody.
-        :type: str
+        :type quote_char: str
         """
         self._quote_char = quote_char
 
@@ -362,7 +393,7 @@ class CreateTableRequestBody:
         用户自定义转义字符，默认为反斜杠（即\\）。只有CSV类型数据具有该属性。
 
         :param escape_char: The escape_char of this CreateTableRequestBody.
-        :type: str
+        :type escape_char: str
         """
         self._escape_char = escape_char
 
@@ -384,7 +415,7 @@ class CreateTableRequestBody:
         用户自定义日期类型，默认格式为“yyyy-MM-dd”。日期格式字符定义详见表3。只有CSV和JSON类型数据具有该属性。
 
         :param date_format: The date_format of this CreateTableRequestBody.
-        :type: str
+        :type date_format: str
         """
         self._date_format = date_format
 
@@ -406,7 +437,7 @@ class CreateTableRequestBody:
         用户自定义时间类型。默认格式为“yyyy-MM-dd HH:mm:ss”。时间戳格式字符定义详见表3。只有CSV和JSON类型数据具有该属性。
 
         :param timestamp_format: The timestamp_format of this CreateTableRequestBody.
-        :type: str
+        :type timestamp_format: str
         """
         self._timestamp_format = timestamp_format
 

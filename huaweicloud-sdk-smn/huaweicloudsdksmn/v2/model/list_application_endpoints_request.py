@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListApplicationEndpointsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -41,7 +40,23 @@ class ListApplicationEndpointsRequest:
     }
 
     def __init__(self, application_urn=None, offset=None, limit=None, enabled=None, token=None, user_data=None):
-        """ListApplicationEndpointsRequest - a model defined in huaweicloud sdk"""
+        """ListApplicationEndpointsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param application_urn: Application的唯一资源标识，可通过[查询Application](https://support.huaweicloud.com/api-smn/ListApplications.html)获取该标识。
+        :type application_urn: str
+        :param offset: 偏移量。  偏移量为一个大于0小于资源总个数的整数，表示查询该偏移量后面的所有的资源，默认值为0。
+        :type offset: int
+        :param limit: 查询的数量限制。  取值范围：1~100，取值一般为10，20，50。功能说明：每页返回的资源个数。默认值为100。
+        :type limit: int
+        :param enabled: 设备是否可用，值为true或false字符串。
+        :type enabled: str
+        :param token: 设备token，最大长度512个字节。
+        :type token: str
+        :param user_data: 用户数据，最大长度2048个字节。
+        :type user_data: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class ListApplicationEndpointsRequest:
         Application的唯一资源标识，可通过[查询Application](https://support.huaweicloud.com/api-smn/ListApplications.html)获取该标识。
 
         :param application_urn: The application_urn of this ListApplicationEndpointsRequest.
-        :type: str
+        :type application_urn: str
         """
         self._application_urn = application_urn
 
@@ -105,7 +120,7 @@ class ListApplicationEndpointsRequest:
         偏移量。  偏移量为一个大于0小于资源总个数的整数，表示查询该偏移量后面的所有的资源，默认值为0。
 
         :param offset: The offset of this ListApplicationEndpointsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -127,7 +142,7 @@ class ListApplicationEndpointsRequest:
         查询的数量限制。  取值范围：1~100，取值一般为10，20，50。功能说明：每页返回的资源个数。默认值为100。
 
         :param limit: The limit of this ListApplicationEndpointsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -149,7 +164,7 @@ class ListApplicationEndpointsRequest:
         设备是否可用，值为true或false字符串。
 
         :param enabled: The enabled of this ListApplicationEndpointsRequest.
-        :type: str
+        :type enabled: str
         """
         self._enabled = enabled
 
@@ -171,7 +186,7 @@ class ListApplicationEndpointsRequest:
         设备token，最大长度512个字节。
 
         :param token: The token of this ListApplicationEndpointsRequest.
-        :type: str
+        :type token: str
         """
         self._token = token
 
@@ -193,7 +208,7 @@ class ListApplicationEndpointsRequest:
         用户数据，最大长度2048个字节。
 
         :param user_data: The user_data of this ListApplicationEndpointsRequest.
-        :type: str
+        :type user_data: str
         """
         self._user_data = user_data
 

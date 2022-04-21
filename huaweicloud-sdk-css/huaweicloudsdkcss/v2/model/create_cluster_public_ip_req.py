@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateClusterPublicIpReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CreateClusterPublicIpReq:
     }
 
     def __init__(self, eip=None, elb_white_list_req=None, public_bind_type=None, eip_id=None):
-        """CreateClusterPublicIpReq - a model defined in huaweicloud sdk"""
+        """CreateClusterPublicIpReq
+
+        The model defined in huaweicloud sdk
+
+        :param eip: 
+        :type eip: :class:`huaweicloudsdkcss.v2.CreateClusterPublicEip`
+        :param elb_white_list_req: 
+        :type elb_white_list_req: :class:`huaweicloudsdkcss.v2.CreateClusterElbWhiteList`
+        :param public_bind_type: 是否自动绑定弹性公网IP。auto_assign为自动分配，bind_existing为绑定已有IP，需要填写eipId字段。
+        :type public_bind_type: str
+        :param eip_id: 弹性公网IP的ID。
+        :type eip_id: str
+        """
         
         
 
@@ -58,7 +69,7 @@ class CreateClusterPublicIpReq:
 
 
         :return: The eip of this CreateClusterPublicIpReq.
-        :rtype: CreateClusterPublicEip
+        :rtype: :class:`huaweicloudsdkcss.v2.CreateClusterPublicEip`
         """
         return self._eip
 
@@ -68,7 +79,7 @@ class CreateClusterPublicIpReq:
 
 
         :param eip: The eip of this CreateClusterPublicIpReq.
-        :type: CreateClusterPublicEip
+        :type eip: :class:`huaweicloudsdkcss.v2.CreateClusterPublicEip`
         """
         self._eip = eip
 
@@ -78,7 +89,7 @@ class CreateClusterPublicIpReq:
 
 
         :return: The elb_white_list_req of this CreateClusterPublicIpReq.
-        :rtype: CreateClusterElbWhiteList
+        :rtype: :class:`huaweicloudsdkcss.v2.CreateClusterElbWhiteList`
         """
         return self._elb_white_list_req
 
@@ -88,7 +99,7 @@ class CreateClusterPublicIpReq:
 
 
         :param elb_white_list_req: The elb_white_list_req of this CreateClusterPublicIpReq.
-        :type: CreateClusterElbWhiteList
+        :type elb_white_list_req: :class:`huaweicloudsdkcss.v2.CreateClusterElbWhiteList`
         """
         self._elb_white_list_req = elb_white_list_req
 
@@ -110,7 +121,7 @@ class CreateClusterPublicIpReq:
         是否自动绑定弹性公网IP。auto_assign为自动分配，bind_existing为绑定已有IP，需要填写eipId字段。
 
         :param public_bind_type: The public_bind_type of this CreateClusterPublicIpReq.
-        :type: str
+        :type public_bind_type: str
         """
         self._public_bind_type = public_bind_type
 
@@ -132,7 +143,7 @@ class CreateClusterPublicIpReq:
         弹性公网IP的ID。
 
         :param eip_id: The eip_id of this CreateClusterPublicIpReq.
-        :type: str
+        :type eip_id: str
         """
         self._eip_id = eip_id
 

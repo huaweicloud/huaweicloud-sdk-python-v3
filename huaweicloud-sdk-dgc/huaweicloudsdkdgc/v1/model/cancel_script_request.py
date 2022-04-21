@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CancelScriptRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CancelScriptRequest:
     }
 
     def __init__(self, script_name=None, instance_id=None):
-        """CancelScriptRequest - a model defined in huaweicloud sdk"""
+        """CancelScriptRequest
+
+        The model defined in huaweicloud sdk
+
+        :param script_name: 
+        :type script_name: str
+        :param instance_id: 
+        :type instance_id: str
+        """
         
         
 
@@ -59,7 +66,7 @@ class CancelScriptRequest:
 
 
         :param script_name: The script_name of this CancelScriptRequest.
-        :type: str
+        :type script_name: str
         """
         self._script_name = script_name
 
@@ -79,7 +86,7 @@ class CancelScriptRequest:
 
 
         :param instance_id: The instance_id of this CancelScriptRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 

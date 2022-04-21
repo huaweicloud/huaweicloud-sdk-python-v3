@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateCloudWafServer:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class UpdateCloudWafServer:
     }
 
     def __init__(self, front_protocol=None, back_protocol=None, address=None, port=None, type=None):
-        """UpdateCloudWafServer - a model defined in huaweicloud sdk"""
+        """UpdateCloudWafServer
+
+        The model defined in huaweicloud sdk
+
+        :param front_protocol: 对外协议
+        :type front_protocol: str
+        :param back_protocol: 源站协议
+        :type back_protocol: str
+        :param address: 源站地址
+        :type address: str
+        :param port: 源站端口
+        :type port: int
+        :param type: 源站地址为ipv4或ipv6
+        :type type: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class UpdateCloudWafServer:
         对外协议
 
         :param front_protocol: The front_protocol of this UpdateCloudWafServer.
-        :type: str
+        :type front_protocol: str
         """
         self._front_protocol = front_protocol
 
@@ -100,7 +113,7 @@ class UpdateCloudWafServer:
         源站协议
 
         :param back_protocol: The back_protocol of this UpdateCloudWafServer.
-        :type: str
+        :type back_protocol: str
         """
         self._back_protocol = back_protocol
 
@@ -122,7 +135,7 @@ class UpdateCloudWafServer:
         源站地址
 
         :param address: The address of this UpdateCloudWafServer.
-        :type: str
+        :type address: str
         """
         self._address = address
 
@@ -144,7 +157,7 @@ class UpdateCloudWafServer:
         源站端口
 
         :param port: The port of this UpdateCloudWafServer.
-        :type: int
+        :type port: int
         """
         self._port = port
 
@@ -166,7 +179,7 @@ class UpdateCloudWafServer:
         源站地址为ipv4或ipv6
 
         :param type: The type of this UpdateCloudWafServer.
-        :type: str
+        :type type: str
         """
         self._type = type
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DisassociateServerVirtualIpOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class DisassociateServerVirtualIpOption:
     }
 
     def __init__(self, subnet_id=None, ip_address=None, reverse_binding=None):
-        """DisassociateServerVirtualIpOption - a model defined in huaweicloud sdk"""
+        """DisassociateServerVirtualIpOption
+
+        The model defined in huaweicloud sdk
+
+        :param subnet_id: 云服务器添加网卡的信息。  约束：解绑虚拟IP时，subnet_id为空字符串
+        :type subnet_id: str
+        :param ip_address: 网卡即将配置的虚拟IP的地址。  约束：解绑虚拟IP时，ip_address为空字符串
+        :type ip_address: str
+        :param reverse_binding: 虚拟IP的allowed_address_pairs属性是否添加网卡的IP/Mac对。
+        :type reverse_binding: bool
+        """
         
         
 
@@ -66,7 +75,7 @@ class DisassociateServerVirtualIpOption:
         云服务器添加网卡的信息。  约束：解绑虚拟IP时，subnet_id为空字符串
 
         :param subnet_id: The subnet_id of this DisassociateServerVirtualIpOption.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -88,7 +97,7 @@ class DisassociateServerVirtualIpOption:
         网卡即将配置的虚拟IP的地址。  约束：解绑虚拟IP时，ip_address为空字符串
 
         :param ip_address: The ip_address of this DisassociateServerVirtualIpOption.
-        :type: str
+        :type ip_address: str
         """
         self._ip_address = ip_address
 
@@ -110,7 +119,7 @@ class DisassociateServerVirtualIpOption:
         虚拟IP的allowed_address_pairs属性是否添加网卡的IP/Mac对。
 
         :param reverse_binding: The reverse_binding of this DisassociateServerVirtualIpOption.
-        :type: bool
+        :type reverse_binding: bool
         """
         self._reverse_binding = reverse_binding
 

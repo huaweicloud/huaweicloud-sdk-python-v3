@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListLiveStreamsOnlineResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListLiveStreamsOnlineResponse(SdkResponse):
     }
 
     def __init__(self, total_page=None, total_num=None, offset=None, limit=None, request_id=None, streams=None):
-        """ListLiveStreamsOnlineResponse - a model defined in huaweicloud sdk"""
+        """ListLiveStreamsOnlineResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total_page: 总条页数
+        :type total_page: int
+        :param total_num: 总条目数
+        :type total_num: int
+        :param offset: 偏移量
+        :type offset: int
+        :param limit: 每页条目数
+        :type limit: int
+        :param request_id: 请求唯一标识
+        :type request_id: str
+        :param streams: 推流统计
+        :type streams: list[:class:`huaweicloudsdklive.v1.OnlineInfo`]
+        """
         
         super(ListLiveStreamsOnlineResponse, self).__init__()
 
@@ -83,7 +98,7 @@ class ListLiveStreamsOnlineResponse(SdkResponse):
         总条页数
 
         :param total_page: The total_page of this ListLiveStreamsOnlineResponse.
-        :type: int
+        :type total_page: int
         """
         self._total_page = total_page
 
@@ -105,7 +120,7 @@ class ListLiveStreamsOnlineResponse(SdkResponse):
         总条目数
 
         :param total_num: The total_num of this ListLiveStreamsOnlineResponse.
-        :type: int
+        :type total_num: int
         """
         self._total_num = total_num
 
@@ -127,7 +142,7 @@ class ListLiveStreamsOnlineResponse(SdkResponse):
         偏移量
 
         :param offset: The offset of this ListLiveStreamsOnlineResponse.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -149,7 +164,7 @@ class ListLiveStreamsOnlineResponse(SdkResponse):
         每页条目数
 
         :param limit: The limit of this ListLiveStreamsOnlineResponse.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -171,7 +186,7 @@ class ListLiveStreamsOnlineResponse(SdkResponse):
         请求唯一标识
 
         :param request_id: The request_id of this ListLiveStreamsOnlineResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 
@@ -182,7 +197,7 @@ class ListLiveStreamsOnlineResponse(SdkResponse):
         推流统计
 
         :return: The streams of this ListLiveStreamsOnlineResponse.
-        :rtype: list[OnlineInfo]
+        :rtype: list[:class:`huaweicloudsdklive.v1.OnlineInfo`]
         """
         return self._streams
 
@@ -193,7 +208,7 @@ class ListLiveStreamsOnlineResponse(SdkResponse):
         推流统计
 
         :param streams: The streams of this ListLiveStreamsOnlineResponse.
-        :type: list[OnlineInfo]
+        :type streams: list[:class:`huaweicloudsdklive.v1.OnlineInfo`]
         """
         self._streams = streams
 

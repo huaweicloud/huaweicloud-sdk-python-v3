@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateCategoryReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateCategoryReq:
     }
 
     def __init__(self, name=None, parent_id=None):
-        """CreateCategoryReq - a model defined in huaweicloud sdk"""
+        """CreateCategoryReq
+
+        The model defined in huaweicloud sdk
+
+        :param name: 媒资分类名称，最大64字节。
+        :type name: str
+        :param parent_id: 父分类ID。  若不填，则默认生成一级分类。  根节点分类ID为0。
+        :type parent_id: int
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateCategoryReq:
         媒资分类名称，最大64字节。
 
         :param name: The name of this CreateCategoryReq.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -84,7 +91,7 @@ class CreateCategoryReq:
         父分类ID。  若不填，则默认生成一级分类。  根节点分类ID为0。
 
         :param parent_id: The parent_id of this CreateCategoryReq.
-        :type: int
+        :type parent_id: int
         """
         self._parent_id = parent_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowSqlSwitchStatusRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowSqlSwitchStatusRequest:
     }
 
     def __init__(self, instance_id=None, type=None, datastore_type=None, x_language=None):
-        """ShowSqlSwitchStatusRequest - a model defined in huaweicloud sdk"""
+        """ShowSqlSwitchStatusRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param type: 开关类型。取值DAS SQL Explorer和DAS Slow Query Log，分别表示DAS收集全量SQL开关和DAS收集慢SQL开关。
+        :type type: str
+        :param datastore_type: 数据库类型。当前全量SQL支持的数据库类型包括MySQL和GaussDB(for MySQL)，慢SQL支持的类型：MySQL、GaussDB(for MySQL)、PostgreSQL。
+        :type datastore_type: str
+        :param x_language: 请求语言类型。
+        :type x_language: str
+        """
         
         
 
@@ -70,7 +81,7 @@ class ShowSqlSwitchStatusRequest:
         实例ID。
 
         :param instance_id: The instance_id of this ShowSqlSwitchStatusRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -92,7 +103,7 @@ class ShowSqlSwitchStatusRequest:
         开关类型。取值DAS SQL Explorer和DAS Slow Query Log，分别表示DAS收集全量SQL开关和DAS收集慢SQL开关。
 
         :param type: The type of this ShowSqlSwitchStatusRequest.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -114,7 +125,7 @@ class ShowSqlSwitchStatusRequest:
         数据库类型。当前全量SQL支持的数据库类型包括MySQL和GaussDB(for MySQL)，慢SQL支持的类型：MySQL、GaussDB(for MySQL)、PostgreSQL。
 
         :param datastore_type: The datastore_type of this ShowSqlSwitchStatusRequest.
-        :type: str
+        :type datastore_type: str
         """
         self._datastore_type = datastore_type
 
@@ -136,7 +147,7 @@ class ShowSqlSwitchStatusRequest:
         请求语言类型。
 
         :param x_language: The x_language of this ShowSqlSwitchStatusRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 

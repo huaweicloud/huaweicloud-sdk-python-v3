@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RegisterServerAutoRecoveryResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class RegisterServerAutoRecoveryResponse(SdkResponse):
     }
 
     def __init__(self):
-        """RegisterServerAutoRecoveryResponse - a model defined in huaweicloud sdk"""
+        """RegisterServerAutoRecoveryResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(RegisterServerAutoRecoveryResponse, self).__init__()
         self.discriminator = None

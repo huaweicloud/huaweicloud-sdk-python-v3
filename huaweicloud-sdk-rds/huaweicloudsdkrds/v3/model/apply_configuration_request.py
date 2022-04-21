@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApplyConfigurationRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ApplyConfigurationRequest:
     }
 
     def __init__(self, instance_ids=None):
-        """ApplyConfigurationRequest - a model defined in huaweicloud sdk"""
+        """ApplyConfigurationRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_ids: 实例ID列表。
+        :type instance_ids: list[str]
+        """
         
         
 
@@ -57,7 +62,7 @@ class ApplyConfigurationRequest:
         实例ID列表。
 
         :param instance_ids: The instance_ids of this ApplyConfigurationRequest.
-        :type: list[str]
+        :type instance_ids: list[str]
         """
         self._instance_ids = instance_ids
 

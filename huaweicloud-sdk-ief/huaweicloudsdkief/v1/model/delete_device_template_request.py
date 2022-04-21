@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteDeviceTemplateRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteDeviceTemplateRequest:
     }
 
     def __init__(self, ief_instance_id=None, device_template_id=None):
-        """DeleteDeviceTemplateRequest - a model defined in huaweicloud sdk"""
+        """DeleteDeviceTemplateRequest
+
+        The model defined in huaweicloud sdk
+
+        :param ief_instance_id: 铂金版实例ID，专业版实例为空值
+        :type ief_instance_id: str
+        :param device_template_id: 设备模板ID
+        :type device_template_id: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class DeleteDeviceTemplateRequest:
         铂金版实例ID，专业版实例为空值
 
         :param ief_instance_id: The ief_instance_id of this DeleteDeviceTemplateRequest.
-        :type: str
+        :type ief_instance_id: str
         """
         self._ief_instance_id = ief_instance_id
 
@@ -84,7 +91,7 @@ class DeleteDeviceTemplateRequest:
         设备模板ID
 
         :param device_template_id: The device_template_id of this DeleteDeviceTemplateRequest.
-        :type: str
+        :type device_template_id: str
         """
         self._device_template_id = device_template_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateImageWatermarkRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateImageWatermarkRequestBody:
     }
 
     def __init__(self, file=None, blind_watermark=None, image_watermark=None):
-        """CreateImageWatermarkRequestBody - a model defined in huaweicloud sdk"""
+        """CreateImageWatermarkRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param file: 要添加水印的图片文件，添加的图片短边尺寸需要超过512像素。
+        :type file: :class:`huaweicloudsdkcore.http.formdata.FormFile`
+        :param blind_watermark: 待嵌入的文字暗水印内容，长度不超过32个字符。当前仅支持数字及英文大小写。与图片暗水印image_watermark二选一填充。
+        :type blind_watermark: str
+        :param image_watermark: 待嵌入的图片暗水印文件，与文字暗水印 blind_watermark 二选一填充。
+        :type image_watermark: :class:`huaweicloudsdkcore.http.formdata.FormFile`
+        """
         
         
 
@@ -56,7 +65,7 @@ class CreateImageWatermarkRequestBody:
         要添加水印的图片文件，添加的图片短边尺寸需要超过512像素。
 
         :return: The file of this CreateImageWatermarkRequestBody.
-        :rtype: file
+        :rtype: :class:`huaweicloudsdkcore.http.formdata.FormFile`
         """
         return self._file
 
@@ -67,7 +76,7 @@ class CreateImageWatermarkRequestBody:
         要添加水印的图片文件，添加的图片短边尺寸需要超过512像素。
 
         :param file: The file of this CreateImageWatermarkRequestBody.
-        :type: file
+        :type file: :class:`huaweicloudsdkcore.http.formdata.FormFile`
         """
         self._file = file
 
@@ -89,7 +98,7 @@ class CreateImageWatermarkRequestBody:
         待嵌入的文字暗水印内容，长度不超过32个字符。当前仅支持数字及英文大小写。与图片暗水印image_watermark二选一填充。
 
         :param blind_watermark: The blind_watermark of this CreateImageWatermarkRequestBody.
-        :type: str
+        :type blind_watermark: str
         """
         self._blind_watermark = blind_watermark
 
@@ -100,7 +109,7 @@ class CreateImageWatermarkRequestBody:
         待嵌入的图片暗水印文件，与文字暗水印 blind_watermark 二选一填充。
 
         :return: The image_watermark of this CreateImageWatermarkRequestBody.
-        :rtype: file
+        :rtype: :class:`huaweicloudsdkcore.http.formdata.FormFile`
         """
         return self._image_watermark
 
@@ -111,7 +120,7 @@ class CreateImageWatermarkRequestBody:
         待嵌入的图片暗水印文件，与文字暗水印 blind_watermark 二选一填充。
 
         :param image_watermark: The image_watermark of this CreateImageWatermarkRequestBody.
-        :type: file
+        :type image_watermark: :class:`huaweicloudsdkcore.http.formdata.FormFile`
         """
         self._image_watermark = image_watermark
 

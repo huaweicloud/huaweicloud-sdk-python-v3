@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TemplateListInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class TemplateListInfo:
     }
 
     def __init__(self, repos=None, total_count=None):
-        """TemplateListInfo - a model defined in huaweicloud sdk"""
+        """TemplateListInfo
+
+        The model defined in huaweicloud sdk
+
+        :param repos: 仓库列表
+        :type repos: list[:class:`huaweicloudsdkcodehub.v3.DevstarRepoInfo`]
+        :param total_count: 仓库总数
+        :type total_count: int
+        """
         
         
 
@@ -52,7 +59,7 @@ class TemplateListInfo:
         仓库列表
 
         :return: The repos of this TemplateListInfo.
-        :rtype: list[DevstarRepoInfo]
+        :rtype: list[:class:`huaweicloudsdkcodehub.v3.DevstarRepoInfo`]
         """
         return self._repos
 
@@ -63,7 +70,7 @@ class TemplateListInfo:
         仓库列表
 
         :param repos: The repos of this TemplateListInfo.
-        :type: list[DevstarRepoInfo]
+        :type repos: list[:class:`huaweicloudsdkcodehub.v3.DevstarRepoInfo`]
         """
         self._repos = repos
 
@@ -85,7 +92,7 @@ class TemplateListInfo:
         仓库总数
 
         :param total_count: The total_count of this TemplateListInfo.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 

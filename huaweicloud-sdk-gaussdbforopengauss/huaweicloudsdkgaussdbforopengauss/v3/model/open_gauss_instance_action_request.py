@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OpenGaussInstanceActionRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class OpenGaussInstanceActionRequest:
     }
 
     def __init__(self, expand_cluster=None, enlarge_volume=None):
-        """OpenGaussInstanceActionRequest - a model defined in huaweicloud sdk"""
+        """OpenGaussInstanceActionRequest
+
+        The model defined in huaweicloud sdk
+
+        :param expand_cluster: 
+        :type expand_cluster: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussExpandCluster`
+        :param enlarge_volume: 
+        :type enlarge_volume: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussEnlargeVolume`
+        """
         
         
 
@@ -51,7 +58,7 @@ class OpenGaussInstanceActionRequest:
 
 
         :return: The expand_cluster of this OpenGaussInstanceActionRequest.
-        :rtype: OpenGaussExpandCluster
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussExpandCluster`
         """
         return self._expand_cluster
 
@@ -61,7 +68,7 @@ class OpenGaussInstanceActionRequest:
 
 
         :param expand_cluster: The expand_cluster of this OpenGaussInstanceActionRequest.
-        :type: OpenGaussExpandCluster
+        :type expand_cluster: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussExpandCluster`
         """
         self._expand_cluster = expand_cluster
 
@@ -71,7 +78,7 @@ class OpenGaussInstanceActionRequest:
 
 
         :return: The enlarge_volume of this OpenGaussInstanceActionRequest.
-        :rtype: OpenGaussEnlargeVolume
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussEnlargeVolume`
         """
         return self._enlarge_volume
 
@@ -81,7 +88,7 @@ class OpenGaussInstanceActionRequest:
 
 
         :param enlarge_volume: The enlarge_volume of this OpenGaussInstanceActionRequest.
-        :type: OpenGaussEnlargeVolume
+        :type enlarge_volume: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussEnlargeVolume`
         """
         self._enlarge_volume = enlarge_volume
 

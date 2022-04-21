@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TokenCatalogEndpoint:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class TokenCatalogEndpoint:
     }
 
     def __init__(self, url=None, region=None, region_id=None, interface=None, id=None):
-        """TokenCatalogEndpoint - a model defined in huaweicloud sdk"""
+        """TokenCatalogEndpoint
+
+        The model defined in huaweicloud sdk
+
+        :param url: 终端节点的URL。
+        :type url: str
+        :param region: 终端节点所属区域。
+        :type region: str
+        :param region_id: 终端节点所属区域ID。
+        :type region_id: str
+        :param interface: 接口类型，描述接口在该终端节点的可见性。值为“public”，表示该接口为公开接口。
+        :type interface: str
+        :param id: 终端节点ID。
+        :type id: str
+        """
         
         
 
@@ -73,7 +86,7 @@ class TokenCatalogEndpoint:
         终端节点的URL。
 
         :param url: The url of this TokenCatalogEndpoint.
-        :type: str
+        :type url: str
         """
         self._url = url
 
@@ -95,7 +108,7 @@ class TokenCatalogEndpoint:
         终端节点所属区域。
 
         :param region: The region of this TokenCatalogEndpoint.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -117,7 +130,7 @@ class TokenCatalogEndpoint:
         终端节点所属区域ID。
 
         :param region_id: The region_id of this TokenCatalogEndpoint.
-        :type: str
+        :type region_id: str
         """
         self._region_id = region_id
 
@@ -139,7 +152,7 @@ class TokenCatalogEndpoint:
         接口类型，描述接口在该终端节点的可见性。值为“public”，表示该接口为公开接口。
 
         :param interface: The interface of this TokenCatalogEndpoint.
-        :type: str
+        :type interface: str
         """
         self._interface = interface
 
@@ -161,7 +174,7 @@ class TokenCatalogEndpoint:
         终端节点ID。
 
         :param id: The id of this TokenCatalogEndpoint.
-        :type: str
+        :type id: str
         """
         self._id = id
 

@@ -52,21 +52,17 @@ class DnsClient(Client):
         """创建单个自定义线路
 
         创建单个自定义线路
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateCustomLineRequest request
-        :return: CreateCustomLineResponse
+        :param request: Request instance for CreateCustomLine
+        :type request: :class:`huaweicloudsdkdns.v2.CreateCustomLineRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.CreateCustomLineResponse`
         """
         return self.create_custom_line_with_http_info(request)
 
     def create_custom_line_with_http_info(self, request):
-        """创建单个自定义线路
-
-        创建单个自定义线路
-
-        :param CreateCustomLineRequest request
-        :return: CreateCustomLineResponse
-        """
-
         all_params = ['create_custom_lines']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -110,26 +106,21 @@ class DnsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_custom_line(self, request):
         """删除单个自定义线路
 
         删除单个自定义线路
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteCustomLineRequest request
-        :return: DeleteCustomLineResponse
+        :param request: Request instance for DeleteCustomLine
+        :type request: :class:`huaweicloudsdkdns.v2.DeleteCustomLineRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.DeleteCustomLineResponse`
         """
         return self.delete_custom_line_with_http_info(request)
 
     def delete_custom_line_with_http_info(self, request):
-        """删除单个自定义线路
-
-        删除单个自定义线路
-
-        :param DeleteCustomLineRequest request
-        :return: DeleteCustomLineResponse
-        """
-
         all_params = ['line_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -173,26 +164,21 @@ class DnsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_api_versions(self, request):
         """查询所有的云解析服务API版本号
 
         查询所有的云解析服务API版本号列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListApiVersionsRequest request
-        :return: ListApiVersionsResponse
+        :param request: Request instance for ListApiVersions
+        :type request: :class:`huaweicloudsdkdns.v2.ListApiVersionsRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.ListApiVersionsResponse`
         """
         return self.list_api_versions_with_http_info(request)
 
     def list_api_versions_with_http_info(self, request):
-        """查询所有的云解析服务API版本号
-
-        查询所有的云解析服务API版本号列表
-
-        :param ListApiVersionsRequest request
-        :return: ListApiVersionsResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -234,26 +220,21 @@ class DnsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_custom_line(self, request):
         """查询自定义线路
 
         查询自定义线路
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListCustomLineRequest request
-        :return: ListCustomLineResponse
+        :param request: Request instance for ListCustomLine
+        :type request: :class:`huaweicloudsdkdns.v2.ListCustomLineRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.ListCustomLineResponse`
         """
         return self.list_custom_line_with_http_info(request)
 
     def list_custom_line_with_http_info(self, request):
-        """查询自定义线路
-
-        查询自定义线路
-
-        :param ListCustomLineRequest request
-        :return: ListCustomLineResponse
-        """
-
         all_params = ['line_id', 'name', 'limit', 'offset', 'show_detail']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -305,26 +286,21 @@ class DnsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_name_servers(self, request):
         """查询名称服务器列表
 
         查询名称服务器列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListNameServersRequest request
-        :return: ListNameServersResponse
+        :param request: Request instance for ListNameServers
+        :type request: :class:`huaweicloudsdkdns.v2.ListNameServersRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.ListNameServersResponse`
         """
         return self.list_name_servers_with_http_info(request)
 
     def list_name_servers_with_http_info(self, request):
-        """查询名称服务器列表
-
-        查询名称服务器列表
-
-        :param ListNameServersRequest request
-        :return: ListNameServersResponse
-        """
-
         all_params = ['type', 'region']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -370,26 +346,21 @@ class DnsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_api_info(self, request):
         """查询指定的云解析服务API版本号
 
         查询指定的云解析服务API版本号
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowApiInfoRequest request
-        :return: ShowApiInfoResponse
+        :param request: Request instance for ShowApiInfo
+        :type request: :class:`huaweicloudsdkdns.v2.ShowApiInfoRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.ShowApiInfoResponse`
         """
         return self.show_api_info_with_http_info(request)
 
     def show_api_info_with_http_info(self, request):
-        """查询指定的云解析服务API版本号
-
-        查询指定的云解析服务API版本号
-
-        :param ShowApiInfoRequest request
-        :return: ShowApiInfoResponse
-        """
-
         all_params = ['version']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -433,26 +404,21 @@ class DnsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_domain_quota(self, request):
         """查询租户配额
 
         查询单租户在DNS服务下的资源配额，包括公网zone配额、内网zone配额、Record Set配额、PTR Record配额、入站终端节点配额、出站终端节点配额、自定义线路配额、线路分组配额等。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowDomainQuotaRequest request
-        :return: ShowDomainQuotaResponse
+        :param request: Request instance for ShowDomainQuota
+        :type request: :class:`huaweicloudsdkdns.v2.ShowDomainQuotaRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.ShowDomainQuotaResponse`
         """
         return self.show_domain_quota_with_http_info(request)
 
     def show_domain_quota_with_http_info(self, request):
-        """查询租户配额
-
-        查询单租户在DNS服务下的资源配额，包括公网zone配额、内网zone配额、Record Set配额、PTR Record配额、入站终端节点配额、出站终端节点配额、自定义线路配额、线路分组配额等。
-
-        :param ShowDomainQuotaRequest request
-        :return: ShowDomainQuotaResponse
-        """
-
         all_params = ['domain_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -496,26 +462,21 @@ class DnsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_custom_line(self, request):
         """更新单个自定义线路
 
         更新单个自定义线路
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateCustomLineRequest request
-        :return: UpdateCustomLineResponse
+        :param request: Request instance for UpdateCustomLine
+        :type request: :class:`huaweicloudsdkdns.v2.UpdateCustomLineRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.UpdateCustomLineResponse`
         """
         return self.update_custom_line_with_http_info(request)
 
     def update_custom_line_with_http_info(self, request):
-        """更新单个自定义线路
-
-        更新单个自定义线路
-
-        :param UpdateCustomLineRequest request
-        :return: UpdateCustomLineResponse
-        """
-
         all_params = ['line_id', 'update_customs_line_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -561,26 +522,21 @@ class DnsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_eip_record_set(self, request):
         """设置弹性IP的PTR记录
 
         设置弹性IP的PTR记录
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateEipRecordSetRequest request
-        :return: CreateEipRecordSetResponse
+        :param request: Request instance for CreateEipRecordSet
+        :type request: :class:`huaweicloudsdkdns.v2.CreateEipRecordSetRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.CreateEipRecordSetResponse`
         """
         return self.create_eip_record_set_with_http_info(request)
 
     def create_eip_record_set_with_http_info(self, request):
-        """设置弹性IP的PTR记录
-
-        设置弹性IP的PTR记录
-
-        :param CreateEipRecordSetRequest request
-        :return: CreateEipRecordSetResponse
-        """
-
         all_params = ['region', 'floatingip_id', 'create_ptr_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -628,26 +584,21 @@ class DnsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_ptr_records(self, request):
         """查询租户弹性IP的PTR记录列表
 
         查询租户弹性IP的PTR记录列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListPtrRecordsRequest request
-        :return: ListPtrRecordsResponse
+        :param request: Request instance for ListPtrRecords
+        :type request: :class:`huaweicloudsdkdns.v2.ListPtrRecordsRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.ListPtrRecordsResponse`
         """
         return self.list_ptr_records_with_http_info(request)
 
     def list_ptr_records_with_http_info(self, request):
-        """查询租户弹性IP的PTR记录列表
-
-        查询租户弹性IP的PTR记录列表
-
-        :param ListPtrRecordsRequest request
-        :return: ListPtrRecordsResponse
-        """
-
         all_params = ['marker', 'limit', 'offset', 'enterprise_project_id', 'tags', 'status']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -701,26 +652,21 @@ class DnsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def restore_ptr_record(self, request):
         """将弹性IP的PTR记录恢复为默认值
 
         将弹性IP的PTR记录恢复为默认值
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param RestorePtrRecordRequest request
-        :return: RestorePtrRecordResponse
+        :param request: Request instance for RestorePtrRecord
+        :type request: :class:`huaweicloudsdkdns.v2.RestorePtrRecordRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.RestorePtrRecordResponse`
         """
         return self.restore_ptr_record_with_http_info(request)
 
     def restore_ptr_record_with_http_info(self, request):
-        """将弹性IP的PTR记录恢复为默认值
-
-        将弹性IP的PTR记录恢复为默认值
-
-        :param RestorePtrRecordRequest request
-        :return: RestorePtrRecordResponse
-        """
-
         all_params = ['region', 'floatingip_id', 'restore_ptr_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -768,26 +714,21 @@ class DnsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_ptr_record_set(self, request):
         """查询单个弹性IP的PTR记录
 
         查询单个弹性IP的PTR记录
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowPtrRecordSetRequest request
-        :return: ShowPtrRecordSetResponse
+        :param request: Request instance for ShowPtrRecordSet
+        :type request: :class:`huaweicloudsdkdns.v2.ShowPtrRecordSetRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.ShowPtrRecordSetResponse`
         """
         return self.show_ptr_record_set_with_http_info(request)
 
     def show_ptr_record_set_with_http_info(self, request):
-        """查询单个弹性IP的PTR记录
-
-        查询单个弹性IP的PTR记录
-
-        :param ShowPtrRecordSetRequest request
-        :return: ShowPtrRecordSetResponse
-        """
-
         all_params = ['region', 'floatingip_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -833,26 +774,21 @@ class DnsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_ptr_record(self, request):
         """修改弹性IP的PTR记录
 
         修改弹性IP的PTR记录
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdatePtrRecordRequest request
-        :return: UpdatePtrRecordResponse
+        :param request: Request instance for UpdatePtrRecord
+        :type request: :class:`huaweicloudsdkdns.v2.UpdatePtrRecordRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.UpdatePtrRecordResponse`
         """
         return self.update_ptr_record_with_http_info(request)
 
     def update_ptr_record_with_http_info(self, request):
-        """修改弹性IP的PTR记录
-
-        修改弹性IP的PTR记录
-
-        :param UpdatePtrRecordRequest request
-        :return: UpdatePtrRecordResponse
-        """
-
         all_params = ['region', 'floatingip_id', 'update_ptr_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -900,26 +836,21 @@ class DnsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_record_set(self, request):
         """创建单个Record Set
 
         创建单个Record Set
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateRecordSetRequest request
-        :return: CreateRecordSetResponse
+        :param request: Request instance for CreateRecordSet
+        :type request: :class:`huaweicloudsdkdns.v2.CreateRecordSetRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.CreateRecordSetResponse`
         """
         return self.create_record_set_with_http_info(request)
 
     def create_record_set_with_http_info(self, request):
-        """创建单个Record Set
-
-        创建单个Record Set
-
-        :param CreateRecordSetRequest request
-        :return: CreateRecordSetResponse
-        """
-
         all_params = ['zone_id', 'create_record_set_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -965,26 +896,21 @@ class DnsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_record_set_with_line(self, request):
         """创建单个Record Set，仅适用于公网DNS
 
         创建单个Record Set，仅适用于公网DNS
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateRecordSetWithLineRequest request
-        :return: CreateRecordSetWithLineResponse
+        :param request: Request instance for CreateRecordSetWithLine
+        :type request: :class:`huaweicloudsdkdns.v2.CreateRecordSetWithLineRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.CreateRecordSetWithLineResponse`
         """
         return self.create_record_set_with_line_with_http_info(request)
 
     def create_record_set_with_line_with_http_info(self, request):
-        """创建单个Record Set，仅适用于公网DNS
-
-        创建单个Record Set，仅适用于公网DNS
-
-        :param CreateRecordSetWithLineRequest request
-        :return: CreateRecordSetWithLineResponse
-        """
-
         all_params = ['zone_id', 'create_record_set_with_line_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1030,26 +956,21 @@ class DnsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_record_set(self, request):
         """删除单个Record Set
 
         删除单个Record Set
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteRecordSetRequest request
-        :return: DeleteRecordSetResponse
+        :param request: Request instance for DeleteRecordSet
+        :type request: :class:`huaweicloudsdkdns.v2.DeleteRecordSetRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.DeleteRecordSetResponse`
         """
         return self.delete_record_set_with_http_info(request)
 
     def delete_record_set_with_http_info(self, request):
-        """删除单个Record Set
-
-        删除单个Record Set
-
-        :param DeleteRecordSetRequest request
-        :return: DeleteRecordSetResponse
-        """
-
         all_params = ['zone_id', 'recordset_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1095,26 +1016,21 @@ class DnsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_record_sets(self, request):
         """删除单个Record Set
 
         删除单个Record Set
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteRecordSetsRequest request
-        :return: DeleteRecordSetsResponse
+        :param request: Request instance for DeleteRecordSets
+        :type request: :class:`huaweicloudsdkdns.v2.DeleteRecordSetsRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.DeleteRecordSetsResponse`
         """
         return self.delete_record_sets_with_http_info(request)
 
     def delete_record_sets_with_http_info(self, request):
-        """删除单个Record Set
-
-        删除单个Record Set
-
-        :param DeleteRecordSetsRequest request
-        :return: DeleteRecordSetsResponse
-        """
-
         all_params = ['zone_id', 'recordset_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1160,26 +1076,21 @@ class DnsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_record_sets(self, request):
         """查询租户Record Set资源列表
 
         查询租户Record Set资源列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListRecordSetsRequest request
-        :return: ListRecordSetsResponse
+        :param request: Request instance for ListRecordSets
+        :type request: :class:`huaweicloudsdkdns.v2.ListRecordSetsRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.ListRecordSetsResponse`
         """
         return self.list_record_sets_with_http_info(request)
 
     def list_record_sets_with_http_info(self, request):
-        """查询租户Record Set资源列表
-
-        查询租户Record Set资源列表
-
-        :param ListRecordSetsRequest request
-        :return: ListRecordSetsResponse
-        """
-
         all_params = ['zone_type', 'marker', 'limit', 'offset', 'tags', 'status', 'type', 'name', 'id', 'records', 'sort_key', 'sort_dir']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1245,26 +1156,21 @@ class DnsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_record_sets_by_zone(self, request):
         """查询单个Zone下Record Set列表
 
         查询单个Zone下Record Set列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListRecordSetsByZoneRequest request
-        :return: ListRecordSetsByZoneResponse
+        :param request: Request instance for ListRecordSetsByZone
+        :type request: :class:`huaweicloudsdkdns.v2.ListRecordSetsByZoneRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.ListRecordSetsByZoneResponse`
         """
         return self.list_record_sets_by_zone_with_http_info(request)
 
     def list_record_sets_by_zone_with_http_info(self, request):
-        """查询单个Zone下Record Set列表
-
-        查询单个Zone下Record Set列表
-
-        :param ListRecordSetsByZoneRequest request
-        :return: ListRecordSetsByZoneResponse
-        """
-
         all_params = ['zone_id', 'marker', 'limit', 'offset', 'tags', 'status', 'type', 'name', 'id', 'sort_key', 'sort_dir']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1328,26 +1234,21 @@ class DnsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_record_sets_with_line(self, request):
         """查询租户Record Set资源列表
 
         查询租户Record Set资源列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListRecordSetsWithLineRequest request
-        :return: ListRecordSetsWithLineResponse
+        :param request: Request instance for ListRecordSetsWithLine
+        :type request: :class:`huaweicloudsdkdns.v2.ListRecordSetsWithLineRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.ListRecordSetsWithLineResponse`
         """
         return self.list_record_sets_with_line_with_http_info(request)
 
     def list_record_sets_with_line_with_http_info(self, request):
-        """查询租户Record Set资源列表
-
-        查询租户Record Set资源列表
-
-        :param ListRecordSetsWithLineRequest request
-        :return: ListRecordSetsWithLineResponse
-        """
-
         all_params = ['zone_type', 'marker', 'limit', 'offset', 'line_id', 'tags', 'status', 'type', 'name', 'id', 'records', 'sort_key', 'sort_dir', 'health_check_id', 'search_mode']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1419,26 +1320,21 @@ class DnsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def set_record_sets_status(self, request):
         """设置Record Set状态
 
         设置Record Set状态
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param SetRecordSetsStatusRequest request
-        :return: SetRecordSetsStatusResponse
+        :param request: Request instance for SetRecordSetsStatus
+        :type request: :class:`huaweicloudsdkdns.v2.SetRecordSetsStatusRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.SetRecordSetsStatusResponse`
         """
         return self.set_record_sets_status_with_http_info(request)
 
     def set_record_sets_status_with_http_info(self, request):
-        """设置Record Set状态
-
-        设置Record Set状态
-
-        :param SetRecordSetsStatusRequest request
-        :return: SetRecordSetsStatusResponse
-        """
-
         all_params = ['recordset_id', 'set_record_sets_status_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1484,26 +1380,21 @@ class DnsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_record_set(self, request):
         """查询单个Record Set
 
         查询单个Record Set
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowRecordSetRequest request
-        :return: ShowRecordSetResponse
+        :param request: Request instance for ShowRecordSet
+        :type request: :class:`huaweicloudsdkdns.v2.ShowRecordSetRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.ShowRecordSetResponse`
         """
         return self.show_record_set_with_http_info(request)
 
     def show_record_set_with_http_info(self, request):
-        """查询单个Record Set
-
-        查询单个Record Set
-
-        :param ShowRecordSetRequest request
-        :return: ShowRecordSetResponse
-        """
-
         all_params = ['zone_id', 'recordset_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1549,26 +1440,21 @@ class DnsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_record_set_by_zone(self, request):
         """查询单个Zone下Record Set列表
 
         查询单个Zone下Record Set列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowRecordSetByZoneRequest request
-        :return: ShowRecordSetByZoneResponse
+        :param request: Request instance for ShowRecordSetByZone
+        :type request: :class:`huaweicloudsdkdns.v2.ShowRecordSetByZoneRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.ShowRecordSetByZoneResponse`
         """
         return self.show_record_set_by_zone_with_http_info(request)
 
     def show_record_set_by_zone_with_http_info(self, request):
-        """查询单个Zone下Record Set列表
-
-        查询单个Zone下Record Set列表
-
-        :param ShowRecordSetByZoneRequest request
-        :return: ShowRecordSetByZoneResponse
-        """
-
         all_params = ['zone_id', 'marker', 'limit', 'offset', 'line_id', 'tags', 'status', 'type', 'name', 'id', 'sort_key', 'sort_dir', 'search_mode']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1636,26 +1522,21 @@ class DnsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_record_set_with_line(self, request):
         """查询单个Record Set，仅适用于公网DNS
 
         查询单个Record Set，仅适用于公网DNS
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowRecordSetWithLineRequest request
-        :return: ShowRecordSetWithLineResponse
+        :param request: Request instance for ShowRecordSetWithLine
+        :type request: :class:`huaweicloudsdkdns.v2.ShowRecordSetWithLineRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.ShowRecordSetWithLineResponse`
         """
         return self.show_record_set_with_line_with_http_info(request)
 
     def show_record_set_with_line_with_http_info(self, request):
-        """查询单个Record Set，仅适用于公网DNS
-
-        查询单个Record Set，仅适用于公网DNS
-
-        :param ShowRecordSetWithLineRequest request
-        :return: ShowRecordSetWithLineResponse
-        """
-
         all_params = ['zone_id', 'recordset_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1701,26 +1582,21 @@ class DnsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_record_set(self, request):
         """修改单个Record Set
 
         修改单个Record Set
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateRecordSetRequest request
-        :return: UpdateRecordSetResponse
+        :param request: Request instance for UpdateRecordSet
+        :type request: :class:`huaweicloudsdkdns.v2.UpdateRecordSetRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.UpdateRecordSetResponse`
         """
         return self.update_record_set_with_http_info(request)
 
     def update_record_set_with_http_info(self, request):
-        """修改单个Record Set
-
-        修改单个Record Set
-
-        :param UpdateRecordSetRequest request
-        :return: UpdateRecordSetResponse
-        """
-
         all_params = ['zone_id', 'recordset_id', 'update_record_set_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1768,26 +1644,21 @@ class DnsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_record_sets(self, request):
         """修改单个Record Set
 
         修改单个Record Set
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateRecordSetsRequest request
-        :return: UpdateRecordSetsResponse
+        :param request: Request instance for UpdateRecordSets
+        :type request: :class:`huaweicloudsdkdns.v2.UpdateRecordSetsRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.UpdateRecordSetsResponse`
         """
         return self.update_record_sets_with_http_info(request)
 
     def update_record_sets_with_http_info(self, request):
-        """修改单个Record Set
-
-        修改单个Record Set
-
-        :param UpdateRecordSetsRequest request
-        :return: UpdateRecordSetsResponse
-        """
-
         all_params = ['zone_id', 'recordset_id', 'update_record_sets_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1835,26 +1706,21 @@ class DnsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_create_tag(self, request):
         """为指定实例批量添加或删除标签
 
         为指定实例批量添加或删除标签
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchCreateTagRequest request
-        :return: BatchCreateTagResponse
+        :param request: Request instance for BatchCreateTag
+        :type request: :class:`huaweicloudsdkdns.v2.BatchCreateTagRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.BatchCreateTagResponse`
         """
         return self.batch_create_tag_with_http_info(request)
 
     def batch_create_tag_with_http_info(self, request):
-        """为指定实例批量添加或删除标签
-
-        为指定实例批量添加或删除标签
-
-        :param BatchCreateTagRequest request
-        :return: BatchCreateTagResponse
-        """
-
         all_params = ['resource_type', 'resource_id', 'batch_hand_tags']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1902,26 +1768,21 @@ class DnsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_tag(self, request):
         """为指定实例添加标签
 
         为指定实例添加标签
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateTagRequest request
-        :return: CreateTagResponse
+        :param request: Request instance for CreateTag
+        :type request: :class:`huaweicloudsdkdns.v2.CreateTagRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.CreateTagResponse`
         """
         return self.create_tag_with_http_info(request)
 
     def create_tag_with_http_info(self, request):
-        """为指定实例添加标签
-
-        为指定实例添加标签
-
-        :param CreateTagRequest request
-        :return: CreateTagResponse
-        """
-
         all_params = ['resource_type', 'resource_id', 'create_tag_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1969,26 +1830,21 @@ class DnsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_tag(self, request):
         """删除资源标签
 
         删除资源标签
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteTagRequest request
-        :return: DeleteTagResponse
+        :param request: Request instance for DeleteTag
+        :type request: :class:`huaweicloudsdkdns.v2.DeleteTagRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.DeleteTagResponse`
         """
         return self.delete_tag_with_http_info(request)
 
     def delete_tag_with_http_info(self, request):
-        """删除资源标签
-
-        删除资源标签
-
-        :param DeleteTagRequest request
-        :return: DeleteTagResponse
-        """
-
         all_params = ['resource_type', 'resource_id', 'key']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2036,26 +1892,21 @@ class DnsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_tag(self, request):
         """使用标签查询资源实例
 
         使用标签查询资源实例
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListTagRequest request
-        :return: ListTagResponse
+        :param request: Request instance for ListTag
+        :type request: :class:`huaweicloudsdkdns.v2.ListTagRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.ListTagResponse`
         """
         return self.list_tag_with_http_info(request)
 
     def list_tag_with_http_info(self, request):
-        """使用标签查询资源实例
-
-        使用标签查询资源实例
-
-        :param ListTagRequest request
-        :return: ListTagResponse
-        """
-
         all_params = ['resource_type', 'list_tag_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2101,26 +1952,21 @@ class DnsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_tags(self, request):
         """查询指定实例类型的所有标签集合
 
         查询指定实例类型的所有标签集合
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListTagsRequest request
-        :return: ListTagsResponse
+        :param request: Request instance for ListTags
+        :type request: :class:`huaweicloudsdkdns.v2.ListTagsRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.ListTagsResponse`
         """
         return self.list_tags_with_http_info(request)
 
     def list_tags_with_http_info(self, request):
-        """查询指定实例类型的所有标签集合
-
-        查询指定实例类型的所有标签集合
-
-        :param ListTagsRequest request
-        :return: ListTagsResponse
-        """
-
         all_params = ['resource_type']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2164,26 +2010,21 @@ class DnsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_resource_tag(self, request):
         """查询指定实例的标签信息
 
         查询指定实例的标签信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowResourceTagRequest request
-        :return: ShowResourceTagResponse
+        :param request: Request instance for ShowResourceTag
+        :type request: :class:`huaweicloudsdkdns.v2.ShowResourceTagRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.ShowResourceTagResponse`
         """
         return self.show_resource_tag_with_http_info(request)
 
     def show_resource_tag_with_http_info(self, request):
-        """查询指定实例的标签信息
-
-        查询指定实例的标签信息
-
-        :param ShowResourceTagRequest request
-        :return: ShowResourceTagResponse
-        """
-
         all_params = ['resource_type', 'resource_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2229,26 +2070,21 @@ class DnsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def associate_router(self, request):
         """在内网Zone上关联VPC
 
         在内网Zone上关联VPC
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param AssociateRouterRequest request
-        :return: AssociateRouterResponse
+        :param request: Request instance for AssociateRouter
+        :type request: :class:`huaweicloudsdkdns.v2.AssociateRouterRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.AssociateRouterResponse`
         """
         return self.associate_router_with_http_info(request)
 
     def associate_router_with_http_info(self, request):
-        """在内网Zone上关联VPC
-
-        在内网Zone上关联VPC
-
-        :param AssociateRouterRequest request
-        :return: AssociateRouterResponse
-        """
-
         all_params = ['zone_id', 'associate_router_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2294,26 +2130,21 @@ class DnsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_private_zone(self, request):
         """创建单个内网Zone
 
         创建单个内网Zone
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreatePrivateZoneRequest request
-        :return: CreatePrivateZoneResponse
+        :param request: Request instance for CreatePrivateZone
+        :type request: :class:`huaweicloudsdkdns.v2.CreatePrivateZoneRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.CreatePrivateZoneResponse`
         """
         return self.create_private_zone_with_http_info(request)
 
     def create_private_zone_with_http_info(self, request):
-        """创建单个内网Zone
-
-        创建单个内网Zone
-
-        :param CreatePrivateZoneRequest request
-        :return: CreatePrivateZoneResponse
-        """
-
         all_params = ['create_private_zone_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2357,26 +2188,21 @@ class DnsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_public_zone(self, request):
         """创建单个公网Zone
 
         创建单个公网Zone
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreatePublicZoneRequest request
-        :return: CreatePublicZoneResponse
+        :param request: Request instance for CreatePublicZone
+        :type request: :class:`huaweicloudsdkdns.v2.CreatePublicZoneRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.CreatePublicZoneResponse`
         """
         return self.create_public_zone_with_http_info(request)
 
     def create_public_zone_with_http_info(self, request):
-        """创建单个公网Zone
-
-        创建单个公网Zone
-
-        :param CreatePublicZoneRequest request
-        :return: CreatePublicZoneResponse
-        """
-
         all_params = ['create_public_zone']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2420,26 +2246,21 @@ class DnsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_private_zone(self, request):
         """删除单个内网Zone
 
         删除单个内网Zone
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeletePrivateZoneRequest request
-        :return: DeletePrivateZoneResponse
+        :param request: Request instance for DeletePrivateZone
+        :type request: :class:`huaweicloudsdkdns.v2.DeletePrivateZoneRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.DeletePrivateZoneResponse`
         """
         return self.delete_private_zone_with_http_info(request)
 
     def delete_private_zone_with_http_info(self, request):
-        """删除单个内网Zone
-
-        删除单个内网Zone
-
-        :param DeletePrivateZoneRequest request
-        :return: DeletePrivateZoneResponse
-        """
-
         all_params = ['zone_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2483,26 +2304,21 @@ class DnsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_public_zone(self, request):
         """删除单个公网Zone
 
         删除单个公网Zone
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeletePublicZoneRequest request
-        :return: DeletePublicZoneResponse
+        :param request: Request instance for DeletePublicZone
+        :type request: :class:`huaweicloudsdkdns.v2.DeletePublicZoneRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.DeletePublicZoneResponse`
         """
         return self.delete_public_zone_with_http_info(request)
 
     def delete_public_zone_with_http_info(self, request):
-        """删除单个公网Zone
-
-        删除单个公网Zone
-
-        :param DeletePublicZoneRequest request
-        :return: DeletePublicZoneResponse
-        """
-
         all_params = ['zone_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2546,26 +2362,21 @@ class DnsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def disassociate_router(self, request):
         """在Private Zone上解关联VPC
 
         在Private Zone上解关联VPC
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DisassociateRouterRequest request
-        :return: DisassociateRouterResponse
+        :param request: Request instance for DisassociateRouter
+        :type request: :class:`huaweicloudsdkdns.v2.DisassociateRouterRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.DisassociateRouterResponse`
         """
         return self.disassociate_router_with_http_info(request)
 
     def disassociate_router_with_http_info(self, request):
-        """在Private Zone上解关联VPC
-
-        在Private Zone上解关联VPC
-
-        :param DisassociateRouterRequest request
-        :return: DisassociateRouterResponse
-        """
-
         all_params = ['zone_id', 'disassociaterouter_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2611,26 +2422,21 @@ class DnsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_private_zones(self, request):
         """查询内网Zone的列表
 
         查询内网Zone的列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListPrivateZonesRequest request
-        :return: ListPrivateZonesResponse
+        :param request: Request instance for ListPrivateZones
+        :type request: :class:`huaweicloudsdkdns.v2.ListPrivateZonesRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.ListPrivateZonesResponse`
         """
         return self.list_private_zones_with_http_info(request)
 
     def list_private_zones_with_http_info(self, request):
-        """查询内网Zone的列表
-
-        查询内网Zone的列表
-
-        :param ListPrivateZonesRequest request
-        :return: ListPrivateZonesResponse
-        """
-
         all_params = ['type', 'limit', 'marker', 'offset', 'tags', 'name', 'status', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2688,26 +2494,21 @@ class DnsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_public_zones(self, request):
         """查询公网Zone的列表
 
         查询公网Zone的列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListPublicZonesRequest request
-        :return: ListPublicZonesResponse
+        :param request: Request instance for ListPublicZones
+        :type request: :class:`huaweicloudsdkdns.v2.ListPublicZonesRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.ListPublicZonesResponse`
         """
         return self.list_public_zones_with_http_info(request)
 
     def list_public_zones_with_http_info(self, request):
-        """查询公网Zone的列表
-
-        查询公网Zone的列表
-
-        :param ListPublicZonesRequest request
-        :return: ListPublicZonesResponse
-        """
-
         all_params = ['type', 'limit', 'marker', 'offset', 'tags', 'name', 'status', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2765,26 +2566,21 @@ class DnsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_private_zone(self, request):
         """查询单个内网Zone
 
         查询单个内网Zone
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowPrivateZoneRequest request
-        :return: ShowPrivateZoneResponse
+        :param request: Request instance for ShowPrivateZone
+        :type request: :class:`huaweicloudsdkdns.v2.ShowPrivateZoneRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.ShowPrivateZoneResponse`
         """
         return self.show_private_zone_with_http_info(request)
 
     def show_private_zone_with_http_info(self, request):
-        """查询单个内网Zone
-
-        查询单个内网Zone
-
-        :param ShowPrivateZoneRequest request
-        :return: ShowPrivateZoneResponse
-        """
-
         all_params = ['zone_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2828,26 +2624,21 @@ class DnsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_private_zone_name_server(self, request):
         """查询内网Zone的名称服务器
 
         查询内网Zone的名称服务器
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowPrivateZoneNameServerRequest request
-        :return: ShowPrivateZoneNameServerResponse
+        :param request: Request instance for ShowPrivateZoneNameServer
+        :type request: :class:`huaweicloudsdkdns.v2.ShowPrivateZoneNameServerRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.ShowPrivateZoneNameServerResponse`
         """
         return self.show_private_zone_name_server_with_http_info(request)
 
     def show_private_zone_name_server_with_http_info(self, request):
-        """查询内网Zone的名称服务器
-
-        查询内网Zone的名称服务器
-
-        :param ShowPrivateZoneNameServerRequest request
-        :return: ShowPrivateZoneNameServerResponse
-        """
-
         all_params = ['zone_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2891,26 +2682,21 @@ class DnsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_public_zone(self, request):
         """查询单个公网Zone
 
         查询单个公网Zone
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowPublicZoneRequest request
-        :return: ShowPublicZoneResponse
+        :param request: Request instance for ShowPublicZone
+        :type request: :class:`huaweicloudsdkdns.v2.ShowPublicZoneRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.ShowPublicZoneResponse`
         """
         return self.show_public_zone_with_http_info(request)
 
     def show_public_zone_with_http_info(self, request):
-        """查询单个公网Zone
-
-        查询单个公网Zone
-
-        :param ShowPublicZoneRequest request
-        :return: ShowPublicZoneResponse
-        """
-
         all_params = ['zone_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2954,26 +2740,21 @@ class DnsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_public_zone_name_server(self, request):
         """查询单个公网Zone的名称服务器
 
         查询单个公网Zone的名称服务器
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowPublicZoneNameServerRequest request
-        :return: ShowPublicZoneNameServerResponse
+        :param request: Request instance for ShowPublicZoneNameServer
+        :type request: :class:`huaweicloudsdkdns.v2.ShowPublicZoneNameServerRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.ShowPublicZoneNameServerResponse`
         """
         return self.show_public_zone_name_server_with_http_info(request)
 
     def show_public_zone_name_server_with_http_info(self, request):
-        """查询单个公网Zone的名称服务器
-
-        查询单个公网Zone的名称服务器
-
-        :param ShowPublicZoneNameServerRequest request
-        :return: ShowPublicZoneNameServerResponse
-        """
-
         all_params = ['zone_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3017,26 +2798,21 @@ class DnsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_private_zone(self, request):
         """修改单个Zone
 
         修改单个Zone
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdatePrivateZoneRequest request
-        :return: UpdatePrivateZoneResponse
+        :param request: Request instance for UpdatePrivateZone
+        :type request: :class:`huaweicloudsdkdns.v2.UpdatePrivateZoneRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.UpdatePrivateZoneResponse`
         """
         return self.update_private_zone_with_http_info(request)
 
     def update_private_zone_with_http_info(self, request):
-        """修改单个Zone
-
-        修改单个Zone
-
-        :param UpdatePrivateZoneRequest request
-        :return: UpdatePrivateZoneResponse
-        """
-
         all_params = ['zone_id', 'update_private_zone_info_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3082,26 +2858,21 @@ class DnsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_public_zone(self, request):
         """修改单个Zone
 
         修改单个Zone
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdatePublicZoneRequest request
-        :return: UpdatePublicZoneResponse
+        :param request: Request instance for UpdatePublicZone
+        :type request: :class:`huaweicloudsdkdns.v2.UpdatePublicZoneRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.UpdatePublicZoneResponse`
         """
         return self.update_public_zone_with_http_info(request)
 
     def update_public_zone_with_http_info(self, request):
-        """修改单个Zone
-
-        修改单个Zone
-
-        :param UpdatePublicZoneRequest request
-        :return: UpdatePublicZoneResponse
-        """
-
         all_params = ['zone_id', 'update_public_zone_info']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3147,26 +2918,21 @@ class DnsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_public_zone_status(self, request):
         """设置单个公网Zone状态，支持暂停、启用Zone
 
         设置单个公网Zone状态，支持暂停、启用Zone
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdatePublicZoneStatusRequest request
-        :return: UpdatePublicZoneStatusResponse
+        :param request: Request instance for UpdatePublicZoneStatus
+        :type request: :class:`huaweicloudsdkdns.v2.UpdatePublicZoneStatusRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.UpdatePublicZoneStatusResponse`
         """
         return self.update_public_zone_status_with_http_info(request)
 
     def update_public_zone_status_with_http_info(self, request):
-        """设置单个公网Zone状态，支持暂停、启用Zone
-
-        设置单个公网Zone状态，支持暂停、启用Zone
-
-        :param UpdatePublicZoneStatusRequest request
-        :return: UpdatePublicZoneStatusResponse
-        """
-
         all_params = ['zone_id', 'update_public_zone_status']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3211,7 +2977,6 @@ class DnsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListVolumesByTagsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListVolumesByTagsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, resources=None):
-        """ListVolumesByTagsResponse - a model defined in huaweicloud sdk"""
+        """ListVolumesByTagsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total_count: 符合查询条件的云硬盘资源个数
+        :type total_count: int
+        :param resources: 符合查询条件的资源列表
+        :type resources: list[:class:`huaweicloudsdkevs.v2.Resource`]
+        """
         
         super(ListVolumesByTagsResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListVolumesByTagsResponse(SdkResponse):
         符合查询条件的云硬盘资源个数
 
         :param total_count: The total_count of this ListVolumesByTagsResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 
@@ -74,7 +81,7 @@ class ListVolumesByTagsResponse(SdkResponse):
         符合查询条件的资源列表
 
         :return: The resources of this ListVolumesByTagsResponse.
-        :rtype: list[Resource]
+        :rtype: list[:class:`huaweicloudsdkevs.v2.Resource`]
         """
         return self._resources
 
@@ -85,7 +92,7 @@ class ListVolumesByTagsResponse(SdkResponse):
         符合查询条件的资源列表
 
         :param resources: The resources of this ListVolumesByTagsResponse.
-        :type: list[Resource]
+        :type resources: list[:class:`huaweicloudsdkevs.v2.Resource`]
         """
         self._resources = resources
 

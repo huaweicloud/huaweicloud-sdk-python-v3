@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NovaServerSecurityGroup:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class NovaServerSecurityGroup:
     }
 
     def __init__(self, name=None):
-        """NovaServerSecurityGroup - a model defined in huaweicloud sdk"""
+        """NovaServerSecurityGroup
+
+        The model defined in huaweicloud sdk
+
+        :param name: 安全组名称或者uuid。
+        :type name: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class NovaServerSecurityGroup:
         安全组名称或者uuid。
 
         :param name: The name of this NovaServerSecurityGroup.
-        :type: str
+        :type name: str
         """
         self._name = name
 

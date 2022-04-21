@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryJobResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -122,7 +121,105 @@ class QueryJobResp:
     }
 
     def __init__(self, id=None, parent_id=None, name=None, status=None, description=None, create_time=None, task_type=None, source_endpoint=None, dmq_endpoint=None, source_sharding=None, target_endpoint=None, net_type=None, failed_reason=None, inst_info=None, actual_start_time=None, full_transfer_complete_time=None, update_time=None, job_direction=None, db_use_type=None, need_restart=None, is_target_readonly=None, conflict_policy=None, filter_ddl_policy=None, speed_limit=None, schema_type=None, node_num=None, object_switch=None, master_job_id=None, full_mode=None, struct_trans=None, index_trans=None, replace_definer=None, migrate_user=None, sync_database=None, error_code=None, error_message=None, target_root_db=None, az_code=None, vpc_id=None, subnet_id=None, security_group_id=None, multi_write=None, support_ip_v6=None, inherit_id=None, gtid=None, alarm_notify=None, incre_start_position=None):
-        """QueryJobResp - a model defined in huaweicloud sdk"""
+        """QueryJobResp
+
+        The model defined in huaweicloud sdk
+
+        :param id: 任务id
+        :type id: str
+        :param parent_id: 父任务id。
+        :type parent_id: str
+        :param name: 任务名称
+        :type name: str
+        :param status: 任务状态
+        :type status: str
+        :param description: 描述信息
+        :type description: str
+        :param create_time: 创建时间，时间戳格式。
+        :type create_time: str
+        :param task_type: 迁移模式
+        :type task_type: str
+        :param source_endpoint: 
+        :type source_endpoint: :class:`huaweicloudsdkdrs.v3.Endpoint`
+        :param dmq_endpoint: 
+        :type dmq_endpoint: :class:`huaweicloudsdkdrs.v3.Endpoint`
+        :param source_sharding: 物理源库信息。
+        :type source_sharding: list[:class:`huaweicloudsdkdrs.v3.Endpoint`]
+        :param target_endpoint: 
+        :type target_endpoint: :class:`huaweicloudsdkdrs.v3.Endpoint`
+        :param net_type: 网络类型
+        :type net_type: str
+        :param failed_reason: 失败原因。
+        :type failed_reason: str
+        :param inst_info: 
+        :type inst_info: :class:`huaweicloudsdkdrs.v3.InstInfo`
+        :param actual_start_time: 实际启动时间，时间戳格式。
+        :type actual_start_time: str
+        :param full_transfer_complete_time: 全量完成时间，时间戳格式。
+        :type full_transfer_complete_time: str
+        :param update_time: 更新时间，时间戳格式
+        :type update_time: str
+        :param job_direction: 任务方向
+        :type job_direction: str
+        :param db_use_type: 迁移场景 - migration：实时迁移 - sync：实时同步 - cloudDataGuard：实时灾备
+        :type db_use_type: str
+        :param need_restart: 是否需要重启
+        :type need_restart: bool
+        :param is_target_readonly: 指定目标实例是否限制为只读
+        :type is_target_readonly: bool
+        :param conflict_policy: 冲突忽略策略 - stop：冲突失败 - overwrite：冲突覆盖 - ignore：冲突忽略
+        :type conflict_policy: str
+        :param filter_ddl_policy: 过滤DDL策略 - drop_database：过滤drop_database - drop_databasefilter_all：过滤所有ddl - \&quot;\&quot;：不过滤
+        :type filter_ddl_policy: str
+        :param speed_limit: 迁移速度限制。
+        :type speed_limit: list[:class:`huaweicloudsdkdrs.v3.SpeedLimitInfo`]
+        :param schema_type: 迁移方案 - Replication-主从复制 - Tungsten-日志解析 - PGBaseBackup-PG备份
+        :type schema_type: str
+        :param node_num: 节点个数。
+        :type node_num: str
+        :param object_switch: 对象选择开关
+        :type object_switch: bool
+        :param master_job_id: 主任务Id。
+        :type master_job_id: str
+        :param full_mode: 全量快照模式。
+        :type full_mode: str
+        :param struct_trans: 是否迁移结构。
+        :type struct_trans: bool
+        :param index_trans: 否迁移索引。
+        :type index_trans: bool
+        :param replace_definer: 是否使用目标库的用户替换掉definer。
+        :type replace_definer: bool
+        :param migrate_user: 是否迁移用户。
+        :type migrate_user: bool
+        :param sync_database: 是否库级同步。
+        :type sync_database: bool
+        :param error_code: 错误码
+        :type error_code: str
+        :param error_message: 错误信息。
+        :type error_message: str
+        :param target_root_db: 
+        :type target_root_db: :class:`huaweicloudsdkdrs.v3.DefaultRootDb`
+        :param az_code: node所在AZ
+        :type az_code: str
+        :param vpc_id: node所在VPC
+        :type vpc_id: str
+        :param subnet_id: node所在子网
+        :type subnet_id: str
+        :param security_group_id: node所在安全组
+        :type security_group_id: str
+        :param multi_write: 是否多主灾备任务,双主灾备时有值为true
+        :type multi_write: bool
+        :param support_ip_v6: 是否支持IPV6
+        :type support_ip_v6: bool
+        :param inherit_id: 继承的任务ID，Oracle_Mrskafka链路时使用。
+        :type inherit_id: str
+        :param gtid: 断点的GTID集合
+        :type gtid: str
+        :param alarm_notify: 
+        :type alarm_notify: :class:`huaweicloudsdkdrs.v3.QuerySmnInfoResp`
+        :param incre_start_position: 增量任务启动位点
+        :type incre_start_position: str
+        """
         
         
 
@@ -288,7 +385,7 @@ class QueryJobResp:
         任务id
 
         :param id: The id of this QueryJobResp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -310,7 +407,7 @@ class QueryJobResp:
         父任务id。
 
         :param parent_id: The parent_id of this QueryJobResp.
-        :type: str
+        :type parent_id: str
         """
         self._parent_id = parent_id
 
@@ -332,7 +429,7 @@ class QueryJobResp:
         任务名称
 
         :param name: The name of this QueryJobResp.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -354,7 +451,7 @@ class QueryJobResp:
         任务状态
 
         :param status: The status of this QueryJobResp.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -376,7 +473,7 @@ class QueryJobResp:
         描述信息
 
         :param description: The description of this QueryJobResp.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -398,7 +495,7 @@ class QueryJobResp:
         创建时间，时间戳格式。
 
         :param create_time: The create_time of this QueryJobResp.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -420,7 +517,7 @@ class QueryJobResp:
         迁移模式
 
         :param task_type: The task_type of this QueryJobResp.
-        :type: str
+        :type task_type: str
         """
         self._task_type = task_type
 
@@ -430,7 +527,7 @@ class QueryJobResp:
 
 
         :return: The source_endpoint of this QueryJobResp.
-        :rtype: Endpoint
+        :rtype: :class:`huaweicloudsdkdrs.v3.Endpoint`
         """
         return self._source_endpoint
 
@@ -440,7 +537,7 @@ class QueryJobResp:
 
 
         :param source_endpoint: The source_endpoint of this QueryJobResp.
-        :type: Endpoint
+        :type source_endpoint: :class:`huaweicloudsdkdrs.v3.Endpoint`
         """
         self._source_endpoint = source_endpoint
 
@@ -450,7 +547,7 @@ class QueryJobResp:
 
 
         :return: The dmq_endpoint of this QueryJobResp.
-        :rtype: Endpoint
+        :rtype: :class:`huaweicloudsdkdrs.v3.Endpoint`
         """
         return self._dmq_endpoint
 
@@ -460,7 +557,7 @@ class QueryJobResp:
 
 
         :param dmq_endpoint: The dmq_endpoint of this QueryJobResp.
-        :type: Endpoint
+        :type dmq_endpoint: :class:`huaweicloudsdkdrs.v3.Endpoint`
         """
         self._dmq_endpoint = dmq_endpoint
 
@@ -471,7 +568,7 @@ class QueryJobResp:
         物理源库信息。
 
         :return: The source_sharding of this QueryJobResp.
-        :rtype: list[Endpoint]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.Endpoint`]
         """
         return self._source_sharding
 
@@ -482,7 +579,7 @@ class QueryJobResp:
         物理源库信息。
 
         :param source_sharding: The source_sharding of this QueryJobResp.
-        :type: list[Endpoint]
+        :type source_sharding: list[:class:`huaweicloudsdkdrs.v3.Endpoint`]
         """
         self._source_sharding = source_sharding
 
@@ -492,7 +589,7 @@ class QueryJobResp:
 
 
         :return: The target_endpoint of this QueryJobResp.
-        :rtype: Endpoint
+        :rtype: :class:`huaweicloudsdkdrs.v3.Endpoint`
         """
         return self._target_endpoint
 
@@ -502,7 +599,7 @@ class QueryJobResp:
 
 
         :param target_endpoint: The target_endpoint of this QueryJobResp.
-        :type: Endpoint
+        :type target_endpoint: :class:`huaweicloudsdkdrs.v3.Endpoint`
         """
         self._target_endpoint = target_endpoint
 
@@ -524,7 +621,7 @@ class QueryJobResp:
         网络类型
 
         :param net_type: The net_type of this QueryJobResp.
-        :type: str
+        :type net_type: str
         """
         self._net_type = net_type
 
@@ -546,7 +643,7 @@ class QueryJobResp:
         失败原因。
 
         :param failed_reason: The failed_reason of this QueryJobResp.
-        :type: str
+        :type failed_reason: str
         """
         self._failed_reason = failed_reason
 
@@ -556,7 +653,7 @@ class QueryJobResp:
 
 
         :return: The inst_info of this QueryJobResp.
-        :rtype: InstInfo
+        :rtype: :class:`huaweicloudsdkdrs.v3.InstInfo`
         """
         return self._inst_info
 
@@ -566,7 +663,7 @@ class QueryJobResp:
 
 
         :param inst_info: The inst_info of this QueryJobResp.
-        :type: InstInfo
+        :type inst_info: :class:`huaweicloudsdkdrs.v3.InstInfo`
         """
         self._inst_info = inst_info
 
@@ -588,7 +685,7 @@ class QueryJobResp:
         实际启动时间，时间戳格式。
 
         :param actual_start_time: The actual_start_time of this QueryJobResp.
-        :type: str
+        :type actual_start_time: str
         """
         self._actual_start_time = actual_start_time
 
@@ -610,7 +707,7 @@ class QueryJobResp:
         全量完成时间，时间戳格式。
 
         :param full_transfer_complete_time: The full_transfer_complete_time of this QueryJobResp.
-        :type: str
+        :type full_transfer_complete_time: str
         """
         self._full_transfer_complete_time = full_transfer_complete_time
 
@@ -632,7 +729,7 @@ class QueryJobResp:
         更新时间，时间戳格式
 
         :param update_time: The update_time of this QueryJobResp.
-        :type: str
+        :type update_time: str
         """
         self._update_time = update_time
 
@@ -654,7 +751,7 @@ class QueryJobResp:
         任务方向
 
         :param job_direction: The job_direction of this QueryJobResp.
-        :type: str
+        :type job_direction: str
         """
         self._job_direction = job_direction
 
@@ -676,7 +773,7 @@ class QueryJobResp:
         迁移场景 - migration：实时迁移 - sync：实时同步 - cloudDataGuard：实时灾备
 
         :param db_use_type: The db_use_type of this QueryJobResp.
-        :type: str
+        :type db_use_type: str
         """
         self._db_use_type = db_use_type
 
@@ -698,7 +795,7 @@ class QueryJobResp:
         是否需要重启
 
         :param need_restart: The need_restart of this QueryJobResp.
-        :type: bool
+        :type need_restart: bool
         """
         self._need_restart = need_restart
 
@@ -720,7 +817,7 @@ class QueryJobResp:
         指定目标实例是否限制为只读
 
         :param is_target_readonly: The is_target_readonly of this QueryJobResp.
-        :type: bool
+        :type is_target_readonly: bool
         """
         self._is_target_readonly = is_target_readonly
 
@@ -742,7 +839,7 @@ class QueryJobResp:
         冲突忽略策略 - stop：冲突失败 - overwrite：冲突覆盖 - ignore：冲突忽略
 
         :param conflict_policy: The conflict_policy of this QueryJobResp.
-        :type: str
+        :type conflict_policy: str
         """
         self._conflict_policy = conflict_policy
 
@@ -764,7 +861,7 @@ class QueryJobResp:
         过滤DDL策略 - drop_database：过滤drop_database - drop_databasefilter_all：过滤所有ddl - \"\"：不过滤
 
         :param filter_ddl_policy: The filter_ddl_policy of this QueryJobResp.
-        :type: str
+        :type filter_ddl_policy: str
         """
         self._filter_ddl_policy = filter_ddl_policy
 
@@ -775,7 +872,7 @@ class QueryJobResp:
         迁移速度限制。
 
         :return: The speed_limit of this QueryJobResp.
-        :rtype: list[SpeedLimitInfo]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.SpeedLimitInfo`]
         """
         return self._speed_limit
 
@@ -786,7 +883,7 @@ class QueryJobResp:
         迁移速度限制。
 
         :param speed_limit: The speed_limit of this QueryJobResp.
-        :type: list[SpeedLimitInfo]
+        :type speed_limit: list[:class:`huaweicloudsdkdrs.v3.SpeedLimitInfo`]
         """
         self._speed_limit = speed_limit
 
@@ -808,7 +905,7 @@ class QueryJobResp:
         迁移方案 - Replication-主从复制 - Tungsten-日志解析 - PGBaseBackup-PG备份
 
         :param schema_type: The schema_type of this QueryJobResp.
-        :type: str
+        :type schema_type: str
         """
         self._schema_type = schema_type
 
@@ -830,7 +927,7 @@ class QueryJobResp:
         节点个数。
 
         :param node_num: The node_num of this QueryJobResp.
-        :type: str
+        :type node_num: str
         """
         self._node_num = node_num
 
@@ -852,7 +949,7 @@ class QueryJobResp:
         对象选择开关
 
         :param object_switch: The object_switch of this QueryJobResp.
-        :type: bool
+        :type object_switch: bool
         """
         self._object_switch = object_switch
 
@@ -874,7 +971,7 @@ class QueryJobResp:
         主任务Id。
 
         :param master_job_id: The master_job_id of this QueryJobResp.
-        :type: str
+        :type master_job_id: str
         """
         self._master_job_id = master_job_id
 
@@ -896,7 +993,7 @@ class QueryJobResp:
         全量快照模式。
 
         :param full_mode: The full_mode of this QueryJobResp.
-        :type: str
+        :type full_mode: str
         """
         self._full_mode = full_mode
 
@@ -918,7 +1015,7 @@ class QueryJobResp:
         是否迁移结构。
 
         :param struct_trans: The struct_trans of this QueryJobResp.
-        :type: bool
+        :type struct_trans: bool
         """
         self._struct_trans = struct_trans
 
@@ -940,7 +1037,7 @@ class QueryJobResp:
         否迁移索引。
 
         :param index_trans: The index_trans of this QueryJobResp.
-        :type: bool
+        :type index_trans: bool
         """
         self._index_trans = index_trans
 
@@ -962,7 +1059,7 @@ class QueryJobResp:
         是否使用目标库的用户替换掉definer。
 
         :param replace_definer: The replace_definer of this QueryJobResp.
-        :type: bool
+        :type replace_definer: bool
         """
         self._replace_definer = replace_definer
 
@@ -984,7 +1081,7 @@ class QueryJobResp:
         是否迁移用户。
 
         :param migrate_user: The migrate_user of this QueryJobResp.
-        :type: bool
+        :type migrate_user: bool
         """
         self._migrate_user = migrate_user
 
@@ -1006,7 +1103,7 @@ class QueryJobResp:
         是否库级同步。
 
         :param sync_database: The sync_database of this QueryJobResp.
-        :type: bool
+        :type sync_database: bool
         """
         self._sync_database = sync_database
 
@@ -1028,7 +1125,7 @@ class QueryJobResp:
         错误码
 
         :param error_code: The error_code of this QueryJobResp.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -1050,7 +1147,7 @@ class QueryJobResp:
         错误信息。
 
         :param error_message: The error_message of this QueryJobResp.
-        :type: str
+        :type error_message: str
         """
         self._error_message = error_message
 
@@ -1060,7 +1157,7 @@ class QueryJobResp:
 
 
         :return: The target_root_db of this QueryJobResp.
-        :rtype: DefaultRootDb
+        :rtype: :class:`huaweicloudsdkdrs.v3.DefaultRootDb`
         """
         return self._target_root_db
 
@@ -1070,7 +1167,7 @@ class QueryJobResp:
 
 
         :param target_root_db: The target_root_db of this QueryJobResp.
-        :type: DefaultRootDb
+        :type target_root_db: :class:`huaweicloudsdkdrs.v3.DefaultRootDb`
         """
         self._target_root_db = target_root_db
 
@@ -1092,7 +1189,7 @@ class QueryJobResp:
         node所在AZ
 
         :param az_code: The az_code of this QueryJobResp.
-        :type: str
+        :type az_code: str
         """
         self._az_code = az_code
 
@@ -1114,7 +1211,7 @@ class QueryJobResp:
         node所在VPC
 
         :param vpc_id: The vpc_id of this QueryJobResp.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -1136,7 +1233,7 @@ class QueryJobResp:
         node所在子网
 
         :param subnet_id: The subnet_id of this QueryJobResp.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -1158,7 +1255,7 @@ class QueryJobResp:
         node所在安全组
 
         :param security_group_id: The security_group_id of this QueryJobResp.
-        :type: str
+        :type security_group_id: str
         """
         self._security_group_id = security_group_id
 
@@ -1180,7 +1277,7 @@ class QueryJobResp:
         是否多主灾备任务,双主灾备时有值为true
 
         :param multi_write: The multi_write of this QueryJobResp.
-        :type: bool
+        :type multi_write: bool
         """
         self._multi_write = multi_write
 
@@ -1202,7 +1299,7 @@ class QueryJobResp:
         是否支持IPV6
 
         :param support_ip_v6: The support_ip_v6 of this QueryJobResp.
-        :type: bool
+        :type support_ip_v6: bool
         """
         self._support_ip_v6 = support_ip_v6
 
@@ -1224,7 +1321,7 @@ class QueryJobResp:
         继承的任务ID，Oracle_Mrskafka链路时使用。
 
         :param inherit_id: The inherit_id of this QueryJobResp.
-        :type: str
+        :type inherit_id: str
         """
         self._inherit_id = inherit_id
 
@@ -1246,7 +1343,7 @@ class QueryJobResp:
         断点的GTID集合
 
         :param gtid: The gtid of this QueryJobResp.
-        :type: str
+        :type gtid: str
         """
         self._gtid = gtid
 
@@ -1256,7 +1353,7 @@ class QueryJobResp:
 
 
         :return: The alarm_notify of this QueryJobResp.
-        :rtype: QuerySmnInfoResp
+        :rtype: :class:`huaweicloudsdkdrs.v3.QuerySmnInfoResp`
         """
         return self._alarm_notify
 
@@ -1266,7 +1363,7 @@ class QueryJobResp:
 
 
         :param alarm_notify: The alarm_notify of this QueryJobResp.
-        :type: QuerySmnInfoResp
+        :type alarm_notify: :class:`huaweicloudsdkdrs.v3.QuerySmnInfoResp`
         """
         self._alarm_notify = alarm_notify
 
@@ -1288,7 +1385,7 @@ class QueryJobResp:
         增量任务启动位点
 
         :param incre_start_position: The incre_start_position of this QueryJobResp.
-        :type: str
+        :type incre_start_position: str
         """
         self._incre_start_position = incre_start_position
 

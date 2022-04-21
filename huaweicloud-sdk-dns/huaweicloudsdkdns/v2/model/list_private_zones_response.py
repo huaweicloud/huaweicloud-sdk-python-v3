@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPrivateZonesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListPrivateZonesResponse(SdkResponse):
     }
 
     def __init__(self, links=None, metadata=None, zones=None):
-        """ListPrivateZonesResponse - a model defined in huaweicloud sdk"""
+        """ListPrivateZonesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param links: 
+        :type links: :class:`huaweicloudsdkdns.v2.PageLink`
+        :param metadata: 
+        :type metadata: :class:`huaweicloudsdkdns.v2.Metedata`
+        :param zones: 
+        :type zones: list[:class:`huaweicloudsdkdns.v2.PrivateZoneResp`]
+        """
         
         super(ListPrivateZonesResponse, self).__init__()
 
@@ -56,7 +65,7 @@ class ListPrivateZonesResponse(SdkResponse):
 
 
         :return: The links of this ListPrivateZonesResponse.
-        :rtype: PageLink
+        :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
         """
         return self._links
 
@@ -66,7 +75,7 @@ class ListPrivateZonesResponse(SdkResponse):
 
 
         :param links: The links of this ListPrivateZonesResponse.
-        :type: PageLink
+        :type links: :class:`huaweicloudsdkdns.v2.PageLink`
         """
         self._links = links
 
@@ -76,7 +85,7 @@ class ListPrivateZonesResponse(SdkResponse):
 
 
         :return: The metadata of this ListPrivateZonesResponse.
-        :rtype: Metedata
+        :rtype: :class:`huaweicloudsdkdns.v2.Metedata`
         """
         return self._metadata
 
@@ -86,7 +95,7 @@ class ListPrivateZonesResponse(SdkResponse):
 
 
         :param metadata: The metadata of this ListPrivateZonesResponse.
-        :type: Metedata
+        :type metadata: :class:`huaweicloudsdkdns.v2.Metedata`
         """
         self._metadata = metadata
 
@@ -96,7 +105,7 @@ class ListPrivateZonesResponse(SdkResponse):
 
 
         :return: The zones of this ListPrivateZonesResponse.
-        :rtype: list[PrivateZoneResp]
+        :rtype: list[:class:`huaweicloudsdkdns.v2.PrivateZoneResp`]
         """
         return self._zones
 
@@ -106,7 +115,7 @@ class ListPrivateZonesResponse(SdkResponse):
 
 
         :param zones: The zones of this ListPrivateZonesResponse.
-        :type: list[PrivateZoneResp]
+        :type zones: list[:class:`huaweicloudsdkdns.v2.PrivateZoneResp`]
         """
         self._zones = zones
 

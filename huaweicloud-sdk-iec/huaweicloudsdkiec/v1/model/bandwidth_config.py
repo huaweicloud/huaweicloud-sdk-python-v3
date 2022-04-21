@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BandwidthConfig:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BandwidthConfig:
     }
 
     def __init__(self, sharetype=None, size=None):
-        """BandwidthConfig - a model defined in huaweicloud sdk"""
+        """BandwidthConfig
+
+        The model defined in huaweicloud sdk
+
+        :param sharetype: 带宽类型，现支持WHOLE类型，即共享带宽，其他类型不支持。
+        :type sharetype: str
+        :param size: 带宽（Mbit/s）。 
+        :type size: int
+        """
         
         
 
@@ -62,7 +69,7 @@ class BandwidthConfig:
         带宽类型，现支持WHOLE类型，即共享带宽，其他类型不支持。
 
         :param sharetype: The sharetype of this BandwidthConfig.
-        :type: str
+        :type sharetype: str
         """
         self._sharetype = sharetype
 
@@ -84,7 +91,7 @@ class BandwidthConfig:
         带宽（Mbit/s）。 
 
         :param size: The size of this BandwidthConfig.
-        :type: int
+        :type size: int
         """
         self._size = size
 

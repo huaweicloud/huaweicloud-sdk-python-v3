@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowMetadataResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ShowMetadataResponse(SdkResponse):
     }
 
     def __init__(self, id=None, idp_id=None, entity_id=None, protocol_id=None, domain_id=None, xaccount_type=None, update_time=None, data=None):
-        """ShowMetadataResponse - a model defined in huaweicloud sdk"""
+        """ShowMetadataResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: Metadata的ID。
+        :type id: str
+        :param idp_id: 身份提供商ID。
+        :type idp_id: str
+        :param entity_id: Metadata文件中的entityID字段。
+        :type entity_id: str
+        :param protocol_id: 协议ID。
+        :type protocol_id: str
+        :param domain_id: 用户所属账号ID。
+        :type domain_id: str
+        :param xaccount_type: 账号来源，默认为空。
+        :type xaccount_type: str
+        :param update_time: 导入或更新Metadata文件的时间。
+        :type update_time: str
+        :param data: Metadata文件的内容。
+        :type data: str
+        """
         
         super(ShowMetadataResponse, self).__init__()
 
@@ -93,7 +112,7 @@ class ShowMetadataResponse(SdkResponse):
         Metadata的ID。
 
         :param id: The id of this ShowMetadataResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -115,7 +134,7 @@ class ShowMetadataResponse(SdkResponse):
         身份提供商ID。
 
         :param idp_id: The idp_id of this ShowMetadataResponse.
-        :type: str
+        :type idp_id: str
         """
         self._idp_id = idp_id
 
@@ -137,7 +156,7 @@ class ShowMetadataResponse(SdkResponse):
         Metadata文件中的entityID字段。
 
         :param entity_id: The entity_id of this ShowMetadataResponse.
-        :type: str
+        :type entity_id: str
         """
         self._entity_id = entity_id
 
@@ -159,7 +178,7 @@ class ShowMetadataResponse(SdkResponse):
         协议ID。
 
         :param protocol_id: The protocol_id of this ShowMetadataResponse.
-        :type: str
+        :type protocol_id: str
         """
         self._protocol_id = protocol_id
 
@@ -181,7 +200,7 @@ class ShowMetadataResponse(SdkResponse):
         用户所属账号ID。
 
         :param domain_id: The domain_id of this ShowMetadataResponse.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -203,7 +222,7 @@ class ShowMetadataResponse(SdkResponse):
         账号来源，默认为空。
 
         :param xaccount_type: The xaccount_type of this ShowMetadataResponse.
-        :type: str
+        :type xaccount_type: str
         """
         self._xaccount_type = xaccount_type
 
@@ -225,7 +244,7 @@ class ShowMetadataResponse(SdkResponse):
         导入或更新Metadata文件的时间。
 
         :param update_time: The update_time of this ShowMetadataResponse.
-        :type: str
+        :type update_time: str
         """
         self._update_time = update_time
 
@@ -247,7 +266,7 @@ class ShowMetadataResponse(SdkResponse):
         Metadata文件的内容。
 
         :param data: The data of this ShowMetadataResponse.
-        :type: str
+        :type data: str
         """
         self._data = data
 

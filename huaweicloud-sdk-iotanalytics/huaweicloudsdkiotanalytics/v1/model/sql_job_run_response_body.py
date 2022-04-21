@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SqlJobRunResponseBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class SqlJobRunResponseBody:
     }
 
     def __init__(self, sql_type=None, schema=None, rows=None, job_mode=None):
-        """SqlJobRunResponseBody - a model defined in huaweicloud sdk"""
+        """SqlJobRunResponseBody
+
+        The model defined in huaweicloud sdk
+
+        :param sql_type: 作业类型。DDL, DCL, IMPORT, EXPORT, QUERY, INSERT.
+        :type sql_type: str
+        :param schema: 当语句类型为DDL时，返回其结果的列名称及类型。
+        :type schema: list[object]
+        :param rows: 当语句类型为DDL时，直接返回其执行结果。
+        :type rows: list[object]
+        :param job_mode: 作业执行模式：async: 异步; sync: 同步。
+        :type job_mode: str
+        """
         
         
 
@@ -72,7 +83,7 @@ class SqlJobRunResponseBody:
         作业类型。DDL, DCL, IMPORT, EXPORT, QUERY, INSERT.
 
         :param sql_type: The sql_type of this SqlJobRunResponseBody.
-        :type: str
+        :type sql_type: str
         """
         self._sql_type = sql_type
 
@@ -94,7 +105,7 @@ class SqlJobRunResponseBody:
         当语句类型为DDL时，返回其结果的列名称及类型。
 
         :param schema: The schema of this SqlJobRunResponseBody.
-        :type: list[object]
+        :type schema: list[object]
         """
         self._schema = schema
 
@@ -116,7 +127,7 @@ class SqlJobRunResponseBody:
         当语句类型为DDL时，直接返回其执行结果。
 
         :param rows: The rows of this SqlJobRunResponseBody.
-        :type: list[object]
+        :type rows: list[object]
         """
         self._rows = rows
 
@@ -138,7 +149,7 @@ class SqlJobRunResponseBody:
         作业执行模式：async: 异步; sync: 同步。
 
         :param job_mode: The job_mode of this SqlJobRunResponseBody.
-        :type: str
+        :type job_mode: str
         """
         self._job_mode = job_mode
 

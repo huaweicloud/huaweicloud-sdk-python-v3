@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ProfileInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class ProfileInfo:
     }
 
     def __init__(self, local_network_port=None, standalone=None, notify_status=None, create_time=None, fake_network_type=None, create_source=None, ecs_id=None, lock_status=None, freezed_status=None, bandwith_info=None):
-        """ProfileInfo - a model defined in huaweicloud sdk"""
+        """ProfileInfo
+
+        The model defined in huaweicloud sdk
+
+        :param local_network_port: 公网IP附属的5_xxx网络（如5_bgp）中的port_id
+        :type local_network_port: str
+        :param standalone: 标识公网IP是否是和虚机一起创建的。true-独立创建；false-和虚机一起创建
+        :type standalone: bool
+        :param notify_status: 云服务标识公网IP创建进度, EIP服务内部使用。
+        :type notify_status: str
+        :param create_time: 公网IP创建时间
+        :type create_time: str
+        :param fake_network_type: 该字段仅仅用于表示eip的bgp类型是否是真实的静态sbgp * 1. 如果为true，则该eip可以切换bgp类型 * 2. 如果为false，则该eip不可以切换bgp类型
+        :type fake_network_type: bool
+        :param create_source: 标识IP是和哪类资源一起购买的
+        :type create_source: str
+        :param ecs_id: 标识和公网IP一起购买的ecs的id
+        :type ecs_id: str
+        :param lock_status: 公网IP加锁状态, eg:\&quot;POLICE,LOCKED\&quot;。POLICE-公安冻结；LOCKED-普通冻结；普通冻结细分状态：ARREAR-欠费；DELABLE-可删除；
+        :type lock_status: str
+        :param freezed_status: 公网IP冻结状态。
+        :type freezed_status: str
+        :param bandwith_info: 
+        :type bandwith_info: :class:`huaweicloudsdkeip.v3.BandwidthInfoResp`
+        """
         
         
 
@@ -103,7 +126,7 @@ class ProfileInfo:
         公网IP附属的5_xxx网络（如5_bgp）中的port_id
 
         :param local_network_port: The local_network_port of this ProfileInfo.
-        :type: str
+        :type local_network_port: str
         """
         self._local_network_port = local_network_port
 
@@ -125,7 +148,7 @@ class ProfileInfo:
         标识公网IP是否是和虚机一起创建的。true-独立创建；false-和虚机一起创建
 
         :param standalone: The standalone of this ProfileInfo.
-        :type: bool
+        :type standalone: bool
         """
         self._standalone = standalone
 
@@ -147,7 +170,7 @@ class ProfileInfo:
         云服务标识公网IP创建进度, EIP服务内部使用。
 
         :param notify_status: The notify_status of this ProfileInfo.
-        :type: str
+        :type notify_status: str
         """
         self._notify_status = notify_status
 
@@ -169,7 +192,7 @@ class ProfileInfo:
         公网IP创建时间
 
         :param create_time: The create_time of this ProfileInfo.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -191,7 +214,7 @@ class ProfileInfo:
         该字段仅仅用于表示eip的bgp类型是否是真实的静态sbgp * 1. 如果为true，则该eip可以切换bgp类型 * 2. 如果为false，则该eip不可以切换bgp类型
 
         :param fake_network_type: The fake_network_type of this ProfileInfo.
-        :type: bool
+        :type fake_network_type: bool
         """
         self._fake_network_type = fake_network_type
 
@@ -213,7 +236,7 @@ class ProfileInfo:
         标识IP是和哪类资源一起购买的
 
         :param create_source: The create_source of this ProfileInfo.
-        :type: str
+        :type create_source: str
         """
         self._create_source = create_source
 
@@ -235,7 +258,7 @@ class ProfileInfo:
         标识和公网IP一起购买的ecs的id
 
         :param ecs_id: The ecs_id of this ProfileInfo.
-        :type: str
+        :type ecs_id: str
         """
         self._ecs_id = ecs_id
 
@@ -257,7 +280,7 @@ class ProfileInfo:
         公网IP加锁状态, eg:\"POLICE,LOCKED\"。POLICE-公安冻结；LOCKED-普通冻结；普通冻结细分状态：ARREAR-欠费；DELABLE-可删除；
 
         :param lock_status: The lock_status of this ProfileInfo.
-        :type: str
+        :type lock_status: str
         """
         self._lock_status = lock_status
 
@@ -279,7 +302,7 @@ class ProfileInfo:
         公网IP冻结状态。
 
         :param freezed_status: The freezed_status of this ProfileInfo.
-        :type: str
+        :type freezed_status: str
         """
         self._freezed_status = freezed_status
 
@@ -289,7 +312,7 @@ class ProfileInfo:
 
 
         :return: The bandwith_info of this ProfileInfo.
-        :rtype: BandwidthInfoResp
+        :rtype: :class:`huaweicloudsdkeip.v3.BandwidthInfoResp`
         """
         return self._bandwith_info
 
@@ -299,7 +322,7 @@ class ProfileInfo:
 
 
         :param bandwith_info: The bandwith_info of this ProfileInfo.
-        :type: BandwidthInfoResp
+        :type bandwith_info: :class:`huaweicloudsdkeip.v3.BandwidthInfoResp`
         """
         self._bandwith_info = bandwith_info
 

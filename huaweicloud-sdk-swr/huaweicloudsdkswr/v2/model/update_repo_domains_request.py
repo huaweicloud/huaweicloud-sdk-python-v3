@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateRepoDomainsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UpdateRepoDomainsRequest:
     }
 
     def __init__(self, namespace=None, repository=None, access_domain=None, body=None):
-        """UpdateRepoDomainsRequest - a model defined in huaweicloud sdk"""
+        """UpdateRepoDomainsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param namespace: 组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
+        :type namespace: str
+        :param repository: 镜像仓库名称
+        :type repository: str
+        :param access_domain: 共享帐号
+        :type access_domain: str
+        :param body: Body of the UpdateRepoDomainsRequest
+        :type body: :class:`huaweicloudsdkswr.v2.UpdateRepoDomainsRequestBody`
+        """
         
         
 
@@ -70,7 +81,7 @@ class UpdateRepoDomainsRequest:
         组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
 
         :param namespace: The namespace of this UpdateRepoDomainsRequest.
-        :type: str
+        :type namespace: str
         """
         self._namespace = namespace
 
@@ -92,7 +103,7 @@ class UpdateRepoDomainsRequest:
         镜像仓库名称
 
         :param repository: The repository of this UpdateRepoDomainsRequest.
-        :type: str
+        :type repository: str
         """
         self._repository = repository
 
@@ -114,7 +125,7 @@ class UpdateRepoDomainsRequest:
         共享帐号
 
         :param access_domain: The access_domain of this UpdateRepoDomainsRequest.
-        :type: str
+        :type access_domain: str
         """
         self._access_domain = access_domain
 
@@ -124,7 +135,7 @@ class UpdateRepoDomainsRequest:
 
 
         :return: The body of this UpdateRepoDomainsRequest.
-        :rtype: UpdateRepoDomainsRequestBody
+        :rtype: :class:`huaweicloudsdkswr.v2.UpdateRepoDomainsRequestBody`
         """
         return self._body
 
@@ -134,7 +145,7 @@ class UpdateRepoDomainsRequest:
 
 
         :param body: The body of this UpdateRepoDomainsRequest.
-        :type: UpdateRepoDomainsRequestBody
+        :type body: :class:`huaweicloudsdkswr.v2.UpdateRepoDomainsRequestBody`
         """
         self._body = body
 

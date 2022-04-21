@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateUserInformationOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateUserInformationOption:
     }
 
     def __init__(self, email=None, mobile=None):
-        """UpdateUserInformationOption - a model defined in huaweicloud sdk"""
+        """UpdateUserInformationOption
+
+        The model defined in huaweicloud sdk
+
+        :param email: IAM用户的新邮箱，符合邮箱格式，长度小于等于255字符。
+        :type email: str
+        :param mobile: IAM用户的国家码+新手机号，手机号为纯数字，长度小于等于32字符。
+        :type mobile: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class UpdateUserInformationOption:
         IAM用户的新邮箱，符合邮箱格式，长度小于等于255字符。
 
         :param email: The email of this UpdateUserInformationOption.
-        :type: str
+        :type email: str
         """
         self._email = email
 
@@ -85,7 +92,7 @@ class UpdateUserInformationOption:
         IAM用户的国家码+新手机号，手机号为纯数字，长度小于等于32字符。
 
         :param mobile: The mobile of this UpdateUserInformationOption.
-        :type: str
+        :type mobile: str
         """
         self._mobile = mobile
 

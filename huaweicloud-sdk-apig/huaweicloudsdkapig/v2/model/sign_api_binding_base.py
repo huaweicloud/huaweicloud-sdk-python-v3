@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SignApiBindingBase:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class SignApiBindingBase:
     }
 
     def __init__(self, publish_id=None, api_id=None, group_name=None, binding_time=None, env_id=None, env_name=None, api_type=None, api_name=None, id=None, api_remark=None, sign_id=None, sign_name=None):
-        """SignApiBindingBase - a model defined in huaweicloud sdk"""
+        """SignApiBindingBase
+
+        The model defined in huaweicloud sdk
+
+        :param publish_id: API的发布编号
+        :type publish_id: str
+        :param api_id: API编号
+        :type api_id: str
+        :param group_name: API所属分组的名称
+        :type group_name: str
+        :param binding_time: 绑定时间
+        :type binding_time: datetime
+        :param env_id: API所属环境的编号
+        :type env_id: str
+        :param env_name: API所属环境的名称
+        :type env_name: str
+        :param api_type: API类型
+        :type api_type: int
+        :param api_name: API名称
+        :type api_name: str
+        :param id: 绑定关系的ID
+        :type id: str
+        :param api_remark: API描述
+        :type api_remark: str
+        :param sign_id: 签名密钥的编号
+        :type sign_id: str
+        :param sign_name: 签名密钥的名称。支持汉字，英文，数字，下划线，且只能以英文和汉字开头，3 ~ 64字符。 &gt; 中文字符必须为UTF-8或者unicode编码。
+        :type sign_name: str
+        """
         
         
 
@@ -113,7 +140,7 @@ class SignApiBindingBase:
         API的发布编号
 
         :param publish_id: The publish_id of this SignApiBindingBase.
-        :type: str
+        :type publish_id: str
         """
         self._publish_id = publish_id
 
@@ -135,7 +162,7 @@ class SignApiBindingBase:
         API编号
 
         :param api_id: The api_id of this SignApiBindingBase.
-        :type: str
+        :type api_id: str
         """
         self._api_id = api_id
 
@@ -157,7 +184,7 @@ class SignApiBindingBase:
         API所属分组的名称
 
         :param group_name: The group_name of this SignApiBindingBase.
-        :type: str
+        :type group_name: str
         """
         self._group_name = group_name
 
@@ -179,7 +206,7 @@ class SignApiBindingBase:
         绑定时间
 
         :param binding_time: The binding_time of this SignApiBindingBase.
-        :type: datetime
+        :type binding_time: datetime
         """
         self._binding_time = binding_time
 
@@ -201,7 +228,7 @@ class SignApiBindingBase:
         API所属环境的编号
 
         :param env_id: The env_id of this SignApiBindingBase.
-        :type: str
+        :type env_id: str
         """
         self._env_id = env_id
 
@@ -223,7 +250,7 @@ class SignApiBindingBase:
         API所属环境的名称
 
         :param env_name: The env_name of this SignApiBindingBase.
-        :type: str
+        :type env_name: str
         """
         self._env_name = env_name
 
@@ -245,7 +272,7 @@ class SignApiBindingBase:
         API类型
 
         :param api_type: The api_type of this SignApiBindingBase.
-        :type: int
+        :type api_type: int
         """
         self._api_type = api_type
 
@@ -267,7 +294,7 @@ class SignApiBindingBase:
         API名称
 
         :param api_name: The api_name of this SignApiBindingBase.
-        :type: str
+        :type api_name: str
         """
         self._api_name = api_name
 
@@ -289,7 +316,7 @@ class SignApiBindingBase:
         绑定关系的ID
 
         :param id: The id of this SignApiBindingBase.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -311,7 +338,7 @@ class SignApiBindingBase:
         API描述
 
         :param api_remark: The api_remark of this SignApiBindingBase.
-        :type: str
+        :type api_remark: str
         """
         self._api_remark = api_remark
 
@@ -333,7 +360,7 @@ class SignApiBindingBase:
         签名密钥的编号
 
         :param sign_id: The sign_id of this SignApiBindingBase.
-        :type: str
+        :type sign_id: str
         """
         self._sign_id = sign_id
 
@@ -355,7 +382,7 @@ class SignApiBindingBase:
         签名密钥的名称。支持汉字，英文，数字，下划线，且只能以英文和汉字开头，3 ~ 64字符。 > 中文字符必须为UTF-8或者unicode编码。
 
         :param sign_name: The sign_name of this SignApiBindingBase.
-        :type: str
+        :type sign_name: str
         """
         self._sign_name = sign_name
 

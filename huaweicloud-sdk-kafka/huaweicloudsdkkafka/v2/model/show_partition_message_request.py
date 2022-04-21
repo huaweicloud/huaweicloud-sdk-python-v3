@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowPartitionMessageRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowPartitionMessageRequest:
     }
 
     def __init__(self, instance_id=None, topic=None, partition=None, message_offset=None):
-        """ShowPartitionMessageRequest - a model defined in huaweicloud sdk"""
+        """ShowPartitionMessageRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param topic: Topic名称。
+        :type topic: str
+        :param partition: 分区编号。
+        :type partition: int
+        :param message_offset: 消息位置。
+        :type message_offset: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class ShowPartitionMessageRequest:
         实例ID。
 
         :param instance_id: The instance_id of this ShowPartitionMessageRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -91,7 +102,7 @@ class ShowPartitionMessageRequest:
         Topic名称。
 
         :param topic: The topic of this ShowPartitionMessageRequest.
-        :type: str
+        :type topic: str
         """
         self._topic = topic
 
@@ -113,7 +124,7 @@ class ShowPartitionMessageRequest:
         分区编号。
 
         :param partition: The partition of this ShowPartitionMessageRequest.
-        :type: int
+        :type partition: int
         """
         self._partition = partition
 
@@ -135,7 +146,7 @@ class ShowPartitionMessageRequest:
         消息位置。
 
         :param message_offset: The message_offset of this ShowPartitionMessageRequest.
-        :type: str
+        :type message_offset: str
         """
         self._message_offset = message_offset
 

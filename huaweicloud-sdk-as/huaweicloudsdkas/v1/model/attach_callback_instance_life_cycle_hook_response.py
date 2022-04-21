@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AttachCallbackInstanceLifeCycleHookResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class AttachCallbackInstanceLifeCycleHookResponse(SdkResponse):
     }
 
     def __init__(self):
-        """AttachCallbackInstanceLifeCycleHookResponse - a model defined in huaweicloud sdk"""
+        """AttachCallbackInstanceLifeCycleHookResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(AttachCallbackInstanceLifeCycleHookResponse, self).__init__()
         self.discriminator = None

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SearchAttendanceRecordsOfHisMeetingRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class SearchAttendanceRecordsOfHisMeetingRequest:
     }
 
     def __init__(self, conf_uuid=None, offset=None, limit=None, search_key=None, user_uuid=None, x_authorization_type=None, x_site_id=None, accept_language=None):
-        """SearchAttendanceRecordsOfHisMeetingRequest - a model defined in huaweicloud sdk"""
+        """SearchAttendanceRecordsOfHisMeetingRequest
+
+        The model defined in huaweicloud sdk
+
+        :param conf_uuid: 会议UUID。
+        :type conf_uuid: str
+        :param offset: 指定返回的记录索引。该值必须大于等于0； 默认为0。
+        :type offset: int
+        :param limit: 指定返回的记录数，默认是20，最大500条。
+        :type limit: int
+        :param search_key: 查询用来当作关键词的字符串。
+        :type search_key: str
+        :param user_uuid: 用户的UUID（已在USG注册过的）。
+        :type user_uuid: str
+        :param x_authorization_type: 标识是否为第三方portal过来的请求。
+        :type x_authorization_type: str
+        :param x_site_id: 用于区分到哪个HCSO站点鉴权。
+        :type x_site_id: str
+        :param accept_language: 语言。默认简体中文。 - zh-CN: 简体中文。 - en-US: 美国英文。
+        :type accept_language: str
+        """
         
         
 
@@ -92,7 +111,7 @@ class SearchAttendanceRecordsOfHisMeetingRequest:
         会议UUID。
 
         :param conf_uuid: The conf_uuid of this SearchAttendanceRecordsOfHisMeetingRequest.
-        :type: str
+        :type conf_uuid: str
         """
         self._conf_uuid = conf_uuid
 
@@ -114,7 +133,7 @@ class SearchAttendanceRecordsOfHisMeetingRequest:
         指定返回的记录索引。该值必须大于等于0； 默认为0。
 
         :param offset: The offset of this SearchAttendanceRecordsOfHisMeetingRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -136,7 +155,7 @@ class SearchAttendanceRecordsOfHisMeetingRequest:
         指定返回的记录数，默认是20，最大500条。
 
         :param limit: The limit of this SearchAttendanceRecordsOfHisMeetingRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -158,7 +177,7 @@ class SearchAttendanceRecordsOfHisMeetingRequest:
         查询用来当作关键词的字符串。
 
         :param search_key: The search_key of this SearchAttendanceRecordsOfHisMeetingRequest.
-        :type: str
+        :type search_key: str
         """
         self._search_key = search_key
 
@@ -180,7 +199,7 @@ class SearchAttendanceRecordsOfHisMeetingRequest:
         用户的UUID（已在USG注册过的）。
 
         :param user_uuid: The user_uuid of this SearchAttendanceRecordsOfHisMeetingRequest.
-        :type: str
+        :type user_uuid: str
         """
         self._user_uuid = user_uuid
 
@@ -202,7 +221,7 @@ class SearchAttendanceRecordsOfHisMeetingRequest:
         标识是否为第三方portal过来的请求。
 
         :param x_authorization_type: The x_authorization_type of this SearchAttendanceRecordsOfHisMeetingRequest.
-        :type: str
+        :type x_authorization_type: str
         """
         self._x_authorization_type = x_authorization_type
 
@@ -224,7 +243,7 @@ class SearchAttendanceRecordsOfHisMeetingRequest:
         用于区分到哪个HCSO站点鉴权。
 
         :param x_site_id: The x_site_id of this SearchAttendanceRecordsOfHisMeetingRequest.
-        :type: str
+        :type x_site_id: str
         """
         self._x_site_id = x_site_id
 
@@ -246,7 +265,7 @@ class SearchAttendanceRecordsOfHisMeetingRequest:
         语言。默认简体中文。 - zh-CN: 简体中文。 - en-US: 美国英文。
 
         :param accept_language: The accept_language of this SearchAttendanceRecordsOfHisMeetingRequest.
-        :type: str
+        :type accept_language: str
         """
         self._accept_language = accept_language
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ConfigByOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ConfigByOption:
     }
 
     def __init__(self, password_regex=None, password_regex_description=None):
-        """ConfigByOption - a model defined in huaweicloud sdk"""
+        """ConfigByOption
+
+        The model defined in huaweicloud sdk
+
+        :param password_regex: 密码强度策略的正则表达式。(当option为password_regex时返回)
+        :type password_regex: str
+        :param password_regex_description: 密码强度策略的描述。(当option为password_regex_description时返回)
+        :type password_regex_description: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class ConfigByOption:
         密码强度策略的正则表达式。(当option为password_regex时返回)
 
         :param password_regex: The password_regex of this ConfigByOption.
-        :type: str
+        :type password_regex: str
         """
         self._password_regex = password_regex
 
@@ -85,7 +92,7 @@ class ConfigByOption:
         密码强度策略的描述。(当option为password_regex_description时返回)
 
         :param password_regex_description: The password_regex_description of this ConfigByOption.
-        :type: str
+        :type password_regex_description: str
         """
         self._password_regex_description = password_regex_description
 

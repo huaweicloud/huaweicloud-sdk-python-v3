@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListProjectMembersV4Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListProjectMembersV4Request:
     }
 
     def __init__(self, project_id=None, offset=None, limit=None):
-        """ListProjectMembersV4Request - a model defined in huaweicloud sdk"""
+        """ListProjectMembersV4Request
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: devcloud的项目id
+        :type project_id: str
+        :param offset: 分页索引，偏移量,offset是limit的整数倍，limit&#x3D;10,offset&#x3D;0,10,20...
+        :type offset: int
+        :param limit: 每页显示的数量,每页最多显示100条
+        :type limit: int
+        """
         
         
 
@@ -67,7 +76,7 @@ class ListProjectMembersV4Request:
         devcloud的项目id
 
         :param project_id: The project_id of this ListProjectMembersV4Request.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -89,7 +98,7 @@ class ListProjectMembersV4Request:
         分页索引，偏移量,offset是limit的整数倍，limit=10,offset=0,10,20...
 
         :param offset: The offset of this ListProjectMembersV4Request.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -111,7 +120,7 @@ class ListProjectMembersV4Request:
         每页显示的数量,每页最多显示100条
 
         :param limit: The limit of this ListProjectMembersV4Request.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

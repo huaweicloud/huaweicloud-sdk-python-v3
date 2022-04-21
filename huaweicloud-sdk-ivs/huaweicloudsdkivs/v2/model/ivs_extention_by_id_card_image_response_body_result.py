@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IvsExtentionByIdCardImageResponseBodyResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class IvsExtentionByIdCardImageResponseBodyResult:
     }
 
     def __init__(self, service_name=None, count=None, resp_data=None):
-        """IvsExtentionByIdCardImageResponseBodyResult - a model defined in huaweicloud sdk"""
+        """IvsExtentionByIdCardImageResponseBodyResult
+
+        The model defined in huaweicloud sdk
+
+        :param service_name: 子服务名称。
+        :type service_name: str
+        :param count: 成功的结果数量，与resp_data字段对应。
+        :type count: int
+        :param resp_data: 请求列表，用于支持批量调用。目前暂时只支持单个数据查询。
+        :type resp_data: list[:class:`huaweicloudsdkivs.v2.ExtentionRespDataByIdCardImage`]
+        """
         
         
 
@@ -68,7 +77,7 @@ class IvsExtentionByIdCardImageResponseBodyResult:
         子服务名称。
 
         :param service_name: The service_name of this IvsExtentionByIdCardImageResponseBodyResult.
-        :type: str
+        :type service_name: str
         """
         self._service_name = service_name
 
@@ -90,7 +99,7 @@ class IvsExtentionByIdCardImageResponseBodyResult:
         成功的结果数量，与resp_data字段对应。
 
         :param count: The count of this IvsExtentionByIdCardImageResponseBodyResult.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -101,7 +110,7 @@ class IvsExtentionByIdCardImageResponseBodyResult:
         请求列表，用于支持批量调用。目前暂时只支持单个数据查询。
 
         :return: The resp_data of this IvsExtentionByIdCardImageResponseBodyResult.
-        :rtype: list[ExtentionRespDataByIdCardImage]
+        :rtype: list[:class:`huaweicloudsdkivs.v2.ExtentionRespDataByIdCardImage`]
         """
         return self._resp_data
 
@@ -112,7 +121,7 @@ class IvsExtentionByIdCardImageResponseBodyResult:
         请求列表，用于支持批量调用。目前暂时只支持单个数据查询。
 
         :param resp_data: The resp_data of this IvsExtentionByIdCardImageResponseBodyResult.
-        :type: list[ExtentionRespDataByIdCardImage]
+        :type resp_data: list[:class:`huaweicloudsdkivs.v2.ExtentionRespDataByIdCardImage`]
         """
         self._resp_data = resp_data
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteDbUserResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteDbUserResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """DeleteDbUserResponse - a model defined in huaweicloud sdk"""
+        """DeleteDbUserResponse
+
+        The model defined in huaweicloud sdk
+
+        :param result: 删除结果，删除成功返回OK
+        :type result: str
+        """
         
         super(DeleteDbUserResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class DeleteDbUserResponse(SdkResponse):
         删除结果，删除成功返回OK
 
         :param result: The result of this DeleteDbUserResponse.
-        :type: str
+        :type result: str
         """
         self._result = result
 

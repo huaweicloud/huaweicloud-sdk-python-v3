@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TaskHostingResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class TaskHostingResult:
     }
 
     def __init__(self, hosting_result=None):
-        """TaskHostingResult - a model defined in huaweicloud sdk"""
+        """TaskHostingResult
+
+        The model defined in huaweicloud sdk
+
+        :param hosting_result: 
+        :type hosting_result: :class:`huaweicloudsdkvas.v2.TaskHostingResultHostingResult`
+        """
         
         
 
@@ -46,7 +51,7 @@ class TaskHostingResult:
 
 
         :return: The hosting_result of this TaskHostingResult.
-        :rtype: TaskHostingResultHostingResult
+        :rtype: :class:`huaweicloudsdkvas.v2.TaskHostingResultHostingResult`
         """
         return self._hosting_result
 
@@ -56,7 +61,7 @@ class TaskHostingResult:
 
 
         :param hosting_result: The hosting_result of this TaskHostingResult.
-        :type: TaskHostingResultHostingResult
+        :type hosting_result: :class:`huaweicloudsdkvas.v2.TaskHostingResultHostingResult`
         """
         self._hosting_result = hosting_result
 

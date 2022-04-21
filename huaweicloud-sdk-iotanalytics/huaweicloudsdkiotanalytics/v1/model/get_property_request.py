@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GetPropertyRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class GetPropertyRequest:
     }
 
     def __init__(self, tags=None, property_names=None):
-        """GetPropertyRequest - a model defined in huaweicloud sdk"""
+        """GetPropertyRequest
+
+        The model defined in huaweicloud sdk
+
+        :param tags: 对property按指定tags标签进行过滤查询，填入设备标签与标签值，不可为空，例如 {\&quot;deviceId\&quot;: \&quot;id0001\&quot;}
+        :type tags: dict(str, str)
+        :param property_names: 查询设备的属性名称
+        :type property_names: list[str]
+        """
         
         
 
@@ -62,7 +69,7 @@ class GetPropertyRequest:
         对property按指定tags标签进行过滤查询，填入设备标签与标签值，不可为空，例如 {\"deviceId\": \"id0001\"}
 
         :param tags: The tags of this GetPropertyRequest.
-        :type: dict(str, str)
+        :type tags: dict(str, str)
         """
         self._tags = tags
 
@@ -84,7 +91,7 @@ class GetPropertyRequest:
         查询设备的属性名称
 
         :param property_names: The property_names of this GetPropertyRequest.
-        :type: list[str]
+        :type property_names: list[str]
         """
         self._property_names = property_names
 

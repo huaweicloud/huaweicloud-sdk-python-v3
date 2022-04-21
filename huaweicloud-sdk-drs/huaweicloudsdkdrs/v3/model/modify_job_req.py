@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ModifyJobReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -64,7 +63,47 @@ class ModifyJobReq:
     }
 
     def __init__(self, job_id=None, description=None, name=None, alarm_notify=None, task_type=None, source_endpoint=None, target_endpoint=None, node_type=None, engine_type=None, net_type=None, store_db_info=None, is_recreate=None, job_direction=None, is_target_readonly=None, replace_definer=None, tags=None, db_use_type=None, product_id=None):
-        """ModifyJobReq - a model defined in huaweicloud sdk"""
+        """ModifyJobReq
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 任务id
+        :type job_id: str
+        :param description: 任务描述，修改任务描述时必填。
+        :type description: str
+        :param name: 任务名称，修改任务名称时必填
+        :type name: str
+        :param alarm_notify: 
+        :type alarm_notify: :class:`huaweicloudsdkdrs.v3.AlarmNotifyInfo`
+        :param task_type: 任务模式，FULL_TRANS：全量；FULL_INCR_TRANS：全量+增量；INCR_TRANS：增量。
+        :type task_type: str
+        :param source_endpoint: 
+        :type source_endpoint: :class:`huaweicloudsdkdrs.v3.Endpoint`
+        :param target_endpoint: 
+        :type target_endpoint: :class:`huaweicloudsdkdrs.v3.Endpoint`
+        :param node_type: node规格类型，测试连接之后修改调用时必填。
+        :type node_type: str
+        :param engine_type: 引擎类型，测试连接之后修改调用时必填。mysql：迁移，同步使用。mongodb：迁移使用。cloudDataGuard-mysql：灾备使用
+        :type engine_type: str
+        :param net_type: 网络类型，测试连接之后修改调用时必填。
+        :type net_type: str
+        :param store_db_info: 保存数据库信息，测试连接之后修改调用时必填为true。
+        :type store_db_info: bool
+        :param is_recreate: 是否为重建任务。
+        :type is_recreate: bool
+        :param job_direction: 迁移方向,up 入云 灾备场景时对应本云为备,down 出云 灾备场景时对应本云为主,non-dbs 自建
+        :type job_direction: str
+        :param is_target_readonly: 目标实例是否限制为只读。
+        :type is_target_readonly: bool
+        :param replace_definer: 所有Definer是否迁移到该用户下，MySQL数据库支持该设置，测试连接之后修改调用时必填。 - true：迁移后，所有源数据库对象的Definer都会迁移至该用户下，其他用户需要授权后才具有数据库对象权限 - false：迁移后，将保持源数据库对象Definer定义不变，选择此选项，需要配合下一步用户权限迁移功能，将源数据库的用户全部迁移，这样才能保持源数据库的权限体系完全不变。
+        :type replace_definer: bool
+        :param tags: 标签信息
+        :type tags: list[:class:`huaweicloudsdkdrs.v3.ResourceTag`]
+        :param db_use_type: 迁移类型，migration-实时迁移,sync-实时同步,cloudDataGuard-实时灾备
+        :type db_use_type: str
+        :param product_id: 产品ID。
+        :type product_id: str
+        """
         
         
 
@@ -135,7 +174,7 @@ class ModifyJobReq:
         任务id
 
         :param job_id: The job_id of this ModifyJobReq.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -157,7 +196,7 @@ class ModifyJobReq:
         任务描述，修改任务描述时必填。
 
         :param description: The description of this ModifyJobReq.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -179,7 +218,7 @@ class ModifyJobReq:
         任务名称，修改任务名称时必填
 
         :param name: The name of this ModifyJobReq.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -189,7 +228,7 @@ class ModifyJobReq:
 
 
         :return: The alarm_notify of this ModifyJobReq.
-        :rtype: AlarmNotifyInfo
+        :rtype: :class:`huaweicloudsdkdrs.v3.AlarmNotifyInfo`
         """
         return self._alarm_notify
 
@@ -199,7 +238,7 @@ class ModifyJobReq:
 
 
         :param alarm_notify: The alarm_notify of this ModifyJobReq.
-        :type: AlarmNotifyInfo
+        :type alarm_notify: :class:`huaweicloudsdkdrs.v3.AlarmNotifyInfo`
         """
         self._alarm_notify = alarm_notify
 
@@ -221,7 +260,7 @@ class ModifyJobReq:
         任务模式，FULL_TRANS：全量；FULL_INCR_TRANS：全量+增量；INCR_TRANS：增量。
 
         :param task_type: The task_type of this ModifyJobReq.
-        :type: str
+        :type task_type: str
         """
         self._task_type = task_type
 
@@ -231,7 +270,7 @@ class ModifyJobReq:
 
 
         :return: The source_endpoint of this ModifyJobReq.
-        :rtype: Endpoint
+        :rtype: :class:`huaweicloudsdkdrs.v3.Endpoint`
         """
         return self._source_endpoint
 
@@ -241,7 +280,7 @@ class ModifyJobReq:
 
 
         :param source_endpoint: The source_endpoint of this ModifyJobReq.
-        :type: Endpoint
+        :type source_endpoint: :class:`huaweicloudsdkdrs.v3.Endpoint`
         """
         self._source_endpoint = source_endpoint
 
@@ -251,7 +290,7 @@ class ModifyJobReq:
 
 
         :return: The target_endpoint of this ModifyJobReq.
-        :rtype: Endpoint
+        :rtype: :class:`huaweicloudsdkdrs.v3.Endpoint`
         """
         return self._target_endpoint
 
@@ -261,7 +300,7 @@ class ModifyJobReq:
 
 
         :param target_endpoint: The target_endpoint of this ModifyJobReq.
-        :type: Endpoint
+        :type target_endpoint: :class:`huaweicloudsdkdrs.v3.Endpoint`
         """
         self._target_endpoint = target_endpoint
 
@@ -283,7 +322,7 @@ class ModifyJobReq:
         node规格类型，测试连接之后修改调用时必填。
 
         :param node_type: The node_type of this ModifyJobReq.
-        :type: str
+        :type node_type: str
         """
         self._node_type = node_type
 
@@ -305,7 +344,7 @@ class ModifyJobReq:
         引擎类型，测试连接之后修改调用时必填。mysql：迁移，同步使用。mongodb：迁移使用。cloudDataGuard-mysql：灾备使用
 
         :param engine_type: The engine_type of this ModifyJobReq.
-        :type: str
+        :type engine_type: str
         """
         self._engine_type = engine_type
 
@@ -327,7 +366,7 @@ class ModifyJobReq:
         网络类型，测试连接之后修改调用时必填。
 
         :param net_type: The net_type of this ModifyJobReq.
-        :type: str
+        :type net_type: str
         """
         self._net_type = net_type
 
@@ -349,7 +388,7 @@ class ModifyJobReq:
         保存数据库信息，测试连接之后修改调用时必填为true。
 
         :param store_db_info: The store_db_info of this ModifyJobReq.
-        :type: bool
+        :type store_db_info: bool
         """
         self._store_db_info = store_db_info
 
@@ -371,7 +410,7 @@ class ModifyJobReq:
         是否为重建任务。
 
         :param is_recreate: The is_recreate of this ModifyJobReq.
-        :type: bool
+        :type is_recreate: bool
         """
         self._is_recreate = is_recreate
 
@@ -393,7 +432,7 @@ class ModifyJobReq:
         迁移方向,up 入云 灾备场景时对应本云为备,down 出云 灾备场景时对应本云为主,non-dbs 自建
 
         :param job_direction: The job_direction of this ModifyJobReq.
-        :type: str
+        :type job_direction: str
         """
         self._job_direction = job_direction
 
@@ -415,7 +454,7 @@ class ModifyJobReq:
         目标实例是否限制为只读。
 
         :param is_target_readonly: The is_target_readonly of this ModifyJobReq.
-        :type: bool
+        :type is_target_readonly: bool
         """
         self._is_target_readonly = is_target_readonly
 
@@ -437,7 +476,7 @@ class ModifyJobReq:
         所有Definer是否迁移到该用户下，MySQL数据库支持该设置，测试连接之后修改调用时必填。 - true：迁移后，所有源数据库对象的Definer都会迁移至该用户下，其他用户需要授权后才具有数据库对象权限 - false：迁移后，将保持源数据库对象Definer定义不变，选择此选项，需要配合下一步用户权限迁移功能，将源数据库的用户全部迁移，这样才能保持源数据库的权限体系完全不变。
 
         :param replace_definer: The replace_definer of this ModifyJobReq.
-        :type: bool
+        :type replace_definer: bool
         """
         self._replace_definer = replace_definer
 
@@ -448,7 +487,7 @@ class ModifyJobReq:
         标签信息
 
         :return: The tags of this ModifyJobReq.
-        :rtype: list[ResourceTag]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.ResourceTag`]
         """
         return self._tags
 
@@ -459,7 +498,7 @@ class ModifyJobReq:
         标签信息
 
         :param tags: The tags of this ModifyJobReq.
-        :type: list[ResourceTag]
+        :type tags: list[:class:`huaweicloudsdkdrs.v3.ResourceTag`]
         """
         self._tags = tags
 
@@ -481,7 +520,7 @@ class ModifyJobReq:
         迁移类型，migration-实时迁移,sync-实时同步,cloudDataGuard-实时灾备
 
         :param db_use_type: The db_use_type of this ModifyJobReq.
-        :type: str
+        :type db_use_type: str
         """
         self._db_use_type = db_use_type
 
@@ -503,7 +542,7 @@ class ModifyJobReq:
         产品ID。
 
         :param product_id: The product_id of this ModifyJobReq.
-        :type: str
+        :type product_id: str
         """
         self._product_id = product_id
 

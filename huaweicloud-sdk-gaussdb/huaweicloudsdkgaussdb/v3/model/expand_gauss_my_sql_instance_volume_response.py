@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExpandGaussMySqlInstanceVolumeResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ExpandGaussMySqlInstanceVolumeResponse(SdkResponse):
     }
 
     def __init__(self, size=None, order_id=None):
-        """ExpandGaussMySqlInstanceVolumeResponse - a model defined in huaweicloud sdk"""
+        """ExpandGaussMySqlInstanceVolumeResponse
+
+        The model defined in huaweicloud sdk
+
+        :param size: 扩容后容量。
+        :type size: int
+        :param order_id: 订单号。
+        :type order_id: str
+        """
         
         super(ExpandGaussMySqlInstanceVolumeResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ExpandGaussMySqlInstanceVolumeResponse(SdkResponse):
         扩容后容量。
 
         :param size: The size of this ExpandGaussMySqlInstanceVolumeResponse.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -85,7 +92,7 @@ class ExpandGaussMySqlInstanceVolumeResponse(SdkResponse):
         订单号。
 
         :param order_id: The order_id of this ExpandGaussMySqlInstanceVolumeResponse.
-        :type: str
+        :type order_id: str
         """
         self._order_id = order_id
 

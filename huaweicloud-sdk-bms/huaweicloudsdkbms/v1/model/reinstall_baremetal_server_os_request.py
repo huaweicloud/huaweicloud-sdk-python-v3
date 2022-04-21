@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ReinstallBaremetalServerOsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ReinstallBaremetalServerOsRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """ReinstallBaremetalServerOsRequest - a model defined in huaweicloud sdk"""
+        """ReinstallBaremetalServerOsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param server_id: 裸金属服务器ID
+        :type server_id: str
+        :param body: Body of the ReinstallBaremetalServerOsRequest
+        :type body: :class:`huaweicloudsdkbms.v1.OsReinstallBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class ReinstallBaremetalServerOsRequest:
         裸金属服务器ID
 
         :param server_id: The server_id of this ReinstallBaremetalServerOsRequest.
-        :type: str
+        :type server_id: str
         """
         self._server_id = server_id
 
@@ -72,7 +79,7 @@ class ReinstallBaremetalServerOsRequest:
 
 
         :return: The body of this ReinstallBaremetalServerOsRequest.
-        :rtype: OsReinstallBody
+        :rtype: :class:`huaweicloudsdkbms.v1.OsReinstallBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class ReinstallBaremetalServerOsRequest:
 
 
         :param body: The body of this ReinstallBaremetalServerOsRequest.
-        :type: OsReinstallBody
+        :type body: :class:`huaweicloudsdkbms.v1.OsReinstallBody`
         """
         self._body = body
 

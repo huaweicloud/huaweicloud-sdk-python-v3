@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListMembersRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -60,7 +59,43 @@ class ListMembersRequest:
     }
 
     def __init__(self, pool_id=None, marker=None, limit=None, page_reverse=None, name=None, weight=None, admin_state_up=None, subnet_cidr_id=None, address=None, protocol_port=None, id=None, operating_status=None, enterprise_project_id=None, ip_version=None, member_type=None, instance_id=None):
-        """ListMembersRequest - a model defined in huaweicloud sdk"""
+        """ListMembersRequest
+
+        The model defined in huaweicloud sdk
+
+        :param pool_id: 后端服务器组ID。
+        :type pool_id: str
+        :param marker: 上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
+        :type marker: str
+        :param limit: 每页返回的个数。
+        :type limit: int
+        :param page_reverse: 分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。  使用说明： - 必须与limit一起使用。
+        :type page_reverse: bool
+        :param name: 后端云服务器名称。  支持多值查询，查询条件格式：*name&#x3D;xxx&amp;name&#x3D;xxx*。
+        :type name: list[str]
+        :param weight: 后端云服务器的权重，请求将根据pool配置的负载均衡算法和后端云服务器的权重进行负载分发。权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。 取值：0-100。 支持多值查询，查询条件格式：*weight&#x3D;xxx&amp;weight&#x3D;xxx*。
+        :type weight: list[int]
+        :param admin_state_up: 后端云服务器的管理状态。取值：true、false。  虽然创建、更新请求支持该字段，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
+        :type admin_state_up: bool
+        :param subnet_cidr_id: 后端云服务器所在子网的IPv4子网ID或IPv6子网ID。  支持多值查询，查询条件格式：***subnet_cidr_id&#x3D;xxx&amp;subnet_cidr_id&#x3D;xxx*。  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt,dt_test)
+        :type subnet_cidr_id: list[str]
+        :param address: 后端服务器对应的IPv4或IPv6地址。  支持多值查询，查询条件格式：*address&#x3D;xxx&amp;address&#x3D;xxx*。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt,dt_test)
+        :type address: list[str]
+        :param protocol_port: 后端服务器业务端口号。  支持多值查询，查询条件格式：*protocol_port&#x3D;xxx&amp;protocol_port&#x3D;xxx*。
+        :type protocol_port: list[int]
+        :param id: 后端云服务器ID。  支持多值查询，查询条件格式：*id&#x3D;xxx&amp;id&#x3D;xxx*。
+        :type id: list[str]
+        :param operating_status: 后端云服务器的健康状态。取值： - ONLINE：后端云服务器正常。 - NO_MONITOR：后端云服务器所在的服务器组没有健康检查器。 - OFFLINE：后端云服务器关联的ECS服务器不存在或已关机。  支持多值查询，查询条件格式：*operating_status&#x3D;xxx&amp;operating_status&#x3D;xxx*。
+        :type operating_status: list[str]
+        :param enterprise_project_id: 企业项目ID。  支持多值查询，查询条件格式：*enterprise_project_id&#x3D;xxx&amp;enterprise_project_id&#x3D;xxx*。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
+        :type enterprise_project_id: list[str]
+        :param ip_version: 当前后端服务器的IP地址版本。取值：v4、v6。
+        :type ip_version: list[str]
+        :param member_type: 后端云服务器的类型。取值： - ip：跨VPC的member。 - instance：关联到ECS的member。  支持多值查询，查询条件格式：*member_type&#x3D;xxx&amp;member_type&#x3D;xxx*。
+        :type member_type: list[str]
+        :param instance_id: member关联的ECS实例ID，空表示跨VPC场景的member。  支持多值查询，查询条件格式：*instance_id&#x3D;xxx&amp;instance_id&#x3D;xxx*。
+        :type instance_id: list[str]
+        """
         
         
 
@@ -132,7 +167,7 @@ class ListMembersRequest:
         后端服务器组ID。
 
         :param pool_id: The pool_id of this ListMembersRequest.
-        :type: str
+        :type pool_id: str
         """
         self._pool_id = pool_id
 
@@ -154,7 +189,7 @@ class ListMembersRequest:
         上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
         :param marker: The marker of this ListMembersRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -176,7 +211,7 @@ class ListMembersRequest:
         每页返回的个数。
 
         :param limit: The limit of this ListMembersRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -198,7 +233,7 @@ class ListMembersRequest:
         分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。  使用说明： - 必须与limit一起使用。
 
         :param page_reverse: The page_reverse of this ListMembersRequest.
-        :type: bool
+        :type page_reverse: bool
         """
         self._page_reverse = page_reverse
 
@@ -220,7 +255,7 @@ class ListMembersRequest:
         后端云服务器名称。  支持多值查询，查询条件格式：*name=xxx&name=xxx*。
 
         :param name: The name of this ListMembersRequest.
-        :type: list[str]
+        :type name: list[str]
         """
         self._name = name
 
@@ -242,7 +277,7 @@ class ListMembersRequest:
         后端云服务器的权重，请求将根据pool配置的负载均衡算法和后端云服务器的权重进行负载分发。权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。 取值：0-100。 支持多值查询，查询条件格式：*weight=xxx&weight=xxx*。
 
         :param weight: The weight of this ListMembersRequest.
-        :type: list[int]
+        :type weight: list[int]
         """
         self._weight = weight
 
@@ -264,7 +299,7 @@ class ListMembersRequest:
         后端云服务器的管理状态。取值：true、false。  虽然创建、更新请求支持该字段，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
 
         :param admin_state_up: The admin_state_up of this ListMembersRequest.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 
@@ -286,7 +321,7 @@ class ListMembersRequest:
         后端云服务器所在子网的IPv4子网ID或IPv6子网ID。  支持多值查询，查询条件格式：***subnet_cidr_id=xxx&subnet_cidr_id=xxx*。  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt,dt_test)
 
         :param subnet_cidr_id: The subnet_cidr_id of this ListMembersRequest.
-        :type: list[str]
+        :type subnet_cidr_id: list[str]
         """
         self._subnet_cidr_id = subnet_cidr_id
 
@@ -308,7 +343,7 @@ class ListMembersRequest:
         后端服务器对应的IPv4或IPv6地址。  支持多值查询，查询条件格式：*address=xxx&address=xxx*。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt,dt_test)
 
         :param address: The address of this ListMembersRequest.
-        :type: list[str]
+        :type address: list[str]
         """
         self._address = address
 
@@ -330,7 +365,7 @@ class ListMembersRequest:
         后端服务器业务端口号。  支持多值查询，查询条件格式：*protocol_port=xxx&protocol_port=xxx*。
 
         :param protocol_port: The protocol_port of this ListMembersRequest.
-        :type: list[int]
+        :type protocol_port: list[int]
         """
         self._protocol_port = protocol_port
 
@@ -352,7 +387,7 @@ class ListMembersRequest:
         后端云服务器ID。  支持多值查询，查询条件格式：*id=xxx&id=xxx*。
 
         :param id: The id of this ListMembersRequest.
-        :type: list[str]
+        :type id: list[str]
         """
         self._id = id
 
@@ -374,7 +409,7 @@ class ListMembersRequest:
         后端云服务器的健康状态。取值： - ONLINE：后端云服务器正常。 - NO_MONITOR：后端云服务器所在的服务器组没有健康检查器。 - OFFLINE：后端云服务器关联的ECS服务器不存在或已关机。  支持多值查询，查询条件格式：*operating_status=xxx&operating_status=xxx*。
 
         :param operating_status: The operating_status of this ListMembersRequest.
-        :type: list[str]
+        :type operating_status: list[str]
         """
         self._operating_status = operating_status
 
@@ -396,7 +431,7 @@ class ListMembersRequest:
         企业项目ID。  支持多值查询，查询条件格式：*enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
 
         :param enterprise_project_id: The enterprise_project_id of this ListMembersRequest.
-        :type: list[str]
+        :type enterprise_project_id: list[str]
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -418,7 +453,7 @@ class ListMembersRequest:
         当前后端服务器的IP地址版本。取值：v4、v6。
 
         :param ip_version: The ip_version of this ListMembersRequest.
-        :type: list[str]
+        :type ip_version: list[str]
         """
         self._ip_version = ip_version
 
@@ -440,7 +475,7 @@ class ListMembersRequest:
         后端云服务器的类型。取值： - ip：跨VPC的member。 - instance：关联到ECS的member。  支持多值查询，查询条件格式：*member_type=xxx&member_type=xxx*。
 
         :param member_type: The member_type of this ListMembersRequest.
-        :type: list[str]
+        :type member_type: list[str]
         """
         self._member_type = member_type
 
@@ -462,7 +497,7 @@ class ListMembersRequest:
         member关联的ECS实例ID，空表示跨VPC场景的member。  支持多值查询，查询条件格式：*instance_id=xxx&instance_id=xxx*。
 
         :param instance_id: The instance_id of this ListMembersRequest.
-        :type: list[str]
+        :type instance_id: list[str]
         """
         self._instance_id = instance_id
 

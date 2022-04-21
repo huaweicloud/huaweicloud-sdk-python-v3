@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GlanceShowImageSchemasResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class GlanceShowImageSchemasResponse(SdkResponse):
     }
 
     def __init__(self, additional_properties=None, name=None, properties=None, links=None):
-        """GlanceShowImageSchemasResponse - a model defined in huaweicloud sdk"""
+        """GlanceShowImageSchemasResponse
+
+        The model defined in huaweicloud sdk
+
+        :param additional_properties: 
+        :type additional_properties: :class:`huaweicloudsdkims.v2.AdditionalProperties`
+        :param name: 视图名称。
+        :type name: str
+        :param properties: 镜像属性说明，主要是对基础属性的说明，包含每个属性的取值类型、用途等。
+        :type properties: object
+        :param links: 视图链接。
+        :type links: list[:class:`huaweicloudsdkims.v2.Links`]
+        """
         
         super(GlanceShowImageSchemasResponse, self).__init__()
 
@@ -61,7 +72,7 @@ class GlanceShowImageSchemasResponse(SdkResponse):
 
 
         :return: The additional_properties of this GlanceShowImageSchemasResponse.
-        :rtype: AdditionalProperties
+        :rtype: :class:`huaweicloudsdkims.v2.AdditionalProperties`
         """
         return self._additional_properties
 
@@ -71,7 +82,7 @@ class GlanceShowImageSchemasResponse(SdkResponse):
 
 
         :param additional_properties: The additional_properties of this GlanceShowImageSchemasResponse.
-        :type: AdditionalProperties
+        :type additional_properties: :class:`huaweicloudsdkims.v2.AdditionalProperties`
         """
         self._additional_properties = additional_properties
 
@@ -93,7 +104,7 @@ class GlanceShowImageSchemasResponse(SdkResponse):
         视图名称。
 
         :param name: The name of this GlanceShowImageSchemasResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -115,7 +126,7 @@ class GlanceShowImageSchemasResponse(SdkResponse):
         镜像属性说明，主要是对基础属性的说明，包含每个属性的取值类型、用途等。
 
         :param properties: The properties of this GlanceShowImageSchemasResponse.
-        :type: object
+        :type properties: object
         """
         self._properties = properties
 
@@ -126,7 +137,7 @@ class GlanceShowImageSchemasResponse(SdkResponse):
         视图链接。
 
         :return: The links of this GlanceShowImageSchemasResponse.
-        :rtype: list[Links]
+        :rtype: list[:class:`huaweicloudsdkims.v2.Links`]
         """
         return self._links
 
@@ -137,7 +148,7 @@ class GlanceShowImageSchemasResponse(SdkResponse):
         视图链接。
 
         :param links: The links of this GlanceShowImageSchemasResponse.
-        :type: list[Links]
+        :type links: list[:class:`huaweicloudsdkims.v2.Links`]
         """
         self._links = links
 

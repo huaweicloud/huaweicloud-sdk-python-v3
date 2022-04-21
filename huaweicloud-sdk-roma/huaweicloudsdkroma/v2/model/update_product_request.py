@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateProductRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateProductRequest:
     }
 
     def __init__(self, instance_id=None, product_id=None, body=None):
-        """UpdateProductRequest - a model defined in huaweicloud sdk"""
+        """UpdateProductRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param product_id: 产品ID
+        :type product_id: int
+        :param body: Body of the UpdateProductRequest
+        :type body: :class:`huaweicloudsdkroma.v2.UpdateProductRequestBody`
+        """
         
         
 
@@ -66,7 +75,7 @@ class UpdateProductRequest:
         实例ID
 
         :param instance_id: The instance_id of this UpdateProductRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -88,7 +97,7 @@ class UpdateProductRequest:
         产品ID
 
         :param product_id: The product_id of this UpdateProductRequest.
-        :type: int
+        :type product_id: int
         """
         self._product_id = product_id
 
@@ -98,7 +107,7 @@ class UpdateProductRequest:
 
 
         :return: The body of this UpdateProductRequest.
-        :rtype: UpdateProductRequestBody
+        :rtype: :class:`huaweicloudsdkroma.v2.UpdateProductRequestBody`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class UpdateProductRequest:
 
 
         :param body: The body of this UpdateProductRequest.
-        :type: UpdateProductRequestBody
+        :type body: :class:`huaweicloudsdkroma.v2.UpdateProductRequestBody`
         """
         self._body = body
 

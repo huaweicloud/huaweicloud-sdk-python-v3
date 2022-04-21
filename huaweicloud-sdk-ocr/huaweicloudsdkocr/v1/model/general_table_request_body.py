@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GeneralTableRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class GeneralTableRequestBody:
     }
 
     def __init__(self, image=None, url=None, return_text_location=None, return_confidence=None, return_excel=None):
-        """GeneralTableRequestBody - a model defined in huaweicloud sdk"""
+        """GeneralTableRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param image: 与url二选一  图片最小边不小于15px，最长边不超过8192px，支持JPEG、JPG、PNG、BMP、TIFF格式。  图片文件Base64编码字符串，点击[这里](https://support.huaweicloud.com/ocr_faq/ocr_01_0032.html)查看详细获取方式。   
+        :type image: str
+        :param url: 与image二选一  图片的URL路径，目前支持：  - 公网http/https url  - OBS提供的url，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权，详情参见[配置OBS访问权限](https://support.huaweicloud.com/api-ocr/ocr_03_0132.html)。  &gt; 说明：  - 接口响应时间依赖于图片的下载时间，如果图片下载时间过长，会返回接口调用失败。  - 请保证被检测图片所在的存储服务稳定可靠，推荐使用OBS服务存储图片数据。 
+        :type url: str
+        :param return_text_location: 返回文本块坐标及单元格坐标信息，可选值如下所示：  - true：返回文本块和单元格坐标  - false：不返回  &gt; 说明：  - 如果未传入该参数时默认为false，即不返回。 
+        :type return_text_location: bool
+        :param return_confidence: 是否返回置信度的开关，可选值包括：  - true：返回置信度  - false：不返回置信度  &gt; 说明：  - 如果未传入该参数，系统默认为“false”，即不返回置信度。 
+        :type return_confidence: bool
+        :param return_excel: 是否返回表格转换Microsoft Excel的base64编码字段。可选值包括：  - true：返回&#39;excel&#39;字段，表示xlsx格式的表格识别结果的base64编码  - false：不返回。默认为false  &gt; 说明：  - 对返回的Excel编码，可用Python函数 base64.b64decode解码后保存为.xlsx文件。 
+        :type return_excel: bool
+        """
         
         
 
@@ -78,7 +91,7 @@ class GeneralTableRequestBody:
         与url二选一  图片最小边不小于15px，最长边不超过8192px，支持JPEG、JPG、PNG、BMP、TIFF格式。  图片文件Base64编码字符串，点击[这里](https://support.huaweicloud.com/ocr_faq/ocr_01_0032.html)查看详细获取方式。   
 
         :param image: The image of this GeneralTableRequestBody.
-        :type: str
+        :type image: str
         """
         self._image = image
 
@@ -100,7 +113,7 @@ class GeneralTableRequestBody:
         与image二选一  图片的URL路径，目前支持：  - 公网http/https url  - OBS提供的url，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权，详情参见[配置OBS访问权限](https://support.huaweicloud.com/api-ocr/ocr_03_0132.html)。  > 说明：  - 接口响应时间依赖于图片的下载时间，如果图片下载时间过长，会返回接口调用失败。  - 请保证被检测图片所在的存储服务稳定可靠，推荐使用OBS服务存储图片数据。 
 
         :param url: The url of this GeneralTableRequestBody.
-        :type: str
+        :type url: str
         """
         self._url = url
 
@@ -122,7 +135,7 @@ class GeneralTableRequestBody:
         返回文本块坐标及单元格坐标信息，可选值如下所示：  - true：返回文本块和单元格坐标  - false：不返回  > 说明：  - 如果未传入该参数时默认为false，即不返回。 
 
         :param return_text_location: The return_text_location of this GeneralTableRequestBody.
-        :type: bool
+        :type return_text_location: bool
         """
         self._return_text_location = return_text_location
 
@@ -144,7 +157,7 @@ class GeneralTableRequestBody:
         是否返回置信度的开关，可选值包括：  - true：返回置信度  - false：不返回置信度  > 说明：  - 如果未传入该参数，系统默认为“false”，即不返回置信度。 
 
         :param return_confidence: The return_confidence of this GeneralTableRequestBody.
-        :type: bool
+        :type return_confidence: bool
         """
         self._return_confidence = return_confidence
 
@@ -166,7 +179,7 @@ class GeneralTableRequestBody:
         是否返回表格转换Microsoft Excel的base64编码字段。可选值包括：  - true：返回'excel'字段，表示xlsx格式的表格识别结果的base64编码  - false：不返回。默认为false  > 说明：  - 对返回的Excel编码，可用Python函数 base64.b64decode解码后保存为.xlsx文件。 
 
         :param return_excel: The return_excel of this GeneralTableRequestBody.
-        :type: bool
+        :type return_excel: bool
         """
         self._return_excel = return_excel
 

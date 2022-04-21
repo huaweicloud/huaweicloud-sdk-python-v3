@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StatisticConferenceDataItem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class StatisticConferenceDataItem:
     }
 
     def __init__(self, time=None, conf_count=None, conf_duration=None, attendee_count=None, conf_concurrent_used_count=None, conf24h_count=None, conf24h_attendee_count=None):
-        """StatisticConferenceDataItem - a model defined in huaweicloud sdk"""
+        """StatisticConferenceDataItem
+
+        The model defined in huaweicloud sdk
+
+        :param time: * 日期/月份，category &#x3D; conference_info时有效。 * 小时，category &#x3D; conference_hourly_info时有效。
+        :type time: str
+        :param conf_count: 会议数(含VMR)。 category &#x3D; conference_info时有效。
+        :type conf_count: str
+        :param conf_duration: 会议时长(秒)(含VMR)。 category &#x3D; conference_info时有效。
+        :type conf_duration: str
+        :param attendee_count: 与会人次(含VMR)。 category &#x3D; conference_info时有效。
+        :type attendee_count: str
+        :param conf_concurrent_used_count: 并发会议使用数。 category &#x3D; conference_info时有效。
+        :type conf_concurrent_used_count: str
+        :param conf24h_count: 小时单位会议数(含VMR)。 category &#x3D; conference_hourly_info时有效。
+        :type conf24h_count: str
+        :param conf24h_attendee_count: 小时单位与会人次(含VMR)。 category &#x3D; conference_hourly_info时有效。
+        :type conf24h_attendee_count: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class StatisticConferenceDataItem:
         * 日期/月份，category = conference_info时有效。 * 小时，category = conference_hourly_info时有效。
 
         :param time: The time of this StatisticConferenceDataItem.
-        :type: str
+        :type time: str
         """
         self._time = time
 
@@ -110,7 +127,7 @@ class StatisticConferenceDataItem:
         会议数(含VMR)。 category = conference_info时有效。
 
         :param conf_count: The conf_count of this StatisticConferenceDataItem.
-        :type: str
+        :type conf_count: str
         """
         self._conf_count = conf_count
 
@@ -132,7 +149,7 @@ class StatisticConferenceDataItem:
         会议时长(秒)(含VMR)。 category = conference_info时有效。
 
         :param conf_duration: The conf_duration of this StatisticConferenceDataItem.
-        :type: str
+        :type conf_duration: str
         """
         self._conf_duration = conf_duration
 
@@ -154,7 +171,7 @@ class StatisticConferenceDataItem:
         与会人次(含VMR)。 category = conference_info时有效。
 
         :param attendee_count: The attendee_count of this StatisticConferenceDataItem.
-        :type: str
+        :type attendee_count: str
         """
         self._attendee_count = attendee_count
 
@@ -176,7 +193,7 @@ class StatisticConferenceDataItem:
         并发会议使用数。 category = conference_info时有效。
 
         :param conf_concurrent_used_count: The conf_concurrent_used_count of this StatisticConferenceDataItem.
-        :type: str
+        :type conf_concurrent_used_count: str
         """
         self._conf_concurrent_used_count = conf_concurrent_used_count
 
@@ -198,7 +215,7 @@ class StatisticConferenceDataItem:
         小时单位会议数(含VMR)。 category = conference_hourly_info时有效。
 
         :param conf24h_count: The conf24h_count of this StatisticConferenceDataItem.
-        :type: str
+        :type conf24h_count: str
         """
         self._conf24h_count = conf24h_count
 
@@ -220,7 +237,7 @@ class StatisticConferenceDataItem:
         小时单位与会人次(含VMR)。 category = conference_hourly_info时有效。
 
         :param conf24h_attendee_count: The conf24h_attendee_count of this StatisticConferenceDataItem.
-        :type: str
+        :type conf24h_attendee_count: str
         """
         self._conf24h_attendee_count = conf24h_attendee_count
 

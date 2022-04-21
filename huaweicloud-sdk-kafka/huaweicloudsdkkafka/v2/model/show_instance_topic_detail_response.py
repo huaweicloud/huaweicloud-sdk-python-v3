@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowInstanceTopicDetailResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowInstanceTopicDetailResponse(SdkResponse):
     }
 
     def __init__(self, topic=None, partitions=None, group_subscribed=None):
-        """ShowInstanceTopicDetailResponse - a model defined in huaweicloud sdk"""
+        """ShowInstanceTopicDetailResponse
+
+        The model defined in huaweicloud sdk
+
+        :param topic: topic名称。
+        :type topic: str
+        :param partitions: 分区列表。
+        :type partitions: list[:class:`huaweicloudsdkkafka.v2.ShowInstanceTopicDetailRespPartitions`]
+        :param group_subscribed: 订阅该topic的消费组名称列表。
+        :type group_subscribed: list[str]
+        """
         
         super(ShowInstanceTopicDetailResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ShowInstanceTopicDetailResponse(SdkResponse):
         topic名称。
 
         :param topic: The topic of this ShowInstanceTopicDetailResponse.
-        :type: str
+        :type topic: str
         """
         self._topic = topic
 
@@ -79,7 +88,7 @@ class ShowInstanceTopicDetailResponse(SdkResponse):
         分区列表。
 
         :return: The partitions of this ShowInstanceTopicDetailResponse.
-        :rtype: list[ShowInstanceTopicDetailRespPartitions]
+        :rtype: list[:class:`huaweicloudsdkkafka.v2.ShowInstanceTopicDetailRespPartitions`]
         """
         return self._partitions
 
@@ -90,7 +99,7 @@ class ShowInstanceTopicDetailResponse(SdkResponse):
         分区列表。
 
         :param partitions: The partitions of this ShowInstanceTopicDetailResponse.
-        :type: list[ShowInstanceTopicDetailRespPartitions]
+        :type partitions: list[:class:`huaweicloudsdkkafka.v2.ShowInstanceTopicDetailRespPartitions`]
         """
         self._partitions = partitions
 
@@ -112,7 +121,7 @@ class ShowInstanceTopicDetailResponse(SdkResponse):
         订阅该topic的消费组名称列表。
 
         :param group_subscribed: The group_subscribed of this ShowInstanceTopicDetailResponse.
-        :type: list[str]
+        :type group_subscribed: list[str]
         """
         self._group_subscribed = group_subscribed
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StatUsageInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class StatUsageInfo:
     }
 
     def __init__(self, stat_time=None, guaranteed_band_width=None, usage=None, measure_id=None):
-        """StatUsageInfo - a model defined in huaweicloud sdk"""
+        """StatUsageInfo
+
+        The model defined in huaweicloud sdk
+
+        :param stat_time: 统计时间点，格式为YYYY-MM-DDTHH:MM:SSZ，UTC时间。
+        :type stat_time: str
+        :param guaranteed_band_width: 保底带宽。  说明： 该字段为预留值，当前始终为空；当场景为95增强时才返回数值。
+        :type guaranteed_band_width: str
+        :param usage: 用量。
+        :type usage: str
+        :param measure_id: 单位，您可以调用查询度量单位列表接口获取。带宽和用量使用相同的计量单位。
+        :type measure_id: int
+        """
         
         
 
@@ -73,7 +84,7 @@ class StatUsageInfo:
         统计时间点，格式为YYYY-MM-DDTHH:MM:SSZ，UTC时间。
 
         :param stat_time: The stat_time of this StatUsageInfo.
-        :type: str
+        :type stat_time: str
         """
         self._stat_time = stat_time
 
@@ -95,7 +106,7 @@ class StatUsageInfo:
         保底带宽。  说明： 该字段为预留值，当前始终为空；当场景为95增强时才返回数值。
 
         :param guaranteed_band_width: The guaranteed_band_width of this StatUsageInfo.
-        :type: str
+        :type guaranteed_band_width: str
         """
         self._guaranteed_band_width = guaranteed_band_width
 
@@ -117,7 +128,7 @@ class StatUsageInfo:
         用量。
 
         :param usage: The usage of this StatUsageInfo.
-        :type: str
+        :type usage: str
         """
         self._usage = usage
 
@@ -139,7 +150,7 @@ class StatUsageInfo:
         单位，您可以调用查询度量单位列表接口获取。带宽和用量使用相同的计量单位。
 
         :param measure_id: The measure_id of this StatUsageInfo.
-        :type: int
+        :type measure_id: int
         """
         self._measure_id = measure_id
 

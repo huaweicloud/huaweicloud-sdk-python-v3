@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TransTemplateGroup:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class TransTemplateGroup:
     }
 
     def __init__(self, name=None, videos=None, audio=None, video_common=None, common=None):
-        """TransTemplateGroup - a model defined in huaweicloud sdk"""
+        """TransTemplateGroup
+
+        The model defined in huaweicloud sdk
+
+        :param name: 模板组名称 
+        :type name: str
+        :param videos: 视频信息列表 
+        :type videos: list[:class:`huaweicloudsdkmpc.v1.VideoObj`]
+        :param audio: 
+        :type audio: :class:`huaweicloudsdkmpc.v1.Audio`
+        :param video_common: 
+        :type video_common: :class:`huaweicloudsdkmpc.v1.VideoCommon`
+        :param common: 
+        :type common: :class:`huaweicloudsdkmpc.v1.Common`
+        """
         
         
 
@@ -78,7 +91,7 @@ class TransTemplateGroup:
         模板组名称 
 
         :param name: The name of this TransTemplateGroup.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -89,7 +102,7 @@ class TransTemplateGroup:
         视频信息列表 
 
         :return: The videos of this TransTemplateGroup.
-        :rtype: list[VideoObj]
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.VideoObj`]
         """
         return self._videos
 
@@ -100,7 +113,7 @@ class TransTemplateGroup:
         视频信息列表 
 
         :param videos: The videos of this TransTemplateGroup.
-        :type: list[VideoObj]
+        :type videos: list[:class:`huaweicloudsdkmpc.v1.VideoObj`]
         """
         self._videos = videos
 
@@ -110,7 +123,7 @@ class TransTemplateGroup:
 
 
         :return: The audio of this TransTemplateGroup.
-        :rtype: Audio
+        :rtype: :class:`huaweicloudsdkmpc.v1.Audio`
         """
         return self._audio
 
@@ -120,7 +133,7 @@ class TransTemplateGroup:
 
 
         :param audio: The audio of this TransTemplateGroup.
-        :type: Audio
+        :type audio: :class:`huaweicloudsdkmpc.v1.Audio`
         """
         self._audio = audio
 
@@ -130,7 +143,7 @@ class TransTemplateGroup:
 
 
         :return: The video_common of this TransTemplateGroup.
-        :rtype: VideoCommon
+        :rtype: :class:`huaweicloudsdkmpc.v1.VideoCommon`
         """
         return self._video_common
 
@@ -140,7 +153,7 @@ class TransTemplateGroup:
 
 
         :param video_common: The video_common of this TransTemplateGroup.
-        :type: VideoCommon
+        :type video_common: :class:`huaweicloudsdkmpc.v1.VideoCommon`
         """
         self._video_common = video_common
 
@@ -150,7 +163,7 @@ class TransTemplateGroup:
 
 
         :return: The common of this TransTemplateGroup.
-        :rtype: Common
+        :rtype: :class:`huaweicloudsdkmpc.v1.Common`
         """
         return self._common
 
@@ -160,7 +173,7 @@ class TransTemplateGroup:
 
 
         :param common: The common of this TransTemplateGroup.
-        :type: Common
+        :type common: :class:`huaweicloudsdkmpc.v1.Common`
         """
         self._common = common
 

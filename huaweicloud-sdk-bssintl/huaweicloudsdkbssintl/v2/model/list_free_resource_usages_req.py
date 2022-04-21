@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListFreeResourceUsagesReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListFreeResourceUsagesReq:
     }
 
     def __init__(self, free_resource_ids=None):
-        """ListFreeResourceUsagesReq - a model defined in huaweicloud sdk"""
+        """ListFreeResourceUsagesReq
+
+        The model defined in huaweicloud sdk
+
+        :param free_resource_ids: 资源项ID列表，每个最大64字节。 资源项ID，一个资源包中会含有多个资源项，一个使用量类型对应一个资源项。资源项ID来自查询资源包列表接口的响应。
+        :type free_resource_ids: list[str]
+        """
         
         
 
@@ -57,7 +62,7 @@ class ListFreeResourceUsagesReq:
         资源项ID列表，每个最大64字节。 资源项ID，一个资源包中会含有多个资源项，一个使用量类型对应一个资源项。资源项ID来自查询资源包列表接口的响应。
 
         :param free_resource_ids: The free_resource_ids of this ListFreeResourceUsagesReq.
-        :type: list[str]
+        :type free_resource_ids: list[str]
         """
         self._free_resource_ids = free_resource_ids
 

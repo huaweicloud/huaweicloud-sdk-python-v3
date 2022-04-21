@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NeutronListFloatingIpsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class NeutronListFloatingIpsResponse(SdkResponse):
     }
 
     def __init__(self, floatingips=None, floatingips_links=None):
-        """NeutronListFloatingIpsResponse - a model defined in huaweicloud sdk"""
+        """NeutronListFloatingIpsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param floatingips: floatingip对象列表
+        :type floatingips: list[:class:`huaweicloudsdkeip.v2.FloatingIpResp`]
+        :param floatingips_links: marker分页结构
+        :type floatingips_links: list[:class:`huaweicloudsdkeip.v2.Pager`]
+        """
         
         super(NeutronListFloatingIpsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class NeutronListFloatingIpsResponse(SdkResponse):
         floatingip对象列表
 
         :return: The floatingips of this NeutronListFloatingIpsResponse.
-        :rtype: list[FloatingIpResp]
+        :rtype: list[:class:`huaweicloudsdkeip.v2.FloatingIpResp`]
         """
         return self._floatingips
 
@@ -63,7 +70,7 @@ class NeutronListFloatingIpsResponse(SdkResponse):
         floatingip对象列表
 
         :param floatingips: The floatingips of this NeutronListFloatingIpsResponse.
-        :type: list[FloatingIpResp]
+        :type floatingips: list[:class:`huaweicloudsdkeip.v2.FloatingIpResp`]
         """
         self._floatingips = floatingips
 
@@ -74,7 +81,7 @@ class NeutronListFloatingIpsResponse(SdkResponse):
         marker分页结构
 
         :return: The floatingips_links of this NeutronListFloatingIpsResponse.
-        :rtype: list[Pager]
+        :rtype: list[:class:`huaweicloudsdkeip.v2.Pager`]
         """
         return self._floatingips_links
 
@@ -85,7 +92,7 @@ class NeutronListFloatingIpsResponse(SdkResponse):
         marker分页结构
 
         :param floatingips_links: The floatingips_links of this NeutronListFloatingIpsResponse.
-        :type: list[Pager]
+        :type floatingips_links: list[:class:`huaweicloudsdkeip.v2.Pager`]
         """
         self._floatingips_links = floatingips_links
 

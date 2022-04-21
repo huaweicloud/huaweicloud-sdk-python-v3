@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneCheckroleForGroupRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class KeystoneCheckroleForGroupRequest:
     }
 
     def __init__(self, domain_id=None, group_id=None, role_id=None):
-        """KeystoneCheckroleForGroupRequest - a model defined in huaweicloud sdk"""
+        """KeystoneCheckroleForGroupRequest
+
+        The model defined in huaweicloud sdk
+
+        :param domain_id: 用户组所属账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
+        :type domain_id: str
+        :param group_id: 用户组ID，获取方式请参见：[获取用户组ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
+        :type group_id: str
+        :param role_id: 权限ID，获取方式请参见：[获取权限名、权限ID](https://support.huaweicloud.com/api-iam/iam_10_0001.html)。
+        :type role_id: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class KeystoneCheckroleForGroupRequest:
         用户组所属账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param domain_id: The domain_id of this KeystoneCheckroleForGroupRequest.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -87,7 +96,7 @@ class KeystoneCheckroleForGroupRequest:
         用户组ID，获取方式请参见：[获取用户组ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param group_id: The group_id of this KeystoneCheckroleForGroupRequest.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -109,7 +118,7 @@ class KeystoneCheckroleForGroupRequest:
         权限ID，获取方式请参见：[获取权限名、权限ID](https://support.huaweicloud.com/api-iam/iam_10_0001.html)。
 
         :param role_id: The role_id of this KeystoneCheckroleForGroupRequest.
-        :type: str
+        :type role_id: str
         """
         self._role_id = role_id
 

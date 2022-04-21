@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteJobReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteJobReq:
     }
 
     def __init__(self, delete_type=None, job_id=None):
-        """DeleteJobReq - a model defined in huaweicloud sdk"""
+        """DeleteJobReq
+
+        The model defined in huaweicloud sdk
+
+        :param delete_type: terminate:结束迁移任务,force_terminate:强制结束迁移任务,delete:删除迁移任务
+        :type delete_type: str
+        :param job_id: 任务ID
+        :type job_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class DeleteJobReq:
         terminate:结束迁移任务,force_terminate:强制结束迁移任务,delete:删除迁移任务
 
         :param delete_type: The delete_type of this DeleteJobReq.
-        :type: str
+        :type delete_type: str
         """
         self._delete_type = delete_type
 
@@ -83,7 +90,7 @@ class DeleteJobReq:
         任务ID
 
         :param job_id: The job_id of this DeleteJobReq.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 

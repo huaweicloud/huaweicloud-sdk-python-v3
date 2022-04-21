@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteSharedBandwidthRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteSharedBandwidthRequest:
     }
 
     def __init__(self, bandwidth_id=None):
-        """DeleteSharedBandwidthRequest - a model defined in huaweicloud sdk"""
+        """DeleteSharedBandwidthRequest
+
+        The model defined in huaweicloud sdk
+
+        :param bandwidth_id: 带宽唯一标识  约束： 当前仅支持删除共享带宽
+        :type bandwidth_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteSharedBandwidthRequest:
         带宽唯一标识  约束： 当前仅支持删除共享带宽
 
         :param bandwidth_id: The bandwidth_id of this DeleteSharedBandwidthRequest.
-        :type: str
+        :type bandwidth_id: str
         """
         self._bandwidth_id = bandwidth_id
 

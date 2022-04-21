@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateRdsInstanceAliasRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateRdsInstanceAliasRequest:
     }
 
     def __init__(self, alias=None):
-        """UpdateRdsInstanceAliasRequest - a model defined in huaweicloud sdk"""
+        """UpdateRdsInstanceAliasRequest
+
+        The model defined in huaweicloud sdk
+
+        :param alias: 长度可在0~64个字符之间，由字母、数字、汉字、英文句号、下划线、中划线组成。
+        :type alias: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class UpdateRdsInstanceAliasRequest:
         长度可在0~64个字符之间，由字母、数字、汉字、英文句号、下划线、中划线组成。
 
         :param alias: The alias of this UpdateRdsInstanceAliasRequest.
-        :type: str
+        :type alias: str
         """
         self._alias = alias
 

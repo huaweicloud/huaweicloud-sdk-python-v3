@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CinderListVolumeTypesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CinderListVolumeTypesResponse(SdkResponse):
     }
 
     def __init__(self, volume_types=None):
-        """CinderListVolumeTypesResponse - a model defined in huaweicloud sdk"""
+        """CinderListVolumeTypesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param volume_types: 
+        :type volume_types: list[:class:`huaweicloudsdkevs.v2.VolumeType`]
+        """
         
         super(CinderListVolumeTypesResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class CinderListVolumeTypesResponse(SdkResponse):
 
 
         :return: The volume_types of this CinderListVolumeTypesResponse.
-        :rtype: list[VolumeType]
+        :rtype: list[:class:`huaweicloudsdkevs.v2.VolumeType`]
         """
         return self._volume_types
 
@@ -56,7 +61,7 @@ class CinderListVolumeTypesResponse(SdkResponse):
 
 
         :param volume_types: The volume_types of this CinderListVolumeTypesResponse.
-        :type: list[VolumeType]
+        :type volume_types: list[:class:`huaweicloudsdkevs.v2.VolumeType`]
         """
         self._volume_types = volume_types
 

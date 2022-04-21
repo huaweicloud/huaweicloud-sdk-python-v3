@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NeutronListFirewallRulesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class NeutronListFirewallRulesResponse(SdkResponse):
     }
 
     def __init__(self, firewall_rules=None, firewall_rules_links=None):
-        """NeutronListFirewallRulesResponse - a model defined in huaweicloud sdk"""
+        """NeutronListFirewallRulesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param firewall_rules: firewall_rule对象列表
+        :type firewall_rules: list[:class:`huaweicloudsdkvpc.v2.NeutronFirewallRule`]
+        :param firewall_rules_links: 分页信息
+        :type firewall_rules_links: list[:class:`huaweicloudsdkvpc.v2.NeutronPageLink`]
+        """
         
         super(NeutronListFirewallRulesResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class NeutronListFirewallRulesResponse(SdkResponse):
         firewall_rule对象列表
 
         :return: The firewall_rules of this NeutronListFirewallRulesResponse.
-        :rtype: list[NeutronFirewallRule]
+        :rtype: list[:class:`huaweicloudsdkvpc.v2.NeutronFirewallRule`]
         """
         return self._firewall_rules
 
@@ -63,7 +70,7 @@ class NeutronListFirewallRulesResponse(SdkResponse):
         firewall_rule对象列表
 
         :param firewall_rules: The firewall_rules of this NeutronListFirewallRulesResponse.
-        :type: list[NeutronFirewallRule]
+        :type firewall_rules: list[:class:`huaweicloudsdkvpc.v2.NeutronFirewallRule`]
         """
         self._firewall_rules = firewall_rules
 
@@ -74,7 +81,7 @@ class NeutronListFirewallRulesResponse(SdkResponse):
         分页信息
 
         :return: The firewall_rules_links of this NeutronListFirewallRulesResponse.
-        :rtype: list[NeutronPageLink]
+        :rtype: list[:class:`huaweicloudsdkvpc.v2.NeutronPageLink`]
         """
         return self._firewall_rules_links
 
@@ -85,7 +92,7 @@ class NeutronListFirewallRulesResponse(SdkResponse):
         分页信息
 
         :param firewall_rules_links: The firewall_rules_links of this NeutronListFirewallRulesResponse.
-        :type: list[NeutronPageLink]
+        :type firewall_rules_links: list[:class:`huaweicloudsdkvpc.v2.NeutronPageLink`]
         """
         self._firewall_rules_links = firewall_rules_links
 

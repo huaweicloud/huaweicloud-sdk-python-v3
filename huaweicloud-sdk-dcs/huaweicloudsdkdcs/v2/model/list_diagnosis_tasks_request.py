@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDiagnosisTasksRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListDiagnosisTasksRequest:
     }
 
     def __init__(self, instance_id=None, limit=None, offset=None):
-        """ListDiagnosisTasksRequest - a model defined in huaweicloud sdk"""
+        """ListDiagnosisTasksRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param limit: 每页显示条数，最小值为1，最大值为1000，若不设置该参数，则为10。
+        :type limit: int
+        :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0。
+        :type offset: int
+        """
         
         
 
@@ -67,7 +76,7 @@ class ListDiagnosisTasksRequest:
         实例ID
 
         :param instance_id: The instance_id of this ListDiagnosisTasksRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -89,7 +98,7 @@ class ListDiagnosisTasksRequest:
         每页显示条数，最小值为1，最大值为1000，若不设置该参数，则为10。
 
         :param limit: The limit of this ListDiagnosisTasksRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -111,7 +120,7 @@ class ListDiagnosisTasksRequest:
         偏移量，表示从此偏移量开始查询， offset大于等于0。
 
         :param offset: The offset of this ListDiagnosisTasksRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 

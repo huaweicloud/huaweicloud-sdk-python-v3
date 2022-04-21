@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateManualImageSyncRepoRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CreateManualImageSyncRepoRequestBody:
     }
 
     def __init__(self, image_tag=None, override=None, remote_namespace=None, remote_region_id=None):
-        """CreateManualImageSyncRepoRequestBody - a model defined in huaweicloud sdk"""
+        """CreateManualImageSyncRepoRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param image_tag: 版本列表
+        :type image_tag: list[str]
+        :param override: 是否覆盖，默认为false
+        :type override: bool
+        :param remote_namespace: 目标组织
+        :type remote_namespace: str
+        :param remote_region_id: 目标region ID。
+        :type remote_region_id: str
+        """
         
         
 
@@ -70,7 +81,7 @@ class CreateManualImageSyncRepoRequestBody:
         版本列表
 
         :param image_tag: The image_tag of this CreateManualImageSyncRepoRequestBody.
-        :type: list[str]
+        :type image_tag: list[str]
         """
         self._image_tag = image_tag
 
@@ -92,7 +103,7 @@ class CreateManualImageSyncRepoRequestBody:
         是否覆盖，默认为false
 
         :param override: The override of this CreateManualImageSyncRepoRequestBody.
-        :type: bool
+        :type override: bool
         """
         self._override = override
 
@@ -114,7 +125,7 @@ class CreateManualImageSyncRepoRequestBody:
         目标组织
 
         :param remote_namespace: The remote_namespace of this CreateManualImageSyncRepoRequestBody.
-        :type: str
+        :type remote_namespace: str
         """
         self._remote_namespace = remote_namespace
 
@@ -136,7 +147,7 @@ class CreateManualImageSyncRepoRequestBody:
         目标region ID。
 
         :param remote_region_id: The remote_region_id of this CreateManualImageSyncRepoRequestBody.
-        :type: str
+        :type remote_region_id: str
         """
         self._remote_region_id = remote_region_id
 

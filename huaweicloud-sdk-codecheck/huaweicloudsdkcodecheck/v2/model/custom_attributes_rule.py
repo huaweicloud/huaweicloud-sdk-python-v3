@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CustomAttributesRule:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CustomAttributesRule:
     }
 
     def __init__(self, rule_id=None, value=None, rule_config_list=None):
-        """CustomAttributesRule - a model defined in huaweicloud sdk"""
+        """CustomAttributesRule
+
+        The model defined in huaweicloud sdk
+
+        :param rule_id: 规则ID
+        :type rule_id: str
+        :param value: attribute的问题级别，0致命，1严重，2一般，3提示
+        :type value: str
+        :param rule_config_list: 规则阈值详细
+        :type rule_config_list: list[:class:`huaweicloudsdkcodecheck.v2.RuleConfig`]
+        """
         
         
 
@@ -68,7 +77,7 @@ class CustomAttributesRule:
         规则ID
 
         :param rule_id: The rule_id of this CustomAttributesRule.
-        :type: str
+        :type rule_id: str
         """
         self._rule_id = rule_id
 
@@ -90,7 +99,7 @@ class CustomAttributesRule:
         attribute的问题级别，0致命，1严重，2一般，3提示
 
         :param value: The value of this CustomAttributesRule.
-        :type: str
+        :type value: str
         """
         self._value = value
 
@@ -101,7 +110,7 @@ class CustomAttributesRule:
         规则阈值详细
 
         :return: The rule_config_list of this CustomAttributesRule.
-        :rtype: list[RuleConfig]
+        :rtype: list[:class:`huaweicloudsdkcodecheck.v2.RuleConfig`]
         """
         return self._rule_config_list
 
@@ -112,7 +121,7 @@ class CustomAttributesRule:
         规则阈值详细
 
         :param rule_config_list: The rule_config_list of this CustomAttributesRule.
-        :type: list[RuleConfig]
+        :type rule_config_list: list[:class:`huaweicloudsdkcodecheck.v2.RuleConfig`]
         """
         self._rule_config_list = rule_config_list
 

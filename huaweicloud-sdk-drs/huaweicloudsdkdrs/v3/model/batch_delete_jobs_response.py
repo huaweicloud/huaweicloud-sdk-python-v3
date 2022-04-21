@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchDeleteJobsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchDeleteJobsResponse(SdkResponse):
     }
 
     def __init__(self, results=None, count=None):
-        """BatchDeleteJobsResponse - a model defined in huaweicloud sdk"""
+        """BatchDeleteJobsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param results: 批量结束任务或删除任务的响应体集合。
+        :type results: list[:class:`huaweicloudsdkdrs.v3.DeleteJobResp`]
+        :param count: 总数
+        :type count: int
+        """
         
         super(BatchDeleteJobsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class BatchDeleteJobsResponse(SdkResponse):
         批量结束任务或删除任务的响应体集合。
 
         :return: The results of this BatchDeleteJobsResponse.
-        :rtype: list[DeleteJobResp]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.DeleteJobResp`]
         """
         return self._results
 
@@ -63,7 +70,7 @@ class BatchDeleteJobsResponse(SdkResponse):
         批量结束任务或删除任务的响应体集合。
 
         :param results: The results of this BatchDeleteJobsResponse.
-        :type: list[DeleteJobResp]
+        :type results: list[:class:`huaweicloudsdkdrs.v3.DeleteJobResp`]
         """
         self._results = results
 
@@ -85,7 +92,7 @@ class BatchDeleteJobsResponse(SdkResponse):
         总数
 
         :param count: The count of this BatchDeleteJobsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

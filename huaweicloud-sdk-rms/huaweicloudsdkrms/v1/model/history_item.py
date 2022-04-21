@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class HistoryItem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class HistoryItem:
     }
 
     def __init__(self, domain_id=None, resource_id=None, resource_type=None, capture_time=None, status=None, relations=None, resource=None):
-        """HistoryItem - a model defined in huaweicloud sdk"""
+        """HistoryItem
+
+        The model defined in huaweicloud sdk
+
+        :param domain_id: 租户id
+        :type domain_id: str
+        :param resource_id: 资源id
+        :type resource_id: str
+        :param resource_type: 资源类型
+        :type resource_type: str
+        :param capture_time: 该资源在RMS系统捕获时间
+        :type capture_time: str
+        :param status: 资源状态
+        :type status: str
+        :param relations: 资源关系列表
+        :type relations: list[:class:`huaweicloudsdkrms.v1.ResourceRelation`]
+        :param resource: 
+        :type resource: :class:`huaweicloudsdkrms.v1.ResourceEntity`
+        """
         
         
 
@@ -88,7 +105,7 @@ class HistoryItem:
         租户id
 
         :param domain_id: The domain_id of this HistoryItem.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -110,7 +127,7 @@ class HistoryItem:
         资源id
 
         :param resource_id: The resource_id of this HistoryItem.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -132,7 +149,7 @@ class HistoryItem:
         资源类型
 
         :param resource_type: The resource_type of this HistoryItem.
-        :type: str
+        :type resource_type: str
         """
         self._resource_type = resource_type
 
@@ -154,7 +171,7 @@ class HistoryItem:
         该资源在RMS系统捕获时间
 
         :param capture_time: The capture_time of this HistoryItem.
-        :type: str
+        :type capture_time: str
         """
         self._capture_time = capture_time
 
@@ -176,7 +193,7 @@ class HistoryItem:
         资源状态
 
         :param status: The status of this HistoryItem.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -187,7 +204,7 @@ class HistoryItem:
         资源关系列表
 
         :return: The relations of this HistoryItem.
-        :rtype: list[ResourceRelation]
+        :rtype: list[:class:`huaweicloudsdkrms.v1.ResourceRelation`]
         """
         return self._relations
 
@@ -198,7 +215,7 @@ class HistoryItem:
         资源关系列表
 
         :param relations: The relations of this HistoryItem.
-        :type: list[ResourceRelation]
+        :type relations: list[:class:`huaweicloudsdkrms.v1.ResourceRelation`]
         """
         self._relations = relations
 
@@ -208,7 +225,7 @@ class HistoryItem:
 
 
         :return: The resource of this HistoryItem.
-        :rtype: ResourceEntity
+        :rtype: :class:`huaweicloudsdkrms.v1.ResourceEntity`
         """
         return self._resource
 
@@ -218,7 +235,7 @@ class HistoryItem:
 
 
         :param resource: The resource of this HistoryItem.
-        :type: ResourceEntity
+        :type resource: :class:`huaweicloudsdkrms.v1.ResourceEntity`
         """
         self._resource = resource
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListStoredValueCardsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListStoredValueCardsRequest:
     }
 
     def __init__(self, status=None, card_id=None, offset=None, limit=None):
-        """ListStoredValueCardsRequest - a model defined in huaweicloud sdk"""
+        """ListStoredValueCardsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param status: 状态：1：可使用2：已用完
+        :type status: int
+        :param card_id: 储值卡ID。
+        :type card_id: str
+        :param offset: 偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset &#x3D; 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
+        :type offset: int
+        :param limit: 查询的优惠券数量，默认值为10。
+        :type limit: int
+        """
         
         
 
@@ -72,7 +83,7 @@ class ListStoredValueCardsRequest:
         状态：1：可使用2：已用完
 
         :param status: The status of this ListStoredValueCardsRequest.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -80,7 +91,7 @@ class ListStoredValueCardsRequest:
     def card_id(self):
         """Gets the card_id of this ListStoredValueCardsRequest.
 
-        储值卡ID
+        储值卡ID。
 
         :return: The card_id of this ListStoredValueCardsRequest.
         :rtype: str
@@ -91,10 +102,10 @@ class ListStoredValueCardsRequest:
     def card_id(self, card_id):
         """Sets the card_id of this ListStoredValueCardsRequest.
 
-        储值卡ID
+        储值卡ID。
 
         :param card_id: The card_id of this ListStoredValueCardsRequest.
-        :type: str
+        :type card_id: str
         """
         self._card_id = card_id
 
@@ -116,7 +127,7 @@ class ListStoredValueCardsRequest:
         偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
         :param offset: The offset of this ListStoredValueCardsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -138,7 +149,7 @@ class ListStoredValueCardsRequest:
         查询的优惠券数量，默认值为10。
 
         :param limit: The limit of this ListStoredValueCardsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

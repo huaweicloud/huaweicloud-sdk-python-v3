@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryLtsStructLogParamsNew:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class QueryLtsStructLogParamsNew:
     }
 
     def __init__(self, query=None, format=None, time_range=None):
-        """QueryLtsStructLogParamsNew - a model defined in huaweicloud sdk"""
+        """QueryLtsStructLogParamsNew
+
+        The model defined in huaweicloud sdk
+
+        :param query: sql语句字符串。
+        :type query: str
+        :param format: 查询结果格式。当前仅支持：\&quot;k-v\&quot;。
+        :type format: str
+        :param time_range: 
+        :type time_range: :class:`huaweicloudsdklts.v2.TimeRange`
+        """
         
         
 
@@ -65,7 +74,7 @@ class QueryLtsStructLogParamsNew:
         sql语句字符串。
 
         :param query: The query of this QueryLtsStructLogParamsNew.
-        :type: str
+        :type query: str
         """
         self._query = query
 
@@ -87,7 +96,7 @@ class QueryLtsStructLogParamsNew:
         查询结果格式。当前仅支持：\"k-v\"。
 
         :param format: The format of this QueryLtsStructLogParamsNew.
-        :type: str
+        :type format: str
         """
         self._format = format
 
@@ -97,7 +106,7 @@ class QueryLtsStructLogParamsNew:
 
 
         :return: The time_range of this QueryLtsStructLogParamsNew.
-        :rtype: TimeRange
+        :rtype: :class:`huaweicloudsdklts.v2.TimeRange`
         """
         return self._time_range
 
@@ -107,7 +116,7 @@ class QueryLtsStructLogParamsNew:
 
 
         :param time_range: The time_range of this QueryLtsStructLogParamsNew.
-        :type: TimeRange
+        :type time_range: :class:`huaweicloudsdklts.v2.TimeRange`
         """
         self._time_range = time_range
 

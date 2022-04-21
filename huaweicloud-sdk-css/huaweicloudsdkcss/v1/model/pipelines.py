@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Pipelines:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class Pipelines:
     }
 
     def __init__(self, name=None, status=None, keep_alive=None, events=None, update_at=None):
-        """Pipelines - a model defined in huaweicloud sdk"""
+        """Pipelines
+
+        The model defined in huaweicloud sdk
+
+        :param name: 配置文件名称。
+        :type name: str
+        :param status: pipeline状态。
+        :type status: str
+        :param keep_alive: 是否开启常驻。
+        :type keep_alive: bool
+        :param events: 事件只有在“工作中”状态才可以实时查看（需要手动刷新），“已停止”状态请到output端查看迁移数据量。
+        :type events: str
+        :param update_at: 更新时间。
+        :type update_at: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class Pipelines:
         配置文件名称。
 
         :param name: The name of this Pipelines.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -100,7 +113,7 @@ class Pipelines:
         pipeline状态。
 
         :param status: The status of this Pipelines.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -122,7 +135,7 @@ class Pipelines:
         是否开启常驻。
 
         :param keep_alive: The keep_alive of this Pipelines.
-        :type: bool
+        :type keep_alive: bool
         """
         self._keep_alive = keep_alive
 
@@ -144,7 +157,7 @@ class Pipelines:
         事件只有在“工作中”状态才可以实时查看（需要手动刷新），“已停止”状态请到output端查看迁移数据量。
 
         :param events: The events of this Pipelines.
-        :type: str
+        :type events: str
         """
         self._events = events
 
@@ -166,7 +179,7 @@ class Pipelines:
         更新时间。
 
         :param update_at: The update_at of this Pipelines.
-        :type: str
+        :type update_at: str
         """
         self._update_at = update_at
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListVpcsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListVpcsRequest:
     }
 
     def __init__(self, limit=None, offset=None, id=None, name=None):
-        """ListVpcsRequest - a model defined in huaweicloud sdk"""
+        """ListVpcsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 查询返回虚拟私有云列表数量。
+        :type limit: int
+        :param offset: 查询的偏移量。
+        :type offset: int
+        :param id: 通过ID查询
+        :type id: str
+        :param name: 通过name查询
+        :type name: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class ListVpcsRequest:
         查询返回虚拟私有云列表数量。
 
         :param limit: The limit of this ListVpcsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -95,7 +106,7 @@ class ListVpcsRequest:
         查询的偏移量。
 
         :param offset: The offset of this ListVpcsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -117,7 +128,7 @@ class ListVpcsRequest:
         通过ID查询
 
         :param id: The id of this ListVpcsRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -139,7 +150,7 @@ class ListVpcsRequest:
         通过name查询
 
         :param name: The name of this ListVpcsRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 

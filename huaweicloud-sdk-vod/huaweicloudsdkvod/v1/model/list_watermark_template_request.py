@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListWatermarkTemplateRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListWatermarkTemplateRequest:
     }
 
     def __init__(self, id=None, page=None, size=None):
-        """ListWatermarkTemplateRequest - a model defined in huaweicloud sdk"""
+        """ListWatermarkTemplateRequest
+
+        The model defined in huaweicloud sdk
+
+        :param id: 水印模板配置id，一次最多10个。
+        :type id: list[str]
+        :param page: 分页编号。  默认为0。指定id时该参数无效。
+        :type page: int
+        :param size: 每页记录数。  默认为10，范围[1,100]。指定id时该参数无效。
+        :type size: int
+        """
         
         
 
@@ -68,7 +77,7 @@ class ListWatermarkTemplateRequest:
         水印模板配置id，一次最多10个。
 
         :param id: The id of this ListWatermarkTemplateRequest.
-        :type: list[str]
+        :type id: list[str]
         """
         self._id = id
 
@@ -90,7 +99,7 @@ class ListWatermarkTemplateRequest:
         分页编号。  默认为0。指定id时该参数无效。
 
         :param page: The page of this ListWatermarkTemplateRequest.
-        :type: int
+        :type page: int
         """
         self._page = page
 
@@ -112,7 +121,7 @@ class ListWatermarkTemplateRequest:
         每页记录数。  默认为10，范围[1,100]。指定id时该参数无效。
 
         :param size: The size of this ListWatermarkTemplateRequest.
-        :type: int
+        :type size: int
         """
         self._size = size
 

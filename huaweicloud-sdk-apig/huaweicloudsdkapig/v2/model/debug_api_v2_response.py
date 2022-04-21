@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DebugApiV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class DebugApiV2Response(SdkResponse):
     }
 
     def __init__(self, request=None, response=None, latency=None, log=None):
-        """DebugApiV2Response - a model defined in huaweicloud sdk"""
+        """DebugApiV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param request: 调试请求报文内容
+        :type request: str
+        :param response: 调试响应报文内容，响应消息体最大支持2097152字节，超过部分会被截断 &gt; 响应消息体超过限制长度时，超过部分会被截断，并追加\&quot;[TRUNCATED]\&quot;信息。
+        :type response: str
+        :param latency: 调试耗时，单位：毫秒
+        :type latency: int
+        :param log: 调试过程日志
+        :type log: str
+        """
         
         super(DebugApiV2Response, self).__init__()
 
@@ -73,7 +84,7 @@ class DebugApiV2Response(SdkResponse):
         调试请求报文内容
 
         :param request: The request of this DebugApiV2Response.
-        :type: str
+        :type request: str
         """
         self._request = request
 
@@ -95,7 +106,7 @@ class DebugApiV2Response(SdkResponse):
         调试响应报文内容，响应消息体最大支持2097152字节，超过部分会被截断 > 响应消息体超过限制长度时，超过部分会被截断，并追加\"[TRUNCATED]\"信息。
 
         :param response: The response of this DebugApiV2Response.
-        :type: str
+        :type response: str
         """
         self._response = response
 
@@ -117,7 +128,7 @@ class DebugApiV2Response(SdkResponse):
         调试耗时，单位：毫秒
 
         :param latency: The latency of this DebugApiV2Response.
-        :type: int
+        :type latency: int
         """
         self._latency = latency
 
@@ -139,7 +150,7 @@ class DebugApiV2Response(SdkResponse):
         调试过程日志
 
         :param log: The log of this DebugApiV2Response.
-        :type: str
+        :type log: str
         """
         self._log = log
 

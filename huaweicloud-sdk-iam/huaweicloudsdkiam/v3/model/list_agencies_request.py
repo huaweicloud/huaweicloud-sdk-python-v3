@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAgenciesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListAgenciesRequest:
     }
 
     def __init__(self, domain_id=None, trust_domain_id=None, name=None):
-        """ListAgenciesRequest - a model defined in huaweicloud sdk"""
+        """ListAgenciesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param domain_id: 委托方账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
+        :type domain_id: str
+        :param trust_domain_id: 被委托方账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
+        :type trust_domain_id: str
+        :param name: 委托名，获取方式请参见：[获取委托名、委托ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
+        :type name: str
+        """
         
         
 
@@ -67,7 +76,7 @@ class ListAgenciesRequest:
         委托方账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param domain_id: The domain_id of this ListAgenciesRequest.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -89,7 +98,7 @@ class ListAgenciesRequest:
         被委托方账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param trust_domain_id: The trust_domain_id of this ListAgenciesRequest.
-        :type: str
+        :type trust_domain_id: str
         """
         self._trust_domain_id = trust_domain_id
 
@@ -111,7 +120,7 @@ class ListAgenciesRequest:
         委托名，获取方式请参见：[获取委托名、委托ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param name: The name of this ListAgenciesRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 

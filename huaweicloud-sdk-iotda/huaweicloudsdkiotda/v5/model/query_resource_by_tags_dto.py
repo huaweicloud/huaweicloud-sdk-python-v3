@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryResourceByTagsDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class QueryResourceByTagsDTO:
     }
 
     def __init__(self, resource_type=None, tags=None):
-        """QueryResourceByTagsDTO - a model defined in huaweicloud sdk"""
+        """QueryResourceByTagsDTO
+
+        The model defined in huaweicloud sdk
+
+        :param resource_type: **参数说明**：要查询的资源类型，当前支持设备（device）。
+        :type resource_type: str
+        :param tags: **参数说明**：标签列表，支持按照标签key和value组合查询，传入的多个标签之间是或的关系。
+        :type tags: list[:class:`huaweicloudsdkiotda.v5.TagV5DTO`]
+        """
         
         
 
@@ -61,7 +68,7 @@ class QueryResourceByTagsDTO:
         **参数说明**：要查询的资源类型，当前支持设备（device）。
 
         :param resource_type: The resource_type of this QueryResourceByTagsDTO.
-        :type: str
+        :type resource_type: str
         """
         self._resource_type = resource_type
 
@@ -72,7 +79,7 @@ class QueryResourceByTagsDTO:
         **参数说明**：标签列表，支持按照标签key和value组合查询，传入的多个标签之间是或的关系。
 
         :return: The tags of this QueryResourceByTagsDTO.
-        :rtype: list[TagV5DTO]
+        :rtype: list[:class:`huaweicloudsdkiotda.v5.TagV5DTO`]
         """
         return self._tags
 
@@ -83,7 +90,7 @@ class QueryResourceByTagsDTO:
         **参数说明**：标签列表，支持按照标签key和value组合查询，传入的多个标签之间是或的关系。
 
         :param tags: The tags of this QueryResourceByTagsDTO.
-        :type: list[TagV5DTO]
+        :type tags: list[:class:`huaweicloudsdkiotda.v5.TagV5DTO`]
         """
         self._tags = tags
 

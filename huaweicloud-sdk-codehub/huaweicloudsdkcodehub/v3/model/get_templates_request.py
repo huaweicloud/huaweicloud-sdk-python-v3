@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GetTemplatesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class GetTemplatesRequest:
     }
 
     def __init__(self, platform=None, language=None, pipeline=None, entertype=None, search=None, dateorder=None, usedtimeorder=None, type=None, region=None, page_no=None, page_size=None):
-        """GetTemplatesRequest - a model defined in huaweicloud sdk"""
+        """GetTemplatesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param platform: 模板平台类型
+        :type platform: str
+        :param language: 语言类型
+        :type language: str
+        :param pipeline: 是否支持流水线
+        :type pipeline: str
+        :param entertype: 模板分类
+        :type entertype: str
+        :param search: 模板名称
+        :type search: str
+        :param dateorder: 模板日期排序
+        :type dateorder: str
+        :param usedtimeorder: 模板引用次数排序
+        :type usedtimeorder: str
+        :param type: 模板公开类型
+        :type type: str
+        :param region: 大区名称
+        :type region: str
+        :param page_no: 分页页数
+        :type page_no: int
+        :param page_size: 每页数据数
+        :type page_size: int
+        """
         
         
 
@@ -106,7 +131,7 @@ class GetTemplatesRequest:
         模板平台类型
 
         :param platform: The platform of this GetTemplatesRequest.
-        :type: str
+        :type platform: str
         """
         self._platform = platform
 
@@ -128,7 +153,7 @@ class GetTemplatesRequest:
         语言类型
 
         :param language: The language of this GetTemplatesRequest.
-        :type: str
+        :type language: str
         """
         self._language = language
 
@@ -150,7 +175,7 @@ class GetTemplatesRequest:
         是否支持流水线
 
         :param pipeline: The pipeline of this GetTemplatesRequest.
-        :type: str
+        :type pipeline: str
         """
         self._pipeline = pipeline
 
@@ -172,7 +197,7 @@ class GetTemplatesRequest:
         模板分类
 
         :param entertype: The entertype of this GetTemplatesRequest.
-        :type: str
+        :type entertype: str
         """
         self._entertype = entertype
 
@@ -194,7 +219,7 @@ class GetTemplatesRequest:
         模板名称
 
         :param search: The search of this GetTemplatesRequest.
-        :type: str
+        :type search: str
         """
         self._search = search
 
@@ -216,7 +241,7 @@ class GetTemplatesRequest:
         模板日期排序
 
         :param dateorder: The dateorder of this GetTemplatesRequest.
-        :type: str
+        :type dateorder: str
         """
         self._dateorder = dateorder
 
@@ -238,7 +263,7 @@ class GetTemplatesRequest:
         模板引用次数排序
 
         :param usedtimeorder: The usedtimeorder of this GetTemplatesRequest.
-        :type: str
+        :type usedtimeorder: str
         """
         self._usedtimeorder = usedtimeorder
 
@@ -260,7 +285,7 @@ class GetTemplatesRequest:
         模板公开类型
 
         :param type: The type of this GetTemplatesRequest.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -282,7 +307,7 @@ class GetTemplatesRequest:
         大区名称
 
         :param region: The region of this GetTemplatesRequest.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -304,7 +329,7 @@ class GetTemplatesRequest:
         分页页数
 
         :param page_no: The page_no of this GetTemplatesRequest.
-        :type: int
+        :type page_no: int
         """
         self._page_no = page_no
 
@@ -326,7 +351,7 @@ class GetTemplatesRequest:
         每页数据数
 
         :param page_size: The page_size of this GetTemplatesRequest.
-        :type: int
+        :type page_size: int
         """
         self._page_size = page_size
 

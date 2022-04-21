@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSecretsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListSecretsResponse(SdkResponse):
     }
 
     def __init__(self, secrets=None, page_info=None):
-        """ListSecretsResponse - a model defined in huaweicloud sdk"""
+        """ListSecretsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param secrets: 凭据详情列表。
+        :type secrets: list[:class:`huaweicloudsdkkms.v1.Secret`]
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkkms.v1.PageInfo`
+        """
         
         super(ListSecretsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListSecretsResponse(SdkResponse):
         凭据详情列表。
 
         :return: The secrets of this ListSecretsResponse.
-        :rtype: list[Secret]
+        :rtype: list[:class:`huaweicloudsdkkms.v1.Secret`]
         """
         return self._secrets
 
@@ -63,7 +70,7 @@ class ListSecretsResponse(SdkResponse):
         凭据详情列表。
 
         :param secrets: The secrets of this ListSecretsResponse.
-        :type: list[Secret]
+        :type secrets: list[:class:`huaweicloudsdkkms.v1.Secret`]
         """
         self._secrets = secrets
 
@@ -73,7 +80,7 @@ class ListSecretsResponse(SdkResponse):
 
 
         :return: The page_info of this ListSecretsResponse.
-        :rtype: PageInfo
+        :rtype: :class:`huaweicloudsdkkms.v1.PageInfo`
         """
         return self._page_info
 
@@ -83,7 +90,7 @@ class ListSecretsResponse(SdkResponse):
 
 
         :param page_info: The page_info of this ListSecretsResponse.
-        :type: PageInfo
+        :type page_info: :class:`huaweicloudsdkkms.v1.PageInfo`
         """
         self._page_info = page_info
 

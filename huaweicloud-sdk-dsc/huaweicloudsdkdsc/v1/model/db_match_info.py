@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DbMatchInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class DbMatchInfo:
     }
 
     def __init__(self, column_name=None, rule_name=None, rule_id=None, rule_risk_level=None, column_line=None):
-        """DbMatchInfo - a model defined in huaweicloud sdk"""
+        """DbMatchInfo
+
+        The model defined in huaweicloud sdk
+
+        :param column_name: 列名
+        :type column_name: str
+        :param rule_name: 匹配的规则名
+        :type rule_name: str
+        :param rule_id: 匹配的规则ID
+        :type rule_id: str
+        :param rule_risk_level: 匹配规则风险等级
+        :type rule_risk_level: int
+        :param column_line: 风险数据行
+        :type column_line: list[int]
+        """
         
         
 
@@ -78,7 +91,7 @@ class DbMatchInfo:
         列名
 
         :param column_name: The column_name of this DbMatchInfo.
-        :type: str
+        :type column_name: str
         """
         self._column_name = column_name
 
@@ -100,7 +113,7 @@ class DbMatchInfo:
         匹配的规则名
 
         :param rule_name: The rule_name of this DbMatchInfo.
-        :type: str
+        :type rule_name: str
         """
         self._rule_name = rule_name
 
@@ -122,7 +135,7 @@ class DbMatchInfo:
         匹配的规则ID
 
         :param rule_id: The rule_id of this DbMatchInfo.
-        :type: str
+        :type rule_id: str
         """
         self._rule_id = rule_id
 
@@ -144,7 +157,7 @@ class DbMatchInfo:
         匹配规则风险等级
 
         :param rule_risk_level: The rule_risk_level of this DbMatchInfo.
-        :type: int
+        :type rule_risk_level: int
         """
         self._rule_risk_level = rule_risk_level
 
@@ -166,7 +179,7 @@ class DbMatchInfo:
         风险数据行
 
         :param column_line: The column_line of this DbMatchInfo.
-        :type: list[int]
+        :type column_line: list[int]
         """
         self._column_line = column_line
 

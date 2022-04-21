@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowApplicationResDeleteStatusResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowApplicationResDeleteStatusResponse(SdkResponse):
     }
 
     def __init__(self, repo_status=None, pipeline_status=None):
-        """ShowApplicationResDeleteStatusResponse - a model defined in huaweicloud sdk"""
+        """ShowApplicationResDeleteStatusResponse
+
+        The model defined in huaweicloud sdk
+
+        :param repo_status: 代码仓删除状态,deleted:删除成功,failed:删除失败,going:正在删除中
+        :type repo_status: str
+        :param pipeline_status: 流水线删除状态
+        :type pipeline_status: list[:class:`huaweicloudsdkdevstar.v1.PipelineDeleteStatus`]
+        """
         
         super(ShowApplicationResDeleteStatusResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ShowApplicationResDeleteStatusResponse(SdkResponse):
         代码仓删除状态,deleted:删除成功,failed:删除失败,going:正在删除中
 
         :param repo_status: The repo_status of this ShowApplicationResDeleteStatusResponse.
-        :type: str
+        :type repo_status: str
         """
         self._repo_status = repo_status
 
@@ -74,7 +81,7 @@ class ShowApplicationResDeleteStatusResponse(SdkResponse):
         流水线删除状态
 
         :return: The pipeline_status of this ShowApplicationResDeleteStatusResponse.
-        :rtype: list[PipelineDeleteStatus]
+        :rtype: list[:class:`huaweicloudsdkdevstar.v1.PipelineDeleteStatus`]
         """
         return self._pipeline_status
 
@@ -85,7 +92,7 @@ class ShowApplicationResDeleteStatusResponse(SdkResponse):
         流水线删除状态
 
         :param pipeline_status: The pipeline_status of this ShowApplicationResDeleteStatusResponse.
-        :type: list[PipelineDeleteStatus]
+        :type pipeline_status: list[:class:`huaweicloudsdkdevstar.v1.PipelineDeleteStatus`]
         """
         self._pipeline_status = pipeline_status
 

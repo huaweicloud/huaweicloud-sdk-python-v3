@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Distribution:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class Distribution:
     }
 
     def __init__(self, area=None, city=None, operator=None, province=None, site_id=None, pool_id=None, stack_count=None, city_short_name=None):
-        """Distribution - a model defined in huaweicloud sdk"""
+        """Distribution
+
+        The model defined in huaweicloud sdk
+
+        :param area: 所在大区名称。
+        :type area: str
+        :param city: 所在城市名称。
+        :type city: str
+        :param operator: 所属运营商名称。
+        :type operator: str
+        :param province: 所属省份名称。
+        :type province: str
+        :param site_id: 站点ID。
+        :type site_id: str
+        :param pool_id: 线路ID。多线路场景下，将在该线路下创建弹性公网IP。
+        :type pool_id: str
+        :param stack_count: 资源组配置模板数目
+        :type stack_count: int
+        :param city_short_name: 城市简称。
+        :type city_short_name: str
+        """
         
         
 
@@ -93,7 +112,7 @@ class Distribution:
         所在大区名称。
 
         :param area: The area of this Distribution.
-        :type: str
+        :type area: str
         """
         self._area = area
 
@@ -115,7 +134,7 @@ class Distribution:
         所在城市名称。
 
         :param city: The city of this Distribution.
-        :type: str
+        :type city: str
         """
         self._city = city
 
@@ -137,7 +156,7 @@ class Distribution:
         所属运营商名称。
 
         :param operator: The operator of this Distribution.
-        :type: str
+        :type operator: str
         """
         self._operator = operator
 
@@ -159,7 +178,7 @@ class Distribution:
         所属省份名称。
 
         :param province: The province of this Distribution.
-        :type: str
+        :type province: str
         """
         self._province = province
 
@@ -181,7 +200,7 @@ class Distribution:
         站点ID。
 
         :param site_id: The site_id of this Distribution.
-        :type: str
+        :type site_id: str
         """
         self._site_id = site_id
 
@@ -203,7 +222,7 @@ class Distribution:
         线路ID。多线路场景下，将在该线路下创建弹性公网IP。
 
         :param pool_id: The pool_id of this Distribution.
-        :type: str
+        :type pool_id: str
         """
         self._pool_id = pool_id
 
@@ -225,7 +244,7 @@ class Distribution:
         资源组配置模板数目
 
         :param stack_count: The stack_count of this Distribution.
-        :type: int
+        :type stack_count: int
         """
         self._stack_count = stack_count
 
@@ -247,7 +266,7 @@ class Distribution:
         城市简称。
 
         :param city_short_name: The city_short_name of this Distribution.
-        :type: str
+        :type city_short_name: str
         """
         self._city_short_name = city_short_name
 

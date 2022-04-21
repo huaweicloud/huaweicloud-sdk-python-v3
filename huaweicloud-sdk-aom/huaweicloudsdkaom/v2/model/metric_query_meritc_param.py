@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MetricQueryMeritcParam:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class MetricQueryMeritcParam:
     }
 
     def __init__(self, dimensions=None, metric_name=None, namespace=None):
-        """MetricQueryMeritcParam - a model defined in huaweicloud sdk"""
+        """MetricQueryMeritcParam
+
+        The model defined in huaweicloud sdk
+
+        :param dimensions: 指标维度列表。 取值范围： 数组不能为空，同时数组中任何一个dimension对象name和value属性的值也不能为空。
+        :type dimensions: list[:class:`huaweicloudsdkaom.v2.Dimension`]
+        :param metric_name: 指标名称。名称长度取值范围为1~255个字符。 取值范围： AOM提供的基础指标， cpuUsage、cpuCoreUsed等 cpuUage：cpu使用率； cpuCoreUsed：cpu内核占用； 用户上报的自定义指标名称。
+        :type metric_name: str
+        :param namespace: 指标命名空间。 取值范围： PAAS.CONTAINER：组件指标、实例指标、进程指标和容器指标的命名空间， PAAS.NODE： 主机指标、网络指标、磁盘指标和文件系统指标的命名空间， PAAS.SLA：SLA指标的命名空间， PAAS.AGGR：集群指标的命名空间， CUSTOMMETRICS：默认的自定义指标的命名空间。
+        :type namespace: str
+        """
         
         
 
@@ -54,7 +63,7 @@ class MetricQueryMeritcParam:
         指标维度列表。 取值范围： 数组不能为空，同时数组中任何一个dimension对象name和value属性的值也不能为空。
 
         :return: The dimensions of this MetricQueryMeritcParam.
-        :rtype: list[Dimension]
+        :rtype: list[:class:`huaweicloudsdkaom.v2.Dimension`]
         """
         return self._dimensions
 
@@ -65,7 +74,7 @@ class MetricQueryMeritcParam:
         指标维度列表。 取值范围： 数组不能为空，同时数组中任何一个dimension对象name和value属性的值也不能为空。
 
         :param dimensions: The dimensions of this MetricQueryMeritcParam.
-        :type: list[Dimension]
+        :type dimensions: list[:class:`huaweicloudsdkaom.v2.Dimension`]
         """
         self._dimensions = dimensions
 
@@ -87,7 +96,7 @@ class MetricQueryMeritcParam:
         指标名称。名称长度取值范围为1~255个字符。 取值范围： AOM提供的基础指标， cpuUsage、cpuCoreUsed等 cpuUage：cpu使用率； cpuCoreUsed：cpu内核占用； 用户上报的自定义指标名称。
 
         :param metric_name: The metric_name of this MetricQueryMeritcParam.
-        :type: str
+        :type metric_name: str
         """
         self._metric_name = metric_name
 
@@ -109,7 +118,7 @@ class MetricQueryMeritcParam:
         指标命名空间。 取值范围： PAAS.CONTAINER：组件指标、实例指标、进程指标和容器指标的命名空间， PAAS.NODE： 主机指标、网络指标、磁盘指标和文件系统指标的命名空间， PAAS.SLA：SLA指标的命名空间， PAAS.AGGR：集群指标的命名空间， CUSTOMMETRICS：默认的自定义指标的命名空间。
 
         :param namespace: The namespace of this MetricQueryMeritcParam.
-        :type: str
+        :type namespace: str
         """
         self._namespace = namespace
 

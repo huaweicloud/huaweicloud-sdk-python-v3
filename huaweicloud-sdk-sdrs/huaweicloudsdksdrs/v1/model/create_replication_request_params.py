@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateReplicationRequestParams:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class CreateReplicationRequestParams:
     }
 
     def __init__(self, server_group_id=None, volume_id=None, name=None, description=None, cluster_id=None):
-        """CreateReplicationRequestParams - a model defined in huaweicloud sdk"""
+        """CreateReplicationRequestParams
+
+        The model defined in huaweicloud sdk
+
+        :param server_group_id: 保护组的ID。
+        :type server_group_id: str
+        :param volume_id: 生产站点卷的ID。
+        :type volume_id: str
+        :param name: 指定复制对的名称，最大支持长度为64个字节。只包含中文字符、英文字母（a～ｚ、Ａ～Ｚ）、数字（０~９）、小数点（．）、下划线（_）、中划线（-）。
+        :type name: str
+        :param description: 指定复制对的描述，最大支持长度为64个字节，不能包含左尖括号（&lt;）或右尖括号（&gt;）。
+        :type description: str
+        :param cluster_id: 专属分布式存储池ID。
+        :type cluster_id: str
+        """
         
         
 
@@ -75,7 +88,7 @@ class CreateReplicationRequestParams:
         保护组的ID。
 
         :param server_group_id: The server_group_id of this CreateReplicationRequestParams.
-        :type: str
+        :type server_group_id: str
         """
         self._server_group_id = server_group_id
 
@@ -97,7 +110,7 @@ class CreateReplicationRequestParams:
         生产站点卷的ID。
 
         :param volume_id: The volume_id of this CreateReplicationRequestParams.
-        :type: str
+        :type volume_id: str
         """
         self._volume_id = volume_id
 
@@ -119,7 +132,7 @@ class CreateReplicationRequestParams:
         指定复制对的名称，最大支持长度为64个字节。只包含中文字符、英文字母（a～ｚ、Ａ～Ｚ）、数字（０~９）、小数点（．）、下划线（_）、中划线（-）。
 
         :param name: The name of this CreateReplicationRequestParams.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -141,7 +154,7 @@ class CreateReplicationRequestParams:
         指定复制对的描述，最大支持长度为64个字节，不能包含左尖括号（<）或右尖括号（>）。
 
         :param description: The description of this CreateReplicationRequestParams.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -163,7 +176,7 @@ class CreateReplicationRequestParams:
         专属分布式存储池ID。
 
         :param cluster_id: The cluster_id of this CreateReplicationRequestParams.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 

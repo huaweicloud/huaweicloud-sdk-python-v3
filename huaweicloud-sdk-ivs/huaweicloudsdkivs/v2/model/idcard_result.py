@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IdcardResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class IdcardResult:
     }
 
     def __init__(self, name=None, number=None, sex=None, birth=None, ethnicity=None, address=None, issue=None, valid_from=None, valid_to=None):
-        """IdcardResult - a model defined in huaweicloud sdk"""
+        """IdcardResult
+
+        The model defined in huaweicloud sdk
+
+        :param name: 身份证上识别的名称。
+        :type name: str
+        :param number: 身份证号。
+        :type number: str
+        :param sex: 性别。
+        :type sex: str
+        :param birth: 出生日期。
+        :type birth: str
+        :param ethnicity: 民族。
+        :type ethnicity: str
+        :param address: 地址。
+        :type address: str
+        :param issue: 发证机关。
+        :type issue: str
+        :param valid_from: 有效起始日期。
+        :type valid_from: str
+        :param valid_to: 有效结束日期。
+        :type valid_to: str
+        """
         
         
 
@@ -98,7 +119,7 @@ class IdcardResult:
         身份证上识别的名称。
 
         :param name: The name of this IdcardResult.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -120,7 +141,7 @@ class IdcardResult:
         身份证号。
 
         :param number: The number of this IdcardResult.
-        :type: str
+        :type number: str
         """
         self._number = number
 
@@ -142,7 +163,7 @@ class IdcardResult:
         性别。
 
         :param sex: The sex of this IdcardResult.
-        :type: str
+        :type sex: str
         """
         self._sex = sex
 
@@ -164,7 +185,7 @@ class IdcardResult:
         出生日期。
 
         :param birth: The birth of this IdcardResult.
-        :type: str
+        :type birth: str
         """
         self._birth = birth
 
@@ -186,7 +207,7 @@ class IdcardResult:
         民族。
 
         :param ethnicity: The ethnicity of this IdcardResult.
-        :type: str
+        :type ethnicity: str
         """
         self._ethnicity = ethnicity
 
@@ -208,7 +229,7 @@ class IdcardResult:
         地址。
 
         :param address: The address of this IdcardResult.
-        :type: str
+        :type address: str
         """
         self._address = address
 
@@ -230,7 +251,7 @@ class IdcardResult:
         发证机关。
 
         :param issue: The issue of this IdcardResult.
-        :type: str
+        :type issue: str
         """
         self._issue = issue
 
@@ -252,7 +273,7 @@ class IdcardResult:
         有效起始日期。
 
         :param valid_from: The valid_from of this IdcardResult.
-        :type: str
+        :type valid_from: str
         """
         self._valid_from = valid_from
 
@@ -274,7 +295,7 @@ class IdcardResult:
         有效结束日期。
 
         :param valid_to: The valid_to of this IdcardResult.
-        :type: str
+        :type valid_to: str
         """
         self._valid_to = valid_to
 

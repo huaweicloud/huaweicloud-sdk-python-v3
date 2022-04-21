@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListFunctionStatisticsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListFunctionStatisticsRequest:
     }
 
     def __init__(self, func_urn=None, period=None):
-        """ListFunctionStatisticsRequest - a model defined in huaweicloud sdk"""
+        """ListFunctionStatisticsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param func_urn: 函数的URN（Uniform Resource Name），唯一标识函数。
+        :type func_urn: str
+        :param period: 获取最近多少分钟内函数执行的指标。
+        :type period: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ListFunctionStatisticsRequest:
         函数的URN（Uniform Resource Name），唯一标识函数。
 
         :param func_urn: The func_urn of this ListFunctionStatisticsRequest.
-        :type: str
+        :type func_urn: str
         """
         self._func_urn = func_urn
 
@@ -83,7 +90,7 @@ class ListFunctionStatisticsRequest:
         获取最近多少分钟内函数执行的指标。
 
         :param period: The period of this ListFunctionStatisticsRequest.
-        :type: str
+        :type period: str
         """
         self._period = period
 

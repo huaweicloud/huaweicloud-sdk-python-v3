@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowStructTemplateRule:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowStructTemplateRule:
     }
 
     def __init__(self, param=None, type=None):
-        """ShowStructTemplateRule - a model defined in huaweicloud sdk"""
+        """ShowStructTemplateRule
+
+        The model defined in huaweicloud sdk
+
+        :param param: 测试
+        :type param: str
+        :param type: 结构化类型
+        :type type: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class ShowStructTemplateRule:
         测试
 
         :param param: The param of this ShowStructTemplateRule.
-        :type: str
+        :type param: str
         """
         self._param = param
 
@@ -85,7 +92,7 @@ class ShowStructTemplateRule:
         结构化类型
 
         :param type: The type of this ShowStructTemplateRule.
-        :type: str
+        :type type: str
         """
         self._type = type
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Node:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class Node:
     }
 
     def __init__(self, node=None):
-        """Node - a model defined in huaweicloud sdk"""
+        """Node
+
+        The model defined in huaweicloud sdk
+
+        :param node: 
+        :type node: :class:`huaweicloudsdkief.v1.EdgeNode`
+        """
         
         
 
@@ -45,7 +50,7 @@ class Node:
 
 
         :return: The node of this Node.
-        :rtype: EdgeNode
+        :rtype: :class:`huaweicloudsdkief.v1.EdgeNode`
         """
         return self._node
 
@@ -55,7 +60,7 @@ class Node:
 
 
         :param node: The node of this Node.
-        :type: EdgeNode
+        :type node: :class:`huaweicloudsdkief.v1.EdgeNode`
         """
         self._node = node
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InstanceModReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class InstanceModReq:
     }
 
     def __init__(self, description=None, maintain_begin=None, maintain_end=None, instance_name=None, security_group_id=None):
-        """InstanceModReq - a model defined in huaweicloud sdk"""
+        """InstanceModReq
+
+        The model defined in huaweicloud sdk
+
+        :param description: 实例描述
+        :type description: str
+        :param maintain_begin: &#39;维护时间窗开始时间。时间格式为 xx:00:00，xx取值为02,06,10,14,18,22。&#39;  &#39;在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次。&#39;
+        :type maintain_begin: str
+        :param maintain_end: &#39;维护时间窗结束时间。时间格式为 xx:00:00，与维护时间窗开始时间相差4个小时。&#39;  &#39;在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次&#39;。
+        :type maintain_end: str
+        :param instance_name: 实例名称
+        :type instance_name: str
+        :param security_group_id: 指定实例所属的安全组。  获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体方法请参见《虚拟私有云服务API参考》的“查询安全组列表”章节。。 
+        :type security_group_id: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class InstanceModReq:
         实例描述
 
         :param description: The description of this InstanceModReq.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -100,7 +113,7 @@ class InstanceModReq:
         '维护时间窗开始时间。时间格式为 xx:00:00，xx取值为02,06,10,14,18,22。'  '在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次。'
 
         :param maintain_begin: The maintain_begin of this InstanceModReq.
-        :type: str
+        :type maintain_begin: str
         """
         self._maintain_begin = maintain_begin
 
@@ -122,7 +135,7 @@ class InstanceModReq:
         '维护时间窗结束时间。时间格式为 xx:00:00，与维护时间窗开始时间相差4个小时。'  '在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次'。
 
         :param maintain_end: The maintain_end of this InstanceModReq.
-        :type: str
+        :type maintain_end: str
         """
         self._maintain_end = maintain_end
 
@@ -144,7 +157,7 @@ class InstanceModReq:
         实例名称
 
         :param instance_name: The instance_name of this InstanceModReq.
-        :type: str
+        :type instance_name: str
         """
         self._instance_name = instance_name
 
@@ -166,7 +179,7 @@ class InstanceModReq:
         指定实例所属的安全组。  获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体方法请参见《虚拟私有云服务API参考》的“查询安全组列表”章节。。 
 
         :param security_group_id: The security_group_id of this InstanceModReq.
-        :type: str
+        :type security_group_id: str
         """
         self._security_group_id = security_group_id
 

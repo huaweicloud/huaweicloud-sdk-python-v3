@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListProjectWorkHoursRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ListProjectWorkHoursRequestBody:
     }
 
     def __init__(self, project_ids=None, user_ids=None, work_hours_types=None, work_hours_dates=None, begin_time=None, end_time=None, offset=None, limit=None):
-        """ListProjectWorkHoursRequestBody - a model defined in huaweicloud sdk"""
+        """ListProjectWorkHoursRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param project_ids: 查询的项目id列表
+        :type project_ids: list[str]
+        :param user_ids: 查询的用户id列表
+        :type user_ids: list[str]
+        :param work_hours_types: 工时类型，以逗号分隔,21:研发设计,22:后端开发,23:前端开发(Web),24:前端开发(小程序),25:前端开发(App),26:测试验证,27:缺陷修复,28:UI设计,29:会议,30:公共事务,31:培训,32:研究,33:其它,34:调休请假
+        :type work_hours_types: str
+        :param work_hours_dates: 工时日期，以逗号分隔，年-月-日
+        :type work_hours_dates: str
+        :param begin_time: 工时开始日期，年-月-日
+        :type begin_time: str
+        :param end_time: 工时结束日期，年-月-日
+        :type end_time: str
+        :param offset: 偏移量,offset是limit的整数倍，limit&#x3D;10,offset&#x3D;0,10,20...
+        :type offset: int
+        :param limit: 每页显示数量，每页最多显示100条
+        :type limit: int
+        """
         
         
 
@@ -91,7 +110,7 @@ class ListProjectWorkHoursRequestBody:
         查询的项目id列表
 
         :param project_ids: The project_ids of this ListProjectWorkHoursRequestBody.
-        :type: list[str]
+        :type project_ids: list[str]
         """
         self._project_ids = project_ids
 
@@ -113,7 +132,7 @@ class ListProjectWorkHoursRequestBody:
         查询的用户id列表
 
         :param user_ids: The user_ids of this ListProjectWorkHoursRequestBody.
-        :type: list[str]
+        :type user_ids: list[str]
         """
         self._user_ids = user_ids
 
@@ -135,7 +154,7 @@ class ListProjectWorkHoursRequestBody:
         工时类型，以逗号分隔,21:研发设计,22:后端开发,23:前端开发(Web),24:前端开发(小程序),25:前端开发(App),26:测试验证,27:缺陷修复,28:UI设计,29:会议,30:公共事务,31:培训,32:研究,33:其它,34:调休请假
 
         :param work_hours_types: The work_hours_types of this ListProjectWorkHoursRequestBody.
-        :type: str
+        :type work_hours_types: str
         """
         self._work_hours_types = work_hours_types
 
@@ -157,7 +176,7 @@ class ListProjectWorkHoursRequestBody:
         工时日期，以逗号分隔，年-月-日
 
         :param work_hours_dates: The work_hours_dates of this ListProjectWorkHoursRequestBody.
-        :type: str
+        :type work_hours_dates: str
         """
         self._work_hours_dates = work_hours_dates
 
@@ -179,7 +198,7 @@ class ListProjectWorkHoursRequestBody:
         工时开始日期，年-月-日
 
         :param begin_time: The begin_time of this ListProjectWorkHoursRequestBody.
-        :type: str
+        :type begin_time: str
         """
         self._begin_time = begin_time
 
@@ -201,7 +220,7 @@ class ListProjectWorkHoursRequestBody:
         工时结束日期，年-月-日
 
         :param end_time: The end_time of this ListProjectWorkHoursRequestBody.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -223,7 +242,7 @@ class ListProjectWorkHoursRequestBody:
         偏移量,offset是limit的整数倍，limit=10,offset=0,10,20...
 
         :param offset: The offset of this ListProjectWorkHoursRequestBody.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -245,7 +264,7 @@ class ListProjectWorkHoursRequestBody:
         每页显示数量，每页最多显示100条
 
         :param limit: The limit of this ListProjectWorkHoursRequestBody.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

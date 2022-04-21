@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListInstanceTopicsRespTopics:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class ListInstanceTopicsRespTopics:
     }
 
     def __init__(self, policies_only=None, name=None, replication=None, partition=None, retention_time=None, sync_message_flush=None, sync_replication=None, app_id=None, app_name=None, permissions=None, external_configs=None, description=None, sensitive_word=None, topic_type=None):
-        """ListInstanceTopicsRespTopics - a model defined in huaweicloud sdk"""
+        """ListInstanceTopicsRespTopics
+
+        The model defined in huaweicloud sdk
+
+        :param policies_only: 是否只更新策略。
+        :type policies_only: bool
+        :param name: topic名称。
+        :type name: str
+        :param replication: 副本数，配置数据的可靠性。
+        :type replication: int
+        :param partition: topic分区数，设置消费的并发数。
+        :type partition: int
+        :param retention_time: 消息老化时间。
+        :type retention_time: int
+        :param sync_message_flush: 是否使用同步落盘。默认值为false。同步落盘会导致性能降低。
+        :type sync_message_flush: bool
+        :param sync_replication: 是否开启同步复制，开启后，客户端生产消息时相应的也要设置acks&#x3D;-1，否则不生效,默认关闭。
+        :type sync_replication: bool
+        :param app_id: 应用ID。
+        :type app_id: str
+        :param app_name: 应用名称。
+        :type app_name: str
+        :param permissions: 允许操作的权限。
+        :type permissions: list[str]
+        :param external_configs: 其他配置。
+        :type external_configs: object
+        :param description: 描述。
+        :type description: str
+        :param sensitive_word: 敏感字段。
+        :type sensitive_word: str
+        :param topic_type: topic类型。
+        :type topic_type: int
+        """
         
         
 
@@ -123,7 +154,7 @@ class ListInstanceTopicsRespTopics:
         是否只更新策略。
 
         :param policies_only: The policies_only of this ListInstanceTopicsRespTopics.
-        :type: bool
+        :type policies_only: bool
         """
         self._policies_only = policies_only
 
@@ -145,7 +176,7 @@ class ListInstanceTopicsRespTopics:
         topic名称。
 
         :param name: The name of this ListInstanceTopicsRespTopics.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -167,7 +198,7 @@ class ListInstanceTopicsRespTopics:
         副本数，配置数据的可靠性。
 
         :param replication: The replication of this ListInstanceTopicsRespTopics.
-        :type: int
+        :type replication: int
         """
         self._replication = replication
 
@@ -189,7 +220,7 @@ class ListInstanceTopicsRespTopics:
         topic分区数，设置消费的并发数。
 
         :param partition: The partition of this ListInstanceTopicsRespTopics.
-        :type: int
+        :type partition: int
         """
         self._partition = partition
 
@@ -211,7 +242,7 @@ class ListInstanceTopicsRespTopics:
         消息老化时间。
 
         :param retention_time: The retention_time of this ListInstanceTopicsRespTopics.
-        :type: int
+        :type retention_time: int
         """
         self._retention_time = retention_time
 
@@ -233,7 +264,7 @@ class ListInstanceTopicsRespTopics:
         是否使用同步落盘。默认值为false。同步落盘会导致性能降低。
 
         :param sync_message_flush: The sync_message_flush of this ListInstanceTopicsRespTopics.
-        :type: bool
+        :type sync_message_flush: bool
         """
         self._sync_message_flush = sync_message_flush
 
@@ -255,7 +286,7 @@ class ListInstanceTopicsRespTopics:
         是否开启同步复制，开启后，客户端生产消息时相应的也要设置acks=-1，否则不生效,默认关闭。
 
         :param sync_replication: The sync_replication of this ListInstanceTopicsRespTopics.
-        :type: bool
+        :type sync_replication: bool
         """
         self._sync_replication = sync_replication
 
@@ -277,7 +308,7 @@ class ListInstanceTopicsRespTopics:
         应用ID。
 
         :param app_id: The app_id of this ListInstanceTopicsRespTopics.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -299,7 +330,7 @@ class ListInstanceTopicsRespTopics:
         应用名称。
 
         :param app_name: The app_name of this ListInstanceTopicsRespTopics.
-        :type: str
+        :type app_name: str
         """
         self._app_name = app_name
 
@@ -321,7 +352,7 @@ class ListInstanceTopicsRespTopics:
         允许操作的权限。
 
         :param permissions: The permissions of this ListInstanceTopicsRespTopics.
-        :type: list[str]
+        :type permissions: list[str]
         """
         self._permissions = permissions
 
@@ -343,7 +374,7 @@ class ListInstanceTopicsRespTopics:
         其他配置。
 
         :param external_configs: The external_configs of this ListInstanceTopicsRespTopics.
-        :type: object
+        :type external_configs: object
         """
         self._external_configs = external_configs
 
@@ -365,7 +396,7 @@ class ListInstanceTopicsRespTopics:
         描述。
 
         :param description: The description of this ListInstanceTopicsRespTopics.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -387,7 +418,7 @@ class ListInstanceTopicsRespTopics:
         敏感字段。
 
         :param sensitive_word: The sensitive_word of this ListInstanceTopicsRespTopics.
-        :type: str
+        :type sensitive_word: str
         """
         self._sensitive_word = sensitive_word
 
@@ -409,7 +440,7 @@ class ListInstanceTopicsRespTopics:
         topic类型。
 
         :param topic_type: The topic_type of this ListInstanceTopicsRespTopics.
-        :type: int
+        :type topic_type: int
         """
         self._topic_type = topic_type
 

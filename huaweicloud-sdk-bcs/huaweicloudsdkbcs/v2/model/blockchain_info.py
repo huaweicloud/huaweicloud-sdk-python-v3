@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BlockchainInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BlockchainInfo:
     }
 
     def __init__(self, id=None, name=None):
-        """BlockchainInfo - a model defined in huaweicloud sdk"""
+        """BlockchainInfo
+
+        The model defined in huaweicloud sdk
+
+        :param id: 服务实例ID
+        :type id: str
+        :param name: 服务实例名
+        :type name: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class BlockchainInfo:
         服务实例ID
 
         :param id: The id of this BlockchainInfo.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -85,7 +92,7 @@ class BlockchainInfo:
         服务实例名
 
         :param name: The name of this BlockchainInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 

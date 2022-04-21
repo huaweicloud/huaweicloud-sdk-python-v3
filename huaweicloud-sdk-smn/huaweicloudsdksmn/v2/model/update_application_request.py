@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateApplicationRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateApplicationRequest:
     }
 
     def __init__(self, application_urn=None, body=None):
-        """UpdateApplicationRequest - a model defined in huaweicloud sdk"""
+        """UpdateApplicationRequest
+
+        The model defined in huaweicloud sdk
+
+        :param application_urn: Application的唯一资源标识，可通过[查询Application](https://support.huaweicloud.com/api-smn/ListApplications.html)获取该标识。
+        :type application_urn: str
+        :param body: Body of the UpdateApplicationRequest
+        :type body: :class:`huaweicloudsdksmn.v2.UpdateApplicationRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateApplicationRequest:
         Application的唯一资源标识，可通过[查询Application](https://support.huaweicloud.com/api-smn/ListApplications.html)获取该标识。
 
         :param application_urn: The application_urn of this UpdateApplicationRequest.
-        :type: str
+        :type application_urn: str
         """
         self._application_urn = application_urn
 
@@ -72,7 +79,7 @@ class UpdateApplicationRequest:
 
 
         :return: The body of this UpdateApplicationRequest.
-        :rtype: UpdateApplicationRequestBody
+        :rtype: :class:`huaweicloudsdksmn.v2.UpdateApplicationRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateApplicationRequest:
 
 
         :param body: The body of this UpdateApplicationRequest.
-        :type: UpdateApplicationRequestBody
+        :type body: :class:`huaweicloudsdksmn.v2.UpdateApplicationRequestBody`
         """
         self._body = body
 

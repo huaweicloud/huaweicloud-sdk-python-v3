@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CertificateBundingHostBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CertificateBundingHostBody:
     }
 
     def __init__(self, id=None, hostname=None, waf_type=None):
-        """CertificateBundingHostBody - a model defined in huaweicloud sdk"""
+        """CertificateBundingHostBody
+
+        The model defined in huaweicloud sdk
+
+        :param id: 域名id
+        :type id: str
+        :param hostname: 域名
+        :type hostname: str
+        :param waf_type: waf模式（分为云模式：cloud,独享模式：premium）
+        :type waf_type: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class CertificateBundingHostBody:
         域名id
 
         :param id: The id of this CertificateBundingHostBody.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -90,7 +99,7 @@ class CertificateBundingHostBody:
         域名
 
         :param hostname: The hostname of this CertificateBundingHostBody.
-        :type: str
+        :type hostname: str
         """
         self._hostname = hostname
 
@@ -112,7 +121,7 @@ class CertificateBundingHostBody:
         waf模式（分为云模式：cloud,独享模式：premium）
 
         :param waf_type: The waf_type of this CertificateBundingHostBody.
-        :type: str
+        :type waf_type: str
         """
         self._waf_type = waf_type
 

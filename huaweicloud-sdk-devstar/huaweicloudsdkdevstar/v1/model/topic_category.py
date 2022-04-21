@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TopicCategory:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class TopicCategory:
     }
 
     def __init__(self, topic_id=None, topic_name=None, category_id=None, category_name=None):
-        """TopicCategory - a model defined in huaweicloud sdk"""
+        """TopicCategory
+
+        The model defined in huaweicloud sdk
+
+        :param topic_id: topic的id。
+        :type topic_id: str
+        :param topic_name: topic的名称。
+        :type topic_name: str
+        :param category_id: topic对应的类别的id。
+        :type category_id: str
+        :param category_name: topic对应的类别的名称。
+        :type category_name: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class TopicCategory:
         topic的id。
 
         :param topic_id: The topic_id of this TopicCategory.
-        :type: str
+        :type topic_id: str
         """
         self._topic_id = topic_id
 
@@ -95,7 +106,7 @@ class TopicCategory:
         topic的名称。
 
         :param topic_name: The topic_name of this TopicCategory.
-        :type: str
+        :type topic_name: str
         """
         self._topic_name = topic_name
 
@@ -117,7 +128,7 @@ class TopicCategory:
         topic对应的类别的id。
 
         :param category_id: The category_id of this TopicCategory.
-        :type: str
+        :type category_id: str
         """
         self._category_id = category_id
 
@@ -139,7 +150,7 @@ class TopicCategory:
         topic对应的类别的名称。
 
         :param category_name: The category_name of this TopicCategory.
-        :type: str
+        :type category_name: str
         """
         self._category_name = category_name
 

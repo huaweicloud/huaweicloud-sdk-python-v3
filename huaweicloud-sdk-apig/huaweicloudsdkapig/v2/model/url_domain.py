@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UrlDomain:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class UrlDomain:
     }
 
     def __init__(self, id=None, domain=None, cname_status=None, ssl_id=None, ssl_name=None, min_ssl_version=None):
-        """UrlDomain - a model defined in huaweicloud sdk"""
+        """UrlDomain
+
+        The model defined in huaweicloud sdk
+
+        :param id: 域名编号
+        :type id: str
+        :param domain: 访问域名
+        :type domain: str
+        :param cname_status: 域名cname状态： - 1：未解析 - 2：解析中 - 3：解析成功 - 4：解析失败
+        :type cname_status: int
+        :param ssl_id: SSL证书编号
+        :type ssl_id: str
+        :param ssl_name: SSL证书名称
+        :type ssl_name: str
+        :param min_ssl_version: 最小ssl协议版本号。支持TLSv1.1或TLSv1.2
+        :type min_ssl_version: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class UrlDomain:
         域名编号
 
         :param id: The id of this UrlDomain.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -105,7 +120,7 @@ class UrlDomain:
         访问域名
 
         :param domain: The domain of this UrlDomain.
-        :type: str
+        :type domain: str
         """
         self._domain = domain
 
@@ -127,7 +142,7 @@ class UrlDomain:
         域名cname状态： - 1：未解析 - 2：解析中 - 3：解析成功 - 4：解析失败
 
         :param cname_status: The cname_status of this UrlDomain.
-        :type: int
+        :type cname_status: int
         """
         self._cname_status = cname_status
 
@@ -149,7 +164,7 @@ class UrlDomain:
         SSL证书编号
 
         :param ssl_id: The ssl_id of this UrlDomain.
-        :type: str
+        :type ssl_id: str
         """
         self._ssl_id = ssl_id
 
@@ -171,7 +186,7 @@ class UrlDomain:
         SSL证书名称
 
         :param ssl_name: The ssl_name of this UrlDomain.
-        :type: str
+        :type ssl_name: str
         """
         self._ssl_name = ssl_name
 
@@ -193,7 +208,7 @@ class UrlDomain:
         最小ssl协议版本号。支持TLSv1.1或TLSv1.2
 
         :param min_ssl_version: The min_ssl_version of this UrlDomain.
-        :type: str
+        :type min_ssl_version: str
         """
         self._min_ssl_version = min_ssl_version
 

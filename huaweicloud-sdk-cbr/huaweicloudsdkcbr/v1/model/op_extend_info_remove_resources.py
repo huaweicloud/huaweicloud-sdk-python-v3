@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OpExtendInfoRemoveResources:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class OpExtendInfoRemoveResources:
     }
 
     def __init__(self, fail_count=None, total_count=None, resources=None):
-        """OpExtendInfoRemoveResources - a model defined in huaweicloud sdk"""
+        """OpExtendInfoRemoveResources
+
+        The model defined in huaweicloud sdk
+
+        :param fail_count: 删除失败的资源数量
+        :type fail_count: int
+        :param total_count: 删除的备份数量
+        :type total_count: int
+        :param resources: 
+        :type resources: list[:class:`huaweicloudsdkcbr.v1.Resource`]
+        """
         
         
 
@@ -68,7 +77,7 @@ class OpExtendInfoRemoveResources:
         删除失败的资源数量
 
         :param fail_count: The fail_count of this OpExtendInfoRemoveResources.
-        :type: int
+        :type fail_count: int
         """
         self._fail_count = fail_count
 
@@ -90,7 +99,7 @@ class OpExtendInfoRemoveResources:
         删除的备份数量
 
         :param total_count: The total_count of this OpExtendInfoRemoveResources.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 
@@ -101,7 +110,7 @@ class OpExtendInfoRemoveResources:
         
 
         :return: The resources of this OpExtendInfoRemoveResources.
-        :rtype: list[Resource]
+        :rtype: list[:class:`huaweicloudsdkcbr.v1.Resource`]
         """
         return self._resources
 
@@ -112,7 +121,7 @@ class OpExtendInfoRemoveResources:
         
 
         :param resources: The resources of this OpExtendInfoRemoveResources.
-        :type: list[Resource]
+        :type resources: list[:class:`huaweicloudsdkcbr.v1.Resource`]
         """
         self._resources = resources
 

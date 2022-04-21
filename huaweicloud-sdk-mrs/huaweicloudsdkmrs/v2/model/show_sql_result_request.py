@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowSqlResultRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowSqlResultRequest:
     }
 
     def __init__(self, cluster_id=None, sql_id=None):
-        """ShowSqlResultRequest - a model defined in huaweicloud sdk"""
+        """ShowSqlResultRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 集群ID。获取方法，请参见[获取集群ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
+        :type cluster_id: str
+        :param sql_id: SQL的执行ID，即提交SQL语句返回结果中的sql_id。
+        :type sql_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ShowSqlResultRequest:
         集群ID。获取方法，请参见[获取集群ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
 
         :param cluster_id: The cluster_id of this ShowSqlResultRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -83,7 +90,7 @@ class ShowSqlResultRequest:
         SQL的执行ID，即提交SQL语句返回结果中的sql_id。
 
         :param sql_id: The sql_id of this ShowSqlResultRequest.
-        :type: str
+        :type sql_id: str
         """
         self._sql_id = sql_id
 

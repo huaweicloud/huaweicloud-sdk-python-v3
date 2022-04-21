@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdatePoolOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class UpdatePoolOption:
     }
 
     def __init__(self, admin_state_up=None, description=None, lb_algorithm=None, name=None, session_persistence=None, slow_start=None, member_deletion_protection_enable=None):
-        """UpdatePoolOption - a model defined in huaweicloud sdk"""
+        """UpdatePoolOption
+
+        The model defined in huaweicloud sdk
+
+        :param admin_state_up: 后端云服务器组的管理状态，只支持更新为true。  [不支持该字段，请勿使用。](tag:dt,dt_test)
+        :type admin_state_up: bool
+        :param description: 后端云服务器组的描述信息。
+        :type description: str
+        :param lb_algorithm: 后端云服务器组的负载均衡算法。  取值： 1、ROUND_ROBIN：加权轮询算法。 2、LEAST_CONNECTIONS：加权最少连接算法。 3、SOURCE_IP：源IP算法。 4、QUIC_CID：连接ID算法。  使用说明： - 当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。 - 只有pool的protocol为QUIC时，才支持QUIC_CID算法。
+        :type lb_algorithm: str
+        :param name: 后端云服务器组的名称。
+        :type name: str
+        :param session_persistence: 
+        :type session_persistence: :class:`huaweicloudsdkelb.v3.UpdatePoolSessionPersistenceOption`
+        :param slow_start: 
+        :type slow_start: :class:`huaweicloudsdkelb.v3.UpdatePoolSlowStartOption`
+        :param member_deletion_protection_enable: 是否开启删除保护。取值：false不开启，true开启。 &gt; 退场时需要先关闭所有资源的删除保护开关。
+        :type member_deletion_protection_enable: bool
+        """
         
         
 
@@ -88,7 +105,7 @@ class UpdatePoolOption:
         后端云服务器组的管理状态，只支持更新为true。  [不支持该字段，请勿使用。](tag:dt,dt_test)
 
         :param admin_state_up: The admin_state_up of this UpdatePoolOption.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 
@@ -110,7 +127,7 @@ class UpdatePoolOption:
         后端云服务器组的描述信息。
 
         :param description: The description of this UpdatePoolOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -132,7 +149,7 @@ class UpdatePoolOption:
         后端云服务器组的负载均衡算法。  取值： 1、ROUND_ROBIN：加权轮询算法。 2、LEAST_CONNECTIONS：加权最少连接算法。 3、SOURCE_IP：源IP算法。 4、QUIC_CID：连接ID算法。  使用说明： - 当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。 - 只有pool的protocol为QUIC时，才支持QUIC_CID算法。
 
         :param lb_algorithm: The lb_algorithm of this UpdatePoolOption.
-        :type: str
+        :type lb_algorithm: str
         """
         self._lb_algorithm = lb_algorithm
 
@@ -154,7 +171,7 @@ class UpdatePoolOption:
         后端云服务器组的名称。
 
         :param name: The name of this UpdatePoolOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -164,7 +181,7 @@ class UpdatePoolOption:
 
 
         :return: The session_persistence of this UpdatePoolOption.
-        :rtype: UpdatePoolSessionPersistenceOption
+        :rtype: :class:`huaweicloudsdkelb.v3.UpdatePoolSessionPersistenceOption`
         """
         return self._session_persistence
 
@@ -174,7 +191,7 @@ class UpdatePoolOption:
 
 
         :param session_persistence: The session_persistence of this UpdatePoolOption.
-        :type: UpdatePoolSessionPersistenceOption
+        :type session_persistence: :class:`huaweicloudsdkelb.v3.UpdatePoolSessionPersistenceOption`
         """
         self._session_persistence = session_persistence
 
@@ -184,7 +201,7 @@ class UpdatePoolOption:
 
 
         :return: The slow_start of this UpdatePoolOption.
-        :rtype: UpdatePoolSlowStartOption
+        :rtype: :class:`huaweicloudsdkelb.v3.UpdatePoolSlowStartOption`
         """
         return self._slow_start
 
@@ -194,7 +211,7 @@ class UpdatePoolOption:
 
 
         :param slow_start: The slow_start of this UpdatePoolOption.
-        :type: UpdatePoolSlowStartOption
+        :type slow_start: :class:`huaweicloudsdkelb.v3.UpdatePoolSlowStartOption`
         """
         self._slow_start = slow_start
 
@@ -216,7 +233,7 @@ class UpdatePoolOption:
         是否开启删除保护。取值：false不开启，true开启。 > 退场时需要先关闭所有资源的删除保护开关。
 
         :param member_deletion_protection_enable: The member_deletion_protection_enable of this UpdatePoolOption.
-        :type: bool
+        :type member_deletion_protection_enable: bool
         """
         self._member_deletion_protection_enable = member_deletion_protection_enable
 

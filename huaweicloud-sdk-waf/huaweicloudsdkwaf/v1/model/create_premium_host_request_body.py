@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreatePremiumHostRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class CreatePremiumHostRequestBody:
     }
 
     def __init__(self, certificateid=None, certificatename=None, hostname=None, proxy=None, policyid=None, server=None):
-        """CreatePremiumHostRequestBody - a model defined in huaweicloud sdk"""
+        """CreatePremiumHostRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param certificateid: 证书id，通过查询证书列表接口（ListCertificates）接口获取证书id   - 对外协议为HTTP时不需要填写   - 对外协议HTTPS时为必填参数
+        :type certificateid: str
+        :param certificatename: 证书名   - 对外协议为HTTP时不需要填写   - 对外协议HTTPS时为必填参数
+        :type certificatename: str
+        :param hostname: 防护域名或IP（可带端口）
+        :type hostname: str
+        :param proxy: 是否使用代理
+        :type proxy: bool
+        :param policyid: 防护域名初始绑定的策略ID,可以通过策略名称调用查询防护策略列表（ListPolicy）接口查询到对应的策略id
+        :type policyid: str
+        :param server: 服务器配置
+        :type server: list[:class:`huaweicloudsdkwaf.v1.PremiumWafServer`]
+        """
         
         
 
@@ -80,7 +95,7 @@ class CreatePremiumHostRequestBody:
         证书id，通过查询证书列表接口（ListCertificates）接口获取证书id   - 对外协议为HTTP时不需要填写   - 对外协议HTTPS时为必填参数
 
         :param certificateid: The certificateid of this CreatePremiumHostRequestBody.
-        :type: str
+        :type certificateid: str
         """
         self._certificateid = certificateid
 
@@ -102,7 +117,7 @@ class CreatePremiumHostRequestBody:
         证书名   - 对外协议为HTTP时不需要填写   - 对外协议HTTPS时为必填参数
 
         :param certificatename: The certificatename of this CreatePremiumHostRequestBody.
-        :type: str
+        :type certificatename: str
         """
         self._certificatename = certificatename
 
@@ -124,7 +139,7 @@ class CreatePremiumHostRequestBody:
         防护域名或IP（可带端口）
 
         :param hostname: The hostname of this CreatePremiumHostRequestBody.
-        :type: str
+        :type hostname: str
         """
         self._hostname = hostname
 
@@ -146,7 +161,7 @@ class CreatePremiumHostRequestBody:
         是否使用代理
 
         :param proxy: The proxy of this CreatePremiumHostRequestBody.
-        :type: bool
+        :type proxy: bool
         """
         self._proxy = proxy
 
@@ -168,7 +183,7 @@ class CreatePremiumHostRequestBody:
         防护域名初始绑定的策略ID,可以通过策略名称调用查询防护策略列表（ListPolicy）接口查询到对应的策略id
 
         :param policyid: The policyid of this CreatePremiumHostRequestBody.
-        :type: str
+        :type policyid: str
         """
         self._policyid = policyid
 
@@ -179,7 +194,7 @@ class CreatePremiumHostRequestBody:
         服务器配置
 
         :return: The server of this CreatePremiumHostRequestBody.
-        :rtype: list[PremiumWafServer]
+        :rtype: list[:class:`huaweicloudsdkwaf.v1.PremiumWafServer`]
         """
         return self._server
 
@@ -190,7 +205,7 @@ class CreatePremiumHostRequestBody:
         服务器配置
 
         :param server: The server of this CreatePremiumHostRequestBody.
-        :type: list[PremiumWafServer]
+        :type server: list[:class:`huaweicloudsdkwaf.v1.PremiumWafServer`]
         """
         self._server = server
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateDataLevelCompareReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class CreateDataLevelCompareReq:
     }
 
     def __init__(self, conflict_policy=None, compare_type=None, compare_mode=None, start_time=None, compare_object_infos=None, compare_object_infos_with_token=None):
-        """CreateDataLevelCompareReq - a model defined in huaweicloud sdk"""
+        """CreateDataLevelCompareReq
+
+        The model defined in huaweicloud sdk
+
+        :param conflict_policy: 一个任务只允许有一个未完成的数据级对比任务，该字段决定对未完成数据级对比任务的处理方式。cancel-取消后重新创建,keep-保持未完成的不再创建。
+        :type conflict_policy: str
+        :param compare_type: 数据级对比类型，lines-行对比,contents-内容对比。
+        :type compare_type: str
+        :param compare_mode: 数据级对比模式，取值为空时需要在compare_object_infos或者compare_object_infos_with_token传对象信息，quick_comparison-快速对比，需要加入该功能的白名单才能使用。
+        :type compare_mode: str
+        :param start_time: 对比任务启动时间，取值为空代表立即启动。
+        :type start_time: str
+        :param compare_object_infos: 数据级对比的对象。非“快速对比”模式时，compare_object_infos和compare_object_infos_with_token根据链路二选一传值，不允许都为空。
+        :type compare_object_infos: list[:class:`huaweicloudsdkdrs.v3.CompareObjectInfo`]
+        :param compare_object_infos_with_token: 数据级对比的对象（Cassandra灾备专用，带token信息）。非“快速对比”模式时，compare_object_infos和compare_object_infos_with_token根据链路二选一传值，不允许都为空。
+        :type compare_object_infos_with_token: list[:class:`huaweicloudsdkdrs.v3.CompareObjectInfoWithToken`]
+        """
         
         
 
@@ -81,7 +96,7 @@ class CreateDataLevelCompareReq:
         一个任务只允许有一个未完成的数据级对比任务，该字段决定对未完成数据级对比任务的处理方式。cancel-取消后重新创建,keep-保持未完成的不再创建。
 
         :param conflict_policy: The conflict_policy of this CreateDataLevelCompareReq.
-        :type: str
+        :type conflict_policy: str
         """
         self._conflict_policy = conflict_policy
 
@@ -103,7 +118,7 @@ class CreateDataLevelCompareReq:
         数据级对比类型，lines-行对比,contents-内容对比。
 
         :param compare_type: The compare_type of this CreateDataLevelCompareReq.
-        :type: str
+        :type compare_type: str
         """
         self._compare_type = compare_type
 
@@ -125,7 +140,7 @@ class CreateDataLevelCompareReq:
         数据级对比模式，取值为空时需要在compare_object_infos或者compare_object_infos_with_token传对象信息，quick_comparison-快速对比，需要加入该功能的白名单才能使用。
 
         :param compare_mode: The compare_mode of this CreateDataLevelCompareReq.
-        :type: str
+        :type compare_mode: str
         """
         self._compare_mode = compare_mode
 
@@ -147,7 +162,7 @@ class CreateDataLevelCompareReq:
         对比任务启动时间，取值为空代表立即启动。
 
         :param start_time: The start_time of this CreateDataLevelCompareReq.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -158,7 +173,7 @@ class CreateDataLevelCompareReq:
         数据级对比的对象。非“快速对比”模式时，compare_object_infos和compare_object_infos_with_token根据链路二选一传值，不允许都为空。
 
         :return: The compare_object_infos of this CreateDataLevelCompareReq.
-        :rtype: list[CompareObjectInfo]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.CompareObjectInfo`]
         """
         return self._compare_object_infos
 
@@ -169,7 +184,7 @@ class CreateDataLevelCompareReq:
         数据级对比的对象。非“快速对比”模式时，compare_object_infos和compare_object_infos_with_token根据链路二选一传值，不允许都为空。
 
         :param compare_object_infos: The compare_object_infos of this CreateDataLevelCompareReq.
-        :type: list[CompareObjectInfo]
+        :type compare_object_infos: list[:class:`huaweicloudsdkdrs.v3.CompareObjectInfo`]
         """
         self._compare_object_infos = compare_object_infos
 
@@ -180,7 +195,7 @@ class CreateDataLevelCompareReq:
         数据级对比的对象（Cassandra灾备专用，带token信息）。非“快速对比”模式时，compare_object_infos和compare_object_infos_with_token根据链路二选一传值，不允许都为空。
 
         :return: The compare_object_infos_with_token of this CreateDataLevelCompareReq.
-        :rtype: list[CompareObjectInfoWithToken]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.CompareObjectInfoWithToken`]
         """
         return self._compare_object_infos_with_token
 
@@ -191,7 +206,7 @@ class CreateDataLevelCompareReq:
         数据级对比的对象（Cassandra灾备专用，带token信息）。非“快速对比”模式时，compare_object_infos和compare_object_infos_with_token根据链路二选一传值，不允许都为空。
 
         :param compare_object_infos_with_token: The compare_object_infos_with_token of this CreateDataLevelCompareReq.
-        :type: list[CompareObjectInfoWithToken]
+        :type compare_object_infos_with_token: list[:class:`huaweicloudsdkdrs.v3.CompareObjectInfoWithToken`]
         """
         self._compare_object_infos_with_token = compare_object_infos_with_token
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchInviteMembersToChannelRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class BatchInviteMembersToChannelRequestBody:
     }
 
     def __init__(self, bcs_id=None, channel_name=None, invitor_username=None, invited_userinfo=None):
-        """BatchInviteMembersToChannelRequestBody - a model defined in huaweicloud sdk"""
+        """BatchInviteMembersToChannelRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param bcs_id: 邀请实例id
+        :type bcs_id: str
+        :param channel_name: 邀请加入的通道名
+        :type channel_name: str
+        :param invitor_username: 发出邀请的租户名
+        :type invitor_username: str
+        :param invited_userinfo: 被邀请的用户列表
+        :type invited_userinfo: list[:class:`huaweicloudsdkbcs.v2.InvitedDomain`]
+        """
         
         
 
@@ -70,7 +81,7 @@ class BatchInviteMembersToChannelRequestBody:
         邀请实例id
 
         :param bcs_id: The bcs_id of this BatchInviteMembersToChannelRequestBody.
-        :type: str
+        :type bcs_id: str
         """
         self._bcs_id = bcs_id
 
@@ -92,7 +103,7 @@ class BatchInviteMembersToChannelRequestBody:
         邀请加入的通道名
 
         :param channel_name: The channel_name of this BatchInviteMembersToChannelRequestBody.
-        :type: str
+        :type channel_name: str
         """
         self._channel_name = channel_name
 
@@ -114,7 +125,7 @@ class BatchInviteMembersToChannelRequestBody:
         发出邀请的租户名
 
         :param invitor_username: The invitor_username of this BatchInviteMembersToChannelRequestBody.
-        :type: str
+        :type invitor_username: str
         """
         self._invitor_username = invitor_username
 
@@ -125,7 +136,7 @@ class BatchInviteMembersToChannelRequestBody:
         被邀请的用户列表
 
         :return: The invited_userinfo of this BatchInviteMembersToChannelRequestBody.
-        :rtype: list[InvitedDomain]
+        :rtype: list[:class:`huaweicloudsdkbcs.v2.InvitedDomain`]
         """
         return self._invited_userinfo
 
@@ -136,7 +147,7 @@ class BatchInviteMembersToChannelRequestBody:
         被邀请的用户列表
 
         :param invited_userinfo: The invited_userinfo of this BatchInviteMembersToChannelRequestBody.
-        :type: list[InvitedDomain]
+        :type invited_userinfo: list[:class:`huaweicloudsdkbcs.v2.InvitedDomain`]
         """
         self._invited_userinfo = invited_userinfo
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AppCallbacks:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AppCallbacks:
     }
 
     def __init__(self, push_callback=None, record_callback=None):
-        """AppCallbacks - a model defined in huaweicloud sdk"""
+        """AppCallbacks
+
+        The model defined in huaweicloud sdk
+
+        :param push_callback: 
+        :type push_callback: :class:`huaweicloudsdkcloudrtc.v2.AppCallbackUrl`
+        :param record_callback: 
+        :type record_callback: :class:`huaweicloudsdkcloudrtc.v2.AppCallbackUrl`
+        """
         
         
 
@@ -51,7 +58,7 @@ class AppCallbacks:
 
 
         :return: The push_callback of this AppCallbacks.
-        :rtype: AppCallbackUrl
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.AppCallbackUrl`
         """
         return self._push_callback
 
@@ -61,7 +68,7 @@ class AppCallbacks:
 
 
         :param push_callback: The push_callback of this AppCallbacks.
-        :type: AppCallbackUrl
+        :type push_callback: :class:`huaweicloudsdkcloudrtc.v2.AppCallbackUrl`
         """
         self._push_callback = push_callback
 
@@ -71,7 +78,7 @@ class AppCallbacks:
 
 
         :return: The record_callback of this AppCallbacks.
-        :rtype: AppCallbackUrl
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.AppCallbackUrl`
         """
         return self._record_callback
 
@@ -81,7 +88,7 @@ class AppCallbacks:
 
 
         :param record_callback: The record_callback of this AppCallbacks.
-        :type: AppCallbackUrl
+        :type record_callback: :class:`huaweicloudsdkcloudrtc.v2.AppCallbackUrl`
         """
         self._record_callback = record_callback
 

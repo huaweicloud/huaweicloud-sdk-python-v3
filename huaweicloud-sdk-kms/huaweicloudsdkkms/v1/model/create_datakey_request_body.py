@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateDatakeyRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class CreateDatakeyRequestBody:
     }
 
     def __init__(self, key_id=None, encryption_context=None, key_spec=None, datakey_length=None, sequence=None):
-        """CreateDatakeyRequestBody - a model defined in huaweicloud sdk"""
+        """CreateDatakeyRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param key_id: 密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
+        :type key_id: str
+        :param encryption_context: 一系列key-value键值对，用于记录资源上下文信息，用于保护数据的完整性，不应包含敏感信息，最大长度为8192。 当在加密时指定了该参数时，解密密文时，需要传入相同的参数，才能正确的解密。 例如：{\&quot;Key1\&quot;:\&quot;Value1\&quot;,\&quot;Key2\&quot;:\&quot;Value2\&quot;}
+        :type encryption_context: object
+        :param key_spec: 指定生成的密钥bit位长度。有效值：AES_256、AES_128。  - AES_256：表示256比特的对称密钥。  - AES_128：表示128比特的对称密钥。 说明：  datakey_length和key_spec二选一。   - 若datakey_length和key_spec都为空，默认生成256bit的密钥。   - 若datakey_length和key_spec都指定了值，仅datakey_length生效。
+        :type key_spec: str
+        :param datakey_length: 密钥bit位长度。取值为8的倍数，取值范围为8~8192。 说明：  datakey_length和key_spec二选一。   - 若datakey_length和key_spec都为空，默认生成256bit的密钥。   - 若datakey_length和key_spec都指定了值，仅datakey_length生效。
+        :type datakey_length: str
+        :param sequence: 请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
+        :type sequence: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class CreateDatakeyRequestBody:
         密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
 
         :param key_id: The key_id of this CreateDatakeyRequestBody.
-        :type: str
+        :type key_id: str
         """
         self._key_id = key_id
 
@@ -100,7 +113,7 @@ class CreateDatakeyRequestBody:
         一系列key-value键值对，用于记录资源上下文信息，用于保护数据的完整性，不应包含敏感信息，最大长度为8192。 当在加密时指定了该参数时，解密密文时，需要传入相同的参数，才能正确的解密。 例如：{\"Key1\":\"Value1\",\"Key2\":\"Value2\"}
 
         :param encryption_context: The encryption_context of this CreateDatakeyRequestBody.
-        :type: object
+        :type encryption_context: object
         """
         self._encryption_context = encryption_context
 
@@ -122,7 +135,7 @@ class CreateDatakeyRequestBody:
         指定生成的密钥bit位长度。有效值：AES_256、AES_128。  - AES_256：表示256比特的对称密钥。  - AES_128：表示128比特的对称密钥。 说明：  datakey_length和key_spec二选一。   - 若datakey_length和key_spec都为空，默认生成256bit的密钥。   - 若datakey_length和key_spec都指定了值，仅datakey_length生效。
 
         :param key_spec: The key_spec of this CreateDatakeyRequestBody.
-        :type: str
+        :type key_spec: str
         """
         self._key_spec = key_spec
 
@@ -144,7 +157,7 @@ class CreateDatakeyRequestBody:
         密钥bit位长度。取值为8的倍数，取值范围为8~8192。 说明：  datakey_length和key_spec二选一。   - 若datakey_length和key_spec都为空，默认生成256bit的密钥。   - 若datakey_length和key_spec都指定了值，仅datakey_length生效。
 
         :param datakey_length: The datakey_length of this CreateDatakeyRequestBody.
-        :type: str
+        :type datakey_length: str
         """
         self._datakey_length = datakey_length
 
@@ -166,7 +179,7 @@ class CreateDatakeyRequestBody:
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
 
         :param sequence: The sequence of this CreateDatakeyRequestBody.
-        :type: str
+        :type sequence: str
         """
         self._sequence = sequence
 

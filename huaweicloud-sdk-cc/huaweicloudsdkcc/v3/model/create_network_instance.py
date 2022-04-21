@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateNetworkInstance:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class CreateNetworkInstance:
     }
 
     def __init__(self, name=None, description=None, type=None, instance_id=None, instance_domain_id=None, project_id=None, region_id=None, cloud_connection_id=None, cidrs=None):
-        """CreateNetworkInstance - a model defined in huaweicloud sdk"""
+        """CreateNetworkInstance
+
+        The model defined in huaweicloud sdk
+
+        :param name: 网络实例的名字。
+        :type name: str
+        :param description: 网络实例的描述。
+        :type description: str
+        :param type: 添加到云连接网络实例的类型。|- VPC：虚拟私有云。 VGW：虚拟网关。 ER：虚拟路由器。
+        :type type: str
+        :param instance_id: 添加到云连接网络实例的ID，VPC或者VGW的ID。
+        :type instance_id: str
+        :param instance_domain_id: VPC或者VGW的账户ID。
+        :type instance_domain_id: str
+        :param project_id: VPC或者VGW的项目ID。
+        :type project_id: str
+        :param region_id: VPC或者VGW的RegionID。
+        :type region_id: str
+        :param cloud_connection_id: 云连接实例ID。
+        :type cloud_connection_id: str
+        :param cidrs: VPC或者VGW发布的网段路由列表，ER场景不需要此字段。
+        :type cidrs: list[str]
+        """
         
         
 
@@ -92,7 +113,7 @@ class CreateNetworkInstance:
         网络实例的名字。
 
         :param name: The name of this CreateNetworkInstance.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -114,7 +135,7 @@ class CreateNetworkInstance:
         网络实例的描述。
 
         :param description: The description of this CreateNetworkInstance.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -136,7 +157,7 @@ class CreateNetworkInstance:
         添加到云连接网络实例的类型。|- VPC：虚拟私有云。 VGW：虚拟网关。 ER：虚拟路由器。
 
         :param type: The type of this CreateNetworkInstance.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -158,7 +179,7 @@ class CreateNetworkInstance:
         添加到云连接网络实例的ID，VPC或者VGW的ID。
 
         :param instance_id: The instance_id of this CreateNetworkInstance.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -180,7 +201,7 @@ class CreateNetworkInstance:
         VPC或者VGW的账户ID。
 
         :param instance_domain_id: The instance_domain_id of this CreateNetworkInstance.
-        :type: str
+        :type instance_domain_id: str
         """
         self._instance_domain_id = instance_domain_id
 
@@ -202,7 +223,7 @@ class CreateNetworkInstance:
         VPC或者VGW的项目ID。
 
         :param project_id: The project_id of this CreateNetworkInstance.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -224,7 +245,7 @@ class CreateNetworkInstance:
         VPC或者VGW的RegionID。
 
         :param region_id: The region_id of this CreateNetworkInstance.
-        :type: str
+        :type region_id: str
         """
         self._region_id = region_id
 
@@ -246,7 +267,7 @@ class CreateNetworkInstance:
         云连接实例ID。
 
         :param cloud_connection_id: The cloud_connection_id of this CreateNetworkInstance.
-        :type: str
+        :type cloud_connection_id: str
         """
         self._cloud_connection_id = cloud_connection_id
 
@@ -268,7 +289,7 @@ class CreateNetworkInstance:
         VPC或者VGW发布的网段路由列表，ER场景不需要此字段。
 
         :param cidrs: The cidrs of this CreateNetworkInstance.
-        :type: list[str]
+        :type cidrs: list[str]
         """
         self._cidrs = cidrs
 

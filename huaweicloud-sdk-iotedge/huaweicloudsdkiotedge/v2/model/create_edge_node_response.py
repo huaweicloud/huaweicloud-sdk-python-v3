@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateEdgeNodeResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class CreateEdgeNodeResponse(SdkResponse):
     }
 
     def __init__(self, edge_node_id=None, name=None, instance_id=None, space_id=None, product_id=None, product_name=None, state=None, type=None, installer_version=None, resource_ids=None, ips=None, create_time=None):
-        """CreateEdgeNodeResponse - a model defined in huaweicloud sdk"""
+        """CreateEdgeNodeResponse
+
+        The model defined in huaweicloud sdk
+
+        :param edge_node_id: 边缘节点ID
+        :type edge_node_id: str
+        :param name: 边缘节点名称
+        :type name: str
+        :param instance_id: 实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
+        :type instance_id: str
+        :param space_id: 资源空间id，对应IOTDA云服务接口参数中的app_id。
+        :type space_id: str
+        :param product_id: 边缘节点关联的产品ID，用于唯一标识一个产品模型。
+        :type product_id: str
+        :param product_name: 边缘节点关联的产品名称。
+        :type product_name: str
+        :param state: 边缘节点状态UNINSTALLED|INSTALLED|OFFLINE|ONLINE|DELETING|UPGRADING
+        :type state: str
+        :param type: 节点所属资源类型：advanced|standard
+        :type type: str
+        :param installer_version: 安装文件版本
+        :type installer_version: str
+        :param resource_ids: 资源id列表，创建节点时需绑定已购买的资源包，可以叠加节点功能。
+        :type resource_ids: list[str]
+        :param ips: 边缘节点ip列表
+        :type ips: list[str]
+        :param create_time: 边缘节点创建时间
+        :type create_time: str
+        """
         
         super(CreateEdgeNodeResponse, self).__init__()
 
@@ -113,7 +140,7 @@ class CreateEdgeNodeResponse(SdkResponse):
         边缘节点ID
 
         :param edge_node_id: The edge_node_id of this CreateEdgeNodeResponse.
-        :type: str
+        :type edge_node_id: str
         """
         self._edge_node_id = edge_node_id
 
@@ -135,7 +162,7 @@ class CreateEdgeNodeResponse(SdkResponse):
         边缘节点名称
 
         :param name: The name of this CreateEdgeNodeResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -157,7 +184,7 @@ class CreateEdgeNodeResponse(SdkResponse):
         实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
         :param instance_id: The instance_id of this CreateEdgeNodeResponse.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -179,7 +206,7 @@ class CreateEdgeNodeResponse(SdkResponse):
         资源空间id，对应IOTDA云服务接口参数中的app_id。
 
         :param space_id: The space_id of this CreateEdgeNodeResponse.
-        :type: str
+        :type space_id: str
         """
         self._space_id = space_id
 
@@ -201,7 +228,7 @@ class CreateEdgeNodeResponse(SdkResponse):
         边缘节点关联的产品ID，用于唯一标识一个产品模型。
 
         :param product_id: The product_id of this CreateEdgeNodeResponse.
-        :type: str
+        :type product_id: str
         """
         self._product_id = product_id
 
@@ -223,7 +250,7 @@ class CreateEdgeNodeResponse(SdkResponse):
         边缘节点关联的产品名称。
 
         :param product_name: The product_name of this CreateEdgeNodeResponse.
-        :type: str
+        :type product_name: str
         """
         self._product_name = product_name
 
@@ -245,7 +272,7 @@ class CreateEdgeNodeResponse(SdkResponse):
         边缘节点状态UNINSTALLED|INSTALLED|OFFLINE|ONLINE|DELETING|UPGRADING
 
         :param state: The state of this CreateEdgeNodeResponse.
-        :type: str
+        :type state: str
         """
         self._state = state
 
@@ -267,7 +294,7 @@ class CreateEdgeNodeResponse(SdkResponse):
         节点所属资源类型：advanced|standard
 
         :param type: The type of this CreateEdgeNodeResponse.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -289,7 +316,7 @@ class CreateEdgeNodeResponse(SdkResponse):
         安装文件版本
 
         :param installer_version: The installer_version of this CreateEdgeNodeResponse.
-        :type: str
+        :type installer_version: str
         """
         self._installer_version = installer_version
 
@@ -311,7 +338,7 @@ class CreateEdgeNodeResponse(SdkResponse):
         资源id列表，创建节点时需绑定已购买的资源包，可以叠加节点功能。
 
         :param resource_ids: The resource_ids of this CreateEdgeNodeResponse.
-        :type: list[str]
+        :type resource_ids: list[str]
         """
         self._resource_ids = resource_ids
 
@@ -333,7 +360,7 @@ class CreateEdgeNodeResponse(SdkResponse):
         边缘节点ip列表
 
         :param ips: The ips of this CreateEdgeNodeResponse.
-        :type: list[str]
+        :type ips: list[str]
         """
         self._ips = ips
 
@@ -355,7 +382,7 @@ class CreateEdgeNodeResponse(SdkResponse):
         边缘节点创建时间
 
         :param create_time: The create_time of this CreateEdgeNodeResponse.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 

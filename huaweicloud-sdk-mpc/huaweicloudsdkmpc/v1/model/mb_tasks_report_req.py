@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MbTasksReportReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class MbTasksReportReq:
     }
 
     def __init__(self, task_id=None, status=None, task_name=None, retry=None, parameter=None):
-        """MbTasksReportReq - a model defined in huaweicloud sdk"""
+        """MbTasksReportReq
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 任务ID。 如果返回值为200 OK，为接受任务后产生的任务ID。 
+        :type task_id: str
+        :param status: 任务执行状态。 取值为RUNNING/FINISHED/FAILED。 
+        :type status: str
+        :param task_name: 任务名称。 取值为RESET_TRACKS/MERGE_CHANNELS。 
+        :type task_name: str
+        :param retry: 失败任务是否重试。 
+        :type retry: bool
+        :param parameter: 
+        :type parameter: :class:`huaweicloudsdkmpc.v1.MbTaskParameter`
+        """
         
         
 
@@ -78,7 +91,7 @@ class MbTasksReportReq:
         任务ID。 如果返回值为200 OK，为接受任务后产生的任务ID。 
 
         :param task_id: The task_id of this MbTasksReportReq.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -100,7 +113,7 @@ class MbTasksReportReq:
         任务执行状态。 取值为RUNNING/FINISHED/FAILED。 
 
         :param status: The status of this MbTasksReportReq.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -122,7 +135,7 @@ class MbTasksReportReq:
         任务名称。 取值为RESET_TRACKS/MERGE_CHANNELS。 
 
         :param task_name: The task_name of this MbTasksReportReq.
-        :type: str
+        :type task_name: str
         """
         self._task_name = task_name
 
@@ -144,7 +157,7 @@ class MbTasksReportReq:
         失败任务是否重试。 
 
         :param retry: The retry of this MbTasksReportReq.
-        :type: bool
+        :type retry: bool
         """
         self._retry = retry
 
@@ -154,7 +167,7 @@ class MbTasksReportReq:
 
 
         :return: The parameter of this MbTasksReportReq.
-        :rtype: MbTaskParameter
+        :rtype: :class:`huaweicloudsdkmpc.v1.MbTaskParameter`
         """
         return self._parameter
 
@@ -164,7 +177,7 @@ class MbTasksReportReq:
 
 
         :param parameter: The parameter of this MbTasksReportReq.
-        :type: MbTaskParameter
+        :type parameter: :class:`huaweicloudsdkmpc.v1.MbTaskParameter`
         """
         self._parameter = parameter
 

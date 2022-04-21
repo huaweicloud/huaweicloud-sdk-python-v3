@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RespDedicatedHost:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -58,7 +57,41 @@ class RespDedicatedHost:
     }
 
     def __init__(self, dedicated_host_id=None, name=None, auto_placement=None, availability_zone=None, project_id=None, host_properties=None, state=None, available_vcpus=None, available_memory=None, allocated_at=None, released_at=None, instance_total=None, instance_uuids=None, tags=None, sys_tags=None):
-        """RespDedicatedHost - a model defined in huaweicloud sdk"""
+        """RespDedicatedHost
+
+        The model defined in huaweicloud sdk
+
+        :param dedicated_host_id: 专属主机ID。
+        :type dedicated_host_id: str
+        :param name: 专属主机的名称。  长度限制在255个字符以内，并且不能以空格开头或结尾。
+        :type name: str
+        :param auto_placement: 在创建云服务器时（未指定专属主机ID），是否允许云服务器自动分配在一台可用的专属主机上。
+        :type auto_placement: str
+        :param availability_zone: 专属主机所属的可用区。
+        :type availability_zone: str
+        :param project_id: 专属主机所属的租户ID。
+        :type project_id: str
+        :param host_properties: 
+        :type host_properties: :class:`huaweicloudsdkdeh.v1.RespHostProperty`
+        :param state: 专属主机状态。
+        :type state: str
+        :param available_vcpus: 专属主机可用的vCPU核数。
+        :type available_vcpus: int
+        :param available_memory: 专属主机可用的内存大小。
+        :type available_memory: int
+        :param allocated_at: 专属主机的分配时间。
+        :type allocated_at: str
+        :param released_at: 专属主机的释放时间。
+        :type released_at: str
+        :param instance_total: 专属主机上的实例总数。
+        :type instance_total: int
+        :param instance_uuids: 专属主机上的实例UUID。  查询专属主机列表接口不显示此参数。
+        :type instance_uuids: list[str]
+        :param tags: 专属主机标签。
+        :type tags: object
+        :param sys_tags: 专属主机系统标签。
+        :type sys_tags: object
+        """
         
         
 
@@ -113,7 +146,7 @@ class RespDedicatedHost:
         专属主机ID。
 
         :param dedicated_host_id: The dedicated_host_id of this RespDedicatedHost.
-        :type: str
+        :type dedicated_host_id: str
         """
         self._dedicated_host_id = dedicated_host_id
 
@@ -135,7 +168,7 @@ class RespDedicatedHost:
         专属主机的名称。  长度限制在255个字符以内，并且不能以空格开头或结尾。
 
         :param name: The name of this RespDedicatedHost.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -157,7 +190,7 @@ class RespDedicatedHost:
         在创建云服务器时（未指定专属主机ID），是否允许云服务器自动分配在一台可用的专属主机上。
 
         :param auto_placement: The auto_placement of this RespDedicatedHost.
-        :type: str
+        :type auto_placement: str
         """
         self._auto_placement = auto_placement
 
@@ -179,7 +212,7 @@ class RespDedicatedHost:
         专属主机所属的可用区。
 
         :param availability_zone: The availability_zone of this RespDedicatedHost.
-        :type: str
+        :type availability_zone: str
         """
         self._availability_zone = availability_zone
 
@@ -201,7 +234,7 @@ class RespDedicatedHost:
         专属主机所属的租户ID。
 
         :param project_id: The project_id of this RespDedicatedHost.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -211,7 +244,7 @@ class RespDedicatedHost:
 
 
         :return: The host_properties of this RespDedicatedHost.
-        :rtype: RespHostProperty
+        :rtype: :class:`huaweicloudsdkdeh.v1.RespHostProperty`
         """
         return self._host_properties
 
@@ -221,7 +254,7 @@ class RespDedicatedHost:
 
 
         :param host_properties: The host_properties of this RespDedicatedHost.
-        :type: RespHostProperty
+        :type host_properties: :class:`huaweicloudsdkdeh.v1.RespHostProperty`
         """
         self._host_properties = host_properties
 
@@ -243,7 +276,7 @@ class RespDedicatedHost:
         专属主机状态。
 
         :param state: The state of this RespDedicatedHost.
-        :type: str
+        :type state: str
         """
         self._state = state
 
@@ -265,7 +298,7 @@ class RespDedicatedHost:
         专属主机可用的vCPU核数。
 
         :param available_vcpus: The available_vcpus of this RespDedicatedHost.
-        :type: int
+        :type available_vcpus: int
         """
         self._available_vcpus = available_vcpus
 
@@ -287,7 +320,7 @@ class RespDedicatedHost:
         专属主机可用的内存大小。
 
         :param available_memory: The available_memory of this RespDedicatedHost.
-        :type: int
+        :type available_memory: int
         """
         self._available_memory = available_memory
 
@@ -309,7 +342,7 @@ class RespDedicatedHost:
         专属主机的分配时间。
 
         :param allocated_at: The allocated_at of this RespDedicatedHost.
-        :type: str
+        :type allocated_at: str
         """
         self._allocated_at = allocated_at
 
@@ -331,7 +364,7 @@ class RespDedicatedHost:
         专属主机的释放时间。
 
         :param released_at: The released_at of this RespDedicatedHost.
-        :type: str
+        :type released_at: str
         """
         self._released_at = released_at
 
@@ -353,7 +386,7 @@ class RespDedicatedHost:
         专属主机上的实例总数。
 
         :param instance_total: The instance_total of this RespDedicatedHost.
-        :type: int
+        :type instance_total: int
         """
         self._instance_total = instance_total
 
@@ -375,7 +408,7 @@ class RespDedicatedHost:
         专属主机上的实例UUID。  查询专属主机列表接口不显示此参数。
 
         :param instance_uuids: The instance_uuids of this RespDedicatedHost.
-        :type: list[str]
+        :type instance_uuids: list[str]
         """
         self._instance_uuids = instance_uuids
 
@@ -397,7 +430,7 @@ class RespDedicatedHost:
         专属主机标签。
 
         :param tags: The tags of this RespDedicatedHost.
-        :type: object
+        :type tags: object
         """
         self._tags = tags
 
@@ -419,7 +452,7 @@ class RespDedicatedHost:
         专属主机系统标签。
 
         :param sys_tags: The sys_tags of this RespDedicatedHost.
-        :type: object
+        :type sys_tags: object
         """
         self._sys_tags = sys_tags
 

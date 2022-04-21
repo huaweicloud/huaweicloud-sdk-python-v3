@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ProjectDetailsAndStatusResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ProjectDetailsAndStatusResult:
     }
 
     def __init__(self, domain_id=None, is_domain=None, parent_id=None, name=None, description=None, id=None, enabled=None, status=None):
-        """ProjectDetailsAndStatusResult - a model defined in huaweicloud sdk"""
+        """ProjectDetailsAndStatusResult
+
+        The model defined in huaweicloud sdk
+
+        :param domain_id: 项目所属账号ID。
+        :type domain_id: str
+        :param is_domain: false.
+        :type is_domain: bool
+        :param parent_id: 如果查询自己创建的项目，则此处返回所属区域的项目ID。  如果查询的是系统内置项目，如cn-north-4，则此处返回账号ID。
+        :type parent_id: str
+        :param name: 项目名称。
+        :type name: str
+        :param description: 项目描述信息。
+        :type description: str
+        :param id: 项目ID。
+        :type id: str
+        :param enabled: 项目是否可用。
+        :type enabled: bool
+        :param status: 项目状态。
+        :type status: str
+        """
         
         
 
@@ -85,7 +104,7 @@ class ProjectDetailsAndStatusResult:
         项目所属账号ID。
 
         :param domain_id: The domain_id of this ProjectDetailsAndStatusResult.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -107,7 +126,7 @@ class ProjectDetailsAndStatusResult:
         false.
 
         :param is_domain: The is_domain of this ProjectDetailsAndStatusResult.
-        :type: bool
+        :type is_domain: bool
         """
         self._is_domain = is_domain
 
@@ -129,7 +148,7 @@ class ProjectDetailsAndStatusResult:
         如果查询自己创建的项目，则此处返回所属区域的项目ID。  如果查询的是系统内置项目，如cn-north-4，则此处返回账号ID。
 
         :param parent_id: The parent_id of this ProjectDetailsAndStatusResult.
-        :type: str
+        :type parent_id: str
         """
         self._parent_id = parent_id
 
@@ -151,7 +170,7 @@ class ProjectDetailsAndStatusResult:
         项目名称。
 
         :param name: The name of this ProjectDetailsAndStatusResult.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -173,7 +192,7 @@ class ProjectDetailsAndStatusResult:
         项目描述信息。
 
         :param description: The description of this ProjectDetailsAndStatusResult.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -195,7 +214,7 @@ class ProjectDetailsAndStatusResult:
         项目ID。
 
         :param id: The id of this ProjectDetailsAndStatusResult.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -217,7 +236,7 @@ class ProjectDetailsAndStatusResult:
         项目是否可用。
 
         :param enabled: The enabled of this ProjectDetailsAndStatusResult.
-        :type: bool
+        :type enabled: bool
         """
         self._enabled = enabled
 
@@ -239,7 +258,7 @@ class ProjectDetailsAndStatusResult:
         项目状态。
 
         :param status: The status of this ProjectDetailsAndStatusResult.
-        :type: str
+        :type status: str
         """
         self._status = status
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateRomaAppResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class UpdateRomaAppResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, remark=None, roles=None, create_time=None, update_time=None, created_user=None, last_updated_user=None, owner=None, key=None, favorite=None):
-        """UpdateRomaAppResponse - a model defined in huaweicloud sdk"""
+        """UpdateRomaAppResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 应用ID
+        :type id: str
+        :param name: 应用名称 - 字符集：支持中文、英文字母、数字、中划线、下划线、点、空格和中英文圆括号 - 约束：实例下唯一
+        :type name: str
+        :param remark: 应用描述
+        :type remark: str
+        :param roles: 应用权限角色 - read：应用下资源只读权限，至少要存在此权限，包括API调试 - access：应用下资源的访问管理权限 - delete：应用下资源的删除权限 - modify：应用下资源的修改权限，包括API发布、下线 - admin：应用和应用下资源的权限 - 仅提供admin时，会自动应用其它所有权限 - 未提供read时会自动应用read权限
+        :type roles: list[str]
+        :param create_time: 创建UTC时间
+        :type create_time: str
+        :param update_time: 创建UTC时间
+        :type update_time: str
+        :param created_user: 
+        :type created_user: :class:`huaweicloudsdkroma.v2.ServerAppInfoCreatedUser`
+        :param last_updated_user: 
+        :type last_updated_user: :class:`huaweicloudsdkroma.v2.ServerAppInfoLastUpdatedUser`
+        :param owner: 是否是应用拥有者
+        :type owner: bool
+        :param key: 应用认证访问KEY,未提供时随机生成 - 字符集：支持中文、英文字母、数字、中划线、下划线、@号和点，以字母或中文或数字开头 - 约束：实例下唯一
+        :type key: str
+        :param favorite: 是否收藏应用，收藏的应用会在列表里优先显示
+        :type favorite: bool
+        """
         
         super(UpdateRomaAppResponse, self).__init__()
 
@@ -108,7 +133,7 @@ class UpdateRomaAppResponse(SdkResponse):
         应用ID
 
         :param id: The id of this UpdateRomaAppResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -130,7 +155,7 @@ class UpdateRomaAppResponse(SdkResponse):
         应用名称 - 字符集：支持中文、英文字母、数字、中划线、下划线、点、空格和中英文圆括号 - 约束：实例下唯一
 
         :param name: The name of this UpdateRomaAppResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -152,7 +177,7 @@ class UpdateRomaAppResponse(SdkResponse):
         应用描述
 
         :param remark: The remark of this UpdateRomaAppResponse.
-        :type: str
+        :type remark: str
         """
         self._remark = remark
 
@@ -174,7 +199,7 @@ class UpdateRomaAppResponse(SdkResponse):
         应用权限角色 - read：应用下资源只读权限，至少要存在此权限，包括API调试 - access：应用下资源的访问管理权限 - delete：应用下资源的删除权限 - modify：应用下资源的修改权限，包括API发布、下线 - admin：应用和应用下资源的权限 - 仅提供admin时，会自动应用其它所有权限 - 未提供read时会自动应用read权限
 
         :param roles: The roles of this UpdateRomaAppResponse.
-        :type: list[str]
+        :type roles: list[str]
         """
         self._roles = roles
 
@@ -196,7 +221,7 @@ class UpdateRomaAppResponse(SdkResponse):
         创建UTC时间
 
         :param create_time: The create_time of this UpdateRomaAppResponse.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -218,7 +243,7 @@ class UpdateRomaAppResponse(SdkResponse):
         创建UTC时间
 
         :param update_time: The update_time of this UpdateRomaAppResponse.
-        :type: str
+        :type update_time: str
         """
         self._update_time = update_time
 
@@ -228,7 +253,7 @@ class UpdateRomaAppResponse(SdkResponse):
 
 
         :return: The created_user of this UpdateRomaAppResponse.
-        :rtype: ServerAppInfoCreatedUser
+        :rtype: :class:`huaweicloudsdkroma.v2.ServerAppInfoCreatedUser`
         """
         return self._created_user
 
@@ -238,7 +263,7 @@ class UpdateRomaAppResponse(SdkResponse):
 
 
         :param created_user: The created_user of this UpdateRomaAppResponse.
-        :type: ServerAppInfoCreatedUser
+        :type created_user: :class:`huaweicloudsdkroma.v2.ServerAppInfoCreatedUser`
         """
         self._created_user = created_user
 
@@ -248,7 +273,7 @@ class UpdateRomaAppResponse(SdkResponse):
 
 
         :return: The last_updated_user of this UpdateRomaAppResponse.
-        :rtype: ServerAppInfoLastUpdatedUser
+        :rtype: :class:`huaweicloudsdkroma.v2.ServerAppInfoLastUpdatedUser`
         """
         return self._last_updated_user
 
@@ -258,7 +283,7 @@ class UpdateRomaAppResponse(SdkResponse):
 
 
         :param last_updated_user: The last_updated_user of this UpdateRomaAppResponse.
-        :type: ServerAppInfoLastUpdatedUser
+        :type last_updated_user: :class:`huaweicloudsdkroma.v2.ServerAppInfoLastUpdatedUser`
         """
         self._last_updated_user = last_updated_user
 
@@ -280,7 +305,7 @@ class UpdateRomaAppResponse(SdkResponse):
         是否是应用拥有者
 
         :param owner: The owner of this UpdateRomaAppResponse.
-        :type: bool
+        :type owner: bool
         """
         self._owner = owner
 
@@ -302,7 +327,7 @@ class UpdateRomaAppResponse(SdkResponse):
         应用认证访问KEY,未提供时随机生成 - 字符集：支持中文、英文字母、数字、中划线、下划线、@号和点，以字母或中文或数字开头 - 约束：实例下唯一
 
         :param key: The key of this UpdateRomaAppResponse.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -324,7 +349,7 @@ class UpdateRomaAppResponse(SdkResponse):
         是否收藏应用，收藏的应用会在列表里优先显示
 
         :param favorite: The favorite of this UpdateRomaAppResponse.
-        :type: bool
+        :type favorite: bool
         """
         self._favorite = favorite
 

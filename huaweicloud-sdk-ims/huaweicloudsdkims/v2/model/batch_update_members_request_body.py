@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchUpdateMembersRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class BatchUpdateMembersRequestBody:
     }
 
     def __init__(self, images=None, project_id=None, status=None, vault_id=None):
-        """BatchUpdateMembersRequestBody - a model defined in huaweicloud sdk"""
+        """BatchUpdateMembersRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param images: 镜像ID列表。
+        :type images: list[str]
+        :param project_id: 项目ID。
+        :type project_id: str
+        :param status: 镜像成员的状态。 取值如下： accepted：表示接受共享镜像。接受后，该镜像在用户镜像列表中可见，用户可以使用该镜像创建云服务器。 rejected：表示拒绝共享镜像。拒绝后，该镜像在用户镜像列表中不可见，但是，用户仍然可以使用该镜像创建云服务器。
+        :type status: str
+        :param vault_id: 存储库ID。 如果是通过CBR创建的整机镜像，则在接受该共享镜像时，为必选参数，需传入该值。
+        :type vault_id: str
+        """
         
         
 
@@ -70,7 +81,7 @@ class BatchUpdateMembersRequestBody:
         镜像ID列表。
 
         :param images: The images of this BatchUpdateMembersRequestBody.
-        :type: list[str]
+        :type images: list[str]
         """
         self._images = images
 
@@ -92,7 +103,7 @@ class BatchUpdateMembersRequestBody:
         项目ID。
 
         :param project_id: The project_id of this BatchUpdateMembersRequestBody.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -114,7 +125,7 @@ class BatchUpdateMembersRequestBody:
         镜像成员的状态。 取值如下： accepted：表示接受共享镜像。接受后，该镜像在用户镜像列表中可见，用户可以使用该镜像创建云服务器。 rejected：表示拒绝共享镜像。拒绝后，该镜像在用户镜像列表中不可见，但是，用户仍然可以使用该镜像创建云服务器。
 
         :param status: The status of this BatchUpdateMembersRequestBody.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -136,7 +147,7 @@ class BatchUpdateMembersRequestBody:
         存储库ID。 如果是通过CBR创建的整机镜像，则在接受该共享镜像时，为必选参数，需传入该值。
 
         :param vault_id: The vault_id of this BatchUpdateMembersRequestBody.
-        :type: str
+        :type vault_id: str
         """
         self._vault_id = vault_id
 

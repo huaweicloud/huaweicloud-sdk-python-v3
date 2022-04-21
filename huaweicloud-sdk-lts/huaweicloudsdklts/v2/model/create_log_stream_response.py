@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateLogStreamResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateLogStreamResponse(SdkResponse):
     }
 
     def __init__(self, log_stream_id=None):
-        """CreateLogStreamResponse - a model defined in huaweicloud sdk"""
+        """CreateLogStreamResponse
+
+        The model defined in huaweicloud sdk
+
+        :param log_stream_id: 创建的日志流的Id。
+        :type log_stream_id: str
+        """
         
         super(CreateLogStreamResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class CreateLogStreamResponse(SdkResponse):
         创建的日志流的Id。
 
         :param log_stream_id: The log_stream_id of this CreateLogStreamResponse.
-        :type: str
+        :type log_stream_id: str
         """
         self._log_stream_id = log_stream_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Job:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -62,7 +61,45 @@ class Job:
     }
 
     def __init__(self, id=None, job_name=None, job_creator=None, user_name=None, last_build_time=None, health_score=None, source_code=None, last_build_status=None, is_finished=None, disabled=None, favorite=None, is_modify=None, is_delete=None, is_execute=None, is_copy=None, is_forbidden=None, is_view=None):
-        """Job - a model defined in huaweicloud sdk"""
+        """Job
+
+        The model defined in huaweicloud sdk
+
+        :param id: 任务ID
+        :type id: str
+        :param job_name: 任务名称
+        :type job_name: str
+        :param job_creator: 任务创建者
+        :type job_creator: str
+        :param user_name: 用户名称
+        :type user_name: str
+        :param last_build_time: 最新执行时间
+        :type last_build_time: float
+        :param health_score: 健康分值
+        :type health_score: int
+        :param source_code: 代码来源
+        :type source_code: str
+        :param last_build_status: 最新构建状态
+        :type last_build_status: str
+        :param is_finished: 是否已结束
+        :type is_finished: bool
+        :param disabled: 是否已禁用
+        :type disabled: bool
+        :param favorite: 是否已收藏
+        :type favorite: bool
+        :param is_modify: 是否有修改任务权限
+        :type is_modify: bool
+        :param is_delete: 是否有删除任务权限
+        :type is_delete: bool
+        :param is_execute: 是否有执行任务权限
+        :type is_execute: bool
+        :param is_copy: 是否有复制任务权限
+        :type is_copy: bool
+        :param is_forbidden: 是否有禁用任务权限
+        :type is_forbidden: bool
+        :param is_view: 是否有查看任务权限
+        :type is_view: bool
+        """
         
         
 
@@ -138,7 +175,7 @@ class Job:
         任务ID
 
         :param id: The id of this Job.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -160,7 +197,7 @@ class Job:
         任务名称
 
         :param job_name: The job_name of this Job.
-        :type: str
+        :type job_name: str
         """
         self._job_name = job_name
 
@@ -182,7 +219,7 @@ class Job:
         任务创建者
 
         :param job_creator: The job_creator of this Job.
-        :type: str
+        :type job_creator: str
         """
         self._job_creator = job_creator
 
@@ -204,7 +241,7 @@ class Job:
         用户名称
 
         :param user_name: The user_name of this Job.
-        :type: str
+        :type user_name: str
         """
         self._user_name = user_name
 
@@ -226,7 +263,7 @@ class Job:
         最新执行时间
 
         :param last_build_time: The last_build_time of this Job.
-        :type: float
+        :type last_build_time: float
         """
         self._last_build_time = last_build_time
 
@@ -248,7 +285,7 @@ class Job:
         健康分值
 
         :param health_score: The health_score of this Job.
-        :type: int
+        :type health_score: int
         """
         self._health_score = health_score
 
@@ -270,7 +307,7 @@ class Job:
         代码来源
 
         :param source_code: The source_code of this Job.
-        :type: str
+        :type source_code: str
         """
         self._source_code = source_code
 
@@ -292,7 +329,7 @@ class Job:
         最新构建状态
 
         :param last_build_status: The last_build_status of this Job.
-        :type: str
+        :type last_build_status: str
         """
         self._last_build_status = last_build_status
 
@@ -314,7 +351,7 @@ class Job:
         是否已结束
 
         :param is_finished: The is_finished of this Job.
-        :type: bool
+        :type is_finished: bool
         """
         self._is_finished = is_finished
 
@@ -336,7 +373,7 @@ class Job:
         是否已禁用
 
         :param disabled: The disabled of this Job.
-        :type: bool
+        :type disabled: bool
         """
         self._disabled = disabled
 
@@ -358,7 +395,7 @@ class Job:
         是否已收藏
 
         :param favorite: The favorite of this Job.
-        :type: bool
+        :type favorite: bool
         """
         self._favorite = favorite
 
@@ -380,7 +417,7 @@ class Job:
         是否有修改任务权限
 
         :param is_modify: The is_modify of this Job.
-        :type: bool
+        :type is_modify: bool
         """
         self._is_modify = is_modify
 
@@ -402,7 +439,7 @@ class Job:
         是否有删除任务权限
 
         :param is_delete: The is_delete of this Job.
-        :type: bool
+        :type is_delete: bool
         """
         self._is_delete = is_delete
 
@@ -424,7 +461,7 @@ class Job:
         是否有执行任务权限
 
         :param is_execute: The is_execute of this Job.
-        :type: bool
+        :type is_execute: bool
         """
         self._is_execute = is_execute
 
@@ -446,7 +483,7 @@ class Job:
         是否有复制任务权限
 
         :param is_copy: The is_copy of this Job.
-        :type: bool
+        :type is_copy: bool
         """
         self._is_copy = is_copy
 
@@ -468,7 +505,7 @@ class Job:
         是否有禁用任务权限
 
         :param is_forbidden: The is_forbidden of this Job.
-        :type: bool
+        :type is_forbidden: bool
         """
         self._is_forbidden = is_forbidden
 
@@ -490,7 +527,7 @@ class Job:
         是否有查看任务权限
 
         :param is_view: The is_view of this Job.
-        :type: bool
+        :type is_view: bool
         """
         self._is_view = is_view
 

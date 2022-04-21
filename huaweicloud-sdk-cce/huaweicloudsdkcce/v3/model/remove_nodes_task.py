@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RemoveNodesTask:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class RemoveNodesTask:
     }
 
     def __init__(self, api_version=None, kind=None, spec=None, status=None):
-        """RemoveNodesTask - a model defined in huaweicloud sdk"""
+        """RemoveNodesTask
+
+        The model defined in huaweicloud sdk
+
+        :param api_version: API版本，固定值“v3”。
+        :type api_version: str
+        :param kind: API类型，固定值“RemoveNodesTask”。
+        :type kind: str
+        :param spec: 
+        :type spec: :class:`huaweicloudsdkcce.v3.RemoveNodesSpec`
+        :param status: 
+        :type status: :class:`huaweicloudsdkcce.v3.TaskStatus`
+        """
         
         
 
@@ -72,7 +83,7 @@ class RemoveNodesTask:
         API版本，固定值“v3”。
 
         :param api_version: The api_version of this RemoveNodesTask.
-        :type: str
+        :type api_version: str
         """
         self._api_version = api_version
 
@@ -94,7 +105,7 @@ class RemoveNodesTask:
         API类型，固定值“RemoveNodesTask”。
 
         :param kind: The kind of this RemoveNodesTask.
-        :type: str
+        :type kind: str
         """
         self._kind = kind
 
@@ -104,7 +115,7 @@ class RemoveNodesTask:
 
 
         :return: The spec of this RemoveNodesTask.
-        :rtype: RemoveNodesSpec
+        :rtype: :class:`huaweicloudsdkcce.v3.RemoveNodesSpec`
         """
         return self._spec
 
@@ -114,7 +125,7 @@ class RemoveNodesTask:
 
 
         :param spec: The spec of this RemoveNodesTask.
-        :type: RemoveNodesSpec
+        :type spec: :class:`huaweicloudsdkcce.v3.RemoveNodesSpec`
         """
         self._spec = spec
 
@@ -124,7 +135,7 @@ class RemoveNodesTask:
 
 
         :return: The status of this RemoveNodesTask.
-        :rtype: TaskStatus
+        :rtype: :class:`huaweicloudsdkcce.v3.TaskStatus`
         """
         return self._status
 
@@ -134,7 +145,7 @@ class RemoveNodesTask:
 
 
         :param status: The status of this RemoveNodesTask.
-        :type: TaskStatus
+        :type status: :class:`huaweicloudsdkcce.v3.TaskStatus`
         """
         self._status = status
 

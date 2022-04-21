@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListResourcesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListResourcesResponse(SdkResponse):
     }
 
     def __init__(self, total=None, resources=None):
-        """ListResourcesResponse - a model defined in huaweicloud sdk"""
+        """ListResourcesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 
+        :type total: int
+        :param resources: 
+        :type resources: list[:class:`huaweicloudsdkdgc.v1.ResourceInfo`]
+        """
         
         super(ListResourcesResponse, self).__init__()
 
@@ -61,7 +68,7 @@ class ListResourcesResponse(SdkResponse):
 
 
         :param total: The total of this ListResourcesResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -71,7 +78,7 @@ class ListResourcesResponse(SdkResponse):
 
 
         :return: The resources of this ListResourcesResponse.
-        :rtype: list[ResourceInfo]
+        :rtype: list[:class:`huaweicloudsdkdgc.v1.ResourceInfo`]
         """
         return self._resources
 
@@ -81,7 +88,7 @@ class ListResourcesResponse(SdkResponse):
 
 
         :param resources: The resources of this ListResourcesResponse.
-        :type: list[ResourceInfo]
+        :type resources: list[:class:`huaweicloudsdkdgc.v1.ResourceInfo`]
         """
         self._resources = resources
 

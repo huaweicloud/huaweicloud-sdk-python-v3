@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AccessConfigFormatSingle:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AccessConfigFormatSingle:
     }
 
     def __init__(self, mode=None, value=None):
-        """AccessConfigFormatSingle - a model defined in huaweicloud sdk"""
+        """AccessConfigFormatSingle
+
+        The model defined in huaweicloud sdk
+
+        :param mode: 单行日志。system：系统时间，wildcard：时间通配符。
+        :type mode: str
+        :param value: 日志时间。 当mode为”system”，则填入当前时间戳。 当mode为\&quot;wildcard\&quot;，则时间通配符：用日志打印时间来标识一条日志数据，通过时间通配符来匹配日志，每条日志的行首显示日志的打印时间；如果日志中的时间格式为：2019-01-01 23:59:59，时间通配符应该填写为：YYYY-MM-DD hh:mm:ss；如果日志中的时间格式为：19-1-1 23:59:59，时间通配符应该填写为：YY-M-D hh:mm:ss
+        :type value: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class AccessConfigFormatSingle:
         单行日志。system：系统时间，wildcard：时间通配符。
 
         :param mode: The mode of this AccessConfigFormatSingle.
-        :type: str
+        :type mode: str
         """
         self._mode = mode
 
@@ -83,7 +90,7 @@ class AccessConfigFormatSingle:
         日志时间。 当mode为”system”，则填入当前时间戳。 当mode为\"wildcard\"，则时间通配符：用日志打印时间来标识一条日志数据，通过时间通配符来匹配日志，每条日志的行首显示日志的打印时间；如果日志中的时间格式为：2019-01-01 23:59:59，时间通配符应该填写为：YYYY-MM-DD hh:mm:ss；如果日志中的时间格式为：19-1-1 23:59:59，时间通配符应该填写为：YY-M-D hh:mm:ss
 
         :param value: The value of this AccessConfigFormatSingle.
-        :type: str
+        :type value: str
         """
         self._value = value
 

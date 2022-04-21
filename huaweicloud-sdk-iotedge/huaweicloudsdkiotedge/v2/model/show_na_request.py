@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowNaRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowNaRequest:
     }
 
     def __init__(self, na_id=None):
-        """ShowNaRequest - a model defined in huaweicloud sdk"""
+        """ShowNaRequest
+
+        The model defined in huaweicloud sdk
+
+        :param na_id: 北向数据接收端点ID
+        :type na_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowNaRequest:
         北向数据接收端点ID
 
         :param na_id: The na_id of this ShowNaRequest.
-        :type: str
+        :type na_id: str
         """
         self._na_id = na_id
 

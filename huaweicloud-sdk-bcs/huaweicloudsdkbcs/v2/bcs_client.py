@@ -52,21 +52,17 @@ class BcsClient(Client):
         """peer节点加入通道
 
         peer节点加入通道,目前仅支持往一个通道中加入peer
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchAddPeersToChannelRequest request
-        :return: BatchAddPeersToChannelResponse
+        :param request: Request instance for BatchAddPeersToChannel
+        :type request: :class:`huaweicloudsdkbcs.v2.BatchAddPeersToChannelRequest`
+        :rtype: :class:`huaweicloudsdkbcs.v2.BatchAddPeersToChannelResponse`
         """
         return self.batch_add_peers_to_channel_with_http_info(request)
 
     def batch_add_peers_to_channel_with_http_info(self, request):
-        """peer节点加入通道
-
-        peer节点加入通道,目前仅支持往一个通道中加入peer
-
-        :param BatchAddPeersToChannelRequest request
-        :return: BatchAddPeersToChannelResponse
-        """
-
         all_params = ['blockchain_id', 'batch_add_peers_to_channel_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -112,26 +108,21 @@ class BcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_create_channels(self, request):
         """创建通道
 
         创建通道
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchCreateChannelsRequest request
-        :return: BatchCreateChannelsResponse
+        :param request: Request instance for BatchCreateChannels
+        :type request: :class:`huaweicloudsdkbcs.v2.BatchCreateChannelsRequest`
+        :rtype: :class:`huaweicloudsdkbcs.v2.BatchCreateChannelsResponse`
         """
         return self.batch_create_channels_with_http_info(request)
 
     def batch_create_channels_with_http_info(self, request):
-        """创建通道
-
-        创建通道
-
-        :param BatchCreateChannelsRequest request
-        :return: BatchCreateChannelsResponse
-        """
-
         all_params = ['blockchain_id', 'batch_create_channels_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -177,26 +168,21 @@ class BcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_invite_members_to_channel(self, request):
         """邀请联盟成员
 
         批量邀请联盟成员加入通道，此操作会向被邀请方发出邀请通知
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchInviteMembersToChannelRequest request
-        :return: BatchInviteMembersToChannelResponse
+        :param request: Request instance for BatchInviteMembersToChannel
+        :type request: :class:`huaweicloudsdkbcs.v2.BatchInviteMembersToChannelRequest`
+        :rtype: :class:`huaweicloudsdkbcs.v2.BatchInviteMembersToChannelResponse`
         """
         return self.batch_invite_members_to_channel_with_http_info(request)
 
     def batch_invite_members_to_channel_with_http_info(self, request):
-        """邀请联盟成员
-
-        批量邀请联盟成员加入通道，此操作会向被邀请方发出邀请通知
-
-        :param BatchInviteMembersToChannelRequest request
-        :return: BatchInviteMembersToChannelResponse
-        """
-
         all_params = ['batch_invite_members_to_channel_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -240,26 +226,21 @@ class BcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_remove_orgs_from_channel(self, request):
         """BCS组织退出某通道
 
         该接口用于BCS组织退出某通道。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchRemoveOrgsFromChannelRequest request
-        :return: BatchRemoveOrgsFromChannelResponse
+        :param request: Request instance for BatchRemoveOrgsFromChannel
+        :type request: :class:`huaweicloudsdkbcs.v2.BatchRemoveOrgsFromChannelRequest`
+        :rtype: :class:`huaweicloudsdkbcs.v2.BatchRemoveOrgsFromChannelResponse`
         """
         return self.batch_remove_orgs_from_channel_with_http_info(request)
 
     def batch_remove_orgs_from_channel_with_http_info(self, request):
-        """BCS组织退出某通道
-
-        该接口用于BCS组织退出某通道。
-
-        :param BatchRemoveOrgsFromChannelRequest request
-        :return: BatchRemoveOrgsFromChannelResponse
-        """
-
         all_params = ['blockchain_id', 'channel_id', 'batch_remove_orgs_from_channel_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -307,26 +288,21 @@ class BcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_blockchain_cert_by_user_name(self, request):
         """生成用户证书
 
         通过用户名生成指定服务实例组织用户证书
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateBlockchainCertByUserNameRequest request
-        :return: CreateBlockchainCertByUserNameResponse
+        :param request: Request instance for CreateBlockchainCertByUserName
+        :type request: :class:`huaweicloudsdkbcs.v2.CreateBlockchainCertByUserNameRequest`
+        :rtype: :class:`huaweicloudsdkbcs.v2.CreateBlockchainCertByUserNameResponse`
         """
         return self.create_blockchain_cert_by_user_name_with_http_info(request)
 
     def create_blockchain_cert_by_user_name_with_http_info(self, request):
-        """生成用户证书
-
-        通过用户名生成指定服务实例组织用户证书
-
-        :param CreateBlockchainCertByUserNameRequest request
-        :return: CreateBlockchainCertByUserNameResponse
-        """
-
         all_params = ['blockchain_id', 'org_name', 'user_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -374,26 +350,21 @@ class BcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_new_blockchain(self, request):
         """创建服务实例
 
         创建BCS服务实例,只支持按需创建
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateNewBlockchainRequest request
-        :return: CreateNewBlockchainResponse
+        :param request: Request instance for CreateNewBlockchain
+        :type request: :class:`huaweicloudsdkbcs.v2.CreateNewBlockchainRequest`
+        :rtype: :class:`huaweicloudsdkbcs.v2.CreateNewBlockchainResponse`
         """
         return self.create_new_blockchain_with_http_info(request)
 
     def create_new_blockchain_with_http_info(self, request):
-        """创建服务实例
-
-        创建BCS服务实例,只支持按需创建
-
-        :param CreateNewBlockchainRequest request
-        :return: CreateNewBlockchainResponse
-        """
-
         all_params = ['create_new_blockchain_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -437,26 +408,21 @@ class BcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_blockchain(self, request):
         """删除服务实例
 
         删除bcs实例。包周期实例不支持
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteBlockchainRequest request
-        :return: DeleteBlockchainResponse
+        :param request: Request instance for DeleteBlockchain
+        :type request: :class:`huaweicloudsdkbcs.v2.DeleteBlockchainRequest`
+        :rtype: :class:`huaweicloudsdkbcs.v2.DeleteBlockchainResponse`
         """
         return self.delete_blockchain_with_http_info(request)
 
     def delete_blockchain_with_http_info(self, request):
-        """删除服务实例
-
-        删除bcs实例。包周期实例不支持
-
-        :param DeleteBlockchainRequest request
-        :return: DeleteBlockchainResponse
-        """
-
         all_params = ['blockchain_id', 'is_delete_storage', 'is_delete_obs', 'is_delete_resource']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -506,26 +472,21 @@ class BcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_member_invite(self, request):
         """删除邀请成员信息
 
         可通过此接口批量取消邀请或删除对已退出或拒绝加入或解散的成员邀请信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteMemberInviteRequest request
-        :return: DeleteMemberInviteResponse
+        :param request: Request instance for DeleteMemberInvite
+        :type request: :class:`huaweicloudsdkbcs.v2.DeleteMemberInviteRequest`
+        :rtype: :class:`huaweicloudsdkbcs.v2.DeleteMemberInviteResponse`
         """
         return self.delete_member_invite_with_http_info(request)
 
     def delete_member_invite_with_http_info(self, request):
-        """删除邀请成员信息
-
-        可通过此接口批量取消邀请或删除对已退出或拒绝加入或解散的成员邀请信息
-
-        :param DeleteMemberInviteRequest request
-        :return: DeleteMemberInviteResponse
-        """
-
         all_params = ['delete_member_invite_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -569,26 +530,21 @@ class BcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def download_blockchain_cert(self, request):
         """下载证书
 
         下载指定服务实例相关证书
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DownloadBlockchainCertRequest request
-        :return: DownloadBlockchainCertResponse
+        :param request: Request instance for DownloadBlockchainCert
+        :type request: :class:`huaweicloudsdkbcs.v2.DownloadBlockchainCertRequest`
+        :rtype: :class:`huaweicloudsdkbcs.v2.DownloadBlockchainCertResponse`
         """
         return self.download_blockchain_cert_with_http_info(request)
 
     def download_blockchain_cert_with_http_info(self, request):
-        """下载证书
-
-        下载指定服务实例相关证书
-
-        :param DownloadBlockchainCertRequest request
-        :return: DownloadBlockchainCertResponse
-        """
-
         all_params = ['blockchain_id', 'org_name', 'cert_type']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -636,26 +592,21 @@ class BcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def download_blockchain_sdk_config(self, request):
         """下载SDK配置
 
         下载指定服务实例SDK配置文件
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DownloadBlockchainSdkConfigRequest request
-        :return: DownloadBlockchainSdkConfigResponse
+        :param request: Request instance for DownloadBlockchainSdkConfig
+        :type request: :class:`huaweicloudsdkbcs.v2.DownloadBlockchainSdkConfigRequest`
+        :rtype: :class:`huaweicloudsdkbcs.v2.DownloadBlockchainSdkConfigResponse`
         """
         return self.download_blockchain_sdk_config_with_http_info(request)
 
     def download_blockchain_sdk_config_with_http_info(self, request):
-        """下载SDK配置
-
-        下载指定服务实例SDK配置文件
-
-        :param DownloadBlockchainSdkConfigRequest request
-        :return: DownloadBlockchainSdkConfigResponse
-        """
-
         all_params = ['blockchain_id', 'download_blockchain_sdk_config_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -701,26 +652,21 @@ class BcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def freeze_cert(self, request):
         """冻结用户证书
 
         冻结指定服务实例组织用户证书，冻结后需等待半分钟到一分钟左右生效
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param FreezeCertRequest request
-        :return: FreezeCertResponse
+        :param request: Request instance for FreezeCert
+        :type request: :class:`huaweicloudsdkbcs.v2.FreezeCertRequest`
+        :rtype: :class:`huaweicloudsdkbcs.v2.FreezeCertResponse`
         """
         return self.freeze_cert_with_http_info(request)
 
     def freeze_cert_with_http_info(self, request):
-        """冻结用户证书
-
-        冻结指定服务实例组织用户证书，冻结后需等待半分钟到一分钟左右生效
-
-        :param FreezeCertRequest request
-        :return: FreezeCertResponse
-        """
-
         all_params = ['user_name', 'blockchain_id', 'org_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -768,26 +714,21 @@ class BcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def handle_notification(self, request):
         """处理联盟邀请
 
         处理联盟邀请
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param HandleNotificationRequest request
-        :return: HandleNotificationResponse
+        :param request: Request instance for HandleNotification
+        :type request: :class:`huaweicloudsdkbcs.v2.HandleNotificationRequest`
+        :rtype: :class:`huaweicloudsdkbcs.v2.HandleNotificationResponse`
         """
         return self.handle_notification_with_http_info(request)
 
     def handle_notification_with_http_info(self, request):
-        """处理联盟邀请
-
-        处理联盟邀请
-
-        :param HandleNotificationRequest request
-        :return: HandleNotificationResponse
-        """
-
         all_params = ['handle_notification_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -831,26 +772,21 @@ class BcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_bcs_metric(self, request):
         """查询BCS服务实例监控数据
 
         该接口用于查询BCS服务的监控数据，可以指定相应的指标名称。[目前不支持IEF节点](tag:hasief)
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListBcsMetricRequest request
-        :return: ListBcsMetricResponse
+        :param request: Request instance for ListBcsMetric
+        :type request: :class:`huaweicloudsdkbcs.v2.ListBcsMetricRequest`
+        :rtype: :class:`huaweicloudsdkbcs.v2.ListBcsMetricResponse`
         """
         return self.list_bcs_metric_with_http_info(request)
 
     def list_bcs_metric_with_http_info(self, request):
-        """查询BCS服务实例监控数据
-
-        该接口用于查询BCS服务的监控数据，可以指定相应的指标名称。[目前不支持IEF节点](tag:hasief)
-
-        :param ListBcsMetricRequest request
-        :return: ListBcsMetricResponse
-        """
-
         all_params = ['blockchain_id', 'list_bcs_metric_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -896,26 +832,21 @@ class BcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_blockchain_channels(self, request):
         """查询通道信息
 
         查询指定服务实例通道信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListBlockchainChannelsRequest request
-        :return: ListBlockchainChannelsResponse
+        :param request: Request instance for ListBlockchainChannels
+        :type request: :class:`huaweicloudsdkbcs.v2.ListBlockchainChannelsRequest`
+        :rtype: :class:`huaweicloudsdkbcs.v2.ListBlockchainChannelsResponse`
         """
         return self.list_blockchain_channels_with_http_info(request)
 
     def list_blockchain_channels_with_http_info(self, request):
-        """查询通道信息
-
-        查询指定服务实例通道信息
-
-        :param ListBlockchainChannelsRequest request
-        :return: ListBlockchainChannelsResponse
-        """
-
         all_params = ['blockchain_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -959,26 +890,21 @@ class BcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_blockchains(self, request):
         """查询服务实例列表
 
         查询当前项目下所有服务实例的简要信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListBlockchainsRequest request
-        :return: ListBlockchainsResponse
+        :param request: Request instance for ListBlockchains
+        :type request: :class:`huaweicloudsdkbcs.v2.ListBlockchainsRequest`
+        :rtype: :class:`huaweicloudsdkbcs.v2.ListBlockchainsResponse`
         """
         return self.list_blockchains_with_http_info(request)
 
     def list_blockchains_with_http_info(self, request):
-        """查询服务实例列表
-
-        查询当前项目下所有服务实例的简要信息
-
-        :param ListBlockchainsRequest request
-        :return: ListBlockchainsResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1020,26 +946,21 @@ class BcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_entity_metric(self, request):
         """查询BCS组织监控数据列表
 
         该接口用于查询BCS组织的监控数据列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListEntityMetricRequest request
-        :return: ListEntityMetricResponse
+        :param request: Request instance for ListEntityMetric
+        :type request: :class:`huaweicloudsdkbcs.v2.ListEntityMetricRequest`
+        :rtype: :class:`huaweicloudsdkbcs.v2.ListEntityMetricResponse`
         """
         return self.list_entity_metric_with_http_info(request)
 
     def list_entity_metric_with_http_info(self, request):
-        """查询BCS组织监控数据列表
-
-        该接口用于查询BCS组织的监控数据列表。
-
-        :param ListEntityMetricRequest request
-        :return: ListEntityMetricResponse
-        """
-
         all_params = ['blockchain_id', 'list_entity_metric_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1085,26 +1006,21 @@ class BcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_instance_metric(self, request):
         """查询BCS组织实例监控数据详情
 
         该接口用于BCS组织实例监控数据详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListInstanceMetricRequest request
-        :return: ListInstanceMetricResponse
+        :param request: Request instance for ListInstanceMetric
+        :type request: :class:`huaweicloudsdkbcs.v2.ListInstanceMetricRequest`
+        :rtype: :class:`huaweicloudsdkbcs.v2.ListInstanceMetricResponse`
         """
         return self.list_instance_metric_with_http_info(request)
 
     def list_instance_metric_with_http_info(self, request):
-        """查询BCS组织实例监控数据详情
-
-        该接口用于BCS组织实例监控数据详情。
-
-        :param ListInstanceMetricRequest request
-        :return: ListInstanceMetricResponse
-        """
-
         all_params = ['blockchain_id', 'list_instance_metric_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1150,26 +1066,21 @@ class BcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_members(self, request):
         """获取联盟成员列表
 
         获取联盟成员列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListMembersRequest request
-        :return: ListMembersResponse
+        :param request: Request instance for ListMembers
+        :type request: :class:`huaweicloudsdkbcs.v2.ListMembersRequest`
+        :rtype: :class:`huaweicloudsdkbcs.v2.ListMembersResponse`
         """
         return self.list_members_with_http_info(request)
 
     def list_members_with_http_info(self, request):
-        """获取联盟成员列表
-
-        获取联盟成员列表
-
-        :param ListMembersRequest request
-        :return: ListMembersResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1211,26 +1122,21 @@ class BcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_notifications(self, request):
         """获取全部通知
 
         获取全部通知
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListNotificationsRequest request
-        :return: ListNotificationsResponse
+        :param request: Request instance for ListNotifications
+        :type request: :class:`huaweicloudsdkbcs.v2.ListNotificationsRequest`
+        :rtype: :class:`huaweicloudsdkbcs.v2.ListNotificationsResponse`
         """
         return self.list_notifications_with_http_info(request)
 
     def list_notifications_with_http_info(self, request):
-        """获取全部通知
-
-        获取全部通知
-
-        :param ListNotificationsRequest request
-        :return: ListNotificationsResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1272,26 +1178,21 @@ class BcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_op_record(self, request):
         """查询异步操作结果
 
         查询异步操作结果
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListOpRecordRequest request
-        :return: ListOpRecordResponse
+        :param request: Request instance for ListOpRecord
+        :type request: :class:`huaweicloudsdkbcs.v2.ListOpRecordRequest`
+        :rtype: :class:`huaweicloudsdkbcs.v2.ListOpRecordResponse`
         """
         return self.list_op_record_with_http_info(request)
 
     def list_op_record_with_http_info(self, request):
-        """查询异步操作结果
-
-        查询异步操作结果
-
-        :param ListOpRecordRequest request
-        :return: ListOpRecordResponse
-        """
-
         all_params = ['blockchain_id', 'operation_status', 'resource_type', 'operation_type', 'operation_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1343,26 +1244,21 @@ class BcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_quotas(self, request):
         """查询配额
 
         查询当前项目下BCS服务所有资源的配额信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListQuotasRequest request
-        :return: ListQuotasResponse
+        :param request: Request instance for ListQuotas
+        :type request: :class:`huaweicloudsdkbcs.v2.ListQuotasRequest`
+        :rtype: :class:`huaweicloudsdkbcs.v2.ListQuotasResponse`
         """
         return self.list_quotas_with_http_info(request)
 
     def list_quotas_with_http_info(self, request):
-        """查询配额
-
-        查询当前项目下BCS服务所有资源的配额信息
-
-        :param ListQuotasRequest request
-        :return: ListQuotasResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1404,26 +1300,21 @@ class BcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_blockchain_detail(self, request):
         """查询实例信息
 
         查询指定服务实例详细信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowBlockchainDetailRequest request
-        :return: ShowBlockchainDetailResponse
+        :param request: Request instance for ShowBlockchainDetail
+        :type request: :class:`huaweicloudsdkbcs.v2.ShowBlockchainDetailRequest`
+        :rtype: :class:`huaweicloudsdkbcs.v2.ShowBlockchainDetailResponse`
         """
         return self.show_blockchain_detail_with_http_info(request)
 
     def show_blockchain_detail_with_http_info(self, request):
-        """查询实例信息
-
-        查询指定服务实例详细信息
-
-        :param ShowBlockchainDetailRequest request
-        :return: ShowBlockchainDetailResponse
-        """
-
         all_params = ['blockchain_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1467,26 +1358,21 @@ class BcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_blockchain_flavors(self, request):
         """查询规格
 
         查询服务联盟链规格信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowBlockchainFlavorsRequest request
-        :return: ShowBlockchainFlavorsResponse
+        :param request: Request instance for ShowBlockchainFlavors
+        :type request: :class:`huaweicloudsdkbcs.v2.ShowBlockchainFlavorsRequest`
+        :rtype: :class:`huaweicloudsdkbcs.v2.ShowBlockchainFlavorsResponse`
         """
         return self.show_blockchain_flavors_with_http_info(request)
 
     def show_blockchain_flavors_with_http_info(self, request):
-        """查询规格
-
-        查询服务联盟链规格信息
-
-        :param ShowBlockchainFlavorsRequest request
-        :return: ShowBlockchainFlavorsResponse
-        """
-
         all_params = ['limit', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1532,26 +1418,21 @@ class BcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_blockchain_nodes(self, request):
         """查询节点信息
 
         查询指定服务实例节点信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowBlockchainNodesRequest request
-        :return: ShowBlockchainNodesResponse
+        :param request: Request instance for ShowBlockchainNodes
+        :type request: :class:`huaweicloudsdkbcs.v2.ShowBlockchainNodesRequest`
+        :rtype: :class:`huaweicloudsdkbcs.v2.ShowBlockchainNodesResponse`
         """
         return self.show_blockchain_nodes_with_http_info(request)
 
     def show_blockchain_nodes_with_http_info(self, request):
-        """查询节点信息
-
-        查询指定服务实例节点信息
-
-        :param ShowBlockchainNodesRequest request
-        :return: ShowBlockchainNodesResponse
-        """
-
         all_params = ['blockchain_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1595,26 +1476,21 @@ class BcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_blockchain_status(self, request):
         """查询创建状态
 
         查询指定服务实例创建状态
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowBlockchainStatusRequest request
-        :return: ShowBlockchainStatusResponse
+        :param request: Request instance for ShowBlockchainStatus
+        :type request: :class:`huaweicloudsdkbcs.v2.ShowBlockchainStatusRequest`
+        :rtype: :class:`huaweicloudsdkbcs.v2.ShowBlockchainStatusResponse`
         """
         return self.show_blockchain_status_with_http_info(request)
 
     def show_blockchain_status_with_http_info(self, request):
-        """查询创建状态
-
-        查询指定服务实例创建状态
-
-        :param ShowBlockchainStatusRequest request
-        :return: ShowBlockchainStatusResponse
-        """
-
         all_params = ['blockchain_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1658,26 +1534,21 @@ class BcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def unfreeze_cert(self, request):
         """解冻用户证书
 
         解冻指定服务实例组织用户证书，解冻后需等待半分钟到一分钟左右生效
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UnfreezeCertRequest request
-        :return: UnfreezeCertResponse
+        :param request: Request instance for UnfreezeCert
+        :type request: :class:`huaweicloudsdkbcs.v2.UnfreezeCertRequest`
+        :rtype: :class:`huaweicloudsdkbcs.v2.UnfreezeCertResponse`
         """
         return self.unfreeze_cert_with_http_info(request)
 
     def unfreeze_cert_with_http_info(self, request):
-        """解冻用户证书
-
-        解冻指定服务实例组织用户证书，解冻后需等待半分钟到一分钟左右生效
-
-        :param UnfreezeCertRequest request
-        :return: UnfreezeCertResponse
-        """
-
         all_params = ['user_name', 'blockchain_id', 'org_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1725,26 +1596,21 @@ class BcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_instance(self, request):
         """修改服务实例
 
         修改实例的节点、组织，目前仅支持添加、删除节点（IEF模式不支持添加、删除节点），添加、删除组织，共4种类型，每次操作只可以操作一种类型。此接口不支持包周期模式; 注意注册IEF节点时，IEF节点名称长度应该为4-24位的字符
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateInstanceRequest request
-        :return: UpdateInstanceResponse
+        :param request: Request instance for UpdateInstance
+        :type request: :class:`huaweicloudsdkbcs.v2.UpdateInstanceRequest`
+        :rtype: :class:`huaweicloudsdkbcs.v2.UpdateInstanceResponse`
         """
         return self.update_instance_with_http_info(request)
 
     def update_instance_with_http_info(self, request):
-        """修改服务实例
-
-        修改实例的节点、组织，目前仅支持添加、删除节点（IEF模式不支持添加、删除节点），添加、删除组织，共4种类型，每次操作只可以操作一种类型。此接口不支持包周期模式; 注意注册IEF节点时，IEF节点名称长度应该为4-24位的字符
-
-        :param UpdateInstanceRequest request
-        :return: UpdateInstanceResponse
-        """
-
         all_params = ['blockchain_id', 'update_instance_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1789,7 +1655,6 @@ class BcsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

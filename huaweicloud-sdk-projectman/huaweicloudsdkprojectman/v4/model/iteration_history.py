@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IterationHistory:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class IterationHistory:
     }
 
     def __init__(self, iteration_id=None, project_id=None, operator=None, operate=None, operate_time=None, details=None):
-        """IterationHistory - a model defined in huaweicloud sdk"""
+        """IterationHistory
+
+        The model defined in huaweicloud sdk
+
+        :param iteration_id: 迭代ID
+        :type iteration_id: str
+        :param project_id: 项目ID
+        :type project_id: str
+        :param operator: 
+        :type operator: :class:`huaweicloudsdkprojectman.v4.VersionHistoryOperator`
+        :param operate: 操作类型
+        :type operate: str
+        :param operate_time: 操作时间
+        :type operate_time: str
+        :param details: 操作详情
+        :type details: list[:class:`huaweicloudsdkprojectman.v4.IterationHistoryDetails`]
+        """
         
         
 
@@ -83,7 +98,7 @@ class IterationHistory:
         迭代ID
 
         :param iteration_id: The iteration_id of this IterationHistory.
-        :type: str
+        :type iteration_id: str
         """
         self._iteration_id = iteration_id
 
@@ -105,7 +120,7 @@ class IterationHistory:
         项目ID
 
         :param project_id: The project_id of this IterationHistory.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -115,7 +130,7 @@ class IterationHistory:
 
 
         :return: The operator of this IterationHistory.
-        :rtype: VersionHistoryOperator
+        :rtype: :class:`huaweicloudsdkprojectman.v4.VersionHistoryOperator`
         """
         return self._operator
 
@@ -125,7 +140,7 @@ class IterationHistory:
 
 
         :param operator: The operator of this IterationHistory.
-        :type: VersionHistoryOperator
+        :type operator: :class:`huaweicloudsdkprojectman.v4.VersionHistoryOperator`
         """
         self._operator = operator
 
@@ -147,7 +162,7 @@ class IterationHistory:
         操作类型
 
         :param operate: The operate of this IterationHistory.
-        :type: str
+        :type operate: str
         """
         self._operate = operate
 
@@ -169,7 +184,7 @@ class IterationHistory:
         操作时间
 
         :param operate_time: The operate_time of this IterationHistory.
-        :type: str
+        :type operate_time: str
         """
         self._operate_time = operate_time
 
@@ -180,7 +195,7 @@ class IterationHistory:
         操作详情
 
         :return: The details of this IterationHistory.
-        :rtype: list[IterationHistoryDetails]
+        :rtype: list[:class:`huaweicloudsdkprojectman.v4.IterationHistoryDetails`]
         """
         return self._details
 
@@ -191,7 +206,7 @@ class IterationHistory:
         操作详情
 
         :param details: The details of this IterationHistory.
-        :type: list[IterationHistoryDetails]
+        :type details: list[:class:`huaweicloudsdkprojectman.v4.IterationHistoryDetails`]
         """
         self._details = details
 

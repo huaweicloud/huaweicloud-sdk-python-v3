@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateDeviceGroupRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CreateDeviceGroupRequestBody:
     }
 
     def __init__(self, parent_id=None, name=None, description=None, app_id=None):
-        """CreateDeviceGroupRequestBody - a model defined in huaweicloud sdk"""
+        """CreateDeviceGroupRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param parent_id: 父分组ID，自动向下取整
+        :type parent_id: int
+        :param name: 分组名称，支持中文，英文大小写，数字，下划线和中划线,长度2-64
+        :type name: str
+        :param description: 分组描述
+        :type description: str
+        :param app_id: 分组归属应用ID
+        :type app_id: str
+        """
         
         
 
@@ -70,7 +81,7 @@ class CreateDeviceGroupRequestBody:
         父分组ID，自动向下取整
 
         :param parent_id: The parent_id of this CreateDeviceGroupRequestBody.
-        :type: int
+        :type parent_id: int
         """
         self._parent_id = parent_id
 
@@ -92,7 +103,7 @@ class CreateDeviceGroupRequestBody:
         分组名称，支持中文，英文大小写，数字，下划线和中划线,长度2-64
 
         :param name: The name of this CreateDeviceGroupRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -114,7 +125,7 @@ class CreateDeviceGroupRequestBody:
         分组描述
 
         :param description: The description of this CreateDeviceGroupRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -136,7 +147,7 @@ class CreateDeviceGroupRequestBody:
         分组归属应用ID
 
         :param app_id: The app_id of this CreateDeviceGroupRequestBody.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 

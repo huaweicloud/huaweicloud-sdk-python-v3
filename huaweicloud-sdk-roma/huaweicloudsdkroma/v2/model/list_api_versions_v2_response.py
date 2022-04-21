@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListApiVersionsV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListApiVersionsV2Response(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, api_versions=None):
-        """ListApiVersionsV2Response - a model defined in huaweicloud sdk"""
+        """ListApiVersionsV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param size: 本次返回的列表长度
+        :type size: int
+        :param total: 满足条件的记录数
+        :type total: int
+        :param api_versions: 本次查询返回的API历史版本列表
+        :type api_versions: list[:class:`huaweicloudsdkroma.v2.ApiVersionResp`]
+        """
         
         super(ListApiVersionsV2Response, self).__init__()
 
@@ -66,7 +75,7 @@ class ListApiVersionsV2Response(SdkResponse):
         本次返回的列表长度
 
         :param size: The size of this ListApiVersionsV2Response.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -88,7 +97,7 @@ class ListApiVersionsV2Response(SdkResponse):
         满足条件的记录数
 
         :param total: The total of this ListApiVersionsV2Response.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -99,7 +108,7 @@ class ListApiVersionsV2Response(SdkResponse):
         本次查询返回的API历史版本列表
 
         :return: The api_versions of this ListApiVersionsV2Response.
-        :rtype: list[ApiVersionResp]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.ApiVersionResp`]
         """
         return self._api_versions
 
@@ -110,7 +119,7 @@ class ListApiVersionsV2Response(SdkResponse):
         本次查询返回的API历史版本列表
 
         :param api_versions: The api_versions of this ListApiVersionsV2Response.
-        :type: list[ApiVersionResp]
+        :type api_versions: list[:class:`huaweicloudsdkroma.v2.ApiVersionResp`]
         """
         self._api_versions = api_versions
 

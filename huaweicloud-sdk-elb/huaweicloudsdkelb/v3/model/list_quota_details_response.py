@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListQuotaDetailsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListQuotaDetailsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, quotas=None):
-        """ListQuotaDetailsResponse - a model defined in huaweicloud sdk"""
+        """ListQuotaDetailsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param request_id: 请求ID。  注：自动生成 。
+        :type request_id: str
+        :param quotas: 资源配额信息列表。
+        :type quotas: list[:class:`huaweicloudsdkelb.v3.QuotaInfo`]
+        """
         
         super(ListQuotaDetailsResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListQuotaDetailsResponse(SdkResponse):
         请求ID。  注：自动生成 。
 
         :param request_id: The request_id of this ListQuotaDetailsResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 
@@ -74,7 +81,7 @@ class ListQuotaDetailsResponse(SdkResponse):
         资源配额信息列表。
 
         :return: The quotas of this ListQuotaDetailsResponse.
-        :rtype: list[QuotaInfo]
+        :rtype: list[:class:`huaweicloudsdkelb.v3.QuotaInfo`]
         """
         return self._quotas
 
@@ -85,7 +92,7 @@ class ListQuotaDetailsResponse(SdkResponse):
         资源配额信息列表。
 
         :param quotas: The quotas of this ListQuotaDetailsResponse.
-        :type: list[QuotaInfo]
+        :type quotas: list[:class:`huaweicloudsdkelb.v3.QuotaInfo`]
         """
         self._quotas = quotas
 

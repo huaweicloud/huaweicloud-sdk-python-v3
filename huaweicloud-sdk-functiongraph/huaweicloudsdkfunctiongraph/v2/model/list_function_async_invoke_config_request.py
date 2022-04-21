@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListFunctionAsyncInvokeConfigRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListFunctionAsyncInvokeConfigRequest:
     }
 
     def __init__(self, function_urn=None, marker=None, limit=None):
-        """ListFunctionAsyncInvokeConfigRequest - a model defined in huaweicloud sdk"""
+        """ListFunctionAsyncInvokeConfigRequest
+
+        The model defined in huaweicloud sdk
+
+        :param function_urn: 函数的URN（Uniform Resource Name），唯一标识函数。
+        :type function_urn: str
+        :param marker: 上一次查询到的最后的记录位置。
+        :type marker: str
+        :param limit: 每页显示的条目数量。 - 如果不提供该值或者提供的值等于0，则使用默认值：10，最大值100，大于100取值100。 - 如果该值小于0，则返回参数错误。
+        :type limit: str
+        """
         
         
 
@@ -67,7 +76,7 @@ class ListFunctionAsyncInvokeConfigRequest:
         函数的URN（Uniform Resource Name），唯一标识函数。
 
         :param function_urn: The function_urn of this ListFunctionAsyncInvokeConfigRequest.
-        :type: str
+        :type function_urn: str
         """
         self._function_urn = function_urn
 
@@ -89,7 +98,7 @@ class ListFunctionAsyncInvokeConfigRequest:
         上一次查询到的最后的记录位置。
 
         :param marker: The marker of this ListFunctionAsyncInvokeConfigRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -111,7 +120,7 @@ class ListFunctionAsyncInvokeConfigRequest:
         每页显示的条目数量。 - 如果不提供该值或者提供的值等于0，则使用默认值：10，最大值100，大于100取值100。 - 如果该值小于0，则返回参数错误。
 
         :param limit: The limit of this ListFunctionAsyncInvokeConfigRequest.
-        :type: str
+        :type limit: str
         """
         self._limit = limit
 

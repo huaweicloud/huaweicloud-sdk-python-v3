@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateAppQuotaRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateAppQuotaRequest:
     }
 
     def __init__(self, instance_id=None, app_quota_id=None, body=None):
-        """UpdateAppQuotaRequest - a model defined in huaweicloud sdk"""
+        """UpdateAppQuotaRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param app_quota_id: 客户端配额编号
+        :type app_quota_id: str
+        :param body: Body of the UpdateAppQuotaRequest
+        :type body: :class:`huaweicloudsdkroma.v2.AppQuotaCreate`
+        """
         
         
 
@@ -66,7 +75,7 @@ class UpdateAppQuotaRequest:
         实例ID
 
         :param instance_id: The instance_id of this UpdateAppQuotaRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -88,7 +97,7 @@ class UpdateAppQuotaRequest:
         客户端配额编号
 
         :param app_quota_id: The app_quota_id of this UpdateAppQuotaRequest.
-        :type: str
+        :type app_quota_id: str
         """
         self._app_quota_id = app_quota_id
 
@@ -98,7 +107,7 @@ class UpdateAppQuotaRequest:
 
 
         :return: The body of this UpdateAppQuotaRequest.
-        :rtype: AppQuotaCreate
+        :rtype: :class:`huaweicloudsdkroma.v2.AppQuotaCreate`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class UpdateAppQuotaRequest:
 
 
         :param body: The body of this UpdateAppQuotaRequest.
-        :type: AppQuotaCreate
+        :type body: :class:`huaweicloudsdkroma.v2.AppQuotaCreate`
         """
         self._body = body
 

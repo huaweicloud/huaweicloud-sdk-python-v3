@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowProjectWorkHoursResponseBodyWorkHours:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
     }
 
     def __init__(self, project_name=None, nick_name=None, user_name=None, work_date=None, work_hours_num=None, summary=None, work_hours_type_name=None, issue_id=None, issue_type=None, subject=None, created_time=None, closed_time=None):
-        """ShowProjectWorkHoursResponseBodyWorkHours - a model defined in huaweicloud sdk"""
+        """ShowProjectWorkHoursResponseBodyWorkHours
+
+        The model defined in huaweicloud sdk
+
+        :param project_name: 项目名称
+        :type project_name: str
+        :param nick_name: 用户昵称
+        :type nick_name: str
+        :param user_name: 用户名
+        :type user_name: str
+        :param work_date: 工时日期
+        :type work_date: str
+        :param work_hours_num: 工时花费
+        :type work_hours_num: str
+        :param summary: 工时内容
+        :type summary: str
+        :param work_hours_type_name: 工时类型
+        :type work_hours_type_name: str
+        :param issue_id: 工作项id
+        :type issue_id: int
+        :param issue_type: 工作项类型
+        :type issue_type: str
+        :param subject: 工作项标题
+        :type subject: str
+        :param created_time: 工作项创建时间
+        :type created_time: str
+        :param closed_time: 工作项结束时间
+        :type closed_time: str
+        """
         
         
 
@@ -113,7 +140,7 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
         项目名称
 
         :param project_name: The project_name of this ShowProjectWorkHoursResponseBodyWorkHours.
-        :type: str
+        :type project_name: str
         """
         self._project_name = project_name
 
@@ -135,7 +162,7 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
         用户昵称
 
         :param nick_name: The nick_name of this ShowProjectWorkHoursResponseBodyWorkHours.
-        :type: str
+        :type nick_name: str
         """
         self._nick_name = nick_name
 
@@ -157,7 +184,7 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
         用户名
 
         :param user_name: The user_name of this ShowProjectWorkHoursResponseBodyWorkHours.
-        :type: str
+        :type user_name: str
         """
         self._user_name = user_name
 
@@ -179,7 +206,7 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
         工时日期
 
         :param work_date: The work_date of this ShowProjectWorkHoursResponseBodyWorkHours.
-        :type: str
+        :type work_date: str
         """
         self._work_date = work_date
 
@@ -201,7 +228,7 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
         工时花费
 
         :param work_hours_num: The work_hours_num of this ShowProjectWorkHoursResponseBodyWorkHours.
-        :type: str
+        :type work_hours_num: str
         """
         self._work_hours_num = work_hours_num
 
@@ -223,7 +250,7 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
         工时内容
 
         :param summary: The summary of this ShowProjectWorkHoursResponseBodyWorkHours.
-        :type: str
+        :type summary: str
         """
         self._summary = summary
 
@@ -245,7 +272,7 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
         工时类型
 
         :param work_hours_type_name: The work_hours_type_name of this ShowProjectWorkHoursResponseBodyWorkHours.
-        :type: str
+        :type work_hours_type_name: str
         """
         self._work_hours_type_name = work_hours_type_name
 
@@ -267,7 +294,7 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
         工作项id
 
         :param issue_id: The issue_id of this ShowProjectWorkHoursResponseBodyWorkHours.
-        :type: int
+        :type issue_id: int
         """
         self._issue_id = issue_id
 
@@ -289,7 +316,7 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
         工作项类型
 
         :param issue_type: The issue_type of this ShowProjectWorkHoursResponseBodyWorkHours.
-        :type: str
+        :type issue_type: str
         """
         self._issue_type = issue_type
 
@@ -311,7 +338,7 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
         工作项标题
 
         :param subject: The subject of this ShowProjectWorkHoursResponseBodyWorkHours.
-        :type: str
+        :type subject: str
         """
         self._subject = subject
 
@@ -333,7 +360,7 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
         工作项创建时间
 
         :param created_time: The created_time of this ShowProjectWorkHoursResponseBodyWorkHours.
-        :type: str
+        :type created_time: str
         """
         self._created_time = created_time
 
@@ -355,7 +382,7 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
         工作项结束时间
 
         :param closed_time: The closed_time of this ShowProjectWorkHoursResponseBodyWorkHours.
-        :type: str
+        :type closed_time: str
         """
         self._closed_time = closed_time
 

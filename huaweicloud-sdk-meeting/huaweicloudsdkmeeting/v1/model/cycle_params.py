@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CycleParams:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class CycleParams:
     }
 
     def __init__(self, start_date=None, end_date=None, cycle=None, interval=None, point=None, pre_remind_days=None):
-        """CycleParams - a model defined in huaweicloud sdk"""
+        """CycleParams
+
+        The model defined in huaweicloud sdk
+
+        :param start_date: 周期会议的开始日期，格式：YYYY-MM-DD。 开始日期不能早于当前日期。
+        :type start_date: str
+        :param end_date: 周期会议的结束日期，格式：YYYY-MM-DD。 开始日期和结束日期间的时间间隔最长不能超过1年。 开始日期和结束日期之间最多允许50个子会议，若超过50个子会议，会自动调整结束日期。
+        :type end_date: str
+        :param cycle: 周期类型。 - Day: 天。 - Week: 星期。 - Month: 月。
+        :type cycle: str
+        :param interval: - cycle选择了Day，表示每几天召开一次，取值范围[1,15] - cycle选择了Week，表示每几周召开一次，取值范围[1,5] - cycle选择了Month，Interval表示隔几月，取值范围[1,3]
+        :type interval: int
+        :param point: 周期内的会议召开点。仅当按周和月时有效。 - cycle选择了Week，poInt中填入了两个元素1和3，则表示每个周一和周三召开会议，0表示周日。 - cycle选择了Month，poInt中填入了12和20则表示每个月的12号和20号召开会议，取值范围为[1,31]，若当月没有该值，则为月末。
+        :type point: list[int]
+        :param pre_remind_days: 支持用户指定提前会议通知的天数N，预订人收到整个周期会议的通知，所有与会人在每个子会议召开时间的前N天收到会议通知（包括日历）。 天数N的输入根据间隔期进行自动调整，如果按日每隔2天召开，则N自动变为2，如果为按周每2周的周一、周二，则N自动变为14。 约束：暂不考虑夏令时处理。 取值范围[0,30]。 default: 1
+        :type pre_remind_days: int
+        """
         
         
 
@@ -79,7 +94,7 @@ class CycleParams:
         周期会议的开始日期，格式：YYYY-MM-DD。 开始日期不能早于当前日期。
 
         :param start_date: The start_date of this CycleParams.
-        :type: str
+        :type start_date: str
         """
         self._start_date = start_date
 
@@ -101,7 +116,7 @@ class CycleParams:
         周期会议的结束日期，格式：YYYY-MM-DD。 开始日期和结束日期间的时间间隔最长不能超过1年。 开始日期和结束日期之间最多允许50个子会议，若超过50个子会议，会自动调整结束日期。
 
         :param end_date: The end_date of this CycleParams.
-        :type: str
+        :type end_date: str
         """
         self._end_date = end_date
 
@@ -123,7 +138,7 @@ class CycleParams:
         周期类型。 - Day: 天。 - Week: 星期。 - Month: 月。
 
         :param cycle: The cycle of this CycleParams.
-        :type: str
+        :type cycle: str
         """
         self._cycle = cycle
 
@@ -145,7 +160,7 @@ class CycleParams:
         - cycle选择了Day，表示每几天召开一次，取值范围[1,15] - cycle选择了Week，表示每几周召开一次，取值范围[1,5] - cycle选择了Month，Interval表示隔几月，取值范围[1,3]
 
         :param interval: The interval of this CycleParams.
-        :type: int
+        :type interval: int
         """
         self._interval = interval
 
@@ -167,7 +182,7 @@ class CycleParams:
         周期内的会议召开点。仅当按周和月时有效。 - cycle选择了Week，poInt中填入了两个元素1和3，则表示每个周一和周三召开会议，0表示周日。 - cycle选择了Month，poInt中填入了12和20则表示每个月的12号和20号召开会议，取值范围为[1,31]，若当月没有该值，则为月末。
 
         :param point: The point of this CycleParams.
-        :type: list[int]
+        :type point: list[int]
         """
         self._point = point
 
@@ -189,7 +204,7 @@ class CycleParams:
         支持用户指定提前会议通知的天数N，预订人收到整个周期会议的通知，所有与会人在每个子会议召开时间的前N天收到会议通知（包括日历）。 天数N的输入根据间隔期进行自动调整，如果按日每隔2天召开，则N自动变为2，如果为按周每2周的周一、周二，则N自动变为14。 约束：暂不考虑夏令时处理。 取值范围[0,30]。 default: 1
 
         :param pre_remind_days: The pre_remind_days of this CycleParams.
-        :type: int
+        :type pre_remind_days: int
         """
         self._pre_remind_days = pre_remind_days
 

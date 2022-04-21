@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAuthorizationsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListAuthorizationsResponse(SdkResponse):
     }
 
     def __init__(self, authorizations=None):
-        """ListAuthorizationsResponse - a model defined in huaweicloud sdk"""
+        """ListAuthorizationsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param authorizations: 授权列表。
+        :type authorizations: list[:class:`huaweicloudsdkservicestage.v2.AuthorizationVO`]
+        """
         
         super(ListAuthorizationsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListAuthorizationsResponse(SdkResponse):
         授权列表。
 
         :return: The authorizations of this ListAuthorizationsResponse.
-        :rtype: list[AuthorizationVO]
+        :rtype: list[:class:`huaweicloudsdkservicestage.v2.AuthorizationVO`]
         """
         return self._authorizations
 
@@ -58,7 +63,7 @@ class ListAuthorizationsResponse(SdkResponse):
         授权列表。
 
         :param authorizations: The authorizations of this ListAuthorizationsResponse.
-        :type: list[AuthorizationVO]
+        :type authorizations: list[:class:`huaweicloudsdkservicestage.v2.AuthorizationVO`]
         """
         self._authorizations = authorizations
 

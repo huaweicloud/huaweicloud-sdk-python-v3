@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchDeleteProtectedInstancesRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class BatchDeleteProtectedInstancesRequestBody:
     }
 
     def __init__(self, protected_instances=None, delete_target_server=None, delete_target_eip=None):
-        """BatchDeleteProtectedInstancesRequestBody - a model defined in huaweicloud sdk"""
+        """BatchDeleteProtectedInstancesRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param protected_instances: 所需要删除的保护实例列表。
+        :type protected_instances: list[:class:`huaweicloudsdksdrs.v1.ResourceId`]
+        :param delete_target_server: 是否删除容灾站点服务器，默认值为false。
+        :type delete_target_server: bool
+        :param delete_target_eip: 是否删除容灾站点弹性IP，默认值为false。
+        :type delete_target_eip: bool
+        """
         
         
 
@@ -56,7 +65,7 @@ class BatchDeleteProtectedInstancesRequestBody:
         所需要删除的保护实例列表。
 
         :return: The protected_instances of this BatchDeleteProtectedInstancesRequestBody.
-        :rtype: list[ResourceId]
+        :rtype: list[:class:`huaweicloudsdksdrs.v1.ResourceId`]
         """
         return self._protected_instances
 
@@ -67,7 +76,7 @@ class BatchDeleteProtectedInstancesRequestBody:
         所需要删除的保护实例列表。
 
         :param protected_instances: The protected_instances of this BatchDeleteProtectedInstancesRequestBody.
-        :type: list[ResourceId]
+        :type protected_instances: list[:class:`huaweicloudsdksdrs.v1.ResourceId`]
         """
         self._protected_instances = protected_instances
 
@@ -89,7 +98,7 @@ class BatchDeleteProtectedInstancesRequestBody:
         是否删除容灾站点服务器，默认值为false。
 
         :param delete_target_server: The delete_target_server of this BatchDeleteProtectedInstancesRequestBody.
-        :type: bool
+        :type delete_target_server: bool
         """
         self._delete_target_server = delete_target_server
 
@@ -111,7 +120,7 @@ class BatchDeleteProtectedInstancesRequestBody:
         是否删除容灾站点弹性IP，默认值为false。
 
         :param delete_target_eip: The delete_target_eip of this BatchDeleteProtectedInstancesRequestBody.
-        :type: bool
+        :type delete_target_eip: bool
         """
         self._delete_target_eip = delete_target_eip
 

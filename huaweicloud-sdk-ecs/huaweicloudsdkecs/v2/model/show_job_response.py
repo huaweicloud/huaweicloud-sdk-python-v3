@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowJobResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class ShowJobResponse(SdkResponse):
     }
 
     def __init__(self, begin_time=None, code=None, end_time=None, entities=None, error_code=None, fail_reason=None, job_id=None, job_type=None, message=None, status=None):
-        """ShowJobResponse - a model defined in huaweicloud sdk"""
+        """ShowJobResponse
+
+        The model defined in huaweicloud sdk
+
+        :param begin_time: 开始时间。
+        :type begin_time: str
+        :param code: 查询Job的API请求出现错误时，返回的错误码。
+        :type code: str
+        :param end_time: 结束时间。
+        :type end_time: str
+        :param entities: 
+        :type entities: :class:`huaweicloudsdkecs.v2.JobEntities`
+        :param error_code: Job执行失败时的错误码。  Job执行成功后，该值为null。
+        :type error_code: str
+        :param fail_reason: Job执行失败时的错误原因。  Job执行成功后，该值为null。
+        :type fail_reason: str
+        :param job_id: 异步请求的任务ID。
+        :type job_id: str
+        :param job_type: 异步请求的任务类型。
+        :type job_type: str
+        :param message: 查询Job的API请求出现错误时，返回的错误消息。
+        :type message: str
+        :param status: Job的状态。  - SUCCESS：成功。  - RUNNING：运行中。  - FAIL：失败。  - INIT：正在初始化。
+        :type status: str
+        """
         
         super(ShowJobResponse, self).__init__()
 
@@ -103,7 +126,7 @@ class ShowJobResponse(SdkResponse):
         开始时间。
 
         :param begin_time: The begin_time of this ShowJobResponse.
-        :type: str
+        :type begin_time: str
         """
         self._begin_time = begin_time
 
@@ -125,7 +148,7 @@ class ShowJobResponse(SdkResponse):
         查询Job的API请求出现错误时，返回的错误码。
 
         :param code: The code of this ShowJobResponse.
-        :type: str
+        :type code: str
         """
         self._code = code
 
@@ -147,7 +170,7 @@ class ShowJobResponse(SdkResponse):
         结束时间。
 
         :param end_time: The end_time of this ShowJobResponse.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -157,7 +180,7 @@ class ShowJobResponse(SdkResponse):
 
 
         :return: The entities of this ShowJobResponse.
-        :rtype: JobEntities
+        :rtype: :class:`huaweicloudsdkecs.v2.JobEntities`
         """
         return self._entities
 
@@ -167,7 +190,7 @@ class ShowJobResponse(SdkResponse):
 
 
         :param entities: The entities of this ShowJobResponse.
-        :type: JobEntities
+        :type entities: :class:`huaweicloudsdkecs.v2.JobEntities`
         """
         self._entities = entities
 
@@ -189,7 +212,7 @@ class ShowJobResponse(SdkResponse):
         Job执行失败时的错误码。  Job执行成功后，该值为null。
 
         :param error_code: The error_code of this ShowJobResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -211,7 +234,7 @@ class ShowJobResponse(SdkResponse):
         Job执行失败时的错误原因。  Job执行成功后，该值为null。
 
         :param fail_reason: The fail_reason of this ShowJobResponse.
-        :type: str
+        :type fail_reason: str
         """
         self._fail_reason = fail_reason
 
@@ -233,7 +256,7 @@ class ShowJobResponse(SdkResponse):
         异步请求的任务ID。
 
         :param job_id: The job_id of this ShowJobResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -255,7 +278,7 @@ class ShowJobResponse(SdkResponse):
         异步请求的任务类型。
 
         :param job_type: The job_type of this ShowJobResponse.
-        :type: str
+        :type job_type: str
         """
         self._job_type = job_type
 
@@ -277,7 +300,7 @@ class ShowJobResponse(SdkResponse):
         查询Job的API请求出现错误时，返回的错误消息。
 
         :param message: The message of this ShowJobResponse.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -299,7 +322,7 @@ class ShowJobResponse(SdkResponse):
         Job的状态。  - SUCCESS：成功。  - RUNNING：运行中。  - FAIL：失败。  - INIT：正在初始化。
 
         :param status: The status of this ShowJobResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTopicsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ListTopicsRequest:
     }
 
     def __init__(self, instance_id=None, device_id=None, limit=None, offset=None, name=None, topic_permission=None, topic_type=None, is_private=None):
-        """ListTopicsRequest - a model defined in huaweicloud sdk"""
+        """ListTopicsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param device_id: 设备ID
+        :type device_id: int
+        :param limit: 每页显示条目数量，最大数量999，超过999后只返回999
+        :type limit: int
+        :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0
+        :type offset: int
+        :param name: topic名称
+        :type name: str
+        :param topic_permission: topic权限，0为发布，1为订阅
+        :type topic_permission: int
+        :param topic_type: topic类型，0为设备类topic，1为产品类topic
+        :type topic_type: int
+        :param is_private: topic是否为自定义，0为基础topic，1为自定义topic
+        :type is_private: int
+        """
         
         
 
@@ -91,7 +110,7 @@ class ListTopicsRequest:
         实例ID
 
         :param instance_id: The instance_id of this ListTopicsRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -113,7 +132,7 @@ class ListTopicsRequest:
         设备ID
 
         :param device_id: The device_id of this ListTopicsRequest.
-        :type: int
+        :type device_id: int
         """
         self._device_id = device_id
 
@@ -135,7 +154,7 @@ class ListTopicsRequest:
         每页显示条目数量，最大数量999，超过999后只返回999
 
         :param limit: The limit of this ListTopicsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -157,7 +176,7 @@ class ListTopicsRequest:
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
         :param offset: The offset of this ListTopicsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -179,7 +198,7 @@ class ListTopicsRequest:
         topic名称
 
         :param name: The name of this ListTopicsRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -201,7 +220,7 @@ class ListTopicsRequest:
         topic权限，0为发布，1为订阅
 
         :param topic_permission: The topic_permission of this ListTopicsRequest.
-        :type: int
+        :type topic_permission: int
         """
         self._topic_permission = topic_permission
 
@@ -223,7 +242,7 @@ class ListTopicsRequest:
         topic类型，0为设备类topic，1为产品类topic
 
         :param topic_type: The topic_type of this ListTopicsRequest.
-        :type: int
+        :type topic_type: int
         """
         self._topic_type = topic_type
 
@@ -245,7 +264,7 @@ class ListTopicsRequest:
         topic是否为自定义，0为基础topic，1为自定义topic
 
         :param is_private: The is_private of this ListTopicsRequest.
-        :type: int
+        :type is_private: int
         """
         self._is_private = is_private
 

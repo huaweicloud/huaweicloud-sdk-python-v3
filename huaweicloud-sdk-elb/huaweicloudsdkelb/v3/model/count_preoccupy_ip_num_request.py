@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CountPreoccupyIpNumRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class CountPreoccupyIpNumRequest:
     }
 
     def __init__(self, l7_flavor_id=None, ip_target_enable=None, ip_version=None, loadbalancer_id=None, availability_zone_id=None):
-        """CountPreoccupyIpNumRequest - a model defined in huaweicloud sdk"""
+        """CountPreoccupyIpNumRequest
+
+        The model defined in huaweicloud sdk
+
+        :param l7_flavor_id: 负载均衡器七层规格的ID。传入该字段表示计算创建该规格的LB，或变更LB的原七层规格到该规格所需要的预占IP。  适用场景：创建LB，变更LB规格。
+        :type l7_flavor_id: str
+        :param ip_target_enable: 是否开启跨VPC转发。  取值true表示计算创建或变更为开启跨VPC转发的LB的预占IP。  取值false表示计算创建或变更为不开启跨VPC转发的LB的预占IP。不传等价false。  适用场景：创建LB，变更LB规格。
+        :type ip_target_enable: bool
+        :param ip_version: 负载均衡器IP地址类型，取值4，6 。  取值4表示计算创建支持IPv4地址的LB的预占IP。  取值6表示计算创建支持IPv6地址的LB的预占IP。  适用场景：创建LB。   [不支持IPv6，请勿设置为6。](tag:dt,dt_test)
+        :type ip_version: int
+        :param loadbalancer_id: 负载均衡器ID。计算LB规格变更或创建LB中的第一个七层监听器的预占IP。  适用场景：变更LB规格，创建LB中的第一个七层监听器。
+        :type loadbalancer_id: str
+        :param availability_zone_id: 计算创建AZ列表为availability_zone_id的负载局衡器实例的预占IP。  适用场景：创建LB。  使用说明： - 传入loadbalancer_id时，该参数无效。
+        :type availability_zone_id: list[str]
+        """
         
         
 
@@ -78,7 +91,7 @@ class CountPreoccupyIpNumRequest:
         负载均衡器七层规格的ID。传入该字段表示计算创建该规格的LB，或变更LB的原七层规格到该规格所需要的预占IP。  适用场景：创建LB，变更LB规格。
 
         :param l7_flavor_id: The l7_flavor_id of this CountPreoccupyIpNumRequest.
-        :type: str
+        :type l7_flavor_id: str
         """
         self._l7_flavor_id = l7_flavor_id
 
@@ -100,7 +113,7 @@ class CountPreoccupyIpNumRequest:
         是否开启跨VPC转发。  取值true表示计算创建或变更为开启跨VPC转发的LB的预占IP。  取值false表示计算创建或变更为不开启跨VPC转发的LB的预占IP。不传等价false。  适用场景：创建LB，变更LB规格。
 
         :param ip_target_enable: The ip_target_enable of this CountPreoccupyIpNumRequest.
-        :type: bool
+        :type ip_target_enable: bool
         """
         self._ip_target_enable = ip_target_enable
 
@@ -122,7 +135,7 @@ class CountPreoccupyIpNumRequest:
         负载均衡器IP地址类型，取值4，6 。  取值4表示计算创建支持IPv4地址的LB的预占IP。  取值6表示计算创建支持IPv6地址的LB的预占IP。  适用场景：创建LB。   [不支持IPv6，请勿设置为6。](tag:dt,dt_test)
 
         :param ip_version: The ip_version of this CountPreoccupyIpNumRequest.
-        :type: int
+        :type ip_version: int
         """
         self._ip_version = ip_version
 
@@ -144,7 +157,7 @@ class CountPreoccupyIpNumRequest:
         负载均衡器ID。计算LB规格变更或创建LB中的第一个七层监听器的预占IP。  适用场景：变更LB规格，创建LB中的第一个七层监听器。
 
         :param loadbalancer_id: The loadbalancer_id of this CountPreoccupyIpNumRequest.
-        :type: str
+        :type loadbalancer_id: str
         """
         self._loadbalancer_id = loadbalancer_id
 
@@ -166,7 +179,7 @@ class CountPreoccupyIpNumRequest:
         计算创建AZ列表为availability_zone_id的负载局衡器实例的预占IP。  适用场景：创建LB。  使用说明： - 传入loadbalancer_id时，该参数无效。
 
         :param availability_zone_id: The availability_zone_id of this CountPreoccupyIpNumRequest.
-        :type: list[str]
+        :type availability_zone_id: list[str]
         """
         self._availability_zone_id = availability_zone_id
 

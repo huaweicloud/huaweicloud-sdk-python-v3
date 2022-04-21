@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowSqlResultWithJobResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowSqlResultWithJobResponse(SdkResponse):
     }
 
     def __init__(self, sql_results=None):
-        """ShowSqlResultWithJobResponse - a model defined in huaweicloud sdk"""
+        """ShowSqlResultWithJobResponse
+
+        The model defined in huaweicloud sdk
+
+        :param sql_results: SQL语句查询结果。
+        :type sql_results: object
+        """
         
         super(ShowSqlResultWithJobResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class ShowSqlResultWithJobResponse(SdkResponse):
         SQL语句查询结果。
 
         :param sql_results: The sql_results of this ShowSqlResultWithJobResponse.
-        :type: object
+        :type sql_results: object
         """
         self._sql_results = sql_results
 

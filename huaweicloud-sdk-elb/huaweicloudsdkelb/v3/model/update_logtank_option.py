@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateLogtankOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateLogtankOption:
     }
 
     def __init__(self, log_group_id=None, log_topic_id=None):
-        """UpdateLogtankOption - a model defined in huaweicloud sdk"""
+        """UpdateLogtankOption
+
+        The model defined in huaweicloud sdk
+
+        :param log_group_id: 日志组别id，其他（非ELB）服务提供
+        :type log_group_id: str
+        :param log_topic_id: 日志订阅主题id，其他（非ELB）服务提供
+        :type log_topic_id: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class UpdateLogtankOption:
         日志组别id，其他（非ELB）服务提供
 
         :param log_group_id: The log_group_id of this UpdateLogtankOption.
-        :type: str
+        :type log_group_id: str
         """
         self._log_group_id = log_group_id
 
@@ -85,7 +92,7 @@ class UpdateLogtankOption:
         日志订阅主题id，其他（非ELB）服务提供
 
         :param log_topic_id: The log_topic_id of this UpdateLogtankOption.
-        :type: str
+        :type log_topic_id: str
         """
         self._log_topic_id = log_topic_id
 

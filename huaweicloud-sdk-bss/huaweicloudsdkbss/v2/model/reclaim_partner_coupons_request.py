@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ReclaimPartnerCouponsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ReclaimPartnerCouponsRequest:
     }
 
     def __init__(self, body=None):
-        """ReclaimPartnerCouponsRequest - a model defined in huaweicloud sdk"""
+        """ReclaimPartnerCouponsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the ReclaimPartnerCouponsRequest
+        :type body: :class:`huaweicloudsdkbss.v2.ReclaimPartnerCouponsReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class ReclaimPartnerCouponsRequest:
 
 
         :return: The body of this ReclaimPartnerCouponsRequest.
-        :rtype: ReclaimPartnerCouponsReq
+        :rtype: :class:`huaweicloudsdkbss.v2.ReclaimPartnerCouponsReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class ReclaimPartnerCouponsRequest:
 
 
         :param body: The body of this ReclaimPartnerCouponsRequest.
-        :type: ReclaimPartnerCouponsReq
+        :type body: :class:`huaweicloudsdkbss.v2.ReclaimPartnerCouponsReq`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPipelineJobsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ListPipelineJobsRequest:
     }
 
     def __init__(self, data_store_id=None, data_store_group_id=None, data_source_id=None, pipeline_name=None, operator_class_name=None, offset=None, limit=None, sync_status=None):
-        """ListPipelineJobsRequest - a model defined in huaweicloud sdk"""
+        """ListPipelineJobsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param data_store_id: 数据存储Id
+        :type data_store_id: str
+        :param data_store_group_id: 存储组Id
+        :type data_store_group_id: str
+        :param data_source_id: 数据源Id
+        :type data_source_id: str
+        :param pipeline_name: 管道名称
+        :type pipeline_name: str
+        :param operator_class_name: 包含的管道类名
+        :type operator_class_name: str
+        :param offset: 偏移量，表示从此偏移量开始查询，offset大于等于0
+        :type offset: int
+        :param limit: 每页显示的条目数量
+        :type limit: int
+        :param sync_status: 立即同步作业状态，默认是false
+        :type sync_status: bool
+        """
         
         
 
@@ -93,7 +112,7 @@ class ListPipelineJobsRequest:
         数据存储Id
 
         :param data_store_id: The data_store_id of this ListPipelineJobsRequest.
-        :type: str
+        :type data_store_id: str
         """
         self._data_store_id = data_store_id
 
@@ -115,7 +134,7 @@ class ListPipelineJobsRequest:
         存储组Id
 
         :param data_store_group_id: The data_store_group_id of this ListPipelineJobsRequest.
-        :type: str
+        :type data_store_group_id: str
         """
         self._data_store_group_id = data_store_group_id
 
@@ -137,7 +156,7 @@ class ListPipelineJobsRequest:
         数据源Id
 
         :param data_source_id: The data_source_id of this ListPipelineJobsRequest.
-        :type: str
+        :type data_source_id: str
         """
         self._data_source_id = data_source_id
 
@@ -159,7 +178,7 @@ class ListPipelineJobsRequest:
         管道名称
 
         :param pipeline_name: The pipeline_name of this ListPipelineJobsRequest.
-        :type: str
+        :type pipeline_name: str
         """
         self._pipeline_name = pipeline_name
 
@@ -181,7 +200,7 @@ class ListPipelineJobsRequest:
         包含的管道类名
 
         :param operator_class_name: The operator_class_name of this ListPipelineJobsRequest.
-        :type: str
+        :type operator_class_name: str
         """
         self._operator_class_name = operator_class_name
 
@@ -203,7 +222,7 @@ class ListPipelineJobsRequest:
         偏移量，表示从此偏移量开始查询，offset大于等于0
 
         :param offset: The offset of this ListPipelineJobsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -225,7 +244,7 @@ class ListPipelineJobsRequest:
         每页显示的条目数量
 
         :param limit: The limit of this ListPipelineJobsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -247,7 +266,7 @@ class ListPipelineJobsRequest:
         立即同步作业状态，默认是false
 
         :param sync_status: The sync_status of this ListPipelineJobsRequest.
-        :type: bool
+        :type sync_status: bool
         """
         self._sync_status = sync_status
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateWebSocketTokenResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateWebSocketTokenResponse(SdkResponse):
     }
 
     def __init__(self, web_socket_token=None):
-        """CreateWebSocketTokenResponse - a model defined in huaweicloud sdk"""
+        """CreateWebSocketTokenResponse
+
+        The model defined in huaweicloud sdk
+
+        :param web_socket_token: websocket建链Token。
+        :type web_socket_token: str
+        """
         
         super(CreateWebSocketTokenResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class CreateWebSocketTokenResponse(SdkResponse):
         websocket建链Token。
 
         :param web_socket_token: The web_socket_token of this CreateWebSocketTokenResponse.
-        :type: str
+        :type web_socket_token: str
         """
         self._web_socket_token = web_socket_token
 

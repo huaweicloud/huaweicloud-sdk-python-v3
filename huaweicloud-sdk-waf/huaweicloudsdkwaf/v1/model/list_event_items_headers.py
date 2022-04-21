@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListEventItemsHeaders:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListEventItemsHeaders:
     }
 
     def __init__(self, content_length=None, host=None, content_type=None, user_agent=None, accept=None):
-        """ListEventItemsHeaders - a model defined in huaweicloud sdk"""
+        """ListEventItemsHeaders
+
+        The model defined in huaweicloud sdk
+
+        :param content_length: 请求长度
+        :type content_length: str
+        :param host: 域名
+        :type host: str
+        :param content_type: 内容类型
+        :type content_type: str
+        :param user_agent: 代理
+        :type user_agent: str
+        :param accept: 接收内容类型
+        :type accept: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class ListEventItemsHeaders:
         请求长度
 
         :param content_length: The content_length of this ListEventItemsHeaders.
-        :type: str
+        :type content_length: str
         """
         self._content_length = content_length
 
@@ -100,7 +113,7 @@ class ListEventItemsHeaders:
         域名
 
         :param host: The host of this ListEventItemsHeaders.
-        :type: str
+        :type host: str
         """
         self._host = host
 
@@ -122,7 +135,7 @@ class ListEventItemsHeaders:
         内容类型
 
         :param content_type: The content_type of this ListEventItemsHeaders.
-        :type: str
+        :type content_type: str
         """
         self._content_type = content_type
 
@@ -144,7 +157,7 @@ class ListEventItemsHeaders:
         代理
 
         :param user_agent: The user_agent of this ListEventItemsHeaders.
-        :type: str
+        :type user_agent: str
         """
         self._user_agent = user_agent
 
@@ -166,7 +179,7 @@ class ListEventItemsHeaders:
         接收内容类型
 
         :param accept: The accept of this ListEventItemsHeaders.
-        :type: str
+        :type accept: str
         """
         self._accept = accept
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteImageSyncRepoRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteImageSyncRepoRequestBody:
     }
 
     def __init__(self, remote_region_id=None, remote_namespace=None):
-        """DeleteImageSyncRepoRequestBody - a model defined in huaweicloud sdk"""
+        """DeleteImageSyncRepoRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param remote_region_id: 目标region ID。
+        :type remote_region_id: str
+        :param remote_namespace: 目标组织
+        :type remote_namespace: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class DeleteImageSyncRepoRequestBody:
         目标region ID。
 
         :param remote_region_id: The remote_region_id of this DeleteImageSyncRepoRequestBody.
-        :type: str
+        :type remote_region_id: str
         """
         self._remote_region_id = remote_region_id
 
@@ -83,7 +90,7 @@ class DeleteImageSyncRepoRequestBody:
         目标组织
 
         :param remote_namespace: The remote_namespace of this DeleteImageSyncRepoRequestBody.
-        :type: str
+        :type remote_namespace: str
         """
         self._remote_namespace = remote_namespace
 

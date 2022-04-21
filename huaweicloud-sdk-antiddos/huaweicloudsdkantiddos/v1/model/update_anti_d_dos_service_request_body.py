@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateAntiDDosServiceRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class UpdateAntiDDosServiceRequestBody:
     }
 
     def __init__(self, app_type_id=None, cleaning_access_pos_id=None, enable_l7=None, http_request_pos_id=None, traffic_pos_id=None):
-        """UpdateAntiDDosServiceRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateAntiDDosServiceRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param app_type_id: 应用类型ID，可选取值： - 0 - 1
+        :type app_type_id: int
+        :param cleaning_access_pos_id: 清洗时访问限制分段ID，取值范围：1～8
+        :type cleaning_access_pos_id: int
+        :param enable_l7: 是否开启L7层防护
+        :type enable_l7: bool
+        :param http_request_pos_id: HTTP请求数分段ID，取值范围：1～15
+        :type http_request_pos_id: int
+        :param traffic_pos_id: 流量分段ID，取值范围：1～9
+        :type traffic_pos_id: int
+        """
         
         
 
@@ -73,7 +86,7 @@ class UpdateAntiDDosServiceRequestBody:
         应用类型ID，可选取值： - 0 - 1
 
         :param app_type_id: The app_type_id of this UpdateAntiDDosServiceRequestBody.
-        :type: int
+        :type app_type_id: int
         """
         self._app_type_id = app_type_id
 
@@ -95,7 +108,7 @@ class UpdateAntiDDosServiceRequestBody:
         清洗时访问限制分段ID，取值范围：1～8
 
         :param cleaning_access_pos_id: The cleaning_access_pos_id of this UpdateAntiDDosServiceRequestBody.
-        :type: int
+        :type cleaning_access_pos_id: int
         """
         self._cleaning_access_pos_id = cleaning_access_pos_id
 
@@ -117,7 +130,7 @@ class UpdateAntiDDosServiceRequestBody:
         是否开启L7层防护
 
         :param enable_l7: The enable_l7 of this UpdateAntiDDosServiceRequestBody.
-        :type: bool
+        :type enable_l7: bool
         """
         self._enable_l7 = enable_l7
 
@@ -139,7 +152,7 @@ class UpdateAntiDDosServiceRequestBody:
         HTTP请求数分段ID，取值范围：1～15
 
         :param http_request_pos_id: The http_request_pos_id of this UpdateAntiDDosServiceRequestBody.
-        :type: int
+        :type http_request_pos_id: int
         """
         self._http_request_pos_id = http_request_pos_id
 
@@ -161,7 +174,7 @@ class UpdateAntiDDosServiceRequestBody:
         流量分段ID，取值范围：1～9
 
         :param traffic_pos_id: The traffic_pos_id of this UpdateAntiDDosServiceRequestBody.
-        :type: int
+        :type traffic_pos_id: int
         """
         self._traffic_pos_id = traffic_pos_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AppConfigModifyRequestV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class AppConfigModifyRequestV2:
     }
 
     def __init__(self, config_type=None, config_value=None, description=None):
-        """AppConfigModifyRequestV2 - a model defined in huaweicloud sdk"""
+        """AppConfigModifyRequestV2
+
+        The model defined in huaweicloud sdk
+
+        :param config_type: 应用配置类型： - variable：模板变量 - password：密码 - certificate：证书
+        :type config_type: str
+        :param config_value: 应用配置值： - config_type &#x3D; variable：config_value为模板变量的值 - config_type &#x3D; password：config_value为密码值 - config_type &#x3D; certificate：config_value需要包含证书public_key（必填），私钥private_key（必填）和密码passphrase（非必填），格式如：\&quot;{\\\\\&quot;public_key\\\\\&quot;: \\\&quot;\\,\\\\\&quot;private_key\\\\\&quot;:\\\\\&quot;\\\\\&quot;,\\\\\&quot;passphrase\\\\\&quot;:\\\\\&quot;\\\\\&quot;}\&quot;
+        :type config_value: str
+        :param description: 应用配置描述
+        :type description: str
+        """
         
         
 
@@ -67,7 +76,7 @@ class AppConfigModifyRequestV2:
         应用配置类型： - variable：模板变量 - password：密码 - certificate：证书
 
         :param config_type: The config_type of this AppConfigModifyRequestV2.
-        :type: str
+        :type config_type: str
         """
         self._config_type = config_type
 
@@ -89,7 +98,7 @@ class AppConfigModifyRequestV2:
         应用配置值： - config_type = variable：config_value为模板变量的值 - config_type = password：config_value为密码值 - config_type = certificate：config_value需要包含证书public_key（必填），私钥private_key（必填）和密码passphrase（非必填），格式如：\"{\\\\\"public_key\\\\\": \\\"\\,\\\\\"private_key\\\\\":\\\\\"\\\\\",\\\\\"passphrase\\\\\":\\\\\"\\\\\"}\"
 
         :param config_value: The config_value of this AppConfigModifyRequestV2.
-        :type: str
+        :type config_value: str
         """
         self._config_value = config_value
 
@@ -111,7 +120,7 @@ class AppConfigModifyRequestV2:
         应用配置描述
 
         :param description: The description of this AppConfigModifyRequestV2.
-        :type: str
+        :type description: str
         """
         self._description = description
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateInstanceRemarkRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateInstanceRemarkRequestBody:
     }
 
     def __init__(self, remark=None):
-        """UpdateInstanceRemarkRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateInstanceRemarkRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param remark: 实例备注内容。 长度不能超过64位，不支持回车和&gt;!&lt;\&quot;&amp;&#39;&#x3D;特殊字符。
+        :type remark: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class UpdateInstanceRemarkRequestBody:
         实例备注内容。 长度不能超过64位，不支持回车和>!<\"&'=特殊字符。
 
         :param remark: The remark of this UpdateInstanceRemarkRequestBody.
-        :type: str
+        :type remark: str
         """
         self._remark = remark
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneCheckProjectPermissionForGroupRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class KeystoneCheckProjectPermissionForGroupRequest:
     }
 
     def __init__(self, project_id=None, group_id=None, role_id=None):
-        """KeystoneCheckProjectPermissionForGroupRequest - a model defined in huaweicloud sdk"""
+        """KeystoneCheckProjectPermissionForGroupRequest
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: 项目ID，获取方式请参见：[获取项目名称、项目ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
+        :type project_id: str
+        :param group_id: 用户组ID，获取方式请参见：[获取用户组ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
+        :type group_id: str
+        :param role_id: 权限ID，获取方式请参见：[获取权限名、权限ID](https://support.huaweicloud.com/api-iam/iam_10_0001.html)。
+        :type role_id: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class KeystoneCheckProjectPermissionForGroupRequest:
         项目ID，获取方式请参见：[获取项目名称、项目ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param project_id: The project_id of this KeystoneCheckProjectPermissionForGroupRequest.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -87,7 +96,7 @@ class KeystoneCheckProjectPermissionForGroupRequest:
         用户组ID，获取方式请参见：[获取用户组ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param group_id: The group_id of this KeystoneCheckProjectPermissionForGroupRequest.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -109,7 +118,7 @@ class KeystoneCheckProjectPermissionForGroupRequest:
         权限ID，获取方式请参见：[获取权限名、权限ID](https://support.huaweicloud.com/api-iam/iam_10_0001.html)。
 
         :param role_id: The role_id of this KeystoneCheckProjectPermissionForGroupRequest.
-        :type: str
+        :type role_id: str
         """
         self._role_id = role_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListLabelValuesAomPromGetRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListLabelValuesAomPromGetRequest:
     }
 
     def __init__(self, label_name=None):
-        """ListLabelValuesAomPromGetRequest - a model defined in huaweicloud sdk"""
+        """ListLabelValuesAomPromGetRequest
+
+        The model defined in huaweicloud sdk
+
+        :param label_name: 查询所用标签。
+        :type label_name: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ListLabelValuesAomPromGetRequest:
         查询所用标签。
 
         :param label_name: The label_name of this ListLabelValuesAomPromGetRequest.
-        :type: str
+        :type label_name: str
         """
         self._label_name = label_name
 

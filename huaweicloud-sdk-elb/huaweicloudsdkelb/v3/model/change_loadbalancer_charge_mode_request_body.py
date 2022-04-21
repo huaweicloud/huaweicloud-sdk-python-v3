@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ChangeLoadbalancerChargeModeRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ChangeLoadbalancerChargeModeRequestBody:
     }
 
     def __init__(self, loadbalancer_ids=None, charge_mode=None, prepaid_options=None):
-        """ChangeLoadbalancerChargeModeRequestBody - a model defined in huaweicloud sdk"""
+        """ChangeLoadbalancerChargeModeRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param loadbalancer_ids: 需要修改计费类型的负载均衡器ID列表。
+        :type loadbalancer_ids: list[str]
+        :param charge_mode: 计费模式。取值： - prepaid：包周期计费。
+        :type charge_mode: str
+        :param prepaid_options: 
+        :type prepaid_options: :class:`huaweicloudsdkelb.v3.PrepaidChangeChargeModeOption`
+        """
         
         
 
@@ -66,7 +75,7 @@ class ChangeLoadbalancerChargeModeRequestBody:
         需要修改计费类型的负载均衡器ID列表。
 
         :param loadbalancer_ids: The loadbalancer_ids of this ChangeLoadbalancerChargeModeRequestBody.
-        :type: list[str]
+        :type loadbalancer_ids: list[str]
         """
         self._loadbalancer_ids = loadbalancer_ids
 
@@ -88,7 +97,7 @@ class ChangeLoadbalancerChargeModeRequestBody:
         计费模式。取值： - prepaid：包周期计费。
 
         :param charge_mode: The charge_mode of this ChangeLoadbalancerChargeModeRequestBody.
-        :type: str
+        :type charge_mode: str
         """
         self._charge_mode = charge_mode
 
@@ -98,7 +107,7 @@ class ChangeLoadbalancerChargeModeRequestBody:
 
 
         :return: The prepaid_options of this ChangeLoadbalancerChargeModeRequestBody.
-        :rtype: PrepaidChangeChargeModeOption
+        :rtype: :class:`huaweicloudsdkelb.v3.PrepaidChangeChargeModeOption`
         """
         return self._prepaid_options
 
@@ -108,7 +117,7 @@ class ChangeLoadbalancerChargeModeRequestBody:
 
 
         :param prepaid_options: The prepaid_options of this ChangeLoadbalancerChargeModeRequestBody.
-        :type: PrepaidChangeChargeModeOption
+        :type prepaid_options: :class:`huaweicloudsdkelb.v3.PrepaidChangeChargeModeOption`
         """
         self._prepaid_options = prepaid_options
 

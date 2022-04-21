@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateRoutingRuleResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class CreateRoutingRuleResponse(SdkResponse):
     }
 
     def __init__(self, rule_id=None, rule_name=None, description=None, subject=None, app_type=None, app_id=None, select=None, where=None, active=None):
-        """CreateRoutingRuleResponse - a model defined in huaweicloud sdk"""
+        """CreateRoutingRuleResponse
+
+        The model defined in huaweicloud sdk
+
+        :param rule_id: 规则触发条件ID，用于唯一标识一个规则触发条件，在创建规则条件时由物联网平台分配获得。
+        :type rule_id: str
+        :param rule_name: 用户自定义的规则名称。
+        :type rule_name: str
+        :param description: 用户自定义的规则描述。
+        :type description: str
+        :param subject: 
+        :type subject: :class:`huaweicloudsdkiotda.v5.RoutingRuleSubject`
+        :param app_type: 租户规则的生效范围，取值如下： - GLOBAL：生效范围为租户级 - APP：生效范围为资源空间级。 
+        :type app_type: str
+        :param app_id: 资源空间ID
+        :type app_id: str
+        :param select: 用户自定义sql select语句，最大长度500，该参数仅供标准版和企业版用户使用。
+        :type select: str
+        :param where: 用户自定义sql where语句，最大长度500，该参数仅供标准版和企业版用户使用。
+        :type where: str
+        :param active: 规则条件的状态是否为激活。
+        :type active: bool
+        """
         
         super(CreateRoutingRuleResponse, self).__init__()
 
@@ -98,7 +119,7 @@ class CreateRoutingRuleResponse(SdkResponse):
         规则触发条件ID，用于唯一标识一个规则触发条件，在创建规则条件时由物联网平台分配获得。
 
         :param rule_id: The rule_id of this CreateRoutingRuleResponse.
-        :type: str
+        :type rule_id: str
         """
         self._rule_id = rule_id
 
@@ -120,7 +141,7 @@ class CreateRoutingRuleResponse(SdkResponse):
         用户自定义的规则名称。
 
         :param rule_name: The rule_name of this CreateRoutingRuleResponse.
-        :type: str
+        :type rule_name: str
         """
         self._rule_name = rule_name
 
@@ -142,7 +163,7 @@ class CreateRoutingRuleResponse(SdkResponse):
         用户自定义的规则描述。
 
         :param description: The description of this CreateRoutingRuleResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -152,7 +173,7 @@ class CreateRoutingRuleResponse(SdkResponse):
 
 
         :return: The subject of this CreateRoutingRuleResponse.
-        :rtype: RoutingRuleSubject
+        :rtype: :class:`huaweicloudsdkiotda.v5.RoutingRuleSubject`
         """
         return self._subject
 
@@ -162,7 +183,7 @@ class CreateRoutingRuleResponse(SdkResponse):
 
 
         :param subject: The subject of this CreateRoutingRuleResponse.
-        :type: RoutingRuleSubject
+        :type subject: :class:`huaweicloudsdkiotda.v5.RoutingRuleSubject`
         """
         self._subject = subject
 
@@ -184,7 +205,7 @@ class CreateRoutingRuleResponse(SdkResponse):
         租户规则的生效范围，取值如下： - GLOBAL：生效范围为租户级 - APP：生效范围为资源空间级。 
 
         :param app_type: The app_type of this CreateRoutingRuleResponse.
-        :type: str
+        :type app_type: str
         """
         self._app_type = app_type
 
@@ -206,7 +227,7 @@ class CreateRoutingRuleResponse(SdkResponse):
         资源空间ID
 
         :param app_id: The app_id of this CreateRoutingRuleResponse.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -228,7 +249,7 @@ class CreateRoutingRuleResponse(SdkResponse):
         用户自定义sql select语句，最大长度500，该参数仅供标准版和企业版用户使用。
 
         :param select: The select of this CreateRoutingRuleResponse.
-        :type: str
+        :type select: str
         """
         self._select = select
 
@@ -250,7 +271,7 @@ class CreateRoutingRuleResponse(SdkResponse):
         用户自定义sql where语句，最大长度500，该参数仅供标准版和企业版用户使用。
 
         :param where: The where of this CreateRoutingRuleResponse.
-        :type: str
+        :type where: str
         """
         self._where = where
 
@@ -272,7 +293,7 @@ class CreateRoutingRuleResponse(SdkResponse):
         规则条件的状态是否为激活。
 
         :param active: The active of this CreateRoutingRuleResponse.
-        :type: bool
+        :type active: bool
         """
         self._active = active
 

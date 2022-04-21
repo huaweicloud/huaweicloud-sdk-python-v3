@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BindHost:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class BindHost:
     }
 
     def __init__(self, id=None, hostname=None, waf_type=None, mode=None):
-        """BindHost - a model defined in huaweicloud sdk"""
+        """BindHost
+
+        The model defined in huaweicloud sdk
+
+        :param id: 域名ID
+        :type id: str
+        :param hostname: 域名
+        :type hostname: str
+        :param waf_type: 域名对应模式：cloud（云模式）/premium（独享模式）
+        :type waf_type: str
+        :param mode: 仅独享模式涉及特殊域名模式
+        :type mode: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class BindHost:
         域名ID
 
         :param id: The id of this BindHost.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -95,7 +106,7 @@ class BindHost:
         域名
 
         :param hostname: The hostname of this BindHost.
-        :type: str
+        :type hostname: str
         """
         self._hostname = hostname
 
@@ -117,7 +128,7 @@ class BindHost:
         域名对应模式：cloud（云模式）/premium（独享模式）
 
         :param waf_type: The waf_type of this BindHost.
-        :type: str
+        :type waf_type: str
         """
         self._waf_type = waf_type
 
@@ -139,7 +150,7 @@ class BindHost:
         仅独享模式涉及特殊域名模式
 
         :param mode: The mode of this BindHost.
-        :type: str
+        :type mode: str
         """
         self._mode = mode
 

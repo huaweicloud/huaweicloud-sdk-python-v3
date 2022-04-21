@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RuleRef:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RuleRef:
     }
 
     def __init__(self, id=None):
-        """RuleRef - a model defined in huaweicloud sdk"""
+        """RuleRef
+
+        The model defined in huaweicloud sdk
+
+        :param id: 规则ID。
+        :type id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class RuleRef:
         规则ID。
 
         :param id: The id of this RuleRef.
-        :type: str
+        :type id: str
         """
         self._id = id
 

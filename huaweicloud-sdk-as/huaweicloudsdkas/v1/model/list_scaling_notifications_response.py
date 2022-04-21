@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListScalingNotificationsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListScalingNotificationsResponse(SdkResponse):
     }
 
     def __init__(self, topics=None):
-        """ListScalingNotificationsResponse - a model defined in huaweicloud sdk"""
+        """ListScalingNotificationsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param topics: 伸缩组通知列表。
+        :type topics: list[:class:`huaweicloudsdkas.v1.Topics`]
+        """
         
         super(ListScalingNotificationsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListScalingNotificationsResponse(SdkResponse):
         伸缩组通知列表。
 
         :return: The topics of this ListScalingNotificationsResponse.
-        :rtype: list[Topics]
+        :rtype: list[:class:`huaweicloudsdkas.v1.Topics`]
         """
         return self._topics
 
@@ -58,7 +63,7 @@ class ListScalingNotificationsResponse(SdkResponse):
         伸缩组通知列表。
 
         :param topics: The topics of this ListScalingNotificationsResponse.
-        :type: list[Topics]
+        :type topics: list[:class:`huaweicloudsdkas.v1.Topics`]
         """
         self._topics = topics
 

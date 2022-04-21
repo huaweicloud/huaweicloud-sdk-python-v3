@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RuleListItem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class RuleListItem:
     }
 
     def __init__(self, rule_set=None, rule_id=None, rule_language=None, rule_name=None, rule_severity=None, rule_tages=None, right_example=None, error_example=None, revise_opinion=None, rule_desc=None):
-        """RuleListItem - a model defined in huaweicloud sdk"""
+        """RuleListItem
+
+        The model defined in huaweicloud sdk
+
+        :param rule_set: 规则集规范分类
+        :type rule_set: str
+        :param rule_id: 规则id
+        :type rule_id: str
+        :param rule_language: 规则所属语言
+        :type rule_language: str
+        :param rule_name: 规则名称
+        :type rule_name: str
+        :param rule_severity: 规则问题级别
+        :type rule_severity: str
+        :param rule_tages: 规则标签
+        :type rule_tages: str
+        :param right_example: 正确示例
+        :type right_example: str
+        :param error_example: 错误示例
+        :type error_example: str
+        :param revise_opinion: 修改建议
+        :type revise_opinion: str
+        :param rule_desc: 规则描述
+        :type rule_desc: str
+        """
         
         
 
@@ -103,7 +126,7 @@ class RuleListItem:
         规则集规范分类
 
         :param rule_set: The rule_set of this RuleListItem.
-        :type: str
+        :type rule_set: str
         """
         self._rule_set = rule_set
 
@@ -125,7 +148,7 @@ class RuleListItem:
         规则id
 
         :param rule_id: The rule_id of this RuleListItem.
-        :type: str
+        :type rule_id: str
         """
         self._rule_id = rule_id
 
@@ -147,7 +170,7 @@ class RuleListItem:
         规则所属语言
 
         :param rule_language: The rule_language of this RuleListItem.
-        :type: str
+        :type rule_language: str
         """
         self._rule_language = rule_language
 
@@ -169,7 +192,7 @@ class RuleListItem:
         规则名称
 
         :param rule_name: The rule_name of this RuleListItem.
-        :type: str
+        :type rule_name: str
         """
         self._rule_name = rule_name
 
@@ -191,7 +214,7 @@ class RuleListItem:
         规则问题级别
 
         :param rule_severity: The rule_severity of this RuleListItem.
-        :type: str
+        :type rule_severity: str
         """
         self._rule_severity = rule_severity
 
@@ -213,7 +236,7 @@ class RuleListItem:
         规则标签
 
         :param rule_tages: The rule_tages of this RuleListItem.
-        :type: str
+        :type rule_tages: str
         """
         self._rule_tages = rule_tages
 
@@ -235,7 +258,7 @@ class RuleListItem:
         正确示例
 
         :param right_example: The right_example of this RuleListItem.
-        :type: str
+        :type right_example: str
         """
         self._right_example = right_example
 
@@ -257,7 +280,7 @@ class RuleListItem:
         错误示例
 
         :param error_example: The error_example of this RuleListItem.
-        :type: str
+        :type error_example: str
         """
         self._error_example = error_example
 
@@ -279,7 +302,7 @@ class RuleListItem:
         修改建议
 
         :param revise_opinion: The revise_opinion of this RuleListItem.
-        :type: str
+        :type revise_opinion: str
         """
         self._revise_opinion = revise_opinion
 
@@ -301,7 +324,7 @@ class RuleListItem:
         规则描述
 
         :param rule_desc: The rule_desc of this RuleListItem.
-        :type: str
+        :type rule_desc: str
         """
         self._rule_desc = rule_desc
 

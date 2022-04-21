@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateVpcChannelV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateVpcChannelV2Request:
     }
 
     def __init__(self, instance_id=None, vpc_channel_id=None, body=None):
-        """UpdateVpcChannelV2Request - a model defined in huaweicloud sdk"""
+        """UpdateVpcChannelV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param vpc_channel_id: VPC通道的编号
+        :type vpc_channel_id: str
+        :param body: Body of the UpdateVpcChannelV2Request
+        :type body: :class:`huaweicloudsdkroma.v2.VpcCreate`
+        """
         
         
 
@@ -66,7 +75,7 @@ class UpdateVpcChannelV2Request:
         实例ID
 
         :param instance_id: The instance_id of this UpdateVpcChannelV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -88,7 +97,7 @@ class UpdateVpcChannelV2Request:
         VPC通道的编号
 
         :param vpc_channel_id: The vpc_channel_id of this UpdateVpcChannelV2Request.
-        :type: str
+        :type vpc_channel_id: str
         """
         self._vpc_channel_id = vpc_channel_id
 
@@ -98,7 +107,7 @@ class UpdateVpcChannelV2Request:
 
 
         :return: The body of this UpdateVpcChannelV2Request.
-        :rtype: VpcCreate
+        :rtype: :class:`huaweicloudsdkroma.v2.VpcCreate`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class UpdateVpcChannelV2Request:
 
 
         :param body: The body of this UpdateVpcChannelV2Request.
-        :type: VpcCreate
+        :type body: :class:`huaweicloudsdkroma.v2.VpcCreate`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDeviceShadowDesiredDataResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateDeviceShadowDesiredDataResponse(SdkResponse):
     }
 
     def __init__(self, device_id=None, shadow=None):
-        """UpdateDeviceShadowDesiredDataResponse - a model defined in huaweicloud sdk"""
+        """UpdateDeviceShadowDesiredDataResponse
+
+        The model defined in huaweicloud sdk
+
+        :param device_id: 设备ID，用于唯一标识一个设备。在注册设备时直接指定，或者由物联网平台分配获得。由物联网平台分配时，生成规则为\&quot;product_id\&quot; + \&quot;_\&quot; + \&quot;node_id\&quot;拼接而成。
+        :type device_id: str
+        :param shadow: 设备影子数据结构体。
+        :type shadow: list[:class:`huaweicloudsdkiotda.v5.DeviceShadowData`]
+        """
         
         super(UpdateDeviceShadowDesiredDataResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class UpdateDeviceShadowDesiredDataResponse(SdkResponse):
         设备ID，用于唯一标识一个设备。在注册设备时直接指定，或者由物联网平台分配获得。由物联网平台分配时，生成规则为\"product_id\" + \"_\" + \"node_id\"拼接而成。
 
         :param device_id: The device_id of this UpdateDeviceShadowDesiredDataResponse.
-        :type: str
+        :type device_id: str
         """
         self._device_id = device_id
 
@@ -74,7 +81,7 @@ class UpdateDeviceShadowDesiredDataResponse(SdkResponse):
         设备影子数据结构体。
 
         :return: The shadow of this UpdateDeviceShadowDesiredDataResponse.
-        :rtype: list[DeviceShadowData]
+        :rtype: list[:class:`huaweicloudsdkiotda.v5.DeviceShadowData`]
         """
         return self._shadow
 
@@ -85,7 +92,7 @@ class UpdateDeviceShadowDesiredDataResponse(SdkResponse):
         设备影子数据结构体。
 
         :param shadow: The shadow of this UpdateDeviceShadowDesiredDataResponse.
-        :type: list[DeviceShadowData]
+        :type shadow: list[:class:`huaweicloudsdkiotda.v5.DeviceShadowData`]
         """
         self._shadow = shadow
 

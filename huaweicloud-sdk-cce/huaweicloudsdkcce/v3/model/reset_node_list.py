@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResetNodeList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ResetNodeList:
     }
 
     def __init__(self, api_version=None, kind=None, node_list=None):
-        """ResetNodeList - a model defined in huaweicloud sdk"""
+        """ResetNodeList
+
+        The model defined in huaweicloud sdk
+
+        :param api_version: API版本，固定值“v3”。
+        :type api_version: str
+        :param kind: API类型，固定值“List”。
+        :type kind: str
+        :param node_list: 重置节点列表
+        :type node_list: list[:class:`huaweicloudsdkcce.v3.ResetNode`]
+        """
         
         
 
@@ -65,7 +74,7 @@ class ResetNodeList:
         API版本，固定值“v3”。
 
         :param api_version: The api_version of this ResetNodeList.
-        :type: str
+        :type api_version: str
         """
         self._api_version = api_version
 
@@ -87,7 +96,7 @@ class ResetNodeList:
         API类型，固定值“List”。
 
         :param kind: The kind of this ResetNodeList.
-        :type: str
+        :type kind: str
         """
         self._kind = kind
 
@@ -98,7 +107,7 @@ class ResetNodeList:
         重置节点列表
 
         :return: The node_list of this ResetNodeList.
-        :rtype: list[ResetNode]
+        :rtype: list[:class:`huaweicloudsdkcce.v3.ResetNode`]
         """
         return self._node_list
 
@@ -109,7 +118,7 @@ class ResetNodeList:
         重置节点列表
 
         :param node_list: The node_list of this ResetNodeList.
-        :type: list[ResetNode]
+        :type node_list: list[:class:`huaweicloudsdkcce.v3.ResetNode`]
         """
         self._node_list = node_list
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteBlockchainRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class DeleteBlockchainRequest:
     }
 
     def __init__(self, blockchain_id=None, is_delete_storage=None, is_delete_obs=None, is_delete_resource=None):
-        """DeleteBlockchainRequest - a model defined in huaweicloud sdk"""
+        """DeleteBlockchainRequest
+
+        The model defined in huaweicloud sdk
+
+        :param blockchain_id: bcs 服务id
+        :type blockchain_id: str
+        :param is_delete_storage: [是否删除存储，IEF模式下不用填写](tag:online,g42)[是否删除存储](tag:hcs)
+        :type is_delete_storage: bool
+        :param is_delete_obs: [是否删除obs，IEF模式下不用填写](tag:online,g42)[是否删除obs](tag:hcs)
+        :type is_delete_obs: bool
+        :param is_delete_resource: 是否删除底层CCE资源，IEF模式下不用填写
+        :type is_delete_resource: bool
+        """
         
         
 
@@ -72,7 +83,7 @@ class DeleteBlockchainRequest:
         bcs 服务id
 
         :param blockchain_id: The blockchain_id of this DeleteBlockchainRequest.
-        :type: str
+        :type blockchain_id: str
         """
         self._blockchain_id = blockchain_id
 
@@ -94,7 +105,7 @@ class DeleteBlockchainRequest:
         [是否删除存储，IEF模式下不用填写](tag:online,g42)[是否删除存储](tag:hcs)
 
         :param is_delete_storage: The is_delete_storage of this DeleteBlockchainRequest.
-        :type: bool
+        :type is_delete_storage: bool
         """
         self._is_delete_storage = is_delete_storage
 
@@ -116,7 +127,7 @@ class DeleteBlockchainRequest:
         [是否删除obs，IEF模式下不用填写](tag:online,g42)[是否删除obs](tag:hcs)
 
         :param is_delete_obs: The is_delete_obs of this DeleteBlockchainRequest.
-        :type: bool
+        :type is_delete_obs: bool
         """
         self._is_delete_obs = is_delete_obs
 
@@ -138,7 +149,7 @@ class DeleteBlockchainRequest:
         是否删除底层CCE资源，IEF模式下不用填写
 
         :param is_delete_resource: The is_delete_resource of this DeleteBlockchainRequest.
-        :type: bool
+        :type is_delete_resource: bool
         """
         self._is_delete_resource = is_delete_resource
 

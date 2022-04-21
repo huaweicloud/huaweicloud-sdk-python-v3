@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchSwitchoverResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchSwitchoverResponse(SdkResponse):
     }
 
     def __init__(self, results=None, count=None):
-        """BatchSwitchoverResponse - a model defined in huaweicloud sdk"""
+        """BatchSwitchoverResponse
+
+        The model defined in huaweicloud sdk
+
+        :param results: 批量主备倒换任务返回列表
+        :type results: list[:class:`huaweicloudsdkdrs.v3.SwitchoverResp`]
+        :param count: 总数
+        :type count: int
+        """
         
         super(BatchSwitchoverResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class BatchSwitchoverResponse(SdkResponse):
         批量主备倒换任务返回列表
 
         :return: The results of this BatchSwitchoverResponse.
-        :rtype: list[SwitchoverResp]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.SwitchoverResp`]
         """
         return self._results
 
@@ -63,7 +70,7 @@ class BatchSwitchoverResponse(SdkResponse):
         批量主备倒换任务返回列表
 
         :param results: The results of this BatchSwitchoverResponse.
-        :type: list[SwitchoverResp]
+        :type results: list[:class:`huaweicloudsdkdrs.v3.SwitchoverResp`]
         """
         self._results = results
 
@@ -85,7 +92,7 @@ class BatchSwitchoverResponse(SdkResponse):
         总数
 
         :param count: The count of this BatchSwitchoverResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

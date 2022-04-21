@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateVariableResultJson:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateVariableResultJson:
     }
 
     def __init__(self, variable_id=None):
-        """CreateVariableResultJson - a model defined in huaweicloud sdk"""
+        """CreateVariableResultJson
+
+        The model defined in huaweicloud sdk
+
+        :param variable_id: variable_id
+        :type variable_id: int
+        """
         
         
 
@@ -58,7 +63,7 @@ class CreateVariableResultJson:
         variable_id
 
         :param variable_id: The variable_id of this CreateVariableResultJson.
-        :type: int
+        :type variable_id: int
         """
         self._variable_id = variable_id
 

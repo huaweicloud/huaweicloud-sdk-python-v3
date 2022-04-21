@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Event:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class Event:
     }
 
     def __init__(self, host_id=None, host_name=None, event_type=None, occur_time=None, handle_time=None, handle_status=None, handle_method=None, append_info=None):
-        """Event - a model defined in huaweicloud sdk"""
+        """Event
+
+        The model defined in huaweicloud sdk
+
+        :param host_id: 云主机id
+        :type host_id: str
+        :param host_name: 云主机名称
+        :type host_name: str
+        :param event_type: 事件类型，包含如下:   - Abnormal Login : 账户异常登录   - Invalid System Account : 风险账号   - Brute Force Cracking : 账号暴力破解   - System Start Script Change : 自启动检测   - Process Abnormal Activity : 进程异常行为   - Process Privilege Escalation : 进程提权操作   - File Privilege Escalation : 文件提权操作   - General Malware : 恶意程序（云查杀）   - Abnormal Shell : 异常shell   - Reverse Shell : 反弹Shell   - High-Risk Command Execution : 高危命令执行   - Key File Change : 关键文件变更   - Webshell : 网站后门
+        :type event_type: str
+        :param occur_time: 发生时间，毫秒
+        :type occur_time: int
+        :param handle_time: 处理时间，毫秒
+        :type handle_time: int
+        :param handle_status: 处理状态，包含如下类型：   - \&quot;unhandled\&quot;：未处理   - \&quot;handled\&quot;：已处理
+        :type handle_status: str
+        :param handle_method: 处理方式，包含如下类型：   - \&quot;mark_as_handled\&quot; ： 手动处理   - \&quot;ignore\&quot; ： 忽略   - \&quot;add_to_alarm_whitelist\&quot; ：加入告警白名单   - \&quot;add_to_login_whitelist\&quot; ：加入登录白名单   - \&quot;isolate_and_kill\&quot; ：隔离查杀
+        :type handle_method: str
+        :param append_info: 事件详细信息，json格式
+        :type append_info: object
+        """
         
         
 
@@ -93,7 +112,7 @@ class Event:
         云主机id
 
         :param host_id: The host_id of this Event.
-        :type: str
+        :type host_id: str
         """
         self._host_id = host_id
 
@@ -115,7 +134,7 @@ class Event:
         云主机名称
 
         :param host_name: The host_name of this Event.
-        :type: str
+        :type host_name: str
         """
         self._host_name = host_name
 
@@ -137,7 +156,7 @@ class Event:
         事件类型，包含如下:   - Abnormal Login : 账户异常登录   - Invalid System Account : 风险账号   - Brute Force Cracking : 账号暴力破解   - System Start Script Change : 自启动检测   - Process Abnormal Activity : 进程异常行为   - Process Privilege Escalation : 进程提权操作   - File Privilege Escalation : 文件提权操作   - General Malware : 恶意程序（云查杀）   - Abnormal Shell : 异常shell   - Reverse Shell : 反弹Shell   - High-Risk Command Execution : 高危命令执行   - Key File Change : 关键文件变更   - Webshell : 网站后门
 
         :param event_type: The event_type of this Event.
-        :type: str
+        :type event_type: str
         """
         self._event_type = event_type
 
@@ -159,7 +178,7 @@ class Event:
         发生时间，毫秒
 
         :param occur_time: The occur_time of this Event.
-        :type: int
+        :type occur_time: int
         """
         self._occur_time = occur_time
 
@@ -181,7 +200,7 @@ class Event:
         处理时间，毫秒
 
         :param handle_time: The handle_time of this Event.
-        :type: int
+        :type handle_time: int
         """
         self._handle_time = handle_time
 
@@ -203,7 +222,7 @@ class Event:
         处理状态，包含如下类型：   - \"unhandled\"：未处理   - \"handled\"：已处理
 
         :param handle_status: The handle_status of this Event.
-        :type: str
+        :type handle_status: str
         """
         self._handle_status = handle_status
 
@@ -225,7 +244,7 @@ class Event:
         处理方式，包含如下类型：   - \"mark_as_handled\" ： 手动处理   - \"ignore\" ： 忽略   - \"add_to_alarm_whitelist\" ：加入告警白名单   - \"add_to_login_whitelist\" ：加入登录白名单   - \"isolate_and_kill\" ：隔离查杀
 
         :param handle_method: The handle_method of this Event.
-        :type: str
+        :type handle_method: str
         """
         self._handle_method = handle_method
 
@@ -247,7 +266,7 @@ class Event:
         事件详细信息，json格式
 
         :param append_info: The append_info of this Event.
-        :type: object
+        :type append_info: object
         """
         self._append_info = append_info
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowInstanceConfigurationResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ShowInstanceConfigurationResponse(SdkResponse):
     }
 
     def __init__(self, datastore_version_name=None, datastore_name=None, created=None, updated=None, configuration_parameters=None):
-        """ShowInstanceConfigurationResponse - a model defined in huaweicloud sdk"""
+        """ShowInstanceConfigurationResponse
+
+        The model defined in huaweicloud sdk
+
+        :param datastore_version_name: 引擎版本。
+        :type datastore_version_name: str
+        :param datastore_name: 引擎名。
+        :type datastore_name: str
+        :param created: 创建时间，格式为\&quot;yyyy-MM-ddTHH:mm:ssZ\&quot;。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        :type created: str
+        :param updated: 更新时间，格式为\&quot;yyyy-MM-ddTHH:mm:ssZ\&quot;。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        :type updated: str
+        :param configuration_parameters: 参数对象，用户基于默认参数模板自定义的参数配置。
+        :type configuration_parameters: list[:class:`huaweicloudsdkrds.v3.ConfigurationParameter`]
+        """
         
         super(ShowInstanceConfigurationResponse, self).__init__()
 
@@ -78,7 +91,7 @@ class ShowInstanceConfigurationResponse(SdkResponse):
         引擎版本。
 
         :param datastore_version_name: The datastore_version_name of this ShowInstanceConfigurationResponse.
-        :type: str
+        :type datastore_version_name: str
         """
         self._datastore_version_name = datastore_version_name
 
@@ -100,7 +113,7 @@ class ShowInstanceConfigurationResponse(SdkResponse):
         引擎名。
 
         :param datastore_name: The datastore_name of this ShowInstanceConfigurationResponse.
-        :type: str
+        :type datastore_name: str
         """
         self._datastore_name = datastore_name
 
@@ -122,7 +135,7 @@ class ShowInstanceConfigurationResponse(SdkResponse):
         创建时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
         :param created: The created of this ShowInstanceConfigurationResponse.
-        :type: str
+        :type created: str
         """
         self._created = created
 
@@ -144,7 +157,7 @@ class ShowInstanceConfigurationResponse(SdkResponse):
         更新时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
         :param updated: The updated of this ShowInstanceConfigurationResponse.
-        :type: str
+        :type updated: str
         """
         self._updated = updated
 
@@ -155,7 +168,7 @@ class ShowInstanceConfigurationResponse(SdkResponse):
         参数对象，用户基于默认参数模板自定义的参数配置。
 
         :return: The configuration_parameters of this ShowInstanceConfigurationResponse.
-        :rtype: list[ConfigurationParameter]
+        :rtype: list[:class:`huaweicloudsdkrds.v3.ConfigurationParameter`]
         """
         return self._configuration_parameters
 
@@ -166,7 +179,7 @@ class ShowInstanceConfigurationResponse(SdkResponse):
         参数对象，用户基于默认参数模板自定义的参数配置。
 
         :param configuration_parameters: The configuration_parameters of this ShowInstanceConfigurationResponse.
-        :type: list[ConfigurationParameter]
+        :type configuration_parameters: list[:class:`huaweicloudsdkrds.v3.ConfigurationParameter`]
         """
         self._configuration_parameters = configuration_parameters
 

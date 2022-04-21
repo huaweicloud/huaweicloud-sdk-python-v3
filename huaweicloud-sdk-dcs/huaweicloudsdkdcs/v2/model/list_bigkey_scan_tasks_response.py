@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListBigkeyScanTasksResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListBigkeyScanTasksResponse(SdkResponse):
     }
 
     def __init__(self, instance_id=None, count=None, records=None):
-        """ListBigkeyScanTasksResponse - a model defined in huaweicloud sdk"""
+        """ListBigkeyScanTasksResponse
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param count: 总数
+        :type count: int
+        :param records: 大key分析记录列表
+        :type records: list[:class:`huaweicloudsdkdcs.v2.RecordsResponse`]
+        """
         
         super(ListBigkeyScanTasksResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListBigkeyScanTasksResponse(SdkResponse):
         实例ID
 
         :param instance_id: The instance_id of this ListBigkeyScanTasksResponse.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -90,7 +99,7 @@ class ListBigkeyScanTasksResponse(SdkResponse):
         总数
 
         :param count: The count of this ListBigkeyScanTasksResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -101,7 +110,7 @@ class ListBigkeyScanTasksResponse(SdkResponse):
         大key分析记录列表
 
         :return: The records of this ListBigkeyScanTasksResponse.
-        :rtype: list[RecordsResponse]
+        :rtype: list[:class:`huaweicloudsdkdcs.v2.RecordsResponse`]
         """
         return self._records
 
@@ -112,7 +121,7 @@ class ListBigkeyScanTasksResponse(SdkResponse):
         大key分析记录列表
 
         :param records: The records of this ListBigkeyScanTasksResponse.
-        :type: list[RecordsResponse]
+        :type records: list[:class:`huaweicloudsdkdcs.v2.RecordsResponse`]
         """
         self._records = records
 

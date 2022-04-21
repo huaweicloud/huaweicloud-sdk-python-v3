@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ActionSmnForwarding:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ActionSmnForwarding:
     }
 
     def __init__(self, region_name=None, project_id=None, theme_name=None, topic_urn=None, message_content=None, message_title=None):
-        """ActionSmnForwarding - a model defined in huaweicloud sdk"""
+        """ActionSmnForwarding
+
+        The model defined in huaweicloud sdk
+
+        :param region_name: **参数说明**：SMN服务对应的region区域。
+        :type region_name: str
+        :param project_id: **参数说明**：SMN服务对应的projectId信息。
+        :type project_id: str
+        :param theme_name: **参数说明**：SMN服务对应的主题名称。
+        :type theme_name: str
+        :param topic_urn: **参数说明**：SMN服务对应的topic的主题URN。
+        :type topic_urn: str
+        :param message_content: **参数说明**：短信或邮件的内容。。
+        :type message_content: str
+        :param message_title: **参数说明**：短信或邮件的主题。。
+        :type message_title: str
+        """
         
         
 
@@ -77,7 +92,7 @@ class ActionSmnForwarding:
         **参数说明**：SMN服务对应的region区域。
 
         :param region_name: The region_name of this ActionSmnForwarding.
-        :type: str
+        :type region_name: str
         """
         self._region_name = region_name
 
@@ -99,7 +114,7 @@ class ActionSmnForwarding:
         **参数说明**：SMN服务对应的projectId信息。
 
         :param project_id: The project_id of this ActionSmnForwarding.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -121,7 +136,7 @@ class ActionSmnForwarding:
         **参数说明**：SMN服务对应的主题名称。
 
         :param theme_name: The theme_name of this ActionSmnForwarding.
-        :type: str
+        :type theme_name: str
         """
         self._theme_name = theme_name
 
@@ -143,7 +158,7 @@ class ActionSmnForwarding:
         **参数说明**：SMN服务对应的topic的主题URN。
 
         :param topic_urn: The topic_urn of this ActionSmnForwarding.
-        :type: str
+        :type topic_urn: str
         """
         self._topic_urn = topic_urn
 
@@ -165,7 +180,7 @@ class ActionSmnForwarding:
         **参数说明**：短信或邮件的内容。。
 
         :param message_content: The message_content of this ActionSmnForwarding.
-        :type: str
+        :type message_content: str
         """
         self._message_content = message_content
 
@@ -187,7 +202,7 @@ class ActionSmnForwarding:
         **参数说明**：短信或邮件的主题。。
 
         :param message_title: The message_title of this ActionSmnForwarding.
-        :type: str
+        :type message_title: str
         """
         self._message_title = message_title
 

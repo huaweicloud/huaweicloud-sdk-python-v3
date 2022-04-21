@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Templatespec:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class Templatespec:
     }
 
     def __init__(self, type=None, require=None, labels=None, logo_url=None, readme_url=None, description=None, versions=None):
-        """Templatespec - a model defined in huaweicloud sdk"""
+        """Templatespec
+
+        The model defined in huaweicloud sdk
+
+        :param type: 模板类型（helm，static）
+        :type type: str
+        :param require: 是否为必安装插件
+        :type require: bool
+        :param labels: 模板所属分组
+        :type labels: list[str]
+        :param logo_url: Logo图片地址
+        :type logo_url: str
+        :param readme_url: 插件详情描述及使用说明
+        :type readme_url: str
+        :param description: 模板描述
+        :type description: str
+        :param versions: 模板具体版本详情
+        :type versions: list[:class:`huaweicloudsdkcce.v3.Versions`]
+        """
         
         
 
@@ -82,7 +99,7 @@ class Templatespec:
         模板类型（helm，static）
 
         :param type: The type of this Templatespec.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -104,7 +121,7 @@ class Templatespec:
         是否为必安装插件
 
         :param require: The require of this Templatespec.
-        :type: bool
+        :type require: bool
         """
         self._require = require
 
@@ -126,7 +143,7 @@ class Templatespec:
         模板所属分组
 
         :param labels: The labels of this Templatespec.
-        :type: list[str]
+        :type labels: list[str]
         """
         self._labels = labels
 
@@ -148,7 +165,7 @@ class Templatespec:
         Logo图片地址
 
         :param logo_url: The logo_url of this Templatespec.
-        :type: str
+        :type logo_url: str
         """
         self._logo_url = logo_url
 
@@ -170,7 +187,7 @@ class Templatespec:
         插件详情描述及使用说明
 
         :param readme_url: The readme_url of this Templatespec.
-        :type: str
+        :type readme_url: str
         """
         self._readme_url = readme_url
 
@@ -192,7 +209,7 @@ class Templatespec:
         模板描述
 
         :param description: The description of this Templatespec.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -203,7 +220,7 @@ class Templatespec:
         模板具体版本详情
 
         :return: The versions of this Templatespec.
-        :rtype: list[Versions]
+        :rtype: list[:class:`huaweicloudsdkcce.v3.Versions`]
         """
         return self._versions
 
@@ -214,7 +231,7 @@ class Templatespec:
         模板具体版本详情
 
         :param versions: The versions of this Templatespec.
-        :type: list[Versions]
+        :type versions: list[:class:`huaweicloudsdkcce.v3.Versions`]
         """
         self._versions = versions
 

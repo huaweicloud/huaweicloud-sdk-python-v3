@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NeutronShowFloatingIpRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class NeutronShowFloatingIpRequest:
     }
 
     def __init__(self, floatingip_id=None):
-        """NeutronShowFloatingIpRequest - a model defined in huaweicloud sdk"""
+        """NeutronShowFloatingIpRequest
+
+        The model defined in huaweicloud sdk
+
+        :param floatingip_id: floatingip的ID
+        :type floatingip_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class NeutronShowFloatingIpRequest:
         floatingip的ID
 
         :param floatingip_id: The floatingip_id of this NeutronShowFloatingIpRequest.
-        :type: str
+        :type floatingip_id: str
         """
         self._floatingip_id = floatingip_id
 

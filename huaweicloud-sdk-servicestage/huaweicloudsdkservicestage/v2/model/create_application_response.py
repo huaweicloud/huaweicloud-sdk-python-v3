@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateApplicationResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class CreateApplicationResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, creator=None, project_id=None, enterprise_project_id=None, create_time=None, update_time=None):
-        """CreateApplicationResponse - a model defined in huaweicloud sdk"""
+        """CreateApplicationResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 应用ID。
+        :type id: str
+        :param name: 应用名称。
+        :type name: str
+        :param description: 应用描述。
+        :type description: str
+        :param creator: 创建人。
+        :type creator: str
+        :param project_id: 项目ID。
+        :type project_id: str
+        :param enterprise_project_id: 企业项目ID。
+        :type enterprise_project_id: str
+        :param create_time: 创建时间。
+        :type create_time: int
+        :param update_time: 修改时间。
+        :type update_time: int
+        """
         
         super(CreateApplicationResponse, self).__init__()
 
@@ -93,7 +112,7 @@ class CreateApplicationResponse(SdkResponse):
         应用ID。
 
         :param id: The id of this CreateApplicationResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -115,7 +134,7 @@ class CreateApplicationResponse(SdkResponse):
         应用名称。
 
         :param name: The name of this CreateApplicationResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -137,7 +156,7 @@ class CreateApplicationResponse(SdkResponse):
         应用描述。
 
         :param description: The description of this CreateApplicationResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -159,7 +178,7 @@ class CreateApplicationResponse(SdkResponse):
         创建人。
 
         :param creator: The creator of this CreateApplicationResponse.
-        :type: str
+        :type creator: str
         """
         self._creator = creator
 
@@ -181,7 +200,7 @@ class CreateApplicationResponse(SdkResponse):
         项目ID。
 
         :param project_id: The project_id of this CreateApplicationResponse.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -203,7 +222,7 @@ class CreateApplicationResponse(SdkResponse):
         企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this CreateApplicationResponse.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -225,7 +244,7 @@ class CreateApplicationResponse(SdkResponse):
         创建时间。
 
         :param create_time: The create_time of this CreateApplicationResponse.
-        :type: int
+        :type create_time: int
         """
         self._create_time = create_time
 
@@ -247,7 +266,7 @@ class CreateApplicationResponse(SdkResponse):
         修改时间。
 
         :param update_time: The update_time of this CreateApplicationResponse.
-        :type: int
+        :type update_time: int
         """
         self._update_time = update_time
 

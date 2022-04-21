@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CoverageSite:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CoverageSite:
     }
 
     def __init__(self, site=None, demands=None):
-        """CoverageSite - a model defined in huaweicloud sdk"""
+        """CoverageSite
+
+        The model defined in huaweicloud sdk
+
+        :param site: 站点名称。 具体信息可通过调用“查询边缘站点列表”来查询(注意：本字段区分大小写)。
+        :type site: str
+        :param demands: 租户需求数量列表。表示租户发放资源站点的运营商和发放的资源组的数量。
+        :type demands: list[:class:`huaweicloudsdkiec.v1.Demand`]
+        """
         
         
 
@@ -61,7 +68,7 @@ class CoverageSite:
         站点名称。 具体信息可通过调用“查询边缘站点列表”来查询(注意：本字段区分大小写)。
 
         :param site: The site of this CoverageSite.
-        :type: str
+        :type site: str
         """
         self._site = site
 
@@ -72,7 +79,7 @@ class CoverageSite:
         租户需求数量列表。表示租户发放资源站点的运营商和发放的资源组的数量。
 
         :return: The demands of this CoverageSite.
-        :rtype: list[Demand]
+        :rtype: list[:class:`huaweicloudsdkiec.v1.Demand`]
         """
         return self._demands
 
@@ -83,7 +90,7 @@ class CoverageSite:
         租户需求数量列表。表示租户发放资源站点的运营商和发放的资源组的数量。
 
         :param demands: The demands of this CoverageSite.
-        :type: list[Demand]
+        :type demands: list[:class:`huaweicloudsdkiec.v1.Demand`]
         """
         self._demands = demands
 

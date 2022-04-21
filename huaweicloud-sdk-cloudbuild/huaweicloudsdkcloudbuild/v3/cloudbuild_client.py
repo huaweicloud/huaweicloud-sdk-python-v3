@@ -52,21 +52,17 @@ class CloudBuildClient(Client):
         """KeyStore文件下载
 
         下载指定租户下的KeyStore文件
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DownloadKeystoreRequest request
-        :return: DownloadKeystoreResponse
+        :param request: Request instance for DownloadKeystore
+        :type request: :class:`huaweicloudsdkcloudbuild.v3.DownloadKeystoreRequest`
+        :rtype: :class:`huaweicloudsdkcloudbuild.v3.DownloadKeystoreResponse`
         """
         return self.download_keystore_with_http_info(request)
 
     def download_keystore_with_http_info(self, request):
-        """KeyStore文件下载
-
-        下载指定租户下的KeyStore文件
-
-        :param DownloadKeystoreRequest request
-        :return: DownloadKeystoreResponse
-        """
-
         all_params = ['file_name', 'domain_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -112,26 +108,21 @@ class CloudBuildClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def run_job(self, request):
         """执行构建任务
 
         执行构建任务,可传自定义参数。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param RunJobRequest request
-        :return: RunJobResponse
+        :param request: Request instance for RunJob
+        :type request: :class:`huaweicloudsdkcloudbuild.v3.RunJobRequest`
+        :rtype: :class:`huaweicloudsdkcloudbuild.v3.RunJobResponse`
         """
         return self.run_job_with_http_info(request)
 
     def run_job_with_http_info(self, request):
-        """执行构建任务
-
-        执行构建任务,可传自定义参数。
-
-        :param RunJobRequest request
-        :return: RunJobResponse
-        """
-
         all_params = ['run_job_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -175,26 +166,21 @@ class CloudBuildClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_history_details(self, request):
         """获取构建历史详情信息接口
 
         获取构建历史详情信息接口
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowHistoryDetailsRequest request
-        :return: ShowHistoryDetailsResponse
+        :param request: Request instance for ShowHistoryDetails
+        :type request: :class:`huaweicloudsdkcloudbuild.v3.ShowHistoryDetailsRequest`
+        :rtype: :class:`huaweicloudsdkcloudbuild.v3.ShowHistoryDetailsResponse`
         """
         return self.show_history_details_with_http_info(request)
 
     def show_history_details_with_http_info(self, request):
-        """获取构建历史详情信息接口
-
-        获取构建历史详情信息接口
-
-        :param ShowHistoryDetailsRequest request
-        :return: ShowHistoryDetailsResponse
-        """
-
         all_params = ['job_id', 'build_number']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -240,26 +226,21 @@ class CloudBuildClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_job_list_by_project_id(self, request):
         """查看项目下用户的构建任务列表
 
         查看项目下用户的构建任务列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowJobListByProjectIdRequest request
-        :return: ShowJobListByProjectIdResponse
+        :param request: Request instance for ShowJobListByProjectId
+        :type request: :class:`huaweicloudsdkcloudbuild.v3.ShowJobListByProjectIdRequest`
+        :rtype: :class:`huaweicloudsdkcloudbuild.v3.ShowJobListByProjectIdResponse`
         """
         return self.show_job_list_by_project_id_with_http_info(request)
 
     def show_job_list_by_project_id_with_http_info(self, request):
-        """查看项目下用户的构建任务列表
-
-        查看项目下用户的构建任务列表
-
-        :param ShowJobListByProjectIdRequest request
-        :return: ShowJobListByProjectIdResponse
-        """
-
         all_params = ['project_id', 'page_index', 'page_size']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -307,26 +288,21 @@ class CloudBuildClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_job_status(self, request):
         """查看任务运行状态
 
         查看任务运行状态
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowJobStatusRequest request
-        :return: ShowJobStatusResponse
+        :param request: Request instance for ShowJobStatus
+        :type request: :class:`huaweicloudsdkcloudbuild.v3.ShowJobStatusRequest`
+        :rtype: :class:`huaweicloudsdkcloudbuild.v3.ShowJobStatusResponse`
         """
         return self.show_job_status_with_http_info(request)
 
     def show_job_status_with_http_info(self, request):
-        """查看任务运行状态
-
-        查看任务运行状态
-
-        :param ShowJobStatusRequest request
-        :return: ShowJobStatusResponse
-        """
-
         all_params = ['job_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -370,26 +346,21 @@ class CloudBuildClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_job_success_ratio(self, request):
         """根据开始时间和结束时间查看构建任务的构建成功率
 
         根据开始时间和结束时间查看构建任务的构建成功率
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowJobSuccessRatioRequest request
-        :return: ShowJobSuccessRatioResponse
+        :param request: Request instance for ShowJobSuccessRatio
+        :type request: :class:`huaweicloudsdkcloudbuild.v3.ShowJobSuccessRatioRequest`
+        :rtype: :class:`huaweicloudsdkcloudbuild.v3.ShowJobSuccessRatioResponse`
         """
         return self.show_job_success_ratio_with_http_info(request)
 
     def show_job_success_ratio_with_http_info(self, request):
-        """根据开始时间和结束时间查看构建任务的构建成功率
-
-        根据开始时间和结束时间查看构建任务的构建成功率
-
-        :param ShowJobSuccessRatioRequest request
-        :return: ShowJobSuccessRatioResponse
-        """
-
         all_params = ['job_id', 'start_time', 'end_time']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -437,26 +408,21 @@ class CloudBuildClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_last_history(self, request):
         """查询指定代码仓库最近一次成功的构建历史
 
         查询指定代码仓库最近一次成功的构建历史
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowLastHistoryRequest request
-        :return: ShowLastHistoryResponse
+        :param request: Request instance for ShowLastHistory
+        :type request: :class:`huaweicloudsdkcloudbuild.v3.ShowLastHistoryRequest`
+        :rtype: :class:`huaweicloudsdkcloudbuild.v3.ShowLastHistoryResponse`
         """
         return self.show_last_history_with_http_info(request)
 
     def show_last_history_with_http_info(self, request):
-        """查询指定代码仓库最近一次成功的构建历史
-
-        查询指定代码仓库最近一次成功的构建历史
-
-        :param ShowLastHistoryRequest request
-        :return: ShowLastHistoryResponse
-        """
-
         all_params = ['project_id', 'repository_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -502,26 +468,21 @@ class CloudBuildClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_list_history(self, request):
         """查看构建任务的构建历史列表
 
         查看构建任务的构建历史列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowListHistoryRequest request
-        :return: ShowListHistoryResponse
+        :param request: Request instance for ShowListHistory
+        :type request: :class:`huaweicloudsdkcloudbuild.v3.ShowListHistoryRequest`
+        :rtype: :class:`huaweicloudsdkcloudbuild.v3.ShowListHistoryResponse`
         """
         return self.show_list_history_with_http_info(request)
 
     def show_list_history_with_http_info(self, request):
-        """查看构建任务的构建历史列表
-
-        查看构建任务的构建历史列表
-
-        :param ShowListHistoryRequest request
-        :return: ShowListHistoryResponse
-        """
-
         all_params = ['job_id', 'offset', 'limit', 'interval']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -571,26 +532,21 @@ class CloudBuildClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_list_period_history(self, request):
         """根据开始时间和结束时间查看构建任务的构建历史列表
 
         根据开始时间和结束时间查看构建任务的构建历史列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowListPeriodHistoryRequest request
-        :return: ShowListPeriodHistoryResponse
+        :param request: Request instance for ShowListPeriodHistory
+        :type request: :class:`huaweicloudsdkcloudbuild.v3.ShowListPeriodHistoryRequest`
+        :rtype: :class:`huaweicloudsdkcloudbuild.v3.ShowListPeriodHistoryResponse`
         """
         return self.show_list_period_history_with_http_info(request)
 
     def show_list_period_history_with_http_info(self, request):
-        """根据开始时间和结束时间查看构建任务的构建历史列表
-
-        根据开始时间和结束时间查看构建任务的构建历史列表
-
-        :param ShowListPeriodHistoryRequest request
-        :return: ShowListPeriodHistoryResponse
-        """
-
         all_params = ['job_id', 'offset', 'limit', 'start_time', 'end_time']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -641,7 +597,6 @@ class CloudBuildClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

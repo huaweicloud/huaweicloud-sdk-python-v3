@@ -52,21 +52,17 @@ class CesAsyncClient(Client):
         """查询告警历史
 
         查询告警历史列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListAlarmHistoriesRequest request
-        :return: ListAlarmHistoriesResponse
+        :param request: Request instance for ListAlarmHistories
+        :type request: :class:`huaweicloudsdkces.v2.ListAlarmHistoriesRequest`
+        :rtype: :class:`huaweicloudsdkces.v2.ListAlarmHistoriesResponse`
         """
         return self.list_alarm_histories_with_http_info(request)
 
     def list_alarm_histories_with_http_info(self, request):
-        """查询告警历史
-
-        查询告警历史列表
-
-        :param ListAlarmHistoriesRequest request
-        :return: ListAlarmHistoriesResponse
-        """
-
         all_params = ['alarm_id', 'name', 'status', 'level', 'namespace', 'resource_id', '_from', 'to', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -127,7 +123,6 @@ class CesAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

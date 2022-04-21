@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddProduct:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class AddProduct:
     }
 
     def __init__(self, product_id=None, name=None, device_type=None, protocol_type=None, data_format=None, service_capabilities=None, manufacturer_name=None, industry=None, description=None, app_id=None):
-        """AddProduct - a model defined in huaweicloud sdk"""
+        """AddProduct
+
+        The model defined in huaweicloud sdk
+
+        :param product_id: **参数说明**：产品ID，用于唯一标识一个产品。如果携带此参数，平台将产品ID设置为该参数值；如果不携带此参数，产品ID在物联网平台创建产品后由平台分配获得。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
+        :type product_id: str
+        :param name: **参数说明**：产品名称。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_?&#39;#().,&amp;%@!-等字符的组合。
+        :type name: str
+        :param device_type: **参数说明**：设备类型。 **取值范围**：长度不超过32，只允许中文、字母、数字、以及_?&#39;#().,&amp;%@!-等字符的组合。
+        :type device_type: str
+        :param protocol_type: **参数说明**：设备使用的协议类型。 **取值范围**：MQTT，CoAP，HTTP，HTTPS，Modbus，ONVIF，OPC-UA，OPC-DA，Other。
+        :type protocol_type: str
+        :param data_format: **参数说明**：设备上报数据的格式。 **取值范围**： - json：JSON格式 - binary：二进制码流格式 默认值json。
+        :type data_format: str
+        :param service_capabilities: **参数说明**：设备的服务能力列表。 **取值范围**：数组长度大小不超过500，内容大小不超过500k。
+        :type service_capabilities: list[:class:`huaweicloudsdkiotda.v5.ServiceCapability`]
+        :param manufacturer_name: **参数说明**：厂商名称。 **取值范围**：长度不超过32，只允许中文、字母、数字、以及_?&#39;#().,&amp;%@!-等字符的组合。
+        :type manufacturer_name: str
+        :param industry: **参数说明**：设备所属行业。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_?&#39;#().,&amp;%@!-等字符的组合。
+        :type industry: str
+        :param description: **参数说明**：产品的描述信息。 **取值范围**：长度不超过128，只允许中文、字母、数字、空白字符、以及_?&#39;#().,;&amp;%@!- ，、：；。/等字符的组合。
+        :type description: str
+        :param app_id: **参数说明**：资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，建议携带该参数指定创建的产品归属到哪个资源空间下，否则创建的产品将会归属到[默认资源空间](https://support.huaweicloud.com/usermanual-iothub/iot_01_0006.html#section0)下。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
+        :type app_id: str
+        """
         
         
 
@@ -98,7 +121,7 @@ class AddProduct:
         **参数说明**：产品ID，用于唯一标识一个产品。如果携带此参数，平台将产品ID设置为该参数值；如果不携带此参数，产品ID在物联网平台创建产品后由平台分配获得。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :param product_id: The product_id of this AddProduct.
-        :type: str
+        :type product_id: str
         """
         self._product_id = product_id
 
@@ -120,7 +143,7 @@ class AddProduct:
         **参数说明**：产品名称。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
         :param name: The name of this AddProduct.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -142,7 +165,7 @@ class AddProduct:
         **参数说明**：设备类型。 **取值范围**：长度不超过32，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
         :param device_type: The device_type of this AddProduct.
-        :type: str
+        :type device_type: str
         """
         self._device_type = device_type
 
@@ -164,7 +187,7 @@ class AddProduct:
         **参数说明**：设备使用的协议类型。 **取值范围**：MQTT，CoAP，HTTP，HTTPS，Modbus，ONVIF，OPC-UA，OPC-DA，Other。
 
         :param protocol_type: The protocol_type of this AddProduct.
-        :type: str
+        :type protocol_type: str
         """
         self._protocol_type = protocol_type
 
@@ -186,7 +209,7 @@ class AddProduct:
         **参数说明**：设备上报数据的格式。 **取值范围**： - json：JSON格式 - binary：二进制码流格式 默认值json。
 
         :param data_format: The data_format of this AddProduct.
-        :type: str
+        :type data_format: str
         """
         self._data_format = data_format
 
@@ -197,7 +220,7 @@ class AddProduct:
         **参数说明**：设备的服务能力列表。 **取值范围**：数组长度大小不超过500，内容大小不超过500k。
 
         :return: The service_capabilities of this AddProduct.
-        :rtype: list[ServiceCapability]
+        :rtype: list[:class:`huaweicloudsdkiotda.v5.ServiceCapability`]
         """
         return self._service_capabilities
 
@@ -208,7 +231,7 @@ class AddProduct:
         **参数说明**：设备的服务能力列表。 **取值范围**：数组长度大小不超过500，内容大小不超过500k。
 
         :param service_capabilities: The service_capabilities of this AddProduct.
-        :type: list[ServiceCapability]
+        :type service_capabilities: list[:class:`huaweicloudsdkiotda.v5.ServiceCapability`]
         """
         self._service_capabilities = service_capabilities
 
@@ -230,7 +253,7 @@ class AddProduct:
         **参数说明**：厂商名称。 **取值范围**：长度不超过32，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
         :param manufacturer_name: The manufacturer_name of this AddProduct.
-        :type: str
+        :type manufacturer_name: str
         """
         self._manufacturer_name = manufacturer_name
 
@@ -252,7 +275,7 @@ class AddProduct:
         **参数说明**：设备所属行业。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
         :param industry: The industry of this AddProduct.
-        :type: str
+        :type industry: str
         """
         self._industry = industry
 
@@ -274,7 +297,7 @@ class AddProduct:
         **参数说明**：产品的描述信息。 **取值范围**：长度不超过128，只允许中文、字母、数字、空白字符、以及_?'#().,;&%@!- ，、：；。/等字符的组合。
 
         :param description: The description of this AddProduct.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -296,7 +319,7 @@ class AddProduct:
         **参数说明**：资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，建议携带该参数指定创建的产品归属到哪个资源空间下，否则创建的产品将会归属到[默认资源空间](https://support.huaweicloud.com/usermanual-iothub/iot_01_0006.html#section0)下。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :param app_id: The app_id of this AddProduct.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListUsersForEnterpriseProjectResUsers:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ListUsersForEnterpriseProjectResUsers:
     }
 
     def __init__(self, domain_id=None, id=None, name=None, enabled=None, description=None, policy_num=None, lastest_policy_time=None):
-        """ListUsersForEnterpriseProjectResUsers - a model defined in huaweicloud sdk"""
+        """ListUsersForEnterpriseProjectResUsers
+
+        The model defined in huaweicloud sdk
+
+        :param domain_id: 授权用户所属账号ID。
+        :type domain_id: str
+        :param id: 授权用户ID。
+        :type id: str
+        :param name: 授权用户名。
+        :type name: str
+        :param enabled: 授权用户是否启用，true表示启用，false表示停用，默认为true。
+        :type enabled: bool
+        :param description: 授权用户描述信息。
+        :type description: str
+        :param policy_num: 授权用户的策略数。
+        :type policy_num: int
+        :param lastest_policy_time: 用户最近与企业项目关联策略的时间（毫秒）。
+        :type lastest_policy_time: int
+        """
         
         
 
@@ -81,7 +98,7 @@ class ListUsersForEnterpriseProjectResUsers:
         授权用户所属账号ID。
 
         :param domain_id: The domain_id of this ListUsersForEnterpriseProjectResUsers.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -103,7 +120,7 @@ class ListUsersForEnterpriseProjectResUsers:
         授权用户ID。
 
         :param id: The id of this ListUsersForEnterpriseProjectResUsers.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -125,7 +142,7 @@ class ListUsersForEnterpriseProjectResUsers:
         授权用户名。
 
         :param name: The name of this ListUsersForEnterpriseProjectResUsers.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -147,7 +164,7 @@ class ListUsersForEnterpriseProjectResUsers:
         授权用户是否启用，true表示启用，false表示停用，默认为true。
 
         :param enabled: The enabled of this ListUsersForEnterpriseProjectResUsers.
-        :type: bool
+        :type enabled: bool
         """
         self._enabled = enabled
 
@@ -169,7 +186,7 @@ class ListUsersForEnterpriseProjectResUsers:
         授权用户描述信息。
 
         :param description: The description of this ListUsersForEnterpriseProjectResUsers.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -191,7 +208,7 @@ class ListUsersForEnterpriseProjectResUsers:
         授权用户的策略数。
 
         :param policy_num: The policy_num of this ListUsersForEnterpriseProjectResUsers.
-        :type: int
+        :type policy_num: int
         """
         self._policy_num = policy_num
 
@@ -213,7 +230,7 @@ class ListUsersForEnterpriseProjectResUsers:
         用户最近与企业项目关联策略的时间（毫秒）。
 
         :param lastest_policy_time: The lastest_policy_time of this ListUsersForEnterpriseProjectResUsers.
-        :type: int
+        :type lastest_policy_time: int
         """
         self._lastest_policy_time = lastest_policy_time
 

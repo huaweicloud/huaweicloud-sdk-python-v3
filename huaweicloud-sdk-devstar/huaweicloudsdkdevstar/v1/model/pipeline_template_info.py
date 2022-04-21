@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PipelineTemplateInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class PipelineTemplateInfo:
     }
 
     def __init__(self, id=None, name=None, detail=None):
-        """PipelineTemplateInfo - a model defined in huaweicloud sdk"""
+        """PipelineTemplateInfo
+
+        The model defined in huaweicloud sdk
+
+        :param id: 流水线模板的id。
+        :type id: str
+        :param name: 流水线模板的名称。
+        :type name: str
+        :param detail: 流水线模板的详细信息。
+        :type detail: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class PipelineTemplateInfo:
         流水线模板的id。
 
         :param id: The id of this PipelineTemplateInfo.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -90,7 +99,7 @@ class PipelineTemplateInfo:
         流水线模板的名称。
 
         :param name: The name of this PipelineTemplateInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -112,7 +121,7 @@ class PipelineTemplateInfo:
         流水线模板的详细信息。
 
         :param detail: The detail of this PipelineTemplateInfo.
-        :type: str
+        :type detail: str
         """
         self._detail = detail
 

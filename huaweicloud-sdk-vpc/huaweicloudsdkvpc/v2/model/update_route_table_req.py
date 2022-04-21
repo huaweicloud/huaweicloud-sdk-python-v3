@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateRouteTableReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateRouteTableReq:
     }
 
     def __init__(self, name=None, description=None, routes=None):
-        """UpdateRouteTableReq - a model defined in huaweicloud sdk"""
+        """UpdateRouteTableReq
+
+        The model defined in huaweicloud sdk
+
+        :param name: 功能说明：路由表名称  取值范围：0-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
+        :type name: str
+        :param description: 功能说明：路由表描述信息  取值范围：0-255个字符，不能包含“&lt;”和“&gt;”
+        :type description: str
+        :param routes: 功能说明：路由对象  取值范围：参见route字段说明。更新存在三种动作：     1）add：新增路由条目，type，destination，nexthop必选。     2）mod：修改路由信息，type，destination，nexthop必选。     3）del：删除路由条目，destination必选  约束：     每个路由表最大关联200条路由。     不支持直接修改destination，如需修改，只能使用del先删除对应路由，然后使用add新增路由。
+        :type routes: dict(str, list[RouteTableRoute])
+        """
         
         
 
@@ -68,7 +77,7 @@ class UpdateRouteTableReq:
         功能说明：路由表名称  取值范围：0-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
         :param name: The name of this UpdateRouteTableReq.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -90,7 +99,7 @@ class UpdateRouteTableReq:
         功能说明：路由表描述信息  取值范围：0-255个字符，不能包含“<”和“>”
 
         :param description: The description of this UpdateRouteTableReq.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -112,7 +121,7 @@ class UpdateRouteTableReq:
         功能说明：路由对象  取值范围：参见route字段说明。更新存在三种动作：     1）add：新增路由条目，type，destination，nexthop必选。     2）mod：修改路由信息，type，destination，nexthop必选。     3）del：删除路由条目，destination必选  约束：     每个路由表最大关联200条路由。     不支持直接修改destination，如需修改，只能使用del先删除对应路由，然后使用add新增路由。
 
         :param routes: The routes of this UpdateRouteTableReq.
-        :type: dict(str, list[RouteTableRoute])
+        :type routes: dict(str, list[RouteTableRoute])
         """
         self._routes = routes
 

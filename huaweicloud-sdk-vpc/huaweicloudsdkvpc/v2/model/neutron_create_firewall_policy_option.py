@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NeutronCreateFirewallPolicyOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class NeutronCreateFirewallPolicyOption:
     }
 
     def __init__(self, audited=None, description=None, firewall_rules=None, name=None):
-        """NeutronCreateFirewallPolicyOption - a model defined in huaweicloud sdk"""
+        """NeutronCreateFirewallPolicyOption
+
+        The model defined in huaweicloud sdk
+
+        :param audited: 审计标记。
+        :type audited: bool
+        :param description: 功能说明：网络ACL防火墙策略描述 取值范围：最长255个字符
+        :type description: str
+        :param firewall_rules: 策略引用的网络ACL防火墙规则链。
+        :type firewall_rules: list[str]
+        :param name: 功能说明：网络ACL防火墙策略名称 取值范围：最长255个字符
+        :type name: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class NeutronCreateFirewallPolicyOption:
         审计标记。
 
         :param audited: The audited of this NeutronCreateFirewallPolicyOption.
-        :type: bool
+        :type audited: bool
         """
         self._audited = audited
 
@@ -95,7 +106,7 @@ class NeutronCreateFirewallPolicyOption:
         功能说明：网络ACL防火墙策略描述 取值范围：最长255个字符
 
         :param description: The description of this NeutronCreateFirewallPolicyOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -117,7 +128,7 @@ class NeutronCreateFirewallPolicyOption:
         策略引用的网络ACL防火墙规则链。
 
         :param firewall_rules: The firewall_rules of this NeutronCreateFirewallPolicyOption.
-        :type: list[str]
+        :type firewall_rules: list[str]
         """
         self._firewall_rules = firewall_rules
 
@@ -139,7 +150,7 @@ class NeutronCreateFirewallPolicyOption:
         功能说明：网络ACL防火墙策略名称 取值范围：最长255个字符
 
         :param name: The name of this NeutronCreateFirewallPolicyOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PolicyTriggerResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class PolicyTriggerResp:
     }
 
     def __init__(self, id=None, name=None, properties=None, type=None):
-        """PolicyTriggerResp - a model defined in huaweicloud sdk"""
+        """PolicyTriggerResp
+
+        The model defined in huaweicloud sdk
+
+        :param id: 调度器id
+        :type id: str
+        :param name: 调度器名称
+        :type name: str
+        :param properties: 
+        :type properties: :class:`huaweicloudsdkcbr.v1.PolicyTriggerPropertiesResp`
+        :param type: 调度器类型,目前只支持 time: 定时调度。
+        :type type: str
+        """
         
         
 
@@ -71,7 +82,7 @@ class PolicyTriggerResp:
         调度器id
 
         :param id: The id of this PolicyTriggerResp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -93,7 +104,7 @@ class PolicyTriggerResp:
         调度器名称
 
         :param name: The name of this PolicyTriggerResp.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -103,7 +114,7 @@ class PolicyTriggerResp:
 
 
         :return: The properties of this PolicyTriggerResp.
-        :rtype: PolicyTriggerPropertiesResp
+        :rtype: :class:`huaweicloudsdkcbr.v1.PolicyTriggerPropertiesResp`
         """
         return self._properties
 
@@ -113,7 +124,7 @@ class PolicyTriggerResp:
 
 
         :param properties: The properties of this PolicyTriggerResp.
-        :type: PolicyTriggerPropertiesResp
+        :type properties: :class:`huaweicloudsdkcbr.v1.PolicyTriggerPropertiesResp`
         """
         self._properties = properties
 
@@ -135,7 +146,7 @@ class PolicyTriggerResp:
         调度器类型,目前只支持 time: 定时调度。
 
         :param type: The type of this PolicyTriggerResp.
-        :type: str
+        :type type: str
         """
         self._type = type
 

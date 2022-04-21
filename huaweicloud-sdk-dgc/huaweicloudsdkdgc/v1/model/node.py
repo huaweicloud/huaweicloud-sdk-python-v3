@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Node:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class Node:
     }
 
     def __init__(self, name=None, node_type=None, location=None, pre_node_names=None, condition=None, node_properties=None, polling_interval=None, max_execution_time=None, retry_times=None, retry_interval=None, fail_policy=None, event_trigger=None, cron_trigger=None):
-        """Node - a model defined in huaweicloud sdk"""
+        """Node
+
+        The model defined in huaweicloud sdk
+
+        :param name: 
+        :type name: str
+        :param node_type: 节点的类型
+        :type node_type: str
+        :param location: 
+        :type location: :class:`huaweicloudsdkdgc.v1.Location`
+        :param pre_node_names: 本节点依赖的前一个节点名称
+        :type pre_node_names: str
+        :param condition: 节点执行条件
+        :type condition: list[:class:`huaweicloudsdkdgc.v1.Condition`]
+        :param node_properties: 节点的属性
+        :type node_properties: str
+        :param polling_interval: 轮询节点执行结果时间间隔
+        :type polling_interval: int
+        :param max_execution_time: 节点最大执行时间
+        :type max_execution_time: int
+        :param retry_times: 节点失败重试次数
+        :type retry_times: int
+        :param retry_interval: 失败重试时间间隔
+        :type retry_interval: int
+        :param fail_policy: 作业失败策略
+        :type fail_policy: str
+        :param event_trigger: 
+        :type event_trigger: :class:`huaweicloudsdkdgc.v1.Event`
+        :param cron_trigger: 
+        :type cron_trigger: :class:`huaweicloudsdkdgc.v1.Cron`
+        """
         
         
 
@@ -116,7 +145,7 @@ class Node:
 
 
         :param name: The name of this Node.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -138,7 +167,7 @@ class Node:
         节点的类型
 
         :param node_type: The node_type of this Node.
-        :type: str
+        :type node_type: str
         """
         self._node_type = node_type
 
@@ -148,7 +177,7 @@ class Node:
 
 
         :return: The location of this Node.
-        :rtype: Location
+        :rtype: :class:`huaweicloudsdkdgc.v1.Location`
         """
         return self._location
 
@@ -158,7 +187,7 @@ class Node:
 
 
         :param location: The location of this Node.
-        :type: Location
+        :type location: :class:`huaweicloudsdkdgc.v1.Location`
         """
         self._location = location
 
@@ -180,7 +209,7 @@ class Node:
         本节点依赖的前一个节点名称
 
         :param pre_node_names: The pre_node_names of this Node.
-        :type: str
+        :type pre_node_names: str
         """
         self._pre_node_names = pre_node_names
 
@@ -191,7 +220,7 @@ class Node:
         节点执行条件
 
         :return: The condition of this Node.
-        :rtype: list[Condition]
+        :rtype: list[:class:`huaweicloudsdkdgc.v1.Condition`]
         """
         return self._condition
 
@@ -202,7 +231,7 @@ class Node:
         节点执行条件
 
         :param condition: The condition of this Node.
-        :type: list[Condition]
+        :type condition: list[:class:`huaweicloudsdkdgc.v1.Condition`]
         """
         self._condition = condition
 
@@ -224,7 +253,7 @@ class Node:
         节点的属性
 
         :param node_properties: The node_properties of this Node.
-        :type: str
+        :type node_properties: str
         """
         self._node_properties = node_properties
 
@@ -246,7 +275,7 @@ class Node:
         轮询节点执行结果时间间隔
 
         :param polling_interval: The polling_interval of this Node.
-        :type: int
+        :type polling_interval: int
         """
         self._polling_interval = polling_interval
 
@@ -268,7 +297,7 @@ class Node:
         节点最大执行时间
 
         :param max_execution_time: The max_execution_time of this Node.
-        :type: int
+        :type max_execution_time: int
         """
         self._max_execution_time = max_execution_time
 
@@ -290,7 +319,7 @@ class Node:
         节点失败重试次数
 
         :param retry_times: The retry_times of this Node.
-        :type: int
+        :type retry_times: int
         """
         self._retry_times = retry_times
 
@@ -312,7 +341,7 @@ class Node:
         失败重试时间间隔
 
         :param retry_interval: The retry_interval of this Node.
-        :type: int
+        :type retry_interval: int
         """
         self._retry_interval = retry_interval
 
@@ -334,7 +363,7 @@ class Node:
         作业失败策略
 
         :param fail_policy: The fail_policy of this Node.
-        :type: str
+        :type fail_policy: str
         """
         self._fail_policy = fail_policy
 
@@ -344,7 +373,7 @@ class Node:
 
 
         :return: The event_trigger of this Node.
-        :rtype: Event
+        :rtype: :class:`huaweicloudsdkdgc.v1.Event`
         """
         return self._event_trigger
 
@@ -354,7 +383,7 @@ class Node:
 
 
         :param event_trigger: The event_trigger of this Node.
-        :type: Event
+        :type event_trigger: :class:`huaweicloudsdkdgc.v1.Event`
         """
         self._event_trigger = event_trigger
 
@@ -364,7 +393,7 @@ class Node:
 
 
         :return: The cron_trigger of this Node.
-        :rtype: Cron
+        :rtype: :class:`huaweicloudsdkdgc.v1.Cron`
         """
         return self._cron_trigger
 
@@ -374,7 +403,7 @@ class Node:
 
 
         :param cron_trigger: The cron_trigger of this Node.
-        :type: Cron
+        :type cron_trigger: :class:`huaweicloudsdkdgc.v1.Cron`
         """
         self._cron_trigger = cron_trigger
 

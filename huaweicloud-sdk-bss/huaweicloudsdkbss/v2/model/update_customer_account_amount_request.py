@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateCustomerAccountAmountRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateCustomerAccountAmountRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateCustomerAccountAmountRequest - a model defined in huaweicloud sdk"""
+        """UpdateCustomerAccountAmountRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the UpdateCustomerAccountAmountRequest
+        :type body: :class:`huaweicloudsdkbss.v2.AdjustAccountReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class UpdateCustomerAccountAmountRequest:
 
 
         :return: The body of this UpdateCustomerAccountAmountRequest.
-        :rtype: AdjustAccountReq
+        :rtype: :class:`huaweicloudsdkbss.v2.AdjustAccountReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class UpdateCustomerAccountAmountRequest:
 
 
         :param body: The body of this UpdateCustomerAccountAmountRequest.
-        :type: AdjustAccountReq
+        :type body: :class:`huaweicloudsdkbss.v2.AdjustAccountReq`
         """
         self._body = body
 

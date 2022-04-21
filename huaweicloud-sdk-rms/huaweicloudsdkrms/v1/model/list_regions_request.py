@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRegionsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListRegionsRequest:
     }
 
     def __init__(self, x_language=None):
-        """ListRegionsRequest - a model defined in huaweicloud sdk"""
+        """ListRegionsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 选择接口返回的信息的语言，默认为\&quot;zh-cn\&quot;中文
+        :type x_language: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class ListRegionsRequest:
         选择接口返回的信息的语言，默认为\"zh-cn\"中文
 
         :param x_language: The x_language of this ListRegionsRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 

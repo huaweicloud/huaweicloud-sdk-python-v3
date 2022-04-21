@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Domains:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class Domains:
     }
 
     def __init__(self, enabled=None, id=None, name=None, links=None, description=None):
-        """Domains - a model defined in huaweicloud sdk"""
+        """Domains
+
+        The model defined in huaweicloud sdk
+
+        :param enabled: 是否启用账号，true为启用，false为停用，默认为true。
+        :type enabled: bool
+        :param id: 账号ID。
+        :type id: str
+        :param name: 账号名。
+        :type name: str
+        :param links: 
+        :type links: :class:`huaweicloudsdkiam.v3.LinksSelf`
+        :param description: 账号的描述信息。
+        :type description: str
+        """
         
         
 
@@ -73,7 +86,7 @@ class Domains:
         是否启用账号，true为启用，false为停用，默认为true。
 
         :param enabled: The enabled of this Domains.
-        :type: bool
+        :type enabled: bool
         """
         self._enabled = enabled
 
@@ -95,7 +108,7 @@ class Domains:
         账号ID。
 
         :param id: The id of this Domains.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -117,7 +130,7 @@ class Domains:
         账号名。
 
         :param name: The name of this Domains.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -127,7 +140,7 @@ class Domains:
 
 
         :return: The links of this Domains.
-        :rtype: LinksSelf
+        :rtype: :class:`huaweicloudsdkiam.v3.LinksSelf`
         """
         return self._links
 
@@ -137,7 +150,7 @@ class Domains:
 
 
         :param links: The links of this Domains.
-        :type: LinksSelf
+        :type links: :class:`huaweicloudsdkiam.v3.LinksSelf`
         """
         self._links = links
 
@@ -159,7 +172,7 @@ class Domains:
         账号的描述信息。
 
         :param description: The description of this Domains.
-        :type: str
+        :type description: str
         """
         self._description = description
 

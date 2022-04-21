@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PushEventsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class PushEventsRequest:
     }
 
     def __init__(self, x_enterprise_prject_id=None, action=None, body=None):
-        """PushEventsRequest - a model defined in huaweicloud sdk"""
+        """PushEventsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_enterprise_prject_id: 告警所属的企业项目id。
+        :type x_enterprise_prject_id: str
+        :param action: 接口请求动作。action&#x3D;clear代表清除告警，不传或者传其他值默认为上报动作。
+        :type action: str
+        :param body: Body of the PushEventsRequest
+        :type body: :class:`huaweicloudsdkaom.v2.EventList`
+        """
         
         
 
@@ -68,7 +77,7 @@ class PushEventsRequest:
         告警所属的企业项目id。
 
         :param x_enterprise_prject_id: The x_enterprise_prject_id of this PushEventsRequest.
-        :type: str
+        :type x_enterprise_prject_id: str
         """
         self._x_enterprise_prject_id = x_enterprise_prject_id
 
@@ -90,7 +99,7 @@ class PushEventsRequest:
         接口请求动作。action=clear代表清除告警，不传或者传其他值默认为上报动作。
 
         :param action: The action of this PushEventsRequest.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -100,7 +109,7 @@ class PushEventsRequest:
 
 
         :return: The body of this PushEventsRequest.
-        :rtype: EventList
+        :rtype: :class:`huaweicloudsdkaom.v2.EventList`
         """
         return self._body
 
@@ -110,7 +119,7 @@ class PushEventsRequest:
 
 
         :param body: The body of this PushEventsRequest.
-        :type: EventList
+        :type body: :class:`huaweicloudsdkaom.v2.EventList`
         """
         self._body = body
 

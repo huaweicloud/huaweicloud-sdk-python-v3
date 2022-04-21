@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateSecretRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class CreateSecretRequestBody:
     }
 
     def __init__(self, name=None, kms_key_id=None, description=None, secret_binary=None, secret_string=None):
-        """CreateSecretRequestBody - a model defined in huaweicloud sdk"""
+        """CreateSecretRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param name: 凭据名称。  约束：取值范围为1到64个字符，满足正则匹配“^[a-zA-Z0-9._-]{1,64}$”。 
+        :type name: str
+        :param kms_key_id: 用于加密保护凭据值的KMS主密钥ID，如果您未指定此参数，凭据管理服务将默认使用名为csms/default的默认主密钥，用于加密您账号在本项目中创建的凭据值。如果用户账号下不存在该名称的主密钥，则凭据管理服务自动为您创建该名称的密钥。
+        :type kms_key_id: str
+        :param description: 凭据的描述信息。  约束：2048字节。 
+        :type description: str
+        :param secret_binary: 二进制类型凭据在base64编码后的明文，凭据管理服务将其加密后，存入凭据的初始版本中。  类型：base64编码的二进制数据对象。  约束：secret_binary和secret_string必须且只能设置一个，最大32K。 
+        :type secret_binary: str
+        :param secret_string: 文本类型凭据的明文，凭据管理服务将其加密后，存入凭据的初始版本中。  约束：secret_binary和secret_string必须且只能设置一个，最大32K。 
+        :type secret_string: str
+        """
         
         
 
@@ -77,7 +90,7 @@ class CreateSecretRequestBody:
         凭据名称。  约束：取值范围为1到64个字符，满足正则匹配“^[a-zA-Z0-9._-]{1,64}$”。 
 
         :param name: The name of this CreateSecretRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -99,7 +112,7 @@ class CreateSecretRequestBody:
         用于加密保护凭据值的KMS主密钥ID，如果您未指定此参数，凭据管理服务将默认使用名为csms/default的默认主密钥，用于加密您账号在本项目中创建的凭据值。如果用户账号下不存在该名称的主密钥，则凭据管理服务自动为您创建该名称的密钥。
 
         :param kms_key_id: The kms_key_id of this CreateSecretRequestBody.
-        :type: str
+        :type kms_key_id: str
         """
         self._kms_key_id = kms_key_id
 
@@ -121,7 +134,7 @@ class CreateSecretRequestBody:
         凭据的描述信息。  约束：2048字节。 
 
         :param description: The description of this CreateSecretRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -143,7 +156,7 @@ class CreateSecretRequestBody:
         二进制类型凭据在base64编码后的明文，凭据管理服务将其加密后，存入凭据的初始版本中。  类型：base64编码的二进制数据对象。  约束：secret_binary和secret_string必须且只能设置一个，最大32K。 
 
         :param secret_binary: The secret_binary of this CreateSecretRequestBody.
-        :type: str
+        :type secret_binary: str
         """
         self._secret_binary = secret_binary
 
@@ -165,7 +178,7 @@ class CreateSecretRequestBody:
         文本类型凭据的明文，凭据管理服务将其加密后，存入凭据的初始版本中。  约束：secret_binary和secret_string必须且只能设置一个，最大32K。 
 
         :param secret_string: The secret_string of this CreateSecretRequestBody.
-        :type: str
+        :type secret_string: str
         """
         self._secret_string = secret_string
 

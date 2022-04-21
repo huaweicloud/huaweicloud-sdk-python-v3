@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowHistoryTaskDetailsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ShowHistoryTaskDetailsRequest:
     }
 
     def __init__(self, enterprise_project_id=None, history_tasks_id=None, page_size=None, page_number=None, status=None, url=None, create_time=None):
-        """ShowHistoryTaskDetailsRequest - a model defined in huaweicloud sdk"""
+        """ShowHistoryTaskDetailsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param enterprise_project_id: 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子账号调用接口时，该参数必传。
+        :type enterprise_project_id: str
+        :param history_tasks_id: 刷新任务ID。
+        :type history_tasks_id: str
+        :param page_size: 刷新预热的urls所显示单页最大数量，取值范围为1-10000。page_size和page_number必须同时传值。默认值30。
+        :type page_size: int
+        :param page_number: 刷新预热的urls当前查询为第几页，取值范围为1-65535。默认值1。
+        :type page_number: int
+        :param status: url的状态 processing 处理中，succeed 完成，failed 失败，waiting 等待，refreshing 刷新中，preheating 预热中。
+        :type status: str
+        :param url: url的地址。
+        :type url: str
+        :param create_time: 刷新预热任务的创建时间。不传参默认为查询7天内的任务。最长可查询15天内数据。
+        :type create_time: int
+        """
         
         
 
@@ -87,7 +104,7 @@ class ShowHistoryTaskDetailsRequest:
         当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子账号调用接口时，该参数必传。
 
         :param enterprise_project_id: The enterprise_project_id of this ShowHistoryTaskDetailsRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -109,7 +126,7 @@ class ShowHistoryTaskDetailsRequest:
         刷新任务ID。
 
         :param history_tasks_id: The history_tasks_id of this ShowHistoryTaskDetailsRequest.
-        :type: str
+        :type history_tasks_id: str
         """
         self._history_tasks_id = history_tasks_id
 
@@ -131,7 +148,7 @@ class ShowHistoryTaskDetailsRequest:
         刷新预热的urls所显示单页最大数量，取值范围为1-10000。page_size和page_number必须同时传值。默认值30。
 
         :param page_size: The page_size of this ShowHistoryTaskDetailsRequest.
-        :type: int
+        :type page_size: int
         """
         self._page_size = page_size
 
@@ -153,7 +170,7 @@ class ShowHistoryTaskDetailsRequest:
         刷新预热的urls当前查询为第几页，取值范围为1-65535。默认值1。
 
         :param page_number: The page_number of this ShowHistoryTaskDetailsRequest.
-        :type: int
+        :type page_number: int
         """
         self._page_number = page_number
 
@@ -175,7 +192,7 @@ class ShowHistoryTaskDetailsRequest:
         url的状态 processing 处理中，succeed 完成，failed 失败，waiting 等待，refreshing 刷新中，preheating 预热中。
 
         :param status: The status of this ShowHistoryTaskDetailsRequest.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -197,7 +214,7 @@ class ShowHistoryTaskDetailsRequest:
         url的地址。
 
         :param url: The url of this ShowHistoryTaskDetailsRequest.
-        :type: str
+        :type url: str
         """
         self._url = url
 
@@ -219,7 +236,7 @@ class ShowHistoryTaskDetailsRequest:
         刷新预热任务的创建时间。不传参默认为查询7天内的任务。最长可查询15天内数据。
 
         :param create_time: The create_time of this ShowHistoryTaskDetailsRequest.
-        :type: int
+        :type create_time: int
         """
         self._create_time = create_time
 

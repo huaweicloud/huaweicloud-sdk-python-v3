@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Backend:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class Backend:
     }
 
     def __init__(self, ip=None, port=None, health_check=None):
-        """Backend - a model defined in huaweicloud sdk"""
+        """Backend
+
+        The model defined in huaweicloud sdk
+
+        :param ip: 后端主机地址列表
+        :type ip: list[str]
+        :param port: 后端服务端口，不存在时使用监听器端口
+        :type port: int
+        :param health_check: 
+        :type health_check: :class:`huaweicloudsdkroma.v2.HealthCheck`
+        """
         
         
 
@@ -68,7 +77,7 @@ class Backend:
         后端主机地址列表
 
         :param ip: The ip of this Backend.
-        :type: list[str]
+        :type ip: list[str]
         """
         self._ip = ip
 
@@ -90,7 +99,7 @@ class Backend:
         后端服务端口，不存在时使用监听器端口
 
         :param port: The port of this Backend.
-        :type: int
+        :type port: int
         """
         self._port = port
 
@@ -100,7 +109,7 @@ class Backend:
 
 
         :return: The health_check of this Backend.
-        :rtype: HealthCheck
+        :rtype: :class:`huaweicloudsdkroma.v2.HealthCheck`
         """
         return self._health_check
 
@@ -110,7 +119,7 @@ class Backend:
 
 
         :param health_check: The health_check of this Backend.
-        :type: HealthCheck
+        :type health_check: :class:`huaweicloudsdkroma.v2.HealthCheck`
         """
         self._health_check = health_check
 

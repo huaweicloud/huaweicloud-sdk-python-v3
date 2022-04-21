@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class JobEntities:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class JobEntities:
     }
 
     def __init__(self, image_id=None, current_task=None, image_name=None, process_percent=None, results=None):
-        """JobEntities - a model defined in huaweicloud sdk"""
+        """JobEntities
+
+        The model defined in huaweicloud sdk
+
+        :param image_id: 镜像ID
+        :type image_id: str
+        :param current_task: 当前任务名称
+        :type current_task: str
+        :param image_name: 镜像名称
+        :type image_name: str
+        :param process_percent: 任务执行进度
+        :type process_percent: float
+        :param results: 批量任务执行结果
+        :type results: list[:class:`huaweicloudsdkims.v2.JobEntitiesResult`]
+        """
         
         
 
@@ -78,7 +91,7 @@ class JobEntities:
         镜像ID
 
         :param image_id: The image_id of this JobEntities.
-        :type: str
+        :type image_id: str
         """
         self._image_id = image_id
 
@@ -100,7 +113,7 @@ class JobEntities:
         当前任务名称
 
         :param current_task: The current_task of this JobEntities.
-        :type: str
+        :type current_task: str
         """
         self._current_task = current_task
 
@@ -122,7 +135,7 @@ class JobEntities:
         镜像名称
 
         :param image_name: The image_name of this JobEntities.
-        :type: str
+        :type image_name: str
         """
         self._image_name = image_name
 
@@ -144,7 +157,7 @@ class JobEntities:
         任务执行进度
 
         :param process_percent: The process_percent of this JobEntities.
-        :type: float
+        :type process_percent: float
         """
         self._process_percent = process_percent
 
@@ -155,7 +168,7 @@ class JobEntities:
         批量任务执行结果
 
         :return: The results of this JobEntities.
-        :rtype: list[JobEntitiesResult]
+        :rtype: list[:class:`huaweicloudsdkims.v2.JobEntitiesResult`]
         """
         return self._results
 
@@ -166,7 +179,7 @@ class JobEntities:
         批量任务执行结果
 
         :param results: The results of this JobEntities.
-        :type: list[JobEntitiesResult]
+        :type results: list[:class:`huaweicloudsdkims.v2.JobEntitiesResult`]
         """
         self._results = results
 

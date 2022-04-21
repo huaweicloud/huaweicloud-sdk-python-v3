@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CheckDomainPermissionForAgencyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class CheckDomainPermissionForAgencyResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CheckDomainPermissionForAgencyResponse - a model defined in huaweicloud sdk"""
+        """CheckDomainPermissionForAgencyResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(CheckDomainPermissionForAgencyResponse, self).__init__()
         self.discriminator = None

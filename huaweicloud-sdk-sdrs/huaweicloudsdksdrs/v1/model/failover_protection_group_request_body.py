@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FailoverProtectionGroupRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class FailoverProtectionGroupRequestBody:
     }
 
     def __init__(self, failover_server_group=None):
-        """FailoverProtectionGroupRequestBody - a model defined in huaweicloud sdk"""
+        """FailoverProtectionGroupRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param failover_server_group: 标识保护组故障切换操作。该参数目前默认值为空。
+        :type failover_server_group: object
+        """
         
         
 
@@ -57,7 +62,7 @@ class FailoverProtectionGroupRequestBody:
         标识保护组故障切换操作。该参数目前默认值为空。
 
         :param failover_server_group: The failover_server_group of this FailoverProtectionGroupRequestBody.
-        :type: object
+        :type failover_server_group: object
         """
         self._failover_server_group = failover_server_group
 

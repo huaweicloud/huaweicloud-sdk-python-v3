@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSnapshotDataResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListSnapshotDataResponse(SdkResponse):
     }
 
     def __init__(self, snapshot_list=None, total=None, x_request_id=None):
-        """ListSnapshotDataResponse - a model defined in huaweicloud sdk"""
+        """ListSnapshotDataResponse
+
+        The model defined in huaweicloud sdk
+
+        :param snapshot_list: 采样数据列表。 
+        :type snapshot_list: list[:class:`huaweicloudsdklive.v2.SnapshotData`]
+        :param total: 指定时间区间内截图数量总和。
+        :type total: int
+        :param x_request_id: 
+        :type x_request_id: str
+        """
         
         super(ListSnapshotDataResponse, self).__init__()
 
@@ -57,7 +66,7 @@ class ListSnapshotDataResponse(SdkResponse):
         采样数据列表。 
 
         :return: The snapshot_list of this ListSnapshotDataResponse.
-        :rtype: list[SnapshotData]
+        :rtype: list[:class:`huaweicloudsdklive.v2.SnapshotData`]
         """
         return self._snapshot_list
 
@@ -68,7 +77,7 @@ class ListSnapshotDataResponse(SdkResponse):
         采样数据列表。 
 
         :param snapshot_list: The snapshot_list of this ListSnapshotDataResponse.
-        :type: list[SnapshotData]
+        :type snapshot_list: list[:class:`huaweicloudsdklive.v2.SnapshotData`]
         """
         self._snapshot_list = snapshot_list
 
@@ -90,7 +99,7 @@ class ListSnapshotDataResponse(SdkResponse):
         指定时间区间内截图数量总和。
 
         :param total: The total of this ListSnapshotDataResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -110,7 +119,7 @@ class ListSnapshotDataResponse(SdkResponse):
 
 
         :param x_request_id: The x_request_id of this ListSnapshotDataResponse.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 

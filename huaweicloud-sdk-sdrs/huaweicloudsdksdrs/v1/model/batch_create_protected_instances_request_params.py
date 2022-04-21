@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchCreateProtectedInstancesRequestParams:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class BatchCreateProtectedInstancesRequestParams:
     }
 
     def __init__(self, name_prefix=None, description=None, server_group_id=None, cluster_id=None, primary_subnet_id=None, tenancy=None, dedicated_host_id=None, servers=None, tags=None):
-        """BatchCreateProtectedInstancesRequestParams - a model defined in huaweicloud sdk"""
+        """BatchCreateProtectedInstancesRequestParams
+
+        The model defined in huaweicloud sdk
+
+        :param name_prefix: 保护实例的名称前缀，批量创建保护实例时，为区分不同保护实例，创建过程中系统会自动在名称后加\&quot;-0001\&quot;的类似标记，故此时名称的长度为[1-59]个字符。只包含中文字符、英文字母（a～ｚ、Ａ～Ｚ）、数字（０~９）、小数点（．）、下划线（_）、中划线（-）。
+        :type name_prefix: str
+        :param description: 保护实例的描述，最大支持长度为64个字符。不能包含左尖括号（&lt;）或右尖括号（&gt;）。
+        :type description: str
+        :param server_group_id: 需要加入的保护组ID。
+        :type server_group_id: str
+        :param cluster_id: 专属分布式存储池ID。当容灾站点磁盘选择专属分布式存储时指定该字段。
+        :type cluster_id: str
+        :param primary_subnet_id: 容灾站点云服务器主网卡所在的子网subnetID，与neutron_network_id字段值一致。
+        :type primary_subnet_id: str
+        :param tenancy: 在专属主机或共享池中创建容灾站点云服务器，默认为在共享池中创建。值为：shared或dedicated。shared：表示共享池。dedicated：表示专属主机。
+        :type tenancy: str
+        :param dedicated_host_id: 专属主机id，此属性仅在tenancy值为dedicated时有效。若不指定此属性，系统将自动分配租户可以自动放置弹性云服务器的专属主机。
+        :type dedicated_host_id: str
+        :param servers: 用于创建保护实例的云服务器信息列表。
+        :type servers: list[:class:`huaweicloudsdksdrs.v1.ServerInfo`]
+        :param tags: 标签列表。
+        :type tags: list[:class:`huaweicloudsdksdrs.v1.ResourceTag`]
+        """
         
         
 
@@ -95,7 +116,7 @@ class BatchCreateProtectedInstancesRequestParams:
         保护实例的名称前缀，批量创建保护实例时，为区分不同保护实例，创建过程中系统会自动在名称后加\"-0001\"的类似标记，故此时名称的长度为[1-59]个字符。只包含中文字符、英文字母（a～ｚ、Ａ～Ｚ）、数字（０~９）、小数点（．）、下划线（_）、中划线（-）。
 
         :param name_prefix: The name_prefix of this BatchCreateProtectedInstancesRequestParams.
-        :type: str
+        :type name_prefix: str
         """
         self._name_prefix = name_prefix
 
@@ -117,7 +138,7 @@ class BatchCreateProtectedInstancesRequestParams:
         保护实例的描述，最大支持长度为64个字符。不能包含左尖括号（<）或右尖括号（>）。
 
         :param description: The description of this BatchCreateProtectedInstancesRequestParams.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -139,7 +160,7 @@ class BatchCreateProtectedInstancesRequestParams:
         需要加入的保护组ID。
 
         :param server_group_id: The server_group_id of this BatchCreateProtectedInstancesRequestParams.
-        :type: str
+        :type server_group_id: str
         """
         self._server_group_id = server_group_id
 
@@ -161,7 +182,7 @@ class BatchCreateProtectedInstancesRequestParams:
         专属分布式存储池ID。当容灾站点磁盘选择专属分布式存储时指定该字段。
 
         :param cluster_id: The cluster_id of this BatchCreateProtectedInstancesRequestParams.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -183,7 +204,7 @@ class BatchCreateProtectedInstancesRequestParams:
         容灾站点云服务器主网卡所在的子网subnetID，与neutron_network_id字段值一致。
 
         :param primary_subnet_id: The primary_subnet_id of this BatchCreateProtectedInstancesRequestParams.
-        :type: str
+        :type primary_subnet_id: str
         """
         self._primary_subnet_id = primary_subnet_id
 
@@ -205,7 +226,7 @@ class BatchCreateProtectedInstancesRequestParams:
         在专属主机或共享池中创建容灾站点云服务器，默认为在共享池中创建。值为：shared或dedicated。shared：表示共享池。dedicated：表示专属主机。
 
         :param tenancy: The tenancy of this BatchCreateProtectedInstancesRequestParams.
-        :type: str
+        :type tenancy: str
         """
         self._tenancy = tenancy
 
@@ -227,7 +248,7 @@ class BatchCreateProtectedInstancesRequestParams:
         专属主机id，此属性仅在tenancy值为dedicated时有效。若不指定此属性，系统将自动分配租户可以自动放置弹性云服务器的专属主机。
 
         :param dedicated_host_id: The dedicated_host_id of this BatchCreateProtectedInstancesRequestParams.
-        :type: str
+        :type dedicated_host_id: str
         """
         self._dedicated_host_id = dedicated_host_id
 
@@ -238,7 +259,7 @@ class BatchCreateProtectedInstancesRequestParams:
         用于创建保护实例的云服务器信息列表。
 
         :return: The servers of this BatchCreateProtectedInstancesRequestParams.
-        :rtype: list[ServerInfo]
+        :rtype: list[:class:`huaweicloudsdksdrs.v1.ServerInfo`]
         """
         return self._servers
 
@@ -249,7 +270,7 @@ class BatchCreateProtectedInstancesRequestParams:
         用于创建保护实例的云服务器信息列表。
 
         :param servers: The servers of this BatchCreateProtectedInstancesRequestParams.
-        :type: list[ServerInfo]
+        :type servers: list[:class:`huaweicloudsdksdrs.v1.ServerInfo`]
         """
         self._servers = servers
 
@@ -260,7 +281,7 @@ class BatchCreateProtectedInstancesRequestParams:
         标签列表。
 
         :return: The tags of this BatchCreateProtectedInstancesRequestParams.
-        :rtype: list[ResourceTag]
+        :rtype: list[:class:`huaweicloudsdksdrs.v1.ResourceTag`]
         """
         return self._tags
 
@@ -271,7 +292,7 @@ class BatchCreateProtectedInstancesRequestParams:
         标签列表。
 
         :param tags: The tags of this BatchCreateProtectedInstancesRequestParams.
-        :type: list[ResourceTag]
+        :type tags: list[:class:`huaweicloudsdksdrs.v1.ResourceTag`]
         """
         self._tags = tags
 

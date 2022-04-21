@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowPublicKeyRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowPublicKeyRequest:
     }
 
     def __init__(self, body=None):
-        """ShowPublicKeyRequest - a model defined in huaweicloud sdk"""
+        """ShowPublicKeyRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the ShowPublicKeyRequest
+        :type body: :class:`huaweicloudsdkkms.v2.OperateKeyRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class ShowPublicKeyRequest:
 
 
         :return: The body of this ShowPublicKeyRequest.
-        :rtype: OperateKeyRequestBody
+        :rtype: :class:`huaweicloudsdkkms.v2.OperateKeyRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class ShowPublicKeyRequest:
 
 
         :param body: The body of this ShowPublicKeyRequest.
-        :type: OperateKeyRequestBody
+        :type body: :class:`huaweicloudsdkkms.v2.OperateKeyRequestBody`
         """
         self._body = body
 

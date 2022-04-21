@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPodsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListPodsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, pods=None):
-        """ListPodsResponse - a model defined in huaweicloud sdk"""
+        """ListPodsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 应用实例总数
+        :type count: int
+        :param pods: 应用实例列表
+        :type pods: list[:class:`huaweicloudsdkief.v1.PodResp`]
+        """
         
         super(ListPodsResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListPodsResponse(SdkResponse):
         应用实例总数
 
         :param count: The count of this ListPodsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -74,7 +81,7 @@ class ListPodsResponse(SdkResponse):
         应用实例列表
 
         :return: The pods of this ListPodsResponse.
-        :rtype: list[PodResp]
+        :rtype: list[:class:`huaweicloudsdkief.v1.PodResp`]
         """
         return self._pods
 
@@ -85,7 +92,7 @@ class ListPodsResponse(SdkResponse):
         应用实例列表
 
         :param pods: The pods of this ListPodsResponse.
-        :type: list[PodResp]
+        :type pods: list[:class:`huaweicloudsdkief.v1.PodResp`]
         """
         self._pods = pods
 

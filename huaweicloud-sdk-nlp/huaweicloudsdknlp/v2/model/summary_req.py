@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SummaryReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class SummaryReq:
     }
 
     def __init__(self, content=None, lang=None, length_limit=None, title=None):
-        """SummaryReq - a model defined in huaweicloud sdk"""
+        """SummaryReq
+
+        The model defined in huaweicloud sdk
+
+        :param content: 文本正文（目前仅支持UTF-8编码），长度不超过10000字。
+        :type content: str
+        :param lang: 支持的文本语言类型，目前支持中文（zh）和英文（en），默认为中文。
+        :type lang: str
+        :param length_limit: 生成摘要的长度限制。length_limit &gt; 1，则返回结果为字数不小于该值且最接近该值的摘要。 0 &lt;&#x3D; length_limit &lt;&#x3D; 1，则返回结果为长度百分比不小于该值且最接近该值的摘要。 默认数值为0.3。
+        :type length_limit: float
+        :param title: 文本标题（目前仅支持UTF-8编码），长度不超过1000字。
+        :type title: str
+        """
         
         
 
@@ -72,7 +83,7 @@ class SummaryReq:
         文本正文（目前仅支持UTF-8编码），长度不超过10000字。
 
         :param content: The content of this SummaryReq.
-        :type: str
+        :type content: str
         """
         self._content = content
 
@@ -94,7 +105,7 @@ class SummaryReq:
         支持的文本语言类型，目前支持中文（zh）和英文（en），默认为中文。
 
         :param lang: The lang of this SummaryReq.
-        :type: str
+        :type lang: str
         """
         self._lang = lang
 
@@ -116,7 +127,7 @@ class SummaryReq:
         生成摘要的长度限制。length_limit > 1，则返回结果为字数不小于该值且最接近该值的摘要。 0 <= length_limit <= 1，则返回结果为长度百分比不小于该值且最接近该值的摘要。 默认数值为0.3。
 
         :param length_limit: The length_limit of this SummaryReq.
-        :type: float
+        :type length_limit: float
         """
         self._length_limit = length_limit
 
@@ -138,7 +149,7 @@ class SummaryReq:
         文本标题（目前仅支持UTF-8编码），长度不超过1000字。
 
         :param title: The title of this SummaryReq.
-        :type: str
+        :type title: str
         """
         self._title = title
 

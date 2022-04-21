@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StartMeetingResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class StartMeetingResponse(SdkResponse):
     }
 
     def __init__(self, uuid=None, region_ip=None):
-        """StartMeetingResponse - a model defined in huaweicloud sdk"""
+        """StartMeetingResponse
+
+        The model defined in huaweicloud sdk
+
+        :param uuid: 会议主席鉴权uuid
+        :type uuid: str
+        :param region_ip: 区域公网IP地址
+        :type region_ip: str
+        """
         
         super(StartMeetingResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class StartMeetingResponse(SdkResponse):
         会议主席鉴权uuid
 
         :param uuid: The uuid of this StartMeetingResponse.
-        :type: str
+        :type uuid: str
         """
         self._uuid = uuid
 
@@ -85,7 +92,7 @@ class StartMeetingResponse(SdkResponse):
         区域公网IP地址
 
         :param region_ip: The region_ip of this StartMeetingResponse.
-        :type: str
+        :type region_ip: str
         """
         self._region_ip = region_ip
 

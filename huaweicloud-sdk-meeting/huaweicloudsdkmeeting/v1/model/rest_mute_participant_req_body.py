@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestMuteParticipantReqBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RestMuteParticipantReqBody:
     }
 
     def __init__(self, is_mute=None):
-        """RestMuteParticipantReqBody - a model defined in huaweicloud sdk"""
+        """RestMuteParticipantReqBody
+
+        The model defined in huaweicloud sdk
+
+        :param is_mute: - 0: 取消静音。 - 1: 静音。
+        :type is_mute: int
+        """
         
         
 
@@ -57,7 +62,7 @@ class RestMuteParticipantReqBody:
         - 0: 取消静音。 - 1: 静音。
 
         :param is_mute: The is_mute of this RestMuteParticipantReqBody.
-        :type: int
+        :type is_mute: int
         """
         self._is_mute = is_mute
 

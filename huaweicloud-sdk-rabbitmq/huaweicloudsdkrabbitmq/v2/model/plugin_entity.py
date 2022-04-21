@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PluginEntity:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class PluginEntity:
     }
 
     def __init__(self, running=None, enable=None, name=None, version=None):
-        """PluginEntity - a model defined in huaweicloud sdk"""
+        """PluginEntity
+
+        The model defined in huaweicloud sdk
+
+        :param running: 是否运行。
+        :type running: bool
+        :param enable: 是否启用。
+        :type enable: bool
+        :param name: 插件名称。
+        :type name: str
+        :param version: 插件版本。
+        :type version: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class PluginEntity:
         是否运行。
 
         :param running: The running of this PluginEntity.
-        :type: bool
+        :type running: bool
         """
         self._running = running
 
@@ -95,7 +106,7 @@ class PluginEntity:
         是否启用。
 
         :param enable: The enable of this PluginEntity.
-        :type: bool
+        :type enable: bool
         """
         self._enable = enable
 
@@ -117,7 +128,7 @@ class PluginEntity:
         插件名称。
 
         :param name: The name of this PluginEntity.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -139,7 +150,7 @@ class PluginEntity:
         插件版本。
 
         :param version: The version of this PluginEntity.
-        :type: str
+        :type version: str
         """
         self._version = version
 

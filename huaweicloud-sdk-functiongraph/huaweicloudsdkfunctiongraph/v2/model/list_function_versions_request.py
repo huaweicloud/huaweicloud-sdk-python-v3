@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListFunctionVersionsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListFunctionVersionsRequest:
     }
 
     def __init__(self, function_urn=None, marker=None, maxitems=None):
-        """ListFunctionVersionsRequest - a model defined in huaweicloud sdk"""
+        """ListFunctionVersionsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param function_urn: 函数的URN，详细解释见FunctionGraph函数模型的描述。
+        :type function_urn: str
+        :param marker: 上一次查询到的最后的记录位置。
+        :type marker: str
+        :param maxitems: 每次查询获取的最大函数记录数量。
+        :type maxitems: str
+        """
         
         
 
@@ -67,7 +76,7 @@ class ListFunctionVersionsRequest:
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
         :param function_urn: The function_urn of this ListFunctionVersionsRequest.
-        :type: str
+        :type function_urn: str
         """
         self._function_urn = function_urn
 
@@ -89,7 +98,7 @@ class ListFunctionVersionsRequest:
         上一次查询到的最后的记录位置。
 
         :param marker: The marker of this ListFunctionVersionsRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -111,7 +120,7 @@ class ListFunctionVersionsRequest:
         每次查询获取的最大函数记录数量。
 
         :param maxitems: The maxitems of this ListFunctionVersionsRequest.
-        :type: str
+        :type maxitems: str
         """
         self._maxitems = maxitems
 

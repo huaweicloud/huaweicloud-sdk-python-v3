@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateRecordCallbackResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateRecordCallbackResponse(SdkResponse):
     }
 
     def __init__(self, app_id=None, record_callback=None, x_request_id=None):
-        """UpdateRecordCallbackResponse - a model defined in huaweicloud sdk"""
+        """UpdateRecordCallbackResponse
+
+        The model defined in huaweicloud sdk
+
+        :param app_id: 应用id
+        :type app_id: str
+        :param record_callback: 
+        :type record_callback: :class:`huaweicloudsdkcloudrtc.v2.AppCallbackUrl`
+        :param x_request_id: 
+        :type x_request_id: str
+        """
         
         super(UpdateRecordCallbackResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class UpdateRecordCallbackResponse(SdkResponse):
         应用id
 
         :param app_id: The app_id of this UpdateRecordCallbackResponse.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -78,7 +87,7 @@ class UpdateRecordCallbackResponse(SdkResponse):
 
 
         :return: The record_callback of this UpdateRecordCallbackResponse.
-        :rtype: AppCallbackUrl
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.AppCallbackUrl`
         """
         return self._record_callback
 
@@ -88,7 +97,7 @@ class UpdateRecordCallbackResponse(SdkResponse):
 
 
         :param record_callback: The record_callback of this UpdateRecordCallbackResponse.
-        :type: AppCallbackUrl
+        :type record_callback: :class:`huaweicloudsdkcloudrtc.v2.AppCallbackUrl`
         """
         self._record_callback = record_callback
 
@@ -108,7 +117,7 @@ class UpdateRecordCallbackResponse(SdkResponse):
 
 
         :param x_request_id: The x_request_id of this UpdateRecordCallbackResponse.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 

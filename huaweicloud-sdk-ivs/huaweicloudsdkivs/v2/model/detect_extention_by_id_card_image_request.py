@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DetectExtentionByIdCardImageRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DetectExtentionByIdCardImageRequest:
     }
 
     def __init__(self, body=None):
-        """DetectExtentionByIdCardImageRequest - a model defined in huaweicloud sdk"""
+        """DetectExtentionByIdCardImageRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the DetectExtentionByIdCardImageRequest
+        :type body: :class:`huaweicloudsdkivs.v2.IvsExtentionByIdCardImageRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class DetectExtentionByIdCardImageRequest:
 
 
         :return: The body of this DetectExtentionByIdCardImageRequest.
-        :rtype: IvsExtentionByIdCardImageRequestBody
+        :rtype: :class:`huaweicloudsdkivs.v2.IvsExtentionByIdCardImageRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class DetectExtentionByIdCardImageRequest:
 
 
         :param body: The body of this DetectExtentionByIdCardImageRequest.
-        :type: IvsExtentionByIdCardImageRequestBody
+        :type body: :class:`huaweicloudsdkivs.v2.IvsExtentionByIdCardImageRequestBody`
         """
         self._body = body
 

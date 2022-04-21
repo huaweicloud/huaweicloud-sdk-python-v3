@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateEncryptReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CreateEncryptReq:
     }
 
     def __init__(self, input=None, output=None, encryption=None, user_data=None):
-        """CreateEncryptReq - a model defined in huaweicloud sdk"""
+        """CreateEncryptReq
+
+        The model defined in huaweicloud sdk
+
+        :param input: 
+        :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        :param output: 
+        :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        :param encryption: 
+        :type encryption: :class:`huaweicloudsdkmpc.v1.Encryption`
+        :param user_data: 用户自定义数据。 
+        :type user_data: str
+        """
         
         
 
@@ -61,7 +72,7 @@ class CreateEncryptReq:
 
 
         :return: The input of this CreateEncryptReq.
-        :rtype: ObsObjInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         return self._input
 
@@ -71,7 +82,7 @@ class CreateEncryptReq:
 
 
         :param input: The input of this CreateEncryptReq.
-        :type: ObsObjInfo
+        :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         self._input = input
 
@@ -81,7 +92,7 @@ class CreateEncryptReq:
 
 
         :return: The output of this CreateEncryptReq.
-        :rtype: ObsObjInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         return self._output
 
@@ -91,7 +102,7 @@ class CreateEncryptReq:
 
 
         :param output: The output of this CreateEncryptReq.
-        :type: ObsObjInfo
+        :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         self._output = output
 
@@ -101,7 +112,7 @@ class CreateEncryptReq:
 
 
         :return: The encryption of this CreateEncryptReq.
-        :rtype: Encryption
+        :rtype: :class:`huaweicloudsdkmpc.v1.Encryption`
         """
         return self._encryption
 
@@ -111,7 +122,7 @@ class CreateEncryptReq:
 
 
         :param encryption: The encryption of this CreateEncryptReq.
-        :type: Encryption
+        :type encryption: :class:`huaweicloudsdkmpc.v1.Encryption`
         """
         self._encryption = encryption
 
@@ -133,7 +144,7 @@ class CreateEncryptReq:
         用户自定义数据。 
 
         :param user_data: The user_data of this CreateEncryptReq.
-        :type: str
+        :type user_data: str
         """
         self._user_data = user_data
 

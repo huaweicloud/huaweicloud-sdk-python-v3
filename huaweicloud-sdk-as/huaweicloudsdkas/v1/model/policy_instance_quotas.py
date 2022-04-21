@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PolicyInstanceQuotas:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class PolicyInstanceQuotas:
     }
 
     def __init__(self, resources=None):
-        """PolicyInstanceQuotas - a model defined in huaweicloud sdk"""
+        """PolicyInstanceQuotas
+
+        The model defined in huaweicloud sdk
+
+        :param resources: 配额资源详情。
+        :type resources: list[:class:`huaweicloudsdkas.v1.PolicyInstanceResources`]
+        """
         
         
 
@@ -47,7 +52,7 @@ class PolicyInstanceQuotas:
         配额资源详情。
 
         :return: The resources of this PolicyInstanceQuotas.
-        :rtype: list[PolicyInstanceResources]
+        :rtype: list[:class:`huaweicloudsdkas.v1.PolicyInstanceResources`]
         """
         return self._resources
 
@@ -58,7 +63,7 @@ class PolicyInstanceQuotas:
         配额资源详情。
 
         :param resources: The resources of this PolicyInstanceQuotas.
-        :type: list[PolicyInstanceResources]
+        :type resources: list[:class:`huaweicloudsdkas.v1.PolicyInstanceResources`]
         """
         self._resources = resources
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ChangeSqlSwitchBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ChangeSqlSwitchBody:
     }
 
     def __init__(self, type=None, status=None, datastore_type=None, retention_days=None):
-        """ChangeSqlSwitchBody - a model defined in huaweicloud sdk"""
+        """ChangeSqlSwitchBody
+
+        The model defined in huaweicloud sdk
+
+        :param type: 开关类型。取值DAS SQL Explorer和DAS Slow Query Log，分别表示DAS收集全量SQL开关和DAS收集慢SQL开关。
+        :type type: str
+        :param status: 开关状态，取值0和1，分别代表要关闭和开启。
+        :type status: int
+        :param datastore_type: 数据库类型。当前全量SQL支持的数据库类型包括MySQL和GaussDB(for MySQL)，慢SQL支持的类型：MySQL、GaussDB(for MySQL)、PostgreSQL。
+        :type datastore_type: str
+        :param retention_days: SQL数据保存时长（天）。默认为7天，最长可保留30天，到期后数据自动删除。如果要保留30天以上，请到DAS页面进行操作。
+        :type retention_days: int
+        """
         
         
 
@@ -70,7 +81,7 @@ class ChangeSqlSwitchBody:
         开关类型。取值DAS SQL Explorer和DAS Slow Query Log，分别表示DAS收集全量SQL开关和DAS收集慢SQL开关。
 
         :param type: The type of this ChangeSqlSwitchBody.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -92,7 +103,7 @@ class ChangeSqlSwitchBody:
         开关状态，取值0和1，分别代表要关闭和开启。
 
         :param status: The status of this ChangeSqlSwitchBody.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -114,7 +125,7 @@ class ChangeSqlSwitchBody:
         数据库类型。当前全量SQL支持的数据库类型包括MySQL和GaussDB(for MySQL)，慢SQL支持的类型：MySQL、GaussDB(for MySQL)、PostgreSQL。
 
         :param datastore_type: The datastore_type of this ChangeSqlSwitchBody.
-        :type: str
+        :type datastore_type: str
         """
         self._datastore_type = datastore_type
 
@@ -136,7 +147,7 @@ class ChangeSqlSwitchBody:
         SQL数据保存时长（天）。默认为7天，最长可保留30天，到期后数据自动删除。如果要保留30天以上，请到DAS页面进行操作。
 
         :param retention_days: The retention_days of this ChangeSqlSwitchBody.
-        :type: int
+        :type retention_days: int
         """
         self._retention_days = retention_days
 

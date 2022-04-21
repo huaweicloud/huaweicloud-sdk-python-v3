@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AgencyMapping:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class AgencyMapping:
     }
 
     def __init__(self, agency=None, identifier_type=None, identifiers=None, agency_id=None):
-        """AgencyMapping - a model defined in huaweicloud sdk"""
+        """AgencyMapping
+
+        The model defined in huaweicloud sdk
+
+        :param agency: 该映射绑定的IAM委托名称。
+        :type agency: str
+        :param identifier_type: 委托类型，分为“User”和“Group”两种。 - User表示该映射关系为针对用户的映射，identifiers中填写用户名称列表。 - Group表示该映射关系为针对用户组的映射，identifiers中填写用户组名称列表。
+        :type identifier_type: str
+        :param identifiers: IAM委托映射的用户（组）名称列表。
+        :type identifiers: list[str]
+        :param agency_id: 该映射关系绑定的委托的的唯一标识码。
+        :type agency_id: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class AgencyMapping:
         该映射绑定的IAM委托名称。
 
         :param agency: The agency of this AgencyMapping.
-        :type: str
+        :type agency: str
         """
         self._agency = agency
 
@@ -91,7 +102,7 @@ class AgencyMapping:
         委托类型，分为“User”和“Group”两种。 - User表示该映射关系为针对用户的映射，identifiers中填写用户名称列表。 - Group表示该映射关系为针对用户组的映射，identifiers中填写用户组名称列表。
 
         :param identifier_type: The identifier_type of this AgencyMapping.
-        :type: str
+        :type identifier_type: str
         """
         self._identifier_type = identifier_type
 
@@ -113,7 +124,7 @@ class AgencyMapping:
         IAM委托映射的用户（组）名称列表。
 
         :param identifiers: The identifiers of this AgencyMapping.
-        :type: list[str]
+        :type identifiers: list[str]
         """
         self._identifiers = identifiers
 
@@ -135,7 +146,7 @@ class AgencyMapping:
         该映射关系绑定的委托的的唯一标识码。
 
         :param agency_id: The agency_id of this AgencyMapping.
-        :type: str
+        :type agency_id: str
         """
         self._agency_id = agency_id
 

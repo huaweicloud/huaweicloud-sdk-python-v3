@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ReclaimSubEnterpriseAmountRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ReclaimSubEnterpriseAmountRequest:
     }
 
     def __init__(self, body=None):
-        """ReclaimSubEnterpriseAmountRequest - a model defined in huaweicloud sdk"""
+        """ReclaimSubEnterpriseAmountRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the ReclaimSubEnterpriseAmountRequest
+        :type body: :class:`huaweicloudsdkbss.v2.RetrieveEnterpriseMultiAccountReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class ReclaimSubEnterpriseAmountRequest:
 
 
         :return: The body of this ReclaimSubEnterpriseAmountRequest.
-        :rtype: RetrieveEnterpriseMultiAccountReq
+        :rtype: :class:`huaweicloudsdkbss.v2.RetrieveEnterpriseMultiAccountReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class ReclaimSubEnterpriseAmountRequest:
 
 
         :param body: The body of this ReclaimSubEnterpriseAmountRequest.
-        :type: RetrieveEnterpriseMultiAccountReq
+        :type body: :class:`huaweicloudsdkbss.v2.RetrieveEnterpriseMultiAccountReq`
         """
         self._body = body
 

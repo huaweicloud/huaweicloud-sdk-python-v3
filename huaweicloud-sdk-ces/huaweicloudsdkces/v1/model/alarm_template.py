@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AlarmTemplate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class AlarmTemplate:
     }
 
     def __init__(self, template_name=None, template_description=None, namespace=None, dimension_name=None, template_items=None, template_id=None):
-        """AlarmTemplate - a model defined in huaweicloud sdk"""
+        """AlarmTemplate
+
+        The model defined in huaweicloud sdk
+
+        :param template_name: 自定义告警模板名称，如：alarmTemplate-Test01。
+        :type template_name: str
+        :param template_description: 自定义告警模板描述。
+        :type template_description: str
+        :param namespace: 自定义告警模板选择的资源类型，即服务命名空间，如：选择弹性云服务器，则命名空间为SYS.ECS，各资源的监控指标名称可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
+        :type namespace: str
+        :param dimension_name: 自定义告警模板选择的资源维度，如：弹性云服务器，则维度为instance_id，各服务资源的指标维度名称可查看：“[服务指标维度](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
+        :type dimension_name: str
+        :param template_items: 自定义告警模板添加的一组或者多个告警策略。
+        :type template_items: list[:class:`huaweicloudsdkces.v1.TemplateItem`]
+        :param template_id: 自定义告警模板的ID，如：at1603330892378wkDm77y6B。
+        :type template_id: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class AlarmTemplate:
         自定义告警模板名称，如：alarmTemplate-Test01。
 
         :param template_name: The template_name of this AlarmTemplate.
-        :type: str
+        :type template_name: str
         """
         self._template_name = template_name
 
@@ -105,7 +120,7 @@ class AlarmTemplate:
         自定义告警模板描述。
 
         :param template_description: The template_description of this AlarmTemplate.
-        :type: str
+        :type template_description: str
         """
         self._template_description = template_description
 
@@ -127,7 +142,7 @@ class AlarmTemplate:
         自定义告警模板选择的资源类型，即服务命名空间，如：选择弹性云服务器，则命名空间为SYS.ECS，各资源的监控指标名称可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
         :param namespace: The namespace of this AlarmTemplate.
-        :type: str
+        :type namespace: str
         """
         self._namespace = namespace
 
@@ -149,7 +164,7 @@ class AlarmTemplate:
         自定义告警模板选择的资源维度，如：弹性云服务器，则维度为instance_id，各服务资源的指标维度名称可查看：“[服务指标维度](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
         :param dimension_name: The dimension_name of this AlarmTemplate.
-        :type: str
+        :type dimension_name: str
         """
         self._dimension_name = dimension_name
 
@@ -160,7 +175,7 @@ class AlarmTemplate:
         自定义告警模板添加的一组或者多个告警策略。
 
         :return: The template_items of this AlarmTemplate.
-        :rtype: list[TemplateItem]
+        :rtype: list[:class:`huaweicloudsdkces.v1.TemplateItem`]
         """
         return self._template_items
 
@@ -171,7 +186,7 @@ class AlarmTemplate:
         自定义告警模板添加的一组或者多个告警策略。
 
         :param template_items: The template_items of this AlarmTemplate.
-        :type: list[TemplateItem]
+        :type template_items: list[:class:`huaweicloudsdkces.v1.TemplateItem`]
         """
         self._template_items = template_items
 
@@ -193,7 +208,7 @@ class AlarmTemplate:
         自定义告警模板的ID，如：at1603330892378wkDm77y6B。
 
         :param template_id: The template_id of this AlarmTemplate.
-        :type: str
+        :type template_id: str
         """
         self._template_id = template_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAreaCodesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListAreaCodesResponse(SdkResponse):
     }
 
     def __init__(self, area_code_list=None):
-        """ListAreaCodesResponse - a model defined in huaweicloud sdk"""
+        """ListAreaCodesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param area_code_list: 国家码列表
+        :type area_code_list: list[:class:`huaweicloudsdkosm.v2.AreaCodeSimpleInfoV2`]
+        """
         
         super(ListAreaCodesResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListAreaCodesResponse(SdkResponse):
         国家码列表
 
         :return: The area_code_list of this ListAreaCodesResponse.
-        :rtype: list[AreaCodeSimpleInfoV2]
+        :rtype: list[:class:`huaweicloudsdkosm.v2.AreaCodeSimpleInfoV2`]
         """
         return self._area_code_list
 
@@ -58,7 +63,7 @@ class ListAreaCodesResponse(SdkResponse):
         国家码列表
 
         :param area_code_list: The area_code_list of this ListAreaCodesResponse.
-        :type: list[AreaCodeSimpleInfoV2]
+        :type area_code_list: list[:class:`huaweicloudsdkosm.v2.AreaCodeSimpleInfoV2`]
         """
         self._area_code_list = area_code_list
 

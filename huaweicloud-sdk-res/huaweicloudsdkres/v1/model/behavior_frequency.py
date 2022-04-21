@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BehaviorFrequency:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class BehaviorFrequency:
     }
 
     def __init__(self, behavior_type=None, lower_limit=None, upper_limit=None, time_interval=None):
-        """BehaviorFrequency - a model defined in huaweicloud sdk"""
+        """BehaviorFrequency
+
+        The model defined in huaweicloud sdk
+
+        :param behavior_type: 行为类型： - view，曝光 - click，点击 - collect，收藏 - uncollect，取消收藏 - search_click，搜索后点击 - comment，评论 - share，分享 - like，点赞 - dislike，点衰 - grade，评分 - consume，消费 - use，观看视频/听音乐/阅读 - download，下载 - tip，打赏 - subscribe，关注
+        :type behavior_type: str
+        :param lower_limit: 最小次数。
+        :type lower_limit: int
+        :param upper_limit: 最大次数。
+        :type upper_limit: int
+        :param time_interval: 时间区间。
+        :type time_interval: int
+        """
         
         
 
@@ -71,7 +82,7 @@ class BehaviorFrequency:
         行为类型： - view，曝光 - click，点击 - collect，收藏 - uncollect，取消收藏 - search_click，搜索后点击 - comment，评论 - share，分享 - like，点赞 - dislike，点衰 - grade，评分 - consume，消费 - use，观看视频/听音乐/阅读 - download，下载 - tip，打赏 - subscribe，关注
 
         :param behavior_type: The behavior_type of this BehaviorFrequency.
-        :type: str
+        :type behavior_type: str
         """
         self._behavior_type = behavior_type
 
@@ -93,7 +104,7 @@ class BehaviorFrequency:
         最小次数。
 
         :param lower_limit: The lower_limit of this BehaviorFrequency.
-        :type: int
+        :type lower_limit: int
         """
         self._lower_limit = lower_limit
 
@@ -115,7 +126,7 @@ class BehaviorFrequency:
         最大次数。
 
         :param upper_limit: The upper_limit of this BehaviorFrequency.
-        :type: int
+        :type upper_limit: int
         """
         self._upper_limit = upper_limit
 
@@ -137,7 +148,7 @@ class BehaviorFrequency:
         时间区间。
 
         :param time_interval: The time_interval of this BehaviorFrequency.
-        :type: int
+        :type time_interval: int
         """
         self._time_interval = time_interval
 

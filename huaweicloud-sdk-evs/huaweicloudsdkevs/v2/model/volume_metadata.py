@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VolumeMetadata:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class VolumeMetadata:
     }
 
     def __init__(self, system__cmkid=None, system__encrypted=None, full_clone=None, hwpassthrough=None, order_id=None):
-        """VolumeMetadata - a model defined in huaweicloud sdk"""
+        """VolumeMetadata
+
+        The model defined in huaweicloud sdk
+
+        :param system__cmkid: metadata中的加密cmkid字段，与__system__encrypted配合表示需要加密，cmkid长度固定为36个字节。 &gt; 说明： &gt;  &gt; 请求获取密钥ID的方法请参考：\&quot;[查询密钥列表](https://support.huaweicloud.com/api-dew/dew_02_0017.html)\&quot;。
+        :type system__cmkid: str
+        :param system__encrypted: metadata中的表示加密功能的字段，0代表不加密，1代表加密。 不指定该字段时，云硬盘的加密属性与数据源保持一致，如果不是从数据源创建的场景，则默认不加密。
+        :type system__encrypted: str
+        :param full_clone: 从快照创建云硬盘时的创建方式。 * 0表示使用链接克隆方式。 * 1表示使用全量克隆方式。
+        :type full_clone: str
+        :param hwpassthrough: * true表示云硬盘的设备类型为SCSI类型，即允许ECS操作系统直接访问底层存储介质。支持SCSI锁命令。 * false表示云硬盘的设备类型为VBD (虚拟块存储设备 , Virtual Block Device)类型，即为默认类型，VBD只能支持简单的SCSI读写命令。 * 该字段不存在时，云硬盘默认为VBD类型。
+        :type hwpassthrough: str
+        :param order_id: metadata中的表示云硬盘计费类型的字段。 当该字段有值时，表示该云硬盘的计费类型为包周期计费，否则计费类型为按需计费。
+        :type order_id: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class VolumeMetadata:
         metadata中的加密cmkid字段，与__system__encrypted配合表示需要加密，cmkid长度固定为36个字节。 > 说明： >  > 请求获取密钥ID的方法请参考：\"[查询密钥列表](https://support.huaweicloud.com/api-dew/dew_02_0017.html)\"。
 
         :param system__cmkid: The system__cmkid of this VolumeMetadata.
-        :type: str
+        :type system__cmkid: str
         """
         self._system__cmkid = system__cmkid
 
@@ -100,7 +113,7 @@ class VolumeMetadata:
         metadata中的表示加密功能的字段，0代表不加密，1代表加密。 不指定该字段时，云硬盘的加密属性与数据源保持一致，如果不是从数据源创建的场景，则默认不加密。
 
         :param system__encrypted: The system__encrypted of this VolumeMetadata.
-        :type: str
+        :type system__encrypted: str
         """
         self._system__encrypted = system__encrypted
 
@@ -122,7 +135,7 @@ class VolumeMetadata:
         从快照创建云硬盘时的创建方式。 * 0表示使用链接克隆方式。 * 1表示使用全量克隆方式。
 
         :param full_clone: The full_clone of this VolumeMetadata.
-        :type: str
+        :type full_clone: str
         """
         self._full_clone = full_clone
 
@@ -144,7 +157,7 @@ class VolumeMetadata:
         * true表示云硬盘的设备类型为SCSI类型，即允许ECS操作系统直接访问底层存储介质。支持SCSI锁命令。 * false表示云硬盘的设备类型为VBD (虚拟块存储设备 , Virtual Block Device)类型，即为默认类型，VBD只能支持简单的SCSI读写命令。 * 该字段不存在时，云硬盘默认为VBD类型。
 
         :param hwpassthrough: The hwpassthrough of this VolumeMetadata.
-        :type: str
+        :type hwpassthrough: str
         """
         self._hwpassthrough = hwpassthrough
 
@@ -166,7 +179,7 @@ class VolumeMetadata:
         metadata中的表示云硬盘计费类型的字段。 当该字段有值时，表示该云硬盘的计费类型为包周期计费，否则计费类型为按需计费。
 
         :param order_id: The order_id of this VolumeMetadata.
-        :type: str
+        :type order_id: str
         """
         self._order_id = order_id
 

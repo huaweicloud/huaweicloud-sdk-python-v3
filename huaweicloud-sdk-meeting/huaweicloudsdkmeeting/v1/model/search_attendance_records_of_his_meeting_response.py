@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SearchAttendanceRecordsOfHisMeetingResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class SearchAttendanceRecordsOfHisMeetingResponse(SdkResponse):
     }
 
     def __init__(self, offset=None, limit=None, count=None, data=None):
-        """SearchAttendanceRecordsOfHisMeetingResponse - a model defined in huaweicloud sdk"""
+        """SearchAttendanceRecordsOfHisMeetingResponse
+
+        The model defined in huaweicloud sdk
+
+        :param offset: 第几条。
+        :type offset: int
+        :param limit: 每页的记录数。
+        :type limit: int
+        :param count: 总记录数。
+        :type count: int
+        :param data: 与会者列表。
+        :type data: list[:class:`huaweicloudsdkmeeting.v1.ConfAttendeeRecordInfo`]
+        """
         
         super(SearchAttendanceRecordsOfHisMeetingResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class SearchAttendanceRecordsOfHisMeetingResponse(SdkResponse):
         第几条。
 
         :param offset: The offset of this SearchAttendanceRecordsOfHisMeetingResponse.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -95,7 +106,7 @@ class SearchAttendanceRecordsOfHisMeetingResponse(SdkResponse):
         每页的记录数。
 
         :param limit: The limit of this SearchAttendanceRecordsOfHisMeetingResponse.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -117,7 +128,7 @@ class SearchAttendanceRecordsOfHisMeetingResponse(SdkResponse):
         总记录数。
 
         :param count: The count of this SearchAttendanceRecordsOfHisMeetingResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -128,7 +139,7 @@ class SearchAttendanceRecordsOfHisMeetingResponse(SdkResponse):
         与会者列表。
 
         :return: The data of this SearchAttendanceRecordsOfHisMeetingResponse.
-        :rtype: list[ConfAttendeeRecordInfo]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.ConfAttendeeRecordInfo`]
         """
         return self._data
 
@@ -139,7 +150,7 @@ class SearchAttendanceRecordsOfHisMeetingResponse(SdkResponse):
         与会者列表。
 
         :param data: The data of this SearchAttendanceRecordsOfHisMeetingResponse.
-        :type: list[ConfAttendeeRecordInfo]
+        :type data: list[:class:`huaweicloudsdkmeeting.v1.ConfAttendeeRecordInfo`]
         """
         self._data = data
 

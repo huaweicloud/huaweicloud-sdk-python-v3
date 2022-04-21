@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PostDomainNerRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class PostDomainNerRequest:
     }
 
     def __init__(self, text=None, lang=None, domain=None):
-        """PostDomainNerRequest - a model defined in huaweicloud sdk"""
+        """PostDomainNerRequest
+
+        The model defined in huaweicloud sdk
+
+        :param text: 待分析文本，长度为1~64，文本编码为UTF-8。
+        :type text: str
+        :param lang: 支持的文本语言类型，目前只支持中文，默认为zh。
+        :type lang: str
+        :param domain: 支持的领域类型，目前支持通用（general）领域、商务（business）领域、娱乐（entertainment）领域，默认为general。
+        :type domain: str
+        """
         
         
 
@@ -67,7 +76,7 @@ class PostDomainNerRequest:
         待分析文本，长度为1~64，文本编码为UTF-8。
 
         :param text: The text of this PostDomainNerRequest.
-        :type: str
+        :type text: str
         """
         self._text = text
 
@@ -89,7 +98,7 @@ class PostDomainNerRequest:
         支持的文本语言类型，目前只支持中文，默认为zh。
 
         :param lang: The lang of this PostDomainNerRequest.
-        :type: str
+        :type lang: str
         """
         self._lang = lang
 
@@ -111,7 +120,7 @@ class PostDomainNerRequest:
         支持的领域类型，目前支持通用（general）领域、商务（business）领域、娱乐（entertainment）领域，默认为general。
 
         :param domain: The domain of this PostDomainNerRequest.
-        :type: str
+        :type domain: str
         """
         self._domain = domain
 

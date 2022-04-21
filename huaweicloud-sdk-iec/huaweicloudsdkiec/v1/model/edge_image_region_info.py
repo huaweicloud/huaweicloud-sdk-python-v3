@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EdgeImageRegionInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class EdgeImageRegionInfo:
     }
 
     def __init__(self, region_id=None, image_id=None):
-        """EdgeImageRegionInfo - a model defined in huaweicloud sdk"""
+        """EdgeImageRegionInfo
+
+        The model defined in huaweicloud sdk
+
+        :param region_id: 区域ID
+        :type region_id: str
+        :param image_id: 镜像ID
+        :type image_id: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class EdgeImageRegionInfo:
         区域ID
 
         :param region_id: The region_id of this EdgeImageRegionInfo.
-        :type: str
+        :type region_id: str
         """
         self._region_id = region_id
 
@@ -85,7 +92,7 @@ class EdgeImageRegionInfo:
         镜像ID
 
         :param image_id: The image_id of this EdgeImageRegionInfo.
-        :type: str
+        :type image_id: str
         """
         self._image_id = image_id
 

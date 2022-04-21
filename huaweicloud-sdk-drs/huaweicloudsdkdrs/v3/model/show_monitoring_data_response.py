@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowMonitoringDataResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowMonitoringDataResponse(SdkResponse):
     }
 
     def __init__(self, results=None, count=None):
-        """ShowMonitoringDataResponse - a model defined in huaweicloud sdk"""
+        """ShowMonitoringDataResponse
+
+        The model defined in huaweicloud sdk
+
+        :param results: 容灾监控数据响应体集合
+        :type results: list[:class:`huaweicloudsdkdrs.v3.QueryDataGuardMonitorAndChartResp`]
+        :param count: 查询总数
+        :type count: int
+        """
         
         super(ShowMonitoringDataResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ShowMonitoringDataResponse(SdkResponse):
         容灾监控数据响应体集合
 
         :return: The results of this ShowMonitoringDataResponse.
-        :rtype: list[QueryDataGuardMonitorAndChartResp]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.QueryDataGuardMonitorAndChartResp`]
         """
         return self._results
 
@@ -63,7 +70,7 @@ class ShowMonitoringDataResponse(SdkResponse):
         容灾监控数据响应体集合
 
         :param results: The results of this ShowMonitoringDataResponse.
-        :type: list[QueryDataGuardMonitorAndChartResp]
+        :type results: list[:class:`huaweicloudsdkdrs.v3.QueryDataGuardMonitorAndChartResp`]
         """
         self._results = results
 
@@ -85,7 +92,7 @@ class ShowMonitoringDataResponse(SdkResponse):
         查询总数
 
         :param count: The count of this ShowMonitoringDataResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

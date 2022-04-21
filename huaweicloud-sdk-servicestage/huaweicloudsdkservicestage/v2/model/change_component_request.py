@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ChangeComponentRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ChangeComponentRequest:
     }
 
     def __init__(self, application_id=None, component_id=None, body=None):
-        """ChangeComponentRequest - a model defined in huaweicloud sdk"""
+        """ChangeComponentRequest
+
+        The model defined in huaweicloud sdk
+
+        :param application_id: 应用ID。
+        :type application_id: str
+        :param component_id: 组件ID。
+        :type component_id: str
+        :param body: Body of the ChangeComponentRequest
+        :type body: :class:`huaweicloudsdkservicestage.v2.ComponentModify`
+        """
         
         
 
@@ -66,7 +75,7 @@ class ChangeComponentRequest:
         应用ID。
 
         :param application_id: The application_id of this ChangeComponentRequest.
-        :type: str
+        :type application_id: str
         """
         self._application_id = application_id
 
@@ -88,7 +97,7 @@ class ChangeComponentRequest:
         组件ID。
 
         :param component_id: The component_id of this ChangeComponentRequest.
-        :type: str
+        :type component_id: str
         """
         self._component_id = component_id
 
@@ -98,7 +107,7 @@ class ChangeComponentRequest:
 
 
         :return: The body of this ChangeComponentRequest.
-        :rtype: ComponentModify
+        :rtype: :class:`huaweicloudsdkservicestage.v2.ComponentModify`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class ChangeComponentRequest:
 
 
         :param body: The body of this ChangeComponentRequest.
-        :type: ComponentModify
+        :type body: :class:`huaweicloudsdkservicestage.v2.ComponentModify`
         """
         self._body = body
 

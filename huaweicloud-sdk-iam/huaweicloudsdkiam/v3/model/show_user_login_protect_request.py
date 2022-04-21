@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowUserLoginProtectRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowUserLoginProtectRequest:
     }
 
     def __init__(self, user_id=None):
-        """ShowUserLoginProtectRequest - a model defined in huaweicloud sdk"""
+        """ShowUserLoginProtectRequest
+
+        The model defined in huaweicloud sdk
+
+        :param user_id: 待查询的IAM用户ID，获取方式请参见：[获取用户ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
+        :type user_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowUserLoginProtectRequest:
         待查询的IAM用户ID，获取方式请参见：[获取用户ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param user_id: The user_id of this ShowUserLoginProtectRequest.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 

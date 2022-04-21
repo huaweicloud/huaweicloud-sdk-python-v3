@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPartnerBalancesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListPartnerBalancesRequest:
     }
 
     def __init__(self, indirect_partner_id=None):
-        """ListPartnerBalancesRequest - a model defined in huaweicloud sdk"""
+        """ListPartnerBalancesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param indirect_partner_id: 精英服务商ID。获取方法请参见查询精英服务商列表。华为云伙伴能力中心（一级经销商）查询精英服务商（二级经销商）余额时，需要携带该参数；否则只能查询自己的账户余额。
+        :type indirect_partner_id: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class ListPartnerBalancesRequest:
         精英服务商ID。获取方法请参见查询精英服务商列表。华为云伙伴能力中心（一级经销商）查询精英服务商（二级经销商）余额时，需要携带该参数；否则只能查询自己的账户余额。
 
         :param indirect_partner_id: The indirect_partner_id of this ListPartnerBalancesRequest.
-        :type: str
+        :type indirect_partner_id: str
         """
         self._indirect_partner_id = indirect_partner_id
 

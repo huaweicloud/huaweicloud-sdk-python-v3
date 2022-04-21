@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NodePublicIP:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class NodePublicIP:
     }
 
     def __init__(self, ids=None, count=None, eip=None):
-        """NodePublicIP - a model defined in huaweicloud sdk"""
+        """NodePublicIP
+
+        The model defined in huaweicloud sdk
+
+        :param ids: 已有的弹性IP的ID列表。数量不得大于待创建节点数 &gt; 若已配置ids参数，则无需配置count和eip参数
+        :type ids: list[str]
+        :param count: 要动态创建的弹性IP个数。 &gt; count参数与eip参数必须同时配置。
+        :type count: int
+        :param eip: 
+        :type eip: :class:`huaweicloudsdkcce.v3.NodeEIPSpec`
+        """
         
         
 
@@ -68,7 +77,7 @@ class NodePublicIP:
         已有的弹性IP的ID列表。数量不得大于待创建节点数 > 若已配置ids参数，则无需配置count和eip参数
 
         :param ids: The ids of this NodePublicIP.
-        :type: list[str]
+        :type ids: list[str]
         """
         self._ids = ids
 
@@ -90,7 +99,7 @@ class NodePublicIP:
         要动态创建的弹性IP个数。 > count参数与eip参数必须同时配置。
 
         :param count: The count of this NodePublicIP.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -100,7 +109,7 @@ class NodePublicIP:
 
 
         :return: The eip of this NodePublicIP.
-        :rtype: NodeEIPSpec
+        :rtype: :class:`huaweicloudsdkcce.v3.NodeEIPSpec`
         """
         return self._eip
 
@@ -110,7 +119,7 @@ class NodePublicIP:
 
 
         :param eip: The eip of this NodePublicIP.
-        :type: NodeEIPSpec
+        :type eip: :class:`huaweicloudsdkcce.v3.NodeEIPSpec`
         """
         self._eip = eip
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VaultBindRules:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class VaultBindRules:
     }
 
     def __init__(self, tags=None):
-        """VaultBindRules - a model defined in huaweicloud sdk"""
+        """VaultBindRules
+
+        The model defined in huaweicloud sdk
+
+        :param tags: 按tags过滤自动绑定的资源
+        :type tags: list[:class:`huaweicloudsdkcbr.v1.Tag`]
+        """
         
         
 
@@ -47,7 +52,7 @@ class VaultBindRules:
         按tags过滤自动绑定的资源
 
         :return: The tags of this VaultBindRules.
-        :rtype: list[Tag]
+        :rtype: list[:class:`huaweicloudsdkcbr.v1.Tag`]
         """
         return self._tags
 
@@ -58,7 +63,7 @@ class VaultBindRules:
         按tags过滤自动绑定的资源
 
         :param tags: The tags of this VaultBindRules.
-        :type: list[Tag]
+        :type tags: list[:class:`huaweicloudsdkcbr.v1.Tag`]
         """
         self._tags = tags
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListListenersRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -80,7 +79,63 @@ class ListListenersRequest:
     }
 
     def __init__(self, limit=None, marker=None, page_reverse=None, protocol_port=None, protocol=None, description=None, default_tls_container_ref=None, client_ca_tls_container_ref=None, admin_state_up=None, connection_limit=None, default_pool_id=None, id=None, name=None, http2_enable=None, loadbalancer_id=None, tls_ciphers_policy=None, member_address=None, member_device_id=None, enterprise_project_id=None, enable_member_retry=None, member_timeout=None, client_timeout=None, keepalive_timeout=None, transparent_client_ip_enable=None, enhance_l7policy_enable=None, member_instance_id=None):
-        """ListListenersRequest - a model defined in huaweicloud sdk"""
+        """ListListenersRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 每页返回的个数。
+        :type limit: int
+        :param marker: 上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
+        :type marker: str
+        :param page_reverse: 分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。  使用说明： - 必须与limit一起使用。
+        :type page_reverse: bool
+        :param protocol_port: 监听器的前端监听端口。  支持多值查询，查询条件格式：*protocol_port&#x3D;xxx&amp;protocol_port&#x3D;xxx*。
+        :type protocol_port: list[int]
+        :param protocol: 监听器的监听协议。  [取值：TCP、UDP、HTTP、HTTPS、TERMINATED_HTTPS。  说明：TERMINATED_HTTPS为共享型LB上的监听器独有的协议。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42) [取值：TCP、UDP、HTTP、HTTPS。](tag:dt,dt_test,hcso_dt)  支持多值查询，查询条件格式：*protocol&#x3D;xxx&amp;protocol&#x3D;xxx*。
+        :type protocol: list[str]
+        :param description: 监听器的描述信息。  支持多值查询，查询条件格式：*description&#x3D;xxx&amp;description&#x3D;xxx*。
+        :type description: list[str]
+        :param default_tls_container_ref: 监听器的服务器证书ID。 支持多值查询，查询条件格式：*default_tls_container_ref&#x3D;xxx&amp;default_tls_container_ref&#x3D;xxx*。
+        :type default_tls_container_ref: list[str]
+        :param client_ca_tls_container_ref: 监听器的CA证书ID。 支持多值查询，查询条件格式：*client_ca_tls_container_ref&#x3D;xxx&amp;client_ca_tls_container_ref&#x3D;xxx*。
+        :type client_ca_tls_container_ref: list[str]
+        :param admin_state_up: 监听器的管理状态，只能设置为true。  不支持该字段，请勿使用。
+        :type admin_state_up: bool
+        :param connection_limit: ​监听器的最大连接数。取值：-1表示不限制连接数。  支持多值查询，查询条件格式：*connection_limit&#x3D;xxx&amp;connection_limit&#x3D;xxx*。  不支持该字段，请勿使用。
+        :type connection_limit: list[int]
+        :param default_pool_id: 监听器的默认后端云服务器组ID。当请求没有匹配的转发策略时，转发到默认后端云服务器上处理。  支持多值查询，查询条件格式：*default_pool_id&#x3D;xxx&amp;default_pool_id&#x3D;xxx*。
+        :type default_pool_id: list[str]
+        :param id: 监听器ID。  支持多值查询，查询条件格式：*id&#x3D;xxx&amp;id&#x3D;xxx*。
+        :type id: list[str]
+        :param name: 监听器名称。  支持多值查询，查询条件格式：*name&#x3D;xxx&amp;name&#x3D;xxx*。
+        :type name: list[str]
+        :param http2_enable: 客户端与监听器之间的HTTPS请求的HTTP2功能的开启状态。开启后，可提升客户端与LB间的访问性能，但LB与后端服务器间仍采用HTTP1.X协议。 非HTTPS协议的监听器该字段无效，无论取值如何都不影响监听器正常运行。
+        :type http2_enable: bool
+        :param loadbalancer_id: 监听器所属的负载均衡器ID。  支持多值查询，查询条件格式：*loadbalancer_id&#x3D;xxx&amp;loadbalancer_id&#x3D;xxx*。
+        :type loadbalancer_id: list[str]
+        :param tls_ciphers_policy: 监听器使用的安全策略，仅对HTTPS协议类型的监听器有效。  [取值：tls-1-0-inherit, tls-1-0, tls-1-1, tls-1-2, tls-1-2-strict，tls-1-2-fs, tls-1-0-with-1-3, tls-1-2-fs-with-1-3, hybrid-policy-1-0。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42)  [取值：tls-1-0, tls-1-1, tls-1-2, tls-1-2-strict。](tag:dt,dt_test)  支持多值查询，查询条件格式：*tls_ciphers_policy&#x3D;xxx&amp;tls_ciphers_policy&#x3D;xxx*。
+        :type tls_ciphers_policy: list[str]
+        :param member_address: 后端云服务器的IP地址。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_address&#x3D;xxx&amp;member_address&#x3D;xxx*。
+        :type member_address: list[str]
+        :param member_device_id: 后端云服务器对应的弹性云服务器的ID。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_device_id&#x3D;xxx&amp;member_device_id&#x3D;xxx*。
+        :type member_device_id: list[str]
+        :param enterprise_project_id: 企业项目ID。  支持多值查询，查询条件格式：*enterprise_project_id&#x3D;xxx&amp;enterprise_project_id&#x3D;xxx*。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
+        :type enterprise_project_id: list[str]
+        :param enable_member_retry: 是否开启后端服务器的重试。取值：true 开启重试，false 不开启重试。
+        :type enable_member_retry: bool
+        :param member_timeout: 等待后端服务器响应超时时间。请求转发后端服务器后，在等待超时member_timeout时长没有响应，负载均衡将终止等待，并返回 HTTP504错误码。  取值：1-300s。  支持多值查询，查询条件格式：*member_timeout&#x3D;xxx&amp;member_timeout&#x3D;xxx*。
+        :type member_timeout: list[int]
+        :param client_timeout: 等待客户端请求超时时间，包括两种情况： - 读取整个客户端请求头的超时时长：如果客户端未在超时时长内发送完整个请求头，则请求将被中断 - 两个连续body体的数据包到达LB的时间间隔，超出client_timeout将会断开连接。  取值：1-300s。  支持多值查询，查询条件格式：*client_timeout&#x3D;xxx&amp;client_timeout&#x3D;xxx*。
+        :type client_timeout: list[int]
+        :param keepalive_timeout: 客户端连接空闲超时时间。在超过keepalive_timeout时长一直没有请求，负载均衡会暂时中断当前连接，直到一下次请求时重新建立新的连接。取值：  - TCP监听器：10-4000s。  - HTTP/HTTPS/TERMINATED_HTTPS监听器：0-4000s。  - UDP监听器不支持此字段。 支持多值查询，查询条件格式：*keepalive_timeout&#x3D;xxx&amp;keepalive_timeout&#x3D;xxx*。
+        :type keepalive_timeout: list[int]
+        :param transparent_client_ip_enable: 是否透传客户端IP地址。 [开启后客户端IP地址将透传到后端服务器。仅作用于共享型LB的TCP/UDP监听器。取值：true开启，false不开启。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42,dt,dt_test) [不支持该字段，请勿使用。](tag:hcso_dt)
+        :type transparent_client_ip_enable: bool
+        :param enhance_l7policy_enable: 是否开启高级转发策略功能。开启高级转发策略后，支持更灵活的转发策略和转发规则设置。取值：true开启，false不开启。
+        :type enhance_l7policy_enable: bool
+        :param member_instance_id: 后端云服务器ID。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_instance_id&#x3D;xxx&amp;member_instance_id&#x3D;xxx*。
+        :type member_instance_id: list[str]
+        """
         
         
 
@@ -183,7 +238,7 @@ class ListListenersRequest:
         每页返回的个数。
 
         :param limit: The limit of this ListListenersRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -205,7 +260,7 @@ class ListListenersRequest:
         上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
         :param marker: The marker of this ListListenersRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -227,7 +282,7 @@ class ListListenersRequest:
         分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。  使用说明： - 必须与limit一起使用。
 
         :param page_reverse: The page_reverse of this ListListenersRequest.
-        :type: bool
+        :type page_reverse: bool
         """
         self._page_reverse = page_reverse
 
@@ -249,7 +304,7 @@ class ListListenersRequest:
         监听器的前端监听端口。  支持多值查询，查询条件格式：*protocol_port=xxx&protocol_port=xxx*。
 
         :param protocol_port: The protocol_port of this ListListenersRequest.
-        :type: list[int]
+        :type protocol_port: list[int]
         """
         self._protocol_port = protocol_port
 
@@ -271,7 +326,7 @@ class ListListenersRequest:
         监听器的监听协议。  [取值：TCP、UDP、HTTP、HTTPS、TERMINATED_HTTPS。  说明：TERMINATED_HTTPS为共享型LB上的监听器独有的协议。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42) [取值：TCP、UDP、HTTP、HTTPS。](tag:dt,dt_test,hcso_dt)  支持多值查询，查询条件格式：*protocol=xxx&protocol=xxx*。
 
         :param protocol: The protocol of this ListListenersRequest.
-        :type: list[str]
+        :type protocol: list[str]
         """
         self._protocol = protocol
 
@@ -293,7 +348,7 @@ class ListListenersRequest:
         监听器的描述信息。  支持多值查询，查询条件格式：*description=xxx&description=xxx*。
 
         :param description: The description of this ListListenersRequest.
-        :type: list[str]
+        :type description: list[str]
         """
         self._description = description
 
@@ -315,7 +370,7 @@ class ListListenersRequest:
         监听器的服务器证书ID。 支持多值查询，查询条件格式：*default_tls_container_ref=xxx&default_tls_container_ref=xxx*。
 
         :param default_tls_container_ref: The default_tls_container_ref of this ListListenersRequest.
-        :type: list[str]
+        :type default_tls_container_ref: list[str]
         """
         self._default_tls_container_ref = default_tls_container_ref
 
@@ -337,7 +392,7 @@ class ListListenersRequest:
         监听器的CA证书ID。 支持多值查询，查询条件格式：*client_ca_tls_container_ref=xxx&client_ca_tls_container_ref=xxx*。
 
         :param client_ca_tls_container_ref: The client_ca_tls_container_ref of this ListListenersRequest.
-        :type: list[str]
+        :type client_ca_tls_container_ref: list[str]
         """
         self._client_ca_tls_container_ref = client_ca_tls_container_ref
 
@@ -359,7 +414,7 @@ class ListListenersRequest:
         监听器的管理状态，只能设置为true。  不支持该字段，请勿使用。
 
         :param admin_state_up: The admin_state_up of this ListListenersRequest.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 
@@ -381,7 +436,7 @@ class ListListenersRequest:
         ​监听器的最大连接数。取值：-1表示不限制连接数。  支持多值查询，查询条件格式：*connection_limit=xxx&connection_limit=xxx*。  不支持该字段，请勿使用。
 
         :param connection_limit: The connection_limit of this ListListenersRequest.
-        :type: list[int]
+        :type connection_limit: list[int]
         """
         self._connection_limit = connection_limit
 
@@ -403,7 +458,7 @@ class ListListenersRequest:
         监听器的默认后端云服务器组ID。当请求没有匹配的转发策略时，转发到默认后端云服务器上处理。  支持多值查询，查询条件格式：*default_pool_id=xxx&default_pool_id=xxx*。
 
         :param default_pool_id: The default_pool_id of this ListListenersRequest.
-        :type: list[str]
+        :type default_pool_id: list[str]
         """
         self._default_pool_id = default_pool_id
 
@@ -425,7 +480,7 @@ class ListListenersRequest:
         监听器ID。  支持多值查询，查询条件格式：*id=xxx&id=xxx*。
 
         :param id: The id of this ListListenersRequest.
-        :type: list[str]
+        :type id: list[str]
         """
         self._id = id
 
@@ -447,7 +502,7 @@ class ListListenersRequest:
         监听器名称。  支持多值查询，查询条件格式：*name=xxx&name=xxx*。
 
         :param name: The name of this ListListenersRequest.
-        :type: list[str]
+        :type name: list[str]
         """
         self._name = name
 
@@ -469,7 +524,7 @@ class ListListenersRequest:
         客户端与监听器之间的HTTPS请求的HTTP2功能的开启状态。开启后，可提升客户端与LB间的访问性能，但LB与后端服务器间仍采用HTTP1.X协议。 非HTTPS协议的监听器该字段无效，无论取值如何都不影响监听器正常运行。
 
         :param http2_enable: The http2_enable of this ListListenersRequest.
-        :type: bool
+        :type http2_enable: bool
         """
         self._http2_enable = http2_enable
 
@@ -491,7 +546,7 @@ class ListListenersRequest:
         监听器所属的负载均衡器ID。  支持多值查询，查询条件格式：*loadbalancer_id=xxx&loadbalancer_id=xxx*。
 
         :param loadbalancer_id: The loadbalancer_id of this ListListenersRequest.
-        :type: list[str]
+        :type loadbalancer_id: list[str]
         """
         self._loadbalancer_id = loadbalancer_id
 
@@ -513,7 +568,7 @@ class ListListenersRequest:
         监听器使用的安全策略，仅对HTTPS协议类型的监听器有效。  [取值：tls-1-0-inherit, tls-1-0, tls-1-1, tls-1-2, tls-1-2-strict，tls-1-2-fs, tls-1-0-with-1-3, tls-1-2-fs-with-1-3, hybrid-policy-1-0。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42)  [取值：tls-1-0, tls-1-1, tls-1-2, tls-1-2-strict。](tag:dt,dt_test)  支持多值查询，查询条件格式：*tls_ciphers_policy=xxx&tls_ciphers_policy=xxx*。
 
         :param tls_ciphers_policy: The tls_ciphers_policy of this ListListenersRequest.
-        :type: list[str]
+        :type tls_ciphers_policy: list[str]
         """
         self._tls_ciphers_policy = tls_ciphers_policy
 
@@ -535,7 +590,7 @@ class ListListenersRequest:
         后端云服务器的IP地址。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_address=xxx&member_address=xxx*。
 
         :param member_address: The member_address of this ListListenersRequest.
-        :type: list[str]
+        :type member_address: list[str]
         """
         self._member_address = member_address
 
@@ -557,7 +612,7 @@ class ListListenersRequest:
         后端云服务器对应的弹性云服务器的ID。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_device_id=xxx&member_device_id=xxx*。
 
         :param member_device_id: The member_device_id of this ListListenersRequest.
-        :type: list[str]
+        :type member_device_id: list[str]
         """
         self._member_device_id = member_device_id
 
@@ -579,7 +634,7 @@ class ListListenersRequest:
         企业项目ID。  支持多值查询，查询条件格式：*enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
 
         :param enterprise_project_id: The enterprise_project_id of this ListListenersRequest.
-        :type: list[str]
+        :type enterprise_project_id: list[str]
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -601,7 +656,7 @@ class ListListenersRequest:
         是否开启后端服务器的重试。取值：true 开启重试，false 不开启重试。
 
         :param enable_member_retry: The enable_member_retry of this ListListenersRequest.
-        :type: bool
+        :type enable_member_retry: bool
         """
         self._enable_member_retry = enable_member_retry
 
@@ -623,7 +678,7 @@ class ListListenersRequest:
         等待后端服务器响应超时时间。请求转发后端服务器后，在等待超时member_timeout时长没有响应，负载均衡将终止等待，并返回 HTTP504错误码。  取值：1-300s。  支持多值查询，查询条件格式：*member_timeout=xxx&member_timeout=xxx*。
 
         :param member_timeout: The member_timeout of this ListListenersRequest.
-        :type: list[int]
+        :type member_timeout: list[int]
         """
         self._member_timeout = member_timeout
 
@@ -645,7 +700,7 @@ class ListListenersRequest:
         等待客户端请求超时时间，包括两种情况： - 读取整个客户端请求头的超时时长：如果客户端未在超时时长内发送完整个请求头，则请求将被中断 - 两个连续body体的数据包到达LB的时间间隔，超出client_timeout将会断开连接。  取值：1-300s。  支持多值查询，查询条件格式：*client_timeout=xxx&client_timeout=xxx*。
 
         :param client_timeout: The client_timeout of this ListListenersRequest.
-        :type: list[int]
+        :type client_timeout: list[int]
         """
         self._client_timeout = client_timeout
 
@@ -667,7 +722,7 @@ class ListListenersRequest:
         客户端连接空闲超时时间。在超过keepalive_timeout时长一直没有请求，负载均衡会暂时中断当前连接，直到一下次请求时重新建立新的连接。取值：  - TCP监听器：10-4000s。  - HTTP/HTTPS/TERMINATED_HTTPS监听器：0-4000s。  - UDP监听器不支持此字段。 支持多值查询，查询条件格式：*keepalive_timeout=xxx&keepalive_timeout=xxx*。
 
         :param keepalive_timeout: The keepalive_timeout of this ListListenersRequest.
-        :type: list[int]
+        :type keepalive_timeout: list[int]
         """
         self._keepalive_timeout = keepalive_timeout
 
@@ -689,7 +744,7 @@ class ListListenersRequest:
         是否透传客户端IP地址。 [开启后客户端IP地址将透传到后端服务器。仅作用于共享型LB的TCP/UDP监听器。取值：true开启，false不开启。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42,dt,dt_test) [不支持该字段，请勿使用。](tag:hcso_dt)
 
         :param transparent_client_ip_enable: The transparent_client_ip_enable of this ListListenersRequest.
-        :type: bool
+        :type transparent_client_ip_enable: bool
         """
         self._transparent_client_ip_enable = transparent_client_ip_enable
 
@@ -711,7 +766,7 @@ class ListListenersRequest:
         是否开启高级转发策略功能。开启高级转发策略后，支持更灵活的转发策略和转发规则设置。取值：true开启，false不开启。
 
         :param enhance_l7policy_enable: The enhance_l7policy_enable of this ListListenersRequest.
-        :type: bool
+        :type enhance_l7policy_enable: bool
         """
         self._enhance_l7policy_enable = enhance_l7policy_enable
 
@@ -733,7 +788,7 @@ class ListListenersRequest:
         后端云服务器ID。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_instance_id=xxx&member_instance_id=xxx*。
 
         :param member_instance_id: The member_instance_id of this ListListenersRequest.
-        :type: list[str]
+        :type member_instance_id: list[str]
         """
         self._member_instance_id = member_instance_id
 

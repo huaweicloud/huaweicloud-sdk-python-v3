@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VpcMemberInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class VpcMemberInfo:
     }
 
     def __init__(self, host=None, weight=None, is_backup=None, member_group_name=None, status=None, port=None, ecs_id=None, ecs_name=None, id=None, vpc_channel_id=None, create_time=None, member_group_id=None):
-        """VpcMemberInfo - a model defined in huaweicloud sdk"""
+        """VpcMemberInfo
+
+        The model defined in huaweicloud sdk
+
+        :param host: 后端服务器地址  后端实例类型为ip时必填
+        :type host: str
+        :param weight: 权重值。  允许您对后端服务进行评级，权重值越大，转发到该云服务的请求数量越多。
+        :type weight: int
+        :param is_backup: 是否备用节点。  开启后对应后端服务为备用节点，仅当非备用节点全部故障时工作。  实例需要升级到对应版本才支持此功能，若不支持请联系技术支持。
+        :type is_backup: bool
+        :param member_group_name: 后端服务器组名称。为后端服务地址选择服务器组，便于统一修改对应服务器组的后端地址。  暂不支持
+        :type member_group_name: str
+        :param status: 后端服务器状态   - 1：可用   - 2：不可用
+        :type status: int
+        :param port: 后端服务器端口
+        :type port: int
+        :param ecs_id: 后端云服务器的编号。  后端实例类型为instance时生效，支持英文，数字，“-”,“_”，1 ~ 64字符。
+        :type ecs_id: str
+        :param ecs_name: 后端云服务器的名称。  后端实例类型为instance时生效，支持汉字，英文，数字，“-”,“_”,“.”，1 ~ 64字符。
+        :type ecs_name: str
+        :param id: 后端实例对象的编号
+        :type id: str
+        :param vpc_channel_id: VPC通道的编号
+        :type vpc_channel_id: str
+        :param create_time: 后端实例增加到VPC通道的时间
+        :type create_time: datetime
+        :param member_group_id: 后端服务器组编号  暂不支持
+        :type member_group_id: str
+        """
         
         
 
@@ -113,7 +140,7 @@ class VpcMemberInfo:
         后端服务器地址  后端实例类型为ip时必填
 
         :param host: The host of this VpcMemberInfo.
-        :type: str
+        :type host: str
         """
         self._host = host
 
@@ -135,7 +162,7 @@ class VpcMemberInfo:
         权重值。  允许您对后端服务进行评级，权重值越大，转发到该云服务的请求数量越多。
 
         :param weight: The weight of this VpcMemberInfo.
-        :type: int
+        :type weight: int
         """
         self._weight = weight
 
@@ -157,7 +184,7 @@ class VpcMemberInfo:
         是否备用节点。  开启后对应后端服务为备用节点，仅当非备用节点全部故障时工作。  实例需要升级到对应版本才支持此功能，若不支持请联系技术支持。
 
         :param is_backup: The is_backup of this VpcMemberInfo.
-        :type: bool
+        :type is_backup: bool
         """
         self._is_backup = is_backup
 
@@ -179,7 +206,7 @@ class VpcMemberInfo:
         后端服务器组名称。为后端服务地址选择服务器组，便于统一修改对应服务器组的后端地址。  暂不支持
 
         :param member_group_name: The member_group_name of this VpcMemberInfo.
-        :type: str
+        :type member_group_name: str
         """
         self._member_group_name = member_group_name
 
@@ -201,7 +228,7 @@ class VpcMemberInfo:
         后端服务器状态   - 1：可用   - 2：不可用
 
         :param status: The status of this VpcMemberInfo.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -223,7 +250,7 @@ class VpcMemberInfo:
         后端服务器端口
 
         :param port: The port of this VpcMemberInfo.
-        :type: int
+        :type port: int
         """
         self._port = port
 
@@ -245,7 +272,7 @@ class VpcMemberInfo:
         后端云服务器的编号。  后端实例类型为instance时生效，支持英文，数字，“-”,“_”，1 ~ 64字符。
 
         :param ecs_id: The ecs_id of this VpcMemberInfo.
-        :type: str
+        :type ecs_id: str
         """
         self._ecs_id = ecs_id
 
@@ -267,7 +294,7 @@ class VpcMemberInfo:
         后端云服务器的名称。  后端实例类型为instance时生效，支持汉字，英文，数字，“-”,“_”,“.”，1 ~ 64字符。
 
         :param ecs_name: The ecs_name of this VpcMemberInfo.
-        :type: str
+        :type ecs_name: str
         """
         self._ecs_name = ecs_name
 
@@ -289,7 +316,7 @@ class VpcMemberInfo:
         后端实例对象的编号
 
         :param id: The id of this VpcMemberInfo.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -311,7 +338,7 @@ class VpcMemberInfo:
         VPC通道的编号
 
         :param vpc_channel_id: The vpc_channel_id of this VpcMemberInfo.
-        :type: str
+        :type vpc_channel_id: str
         """
         self._vpc_channel_id = vpc_channel_id
 
@@ -333,7 +360,7 @@ class VpcMemberInfo:
         后端实例增加到VPC通道的时间
 
         :param create_time: The create_time of this VpcMemberInfo.
-        :type: datetime
+        :type create_time: datetime
         """
         self._create_time = create_time
 
@@ -355,7 +382,7 @@ class VpcMemberInfo:
         后端服务器组编号  暂不支持
 
         :param member_group_id: The member_group_id of this VpcMemberInfo.
-        :type: str
+        :type member_group_id: str
         """
         self._member_group_id = member_group_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RemoveVaultResourceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RemoveVaultResourceRequest:
     }
 
     def __init__(self, vault_id=None, body=None):
-        """RemoveVaultResourceRequest - a model defined in huaweicloud sdk"""
+        """RemoveVaultResourceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param vault_id: 存储库ID
+        :type vault_id: str
+        :param body: Body of the RemoveVaultResourceRequest
+        :type body: :class:`huaweicloudsdkcbr.v1.VaultRemoveResourceReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class RemoveVaultResourceRequest:
         存储库ID
 
         :param vault_id: The vault_id of this RemoveVaultResourceRequest.
-        :type: str
+        :type vault_id: str
         """
         self._vault_id = vault_id
 
@@ -72,7 +79,7 @@ class RemoveVaultResourceRequest:
 
 
         :return: The body of this RemoveVaultResourceRequest.
-        :rtype: VaultRemoveResourceReq
+        :rtype: :class:`huaweicloudsdkcbr.v1.VaultRemoveResourceReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class RemoveVaultResourceRequest:
 
 
         :param body: The body of this RemoveVaultResourceRequest.
-        :type: VaultRemoveResourceReq
+        :type body: :class:`huaweicloudsdkcbr.v1.VaultRemoveResourceReq`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListProjectTagsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListProjectTagsResponse(SdkResponse):
     }
 
     def __init__(self, tags=None):
-        """ListProjectTagsResponse - a model defined in huaweicloud sdk"""
+        """ListProjectTagsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param tags: 标签列表，没有标签默认为空数组。
+        :type tags: list[:class:`huaweicloudsdkrds.v3.ProjectTagInfoResponse`]
+        """
         
         super(ListProjectTagsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListProjectTagsResponse(SdkResponse):
         标签列表，没有标签默认为空数组。
 
         :return: The tags of this ListProjectTagsResponse.
-        :rtype: list[ProjectTagInfoResponse]
+        :rtype: list[:class:`huaweicloudsdkrds.v3.ProjectTagInfoResponse`]
         """
         return self._tags
 
@@ -58,7 +63,7 @@ class ListProjectTagsResponse(SdkResponse):
         标签列表，没有标签默认为空数组。
 
         :param tags: The tags of this ListProjectTagsResponse.
-        :type: list[ProjectTagInfoResponse]
+        :type tags: list[:class:`huaweicloudsdkrds.v3.ProjectTagInfoResponse`]
         """
         self._tags = tags
 

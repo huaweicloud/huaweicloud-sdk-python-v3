@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GlanceUpdateImageRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class GlanceUpdateImageRequestBody:
     }
 
     def __init__(self, op=None, path=None, value=None):
-        """GlanceUpdateImageRequestBody - a model defined in huaweicloud sdk"""
+        """GlanceUpdateImageRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param op: 所需进行的更新操作的类型：替换、添加、删除。取值范围：replace、add、remove
+        :type op: str
+        :param path: 所要操作的属性名称。 replace和remove操作取值只能是镜像当前已有的属性、add操作取值只能是镜像当前不存在的属性，需要在属性名称前加”/”
+        :type path: str
+        :param value: 所需更新/添加属性的值
+        :type value: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class GlanceUpdateImageRequestBody:
         所需进行的更新操作的类型：替换、添加、删除。取值范围：replace、add、remove
 
         :param op: The op of this GlanceUpdateImageRequestBody.
-        :type: str
+        :type op: str
         """
         self._op = op
 
@@ -88,7 +97,7 @@ class GlanceUpdateImageRequestBody:
         所要操作的属性名称。 replace和remove操作取值只能是镜像当前已有的属性、add操作取值只能是镜像当前不存在的属性，需要在属性名称前加”/”
 
         :param path: The path of this GlanceUpdateImageRequestBody.
-        :type: str
+        :type path: str
         """
         self._path = path
 
@@ -110,7 +119,7 @@ class GlanceUpdateImageRequestBody:
         所需更新/添加属性的值
 
         :param value: The value of this GlanceUpdateImageRequestBody.
-        :type: str
+        :type value: str
         """
         self._value = value
 

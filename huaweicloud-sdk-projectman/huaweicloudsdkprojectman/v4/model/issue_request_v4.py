@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IssueRequestV4:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -62,7 +61,45 @@ class IssueRequestV4:
     }
 
     def __init__(self, actual_work_hours=None, assigned_id=None, begin_time=None, description=None, developer_id=None, domain_id=None, done_ratio=None, end_time=None, expected_work_hours=None, iteration_id=None, module_id=None, name=None, parent_issue_id=None, priority_id=None, severity_id=None, status_id=None, tracker_id=None):
-        """IssueRequestV4 - a model defined in huaweicloud sdk"""
+        """IssueRequestV4
+
+        The model defined in huaweicloud sdk
+
+        :param actual_work_hours: 实际工时
+        :type actual_work_hours: float
+        :param assigned_id: 处理人id,对应用户信息的数字id
+        :type assigned_id: int
+        :param begin_time: 开始时间，年-月-日
+        :type begin_time: str
+        :param description: 描述信息
+        :type description: str
+        :param developer_id: 开发者id,对应用户信息的数字id
+        :type developer_id: int
+        :param domain_id: 领域id
+        :type domain_id: int
+        :param done_ratio: 工作项进度值
+        :type done_ratio: int
+        :param end_time: 结束时间，年-月-日
+        :type end_time: str
+        :param expected_work_hours: 预计工时
+        :type expected_work_hours: float
+        :param iteration_id: 迭代id
+        :type iteration_id: int
+        :param module_id: 模块id
+        :type module_id: int
+        :param name: 标题
+        :type name: str
+        :param parent_issue_id: 父工作项的id
+        :type parent_issue_id: int
+        :param priority_id: 优先级,   1 低,   2 中,   3 高,
+        :type priority_id: int
+        :param severity_id: 重要程度,   10 关键,   11 重要,   12 一般,   13 提示,
+        :type severity_id: int
+        :param status_id: 状态   id, 开始   1, 进行中 2, 已解决 3, 测试中 4, 已关闭 5, 已解决 6,
+        :type status_id: int
+        :param tracker_id: 工作项类型,2任务/task,3缺陷/bug,5epic,6feature,7story
+        :type tracker_id: int
+        """
         
         
 
@@ -138,7 +175,7 @@ class IssueRequestV4:
         实际工时
 
         :param actual_work_hours: The actual_work_hours of this IssueRequestV4.
-        :type: float
+        :type actual_work_hours: float
         """
         self._actual_work_hours = actual_work_hours
 
@@ -160,7 +197,7 @@ class IssueRequestV4:
         处理人id,对应用户信息的数字id
 
         :param assigned_id: The assigned_id of this IssueRequestV4.
-        :type: int
+        :type assigned_id: int
         """
         self._assigned_id = assigned_id
 
@@ -182,7 +219,7 @@ class IssueRequestV4:
         开始时间，年-月-日
 
         :param begin_time: The begin_time of this IssueRequestV4.
-        :type: str
+        :type begin_time: str
         """
         self._begin_time = begin_time
 
@@ -204,7 +241,7 @@ class IssueRequestV4:
         描述信息
 
         :param description: The description of this IssueRequestV4.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -226,7 +263,7 @@ class IssueRequestV4:
         开发者id,对应用户信息的数字id
 
         :param developer_id: The developer_id of this IssueRequestV4.
-        :type: int
+        :type developer_id: int
         """
         self._developer_id = developer_id
 
@@ -248,7 +285,7 @@ class IssueRequestV4:
         领域id
 
         :param domain_id: The domain_id of this IssueRequestV4.
-        :type: int
+        :type domain_id: int
         """
         self._domain_id = domain_id
 
@@ -270,7 +307,7 @@ class IssueRequestV4:
         工作项进度值
 
         :param done_ratio: The done_ratio of this IssueRequestV4.
-        :type: int
+        :type done_ratio: int
         """
         self._done_ratio = done_ratio
 
@@ -292,7 +329,7 @@ class IssueRequestV4:
         结束时间，年-月-日
 
         :param end_time: The end_time of this IssueRequestV4.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -314,7 +351,7 @@ class IssueRequestV4:
         预计工时
 
         :param expected_work_hours: The expected_work_hours of this IssueRequestV4.
-        :type: float
+        :type expected_work_hours: float
         """
         self._expected_work_hours = expected_work_hours
 
@@ -336,7 +373,7 @@ class IssueRequestV4:
         迭代id
 
         :param iteration_id: The iteration_id of this IssueRequestV4.
-        :type: int
+        :type iteration_id: int
         """
         self._iteration_id = iteration_id
 
@@ -358,7 +395,7 @@ class IssueRequestV4:
         模块id
 
         :param module_id: The module_id of this IssueRequestV4.
-        :type: int
+        :type module_id: int
         """
         self._module_id = module_id
 
@@ -380,7 +417,7 @@ class IssueRequestV4:
         标题
 
         :param name: The name of this IssueRequestV4.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -402,7 +439,7 @@ class IssueRequestV4:
         父工作项的id
 
         :param parent_issue_id: The parent_issue_id of this IssueRequestV4.
-        :type: int
+        :type parent_issue_id: int
         """
         self._parent_issue_id = parent_issue_id
 
@@ -424,7 +461,7 @@ class IssueRequestV4:
         优先级,   1 低,   2 中,   3 高,
 
         :param priority_id: The priority_id of this IssueRequestV4.
-        :type: int
+        :type priority_id: int
         """
         self._priority_id = priority_id
 
@@ -446,7 +483,7 @@ class IssueRequestV4:
         重要程度,   10 关键,   11 重要,   12 一般,   13 提示,
 
         :param severity_id: The severity_id of this IssueRequestV4.
-        :type: int
+        :type severity_id: int
         """
         self._severity_id = severity_id
 
@@ -468,7 +505,7 @@ class IssueRequestV4:
         状态   id, 开始   1, 进行中 2, 已解决 3, 测试中 4, 已关闭 5, 已解决 6,
 
         :param status_id: The status_id of this IssueRequestV4.
-        :type: int
+        :type status_id: int
         """
         self._status_id = status_id
 
@@ -490,7 +527,7 @@ class IssueRequestV4:
         工作项类型,2任务/task,3缺陷/bug,5epic,6feature,7story
 
         :param tracker_id: The tracker_id of this IssueRequestV4.
-        :type: int
+        :type tracker_id: int
         """
         self._tracker_id = tracker_id
 

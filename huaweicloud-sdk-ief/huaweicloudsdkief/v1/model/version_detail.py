@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VersionDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class VersionDetail:
     }
 
     def __init__(self, version=None, image_url=None, envs=None, volumes=None, configs=None, resources=None, arch=None, command=None, args=None, liveness_probe=None, readiness_probe=None, npu_type=None):
-        """VersionDetail - a model defined in huaweicloud sdk"""
+        """VersionDetail
+
+        The model defined in huaweicloud sdk
+
+        :param version: 应用版本号
+        :type version: str
+        :param image_url: 镜像存储地址
+        :type image_url: str
+        :param envs: 环境变量
+        :type envs: list[:class:`huaweicloudsdkief.v1.Env`]
+        :param volumes: 卷配置
+        :type volumes: list[:class:`huaweicloudsdkief.v1.Volumes`]
+        :param configs: 
+        :type configs: :class:`huaweicloudsdkief.v1.VersionDetailConfigs`
+        :param resources: 
+        :type resources: :class:`huaweicloudsdkief.v1.VersionDetailResources`
+        :param arch: 架构
+        :type arch: str
+        :param command: 启动命令
+        :type command: list[str]
+        :param args: 参数
+        :type args: list[str]
+        :param liveness_probe: 
+        :type liveness_probe: :class:`huaweicloudsdkief.v1.AppVersionDetailLivenessProbe`
+        :param readiness_probe: 
+        :type readiness_probe: :class:`huaweicloudsdkief.v1.AppVersionDetailReadinessProbe`
+        :param npu_type: npu类型，支持D310类型和D910类型。 - D310表示D310类型。 - D910表示D910类型。 - 不填表示为D310类型。
+        :type npu_type: str
+        """
         
         
 
@@ -111,7 +138,7 @@ class VersionDetail:
         应用版本号
 
         :param version: The version of this VersionDetail.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -133,7 +160,7 @@ class VersionDetail:
         镜像存储地址
 
         :param image_url: The image_url of this VersionDetail.
-        :type: str
+        :type image_url: str
         """
         self._image_url = image_url
 
@@ -144,7 +171,7 @@ class VersionDetail:
         环境变量
 
         :return: The envs of this VersionDetail.
-        :rtype: list[Env]
+        :rtype: list[:class:`huaweicloudsdkief.v1.Env`]
         """
         return self._envs
 
@@ -155,7 +182,7 @@ class VersionDetail:
         环境变量
 
         :param envs: The envs of this VersionDetail.
-        :type: list[Env]
+        :type envs: list[:class:`huaweicloudsdkief.v1.Env`]
         """
         self._envs = envs
 
@@ -166,7 +193,7 @@ class VersionDetail:
         卷配置
 
         :return: The volumes of this VersionDetail.
-        :rtype: list[Volumes]
+        :rtype: list[:class:`huaweicloudsdkief.v1.Volumes`]
         """
         return self._volumes
 
@@ -177,7 +204,7 @@ class VersionDetail:
         卷配置
 
         :param volumes: The volumes of this VersionDetail.
-        :type: list[Volumes]
+        :type volumes: list[:class:`huaweicloudsdkief.v1.Volumes`]
         """
         self._volumes = volumes
 
@@ -187,7 +214,7 @@ class VersionDetail:
 
 
         :return: The configs of this VersionDetail.
-        :rtype: VersionDetailConfigs
+        :rtype: :class:`huaweicloudsdkief.v1.VersionDetailConfigs`
         """
         return self._configs
 
@@ -197,7 +224,7 @@ class VersionDetail:
 
 
         :param configs: The configs of this VersionDetail.
-        :type: VersionDetailConfigs
+        :type configs: :class:`huaweicloudsdkief.v1.VersionDetailConfigs`
         """
         self._configs = configs
 
@@ -207,7 +234,7 @@ class VersionDetail:
 
 
         :return: The resources of this VersionDetail.
-        :rtype: VersionDetailResources
+        :rtype: :class:`huaweicloudsdkief.v1.VersionDetailResources`
         """
         return self._resources
 
@@ -217,7 +244,7 @@ class VersionDetail:
 
 
         :param resources: The resources of this VersionDetail.
-        :type: VersionDetailResources
+        :type resources: :class:`huaweicloudsdkief.v1.VersionDetailResources`
         """
         self._resources = resources
 
@@ -239,7 +266,7 @@ class VersionDetail:
         架构
 
         :param arch: The arch of this VersionDetail.
-        :type: str
+        :type arch: str
         """
         self._arch = arch
 
@@ -261,7 +288,7 @@ class VersionDetail:
         启动命令
 
         :param command: The command of this VersionDetail.
-        :type: list[str]
+        :type command: list[str]
         """
         self._command = command
 
@@ -283,7 +310,7 @@ class VersionDetail:
         参数
 
         :param args: The args of this VersionDetail.
-        :type: list[str]
+        :type args: list[str]
         """
         self._args = args
 
@@ -293,7 +320,7 @@ class VersionDetail:
 
 
         :return: The liveness_probe of this VersionDetail.
-        :rtype: AppVersionDetailLivenessProbe
+        :rtype: :class:`huaweicloudsdkief.v1.AppVersionDetailLivenessProbe`
         """
         return self._liveness_probe
 
@@ -303,7 +330,7 @@ class VersionDetail:
 
 
         :param liveness_probe: The liveness_probe of this VersionDetail.
-        :type: AppVersionDetailLivenessProbe
+        :type liveness_probe: :class:`huaweicloudsdkief.v1.AppVersionDetailLivenessProbe`
         """
         self._liveness_probe = liveness_probe
 
@@ -313,7 +340,7 @@ class VersionDetail:
 
 
         :return: The readiness_probe of this VersionDetail.
-        :rtype: AppVersionDetailReadinessProbe
+        :rtype: :class:`huaweicloudsdkief.v1.AppVersionDetailReadinessProbe`
         """
         return self._readiness_probe
 
@@ -323,7 +350,7 @@ class VersionDetail:
 
 
         :param readiness_probe: The readiness_probe of this VersionDetail.
-        :type: AppVersionDetailReadinessProbe
+        :type readiness_probe: :class:`huaweicloudsdkief.v1.AppVersionDetailReadinessProbe`
         """
         self._readiness_probe = readiness_probe
 
@@ -345,7 +372,7 @@ class VersionDetail:
         npu类型，支持D310类型和D910类型。 - D310表示D310类型。 - D910表示D910类型。 - 不填表示为D310类型。
 
         :param npu_type: The npu_type of this VersionDetail.
-        :type: str
+        :type npu_type: str
         """
         self._npu_type = npu_type
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PrivateNameServer:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class PrivateNameServer:
     }
 
     def __init__(self, priority=None, address=None):
-        """PrivateNameServer - a model defined in huaweicloud sdk"""
+        """PrivateNameServer
+
+        The model defined in huaweicloud sdk
+
+        :param priority: 优先级。如果priority的值为“1”，表示会第一个采用该域名服务器进行解析。
+        :type priority: int
+        :param address: DNS服务器地址。
+        :type address: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class PrivateNameServer:
         优先级。如果priority的值为“1”，表示会第一个采用该域名服务器进行解析。
 
         :param priority: The priority of this PrivateNameServer.
-        :type: int
+        :type priority: int
         """
         self._priority = priority
 
@@ -85,7 +92,7 @@ class PrivateNameServer:
         DNS服务器地址。
 
         :param address: The address of this PrivateNameServer.
-        :type: str
+        :type address: str
         """
         self._address = address
 

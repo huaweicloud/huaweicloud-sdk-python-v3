@@ -48,25 +48,143 @@ class CloudDeployClient(Client):
 
         return ClientBuilder(clazz)
 
+    def list_task_success_rate(self, request):
+        """获取指定任务的部署任务执行成功率
+
+        获取指定任务的部署任务执行成功率
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListTaskSuccessRate
+        :type request: :class:`huaweicloudsdkclouddeploy.v2.ListTaskSuccessRateRequest`
+        :rtype: :class:`huaweicloudsdkclouddeploy.v2.ListTaskSuccessRateResponse`
+        """
+        return self.list_task_success_rate_with_http_info(request)
+
+    def list_task_success_rate_with_http_info(self, request):
+        all_params = ['project_id', 'list_task_success_rate_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/tasks/metrics/success-rate',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListTaskSuccessRateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_project_success_rate(self, request):
+        """获取指定项目的部署任务执行成功率
+
+        获取指定项目的部署任务执行成功率
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowProjectSuccessRate
+        :type request: :class:`huaweicloudsdkclouddeploy.v2.ShowProjectSuccessRateRequest`
+        :rtype: :class:`huaweicloudsdkclouddeploy.v2.ShowProjectSuccessRateResponse`
+        """
+        return self.show_project_success_rate_with_http_info(request)
+
+    def show_project_success_rate_with_http_info(self, request):
+        all_params = ['project_id', 'start_date', 'end_date']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'start_date' in local_var_params:
+            query_params.append(('start_date', local_var_params['start_date']))
+        if 'end_date' in local_var_params:
+            query_params.append(('end_date', local_var_params['end_date']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/metrics/success-rate',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowProjectSuccessRateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_deploy_task_by_template(self, request):
         """通过模板新建部署任务
 
-        通过模板新建部署任务cloudpipeline流水线调用
+        通过模板新建部署任务cloudpipeline流水线调用。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateDeployTaskByTemplateRequest request
-        :return: CreateDeployTaskByTemplateResponse
+        :param request: Request instance for CreateDeployTaskByTemplate
+        :type request: :class:`huaweicloudsdkclouddeploy.v2.CreateDeployTaskByTemplateRequest`
+        :rtype: :class:`huaweicloudsdkclouddeploy.v2.CreateDeployTaskByTemplateResponse`
         """
         return self.create_deploy_task_by_template_with_http_info(request)
 
     def create_deploy_task_by_template_with_http_info(self, request):
-        """通过模板新建部署任务
-
-        通过模板新建部署任务cloudpipeline流水线调用
-
-        :param CreateDeployTaskByTemplateRequest request
-        :return: CreateDeployTaskByTemplateResponse
-        """
-
         all_params = ['create_deploy_task_by_template_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -110,26 +228,21 @@ class CloudDeployClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_deploy_task(self, request):
         """删除部署任务
 
-        Delete Task by id
+        根据部署任务id删除部署任务。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteDeployTaskRequest request
-        :return: DeleteDeployTaskResponse
+        :param request: Request instance for DeleteDeployTask
+        :type request: :class:`huaweicloudsdkclouddeploy.v2.DeleteDeployTaskRequest`
+        :rtype: :class:`huaweicloudsdkclouddeploy.v2.DeleteDeployTaskResponse`
         """
         return self.delete_deploy_task_with_http_info(request)
 
     def delete_deploy_task_with_http_info(self, request):
-        """删除部署任务
-
-        Delete Task by id
-
-        :param DeleteDeployTaskRequest request
-        :return: DeleteDeployTaskResponse
-        """
-
         all_params = ['task_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -173,26 +286,151 @@ class CloudDeployClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_deploy_task_history_by_date(self, request):
+        """根据开始时间和结束时间查询项目下指定任务的历史执行记录列表
+
+        根据开始时间和结束时间查询项目下指定任务的历史执行记录列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListDeployTaskHistoryByDate
+        :type request: :class:`huaweicloudsdkclouddeploy.v2.ListDeployTaskHistoryByDateRequest`
+        :rtype: :class:`huaweicloudsdkclouddeploy.v2.ListDeployTaskHistoryByDateResponse`
+        """
+        return self.list_deploy_task_history_by_date_with_http_info(request)
+
+    def list_deploy_task_history_by_date_with_http_info(self, request):
+        all_params = ['project_id', 'id', 'page', 'size', 'start_date', 'end_date']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+        if 'page' in local_var_params:
+            query_params.append(('page', local_var_params['page']))
+        if 'size' in local_var_params:
+            query_params.append(('size', local_var_params['size']))
+        if 'start_date' in local_var_params:
+            query_params.append(('start_date', local_var_params['start_date']))
+        if 'end_date' in local_var_params:
+            query_params.append(('end_date', local_var_params['end_date']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/task/{id}/history',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListDeployTaskHistoryByDateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_deploy_tasks(self, request):
+        """获取部署任务列表
+
+        查询项目下部署任务列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListDeployTasks
+        :type request: :class:`huaweicloudsdkclouddeploy.v2.ListDeployTasksRequest`
+        :rtype: :class:`huaweicloudsdkclouddeploy.v2.ListDeployTasksResponse`
+        """
+        return self.list_deploy_tasks_with_http_info(request)
+
+    def list_deploy_tasks_with_http_info(self, request):
+        all_params = ['project_id', 'page', 'size']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'page' in local_var_params:
+            query_params.append(('page', local_var_params['page']))
+        if 'size' in local_var_params:
+            query_params.append(('size', local_var_params['size']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/tasks/list',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListDeployTasksResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def show_deploy_task_detail(self, request):
         """获取部署任务详情
 
-        Get Task Detail By Id
+        根据部署任务id获取部署任务详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowDeployTaskDetailRequest request
-        :return: ShowDeployTaskDetailResponse
+        :param request: Request instance for ShowDeployTaskDetail
+        :type request: :class:`huaweicloudsdkclouddeploy.v2.ShowDeployTaskDetailRequest`
+        :rtype: :class:`huaweicloudsdkclouddeploy.v2.ShowDeployTaskDetailResponse`
         """
         return self.show_deploy_task_detail_with_http_info(request)
 
     def show_deploy_task_detail_with_http_info(self, request):
-        """获取部署任务详情
-
-        Get Task Detail By Id
-
-        :param ShowDeployTaskDetailRequest request
-        :return: ShowDeployTaskDetailResponse
-        """
-
         all_params = ['task_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -236,26 +474,21 @@ class CloudDeployClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def start_deploy_task(self, request):
         """启动部署任务
 
-        Deploy Task Start
+        根据部署任务id启动部署任务。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param StartDeployTaskRequest request
-        :return: StartDeployTaskResponse
+        :param request: Request instance for StartDeployTask
+        :type request: :class:`huaweicloudsdkclouddeploy.v2.StartDeployTaskRequest`
+        :rtype: :class:`huaweicloudsdkclouddeploy.v2.StartDeployTaskResponse`
         """
         return self.start_deploy_task_with_http_info(request)
 
     def start_deploy_task_with_http_info(self, request):
-        """启动部署任务
-
-        Deploy Task Start
-
-        :param StartDeployTaskRequest request
-        :return: StartDeployTaskResponse
-        """
-
         all_params = ['task_id', 'start_deploy_task_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -301,26 +534,21 @@ class CloudDeployClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_deployment_host(self, request):
         """新建主机
 
-        在指定主机组下新建主机
+        在指定主机组下新建主机。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateDeploymentHostRequest request
-        :return: CreateDeploymentHostResponse
+        :param request: Request instance for CreateDeploymentHost
+        :type request: :class:`huaweicloudsdkclouddeploy.v2.CreateDeploymentHostRequest`
+        :rtype: :class:`huaweicloudsdkclouddeploy.v2.CreateDeploymentHostResponse`
         """
         return self.create_deployment_host_with_http_info(request)
 
     def create_deployment_host_with_http_info(self, request):
-        """新建主机
-
-        在指定主机组下新建主机
-
-        :param CreateDeploymentHostRequest request
-        :return: CreateDeploymentHostResponse
-        """
-
         all_params = ['group_id', 'create_deployment_host_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -366,26 +594,21 @@ class CloudDeployClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_deployment_host(self, request):
         """删除主机
 
-        根据主机id删除主机
+        根据主机id删除主机。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteDeploymentHostRequest request
-        :return: DeleteDeploymentHostResponse
+        :param request: Request instance for DeleteDeploymentHost
+        :type request: :class:`huaweicloudsdkclouddeploy.v2.DeleteDeploymentHostRequest`
+        :rtype: :class:`huaweicloudsdkclouddeploy.v2.DeleteDeploymentHostResponse`
         """
         return self.delete_deployment_host_with_http_info(request)
 
     def delete_deployment_host_with_http_info(self, request):
-        """删除主机
-
-        根据主机id删除主机
-
-        :param DeleteDeploymentHostRequest request
-        :return: DeleteDeploymentHostResponse
-        """
-
         all_params = ['group_id', 'host_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -431,26 +654,21 @@ class CloudDeployClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_hosts(self, request):
         """查询主机列表
 
-        查询指定主机组下的主机列表
+        根据主机组id查询指定主机组下的主机列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListHostsRequest request
-        :return: ListHostsResponse
+        :param request: Request instance for ListHosts
+        :type request: :class:`huaweicloudsdkclouddeploy.v2.ListHostsRequest`
+        :rtype: :class:`huaweicloudsdkclouddeploy.v2.ListHostsResponse`
         """
         return self.list_hosts_with_http_info(request)
 
     def list_hosts_with_http_info(self, request):
-        """查询主机列表
-
-        查询指定主机组下的主机列表
-
-        :param ListHostsRequest request
-        :return: ListHostsResponse
-        """
-
         all_params = ['group_id', 'as_proxy', 'offset', 'limit', 'name', 'sort_key', 'sort_dir', 'with_auth']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -508,26 +726,21 @@ class CloudDeployClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_deployment_host_detail(self, request):
         """查询主机详情
 
-        根据主机id查询主机详情
+        根据主机id查询主机详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowDeploymentHostDetailRequest request
-        :return: ShowDeploymentHostDetailResponse
+        :param request: Request instance for ShowDeploymentHostDetail
+        :type request: :class:`huaweicloudsdkclouddeploy.v2.ShowDeploymentHostDetailRequest`
+        :rtype: :class:`huaweicloudsdkclouddeploy.v2.ShowDeploymentHostDetailResponse`
         """
         return self.show_deployment_host_detail_with_http_info(request)
 
     def show_deployment_host_detail_with_http_info(self, request):
-        """查询主机详情
-
-        根据主机id查询主机详情
-
-        :param ShowDeploymentHostDetailRequest request
-        :return: ShowDeploymentHostDetailResponse
-        """
-
         all_params = ['group_id', 'host_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -573,26 +786,21 @@ class CloudDeployClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_deployment_host(self, request):
         """修改主机
 
-        修改主机信息
+        根据主机id修改主机信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateDeploymentHostRequest request
-        :return: UpdateDeploymentHostResponse
+        :param request: Request instance for UpdateDeploymentHost
+        :type request: :class:`huaweicloudsdkclouddeploy.v2.UpdateDeploymentHostRequest`
+        :rtype: :class:`huaweicloudsdkclouddeploy.v2.UpdateDeploymentHostResponse`
         """
         return self.update_deployment_host_with_http_info(request)
 
     def update_deployment_host_with_http_info(self, request):
-        """修改主机
-
-        修改主机信息
-
-        :param UpdateDeploymentHostRequest request
-        :return: UpdateDeploymentHostResponse
-        """
-
         all_params = ['group_id', 'host_id', 'update_deployment_host_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -640,26 +848,21 @@ class CloudDeployClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_deployment_group(self, request):
         """新建主机组
 
-        新建主机组
+        在项目下新建主机组。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateDeploymentGroupRequest request
-        :return: CreateDeploymentGroupResponse
+        :param request: Request instance for CreateDeploymentGroup
+        :type request: :class:`huaweicloudsdkclouddeploy.v2.CreateDeploymentGroupRequest`
+        :rtype: :class:`huaweicloudsdkclouddeploy.v2.CreateDeploymentGroupResponse`
         """
         return self.create_deployment_group_with_http_info(request)
 
     def create_deployment_group_with_http_info(self, request):
-        """新建主机组
-
-        新建主机组
-
-        :param CreateDeploymentGroupRequest request
-        :return: CreateDeploymentGroupResponse
-        """
-
         all_params = ['create_deployment_group_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -703,26 +906,21 @@ class CloudDeployClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_deployment_group(self, request):
         """删除主机组
 
-        根据主机组id删除主机组
+        根据主机组id删除主机组。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteDeploymentGroupRequest request
-        :return: DeleteDeploymentGroupResponse
+        :param request: Request instance for DeleteDeploymentGroup
+        :type request: :class:`huaweicloudsdkclouddeploy.v2.DeleteDeploymentGroupRequest`
+        :rtype: :class:`huaweicloudsdkclouddeploy.v2.DeleteDeploymentGroupResponse`
         """
         return self.delete_deployment_group_with_http_info(request)
 
     def delete_deployment_group_with_http_info(self, request):
-        """删除主机组
-
-        根据主机组id删除主机组
-
-        :param DeleteDeploymentGroupRequest request
-        :return: DeleteDeploymentGroupResponse
-        """
-
         all_params = ['group_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -766,26 +964,21 @@ class CloudDeployClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_host_groups(self, request):
         """查询主机组列表
 
-        查询主机组列表
+        按条件查询主机组列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListHostGroupsRequest request
-        :return: ListHostGroupsResponse
+        :param request: Request instance for ListHostGroups
+        :type request: :class:`huaweicloudsdkclouddeploy.v2.ListHostGroupsRequest`
+        :rtype: :class:`huaweicloudsdkclouddeploy.v2.ListHostGroupsResponse`
         """
         return self.list_host_groups_with_http_info(request)
 
     def list_host_groups_with_http_info(self, request):
-        """查询主机组列表
-
-        查询主机组列表
-
-        :param ListHostGroupsRequest request
-        :return: ListHostGroupsResponse
-        """
-
         all_params = ['region_name', 'project_id', 'os', 'offset', 'limit', 'name', 'sort_key', 'sort_dir']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -843,26 +1036,21 @@ class CloudDeployClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_deployment_group_detail(self, request):
         """查询主机组
 
-        根据主机组id查询主机组详情
+        根据主机组id查询主机组详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowDeploymentGroupDetailRequest request
-        :return: ShowDeploymentGroupDetailResponse
+        :param request: Request instance for ShowDeploymentGroupDetail
+        :type request: :class:`huaweicloudsdkclouddeploy.v2.ShowDeploymentGroupDetailRequest`
+        :rtype: :class:`huaweicloudsdkclouddeploy.v2.ShowDeploymentGroupDetailResponse`
         """
         return self.show_deployment_group_detail_with_http_info(request)
 
     def show_deployment_group_detail_with_http_info(self, request):
-        """查询主机组
-
-        根据主机组id查询主机组详情
-
-        :param ShowDeploymentGroupDetailRequest request
-        :return: ShowDeploymentGroupDetailResponse
-        """
-
         all_params = ['group_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -906,26 +1094,21 @@ class CloudDeployClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_deployment_group(self, request):
         """修改主机组
 
-        修改主机组信息
+        根据主机组id修改主机组信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateDeploymentGroupRequest request
-        :return: UpdateDeploymentGroupResponse
+        :param request: Request instance for UpdateDeploymentGroup
+        :type request: :class:`huaweicloudsdkclouddeploy.v2.UpdateDeploymentGroupRequest`
+        :rtype: :class:`huaweicloudsdkclouddeploy.v2.UpdateDeploymentGroupResponse`
         """
         return self.update_deployment_group_with_http_info(request)
 
     def update_deployment_group_with_http_info(self, request):
-        """修改主机组
-
-        修改主机组信息
-
-        :param UpdateDeploymentGroupRequest request
-        :return: UpdateDeploymentGroupResponse
-        """
-
         all_params = ['group_id', 'update_deployment_group_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -970,7 +1153,6 @@ class CloudDeployClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

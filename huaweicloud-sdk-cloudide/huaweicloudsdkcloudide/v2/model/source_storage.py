@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SourceStorage:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class SourceStorage:
     }
 
     def __init__(self, location=None, parameters=None, type=None):
-        """SourceStorage - a model defined in huaweicloud sdk"""
+        """SourceStorage
+
+        The model defined in huaweicloud sdk
+
+        :param location: 位置
+        :type location: str
+        :param parameters: 参数值
+        :type parameters: dict(str, str)
+        :param type: 类型
+        :type type: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class SourceStorage:
         位置
 
         :param location: The location of this SourceStorage.
-        :type: str
+        :type location: str
         """
         self._location = location
 
@@ -90,7 +99,7 @@ class SourceStorage:
         参数值
 
         :param parameters: The parameters of this SourceStorage.
-        :type: dict(str, str)
+        :type parameters: dict(str, str)
         """
         self._parameters = parameters
 
@@ -112,7 +121,7 @@ class SourceStorage:
         类型
 
         :param type: The type of this SourceStorage.
-        :type: str
+        :type type: str
         """
         self._type = type
 

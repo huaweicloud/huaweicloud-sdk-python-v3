@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NodeList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class NodeList:
     }
 
     def __init__(self, port=None, status=None, node_id=None, ip=None):
-        """NodeList - a model defined in huaweicloud sdk"""
+        """NodeList
+
+        The model defined in huaweicloud sdk
+
+        :param port: 端口。
+        :type port: str
+        :param status: 节点状态。
+        :type status: str
+        :param node_id: 节点id。
+        :type node_id: str
+        :param ip: ip
+        :type ip: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class NodeList:
         端口。
 
         :param port: The port of this NodeList.
-        :type: str
+        :type port: str
         """
         self._port = port
 
@@ -95,7 +106,7 @@ class NodeList:
         节点状态。
 
         :param status: The status of this NodeList.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -117,7 +128,7 @@ class NodeList:
         节点id。
 
         :param node_id: The node_id of this NodeList.
-        :type: str
+        :type node_id: str
         """
         self._node_id = node_id
 
@@ -139,7 +150,7 @@ class NodeList:
         ip
 
         :param ip: The ip of this NodeList.
-        :type: str
+        :type ip: str
         """
         self._ip = ip
 

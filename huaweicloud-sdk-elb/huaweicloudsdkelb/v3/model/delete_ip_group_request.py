@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteIpGroupRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteIpGroupRequest:
     }
 
     def __init__(self, ipgroup_id=None):
-        """DeleteIpGroupRequest - a model defined in huaweicloud sdk"""
+        """DeleteIpGroupRequest
+
+        The model defined in huaweicloud sdk
+
+        :param ipgroup_id: IP地址组的ID。
+        :type ipgroup_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteIpGroupRequest:
         IP地址组的ID。
 
         :param ipgroup_id: The ipgroup_id of this DeleteIpGroupRequest.
-        :type: str
+        :type ipgroup_id: str
         """
         self._ipgroup_id = ipgroup_id
 

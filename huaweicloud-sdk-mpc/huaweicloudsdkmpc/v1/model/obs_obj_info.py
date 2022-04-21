@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ObsObjInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ObsObjInfo:
     }
 
     def __init__(self, bucket=None, location=None, object=None, file_name=None):
-        """ObsObjInfo - a model defined in huaweicloud sdk"""
+        """ObsObjInfo
+
+        The model defined in huaweicloud sdk
+
+        :param bucket: OBS的bucket名称。 
+        :type bucket: str
+        :param location: OBS桶所在的区域，且必须与使用的MPC区域保持一致。 
+        :type location: str
+        :param object: OBS对象路径，遵守OSS Object定义。  - 当用于指示input时,需要指定到具体对象。 - 当用于指示output时, 只需指定到转码结果期望存放的路径。 
+        :type object: str
+        :param file_name: 文件名，仅用于转封装指定输出名称。  - 当指定了此参数时，输出的对象名为object/file_name 。 - 当不指定此参数时，输出的对象名为object/xxx，其中xxx由MPC指定。 
+        :type file_name: str
+        """
         
         
 
@@ -70,7 +81,7 @@ class ObsObjInfo:
         OBS的bucket名称。 
 
         :param bucket: The bucket of this ObsObjInfo.
-        :type: str
+        :type bucket: str
         """
         self._bucket = bucket
 
@@ -92,7 +103,7 @@ class ObsObjInfo:
         OBS桶所在的区域，且必须与使用的MPC区域保持一致。 
 
         :param location: The location of this ObsObjInfo.
-        :type: str
+        :type location: str
         """
         self._location = location
 
@@ -114,7 +125,7 @@ class ObsObjInfo:
         OBS对象路径，遵守OSS Object定义。  - 当用于指示input时,需要指定到具体对象。 - 当用于指示output时, 只需指定到转码结果期望存放的路径。 
 
         :param object: The object of this ObsObjInfo.
-        :type: str
+        :type object: str
         """
         self._object = object
 
@@ -136,7 +147,7 @@ class ObsObjInfo:
         文件名，仅用于转封装指定输出名称。  - 当指定了此参数时，输出的对象名为object/file_name 。 - 当不指定此参数时，输出的对象名为object/xxx，其中xxx由MPC指定。 
 
         :param file_name: The file_name of this ObsObjInfo.
-        :type: str
+        :type file_name: str
         """
         self._file_name = file_name
 

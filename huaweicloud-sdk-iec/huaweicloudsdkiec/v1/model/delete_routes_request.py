@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteRoutesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteRoutesRequest:
     }
 
     def __init__(self, routetable_id=None, body=None):
-        """DeleteRoutesRequest - a model defined in huaweicloud sdk"""
+        """DeleteRoutesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param routetable_id: 路由表ID
+        :type routetable_id: str
+        :param body: Body of the DeleteRoutesRequest
+        :type body: :class:`huaweicloudsdkiec.v1.DeleteRoutesRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class DeleteRoutesRequest:
         路由表ID
 
         :param routetable_id: The routetable_id of this DeleteRoutesRequest.
-        :type: str
+        :type routetable_id: str
         """
         self._routetable_id = routetable_id
 
@@ -72,7 +79,7 @@ class DeleteRoutesRequest:
 
 
         :return: The body of this DeleteRoutesRequest.
-        :rtype: DeleteRoutesRequestBody
+        :rtype: :class:`huaweicloudsdkiec.v1.DeleteRoutesRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class DeleteRoutesRequest:
 
 
         :param body: The body of this DeleteRoutesRequest.
-        :type: DeleteRoutesRequestBody
+        :type body: :class:`huaweicloudsdkiec.v1.DeleteRoutesRequestBody`
         """
         self._body = body
 

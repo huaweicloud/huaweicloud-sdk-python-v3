@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTaskHistoriesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListTaskHistoriesRequest:
     }
 
     def __init__(self, domain_id=None, offset=None, limit=None):
-        """ListTaskHistoriesRequest - a model defined in huaweicloud sdk"""
+        """ListTaskHistoriesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param domain_id: 域名ID
+        :type domain_id: str
+        :param offset: 分页查询，偏移量，表示从此偏移量开始查询
+        :type offset: int
+        :param limit: 分页查询，每页显示的条目数量
+        :type limit: int
+        """
         
         
 
@@ -67,7 +76,7 @@ class ListTaskHistoriesRequest:
         域名ID
 
         :param domain_id: The domain_id of this ListTaskHistoriesRequest.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -89,7 +98,7 @@ class ListTaskHistoriesRequest:
         分页查询，偏移量，表示从此偏移量开始查询
 
         :param offset: The offset of this ListTaskHistoriesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -111,7 +120,7 @@ class ListTaskHistoriesRequest:
         分页查询，每页显示的条目数量
 
         :param limit: The limit of this ListTaskHistoriesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

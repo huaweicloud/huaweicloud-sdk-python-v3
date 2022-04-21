@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListScriptResultsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListScriptResultsResponse(SdkResponse):
     }
 
     def __init__(self, status=None, result=None):
-        """ListScriptResultsResponse - a model defined in huaweicloud sdk"""
+        """ListScriptResultsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param status: 
+        :type status: str
+        :param result: 
+        :type result: list[:class:`huaweicloudsdkdgc.v1.Result`]
+        """
         
         super(ListScriptResultsResponse, self).__init__()
 
@@ -61,7 +68,7 @@ class ListScriptResultsResponse(SdkResponse):
 
 
         :param status: The status of this ListScriptResultsResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -71,7 +78,7 @@ class ListScriptResultsResponse(SdkResponse):
 
 
         :return: The result of this ListScriptResultsResponse.
-        :rtype: list[Result]
+        :rtype: list[:class:`huaweicloudsdkdgc.v1.Result`]
         """
         return self._result
 
@@ -81,7 +88,7 @@ class ListScriptResultsResponse(SdkResponse):
 
 
         :param result: The result of this ListScriptResultsResponse.
-        :type: list[Result]
+        :type result: list[:class:`huaweicloudsdkdgc.v1.Result`]
         """
         self._result = result
 

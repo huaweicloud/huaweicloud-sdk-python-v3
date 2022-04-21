@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CodeMessageResq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CodeMessageResq:
     }
 
     def __init__(self, code=None, message=None):
-        """CodeMessageResq - a model defined in huaweicloud sdk"""
+        """CodeMessageResq
+
+        The model defined in huaweicloud sdk
+
+        :param code: code
+        :type code: str
+        :param message: message
+        :type message: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class CodeMessageResq:
         code
 
         :param code: The code of this CodeMessageResq.
-        :type: str
+        :type code: str
         """
         self._code = code
 
@@ -85,7 +92,7 @@ class CodeMessageResq:
         message
 
         :param message: The message of this CodeMessageResq.
-        :type: str
+        :type message: str
         """
         self._message = message
 

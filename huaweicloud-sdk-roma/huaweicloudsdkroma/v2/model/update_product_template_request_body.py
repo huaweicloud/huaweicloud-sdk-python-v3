@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateProductTemplateRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateProductTemplateRequestBody:
     }
 
     def __init__(self, name=None, description=None, status=None):
-        """UpdateProductTemplateRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateProductTemplateRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param name: 产品模板名称，支持中文,英文大小写，数字，下划线和中划线,长度2-64
+        :type name: str
+        :param description: 产品模板描述，长度0-200
+        :type description: str
+        :param status: 产品模板状态 0-启用 1-禁用
+        :type status: int
+        """
         
         
 
@@ -66,7 +75,7 @@ class UpdateProductTemplateRequestBody:
         产品模板名称，支持中文,英文大小写，数字，下划线和中划线,长度2-64
 
         :param name: The name of this UpdateProductTemplateRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -88,7 +97,7 @@ class UpdateProductTemplateRequestBody:
         产品模板描述，长度0-200
 
         :param description: The description of this UpdateProductTemplateRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -110,7 +119,7 @@ class UpdateProductTemplateRequestBody:
         产品模板状态 0-启用 1-禁用
 
         :param status: The status of this UpdateProductTemplateRequestBody.
-        :type: int
+        :type status: int
         """
         self._status = status
 

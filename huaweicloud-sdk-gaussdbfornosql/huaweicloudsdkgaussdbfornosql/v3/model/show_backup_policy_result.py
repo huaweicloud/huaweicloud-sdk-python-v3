@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowBackupPolicyResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowBackupPolicyResult:
     }
 
     def __init__(self, keep_days=None, start_time=None, period=None):
-        """ShowBackupPolicyResult - a model defined in huaweicloud sdk"""
+        """ShowBackupPolicyResult
+
+        The model defined in huaweicloud sdk
+
+        :param keep_days: 备份文件可以保存的天数。
+        :type keep_days: int
+        :param start_time: 备份时间段。自动备份将在该时间段内触发。
+        :type start_time: str
+        :param period: 备份周期配置。自动备份将在每星期指定的天进行。
+        :type period: str
+        """
         
         
 
@@ -67,7 +76,7 @@ class ShowBackupPolicyResult:
         备份文件可以保存的天数。
 
         :param keep_days: The keep_days of this ShowBackupPolicyResult.
-        :type: int
+        :type keep_days: int
         """
         self._keep_days = keep_days
 
@@ -89,7 +98,7 @@ class ShowBackupPolicyResult:
         备份时间段。自动备份将在该时间段内触发。
 
         :param start_time: The start_time of this ShowBackupPolicyResult.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -111,7 +120,7 @@ class ShowBackupPolicyResult:
         备份周期配置。自动备份将在每星期指定的天进行。
 
         :param period: The period of this ShowBackupPolicyResult.
-        :type: str
+        :type period: str
         """
         self._period = period
 

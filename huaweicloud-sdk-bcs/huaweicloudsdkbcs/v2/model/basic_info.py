@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BasicInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -78,7 +77,61 @@ class BasicInfo:
     }
 
     def __init__(self, id=None, name=None, version=None, service_type=None, purchase_type=None, sign_algorithm=None, consensus=None, charging_mode=None, version_type=None, database_type=None, cluster_id=None, cluster_name=None, cluster_type=None, cluster_az=None, created_time=None, deploy_type=None, is_cross_region=None, is_support_rollback=None, is_support_restful=None, is_old_service=None, old_service_version=None, agent_portal_addrs=None, status=None, process_status=None, order_status=None):
-        """BasicInfo - a model defined in huaweicloud sdk"""
+        """BasicInfo
+
+        The model defined in huaweicloud sdk
+
+        :param id: BCS服务ID
+        :type id: str
+        :param name: BCS服务名
+        :type name: str
+        :param version: BCS服务版本信息
+        :type version: str
+        :param service_type: BCS服务的类型，分为：联盟链（union），私有链（private）
+        :type service_type: str
+        :param purchase_type: BCS服务部署类型，一键部署（onestep），普通部署（normal）
+        :type purchase_type: str
+        :param sign_algorithm: BCS服务安全机制，分为ECDSA（ECDSA），国密算法（sm2）
+        :type sign_algorithm: str
+        :param consensus: BCS服务的共识策略，分为测试策略（solo），快速拜占庭容错算法（sflic）,Kafka(kafka)，raft共识算法（etcdraft）
+        :type consensus: str
+        :param charging_mode: BCS服务付费模式，分为按需（1）[包周期（0）](tag:onorder)
+        :type charging_mode: int
+        :param version_type: BCS服务版本类型
+        :type version_type: int
+        :param database_type: BCS服务数据库类型，包括文件数据库（goleveldb），NoSQL（couchdb）
+        :type database_type: str
+        :param cluster_id: BCS服务所在集群ID
+        :type cluster_id: str
+        :param cluster_name: BCS服务所在集群名称
+        :type cluster_name: str
+        :param cluster_type: BCS服务的集群类型，分为CCE集群（CCE），IEF集群（ief）
+        :type cluster_type: str
+        :param cluster_az: BCS多可用区标示，分为：多可用区（yes），非多可用区（no）
+        :type cluster_az: str
+        :param created_time: BCS服务创建时间
+        :type created_time: str
+        :param deploy_type: BCS服务联盟链下生效，分为邀请方（create），被邀请方（invite）
+        :type deploy_type: str
+        :param is_cross_region: BCS服务是否跨region
+        :type is_cross_region: bool
+        :param is_support_rollback: BCS服务升级失败，是否支持回滚
+        :type is_support_rollback: bool
+        :param is_support_restful: BCS服务是否添加RESTful APIs支持，分为支持（true），不支持（false）
+        :type is_support_restful: bool
+        :param is_old_service: 区分BCS是否新服务，分为老服务（true），新服务（false）
+        :type is_old_service: bool
+        :param old_service_version: BCS服务为老服务时，此字段为老服务版本号
+        :type old_service_version: str
+        :param agent_portal_addrs: BCS服务用户数据面agent地址端口列表
+        :type agent_portal_addrs: list[str]
+        :param status: BCS服务状态，分为正常（Normal），异常（Abnormal），弹性IP异常（EipAbnormal），已冻结（Freeze），休眠中（Hibernation），未知（其余值）
+        :type status: str
+        :param process_status: BCS服务处理状态，分为创建中（IsCreating），升级中（IsUpgrading），扩缩容中（IsScaling），删除中（IsDeleting），添加中（IsAdding）
+        :type process_status: str
+        :param order_status: BCS服务为包周期模式时，返回值为0（订单未成功）,1（订单异常）,2（订单正常）
+        :type order_status: int
+        """
         
         
 
@@ -178,7 +231,7 @@ class BasicInfo:
         BCS服务ID
 
         :param id: The id of this BasicInfo.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -200,7 +253,7 @@ class BasicInfo:
         BCS服务名
 
         :param name: The name of this BasicInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -222,7 +275,7 @@ class BasicInfo:
         BCS服务版本信息
 
         :param version: The version of this BasicInfo.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -244,7 +297,7 @@ class BasicInfo:
         BCS服务的类型，分为：联盟链（union），私有链（private）
 
         :param service_type: The service_type of this BasicInfo.
-        :type: str
+        :type service_type: str
         """
         self._service_type = service_type
 
@@ -266,7 +319,7 @@ class BasicInfo:
         BCS服务部署类型，一键部署（onestep），普通部署（normal）
 
         :param purchase_type: The purchase_type of this BasicInfo.
-        :type: str
+        :type purchase_type: str
         """
         self._purchase_type = purchase_type
 
@@ -288,7 +341,7 @@ class BasicInfo:
         BCS服务安全机制，分为ECDSA（ECDSA），国密算法（sm2）
 
         :param sign_algorithm: The sign_algorithm of this BasicInfo.
-        :type: str
+        :type sign_algorithm: str
         """
         self._sign_algorithm = sign_algorithm
 
@@ -310,7 +363,7 @@ class BasicInfo:
         BCS服务的共识策略，分为测试策略（solo），快速拜占庭容错算法（sflic）,Kafka(kafka)，raft共识算法（etcdraft）
 
         :param consensus: The consensus of this BasicInfo.
-        :type: str
+        :type consensus: str
         """
         self._consensus = consensus
 
@@ -332,7 +385,7 @@ class BasicInfo:
         BCS服务付费模式，分为按需（1）[包周期（0）](tag:onorder)
 
         :param charging_mode: The charging_mode of this BasicInfo.
-        :type: int
+        :type charging_mode: int
         """
         self._charging_mode = charging_mode
 
@@ -354,7 +407,7 @@ class BasicInfo:
         BCS服务版本类型
 
         :param version_type: The version_type of this BasicInfo.
-        :type: int
+        :type version_type: int
         """
         self._version_type = version_type
 
@@ -376,7 +429,7 @@ class BasicInfo:
         BCS服务数据库类型，包括文件数据库（goleveldb），NoSQL（couchdb）
 
         :param database_type: The database_type of this BasicInfo.
-        :type: str
+        :type database_type: str
         """
         self._database_type = database_type
 
@@ -398,7 +451,7 @@ class BasicInfo:
         BCS服务所在集群ID
 
         :param cluster_id: The cluster_id of this BasicInfo.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -420,7 +473,7 @@ class BasicInfo:
         BCS服务所在集群名称
 
         :param cluster_name: The cluster_name of this BasicInfo.
-        :type: str
+        :type cluster_name: str
         """
         self._cluster_name = cluster_name
 
@@ -442,7 +495,7 @@ class BasicInfo:
         BCS服务的集群类型，分为CCE集群（CCE），IEF集群（ief）
 
         :param cluster_type: The cluster_type of this BasicInfo.
-        :type: str
+        :type cluster_type: str
         """
         self._cluster_type = cluster_type
 
@@ -464,7 +517,7 @@ class BasicInfo:
         BCS多可用区标示，分为：多可用区（yes），非多可用区（no）
 
         :param cluster_az: The cluster_az of this BasicInfo.
-        :type: str
+        :type cluster_az: str
         """
         self._cluster_az = cluster_az
 
@@ -486,7 +539,7 @@ class BasicInfo:
         BCS服务创建时间
 
         :param created_time: The created_time of this BasicInfo.
-        :type: str
+        :type created_time: str
         """
         self._created_time = created_time
 
@@ -508,7 +561,7 @@ class BasicInfo:
         BCS服务联盟链下生效，分为邀请方（create），被邀请方（invite）
 
         :param deploy_type: The deploy_type of this BasicInfo.
-        :type: str
+        :type deploy_type: str
         """
         self._deploy_type = deploy_type
 
@@ -530,7 +583,7 @@ class BasicInfo:
         BCS服务是否跨region
 
         :param is_cross_region: The is_cross_region of this BasicInfo.
-        :type: bool
+        :type is_cross_region: bool
         """
         self._is_cross_region = is_cross_region
 
@@ -552,7 +605,7 @@ class BasicInfo:
         BCS服务升级失败，是否支持回滚
 
         :param is_support_rollback: The is_support_rollback of this BasicInfo.
-        :type: bool
+        :type is_support_rollback: bool
         """
         self._is_support_rollback = is_support_rollback
 
@@ -574,7 +627,7 @@ class BasicInfo:
         BCS服务是否添加RESTful APIs支持，分为支持（true），不支持（false）
 
         :param is_support_restful: The is_support_restful of this BasicInfo.
-        :type: bool
+        :type is_support_restful: bool
         """
         self._is_support_restful = is_support_restful
 
@@ -596,7 +649,7 @@ class BasicInfo:
         区分BCS是否新服务，分为老服务（true），新服务（false）
 
         :param is_old_service: The is_old_service of this BasicInfo.
-        :type: bool
+        :type is_old_service: bool
         """
         self._is_old_service = is_old_service
 
@@ -618,7 +671,7 @@ class BasicInfo:
         BCS服务为老服务时，此字段为老服务版本号
 
         :param old_service_version: The old_service_version of this BasicInfo.
-        :type: str
+        :type old_service_version: str
         """
         self._old_service_version = old_service_version
 
@@ -640,7 +693,7 @@ class BasicInfo:
         BCS服务用户数据面agent地址端口列表
 
         :param agent_portal_addrs: The agent_portal_addrs of this BasicInfo.
-        :type: list[str]
+        :type agent_portal_addrs: list[str]
         """
         self._agent_portal_addrs = agent_portal_addrs
 
@@ -662,7 +715,7 @@ class BasicInfo:
         BCS服务状态，分为正常（Normal），异常（Abnormal），弹性IP异常（EipAbnormal），已冻结（Freeze），休眠中（Hibernation），未知（其余值）
 
         :param status: The status of this BasicInfo.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -684,7 +737,7 @@ class BasicInfo:
         BCS服务处理状态，分为创建中（IsCreating），升级中（IsUpgrading），扩缩容中（IsScaling），删除中（IsDeleting），添加中（IsAdding）
 
         :param process_status: The process_status of this BasicInfo.
-        :type: str
+        :type process_status: str
         """
         self._process_status = process_status
 
@@ -706,7 +759,7 @@ class BasicInfo:
         BCS服务为包周期模式时，返回值为0（订单未成功）,1（订单异常）,2（订单正常）
 
         :param order_status: The order_status of this BasicInfo.
-        :type: int
+        :type order_status: int
         """
         self._order_status = order_status
 

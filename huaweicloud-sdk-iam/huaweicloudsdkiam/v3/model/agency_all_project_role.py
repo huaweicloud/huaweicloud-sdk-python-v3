@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AgencyAllProjectRole:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class AgencyAllProjectRole:
     }
 
     def __init__(self, id=None, links=None, name=None):
-        """AgencyAllProjectRole - a model defined in huaweicloud sdk"""
+        """AgencyAllProjectRole
+
+        The model defined in huaweicloud sdk
+
+        :param id: 权限ID。
+        :type id: str
+        :param links: 
+        :type links: :class:`huaweicloudsdkiam.v3.LinksSelf`
+        :param name: 权限名。
+        :type name: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class AgencyAllProjectRole:
         权限ID。
 
         :param id: The id of this AgencyAllProjectRole.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -75,7 +84,7 @@ class AgencyAllProjectRole:
 
 
         :return: The links of this AgencyAllProjectRole.
-        :rtype: LinksSelf
+        :rtype: :class:`huaweicloudsdkiam.v3.LinksSelf`
         """
         return self._links
 
@@ -85,7 +94,7 @@ class AgencyAllProjectRole:
 
 
         :param links: The links of this AgencyAllProjectRole.
-        :type: LinksSelf
+        :type links: :class:`huaweicloudsdkiam.v3.LinksSelf`
         """
         self._links = links
 
@@ -107,7 +116,7 @@ class AgencyAllProjectRole:
         权限名。
 
         :param name: The name of this AgencyAllProjectRole.
-        :type: str
+        :type name: str
         """
         self._name = name
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchUpdateConfigsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class BatchUpdateConfigsResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None, task_name=None, task_type=None, status=None, status_desc=None):
-        """BatchUpdateConfigsResponse - a model defined in huaweicloud sdk"""
+        """BatchUpdateConfigsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 批量任务ID，创建批量任务时由物联网平台分配获得。
+        :type task_id: str
+        :param task_name: 批量任务名称。
+        :type task_name: str
+        :param task_type: 任务类型。
+        :type task_type: str
+        :param status: 批量任务的状态，可选参数，取值范围：Success|Fail|Processing|PartialSuccess|Stopped|Waitting|Initializing。
+        :type status: str
+        :param status_desc: 批量任务状态描述(包含主任务失败错误信息)
+        :type status_desc: str
+        """
         
         super(BatchUpdateConfigsResponse, self).__init__()
 
@@ -78,7 +91,7 @@ class BatchUpdateConfigsResponse(SdkResponse):
         批量任务ID，创建批量任务时由物联网平台分配获得。
 
         :param task_id: The task_id of this BatchUpdateConfigsResponse.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -100,7 +113,7 @@ class BatchUpdateConfigsResponse(SdkResponse):
         批量任务名称。
 
         :param task_name: The task_name of this BatchUpdateConfigsResponse.
-        :type: str
+        :type task_name: str
         """
         self._task_name = task_name
 
@@ -122,7 +135,7 @@ class BatchUpdateConfigsResponse(SdkResponse):
         任务类型。
 
         :param task_type: The task_type of this BatchUpdateConfigsResponse.
-        :type: str
+        :type task_type: str
         """
         self._task_type = task_type
 
@@ -144,7 +157,7 @@ class BatchUpdateConfigsResponse(SdkResponse):
         批量任务的状态，可选参数，取值范围：Success|Fail|Processing|PartialSuccess|Stopped|Waitting|Initializing。
 
         :param status: The status of this BatchUpdateConfigsResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -166,7 +179,7 @@ class BatchUpdateConfigsResponse(SdkResponse):
         批量任务状态描述(包含主任务失败错误信息)
 
         :param status_desc: The status_desc of this BatchUpdateConfigsResponse.
-        :type: str
+        :type status_desc: str
         """
         self._status_desc = status_desc
 

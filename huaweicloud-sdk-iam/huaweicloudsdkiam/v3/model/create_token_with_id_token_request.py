@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateTokenWithIdTokenRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateTokenWithIdTokenRequest:
     }
 
     def __init__(self, x_idp_id=None, body=None):
-        """CreateTokenWithIdTokenRequest - a model defined in huaweicloud sdk"""
+        """CreateTokenWithIdTokenRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_idp_id: 身份提供商ID。
+        :type x_idp_id: str
+        :param body: Body of the CreateTokenWithIdTokenRequest
+        :type body: :class:`huaweicloudsdkiam.v3.GetIdTokenRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateTokenWithIdTokenRequest:
         身份提供商ID。
 
         :param x_idp_id: The x_idp_id of this CreateTokenWithIdTokenRequest.
-        :type: str
+        :type x_idp_id: str
         """
         self._x_idp_id = x_idp_id
 
@@ -72,7 +79,7 @@ class CreateTokenWithIdTokenRequest:
 
 
         :return: The body of this CreateTokenWithIdTokenRequest.
-        :rtype: GetIdTokenRequestBody
+        :rtype: :class:`huaweicloudsdkiam.v3.GetIdTokenRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CreateTokenWithIdTokenRequest:
 
 
         :param body: The body of this CreateTokenWithIdTokenRequest.
-        :type: GetIdTokenRequestBody
+        :type body: :class:`huaweicloudsdkiam.v3.GetIdTokenRequestBody`
         """
         self._body = body
 

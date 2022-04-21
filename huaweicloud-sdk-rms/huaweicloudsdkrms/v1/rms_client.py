@@ -52,21 +52,17 @@ class RmsClient(Client):
         """查询资源历史
 
         查询资源与资源关系的变更历史
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowResourceHistoryRequest request
-        :return: ShowResourceHistoryResponse
+        :param request: Request instance for ShowResourceHistory
+        :type request: :class:`huaweicloudsdkrms.v1.ShowResourceHistoryRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.ShowResourceHistoryResponse`
         """
         return self.show_resource_history_with_http_info(request)
 
     def show_resource_history_with_http_info(self, request):
-        """查询资源历史
-
-        查询资源与资源关系的变更历史
-
-        :param ShowResourceHistoryRequest request
-        :return: ShowResourceHistoryResponse
-        """
-
         all_params = ['resource_id', 'marker', 'limit', 'earlier_time', 'later_time', 'chronological_order']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -120,26 +116,21 @@ class RmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_policy_assignments(self, request):
         """创建合规规则
 
         创建新的合规规则
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreatePolicyAssignmentsRequest request
-        :return: CreatePolicyAssignmentsResponse
+        :param request: Request instance for CreatePolicyAssignments
+        :type request: :class:`huaweicloudsdkrms.v1.CreatePolicyAssignmentsRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.CreatePolicyAssignmentsResponse`
         """
         return self.create_policy_assignments_with_http_info(request)
 
     def create_policy_assignments_with_http_info(self, request):
-        """创建合规规则
-
-        创建新的合规规则
-
-        :param CreatePolicyAssignmentsRequest request
-        :return: CreatePolicyAssignmentsResponse
-        """
-
         all_params = ['policy_assignment_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -183,26 +174,21 @@ class RmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_policy_assignment(self, request):
         """删除合规规则
 
         根据规则ID删除此规则
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeletePolicyAssignmentRequest request
-        :return: DeletePolicyAssignmentResponse
+        :param request: Request instance for DeletePolicyAssignment
+        :type request: :class:`huaweicloudsdkrms.v1.DeletePolicyAssignmentRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.DeletePolicyAssignmentResponse`
         """
         return self.delete_policy_assignment_with_http_info(request)
 
     def delete_policy_assignment_with_http_info(self, request):
-        """删除合规规则
-
-        根据规则ID删除此规则
-
-        :param DeletePolicyAssignmentRequest request
-        :return: DeletePolicyAssignmentResponse
-        """
-
         all_params = ['policy_assignment_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -246,26 +232,21 @@ class RmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def disable_policy_assignment(self, request):
         """停用合规规则
 
         根据规则ID停用此规则
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DisablePolicyAssignmentRequest request
-        :return: DisablePolicyAssignmentResponse
+        :param request: Request instance for DisablePolicyAssignment
+        :type request: :class:`huaweicloudsdkrms.v1.DisablePolicyAssignmentRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.DisablePolicyAssignmentResponse`
         """
         return self.disable_policy_assignment_with_http_info(request)
 
     def disable_policy_assignment_with_http_info(self, request):
-        """停用合规规则
-
-        根据规则ID停用此规则
-
-        :param DisablePolicyAssignmentRequest request
-        :return: DisablePolicyAssignmentResponse
-        """
-
         all_params = ['policy_assignment_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -309,26 +290,21 @@ class RmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def enable_policy_assignment(self, request):
         """启用合规规则
 
         根据规则ID启用此规则
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param EnablePolicyAssignmentRequest request
-        :return: EnablePolicyAssignmentResponse
+        :param request: Request instance for EnablePolicyAssignment
+        :type request: :class:`huaweicloudsdkrms.v1.EnablePolicyAssignmentRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.EnablePolicyAssignmentResponse`
         """
         return self.enable_policy_assignment_with_http_info(request)
 
     def enable_policy_assignment_with_http_info(self, request):
-        """启用合规规则
-
-        根据规则ID启用此规则
-
-        :param EnablePolicyAssignmentRequest request
-        :return: EnablePolicyAssignmentResponse
-        """
-
         all_params = ['policy_assignment_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -372,26 +348,21 @@ class RmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_built_in_policy_definitions(self, request):
         """列出内置策略
 
         列出用户的内置策略
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListBuiltInPolicyDefinitionsRequest request
-        :return: ListBuiltInPolicyDefinitionsResponse
+        :param request: Request instance for ListBuiltInPolicyDefinitions
+        :type request: :class:`huaweicloudsdkrms.v1.ListBuiltInPolicyDefinitionsRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.ListBuiltInPolicyDefinitionsResponse`
         """
         return self.list_built_in_policy_definitions_with_http_info(request)
 
     def list_built_in_policy_definitions_with_http_info(self, request):
-        """列出内置策略
-
-        列出用户的内置策略
-
-        :param ListBuiltInPolicyDefinitionsRequest request
-        :return: ListBuiltInPolicyDefinitionsResponse
-        """
-
         all_params = ['x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -435,26 +406,21 @@ class RmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_policy_assignments(self, request):
         """列出合规规则
 
         列出用户的合规规则
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListPolicyAssignmentsRequest request
-        :return: ListPolicyAssignmentsResponse
+        :param request: Request instance for ListPolicyAssignments
+        :type request: :class:`huaweicloudsdkrms.v1.ListPolicyAssignmentsRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.ListPolicyAssignmentsResponse`
         """
         return self.list_policy_assignments_with_http_info(request)
 
     def list_policy_assignments_with_http_info(self, request):
-        """列出合规规则
-
-        列出用户的合规规则
-
-        :param ListPolicyAssignmentsRequest request
-        :return: ListPolicyAssignmentsResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -496,26 +462,21 @@ class RmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_policy_states_by_assignment_id(self, request):
         """获取规则的合规结果
 
         根据规则ID查询所有的合规结果
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListPolicyStatesByAssignmentIdRequest request
-        :return: ListPolicyStatesByAssignmentIdResponse
+        :param request: Request instance for ListPolicyStatesByAssignmentId
+        :type request: :class:`huaweicloudsdkrms.v1.ListPolicyStatesByAssignmentIdRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.ListPolicyStatesByAssignmentIdResponse`
         """
         return self.list_policy_states_by_assignment_id_with_http_info(request)
 
     def list_policy_states_by_assignment_id_with_http_info(self, request):
-        """获取规则的合规结果
-
-        根据规则ID查询所有的合规结果
-
-        :param ListPolicyStatesByAssignmentIdRequest request
-        :return: ListPolicyStatesByAssignmentIdResponse
-        """
-
         all_params = ['policy_assignment_id', 'compliance_state', 'resource_id', 'resource_name', 'limit', 'marker']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -569,26 +530,21 @@ class RmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_policy_states_by_domain_id(self, request):
         """获取用户的合规结果
 
         查询用户所有的合规结果
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListPolicyStatesByDomainIdRequest request
-        :return: ListPolicyStatesByDomainIdResponse
+        :param request: Request instance for ListPolicyStatesByDomainId
+        :type request: :class:`huaweicloudsdkrms.v1.ListPolicyStatesByDomainIdRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.ListPolicyStatesByDomainIdResponse`
         """
         return self.list_policy_states_by_domain_id_with_http_info(request)
 
     def list_policy_states_by_domain_id_with_http_info(self, request):
-        """获取用户的合规结果
-
-        查询用户所有的合规结果
-
-        :param ListPolicyStatesByDomainIdRequest request
-        :return: ListPolicyStatesByDomainIdResponse
-        """
-
         all_params = ['compliance_state', 'resource_id', 'resource_name', 'limit', 'marker']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -640,26 +596,21 @@ class RmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_policy_states_by_resource_id(self, request):
         """获取资源的合规结果
 
         根据资源ID查询所有合规结果
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListPolicyStatesByResourceIdRequest request
-        :return: ListPolicyStatesByResourceIdResponse
+        :param request: Request instance for ListPolicyStatesByResourceId
+        :type request: :class:`huaweicloudsdkrms.v1.ListPolicyStatesByResourceIdRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.ListPolicyStatesByResourceIdResponse`
         """
         return self.list_policy_states_by_resource_id_with_http_info(request)
 
     def list_policy_states_by_resource_id_with_http_info(self, request):
-        """获取资源的合规结果
-
-        根据资源ID查询所有合规结果
-
-        :param ListPolicyStatesByResourceIdRequest request
-        :return: ListPolicyStatesByResourceIdResponse
-        """
-
         all_params = ['resource_id', 'compliance_state', 'limit', 'marker']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -709,26 +660,21 @@ class RmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def run_evaluation_by_policy_assignment_id(self, request):
         """运行合规评估
 
         根据规则ID评估此规则
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param RunEvaluationByPolicyAssignmentIdRequest request
-        :return: RunEvaluationByPolicyAssignmentIdResponse
+        :param request: Request instance for RunEvaluationByPolicyAssignmentId
+        :type request: :class:`huaweicloudsdkrms.v1.RunEvaluationByPolicyAssignmentIdRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.RunEvaluationByPolicyAssignmentIdResponse`
         """
         return self.run_evaluation_by_policy_assignment_id_with_http_info(request)
 
     def run_evaluation_by_policy_assignment_id_with_http_info(self, request):
-        """运行合规评估
-
-        根据规则ID评估此规则
-
-        :param RunEvaluationByPolicyAssignmentIdRequest request
-        :return: RunEvaluationByPolicyAssignmentIdResponse
-        """
-
         all_params = ['policy_assignment_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -772,26 +718,21 @@ class RmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_built_in_policy_definition(self, request):
         """查询单个内置策略
 
         根据策略ID查询单个内置策略
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowBuiltInPolicyDefinitionRequest request
-        :return: ShowBuiltInPolicyDefinitionResponse
+        :param request: Request instance for ShowBuiltInPolicyDefinition
+        :type request: :class:`huaweicloudsdkrms.v1.ShowBuiltInPolicyDefinitionRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.ShowBuiltInPolicyDefinitionResponse`
         """
         return self.show_built_in_policy_definition_with_http_info(request)
 
     def show_built_in_policy_definition_with_http_info(self, request):
-        """查询单个内置策略
-
-        根据策略ID查询单个内置策略
-
-        :param ShowBuiltInPolicyDefinitionRequest request
-        :return: ShowBuiltInPolicyDefinitionResponse
-        """
-
         all_params = ['policy_definition_id', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -837,26 +778,21 @@ class RmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_evaluation_state_by_assignment_id(self, request):
         """获取规则的评估状态
 
         根据规则ID查询此规则的评估状态
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowEvaluationStateByAssignmentIdRequest request
-        :return: ShowEvaluationStateByAssignmentIdResponse
+        :param request: Request instance for ShowEvaluationStateByAssignmentId
+        :type request: :class:`huaweicloudsdkrms.v1.ShowEvaluationStateByAssignmentIdRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.ShowEvaluationStateByAssignmentIdResponse`
         """
         return self.show_evaluation_state_by_assignment_id_with_http_info(request)
 
     def show_evaluation_state_by_assignment_id_with_http_info(self, request):
-        """获取规则的评估状态
-
-        根据规则ID查询此规则的评估状态
-
-        :param ShowEvaluationStateByAssignmentIdRequest request
-        :return: ShowEvaluationStateByAssignmentIdResponse
-        """
-
         all_params = ['policy_assignment_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -900,26 +836,21 @@ class RmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_policy_assignment(self, request):
         """获取单个合规规则
 
         根据规则ID获取单个规则
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowPolicyAssignmentRequest request
-        :return: ShowPolicyAssignmentResponse
+        :param request: Request instance for ShowPolicyAssignment
+        :type request: :class:`huaweicloudsdkrms.v1.ShowPolicyAssignmentRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.ShowPolicyAssignmentResponse`
         """
         return self.show_policy_assignment_with_http_info(request)
 
     def show_policy_assignment_with_http_info(self, request):
-        """获取单个合规规则
-
-        根据规则ID获取单个规则
-
-        :param ShowPolicyAssignmentRequest request
-        :return: ShowPolicyAssignmentResponse
-        """
-
         all_params = ['policy_assignment_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -963,26 +894,21 @@ class RmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_policy_assignment(self, request):
         """更新合规规则
 
         更新用户的合规规则
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdatePolicyAssignmentRequest request
-        :return: UpdatePolicyAssignmentResponse
+        :param request: Request instance for UpdatePolicyAssignment
+        :type request: :class:`huaweicloudsdkrms.v1.UpdatePolicyAssignmentRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.UpdatePolicyAssignmentResponse`
         """
         return self.update_policy_assignment_with_http_info(request)
 
     def update_policy_assignment_with_http_info(self, request):
-        """更新合规规则
-
-        更新用户的合规规则
-
-        :param UpdatePolicyAssignmentRequest request
-        :return: UpdatePolicyAssignmentResponse
-        """
-
         all_params = ['policy_assignment_id', 'policy_assignment_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1028,26 +954,21 @@ class RmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_regions(self, request):
         """查询租户可见的区域
 
         查询租户可见的区域
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListRegionsRequest request
-        :return: ListRegionsResponse
+        :param request: Request instance for ListRegions
+        :type request: :class:`huaweicloudsdkrms.v1.ListRegionsRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.ListRegionsResponse`
         """
         return self.list_regions_with_http_info(request)
 
     def list_regions_with_http_info(self, request):
-        """查询租户可见的区域
-
-        查询租户可见的区域
-
-        :param ListRegionsRequest request
-        :return: ListRegionsResponse
-        """
-
         all_params = ['x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1091,26 +1012,21 @@ class RmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_resource_relations(self, request):
         """列举资源关系
 
-        指定资源ID，查询该资源与其他资源的关联关系，可以指定关系方向为\"in\" 或者\"out\"
+        指定资源ID，查询该资源与其他资源的关联关系，可以指定关系方向为\&quot;in\&quot; 或者\&quot;out\&quot;
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowResourceRelationsRequest request
-        :return: ShowResourceRelationsResponse
+        :param request: Request instance for ShowResourceRelations
+        :type request: :class:`huaweicloudsdkrms.v1.ShowResourceRelationsRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.ShowResourceRelationsResponse`
         """
         return self.show_resource_relations_with_http_info(request)
 
     def show_resource_relations_with_http_info(self, request):
-        """列举资源关系
-
-        指定资源ID，查询该资源与其他资源的关联关系，可以指定关系方向为\"in\" 或者\"out\"
-
-        :param ShowResourceRelationsRequest request
-        :return: ShowResourceRelationsResponse
-        """
-
         all_params = ['resource_id', 'direction', 'limit', 'marker']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1160,26 +1076,21 @@ class RmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_all_resources(self, request):
         """列举所有资源
 
         返回当前租户下所有资源，需要当前用户有rms:resources:list权限。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListAllResourcesRequest request
-        :return: ListAllResourcesResponse
+        :param request: Request instance for ListAllResources
+        :type request: :class:`huaweicloudsdkrms.v1.ListAllResourcesRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.ListAllResourcesResponse`
         """
         return self.list_all_resources_with_http_info(request)
 
     def list_all_resources_with_http_info(self, request):
-        """列举所有资源
-
-        返回当前租户下所有资源，需要当前用户有rms:resources:list权限。
-
-        :param ListAllResourcesRequest request
-        :return: ListAllResourcesResponse
-        """
-
         all_params = ['region_id', 'ep_id', 'type', 'limit', 'marker']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1231,26 +1142,21 @@ class RmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_providers(self, request):
         """列举云服务
 
         查询RMS支持的云服务、资源、区域列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListProvidersRequest request
-        :return: ListProvidersResponse
+        :param request: Request instance for ListProviders
+        :type request: :class:`huaweicloudsdkrms.v1.ListProvidersRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.ListProvidersResponse`
         """
         return self.list_providers_with_http_info(request)
 
     def list_providers_with_http_info(self, request):
-        """列举云服务
-
-        查询RMS支持的云服务、资源、区域列表
-
-        :param ListProvidersRequest request
-        :return: ListProvidersResponse
-        """
-
         all_params = ['offset', 'limit', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1298,26 +1204,21 @@ class RmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_resources(self, request):
         """列举指定类型的资源
 
         返回当前租户下特定资源类型的资源，需要当前用户有rms:resources:list权限。比如查询云服务器，对应的RMS资源类型是ecs.cloudservers，其中provider为ecs，type为cloudservers。 RMS支持的服务和资源类型参见[支持的服务和区域](https://console.huaweicloud.com/eps/#/resources/supported)。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListResourcesRequest request
-        :return: ListResourcesResponse
+        :param request: Request instance for ListResources
+        :type request: :class:`huaweicloudsdkrms.v1.ListResourcesRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.ListResourcesResponse`
         """
         return self.list_resources_with_http_info(request)
 
     def list_resources_with_http_info(self, request):
-        """列举指定类型的资源
-
-        返回当前租户下特定资源类型的资源，需要当前用户有rms:resources:list权限。比如查询云服务器，对应的RMS资源类型是ecs.cloudservers，其中provider为ecs，type为cloudservers。 RMS支持的服务和资源类型参见[支持的服务和区域](https://console.huaweicloud.com/eps/#/resources/supported)。
-
-        :param ListResourcesRequest request
-        :return: ListResourcesResponse
-        """
-
         all_params = ['provider', 'type', 'region_id', 'ep_id', 'limit', 'marker']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1371,26 +1272,21 @@ class RmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_resource_by_id(self, request):
         """查询单个资源
 
         指定资源ID，返回该资源的详细信息，需要当前用户有rms:resources:get权限。比如查询云服务器，对应的RMS资源类型是ecs.cloudservers，其中provider为ecs，type为cloudservers。RMS支持的服务和资源类型参见[支持的服务和区域](https://console.huaweicloud.com/eps/#/resources/supported)。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowResourceByIdRequest request
-        :return: ShowResourceByIdResponse
+        :param request: Request instance for ShowResourceById
+        :type request: :class:`huaweicloudsdkrms.v1.ShowResourceByIdRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.ShowResourceByIdResponse`
         """
         return self.show_resource_by_id_with_http_info(request)
 
     def show_resource_by_id_with_http_info(self, request):
-        """查询单个资源
-
-        指定资源ID，返回该资源的详细信息，需要当前用户有rms:resources:get权限。比如查询云服务器，对应的RMS资源类型是ecs.cloudservers，其中provider为ecs，type为cloudservers。RMS支持的服务和资源类型参见[支持的服务和区域](https://console.huaweicloud.com/eps/#/resources/supported)。
-
-        :param ShowResourceByIdRequest request
-        :return: ShowResourceByIdResponse
-        """
-
         all_params = ['provider', 'type', 'resource_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1438,26 +1334,21 @@ class RmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_tracker_config(self, request):
         """创建或更新记录器
 
         创建或更新资源记录器，只能存在一个资源记录器
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateTrackerConfigRequest request
-        :return: CreateTrackerConfigResponse
+        :param request: Request instance for CreateTrackerConfig
+        :type request: :class:`huaweicloudsdkrms.v1.CreateTrackerConfigRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.CreateTrackerConfigResponse`
         """
         return self.create_tracker_config_with_http_info(request)
 
     def create_tracker_config_with_http_info(self, request):
-        """创建或更新记录器
-
-        创建或更新资源记录器，只能存在一个资源记录器
-
-        :param CreateTrackerConfigRequest request
-        :return: CreateTrackerConfigResponse
-        """
-
         all_params = ['tracker_config_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1501,26 +1392,21 @@ class RmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_tracker_config(self, request):
         """删除记录器
 
         删除资源记录器
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteTrackerConfigRequest request
-        :return: DeleteTrackerConfigResponse
+        :param request: Request instance for DeleteTrackerConfig
+        :type request: :class:`huaweicloudsdkrms.v1.DeleteTrackerConfigRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.DeleteTrackerConfigResponse`
         """
         return self.delete_tracker_config_with_http_info(request)
 
     def delete_tracker_config_with_http_info(self, request):
-        """删除记录器
-
-        删除资源记录器
-
-        :param DeleteTrackerConfigRequest request
-        :return: DeleteTrackerConfigResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1562,26 +1448,21 @@ class RmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_tracker_config(self, request):
         """查询记录器
 
         查询资源记录器的详细信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowTrackerConfigRequest request
-        :return: ShowTrackerConfigResponse
+        :param request: Request instance for ShowTrackerConfig
+        :type request: :class:`huaweicloudsdkrms.v1.ShowTrackerConfigRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.ShowTrackerConfigResponse`
         """
         return self.show_tracker_config_with_http_info(request)
 
     def show_tracker_config_with_http_info(self, request):
-        """查询记录器
-
-        查询资源记录器的详细信息
-
-        :param ShowTrackerConfigRequest request
-        :return: ShowTrackerConfigResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1622,7 +1503,6 @@ class RmsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

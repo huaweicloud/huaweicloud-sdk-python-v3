@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RouterDetailRespDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class RouterDetailRespDTO:
     }
 
     def __init__(self, route_id=None, input_module_id=None, output_module_id=None, input=None, output=None, sql=None, available=None):
-        """RouterDetailRespDTO - a model defined in huaweicloud sdk"""
+        """RouterDetailRespDTO
+
+        The model defined in huaweicloud sdk
+
+        :param route_id: 路由ID，节点下唯一
+        :type route_id: str
+        :param input_module_id: 输入点所在模块的模块ID
+        :type input_module_id: str
+        :param output_module_id: 输出点所在模块的模块ID
+        :type output_module_id: str
+        :param input: 输入点名称
+        :type input: str
+        :param output: 输出点名称
+        :type output: str
+        :param sql: sql參數
+        :type sql: str
+        :param available: 是否可用
+        :type available: bool
+        """
         
         
 
@@ -87,7 +104,7 @@ class RouterDetailRespDTO:
         路由ID，节点下唯一
 
         :param route_id: The route_id of this RouterDetailRespDTO.
-        :type: str
+        :type route_id: str
         """
         self._route_id = route_id
 
@@ -109,7 +126,7 @@ class RouterDetailRespDTO:
         输入点所在模块的模块ID
 
         :param input_module_id: The input_module_id of this RouterDetailRespDTO.
-        :type: str
+        :type input_module_id: str
         """
         self._input_module_id = input_module_id
 
@@ -131,7 +148,7 @@ class RouterDetailRespDTO:
         输出点所在模块的模块ID
 
         :param output_module_id: The output_module_id of this RouterDetailRespDTO.
-        :type: str
+        :type output_module_id: str
         """
         self._output_module_id = output_module_id
 
@@ -153,7 +170,7 @@ class RouterDetailRespDTO:
         输入点名称
 
         :param input: The input of this RouterDetailRespDTO.
-        :type: str
+        :type input: str
         """
         self._input = input
 
@@ -175,7 +192,7 @@ class RouterDetailRespDTO:
         输出点名称
 
         :param output: The output of this RouterDetailRespDTO.
-        :type: str
+        :type output: str
         """
         self._output = output
 
@@ -197,7 +214,7 @@ class RouterDetailRespDTO:
         sql參數
 
         :param sql: The sql of this RouterDetailRespDTO.
-        :type: str
+        :type sql: str
         """
         self._sql = sql
 
@@ -219,7 +236,7 @@ class RouterDetailRespDTO:
         是否可用
 
         :param available: The available of this RouterDetailRespDTO.
-        :type: bool
+        :type available: bool
         """
         self._available = available
 

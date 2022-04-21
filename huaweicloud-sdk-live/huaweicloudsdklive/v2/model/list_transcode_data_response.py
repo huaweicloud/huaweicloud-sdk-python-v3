@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTranscodeDataResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListTranscodeDataResponse(SdkResponse):
     }
 
     def __init__(self, transcode_data_list=None, summary_list=None, x_request_id=None):
-        """ListTranscodeDataResponse - a model defined in huaweicloud sdk"""
+        """ListTranscodeDataResponse
+
+        The model defined in huaweicloud sdk
+
+        :param transcode_data_list: 采样数据列表。
+        :type transcode_data_list: list[:class:`huaweicloudsdklive.v2.TranscodeData`]
+        :param summary_list: 指定时间区间内各转码规格转码时长总和。
+        :type summary_list: list[:class:`huaweicloudsdklive.v2.TranscodeSummary`]
+        :param x_request_id: 
+        :type x_request_id: str
+        """
         
         super(ListTranscodeDataResponse, self).__init__()
 
@@ -57,7 +66,7 @@ class ListTranscodeDataResponse(SdkResponse):
         采样数据列表。
 
         :return: The transcode_data_list of this ListTranscodeDataResponse.
-        :rtype: list[TranscodeData]
+        :rtype: list[:class:`huaweicloudsdklive.v2.TranscodeData`]
         """
         return self._transcode_data_list
 
@@ -68,7 +77,7 @@ class ListTranscodeDataResponse(SdkResponse):
         采样数据列表。
 
         :param transcode_data_list: The transcode_data_list of this ListTranscodeDataResponse.
-        :type: list[TranscodeData]
+        :type transcode_data_list: list[:class:`huaweicloudsdklive.v2.TranscodeData`]
         """
         self._transcode_data_list = transcode_data_list
 
@@ -79,7 +88,7 @@ class ListTranscodeDataResponse(SdkResponse):
         指定时间区间内各转码规格转码时长总和。
 
         :return: The summary_list of this ListTranscodeDataResponse.
-        :rtype: list[TranscodeSummary]
+        :rtype: list[:class:`huaweicloudsdklive.v2.TranscodeSummary`]
         """
         return self._summary_list
 
@@ -90,7 +99,7 @@ class ListTranscodeDataResponse(SdkResponse):
         指定时间区间内各转码规格转码时长总和。
 
         :param summary_list: The summary_list of this ListTranscodeDataResponse.
-        :type: list[TranscodeSummary]
+        :type summary_list: list[:class:`huaweicloudsdklive.v2.TranscodeSummary`]
         """
         self._summary_list = summary_list
 
@@ -110,7 +119,7 @@ class ListTranscodeDataResponse(SdkResponse):
 
 
         :param x_request_id: The x_request_id of this ListTranscodeDataResponse.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 

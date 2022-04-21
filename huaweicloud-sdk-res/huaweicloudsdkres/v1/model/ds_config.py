@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DsConfig:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DsConfig:
     }
 
     def __init__(self, time_interval=None, category_type=None):
-        """DsConfig - a model defined in huaweicloud sdk"""
+        """DsConfig
+
+        The model defined in huaweicloud sdk
+
+        :param time_interval: 数据选择(天)。
+        :type time_interval: int
+        :param category_type: 物品类别。
+        :type category_type: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class DsConfig:
         数据选择(天)。
 
         :param time_interval: The time_interval of this DsConfig.
-        :type: int
+        :type time_interval: int
         """
         self._time_interval = time_interval
 
@@ -85,7 +92,7 @@ class DsConfig:
         物品类别。
 
         :param category_type: The category_type of this DsConfig.
-        :type: str
+        :type category_type: str
         """
         self._category_type = category_type
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MysqlCreateBackupRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class MysqlCreateBackupRequest:
     }
 
     def __init__(self, instance_id=None, name=None, description=None):
-        """MysqlCreateBackupRequest - a model defined in huaweicloud sdk"""
+        """MysqlCreateBackupRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID，严格匹配UUID规则。
+        :type instance_id: str
+        :param name: 备份名称。 取值范围：4~64个字符之间，必须以字母开头，区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他的特殊字符。
+        :type name: str
+        :param description: 备份描述，不能包含&gt;!&lt;\&quot;&amp;&#39;&#x3D;特殊字符，不大于256个字符。
+        :type description: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class MysqlCreateBackupRequest:
         实例ID，严格匹配UUID规则。
 
         :param instance_id: The instance_id of this MysqlCreateBackupRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -88,7 +97,7 @@ class MysqlCreateBackupRequest:
         备份名称。 取值范围：4~64个字符之间，必须以字母开头，区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他的特殊字符。
 
         :param name: The name of this MysqlCreateBackupRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -110,7 +119,7 @@ class MysqlCreateBackupRequest:
         备份描述，不能包含>!<\"&'=特殊字符，不大于256个字符。
 
         :param description: The description of this MysqlCreateBackupRequest.
-        :type: str
+        :type description: str
         """
         self._description = description
 

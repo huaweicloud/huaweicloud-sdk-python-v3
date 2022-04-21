@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TemplateRepositoryList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class TemplateRepositoryList:
     }
 
     def __init__(self, projects=None, total=None):
-        """TemplateRepositoryList - a model defined in huaweicloud sdk"""
+        """TemplateRepositoryList
+
+        The model defined in huaweicloud sdk
+
+        :param projects: 模板列表
+        :type projects: list[:class:`huaweicloudsdkcodehub.v3.TemplateRepository`]
+        :param total: 模板总数
+        :type total: int
+        """
         
         
 
@@ -52,7 +59,7 @@ class TemplateRepositoryList:
         模板列表
 
         :return: The projects of this TemplateRepositoryList.
-        :rtype: list[TemplateRepository]
+        :rtype: list[:class:`huaweicloudsdkcodehub.v3.TemplateRepository`]
         """
         return self._projects
 
@@ -63,7 +70,7 @@ class TemplateRepositoryList:
         模板列表
 
         :param projects: The projects of this TemplateRepositoryList.
-        :type: list[TemplateRepository]
+        :type projects: list[:class:`huaweicloudsdkcodehub.v3.TemplateRepository`]
         """
         self._projects = projects
 
@@ -85,7 +92,7 @@ class TemplateRepositoryList:
         模板总数
 
         :param total: The total of this TemplateRepositoryList.
-        :type: int
+        :type total: int
         """
         self._total = total
 

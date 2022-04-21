@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListNewInstantMessagesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListNewInstantMessagesRequest:
     }
 
     def __init__(self, case_ids=None, last_message_time_id=None, group_id=None, x_site=None, x_language=None, x_time_zone=None):
-        """ListNewInstantMessagesRequest - a model defined in huaweicloud sdk"""
+        """ListNewInstantMessagesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param case_ids: 工单id
+        :type case_ids: list[str]
+        :param last_message_time_id: 上次查询留言的时间
+        :type last_message_time_id: str
+        :param group_id: 组id
+        :type group_id: str
+        :param x_site: 对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
+        :type x_site: int
+        :param x_language: 语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
+        :type x_language: str
+        :param x_time_zone: 环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
+        :type x_time_zone: str
+        """
         
         
 
@@ -82,7 +97,7 @@ class ListNewInstantMessagesRequest:
         工单id
 
         :param case_ids: The case_ids of this ListNewInstantMessagesRequest.
-        :type: list[str]
+        :type case_ids: list[str]
         """
         self._case_ids = case_ids
 
@@ -104,7 +119,7 @@ class ListNewInstantMessagesRequest:
         上次查询留言的时间
 
         :param last_message_time_id: The last_message_time_id of this ListNewInstantMessagesRequest.
-        :type: str
+        :type last_message_time_id: str
         """
         self._last_message_time_id = last_message_time_id
 
@@ -126,7 +141,7 @@ class ListNewInstantMessagesRequest:
         组id
 
         :param group_id: The group_id of this ListNewInstantMessagesRequest.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -148,7 +163,7 @@ class ListNewInstantMessagesRequest:
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
         :param x_site: The x_site of this ListNewInstantMessagesRequest.
-        :type: int
+        :type x_site: int
         """
         self._x_site = x_site
 
@@ -170,7 +185,7 @@ class ListNewInstantMessagesRequest:
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
         :param x_language: The x_language of this ListNewInstantMessagesRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -192,7 +207,7 @@ class ListNewInstantMessagesRequest:
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 
         :param x_time_zone: The x_time_zone of this ListNewInstantMessagesRequest.
-        :type: str
+        :type x_time_zone: str
         """
         self._x_time_zone = x_time_zone
 

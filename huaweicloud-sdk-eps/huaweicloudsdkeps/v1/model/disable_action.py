@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DisableAction:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DisableAction:
     }
 
     def __init__(self, action=None):
-        """DisableAction - a model defined in huaweicloud sdk"""
+        """DisableAction
+
+        The model defined in huaweicloud sdk
+
+        :param action: 停用操作
+        :type action: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class DisableAction:
         停用操作
 
         :param action: The action of this DisableAction.
-        :type: str
+        :type action: str
         """
         self._action = action
 

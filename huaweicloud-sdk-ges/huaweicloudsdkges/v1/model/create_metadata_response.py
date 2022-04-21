@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateMetadataResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CreateMetadataResponse(SdkResponse):
     }
 
     def __init__(self, error_message=None, error_code=None, id=None, name=None):
-        """CreateMetadataResponse - a model defined in huaweicloud sdk"""
+        """CreateMetadataResponse
+
+        The model defined in huaweicloud sdk
+
+        :param error_message: 系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误信息。
+        :type error_message: str
+        :param error_code: 系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误码。
+        :type error_code: str
+        :param id: 元数据ID。
+        :type id: str
+        :param name: 元数据名字。
+        :type name: str
+        """
         
         super(CreateMetadataResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class CreateMetadataResponse(SdkResponse):
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误信息。
 
         :param error_message: The error_message of this CreateMetadataResponse.
-        :type: str
+        :type error_message: str
         """
         self._error_message = error_message
 
@@ -95,7 +106,7 @@ class CreateMetadataResponse(SdkResponse):
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误码。
 
         :param error_code: The error_code of this CreateMetadataResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -117,7 +128,7 @@ class CreateMetadataResponse(SdkResponse):
         元数据ID。
 
         :param id: The id of this CreateMetadataResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -139,7 +150,7 @@ class CreateMetadataResponse(SdkResponse):
         元数据名字。
 
         :param name: The name of this CreateMetadataResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 

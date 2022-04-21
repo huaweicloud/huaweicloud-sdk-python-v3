@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ChatAnswers:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ChatAnswers:
     }
 
     def __init__(self, answer=None, score=None):
-        """ChatAnswers - a model defined in huaweicloud sdk"""
+        """ChatAnswers
+
+        The model defined in huaweicloud sdk
+
+        :param answer: 答案。
+        :type answer: str
+        :param score: 闲聊的置信度，范围:0.0~1.0  0.0表示兜底回复
+        :type score: float
+        """
         
         
 
@@ -62,7 +69,7 @@ class ChatAnswers:
         答案。
 
         :param answer: The answer of this ChatAnswers.
-        :type: str
+        :type answer: str
         """
         self._answer = answer
 
@@ -84,7 +91,7 @@ class ChatAnswers:
         闲聊的置信度，范围:0.0~1.0  0.0表示兜底回复
 
         :param score: The score of this ChatAnswers.
-        :type: float
+        :type score: float
         """
         self._score = score
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StructProcessVO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class StructProcessVO:
     }
 
     def __init__(self, type=None, status=None, src_count=None, dst_count=None, start_time=None, end_time=None):
-        """StructProcessVO - a model defined in huaweicloud sdk"""
+        """StructProcessVO
+
+        The model defined in huaweicloud sdk
+
+        :param type: 对象类型
+        :type type: str
+        :param status: 状态
+        :type status: int
+        :param src_count: 源对象数量
+        :type src_count: int
+        :param dst_count: 目标对象数量
+        :type dst_count: int
+        :param start_time: 开始时间
+        :type start_time: int
+        :param end_time: 结束时间
+        :type end_time: int
+        """
         
         
 
@@ -78,7 +93,7 @@ class StructProcessVO:
         对象类型
 
         :param type: The type of this StructProcessVO.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -100,7 +115,7 @@ class StructProcessVO:
         状态
 
         :param status: The status of this StructProcessVO.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -122,7 +137,7 @@ class StructProcessVO:
         源对象数量
 
         :param src_count: The src_count of this StructProcessVO.
-        :type: int
+        :type src_count: int
         """
         self._src_count = src_count
 
@@ -144,7 +159,7 @@ class StructProcessVO:
         目标对象数量
 
         :param dst_count: The dst_count of this StructProcessVO.
-        :type: int
+        :type dst_count: int
         """
         self._dst_count = dst_count
 
@@ -166,7 +181,7 @@ class StructProcessVO:
         开始时间
 
         :param start_time: The start_time of this StructProcessVO.
-        :type: int
+        :type start_time: int
         """
         self._start_time = start_time
 
@@ -188,7 +203,7 @@ class StructProcessVO:
         结束时间
 
         :param end_time: The end_time of this StructProcessVO.
-        :type: int
+        :type end_time: int
         """
         self._end_time = end_time
 

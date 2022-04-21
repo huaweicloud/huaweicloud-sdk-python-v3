@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchShowParamsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchShowParamsResponse(SdkResponse):
     }
 
     def __init__(self, params_list=None, count=None):
-        """BatchShowParamsResponse - a model defined in huaweicloud sdk"""
+        """BatchShowParamsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param params_list: 查询数据库参数响应体
+        :type params_list: list[:class:`huaweicloudsdkdrs.v3.QueryDbParamsResp`]
+        :param count: 总数
+        :type count: int
+        """
         
         super(BatchShowParamsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class BatchShowParamsResponse(SdkResponse):
         查询数据库参数响应体
 
         :return: The params_list of this BatchShowParamsResponse.
-        :rtype: list[QueryDbParamsResp]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.QueryDbParamsResp`]
         """
         return self._params_list
 
@@ -63,7 +70,7 @@ class BatchShowParamsResponse(SdkResponse):
         查询数据库参数响应体
 
         :param params_list: The params_list of this BatchShowParamsResponse.
-        :type: list[QueryDbParamsResp]
+        :type params_list: list[:class:`huaweicloudsdkdrs.v3.QueryDbParamsResp`]
         """
         self._params_list = params_list
 
@@ -85,7 +92,7 @@ class BatchShowParamsResponse(SdkResponse):
         总数
 
         :param count: The count of this BatchShowParamsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

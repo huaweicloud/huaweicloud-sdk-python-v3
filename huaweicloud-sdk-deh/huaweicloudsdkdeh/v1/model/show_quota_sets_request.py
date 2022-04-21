@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowQuotaSetsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowQuotaSetsRequest:
     }
 
     def __init__(self, tenant_id=None, resource=None):
-        """ShowQuotaSetsRequest - a model defined in huaweicloud sdk"""
+        """ShowQuotaSetsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param tenant_id: 租户ID。  可以从专属主机控制台查询，或者通过调用查询专属主机列表API获取。
+        :type tenant_id: str
+        :param resource: 配额类别。
+        :type resource: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ShowQuotaSetsRequest:
         租户ID。  可以从专属主机控制台查询，或者通过调用查询专属主机列表API获取。
 
         :param tenant_id: The tenant_id of this ShowQuotaSetsRequest.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 
@@ -84,7 +91,7 @@ class ShowQuotaSetsRequest:
         配额类别。
 
         :param resource: The resource of this ShowQuotaSetsRequest.
-        :type: str
+        :type resource: str
         """
         self._resource = resource
 

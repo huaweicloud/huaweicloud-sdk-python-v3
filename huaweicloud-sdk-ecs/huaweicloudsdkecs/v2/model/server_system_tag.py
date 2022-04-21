@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ServerSystemTag:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ServerSystemTag:
     }
 
     def __init__(self, key=None, value=None):
-        """ServerSystemTag - a model defined in huaweicloud sdk"""
+        """ServerSystemTag
+
+        The model defined in huaweicloud sdk
+
+        :param key: 系统标签的Key值。
+        :type key: str
+        :param value: 系统标签的value值。
+        :type value: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class ServerSystemTag:
         系统标签的Key值。
 
         :param key: The key of this ServerSystemTag.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -85,7 +92,7 @@ class ServerSystemTag:
         系统标签的value值。
 
         :param value: The value of this ServerSystemTag.
-        :type: str
+        :type value: str
         """
         self._value = value
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDiagnosisTasksResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListDiagnosisTasksResponse(SdkResponse):
     }
 
     def __init__(self, diagnosis_report_list=None, total_num=None):
-        """ListDiagnosisTasksResponse - a model defined in huaweicloud sdk"""
+        """ListDiagnosisTasksResponse
+
+        The model defined in huaweicloud sdk
+
+        :param diagnosis_report_list: 诊断报告列表
+        :type diagnosis_report_list: list[:class:`huaweicloudsdkdcs.v2.DiagnosisReportInfo`]
+        :param total_num: 诊断报告总数
+        :type total_num: int
+        """
         
         super(ListDiagnosisTasksResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListDiagnosisTasksResponse(SdkResponse):
         诊断报告列表
 
         :return: The diagnosis_report_list of this ListDiagnosisTasksResponse.
-        :rtype: list[DiagnosisReportInfo]
+        :rtype: list[:class:`huaweicloudsdkdcs.v2.DiagnosisReportInfo`]
         """
         return self._diagnosis_report_list
 
@@ -63,7 +70,7 @@ class ListDiagnosisTasksResponse(SdkResponse):
         诊断报告列表
 
         :param diagnosis_report_list: The diagnosis_report_list of this ListDiagnosisTasksResponse.
-        :type: list[DiagnosisReportInfo]
+        :type diagnosis_report_list: list[:class:`huaweicloudsdkdcs.v2.DiagnosisReportInfo`]
         """
         self._diagnosis_report_list = diagnosis_report_list
 
@@ -85,7 +92,7 @@ class ListDiagnosisTasksResponse(SdkResponse):
         诊断报告总数
 
         :param total_num: The total_num of this ListDiagnosisTasksResponse.
-        :type: int
+        :type total_num: int
         """
         self._total_num = total_num
 

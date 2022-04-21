@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RtcUser:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -58,7 +57,41 @@ class RtcUser:
     }
 
     def __init__(self, domain=None, app=None, room_id=None, uid=None, session=None, state=None, nick_name=None, ip=None, region=None, isp=None, device_model=None, platform=None, sdk=None, join_time=None, leave_time=None):
-        """RtcUser - a model defined in huaweicloud sdk"""
+        """RtcUser
+
+        The model defined in huaweicloud sdk
+
+        :param domain: 域名
+        :type domain: str
+        :param app: 应用标识
+        :type app: str
+        :param room_id: 房间ID
+        :type room_id: str
+        :param uid: 用户id
+        :type uid: str
+        :param session: 会话id
+        :type session: str
+        :param state: 用户状态   - FAIL： 加入失败   - ONLINE：在线   - OFFLINE：离开 
+        :type state: str
+        :param nick_name: 用户昵称
+        :type nick_name: str
+        :param ip: 用户接入IP
+        :type ip: str
+        :param region: 用户接入IP所在省份
+        :type region: str
+        :param isp: 用户接入IP所在运营商
+        :type isp: str
+        :param device_model: 用户设备型号
+        :type device_model: str
+        :param platform: 用户设备平台
+        :type platform: str
+        :param sdk: 用户sdk版本
+        :type sdk: str
+        :param join_time: 用户加入房间时间。格式为：YYYY-MM-DDThh:mm:ssZ 
+        :type join_time: str
+        :param leave_time: 用户离开房间时间。格式为：YYYY-MM-DDThh:mm:ssZ，若用户未离开，则返回 “-” 
+        :type leave_time: str
+        """
         
         
 
@@ -128,7 +161,7 @@ class RtcUser:
         域名
 
         :param domain: The domain of this RtcUser.
-        :type: str
+        :type domain: str
         """
         self._domain = domain
 
@@ -150,7 +183,7 @@ class RtcUser:
         应用标识
 
         :param app: The app of this RtcUser.
-        :type: str
+        :type app: str
         """
         self._app = app
 
@@ -172,7 +205,7 @@ class RtcUser:
         房间ID
 
         :param room_id: The room_id of this RtcUser.
-        :type: str
+        :type room_id: str
         """
         self._room_id = room_id
 
@@ -194,7 +227,7 @@ class RtcUser:
         用户id
 
         :param uid: The uid of this RtcUser.
-        :type: str
+        :type uid: str
         """
         self._uid = uid
 
@@ -216,7 +249,7 @@ class RtcUser:
         会话id
 
         :param session: The session of this RtcUser.
-        :type: str
+        :type session: str
         """
         self._session = session
 
@@ -238,7 +271,7 @@ class RtcUser:
         用户状态   - FAIL： 加入失败   - ONLINE：在线   - OFFLINE：离开 
 
         :param state: The state of this RtcUser.
-        :type: str
+        :type state: str
         """
         self._state = state
 
@@ -260,7 +293,7 @@ class RtcUser:
         用户昵称
 
         :param nick_name: The nick_name of this RtcUser.
-        :type: str
+        :type nick_name: str
         """
         self._nick_name = nick_name
 
@@ -282,7 +315,7 @@ class RtcUser:
         用户接入IP
 
         :param ip: The ip of this RtcUser.
-        :type: str
+        :type ip: str
         """
         self._ip = ip
 
@@ -304,7 +337,7 @@ class RtcUser:
         用户接入IP所在省份
 
         :param region: The region of this RtcUser.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -326,7 +359,7 @@ class RtcUser:
         用户接入IP所在运营商
 
         :param isp: The isp of this RtcUser.
-        :type: str
+        :type isp: str
         """
         self._isp = isp
 
@@ -348,7 +381,7 @@ class RtcUser:
         用户设备型号
 
         :param device_model: The device_model of this RtcUser.
-        :type: str
+        :type device_model: str
         """
         self._device_model = device_model
 
@@ -370,7 +403,7 @@ class RtcUser:
         用户设备平台
 
         :param platform: The platform of this RtcUser.
-        :type: str
+        :type platform: str
         """
         self._platform = platform
 
@@ -392,7 +425,7 @@ class RtcUser:
         用户sdk版本
 
         :param sdk: The sdk of this RtcUser.
-        :type: str
+        :type sdk: str
         """
         self._sdk = sdk
 
@@ -414,7 +447,7 @@ class RtcUser:
         用户加入房间时间。格式为：YYYY-MM-DDThh:mm:ssZ 
 
         :param join_time: The join_time of this RtcUser.
-        :type: str
+        :type join_time: str
         """
         self._join_time = join_time
 
@@ -436,7 +469,7 @@ class RtcUser:
         用户离开房间时间。格式为：YYYY-MM-DDThh:mm:ssZ，若用户未离开，则返回 “-” 
 
         :param leave_time: The leave_time of this RtcUser.
-        :type: str
+        :type leave_time: str
         """
         self._leave_time = leave_time
 

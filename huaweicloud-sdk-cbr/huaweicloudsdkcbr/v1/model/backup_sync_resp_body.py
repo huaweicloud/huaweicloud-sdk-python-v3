@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BackupSyncRespBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BackupSyncRespBody:
     }
 
     def __init__(self, backup_id=None, operation_log_id=None):
-        """BackupSyncRespBody - a model defined in huaweicloud sdk"""
+        """BackupSyncRespBody
+
+        The model defined in huaweicloud sdk
+
+        :param backup_id: 备份副本ID
+        :type backup_id: str
+        :param operation_log_id: 同步任务ID
+        :type operation_log_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class BackupSyncRespBody:
         备份副本ID
 
         :param backup_id: The backup_id of this BackupSyncRespBody.
-        :type: str
+        :type backup_id: str
         """
         self._backup_id = backup_id
 
@@ -83,7 +90,7 @@ class BackupSyncRespBody:
         同步任务ID
 
         :param operation_log_id: The operation_log_id of this BackupSyncRespBody.
-        :type: str
+        :type operation_log_id: str
         """
         self._operation_log_id = operation_log_id
 

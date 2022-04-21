@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateEventRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateEventRequestBody:
     }
 
     def __init__(self, content=None):
-        """UpdateEventRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateEventRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param content: 测试事件content。
+        :type content: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class UpdateEventRequestBody:
         测试事件content。
 
         :param content: The content of this UpdateEventRequestBody.
-        :type: str
+        :type content: str
         """
         self._content = content
 

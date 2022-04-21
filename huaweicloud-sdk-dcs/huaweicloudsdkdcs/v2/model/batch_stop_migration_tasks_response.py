@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchStopMigrationTasksResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchStopMigrationTasksResponse(SdkResponse):
     }
 
     def __init__(self, migration_tasks=None):
-        """BatchStopMigrationTasksResponse - a model defined in huaweicloud sdk"""
+        """BatchStopMigrationTasksResponse
+
+        The model defined in huaweicloud sdk
+
+        :param migration_tasks: 数据迁移任务列表。
+        :type migration_tasks: list[:class:`huaweicloudsdkdcs.v2.StopMigrationTaskResult`]
+        """
         
         super(BatchStopMigrationTasksResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class BatchStopMigrationTasksResponse(SdkResponse):
         数据迁移任务列表。
 
         :return: The migration_tasks of this BatchStopMigrationTasksResponse.
-        :rtype: list[StopMigrationTaskResult]
+        :rtype: list[:class:`huaweicloudsdkdcs.v2.StopMigrationTaskResult`]
         """
         return self._migration_tasks
 
@@ -58,7 +63,7 @@ class BatchStopMigrationTasksResponse(SdkResponse):
         数据迁移任务列表。
 
         :param migration_tasks: The migration_tasks of this BatchStopMigrationTasksResponse.
-        :type: list[StopMigrationTaskResult]
+        :type migration_tasks: list[:class:`huaweicloudsdkdcs.v2.StopMigrationTaskResult`]
         """
         self._migration_tasks = migration_tasks
 

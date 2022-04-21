@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SecurityGroupsList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class SecurityGroupsList:
     }
 
     def __init__(self, name=None, id=None):
-        """SecurityGroupsList - a model defined in huaweicloud sdk"""
+        """SecurityGroupsList
+
+        The model defined in huaweicloud sdk
+
+        :param name: 安全组名称或者UUID
+        :type name: str
+        :param id: 安全组ID。
+        :type id: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class SecurityGroupsList:
         安全组名称或者UUID
 
         :param name: The name of this SecurityGroupsList.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -85,7 +92,7 @@ class SecurityGroupsList:
         安全组ID。
 
         :param id: The id of this SecurityGroupsList.
-        :type: str
+        :type id: str
         """
         self._id = id
 

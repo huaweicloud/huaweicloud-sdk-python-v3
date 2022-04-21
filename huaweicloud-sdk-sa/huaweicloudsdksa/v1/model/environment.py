@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Environment:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class Environment:
     }
 
     def __init__(self, type=None, domain_id=None, project_id=None, region_id=None):
-        """Environment - a model defined in huaweicloud sdk"""
+        """Environment
+
+        The model defined in huaweicloud sdk
+
+        :param type: 环境供应商，HWCP/HWC/AWS/Azure/GCP等。
+        :type type: str
+        :param domain_id: 租户账号ID，用来标识事件所属租户。
+        :type domain_id: str
+        :param project_id: 租户项目ID，用来标识事件所属项目区域。
+        :type project_id: str
+        :param region_id: 数据源产品所在区域，具体取值范围查看华为云地区和终端节点定义。
+        :type region_id: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class Environment:
         环境供应商，HWCP/HWC/AWS/Azure/GCP等。
 
         :param type: The type of this Environment.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -95,7 +106,7 @@ class Environment:
         租户账号ID，用来标识事件所属租户。
 
         :param domain_id: The domain_id of this Environment.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -117,7 +128,7 @@ class Environment:
         租户项目ID，用来标识事件所属项目区域。
 
         :param project_id: The project_id of this Environment.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -139,7 +150,7 @@ class Environment:
         数据源产品所在区域，具体取值范围查看华为云地区和终端节点定义。
 
         :param region_id: The region_id of this Environment.
-        :type: str
+        :type region_id: str
         """
         self._region_id = region_id
 

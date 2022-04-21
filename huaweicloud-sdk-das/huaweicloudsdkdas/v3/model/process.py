@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Process:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class Process:
     }
 
     def __init__(self, id=None, user=None, host=None, database=None, command=None, time=None, state=None, sql=None, trx_executed_time=None):
-        """Process - a model defined in huaweicloud sdk"""
+        """Process
+
+        The model defined in huaweicloud sdk
+
+        :param id: 会话ID
+        :type id: str
+        :param user: 用户
+        :type user: str
+        :param host: 主机
+        :type host: str
+        :param database: 数据库
+        :type database: str
+        :param command: 命令
+        :type command: str
+        :param time: 会话持续时间
+        :type time: str
+        :param state: 状态
+        :type state: str
+        :param sql: SQL语句
+        :type sql: str
+        :param trx_executed_time: 事务持续时间
+        :type trx_executed_time: str
+        """
         
         
 
@@ -89,7 +110,7 @@ class Process:
         会话ID
 
         :param id: The id of this Process.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -111,7 +132,7 @@ class Process:
         用户
 
         :param user: The user of this Process.
-        :type: str
+        :type user: str
         """
         self._user = user
 
@@ -133,7 +154,7 @@ class Process:
         主机
 
         :param host: The host of this Process.
-        :type: str
+        :type host: str
         """
         self._host = host
 
@@ -155,7 +176,7 @@ class Process:
         数据库
 
         :param database: The database of this Process.
-        :type: str
+        :type database: str
         """
         self._database = database
 
@@ -177,7 +198,7 @@ class Process:
         命令
 
         :param command: The command of this Process.
-        :type: str
+        :type command: str
         """
         self._command = command
 
@@ -199,7 +220,7 @@ class Process:
         会话持续时间
 
         :param time: The time of this Process.
-        :type: str
+        :type time: str
         """
         self._time = time
 
@@ -221,7 +242,7 @@ class Process:
         状态
 
         :param state: The state of this Process.
-        :type: str
+        :type state: str
         """
         self._state = state
 
@@ -243,7 +264,7 @@ class Process:
         SQL语句
 
         :param sql: The sql of this Process.
-        :type: str
+        :type sql: str
         """
         self._sql = sql
 
@@ -265,7 +286,7 @@ class Process:
         事务持续时间
 
         :param trx_executed_time: The trx_executed_time of this Process.
-        :type: str
+        :type trx_executed_time: str
         """
         self._trx_executed_time = trx_executed_time
 

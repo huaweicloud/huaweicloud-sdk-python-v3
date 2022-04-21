@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListApiQuantitiesV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListApiQuantitiesV2Response(SdkResponse):
     }
 
     def __init__(self, instance_num=None, nums_on_release=None, nums_off_release=None):
-        """ListApiQuantitiesV2Response - a model defined in huaweicloud sdk"""
+        """ListApiQuantitiesV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param instance_num: API总个数
+        :type instance_num: int
+        :param nums_on_release: 已发布到release环境的API个数
+        :type nums_on_release: int
+        :param nums_off_release: 未发布到release环境的API个数
+        :type nums_off_release: int
+        """
         
         super(ListApiQuantitiesV2Response, self).__init__()
 
@@ -68,7 +77,7 @@ class ListApiQuantitiesV2Response(SdkResponse):
         API总个数
 
         :param instance_num: The instance_num of this ListApiQuantitiesV2Response.
-        :type: int
+        :type instance_num: int
         """
         self._instance_num = instance_num
 
@@ -90,7 +99,7 @@ class ListApiQuantitiesV2Response(SdkResponse):
         已发布到release环境的API个数
 
         :param nums_on_release: The nums_on_release of this ListApiQuantitiesV2Response.
-        :type: int
+        :type nums_on_release: int
         """
         self._nums_on_release = nums_on_release
 
@@ -112,7 +121,7 @@ class ListApiQuantitiesV2Response(SdkResponse):
         未发布到release环境的API个数
 
         :param nums_off_release: The nums_off_release of this ListApiQuantitiesV2Response.
-        :type: int
+        :type nums_off_release: int
         """
         self._nums_off_release = nums_off_release
 

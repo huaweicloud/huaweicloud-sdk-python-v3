@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListKeywordsAlarmRulesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class ListKeywordsAlarmRulesRequest:
     }
 
     def __init__(self):
-        """ListKeywordsAlarmRulesRequest - a model defined in huaweicloud sdk"""
+        """ListKeywordsAlarmRulesRequest
+
+        The model defined in huaweicloud sdk
+
+        """
         
         
         self.discriminator = None

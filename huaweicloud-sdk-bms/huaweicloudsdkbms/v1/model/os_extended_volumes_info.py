@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OsExtendedVolumesInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class OsExtendedVolumesInfo:
     }
 
     def __init__(self, id=None, delete_on_termination=None, boot_index=None, device=None):
-        """OsExtendedVolumesInfo - a model defined in huaweicloud sdk"""
+        """OsExtendedVolumesInfo
+
+        The model defined in huaweicloud sdk
+
+        :param id: 磁盘ID，格式为UUID
+        :type id: str
+        :param delete_on_termination: 删裸金属服务器时是否一并删除该磁盘。true：是false：否
+        :type delete_on_termination: str
+        :param boot_index: 启动标识，“0”代表启动盘，“-1“代表非启动盘
+        :type boot_index: str
+        :param device: 磁盘设备名称，例如“/dev/sdb”。
+        :type device: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class OsExtendedVolumesInfo:
         磁盘ID，格式为UUID
 
         :param id: The id of this OsExtendedVolumesInfo.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -95,7 +106,7 @@ class OsExtendedVolumesInfo:
         删裸金属服务器时是否一并删除该磁盘。true：是false：否
 
         :param delete_on_termination: The delete_on_termination of this OsExtendedVolumesInfo.
-        :type: str
+        :type delete_on_termination: str
         """
         self._delete_on_termination = delete_on_termination
 
@@ -117,7 +128,7 @@ class OsExtendedVolumesInfo:
         启动标识，“0”代表启动盘，“-1“代表非启动盘
 
         :param boot_index: The boot_index of this OsExtendedVolumesInfo.
-        :type: str
+        :type boot_index: str
         """
         self._boot_index = boot_index
 
@@ -139,7 +150,7 @@ class OsExtendedVolumesInfo:
         磁盘设备名称，例如“/dev/sdb”。
 
         :param device: The device of this OsExtendedVolumesInfo.
-        :type: str
+        :type device: str
         """
         self._device = device
 

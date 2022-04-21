@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteCertificateAuthorityRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteCertificateAuthorityRequest:
     }
 
     def __init__(self, ca_id=None, pending_days=None):
-        """DeleteCertificateAuthorityRequest - a model defined in huaweicloud sdk"""
+        """DeleteCertificateAuthorityRequest
+
+        The model defined in huaweicloud sdk
+
+        :param ca_id: 所要计划删除的CA证书ID。
+        :type ca_id: str
+        :param pending_days: 延迟删除时间，单位为”天“。
+        :type pending_days: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class DeleteCertificateAuthorityRequest:
         所要计划删除的CA证书ID。
 
         :param ca_id: The ca_id of this DeleteCertificateAuthorityRequest.
-        :type: str
+        :type ca_id: str
         """
         self._ca_id = ca_id
 
@@ -83,7 +90,7 @@ class DeleteCertificateAuthorityRequest:
         延迟删除时间，单位为”天“。
 
         :param pending_days: The pending_days of this DeleteCertificateAuthorityRequest.
-        :type: str
+        :type pending_days: str
         """
         self._pending_days = pending_days
 

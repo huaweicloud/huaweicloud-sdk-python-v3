@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Regular:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class Regular:
     }
 
     def __init__(self, l2_regularization=None, regular_loss_compute_mode=None, embed_l2_regularization=None, wide_l2_regularization=None, structure_l2_regularization=None):
-        """Regular - a model defined in huaweicloud sdk"""
+        """Regular
+
+        The model defined in huaweicloud sdk
+
+        :param l2_regularization: L2正则项系数。
+        :type l2_regularization: float
+        :param regular_loss_compute_mode: 正则损失计算方式。
+        :type regular_loss_compute_mode: str
+        :param embed_l2_regularization: 隐向量层L2正则化系数。
+        :type embed_l2_regularization: float
+        :param wide_l2_regularization: wide部分L2正则化系数。
+        :type wide_l2_regularization: float
+        :param structure_l2_regularization: 结构化部分L2正则化系数。
+        :type structure_l2_regularization: float
+        """
         
         
 
@@ -78,7 +91,7 @@ class Regular:
         L2正则项系数。
 
         :param l2_regularization: The l2_regularization of this Regular.
-        :type: float
+        :type l2_regularization: float
         """
         self._l2_regularization = l2_regularization
 
@@ -100,7 +113,7 @@ class Regular:
         正则损失计算方式。
 
         :param regular_loss_compute_mode: The regular_loss_compute_mode of this Regular.
-        :type: str
+        :type regular_loss_compute_mode: str
         """
         self._regular_loss_compute_mode = regular_loss_compute_mode
 
@@ -122,7 +135,7 @@ class Regular:
         隐向量层L2正则化系数。
 
         :param embed_l2_regularization: The embed_l2_regularization of this Regular.
-        :type: float
+        :type embed_l2_regularization: float
         """
         self._embed_l2_regularization = embed_l2_regularization
 
@@ -144,7 +157,7 @@ class Regular:
         wide部分L2正则化系数。
 
         :param wide_l2_regularization: The wide_l2_regularization of this Regular.
-        :type: float
+        :type wide_l2_regularization: float
         """
         self._wide_l2_regularization = wide_l2_regularization
 
@@ -166,7 +179,7 @@ class Regular:
         结构化部分L2正则化系数。
 
         :param structure_l2_regularization: The structure_l2_regularization of this Regular.
-        :type: float
+        :type structure_l2_regularization: float
         """
         self._structure_l2_regularization = structure_l2_regularization
 

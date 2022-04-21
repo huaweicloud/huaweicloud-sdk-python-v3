@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneUpdateProjectResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class KeystoneUpdateProjectResult:
     }
 
     def __init__(self, is_domain=None, description=None, extra=None, links=None, enabled=None, id=None, parent_id=None, domain_id=None, name=None):
-        """KeystoneUpdateProjectResult - a model defined in huaweicloud sdk"""
+        """KeystoneUpdateProjectResult
+
+        The model defined in huaweicloud sdk
+
+        :param is_domain: false.
+        :type is_domain: bool
+        :param description: 项目描述信息。
+        :type description: str
+        :param extra: 项目的其他信息。
+        :type extra: object
+        :param links: 
+        :type links: :class:`huaweicloudsdkiam.v3.LinksSelf`
+        :param enabled: 项目是否可用。
+        :type enabled: bool
+        :param id: 项目ID。
+        :type id: str
+        :param parent_id: 区域对应的项目ID，例如区域“华北-北京一”区域对应的项目ID为：04dd42abe48026ad2fa3c01ad7fa.....。
+        :type parent_id: str
+        :param domain_id: 项目所属账号ID。
+        :type domain_id: str
+        :param name: 项目名称。
+        :type name: str
+        """
         
         
 
@@ -90,7 +111,7 @@ class KeystoneUpdateProjectResult:
         false.
 
         :param is_domain: The is_domain of this KeystoneUpdateProjectResult.
-        :type: bool
+        :type is_domain: bool
         """
         self._is_domain = is_domain
 
@@ -112,7 +133,7 @@ class KeystoneUpdateProjectResult:
         项目描述信息。
 
         :param description: The description of this KeystoneUpdateProjectResult.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -134,7 +155,7 @@ class KeystoneUpdateProjectResult:
         项目的其他信息。
 
         :param extra: The extra of this KeystoneUpdateProjectResult.
-        :type: object
+        :type extra: object
         """
         self._extra = extra
 
@@ -144,7 +165,7 @@ class KeystoneUpdateProjectResult:
 
 
         :return: The links of this KeystoneUpdateProjectResult.
-        :rtype: LinksSelf
+        :rtype: :class:`huaweicloudsdkiam.v3.LinksSelf`
         """
         return self._links
 
@@ -154,7 +175,7 @@ class KeystoneUpdateProjectResult:
 
 
         :param links: The links of this KeystoneUpdateProjectResult.
-        :type: LinksSelf
+        :type links: :class:`huaweicloudsdkiam.v3.LinksSelf`
         """
         self._links = links
 
@@ -176,7 +197,7 @@ class KeystoneUpdateProjectResult:
         项目是否可用。
 
         :param enabled: The enabled of this KeystoneUpdateProjectResult.
-        :type: bool
+        :type enabled: bool
         """
         self._enabled = enabled
 
@@ -198,7 +219,7 @@ class KeystoneUpdateProjectResult:
         项目ID。
 
         :param id: The id of this KeystoneUpdateProjectResult.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -220,7 +241,7 @@ class KeystoneUpdateProjectResult:
         区域对应的项目ID，例如区域“华北-北京一”区域对应的项目ID为：04dd42abe48026ad2fa3c01ad7fa.....。
 
         :param parent_id: The parent_id of this KeystoneUpdateProjectResult.
-        :type: str
+        :type parent_id: str
         """
         self._parent_id = parent_id
 
@@ -242,7 +263,7 @@ class KeystoneUpdateProjectResult:
         项目所属账号ID。
 
         :param domain_id: The domain_id of this KeystoneUpdateProjectResult.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -264,7 +285,7 @@ class KeystoneUpdateProjectResult:
         项目名称。
 
         :param name: The name of this KeystoneUpdateProjectResult.
-        :type: str
+        :type name: str
         """
         self._name = name
 

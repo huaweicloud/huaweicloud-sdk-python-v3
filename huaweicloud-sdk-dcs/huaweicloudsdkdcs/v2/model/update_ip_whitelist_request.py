@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateIpWhitelistRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateIpWhitelistRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """UpdateIpWhitelistRequest - a model defined in huaweicloud sdk"""
+        """UpdateIpWhitelistRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param body: Body of the UpdateIpWhitelistRequest
+        :type body: :class:`huaweicloudsdkdcs.v2.ModifyIpWhitelistBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateIpWhitelistRequest:
         实例ID。
 
         :param instance_id: The instance_id of this UpdateIpWhitelistRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -72,7 +79,7 @@ class UpdateIpWhitelistRequest:
 
 
         :return: The body of this UpdateIpWhitelistRequest.
-        :rtype: ModifyIpWhitelistBody
+        :rtype: :class:`huaweicloudsdkdcs.v2.ModifyIpWhitelistBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateIpWhitelistRequest:
 
 
         :param body: The body of this UpdateIpWhitelistRequest.
-        :type: ModifyIpWhitelistBody
+        :type body: :class:`huaweicloudsdkdcs.v2.ModifyIpWhitelistBody`
         """
         self._body = body
 

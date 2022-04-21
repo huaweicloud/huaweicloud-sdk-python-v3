@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TaskPolicy:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class TaskPolicy:
     }
 
     def __init__(self, schedule_time=None, retry_count=None, retry_interval=None):
-        """TaskPolicy - a model defined in huaweicloud sdk"""
+        """TaskPolicy
+
+        The model defined in huaweicloud sdk
+
+        :param schedule_time: **参数说明**：批量任务指定执行时间。 **取值范围**：7天内，不传入此参数表示立即执行，格式：yyyyMMdd&#39;T&#39;HHmmss&#39;Z&#39;，如20151212T121212Z。
+        :type schedule_time: str
+        :param retry_count: **参数说明**：批量任务子任务自动重试次数。 **取值范围**：如果传入retry_interval参数，则需传入该参数，最大支持重试5次。
+        :type retry_count: int
+        :param retry_interval: **参数说明**：批量任务子任务失败后，自动重试时间间隔，单位：分钟。 **取值范围**：最大1440(24小时)，不传入此参数表示不重试，如果传入retry_count参数则需要传入该参数。
+        :type retry_interval: int
+        """
         
         
 
@@ -68,7 +77,7 @@ class TaskPolicy:
         **参数说明**：批量任务指定执行时间。 **取值范围**：7天内，不传入此参数表示立即执行，格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
         :param schedule_time: The schedule_time of this TaskPolicy.
-        :type: str
+        :type schedule_time: str
         """
         self._schedule_time = schedule_time
 
@@ -90,7 +99,7 @@ class TaskPolicy:
         **参数说明**：批量任务子任务自动重试次数。 **取值范围**：如果传入retry_interval参数，则需传入该参数，最大支持重试5次。
 
         :param retry_count: The retry_count of this TaskPolicy.
-        :type: int
+        :type retry_count: int
         """
         self._retry_count = retry_count
 
@@ -112,7 +121,7 @@ class TaskPolicy:
         **参数说明**：批量任务子任务失败后，自动重试时间间隔，单位：分钟。 **取值范围**：最大1440(24小时)，不传入此参数表示不重试，如果传入retry_count参数则需要传入该参数。
 
         :param retry_interval: The retry_interval of this TaskPolicy.
-        :type: int
+        :type retry_interval: int
         """
         self._retry_interval = retry_interval
 

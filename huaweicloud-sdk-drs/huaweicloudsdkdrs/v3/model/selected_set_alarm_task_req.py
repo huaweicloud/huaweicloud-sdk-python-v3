@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SelectedSetAlarmTaskReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class SelectedSetAlarmTaskReq:
     }
 
     def __init__(self, job_id=None, status=None, engine_type=None):
-        """SelectedSetAlarmTaskReq - a model defined in huaweicloud sdk"""
+        """SelectedSetAlarmTaskReq
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 任务ID
+        :type job_id: str
+        :param status: 任务状态
+        :type status: str
+        :param engine_type: 引擎类型
+        :type engine_type: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class SelectedSetAlarmTaskReq:
         任务ID
 
         :param job_id: The job_id of this SelectedSetAlarmTaskReq.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -87,7 +96,7 @@ class SelectedSetAlarmTaskReq:
         任务状态
 
         :param status: The status of this SelectedSetAlarmTaskReq.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -109,7 +118,7 @@ class SelectedSetAlarmTaskReq:
         引擎类型
 
         :param engine_type: The engine_type of this SelectedSetAlarmTaskReq.
-        :type: str
+        :type engine_type: str
         """
         self._engine_type = engine_type
 

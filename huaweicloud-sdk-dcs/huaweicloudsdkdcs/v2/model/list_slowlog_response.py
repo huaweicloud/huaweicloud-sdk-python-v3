@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSlowlogResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListSlowlogResponse(SdkResponse):
     }
 
     def __init__(self, count=None, slowlogs=None):
-        """ListSlowlogResponse - a model defined in huaweicloud sdk"""
+        """ListSlowlogResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 总数
+        :type count: int
+        :param slowlogs: 慢日志列表
+        :type slowlogs: list[:class:`huaweicloudsdkdcs.v2.SlowlogItem`]
+        """
         
         super(ListSlowlogResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListSlowlogResponse(SdkResponse):
         总数
 
         :param count: The count of this ListSlowlogResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -74,7 +81,7 @@ class ListSlowlogResponse(SdkResponse):
         慢日志列表
 
         :return: The slowlogs of this ListSlowlogResponse.
-        :rtype: list[SlowlogItem]
+        :rtype: list[:class:`huaweicloudsdkdcs.v2.SlowlogItem`]
         """
         return self._slowlogs
 
@@ -85,7 +92,7 @@ class ListSlowlogResponse(SdkResponse):
         慢日志列表
 
         :param slowlogs: The slowlogs of this ListSlowlogResponse.
-        :type: list[SlowlogItem]
+        :type slowlogs: list[:class:`huaweicloudsdkdcs.v2.SlowlogItem`]
         """
         self._slowlogs = slowlogs
 

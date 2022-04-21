@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BackupSync:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class BackupSync:
     }
 
     def __init__(self, backup_id=None, backup_name=None, bucket_name=None, image_path=None, resource_id=None, resource_name=None, resource_type=None, created_at=None):
-        """BackupSync - a model defined in huaweicloud sdk"""
+        """BackupSync
+
+        The model defined in huaweicloud sdk
+
+        :param backup_id: 备份副本ID
+        :type backup_id: str
+        :param backup_name: 备份名称
+        :type backup_name: str
+        :param bucket_name: 桶名
+        :type bucket_name: str
+        :param image_path: 备份链在存储单元上的路径
+        :type image_path: str
+        :param resource_id: 备份对象ID
+        :type resource_id: str
+        :param resource_name: 备份对象名称
+        :type resource_name: str
+        :param resource_type: 备份对象资源类型
+        :type resource_type: str
+        :param created_at: 备份时间戳，例如1548898428
+        :type created_at: int
+        """
         
         
 
@@ -85,7 +104,7 @@ class BackupSync:
         备份副本ID
 
         :param backup_id: The backup_id of this BackupSync.
-        :type: str
+        :type backup_id: str
         """
         self._backup_id = backup_id
 
@@ -107,7 +126,7 @@ class BackupSync:
         备份名称
 
         :param backup_name: The backup_name of this BackupSync.
-        :type: str
+        :type backup_name: str
         """
         self._backup_name = backup_name
 
@@ -129,7 +148,7 @@ class BackupSync:
         桶名
 
         :param bucket_name: The bucket_name of this BackupSync.
-        :type: str
+        :type bucket_name: str
         """
         self._bucket_name = bucket_name
 
@@ -151,7 +170,7 @@ class BackupSync:
         备份链在存储单元上的路径
 
         :param image_path: The image_path of this BackupSync.
-        :type: str
+        :type image_path: str
         """
         self._image_path = image_path
 
@@ -173,7 +192,7 @@ class BackupSync:
         备份对象ID
 
         :param resource_id: The resource_id of this BackupSync.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -195,7 +214,7 @@ class BackupSync:
         备份对象名称
 
         :param resource_name: The resource_name of this BackupSync.
-        :type: str
+        :type resource_name: str
         """
         self._resource_name = resource_name
 
@@ -217,7 +236,7 @@ class BackupSync:
         备份对象资源类型
 
         :param resource_type: The resource_type of this BackupSync.
-        :type: str
+        :type resource_type: str
         """
         self._resource_type = resource_type
 
@@ -239,7 +258,7 @@ class BackupSync:
         备份时间戳，例如1548898428
 
         :param created_at: The created_at of this BackupSync.
-        :type: int
+        :type created_at: int
         """
         self._created_at = created_at
 

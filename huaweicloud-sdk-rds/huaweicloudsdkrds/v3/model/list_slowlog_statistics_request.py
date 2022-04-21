@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSlowlogStatisticsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ListSlowlogStatisticsRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, cur_page=None, per_page=None, start_date=None, end_date=None, type=None, sort=None):
-        """ListSlowlogStatisticsRequest - a model defined in huaweicloud sdk"""
+        """ListSlowlogStatisticsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言
+        :type x_language: str
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param cur_page: 当前页号
+        :type cur_page: int
+        :param per_page: 每页多少条记录，取值范围0~100
+        :type per_page: int
+        :param start_date: 开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        :type start_date: str
+        :param end_date: 结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        :type end_date: str
+        :param type: 语句类型，ALL表示查询所有语句类型，也可指定日志类型 - INSERT - UPDATE - SELECT - DELETE - CREATE - ALL
+        :type type: str
+        :param sort: 取值范围：\&quot;executeTime\&quot;,表示按执行时间降序排序，不传或者传其他表示按执行次数降序排序
+        :type sort: str
+        """
         
         
 
@@ -87,7 +106,7 @@ class ListSlowlogStatisticsRequest:
         语言
 
         :param x_language: The x_language of this ListSlowlogStatisticsRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -109,7 +128,7 @@ class ListSlowlogStatisticsRequest:
         实例ID。
 
         :param instance_id: The instance_id of this ListSlowlogStatisticsRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -131,7 +150,7 @@ class ListSlowlogStatisticsRequest:
         当前页号
 
         :param cur_page: The cur_page of this ListSlowlogStatisticsRequest.
-        :type: int
+        :type cur_page: int
         """
         self._cur_page = cur_page
 
@@ -153,7 +172,7 @@ class ListSlowlogStatisticsRequest:
         每页多少条记录，取值范围0~100
 
         :param per_page: The per_page of this ListSlowlogStatisticsRequest.
-        :type: int
+        :type per_page: int
         """
         self._per_page = per_page
 
@@ -175,7 +194,7 @@ class ListSlowlogStatisticsRequest:
         开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
         :param start_date: The start_date of this ListSlowlogStatisticsRequest.
-        :type: str
+        :type start_date: str
         """
         self._start_date = start_date
 
@@ -197,7 +216,7 @@ class ListSlowlogStatisticsRequest:
         结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
         :param end_date: The end_date of this ListSlowlogStatisticsRequest.
-        :type: str
+        :type end_date: str
         """
         self._end_date = end_date
 
@@ -219,7 +238,7 @@ class ListSlowlogStatisticsRequest:
         语句类型，ALL表示查询所有语句类型，也可指定日志类型 - INSERT - UPDATE - SELECT - DELETE - CREATE - ALL
 
         :param type: The type of this ListSlowlogStatisticsRequest.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -241,7 +260,7 @@ class ListSlowlogStatisticsRequest:
         取值范围：\"executeTime\",表示按执行时间降序排序，不传或者传其他表示按执行次数降序排序
 
         :param sort: The sort of this ListSlowlogStatisticsRequest.
-        :type: str
+        :type sort: str
         """
         self._sort = sort
 

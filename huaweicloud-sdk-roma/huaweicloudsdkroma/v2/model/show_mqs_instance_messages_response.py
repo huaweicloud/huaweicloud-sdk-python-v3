@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowMqsInstanceMessagesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowMqsInstanceMessagesResponse(SdkResponse):
     }
 
     def __init__(self, messages=None, total=None, size=None):
-        """ShowMqsInstanceMessagesResponse - a model defined in huaweicloud sdk"""
+        """ShowMqsInstanceMessagesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param messages: 消息列表。
+        :type messages: list[:class:`huaweicloudsdkroma.v2.ShowMqsInstanceMessagesRespMessages`]
+        :param total: 消息总数。
+        :type total: float
+        :param size: 返回总条数。
+        :type size: float
+        """
         
         super(ShowMqsInstanceMessagesResponse, self).__init__()
 
@@ -57,7 +66,7 @@ class ShowMqsInstanceMessagesResponse(SdkResponse):
         消息列表。
 
         :return: The messages of this ShowMqsInstanceMessagesResponse.
-        :rtype: list[ShowMqsInstanceMessagesRespMessages]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.ShowMqsInstanceMessagesRespMessages`]
         """
         return self._messages
 
@@ -68,7 +77,7 @@ class ShowMqsInstanceMessagesResponse(SdkResponse):
         消息列表。
 
         :param messages: The messages of this ShowMqsInstanceMessagesResponse.
-        :type: list[ShowMqsInstanceMessagesRespMessages]
+        :type messages: list[:class:`huaweicloudsdkroma.v2.ShowMqsInstanceMessagesRespMessages`]
         """
         self._messages = messages
 
@@ -90,7 +99,7 @@ class ShowMqsInstanceMessagesResponse(SdkResponse):
         消息总数。
 
         :param total: The total of this ShowMqsInstanceMessagesResponse.
-        :type: float
+        :type total: float
         """
         self._total = total
 
@@ -112,7 +121,7 @@ class ShowMqsInstanceMessagesResponse(SdkResponse):
         返回总条数。
 
         :param size: The size of this ShowMqsInstanceMessagesResponse.
-        :type: float
+        :type size: float
         """
         self._size = size
 

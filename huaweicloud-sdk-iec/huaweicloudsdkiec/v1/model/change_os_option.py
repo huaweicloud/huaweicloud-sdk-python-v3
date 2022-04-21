@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ChangeOsOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ChangeOsOption:
     }
 
     def __init__(self, image_id=None, metadata=None, key_name=None):
-        """ChangeOsOption - a model defined in huaweicloud sdk"""
+        """ChangeOsOption
+
+        The model defined in huaweicloud sdk
+
+        :param image_id: 切换系统所使用的新镜像的ID。
+        :type image_id: str
+        :param metadata: 
+        :type metadata: :class:`huaweicloudsdkiec.v1.ChangeOsMetadata`
+        :param key_name: 密钥对名称。 如果需要使用SSH密钥方式登录边缘实例，请指定已创建密钥的名称。
+        :type key_name: str
+        """
         
         
 
@@ -67,7 +76,7 @@ class ChangeOsOption:
         切换系统所使用的新镜像的ID。
 
         :param image_id: The image_id of this ChangeOsOption.
-        :type: str
+        :type image_id: str
         """
         self._image_id = image_id
 
@@ -77,7 +86,7 @@ class ChangeOsOption:
 
 
         :return: The metadata of this ChangeOsOption.
-        :rtype: ChangeOsMetadata
+        :rtype: :class:`huaweicloudsdkiec.v1.ChangeOsMetadata`
         """
         return self._metadata
 
@@ -87,7 +96,7 @@ class ChangeOsOption:
 
 
         :param metadata: The metadata of this ChangeOsOption.
-        :type: ChangeOsMetadata
+        :type metadata: :class:`huaweicloudsdkiec.v1.ChangeOsMetadata`
         """
         self._metadata = metadata
 
@@ -109,7 +118,7 @@ class ChangeOsOption:
         密钥对名称。 如果需要使用SSH密钥方式登录边缘实例，请指定已创建密钥的名称。
 
         :param key_name: The key_name of this ChangeOsOption.
-        :type: str
+        :type key_name: str
         """
         self._key_name = key_name
 

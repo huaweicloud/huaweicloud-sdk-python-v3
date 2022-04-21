@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LdApiScriptCreate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class LdApiScriptCreate:
     }
 
     def __init__(self, api_type=None, scripts=None):
-        """LdApiScriptCreate - a model defined in huaweicloud sdk"""
+        """LdApiScriptCreate
+
+        The model defined in huaweicloud sdk
+
+        :param api_type: API类型 - data：数据API - function：函数API 
+        :type api_type: str
+        :param scripts: API脚本信息列表
+        :type scripts: list[:class:`huaweicloudsdkroma.v2.LdApiScriptBase`]
+        """
         
         
 
@@ -63,7 +70,7 @@ class LdApiScriptCreate:
         API类型 - data：数据API - function：函数API 
 
         :param api_type: The api_type of this LdApiScriptCreate.
-        :type: str
+        :type api_type: str
         """
         self._api_type = api_type
 
@@ -74,7 +81,7 @@ class LdApiScriptCreate:
         API脚本信息列表
 
         :return: The scripts of this LdApiScriptCreate.
-        :rtype: list[LdApiScriptBase]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.LdApiScriptBase`]
         """
         return self._scripts
 
@@ -85,7 +92,7 @@ class LdApiScriptCreate:
         API脚本信息列表
 
         :param scripts: The scripts of this LdApiScriptCreate.
-        :type: list[LdApiScriptBase]
+        :type scripts: list[:class:`huaweicloudsdkroma.v2.LdApiScriptBase`]
         """
         self._scripts = scripts
 

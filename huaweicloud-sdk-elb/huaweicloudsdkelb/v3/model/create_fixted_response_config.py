@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateFixtedResponseConfig:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateFixtedResponseConfig:
     }
 
     def __init__(self, status_code=None, content_type=None, message_body=None):
-        """CreateFixtedResponseConfig - a model defined in huaweicloud sdk"""
+        """CreateFixtedResponseConfig
+
+        The model defined in huaweicloud sdk
+
+        :param status_code: 返回码。支持200~299,400~499,500~599。
+        :type status_code: str
+        :param content_type: 返回body的格式。  取值范围： - text/plain - text/css - text/html - application/javascript - application/json
+        :type content_type: str
+        :param message_body: 返回消息内容。
+        :type message_body: str
+        """
         
         
 
@@ -67,7 +76,7 @@ class CreateFixtedResponseConfig:
         返回码。支持200~299,400~499,500~599。
 
         :param status_code: The status_code of this CreateFixtedResponseConfig.
-        :type: str
+        :type status_code: str
         """
         self._status_code = status_code
 
@@ -89,7 +98,7 @@ class CreateFixtedResponseConfig:
         返回body的格式。  取值范围： - text/plain - text/css - text/html - application/javascript - application/json
 
         :param content_type: The content_type of this CreateFixtedResponseConfig.
-        :type: str
+        :type content_type: str
         """
         self._content_type = content_type
 
@@ -111,7 +120,7 @@ class CreateFixtedResponseConfig:
         返回消息内容。
 
         :param message_body: The message_body of this CreateFixtedResponseConfig.
-        :type: str
+        :type message_body: str
         """
         self._message_body = message_body
 

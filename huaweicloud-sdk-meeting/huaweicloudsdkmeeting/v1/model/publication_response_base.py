@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PublicationResponseBase:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class PublicationResponseBase:
     }
 
     def __init__(self, id=None, last_updated_by=None, create_time=None, update_time=None, publish_name=None, publish_scope=None, start_time=None, end_time=None, publish_status=None):
-        """PublicationResponseBase - a model defined in huaweicloud sdk"""
+        """PublicationResponseBase
+
+        The model defined in huaweicloud sdk
+
+        :param id: 发布ID
+        :type id: str
+        :param last_updated_by: 更新者
+        :type last_updated_by: str
+        :param create_time: 创建时间
+        :type create_time: int
+        :param update_time: 更新时间
+        :type update_time: int
+        :param publish_name: 发布名称
+        :type publish_name: str
+        :param publish_scope: 发布范围
+        :type publish_scope: str
+        :param start_time: 开始时间
+        :type start_time: int
+        :param end_time: 结束时间
+        :type end_time: int
+        :param publish_status: 根据当前时间确定发布状态 - NOT_ONLINE-未上线 - PUBLISHING-发布中 - ALREADY_OFFLINE-已下线
+        :type publish_status: str
+        """
         
         
 
@@ -98,7 +119,7 @@ class PublicationResponseBase:
         发布ID
 
         :param id: The id of this PublicationResponseBase.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -120,7 +141,7 @@ class PublicationResponseBase:
         更新者
 
         :param last_updated_by: The last_updated_by of this PublicationResponseBase.
-        :type: str
+        :type last_updated_by: str
         """
         self._last_updated_by = last_updated_by
 
@@ -142,7 +163,7 @@ class PublicationResponseBase:
         创建时间
 
         :param create_time: The create_time of this PublicationResponseBase.
-        :type: int
+        :type create_time: int
         """
         self._create_time = create_time
 
@@ -164,7 +185,7 @@ class PublicationResponseBase:
         更新时间
 
         :param update_time: The update_time of this PublicationResponseBase.
-        :type: int
+        :type update_time: int
         """
         self._update_time = update_time
 
@@ -186,7 +207,7 @@ class PublicationResponseBase:
         发布名称
 
         :param publish_name: The publish_name of this PublicationResponseBase.
-        :type: str
+        :type publish_name: str
         """
         self._publish_name = publish_name
 
@@ -208,7 +229,7 @@ class PublicationResponseBase:
         发布范围
 
         :param publish_scope: The publish_scope of this PublicationResponseBase.
-        :type: str
+        :type publish_scope: str
         """
         self._publish_scope = publish_scope
 
@@ -230,7 +251,7 @@ class PublicationResponseBase:
         开始时间
 
         :param start_time: The start_time of this PublicationResponseBase.
-        :type: int
+        :type start_time: int
         """
         self._start_time = start_time
 
@@ -252,7 +273,7 @@ class PublicationResponseBase:
         结束时间
 
         :param end_time: The end_time of this PublicationResponseBase.
-        :type: int
+        :type end_time: int
         """
         self._end_time = end_time
 
@@ -274,7 +295,7 @@ class PublicationResponseBase:
         根据当前时间确定发布状态 - NOT_ONLINE-未上线 - PUBLISHING-发布中 - ALREADY_OFFLINE-已下线
 
         :param publish_status: The publish_status of this PublicationResponseBase.
-        :type: str
+        :type publish_status: str
         """
         self._publish_status = publish_status
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListExecuteJobRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListExecuteJobRequest:
     }
 
     def __init__(self, page_size=None, current_page=None, job_name=None, cluster_id=None, state=None, id=None):
-        """ListExecuteJobRequest - a model defined in huaweicloud sdk"""
+        """ListExecuteJobRequest
+
+        The model defined in huaweicloud sdk
+
+        :param page_size: 分页查询每页返回的最大作业数量。  取值范围：[1～100]
+        :type page_size: str
+        :param current_page: 当前查询页码。
+        :type current_page: str
+        :param job_name: 作业名称。
+        :type job_name: str
+        :param cluster_id: 集群编号。
+        :type cluster_id: str
+        :param state: 作业状态编码：  - -1：Terminated表示已终止的作业状态 - 2：Running表示运行中的作业状态 - 3：Completed表示已完成的作业状态 - 4：Abnormal表示异常的作业状态
+        :type state: str
+        :param id: 作业执行对象的编号。
+        :type id: str
+        """
         
         
 
@@ -82,7 +97,7 @@ class ListExecuteJobRequest:
         分页查询每页返回的最大作业数量。  取值范围：[1～100]
 
         :param page_size: The page_size of this ListExecuteJobRequest.
-        :type: str
+        :type page_size: str
         """
         self._page_size = page_size
 
@@ -104,7 +119,7 @@ class ListExecuteJobRequest:
         当前查询页码。
 
         :param current_page: The current_page of this ListExecuteJobRequest.
-        :type: str
+        :type current_page: str
         """
         self._current_page = current_page
 
@@ -126,7 +141,7 @@ class ListExecuteJobRequest:
         作业名称。
 
         :param job_name: The job_name of this ListExecuteJobRequest.
-        :type: str
+        :type job_name: str
         """
         self._job_name = job_name
 
@@ -148,7 +163,7 @@ class ListExecuteJobRequest:
         集群编号。
 
         :param cluster_id: The cluster_id of this ListExecuteJobRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -170,7 +185,7 @@ class ListExecuteJobRequest:
         作业状态编码：  - -1：Terminated表示已终止的作业状态 - 2：Running表示运行中的作业状态 - 3：Completed表示已完成的作业状态 - 4：Abnormal表示异常的作业状态
 
         :param state: The state of this ListExecuteJobRequest.
-        :type: str
+        :type state: str
         """
         self._state = state
 
@@ -192,7 +207,7 @@ class ListExecuteJobRequest:
         作业执行对象的编号。
 
         :param id: The id of this ListExecuteJobRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 

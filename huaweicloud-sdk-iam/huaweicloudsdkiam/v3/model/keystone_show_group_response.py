@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneShowGroupResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class KeystoneShowGroupResponse(SdkResponse):
     }
 
     def __init__(self, group=None):
-        """KeystoneShowGroupResponse - a model defined in huaweicloud sdk"""
+        """KeystoneShowGroupResponse
+
+        The model defined in huaweicloud sdk
+
+        :param group: 
+        :type group: :class:`huaweicloudsdkiam.v3.KeystoneGroupResult`
+        """
         
         super(KeystoneShowGroupResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class KeystoneShowGroupResponse(SdkResponse):
 
 
         :return: The group of this KeystoneShowGroupResponse.
-        :rtype: KeystoneGroupResult
+        :rtype: :class:`huaweicloudsdkiam.v3.KeystoneGroupResult`
         """
         return self._group
 
@@ -56,7 +61,7 @@ class KeystoneShowGroupResponse(SdkResponse):
 
 
         :param group: The group of this KeystoneShowGroupResponse.
-        :type: KeystoneGroupResult
+        :type group: :class:`huaweicloudsdkiam.v3.KeystoneGroupResult`
         """
         self._group = group
 

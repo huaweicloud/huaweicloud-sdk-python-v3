@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowClusterDetailResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -98,7 +97,81 @@ class ShowClusterDetailResponse(SdkResponse):
     }
 
     def __init__(self, public_endpoint=None, instances=None, security_group_id=None, subnet_id=None, vpc_id=None, customer_config=None, datastore=None, is_auto_off=None, public_endpoint_domain_name=None, bak_expected_start_time=None, bak_keep_day=None, maintain_window=None, recent_event=None, flavor_name=None, az_name=None, endpoint_domain_name=None, public_endpoint_status=None, is_schedule_boot_off=None, namespace=None, eip_id=None, failed_reasons=None, dbuser=None, links=None, cluster_mode=None, task=None, created=None, status_detail=None, config_status=None, action_progress=None, name=None, id=None, is_frozen=None, actions=None, updated=None, status=None):
-        """ShowClusterDetailResponse - a model defined in huaweicloud sdk"""
+        """ShowClusterDetailResponse
+
+        The model defined in huaweicloud sdk
+
+        :param public_endpoint: 集群绑定的EIP
+        :type public_endpoint: str
+        :param instances: 集群的节点信息，请参见instances参数说明
+        :type instances: list[:class:`huaweicloudsdkcdm.v1.ClusterDetailInstance`]
+        :param security_group_id: 安全组id
+        :type security_group_id: str
+        :param subnet_id: 子网id
+        :type subnet_id: str
+        :param vpc_id: 虚拟私有云ID
+        :type vpc_id: str
+        :param customer_config: 
+        :type customer_config: :class:`huaweicloudsdkcdm.v1.CustomerConfig`
+        :param datastore: 
+        :type datastore: :class:`huaweicloudsdkcdm.v1.Datastore`
+        :param is_auto_off: 自动关机
+        :type is_auto_off: bool
+        :param public_endpoint_domain_name: 集群绑定的EIP域名
+        :type public_endpoint_domain_name: str
+        :param bak_expected_start_time: 开始时间
+        :type bak_expected_start_time: str
+        :param bak_keep_day: 保留时间
+        :type bak_keep_day: int
+        :param maintain_window: 
+        :type maintain_window: :class:`huaweicloudsdkcdm.v1.CdmQueryClusterDetailsRepsonseMaintainWindow`
+        :param recent_event: 事件数
+        :type recent_event: int
+        :param flavor_name: 规格名称
+        :type flavor_name: str
+        :param az_name: az名称
+        :type az_name: str
+        :param endpoint_domain_name: 对端域名
+        :type endpoint_domain_name: str
+        :param public_endpoint_status: 
+        :type public_endpoint_status: :class:`huaweicloudsdkcdm.v1.CdmQueryClusterDetailsRepsonsePublicEndpointStatus`
+        :param is_schedule_boot_off: 选择是否启用定时开关机功能。定时开关机功能和自动关机功能不可同时开启
+        :type is_schedule_boot_off: bool
+        :param namespace: 命名空间
+        :type namespace: str
+        :param eip_id: 弹性ip id
+        :type eip_id: str
+        :param failed_reasons: 
+        :type failed_reasons: :class:`huaweicloudsdkcdm.v1.FailedReasons`
+        :param dbuser: 数据库用户
+        :type dbuser: str
+        :param links: 
+        :type links: list[:class:`huaweicloudsdkcdm.v1.ClusterLinks`]
+        :param cluster_mode: 集群模式：sharding(分片集群)
+        :type cluster_mode: str
+        :param task: 
+        :type task: :class:`huaweicloudsdkcdm.v1.ClusterTask`
+        :param created: 集群创建时间，格式为ISO8601：YYYY-MM-DDThh:mm:ssZ
+        :type created: str
+        :param status_detail: 集群状态描述：Normal（正常）
+        :type status_detail: str
+        :param config_status: 集群配置状态： - In-Sync：配置已同步。 - Applying：配置中。 - Sync-Failure：配置失败
+        :type config_status: str
+        :param action_progress: 
+        :type action_progress: :class:`huaweicloudsdkcdm.v1.ActionProgress`
+        :param name: 集群名称
+        :type name: str
+        :param id: 集群ID
+        :type id: str
+        :param is_frozen: 集群是否冻结：0：否1：是
+        :type is_frozen: str
+        :param actions: 集群配置状态：In-Sync：配置已同步。Applying：配置中。Sync-Failure：配置失败
+        :type actions: list[str]
+        :param updated: 集群更新时间，格式为 ISO8601：YYYY-MM-DDThh:mm:ssZ
+        :type updated: str
+        :param status: 集群状态： - 100：创建中 - 200：正常 - 300：失败 - 303：创建失败 - 800：冻结 - 900：已关机 - 910：正在关机 - 920：正在开机
+        :type status: str
+        """
         
         super(ShowClusterDetailResponse, self).__init__()
 
@@ -228,7 +301,7 @@ class ShowClusterDetailResponse(SdkResponse):
         集群绑定的EIP
 
         :param public_endpoint: The public_endpoint of this ShowClusterDetailResponse.
-        :type: str
+        :type public_endpoint: str
         """
         self._public_endpoint = public_endpoint
 
@@ -239,7 +312,7 @@ class ShowClusterDetailResponse(SdkResponse):
         集群的节点信息，请参见instances参数说明
 
         :return: The instances of this ShowClusterDetailResponse.
-        :rtype: list[ClusterDetailInstance]
+        :rtype: list[:class:`huaweicloudsdkcdm.v1.ClusterDetailInstance`]
         """
         return self._instances
 
@@ -250,7 +323,7 @@ class ShowClusterDetailResponse(SdkResponse):
         集群的节点信息，请参见instances参数说明
 
         :param instances: The instances of this ShowClusterDetailResponse.
-        :type: list[ClusterDetailInstance]
+        :type instances: list[:class:`huaweicloudsdkcdm.v1.ClusterDetailInstance`]
         """
         self._instances = instances
 
@@ -272,7 +345,7 @@ class ShowClusterDetailResponse(SdkResponse):
         安全组id
 
         :param security_group_id: The security_group_id of this ShowClusterDetailResponse.
-        :type: str
+        :type security_group_id: str
         """
         self._security_group_id = security_group_id
 
@@ -294,7 +367,7 @@ class ShowClusterDetailResponse(SdkResponse):
         子网id
 
         :param subnet_id: The subnet_id of this ShowClusterDetailResponse.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -316,7 +389,7 @@ class ShowClusterDetailResponse(SdkResponse):
         虚拟私有云ID
 
         :param vpc_id: The vpc_id of this ShowClusterDetailResponse.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -326,7 +399,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
 
         :return: The customer_config of this ShowClusterDetailResponse.
-        :rtype: CustomerConfig
+        :rtype: :class:`huaweicloudsdkcdm.v1.CustomerConfig`
         """
         return self._customer_config
 
@@ -336,7 +409,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
 
         :param customer_config: The customer_config of this ShowClusterDetailResponse.
-        :type: CustomerConfig
+        :type customer_config: :class:`huaweicloudsdkcdm.v1.CustomerConfig`
         """
         self._customer_config = customer_config
 
@@ -346,7 +419,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
 
         :return: The datastore of this ShowClusterDetailResponse.
-        :rtype: Datastore
+        :rtype: :class:`huaweicloudsdkcdm.v1.Datastore`
         """
         return self._datastore
 
@@ -356,7 +429,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
 
         :param datastore: The datastore of this ShowClusterDetailResponse.
-        :type: Datastore
+        :type datastore: :class:`huaweicloudsdkcdm.v1.Datastore`
         """
         self._datastore = datastore
 
@@ -378,7 +451,7 @@ class ShowClusterDetailResponse(SdkResponse):
         自动关机
 
         :param is_auto_off: The is_auto_off of this ShowClusterDetailResponse.
-        :type: bool
+        :type is_auto_off: bool
         """
         self._is_auto_off = is_auto_off
 
@@ -400,7 +473,7 @@ class ShowClusterDetailResponse(SdkResponse):
         集群绑定的EIP域名
 
         :param public_endpoint_domain_name: The public_endpoint_domain_name of this ShowClusterDetailResponse.
-        :type: str
+        :type public_endpoint_domain_name: str
         """
         self._public_endpoint_domain_name = public_endpoint_domain_name
 
@@ -422,7 +495,7 @@ class ShowClusterDetailResponse(SdkResponse):
         开始时间
 
         :param bak_expected_start_time: The bak_expected_start_time of this ShowClusterDetailResponse.
-        :type: str
+        :type bak_expected_start_time: str
         """
         self._bak_expected_start_time = bak_expected_start_time
 
@@ -444,7 +517,7 @@ class ShowClusterDetailResponse(SdkResponse):
         保留时间
 
         :param bak_keep_day: The bak_keep_day of this ShowClusterDetailResponse.
-        :type: int
+        :type bak_keep_day: int
         """
         self._bak_keep_day = bak_keep_day
 
@@ -454,7 +527,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
 
         :return: The maintain_window of this ShowClusterDetailResponse.
-        :rtype: CdmQueryClusterDetailsRepsonseMaintainWindow
+        :rtype: :class:`huaweicloudsdkcdm.v1.CdmQueryClusterDetailsRepsonseMaintainWindow`
         """
         return self._maintain_window
 
@@ -464,7 +537,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
 
         :param maintain_window: The maintain_window of this ShowClusterDetailResponse.
-        :type: CdmQueryClusterDetailsRepsonseMaintainWindow
+        :type maintain_window: :class:`huaweicloudsdkcdm.v1.CdmQueryClusterDetailsRepsonseMaintainWindow`
         """
         self._maintain_window = maintain_window
 
@@ -486,7 +559,7 @@ class ShowClusterDetailResponse(SdkResponse):
         事件数
 
         :param recent_event: The recent_event of this ShowClusterDetailResponse.
-        :type: int
+        :type recent_event: int
         """
         self._recent_event = recent_event
 
@@ -508,7 +581,7 @@ class ShowClusterDetailResponse(SdkResponse):
         规格名称
 
         :param flavor_name: The flavor_name of this ShowClusterDetailResponse.
-        :type: str
+        :type flavor_name: str
         """
         self._flavor_name = flavor_name
 
@@ -530,7 +603,7 @@ class ShowClusterDetailResponse(SdkResponse):
         az名称
 
         :param az_name: The az_name of this ShowClusterDetailResponse.
-        :type: str
+        :type az_name: str
         """
         self._az_name = az_name
 
@@ -552,7 +625,7 @@ class ShowClusterDetailResponse(SdkResponse):
         对端域名
 
         :param endpoint_domain_name: The endpoint_domain_name of this ShowClusterDetailResponse.
-        :type: str
+        :type endpoint_domain_name: str
         """
         self._endpoint_domain_name = endpoint_domain_name
 
@@ -562,7 +635,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
 
         :return: The public_endpoint_status of this ShowClusterDetailResponse.
-        :rtype: CdmQueryClusterDetailsRepsonsePublicEndpointStatus
+        :rtype: :class:`huaweicloudsdkcdm.v1.CdmQueryClusterDetailsRepsonsePublicEndpointStatus`
         """
         return self._public_endpoint_status
 
@@ -572,7 +645,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
 
         :param public_endpoint_status: The public_endpoint_status of this ShowClusterDetailResponse.
-        :type: CdmQueryClusterDetailsRepsonsePublicEndpointStatus
+        :type public_endpoint_status: :class:`huaweicloudsdkcdm.v1.CdmQueryClusterDetailsRepsonsePublicEndpointStatus`
         """
         self._public_endpoint_status = public_endpoint_status
 
@@ -594,7 +667,7 @@ class ShowClusterDetailResponse(SdkResponse):
         选择是否启用定时开关机功能。定时开关机功能和自动关机功能不可同时开启
 
         :param is_schedule_boot_off: The is_schedule_boot_off of this ShowClusterDetailResponse.
-        :type: bool
+        :type is_schedule_boot_off: bool
         """
         self._is_schedule_boot_off = is_schedule_boot_off
 
@@ -616,7 +689,7 @@ class ShowClusterDetailResponse(SdkResponse):
         命名空间
 
         :param namespace: The namespace of this ShowClusterDetailResponse.
-        :type: str
+        :type namespace: str
         """
         self._namespace = namespace
 
@@ -638,7 +711,7 @@ class ShowClusterDetailResponse(SdkResponse):
         弹性ip id
 
         :param eip_id: The eip_id of this ShowClusterDetailResponse.
-        :type: str
+        :type eip_id: str
         """
         self._eip_id = eip_id
 
@@ -648,7 +721,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
 
         :return: The failed_reasons of this ShowClusterDetailResponse.
-        :rtype: FailedReasons
+        :rtype: :class:`huaweicloudsdkcdm.v1.FailedReasons`
         """
         return self._failed_reasons
 
@@ -658,7 +731,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
 
         :param failed_reasons: The failed_reasons of this ShowClusterDetailResponse.
-        :type: FailedReasons
+        :type failed_reasons: :class:`huaweicloudsdkcdm.v1.FailedReasons`
         """
         self._failed_reasons = failed_reasons
 
@@ -680,7 +753,7 @@ class ShowClusterDetailResponse(SdkResponse):
         数据库用户
 
         :param dbuser: The dbuser of this ShowClusterDetailResponse.
-        :type: str
+        :type dbuser: str
         """
         self._dbuser = dbuser
 
@@ -690,7 +763,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
 
         :return: The links of this ShowClusterDetailResponse.
-        :rtype: list[ClusterLinks]
+        :rtype: list[:class:`huaweicloudsdkcdm.v1.ClusterLinks`]
         """
         return self._links
 
@@ -700,7 +773,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
 
         :param links: The links of this ShowClusterDetailResponse.
-        :type: list[ClusterLinks]
+        :type links: list[:class:`huaweicloudsdkcdm.v1.ClusterLinks`]
         """
         self._links = links
 
@@ -722,7 +795,7 @@ class ShowClusterDetailResponse(SdkResponse):
         集群模式：sharding(分片集群)
 
         :param cluster_mode: The cluster_mode of this ShowClusterDetailResponse.
-        :type: str
+        :type cluster_mode: str
         """
         self._cluster_mode = cluster_mode
 
@@ -732,7 +805,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
 
         :return: The task of this ShowClusterDetailResponse.
-        :rtype: ClusterTask
+        :rtype: :class:`huaweicloudsdkcdm.v1.ClusterTask`
         """
         return self._task
 
@@ -742,7 +815,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
 
         :param task: The task of this ShowClusterDetailResponse.
-        :type: ClusterTask
+        :type task: :class:`huaweicloudsdkcdm.v1.ClusterTask`
         """
         self._task = task
 
@@ -764,7 +837,7 @@ class ShowClusterDetailResponse(SdkResponse):
         集群创建时间，格式为ISO8601：YYYY-MM-DDThh:mm:ssZ
 
         :param created: The created of this ShowClusterDetailResponse.
-        :type: str
+        :type created: str
         """
         self._created = created
 
@@ -786,7 +859,7 @@ class ShowClusterDetailResponse(SdkResponse):
         集群状态描述：Normal（正常）
 
         :param status_detail: The status_detail of this ShowClusterDetailResponse.
-        :type: str
+        :type status_detail: str
         """
         self._status_detail = status_detail
 
@@ -808,7 +881,7 @@ class ShowClusterDetailResponse(SdkResponse):
         集群配置状态： - In-Sync：配置已同步。 - Applying：配置中。 - Sync-Failure：配置失败
 
         :param config_status: The config_status of this ShowClusterDetailResponse.
-        :type: str
+        :type config_status: str
         """
         self._config_status = config_status
 
@@ -818,7 +891,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
 
         :return: The action_progress of this ShowClusterDetailResponse.
-        :rtype: ActionProgress
+        :rtype: :class:`huaweicloudsdkcdm.v1.ActionProgress`
         """
         return self._action_progress
 
@@ -828,7 +901,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
 
         :param action_progress: The action_progress of this ShowClusterDetailResponse.
-        :type: ActionProgress
+        :type action_progress: :class:`huaweicloudsdkcdm.v1.ActionProgress`
         """
         self._action_progress = action_progress
 
@@ -850,7 +923,7 @@ class ShowClusterDetailResponse(SdkResponse):
         集群名称
 
         :param name: The name of this ShowClusterDetailResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -872,7 +945,7 @@ class ShowClusterDetailResponse(SdkResponse):
         集群ID
 
         :param id: The id of this ShowClusterDetailResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -894,7 +967,7 @@ class ShowClusterDetailResponse(SdkResponse):
         集群是否冻结：0：否1：是
 
         :param is_frozen: The is_frozen of this ShowClusterDetailResponse.
-        :type: str
+        :type is_frozen: str
         """
         self._is_frozen = is_frozen
 
@@ -916,7 +989,7 @@ class ShowClusterDetailResponse(SdkResponse):
         集群配置状态：In-Sync：配置已同步。Applying：配置中。Sync-Failure：配置失败
 
         :param actions: The actions of this ShowClusterDetailResponse.
-        :type: list[str]
+        :type actions: list[str]
         """
         self._actions = actions
 
@@ -938,7 +1011,7 @@ class ShowClusterDetailResponse(SdkResponse):
         集群更新时间，格式为 ISO8601：YYYY-MM-DDThh:mm:ssZ
 
         :param updated: The updated of this ShowClusterDetailResponse.
-        :type: str
+        :type updated: str
         """
         self._updated = updated
 
@@ -960,7 +1033,7 @@ class ShowClusterDetailResponse(SdkResponse):
         集群状态： - 100：创建中 - 200：正常 - 300：失败 - 303：创建失败 - 800：冻结 - 900：已关机 - 910：正在关机 - 920：正在开机
 
         :param status: The status of this ShowClusterDetailResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 

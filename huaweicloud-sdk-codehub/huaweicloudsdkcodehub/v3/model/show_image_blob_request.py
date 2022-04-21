@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowImageBlobRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowImageBlobRequest:
     }
 
     def __init__(self, repository_uuid=None, branch_name=None, path=None):
-        """ShowImageBlobRequest - a model defined in huaweicloud sdk"""
+        """ShowImageBlobRequest
+
+        The model defined in huaweicloud sdk
+
+        :param repository_uuid: 仓库id
+        :type repository_uuid: str
+        :param branch_name: 分支名称
+        :type branch_name: str
+        :param path: 图片路径
+        :type path: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class ShowImageBlobRequest:
         仓库id
 
         :param repository_uuid: The repository_uuid of this ShowImageBlobRequest.
-        :type: str
+        :type repository_uuid: str
         """
         self._repository_uuid = repository_uuid
 
@@ -87,7 +96,7 @@ class ShowImageBlobRequest:
         分支名称
 
         :param branch_name: The branch_name of this ShowImageBlobRequest.
-        :type: str
+        :type branch_name: str
         """
         self._branch_name = branch_name
 
@@ -109,7 +118,7 @@ class ShowImageBlobRequest:
         图片路径
 
         :param path: The path of this ShowImageBlobRequest.
-        :type: str
+        :type path: str
         """
         self._path = path
 

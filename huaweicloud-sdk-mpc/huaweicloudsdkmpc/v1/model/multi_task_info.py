@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MultiTaskInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class MultiTaskInfo:
     }
 
     def __init__(self, template_id=None, error=None, output_file=None):
-        """MultiTaskInfo - a model defined in huaweicloud sdk"""
+        """MultiTaskInfo
+
+        The model defined in huaweicloud sdk
+
+        :param template_id: 转码模板ID。
+        :type template_id: int
+        :param error: 
+        :type error: :class:`huaweicloudsdkmpc.v1.ErrorResponse`
+        :param output_file: 
+        :type output_file: :class:`huaweicloudsdkmpc.v1.SourceInfo`
+        """
         
         
 
@@ -68,7 +77,7 @@ class MultiTaskInfo:
         转码模板ID。
 
         :param template_id: The template_id of this MultiTaskInfo.
-        :type: int
+        :type template_id: int
         """
         self._template_id = template_id
 
@@ -78,7 +87,7 @@ class MultiTaskInfo:
 
 
         :return: The error of this MultiTaskInfo.
-        :rtype: ErrorResponse
+        :rtype: :class:`huaweicloudsdkmpc.v1.ErrorResponse`
         """
         return self._error
 
@@ -88,7 +97,7 @@ class MultiTaskInfo:
 
 
         :param error: The error of this MultiTaskInfo.
-        :type: ErrorResponse
+        :type error: :class:`huaweicloudsdkmpc.v1.ErrorResponse`
         """
         self._error = error
 
@@ -98,7 +107,7 @@ class MultiTaskInfo:
 
 
         :return: The output_file of this MultiTaskInfo.
-        :rtype: SourceInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.SourceInfo`
         """
         return self._output_file
 
@@ -108,7 +117,7 @@ class MultiTaskInfo:
 
 
         :param output_file: The output_file of this MultiTaskInfo.
-        :type: SourceInfo
+        :type output_file: :class:`huaweicloudsdkmpc.v1.SourceInfo`
         """
         self._output_file = output_file
 

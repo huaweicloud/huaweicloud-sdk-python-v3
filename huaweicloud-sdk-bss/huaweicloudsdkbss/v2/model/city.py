@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class City:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class City:
     }
 
     def __init__(self, code=None, name=None):
-        """City - a model defined in huaweicloud sdk"""
+        """City
+
+        The model defined in huaweicloud sdk
+
+        :param code: 城市的编码。
+        :type code: str
+        :param name: 城市的名称，根据请求参数X-Language的取值返回对应语言的名称，目前仅支持中文。
+        :type name: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class City:
         城市的编码。
 
         :param code: The code of this City.
-        :type: str
+        :type code: str
         """
         self._code = code
 
@@ -83,7 +90,7 @@ class City:
         城市的名称，根据请求参数X-Language的取值返回对应语言的名称，目前仅支持中文。
 
         :param name: The name of this City.
-        :type: str
+        :type name: str
         """
         self._name = name
 

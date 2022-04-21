@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StrategyConfig:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class StrategyConfig:
     }
 
     def __init__(self, concurrency=None, concurrent_num=None):
-        """StrategyConfig - a model defined in huaweicloud sdk"""
+        """StrategyConfig
+
+        The model defined in huaweicloud sdk
+
+        :param concurrency: 0：函数被禁用;-1：函数被启用。
+        :type concurrency: int
+        :param concurrent_num: 函数并发数
+        :type concurrent_num: int
+        """
         
         
 
@@ -62,7 +69,7 @@ class StrategyConfig:
         0：函数被禁用;-1：函数被启用。
 
         :param concurrency: The concurrency of this StrategyConfig.
-        :type: int
+        :type concurrency: int
         """
         self._concurrency = concurrency
 
@@ -84,7 +91,7 @@ class StrategyConfig:
         函数并发数
 
         :param concurrent_num: The concurrent_num of this StrategyConfig.
-        :type: int
+        :type concurrent_num: int
         """
         self._concurrent_num = concurrent_num
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRtcAbnormalEventDimensionResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListRtcAbnormalEventDimensionResponse(SdkResponse):
     }
 
     def __init__(self, dimensions=None, x_request_id=None):
-        """ListRtcAbnormalEventDimensionResponse - a model defined in huaweicloud sdk"""
+        """ListRtcAbnormalEventDimensionResponse
+
+        The model defined in huaweicloud sdk
+
+        :param dimensions: 异常体验列表
+        :type dimensions: list[:class:`huaweicloudsdkcloudrtc.v1.AbnormalEventDimensionValue`]
+        :param x_request_id: 
+        :type x_request_id: str
+        """
         
         super(ListRtcAbnormalEventDimensionResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListRtcAbnormalEventDimensionResponse(SdkResponse):
         异常体验列表
 
         :return: The dimensions of this ListRtcAbnormalEventDimensionResponse.
-        :rtype: list[AbnormalEventDimensionValue]
+        :rtype: list[:class:`huaweicloudsdkcloudrtc.v1.AbnormalEventDimensionValue`]
         """
         return self._dimensions
 
@@ -63,7 +70,7 @@ class ListRtcAbnormalEventDimensionResponse(SdkResponse):
         异常体验列表
 
         :param dimensions: The dimensions of this ListRtcAbnormalEventDimensionResponse.
-        :type: list[AbnormalEventDimensionValue]
+        :type dimensions: list[:class:`huaweicloudsdkcloudrtc.v1.AbnormalEventDimensionValue`]
         """
         self._dimensions = dimensions
 
@@ -83,7 +90,7 @@ class ListRtcAbnormalEventDimensionResponse(SdkResponse):
 
 
         :param x_request_id: The x_request_id of this ListRtcAbnormalEventDimensionResponse.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 

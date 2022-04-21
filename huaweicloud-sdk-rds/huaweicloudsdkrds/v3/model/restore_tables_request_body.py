@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestoreTablesRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RestoreTablesRequestBody:
     }
 
     def __init__(self, restore_time=None, restore_tables=None):
-        """RestoreTablesRequestBody - a model defined in huaweicloud sdk"""
+        """RestoreTablesRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param restore_time: 恢复时间戳
+        :type restore_time: int
+        :param restore_tables: 表信息
+        :type restore_tables: list[:class:`huaweicloudsdkrds.v3.RestoreDatabasesInfo`]
+        """
         
         
 
@@ -61,7 +68,7 @@ class RestoreTablesRequestBody:
         恢复时间戳
 
         :param restore_time: The restore_time of this RestoreTablesRequestBody.
-        :type: int
+        :type restore_time: int
         """
         self._restore_time = restore_time
 
@@ -72,7 +79,7 @@ class RestoreTablesRequestBody:
         表信息
 
         :return: The restore_tables of this RestoreTablesRequestBody.
-        :rtype: list[RestoreDatabasesInfo]
+        :rtype: list[:class:`huaweicloudsdkrds.v3.RestoreDatabasesInfo`]
         """
         return self._restore_tables
 
@@ -83,7 +90,7 @@ class RestoreTablesRequestBody:
         表信息
 
         :param restore_tables: The restore_tables of this RestoreTablesRequestBody.
-        :type: list[RestoreDatabasesInfo]
+        :type restore_tables: list[:class:`huaweicloudsdkrds.v3.RestoreDatabasesInfo`]
         """
         self._restore_tables = restore_tables
 

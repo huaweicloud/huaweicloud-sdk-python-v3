@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunTextTranslationRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RunTextTranslationRequest:
     }
 
     def __init__(self, body=None):
-        """RunTextTranslationRequest - a model defined in huaweicloud sdk"""
+        """RunTextTranslationRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the RunTextTranslationRequest
+        :type body: :class:`huaweicloudsdknlp.v2.TextTranslationReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class RunTextTranslationRequest:
 
 
         :return: The body of this RunTextTranslationRequest.
-        :rtype: TextTranslationReq
+        :rtype: :class:`huaweicloudsdknlp.v2.TextTranslationReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class RunTextTranslationRequest:
 
 
         :param body: The body of this RunTextTranslationRequest.
-        :type: TextTranslationReq
+        :type body: :class:`huaweicloudsdknlp.v2.TextTranslationReq`
         """
         self._body = body
 

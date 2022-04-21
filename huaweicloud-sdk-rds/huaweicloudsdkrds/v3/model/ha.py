@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Ha:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Ha:
     }
 
     def __init__(self, mode=None, replication_mode=None):
-        """Ha - a model defined in huaweicloud sdk"""
+        """Ha
+
+        The model defined in huaweicloud sdk
+
+        :param mode: 实例主备模式，取值：Ha（主备），不区分大小写。
+        :type mode: str
+        :param replication_mode: 备机同步参数。实例主备模式为Ha时有效。 取值： - MySQL为“async”或“semisync”。 - PostgreSQL为“async”或“sync”。 - Microsoft SQL Server为“sync”。
+        :type replication_mode: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class Ha:
         实例主备模式，取值：Ha（主备），不区分大小写。
 
         :param mode: The mode of this Ha.
-        :type: str
+        :type mode: str
         """
         self._mode = mode
 
@@ -83,7 +90,7 @@ class Ha:
         备机同步参数。实例主备模式为Ha时有效。 取值： - MySQL为“async”或“semisync”。 - PostgreSQL为“async”或“sync”。 - Microsoft SQL Server为“sync”。
 
         :param replication_mode: The replication_mode of this Ha.
-        :type: str
+        :type replication_mode: str
         """
         self._replication_mode = replication_mode
 

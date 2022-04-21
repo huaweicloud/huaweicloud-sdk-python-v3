@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateTopicReplicaRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateTopicReplicaRequest:
     }
 
     def __init__(self, instance_id=None, topic=None, body=None):
-        """UpdateTopicReplicaRequest - a model defined in huaweicloud sdk"""
+        """UpdateTopicReplicaRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param topic: Topic名称。
+        :type topic: str
+        :param body: Body of the UpdateTopicReplicaRequest
+        :type body: :class:`huaweicloudsdkkafka.v2.ResetReplicaReq`
+        """
         
         
 
@@ -66,7 +75,7 @@ class UpdateTopicReplicaRequest:
         实例ID。
 
         :param instance_id: The instance_id of this UpdateTopicReplicaRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -88,7 +97,7 @@ class UpdateTopicReplicaRequest:
         Topic名称。
 
         :param topic: The topic of this UpdateTopicReplicaRequest.
-        :type: str
+        :type topic: str
         """
         self._topic = topic
 
@@ -98,7 +107,7 @@ class UpdateTopicReplicaRequest:
 
 
         :return: The body of this UpdateTopicReplicaRequest.
-        :rtype: ResetReplicaReq
+        :rtype: :class:`huaweicloudsdkkafka.v2.ResetReplicaReq`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class UpdateTopicReplicaRequest:
 
 
         :param body: The body of this UpdateTopicReplicaRequest.
-        :type: ResetReplicaReq
+        :type body: :class:`huaweicloudsdkkafka.v2.ResetReplicaReq`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MembersInStatusResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class MembersInStatusResp:
     }
 
     def __init__(self, id=None, address=None, protocol_port=None, operating_status=None, provisioning_status=None):
-        """MembersInStatusResp - a model defined in huaweicloud sdk"""
+        """MembersInStatusResp
+
+        The model defined in huaweicloud sdk
+
+        :param id: 后端云服务器ID
+        :type id: str
+        :param address: 后端云服务器的IP地址
+        :type address: str
+        :param protocol_port: 后端云服务器的端口号
+        :type protocol_port: int
+        :param operating_status: 后端云服务器的健康检状态；可以为：ONLINE：健康检查在线；OFFLINE：健康检查离线；DISABLED：后端云服务器无对应的弹性云服务器；NO_MONITOR：健康检查未开启
+        :type operating_status: str
+        :param provisioning_status: 监听器的配置状态；该字段为预留字段，暂未启用。默认为ACTIVE。
+        :type provisioning_status: str
+        """
         
         
 
@@ -73,7 +86,7 @@ class MembersInStatusResp:
         后端云服务器ID
 
         :param id: The id of this MembersInStatusResp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -95,7 +108,7 @@ class MembersInStatusResp:
         后端云服务器的IP地址
 
         :param address: The address of this MembersInStatusResp.
-        :type: str
+        :type address: str
         """
         self._address = address
 
@@ -117,7 +130,7 @@ class MembersInStatusResp:
         后端云服务器的端口号
 
         :param protocol_port: The protocol_port of this MembersInStatusResp.
-        :type: int
+        :type protocol_port: int
         """
         self._protocol_port = protocol_port
 
@@ -139,7 +152,7 @@ class MembersInStatusResp:
         后端云服务器的健康检状态；可以为：ONLINE：健康检查在线；OFFLINE：健康检查离线；DISABLED：后端云服务器无对应的弹性云服务器；NO_MONITOR：健康检查未开启
 
         :param operating_status: The operating_status of this MembersInStatusResp.
-        :type: str
+        :type operating_status: str
         """
         self._operating_status = operating_status
 
@@ -161,7 +174,7 @@ class MembersInStatusResp:
         监听器的配置状态；该字段为预留字段，暂未启用。默认为ACTIVE。
 
         :param provisioning_status: The provisioning_status of this MembersInStatusResp.
-        :type: str
+        :type provisioning_status: str
         """
         self._provisioning_status = provisioning_status
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GetDatabaseInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class GetDatabaseInfo:
     }
 
     def __init__(self, name=None, shard_mode=None, shard_number=None, status=None, created=None, used_rds=None, shard_unit=None):
-        """GetDatabaseInfo - a model defined in huaweicloud sdk"""
+        """GetDatabaseInfo
+
+        The model defined in huaweicloud sdk
+
+        :param name: 逻辑库名称。
+        :type name: str
+        :param shard_mode: 逻辑库的工作模式。  - cluster表示逻辑库是拆分模式。 - single表示逻辑库是非拆分模式。
+        :type shard_mode: str
+        :param shard_number: 同一种工作模式下逻辑库分片的数量。
+        :type shard_number: int
+        :param status: 逻辑库状态。
+        :type status: str
+        :param created: 逻辑库的创建时间。
+        :type created: str
+        :param used_rds: 逻辑库关联的RDS实例信息。
+        :type used_rds: list[:class:`huaweicloudsdkddm.v1.GetDatabaseUsedRds`]
+        :param shard_unit: 单个RDS上的逻辑库分片数。
+        :type shard_unit: int
+        """
         
         
 
@@ -81,7 +98,7 @@ class GetDatabaseInfo:
         逻辑库名称。
 
         :param name: The name of this GetDatabaseInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -103,7 +120,7 @@ class GetDatabaseInfo:
         逻辑库的工作模式。  - cluster表示逻辑库是拆分模式。 - single表示逻辑库是非拆分模式。
 
         :param shard_mode: The shard_mode of this GetDatabaseInfo.
-        :type: str
+        :type shard_mode: str
         """
         self._shard_mode = shard_mode
 
@@ -125,7 +142,7 @@ class GetDatabaseInfo:
         同一种工作模式下逻辑库分片的数量。
 
         :param shard_number: The shard_number of this GetDatabaseInfo.
-        :type: int
+        :type shard_number: int
         """
         self._shard_number = shard_number
 
@@ -147,7 +164,7 @@ class GetDatabaseInfo:
         逻辑库状态。
 
         :param status: The status of this GetDatabaseInfo.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -169,7 +186,7 @@ class GetDatabaseInfo:
         逻辑库的创建时间。
 
         :param created: The created of this GetDatabaseInfo.
-        :type: str
+        :type created: str
         """
         self._created = created
 
@@ -180,7 +197,7 @@ class GetDatabaseInfo:
         逻辑库关联的RDS实例信息。
 
         :return: The used_rds of this GetDatabaseInfo.
-        :rtype: list[GetDatabaseUsedRds]
+        :rtype: list[:class:`huaweicloudsdkddm.v1.GetDatabaseUsedRds`]
         """
         return self._used_rds
 
@@ -191,7 +208,7 @@ class GetDatabaseInfo:
         逻辑库关联的RDS实例信息。
 
         :param used_rds: The used_rds of this GetDatabaseInfo.
-        :type: list[GetDatabaseUsedRds]
+        :type used_rds: list[:class:`huaweicloudsdkddm.v1.GetDatabaseUsedRds`]
         """
         self._used_rds = used_rds
 
@@ -213,7 +230,7 @@ class GetDatabaseInfo:
         单个RDS上的逻辑库分片数。
 
         :param shard_unit: The shard_unit of this GetDatabaseInfo.
-        :type: int
+        :type shard_unit: int
         """
         self._shard_unit = shard_unit
 

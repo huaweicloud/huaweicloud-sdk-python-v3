@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SqlAlarmRuleRespList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class SqlAlarmRuleRespList:
     }
 
     def __init__(self, sql_alarm_rule_name=None, sql_alarm_rule_id=None, sql_alarm_rule_description=None, sql_requests=None, frequency=None, condition_expression=None, topics=None, sql_alarm_level=None, sql_alarm_send=None, domain_id=None, create_time=None, update_time=None, template_name=None, status=None):
-        """SqlAlarmRuleRespList - a model defined in huaweicloud sdk"""
+        """SqlAlarmRuleRespList
+
+        The model defined in huaweicloud sdk
+
+        :param sql_alarm_rule_name: SQL告警名称
+        :type sql_alarm_rule_name: str
+        :param sql_alarm_rule_id: SQL告警规则id
+        :type sql_alarm_rule_id: str
+        :param sql_alarm_rule_description: SQL告警信息描述
+        :type sql_alarm_rule_description: str
+        :param sql_requests: SQL详细信息
+        :type sql_requests: list[:class:`huaweicloudsdklts.v2.SqlRequest`]
+        :param frequency: 告警统计周期
+        :type frequency: :class:`huaweicloudsdklts.v2.Frequency`
+        :param condition_expression: 条件表达式
+        :type condition_expression: str
+        :param topics: 主题信息
+        :type topics: list[:class:`huaweicloudsdklts.v2.Topics`]
+        :param sql_alarm_level: 告警级别
+        :type sql_alarm_level: str
+        :param sql_alarm_send: 是否发送
+        :type sql_alarm_send: bool
+        :param domain_id: domainId
+        :type domain_id: str
+        :param create_time: 创建时间(毫秒时间戳)
+        :type create_time: int
+        :param update_time: 更新时间(毫秒时间戳)
+        :type update_time: int
+        :param template_name: 
+        :type template_name: str
+        :param status: 
+        :type status: str
+        """
         
         
 
@@ -111,7 +142,7 @@ class SqlAlarmRuleRespList:
         SQL告警名称
 
         :param sql_alarm_rule_name: The sql_alarm_rule_name of this SqlAlarmRuleRespList.
-        :type: str
+        :type sql_alarm_rule_name: str
         """
         self._sql_alarm_rule_name = sql_alarm_rule_name
 
@@ -133,7 +164,7 @@ class SqlAlarmRuleRespList:
         SQL告警规则id
 
         :param sql_alarm_rule_id: The sql_alarm_rule_id of this SqlAlarmRuleRespList.
-        :type: str
+        :type sql_alarm_rule_id: str
         """
         self._sql_alarm_rule_id = sql_alarm_rule_id
 
@@ -155,7 +186,7 @@ class SqlAlarmRuleRespList:
         SQL告警信息描述
 
         :param sql_alarm_rule_description: The sql_alarm_rule_description of this SqlAlarmRuleRespList.
-        :type: str
+        :type sql_alarm_rule_description: str
         """
         self._sql_alarm_rule_description = sql_alarm_rule_description
 
@@ -166,7 +197,7 @@ class SqlAlarmRuleRespList:
         SQL详细信息
 
         :return: The sql_requests of this SqlAlarmRuleRespList.
-        :rtype: list[SqlRequest]
+        :rtype: list[:class:`huaweicloudsdklts.v2.SqlRequest`]
         """
         return self._sql_requests
 
@@ -177,7 +208,7 @@ class SqlAlarmRuleRespList:
         SQL详细信息
 
         :param sql_requests: The sql_requests of this SqlAlarmRuleRespList.
-        :type: list[SqlRequest]
+        :type sql_requests: list[:class:`huaweicloudsdklts.v2.SqlRequest`]
         """
         self._sql_requests = sql_requests
 
@@ -188,7 +219,7 @@ class SqlAlarmRuleRespList:
         告警统计周期
 
         :return: The frequency of this SqlAlarmRuleRespList.
-        :rtype: Frequency
+        :rtype: :class:`huaweicloudsdklts.v2.Frequency`
         """
         return self._frequency
 
@@ -199,7 +230,7 @@ class SqlAlarmRuleRespList:
         告警统计周期
 
         :param frequency: The frequency of this SqlAlarmRuleRespList.
-        :type: Frequency
+        :type frequency: :class:`huaweicloudsdklts.v2.Frequency`
         """
         self._frequency = frequency
 
@@ -221,7 +252,7 @@ class SqlAlarmRuleRespList:
         条件表达式
 
         :param condition_expression: The condition_expression of this SqlAlarmRuleRespList.
-        :type: str
+        :type condition_expression: str
         """
         self._condition_expression = condition_expression
 
@@ -232,7 +263,7 @@ class SqlAlarmRuleRespList:
         主题信息
 
         :return: The topics of this SqlAlarmRuleRespList.
-        :rtype: list[Topics]
+        :rtype: list[:class:`huaweicloudsdklts.v2.Topics`]
         """
         return self._topics
 
@@ -243,7 +274,7 @@ class SqlAlarmRuleRespList:
         主题信息
 
         :param topics: The topics of this SqlAlarmRuleRespList.
-        :type: list[Topics]
+        :type topics: list[:class:`huaweicloudsdklts.v2.Topics`]
         """
         self._topics = topics
 
@@ -265,7 +296,7 @@ class SqlAlarmRuleRespList:
         告警级别
 
         :param sql_alarm_level: The sql_alarm_level of this SqlAlarmRuleRespList.
-        :type: str
+        :type sql_alarm_level: str
         """
         self._sql_alarm_level = sql_alarm_level
 
@@ -287,7 +318,7 @@ class SqlAlarmRuleRespList:
         是否发送
 
         :param sql_alarm_send: The sql_alarm_send of this SqlAlarmRuleRespList.
-        :type: bool
+        :type sql_alarm_send: bool
         """
         self._sql_alarm_send = sql_alarm_send
 
@@ -309,7 +340,7 @@ class SqlAlarmRuleRespList:
         domainId
 
         :param domain_id: The domain_id of this SqlAlarmRuleRespList.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -331,7 +362,7 @@ class SqlAlarmRuleRespList:
         创建时间(毫秒时间戳)
 
         :param create_time: The create_time of this SqlAlarmRuleRespList.
-        :type: int
+        :type create_time: int
         """
         self._create_time = create_time
 
@@ -353,7 +384,7 @@ class SqlAlarmRuleRespList:
         更新时间(毫秒时间戳)
 
         :param update_time: The update_time of this SqlAlarmRuleRespList.
-        :type: int
+        :type update_time: int
         """
         self._update_time = update_time
 
@@ -373,7 +404,7 @@ class SqlAlarmRuleRespList:
 
 
         :param template_name: The template_name of this SqlAlarmRuleRespList.
-        :type: str
+        :type template_name: str
         """
         self._template_name = template_name
 
@@ -393,7 +424,7 @@ class SqlAlarmRuleRespList:
 
 
         :param status: The status of this SqlAlarmRuleRespList.
-        :type: str
+        :type status: str
         """
         self._status = status
 

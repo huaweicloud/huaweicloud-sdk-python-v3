@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BackupPlan:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class BackupPlan:
     }
 
     def __init__(self, timezone_offset=None, backup_at=None, period_type=None, begin_at=None):
-        """BackupPlan - a model defined in huaweicloud sdk"""
+        """BackupPlan
+
+        The model defined in huaweicloud sdk
+
+        :param timezone_offset: 备份的时区。取值为-1200 ~+1200之间的时区。若为空则默认使用DCS-Server节点的当前时区。
+        :type timezone_offset: str
+        :param backup_at: 每周的周几开始备份，取值1-7，1代表周一，7代表周日。
+        :type backup_at: list[int]
+        :param period_type: 备份周期类型，目前支持“weekly”。
+        :type period_type: str
+        :param begin_at: 备份执行时间，“00:00-01:00”代表0点开始执行备份。
+        :type begin_at: str
+        """
         
         
 
@@ -70,7 +81,7 @@ class BackupPlan:
         备份的时区。取值为-1200 ~+1200之间的时区。若为空则默认使用DCS-Server节点的当前时区。
 
         :param timezone_offset: The timezone_offset of this BackupPlan.
-        :type: str
+        :type timezone_offset: str
         """
         self._timezone_offset = timezone_offset
 
@@ -92,7 +103,7 @@ class BackupPlan:
         每周的周几开始备份，取值1-7，1代表周一，7代表周日。
 
         :param backup_at: The backup_at of this BackupPlan.
-        :type: list[int]
+        :type backup_at: list[int]
         """
         self._backup_at = backup_at
 
@@ -114,7 +125,7 @@ class BackupPlan:
         备份周期类型，目前支持“weekly”。
 
         :param period_type: The period_type of this BackupPlan.
-        :type: str
+        :type period_type: str
         """
         self._period_type = period_type
 
@@ -136,7 +147,7 @@ class BackupPlan:
         备份执行时间，“00:00-01:00”代表0点开始执行备份。
 
         :param begin_at: The begin_at of this BackupPlan.
-        :type: str
+        :type begin_at: str
         """
         self._begin_at = begin_at
 

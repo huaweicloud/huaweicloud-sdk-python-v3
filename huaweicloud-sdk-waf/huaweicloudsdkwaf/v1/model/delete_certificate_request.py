@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteCertificateRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteCertificateRequest:
     }
 
     def __init__(self, enterprise_project_id=None, certificate_id=None):
-        """DeleteCertificateRequest - a model defined in huaweicloud sdk"""
+        """DeleteCertificateRequest
+
+        The model defined in huaweicloud sdk
+
+        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        :type enterprise_project_id: str
+        :param certificate_id: https证书id，您可以通过调用查询证书列表（ListCertificates）接口获取证书id
+        :type certificate_id: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class DeleteCertificateRequest:
         您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this DeleteCertificateRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -84,7 +91,7 @@ class DeleteCertificateRequest:
         https证书id，您可以通过调用查询证书列表（ListCertificates）接口获取证书id
 
         :param certificate_id: The certificate_id of this DeleteCertificateRequest.
-        :type: str
+        :type certificate_id: str
         """
         self._certificate_id = certificate_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDiffCommitResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowDiffCommitResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """ShowDiffCommitResponse - a model defined in huaweicloud sdk"""
+        """ShowDiffCommitResponse
+
+        The model defined in huaweicloud sdk
+
+        :param error: 
+        :type error: :class:`huaweicloudsdkcodehub.v3.Error`
+        :param result: 差异列表
+        :type result: list[:class:`huaweicloudsdkcodehub.v3.DiffCommitInfo`]
+        :param status: 响应状态
+        :type status: str
+        """
         
         super(ShowDiffCommitResponse, self).__init__()
 
@@ -56,7 +65,7 @@ class ShowDiffCommitResponse(SdkResponse):
 
 
         :return: The error of this ShowDiffCommitResponse.
-        :rtype: Error
+        :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
         """
         return self._error
 
@@ -66,7 +75,7 @@ class ShowDiffCommitResponse(SdkResponse):
 
 
         :param error: The error of this ShowDiffCommitResponse.
-        :type: Error
+        :type error: :class:`huaweicloudsdkcodehub.v3.Error`
         """
         self._error = error
 
@@ -77,7 +86,7 @@ class ShowDiffCommitResponse(SdkResponse):
         差异列表
 
         :return: The result of this ShowDiffCommitResponse.
-        :rtype: list[DiffCommitInfo]
+        :rtype: list[:class:`huaweicloudsdkcodehub.v3.DiffCommitInfo`]
         """
         return self._result
 
@@ -88,7 +97,7 @@ class ShowDiffCommitResponse(SdkResponse):
         差异列表
 
         :param result: The result of this ShowDiffCommitResponse.
-        :type: list[DiffCommitInfo]
+        :type result: list[:class:`huaweicloudsdkcodehub.v3.DiffCommitInfo`]
         """
         self._result = result
 
@@ -110,7 +119,7 @@ class ShowDiffCommitResponse(SdkResponse):
         响应状态
 
         :param status: The status of this ShowDiffCommitResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 

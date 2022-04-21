@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRateOnPeriodDetailResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListRateOnPeriodDetailResponse(SdkResponse):
     }
 
     def __init__(self, official_website_rating_result=None, optional_discount_rating_results=None, currency=None):
-        """ListRateOnPeriodDetailResponse - a model defined in huaweicloud sdk"""
+        """ListRateOnPeriodDetailResponse
+
+        The model defined in huaweicloud sdk
+
+        :param official_website_rating_result: 
+        :type official_website_rating_result: :class:`huaweicloudsdkbssintl.v2.OfficialWebsiteRatingResult`
+        :param optional_discount_rating_results: 存在可选折扣优惠时返回折扣优惠维度询价结果，每个折扣优惠一组询价结果，具体参见表4。
+        :type optional_discount_rating_results: list[:class:`huaweicloudsdkbssintl.v2.OptionalDiscountRatingResult`]
+        :param currency: 币种。 USD：美元。 值为空代表美元。
+        :type currency: str
+        """
         
         super(ListRateOnPeriodDetailResponse, self).__init__()
 
@@ -56,7 +65,7 @@ class ListRateOnPeriodDetailResponse(SdkResponse):
 
 
         :return: The official_website_rating_result of this ListRateOnPeriodDetailResponse.
-        :rtype: OfficialWebsiteRatingResult
+        :rtype: :class:`huaweicloudsdkbssintl.v2.OfficialWebsiteRatingResult`
         """
         return self._official_website_rating_result
 
@@ -66,7 +75,7 @@ class ListRateOnPeriodDetailResponse(SdkResponse):
 
 
         :param official_website_rating_result: The official_website_rating_result of this ListRateOnPeriodDetailResponse.
-        :type: OfficialWebsiteRatingResult
+        :type official_website_rating_result: :class:`huaweicloudsdkbssintl.v2.OfficialWebsiteRatingResult`
         """
         self._official_website_rating_result = official_website_rating_result
 
@@ -77,7 +86,7 @@ class ListRateOnPeriodDetailResponse(SdkResponse):
         存在可选折扣优惠时返回折扣优惠维度询价结果，每个折扣优惠一组询价结果，具体参见表4。
 
         :return: The optional_discount_rating_results of this ListRateOnPeriodDetailResponse.
-        :rtype: list[OptionalDiscountRatingResult]
+        :rtype: list[:class:`huaweicloudsdkbssintl.v2.OptionalDiscountRatingResult`]
         """
         return self._optional_discount_rating_results
 
@@ -88,7 +97,7 @@ class ListRateOnPeriodDetailResponse(SdkResponse):
         存在可选折扣优惠时返回折扣优惠维度询价结果，每个折扣优惠一组询价结果，具体参见表4。
 
         :param optional_discount_rating_results: The optional_discount_rating_results of this ListRateOnPeriodDetailResponse.
-        :type: list[OptionalDiscountRatingResult]
+        :type optional_discount_rating_results: list[:class:`huaweicloudsdkbssintl.v2.OptionalDiscountRatingResult`]
         """
         self._optional_discount_rating_results = optional_discount_rating_results
 
@@ -110,7 +119,7 @@ class ListRateOnPeriodDetailResponse(SdkResponse):
         币种。 USD：美元。 值为空代表美元。
 
         :param currency: The currency of this ListRateOnPeriodDetailResponse.
-        :type: str
+        :type currency: str
         """
         self._currency = currency
 

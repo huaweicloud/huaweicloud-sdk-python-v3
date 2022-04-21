@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdatePolicyRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdatePolicyRequestBody:
     }
 
     def __init__(self, name=None, action=None, options=None):
-        """UpdatePolicyRequestBody - a model defined in huaweicloud sdk"""
+        """UpdatePolicyRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param name: 防护策略名
+        :type name: str
+        :param action: 
+        :type action: :class:`huaweicloudsdkwaf.v1.PolicyAction`
+        :param options: 
+        :type options: :class:`huaweicloudsdkwaf.v1.PolicyOption`
+        """
         
         
 
@@ -68,7 +77,7 @@ class UpdatePolicyRequestBody:
         防护策略名
 
         :param name: The name of this UpdatePolicyRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -78,7 +87,7 @@ class UpdatePolicyRequestBody:
 
 
         :return: The action of this UpdatePolicyRequestBody.
-        :rtype: PolicyAction
+        :rtype: :class:`huaweicloudsdkwaf.v1.PolicyAction`
         """
         return self._action
 
@@ -88,7 +97,7 @@ class UpdatePolicyRequestBody:
 
 
         :param action: The action of this UpdatePolicyRequestBody.
-        :type: PolicyAction
+        :type action: :class:`huaweicloudsdkwaf.v1.PolicyAction`
         """
         self._action = action
 
@@ -98,7 +107,7 @@ class UpdatePolicyRequestBody:
 
 
         :return: The options of this UpdatePolicyRequestBody.
-        :rtype: PolicyOption
+        :rtype: :class:`huaweicloudsdkwaf.v1.PolicyOption`
         """
         return self._options
 
@@ -108,7 +117,7 @@ class UpdatePolicyRequestBody:
 
 
         :param options: The options of this UpdatePolicyRequestBody.
-        :type: PolicyOption
+        :type options: :class:`huaweicloudsdkwaf.v1.PolicyOption`
         """
         self._options = options
 

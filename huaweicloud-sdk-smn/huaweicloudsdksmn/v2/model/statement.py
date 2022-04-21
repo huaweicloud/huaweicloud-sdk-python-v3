@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Statement:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class Statement:
     }
 
     def __init__(self, sid=None, effect=None, principal=None, not_principal=None, action=None, not_action=None, resource=None, not_resource=None):
-        """Statement - a model defined in huaweicloud sdk"""
+        """Statement
+
+        The model defined in huaweicloud sdk
+
+        :param sid: Statement语句的ID。 Statement语句ID必须是唯一的，例如statement01、statement02。
+        :type sid: str
+        :param effect: Statement语句的效果。“Allow”或者“Deny”。
+        :type effect: str
+        :param principal: Statement语句作用的对象。 目前支持“CSP”和“Service”两类对象。  “CSP”对象指的是其他用户，可以作用于多个用户。  “Service”对象指的是云服务，可以作用于多个云服务。  Principal元素和NotPrincipal元素两者任选其一。选定后， “CSP”对象填写内容的格式为urn:csp:iam::domainId:root，其中domainId为其他用户的“账号ID”。  “Service”对象填写内容的格式为小写的云服务名称缩写。
+        :type principal: str
+        :param not_principal: NotPrincipal：Statement语句排除作用的对象。  目前支持“CSP”和“Service”两类对象。  “CSP”对象指的是其他用户，可以作用于多个用户。  “Service”对象指的是云服务，可以作用于多个云服务。  Principal元素和NotPrincipal元素两者任选其一。选定后， “CSP”对象填写内容的格式为urn:csp:iam::domainId:root，其中domainId为其他用户的“账号ID”。  “Service”对象填写内容的格式为小写的云服务名称缩写。
+        :type not_principal: str
+        :param action: Statement语句作用的操作。  允许使用通配符来表示一类操作，例如：SMN:Update*、SMN:Delete*。如果只填写“*”，表示Statement语句作用的操作为该资源支持的所有操作。  Action元素和NotAction元素两者任选其一。  目前支持的操作有：  SMN:UpdateTopic SMN:DeleteTopic SMN:QueryTopicDetail SMN:ListTopicAttributes SMN:UpdateTopicAttribute SMN:DeleteTopicAttributes SMN:DeleteTopicAttributeByName SMN:ListSubscriptionsByTopic SMN:Subscribe SMN:Unsubscribe SMN:Publish
+        :type action: str
+        :param not_action: Statement语句排除作用的操作。  允许使用通配符来表示一类操作，例如：SMN:Update*、SMN:Delete*。如果只填写“*”，表示Statement语句作用的操作为该资源支持的所有操作。  Action元素和NotAction元素两者任选其一。  目前支持的操作有：  SMN:UpdateTopic  SMN:DeleteTopic  SMN:QueryTopicDetail  SMN:ListTopicAttributes  SMN:UpdateTopicAttribute  SMN:DeleteTopicAttributes  SMN:DeleteTopicAttributeByName  SMN:ListSubscriptionsByTopic  SMN:Subscribe  SMN:Unsubscribe  SMN:Publish
+        :type not_action: str
+        :param resource: Statement语句作用的主题。  Resource和NotResource两者任选其一。选定后，填写内容为主题URN。
+        :type resource: str
+        :param not_resource: Statement语句排除作用的主题。  Resource和NotResource两者任选其一。选定后，填写内容为主题URN。
+        :type not_resource: str
+        """
         
         
 
@@ -91,7 +110,7 @@ class Statement:
         Statement语句的ID。 Statement语句ID必须是唯一的，例如statement01、statement02。
 
         :param sid: The sid of this Statement.
-        :type: str
+        :type sid: str
         """
         self._sid = sid
 
@@ -113,7 +132,7 @@ class Statement:
         Statement语句的效果。“Allow”或者“Deny”。
 
         :param effect: The effect of this Statement.
-        :type: str
+        :type effect: str
         """
         self._effect = effect
 
@@ -135,7 +154,7 @@ class Statement:
         Statement语句作用的对象。 目前支持“CSP”和“Service”两类对象。  “CSP”对象指的是其他用户，可以作用于多个用户。  “Service”对象指的是云服务，可以作用于多个云服务。  Principal元素和NotPrincipal元素两者任选其一。选定后， “CSP”对象填写内容的格式为urn:csp:iam::domainId:root，其中domainId为其他用户的“账号ID”。  “Service”对象填写内容的格式为小写的云服务名称缩写。
 
         :param principal: The principal of this Statement.
-        :type: str
+        :type principal: str
         """
         self._principal = principal
 
@@ -157,7 +176,7 @@ class Statement:
         NotPrincipal：Statement语句排除作用的对象。  目前支持“CSP”和“Service”两类对象。  “CSP”对象指的是其他用户，可以作用于多个用户。  “Service”对象指的是云服务，可以作用于多个云服务。  Principal元素和NotPrincipal元素两者任选其一。选定后， “CSP”对象填写内容的格式为urn:csp:iam::domainId:root，其中domainId为其他用户的“账号ID”。  “Service”对象填写内容的格式为小写的云服务名称缩写。
 
         :param not_principal: The not_principal of this Statement.
-        :type: str
+        :type not_principal: str
         """
         self._not_principal = not_principal
 
@@ -179,7 +198,7 @@ class Statement:
         Statement语句作用的操作。  允许使用通配符来表示一类操作，例如：SMN:Update*、SMN:Delete*。如果只填写“*”，表示Statement语句作用的操作为该资源支持的所有操作。  Action元素和NotAction元素两者任选其一。  目前支持的操作有：  SMN:UpdateTopic SMN:DeleteTopic SMN:QueryTopicDetail SMN:ListTopicAttributes SMN:UpdateTopicAttribute SMN:DeleteTopicAttributes SMN:DeleteTopicAttributeByName SMN:ListSubscriptionsByTopic SMN:Subscribe SMN:Unsubscribe SMN:Publish
 
         :param action: The action of this Statement.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -201,7 +220,7 @@ class Statement:
         Statement语句排除作用的操作。  允许使用通配符来表示一类操作，例如：SMN:Update*、SMN:Delete*。如果只填写“*”，表示Statement语句作用的操作为该资源支持的所有操作。  Action元素和NotAction元素两者任选其一。  目前支持的操作有：  SMN:UpdateTopic  SMN:DeleteTopic  SMN:QueryTopicDetail  SMN:ListTopicAttributes  SMN:UpdateTopicAttribute  SMN:DeleteTopicAttributes  SMN:DeleteTopicAttributeByName  SMN:ListSubscriptionsByTopic  SMN:Subscribe  SMN:Unsubscribe  SMN:Publish
 
         :param not_action: The not_action of this Statement.
-        :type: str
+        :type not_action: str
         """
         self._not_action = not_action
 
@@ -223,7 +242,7 @@ class Statement:
         Statement语句作用的主题。  Resource和NotResource两者任选其一。选定后，填写内容为主题URN。
 
         :param resource: The resource of this Statement.
-        :type: str
+        :type resource: str
         """
         self._resource = resource
 
@@ -245,7 +264,7 @@ class Statement:
         Statement语句排除作用的主题。  Resource和NotResource两者任选其一。选定后，填写内容为主题URN。
 
         :param not_resource: The not_resource of this Statement.
-        :type: str
+        :type not_resource: str
         """
         self._not_resource = not_resource
 

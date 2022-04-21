@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InvitorInfos:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class InvitorInfos:
     }
 
     def __init__(self, tenant_id=None, project_id=None, blockchain_id=None):
-        """InvitorInfos - a model defined in huaweicloud sdk"""
+        """InvitorInfos
+
+        The model defined in huaweicloud sdk
+
+        :param tenant_id: 邀请方租户ID
+        :type tenant_id: str
+        :param project_id: 邀请方项目ID
+        :type project_id: str
+        :param blockchain_id: 邀请方服务实例ID
+        :type blockchain_id: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class InvitorInfos:
         邀请方租户ID
 
         :param tenant_id: The tenant_id of this InvitorInfos.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 
@@ -87,7 +96,7 @@ class InvitorInfos:
         邀请方项目ID
 
         :param project_id: The project_id of this InvitorInfos.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -109,7 +118,7 @@ class InvitorInfos:
         邀请方服务实例ID
 
         :param blockchain_id: The blockchain_id of this InvitorInfos.
-        :type: str
+        :type blockchain_id: str
         """
         self._blockchain_id = blockchain_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowPublicipPoolResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowPublicipPoolResponse(SdkResponse):
     }
 
     def __init__(self, publicip_pool=None, request_id=None):
-        """ShowPublicipPoolResponse - a model defined in huaweicloud sdk"""
+        """ShowPublicipPoolResponse
+
+        The model defined in huaweicloud sdk
+
+        :param publicip_pool: 
+        :type publicip_pool: :class:`huaweicloudsdkeip.v3.PublicipPoolShowResp`
+        :param request_id: 本次请求的编号
+        :type request_id: str
+        """
         
         super(ShowPublicipPoolResponse, self).__init__()
 
@@ -51,7 +58,7 @@ class ShowPublicipPoolResponse(SdkResponse):
 
 
         :return: The publicip_pool of this ShowPublicipPoolResponse.
-        :rtype: PublicipPoolShowResp
+        :rtype: :class:`huaweicloudsdkeip.v3.PublicipPoolShowResp`
         """
         return self._publicip_pool
 
@@ -61,7 +68,7 @@ class ShowPublicipPoolResponse(SdkResponse):
 
 
         :param publicip_pool: The publicip_pool of this ShowPublicipPoolResponse.
-        :type: PublicipPoolShowResp
+        :type publicip_pool: :class:`huaweicloudsdkeip.v3.PublicipPoolShowResp`
         """
         self._publicip_pool = publicip_pool
 
@@ -83,7 +90,7 @@ class ShowPublicipPoolResponse(SdkResponse):
         本次请求的编号
 
         :param request_id: The request_id of this ShowPublicipPoolResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ConfirmAssetUploadReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ConfirmAssetUploadReq:
     }
 
     def __init__(self, asset_id=None, status=None):
-        """ConfirmAssetUploadReq - a model defined in huaweicloud sdk"""
+        """ConfirmAssetUploadReq
+
+        The model defined in huaweicloud sdk
+
+        :param asset_id: 媒资ID。
+        :type asset_id: str
+        :param status: 上传状态。  取值如下： - CREATED：创建成功。 - FAILED：创建失败。 - CANCELLED：创建取消。
+        :type status: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ConfirmAssetUploadReq:
         媒资ID。
 
         :param asset_id: The asset_id of this ConfirmAssetUploadReq.
-        :type: str
+        :type asset_id: str
         """
         self._asset_id = asset_id
 
@@ -83,7 +90,7 @@ class ConfirmAssetUploadReq:
         上传状态。  取值如下： - CREATED：创建成功。 - FAILED：创建失败。 - CANCELLED：创建取消。
 
         :param status: The status of this ConfirmAssetUploadReq.
-        :type: str
+        :type status: str
         """
         self._status = status
 

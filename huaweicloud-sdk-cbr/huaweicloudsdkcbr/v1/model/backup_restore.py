@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BackupRestore:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class BackupRestore:
     }
 
     def __init__(self, mappings=None, power_on=None, server_id=None, volume_id=None, resource_id=None):
-        """BackupRestore - a model defined in huaweicloud sdk"""
+        """BackupRestore
+
+        The model defined in huaweicloud sdk
+
+        :param mappings: 恢复的映射关系(整机恢复时必填，卷恢复时可选但是不会用到填写的值）
+        :type mappings: list[:class:`huaweicloudsdkcbr.v1.BackupRestoreServerMapping`]
+        :param power_on: 恢复后是否开始，默认开机。
+        :type power_on: bool
+        :param server_id: 恢复的目标虚拟机ID（整机恢复时必填）
+        :type server_id: str
+        :param volume_id: 恢复的目标卷ID（卷恢复时必填）
+        :type volume_id: str
+        :param resource_id: 待恢复的目标资源ID
+        :type resource_id: str
+        """
         
         
 
@@ -67,7 +80,7 @@ class BackupRestore:
         恢复的映射关系(整机恢复时必填，卷恢复时可选但是不会用到填写的值）
 
         :return: The mappings of this BackupRestore.
-        :rtype: list[BackupRestoreServerMapping]
+        :rtype: list[:class:`huaweicloudsdkcbr.v1.BackupRestoreServerMapping`]
         """
         return self._mappings
 
@@ -78,7 +91,7 @@ class BackupRestore:
         恢复的映射关系(整机恢复时必填，卷恢复时可选但是不会用到填写的值）
 
         :param mappings: The mappings of this BackupRestore.
-        :type: list[BackupRestoreServerMapping]
+        :type mappings: list[:class:`huaweicloudsdkcbr.v1.BackupRestoreServerMapping`]
         """
         self._mappings = mappings
 
@@ -100,7 +113,7 @@ class BackupRestore:
         恢复后是否开始，默认开机。
 
         :param power_on: The power_on of this BackupRestore.
-        :type: bool
+        :type power_on: bool
         """
         self._power_on = power_on
 
@@ -122,7 +135,7 @@ class BackupRestore:
         恢复的目标虚拟机ID（整机恢复时必填）
 
         :param server_id: The server_id of this BackupRestore.
-        :type: str
+        :type server_id: str
         """
         self._server_id = server_id
 
@@ -144,7 +157,7 @@ class BackupRestore:
         恢复的目标卷ID（卷恢复时必填）
 
         :param volume_id: The volume_id of this BackupRestore.
-        :type: str
+        :type volume_id: str
         """
         self._volume_id = volume_id
 
@@ -166,7 +179,7 @@ class BackupRestore:
         待恢复的目标资源ID
 
         :param resource_id: The resource_id of this BackupRestore.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 

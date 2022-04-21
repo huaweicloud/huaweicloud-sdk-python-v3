@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InviteUserRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class InviteUserRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, body=None):
-        """InviteUserRequest - a model defined in huaweicloud sdk"""
+        """InviteUserRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        :type x_request_id: str
+        :param accept_language: 语言参数，默认为中文zh-CN, 英文为en-US
+        :type accept_language: str
+        :param body: Body of the InviteUserRequest
+        :type body: :class:`huaweicloudsdkmeeting.v1.AddUserRequestBody`
+        """
         
         
 
@@ -68,7 +77,7 @@ class InviteUserRequest:
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
 
         :param x_request_id: The x_request_id of this InviteUserRequest.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 
@@ -90,7 +99,7 @@ class InviteUserRequest:
         语言参数，默认为中文zh-CN, 英文为en-US
 
         :param accept_language: The accept_language of this InviteUserRequest.
-        :type: str
+        :type accept_language: str
         """
         self._accept_language = accept_language
 
@@ -100,7 +109,7 @@ class InviteUserRequest:
 
 
         :return: The body of this InviteUserRequest.
-        :rtype: AddUserRequestBody
+        :rtype: :class:`huaweicloudsdkmeeting.v1.AddUserRequestBody`
         """
         return self._body
 
@@ -110,7 +119,7 @@ class InviteUserRequest:
 
 
         :param body: The body of this InviteUserRequest.
-        :type: AddUserRequestBody
+        :type body: :class:`huaweicloudsdkmeeting.v1.AddUserRequestBody`
         """
         self._body = body
 

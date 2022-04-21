@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MetaDataForAlarmHistory:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class MetaDataForAlarmHistory:
     }
 
     def __init__(self, total=None):
-        """MetaDataForAlarmHistory - a model defined in huaweicloud sdk"""
+        """MetaDataForAlarmHistory
+
+        The model defined in huaweicloud sdk
+
+        :param total: 查询告警历史返回的总条数。
+        :type total: int
+        """
         
         
 
@@ -57,7 +62,7 @@ class MetaDataForAlarmHistory:
         查询告警历史返回的总条数。
 
         :param total: The total of this MetaDataForAlarmHistory.
-        :type: int
+        :type total: int
         """
         self._total = total
 

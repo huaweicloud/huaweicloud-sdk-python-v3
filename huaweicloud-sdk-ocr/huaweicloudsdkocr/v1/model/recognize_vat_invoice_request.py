@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RecognizeVatInvoiceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RecognizeVatInvoiceRequest:
     }
 
     def __init__(self, body=None):
-        """RecognizeVatInvoiceRequest - a model defined in huaweicloud sdk"""
+        """RecognizeVatInvoiceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the RecognizeVatInvoiceRequest
+        :type body: :class:`huaweicloudsdkocr.v1.VatInvoiceRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class RecognizeVatInvoiceRequest:
 
 
         :return: The body of this RecognizeVatInvoiceRequest.
-        :rtype: VatInvoiceRequestBody
+        :rtype: :class:`huaweicloudsdkocr.v1.VatInvoiceRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class RecognizeVatInvoiceRequest:
 
 
         :param body: The body of this RecognizeVatInvoiceRequest.
-        :type: VatInvoiceRequestBody
+        :type body: :class:`huaweicloudsdkocr.v1.VatInvoiceRequestBody`
         """
         self._body = body
 

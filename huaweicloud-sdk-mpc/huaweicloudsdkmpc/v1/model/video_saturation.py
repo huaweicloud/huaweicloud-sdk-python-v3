@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VideoSaturation:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class VideoSaturation:
     }
 
     def __init__(self, name=None, execution_order=None, saturation=None):
-        """VideoSaturation - a model defined in huaweicloud sdk"""
+        """VideoSaturation
+
+        The model defined in huaweicloud sdk
+
+        :param name: 饱和度算法名称\&quot;“hw-saturation\&quot;。 
+        :type name: str
+        :param execution_order: 1 表示视频处理时第一个执行，2表示第二个执行，以此类推；除不执行，各视频处理算法的执行次序不可相同。 
+        :type execution_order: int
+        :param saturation: 饱和度调节的程度， 值越大， 饱和度越高。 
+        :type saturation: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class VideoSaturation:
         饱和度算法名称\"“hw-saturation\"。 
 
         :param name: The name of this VideoSaturation.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -90,7 +99,7 @@ class VideoSaturation:
         1 表示视频处理时第一个执行，2表示第二个执行，以此类推；除不执行，各视频处理算法的执行次序不可相同。 
 
         :param execution_order: The execution_order of this VideoSaturation.
-        :type: int
+        :type execution_order: int
         """
         self._execution_order = execution_order
 
@@ -112,7 +121,7 @@ class VideoSaturation:
         饱和度调节的程度， 值越大， 饱和度越高。 
 
         :param saturation: The saturation of this VideoSaturation.
-        :type: str
+        :type saturation: str
         """
         self._saturation = saturation
 

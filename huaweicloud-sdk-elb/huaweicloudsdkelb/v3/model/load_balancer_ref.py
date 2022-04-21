@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LoadBalancerRef:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class LoadBalancerRef:
     }
 
     def __init__(self, id=None):
-        """LoadBalancerRef - a model defined in huaweicloud sdk"""
+        """LoadBalancerRef
+
+        The model defined in huaweicloud sdk
+
+        :param id: 负载均衡器ID。
+        :type id: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class LoadBalancerRef:
         负载均衡器ID。
 
         :param id: The id of this LoadBalancerRef.
-        :type: str
+        :type id: str
         """
         self._id = id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowMembersDetailRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class ShowMembersDetailRequest:
     }
 
     def __init__(self, backup_id=None, dest_project_id=None, image_id=None, status=None, vault_id=None, limit=None, marker=None, offset=None, sort=None):
-        """ShowMembersDetailRequest - a model defined in huaweicloud sdk"""
+        """ShowMembersDetailRequest
+
+        The model defined in huaweicloud sdk
+
+        :param backup_id: 备份id
+        :type backup_id: str
+        :param dest_project_id: 接受备份共享的项目id
+        :type dest_project_id: str
+        :param image_id: 接受的共享备份副本注册的镜像id
+        :type image_id: str
+        :param status: 备份共享状态
+        :type status: str
+        :param vault_id: 目标端接受共享备份的存储库id，仅支持uuid
+        :type vault_id: str
+        :param limit: 每页显示的条目数量，正整数
+        :type limit: int
+        :param marker: 上一次查询最后一条的id，仅支持uuid
+        :type marker: str
+        :param offset: 偏移值，正整数
+        :type offset: int
+        :param sort: sort的内容为一组由逗号分隔的属性及可选排序方向组成，形如&lt;key1&gt;[:&lt;direction&gt;],&lt;key2&gt;[:&lt;direction&gt;],其中direction的取值为asc (升序) 或 desc (降序),如没有传入direction参数，默认为降序，sort内容的长度限制为255个字符。
+        :type sort: str
+        """
         
         
 
@@ -97,7 +118,7 @@ class ShowMembersDetailRequest:
         备份id
 
         :param backup_id: The backup_id of this ShowMembersDetailRequest.
-        :type: str
+        :type backup_id: str
         """
         self._backup_id = backup_id
 
@@ -119,7 +140,7 @@ class ShowMembersDetailRequest:
         接受备份共享的项目id
 
         :param dest_project_id: The dest_project_id of this ShowMembersDetailRequest.
-        :type: str
+        :type dest_project_id: str
         """
         self._dest_project_id = dest_project_id
 
@@ -141,7 +162,7 @@ class ShowMembersDetailRequest:
         接受的共享备份副本注册的镜像id
 
         :param image_id: The image_id of this ShowMembersDetailRequest.
-        :type: str
+        :type image_id: str
         """
         self._image_id = image_id
 
@@ -163,7 +184,7 @@ class ShowMembersDetailRequest:
         备份共享状态
 
         :param status: The status of this ShowMembersDetailRequest.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -185,7 +206,7 @@ class ShowMembersDetailRequest:
         目标端接受共享备份的存储库id，仅支持uuid
 
         :param vault_id: The vault_id of this ShowMembersDetailRequest.
-        :type: str
+        :type vault_id: str
         """
         self._vault_id = vault_id
 
@@ -207,7 +228,7 @@ class ShowMembersDetailRequest:
         每页显示的条目数量，正整数
 
         :param limit: The limit of this ShowMembersDetailRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -229,7 +250,7 @@ class ShowMembersDetailRequest:
         上一次查询最后一条的id，仅支持uuid
 
         :param marker: The marker of this ShowMembersDetailRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -251,7 +272,7 @@ class ShowMembersDetailRequest:
         偏移值，正整数
 
         :param offset: The offset of this ShowMembersDetailRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -273,7 +294,7 @@ class ShowMembersDetailRequest:
         sort的内容为一组由逗号分隔的属性及可选排序方向组成，形如<key1>[:<direction>],<key2>[:<direction>],其中direction的取值为asc (升序) 或 desc (降序),如没有传入direction参数，默认为降序，sort内容的长度限制为255个字符。
 
         :param sort: The sort of this ShowMembersDetailRequest.
-        :type: str
+        :type sort: str
         """
         self._sort = sort
 

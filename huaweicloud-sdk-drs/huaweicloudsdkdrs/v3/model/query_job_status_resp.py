@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryJobStatusResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class QueryJobStatusResp:
     }
 
     def __init__(self, id=None, status=None, error_code=None, error_message=None):
-        """QueryJobStatusResp - a model defined in huaweicloud sdk"""
+        """QueryJobStatusResp
+
+        The model defined in huaweicloud sdk
+
+        :param id: 任务ID
+        :type id: str
+        :param status: 任务状态
+        :type status: str
+        :param error_code: 错误码
+        :type error_code: str
+        :param error_message: 错误信息
+        :type error_message: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class QueryJobStatusResp:
         任务ID
 
         :param id: The id of this QueryJobStatusResp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -95,7 +106,7 @@ class QueryJobStatusResp:
         任务状态
 
         :param status: The status of this QueryJobStatusResp.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -117,7 +128,7 @@ class QueryJobStatusResp:
         错误码
 
         :param error_code: The error_code of this QueryJobStatusResp.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -139,7 +150,7 @@ class QueryJobStatusResp:
         错误信息
 
         :param error_message: The error_message of this QueryJobStatusResp.
-        :type: str
+        :type error_message: str
         """
         self._error_message = error_message
 

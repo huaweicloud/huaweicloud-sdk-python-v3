@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ComCCE:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ComCCE:
     }
 
     def __init__(self, cluster=None, network=None, security_group=None):
-        """ComCCE - a model defined in huaweicloud sdk"""
+        """ComCCE
+
+        The model defined in huaweicloud sdk
+
+        :param cluster: 
+        :type cluster: :class:`huaweicloudsdkbcs.v2.Detail`
+        :param network: 
+        :type network: :class:`huaweicloudsdkbcs.v2.Detail`
+        :param security_group: 
+        :type security_group: :class:`huaweicloudsdkbcs.v2.Detail`
+        """
         
         
 
@@ -56,7 +65,7 @@ class ComCCE:
 
 
         :return: The cluster of this ComCCE.
-        :rtype: Detail
+        :rtype: :class:`huaweicloudsdkbcs.v2.Detail`
         """
         return self._cluster
 
@@ -66,7 +75,7 @@ class ComCCE:
 
 
         :param cluster: The cluster of this ComCCE.
-        :type: Detail
+        :type cluster: :class:`huaweicloudsdkbcs.v2.Detail`
         """
         self._cluster = cluster
 
@@ -76,7 +85,7 @@ class ComCCE:
 
 
         :return: The network of this ComCCE.
-        :rtype: Detail
+        :rtype: :class:`huaweicloudsdkbcs.v2.Detail`
         """
         return self._network
 
@@ -86,7 +95,7 @@ class ComCCE:
 
 
         :param network: The network of this ComCCE.
-        :type: Detail
+        :type network: :class:`huaweicloudsdkbcs.v2.Detail`
         """
         self._network = network
 
@@ -96,7 +105,7 @@ class ComCCE:
 
 
         :return: The security_group of this ComCCE.
-        :rtype: Detail
+        :rtype: :class:`huaweicloudsdkbcs.v2.Detail`
         """
         return self._security_group
 
@@ -106,7 +115,7 @@ class ComCCE:
 
 
         :param security_group: The security_group of this ComCCE.
-        :type: Detail
+        :type security_group: :class:`huaweicloudsdkbcs.v2.Detail`
         """
         self._security_group = security_group
 

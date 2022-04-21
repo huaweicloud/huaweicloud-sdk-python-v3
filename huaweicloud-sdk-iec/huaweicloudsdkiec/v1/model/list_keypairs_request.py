@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListKeypairsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListKeypairsRequest:
     }
 
     def __init__(self, limit=None, offset=None, name=None):
-        """ListKeypairsRequest - a model defined in huaweicloud sdk"""
+        """ListKeypairsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 查询返回keypair列表当前页面的数量。 取值范围：0~1000。
+        :type limit: int
+        :param offset: 偏移量。 当前偏移量，默认为0。
+        :type offset: int
+        :param name: 根据名称查询keypair列表。
+        :type name: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class ListKeypairsRequest:
         查询返回keypair列表当前页面的数量。 取值范围：0~1000。
 
         :param limit: The limit of this ListKeypairsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -90,7 +99,7 @@ class ListKeypairsRequest:
         偏移量。 当前偏移量，默认为0。
 
         :param offset: The offset of this ListKeypairsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -112,7 +121,7 @@ class ListKeypairsRequest:
         根据名称查询keypair列表。
 
         :param name: The name of this ListKeypairsRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 

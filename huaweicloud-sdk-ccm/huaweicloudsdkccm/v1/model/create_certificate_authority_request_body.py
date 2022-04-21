@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateCertificateAuthorityRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class CreateCertificateAuthorityRequestBody:
     }
 
     def __init__(self, type=None, distinguished_name=None, key_algorithm=None, validity=None, issuer_id=None, path_length=None, signature_algorithm=None, key_usages=None, crl_configuration=None):
-        """CreateCertificateAuthorityRequestBody - a model defined in huaweicloud sdk"""
+        """CreateCertificateAuthorityRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param type: 创建的CA类型。 - **ROOT** : 根CA - **SUBORDINATE** : 从属CA
+        :type type: str
+        :param distinguished_name: 
+        :type distinguished_name: :class:`huaweicloudsdkccm.v1.DistinguishedName`
+        :param key_algorithm: 密钥算法，可选值如下：   - **RSA2048** : RSA算法，密钥长度2048位；   - **RSA4096** : RSA算法，密钥长度4096位；   - **EC256** : 椭圆曲线算法（Elliptic Curve Digital Signature Algorithm (ECDSA)），密钥长度256位；   - **EC384** : 椭圆曲线算法（Elliptic Curve Digital Signature Algorithm (ECDSA)），密钥长度384位。
+        :type key_algorithm: str
+        :param validity: 
+        :type validity: :class:`huaweicloudsdkccm.v1.Validity`
+        :param issuer_id: 父CA证书ID，分以下三种情况：   - 创建根CA，根CA为自签名证书，无父CA，将忽略该参数；   - 创建从属CA，并需要直接激活该证书，为必填值；   - 创建从属CA，不需要直接激活该证书，本参数值将被忽略，激活证书时需要再次传入。
+        :type issuer_id: str
+        :param path_length: CA证书路径长度，分以下三种情况：   - 创建根CA，为便于后期对证书层级的扩展，根CA默认不对路径长度做限制，故将忽略该参数。证书层级规划可由从属CA做限制；   - 创建从属CA，并需要直接激活该证书，用户可自定义。缺省值为0；   - 创建从属CA，不需要直接激活该证书，本参数值将被忽略。激活证书时若要自定义，需要再次传入；
+        :type path_length: int
+        :param signature_algorithm: 签名哈希算法。 - 分以下三种情况：   - 创建根CA，为必填值；   - 创建从属CA，并需要直接激活该证书，为必填值；   - 创建从属CA，不需要直接激活该证书，本参数值将被忽略，激活证书时需要再次传入。 - 可选值如下：   - **SHA256**   - **SHA384**   - **SHA512**
+        :type signature_algorithm: str
+        :param key_usages: 密钥用法，具体标准参见RFC 5280中:[4.2.1.3节](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.3)。   - **digitalSignature** : 数字签名；   - **nonRepudiation** : 不可抵赖；   - **keyEncipherment** : 密钥用于加密密钥数据；   - **dataEncipherment** : 用于加密数据；   - **keyAgreement** : 密钥协商；   - **keyCertSign** : 签发证书；   - **cRLSign** : 签发吊销列表；   - **encipherOnly** : 仅用于加密；   - **decipherOnly** : 仅用于解密。 &gt; 缺省值如下： &gt; - 根CA证书：默认为**[digitalSignature,keyCertSign,cRLSign]**，忽略用户传入值； &gt; - 从属CA证书：默认为**[digitalSignature,keyCertSign,cRLSign]**，支持用户自定义。
+        :type key_usages: list[str]
+        :param crl_configuration: 
+        :type crl_configuration: :class:`huaweicloudsdkccm.v1.CrlConfiguration`
+        """
         
         
 
@@ -95,7 +116,7 @@ class CreateCertificateAuthorityRequestBody:
         创建的CA类型。 - **ROOT** : 根CA - **SUBORDINATE** : 从属CA
 
         :param type: The type of this CreateCertificateAuthorityRequestBody.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -105,7 +126,7 @@ class CreateCertificateAuthorityRequestBody:
 
 
         :return: The distinguished_name of this CreateCertificateAuthorityRequestBody.
-        :rtype: DistinguishedName
+        :rtype: :class:`huaweicloudsdkccm.v1.DistinguishedName`
         """
         return self._distinguished_name
 
@@ -115,7 +136,7 @@ class CreateCertificateAuthorityRequestBody:
 
 
         :param distinguished_name: The distinguished_name of this CreateCertificateAuthorityRequestBody.
-        :type: DistinguishedName
+        :type distinguished_name: :class:`huaweicloudsdkccm.v1.DistinguishedName`
         """
         self._distinguished_name = distinguished_name
 
@@ -137,7 +158,7 @@ class CreateCertificateAuthorityRequestBody:
         密钥算法，可选值如下：   - **RSA2048** : RSA算法，密钥长度2048位；   - **RSA4096** : RSA算法，密钥长度4096位；   - **EC256** : 椭圆曲线算法（Elliptic Curve Digital Signature Algorithm (ECDSA)），密钥长度256位；   - **EC384** : 椭圆曲线算法（Elliptic Curve Digital Signature Algorithm (ECDSA)），密钥长度384位。
 
         :param key_algorithm: The key_algorithm of this CreateCertificateAuthorityRequestBody.
-        :type: str
+        :type key_algorithm: str
         """
         self._key_algorithm = key_algorithm
 
@@ -147,7 +168,7 @@ class CreateCertificateAuthorityRequestBody:
 
 
         :return: The validity of this CreateCertificateAuthorityRequestBody.
-        :rtype: Validity
+        :rtype: :class:`huaweicloudsdkccm.v1.Validity`
         """
         return self._validity
 
@@ -157,7 +178,7 @@ class CreateCertificateAuthorityRequestBody:
 
 
         :param validity: The validity of this CreateCertificateAuthorityRequestBody.
-        :type: Validity
+        :type validity: :class:`huaweicloudsdkccm.v1.Validity`
         """
         self._validity = validity
 
@@ -179,7 +200,7 @@ class CreateCertificateAuthorityRequestBody:
         父CA证书ID，分以下三种情况：   - 创建根CA，根CA为自签名证书，无父CA，将忽略该参数；   - 创建从属CA，并需要直接激活该证书，为必填值；   - 创建从属CA，不需要直接激活该证书，本参数值将被忽略，激活证书时需要再次传入。
 
         :param issuer_id: The issuer_id of this CreateCertificateAuthorityRequestBody.
-        :type: str
+        :type issuer_id: str
         """
         self._issuer_id = issuer_id
 
@@ -201,7 +222,7 @@ class CreateCertificateAuthorityRequestBody:
         CA证书路径长度，分以下三种情况：   - 创建根CA，为便于后期对证书层级的扩展，根CA默认不对路径长度做限制，故将忽略该参数。证书层级规划可由从属CA做限制；   - 创建从属CA，并需要直接激活该证书，用户可自定义。缺省值为0；   - 创建从属CA，不需要直接激活该证书，本参数值将被忽略。激活证书时若要自定义，需要再次传入；
 
         :param path_length: The path_length of this CreateCertificateAuthorityRequestBody.
-        :type: int
+        :type path_length: int
         """
         self._path_length = path_length
 
@@ -223,7 +244,7 @@ class CreateCertificateAuthorityRequestBody:
         签名哈希算法。 - 分以下三种情况：   - 创建根CA，为必填值；   - 创建从属CA，并需要直接激活该证书，为必填值；   - 创建从属CA，不需要直接激活该证书，本参数值将被忽略，激活证书时需要再次传入。 - 可选值如下：   - **SHA256**   - **SHA384**   - **SHA512**
 
         :param signature_algorithm: The signature_algorithm of this CreateCertificateAuthorityRequestBody.
-        :type: str
+        :type signature_algorithm: str
         """
         self._signature_algorithm = signature_algorithm
 
@@ -245,7 +266,7 @@ class CreateCertificateAuthorityRequestBody:
         密钥用法，具体标准参见RFC 5280中:[4.2.1.3节](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.3)。   - **digitalSignature** : 数字签名；   - **nonRepudiation** : 不可抵赖；   - **keyEncipherment** : 密钥用于加密密钥数据；   - **dataEncipherment** : 用于加密数据；   - **keyAgreement** : 密钥协商；   - **keyCertSign** : 签发证书；   - **cRLSign** : 签发吊销列表；   - **encipherOnly** : 仅用于加密；   - **decipherOnly** : 仅用于解密。 > 缺省值如下： > - 根CA证书：默认为**[digitalSignature,keyCertSign,cRLSign]**，忽略用户传入值； > - 从属CA证书：默认为**[digitalSignature,keyCertSign,cRLSign]**，支持用户自定义。
 
         :param key_usages: The key_usages of this CreateCertificateAuthorityRequestBody.
-        :type: list[str]
+        :type key_usages: list[str]
         """
         self._key_usages = key_usages
 
@@ -255,7 +276,7 @@ class CreateCertificateAuthorityRequestBody:
 
 
         :return: The crl_configuration of this CreateCertificateAuthorityRequestBody.
-        :rtype: CrlConfiguration
+        :rtype: :class:`huaweicloudsdkccm.v1.CrlConfiguration`
         """
         return self._crl_configuration
 
@@ -265,7 +286,7 @@ class CreateCertificateAuthorityRequestBody:
 
 
         :param crl_configuration: The crl_configuration of this CreateCertificateAuthorityRequestBody.
-        :type: CrlConfiguration
+        :type crl_configuration: :class:`huaweicloudsdkccm.v1.CrlConfiguration`
         """
         self._crl_configuration = crl_configuration
 

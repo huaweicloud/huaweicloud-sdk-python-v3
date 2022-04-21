@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EncryptDatakeyRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class EncryptDatakeyRequestBody:
     }
 
     def __init__(self, key_id=None, encryption_context=None, plain_text=None, datakey_plain_length=None, sequence=None):
-        """EncryptDatakeyRequestBody - a model defined in huaweicloud sdk"""
+        """EncryptDatakeyRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param key_id: 密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
+        :type key_id: str
+        :param encryption_context: 一系列key-value键值对，用于记录资源上下文信息，用于保护数据的完整性，不应包含敏感信息，最大长度为8192。 当在加密时指定了该参数时，解密密文时，需要传入相同的参数，才能正确的解密。 例如：{\&quot;Key1\&quot;:\&quot;Value1\&quot;,\&quot;Key2\&quot;:\&quot;Value2\&quot;}
+        :type encryption_context: object
+        :param plain_text: DEK明文和DEK明文的SHA256（32字节），均为16进制字符串表示。 DEK明文（64字节）和DEK明文的SHA256（32字节），均为16进制字符串表示
+        :type plain_text: str
+        :param datakey_plain_length: DEK明文字节长度，取值范围为1~1024。 DEK明文字节长度，取值为“64”。
+        :type datakey_plain_length: str
+        :param sequence: 请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
+        :type sequence: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class EncryptDatakeyRequestBody:
         密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
 
         :param key_id: The key_id of this EncryptDatakeyRequestBody.
-        :type: str
+        :type key_id: str
         """
         self._key_id = key_id
 
@@ -100,7 +113,7 @@ class EncryptDatakeyRequestBody:
         一系列key-value键值对，用于记录资源上下文信息，用于保护数据的完整性，不应包含敏感信息，最大长度为8192。 当在加密时指定了该参数时，解密密文时，需要传入相同的参数，才能正确的解密。 例如：{\"Key1\":\"Value1\",\"Key2\":\"Value2\"}
 
         :param encryption_context: The encryption_context of this EncryptDatakeyRequestBody.
-        :type: object
+        :type encryption_context: object
         """
         self._encryption_context = encryption_context
 
@@ -122,7 +135,7 @@ class EncryptDatakeyRequestBody:
         DEK明文和DEK明文的SHA256（32字节），均为16进制字符串表示。 DEK明文（64字节）和DEK明文的SHA256（32字节），均为16进制字符串表示
 
         :param plain_text: The plain_text of this EncryptDatakeyRequestBody.
-        :type: str
+        :type plain_text: str
         """
         self._plain_text = plain_text
 
@@ -144,7 +157,7 @@ class EncryptDatakeyRequestBody:
         DEK明文字节长度，取值范围为1~1024。 DEK明文字节长度，取值为“64”。
 
         :param datakey_plain_length: The datakey_plain_length of this EncryptDatakeyRequestBody.
-        :type: str
+        :type datakey_plain_length: str
         """
         self._datakey_plain_length = datakey_plain_length
 
@@ -166,7 +179,7 @@ class EncryptDatakeyRequestBody:
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
 
         :param sequence: The sequence of this EncryptDatakeyRequestBody.
-        :type: str
+        :type sequence: str
         """
         self._sequence = sequence
 

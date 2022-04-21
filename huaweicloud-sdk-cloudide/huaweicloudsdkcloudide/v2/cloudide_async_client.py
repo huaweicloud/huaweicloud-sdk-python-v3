@@ -52,21 +52,17 @@ class CloudIDEAsyncClient(Client):
         """设置ide实例对插件的授权
 
         设置ide实例对插件的授权。同意、不同意、未知（下次重新询问）
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateExtensionAuthorizationRequest request
-        :return: CreateExtensionAuthorizationResponse
+        :param request: Request instance for CreateExtensionAuthorization
+        :type request: :class:`huaweicloudsdkcloudide.v2.CreateExtensionAuthorizationRequest`
+        :rtype: :class:`huaweicloudsdkcloudide.v2.CreateExtensionAuthorizationResponse`
         """
         return self.create_extension_authorization_with_http_info(request)
 
     def create_extension_authorization_with_http_info(self, request):
-        """设置ide实例对插件的授权
-
-        设置ide实例对插件的授权。同意、不同意、未知（下次重新询问）
-
-        :param CreateExtensionAuthorizationRequest request
-        :return: CreateExtensionAuthorizationResponse
-        """
-
         all_params = ['instance_id', 'create_extension_authorization_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -112,26 +108,21 @@ class CloudIDEAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_project_templates_async(self, request):
         """查询技术栈模板工程
 
         查询技术栈模板工程
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListProjectTemplatesRequest request
-        :return: ListProjectTemplatesResponse
+        :param request: Request instance for ListProjectTemplates
+        :type request: :class:`huaweicloudsdkcloudide.v2.ListProjectTemplatesRequest`
+        :rtype: :class:`huaweicloudsdkcloudide.v2.ListProjectTemplatesResponse`
         """
         return self.list_project_templates_with_http_info(request)
 
     def list_project_templates_with_http_info(self, request):
-        """查询技术栈模板工程
-
-        查询技术栈模板工程
-
-        :param ListProjectTemplatesRequest request
-        :return: ListProjectTemplatesResponse
-        """
-
         all_params = ['stack_id', 'arch']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -177,26 +168,21 @@ class CloudIDEAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_stacks_async(self, request):
         """按region获取标签所有技术栈
 
         按region获取标签所有技术栈
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListStacksRequest request
-        :return: ListStacksResponse
+        :param request: Request instance for ListStacks
+        :type request: :class:`huaweicloudsdkcloudide.v2.ListStacksRequest`
+        :rtype: :class:`huaweicloudsdkcloudide.v2.ListStacksResponse`
         """
         return self.list_stacks_with_http_info(request)
 
     def list_stacks_with_http_info(self, request):
-        """按region获取标签所有技术栈
-
-        按region获取标签所有技术栈
-
-        :param ListStacksRequest request
-        :return: ListStacksResponse
-        """
-
         all_params = ['tags']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -240,26 +226,21 @@ class CloudIDEAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_account_status_async(self, request):
         """查询当前帐号访问权限
 
         查询当前帐号访问权限
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowAccountStatusRequest request
-        :return: ShowAccountStatusResponse
+        :param request: Request instance for ShowAccountStatus
+        :type request: :class:`huaweicloudsdkcloudide.v2.ShowAccountStatusRequest`
+        :rtype: :class:`huaweicloudsdkcloudide.v2.ShowAccountStatusResponse`
         """
         return self.show_account_status_with_http_info(request)
 
     def show_account_status_with_http_info(self, request):
-        """查询当前帐号访问权限
-
-        查询当前帐号访问权限
-
-        :param ShowAccountStatusRequest request
-        :return: ShowAccountStatusResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -301,26 +282,21 @@ class CloudIDEAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_extension_authorization_async(self, request):
         """查询ide实例对插件的授权情况
 
         查询ide实例对插件的授权情况，同意授权的插件能在ide实例内携带登陆用户的token调用第三方服务
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowExtensionAuthorizationRequest request
-        :return: ShowExtensionAuthorizationResponse
+        :param request: Request instance for ShowExtensionAuthorization
+        :type request: :class:`huaweicloudsdkcloudide.v2.ShowExtensionAuthorizationRequest`
+        :rtype: :class:`huaweicloudsdkcloudide.v2.ShowExtensionAuthorizationResponse`
         """
         return self.show_extension_authorization_with_http_info(request)
 
     def show_extension_authorization_with_http_info(self, request):
-        """查询ide实例对插件的授权情况
-
-        查询ide实例对插件的授权情况，同意授权的插件能在ide实例内携带登陆用户的token调用第三方服务
-
-        :param ShowExtensionAuthorizationRequest request
-        :return: ShowExtensionAuthorizationResponse
-        """
-
         all_params = ['extension_version', 'identifier', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -368,26 +344,21 @@ class CloudIDEAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_price_async(self, request):
         """获取技术栈计费信息
 
         获取技术栈计费信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowPriceRequest request
-        :return: ShowPriceResponse
+        :param request: Request instance for ShowPrice
+        :type request: :class:`huaweicloudsdkcloudide.v2.ShowPriceRequest`
+        :rtype: :class:`huaweicloudsdkcloudide.v2.ShowPriceResponse`
         """
         return self.show_price_with_http_info(request)
 
     def show_price_with_http_info(self, request):
-        """获取技术栈计费信息
-
-        获取技术栈计费信息
-
-        :param ShowPriceRequest request
-        :return: ShowPriceResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -429,26 +400,21 @@ class CloudIDEAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def check_instance_access_async(self, request):
         """查询用户是否有权限访问某个IDE实例
 
         查询用户是否有权限访问某个IDE实例
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CheckInstanceAccessRequest request
-        :return: CheckInstanceAccessResponse
+        :param request: Request instance for CheckInstanceAccess
+        :type request: :class:`huaweicloudsdkcloudide.v2.CheckInstanceAccessRequest`
+        :rtype: :class:`huaweicloudsdkcloudide.v2.CheckInstanceAccessResponse`
         """
         return self.check_instance_access_with_http_info(request)
 
     def check_instance_access_with_http_info(self, request):
-        """查询用户是否有权限访问某个IDE实例
-
-        查询用户是否有权限访问某个IDE实例
-
-        :param CheckInstanceAccessRequest request
-        :return: CheckInstanceAccessResponse
-        """
-
         all_params = ['instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -492,26 +458,21 @@ class CloudIDEAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def check_name_async(self, request):
         """查询IDE实例名是否重复
 
         查询IDE实例名是否重复
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CheckNameRequest request
-        :return: CheckNameResponse
+        :param request: Request instance for CheckName
+        :type request: :class:`huaweicloudsdkcloudide.v2.CheckNameRequest`
+        :rtype: :class:`huaweicloudsdkcloudide.v2.CheckNameResponse`
         """
         return self.check_name_with_http_info(request)
 
     def check_name_with_http_info(self, request):
-        """查询IDE实例名是否重复
-
-        查询IDE实例名是否重复
-
-        :param CheckNameRequest request
-        :return: CheckNameResponse
-        """
-
         all_params = ['display_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -555,26 +516,21 @@ class CloudIDEAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_instance_async(self, request):
         """创建IDE实例
 
         创建IDE实例
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateInstanceRequest request
-        :return: CreateInstanceResponse
+        :param request: Request instance for CreateInstance
+        :type request: :class:`huaweicloudsdkcloudide.v2.CreateInstanceRequest`
+        :rtype: :class:`huaweicloudsdkcloudide.v2.CreateInstanceResponse`
         """
         return self.create_instance_with_http_info(request)
 
     def create_instance_with_http_info(self, request):
-        """创建IDE实例
-
-        创建IDE实例
-
-        :param CreateInstanceRequest request
-        :return: CreateInstanceResponse
-        """
-
         all_params = ['org_id', 'create_instance_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -620,26 +576,21 @@ class CloudIDEAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_instance_by3rd_async(self, request):
         """外部第三方集成商创建IDE实例
 
         创建IDE实例
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateInstanceBy3rdRequest request
-        :return: CreateInstanceBy3rdResponse
+        :param request: Request instance for CreateInstanceBy3rd
+        :type request: :class:`huaweicloudsdkcloudide.v2.CreateInstanceBy3rdRequest`
+        :rtype: :class:`huaweicloudsdkcloudide.v2.CreateInstanceBy3rdResponse`
         """
         return self.create_instance_by3rd_with_http_info(request)
 
     def create_instance_by3rd_with_http_info(self, request):
-        """外部第三方集成商创建IDE实例
-
-        创建IDE实例
-
-        :param CreateInstanceBy3rdRequest request
-        :return: CreateInstanceBy3rdResponse
-        """
-
         all_params = ['create_instance_by3rd_request_body', 'instance_label']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -685,26 +636,21 @@ class CloudIDEAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_instance_async(self, request):
         """删除IDE实例
 
         删除IDE实例（同时删除磁盘数据）
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteInstanceRequest request
-        :return: DeleteInstanceResponse
+        :param request: Request instance for DeleteInstance
+        :type request: :class:`huaweicloudsdkcloudide.v2.DeleteInstanceRequest`
+        :rtype: :class:`huaweicloudsdkcloudide.v2.DeleteInstanceResponse`
         """
         return self.delete_instance_with_http_info(request)
 
     def delete_instance_with_http_info(self, request):
-        """删除IDE实例
-
-        删除IDE实例（同时删除磁盘数据）
-
-        :param DeleteInstanceRequest request
-        :return: DeleteInstanceResponse
-        """
-
         all_params = ['instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -748,26 +694,21 @@ class CloudIDEAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_instances_async(self, request):
         """查询IDE实例列表
 
         查询IDE实例列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListInstancesRequest request
-        :return: ListInstancesResponse
+        :param request: Request instance for ListInstances
+        :type request: :class:`huaweicloudsdkcloudide.v2.ListInstancesRequest`
+        :rtype: :class:`huaweicloudsdkcloudide.v2.ListInstancesResponse`
         """
         return self.list_instances_with_http_info(request)
 
     def list_instances_with_http_info(self, request):
-        """查询IDE实例列表
-
-        查询IDE实例列表
-
-        :param ListInstancesRequest request
-        :return: ListInstancesResponse
-        """
-
         all_params = ['limit', 'offset', 'is_temporary', 'label', 'search', 'sort_dir', 'sort_key']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -823,26 +764,21 @@ class CloudIDEAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_org_instances_async(self, request):
         """查询某个租户下的IDE实例列表
 
         查询某个租户下的IDE实例列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListOrgInstancesRequest request
-        :return: ListOrgInstancesResponse
+        :param request: Request instance for ListOrgInstances
+        :type request: :class:`huaweicloudsdkcloudide.v2.ListOrgInstancesRequest`
+        :rtype: :class:`huaweicloudsdkcloudide.v2.ListOrgInstancesResponse`
         """
         return self.list_org_instances_with_http_info(request)
 
     def list_org_instances_with_http_info(self, request):
-        """查询某个租户下的IDE实例列表
-
-        查询某个租户下的IDE实例列表
-
-        :param ListOrgInstancesRequest request
-        :return: ListOrgInstancesResponse
-        """
-
         all_params = ['org_id', 'is_temporary', 'limit', 'offset', 'search']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -894,26 +830,21 @@ class CloudIDEAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_instance_async(self, request):
         """查询某个IDE实例
 
         查询某个IDE实例
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowInstanceRequest request
-        :return: ShowInstanceResponse
+        :param request: Request instance for ShowInstance
+        :type request: :class:`huaweicloudsdkcloudide.v2.ShowInstanceRequest`
+        :rtype: :class:`huaweicloudsdkcloudide.v2.ShowInstanceResponse`
         """
         return self.show_instance_with_http_info(request)
 
     def show_instance_with_http_info(self, request):
-        """查询某个IDE实例
-
-        查询某个IDE实例
-
-        :param ShowInstanceRequest request
-        :return: ShowInstanceResponse
-        """
-
         all_params = ['instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -957,26 +888,21 @@ class CloudIDEAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def start_instance_async(self, request):
         """启动IDE实例
 
         启动IDE实例
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param StartInstanceRequest request
-        :return: StartInstanceResponse
+        :param request: Request instance for StartInstance
+        :type request: :class:`huaweicloudsdkcloudide.v2.StartInstanceRequest`
+        :rtype: :class:`huaweicloudsdkcloudide.v2.StartInstanceResponse`
         """
         return self.start_instance_with_http_info(request)
 
     def start_instance_with_http_info(self, request):
-        """启动IDE实例
-
-        启动IDE实例
-
-        :param StartInstanceRequest request
-        :return: StartInstanceResponse
-        """
-
         all_params = ['instance_id', 'start_instance_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1022,26 +948,21 @@ class CloudIDEAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def stop_instance_async(self, request):
         """停止IDE实例
 
         停止IDE实例（不删除磁盘数据）
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param StopInstanceRequest request
-        :return: StopInstanceResponse
+        :param request: Request instance for StopInstance
+        :type request: :class:`huaweicloudsdkcloudide.v2.StopInstanceRequest`
+        :rtype: :class:`huaweicloudsdkcloudide.v2.StopInstanceResponse`
         """
         return self.stop_instance_with_http_info(request)
 
     def stop_instance_with_http_info(self, request):
-        """停止IDE实例
-
-        停止IDE实例（不删除磁盘数据）
-
-        :param StopInstanceRequest request
-        :return: StopInstanceResponse
-        """
-
         all_params = ['instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1085,26 +1006,21 @@ class CloudIDEAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_instance_async(self, request):
         """修改IDE实例
 
         修改IDE实例
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateInstanceRequest request
-        :return: UpdateInstanceResponse
+        :param request: Request instance for UpdateInstance
+        :type request: :class:`huaweicloudsdkcloudide.v2.UpdateInstanceRequest`
+        :rtype: :class:`huaweicloudsdkcloudide.v2.UpdateInstanceResponse`
         """
         return self.update_instance_with_http_info(request)
 
     def update_instance_with_http_info(self, request):
-        """修改IDE实例
-
-        修改IDE实例
-
-        :param UpdateInstanceRequest request
-        :return: UpdateInstanceResponse
-        """
-
         all_params = ['instance_id', 'update_instance_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1150,26 +1066,21 @@ class CloudIDEAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_instance_activity_async(self, request):
         """刷新IDE实例活跃状态
 
         刷新IDE实例活跃状态，超过该实例设置的过期时间后实例自动关闭。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateInstanceActivityRequest request
-        :return: UpdateInstanceActivityResponse
+        :param request: Request instance for UpdateInstanceActivity
+        :type request: :class:`huaweicloudsdkcloudide.v2.UpdateInstanceActivityRequest`
+        :rtype: :class:`huaweicloudsdkcloudide.v2.UpdateInstanceActivityResponse`
         """
         return self.update_instance_activity_with_http_info(request)
 
     def update_instance_activity_with_http_info(self, request):
-        """刷新IDE实例活跃状态
-
-        刷新IDE实例活跃状态，超过该实例设置的过期时间后实例自动关闭。
-
-        :param UpdateInstanceActivityRequest request
-        :return: UpdateInstanceActivityResponse
-        """
-
         all_params = ['instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1212,7 +1123,6 @@ class CloudIDEAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

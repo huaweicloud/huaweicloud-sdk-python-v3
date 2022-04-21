@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Result:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class Result:
     }
 
     def __init__(self, address=None, port=None, status=None):
-        """Result - a model defined in huaweicloud sdk"""
+        """Result
+
+        The model defined in huaweicloud sdk
+
+        :param address: IP地址或域名。
+        :type address: str
+        :param port: 端口号。
+        :type port: int
+        :param status: 测试结果。1表示连接成功，0表示地址不可达，2表示端口不可达，3表示域名无法解析，-2表示位置错误。
+        :type status: int
+        """
         
         
 
@@ -68,7 +77,7 @@ class Result:
         IP地址或域名。
 
         :param address: The address of this Result.
-        :type: str
+        :type address: str
         """
         self._address = address
 
@@ -90,7 +99,7 @@ class Result:
         端口号。
 
         :param port: The port of this Result.
-        :type: int
+        :type port: int
         """
         self._port = port
 
@@ -112,7 +121,7 @@ class Result:
         测试结果。1表示连接成功，0表示地址不可达，2表示端口不可达，3表示域名无法解析，-2表示位置错误。
 
         :param status: The status of this Result.
-        :type: int
+        :type status: int
         """
         self._status = status
 

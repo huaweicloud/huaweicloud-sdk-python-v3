@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SearchPictureItem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class SearchPictureItem:
     }
 
     def __init__(self, path=None, sim=None, tags=None):
-        """SearchPictureItem - a model defined in huaweicloud sdk"""
+        """SearchPictureItem
+
+        The model defined in huaweicloud sdk
+
+        :param path: 被搜索图片的路径。
+        :type path: str
+        :param sim: 查询图片和被搜索图片的相似度，值越接近1表示越相似。
+        :type sim: float
+        :param tags: 自定义的标签名称和标签内容。
+        :type tags: object
+        """
         
         
 
@@ -68,7 +77,7 @@ class SearchPictureItem:
         被搜索图片的路径。
 
         :param path: The path of this SearchPictureItem.
-        :type: str
+        :type path: str
         """
         self._path = path
 
@@ -90,7 +99,7 @@ class SearchPictureItem:
         查询图片和被搜索图片的相似度，值越接近1表示越相似。
 
         :param sim: The sim of this SearchPictureItem.
-        :type: float
+        :type sim: float
         """
         self._sim = sim
 
@@ -112,7 +121,7 @@ class SearchPictureItem:
         自定义的标签名称和标签内容。
 
         :param tags: The tags of this SearchPictureItem.
-        :type: object
+        :type tags: object
         """
         self._tags = tags
 

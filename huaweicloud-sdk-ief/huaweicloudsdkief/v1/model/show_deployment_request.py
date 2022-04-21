@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDeploymentRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowDeploymentRequest:
     }
 
     def __init__(self, deployment_id=None, ief_instance_id=None):
-        """ShowDeploymentRequest - a model defined in huaweicloud sdk"""
+        """ShowDeploymentRequest
+
+        The model defined in huaweicloud sdk
+
+        :param deployment_id: 应用部署ID
+        :type deployment_id: str
+        :param ief_instance_id: 铂金版实例ID，专业版实例为空值
+        :type ief_instance_id: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ShowDeploymentRequest:
         应用部署ID
 
         :param deployment_id: The deployment_id of this ShowDeploymentRequest.
-        :type: str
+        :type deployment_id: str
         """
         self._deployment_id = deployment_id
 
@@ -84,7 +91,7 @@ class ShowDeploymentRequest:
         铂金版实例ID，专业版实例为空值
 
         :param ief_instance_id: The ief_instance_id of this ShowDeploymentRequest.
-        :type: str
+        :type ief_instance_id: str
         """
         self._ief_instance_id = ief_instance_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SearchCorpAdminsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class SearchCorpAdminsResponse(SdkResponse):
     }
 
     def __init__(self, offset=None, limit=None, count=None, data=None):
-        """SearchCorpAdminsResponse - a model defined in huaweicloud sdk"""
+        """SearchCorpAdminsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param offset: 页面起始页，从0开始
+        :type offset: int
+        :param limit: 每页显示的条目数量。 默认值：10。 
+        :type limit: int
+        :param count: 总数量。
+        :type count: int
+        :param data: 查询企业管理员返回的结果
+        :type data: list[:class:`huaweicloudsdkmeeting.v1.QueryCorpAdminResultDTO`]
+        """
         
         super(SearchCorpAdminsResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class SearchCorpAdminsResponse(SdkResponse):
         页面起始页，从0开始
 
         :param offset: The offset of this SearchCorpAdminsResponse.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -95,7 +106,7 @@ class SearchCorpAdminsResponse(SdkResponse):
         每页显示的条目数量。 默认值：10。 
 
         :param limit: The limit of this SearchCorpAdminsResponse.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -117,7 +128,7 @@ class SearchCorpAdminsResponse(SdkResponse):
         总数量。
 
         :param count: The count of this SearchCorpAdminsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -128,7 +139,7 @@ class SearchCorpAdminsResponse(SdkResponse):
         查询企业管理员返回的结果
 
         :return: The data of this SearchCorpAdminsResponse.
-        :rtype: list[QueryCorpAdminResultDTO]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.QueryCorpAdminResultDTO`]
         """
         return self._data
 
@@ -139,7 +150,7 @@ class SearchCorpAdminsResponse(SdkResponse):
         查询企业管理员返回的结果
 
         :param data: The data of this SearchCorpAdminsResponse.
-        :type: list[QueryCorpAdminResultDTO]
+        :type data: list[:class:`huaweicloudsdkmeeting.v1.QueryCorpAdminResultDTO`]
         """
         self._data = data
 

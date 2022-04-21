@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResizeServerExtendParam:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ResizeServerExtendParam:
     }
 
     def __init__(self, is_auto_pay=None):
-        """ResizeServerExtendParam - a model defined in huaweicloud sdk"""
+        """ResizeServerExtendParam
+
+        The model defined in huaweicloud sdk
+
+        :param is_auto_pay: 下单订购后，是否自动从客户的账户中支付，而不需要客户手动去进行支付。  - “true”：是（自动支付） - “false”：否（需要客户手动支付）  &gt; 说明： &gt;  &gt; 当弹性云服务器是按包年包月计费时生效，该值为空时默认为客户手动支付。
+        :type is_auto_pay: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class ResizeServerExtendParam:
         下单订购后，是否自动从客户的账户中支付，而不需要客户手动去进行支付。  - “true”：是（自动支付） - “false”：否（需要客户手动支付）  > 说明： >  > 当弹性云服务器是按包年包月计费时生效，该值为空时默认为客户手动支付。
 
         :param is_auto_pay: The is_auto_pay of this ResizeServerExtendParam.
-        :type: str
+        :type is_auto_pay: str
         """
         self._is_auto_pay = is_auto_pay
 

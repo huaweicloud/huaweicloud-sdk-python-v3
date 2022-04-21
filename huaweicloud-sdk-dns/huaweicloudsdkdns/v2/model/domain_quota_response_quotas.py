@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DomainQuotaResponseQuotas:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class DomainQuotaResponseQuotas:
     }
 
     def __init__(self, quota_key=None, quota_limit=None, used=None, unit=None):
-        """DomainQuotaResponseQuotas - a model defined in huaweicloud sdk"""
+        """DomainQuotaResponseQuotas
+
+        The model defined in huaweicloud sdk
+
+        :param quota_key: 资源类型。
+        :type quota_key: str
+        :param quota_limit: 资源配额的最大值。
+        :type quota_limit: int
+        :param used: 配额已使用数量。
+        :type used: int
+        :param unit: 配额统计单位，取固定值“count”。
+        :type unit: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class DomainQuotaResponseQuotas:
         资源类型。
 
         :param quota_key: The quota_key of this DomainQuotaResponseQuotas.
-        :type: str
+        :type quota_key: str
         """
         self._quota_key = quota_key
 
@@ -91,7 +102,7 @@ class DomainQuotaResponseQuotas:
         资源配额的最大值。
 
         :param quota_limit: The quota_limit of this DomainQuotaResponseQuotas.
-        :type: int
+        :type quota_limit: int
         """
         self._quota_limit = quota_limit
 
@@ -113,7 +124,7 @@ class DomainQuotaResponseQuotas:
         配额已使用数量。
 
         :param used: The used of this DomainQuotaResponseQuotas.
-        :type: int
+        :type used: int
         """
         self._used = used
 
@@ -135,7 +146,7 @@ class DomainQuotaResponseQuotas:
         配额统计单位，取固定值“count”。
 
         :param unit: The unit of this DomainQuotaResponseQuotas.
-        :type: str
+        :type unit: str
         """
         self._unit = unit
 

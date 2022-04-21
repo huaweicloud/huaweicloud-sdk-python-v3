@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListFile:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListFile:
     }
 
     def __init__(self, list_file_key=None, obs_bucket=None):
-        """ListFile - a model defined in huaweicloud sdk"""
+        """ListFile
+
+        The model defined in huaweicloud sdk
+
+        :param list_file_key: 对象列表文件或URL列表文件对象名。
+        :type list_file_key: str
+        :param obs_bucket: 存放对象列表文件的OBS桶名。  请确保与目的端桶处于同一区域，否则将导致任务创建失败。
+        :type obs_bucket: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ListFile:
         对象列表文件或URL列表文件对象名。
 
         :param list_file_key: The list_file_key of this ListFile.
-        :type: str
+        :type list_file_key: str
         """
         self._list_file_key = list_file_key
 
@@ -83,7 +90,7 @@ class ListFile:
         存放对象列表文件的OBS桶名。  请确保与目的端桶处于同一区域，否则将导致任务创建失败。
 
         :param obs_bucket: The obs_bucket of this ListFile.
-        :type: str
+        :type obs_bucket: str
         """
         self._obs_bucket = obs_bucket
 

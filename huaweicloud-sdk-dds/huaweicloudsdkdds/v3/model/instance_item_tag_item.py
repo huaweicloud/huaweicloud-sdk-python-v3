@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InstanceItemTagItem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class InstanceItemTagItem:
     }
 
     def __init__(self, key=None, value=None):
-        """InstanceItemTagItem - a model defined in huaweicloud sdk"""
+        """InstanceItemTagItem
+
+        The model defined in huaweicloud sdk
+
+        :param key: 标签键。最大长度36个unicode字符，key不能为空。 字符集：0-9，A-Z，a-z，“_”，“-”，中文。
+        :type key: str
+        :param value: 标签值。最大长度43个unicode字符，可以为空字符串。 字符集：0-9，A-Z，a-z，“_”，“.”，“-”，中文。
+        :type value: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class InstanceItemTagItem:
         标签键。最大长度36个unicode字符，key不能为空。 字符集：0-9，A-Z，a-z，“_”，“-”，中文。
 
         :param key: The key of this InstanceItemTagItem.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -85,7 +92,7 @@ class InstanceItemTagItem:
         标签值。最大长度43个unicode字符，可以为空字符串。 字符集：0-9，A-Z，a-z，“_”，“.”，“-”，中文。
 
         :param value: The value of this InstanceItemTagItem.
-        :type: str
+        :type value: str
         """
         self._value = value
 

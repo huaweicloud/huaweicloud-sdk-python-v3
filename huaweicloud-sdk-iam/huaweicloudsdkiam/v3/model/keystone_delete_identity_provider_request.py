@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneDeleteIdentityProviderRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class KeystoneDeleteIdentityProviderRequest:
     }
 
     def __init__(self, id=None):
-        """KeystoneDeleteIdentityProviderRequest - a model defined in huaweicloud sdk"""
+        """KeystoneDeleteIdentityProviderRequest
+
+        The model defined in huaweicloud sdk
+
+        :param id: 待删除的身份提供商ID。
+        :type id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class KeystoneDeleteIdentityProviderRequest:
         待删除的身份提供商ID。
 
         :param id: The id of this KeystoneDeleteIdentityProviderRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 

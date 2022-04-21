@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowGroupsRespGroupMembers:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowGroupsRespGroupMembers:
     }
 
     def __init__(self, host=None, assignment=None, member_id=None, client_id=None):
-        """ShowGroupsRespGroupMembers - a model defined in huaweicloud sdk"""
+        """ShowGroupsRespGroupMembers
+
+        The model defined in huaweicloud sdk
+
+        :param host: 消费组consumer地址。
+        :type host: str
+        :param assignment: consumer分配到的分区信息。
+        :type assignment: list[:class:`huaweicloudsdkkafka.v2.ShowGroupsRespGroupAssignment`]
+        :param member_id: 消费组consumer的ID。
+        :type member_id: str
+        :param client_id: 客户端ID。
+        :type client_id: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class ShowGroupsRespGroupMembers:
         消费组consumer地址。
 
         :param host: The host of this ShowGroupsRespGroupMembers.
-        :type: str
+        :type host: str
         """
         self._host = host
 
@@ -84,7 +95,7 @@ class ShowGroupsRespGroupMembers:
         consumer分配到的分区信息。
 
         :return: The assignment of this ShowGroupsRespGroupMembers.
-        :rtype: list[ShowGroupsRespGroupAssignment]
+        :rtype: list[:class:`huaweicloudsdkkafka.v2.ShowGroupsRespGroupAssignment`]
         """
         return self._assignment
 
@@ -95,7 +106,7 @@ class ShowGroupsRespGroupMembers:
         consumer分配到的分区信息。
 
         :param assignment: The assignment of this ShowGroupsRespGroupMembers.
-        :type: list[ShowGroupsRespGroupAssignment]
+        :type assignment: list[:class:`huaweicloudsdkkafka.v2.ShowGroupsRespGroupAssignment`]
         """
         self._assignment = assignment
 
@@ -117,7 +128,7 @@ class ShowGroupsRespGroupMembers:
         消费组consumer的ID。
 
         :param member_id: The member_id of this ShowGroupsRespGroupMembers.
-        :type: str
+        :type member_id: str
         """
         self._member_id = member_id
 
@@ -139,7 +150,7 @@ class ShowGroupsRespGroupMembers:
         客户端ID。
 
         :param client_id: The client_id of this ShowGroupsRespGroupMembers.
-        :type: str
+        :type client_id: str
         """
         self._client_id = client_id
 

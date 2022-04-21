@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IntentReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class IntentReq:
     }
 
     def __init__(self, lang=None, text=None):
-        """IntentReq - a model defined in huaweicloud sdk"""
+        """IntentReq
+
+        The model defined in huaweicloud sdk
+
+        :param lang: 支持的文本语言类型，目前只支持中文，默认为zh。
+        :type lang: str
+        :param text: 待分析文本列表，UTF-8编码，限定32个字符以内，文本长度超过32个字符时，只检测前32个字符。
+        :type text: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class IntentReq:
         支持的文本语言类型，目前只支持中文，默认为zh。
 
         :param lang: The lang of this IntentReq.
-        :type: str
+        :type lang: str
         """
         self._lang = lang
 
@@ -84,7 +91,7 @@ class IntentReq:
         待分析文本列表，UTF-8编码，限定32个字符以内，文本长度超过32个字符时，只检测前32个字符。
 
         :param text: The text of this IntentReq.
-        :type: str
+        :type text: str
         """
         self._text = text
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ContainerNodeInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ContainerNodeInfo:
     }
 
     def __init__(self, host_id=None, host_name=None, host_status=None, agent_status=None, protect_status=None):
-        """ContainerNodeInfo - a model defined in huaweicloud sdk"""
+        """ContainerNodeInfo
+
+        The model defined in huaweicloud sdk
+
+        :param host_id: 节点id
+        :type host_id: str
+        :param host_name: 节点（服务器）名称
+        :type host_name: str
+        :param host_status: 服务器状态，包含如下4种。   - ACTIVE ：正在运行。   - SHUTOFF ：关机。   - BUILDING ：创建中。   - ERROR ：故障。
+        :type host_status: str
+        :param agent_status: Agent状态，包含如下3种。   - not_register ：未注册。   - online ：在线。   - offline ：离线。
+        :type agent_status: str
+        :param protect_status: 防护状态，包含如下2种。   - closed ：关闭。   - opened ：开启。
+        :type protect_status: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class ContainerNodeInfo:
         节点id
 
         :param host_id: The host_id of this ContainerNodeInfo.
-        :type: str
+        :type host_id: str
         """
         self._host_id = host_id
 
@@ -100,7 +113,7 @@ class ContainerNodeInfo:
         节点（服务器）名称
 
         :param host_name: The host_name of this ContainerNodeInfo.
-        :type: str
+        :type host_name: str
         """
         self._host_name = host_name
 
@@ -122,7 +135,7 @@ class ContainerNodeInfo:
         服务器状态，包含如下4种。   - ACTIVE ：正在运行。   - SHUTOFF ：关机。   - BUILDING ：创建中。   - ERROR ：故障。
 
         :param host_status: The host_status of this ContainerNodeInfo.
-        :type: str
+        :type host_status: str
         """
         self._host_status = host_status
 
@@ -144,7 +157,7 @@ class ContainerNodeInfo:
         Agent状态，包含如下3种。   - not_register ：未注册。   - online ：在线。   - offline ：离线。
 
         :param agent_status: The agent_status of this ContainerNodeInfo.
-        :type: str
+        :type agent_status: str
         """
         self._agent_status = agent_status
 
@@ -166,7 +179,7 @@ class ContainerNodeInfo:
         防护状态，包含如下2种。   - closed ：关闭。   - opened ：开启。
 
         :param protect_status: The protect_status of this ContainerNodeInfo.
-        :type: str
+        :type protect_status: str
         """
         self._protect_status = protect_status
 

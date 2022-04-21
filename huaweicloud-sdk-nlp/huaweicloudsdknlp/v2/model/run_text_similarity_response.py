@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunTextSimilarityResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class RunTextSimilarityResponse(SdkResponse):
     }
 
     def __init__(self, similarity=None, error_code=None, error_msg=None):
-        """RunTextSimilarityResponse - a model defined in huaweicloud sdk"""
+        """RunTextSimilarityResponse
+
+        The model defined in huaweicloud sdk
+
+        :param similarity: 相似度得分，范围在0~1，默认小数点后保留8位。调用失败时无此字段。
+        :type similarity: float
+        :param error_code: 调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
+        :type error_code: str
+        :param error_msg: 调用失败时的错误信息。调用成功时无此字段。
+        :type error_msg: str
+        """
         
         super(RunTextSimilarityResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class RunTextSimilarityResponse(SdkResponse):
         相似度得分，范围在0~1，默认小数点后保留8位。调用失败时无此字段。
 
         :param similarity: The similarity of this RunTextSimilarityResponse.
-        :type: float
+        :type similarity: float
         """
         self._similarity = similarity
 
@@ -90,7 +99,7 @@ class RunTextSimilarityResponse(SdkResponse):
         调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
 
         :param error_code: The error_code of this RunTextSimilarityResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -112,7 +121,7 @@ class RunTextSimilarityResponse(SdkResponse):
         调用失败时的错误信息。调用成功时无此字段。
 
         :param error_msg: The error_msg of this RunTextSimilarityResponse.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 

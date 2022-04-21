@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeploymentResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -62,7 +61,45 @@ class DeploymentResp:
     }
 
     def __init__(self, id=None, name=None, replicas=None, ready_replicas=None, description=None, group_id=None, node_ids=None, tags=None, api_version=None, source=None, project_id=None, created_at=None, updated_at=None, template=None, state=None, source_id=None, annotations=None):
-        """DeploymentResp - a model defined in huaweicloud sdk"""
+        """DeploymentResp
+
+        The model defined in huaweicloud sdk
+
+        :param id: 应用部署uuid
+        :type id: str
+        :param name: 应用部署名称，只允许英文小写字母、数字、中划线，最大长度32, 英文小写字母或数字开头和结尾
+        :type name: str
+        :param replicas: 应用部署总副本数
+        :type replicas: int
+        :param ready_replicas: 应用部署正常副本数
+        :type ready_replicas: int
+        :param description: 应用部署描述，最大长度255，不允许^ ~ # $ % &amp; * &lt; &gt; ( ) [ ] { } &#39; \&quot; \\
+        :type description: str
+        :param group_id: 应用部署到指定节点组，与node_ids二选一
+        :type group_id: str
+        :param node_ids: 应用部署到指定节点，当前只支持一个边缘节点
+        :type node_ids: list[str]
+        :param tags: 节点属性
+        :type tags: list[:class:`huaweicloudsdkief.v1.Attributes`]
+        :param api_version: 应用部署版本
+        :type api_version: str
+        :param source: 应用部署来源: 边缘市场(iem) or 自定义(userdefined)
+        :type source: str
+        :param project_id: 项目ID
+        :type project_id: str
+        :param created_at: 应用部署创建时间
+        :type created_at: str
+        :param updated_at: 应用部署更新时间
+        :type updated_at: str
+        :param template: 
+        :type template: :class:`huaweicloudsdkief.v1.PodRequest`
+        :param state: 应用状态，仅包括冻结（FREEZE）、删除中（PENDING_DELETE）、删除失败（DELETE_FAILED），保留字段
+        :type state: str
+        :param source_id: 预留字段
+        :type source_id: str
+        :param annotations: 
+        :type annotations: :class:`huaweicloudsdkief.v1.Annotations`
+        """
         
         
 
@@ -134,7 +171,7 @@ class DeploymentResp:
         应用部署uuid
 
         :param id: The id of this DeploymentResp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -156,7 +193,7 @@ class DeploymentResp:
         应用部署名称，只允许英文小写字母、数字、中划线，最大长度32, 英文小写字母或数字开头和结尾
 
         :param name: The name of this DeploymentResp.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -178,7 +215,7 @@ class DeploymentResp:
         应用部署总副本数
 
         :param replicas: The replicas of this DeploymentResp.
-        :type: int
+        :type replicas: int
         """
         self._replicas = replicas
 
@@ -200,7 +237,7 @@ class DeploymentResp:
         应用部署正常副本数
 
         :param ready_replicas: The ready_replicas of this DeploymentResp.
-        :type: int
+        :type ready_replicas: int
         """
         self._ready_replicas = ready_replicas
 
@@ -222,7 +259,7 @@ class DeploymentResp:
         应用部署描述，最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
         :param description: The description of this DeploymentResp.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -244,7 +281,7 @@ class DeploymentResp:
         应用部署到指定节点组，与node_ids二选一
 
         :param group_id: The group_id of this DeploymentResp.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -266,7 +303,7 @@ class DeploymentResp:
         应用部署到指定节点，当前只支持一个边缘节点
 
         :param node_ids: The node_ids of this DeploymentResp.
-        :type: list[str]
+        :type node_ids: list[str]
         """
         self._node_ids = node_ids
 
@@ -277,7 +314,7 @@ class DeploymentResp:
         节点属性
 
         :return: The tags of this DeploymentResp.
-        :rtype: list[Attributes]
+        :rtype: list[:class:`huaweicloudsdkief.v1.Attributes`]
         """
         return self._tags
 
@@ -288,7 +325,7 @@ class DeploymentResp:
         节点属性
 
         :param tags: The tags of this DeploymentResp.
-        :type: list[Attributes]
+        :type tags: list[:class:`huaweicloudsdkief.v1.Attributes`]
         """
         self._tags = tags
 
@@ -310,7 +347,7 @@ class DeploymentResp:
         应用部署版本
 
         :param api_version: The api_version of this DeploymentResp.
-        :type: str
+        :type api_version: str
         """
         self._api_version = api_version
 
@@ -332,7 +369,7 @@ class DeploymentResp:
         应用部署来源: 边缘市场(iem) or 自定义(userdefined)
 
         :param source: The source of this DeploymentResp.
-        :type: str
+        :type source: str
         """
         self._source = source
 
@@ -354,7 +391,7 @@ class DeploymentResp:
         项目ID
 
         :param project_id: The project_id of this DeploymentResp.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -376,7 +413,7 @@ class DeploymentResp:
         应用部署创建时间
 
         :param created_at: The created_at of this DeploymentResp.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -398,7 +435,7 @@ class DeploymentResp:
         应用部署更新时间
 
         :param updated_at: The updated_at of this DeploymentResp.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 
@@ -408,7 +445,7 @@ class DeploymentResp:
 
 
         :return: The template of this DeploymentResp.
-        :rtype: PodRequest
+        :rtype: :class:`huaweicloudsdkief.v1.PodRequest`
         """
         return self._template
 
@@ -418,7 +455,7 @@ class DeploymentResp:
 
 
         :param template: The template of this DeploymentResp.
-        :type: PodRequest
+        :type template: :class:`huaweicloudsdkief.v1.PodRequest`
         """
         self._template = template
 
@@ -440,7 +477,7 @@ class DeploymentResp:
         应用状态，仅包括冻结（FREEZE）、删除中（PENDING_DELETE）、删除失败（DELETE_FAILED），保留字段
 
         :param state: The state of this DeploymentResp.
-        :type: str
+        :type state: str
         """
         self._state = state
 
@@ -462,7 +499,7 @@ class DeploymentResp:
         预留字段
 
         :param source_id: The source_id of this DeploymentResp.
-        :type: str
+        :type source_id: str
         """
         self._source_id = source_id
 
@@ -472,7 +509,7 @@ class DeploymentResp:
 
 
         :return: The annotations of this DeploymentResp.
-        :rtype: Annotations
+        :rtype: :class:`huaweicloudsdkief.v1.Annotations`
         """
         return self._annotations
 
@@ -482,7 +519,7 @@ class DeploymentResp:
 
 
         :param annotations: The annotations of this DeploymentResp.
-        :type: Annotations
+        :type annotations: :class:`huaweicloudsdkief.v1.Annotations`
         """
         self._annotations = annotations
 

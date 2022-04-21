@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BasePathDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class BasePathDTO:
     }
 
     def __init__(self, log_base_path=None, config_base_path=None, db_base_path=None):
-        """BasePathDTO - a model defined in huaweicloud sdk"""
+        """BasePathDTO
+
+        The model defined in huaweicloud sdk
+
+        :param log_base_path: 节点日志根目录
+        :type log_base_path: str
+        :param config_base_path: 节点配置根目录
+        :type config_base_path: str
+        :param db_base_path: 节点数据存储根目录
+        :type db_base_path: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class BasePathDTO:
         节点日志根目录
 
         :param log_base_path: The log_base_path of this BasePathDTO.
-        :type: str
+        :type log_base_path: str
         """
         self._log_base_path = log_base_path
 
@@ -90,7 +99,7 @@ class BasePathDTO:
         节点配置根目录
 
         :param config_base_path: The config_base_path of this BasePathDTO.
-        :type: str
+        :type config_base_path: str
         """
         self._config_base_path = config_base_path
 
@@ -112,7 +121,7 @@ class BasePathDTO:
         节点数据存储根目录
 
         :param db_base_path: The db_base_path of this BasePathDTO.
-        :type: str
+        :type db_base_path: str
         """
         self._db_base_path = db_base_path
 

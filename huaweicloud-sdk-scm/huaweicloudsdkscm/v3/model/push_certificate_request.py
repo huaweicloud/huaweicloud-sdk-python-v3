@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PushCertificateRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class PushCertificateRequest:
     }
 
     def __init__(self, certificate_id=None, body=None):
-        """PushCertificateRequest - a model defined in huaweicloud sdk"""
+        """PushCertificateRequest
+
+        The model defined in huaweicloud sdk
+
+        :param certificate_id: 证书id。
+        :type certificate_id: str
+        :param body: Body of the PushCertificateRequest
+        :type body: :class:`huaweicloudsdkscm.v3.PushCertificateRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class PushCertificateRequest:
         证书id。
 
         :param certificate_id: The certificate_id of this PushCertificateRequest.
-        :type: str
+        :type certificate_id: str
         """
         self._certificate_id = certificate_id
 
@@ -72,7 +79,7 @@ class PushCertificateRequest:
 
 
         :return: The body of this PushCertificateRequest.
-        :rtype: PushCertificateRequestBody
+        :rtype: :class:`huaweicloudsdkscm.v3.PushCertificateRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class PushCertificateRequest:
 
 
         :param body: The body of this PushCertificateRequest.
-        :type: PushCertificateRequestBody
+        :type body: :class:`huaweicloudsdkscm.v3.PushCertificateRequestBody`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DemoField:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class DemoField:
     }
 
     def __init__(self, field_name=None, content=None, type=None, is_analysis=None, index=None, relation=None, user_defined_name=None):
-        """DemoField - a model defined in huaweicloud sdk"""
+        """DemoField
+
+        The model defined in huaweicloud sdk
+
+        :param field_name: 字段名称
+        :type field_name: str
+        :param content: 字段示例内容
+        :type content: str
+        :param type: 字段数据类型。 可选范围：string、long、float
+        :type type: str
+        :param is_analysis: 是否开启快速分析
+        :type is_analysis: bool
+        :param index: 手动正则及分隔符方式中字段序号
+        :type index: int
+        :param relation: 描叙多层级json中字段间的层级关系
+        :type relation: str
+        :param user_defined_name: json及nginx方式中字段自定义别名
+        :type user_defined_name: str
+        """
         
         
 
@@ -86,7 +103,7 @@ class DemoField:
         字段名称
 
         :param field_name: The field_name of this DemoField.
-        :type: str
+        :type field_name: str
         """
         self._field_name = field_name
 
@@ -108,7 +125,7 @@ class DemoField:
         字段示例内容
 
         :param content: The content of this DemoField.
-        :type: str
+        :type content: str
         """
         self._content = content
 
@@ -130,7 +147,7 @@ class DemoField:
         字段数据类型。 可选范围：string、long、float
 
         :param type: The type of this DemoField.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -152,7 +169,7 @@ class DemoField:
         是否开启快速分析
 
         :param is_analysis: The is_analysis of this DemoField.
-        :type: bool
+        :type is_analysis: bool
         """
         self._is_analysis = is_analysis
 
@@ -174,7 +191,7 @@ class DemoField:
         手动正则及分隔符方式中字段序号
 
         :param index: The index of this DemoField.
-        :type: int
+        :type index: int
         """
         self._index = index
 
@@ -196,7 +213,7 @@ class DemoField:
         描叙多层级json中字段间的层级关系
 
         :param relation: The relation of this DemoField.
-        :type: str
+        :type relation: str
         """
         self._relation = relation
 
@@ -218,7 +235,7 @@ class DemoField:
         json及nginx方式中字段自定义别名
 
         :param user_defined_name: The user_defined_name of this DemoField.
-        :type: str
+        :type user_defined_name: str
         """
         self._user_defined_name = user_defined_name
 

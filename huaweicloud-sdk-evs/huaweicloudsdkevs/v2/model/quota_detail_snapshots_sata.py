@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QuotaDetailSnapshotsSATA:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class QuotaDetailSnapshotsSATA:
     }
 
     def __init__(self, in_use=None, limit=None, reserved=None):
-        """QuotaDetailSnapshotsSATA - a model defined in huaweicloud sdk"""
+        """QuotaDetailSnapshotsSATA
+
+        The model defined in huaweicloud sdk
+
+        :param in_use: 已使用的数量。
+        :type in_use: int
+        :param limit: 最大的数量。
+        :type limit: int
+        :param reserved: 预留属性。
+        :type reserved: int
+        """
         
         
 
@@ -65,7 +74,7 @@ class QuotaDetailSnapshotsSATA:
         已使用的数量。
 
         :param in_use: The in_use of this QuotaDetailSnapshotsSATA.
-        :type: int
+        :type in_use: int
         """
         self._in_use = in_use
 
@@ -87,7 +96,7 @@ class QuotaDetailSnapshotsSATA:
         最大的数量。
 
         :param limit: The limit of this QuotaDetailSnapshotsSATA.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -109,7 +118,7 @@ class QuotaDetailSnapshotsSATA:
         预留属性。
 
         :param reserved: The reserved of this QuotaDetailSnapshotsSATA.
-        :type: int
+        :type reserved: int
         """
         self._reserved = reserved
 

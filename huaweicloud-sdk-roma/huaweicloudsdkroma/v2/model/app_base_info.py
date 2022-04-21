@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AppBaseInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class AppBaseInfo:
     }
 
     def __init__(self, id=None, name=None, remark=None):
-        """AppBaseInfo - a model defined in huaweicloud sdk"""
+        """AppBaseInfo
+
+        The model defined in huaweicloud sdk
+
+        :param id: 编号
+        :type id: str
+        :param name: 名称
+        :type name: str
+        :param remark: 描述
+        :type remark: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class AppBaseInfo:
         编号
 
         :param id: The id of this AppBaseInfo.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -90,7 +99,7 @@ class AppBaseInfo:
         名称
 
         :param name: The name of this AppBaseInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -112,7 +121,7 @@ class AppBaseInfo:
         描述
 
         :param remark: The remark of this AppBaseInfo.
-        :type: str
+        :type remark: str
         """
         self._remark = remark
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ErrorSite:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ErrorSite:
     }
 
     def __init__(self, err_sites=None):
-        """ErrorSite - a model defined in huaweicloud sdk"""
+        """ErrorSite
+
+        The model defined in huaweicloud sdk
+
+        :param err_sites: 异常站点。
+        :type err_sites: list[str]
+        """
         
         
 
@@ -58,7 +63,7 @@ class ErrorSite:
         异常站点。
 
         :param err_sites: The err_sites of this ErrorSite.
-        :type: list[str]
+        :type err_sites: list[str]
         """
         self._err_sites = err_sites
 

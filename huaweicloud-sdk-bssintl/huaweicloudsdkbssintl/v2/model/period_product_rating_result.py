@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PeriodProductRatingResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class PeriodProductRatingResult:
     }
 
     def __init__(self, id=None, product_id=None, amount=None, official_website_amount=None, discount_amount=None, measure_id=None, limit=None):
-        """PeriodProductRatingResult - a model defined in huaweicloud sdk"""
+        """PeriodProductRatingResult
+
+        The model defined in huaweicloud sdk
+
+        :param id: ID标识，来源于请求中的ID。
+        :type id: str
+        :param product_id: 包年/包月产品的ID。
+        :type product_id: str
+        :param amount: 总额，即最终优惠后的金额。 amount&#x3D; official_website_amount - discountAmount。
+        :type amount: float
+        :param official_website_amount: 包年/包月产品的官网价。
+        :type official_website_amount: float
+        :param discount_amount: 可选折扣优惠额，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额。
+        :type discount_amount: float
+        :param measure_id: 价格度量单位标识。 1：元
+        :type measure_id: int
+        :param limit: |参数名称：每页数量| |参数的约束及描述：该参数非必填，且只允许1-100数字，默认10，最多100|
+        :type limit: int
+        """
         
         
 
@@ -88,7 +105,7 @@ class PeriodProductRatingResult:
         ID标识，来源于请求中的ID。
 
         :param id: The id of this PeriodProductRatingResult.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -110,7 +127,7 @@ class PeriodProductRatingResult:
         包年/包月产品的ID。
 
         :param product_id: The product_id of this PeriodProductRatingResult.
-        :type: str
+        :type product_id: str
         """
         self._product_id = product_id
 
@@ -132,7 +149,7 @@ class PeriodProductRatingResult:
         总额，即最终优惠后的金额。 amount= official_website_amount - discountAmount。
 
         :param amount: The amount of this PeriodProductRatingResult.
-        :type: float
+        :type amount: float
         """
         self._amount = amount
 
@@ -154,7 +171,7 @@ class PeriodProductRatingResult:
         包年/包月产品的官网价。
 
         :param official_website_amount: The official_website_amount of this PeriodProductRatingResult.
-        :type: float
+        :type official_website_amount: float
         """
         self._official_website_amount = official_website_amount
 
@@ -176,7 +193,7 @@ class PeriodProductRatingResult:
         可选折扣优惠额，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额。
 
         :param discount_amount: The discount_amount of this PeriodProductRatingResult.
-        :type: float
+        :type discount_amount: float
         """
         self._discount_amount = discount_amount
 
@@ -198,7 +215,7 @@ class PeriodProductRatingResult:
         价格度量单位标识。 1：元
 
         :param measure_id: The measure_id of this PeriodProductRatingResult.
-        :type: int
+        :type measure_id: int
         """
         self._measure_id = measure_id
 
@@ -220,7 +237,7 @@ class PeriodProductRatingResult:
         |参数名称：每页数量| |参数的约束及描述：该参数非必填，且只允许1-100数字，默认10，最多100|
 
         :param limit: The limit of this PeriodProductRatingResult.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

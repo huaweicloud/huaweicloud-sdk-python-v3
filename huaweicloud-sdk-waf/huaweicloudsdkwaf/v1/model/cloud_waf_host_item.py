@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CloudWafHostItem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class CloudWafHostItem:
     }
 
     def __init__(self, id=None, hostid=None, description=None, type=None, proxy=None, flag=None, hostname=None, access_code=None, policyid=None, timestamp=None, protect_status=None, access_status=None, exclusive_ip=None, paid_type=None):
-        """CloudWafHostItem - a model defined in huaweicloud sdk"""
+        """CloudWafHostItem
+
+        The model defined in huaweicloud sdk
+
+        :param id: 域名id
+        :type id: str
+        :param hostid: 域名id
+        :type hostid: str
+        :param description: 描述信息
+        :type description: str
+        :param type: WAF部署模式
+        :type type: int
+        :param proxy: 是否开启了代理
+        :type proxy: bool
+        :param flag: 
+        :type flag: :class:`huaweicloudsdkwaf.v1.Flag`
+        :param hostname: 创建的云模式防护域名
+        :type hostname: str
+        :param access_code: cname前缀
+        :type access_code: str
+        :param policyid: 策略id
+        :type policyid: str
+        :param timestamp: 创建防护域名的时间
+        :type timestamp: int
+        :param protect_status: 域名防护状态：  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
+        :type protect_status: int
+        :param access_status: 接入状态
+        :type access_status: int
+        :param exclusive_ip: 是否使用独享ip
+        :type exclusive_ip: bool
+        :param paid_type: 付费模式，目前只支持prePaid预付款模式
+        :type paid_type: str
+        """
         
         
 
@@ -123,7 +154,7 @@ class CloudWafHostItem:
         域名id
 
         :param id: The id of this CloudWafHostItem.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -145,7 +176,7 @@ class CloudWafHostItem:
         域名id
 
         :param hostid: The hostid of this CloudWafHostItem.
-        :type: str
+        :type hostid: str
         """
         self._hostid = hostid
 
@@ -167,7 +198,7 @@ class CloudWafHostItem:
         描述信息
 
         :param description: The description of this CloudWafHostItem.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -189,7 +220,7 @@ class CloudWafHostItem:
         WAF部署模式
 
         :param type: The type of this CloudWafHostItem.
-        :type: int
+        :type type: int
         """
         self._type = type
 
@@ -211,7 +242,7 @@ class CloudWafHostItem:
         是否开启了代理
 
         :param proxy: The proxy of this CloudWafHostItem.
-        :type: bool
+        :type proxy: bool
         """
         self._proxy = proxy
 
@@ -221,7 +252,7 @@ class CloudWafHostItem:
 
 
         :return: The flag of this CloudWafHostItem.
-        :rtype: Flag
+        :rtype: :class:`huaweicloudsdkwaf.v1.Flag`
         """
         return self._flag
 
@@ -231,7 +262,7 @@ class CloudWafHostItem:
 
 
         :param flag: The flag of this CloudWafHostItem.
-        :type: Flag
+        :type flag: :class:`huaweicloudsdkwaf.v1.Flag`
         """
         self._flag = flag
 
@@ -253,7 +284,7 @@ class CloudWafHostItem:
         创建的云模式防护域名
 
         :param hostname: The hostname of this CloudWafHostItem.
-        :type: str
+        :type hostname: str
         """
         self._hostname = hostname
 
@@ -275,7 +306,7 @@ class CloudWafHostItem:
         cname前缀
 
         :param access_code: The access_code of this CloudWafHostItem.
-        :type: str
+        :type access_code: str
         """
         self._access_code = access_code
 
@@ -297,7 +328,7 @@ class CloudWafHostItem:
         策略id
 
         :param policyid: The policyid of this CloudWafHostItem.
-        :type: str
+        :type policyid: str
         """
         self._policyid = policyid
 
@@ -319,7 +350,7 @@ class CloudWafHostItem:
         创建防护域名的时间
 
         :param timestamp: The timestamp of this CloudWafHostItem.
-        :type: int
+        :type timestamp: int
         """
         self._timestamp = timestamp
 
@@ -341,7 +372,7 @@ class CloudWafHostItem:
         域名防护状态：  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
 
         :param protect_status: The protect_status of this CloudWafHostItem.
-        :type: int
+        :type protect_status: int
         """
         self._protect_status = protect_status
 
@@ -363,7 +394,7 @@ class CloudWafHostItem:
         接入状态
 
         :param access_status: The access_status of this CloudWafHostItem.
-        :type: int
+        :type access_status: int
         """
         self._access_status = access_status
 
@@ -385,7 +416,7 @@ class CloudWafHostItem:
         是否使用独享ip
 
         :param exclusive_ip: The exclusive_ip of this CloudWafHostItem.
-        :type: bool
+        :type exclusive_ip: bool
         """
         self._exclusive_ip = exclusive_ip
 
@@ -407,7 +438,7 @@ class CloudWafHostItem:
         付费模式，目前只支持prePaid预付款模式
 
         :param paid_type: The paid_type of this CloudWafHostItem.
-        :type: str
+        :type paid_type: str
         """
         self._paid_type = paid_type
 

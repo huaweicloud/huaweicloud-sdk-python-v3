@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryStructDetailResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class QueryStructDetailResp:
     }
 
     def __init__(self, job_id=None, error_code=None, error_message=None, struct_detail=None):
-        """QueryStructDetailResp - a model defined in huaweicloud sdk"""
+        """QueryStructDetailResp
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 任务ID
+        :type job_id: str
+        :param error_code: 错误码
+        :type error_code: str
+        :param error_message: 错误信息
+        :type error_message: str
+        :param struct_detail: 
+        :type struct_detail: :class:`huaweicloudsdkdrs.v3.QueryFlowCompareDataResp`
+        """
         
         
 
@@ -72,7 +83,7 @@ class QueryStructDetailResp:
         任务ID
 
         :param job_id: The job_id of this QueryStructDetailResp.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -94,7 +105,7 @@ class QueryStructDetailResp:
         错误码
 
         :param error_code: The error_code of this QueryStructDetailResp.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -116,7 +127,7 @@ class QueryStructDetailResp:
         错误信息
 
         :param error_message: The error_message of this QueryStructDetailResp.
-        :type: str
+        :type error_message: str
         """
         self._error_message = error_message
 
@@ -126,7 +137,7 @@ class QueryStructDetailResp:
 
 
         :return: The struct_detail of this QueryStructDetailResp.
-        :rtype: QueryFlowCompareDataResp
+        :rtype: :class:`huaweicloudsdkdrs.v3.QueryFlowCompareDataResp`
         """
         return self._struct_detail
 
@@ -136,7 +147,7 @@ class QueryStructDetailResp:
 
 
         :param struct_detail: The struct_detail of this QueryStructDetailResp.
-        :type: QueryFlowCompareDataResp
+        :type struct_detail: :class:`huaweicloudsdkdrs.v3.QueryFlowCompareDataResp`
         """
         self._struct_detail = struct_detail
 

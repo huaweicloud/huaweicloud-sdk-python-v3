@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListMembersResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListMembersResponse(SdkResponse):
     }
 
     def __init__(self, members=None):
-        """ListMembersResponse - a model defined in huaweicloud sdk"""
+        """ListMembersResponse
+
+        The model defined in huaweicloud sdk
+
+        :param members: 联盟成员列表
+        :type members: list[:class:`huaweicloudsdkbcs.v2.Member`]
+        """
         
         super(ListMembersResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListMembersResponse(SdkResponse):
         联盟成员列表
 
         :return: The members of this ListMembersResponse.
-        :rtype: list[Member]
+        :rtype: list[:class:`huaweicloudsdkbcs.v2.Member`]
         """
         return self._members
 
@@ -58,7 +63,7 @@ class ListMembersResponse(SdkResponse):
         联盟成员列表
 
         :param members: The members of this ListMembersResponse.
-        :type: list[Member]
+        :type members: list[:class:`huaweicloudsdkbcs.v2.Member`]
         """
         self._members = members
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UrlDomainModify:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UrlDomainModify:
     }
 
     def __init__(self, min_ssl_version=None):
-        """UrlDomainModify - a model defined in huaweicloud sdk"""
+        """UrlDomainModify
+
+        The model defined in huaweicloud sdk
+
+        :param min_ssl_version: 最小ssl协议版本号。支持TLSv1.1或TLSv1.2
+        :type min_ssl_version: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class UrlDomainModify:
         最小ssl协议版本号。支持TLSv1.1或TLSv1.2
 
         :param min_ssl_version: The min_ssl_version of this UrlDomainModify.
-        :type: str
+        :type min_ssl_version: str
         """
         self._min_ssl_version = min_ssl_version
 

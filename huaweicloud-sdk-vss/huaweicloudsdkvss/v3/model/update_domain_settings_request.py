@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDomainSettingsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateDomainSettingsRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateDomainSettingsRequest - a model defined in huaweicloud sdk"""
+        """UpdateDomainSettingsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the UpdateDomainSettingsRequest
+        :type body: :class:`huaweicloudsdkvss.v3.UpdateDomainSettingsRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class UpdateDomainSettingsRequest:
 
 
         :return: The body of this UpdateDomainSettingsRequest.
-        :rtype: UpdateDomainSettingsRequestBody
+        :rtype: :class:`huaweicloudsdkvss.v3.UpdateDomainSettingsRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class UpdateDomainSettingsRequest:
 
 
         :param body: The body of this UpdateDomainSettingsRequest.
-        :type: UpdateDomainSettingsRequestBody
+        :type body: :class:`huaweicloudsdkvss.v3.UpdateDomainSettingsRequestBody`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SetRepoRoleRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class SetRepoRoleRequestBody:
     }
 
     def __init__(self, role=None):
-        """SetRepoRoleRequestBody - a model defined in huaweicloud sdk"""
+        """SetRepoRoleRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param role: 设置仓库的成员权限，取值范围：20 -&gt; 只读成员 30-&gt;普通成员，40-&gt;管理员
+        :type role: int
+        """
         
         
 
@@ -57,7 +62,7 @@ class SetRepoRoleRequestBody:
         设置仓库的成员权限，取值范围：20 -> 只读成员 30->普通成员，40->管理员
 
         :param role: The role of this SetRepoRoleRequestBody.
-        :type: int
+        :type role: int
         """
         self._role = role
 

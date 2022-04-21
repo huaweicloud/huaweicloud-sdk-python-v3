@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApiInfoPerPage:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -106,7 +105,89 @@ class ApiInfoPerPage:
     }
 
     def __init__(self, name=None, type=None, version=None, req_protocol=None, req_method=None, req_uri=None, auth_type=None, auth_opt=None, cors=None, match_mode=None, backend_type=None, remark=None, group_id=None, body_remark=None, result_normal_sample=None, result_failure_sample=None, authorizer_id=None, tags=None, response_id=None, roma_app_id=None, domain_name=None, tag=None, content_type=None, id=None, status=None, arrange_necessary=None, register_time=None, update_time=None, group_name=None, group_version=None, run_env_name=None, run_env_id=None, publish_id=None, publish_time=None, roma_app_name=None, ld_api_id=None, backend_api=None, api_group_info=None, req_params=None):
-        """ApiInfoPerPage - a model defined in huaweicloud sdk"""
+        """ApiInfoPerPage
+
+        The model defined in huaweicloud sdk
+
+        :param name: API名称。  支持汉字、英文、数字、中划线、下划线、点、斜杠、中英文格式下的小括号和冒号、中文格式下的顿号，且只能以英文、汉字和数字开头。 &gt; 中文字符必须为UTF-8或者unicode编码。
+        :type name: str
+        :param type: API类型[，该参数暂未使用](tag:hcs;fcs;) - 1：公有API - 2：私有API
+        :type type: int
+        :param version: API的版本
+        :type version: str
+        :param req_protocol: API的请求协议 - HTTP - HTTPS - BOTH：同时支持HTTP和HTTPS
+        :type req_protocol: str
+        :param req_method: API的请求方式
+        :type req_method: str
+        :param req_uri: 请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。 &gt; 需要服从URI规范。
+        :type req_uri: str
+        :param auth_type: API的认证方式[，site暂不支持IAM认证。](tag:Site) - NONE：无认证 - APP：APP认证 - IAM：IAM认证 - AUTHORIZER：自定义认证
+        :type auth_type: str
+        :param auth_opt: 
+        :type auth_opt: :class:`huaweicloudsdkroma.v2.AuthOpt`
+        :param cors: 是否支持跨域 - TRUE：支持 - FALSE：不支持
+        :type cors: bool
+        :param match_mode: API的匹配方式 - SWA：前缀匹配 - NORMAL：正常匹配（绝对匹配） 默认：NORMAL
+        :type match_mode: str
+        :param backend_type: 后端类型[，site暂不支持函数工作流。](tag:Site) - HTTP：web后端 - FUNCTION：函数工作流 - MOCK：模拟的后端
+        :type backend_type: str
+        :param remark: API描述。  不允许带有&lt;、&gt;字符 &gt; 中文字符必须为UTF-8或者unicode编码。
+        :type remark: str
+        :param group_id: API所属的分组编号
+        :type group_id: str
+        :param body_remark: API请求体描述，可以是请求体示例、媒体类型、参数等信息。 &gt; 中文字符必须为UTF-8或者unicode编码。
+        :type body_remark: str
+        :param result_normal_sample: 正常响应示例，描述API的正常返回信息。 &gt; 中文字符必须为UTF-8或者unicode编码。
+        :type result_normal_sample: str
+        :param result_failure_sample: 失败返回示例，描述API的异常返回信息。 &gt; 中文字符必须为UTF-8或者unicode编码。
+        :type result_failure_sample: str
+        :param authorizer_id: 前端自定义认证对象的ID
+        :type authorizer_id: str
+        :param tags: 标签。  支持英文，数字，中文，特殊符号（-*#%.:_），且只能以中文或英文开头。支持输入多个标签，不同标签以英文逗号分割。  默认支持10个标签，如需扩大配额请联系技术工程师修改API_TAG_NUM_LIMIT配置。 
+        :type tags: list[str]
+        :param response_id: 分组自定义响应ID  暂不支持
+        :type response_id: str
+        :param roma_app_id: API归属的集成应用编号  API分组为全局分组时或API绑定自定义域名时必填。
+        :type roma_app_id: str
+        :param domain_name: API绑定的自定义域名，使用自定义域名时roma_app_id字段必填。
+        :type domain_name: str
+        :param tag: 标签  待废弃，优先使用tags字段
+        :type tag: str
+        :param content_type: 请求内容格式类型：  application/json application/xml multipart/form-date text/plain
+        :type content_type: str
+        :param id: API编号
+        :type id: str
+        :param status: API状态   - 1： 有效
+        :type status: int
+        :param arrange_necessary: 是否需要编排
+        :type arrange_necessary: int
+        :param register_time: API注册时间
+        :type register_time: datetime
+        :param update_time: API修改时间
+        :type update_time: datetime
+        :param group_name: API所属分组的名称
+        :type group_name: str
+        :param group_version: API所属分组的版本
+        :type group_version: str
+        :param run_env_name: 发布的环境名称  存在多个发布记录时，环境名称之间用|隔开
+        :type run_env_name: str
+        :param run_env_id: 发布的环境编号  存在多个发布记录时，环境编号之间用|隔开
+        :type run_env_id: str
+        :param publish_id: 发布记录编号  存在多个发布记录时，发布记录编号之间用|隔开
+        :type publish_id: str
+        :param publish_time: 发布时间  存在多个发布记录时，发布时间之间用|隔开
+        :type publish_time: str
+        :param roma_app_name: API归属的集成应用名称
+        :type roma_app_name: str
+        :param ld_api_id: 当API的后端为自定义后端时，对应的自定义后端API编号
+        :type ld_api_id: str
+        :param backend_api: 
+        :type backend_api: :class:`huaweicloudsdkroma.v2.BackendApi`
+        :param api_group_info: 
+        :type api_group_info: :class:`huaweicloudsdkroma.v2.ApiGroupCommonInfo`
+        :param req_params: API的请求参数列表
+        :type req_params: list[:class:`huaweicloudsdkroma.v2.ReqParam`]
+        """
         
         
 
@@ -240,7 +321,7 @@ class ApiInfoPerPage:
         API名称。  支持汉字、英文、数字、中划线、下划线、点、斜杠、中英文格式下的小括号和冒号、中文格式下的顿号，且只能以英文、汉字和数字开头。 > 中文字符必须为UTF-8或者unicode编码。
 
         :param name: The name of this ApiInfoPerPage.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -262,7 +343,7 @@ class ApiInfoPerPage:
         API类型[，该参数暂未使用](tag:hcs;fcs;) - 1：公有API - 2：私有API
 
         :param type: The type of this ApiInfoPerPage.
-        :type: int
+        :type type: int
         """
         self._type = type
 
@@ -284,7 +365,7 @@ class ApiInfoPerPage:
         API的版本
 
         :param version: The version of this ApiInfoPerPage.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -306,7 +387,7 @@ class ApiInfoPerPage:
         API的请求协议 - HTTP - HTTPS - BOTH：同时支持HTTP和HTTPS
 
         :param req_protocol: The req_protocol of this ApiInfoPerPage.
-        :type: str
+        :type req_protocol: str
         """
         self._req_protocol = req_protocol
 
@@ -328,7 +409,7 @@ class ApiInfoPerPage:
         API的请求方式
 
         :param req_method: The req_method of this ApiInfoPerPage.
-        :type: str
+        :type req_method: str
         """
         self._req_method = req_method
 
@@ -350,7 +431,7 @@ class ApiInfoPerPage:
         请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。 > 需要服从URI规范。
 
         :param req_uri: The req_uri of this ApiInfoPerPage.
-        :type: str
+        :type req_uri: str
         """
         self._req_uri = req_uri
 
@@ -372,7 +453,7 @@ class ApiInfoPerPage:
         API的认证方式[，site暂不支持IAM认证。](tag:Site) - NONE：无认证 - APP：APP认证 - IAM：IAM认证 - AUTHORIZER：自定义认证
 
         :param auth_type: The auth_type of this ApiInfoPerPage.
-        :type: str
+        :type auth_type: str
         """
         self._auth_type = auth_type
 
@@ -382,7 +463,7 @@ class ApiInfoPerPage:
 
 
         :return: The auth_opt of this ApiInfoPerPage.
-        :rtype: AuthOpt
+        :rtype: :class:`huaweicloudsdkroma.v2.AuthOpt`
         """
         return self._auth_opt
 
@@ -392,7 +473,7 @@ class ApiInfoPerPage:
 
 
         :param auth_opt: The auth_opt of this ApiInfoPerPage.
-        :type: AuthOpt
+        :type auth_opt: :class:`huaweicloudsdkroma.v2.AuthOpt`
         """
         self._auth_opt = auth_opt
 
@@ -414,7 +495,7 @@ class ApiInfoPerPage:
         是否支持跨域 - TRUE：支持 - FALSE：不支持
 
         :param cors: The cors of this ApiInfoPerPage.
-        :type: bool
+        :type cors: bool
         """
         self._cors = cors
 
@@ -436,7 +517,7 @@ class ApiInfoPerPage:
         API的匹配方式 - SWA：前缀匹配 - NORMAL：正常匹配（绝对匹配） 默认：NORMAL
 
         :param match_mode: The match_mode of this ApiInfoPerPage.
-        :type: str
+        :type match_mode: str
         """
         self._match_mode = match_mode
 
@@ -458,7 +539,7 @@ class ApiInfoPerPage:
         后端类型[，site暂不支持函数工作流。](tag:Site) - HTTP：web后端 - FUNCTION：函数工作流 - MOCK：模拟的后端
 
         :param backend_type: The backend_type of this ApiInfoPerPage.
-        :type: str
+        :type backend_type: str
         """
         self._backend_type = backend_type
 
@@ -480,7 +561,7 @@ class ApiInfoPerPage:
         API描述。  不允许带有<、>字符 > 中文字符必须为UTF-8或者unicode编码。
 
         :param remark: The remark of this ApiInfoPerPage.
-        :type: str
+        :type remark: str
         """
         self._remark = remark
 
@@ -502,7 +583,7 @@ class ApiInfoPerPage:
         API所属的分组编号
 
         :param group_id: The group_id of this ApiInfoPerPage.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -524,7 +605,7 @@ class ApiInfoPerPage:
         API请求体描述，可以是请求体示例、媒体类型、参数等信息。 > 中文字符必须为UTF-8或者unicode编码。
 
         :param body_remark: The body_remark of this ApiInfoPerPage.
-        :type: str
+        :type body_remark: str
         """
         self._body_remark = body_remark
 
@@ -546,7 +627,7 @@ class ApiInfoPerPage:
         正常响应示例，描述API的正常返回信息。 > 中文字符必须为UTF-8或者unicode编码。
 
         :param result_normal_sample: The result_normal_sample of this ApiInfoPerPage.
-        :type: str
+        :type result_normal_sample: str
         """
         self._result_normal_sample = result_normal_sample
 
@@ -568,7 +649,7 @@ class ApiInfoPerPage:
         失败返回示例，描述API的异常返回信息。 > 中文字符必须为UTF-8或者unicode编码。
 
         :param result_failure_sample: The result_failure_sample of this ApiInfoPerPage.
-        :type: str
+        :type result_failure_sample: str
         """
         self._result_failure_sample = result_failure_sample
 
@@ -590,7 +671,7 @@ class ApiInfoPerPage:
         前端自定义认证对象的ID
 
         :param authorizer_id: The authorizer_id of this ApiInfoPerPage.
-        :type: str
+        :type authorizer_id: str
         """
         self._authorizer_id = authorizer_id
 
@@ -612,7 +693,7 @@ class ApiInfoPerPage:
         标签。  支持英文，数字，中文，特殊符号（-*#%.:_），且只能以中文或英文开头。支持输入多个标签，不同标签以英文逗号分割。  默认支持10个标签，如需扩大配额请联系技术工程师修改API_TAG_NUM_LIMIT配置。 
 
         :param tags: The tags of this ApiInfoPerPage.
-        :type: list[str]
+        :type tags: list[str]
         """
         self._tags = tags
 
@@ -634,7 +715,7 @@ class ApiInfoPerPage:
         分组自定义响应ID  暂不支持
 
         :param response_id: The response_id of this ApiInfoPerPage.
-        :type: str
+        :type response_id: str
         """
         self._response_id = response_id
 
@@ -656,7 +737,7 @@ class ApiInfoPerPage:
         API归属的集成应用编号  API分组为全局分组时或API绑定自定义域名时必填。
 
         :param roma_app_id: The roma_app_id of this ApiInfoPerPage.
-        :type: str
+        :type roma_app_id: str
         """
         self._roma_app_id = roma_app_id
 
@@ -678,7 +759,7 @@ class ApiInfoPerPage:
         API绑定的自定义域名，使用自定义域名时roma_app_id字段必填。
 
         :param domain_name: The domain_name of this ApiInfoPerPage.
-        :type: str
+        :type domain_name: str
         """
         self._domain_name = domain_name
 
@@ -700,7 +781,7 @@ class ApiInfoPerPage:
         标签  待废弃，优先使用tags字段
 
         :param tag: The tag of this ApiInfoPerPage.
-        :type: str
+        :type tag: str
         """
         self._tag = tag
 
@@ -722,7 +803,7 @@ class ApiInfoPerPage:
         请求内容格式类型：  application/json application/xml multipart/form-date text/plain
 
         :param content_type: The content_type of this ApiInfoPerPage.
-        :type: str
+        :type content_type: str
         """
         self._content_type = content_type
 
@@ -744,7 +825,7 @@ class ApiInfoPerPage:
         API编号
 
         :param id: The id of this ApiInfoPerPage.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -766,7 +847,7 @@ class ApiInfoPerPage:
         API状态   - 1： 有效
 
         :param status: The status of this ApiInfoPerPage.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -788,7 +869,7 @@ class ApiInfoPerPage:
         是否需要编排
 
         :param arrange_necessary: The arrange_necessary of this ApiInfoPerPage.
-        :type: int
+        :type arrange_necessary: int
         """
         self._arrange_necessary = arrange_necessary
 
@@ -810,7 +891,7 @@ class ApiInfoPerPage:
         API注册时间
 
         :param register_time: The register_time of this ApiInfoPerPage.
-        :type: datetime
+        :type register_time: datetime
         """
         self._register_time = register_time
 
@@ -832,7 +913,7 @@ class ApiInfoPerPage:
         API修改时间
 
         :param update_time: The update_time of this ApiInfoPerPage.
-        :type: datetime
+        :type update_time: datetime
         """
         self._update_time = update_time
 
@@ -854,7 +935,7 @@ class ApiInfoPerPage:
         API所属分组的名称
 
         :param group_name: The group_name of this ApiInfoPerPage.
-        :type: str
+        :type group_name: str
         """
         self._group_name = group_name
 
@@ -876,7 +957,7 @@ class ApiInfoPerPage:
         API所属分组的版本
 
         :param group_version: The group_version of this ApiInfoPerPage.
-        :type: str
+        :type group_version: str
         """
         self._group_version = group_version
 
@@ -898,7 +979,7 @@ class ApiInfoPerPage:
         发布的环境名称  存在多个发布记录时，环境名称之间用|隔开
 
         :param run_env_name: The run_env_name of this ApiInfoPerPage.
-        :type: str
+        :type run_env_name: str
         """
         self._run_env_name = run_env_name
 
@@ -920,7 +1001,7 @@ class ApiInfoPerPage:
         发布的环境编号  存在多个发布记录时，环境编号之间用|隔开
 
         :param run_env_id: The run_env_id of this ApiInfoPerPage.
-        :type: str
+        :type run_env_id: str
         """
         self._run_env_id = run_env_id
 
@@ -942,7 +1023,7 @@ class ApiInfoPerPage:
         发布记录编号  存在多个发布记录时，发布记录编号之间用|隔开
 
         :param publish_id: The publish_id of this ApiInfoPerPage.
-        :type: str
+        :type publish_id: str
         """
         self._publish_id = publish_id
 
@@ -964,7 +1045,7 @@ class ApiInfoPerPage:
         发布时间  存在多个发布记录时，发布时间之间用|隔开
 
         :param publish_time: The publish_time of this ApiInfoPerPage.
-        :type: str
+        :type publish_time: str
         """
         self._publish_time = publish_time
 
@@ -986,7 +1067,7 @@ class ApiInfoPerPage:
         API归属的集成应用名称
 
         :param roma_app_name: The roma_app_name of this ApiInfoPerPage.
-        :type: str
+        :type roma_app_name: str
         """
         self._roma_app_name = roma_app_name
 
@@ -1008,7 +1089,7 @@ class ApiInfoPerPage:
         当API的后端为自定义后端时，对应的自定义后端API编号
 
         :param ld_api_id: The ld_api_id of this ApiInfoPerPage.
-        :type: str
+        :type ld_api_id: str
         """
         self._ld_api_id = ld_api_id
 
@@ -1018,7 +1099,7 @@ class ApiInfoPerPage:
 
 
         :return: The backend_api of this ApiInfoPerPage.
-        :rtype: BackendApi
+        :rtype: :class:`huaweicloudsdkroma.v2.BackendApi`
         """
         return self._backend_api
 
@@ -1028,7 +1109,7 @@ class ApiInfoPerPage:
 
 
         :param backend_api: The backend_api of this ApiInfoPerPage.
-        :type: BackendApi
+        :type backend_api: :class:`huaweicloudsdkroma.v2.BackendApi`
         """
         self._backend_api = backend_api
 
@@ -1038,7 +1119,7 @@ class ApiInfoPerPage:
 
 
         :return: The api_group_info of this ApiInfoPerPage.
-        :rtype: ApiGroupCommonInfo
+        :rtype: :class:`huaweicloudsdkroma.v2.ApiGroupCommonInfo`
         """
         return self._api_group_info
 
@@ -1048,7 +1129,7 @@ class ApiInfoPerPage:
 
 
         :param api_group_info: The api_group_info of this ApiInfoPerPage.
-        :type: ApiGroupCommonInfo
+        :type api_group_info: :class:`huaweicloudsdkroma.v2.ApiGroupCommonInfo`
         """
         self._api_group_info = api_group_info
 
@@ -1059,7 +1140,7 @@ class ApiInfoPerPage:
         API的请求参数列表
 
         :return: The req_params of this ApiInfoPerPage.
-        :rtype: list[ReqParam]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.ReqParam`]
         """
         return self._req_params
 
@@ -1070,7 +1151,7 @@ class ApiInfoPerPage:
         API的请求参数列表
 
         :param req_params: The req_params of this ApiInfoPerPage.
-        :type: list[ReqParam]
+        :type req_params: list[:class:`huaweicloudsdkroma.v2.ReqParam`]
         """
         self._req_params = req_params
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateProtectedInstanceRequestParams:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class CreateProtectedInstanceRequestParams:
     }
 
     def __init__(self, server_group_id=None, server_id=None, name=None, description=None, cluster_id=None, primary_subnet_id=None, primary_ip_address=None, tags=None, flavor_ref=None, tenancy=None, dedicated_host_id=None):
-        """CreateProtectedInstanceRequestParams - a model defined in huaweicloud sdk"""
+        """CreateProtectedInstanceRequestParams
+
+        The model defined in huaweicloud sdk
+
+        :param server_group_id: 需要加入的保护组ID。
+        :type server_group_id: str
+        :param server_id: 指定的生产站点云服务器ID。
+        :type server_id: str
+        :param name: 指定保护实例的名称，最大支持长度为64个字节。只包含中文字符、英文字母（a～ｚ、Ａ～Ｚ）、数字（０~９）、小数点（．）、下划线（_）、中划线（-）。
+        :type name: str
+        :param description: 指定保护实例的描述，最大支持长度为64个字节。不能包含左尖括号（&lt;）或右尖括号（&gt;）。
+        :type description: str
+        :param cluster_id: 专属分布式存储池ID。 当容灾站点磁盘选择专属分布式存储时指定该字段。
+        :type cluster_id: str
+        :param primary_subnet_id: 容灾站点云服务器主网卡所在的子网subnetID，与neutron_network_id字段值一致。
+        :type primary_subnet_id: str
+        :param primary_ip_address: 容灾站点云服务器主网卡IP地址。此参数仅在传入primary_subnet_id时有效。指定primary_subnet_id时，如果不指定该参数，将自动分配容灾站点云服务器主网卡IP地址。
+        :type primary_ip_address: str
+        :param tags: 标签列表。
+        :type tags: list[:class:`huaweicloudsdksdrs.v1.ResourceTag`]
+        :param flavor_ref: 指定的容灾站点云服务器的flavor ID。 查询flavor列表，请参见查询云服务器规格变更支持列表。  说明:不指定此参数时，容灾站点云服务器的flavor ID默认和生产站点云服务器保持一致。 不同规格的云服务器在性能上存在差异，可能会对云服务器上运行的应用产生影响。为保证切换/故障切换后云服务器的性能，建议容灾站点服务器的规格（CPU、内存）不低于生产站点云服务器的规格（CPU、内存）。 生产站点云服务器和容灾站点云服务器的flavor存在匹配关系，可以通过上述接口使用生产站点云服务器过滤出满足要求的容灾站点云服务器flavor。
+        :type flavor_ref: str
+        :param tenancy: 在专属主机或共享池中创建容灾站点云服务器，默认为在共享池中创建。 值为：shared或dedicated。shared：表示共享池。 dedicated：表示专属主机。
+        :type tenancy: str
+        :param dedicated_host_id: 专属主机id，此属性仅在tenancy值为dedicated时有效。 若不指定此属性，系统将自动分配租户可以自动放置弹性云服务器的专属主机。
+        :type dedicated_host_id: str
+        """
         
         
 
@@ -105,7 +130,7 @@ class CreateProtectedInstanceRequestParams:
         需要加入的保护组ID。
 
         :param server_group_id: The server_group_id of this CreateProtectedInstanceRequestParams.
-        :type: str
+        :type server_group_id: str
         """
         self._server_group_id = server_group_id
 
@@ -127,7 +152,7 @@ class CreateProtectedInstanceRequestParams:
         指定的生产站点云服务器ID。
 
         :param server_id: The server_id of this CreateProtectedInstanceRequestParams.
-        :type: str
+        :type server_id: str
         """
         self._server_id = server_id
 
@@ -149,7 +174,7 @@ class CreateProtectedInstanceRequestParams:
         指定保护实例的名称，最大支持长度为64个字节。只包含中文字符、英文字母（a～ｚ、Ａ～Ｚ）、数字（０~９）、小数点（．）、下划线（_）、中划线（-）。
 
         :param name: The name of this CreateProtectedInstanceRequestParams.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -171,7 +196,7 @@ class CreateProtectedInstanceRequestParams:
         指定保护实例的描述，最大支持长度为64个字节。不能包含左尖括号（<）或右尖括号（>）。
 
         :param description: The description of this CreateProtectedInstanceRequestParams.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -193,7 +218,7 @@ class CreateProtectedInstanceRequestParams:
         专属分布式存储池ID。 当容灾站点磁盘选择专属分布式存储时指定该字段。
 
         :param cluster_id: The cluster_id of this CreateProtectedInstanceRequestParams.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -215,7 +240,7 @@ class CreateProtectedInstanceRequestParams:
         容灾站点云服务器主网卡所在的子网subnetID，与neutron_network_id字段值一致。
 
         :param primary_subnet_id: The primary_subnet_id of this CreateProtectedInstanceRequestParams.
-        :type: str
+        :type primary_subnet_id: str
         """
         self._primary_subnet_id = primary_subnet_id
 
@@ -237,7 +262,7 @@ class CreateProtectedInstanceRequestParams:
         容灾站点云服务器主网卡IP地址。此参数仅在传入primary_subnet_id时有效。指定primary_subnet_id时，如果不指定该参数，将自动分配容灾站点云服务器主网卡IP地址。
 
         :param primary_ip_address: The primary_ip_address of this CreateProtectedInstanceRequestParams.
-        :type: str
+        :type primary_ip_address: str
         """
         self._primary_ip_address = primary_ip_address
 
@@ -248,7 +273,7 @@ class CreateProtectedInstanceRequestParams:
         标签列表。
 
         :return: The tags of this CreateProtectedInstanceRequestParams.
-        :rtype: list[ResourceTag]
+        :rtype: list[:class:`huaweicloudsdksdrs.v1.ResourceTag`]
         """
         return self._tags
 
@@ -259,7 +284,7 @@ class CreateProtectedInstanceRequestParams:
         标签列表。
 
         :param tags: The tags of this CreateProtectedInstanceRequestParams.
-        :type: list[ResourceTag]
+        :type tags: list[:class:`huaweicloudsdksdrs.v1.ResourceTag`]
         """
         self._tags = tags
 
@@ -281,7 +306,7 @@ class CreateProtectedInstanceRequestParams:
         指定的容灾站点云服务器的flavor ID。 查询flavor列表，请参见查询云服务器规格变更支持列表。  说明:不指定此参数时，容灾站点云服务器的flavor ID默认和生产站点云服务器保持一致。 不同规格的云服务器在性能上存在差异，可能会对云服务器上运行的应用产生影响。为保证切换/故障切换后云服务器的性能，建议容灾站点服务器的规格（CPU、内存）不低于生产站点云服务器的规格（CPU、内存）。 生产站点云服务器和容灾站点云服务器的flavor存在匹配关系，可以通过上述接口使用生产站点云服务器过滤出满足要求的容灾站点云服务器flavor。
 
         :param flavor_ref: The flavor_ref of this CreateProtectedInstanceRequestParams.
-        :type: str
+        :type flavor_ref: str
         """
         self._flavor_ref = flavor_ref
 
@@ -303,7 +328,7 @@ class CreateProtectedInstanceRequestParams:
         在专属主机或共享池中创建容灾站点云服务器，默认为在共享池中创建。 值为：shared或dedicated。shared：表示共享池。 dedicated：表示专属主机。
 
         :param tenancy: The tenancy of this CreateProtectedInstanceRequestParams.
-        :type: str
+        :type tenancy: str
         """
         self._tenancy = tenancy
 
@@ -325,7 +350,7 @@ class CreateProtectedInstanceRequestParams:
         专属主机id，此属性仅在tenancy值为dedicated时有效。 若不指定此属性，系统将自动分配租户可以自动放置弹性云服务器的专属主机。
 
         :param dedicated_host_id: The dedicated_host_id of this CreateProtectedInstanceRequestParams.
-        :type: str
+        :type dedicated_host_id: str
         """
         self._dedicated_host_id = dedicated_host_id
 

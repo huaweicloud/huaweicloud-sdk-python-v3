@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TableQaAnswers:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class TableQaAnswers:
     }
 
     def __init__(self, answer=None, score=None, table_id=None):
-        """TableQaAnswers - a model defined in huaweicloud sdk"""
+        """TableQaAnswers
+
+        The model defined in huaweicloud sdk
+
+        :param answer: 表格问答答案。
+        :type answer: str
+        :param score: 评分。
+        :type score: float
+        :param table_id: 表格ID。
+        :type table_id: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class TableQaAnswers:
         表格问答答案。
 
         :param answer: The answer of this TableQaAnswers.
-        :type: str
+        :type answer: str
         """
         self._answer = answer
 
@@ -87,7 +96,7 @@ class TableQaAnswers:
         评分。
 
         :param score: The score of this TableQaAnswers.
-        :type: float
+        :type score: float
         """
         self._score = score
 
@@ -109,7 +118,7 @@ class TableQaAnswers:
         表格ID。
 
         :param table_id: The table_id of this TableQaAnswers.
-        :type: str
+        :type table_id: str
         """
         self._table_id = table_id
 

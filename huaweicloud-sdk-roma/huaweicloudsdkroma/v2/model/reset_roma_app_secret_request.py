@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResetRomaAppSecretRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ResetRomaAppSecretRequest:
     }
 
     def __init__(self, app_id=None, instance_id=None, body=None):
-        """ResetRomaAppSecretRequest - a model defined in huaweicloud sdk"""
+        """ResetRomaAppSecretRequest
+
+        The model defined in huaweicloud sdk
+
+        :param app_id: 应用ID
+        :type app_id: str
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param body: Body of the ResetRomaAppSecretRequest
+        :type body: :class:`huaweicloudsdkroma.v2.UpdateAppSecretReq`
+        """
         
         
 
@@ -66,7 +75,7 @@ class ResetRomaAppSecretRequest:
         应用ID
 
         :param app_id: The app_id of this ResetRomaAppSecretRequest.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -88,7 +97,7 @@ class ResetRomaAppSecretRequest:
         实例ID
 
         :param instance_id: The instance_id of this ResetRomaAppSecretRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -98,7 +107,7 @@ class ResetRomaAppSecretRequest:
 
 
         :return: The body of this ResetRomaAppSecretRequest.
-        :rtype: UpdateAppSecretReq
+        :rtype: :class:`huaweicloudsdkroma.v2.UpdateAppSecretReq`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class ResetRomaAppSecretRequest:
 
 
         :param body: The body of this ResetRomaAppSecretRequest.
-        :type: UpdateAppSecretReq
+        :type body: :class:`huaweicloudsdkroma.v2.UpdateAppSecretReq`
         """
         self._body = body
 

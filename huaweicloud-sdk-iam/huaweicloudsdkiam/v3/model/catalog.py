@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Catalog:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class Catalog:
     }
 
     def __init__(self, endpoints=None, id=None, name=None, type=None):
-        """Catalog - a model defined in huaweicloud sdk"""
+        """Catalog
+
+        The model defined in huaweicloud sdk
+
+        :param endpoints: 终端节点信息。
+        :type endpoints: list[:class:`huaweicloudsdkiam.v3.CatalogEndpoints`]
+        :param id: 服务ID。
+        :type id: str
+        :param name: 服务名。
+        :type name: str
+        :param type: 服务类型。
+        :type type: str
+        """
         
         
 
@@ -58,7 +69,7 @@ class Catalog:
         终端节点信息。
 
         :return: The endpoints of this Catalog.
-        :rtype: list[CatalogEndpoints]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.CatalogEndpoints`]
         """
         return self._endpoints
 
@@ -69,7 +80,7 @@ class Catalog:
         终端节点信息。
 
         :param endpoints: The endpoints of this Catalog.
-        :type: list[CatalogEndpoints]
+        :type endpoints: list[:class:`huaweicloudsdkiam.v3.CatalogEndpoints`]
         """
         self._endpoints = endpoints
 
@@ -91,7 +102,7 @@ class Catalog:
         服务ID。
 
         :param id: The id of this Catalog.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -113,7 +124,7 @@ class Catalog:
         服务名。
 
         :param name: The name of this Catalog.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -135,7 +146,7 @@ class Catalog:
         服务类型。
 
         :param type: The type of this Catalog.
-        :type: str
+        :type type: str
         """
         self._type = type
 

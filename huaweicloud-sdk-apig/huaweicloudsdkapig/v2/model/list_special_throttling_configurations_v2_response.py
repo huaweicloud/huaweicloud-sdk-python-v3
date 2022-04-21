@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSpecialThrottlingConfigurationsV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListSpecialThrottlingConfigurationsV2Response(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, throttle_specials=None):
-        """ListSpecialThrottlingConfigurationsV2Response - a model defined in huaweicloud sdk"""
+        """ListSpecialThrottlingConfigurationsV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param size: 本次返回的列表长度
+        :type size: int
+        :param total: 满足条件的记录数
+        :type total: int
+        :param throttle_specials: 本次查询返回的特殊配置列表
+        :type throttle_specials: list[:class:`huaweicloudsdkapig.v2.ThrottleSpecialInfo`]
+        """
         
         super(ListSpecialThrottlingConfigurationsV2Response, self).__init__()
 
@@ -66,7 +75,7 @@ class ListSpecialThrottlingConfigurationsV2Response(SdkResponse):
         本次返回的列表长度
 
         :param size: The size of this ListSpecialThrottlingConfigurationsV2Response.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -88,7 +97,7 @@ class ListSpecialThrottlingConfigurationsV2Response(SdkResponse):
         满足条件的记录数
 
         :param total: The total of this ListSpecialThrottlingConfigurationsV2Response.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -99,7 +108,7 @@ class ListSpecialThrottlingConfigurationsV2Response(SdkResponse):
         本次查询返回的特殊配置列表
 
         :return: The throttle_specials of this ListSpecialThrottlingConfigurationsV2Response.
-        :rtype: list[ThrottleSpecialInfo]
+        :rtype: list[:class:`huaweicloudsdkapig.v2.ThrottleSpecialInfo`]
         """
         return self._throttle_specials
 
@@ -110,7 +119,7 @@ class ListSpecialThrottlingConfigurationsV2Response(SdkResponse):
         本次查询返回的特殊配置列表
 
         :param throttle_specials: The throttle_specials of this ListSpecialThrottlingConfigurationsV2Response.
-        :type: list[ThrottleSpecialInfo]
+        :type throttle_specials: list[:class:`huaweicloudsdkapig.v2.ThrottleSpecialInfo`]
         """
         self._throttle_specials = throttle_specials
 

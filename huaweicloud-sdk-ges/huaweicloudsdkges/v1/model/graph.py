@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Graph:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class Graph:
     }
 
     def __init__(self, name=None, graph_size_type_index=None, arch=None, data_source=None, vpc_id=None, subnet_id=None, security_group_id=None, public_ip=None, enable_multi_az=None, encryption=None, lts_operation_trace=None, sys_tags=None, enable_rbac=None, enable_full_text_index=None):
-        """Graph - a model defined in huaweicloud sdk"""
+        """Graph
+
+        The model defined in huaweicloud sdk
+
+        :param name: 图名称（输入长度在4位到50位之间，必须以字母开头，可以包含字母、数字或者下划线，不能包含其他的特殊字符）。
+        :type name: str
+        :param graph_size_type_index: 图规模类型索引。 - 0：一万边 - 1：百万边 - 2：千万边 - 3：一亿边 - 4：十亿边 - 5：百亿边 - 401：十亿增强边
+        :type graph_size_type_index: str
+        :param arch: 图实例CPU架构类型，取值为x86_64和aarch64。默认取x86_64。 - x86_64：X64 64位架构。 - aarch64：ARM 64位架构。
+        :type arch: str
+        :param data_source: 
+        :type data_source: :class:`huaweicloudsdkges.v1.DataSource`
+        :param vpc_id:   虚拟私有云ID。
+        :type vpc_id: str
+        :param subnet_id: 指定虚拟私有云下的子网ID。
+        :type subnet_id: str
+        :param security_group_id: 安全组ID。
+        :type security_group_id: str
+        :param public_ip: 
+        :type public_ip: :class:`huaweicloudsdkges.v1.PublicIp`
+        :param enable_multi_az: 创建的图是否支持跨可用区（AZ），默认值是false，如果设置为true，系统将会把图中的ECS建在两个可用区中。  如果创建图时，不加该参数，则会将图中的ECS都建在一个可用区中。
+        :type enable_multi_az: bool
+        :param encryption: 
+        :type encryption: :class:`huaweicloudsdkges.v1.EncryptionReq`
+        :param lts_operation_trace: 
+        :type lts_operation_trace: :class:`huaweicloudsdkges.v1.LtsOperationTraceReq`
+        :param sys_tags: 企业项目信息，如果未指定则不开启，默认不开启。
+        :type sys_tags: list[:class:`huaweicloudsdkges.v1.SysTagsRes`]
+        :param enable_rbac: 创建的图是否启用细粒度权限控制，默认不启用，值为false。如果设置为true，创建的图所有用户都没有权限，需要调用业务面细粒度权限控制API进行授权操作才可以访问图。
+        :type enable_rbac: bool
+        :param enable_full_text_index: 创建的图是否开启全文索引控制，默认不启用，值为false。如果设置为true，十亿增强版-规格版图支持全文索引，创建图时会创建云搜索服务集群。 &gt;开启全文索引功能。如果CSS服务已经部署，图实例会自动创建CSS集群，图创建时间较长。如果CSS服务没有部署则图创建失败。
+        :type enable_full_text_index: bool
+        """
         
         
 
@@ -118,7 +149,7 @@ class Graph:
         图名称（输入长度在4位到50位之间，必须以字母开头，可以包含字母、数字或者下划线，不能包含其他的特殊字符）。
 
         :param name: The name of this Graph.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -140,7 +171,7 @@ class Graph:
         图规模类型索引。 - 0：一万边 - 1：百万边 - 2：千万边 - 3：一亿边 - 4：十亿边 - 5：百亿边 - 401：十亿增强边
 
         :param graph_size_type_index: The graph_size_type_index of this Graph.
-        :type: str
+        :type graph_size_type_index: str
         """
         self._graph_size_type_index = graph_size_type_index
 
@@ -162,7 +193,7 @@ class Graph:
         图实例CPU架构类型，取值为x86_64和aarch64。默认取x86_64。 - x86_64：X64 64位架构。 - aarch64：ARM 64位架构。
 
         :param arch: The arch of this Graph.
-        :type: str
+        :type arch: str
         """
         self._arch = arch
 
@@ -172,7 +203,7 @@ class Graph:
 
 
         :return: The data_source of this Graph.
-        :rtype: DataSource
+        :rtype: :class:`huaweicloudsdkges.v1.DataSource`
         """
         return self._data_source
 
@@ -182,7 +213,7 @@ class Graph:
 
 
         :param data_source: The data_source of this Graph.
-        :type: DataSource
+        :type data_source: :class:`huaweicloudsdkges.v1.DataSource`
         """
         self._data_source = data_source
 
@@ -204,7 +235,7 @@ class Graph:
           虚拟私有云ID。
 
         :param vpc_id: The vpc_id of this Graph.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -226,7 +257,7 @@ class Graph:
         指定虚拟私有云下的子网ID。
 
         :param subnet_id: The subnet_id of this Graph.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -248,7 +279,7 @@ class Graph:
         安全组ID。
 
         :param security_group_id: The security_group_id of this Graph.
-        :type: str
+        :type security_group_id: str
         """
         self._security_group_id = security_group_id
 
@@ -258,7 +289,7 @@ class Graph:
 
 
         :return: The public_ip of this Graph.
-        :rtype: PublicIp
+        :rtype: :class:`huaweicloudsdkges.v1.PublicIp`
         """
         return self._public_ip
 
@@ -268,7 +299,7 @@ class Graph:
 
 
         :param public_ip: The public_ip of this Graph.
-        :type: PublicIp
+        :type public_ip: :class:`huaweicloudsdkges.v1.PublicIp`
         """
         self._public_ip = public_ip
 
@@ -290,7 +321,7 @@ class Graph:
         创建的图是否支持跨可用区（AZ），默认值是false，如果设置为true，系统将会把图中的ECS建在两个可用区中。  如果创建图时，不加该参数，则会将图中的ECS都建在一个可用区中。
 
         :param enable_multi_az: The enable_multi_az of this Graph.
-        :type: bool
+        :type enable_multi_az: bool
         """
         self._enable_multi_az = enable_multi_az
 
@@ -300,7 +331,7 @@ class Graph:
 
 
         :return: The encryption of this Graph.
-        :rtype: EncryptionReq
+        :rtype: :class:`huaweicloudsdkges.v1.EncryptionReq`
         """
         return self._encryption
 
@@ -310,7 +341,7 @@ class Graph:
 
 
         :param encryption: The encryption of this Graph.
-        :type: EncryptionReq
+        :type encryption: :class:`huaweicloudsdkges.v1.EncryptionReq`
         """
         self._encryption = encryption
 
@@ -320,7 +351,7 @@ class Graph:
 
 
         :return: The lts_operation_trace of this Graph.
-        :rtype: LtsOperationTraceReq
+        :rtype: :class:`huaweicloudsdkges.v1.LtsOperationTraceReq`
         """
         return self._lts_operation_trace
 
@@ -330,7 +361,7 @@ class Graph:
 
 
         :param lts_operation_trace: The lts_operation_trace of this Graph.
-        :type: LtsOperationTraceReq
+        :type lts_operation_trace: :class:`huaweicloudsdkges.v1.LtsOperationTraceReq`
         """
         self._lts_operation_trace = lts_operation_trace
 
@@ -341,7 +372,7 @@ class Graph:
         企业项目信息，如果未指定则不开启，默认不开启。
 
         :return: The sys_tags of this Graph.
-        :rtype: list[SysTagsRes]
+        :rtype: list[:class:`huaweicloudsdkges.v1.SysTagsRes`]
         """
         return self._sys_tags
 
@@ -352,7 +383,7 @@ class Graph:
         企业项目信息，如果未指定则不开启，默认不开启。
 
         :param sys_tags: The sys_tags of this Graph.
-        :type: list[SysTagsRes]
+        :type sys_tags: list[:class:`huaweicloudsdkges.v1.SysTagsRes`]
         """
         self._sys_tags = sys_tags
 
@@ -374,7 +405,7 @@ class Graph:
         创建的图是否启用细粒度权限控制，默认不启用，值为false。如果设置为true，创建的图所有用户都没有权限，需要调用业务面细粒度权限控制API进行授权操作才可以访问图。
 
         :param enable_rbac: The enable_rbac of this Graph.
-        :type: bool
+        :type enable_rbac: bool
         """
         self._enable_rbac = enable_rbac
 
@@ -396,7 +427,7 @@ class Graph:
         创建的图是否开启全文索引控制，默认不启用，值为false。如果设置为true，十亿增强版-规格版图支持全文索引，创建图时会创建云搜索服务集群。 >开启全文索引功能。如果CSS服务已经部署，图实例会自动创建CSS集群，图创建时间较长。如果CSS服务没有部署则图创建失败。
 
         :param enable_full_text_index: The enable_full_text_index of this Graph.
-        :type: bool
+        :type enable_full_text_index: bool
         """
         self._enable_full_text_index = enable_full_text_index
 

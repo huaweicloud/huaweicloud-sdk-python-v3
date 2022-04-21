@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LogInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class LogInfo:
     }
 
     def __init__(self, name=None, url=None, size=None, start_time=None, end_time=None):
-        """LogInfo - a model defined in huaweicloud sdk"""
+        """LogInfo
+
+        The model defined in huaweicloud sdk
+
+        :param name: 日志文件名，打包文件名格式：{Domain}_{logStartTimeStamp}.log.gz
+        :type name: str
+        :param url: 日志下载链接
+        :type url: str
+        :param size: 日志文件大小
+        :type size: int
+        :param start_time: 日志文件中日志开始时间，北京时间
+        :type start_time: str
+        :param end_time: 日志文件中日志结束时间，北京时间
+        :type end_time: str
+        """
         
         
 
@@ -73,7 +86,7 @@ class LogInfo:
         日志文件名，打包文件名格式：{Domain}_{logStartTimeStamp}.log.gz
 
         :param name: The name of this LogInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -95,7 +108,7 @@ class LogInfo:
         日志下载链接
 
         :param url: The url of this LogInfo.
-        :type: str
+        :type url: str
         """
         self._url = url
 
@@ -117,7 +130,7 @@ class LogInfo:
         日志文件大小
 
         :param size: The size of this LogInfo.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -139,7 +152,7 @@ class LogInfo:
         日志文件中日志开始时间，北京时间
 
         :param start_time: The start_time of this LogInfo.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -161,7 +174,7 @@ class LogInfo:
         日志文件中日志结束时间，北京时间
 
         :param end_time: The end_time of this LogInfo.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 

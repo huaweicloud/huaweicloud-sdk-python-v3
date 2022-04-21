@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AclBatchDelete:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class AclBatchDelete:
     }
 
     def __init__(self, acls=None):
-        """AclBatchDelete - a model defined in huaweicloud sdk"""
+        """AclBatchDelete
+
+        The model defined in huaweicloud sdk
+
+        :param acls: 需要删除的ACL策略ID列表
+        :type acls: list[str]
+        """
         
         
 
@@ -58,7 +63,7 @@ class AclBatchDelete:
         需要删除的ACL策略ID列表
 
         :param acls: The acls of this AclBatchDelete.
-        :type: list[str]
+        :type acls: list[str]
         """
         self._acls = acls
 

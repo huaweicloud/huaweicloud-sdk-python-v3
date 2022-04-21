@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowSubmissionsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowSubmissionsResponse(SdkResponse):
     }
 
     def __init__(self, submissions=None, total=None, page_no=None, page_size=None):
-        """ShowSubmissionsResponse - a model defined in huaweicloud sdk"""
+        """ShowSubmissionsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param submissions: 作业运行信息，详见submissions参数说明。
+        :type submissions: list[:class:`huaweicloudsdkcdm.v1.Submission`]
+        :param total: 查询该作业总的历史记录数。
+        :type total: int
+        :param page_no: 查询作业记录时，分页数。
+        :type page_no: int
+        :param page_size: 分页查询，每页返回的记录数。默认值：10。
+        :type page_size: int
+        """
         
         super(ShowSubmissionsResponse, self).__init__()
 
@@ -62,7 +73,7 @@ class ShowSubmissionsResponse(SdkResponse):
         作业运行信息，详见submissions参数说明。
 
         :return: The submissions of this ShowSubmissionsResponse.
-        :rtype: list[Submission]
+        :rtype: list[:class:`huaweicloudsdkcdm.v1.Submission`]
         """
         return self._submissions
 
@@ -73,7 +84,7 @@ class ShowSubmissionsResponse(SdkResponse):
         作业运行信息，详见submissions参数说明。
 
         :param submissions: The submissions of this ShowSubmissionsResponse.
-        :type: list[Submission]
+        :type submissions: list[:class:`huaweicloudsdkcdm.v1.Submission`]
         """
         self._submissions = submissions
 
@@ -95,7 +106,7 @@ class ShowSubmissionsResponse(SdkResponse):
         查询该作业总的历史记录数。
 
         :param total: The total of this ShowSubmissionsResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -117,7 +128,7 @@ class ShowSubmissionsResponse(SdkResponse):
         查询作业记录时，分页数。
 
         :param page_no: The page_no of this ShowSubmissionsResponse.
-        :type: int
+        :type page_no: int
         """
         self._page_no = page_no
 
@@ -139,7 +150,7 @@ class ShowSubmissionsResponse(SdkResponse):
         分页查询，每页返回的记录数。默认值：10。
 
         :param page_size: The page_size of this ShowSubmissionsResponse.
-        :type: int
+        :type page_size: int
         """
         self._page_size = page_size
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateFunctionTriggerRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CreateFunctionTriggerRequestBody:
     }
 
     def __init__(self, trigger_type_code=None, trigger_status=None, event_type_code=None, event_data=None):
-        """CreateFunctionTriggerRequestBody - a model defined in huaweicloud sdk"""
+        """CreateFunctionTriggerRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param trigger_type_code: 触发器类型。  - TIMER: 定时触发器。 - APIG: APIGW触发器。 - CTS: 云审计触发器，需要先开通云审计服务。 - DDS: 文档数据库触发器，需要开启函数vpc。 - DMS: 分布式消息服务触发器，需要配置dms委托。 - DIS: 数据接入服务触发器，需要配置dis委托。 - LTS: 云审计日志服务触发器，需要配置lts委托。 - OBS: 对象存储服务触发器。 - KAFKA: 专享版本kafka触发器。
+        :type trigger_type_code: str
+        :param trigger_status: 触发器状态，取值为ACTIVE,DISABLED。
+        :type trigger_status: str
+        :param event_type_code: 消息代码。
+        :type event_type_code: str
+        :param event_data: 事件结构体。
+        :type event_data: object
+        """
         
         
 
@@ -71,7 +82,7 @@ class CreateFunctionTriggerRequestBody:
         触发器类型。  - TIMER: 定时触发器。 - APIG: APIGW触发器。 - CTS: 云审计触发器，需要先开通云审计服务。 - DDS: 文档数据库触发器，需要开启函数vpc。 - DMS: 分布式消息服务触发器，需要配置dms委托。 - DIS: 数据接入服务触发器，需要配置dis委托。 - LTS: 云审计日志服务触发器，需要配置lts委托。 - OBS: 对象存储服务触发器。 - KAFKA: 专享版本kafka触发器。
 
         :param trigger_type_code: The trigger_type_code of this CreateFunctionTriggerRequestBody.
-        :type: str
+        :type trigger_type_code: str
         """
         self._trigger_type_code = trigger_type_code
 
@@ -93,7 +104,7 @@ class CreateFunctionTriggerRequestBody:
         触发器状态，取值为ACTIVE,DISABLED。
 
         :param trigger_status: The trigger_status of this CreateFunctionTriggerRequestBody.
-        :type: str
+        :type trigger_status: str
         """
         self._trigger_status = trigger_status
 
@@ -115,7 +126,7 @@ class CreateFunctionTriggerRequestBody:
         消息代码。
 
         :param event_type_code: The event_type_code of this CreateFunctionTriggerRequestBody.
-        :type: str
+        :type event_type_code: str
         """
         self._event_type_code = event_type_code
 
@@ -137,7 +148,7 @@ class CreateFunctionTriggerRequestBody:
         事件结构体。
 
         :param event_data: The event_data of this CreateFunctionTriggerRequestBody.
-        :type: object
+        :type event_data: object
         """
         self._event_data = event_data
 

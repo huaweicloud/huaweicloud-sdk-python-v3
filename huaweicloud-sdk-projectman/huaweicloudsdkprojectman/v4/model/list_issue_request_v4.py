@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListIssueRequestV4:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -62,7 +61,45 @@ class ListIssueRequestV4:
     }
 
     def __init__(self, assigned_ids=None, creator_ids=None, developer_ids=None, domain_ids=None, done_ratios=None, iteration_ids=None, limit=None, offset=None, module_ids=None, priority_ids=None, query_type=None, severity_ids=None, status_ids=None, story_point_ids=None, tracker_ids=None, include_deleted=None, updated_time_interval=None):
-        """ListIssueRequestV4 - a model defined in huaweicloud sdk"""
+        """ListIssueRequestV4
+
+        The model defined in huaweicloud sdk
+
+        :param assigned_ids: 处理人id
+        :type assigned_ids: list[int]
+        :param creator_ids: 创建者id
+        :type creator_ids: list[int]
+        :param developer_ids: 开发人id,对应用户信息的数字id
+        :type developer_ids: list[int]
+        :param domain_ids: id, 领域, 14 &#39;性能&#39;, 15 &#39;功能&#39;, 16 &#39;可靠性&#39;, 17 &#39;网络安全&#39;, 18 &#39;可维护性&#39;, 19 &#39;其他DFX&#39;, 20 &#39;可用性&#39;,
+        :type domain_ids: list[int]
+        :param done_ratios: 完成度
+        :type done_ratios: list[int]
+        :param iteration_ids: 迭代id
+        :type iteration_ids: list[int]
+        :param limit: 每页显示数量
+        :type limit: int
+        :param offset: 分页索引，偏移量，offset是limit的整数倍数，limit&#x3D;10,offset&#x3D;0,10,20...
+        :type offset: int
+        :param module_ids: 模块id
+        :type module_ids: list[int]
+        :param priority_ids: 优先级
+        :type priority_ids: list[int]
+        :param query_type: 查询类型 backlog feature epic
+        :type query_type: str
+        :param severity_ids: 查询类型
+        :type severity_ids: list[int]
+        :param status_ids: 状态   id, 开始   1, 进行中 2, 已解决 3, 测试中 4, 已关闭 5, 已拒绝 6,
+        :type status_ids: list[int]
+        :param story_point_ids: 故事点id
+        :type story_point_ids: list[int]
+        :param tracker_ids: 工作项类型,2任务/task,3缺陷/bug,5epic,6feature,7story
+        :type tracker_ids: list[int]
+        :param include_deleted: true 查询的工作项包含已经逻辑删除的，false 查询的工作项不包含已经删除的
+        :type include_deleted: bool
+        :param updated_time_interval: 根据工作项的更新时间查询工作项，(查询的起始时间,查询的结束时间)
+        :type updated_time_interval: str
+        """
         
         
 
@@ -138,7 +175,7 @@ class ListIssueRequestV4:
         处理人id
 
         :param assigned_ids: The assigned_ids of this ListIssueRequestV4.
-        :type: list[int]
+        :type assigned_ids: list[int]
         """
         self._assigned_ids = assigned_ids
 
@@ -160,7 +197,7 @@ class ListIssueRequestV4:
         创建者id
 
         :param creator_ids: The creator_ids of this ListIssueRequestV4.
-        :type: list[int]
+        :type creator_ids: list[int]
         """
         self._creator_ids = creator_ids
 
@@ -182,7 +219,7 @@ class ListIssueRequestV4:
         开发人id,对应用户信息的数字id
 
         :param developer_ids: The developer_ids of this ListIssueRequestV4.
-        :type: list[int]
+        :type developer_ids: list[int]
         """
         self._developer_ids = developer_ids
 
@@ -204,7 +241,7 @@ class ListIssueRequestV4:
         id, 领域, 14 '性能', 15 '功能', 16 '可靠性', 17 '网络安全', 18 '可维护性', 19 '其他DFX', 20 '可用性',
 
         :param domain_ids: The domain_ids of this ListIssueRequestV4.
-        :type: list[int]
+        :type domain_ids: list[int]
         """
         self._domain_ids = domain_ids
 
@@ -226,7 +263,7 @@ class ListIssueRequestV4:
         完成度
 
         :param done_ratios: The done_ratios of this ListIssueRequestV4.
-        :type: list[int]
+        :type done_ratios: list[int]
         """
         self._done_ratios = done_ratios
 
@@ -248,7 +285,7 @@ class ListIssueRequestV4:
         迭代id
 
         :param iteration_ids: The iteration_ids of this ListIssueRequestV4.
-        :type: list[int]
+        :type iteration_ids: list[int]
         """
         self._iteration_ids = iteration_ids
 
@@ -270,7 +307,7 @@ class ListIssueRequestV4:
         每页显示数量
 
         :param limit: The limit of this ListIssueRequestV4.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -292,7 +329,7 @@ class ListIssueRequestV4:
         分页索引，偏移量，offset是limit的整数倍数，limit=10,offset=0,10,20...
 
         :param offset: The offset of this ListIssueRequestV4.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -314,7 +351,7 @@ class ListIssueRequestV4:
         模块id
 
         :param module_ids: The module_ids of this ListIssueRequestV4.
-        :type: list[int]
+        :type module_ids: list[int]
         """
         self._module_ids = module_ids
 
@@ -336,7 +373,7 @@ class ListIssueRequestV4:
         优先级
 
         :param priority_ids: The priority_ids of this ListIssueRequestV4.
-        :type: list[int]
+        :type priority_ids: list[int]
         """
         self._priority_ids = priority_ids
 
@@ -358,7 +395,7 @@ class ListIssueRequestV4:
         查询类型 backlog feature epic
 
         :param query_type: The query_type of this ListIssueRequestV4.
-        :type: str
+        :type query_type: str
         """
         self._query_type = query_type
 
@@ -380,7 +417,7 @@ class ListIssueRequestV4:
         查询类型
 
         :param severity_ids: The severity_ids of this ListIssueRequestV4.
-        :type: list[int]
+        :type severity_ids: list[int]
         """
         self._severity_ids = severity_ids
 
@@ -402,7 +439,7 @@ class ListIssueRequestV4:
         状态   id, 开始   1, 进行中 2, 已解决 3, 测试中 4, 已关闭 5, 已拒绝 6,
 
         :param status_ids: The status_ids of this ListIssueRequestV4.
-        :type: list[int]
+        :type status_ids: list[int]
         """
         self._status_ids = status_ids
 
@@ -424,7 +461,7 @@ class ListIssueRequestV4:
         故事点id
 
         :param story_point_ids: The story_point_ids of this ListIssueRequestV4.
-        :type: list[int]
+        :type story_point_ids: list[int]
         """
         self._story_point_ids = story_point_ids
 
@@ -446,7 +483,7 @@ class ListIssueRequestV4:
         工作项类型,2任务/task,3缺陷/bug,5epic,6feature,7story
 
         :param tracker_ids: The tracker_ids of this ListIssueRequestV4.
-        :type: list[int]
+        :type tracker_ids: list[int]
         """
         self._tracker_ids = tracker_ids
 
@@ -468,7 +505,7 @@ class ListIssueRequestV4:
         true 查询的工作项包含已经逻辑删除的，false 查询的工作项不包含已经删除的
 
         :param include_deleted: The include_deleted of this ListIssueRequestV4.
-        :type: bool
+        :type include_deleted: bool
         """
         self._include_deleted = include_deleted
 
@@ -490,7 +527,7 @@ class ListIssueRequestV4:
         根据工作项的更新时间查询工作项，(查询的起始时间,查询的结束时间)
 
         :param updated_time_interval: The updated_time_interval of this ListIssueRequestV4.
-        :type: str
+        :type updated_time_interval: str
         """
         self._updated_time_interval = updated_time_interval
 

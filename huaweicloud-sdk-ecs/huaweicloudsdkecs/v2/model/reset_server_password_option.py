@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResetServerPasswordOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ResetServerPasswordOption:
     }
 
     def __init__(self, new_password=None, is_check_password=None):
-        """ResetServerPasswordOption - a model defined in huaweicloud sdk"""
+        """ResetServerPasswordOption
+
+        The model defined in huaweicloud sdk
+
+        :param new_password: 弹性云服务器新密码。  该接口默认不做密码安全性校验；如需校验，请指定字段“is_check_password”为true。  新密码的校验规则： - 密码长度范围为8到26位。 - 允许输入的字符包括：!@%-_&#x3D;+[]:./? - 禁止输入的字符包括：汉字及【】：；“”‘’、，。《》？￥…（）—— ·！~&#x60;#&amp;^,{}*();\&quot;&#39;&lt;&gt;|\\ $ - 复杂度上必须包含大写字母（A-Z）、小写字母（a-z）、数字（0-9）、以及允许的特殊字符中的3种以上搭配 - 不能包含用户名 \&quot;Administrator\&quot; 和“root”及逆序字符 - 不能包含用户名 \&quot;Administrator\&quot; 中连续3个字符
+        :type new_password: str
+        :param is_check_password: 是否检查密码的复杂度。
+        :type is_check_password: bool
+        """
         
         
 
@@ -62,7 +69,7 @@ class ResetServerPasswordOption:
         弹性云服务器新密码。  该接口默认不做密码安全性校验；如需校验，请指定字段“is_check_password”为true。  新密码的校验规则： - 密码长度范围为8到26位。 - 允许输入的字符包括：!@%-_=+[]:./? - 禁止输入的字符包括：汉字及【】：；“”‘’、，。《》？￥…（）—— ·！~`#&^,{}*();\"'<>|\\ $ - 复杂度上必须包含大写字母（A-Z）、小写字母（a-z）、数字（0-9）、以及允许的特殊字符中的3种以上搭配 - 不能包含用户名 \"Administrator\" 和“root”及逆序字符 - 不能包含用户名 \"Administrator\" 中连续3个字符
 
         :param new_password: The new_password of this ResetServerPasswordOption.
-        :type: str
+        :type new_password: str
         """
         self._new_password = new_password
 
@@ -84,7 +91,7 @@ class ResetServerPasswordOption:
         是否检查密码的复杂度。
 
         :param is_check_password: The is_check_password of this ResetServerPasswordOption.
-        :type: bool
+        :type is_check_password: bool
         """
         self._is_check_password = is_check_password
 

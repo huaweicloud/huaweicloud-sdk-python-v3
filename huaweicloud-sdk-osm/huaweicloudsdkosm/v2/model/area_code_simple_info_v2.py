@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AreaCodeSimpleInfoV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class AreaCodeSimpleInfoV2:
     }
 
     def __init__(self, id=None, area_code=None, area_name=None):
-        """AreaCodeSimpleInfoV2 - a model defined in huaweicloud sdk"""
+        """AreaCodeSimpleInfoV2
+
+        The model defined in huaweicloud sdk
+
+        :param id: 唯一id
+        :type id: int
+        :param area_code: 国家码
+        :type area_code: str
+        :param area_name: 国家名称
+        :type area_name: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class AreaCodeSimpleInfoV2:
         唯一id
 
         :param id: The id of this AreaCodeSimpleInfoV2.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -90,7 +99,7 @@ class AreaCodeSimpleInfoV2:
         国家码
 
         :param area_code: The area_code of this AreaCodeSimpleInfoV2.
-        :type: str
+        :type area_code: str
         """
         self._area_code = area_code
 
@@ -112,7 +121,7 @@ class AreaCodeSimpleInfoV2:
         国家名称
 
         :param area_name: The area_name of this AreaCodeSimpleInfoV2.
-        :type: str
+        :type area_name: str
         """
         self._area_name = area_name
 

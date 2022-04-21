@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreatePoem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreatePoem:
     }
 
     def __init__(self, title=None, type=None, acrostic=None):
-        """CreatePoem - a model defined in huaweicloud sdk"""
+        """CreatePoem
+
+        The model defined in huaweicloud sdk
+
+        :param title: 诗歌标题，目前仅支持UTF-8编码，仅支持中文，长度为1-10
+        :type title: str
+        :param type: 诗歌类型，取值如下： 0：五言绝句； 1：七言绝句； 2：五言律诗； 3：七言律诗；
+        :type type: int
+        :param acrostic: 藏头诗，取值如下： 取值为true，为藏头诗； 取值为false，非藏头诗； 默认取值为false。
+        :type acrostic: bool
+        """
         
         
 
@@ -66,7 +75,7 @@ class CreatePoem:
         诗歌标题，目前仅支持UTF-8编码，仅支持中文，长度为1-10
 
         :param title: The title of this CreatePoem.
-        :type: str
+        :type title: str
         """
         self._title = title
 
@@ -88,7 +97,7 @@ class CreatePoem:
         诗歌类型，取值如下： 0：五言绝句； 1：七言绝句； 2：五言律诗； 3：七言律诗；
 
         :param type: The type of this CreatePoem.
-        :type: int
+        :type type: int
         """
         self._type = type
 
@@ -110,7 +119,7 @@ class CreatePoem:
         藏头诗，取值如下： 取值为true，为藏头诗； 取值为false，非藏头诗； 默认取值为false。
 
         :param acrostic: The acrostic of this CreatePoem.
-        :type: bool
+        :type acrostic: bool
         """
         self._acrostic = acrostic
 

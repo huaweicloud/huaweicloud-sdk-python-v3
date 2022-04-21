@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OpExtendInfoRestore:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class OpExtendInfoRestore:
     }
 
     def __init__(self, backup_id=None, backup_name=None, target_resource_id=None, target_resource_name=None):
-        """OpExtendInfoRestore - a model defined in huaweicloud sdk"""
+        """OpExtendInfoRestore
+
+        The model defined in huaweicloud sdk
+
+        :param backup_id: 备份副本ID
+        :type backup_id: str
+        :param backup_name: 备份名称
+        :type backup_name: str
+        :param target_resource_id: 恢复目标资源ID
+        :type target_resource_id: str
+        :param target_resource_name: 恢复目标资源名称
+        :type target_resource_name: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class OpExtendInfoRestore:
         备份副本ID
 
         :param backup_id: The backup_id of this OpExtendInfoRestore.
-        :type: str
+        :type backup_id: str
         """
         self._backup_id = backup_id
 
@@ -95,7 +106,7 @@ class OpExtendInfoRestore:
         备份名称
 
         :param backup_name: The backup_name of this OpExtendInfoRestore.
-        :type: str
+        :type backup_name: str
         """
         self._backup_name = backup_name
 
@@ -117,7 +128,7 @@ class OpExtendInfoRestore:
         恢复目标资源ID
 
         :param target_resource_id: The target_resource_id of this OpExtendInfoRestore.
-        :type: str
+        :type target_resource_id: str
         """
         self._target_resource_id = target_resource_id
 
@@ -139,7 +150,7 @@ class OpExtendInfoRestore:
         恢复目标资源名称
 
         :param target_resource_name: The target_resource_name of this OpExtendInfoRestore.
-        :type: str
+        :type target_resource_name: str
         """
         self._target_resource_name = target_resource_name
 

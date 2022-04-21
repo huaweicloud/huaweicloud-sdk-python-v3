@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateSinkTaskReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CreateSinkTaskReq:
     }
 
     def __init__(self, source_type=None, task_name=None, destination_type=None, obs_destination_descriptor=None):
-        """CreateSinkTaskReq - a model defined in huaweicloud sdk"""
+        """CreateSinkTaskReq
+
+        The model defined in huaweicloud sdk
+
+        :param source_type: 源数据类型，目前只支持BLOB。 
+        :type source_type: str
+        :param task_name: 转储任务名称。 
+        :type task_name: str
+        :param destination_type: 转存的目标类型，当前只支持OBS。 
+        :type destination_type: str
+        :param obs_destination_descriptor: 
+        :type obs_destination_descriptor: :class:`huaweicloudsdkkafka.v2.ObsDestinationDescriptor`
+        """
         
         
 
@@ -69,7 +80,7 @@ class CreateSinkTaskReq:
         源数据类型，目前只支持BLOB。 
 
         :param source_type: The source_type of this CreateSinkTaskReq.
-        :type: str
+        :type source_type: str
         """
         self._source_type = source_type
 
@@ -91,7 +102,7 @@ class CreateSinkTaskReq:
         转储任务名称。 
 
         :param task_name: The task_name of this CreateSinkTaskReq.
-        :type: str
+        :type task_name: str
         """
         self._task_name = task_name
 
@@ -113,7 +124,7 @@ class CreateSinkTaskReq:
         转存的目标类型，当前只支持OBS。 
 
         :param destination_type: The destination_type of this CreateSinkTaskReq.
-        :type: str
+        :type destination_type: str
         """
         self._destination_type = destination_type
 
@@ -123,7 +134,7 @@ class CreateSinkTaskReq:
 
 
         :return: The obs_destination_descriptor of this CreateSinkTaskReq.
-        :rtype: ObsDestinationDescriptor
+        :rtype: :class:`huaweicloudsdkkafka.v2.ObsDestinationDescriptor`
         """
         return self._obs_destination_descriptor
 
@@ -133,7 +144,7 @@ class CreateSinkTaskReq:
 
 
         :param obs_destination_descriptor: The obs_destination_descriptor of this CreateSinkTaskReq.
-        :type: ObsDestinationDescriptor
+        :type obs_destination_descriptor: :class:`huaweicloudsdkkafka.v2.ObsDestinationDescriptor`
         """
         self._obs_destination_descriptor = obs_destination_descriptor
 

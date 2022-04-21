@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RouteOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class RouteOption:
     }
 
     def __init__(self, type=None, destination=None, nexthop=None, description=None):
-        """RouteOption - a model defined in huaweicloud sdk"""
+        """RouteOption
+
+        The model defined in huaweicloud sdk
+
+        :param type: 路由的类型  取值范围：     1）ecs：弹性云服务器     2）vip：虚拟IP
+        :type type: str
+        :param destination: 路由的目的网段  约束：合法的CIDR格式, 目的地址不可更新
+        :type destination: str
+        :param nexthop: 路由下一跳对象的ID  取值范围：     1）当type为ecs时，传入ecs实例ID；     2）当type为vip时，取值为vip的ip地址；
+        :type nexthop: str
+        :param description: 路由的描述信息  取值范围：0-255个字符，不能包含“&lt;”和“&gt;”
+        :type description: str
+        """
         
         
 
@@ -70,7 +81,7 @@ class RouteOption:
         路由的类型  取值范围：     1）ecs：弹性云服务器     2）vip：虚拟IP
 
         :param type: The type of this RouteOption.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -92,7 +103,7 @@ class RouteOption:
         路由的目的网段  约束：合法的CIDR格式, 目的地址不可更新
 
         :param destination: The destination of this RouteOption.
-        :type: str
+        :type destination: str
         """
         self._destination = destination
 
@@ -114,7 +125,7 @@ class RouteOption:
         路由下一跳对象的ID  取值范围：     1）当type为ecs时，传入ecs实例ID；     2）当type为vip时，取值为vip的ip地址；
 
         :param nexthop: The nexthop of this RouteOption.
-        :type: str
+        :type nexthop: str
         """
         self._nexthop = nexthop
 
@@ -136,7 +147,7 @@ class RouteOption:
         路由的描述信息  取值范围：0-255个字符，不能包含“<”和“>”
 
         :param description: The description of this RouteOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 

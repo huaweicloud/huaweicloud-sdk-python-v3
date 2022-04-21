@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ErrorDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ErrorDetail:
     }
 
     def __init__(self, error_code=None, error_msg=None, id=None):
-        """ErrorDetail - a model defined in huaweicloud sdk"""
+        """ErrorDetail
+
+        The model defined in huaweicloud sdk
+
+        :param error_code: 状态码。
+        :type error_code: str
+        :param error_msg: 错误描述信息。
+        :type error_msg: str
+        :param id: 出现错误的客户ID或批量处理消息的ID。
+        :type id: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class ErrorDetail:
         状态码。
 
         :param error_code: The error_code of this ErrorDetail.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -90,7 +99,7 @@ class ErrorDetail:
         错误描述信息。
 
         :param error_msg: The error_msg of this ErrorDetail.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 
@@ -112,7 +121,7 @@ class ErrorDetail:
         出现错误的客户ID或批量处理消息的ID。
 
         :param id: The id of this ErrorDetail.
-        :type: str
+        :type id: str
         """
         self._id = id
 

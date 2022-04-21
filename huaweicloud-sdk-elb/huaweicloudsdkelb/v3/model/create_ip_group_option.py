@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateIpGroupOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class CreateIpGroupOption:
     }
 
     def __init__(self, project_id=None, description=None, name=None, ip_list=None, enterprise_project_id=None):
-        """CreateIpGroupOption - a model defined in huaweicloud sdk"""
+        """CreateIpGroupOption
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: IP地址组所在的项目ID。
+        :type project_id: str
+        :param description: IP地址组的描述。
+        :type description: str
+        :param name: IP地址组的名称。
+        :type name: str
+        :param ip_list: IP地址组中包含的IP或网段列表。[]表示任意IP。
+        :type ip_list: list[:class:`huaweicloudsdkelb.v3.CreateIpGroupIpOption`]
+        :param enterprise_project_id: IP地址组所在的企业项目ID。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
+        :type enterprise_project_id: str
+        """
         
         
 
@@ -77,7 +90,7 @@ class CreateIpGroupOption:
         IP地址组所在的项目ID。
 
         :param project_id: The project_id of this CreateIpGroupOption.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -99,7 +112,7 @@ class CreateIpGroupOption:
         IP地址组的描述。
 
         :param description: The description of this CreateIpGroupOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -121,7 +134,7 @@ class CreateIpGroupOption:
         IP地址组的名称。
 
         :param name: The name of this CreateIpGroupOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -132,7 +145,7 @@ class CreateIpGroupOption:
         IP地址组中包含的IP或网段列表。[]表示任意IP。
 
         :return: The ip_list of this CreateIpGroupOption.
-        :rtype: list[CreateIpGroupIpOption]
+        :rtype: list[:class:`huaweicloudsdkelb.v3.CreateIpGroupIpOption`]
         """
         return self._ip_list
 
@@ -143,7 +156,7 @@ class CreateIpGroupOption:
         IP地址组中包含的IP或网段列表。[]表示任意IP。
 
         :param ip_list: The ip_list of this CreateIpGroupOption.
-        :type: list[CreateIpGroupIpOption]
+        :type ip_list: list[:class:`huaweicloudsdkelb.v3.CreateIpGroupIpOption`]
         """
         self._ip_list = ip_list
 
@@ -165,7 +178,7 @@ class CreateIpGroupOption:
         IP地址组所在的企业项目ID。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
 
         :param enterprise_project_id: The enterprise_project_id of this CreateIpGroupOption.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ScaleProxyRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ScaleProxyRequestBody:
     }
 
     def __init__(self, flavor_ref=None, delay=None):
-        """ScaleProxyRequestBody - a model defined in huaweicloud sdk"""
+        """ScaleProxyRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param flavor_ref: 需要变更的新规格ID。
+        :type flavor_ref: str
+        :param delay: 是否延迟变更。  - true：延迟变更，将在运维时间窗内自动变更。 - false：立即变更。
+        :type delay: bool
+        """
         
         
 
@@ -61,7 +68,7 @@ class ScaleProxyRequestBody:
         需要变更的新规格ID。
 
         :param flavor_ref: The flavor_ref of this ScaleProxyRequestBody.
-        :type: str
+        :type flavor_ref: str
         """
         self._flavor_ref = flavor_ref
 
@@ -83,7 +90,7 @@ class ScaleProxyRequestBody:
         是否延迟变更。  - true：延迟变更，将在运维时间窗内自动变更。 - false：立即变更。
 
         :param delay: The delay of this ScaleProxyRequestBody.
-        :type: bool
+        :type delay: bool
         """
         self._delay = delay
 

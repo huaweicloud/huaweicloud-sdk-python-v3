@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowQuotaRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowQuotaRequest:
     }
 
     def __init__(self, type=None):
-        """ShowQuotaRequest - a model defined in huaweicloud sdk"""
+        """ShowQuotaRequest
+
+        The model defined in huaweicloud sdk
+
+        :param type: 功能说明：根据type过滤查询指定类型的配额 取值范围：vpc，subnet，securityGroup，securityGroupRule，publicIp，vpn，vpngw，vpcPeer，firewall，shareBandwidth，shareBandwidthIP，loadbalancer，listener，physicalConnect，virtualInterface，vpcContainRoutetable，routetableContainRoutes
+        :type type: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class ShowQuotaRequest:
         功能说明：根据type过滤查询指定类型的配额 取值范围：vpc，subnet，securityGroup，securityGroupRule，publicIp，vpn，vpngw，vpcPeer，firewall，shareBandwidth，shareBandwidthIP，loadbalancer，listener，physicalConnect，virtualInterface，vpcContainRoutetable，routetableContainRoutes
 
         :param type: The type of this ShowQuotaRequest.
-        :type: str
+        :type type: str
         """
         self._type = type
 

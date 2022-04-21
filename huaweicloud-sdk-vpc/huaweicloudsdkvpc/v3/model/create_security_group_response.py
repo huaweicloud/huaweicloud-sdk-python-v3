@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateSecurityGroupResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateSecurityGroupResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, security_group=None):
-        """CreateSecurityGroupResponse - a model defined in huaweicloud sdk"""
+        """CreateSecurityGroupResponse
+
+        The model defined in huaweicloud sdk
+
+        :param request_id: 请求Id
+        :type request_id: str
+        :param security_group: 
+        :type security_group: :class:`huaweicloudsdkvpc.v3.SecurityGroupInfo`
+        """
         
         super(CreateSecurityGroupResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class CreateSecurityGroupResponse(SdkResponse):
         请求Id
 
         :param request_id: The request_id of this CreateSecurityGroupResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 
@@ -73,7 +80,7 @@ class CreateSecurityGroupResponse(SdkResponse):
 
 
         :return: The security_group of this CreateSecurityGroupResponse.
-        :rtype: SecurityGroupInfo
+        :rtype: :class:`huaweicloudsdkvpc.v3.SecurityGroupInfo`
         """
         return self._security_group
 
@@ -83,7 +90,7 @@ class CreateSecurityGroupResponse(SdkResponse):
 
 
         :param security_group: The security_group of this CreateSecurityGroupResponse.
-        :type: SecurityGroupInfo
+        :type security_group: :class:`huaweicloudsdkvpc.v3.SecurityGroupInfo`
         """
         self._security_group = security_group
 

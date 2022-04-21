@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QuotaSimpleInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class QuotaSimpleInfo:
     }
 
     def __init__(self, id=None, quota_id=None):
-        """QuotaSimpleInfo - a model defined in huaweicloud sdk"""
+        """QuotaSimpleInfo
+
+        The model defined in huaweicloud sdk
+
+        :param id: 精英服务商ID。
+        :type id: str
+        :param quota_id: 分配给精英服务商的代金券额度ID。
+        :type quota_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class QuotaSimpleInfo:
         精英服务商ID。
 
         :param id: The id of this QuotaSimpleInfo.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -83,7 +90,7 @@ class QuotaSimpleInfo:
         分配给精英服务商的代金券额度ID。
 
         :param quota_id: The quota_id of this QuotaSimpleInfo.
-        :type: str
+        :type quota_id: str
         """
         self._quota_id = quota_id
 

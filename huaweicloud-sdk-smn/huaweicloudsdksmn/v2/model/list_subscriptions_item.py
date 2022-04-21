@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSubscriptionsItem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ListSubscriptionsItem:
     }
 
     def __init__(self, topic_urn=None, protocol=None, subscription_urn=None, owner=None, endpoint=None, remark=None, status=None):
-        """ListSubscriptionsItem - a model defined in huaweicloud sdk"""
+        """ListSubscriptionsItem
+
+        The model defined in huaweicloud sdk
+
+        :param topic_urn: Topic的唯一的资源标识。
+        :type topic_urn: str
+        :param protocol: 不同协议对应不同的endpoint（接受消息的接入点）。目前支持的协议包括：  \&quot;default\&quot;: 默认协议。  “email”：邮件传输协议，endpoint为邮箱地址。  “sms”：短信传输协议，endpoint为手机号码。  “functionstage”：FunctionGraph（函数）传输协议，endpoint为一个函数。  “http”、“https”：HTTP/HTTPS传输协议，endpoint为URL。
+        :type protocol: str
+        :param subscription_urn: 订阅者的唯一资源标识。
+        :type subscription_urn: str
+        :param owner: Topic创建者的项目ID。
+        :type owner: str
+        :param endpoint: 接受消息的接入点。
+        :type endpoint: str
+        :param remark: 备注。
+        :type remark: str
+        :param status: 订阅者状态：0表示订阅还未确认，1表示已经确认，3表示已经取消确认。
+        :type status: int
+        """
         
         
 
@@ -81,7 +98,7 @@ class ListSubscriptionsItem:
         Topic的唯一的资源标识。
 
         :param topic_urn: The topic_urn of this ListSubscriptionsItem.
-        :type: str
+        :type topic_urn: str
         """
         self._topic_urn = topic_urn
 
@@ -103,7 +120,7 @@ class ListSubscriptionsItem:
         不同协议对应不同的endpoint（接受消息的接入点）。目前支持的协议包括：  \"default\": 默认协议。  “email”：邮件传输协议，endpoint为邮箱地址。  “sms”：短信传输协议，endpoint为手机号码。  “functionstage”：FunctionGraph（函数）传输协议，endpoint为一个函数。  “http”、“https”：HTTP/HTTPS传输协议，endpoint为URL。
 
         :param protocol: The protocol of this ListSubscriptionsItem.
-        :type: str
+        :type protocol: str
         """
         self._protocol = protocol
 
@@ -125,7 +142,7 @@ class ListSubscriptionsItem:
         订阅者的唯一资源标识。
 
         :param subscription_urn: The subscription_urn of this ListSubscriptionsItem.
-        :type: str
+        :type subscription_urn: str
         """
         self._subscription_urn = subscription_urn
 
@@ -147,7 +164,7 @@ class ListSubscriptionsItem:
         Topic创建者的项目ID。
 
         :param owner: The owner of this ListSubscriptionsItem.
-        :type: str
+        :type owner: str
         """
         self._owner = owner
 
@@ -169,7 +186,7 @@ class ListSubscriptionsItem:
         接受消息的接入点。
 
         :param endpoint: The endpoint of this ListSubscriptionsItem.
-        :type: str
+        :type endpoint: str
         """
         self._endpoint = endpoint
 
@@ -191,7 +208,7 @@ class ListSubscriptionsItem:
         备注。
 
         :param remark: The remark of this ListSubscriptionsItem.
-        :type: str
+        :type remark: str
         """
         self._remark = remark
 
@@ -213,7 +230,7 @@ class ListSubscriptionsItem:
         订阅者状态：0表示订阅还未确认，1表示已经确认，3表示已经取消确认。
 
         :param status: The status of this ListSubscriptionsItem.
-        :type: int
+        :type status: int
         """
         self._status = status
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TestPlanDetailDesignStage:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class TestPlanDetailDesignStage:
     }
 
     def __init__(self, case_count=None, issue_count=None, issue_covered_count=None):
-        """TestPlanDetailDesignStage - a model defined in huaweicloud sdk"""
+        """TestPlanDetailDesignStage
+
+        The model defined in huaweicloud sdk
+
+        :param case_count: 用例个数
+        :type case_count: int
+        :param issue_count: 需求个数
+        :type issue_count: int
+        :param issue_covered_count: 已被用例关联的需求个数
+        :type issue_covered_count: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class TestPlanDetailDesignStage:
         用例个数
 
         :param case_count: The case_count of this TestPlanDetailDesignStage.
-        :type: int
+        :type case_count: int
         """
         self._case_count = case_count
 
@@ -90,7 +99,7 @@ class TestPlanDetailDesignStage:
         需求个数
 
         :param issue_count: The issue_count of this TestPlanDetailDesignStage.
-        :type: int
+        :type issue_count: int
         """
         self._issue_count = issue_count
 
@@ -112,7 +121,7 @@ class TestPlanDetailDesignStage:
         已被用例关联的需求个数
 
         :param issue_covered_count: The issue_covered_count of this TestPlanDetailDesignStage.
-        :type: str
+        :type issue_covered_count: str
         """
         self._issue_covered_count = issue_covered_count
 

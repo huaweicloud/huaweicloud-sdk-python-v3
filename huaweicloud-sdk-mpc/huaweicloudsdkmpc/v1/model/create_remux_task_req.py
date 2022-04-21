@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateRemuxTaskReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CreateRemuxTaskReq:
     }
 
     def __init__(self, input=None, output=None, user_data=None, output_param=None):
-        """CreateRemuxTaskReq - a model defined in huaweicloud sdk"""
+        """CreateRemuxTaskReq
+
+        The model defined in huaweicloud sdk
+
+        :param input: 
+        :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        :param output: 
+        :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        :param user_data: 用户自定义数据。 
+        :type user_data: str
+        :param output_param: 
+        :type output_param: :class:`huaweicloudsdkmpc.v1.RemuxOutputParam`
+        """
         
         
 
@@ -61,7 +72,7 @@ class CreateRemuxTaskReq:
 
 
         :return: The input of this CreateRemuxTaskReq.
-        :rtype: ObsObjInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         return self._input
 
@@ -71,7 +82,7 @@ class CreateRemuxTaskReq:
 
 
         :param input: The input of this CreateRemuxTaskReq.
-        :type: ObsObjInfo
+        :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         self._input = input
 
@@ -81,7 +92,7 @@ class CreateRemuxTaskReq:
 
 
         :return: The output of this CreateRemuxTaskReq.
-        :rtype: ObsObjInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         return self._output
 
@@ -91,7 +102,7 @@ class CreateRemuxTaskReq:
 
 
         :param output: The output of this CreateRemuxTaskReq.
-        :type: ObsObjInfo
+        :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         self._output = output
 
@@ -113,7 +124,7 @@ class CreateRemuxTaskReq:
         用户自定义数据。 
 
         :param user_data: The user_data of this CreateRemuxTaskReq.
-        :type: str
+        :type user_data: str
         """
         self._user_data = user_data
 
@@ -123,7 +134,7 @@ class CreateRemuxTaskReq:
 
 
         :return: The output_param of this CreateRemuxTaskReq.
-        :rtype: RemuxOutputParam
+        :rtype: :class:`huaweicloudsdkmpc.v1.RemuxOutputParam`
         """
         return self._output_param
 
@@ -133,7 +144,7 @@ class CreateRemuxTaskReq:
 
 
         :param output_param: The output_param of this CreateRemuxTaskReq.
-        :type: RemuxOutputParam
+        :type output_param: :class:`huaweicloudsdkmpc.v1.RemuxOutputParam`
         """
         self._output_param = output_param
 

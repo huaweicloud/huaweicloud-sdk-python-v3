@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDefaultConfigRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class ShowDefaultConfigRequest:
     }
 
     def __init__(self):
-        """ShowDefaultConfigRequest - a model defined in huaweicloud sdk"""
+        """ShowDefaultConfigRequest
+
+        The model defined in huaweicloud sdk
+
+        """
         
         
         self.discriminator = None

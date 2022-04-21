@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NodePoolMetadata:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class NodePoolMetadata:
     }
 
     def __init__(self, name=None, uid=None, annotations=None, update_timestamp=None, creation_timestamp=None):
-        """NodePoolMetadata - a model defined in huaweicloud sdk"""
+        """NodePoolMetadata
+
+        The model defined in huaweicloud sdk
+
+        :param name: 节点名池名称。  &gt; 命名规则： &gt; &gt;  - 以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围1-50位，且不能以中划线(-)结尾。 &gt; &gt;  - 不允许创建名为 DefaultPool 的节点池。
+        :type name: str
+        :param uid: 节点池的uid。创建成功后自动生成，填写无效
+        :type uid: str
+        :param annotations: 节点池的注解，以key value对表示。 
+        :type annotations: dict(str, str)
+        :param update_timestamp: 更新时间
+        :type update_timestamp: str
+        :param creation_timestamp: 创建时间
+        :type creation_timestamp: str
+        """
         
         
 
@@ -77,7 +90,7 @@ class NodePoolMetadata:
         节点名池名称。  > 命名规则： > >  - 以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围1-50位，且不能以中划线(-)结尾。 > >  - 不允许创建名为 DefaultPool 的节点池。
 
         :param name: The name of this NodePoolMetadata.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -99,7 +112,7 @@ class NodePoolMetadata:
         节点池的uid。创建成功后自动生成，填写无效
 
         :param uid: The uid of this NodePoolMetadata.
-        :type: str
+        :type uid: str
         """
         self._uid = uid
 
@@ -121,7 +134,7 @@ class NodePoolMetadata:
         节点池的注解，以key value对表示。 
 
         :param annotations: The annotations of this NodePoolMetadata.
-        :type: dict(str, str)
+        :type annotations: dict(str, str)
         """
         self._annotations = annotations
 
@@ -143,7 +156,7 @@ class NodePoolMetadata:
         更新时间
 
         :param update_timestamp: The update_timestamp of this NodePoolMetadata.
-        :type: str
+        :type update_timestamp: str
         """
         self._update_timestamp = update_timestamp
 
@@ -165,7 +178,7 @@ class NodePoolMetadata:
         创建时间
 
         :param creation_timestamp: The creation_timestamp of this NodePoolMetadata.
-        :type: str
+        :type creation_timestamp: str
         """
         self._creation_timestamp = creation_timestamp
 

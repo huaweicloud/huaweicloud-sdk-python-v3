@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RecognizeQuotaInvoiceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RecognizeQuotaInvoiceRequest:
     }
 
     def __init__(self, body=None):
-        """RecognizeQuotaInvoiceRequest - a model defined in huaweicloud sdk"""
+        """RecognizeQuotaInvoiceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the RecognizeQuotaInvoiceRequest
+        :type body: :class:`huaweicloudsdkocr.v1.QuotaInvoiceRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class RecognizeQuotaInvoiceRequest:
 
 
         :return: The body of this RecognizeQuotaInvoiceRequest.
-        :rtype: QuotaInvoiceRequestBody
+        :rtype: :class:`huaweicloudsdkocr.v1.QuotaInvoiceRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class RecognizeQuotaInvoiceRequest:
 
 
         :param body: The body of this RecognizeQuotaInvoiceRequest.
-        :type: QuotaInvoiceRequestBody
+        :type body: :class:`huaweicloudsdkocr.v1.QuotaInvoiceRequestBody`
         """
         self._body = body
 

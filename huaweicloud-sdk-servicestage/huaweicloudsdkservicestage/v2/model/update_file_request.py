@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateFileRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class UpdateFileRequest:
     }
 
     def __init__(self, x_repo_auth=None, namespace=None, project=None, path=None, ref=None, body=None):
-        """UpdateFileRequest - a model defined in huaweicloud sdk"""
+        """UpdateFileRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_repo_auth: 授权名称。
+        :type x_repo_auth: str
+        :param namespace: 组织ID。
+        :type namespace: str
+        :param project: 仓库项目ID，如果含有“/”，需要将“/”替换为“:”。
+        :type project: str
+        :param path: 文件路径，需要将“/”替换为“:”。
+        :type path: str
+        :param ref: 分支名称或者tag标签名称或者commit sha。
+        :type ref: str
+        :param body: Body of the UpdateFileRequest
+        :type body: :class:`huaweicloudsdkservicestage.v2.FileUpdate`
+        """
         
         
 
@@ -78,7 +93,7 @@ class UpdateFileRequest:
         授权名称。
 
         :param x_repo_auth: The x_repo_auth of this UpdateFileRequest.
-        :type: str
+        :type x_repo_auth: str
         """
         self._x_repo_auth = x_repo_auth
 
@@ -100,7 +115,7 @@ class UpdateFileRequest:
         组织ID。
 
         :param namespace: The namespace of this UpdateFileRequest.
-        :type: str
+        :type namespace: str
         """
         self._namespace = namespace
 
@@ -122,7 +137,7 @@ class UpdateFileRequest:
         仓库项目ID，如果含有“/”，需要将“/”替换为“:”。
 
         :param project: The project of this UpdateFileRequest.
-        :type: str
+        :type project: str
         """
         self._project = project
 
@@ -144,7 +159,7 @@ class UpdateFileRequest:
         文件路径，需要将“/”替换为“:”。
 
         :param path: The path of this UpdateFileRequest.
-        :type: str
+        :type path: str
         """
         self._path = path
 
@@ -166,7 +181,7 @@ class UpdateFileRequest:
         分支名称或者tag标签名称或者commit sha。
 
         :param ref: The ref of this UpdateFileRequest.
-        :type: str
+        :type ref: str
         """
         self._ref = ref
 
@@ -176,7 +191,7 @@ class UpdateFileRequest:
 
 
         :return: The body of this UpdateFileRequest.
-        :rtype: FileUpdate
+        :rtype: :class:`huaweicloudsdkservicestage.v2.FileUpdate`
         """
         return self._body
 
@@ -186,7 +201,7 @@ class UpdateFileRequest:
 
 
         :param body: The body of this UpdateFileRequest.
-        :type: FileUpdate
+        :type body: :class:`huaweicloudsdkservicestage.v2.FileUpdate`
         """
         self._body = body
 

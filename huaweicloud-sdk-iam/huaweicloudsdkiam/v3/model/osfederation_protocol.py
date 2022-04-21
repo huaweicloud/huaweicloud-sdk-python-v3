@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OsfederationProtocol:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class OsfederationProtocol:
     }
 
     def __init__(self, id=None):
-        """OsfederationProtocol - a model defined in huaweicloud sdk"""
+        """OsfederationProtocol
+
+        The model defined in huaweicloud sdk
+
+        :param id: 协议ID。
+        :type id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class OsfederationProtocol:
         协议ID。
 
         :param id: The id of this OsfederationProtocol.
-        :type: str
+        :type id: str
         """
         self._id = id
 

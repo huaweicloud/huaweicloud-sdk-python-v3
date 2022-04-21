@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDomainQuotaRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowDomainQuotaRequest:
     }
 
     def __init__(self, domain_id=None, type=None):
-        """ShowDomainQuotaRequest - a model defined in huaweicloud sdk"""
+        """ShowDomainQuotaRequest
+
+        The model defined in huaweicloud sdk
+
+        :param domain_id: 待查询的账号ID，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
+        :type domain_id: str
+        :param type: 查询配额的类型，取值范围为：user, group, idp, agency, policy, assigment_group_mp, assigment_agency_mp, assigment_group_ep, assigment_user_ep。
+        :type type: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ShowDomainQuotaRequest:
         待查询的账号ID，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param domain_id: The domain_id of this ShowDomainQuotaRequest.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -84,7 +91,7 @@ class ShowDomainQuotaRequest:
         查询配额的类型，取值范围为：user, group, idp, agency, policy, assigment_group_mp, assigment_agency_mp, assigment_group_ep, assigment_user_ep。
 
         :param type: The type of this ShowDomainQuotaRequest.
-        :type: str
+        :type type: str
         """
         self._type = type
 

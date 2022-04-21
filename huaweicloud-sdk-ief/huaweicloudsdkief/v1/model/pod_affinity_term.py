@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PodAffinityTerm:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class PodAffinityTerm:
     }
 
     def __init__(self, label_selector=None, namespaces=None, topology_key=None):
-        """PodAffinityTerm - a model defined in huaweicloud sdk"""
+        """PodAffinityTerm
+
+        The model defined in huaweicloud sdk
+
+        :param label_selector: 
+        :type label_selector: :class:`huaweicloudsdkief.v1.PodAffinityTermLabelSelector`
+        :param namespaces: 命名空间
+        :type namespaces: list[str]
+        :param topology_key: 拓扑标签。 先圈定topologyKey指定的范围，然后再选择labelSelector定义的内容，即亲和调度只会在有topologyKey指定的标签节点上调度。
+        :type topology_key: str
+        """
         
         
 
@@ -56,7 +65,7 @@ class PodAffinityTerm:
 
 
         :return: The label_selector of this PodAffinityTerm.
-        :rtype: PodAffinityTermLabelSelector
+        :rtype: :class:`huaweicloudsdkief.v1.PodAffinityTermLabelSelector`
         """
         return self._label_selector
 
@@ -66,7 +75,7 @@ class PodAffinityTerm:
 
 
         :param label_selector: The label_selector of this PodAffinityTerm.
-        :type: PodAffinityTermLabelSelector
+        :type label_selector: :class:`huaweicloudsdkief.v1.PodAffinityTermLabelSelector`
         """
         self._label_selector = label_selector
 
@@ -88,7 +97,7 @@ class PodAffinityTerm:
         命名空间
 
         :param namespaces: The namespaces of this PodAffinityTerm.
-        :type: list[str]
+        :type namespaces: list[str]
         """
         self._namespaces = namespaces
 
@@ -110,7 +119,7 @@ class PodAffinityTerm:
         拓扑标签。 先圈定topologyKey指定的范围，然后再选择labelSelector定义的内容，即亲和调度只会在有topologyKey指定的标签节点上调度。
 
         :param topology_key: The topology_key of this PodAffinityTerm.
-        :type: str
+        :type topology_key: str
         """
         self._topology_key = topology_key
 

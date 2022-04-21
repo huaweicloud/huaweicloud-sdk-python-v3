@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Routetable:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class Routetable:
     }
 
     def __init__(self, id=None, name=None, subnets=None, vpc_id=None, domain_id=None, description=None, default=None):
-        """Routetable - a model defined in huaweicloud sdk"""
+        """Routetable
+
+        The model defined in huaweicloud sdk
+
+        :param id: 路由表ID  取值范围：标准UUID
+        :type id: str
+        :param name: 路由表名称  取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
+        :type name: str
+        :param subnets: 路由表所关联的子网  约束：只能关联路由表所属VPC下的子网
+        :type subnets: list[:class:`huaweicloudsdkiec.v1.BaseId`]
+        :param vpc_id: 路由表所在的虚拟私有云ID
+        :type vpc_id: str
+        :param domain_id: 帐号ID
+        :type domain_id: str
+        :param description: 路由表描述信息  取值范围：0-255个字符，不能包含“&lt;”和“&gt;”
+        :type description: str
+        :param default: 是否为默认路由表  取值范围：true表示默认路由表；false表示自定义路由表
+        :type default: bool
+        """
         
         
 
@@ -88,7 +105,7 @@ class Routetable:
         路由表ID  取值范围：标准UUID
 
         :param id: The id of this Routetable.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -110,7 +127,7 @@ class Routetable:
         路由表名称  取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
         :param name: The name of this Routetable.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -121,7 +138,7 @@ class Routetable:
         路由表所关联的子网  约束：只能关联路由表所属VPC下的子网
 
         :return: The subnets of this Routetable.
-        :rtype: list[BaseId]
+        :rtype: list[:class:`huaweicloudsdkiec.v1.BaseId`]
         """
         return self._subnets
 
@@ -132,7 +149,7 @@ class Routetable:
         路由表所关联的子网  约束：只能关联路由表所属VPC下的子网
 
         :param subnets: The subnets of this Routetable.
-        :type: list[BaseId]
+        :type subnets: list[:class:`huaweicloudsdkiec.v1.BaseId`]
         """
         self._subnets = subnets
 
@@ -154,7 +171,7 @@ class Routetable:
         路由表所在的虚拟私有云ID
 
         :param vpc_id: The vpc_id of this Routetable.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -176,7 +193,7 @@ class Routetable:
         帐号ID
 
         :param domain_id: The domain_id of this Routetable.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -198,7 +215,7 @@ class Routetable:
         路由表描述信息  取值范围：0-255个字符，不能包含“<”和“>”
 
         :param description: The description of this Routetable.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -220,7 +237,7 @@ class Routetable:
         是否为默认路由表  取值范围：true表示默认路由表；false表示自定义路由表
 
         :param default: The default of this Routetable.
-        :type: bool
+        :type default: bool
         """
         self._default = default
 

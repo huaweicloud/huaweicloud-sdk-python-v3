@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDbUsersRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListDbUsersRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, db_user_id=None, db_username=None, x_language=None):
-        """ListDbUsersRequest - a model defined in huaweicloud sdk"""
+        """ListDbUsersRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param offset: 偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
+        :type offset: int
+        :param limit: 查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
+        :type limit: int
+        :param db_user_id: 数据库用户ID
+        :type db_user_id: str
+        :param db_username: 数据库用户名称
+        :type db_username: str
+        :param x_language: 语言
+        :type x_language: str
+        """
         
         
 
@@ -82,7 +97,7 @@ class ListDbUsersRequest:
         实例ID
 
         :param instance_id: The instance_id of this ListDbUsersRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -104,7 +119,7 @@ class ListDbUsersRequest:
         偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
         :param offset: The offset of this ListDbUsersRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -126,7 +141,7 @@ class ListDbUsersRequest:
         查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
 
         :param limit: The limit of this ListDbUsersRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -148,7 +163,7 @@ class ListDbUsersRequest:
         数据库用户ID
 
         :param db_user_id: The db_user_id of this ListDbUsersRequest.
-        :type: str
+        :type db_user_id: str
         """
         self._db_user_id = db_user_id
 
@@ -170,7 +185,7 @@ class ListDbUsersRequest:
         数据库用户名称
 
         :param db_username: The db_username of this ListDbUsersRequest.
-        :type: str
+        :type db_username: str
         """
         self._db_username = db_username
 
@@ -192,7 +207,7 @@ class ListDbUsersRequest:
         语言
 
         :param x_language: The x_language of this ListDbUsersRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 

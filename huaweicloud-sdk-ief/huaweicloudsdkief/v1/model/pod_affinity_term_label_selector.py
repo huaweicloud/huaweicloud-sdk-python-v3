@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PodAffinityTermLabelSelector:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class PodAffinityTermLabelSelector:
     }
 
     def __init__(self, match_expressions=None, match_labels=None):
-        """PodAffinityTermLabelSelector - a model defined in huaweicloud sdk"""
+        """PodAffinityTermLabelSelector
+
+        The model defined in huaweicloud sdk
+
+        :param match_expressions: 匹配规则表达式
+        :type match_expressions: list[:class:`huaweicloudsdkief.v1.MatchExpression`]
+        :param match_labels: 匹配的标签，格式为key:value键值对。 单个键值对相当于matchExpressions的一个元素，key字段为key，操作符为In，values数组中只有value。
+        :type match_labels: dict(str, str)
+        """
         
         
 
@@ -52,7 +59,7 @@ class PodAffinityTermLabelSelector:
         匹配规则表达式
 
         :return: The match_expressions of this PodAffinityTermLabelSelector.
-        :rtype: list[MatchExpression]
+        :rtype: list[:class:`huaweicloudsdkief.v1.MatchExpression`]
         """
         return self._match_expressions
 
@@ -63,7 +70,7 @@ class PodAffinityTermLabelSelector:
         匹配规则表达式
 
         :param match_expressions: The match_expressions of this PodAffinityTermLabelSelector.
-        :type: list[MatchExpression]
+        :type match_expressions: list[:class:`huaweicloudsdkief.v1.MatchExpression`]
         """
         self._match_expressions = match_expressions
 
@@ -85,7 +92,7 @@ class PodAffinityTermLabelSelector:
         匹配的标签，格式为key:value键值对。 单个键值对相当于matchExpressions的一个元素，key字段为key，操作符为In，values数组中只有value。
 
         :param match_labels: The match_labels of this PodAffinityTermLabelSelector.
-        :type: dict(str, str)
+        :type match_labels: dict(str, str)
         """
         self._match_labels = match_labels
 

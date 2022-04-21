@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RecordRuleReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class RecordRuleReq:
     }
 
     def __init__(self, obs_addr=None, record_formats=None, hls_config=None, mp4_config=None):
-        """RecordRuleReq - a model defined in huaweicloud sdk"""
+        """RecordRuleReq
+
+        The model defined in huaweicloud sdk
+
+        :param obs_addr: 
+        :type obs_addr: :class:`huaweicloudsdkcloudrtc.v2.RecordObsFileAddr`
+        :param record_formats:  录制格式：支持HLS格式和MP4格式（HLS和MP4为大写）。   - 若配置HLS则必须携带HLSRecordConfig参数  - 若配置MP4则需要携带MP4RecordConfig 
+        :type record_formats: list[str]
+        :param hls_config: 
+        :type hls_config: :class:`huaweicloudsdkcloudrtc.v2.HLSRecordConfig`
+        :param mp4_config: 
+        :type mp4_config: :class:`huaweicloudsdkcloudrtc.v2.MP4RecordConfig`
+        """
         
         
 
@@ -59,7 +70,7 @@ class RecordRuleReq:
 
 
         :return: The obs_addr of this RecordRuleReq.
-        :rtype: RecordObsFileAddr
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.RecordObsFileAddr`
         """
         return self._obs_addr
 
@@ -69,7 +80,7 @@ class RecordRuleReq:
 
 
         :param obs_addr: The obs_addr of this RecordRuleReq.
-        :type: RecordObsFileAddr
+        :type obs_addr: :class:`huaweicloudsdkcloudrtc.v2.RecordObsFileAddr`
         """
         self._obs_addr = obs_addr
 
@@ -91,7 +102,7 @@ class RecordRuleReq:
          录制格式：支持HLS格式和MP4格式（HLS和MP4为大写）。   - 若配置HLS则必须携带HLSRecordConfig参数  - 若配置MP4则需要携带MP4RecordConfig 
 
         :param record_formats: The record_formats of this RecordRuleReq.
-        :type: list[str]
+        :type record_formats: list[str]
         """
         self._record_formats = record_formats
 
@@ -101,7 +112,7 @@ class RecordRuleReq:
 
 
         :return: The hls_config of this RecordRuleReq.
-        :rtype: HLSRecordConfig
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.HLSRecordConfig`
         """
         return self._hls_config
 
@@ -111,7 +122,7 @@ class RecordRuleReq:
 
 
         :param hls_config: The hls_config of this RecordRuleReq.
-        :type: HLSRecordConfig
+        :type hls_config: :class:`huaweicloudsdkcloudrtc.v2.HLSRecordConfig`
         """
         self._hls_config = hls_config
 
@@ -121,7 +132,7 @@ class RecordRuleReq:
 
 
         :return: The mp4_config of this RecordRuleReq.
-        :rtype: MP4RecordConfig
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.MP4RecordConfig`
         """
         return self._mp4_config
 
@@ -131,7 +142,7 @@ class RecordRuleReq:
 
 
         :param mp4_config: The mp4_config of this RecordRuleReq.
-        :type: MP4RecordConfig
+        :type mp4_config: :class:`huaweicloudsdkcloudrtc.v2.MP4RecordConfig`
         """
         self._mp4_config = mp4_config
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CleanLimitDict:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CleanLimitDict:
     }
 
     def __init__(self, cleaning_access_pos_id=None, new_connection_limited=None, total_connection_limited=None):
-        """CleanLimitDict - a model defined in huaweicloud sdk"""
+        """CleanLimitDict
+
+        The model defined in huaweicloud sdk
+
+        :param cleaning_access_pos_id: 清洗时访问限制分段ID
+        :type cleaning_access_pos_id: int
+        :param new_connection_limited: 单一源IP新建连接个数
+        :type new_connection_limited: int
+        :param total_connection_limited: 单一源IP连接数总个数
+        :type total_connection_limited: int
+        """
         
         
 
@@ -65,7 +74,7 @@ class CleanLimitDict:
         清洗时访问限制分段ID
 
         :param cleaning_access_pos_id: The cleaning_access_pos_id of this CleanLimitDict.
-        :type: int
+        :type cleaning_access_pos_id: int
         """
         self._cleaning_access_pos_id = cleaning_access_pos_id
 
@@ -87,7 +96,7 @@ class CleanLimitDict:
         单一源IP新建连接个数
 
         :param new_connection_limited: The new_connection_limited of this CleanLimitDict.
-        :type: int
+        :type new_connection_limited: int
         """
         self._new_connection_limited = new_connection_limited
 
@@ -109,7 +118,7 @@ class CleanLimitDict:
         单一源IP连接数总个数
 
         :param total_connection_limited: The total_connection_limited of this CleanLimitDict.
-        :type: int
+        :type total_connection_limited: int
         """
         self._total_connection_limited = total_connection_limited
 

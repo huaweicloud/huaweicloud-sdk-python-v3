@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRestoreDatabasesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListRestoreDatabasesResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, databases=None):
-        """ListRestoreDatabasesResponse - a model defined in huaweicloud sdk"""
+        """ListRestoreDatabasesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total_count: 数据库总数。
+        :type total_count: int
+        :param databases: 数据库列表，列表中每个元素表示一个数据库。
+        :type databases: list[str]
+        """
         
         super(ListRestoreDatabasesResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListRestoreDatabasesResponse(SdkResponse):
         数据库总数。
 
         :param total_count: The total_count of this ListRestoreDatabasesResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 
@@ -85,7 +92,7 @@ class ListRestoreDatabasesResponse(SdkResponse):
         数据库列表，列表中每个元素表示一个数据库。
 
         :param databases: The databases of this ListRestoreDatabasesResponse.
-        :type: list[str]
+        :type databases: list[str]
         """
         self._databases = databases
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateDictionaryResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class CreateDictionaryResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, remark=None, code=None, extend_one=None, extend_two=None, parent_code=None, type=None, create_time=None, update_time=None):
-        """CreateDictionaryResponse - a model defined in huaweicloud sdk"""
+        """CreateDictionaryResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 字典ID
+        :type id: str
+        :param name: 字典名称 - 字符集：中文、英文字母、数字、下划线和空格 - 约束：实例下唯一
+        :type name: str
+        :param remark: 字典描述
+        :type remark: str
+        :param code: 字典编码 - 字符集：英文字母、数字、下划线和空格 - 约束：实例下唯一
+        :type code: str
+        :param extend_one: 字典扩展字段1 - 字符集：中文、英文字母、数字、下划线和空格
+        :type extend_one: str
+        :param extend_two: 字典扩展字段2 - 字符集：中文、英文字母、数字、下划线和空格
+        :type extend_two: str
+        :param parent_code: 父字典编码,为空时代表自身就是最顶级字典
+        :type parent_code: str
+        :param type: 
+        :type type: :class:`huaweicloudsdkroma.v2.DictionaryType`
+        :param create_time: 创建时间
+        :type create_time: str
+        :param update_time: 更新时间
+        :type update_time: str
+        """
         
         super(CreateDictionaryResponse, self).__init__()
 
@@ -103,7 +126,7 @@ class CreateDictionaryResponse(SdkResponse):
         字典ID
 
         :param id: The id of this CreateDictionaryResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -125,7 +148,7 @@ class CreateDictionaryResponse(SdkResponse):
         字典名称 - 字符集：中文、英文字母、数字、下划线和空格 - 约束：实例下唯一
 
         :param name: The name of this CreateDictionaryResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -147,7 +170,7 @@ class CreateDictionaryResponse(SdkResponse):
         字典描述
 
         :param remark: The remark of this CreateDictionaryResponse.
-        :type: str
+        :type remark: str
         """
         self._remark = remark
 
@@ -169,7 +192,7 @@ class CreateDictionaryResponse(SdkResponse):
         字典编码 - 字符集：英文字母、数字、下划线和空格 - 约束：实例下唯一
 
         :param code: The code of this CreateDictionaryResponse.
-        :type: str
+        :type code: str
         """
         self._code = code
 
@@ -191,7 +214,7 @@ class CreateDictionaryResponse(SdkResponse):
         字典扩展字段1 - 字符集：中文、英文字母、数字、下划线和空格
 
         :param extend_one: The extend_one of this CreateDictionaryResponse.
-        :type: str
+        :type extend_one: str
         """
         self._extend_one = extend_one
 
@@ -213,7 +236,7 @@ class CreateDictionaryResponse(SdkResponse):
         字典扩展字段2 - 字符集：中文、英文字母、数字、下划线和空格
 
         :param extend_two: The extend_two of this CreateDictionaryResponse.
-        :type: str
+        :type extend_two: str
         """
         self._extend_two = extend_two
 
@@ -235,7 +258,7 @@ class CreateDictionaryResponse(SdkResponse):
         父字典编码,为空时代表自身就是最顶级字典
 
         :param parent_code: The parent_code of this CreateDictionaryResponse.
-        :type: str
+        :type parent_code: str
         """
         self._parent_code = parent_code
 
@@ -245,7 +268,7 @@ class CreateDictionaryResponse(SdkResponse):
 
 
         :return: The type of this CreateDictionaryResponse.
-        :rtype: DictionaryType
+        :rtype: :class:`huaweicloudsdkroma.v2.DictionaryType`
         """
         return self._type
 
@@ -255,7 +278,7 @@ class CreateDictionaryResponse(SdkResponse):
 
 
         :param type: The type of this CreateDictionaryResponse.
-        :type: DictionaryType
+        :type type: :class:`huaweicloudsdkroma.v2.DictionaryType`
         """
         self._type = type
 
@@ -277,7 +300,7 @@ class CreateDictionaryResponse(SdkResponse):
         创建时间
 
         :param create_time: The create_time of this CreateDictionaryResponse.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -299,7 +322,7 @@ class CreateDictionaryResponse(SdkResponse):
         更新时间
 
         :param update_time: The update_time of this CreateDictionaryResponse.
-        :type: str
+        :type update_time: str
         """
         self._update_time = update_time
 

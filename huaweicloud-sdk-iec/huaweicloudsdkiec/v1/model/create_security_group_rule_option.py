@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateSecurityGroupRuleOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class CreateSecurityGroupRuleOption:
     }
 
     def __init__(self, description=None, security_group_id=None, direction=None, ethertype=None, protocol=None, port_range_min=None, port_range_max=None, remote_group_id=None, remote_ip_prefix=None, action=None, priority=None):
-        """CreateSecurityGroupRuleOption - a model defined in huaweicloud sdk"""
+        """CreateSecurityGroupRuleOption
+
+        The model defined in huaweicloud sdk
+
+        :param description: 安全组规则描述信息。
+        :type description: str
+        :param security_group_id: 安全组ID。
+        :type security_group_id: str
+        :param direction: 出入控制方向。  取值范围：  - egress：出方向  - ingress：入方向
+        :type direction: str
+        :param ethertype: IP协议类型。  取值范围：IPv4[,IPv6](tag:hide)
+        :type ethertype: str
+        :param protocol: 协议类型。  取值范围：icmp、tcp、udp等  约束：为空表示支持所有协议
+        :type protocol: str
+        :param port_range_min: 起始端口值。  取值范围：1~65535  约束：取值不能大于port_range_max的值，为空表示所有端口。 
+        :type port_range_min: int
+        :param port_range_max: 结束端口值。  取值范围：1~65535  约束：取值不能小于port_range_min的值，为空表示所有端口。 
+        :type port_range_max: int
+        :param remote_group_id: 对端安全组id。  约束：和remote_ip_prefix互斥 
+        :type remote_group_id: str
+        :param remote_ip_prefix: 远端IP地址，当direction是egress时为虚拟机访问端的地址，当direction是ingress时为访问虚拟机的地址。  取值范围：IP地址，或者cidr格式  约束：和remote_group_id互斥
+        :type remote_ip_prefix: str
+        :param action: 安全组规则生效策略 取值范围：allow 允许，deny 拒绝  约束：默认值为allow
+        :type action: str
+        :param priority: 规则在安全组中的优先级  取值范围：1~100，1代表最高优先级  约束：默认值为1
+        :type priority: int
+        """
         
         
 
@@ -106,7 +131,7 @@ class CreateSecurityGroupRuleOption:
         安全组规则描述信息。
 
         :param description: The description of this CreateSecurityGroupRuleOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -128,7 +153,7 @@ class CreateSecurityGroupRuleOption:
         安全组ID。
 
         :param security_group_id: The security_group_id of this CreateSecurityGroupRuleOption.
-        :type: str
+        :type security_group_id: str
         """
         self._security_group_id = security_group_id
 
@@ -150,7 +175,7 @@ class CreateSecurityGroupRuleOption:
         出入控制方向。  取值范围：  - egress：出方向  - ingress：入方向
 
         :param direction: The direction of this CreateSecurityGroupRuleOption.
-        :type: str
+        :type direction: str
         """
         self._direction = direction
 
@@ -172,7 +197,7 @@ class CreateSecurityGroupRuleOption:
         IP协议类型。  取值范围：IPv4[,IPv6](tag:hide)
 
         :param ethertype: The ethertype of this CreateSecurityGroupRuleOption.
-        :type: str
+        :type ethertype: str
         """
         self._ethertype = ethertype
 
@@ -194,7 +219,7 @@ class CreateSecurityGroupRuleOption:
         协议类型。  取值范围：icmp、tcp、udp等  约束：为空表示支持所有协议
 
         :param protocol: The protocol of this CreateSecurityGroupRuleOption.
-        :type: str
+        :type protocol: str
         """
         self._protocol = protocol
 
@@ -216,7 +241,7 @@ class CreateSecurityGroupRuleOption:
         起始端口值。  取值范围：1~65535  约束：取值不能大于port_range_max的值，为空表示所有端口。 
 
         :param port_range_min: The port_range_min of this CreateSecurityGroupRuleOption.
-        :type: int
+        :type port_range_min: int
         """
         self._port_range_min = port_range_min
 
@@ -238,7 +263,7 @@ class CreateSecurityGroupRuleOption:
         结束端口值。  取值范围：1~65535  约束：取值不能小于port_range_min的值，为空表示所有端口。 
 
         :param port_range_max: The port_range_max of this CreateSecurityGroupRuleOption.
-        :type: int
+        :type port_range_max: int
         """
         self._port_range_max = port_range_max
 
@@ -260,7 +285,7 @@ class CreateSecurityGroupRuleOption:
         对端安全组id。  约束：和remote_ip_prefix互斥 
 
         :param remote_group_id: The remote_group_id of this CreateSecurityGroupRuleOption.
-        :type: str
+        :type remote_group_id: str
         """
         self._remote_group_id = remote_group_id
 
@@ -282,7 +307,7 @@ class CreateSecurityGroupRuleOption:
         远端IP地址，当direction是egress时为虚拟机访问端的地址，当direction是ingress时为访问虚拟机的地址。  取值范围：IP地址，或者cidr格式  约束：和remote_group_id互斥
 
         :param remote_ip_prefix: The remote_ip_prefix of this CreateSecurityGroupRuleOption.
-        :type: str
+        :type remote_ip_prefix: str
         """
         self._remote_ip_prefix = remote_ip_prefix
 
@@ -304,7 +329,7 @@ class CreateSecurityGroupRuleOption:
         安全组规则生效策略 取值范围：allow 允许，deny 拒绝  约束：默认值为allow
 
         :param action: The action of this CreateSecurityGroupRuleOption.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -326,7 +351,7 @@ class CreateSecurityGroupRuleOption:
         规则在安全组中的优先级  取值范围：1~100，1代表最高优先级  约束：默认值为1
 
         :param priority: The priority of this CreateSecurityGroupRuleOption.
-        :type: int
+        :type priority: int
         """
         self._priority = priority
 

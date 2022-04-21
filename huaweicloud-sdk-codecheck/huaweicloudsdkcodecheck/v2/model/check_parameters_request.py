@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CheckParametersRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CheckParametersRequest:
     }
 
     def __init__(self, project_id=None, task_id=None, ruleset_id=None, language=None):
-        """CheckParametersRequest - a model defined in huaweicloud sdk"""
+        """CheckParametersRequest
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: 项目ID
+        :type project_id: str
+        :param task_id: 任务ID
+        :type task_id: str
+        :param ruleset_id: 规则集ID
+        :type ruleset_id: str
+        :param language: 规则集语言
+        :type language: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class CheckParametersRequest:
         项目ID
 
         :param project_id: The project_id of this CheckParametersRequest.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -91,7 +102,7 @@ class CheckParametersRequest:
         任务ID
 
         :param task_id: The task_id of this CheckParametersRequest.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -113,7 +124,7 @@ class CheckParametersRequest:
         规则集ID
 
         :param ruleset_id: The ruleset_id of this CheckParametersRequest.
-        :type: str
+        :type ruleset_id: str
         """
         self._ruleset_id = ruleset_id
 
@@ -135,7 +146,7 @@ class CheckParametersRequest:
         规则集语言
 
         :param language: The language of this CheckParametersRequest.
-        :type: str
+        :type language: str
         """
         self._language = language
 

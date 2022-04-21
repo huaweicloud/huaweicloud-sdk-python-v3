@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ContainerDef:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class ContainerDef:
     }
 
     def __init__(self, name=None, image_url=None, args=None, command=None, resources=None, envs=None, ports=None, privileged=None, readiness_probe=None, liveness_probe=None, version=None, volumes=None, npu_type=None):
-        """ContainerDef - a model defined in huaweicloud sdk"""
+        """ContainerDef
+
+        The model defined in huaweicloud sdk
+
+        :param name: 容器名称，只允许英文小写字母、数字、中划线，最大长度32, 英文小写字母或数字开头和结尾
+        :type name: str
+        :param image_url: 容器镜像URL
+        :type image_url: str
+        :param args: 容器启动参数，字符总长度最大为65536
+        :type args: list[str]
+        :param command: 容器启动命令，字符总长度最大为65536。 command支持使用数组定义多条命令，但在IEF控制台界面只会显示第一条命令。
+        :type command: list[str]
+        :param resources: 
+        :type resources: :class:`huaweicloudsdkief.v1.DeploymentResources`
+        :param envs: 环境变量
+        :type envs: list[:class:`huaweicloudsdkief.v1.Env`]
+        :param ports: 容器端口映射值
+        :type ports: list[:class:`huaweicloudsdkief.v1.HostContainerPortMapping`]
+        :param privileged: 是否启用特权容器,默认值false
+        :type privileged: bool
+        :param readiness_probe: 
+        :type readiness_probe: :class:`huaweicloudsdkief.v1.Probe`
+        :param liveness_probe: 
+        :type liveness_probe: :class:`huaweicloudsdkief.v1.Probe`
+        :param version: 容器镜像版本
+        :type version: str
+        :param volumes: 卷配置
+        :type volumes: list[:class:`huaweicloudsdkief.v1.Volumes`]
+        :param npu_type: npu类型，支持D310类型和D910类型。 - D310表示D310类型。 - D910表示D910类型。 - 不填表示为D310类型。
+        :type npu_type: str
+        """
         
         
 
@@ -116,7 +145,7 @@ class ContainerDef:
         容器名称，只允许英文小写字母、数字、中划线，最大长度32, 英文小写字母或数字开头和结尾
 
         :param name: The name of this ContainerDef.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -138,7 +167,7 @@ class ContainerDef:
         容器镜像URL
 
         :param image_url: The image_url of this ContainerDef.
-        :type: str
+        :type image_url: str
         """
         self._image_url = image_url
 
@@ -160,7 +189,7 @@ class ContainerDef:
         容器启动参数，字符总长度最大为65536
 
         :param args: The args of this ContainerDef.
-        :type: list[str]
+        :type args: list[str]
         """
         self._args = args
 
@@ -182,7 +211,7 @@ class ContainerDef:
         容器启动命令，字符总长度最大为65536。 command支持使用数组定义多条命令，但在IEF控制台界面只会显示第一条命令。
 
         :param command: The command of this ContainerDef.
-        :type: list[str]
+        :type command: list[str]
         """
         self._command = command
 
@@ -192,7 +221,7 @@ class ContainerDef:
 
 
         :return: The resources of this ContainerDef.
-        :rtype: DeploymentResources
+        :rtype: :class:`huaweicloudsdkief.v1.DeploymentResources`
         """
         return self._resources
 
@@ -202,7 +231,7 @@ class ContainerDef:
 
 
         :param resources: The resources of this ContainerDef.
-        :type: DeploymentResources
+        :type resources: :class:`huaweicloudsdkief.v1.DeploymentResources`
         """
         self._resources = resources
 
@@ -213,7 +242,7 @@ class ContainerDef:
         环境变量
 
         :return: The envs of this ContainerDef.
-        :rtype: list[Env]
+        :rtype: list[:class:`huaweicloudsdkief.v1.Env`]
         """
         return self._envs
 
@@ -224,7 +253,7 @@ class ContainerDef:
         环境变量
 
         :param envs: The envs of this ContainerDef.
-        :type: list[Env]
+        :type envs: list[:class:`huaweicloudsdkief.v1.Env`]
         """
         self._envs = envs
 
@@ -235,7 +264,7 @@ class ContainerDef:
         容器端口映射值
 
         :return: The ports of this ContainerDef.
-        :rtype: list[HostContainerPortMapping]
+        :rtype: list[:class:`huaweicloudsdkief.v1.HostContainerPortMapping`]
         """
         return self._ports
 
@@ -246,7 +275,7 @@ class ContainerDef:
         容器端口映射值
 
         :param ports: The ports of this ContainerDef.
-        :type: list[HostContainerPortMapping]
+        :type ports: list[:class:`huaweicloudsdkief.v1.HostContainerPortMapping`]
         """
         self._ports = ports
 
@@ -268,7 +297,7 @@ class ContainerDef:
         是否启用特权容器,默认值false
 
         :param privileged: The privileged of this ContainerDef.
-        :type: bool
+        :type privileged: bool
         """
         self._privileged = privileged
 
@@ -278,7 +307,7 @@ class ContainerDef:
 
 
         :return: The readiness_probe of this ContainerDef.
-        :rtype: Probe
+        :rtype: :class:`huaweicloudsdkief.v1.Probe`
         """
         return self._readiness_probe
 
@@ -288,7 +317,7 @@ class ContainerDef:
 
 
         :param readiness_probe: The readiness_probe of this ContainerDef.
-        :type: Probe
+        :type readiness_probe: :class:`huaweicloudsdkief.v1.Probe`
         """
         self._readiness_probe = readiness_probe
 
@@ -298,7 +327,7 @@ class ContainerDef:
 
 
         :return: The liveness_probe of this ContainerDef.
-        :rtype: Probe
+        :rtype: :class:`huaweicloudsdkief.v1.Probe`
         """
         return self._liveness_probe
 
@@ -308,7 +337,7 @@ class ContainerDef:
 
 
         :param liveness_probe: The liveness_probe of this ContainerDef.
-        :type: Probe
+        :type liveness_probe: :class:`huaweicloudsdkief.v1.Probe`
         """
         self._liveness_probe = liveness_probe
 
@@ -330,7 +359,7 @@ class ContainerDef:
         容器镜像版本
 
         :param version: The version of this ContainerDef.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -341,7 +370,7 @@ class ContainerDef:
         卷配置
 
         :return: The volumes of this ContainerDef.
-        :rtype: list[Volumes]
+        :rtype: list[:class:`huaweicloudsdkief.v1.Volumes`]
         """
         return self._volumes
 
@@ -352,7 +381,7 @@ class ContainerDef:
         卷配置
 
         :param volumes: The volumes of this ContainerDef.
-        :type: list[Volumes]
+        :type volumes: list[:class:`huaweicloudsdkief.v1.Volumes`]
         """
         self._volumes = volumes
 
@@ -374,7 +403,7 @@ class ContainerDef:
         npu类型，支持D310类型和D910类型。 - D310表示D310类型。 - D910表示D910类型。 - 不填表示为D310类型。
 
         :param npu_type: The npu_type of this ContainerDef.
-        :type: str
+        :type npu_type: str
         """
         self._npu_type = npu_type
 

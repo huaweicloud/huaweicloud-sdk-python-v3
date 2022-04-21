@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDDosRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateDDosRequest:
     }
 
     def __init__(self, floating_ip_id=None, ip=None, body=None):
-        """UpdateDDosRequest - a model defined in huaweicloud sdk"""
+        """UpdateDDosRequest
+
+        The model defined in huaweicloud sdk
+
+        :param floating_ip_id: 用户EIP对应的ID
+        :type floating_ip_id: str
+        :param ip: ip
+        :type ip: str
+        :param body: Body of the UpdateDDosRequest
+        :type body: :class:`huaweicloudsdkantiddos.v1.UpdateAntiDDosServiceRequestBody`
+        """
         
         
 
@@ -67,7 +76,7 @@ class UpdateDDosRequest:
         用户EIP对应的ID
 
         :param floating_ip_id: The floating_ip_id of this UpdateDDosRequest.
-        :type: str
+        :type floating_ip_id: str
         """
         self._floating_ip_id = floating_ip_id
 
@@ -89,7 +98,7 @@ class UpdateDDosRequest:
         ip
 
         :param ip: The ip of this UpdateDDosRequest.
-        :type: str
+        :type ip: str
         """
         self._ip = ip
 
@@ -99,7 +108,7 @@ class UpdateDDosRequest:
 
 
         :return: The body of this UpdateDDosRequest.
-        :rtype: UpdateAntiDDosServiceRequestBody
+        :rtype: :class:`huaweicloudsdkantiddos.v1.UpdateAntiDDosServiceRequestBody`
         """
         return self._body
 
@@ -109,7 +118,7 @@ class UpdateDDosRequest:
 
 
         :param body: The body of this UpdateDDosRequest.
-        :type: UpdateAntiDDosServiceRequestBody
+        :type body: :class:`huaweicloudsdkantiddos.v1.UpdateAntiDDosServiceRequestBody`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QualityEnhanceTemplate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class QualityEnhanceTemplate:
     }
 
     def __init__(self, template_name=None, template_description=None, video=None):
-        """QualityEnhanceTemplate - a model defined in huaweicloud sdk"""
+        """QualityEnhanceTemplate
+
+        The model defined in huaweicloud sdk
+
+        :param template_name: 模板名称。 
+        :type template_name: str
+        :param template_description: 模板描述，查询预置模板时才会返回。 
+        :type template_description: str
+        :param video: 
+        :type video: :class:`huaweicloudsdkmpc.v1.QualityEnhanceVideo`
+        """
         
         
 
@@ -67,7 +76,7 @@ class QualityEnhanceTemplate:
         模板名称。 
 
         :param template_name: The template_name of this QualityEnhanceTemplate.
-        :type: str
+        :type template_name: str
         """
         self._template_name = template_name
 
@@ -89,7 +98,7 @@ class QualityEnhanceTemplate:
         模板描述，查询预置模板时才会返回。 
 
         :param template_description: The template_description of this QualityEnhanceTemplate.
-        :type: str
+        :type template_description: str
         """
         self._template_description = template_description
 
@@ -99,7 +108,7 @@ class QualityEnhanceTemplate:
 
 
         :return: The video of this QualityEnhanceTemplate.
-        :rtype: QualityEnhanceVideo
+        :rtype: :class:`huaweicloudsdkmpc.v1.QualityEnhanceVideo`
         """
         return self._video
 
@@ -109,7 +118,7 @@ class QualityEnhanceTemplate:
 
 
         :param video: The video of this QualityEnhanceTemplate.
-        :type: QualityEnhanceVideo
+        :type video: :class:`huaweicloudsdkmpc.v1.QualityEnhanceVideo`
         """
         self._video = video
 

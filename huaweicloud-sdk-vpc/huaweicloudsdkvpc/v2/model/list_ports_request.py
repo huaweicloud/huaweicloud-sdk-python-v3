@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPortsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class ListPortsRequest:
     }
 
     def __init__(self, name=None, id=None, limit=None, admin_state_up=None, network_id=None, mac_address=None, device_id=None, device_owner=None, status=None, marker=None, fixed_ips=None, enterprise_project_id=None):
-        """ListPortsRequest - a model defined in huaweicloud sdk"""
+        """ListPortsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param name: 功能说明：按照name过滤查询  取值范围：最大长度不超过255
+        :type name: str
+        :param id: 按照port_id过滤查询
+        :type id: str
+        :param limit: 每页返回的个数
+        :type limit: int
+        :param admin_state_up: 按照admin_state_up进行过滤
+        :type admin_state_up: bool
+        :param network_id: 按照network_id过滤查询
+        :type network_id: str
+        :param mac_address: 按照mac_address过滤查询
+        :type mac_address: str
+        :param device_id: 按照device_id过滤查询
+        :type device_id: str
+        :param device_owner: 按照device_owner过滤查询
+        :type device_owner: str
+        :param status: 功能说明：按照status过滤查询  取值范围：ACTIVE、BUILD、DOWN
+        :type status: str
+        :param marker: 分页查询起始的资源ID，为空时查询第一页
+        :type marker: str
+        :param fixed_ips: 按照fixed_ips&#x3D;ip_address或者fixed_ips&#x3D;subnet_id过滤查询
+        :type fixed_ips: str
+        :param enterprise_project_id: 功能说明：企业项目ID，用于基于企业项目的权限管理。  取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。  若需要查询当前用户所有企业项目绑定的端口，请传参all_granted_eps。
+        :type enterprise_project_id: str
+        """
         
         
 
@@ -113,7 +140,7 @@ class ListPortsRequest:
         功能说明：按照name过滤查询  取值范围：最大长度不超过255
 
         :param name: The name of this ListPortsRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -135,7 +162,7 @@ class ListPortsRequest:
         按照port_id过滤查询
 
         :param id: The id of this ListPortsRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -157,7 +184,7 @@ class ListPortsRequest:
         每页返回的个数
 
         :param limit: The limit of this ListPortsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -179,7 +206,7 @@ class ListPortsRequest:
         按照admin_state_up进行过滤
 
         :param admin_state_up: The admin_state_up of this ListPortsRequest.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 
@@ -201,7 +228,7 @@ class ListPortsRequest:
         按照network_id过滤查询
 
         :param network_id: The network_id of this ListPortsRequest.
-        :type: str
+        :type network_id: str
         """
         self._network_id = network_id
 
@@ -223,7 +250,7 @@ class ListPortsRequest:
         按照mac_address过滤查询
 
         :param mac_address: The mac_address of this ListPortsRequest.
-        :type: str
+        :type mac_address: str
         """
         self._mac_address = mac_address
 
@@ -245,7 +272,7 @@ class ListPortsRequest:
         按照device_id过滤查询
 
         :param device_id: The device_id of this ListPortsRequest.
-        :type: str
+        :type device_id: str
         """
         self._device_id = device_id
 
@@ -267,7 +294,7 @@ class ListPortsRequest:
         按照device_owner过滤查询
 
         :param device_owner: The device_owner of this ListPortsRequest.
-        :type: str
+        :type device_owner: str
         """
         self._device_owner = device_owner
 
@@ -289,7 +316,7 @@ class ListPortsRequest:
         功能说明：按照status过滤查询  取值范围：ACTIVE、BUILD、DOWN
 
         :param status: The status of this ListPortsRequest.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -311,7 +338,7 @@ class ListPortsRequest:
         分页查询起始的资源ID，为空时查询第一页
 
         :param marker: The marker of this ListPortsRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -333,7 +360,7 @@ class ListPortsRequest:
         按照fixed_ips=ip_address或者fixed_ips=subnet_id过滤查询
 
         :param fixed_ips: The fixed_ips of this ListPortsRequest.
-        :type: str
+        :type fixed_ips: str
         """
         self._fixed_ips = fixed_ips
 
@@ -355,7 +382,7 @@ class ListPortsRequest:
         功能说明：企业项目ID，用于基于企业项目的权限管理。  取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。  若需要查询当前用户所有企业项目绑定的端口，请传参all_granted_eps。
 
         :param enterprise_project_id: The enterprise_project_id of this ListPortsRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 

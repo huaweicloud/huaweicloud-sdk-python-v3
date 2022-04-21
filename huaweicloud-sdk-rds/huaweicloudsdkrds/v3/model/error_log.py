@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ErrorLog:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ErrorLog:
     }
 
     def __init__(self, time=None, level=None, content=None):
-        """ErrorLog - a model defined in huaweicloud sdk"""
+        """ErrorLog
+
+        The model defined in huaweicloud sdk
+
+        :param time: 日期时间UTC时间。
+        :type time: str
+        :param level: 日志级别。
+        :type level: str
+        :param content: 错误日志内容。
+        :type content: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class ErrorLog:
         日期时间UTC时间。
 
         :param time: The time of this ErrorLog.
-        :type: str
+        :type time: str
         """
         self._time = time
 
@@ -87,7 +96,7 @@ class ErrorLog:
         日志级别。
 
         :param level: The level of this ErrorLog.
-        :type: str
+        :type level: str
         """
         self._level = level
 
@@ -109,7 +118,7 @@ class ErrorLog:
         错误日志内容。
 
         :param content: The content of this ErrorLog.
-        :type: str
+        :type content: str
         """
         self._content = content
 

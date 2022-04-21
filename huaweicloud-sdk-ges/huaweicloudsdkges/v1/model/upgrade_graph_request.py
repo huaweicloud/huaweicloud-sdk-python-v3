@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpgradeGraphRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpgradeGraphRequest:
     }
 
     def __init__(self, graph_id=None, action_id=None, body=None):
-        """UpgradeGraphRequest - a model defined in huaweicloud sdk"""
+        """UpgradeGraphRequest
+
+        The model defined in huaweicloud sdk
+
+        :param graph_id: 图ID。
+        :type graph_id: str
+        :param action_id: 图actionId
+        :type action_id: str
+        :param body: Body of the UpgradeGraphRequest
+        :type body: :class:`huaweicloudsdkges.v1.UpgradeGraphReq`
+        """
         
         
 
@@ -66,7 +75,7 @@ class UpgradeGraphRequest:
         图ID。
 
         :param graph_id: The graph_id of this UpgradeGraphRequest.
-        :type: str
+        :type graph_id: str
         """
         self._graph_id = graph_id
 
@@ -88,7 +97,7 @@ class UpgradeGraphRequest:
         图actionId
 
         :param action_id: The action_id of this UpgradeGraphRequest.
-        :type: str
+        :type action_id: str
         """
         self._action_id = action_id
 
@@ -98,7 +107,7 @@ class UpgradeGraphRequest:
 
 
         :return: The body of this UpgradeGraphRequest.
-        :rtype: UpgradeGraphReq
+        :rtype: :class:`huaweicloudsdkges.v1.UpgradeGraphReq`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class UpgradeGraphRequest:
 
 
         :param body: The body of this UpgradeGraphRequest.
-        :type: UpgradeGraphReq
+        :type body: :class:`huaweicloudsdkges.v1.UpgradeGraphReq`
         """
         self._body = body
 

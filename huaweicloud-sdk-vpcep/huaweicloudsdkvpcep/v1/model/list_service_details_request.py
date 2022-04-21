@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListServiceDetailsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListServiceDetailsRequest:
     }
 
     def __init__(self, vpc_endpoint_service_id=None):
-        """ListServiceDetailsRequest - a model defined in huaweicloud sdk"""
+        """ListServiceDetailsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param vpc_endpoint_service_id: 终端节点服务的ID。
+        :type vpc_endpoint_service_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ListServiceDetailsRequest:
         终端节点服务的ID。
 
         :param vpc_endpoint_service_id: The vpc_endpoint_service_id of this ListServiceDetailsRequest.
-        :type: str
+        :type vpc_endpoint_service_id: str
         """
         self._vpc_endpoint_service_id = vpc_endpoint_service_id
 

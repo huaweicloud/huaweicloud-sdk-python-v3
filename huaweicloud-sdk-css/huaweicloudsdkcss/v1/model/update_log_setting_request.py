@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateLogSettingRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateLogSettingRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """UpdateLogSettingRequest - a model defined in huaweicloud sdk"""
+        """UpdateLogSettingRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 指定待更改的集群ID。
+        :type cluster_id: str
+        :param body: Body of the UpdateLogSettingRequest
+        :type body: :class:`huaweicloudsdkcss.v1.UpdateLogSettingReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateLogSettingRequest:
         指定待更改的集群ID。
 
         :param cluster_id: The cluster_id of this UpdateLogSettingRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -72,7 +79,7 @@ class UpdateLogSettingRequest:
 
 
         :return: The body of this UpdateLogSettingRequest.
-        :rtype: UpdateLogSettingReq
+        :rtype: :class:`huaweicloudsdkcss.v1.UpdateLogSettingReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateLogSettingRequest:
 
 
         :param body: The body of this UpdateLogSettingRequest.
-        :type: UpdateLogSettingReq
+        :type body: :class:`huaweicloudsdkcss.v1.UpdateLogSettingReq`
         """
         self._body = body
 

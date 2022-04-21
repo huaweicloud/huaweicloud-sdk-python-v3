@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QuotaDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class QuotaDetail:
     }
 
     def __init__(self, zh_cn=None, en_us=None, remaining=None):
-        """QuotaDetail - a model defined in huaweicloud sdk"""
+        """QuotaDetail
+
+        The model defined in huaweicloud sdk
+
+        :param zh_cn: 中文配额描述
+        :type zh_cn: str
+        :param en_us: 英文配额描述
+        :type en_us: str
+        :param remaining: 租户剩余配额数量
+        :type remaining: int
+        """
         
         
 
@@ -67,7 +76,7 @@ class QuotaDetail:
         中文配额描述
 
         :param zh_cn: The zh_cn of this QuotaDetail.
-        :type: str
+        :type zh_cn: str
         """
         self._zh_cn = zh_cn
 
@@ -89,7 +98,7 @@ class QuotaDetail:
         英文配额描述
 
         :param en_us: The en_us of this QuotaDetail.
-        :type: str
+        :type en_us: str
         """
         self._en_us = en_us
 
@@ -111,7 +120,7 @@ class QuotaDetail:
         租户剩余配额数量
 
         :param remaining: The remaining of this QuotaDetail.
-        :type: int
+        :type remaining: int
         """
         self._remaining = remaining
 

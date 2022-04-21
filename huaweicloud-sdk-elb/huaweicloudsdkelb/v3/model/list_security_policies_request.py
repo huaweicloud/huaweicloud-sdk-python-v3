@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSecurityPoliciesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ListSecurityPoliciesRequest:
     }
 
     def __init__(self, marker=None, limit=None, page_reverse=None, id=None, name=None, description=None, protocols=None, ciphers=None):
-        """ListSecurityPoliciesRequest - a model defined in huaweicloud sdk"""
+        """ListSecurityPoliciesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param marker: 上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
+        :type marker: str
+        :param limit: 每页返回的个数。
+        :type limit: int
+        :param page_reverse: 分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。  使用说明：必须与limit一起使用。
+        :type page_reverse: bool
+        :param id: 自定义安全策略的ID。  支持多值查询，查询条件格式：*id&#x3D;xxx&amp;id&#x3D;xxx*。
+        :type id: list[str]
+        :param name: 自定义安全策略的名称。  支持多值查询，查询条件格式：*name&#x3D;xxx&amp;name&#x3D;xxx*。
+        :type name: list[str]
+        :param description: 自定义安全策略的描述信息。  支持多值查询，查询条件格式：*description&#x3D;xxx&amp;description&#x3D;xxx*。
+        :type description: list[str]
+        :param protocols: 空格分隔的自定义安全策略的TLS协议。  支持多值查询，查询条件格式：*protocols&#x3D;xxx&amp;protocols&#x3D;xxx*。
+        :type protocols: list[str]
+        :param ciphers: 冒号分隔的自定义安全策略的加密套件。  支持多值查询，查询条件格式：*ciphers&#x3D;xxx&amp;ciphers&#x3D;xxx*。
+        :type ciphers: list[str]
+        """
         
         
 
@@ -93,7 +112,7 @@ class ListSecurityPoliciesRequest:
         上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
         :param marker: The marker of this ListSecurityPoliciesRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -115,7 +134,7 @@ class ListSecurityPoliciesRequest:
         每页返回的个数。
 
         :param limit: The limit of this ListSecurityPoliciesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -137,7 +156,7 @@ class ListSecurityPoliciesRequest:
         分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。  使用说明：必须与limit一起使用。
 
         :param page_reverse: The page_reverse of this ListSecurityPoliciesRequest.
-        :type: bool
+        :type page_reverse: bool
         """
         self._page_reverse = page_reverse
 
@@ -159,7 +178,7 @@ class ListSecurityPoliciesRequest:
         自定义安全策略的ID。  支持多值查询，查询条件格式：*id=xxx&id=xxx*。
 
         :param id: The id of this ListSecurityPoliciesRequest.
-        :type: list[str]
+        :type id: list[str]
         """
         self._id = id
 
@@ -181,7 +200,7 @@ class ListSecurityPoliciesRequest:
         自定义安全策略的名称。  支持多值查询，查询条件格式：*name=xxx&name=xxx*。
 
         :param name: The name of this ListSecurityPoliciesRequest.
-        :type: list[str]
+        :type name: list[str]
         """
         self._name = name
 
@@ -203,7 +222,7 @@ class ListSecurityPoliciesRequest:
         自定义安全策略的描述信息。  支持多值查询，查询条件格式：*description=xxx&description=xxx*。
 
         :param description: The description of this ListSecurityPoliciesRequest.
-        :type: list[str]
+        :type description: list[str]
         """
         self._description = description
 
@@ -225,7 +244,7 @@ class ListSecurityPoliciesRequest:
         空格分隔的自定义安全策略的TLS协议。  支持多值查询，查询条件格式：*protocols=xxx&protocols=xxx*。
 
         :param protocols: The protocols of this ListSecurityPoliciesRequest.
-        :type: list[str]
+        :type protocols: list[str]
         """
         self._protocols = protocols
 
@@ -247,7 +266,7 @@ class ListSecurityPoliciesRequest:
         冒号分隔的自定义安全策略的加密套件。  支持多值查询，查询条件格式：*ciphers=xxx&ciphers=xxx*。
 
         :param ciphers: The ciphers of this ListSecurityPoliciesRequest.
-        :type: list[str]
+        :type ciphers: list[str]
         """
         self._ciphers = ciphers
 

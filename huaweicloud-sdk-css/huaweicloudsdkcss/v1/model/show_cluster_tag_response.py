@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowClusterTagResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowClusterTagResponse(SdkResponse):
     }
 
     def __init__(self, tags=None):
-        """ShowClusterTagResponse - a model defined in huaweicloud sdk"""
+        """ShowClusterTagResponse
+
+        The model defined in huaweicloud sdk
+
+        :param tags: 集群标签列表。
+        :type tags: list[:class:`huaweicloudsdkcss.v1.ShowTagsTagsResp`]
+        """
         
         super(ShowClusterTagResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ShowClusterTagResponse(SdkResponse):
         集群标签列表。
 
         :return: The tags of this ShowClusterTagResponse.
-        :rtype: list[ShowTagsTagsResp]
+        :rtype: list[:class:`huaweicloudsdkcss.v1.ShowTagsTagsResp`]
         """
         return self._tags
 
@@ -58,7 +63,7 @@ class ShowClusterTagResponse(SdkResponse):
         集群标签列表。
 
         :param tags: The tags of this ShowClusterTagResponse.
-        :type: list[ShowTagsTagsResp]
+        :type tags: list[:class:`huaweicloudsdkcss.v1.ShowTagsTagsResp`]
         """
         self._tags = tags
 

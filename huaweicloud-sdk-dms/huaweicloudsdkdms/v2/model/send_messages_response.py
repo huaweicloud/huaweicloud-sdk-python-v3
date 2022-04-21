@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SendMessagesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class SendMessagesResponse(SdkResponse):
     }
 
     def __init__(self, messages=None):
-        """SendMessagesResponse - a model defined in huaweicloud sdk"""
+        """SendMessagesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param messages: 消息列表。
+        :type messages: list[:class:`huaweicloudsdkdms.v2.SendMessagesRespMessages`]
+        """
         
         super(SendMessagesResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class SendMessagesResponse(SdkResponse):
         消息列表。
 
         :return: The messages of this SendMessagesResponse.
-        :rtype: list[SendMessagesRespMessages]
+        :rtype: list[:class:`huaweicloudsdkdms.v2.SendMessagesRespMessages`]
         """
         return self._messages
 
@@ -58,7 +63,7 @@ class SendMessagesResponse(SdkResponse):
         消息列表。
 
         :param messages: The messages of this SendMessagesResponse.
-        :type: list[SendMessagesRespMessages]
+        :type messages: list[:class:`huaweicloudsdkdms.v2.SendMessagesRespMessages`]
         """
         self._messages = messages
 

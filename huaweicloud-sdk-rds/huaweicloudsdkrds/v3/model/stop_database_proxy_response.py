@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StopDatabaseProxyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class StopDatabaseProxyResponse(SdkResponse):
     }
 
     def __init__(self, workflow_id=None):
-        """StopDatabaseProxyResponse - a model defined in huaweicloud sdk"""
+        """StopDatabaseProxyResponse
+
+        The model defined in huaweicloud sdk
+
+        :param workflow_id: 工作流ID
+        :type workflow_id: str
+        """
         
         super(StopDatabaseProxyResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class StopDatabaseProxyResponse(SdkResponse):
         工作流ID
 
         :param workflow_id: The workflow_id of this StopDatabaseProxyResponse.
-        :type: str
+        :type workflow_id: str
         """
         self._workflow_id = workflow_id
 

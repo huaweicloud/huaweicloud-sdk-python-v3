@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CountPreoccupyIpNumResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CountPreoccupyIpNumResponse(SdkResponse):
     }
 
     def __init__(self, preoccupy_ip=None, request_id=None):
-        """CountPreoccupyIpNumResponse - a model defined in huaweicloud sdk"""
+        """CountPreoccupyIpNumResponse
+
+        The model defined in huaweicloud sdk
+
+        :param preoccupy_ip: 
+        :type preoccupy_ip: :class:`huaweicloudsdkelb.v3.PreoccupyIp`
+        :param request_id: 请求ID。  注：自动生成 。
+        :type request_id: str
+        """
         
         super(CountPreoccupyIpNumResponse, self).__init__()
 
@@ -51,7 +58,7 @@ class CountPreoccupyIpNumResponse(SdkResponse):
 
 
         :return: The preoccupy_ip of this CountPreoccupyIpNumResponse.
-        :rtype: PreoccupyIp
+        :rtype: :class:`huaweicloudsdkelb.v3.PreoccupyIp`
         """
         return self._preoccupy_ip
 
@@ -61,7 +68,7 @@ class CountPreoccupyIpNumResponse(SdkResponse):
 
 
         :param preoccupy_ip: The preoccupy_ip of this CountPreoccupyIpNumResponse.
-        :type: PreoccupyIp
+        :type preoccupy_ip: :class:`huaweicloudsdkelb.v3.PreoccupyIp`
         """
         self._preoccupy_ip = preoccupy_ip
 
@@ -83,7 +90,7 @@ class CountPreoccupyIpNumResponse(SdkResponse):
         请求ID。  注：自动生成 。
 
         :param request_id: The request_id of this CountPreoccupyIpNumResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ChangeEnterpriseRealnameAuthenticationResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ChangeEnterpriseRealnameAuthenticationResponse(SdkResponse):
     }
 
     def __init__(self, is_review=None):
-        """ChangeEnterpriseRealnameAuthenticationResponse - a model defined in huaweicloud sdk"""
+        """ChangeEnterpriseRealnameAuthenticationResponse
+
+        The model defined in huaweicloud sdk
+
+        :param is_review: 是否需要转人工审核，只有状态码为200才返回该参数。 0：不需要1：需要
+        :type is_review: int
+        """
         
         super(ChangeEnterpriseRealnameAuthenticationResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class ChangeEnterpriseRealnameAuthenticationResponse(SdkResponse):
         是否需要转人工审核，只有状态码为200才返回该参数。 0：不需要1：需要
 
         :param is_review: The is_review of this ChangeEnterpriseRealnameAuthenticationResponse.
-        :type: int
+        :type is_review: int
         """
         self._is_review = is_review
 

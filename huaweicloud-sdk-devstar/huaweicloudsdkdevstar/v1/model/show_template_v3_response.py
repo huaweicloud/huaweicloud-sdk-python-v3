@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowTemplateV3Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -84,7 +83,67 @@ class ShowTemplateV3Response(SdkResponse):
     }
 
     def __init__(self, id=None, title=None, description=None, creator_id=None, creator=None, nickname=None, score=None, status=None, view_count=None, usage_count=None, created_at=None, updated_at=None, published_at=None, favorite_state=None, maintainers=None, platform_source=None, properties=None, dependencies=None, dependency_type=None, store=None, store_info=None, file_size=None, deployment=None, is_static=None, update_id=None, topic=None, tags=None, dependents=None):
-        """ShowTemplateV3Response - a model defined in huaweicloud sdk"""
+        """ShowTemplateV3Response
+
+        The model defined in huaweicloud sdk
+
+        :param id: 模板id。
+        :type id: str
+        :param title: 模板名称。
+        :type title: str
+        :param description: 模板描述。
+        :type description: str
+        :param creator_id: 模板创建者id。
+        :type creator_id: str
+        :param creator: 模板创建者，有别名返回别名。
+        :type creator: str
+        :param nickname: 模板创建者，有别名返回别名。
+        :type nickname: str
+        :param score: 模板评分（点赞数）。
+        :type score: int
+        :param status: 模板状态： - 0：审核中 - 1：已上架 - 2：未上架（已下架） - 3：未上架（合规检查不通过） - 4：未上架（待上架） - 5：已删除 
+        :type status: int
+        :param view_count: 访问量。
+        :type view_count: int
+        :param usage_count: 引用量。
+        :type usage_count: int
+        :param created_at: 创建时间。
+        :type created_at: str
+        :param updated_at: 更新时间。
+        :type updated_at: str
+        :param published_at: 上架时间。
+        :type published_at: str
+        :param favorite_state: 点赞状态： - 1：点赞 - 0：未点赞 
+        :type favorite_state: int
+        :param maintainers: 模板相关联的所有维护人账号名称。
+        :type maintainers: list[str]
+        :param platform_source: 平台来源： - 0：codelabs - 1：devstar 
+        :type platform_source: int
+        :param properties: 模板自定义参数列表。
+        :type properties: object
+        :param dependencies: dependency信息。
+        :type dependencies: list[object]
+        :param dependency_type: dependency类型： - &#39;0&#39;：非分组的依赖类型 - &#39;1&#39;：分组依赖类型 
+        :type dependency_type: str
+        :param store: 代码存储位置： - 0：codehub - 1：Obs - 2：efs - 3：网络公开代码仓 
+        :type store: int
+        :param store_info: 获取代码模版所需的信息。
+        :type store_info: str
+        :param file_size: 模板文件解压缩之后的大小(单位:KB)。
+        :type file_size: int
+        :param deployment: 部署信息。
+        :type deployment: object
+        :param is_static: 动、静态代码模板标识： - 0：动态模板codetemplate - 1：静态模板codesample 
+        :type is_static: int
+        :param update_id: 模板关联更新态Id。
+        :type update_id: str
+        :param topic: 模板标签。
+        :type topic: list[:class:`huaweicloudsdkdevstar.v1.TopicCategory`]
+        :param tags: 自定义标签。
+        :type tags: list[:class:`huaweicloudsdkdevstar.v1.TagInfo`]
+        :param dependents: 模板部署支持方式信息
+        :type dependents: list[:class:`huaweicloudsdkdevstar.v1.Dependent`]
+        """
         
         super(ShowTemplateV3Response, self).__init__()
 
@@ -193,7 +252,7 @@ class ShowTemplateV3Response(SdkResponse):
         模板id。
 
         :param id: The id of this ShowTemplateV3Response.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -215,7 +274,7 @@ class ShowTemplateV3Response(SdkResponse):
         模板名称。
 
         :param title: The title of this ShowTemplateV3Response.
-        :type: str
+        :type title: str
         """
         self._title = title
 
@@ -237,7 +296,7 @@ class ShowTemplateV3Response(SdkResponse):
         模板描述。
 
         :param description: The description of this ShowTemplateV3Response.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -259,7 +318,7 @@ class ShowTemplateV3Response(SdkResponse):
         模板创建者id。
 
         :param creator_id: The creator_id of this ShowTemplateV3Response.
-        :type: str
+        :type creator_id: str
         """
         self._creator_id = creator_id
 
@@ -281,7 +340,7 @@ class ShowTemplateV3Response(SdkResponse):
         模板创建者，有别名返回别名。
 
         :param creator: The creator of this ShowTemplateV3Response.
-        :type: str
+        :type creator: str
         """
         self._creator = creator
 
@@ -303,7 +362,7 @@ class ShowTemplateV3Response(SdkResponse):
         模板创建者，有别名返回别名。
 
         :param nickname: The nickname of this ShowTemplateV3Response.
-        :type: str
+        :type nickname: str
         """
         self._nickname = nickname
 
@@ -325,7 +384,7 @@ class ShowTemplateV3Response(SdkResponse):
         模板评分（点赞数）。
 
         :param score: The score of this ShowTemplateV3Response.
-        :type: int
+        :type score: int
         """
         self._score = score
 
@@ -347,7 +406,7 @@ class ShowTemplateV3Response(SdkResponse):
         模板状态： - 0：审核中 - 1：已上架 - 2：未上架（已下架） - 3：未上架（合规检查不通过） - 4：未上架（待上架） - 5：已删除 
 
         :param status: The status of this ShowTemplateV3Response.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -369,7 +428,7 @@ class ShowTemplateV3Response(SdkResponse):
         访问量。
 
         :param view_count: The view_count of this ShowTemplateV3Response.
-        :type: int
+        :type view_count: int
         """
         self._view_count = view_count
 
@@ -391,7 +450,7 @@ class ShowTemplateV3Response(SdkResponse):
         引用量。
 
         :param usage_count: The usage_count of this ShowTemplateV3Response.
-        :type: int
+        :type usage_count: int
         """
         self._usage_count = usage_count
 
@@ -413,7 +472,7 @@ class ShowTemplateV3Response(SdkResponse):
         创建时间。
 
         :param created_at: The created_at of this ShowTemplateV3Response.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -435,7 +494,7 @@ class ShowTemplateV3Response(SdkResponse):
         更新时间。
 
         :param updated_at: The updated_at of this ShowTemplateV3Response.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 
@@ -457,7 +516,7 @@ class ShowTemplateV3Response(SdkResponse):
         上架时间。
 
         :param published_at: The published_at of this ShowTemplateV3Response.
-        :type: str
+        :type published_at: str
         """
         self._published_at = published_at
 
@@ -479,7 +538,7 @@ class ShowTemplateV3Response(SdkResponse):
         点赞状态： - 1：点赞 - 0：未点赞 
 
         :param favorite_state: The favorite_state of this ShowTemplateV3Response.
-        :type: int
+        :type favorite_state: int
         """
         self._favorite_state = favorite_state
 
@@ -501,7 +560,7 @@ class ShowTemplateV3Response(SdkResponse):
         模板相关联的所有维护人账号名称。
 
         :param maintainers: The maintainers of this ShowTemplateV3Response.
-        :type: list[str]
+        :type maintainers: list[str]
         """
         self._maintainers = maintainers
 
@@ -523,7 +582,7 @@ class ShowTemplateV3Response(SdkResponse):
         平台来源： - 0：codelabs - 1：devstar 
 
         :param platform_source: The platform_source of this ShowTemplateV3Response.
-        :type: int
+        :type platform_source: int
         """
         self._platform_source = platform_source
 
@@ -545,7 +604,7 @@ class ShowTemplateV3Response(SdkResponse):
         模板自定义参数列表。
 
         :param properties: The properties of this ShowTemplateV3Response.
-        :type: object
+        :type properties: object
         """
         self._properties = properties
 
@@ -567,7 +626,7 @@ class ShowTemplateV3Response(SdkResponse):
         dependency信息。
 
         :param dependencies: The dependencies of this ShowTemplateV3Response.
-        :type: list[object]
+        :type dependencies: list[object]
         """
         self._dependencies = dependencies
 
@@ -589,7 +648,7 @@ class ShowTemplateV3Response(SdkResponse):
         dependency类型： - '0'：非分组的依赖类型 - '1'：分组依赖类型 
 
         :param dependency_type: The dependency_type of this ShowTemplateV3Response.
-        :type: str
+        :type dependency_type: str
         """
         self._dependency_type = dependency_type
 
@@ -611,7 +670,7 @@ class ShowTemplateV3Response(SdkResponse):
         代码存储位置： - 0：codehub - 1：Obs - 2：efs - 3：网络公开代码仓 
 
         :param store: The store of this ShowTemplateV3Response.
-        :type: int
+        :type store: int
         """
         self._store = store
 
@@ -633,7 +692,7 @@ class ShowTemplateV3Response(SdkResponse):
         获取代码模版所需的信息。
 
         :param store_info: The store_info of this ShowTemplateV3Response.
-        :type: str
+        :type store_info: str
         """
         self._store_info = store_info
 
@@ -655,7 +714,7 @@ class ShowTemplateV3Response(SdkResponse):
         模板文件解压缩之后的大小(单位:KB)。
 
         :param file_size: The file_size of this ShowTemplateV3Response.
-        :type: int
+        :type file_size: int
         """
         self._file_size = file_size
 
@@ -677,7 +736,7 @@ class ShowTemplateV3Response(SdkResponse):
         部署信息。
 
         :param deployment: The deployment of this ShowTemplateV3Response.
-        :type: object
+        :type deployment: object
         """
         self._deployment = deployment
 
@@ -699,7 +758,7 @@ class ShowTemplateV3Response(SdkResponse):
         动、静态代码模板标识： - 0：动态模板codetemplate - 1：静态模板codesample 
 
         :param is_static: The is_static of this ShowTemplateV3Response.
-        :type: int
+        :type is_static: int
         """
         self._is_static = is_static
 
@@ -721,7 +780,7 @@ class ShowTemplateV3Response(SdkResponse):
         模板关联更新态Id。
 
         :param update_id: The update_id of this ShowTemplateV3Response.
-        :type: str
+        :type update_id: str
         """
         self._update_id = update_id
 
@@ -732,7 +791,7 @@ class ShowTemplateV3Response(SdkResponse):
         模板标签。
 
         :return: The topic of this ShowTemplateV3Response.
-        :rtype: list[TopicCategory]
+        :rtype: list[:class:`huaweicloudsdkdevstar.v1.TopicCategory`]
         """
         return self._topic
 
@@ -743,7 +802,7 @@ class ShowTemplateV3Response(SdkResponse):
         模板标签。
 
         :param topic: The topic of this ShowTemplateV3Response.
-        :type: list[TopicCategory]
+        :type topic: list[:class:`huaweicloudsdkdevstar.v1.TopicCategory`]
         """
         self._topic = topic
 
@@ -754,7 +813,7 @@ class ShowTemplateV3Response(SdkResponse):
         自定义标签。
 
         :return: The tags of this ShowTemplateV3Response.
-        :rtype: list[TagInfo]
+        :rtype: list[:class:`huaweicloudsdkdevstar.v1.TagInfo`]
         """
         return self._tags
 
@@ -765,7 +824,7 @@ class ShowTemplateV3Response(SdkResponse):
         自定义标签。
 
         :param tags: The tags of this ShowTemplateV3Response.
-        :type: list[TagInfo]
+        :type tags: list[:class:`huaweicloudsdkdevstar.v1.TagInfo`]
         """
         self._tags = tags
 
@@ -776,7 +835,7 @@ class ShowTemplateV3Response(SdkResponse):
         模板部署支持方式信息
 
         :return: The dependents of this ShowTemplateV3Response.
-        :rtype: list[Dependent]
+        :rtype: list[:class:`huaweicloudsdkdevstar.v1.Dependent`]
         """
         return self._dependents
 
@@ -787,7 +846,7 @@ class ShowTemplateV3Response(SdkResponse):
         模板部署支持方式信息
 
         :param dependents: The dependents of this ShowTemplateV3Response.
-        :type: list[Dependent]
+        :type dependents: list[:class:`huaweicloudsdkdevstar.v1.Dependent`]
         """
         self._dependents = dependents
 

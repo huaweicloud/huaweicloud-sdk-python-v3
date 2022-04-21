@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ObsScanResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ObsScanResult:
     }
 
     def __init__(self, total=None, db_scan_results=None):
-        """ObsScanResult - a model defined in huaweicloud sdk"""
+        """ObsScanResult
+
+        The model defined in huaweicloud sdk
+
+        :param total: 扫描结果总数
+        :type total: int
+        :param db_scan_results: OBS扫描结果列表
+        :type db_scan_results: list[:class:`huaweicloudsdkdsc.v1.ObsScanResultInfo`]
+        """
         
         
 
@@ -63,7 +70,7 @@ class ObsScanResult:
         扫描结果总数
 
         :param total: The total of this ObsScanResult.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -74,7 +81,7 @@ class ObsScanResult:
         OBS扫描结果列表
 
         :return: The db_scan_results of this ObsScanResult.
-        :rtype: list[ObsScanResultInfo]
+        :rtype: list[:class:`huaweicloudsdkdsc.v1.ObsScanResultInfo`]
         """
         return self._db_scan_results
 
@@ -85,7 +92,7 @@ class ObsScanResult:
         OBS扫描结果列表
 
         :param db_scan_results: The db_scan_results of this ObsScanResult.
-        :type: list[ObsScanResultInfo]
+        :type db_scan_results: list[:class:`huaweicloudsdkdsc.v1.ObsScanResultInfo`]
         """
         self._db_scan_results = db_scan_results
 

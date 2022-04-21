@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UploadFileRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UploadFileRequestBody:
     }
 
     def __init__(self, file=None):
-        """UploadFileRequestBody - a model defined in huaweicloud sdk"""
+        """UploadFileRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param file: 需要上传的文件
+        :type file: :class:`huaweicloudsdkcore.http.formdata.FormFile`
+        """
         
         
 
@@ -46,7 +51,7 @@ class UploadFileRequestBody:
         需要上传的文件
 
         :return: The file of this UploadFileRequestBody.
-        :rtype: file
+        :rtype: :class:`huaweicloudsdkcore.http.formdata.FormFile`
         """
         return self._file
 
@@ -57,7 +62,7 @@ class UploadFileRequestBody:
         需要上传的文件
 
         :param file: The file of this UploadFileRequestBody.
-        :type: file
+        :type file: :class:`huaweicloudsdkcore.http.formdata.FormFile`
         """
         self._file = file
 

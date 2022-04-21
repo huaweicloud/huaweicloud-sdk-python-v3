@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateLogDumpObsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateLogDumpObsResponse(SdkResponse):
     }
 
     def __init__(self, log_dump_obs_id=None):
-        """CreateLogDumpObsResponse - a model defined in huaweicloud sdk"""
+        """CreateLogDumpObsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param log_dump_obs_id: 转储id。
+        :type log_dump_obs_id: str
+        """
         
         super(CreateLogDumpObsResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class CreateLogDumpObsResponse(SdkResponse):
         转储id。
 
         :param log_dump_obs_id: The log_dump_obs_id of this CreateLogDumpObsResponse.
-        :type: str
+        :type log_dump_obs_id: str
         """
         self._log_dump_obs_id = log_dump_obs_id
 

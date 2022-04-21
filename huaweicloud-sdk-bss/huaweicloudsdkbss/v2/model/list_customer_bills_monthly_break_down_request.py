@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCustomerBillsMonthlyBreakDownRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class ListCustomerBillsMonthlyBreakDownRequest:
     }
 
     def __init__(self, x_language=None, shared_month=None, service_type_code=None, resource_type_code=None, region_code=None, charging_mode=None, bill_type=None, offset=None, limit=None, resource_id=None, resource_name=None, enterprise_project_id=None, method=None, sub_customer_id=None):
-        """ListCustomerBillsMonthlyBreakDownRequest - a model defined in huaweicloud sdk"""
+        """ListCustomerBillsMonthlyBreakDownRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: |忽略大小写，默认 zh_cn：中文 en_us：英文|
+        :type x_language: str
+        :param shared_month: 查询分摊成本的月份，格式：YYYY-MM。
+        :type shared_month: str
+        :param service_type_code: 云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
+        :type service_type_code: str
+        :param resource_type_code: 资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
+        :type resource_type_code: str
+        :param region_code: 云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
+        :type region_code: str
+        :param charging_mode: 计费模式。1：包年/包月3：按需10：预留实例
+        :type charging_mode: int
+        :param bill_type: 账单类型。1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更
+        :type bill_type: int
+        :param offset: 偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset &#x3D; 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
+        :type offset: int
+        :param limit: 每次查询的数量限制。默认值为10。
+        :type limit: int
+        :param resource_id: 资源ID。
+        :type resource_id: str
+        :param resource_name: 资源名称
+        :type resource_name: str
+        :param enterprise_project_id: 企业项目标识（企业项目ID）。default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见如何获取企业项目ID。
+        :type enterprise_project_id: str
+        :param method: 查询资源消费记录的方式。oneself：客户自己sub_customer：企业子客户all：客户自己和企业子客户默认为all，如果没有企业子客户，取值为all时查询的是客户自己的资源消费记录。
+        :type method: str
+        :param sub_customer_id: 企业子账号ID。 说明： 如果method取值不为sub_customer，则该参数无效。如果method取值为sub_customer，则该参数不能为空。
+        :type sub_customer_id: str
+        """
         
         
 
@@ -122,7 +153,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
         |忽略大小写，默认 zh_cn：中文 en_us：英文|
 
         :param x_language: The x_language of this ListCustomerBillsMonthlyBreakDownRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -144,7 +175,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
         查询分摊成本的月份，格式：YYYY-MM。
 
         :param shared_month: The shared_month of this ListCustomerBillsMonthlyBreakDownRequest.
-        :type: str
+        :type shared_month: str
         """
         self._shared_month = shared_month
 
@@ -166,7 +197,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
         :param service_type_code: The service_type_code of this ListCustomerBillsMonthlyBreakDownRequest.
-        :type: str
+        :type service_type_code: str
         """
         self._service_type_code = service_type_code
 
@@ -188,7 +219,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
         资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
 
         :param resource_type_code: The resource_type_code of this ListCustomerBillsMonthlyBreakDownRequest.
-        :type: str
+        :type resource_type_code: str
         """
         self._resource_type_code = resource_type_code
 
@@ -210,7 +241,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
         云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
         :param region_code: The region_code of this ListCustomerBillsMonthlyBreakDownRequest.
-        :type: str
+        :type region_code: str
         """
         self._region_code = region_code
 
@@ -232,7 +263,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
         计费模式。1：包年/包月3：按需10：预留实例
 
         :param charging_mode: The charging_mode of this ListCustomerBillsMonthlyBreakDownRequest.
-        :type: int
+        :type charging_mode: int
         """
         self._charging_mode = charging_mode
 
@@ -254,7 +285,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
         账单类型。1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更
 
         :param bill_type: The bill_type of this ListCustomerBillsMonthlyBreakDownRequest.
-        :type: int
+        :type bill_type: int
         """
         self._bill_type = bill_type
 
@@ -276,7 +307,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
         偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
         :param offset: The offset of this ListCustomerBillsMonthlyBreakDownRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -298,7 +329,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
         每次查询的数量限制。默认值为10。
 
         :param limit: The limit of this ListCustomerBillsMonthlyBreakDownRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -320,7 +351,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
         资源ID。
 
         :param resource_id: The resource_id of this ListCustomerBillsMonthlyBreakDownRequest.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -342,7 +373,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
         资源名称
 
         :param resource_name: The resource_name of this ListCustomerBillsMonthlyBreakDownRequest.
-        :type: str
+        :type resource_name: str
         """
         self._resource_name = resource_name
 
@@ -364,7 +395,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
         企业项目标识（企业项目ID）。default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见如何获取企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this ListCustomerBillsMonthlyBreakDownRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -386,7 +417,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
         查询资源消费记录的方式。oneself：客户自己sub_customer：企业子客户all：客户自己和企业子客户默认为all，如果没有企业子客户，取值为all时查询的是客户自己的资源消费记录。
 
         :param method: The method of this ListCustomerBillsMonthlyBreakDownRequest.
-        :type: str
+        :type method: str
         """
         self._method = method
 
@@ -408,7 +439,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
         企业子账号ID。 说明： 如果method取值不为sub_customer，则该参数无效。如果method取值为sub_customer，则该参数不能为空。
 
         :param sub_customer_id: The sub_customer_id of this ListCustomerBillsMonthlyBreakDownRequest.
-        :type: str
+        :type sub_customer_id: str
         """
         self._sub_customer_id = sub_customer_id
 

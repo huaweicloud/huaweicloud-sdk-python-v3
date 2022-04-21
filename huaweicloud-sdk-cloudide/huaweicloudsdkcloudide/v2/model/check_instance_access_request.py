@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CheckInstanceAccessRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CheckInstanceAccessRequest:
     }
 
     def __init__(self, instance_id=None):
-        """CheckInstanceAccessRequest - a model defined in huaweicloud sdk"""
+        """CheckInstanceAccessRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: CloudIDE实例id
+        :type instance_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class CheckInstanceAccessRequest:
         CloudIDE实例id
 
         :param instance_id: The instance_id of this CheckInstanceAccessRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MetadataInstall:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class MetadataInstall:
     }
 
     def __init__(self, user_data=None):
-        """MetadataInstall - a model defined in huaweicloud sdk"""
+        """MetadataInstall
+
+        The model defined in huaweicloud sdk
+
+        :param user_data: 重装裸金属服务器过程中注入Linux镜像root密码，用户自定义初始化密码。注：修改密码脚本需经Base64编码。建议密码复杂度如下：长度为8-26位。密码至少必须包含大写字母（A-Z）、小写字母（a-z）、数字（0-9）和特殊字符（!@$%^-_&#x3D;+[{}]:,./?）中的三种
+        :type user_data: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class MetadataInstall:
         重装裸金属服务器过程中注入Linux镜像root密码，用户自定义初始化密码。注：修改密码脚本需经Base64编码。建议密码复杂度如下：长度为8-26位。密码至少必须包含大写字母（A-Z）、小写字母（a-z）、数字（0-9）和特殊字符（!@$%^-_=+[{}]:,./?）中的三种
 
         :param user_data: The user_data of this MetadataInstall.
-        :type: str
+        :type user_data: str
         """
         self._user_data = user_data
 

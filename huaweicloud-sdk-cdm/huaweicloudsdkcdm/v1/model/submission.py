@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Submission:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -68,7 +67,51 @@ class Submission:
     }
 
     def __init__(self, is_incrementing=None, job_name=None, counters=None, is_stoping_increment=None, is_execute_auto=None, last_update_date=None, last_udpate_user=None, is_delete_job=None, creation_user=None, creation_date=None, external_id=None, progress=None, submission_id=None, delete_rows=None, update_rows=None, write_rows=None, execute_date=None, status=None, error_details=None, error_summary=None):
-        """Submission - a model defined in huaweicloud sdk"""
+        """Submission
+
+        The model defined in huaweicloud sdk
+
+        :param is_incrementing: 作业是否为增量迁移
+        :type is_incrementing: bool
+        :param job_name: 作业名称
+        :type job_name: str
+        :param counters: 
+        :type counters: :class:`huaweicloudsdkcdm.v1.Counters`
+        :param is_stoping_increment: 是否停止增量迁移
+        :type is_stoping_increment: str
+        :param is_execute_auto: 是否定时执行作业
+        :type is_execute_auto: bool
+        :param last_update_date: 作业最后更新时间
+        :type last_update_date: int
+        :param last_udpate_user: 最后更新作业状态的用户
+        :type last_udpate_user: str
+        :param is_delete_job: 作业执行完成后是否删除
+        :type is_delete_job: bool
+        :param creation_user: 创建用户
+        :type creation_user: str
+        :param creation_date: 创建时间
+        :type creation_date: int
+        :param external_id: 作业ID
+        :type external_id: str
+        :param progress: 作业进度，失败时为“-1”，其它情况为0～100
+        :type progress: float
+        :param submission_id: 作业提交id
+        :type submission_id: int
+        :param delete_rows: 删除数据行数
+        :type delete_rows: int
+        :param update_rows: 更新数据行数
+        :type update_rows: int
+        :param write_rows: 写入数据行数
+        :type write_rows: int
+        :param execute_date: 执行时间
+        :type execute_date: int
+        :param status: 作业状态： - BOOTING：启动中。 - FAILURE_ON_SUBMIT：提交失败。 - RUNNING：运行中。 - SUCCEEDED：成功。 - FAILED：失败。 - UNKNOWN：未知。 - NEVER_EXECUTED：未被执行
+        :type status: str
+        :param error_details: 错误详情，当“status”为“FAILED”时才有此字段。
+        :type error_details: str
+        :param error_summary: 错误总结，当“status”为“FAILED”时才有此字段。
+        :type error_summary: str
+        """
         
         
 
@@ -141,7 +184,7 @@ class Submission:
         作业是否为增量迁移
 
         :param is_incrementing: The is_incrementing of this Submission.
-        :type: bool
+        :type is_incrementing: bool
         """
         self._is_incrementing = is_incrementing
 
@@ -163,7 +206,7 @@ class Submission:
         作业名称
 
         :param job_name: The job_name of this Submission.
-        :type: str
+        :type job_name: str
         """
         self._job_name = job_name
 
@@ -173,7 +216,7 @@ class Submission:
 
 
         :return: The counters of this Submission.
-        :rtype: Counters
+        :rtype: :class:`huaweicloudsdkcdm.v1.Counters`
         """
         return self._counters
 
@@ -183,7 +226,7 @@ class Submission:
 
 
         :param counters: The counters of this Submission.
-        :type: Counters
+        :type counters: :class:`huaweicloudsdkcdm.v1.Counters`
         """
         self._counters = counters
 
@@ -205,7 +248,7 @@ class Submission:
         是否停止增量迁移
 
         :param is_stoping_increment: The is_stoping_increment of this Submission.
-        :type: str
+        :type is_stoping_increment: str
         """
         self._is_stoping_increment = is_stoping_increment
 
@@ -227,7 +270,7 @@ class Submission:
         是否定时执行作业
 
         :param is_execute_auto: The is_execute_auto of this Submission.
-        :type: bool
+        :type is_execute_auto: bool
         """
         self._is_execute_auto = is_execute_auto
 
@@ -249,7 +292,7 @@ class Submission:
         作业最后更新时间
 
         :param last_update_date: The last_update_date of this Submission.
-        :type: int
+        :type last_update_date: int
         """
         self._last_update_date = last_update_date
 
@@ -271,7 +314,7 @@ class Submission:
         最后更新作业状态的用户
 
         :param last_udpate_user: The last_udpate_user of this Submission.
-        :type: str
+        :type last_udpate_user: str
         """
         self._last_udpate_user = last_udpate_user
 
@@ -293,7 +336,7 @@ class Submission:
         作业执行完成后是否删除
 
         :param is_delete_job: The is_delete_job of this Submission.
-        :type: bool
+        :type is_delete_job: bool
         """
         self._is_delete_job = is_delete_job
 
@@ -315,7 +358,7 @@ class Submission:
         创建用户
 
         :param creation_user: The creation_user of this Submission.
-        :type: str
+        :type creation_user: str
         """
         self._creation_user = creation_user
 
@@ -337,7 +380,7 @@ class Submission:
         创建时间
 
         :param creation_date: The creation_date of this Submission.
-        :type: int
+        :type creation_date: int
         """
         self._creation_date = creation_date
 
@@ -359,7 +402,7 @@ class Submission:
         作业ID
 
         :param external_id: The external_id of this Submission.
-        :type: str
+        :type external_id: str
         """
         self._external_id = external_id
 
@@ -381,7 +424,7 @@ class Submission:
         作业进度，失败时为“-1”，其它情况为0～100
 
         :param progress: The progress of this Submission.
-        :type: float
+        :type progress: float
         """
         self._progress = progress
 
@@ -403,7 +446,7 @@ class Submission:
         作业提交id
 
         :param submission_id: The submission_id of this Submission.
-        :type: int
+        :type submission_id: int
         """
         self._submission_id = submission_id
 
@@ -425,7 +468,7 @@ class Submission:
         删除数据行数
 
         :param delete_rows: The delete_rows of this Submission.
-        :type: int
+        :type delete_rows: int
         """
         self._delete_rows = delete_rows
 
@@ -447,7 +490,7 @@ class Submission:
         更新数据行数
 
         :param update_rows: The update_rows of this Submission.
-        :type: int
+        :type update_rows: int
         """
         self._update_rows = update_rows
 
@@ -469,7 +512,7 @@ class Submission:
         写入数据行数
 
         :param write_rows: The write_rows of this Submission.
-        :type: int
+        :type write_rows: int
         """
         self._write_rows = write_rows
 
@@ -491,7 +534,7 @@ class Submission:
         执行时间
 
         :param execute_date: The execute_date of this Submission.
-        :type: int
+        :type execute_date: int
         """
         self._execute_date = execute_date
 
@@ -513,7 +556,7 @@ class Submission:
         作业状态： - BOOTING：启动中。 - FAILURE_ON_SUBMIT：提交失败。 - RUNNING：运行中。 - SUCCEEDED：成功。 - FAILED：失败。 - UNKNOWN：未知。 - NEVER_EXECUTED：未被执行
 
         :param status: The status of this Submission.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -535,7 +578,7 @@ class Submission:
         错误详情，当“status”为“FAILED”时才有此字段。
 
         :param error_details: The error_details of this Submission.
-        :type: str
+        :type error_details: str
         """
         self._error_details = error_details
 
@@ -557,7 +600,7 @@ class Submission:
         错误总结，当“status”为“FAILED”时才有此字段。
 
         :param error_summary: The error_summary of this Submission.
-        :type: str
+        :type error_summary: str
         """
         self._error_summary = error_summary
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BandwidthPolicyDto:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class BandwidthPolicyDto:
     }
 
     def __init__(self, end=None, max_bandwidth=None, start=None):
-        """BandwidthPolicyDto - a model defined in huaweicloud sdk"""
+        """BandwidthPolicyDto
+
+        The model defined in huaweicloud sdk
+
+        :param end: 流量控制开始时间（包含），格式为“hh:mm”。例如“12:03”表示12时03分。
+        :type end: str
+        :param max_bandwidth: 时段内允许的最大流量带宽，单位Byte/s，取值范围为&gt;&#x3D; 1048576Byte/s（相当于1MB/s）且&lt;&#x3D;209715200Byte/s（相当于200MB/s）。
+        :type max_bandwidth: int
+        :param start: 流量控制开始时间（包含），格式为“hh:mm”。例如“12:03”表示12时03分。
+        :type start: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class BandwidthPolicyDto:
         流量控制开始时间（包含），格式为“hh:mm”。例如“12:03”表示12时03分。
 
         :param end: The end of this BandwidthPolicyDto.
-        :type: str
+        :type end: str
         """
         self._end = end
 
@@ -87,7 +96,7 @@ class BandwidthPolicyDto:
         时段内允许的最大流量带宽，单位Byte/s，取值范围为>= 1048576Byte/s（相当于1MB/s）且<=209715200Byte/s（相当于200MB/s）。
 
         :param max_bandwidth: The max_bandwidth of this BandwidthPolicyDto.
-        :type: int
+        :type max_bandwidth: int
         """
         self._max_bandwidth = max_bandwidth
 
@@ -109,7 +118,7 @@ class BandwidthPolicyDto:
         流量控制开始时间（包含），格式为“hh:mm”。例如“12:03”表示12时03分。
 
         :param start: The start of this BandwidthPolicyDto.
-        :type: str
+        :type start: str
         """
         self._start = start
 

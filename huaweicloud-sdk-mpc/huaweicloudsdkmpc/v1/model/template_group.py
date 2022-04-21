@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TemplateGroup:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class TemplateGroup:
     }
 
     def __init__(self, group_id=None, name=None, template_ids=None, videos=None, audio=None, video_common=None, common=None):
-        """TemplateGroup - a model defined in huaweicloud sdk"""
+        """TemplateGroup
+
+        The model defined in huaweicloud sdk
+
+        :param group_id: 模板组id 
+        :type group_id: str
+        :param name: 模板组名称 
+        :type name: str
+        :param template_ids: 模板组模板ID 
+        :type template_ids: list[int]
+        :param videos: 视频信息列表 
+        :type videos: list[:class:`huaweicloudsdkmpc.v1.VideoAndTemplate`]
+        :param audio: 
+        :type audio: :class:`huaweicloudsdkmpc.v1.Audio`
+        :param video_common: 
+        :type video_common: :class:`huaweicloudsdkmpc.v1.VideoCommon`
+        :param common: 
+        :type common: :class:`huaweicloudsdkmpc.v1.Common`
+        """
         
         
 
@@ -88,7 +105,7 @@ class TemplateGroup:
         模板组id 
 
         :param group_id: The group_id of this TemplateGroup.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -110,7 +127,7 @@ class TemplateGroup:
         模板组名称 
 
         :param name: The name of this TemplateGroup.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -132,7 +149,7 @@ class TemplateGroup:
         模板组模板ID 
 
         :param template_ids: The template_ids of this TemplateGroup.
-        :type: list[int]
+        :type template_ids: list[int]
         """
         self._template_ids = template_ids
 
@@ -143,7 +160,7 @@ class TemplateGroup:
         视频信息列表 
 
         :return: The videos of this TemplateGroup.
-        :rtype: list[VideoAndTemplate]
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.VideoAndTemplate`]
         """
         return self._videos
 
@@ -154,7 +171,7 @@ class TemplateGroup:
         视频信息列表 
 
         :param videos: The videos of this TemplateGroup.
-        :type: list[VideoAndTemplate]
+        :type videos: list[:class:`huaweicloudsdkmpc.v1.VideoAndTemplate`]
         """
         self._videos = videos
 
@@ -164,7 +181,7 @@ class TemplateGroup:
 
 
         :return: The audio of this TemplateGroup.
-        :rtype: Audio
+        :rtype: :class:`huaweicloudsdkmpc.v1.Audio`
         """
         return self._audio
 
@@ -174,7 +191,7 @@ class TemplateGroup:
 
 
         :param audio: The audio of this TemplateGroup.
-        :type: Audio
+        :type audio: :class:`huaweicloudsdkmpc.v1.Audio`
         """
         self._audio = audio
 
@@ -184,7 +201,7 @@ class TemplateGroup:
 
 
         :return: The video_common of this TemplateGroup.
-        :rtype: VideoCommon
+        :rtype: :class:`huaweicloudsdkmpc.v1.VideoCommon`
         """
         return self._video_common
 
@@ -194,7 +211,7 @@ class TemplateGroup:
 
 
         :param video_common: The video_common of this TemplateGroup.
-        :type: VideoCommon
+        :type video_common: :class:`huaweicloudsdkmpc.v1.VideoCommon`
         """
         self._video_common = video_common
 
@@ -204,7 +221,7 @@ class TemplateGroup:
 
 
         :return: The common of this TemplateGroup.
-        :rtype: Common
+        :rtype: :class:`huaweicloudsdkmpc.v1.Common`
         """
         return self._common
 
@@ -214,7 +231,7 @@ class TemplateGroup:
 
 
         :param common: The common of this TemplateGroup.
-        :type: Common
+        :type common: :class:`huaweicloudsdkmpc.v1.Common`
         """
         self._common = common
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OprecordCluster:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class OprecordCluster:
     }
 
     def __init__(self, cluster_type=None, name=None, cluster_id=None, node_infos=None):
-        """OprecordCluster - a model defined in huaweicloud sdk"""
+        """OprecordCluster
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_type: 集群类型
+        :type cluster_type: str
+        :param name: 集群名称
+        :type name: str
+        :param cluster_id: 集群ID
+        :type cluster_id: str
+        :param node_infos: 节点信息
+        :type node_infos: list[:class:`huaweicloudsdkbcs.v2.NodeInfo`]
+        """
         
         
 
@@ -73,7 +84,7 @@ class OprecordCluster:
         集群类型
 
         :param cluster_type: The cluster_type of this OprecordCluster.
-        :type: str
+        :type cluster_type: str
         """
         self._cluster_type = cluster_type
 
@@ -95,7 +106,7 @@ class OprecordCluster:
         集群名称
 
         :param name: The name of this OprecordCluster.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -117,7 +128,7 @@ class OprecordCluster:
         集群ID
 
         :param cluster_id: The cluster_id of this OprecordCluster.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -128,7 +139,7 @@ class OprecordCluster:
         节点信息
 
         :return: The node_infos of this OprecordCluster.
-        :rtype: list[NodeInfo]
+        :rtype: list[:class:`huaweicloudsdkbcs.v2.NodeInfo`]
         """
         return self._node_infos
 
@@ -139,7 +150,7 @@ class OprecordCluster:
         节点信息
 
         :param node_infos: The node_infos of this OprecordCluster.
-        :type: list[NodeInfo]
+        :type node_infos: list[:class:`huaweicloudsdkbcs.v2.NodeInfo`]
         """
         self._node_infos = node_infos
 

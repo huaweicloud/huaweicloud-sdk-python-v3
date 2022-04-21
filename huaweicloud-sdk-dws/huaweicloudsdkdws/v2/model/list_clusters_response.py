@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListClustersResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListClustersResponse(SdkResponse):
     }
 
     def __init__(self, clusters=None, count=None):
-        """ListClustersResponse - a model defined in huaweicloud sdk"""
+        """ListClustersResponse
+
+        The model defined in huaweicloud sdk
+
+        :param clusters: 集群对象列表。
+        :type clusters: list[:class:`huaweicloudsdkdws.v2.ClusterInfo`]
+        :param count: 集群对象列表总数。
+        :type count: int
+        """
         
         super(ListClustersResponse, self).__init__()
 
@@ -49,10 +56,10 @@ class ListClustersResponse(SdkResponse):
     def clusters(self):
         """Gets the clusters of this ListClustersResponse.
 
-        集群对象列表
+        集群对象列表。
 
         :return: The clusters of this ListClustersResponse.
-        :rtype: list[ClusterInfo]
+        :rtype: list[:class:`huaweicloudsdkdws.v2.ClusterInfo`]
         """
         return self._clusters
 
@@ -60,10 +67,10 @@ class ListClustersResponse(SdkResponse):
     def clusters(self, clusters):
         """Sets the clusters of this ListClustersResponse.
 
-        集群对象列表
+        集群对象列表。
 
         :param clusters: The clusters of this ListClustersResponse.
-        :type: list[ClusterInfo]
+        :type clusters: list[:class:`huaweicloudsdkdws.v2.ClusterInfo`]
         """
         self._clusters = clusters
 
@@ -71,7 +78,7 @@ class ListClustersResponse(SdkResponse):
     def count(self):
         """Gets the count of this ListClustersResponse.
 
-        集群对象列表总数
+        集群对象列表总数。
 
         :return: The count of this ListClustersResponse.
         :rtype: int
@@ -82,10 +89,10 @@ class ListClustersResponse(SdkResponse):
     def count(self, count):
         """Sets the count of this ListClustersResponse.
 
-        集群对象列表总数
+        集群对象列表总数。
 
         :param count: The count of this ListClustersResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeyWordsStat:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class KeyWordsStat:
     }
 
     def __init__(self, keyword=None, freq=None):
-        """KeyWordsStat - a model defined in huaweicloud sdk"""
+        """KeyWordsStat
+
+        The model defined in huaweicloud sdk
+
+        :param keyword: 关键词。
+        :type keyword: str
+        :param freq: 关键词频次。
+        :type freq: int
+        """
         
         
 
@@ -61,7 +68,7 @@ class KeyWordsStat:
         关键词。
 
         :param keyword: The keyword of this KeyWordsStat.
-        :type: str
+        :type keyword: str
         """
         self._keyword = keyword
 
@@ -83,7 +90,7 @@ class KeyWordsStat:
         关键词频次。
 
         :param freq: The freq of this KeyWordsStat.
-        :type: int
+        :type freq: int
         """
         self._freq = freq
 

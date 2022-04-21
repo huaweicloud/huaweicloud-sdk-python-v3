@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCommitsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListCommitsRequest:
     }
 
     def __init__(self, x_repo_auth=None, namespace=None, project=None, ref=None):
-        """ListCommitsRequest - a model defined in huaweicloud sdk"""
+        """ListCommitsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_repo_auth: 授权名称。
+        :type x_repo_auth: str
+        :param namespace: 组织ID。
+        :type namespace: str
+        :param project: 仓库项目ID，如果含有“/”，需要将“/”替换为“:”。
+        :type project: str
+        :param ref: 分支名称或者tag名称，如果没有提供，使用默认分支。
+        :type ref: str
+        """
         
         
 
@@ -70,7 +81,7 @@ class ListCommitsRequest:
         授权名称。
 
         :param x_repo_auth: The x_repo_auth of this ListCommitsRequest.
-        :type: str
+        :type x_repo_auth: str
         """
         self._x_repo_auth = x_repo_auth
 
@@ -92,7 +103,7 @@ class ListCommitsRequest:
         组织ID。
 
         :param namespace: The namespace of this ListCommitsRequest.
-        :type: str
+        :type namespace: str
         """
         self._namespace = namespace
 
@@ -114,7 +125,7 @@ class ListCommitsRequest:
         仓库项目ID，如果含有“/”，需要将“/”替换为“:”。
 
         :param project: The project of this ListCommitsRequest.
-        :type: str
+        :type project: str
         """
         self._project = project
 
@@ -136,7 +147,7 @@ class ListCommitsRequest:
         分支名称或者tag名称，如果没有提供，使用默认分支。
 
         :param ref: The ref of this ListCommitsRequest.
-        :type: str
+        :type ref: str
         """
         self._ref = ref
 

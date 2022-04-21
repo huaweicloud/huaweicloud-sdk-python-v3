@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VaultRemoveResourceReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class VaultRemoveResourceReq:
     }
 
     def __init__(self, resource_ids=None):
-        """VaultRemoveResourceReq - a model defined in huaweicloud sdk"""
+        """VaultRemoveResourceReq
+
+        The model defined in huaweicloud sdk
+
+        :param resource_ids: 要移除的资源ID列表
+        :type resource_ids: list[str]
+        """
         
         
 
@@ -57,7 +62,7 @@ class VaultRemoveResourceReq:
         要移除的资源ID列表
 
         :param resource_ids: The resource_ids of this VaultRemoveResourceReq.
-        :type: list[str]
+        :type resource_ids: list[str]
         """
         self._resource_ids = resource_ids
 

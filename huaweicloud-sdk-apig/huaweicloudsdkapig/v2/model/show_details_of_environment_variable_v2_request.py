@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDetailsOfEnvironmentVariableV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowDetailsOfEnvironmentVariableV2Request:
     }
 
     def __init__(self, instance_id=None, env_variable_id=None):
-        """ShowDetailsOfEnvironmentVariableV2Request - a model defined in huaweicloud sdk"""
+        """ShowDetailsOfEnvironmentVariableV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param env_variable_id: 环境变量的编号
+        :type env_variable_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ShowDetailsOfEnvironmentVariableV2Request:
         实例ID
 
         :param instance_id: The instance_id of this ShowDetailsOfEnvironmentVariableV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -83,7 +90,7 @@ class ShowDetailsOfEnvironmentVariableV2Request:
         环境变量的编号
 
         :param env_variable_id: The env_variable_id of this ShowDetailsOfEnvironmentVariableV2Request.
-        :type: str
+        :type env_variable_id: str
         """
         self._env_variable_id = env_variable_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAllProjectsPermissionsForAgencyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListAllProjectsPermissionsForAgencyResponse(SdkResponse):
     }
 
     def __init__(self, roles=None, links=None):
-        """ListAllProjectsPermissionsForAgencyResponse - a model defined in huaweicloud sdk"""
+        """ListAllProjectsPermissionsForAgencyResponse
+
+        The model defined in huaweicloud sdk
+
+        :param roles: 权限信息列表。
+        :type roles: list[:class:`huaweicloudsdkiam.v3.AgencyAllProjectRole`]
+        :param links: 
+        :type links: :class:`huaweicloudsdkiam.v3.LinksSelf`
+        """
         
         super(ListAllProjectsPermissionsForAgencyResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListAllProjectsPermissionsForAgencyResponse(SdkResponse):
         权限信息列表。
 
         :return: The roles of this ListAllProjectsPermissionsForAgencyResponse.
-        :rtype: list[AgencyAllProjectRole]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.AgencyAllProjectRole`]
         """
         return self._roles
 
@@ -63,7 +70,7 @@ class ListAllProjectsPermissionsForAgencyResponse(SdkResponse):
         权限信息列表。
 
         :param roles: The roles of this ListAllProjectsPermissionsForAgencyResponse.
-        :type: list[AgencyAllProjectRole]
+        :type roles: list[:class:`huaweicloudsdkiam.v3.AgencyAllProjectRole`]
         """
         self._roles = roles
 
@@ -73,7 +80,7 @@ class ListAllProjectsPermissionsForAgencyResponse(SdkResponse):
 
 
         :return: The links of this ListAllProjectsPermissionsForAgencyResponse.
-        :rtype: LinksSelf
+        :rtype: :class:`huaweicloudsdkiam.v3.LinksSelf`
         """
         return self._links
 
@@ -83,7 +90,7 @@ class ListAllProjectsPermissionsForAgencyResponse(SdkResponse):
 
 
         :param links: The links of this ListAllProjectsPermissionsForAgencyResponse.
-        :type: LinksSelf
+        :type links: :class:`huaweicloudsdkiam.v3.LinksSelf`
         """
         self._links = links
 

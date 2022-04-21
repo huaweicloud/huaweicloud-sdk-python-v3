@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneCheckUserInGroupRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class KeystoneCheckUserInGroupRequest:
     }
 
     def __init__(self, group_id=None, user_id=None):
-        """KeystoneCheckUserInGroupRequest - a model defined in huaweicloud sdk"""
+        """KeystoneCheckUserInGroupRequest
+
+        The model defined in huaweicloud sdk
+
+        :param group_id: 用户组ID，获取方式请参见：[获取用户组ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
+        :type group_id: str
+        :param user_id: 待查询的IAM用户ID，获取方式请参见：[获取IAM用户ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
+        :type user_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class KeystoneCheckUserInGroupRequest:
         用户组ID，获取方式请参见：[获取用户组ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param group_id: The group_id of this KeystoneCheckUserInGroupRequest.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -83,7 +90,7 @@ class KeystoneCheckUserInGroupRequest:
         待查询的IAM用户ID，获取方式请参见：[获取IAM用户ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param user_id: The user_id of this KeystoneCheckUserInGroupRequest.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 

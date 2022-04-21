@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OpenGaussBackupStrategy:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class OpenGaussBackupStrategy:
     }
 
     def __init__(self, start_time=None, keep_days=None):
-        """OpenGaussBackupStrategy - a model defined in huaweicloud sdk"""
+        """OpenGaussBackupStrategy
+
+        The model defined in huaweicloud sdk
+
+        :param start_time: 备份时间段。自动备份将在该时间段内触发。  取值范围：非空，格式必须为hh:mm-HH:MM且有效，当前时间指UTC时间。  - HH取值必须比hh大1。 - mm和MM取值必须相同，且取值必须为00。 取值示例：  - 08:00-09:00 - 23:00-00:00
+        :type start_time: str
+        :param keep_days: 指定备份文件的可保存天数。  取值范围：0～732。该参数缺省或为0时，默认填写为7天。
+        :type keep_days: int
+        """
         
         
 
@@ -62,7 +69,7 @@ class OpenGaussBackupStrategy:
         备份时间段。自动备份将在该时间段内触发。  取值范围：非空，格式必须为hh:mm-HH:MM且有效，当前时间指UTC时间。  - HH取值必须比hh大1。 - mm和MM取值必须相同，且取值必须为00。 取值示例：  - 08:00-09:00 - 23:00-00:00
 
         :param start_time: The start_time of this OpenGaussBackupStrategy.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -84,7 +91,7 @@ class OpenGaussBackupStrategy:
         指定备份文件的可保存天数。  取值范围：0～732。该参数缺省或为0时，默认填写为7天。
 
         :param keep_days: The keep_days of this OpenGaussBackupStrategy.
-        :type: int
+        :type keep_days: int
         """
         self._keep_days = keep_days
 

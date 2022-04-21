@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DiffCommitInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class DiffCommitInfo:
     }
 
     def __init__(self, old_path=None, new_path=None, a_mode=None, b_mode=None, new_file=None, renamed_file=None, deleted_file=None, diff=None):
-        """DiffCommitInfo - a model defined in huaweicloud sdk"""
+        """DiffCommitInfo
+
+        The model defined in huaweicloud sdk
+
+        :param old_path: 变更前文件路径
+        :type old_path: str
+        :param new_path: 变更后文件路径
+        :type new_path: str
+        :param a_mode: 变更前文件模式
+        :type a_mode: str
+        :param b_mode: 变更后文件模式
+        :type b_mode: str
+        :param new_file: 此次变更是否新增文件
+        :type new_file: bool
+        :param renamed_file: 此次变更是否重命名文件
+        :type renamed_file: bool
+        :param deleted_file: 此次变更是否删除文件
+        :type deleted_file: bool
+        :param diff: 差异信息
+        :type diff: bool
+        """
         
         
 
@@ -93,7 +112,7 @@ class DiffCommitInfo:
         变更前文件路径
 
         :param old_path: The old_path of this DiffCommitInfo.
-        :type: str
+        :type old_path: str
         """
         self._old_path = old_path
 
@@ -115,7 +134,7 @@ class DiffCommitInfo:
         变更后文件路径
 
         :param new_path: The new_path of this DiffCommitInfo.
-        :type: str
+        :type new_path: str
         """
         self._new_path = new_path
 
@@ -137,7 +156,7 @@ class DiffCommitInfo:
         变更前文件模式
 
         :param a_mode: The a_mode of this DiffCommitInfo.
-        :type: str
+        :type a_mode: str
         """
         self._a_mode = a_mode
 
@@ -159,7 +178,7 @@ class DiffCommitInfo:
         变更后文件模式
 
         :param b_mode: The b_mode of this DiffCommitInfo.
-        :type: str
+        :type b_mode: str
         """
         self._b_mode = b_mode
 
@@ -181,7 +200,7 @@ class DiffCommitInfo:
         此次变更是否新增文件
 
         :param new_file: The new_file of this DiffCommitInfo.
-        :type: bool
+        :type new_file: bool
         """
         self._new_file = new_file
 
@@ -203,7 +222,7 @@ class DiffCommitInfo:
         此次变更是否重命名文件
 
         :param renamed_file: The renamed_file of this DiffCommitInfo.
-        :type: bool
+        :type renamed_file: bool
         """
         self._renamed_file = renamed_file
 
@@ -225,7 +244,7 @@ class DiffCommitInfo:
         此次变更是否删除文件
 
         :param deleted_file: The deleted_file of this DiffCommitInfo.
-        :type: bool
+        :type deleted_file: bool
         """
         self._deleted_file = deleted_file
 
@@ -247,7 +266,7 @@ class DiffCommitInfo:
         差异信息
 
         :param diff: The diff of this DiffCommitInfo.
-        :type: bool
+        :type diff: bool
         """
         self._diff = diff
 

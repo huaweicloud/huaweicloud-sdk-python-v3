@@ -52,21 +52,17 @@ class IvsAsyncClient(Client):
         """人证核身证件版（二要素）
 
         使用姓名、身份证号码二要素进行身份审核。身份验证时，传入的数据为身份证信息。提取身份证信息时，可以使用身份证正反面图片，也可以直接输入姓名、身份证号文本。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DetectExtentionByIdCardImageRequest request
-        :return: DetectExtentionByIdCardImageResponse
+        :param request: Request instance for DetectExtentionByIdCardImage
+        :type request: :class:`huaweicloudsdkivs.v2.DetectExtentionByIdCardImageRequest`
+        :rtype: :class:`huaweicloudsdkivs.v2.DetectExtentionByIdCardImageResponse`
         """
         return self.detect_extention_by_id_card_image_with_http_info(request)
 
     def detect_extention_by_id_card_image_with_http_info(self, request):
-        """人证核身证件版（二要素）
-
-        使用姓名、身份证号码二要素进行身份审核。身份验证时，传入的数据为身份证信息。提取身份证信息时，可以使用身份证正反面图片，也可以直接输入姓名、身份证号文本。
-
-        :param DetectExtentionByIdCardImageRequest request
-        :return: DetectExtentionByIdCardImageResponse
-        """
-
         all_params = ['ivs_extention_by_id_card_image_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -110,26 +106,21 @@ class IvsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def detect_extention_by_name_and_id_async(self, request):
         """人证核身证件版（二要素）
 
         使用姓名、身份证号码二要素进行身份审核。身份验证时，传入的数据为身份证信息。提取身份证信息时，可以使用身份证正反面图片，也可以直接输入姓名、身份证号文本。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DetectExtentionByNameAndIdRequest request
-        :return: DetectExtentionByNameAndIdResponse
+        :param request: Request instance for DetectExtentionByNameAndId
+        :type request: :class:`huaweicloudsdkivs.v2.DetectExtentionByNameAndIdRequest`
+        :rtype: :class:`huaweicloudsdkivs.v2.DetectExtentionByNameAndIdResponse`
         """
         return self.detect_extention_by_name_and_id_with_http_info(request)
 
     def detect_extention_by_name_and_id_with_http_info(self, request):
-        """人证核身证件版（二要素）
-
-        使用姓名、身份证号码二要素进行身份审核。身份验证时，传入的数据为身份证信息。提取身份证信息时，可以使用身份证正反面图片，也可以直接输入姓名、身份证号文本。
-
-        :param DetectExtentionByNameAndIdRequest request
-        :return: DetectExtentionByNameAndIdResponse
-        """
-
         all_params = ['ivs_extention_by_name_and_id_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -173,26 +164,22 @@ class IvsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def detect_standard_by_id_card_image_async(self, request):
         """人证核身标准版（三要素）
 
-        使用姓名、身份证号码、人脸图片三要素进行身份审核。 身份验证时，传入的数据为人脸图片、身份证信息。提取身份证信息时，可以使用身份证正反面图片，也可以直接输入姓名、身份证号文本。
+        使用姓名、身份证号码、人脸图片三要素进行身份审核。
+        身份验证时，传入的数据为人脸图片、身份证信息。提取身份证信息时，可以使用身份证正反面图片，也可以直接输入姓名、身份证号文本。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DetectStandardByIdCardImageRequest request
-        :return: DetectStandardByIdCardImageResponse
+        :param request: Request instance for DetectStandardByIdCardImage
+        :type request: :class:`huaweicloudsdkivs.v2.DetectStandardByIdCardImageRequest`
+        :rtype: :class:`huaweicloudsdkivs.v2.DetectStandardByIdCardImageResponse`
         """
         return self.detect_standard_by_id_card_image_with_http_info(request)
 
     def detect_standard_by_id_card_image_with_http_info(self, request):
-        """人证核身标准版（三要素）
-
-        使用姓名、身份证号码、人脸图片三要素进行身份审核。 身份验证时，传入的数据为人脸图片、身份证信息。提取身份证信息时，可以使用身份证正反面图片，也可以直接输入姓名、身份证号文本。
-
-        :param DetectStandardByIdCardImageRequest request
-        :return: DetectStandardByIdCardImageResponse
-        """
-
         all_params = ['ivs_standard_by_id_card_image_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -236,26 +223,21 @@ class IvsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def detect_standard_by_name_and_id_async(self, request):
         """人证核身标准版（三要素）
 
         校验用户上传的身份证图片支持正反面同时上传 中的信息的真实性，输出最终的审核结果。 该接口也支持用户直接上传姓名和身份证号码进行合法性校验 。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DetectStandardByNameAndIdRequest request
-        :return: DetectStandardByNameAndIdResponse
+        :param request: Request instance for DetectStandardByNameAndId
+        :type request: :class:`huaweicloudsdkivs.v2.DetectStandardByNameAndIdRequest`
+        :rtype: :class:`huaweicloudsdkivs.v2.DetectStandardByNameAndIdResponse`
         """
         return self.detect_standard_by_name_and_id_with_http_info(request)
 
     def detect_standard_by_name_and_id_with_http_info(self, request):
-        """人证核身标准版（三要素）
-
-        校验用户上传的身份证图片支持正反面同时上传 中的信息的真实性，输出最终的审核结果。 该接口也支持用户直接上传姓名和身份证号码进行合法性校验 。
-
-        :param DetectStandardByNameAndIdRequest request
-        :return: DetectStandardByNameAndIdResponse
-        """
-
         all_params = ['ivs_standard_by_name_and_id_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -298,7 +280,6 @@ class IvsAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

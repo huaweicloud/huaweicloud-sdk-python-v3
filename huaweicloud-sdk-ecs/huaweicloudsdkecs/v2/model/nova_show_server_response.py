@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NovaShowServerResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class NovaShowServerResponse(SdkResponse):
     }
 
     def __init__(self, server=None):
-        """NovaShowServerResponse - a model defined in huaweicloud sdk"""
+        """NovaShowServerResponse
+
+        The model defined in huaweicloud sdk
+
+        :param server: 
+        :type server: :class:`huaweicloudsdkecs.v2.NovaServer`
+        """
         
         super(NovaShowServerResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class NovaShowServerResponse(SdkResponse):
 
 
         :return: The server of this NovaShowServerResponse.
-        :rtype: NovaServer
+        :rtype: :class:`huaweicloudsdkecs.v2.NovaServer`
         """
         return self._server
 
@@ -56,7 +61,7 @@ class NovaShowServerResponse(SdkResponse):
 
 
         :param server: The server of this NovaShowServerResponse.
-        :type: NovaServer
+        :type server: :class:`huaweicloudsdkecs.v2.NovaServer`
         """
         self._server = server
 

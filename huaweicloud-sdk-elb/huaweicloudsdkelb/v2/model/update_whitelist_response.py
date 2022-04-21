@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateWhitelistResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateWhitelistResponse(SdkResponse):
     }
 
     def __init__(self, whitelist=None):
-        """UpdateWhitelistResponse - a model defined in huaweicloud sdk"""
+        """UpdateWhitelistResponse
+
+        The model defined in huaweicloud sdk
+
+        :param whitelist: 
+        :type whitelist: :class:`huaweicloudsdkelb.v2.WhitelistResp`
+        """
         
         super(UpdateWhitelistResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class UpdateWhitelistResponse(SdkResponse):
 
 
         :return: The whitelist of this UpdateWhitelistResponse.
-        :rtype: WhitelistResp
+        :rtype: :class:`huaweicloudsdkelb.v2.WhitelistResp`
         """
         return self._whitelist
 
@@ -56,7 +61,7 @@ class UpdateWhitelistResponse(SdkResponse):
 
 
         :param whitelist: The whitelist of this UpdateWhitelistResponse.
-        :type: WhitelistResp
+        :type whitelist: :class:`huaweicloudsdkelb.v2.WhitelistResp`
         """
         self._whitelist = whitelist
 

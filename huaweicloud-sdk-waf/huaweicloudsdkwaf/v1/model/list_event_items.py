@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListEventItems:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -66,7 +65,49 @@ class ListEventItems:
     }
 
     def __init__(self, id=None, time=None, policyid=None, sip=None, host=None, url=None, attack=None, rule=None, payload=None, action=None, request_line=None, headers=None, cookie=None, status=None, region=None, host_id=None, response_time=None, response_size=None, response_body=None):
-        """ListEventItems - a model defined in huaweicloud sdk"""
+        """ListEventItems
+
+        The model defined in huaweicloud sdk
+
+        :param id: 事件id
+        :type id: str
+        :param time: 次数
+        :type time: int
+        :param policyid: 策略id
+        :type policyid: str
+        :param sip: 源ip
+        :type sip: str
+        :param host: 域名
+        :type host: str
+        :param url: 攻击的url链接
+        :type url: str
+        :param attack: 攻击类型:   - vuln：其它攻击类型   - sqli： sql注入攻击   - lfi： 本地文件包含  - cmdi：命令注入攻击   - xss：XSS攻击   - robot：恶意爬虫   - rfi：远程文件包含   - custom_custom：精准防护   - webshell：网站木马   - custom_whiteblackip：黑白名单拦截   - custom_geoip：地理访问控制拦截   - antitamper：防篡改   - anticrawler：反爬虫    - leakage：网站信息防泄漏   - illegal：非法请求 
+        :type attack: str
+        :param rule: 命中的规则id
+        :type rule: str
+        :param payload: 命中的载荷
+        :type payload: str
+        :param action: 防护动作
+        :type action: str
+        :param request_line: 请求方法和路径
+        :type request_line: str
+        :param headers: 
+        :type headers: :class:`huaweicloudsdkwaf.v1.ListEventItemsHeaders`
+        :param cookie: 请求cookie
+        :type cookie: str
+        :param status: 响应码状态
+        :type status: str
+        :param region: 区域
+        :type region: str
+        :param host_id: 域名id
+        :type host_id: str
+        :param response_time: 响应时长
+        :type response_time: int
+        :param response_size: 响应体大小
+        :type response_size: int
+        :param response_body: 响应体
+        :type response_body: str
+        """
         
         
 
@@ -148,7 +189,7 @@ class ListEventItems:
         事件id
 
         :param id: The id of this ListEventItems.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -170,7 +211,7 @@ class ListEventItems:
         次数
 
         :param time: The time of this ListEventItems.
-        :type: int
+        :type time: int
         """
         self._time = time
 
@@ -192,7 +233,7 @@ class ListEventItems:
         策略id
 
         :param policyid: The policyid of this ListEventItems.
-        :type: str
+        :type policyid: str
         """
         self._policyid = policyid
 
@@ -214,7 +255,7 @@ class ListEventItems:
         源ip
 
         :param sip: The sip of this ListEventItems.
-        :type: str
+        :type sip: str
         """
         self._sip = sip
 
@@ -236,7 +277,7 @@ class ListEventItems:
         域名
 
         :param host: The host of this ListEventItems.
-        :type: str
+        :type host: str
         """
         self._host = host
 
@@ -258,7 +299,7 @@ class ListEventItems:
         攻击的url链接
 
         :param url: The url of this ListEventItems.
-        :type: str
+        :type url: str
         """
         self._url = url
 
@@ -280,7 +321,7 @@ class ListEventItems:
         攻击类型:   - vuln：其它攻击类型   - sqli： sql注入攻击   - lfi： 本地文件包含  - cmdi：命令注入攻击   - xss：XSS攻击   - robot：恶意爬虫   - rfi：远程文件包含   - custom_custom：精准防护   - webshell：网站木马   - custom_whiteblackip：黑白名单拦截   - custom_geoip：地理访问控制拦截   - antitamper：防篡改   - anticrawler：反爬虫    - leakage：网站信息防泄漏   - illegal：非法请求 
 
         :param attack: The attack of this ListEventItems.
-        :type: str
+        :type attack: str
         """
         self._attack = attack
 
@@ -302,7 +343,7 @@ class ListEventItems:
         命中的规则id
 
         :param rule: The rule of this ListEventItems.
-        :type: str
+        :type rule: str
         """
         self._rule = rule
 
@@ -324,7 +365,7 @@ class ListEventItems:
         命中的载荷
 
         :param payload: The payload of this ListEventItems.
-        :type: str
+        :type payload: str
         """
         self._payload = payload
 
@@ -346,7 +387,7 @@ class ListEventItems:
         防护动作
 
         :param action: The action of this ListEventItems.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -368,7 +409,7 @@ class ListEventItems:
         请求方法和路径
 
         :param request_line: The request_line of this ListEventItems.
-        :type: str
+        :type request_line: str
         """
         self._request_line = request_line
 
@@ -378,7 +419,7 @@ class ListEventItems:
 
 
         :return: The headers of this ListEventItems.
-        :rtype: ListEventItemsHeaders
+        :rtype: :class:`huaweicloudsdkwaf.v1.ListEventItemsHeaders`
         """
         return self._headers
 
@@ -388,7 +429,7 @@ class ListEventItems:
 
 
         :param headers: The headers of this ListEventItems.
-        :type: ListEventItemsHeaders
+        :type headers: :class:`huaweicloudsdkwaf.v1.ListEventItemsHeaders`
         """
         self._headers = headers
 
@@ -410,7 +451,7 @@ class ListEventItems:
         请求cookie
 
         :param cookie: The cookie of this ListEventItems.
-        :type: str
+        :type cookie: str
         """
         self._cookie = cookie
 
@@ -432,7 +473,7 @@ class ListEventItems:
         响应码状态
 
         :param status: The status of this ListEventItems.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -454,7 +495,7 @@ class ListEventItems:
         区域
 
         :param region: The region of this ListEventItems.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -476,7 +517,7 @@ class ListEventItems:
         域名id
 
         :param host_id: The host_id of this ListEventItems.
-        :type: str
+        :type host_id: str
         """
         self._host_id = host_id
 
@@ -498,7 +539,7 @@ class ListEventItems:
         响应时长
 
         :param response_time: The response_time of this ListEventItems.
-        :type: int
+        :type response_time: int
         """
         self._response_time = response_time
 
@@ -520,7 +561,7 @@ class ListEventItems:
         响应体大小
 
         :param response_size: The response_size of this ListEventItems.
-        :type: int
+        :type response_size: int
         """
         self._response_size = response_size
 
@@ -542,7 +583,7 @@ class ListEventItems:
         响应体
 
         :param response_body: The response_body of this ListEventItems.
-        :type: str
+        :type response_body: str
         """
         self._response_body = response_body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListNotificationResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListNotificationResponse(SdkResponse):
     }
 
     def __init__(self, total=None, size=None, items=None):
-        """ListNotificationResponse - a model defined in huaweicloud sdk"""
+        """ListNotificationResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 总数
+        :type total: int
+        :param size: 本次返回数量
+        :type size: int
+        :param items: 订阅管理列表
+        :type items: list[:class:`huaweicloudsdkroma.v2.NotificationResponseBody`]
+        """
         
         super(ListNotificationResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListNotificationResponse(SdkResponse):
         总数
 
         :param total: The total of this ListNotificationResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -90,7 +99,7 @@ class ListNotificationResponse(SdkResponse):
         本次返回数量
 
         :param size: The size of this ListNotificationResponse.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -101,7 +110,7 @@ class ListNotificationResponse(SdkResponse):
         订阅管理列表
 
         :return: The items of this ListNotificationResponse.
-        :rtype: list[NotificationResponseBody]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.NotificationResponseBody`]
         """
         return self._items
 
@@ -112,7 +121,7 @@ class ListNotificationResponse(SdkResponse):
         订阅管理列表
 
         :param items: The items of this ListNotificationResponse.
-        :type: list[NotificationResponseBody]
+        :type items: list[:class:`huaweicloudsdkroma.v2.NotificationResponseBody`]
         """
         self._items = items
 

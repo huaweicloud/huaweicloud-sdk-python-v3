@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MatrixFactorization:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class MatrixFactorization:
     }
 
     def __init__(self, implicit_vector_rank=None, regular_param=None, max_iterator_num=None):
-        """MatrixFactorization - a model defined in huaweicloud sdk"""
+        """MatrixFactorization
+
+        The model defined in huaweicloud sdk
+
+        :param implicit_vector_rank: 隐向量维度。
+        :type implicit_vector_rank: int
+        :param regular_param: 优化正则化系数。
+        :type regular_param: float
+        :param max_iterator_num: 迭代次数。
+        :type max_iterator_num: int
+        """
         
         
 
@@ -65,7 +74,7 @@ class MatrixFactorization:
         隐向量维度。
 
         :param implicit_vector_rank: The implicit_vector_rank of this MatrixFactorization.
-        :type: int
+        :type implicit_vector_rank: int
         """
         self._implicit_vector_rank = implicit_vector_rank
 
@@ -87,7 +96,7 @@ class MatrixFactorization:
         优化正则化系数。
 
         :param regular_param: The regular_param of this MatrixFactorization.
-        :type: float
+        :type regular_param: float
         """
         self._regular_param = regular_param
 
@@ -109,7 +118,7 @@ class MatrixFactorization:
         迭代次数。
 
         :param max_iterator_num: The max_iterator_num of this MatrixFactorization.
-        :type: int
+        :type max_iterator_num: int
         """
         self._max_iterator_num = max_iterator_num
 

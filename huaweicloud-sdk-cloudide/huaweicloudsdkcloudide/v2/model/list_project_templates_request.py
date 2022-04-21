@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListProjectTemplatesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListProjectTemplatesRequest:
     }
 
     def __init__(self, arch=None, stack_id=None):
-        """ListProjectTemplatesRequest - a model defined in huaweicloud sdk"""
+        """ListProjectTemplatesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param arch: cpu架构 x86|arm
+        :type arch: str
+        :param stack_id: 技术栈ID，通过技术栈管理ListStacks接口获取。
+        :type stack_id: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ListProjectTemplatesRequest:
         cpu架构 x86|arm
 
         :param arch: The arch of this ListProjectTemplatesRequest.
-        :type: str
+        :type arch: str
         """
         self._arch = arch
 
@@ -84,7 +91,7 @@ class ListProjectTemplatesRequest:
         技术栈ID，通过技术栈管理ListStacks接口获取。
 
         :param stack_id: The stack_id of this ListProjectTemplatesRequest.
-        :type: str
+        :type stack_id: str
         """
         self._stack_id = stack_id
 

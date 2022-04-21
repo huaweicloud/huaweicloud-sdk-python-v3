@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateMessageTemplateRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateMessageTemplateRequestBody:
     }
 
     def __init__(self, message_template_name=None, protocol=None, content=None):
-        """CreateMessageTemplateRequestBody - a model defined in huaweicloud sdk"""
+        """CreateMessageTemplateRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param message_template_name: 创建模板的名称。只能包含大写字母、小写字母、数字、-和_，且必须由大写字母、小写字母或数字开头，长度在1到64个字符之间。
+        :type message_template_name: str
+        :param protocol: 模板支持的协议类型。  目前支持的协议包括：  “default”：默认协议。  “email”：邮件传输协议。  “sms”：短信传输协议。  “functionstage”：FunctionGraph（函数）传输协议。  “dms”：DMS传输协议。  “http”、“https”：HTTP/HTTPS传输协议。
+        :type protocol: str
+        :param content: 模板内容，模板目前仅支持纯文本模式。模板内容不能空，最大支持256KB。
+        :type content: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class CreateMessageTemplateRequestBody:
         创建模板的名称。只能包含大写字母、小写字母、数字、-和_，且必须由大写字母、小写字母或数字开头，长度在1到64个字符之间。
 
         :param message_template_name: The message_template_name of this CreateMessageTemplateRequestBody.
-        :type: str
+        :type message_template_name: str
         """
         self._message_template_name = message_template_name
 
@@ -87,7 +96,7 @@ class CreateMessageTemplateRequestBody:
         模板支持的协议类型。  目前支持的协议包括：  “default”：默认协议。  “email”：邮件传输协议。  “sms”：短信传输协议。  “functionstage”：FunctionGraph（函数）传输协议。  “dms”：DMS传输协议。  “http”、“https”：HTTP/HTTPS传输协议。
 
         :param protocol: The protocol of this CreateMessageTemplateRequestBody.
-        :type: str
+        :type protocol: str
         """
         self._protocol = protocol
 
@@ -109,7 +118,7 @@ class CreateMessageTemplateRequestBody:
         模板内容，模板目前仅支持纯文本模式。模板内容不能空，最大支持256KB。
 
         :param content: The content of this CreateMessageTemplateRequestBody.
-        :type: str
+        :type content: str
         """
         self._content = content
 

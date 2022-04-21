@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSnapshotBackupsDatastoreResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListSnapshotBackupsDatastoreResp:
     }
 
     def __init__(self, type=None, version=None):
-        """ListSnapshotBackupsDatastoreResp - a model defined in huaweicloud sdk"""
+        """ListSnapshotBackupsDatastoreResp
+
+        The model defined in huaweicloud sdk
+
+        :param type: 支持类型：elasticsearch。
+        :type type: str
+        :param version: 引擎版本号。当前引擎版本为5.5.1、6.2.3、6.5.4、7.1.1、7.6.2、7.9.3。
+        :type version: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class ListSnapshotBackupsDatastoreResp:
         支持类型：elasticsearch。
 
         :param type: The type of this ListSnapshotBackupsDatastoreResp.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -85,7 +92,7 @@ class ListSnapshotBackupsDatastoreResp:
         引擎版本号。当前引擎版本为5.5.1、6.2.3、6.5.4、7.1.1、7.6.2、7.9.3。
 
         :param version: The version of this ListSnapshotBackupsDatastoreResp.
-        :type: str
+        :type version: str
         """
         self._version = version
 

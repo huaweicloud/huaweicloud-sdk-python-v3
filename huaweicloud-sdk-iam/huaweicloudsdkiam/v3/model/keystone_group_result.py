@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneGroupResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class KeystoneGroupResult:
     }
 
     def __init__(self, description=None, id=None, domain_id=None, name=None, links=None, create_time=None):
-        """KeystoneGroupResult - a model defined in huaweicloud sdk"""
+        """KeystoneGroupResult
+
+        The model defined in huaweicloud sdk
+
+        :param description: 用户组描述信息。
+        :type description: str
+        :param id: 用户组ID。
+        :type id: str
+        :param domain_id: 用户组所属账号ID。
+        :type domain_id: str
+        :param name: 用户组名称。
+        :type name: str
+        :param links: 
+        :type links: :class:`huaweicloudsdkiam.v3.Links`
+        :param create_time: 用户组创建时间。
+        :type create_time: int
+        """
         
         
 
@@ -77,7 +92,7 @@ class KeystoneGroupResult:
         用户组描述信息。
 
         :param description: The description of this KeystoneGroupResult.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -99,7 +114,7 @@ class KeystoneGroupResult:
         用户组ID。
 
         :param id: The id of this KeystoneGroupResult.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -121,7 +136,7 @@ class KeystoneGroupResult:
         用户组所属账号ID。
 
         :param domain_id: The domain_id of this KeystoneGroupResult.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -143,7 +158,7 @@ class KeystoneGroupResult:
         用户组名称。
 
         :param name: The name of this KeystoneGroupResult.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -153,7 +168,7 @@ class KeystoneGroupResult:
 
 
         :return: The links of this KeystoneGroupResult.
-        :rtype: Links
+        :rtype: :class:`huaweicloudsdkiam.v3.Links`
         """
         return self._links
 
@@ -163,7 +178,7 @@ class KeystoneGroupResult:
 
 
         :param links: The links of this KeystoneGroupResult.
-        :type: Links
+        :type links: :class:`huaweicloudsdkiam.v3.Links`
         """
         self._links = links
 
@@ -185,7 +200,7 @@ class KeystoneGroupResult:
         用户组创建时间。
 
         :param create_time: The create_time of this KeystoneGroupResult.
-        :type: int
+        :type create_time: int
         """
         self._create_time = create_time
 

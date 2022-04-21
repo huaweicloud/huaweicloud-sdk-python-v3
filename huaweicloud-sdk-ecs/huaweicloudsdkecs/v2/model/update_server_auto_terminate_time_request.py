@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateServerAutoTerminateTimeRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateServerAutoTerminateTimeRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """UpdateServerAutoTerminateTimeRequest - a model defined in huaweicloud sdk"""
+        """UpdateServerAutoTerminateTimeRequest
+
+        The model defined in huaweicloud sdk
+
+        :param server_id: 云服务器ID。
+        :type server_id: str
+        :param body: Body of the UpdateServerAutoTerminateTimeRequest
+        :type body: :class:`huaweicloudsdkecs.v2.UpdateServerAutoTerminateTimeRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateServerAutoTerminateTimeRequest:
         云服务器ID。
 
         :param server_id: The server_id of this UpdateServerAutoTerminateTimeRequest.
-        :type: str
+        :type server_id: str
         """
         self._server_id = server_id
 
@@ -72,7 +79,7 @@ class UpdateServerAutoTerminateTimeRequest:
 
 
         :return: The body of this UpdateServerAutoTerminateTimeRequest.
-        :rtype: UpdateServerAutoTerminateTimeRequestBody
+        :rtype: :class:`huaweicloudsdkecs.v2.UpdateServerAutoTerminateTimeRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateServerAutoTerminateTimeRequest:
 
 
         :param body: The body of this UpdateServerAutoTerminateTimeRequest.
-        :type: UpdateServerAutoTerminateTimeRequestBody
+        :type body: :class:`huaweicloudsdkecs.v2.UpdateServerAutoTerminateTimeRequestBody`
         """
         self._body = body
 

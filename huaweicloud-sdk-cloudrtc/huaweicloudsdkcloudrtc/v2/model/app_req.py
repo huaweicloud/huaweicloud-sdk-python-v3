@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AppReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class AppReq:
     }
 
     def __init__(self, app_name=None):
-        """AppReq - a model defined in huaweicloud sdk"""
+        """AppReq
+
+        The model defined in huaweicloud sdk
+
+        :param app_name: app名称，仅支持填入utf8格式内容
+        :type app_name: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class AppReq:
         app名称，仅支持填入utf8格式内容
 
         :param app_name: The app_name of this AppReq.
-        :type: str
+        :type app_name: str
         """
         self._app_name = app_name
 

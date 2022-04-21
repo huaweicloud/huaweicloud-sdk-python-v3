@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SlowStart:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class SlowStart:
     }
 
     def __init__(self, enable=None, duration=None):
-        """SlowStart - a model defined in huaweicloud sdk"""
+        """SlowStart
+
+        The model defined in huaweicloud sdk
+
+        :param enable: 慢启动的开关，默认值：false； true：开启； false：关闭 
+        :type enable: bool
+        :param duration: 慢启动的持续时间。取值：30~1200s，默认30s；
+        :type duration: int
+        """
         
         
 
@@ -61,7 +68,7 @@ class SlowStart:
         慢启动的开关，默认值：false； true：开启； false：关闭 
 
         :param enable: The enable of this SlowStart.
-        :type: bool
+        :type enable: bool
         """
         self._enable = enable
 
@@ -83,7 +90,7 @@ class SlowStart:
         慢启动的持续时间。取值：30~1200s，默认30s；
 
         :param duration: The duration of this SlowStart.
-        :type: int
+        :type duration: int
         """
         self._duration = duration
 

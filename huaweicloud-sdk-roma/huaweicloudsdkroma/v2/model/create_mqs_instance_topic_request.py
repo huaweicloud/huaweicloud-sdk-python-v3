@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateMqsInstanceTopicRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateMqsInstanceTopicRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreateMqsInstanceTopicRequest - a model defined in huaweicloud sdk"""
+        """CreateMqsInstanceTopicRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param body: Body of the CreateMqsInstanceTopicRequest
+        :type body: :class:`huaweicloudsdkroma.v2.CreateMqsInstanceTopicReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateMqsInstanceTopicRequest:
         实例ID。
 
         :param instance_id: The instance_id of this CreateMqsInstanceTopicRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -72,7 +79,7 @@ class CreateMqsInstanceTopicRequest:
 
 
         :return: The body of this CreateMqsInstanceTopicRequest.
-        :rtype: CreateMqsInstanceTopicReq
+        :rtype: :class:`huaweicloudsdkroma.v2.CreateMqsInstanceTopicReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CreateMqsInstanceTopicRequest:
 
 
         :param body: The body of this CreateMqsInstanceTopicRequest.
-        :type: CreateMqsInstanceTopicReq
+        :type body: :class:`huaweicloudsdkroma.v2.CreateMqsInstanceTopicReq`
         """
         self._body = body
 

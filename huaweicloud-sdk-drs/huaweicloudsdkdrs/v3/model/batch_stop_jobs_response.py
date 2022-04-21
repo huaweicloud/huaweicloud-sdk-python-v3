@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchStopJobsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchStopJobsResponse(SdkResponse):
     }
 
     def __init__(self, results=None, count=None):
-        """BatchStopJobsResponse - a model defined in huaweicloud sdk"""
+        """BatchStopJobsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param results: 批量暂停返回列表
+        :type results: list[:class:`huaweicloudsdkdrs.v3.PauseJobResp`]
+        :param count: 总数
+        :type count: int
+        """
         
         super(BatchStopJobsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class BatchStopJobsResponse(SdkResponse):
         批量暂停返回列表
 
         :return: The results of this BatchStopJobsResponse.
-        :rtype: list[PauseJobResp]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.PauseJobResp`]
         """
         return self._results
 
@@ -63,7 +70,7 @@ class BatchStopJobsResponse(SdkResponse):
         批量暂停返回列表
 
         :param results: The results of this BatchStopJobsResponse.
-        :type: list[PauseJobResp]
+        :type results: list[:class:`huaweicloudsdkdrs.v3.PauseJobResp`]
         """
         self._results = results
 
@@ -85,7 +92,7 @@ class BatchStopJobsResponse(SdkResponse):
         总数
 
         :param count: The count of this BatchStopJobsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

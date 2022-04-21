@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchValidateClustersConnectionsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchValidateClustersConnectionsRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """BatchValidateClustersConnectionsRequest - a model defined in huaweicloud sdk"""
+        """BatchValidateClustersConnectionsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 请求语言类型
+        :type x_language: str
+        :param body: Body of the BatchValidateClustersConnectionsRequest
+        :type body: :class:`huaweicloudsdkdrs.v3.BatchSpecialTestConnectionReq`
+        """
         
         
 
@@ -63,7 +70,7 @@ class BatchValidateClustersConnectionsRequest:
         请求语言类型
 
         :param x_language: The x_language of this BatchValidateClustersConnectionsRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -73,7 +80,7 @@ class BatchValidateClustersConnectionsRequest:
 
 
         :return: The body of this BatchValidateClustersConnectionsRequest.
-        :rtype: BatchSpecialTestConnectionReq
+        :rtype: :class:`huaweicloudsdkdrs.v3.BatchSpecialTestConnectionReq`
         """
         return self._body
 
@@ -83,7 +90,7 @@ class BatchValidateClustersConnectionsRequest:
 
 
         :param body: The body of this BatchValidateClustersConnectionsRequest.
-        :type: BatchSpecialTestConnectionReq
+        :type body: :class:`huaweicloudsdkdrs.v3.BatchSpecialTestConnectionReq`
         """
         self._body = body
 

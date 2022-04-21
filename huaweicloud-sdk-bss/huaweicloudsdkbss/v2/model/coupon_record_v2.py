@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CouponRecordV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class CouponRecordV2:
     }
 
     def __init__(self, id=None, operation_type=None, quota_id=None, quota_type=None, coupon_id=None, customer_id=None, operation_amount=None, operation_time=None, result=None, remark=None):
-        """CouponRecordV2 - a model defined in huaweicloud sdk"""
+        """CouponRecordV2
+
+        The model defined in huaweicloud sdk
+
+        :param id: 该记录的ID。
+        :type id: str
+        :param operation_type: 操作类型。 1：发放2：手动回收3：解绑自动回收
+        :type operation_type: str
+        :param quota_id: 额度ID。
+        :type quota_id: str
+        :param quota_type: 额度类型。 0：代金券额度1：现金券额度
+        :type quota_type: int
+        :param coupon_id: 代金券ID。
+        :type coupon_id: str
+        :param customer_id: 客户账号ID。
+        :type customer_id: str
+        :param operation_amount: 操作的面额值。单位：元。 发放时，等于面额值；回收时，指每次回收的具体值。
+        :type operation_amount: float
+        :param operation_time: 操作时间。
+        :type operation_time: str
+        :param result: 操作结果。 0：成功-1：失败
+        :type result: str
+        :param remark: 操作记录中的备注。
+        :type remark: str
+        """
         
         
 
@@ -103,7 +126,7 @@ class CouponRecordV2:
         该记录的ID。
 
         :param id: The id of this CouponRecordV2.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -125,7 +148,7 @@ class CouponRecordV2:
         操作类型。 1：发放2：手动回收3：解绑自动回收
 
         :param operation_type: The operation_type of this CouponRecordV2.
-        :type: str
+        :type operation_type: str
         """
         self._operation_type = operation_type
 
@@ -147,7 +170,7 @@ class CouponRecordV2:
         额度ID。
 
         :param quota_id: The quota_id of this CouponRecordV2.
-        :type: str
+        :type quota_id: str
         """
         self._quota_id = quota_id
 
@@ -169,7 +192,7 @@ class CouponRecordV2:
         额度类型。 0：代金券额度1：现金券额度
 
         :param quota_type: The quota_type of this CouponRecordV2.
-        :type: int
+        :type quota_type: int
         """
         self._quota_type = quota_type
 
@@ -191,7 +214,7 @@ class CouponRecordV2:
         代金券ID。
 
         :param coupon_id: The coupon_id of this CouponRecordV2.
-        :type: str
+        :type coupon_id: str
         """
         self._coupon_id = coupon_id
 
@@ -213,7 +236,7 @@ class CouponRecordV2:
         客户账号ID。
 
         :param customer_id: The customer_id of this CouponRecordV2.
-        :type: str
+        :type customer_id: str
         """
         self._customer_id = customer_id
 
@@ -235,7 +258,7 @@ class CouponRecordV2:
         操作的面额值。单位：元。 发放时，等于面额值；回收时，指每次回收的具体值。
 
         :param operation_amount: The operation_amount of this CouponRecordV2.
-        :type: float
+        :type operation_amount: float
         """
         self._operation_amount = operation_amount
 
@@ -257,7 +280,7 @@ class CouponRecordV2:
         操作时间。
 
         :param operation_time: The operation_time of this CouponRecordV2.
-        :type: str
+        :type operation_time: str
         """
         self._operation_time = operation_time
 
@@ -279,7 +302,7 @@ class CouponRecordV2:
         操作结果。 0：成功-1：失败
 
         :param result: The result of this CouponRecordV2.
-        :type: str
+        :type result: str
         """
         self._result = result
 
@@ -301,7 +324,7 @@ class CouponRecordV2:
         操作记录中的备注。
 
         :param remark: The remark of this CouponRecordV2.
-        :type: str
+        :type remark: str
         """
         self._remark = remark
 

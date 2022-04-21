@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ImageDetectionReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ImageDetectionReq:
     }
 
     def __init__(self, url=None, image=None, moderation_rule=None, categories=None, ad_glossaries=None, ad_categories=None, threshold=None):
-        """ImageDetectionReq - a model defined in huaweicloud sdk"""
+        """ImageDetectionReq
+
+        The model defined in huaweicloud sdk
+
+        :param url: 与image二选一  图片的URL路径，目前支持：  - 公网HTTP/HTTPS URL  - 华为云OBS提供的URL，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权。详请参见[配置OBS访问权限](https://support.huaweicloud.com/api-moderation/moderation_03_0020.html)。   &gt; - 接口响应时间依赖图片的下载时间，如果图片下载时间过长，会返回接口调用失败。请保证被检测图片所在的存储服务稳定可靠，建议您使用华为云OBS存储。 
+        :type url: str
+        :param image: 与url二选一  图片文件Base64编码字符串。要求base64编码后大小不超过10M。  政治人物检测人脸部分不小于50*50像素。  支持JPG/PNG/BMP格式。 
+        :type image: str
+        :param moderation_rule: 图像审核规则名称，默认使用default规则。  &gt; 审核规则的创建和使用请参见[配置审核规则](https://support.huaweicloud.com/api-moderation/moderation_03_0063.html) 
+        :type moderation_rule: str
+        :param categories: 检测场景:  - politics：是否涉及政治人物的检测。  - terrorism：是否包含涉政暴恐元素的检测。  - porn：是否包含涉黄内容元素的检测。  - ad：是否包含广告的检测（公测特性）。  - all：包含politics、terrorism和porn三种场景的检测。  可通过配置上述场景，来完对应场景元素的检测。  为空或无此参数表示politics和terrorism都检测，但不包含porn场景。  &gt; 每个检测场景的检测次数会分类统计。 
+        :type categories: list[str]
+        :param ad_glossaries: 检测场景: ad场景自定义词库，配置方式同文本审核自定义词库配置方式 
+        :type ad_glossaries: list[str]
+        :param ad_categories: 图文审核检测场景。当categories包含ad时，该参数生效。 当前支持的场景有系统场景和用户自定义场景： - 系统场景为：   - qr_code：二维码   - politics：涉政   - porn：涉黄   - ad：广告   - abuse：辱骂   - contraband：违禁品 - 用户自定义场景为：自定义黑名单词库。   &gt; 自定义词库的创建和使用请参见[配置自定义词库](https://support.huaweicloud.com/api-moderation/moderation_03_0020.html)。 
+        :type ad_categories: list[str]
+        :param threshold: - 结果过滤门限，只有置信度不低于此门限的结果才会呈现在detail的列表中，取值范围 0-1，当未设置此值时各个检测场景会使用各自的默认值。  - politics检测场景的默认值为0.95。  - terrorism检测场景的默认值为0。  - ad检测场景的默认值为0。  - 无特殊需求直接不传此参数或像示例中一样值设为空字符串即可。  &gt; - 如果检测场景中的最高置信度也未达到threshold，则结果列表为空；反之threshold过小，则会使结果列表中内容过多。 &gt; - threshold参数不支持porn场景筛选。 &gt; -  threshold参数不会影响响应中的suggestion。 
+        :type threshold: float
+        """
         
         
 
@@ -88,7 +105,7 @@ class ImageDetectionReq:
         与image二选一  图片的URL路径，目前支持：  - 公网HTTP/HTTPS URL  - 华为云OBS提供的URL，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权。详请参见[配置OBS访问权限](https://support.huaweicloud.com/api-moderation/moderation_03_0020.html)。   > - 接口响应时间依赖图片的下载时间，如果图片下载时间过长，会返回接口调用失败。请保证被检测图片所在的存储服务稳定可靠，建议您使用华为云OBS存储。 
 
         :param url: The url of this ImageDetectionReq.
-        :type: str
+        :type url: str
         """
         self._url = url
 
@@ -110,7 +127,7 @@ class ImageDetectionReq:
         与url二选一  图片文件Base64编码字符串。要求base64编码后大小不超过10M。  政治人物检测人脸部分不小于50*50像素。  支持JPG/PNG/BMP格式。 
 
         :param image: The image of this ImageDetectionReq.
-        :type: str
+        :type image: str
         """
         self._image = image
 
@@ -132,7 +149,7 @@ class ImageDetectionReq:
         图像审核规则名称，默认使用default规则。  > 审核规则的创建和使用请参见[配置审核规则](https://support.huaweicloud.com/api-moderation/moderation_03_0063.html) 
 
         :param moderation_rule: The moderation_rule of this ImageDetectionReq.
-        :type: str
+        :type moderation_rule: str
         """
         self._moderation_rule = moderation_rule
 
@@ -154,7 +171,7 @@ class ImageDetectionReq:
         检测场景:  - politics：是否涉及政治人物的检测。  - terrorism：是否包含涉政暴恐元素的检测。  - porn：是否包含涉黄内容元素的检测。  - ad：是否包含广告的检测（公测特性）。  - all：包含politics、terrorism和porn三种场景的检测。  可通过配置上述场景，来完对应场景元素的检测。  为空或无此参数表示politics和terrorism都检测，但不包含porn场景。  > 每个检测场景的检测次数会分类统计。 
 
         :param categories: The categories of this ImageDetectionReq.
-        :type: list[str]
+        :type categories: list[str]
         """
         self._categories = categories
 
@@ -176,7 +193,7 @@ class ImageDetectionReq:
         检测场景: ad场景自定义词库，配置方式同文本审核自定义词库配置方式 
 
         :param ad_glossaries: The ad_glossaries of this ImageDetectionReq.
-        :type: list[str]
+        :type ad_glossaries: list[str]
         """
         self._ad_glossaries = ad_glossaries
 
@@ -198,7 +215,7 @@ class ImageDetectionReq:
         图文审核检测场景。当categories包含ad时，该参数生效。 当前支持的场景有系统场景和用户自定义场景： - 系统场景为：   - qr_code：二维码   - politics：涉政   - porn：涉黄   - ad：广告   - abuse：辱骂   - contraband：违禁品 - 用户自定义场景为：自定义黑名单词库。   > 自定义词库的创建和使用请参见[配置自定义词库](https://support.huaweicloud.com/api-moderation/moderation_03_0020.html)。 
 
         :param ad_categories: The ad_categories of this ImageDetectionReq.
-        :type: list[str]
+        :type ad_categories: list[str]
         """
         self._ad_categories = ad_categories
 
@@ -220,7 +237,7 @@ class ImageDetectionReq:
         - 结果过滤门限，只有置信度不低于此门限的结果才会呈现在detail的列表中，取值范围 0-1，当未设置此值时各个检测场景会使用各自的默认值。  - politics检测场景的默认值为0.95。  - terrorism检测场景的默认值为0。  - ad检测场景的默认值为0。  - 无特殊需求直接不传此参数或像示例中一样值设为空字符串即可。  > - 如果检测场景中的最高置信度也未达到threshold，则结果列表为空；反之threshold过小，则会使结果列表中内容过多。 > - threshold参数不支持porn场景筛选。 > -  threshold参数不会影响响应中的suggestion。 
 
         :param threshold: The threshold of this ImageDetectionReq.
-        :type: float
+        :type threshold: float
         """
         self._threshold = threshold
 

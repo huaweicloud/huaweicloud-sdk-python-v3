@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Absolute:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -66,7 +65,49 @@ class Absolute:
     }
 
     def __init__(self, max_total_instances=None, max_total_cores=None, max_total_ram_size=None, max_total_keypairs=None, max_server_meta=None, max_personality=None, max_personality_size=None, max_server_groups=None, max_server_group_members=None, total_server_groups_used=None, max_security_groups=None, max_security_group_rules=None, max_total_floating_ips=None, max_image_meta=None, total_instances_used=None, total_cores_used=None, total_ram_used=None, total_security_groups_used=None, total_floating_ips_used=None):
-        """Absolute - a model defined in huaweicloud sdk"""
+        """Absolute
+
+        The model defined in huaweicloud sdk
+
+        :param max_total_instances: 裸金属服务器最大申请数量
+        :type max_total_instances: int
+        :param max_total_cores: CPU核数最大申请数量
+        :type max_total_cores: int
+        :param max_total_ram_size: 内存最大申请容量（单位：MB）
+        :type max_total_ram_size: int
+        :param max_total_keypairs: 可以申请的SSH密钥对最大数量
+        :type max_total_keypairs: int
+        :param max_server_meta: 可输入元数据的最大长度
+        :type max_server_meta: int
+        :param max_personality: 可注入文件的最大个数
+        :type max_personality: int
+        :param max_personality_size: 注入文件内容的最大长度（单位：Byte）
+        :type max_personality_size: int
+        :param max_server_groups: 服务器组的最大个数
+        :type max_server_groups: int
+        :param max_server_group_members: 服务器组中的最大裸金属服务器数。
+        :type max_server_group_members: int
+        :param total_server_groups_used: 已使用的服务器组个数
+        :type total_server_groups_used: int
+        :param max_security_groups: 安全组最大使用个数。 说明：具体配额限制请以VPC配额限制为准。
+        :type max_security_groups: int
+        :param max_security_group_rules: 安全组中安全组规则最大的配置个数。 说明：具体配额限制请以VPC配额限制为准。
+        :type max_security_group_rules: int
+        :param max_total_floating_ips: 最大的浮动IP使用个数
+        :type max_total_floating_ips: int
+        :param max_image_meta: 镜像元数据最大的长度
+        :type max_image_meta: int
+        :param total_instances_used: 当前裸金属服务器使用个数
+        :type total_instances_used: int
+        :param total_cores_used: 当前已使用CPU核数
+        :type total_cores_used: int
+        :param total_ram_used: 当前内存使用容量（单位：MB）
+        :type total_ram_used: int
+        :param total_security_groups_used: 当前安全组使用个数
+        :type total_security_groups_used: int
+        :param total_floating_ips_used: 当前浮动IP使用个数
+        :type total_floating_ips_used: int
+        """
         
         
 
@@ -148,7 +189,7 @@ class Absolute:
         裸金属服务器最大申请数量
 
         :param max_total_instances: The max_total_instances of this Absolute.
-        :type: int
+        :type max_total_instances: int
         """
         self._max_total_instances = max_total_instances
 
@@ -170,7 +211,7 @@ class Absolute:
         CPU核数最大申请数量
 
         :param max_total_cores: The max_total_cores of this Absolute.
-        :type: int
+        :type max_total_cores: int
         """
         self._max_total_cores = max_total_cores
 
@@ -192,7 +233,7 @@ class Absolute:
         内存最大申请容量（单位：MB）
 
         :param max_total_ram_size: The max_total_ram_size of this Absolute.
-        :type: int
+        :type max_total_ram_size: int
         """
         self._max_total_ram_size = max_total_ram_size
 
@@ -214,7 +255,7 @@ class Absolute:
         可以申请的SSH密钥对最大数量
 
         :param max_total_keypairs: The max_total_keypairs of this Absolute.
-        :type: int
+        :type max_total_keypairs: int
         """
         self._max_total_keypairs = max_total_keypairs
 
@@ -236,7 +277,7 @@ class Absolute:
         可输入元数据的最大长度
 
         :param max_server_meta: The max_server_meta of this Absolute.
-        :type: int
+        :type max_server_meta: int
         """
         self._max_server_meta = max_server_meta
 
@@ -258,7 +299,7 @@ class Absolute:
         可注入文件的最大个数
 
         :param max_personality: The max_personality of this Absolute.
-        :type: int
+        :type max_personality: int
         """
         self._max_personality = max_personality
 
@@ -280,7 +321,7 @@ class Absolute:
         注入文件内容的最大长度（单位：Byte）
 
         :param max_personality_size: The max_personality_size of this Absolute.
-        :type: int
+        :type max_personality_size: int
         """
         self._max_personality_size = max_personality_size
 
@@ -302,7 +343,7 @@ class Absolute:
         服务器组的最大个数
 
         :param max_server_groups: The max_server_groups of this Absolute.
-        :type: int
+        :type max_server_groups: int
         """
         self._max_server_groups = max_server_groups
 
@@ -324,7 +365,7 @@ class Absolute:
         服务器组中的最大裸金属服务器数。
 
         :param max_server_group_members: The max_server_group_members of this Absolute.
-        :type: int
+        :type max_server_group_members: int
         """
         self._max_server_group_members = max_server_group_members
 
@@ -346,7 +387,7 @@ class Absolute:
         已使用的服务器组个数
 
         :param total_server_groups_used: The total_server_groups_used of this Absolute.
-        :type: int
+        :type total_server_groups_used: int
         """
         self._total_server_groups_used = total_server_groups_used
 
@@ -368,7 +409,7 @@ class Absolute:
         安全组最大使用个数。 说明：具体配额限制请以VPC配额限制为准。
 
         :param max_security_groups: The max_security_groups of this Absolute.
-        :type: int
+        :type max_security_groups: int
         """
         self._max_security_groups = max_security_groups
 
@@ -390,7 +431,7 @@ class Absolute:
         安全组中安全组规则最大的配置个数。 说明：具体配额限制请以VPC配额限制为准。
 
         :param max_security_group_rules: The max_security_group_rules of this Absolute.
-        :type: int
+        :type max_security_group_rules: int
         """
         self._max_security_group_rules = max_security_group_rules
 
@@ -412,7 +453,7 @@ class Absolute:
         最大的浮动IP使用个数
 
         :param max_total_floating_ips: The max_total_floating_ips of this Absolute.
-        :type: int
+        :type max_total_floating_ips: int
         """
         self._max_total_floating_ips = max_total_floating_ips
 
@@ -434,7 +475,7 @@ class Absolute:
         镜像元数据最大的长度
 
         :param max_image_meta: The max_image_meta of this Absolute.
-        :type: int
+        :type max_image_meta: int
         """
         self._max_image_meta = max_image_meta
 
@@ -456,7 +497,7 @@ class Absolute:
         当前裸金属服务器使用个数
 
         :param total_instances_used: The total_instances_used of this Absolute.
-        :type: int
+        :type total_instances_used: int
         """
         self._total_instances_used = total_instances_used
 
@@ -478,7 +519,7 @@ class Absolute:
         当前已使用CPU核数
 
         :param total_cores_used: The total_cores_used of this Absolute.
-        :type: int
+        :type total_cores_used: int
         """
         self._total_cores_used = total_cores_used
 
@@ -500,7 +541,7 @@ class Absolute:
         当前内存使用容量（单位：MB）
 
         :param total_ram_used: The total_ram_used of this Absolute.
-        :type: int
+        :type total_ram_used: int
         """
         self._total_ram_used = total_ram_used
 
@@ -522,7 +563,7 @@ class Absolute:
         当前安全组使用个数
 
         :param total_security_groups_used: The total_security_groups_used of this Absolute.
-        :type: int
+        :type total_security_groups_used: int
         """
         self._total_security_groups_used = total_security_groups_used
 
@@ -544,7 +585,7 @@ class Absolute:
         当前浮动IP使用个数
 
         :param total_floating_ips_used: The total_floating_ips_used of this Absolute.
-        :type: int
+        :type total_floating_ips_used: int
         """
         self._total_floating_ips_used = total_floating_ips_used
 

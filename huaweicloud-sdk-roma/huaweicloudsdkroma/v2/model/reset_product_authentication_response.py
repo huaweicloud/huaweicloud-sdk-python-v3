@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResetProductAuthenticationResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ResetProductAuthenticationResponse(SdkResponse):
     }
 
     def __init__(self, user_name=None, password=None):
-        """ResetProductAuthenticationResponse - a model defined in huaweicloud sdk"""
+        """ResetProductAuthenticationResponse
+
+        The model defined in huaweicloud sdk
+
+        :param user_name: 一型一密/一机一密的用户名
+        :type user_name: str
+        :param password: 一型一密/一机一密的密码，输入要求：至少1个数字，1个大写字母，1个小写字母，1个特殊字符(~!@#$%^&amp;*()-_&#x3D;+|[{}];:&lt;&gt;/?)，长度8-32个字符
+        :type password: str
+        """
         
         super(ResetProductAuthenticationResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ResetProductAuthenticationResponse(SdkResponse):
         一型一密/一机一密的用户名
 
         :param user_name: The user_name of this ResetProductAuthenticationResponse.
-        :type: str
+        :type user_name: str
         """
         self._user_name = user_name
 
@@ -85,7 +92,7 @@ class ResetProductAuthenticationResponse(SdkResponse):
         一型一密/一机一密的密码，输入要求：至少1个数字，1个大写字母，1个小写字母，1个特殊字符(~!@#$%^&*()-_=+|[{}];:<>/?)，长度8-32个字符
 
         :param password: The password of this ResetProductAuthenticationResponse.
-        :type: str
+        :type password: str
         """
         self._password = password
 

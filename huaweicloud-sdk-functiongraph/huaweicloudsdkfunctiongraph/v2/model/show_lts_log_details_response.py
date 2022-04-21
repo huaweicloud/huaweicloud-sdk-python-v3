@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowLtsLogDetailsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowLtsLogDetailsResponse(SdkResponse):
     }
 
     def __init__(self, group_id=None, stream_id=None, stream_name=None):
-        """ShowLtsLogDetailsResponse - a model defined in huaweicloud sdk"""
+        """ShowLtsLogDetailsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param group_id: 日志组id
+        :type group_id: str
+        :param stream_id: 日志流id
+        :type stream_id: str
+        :param stream_name: 日志流名称
+        :type stream_name: str
+        """
         
         super(ShowLtsLogDetailsResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ShowLtsLogDetailsResponse(SdkResponse):
         日志组id
 
         :param group_id: The group_id of this ShowLtsLogDetailsResponse.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -90,7 +99,7 @@ class ShowLtsLogDetailsResponse(SdkResponse):
         日志流id
 
         :param stream_id: The stream_id of this ShowLtsLogDetailsResponse.
-        :type: str
+        :type stream_id: str
         """
         self._stream_id = stream_id
 
@@ -112,7 +121,7 @@ class ShowLtsLogDetailsResponse(SdkResponse):
         日志流名称
 
         :param stream_name: The stream_name of this ShowLtsLogDetailsResponse.
-        :type: str
+        :type stream_name: str
         """
         self._stream_name = stream_name
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchCreateOrDeleteRabbitMqTagRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchCreateOrDeleteRabbitMqTagRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """BatchCreateOrDeleteRabbitMqTagRequest - a model defined in huaweicloud sdk"""
+        """BatchCreateOrDeleteRabbitMqTagRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param body: Body of the BatchCreateOrDeleteRabbitMqTagRequest
+        :type body: :class:`huaweicloudsdkrabbitmq.v2.BatchCreateOrDeleteTagReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class BatchCreateOrDeleteRabbitMqTagRequest:
         实例ID。
 
         :param instance_id: The instance_id of this BatchCreateOrDeleteRabbitMqTagRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -72,7 +79,7 @@ class BatchCreateOrDeleteRabbitMqTagRequest:
 
 
         :return: The body of this BatchCreateOrDeleteRabbitMqTagRequest.
-        :rtype: BatchCreateOrDeleteTagReq
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.BatchCreateOrDeleteTagReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class BatchCreateOrDeleteRabbitMqTagRequest:
 
 
         :param body: The body of this BatchCreateOrDeleteRabbitMqTagRequest.
-        :type: BatchCreateOrDeleteTagReq
+        :type body: :class:`huaweicloudsdkrabbitmq.v2.BatchCreateOrDeleteTagReq`
         """
         self._body = body
 

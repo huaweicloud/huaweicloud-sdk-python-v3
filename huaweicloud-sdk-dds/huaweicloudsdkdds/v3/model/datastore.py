@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Datastore:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class Datastore:
     }
 
     def __init__(self, type=None, version=None, storage_engine=None):
-        """Datastore - a model defined in huaweicloud sdk"""
+        """Datastore
+
+        The model defined in huaweicloud sdk
+
+        :param type: 数据库版本类型。取值“DDS-Community”。
+        :type type: str
+        :param version: 数据库版本。支持3.4、3.2和4.0版本。取值为“3.4”、“3.2”或“4.0”。
+        :type version: str
+        :param storage_engine: 存储引擎。支持WiredTiger存储引擎。取值为“wiredTiger”。
+        :type storage_engine: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class Datastore:
         数据库版本类型。取值“DDS-Community”。
 
         :param type: The type of this Datastore.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -87,7 +96,7 @@ class Datastore:
         数据库版本。支持3.4、3.2和4.0版本。取值为“3.4”、“3.2”或“4.0”。
 
         :param version: The version of this Datastore.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -109,7 +118,7 @@ class Datastore:
         存储引擎。支持WiredTiger存储引擎。取值为“wiredTiger”。
 
         :param storage_engine: The storage_engine of this Datastore.
-        :type: str
+        :type storage_engine: str
         """
         self._storage_engine = storage_engine
 

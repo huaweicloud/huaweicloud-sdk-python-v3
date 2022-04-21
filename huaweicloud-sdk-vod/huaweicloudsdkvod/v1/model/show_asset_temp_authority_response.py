@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowAssetTempAuthorityResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowAssetTempAuthorityResponse(SdkResponse):
     }
 
     def __init__(self, sign_str=None):
-        """ShowAssetTempAuthorityResponse - a model defined in huaweicloud sdk"""
+        """ShowAssetTempAuthorityResponse
+
+        The model defined in huaweicloud sdk
+
+        :param sign_str: 带授权签名字符串的URL。具体调用示例请参见[示例2：媒资分段上传（20M以上）](https://support.huaweicloud.com/api-vod/vod_04_0216.html)。  示例：https://{obs_domain}/{bucket}?AWSAccessKeyId&#x3D;{AccessKeyID}&amp;Expires&#x3D;{ExpiresValue}&amp;Signature&#x3D;{Signature}
+        :type sign_str: str
+        """
         
         super(ShowAssetTempAuthorityResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class ShowAssetTempAuthorityResponse(SdkResponse):
         带授权签名字符串的URL。具体调用示例请参见[示例2：媒资分段上传（20M以上）](https://support.huaweicloud.com/api-vod/vod_04_0216.html)。  示例：https://{obs_domain}/{bucket}?AWSAccessKeyId={AccessKeyID}&Expires={ExpiresValue}&Signature={Signature}
 
         :param sign_str: The sign_str of this ShowAssetTempAuthorityResponse.
-        :type: str
+        :type sign_str: str
         """
         self._sign_str = sign_str
 

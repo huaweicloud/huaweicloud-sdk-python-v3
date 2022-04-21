@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAppCodesV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListAppCodesV2Response(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, app_codes=None):
-        """ListAppCodesV2Response - a model defined in huaweicloud sdk"""
+        """ListAppCodesV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param size: 本次返回的列表长度
+        :type size: int
+        :param total: 满足条件的记录数
+        :type total: int
+        :param app_codes: App Code列表
+        :type app_codes: list[:class:`huaweicloudsdkroma.v2.AppCodeBaseInfo`]
+        """
         
         super(ListAppCodesV2Response, self).__init__()
 
@@ -66,7 +75,7 @@ class ListAppCodesV2Response(SdkResponse):
         本次返回的列表长度
 
         :param size: The size of this ListAppCodesV2Response.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -88,7 +97,7 @@ class ListAppCodesV2Response(SdkResponse):
         满足条件的记录数
 
         :param total: The total of this ListAppCodesV2Response.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -99,7 +108,7 @@ class ListAppCodesV2Response(SdkResponse):
         App Code列表
 
         :return: The app_codes of this ListAppCodesV2Response.
-        :rtype: list[AppCodeBaseInfo]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.AppCodeBaseInfo`]
         """
         return self._app_codes
 
@@ -110,7 +119,7 @@ class ListAppCodesV2Response(SdkResponse):
         App Code列表
 
         :param app_codes: The app_codes of this ListAppCodesV2Response.
-        :type: list[AppCodeBaseInfo]
+        :type app_codes: list[:class:`huaweicloudsdkroma.v2.AppCodeBaseInfo`]
         """
         self._app_codes = app_codes
 

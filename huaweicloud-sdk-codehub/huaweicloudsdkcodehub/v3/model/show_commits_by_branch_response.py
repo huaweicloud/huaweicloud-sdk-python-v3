@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowCommitsByBranchResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowCommitsByBranchResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """ShowCommitsByBranchResponse - a model defined in huaweicloud sdk"""
+        """ShowCommitsByBranchResponse
+
+        The model defined in huaweicloud sdk
+
+        :param error: 
+        :type error: :class:`huaweicloudsdkcodehub.v3.Error`
+        :param result: 
+        :type result: :class:`huaweicloudsdkcodehub.v3.CommitList`
+        :param status: 响应状态
+        :type status: str
+        """
         
         super(ShowCommitsByBranchResponse, self).__init__()
 
@@ -56,7 +65,7 @@ class ShowCommitsByBranchResponse(SdkResponse):
 
 
         :return: The error of this ShowCommitsByBranchResponse.
-        :rtype: Error
+        :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
         """
         return self._error
 
@@ -66,7 +75,7 @@ class ShowCommitsByBranchResponse(SdkResponse):
 
 
         :param error: The error of this ShowCommitsByBranchResponse.
-        :type: Error
+        :type error: :class:`huaweicloudsdkcodehub.v3.Error`
         """
         self._error = error
 
@@ -76,7 +85,7 @@ class ShowCommitsByBranchResponse(SdkResponse):
 
 
         :return: The result of this ShowCommitsByBranchResponse.
-        :rtype: CommitList
+        :rtype: :class:`huaweicloudsdkcodehub.v3.CommitList`
         """
         return self._result
 
@@ -86,7 +95,7 @@ class ShowCommitsByBranchResponse(SdkResponse):
 
 
         :param result: The result of this ShowCommitsByBranchResponse.
-        :type: CommitList
+        :type result: :class:`huaweicloudsdkcodehub.v3.CommitList`
         """
         self._result = result
 
@@ -108,7 +117,7 @@ class ShowCommitsByBranchResponse(SdkResponse):
         响应状态
 
         :param status: The status of this ShowCommitsByBranchResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MbTaskParameter:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class MbTaskParameter:
     }
 
     def __init__(self, status_description=None, output_filename=None, metadata=None):
-        """MbTaskParameter - a model defined in huaweicloud sdk"""
+        """MbTaskParameter
+
+        The model defined in huaweicloud sdk
+
+        :param status_description: 具体状态描述，FAILED时可用于分析问题。 
+        :type status_description: str
+        :param output_filename: 输出文件名称。 
+        :type output_filename: str
+        :param metadata: 
+        :type metadata: :class:`huaweicloudsdkmpc.v1.MetaData`
+        """
         
         
 
@@ -68,7 +77,7 @@ class MbTaskParameter:
         具体状态描述，FAILED时可用于分析问题。 
 
         :param status_description: The status_description of this MbTaskParameter.
-        :type: str
+        :type status_description: str
         """
         self._status_description = status_description
 
@@ -90,7 +99,7 @@ class MbTaskParameter:
         输出文件名称。 
 
         :param output_filename: The output_filename of this MbTaskParameter.
-        :type: str
+        :type output_filename: str
         """
         self._output_filename = output_filename
 
@@ -100,7 +109,7 @@ class MbTaskParameter:
 
 
         :return: The metadata of this MbTaskParameter.
-        :rtype: MetaData
+        :rtype: :class:`huaweicloudsdkmpc.v1.MetaData`
         """
         return self._metadata
 
@@ -110,7 +119,7 @@ class MbTaskParameter:
 
 
         :param metadata: The metadata of this MbTaskParameter.
-        :type: MetaData
+        :type metadata: :class:`huaweicloudsdkmpc.v1.MetaData`
         """
         self._metadata = metadata
 

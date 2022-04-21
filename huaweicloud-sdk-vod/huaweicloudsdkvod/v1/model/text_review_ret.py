@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TextReviewRet:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class TextReviewRet:
     }
 
     def __init__(self, suggestion=None, politics=None, porn=None, abuse=None):
-        """TextReviewRet - a model defined in huaweicloud sdk"""
+        """TextReviewRet
+
+        The model defined in huaweicloud sdk
+
+        :param suggestion: 检测结果是否通过。  取值如下： - block：包含敏感信息，不通过。 - pass：不包含敏感信息，通过。 - review：需要人工复检。
+        :type suggestion: str
+        :param politics: 涉政敏感词列表
+        :type politics: str
+        :param porn: 涉黄敏感词列表
+        :type porn: str
+        :param abuse: 辱骂敏感词列表
+        :type abuse: str
+        """
         
         
 
@@ -72,7 +83,7 @@ class TextReviewRet:
         检测结果是否通过。  取值如下： - block：包含敏感信息，不通过。 - pass：不包含敏感信息，通过。 - review：需要人工复检。
 
         :param suggestion: The suggestion of this TextReviewRet.
-        :type: str
+        :type suggestion: str
         """
         self._suggestion = suggestion
 
@@ -94,7 +105,7 @@ class TextReviewRet:
         涉政敏感词列表
 
         :param politics: The politics of this TextReviewRet.
-        :type: str
+        :type politics: str
         """
         self._politics = politics
 
@@ -116,7 +127,7 @@ class TextReviewRet:
         涉黄敏感词列表
 
         :param porn: The porn of this TextReviewRet.
-        :type: str
+        :type porn: str
         """
         self._porn = porn
 
@@ -138,7 +149,7 @@ class TextReviewRet:
         辱骂敏感词列表
 
         :param abuse: The abuse of this TextReviewRet.
-        :type: str
+        :type abuse: str
         """
         self._abuse = abuse
 

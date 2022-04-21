@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TimeRange:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class TimeRange:
     }
 
     def __init__(self, sql_time_zone=None, start_time=None, end_time=None, start_time_gt=None, end_time_lt=None):
-        """TimeRange - a model defined in huaweicloud sdk"""
+        """TimeRange
+
+        The model defined in huaweicloud sdk
+
+        :param sql_time_zone: 时区信息，默认为“UTC”。
+        :type sql_time_zone: str
+        :param start_time: 搜索起始时间（UTC时间，毫秒级）。
+        :type start_time: str
+        :param end_time: 搜索起始时间（UTC时间，毫秒级）。
+        :type end_time: str
+        :param start_time_gt: 搜索是否包含起始时间点，默认为false。
+        :type start_time_gt: bool
+        :param end_time_lt: 搜索是否包含结束时间点，默认为false。
+        :type end_time_lt: bool
+        """
         
         
 
@@ -76,7 +89,7 @@ class TimeRange:
         时区信息，默认为“UTC”。
 
         :param sql_time_zone: The sql_time_zone of this TimeRange.
-        :type: str
+        :type sql_time_zone: str
         """
         self._sql_time_zone = sql_time_zone
 
@@ -98,7 +111,7 @@ class TimeRange:
         搜索起始时间（UTC时间，毫秒级）。
 
         :param start_time: The start_time of this TimeRange.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -120,7 +133,7 @@ class TimeRange:
         搜索起始时间（UTC时间，毫秒级）。
 
         :param end_time: The end_time of this TimeRange.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -142,7 +155,7 @@ class TimeRange:
         搜索是否包含起始时间点，默认为false。
 
         :param start_time_gt: The start_time_gt of this TimeRange.
-        :type: bool
+        :type start_time_gt: bool
         """
         self._start_time_gt = start_time_gt
 
@@ -164,7 +177,7 @@ class TimeRange:
         搜索是否包含结束时间点，默认为false。
 
         :param end_time_lt: The end_time_lt of this TimeRange.
-        :type: bool
+        :type end_time_lt: bool
         """
         self._end_time_lt = end_time_lt
 

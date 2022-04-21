@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneCreateAgencyTokenRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class KeystoneCreateAgencyTokenRequest:
     }
 
     def __init__(self, nocatalog=None, body=None):
-        """KeystoneCreateAgencyTokenRequest - a model defined in huaweicloud sdk"""
+        """KeystoneCreateAgencyTokenRequest
+
+        The model defined in huaweicloud sdk
+
+        :param nocatalog: 如果设置该参数，返回的响应体中将不显示catalog信息。任何非空字符串都将解释为true，并使该字段生效。
+        :type nocatalog: str
+        :param body: Body of the KeystoneCreateAgencyTokenRequest
+        :type body: :class:`huaweicloudsdkiam.v3.KeystoneCreateAgencyTokenRequestBody`
+        """
         
         
 
@@ -63,7 +70,7 @@ class KeystoneCreateAgencyTokenRequest:
         如果设置该参数，返回的响应体中将不显示catalog信息。任何非空字符串都将解释为true，并使该字段生效。
 
         :param nocatalog: The nocatalog of this KeystoneCreateAgencyTokenRequest.
-        :type: str
+        :type nocatalog: str
         """
         self._nocatalog = nocatalog
 
@@ -73,7 +80,7 @@ class KeystoneCreateAgencyTokenRequest:
 
 
         :return: The body of this KeystoneCreateAgencyTokenRequest.
-        :rtype: KeystoneCreateAgencyTokenRequestBody
+        :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCreateAgencyTokenRequestBody`
         """
         return self._body
 
@@ -83,7 +90,7 @@ class KeystoneCreateAgencyTokenRequest:
 
 
         :param body: The body of this KeystoneCreateAgencyTokenRequest.
-        :type: KeystoneCreateAgencyTokenRequestBody
+        :type body: :class:`huaweicloudsdkiam.v3.KeystoneCreateAgencyTokenRequestBody`
         """
         self._body = body
 

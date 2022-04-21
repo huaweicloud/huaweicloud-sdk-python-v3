@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApplicationEndpoint:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ApplicationEndpoint:
     }
 
     def __init__(self, create_time=None, endpoint_urn=None, user_data=None, enabled=None, token=None):
-        """ApplicationEndpoint - a model defined in huaweicloud sdk"""
+        """ApplicationEndpoint
+
+        The model defined in huaweicloud sdk
+
+        :param create_time: 创建application的时间 时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
+        :type create_time: str
+        :param endpoint_urn: Application endpoint的唯一资源标识。
+        :type endpoint_urn: str
+        :param user_data: 用户自定义数据 最大长度支持UTF-8编码后2048字节。
+        :type user_data: str
+        :param enabled: endpoint启用开关 true或false字符串。
+        :type enabled: str
+        :param token: 设备token 最大长度512个字节。
+        :type token: str
+        """
         
         
 
@@ -73,7 +86,7 @@ class ApplicationEndpoint:
         创建application的时间 时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
 
         :param create_time: The create_time of this ApplicationEndpoint.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -95,7 +108,7 @@ class ApplicationEndpoint:
         Application endpoint的唯一资源标识。
 
         :param endpoint_urn: The endpoint_urn of this ApplicationEndpoint.
-        :type: str
+        :type endpoint_urn: str
         """
         self._endpoint_urn = endpoint_urn
 
@@ -117,7 +130,7 @@ class ApplicationEndpoint:
         用户自定义数据 最大长度支持UTF-8编码后2048字节。
 
         :param user_data: The user_data of this ApplicationEndpoint.
-        :type: str
+        :type user_data: str
         """
         self._user_data = user_data
 
@@ -139,7 +152,7 @@ class ApplicationEndpoint:
         endpoint启用开关 true或false字符串。
 
         :param enabled: The enabled of this ApplicationEndpoint.
-        :type: str
+        :type enabled: str
         """
         self._enabled = enabled
 
@@ -161,7 +174,7 @@ class ApplicationEndpoint:
         设备token 最大长度512个字节。
 
         :param token: The token of this ApplicationEndpoint.
-        :type: str
+        :type token: str
         """
         self._token = token
 

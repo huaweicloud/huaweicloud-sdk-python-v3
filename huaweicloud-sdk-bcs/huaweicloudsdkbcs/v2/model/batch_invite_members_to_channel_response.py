@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchInviteMembersToChannelResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class BatchInviteMembersToChannelResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchInviteMembersToChannelResponse - a model defined in huaweicloud sdk"""
+        """BatchInviteMembersToChannelResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(BatchInviteMembersToChannelResponse, self).__init__()
         self.discriminator = None

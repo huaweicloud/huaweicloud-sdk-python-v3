@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExportCertificateResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ExportCertificateResponse(SdkResponse):
     }
 
     def __init__(self, certificate=None, certificate_chain=None, private_key=None, enc_certificate=None, enc_private_key=None):
-        """ExportCertificateResponse - a model defined in huaweicloud sdk"""
+        """ExportCertificateResponse
+
+        The model defined in huaweicloud sdk
+
+        :param certificate: 证书内容。
+        :type certificate: str
+        :param certificate_chain: 证书链。
+        :type certificate_chain: str
+        :param private_key: 证书私钥。
+        :type private_key: str
+        :param enc_certificate: 国密证书返回，加密证书内容。
+        :type enc_certificate: str
+        :param enc_private_key: 国密证书返回，加密证书私钥。
+        :type enc_private_key: str
+        """
         
         super(ExportCertificateResponse, self).__init__()
 
@@ -78,7 +91,7 @@ class ExportCertificateResponse(SdkResponse):
         证书内容。
 
         :param certificate: The certificate of this ExportCertificateResponse.
-        :type: str
+        :type certificate: str
         """
         self._certificate = certificate
 
@@ -100,7 +113,7 @@ class ExportCertificateResponse(SdkResponse):
         证书链。
 
         :param certificate_chain: The certificate_chain of this ExportCertificateResponse.
-        :type: str
+        :type certificate_chain: str
         """
         self._certificate_chain = certificate_chain
 
@@ -122,7 +135,7 @@ class ExportCertificateResponse(SdkResponse):
         证书私钥。
 
         :param private_key: The private_key of this ExportCertificateResponse.
-        :type: str
+        :type private_key: str
         """
         self._private_key = private_key
 
@@ -144,7 +157,7 @@ class ExportCertificateResponse(SdkResponse):
         国密证书返回，加密证书内容。
 
         :param enc_certificate: The enc_certificate of this ExportCertificateResponse.
-        :type: str
+        :type enc_certificate: str
         """
         self._enc_certificate = enc_certificate
 
@@ -166,7 +179,7 @@ class ExportCertificateResponse(SdkResponse):
         国密证书返回，加密证书私钥。
 
         :param enc_private_key: The enc_private_key of this ExportCertificateResponse.
-        :type: str
+        :type enc_private_key: str
         """
         self._enc_private_key = enc_private_key
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestLockReqBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RestLockReqBody:
     }
 
     def __init__(self, is_lock=None):
-        """RestLockReqBody - a model defined in huaweicloud sdk"""
+        """RestLockReqBody
+
+        The model defined in huaweicloud sdk
+
+        :param is_lock: - 0: 解锁。 - 1: 锁定。
+        :type is_lock: int
+        """
         
         
 
@@ -57,7 +62,7 @@ class RestLockReqBody:
         - 0: 解锁。 - 1: 锁定。
 
         :param is_lock: The is_lock of this RestLockReqBody.
-        :type: int
+        :type is_lock: int
         """
         self._is_lock = is_lock
 

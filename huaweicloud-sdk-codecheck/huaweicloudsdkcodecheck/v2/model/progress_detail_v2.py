@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ProgressDetailV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ProgressDetailV2:
     }
 
     def __init__(self, ratio=None, info=None):
-        """ProgressDetailV2 - a model defined in huaweicloud sdk"""
+        """ProgressDetailV2
+
+        The model defined in huaweicloud sdk
+
+        :param ratio: 进度百分比
+        :type ratio: str
+        :param info: 中文信息
+        :type info: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class ProgressDetailV2:
         进度百分比
 
         :param ratio: The ratio of this ProgressDetailV2.
-        :type: str
+        :type ratio: str
         """
         self._ratio = ratio
 
@@ -85,7 +92,7 @@ class ProgressDetailV2:
         中文信息
 
         :param info: The info of this ProgressDetailV2.
-        :type: str
+        :type info: str
         """
         self._info = info
 

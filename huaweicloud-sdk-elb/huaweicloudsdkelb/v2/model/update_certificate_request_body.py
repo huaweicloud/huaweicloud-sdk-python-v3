@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateCertificateRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class UpdateCertificateRequestBody:
     }
 
     def __init__(self, certificate=None, private_key=None, description=None, domain=None, name=None, admin_state_up=None):
-        """UpdateCertificateRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateCertificateRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param certificate: SSL证书对象 最大长度64KB 支持证书链，最大11层(含证书和证书链)
+        :type certificate: str
+        :param private_key: 服务端的私有密钥。  格式：私钥为PEM格式。 最大长度8KB。
+        :type private_key: str
+        :param description: SSL证书的描述信息。  支持的最大字符长度：255
+        :type description: str
+        :param domain: 服务端证书所签的域名。默认值：null。  支持的最大字符长度：1024  取值范围：  普通域名由若干字符串组成，总长度为0-100，字符串间以\&quot;.\&quot;分割，单个字符串长度不超过63个字符，只能包含英文字母、数字或\&quot;-\&quot;，且必须以字母或数字开头和结尾。 泛域名在普通域名的基础上仅允许首字母为\&quot;*\&quot;。该字段仅type为server时有效。
+        :type domain: str
+        :param name: SSL证书的名称。  支持的最大字符长度：255
+        :type name: str
+        :param admin_state_up: SSL证书的管理状态；  取值范围： true/false。  该字段为预留字段，暂未启用。只支持设定为true。
+        :type admin_state_up: bool
+        """
         
         
 
@@ -83,7 +98,7 @@ class UpdateCertificateRequestBody:
         SSL证书对象 最大长度64KB 支持证书链，最大11层(含证书和证书链)
 
         :param certificate: The certificate of this UpdateCertificateRequestBody.
-        :type: str
+        :type certificate: str
         """
         self._certificate = certificate
 
@@ -105,7 +120,7 @@ class UpdateCertificateRequestBody:
         服务端的私有密钥。  格式：私钥为PEM格式。 最大长度8KB。
 
         :param private_key: The private_key of this UpdateCertificateRequestBody.
-        :type: str
+        :type private_key: str
         """
         self._private_key = private_key
 
@@ -127,7 +142,7 @@ class UpdateCertificateRequestBody:
         SSL证书的描述信息。  支持的最大字符长度：255
 
         :param description: The description of this UpdateCertificateRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -149,7 +164,7 @@ class UpdateCertificateRequestBody:
         服务端证书所签的域名。默认值：null。  支持的最大字符长度：1024  取值范围：  普通域名由若干字符串组成，总长度为0-100，字符串间以\".\"分割，单个字符串长度不超过63个字符，只能包含英文字母、数字或\"-\"，且必须以字母或数字开头和结尾。 泛域名在普通域名的基础上仅允许首字母为\"*\"。该字段仅type为server时有效。
 
         :param domain: The domain of this UpdateCertificateRequestBody.
-        :type: str
+        :type domain: str
         """
         self._domain = domain
 
@@ -171,7 +186,7 @@ class UpdateCertificateRequestBody:
         SSL证书的名称。  支持的最大字符长度：255
 
         :param name: The name of this UpdateCertificateRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -193,7 +208,7 @@ class UpdateCertificateRequestBody:
         SSL证书的管理状态；  取值范围： true/false。  该字段为预留字段，暂未启用。只支持设定为true。
 
         :param admin_state_up: The admin_state_up of this UpdateCertificateRequestBody.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 

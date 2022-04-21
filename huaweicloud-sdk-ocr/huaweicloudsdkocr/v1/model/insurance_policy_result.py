@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InsurancePolicyResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class InsurancePolicyResult:
     }
 
     def __init__(self, bank_name=None, bill_number=None, company=None, effective_date=None, applicant_name=None, applicant_sex=None, applicant_birthday=None, applicant_id_type=None, applicant_id_number=None, insurant_list=None, beneficiary_list=None, insurance_list=None):
-        """InsurancePolicyResult - a model defined in huaweicloud sdk"""
+        """InsurancePolicyResult
+
+        The model defined in huaweicloud sdk
+
+        :param bank_name: 发卡行。 
+        :type bank_name: str
+        :param bill_number: 
+        :type bill_number: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
+        :param company: 
+        :type company: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
+        :param effective_date: 
+        :type effective_date: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
+        :param applicant_name: 
+        :type applicant_name: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
+        :param applicant_sex: 
+        :type applicant_sex: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
+        :param applicant_birthday: 
+        :type applicant_birthday: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
+        :param applicant_id_type: 
+        :type applicant_id_type: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
+        :param applicant_id_number: 
+        :type applicant_id_number: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
+        :param insurant_list: 被保人列表（第一个默认为主被保人）。 
+        :type insurant_list: list[:class:`huaweicloudsdkocr.v1.InsurantItem`]
+        :param beneficiary_list: 受益人列表。 
+        :type beneficiary_list: list[:class:`huaweicloudsdkocr.v1.BeneficiaryItem`]
+        :param insurance_list: 保险项目信息列表。 
+        :type insurance_list: list[:class:`huaweicloudsdkocr.v1.InsuranceItem`]
+        """
         
         
 
@@ -113,7 +140,7 @@ class InsurancePolicyResult:
         发卡行。 
 
         :param bank_name: The bank_name of this InsurancePolicyResult.
-        :type: str
+        :type bank_name: str
         """
         self._bank_name = bank_name
 
@@ -123,7 +150,7 @@ class InsurancePolicyResult:
 
 
         :return: The bill_number of this InsurancePolicyResult.
-        :rtype: InsurancePolicyDetail
+        :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
         return self._bill_number
 
@@ -133,7 +160,7 @@ class InsurancePolicyResult:
 
 
         :param bill_number: The bill_number of this InsurancePolicyResult.
-        :type: InsurancePolicyDetail
+        :type bill_number: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
         self._bill_number = bill_number
 
@@ -143,7 +170,7 @@ class InsurancePolicyResult:
 
 
         :return: The company of this InsurancePolicyResult.
-        :rtype: InsurancePolicyDetail
+        :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
         return self._company
 
@@ -153,7 +180,7 @@ class InsurancePolicyResult:
 
 
         :param company: The company of this InsurancePolicyResult.
-        :type: InsurancePolicyDetail
+        :type company: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
         self._company = company
 
@@ -163,7 +190,7 @@ class InsurancePolicyResult:
 
 
         :return: The effective_date of this InsurancePolicyResult.
-        :rtype: InsurancePolicyDetail
+        :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
         return self._effective_date
 
@@ -173,7 +200,7 @@ class InsurancePolicyResult:
 
 
         :param effective_date: The effective_date of this InsurancePolicyResult.
-        :type: InsurancePolicyDetail
+        :type effective_date: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
         self._effective_date = effective_date
 
@@ -183,7 +210,7 @@ class InsurancePolicyResult:
 
 
         :return: The applicant_name of this InsurancePolicyResult.
-        :rtype: InsurancePolicyDetail
+        :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
         return self._applicant_name
 
@@ -193,7 +220,7 @@ class InsurancePolicyResult:
 
 
         :param applicant_name: The applicant_name of this InsurancePolicyResult.
-        :type: InsurancePolicyDetail
+        :type applicant_name: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
         self._applicant_name = applicant_name
 
@@ -203,7 +230,7 @@ class InsurancePolicyResult:
 
 
         :return: The applicant_sex of this InsurancePolicyResult.
-        :rtype: InsurancePolicyDetail
+        :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
         return self._applicant_sex
 
@@ -213,7 +240,7 @@ class InsurancePolicyResult:
 
 
         :param applicant_sex: The applicant_sex of this InsurancePolicyResult.
-        :type: InsurancePolicyDetail
+        :type applicant_sex: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
         self._applicant_sex = applicant_sex
 
@@ -223,7 +250,7 @@ class InsurancePolicyResult:
 
 
         :return: The applicant_birthday of this InsurancePolicyResult.
-        :rtype: InsurancePolicyDetail
+        :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
         return self._applicant_birthday
 
@@ -233,7 +260,7 @@ class InsurancePolicyResult:
 
 
         :param applicant_birthday: The applicant_birthday of this InsurancePolicyResult.
-        :type: InsurancePolicyDetail
+        :type applicant_birthday: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
         self._applicant_birthday = applicant_birthday
 
@@ -243,7 +270,7 @@ class InsurancePolicyResult:
 
 
         :return: The applicant_id_type of this InsurancePolicyResult.
-        :rtype: InsurancePolicyDetail
+        :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
         return self._applicant_id_type
 
@@ -253,7 +280,7 @@ class InsurancePolicyResult:
 
 
         :param applicant_id_type: The applicant_id_type of this InsurancePolicyResult.
-        :type: InsurancePolicyDetail
+        :type applicant_id_type: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
         self._applicant_id_type = applicant_id_type
 
@@ -263,7 +290,7 @@ class InsurancePolicyResult:
 
 
         :return: The applicant_id_number of this InsurancePolicyResult.
-        :rtype: InsurancePolicyDetail
+        :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
         return self._applicant_id_number
 
@@ -273,7 +300,7 @@ class InsurancePolicyResult:
 
 
         :param applicant_id_number: The applicant_id_number of this InsurancePolicyResult.
-        :type: InsurancePolicyDetail
+        :type applicant_id_number: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
         self._applicant_id_number = applicant_id_number
 
@@ -284,7 +311,7 @@ class InsurancePolicyResult:
         被保人列表（第一个默认为主被保人）。 
 
         :return: The insurant_list of this InsurancePolicyResult.
-        :rtype: list[InsurantItem]
+        :rtype: list[:class:`huaweicloudsdkocr.v1.InsurantItem`]
         """
         return self._insurant_list
 
@@ -295,7 +322,7 @@ class InsurancePolicyResult:
         被保人列表（第一个默认为主被保人）。 
 
         :param insurant_list: The insurant_list of this InsurancePolicyResult.
-        :type: list[InsurantItem]
+        :type insurant_list: list[:class:`huaweicloudsdkocr.v1.InsurantItem`]
         """
         self._insurant_list = insurant_list
 
@@ -306,7 +333,7 @@ class InsurancePolicyResult:
         受益人列表。 
 
         :return: The beneficiary_list of this InsurancePolicyResult.
-        :rtype: list[BeneficiaryItem]
+        :rtype: list[:class:`huaweicloudsdkocr.v1.BeneficiaryItem`]
         """
         return self._beneficiary_list
 
@@ -317,7 +344,7 @@ class InsurancePolicyResult:
         受益人列表。 
 
         :param beneficiary_list: The beneficiary_list of this InsurancePolicyResult.
-        :type: list[BeneficiaryItem]
+        :type beneficiary_list: list[:class:`huaweicloudsdkocr.v1.BeneficiaryItem`]
         """
         self._beneficiary_list = beneficiary_list
 
@@ -328,7 +355,7 @@ class InsurancePolicyResult:
         保险项目信息列表。 
 
         :return: The insurance_list of this InsurancePolicyResult.
-        :rtype: list[InsuranceItem]
+        :rtype: list[:class:`huaweicloudsdkocr.v1.InsuranceItem`]
         """
         return self._insurance_list
 
@@ -339,7 +366,7 @@ class InsurancePolicyResult:
         保险项目信息列表。 
 
         :param insurance_list: The insurance_list of this InsurancePolicyResult.
-        :type: list[InsuranceItem]
+        :type insurance_list: list[:class:`huaweicloudsdkocr.v1.InsuranceItem`]
         """
         self._insurance_list = insurance_list
 

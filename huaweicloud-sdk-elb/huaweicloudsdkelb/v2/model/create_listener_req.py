@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateListenerReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -58,7 +57,41 @@ class CreateListenerReq:
     }
 
     def __init__(self, loadbalancer_id=None, protocol=None, protocol_port=None, tenant_id=None, name=None, description=None, admin_state_up=None, connection_limit=None, http2_enable=None, default_pool_id=None, default_tls_container_ref=None, client_ca_tls_container_ref=None, sni_container_refs=None, insert_headers=None, tls_ciphers_policy=None):
-        """CreateListenerReq - a model defined in huaweicloud sdk"""
+        """CreateListenerReq
+
+        The model defined in huaweicloud sdk
+
+        :param loadbalancer_id: 监听器关联的负载均衡器 ID
+        :type loadbalancer_id: str
+        :param protocol: 监听器的监听协议
+        :type protocol: str
+        :param protocol_port: 监听器的监听端口。如果监听协议为UDP，端口号不支持4789。
+        :type protocol_port: int
+        :param tenant_id: 监听器所在的项目ID。
+        :type tenant_id: str
+        :param name: 监听器名称。
+        :type name: str
+        :param description: 监听器的描述信息
+        :type description: str
+        :param admin_state_up: 监听器器的管理状态。只支持设定为true，该字段的值无实际意义。
+        :type admin_state_up: bool
+        :param connection_limit: 监听器的最大连接数。该字段为预留字段，暂未启用。默认为-1。
+        :type connection_limit: int
+        :param http2_enable: HTTP2功能的开启状态。该字段只有当监听器的协议是TERMINATED_HTTPS时才有意义。
+        :type http2_enable: bool
+        :param default_pool_id: 监听器的默认后端云服务器组ID。当请求没有匹配的转发策略时，转发到默认后端云服务器上处理。当该字段为null时，表示监听器无默认的后端云服务器组。
+        :type default_pool_id: str
+        :param default_tls_container_ref: 监听器使用的服务器证书ID。当protocol参数为TERMINATED_HTTPS时，为必选字段
+        :type default_tls_container_ref: str
+        :param client_ca_tls_container_ref: 监听器使用的CA证书ID。
+        :type client_ca_tls_container_ref: str
+        :param sni_container_refs: 监听器使用的SNI证书（带域名的服务器证书）ID的列表。 该字段不为空列表时，SNI特性开启。该字段为空列表时，SNI特性关闭。
+        :type sni_container_refs: list[str]
+        :param insert_headers: 
+        :type insert_headers: :class:`huaweicloudsdkelb.v2.InsertHeader`
+        :param tls_ciphers_policy: 监听器使用的安全策略，仅对TERMINATED_HTTPS协议类型的监听器有效，且默认值为tls-1-0。  取值包括：tls-1-0, tls-1-1, tls-1-2, tls-1-2-strict多种安全策略。
+        :type tls_ciphers_policy: str
+        """
         
         
 
@@ -125,7 +158,7 @@ class CreateListenerReq:
         监听器关联的负载均衡器 ID
 
         :param loadbalancer_id: The loadbalancer_id of this CreateListenerReq.
-        :type: str
+        :type loadbalancer_id: str
         """
         self._loadbalancer_id = loadbalancer_id
 
@@ -147,7 +180,7 @@ class CreateListenerReq:
         监听器的监听协议
 
         :param protocol: The protocol of this CreateListenerReq.
-        :type: str
+        :type protocol: str
         """
         self._protocol = protocol
 
@@ -169,7 +202,7 @@ class CreateListenerReq:
         监听器的监听端口。如果监听协议为UDP，端口号不支持4789。
 
         :param protocol_port: The protocol_port of this CreateListenerReq.
-        :type: int
+        :type protocol_port: int
         """
         self._protocol_port = protocol_port
 
@@ -191,7 +224,7 @@ class CreateListenerReq:
         监听器所在的项目ID。
 
         :param tenant_id: The tenant_id of this CreateListenerReq.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 
@@ -213,7 +246,7 @@ class CreateListenerReq:
         监听器名称。
 
         :param name: The name of this CreateListenerReq.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -235,7 +268,7 @@ class CreateListenerReq:
         监听器的描述信息
 
         :param description: The description of this CreateListenerReq.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -257,7 +290,7 @@ class CreateListenerReq:
         监听器器的管理状态。只支持设定为true，该字段的值无实际意义。
 
         :param admin_state_up: The admin_state_up of this CreateListenerReq.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 
@@ -279,7 +312,7 @@ class CreateListenerReq:
         监听器的最大连接数。该字段为预留字段，暂未启用。默认为-1。
 
         :param connection_limit: The connection_limit of this CreateListenerReq.
-        :type: int
+        :type connection_limit: int
         """
         self._connection_limit = connection_limit
 
@@ -301,7 +334,7 @@ class CreateListenerReq:
         HTTP2功能的开启状态。该字段只有当监听器的协议是TERMINATED_HTTPS时才有意义。
 
         :param http2_enable: The http2_enable of this CreateListenerReq.
-        :type: bool
+        :type http2_enable: bool
         """
         self._http2_enable = http2_enable
 
@@ -323,7 +356,7 @@ class CreateListenerReq:
         监听器的默认后端云服务器组ID。当请求没有匹配的转发策略时，转发到默认后端云服务器上处理。当该字段为null时，表示监听器无默认的后端云服务器组。
 
         :param default_pool_id: The default_pool_id of this CreateListenerReq.
-        :type: str
+        :type default_pool_id: str
         """
         self._default_pool_id = default_pool_id
 
@@ -345,7 +378,7 @@ class CreateListenerReq:
         监听器使用的服务器证书ID。当protocol参数为TERMINATED_HTTPS时，为必选字段
 
         :param default_tls_container_ref: The default_tls_container_ref of this CreateListenerReq.
-        :type: str
+        :type default_tls_container_ref: str
         """
         self._default_tls_container_ref = default_tls_container_ref
 
@@ -367,7 +400,7 @@ class CreateListenerReq:
         监听器使用的CA证书ID。
 
         :param client_ca_tls_container_ref: The client_ca_tls_container_ref of this CreateListenerReq.
-        :type: str
+        :type client_ca_tls_container_ref: str
         """
         self._client_ca_tls_container_ref = client_ca_tls_container_ref
 
@@ -389,7 +422,7 @@ class CreateListenerReq:
         监听器使用的SNI证书（带域名的服务器证书）ID的列表。 该字段不为空列表时，SNI特性开启。该字段为空列表时，SNI特性关闭。
 
         :param sni_container_refs: The sni_container_refs of this CreateListenerReq.
-        :type: list[str]
+        :type sni_container_refs: list[str]
         """
         self._sni_container_refs = sni_container_refs
 
@@ -399,7 +432,7 @@ class CreateListenerReq:
 
 
         :return: The insert_headers of this CreateListenerReq.
-        :rtype: InsertHeader
+        :rtype: :class:`huaweicloudsdkelb.v2.InsertHeader`
         """
         return self._insert_headers
 
@@ -409,7 +442,7 @@ class CreateListenerReq:
 
 
         :param insert_headers: The insert_headers of this CreateListenerReq.
-        :type: InsertHeader
+        :type insert_headers: :class:`huaweicloudsdkelb.v2.InsertHeader`
         """
         self._insert_headers = insert_headers
 
@@ -431,7 +464,7 @@ class CreateListenerReq:
         监听器使用的安全策略，仅对TERMINATED_HTTPS协议类型的监听器有效，且默认值为tls-1-0。  取值包括：tls-1-0, tls-1-1, tls-1-2, tls-1-2-strict多种安全策略。
 
         :param tls_ciphers_policy: The tls_ciphers_policy of this CreateListenerReq.
-        :type: str
+        :type tls_ciphers_policy: str
         """
         self._tls_ciphers_policy = tls_ciphers_policy
 

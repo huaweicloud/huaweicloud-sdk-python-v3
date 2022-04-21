@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowMasterRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowMasterRequest:
     }
 
     def __init__(self, repository_uuid=None):
-        """ShowMasterRequest - a model defined in huaweicloud sdk"""
+        """ShowMasterRequest
+
+        The model defined in huaweicloud sdk
+
+        :param repository_uuid: 仓库id
+        :type repository_uuid: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowMasterRequest:
         仓库id
 
         :param repository_uuid: The repository_uuid of this ShowMasterRequest.
-        :type: str
+        :type repository_uuid: str
         """
         self._repository_uuid = repository_uuid
 

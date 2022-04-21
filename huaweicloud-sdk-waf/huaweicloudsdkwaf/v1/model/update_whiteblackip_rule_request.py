@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateWhiteblackipRuleRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UpdateWhiteblackipRuleRequest:
     }
 
     def __init__(self, enterprise_project_id=None, policy_id=None, rule_id=None, body=None):
-        """UpdateWhiteblackipRuleRequest - a model defined in huaweicloud sdk"""
+        """UpdateWhiteblackipRuleRequest
+
+        The model defined in huaweicloud sdk
+
+        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        :type enterprise_project_id: str
+        :param policy_id: 防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
+        :type policy_id: str
+        :param rule_id: 黑白名单规则ID（从查询黑白名单规则列表ListWhiteblackipRule接口获取）
+        :type rule_id: str
+        :param body: Body of the UpdateWhiteblackipRuleRequest
+        :type body: :class:`huaweicloudsdkwaf.v1.UpdateWhiteBlackIpRuleRequestBody`
+        """
         
         
 
@@ -71,7 +82,7 @@ class UpdateWhiteblackipRuleRequest:
         您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this UpdateWhiteblackipRuleRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -93,7 +104,7 @@ class UpdateWhiteblackipRuleRequest:
         防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
 
         :param policy_id: The policy_id of this UpdateWhiteblackipRuleRequest.
-        :type: str
+        :type policy_id: str
         """
         self._policy_id = policy_id
 
@@ -115,7 +126,7 @@ class UpdateWhiteblackipRuleRequest:
         黑白名单规则ID（从查询黑白名单规则列表ListWhiteblackipRule接口获取）
 
         :param rule_id: The rule_id of this UpdateWhiteblackipRuleRequest.
-        :type: str
+        :type rule_id: str
         """
         self._rule_id = rule_id
 
@@ -125,7 +136,7 @@ class UpdateWhiteblackipRuleRequest:
 
 
         :return: The body of this UpdateWhiteblackipRuleRequest.
-        :rtype: UpdateWhiteBlackIpRuleRequestBody
+        :rtype: :class:`huaweicloudsdkwaf.v1.UpdateWhiteBlackIpRuleRequestBody`
         """
         return self._body
 
@@ -135,7 +146,7 @@ class UpdateWhiteblackipRuleRequest:
 
 
         :param body: The body of this UpdateWhiteblackipRuleRequest.
-        :type: UpdateWhiteBlackIpRuleRequestBody
+        :type body: :class:`huaweicloudsdkwaf.v1.UpdateWhiteBlackIpRuleRequestBody`
         """
         self._body = body
 

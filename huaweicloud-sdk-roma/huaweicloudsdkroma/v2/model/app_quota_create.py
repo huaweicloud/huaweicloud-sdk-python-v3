@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AppQuotaCreate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class AppQuotaCreate:
     }
 
     def __init__(self, name=None, call_limits=None, time_unit=None, time_interval=None, reset_time=None, remark=None):
-        """AppQuotaCreate - a model defined in huaweicloud sdk"""
+        """AppQuotaCreate
+
+        The model defined in huaweicloud sdk
+
+        :param name: 配额名称。支持汉字，英文，数字，下划线，且只能以英文和汉字开头
+        :type name: str
+        :param call_limits: 客户端配额的访问次数限制
+        :type call_limits: int
+        :param time_unit: 限定时间单位：SECOND:秒、MINUTE:分、HOURE:时、DAY:天
+        :type time_unit: str
+        :param time_interval: 流控的限定时间值
+        :type time_interval: int
+        :param reset_time: 首次配额重置时间点，不配置默认为首次调用时间计算
+        :type reset_time: str
+        :param remark: 参数说明和描述。  不支持&lt;，&gt;字符
+        :type remark: str
+        """
         
         
 
@@ -79,7 +94,7 @@ class AppQuotaCreate:
         配额名称。支持汉字，英文，数字，下划线，且只能以英文和汉字开头
 
         :param name: The name of this AppQuotaCreate.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -101,7 +116,7 @@ class AppQuotaCreate:
         客户端配额的访问次数限制
 
         :param call_limits: The call_limits of this AppQuotaCreate.
-        :type: int
+        :type call_limits: int
         """
         self._call_limits = call_limits
 
@@ -123,7 +138,7 @@ class AppQuotaCreate:
         限定时间单位：SECOND:秒、MINUTE:分、HOURE:时、DAY:天
 
         :param time_unit: The time_unit of this AppQuotaCreate.
-        :type: str
+        :type time_unit: str
         """
         self._time_unit = time_unit
 
@@ -145,7 +160,7 @@ class AppQuotaCreate:
         流控的限定时间值
 
         :param time_interval: The time_interval of this AppQuotaCreate.
-        :type: int
+        :type time_interval: int
         """
         self._time_interval = time_interval
 
@@ -167,7 +182,7 @@ class AppQuotaCreate:
         首次配额重置时间点，不配置默认为首次调用时间计算
 
         :param reset_time: The reset_time of this AppQuotaCreate.
-        :type: str
+        :type reset_time: str
         """
         self._reset_time = reset_time
 
@@ -189,7 +204,7 @@ class AppQuotaCreate:
         参数说明和描述。  不支持<，>字符
 
         :param remark: The remark of this AppQuotaCreate.
-        :type: str
+        :type remark: str
         """
         self._remark = remark
 

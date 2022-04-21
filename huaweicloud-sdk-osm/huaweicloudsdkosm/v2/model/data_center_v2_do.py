@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DataCenterV2Do:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class DataCenterV2Do:
     }
 
     def __init__(self, type=None, region_id=None, region_name=None, is_sensitive=None):
-        """DataCenterV2Do - a model defined in huaweicloud sdk"""
+        """DataCenterV2Do
+
+        The model defined in huaweicloud sdk
+
+        :param type: 区域类型0大陆 1国际
+        :type type: int
+        :param region_id: 区域id
+        :type region_id: str
+        :param region_name: 区域名称
+        :type region_name: str
+        :param is_sensitive: 是否敏感
+        :type is_sensitive: int
+        """
         
         
 
@@ -73,7 +84,7 @@ class DataCenterV2Do:
         区域类型0大陆 1国际
 
         :param type: The type of this DataCenterV2Do.
-        :type: int
+        :type type: int
         """
         self._type = type
 
@@ -95,7 +106,7 @@ class DataCenterV2Do:
         区域id
 
         :param region_id: The region_id of this DataCenterV2Do.
-        :type: str
+        :type region_id: str
         """
         self._region_id = region_id
 
@@ -117,7 +128,7 @@ class DataCenterV2Do:
         区域名称
 
         :param region_name: The region_name of this DataCenterV2Do.
-        :type: str
+        :type region_name: str
         """
         self._region_name = region_name
 
@@ -139,7 +150,7 @@ class DataCenterV2Do:
         是否敏感
 
         :param is_sensitive: The is_sensitive of this DataCenterV2Do.
-        :type: int
+        :type is_sensitive: int
         """
         self._is_sensitive = is_sensitive
 

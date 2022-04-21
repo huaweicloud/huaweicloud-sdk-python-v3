@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunKeywordExtractRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RunKeywordExtractRequest:
     }
 
     def __init__(self, body=None):
-        """RunKeywordExtractRequest - a model defined in huaweicloud sdk"""
+        """RunKeywordExtractRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the RunKeywordExtractRequest
+        :type body: :class:`huaweicloudsdknlp.v2.KeywordExtractReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class RunKeywordExtractRequest:
 
 
         :return: The body of this RunKeywordExtractRequest.
-        :rtype: KeywordExtractReq
+        :rtype: :class:`huaweicloudsdknlp.v2.KeywordExtractReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class RunKeywordExtractRequest:
 
 
         :param body: The body of this RunKeywordExtractRequest.
-        :type: KeywordExtractReq
+        :type body: :class:`huaweicloudsdknlp.v2.KeywordExtractReq`
         """
         self._body = body
 

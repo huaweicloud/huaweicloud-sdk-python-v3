@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListBareMetalServersResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListBareMetalServersResponse(SdkResponse):
     }
 
     def __init__(self, servers=None, count=None):
-        """ListBareMetalServersResponse - a model defined in huaweicloud sdk"""
+        """ListBareMetalServersResponse
+
+        The model defined in huaweicloud sdk
+
+        :param servers: 裸金属服务器详情列表
+        :type servers: list[:class:`huaweicloudsdkbms.v1.ServerDetails`]
+        :param count: 裸金属服务器的列表总数
+        :type count: int
+        """
         
         super(ListBareMetalServersResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListBareMetalServersResponse(SdkResponse):
         裸金属服务器详情列表
 
         :return: The servers of this ListBareMetalServersResponse.
-        :rtype: list[ServerDetails]
+        :rtype: list[:class:`huaweicloudsdkbms.v1.ServerDetails`]
         """
         return self._servers
 
@@ -63,7 +70,7 @@ class ListBareMetalServersResponse(SdkResponse):
         裸金属服务器详情列表
 
         :param servers: The servers of this ListBareMetalServersResponse.
-        :type: list[ServerDetails]
+        :type servers: list[:class:`huaweicloudsdkbms.v1.ServerDetails`]
         """
         self._servers = servers
 
@@ -85,7 +92,7 @@ class ListBareMetalServersResponse(SdkResponse):
         裸金属服务器的列表总数
 
         :param count: The count of this ListBareMetalServersResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

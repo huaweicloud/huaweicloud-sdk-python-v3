@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CustomerUpgradeDatabaseVersionReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CustomerUpgradeDatabaseVersionReq:
     }
 
     def __init__(self, delay=None):
-        """CustomerUpgradeDatabaseVersionReq - a model defined in huaweicloud sdk"""
+        """CustomerUpgradeDatabaseVersionReq
+
+        The model defined in huaweicloud sdk
+
+        :param delay: 是否延迟至可维护时间段内升级。 取值范围： - true：延迟升级。表示实例将在设置的可维护时间段内升级。 - false：立即升级，默认该方式。
+        :type delay: bool
+        """
         
         
 
@@ -58,7 +63,7 @@ class CustomerUpgradeDatabaseVersionReq:
         是否延迟至可维护时间段内升级。 取值范围： - true：延迟升级。表示实例将在设置的可维护时间段内升级。 - false：立即升级，默认该方式。
 
         :param delay: The delay of this CustomerUpgradeDatabaseVersionReq.
-        :type: bool
+        :type delay: bool
         """
         self._delay = delay
 

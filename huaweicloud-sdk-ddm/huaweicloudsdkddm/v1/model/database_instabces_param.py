@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DatabaseInstabcesParam:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class DatabaseInstabcesParam:
     }
 
     def __init__(self, id=None, admin_user=None, admin_password=None):
-        """DatabaseInstabcesParam - a model defined in huaweicloud sdk"""
+        """DatabaseInstabcesParam
+
+        The model defined in huaweicloud sdk
+
+        :param id: 逻辑库关联的RDS的id
+        :type id: str
+        :param admin_user: 关联RDS实例的用户。
+        :type admin_user: str
+        :param admin_password: 关联RDS实例的密码。
+        :type admin_password: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class DatabaseInstabcesParam:
         逻辑库关联的RDS的id
 
         :param id: The id of this DatabaseInstabcesParam.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -87,7 +96,7 @@ class DatabaseInstabcesParam:
         关联RDS实例的用户。
 
         :param admin_user: The admin_user of this DatabaseInstabcesParam.
-        :type: str
+        :type admin_user: str
         """
         self._admin_user = admin_user
 
@@ -109,7 +118,7 @@ class DatabaseInstabcesParam:
         关联RDS实例的密码。
 
         :param admin_password: The admin_password of this DatabaseInstabcesParam.
-        :type: str
+        :type admin_password: str
         """
         self._admin_password = admin_password
 

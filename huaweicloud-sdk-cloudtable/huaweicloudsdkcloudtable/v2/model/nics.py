@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Nics:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Nics:
     }
 
     def __init__(self, net_id=None, security_group_id=None):
-        """Nics - a model defined in huaweicloud sdk"""
+        """Nics
+
+        The model defined in huaweicloud sdk
+
+        :param net_id: CloudTable集群所在网络ID。
+        :type net_id: str
+        :param security_group_id: CloudTable所在安全组对应的ID。
+        :type security_group_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class Nics:
         CloudTable集群所在网络ID。
 
         :param net_id: The net_id of this Nics.
-        :type: str
+        :type net_id: str
         """
         self._net_id = net_id
 
@@ -83,7 +90,7 @@ class Nics:
         CloudTable所在安全组对应的ID。
 
         :param security_group_id: The security_group_id of this Nics.
-        :type: str
+        :type security_group_id: str
         """
         self._security_group_id = security_group_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListThumbnailsTaskResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListThumbnailsTaskResponse(SdkResponse):
     }
 
     def __init__(self, task_array=None, is_truncated=None, total=None):
-        """ListThumbnailsTaskResponse - a model defined in huaweicloud sdk"""
+        """ListThumbnailsTaskResponse
+
+        The model defined in huaweicloud sdk
+
+        :param task_array: 截图任务组
+        :type task_array: list[:class:`huaweicloudsdkmpc.v1.ThumbTask`]
+        :param is_truncated: 查询结果是否被截取。 - 1代表被截取，即还有结果未被返回，可以通过设置page和size参数继续查询。 - 0代表未被截取，即所有结果已被返回。 
+        :type is_truncated: int
+        :param total: 查询结果的数量。 
+        :type total: int
+        """
         
         super(ListThumbnailsTaskResponse, self).__init__()
 
@@ -57,7 +66,7 @@ class ListThumbnailsTaskResponse(SdkResponse):
         截图任务组
 
         :return: The task_array of this ListThumbnailsTaskResponse.
-        :rtype: list[ThumbTask]
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.ThumbTask`]
         """
         return self._task_array
 
@@ -68,7 +77,7 @@ class ListThumbnailsTaskResponse(SdkResponse):
         截图任务组
 
         :param task_array: The task_array of this ListThumbnailsTaskResponse.
-        :type: list[ThumbTask]
+        :type task_array: list[:class:`huaweicloudsdkmpc.v1.ThumbTask`]
         """
         self._task_array = task_array
 
@@ -90,7 +99,7 @@ class ListThumbnailsTaskResponse(SdkResponse):
         查询结果是否被截取。 - 1代表被截取，即还有结果未被返回，可以通过设置page和size参数继续查询。 - 0代表未被截取，即所有结果已被返回。 
 
         :param is_truncated: The is_truncated of this ListThumbnailsTaskResponse.
-        :type: int
+        :type is_truncated: int
         """
         self._is_truncated = is_truncated
 
@@ -112,7 +121,7 @@ class ListThumbnailsTaskResponse(SdkResponse):
         查询结果的数量。 
 
         :param total: The total of this ListThumbnailsTaskResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 

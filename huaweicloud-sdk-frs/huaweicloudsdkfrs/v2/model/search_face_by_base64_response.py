@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SearchFaceByBase64Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class SearchFaceByBase64Response(SdkResponse):
     }
 
     def __init__(self, faces=None):
-        """SearchFaceByBase64Response - a model defined in huaweicloud sdk"""
+        """SearchFaceByBase64Response
+
+        The model defined in huaweicloud sdk
+
+        :param faces: 查找的人脸集合，详见[SearchFace](https://support.huaweicloud.com/api-face/face_02_0019.html)。 调用失败时无此字段。
+        :type faces: list[:class:`huaweicloudsdkfrs.v2.SearchFace`]
+        """
         
         super(SearchFaceByBase64Response, self).__init__()
 
@@ -47,7 +52,7 @@ class SearchFaceByBase64Response(SdkResponse):
         查找的人脸集合，详见[SearchFace](https://support.huaweicloud.com/api-face/face_02_0019.html)。 调用失败时无此字段。
 
         :return: The faces of this SearchFaceByBase64Response.
-        :rtype: list[SearchFace]
+        :rtype: list[:class:`huaweicloudsdkfrs.v2.SearchFace`]
         """
         return self._faces
 
@@ -58,7 +63,7 @@ class SearchFaceByBase64Response(SdkResponse):
         查找的人脸集合，详见[SearchFace](https://support.huaweicloud.com/api-face/face_02_0019.html)。 调用失败时无此字段。
 
         :param faces: The faces of this SearchFaceByBase64Response.
-        :type: list[SearchFace]
+        :type faces: list[:class:`huaweicloudsdkfrs.v2.SearchFace`]
         """
         self._faces = faces
 

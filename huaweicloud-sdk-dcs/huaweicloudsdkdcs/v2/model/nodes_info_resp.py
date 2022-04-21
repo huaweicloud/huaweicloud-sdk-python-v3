@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NodesInfoResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -60,7 +59,43 @@ class NodesInfoResp:
     }
 
     def __init__(self, logical_node_id=None, name=None, status=None, az_code=None, node_role=None, node_type=None, node_ip=None, node_port=None, node_id=None, priority_weight=None, is_access=None, group_id=None, group_name=None, is_remove_ip=None, replication_id=None, dimensions=None):
-        """NodesInfoResp - a model defined in huaweicloud sdk"""
+        """NodesInfoResp
+
+        The model defined in huaweicloud sdk
+
+        :param logical_node_id: 逻辑节点ID
+        :type logical_node_id: str
+        :param name: 节点名称
+        :type name: str
+        :param status: 节点状态，所有值如下: - Creating：创建中。 - Active：运行中。 - Inactive：故障。 - Deleting：删除中。 - AddSharding：添加分片中。 
+        :type status: str
+        :param az_code: 可用区code
+        :type az_code: str
+        :param node_role: 节点角色，所有值如下: - redis-server：Redis server节点。 - redis-proxy：proxy节点。 
+        :type node_role: str
+        :param node_type: 节点主从角色: - master：主 - slave：从 - proxy: proxy实例节点角色为\&quot;proxy\&quot; 
+        :type node_type: str
+        :param node_ip: 节点的IP
+        :type node_ip: str
+        :param node_port: 节点的port
+        :type node_port: str
+        :param node_id: 节点ID
+        :type node_id: str
+        :param priority_weight: 节点权重
+        :type priority_weight: int
+        :param is_access: 节点的IP是否可直接访问
+        :type is_access: bool
+        :param group_id: 分片ID
+        :type group_id: str
+        :param group_name: 分片名称
+        :type group_name: str
+        :param is_remove_ip: 是否从只读域名中摘除IP
+        :type is_remove_ip: bool
+        :param replication_id: 副本id
+        :type replication_id: str
+        :param dimensions: 副本对应的监控指标维度信息。可用于调用云监控服务的查询监控数据指标相关接口 - 副本的监控维度为多维度，返回数组中包含两个维度信息。从云监控查询监控数据时，要按多维度传递指标维度参数，才能查询到监控指标值 - 第一个维度为副本父维度信息 维度名称为dcs_instance_id，维度值对应副本所在的实例ID - 第二个维度，维度名称为dcs_cluster_redis_node,维度值为副本的监控对象ID，与副本ID和节点ID不同。 
+        :type dimensions: list[:class:`huaweicloudsdkdcs.v2.InstanceReplicationDimensionsInfo`]
+        """
         
         
 
@@ -133,7 +168,7 @@ class NodesInfoResp:
         逻辑节点ID
 
         :param logical_node_id: The logical_node_id of this NodesInfoResp.
-        :type: str
+        :type logical_node_id: str
         """
         self._logical_node_id = logical_node_id
 
@@ -155,7 +190,7 @@ class NodesInfoResp:
         节点名称
 
         :param name: The name of this NodesInfoResp.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -177,7 +212,7 @@ class NodesInfoResp:
         节点状态，所有值如下: - Creating：创建中。 - Active：运行中。 - Inactive：故障。 - Deleting：删除中。 - AddSharding：添加分片中。 
 
         :param status: The status of this NodesInfoResp.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -199,7 +234,7 @@ class NodesInfoResp:
         可用区code
 
         :param az_code: The az_code of this NodesInfoResp.
-        :type: str
+        :type az_code: str
         """
         self._az_code = az_code
 
@@ -221,7 +256,7 @@ class NodesInfoResp:
         节点角色，所有值如下: - redis-server：Redis server节点。 - redis-proxy：proxy节点。 
 
         :param node_role: The node_role of this NodesInfoResp.
-        :type: str
+        :type node_role: str
         """
         self._node_role = node_role
 
@@ -243,7 +278,7 @@ class NodesInfoResp:
         节点主从角色: - master：主 - slave：从 - proxy: proxy实例节点角色为\"proxy\" 
 
         :param node_type: The node_type of this NodesInfoResp.
-        :type: str
+        :type node_type: str
         """
         self._node_type = node_type
 
@@ -265,7 +300,7 @@ class NodesInfoResp:
         节点的IP
 
         :param node_ip: The node_ip of this NodesInfoResp.
-        :type: str
+        :type node_ip: str
         """
         self._node_ip = node_ip
 
@@ -287,7 +322,7 @@ class NodesInfoResp:
         节点的port
 
         :param node_port: The node_port of this NodesInfoResp.
-        :type: str
+        :type node_port: str
         """
         self._node_port = node_port
 
@@ -309,7 +344,7 @@ class NodesInfoResp:
         节点ID
 
         :param node_id: The node_id of this NodesInfoResp.
-        :type: str
+        :type node_id: str
         """
         self._node_id = node_id
 
@@ -331,7 +366,7 @@ class NodesInfoResp:
         节点权重
 
         :param priority_weight: The priority_weight of this NodesInfoResp.
-        :type: int
+        :type priority_weight: int
         """
         self._priority_weight = priority_weight
 
@@ -353,7 +388,7 @@ class NodesInfoResp:
         节点的IP是否可直接访问
 
         :param is_access: The is_access of this NodesInfoResp.
-        :type: bool
+        :type is_access: bool
         """
         self._is_access = is_access
 
@@ -375,7 +410,7 @@ class NodesInfoResp:
         分片ID
 
         :param group_id: The group_id of this NodesInfoResp.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -397,7 +432,7 @@ class NodesInfoResp:
         分片名称
 
         :param group_name: The group_name of this NodesInfoResp.
-        :type: str
+        :type group_name: str
         """
         self._group_name = group_name
 
@@ -419,7 +454,7 @@ class NodesInfoResp:
         是否从只读域名中摘除IP
 
         :param is_remove_ip: The is_remove_ip of this NodesInfoResp.
-        :type: bool
+        :type is_remove_ip: bool
         """
         self._is_remove_ip = is_remove_ip
 
@@ -441,7 +476,7 @@ class NodesInfoResp:
         副本id
 
         :param replication_id: The replication_id of this NodesInfoResp.
-        :type: str
+        :type replication_id: str
         """
         self._replication_id = replication_id
 
@@ -452,7 +487,7 @@ class NodesInfoResp:
         副本对应的监控指标维度信息。可用于调用云监控服务的查询监控数据指标相关接口 - 副本的监控维度为多维度，返回数组中包含两个维度信息。从云监控查询监控数据时，要按多维度传递指标维度参数，才能查询到监控指标值 - 第一个维度为副本父维度信息 维度名称为dcs_instance_id，维度值对应副本所在的实例ID - 第二个维度，维度名称为dcs_cluster_redis_node,维度值为副本的监控对象ID，与副本ID和节点ID不同。 
 
         :return: The dimensions of this NodesInfoResp.
-        :rtype: list[InstanceReplicationDimensionsInfo]
+        :rtype: list[:class:`huaweicloudsdkdcs.v2.InstanceReplicationDimensionsInfo`]
         """
         return self._dimensions
 
@@ -463,7 +498,7 @@ class NodesInfoResp:
         副本对应的监控指标维度信息。可用于调用云监控服务的查询监控数据指标相关接口 - 副本的监控维度为多维度，返回数组中包含两个维度信息。从云监控查询监控数据时，要按多维度传递指标维度参数，才能查询到监控指标值 - 第一个维度为副本父维度信息 维度名称为dcs_instance_id，维度值对应副本所在的实例ID - 第二个维度，维度名称为dcs_cluster_redis_node,维度值为副本的监控对象ID，与副本ID和节点ID不同。 
 
         :param dimensions: The dimensions of this NodesInfoResp.
-        :type: list[InstanceReplicationDimensionsInfo]
+        :type dimensions: list[:class:`huaweicloudsdkdcs.v2.InstanceReplicationDimensionsInfo`]
         """
         self._dimensions = dimensions
 

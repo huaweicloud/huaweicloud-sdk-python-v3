@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteResOnlineInstanceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class DeleteResOnlineInstanceResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, error_code=None):
-        """DeleteResOnlineInstanceResponse - a model defined in huaweicloud sdk"""
+        """DeleteResOnlineInstanceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param is_success: 是否成功。
+        :type is_success: bool
+        :param message: 返回消息。
+        :type message: str
+        :param error_code: 错误码（请求成功时，不返回此字段）。
+        :type error_code: str
+        """
         
         super(DeleteResOnlineInstanceResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class DeleteResOnlineInstanceResponse(SdkResponse):
         是否成功。
 
         :param is_success: The is_success of this DeleteResOnlineInstanceResponse.
-        :type: bool
+        :type is_success: bool
         """
         self._is_success = is_success
 
@@ -90,7 +99,7 @@ class DeleteResOnlineInstanceResponse(SdkResponse):
         返回消息。
 
         :param message: The message of this DeleteResOnlineInstanceResponse.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -112,7 +121,7 @@ class DeleteResOnlineInstanceResponse(SdkResponse):
         错误码（请求成功时，不返回此字段）。
 
         :param error_code: The error_code of this DeleteResOnlineInstanceResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 

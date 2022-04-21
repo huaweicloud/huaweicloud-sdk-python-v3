@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDependencyRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateDependencyRequest:
     }
 
     def __init__(self, depend_id=None, body=None):
-        """UpdateDependencyRequest - a model defined in huaweicloud sdk"""
+        """UpdateDependencyRequest
+
+        The model defined in huaweicloud sdk
+
+        :param depend_id: 依赖包的ID。
+        :type depend_id: str
+        :param body: Body of the UpdateDependencyRequest
+        :type body: :class:`huaweicloudsdkfunctiongraph.v2.UpdateDependencyRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateDependencyRequest:
         依赖包的ID。
 
         :param depend_id: The depend_id of this UpdateDependencyRequest.
-        :type: str
+        :type depend_id: str
         """
         self._depend_id = depend_id
 
@@ -72,7 +79,7 @@ class UpdateDependencyRequest:
 
 
         :return: The body of this UpdateDependencyRequest.
-        :rtype: UpdateDependencyRequestBody
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.UpdateDependencyRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateDependencyRequest:
 
 
         :param body: The body of this UpdateDependencyRequest.
-        :type: UpdateDependencyRequestBody
+        :type body: :class:`huaweicloudsdkfunctiongraph.v2.UpdateDependencyRequestBody`
         """
         self._body = body
 

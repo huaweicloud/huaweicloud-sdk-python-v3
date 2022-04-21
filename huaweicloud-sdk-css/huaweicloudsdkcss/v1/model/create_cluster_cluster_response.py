@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateClusterClusterResponse:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateClusterClusterResponse:
     }
 
     def __init__(self, id=None, name=None):
-        """CreateClusterClusterResponse - a model defined in huaweicloud sdk"""
+        """CreateClusterClusterResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 集群ID。
+        :type id: str
+        :param name: 集群名称。
+        :type name: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class CreateClusterClusterResponse:
         集群ID。
 
         :param id: The id of this CreateClusterClusterResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -85,7 +92,7 @@ class CreateClusterClusterResponse:
         集群名称。
 
         :param name: The name of this CreateClusterClusterResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 

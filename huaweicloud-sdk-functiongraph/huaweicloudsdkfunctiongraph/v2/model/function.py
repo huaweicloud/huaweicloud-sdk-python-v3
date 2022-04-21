@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Function:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class Function:
     }
 
     def __init__(self, name=None, operation=None, metadata=None):
-        """Function - a model defined in huaweicloud sdk"""
+        """Function
+
+        The model defined in huaweicloud sdk
+
+        :param name: 函数名称，在单个流程中，名称需要唯一
+        :type name: str
+        :param operation: 函数调用URN
+        :type operation: str
+        :param metadata: 函数扩展属性，由用户自己定制
+        :type metadata: object
+        """
         
         
 
@@ -68,7 +77,7 @@ class Function:
         函数名称，在单个流程中，名称需要唯一
 
         :param name: The name of this Function.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -90,7 +99,7 @@ class Function:
         函数调用URN
 
         :param operation: The operation of this Function.
-        :type: str
+        :type operation: str
         """
         self._operation = operation
 
@@ -112,7 +121,7 @@ class Function:
         函数扩展属性，由用户自己定制
 
         :param metadata: The metadata of this Function.
-        :type: object
+        :type metadata: object
         """
         self._metadata = metadata
 

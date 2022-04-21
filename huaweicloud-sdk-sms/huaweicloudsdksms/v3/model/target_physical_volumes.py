@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TargetPhysicalVolumes:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class TargetPhysicalVolumes:
     }
 
     def __init__(self, device_use=None, file_system=None, index=None, mount_point=None, name=None, size=None, used_size=None, uuid=None):
-        """TargetPhysicalVolumes - a model defined in huaweicloud sdk"""
+        """TargetPhysicalVolumes
+
+        The model defined in huaweicloud sdk
+
+        :param device_use: 分区类型
+        :type device_use: str
+        :param file_system: 文件系统
+        :type file_system: str
+        :param index: 编号
+        :type index: int
+        :param mount_point: 挂载点
+        :type mount_point: str
+        :param name: 名称
+        :type name: str
+        :param size: 大小
+        :type size: int
+        :param used_size: 使用大小
+        :type used_size: int
+        :param uuid: uuid
+        :type uuid: str
+        """
         
         
 
@@ -93,7 +112,7 @@ class TargetPhysicalVolumes:
         分区类型
 
         :param device_use: The device_use of this TargetPhysicalVolumes.
-        :type: str
+        :type device_use: str
         """
         self._device_use = device_use
 
@@ -115,7 +134,7 @@ class TargetPhysicalVolumes:
         文件系统
 
         :param file_system: The file_system of this TargetPhysicalVolumes.
-        :type: str
+        :type file_system: str
         """
         self._file_system = file_system
 
@@ -137,7 +156,7 @@ class TargetPhysicalVolumes:
         编号
 
         :param index: The index of this TargetPhysicalVolumes.
-        :type: int
+        :type index: int
         """
         self._index = index
 
@@ -159,7 +178,7 @@ class TargetPhysicalVolumes:
         挂载点
 
         :param mount_point: The mount_point of this TargetPhysicalVolumes.
-        :type: str
+        :type mount_point: str
         """
         self._mount_point = mount_point
 
@@ -181,7 +200,7 @@ class TargetPhysicalVolumes:
         名称
 
         :param name: The name of this TargetPhysicalVolumes.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -203,7 +222,7 @@ class TargetPhysicalVolumes:
         大小
 
         :param size: The size of this TargetPhysicalVolumes.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -225,7 +244,7 @@ class TargetPhysicalVolumes:
         使用大小
 
         :param used_size: The used_size of this TargetPhysicalVolumes.
-        :type: int
+        :type used_size: int
         """
         self._used_size = used_size
 
@@ -247,7 +266,7 @@ class TargetPhysicalVolumes:
         uuid
 
         :param uuid: The uuid of this TargetPhysicalVolumes.
-        :type: str
+        :type uuid: str
         """
         self._uuid = uuid
 

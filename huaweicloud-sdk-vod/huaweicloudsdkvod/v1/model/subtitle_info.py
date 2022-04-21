@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SubtitleInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class SubtitleInfo:
     }
 
     def __init__(self, url=None, id=None, type=None, language=None):
-        """SubtitleInfo - a model defined in huaweicloud sdk"""
+        """SubtitleInfo
+
+        The model defined in huaweicloud sdk
+
+        :param url: 字幕文件的下载地址 
+        :type url: str
+        :param id: 字幕文件id 
+        :type id: int
+        :param type: 字幕文件类型 
+        :type type: str
+        :param language: 字幕文件语言种类 
+        :type language: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class SubtitleInfo:
         字幕文件的下载地址 
 
         :param url: The url of this SubtitleInfo.
-        :type: str
+        :type url: str
         """
         self._url = url
 
@@ -95,7 +106,7 @@ class SubtitleInfo:
         字幕文件id 
 
         :param id: The id of this SubtitleInfo.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -117,7 +128,7 @@ class SubtitleInfo:
         字幕文件类型 
 
         :param type: The type of this SubtitleInfo.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -139,7 +150,7 @@ class SubtitleInfo:
         字幕文件语言种类 
 
         :param language: The language of this SubtitleInfo.
-        :type: str
+        :type language: str
         """
         self._language = language
 

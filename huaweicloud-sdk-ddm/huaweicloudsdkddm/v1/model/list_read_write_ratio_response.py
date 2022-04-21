@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListReadWriteRatioResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListReadWriteRatioResponse(SdkResponse):
     }
 
     def __init__(self, total_record=None, read_write_ratio_list=None):
-        """ListReadWriteRatioResponse - a model defined in huaweicloud sdk"""
+        """ListReadWriteRatioResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total_record: DDM读写比例监控信息条数。
+        :type total_record: int
+        :param read_write_ratio_list: DDM实例读写次数信息列表的集合。
+        :type read_write_ratio_list: list[:class:`huaweicloudsdkddm.v1.ReadWriteRatioList`]
+        """
         
         super(ListReadWriteRatioResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListReadWriteRatioResponse(SdkResponse):
         DDM读写比例监控信息条数。
 
         :param total_record: The total_record of this ListReadWriteRatioResponse.
-        :type: int
+        :type total_record: int
         """
         self._total_record = total_record
 
@@ -74,7 +81,7 @@ class ListReadWriteRatioResponse(SdkResponse):
         DDM实例读写次数信息列表的集合。
 
         :return: The read_write_ratio_list of this ListReadWriteRatioResponse.
-        :rtype: list[ReadWriteRatioList]
+        :rtype: list[:class:`huaweicloudsdkddm.v1.ReadWriteRatioList`]
         """
         return self._read_write_ratio_list
 
@@ -85,7 +92,7 @@ class ListReadWriteRatioResponse(SdkResponse):
         DDM实例读写次数信息列表的集合。
 
         :param read_write_ratio_list: The read_write_ratio_list of this ListReadWriteRatioResponse.
-        :type: list[ReadWriteRatioList]
+        :type read_write_ratio_list: list[:class:`huaweicloudsdkddm.v1.ReadWriteRatioList`]
         """
         self._read_write_ratio_list = read_write_ratio_list
 

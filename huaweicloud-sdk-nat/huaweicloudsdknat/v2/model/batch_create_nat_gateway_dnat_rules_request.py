@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchCreateNatGatewayDnatRulesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchCreateNatGatewayDnatRulesRequest:
     }
 
     def __init__(self, body=None):
-        """BatchCreateNatGatewayDnatRulesRequest - a model defined in huaweicloud sdk"""
+        """BatchCreateNatGatewayDnatRulesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the BatchCreateNatGatewayDnatRulesRequest
+        :type body: :class:`huaweicloudsdknat.v2.BatchCreateNatGatewayDnatRulesRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class BatchCreateNatGatewayDnatRulesRequest:
 
 
         :return: The body of this BatchCreateNatGatewayDnatRulesRequest.
-        :rtype: BatchCreateNatGatewayDnatRulesRequestBody
+        :rtype: :class:`huaweicloudsdknat.v2.BatchCreateNatGatewayDnatRulesRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class BatchCreateNatGatewayDnatRulesRequest:
 
 
         :param body: The body of this BatchCreateNatGatewayDnatRulesRequest.
-        :type: BatchCreateNatGatewayDnatRulesRequestBody
+        :type body: :class:`huaweicloudsdknat.v2.BatchCreateNatGatewayDnatRulesRequestBody`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NovaSecurityGroupCommonIpRange:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class NovaSecurityGroupCommonIpRange:
     }
 
     def __init__(self, cidr=None):
-        """NovaSecurityGroupCommonIpRange - a model defined in huaweicloud sdk"""
+        """NovaSecurityGroupCommonIpRange
+
+        The model defined in huaweicloud sdk
+
+        :param cidr: 对端IP网段，cidr格式。
+        :type cidr: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class NovaSecurityGroupCommonIpRange:
         对端IP网段，cidr格式。
 
         :param cidr: The cidr of this NovaSecurityGroupCommonIpRange.
-        :type: str
+        :type cidr: str
         """
         self._cidr = cidr
 

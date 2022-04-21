@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ModVmrDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ModVmrDTO:
     }
 
     def __init__(self, vmr_name=None, gust_pwd=None, chair_pwd=None, allow_gust_first=None, gust_first_notice=None):
-        """ModVmrDTO - a model defined in huaweicloud sdk"""
+        """ModVmrDTO
+
+        The model defined in huaweicloud sdk
+
+        :param vmr_name: 云会议室名称 maxLength：128 minLength：1 
+        :type vmr_name: str
+        :param gust_pwd: 来宾密码，“”代表不设置来宾密码 4~16位的数字 
+        :type gust_pwd: str
+        :param chair_pwd: 主席密码 4~16位的数字 
+        :type chair_pwd: str
+        :param allow_gust_first: 是否允许来宾先入会。
+        :type allow_gust_first: bool
+        :param gust_first_notice: 云会议室被使用后是否通知会议室所有者。
+        :type gust_first_notice: bool
+        """
         
         
 
@@ -78,7 +91,7 @@ class ModVmrDTO:
         云会议室名称 maxLength：128 minLength：1 
 
         :param vmr_name: The vmr_name of this ModVmrDTO.
-        :type: str
+        :type vmr_name: str
         """
         self._vmr_name = vmr_name
 
@@ -100,7 +113,7 @@ class ModVmrDTO:
         来宾密码，“”代表不设置来宾密码 4~16位的数字 
 
         :param gust_pwd: The gust_pwd of this ModVmrDTO.
-        :type: str
+        :type gust_pwd: str
         """
         self._gust_pwd = gust_pwd
 
@@ -122,7 +135,7 @@ class ModVmrDTO:
         主席密码 4~16位的数字 
 
         :param chair_pwd: The chair_pwd of this ModVmrDTO.
-        :type: str
+        :type chair_pwd: str
         """
         self._chair_pwd = chair_pwd
 
@@ -144,7 +157,7 @@ class ModVmrDTO:
         是否允许来宾先入会。
 
         :param allow_gust_first: The allow_gust_first of this ModVmrDTO.
-        :type: bool
+        :type allow_gust_first: bool
         """
         self._allow_gust_first = allow_gust_first
 
@@ -166,7 +179,7 @@ class ModVmrDTO:
         云会议室被使用后是否通知会议室所有者。
 
         :param gust_first_notice: The gust_first_notice of this ModVmrDTO.
-        :type: bool
+        :type gust_first_notice: bool
         """
         self._gust_first_notice = gust_first_notice
 

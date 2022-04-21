@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListResourceInstancesRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListResourceInstancesRequestBody:
     }
 
     def __init__(self, limit=None, offset=None, action=None, tags=None, matches=None, sequence=None):
-        """ListResourceInstancesRequestBody - a model defined in huaweicloud sdk"""
+        """ListResourceInstancesRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 查询记录数（“action”为“count”时，无需设置此参数），如果“action”为“filter”，默认为“10”。 limit的取值范围为“1-1000”。
+        :type limit: str
+        :param offset: 索引位置。从offset指定的下一条数据开始查询。查询第一页数据时，将查询前一页数据时响应体中的值带入此参数（“action”为“count”时，无需设置此参数）。如果“action”为“filter”，offset默认为“0”。 offset必须为数字，不能为负数。
+        :type offset: str
+        :param action: 操作标识（可设置为“filter”或者“count”）。  - filter：表示过滤。  - count：表示查询总条数。
+        :type action: str
+        :param tags: 标签列表，key和value键值对的集合。  - key：表示标签键，一个凭据下最多包含20个key，key不能为空，不能重复，同一个key中value不能重复。key最大长度为36个字符。key之间是“与”的关系  - value：表示标签值。每个值最大长度43个字符，value之间为“或”的关系。
+        :type tags: list[:class:`huaweicloudsdkcsms.v1.Tag`]
+        :param matches: 搜索字段。  - key为搜索的字段，目前仅支持搜索凭据名称，值为“resource_name”。  - value为模糊匹配的值，最大长度为255个字符。为空返回空值。
+        :type matches: list[:class:`huaweicloudsdkcsms.v1.TagItem`]
+        :param sequence: 请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
+        :type sequence: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class ListResourceInstancesRequestBody:
         查询记录数（“action”为“count”时，无需设置此参数），如果“action”为“filter”，默认为“10”。 limit的取值范围为“1-1000”。
 
         :param limit: The limit of this ListResourceInstancesRequestBody.
-        :type: str
+        :type limit: str
         """
         self._limit = limit
 
@@ -105,7 +120,7 @@ class ListResourceInstancesRequestBody:
         索引位置。从offset指定的下一条数据开始查询。查询第一页数据时，将查询前一页数据时响应体中的值带入此参数（“action”为“count”时，无需设置此参数）。如果“action”为“filter”，offset默认为“0”。 offset必须为数字，不能为负数。
 
         :param offset: The offset of this ListResourceInstancesRequestBody.
-        :type: str
+        :type offset: str
         """
         self._offset = offset
 
@@ -127,7 +142,7 @@ class ListResourceInstancesRequestBody:
         操作标识（可设置为“filter”或者“count”）。  - filter：表示过滤。  - count：表示查询总条数。
 
         :param action: The action of this ListResourceInstancesRequestBody.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -138,7 +153,7 @@ class ListResourceInstancesRequestBody:
         标签列表，key和value键值对的集合。  - key：表示标签键，一个凭据下最多包含20个key，key不能为空，不能重复，同一个key中value不能重复。key最大长度为36个字符。key之间是“与”的关系  - value：表示标签值。每个值最大长度43个字符，value之间为“或”的关系。
 
         :return: The tags of this ListResourceInstancesRequestBody.
-        :rtype: list[Tag]
+        :rtype: list[:class:`huaweicloudsdkcsms.v1.Tag`]
         """
         return self._tags
 
@@ -149,7 +164,7 @@ class ListResourceInstancesRequestBody:
         标签列表，key和value键值对的集合。  - key：表示标签键，一个凭据下最多包含20个key，key不能为空，不能重复，同一个key中value不能重复。key最大长度为36个字符。key之间是“与”的关系  - value：表示标签值。每个值最大长度43个字符，value之间为“或”的关系。
 
         :param tags: The tags of this ListResourceInstancesRequestBody.
-        :type: list[Tag]
+        :type tags: list[:class:`huaweicloudsdkcsms.v1.Tag`]
         """
         self._tags = tags
 
@@ -160,7 +175,7 @@ class ListResourceInstancesRequestBody:
         搜索字段。  - key为搜索的字段，目前仅支持搜索凭据名称，值为“resource_name”。  - value为模糊匹配的值，最大长度为255个字符。为空返回空值。
 
         :return: The matches of this ListResourceInstancesRequestBody.
-        :rtype: list[TagItem]
+        :rtype: list[:class:`huaweicloudsdkcsms.v1.TagItem`]
         """
         return self._matches
 
@@ -171,7 +186,7 @@ class ListResourceInstancesRequestBody:
         搜索字段。  - key为搜索的字段，目前仅支持搜索凭据名称，值为“resource_name”。  - value为模糊匹配的值，最大长度为255个字符。为空返回空值。
 
         :param matches: The matches of this ListResourceInstancesRequestBody.
-        :type: list[TagItem]
+        :type matches: list[:class:`huaweicloudsdkcsms.v1.TagItem`]
         """
         self._matches = matches
 
@@ -193,7 +208,7 @@ class ListResourceInstancesRequestBody:
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
 
         :param sequence: The sequence of this ListResourceInstancesRequestBody.
-        :type: str
+        :type sequence: str
         """
         self._sequence = sequence
 

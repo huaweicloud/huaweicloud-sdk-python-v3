@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowCdnStatisticsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ShowCdnStatisticsRequest:
     }
 
     def __init__(self, start_time=None, end_time=None, stat_type=None, domain=None, interval=None):
-        """ShowCdnStatisticsRequest - a model defined in huaweicloud sdk"""
+        """ShowCdnStatisticsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param start_time: 起始时间，格式为yyyymmddhhmmss。
+        :type start_time: str
+        :param end_time: 结束时间，格式为yyyymmddhhmmss。  - “**start_time**”、“**end_time**”均不存在时，“**start_time**”取当天零点，“end_time”取当前时间。  - “**start_time**”不存在、“**end_time**”存在，请求非法。  - “**start_time**”存在、“**end_time**”不存在，“**end_time**”取当前时间。  - 只能查询最近三个月内的数据，且时间跨度不能超过31天。  - 起始时间和结束时间会自动规整，起始时间规整为指定时间所在的整点时刻，结束时间规整为指定时间所在时间的下一小时整点时刻。
+        :type end_time: str
+        :param stat_type: 统计数据类型。  取值如下： - cdn_bw：CDN峰值带宽 - cdn_flux：CDN流量 - req_num：请求总数 - req_hit_rate：请求命中率 - flux_hit_rate：流量命中率  每次只能查询一种统计数据。
+        :type stat_type: str
+        :param domain: 域名列表，多个域名以逗号（半角）分隔。  示例：example.test1.com,example.test2.com。  ALL表示查询名下全部域名。一次最多查询100个域名。
+        :type domain: str
+        :param interval: 查询粒度间隔。  取值如下： - 时间跨度1天：5分钟、1小时、4小时、8小时，分别对应300秒、3600秒、14400秒和28800秒。 - 时间跨度2~7天：1小时、4小时、8小时、1天，分别对应3600秒、14400秒、28800秒和86400秒。 - 时间跨度8~31天：4小时、8小时、1天，分别对应14400秒、28800秒和86400秒。  单位：秒。  若不设置，默认取对应时间跨度的最小间隔。
+        :type interval: int
+        """
         
         
 
@@ -76,7 +89,7 @@ class ShowCdnStatisticsRequest:
         起始时间，格式为yyyymmddhhmmss。
 
         :param start_time: The start_time of this ShowCdnStatisticsRequest.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -98,7 +111,7 @@ class ShowCdnStatisticsRequest:
         结束时间，格式为yyyymmddhhmmss。  - “**start_time**”、“**end_time**”均不存在时，“**start_time**”取当天零点，“end_time”取当前时间。  - “**start_time**”不存在、“**end_time**”存在，请求非法。  - “**start_time**”存在、“**end_time**”不存在，“**end_time**”取当前时间。  - 只能查询最近三个月内的数据，且时间跨度不能超过31天。  - 起始时间和结束时间会自动规整，起始时间规整为指定时间所在的整点时刻，结束时间规整为指定时间所在时间的下一小时整点时刻。
 
         :param end_time: The end_time of this ShowCdnStatisticsRequest.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -120,7 +133,7 @@ class ShowCdnStatisticsRequest:
         统计数据类型。  取值如下： - cdn_bw：CDN峰值带宽 - cdn_flux：CDN流量 - req_num：请求总数 - req_hit_rate：请求命中率 - flux_hit_rate：流量命中率  每次只能查询一种统计数据。
 
         :param stat_type: The stat_type of this ShowCdnStatisticsRequest.
-        :type: str
+        :type stat_type: str
         """
         self._stat_type = stat_type
 
@@ -142,7 +155,7 @@ class ShowCdnStatisticsRequest:
         域名列表，多个域名以逗号（半角）分隔。  示例：example.test1.com,example.test2.com。  ALL表示查询名下全部域名。一次最多查询100个域名。
 
         :param domain: The domain of this ShowCdnStatisticsRequest.
-        :type: str
+        :type domain: str
         """
         self._domain = domain
 
@@ -164,7 +177,7 @@ class ShowCdnStatisticsRequest:
         查询粒度间隔。  取值如下： - 时间跨度1天：5分钟、1小时、4小时、8小时，分别对应300秒、3600秒、14400秒和28800秒。 - 时间跨度2~7天：1小时、4小时、8小时、1天，分别对应3600秒、14400秒、28800秒和86400秒。 - 时间跨度8~31天：4小时、8小时、1天，分别对应14400秒、28800秒和86400秒。  单位：秒。  若不设置，默认取对应时间跨度的最小间隔。
 
         :param interval: The interval of this ShowCdnStatisticsRequest.
-        :type: int
+        :type interval: int
         """
         self._interval = interval
 

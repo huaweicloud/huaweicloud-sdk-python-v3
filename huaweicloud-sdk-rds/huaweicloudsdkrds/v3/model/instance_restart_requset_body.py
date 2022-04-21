@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InstanceRestartRequsetBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class InstanceRestartRequsetBody:
     }
 
     def __init__(self, restart=None):
-        """InstanceRestartRequsetBody - a model defined in huaweicloud sdk"""
+        """InstanceRestartRequsetBody
+
+        The model defined in huaweicloud sdk
+
+        :param restart: 在线调试时必填。
+        :type restart: object
+        """
         
         
 
@@ -58,7 +63,7 @@ class InstanceRestartRequsetBody:
         在线调试时必填。
 
         :param restart: The restart of this InstanceRestartRequsetBody.
-        :type: object
+        :type restart: object
         """
         self._restart = restart
 

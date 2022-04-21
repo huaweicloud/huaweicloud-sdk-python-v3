@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateAndStartRandomClusterJobRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateAndStartRandomClusterJobRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """CreateAndStartRandomClusterJobRequest - a model defined in huaweicloud sdk"""
+        """CreateAndStartRandomClusterJobRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 请求语言。
+        :type x_language: str
+        :param body: Body of the CreateAndStartRandomClusterJobRequest
+        :type body: :class:`huaweicloudsdkcdm.v1.CdmRandomCreateAndStartJobJsonReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateAndStartRandomClusterJobRequest:
         请求语言。
 
         :param x_language: The x_language of this CreateAndStartRandomClusterJobRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -72,7 +79,7 @@ class CreateAndStartRandomClusterJobRequest:
 
 
         :return: The body of this CreateAndStartRandomClusterJobRequest.
-        :rtype: CdmRandomCreateAndStartJobJsonReq
+        :rtype: :class:`huaweicloudsdkcdm.v1.CdmRandomCreateAndStartJobJsonReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CreateAndStartRandomClusterJobRequest:
 
 
         :param body: The body of this CreateAndStartRandomClusterJobRequest.
-        :type: CdmRandomCreateAndStartJobJsonReq
+        :type body: :class:`huaweicloudsdkcdm.v1.CdmRandomCreateAndStartJobJsonReq`
         """
         self._body = body
 

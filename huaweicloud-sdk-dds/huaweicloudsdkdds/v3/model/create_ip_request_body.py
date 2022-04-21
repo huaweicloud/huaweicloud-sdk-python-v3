@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateIpRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateIpRequestBody:
     }
 
     def __init__(self, type=None, target_id=None, password=None):
-        """CreateIpRequestBody - a model defined in huaweicloud sdk"""
+        """CreateIpRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param type: 待打开IP开关的对象类型。 - 扩容shard组时，取值为“shard”。 - 扩容config组时，取值为“config”。
+        :type type: str
+        :param target_id: 待打开IP开关的组ID。   - 对于shard组，取值为shard组ID。   - 对于config组，取值为config组ID。   - 如果为空，则打开该实例下同group类型的所有开关。 注意：   1. 第一次打开实例开关， 该参数需要传空。   2. 针对已开启开关的组， 开关不允许重复下发。
+        :type target_id: str
+        :param password: 打开集群开关设置的密码。  注意：该密码暂不支持修改，请谨慎操作。
+        :type password: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class CreateIpRequestBody:
         待打开IP开关的对象类型。 - 扩容shard组时，取值为“shard”。 - 扩容config组时，取值为“config”。
 
         :param type: The type of this CreateIpRequestBody.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -88,7 +97,7 @@ class CreateIpRequestBody:
         待打开IP开关的组ID。   - 对于shard组，取值为shard组ID。   - 对于config组，取值为config组ID。   - 如果为空，则打开该实例下同group类型的所有开关。 注意：   1. 第一次打开实例开关， 该参数需要传空。   2. 针对已开启开关的组， 开关不允许重复下发。
 
         :param target_id: The target_id of this CreateIpRequestBody.
-        :type: str
+        :type target_id: str
         """
         self._target_id = target_id
 
@@ -110,7 +119,7 @@ class CreateIpRequestBody:
         打开集群开关设置的密码。  注意：该密码暂不支持修改，请谨慎操作。
 
         :param password: The password of this CreateIpRequestBody.
-        :type: str
+        :type password: str
         """
         self._password = password
 

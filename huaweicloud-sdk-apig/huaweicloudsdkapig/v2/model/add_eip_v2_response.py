@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddEipV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class AddEipV2Response(SdkResponse):
     }
 
     def __init__(self, eip_id=None, eip_address=None, eip_status=None, eip_ipv6_address=None):
-        """AddEipV2Response - a model defined in huaweicloud sdk"""
+        """AddEipV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param eip_id: 弹性公网IP编号
+        :type eip_id: str
+        :param eip_address: 弹性公网IP
+        :type eip_address: str
+        :param eip_status: 弹性公网IP状态
+        :type eip_status: str
+        :param eip_ipv6_address: 弹性公网IP(IPV6)
+        :type eip_ipv6_address: str
+        """
         
         super(AddEipV2Response, self).__init__()
 
@@ -73,7 +84,7 @@ class AddEipV2Response(SdkResponse):
         弹性公网IP编号
 
         :param eip_id: The eip_id of this AddEipV2Response.
-        :type: str
+        :type eip_id: str
         """
         self._eip_id = eip_id
 
@@ -95,7 +106,7 @@ class AddEipV2Response(SdkResponse):
         弹性公网IP
 
         :param eip_address: The eip_address of this AddEipV2Response.
-        :type: str
+        :type eip_address: str
         """
         self._eip_address = eip_address
 
@@ -117,7 +128,7 @@ class AddEipV2Response(SdkResponse):
         弹性公网IP状态
 
         :param eip_status: The eip_status of this AddEipV2Response.
-        :type: str
+        :type eip_status: str
         """
         self._eip_status = eip_status
 
@@ -139,7 +150,7 @@ class AddEipV2Response(SdkResponse):
         弹性公网IP(IPV6)
 
         :param eip_ipv6_address: The eip_ipv6_address of this AddEipV2Response.
-        :type: str
+        :type eip_ipv6_address: str
         """
         self._eip_ipv6_address = eip_ipv6_address
 

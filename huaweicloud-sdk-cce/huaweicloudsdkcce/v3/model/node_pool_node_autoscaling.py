@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NodePoolNodeAutoscaling:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class NodePoolNodeAutoscaling:
     }
 
     def __init__(self, enable=None, min_node_count=None, max_node_count=None, scale_down_cooldown_time=None, priority=None):
-        """NodePoolNodeAutoscaling - a model defined in huaweicloud sdk"""
+        """NodePoolNodeAutoscaling
+
+        The model defined in huaweicloud sdk
+
+        :param enable: 是否开启自动扩缩容
+        :type enable: bool
+        :param min_node_count: 若开启自动扩缩容，最小能缩容的节点个数。不可大于集群规格所允许的节点上限
+        :type min_node_count: int
+        :param max_node_count: 若开启自动扩缩容，最大能扩容的节点个数，应大于等于 minNodeCount，且不超过集群规格对应的节点数量上限。
+        :type max_node_count: int
+        :param scale_down_cooldown_time: 节点保留时间，单位为分钟，扩容出来的节点在这个时间内不会被缩掉
+        :type scale_down_cooldown_time: int
+        :param priority: 节点池权重，更高的权重在扩容时拥有更高的优先级
+        :type priority: int
+        """
         
         
 
@@ -78,7 +91,7 @@ class NodePoolNodeAutoscaling:
         是否开启自动扩缩容
 
         :param enable: The enable of this NodePoolNodeAutoscaling.
-        :type: bool
+        :type enable: bool
         """
         self._enable = enable
 
@@ -100,7 +113,7 @@ class NodePoolNodeAutoscaling:
         若开启自动扩缩容，最小能缩容的节点个数。不可大于集群规格所允许的节点上限
 
         :param min_node_count: The min_node_count of this NodePoolNodeAutoscaling.
-        :type: int
+        :type min_node_count: int
         """
         self._min_node_count = min_node_count
 
@@ -122,7 +135,7 @@ class NodePoolNodeAutoscaling:
         若开启自动扩缩容，最大能扩容的节点个数，应大于等于 minNodeCount，且不超过集群规格对应的节点数量上限。
 
         :param max_node_count: The max_node_count of this NodePoolNodeAutoscaling.
-        :type: int
+        :type max_node_count: int
         """
         self._max_node_count = max_node_count
 
@@ -144,7 +157,7 @@ class NodePoolNodeAutoscaling:
         节点保留时间，单位为分钟，扩容出来的节点在这个时间内不会被缩掉
 
         :param scale_down_cooldown_time: The scale_down_cooldown_time of this NodePoolNodeAutoscaling.
-        :type: int
+        :type scale_down_cooldown_time: int
         """
         self._scale_down_cooldown_time = scale_down_cooldown_time
 
@@ -166,7 +179,7 @@ class NodePoolNodeAutoscaling:
         节点池权重，更高的权重在扩容时拥有更高的优先级
 
         :param priority: The priority of this NodePoolNodeAutoscaling.
-        :type: int
+        :type priority: int
         """
         self._priority = priority
 

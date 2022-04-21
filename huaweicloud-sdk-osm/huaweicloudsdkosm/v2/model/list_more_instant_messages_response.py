@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListMoreInstantMessagesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListMoreInstantMessagesResponse(SdkResponse):
     }
 
     def __init__(self, count=None, message_list=None):
-        """ListMoreInstantMessagesResponse - a model defined in huaweicloud sdk"""
+        """ListMoreInstantMessagesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 总数
+        :type count: int
+        :param message_list: 留言列表
+        :type message_list: list[:class:`huaweicloudsdkosm.v2.QueryMessageInfoV2`]
+        """
         
         super(ListMoreInstantMessagesResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListMoreInstantMessagesResponse(SdkResponse):
         总数
 
         :param count: The count of this ListMoreInstantMessagesResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -74,7 +81,7 @@ class ListMoreInstantMessagesResponse(SdkResponse):
         留言列表
 
         :return: The message_list of this ListMoreInstantMessagesResponse.
-        :rtype: list[QueryMessageInfoV2]
+        :rtype: list[:class:`huaweicloudsdkosm.v2.QueryMessageInfoV2`]
         """
         return self._message_list
 
@@ -85,7 +92,7 @@ class ListMoreInstantMessagesResponse(SdkResponse):
         留言列表
 
         :param message_list: The message_list of this ListMoreInstantMessagesResponse.
-        :type: list[QueryMessageInfoV2]
+        :type message_list: list[:class:`huaweicloudsdkosm.v2.QueryMessageInfoV2`]
         """
         self._message_list = message_list
 

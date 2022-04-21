@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunSummaryRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RunSummaryRequest:
     }
 
     def __init__(self, body=None):
-        """RunSummaryRequest - a model defined in huaweicloud sdk"""
+        """RunSummaryRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the RunSummaryRequest
+        :type body: :class:`huaweicloudsdknlp.v2.SummaryReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class RunSummaryRequest:
 
 
         :return: The body of this RunSummaryRequest.
-        :rtype: SummaryReq
+        :rtype: :class:`huaweicloudsdknlp.v2.SummaryReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class RunSummaryRequest:
 
 
         :param body: The body of this RunSummaryRequest.
-        :type: SummaryReq
+        :type body: :class:`huaweicloudsdknlp.v2.SummaryReq`
         """
         self._body = body
 

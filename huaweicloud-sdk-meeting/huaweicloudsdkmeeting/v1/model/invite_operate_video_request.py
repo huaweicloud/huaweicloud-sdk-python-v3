@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InviteOperateVideoRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class InviteOperateVideoRequest:
     }
 
     def __init__(self, conference_id=None, participant_id=None, x_conference_authorization=None, body=None):
-        """InviteOperateVideoRequest - a model defined in huaweicloud sdk"""
+        """InviteOperateVideoRequest
+
+        The model defined in huaweicloud sdk
+
+        :param conference_id: 会议id，创建会议时生成
+        :type conference_id: str
+        :param participant_id: 被操作的会场id，可以通过查询会场id接口获取。
+        :type participant_id: str
+        :param x_conference_authorization: 会控授权令牌，通过调用申请会控token的接口生成
+        :type x_conference_authorization: str
+        :param body: Body of the InviteOperateVideoRequest
+        :type body: :class:`huaweicloudsdkmeeting.v1.RestVideoBody`
+        """
         
         
 
@@ -70,7 +81,7 @@ class InviteOperateVideoRequest:
         会议id，创建会议时生成
 
         :param conference_id: The conference_id of this InviteOperateVideoRequest.
-        :type: str
+        :type conference_id: str
         """
         self._conference_id = conference_id
 
@@ -92,7 +103,7 @@ class InviteOperateVideoRequest:
         被操作的会场id，可以通过查询会场id接口获取。
 
         :param participant_id: The participant_id of this InviteOperateVideoRequest.
-        :type: str
+        :type participant_id: str
         """
         self._participant_id = participant_id
 
@@ -114,7 +125,7 @@ class InviteOperateVideoRequest:
         会控授权令牌，通过调用申请会控token的接口生成
 
         :param x_conference_authorization: The x_conference_authorization of this InviteOperateVideoRequest.
-        :type: str
+        :type x_conference_authorization: str
         """
         self._x_conference_authorization = x_conference_authorization
 
@@ -124,7 +135,7 @@ class InviteOperateVideoRequest:
 
 
         :return: The body of this InviteOperateVideoRequest.
-        :rtype: RestVideoBody
+        :rtype: :class:`huaweicloudsdkmeeting.v1.RestVideoBody`
         """
         return self._body
 
@@ -134,7 +145,7 @@ class InviteOperateVideoRequest:
 
 
         :param body: The body of this InviteOperateVideoRequest.
-        :type: RestVideoBody
+        :type body: :class:`huaweicloudsdkmeeting.v1.RestVideoBody`
         """
         self._body = body
 

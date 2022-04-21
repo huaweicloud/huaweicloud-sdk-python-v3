@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ObjectCompareResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ObjectCompareResult:
     }
 
     def __init__(self, compare_task_id=None, object_compare_overview=None, object_compare_details=None, error_code=None, error_msg=None):
-        """ObjectCompareResult - a model defined in huaweicloud sdk"""
+        """ObjectCompareResult
+
+        The model defined in huaweicloud sdk
+
+        :param compare_task_id: 对象级对比任务的id。
+        :type compare_task_id: str
+        :param object_compare_overview: 对象对比结果概览。
+        :type object_compare_overview: list[:class:`huaweicloudsdkdrs.v3.ObjectCompareResultOverview`]
+        :param object_compare_details: 对象对比结果详情。KEY值为对象对比结果概览中的对象类型。
+        :type object_compare_details: dict(str, list[ObjectCompareResultDetails])
+        :param error_code: 错误码。
+        :type error_code: str
+        :param error_msg: 错误信息。
+        :type error_msg: str
+        """
         
         
 
@@ -77,7 +90,7 @@ class ObjectCompareResult:
         对象级对比任务的id。
 
         :param compare_task_id: The compare_task_id of this ObjectCompareResult.
-        :type: str
+        :type compare_task_id: str
         """
         self._compare_task_id = compare_task_id
 
@@ -88,7 +101,7 @@ class ObjectCompareResult:
         对象对比结果概览。
 
         :return: The object_compare_overview of this ObjectCompareResult.
-        :rtype: list[ObjectCompareResultOverview]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.ObjectCompareResultOverview`]
         """
         return self._object_compare_overview
 
@@ -99,7 +112,7 @@ class ObjectCompareResult:
         对象对比结果概览。
 
         :param object_compare_overview: The object_compare_overview of this ObjectCompareResult.
-        :type: list[ObjectCompareResultOverview]
+        :type object_compare_overview: list[:class:`huaweicloudsdkdrs.v3.ObjectCompareResultOverview`]
         """
         self._object_compare_overview = object_compare_overview
 
@@ -121,7 +134,7 @@ class ObjectCompareResult:
         对象对比结果详情。KEY值为对象对比结果概览中的对象类型。
 
         :param object_compare_details: The object_compare_details of this ObjectCompareResult.
-        :type: dict(str, list[ObjectCompareResultDetails])
+        :type object_compare_details: dict(str, list[ObjectCompareResultDetails])
         """
         self._object_compare_details = object_compare_details
 
@@ -143,7 +156,7 @@ class ObjectCompareResult:
         错误码。
 
         :param error_code: The error_code of this ObjectCompareResult.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -165,7 +178,7 @@ class ObjectCompareResult:
         错误信息。
 
         :param error_msg: The error_msg of this ObjectCompareResult.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 

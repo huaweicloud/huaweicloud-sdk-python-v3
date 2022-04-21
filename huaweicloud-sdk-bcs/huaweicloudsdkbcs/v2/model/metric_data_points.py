@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MetricDataPoints:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class MetricDataPoints:
     }
 
     def __init__(self, timestamp=None, unit=None, statistics=None):
-        """MetricDataPoints - a model defined in huaweicloud sdk"""
+        """MetricDataPoints
+
+        The model defined in huaweicloud sdk
+
+        :param timestamp: 时间戳。
+        :type timestamp: int
+        :param unit: 指标单位。
+        :type unit: str
+        :param statistics: 统计方式。
+        :type statistics: list[:class:`huaweicloudsdkbcs.v2.StatisticValue`]
+        """
         
         
 
@@ -68,7 +77,7 @@ class MetricDataPoints:
         时间戳。
 
         :param timestamp: The timestamp of this MetricDataPoints.
-        :type: int
+        :type timestamp: int
         """
         self._timestamp = timestamp
 
@@ -90,7 +99,7 @@ class MetricDataPoints:
         指标单位。
 
         :param unit: The unit of this MetricDataPoints.
-        :type: str
+        :type unit: str
         """
         self._unit = unit
 
@@ -101,7 +110,7 @@ class MetricDataPoints:
         统计方式。
 
         :return: The statistics of this MetricDataPoints.
-        :rtype: list[StatisticValue]
+        :rtype: list[:class:`huaweicloudsdkbcs.v2.StatisticValue`]
         """
         return self._statistics
 
@@ -112,7 +121,7 @@ class MetricDataPoints:
         统计方式。
 
         :param statistics: The statistics of this MetricDataPoints.
-        :type: list[StatisticValue]
+        :type statistics: list[:class:`huaweicloudsdkbcs.v2.StatisticValue`]
         """
         self._statistics = statistics
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateQualityEnhanceTemplateRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateQualityEnhanceTemplateRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateQualityEnhanceTemplateRequest - a model defined in huaweicloud sdk"""
+        """UpdateQualityEnhanceTemplateRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the UpdateQualityEnhanceTemplateRequest
+        :type body: :class:`huaweicloudsdkmpc.v1.UpdateQualityEnhanceTemplateReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class UpdateQualityEnhanceTemplateRequest:
 
 
         :return: The body of this UpdateQualityEnhanceTemplateRequest.
-        :rtype: UpdateQualityEnhanceTemplateReq
+        :rtype: :class:`huaweicloudsdkmpc.v1.UpdateQualityEnhanceTemplateReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class UpdateQualityEnhanceTemplateRequest:
 
 
         :param body: The body of this UpdateQualityEnhanceTemplateRequest.
-        :type: UpdateQualityEnhanceTemplateReq
+        :type body: :class:`huaweicloudsdkmpc.v1.UpdateQualityEnhanceTemplateReq`
         """
         self._body = body
 

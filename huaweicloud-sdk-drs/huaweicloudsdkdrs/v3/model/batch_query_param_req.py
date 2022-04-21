@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchQueryParamReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchQueryParamReq:
     }
 
     def __init__(self, jobs=None, refresh=None):
-        """BatchQueryParamReq - a model defined in huaweicloud sdk"""
+        """BatchQueryParamReq
+
+        The model defined in huaweicloud sdk
+
+        :param jobs: 查询任务ID集合。
+        :type jobs: list[str]
+        :param refresh: 是否重新获取数据库参数，1代表是，0代表否（从缓存中获取），第一次调用时请设置为1。
+        :type refresh: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class BatchQueryParamReq:
         查询任务ID集合。
 
         :param jobs: The jobs of this BatchQueryParamReq.
-        :type: list[str]
+        :type jobs: list[str]
         """
         self._jobs = jobs
 
@@ -83,7 +90,7 @@ class BatchQueryParamReq:
         是否重新获取数据库参数，1代表是，0代表否（从缓存中获取），第一次调用时请设置为1。
 
         :param refresh: The refresh of this BatchQueryParamReq.
-        :type: str
+        :type refresh: str
         """
         self._refresh = refresh
 

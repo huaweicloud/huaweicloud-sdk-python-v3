@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRtcHistoryQualityRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ListRtcHistoryQualityRequest:
     }
 
     def __init__(self, authorization=None, x_sdk_date=None, x_project_id=None, project_id=None, app=None, metric=None, start_date=None, end_date=None):
-        """ListRtcHistoryQualityRequest - a model defined in huaweicloud sdk"""
+        """ListRtcHistoryQualityRequest
+
+        The model defined in huaweicloud sdk
+
+        :param authorization: 使用AK/SK方式认证时必选，携带的鉴权信息。 
+        :type authorization: str
+        :param x_sdk_date: 使用AK/SK方式认证时必选，请求的发生时间。 
+        :type x_sdk_date: str
+        :param x_project_id: 使用AK/SK方式认证时必选，携带项目ID信息，与路径参数中的项目ID相同。 
+        :type x_project_id: str
+        :param project_id: 项目ID，获取方法请参考[获取项目ID](rtc_07_0015.xml)。 
+        :type project_id: str
+        :param app: 应用标识 
+        :type app: str
+        :param metric: 查询的数据类型 - JoinSuccessRate：加入房间成功率 - JoinSuccess5SecsRate：5秒加入成功率 - VideoFreezeRate：视频卡顿率 - AudioFreezeRate：音频卡顿率 - FirstVideoRecvTime：首帧视频接收耗时 - FirstAudioRecvTime：首帧音频接收耗时 - PullStreamSuccessRate：拉流成功率 - PushStreamSuccessRate：推流成功率 - VideoUpstreamExcellentTransRate：客户端视频上行优质传输率 - AudioUpstreamExcellentTransRate：客户端音频上行优质传输率 - VideoExcellentTransRate：端到端视频优质传输率 - AudioExcellentTransRate：端到端音频优质传输率 - VideoTransDelay：端到端视频网络时，单位为毫秒，取当天所有用户网络延迟的中位数 - AudioTransDelay：端到端音频网络时延，单位为毫秒，取当天所有用户网络延迟的中位数 
+        :type metric: list[str]
+        :param start_date: 查询起始时间。UTC时间，格式：YYYY-MM-DD，如2020-04-23，不写默认读取过去1天数据数据。 
+        :type start_date: str
+        :param end_date: 查询结束时间。UTC时间，格式：YYYY-MM-DD，如2020-04-23 
+        :type end_date: str
+        """
         
         
 
@@ -90,7 +109,7 @@ class ListRtcHistoryQualityRequest:
         使用AK/SK方式认证时必选，携带的鉴权信息。 
 
         :param authorization: The authorization of this ListRtcHistoryQualityRequest.
-        :type: str
+        :type authorization: str
         """
         self._authorization = authorization
 
@@ -112,7 +131,7 @@ class ListRtcHistoryQualityRequest:
         使用AK/SK方式认证时必选，请求的发生时间。 
 
         :param x_sdk_date: The x_sdk_date of this ListRtcHistoryQualityRequest.
-        :type: str
+        :type x_sdk_date: str
         """
         self._x_sdk_date = x_sdk_date
 
@@ -134,7 +153,7 @@ class ListRtcHistoryQualityRequest:
         使用AK/SK方式认证时必选，携带项目ID信息，与路径参数中的项目ID相同。 
 
         :param x_project_id: The x_project_id of this ListRtcHistoryQualityRequest.
-        :type: str
+        :type x_project_id: str
         """
         self._x_project_id = x_project_id
 
@@ -156,7 +175,7 @@ class ListRtcHistoryQualityRequest:
         项目ID，获取方法请参考[获取项目ID](rtc_07_0015.xml)。 
 
         :param project_id: The project_id of this ListRtcHistoryQualityRequest.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -178,7 +197,7 @@ class ListRtcHistoryQualityRequest:
         应用标识 
 
         :param app: The app of this ListRtcHistoryQualityRequest.
-        :type: str
+        :type app: str
         """
         self._app = app
 
@@ -200,7 +219,7 @@ class ListRtcHistoryQualityRequest:
         查询的数据类型 - JoinSuccessRate：加入房间成功率 - JoinSuccess5SecsRate：5秒加入成功率 - VideoFreezeRate：视频卡顿率 - AudioFreezeRate：音频卡顿率 - FirstVideoRecvTime：首帧视频接收耗时 - FirstAudioRecvTime：首帧音频接收耗时 - PullStreamSuccessRate：拉流成功率 - PushStreamSuccessRate：推流成功率 - VideoUpstreamExcellentTransRate：客户端视频上行优质传输率 - AudioUpstreamExcellentTransRate：客户端音频上行优质传输率 - VideoExcellentTransRate：端到端视频优质传输率 - AudioExcellentTransRate：端到端音频优质传输率 - VideoTransDelay：端到端视频网络时，单位为毫秒，取当天所有用户网络延迟的中位数 - AudioTransDelay：端到端音频网络时延，单位为毫秒，取当天所有用户网络延迟的中位数 
 
         :param metric: The metric of this ListRtcHistoryQualityRequest.
-        :type: list[str]
+        :type metric: list[str]
         """
         self._metric = metric
 
@@ -222,7 +241,7 @@ class ListRtcHistoryQualityRequest:
         查询起始时间。UTC时间，格式：YYYY-MM-DD，如2020-04-23，不写默认读取过去1天数据数据。 
 
         :param start_date: The start_date of this ListRtcHistoryQualityRequest.
-        :type: str
+        :type start_date: str
         """
         self._start_date = start_date
 
@@ -244,7 +263,7 @@ class ListRtcHistoryQualityRequest:
         查询结束时间。UTC时间，格式：YYYY-MM-DD，如2020-04-23 
 
         :param end_date: The end_date of this ListRtcHistoryQualityRequest.
-        :type: str
+        :type end_date: str
         """
         self._end_date = end_date
 

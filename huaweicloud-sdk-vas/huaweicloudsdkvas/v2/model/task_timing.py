@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TaskTiming:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class TaskTiming:
     }
 
     def __init__(self, type=None, timezone=None, days_of_week=None, days_of_month=None, date=None, periods=None, frequency=None):
-        """TaskTiming - a model defined in huaweicloud sdk"""
+        """TaskTiming
+
+        The model defined in huaweicloud sdk
+
+        :param type: 计划任务的类型，使用计划任务时必填。可选类型分别为once（仅执行一次），daily（每日执行），weekly（每周执行），monthly（每月执行）。
+        :type type: str
+        :param timezone: 用户所处的时区，使用计划任务时必填。精确到分钟。
+        :type timezone: str
+        :param days_of_week: 作业会在一周的哪几天执行，当且仅当计划任务类型为weekly时，该字段需填且必填。1~7分别指代星期一至星期日。
+        :type days_of_week: list[int]
+        :param days_of_month: 作业会在一个月的哪几天执行，当且仅当计划任务类型为monthly时，该字段需填且必填。1~31分别指代一个月中的1日至31日。
+        :type days_of_month: list[int]
+        :param date: 作业的执行日。当且仅当计划任务类型为once且为频率模式时，该字段需填且必填。格式形如yyyy-MM-dd。
+        :type date: str
+        :param periods: 时间段模式配置。和frequency字段二选一，不可共存。时间段模式下，至少需指定一个时间段。
+        :type periods: list[:class:`huaweicloudsdkvas.v2.TaskTimingPeriods`]
+        :param frequency: 
+        :type frequency: :class:`huaweicloudsdkvas.v2.TaskTimingFrequency`
+        """
         
         
 
@@ -86,7 +103,7 @@ class TaskTiming:
         计划任务的类型，使用计划任务时必填。可选类型分别为once（仅执行一次），daily（每日执行），weekly（每周执行），monthly（每月执行）。
 
         :param type: The type of this TaskTiming.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -108,7 +125,7 @@ class TaskTiming:
         用户所处的时区，使用计划任务时必填。精确到分钟。
 
         :param timezone: The timezone of this TaskTiming.
-        :type: str
+        :type timezone: str
         """
         self._timezone = timezone
 
@@ -130,7 +147,7 @@ class TaskTiming:
         作业会在一周的哪几天执行，当且仅当计划任务类型为weekly时，该字段需填且必填。1~7分别指代星期一至星期日。
 
         :param days_of_week: The days_of_week of this TaskTiming.
-        :type: list[int]
+        :type days_of_week: list[int]
         """
         self._days_of_week = days_of_week
 
@@ -152,7 +169,7 @@ class TaskTiming:
         作业会在一个月的哪几天执行，当且仅当计划任务类型为monthly时，该字段需填且必填。1~31分别指代一个月中的1日至31日。
 
         :param days_of_month: The days_of_month of this TaskTiming.
-        :type: list[int]
+        :type days_of_month: list[int]
         """
         self._days_of_month = days_of_month
 
@@ -174,7 +191,7 @@ class TaskTiming:
         作业的执行日。当且仅当计划任务类型为once且为频率模式时，该字段需填且必填。格式形如yyyy-MM-dd。
 
         :param date: The date of this TaskTiming.
-        :type: str
+        :type date: str
         """
         self._date = date
 
@@ -185,7 +202,7 @@ class TaskTiming:
         时间段模式配置。和frequency字段二选一，不可共存。时间段模式下，至少需指定一个时间段。
 
         :return: The periods of this TaskTiming.
-        :rtype: list[TaskTimingPeriods]
+        :rtype: list[:class:`huaweicloudsdkvas.v2.TaskTimingPeriods`]
         """
         return self._periods
 
@@ -196,7 +213,7 @@ class TaskTiming:
         时间段模式配置。和frequency字段二选一，不可共存。时间段模式下，至少需指定一个时间段。
 
         :param periods: The periods of this TaskTiming.
-        :type: list[TaskTimingPeriods]
+        :type periods: list[:class:`huaweicloudsdkvas.v2.TaskTimingPeriods`]
         """
         self._periods = periods
 
@@ -206,7 +223,7 @@ class TaskTiming:
 
 
         :return: The frequency of this TaskTiming.
-        :rtype: TaskTimingFrequency
+        :rtype: :class:`huaweicloudsdkvas.v2.TaskTimingFrequency`
         """
         return self._frequency
 
@@ -216,7 +233,7 @@ class TaskTiming:
 
 
         :param frequency: The frequency of this TaskTiming.
-        :type: TaskTimingFrequency
+        :type frequency: :class:`huaweicloudsdkvas.v2.TaskTimingFrequency`
         """
         self._frequency = frequency
 

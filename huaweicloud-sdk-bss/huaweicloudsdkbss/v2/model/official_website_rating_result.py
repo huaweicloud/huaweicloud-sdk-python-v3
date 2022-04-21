@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OfficialWebsiteRatingResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class OfficialWebsiteRatingResult:
     }
 
     def __init__(self, official_website_amount=None, installment_official_website_amount=None, installment_period_type=None, measure_id=None, product_rating_results=None):
-        """OfficialWebsiteRatingResult - a model defined in huaweicloud sdk"""
+        """OfficialWebsiteRatingResult
+
+        The model defined in huaweicloud sdk
+
+        :param official_website_amount: 包年/包月产品的官网价。
+        :type official_website_amount: float
+        :param installment_official_website_amount: 分期金额的官网价。  说明： 暂只支持IES产品。
+        :type installment_official_website_amount: str
+        :param installment_period_type: 分期付款的周期类型。 2：月  说明： 暂只支持IES产品。
+        :type installment_period_type: int
+        :param measure_id: 价格度量单位标识。 1：元
+        :type measure_id: int
+        :param product_rating_results: 产品询价结果，具体参见表5。
+        :type product_rating_results: list[:class:`huaweicloudsdkbss.v2.PeriodProductOfficialRatingResult`]
+        """
         
         
 
@@ -78,7 +91,7 @@ class OfficialWebsiteRatingResult:
         包年/包月产品的官网价。
 
         :param official_website_amount: The official_website_amount of this OfficialWebsiteRatingResult.
-        :type: float
+        :type official_website_amount: float
         """
         self._official_website_amount = official_website_amount
 
@@ -100,7 +113,7 @@ class OfficialWebsiteRatingResult:
         分期金额的官网价。  说明： 暂只支持IES产品。
 
         :param installment_official_website_amount: The installment_official_website_amount of this OfficialWebsiteRatingResult.
-        :type: str
+        :type installment_official_website_amount: str
         """
         self._installment_official_website_amount = installment_official_website_amount
 
@@ -122,7 +135,7 @@ class OfficialWebsiteRatingResult:
         分期付款的周期类型。 2：月  说明： 暂只支持IES产品。
 
         :param installment_period_type: The installment_period_type of this OfficialWebsiteRatingResult.
-        :type: int
+        :type installment_period_type: int
         """
         self._installment_period_type = installment_period_type
 
@@ -144,7 +157,7 @@ class OfficialWebsiteRatingResult:
         价格度量单位标识。 1：元
 
         :param measure_id: The measure_id of this OfficialWebsiteRatingResult.
-        :type: int
+        :type measure_id: int
         """
         self._measure_id = measure_id
 
@@ -155,7 +168,7 @@ class OfficialWebsiteRatingResult:
         产品询价结果，具体参见表5。
 
         :return: The product_rating_results of this OfficialWebsiteRatingResult.
-        :rtype: list[PeriodProductOfficialRatingResult]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.PeriodProductOfficialRatingResult`]
         """
         return self._product_rating_results
 
@@ -166,7 +179,7 @@ class OfficialWebsiteRatingResult:
         产品询价结果，具体参见表5。
 
         :param product_rating_results: The product_rating_results of this OfficialWebsiteRatingResult.
-        :type: list[PeriodProductOfficialRatingResult]
+        :type product_rating_results: list[:class:`huaweicloudsdkbss.v2.PeriodProductOfficialRatingResult`]
         """
         self._product_rating_results = product_rating_results
 

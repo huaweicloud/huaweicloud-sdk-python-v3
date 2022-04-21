@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListProjectVpcChannelsV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListProjectVpcChannelsV2Response(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, project_vpc_channels=None):
-        """ListProjectVpcChannelsV2Response - a model defined in huaweicloud sdk"""
+        """ListProjectVpcChannelsV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param size: 本次返回的列表长度
+        :type size: int
+        :param total: 满足条件的记录数
+        :type total: int
+        :param project_vpc_channels: 本次查询到的实例VPC通道列表
+        :type project_vpc_channels: list[:class:`huaweicloudsdkroma.v2.ProjectVpcChannelInfo`]
+        """
         
         super(ListProjectVpcChannelsV2Response, self).__init__()
 
@@ -66,7 +75,7 @@ class ListProjectVpcChannelsV2Response(SdkResponse):
         本次返回的列表长度
 
         :param size: The size of this ListProjectVpcChannelsV2Response.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -88,7 +97,7 @@ class ListProjectVpcChannelsV2Response(SdkResponse):
         满足条件的记录数
 
         :param total: The total of this ListProjectVpcChannelsV2Response.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -99,7 +108,7 @@ class ListProjectVpcChannelsV2Response(SdkResponse):
         本次查询到的实例VPC通道列表
 
         :return: The project_vpc_channels of this ListProjectVpcChannelsV2Response.
-        :rtype: list[ProjectVpcChannelInfo]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.ProjectVpcChannelInfo`]
         """
         return self._project_vpc_channels
 
@@ -110,7 +119,7 @@ class ListProjectVpcChannelsV2Response(SdkResponse):
         本次查询到的实例VPC通道列表
 
         :param project_vpc_channels: The project_vpc_channels of this ListProjectVpcChannelsV2Response.
-        :type: list[ProjectVpcChannelInfo]
+        :type project_vpc_channels: list[:class:`huaweicloudsdkroma.v2.ProjectVpcChannelInfo`]
         """
         self._project_vpc_channels = project_vpc_channels
 

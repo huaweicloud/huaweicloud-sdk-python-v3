@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListConversionsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListConversionsResponse(SdkResponse):
     }
 
     def __init__(self, conversions=None):
-        """ListConversionsResponse - a model defined in huaweicloud sdk"""
+        """ListConversionsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param conversions: 度量单位的换算信息，具体参见表3。
+        :type conversions: list[:class:`huaweicloudsdkbssintl.v2.Conversion`]
+        """
         
         super(ListConversionsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListConversionsResponse(SdkResponse):
         度量单位的换算信息，具体参见表3。
 
         :return: The conversions of this ListConversionsResponse.
-        :rtype: list[Conversion]
+        :rtype: list[:class:`huaweicloudsdkbssintl.v2.Conversion`]
         """
         return self._conversions
 
@@ -58,7 +63,7 @@ class ListConversionsResponse(SdkResponse):
         度量单位的换算信息，具体参见表3。
 
         :param conversions: The conversions of this ListConversionsResponse.
-        :type: list[Conversion]
+        :type conversions: list[:class:`huaweicloudsdkbssintl.v2.Conversion`]
         """
         self._conversions = conversions
 

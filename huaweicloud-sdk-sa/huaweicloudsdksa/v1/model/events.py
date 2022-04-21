@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Events:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class Events:
     }
 
     def __init__(self, events=None):
-        """Events - a model defined in huaweicloud sdk"""
+        """Events
+
+        The model defined in huaweicloud sdk
+
+        :param events: event 批量导入
+        :type events: list[:class:`huaweicloudsdksa.v1.Event`]
+        """
         
         
 
@@ -47,7 +52,7 @@ class Events:
         event 批量导入
 
         :return: The events of this Events.
-        :rtype: list[Event]
+        :rtype: list[:class:`huaweicloudsdksa.v1.Event`]
         """
         return self._events
 
@@ -58,7 +63,7 @@ class Events:
         event 批量导入
 
         :param events: The events of this Events.
-        :type: list[Event]
+        :type events: list[:class:`huaweicloudsdksa.v1.Event`]
         """
         self._events = events
 

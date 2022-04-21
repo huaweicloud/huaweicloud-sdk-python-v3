@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDevicesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ListDevicesResponse(SdkResponse):
     }
 
     def __init__(self, total=None, size=None, connect_address=None, ssl_connect_address=None, ipv6_connect_address=None, ipv6_ssl_connect_address=None, items=None):
-        """ListDevicesResponse - a model defined in huaweicloud sdk"""
+        """ListDevicesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 总数
+        :type total: int
+        :param size: 本次返回数量
+        :type size: int
+        :param connect_address: 设备接入地址
+        :type connect_address: str
+        :param ssl_connect_address: 设备接入SSL地址
+        :type ssl_connect_address: str
+        :param ipv6_connect_address: 设备接入IPV6地址
+        :type ipv6_connect_address: str
+        :param ipv6_ssl_connect_address: 设备接入IPV6 SSL地址
+        :type ipv6_ssl_connect_address: str
+        :param items: 设备ID列表
+        :type items: list[:class:`huaweicloudsdkroma.v2.Device`]
+        """
         
         super(ListDevicesResponse, self).__init__()
 
@@ -88,7 +105,7 @@ class ListDevicesResponse(SdkResponse):
         总数
 
         :param total: The total of this ListDevicesResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -110,7 +127,7 @@ class ListDevicesResponse(SdkResponse):
         本次返回数量
 
         :param size: The size of this ListDevicesResponse.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -132,7 +149,7 @@ class ListDevicesResponse(SdkResponse):
         设备接入地址
 
         :param connect_address: The connect_address of this ListDevicesResponse.
-        :type: str
+        :type connect_address: str
         """
         self._connect_address = connect_address
 
@@ -154,7 +171,7 @@ class ListDevicesResponse(SdkResponse):
         设备接入SSL地址
 
         :param ssl_connect_address: The ssl_connect_address of this ListDevicesResponse.
-        :type: str
+        :type ssl_connect_address: str
         """
         self._ssl_connect_address = ssl_connect_address
 
@@ -176,7 +193,7 @@ class ListDevicesResponse(SdkResponse):
         设备接入IPV6地址
 
         :param ipv6_connect_address: The ipv6_connect_address of this ListDevicesResponse.
-        :type: str
+        :type ipv6_connect_address: str
         """
         self._ipv6_connect_address = ipv6_connect_address
 
@@ -198,7 +215,7 @@ class ListDevicesResponse(SdkResponse):
         设备接入IPV6 SSL地址
 
         :param ipv6_ssl_connect_address: The ipv6_ssl_connect_address of this ListDevicesResponse.
-        :type: str
+        :type ipv6_ssl_connect_address: str
         """
         self._ipv6_ssl_connect_address = ipv6_ssl_connect_address
 
@@ -209,7 +226,7 @@ class ListDevicesResponse(SdkResponse):
         设备ID列表
 
         :return: The items of this ListDevicesResponse.
-        :rtype: list[Device]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.Device`]
         """
         return self._items
 
@@ -220,7 +237,7 @@ class ListDevicesResponse(SdkResponse):
         设备ID列表
 
         :param items: The items of this ListDevicesResponse.
-        :type: list[Device]
+        :type items: list[:class:`huaweicloudsdkroma.v2.Device`]
         """
         self._items = items
 

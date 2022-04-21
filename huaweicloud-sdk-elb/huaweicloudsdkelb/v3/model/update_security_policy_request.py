@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateSecurityPolicyRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateSecurityPolicyRequest:
     }
 
     def __init__(self, security_policy_id=None, body=None):
-        """UpdateSecurityPolicyRequest - a model defined in huaweicloud sdk"""
+        """UpdateSecurityPolicyRequest
+
+        The model defined in huaweicloud sdk
+
+        :param security_policy_id: 自定义安全策略的ID。
+        :type security_policy_id: str
+        :param body: Body of the UpdateSecurityPolicyRequest
+        :type body: :class:`huaweicloudsdkelb.v3.UpdateSecurityPolicyRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateSecurityPolicyRequest:
         自定义安全策略的ID。
 
         :param security_policy_id: The security_policy_id of this UpdateSecurityPolicyRequest.
-        :type: str
+        :type security_policy_id: str
         """
         self._security_policy_id = security_policy_id
 
@@ -72,7 +79,7 @@ class UpdateSecurityPolicyRequest:
 
 
         :return: The body of this UpdateSecurityPolicyRequest.
-        :rtype: UpdateSecurityPolicyRequestBody
+        :rtype: :class:`huaweicloudsdkelb.v3.UpdateSecurityPolicyRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateSecurityPolicyRequest:
 
 
         :param body: The body of this UpdateSecurityPolicyRequest.
-        :type: UpdateSecurityPolicyRequestBody
+        :type body: :class:`huaweicloudsdkelb.v3.UpdateSecurityPolicyRequestBody`
         """
         self._body = body
 

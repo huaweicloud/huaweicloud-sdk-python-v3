@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InvokeFunctionRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class InvokeFunctionRequest:
     }
 
     def __init__(self, function_urn=None, x_cff_log_type=None, x_cff_request_version=None, body=None):
-        """InvokeFunctionRequest - a model defined in huaweicloud sdk"""
+        """InvokeFunctionRequest
+
+        The model defined in huaweicloud sdk
+
+        :param function_urn: 函数的URN，详细解释见FunctionGraph函数模型的描述。
+        :type function_urn: str
+        :param x_cff_log_type: 取值为：tail（返回函数执行后的4K日志），或者为空（不返回日志）。
+        :type x_cff_log_type: str
+        :param x_cff_request_version: 返回体格式，取值v0,v1。
+        :type x_cff_request_version: str
+        :param body: 执行函数请求体，为json格式。
+        :type body: dict(str, object)
+        """
         
         
 
@@ -72,7 +83,7 @@ class InvokeFunctionRequest:
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
         :param function_urn: The function_urn of this InvokeFunctionRequest.
-        :type: str
+        :type function_urn: str
         """
         self._function_urn = function_urn
 
@@ -94,7 +105,7 @@ class InvokeFunctionRequest:
         取值为：tail（返回函数执行后的4K日志），或者为空（不返回日志）。
 
         :param x_cff_log_type: The x_cff_log_type of this InvokeFunctionRequest.
-        :type: str
+        :type x_cff_log_type: str
         """
         self._x_cff_log_type = x_cff_log_type
 
@@ -116,7 +127,7 @@ class InvokeFunctionRequest:
         返回体格式，取值v0,v1。
 
         :param x_cff_request_version: The x_cff_request_version of this InvokeFunctionRequest.
-        :type: str
+        :type x_cff_request_version: str
         """
         self._x_cff_request_version = x_cff_request_version
 
@@ -138,7 +149,7 @@ class InvokeFunctionRequest:
         执行函数请求体，为json格式。
 
         :param body: The body of this InvokeFunctionRequest.
-        :type: dict(str, object)
+        :type body: dict(str, object)
         """
         self._body = body
 

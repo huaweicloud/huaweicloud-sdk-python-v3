@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateReferResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateReferResponse(SdkResponse):
     }
 
     def __init__(self, referer=None):
-        """UpdateReferResponse - a model defined in huaweicloud sdk"""
+        """UpdateReferResponse
+
+        The model defined in huaweicloud sdk
+
+        :param referer: 
+        :type referer: :class:`huaweicloudsdkcdn.v1.RefererRsp`
+        """
         
         super(UpdateReferResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class UpdateReferResponse(SdkResponse):
 
 
         :return: The referer of this UpdateReferResponse.
-        :rtype: RefererRsp
+        :rtype: :class:`huaweicloudsdkcdn.v1.RefererRsp`
         """
         return self._referer
 
@@ -56,7 +61,7 @@ class UpdateReferResponse(SdkResponse):
 
 
         :param referer: The referer of this UpdateReferResponse.
-        :type: RefererRsp
+        :type referer: :class:`huaweicloudsdkcdn.v1.RefererRsp`
         """
         self._referer = referer
 

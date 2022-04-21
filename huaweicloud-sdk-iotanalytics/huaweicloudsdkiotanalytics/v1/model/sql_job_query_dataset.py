@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SqlJobQueryDataset:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class SqlJobQueryDataset:
     }
 
     def __init__(self, sql_type=None, schema=None, rows=None):
-        """SqlJobQueryDataset - a model defined in huaweicloud sdk"""
+        """SqlJobQueryDataset
+
+        The model defined in huaweicloud sdk
+
+        :param sql_type: 作业类型。DDL, DCL, IMPORT, EXPORT, QUERY, INSERT.
+        :type sql_type: str
+        :param schema: 当语句类型为DDL时，返回其结果的列名称及类型。
+        :type schema: list[object]
+        :param rows: 当语句类型为DDL时，直接返回其执行结果。
+        :type rows: list[object]
+        """
         
         
 
@@ -67,7 +76,7 @@ class SqlJobQueryDataset:
         作业类型。DDL, DCL, IMPORT, EXPORT, QUERY, INSERT.
 
         :param sql_type: The sql_type of this SqlJobQueryDataset.
-        :type: str
+        :type sql_type: str
         """
         self._sql_type = sql_type
 
@@ -89,7 +98,7 @@ class SqlJobQueryDataset:
         当语句类型为DDL时，返回其结果的列名称及类型。
 
         :param schema: The schema of this SqlJobQueryDataset.
-        :type: list[object]
+        :type schema: list[object]
         """
         self._schema = schema
 
@@ -111,7 +120,7 @@ class SqlJobQueryDataset:
         当语句类型为DDL时，直接返回其执行结果。
 
         :param rows: The rows of this SqlJobQueryDataset.
-        :type: list[object]
+        :type rows: list[object]
         """
         self._rows = rows
 

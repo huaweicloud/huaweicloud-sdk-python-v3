@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ImageInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ImageInfo:
     }
 
     def __init__(self, id=None, name=None, os_type=None, links=None):
-        """ImageInfo - a model defined in huaweicloud sdk"""
+        """ImageInfo
+
+        The model defined in huaweicloud sdk
+
+        :param id: 镜像ID，格式为UUID。
+        :type id: str
+        :param name: 镜像的名称
+        :type name: str
+        :param os_type: 镜像的类型。取值为：Linux（包括SUSE/RedHat/CentOS/Oracle Linux/EulerOS/Ubuntu操作系统）Windows（Windows操作系统）Other（ESXi操作系统）
+        :type os_type: str
+        :param links: 镜像相关快捷链接地址。
+        :type links: list[:class:`huaweicloudsdkbms.v1.Links`]
+        """
         
         
 
@@ -73,7 +84,7 @@ class ImageInfo:
         镜像ID，格式为UUID。
 
         :param id: The id of this ImageInfo.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -95,7 +106,7 @@ class ImageInfo:
         镜像的名称
 
         :param name: The name of this ImageInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -117,7 +128,7 @@ class ImageInfo:
         镜像的类型。取值为：Linux（包括SUSE/RedHat/CentOS/Oracle Linux/EulerOS/Ubuntu操作系统）Windows（Windows操作系统）Other（ESXi操作系统）
 
         :param os_type: The os_type of this ImageInfo.
-        :type: str
+        :type os_type: str
         """
         self._os_type = os_type
 
@@ -128,7 +139,7 @@ class ImageInfo:
         镜像相关快捷链接地址。
 
         :return: The links of this ImageInfo.
-        :rtype: list[Links]
+        :rtype: list[:class:`huaweicloudsdkbms.v1.Links`]
         """
         return self._links
 
@@ -139,7 +150,7 @@ class ImageInfo:
         镜像相关快捷链接地址。
 
         :param links: The links of this ImageInfo.
-        :type: list[Links]
+        :type links: list[:class:`huaweicloudsdkbms.v1.Links`]
         """
         self._links = links
 

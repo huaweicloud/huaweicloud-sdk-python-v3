@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VersionDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class VersionDetail:
     }
 
     def __init__(self, id=None, links=None, version=None, status=None, updated=None, min_version=None):
-        """VersionDetail - a model defined in huaweicloud sdk"""
+        """VersionDetail
+
+        The model defined in huaweicloud sdk
+
+        :param id: 版本ID（版本号)。
+        :type id: str
+        :param links: 
+        :type links: :class:`huaweicloudsdkswr.v2.Link`
+        :param version: 若该版本API支持微版本，则填支持的最大微版本号，如果不支持微版本，则填空。
+        :type version: str
+        :param status: 版本状态，为如下3种：  CURRENT：表示该版本为主推版本；  SUPPORTED：表示为老版本，但是现在还继续支持；  DEPRECATED：表示为废弃版本，存在后续删除的可能。 
+        :type status: str
+        :param updated: 版本发布时间，要求用UTC时间表示。如v1发布的时间2014-06-28T12:20:21Z。
+        :type updated: str
+        :param min_version: 若该版本API 支持微版本，则填支持的最小微版本号， 如果不支持微版本，则填空。
+        :type min_version: str
+        """
         
         
 
@@ -77,7 +92,7 @@ class VersionDetail:
         版本ID（版本号)。
 
         :param id: The id of this VersionDetail.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -87,7 +102,7 @@ class VersionDetail:
 
 
         :return: The links of this VersionDetail.
-        :rtype: Link
+        :rtype: :class:`huaweicloudsdkswr.v2.Link`
         """
         return self._links
 
@@ -97,7 +112,7 @@ class VersionDetail:
 
 
         :param links: The links of this VersionDetail.
-        :type: Link
+        :type links: :class:`huaweicloudsdkswr.v2.Link`
         """
         self._links = links
 
@@ -119,7 +134,7 @@ class VersionDetail:
         若该版本API支持微版本，则填支持的最大微版本号，如果不支持微版本，则填空。
 
         :param version: The version of this VersionDetail.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -141,7 +156,7 @@ class VersionDetail:
         版本状态，为如下3种：  CURRENT：表示该版本为主推版本；  SUPPORTED：表示为老版本，但是现在还继续支持；  DEPRECATED：表示为废弃版本，存在后续删除的可能。 
 
         :param status: The status of this VersionDetail.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -163,7 +178,7 @@ class VersionDetail:
         版本发布时间，要求用UTC时间表示。如v1发布的时间2014-06-28T12:20:21Z。
 
         :param updated: The updated of this VersionDetail.
-        :type: str
+        :type updated: str
         """
         self._updated = updated
 
@@ -185,7 +200,7 @@ class VersionDetail:
         若该版本API 支持微版本，则填支持的最小微版本号， 如果不支持微版本，则填空。
 
         :param min_version: The min_version of this VersionDetail.
-        :type: str
+        :type min_version: str
         """
         self._min_version = min_version
 

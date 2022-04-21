@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PageParticipant:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class PageParticipant:
     }
 
     def __init__(self, data=None, offset=None, limit=None, count=None):
-        """PageParticipant - a model defined in huaweicloud sdk"""
+        """PageParticipant
+
+        The model defined in huaweicloud sdk
+
+        :param data: 与会者信息。
+        :type data: list[:class:`huaweicloudsdkmeeting.v1.ParticipantInfo`]
+        :param offset: 记录数偏移，这一页之前共有多少条。
+        :type offset: int
+        :param limit: 每页的记录数。
+        :type limit: int
+        :param count: 总记录数。
+        :type count: int
+        """
         
         
 
@@ -62,7 +73,7 @@ class PageParticipant:
         与会者信息。
 
         :return: The data of this PageParticipant.
-        :rtype: list[ParticipantInfo]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.ParticipantInfo`]
         """
         return self._data
 
@@ -73,7 +84,7 @@ class PageParticipant:
         与会者信息。
 
         :param data: The data of this PageParticipant.
-        :type: list[ParticipantInfo]
+        :type data: list[:class:`huaweicloudsdkmeeting.v1.ParticipantInfo`]
         """
         self._data = data
 
@@ -95,7 +106,7 @@ class PageParticipant:
         记录数偏移，这一页之前共有多少条。
 
         :param offset: The offset of this PageParticipant.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -117,7 +128,7 @@ class PageParticipant:
         每页的记录数。
 
         :param limit: The limit of this PageParticipant.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -139,7 +150,7 @@ class PageParticipant:
         总记录数。
 
         :param count: The count of this PageParticipant.
-        :type: int
+        :type count: int
         """
         self._count = count
 

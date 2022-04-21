@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowSqlResultWithJobRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowSqlResultWithJobRequest:
     }
 
     def __init__(self, job_execution_id=None, cluster_id=None):
-        """ShowSqlResultWithJobRequest - a model defined in huaweicloud sdk"""
+        """ShowSqlResultWithJobRequest
+
+        The model defined in huaweicloud sdk
+
+        :param job_execution_id: 作业ID。获取方法，请参见[获取作业ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
+        :type job_execution_id: str
+        :param cluster_id: 集群ID。获取方法，请参见[获取集群ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
+        :type cluster_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ShowSqlResultWithJobRequest:
         作业ID。获取方法，请参见[获取作业ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
 
         :param job_execution_id: The job_execution_id of this ShowSqlResultWithJobRequest.
-        :type: str
+        :type job_execution_id: str
         """
         self._job_execution_id = job_execution_id
 
@@ -83,7 +90,7 @@ class ShowSqlResultWithJobRequest:
         集群ID。获取方法，请参见[获取集群ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
 
         :param cluster_id: The cluster_id of this ShowSqlResultWithJobRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 

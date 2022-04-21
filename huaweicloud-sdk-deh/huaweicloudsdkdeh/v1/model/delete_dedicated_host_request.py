@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteDedicatedHostRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteDedicatedHostRequest:
     }
 
     def __init__(self, dedicated_host_id=None):
-        """DeleteDedicatedHostRequest - a model defined in huaweicloud sdk"""
+        """DeleteDedicatedHostRequest
+
+        The model defined in huaweicloud sdk
+
+        :param dedicated_host_id: 专属主机ID。
+        :type dedicated_host_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteDedicatedHostRequest:
         专属主机ID。
 
         :param dedicated_host_id: The dedicated_host_id of this DeleteDedicatedHostRequest.
-        :type: str
+        :type dedicated_host_id: str
         """
         self._dedicated_host_id = dedicated_host_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListEngineProductsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListEngineProductsResponse(SdkResponse):
     }
 
     def __init__(self, engine=None, versions=None, products=None):
-        """ListEngineProductsResponse - a model defined in huaweicloud sdk"""
+        """ListEngineProductsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param engine: 分布式消息服务的产品类型。
+        :type engine: str
+        :param versions: 支持的产品版本类型。
+        :type versions: list[str]
+        :param products: 产品规格的详细信息。
+        :type products: list[:class:`huaweicloudsdkrabbitmq.v2.ListEngineProductsEntity`]
+        """
         
         super(ListEngineProductsResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListEngineProductsResponse(SdkResponse):
         分布式消息服务的产品类型。
 
         :param engine: The engine of this ListEngineProductsResponse.
-        :type: str
+        :type engine: str
         """
         self._engine = engine
 
@@ -90,7 +99,7 @@ class ListEngineProductsResponse(SdkResponse):
         支持的产品版本类型。
 
         :param versions: The versions of this ListEngineProductsResponse.
-        :type: list[str]
+        :type versions: list[str]
         """
         self._versions = versions
 
@@ -101,7 +110,7 @@ class ListEngineProductsResponse(SdkResponse):
         产品规格的详细信息。
 
         :return: The products of this ListEngineProductsResponse.
-        :rtype: list[ListEngineProductsEntity]
+        :rtype: list[:class:`huaweicloudsdkrabbitmq.v2.ListEngineProductsEntity`]
         """
         return self._products
 
@@ -112,7 +121,7 @@ class ListEngineProductsResponse(SdkResponse):
         产品规格的详细信息。
 
         :param products: The products of this ListEngineProductsResponse.
-        :type: list[ListEngineProductsEntity]
+        :type products: list[:class:`huaweicloudsdkrabbitmq.v2.ListEngineProductsEntity`]
         """
         self._products = products
 

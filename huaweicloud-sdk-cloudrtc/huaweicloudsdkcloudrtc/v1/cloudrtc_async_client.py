@@ -51,22 +51,20 @@ class CloudRTCAsyncClient(Client):
     def list_rtc_abnormal_event_dimension_async(self, request):
         """查询异常事件用户分布
 
-        查询指定APP下指定时间内的通话异常明细数据分布情况。  最大查询跨度1天。 
+        查询指定APP下指定时间内的通话异常明细数据分布情况。
+        
+        最大查询跨度1天。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListRtcAbnormalEventDimensionRequest request
-        :return: ListRtcAbnormalEventDimensionResponse
+        :param request: Request instance for ListRtcAbnormalEventDimension
+        :type request: :class:`huaweicloudsdkcloudrtc.v1.ListRtcAbnormalEventDimensionRequest`
+        :rtype: :class:`huaweicloudsdkcloudrtc.v1.ListRtcAbnormalEventDimensionResponse`
         """
         return self.list_rtc_abnormal_event_dimension_with_http_info(request)
 
     def list_rtc_abnormal_event_dimension_with_http_info(self, request):
-        """查询异常事件用户分布
-
-        查询指定APP下指定时间内的通话异常明细数据分布情况。  最大查询跨度1天。 
-
-        :param ListRtcAbnormalEventDimensionRequest request
-        :return: ListRtcAbnormalEventDimensionResponse
-        """
-
         all_params = ['app', 'room_id', 'dimension', 'start_time', 'end_time']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -118,26 +116,23 @@ class CloudRTCAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_rtc_abnormal_events_async(self, request):
         """查询用户异常体验事件
 
-        查询指定APP下通话的异常明细数据。  最大查询跨度1天。 
+        查询指定APP下通话的异常明细数据。
+        
+        最大查询跨度1天。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListRtcAbnormalEventsRequest request
-        :return: ListRtcAbnormalEventsResponse
+        :param request: Request instance for ListRtcAbnormalEvents
+        :type request: :class:`huaweicloudsdkcloudrtc.v1.ListRtcAbnormalEventsRequest`
+        :rtype: :class:`huaweicloudsdkcloudrtc.v1.ListRtcAbnormalEventsResponse`
         """
         return self.list_rtc_abnormal_events_with_http_info(request)
 
     def list_rtc_abnormal_events_with_http_info(self, request):
-        """查询用户异常体验事件
-
-        查询指定APP下通话的异常明细数据。  最大查询跨度1天。 
-
-        :param ListRtcAbnormalEventsRequest request
-        :return: ListRtcAbnormalEventsResponse
-        """
-
         all_params = ['app', 'room_id', 'uid', 'start_time', 'end_time', 'limit', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -193,26 +188,23 @@ class CloudRTCAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_rtc_client_qos_details_async(self, request):
         """查询用户通话指标
 
-        查询用户通话质量指标数据。  可查询5天内的数据，mid 不为null，查询实时数据时，查询起止时间不超过24个小时，每次查询单个用户时，支持跨天查询。 
+        查询用户通话质量指标数据。
+        
+        可查询5天内的数据，mid 不为null，查询实时数据时，查询起止时间不超过24个小时，每次查询单个用户时，支持跨天查询。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListRtcClientQosDetailsRequest request
-        :return: ListRtcClientQosDetailsResponse
+        :param request: Request instance for ListRtcClientQosDetails
+        :type request: :class:`huaweicloudsdkcloudrtc.v1.ListRtcClientQosDetailsRequest`
+        :rtype: :class:`huaweicloudsdkcloudrtc.v1.ListRtcClientQosDetailsResponse`
         """
         return self.list_rtc_client_qos_details_with_http_info(request)
 
     def list_rtc_client_qos_details_with_http_info(self, request):
-        """查询用户通话指标
-
-        查询用户通话质量指标数据。  可查询5天内的数据，mid 不为null，查询实时数据时，查询起止时间不超过24个小时，每次查询单个用户时，支持跨天查询。 
-
-        :param ListRtcClientQosDetailsRequest request
-        :return: ListRtcClientQosDetailsResponse
-        """
-
         all_params = ['project_id', 'app_id', 'room_id', 'mid', 'start_time', 'end_time', 'authorization', 'x_sdk_date', 'x_project_id', 'domain', 'user_id', 'peer_id', 'stream_id', 'direction', 'time_type', 'limit', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -288,26 +280,23 @@ class CloudRTCAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_rtc_history_quality_async(self, request):
         """查询历史质量
 
-        查询质量指标过去每天的体验数据，可查询最近31天的数据。当天未结束，无法查询到当天的体验数据。  最大查询跨度31天。 
+        查询质量指标过去每天的体验数据，可查询最近31天的数据。当天未结束，无法查询到当天的体验数据。
+        
+        最大查询跨度31天。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListRtcHistoryQualityRequest request
-        :return: ListRtcHistoryQualityResponse
+        :param request: Request instance for ListRtcHistoryQuality
+        :type request: :class:`huaweicloudsdkcloudrtc.v1.ListRtcHistoryQualityRequest`
+        :rtype: :class:`huaweicloudsdkcloudrtc.v1.ListRtcHistoryQualityResponse`
         """
         return self.list_rtc_history_quality_with_http_info(request)
 
     def list_rtc_history_quality_with_http_info(self, request):
-        """查询历史质量
-
-        查询质量指标过去每天的体验数据，可查询最近31天的数据。当天未结束，无法查询到当天的体验数据。  最大查询跨度31天。 
-
-        :param ListRtcHistoryQualityRequest request
-        :return: ListRtcHistoryQualityResponse
-        """
-
         all_params = ['project_id', 'app', 'metric', 'authorization', 'x_sdk_date', 'x_project_id', 'start_date', 'end_date']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -366,26 +355,23 @@ class CloudRTCAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_rtc_history_scale_async(self, request):
         """查询历史规模
 
-        查询指标过去每天的规模数量，可查询最近31天的数据。当天未结束，无法查到当天的房间数与用户数。  最大查询跨度31天。 
+        查询指标过去每天的规模数量，可查询最近31天的数据。当天未结束，无法查到当天的房间数与用户数。
+        
+        最大查询跨度31天。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListRtcHistoryScaleRequest request
-        :return: ListRtcHistoryScaleResponse
+        :param request: Request instance for ListRtcHistoryScale
+        :type request: :class:`huaweicloudsdkcloudrtc.v1.ListRtcHistoryScaleRequest`
+        :rtype: :class:`huaweicloudsdkcloudrtc.v1.ListRtcHistoryScaleResponse`
         """
         return self.list_rtc_history_scale_with_http_info(request)
 
     def list_rtc_history_scale_with_http_info(self, request):
-        """查询历史规模
-
-        查询指标过去每天的规模数量，可查询最近31天的数据。当天未结束，无法查到当天的房间数与用户数。  最大查询跨度31天。 
-
-        :param ListRtcHistoryScaleRequest request
-        :return: ListRtcHistoryScaleResponse
-        """
-
         all_params = ['project_id', 'app', 'metric', 'authorization', 'x_sdk_date', 'x_project_id', 'start_date', 'end_date']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -444,26 +430,21 @@ class CloudRTCAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_rtc_history_usage_async(self, request):
         """查询用量
 
         查询过去的某一时间段内各种业务的用量数据
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListRtcHistoryUsageRequest request
-        :return: ListRtcHistoryUsageResponse
+        :param request: Request instance for ListRtcHistoryUsage
+        :type request: :class:`huaweicloudsdkcloudrtc.v1.ListRtcHistoryUsageRequest`
+        :rtype: :class:`huaweicloudsdkcloudrtc.v1.ListRtcHistoryUsageResponse`
         """
         return self.list_rtc_history_usage_with_http_info(request)
 
     def list_rtc_history_usage_with_http_info(self, request):
-        """查询用量
-
-        查询过去的某一时间段内各种业务的用量数据
-
-        :param ListRtcHistoryUsageRequest request
-        :return: ListRtcHistoryUsageResponse
-        """
-
         all_params = ['project_id', 'app', 'metric', 'start_date', 'end_date', 'authorization', 'x_sdk_date', 'x_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -521,26 +502,23 @@ class CloudRTCAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_rtc_realtime_network_async(self, request):
         """查询实时网络
 
-        获取实时网络数据相关指标在某一时间段内每分钟的统计数据。  最大查询跨度1天。 
+        获取实时网络数据相关指标在某一时间段内每分钟的统计数据。
+        
+        最大查询跨度1天。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListRtcRealtimeNetworkRequest request
-        :return: ListRtcRealtimeNetworkResponse
+        :param request: Request instance for ListRtcRealtimeNetwork
+        :type request: :class:`huaweicloudsdkcloudrtc.v1.ListRtcRealtimeNetworkRequest`
+        :rtype: :class:`huaweicloudsdkcloudrtc.v1.ListRtcRealtimeNetworkResponse`
         """
         return self.list_rtc_realtime_network_with_http_info(request)
 
     def list_rtc_realtime_network_with_http_info(self, request):
-        """查询实时网络
-
-        获取实时网络数据相关指标在某一时间段内每分钟的统计数据。  最大查询跨度1天。 
-
-        :param ListRtcRealtimeNetworkRequest request
-        :return: ListRtcRealtimeNetworkResponse
-        """
-
         all_params = ['project_id', 'app', 'metric', 'sdk_type', 'authorization', 'x_sdk_date', 'x_project_id', 'room_id', 'start_time', 'end_time']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -602,26 +580,23 @@ class CloudRTCAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_rtc_realtime_quality_async(self, request):
         """查询实时质量数据
 
-        获取实时质量数据的相关指标在某一时间段内每分钟的统计数据。  最大查询跨度1天。 
+        获取实时质量数据的相关指标在某一时间段内每分钟的统计数据。
+        
+        最大查询跨度1天。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListRtcRealtimeQualityRequest request
-        :return: ListRtcRealtimeQualityResponse
+        :param request: Request instance for ListRtcRealtimeQuality
+        :type request: :class:`huaweicloudsdkcloudrtc.v1.ListRtcRealtimeQualityRequest`
+        :rtype: :class:`huaweicloudsdkcloudrtc.v1.ListRtcRealtimeQualityResponse`
         """
         return self.list_rtc_realtime_quality_with_http_info(request)
 
     def list_rtc_realtime_quality_with_http_info(self, request):
-        """查询实时质量数据
-
-        获取实时质量数据的相关指标在某一时间段内每分钟的统计数据。  最大查询跨度1天。 
-
-        :param ListRtcRealtimeQualityRequest request
-        :return: ListRtcRealtimeQualityResponse
-        """
-
         all_params = ['project_id', 'app', 'metric', 'sdk_type', 'authorization', 'x_sdk_date', 'x_project_id', 'room_id', 'start_time', 'end_time']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -683,26 +658,23 @@ class CloudRTCAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_rtc_realtime_scale_async(self, request):
         """查询实时规模
 
-        获取规模相关的指标在某一时间段内每分钟的统计数据。  最大查询跨度1天。 
+        获取规模相关的指标在某一时间段内每分钟的统计数据。
+        
+        最大查询跨度1天。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListRtcRealtimeScaleRequest request
-        :return: ListRtcRealtimeScaleResponse
+        :param request: Request instance for ListRtcRealtimeScale
+        :type request: :class:`huaweicloudsdkcloudrtc.v1.ListRtcRealtimeScaleRequest`
+        :rtype: :class:`huaweicloudsdkcloudrtc.v1.ListRtcRealtimeScaleResponse`
         """
         return self.list_rtc_realtime_scale_with_http_info(request)
 
     def list_rtc_realtime_scale_with_http_info(self, request):
-        """查询实时规模
-
-        获取规模相关的指标在某一时间段内每分钟的统计数据。  最大查询跨度1天。 
-
-        :param ListRtcRealtimeScaleRequest request
-        :return: ListRtcRealtimeScaleResponse
-        """
-
         all_params = ['project_id', 'app', 'metric', 'authorization', 'x_sdk_date', 'x_project_id', 'room_id', 'start_time', 'end_time']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -762,26 +734,21 @@ class CloudRTCAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_rtc_realtime_scale_dimension_async(self, request):
         """查询实时规模分布
 
         对规模相关的数据，根据指定维度按在线用户数排名，获取规模相关的指标在指定维度下的统计数据
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListRtcRealtimeScaleDimensionRequest request
-        :return: ListRtcRealtimeScaleDimensionResponse
+        :param request: Request instance for ListRtcRealtimeScaleDimension
+        :type request: :class:`huaweicloudsdkcloudrtc.v1.ListRtcRealtimeScaleDimensionRequest`
+        :rtype: :class:`huaweicloudsdkcloudrtc.v1.ListRtcRealtimeScaleDimensionResponse`
         """
         return self.list_rtc_realtime_scale_dimension_with_http_info(request)
 
     def list_rtc_realtime_scale_dimension_with_http_info(self, request):
-        """查询实时规模分布
-
-        对规模相关的数据，根据指定维度按在线用户数排名，获取规模相关的指标在指定维度下的统计数据
-
-        :param ListRtcRealtimeScaleDimensionRequest request
-        :return: ListRtcRealtimeScaleDimensionResponse
-        """
-
         all_params = ['project_id', 'app', 'metric', 'dimension', 'time', 'authorization', 'x_sdk_date', 'x_project_id', 'room_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -841,26 +808,23 @@ class CloudRTCAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_rtc_room_list_async(self, request):
         """查询房间列表
 
-        指定事件范围查询这段期间创建的房间列表。  最大查询跨度90天。 
+        指定事件范围查询这段期间创建的房间列表。
+        
+        最大查询跨度90天。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListRtcRoomListRequest request
-        :return: ListRtcRoomListResponse
+        :param request: Request instance for ListRtcRoomList
+        :type request: :class:`huaweicloudsdkcloudrtc.v1.ListRtcRoomListRequest`
+        :rtype: :class:`huaweicloudsdkcloudrtc.v1.ListRtcRoomListResponse`
         """
         return self.list_rtc_room_list_with_http_info(request)
 
     def list_rtc_room_list_with_http_info(self, request):
-        """查询房间列表
-
-        指定事件范围查询这段期间创建的房间列表。  最大查询跨度90天。 
-
-        :param ListRtcRoomListRequest request
-        :return: ListRtcRoomListResponse
-        """
-
         all_params = ['project_id', 'app', 'authorization', 'x_sdk_date', 'x_project_id', 'room_id', 'state', 'start_time', 'end_time', 'limit', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -924,26 +888,23 @@ class CloudRTCAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_rtc_user_list_async(self, request):
         """查询用户列表
 
-        指定事件范围查询这段期间加入房间的用户列表。  最大查询跨度90天。 
+        指定事件范围查询这段期间加入房间的用户列表。
+        
+        最大查询跨度90天。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListRtcUserListRequest request
-        :return: ListRtcUserListResponse
+        :param request: Request instance for ListRtcUserList
+        :type request: :class:`huaweicloudsdkcloudrtc.v1.ListRtcUserListRequest`
+        :rtype: :class:`huaweicloudsdkcloudrtc.v1.ListRtcUserListResponse`
         """
         return self.list_rtc_user_list_with_http_info(request)
 
     def list_rtc_user_list_with_http_info(self, request):
-        """查询用户列表
-
-        指定事件范围查询这段期间加入房间的用户列表。  最大查询跨度90天。 
-
-        :param ListRtcUserListRequest request
-        :return: ListRtcUserListResponse
-        """
-
         all_params = ['project_id', 'app', 'authorization', 'x_sdk_date', 'x_project_id', 'room_id', 'uid', 'nickname', 'region', 'isp', 'state', 'start_time', 'end_time', 'limit', 'offset', 'type']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1019,7 +980,6 @@ class CloudRTCAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

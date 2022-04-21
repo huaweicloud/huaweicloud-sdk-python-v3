@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListBackupsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListBackupsResponse(SdkResponse):
     }
 
     def __init__(self, backups=None, count=None, offset=None, limit=None):
-        """ListBackupsResponse - a model defined in huaweicloud sdk"""
+        """ListBackupsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param backups: 备份列表
+        :type backups: list[:class:`huaweicloudsdkcbr.v1.BackupResp`]
+        :param count: 备份个数
+        :type count: int
+        :param offset: 偏移量，表示从此偏移量开始查询
+        :type offset: int
+        :param limit: 每页显示的条目数量
+        :type limit: int
+        """
         
         super(ListBackupsResponse, self).__init__()
 
@@ -62,7 +73,7 @@ class ListBackupsResponse(SdkResponse):
         备份列表
 
         :return: The backups of this ListBackupsResponse.
-        :rtype: list[BackupResp]
+        :rtype: list[:class:`huaweicloudsdkcbr.v1.BackupResp`]
         """
         return self._backups
 
@@ -73,7 +84,7 @@ class ListBackupsResponse(SdkResponse):
         备份列表
 
         :param backups: The backups of this ListBackupsResponse.
-        :type: list[BackupResp]
+        :type backups: list[:class:`huaweicloudsdkcbr.v1.BackupResp`]
         """
         self._backups = backups
 
@@ -95,7 +106,7 @@ class ListBackupsResponse(SdkResponse):
         备份个数
 
         :param count: The count of this ListBackupsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -117,7 +128,7 @@ class ListBackupsResponse(SdkResponse):
         偏移量，表示从此偏移量开始查询
 
         :param offset: The offset of this ListBackupsResponse.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -139,7 +150,7 @@ class ListBackupsResponse(SdkResponse):
         每页显示的条目数量
 
         :param limit: The limit of this ListBackupsResponse.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

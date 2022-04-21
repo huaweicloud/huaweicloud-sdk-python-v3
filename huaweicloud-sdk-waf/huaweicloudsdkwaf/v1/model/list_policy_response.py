@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPolicyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListPolicyResponse(SdkResponse):
     }
 
     def __init__(self, total=None, items=None):
-        """ListPolicyResponse - a model defined in huaweicloud sdk"""
+        """ListPolicyResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 防护策略的数量
+        :type total: int
+        :param items: 防护策略的具体内容
+        :type items: list[:class:`huaweicloudsdkwaf.v1.PolicyResponse`]
+        """
         
         super(ListPolicyResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListPolicyResponse(SdkResponse):
         防护策略的数量
 
         :param total: The total of this ListPolicyResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -74,7 +81,7 @@ class ListPolicyResponse(SdkResponse):
         防护策略的具体内容
 
         :return: The items of this ListPolicyResponse.
-        :rtype: list[PolicyResponse]
+        :rtype: list[:class:`huaweicloudsdkwaf.v1.PolicyResponse`]
         """
         return self._items
 
@@ -85,7 +92,7 @@ class ListPolicyResponse(SdkResponse):
         防护策略的具体内容
 
         :param items: The items of this ListPolicyResponse.
-        :type: list[PolicyResponse]
+        :type items: list[:class:`huaweicloudsdkwaf.v1.PolicyResponse`]
         """
         self._items = items
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExtendReplicationRequestParams:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ExtendReplicationRequestParams:
     }
 
     def __init__(self, new_size=None):
-        """ExtendReplicationRequestParams - a model defined in huaweicloud sdk"""
+        """ExtendReplicationRequestParams
+
+        The model defined in huaweicloud sdk
+
+        :param new_size: 复制对内的磁盘扩容后的最终容量。单位：GB 说明:该参数的取值为小数时，系统默认取小数点前的整数值。
+        :type new_size: int
+        """
         
         
 
@@ -57,7 +62,7 @@ class ExtendReplicationRequestParams:
         复制对内的磁盘扩容后的最终容量。单位：GB 说明:该参数的取值为小数时，系统默认取小数点前的整数值。
 
         :param new_size: The new_size of this ExtendReplicationRequestParams.
-        :type: int
+        :type new_size: int
         """
         self._new_size = new_size
 

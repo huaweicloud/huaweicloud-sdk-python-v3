@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CancelEipRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CancelEipRequest:
     }
 
     def __init__(self, node_id=None):
-        """CancelEipRequest - a model defined in huaweicloud sdk"""
+        """CancelEipRequest
+
+        The model defined in huaweicloud sdk
+
+        :param node_id: 节点ID。
+        :type node_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class CancelEipRequest:
         节点ID。
 
         :param node_id: The node_id of this CancelEipRequest.
-        :type: str
+        :type node_id: str
         """
         self._node_id = node_id
 

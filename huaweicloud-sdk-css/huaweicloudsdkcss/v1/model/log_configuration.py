@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LogConfiguration:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class LogConfiguration:
     }
 
     def __init__(self, id=None, cluster_id=None, obs_bucket=None, agency=None, update_at=None, base_path=None, auto_enable=None, period=None, log_switch=None):
-        """LogConfiguration - a model defined in huaweicloud sdk"""
+        """LogConfiguration
+
+        The model defined in huaweicloud sdk
+
+        :param id: ID。
+        :type id: str
+        :param cluster_id: 集群ID。
+        :type cluster_id: str
+        :param obs_bucket: OBS桶。
+        :type obs_bucket: str
+        :param agency: IAM 委托。
+        :type agency: str
+        :param update_at: 更新时间。
+        :type update_at: int
+        :param base_path: 备份路径。
+        :type base_path: str
+        :param auto_enable: 自动备份开关。
+        :type auto_enable: bool
+        :param period: 备份开始时间。
+        :type period: str
+        :param log_switch: 日志开关。
+        :type log_switch: bool
+        """
         
         
 
@@ -98,7 +119,7 @@ class LogConfiguration:
         ID。
 
         :param id: The id of this LogConfiguration.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -120,7 +141,7 @@ class LogConfiguration:
         集群ID。
 
         :param cluster_id: The cluster_id of this LogConfiguration.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -142,7 +163,7 @@ class LogConfiguration:
         OBS桶。
 
         :param obs_bucket: The obs_bucket of this LogConfiguration.
-        :type: str
+        :type obs_bucket: str
         """
         self._obs_bucket = obs_bucket
 
@@ -164,7 +185,7 @@ class LogConfiguration:
         IAM 委托。
 
         :param agency: The agency of this LogConfiguration.
-        :type: str
+        :type agency: str
         """
         self._agency = agency
 
@@ -186,7 +207,7 @@ class LogConfiguration:
         更新时间。
 
         :param update_at: The update_at of this LogConfiguration.
-        :type: int
+        :type update_at: int
         """
         self._update_at = update_at
 
@@ -208,7 +229,7 @@ class LogConfiguration:
         备份路径。
 
         :param base_path: The base_path of this LogConfiguration.
-        :type: str
+        :type base_path: str
         """
         self._base_path = base_path
 
@@ -230,7 +251,7 @@ class LogConfiguration:
         自动备份开关。
 
         :param auto_enable: The auto_enable of this LogConfiguration.
-        :type: bool
+        :type auto_enable: bool
         """
         self._auto_enable = auto_enable
 
@@ -252,7 +273,7 @@ class LogConfiguration:
         备份开始时间。
 
         :param period: The period of this LogConfiguration.
-        :type: str
+        :type period: str
         """
         self._period = period
 
@@ -274,7 +295,7 @@ class LogConfiguration:
         日志开关。
 
         :param log_switch: The log_switch of this LogConfiguration.
-        :type: bool
+        :type log_switch: bool
         """
         self._log_switch = log_switch
 

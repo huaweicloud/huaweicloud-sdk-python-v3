@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TestCaseExecuteBean:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class TestCaseExecuteBean:
     }
 
     def __init__(self, testcase_id=None, execute_id=None, result_id=None, start_time=None):
-        """TestCaseExecuteBean - a model defined in huaweicloud sdk"""
+        """TestCaseExecuteBean
+
+        The model defined in huaweicloud sdk
+
+        :param testcase_id: 测试用例唯一标识，列表中不允许存在重复的id，固定长度32位字符
+        :type testcase_id: str
+        :param execute_id: 注册服务执行id，该值不允许重复，不超过32位字符
+        :type execute_id: str
+        :param result_id: 测试用例结果，（0-成功，1-失败，5-执行中，6-停止）
+        :type result_id: str
+        :param start_time: 用例开始执行的时间戳，在执行开始时该字段必传
+        :type start_time: int
+        """
         
         
 
@@ -69,7 +80,7 @@ class TestCaseExecuteBean:
         测试用例唯一标识，列表中不允许存在重复的id，固定长度32位字符
 
         :param testcase_id: The testcase_id of this TestCaseExecuteBean.
-        :type: str
+        :type testcase_id: str
         """
         self._testcase_id = testcase_id
 
@@ -91,7 +102,7 @@ class TestCaseExecuteBean:
         注册服务执行id，该值不允许重复，不超过32位字符
 
         :param execute_id: The execute_id of this TestCaseExecuteBean.
-        :type: str
+        :type execute_id: str
         """
         self._execute_id = execute_id
 
@@ -113,7 +124,7 @@ class TestCaseExecuteBean:
         测试用例结果，（0-成功，1-失败，5-执行中，6-停止）
 
         :param result_id: The result_id of this TestCaseExecuteBean.
-        :type: str
+        :type result_id: str
         """
         self._result_id = result_id
 
@@ -135,7 +146,7 @@ class TestCaseExecuteBean:
         用例开始执行的时间戳，在执行开始时该字段必传
 
         :param start_time: The start_time of this TestCaseExecuteBean.
-        :type: int
+        :type start_time: int
         """
         self._start_time = start_time
 

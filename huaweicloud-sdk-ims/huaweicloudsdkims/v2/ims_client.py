@@ -52,21 +52,17 @@ class ImsClient(Client):
         """添加镜像标签
 
         该接口用于为指定镜像添加或更新指定的单个标签
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param AddImageTagRequest request
-        :return: AddImageTagResponse
+        :param request: Request instance for AddImageTag
+        :type request: :class:`huaweicloudsdkims.v2.AddImageTagRequest`
+        :rtype: :class:`huaweicloudsdkims.v2.AddImageTagResponse`
         """
         return self.add_image_tag_with_http_info(request)
 
     def add_image_tag_with_http_info(self, request):
-        """添加镜像标签
-
-        该接口用于为指定镜像添加或更新指定的单个标签
-
-        :param AddImageTagRequest request
-        :return: AddImageTagResponse
-        """
-
         all_params = ['image_id', 'bodyparam']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -112,26 +108,22 @@ class ImsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_add_members(self, request):
         """批量添加镜像成员
 
-        该接口为扩展接口，主要用于镜像共享时用户将多个镜像共享给多个用户。 该接口为异步接口，返回job_id说明任务下发成功，查询异步任务状态，如果是success说明任务执行成功，如果是failed说明任务执行失败。如何查询异步任务，请参见异步任务查询。
+        该接口为扩展接口，主要用于镜像共享时用户将多个镜像共享给多个用户。
+        该接口为异步接口，返回job_id说明任务下发成功，查询异步任务状态，如果是success说明任务执行成功，如果是failed说明任务执行失败。如何查询异步任务，请参见异步任务查询。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchAddMembersRequest request
-        :return: BatchAddMembersResponse
+        :param request: Request instance for BatchAddMembers
+        :type request: :class:`huaweicloudsdkims.v2.BatchAddMembersRequest`
+        :rtype: :class:`huaweicloudsdkims.v2.BatchAddMembersResponse`
         """
         return self.batch_add_members_with_http_info(request)
 
     def batch_add_members_with_http_info(self, request):
-        """批量添加镜像成员
-
-        该接口为扩展接口，主要用于镜像共享时用户将多个镜像共享给多个用户。 该接口为异步接口，返回job_id说明任务下发成功，查询异步任务状态，如果是success说明任务执行成功，如果是failed说明任务执行失败。如何查询异步任务，请参见异步任务查询。
-
-        :param BatchAddMembersRequest request
-        :return: BatchAddMembersResponse
-        """
-
         all_params = ['members']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -175,26 +167,21 @@ class ImsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_add_or_delete_tags(self, request):
         """批量添加删除镜像标签
 
         该接口用于为指定镜像批量添加/更新、删除标签。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchAddOrDeleteTagsRequest request
-        :return: BatchAddOrDeleteTagsResponse
+        :param request: Request instance for BatchAddOrDeleteTags
+        :type request: :class:`huaweicloudsdkims.v2.BatchAddOrDeleteTagsRequest`
+        :rtype: :class:`huaweicloudsdkims.v2.BatchAddOrDeleteTagsResponse`
         """
         return self.batch_add_or_delete_tags_with_http_info(request)
 
     def batch_add_or_delete_tags_with_http_info(self, request):
-        """批量添加删除镜像标签
-
-        该接口用于为指定镜像批量添加/更新、删除标签。
-
-        :param BatchAddOrDeleteTagsRequest request
-        :return: BatchAddOrDeleteTagsResponse
-        """
-
         all_params = ['image_id', 'bodyparam']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -240,26 +227,22 @@ class ImsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_delete_members(self, request):
         """批量删除镜像成员
 
-        该接口为扩展接口，主要用于取消镜像共享。 该接口为异步接口，返回job_id说明任务下发成功，查询异步任务状态，如果是success说明任务执行成功，如果是failed说明任务执行失败。如何查询异步任务，请参见异步任务查询。
+        该接口为扩展接口，主要用于取消镜像共享。
+        该接口为异步接口，返回job_id说明任务下发成功，查询异步任务状态，如果是success说明任务执行成功，如果是failed说明任务执行失败。如何查询异步任务，请参见异步任务查询。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchDeleteMembersRequest request
-        :return: BatchDeleteMembersResponse
+        :param request: Request instance for BatchDeleteMembers
+        :type request: :class:`huaweicloudsdkims.v2.BatchDeleteMembersRequest`
+        :rtype: :class:`huaweicloudsdkims.v2.BatchDeleteMembersResponse`
         """
         return self.batch_delete_members_with_http_info(request)
 
     def batch_delete_members_with_http_info(self, request):
-        """批量删除镜像成员
-
-        该接口为扩展接口，主要用于取消镜像共享。 该接口为异步接口，返回job_id说明任务下发成功，查询异步任务状态，如果是success说明任务执行成功，如果是failed说明任务执行失败。如何查询异步任务，请参见异步任务查询。
-
-        :param BatchDeleteMembersRequest request
-        :return: BatchDeleteMembersResponse
-        """
-
         all_params = ['members']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -303,26 +286,22 @@ class ImsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_update_members(self, request):
         """批量更新镜像成员状态
 
-        该接口为扩展接口，主要用于用户接受或者拒绝多个共享镜像时批量更新镜像成员的状态。 该接口为异步接口，返回job_id说明任务下发成功，查询异步任务状态，如果是success说明任务执行成功，如果是failed说明任务执行失败。如何查询异步任务，请参见异步任务查询。
+        该接口为扩展接口，主要用于用户接受或者拒绝多个共享镜像时批量更新镜像成员的状态。
+        该接口为异步接口，返回job_id说明任务下发成功，查询异步任务状态，如果是success说明任务执行成功，如果是failed说明任务执行失败。如何查询异步任务，请参见异步任务查询。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchUpdateMembersRequest request
-        :return: BatchUpdateMembersResponse
+        :param request: Request instance for BatchUpdateMembers
+        :type request: :class:`huaweicloudsdkims.v2.BatchUpdateMembersRequest`
+        :rtype: :class:`huaweicloudsdkims.v2.BatchUpdateMembersResponse`
         """
         return self.batch_update_members_with_http_info(request)
 
     def batch_update_members_with_http_info(self, request):
-        """批量更新镜像成员状态
-
-        该接口为扩展接口，主要用于用户接受或者拒绝多个共享镜像时批量更新镜像成员的状态。 该接口为异步接口，返回job_id说明任务下发成功，查询异步任务状态，如果是success说明任务执行成功，如果是failed说明任务执行失败。如何查询异步任务，请参见异步任务查询。
-
-        :param BatchUpdateMembersRequest request
-        :return: BatchUpdateMembersResponse
-        """
-
         all_params = ['members']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -366,26 +345,23 @@ class ImsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def copy_image_cross_region(self, request):
         """跨Region复制镜像
 
-        该接口为扩展接口，用户在一个区域制作的私有镜像，可以通过跨Region复制镜像将镜像复制到其他区域，在其他区域发放相同类型的云服务器，帮助用户实现区域间的业务迁移。 该接口为异步接口，返回job_id说明任务下发成功，查询异步任务状态，如果是success说明任务执行成功，如果是failed说明任务执行失败。 如何查询异步任务，请参见异步任务进度查询。
+        该接口为扩展接口，用户在一个区域制作的私有镜像，可以通过跨Region复制镜像将镜像复制到其他区域，在其他区域发放相同类型的云服务器，帮助用户实现区域间的业务迁移。
+        该接口为异步接口，返回job_id说明任务下发成功，查询异步任务状态，如果是success说明任务执行成功，如果是failed说明任务执行失败。
+        如何查询异步任务，请参见异步任务进度查询。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CopyImageCrossRegionRequest request
-        :return: CopyImageCrossRegionResponse
+        :param request: Request instance for CopyImageCrossRegion
+        :type request: :class:`huaweicloudsdkims.v2.CopyImageCrossRegionRequest`
+        :rtype: :class:`huaweicloudsdkims.v2.CopyImageCrossRegionResponse`
         """
         return self.copy_image_cross_region_with_http_info(request)
 
     def copy_image_cross_region_with_http_info(self, request):
-        """跨Region复制镜像
-
-        该接口为扩展接口，用户在一个区域制作的私有镜像，可以通过跨Region复制镜像将镜像复制到其他区域，在其他区域发放相同类型的云服务器，帮助用户实现区域间的业务迁移。 该接口为异步接口，返回job_id说明任务下发成功，查询异步任务状态，如果是success说明任务执行成功，如果是failed说明任务执行失败。 如何查询异步任务，请参见异步任务进度查询。
-
-        :param CopyImageCrossRegionRequest request
-        :return: CopyImageCrossRegionResponse
-        """
-
         all_params = ['image_id', 'bodyparam']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -431,26 +407,22 @@ class ImsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def copy_image_in_region(self, request):
         """Region内复制镜像
 
-        该接口为扩展接口，主要用于用户将一个已有镜像复制为另一个镜像。复制镜像时，可以更改镜像的加密等属性，以满足不同的场景。 该接口为异步接口，返回job_id说明任务下发成功，查询异步任务状态，如果是success说明任务执行成功，如果是failed说明任务执行失败。如何查询异步任务，请参见异步任务查询。
+        该接口为扩展接口，主要用于用户将一个已有镜像复制为另一个镜像。复制镜像时，可以更改镜像的加密等属性，以满足不同的场景。
+        该接口为异步接口，返回job_id说明任务下发成功，查询异步任务状态，如果是success说明任务执行成功，如果是failed说明任务执行失败。如何查询异步任务，请参见异步任务查询。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CopyImageInRegionRequest request
-        :return: CopyImageInRegionResponse
+        :param request: Request instance for CopyImageInRegion
+        :type request: :class:`huaweicloudsdkims.v2.CopyImageInRegionRequest`
+        :rtype: :class:`huaweicloudsdkims.v2.CopyImageInRegionResponse`
         """
         return self.copy_image_in_region_with_http_info(request)
 
     def copy_image_in_region_with_http_info(self, request):
-        """Region内复制镜像
-
-        该接口为扩展接口，主要用于用户将一个已有镜像复制为另一个镜像。复制镜像时，可以更改镜像的加密等属性，以满足不同的场景。 该接口为异步接口，返回job_id说明任务下发成功，查询异步任务状态，如果是success说明任务执行成功，如果是failed说明任务执行失败。如何查询异步任务，请参见异步任务查询。
-
-        :param CopyImageInRegionRequest request
-        :return: CopyImageInRegionResponse
-        """
-
         all_params = ['image_id', 'bodyparam']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -496,26 +468,21 @@ class ImsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_data_image(self, request):
         """使用外部镜像文件制作数据镜像
 
         使用上传至OBS桶中的外部数据卷镜像文件制作数据镜像。作为异步接口，调用成功，只是说明后台收到了制作请求，镜像是否制作成功需要通过异步任务查询接口查询该任务的执行状态。具体请参考异步任务查询。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateDataImageRequest request
-        :return: CreateDataImageResponse
+        :param request: Request instance for CreateDataImage
+        :type request: :class:`huaweicloudsdkims.v2.CreateDataImageRequest`
+        :rtype: :class:`huaweicloudsdkims.v2.CreateDataImageResponse`
         """
         return self.create_data_image_with_http_info(request)
 
     def create_data_image_with_http_info(self, request):
-        """使用外部镜像文件制作数据镜像
-
-        使用上传至OBS桶中的外部数据卷镜像文件制作数据镜像。作为异步接口，调用成功，只是说明后台收到了制作请求，镜像是否制作成功需要通过异步任务查询接口查询该任务的执行状态。具体请参考异步任务查询。
-
-        :param CreateDataImageRequest request
-        :return: CreateDataImageResponse
-        """
-
         all_params = ['bodyparam']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -559,26 +526,32 @@ class ImsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_image(self, request):
         """制作镜像
 
-        本接口用于制作私有镜像，支持： - 使用云服务器制作私有镜像。 - 使用上传至OBS桶中的外部镜像文件制作私有镜像。 - 使用数据卷制作系统盘镜像。  作为异步接口，调用成功，只是说明云平台收到了制作请求，镜像是否制作成功需要通过异步任务查询接口查询该任务的执行状态，具体请参考异步任务查询。  不同场景必选参数说明：  - 使用云服务器制作镜像时的请求的必选参数：name,instance_id。 - 使用上传至OBS桶中的外部镜像文件时的请求必选参数：name,image_url,min_disk。 - 使用数据卷制作系统盘镜像时的请求必选参数：name,volume_id,os_version
+        本接口用于制作私有镜像，支持：
+        - 使用云服务器制作私有镜像。
+        - 使用上传至OBS桶中的外部镜像文件制作私有镜像。
+        - 使用数据卷制作系统盘镜像。
+        
+        作为异步接口，调用成功，只是说明云平台收到了制作请求，镜像是否制作成功需要通过异步任务查询接口查询该任务的执行状态，具体请参考异步任务查询。
+        
+        不同场景必选参数说明：
+        
+        - 使用云服务器制作镜像时的请求的必选参数：name,instance_id。
+        - 使用上传至OBS桶中的外部镜像文件时的请求必选参数：name,image_url,min_disk。
+        - 使用数据卷制作系统盘镜像时的请求必选参数：name,volume_id,os_version
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateImageRequest request
-        :return: CreateImageResponse
+        :param request: Request instance for CreateImage
+        :type request: :class:`huaweicloudsdkims.v2.CreateImageRequest`
+        :rtype: :class:`huaweicloudsdkims.v2.CreateImageResponse`
         """
         return self.create_image_with_http_info(request)
 
     def create_image_with_http_info(self, request):
-        """制作镜像
-
-        本接口用于制作私有镜像，支持： - 使用云服务器制作私有镜像。 - 使用上传至OBS桶中的外部镜像文件制作私有镜像。 - 使用数据卷制作系统盘镜像。  作为异步接口，调用成功，只是说明云平台收到了制作请求，镜像是否制作成功需要通过异步任务查询接口查询该任务的执行状态，具体请参考异步任务查询。  不同场景必选参数说明：  - 使用云服务器制作镜像时的请求的必选参数：name,instance_id。 - 使用上传至OBS桶中的外部镜像文件时的请求必选参数：name,image_url,min_disk。 - 使用数据卷制作系统盘镜像时的请求必选参数：name,volume_id,os_version
-
-        :param CreateImageRequest request
-        :return: CreateImageResponse
-        """
-
         all_params = ['ec_sbodyparam']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -622,26 +595,21 @@ class ImsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_or_update_tags(self, request):
         """增加或修改标签
 
         该接口主要用于为某个镜像增加或修改一个自定义标签。通过自定义标签，用户可以将镜像进行分类。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateOrUpdateTagsRequest request
-        :return: CreateOrUpdateTagsResponse
+        :param request: Request instance for CreateOrUpdateTags
+        :type request: :class:`huaweicloudsdkims.v2.CreateOrUpdateTagsRequest`
+        :rtype: :class:`huaweicloudsdkims.v2.CreateOrUpdateTagsResponse`
         """
         return self.create_or_update_tags_with_http_info(request)
 
     def create_or_update_tags_with_http_info(self, request):
-        """增加或修改标签
-
-        该接口主要用于为某个镜像增加或修改一个自定义标签。通过自定义标签，用户可以将镜像进行分类。
-
-        :param CreateOrUpdateTagsRequest request
-        :return: CreateOrUpdateTagsResponse
-        """
-
         all_params = ['bodyparam']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -685,26 +653,21 @@ class ImsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_whole_image(self, request):
         """制作整机镜像
 
         使用云服务器或者云服务器备份制作整机镜像。作为异步接口，调用成功，只是说明后台收到了制作整机镜像的请求，镜像是否制作成功需要通过异步任务查询接口查询该任务的执行状态，具体请参考异步任务查询。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateWholeImageRequest request
-        :return: CreateWholeImageResponse
+        :param request: Request instance for CreateWholeImage
+        :type request: :class:`huaweicloudsdkims.v2.CreateWholeImageRequest`
+        :rtype: :class:`huaweicloudsdkims.v2.CreateWholeImageResponse`
         """
         return self.create_whole_image_with_http_info(request)
 
     def create_whole_image_with_http_info(self, request):
-        """制作整机镜像
-
-        使用云服务器或者云服务器备份制作整机镜像。作为异步接口，调用成功，只是说明后台收到了制作整机镜像的请求，镜像是否制作成功需要通过异步任务查询接口查询该任务的执行状态，具体请参考异步任务查询。
-
-        :param CreateWholeImageRequest request
-        :return: CreateWholeImageResponse
-        """
-
         all_params = ['ec_smakewholeimagebody']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -748,26 +711,21 @@ class ImsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_image_tag(self, request):
         """删除镜像标签
 
         该接口用于为镜像删除指定的标签
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteImageTagRequest request
-        :return: DeleteImageTagResponse
+        :param request: Request instance for DeleteImageTag
+        :type request: :class:`huaweicloudsdkims.v2.DeleteImageTagRequest`
+        :rtype: :class:`huaweicloudsdkims.v2.DeleteImageTagResponse`
         """
         return self.delete_image_tag_with_http_info(request)
 
     def delete_image_tag_with_http_info(self, request):
-        """删除镜像标签
-
-        该接口用于为镜像删除指定的标签
-
-        :param DeleteImageTagRequest request
-        :return: DeleteImageTagResponse
-        """
-
         all_params = ['image_id', 'key']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -813,26 +771,21 @@ class ImsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def export_image(self, request):
         """导出镜像
 
         该接口为扩展接口，用于用户将自己的私有镜像导出到指定的OBS桶中。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ExportImageRequest request
-        :return: ExportImageResponse
+        :param request: Request instance for ExportImage
+        :type request: :class:`huaweicloudsdkims.v2.ExportImageRequest`
+        :rtype: :class:`huaweicloudsdkims.v2.ExportImageResponse`
         """
         return self.export_image_with_http_info(request)
 
     def export_image_with_http_info(self, request):
-        """导出镜像
-
-        该接口为扩展接口，用于用户将自己的私有镜像导出到指定的OBS桶中。
-
-        :param ExportImageRequest request
-        :return: ExportImageResponse
-        """
-
         all_params = ['image_id', 'bodyparam']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -878,26 +831,23 @@ class ImsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def import_image_quick(self, request):
         """镜像文件快速导入
 
-        使用上传至OBS桶中的超大外部镜像文件制作私有镜像，目前仅支持RAW或ZVHD2格式镜像文件。且要求镜像文件大小不能超过1TB。 由于快速导入功能要求提前转换镜像文件格式为RAW或ZVHD2格式，因此镜像文件小于128GB时推荐您优先使用常规的创建私有镜像的方式。 作为异步接口，调用成功，只是说明后台收到了制作请求，镜像是否制作成功需要通过异步任务查询接口查询该任务的执行状态，具体请参考异步任务查询。
+        使用上传至OBS桶中的超大外部镜像文件制作私有镜像，目前仅支持RAW或ZVHD2格式镜像文件。且要求镜像文件大小不能超过1TB。
+        由于快速导入功能要求提前转换镜像文件格式为RAW或ZVHD2格式，因此镜像文件小于128GB时推荐您优先使用常规的创建私有镜像的方式。
+        作为异步接口，调用成功，只是说明后台收到了制作请求，镜像是否制作成功需要通过异步任务查询接口查询该任务的执行状态，具体请参考异步任务查询。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ImportImageQuickRequest request
-        :return: ImportImageQuickResponse
+        :param request: Request instance for ImportImageQuick
+        :type request: :class:`huaweicloudsdkims.v2.ImportImageQuickRequest`
+        :rtype: :class:`huaweicloudsdkims.v2.ImportImageQuickResponse`
         """
         return self.import_image_quick_with_http_info(request)
 
     def import_image_quick_with_http_info(self, request):
-        """镜像文件快速导入
-
-        使用上传至OBS桶中的超大外部镜像文件制作私有镜像，目前仅支持RAW或ZVHD2格式镜像文件。且要求镜像文件大小不能超过1TB。 由于快速导入功能要求提前转换镜像文件格式为RAW或ZVHD2格式，因此镜像文件小于128GB时推荐您优先使用常规的创建私有镜像的方式。 作为异步接口，调用成功，只是说明后台收到了制作请求，镜像是否制作成功需要通过异步任务查询接口查询该任务的执行状态，具体请参考异步任务查询。
-
-        :param ImportImageQuickRequest request
-        :return: ImportImageQuickResponse
-        """
-
         all_params = ['file_create_ims']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -941,26 +891,21 @@ class ImsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_image_by_tags(self, request):
         """按标签查询镜像
 
         该接口用于按标签或其他条件对镜像进行过滤或者计数使用。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListImageByTagsRequest request
-        :return: ListImageByTagsResponse
+        :param request: Request instance for ListImageByTags
+        :type request: :class:`huaweicloudsdkims.v2.ListImageByTagsRequest`
+        :rtype: :class:`huaweicloudsdkims.v2.ListImageByTagsResponse`
         """
         return self.list_image_by_tags_with_http_info(request)
 
     def list_image_by_tags_with_http_info(self, request):
-        """按标签查询镜像
-
-        该接口用于按标签或其他条件对镜像进行过滤或者计数使用。
-
-        :param ListImageByTagsRequest request
-        :return: ListImageByTagsResponse
-        """
-
         all_params = ['bodyparam']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1004,26 +949,21 @@ class ImsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_image_tags(self, request):
         """查询镜像标签
 
         该接口用于为查询指定镜像上的所有标签
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListImageTagsRequest request
-        :return: ListImageTagsResponse
+        :param request: Request instance for ListImageTags
+        :type request: :class:`huaweicloudsdkims.v2.ListImageTagsRequest`
+        :rtype: :class:`huaweicloudsdkims.v2.ListImageTagsResponse`
         """
         return self.list_image_tags_with_http_info(request)
 
     def list_image_tags_with_http_info(self, request):
-        """查询镜像标签
-
-        该接口用于为查询指定镜像上的所有标签
-
-        :param ListImageTagsRequest request
-        :return: ListImageTagsResponse
-        """
-
         all_params = ['image_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1067,26 +1007,22 @@ class ImsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_images(self, request):
         """查询镜像列表
 
-        根据不同条件查询镜像列表信息。 可以在URI后面用‘?’和‘&’添加不同的查询条件组合，请参考请求样例。
+        根据不同条件查询镜像列表信息。
+        可以在URI后面用‘?’和‘&amp;’添加不同的查询条件组合，请参考请求样例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListImagesRequest request
-        :return: ListImagesResponse
+        :param request: Request instance for ListImages
+        :type request: :class:`huaweicloudsdkims.v2.ListImagesRequest`
+        :rtype: :class:`huaweicloudsdkims.v2.ListImagesResponse`
         """
         return self.list_images_with_http_info(request)
 
     def list_images_with_http_info(self, request):
-        """查询镜像列表
-
-        根据不同条件查询镜像列表信息。 可以在URI后面用‘?’和‘&’添加不同的查询条件组合，请参考请求样例。
-
-        :param ListImagesRequest request
-        :return: ListImagesResponse
-        """
-
         all_params = ['imagetype', 'isregistered', 'os_bit', 'os_type', 'platform', 'support_diskintensive', 'support_highperformance', 'support_kvm', 'support_kvm_gpu_type', 'support_kvm_infiniband', 'support_largememory', 'support_xen', 'support_xen_gpu_type', 'support_xen_hana', 'container_format', 'disk_format', 'enterprise_project_id', 'id', 'limit', 'marker', 'member_status', 'min_disk', 'min_ram', 'name', 'owner', 'protected', 'sort_dir', 'sort_key', 'status', 'tag', 'virtual_env_type', 'visibility', 'x_sdk_date', 'flavor_id', 'created_at', 'updated_at', 'architecture']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1202,26 +1138,21 @@ class ImsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_images_tags(self, request):
         """查询租户所有镜像标签
 
         该接口用于为查询租户的所有镜像上的标签。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListImagesTagsRequest request
-        :return: ListImagesTagsResponse
+        :param request: Request instance for ListImagesTags
+        :type request: :class:`huaweicloudsdkims.v2.ListImagesTagsRequest`
+        :rtype: :class:`huaweicloudsdkims.v2.ListImagesTagsResponse`
         """
         return self.list_images_tags_with_http_info(request)
 
     def list_images_tags_with_http_info(self, request):
-        """查询租户所有镜像标签
-
-        该接口用于为查询租户的所有镜像上的标签。
-
-        :param ListImagesTagsRequest request
-        :return: ListImagesTagsResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1263,26 +1194,21 @@ class ImsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_os_versions(self, request):
         """查询镜像支持的OS列表
 
         查询当前区域弹性云服务器的OS兼容性列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListOsVersionsRequest request
-        :return: ListOsVersionsResponse
+        :param request: Request instance for ListOsVersions
+        :type request: :class:`huaweicloudsdkims.v2.ListOsVersionsRequest`
+        :rtype: :class:`huaweicloudsdkims.v2.ListOsVersionsResponse`
         """
         return self.list_os_versions_with_http_info(request)
 
     def list_os_versions_with_http_info(self, request):
-        """查询镜像支持的OS列表
-
-        查询当前区域弹性云服务器的OS兼容性列表。
-
-        :param ListOsVersionsRequest request
-        :return: ListOsVersionsResponse
-        """
-
         all_params = ['tag']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1326,26 +1252,21 @@ class ImsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_tags(self, request):
         """按条件查询租户镜像标签列表
 
         根据不同条件查询镜像标签列表信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListTagsRequest request
-        :return: ListTagsResponse
+        :param request: Request instance for ListTags
+        :type request: :class:`huaweicloudsdkims.v2.ListTagsRequest`
+        :rtype: :class:`huaweicloudsdkims.v2.ListTagsResponse`
         """
         return self.list_tags_with_http_info(request)
 
     def list_tags_with_http_info(self, request):
-        """按条件查询租户镜像标签列表
-
-        根据不同条件查询镜像标签列表信息。
-
-        :param ListTagsRequest request
-        :return: ListTagsResponse
-        """
-
         all_params = ['limit', 'page', 'imagetype', 'id', 'status', 'name', 'min_disk', 'platform', 'os_type', 'member_status', 'virtual_env_type', 'enterprise_project_id', 'architecture', 'created_at', 'updated_at']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1417,26 +1338,27 @@ class ImsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def register_image(self, request):
         """注册镜像
 
-        该接口用于将镜像文件注册为云平台未初始化的私有镜像。 使用该接口注册镜像的具体步骤如下： 将镜像文件上传到OBS个人桶中。具体操作请参见《对象存储服务客户端指南（OBS Browser）》或《对象存储服务API参考》。 使用创建镜像元数据接口创建镜像元数据。调用成功后，保存该镜像的ID。创建镜像元数据请参考创建镜像元数据（OpenStack原生）。 根据2得到的镜像ID，使用注册镜像接口注册OBS桶中的镜像文件。 注册镜像接口作为异步接口，调用成功后，说明后台收到了注册请求。需要根据镜像ID查询该镜像状态验证镜像注册是否成功。当镜像状态变为“active”时，表示镜像注册成功。 如何查询异步任务，请参见异步任务查询。
+        该接口用于将镜像文件注册为云平台未初始化的私有镜像。
+        使用该接口注册镜像的具体步骤如下：
+        将镜像文件上传到OBS个人桶中。具体操作请参见《对象存储服务客户端指南（OBS Browser）》或《对象存储服务API参考》。
+        使用创建镜像元数据接口创建镜像元数据。调用成功后，保存该镜像的ID。创建镜像元数据请参考创建镜像元数据（OpenStack原生）。
+        根据2得到的镜像ID，使用注册镜像接口注册OBS桶中的镜像文件。
+        注册镜像接口作为异步接口，调用成功后，说明后台收到了注册请求。需要根据镜像ID查询该镜像状态验证镜像注册是否成功。当镜像状态变为“active”时，表示镜像注册成功。
+        如何查询异步任务，请参见异步任务查询。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param RegisterImageRequest request
-        :return: RegisterImageResponse
+        :param request: Request instance for RegisterImage
+        :type request: :class:`huaweicloudsdkims.v2.RegisterImageRequest`
+        :rtype: :class:`huaweicloudsdkims.v2.RegisterImageResponse`
         """
         return self.register_image_with_http_info(request)
 
     def register_image_with_http_info(self, request):
-        """注册镜像
-
-        该接口用于将镜像文件注册为云平台未初始化的私有镜像。 使用该接口注册镜像的具体步骤如下： 将镜像文件上传到OBS个人桶中。具体操作请参见《对象存储服务客户端指南（OBS Browser）》或《对象存储服务API参考》。 使用创建镜像元数据接口创建镜像元数据。调用成功后，保存该镜像的ID。创建镜像元数据请参考创建镜像元数据（OpenStack原生）。 根据2得到的镜像ID，使用注册镜像接口注册OBS桶中的镜像文件。 注册镜像接口作为异步接口，调用成功后，说明后台收到了注册请求。需要根据镜像ID查询该镜像状态验证镜像注册是否成功。当镜像状态变为“active”时，表示镜像注册成功。 如何查询异步任务，请参见异步任务查询。
-
-        :param RegisterImageRequest request
-        :return: RegisterImageResponse
-        """
-
         all_params = ['image_id', 'bodyparam']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1482,26 +1404,21 @@ class ImsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_image_quota(self, request):
         """查询镜像配额
 
         该接口为扩展接口，主要用于查询租户在当前Region的私有镜像的配额数量。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowImageQuotaRequest request
-        :return: ShowImageQuotaResponse
+        :param request: Request instance for ShowImageQuota
+        :type request: :class:`huaweicloudsdkims.v2.ShowImageQuotaRequest`
+        :rtype: :class:`huaweicloudsdkims.v2.ShowImageQuotaResponse`
         """
         return self.show_image_quota_with_http_info(request)
 
     def show_image_quota_with_http_info(self, request):
-        """查询镜像配额
-
-        该接口为扩展接口，主要用于查询租户在当前Region的私有镜像的配额数量。
-
-        :param ShowImageQuotaRequest request
-        :return: ShowImageQuotaResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1543,26 +1460,21 @@ class ImsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_image(self, request):
         """更新镜像信息
 
         更新镜像信息接口，主要用于镜像属性的修改。当前仅支持可用（active）状态的镜像更新相关信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateImageRequest request
-        :return: UpdateImageResponse
+        :param request: Request instance for UpdateImage
+        :type request: :class:`huaweicloudsdkims.v2.UpdateImageRequest`
+        :rtype: :class:`huaweicloudsdkims.v2.UpdateImageResponse`
         """
         return self.update_image_with_http_info(request)
 
     def update_image_with_http_info(self, request):
-        """更新镜像信息
-
-        更新镜像信息接口，主要用于镜像属性的修改。当前仅支持可用（active）状态的镜像更新相关信息。
-
-        :param UpdateImageRequest request
-        :return: UpdateImageResponse
-        """
-
         all_params = ['image_id', 'bodyparam']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1608,26 +1520,21 @@ class ImsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_versions(self, request):
         """查询版本列表（OpenStack原生）
 
         查询API的版本信息列表，包括API的版本兼容性、域名信息等。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListVersionsRequest request
-        :return: ListVersionsResponse
+        :param request: Request instance for ListVersions
+        :type request: :class:`huaweicloudsdkims.v2.ListVersionsRequest`
+        :rtype: :class:`huaweicloudsdkims.v2.ListVersionsResponse`
         """
         return self.list_versions_with_http_info(request)
 
     def list_versions_with_http_info(self, request):
-        """查询版本列表（OpenStack原生）
-
-        查询API的版本信息列表，包括API的版本兼容性、域名信息等。
-
-        :param ListVersionsRequest request
-        :return: ListVersionsResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1669,26 +1576,21 @@ class ImsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_version(self, request):
         """查询版本列表（OpenStack原生）
 
         查询API的版本信息列表，包括API的版本兼容性、域名信息等。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowVersionRequest request
-        :return: ShowVersionResponse
+        :param request: Request instance for ShowVersion
+        :type request: :class:`huaweicloudsdkims.v2.ShowVersionRequest`
+        :rtype: :class:`huaweicloudsdkims.v2.ShowVersionResponse`
         """
         return self.show_version_with_http_info(request)
 
     def show_version_with_http_info(self, request):
-        """查询版本列表（OpenStack原生）
-
-        查询API的版本信息列表，包括API的版本兼容性、域名信息等。
-
-        :param ShowVersionRequest request
-        :return: ShowVersionResponse
-        """
-
         all_params = ['version']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1732,26 +1634,21 @@ class ImsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def glance_add_image_member(self, request):
         """添加镜像成员（OpenStack原生）
 
         用户共享镜像给其他用户时，使用该接口向该镜像成员中添加接受镜像用户的项目ID。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param GlanceAddImageMemberRequest request
-        :return: GlanceAddImageMemberResponse
+        :param request: Request instance for GlanceAddImageMember
+        :type request: :class:`huaweicloudsdkims.v2.GlanceAddImageMemberRequest`
+        :rtype: :class:`huaweicloudsdkims.v2.GlanceAddImageMemberResponse`
         """
         return self.glance_add_image_member_with_http_info(request)
 
     def glance_add_image_member_with_http_info(self, request):
-        """添加镜像成员（OpenStack原生）
-
-        用户共享镜像给其他用户时，使用该接口向该镜像成员中添加接受镜像用户的项目ID。
-
-        :param GlanceAddImageMemberRequest request
-        :return: GlanceAddImageMemberResponse
-        """
-
         all_params = ['image_id', 'add_member_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1797,26 +1694,21 @@ class ImsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def glance_create_image_metadata(self, request):
         """创建镜像元数据（OpenStack原生）
 
         创建镜像元数据。调用创建镜像元数据接口成功后，只是创建了镜像的元数据，镜像对应的实际镜像文件并不存在
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param GlanceCreateImageMetadataRequest request
-        :return: GlanceCreateImageMetadataResponse
+        :param request: Request instance for GlanceCreateImageMetadata
+        :type request: :class:`huaweicloudsdkims.v2.GlanceCreateImageMetadataRequest`
+        :rtype: :class:`huaweicloudsdkims.v2.GlanceCreateImageMetadataResponse`
         """
         return self.glance_create_image_metadata_with_http_info(request)
 
     def glance_create_image_metadata_with_http_info(self, request):
-        """创建镜像元数据（OpenStack原生）
-
-        创建镜像元数据。调用创建镜像元数据接口成功后，只是创建了镜像的元数据，镜像对应的实际镜像文件并不存在
-
-        :param GlanceCreateImageMetadataRequest request
-        :return: GlanceCreateImageMetadataResponse
-        """
-
         all_params = ['bodyparam']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1860,26 +1752,21 @@ class ImsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def glance_create_tag(self, request):
         """增加标签（OpenStack原生）
 
         该接口主要用于为某个镜像添加一个自定义标签。通过自定义标签，用户可以将镜像进行分类。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param GlanceCreateTagRequest request
-        :return: GlanceCreateTagResponse
+        :param request: Request instance for GlanceCreateTag
+        :type request: :class:`huaweicloudsdkims.v2.GlanceCreateTagRequest`
+        :rtype: :class:`huaweicloudsdkims.v2.GlanceCreateTagResponse`
         """
         return self.glance_create_tag_with_http_info(request)
 
     def glance_create_tag_with_http_info(self, request):
-        """增加标签（OpenStack原生）
-
-        该接口主要用于为某个镜像添加一个自定义标签。通过自定义标签，用户可以将镜像进行分类。
-
-        :param GlanceCreateTagRequest request
-        :return: GlanceCreateTagResponse
-        """
-
         all_params = ['image_id', 'tag']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1925,26 +1812,21 @@ class ImsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def glance_delete_image(self, request):
         """删除镜像（OpenStack原生）
 
         该接口主要用于删除镜像，用户可以通过该接口将自己的私有镜像删除。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param GlanceDeleteImageRequest request
-        :return: GlanceDeleteImageResponse
+        :param request: Request instance for GlanceDeleteImage
+        :type request: :class:`huaweicloudsdkims.v2.GlanceDeleteImageRequest`
+        :rtype: :class:`huaweicloudsdkims.v2.GlanceDeleteImageResponse`
         """
         return self.glance_delete_image_with_http_info(request)
 
     def glance_delete_image_with_http_info(self, request):
-        """删除镜像（OpenStack原生）
-
-        该接口主要用于删除镜像，用户可以通过该接口将自己的私有镜像删除。
-
-        :param GlanceDeleteImageRequest request
-        :return: GlanceDeleteImageResponse
-        """
-
         all_params = ['image_id', 'delete_image_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1990,26 +1872,21 @@ class ImsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def glance_delete_image_member(self, request):
         """删除指定的镜像成员（OpenStack原生）
 
         该接口用于取消对某个用户的镜像共享。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param GlanceDeleteImageMemberRequest request
-        :return: GlanceDeleteImageMemberResponse
+        :param request: Request instance for GlanceDeleteImageMember
+        :type request: :class:`huaweicloudsdkims.v2.GlanceDeleteImageMemberRequest`
+        :rtype: :class:`huaweicloudsdkims.v2.GlanceDeleteImageMemberResponse`
         """
         return self.glance_delete_image_member_with_http_info(request)
 
     def glance_delete_image_member_with_http_info(self, request):
-        """删除指定的镜像成员（OpenStack原生）
-
-        该接口用于取消对某个用户的镜像共享。
-
-        :param GlanceDeleteImageMemberRequest request
-        :return: GlanceDeleteImageMemberResponse
-        """
-
         all_params = ['image_id', 'member_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2055,26 +1932,21 @@ class ImsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def glance_delete_tag(self, request):
         """删除标签（OpenStack原生）
 
         该接口主要用于删除某个镜像的自定义标签，通过该接口，用户可以将私有镜像中一些不用的标签删除。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param GlanceDeleteTagRequest request
-        :return: GlanceDeleteTagResponse
+        :param request: Request instance for GlanceDeleteTag
+        :type request: :class:`huaweicloudsdkims.v2.GlanceDeleteTagRequest`
+        :rtype: :class:`huaweicloudsdkims.v2.GlanceDeleteTagResponse`
         """
         return self.glance_delete_tag_with_http_info(request)
 
     def glance_delete_tag_with_http_info(self, request):
-        """删除标签（OpenStack原生）
-
-        该接口主要用于删除某个镜像的自定义标签，通过该接口，用户可以将私有镜像中一些不用的标签删除。
-
-        :param GlanceDeleteTagRequest request
-        :return: GlanceDeleteTagResponse
-        """
-
         all_params = ['image_id', 'tag']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2120,26 +1992,21 @@ class ImsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def glance_list_image_member_schemas(self, request):
         """查询镜像成员列表视图（OpenStack原生）
 
         该接口主要用于查询镜像成员列表视图，通过视图，用户可以了解到镜像成员包含哪些属性，同时也可以了解每个属性的数据类型。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param GlanceListImageMemberSchemasRequest request
-        :return: GlanceListImageMemberSchemasResponse
+        :param request: Request instance for GlanceListImageMemberSchemas
+        :type request: :class:`huaweicloudsdkims.v2.GlanceListImageMemberSchemasRequest`
+        :rtype: :class:`huaweicloudsdkims.v2.GlanceListImageMemberSchemasResponse`
         """
         return self.glance_list_image_member_schemas_with_http_info(request)
 
     def glance_list_image_member_schemas_with_http_info(self, request):
-        """查询镜像成员列表视图（OpenStack原生）
-
-        该接口主要用于查询镜像成员列表视图，通过视图，用户可以了解到镜像成员包含哪些属性，同时也可以了解每个属性的数据类型。
-
-        :param GlanceListImageMemberSchemasRequest request
-        :return: GlanceListImageMemberSchemasResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2181,26 +2048,21 @@ class ImsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def glance_list_image_members(self, request):
         """获取镜像成员列表（OpenStack原生）
 
         该接口用于共享镜像过程中，获取接受该镜像的成员列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param GlanceListImageMembersRequest request
-        :return: GlanceListImageMembersResponse
+        :param request: Request instance for GlanceListImageMembers
+        :type request: :class:`huaweicloudsdkims.v2.GlanceListImageMembersRequest`
+        :rtype: :class:`huaweicloudsdkims.v2.GlanceListImageMembersResponse`
         """
         return self.glance_list_image_members_with_http_info(request)
 
     def glance_list_image_members_with_http_info(self, request):
-        """获取镜像成员列表（OpenStack原生）
-
-        该接口用于共享镜像过程中，获取接受该镜像的成员列表。
-
-        :param GlanceListImageMembersRequest request
-        :return: GlanceListImageMembersResponse
-        """
-
         all_params = ['image_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2244,26 +2106,21 @@ class ImsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def glance_list_image_schemas(self, request):
         """查询镜像列表视图（OpenStack原生）
 
         该接口主要用于查询镜像列表视图，通过该接口用户可以了解到镜像列表的详细情况和数据结构。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param GlanceListImageSchemasRequest request
-        :return: GlanceListImageSchemasResponse
+        :param request: Request instance for GlanceListImageSchemas
+        :type request: :class:`huaweicloudsdkims.v2.GlanceListImageSchemasRequest`
+        :rtype: :class:`huaweicloudsdkims.v2.GlanceListImageSchemasResponse`
         """
         return self.glance_list_image_schemas_with_http_info(request)
 
     def glance_list_image_schemas_with_http_info(self, request):
-        """查询镜像列表视图（OpenStack原生）
-
-        该接口主要用于查询镜像列表视图，通过该接口用户可以了解到镜像列表的详细情况和数据结构。
-
-        :param GlanceListImageSchemasRequest request
-        :return: GlanceListImageSchemasResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2305,26 +2162,25 @@ class ImsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def glance_list_images(self, request):
         """查询镜像列表（OpenStack原生）
 
-        获取镜像列表。 使用本接口查询镜像列表时，需要使用分页查询才能返回全部的镜像列表。 分页说明 分页是指返回一组镜像的一个子集，在返回的时候会存在下个子集的链接和首个子集的链接，默认返回的子集中数量为25，用户也可以通过使用limit和marker两个参数自己分页，指定返回子集中需要返回的数量。 响应中的参数first是查询首页的URL。next是查询下一页的URL。当查询镜像列表最后一页时，不存在next。
+        获取镜像列表。
+        使用本接口查询镜像列表时，需要使用分页查询才能返回全部的镜像列表。
+        分页说明
+        分页是指返回一组镜像的一个子集，在返回的时候会存在下个子集的链接和首个子集的链接，默认返回的子集中数量为25，用户也可以通过使用limit和marker两个参数自己分页，指定返回子集中需要返回的数量。
+        响应中的参数first是查询首页的URL。next是查询下一页的URL。当查询镜像列表最后一页时，不存在next。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param GlanceListImagesRequest request
-        :return: GlanceListImagesResponse
+        :param request: Request instance for GlanceListImages
+        :type request: :class:`huaweicloudsdkims.v2.GlanceListImagesRequest`
+        :rtype: :class:`huaweicloudsdkims.v2.GlanceListImagesResponse`
         """
         return self.glance_list_images_with_http_info(request)
 
     def glance_list_images_with_http_info(self, request):
-        """查询镜像列表（OpenStack原生）
-
-        获取镜像列表。 使用本接口查询镜像列表时，需要使用分页查询才能返回全部的镜像列表。 分页说明 分页是指返回一组镜像的一个子集，在返回的时候会存在下个子集的链接和首个子集的链接，默认返回的子集中数量为25，用户也可以通过使用limit和marker两个参数自己分页，指定返回子集中需要返回的数量。 响应中的参数first是查询首页的URL。next是查询下一页的URL。当查询镜像列表最后一页时，不存在next。
-
-        :param GlanceListImagesRequest request
-        :return: GlanceListImagesResponse
-        """
-
         all_params = ['imagetype', 'isregistered', 'os_bit', 'os_type', 'platform', 'support_diskintensive', 'support_highperformance', 'support_kvm', 'support_kvm_gpu_type', 'support_kvm_infiniband', 'support_largememory', 'support_xen', 'support_xen_gpu_type', 'support_xen_hana', 'container_format', 'disk_format', 'id', 'limit', 'marker', 'member_status', 'min_disk', 'min_ram', 'name', 'owner', 'protected', 'sort_dir', 'sort_key', 'status', 'tag', 'visibility', 'created_at', 'updated_at']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2430,26 +2286,21 @@ class ImsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def glance_show_image(self, request):
         """查询镜像详情（OpenStack原生）
 
         查询单个镜像详情，用户可以通过该接口查询单个私有或者公共镜像的详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param GlanceShowImageRequest request
-        :return: GlanceShowImageResponse
+        :param request: Request instance for GlanceShowImage
+        :type request: :class:`huaweicloudsdkims.v2.GlanceShowImageRequest`
+        :rtype: :class:`huaweicloudsdkims.v2.GlanceShowImageResponse`
         """
         return self.glance_show_image_with_http_info(request)
 
     def glance_show_image_with_http_info(self, request):
-        """查询镜像详情（OpenStack原生）
-
-        查询单个镜像详情，用户可以通过该接口查询单个私有或者公共镜像的详情
-
-        :param GlanceShowImageRequest request
-        :return: GlanceShowImageResponse
-        """
-
         all_params = ['image_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2493,26 +2344,21 @@ class ImsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def glance_show_image_member(self, request):
         """获取镜像成员详情（OpenStack原生）
 
         该接口主要用于镜像共享中查询某个镜像成员的详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param GlanceShowImageMemberRequest request
-        :return: GlanceShowImageMemberResponse
+        :param request: Request instance for GlanceShowImageMember
+        :type request: :class:`huaweicloudsdkims.v2.GlanceShowImageMemberRequest`
+        :rtype: :class:`huaweicloudsdkims.v2.GlanceShowImageMemberResponse`
         """
         return self.glance_show_image_member_with_http_info(request)
 
     def glance_show_image_member_with_http_info(self, request):
-        """获取镜像成员详情（OpenStack原生）
-
-        该接口主要用于镜像共享中查询某个镜像成员的详情。
-
-        :param GlanceShowImageMemberRequest request
-        :return: GlanceShowImageMemberResponse
-        """
-
         all_params = ['image_id', 'member_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2558,26 +2404,21 @@ class ImsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def glance_show_image_member_schemas(self, request):
         """查询镜像成员视图（OpenStack原生）
 
         该接口主要用于查询镜像成员视图，通过视图，用户可以了解到镜像成员包含哪些属性，同时也可以了解每个属性的数据类型。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param GlanceShowImageMemberSchemasRequest request
-        :return: GlanceShowImageMemberSchemasResponse
+        :param request: Request instance for GlanceShowImageMemberSchemas
+        :type request: :class:`huaweicloudsdkims.v2.GlanceShowImageMemberSchemasRequest`
+        :rtype: :class:`huaweicloudsdkims.v2.GlanceShowImageMemberSchemasResponse`
         """
         return self.glance_show_image_member_schemas_with_http_info(request)
 
     def glance_show_image_member_schemas_with_http_info(self, request):
-        """查询镜像成员视图（OpenStack原生）
-
-        该接口主要用于查询镜像成员视图，通过视图，用户可以了解到镜像成员包含哪些属性，同时也可以了解每个属性的数据类型。
-
-        :param GlanceShowImageMemberSchemasRequest request
-        :return: GlanceShowImageMemberSchemasResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2619,26 +2460,21 @@ class ImsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def glance_show_image_schemas(self, request):
         """查询镜像视图（OpenStack原生）
 
         该接口主要用于查询镜像视图，通过视图，用户可以了解到镜像包含哪些属性，同时也可以了解每个属性的数据类型等。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param GlanceShowImageSchemasRequest request
-        :return: GlanceShowImageSchemasResponse
+        :param request: Request instance for GlanceShowImageSchemas
+        :type request: :class:`huaweicloudsdkims.v2.GlanceShowImageSchemasRequest`
+        :rtype: :class:`huaweicloudsdkims.v2.GlanceShowImageSchemasResponse`
         """
         return self.glance_show_image_schemas_with_http_info(request)
 
     def glance_show_image_schemas_with_http_info(self, request):
-        """查询镜像视图（OpenStack原生）
-
-        该接口主要用于查询镜像视图，通过视图，用户可以了解到镜像包含哪些属性，同时也可以了解每个属性的数据类型等。
-
-        :param GlanceShowImageSchemasRequest request
-        :return: GlanceShowImageSchemasResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2680,26 +2516,21 @@ class ImsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def glance_update_image(self, request):
         """更新镜像信息（OpenStack原生）
 
         修改镜像信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param GlanceUpdateImageRequest request
-        :return: GlanceUpdateImageResponse
+        :param request: Request instance for GlanceUpdateImage
+        :type request: :class:`huaweicloudsdkims.v2.GlanceUpdateImageRequest`
+        :rtype: :class:`huaweicloudsdkims.v2.GlanceUpdateImageResponse`
         """
         return self.glance_update_image_with_http_info(request)
 
     def glance_update_image_with_http_info(self, request):
-        """更新镜像信息（OpenStack原生）
-
-        修改镜像信息
-
-        :param GlanceUpdateImageRequest request
-        :return: GlanceUpdateImageResponse
-        """
-
         all_params = ['image_id', 'bodyparam']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2745,26 +2576,21 @@ class ImsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def glance_update_image_member(self, request):
         """更新镜像成员状态（OpenStack原生）
 
         用户接受或者拒绝共享镜像时，使用该接口更新镜像成员的状态。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param GlanceUpdateImageMemberRequest request
-        :return: GlanceUpdateImageMemberResponse
+        :param request: Request instance for GlanceUpdateImageMember
+        :type request: :class:`huaweicloudsdkims.v2.GlanceUpdateImageMemberRequest`
+        :rtype: :class:`huaweicloudsdkims.v2.GlanceUpdateImageMemberResponse`
         """
         return self.glance_update_image_member_with_http_info(request)
 
     def glance_update_image_member_with_http_info(self, request):
-        """更新镜像成员状态（OpenStack原生）
-
-        用户接受或者拒绝共享镜像时，使用该接口更新镜像成员的状态。
-
-        :param GlanceUpdateImageMemberRequest request
-        :return: GlanceUpdateImageMemberResponse
-        """
-
         all_params = ['image_id', 'member_id', 'member_status']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2812,26 +2638,21 @@ class ImsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_job(self, request):
         """查询job状态
 
         该接口为扩展接口，主要用于查询异步接口执行情况，比如查询导出镜像任务的执行状态。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowJobRequest request
-        :return: ShowJobResponse
+        :param request: Request instance for ShowJob
+        :type request: :class:`huaweicloudsdkims.v2.ShowJobRequest`
+        :rtype: :class:`huaweicloudsdkims.v2.ShowJobResponse`
         """
         return self.show_job_with_http_info(request)
 
     def show_job_with_http_info(self, request):
-        """查询job状态
-
-        该接口为扩展接口，主要用于查询异步接口执行情况，比如查询导出镜像任务的执行状态。
-
-        :param ShowJobRequest request
-        :return: ShowJobResponse
-        """
-
         all_params = ['job_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2874,7 +2695,6 @@ class ImsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

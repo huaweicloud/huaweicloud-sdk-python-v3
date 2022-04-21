@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowLogBackupResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowLogBackupResponse(SdkResponse):
     }
 
     def __init__(self, log_list=None):
-        """ShowLogBackupResponse - a model defined in huaweicloud sdk"""
+        """ShowLogBackupResponse
+
+        The model defined in huaweicloud sdk
+
+        :param log_list: 
+        :type log_list: list[:class:`huaweicloudsdkcss.v1.LogList`]
+        """
         
         super(ShowLogBackupResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class ShowLogBackupResponse(SdkResponse):
 
 
         :return: The log_list of this ShowLogBackupResponse.
-        :rtype: list[LogList]
+        :rtype: list[:class:`huaweicloudsdkcss.v1.LogList`]
         """
         return self._log_list
 
@@ -56,7 +61,7 @@ class ShowLogBackupResponse(SdkResponse):
 
 
         :param log_list: The log_list of this ShowLogBackupResponse.
-        :type: list[LogList]
+        :type log_list: list[:class:`huaweicloudsdkcss.v1.LogList`]
         """
         self._log_list = log_list
 

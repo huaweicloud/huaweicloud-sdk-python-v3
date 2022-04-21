@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchPublishOrOfflineApiV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class BatchPublishOrOfflineApiV2Request:
     }
 
     def __init__(self, instance_id=None, action=None, body=None):
-        """BatchPublishOrOfflineApiV2Request - a model defined in huaweicloud sdk"""
+        """BatchPublishOrOfflineApiV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param action: - online：发布 - offline：下线
+        :type action: str
+        :param body: Body of the BatchPublishOrOfflineApiV2Request
+        :type body: :class:`huaweicloudsdkroma.v2.ApiBatchPublish`
+        """
         
         
 
@@ -66,7 +75,7 @@ class BatchPublishOrOfflineApiV2Request:
         实例ID
 
         :param instance_id: The instance_id of this BatchPublishOrOfflineApiV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -88,7 +97,7 @@ class BatchPublishOrOfflineApiV2Request:
         - online：发布 - offline：下线
 
         :param action: The action of this BatchPublishOrOfflineApiV2Request.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -98,7 +107,7 @@ class BatchPublishOrOfflineApiV2Request:
 
 
         :return: The body of this BatchPublishOrOfflineApiV2Request.
-        :rtype: ApiBatchPublish
+        :rtype: :class:`huaweicloudsdkroma.v2.ApiBatchPublish`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class BatchPublishOrOfflineApiV2Request:
 
 
         :param body: The body of this BatchPublishOrOfflineApiV2Request.
-        :type: ApiBatchPublish
+        :type body: :class:`huaweicloudsdkroma.v2.ApiBatchPublish`
         """
         self._body = body
 

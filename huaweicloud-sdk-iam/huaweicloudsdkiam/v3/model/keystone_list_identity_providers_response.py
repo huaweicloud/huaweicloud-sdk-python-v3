@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneListIdentityProvidersResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class KeystoneListIdentityProvidersResponse(SdkResponse):
     }
 
     def __init__(self, identity_providers=None, links=None):
-        """KeystoneListIdentityProvidersResponse - a model defined in huaweicloud sdk"""
+        """KeystoneListIdentityProvidersResponse
+
+        The model defined in huaweicloud sdk
+
+        :param identity_providers: 身份提供商信息列表。
+        :type identity_providers: list[:class:`huaweicloudsdkiam.v3.IdentityprovidersResult`]
+        :param links: 
+        :type links: :class:`huaweicloudsdkiam.v3.Links`
+        """
         
         super(KeystoneListIdentityProvidersResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class KeystoneListIdentityProvidersResponse(SdkResponse):
         身份提供商信息列表。
 
         :return: The identity_providers of this KeystoneListIdentityProvidersResponse.
-        :rtype: list[IdentityprovidersResult]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.IdentityprovidersResult`]
         """
         return self._identity_providers
 
@@ -63,7 +70,7 @@ class KeystoneListIdentityProvidersResponse(SdkResponse):
         身份提供商信息列表。
 
         :param identity_providers: The identity_providers of this KeystoneListIdentityProvidersResponse.
-        :type: list[IdentityprovidersResult]
+        :type identity_providers: list[:class:`huaweicloudsdkiam.v3.IdentityprovidersResult`]
         """
         self._identity_providers = identity_providers
 
@@ -73,7 +80,7 @@ class KeystoneListIdentityProvidersResponse(SdkResponse):
 
 
         :return: The links of this KeystoneListIdentityProvidersResponse.
-        :rtype: Links
+        :rtype: :class:`huaweicloudsdkiam.v3.Links`
         """
         return self._links
 
@@ -83,7 +90,7 @@ class KeystoneListIdentityProvidersResponse(SdkResponse):
 
 
         :param links: The links of this KeystoneListIdentityProvidersResponse.
-        :type: Links
+        :type links: :class:`huaweicloudsdkiam.v3.Links`
         """
         self._links = links
 

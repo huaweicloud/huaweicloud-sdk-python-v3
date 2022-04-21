@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryDeviceInfoResultDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class QueryDeviceInfoResultDTO:
     }
 
     def __init__(self, model=None, device_size=None, purchase_channel=None):
-        """QueryDeviceInfoResultDTO - a model defined in huaweicloud sdk"""
+        """QueryDeviceInfoResultDTO
+
+        The model defined in huaweicloud sdk
+
+        :param model: 终端型号
+        :type model: str
+        :param device_size: 设备终端产品尺寸
+        :type device_size: str
+        :param purchase_channel: 终端设备购买渠道
+        :type purchase_channel: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class QueryDeviceInfoResultDTO:
         终端型号
 
         :param model: The model of this QueryDeviceInfoResultDTO.
-        :type: str
+        :type model: str
         """
         self._model = model
 
@@ -90,7 +99,7 @@ class QueryDeviceInfoResultDTO:
         设备终端产品尺寸
 
         :param device_size: The device_size of this QueryDeviceInfoResultDTO.
-        :type: str
+        :type device_size: str
         """
         self._device_size = device_size
 
@@ -112,7 +121,7 @@ class QueryDeviceInfoResultDTO:
         终端设备购买渠道
 
         :param purchase_channel: The purchase_channel of this QueryDeviceInfoResultDTO.
-        :type: str
+        :type purchase_channel: str
         """
         self._purchase_channel = purchase_channel
 

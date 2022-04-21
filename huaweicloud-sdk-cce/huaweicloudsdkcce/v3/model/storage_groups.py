@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StorageGroups:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class StorageGroups:
     }
 
     def __init__(self, name=None, cce_managed=None, selector_names=None, virtual_spaces=None):
-        """StorageGroups - a model defined in huaweicloud sdk"""
+        """StorageGroups
+
+        The model defined in huaweicloud sdk
+
+        :param name: storageGroups的名字，作为虚拟存储组的名字，因此各个group个名字不能重复。
+        :type name: str
+        :param cce_managed: k8s及runtime所属存储空间。有且仅有一个group被设置为true，不填默认false。
+        :type cce_managed: bool
+        :param selector_names: 对应storageSelectors中的name，一个group可选择多个selector；但一个selector只能被一个group选择。
+        :type selector_names: list[str]
+        :param virtual_spaces: group中空间配置的详细管理。
+        :type virtual_spaces: list[:class:`huaweicloudsdkcce.v3.VirtualSpace`]
+        """
         
         
 
@@ -70,7 +81,7 @@ class StorageGroups:
         storageGroups的名字，作为虚拟存储组的名字，因此各个group个名字不能重复。
 
         :param name: The name of this StorageGroups.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -92,7 +103,7 @@ class StorageGroups:
         k8s及runtime所属存储空间。有且仅有一个group被设置为true，不填默认false。
 
         :param cce_managed: The cce_managed of this StorageGroups.
-        :type: bool
+        :type cce_managed: bool
         """
         self._cce_managed = cce_managed
 
@@ -114,7 +125,7 @@ class StorageGroups:
         对应storageSelectors中的name，一个group可选择多个selector；但一个selector只能被一个group选择。
 
         :param selector_names: The selector_names of this StorageGroups.
-        :type: list[str]
+        :type selector_names: list[str]
         """
         self._selector_names = selector_names
 
@@ -125,7 +136,7 @@ class StorageGroups:
         group中空间配置的详细管理。
 
         :return: The virtual_spaces of this StorageGroups.
-        :rtype: list[VirtualSpace]
+        :rtype: list[:class:`huaweicloudsdkcce.v3.VirtualSpace`]
         """
         return self._virtual_spaces
 
@@ -136,7 +147,7 @@ class StorageGroups:
         group中空间配置的详细管理。
 
         :param virtual_spaces: The virtual_spaces of this StorageGroups.
-        :type: list[VirtualSpace]
+        :type virtual_spaces: list[:class:`huaweicloudsdkcce.v3.VirtualSpace`]
         """
         self._virtual_spaces = virtual_spaces
 

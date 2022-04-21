@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OpenGaussInstanceResponse:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -62,7 +61,45 @@ class OpenGaussInstanceResponse:
     }
 
     def __init__(self, id=None, name=None, status=None, datastore=None, ha=None, replica_num=None, backup_strategy=None, port=None, enterprise_project_id=None, flavor_ref=None, volume=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, charge_info=None):
-        """OpenGaussInstanceResponse - a model defined in huaweicloud sdk"""
+        """OpenGaussInstanceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 实例ID。
+        :type id: str
+        :param name: 实例名称。用于表示实例的名称，同一租户下，同类型的实例名称可相同。  取值范围：4~64个字符之间，必须以字母开头，不区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他的特殊字符。
+        :type name: str
+        :param status: 实例状态。如BUILD，表示创建中。  仅创建按需实例时会返回该参数。
+        :type status: str
+        :param datastore: 
+        :type datastore: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussDatastoreResponse`
+        :param ha: 
+        :type ha: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussHaResponse`
+        :param replica_num: 实例副本数。
+        :type replica_num: int
+        :param backup_strategy: 
+        :type backup_strategy: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussBackupStrategyForResponse`
+        :param port: 数据库端口信息，与请求参数相同。
+        :type port: str
+        :param enterprise_project_id: 项目标签。
+        :type enterprise_project_id: str
+        :param flavor_ref: 规格码，取值范围：非空。参考[表1](https://support.huaweicloud.com/api-opengauss/opengauss_api_0037.html#opengauss_api_0037__ted9b9d433c8a4c52884e199e17f94479)中GaussDB(for openGauss)的“规格编码”列内容获取。
+        :type flavor_ref: str
+        :param volume: 
+        :type volume: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussVolumeResponse`
+        :param region: 区域ID。
+        :type region: str
+        :param availability_zone: 可用区ID。
+        :type availability_zone: str
+        :param vpc_id: 虚拟私有云ID。
+        :type vpc_id: str
+        :param subnet_id: 子网的网络ID信息。
+        :type subnet_id: str
+        :param security_group_id: 实例所属的安全组。
+        :type security_group_id: str
+        :param charge_info: 
+        :type charge_info: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussChargeInfoResponse`
+        """
         
         
 
@@ -123,7 +160,7 @@ class OpenGaussInstanceResponse:
         实例ID。
 
         :param id: The id of this OpenGaussInstanceResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -145,7 +182,7 @@ class OpenGaussInstanceResponse:
         实例名称。用于表示实例的名称，同一租户下，同类型的实例名称可相同。  取值范围：4~64个字符之间，必须以字母开头，不区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他的特殊字符。
 
         :param name: The name of this OpenGaussInstanceResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -167,7 +204,7 @@ class OpenGaussInstanceResponse:
         实例状态。如BUILD，表示创建中。  仅创建按需实例时会返回该参数。
 
         :param status: The status of this OpenGaussInstanceResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -177,7 +214,7 @@ class OpenGaussInstanceResponse:
 
 
         :return: The datastore of this OpenGaussInstanceResponse.
-        :rtype: OpenGaussDatastoreResponse
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussDatastoreResponse`
         """
         return self._datastore
 
@@ -187,7 +224,7 @@ class OpenGaussInstanceResponse:
 
 
         :param datastore: The datastore of this OpenGaussInstanceResponse.
-        :type: OpenGaussDatastoreResponse
+        :type datastore: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussDatastoreResponse`
         """
         self._datastore = datastore
 
@@ -197,7 +234,7 @@ class OpenGaussInstanceResponse:
 
 
         :return: The ha of this OpenGaussInstanceResponse.
-        :rtype: OpenGaussHaResponse
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussHaResponse`
         """
         return self._ha
 
@@ -207,7 +244,7 @@ class OpenGaussInstanceResponse:
 
 
         :param ha: The ha of this OpenGaussInstanceResponse.
-        :type: OpenGaussHaResponse
+        :type ha: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussHaResponse`
         """
         self._ha = ha
 
@@ -229,7 +266,7 @@ class OpenGaussInstanceResponse:
         实例副本数。
 
         :param replica_num: The replica_num of this OpenGaussInstanceResponse.
-        :type: int
+        :type replica_num: int
         """
         self._replica_num = replica_num
 
@@ -239,7 +276,7 @@ class OpenGaussInstanceResponse:
 
 
         :return: The backup_strategy of this OpenGaussInstanceResponse.
-        :rtype: OpenGaussBackupStrategyForResponse
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussBackupStrategyForResponse`
         """
         return self._backup_strategy
 
@@ -249,7 +286,7 @@ class OpenGaussInstanceResponse:
 
 
         :param backup_strategy: The backup_strategy of this OpenGaussInstanceResponse.
-        :type: OpenGaussBackupStrategyForResponse
+        :type backup_strategy: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussBackupStrategyForResponse`
         """
         self._backup_strategy = backup_strategy
 
@@ -271,7 +308,7 @@ class OpenGaussInstanceResponse:
         数据库端口信息，与请求参数相同。
 
         :param port: The port of this OpenGaussInstanceResponse.
-        :type: str
+        :type port: str
         """
         self._port = port
 
@@ -293,7 +330,7 @@ class OpenGaussInstanceResponse:
         项目标签。
 
         :param enterprise_project_id: The enterprise_project_id of this OpenGaussInstanceResponse.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -315,7 +352,7 @@ class OpenGaussInstanceResponse:
         规格码，取值范围：非空。参考[表1](https://support.huaweicloud.com/api-opengauss/opengauss_api_0037.html#opengauss_api_0037__ted9b9d433c8a4c52884e199e17f94479)中GaussDB(for openGauss)的“规格编码”列内容获取。
 
         :param flavor_ref: The flavor_ref of this OpenGaussInstanceResponse.
-        :type: str
+        :type flavor_ref: str
         """
         self._flavor_ref = flavor_ref
 
@@ -325,7 +362,7 @@ class OpenGaussInstanceResponse:
 
 
         :return: The volume of this OpenGaussInstanceResponse.
-        :rtype: OpenGaussVolumeResponse
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussVolumeResponse`
         """
         return self._volume
 
@@ -335,7 +372,7 @@ class OpenGaussInstanceResponse:
 
 
         :param volume: The volume of this OpenGaussInstanceResponse.
-        :type: OpenGaussVolumeResponse
+        :type volume: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussVolumeResponse`
         """
         self._volume = volume
 
@@ -357,7 +394,7 @@ class OpenGaussInstanceResponse:
         区域ID。
 
         :param region: The region of this OpenGaussInstanceResponse.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -379,7 +416,7 @@ class OpenGaussInstanceResponse:
         可用区ID。
 
         :param availability_zone: The availability_zone of this OpenGaussInstanceResponse.
-        :type: str
+        :type availability_zone: str
         """
         self._availability_zone = availability_zone
 
@@ -401,7 +438,7 @@ class OpenGaussInstanceResponse:
         虚拟私有云ID。
 
         :param vpc_id: The vpc_id of this OpenGaussInstanceResponse.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -423,7 +460,7 @@ class OpenGaussInstanceResponse:
         子网的网络ID信息。
 
         :param subnet_id: The subnet_id of this OpenGaussInstanceResponse.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -445,7 +482,7 @@ class OpenGaussInstanceResponse:
         实例所属的安全组。
 
         :param security_group_id: The security_group_id of this OpenGaussInstanceResponse.
-        :type: str
+        :type security_group_id: str
         """
         self._security_group_id = security_group_id
 
@@ -455,7 +492,7 @@ class OpenGaussInstanceResponse:
 
 
         :return: The charge_info of this OpenGaussInstanceResponse.
-        :rtype: OpenGaussChargeInfoResponse
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussChargeInfoResponse`
         """
         return self._charge_info
 
@@ -465,7 +502,7 @@ class OpenGaussInstanceResponse:
 
 
         :param charge_info: The charge_info of this OpenGaussInstanceResponse.
-        :type: OpenGaussChargeInfoResponse
+        :type charge_info: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussChargeInfoResponse`
         """
         self._charge_info = charge_info
 

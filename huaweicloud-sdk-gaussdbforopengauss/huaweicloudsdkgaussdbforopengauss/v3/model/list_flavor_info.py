@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListFlavorInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListFlavorInfo:
     }
 
     def __init__(self, vcpu=None, mem=None):
-        """ListFlavorInfo - a model defined in huaweicloud sdk"""
+        """ListFlavorInfo
+
+        The model defined in huaweicloud sdk
+
+        :param vcpu: cpu核数。
+        :type vcpu: int
+        :param mem: 内存大小。
+        :type mem: int
+        """
         
         
 
@@ -61,7 +68,7 @@ class ListFlavorInfo:
         cpu核数。
 
         :param vcpu: The vcpu of this ListFlavorInfo.
-        :type: int
+        :type vcpu: int
         """
         self._vcpu = vcpu
 
@@ -83,7 +90,7 @@ class ListFlavorInfo:
         内存大小。
 
         :param mem: The mem of this ListFlavorInfo.
-        :type: int
+        :type mem: int
         """
         self._mem = mem
 

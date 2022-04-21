@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListBaremetalFlavorDetailExtendsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListBaremetalFlavorDetailExtendsRequest:
     }
 
     def __init__(self, availability_zone=None):
-        """ListBaremetalFlavorDetailExtendsRequest - a model defined in huaweicloud sdk"""
+        """ListBaremetalFlavorDetailExtendsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param availability_zone: 可用区，需要指定可用区（AZ）的名称。请参考地区和终端节点获取。
+        :type availability_zone: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class ListBaremetalFlavorDetailExtendsRequest:
         可用区，需要指定可用区（AZ）的名称。请参考地区和终端节点获取。
 
         :param availability_zone: The availability_zone of this ListBaremetalFlavorDetailExtendsRequest.
-        :type: str
+        :type availability_zone: str
         """
         self._availability_zone = availability_zone
 

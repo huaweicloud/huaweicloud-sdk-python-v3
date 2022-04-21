@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddFacesBase64Req:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class AddFacesBase64Req:
     }
 
     def __init__(self, image_base64=None, external_fields=None, external_image_id=None, single=None):
-        """AddFacesBase64Req - a model defined in huaweicloud sdk"""
+        """AddFacesBase64Req
+
+        The model defined in huaweicloud sdk
+
+        :param image_base64: 图像数据，Base64编码，要求： • Base64编码后大小不超过8MB，建议小于1MB。 • 图片为JPG/JPEG/BMP/PNG格式。
+        :type image_base64: str
+        :param external_fields: 根据用户自定义数据类型，填入相应的数值。 创建faceset时定义该字段，Json字符串不校验重复性，参考[自定义字段](https://support.huaweicloud.com/api-face/face_02_0012.html)。
+        :type external_fields: object
+        :param external_image_id: 用户指定的图片外部ID，与当前图像绑定。用户没提供，系统会生成一个。 该ID长度范围为1～36位，可以包含字母、数字、中划线或者下划线，不包含其他的特殊字符。
+        :type external_image_id: str
+        :param single: 是否将图片中的最大人脸添加至人脸库。可选值包括: • true: 传入的单张图片中如果包含多张人脸，则只将最大人脸添加到人脸库中。 • false: 默认为false。传入的单张图片中如果包含多张人脸，则将所有人脸添加至人脸库中。
+        :type single: bool
+        """
         
         
 
@@ -72,7 +83,7 @@ class AddFacesBase64Req:
         图像数据，Base64编码，要求： • Base64编码后大小不超过8MB，建议小于1MB。 • 图片为JPG/JPEG/BMP/PNG格式。
 
         :param image_base64: The image_base64 of this AddFacesBase64Req.
-        :type: str
+        :type image_base64: str
         """
         self._image_base64 = image_base64
 
@@ -94,7 +105,7 @@ class AddFacesBase64Req:
         根据用户自定义数据类型，填入相应的数值。 创建faceset时定义该字段，Json字符串不校验重复性，参考[自定义字段](https://support.huaweicloud.com/api-face/face_02_0012.html)。
 
         :param external_fields: The external_fields of this AddFacesBase64Req.
-        :type: object
+        :type external_fields: object
         """
         self._external_fields = external_fields
 
@@ -116,7 +127,7 @@ class AddFacesBase64Req:
         用户指定的图片外部ID，与当前图像绑定。用户没提供，系统会生成一个。 该ID长度范围为1～36位，可以包含字母、数字、中划线或者下划线，不包含其他的特殊字符。
 
         :param external_image_id: The external_image_id of this AddFacesBase64Req.
-        :type: str
+        :type external_image_id: str
         """
         self._external_image_id = external_image_id
 
@@ -138,7 +149,7 @@ class AddFacesBase64Req:
         是否将图片中的最大人脸添加至人脸库。可选值包括: • true: 传入的单张图片中如果包含多张人脸，则只将最大人脸添加到人脸库中。 • false: 默认为false。传入的单张图片中如果包含多张人脸，则将所有人脸添加至人脸库中。
 
         :param single: The single of this AddFacesBase64Req.
-        :type: bool
+        :type single: bool
         """
         self._single = single
 

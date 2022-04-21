@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListMetadataLocksRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListMetadataLocksRequest:
     }
 
     def __init__(self, instance_id=None, db_user_id=None, thread_id=None, database=None, table=None, x_language=None):
-        """ListMetadataLocksRequest - a model defined in huaweicloud sdk"""
+        """ListMetadataLocksRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param db_user_id: 数据库用户ID
+        :type db_user_id: str
+        :param thread_id: 会话ID
+        :type thread_id: str
+        :param database: 数据库名称
+        :type database: str
+        :param table: 表名
+        :type table: str
+        :param x_language: 语言
+        :type x_language: str
+        """
         
         
 
@@ -81,7 +96,7 @@ class ListMetadataLocksRequest:
         实例ID
 
         :param instance_id: The instance_id of this ListMetadataLocksRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -103,7 +118,7 @@ class ListMetadataLocksRequest:
         数据库用户ID
 
         :param db_user_id: The db_user_id of this ListMetadataLocksRequest.
-        :type: str
+        :type db_user_id: str
         """
         self._db_user_id = db_user_id
 
@@ -125,7 +140,7 @@ class ListMetadataLocksRequest:
         会话ID
 
         :param thread_id: The thread_id of this ListMetadataLocksRequest.
-        :type: str
+        :type thread_id: str
         """
         self._thread_id = thread_id
 
@@ -147,7 +162,7 @@ class ListMetadataLocksRequest:
         数据库名称
 
         :param database: The database of this ListMetadataLocksRequest.
-        :type: str
+        :type database: str
         """
         self._database = database
 
@@ -169,7 +184,7 @@ class ListMetadataLocksRequest:
         表名
 
         :param table: The table of this ListMetadataLocksRequest.
-        :type: str
+        :type table: str
         """
         self._table = table
 
@@ -191,7 +206,7 @@ class ListMetadataLocksRequest:
         语言
 
         :param x_language: The x_language of this ListMetadataLocksRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 

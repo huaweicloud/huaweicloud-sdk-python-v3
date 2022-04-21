@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PeerChannelInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class PeerChannelInfo:
     }
 
     def __init__(self, channel_name=None, peers=None):
-        """PeerChannelInfo - a model defined in huaweicloud sdk"""
+        """PeerChannelInfo
+
+        The model defined in huaweicloud sdk
+
+        :param channel_name: peer加入的通道名称
+        :type channel_name: str
+        :param peers: 加入通道peer名称和数量，key为组织名称，value为peer数量
+        :type peers: dict(str, int)
+        """
         
         
 
@@ -61,7 +68,7 @@ class PeerChannelInfo:
         peer加入的通道名称
 
         :param channel_name: The channel_name of this PeerChannelInfo.
-        :type: str
+        :type channel_name: str
         """
         self._channel_name = channel_name
 
@@ -83,7 +90,7 @@ class PeerChannelInfo:
         加入通道peer名称和数量，key为组织名称，value为peer数量
 
         :param peers: The peers of this PeerChannelInfo.
-        :type: dict(str, int)
+        :type peers: dict(str, int)
         """
         self._peers = peers
 

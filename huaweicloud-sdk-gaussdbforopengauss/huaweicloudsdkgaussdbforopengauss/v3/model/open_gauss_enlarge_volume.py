@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OpenGaussEnlargeVolume:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class OpenGaussEnlargeVolume:
     }
 
     def __init__(self, size=None):
-        """OpenGaussEnlargeVolume - a model defined in huaweicloud sdk"""
+        """OpenGaussEnlargeVolume
+
+        The model defined in huaweicloud sdk
+
+        :param size: GaussDB(for openGauss)磁盘大小要求（分片数*40GB）的倍数；取值范围：（分片数*40GB）~（分片数*16TB）
+        :type size: int
+        """
         
         
 
@@ -57,7 +62,7 @@ class OpenGaussEnlargeVolume:
         GaussDB(for openGauss)磁盘大小要求（分片数*40GB）的倍数；取值范围：（分片数*40GB）~（分片数*16TB）
 
         :param size: The size of this OpenGaussEnlargeVolume.
-        :type: int
+        :type size: int
         """
         self._size = size
 

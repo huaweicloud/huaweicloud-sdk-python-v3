@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MixParam:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class MixParam:
     }
 
     def __init__(self, room_id=None, encode_template=None, max_idle_time=None, layout_template=None, default_user_background_image=None, screen_background_image=None, background_image=None, layout_panes=None, user_background_images=None):
-        """MixParam - a model defined in huaweicloud sdk"""
+        """MixParam
+
+        The model defined in huaweicloud sdk
+
+        :param room_id: 房间id
+        :type room_id: str
+        :param encode_template: 输出编码模板名称 - 1920x1080_30_4620：输出流是1080p，帧率30，码率4.62Mbps - 1920x1080_15_3460：输出流是1080p，帧率15，码率3.46Mbps - 1280x720_30_3420：输出流是720p，帧率30，码率3.42Mbps - 1280x720_15_2260：输出流是720p，帧率15，码率2.26Mbps 
+        :type encode_template: str
+        :param max_idle_time: 最长空闲频道时间。  取值范围：[5，43200]，默认值为30。  单位：秒。  如果频道内无连麦方的状态持续超过该时间，录制程序会自动退出。退出后，再次调用start请求，会产生新的录制任务。  连麦方指：joiner或者publisher的用户。 
+        :type max_idle_time: int
+        :param layout_template: 视频布局模板编号，不混视频的时候，不需要带。 - nine_grids_view：九宫格模板（自适应模板） - screen_share_left：主视图在左边的屏幕共享模板（自适应模板） - screen_share_right：主视图在右边的屏幕共享模板（自适应模板） - custom：自定义布局 
+        :type layout_template: str
+        :param default_user_background_image: 默认用户背景图地址，图片先上传obs，格式s3://bucket/object。默认使用等比缩放裁剪，保证铺满。
+        :type default_user_background_image: str
+        :param screen_background_image: 共享屏幕的背景图地址，图片先上传obs，格式s3://bucket/object。  在一大多小的布局场景下，无论大窗是显示非指定用户（屏幕共享人的桌面）还是指定用户的共享桌面，都通过该字段指定背景图。 
+        :type screen_background_image: str
+        :param background_image: 画布背景图地址，图片先上传obs，格式s3://bucket/object。默认使用等比缩放裁剪，保证铺满。
+        :type background_image: str
+        :param layout_panes: 需要混流的视频列表。若不需要混流视频，则可不传递该参数。  nine_grids_view模板不需要填写本字段。 
+        :type layout_panes: list[:class:`huaweicloudsdkcloudrtc.v2.MixLayoutPane`]
+        :param user_background_images: 指定用户背景图，优先级大于default_user_background_image
+        :type user_background_images: list[:class:`huaweicloudsdkcloudrtc.v2.MixUserBackgroundImage`]
+        """
         
         
 
@@ -96,7 +117,7 @@ class MixParam:
         房间id
 
         :param room_id: The room_id of this MixParam.
-        :type: str
+        :type room_id: str
         """
         self._room_id = room_id
 
@@ -118,7 +139,7 @@ class MixParam:
         输出编码模板名称 - 1920x1080_30_4620：输出流是1080p，帧率30，码率4.62Mbps - 1920x1080_15_3460：输出流是1080p，帧率15，码率3.46Mbps - 1280x720_30_3420：输出流是720p，帧率30，码率3.42Mbps - 1280x720_15_2260：输出流是720p，帧率15，码率2.26Mbps 
 
         :param encode_template: The encode_template of this MixParam.
-        :type: str
+        :type encode_template: str
         """
         self._encode_template = encode_template
 
@@ -140,7 +161,7 @@ class MixParam:
         最长空闲频道时间。  取值范围：[5，43200]，默认值为30。  单位：秒。  如果频道内无连麦方的状态持续超过该时间，录制程序会自动退出。退出后，再次调用start请求，会产生新的录制任务。  连麦方指：joiner或者publisher的用户。 
 
         :param max_idle_time: The max_idle_time of this MixParam.
-        :type: int
+        :type max_idle_time: int
         """
         self._max_idle_time = max_idle_time
 
@@ -162,7 +183,7 @@ class MixParam:
         视频布局模板编号，不混视频的时候，不需要带。 - nine_grids_view：九宫格模板（自适应模板） - screen_share_left：主视图在左边的屏幕共享模板（自适应模板） - screen_share_right：主视图在右边的屏幕共享模板（自适应模板） - custom：自定义布局 
 
         :param layout_template: The layout_template of this MixParam.
-        :type: str
+        :type layout_template: str
         """
         self._layout_template = layout_template
 
@@ -184,7 +205,7 @@ class MixParam:
         默认用户背景图地址，图片先上传obs，格式s3://bucket/object。默认使用等比缩放裁剪，保证铺满。
 
         :param default_user_background_image: The default_user_background_image of this MixParam.
-        :type: str
+        :type default_user_background_image: str
         """
         self._default_user_background_image = default_user_background_image
 
@@ -206,7 +227,7 @@ class MixParam:
         共享屏幕的背景图地址，图片先上传obs，格式s3://bucket/object。  在一大多小的布局场景下，无论大窗是显示非指定用户（屏幕共享人的桌面）还是指定用户的共享桌面，都通过该字段指定背景图。 
 
         :param screen_background_image: The screen_background_image of this MixParam.
-        :type: str
+        :type screen_background_image: str
         """
         self._screen_background_image = screen_background_image
 
@@ -228,7 +249,7 @@ class MixParam:
         画布背景图地址，图片先上传obs，格式s3://bucket/object。默认使用等比缩放裁剪，保证铺满。
 
         :param background_image: The background_image of this MixParam.
-        :type: str
+        :type background_image: str
         """
         self._background_image = background_image
 
@@ -239,7 +260,7 @@ class MixParam:
         需要混流的视频列表。若不需要混流视频，则可不传递该参数。  nine_grids_view模板不需要填写本字段。 
 
         :return: The layout_panes of this MixParam.
-        :rtype: list[MixLayoutPane]
+        :rtype: list[:class:`huaweicloudsdkcloudrtc.v2.MixLayoutPane`]
         """
         return self._layout_panes
 
@@ -250,7 +271,7 @@ class MixParam:
         需要混流的视频列表。若不需要混流视频，则可不传递该参数。  nine_grids_view模板不需要填写本字段。 
 
         :param layout_panes: The layout_panes of this MixParam.
-        :type: list[MixLayoutPane]
+        :type layout_panes: list[:class:`huaweicloudsdkcloudrtc.v2.MixLayoutPane`]
         """
         self._layout_panes = layout_panes
 
@@ -261,7 +282,7 @@ class MixParam:
         指定用户背景图，优先级大于default_user_background_image
 
         :return: The user_background_images of this MixParam.
-        :rtype: list[MixUserBackgroundImage]
+        :rtype: list[:class:`huaweicloudsdkcloudrtc.v2.MixUserBackgroundImage`]
         """
         return self._user_background_images
 
@@ -272,7 +293,7 @@ class MixParam:
         指定用户背景图，优先级大于default_user_background_image
 
         :param user_background_images: The user_background_images of this MixParam.
-        :type: list[MixUserBackgroundImage]
+        :type user_background_images: list[:class:`huaweicloudsdkcloudrtc.v2.MixUserBackgroundImage`]
         """
         self._user_background_images = user_background_images
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowOpenApiCalledRecordsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ShowOpenApiCalledRecordsRequest:
     }
 
     def __init__(self, limit=None, called_url=None, start_time=None, end_time=None, marker=None):
-        """ShowOpenApiCalledRecordsRequest - a model defined in huaweicloud sdk"""
+        """ShowOpenApiCalledRecordsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 分页大小，默认1000，最大2000。
+        :type limit: int
+        :param called_url: 需要查询调用记录的URL，例如：/v1/{project_id}/sdg/database/watermark/embed。
+        :type called_url: str
+        :param start_time: 开始时间（Unix timestamp），单位：毫秒，例如：0
+        :type start_time: int
+        :param end_time: 结束时间（Unix timestamp），单位：毫秒，例如：1638515803572
+        :type end_time: int
+        :param marker: 指定一个标识符。获取第一页时不用赋值，获取下一页时取上页查询结果的返回值。
+        :type marker: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class ShowOpenApiCalledRecordsRequest:
         分页大小，默认1000，最大2000。
 
         :param limit: The limit of this ShowOpenApiCalledRecordsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -100,7 +113,7 @@ class ShowOpenApiCalledRecordsRequest:
         需要查询调用记录的URL，例如：/v1/{project_id}/sdg/database/watermark/embed。
 
         :param called_url: The called_url of this ShowOpenApiCalledRecordsRequest.
-        :type: str
+        :type called_url: str
         """
         self._called_url = called_url
 
@@ -122,7 +135,7 @@ class ShowOpenApiCalledRecordsRequest:
         开始时间（Unix timestamp），单位：毫秒，例如：0
 
         :param start_time: The start_time of this ShowOpenApiCalledRecordsRequest.
-        :type: int
+        :type start_time: int
         """
         self._start_time = start_time
 
@@ -144,7 +157,7 @@ class ShowOpenApiCalledRecordsRequest:
         结束时间（Unix timestamp），单位：毫秒，例如：1638515803572
 
         :param end_time: The end_time of this ShowOpenApiCalledRecordsRequest.
-        :type: int
+        :type end_time: int
         """
         self._end_time = end_time
 
@@ -166,7 +179,7 @@ class ShowOpenApiCalledRecordsRequest:
         指定一个标识符。获取第一页时不用赋值，获取下一页时取上页查询结果的返回值。
 
         :param marker: The marker of this ShowOpenApiCalledRecordsRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateTransferResponseBodyLogTransferInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class CreateTransferResponseBodyLogTransferInfo:
     }
 
     def __init__(self, log_agency_transfer=None, log_create_time=None, log_storage_format=None, log_transfer_detail=None, log_transfer_mode=None, log_transfer_status=None, log_transfer_type=None):
-        """CreateTransferResponseBodyLogTransferInfo - a model defined in huaweicloud sdk"""
+        """CreateTransferResponseBodyLogTransferInfo
+
+        The model defined in huaweicloud sdk
+
+        :param log_agency_transfer: 
+        :type log_agency_transfer: :class:`huaweicloudsdklts.v2.CreateTransferResponseBodyLogTransferInfoLogAgencyTransfer`
+        :param log_create_time: 日志转储创建时间
+        :type log_create_time: int
+        :param log_storage_format: 日志转储格式。只支持\&quot;RAW\&quot;, \&quot;JSON\&quot;。RAW是指原始日志格式，JSON是指JSON日志格式。OBS转储和DIS转储支持JSON和RAW，DMS转储仅支持RAW
+        :type log_storage_format: str
+        :param log_transfer_detail: 日志转储详细信息
+        :type log_transfer_detail: :class:`huaweicloudsdklts.v2.TransferDetail`
+        :param log_transfer_mode: 日志转储方式。cycle是指周期性转储，realTime是指实时转储。OBS转储只支持\&quot;cycle\&quot;，DIS转储和DMS转储只支持\&quot;realTime\&quot;。
+        :type log_transfer_mode: str
+        :param log_transfer_status: 日志转储状态，ENABLE是指日志转储开启状态，DISABLE是指日志转储关闭状态，EXCEPTION是指日志转储异常状态
+        :type log_transfer_status: str
+        :param log_transfer_type: 日志转储类型。OBS指OBS日志转储，DIS指DIS日志转储，DMS指DMS日志转储
+        :type log_transfer_type: str
+        """
         
         
 
@@ -70,7 +87,7 @@ class CreateTransferResponseBodyLogTransferInfo:
 
 
         :return: The log_agency_transfer of this CreateTransferResponseBodyLogTransferInfo.
-        :rtype: CreateTransferResponseBodyLogTransferInfoLogAgencyTransfer
+        :rtype: :class:`huaweicloudsdklts.v2.CreateTransferResponseBodyLogTransferInfoLogAgencyTransfer`
         """
         return self._log_agency_transfer
 
@@ -80,7 +97,7 @@ class CreateTransferResponseBodyLogTransferInfo:
 
 
         :param log_agency_transfer: The log_agency_transfer of this CreateTransferResponseBodyLogTransferInfo.
-        :type: CreateTransferResponseBodyLogTransferInfoLogAgencyTransfer
+        :type log_agency_transfer: :class:`huaweicloudsdklts.v2.CreateTransferResponseBodyLogTransferInfoLogAgencyTransfer`
         """
         self._log_agency_transfer = log_agency_transfer
 
@@ -102,7 +119,7 @@ class CreateTransferResponseBodyLogTransferInfo:
         日志转储创建时间
 
         :param log_create_time: The log_create_time of this CreateTransferResponseBodyLogTransferInfo.
-        :type: int
+        :type log_create_time: int
         """
         self._log_create_time = log_create_time
 
@@ -124,7 +141,7 @@ class CreateTransferResponseBodyLogTransferInfo:
         日志转储格式。只支持\"RAW\", \"JSON\"。RAW是指原始日志格式，JSON是指JSON日志格式。OBS转储和DIS转储支持JSON和RAW，DMS转储仅支持RAW
 
         :param log_storage_format: The log_storage_format of this CreateTransferResponseBodyLogTransferInfo.
-        :type: str
+        :type log_storage_format: str
         """
         self._log_storage_format = log_storage_format
 
@@ -135,7 +152,7 @@ class CreateTransferResponseBodyLogTransferInfo:
         日志转储详细信息
 
         :return: The log_transfer_detail of this CreateTransferResponseBodyLogTransferInfo.
-        :rtype: TransferDetail
+        :rtype: :class:`huaweicloudsdklts.v2.TransferDetail`
         """
         return self._log_transfer_detail
 
@@ -146,7 +163,7 @@ class CreateTransferResponseBodyLogTransferInfo:
         日志转储详细信息
 
         :param log_transfer_detail: The log_transfer_detail of this CreateTransferResponseBodyLogTransferInfo.
-        :type: TransferDetail
+        :type log_transfer_detail: :class:`huaweicloudsdklts.v2.TransferDetail`
         """
         self._log_transfer_detail = log_transfer_detail
 
@@ -168,7 +185,7 @@ class CreateTransferResponseBodyLogTransferInfo:
         日志转储方式。cycle是指周期性转储，realTime是指实时转储。OBS转储只支持\"cycle\"，DIS转储和DMS转储只支持\"realTime\"。
 
         :param log_transfer_mode: The log_transfer_mode of this CreateTransferResponseBodyLogTransferInfo.
-        :type: str
+        :type log_transfer_mode: str
         """
         self._log_transfer_mode = log_transfer_mode
 
@@ -190,7 +207,7 @@ class CreateTransferResponseBodyLogTransferInfo:
         日志转储状态，ENABLE是指日志转储开启状态，DISABLE是指日志转储关闭状态，EXCEPTION是指日志转储异常状态
 
         :param log_transfer_status: The log_transfer_status of this CreateTransferResponseBodyLogTransferInfo.
-        :type: str
+        :type log_transfer_status: str
         """
         self._log_transfer_status = log_transfer_status
 
@@ -212,7 +229,7 @@ class CreateTransferResponseBodyLogTransferInfo:
         日志转储类型。OBS指OBS日志转储，DIS指DIS日志转储，DMS指DMS日志转储
 
         :param log_transfer_type: The log_transfer_type of this CreateTransferResponseBodyLogTransferInfo.
-        :type: str
+        :type log_transfer_type: str
         """
         self._log_transfer_type = log_transfer_type
 

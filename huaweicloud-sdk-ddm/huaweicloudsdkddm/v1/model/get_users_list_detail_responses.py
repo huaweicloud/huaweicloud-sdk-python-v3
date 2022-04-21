@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GetUsersListDetailResponses:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class GetUsersListDetailResponses:
     }
 
     def __init__(self, name=None, status=None, base_authority=None, extend_authority=None, description=None, created=None, databases=None):
-        """GetUsersListDetailResponses - a model defined in huaweicloud sdk"""
+        """GetUsersListDetailResponses
+
+        The model defined in huaweicloud sdk
+
+        :param name: DDM实例帐号名称。
+        :type name: str
+        :param status: DDM实例帐号状态。
+        :type status: str
+        :param base_authority: DDM实例帐号的基础权限。  取值为：CREATE、DROP、ALTER、INDEX、INSERT、DELETE、UPDATE、SELECT
+        :type base_authority: list[str]
+        :param extend_authority: DDM实例帐号的扩展权限。2021年8月开始不支持该字段，9月会去掉该字段。  取值为：fulltableDelete、fulltableSelect、fulltableUpdate
+        :type extend_authority: list[str]
+        :param description: DDM实例帐号的描述。
+        :type description: str
+        :param created: DDM实例帐号的创建时间。
+        :type created: int
+        :param databases: 关联的逻辑库的集合。
+        :type databases: list[:class:`huaweicloudsdkddm.v1.GetUsersListdatabase`]
+        """
         
         
 
@@ -82,7 +99,7 @@ class GetUsersListDetailResponses:
         DDM实例帐号名称。
 
         :param name: The name of this GetUsersListDetailResponses.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -104,7 +121,7 @@ class GetUsersListDetailResponses:
         DDM实例帐号状态。
 
         :param status: The status of this GetUsersListDetailResponses.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -126,7 +143,7 @@ class GetUsersListDetailResponses:
         DDM实例帐号的基础权限。  取值为：CREATE、DROP、ALTER、INDEX、INSERT、DELETE、UPDATE、SELECT
 
         :param base_authority: The base_authority of this GetUsersListDetailResponses.
-        :type: list[str]
+        :type base_authority: list[str]
         """
         self._base_authority = base_authority
 
@@ -148,7 +165,7 @@ class GetUsersListDetailResponses:
         DDM实例帐号的扩展权限。2021年8月开始不支持该字段，9月会去掉该字段。  取值为：fulltableDelete、fulltableSelect、fulltableUpdate
 
         :param extend_authority: The extend_authority of this GetUsersListDetailResponses.
-        :type: list[str]
+        :type extend_authority: list[str]
         """
         self._extend_authority = extend_authority
 
@@ -170,7 +187,7 @@ class GetUsersListDetailResponses:
         DDM实例帐号的描述。
 
         :param description: The description of this GetUsersListDetailResponses.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -192,7 +209,7 @@ class GetUsersListDetailResponses:
         DDM实例帐号的创建时间。
 
         :param created: The created of this GetUsersListDetailResponses.
-        :type: int
+        :type created: int
         """
         self._created = created
 
@@ -203,7 +220,7 @@ class GetUsersListDetailResponses:
         关联的逻辑库的集合。
 
         :return: The databases of this GetUsersListDetailResponses.
-        :rtype: list[GetUsersListdatabase]
+        :rtype: list[:class:`huaweicloudsdkddm.v1.GetUsersListdatabase`]
         """
         return self._databases
 
@@ -214,7 +231,7 @@ class GetUsersListDetailResponses:
         关联的逻辑库的集合。
 
         :param databases: The databases of this GetUsersListDetailResponses.
-        :type: list[GetUsersListdatabase]
+        :type databases: list[:class:`huaweicloudsdkddm.v1.GetUsersListdatabase`]
         """
         self._databases = databases
 

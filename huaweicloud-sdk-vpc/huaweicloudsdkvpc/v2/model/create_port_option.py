@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreatePortOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class CreatePortOption:
     }
 
     def __init__(self, name=None, network_id=None, fixed_ips=None, device_owner=None, security_groups=None, admin_state_up=None, allowed_address_pairs=None, extra_dhcp_opts=None, tenant_id=None):
-        """CreatePortOption - a model defined in huaweicloud sdk"""
+        """CreatePortOption
+
+        The model defined in huaweicloud sdk
+
+        :param name: 功能说明：端口名称 取值范围：0~255个字符，支持中文、英文、字母、_(下划线)、-（中划线），默认为空
+        :type name: str
+        :param network_id: 功能说明：端口所属网络的ID 约束：必须是存在的网络ID
+        :type network_id: str
+        :param fixed_ips: 功能说明：端口IP 例如：\&quot;fixed_ips\&quot;: [{\&quot;subnet_id\&quot;: \&quot;4dc70db6-cb7f-4200-9790-a6a910776bba\&quot;, \&quot;ip_address\&quot;: \&quot;192.169.25.79\&quot;}] 约束：ipv4场景下一个端口只支持一个fixed_ip，且不支持更新
+        :type fixed_ips: list[:class:`huaweicloudsdkvpc.v2.FixedIp`]
+        :param device_owner: 功能说明：端口设备所属 取值范围：目前只支持指定\&quot;\&quot;和\&quot;neutron:VIP_PORT\&quot;；neutron:VIP_PORT表示创建的是VIP
+        :type device_owner: str
+        :param security_groups: 功能说明：安全组的ID列表；例如：\&quot;security_groups\&quot;: [\&quot;a0608cbf-d047-4f54-8b28-cd7b59853fff\&quot;] 取值范围：默认值为系统默认安全组
+        :type security_groups: list[str]
+        :param admin_state_up: 功能说明：管理状态 取值范围：只支持true，默认为true
+        :type admin_state_up: bool
+        :param allowed_address_pairs: 功能说明：IP/Mac对列表 约束：IP地址不允许为 “0.0.0.0/0” 如果配置的地址池较大（CIDR掩码小于24位），建议为该port配置一个单独的安全组。
+        :type allowed_address_pairs: list[:class:`huaweicloudsdkvpc.v2.AllowedAddressPair`]
+        :param extra_dhcp_opts: 功能说明：DHCP的扩展Option(扩展属性)
+        :type extra_dhcp_opts: list[:class:`huaweicloudsdkvpc.v2.ExtraDhcpOpt`]
+        :param tenant_id: 功能说明：端口所属项目ID
+        :type tenant_id: str
+        """
         
         
 
@@ -97,7 +118,7 @@ class CreatePortOption:
         功能说明：端口名称 取值范围：0~255个字符，支持中文、英文、字母、_(下划线)、-（中划线），默认为空
 
         :param name: The name of this CreatePortOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -119,7 +140,7 @@ class CreatePortOption:
         功能说明：端口所属网络的ID 约束：必须是存在的网络ID
 
         :param network_id: The network_id of this CreatePortOption.
-        :type: str
+        :type network_id: str
         """
         self._network_id = network_id
 
@@ -130,7 +151,7 @@ class CreatePortOption:
         功能说明：端口IP 例如：\"fixed_ips\": [{\"subnet_id\": \"4dc70db6-cb7f-4200-9790-a6a910776bba\", \"ip_address\": \"192.169.25.79\"}] 约束：ipv4场景下一个端口只支持一个fixed_ip，且不支持更新
 
         :return: The fixed_ips of this CreatePortOption.
-        :rtype: list[FixedIp]
+        :rtype: list[:class:`huaweicloudsdkvpc.v2.FixedIp`]
         """
         return self._fixed_ips
 
@@ -141,7 +162,7 @@ class CreatePortOption:
         功能说明：端口IP 例如：\"fixed_ips\": [{\"subnet_id\": \"4dc70db6-cb7f-4200-9790-a6a910776bba\", \"ip_address\": \"192.169.25.79\"}] 约束：ipv4场景下一个端口只支持一个fixed_ip，且不支持更新
 
         :param fixed_ips: The fixed_ips of this CreatePortOption.
-        :type: list[FixedIp]
+        :type fixed_ips: list[:class:`huaweicloudsdkvpc.v2.FixedIp`]
         """
         self._fixed_ips = fixed_ips
 
@@ -163,7 +184,7 @@ class CreatePortOption:
         功能说明：端口设备所属 取值范围：目前只支持指定\"\"和\"neutron:VIP_PORT\"；neutron:VIP_PORT表示创建的是VIP
 
         :param device_owner: The device_owner of this CreatePortOption.
-        :type: str
+        :type device_owner: str
         """
         self._device_owner = device_owner
 
@@ -185,7 +206,7 @@ class CreatePortOption:
         功能说明：安全组的ID列表；例如：\"security_groups\": [\"a0608cbf-d047-4f54-8b28-cd7b59853fff\"] 取值范围：默认值为系统默认安全组
 
         :param security_groups: The security_groups of this CreatePortOption.
-        :type: list[str]
+        :type security_groups: list[str]
         """
         self._security_groups = security_groups
 
@@ -207,7 +228,7 @@ class CreatePortOption:
         功能说明：管理状态 取值范围：只支持true，默认为true
 
         :param admin_state_up: The admin_state_up of this CreatePortOption.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 
@@ -218,7 +239,7 @@ class CreatePortOption:
         功能说明：IP/Mac对列表 约束：IP地址不允许为 “0.0.0.0/0” 如果配置的地址池较大（CIDR掩码小于24位），建议为该port配置一个单独的安全组。
 
         :return: The allowed_address_pairs of this CreatePortOption.
-        :rtype: list[AllowedAddressPair]
+        :rtype: list[:class:`huaweicloudsdkvpc.v2.AllowedAddressPair`]
         """
         return self._allowed_address_pairs
 
@@ -229,7 +250,7 @@ class CreatePortOption:
         功能说明：IP/Mac对列表 约束：IP地址不允许为 “0.0.0.0/0” 如果配置的地址池较大（CIDR掩码小于24位），建议为该port配置一个单独的安全组。
 
         :param allowed_address_pairs: The allowed_address_pairs of this CreatePortOption.
-        :type: list[AllowedAddressPair]
+        :type allowed_address_pairs: list[:class:`huaweicloudsdkvpc.v2.AllowedAddressPair`]
         """
         self._allowed_address_pairs = allowed_address_pairs
 
@@ -240,7 +261,7 @@ class CreatePortOption:
         功能说明：DHCP的扩展Option(扩展属性)
 
         :return: The extra_dhcp_opts of this CreatePortOption.
-        :rtype: list[ExtraDhcpOpt]
+        :rtype: list[:class:`huaweicloudsdkvpc.v2.ExtraDhcpOpt`]
         """
         return self._extra_dhcp_opts
 
@@ -251,7 +272,7 @@ class CreatePortOption:
         功能说明：DHCP的扩展Option(扩展属性)
 
         :param extra_dhcp_opts: The extra_dhcp_opts of this CreatePortOption.
-        :type: list[ExtraDhcpOpt]
+        :type extra_dhcp_opts: list[:class:`huaweicloudsdkvpc.v2.ExtraDhcpOpt`]
         """
         self._extra_dhcp_opts = extra_dhcp_opts
 
@@ -273,7 +294,7 @@ class CreatePortOption:
         功能说明：端口所属项目ID
 
         :param tenant_id: The tenant_id of this CreatePortOption.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 

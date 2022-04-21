@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowGetLogSettingResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowGetLogSettingResponse(SdkResponse):
     }
 
     def __init__(self, log_configuration=None):
-        """ShowGetLogSettingResponse - a model defined in huaweicloud sdk"""
+        """ShowGetLogSettingResponse
+
+        The model defined in huaweicloud sdk
+
+        :param log_configuration: 
+        :type log_configuration: :class:`huaweicloudsdkcss.v1.LogConfiguration`
+        """
         
         super(ShowGetLogSettingResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class ShowGetLogSettingResponse(SdkResponse):
 
 
         :return: The log_configuration of this ShowGetLogSettingResponse.
-        :rtype: LogConfiguration
+        :rtype: :class:`huaweicloudsdkcss.v1.LogConfiguration`
         """
         return self._log_configuration
 
@@ -56,7 +61,7 @@ class ShowGetLogSettingResponse(SdkResponse):
 
 
         :param log_configuration: The log_configuration of this ShowGetLogSettingResponse.
-        :type: LogConfiguration
+        :type log_configuration: :class:`huaweicloudsdkcss.v1.LogConfiguration`
         """
         self._log_configuration = log_configuration
 

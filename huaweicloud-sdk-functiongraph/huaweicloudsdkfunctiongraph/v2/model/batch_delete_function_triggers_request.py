@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchDeleteFunctionTriggersRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchDeleteFunctionTriggersRequest:
     }
 
     def __init__(self, function_urn=None):
-        """BatchDeleteFunctionTriggersRequest - a model defined in huaweicloud sdk"""
+        """BatchDeleteFunctionTriggersRequest
+
+        The model defined in huaweicloud sdk
+
+        :param function_urn: 函数的URN，详细解释见FunctionGraph函数模型的描述。
+        :type function_urn: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class BatchDeleteFunctionTriggersRequest:
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
         :param function_urn: The function_urn of this BatchDeleteFunctionTriggersRequest.
-        :type: str
+        :type function_urn: str
         """
         self._function_urn = function_urn
 

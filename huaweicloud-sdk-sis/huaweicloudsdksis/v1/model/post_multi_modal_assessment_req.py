@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PostMultiModalAssessmentReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class PostMultiModalAssessmentReq:
     }
 
     def __init__(self, config=None, video_data=None, ref_text=None):
-        """PostMultiModalAssessmentReq - a model defined in huaweicloud sdk"""
+        """PostMultiModalAssessmentReq
+
+        The model defined in huaweicloud sdk
+
+        :param config: 
+        :type config: :class:`huaweicloudsdksis.v1.MultiModalConfig`
+        :param video_data: 视频数据，Base64编码，要求Base64编码后大小不超过10M。  注意评测接口使用次数定义为：每8秒的视频作为一次，不足8秒按一次计算。例如传入4秒或8秒的视频，都算作使用一次，传入9秒的视频则视为调用2次。
+        :type video_data: str
+        :param ref_text: 被评估视频和语音数据对应的试题文本，长度不可超过256字节。
+        :type ref_text: str
+        """
         
         
 
@@ -53,7 +62,7 @@ class PostMultiModalAssessmentReq:
 
 
         :return: The config of this PostMultiModalAssessmentReq.
-        :rtype: MultiModalConfig
+        :rtype: :class:`huaweicloudsdksis.v1.MultiModalConfig`
         """
         return self._config
 
@@ -63,7 +72,7 @@ class PostMultiModalAssessmentReq:
 
 
         :param config: The config of this PostMultiModalAssessmentReq.
-        :type: MultiModalConfig
+        :type config: :class:`huaweicloudsdksis.v1.MultiModalConfig`
         """
         self._config = config
 
@@ -85,7 +94,7 @@ class PostMultiModalAssessmentReq:
         视频数据，Base64编码，要求Base64编码后大小不超过10M。  注意评测接口使用次数定义为：每8秒的视频作为一次，不足8秒按一次计算。例如传入4秒或8秒的视频，都算作使用一次，传入9秒的视频则视为调用2次。
 
         :param video_data: The video_data of this PostMultiModalAssessmentReq.
-        :type: str
+        :type video_data: str
         """
         self._video_data = video_data
 
@@ -107,7 +116,7 @@ class PostMultiModalAssessmentReq:
         被评估视频和语音数据对应的试题文本，长度不可超过256字节。
 
         :param ref_text: The ref_text of this PostMultiModalAssessmentReq.
-        :type: str
+        :type ref_text: str
         """
         self._ref_text = ref_text
 

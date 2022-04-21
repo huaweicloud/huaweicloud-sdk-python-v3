@@ -52,21 +52,17 @@ class KafkaAsyncClient(Client):
         """批量添加或删除实例标签
 
         批量添加或删除实例标签。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchCreateOrDeleteKafkaTagRequest request
-        :return: BatchCreateOrDeleteKafkaTagResponse
+        :param request: Request instance for BatchCreateOrDeleteKafkaTag
+        :type request: :class:`huaweicloudsdkkafka.v2.BatchCreateOrDeleteKafkaTagRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.BatchCreateOrDeleteKafkaTagResponse`
         """
         return self.batch_create_or_delete_kafka_tag_with_http_info(request)
 
     def batch_create_or_delete_kafka_tag_with_http_info(self, request):
-        """批量添加或删除实例标签
-
-        批量添加或删除实例标签。
-
-        :param BatchCreateOrDeleteKafkaTagRequest request
-        :return: BatchCreateOrDeleteKafkaTagResponse
-        """
-
         all_params = ['instance_id', 'batch_create_or_delete_kafka_tag_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -112,26 +108,21 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_delete_instance_topic_async(self, request):
         """Kafka实例批量删除Topic
 
         该接口用于向Kafka实例批量删除Topic。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchDeleteInstanceTopicRequest request
-        :return: BatchDeleteInstanceTopicResponse
+        :param request: Request instance for BatchDeleteInstanceTopic
+        :type request: :class:`huaweicloudsdkkafka.v2.BatchDeleteInstanceTopicRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.BatchDeleteInstanceTopicResponse`
         """
         return self.batch_delete_instance_topic_with_http_info(request)
 
     def batch_delete_instance_topic_with_http_info(self, request):
-        """Kafka实例批量删除Topic
-
-        该接口用于向Kafka实例批量删除Topic。
-
-        :param BatchDeleteInstanceTopicRequest request
-        :return: BatchDeleteInstanceTopicResponse
-        """
-
         all_params = ['instance_id', 'batch_delete_instance_topic_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -177,26 +168,21 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_delete_instance_users_async(self, request):
         """批量删除用户
 
         批量删除Kafka实例的用户
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchDeleteInstanceUsersRequest request
-        :return: BatchDeleteInstanceUsersResponse
+        :param request: Request instance for BatchDeleteInstanceUsers
+        :type request: :class:`huaweicloudsdkkafka.v2.BatchDeleteInstanceUsersRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.BatchDeleteInstanceUsersResponse`
         """
         return self.batch_delete_instance_users_with_http_info(request)
 
     def batch_delete_instance_users_with_http_info(self, request):
-        """批量删除用户
-
-        批量删除Kafka实例的用户
-
-        :param BatchDeleteInstanceUsersRequest request
-        :return: BatchDeleteInstanceUsersResponse
-        """
-
         all_params = ['instance_id', 'batch_delete_instance_users_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -242,26 +228,25 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_restart_or_delete_instances_async(self, request):
         """批量重启或删除实例
 
-        批量重启或删除实例。  在实例重启过程中，客户端的生产与消费消息等请求会被拒绝。  实例删除后，实例中原有的数据将被删除，且没有备份，请谨慎操作。
+        批量重启或删除实例。
+        
+        在实例重启过程中，客户端的生产与消费消息等请求会被拒绝。
+        
+        实例删除后，实例中原有的数据将被删除，且没有备份，请谨慎操作。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchRestartOrDeleteInstancesRequest request
-        :return: BatchRestartOrDeleteInstancesResponse
+        :param request: Request instance for BatchRestartOrDeleteInstances
+        :type request: :class:`huaweicloudsdkkafka.v2.BatchRestartOrDeleteInstancesRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.BatchRestartOrDeleteInstancesResponse`
         """
         return self.batch_restart_or_delete_instances_with_http_info(request)
 
     def batch_restart_or_delete_instances_with_http_info(self, request):
-        """批量重启或删除实例
-
-        批量重启或删除实例。  在实例重启过程中，客户端的生产与消费消息等请求会被拒绝。  实例删除后，实例中原有的数据将被删除，且没有备份，请谨慎操作。
-
-        :param BatchRestartOrDeleteInstancesRequest request
-        :return: BatchRestartOrDeleteInstancesResponse
-        """
-
         all_params = ['batch_restart_or_delete_instances_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -305,26 +290,23 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_connector_async(self, request):
         """创建实例的转储节点
 
-        创建实例的转储节点。  **当前通过调用API，只支持按需实例创建转储节点。**
+        创建实例的转储节点。
+        
+        **当前通过调用API，只支持按需实例创建转储节点。**
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateConnectorRequest request
-        :return: CreateConnectorResponse
+        :param request: Request instance for CreateConnector
+        :type request: :class:`huaweicloudsdkkafka.v2.CreateConnectorRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.CreateConnectorResponse`
         """
         return self.create_connector_with_http_info(request)
 
     def create_connector_with_http_info(self, request):
-        """创建实例的转储节点
-
-        创建实例的转储节点。  **当前通过调用API，只支持按需实例创建转储节点。**
-
-        :param CreateConnectorRequest request
-        :return: CreateConnectorResponse
-        """
-
         all_params = ['instance_id', 'create_connector_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -370,26 +352,21 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_instance_topic_async(self, request):
         """Kafka实例创建Topic
 
         该接口用于向Kafka实例创建Topic。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateInstanceTopicRequest request
-        :return: CreateInstanceTopicResponse
+        :param request: Request instance for CreateInstanceTopic
+        :type request: :class:`huaweicloudsdkkafka.v2.CreateInstanceTopicRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.CreateInstanceTopicResponse`
         """
         return self.create_instance_topic_with_http_info(request)
 
     def create_instance_topic_with_http_info(self, request):
-        """Kafka实例创建Topic
-
-        该接口用于向Kafka实例创建Topic。
-
-        :param CreateInstanceTopicRequest request
-        :return: CreateInstanceTopicResponse
-        """
-
         all_params = ['instance_id', 'create_instance_topic_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -435,26 +412,21 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_instance_user_async(self, request):
         """创建用户
 
         创建Kafka实例的用户，用户可连接开启SASL的Kafka实例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateInstanceUserRequest request
-        :return: CreateInstanceUserResponse
+        :param request: Request instance for CreateInstanceUser
+        :type request: :class:`huaweicloudsdkkafka.v2.CreateInstanceUserRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.CreateInstanceUserResponse`
         """
         return self.create_instance_user_with_http_info(request)
 
     def create_instance_user_with_http_info(self, request):
-        """创建用户
-
-        创建Kafka实例的用户，用户可连接开启SASL的Kafka实例。
-
-        :param CreateInstanceUserRequest request
-        :return: CreateInstanceUserResponse
-        """
-
         all_params = ['instance_id', 'create_instance_user_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -500,26 +472,21 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_partition_async(self, request):
         """新增Kafka实例指定Topic分区
 
         新增Kafka实例指定Topic分区。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreatePartitionRequest request
-        :return: CreatePartitionResponse
+        :param request: Request instance for CreatePartition
+        :type request: :class:`huaweicloudsdkkafka.v2.CreatePartitionRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.CreatePartitionResponse`
         """
         return self.create_partition_with_http_info(request)
 
     def create_partition_with_http_info(self, request):
-        """新增Kafka实例指定Topic分区
-
-        新增Kafka实例指定Topic分区。
-
-        :param CreatePartitionRequest request
-        :return: CreatePartitionResponse
-        """
-
         all_params = ['instance_id', 'topic', 'create_partition_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -567,26 +534,21 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_post_paid_instance_async(self, request):
         """创建实例（按需）
 
         创建实例，该接口创建的实例为按需计费的方式。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreatePostPaidInstanceRequest request
-        :return: CreatePostPaidInstanceResponse
+        :param request: Request instance for CreatePostPaidInstance
+        :type request: :class:`huaweicloudsdkkafka.v2.CreatePostPaidInstanceRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.CreatePostPaidInstanceResponse`
         """
         return self.create_post_paid_instance_with_http_info(request)
 
     def create_post_paid_instance_with_http_info(self, request):
-        """创建实例（按需）
-
-        创建实例，该接口创建的实例为按需计费的方式。
-
-        :param CreatePostPaidInstanceRequest request
-        :return: CreatePostPaidInstanceResponse
-        """
-
         all_params = ['create_post_paid_instance_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -630,26 +592,21 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_sink_task_async(self, request):
         """创建转储任务
 
         创建转储任务。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateSinkTaskRequest request
-        :return: CreateSinkTaskResponse
+        :param request: Request instance for CreateSinkTask
+        :type request: :class:`huaweicloudsdkkafka.v2.CreateSinkTaskRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.CreateSinkTaskResponse`
         """
         return self.create_sink_task_with_http_info(request)
 
     def create_sink_task_with_http_info(self, request):
-        """创建转储任务
-
-        创建转储任务。
-
-        :param CreateSinkTaskRequest request
-        :return: CreateSinkTaskResponse
-        """
-
         all_params = ['connector_id', 'create_sink_task_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -695,26 +652,21 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_background_task_async(self, request):
         """删除后台任务管理中的指定记录
 
         删除后台任务管理中的指定记录。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteBackgroundTaskRequest request
-        :return: DeleteBackgroundTaskResponse
+        :param request: Request instance for DeleteBackgroundTask
+        :type request: :class:`huaweicloudsdkkafka.v2.DeleteBackgroundTaskRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.DeleteBackgroundTaskResponse`
         """
         return self.delete_background_task_with_http_info(request)
 
     def delete_background_task_with_http_info(self, request):
-        """删除后台任务管理中的指定记录
-
-        删除后台任务管理中的指定记录。
-
-        :param DeleteBackgroundTaskRequest request
-        :return: DeleteBackgroundTaskResponse
-        """
-
         all_params = ['instance_id', 'task_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -760,26 +712,21 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_instance_async(self, request):
         """删除指定的实例
 
         删除指定的实例，释放该实例的所有资源。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteInstanceRequest request
-        :return: DeleteInstanceResponse
+        :param request: Request instance for DeleteInstance
+        :type request: :class:`huaweicloudsdkkafka.v2.DeleteInstanceRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.DeleteInstanceResponse`
         """
         return self.delete_instance_with_http_info(request)
 
     def delete_instance_with_http_info(self, request):
-        """删除指定的实例
-
-        删除指定的实例，释放该实例的所有资源。
-
-        :param DeleteInstanceRequest request
-        :return: DeleteInstanceResponse
-        """
-
         all_params = ['instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -823,26 +770,21 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_sink_task_async(self, request):
         """删除单个转储任务
 
         删除单个转储任务。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteSinkTaskRequest request
-        :return: DeleteSinkTaskResponse
+        :param request: Request instance for DeleteSinkTask
+        :type request: :class:`huaweicloudsdkkafka.v2.DeleteSinkTaskRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.DeleteSinkTaskResponse`
         """
         return self.delete_sink_task_with_http_info(request)
 
     def delete_sink_task_with_http_info(self, request):
-        """删除单个转储任务
-
-        删除单个转储任务。
-
-        :param DeleteSinkTaskRequest request
-        :return: DeleteSinkTaskResponse
-        """
-
         all_params = ['connector_id', 'task_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -888,26 +830,21 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_available_zones_async(self, request):
         """查询可用区信息
 
         在创建实例时，需要配置实例所在的可用区ID，可通过该接口查询可用区的ID。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListAvailableZonesRequest request
-        :return: ListAvailableZonesResponse
+        :param request: Request instance for ListAvailableZones
+        :type request: :class:`huaweicloudsdkkafka.v2.ListAvailableZonesRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ListAvailableZonesResponse`
         """
         return self.list_available_zones_with_http_info(request)
 
     def list_available_zones_with_http_info(self, request):
-        """查询可用区信息
-
-        在创建实例时，需要配置实例所在的可用区ID，可通过该接口查询可用区的ID。
-
-        :param ListAvailableZonesRequest request
-        :return: ListAvailableZonesResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -949,26 +886,21 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_background_tasks_async(self, request):
         """查询实例的后台任务列表
 
         查询实例的后台任务列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListBackgroundTasksRequest request
-        :return: ListBackgroundTasksResponse
+        :param request: Request instance for ListBackgroundTasks
+        :type request: :class:`huaweicloudsdkkafka.v2.ListBackgroundTasksRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ListBackgroundTasksResponse`
         """
         return self.list_background_tasks_with_http_info(request)
 
     def list_background_tasks_with_http_info(self, request):
-        """查询实例的后台任务列表
-
-        查询实例的后台任务列表。
-
-        :param ListBackgroundTasksRequest request
-        :return: ListBackgroundTasksResponse
-        """
-
         all_params = ['instance_id', 'start', 'limit', 'begin_time', 'end_time']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1020,26 +952,21 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_engine_products_async(self, request):
         """查询产品规格列表
 
         查询产品规格列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListEngineProductsRequest request
-        :return: ListEngineProductsResponse
+        :param request: Request instance for ListEngineProducts
+        :type request: :class:`huaweicloudsdkkafka.v2.ListEngineProductsRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ListEngineProductsResponse`
         """
         return self.list_engine_products_with_http_info(request)
 
     def list_engine_products_with_http_info(self, request):
-        """查询产品规格列表
-
-        查询产品规格列表。
-
-        :param ListEngineProductsRequest request
-        :return: ListEngineProductsResponse
-        """
-
         all_params = ['engine', 'product_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1085,26 +1012,21 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_instance_topics_async(self, request):
         """Kafka实例查询Topic
 
         该接口用于查询指定Kafka实例的Topic详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListInstanceTopicsRequest request
-        :return: ListInstanceTopicsResponse
+        :param request: Request instance for ListInstanceTopics
+        :type request: :class:`huaweicloudsdkkafka.v2.ListInstanceTopicsRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ListInstanceTopicsResponse`
         """
         return self.list_instance_topics_with_http_info(request)
 
     def list_instance_topics_with_http_info(self, request):
-        """Kafka实例查询Topic
-
-        该接口用于查询指定Kafka实例的Topic详情。
-
-        :param ListInstanceTopicsRequest request
-        :return: ListInstanceTopicsResponse
-        """
-
         all_params = ['instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1148,26 +1070,21 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_instances_async(self, request):
         """查询所有实例列表
 
         查询租户的实例列表，支持按照条件查询。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListInstancesRequest request
-        :return: ListInstancesResponse
+        :param request: Request instance for ListInstances
+        :type request: :class:`huaweicloudsdkkafka.v2.ListInstancesRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ListInstancesResponse`
         """
         return self.list_instances_with_http_info(request)
 
     def list_instances_with_http_info(self, request):
-        """查询所有实例列表
-
-        查询租户的实例列表，支持按照条件查询。
-
-        :param ListInstancesRequest request
-        :return: ListInstancesResponse
-        """
-
         all_params = ['engine', 'name', 'instance_id', 'status', 'include_failure', 'exact_match_name', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1223,26 +1140,27 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_products_async(self, request):
         """查询产品规格列表
 
-        在创建kafka实例时，需要配置订购的产品ID（即product_id），可通过该接口查询产品规格。  例如，要订购按需计费、基准带宽为100MB的kafka实例，可从接口响应消息中，查找Hourly的消息体，然后找到bandwidth为100MB的记录对应的product_id，该product_id的值即是创建上述kafka实例时需要配置的产品ID。  同时，unavailable_zones字段表示资源不足的可用区列表，如果为空，则表示所有可用区都有资源，如果不为空，则表示字段值的可用区没有资源。所以必须确保您购买的资源所在的可用区有资源，不在该字段列表内。  例如，响应消息中bandwidth字段为1200MB的记录，unavailable_zones字段包含cn-east-2b、cn-east-2a和cn-east-2d，表示在华东-上海2的可用区1、可用区2、可用区3都没有该资源。
+        在创建kafka实例时，需要配置订购的产品ID（即product_id），可通过该接口查询产品规格。
+        
+        例如，要订购按需计费、基准带宽为100MB的kafka实例，可从接口响应消息中，查找Hourly的消息体，然后找到bandwidth为100MB的记录对应的product_id，该product_id的值即是创建上述kafka实例时需要配置的产品ID。
+        
+        同时，unavailable_zones字段表示资源不足的可用区列表，如果为空，则表示所有可用区都有资源，如果不为空，则表示字段值的可用区没有资源。所以必须确保您购买的资源所在的可用区有资源，不在该字段列表内。
+        
+        例如，响应消息中bandwidth字段为1200MB的记录，unavailable_zones字段包含cn-east-2b、cn-east-2a和cn-east-2d，表示在华东-上海2的可用区1、可用区2、可用区3都没有该资源。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListProductsRequest request
-        :return: ListProductsResponse
+        :param request: Request instance for ListProducts
+        :type request: :class:`huaweicloudsdkkafka.v2.ListProductsRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ListProductsResponse`
         """
         return self.list_products_with_http_info(request)
 
     def list_products_with_http_info(self, request):
-        """查询产品规格列表
-
-        在创建kafka实例时，需要配置订购的产品ID（即product_id），可通过该接口查询产品规格。  例如，要订购按需计费、基准带宽为100MB的kafka实例，可从接口响应消息中，查找Hourly的消息体，然后找到bandwidth为100MB的记录对应的product_id，该product_id的值即是创建上述kafka实例时需要配置的产品ID。  同时，unavailable_zones字段表示资源不足的可用区列表，如果为空，则表示所有可用区都有资源，如果不为空，则表示字段值的可用区没有资源。所以必须确保您购买的资源所在的可用区有资源，不在该字段列表内。  例如，响应消息中bandwidth字段为1200MB的记录，unavailable_zones字段包含cn-east-2b、cn-east-2a和cn-east-2d，表示在华东-上海2的可用区1、可用区2、可用区3都没有该资源。
-
-        :param ListProductsRequest request
-        :return: ListProductsResponse
-        """
-
         all_params = ['engine']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1286,26 +1204,21 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_sink_tasks_async(self, request):
         """查询转储任务列表
 
         查询转储任务列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListSinkTasksRequest request
-        :return: ListSinkTasksResponse
+        :param request: Request instance for ListSinkTasks
+        :type request: :class:`huaweicloudsdkkafka.v2.ListSinkTasksRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ListSinkTasksResponse`
         """
         return self.list_sink_tasks_with_http_info(request)
 
     def list_sink_tasks_with_http_info(self, request):
-        """查询转储任务列表
-
-        查询转储任务列表。
-
-        :param ListSinkTasksRequest request
-        :return: ListSinkTasksResponse
-        """
-
         all_params = ['connector_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1349,26 +1262,21 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def reset_manager_password_async(self, request):
         """重置Manager密码
 
         重置Manager密码。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ResetManagerPasswordRequest request
-        :return: ResetManagerPasswordResponse
+        :param request: Request instance for ResetManagerPassword
+        :type request: :class:`huaweicloudsdkkafka.v2.ResetManagerPasswordRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ResetManagerPasswordResponse`
         """
         return self.reset_manager_password_with_http_info(request)
 
     def reset_manager_password_with_http_info(self, request):
-        """重置Manager密码
-
-        重置Manager密码。
-
-        :param ResetManagerPasswordRequest request
-        :return: ResetManagerPasswordResponse
-        """
-
         all_params = ['instance_id', 'reset_manager_password_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1414,26 +1322,23 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def reset_message_offset_async(self, request):
         """重置消费组消费进度到指定位置
 
-        Kafka实例不支持在线重置消费进度。在执行重置消费进度之前，必须停止被重置消费组客户端。  > 在停止被重置消费组客户端后，需要经过ConsumerConfig.SESSION_TIMEOUT_MS_CONFIG配置的时间（默认10000毫秒），服务端才认为消费组客户端真正下线。
+        Kafka实例不支持在线重置消费进度。在执行重置消费进度之前，必须停止被重置消费组客户端。
+        
+        &gt; 在停止被重置消费组客户端后，需要经过ConsumerConfig.SESSION_TIMEOUT_MS_CONFIG配置的时间（默认10000毫秒），服务端才认为消费组客户端真正下线。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ResetMessageOffsetRequest request
-        :return: ResetMessageOffsetResponse
+        :param request: Request instance for ResetMessageOffset
+        :type request: :class:`huaweicloudsdkkafka.v2.ResetMessageOffsetRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ResetMessageOffsetResponse`
         """
         return self.reset_message_offset_with_http_info(request)
 
     def reset_message_offset_with_http_info(self, request):
-        """重置消费组消费进度到指定位置
-
-        Kafka实例不支持在线重置消费进度。在执行重置消费进度之前，必须停止被重置消费组客户端。  > 在停止被重置消费组客户端后，需要经过ConsumerConfig.SESSION_TIMEOUT_MS_CONFIG配置的时间（默认10000毫秒），服务端才认为消费组客户端真正下线。
-
-        :param ResetMessageOffsetRequest request
-        :return: ResetMessageOffsetResponse
-        """
-
         all_params = ['instance_id', 'group', 'reset_message_offset_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1481,26 +1386,21 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def reset_password_async(self, request):
         """重置密码
 
         重置密码。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ResetPasswordRequest request
-        :return: ResetPasswordResponse
+        :param request: Request instance for ResetPassword
+        :type request: :class:`huaweicloudsdkkafka.v2.ResetPasswordRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ResetPasswordResponse`
         """
         return self.reset_password_with_http_info(request)
 
     def reset_password_with_http_info(self, request):
-        """重置密码
-
-        重置密码。
-
-        :param ResetPasswordRequest request
-        :return: ResetPasswordResponse
-        """
-
         all_params = ['instance_id', 'reset_password_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1546,26 +1446,21 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def reset_user_passwrod_async(self, request):
         """重置用户密码
 
         重置用户密码
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ResetUserPasswrodRequest request
-        :return: ResetUserPasswrodResponse
+        :param request: Request instance for ResetUserPasswrod
+        :type request: :class:`huaweicloudsdkkafka.v2.ResetUserPasswrodRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ResetUserPasswrodResponse`
         """
         return self.reset_user_passwrod_with_http_info(request)
 
     def reset_user_passwrod_with_http_info(self, request):
-        """重置用户密码
-
-        重置用户密码
-
-        :param ResetUserPasswrodRequest request
-        :return: ResetUserPasswrodResponse
-        """
-
         all_params = ['instance_id', 'user_name', 'reset_user_passwrod_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1613,26 +1508,23 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def resize_instance_async(self, request):
         """实例规格变更
 
-        实例规格变更。  **当前通过调用API，只支持按需实例进行实例规格变更。**
+        实例规格变更。
+        
+        **当前通过调用API，只支持按需实例进行实例规格变更。**
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ResizeInstanceRequest request
-        :return: ResizeInstanceResponse
+        :param request: Request instance for ResizeInstance
+        :type request: :class:`huaweicloudsdkkafka.v2.ResizeInstanceRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ResizeInstanceResponse`
         """
         return self.resize_instance_with_http_info(request)
 
     def resize_instance_with_http_info(self, request):
-        """实例规格变更
-
-        实例规格变更。  **当前通过调用API，只支持按需实例进行实例规格变更。**
-
-        :param ResizeInstanceRequest request
-        :return: ResizeInstanceResponse
-        """
-
         all_params = ['instance_id', 'resize_instance_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1678,26 +1570,21 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def restart_manager_async(self, request):
         """重启Manager
 
         重启Manager。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param RestartManagerRequest request
-        :return: RestartManagerResponse
+        :param request: Request instance for RestartManager
+        :type request: :class:`huaweicloudsdkkafka.v2.RestartManagerRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.RestartManagerResponse`
         """
         return self.restart_manager_with_http_info(request)
 
     def restart_manager_with_http_info(self, request):
-        """重启Manager
-
-        重启Manager。
-
-        :param RestartManagerRequest request
-        :return: RestartManagerResponse
-        """
-
         all_params = ['instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1741,26 +1628,21 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_background_task_async(self, request):
         """查询后台任务管理中的指定记录
 
         查询后台任务管理中的指定记录。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowBackgroundTaskRequest request
-        :return: ShowBackgroundTaskResponse
+        :param request: Request instance for ShowBackgroundTask
+        :type request: :class:`huaweicloudsdkkafka.v2.ShowBackgroundTaskRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ShowBackgroundTaskResponse`
         """
         return self.show_background_task_with_http_info(request)
 
     def show_background_task_with_http_info(self, request):
-        """查询后台任务管理中的指定记录
-
-        查询后台任务管理中的指定记录。
-
-        :param ShowBackgroundTaskRequest request
-        :return: ShowBackgroundTaskResponse
-        """
-
         all_params = ['instance_id', 'task_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1806,26 +1688,21 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_ces_hierarchy_async(self, request):
         """查询实例在CES的监控层级关系
 
         查询实例在CES的监控层级关系。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowCesHierarchyRequest request
-        :return: ShowCesHierarchyResponse
+        :param request: Request instance for ShowCesHierarchy
+        :type request: :class:`huaweicloudsdkkafka.v2.ShowCesHierarchyRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ShowCesHierarchyResponse`
         """
         return self.show_ces_hierarchy_with_http_info(request)
 
     def show_ces_hierarchy_with_http_info(self, request):
-        """查询实例在CES的监控层级关系
-
-        查询实例在CES的监控层级关系。
-
-        :param ShowCesHierarchyRequest request
-        :return: ShowCesHierarchyResponse
-        """
-
         all_params = ['instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1869,26 +1746,21 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_cluster_async(self, request):
         """查询Kafka集群元数据信息
 
         查询Kafka集群元数据信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowClusterRequest request
-        :return: ShowClusterResponse
+        :param request: Request instance for ShowCluster
+        :type request: :class:`huaweicloudsdkkafka.v2.ShowClusterRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ShowClusterResponse`
         """
         return self.show_cluster_with_http_info(request)
 
     def show_cluster_with_http_info(self, request):
-        """查询Kafka集群元数据信息
-
-        查询Kafka集群元数据信息。
-
-        :param ShowClusterRequest request
-        :return: ShowClusterResponse
-        """
-
         all_params = ['instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1932,26 +1804,21 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_coordinators_async(self, request):
         """查询Kafka实例的协调器信息
 
         查询Kafka实例的协调器信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowCoordinatorsRequest request
-        :return: ShowCoordinatorsResponse
+        :param request: Request instance for ShowCoordinators
+        :type request: :class:`huaweicloudsdkkafka.v2.ShowCoordinatorsRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ShowCoordinatorsResponse`
         """
         return self.show_coordinators_with_http_info(request)
 
     def show_coordinators_with_http_info(self, request):
-        """查询Kafka实例的协调器信息
-
-        查询Kafka实例的协调器信息。
-
-        :param ShowCoordinatorsRequest request
-        :return: ShowCoordinatorsResponse
-        """
-
         all_params = ['instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1995,26 +1862,21 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_groups_async(self, request):
         """查询消费组信息
 
         查询消费组信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowGroupsRequest request
-        :return: ShowGroupsResponse
+        :param request: Request instance for ShowGroups
+        :type request: :class:`huaweicloudsdkkafka.v2.ShowGroupsRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ShowGroupsResponse`
         """
         return self.show_groups_with_http_info(request)
 
     def show_groups_with_http_info(self, request):
-        """查询消费组信息
-
-        查询消费组信息。
-
-        :param ShowGroupsRequest request
-        :return: ShowGroupsResponse
-        """
-
         all_params = ['instance_id', 'group']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2060,26 +1922,21 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_instance_async(self, request):
         """查询指定实例
 
         查询指定实例的详细信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowInstanceRequest request
-        :return: ShowInstanceResponse
+        :param request: Request instance for ShowInstance
+        :type request: :class:`huaweicloudsdkkafka.v2.ShowInstanceRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ShowInstanceResponse`
         """
         return self.show_instance_with_http_info(request)
 
     def show_instance_with_http_info(self, request):
-        """查询指定实例
-
-        查询指定实例的详细信息。
-
-        :param ShowInstanceRequest request
-        :return: ShowInstanceResponse
-        """
-
         all_params = ['instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2123,26 +1980,21 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_instance_extend_product_info_async(self, request):
         """查询实例的扩容规格列表
 
         查询实例的扩容规格列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowInstanceExtendProductInfoRequest request
-        :return: ShowInstanceExtendProductInfoResponse
+        :param request: Request instance for ShowInstanceExtendProductInfo
+        :type request: :class:`huaweicloudsdkkafka.v2.ShowInstanceExtendProductInfoRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ShowInstanceExtendProductInfoResponse`
         """
         return self.show_instance_extend_product_info_with_http_info(request)
 
     def show_instance_extend_product_info_with_http_info(self, request):
-        """查询实例的扩容规格列表
-
-        查询实例的扩容规格列表。
-
-        :param ShowInstanceExtendProductInfoRequest request
-        :return: ShowInstanceExtendProductInfoResponse
-        """
-
         all_params = ['instance_id', 'type', 'engine']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2190,26 +2042,22 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_instance_messages_async(self, request):
         """查询消息
 
-        查询消息的偏移量和消息内容。 先根据时间戳查询消息的偏移量，再根据偏移量查询消息内容。
+        查询消息的偏移量和消息内容。
+        先根据时间戳查询消息的偏移量，再根据偏移量查询消息内容。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowInstanceMessagesRequest request
-        :return: ShowInstanceMessagesResponse
+        :param request: Request instance for ShowInstanceMessages
+        :type request: :class:`huaweicloudsdkkafka.v2.ShowInstanceMessagesRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ShowInstanceMessagesResponse`
         """
         return self.show_instance_messages_with_http_info(request)
 
     def show_instance_messages_with_http_info(self, request):
-        """查询消息
-
-        查询消息的偏移量和消息内容。 先根据时间戳查询消息的偏移量，再根据偏移量查询消息内容。
-
-        :param ShowInstanceMessagesRequest request
-        :return: ShowInstanceMessagesResponse
-        """
-
         all_params = ['instance_id', 'topic', 'asc', 'start_time', 'end_time', 'limit', 'offset', 'download', 'message_offset', 'partition']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2271,26 +2119,21 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_instance_topic_detail_async(self, request):
         """查询Kafka实例Topic详细信息
 
         查询Kafka实例Topic详细信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowInstanceTopicDetailRequest request
-        :return: ShowInstanceTopicDetailResponse
+        :param request: Request instance for ShowInstanceTopicDetail
+        :type request: :class:`huaweicloudsdkkafka.v2.ShowInstanceTopicDetailRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ShowInstanceTopicDetailResponse`
         """
         return self.show_instance_topic_detail_with_http_info(request)
 
     def show_instance_topic_detail_with_http_info(self, request):
-        """查询Kafka实例Topic详细信息
-
-        查询Kafka实例Topic详细信息。
-
-        :param ShowInstanceTopicDetailRequest request
-        :return: ShowInstanceTopicDetailResponse
-        """
-
         all_params = ['instance_id', 'topic']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2336,26 +2179,23 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_instance_users_async(self, request):
         """查询用户列表
 
-        查询用户列表。  Kafka实例开启SASL功能时，才支持多用户管理的功能。
+        查询用户列表。
+        
+        Kafka实例开启SASL功能时，才支持多用户管理的功能。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowInstanceUsersRequest request
-        :return: ShowInstanceUsersResponse
+        :param request: Request instance for ShowInstanceUsers
+        :type request: :class:`huaweicloudsdkkafka.v2.ShowInstanceUsersRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ShowInstanceUsersResponse`
         """
         return self.show_instance_users_with_http_info(request)
 
     def show_instance_users_with_http_info(self, request):
-        """查询用户列表
-
-        查询用户列表。  Kafka实例开启SASL功能时，才支持多用户管理的功能。
-
-        :param ShowInstanceUsersRequest request
-        :return: ShowInstanceUsersResponse
-        """
-
         all_params = ['instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2399,26 +2239,21 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_kafka_project_tags_async(self, request):
         """查询项目标签
 
         查询项目标签。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowKafkaProjectTagsRequest request
-        :return: ShowKafkaProjectTagsResponse
+        :param request: Request instance for ShowKafkaProjectTags
+        :type request: :class:`huaweicloudsdkkafka.v2.ShowKafkaProjectTagsRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ShowKafkaProjectTagsResponse`
         """
         return self.show_kafka_project_tags_with_http_info(request)
 
     def show_kafka_project_tags_with_http_info(self, request):
-        """查询项目标签
-
-        查询项目标签。
-
-        :param ShowKafkaProjectTagsRequest request
-        :return: ShowKafkaProjectTagsResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2460,26 +2295,21 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_kafka_tags_async(self, request):
         """查询实例标签
 
         查询实例标签。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowKafkaTagsRequest request
-        :return: ShowKafkaTagsResponse
+        :param request: Request instance for ShowKafkaTags
+        :type request: :class:`huaweicloudsdkkafka.v2.ShowKafkaTagsRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ShowKafkaTagsResponse`
         """
         return self.show_kafka_tags_with_http_info(request)
 
     def show_kafka_tags_with_http_info(self, request):
-        """查询实例标签
-
-        查询实例标签。
-
-        :param ShowKafkaTagsRequest request
-        :return: ShowKafkaTagsResponse
-        """
-
         all_params = ['instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2523,26 +2353,21 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_kafka_topic_partition_diskusage_async(self, request):
         """查询topic的磁盘存储情况
 
         查询topic在Broker上磁盘占用情况。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowKafkaTopicPartitionDiskusageRequest request
-        :return: ShowKafkaTopicPartitionDiskusageResponse
+        :param request: Request instance for ShowKafkaTopicPartitionDiskusage
+        :type request: :class:`huaweicloudsdkkafka.v2.ShowKafkaTopicPartitionDiskusageRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ShowKafkaTopicPartitionDiskusageResponse`
         """
         return self.show_kafka_topic_partition_diskusage_with_http_info(request)
 
     def show_kafka_topic_partition_diskusage_with_http_info(self, request):
-        """查询topic的磁盘存储情况
-
-        查询topic在Broker上磁盘占用情况。
-
-        :param ShowKafkaTopicPartitionDiskusageRequest request
-        :return: ShowKafkaTopicPartitionDiskusageResponse
-        """
-
         all_params = ['instance_id', 'min_size', 'top', 'percentage']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2592,26 +2417,21 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_maintain_windows_async(self, request):
         """查询维护时间窗时间段
 
         查询维护时间窗开始时间和结束时间。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowMaintainWindowsRequest request
-        :return: ShowMaintainWindowsResponse
+        :param request: Request instance for ShowMaintainWindows
+        :type request: :class:`huaweicloudsdkkafka.v2.ShowMaintainWindowsRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ShowMaintainWindowsResponse`
         """
         return self.show_maintain_windows_with_http_info(request)
 
     def show_maintain_windows_with_http_info(self, request):
-        """查询维护时间窗时间段
-
-        查询维护时间窗开始时间和结束时间。
-
-        :param ShowMaintainWindowsRequest request
-        :return: ShowMaintainWindowsResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2653,26 +2473,21 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_messages_async(self, request):
         """查询分区指定时间段的消息
 
         查询分区指定时间段的消息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowMessagesRequest request
-        :return: ShowMessagesResponse
+        :param request: Request instance for ShowMessages
+        :type request: :class:`huaweicloudsdkkafka.v2.ShowMessagesRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ShowMessagesResponse`
         """
         return self.show_messages_with_http_info(request)
 
     def show_messages_with_http_info(self, request):
-        """查询分区指定时间段的消息
-
-        查询分区指定时间段的消息。
-
-        :param ShowMessagesRequest request
-        :return: ShowMessagesResponse
-        """
-
         all_params = ['instance_id', 'topic', 'start_time', 'end_time', 'limit', 'offset', 'partition']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2728,26 +2543,21 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_partition_beginning_message_async(self, request):
         """查询分区最早消息的位置
 
         查询分区最早消息的位置。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowPartitionBeginningMessageRequest request
-        :return: ShowPartitionBeginningMessageResponse
+        :param request: Request instance for ShowPartitionBeginningMessage
+        :type request: :class:`huaweicloudsdkkafka.v2.ShowPartitionBeginningMessageRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ShowPartitionBeginningMessageResponse`
         """
         return self.show_partition_beginning_message_with_http_info(request)
 
     def show_partition_beginning_message_with_http_info(self, request):
-        """查询分区最早消息的位置
-
-        查询分区最早消息的位置。
-
-        :param ShowPartitionBeginningMessageRequest request
-        :return: ShowPartitionBeginningMessageResponse
-        """
-
         all_params = ['instance_id', 'topic', 'partition']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2795,26 +2605,21 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_partition_end_message_async(self, request):
         """查询分区最新消息的位置
 
         查询分区最新消息的位置。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowPartitionEndMessageRequest request
-        :return: ShowPartitionEndMessageResponse
+        :param request: Request instance for ShowPartitionEndMessage
+        :type request: :class:`huaweicloudsdkkafka.v2.ShowPartitionEndMessageRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ShowPartitionEndMessageResponse`
         """
         return self.show_partition_end_message_with_http_info(request)
 
     def show_partition_end_message_with_http_info(self, request):
-        """查询分区最新消息的位置
-
-        查询分区最新消息的位置。
-
-        :param ShowPartitionEndMessageRequest request
-        :return: ShowPartitionEndMessageResponse
-        """
-
         all_params = ['instance_id', 'topic', 'partition']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2862,26 +2667,21 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_partition_message_async(self, request):
         """查询分区指定偏移量的消息
 
         查询分区指定偏移量的消息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowPartitionMessageRequest request
-        :return: ShowPartitionMessageResponse
+        :param request: Request instance for ShowPartitionMessage
+        :type request: :class:`huaweicloudsdkkafka.v2.ShowPartitionMessageRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ShowPartitionMessageResponse`
         """
         return self.show_partition_message_with_http_info(request)
 
     def show_partition_message_with_http_info(self, request):
-        """查询分区指定偏移量的消息
-
-        查询分区指定偏移量的消息。
-
-        :param ShowPartitionMessageRequest request
-        :return: ShowPartitionMessageResponse
-        """
-
         all_params = ['instance_id', 'topic', 'partition', 'message_offset']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2931,26 +2731,21 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_sink_task_detail_async(self, request):
         """查询单个转储任务
 
         查询单个转储任务。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowSinkTaskDetailRequest request
-        :return: ShowSinkTaskDetailResponse
+        :param request: Request instance for ShowSinkTaskDetail
+        :type request: :class:`huaweicloudsdkkafka.v2.ShowSinkTaskDetailRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ShowSinkTaskDetailResponse`
         """
         return self.show_sink_task_detail_with_http_info(request)
 
     def show_sink_task_detail_with_http_info(self, request):
-        """查询单个转储任务
-
-        查询单个转储任务。
-
-        :param ShowSinkTaskDetailRequest request
-        :return: ShowSinkTaskDetailResponse
-        """
-
         all_params = ['connector_id', 'task_id', 'topic_info']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2998,26 +2793,23 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_topic_access_policy_async(self, request):
         """查询用户权限
 
-        查询用户权限。  Kafka实例开启SASL功能时，才支持多用户管理的功能。
+        查询用户权限。
+        
+        Kafka实例开启SASL功能时，才支持多用户管理的功能。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowTopicAccessPolicyRequest request
-        :return: ShowTopicAccessPolicyResponse
+        :param request: Request instance for ShowTopicAccessPolicy
+        :type request: :class:`huaweicloudsdkkafka.v2.ShowTopicAccessPolicyRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ShowTopicAccessPolicyResponse`
         """
         return self.show_topic_access_policy_with_http_info(request)
 
     def show_topic_access_policy_with_http_info(self, request):
-        """查询用户权限
-
-        查询用户权限。  Kafka实例开启SASL功能时，才支持多用户管理的功能。
-
-        :param ShowTopicAccessPolicyRequest request
-        :return: ShowTopicAccessPolicyResponse
-        """
-
         all_params = ['instance_id', 'topic_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3063,26 +2855,21 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_instance_async(self, request):
         """修改实例信息
 
         修改实例的名称和描述信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateInstanceRequest request
-        :return: UpdateInstanceResponse
+        :param request: Request instance for UpdateInstance
+        :type request: :class:`huaweicloudsdkkafka.v2.UpdateInstanceRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.UpdateInstanceResponse`
         """
         return self.update_instance_with_http_info(request)
 
     def update_instance_with_http_info(self, request):
-        """修改实例信息
-
-        修改实例的名称和描述信息。
-
-        :param UpdateInstanceRequest request
-        :return: UpdateInstanceResponse
-        """
-
         all_params = ['instance_id', 'update_instance_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3128,26 +2915,21 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_instance_auto_create_topic_async(self, request):
         """开启或关闭实例自动创建topic功能
 
         开启或关闭实例自动创建topic功能。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateInstanceAutoCreateTopicRequest request
-        :return: UpdateInstanceAutoCreateTopicResponse
+        :param request: Request instance for UpdateInstanceAutoCreateTopic
+        :type request: :class:`huaweicloudsdkkafka.v2.UpdateInstanceAutoCreateTopicRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.UpdateInstanceAutoCreateTopicResponse`
         """
         return self.update_instance_auto_create_topic_with_http_info(request)
 
     def update_instance_auto_create_topic_with_http_info(self, request):
-        """开启或关闭实例自动创建topic功能
-
-        开启或关闭实例自动创建topic功能。
-
-        :param UpdateInstanceAutoCreateTopicRequest request
-        :return: UpdateInstanceAutoCreateTopicResponse
-        """
-
         all_params = ['instance_id', 'update_instance_auto_create_topic_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3193,26 +2975,21 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_instance_cross_vpc_ip_async(self, request):
         """修改实例跨VPC访问的内网IP
 
         修改实例跨VPC访问的内网IP。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateInstanceCrossVpcIpRequest request
-        :return: UpdateInstanceCrossVpcIpResponse
+        :param request: Request instance for UpdateInstanceCrossVpcIp
+        :type request: :class:`huaweicloudsdkkafka.v2.UpdateInstanceCrossVpcIpRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.UpdateInstanceCrossVpcIpResponse`
         """
         return self.update_instance_cross_vpc_ip_with_http_info(request)
 
     def update_instance_cross_vpc_ip_with_http_info(self, request):
-        """修改实例跨VPC访问的内网IP
-
-        修改实例跨VPC访问的内网IP。
-
-        :param UpdateInstanceCrossVpcIpRequest request
-        :return: UpdateInstanceCrossVpcIpResponse
-        """
-
         all_params = ['instance_id', 'update_instance_cross_vpc_ip_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3258,26 +3035,21 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_instance_topic_async(self, request):
         """修改Kafka实例Topic
 
         修改Kafka实例Topic
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateInstanceTopicRequest request
-        :return: UpdateInstanceTopicResponse
+        :param request: Request instance for UpdateInstanceTopic
+        :type request: :class:`huaweicloudsdkkafka.v2.UpdateInstanceTopicRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.UpdateInstanceTopicResponse`
         """
         return self.update_instance_topic_with_http_info(request)
 
     def update_instance_topic_with_http_info(self, request):
-        """修改Kafka实例Topic
-
-        修改Kafka实例Topic
-
-        :param UpdateInstanceTopicRequest request
-        :return: UpdateInstanceTopicResponse
-        """
-
         all_params = ['instance_id', 'update_instance_topic_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3323,26 +3095,21 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_sink_task_quota_async(self, request):
         """修改转储任务的配额
 
         修改转储任务的配额。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateSinkTaskQuotaRequest request
-        :return: UpdateSinkTaskQuotaResponse
+        :param request: Request instance for UpdateSinkTaskQuota
+        :type request: :class:`huaweicloudsdkkafka.v2.UpdateSinkTaskQuotaRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.UpdateSinkTaskQuotaResponse`
         """
         return self.update_sink_task_quota_with_http_info(request)
 
     def update_sink_task_quota_with_http_info(self, request):
-        """修改转储任务的配额
-
-        修改转储任务的配额。
-
-        :param UpdateSinkTaskQuotaRequest request
-        :return: UpdateSinkTaskQuotaResponse
-        """
-
         all_params = ['connector_id', 'update_sink_task_quota_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3388,26 +3155,23 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_topic_access_policy_async(self, request):
         """设置用户权限
 
-        设置用户权限。  Kafka实例开启SASL功能时，才支持多用户管理的功能。
+        设置用户权限。
+        
+        Kafka实例开启SASL功能时，才支持多用户管理的功能。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateTopicAccessPolicyRequest request
-        :return: UpdateTopicAccessPolicyResponse
+        :param request: Request instance for UpdateTopicAccessPolicy
+        :type request: :class:`huaweicloudsdkkafka.v2.UpdateTopicAccessPolicyRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.UpdateTopicAccessPolicyResponse`
         """
         return self.update_topic_access_policy_with_http_info(request)
 
     def update_topic_access_policy_with_http_info(self, request):
-        """设置用户权限
-
-        设置用户权限。  Kafka实例开启SASL功能时，才支持多用户管理的功能。
-
-        :param UpdateTopicAccessPolicyRequest request
-        :return: UpdateTopicAccessPolicyResponse
-        """
-
         all_params = ['instance_id', 'update_topic_access_policy_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3453,26 +3217,21 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_topic_replica_async(self, request):
         """修改Kafka实例Topic分区的副本
 
         修改Kafka实例Topic分区的副本。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateTopicReplicaRequest request
-        :return: UpdateTopicReplicaResponse
+        :param request: Request instance for UpdateTopicReplica
+        :type request: :class:`huaweicloudsdkkafka.v2.UpdateTopicReplicaRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.UpdateTopicReplicaResponse`
         """
         return self.update_topic_replica_with_http_info(request)
 
     def update_topic_replica_with_http_info(self, request):
-        """修改Kafka实例Topic分区的副本
-
-        修改Kafka实例Topic分区的副本。
-
-        :param UpdateTopicReplicaRequest request
-        :return: UpdateTopicReplicaResponse
-        """
-
         all_params = ['instance_id', 'topic', 'update_topic_replica_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3519,7 +3278,6 @@ class KafkaAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

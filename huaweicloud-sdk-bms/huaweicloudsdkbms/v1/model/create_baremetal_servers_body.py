@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateBaremetalServersBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateBaremetalServersBody:
     }
 
     def __init__(self, server=None):
-        """CreateBaremetalServersBody - a model defined in huaweicloud sdk"""
+        """CreateBaremetalServersBody
+
+        The model defined in huaweicloud sdk
+
+        :param server: 
+        :type server: :class:`huaweicloudsdkbms.v1.CreateServers`
+        """
         
         
 
@@ -45,7 +50,7 @@ class CreateBaremetalServersBody:
 
 
         :return: The server of this CreateBaremetalServersBody.
-        :rtype: CreateServers
+        :rtype: :class:`huaweicloudsdkbms.v1.CreateServers`
         """
         return self._server
 
@@ -55,7 +60,7 @@ class CreateBaremetalServersBody:
 
 
         :param server: The server of this CreateBaremetalServersBody.
-        :type: CreateServers
+        :type server: :class:`huaweicloudsdkbms.v1.CreateServers`
         """
         self._server = server
 

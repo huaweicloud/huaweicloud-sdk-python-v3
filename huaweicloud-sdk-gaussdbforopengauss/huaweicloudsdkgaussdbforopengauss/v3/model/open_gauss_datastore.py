@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OpenGaussDatastore:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class OpenGaussDatastore:
     }
 
     def __init__(self, type=None, version=None):
-        """OpenGaussDatastore - a model defined in huaweicloud sdk"""
+        """OpenGaussDatastore
+
+        The model defined in huaweicloud sdk
+
+        :param type: 数据库引擎，不区分大小写，取值如下：  GaussDB(for openGauss)。
+        :type type: str
+        :param version: 数据库版本。不填时，默认为当前最新版本。  GaussDB(for openGauss)支持的版本参考[查询数据库引擎的版本](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product&#x3D;GaussDBforopenGauss&amp;api&#x3D;ListDatastores)。
+        :type version: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class OpenGaussDatastore:
         数据库引擎，不区分大小写，取值如下：  GaussDB(for openGauss)。
 
         :param type: The type of this OpenGaussDatastore.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -84,7 +91,7 @@ class OpenGaussDatastore:
         数据库版本。不填时，默认为当前最新版本。  GaussDB(for openGauss)支持的版本参考[查询数据库引擎的版本](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=GaussDBforopenGauss&api=ListDatastores)。
 
         :param version: The version of this OpenGaussDatastore.
-        :type: str
+        :type version: str
         """
         self._version = version
 

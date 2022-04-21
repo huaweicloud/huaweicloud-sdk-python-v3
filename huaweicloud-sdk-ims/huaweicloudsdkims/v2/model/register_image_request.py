@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RegisterImageRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RegisterImageRequest:
     }
 
     def __init__(self, image_id=None, body=None):
-        """RegisterImageRequest - a model defined in huaweicloud sdk"""
+        """RegisterImageRequest
+
+        The model defined in huaweicloud sdk
+
+        :param image_id: 镜像ID。 image_id为用户调用创建镜像元数据接口所创建出来镜像的id，使用其他方式创建的镜像id会导致注册失败。 注册接口调用成功后，请根据镜像id查询镜像的状态。镜像状态变为active表示镜像注册成功，详情请参见查询镜像详情（OpenStack原生）。
+        :type image_id: str
+        :param body: Body of the RegisterImageRequest
+        :type body: :class:`huaweicloudsdkims.v2.RegisterImageRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class RegisterImageRequest:
         镜像ID。 image_id为用户调用创建镜像元数据接口所创建出来镜像的id，使用其他方式创建的镜像id会导致注册失败。 注册接口调用成功后，请根据镜像id查询镜像的状态。镜像状态变为active表示镜像注册成功，详情请参见查询镜像详情（OpenStack原生）。
 
         :param image_id: The image_id of this RegisterImageRequest.
-        :type: str
+        :type image_id: str
         """
         self._image_id = image_id
 
@@ -72,7 +79,7 @@ class RegisterImageRequest:
 
 
         :return: The body of this RegisterImageRequest.
-        :rtype: RegisterImageRequestBody
+        :rtype: :class:`huaweicloudsdkims.v2.RegisterImageRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class RegisterImageRequest:
 
 
         :param body: The body of this RegisterImageRequest.
-        :type: RegisterImageRequestBody
+        :type body: :class:`huaweicloudsdkims.v2.RegisterImageRequestBody`
         """
         self._body = body
 

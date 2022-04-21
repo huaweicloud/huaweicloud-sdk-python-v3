@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BillingInfoDict:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BillingInfoDict:
     }
 
     def __init__(self, order_id=None, product_id=None):
-        """BillingInfoDict - a model defined in huaweicloud sdk"""
+        """BillingInfoDict
+
+        The model defined in huaweicloud sdk
+
+        :param order_id: 订单信息
+        :type order_id: str
+        :param product_id: 产品id
+        :type product_id: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class BillingInfoDict:
         订单信息
 
         :param order_id: The order_id of this BillingInfoDict.
-        :type: str
+        :type order_id: str
         """
         self._order_id = order_id
 
@@ -85,7 +92,7 @@ class BillingInfoDict:
         产品id
 
         :param product_id: The product_id of this BillingInfoDict.
-        :type: str
+        :type product_id: str
         """
         self._product_id = product_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSeriesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListSeriesRequest:
     }
 
     def __init__(self, limit=None, offset=None, body=None):
-        """ListSeriesRequest - a model defined in huaweicloud sdk"""
+        """ListSeriesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 用于限制本次返回的结果数据条数。 取值范围(0,1000]，默认值为1000。
+        :type limit: str
+        :param offset: 分页查询起始位置，为非负整数。
+        :type offset: str
+        :param body: Body of the ListSeriesRequest
+        :type body: :class:`huaweicloudsdkaom.v2.SeriesAPIQueryItemParam`
+        """
         
         
 
@@ -68,7 +77,7 @@ class ListSeriesRequest:
         用于限制本次返回的结果数据条数。 取值范围(0,1000]，默认值为1000。
 
         :param limit: The limit of this ListSeriesRequest.
-        :type: str
+        :type limit: str
         """
         self._limit = limit
 
@@ -90,7 +99,7 @@ class ListSeriesRequest:
         分页查询起始位置，为非负整数。
 
         :param offset: The offset of this ListSeriesRequest.
-        :type: str
+        :type offset: str
         """
         self._offset = offset
 
@@ -100,7 +109,7 @@ class ListSeriesRequest:
 
 
         :return: The body of this ListSeriesRequest.
-        :rtype: SeriesAPIQueryItemParam
+        :rtype: :class:`huaweicloudsdkaom.v2.SeriesAPIQueryItemParam`
         """
         return self._body
 
@@ -110,7 +119,7 @@ class ListSeriesRequest:
 
 
         :param body: The body of this ListSeriesRequest.
-        :type: SeriesAPIQueryItemParam
+        :type body: :class:`huaweicloudsdkaom.v2.SeriesAPIQueryItemParam`
         """
         self._body = body
 

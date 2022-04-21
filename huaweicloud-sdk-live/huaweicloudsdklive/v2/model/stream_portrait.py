@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StreamPortrait:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class StreamPortrait:
     }
 
     def __init__(self, time=None, flow=None, play_duration=None, request_count=None, user_count=None, peak_user_count=None, peak_bandwidth=None, push_duration=None):
-        """StreamPortrait - a model defined in huaweicloud sdk"""
+        """StreamPortrait
+
+        The model defined in huaweicloud sdk
+
+        :param time: 统计日期，日期格式按照ISO8601表示法，格式：YYYYMMDD，如20200904。统计该统计日期00:00-23:59时段的播放画像信息。
+        :type time: str
+        :param flow: 累计流量，单位为byte。
+        :type flow: int
+        :param play_duration: 累计播放时长,单位为秒。
+        :type play_duration: int
+        :param request_count: 累计请求次数。
+        :type request_count: int
+        :param user_count: 累计观看人数,根据IP去重。
+        :type user_count: int
+        :param peak_user_count: 峰值观看人数,flv/rtmp协议是统计Session会话ID，其它协议统计IP,1分钟的采样数据。
+        :type peak_user_count: int
+        :param peak_bandwidth: 峰值带宽，单位bps,5分钟的采样数据。
+        :type peak_bandwidth: int
+        :param push_duration: 累计直播(推流)时长,单位为秒。
+        :type push_duration: int
+        """
         
         
 
@@ -93,7 +112,7 @@ class StreamPortrait:
         统计日期，日期格式按照ISO8601表示法，格式：YYYYMMDD，如20200904。统计该统计日期00:00-23:59时段的播放画像信息。
 
         :param time: The time of this StreamPortrait.
-        :type: str
+        :type time: str
         """
         self._time = time
 
@@ -115,7 +134,7 @@ class StreamPortrait:
         累计流量，单位为byte。
 
         :param flow: The flow of this StreamPortrait.
-        :type: int
+        :type flow: int
         """
         self._flow = flow
 
@@ -137,7 +156,7 @@ class StreamPortrait:
         累计播放时长,单位为秒。
 
         :param play_duration: The play_duration of this StreamPortrait.
-        :type: int
+        :type play_duration: int
         """
         self._play_duration = play_duration
 
@@ -159,7 +178,7 @@ class StreamPortrait:
         累计请求次数。
 
         :param request_count: The request_count of this StreamPortrait.
-        :type: int
+        :type request_count: int
         """
         self._request_count = request_count
 
@@ -181,7 +200,7 @@ class StreamPortrait:
         累计观看人数,根据IP去重。
 
         :param user_count: The user_count of this StreamPortrait.
-        :type: int
+        :type user_count: int
         """
         self._user_count = user_count
 
@@ -203,7 +222,7 @@ class StreamPortrait:
         峰值观看人数,flv/rtmp协议是统计Session会话ID，其它协议统计IP,1分钟的采样数据。
 
         :param peak_user_count: The peak_user_count of this StreamPortrait.
-        :type: int
+        :type peak_user_count: int
         """
         self._peak_user_count = peak_user_count
 
@@ -225,7 +244,7 @@ class StreamPortrait:
         峰值带宽，单位bps,5分钟的采样数据。
 
         :param peak_bandwidth: The peak_bandwidth of this StreamPortrait.
-        :type: int
+        :type peak_bandwidth: int
         """
         self._peak_bandwidth = peak_bandwidth
 
@@ -247,7 +266,7 @@ class StreamPortrait:
         累计直播(推流)时长,单位为秒。
 
         :param push_duration: The push_duration of this StreamPortrait.
-        :type: int
+        :type push_duration: int
         """
         self._push_duration = push_duration
 

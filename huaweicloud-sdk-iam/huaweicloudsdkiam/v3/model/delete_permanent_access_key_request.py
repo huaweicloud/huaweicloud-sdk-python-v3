@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeletePermanentAccessKeyRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeletePermanentAccessKeyRequest:
     }
 
     def __init__(self, access_key=None):
-        """DeletePermanentAccessKeyRequest - a model defined in huaweicloud sdk"""
+        """DeletePermanentAccessKeyRequest
+
+        The model defined in huaweicloud sdk
+
+        :param access_key: 待删除的指定AK。
+        :type access_key: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeletePermanentAccessKeyRequest:
         待删除的指定AK。
 
         :param access_key: The access_key of this DeletePermanentAccessKeyRequest.
-        :type: str
+        :type access_key: str
         """
         self._access_key = access_key
 

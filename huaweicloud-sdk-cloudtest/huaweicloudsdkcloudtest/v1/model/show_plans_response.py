@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowPlansResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowPlansResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ShowPlansResponse - a model defined in huaweicloud sdk"""
+        """ShowPlansResponse
+
+        The model defined in huaweicloud sdk
+
+        :param body: 项目下查询测试计划列表返回结构
+        :type body: list[:class:`huaweicloudsdkcloudtest.v1.TestPlanDetail`]
+        """
         
         super(ShowPlansResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ShowPlansResponse(SdkResponse):
         项目下查询测试计划列表返回结构
 
         :return: The body of this ShowPlansResponse.
-        :rtype: list[TestPlanDetail]
+        :rtype: list[:class:`huaweicloudsdkcloudtest.v1.TestPlanDetail`]
         """
         return self._body
 
@@ -58,7 +63,7 @@ class ShowPlansResponse(SdkResponse):
         项目下查询测试计划列表返回结构
 
         :param body: The body of this ShowPlansResponse.
-        :type: list[TestPlanDetail]
+        :type body: list[:class:`huaweicloudsdkcloudtest.v1.TestPlanDetail`]
         """
         self._body = body
 

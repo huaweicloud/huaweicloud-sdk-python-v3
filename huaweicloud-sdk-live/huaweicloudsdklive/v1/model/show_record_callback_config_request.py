@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowRecordCallbackConfigRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowRecordCallbackConfigRequest:
     }
 
     def __init__(self, id=None):
-        """ShowRecordCallbackConfigRequest - a model defined in huaweicloud sdk"""
+        """ShowRecordCallbackConfigRequest
+
+        The model defined in huaweicloud sdk
+
+        :param id: 配置ID
+        :type id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowRecordCallbackConfigRequest:
         配置ID
 
         :param id: The id of this ShowRecordCallbackConfigRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 

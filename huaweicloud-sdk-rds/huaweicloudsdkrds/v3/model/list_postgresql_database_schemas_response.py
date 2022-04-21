@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPostgresqlDatabaseSchemasResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListPostgresqlDatabaseSchemasResponse(SdkResponse):
     }
 
     def __init__(self, database_schemas=None, total_count=None):
-        """ListPostgresqlDatabaseSchemasResponse - a model defined in huaweicloud sdk"""
+        """ListPostgresqlDatabaseSchemasResponse
+
+        The model defined in huaweicloud sdk
+
+        :param database_schemas: 列表中每个元素表示一个数据库schema。
+        :type database_schemas: list[:class:`huaweicloudsdkrds.v3.PostgresqlDatabaseForListSchema`]
+        :param total_count: 数据库schema总数。
+        :type total_count: int
+        """
         
         super(ListPostgresqlDatabaseSchemasResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListPostgresqlDatabaseSchemasResponse(SdkResponse):
         列表中每个元素表示一个数据库schema。
 
         :return: The database_schemas of this ListPostgresqlDatabaseSchemasResponse.
-        :rtype: list[PostgresqlDatabaseForListSchema]
+        :rtype: list[:class:`huaweicloudsdkrds.v3.PostgresqlDatabaseForListSchema`]
         """
         return self._database_schemas
 
@@ -63,7 +70,7 @@ class ListPostgresqlDatabaseSchemasResponse(SdkResponse):
         列表中每个元素表示一个数据库schema。
 
         :param database_schemas: The database_schemas of this ListPostgresqlDatabaseSchemasResponse.
-        :type: list[PostgresqlDatabaseForListSchema]
+        :type database_schemas: list[:class:`huaweicloudsdkrds.v3.PostgresqlDatabaseForListSchema`]
         """
         self._database_schemas = database_schemas
 
@@ -85,7 +92,7 @@ class ListPostgresqlDatabaseSchemasResponse(SdkResponse):
         数据库schema总数。
 
         :param total_count: The total_count of this ListPostgresqlDatabaseSchemasResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 

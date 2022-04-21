@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SessionStatsTotal:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class SessionStatsTotal:
     }
 
     def __init__(self, session_count=None, user_count=None, avg_request_count=None, avg_session_time=None):
-        """SessionStatsTotal - a model defined in huaweicloud sdk"""
+        """SessionStatsTotal
+
+        The model defined in huaweicloud sdk
+
+        :param session_count: 会话总数。
+        :type session_count: int
+        :param user_count: 独立用户个数。
+        :type user_count: int
+        :param avg_request_count: 平均会话轮数，保留小数点后三位。
+        :type avg_request_count: float
+        :param avg_session_time: 平均会话时长，保留小数点后三位。
+        :type avg_session_time: float
+        """
         
         
 
@@ -69,7 +80,7 @@ class SessionStatsTotal:
         会话总数。
 
         :param session_count: The session_count of this SessionStatsTotal.
-        :type: int
+        :type session_count: int
         """
         self._session_count = session_count
 
@@ -91,7 +102,7 @@ class SessionStatsTotal:
         独立用户个数。
 
         :param user_count: The user_count of this SessionStatsTotal.
-        :type: int
+        :type user_count: int
         """
         self._user_count = user_count
 
@@ -113,7 +124,7 @@ class SessionStatsTotal:
         平均会话轮数，保留小数点后三位。
 
         :param avg_request_count: The avg_request_count of this SessionStatsTotal.
-        :type: float
+        :type avg_request_count: float
         """
         self._avg_request_count = avg_request_count
 
@@ -135,7 +146,7 @@ class SessionStatsTotal:
         平均会话时长，保留小数点后三位。
 
         :param avg_session_time: The avg_session_time of this SessionStatsTotal.
-        :type: float
+        :type avg_session_time: float
         """
         self._avg_session_time = avg_session_time
 

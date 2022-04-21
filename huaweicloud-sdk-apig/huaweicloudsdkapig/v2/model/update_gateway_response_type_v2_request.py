@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateGatewayResponseTypeV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class UpdateGatewayResponseTypeV2Request:
     }
 
     def __init__(self, instance_id=None, group_id=None, response_id=None, response_type=None, body=None):
-        """UpdateGatewayResponseTypeV2Request - a model defined in huaweicloud sdk"""
+        """UpdateGatewayResponseTypeV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param group_id: 分组的编号
+        :type group_id: str
+        :param response_id: 响应编号
+        :type response_id: str
+        :param response_type: 错误类型
+        :type response_type: str
+        :param body: Body of the UpdateGatewayResponseTypeV2Request
+        :type body: :class:`huaweicloudsdkapig.v2.ResponseInfo`
+        """
         
         
 
@@ -74,7 +87,7 @@ class UpdateGatewayResponseTypeV2Request:
         实例ID
 
         :param instance_id: The instance_id of this UpdateGatewayResponseTypeV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -96,7 +109,7 @@ class UpdateGatewayResponseTypeV2Request:
         分组的编号
 
         :param group_id: The group_id of this UpdateGatewayResponseTypeV2Request.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -118,7 +131,7 @@ class UpdateGatewayResponseTypeV2Request:
         响应编号
 
         :param response_id: The response_id of this UpdateGatewayResponseTypeV2Request.
-        :type: str
+        :type response_id: str
         """
         self._response_id = response_id
 
@@ -140,7 +153,7 @@ class UpdateGatewayResponseTypeV2Request:
         错误类型
 
         :param response_type: The response_type of this UpdateGatewayResponseTypeV2Request.
-        :type: str
+        :type response_type: str
         """
         self._response_type = response_type
 
@@ -150,7 +163,7 @@ class UpdateGatewayResponseTypeV2Request:
 
 
         :return: The body of this UpdateGatewayResponseTypeV2Request.
-        :rtype: ResponseInfo
+        :rtype: :class:`huaweicloudsdkapig.v2.ResponseInfo`
         """
         return self._body
 
@@ -160,7 +173,7 @@ class UpdateGatewayResponseTypeV2Request:
 
 
         :param body: The body of this UpdateGatewayResponseTypeV2Request.
-        :type: ResponseInfo
+        :type body: :class:`huaweicloudsdkapig.v2.ResponseInfo`
         """
         self._body = body
 

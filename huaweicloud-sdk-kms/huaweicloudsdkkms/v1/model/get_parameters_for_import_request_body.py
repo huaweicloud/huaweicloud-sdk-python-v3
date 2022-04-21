@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GetParametersForImportRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class GetParametersForImportRequestBody:
     }
 
     def __init__(self, key_id=None, wrapping_algorithm=None, sequence=None):
-        """GetParametersForImportRequestBody - a model defined in huaweicloud sdk"""
+        """GetParametersForImportRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param key_id: 密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
+        :type key_id: str
+        :param wrapping_algorithm: 密钥材料加密算法，枚举如下：  - RSAES_PKCS1_V1_5  - RSAES_OAEP_SHA_1  - RSAES_OAEP_SHA_256
+        :type wrapping_algorithm: str
+        :param sequence: 请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
+        :type sequence: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class GetParametersForImportRequestBody:
         密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
 
         :param key_id: The key_id of this GetParametersForImportRequestBody.
-        :type: str
+        :type key_id: str
         """
         self._key_id = key_id
 
@@ -90,7 +99,7 @@ class GetParametersForImportRequestBody:
         密钥材料加密算法，枚举如下：  - RSAES_PKCS1_V1_5  - RSAES_OAEP_SHA_1  - RSAES_OAEP_SHA_256
 
         :param wrapping_algorithm: The wrapping_algorithm of this GetParametersForImportRequestBody.
-        :type: str
+        :type wrapping_algorithm: str
         """
         self._wrapping_algorithm = wrapping_algorithm
 
@@ -112,7 +121,7 @@ class GetParametersForImportRequestBody:
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
 
         :param sequence: The sequence of this GetParametersForImportRequestBody.
-        :type: str
+        :type sequence: str
         """
         self._sequence = sequence
 

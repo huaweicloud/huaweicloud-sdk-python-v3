@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RegisterDmsKafkaInstanceRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class RegisterDmsKafkaInstanceRequestBody:
     }
 
     def __init__(self, instance_id=None, kafka_name=None, connect_info=None):
-        """RegisterDmsKafkaInstanceRequestBody - a model defined in huaweicloud sdk"""
+        """RegisterDmsKafkaInstanceRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: kafka ID
+        :type instance_id: str
+        :param kafka_name: kafka 名称
+        :type kafka_name: str
+        :param connect_info: 
+        :type connect_info: :class:`huaweicloudsdklts.v2.RegisterDmsKafkaInstanceRequestBodyConnectInfo`
+        """
         
         
 
@@ -65,7 +74,7 @@ class RegisterDmsKafkaInstanceRequestBody:
         kafka ID
 
         :param instance_id: The instance_id of this RegisterDmsKafkaInstanceRequestBody.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -87,7 +96,7 @@ class RegisterDmsKafkaInstanceRequestBody:
         kafka 名称
 
         :param kafka_name: The kafka_name of this RegisterDmsKafkaInstanceRequestBody.
-        :type: str
+        :type kafka_name: str
         """
         self._kafka_name = kafka_name
 
@@ -97,7 +106,7 @@ class RegisterDmsKafkaInstanceRequestBody:
 
 
         :return: The connect_info of this RegisterDmsKafkaInstanceRequestBody.
-        :rtype: RegisterDmsKafkaInstanceRequestBodyConnectInfo
+        :rtype: :class:`huaweicloudsdklts.v2.RegisterDmsKafkaInstanceRequestBodyConnectInfo`
         """
         return self._connect_info
 
@@ -107,7 +116,7 @@ class RegisterDmsKafkaInstanceRequestBody:
 
 
         :param connect_info: The connect_info of this RegisterDmsKafkaInstanceRequestBody.
-        :type: RegisterDmsKafkaInstanceRequestBodyConnectInfo
+        :type connect_info: :class:`huaweicloudsdklts.v2.RegisterDmsKafkaInstanceRequestBodyConnectInfo`
         """
         self._connect_info = connect_info
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateLoadbalancerTagsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class CreateLoadbalancerTagsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateLoadbalancerTagsResponse - a model defined in huaweicloud sdk"""
+        """CreateLoadbalancerTagsResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(CreateLoadbalancerTagsResponse, self).__init__()
         self.discriminator = None

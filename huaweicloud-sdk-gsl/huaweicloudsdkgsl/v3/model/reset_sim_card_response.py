@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResetSimCardResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ResetSimCardResponse(SdkResponse):
     }
 
     def __init__(self, work_order_id=None):
-        """ResetSimCardResponse - a model defined in huaweicloud sdk"""
+        """ResetSimCardResponse
+
+        The model defined in huaweicloud sdk
+
+        :param work_order_id: 业务受理单号
+        :type work_order_id: int
+        """
         
         super(ResetSimCardResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class ResetSimCardResponse(SdkResponse):
         业务受理单号
 
         :param work_order_id: The work_order_id of this ResetSimCardResponse.
-        :type: int
+        :type work_order_id: int
         """
         self._work_order_id = work_order_id
 

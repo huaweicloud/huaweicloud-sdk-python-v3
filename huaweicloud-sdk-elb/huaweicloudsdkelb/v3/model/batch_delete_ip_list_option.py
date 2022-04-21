@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchDeleteIpListOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchDeleteIpListOption:
     }
 
     def __init__(self, ip_list=None):
-        """BatchDeleteIpListOption - a model defined in huaweicloud sdk"""
+        """BatchDeleteIpListOption
+
+        The model defined in huaweicloud sdk
+
+        :param ip_list: IP列表。
+        :type ip_list: list[:class:`huaweicloudsdkelb.v3.IpGroupIp`]
+        """
         
         
 
@@ -47,7 +52,7 @@ class BatchDeleteIpListOption:
         IP列表。
 
         :return: The ip_list of this BatchDeleteIpListOption.
-        :rtype: list[IpGroupIp]
+        :rtype: list[:class:`huaweicloudsdkelb.v3.IpGroupIp`]
         """
         return self._ip_list
 
@@ -58,7 +63,7 @@ class BatchDeleteIpListOption:
         IP列表。
 
         :param ip_list: The ip_list of this BatchDeleteIpListOption.
-        :type: list[IpGroupIp]
+        :type ip_list: list[:class:`huaweicloudsdkelb.v3.IpGroupIp`]
         """
         self._ip_list = ip_list
 

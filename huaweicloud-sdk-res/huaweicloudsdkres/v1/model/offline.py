@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Offline:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class Offline:
     }
 
     def __init__(self, user_url=None, item_url=None, behavior_url=None):
-        """Offline - a model defined in huaweicloud sdk"""
+        """Offline
+
+        The model defined in huaweicloud sdk
+
+        :param user_url: 用户数据url。
+        :type user_url: str
+        :param item_url: 物品数据url。
+        :type item_url: str
+        :param behavior_url: 行为数据url。
+        :type behavior_url: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class Offline:
         用户数据url。
 
         :param user_url: The user_url of this Offline.
-        :type: str
+        :type user_url: str
         """
         self._user_url = user_url
 
@@ -87,7 +96,7 @@ class Offline:
         物品数据url。
 
         :param item_url: The item_url of this Offline.
-        :type: str
+        :type item_url: str
         """
         self._item_url = item_url
 
@@ -109,7 +118,7 @@ class Offline:
         行为数据url。
 
         :param behavior_url: The behavior_url of this Offline.
-        :type: str
+        :type behavior_url: str
         """
         self._behavior_url = behavior_url
 

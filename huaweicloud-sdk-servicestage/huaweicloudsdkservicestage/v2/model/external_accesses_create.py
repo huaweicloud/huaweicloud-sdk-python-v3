@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExternalAccessesCreate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ExternalAccessesCreate:
     }
 
     def __init__(self, protocol=None, address=None, forward_port=None):
-        """ExternalAccessesCreate - a model defined in huaweicloud sdk"""
+        """ExternalAccessesCreate
+
+        The model defined in huaweicloud sdk
+
+        :param protocol: 协议，支持http、https。
+        :type protocol: str
+        :param address: 访问地址。
+        :type address: str
+        :param forward_port: 端口号。
+        :type forward_port: int
+        """
         
         
 
@@ -65,7 +74,7 @@ class ExternalAccessesCreate:
         协议，支持http、https。
 
         :param protocol: The protocol of this ExternalAccessesCreate.
-        :type: str
+        :type protocol: str
         """
         self._protocol = protocol
 
@@ -87,7 +96,7 @@ class ExternalAccessesCreate:
         访问地址。
 
         :param address: The address of this ExternalAccessesCreate.
-        :type: str
+        :type address: str
         """
         self._address = address
 
@@ -109,7 +118,7 @@ class ExternalAccessesCreate:
         端口号。
 
         :param forward_port: The forward_port of this ExternalAccessesCreate.
-        :type: int
+        :type forward_port: int
         """
         self._forward_port = forward_port
 

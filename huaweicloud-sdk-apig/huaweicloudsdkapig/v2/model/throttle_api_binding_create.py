@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ThrottleApiBindingCreate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ThrottleApiBindingCreate:
     }
 
     def __init__(self, strategy_id=None, publish_ids=None):
-        """ThrottleApiBindingCreate - a model defined in huaweicloud sdk"""
+        """ThrottleApiBindingCreate
+
+        The model defined in huaweicloud sdk
+
+        :param strategy_id: 流控策略编号
+        :type strategy_id: str
+        :param publish_ids: API的发布记录编号
+        :type publish_ids: list[str]
+        """
         
         
 
@@ -61,7 +68,7 @@ class ThrottleApiBindingCreate:
         流控策略编号
 
         :param strategy_id: The strategy_id of this ThrottleApiBindingCreate.
-        :type: str
+        :type strategy_id: str
         """
         self._strategy_id = strategy_id
 
@@ -83,7 +90,7 @@ class ThrottleApiBindingCreate:
         API的发布记录编号
 
         :param publish_ids: The publish_ids of this ThrottleApiBindingCreate.
-        :type: list[str]
+        :type publish_ids: list[str]
         """
         self._publish_ids = publish_ids
 

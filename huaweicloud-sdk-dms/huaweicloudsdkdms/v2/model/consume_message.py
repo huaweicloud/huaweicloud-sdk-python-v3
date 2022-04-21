@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ConsumeMessage:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ConsumeMessage:
     }
 
     def __init__(self, message=None, handler=None):
-        """ConsumeMessage - a model defined in huaweicloud sdk"""
+        """ConsumeMessage
+
+        The model defined in huaweicloud sdk
+
+        :param message: 
+        :type message: :class:`huaweicloudsdkdms.v2.ConsumeMessageMessage`
+        :param handler: 消息handler。
+        :type handler: str
+        """
         
         
 
@@ -51,7 +58,7 @@ class ConsumeMessage:
 
 
         :return: The message of this ConsumeMessage.
-        :rtype: ConsumeMessageMessage
+        :rtype: :class:`huaweicloudsdkdms.v2.ConsumeMessageMessage`
         """
         return self._message
 
@@ -61,7 +68,7 @@ class ConsumeMessage:
 
 
         :param message: The message of this ConsumeMessage.
-        :type: ConsumeMessageMessage
+        :type message: :class:`huaweicloudsdkdms.v2.ConsumeMessageMessage`
         """
         self._message = message
 
@@ -83,7 +90,7 @@ class ConsumeMessage:
         消息handler。
 
         :param handler: The handler of this ConsumeMessage.
-        :type: str
+        :type handler: str
         """
         self._handler = handler
 

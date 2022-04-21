@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EcsServerInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class EcsServerInfo:
     }
 
     def __init__(self, id=None, auth=None, disable_password=None):
-        """EcsServerInfo - a model defined in huaweicloud sdk"""
+        """EcsServerInfo
+
+        The model defined in huaweicloud sdk
+
+        :param id: 需要绑定(替换或重置)SSH密钥对的虚拟机id
+        :type id: str
+        :param auth: 
+        :type auth: :class:`huaweicloudsdkkps.v3.Auth`
+        :param disable_password: - true：禁用虚拟机的ssh登陆。 - false：不禁用虚拟机的ssh登陆。
+        :type disable_password: bool
+        """
         
         
 
@@ -67,7 +76,7 @@ class EcsServerInfo:
         需要绑定(替换或重置)SSH密钥对的虚拟机id
 
         :param id: The id of this EcsServerInfo.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -77,7 +86,7 @@ class EcsServerInfo:
 
 
         :return: The auth of this EcsServerInfo.
-        :rtype: Auth
+        :rtype: :class:`huaweicloudsdkkps.v3.Auth`
         """
         return self._auth
 
@@ -87,7 +96,7 @@ class EcsServerInfo:
 
 
         :param auth: The auth of this EcsServerInfo.
-        :type: Auth
+        :type auth: :class:`huaweicloudsdkkps.v3.Auth`
         """
         self._auth = auth
 
@@ -109,7 +118,7 @@ class EcsServerInfo:
         - true：禁用虚拟机的ssh登陆。 - false：不禁用虚拟机的ssh登陆。
 
         :param disable_password: The disable_password of this EcsServerInfo.
-        :type: bool
+        :type disable_password: bool
         """
         self._disable_password = disable_password
 

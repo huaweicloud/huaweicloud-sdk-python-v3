@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListComponentsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListComponentsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, components=None):
-        """ListComponentsResponse - a model defined in huaweicloud sdk"""
+        """ListComponentsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 组件个数。
+        :type count: int
+        :param components: 组件列表。
+        :type components: list[:class:`huaweicloudsdkservicestage.v2.ComponentView`]
+        """
         
         super(ListComponentsResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListComponentsResponse(SdkResponse):
         组件个数。
 
         :param count: The count of this ListComponentsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -74,7 +81,7 @@ class ListComponentsResponse(SdkResponse):
         组件列表。
 
         :return: The components of this ListComponentsResponse.
-        :rtype: list[ComponentView]
+        :rtype: list[:class:`huaweicloudsdkservicestage.v2.ComponentView`]
         """
         return self._components
 
@@ -85,7 +92,7 @@ class ListComponentsResponse(SdkResponse):
         组件列表。
 
         :param components: The components of this ListComponentsResponse.
-        :type: list[ComponentView]
+        :type components: list[:class:`huaweicloudsdkservicestage.v2.ComponentView`]
         """
         self._components = components
 

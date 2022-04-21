@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListNatGatewaySnatRulesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class ListNatGatewaySnatRulesRequest:
     }
 
     def __init__(self, admin_state_up=None, cidr=None, limit=None, floating_ip_address=None, floating_ip_id=None, id=None, description=None, created_at=None, nat_gateway_id=None, network_id=None, source_type=None, status=None):
-        """ListNatGatewaySnatRulesRequest - a model defined in huaweicloud sdk"""
+        """ListNatGatewaySnatRulesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param admin_state_up: 解冻/冻结状态。 取值范围： \&quot;true\&quot;：解冻 \&quot;false\&quot;：冻结
+        :type admin_state_up: bool
+        :param cidr: 可以是网段或者主机格式，与network_id参数二选一。 Source_type&#x3D;0时，cidr必须是vpc子网网段的子集(不能相等）; Source_type&#x3D;1时，cidr必须指定专线侧网段。
+        :type cidr: str
+        :param limit: 功能说明：每页返回的个数。 取值范围：0~2000。 默认值：2000。
+        :type limit: int
+        :param floating_ip_address: 功能说明：弹性公网IP，多个弹性公网IP使用逗号分隔。 取值范围：最大长度1024字节。
+        :type floating_ip_address: str
+        :param floating_ip_id: 功能说明：弹性公网IP的id，多个弹性公网IP使用逗号分隔。 取值范围：最大长度4096字节。
+        :type floating_ip_id: str
+        :param id: SNAT规则的ID。
+        :type id: str
+        :param description: SNAT规则的描述，长度限制为255。
+        :type description: str
+        :param created_at: SNAT规则的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
+        :type created_at: datetime
+        :param nat_gateway_id: 公网NAT网关实例的ID。
+        :type nat_gateway_id: list[str]
+        :param network_id: 规则使用的网络id。与cidr参数二选一。
+        :type network_id: str
+        :param source_type: 0：VPC侧，可以指定network_id 或者cidr 1：专线侧，只能指定cidr 不输入默认为0（VPC）
+        :type source_type: int
+        :param status: 功能说明：SNAT规则的状态。
+        :type status: str
+        """
         
         
 
@@ -113,7 +140,7 @@ class ListNatGatewaySnatRulesRequest:
         解冻/冻结状态。 取值范围： \"true\"：解冻 \"false\"：冻结
 
         :param admin_state_up: The admin_state_up of this ListNatGatewaySnatRulesRequest.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 
@@ -135,7 +162,7 @@ class ListNatGatewaySnatRulesRequest:
         可以是网段或者主机格式，与network_id参数二选一。 Source_type=0时，cidr必须是vpc子网网段的子集(不能相等）; Source_type=1时，cidr必须指定专线侧网段。
 
         :param cidr: The cidr of this ListNatGatewaySnatRulesRequest.
-        :type: str
+        :type cidr: str
         """
         self._cidr = cidr
 
@@ -157,7 +184,7 @@ class ListNatGatewaySnatRulesRequest:
         功能说明：每页返回的个数。 取值范围：0~2000。 默认值：2000。
 
         :param limit: The limit of this ListNatGatewaySnatRulesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -179,7 +206,7 @@ class ListNatGatewaySnatRulesRequest:
         功能说明：弹性公网IP，多个弹性公网IP使用逗号分隔。 取值范围：最大长度1024字节。
 
         :param floating_ip_address: The floating_ip_address of this ListNatGatewaySnatRulesRequest.
-        :type: str
+        :type floating_ip_address: str
         """
         self._floating_ip_address = floating_ip_address
 
@@ -201,7 +228,7 @@ class ListNatGatewaySnatRulesRequest:
         功能说明：弹性公网IP的id，多个弹性公网IP使用逗号分隔。 取值范围：最大长度4096字节。
 
         :param floating_ip_id: The floating_ip_id of this ListNatGatewaySnatRulesRequest.
-        :type: str
+        :type floating_ip_id: str
         """
         self._floating_ip_id = floating_ip_id
 
@@ -223,7 +250,7 @@ class ListNatGatewaySnatRulesRequest:
         SNAT规则的ID。
 
         :param id: The id of this ListNatGatewaySnatRulesRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -245,7 +272,7 @@ class ListNatGatewaySnatRulesRequest:
         SNAT规则的描述，长度限制为255。
 
         :param description: The description of this ListNatGatewaySnatRulesRequest.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -267,7 +294,7 @@ class ListNatGatewaySnatRulesRequest:
         SNAT规则的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
 
         :param created_at: The created_at of this ListNatGatewaySnatRulesRequest.
-        :type: datetime
+        :type created_at: datetime
         """
         self._created_at = created_at
 
@@ -289,7 +316,7 @@ class ListNatGatewaySnatRulesRequest:
         公网NAT网关实例的ID。
 
         :param nat_gateway_id: The nat_gateway_id of this ListNatGatewaySnatRulesRequest.
-        :type: list[str]
+        :type nat_gateway_id: list[str]
         """
         self._nat_gateway_id = nat_gateway_id
 
@@ -311,7 +338,7 @@ class ListNatGatewaySnatRulesRequest:
         规则使用的网络id。与cidr参数二选一。
 
         :param network_id: The network_id of this ListNatGatewaySnatRulesRequest.
-        :type: str
+        :type network_id: str
         """
         self._network_id = network_id
 
@@ -333,7 +360,7 @@ class ListNatGatewaySnatRulesRequest:
         0：VPC侧，可以指定network_id 或者cidr 1：专线侧，只能指定cidr 不输入默认为0（VPC）
 
         :param source_type: The source_type of this ListNatGatewaySnatRulesRequest.
-        :type: int
+        :type source_type: int
         """
         self._source_type = source_type
 
@@ -355,7 +382,7 @@ class ListNatGatewaySnatRulesRequest:
         功能说明：SNAT规则的状态。
 
         :param status: The status of this ListNatGatewaySnatRulesRequest.
-        :type: str
+        :type status: str
         """
         self._status = status
 

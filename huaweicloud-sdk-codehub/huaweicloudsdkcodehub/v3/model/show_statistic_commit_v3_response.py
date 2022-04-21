@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowStatisticCommitV3Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowStatisticCommitV3Response(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """ShowStatisticCommitV3Response - a model defined in huaweicloud sdk"""
+        """ShowStatisticCommitV3Response
+
+        The model defined in huaweicloud sdk
+
+        :param error: 
+        :type error: :class:`huaweicloudsdkcodehub.v3.Error`
+        :param result: 代码增加和删除的行数
+        :type result: list[:class:`huaweicloudsdkcodehub.v3.CommitStatistic`]
+        :param status: 响应状态
+        :type status: str
+        """
         
         super(ShowStatisticCommitV3Response, self).__init__()
 
@@ -56,7 +65,7 @@ class ShowStatisticCommitV3Response(SdkResponse):
 
 
         :return: The error of this ShowStatisticCommitV3Response.
-        :rtype: Error
+        :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
         """
         return self._error
 
@@ -66,7 +75,7 @@ class ShowStatisticCommitV3Response(SdkResponse):
 
 
         :param error: The error of this ShowStatisticCommitV3Response.
-        :type: Error
+        :type error: :class:`huaweicloudsdkcodehub.v3.Error`
         """
         self._error = error
 
@@ -77,7 +86,7 @@ class ShowStatisticCommitV3Response(SdkResponse):
         代码增加和删除的行数
 
         :return: The result of this ShowStatisticCommitV3Response.
-        :rtype: list[CommitStatistic]
+        :rtype: list[:class:`huaweicloudsdkcodehub.v3.CommitStatistic`]
         """
         return self._result
 
@@ -88,7 +97,7 @@ class ShowStatisticCommitV3Response(SdkResponse):
         代码增加和删除的行数
 
         :param result: The result of this ShowStatisticCommitV3Response.
-        :type: list[CommitStatistic]
+        :type result: list[:class:`huaweicloudsdkcodehub.v3.CommitStatistic`]
         """
         self._result = result
 
@@ -110,7 +119,7 @@ class ShowStatisticCommitV3Response(SdkResponse):
         响应状态
 
         :param status: The status of this ShowStatisticCommitV3Response.
-        :type: str
+        :type status: str
         """
         self._status = status
 

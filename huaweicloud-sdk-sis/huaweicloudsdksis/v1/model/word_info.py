@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class WordInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class WordInfo:
     }
 
     def __init__(self, start_time=None, end_time=None, word=None):
-        """WordInfo - a model defined in huaweicloud sdk"""
+        """WordInfo
+
+        The model defined in huaweicloud sdk
+
+        :param start_time: 起始时间
+        :type start_time: int
+        :param end_time: 结束时间
+        :type end_time: int
+        :param word: 分词
+        :type word: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class WordInfo:
         起始时间
 
         :param start_time: The start_time of this WordInfo.
-        :type: int
+        :type start_time: int
         """
         self._start_time = start_time
 
@@ -90,7 +99,7 @@ class WordInfo:
         结束时间
 
         :param end_time: The end_time of this WordInfo.
-        :type: int
+        :type end_time: int
         """
         self._end_time = end_time
 
@@ -112,7 +121,7 @@ class WordInfo:
         分词
 
         :param word: The word of this WordInfo.
-        :type: str
+        :type word: str
         """
         self._word = word
 

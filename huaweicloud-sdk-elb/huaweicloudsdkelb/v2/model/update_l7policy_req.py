@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateL7policyReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class UpdateL7policyReq:
     }
 
     def __init__(self, name=None, admin_state_up=None, description=None, redirect_listener_id=None, redirect_pool_id=None):
-        """UpdateL7policyReq - a model defined in huaweicloud sdk"""
+        """UpdateL7policyReq
+
+        The model defined in huaweicloud sdk
+
+        :param name: 转发策略名称
+        :type name: str
+        :param admin_state_up: 转发策略的管理状态；该字段为预留字段，暂未启用。默认为true。
+        :type admin_state_up: bool
+        :param description: 转发策略额描述信息
+        :type description: str
+        :param redirect_listener_id: 转发到的listener的ID，当action为REDIRECT_TO_LISTENER时生效。当action为REDIRECT_TO_LISTENER时必选
+        :type redirect_listener_id: str
+        :param redirect_pool_id: 转发到pool的ID。当action为REDIRECT_TO_POOL时生效。使用说明：redirect_pool不能是listener的default_pool，不能已经被其他listener的l7policy所使用。当action为REDIRECT_TO_LISTENER时，不可指定。不允许更新为空。
+        :type redirect_pool_id: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class UpdateL7policyReq:
         转发策略名称
 
         :param name: The name of this UpdateL7policyReq.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -100,7 +113,7 @@ class UpdateL7policyReq:
         转发策略的管理状态；该字段为预留字段，暂未启用。默认为true。
 
         :param admin_state_up: The admin_state_up of this UpdateL7policyReq.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 
@@ -122,7 +135,7 @@ class UpdateL7policyReq:
         转发策略额描述信息
 
         :param description: The description of this UpdateL7policyReq.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -144,7 +157,7 @@ class UpdateL7policyReq:
         转发到的listener的ID，当action为REDIRECT_TO_LISTENER时生效。当action为REDIRECT_TO_LISTENER时必选
 
         :param redirect_listener_id: The redirect_listener_id of this UpdateL7policyReq.
-        :type: str
+        :type redirect_listener_id: str
         """
         self._redirect_listener_id = redirect_listener_id
 
@@ -166,7 +179,7 @@ class UpdateL7policyReq:
         转发到pool的ID。当action为REDIRECT_TO_POOL时生效。使用说明：redirect_pool不能是listener的default_pool，不能已经被其他listener的l7policy所使用。当action为REDIRECT_TO_LISTENER时，不可指定。不允许更新为空。
 
         :param redirect_pool_id: The redirect_pool_id of this UpdateL7policyReq.
-        :type: str
+        :type redirect_pool_id: str
         """
         self._redirect_pool_id = redirect_pool_id
 

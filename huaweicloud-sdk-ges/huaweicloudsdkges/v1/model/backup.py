@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Backup:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -62,7 +61,45 @@ class Backup:
     }
 
     def __init__(self, id=None, name=None, backup_method=None, graph_id=None, graph_name=None, graph_status=None, graph_size_type_index=None, data_store_version=None, arch=None, status=None, start_timestamp=None, start_time=None, end_timestamp=None, end_time=None, size=None, duration=None, encrypted=None):
-        """Backup - a model defined in huaweicloud sdk"""
+        """Backup
+
+        The model defined in huaweicloud sdk
+
+        :param id: 备份ID。
+        :type id: str
+        :param name: 备份名称。
+        :type name: str
+        :param backup_method: 备份方法，取值为auto或manual。
+        :type backup_method: str
+        :param graph_id: 备份关联的图ID。
+        :type graph_id: str
+        :param graph_name: 备份关联的图Name。
+        :type graph_name: str
+        :param graph_status: 备份关联的图状态。
+        :type graph_status: str
+        :param graph_size_type_index: 备份关联的图规格。
+        :type graph_size_type_index: str
+        :param data_store_version: 备份关联的图版本。
+        :type data_store_version: str
+        :param arch: 备份关联的图CPU架构。
+        :type arch: str
+        :param status: 备份状态。  - backing_up：备份中 - success：备份成功 - failed：备份失败
+        :type status: str
+        :param start_timestamp: 备份开始时间戳。
+        :type start_timestamp: int
+        :param start_time: 备份时间。
+        :type start_time: str
+        :param end_timestamp: 备份结束时间戳。
+        :type end_timestamp: int
+        :param end_time: 备份时间。
+        :type end_time: str
+        :param size: 备份文件大小，单位为MB。
+        :type size: int
+        :param duration: 备份时间，单位为秒。
+        :type duration: int
+        :param encrypted: 是否加密。true表示加密，默认值为\&quot;false\&quot;，不加密。
+        :type encrypted: bool
+        """
         
         
 
@@ -122,7 +159,7 @@ class Backup:
         备份ID。
 
         :param id: The id of this Backup.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -144,7 +181,7 @@ class Backup:
         备份名称。
 
         :param name: The name of this Backup.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -166,7 +203,7 @@ class Backup:
         备份方法，取值为auto或manual。
 
         :param backup_method: The backup_method of this Backup.
-        :type: str
+        :type backup_method: str
         """
         self._backup_method = backup_method
 
@@ -188,7 +225,7 @@ class Backup:
         备份关联的图ID。
 
         :param graph_id: The graph_id of this Backup.
-        :type: str
+        :type graph_id: str
         """
         self._graph_id = graph_id
 
@@ -210,7 +247,7 @@ class Backup:
         备份关联的图Name。
 
         :param graph_name: The graph_name of this Backup.
-        :type: str
+        :type graph_name: str
         """
         self._graph_name = graph_name
 
@@ -232,7 +269,7 @@ class Backup:
         备份关联的图状态。
 
         :param graph_status: The graph_status of this Backup.
-        :type: str
+        :type graph_status: str
         """
         self._graph_status = graph_status
 
@@ -254,7 +291,7 @@ class Backup:
         备份关联的图规格。
 
         :param graph_size_type_index: The graph_size_type_index of this Backup.
-        :type: str
+        :type graph_size_type_index: str
         """
         self._graph_size_type_index = graph_size_type_index
 
@@ -276,7 +313,7 @@ class Backup:
         备份关联的图版本。
 
         :param data_store_version: The data_store_version of this Backup.
-        :type: str
+        :type data_store_version: str
         """
         self._data_store_version = data_store_version
 
@@ -298,7 +335,7 @@ class Backup:
         备份关联的图CPU架构。
 
         :param arch: The arch of this Backup.
-        :type: str
+        :type arch: str
         """
         self._arch = arch
 
@@ -320,7 +357,7 @@ class Backup:
         备份状态。  - backing_up：备份中 - success：备份成功 - failed：备份失败
 
         :param status: The status of this Backup.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -342,7 +379,7 @@ class Backup:
         备份开始时间戳。
 
         :param start_timestamp: The start_timestamp of this Backup.
-        :type: int
+        :type start_timestamp: int
         """
         self._start_timestamp = start_timestamp
 
@@ -364,7 +401,7 @@ class Backup:
         备份时间。
 
         :param start_time: The start_time of this Backup.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -386,7 +423,7 @@ class Backup:
         备份结束时间戳。
 
         :param end_timestamp: The end_timestamp of this Backup.
-        :type: int
+        :type end_timestamp: int
         """
         self._end_timestamp = end_timestamp
 
@@ -408,7 +445,7 @@ class Backup:
         备份时间。
 
         :param end_time: The end_time of this Backup.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -430,7 +467,7 @@ class Backup:
         备份文件大小，单位为MB。
 
         :param size: The size of this Backup.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -452,7 +489,7 @@ class Backup:
         备份时间，单位为秒。
 
         :param duration: The duration of this Backup.
-        :type: int
+        :type duration: int
         """
         self._duration = duration
 
@@ -474,7 +511,7 @@ class Backup:
         是否加密。true表示加密，默认值为\"false\"，不加密。
 
         :param encrypted: The encrypted of this Backup.
-        :type: bool
+        :type encrypted: bool
         """
         self._encrypted = encrypted
 

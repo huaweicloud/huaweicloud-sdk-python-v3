@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ConfirmAssetUploadRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ConfirmAssetUploadRequest:
     }
 
     def __init__(self, body=None):
-        """ConfirmAssetUploadRequest - a model defined in huaweicloud sdk"""
+        """ConfirmAssetUploadRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the ConfirmAssetUploadRequest
+        :type body: :class:`huaweicloudsdkvod.v1.ConfirmAssetUploadReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class ConfirmAssetUploadRequest:
 
 
         :return: The body of this ConfirmAssetUploadRequest.
-        :rtype: ConfirmAssetUploadReq
+        :rtype: :class:`huaweicloudsdkvod.v1.ConfirmAssetUploadReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class ConfirmAssetUploadRequest:
 
 
         :param body: The body of this ConfirmAssetUploadRequest.
-        :type: ConfirmAssetUploadReq
+        :type body: :class:`huaweicloudsdkvod.v1.ConfirmAssetUploadReq`
         """
         self._body = body
 

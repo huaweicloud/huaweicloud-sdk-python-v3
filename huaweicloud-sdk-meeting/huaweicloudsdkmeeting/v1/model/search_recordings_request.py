@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SearchRecordingsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class SearchRecordingsRequest:
     }
 
     def __init__(self, user_uuid=None, offset=None, limit=None, query_all=None, search_key=None, start_date=None, end_date=None, sort_type=None, x_authorization_type=None, x_site_id=None):
-        """SearchRecordingsRequest - a model defined in huaweicloud sdk"""
+        """SearchRecordingsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param user_uuid: 待查询的会议预定者的用户UUID。仅管理员有权限查询权限范围内的所有录制，普通帐号仅能查询自己的。 默认是登录帐号。
+        :type user_uuid: str
+        :param offset: 指定返回的页面索引。该值必须大于0。 default: 0
+        :type offset: int
+        :param limit: 指定返回的记录数。默认值为20，最大值为100。
+        :type limit: int
+        :param query_all: 指定是否查询企业下所有用户的会议录制。 - 如果登录帐号不是企业管理员，则该字段无效。 - 如果该字段为true，则userUUID字段无效。
+        :type query_all: bool
+        :param search_key: 会议主题，预定人或会议id可作为搜索词，查询录制。
+        :type search_key: str
+        :param start_date: 查询的起始日期毫秒数。
+        :type start_date: int
+        :param end_date: 查询的截止日期毫秒数。
+        :type end_date: int
+        :param sort_type: - ASC_StartTIME：按录制开始时间升序排序。 - DSC_StartTIME：按录制开始时间降序排序。
+        :type sort_type: str
+        :param x_authorization_type: 标识是否为第三方portal过来的请求。
+        :type x_authorization_type: str
+        :param x_site_id: 用于区分到哪个HCSO站点鉴权。
+        :type x_site_id: str
+        """
         
         
 
@@ -101,7 +124,7 @@ class SearchRecordingsRequest:
         待查询的会议预定者的用户UUID。仅管理员有权限查询权限范围内的所有录制，普通帐号仅能查询自己的。 默认是登录帐号。
 
         :param user_uuid: The user_uuid of this SearchRecordingsRequest.
-        :type: str
+        :type user_uuid: str
         """
         self._user_uuid = user_uuid
 
@@ -123,7 +146,7 @@ class SearchRecordingsRequest:
         指定返回的页面索引。该值必须大于0。 default: 0
 
         :param offset: The offset of this SearchRecordingsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -145,7 +168,7 @@ class SearchRecordingsRequest:
         指定返回的记录数。默认值为20，最大值为100。
 
         :param limit: The limit of this SearchRecordingsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -167,7 +190,7 @@ class SearchRecordingsRequest:
         指定是否查询企业下所有用户的会议录制。 - 如果登录帐号不是企业管理员，则该字段无效。 - 如果该字段为true，则userUUID字段无效。
 
         :param query_all: The query_all of this SearchRecordingsRequest.
-        :type: bool
+        :type query_all: bool
         """
         self._query_all = query_all
 
@@ -189,7 +212,7 @@ class SearchRecordingsRequest:
         会议主题，预定人或会议id可作为搜索词，查询录制。
 
         :param search_key: The search_key of this SearchRecordingsRequest.
-        :type: str
+        :type search_key: str
         """
         self._search_key = search_key
 
@@ -211,7 +234,7 @@ class SearchRecordingsRequest:
         查询的起始日期毫秒数。
 
         :param start_date: The start_date of this SearchRecordingsRequest.
-        :type: int
+        :type start_date: int
         """
         self._start_date = start_date
 
@@ -233,7 +256,7 @@ class SearchRecordingsRequest:
         查询的截止日期毫秒数。
 
         :param end_date: The end_date of this SearchRecordingsRequest.
-        :type: int
+        :type end_date: int
         """
         self._end_date = end_date
 
@@ -255,7 +278,7 @@ class SearchRecordingsRequest:
         - ASC_StartTIME：按录制开始时间升序排序。 - DSC_StartTIME：按录制开始时间降序排序。
 
         :param sort_type: The sort_type of this SearchRecordingsRequest.
-        :type: str
+        :type sort_type: str
         """
         self._sort_type = sort_type
 
@@ -277,7 +300,7 @@ class SearchRecordingsRequest:
         标识是否为第三方portal过来的请求。
 
         :param x_authorization_type: The x_authorization_type of this SearchRecordingsRequest.
-        :type: str
+        :type x_authorization_type: str
         """
         self._x_authorization_type = x_authorization_type
 
@@ -299,7 +322,7 @@ class SearchRecordingsRequest:
         用于区分到哪个HCSO站点鉴权。
 
         :param x_site_id: The x_site_id of this SearchRecordingsRequest.
-        :type: str
+        :type x_site_id: str
         """
         self._x_site_id = x_site_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListServicesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListServicesResponse(SdkResponse):
     }
 
     def __init__(self, count=None, services=None):
-        """ListServicesResponse - a model defined in huaweicloud sdk"""
+        """ListServicesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 满足条件的端点个数
+        :type count: int
+        :param services: 服务列表
+        :type services: list[:class:`huaweicloudsdkief.v1.ServiceRespDetail`]
+        """
         
         super(ListServicesResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListServicesResponse(SdkResponse):
         满足条件的端点个数
 
         :param count: The count of this ListServicesResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -74,7 +81,7 @@ class ListServicesResponse(SdkResponse):
         服务列表
 
         :return: The services of this ListServicesResponse.
-        :rtype: list[ServiceRespDetail]
+        :rtype: list[:class:`huaweicloudsdkief.v1.ServiceRespDetail`]
         """
         return self._services
 
@@ -85,7 +92,7 @@ class ListServicesResponse(SdkResponse):
         服务列表
 
         :param services: The services of this ListServicesResponse.
-        :type: list[ServiceRespDetail]
+        :type services: list[:class:`huaweicloudsdkief.v1.ServiceRespDetail`]
         """
         self._services = services
 

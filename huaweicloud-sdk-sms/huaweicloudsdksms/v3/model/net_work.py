@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NetWork:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class NetWork:
     }
 
     def __init__(self, name=None, ip=None, netmask=None, gateway=None, mtu=None, mac=None, id=None):
-        """NetWork - a model defined in huaweicloud sdk"""
+        """NetWork
+
+        The model defined in huaweicloud sdk
+
+        :param name: 网卡的名称
+        :type name: str
+        :param ip: 该网卡绑定的IP
+        :type ip: str
+        :param netmask: 掩码
+        :type netmask: str
+        :param gateway: 网关
+        :type gateway: str
+        :param mtu: Linux必选，网卡的MTU
+        :type mtu: int
+        :param mac: Mac地址
+        :type mac: str
+        :param id: 数据库Id
+        :type id: str
+        """
         
         
 
@@ -83,7 +100,7 @@ class NetWork:
         网卡的名称
 
         :param name: The name of this NetWork.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -105,7 +122,7 @@ class NetWork:
         该网卡绑定的IP
 
         :param ip: The ip of this NetWork.
-        :type: str
+        :type ip: str
         """
         self._ip = ip
 
@@ -127,7 +144,7 @@ class NetWork:
         掩码
 
         :param netmask: The netmask of this NetWork.
-        :type: str
+        :type netmask: str
         """
         self._netmask = netmask
 
@@ -149,7 +166,7 @@ class NetWork:
         网关
 
         :param gateway: The gateway of this NetWork.
-        :type: str
+        :type gateway: str
         """
         self._gateway = gateway
 
@@ -171,7 +188,7 @@ class NetWork:
         Linux必选，网卡的MTU
 
         :param mtu: The mtu of this NetWork.
-        :type: int
+        :type mtu: int
         """
         self._mtu = mtu
 
@@ -193,7 +210,7 @@ class NetWork:
         Mac地址
 
         :param mac: The mac of this NetWork.
-        :type: str
+        :type mac: str
         """
         self._mac = mac
 
@@ -215,7 +232,7 @@ class NetWork:
         数据库Id
 
         :param id: The id of this NetWork.
-        :type: str
+        :type id: str
         """
         self._id = id
 

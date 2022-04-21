@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateAppQuotaResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class CreateAppQuotaResponse(SdkResponse):
     }
 
     def __init__(self, app_quota_id=None, name=None, call_limits=None, time_unit=None, time_interval=None, remark=None, reset_time=None, create_time=None, bound_app_num=None):
-        """CreateAppQuotaResponse - a model defined in huaweicloud sdk"""
+        """CreateAppQuotaResponse
+
+        The model defined in huaweicloud sdk
+
+        :param app_quota_id: 客户端配额编号
+        :type app_quota_id: str
+        :param name: 配额名称。支持汉字，英文，数字，下划线，且只能以英文和汉字开头，3-255字符
+        :type name: str
+        :param call_limits: 客户端配额的访问次数限制
+        :type call_limits: int
+        :param time_unit: 限定时间单位：SECOND:秒、MINUTE:分、HOURE:时、DAY:天
+        :type time_unit: str
+        :param time_interval: 配额的限定时间值
+        :type time_interval: int
+        :param remark: 参数说明和描述
+        :type remark: str
+        :param reset_time: 首次配额重置时间点，不配置默认为首次调用时间计算
+        :type reset_time: str
+        :param create_time: 创建时间
+        :type create_time: datetime
+        :param bound_app_num: 配额策略已绑定应用数量
+        :type bound_app_num: int
+        """
         
         super(CreateAppQuotaResponse, self).__init__()
 
@@ -98,7 +119,7 @@ class CreateAppQuotaResponse(SdkResponse):
         客户端配额编号
 
         :param app_quota_id: The app_quota_id of this CreateAppQuotaResponse.
-        :type: str
+        :type app_quota_id: str
         """
         self._app_quota_id = app_quota_id
 
@@ -120,7 +141,7 @@ class CreateAppQuotaResponse(SdkResponse):
         配额名称。支持汉字，英文，数字，下划线，且只能以英文和汉字开头，3-255字符
 
         :param name: The name of this CreateAppQuotaResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -142,7 +163,7 @@ class CreateAppQuotaResponse(SdkResponse):
         客户端配额的访问次数限制
 
         :param call_limits: The call_limits of this CreateAppQuotaResponse.
-        :type: int
+        :type call_limits: int
         """
         self._call_limits = call_limits
 
@@ -164,7 +185,7 @@ class CreateAppQuotaResponse(SdkResponse):
         限定时间单位：SECOND:秒、MINUTE:分、HOURE:时、DAY:天
 
         :param time_unit: The time_unit of this CreateAppQuotaResponse.
-        :type: str
+        :type time_unit: str
         """
         self._time_unit = time_unit
 
@@ -186,7 +207,7 @@ class CreateAppQuotaResponse(SdkResponse):
         配额的限定时间值
 
         :param time_interval: The time_interval of this CreateAppQuotaResponse.
-        :type: int
+        :type time_interval: int
         """
         self._time_interval = time_interval
 
@@ -208,7 +229,7 @@ class CreateAppQuotaResponse(SdkResponse):
         参数说明和描述
 
         :param remark: The remark of this CreateAppQuotaResponse.
-        :type: str
+        :type remark: str
         """
         self._remark = remark
 
@@ -230,7 +251,7 @@ class CreateAppQuotaResponse(SdkResponse):
         首次配额重置时间点，不配置默认为首次调用时间计算
 
         :param reset_time: The reset_time of this CreateAppQuotaResponse.
-        :type: str
+        :type reset_time: str
         """
         self._reset_time = reset_time
 
@@ -252,7 +273,7 @@ class CreateAppQuotaResponse(SdkResponse):
         创建时间
 
         :param create_time: The create_time of this CreateAppQuotaResponse.
-        :type: datetime
+        :type create_time: datetime
         """
         self._create_time = create_time
 
@@ -274,7 +295,7 @@ class CreateAppQuotaResponse(SdkResponse):
         配额策略已绑定应用数量
 
         :param bound_app_num: The bound_app_num of this CreateAppQuotaResponse.
-        :type: int
+        :type bound_app_num: int
         """
         self._bound_app_num = bound_app_num
 

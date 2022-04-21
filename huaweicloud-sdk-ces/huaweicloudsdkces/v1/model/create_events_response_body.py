@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateEventsResponseBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateEventsResponseBody:
     }
 
     def __init__(self, event_id=None, event_name=None):
-        """CreateEventsResponseBody - a model defined in huaweicloud sdk"""
+        """CreateEventsResponseBody
+
+        The model defined in huaweicloud sdk
+
+        :param event_id: 事件ID。
+        :type event_id: str
+        :param event_name: 事件名称。  必须以字母开头，只能包含0-9/a-z/A-Z/_，长度最短为1，最大为64。
+        :type event_name: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class CreateEventsResponseBody:
         事件ID。
 
         :param event_id: The event_id of this CreateEventsResponseBody.
-        :type: str
+        :type event_id: str
         """
         self._event_id = event_id
 
@@ -83,7 +90,7 @@ class CreateEventsResponseBody:
         事件名称。  必须以字母开头，只能包含0-9/a-z/A-Z/_，长度最短为1，最大为64。
 
         :param event_name: The event_name of this CreateEventsResponseBody.
-        :type: str
+        :type event_name: str
         """
         self._event_name = event_name
 

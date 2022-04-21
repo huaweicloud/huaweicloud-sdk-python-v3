@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowSinkTaskDetailResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ShowSinkTaskDetailResponse(SdkResponse):
     }
 
     def __init__(self, task_name=None, destination_type=None, create_time=None, status=None, topics=None, obs_destination_descriptor=None, topics_info=None):
-        """ShowSinkTaskDetailResponse - a model defined in huaweicloud sdk"""
+        """ShowSinkTaskDetailResponse
+
+        The model defined in huaweicloud sdk
+
+        :param task_name: 转储任务名称。
+        :type task_name: str
+        :param destination_type: 转储任务类型。
+        :type destination_type: str
+        :param create_time: 转储任务创建时间戳。
+        :type create_time: int
+        :param status: 转储任务状态。
+        :type status: str
+        :param topics: 返回任务转存的topics列表或者正则表达式。
+        :type topics: str
+        :param obs_destination_descriptor: 
+        :type obs_destination_descriptor: :class:`huaweicloudsdkkafka.v2.ShowSinkTaskDetailRespObsDestinationDescriptor`
+        :param topics_info: topic信息。
+        :type topics_info: list[:class:`huaweicloudsdkkafka.v2.ShowSinkTaskDetailRespTopicsInfo`]
+        """
         
         super(ShowSinkTaskDetailResponse, self).__init__()
 
@@ -88,7 +105,7 @@ class ShowSinkTaskDetailResponse(SdkResponse):
         转储任务名称。
 
         :param task_name: The task_name of this ShowSinkTaskDetailResponse.
-        :type: str
+        :type task_name: str
         """
         self._task_name = task_name
 
@@ -110,7 +127,7 @@ class ShowSinkTaskDetailResponse(SdkResponse):
         转储任务类型。
 
         :param destination_type: The destination_type of this ShowSinkTaskDetailResponse.
-        :type: str
+        :type destination_type: str
         """
         self._destination_type = destination_type
 
@@ -132,7 +149,7 @@ class ShowSinkTaskDetailResponse(SdkResponse):
         转储任务创建时间戳。
 
         :param create_time: The create_time of this ShowSinkTaskDetailResponse.
-        :type: int
+        :type create_time: int
         """
         self._create_time = create_time
 
@@ -154,7 +171,7 @@ class ShowSinkTaskDetailResponse(SdkResponse):
         转储任务状态。
 
         :param status: The status of this ShowSinkTaskDetailResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -176,7 +193,7 @@ class ShowSinkTaskDetailResponse(SdkResponse):
         返回任务转存的topics列表或者正则表达式。
 
         :param topics: The topics of this ShowSinkTaskDetailResponse.
-        :type: str
+        :type topics: str
         """
         self._topics = topics
 
@@ -186,7 +203,7 @@ class ShowSinkTaskDetailResponse(SdkResponse):
 
 
         :return: The obs_destination_descriptor of this ShowSinkTaskDetailResponse.
-        :rtype: ShowSinkTaskDetailRespObsDestinationDescriptor
+        :rtype: :class:`huaweicloudsdkkafka.v2.ShowSinkTaskDetailRespObsDestinationDescriptor`
         """
         return self._obs_destination_descriptor
 
@@ -196,7 +213,7 @@ class ShowSinkTaskDetailResponse(SdkResponse):
 
 
         :param obs_destination_descriptor: The obs_destination_descriptor of this ShowSinkTaskDetailResponse.
-        :type: ShowSinkTaskDetailRespObsDestinationDescriptor
+        :type obs_destination_descriptor: :class:`huaweicloudsdkkafka.v2.ShowSinkTaskDetailRespObsDestinationDescriptor`
         """
         self._obs_destination_descriptor = obs_destination_descriptor
 
@@ -207,7 +224,7 @@ class ShowSinkTaskDetailResponse(SdkResponse):
         topic信息。
 
         :return: The topics_info of this ShowSinkTaskDetailResponse.
-        :rtype: list[ShowSinkTaskDetailRespTopicsInfo]
+        :rtype: list[:class:`huaweicloudsdkkafka.v2.ShowSinkTaskDetailRespTopicsInfo`]
         """
         return self._topics_info
 
@@ -218,7 +235,7 @@ class ShowSinkTaskDetailResponse(SdkResponse):
         topic信息。
 
         :param topics_info: The topics_info of this ShowSinkTaskDetailResponse.
-        :type: list[ShowSinkTaskDetailRespTopicsInfo]
+        :type topics_info: list[:class:`huaweicloudsdkkafka.v2.ShowSinkTaskDetailRespTopicsInfo`]
         """
         self._topics_info = topics_info
 

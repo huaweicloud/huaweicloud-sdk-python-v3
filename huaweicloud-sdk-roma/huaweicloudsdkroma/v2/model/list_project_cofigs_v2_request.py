@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListProjectCofigsV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListProjectCofigsV2Request:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None):
-        """ListProjectCofigsV2Request - a model defined in huaweicloud sdk"""
+        """ListProjectCofigsV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param offset: 偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
+        :type offset: int
+        :param limit: 每页显示的条目数量
+        :type limit: int
+        """
         
         
 
@@ -67,7 +76,7 @@ class ListProjectCofigsV2Request:
         实例ID
 
         :param instance_id: The instance_id of this ListProjectCofigsV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -89,7 +98,7 @@ class ListProjectCofigsV2Request:
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
         :param offset: The offset of this ListProjectCofigsV2Request.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -111,7 +120,7 @@ class ListProjectCofigsV2Request:
         每页显示的条目数量
 
         :param limit: The limit of this ListProjectCofigsV2Request.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Cron:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class Cron:
     }
 
     def __init__(self, start_time=None, end_time=None, expression=None, depend_pre_period=None, depend_jobs=None):
-        """Cron - a model defined in huaweicloud sdk"""
+        """Cron
+
+        The model defined in huaweicloud sdk
+
+        :param start_time: 
+        :type start_time: str
+        :param end_time: 
+        :type end_time: str
+        :param expression: Cron表达式
+        :type expression: str
+        :param depend_pre_period: 是否依赖本作业上一个运行周期任务的执行结果
+        :type depend_pre_period: bool
+        :param depend_jobs: 依赖其它作业列表
+        :type depend_jobs: list[:class:`huaweicloudsdkdgc.v1.DependJob`]
+        """
         
         
 
@@ -76,7 +89,7 @@ class Cron:
 
 
         :param start_time: The start_time of this Cron.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -96,7 +109,7 @@ class Cron:
 
 
         :param end_time: The end_time of this Cron.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -118,7 +131,7 @@ class Cron:
         Cron表达式
 
         :param expression: The expression of this Cron.
-        :type: str
+        :type expression: str
         """
         self._expression = expression
 
@@ -140,7 +153,7 @@ class Cron:
         是否依赖本作业上一个运行周期任务的执行结果
 
         :param depend_pre_period: The depend_pre_period of this Cron.
-        :type: bool
+        :type depend_pre_period: bool
         """
         self._depend_pre_period = depend_pre_period
 
@@ -151,7 +164,7 @@ class Cron:
         依赖其它作业列表
 
         :return: The depend_jobs of this Cron.
-        :rtype: list[DependJob]
+        :rtype: list[:class:`huaweicloudsdkdgc.v1.DependJob`]
         """
         return self._depend_jobs
 
@@ -162,7 +175,7 @@ class Cron:
         依赖其它作业列表
 
         :param depend_jobs: The depend_jobs of this Cron.
-        :type: list[DependJob]
+        :type depend_jobs: list[:class:`huaweicloudsdkdgc.v1.DependJob`]
         """
         self._depend_jobs = depend_jobs
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRulesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListRulesResponse(SdkResponse):
     }
 
     def __init__(self, marker=None, count=None, rules=None):
-        """ListRulesResponse - a model defined in huaweicloud sdk"""
+        """ListRulesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param marker: 本次分页查询结果中最后一条记录的ID，可在下一次分页查询时使用。
+        :type marker: str
+        :param count: 满足查询条件的记录总数。
+        :type count: int
+        :param rules: 规则信息列表。
+        :type rules: list[:class:`huaweicloudsdkiotda.v5.RuleResponse`]
+        """
         
         super(ListRulesResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListRulesResponse(SdkResponse):
         本次分页查询结果中最后一条记录的ID，可在下一次分页查询时使用。
 
         :param marker: The marker of this ListRulesResponse.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -90,7 +99,7 @@ class ListRulesResponse(SdkResponse):
         满足查询条件的记录总数。
 
         :param count: The count of this ListRulesResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -101,7 +110,7 @@ class ListRulesResponse(SdkResponse):
         规则信息列表。
 
         :return: The rules of this ListRulesResponse.
-        :rtype: list[RuleResponse]
+        :rtype: list[:class:`huaweicloudsdkiotda.v5.RuleResponse`]
         """
         return self._rules
 
@@ -112,7 +121,7 @@ class ListRulesResponse(SdkResponse):
         规则信息列表。
 
         :param rules: The rules of this ListRulesResponse.
-        :type: list[RuleResponse]
+        :type rules: list[:class:`huaweicloudsdkiotda.v5.RuleResponse`]
         """
         self._rules = rules
 

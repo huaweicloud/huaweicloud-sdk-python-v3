@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CustomerBalancesV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class CustomerBalancesV2:
     }
 
     def __init__(self, customer_id=None, debt_amount=None, amount=None, currency=None, measure_id=None):
-        """CustomerBalancesV2 - a model defined in huaweicloud sdk"""
+        """CustomerBalancesV2
+
+        The model defined in huaweicloud sdk
+
+        :param customer_id: 客户账号ID。
+        :type customer_id: str
+        :param debt_amount: 客户欠款总额度。
+        :type debt_amount: float
+        :param amount: 客户可用总额度。
+        :type amount: float
+        :param currency: 币种。 CNY：人民币。
+        :type currency: str
+        :param measure_id: 度量单位： 1：元
+        :type measure_id: int
+        """
         
         
 
@@ -77,7 +90,7 @@ class CustomerBalancesV2:
         客户账号ID。
 
         :param customer_id: The customer_id of this CustomerBalancesV2.
-        :type: str
+        :type customer_id: str
         """
         self._customer_id = customer_id
 
@@ -99,7 +112,7 @@ class CustomerBalancesV2:
         客户欠款总额度。
 
         :param debt_amount: The debt_amount of this CustomerBalancesV2.
-        :type: float
+        :type debt_amount: float
         """
         self._debt_amount = debt_amount
 
@@ -121,7 +134,7 @@ class CustomerBalancesV2:
         客户可用总额度。
 
         :param amount: The amount of this CustomerBalancesV2.
-        :type: float
+        :type amount: float
         """
         self._amount = amount
 
@@ -143,7 +156,7 @@ class CustomerBalancesV2:
         币种。 CNY：人民币。
 
         :param currency: The currency of this CustomerBalancesV2.
-        :type: str
+        :type currency: str
         """
         self._currency = currency
 
@@ -165,7 +178,7 @@ class CustomerBalancesV2:
         度量单位： 1：元
 
         :param measure_id: The measure_id of this CustomerBalancesV2.
-        :type: int
+        :type measure_id: int
         """
         self._measure_id = measure_id
 

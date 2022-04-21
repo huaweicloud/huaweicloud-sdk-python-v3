@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListNamespacesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListNamespacesResponse(SdkResponse):
     }
 
     def __init__(self, namespaces=None):
-        """ListNamespacesResponse - a model defined in huaweicloud sdk"""
+        """ListNamespacesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param namespaces: 组织列表
+        :type namespaces: list[:class:`huaweicloudsdkswr.v2.ShowNamespace`]
+        """
         
         super(ListNamespacesResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListNamespacesResponse(SdkResponse):
         组织列表
 
         :return: The namespaces of this ListNamespacesResponse.
-        :rtype: list[ShowNamespace]
+        :rtype: list[:class:`huaweicloudsdkswr.v2.ShowNamespace`]
         """
         return self._namespaces
 
@@ -58,7 +63,7 @@ class ListNamespacesResponse(SdkResponse):
         组织列表
 
         :param namespaces: The namespaces of this ListNamespacesResponse.
-        :type: list[ShowNamespace]
+        :type namespaces: list[:class:`huaweicloudsdkswr.v2.ShowNamespace`]
         """
         self._namespaces = namespaces
 

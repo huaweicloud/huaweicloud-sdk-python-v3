@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListMembersRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class ListMembersRequest:
     }
 
     def __init__(self, pool_id=None, limit=None, marker=None, page_reverse=None, id=None, name=None, address=None, protocol_port=None, subnet_id=None, admin_state_up=None, weight=None):
-        """ListMembersRequest - a model defined in huaweicloud sdk"""
+        """ListMembersRequest
+
+        The model defined in huaweicloud sdk
+
+        :param pool_id: 后端云服务器组id
+        :type pool_id: str
+        :param limit: 分页查询中每页的监听器个数
+        :type limit: int
+        :param marker: 分页查询的起始的资源id，表示上一页最后一条查询记录的负载均衡器的id。不指定时表示查询第一页。
+        :type marker: str
+        :param page_reverse: 分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。
+        :type page_reverse: bool
+        :param id: 后端云服务器的ID。
+        :type id: str
+        :param name: 后端云服务器的名称。
+        :type name: str
+        :param address: 后端云服务器对应的IP地址。
+        :type address: str
+        :param protocol_port: 后端云服务器后端端口的协议号。
+        :type protocol_port: int
+        :param subnet_id: 后端云服务器所在的子网ID。
+        :type subnet_id: str
+        :param admin_state_up: 后端云服务器的管理状态。取值范围：true/false。
+        :type admin_state_up: bool
+        :param weight: 后端云服务器的权重。
+        :type weight: int
+        """
         
         
 
@@ -107,7 +132,7 @@ class ListMembersRequest:
         后端云服务器组id
 
         :param pool_id: The pool_id of this ListMembersRequest.
-        :type: str
+        :type pool_id: str
         """
         self._pool_id = pool_id
 
@@ -129,7 +154,7 @@ class ListMembersRequest:
         分页查询中每页的监听器个数
 
         :param limit: The limit of this ListMembersRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -151,7 +176,7 @@ class ListMembersRequest:
         分页查询的起始的资源id，表示上一页最后一条查询记录的负载均衡器的id。不指定时表示查询第一页。
 
         :param marker: The marker of this ListMembersRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -173,7 +198,7 @@ class ListMembersRequest:
         分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。
 
         :param page_reverse: The page_reverse of this ListMembersRequest.
-        :type: bool
+        :type page_reverse: bool
         """
         self._page_reverse = page_reverse
 
@@ -195,7 +220,7 @@ class ListMembersRequest:
         后端云服务器的ID。
 
         :param id: The id of this ListMembersRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -217,7 +242,7 @@ class ListMembersRequest:
         后端云服务器的名称。
 
         :param name: The name of this ListMembersRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -239,7 +264,7 @@ class ListMembersRequest:
         后端云服务器对应的IP地址。
 
         :param address: The address of this ListMembersRequest.
-        :type: str
+        :type address: str
         """
         self._address = address
 
@@ -261,7 +286,7 @@ class ListMembersRequest:
         后端云服务器后端端口的协议号。
 
         :param protocol_port: The protocol_port of this ListMembersRequest.
-        :type: int
+        :type protocol_port: int
         """
         self._protocol_port = protocol_port
 
@@ -283,7 +308,7 @@ class ListMembersRequest:
         后端云服务器所在的子网ID。
 
         :param subnet_id: The subnet_id of this ListMembersRequest.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -305,7 +330,7 @@ class ListMembersRequest:
         后端云服务器的管理状态。取值范围：true/false。
 
         :param admin_state_up: The admin_state_up of this ListMembersRequest.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 
@@ -327,7 +352,7 @@ class ListMembersRequest:
         后端云服务器的权重。
 
         :param weight: The weight of this ListMembersRequest.
-        :type: int
+        :type weight: int
         """
         self._weight = weight
 

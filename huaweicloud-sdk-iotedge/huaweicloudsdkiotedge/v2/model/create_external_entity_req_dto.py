@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateExternalEntityReqDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class CreateExternalEntityReqDTO:
     }
 
     def __init__(self, external_id=None, protocol=None, connection_type=None, mqtt_connection_info=None, space_id=None):
-        """CreateExternalEntityReqDTO - a model defined in huaweicloud sdk"""
+        """CreateExternalEntityReqDTO
+
+        The model defined in huaweicloud sdk
+
+        :param external_id: 外部实体Id，节点下唯一
+        :type external_id: str
+        :param protocol: 连接外部实体的协议类型
+        :type protocol: str
+        :param connection_type: 连接类型
+        :type connection_type: str
+        :param mqtt_connection_info: 
+        :type mqtt_connection_info: :class:`huaweicloudsdkiotedge.v2.MqttConnectionInfo`
+        :param space_id: 资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，建议携带该参数指定创建的外部实体归属到IoDA哪个资源空间下的边缘节点设备下，否则创建的外部实体将会归属到默认资源空间下对应的边缘节点下,对应于IoDA的app_id.
+        :type space_id: str
+        """
         
         
 
@@ -75,7 +88,7 @@ class CreateExternalEntityReqDTO:
         外部实体Id，节点下唯一
 
         :param external_id: The external_id of this CreateExternalEntityReqDTO.
-        :type: str
+        :type external_id: str
         """
         self._external_id = external_id
 
@@ -97,7 +110,7 @@ class CreateExternalEntityReqDTO:
         连接外部实体的协议类型
 
         :param protocol: The protocol of this CreateExternalEntityReqDTO.
-        :type: str
+        :type protocol: str
         """
         self._protocol = protocol
 
@@ -119,7 +132,7 @@ class CreateExternalEntityReqDTO:
         连接类型
 
         :param connection_type: The connection_type of this CreateExternalEntityReqDTO.
-        :type: str
+        :type connection_type: str
         """
         self._connection_type = connection_type
 
@@ -129,7 +142,7 @@ class CreateExternalEntityReqDTO:
 
 
         :return: The mqtt_connection_info of this CreateExternalEntityReqDTO.
-        :rtype: MqttConnectionInfo
+        :rtype: :class:`huaweicloudsdkiotedge.v2.MqttConnectionInfo`
         """
         return self._mqtt_connection_info
 
@@ -139,7 +152,7 @@ class CreateExternalEntityReqDTO:
 
 
         :param mqtt_connection_info: The mqtt_connection_info of this CreateExternalEntityReqDTO.
-        :type: MqttConnectionInfo
+        :type mqtt_connection_info: :class:`huaweicloudsdkiotedge.v2.MqttConnectionInfo`
         """
         self._mqtt_connection_info = mqtt_connection_info
 
@@ -161,7 +174,7 @@ class CreateExternalEntityReqDTO:
         资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，建议携带该参数指定创建的外部实体归属到IoDA哪个资源空间下的边缘节点设备下，否则创建的外部实体将会归属到默认资源空间下对应的边缘节点下,对应于IoDA的app_id.
 
         :param space_id: The space_id of this CreateExternalEntityReqDTO.
-        :type: str
+        :type space_id: str
         """
         self._space_id = space_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ParseCertificateSigningRequestRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ParseCertificateSigningRequestRequestBody:
     }
 
     def __init__(self, csr=None):
-        """ParseCertificateSigningRequestRequestBody - a model defined in huaweicloud sdk"""
+        """ParseCertificateSigningRequestRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param csr: 证书签名请求。请使用“\\r\\n”或“\\n”替代证书签名请求中的换行符，若通过console端请求此接口，则无需做符号转换。
+        :type csr: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ParseCertificateSigningRequestRequestBody:
         证书签名请求。请使用“\\r\\n”或“\\n”替代证书签名请求中的换行符，若通过console端请求此接口，则无需做符号转换。
 
         :param csr: The csr of this ParseCertificateSigningRequestRequestBody.
-        :type: str
+        :type csr: str
         """
         self._csr = csr
 

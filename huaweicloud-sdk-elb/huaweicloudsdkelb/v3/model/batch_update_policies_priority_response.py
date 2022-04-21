@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchUpdatePoliciesPriorityResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchUpdatePoliciesPriorityResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None):
-        """BatchUpdatePoliciesPriorityResponse - a model defined in huaweicloud sdk"""
+        """BatchUpdatePoliciesPriorityResponse
+
+        The model defined in huaweicloud sdk
+
+        :param request_id: 请求ID。
+        :type request_id: str
+        """
         
         super(BatchUpdatePoliciesPriorityResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class BatchUpdatePoliciesPriorityResponse(SdkResponse):
         请求ID。
 
         :param request_id: The request_id of this BatchUpdatePoliciesPriorityResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 

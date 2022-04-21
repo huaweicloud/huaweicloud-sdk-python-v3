@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSlowLogFileRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListSlowLogFileRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, offset=None, limit=None):
-        """ListSlowLogFileRequest - a model defined in huaweicloud sdk"""
+        """ListSlowLogFileRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言
+        :type x_language: str
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param offset: 索引位置，偏移量。  从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
+        :type offset: int
+        :param limit: 查询记录数。取值范围[1, 100]。
+        :type limit: int
+        """
         
         
 
@@ -72,7 +83,7 @@ class ListSlowLogFileRequest:
         语言
 
         :param x_language: The x_language of this ListSlowLogFileRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -94,7 +105,7 @@ class ListSlowLogFileRequest:
         实例ID。
 
         :param instance_id: The instance_id of this ListSlowLogFileRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -116,7 +127,7 @@ class ListSlowLogFileRequest:
         索引位置，偏移量。  从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
         :param offset: The offset of this ListSlowLogFileRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -138,7 +149,7 @@ class ListSlowLogFileRequest:
         查询记录数。取值范围[1, 100]。
 
         :param limit: The limit of this ListSlowLogFileRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Metadata:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class Metadata:
     }
 
     def __init__(self, crypt_key_id=None, dedicated_flavor=None, dedicated_storage_id=None, expand_type=None):
-        """Metadata - a model defined in huaweicloud sdk"""
+        """Metadata
+
+        The model defined in huaweicloud sdk
+
+        :param crypt_key_id: 要创加密文件系统，该字段传KMS服务专业版密钥的ID。
+        :type crypt_key_id: str
+        :param dedicated_flavor: 创专属文件系统，要创建的虚拟机的规格。
+        :type dedicated_flavor: str
+        :param dedicated_storage_id: 创专属文件系统，要指定一个专属分布式存储的ID。
+        :type dedicated_storage_id: str
+        :param expand_type: 扩展类型。当前有效值为bandwidth，即创建增强型的文件系统。
+        :type expand_type: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class Metadata:
         要创加密文件系统，该字段传KMS服务专业版密钥的ID。
 
         :param crypt_key_id: The crypt_key_id of this Metadata.
-        :type: str
+        :type crypt_key_id: str
         """
         self._crypt_key_id = crypt_key_id
 
@@ -95,7 +106,7 @@ class Metadata:
         创专属文件系统，要创建的虚拟机的规格。
 
         :param dedicated_flavor: The dedicated_flavor of this Metadata.
-        :type: str
+        :type dedicated_flavor: str
         """
         self._dedicated_flavor = dedicated_flavor
 
@@ -117,7 +128,7 @@ class Metadata:
         创专属文件系统，要指定一个专属分布式存储的ID。
 
         :param dedicated_storage_id: The dedicated_storage_id of this Metadata.
-        :type: str
+        :type dedicated_storage_id: str
         """
         self._dedicated_storage_id = dedicated_storage_id
 
@@ -139,7 +150,7 @@ class Metadata:
         扩展类型。当前有效值为bandwidth，即创建增强型的文件系统。
 
         :param expand_type: The expand_type of this Metadata.
-        :type: str
+        :type expand_type: str
         """
         self._expand_type = expand_type
 

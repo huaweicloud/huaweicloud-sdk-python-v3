@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteDatabaseUserRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteDatabaseUserRequestBody:
     }
 
     def __init__(self, user_name=None, db_name=None):
-        """DeleteDatabaseUserRequestBody - a model defined in huaweicloud sdk"""
+        """DeleteDatabaseUserRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param user_name: 数据库用户名称。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、中划线、下划线和点。
+        :type user_name: str
+        :param db_name: 用户所在的数据库。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、下划线。
+        :type db_name: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class DeleteDatabaseUserRequestBody:
         数据库用户名称。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、中划线、下划线和点。
 
         :param user_name: The user_name of this DeleteDatabaseUserRequestBody.
-        :type: str
+        :type user_name: str
         """
         self._user_name = user_name
 
@@ -83,7 +90,7 @@ class DeleteDatabaseUserRequestBody:
         用户所在的数据库。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、下划线。
 
         :param db_name: The db_name of this DeleteDatabaseUserRequestBody.
-        :type: str
+        :type db_name: str
         """
         self._db_name = db_name
 

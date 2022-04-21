@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DebugCaseRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class DebugCaseRequestBody:
     }
 
     def __init__(self, status=None, cluster_id=None, cluster_type=None, without_package=None):
-        """DebugCaseRequestBody - a model defined in huaweicloud sdk"""
+        """DebugCaseRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param status: status
+        :type status: int
+        :param cluster_id: cluster_id
+        :type cluster_id: int
+        :param cluster_type: cluster_type
+        :type cluster_type: str
+        :param without_package: without_package
+        :type without_package: int
+        """
         
         
 
@@ -69,7 +80,7 @@ class DebugCaseRequestBody:
         status
 
         :param status: The status of this DebugCaseRequestBody.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -91,7 +102,7 @@ class DebugCaseRequestBody:
         cluster_id
 
         :param cluster_id: The cluster_id of this DebugCaseRequestBody.
-        :type: int
+        :type cluster_id: int
         """
         self._cluster_id = cluster_id
 
@@ -113,7 +124,7 @@ class DebugCaseRequestBody:
         cluster_type
 
         :param cluster_type: The cluster_type of this DebugCaseRequestBody.
-        :type: str
+        :type cluster_type: str
         """
         self._cluster_type = cluster_type
 
@@ -135,7 +146,7 @@ class DebugCaseRequestBody:
         without_package
 
         :param without_package: The without_package of this DebugCaseRequestBody.
-        :type: int
+        :type without_package: int
         """
         self._without_package = without_package
 

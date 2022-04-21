@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TemplateGroup:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class TemplateGroup:
     }
 
     def __init__(self, group_id=None, name=None, status=None, type=None, auto_encrypt=None, quality_info_list=None, watermark_template_ids=None, description=None, common=None):
-        """TemplateGroup - a model defined in huaweicloud sdk"""
+        """TemplateGroup
+
+        The model defined in huaweicloud sdk
+
+        :param group_id: 模板组id&lt;br/&gt; 
+        :type group_id: str
+        :param name: 模板组名称&lt;br/&gt; 
+        :type name: str
+        :param status: 是否默认&lt;br/&gt; 
+        :type status: str
+        :param type: 模板组类型&lt;br/&gt; 
+        :type type: str
+        :param auto_encrypt: 是否自动加密。  取值如下： - 0：表示不加密。 - 1：表示需要加密。  默认值：0。  加密与转码必须要一起进行，当需要加密时，转码参数不能为空，且转码输出格式必须要为HLS。
+        :type auto_encrypt: int
+        :param quality_info_list: 画质配置信息列表&lt;br/&gt; 
+        :type quality_info_list: list[:class:`huaweicloudsdkvod.v1.QualityInfo`]
+        :param watermark_template_ids: 绑定的水印模板组ID数组&lt;br/&gt; 
+        :type watermark_template_ids: list[str]
+        :param description: 模板介绍&lt;br/&gt; 
+        :type description: str
+        :param common: 
+        :type common: :class:`huaweicloudsdkvod.v1.Common`
+        """
         
         
 
@@ -98,7 +119,7 @@ class TemplateGroup:
         模板组id<br/> 
 
         :param group_id: The group_id of this TemplateGroup.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -120,7 +141,7 @@ class TemplateGroup:
         模板组名称<br/> 
 
         :param name: The name of this TemplateGroup.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -142,7 +163,7 @@ class TemplateGroup:
         是否默认<br/> 
 
         :param status: The status of this TemplateGroup.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -164,7 +185,7 @@ class TemplateGroup:
         模板组类型<br/> 
 
         :param type: The type of this TemplateGroup.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -186,7 +207,7 @@ class TemplateGroup:
         是否自动加密。  取值如下： - 0：表示不加密。 - 1：表示需要加密。  默认值：0。  加密与转码必须要一起进行，当需要加密时，转码参数不能为空，且转码输出格式必须要为HLS。
 
         :param auto_encrypt: The auto_encrypt of this TemplateGroup.
-        :type: int
+        :type auto_encrypt: int
         """
         self._auto_encrypt = auto_encrypt
 
@@ -197,7 +218,7 @@ class TemplateGroup:
         画质配置信息列表<br/> 
 
         :return: The quality_info_list of this TemplateGroup.
-        :rtype: list[QualityInfo]
+        :rtype: list[:class:`huaweicloudsdkvod.v1.QualityInfo`]
         """
         return self._quality_info_list
 
@@ -208,7 +229,7 @@ class TemplateGroup:
         画质配置信息列表<br/> 
 
         :param quality_info_list: The quality_info_list of this TemplateGroup.
-        :type: list[QualityInfo]
+        :type quality_info_list: list[:class:`huaweicloudsdkvod.v1.QualityInfo`]
         """
         self._quality_info_list = quality_info_list
 
@@ -230,7 +251,7 @@ class TemplateGroup:
         绑定的水印模板组ID数组<br/> 
 
         :param watermark_template_ids: The watermark_template_ids of this TemplateGroup.
-        :type: list[str]
+        :type watermark_template_ids: list[str]
         """
         self._watermark_template_ids = watermark_template_ids
 
@@ -252,7 +273,7 @@ class TemplateGroup:
         模板介绍<br/> 
 
         :param description: The description of this TemplateGroup.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -262,7 +283,7 @@ class TemplateGroup:
 
 
         :return: The common of this TemplateGroup.
-        :rtype: Common
+        :rtype: :class:`huaweicloudsdkvod.v1.Common`
         """
         return self._common
 
@@ -272,7 +293,7 @@ class TemplateGroup:
 
 
         :param common: The common of this TemplateGroup.
-        :type: Common
+        :type common: :class:`huaweicloudsdkvod.v1.Common`
         """
         self._common = common
 

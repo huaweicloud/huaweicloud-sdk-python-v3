@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowServerGroupResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ShowServerGroupResult:
     }
 
     def __init__(self, id=None, members=None, metadata=None, name=None, policies=None):
-        """ShowServerGroupResult - a model defined in huaweicloud sdk"""
+        """ShowServerGroupResult
+
+        The model defined in huaweicloud sdk
+
+        :param id: 云服务器组UUID。
+        :type id: str
+        :param members: 云服务器组中包含的云服务器列表。
+        :type members: list[str]
+        :param metadata: 云服务器组元数据。
+        :type metadata: dict(str, str)
+        :param name: 云服务器组名称。
+        :type name: str
+        :param policies: 与服务器组关联的策略名称列表。当前有效的策略名称为:  anti-affinity -此组中的服务器必须安排到不同的主机；  affinity -此组中的服务器必须安排在同一主机上;  soft-anti-affinity –如果可能, 应将此组中的服务器安排到不同的主机, 但如果无法实现, 则仍应安排它们, 而不是导致生成失败;  soft-affinity -如果可能, 应将此组中的服务器安排在同一主机上, 但如果无法实现, 则仍应安排它们, 而不是导致生成失败。
+        :type policies: list[str]
+        """
         
         
 
@@ -73,7 +86,7 @@ class ShowServerGroupResult:
         云服务器组UUID。
 
         :param id: The id of this ShowServerGroupResult.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -95,7 +108,7 @@ class ShowServerGroupResult:
         云服务器组中包含的云服务器列表。
 
         :param members: The members of this ShowServerGroupResult.
-        :type: list[str]
+        :type members: list[str]
         """
         self._members = members
 
@@ -117,7 +130,7 @@ class ShowServerGroupResult:
         云服务器组元数据。
 
         :param metadata: The metadata of this ShowServerGroupResult.
-        :type: dict(str, str)
+        :type metadata: dict(str, str)
         """
         self._metadata = metadata
 
@@ -139,7 +152,7 @@ class ShowServerGroupResult:
         云服务器组名称。
 
         :param name: The name of this ShowServerGroupResult.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -161,7 +174,7 @@ class ShowServerGroupResult:
         与服务器组关联的策略名称列表。当前有效的策略名称为:  anti-affinity -此组中的服务器必须安排到不同的主机；  affinity -此组中的服务器必须安排在同一主机上;  soft-anti-affinity –如果可能, 应将此组中的服务器安排到不同的主机, 但如果无法实现, 则仍应安排它们, 而不是导致生成失败;  soft-affinity -如果可能, 应将此组中的服务器安排在同一主机上, 但如果无法实现, 则仍应安排它们, 而不是导致生成失败。
 
         :param policies: The policies of this ShowServerGroupResult.
-        :type: list[str]
+        :type policies: list[str]
         """
         self._policies = policies
 

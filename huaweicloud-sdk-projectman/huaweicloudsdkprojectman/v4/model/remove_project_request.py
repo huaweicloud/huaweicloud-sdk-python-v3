@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RemoveProjectRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RemoveProjectRequest:
     }
 
     def __init__(self, project_id=None):
-        """RemoveProjectRequest - a model defined in huaweicloud sdk"""
+        """RemoveProjectRequest
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: devcloud的项目id
+        :type project_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class RemoveProjectRequest:
         devcloud的项目id
 
         :param project_id: The project_id of this RemoveProjectRequest.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 

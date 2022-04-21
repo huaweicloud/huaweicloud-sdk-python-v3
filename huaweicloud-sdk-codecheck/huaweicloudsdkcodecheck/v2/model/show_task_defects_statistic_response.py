@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowTaskDefectsStatisticResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowTaskDefectsStatisticResponse(SdkResponse):
     }
 
     def __init__(self, severity=None, status=None):
-        """ShowTaskDefectsStatisticResponse - a model defined in huaweicloud sdk"""
+        """ShowTaskDefectsStatisticResponse
+
+        The model defined in huaweicloud sdk
+
+        :param severity: 
+        :type severity: :class:`huaweicloudsdkcodecheck.v2.StatisticSeverityV2`
+        :param status: 
+        :type status: :class:`huaweicloudsdkcodecheck.v2.StatisticStatusV2`
+        """
         
         super(ShowTaskDefectsStatisticResponse, self).__init__()
 
@@ -51,7 +58,7 @@ class ShowTaskDefectsStatisticResponse(SdkResponse):
 
 
         :return: The severity of this ShowTaskDefectsStatisticResponse.
-        :rtype: StatisticSeverityV2
+        :rtype: :class:`huaweicloudsdkcodecheck.v2.StatisticSeverityV2`
         """
         return self._severity
 
@@ -61,7 +68,7 @@ class ShowTaskDefectsStatisticResponse(SdkResponse):
 
 
         :param severity: The severity of this ShowTaskDefectsStatisticResponse.
-        :type: StatisticSeverityV2
+        :type severity: :class:`huaweicloudsdkcodecheck.v2.StatisticSeverityV2`
         """
         self._severity = severity
 
@@ -71,7 +78,7 @@ class ShowTaskDefectsStatisticResponse(SdkResponse):
 
 
         :return: The status of this ShowTaskDefectsStatisticResponse.
-        :rtype: StatisticStatusV2
+        :rtype: :class:`huaweicloudsdkcodecheck.v2.StatisticStatusV2`
         """
         return self._status
 
@@ -81,7 +88,7 @@ class ShowTaskDefectsStatisticResponse(SdkResponse):
 
 
         :param status: The status of this ShowTaskDefectsStatisticResponse.
-        :type: StatisticStatusV2
+        :type status: :class:`huaweicloudsdkcodecheck.v2.StatisticStatusV2`
         """
         self._status = status
 

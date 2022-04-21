@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddShardingNodeVolumeOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class AddShardingNodeVolumeOption:
     }
 
     def __init__(self, size=None):
-        """AddShardingNodeVolumeOption - a model defined in huaweicloud sdk"""
+        """AddShardingNodeVolumeOption
+
+        The model defined in huaweicloud sdk
+
+        :param size: 指定新增的所有shard组的磁盘容量。取值范围：10GB~2000GB。
+        :type size: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class AddShardingNodeVolumeOption:
         指定新增的所有shard组的磁盘容量。取值范围：10GB~2000GB。
 
         :param size: The size of this AddShardingNodeVolumeOption.
-        :type: str
+        :type size: str
         """
         self._size = size
 

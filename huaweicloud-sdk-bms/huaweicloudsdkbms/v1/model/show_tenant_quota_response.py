@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowTenantQuotaResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowTenantQuotaResponse(SdkResponse):
     }
 
     def __init__(self, absolute=None):
-        """ShowTenantQuotaResponse - a model defined in huaweicloud sdk"""
+        """ShowTenantQuotaResponse
+
+        The model defined in huaweicloud sdk
+
+        :param absolute: 
+        :type absolute: :class:`huaweicloudsdkbms.v1.Absolute`
+        """
         
         super(ShowTenantQuotaResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class ShowTenantQuotaResponse(SdkResponse):
 
 
         :return: The absolute of this ShowTenantQuotaResponse.
-        :rtype: Absolute
+        :rtype: :class:`huaweicloudsdkbms.v1.Absolute`
         """
         return self._absolute
 
@@ -56,7 +61,7 @@ class ShowTenantQuotaResponse(SdkResponse):
 
 
         :param absolute: The absolute of this ShowTenantQuotaResponse.
-        :type: Absolute
+        :type absolute: :class:`huaweicloudsdkbms.v1.Absolute`
         """
         self._absolute = absolute
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdatePrePaidBandwidthRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdatePrePaidBandwidthRequestBody:
     }
 
     def __init__(self, bandwidth=None, extend_param=None):
-        """UpdatePrePaidBandwidthRequestBody - a model defined in huaweicloud sdk"""
+        """UpdatePrePaidBandwidthRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param bandwidth: 
+        :type bandwidth: :class:`huaweicloudsdkeip.v2.UpdatePrePaidBandwidthOption`
+        :param extend_param: 
+        :type extend_param: :class:`huaweicloudsdkeip.v2.UpdatePrePaidBandwidthExtendParamOption`
+        """
         
         
 
@@ -50,7 +57,7 @@ class UpdatePrePaidBandwidthRequestBody:
 
 
         :return: The bandwidth of this UpdatePrePaidBandwidthRequestBody.
-        :rtype: UpdatePrePaidBandwidthOption
+        :rtype: :class:`huaweicloudsdkeip.v2.UpdatePrePaidBandwidthOption`
         """
         return self._bandwidth
 
@@ -60,7 +67,7 @@ class UpdatePrePaidBandwidthRequestBody:
 
 
         :param bandwidth: The bandwidth of this UpdatePrePaidBandwidthRequestBody.
-        :type: UpdatePrePaidBandwidthOption
+        :type bandwidth: :class:`huaweicloudsdkeip.v2.UpdatePrePaidBandwidthOption`
         """
         self._bandwidth = bandwidth
 
@@ -70,7 +77,7 @@ class UpdatePrePaidBandwidthRequestBody:
 
 
         :return: The extend_param of this UpdatePrePaidBandwidthRequestBody.
-        :rtype: UpdatePrePaidBandwidthExtendParamOption
+        :rtype: :class:`huaweicloudsdkeip.v2.UpdatePrePaidBandwidthExtendParamOption`
         """
         return self._extend_param
 
@@ -80,7 +87,7 @@ class UpdatePrePaidBandwidthRequestBody:
 
 
         :param extend_param: The extend_param of this UpdatePrePaidBandwidthRequestBody.
-        :type: UpdatePrePaidBandwidthExtendParamOption
+        :type extend_param: :class:`huaweicloudsdkeip.v2.UpdatePrePaidBandwidthExtendParamOption`
         """
         self._extend_param = extend_param
 

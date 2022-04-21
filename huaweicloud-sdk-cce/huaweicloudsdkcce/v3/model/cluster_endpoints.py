@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ClusterEndpoints:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ClusterEndpoints:
     }
 
     def __init__(self, url=None, type=None):
-        """ClusterEndpoints - a model defined in huaweicloud sdk"""
+        """ClusterEndpoints
+
+        The model defined in huaweicloud sdk
+
+        :param url: 集群中 kube-apiserver 的访问地址
+        :type url: str
+        :param type: 集群访问地址的类型 - Internal：用户子网内访问的地址 - External：公网访问的地址
+        :type type: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class ClusterEndpoints:
         集群中 kube-apiserver 的访问地址
 
         :param url: The url of this ClusterEndpoints.
-        :type: str
+        :type url: str
         """
         self._url = url
 
@@ -85,7 +92,7 @@ class ClusterEndpoints:
         集群访问地址的类型 - Internal：用户子网内访问的地址 - External：公网访问的地址
 
         :param type: The type of this ClusterEndpoints.
-        :type: str
+        :type type: str
         """
         self._type = type
 

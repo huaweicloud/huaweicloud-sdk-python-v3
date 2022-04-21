@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateRecordSetsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateRecordSetsRequest:
     }
 
     def __init__(self, zone_id=None, recordset_id=None, body=None):
-        """UpdateRecordSetsRequest - a model defined in huaweicloud sdk"""
+        """UpdateRecordSetsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param zone_id: 
+        :type zone_id: str
+        :param recordset_id: 
+        :type recordset_id: str
+        :param body: Body of the UpdateRecordSetsRequest
+        :type body: :class:`huaweicloudsdkdns.v2.UpdateRecordSetsReq`
+        """
         
         
 
@@ -64,7 +73,7 @@ class UpdateRecordSetsRequest:
 
 
         :param zone_id: The zone_id of this UpdateRecordSetsRequest.
-        :type: str
+        :type zone_id: str
         """
         self._zone_id = zone_id
 
@@ -84,7 +93,7 @@ class UpdateRecordSetsRequest:
 
 
         :param recordset_id: The recordset_id of this UpdateRecordSetsRequest.
-        :type: str
+        :type recordset_id: str
         """
         self._recordset_id = recordset_id
 
@@ -94,7 +103,7 @@ class UpdateRecordSetsRequest:
 
 
         :return: The body of this UpdateRecordSetsRequest.
-        :rtype: UpdateRecordSetsReq
+        :rtype: :class:`huaweicloudsdkdns.v2.UpdateRecordSetsReq`
         """
         return self._body
 
@@ -104,7 +113,7 @@ class UpdateRecordSetsRequest:
 
 
         :param body: The body of this UpdateRecordSetsRequest.
-        :type: UpdateRecordSetsReq
+        :type body: :class:`huaweicloudsdkdns.v2.UpdateRecordSetsReq`
         """
         self._body = body
 

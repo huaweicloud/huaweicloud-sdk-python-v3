@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SingleBackgroundTask:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class SingleBackgroundTask:
     }
 
     def __init__(self, id=None, name=None, details=None, user_name=None, user_id=None, params=None, status=None, created_at=None, updated_at=None):
-        """SingleBackgroundTask - a model defined in huaweicloud sdk"""
+        """SingleBackgroundTask
+
+        The model defined in huaweicloud sdk
+
+        :param id: 后台任务ID
+        :type id: str
+        :param name: 后台任务名，目前支持以下取值：  ChangeInstanceSpec：变更规格  BindEip：开启公网访问  UnBindEip：关闭公网访问  AddReplica：添加副本  DelReplica：删除副本  AddWhitelist：设置IP白名单  UpdatePort：修改端口  RemoveIpFromDns：域名摘除IP 
+        :type name: str
+        :param details: 
+        :type details: :class:`huaweicloudsdkdcs.v2.DetailsBody`
+        :param user_name: 用户名
+        :type user_name: str
+        :param user_id: 用户ID
+        :type user_id: str
+        :param params: 任务相关参数
+        :type params: str
+        :param status: 任务状态
+        :type status: str
+        :param created_at: 任务启动时间，格式为2020-06-17T07:38:42.503Z
+        :type created_at: str
+        :param updated_at: 任务结束时间，格式为2020-06-17T07:38:42.503Z
+        :type updated_at: str
+        """
         
         
 
@@ -98,7 +119,7 @@ class SingleBackgroundTask:
         后台任务ID
 
         :param id: The id of this SingleBackgroundTask.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -120,7 +141,7 @@ class SingleBackgroundTask:
         后台任务名，目前支持以下取值：  ChangeInstanceSpec：变更规格  BindEip：开启公网访问  UnBindEip：关闭公网访问  AddReplica：添加副本  DelReplica：删除副本  AddWhitelist：设置IP白名单  UpdatePort：修改端口  RemoveIpFromDns：域名摘除IP 
 
         :param name: The name of this SingleBackgroundTask.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -130,7 +151,7 @@ class SingleBackgroundTask:
 
 
         :return: The details of this SingleBackgroundTask.
-        :rtype: DetailsBody
+        :rtype: :class:`huaweicloudsdkdcs.v2.DetailsBody`
         """
         return self._details
 
@@ -140,7 +161,7 @@ class SingleBackgroundTask:
 
 
         :param details: The details of this SingleBackgroundTask.
-        :type: DetailsBody
+        :type details: :class:`huaweicloudsdkdcs.v2.DetailsBody`
         """
         self._details = details
 
@@ -162,7 +183,7 @@ class SingleBackgroundTask:
         用户名
 
         :param user_name: The user_name of this SingleBackgroundTask.
-        :type: str
+        :type user_name: str
         """
         self._user_name = user_name
 
@@ -184,7 +205,7 @@ class SingleBackgroundTask:
         用户ID
 
         :param user_id: The user_id of this SingleBackgroundTask.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -206,7 +227,7 @@ class SingleBackgroundTask:
         任务相关参数
 
         :param params: The params of this SingleBackgroundTask.
-        :type: str
+        :type params: str
         """
         self._params = params
 
@@ -228,7 +249,7 @@ class SingleBackgroundTask:
         任务状态
 
         :param status: The status of this SingleBackgroundTask.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -250,7 +271,7 @@ class SingleBackgroundTask:
         任务启动时间，格式为2020-06-17T07:38:42.503Z
 
         :param created_at: The created_at of this SingleBackgroundTask.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -272,7 +293,7 @@ class SingleBackgroundTask:
         任务结束时间，格式为2020-06-17T07:38:42.503Z
 
         :param updated_at: The updated_at of this SingleBackgroundTask.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateDatakeyWithoutPlaintextRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateDatakeyWithoutPlaintextRequest:
     }
 
     def __init__(self, body=None):
-        """CreateDatakeyWithoutPlaintextRequest - a model defined in huaweicloud sdk"""
+        """CreateDatakeyWithoutPlaintextRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateDatakeyWithoutPlaintextRequest
+        :type body: :class:`huaweicloudsdkkms.v2.CreateDatakeyRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateDatakeyWithoutPlaintextRequest:
 
 
         :return: The body of this CreateDatakeyWithoutPlaintextRequest.
-        :rtype: CreateDatakeyRequestBody
+        :rtype: :class:`huaweicloudsdkkms.v2.CreateDatakeyRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateDatakeyWithoutPlaintextRequest:
 
 
         :param body: The body of this CreateDatakeyWithoutPlaintextRequest.
-        :type: CreateDatakeyRequestBody
+        :type body: :class:`huaweicloudsdkkms.v2.CreateDatakeyRequestBody`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListEngineSupportFeaturesEntity:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListEngineSupportFeaturesEntity:
     }
 
     def __init__(self, name=None, properties=None):
-        """ListEngineSupportFeaturesEntity - a model defined in huaweicloud sdk"""
+        """ListEngineSupportFeaturesEntity
+
+        The model defined in huaweicloud sdk
+
+        :param name: 功能名称。
+        :type name: str
+        :param properties: 
+        :type properties: :class:`huaweicloudsdkkafka.v2.ListEngineSupportFeaturesPropertiesEntity`
+        """
         
         
 
@@ -63,7 +70,7 @@ class ListEngineSupportFeaturesEntity:
         功能名称。
 
         :param name: The name of this ListEngineSupportFeaturesEntity.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -73,7 +80,7 @@ class ListEngineSupportFeaturesEntity:
 
 
         :return: The properties of this ListEngineSupportFeaturesEntity.
-        :rtype: ListEngineSupportFeaturesPropertiesEntity
+        :rtype: :class:`huaweicloudsdkkafka.v2.ListEngineSupportFeaturesPropertiesEntity`
         """
         return self._properties
 
@@ -83,7 +90,7 @@ class ListEngineSupportFeaturesEntity:
 
 
         :param properties: The properties of this ListEngineSupportFeaturesEntity.
-        :type: ListEngineSupportFeaturesPropertiesEntity
+        :type properties: :class:`huaweicloudsdkkafka.v2.ListEngineSupportFeaturesPropertiesEntity`
         """
         self._properties = properties
 

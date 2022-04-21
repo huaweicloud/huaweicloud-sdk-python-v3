@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSubCustomerCouponsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class ListSubCustomerCouponsRequest:
     }
 
     def __init__(self, coupon_id=None, order_id=None, promotion_plan_id=None, coupon_type=None, status=None, active_start_time=None, active_end_time=None, offset=None, limit=None, source_id=None):
-        """ListSubCustomerCouponsRequest - a model defined in huaweicloud sdk"""
+        """ListSubCustomerCouponsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param coupon_id: 优惠券ID。
+        :type coupon_id: str
+        :param order_id: 订单ID。
+        :type order_id: str
+        :param promotion_plan_id: 促销计划ID。
+        :type promotion_plan_id: str
+        :param coupon_type: 优惠券类型：1：代金券2：折扣券（预留）3：产品券（预留）4：现金券（预留）
+        :type coupon_type: int
+        :param status: 客户优惠券实例状态：1：未激活2：待使用3：已使用4：已过期
+        :type status: int
+        :param active_start_time: 激活时间。UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。
+        :type active_start_time: str
+        :param active_end_time: 结束时间。UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。
+        :type active_end_time: str
+        :param offset: 偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset &#x3D; 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
+        :type offset: int
+        :param limit: 查询的优惠券数量，默认值为10。
+        :type limit: int
+        :param source_id: 发券来源，如果是合作伙伴发送的券，此处为伙伴ID。如果需要查询某个伙伴发放的券，可以在此处输入该伙伴ID。
+        :type source_id: str
+        """
         
         
 
@@ -103,7 +126,7 @@ class ListSubCustomerCouponsRequest:
         优惠券ID。
 
         :param coupon_id: The coupon_id of this ListSubCustomerCouponsRequest.
-        :type: str
+        :type coupon_id: str
         """
         self._coupon_id = coupon_id
 
@@ -125,7 +148,7 @@ class ListSubCustomerCouponsRequest:
         订单ID。
 
         :param order_id: The order_id of this ListSubCustomerCouponsRequest.
-        :type: str
+        :type order_id: str
         """
         self._order_id = order_id
 
@@ -147,7 +170,7 @@ class ListSubCustomerCouponsRequest:
         促销计划ID。
 
         :param promotion_plan_id: The promotion_plan_id of this ListSubCustomerCouponsRequest.
-        :type: str
+        :type promotion_plan_id: str
         """
         self._promotion_plan_id = promotion_plan_id
 
@@ -169,7 +192,7 @@ class ListSubCustomerCouponsRequest:
         优惠券类型：1：代金券2：折扣券（预留）3：产品券（预留）4：现金券（预留）
 
         :param coupon_type: The coupon_type of this ListSubCustomerCouponsRequest.
-        :type: int
+        :type coupon_type: int
         """
         self._coupon_type = coupon_type
 
@@ -191,7 +214,7 @@ class ListSubCustomerCouponsRequest:
         客户优惠券实例状态：1：未激活2：待使用3：已使用4：已过期
 
         :param status: The status of this ListSubCustomerCouponsRequest.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -213,7 +236,7 @@ class ListSubCustomerCouponsRequest:
         激活时间。UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。
 
         :param active_start_time: The active_start_time of this ListSubCustomerCouponsRequest.
-        :type: str
+        :type active_start_time: str
         """
         self._active_start_time = active_start_time
 
@@ -235,7 +258,7 @@ class ListSubCustomerCouponsRequest:
         结束时间。UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。
 
         :param active_end_time: The active_end_time of this ListSubCustomerCouponsRequest.
-        :type: str
+        :type active_end_time: str
         """
         self._active_end_time = active_end_time
 
@@ -257,7 +280,7 @@ class ListSubCustomerCouponsRequest:
         偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
         :param offset: The offset of this ListSubCustomerCouponsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -279,7 +302,7 @@ class ListSubCustomerCouponsRequest:
         查询的优惠券数量，默认值为10。
 
         :param limit: The limit of this ListSubCustomerCouponsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -301,7 +324,7 @@ class ListSubCustomerCouponsRequest:
         发券来源，如果是合作伙伴发送的券，此处为伙伴ID。如果需要查询某个伙伴发放的券，可以在此处输入该伙伴ID。
 
         :param source_id: The source_id of this ListSubCustomerCouponsRequest.
-        :type: str
+        :type source_id: str
         """
         self._source_id = source_id
 

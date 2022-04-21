@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateVolumeRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateVolumeRequestBody:
     }
 
     def __init__(self, volume=None):
-        """UpdateVolumeRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateVolumeRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param volume: 
+        :type volume: :class:`huaweicloudsdkevs.v2.UpdateVolumeOption`
+        """
         
         
 
@@ -45,7 +50,7 @@ class UpdateVolumeRequestBody:
 
 
         :return: The volume of this UpdateVolumeRequestBody.
-        :rtype: UpdateVolumeOption
+        :rtype: :class:`huaweicloudsdkevs.v2.UpdateVolumeOption`
         """
         return self._volume
 
@@ -55,7 +60,7 @@ class UpdateVolumeRequestBody:
 
 
         :param volume: The volume of this UpdateVolumeRequestBody.
-        :type: UpdateVolumeOption
+        :type volume: :class:`huaweicloudsdkevs.v2.UpdateVolumeOption`
         """
         self._volume = volume
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowJobDetailResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ShowJobDetailResponse(SdkResponse):
     }
 
     def __init__(self, accept_job_num=None, end_time=None, is_answer_visibility=None, is_score_visibility=None, average_score=None, score_job_num=None, submit_job_num=None):
-        """ShowJobDetailResponse - a model defined in huaweicloud sdk"""
+        """ShowJobDetailResponse
+
+        The model defined in huaweicloud sdk
+
+        :param accept_job_num: 作业下发人数
+        :type accept_job_num: int
+        :param end_time: 作业截止时间, 日期格式：yyyy-MM-dd HH:mm:ss
+        :type end_time: str
+        :param is_answer_visibility: 作业答案是否公布(unpublish:表示未公布答案, publish:表示已公布答案)
+        :type is_answer_visibility: str
+        :param is_score_visibility: 作业成绩是否公布(unpublish:表示未公布成绩, publish:表示已公布成绩)
+        :type is_score_visibility: str
+        :param average_score: 作业均分
+        :type average_score: str
+        :param score_job_num: 老师手动评分人数
+        :type score_job_num: int
+        :param submit_job_num: 作业提交人数
+        :type submit_job_num: int
+        """
         
         super(ShowJobDetailResponse, self).__init__()
 
@@ -88,7 +105,7 @@ class ShowJobDetailResponse(SdkResponse):
         作业下发人数
 
         :param accept_job_num: The accept_job_num of this ShowJobDetailResponse.
-        :type: int
+        :type accept_job_num: int
         """
         self._accept_job_num = accept_job_num
 
@@ -110,7 +127,7 @@ class ShowJobDetailResponse(SdkResponse):
         作业截止时间, 日期格式：yyyy-MM-dd HH:mm:ss
 
         :param end_time: The end_time of this ShowJobDetailResponse.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -132,7 +149,7 @@ class ShowJobDetailResponse(SdkResponse):
         作业答案是否公布(unpublish:表示未公布答案, publish:表示已公布答案)
 
         :param is_answer_visibility: The is_answer_visibility of this ShowJobDetailResponse.
-        :type: str
+        :type is_answer_visibility: str
         """
         self._is_answer_visibility = is_answer_visibility
 
@@ -154,7 +171,7 @@ class ShowJobDetailResponse(SdkResponse):
         作业成绩是否公布(unpublish:表示未公布成绩, publish:表示已公布成绩)
 
         :param is_score_visibility: The is_score_visibility of this ShowJobDetailResponse.
-        :type: str
+        :type is_score_visibility: str
         """
         self._is_score_visibility = is_score_visibility
 
@@ -176,7 +193,7 @@ class ShowJobDetailResponse(SdkResponse):
         作业均分
 
         :param average_score: The average_score of this ShowJobDetailResponse.
-        :type: str
+        :type average_score: str
         """
         self._average_score = average_score
 
@@ -198,7 +215,7 @@ class ShowJobDetailResponse(SdkResponse):
         老师手动评分人数
 
         :param score_job_num: The score_job_num of this ShowJobDetailResponse.
-        :type: int
+        :type score_job_num: int
         """
         self._score_job_num = score_job_num
 
@@ -220,7 +237,7 @@ class ShowJobDetailResponse(SdkResponse):
         作业提交人数
 
         :param submit_job_num: The submit_job_num of this ShowJobDetailResponse.
-        :type: int
+        :type submit_job_num: int
         """
         self._submit_job_num = submit_job_num
 

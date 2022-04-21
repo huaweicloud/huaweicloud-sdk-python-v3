@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PolicyCreate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class PolicyCreate:
     }
 
     def __init__(self, enabled=None, name=None, operation_definition=None, operation_type=None, trigger=None):
-        """PolicyCreate - a model defined in huaweicloud sdk"""
+        """PolicyCreate
+
+        The model defined in huaweicloud sdk
+
+        :param enabled: 是否启用策略
+        :type enabled: bool
+        :param name: 策略名称，长度限制：1- 64，只能由中文、字母、数字、“_”、“-”组成。
+        :type name: str
+        :param operation_definition: 
+        :type operation_definition: :class:`huaweicloudsdkcbr.v1.PolicyoODCreate`
+        :param operation_type: 策略类型，如备份，复制 Enum:[ backup，replication]
+        :type operation_type: str
+        :param trigger: 
+        :type trigger: :class:`huaweicloudsdkcbr.v1.PolicyTriggerReq`
+        """
         
         
 
@@ -74,7 +87,7 @@ class PolicyCreate:
         是否启用策略
 
         :param enabled: The enabled of this PolicyCreate.
-        :type: bool
+        :type enabled: bool
         """
         self._enabled = enabled
 
@@ -96,7 +109,7 @@ class PolicyCreate:
         策略名称，长度限制：1- 64，只能由中文、字母、数字、“_”、“-”组成。
 
         :param name: The name of this PolicyCreate.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -106,7 +119,7 @@ class PolicyCreate:
 
 
         :return: The operation_definition of this PolicyCreate.
-        :rtype: PolicyoODCreate
+        :rtype: :class:`huaweicloudsdkcbr.v1.PolicyoODCreate`
         """
         return self._operation_definition
 
@@ -116,7 +129,7 @@ class PolicyCreate:
 
 
         :param operation_definition: The operation_definition of this PolicyCreate.
-        :type: PolicyoODCreate
+        :type operation_definition: :class:`huaweicloudsdkcbr.v1.PolicyoODCreate`
         """
         self._operation_definition = operation_definition
 
@@ -138,7 +151,7 @@ class PolicyCreate:
         策略类型，如备份，复制 Enum:[ backup，replication]
 
         :param operation_type: The operation_type of this PolicyCreate.
-        :type: str
+        :type operation_type: str
         """
         self._operation_type = operation_type
 
@@ -148,7 +161,7 @@ class PolicyCreate:
 
 
         :return: The trigger of this PolicyCreate.
-        :rtype: PolicyTriggerReq
+        :rtype: :class:`huaweicloudsdkcbr.v1.PolicyTriggerReq`
         """
         return self._trigger
 
@@ -158,7 +171,7 @@ class PolicyCreate:
 
 
         :param trigger: The trigger of this PolicyCreate.
-        :type: PolicyTriggerReq
+        :type trigger: :class:`huaweicloudsdkcbr.v1.PolicyTriggerReq`
         """
         self._trigger = trigger
 

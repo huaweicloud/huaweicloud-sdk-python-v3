@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UrlDomainBaseInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UrlDomainBaseInfo:
     }
 
     def __init__(self, url_domain=None, id=None, status=None, min_ssl_version=None):
-        """UrlDomainBaseInfo - a model defined in huaweicloud sdk"""
+        """UrlDomainBaseInfo
+
+        The model defined in huaweicloud sdk
+
+        :param url_domain: 自定义域名
+        :type url_domain: str
+        :param id: 自定义域名的编号
+        :type id: str
+        :param status: CNAME解析状态 - 1: 未解析 - 2: 解析中 - 3: 解析成功 - 4: 解析失败
+        :type status: int
+        :param min_ssl_version: 支持的最小SSL版本
+        :type min_ssl_version: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class UrlDomainBaseInfo:
         自定义域名
 
         :param url_domain: The url_domain of this UrlDomainBaseInfo.
-        :type: str
+        :type url_domain: str
         """
         self._url_domain = url_domain
 
@@ -91,7 +102,7 @@ class UrlDomainBaseInfo:
         自定义域名的编号
 
         :param id: The id of this UrlDomainBaseInfo.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -113,7 +124,7 @@ class UrlDomainBaseInfo:
         CNAME解析状态 - 1: 未解析 - 2: 解析中 - 3: 解析成功 - 4: 解析失败
 
         :param status: The status of this UrlDomainBaseInfo.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -135,7 +146,7 @@ class UrlDomainBaseInfo:
         支持的最小SSL版本
 
         :param min_ssl_version: The min_ssl_version of this UrlDomainBaseInfo.
-        :type: str
+        :type min_ssl_version: str
         """
         self._min_ssl_version = min_ssl_version
 

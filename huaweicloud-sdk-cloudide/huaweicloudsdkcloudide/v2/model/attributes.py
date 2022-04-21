@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Attributes:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class Attributes:
     }
 
     def __init__(self, cpu_limit=None, memory_limit_bytes=None, pvc_quantity=None):
-        """Attributes - a model defined in huaweicloud sdk"""
+        """Attributes
+
+        The model defined in huaweicloud sdk
+
+        :param cpu_limit: cpu限制
+        :type cpu_limit: str
+        :param memory_limit_bytes: 内存限制
+        :type memory_limit_bytes: str
+        :param pvc_quantity: pvc规格
+        :type pvc_quantity: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class Attributes:
         cpu限制
 
         :param cpu_limit: The cpu_limit of this Attributes.
-        :type: str
+        :type cpu_limit: str
         """
         self._cpu_limit = cpu_limit
 
@@ -90,7 +99,7 @@ class Attributes:
         内存限制
 
         :param memory_limit_bytes: The memory_limit_bytes of this Attributes.
-        :type: str
+        :type memory_limit_bytes: str
         """
         self._memory_limit_bytes = memory_limit_bytes
 
@@ -112,7 +121,7 @@ class Attributes:
         pvc规格
 
         :param pvc_quantity: The pvc_quantity of this Attributes.
-        :type: str
+        :type pvc_quantity: str
         """
         self._pvc_quantity = pvc_quantity
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TranscodeDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class TranscodeDetail:
     }
 
     def __init__(self, multitask_info=None, input_file=None):
-        """TranscodeDetail - a model defined in huaweicloud sdk"""
+        """TranscodeDetail
+
+        The model defined in huaweicloud sdk
+
+        :param multitask_info: 一进多出情况下部分转码失败的情况。 
+        :type multitask_info: list[:class:`huaweicloudsdkmpc.v1.MultiTaskInfo`]
+        :param input_file: 
+        :type input_file: :class:`huaweicloudsdkmpc.v1.SourceInfo`
+        """
         
         
 
@@ -52,7 +59,7 @@ class TranscodeDetail:
         一进多出情况下部分转码失败的情况。 
 
         :return: The multitask_info of this TranscodeDetail.
-        :rtype: list[MultiTaskInfo]
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.MultiTaskInfo`]
         """
         return self._multitask_info
 
@@ -63,7 +70,7 @@ class TranscodeDetail:
         一进多出情况下部分转码失败的情况。 
 
         :param multitask_info: The multitask_info of this TranscodeDetail.
-        :type: list[MultiTaskInfo]
+        :type multitask_info: list[:class:`huaweicloudsdkmpc.v1.MultiTaskInfo`]
         """
         self._multitask_info = multitask_info
 
@@ -73,7 +80,7 @@ class TranscodeDetail:
 
 
         :return: The input_file of this TranscodeDetail.
-        :rtype: SourceInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.SourceInfo`
         """
         return self._input_file
 
@@ -83,7 +90,7 @@ class TranscodeDetail:
 
 
         :param input_file: The input_file of this TranscodeDetail.
-        :type: SourceInfo
+        :type input_file: :class:`huaweicloudsdkmpc.v1.SourceInfo`
         """
         self._input_file = input_file
 

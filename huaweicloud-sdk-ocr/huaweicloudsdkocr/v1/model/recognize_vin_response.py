@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RecognizeVinResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RecognizeVinResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """RecognizeVinResponse - a model defined in huaweicloud sdk"""
+        """RecognizeVinResponse
+
+        The model defined in huaweicloud sdk
+
+        :param result: 
+        :type result: :class:`huaweicloudsdkocr.v1.VINResult`
+        """
         
         super(RecognizeVinResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class RecognizeVinResponse(SdkResponse):
 
 
         :return: The result of this RecognizeVinResponse.
-        :rtype: VINResult
+        :rtype: :class:`huaweicloudsdkocr.v1.VINResult`
         """
         return self._result
 
@@ -56,7 +61,7 @@ class RecognizeVinResponse(SdkResponse):
 
 
         :param result: The result of this RecognizeVinResponse.
-        :type: VINResult
+        :type result: :class:`huaweicloudsdkocr.v1.VINResult`
         """
         self._result = result
 

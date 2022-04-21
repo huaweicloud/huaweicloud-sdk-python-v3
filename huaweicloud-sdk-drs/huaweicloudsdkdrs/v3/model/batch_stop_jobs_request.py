@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchStopJobsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchStopJobsRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """BatchStopJobsRequest - a model defined in huaweicloud sdk"""
+        """BatchStopJobsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 请求语言类型
+        :type x_language: str
+        :param body: Body of the BatchStopJobsRequest
+        :type body: :class:`huaweicloudsdkdrs.v3.BatchPauseJobReq`
+        """
         
         
 
@@ -63,7 +70,7 @@ class BatchStopJobsRequest:
         请求语言类型
 
         :param x_language: The x_language of this BatchStopJobsRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -73,7 +80,7 @@ class BatchStopJobsRequest:
 
 
         :return: The body of this BatchStopJobsRequest.
-        :rtype: BatchPauseJobReq
+        :rtype: :class:`huaweicloudsdkdrs.v3.BatchPauseJobReq`
         """
         return self._body
 
@@ -83,7 +90,7 @@ class BatchStopJobsRequest:
 
 
         :param body: The body of this BatchStopJobsRequest.
-        :type: BatchPauseJobReq
+        :type body: :class:`huaweicloudsdkdrs.v3.BatchPauseJobReq`
         """
         self._body = body
 

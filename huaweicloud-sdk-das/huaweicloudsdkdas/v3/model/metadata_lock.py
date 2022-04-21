@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MetadataLock:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -62,7 +61,45 @@ class MetadataLock:
     }
 
     def __init__(self, thread_id=None, lock_status=None, lock_mode=None, lock_type=None, lock_duration=None, table_schema=None, table_name=None, user=None, time=None, host=None, database=None, command=None, state=None, sql=None, trx_exec_time=None, block_process=None, wait_process=None):
-        """MetadataLock - a model defined in huaweicloud sdk"""
+        """MetadataLock
+
+        The model defined in huaweicloud sdk
+
+        :param thread_id: 会话ID
+        :type thread_id: str
+        :param lock_status: 锁状态，取值为PENDING和GRANTED，分别表示等待锁和持有锁。
+        :type lock_status: str
+        :param lock_mode: 加锁模式，取值为MDL_SHARED 、MDL_EXCLUSIVE 、MDL_SHARED_READ、MDL_SHARED_WRITE等。
+        :type lock_mode: str
+        :param lock_type: 锁类型，取值为Table metadata lock、Schema metadata lock、Tablespace lock、Global read lock，分别表示表元数据锁、库元数据锁、表空间锁、全局读锁。
+        :type lock_type: str
+        :param lock_duration: 锁范围，取值为MDL_STATEMENT、MDL_TRANSACTION、MDL_EXPLICIT，分别表示语句级别、事务级别、global级别
+        :type lock_duration: str
+        :param table_schema: 锁所在的数据库，对于部分Global read lock级别的元数据锁，该值为空。
+        :type table_schema: str
+        :param table_name: 表名
+        :type table_name: str
+        :param user: 用户
+        :type user: str
+        :param time: 时间
+        :type time: str
+        :param host: 主机
+        :type host: str
+        :param database: 会话所在的数据库
+        :type database: str
+        :param command: 命令
+        :type command: str
+        :param state: 状态
+        :type state: str
+        :param sql: SQL语句
+        :type sql: str
+        :param trx_exec_time: 事务执行时间
+        :type trx_exec_time: str
+        :param block_process: 阻塞会话列表
+        :type block_process: list[:class:`huaweicloudsdkdas.v3.Process`]
+        :param wait_process: 等待会话列表
+        :type wait_process: list[:class:`huaweicloudsdkdas.v3.Process`]
+        """
         
         
 
@@ -121,7 +158,7 @@ class MetadataLock:
         会话ID
 
         :param thread_id: The thread_id of this MetadataLock.
-        :type: str
+        :type thread_id: str
         """
         self._thread_id = thread_id
 
@@ -143,7 +180,7 @@ class MetadataLock:
         锁状态，取值为PENDING和GRANTED，分别表示等待锁和持有锁。
 
         :param lock_status: The lock_status of this MetadataLock.
-        :type: str
+        :type lock_status: str
         """
         self._lock_status = lock_status
 
@@ -165,7 +202,7 @@ class MetadataLock:
         加锁模式，取值为MDL_SHARED 、MDL_EXCLUSIVE 、MDL_SHARED_READ、MDL_SHARED_WRITE等。
 
         :param lock_mode: The lock_mode of this MetadataLock.
-        :type: str
+        :type lock_mode: str
         """
         self._lock_mode = lock_mode
 
@@ -187,7 +224,7 @@ class MetadataLock:
         锁类型，取值为Table metadata lock、Schema metadata lock、Tablespace lock、Global read lock，分别表示表元数据锁、库元数据锁、表空间锁、全局读锁。
 
         :param lock_type: The lock_type of this MetadataLock.
-        :type: str
+        :type lock_type: str
         """
         self._lock_type = lock_type
 
@@ -209,7 +246,7 @@ class MetadataLock:
         锁范围，取值为MDL_STATEMENT、MDL_TRANSACTION、MDL_EXPLICIT，分别表示语句级别、事务级别、global级别
 
         :param lock_duration: The lock_duration of this MetadataLock.
-        :type: str
+        :type lock_duration: str
         """
         self._lock_duration = lock_duration
 
@@ -231,7 +268,7 @@ class MetadataLock:
         锁所在的数据库，对于部分Global read lock级别的元数据锁，该值为空。
 
         :param table_schema: The table_schema of this MetadataLock.
-        :type: str
+        :type table_schema: str
         """
         self._table_schema = table_schema
 
@@ -253,7 +290,7 @@ class MetadataLock:
         表名
 
         :param table_name: The table_name of this MetadataLock.
-        :type: str
+        :type table_name: str
         """
         self._table_name = table_name
 
@@ -275,7 +312,7 @@ class MetadataLock:
         用户
 
         :param user: The user of this MetadataLock.
-        :type: str
+        :type user: str
         """
         self._user = user
 
@@ -297,7 +334,7 @@ class MetadataLock:
         时间
 
         :param time: The time of this MetadataLock.
-        :type: str
+        :type time: str
         """
         self._time = time
 
@@ -319,7 +356,7 @@ class MetadataLock:
         主机
 
         :param host: The host of this MetadataLock.
-        :type: str
+        :type host: str
         """
         self._host = host
 
@@ -341,7 +378,7 @@ class MetadataLock:
         会话所在的数据库
 
         :param database: The database of this MetadataLock.
-        :type: str
+        :type database: str
         """
         self._database = database
 
@@ -363,7 +400,7 @@ class MetadataLock:
         命令
 
         :param command: The command of this MetadataLock.
-        :type: str
+        :type command: str
         """
         self._command = command
 
@@ -385,7 +422,7 @@ class MetadataLock:
         状态
 
         :param state: The state of this MetadataLock.
-        :type: str
+        :type state: str
         """
         self._state = state
 
@@ -407,7 +444,7 @@ class MetadataLock:
         SQL语句
 
         :param sql: The sql of this MetadataLock.
-        :type: str
+        :type sql: str
         """
         self._sql = sql
 
@@ -429,7 +466,7 @@ class MetadataLock:
         事务执行时间
 
         :param trx_exec_time: The trx_exec_time of this MetadataLock.
-        :type: str
+        :type trx_exec_time: str
         """
         self._trx_exec_time = trx_exec_time
 
@@ -440,7 +477,7 @@ class MetadataLock:
         阻塞会话列表
 
         :return: The block_process of this MetadataLock.
-        :rtype: list[Process]
+        :rtype: list[:class:`huaweicloudsdkdas.v3.Process`]
         """
         return self._block_process
 
@@ -451,7 +488,7 @@ class MetadataLock:
         阻塞会话列表
 
         :param block_process: The block_process of this MetadataLock.
-        :type: list[Process]
+        :type block_process: list[:class:`huaweicloudsdkdas.v3.Process`]
         """
         self._block_process = block_process
 
@@ -462,7 +499,7 @@ class MetadataLock:
         等待会话列表
 
         :return: The wait_process of this MetadataLock.
-        :rtype: list[Process]
+        :rtype: list[:class:`huaweicloudsdkdas.v3.Process`]
         """
         return self._wait_process
 
@@ -473,7 +510,7 @@ class MetadataLock:
         等待会话列表
 
         :param wait_process: The wait_process of this MetadataLock.
-        :type: list[Process]
+        :type wait_process: list[:class:`huaweicloudsdkdas.v3.Process`]
         """
         self._wait_process = wait_process
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowHistoryDetailsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowHistoryDetailsRequest:
     }
 
     def __init__(self, job_id=None, build_number=None):
-        """ShowHistoryDetailsRequest - a model defined in huaweicloud sdk"""
+        """ShowHistoryDetailsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 构建的任务ID [获取项目下构建任务列表](https://support.huaweicloud.com/api-codeci/ShowJobListByProjectId.html)； 编辑构建任务时，浏览器URL末尾的32位数字、字母组合的字符串。
+        :type job_id: str
+        :param build_number: 构建任务的构建编号，从1开始，每次构建递增1
+        :type build_number: int
+        """
         
         
 
@@ -61,7 +68,7 @@ class ShowHistoryDetailsRequest:
         构建的任务ID [获取项目下构建任务列表](https://support.huaweicloud.com/api-codeci/ShowJobListByProjectId.html)； 编辑构建任务时，浏览器URL末尾的32位数字、字母组合的字符串。
 
         :param job_id: The job_id of this ShowHistoryDetailsRequest.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -83,7 +90,7 @@ class ShowHistoryDetailsRequest:
         构建任务的构建编号，从1开始，每次构建递增1
 
         :param build_number: The build_number of this ShowHistoryDetailsRequest.
-        :type: int
+        :type build_number: int
         """
         self._build_number = build_number
 

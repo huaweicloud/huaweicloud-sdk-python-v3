@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowQueueTagsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowQueueTagsRequest:
     }
 
     def __init__(self, queue_id=None):
-        """ShowQueueTagsRequest - a model defined in huaweicloud sdk"""
+        """ShowQueueTagsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param queue_id: 队列ID。
+        :type queue_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowQueueTagsRequest:
         队列ID。
 
         :param queue_id: The queue_id of this ShowQueueTagsRequest.
-        :type: str
+        :type queue_id: str
         """
         self._queue_id = queue_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowExternalEntityResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ShowExternalEntityResponse(SdkResponse):
     }
 
     def __init__(self, node_id=None, space_id=None, external_id=None, protocol=None, connection_type=None, mqtt_connection_info=None, create_time=None, last_modify_time=None):
-        """ShowExternalEntityResponse - a model defined in huaweicloud sdk"""
+        """ShowExternalEntityResponse
+
+        The model defined in huaweicloud sdk
+
+        :param node_id: 节点ID
+        :type node_id: str
+        :param space_id: 资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，建议携带该参数指定创建的外部实体归属到IoDA哪个资源空间下的边缘节点设备下，否则创建的外部实体将会归属到默认资源空间下对应的边缘节点下,对应于IoDA的app_id.
+        :type space_id: str
+        :param external_id: 外部实体ID
+        :type external_id: str
+        :param protocol: 接入协议类型
+        :type protocol: str
+        :param connection_type: 连接类型(client和server)
+        :type connection_type: str
+        :param mqtt_connection_info: 
+        :type mqtt_connection_info: :class:`huaweicloudsdkiotedge.v2.MqttBriefConnectionInfo`
+        :param create_time: 创建时间
+        :type create_time: str
+        :param last_modify_time: 最后修改时间
+        :type last_modify_time: str
+        """
         
         super(ShowExternalEntityResponse, self).__init__()
 
@@ -93,7 +112,7 @@ class ShowExternalEntityResponse(SdkResponse):
         节点ID
 
         :param node_id: The node_id of this ShowExternalEntityResponse.
-        :type: str
+        :type node_id: str
         """
         self._node_id = node_id
 
@@ -115,7 +134,7 @@ class ShowExternalEntityResponse(SdkResponse):
         资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，建议携带该参数指定创建的外部实体归属到IoDA哪个资源空间下的边缘节点设备下，否则创建的外部实体将会归属到默认资源空间下对应的边缘节点下,对应于IoDA的app_id.
 
         :param space_id: The space_id of this ShowExternalEntityResponse.
-        :type: str
+        :type space_id: str
         """
         self._space_id = space_id
 
@@ -137,7 +156,7 @@ class ShowExternalEntityResponse(SdkResponse):
         外部实体ID
 
         :param external_id: The external_id of this ShowExternalEntityResponse.
-        :type: str
+        :type external_id: str
         """
         self._external_id = external_id
 
@@ -159,7 +178,7 @@ class ShowExternalEntityResponse(SdkResponse):
         接入协议类型
 
         :param protocol: The protocol of this ShowExternalEntityResponse.
-        :type: str
+        :type protocol: str
         """
         self._protocol = protocol
 
@@ -181,7 +200,7 @@ class ShowExternalEntityResponse(SdkResponse):
         连接类型(client和server)
 
         :param connection_type: The connection_type of this ShowExternalEntityResponse.
-        :type: str
+        :type connection_type: str
         """
         self._connection_type = connection_type
 
@@ -191,7 +210,7 @@ class ShowExternalEntityResponse(SdkResponse):
 
 
         :return: The mqtt_connection_info of this ShowExternalEntityResponse.
-        :rtype: MqttBriefConnectionInfo
+        :rtype: :class:`huaweicloudsdkiotedge.v2.MqttBriefConnectionInfo`
         """
         return self._mqtt_connection_info
 
@@ -201,7 +220,7 @@ class ShowExternalEntityResponse(SdkResponse):
 
 
         :param mqtt_connection_info: The mqtt_connection_info of this ShowExternalEntityResponse.
-        :type: MqttBriefConnectionInfo
+        :type mqtt_connection_info: :class:`huaweicloudsdkiotedge.v2.MqttBriefConnectionInfo`
         """
         self._mqtt_connection_info = mqtt_connection_info
 
@@ -223,7 +242,7 @@ class ShowExternalEntityResponse(SdkResponse):
         创建时间
 
         :param create_time: The create_time of this ShowExternalEntityResponse.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -245,7 +264,7 @@ class ShowExternalEntityResponse(SdkResponse):
         最后修改时间
 
         :param last_modify_time: The last_modify_time of this ShowExternalEntityResponse.
-        :type: str
+        :type last_modify_time: str
         """
         self._last_modify_time = last_modify_time
 

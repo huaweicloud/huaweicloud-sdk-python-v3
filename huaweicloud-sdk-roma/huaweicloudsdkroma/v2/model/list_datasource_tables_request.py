@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDatasourceTablesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListDatasourceTablesRequest:
     }
 
     def __init__(self, instance_id=None, datasource_id=None, position=None, db_name=None, db_schema=None, filter=None):
-        """ListDatasourceTablesRequest - a model defined in huaweicloud sdk"""
+        """ListDatasourceTablesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param datasource_id: 数据源ID
+        :type datasource_id: str
+        :param position: 数据源所在任务位置 - SOURCE 数据源处于任务源端 - TARGET 数据源处于任务目标端
+        :type position: str
+        :param db_name: 数据库名称，只支持MRSHIVE，FIHIVE类型的数据源
+        :type db_name: str
+        :param db_schema: 数据库模式,GAUSS100数据库使用
+        :type db_schema: str
+        :param filter: 表名模糊匹配过滤器
+        :type filter: str
+        """
         
         
 
@@ -80,7 +95,7 @@ class ListDatasourceTablesRequest:
         实例ID
 
         :param instance_id: The instance_id of this ListDatasourceTablesRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -102,7 +117,7 @@ class ListDatasourceTablesRequest:
         数据源ID
 
         :param datasource_id: The datasource_id of this ListDatasourceTablesRequest.
-        :type: str
+        :type datasource_id: str
         """
         self._datasource_id = datasource_id
 
@@ -124,7 +139,7 @@ class ListDatasourceTablesRequest:
         数据源所在任务位置 - SOURCE 数据源处于任务源端 - TARGET 数据源处于任务目标端
 
         :param position: The position of this ListDatasourceTablesRequest.
-        :type: str
+        :type position: str
         """
         self._position = position
 
@@ -146,7 +161,7 @@ class ListDatasourceTablesRequest:
         数据库名称，只支持MRSHIVE，FIHIVE类型的数据源
 
         :param db_name: The db_name of this ListDatasourceTablesRequest.
-        :type: str
+        :type db_name: str
         """
         self._db_name = db_name
 
@@ -168,7 +183,7 @@ class ListDatasourceTablesRequest:
         数据库模式,GAUSS100数据库使用
 
         :param db_schema: The db_schema of this ListDatasourceTablesRequest.
-        :type: str
+        :type db_schema: str
         """
         self._db_schema = db_schema
 
@@ -190,7 +205,7 @@ class ListDatasourceTablesRequest:
         表名模糊匹配过滤器
 
         :param filter: The filter of this ListDatasourceTablesRequest.
-        :type: str
+        :type filter: str
         """
         self._filter = filter
 

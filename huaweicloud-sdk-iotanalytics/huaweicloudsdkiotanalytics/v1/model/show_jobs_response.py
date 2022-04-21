@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowJobsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowJobsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, jobs=None):
-        """ShowJobsResponse - a model defined in huaweicloud sdk"""
+        """ShowJobsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 总数
+        :type count: int
+        :param jobs: 作业列表
+        :type jobs: list[:class:`huaweicloudsdkiotanalytics.v1.StreamingJobInfoDto`]
+        """
         
         super(ShowJobsResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ShowJobsResponse(SdkResponse):
         总数
 
         :param count: The count of this ShowJobsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -74,7 +81,7 @@ class ShowJobsResponse(SdkResponse):
         作业列表
 
         :return: The jobs of this ShowJobsResponse.
-        :rtype: list[StreamingJobInfoDto]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.StreamingJobInfoDto`]
         """
         return self._jobs
 
@@ -85,7 +92,7 @@ class ShowJobsResponse(SdkResponse):
         作业列表
 
         :param jobs: The jobs of this ShowJobsResponse.
-        :type: list[StreamingJobInfoDto]
+        :type jobs: list[:class:`huaweicloudsdkiotanalytics.v1.StreamingJobInfoDto`]
         """
         self._jobs = jobs
 

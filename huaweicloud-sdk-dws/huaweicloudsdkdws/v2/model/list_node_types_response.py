@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListNodeTypesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListNodeTypesResponse(SdkResponse):
     }
 
     def __init__(self, node_types=None):
-        """ListNodeTypesResponse - a model defined in huaweicloud sdk"""
+        """ListNodeTypesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param node_types: 节点类型对象列表。
+        :type node_types: list[:class:`huaweicloudsdkdws.v2.NodeTypes`]
+        """
         
         super(ListNodeTypesResponse, self).__init__()
 
@@ -44,10 +49,10 @@ class ListNodeTypesResponse(SdkResponse):
     def node_types(self):
         """Gets the node_types of this ListNodeTypesResponse.
 
-        节点类型对象列表
+        节点类型对象列表。
 
         :return: The node_types of this ListNodeTypesResponse.
-        :rtype: list[NodeTypes]
+        :rtype: list[:class:`huaweicloudsdkdws.v2.NodeTypes`]
         """
         return self._node_types
 
@@ -55,10 +60,10 @@ class ListNodeTypesResponse(SdkResponse):
     def node_types(self, node_types):
         """Sets the node_types of this ListNodeTypesResponse.
 
-        节点类型对象列表
+        节点类型对象列表。
 
         :param node_types: The node_types of this ListNodeTypesResponse.
-        :type: list[NodeTypes]
+        :type node_types: list[:class:`huaweicloudsdkdws.v2.NodeTypes`]
         """
         self._node_types = node_types
 

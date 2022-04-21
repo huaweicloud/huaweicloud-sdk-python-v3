@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateEncryptTaskResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateEncryptTaskResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None):
-        """CreateEncryptTaskResponse - a model defined in huaweicloud sdk"""
+        """CreateEncryptTaskResponse
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 加密任务Id
+        :type task_id: str
+        """
         
         super(CreateEncryptTaskResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class CreateEncryptTaskResponse(SdkResponse):
         加密任务Id
 
         :param task_id: The task_id of this CreateEncryptTaskResponse.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchRestoreTaskResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchRestoreTaskResponse(SdkResponse):
     }
 
     def __init__(self, results=None, count=None):
-        """BatchRestoreTaskResponse - a model defined in huaweicloud sdk"""
+        """BatchRestoreTaskResponse
+
+        The model defined in huaweicloud sdk
+
+        :param results: 批量续传返回列表
+        :type results: list[:class:`huaweicloudsdkdrs.v3.RetryTaskResp`]
+        :param count: 总数
+        :type count: int
+        """
         
         super(BatchRestoreTaskResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class BatchRestoreTaskResponse(SdkResponse):
         批量续传返回列表
 
         :return: The results of this BatchRestoreTaskResponse.
-        :rtype: list[RetryTaskResp]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.RetryTaskResp`]
         """
         return self._results
 
@@ -63,7 +70,7 @@ class BatchRestoreTaskResponse(SdkResponse):
         批量续传返回列表
 
         :param results: The results of this BatchRestoreTaskResponse.
-        :type: list[RetryTaskResp]
+        :type results: list[:class:`huaweicloudsdkdrs.v3.RetryTaskResp`]
         """
         self._results = results
 
@@ -85,7 +92,7 @@ class BatchRestoreTaskResponse(SdkResponse):
         总数
 
         :param count: The count of this BatchRestoreTaskResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

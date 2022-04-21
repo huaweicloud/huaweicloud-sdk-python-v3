@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListOffSiteInstancesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListOffSiteInstancesResponse(SdkResponse):
     }
 
     def __init__(self, offsite_backup_instances=None, total_count=None):
-        """ListOffSiteInstancesResponse - a model defined in huaweicloud sdk"""
+        """ListOffSiteInstancesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param offsite_backup_instances: 跨区域备份实例信息。
+        :type offsite_backup_instances: list[:class:`huaweicloudsdkrds.v3.OffsiteBackupInstance`]
+        :param total_count: 总记录数。
+        :type total_count: int
+        """
         
         super(ListOffSiteInstancesResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListOffSiteInstancesResponse(SdkResponse):
         跨区域备份实例信息。
 
         :return: The offsite_backup_instances of this ListOffSiteInstancesResponse.
-        :rtype: list[OffsiteBackupInstance]
+        :rtype: list[:class:`huaweicloudsdkrds.v3.OffsiteBackupInstance`]
         """
         return self._offsite_backup_instances
 
@@ -63,7 +70,7 @@ class ListOffSiteInstancesResponse(SdkResponse):
         跨区域备份实例信息。
 
         :param offsite_backup_instances: The offsite_backup_instances of this ListOffSiteInstancesResponse.
-        :type: list[OffsiteBackupInstance]
+        :type offsite_backup_instances: list[:class:`huaweicloudsdkrds.v3.OffsiteBackupInstance`]
         """
         self._offsite_backup_instances = offsite_backup_instances
 
@@ -85,7 +92,7 @@ class ListOffSiteInstancesResponse(SdkResponse):
         总记录数。
 
         :param total_count: The total_count of this ListOffSiteInstancesResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 

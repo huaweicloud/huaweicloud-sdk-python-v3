@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EdgemgrDevicesPara:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class EdgemgrDevicesPara:
     }
 
     def __init__(self, description=None, attributes=None):
-        """EdgemgrDevicesPara - a model defined in huaweicloud sdk"""
+        """EdgemgrDevicesPara
+
+        The model defined in huaweicloud sdk
+
+        :param description: 终端设备描述，最大长度255，不允许^ ~ # $ % &amp; * &lt; &gt; ( ) [ ] { } &#39; \&quot; \\
+        :type description: str
+        :param attributes: 
+        :type attributes: dict(str, ValueInAttributes)
+        """
         
         
 
@@ -63,7 +70,7 @@ class EdgemgrDevicesPara:
         终端设备描述，最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
         :param description: The description of this EdgemgrDevicesPara.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -83,7 +90,7 @@ class EdgemgrDevicesPara:
 
 
         :param attributes: The attributes of this EdgemgrDevicesPara.
-        :type: dict(str, ValueInAttributes)
+        :type attributes: dict(str, ValueInAttributes)
         """
         self._attributes = attributes
 

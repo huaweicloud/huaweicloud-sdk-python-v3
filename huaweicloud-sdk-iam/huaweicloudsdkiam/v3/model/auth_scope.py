@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AuthScope:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AuthScope:
     }
 
     def __init__(self, domain=None, project=None):
-        """AuthScope - a model defined in huaweicloud sdk"""
+        """AuthScope
+
+        The model defined in huaweicloud sdk
+
+        :param domain: 
+        :type domain: :class:`huaweicloudsdkiam.v3.AuthScopeDomain`
+        :param project: 
+        :type project: :class:`huaweicloudsdkiam.v3.AuthScopeProject`
+        """
         
         
 
@@ -51,7 +58,7 @@ class AuthScope:
 
 
         :return: The domain of this AuthScope.
-        :rtype: AuthScopeDomain
+        :rtype: :class:`huaweicloudsdkiam.v3.AuthScopeDomain`
         """
         return self._domain
 
@@ -61,7 +68,7 @@ class AuthScope:
 
 
         :param domain: The domain of this AuthScope.
-        :type: AuthScopeDomain
+        :type domain: :class:`huaweicloudsdkiam.v3.AuthScopeDomain`
         """
         self._domain = domain
 
@@ -71,7 +78,7 @@ class AuthScope:
 
 
         :return: The project of this AuthScope.
-        :rtype: AuthScopeProject
+        :rtype: :class:`huaweicloudsdkiam.v3.AuthScopeProject`
         """
         return self._project
 
@@ -81,7 +88,7 @@ class AuthScope:
 
 
         :param project: The project of this AuthScope.
-        :type: AuthScopeProject
+        :type project: :class:`huaweicloudsdkiam.v3.AuthScopeProject`
         """
         self._project = project
 

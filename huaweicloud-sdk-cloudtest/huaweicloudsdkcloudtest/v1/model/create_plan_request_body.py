@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreatePlanRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CreatePlanRequestBody:
     }
 
     def __init__(self, name=None, assigned_id=None, service_id_list=None, plan_cycle=None):
-        """CreatePlanRequestBody - a model defined in huaweicloud sdk"""
+        """CreatePlanRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param name: 计划名称
+        :type name: str
+        :param assigned_id: 处理者id，不填时默认使用当前用户
+        :type assigned_id: str
+        :param service_id_list: 计划下包含的用例类型，数组长度小于10个
+        :type service_id_list: list[int]
+        :param plan_cycle: 
+        :type plan_cycle: :class:`huaweicloudsdkcloudtest.v1.PlanCycle`
+        """
         
         
 
@@ -70,7 +81,7 @@ class CreatePlanRequestBody:
         计划名称
 
         :param name: The name of this CreatePlanRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -92,7 +103,7 @@ class CreatePlanRequestBody:
         处理者id，不填时默认使用当前用户
 
         :param assigned_id: The assigned_id of this CreatePlanRequestBody.
-        :type: str
+        :type assigned_id: str
         """
         self._assigned_id = assigned_id
 
@@ -114,7 +125,7 @@ class CreatePlanRequestBody:
         计划下包含的用例类型，数组长度小于10个
 
         :param service_id_list: The service_id_list of this CreatePlanRequestBody.
-        :type: list[int]
+        :type service_id_list: list[int]
         """
         self._service_id_list = service_id_list
 
@@ -124,7 +135,7 @@ class CreatePlanRequestBody:
 
 
         :return: The plan_cycle of this CreatePlanRequestBody.
-        :rtype: PlanCycle
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.PlanCycle`
         """
         return self._plan_cycle
 
@@ -134,7 +145,7 @@ class CreatePlanRequestBody:
 
 
         :param plan_cycle: The plan_cycle of this CreatePlanRequestBody.
-        :type: PlanCycle
+        :type plan_cycle: :class:`huaweicloudsdkcloudtest.v1.PlanCycle`
         """
         self._plan_cycle = plan_cycle
 

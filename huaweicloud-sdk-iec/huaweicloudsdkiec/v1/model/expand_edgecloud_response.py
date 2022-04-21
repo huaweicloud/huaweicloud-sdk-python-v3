@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExpandEdgecloudResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ExpandEdgecloudResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, deployment_id=None, status=None, job_id=None):
-        """ExpandEdgecloudResponse - a model defined in huaweicloud sdk"""
+        """ExpandEdgecloudResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 边缘业务ID。
+        :type id: str
+        :param name: 部署计划名称。
+        :type name: str
+        :param deployment_id: 部署计划ID。
+        :type deployment_id: str
+        :param status: 边缘业务状态，现存状态有： - creating/scheduling/updating：部署中 - inService：运行中 - failed：创建失败 - deleting：删除中 - delFailed：删除失败
+        :type status: str
+        :param job_id: 任务ID。
+        :type job_id: str
+        """
         
         super(ExpandEdgecloudResponse, self).__init__()
 
@@ -78,7 +91,7 @@ class ExpandEdgecloudResponse(SdkResponse):
         边缘业务ID。
 
         :param id: The id of this ExpandEdgecloudResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -100,7 +113,7 @@ class ExpandEdgecloudResponse(SdkResponse):
         部署计划名称。
 
         :param name: The name of this ExpandEdgecloudResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -122,7 +135,7 @@ class ExpandEdgecloudResponse(SdkResponse):
         部署计划ID。
 
         :param deployment_id: The deployment_id of this ExpandEdgecloudResponse.
-        :type: str
+        :type deployment_id: str
         """
         self._deployment_id = deployment_id
 
@@ -144,7 +157,7 @@ class ExpandEdgecloudResponse(SdkResponse):
         边缘业务状态，现存状态有： - creating/scheduling/updating：部署中 - inService：运行中 - failed：创建失败 - deleting：删除中 - delFailed：删除失败
 
         :param status: The status of this ExpandEdgecloudResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -166,7 +179,7 @@ class ExpandEdgecloudResponse(SdkResponse):
         任务ID。
 
         :param job_id: The job_id of this ExpandEdgecloudResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 

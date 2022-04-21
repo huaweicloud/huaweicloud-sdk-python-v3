@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LoginTokenUser:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class LoginTokenUser:
     }
 
     def __init__(self, domain=None, name=None, password_expires_at=None, id=None):
-        """LoginTokenUser - a model defined in huaweicloud sdk"""
+        """LoginTokenUser
+
+        The model defined in huaweicloud sdk
+
+        :param domain: 
+        :type domain: :class:`huaweicloudsdkiam.v3.LoginTokenDomain`
+        :param name: 被委托方用户名。
+        :type name: str
+        :param password_expires_at: 被委托方用户的密码过期时间。
+        :type password_expires_at: str
+        :param id: 被委托方用户ID。
+        :type id: str
+        """
         
         
 
@@ -61,7 +72,7 @@ class LoginTokenUser:
 
 
         :return: The domain of this LoginTokenUser.
-        :rtype: LoginTokenDomain
+        :rtype: :class:`huaweicloudsdkiam.v3.LoginTokenDomain`
         """
         return self._domain
 
@@ -71,7 +82,7 @@ class LoginTokenUser:
 
 
         :param domain: The domain of this LoginTokenUser.
-        :type: LoginTokenDomain
+        :type domain: :class:`huaweicloudsdkiam.v3.LoginTokenDomain`
         """
         self._domain = domain
 
@@ -93,7 +104,7 @@ class LoginTokenUser:
         被委托方用户名。
 
         :param name: The name of this LoginTokenUser.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -115,7 +126,7 @@ class LoginTokenUser:
         被委托方用户的密码过期时间。
 
         :param password_expires_at: The password_expires_at of this LoginTokenUser.
-        :type: str
+        :type password_expires_at: str
         """
         self._password_expires_at = password_expires_at
 
@@ -137,7 +148,7 @@ class LoginTokenUser:
         被委托方用户ID。
 
         :param id: The id of this LoginTokenUser.
-        :type: str
+        :type id: str
         """
         self._id = id
 

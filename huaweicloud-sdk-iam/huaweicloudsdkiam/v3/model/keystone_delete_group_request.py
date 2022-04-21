@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneDeleteGroupRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class KeystoneDeleteGroupRequest:
     }
 
     def __init__(self, group_id=None):
-        """KeystoneDeleteGroupRequest - a model defined in huaweicloud sdk"""
+        """KeystoneDeleteGroupRequest
+
+        The model defined in huaweicloud sdk
+
+        :param group_id: 待删除的用户组ID，获取方式请参见：[获取用户组ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
+        :type group_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class KeystoneDeleteGroupRequest:
         待删除的用户组ID，获取方式请参见：[获取用户组ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param group_id: The group_id of this KeystoneDeleteGroupRequest.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 

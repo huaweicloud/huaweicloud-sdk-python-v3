@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DetectFace:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DetectFace:
     }
 
     def __init__(self, bounding_box=None, attributes=None):
-        """DetectFace - a model defined in huaweicloud sdk"""
+        """DetectFace
+
+        The model defined in huaweicloud sdk
+
+        :param bounding_box: 
+        :type bounding_box: :class:`huaweicloudsdkfrs.v2.BoundingBox`
+        :param attributes: 
+        :type attributes: :class:`huaweicloudsdkfrs.v2.Attributes`
+        """
         
         
 
@@ -50,7 +57,7 @@ class DetectFace:
 
 
         :return: The bounding_box of this DetectFace.
-        :rtype: BoundingBox
+        :rtype: :class:`huaweicloudsdkfrs.v2.BoundingBox`
         """
         return self._bounding_box
 
@@ -60,7 +67,7 @@ class DetectFace:
 
 
         :param bounding_box: The bounding_box of this DetectFace.
-        :type: BoundingBox
+        :type bounding_box: :class:`huaweicloudsdkfrs.v2.BoundingBox`
         """
         self._bounding_box = bounding_box
 
@@ -70,7 +77,7 @@ class DetectFace:
 
 
         :return: The attributes of this DetectFace.
-        :rtype: Attributes
+        :rtype: :class:`huaweicloudsdkfrs.v2.Attributes`
         """
         return self._attributes
 
@@ -80,7 +87,7 @@ class DetectFace:
 
 
         :param attributes: The attributes of this DetectFace.
-        :type: Attributes
+        :type attributes: :class:`huaweicloudsdkfrs.v2.Attributes`
         """
         self._attributes = attributes
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPipelineSimpleInfoRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class ListPipelineSimpleInfoRequestBody:
     }
 
     def __init__(self, pipeline_name=None, project_ids=None, creator_ids=None, executor_ids=None, status=None, outcome=None, sort_key=None, sort_dir=None, git_url=None, offset=None, limit=None):
-        """ListPipelineSimpleInfoRequestBody - a model defined in huaweicloud sdk"""
+        """ListPipelineSimpleInfoRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param pipeline_name: 流水线名字。参数存在，则进行模糊匹配
+        :type pipeline_name: str
+        :param project_ids: devCloud项目ids。该参数存在，则获取对应项目下的流水线列表，逗号分隔，id个数取值[0,10]；如果不存在，则获取调用方所属租户的流水线列表
+        :type project_ids: str
+        :param creator_ids: 创建人id。该参数存在，逗号分隔，id个数取值[0,10]
+        :type creator_ids: str
+        :param executor_ids: 执行人id。该参数存在，逗号分隔，id个数取值[0,10]；
+        :type executor_ids: str
+        :param status: 流水线运行状态。取值范围：waiting,running,verifying,handling,suspending,completed
+        :type status: str
+        :param outcome: 流水线结果，标记流水线。error、success、aborted
+        :type outcome: str
+        :param sort_key: 用于排序的字段。取值为：pipeline_name,create_time,start_time
+        :type sort_key: str
+        :param sort_dir: 排序类型。asc按排序字段升序，desc按排序字段降序
+        :type sort_dir: str
+        :param git_url: codehub搜索链接：git@codehub.XXX.git；gitee搜索链接：git@gitee.com.XXX.git；github搜索链接：git@github.com.XXX.git等
+        :type git_url: str
+        :param offset: 偏移量。表示从此偏移量开始查询，offset大于等于0，默认取值为0
+        :type offset: int
+        :param limit: 每次查询的条目数量。取值[10-50]，默认取值为10
+        :type limit: int
+        """
         
         
 
@@ -108,7 +133,7 @@ class ListPipelineSimpleInfoRequestBody:
         流水线名字。参数存在，则进行模糊匹配
 
         :param pipeline_name: The pipeline_name of this ListPipelineSimpleInfoRequestBody.
-        :type: str
+        :type pipeline_name: str
         """
         self._pipeline_name = pipeline_name
 
@@ -130,7 +155,7 @@ class ListPipelineSimpleInfoRequestBody:
         devCloud项目ids。该参数存在，则获取对应项目下的流水线列表，逗号分隔，id个数取值[0,10]；如果不存在，则获取调用方所属租户的流水线列表
 
         :param project_ids: The project_ids of this ListPipelineSimpleInfoRequestBody.
-        :type: str
+        :type project_ids: str
         """
         self._project_ids = project_ids
 
@@ -152,7 +177,7 @@ class ListPipelineSimpleInfoRequestBody:
         创建人id。该参数存在，逗号分隔，id个数取值[0,10]
 
         :param creator_ids: The creator_ids of this ListPipelineSimpleInfoRequestBody.
-        :type: str
+        :type creator_ids: str
         """
         self._creator_ids = creator_ids
 
@@ -174,7 +199,7 @@ class ListPipelineSimpleInfoRequestBody:
         执行人id。该参数存在，逗号分隔，id个数取值[0,10]；
 
         :param executor_ids: The executor_ids of this ListPipelineSimpleInfoRequestBody.
-        :type: str
+        :type executor_ids: str
         """
         self._executor_ids = executor_ids
 
@@ -196,7 +221,7 @@ class ListPipelineSimpleInfoRequestBody:
         流水线运行状态。取值范围：waiting,running,verifying,handling,suspending,completed
 
         :param status: The status of this ListPipelineSimpleInfoRequestBody.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -218,7 +243,7 @@ class ListPipelineSimpleInfoRequestBody:
         流水线结果，标记流水线。error、success、aborted
 
         :param outcome: The outcome of this ListPipelineSimpleInfoRequestBody.
-        :type: str
+        :type outcome: str
         """
         self._outcome = outcome
 
@@ -240,7 +265,7 @@ class ListPipelineSimpleInfoRequestBody:
         用于排序的字段。取值为：pipeline_name,create_time,start_time
 
         :param sort_key: The sort_key of this ListPipelineSimpleInfoRequestBody.
-        :type: str
+        :type sort_key: str
         """
         self._sort_key = sort_key
 
@@ -262,7 +287,7 @@ class ListPipelineSimpleInfoRequestBody:
         排序类型。asc按排序字段升序，desc按排序字段降序
 
         :param sort_dir: The sort_dir of this ListPipelineSimpleInfoRequestBody.
-        :type: str
+        :type sort_dir: str
         """
         self._sort_dir = sort_dir
 
@@ -284,7 +309,7 @@ class ListPipelineSimpleInfoRequestBody:
         codehub搜索链接：git@codehub.XXX.git；gitee搜索链接：git@gitee.com.XXX.git；github搜索链接：git@github.com.XXX.git等
 
         :param git_url: The git_url of this ListPipelineSimpleInfoRequestBody.
-        :type: str
+        :type git_url: str
         """
         self._git_url = git_url
 
@@ -306,7 +331,7 @@ class ListPipelineSimpleInfoRequestBody:
         偏移量。表示从此偏移量开始查询，offset大于等于0，默认取值为0
 
         :param offset: The offset of this ListPipelineSimpleInfoRequestBody.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -328,7 +353,7 @@ class ListPipelineSimpleInfoRequestBody:
         每次查询的条目数量。取值[10-50]，默认取值为10
 
         :param limit: The limit of this ListPipelineSimpleInfoRequestBody.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

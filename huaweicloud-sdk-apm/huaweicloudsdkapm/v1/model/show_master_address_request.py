@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowMasterAddressRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowMasterAddressRequest:
     }
 
     def __init__(self, region_name=None):
-        """ShowMasterAddressRequest - a model defined in huaweicloud sdk"""
+        """ShowMasterAddressRequest
+
+        The model defined in huaweicloud sdk
+
+        :param region_name: region英文名称
+        :type region_name: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowMasterAddressRequest:
         region英文名称
 
         :param region_name: The region_name of this ShowMasterAddressRequest.
-        :type: str
+        :type region_name: str
         """
         self._region_name = region_name
 

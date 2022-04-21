@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VolumeType:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class VolumeType:
     }
 
     def __init__(self, id=None, name=None, extra_specs=None, description=None, qos_specs_id=None, is_public=None):
-        """VolumeType - a model defined in huaweicloud sdk"""
+        """VolumeType
+
+        The model defined in huaweicloud sdk
+
+        :param id: 云硬盘类型的ID。
+        :type id: str
+        :param name: 云硬盘类型名称。
+        :type name: str
+        :param extra_specs: 
+        :type extra_specs: :class:`huaweicloudsdkevs.v2.VolumeTypeExtraSpecs`
+        :param description: 云硬盘类型的描述信息。
+        :type description: str
+        :param qos_specs_id: 预留属性。
+        :type qos_specs_id: str
+        :param is_public: 预留属性。
+        :type is_public: bool
+        """
         
         
 
@@ -81,7 +96,7 @@ class VolumeType:
         云硬盘类型的ID。
 
         :param id: The id of this VolumeType.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -103,7 +118,7 @@ class VolumeType:
         云硬盘类型名称。
 
         :param name: The name of this VolumeType.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -113,7 +128,7 @@ class VolumeType:
 
 
         :return: The extra_specs of this VolumeType.
-        :rtype: VolumeTypeExtraSpecs
+        :rtype: :class:`huaweicloudsdkevs.v2.VolumeTypeExtraSpecs`
         """
         return self._extra_specs
 
@@ -123,7 +138,7 @@ class VolumeType:
 
 
         :param extra_specs: The extra_specs of this VolumeType.
-        :type: VolumeTypeExtraSpecs
+        :type extra_specs: :class:`huaweicloudsdkevs.v2.VolumeTypeExtraSpecs`
         """
         self._extra_specs = extra_specs
 
@@ -145,7 +160,7 @@ class VolumeType:
         云硬盘类型的描述信息。
 
         :param description: The description of this VolumeType.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -167,7 +182,7 @@ class VolumeType:
         预留属性。
 
         :param qos_specs_id: The qos_specs_id of this VolumeType.
-        :type: str
+        :type qos_specs_id: str
         """
         self._qos_specs_id = qos_specs_id
 
@@ -189,7 +204,7 @@ class VolumeType:
         预留属性。
 
         :param is_public: The is_public of this VolumeType.
-        :type: bool
+        :type is_public: bool
         """
         self._is_public = is_public
 

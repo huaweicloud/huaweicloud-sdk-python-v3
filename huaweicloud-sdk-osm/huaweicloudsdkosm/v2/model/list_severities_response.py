@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSeveritiesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListSeveritiesResponse(SdkResponse):
     }
 
     def __init__(self, show=None, severity_list=None):
-        """ListSeveritiesResponse - a model defined in huaweicloud sdk"""
+        """ListSeveritiesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param show: 是否展示
+        :type show: bool
+        :param severity_list: 严重性列表
+        :type severity_list: list[:class:`huaweicloudsdkosm.v2.SeverityV2Do`]
+        """
         
         super(ListSeveritiesResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListSeveritiesResponse(SdkResponse):
         是否展示
 
         :param show: The show of this ListSeveritiesResponse.
-        :type: bool
+        :type show: bool
         """
         self._show = show
 
@@ -74,7 +81,7 @@ class ListSeveritiesResponse(SdkResponse):
         严重性列表
 
         :return: The severity_list of this ListSeveritiesResponse.
-        :rtype: list[SeverityV2Do]
+        :rtype: list[:class:`huaweicloudsdkosm.v2.SeverityV2Do`]
         """
         return self._severity_list
 
@@ -85,7 +92,7 @@ class ListSeveritiesResponse(SdkResponse):
         严重性列表
 
         :param severity_list: The severity_list of this ListSeveritiesResponse.
-        :type: list[SeverityV2Do]
+        :type severity_list: list[:class:`huaweicloudsdkosm.v2.SeverityV2Do`]
         """
         self._severity_list = severity_list
 

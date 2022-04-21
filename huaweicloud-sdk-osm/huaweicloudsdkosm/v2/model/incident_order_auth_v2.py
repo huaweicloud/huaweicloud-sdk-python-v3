@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IncidentOrderAuthV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class IncidentOrderAuthV2:
     }
 
     def __init__(self, id=None, status=None, incident_id=None, simple_description=None, resource_type_name=None, visit_type_name=None, create_time=None, auth_effective_time=None, auth_expire_time=None, reject_reason=None, customer_id=None, x_customer_id=None, x_customer_name=None):
-        """IncidentOrderAuthV2 - a model defined in huaweicloud sdk"""
+        """IncidentOrderAuthV2
+
+        The model defined in huaweicloud sdk
+
+        :param id: 授权id
+        :type id: int
+        :param status: 授权状态
+        :type status: int
+        :param incident_id: 工单id
+        :type incident_id: str
+        :param simple_description: 简要描述
+        :type simple_description: str
+        :param resource_type_name: 授权资源类型名称
+        :type resource_type_name: str
+        :param visit_type_name: 授权访问类型名称
+        :type visit_type_name: str
+        :param create_time: 创建时间
+        :type create_time: datetime
+        :param auth_effective_time: 授权生效时间
+        :type auth_effective_time: datetime
+        :param auth_expire_time: 授权到期时间
+        :type auth_expire_time: datetime
+        :param reject_reason: 拒绝原因
+        :type reject_reason: str
+        :param customer_id: 主账号id
+        :type customer_id: str
+        :param x_customer_id: 子用户id
+        :type x_customer_id: str
+        :param x_customer_name: 子用户名称
+        :type x_customer_name: str
+        """
         
         
 
@@ -118,7 +147,7 @@ class IncidentOrderAuthV2:
         授权id
 
         :param id: The id of this IncidentOrderAuthV2.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -140,7 +169,7 @@ class IncidentOrderAuthV2:
         授权状态
 
         :param status: The status of this IncidentOrderAuthV2.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -162,7 +191,7 @@ class IncidentOrderAuthV2:
         工单id
 
         :param incident_id: The incident_id of this IncidentOrderAuthV2.
-        :type: str
+        :type incident_id: str
         """
         self._incident_id = incident_id
 
@@ -184,7 +213,7 @@ class IncidentOrderAuthV2:
         简要描述
 
         :param simple_description: The simple_description of this IncidentOrderAuthV2.
-        :type: str
+        :type simple_description: str
         """
         self._simple_description = simple_description
 
@@ -206,7 +235,7 @@ class IncidentOrderAuthV2:
         授权资源类型名称
 
         :param resource_type_name: The resource_type_name of this IncidentOrderAuthV2.
-        :type: str
+        :type resource_type_name: str
         """
         self._resource_type_name = resource_type_name
 
@@ -228,7 +257,7 @@ class IncidentOrderAuthV2:
         授权访问类型名称
 
         :param visit_type_name: The visit_type_name of this IncidentOrderAuthV2.
-        :type: str
+        :type visit_type_name: str
         """
         self._visit_type_name = visit_type_name
 
@@ -250,7 +279,7 @@ class IncidentOrderAuthV2:
         创建时间
 
         :param create_time: The create_time of this IncidentOrderAuthV2.
-        :type: datetime
+        :type create_time: datetime
         """
         self._create_time = create_time
 
@@ -272,7 +301,7 @@ class IncidentOrderAuthV2:
         授权生效时间
 
         :param auth_effective_time: The auth_effective_time of this IncidentOrderAuthV2.
-        :type: datetime
+        :type auth_effective_time: datetime
         """
         self._auth_effective_time = auth_effective_time
 
@@ -294,7 +323,7 @@ class IncidentOrderAuthV2:
         授权到期时间
 
         :param auth_expire_time: The auth_expire_time of this IncidentOrderAuthV2.
-        :type: datetime
+        :type auth_expire_time: datetime
         """
         self._auth_expire_time = auth_expire_time
 
@@ -316,7 +345,7 @@ class IncidentOrderAuthV2:
         拒绝原因
 
         :param reject_reason: The reject_reason of this IncidentOrderAuthV2.
-        :type: str
+        :type reject_reason: str
         """
         self._reject_reason = reject_reason
 
@@ -338,7 +367,7 @@ class IncidentOrderAuthV2:
         主账号id
 
         :param customer_id: The customer_id of this IncidentOrderAuthV2.
-        :type: str
+        :type customer_id: str
         """
         self._customer_id = customer_id
 
@@ -360,7 +389,7 @@ class IncidentOrderAuthV2:
         子用户id
 
         :param x_customer_id: The x_customer_id of this IncidentOrderAuthV2.
-        :type: str
+        :type x_customer_id: str
         """
         self._x_customer_id = x_customer_id
 
@@ -382,7 +411,7 @@ class IncidentOrderAuthV2:
         子用户名称
 
         :param x_customer_name: The x_customer_name of this IncidentOrderAuthV2.
-        :type: str
+        :type x_customer_name: str
         """
         self._x_customer_name = x_customer_name
 

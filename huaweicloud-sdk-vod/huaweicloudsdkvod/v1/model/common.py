@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Common:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class Common:
     }
 
     def __init__(self, pvc=None, pvc_version=None, video_codec=None, audio_codec=None, hls_interval=None):
-        """Common - a model defined in huaweicloud sdk"""
+        """Common
+
+        The model defined in huaweicloud sdk
+
+        :param pvc: pvc开关。
+        :type pvc: str
+        :param pvc_version: pvc版本。
+        :type pvc_version: str
+        :param video_codec: 视频编码格式。
+        :type video_codec: str
+        :param audio_codec: 音频编码格式(有效值范围) - 1：AUDIO_CODECTYPE_AAC - 2：AUDIO_CODECTYPE_HEAAC1 - 3：AUDIO_CODECTYPE_HEAAC2 - 4：AUDIO_CODECTYPE_MP3  默认值为1。
+        :type audio_codec: str
+        :param hls_interval: 分片时长(默认为5秒)。
+        :type hls_interval: int
+        """
         
         
 
@@ -77,7 +90,7 @@ class Common:
         pvc开关。
 
         :param pvc: The pvc of this Common.
-        :type: str
+        :type pvc: str
         """
         self._pvc = pvc
 
@@ -99,7 +112,7 @@ class Common:
         pvc版本。
 
         :param pvc_version: The pvc_version of this Common.
-        :type: str
+        :type pvc_version: str
         """
         self._pvc_version = pvc_version
 
@@ -121,7 +134,7 @@ class Common:
         视频编码格式。
 
         :param video_codec: The video_codec of this Common.
-        :type: str
+        :type video_codec: str
         """
         self._video_codec = video_codec
 
@@ -143,7 +156,7 @@ class Common:
         音频编码格式(有效值范围) - 1：AUDIO_CODECTYPE_AAC - 2：AUDIO_CODECTYPE_HEAAC1 - 3：AUDIO_CODECTYPE_HEAAC2 - 4：AUDIO_CODECTYPE_MP3  默认值为1。
 
         :param audio_codec: The audio_codec of this Common.
-        :type: str
+        :type audio_codec: str
         """
         self._audio_codec = audio_codec
 
@@ -165,7 +178,7 @@ class Common:
         分片时长(默认为5秒)。
 
         :param hls_interval: The hls_interval of this Common.
-        :type: int
+        :type hls_interval: int
         """
         self._hls_interval = hls_interval
 

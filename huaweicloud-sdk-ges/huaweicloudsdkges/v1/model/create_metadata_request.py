@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateMetadataRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateMetadataRequest:
     }
 
     def __init__(self, body=None):
-        """CreateMetadataRequest - a model defined in huaweicloud sdk"""
+        """CreateMetadataRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateMetadataRequest
+        :type body: :class:`huaweicloudsdkges.v1.CreateMetadataReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateMetadataRequest:
 
 
         :return: The body of this CreateMetadataRequest.
-        :rtype: CreateMetadataReq
+        :rtype: :class:`huaweicloudsdkges.v1.CreateMetadataReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateMetadataRequest:
 
 
         :param body: The body of this CreateMetadataRequest.
-        :type: CreateMetadataReq
+        :type body: :class:`huaweicloudsdkges.v1.CreateMetadataReq`
         """
         self._body = body
 

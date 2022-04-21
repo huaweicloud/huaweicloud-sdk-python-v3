@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AppVersionDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -58,7 +57,41 @@ class AppVersionDetail:
     }
 
     def __init__(self, id=None, version=None, created_at=None, updated_at=None, project_id=None, image_url=None, envs=None, volumes=None, configs=None, resources=None, arch=None, command=None, args=None, liveness_probe=None, readiness_probe=None):
-        """AppVersionDetail - a model defined in huaweicloud sdk"""
+        """AppVersionDetail
+
+        The model defined in huaweicloud sdk
+
+        :param id: 应用版本ID
+        :type id: str
+        :param version: 应用版本号
+        :type version: str
+        :param created_at: 创建时间
+        :type created_at: str
+        :param updated_at: 更新时间 只有更新后才会出现该字段
+        :type updated_at: str
+        :param project_id: 项目ID
+        :type project_id: str
+        :param image_url: 镜像存储地址
+        :type image_url: str
+        :param envs: 环境变量
+        :type envs: list[:class:`huaweicloudsdkief.v1.Env`]
+        :param volumes: 卷配置
+        :type volumes: list[:class:`huaweicloudsdkief.v1.Volumes`]
+        :param configs: 
+        :type configs: :class:`huaweicloudsdkief.v1.AppVersionDetailConfigs`
+        :param resources: 
+        :type resources: :class:`huaweicloudsdkief.v1.Resources`
+        :param arch: 架构
+        :type arch: str
+        :param command: 启动命令
+        :type command: list[str]
+        :param args: 参数
+        :type args: list[str]
+        :param liveness_probe: 
+        :type liveness_probe: :class:`huaweicloudsdkief.v1.AppVersionDetailLivenessProbe`
+        :param readiness_probe: 
+        :type readiness_probe: :class:`huaweicloudsdkief.v1.AppVersionDetailReadinessProbe`
+        """
         
         
 
@@ -126,7 +159,7 @@ class AppVersionDetail:
         应用版本ID
 
         :param id: The id of this AppVersionDetail.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -148,7 +181,7 @@ class AppVersionDetail:
         应用版本号
 
         :param version: The version of this AppVersionDetail.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -170,7 +203,7 @@ class AppVersionDetail:
         创建时间
 
         :param created_at: The created_at of this AppVersionDetail.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -192,7 +225,7 @@ class AppVersionDetail:
         更新时间 只有更新后才会出现该字段
 
         :param updated_at: The updated_at of this AppVersionDetail.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 
@@ -214,7 +247,7 @@ class AppVersionDetail:
         项目ID
 
         :param project_id: The project_id of this AppVersionDetail.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -236,7 +269,7 @@ class AppVersionDetail:
         镜像存储地址
 
         :param image_url: The image_url of this AppVersionDetail.
-        :type: str
+        :type image_url: str
         """
         self._image_url = image_url
 
@@ -247,7 +280,7 @@ class AppVersionDetail:
         环境变量
 
         :return: The envs of this AppVersionDetail.
-        :rtype: list[Env]
+        :rtype: list[:class:`huaweicloudsdkief.v1.Env`]
         """
         return self._envs
 
@@ -258,7 +291,7 @@ class AppVersionDetail:
         环境变量
 
         :param envs: The envs of this AppVersionDetail.
-        :type: list[Env]
+        :type envs: list[:class:`huaweicloudsdkief.v1.Env`]
         """
         self._envs = envs
 
@@ -269,7 +302,7 @@ class AppVersionDetail:
         卷配置
 
         :return: The volumes of this AppVersionDetail.
-        :rtype: list[Volumes]
+        :rtype: list[:class:`huaweicloudsdkief.v1.Volumes`]
         """
         return self._volumes
 
@@ -280,7 +313,7 @@ class AppVersionDetail:
         卷配置
 
         :param volumes: The volumes of this AppVersionDetail.
-        :type: list[Volumes]
+        :type volumes: list[:class:`huaweicloudsdkief.v1.Volumes`]
         """
         self._volumes = volumes
 
@@ -290,7 +323,7 @@ class AppVersionDetail:
 
 
         :return: The configs of this AppVersionDetail.
-        :rtype: AppVersionDetailConfigs
+        :rtype: :class:`huaweicloudsdkief.v1.AppVersionDetailConfigs`
         """
         return self._configs
 
@@ -300,7 +333,7 @@ class AppVersionDetail:
 
 
         :param configs: The configs of this AppVersionDetail.
-        :type: AppVersionDetailConfigs
+        :type configs: :class:`huaweicloudsdkief.v1.AppVersionDetailConfigs`
         """
         self._configs = configs
 
@@ -310,7 +343,7 @@ class AppVersionDetail:
 
 
         :return: The resources of this AppVersionDetail.
-        :rtype: Resources
+        :rtype: :class:`huaweicloudsdkief.v1.Resources`
         """
         return self._resources
 
@@ -320,7 +353,7 @@ class AppVersionDetail:
 
 
         :param resources: The resources of this AppVersionDetail.
-        :type: Resources
+        :type resources: :class:`huaweicloudsdkief.v1.Resources`
         """
         self._resources = resources
 
@@ -342,7 +375,7 @@ class AppVersionDetail:
         架构
 
         :param arch: The arch of this AppVersionDetail.
-        :type: str
+        :type arch: str
         """
         self._arch = arch
 
@@ -364,7 +397,7 @@ class AppVersionDetail:
         启动命令
 
         :param command: The command of this AppVersionDetail.
-        :type: list[str]
+        :type command: list[str]
         """
         self._command = command
 
@@ -386,7 +419,7 @@ class AppVersionDetail:
         参数
 
         :param args: The args of this AppVersionDetail.
-        :type: list[str]
+        :type args: list[str]
         """
         self._args = args
 
@@ -396,7 +429,7 @@ class AppVersionDetail:
 
 
         :return: The liveness_probe of this AppVersionDetail.
-        :rtype: AppVersionDetailLivenessProbe
+        :rtype: :class:`huaweicloudsdkief.v1.AppVersionDetailLivenessProbe`
         """
         return self._liveness_probe
 
@@ -406,7 +439,7 @@ class AppVersionDetail:
 
 
         :param liveness_probe: The liveness_probe of this AppVersionDetail.
-        :type: AppVersionDetailLivenessProbe
+        :type liveness_probe: :class:`huaweicloudsdkief.v1.AppVersionDetailLivenessProbe`
         """
         self._liveness_probe = liveness_probe
 
@@ -416,7 +449,7 @@ class AppVersionDetail:
 
 
         :return: The readiness_probe of this AppVersionDetail.
-        :rtype: AppVersionDetailReadinessProbe
+        :rtype: :class:`huaweicloudsdkief.v1.AppVersionDetailReadinessProbe`
         """
         return self._readiness_probe
 
@@ -426,7 +459,7 @@ class AppVersionDetail:
 
 
         :param readiness_probe: The readiness_probe of this AppVersionDetail.
-        :type: AppVersionDetailReadinessProbe
+        :type readiness_probe: :class:`huaweicloudsdkief.v1.AppVersionDetailReadinessProbe`
         """
         self._readiness_probe = readiness_probe
 

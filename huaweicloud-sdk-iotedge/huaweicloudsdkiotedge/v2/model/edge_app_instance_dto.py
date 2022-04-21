@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EdgeAppInstanceDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class EdgeAppInstanceDTO:
     }
 
     def __init__(self, edge_app_id=None, app_version=None):
-        """EdgeAppInstanceDTO - a model defined in huaweicloud sdk"""
+        """EdgeAppInstanceDTO
+
+        The model defined in huaweicloud sdk
+
+        :param edge_app_id: 边缘应用id，只允许数字、英文小写、中划线，切必须以字母或数字结尾
+        :type edge_app_id: str
+        :param app_version: 边缘应用版本，只允许数字、英文小写、中划线，切必须以字母或数字结尾
+        :type app_version: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class EdgeAppInstanceDTO:
         边缘应用id，只允许数字、英文小写、中划线，切必须以字母或数字结尾
 
         :param edge_app_id: The edge_app_id of this EdgeAppInstanceDTO.
-        :type: str
+        :type edge_app_id: str
         """
         self._edge_app_id = edge_app_id
 
@@ -83,7 +90,7 @@ class EdgeAppInstanceDTO:
         边缘应用版本，只允许数字、英文小写、中划线，切必须以字母或数字结尾
 
         :param app_version: The app_version of this EdgeAppInstanceDTO.
-        :type: str
+        :type app_version: str
         """
         self._app_version = app_version
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SignApiBinding:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class SignApiBinding:
     }
 
     def __init__(self, sign_id=None, publish_ids=None):
-        """SignApiBinding - a model defined in huaweicloud sdk"""
+        """SignApiBinding
+
+        The model defined in huaweicloud sdk
+
+        :param sign_id: 签名密钥编号
+        :type sign_id: str
+        :param publish_ids: API的发布记录编号
+        :type publish_ids: list[str]
+        """
         
         
 
@@ -61,7 +68,7 @@ class SignApiBinding:
         签名密钥编号
 
         :param sign_id: The sign_id of this SignApiBinding.
-        :type: str
+        :type sign_id: str
         """
         self._sign_id = sign_id
 
@@ -83,7 +90,7 @@ class SignApiBinding:
         API的发布记录编号
 
         :param publish_ids: The publish_ids of this SignApiBinding.
-        :type: list[str]
+        :type publish_ids: list[str]
         """
         self._publish_ids = publish_ids
 

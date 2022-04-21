@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAlarmHistoriesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListAlarmHistoriesResponse(SdkResponse):
     }
 
     def __init__(self, alarm_histories=None, count=None):
-        """ListAlarmHistoriesResponse - a model defined in huaweicloud sdk"""
+        """ListAlarmHistoriesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param alarm_histories: alarmHistories列表
+        :type alarm_histories: list[:class:`huaweicloudsdkces.v2.AlarmHistoryItemV2`]
+        :param count: 告警历史列表总数
+        :type count: int
+        """
         
         super(ListAlarmHistoriesResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListAlarmHistoriesResponse(SdkResponse):
         alarmHistories列表
 
         :return: The alarm_histories of this ListAlarmHistoriesResponse.
-        :rtype: list[AlarmHistoryItemV2]
+        :rtype: list[:class:`huaweicloudsdkces.v2.AlarmHistoryItemV2`]
         """
         return self._alarm_histories
 
@@ -63,7 +70,7 @@ class ListAlarmHistoriesResponse(SdkResponse):
         alarmHistories列表
 
         :param alarm_histories: The alarm_histories of this ListAlarmHistoriesResponse.
-        :type: list[AlarmHistoryItemV2]
+        :type alarm_histories: list[:class:`huaweicloudsdkces.v2.AlarmHistoryItemV2`]
         """
         self._alarm_histories = alarm_histories
 
@@ -85,7 +92,7 @@ class ListAlarmHistoriesResponse(SdkResponse):
         告警历史列表总数
 
         :param count: The count of this ListAlarmHistoriesResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

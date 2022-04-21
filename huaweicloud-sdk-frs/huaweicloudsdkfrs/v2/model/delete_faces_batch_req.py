@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteFacesBatchReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteFacesBatchReq:
     }
 
     def __init__(self, filter=None):
-        """DeleteFacesBatchReq - a model defined in huaweicloud sdk"""
+        """DeleteFacesBatchReq
+
+        The model defined in huaweicloud sdk
+
+        :param filter: 过滤条件，参考[filter语法](https://support.huaweicloud.com/api-face/face_02_0014.html)。
+        :type filter: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteFacesBatchReq:
         过滤条件，参考[filter语法](https://support.huaweicloud.com/api-face/face_02_0014.html)。
 
         :param filter: The filter of this DeleteFacesBatchReq.
-        :type: str
+        :type filter: str
         """
         self._filter = filter
 

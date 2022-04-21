@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowResourceBindEnterpriseProjectRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowResourceBindEnterpriseProjectRequest:
     }
 
     def __init__(self, enterprise_project_id=None, body=None):
-        """ShowResourceBindEnterpriseProjectRequest - a model defined in huaweicloud sdk"""
+        """ShowResourceBindEnterpriseProjectRequest
+
+        The model defined in huaweicloud sdk
+
+        :param enterprise_project_id: 企业项目ID
+        :type enterprise_project_id: str
+        :param body: Body of the ShowResourceBindEnterpriseProjectRequest
+        :type body: :class:`huaweicloudsdkeps.v1.ResqEpResouce`
+        """
         
         
 
@@ -62,7 +69,7 @@ class ShowResourceBindEnterpriseProjectRequest:
         企业项目ID
 
         :param enterprise_project_id: The enterprise_project_id of this ShowResourceBindEnterpriseProjectRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -72,7 +79,7 @@ class ShowResourceBindEnterpriseProjectRequest:
 
 
         :return: The body of this ShowResourceBindEnterpriseProjectRequest.
-        :rtype: ResqEpResouce
+        :rtype: :class:`huaweicloudsdkeps.v1.ResqEpResouce`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class ShowResourceBindEnterpriseProjectRequest:
 
 
         :param body: The body of this ShowResourceBindEnterpriseProjectRequest.
-        :type: ResqEpResouce
+        :type body: :class:`huaweicloudsdkeps.v1.ResqEpResouce`
         """
         self._body = body
 

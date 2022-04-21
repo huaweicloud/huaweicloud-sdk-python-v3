@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StreamTranscodingTemplate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class StreamTranscodingTemplate:
     }
 
     def __init__(self, domain=None, app_name=None, quality_info=None):
-        """StreamTranscodingTemplate - a model defined in huaweicloud sdk"""
+        """StreamTranscodingTemplate
+
+        The model defined in huaweicloud sdk
+
+        :param domain: 推流域名
+        :type domain: str
+        :param app_name: 应用名称。 默认为“live”，若您需要自定义应用名称，请先提交工单申请。 
+        :type app_name: str
+        :param quality_info: 视频质量信息
+        :type quality_info: list[:class:`huaweicloudsdklive.v1.QualityInfo`]
+        """
         
         
 
@@ -65,7 +74,7 @@ class StreamTranscodingTemplate:
         推流域名
 
         :param domain: The domain of this StreamTranscodingTemplate.
-        :type: str
+        :type domain: str
         """
         self._domain = domain
 
@@ -87,7 +96,7 @@ class StreamTranscodingTemplate:
         应用名称。 默认为“live”，若您需要自定义应用名称，请先提交工单申请。 
 
         :param app_name: The app_name of this StreamTranscodingTemplate.
-        :type: str
+        :type app_name: str
         """
         self._app_name = app_name
 
@@ -98,7 +107,7 @@ class StreamTranscodingTemplate:
         视频质量信息
 
         :return: The quality_info of this StreamTranscodingTemplate.
-        :rtype: list[QualityInfo]
+        :rtype: list[:class:`huaweicloudsdklive.v1.QualityInfo`]
         """
         return self._quality_info
 
@@ -109,7 +118,7 @@ class StreamTranscodingTemplate:
         视频质量信息
 
         :param quality_info: The quality_info of this StreamTranscodingTemplate.
-        :type: list[QualityInfo]
+        :type quality_info: list[:class:`huaweicloudsdklive.v1.QualityInfo`]
         """
         self._quality_info = quality_info
 

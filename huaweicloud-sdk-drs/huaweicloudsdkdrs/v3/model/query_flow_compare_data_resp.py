@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryFlowCompareDataResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class QueryFlowCompareDataResp:
     }
 
     def __init__(self, total_record=None, create_time=None, list=None):
-        """QueryFlowCompareDataResp - a model defined in huaweicloud sdk"""
+        """QueryFlowCompareDataResp
+
+        The model defined in huaweicloud sdk
+
+        :param total_record: 任务总数
+        :type total_record: int
+        :param create_time: 数据生成时间
+        :type create_time: str
+        :param list: 对比结果
+        :type list: list[:class:`huaweicloudsdkdrs.v3.StructDetailVO`]
+        """
         
         
 
@@ -68,7 +77,7 @@ class QueryFlowCompareDataResp:
         任务总数
 
         :param total_record: The total_record of this QueryFlowCompareDataResp.
-        :type: int
+        :type total_record: int
         """
         self._total_record = total_record
 
@@ -90,7 +99,7 @@ class QueryFlowCompareDataResp:
         数据生成时间
 
         :param create_time: The create_time of this QueryFlowCompareDataResp.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -101,7 +110,7 @@ class QueryFlowCompareDataResp:
         对比结果
 
         :return: The list of this QueryFlowCompareDataResp.
-        :rtype: list[StructDetailVO]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.StructDetailVO`]
         """
         return self._list
 
@@ -112,7 +121,7 @@ class QueryFlowCompareDataResp:
         对比结果
 
         :param list: The list of this QueryFlowCompareDataResp.
-        :type: list[StructDetailVO]
+        :type list: list[:class:`huaweicloudsdkdrs.v3.StructDetailVO`]
         """
         self._list = list
 

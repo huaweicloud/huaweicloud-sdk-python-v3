@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDomainTrafficSummaryResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListDomainTrafficSummaryResponse(SdkResponse):
     }
 
     def __init__(self, traffic_list=None, x_request_id=None):
-        """ListDomainTrafficSummaryResponse - a model defined in huaweicloud sdk"""
+        """ListDomainTrafficSummaryResponse
+
+        The model defined in huaweicloud sdk
+
+        :param traffic_list: 域名对应的流量汇总列表。
+        :type traffic_list: list[:class:`huaweicloudsdklive.v2.TrafficSummaryData`]
+        :param x_request_id: 
+        :type x_request_id: str
+        """
         
         super(ListDomainTrafficSummaryResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListDomainTrafficSummaryResponse(SdkResponse):
         域名对应的流量汇总列表。
 
         :return: The traffic_list of this ListDomainTrafficSummaryResponse.
-        :rtype: list[TrafficSummaryData]
+        :rtype: list[:class:`huaweicloudsdklive.v2.TrafficSummaryData`]
         """
         return self._traffic_list
 
@@ -63,7 +70,7 @@ class ListDomainTrafficSummaryResponse(SdkResponse):
         域名对应的流量汇总列表。
 
         :param traffic_list: The traffic_list of this ListDomainTrafficSummaryResponse.
-        :type: list[TrafficSummaryData]
+        :type traffic_list: list[:class:`huaweicloudsdklive.v2.TrafficSummaryData`]
         """
         self._traffic_list = traffic_list
 
@@ -83,7 +90,7 @@ class ListDomainTrafficSummaryResponse(SdkResponse):
 
 
         :param x_request_id: The x_request_id of this ListDomainTrafficSummaryResponse.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchCreateChannelsRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchCreateChannelsRequestBody:
     }
 
     def __init__(self, channels=None):
-        """BatchCreateChannelsRequestBody - a model defined in huaweicloud sdk"""
+        """BatchCreateChannelsRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param channels: 通道列表
+        :type channels: list[:class:`huaweicloudsdkbcs.v2.ChannelCreateInfo`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class BatchCreateChannelsRequestBody:
         通道列表
 
         :return: The channels of this BatchCreateChannelsRequestBody.
-        :rtype: list[ChannelCreateInfo]
+        :rtype: list[:class:`huaweicloudsdkbcs.v2.ChannelCreateInfo`]
         """
         return self._channels
 
@@ -57,7 +62,7 @@ class BatchCreateChannelsRequestBody:
         通道列表
 
         :param channels: The channels of this BatchCreateChannelsRequestBody.
-        :type: list[ChannelCreateInfo]
+        :type channels: list[:class:`huaweicloudsdkbcs.v2.ChannelCreateInfo`]
         """
         self._channels = channels
 

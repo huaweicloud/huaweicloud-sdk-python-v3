@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OsVersionInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class OsVersionInfo:
     }
 
     def __init__(self, platform=None, os_version_key=None, os_version=None, os_bit=None, os_type=None):
-        """OsVersionInfo - a model defined in huaweicloud sdk"""
+        """OsVersionInfo
+
+        The model defined in huaweicloud sdk
+
+        :param platform: 操作系统的平台值
+        :type platform: str
+        :param os_version_key: os_version的key值，和os_version值相同
+        :type os_version_key: str
+        :param os_version: 操作系统的版本
+        :type os_version: str
+        :param os_bit: 操作系统的位数
+        :type os_bit: int
+        :param os_type: 操作系统的类型，Linux或Windows
+        :type os_type: str
+        """
         
         
 
@@ -73,7 +86,7 @@ class OsVersionInfo:
         操作系统的平台值
 
         :param platform: The platform of this OsVersionInfo.
-        :type: str
+        :type platform: str
         """
         self._platform = platform
 
@@ -95,7 +108,7 @@ class OsVersionInfo:
         os_version的key值，和os_version值相同
 
         :param os_version_key: The os_version_key of this OsVersionInfo.
-        :type: str
+        :type os_version_key: str
         """
         self._os_version_key = os_version_key
 
@@ -117,7 +130,7 @@ class OsVersionInfo:
         操作系统的版本
 
         :param os_version: The os_version of this OsVersionInfo.
-        :type: str
+        :type os_version: str
         """
         self._os_version = os_version
 
@@ -139,7 +152,7 @@ class OsVersionInfo:
         操作系统的位数
 
         :param os_bit: The os_bit of this OsVersionInfo.
-        :type: int
+        :type os_bit: int
         """
         self._os_bit = os_bit
 
@@ -161,7 +174,7 @@ class OsVersionInfo:
         操作系统的类型，Linux或Windows
 
         :param os_type: The os_type of this OsVersionInfo.
-        :type: str
+        :type os_type: str
         """
         self._os_type = os_type
 

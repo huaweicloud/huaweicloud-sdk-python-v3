@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateSubNetworkInterfaceRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateSubNetworkInterfaceRequestBody:
     }
 
     def __init__(self, dry_run=None, sub_network_interface=None):
-        """UpdateSubNetworkInterfaceRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateSubNetworkInterfaceRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param dry_run: 功能说明：是否只预检此次请求 取值范围： -true：发送检查请求，不会更新辅助弹性网卡。检查项包括是否填写了必需参数、请求格式、业务限制。如果检查不通过，则返回对应错误。如果检查通过，则返回响应码202。 -false（默认值）：发送正常请求，并直接更新辅助弹性网卡。
+        :type dry_run: bool
+        :param sub_network_interface: 
+        :type sub_network_interface: :class:`huaweicloudsdkvpc.v3.UpdateSubNetworkInterfaceOption`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateSubNetworkInterfaceRequestBody:
         功能说明：是否只预检此次请求 取值范围： -true：发送检查请求，不会更新辅助弹性网卡。检查项包括是否填写了必需参数、请求格式、业务限制。如果检查不通过，则返回对应错误。如果检查通过，则返回响应码202。 -false（默认值）：发送正常请求，并直接更新辅助弹性网卡。
 
         :param dry_run: The dry_run of this UpdateSubNetworkInterfaceRequestBody.
-        :type: bool
+        :type dry_run: bool
         """
         self._dry_run = dry_run
 
@@ -72,7 +79,7 @@ class UpdateSubNetworkInterfaceRequestBody:
 
 
         :return: The sub_network_interface of this UpdateSubNetworkInterfaceRequestBody.
-        :rtype: UpdateSubNetworkInterfaceOption
+        :rtype: :class:`huaweicloudsdkvpc.v3.UpdateSubNetworkInterfaceOption`
         """
         return self._sub_network_interface
 
@@ -82,7 +89,7 @@ class UpdateSubNetworkInterfaceRequestBody:
 
 
         :param sub_network_interface: The sub_network_interface of this UpdateSubNetworkInterfaceRequestBody.
-        :type: UpdateSubNetworkInterfaceOption
+        :type sub_network_interface: :class:`huaweicloudsdkvpc.v3.UpdateSubNetworkInterfaceOption`
         """
         self._sub_network_interface = sub_network_interface
 

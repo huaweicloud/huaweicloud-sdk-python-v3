@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateTasksRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class CreateTasksRequestBody:
     }
 
     def __init__(self, name=None, description=None, input=None, output=None, service_version=None, edge_pool_id=None, resource_order_id=None, service_config=None):
-        """CreateTasksRequestBody - a model defined in huaweicloud sdk"""
+        """CreateTasksRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param name: 作业的名称
+        :type name: str
+        :param description: 作业的描述
+        :type description: str
+        :param input: 
+        :type input: :class:`huaweicloudsdkcampusgo.v2.TaskInput`
+        :param output: 
+        :type output: :class:`huaweicloudsdkcampusgo.v2.TaskOutput`
+        :param service_version: 作业对应服务的版本号
+        :type service_version: str
+        :param edge_pool_id: 仅边缘作业需填且必填，作业运行指定的边缘运行池ID
+        :type edge_pool_id: str
+        :param resource_order_id: 作业指定的算法能力包包周期订单ID
+        :type resource_order_id: str
+        :param service_config: 
+        :type service_config: :class:`huaweicloudsdkcampusgo.v2.TaskServiceConfig`
+        """
         
         
 
@@ -89,7 +108,7 @@ class CreateTasksRequestBody:
         作业的名称
 
         :param name: The name of this CreateTasksRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -111,7 +130,7 @@ class CreateTasksRequestBody:
         作业的描述
 
         :param description: The description of this CreateTasksRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -121,7 +140,7 @@ class CreateTasksRequestBody:
 
 
         :return: The input of this CreateTasksRequestBody.
-        :rtype: TaskInput
+        :rtype: :class:`huaweicloudsdkcampusgo.v2.TaskInput`
         """
         return self._input
 
@@ -131,7 +150,7 @@ class CreateTasksRequestBody:
 
 
         :param input: The input of this CreateTasksRequestBody.
-        :type: TaskInput
+        :type input: :class:`huaweicloudsdkcampusgo.v2.TaskInput`
         """
         self._input = input
 
@@ -141,7 +160,7 @@ class CreateTasksRequestBody:
 
 
         :return: The output of this CreateTasksRequestBody.
-        :rtype: TaskOutput
+        :rtype: :class:`huaweicloudsdkcampusgo.v2.TaskOutput`
         """
         return self._output
 
@@ -151,7 +170,7 @@ class CreateTasksRequestBody:
 
 
         :param output: The output of this CreateTasksRequestBody.
-        :type: TaskOutput
+        :type output: :class:`huaweicloudsdkcampusgo.v2.TaskOutput`
         """
         self._output = output
 
@@ -173,7 +192,7 @@ class CreateTasksRequestBody:
         作业对应服务的版本号
 
         :param service_version: The service_version of this CreateTasksRequestBody.
-        :type: str
+        :type service_version: str
         """
         self._service_version = service_version
 
@@ -195,7 +214,7 @@ class CreateTasksRequestBody:
         仅边缘作业需填且必填，作业运行指定的边缘运行池ID
 
         :param edge_pool_id: The edge_pool_id of this CreateTasksRequestBody.
-        :type: str
+        :type edge_pool_id: str
         """
         self._edge_pool_id = edge_pool_id
 
@@ -217,7 +236,7 @@ class CreateTasksRequestBody:
         作业指定的算法能力包包周期订单ID
 
         :param resource_order_id: The resource_order_id of this CreateTasksRequestBody.
-        :type: str
+        :type resource_order_id: str
         """
         self._resource_order_id = resource_order_id
 
@@ -227,7 +246,7 @@ class CreateTasksRequestBody:
 
 
         :return: The service_config of this CreateTasksRequestBody.
-        :rtype: TaskServiceConfig
+        :rtype: :class:`huaweicloudsdkcampusgo.v2.TaskServiceConfig`
         """
         return self._service_config
 
@@ -237,7 +256,7 @@ class CreateTasksRequestBody:
 
 
         :param service_config: The service_config of this CreateTasksRequestBody.
-        :type: TaskServiceConfig
+        :type service_config: :class:`huaweicloudsdkcampusgo.v2.TaskServiceConfig`
         """
         self._service_config = service_config
 

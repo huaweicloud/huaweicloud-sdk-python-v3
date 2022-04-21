@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSubCustomerBillDetailResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListSubCustomerBillDetailResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, currency=None, fee_records=None):
-        """ListSubCustomerBillDetailResponse - a model defined in huaweicloud sdk"""
+        """ListSubCustomerBillDetailResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total_count: 结果集数量，只有成功才返回这个参数。
+        :type total_count: int
+        :param currency: 货币单位代码： CNY：人民币
+        :type currency: str
+        :param fee_records: 资源费用记录数据。 具体请参见表2。
+        :type fee_records: list[:class:`huaweicloudsdkbss.v2.SubCustomerMonthlyBillDetail`]
+        """
         
         super(ListSubCustomerBillDetailResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListSubCustomerBillDetailResponse(SdkResponse):
         结果集数量，只有成功才返回这个参数。
 
         :param total_count: The total_count of this ListSubCustomerBillDetailResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 
@@ -90,7 +99,7 @@ class ListSubCustomerBillDetailResponse(SdkResponse):
         货币单位代码： CNY：人民币
 
         :param currency: The currency of this ListSubCustomerBillDetailResponse.
-        :type: str
+        :type currency: str
         """
         self._currency = currency
 
@@ -101,7 +110,7 @@ class ListSubCustomerBillDetailResponse(SdkResponse):
         资源费用记录数据。 具体请参见表2。
 
         :return: The fee_records of this ListSubCustomerBillDetailResponse.
-        :rtype: list[SubCustomerMonthlyBillDetail]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.SubCustomerMonthlyBillDetail`]
         """
         return self._fee_records
 
@@ -112,7 +121,7 @@ class ListSubCustomerBillDetailResponse(SdkResponse):
         资源费用记录数据。 具体请参见表2。
 
         :param fee_records: The fee_records of this ListSubCustomerBillDetailResponse.
-        :type: list[SubCustomerMonthlyBillDetail]
+        :type fee_records: list[:class:`huaweicloudsdkbss.v2.SubCustomerMonthlyBillDetail`]
         """
         self._fee_records = fee_records
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeyValue:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class KeyValue:
     }
 
     def __init__(self, key=None, value=None):
-        """KeyValue - a model defined in huaweicloud sdk"""
+        """KeyValue
+
+        The model defined in huaweicloud sdk
+
+        :param key: 键。
+        :type key: str
+        :param value: 值。
+        :type value: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class KeyValue:
         键。
 
         :param key: The key of this KeyValue.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -85,7 +92,7 @@ class KeyValue:
         值。
 
         :param value: The value of this KeyValue.
-        :type: str
+        :type value: str
         """
         self._value = value
 

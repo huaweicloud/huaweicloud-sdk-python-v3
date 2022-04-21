@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowRepoDomainsResponse:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class ShowRepoDomainsResponse:
     }
 
     def __init__(self, namespace=None, repository=None, access_domain=None, permit=None, deadline=None, description=None, creator_id=None, creator_name=None, created=None, updated=None, status=None):
-        """ShowRepoDomainsResponse - a model defined in huaweicloud sdk"""
+        """ShowRepoDomainsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param namespace: 命名空间
+        :type namespace: str
+        :param repository: 镜像仓库
+        :type repository: str
+        :param access_domain: 共享租户名
+        :type access_domain: str
+        :param permit: 权限
+        :type permit: str
+        :param deadline: 截止时间
+        :type deadline: str
+        :param description: 描述
+        :type description: str
+        :param creator_id: 创建者ID
+        :type creator_id: str
+        :param creator_name: 创建者名称
+        :type creator_name: str
+        :param created: 镜像创建时间，UTC时间格式，时间为UTC标准时间，用户需要根据本地时间计算偏移量；如东8区需要+8:00
+        :type created: str
+        :param updated: 镜像更新时间，UTC时间格式，时间为UTC标准时间，用户需要根据本地时间计算偏移量；如东8区需要+8:00
+        :type updated: str
+        :param status: 是否过期：true:有效；false:过期
+        :type status: bool
+        """
         
         
 
@@ -97,7 +122,7 @@ class ShowRepoDomainsResponse:
         命名空间
 
         :param namespace: The namespace of this ShowRepoDomainsResponse.
-        :type: str
+        :type namespace: str
         """
         self._namespace = namespace
 
@@ -119,7 +144,7 @@ class ShowRepoDomainsResponse:
         镜像仓库
 
         :param repository: The repository of this ShowRepoDomainsResponse.
-        :type: str
+        :type repository: str
         """
         self._repository = repository
 
@@ -141,7 +166,7 @@ class ShowRepoDomainsResponse:
         共享租户名
 
         :param access_domain: The access_domain of this ShowRepoDomainsResponse.
-        :type: str
+        :type access_domain: str
         """
         self._access_domain = access_domain
 
@@ -163,7 +188,7 @@ class ShowRepoDomainsResponse:
         权限
 
         :param permit: The permit of this ShowRepoDomainsResponse.
-        :type: str
+        :type permit: str
         """
         self._permit = permit
 
@@ -185,7 +210,7 @@ class ShowRepoDomainsResponse:
         截止时间
 
         :param deadline: The deadline of this ShowRepoDomainsResponse.
-        :type: str
+        :type deadline: str
         """
         self._deadline = deadline
 
@@ -207,7 +232,7 @@ class ShowRepoDomainsResponse:
         描述
 
         :param description: The description of this ShowRepoDomainsResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -229,7 +254,7 @@ class ShowRepoDomainsResponse:
         创建者ID
 
         :param creator_id: The creator_id of this ShowRepoDomainsResponse.
-        :type: str
+        :type creator_id: str
         """
         self._creator_id = creator_id
 
@@ -251,7 +276,7 @@ class ShowRepoDomainsResponse:
         创建者名称
 
         :param creator_name: The creator_name of this ShowRepoDomainsResponse.
-        :type: str
+        :type creator_name: str
         """
         self._creator_name = creator_name
 
@@ -273,7 +298,7 @@ class ShowRepoDomainsResponse:
         镜像创建时间，UTC时间格式，时间为UTC标准时间，用户需要根据本地时间计算偏移量；如东8区需要+8:00
 
         :param created: The created of this ShowRepoDomainsResponse.
-        :type: str
+        :type created: str
         """
         self._created = created
 
@@ -295,7 +320,7 @@ class ShowRepoDomainsResponse:
         镜像更新时间，UTC时间格式，时间为UTC标准时间，用户需要根据本地时间计算偏移量；如东8区需要+8:00
 
         :param updated: The updated of this ShowRepoDomainsResponse.
-        :type: str
+        :type updated: str
         """
         self._updated = updated
 
@@ -317,7 +342,7 @@ class ShowRepoDomainsResponse:
         是否过期：true:有效；false:过期
 
         :param status: The status of this ShowRepoDomainsResponse.
-        :type: bool
+        :type status: bool
         """
         self._status = status
 

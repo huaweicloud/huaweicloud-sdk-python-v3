@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListClustersResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListClustersResponse(SdkResponse):
     }
 
     def __init__(self, cluster_total=None, clusters=None):
-        """ListClustersResponse - a model defined in huaweicloud sdk"""
+        """ListClustersResponse
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_total: 集群列表总数。
+        :type cluster_total: int
+        :param clusters: 集群参数。
+        :type clusters: list[:class:`huaweicloudsdkmrs.v1.Cluster`]
+        """
         
         super(ListClustersResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListClustersResponse(SdkResponse):
         集群列表总数。
 
         :param cluster_total: The cluster_total of this ListClustersResponse.
-        :type: int
+        :type cluster_total: int
         """
         self._cluster_total = cluster_total
 
@@ -74,7 +81,7 @@ class ListClustersResponse(SdkResponse):
         集群参数。
 
         :return: The clusters of this ListClustersResponse.
-        :rtype: list[Cluster]
+        :rtype: list[:class:`huaweicloudsdkmrs.v1.Cluster`]
         """
         return self._clusters
 
@@ -85,7 +92,7 @@ class ListClustersResponse(SdkResponse):
         集群参数。
 
         :param clusters: The clusters of this ListClustersResponse.
-        :type: list[Cluster]
+        :type clusters: list[:class:`huaweicloudsdkmrs.v1.Cluster`]
         """
         self._clusters = clusters
 

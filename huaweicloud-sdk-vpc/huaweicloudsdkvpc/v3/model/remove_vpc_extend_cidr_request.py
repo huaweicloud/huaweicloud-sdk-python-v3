@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RemoveVpcExtendCidrRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RemoveVpcExtendCidrRequest:
     }
 
     def __init__(self, vpc_id=None, body=None):
-        """RemoveVpcExtendCidrRequest - a model defined in huaweicloud sdk"""
+        """RemoveVpcExtendCidrRequest
+
+        The model defined in huaweicloud sdk
+
+        :param vpc_id: VPC资源ID
+        :type vpc_id: str
+        :param body: Body of the RemoveVpcExtendCidrRequest
+        :type body: :class:`huaweicloudsdkvpc.v3.RemoveVpcExtendCidrRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class RemoveVpcExtendCidrRequest:
         VPC资源ID
 
         :param vpc_id: The vpc_id of this RemoveVpcExtendCidrRequest.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -72,7 +79,7 @@ class RemoveVpcExtendCidrRequest:
 
 
         :return: The body of this RemoveVpcExtendCidrRequest.
-        :rtype: RemoveVpcExtendCidrRequestBody
+        :rtype: :class:`huaweicloudsdkvpc.v3.RemoveVpcExtendCidrRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class RemoveVpcExtendCidrRequest:
 
 
         :param body: The body of this RemoveVpcExtendCidrRequest.
-        :type: RemoveVpcExtendCidrRequestBody
+        :type body: :class:`huaweicloudsdkvpc.v3.RemoveVpcExtendCidrRequestBody`
         """
         self._body = body
 

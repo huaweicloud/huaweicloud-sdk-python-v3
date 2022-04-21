@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListResourceByTagsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListResourceByTagsRequest:
     }
 
     def __init__(self, ief_instance_id=None, resource_type=None, body=None):
-        """ListResourceByTagsRequest - a model defined in huaweicloud sdk"""
+        """ListResourceByTagsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param ief_instance_id: 铂金版实例ID，专业版实例为空值
+        :type ief_instance_id: str
+        :param resource_type: 资源类型 - ief-edge_node - ief-deployment - ief-application - ief-device
+        :type resource_type: str
+        :param body: Body of the ListResourceByTagsRequest
+        :type body: :class:`huaweicloudsdkief.v1.Tags`
+        """
         
         
 
@@ -67,7 +76,7 @@ class ListResourceByTagsRequest:
         铂金版实例ID，专业版实例为空值
 
         :param ief_instance_id: The ief_instance_id of this ListResourceByTagsRequest.
-        :type: str
+        :type ief_instance_id: str
         """
         self._ief_instance_id = ief_instance_id
 
@@ -89,7 +98,7 @@ class ListResourceByTagsRequest:
         资源类型 - ief-edge_node - ief-deployment - ief-application - ief-device
 
         :param resource_type: The resource_type of this ListResourceByTagsRequest.
-        :type: str
+        :type resource_type: str
         """
         self._resource_type = resource_type
 
@@ -99,7 +108,7 @@ class ListResourceByTagsRequest:
 
 
         :return: The body of this ListResourceByTagsRequest.
-        :rtype: Tags
+        :rtype: :class:`huaweicloudsdkief.v1.Tags`
         """
         return self._body
 
@@ -109,7 +118,7 @@ class ListResourceByTagsRequest:
 
 
         :param body: The body of this ListResourceByTagsRequest.
-        :type: Tags
+        :type body: :class:`huaweicloudsdkief.v1.Tags`
         """
         self._body = body
 

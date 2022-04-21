@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateTbSessionResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class CreateTbSessionResponse(SdkResponse):
     }
 
     def __init__(self, question=None, action=None, session_id=None, question_id=None, audio_file_path=None):
-        """CreateTbSessionResponse - a model defined in huaweicloud sdk"""
+        """CreateTbSessionResponse
+
+        The model defined in huaweicloud sdk
+
+        :param question: 问题。
+        :type question: str
+        :param action: 0表示继续， 1表示直接中断， 2表示播放结束音后中断。
+        :type action: int
+        :param session_id: 会话ID。
+        :type session_id: str
+        :param question_id: 问题ID。
+        :type question_id: str
+        :param audio_file_path: 语音文件地址。
+        :type audio_file_path: str
+        """
         
         super(CreateTbSessionResponse, self).__init__()
 
@@ -78,7 +91,7 @@ class CreateTbSessionResponse(SdkResponse):
         问题。
 
         :param question: The question of this CreateTbSessionResponse.
-        :type: str
+        :type question: str
         """
         self._question = question
 
@@ -100,7 +113,7 @@ class CreateTbSessionResponse(SdkResponse):
         0表示继续， 1表示直接中断， 2表示播放结束音后中断。
 
         :param action: The action of this CreateTbSessionResponse.
-        :type: int
+        :type action: int
         """
         self._action = action
 
@@ -122,7 +135,7 @@ class CreateTbSessionResponse(SdkResponse):
         会话ID。
 
         :param session_id: The session_id of this CreateTbSessionResponse.
-        :type: str
+        :type session_id: str
         """
         self._session_id = session_id
 
@@ -144,7 +157,7 @@ class CreateTbSessionResponse(SdkResponse):
         问题ID。
 
         :param question_id: The question_id of this CreateTbSessionResponse.
-        :type: str
+        :type question_id: str
         """
         self._question_id = question_id
 
@@ -166,7 +179,7 @@ class CreateTbSessionResponse(SdkResponse):
         语音文件地址。
 
         :param audio_file_path: The audio_file_path of this CreateTbSessionResponse.
-        :type: str
+        :type audio_file_path: str
         """
         self._audio_file_path = audio_file_path
 

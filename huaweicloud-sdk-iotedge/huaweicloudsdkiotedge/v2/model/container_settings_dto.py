@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ContainerSettingsDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ContainerSettingsDTO:
     }
 
     def __init__(self, configs=None, image_url=None, envs=None, volumes=None, resources=None):
-        """ContainerSettingsDTO - a model defined in huaweicloud sdk"""
+        """ContainerSettingsDTO
+
+        The model defined in huaweicloud sdk
+
+        :param configs: 
+        :type configs: :class:`huaweicloudsdkiotedge.v2.ContainerConfigsDTO`
+        :param image_url: 镜像存储地址
+        :type image_url: str
+        :param envs: 环境变量
+        :type envs: object
+        :param volumes: 卷配置
+        :type volumes: list[:class:`huaweicloudsdkiotedge.v2.VolumeDTO`]
+        :param resources: 
+        :type resources: :class:`huaweicloudsdkiotedge.v2.ResourceDTO`
+        """
         
         
 
@@ -65,7 +78,7 @@ class ContainerSettingsDTO:
 
 
         :return: The configs of this ContainerSettingsDTO.
-        :rtype: ContainerConfigsDTO
+        :rtype: :class:`huaweicloudsdkiotedge.v2.ContainerConfigsDTO`
         """
         return self._configs
 
@@ -75,7 +88,7 @@ class ContainerSettingsDTO:
 
 
         :param configs: The configs of this ContainerSettingsDTO.
-        :type: ContainerConfigsDTO
+        :type configs: :class:`huaweicloudsdkiotedge.v2.ContainerConfigsDTO`
         """
         self._configs = configs
 
@@ -97,7 +110,7 @@ class ContainerSettingsDTO:
         镜像存储地址
 
         :param image_url: The image_url of this ContainerSettingsDTO.
-        :type: str
+        :type image_url: str
         """
         self._image_url = image_url
 
@@ -119,7 +132,7 @@ class ContainerSettingsDTO:
         环境变量
 
         :param envs: The envs of this ContainerSettingsDTO.
-        :type: object
+        :type envs: object
         """
         self._envs = envs
 
@@ -130,7 +143,7 @@ class ContainerSettingsDTO:
         卷配置
 
         :return: The volumes of this ContainerSettingsDTO.
-        :rtype: list[VolumeDTO]
+        :rtype: list[:class:`huaweicloudsdkiotedge.v2.VolumeDTO`]
         """
         return self._volumes
 
@@ -141,7 +154,7 @@ class ContainerSettingsDTO:
         卷配置
 
         :param volumes: The volumes of this ContainerSettingsDTO.
-        :type: list[VolumeDTO]
+        :type volumes: list[:class:`huaweicloudsdkiotedge.v2.VolumeDTO`]
         """
         self._volumes = volumes
 
@@ -151,7 +164,7 @@ class ContainerSettingsDTO:
 
 
         :return: The resources of this ContainerSettingsDTO.
-        :rtype: ResourceDTO
+        :rtype: :class:`huaweicloudsdkiotedge.v2.ResourceDTO`
         """
         return self._resources
 
@@ -161,7 +174,7 @@ class ContainerSettingsDTO:
 
 
         :param resources: The resources of this ContainerSettingsDTO.
-        :type: ResourceDTO
+        :type resources: :class:`huaweicloudsdkiotedge.v2.ResourceDTO`
         """
         self._resources = resources
 

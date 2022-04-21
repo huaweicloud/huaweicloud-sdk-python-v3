@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateBlackWhiteListRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateBlackWhiteListRequest:
     }
 
     def __init__(self, domain_id=None, enterprise_project_id=None, body=None):
-        """UpdateBlackWhiteListRequest - a model defined in huaweicloud sdk"""
+        """UpdateBlackWhiteListRequest
+
+        The model defined in huaweicloud sdk
+
+        :param domain_id: 需要设置IP黑白名单的域名id。获取方法请参见查询加速域名。
+        :type domain_id: str
+        :param enterprise_project_id: 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子账号调用接口时，该参数必传。
+        :type enterprise_project_id: str
+        :param body: Body of the UpdateBlackWhiteListRequest
+        :type body: :class:`huaweicloudsdkcdn.v1.BlackWhiteListBody`
+        """
         
         
 
@@ -67,7 +76,7 @@ class UpdateBlackWhiteListRequest:
         需要设置IP黑白名单的域名id。获取方法请参见查询加速域名。
 
         :param domain_id: The domain_id of this UpdateBlackWhiteListRequest.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -89,7 +98,7 @@ class UpdateBlackWhiteListRequest:
         当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子账号调用接口时，该参数必传。
 
         :param enterprise_project_id: The enterprise_project_id of this UpdateBlackWhiteListRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -99,7 +108,7 @@ class UpdateBlackWhiteListRequest:
 
 
         :return: The body of this UpdateBlackWhiteListRequest.
-        :rtype: BlackWhiteListBody
+        :rtype: :class:`huaweicloudsdkcdn.v1.BlackWhiteListBody`
         """
         return self._body
 
@@ -109,7 +118,7 @@ class UpdateBlackWhiteListRequest:
 
 
         :param body: The body of this UpdateBlackWhiteListRequest.
-        :type: BlackWhiteListBody
+        :type body: :class:`huaweicloudsdkcdn.v1.BlackWhiteListBody`
         """
         self._body = body
 

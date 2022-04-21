@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateFirewallRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateFirewallRequestBody:
     }
 
     def __init__(self, firewall=None):
-        """CreateFirewallRequestBody - a model defined in huaweicloud sdk"""
+        """CreateFirewallRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param firewall: 
+        :type firewall: :class:`huaweicloudsdkiec.v1.CreateFirewallOption`
+        """
         
         
 
@@ -45,7 +50,7 @@ class CreateFirewallRequestBody:
 
 
         :return: The firewall of this CreateFirewallRequestBody.
-        :rtype: CreateFirewallOption
+        :rtype: :class:`huaweicloudsdkiec.v1.CreateFirewallOption`
         """
         return self._firewall
 
@@ -55,7 +60,7 @@ class CreateFirewallRequestBody:
 
 
         :param firewall: The firewall of this CreateFirewallRequestBody.
-        :type: CreateFirewallOption
+        :type firewall: :class:`huaweicloudsdkiec.v1.CreateFirewallOption`
         """
         self._firewall = firewall
 

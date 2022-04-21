@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExtendClusterGrowReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ExtendClusterGrowReq:
     }
 
     def __init__(self, modify_size=None):
-        """ExtendClusterGrowReq - a model defined in huaweicloud sdk"""
+        """ExtendClusterGrowReq
+
+        The model defined in huaweicloud sdk
+
+        :param modify_size: 扩容实例个数。  说明：集群已有实例个数和扩容实例个数总和不能超过32。
+        :type modify_size: int
+        """
         
         
 
@@ -57,7 +62,7 @@ class ExtendClusterGrowReq:
         扩容实例个数。  说明：集群已有实例个数和扩容实例个数总和不能超过32。
 
         :param modify_size: The modify_size of this ExtendClusterGrowReq.
-        :type: int
+        :type modify_size: int
         """
         self._modify_size = modify_size
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListIpGroupsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ListIpGroupsRequest:
     }
 
     def __init__(self, marker=None, limit=None, page_reverse=None, id=None, name=None, description=None, ip_list=None):
-        """ListIpGroupsRequest - a model defined in huaweicloud sdk"""
+        """ListIpGroupsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param marker: 上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
+        :type marker: str
+        :param limit: 每页返回的个数。
+        :type limit: int
+        :param page_reverse: 分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。  使用说明： - 必须与limit一起使用。
+        :type page_reverse: bool
+        :param id: IP地址组的ID。
+        :type id: list[str]
+        :param name: IP地址组的名称。
+        :type name: list[str]
+        :param description: IP地址组的描述信息。
+        :type description: list[str]
+        :param ip_list: IP地址，多个用逗号分隔。
+        :type ip_list: list[str]
+        """
         
         
 
@@ -88,7 +105,7 @@ class ListIpGroupsRequest:
         上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
         :param marker: The marker of this ListIpGroupsRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -110,7 +127,7 @@ class ListIpGroupsRequest:
         每页返回的个数。
 
         :param limit: The limit of this ListIpGroupsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -132,7 +149,7 @@ class ListIpGroupsRequest:
         分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。  使用说明： - 必须与limit一起使用。
 
         :param page_reverse: The page_reverse of this ListIpGroupsRequest.
-        :type: bool
+        :type page_reverse: bool
         """
         self._page_reverse = page_reverse
 
@@ -154,7 +171,7 @@ class ListIpGroupsRequest:
         IP地址组的ID。
 
         :param id: The id of this ListIpGroupsRequest.
-        :type: list[str]
+        :type id: list[str]
         """
         self._id = id
 
@@ -176,7 +193,7 @@ class ListIpGroupsRequest:
         IP地址组的名称。
 
         :param name: The name of this ListIpGroupsRequest.
-        :type: list[str]
+        :type name: list[str]
         """
         self._name = name
 
@@ -198,7 +215,7 @@ class ListIpGroupsRequest:
         IP地址组的描述信息。
 
         :param description: The description of this ListIpGroupsRequest.
-        :type: list[str]
+        :type description: list[str]
         """
         self._description = description
 
@@ -220,7 +237,7 @@ class ListIpGroupsRequest:
         IP地址，多个用逗号分隔。
 
         :param ip_list: The ip_list of this ListIpGroupsRequest.
-        :type: list[str]
+        :type ip_list: list[str]
         """
         self._ip_list = ip_list
 

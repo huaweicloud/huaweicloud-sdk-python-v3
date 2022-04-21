@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateResourceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateResourceRequest:
     }
 
     def __init__(self, body=None):
-        """CreateResourceRequest - a model defined in huaweicloud sdk"""
+        """CreateResourceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateResourceRequest
+        :type body: :class:`huaweicloudsdkdgc.v1.ResourceInfo`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateResourceRequest:
 
 
         :return: The body of this CreateResourceRequest.
-        :rtype: ResourceInfo
+        :rtype: :class:`huaweicloudsdkdgc.v1.ResourceInfo`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateResourceRequest:
 
 
         :param body: The body of this CreateResourceRequest.
-        :type: ResourceInfo
+        :type body: :class:`huaweicloudsdkdgc.v1.ResourceInfo`
         """
         self._body = body
 

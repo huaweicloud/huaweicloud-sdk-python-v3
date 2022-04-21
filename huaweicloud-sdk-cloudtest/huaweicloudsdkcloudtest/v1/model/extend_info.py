@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExtendInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class ExtendInfo:
     }
 
     def __init__(self, author=None, updator=None, domain=None, description=None, preparation=None, steps=None, label_list=None, defect_list=None, module=None, issue=None, test_version_id=None, fixed_version=None):
-        """ExtendInfo - a model defined in huaweicloud sdk"""
+        """ExtendInfo
+
+        The model defined in huaweicloud sdk
+
+        :param author: 
+        :type author: :class:`huaweicloudsdkcloudtest.v1.ExtendAuthorInfo`
+        :param updator: 
+        :type updator: :class:`huaweicloudsdkcloudtest.v1.ExtendAuthorInfo`
+        :param domain: 
+        :type domain: :class:`huaweicloudsdkcloudtest.v1.AssignedUserInfo`
+        :param description: 描述信息
+        :type description: str
+        :param preparation: 前置条件
+        :type preparation: str
+        :param steps: 测试步骤，数组长度小于10
+        :type steps: list[:class:`huaweicloudsdkcloudtest.v1.ExternalServiceCaseStep`]
+        :param label_list: 标签信息
+        :type label_list: list[:class:`huaweicloudsdkcloudtest.v1.AssignedUserInfo`]
+        :param defect_list: 缺陷信息
+        :type defect_list: list[:class:`huaweicloudsdkcloudtest.v1.AssignedUserInfo`]
+        :param module: 
+        :type module: :class:`huaweicloudsdkcloudtest.v1.AssignedUserInfo`
+        :param issue: 
+        :type issue: :class:`huaweicloudsdkcloudtest.v1.AssignedUserInfo`
+        :param test_version_id: 测试版本号
+        :type test_version_id: str
+        :param fixed_version: 
+        :type fixed_version: :class:`huaweicloudsdkcloudtest.v1.AssignedUserInfo`
+        """
         
         
 
@@ -101,7 +128,7 @@ class ExtendInfo:
 
 
         :return: The author of this ExtendInfo.
-        :rtype: ExtendAuthorInfo
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ExtendAuthorInfo`
         """
         return self._author
 
@@ -111,7 +138,7 @@ class ExtendInfo:
 
 
         :param author: The author of this ExtendInfo.
-        :type: ExtendAuthorInfo
+        :type author: :class:`huaweicloudsdkcloudtest.v1.ExtendAuthorInfo`
         """
         self._author = author
 
@@ -121,7 +148,7 @@ class ExtendInfo:
 
 
         :return: The updator of this ExtendInfo.
-        :rtype: ExtendAuthorInfo
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ExtendAuthorInfo`
         """
         return self._updator
 
@@ -131,7 +158,7 @@ class ExtendInfo:
 
 
         :param updator: The updator of this ExtendInfo.
-        :type: ExtendAuthorInfo
+        :type updator: :class:`huaweicloudsdkcloudtest.v1.ExtendAuthorInfo`
         """
         self._updator = updator
 
@@ -141,7 +168,7 @@ class ExtendInfo:
 
 
         :return: The domain of this ExtendInfo.
-        :rtype: AssignedUserInfo
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.AssignedUserInfo`
         """
         return self._domain
 
@@ -151,7 +178,7 @@ class ExtendInfo:
 
 
         :param domain: The domain of this ExtendInfo.
-        :type: AssignedUserInfo
+        :type domain: :class:`huaweicloudsdkcloudtest.v1.AssignedUserInfo`
         """
         self._domain = domain
 
@@ -173,7 +200,7 @@ class ExtendInfo:
         描述信息
 
         :param description: The description of this ExtendInfo.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -195,7 +222,7 @@ class ExtendInfo:
         前置条件
 
         :param preparation: The preparation of this ExtendInfo.
-        :type: str
+        :type preparation: str
         """
         self._preparation = preparation
 
@@ -206,7 +233,7 @@ class ExtendInfo:
         测试步骤，数组长度小于10
 
         :return: The steps of this ExtendInfo.
-        :rtype: list[ExternalServiceCaseStep]
+        :rtype: list[:class:`huaweicloudsdkcloudtest.v1.ExternalServiceCaseStep`]
         """
         return self._steps
 
@@ -217,7 +244,7 @@ class ExtendInfo:
         测试步骤，数组长度小于10
 
         :param steps: The steps of this ExtendInfo.
-        :type: list[ExternalServiceCaseStep]
+        :type steps: list[:class:`huaweicloudsdkcloudtest.v1.ExternalServiceCaseStep`]
         """
         self._steps = steps
 
@@ -228,7 +255,7 @@ class ExtendInfo:
         标签信息
 
         :return: The label_list of this ExtendInfo.
-        :rtype: list[AssignedUserInfo]
+        :rtype: list[:class:`huaweicloudsdkcloudtest.v1.AssignedUserInfo`]
         """
         return self._label_list
 
@@ -239,7 +266,7 @@ class ExtendInfo:
         标签信息
 
         :param label_list: The label_list of this ExtendInfo.
-        :type: list[AssignedUserInfo]
+        :type label_list: list[:class:`huaweicloudsdkcloudtest.v1.AssignedUserInfo`]
         """
         self._label_list = label_list
 
@@ -250,7 +277,7 @@ class ExtendInfo:
         缺陷信息
 
         :return: The defect_list of this ExtendInfo.
-        :rtype: list[AssignedUserInfo]
+        :rtype: list[:class:`huaweicloudsdkcloudtest.v1.AssignedUserInfo`]
         """
         return self._defect_list
 
@@ -261,7 +288,7 @@ class ExtendInfo:
         缺陷信息
 
         :param defect_list: The defect_list of this ExtendInfo.
-        :type: list[AssignedUserInfo]
+        :type defect_list: list[:class:`huaweicloudsdkcloudtest.v1.AssignedUserInfo`]
         """
         self._defect_list = defect_list
 
@@ -271,7 +298,7 @@ class ExtendInfo:
 
 
         :return: The module of this ExtendInfo.
-        :rtype: AssignedUserInfo
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.AssignedUserInfo`
         """
         return self._module
 
@@ -281,7 +308,7 @@ class ExtendInfo:
 
 
         :param module: The module of this ExtendInfo.
-        :type: AssignedUserInfo
+        :type module: :class:`huaweicloudsdkcloudtest.v1.AssignedUserInfo`
         """
         self._module = module
 
@@ -291,7 +318,7 @@ class ExtendInfo:
 
 
         :return: The issue of this ExtendInfo.
-        :rtype: AssignedUserInfo
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.AssignedUserInfo`
         """
         return self._issue
 
@@ -301,7 +328,7 @@ class ExtendInfo:
 
 
         :param issue: The issue of this ExtendInfo.
-        :type: AssignedUserInfo
+        :type issue: :class:`huaweicloudsdkcloudtest.v1.AssignedUserInfo`
         """
         self._issue = issue
 
@@ -323,7 +350,7 @@ class ExtendInfo:
         测试版本号
 
         :param test_version_id: The test_version_id of this ExtendInfo.
-        :type: str
+        :type test_version_id: str
         """
         self._test_version_id = test_version_id
 
@@ -333,7 +360,7 @@ class ExtendInfo:
 
 
         :return: The fixed_version of this ExtendInfo.
-        :rtype: AssignedUserInfo
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.AssignedUserInfo`
         """
         return self._fixed_version
 
@@ -343,7 +370,7 @@ class ExtendInfo:
 
 
         :param fixed_version: The fixed_version of this ExtendInfo.
-        :type: AssignedUserInfo
+        :type fixed_version: :class:`huaweicloudsdkcloudtest.v1.AssignedUserInfo`
         """
         self._fixed_version = fixed_version
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDatasourceColumnsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListDatasourceColumnsRequest:
     }
 
     def __init__(self, instance_id=None, datasource_id=None, position=None, db_name=None, table_name=None):
-        """ListDatasourceColumnsRequest - a model defined in huaweicloud sdk"""
+        """ListDatasourceColumnsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param datasource_id: 数据源ID
+        :type datasource_id: str
+        :param position: 数据源所在任务位置 - SOURCE 数据源处于任务源端 - TARGET 数据源处于任务目标端
+        :type position: str
+        :param db_name: 数据库名称，只支持MRSHIVE，FIHIVE类型的数据源
+        :type db_name: str
+        :param table_name: 字段所在的表名
+        :type table_name: str
+        """
         
         
 
@@ -75,7 +88,7 @@ class ListDatasourceColumnsRequest:
         实例ID
 
         :param instance_id: The instance_id of this ListDatasourceColumnsRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -97,7 +110,7 @@ class ListDatasourceColumnsRequest:
         数据源ID
 
         :param datasource_id: The datasource_id of this ListDatasourceColumnsRequest.
-        :type: str
+        :type datasource_id: str
         """
         self._datasource_id = datasource_id
 
@@ -119,7 +132,7 @@ class ListDatasourceColumnsRequest:
         数据源所在任务位置 - SOURCE 数据源处于任务源端 - TARGET 数据源处于任务目标端
 
         :param position: The position of this ListDatasourceColumnsRequest.
-        :type: str
+        :type position: str
         """
         self._position = position
 
@@ -141,7 +154,7 @@ class ListDatasourceColumnsRequest:
         数据库名称，只支持MRSHIVE，FIHIVE类型的数据源
 
         :param db_name: The db_name of this ListDatasourceColumnsRequest.
-        :type: str
+        :type db_name: str
         """
         self._db_name = db_name
 
@@ -163,7 +176,7 @@ class ListDatasourceColumnsRequest:
         字段所在的表名
 
         :param table_name: The table_name of this ListDatasourceColumnsRequest.
-        :type: str
+        :type table_name: str
         """
         self._table_name = table_name
 

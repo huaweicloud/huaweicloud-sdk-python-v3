@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListIgnoreRuleResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListIgnoreRuleResponse(SdkResponse):
     }
 
     def __init__(self, total=None, items=None):
-        """ListIgnoreRuleResponse - a model defined in huaweicloud sdk"""
+        """ListIgnoreRuleResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 该策略下规则数量
+        :type total: int
+        :param items: 误报屏蔽规则对象列表
+        :type items: list[:class:`huaweicloudsdkwaf.v1.IngnoreItem`]
+        """
         
         super(ListIgnoreRuleResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListIgnoreRuleResponse(SdkResponse):
         该策略下规则数量
 
         :param total: The total of this ListIgnoreRuleResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -74,7 +81,7 @@ class ListIgnoreRuleResponse(SdkResponse):
         误报屏蔽规则对象列表
 
         :return: The items of this ListIgnoreRuleResponse.
-        :rtype: list[IngnoreItem]
+        :rtype: list[:class:`huaweicloudsdkwaf.v1.IngnoreItem`]
         """
         return self._items
 
@@ -85,7 +92,7 @@ class ListIgnoreRuleResponse(SdkResponse):
         误报屏蔽规则对象列表
 
         :param items: The items of this ListIgnoreRuleResponse.
-        :type: list[IngnoreItem]
+        :type items: list[:class:`huaweicloudsdkwaf.v1.IngnoreItem`]
         """
         self._items = items
 

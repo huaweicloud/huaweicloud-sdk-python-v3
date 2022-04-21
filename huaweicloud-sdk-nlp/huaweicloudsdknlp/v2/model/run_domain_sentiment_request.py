@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunDomainSentimentRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RunDomainSentimentRequest:
     }
 
     def __init__(self, body=None):
-        """RunDomainSentimentRequest - a model defined in huaweicloud sdk"""
+        """RunDomainSentimentRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the RunDomainSentimentRequest
+        :type body: :class:`huaweicloudsdknlp.v2.DomainSentimentReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class RunDomainSentimentRequest:
 
 
         :return: The body of this RunDomainSentimentRequest.
-        :rtype: DomainSentimentReq
+        :rtype: :class:`huaweicloudsdknlp.v2.DomainSentimentReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class RunDomainSentimentRequest:
 
 
         :param body: The body of this RunDomainSentimentRequest.
-        :type: DomainSentimentReq
+        :type body: :class:`huaweicloudsdknlp.v2.DomainSentimentReq`
         """
         self._body = body
 

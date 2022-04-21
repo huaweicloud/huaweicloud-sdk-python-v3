@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCertificatesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListCertificatesResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, page_info=None, certificates=None):
-        """ListCertificatesResponse - a model defined in huaweicloud sdk"""
+        """ListCertificatesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param request_id: 请求ID。  注：自动生成 。
+        :type request_id: str
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`
+        :param certificates: 证书对象列表。
+        :type certificates: list[:class:`huaweicloudsdkelb.v3.CertificateInfo`]
+        """
         
         super(ListCertificatesResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListCertificatesResponse(SdkResponse):
         请求ID。  注：自动生成 。
 
         :param request_id: The request_id of this ListCertificatesResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 
@@ -78,7 +87,7 @@ class ListCertificatesResponse(SdkResponse):
 
 
         :return: The page_info of this ListCertificatesResponse.
-        :rtype: PageInfo
+        :rtype: :class:`huaweicloudsdkelb.v3.PageInfo`
         """
         return self._page_info
 
@@ -88,7 +97,7 @@ class ListCertificatesResponse(SdkResponse):
 
 
         :param page_info: The page_info of this ListCertificatesResponse.
-        :type: PageInfo
+        :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`
         """
         self._page_info = page_info
 
@@ -99,7 +108,7 @@ class ListCertificatesResponse(SdkResponse):
         证书对象列表。
 
         :return: The certificates of this ListCertificatesResponse.
-        :rtype: list[CertificateInfo]
+        :rtype: list[:class:`huaweicloudsdkelb.v3.CertificateInfo`]
         """
         return self._certificates
 
@@ -110,7 +119,7 @@ class ListCertificatesResponse(SdkResponse):
         证书对象列表。
 
         :param certificates: The certificates of this ListCertificatesResponse.
-        :type: list[CertificateInfo]
+        :type certificates: list[:class:`huaweicloudsdkelb.v3.CertificateInfo`]
         """
         self._certificates = certificates
 

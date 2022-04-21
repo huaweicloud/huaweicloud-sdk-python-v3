@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EdgeNodeResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -130,7 +129,113 @@ class EdgeNodeResp:
     }
 
     def __init__(self, id=None, name=None, description=None, created_at=None, updated_at=None, project_id=None, private_key=None, certificate=None, ca=None, state=None, package=None, master_addr=None, cpu=None, memory=None, os_name=None, os_version=None, pause_docker_image=None, arch=None, os_type=None, deployment_num=None, enable_gpu=None, log_configs=None, device_infos=None, edged_version=None, gpu_num=None, host_ips=None, relation=None, comment=None, gpu_info=None, device_num=None, enable_npu=None, npu_type=None, nics=None, host_name=None, ief_node_version=None, upgrade_flag=None, product_id=None, group_ids=None, upgrade_history=None, attributes=None, docker_enable=None, mqtt_mode=None, mqtt_external=None, mqtt_internal=None, node_type=None, ntp_configs=None, error_reason=None, tags=None, npu_num=None, npu_info=None, container_runtime_version=None):
-        """EdgeNodeResp - a model defined in huaweicloud sdk"""
+        """EdgeNodeResp
+
+        The model defined in huaweicloud sdk
+
+        :param id: 边缘节点ID
+        :type id: str
+        :param name: 边缘节点名称，只允许中文字符、英文字母、数字、下划线、中划线，最大长度64 Name为必填字段，且本帐号中唯一。
+        :type name: str
+        :param description: 边缘节点描述，最大长度255，不允许^ ~ # $ % &amp; * &lt; &gt; ( ) [ ] { } &#39; \&quot; \\
+        :type description: str
+        :param created_at: 创建时间
+        :type created_at: str
+        :param updated_at: 更新时间
+        :type updated_at: str
+        :param project_id: 项目ID
+        :type project_id: str
+        :param private_key: 私钥
+        :type private_key: str
+        :param certificate: 证书
+        :type certificate: str
+        :param ca: 根证书
+        :type ca: str
+        :param state: 边缘节点状态 - UNCONNECTED（未注册） - RUNNING（运行中） - FAIL（故障） - STOPPED（停用） - UPGRADING（升级中） - FREEZE（冻结）
+        :type state: str
+        :param package: 将证书文件certificate/ca/private_key打成.tar.gz包后用base64编码的字符串。 使用时请使用base64解码成.tar.gz包。
+        :type package: str
+        :param master_addr: 云端服务URL
+        :type master_addr: str
+        :param cpu: 边缘节点CPU核心数
+        :type cpu: int
+        :param memory: 边缘节点内存大小，单位M
+        :type memory: int
+        :param os_name: 边缘节点操作系统名称
+        :type os_name: str
+        :param os_version: 边缘节点操作系统版本
+        :type os_version: str
+        :param pause_docker_image: pause容器镜像URL
+        :type pause_docker_image: str
+        :param arch: 边缘节点架构
+        :type arch: str
+        :param os_type: 边缘节点操作系统类型
+        :type os_type: str
+        :param deployment_num: 部署在该边缘节点上的应用实例个数
+        :type deployment_num: int
+        :param enable_gpu: 边缘节点是否开启GPU，默认为false
+        :type enable_gpu: bool
+        :param log_configs: 边缘节点日志配置
+        :type log_configs: list[:class:`huaweicloudsdkief.v1.LogConfigs`]
+        :param device_infos: 关联设备信息
+        :type device_infos: list[:class:`huaweicloudsdkief.v1.DeviceInfos`]
+        :param edged_version: edged版本
+        :type edged_version: str
+        :param gpu_num: gpu个数
+        :type gpu_num: int
+        :param host_ips: 主机IP，默认返回eth0网卡的IP。
+        :type host_ips: list[str]
+        :param relation: 与device绑定关系名称（通过device id查询node时有值）
+        :type relation: str
+        :param comment: 与device绑定关系描述（通过device id查询node时有值）
+        :type comment: str
+        :param gpu_info: gpu型号和gpu memory大小
+        :type gpu_info: list[:class:`huaweicloudsdkief.v1.GpuInfo`]
+        :param device_num: 关联设备数量
+        :type device_num: int
+        :param enable_npu: 边缘节点是否开启NPU，true表示开启，false表示不开启，默认为false
+        :type enable_npu: bool
+        :param npu_type: npu类型，支持D310类型和D910类型。 - D310表示D310类型。 - D910表示D910类型。 - 不填表示为D310类型。
+        :type npu_type: str
+        :param nics: 节点网卡和对应IP地址信息
+        :type nics: list[:class:`huaweicloudsdkief.v1.Nics`]
+        :param host_name: 边缘节点主机名
+        :type host_name: str
+        :param ief_node_version: 边缘节点版本
+        :type ief_node_version: str
+        :param upgrade_flag: 是否能升级的标志 - true：需要升级 - false：不需要升级
+        :type upgrade_flag: bool
+        :param product_id: 产品ID（通过产品证书方式纳管）
+        :type product_id: str
+        :param group_ids: 节点组ID（一个节点属于多个节点组）
+        :type group_ids: list[str]
+        :param upgrade_history: 节点安装或升级记录
+        :type upgrade_history: list[:class:`huaweicloudsdkief.v1.UpgradeHistory`]
+        :param attributes: 边缘节点属性，关联属性个数最多为32个
+        :type attributes: list[:class:`huaweicloudsdkief.v1.Attributes`]
+        :param docker_enable: 节点是否开启Docker
+        :type docker_enable: bool
+        :param mqtt_mode: mqtt集成模式 - internal：edgecore内置mqtt - external：外置开源mqtt
+        :type mqtt_mode: str
+        :param mqtt_external: 外置开源mqtt地址
+        :type mqtt_external: str
+        :param mqtt_internal: edgecore内置的mqtt地址
+        :type mqtt_internal: str
+        :param node_type: 节点类型，默认为空，非空时为小站节点
+        :type node_type: str
+        :param ntp_configs: 
+        :type ntp_configs: :class:`huaweicloudsdkief.v1.NtpConfigs`
+        :param error_reason: 节点故障原因
+        :type error_reason: str
+        :param tags: 边缘节点标签，标签个数最多为20个
+        :type tags: list[:class:`huaweicloudsdkief.v1.ResourceTag`]
+        :param npu_num: NPU数量
+        :type npu_num: int
+        :param npu_info: NPU型号和NPU Memory大小
+        :type npu_info: list[:class:`huaweicloudsdkief.v1.NpuInfo`]
+        :param container_runtime_version: 容器运行时版本
+        :type container_runtime_version: str
+        """
         
         
 
@@ -257,7 +362,7 @@ class EdgeNodeResp:
         边缘节点ID
 
         :param id: The id of this EdgeNodeResp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -279,7 +384,7 @@ class EdgeNodeResp:
         边缘节点名称，只允许中文字符、英文字母、数字、下划线、中划线，最大长度64 Name为必填字段，且本帐号中唯一。
 
         :param name: The name of this EdgeNodeResp.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -301,7 +406,7 @@ class EdgeNodeResp:
         边缘节点描述，最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
         :param description: The description of this EdgeNodeResp.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -323,7 +428,7 @@ class EdgeNodeResp:
         创建时间
 
         :param created_at: The created_at of this EdgeNodeResp.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -345,7 +450,7 @@ class EdgeNodeResp:
         更新时间
 
         :param updated_at: The updated_at of this EdgeNodeResp.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 
@@ -367,7 +472,7 @@ class EdgeNodeResp:
         项目ID
 
         :param project_id: The project_id of this EdgeNodeResp.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -389,7 +494,7 @@ class EdgeNodeResp:
         私钥
 
         :param private_key: The private_key of this EdgeNodeResp.
-        :type: str
+        :type private_key: str
         """
         self._private_key = private_key
 
@@ -411,7 +516,7 @@ class EdgeNodeResp:
         证书
 
         :param certificate: The certificate of this EdgeNodeResp.
-        :type: str
+        :type certificate: str
         """
         self._certificate = certificate
 
@@ -433,7 +538,7 @@ class EdgeNodeResp:
         根证书
 
         :param ca: The ca of this EdgeNodeResp.
-        :type: str
+        :type ca: str
         """
         self._ca = ca
 
@@ -455,7 +560,7 @@ class EdgeNodeResp:
         边缘节点状态 - UNCONNECTED（未注册） - RUNNING（运行中） - FAIL（故障） - STOPPED（停用） - UPGRADING（升级中） - FREEZE（冻结）
 
         :param state: The state of this EdgeNodeResp.
-        :type: str
+        :type state: str
         """
         self._state = state
 
@@ -477,7 +582,7 @@ class EdgeNodeResp:
         将证书文件certificate/ca/private_key打成.tar.gz包后用base64编码的字符串。 使用时请使用base64解码成.tar.gz包。
 
         :param package: The package of this EdgeNodeResp.
-        :type: str
+        :type package: str
         """
         self._package = package
 
@@ -499,7 +604,7 @@ class EdgeNodeResp:
         云端服务URL
 
         :param master_addr: The master_addr of this EdgeNodeResp.
-        :type: str
+        :type master_addr: str
         """
         self._master_addr = master_addr
 
@@ -521,7 +626,7 @@ class EdgeNodeResp:
         边缘节点CPU核心数
 
         :param cpu: The cpu of this EdgeNodeResp.
-        :type: int
+        :type cpu: int
         """
         self._cpu = cpu
 
@@ -543,7 +648,7 @@ class EdgeNodeResp:
         边缘节点内存大小，单位M
 
         :param memory: The memory of this EdgeNodeResp.
-        :type: int
+        :type memory: int
         """
         self._memory = memory
 
@@ -565,7 +670,7 @@ class EdgeNodeResp:
         边缘节点操作系统名称
 
         :param os_name: The os_name of this EdgeNodeResp.
-        :type: str
+        :type os_name: str
         """
         self._os_name = os_name
 
@@ -587,7 +692,7 @@ class EdgeNodeResp:
         边缘节点操作系统版本
 
         :param os_version: The os_version of this EdgeNodeResp.
-        :type: str
+        :type os_version: str
         """
         self._os_version = os_version
 
@@ -609,7 +714,7 @@ class EdgeNodeResp:
         pause容器镜像URL
 
         :param pause_docker_image: The pause_docker_image of this EdgeNodeResp.
-        :type: str
+        :type pause_docker_image: str
         """
         self._pause_docker_image = pause_docker_image
 
@@ -631,7 +736,7 @@ class EdgeNodeResp:
         边缘节点架构
 
         :param arch: The arch of this EdgeNodeResp.
-        :type: str
+        :type arch: str
         """
         self._arch = arch
 
@@ -653,7 +758,7 @@ class EdgeNodeResp:
         边缘节点操作系统类型
 
         :param os_type: The os_type of this EdgeNodeResp.
-        :type: str
+        :type os_type: str
         """
         self._os_type = os_type
 
@@ -675,7 +780,7 @@ class EdgeNodeResp:
         部署在该边缘节点上的应用实例个数
 
         :param deployment_num: The deployment_num of this EdgeNodeResp.
-        :type: int
+        :type deployment_num: int
         """
         self._deployment_num = deployment_num
 
@@ -697,7 +802,7 @@ class EdgeNodeResp:
         边缘节点是否开启GPU，默认为false
 
         :param enable_gpu: The enable_gpu of this EdgeNodeResp.
-        :type: bool
+        :type enable_gpu: bool
         """
         self._enable_gpu = enable_gpu
 
@@ -708,7 +813,7 @@ class EdgeNodeResp:
         边缘节点日志配置
 
         :return: The log_configs of this EdgeNodeResp.
-        :rtype: list[LogConfigs]
+        :rtype: list[:class:`huaweicloudsdkief.v1.LogConfigs`]
         """
         return self._log_configs
 
@@ -719,7 +824,7 @@ class EdgeNodeResp:
         边缘节点日志配置
 
         :param log_configs: The log_configs of this EdgeNodeResp.
-        :type: list[LogConfigs]
+        :type log_configs: list[:class:`huaweicloudsdkief.v1.LogConfigs`]
         """
         self._log_configs = log_configs
 
@@ -730,7 +835,7 @@ class EdgeNodeResp:
         关联设备信息
 
         :return: The device_infos of this EdgeNodeResp.
-        :rtype: list[DeviceInfos]
+        :rtype: list[:class:`huaweicloudsdkief.v1.DeviceInfos`]
         """
         return self._device_infos
 
@@ -741,7 +846,7 @@ class EdgeNodeResp:
         关联设备信息
 
         :param device_infos: The device_infos of this EdgeNodeResp.
-        :type: list[DeviceInfos]
+        :type device_infos: list[:class:`huaweicloudsdkief.v1.DeviceInfos`]
         """
         self._device_infos = device_infos
 
@@ -763,7 +868,7 @@ class EdgeNodeResp:
         edged版本
 
         :param edged_version: The edged_version of this EdgeNodeResp.
-        :type: str
+        :type edged_version: str
         """
         self._edged_version = edged_version
 
@@ -785,7 +890,7 @@ class EdgeNodeResp:
         gpu个数
 
         :param gpu_num: The gpu_num of this EdgeNodeResp.
-        :type: int
+        :type gpu_num: int
         """
         self._gpu_num = gpu_num
 
@@ -807,7 +912,7 @@ class EdgeNodeResp:
         主机IP，默认返回eth0网卡的IP。
 
         :param host_ips: The host_ips of this EdgeNodeResp.
-        :type: list[str]
+        :type host_ips: list[str]
         """
         self._host_ips = host_ips
 
@@ -829,7 +934,7 @@ class EdgeNodeResp:
         与device绑定关系名称（通过device id查询node时有值）
 
         :param relation: The relation of this EdgeNodeResp.
-        :type: str
+        :type relation: str
         """
         self._relation = relation
 
@@ -851,7 +956,7 @@ class EdgeNodeResp:
         与device绑定关系描述（通过device id查询node时有值）
 
         :param comment: The comment of this EdgeNodeResp.
-        :type: str
+        :type comment: str
         """
         self._comment = comment
 
@@ -862,7 +967,7 @@ class EdgeNodeResp:
         gpu型号和gpu memory大小
 
         :return: The gpu_info of this EdgeNodeResp.
-        :rtype: list[GpuInfo]
+        :rtype: list[:class:`huaweicloudsdkief.v1.GpuInfo`]
         """
         return self._gpu_info
 
@@ -873,7 +978,7 @@ class EdgeNodeResp:
         gpu型号和gpu memory大小
 
         :param gpu_info: The gpu_info of this EdgeNodeResp.
-        :type: list[GpuInfo]
+        :type gpu_info: list[:class:`huaweicloudsdkief.v1.GpuInfo`]
         """
         self._gpu_info = gpu_info
 
@@ -895,7 +1000,7 @@ class EdgeNodeResp:
         关联设备数量
 
         :param device_num: The device_num of this EdgeNodeResp.
-        :type: int
+        :type device_num: int
         """
         self._device_num = device_num
 
@@ -917,7 +1022,7 @@ class EdgeNodeResp:
         边缘节点是否开启NPU，true表示开启，false表示不开启，默认为false
 
         :param enable_npu: The enable_npu of this EdgeNodeResp.
-        :type: bool
+        :type enable_npu: bool
         """
         self._enable_npu = enable_npu
 
@@ -939,7 +1044,7 @@ class EdgeNodeResp:
         npu类型，支持D310类型和D910类型。 - D310表示D310类型。 - D910表示D910类型。 - 不填表示为D310类型。
 
         :param npu_type: The npu_type of this EdgeNodeResp.
-        :type: str
+        :type npu_type: str
         """
         self._npu_type = npu_type
 
@@ -950,7 +1055,7 @@ class EdgeNodeResp:
         节点网卡和对应IP地址信息
 
         :return: The nics of this EdgeNodeResp.
-        :rtype: list[Nics]
+        :rtype: list[:class:`huaweicloudsdkief.v1.Nics`]
         """
         return self._nics
 
@@ -961,7 +1066,7 @@ class EdgeNodeResp:
         节点网卡和对应IP地址信息
 
         :param nics: The nics of this EdgeNodeResp.
-        :type: list[Nics]
+        :type nics: list[:class:`huaweicloudsdkief.v1.Nics`]
         """
         self._nics = nics
 
@@ -983,7 +1088,7 @@ class EdgeNodeResp:
         边缘节点主机名
 
         :param host_name: The host_name of this EdgeNodeResp.
-        :type: str
+        :type host_name: str
         """
         self._host_name = host_name
 
@@ -1005,7 +1110,7 @@ class EdgeNodeResp:
         边缘节点版本
 
         :param ief_node_version: The ief_node_version of this EdgeNodeResp.
-        :type: str
+        :type ief_node_version: str
         """
         self._ief_node_version = ief_node_version
 
@@ -1027,7 +1132,7 @@ class EdgeNodeResp:
         是否能升级的标志 - true：需要升级 - false：不需要升级
 
         :param upgrade_flag: The upgrade_flag of this EdgeNodeResp.
-        :type: bool
+        :type upgrade_flag: bool
         """
         self._upgrade_flag = upgrade_flag
 
@@ -1049,7 +1154,7 @@ class EdgeNodeResp:
         产品ID（通过产品证书方式纳管）
 
         :param product_id: The product_id of this EdgeNodeResp.
-        :type: str
+        :type product_id: str
         """
         self._product_id = product_id
 
@@ -1071,7 +1176,7 @@ class EdgeNodeResp:
         节点组ID（一个节点属于多个节点组）
 
         :param group_ids: The group_ids of this EdgeNodeResp.
-        :type: list[str]
+        :type group_ids: list[str]
         """
         self._group_ids = group_ids
 
@@ -1082,7 +1187,7 @@ class EdgeNodeResp:
         节点安装或升级记录
 
         :return: The upgrade_history of this EdgeNodeResp.
-        :rtype: list[UpgradeHistory]
+        :rtype: list[:class:`huaweicloudsdkief.v1.UpgradeHistory`]
         """
         return self._upgrade_history
 
@@ -1093,7 +1198,7 @@ class EdgeNodeResp:
         节点安装或升级记录
 
         :param upgrade_history: The upgrade_history of this EdgeNodeResp.
-        :type: list[UpgradeHistory]
+        :type upgrade_history: list[:class:`huaweicloudsdkief.v1.UpgradeHistory`]
         """
         self._upgrade_history = upgrade_history
 
@@ -1104,7 +1209,7 @@ class EdgeNodeResp:
         边缘节点属性，关联属性个数最多为32个
 
         :return: The attributes of this EdgeNodeResp.
-        :rtype: list[Attributes]
+        :rtype: list[:class:`huaweicloudsdkief.v1.Attributes`]
         """
         return self._attributes
 
@@ -1115,7 +1220,7 @@ class EdgeNodeResp:
         边缘节点属性，关联属性个数最多为32个
 
         :param attributes: The attributes of this EdgeNodeResp.
-        :type: list[Attributes]
+        :type attributes: list[:class:`huaweicloudsdkief.v1.Attributes`]
         """
         self._attributes = attributes
 
@@ -1137,7 +1242,7 @@ class EdgeNodeResp:
         节点是否开启Docker
 
         :param docker_enable: The docker_enable of this EdgeNodeResp.
-        :type: bool
+        :type docker_enable: bool
         """
         self._docker_enable = docker_enable
 
@@ -1159,7 +1264,7 @@ class EdgeNodeResp:
         mqtt集成模式 - internal：edgecore内置mqtt - external：外置开源mqtt
 
         :param mqtt_mode: The mqtt_mode of this EdgeNodeResp.
-        :type: str
+        :type mqtt_mode: str
         """
         self._mqtt_mode = mqtt_mode
 
@@ -1181,7 +1286,7 @@ class EdgeNodeResp:
         外置开源mqtt地址
 
         :param mqtt_external: The mqtt_external of this EdgeNodeResp.
-        :type: str
+        :type mqtt_external: str
         """
         self._mqtt_external = mqtt_external
 
@@ -1203,7 +1308,7 @@ class EdgeNodeResp:
         edgecore内置的mqtt地址
 
         :param mqtt_internal: The mqtt_internal of this EdgeNodeResp.
-        :type: str
+        :type mqtt_internal: str
         """
         self._mqtt_internal = mqtt_internal
 
@@ -1225,7 +1330,7 @@ class EdgeNodeResp:
         节点类型，默认为空，非空时为小站节点
 
         :param node_type: The node_type of this EdgeNodeResp.
-        :type: str
+        :type node_type: str
         """
         self._node_type = node_type
 
@@ -1235,7 +1340,7 @@ class EdgeNodeResp:
 
 
         :return: The ntp_configs of this EdgeNodeResp.
-        :rtype: NtpConfigs
+        :rtype: :class:`huaweicloudsdkief.v1.NtpConfigs`
         """
         return self._ntp_configs
 
@@ -1245,7 +1350,7 @@ class EdgeNodeResp:
 
 
         :param ntp_configs: The ntp_configs of this EdgeNodeResp.
-        :type: NtpConfigs
+        :type ntp_configs: :class:`huaweicloudsdkief.v1.NtpConfigs`
         """
         self._ntp_configs = ntp_configs
 
@@ -1267,7 +1372,7 @@ class EdgeNodeResp:
         节点故障原因
 
         :param error_reason: The error_reason of this EdgeNodeResp.
-        :type: str
+        :type error_reason: str
         """
         self._error_reason = error_reason
 
@@ -1278,7 +1383,7 @@ class EdgeNodeResp:
         边缘节点标签，标签个数最多为20个
 
         :return: The tags of this EdgeNodeResp.
-        :rtype: list[ResourceTag]
+        :rtype: list[:class:`huaweicloudsdkief.v1.ResourceTag`]
         """
         return self._tags
 
@@ -1289,7 +1394,7 @@ class EdgeNodeResp:
         边缘节点标签，标签个数最多为20个
 
         :param tags: The tags of this EdgeNodeResp.
-        :type: list[ResourceTag]
+        :type tags: list[:class:`huaweicloudsdkief.v1.ResourceTag`]
         """
         self._tags = tags
 
@@ -1311,7 +1416,7 @@ class EdgeNodeResp:
         NPU数量
 
         :param npu_num: The npu_num of this EdgeNodeResp.
-        :type: int
+        :type npu_num: int
         """
         self._npu_num = npu_num
 
@@ -1322,7 +1427,7 @@ class EdgeNodeResp:
         NPU型号和NPU Memory大小
 
         :return: The npu_info of this EdgeNodeResp.
-        :rtype: list[NpuInfo]
+        :rtype: list[:class:`huaweicloudsdkief.v1.NpuInfo`]
         """
         return self._npu_info
 
@@ -1333,7 +1438,7 @@ class EdgeNodeResp:
         NPU型号和NPU Memory大小
 
         :param npu_info: The npu_info of this EdgeNodeResp.
-        :type: list[NpuInfo]
+        :type npu_info: list[:class:`huaweicloudsdkief.v1.NpuInfo`]
         """
         self._npu_info = npu_info
 
@@ -1355,7 +1460,7 @@ class EdgeNodeResp:
         容器运行时版本
 
         :param container_runtime_version: The container_runtime_version of this EdgeNodeResp.
-        :type: str
+        :type container_runtime_version: str
         """
         self._container_runtime_version = container_runtime_version
 

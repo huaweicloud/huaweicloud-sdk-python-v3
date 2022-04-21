@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StartPublicWhitelistReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class StartPublicWhitelistReq:
     }
 
     def __init__(self, white_list=None):
-        """StartPublicWhitelistReq - a model defined in huaweicloud sdk"""
+        """StartPublicWhitelistReq
+
+        The model defined in huaweicloud sdk
+
+        :param white_list: 开启白名单的用户IP。
+        :type white_list: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class StartPublicWhitelistReq:
         开启白名单的用户IP。
 
         :param white_list: The white_list of this StartPublicWhitelistReq.
-        :type: str
+        :type white_list: str
         """
         self._white_list = white_list
 

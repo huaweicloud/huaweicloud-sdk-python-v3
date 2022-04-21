@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDictionaryRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListDictionaryRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, parent_code=None, code=None, name=None):
-        """ListDictionaryRequest - a model defined in huaweicloud sdk"""
+        """ListDictionaryRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param offset: 偏移量，大于等于0
+        :type offset: str
+        :param limit: 每页显示的条目数量
+        :type limit: str
+        :param parent_code: 指定父字典编码，返回子字典列表信息，未指定时查询顶级字典列表信息
+        :type parent_code: str
+        :param code: 通过code进行模糊匹配查询
+        :type code: str
+        :param name: 通过name进行模糊匹配查询
+        :type name: str
+        """
         
         
 
@@ -82,7 +97,7 @@ class ListDictionaryRequest:
         实例ID
 
         :param instance_id: The instance_id of this ListDictionaryRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -104,7 +119,7 @@ class ListDictionaryRequest:
         偏移量，大于等于0
 
         :param offset: The offset of this ListDictionaryRequest.
-        :type: str
+        :type offset: str
         """
         self._offset = offset
 
@@ -126,7 +141,7 @@ class ListDictionaryRequest:
         每页显示的条目数量
 
         :param limit: The limit of this ListDictionaryRequest.
-        :type: str
+        :type limit: str
         """
         self._limit = limit
 
@@ -148,7 +163,7 @@ class ListDictionaryRequest:
         指定父字典编码，返回子字典列表信息，未指定时查询顶级字典列表信息
 
         :param parent_code: The parent_code of this ListDictionaryRequest.
-        :type: str
+        :type parent_code: str
         """
         self._parent_code = parent_code
 
@@ -170,7 +185,7 @@ class ListDictionaryRequest:
         通过code进行模糊匹配查询
 
         :param code: The code of this ListDictionaryRequest.
-        :type: str
+        :type code: str
         """
         self._code = code
 
@@ -192,7 +207,7 @@ class ListDictionaryRequest:
         通过name进行模糊匹配查询
 
         :param name: The name of this ListDictionaryRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 

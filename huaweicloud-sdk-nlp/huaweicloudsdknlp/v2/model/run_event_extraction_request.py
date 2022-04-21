@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunEventExtractionRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RunEventExtractionRequest:
     }
 
     def __init__(self, body=None):
-        """RunEventExtractionRequest - a model defined in huaweicloud sdk"""
+        """RunEventExtractionRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the RunEventExtractionRequest
+        :type body: :class:`huaweicloudsdknlp.v2.PostEventExtractionReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class RunEventExtractionRequest:
 
 
         :return: The body of this RunEventExtractionRequest.
-        :rtype: PostEventExtractionReq
+        :rtype: :class:`huaweicloudsdknlp.v2.PostEventExtractionReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class RunEventExtractionRequest:
 
 
         :param body: The body of this RunEventExtractionRequest.
-        :type: PostEventExtractionReq
+        :type body: :class:`huaweicloudsdknlp.v2.PostEventExtractionReq`
         """
         self._body = body
 

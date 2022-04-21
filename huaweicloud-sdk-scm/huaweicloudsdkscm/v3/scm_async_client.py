@@ -52,21 +52,17 @@ class ScmAsyncClient(Client):
         """删除证书
 
         删除证书实例，即将证书资源从华为云系统中删除。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteCertificateRequest request
-        :return: DeleteCertificateResponse
+        :param request: Request instance for DeleteCertificate
+        :type request: :class:`huaweicloudsdkscm.v3.DeleteCertificateRequest`
+        :rtype: :class:`huaweicloudsdkscm.v3.DeleteCertificateResponse`
         """
         return self.delete_certificate_with_http_info(request)
 
     def delete_certificate_with_http_info(self, request):
-        """删除证书
-
-        删除证书实例，即将证书资源从华为云系统中删除。
-
-        :param DeleteCertificateRequest request
-        :return: DeleteCertificateResponse
-        """
-
         all_params = ['certificate_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -110,26 +106,21 @@ class ScmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def export_certificate_async(self, request):
         """导出证书
 
         导出证书。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ExportCertificateRequest request
-        :return: ExportCertificateResponse
+        :param request: Request instance for ExportCertificate
+        :type request: :class:`huaweicloudsdkscm.v3.ExportCertificateRequest`
+        :rtype: :class:`huaweicloudsdkscm.v3.ExportCertificateResponse`
         """
         return self.export_certificate_with_http_info(request)
 
     def export_certificate_with_http_info(self, request):
-        """导出证书
-
-        导出证书。
-
-        :param ExportCertificateRequest request
-        :return: ExportCertificateResponse
-        """
-
         all_params = ['certificate_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -173,26 +164,21 @@ class ScmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def import_certificate_async(self, request):
         """导入证书
 
         导入证书到SCM服务管理。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ImportCertificateRequest request
-        :return: ImportCertificateResponse
+        :param request: Request instance for ImportCertificate
+        :type request: :class:`huaweicloudsdkscm.v3.ImportCertificateRequest`
+        :rtype: :class:`huaweicloudsdkscm.v3.ImportCertificateResponse`
         """
         return self.import_certificate_with_http_info(request)
 
     def import_certificate_with_http_info(self, request):
-        """导入证书
-
-        导入证书到SCM服务管理。
-
-        :param ImportCertificateRequest request
-        :return: ImportCertificateResponse
-        """
-
         all_params = ['import_certificate_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -236,26 +222,21 @@ class ScmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_certificates_async(self, request):
         """查询证书列表
 
         根据证书名称或绑定域名查询证书列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListCertificatesRequest request
-        :return: ListCertificatesResponse
+        :param request: Request instance for ListCertificates
+        :type request: :class:`huaweicloudsdkscm.v3.ListCertificatesRequest`
+        :rtype: :class:`huaweicloudsdkscm.v3.ListCertificatesResponse`
         """
         return self.list_certificates_with_http_info(request)
 
     def list_certificates_with_http_info(self, request):
-        """查询证书列表
-
-        根据证书名称或绑定域名查询证书列表。
-
-        :param ListCertificatesRequest request
-        :return: ListCertificatesResponse
-        """
-
         all_params = ['limit', 'offset', 'sort_dir', 'sort_key', 'status', 'enterprise_project_id', 'deploy_support']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -311,26 +292,21 @@ class ScmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def push_certificate_async(self, request):
         """推送证书
 
         推送SSL证书到弹性负载均衡（Elastic Load Balance，简称ELB）、Web应用防火墙（Web Application Firewall，WAF）、CDN（Content Delivery Network，内容分发网络）等其它华为云产品中。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param PushCertificateRequest request
-        :return: PushCertificateResponse
+        :param request: Request instance for PushCertificate
+        :type request: :class:`huaweicloudsdkscm.v3.PushCertificateRequest`
+        :rtype: :class:`huaweicloudsdkscm.v3.PushCertificateResponse`
         """
         return self.push_certificate_with_http_info(request)
 
     def push_certificate_with_http_info(self, request):
-        """推送证书
-
-        推送SSL证书到弹性负载均衡（Elastic Load Balance，简称ELB）、Web应用防火墙（Web Application Firewall，WAF）、CDN（Content Delivery Network，内容分发网络）等其它华为云产品中。
-
-        :param PushCertificateRequest request
-        :return: PushCertificateResponse
-        """
-
         all_params = ['certificate_id', 'push_certificate_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -376,26 +352,21 @@ class ScmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_certificate_async(self, request):
         """获取证书详情
 
         查询某张证书的详细信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowCertificateRequest request
-        :return: ShowCertificateResponse
+        :param request: Request instance for ShowCertificate
+        :type request: :class:`huaweicloudsdkscm.v3.ShowCertificateRequest`
+        :rtype: :class:`huaweicloudsdkscm.v3.ShowCertificateResponse`
         """
         return self.show_certificate_with_http_info(request)
 
     def show_certificate_with_http_info(self, request):
-        """获取证书详情
-
-        查询某张证书的详细信息。
-
-        :param ShowCertificateRequest request
-        :return: ShowCertificateResponse
-        """
-
         all_params = ['certificate_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -438,7 +409,6 @@ class ScmAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

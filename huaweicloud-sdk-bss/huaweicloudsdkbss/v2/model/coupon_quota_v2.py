@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CouponQuotaV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class CouponQuotaV2:
     }
 
     def __init__(self, quota_id=None, quota_type=None, create_time=None, last_update_time=None, quota_value=None, quota_status=None, balance=None, measure_id=None, currency=None, effective_time=None, expire_time=None, limit_infos=None):
-        """CouponQuotaV2 - a model defined in huaweicloud sdk"""
+        """CouponQuotaV2
+
+        The model defined in huaweicloud sdk
+
+        :param quota_id: 优惠券额度ID。
+        :type quota_id: str
+        :param quota_type: 优惠券额度的类型： 0：代金券额度1：现金券额度
+        :type quota_type: int
+        :param create_time: 创建时间。 UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。
+        :type create_time: str
+        :param last_update_time: 最后一次更新时间。 UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。
+        :type last_update_time: str
+        :param quota_value: 优惠券额度的值，精确到小数点后2位。
+        :type quota_value: float
+        :param quota_status: 优惠券额度的状态： 0：正常3：失效（过期失效和人工设置失效）4：额度调整中（伙伴可以查看该额度，但不能使用该额度发放优惠券）5：冻结
+        :type quota_status: int
+        :param balance: 剩余的优惠券额度，精确到小数点后2位。
+        :type balance: float
+        :param measure_id: 面额单位。 1：元。
+        :type measure_id: int
+        :param currency: 币种。 CNY：人民币
+        :type currency: str
+        :param effective_time: 生效时间。 UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。
+        :type effective_time: str
+        :param expire_time: 失效时间。 UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。
+        :type expire_time: str
+        :param limit_infos: 优惠券额度上的限制属性，具体参见表2。
+        :type limit_infos: list[:class:`huaweicloudsdkbss.v2.QuotaLimitInfo`]
+        """
         
         
 
@@ -113,7 +140,7 @@ class CouponQuotaV2:
         优惠券额度ID。
 
         :param quota_id: The quota_id of this CouponQuotaV2.
-        :type: str
+        :type quota_id: str
         """
         self._quota_id = quota_id
 
@@ -135,7 +162,7 @@ class CouponQuotaV2:
         优惠券额度的类型： 0：代金券额度1：现金券额度
 
         :param quota_type: The quota_type of this CouponQuotaV2.
-        :type: int
+        :type quota_type: int
         """
         self._quota_type = quota_type
 
@@ -157,7 +184,7 @@ class CouponQuotaV2:
         创建时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :param create_time: The create_time of this CouponQuotaV2.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -179,7 +206,7 @@ class CouponQuotaV2:
         最后一次更新时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :param last_update_time: The last_update_time of this CouponQuotaV2.
-        :type: str
+        :type last_update_time: str
         """
         self._last_update_time = last_update_time
 
@@ -201,7 +228,7 @@ class CouponQuotaV2:
         优惠券额度的值，精确到小数点后2位。
 
         :param quota_value: The quota_value of this CouponQuotaV2.
-        :type: float
+        :type quota_value: float
         """
         self._quota_value = quota_value
 
@@ -223,7 +250,7 @@ class CouponQuotaV2:
         优惠券额度的状态： 0：正常3：失效（过期失效和人工设置失效）4：额度调整中（伙伴可以查看该额度，但不能使用该额度发放优惠券）5：冻结
 
         :param quota_status: The quota_status of this CouponQuotaV2.
-        :type: int
+        :type quota_status: int
         """
         self._quota_status = quota_status
 
@@ -245,7 +272,7 @@ class CouponQuotaV2:
         剩余的优惠券额度，精确到小数点后2位。
 
         :param balance: The balance of this CouponQuotaV2.
-        :type: float
+        :type balance: float
         """
         self._balance = balance
 
@@ -267,7 +294,7 @@ class CouponQuotaV2:
         面额单位。 1：元。
 
         :param measure_id: The measure_id of this CouponQuotaV2.
-        :type: int
+        :type measure_id: int
         """
         self._measure_id = measure_id
 
@@ -289,7 +316,7 @@ class CouponQuotaV2:
         币种。 CNY：人民币
 
         :param currency: The currency of this CouponQuotaV2.
-        :type: str
+        :type currency: str
         """
         self._currency = currency
 
@@ -311,7 +338,7 @@ class CouponQuotaV2:
         生效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :param effective_time: The effective_time of this CouponQuotaV2.
-        :type: str
+        :type effective_time: str
         """
         self._effective_time = effective_time
 
@@ -333,7 +360,7 @@ class CouponQuotaV2:
         失效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :param expire_time: The expire_time of this CouponQuotaV2.
-        :type: str
+        :type expire_time: str
         """
         self._expire_time = expire_time
 
@@ -344,7 +371,7 @@ class CouponQuotaV2:
         优惠券额度上的限制属性，具体参见表2。
 
         :return: The limit_infos of this CouponQuotaV2.
-        :rtype: list[QuotaLimitInfo]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.QuotaLimitInfo`]
         """
         return self._limit_infos
 
@@ -355,7 +382,7 @@ class CouponQuotaV2:
         优惠券额度上的限制属性，具体参见表2。
 
         :param limit_infos: The limit_infos of this CouponQuotaV2.
-        :type: list[QuotaLimitInfo]
+        :type limit_infos: list[:class:`huaweicloudsdkbss.v2.QuotaLimitInfo`]
         """
         self._limit_infos = limit_infos
 

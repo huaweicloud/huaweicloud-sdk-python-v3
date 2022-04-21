@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateServerGroupOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateServerGroupOption:
     }
 
     def __init__(self, name=None, policies=None):
-        """CreateServerGroupOption - a model defined in huaweicloud sdk"""
+        """CreateServerGroupOption
+
+        The model defined in huaweicloud sdk
+
+        :param name: 弹性云服务器组名称，长度大于0小于256字节。
+        :type name: str
+        :param policies: 与云服务器组关联的策略名称列表。包括：  - anti-affinity：此组中的弹性云服务器必须安排到不同的主机。  - affinity：此组中的弹性云服务器必须安排在同一主机上。  - soft-anti-affinity：如果可能，应将此组中的云服务器尽量安排到不同的主机上，但如果无法实现，则仍应安排它们，而不是导致生成失败。  - soft-affinity：如果可能，应将此组中的弹性云服务器尽量安排在同一主机上， 但如果无法实现，则仍应安排它们，而不是导致生成失败。    &gt; 说明：  - 当前仅支持反亲和性anti-affinity策略。
+        :type policies: list[str]
+        """
         
         
 
@@ -61,7 +68,7 @@ class CreateServerGroupOption:
         弹性云服务器组名称，长度大于0小于256字节。
 
         :param name: The name of this CreateServerGroupOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -83,7 +90,7 @@ class CreateServerGroupOption:
         与云服务器组关联的策略名称列表。包括：  - anti-affinity：此组中的弹性云服务器必须安排到不同的主机。  - affinity：此组中的弹性云服务器必须安排在同一主机上。  - soft-anti-affinity：如果可能，应将此组中的云服务器尽量安排到不同的主机上，但如果无法实现，则仍应安排它们，而不是导致生成失败。  - soft-affinity：如果可能，应将此组中的弹性云服务器尽量安排在同一主机上， 但如果无法实现，则仍应安排它们，而不是导致生成失败。    > 说明：  - 当前仅支持反亲和性anti-affinity策略。
 
         :param policies: The policies of this CreateServerGroupOption.
-        :type: list[str]
+        :type policies: list[str]
         """
         self._policies = policies
 

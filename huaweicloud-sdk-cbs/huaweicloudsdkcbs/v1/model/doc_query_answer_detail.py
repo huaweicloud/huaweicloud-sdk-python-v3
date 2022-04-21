@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DocQueryAnswerDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class DocQueryAnswerDetail:
     }
 
     def __init__(self, answer=None, doc_id=None, end_index=None, paragraph_score=None, paragraph_text=None, phrase_score=None, start_index=None, total_score=None, paragraph_number=None):
-        """DocQueryAnswerDetail - a model defined in huaweicloud sdk"""
+        """DocQueryAnswerDetail
+
+        The model defined in huaweicloud sdk
+
+        :param answer: 答案。
+        :type answer: str
+        :param doc_id: 文档ID。
+        :type doc_id: str
+        :param end_index: 答案结束下标。
+        :type end_index: int
+        :param paragraph_score: 段落评分。
+        :type paragraph_score: float
+        :param paragraph_text: 段落文字。
+        :type paragraph_text: str
+        :param phrase_score: 文档问答阅读理解评分。
+        :type phrase_score: float
+        :param start_index: 答案开始下标。
+        :type start_index: int
+        :param total_score: 文档问答总评分。
+        :type total_score: float
+        :param paragraph_number: 段落在文档中的编号。
+        :type paragraph_number: int
+        """
         
         
 
@@ -89,7 +110,7 @@ class DocQueryAnswerDetail:
         答案。
 
         :param answer: The answer of this DocQueryAnswerDetail.
-        :type: str
+        :type answer: str
         """
         self._answer = answer
 
@@ -111,7 +132,7 @@ class DocQueryAnswerDetail:
         文档ID。
 
         :param doc_id: The doc_id of this DocQueryAnswerDetail.
-        :type: str
+        :type doc_id: str
         """
         self._doc_id = doc_id
 
@@ -133,7 +154,7 @@ class DocQueryAnswerDetail:
         答案结束下标。
 
         :param end_index: The end_index of this DocQueryAnswerDetail.
-        :type: int
+        :type end_index: int
         """
         self._end_index = end_index
 
@@ -155,7 +176,7 @@ class DocQueryAnswerDetail:
         段落评分。
 
         :param paragraph_score: The paragraph_score of this DocQueryAnswerDetail.
-        :type: float
+        :type paragraph_score: float
         """
         self._paragraph_score = paragraph_score
 
@@ -177,7 +198,7 @@ class DocQueryAnswerDetail:
         段落文字。
 
         :param paragraph_text: The paragraph_text of this DocQueryAnswerDetail.
-        :type: str
+        :type paragraph_text: str
         """
         self._paragraph_text = paragraph_text
 
@@ -199,7 +220,7 @@ class DocQueryAnswerDetail:
         文档问答阅读理解评分。
 
         :param phrase_score: The phrase_score of this DocQueryAnswerDetail.
-        :type: float
+        :type phrase_score: float
         """
         self._phrase_score = phrase_score
 
@@ -221,7 +242,7 @@ class DocQueryAnswerDetail:
         答案开始下标。
 
         :param start_index: The start_index of this DocQueryAnswerDetail.
-        :type: int
+        :type start_index: int
         """
         self._start_index = start_index
 
@@ -243,7 +264,7 @@ class DocQueryAnswerDetail:
         文档问答总评分。
 
         :param total_score: The total_score of this DocQueryAnswerDetail.
-        :type: float
+        :type total_score: float
         """
         self._total_score = total_score
 
@@ -265,7 +286,7 @@ class DocQueryAnswerDetail:
         段落在文档中的编号。
 
         :param paragraph_number: The paragraph_number of this DocQueryAnswerDetail.
-        :type: int
+        :type paragraph_number: int
         """
         self._paragraph_number = paragraph_number
 

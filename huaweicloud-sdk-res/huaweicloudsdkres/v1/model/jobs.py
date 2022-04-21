@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Jobs:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class Jobs:
     }
 
     def __init__(self, category=None, config_info=None, description=None, job_id=None, job_name=None, job_type=None, next_schedule_time=None, platform=None, resource_id=None, schedule=None, status=None, workspace_id=None, job_config=None):
-        """Jobs - a model defined in huaweicloud sdk"""
+        """Jobs
+
+        The model defined in huaweicloud sdk
+
+        :param category: 类别。
+        :type category: str
+        :param config_info: 配置信息。
+        :type config_info: str
+        :param description: 描述。
+        :type description: str
+        :param job_id: 作业id。
+        :type job_id: str
+        :param job_name: 作业名称。
+        :type job_name: str
+        :param job_type: 作业类型。
+        :type job_type: str
+        :param next_schedule_time: 下次调度时间。
+        :type next_schedule_time: int
+        :param platform: 平台。
+        :type platform: str
+        :param resource_id: 资源id。
+        :type resource_id: str
+        :param schedule: 调度参数。
+        :type schedule: str
+        :param status: 状态。
+        :type status: str
+        :param workspace_id: 工作空间id。
+        :type workspace_id: str
+        :param job_config: 
+        :type job_config: :class:`huaweicloudsdkres.v1.JobConfig`
+        """
         
         
 
@@ -117,7 +146,7 @@ class Jobs:
         类别。
 
         :param category: The category of this Jobs.
-        :type: str
+        :type category: str
         """
         self._category = category
 
@@ -139,7 +168,7 @@ class Jobs:
         配置信息。
 
         :param config_info: The config_info of this Jobs.
-        :type: str
+        :type config_info: str
         """
         self._config_info = config_info
 
@@ -161,7 +190,7 @@ class Jobs:
         描述。
 
         :param description: The description of this Jobs.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -183,7 +212,7 @@ class Jobs:
         作业id。
 
         :param job_id: The job_id of this Jobs.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -205,7 +234,7 @@ class Jobs:
         作业名称。
 
         :param job_name: The job_name of this Jobs.
-        :type: str
+        :type job_name: str
         """
         self._job_name = job_name
 
@@ -227,7 +256,7 @@ class Jobs:
         作业类型。
 
         :param job_type: The job_type of this Jobs.
-        :type: str
+        :type job_type: str
         """
         self._job_type = job_type
 
@@ -249,7 +278,7 @@ class Jobs:
         下次调度时间。
 
         :param next_schedule_time: The next_schedule_time of this Jobs.
-        :type: int
+        :type next_schedule_time: int
         """
         self._next_schedule_time = next_schedule_time
 
@@ -271,7 +300,7 @@ class Jobs:
         平台。
 
         :param platform: The platform of this Jobs.
-        :type: str
+        :type platform: str
         """
         self._platform = platform
 
@@ -293,7 +322,7 @@ class Jobs:
         资源id。
 
         :param resource_id: The resource_id of this Jobs.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -315,7 +344,7 @@ class Jobs:
         调度参数。
 
         :param schedule: The schedule of this Jobs.
-        :type: str
+        :type schedule: str
         """
         self._schedule = schedule
 
@@ -337,7 +366,7 @@ class Jobs:
         状态。
 
         :param status: The status of this Jobs.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -359,7 +388,7 @@ class Jobs:
         工作空间id。
 
         :param workspace_id: The workspace_id of this Jobs.
-        :type: str
+        :type workspace_id: str
         """
         self._workspace_id = workspace_id
 
@@ -369,7 +398,7 @@ class Jobs:
 
 
         :return: The job_config of this Jobs.
-        :rtype: JobConfig
+        :rtype: :class:`huaweicloudsdkres.v1.JobConfig`
         """
         return self._job_config
 
@@ -379,7 +408,7 @@ class Jobs:
 
 
         :param job_config: The job_config of this Jobs.
-        :type: JobConfig
+        :type job_config: :class:`huaweicloudsdkres.v1.JobConfig`
         """
         self._job_config = job_config
 

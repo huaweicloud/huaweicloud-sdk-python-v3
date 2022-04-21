@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateWhiteblackipRuleResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class UpdateWhiteblackipRuleResponse(SdkResponse):
     }
 
     def __init__(self, id=None, policyid=None, addr=None, description=None, white=None):
-        """UpdateWhiteblackipRuleResponse - a model defined in huaweicloud sdk"""
+        """UpdateWhiteblackipRuleResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 规则id
+        :type id: str
+        :param policyid: 策略id
+        :type policyid: str
+        :param addr: 黑白名单地址
+        :type addr: str
+        :param description: 黑白名单规则描述
+        :type description: str
+        :param white: 防护动作：  - 0 拦截  - 1 放行  - 2 仅记录
+        :type white: int
+        """
         
         super(UpdateWhiteblackipRuleResponse, self).__init__()
 
@@ -78,7 +91,7 @@ class UpdateWhiteblackipRuleResponse(SdkResponse):
         规则id
 
         :param id: The id of this UpdateWhiteblackipRuleResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -100,7 +113,7 @@ class UpdateWhiteblackipRuleResponse(SdkResponse):
         策略id
 
         :param policyid: The policyid of this UpdateWhiteblackipRuleResponse.
-        :type: str
+        :type policyid: str
         """
         self._policyid = policyid
 
@@ -122,7 +135,7 @@ class UpdateWhiteblackipRuleResponse(SdkResponse):
         黑白名单地址
 
         :param addr: The addr of this UpdateWhiteblackipRuleResponse.
-        :type: str
+        :type addr: str
         """
         self._addr = addr
 
@@ -144,7 +157,7 @@ class UpdateWhiteblackipRuleResponse(SdkResponse):
         黑白名单规则描述
 
         :param description: The description of this UpdateWhiteblackipRuleResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -166,7 +179,7 @@ class UpdateWhiteblackipRuleResponse(SdkResponse):
         防护动作：  - 0 拦截  - 1 放行  - 2 仅记录
 
         :param white: The white of this UpdateWhiteblackipRuleResponse.
-        :type: int
+        :type white: int
         """
         self._white = white
 

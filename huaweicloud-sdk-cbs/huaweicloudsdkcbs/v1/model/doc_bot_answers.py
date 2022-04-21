@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DocBotAnswers:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class DocBotAnswers:
     }
 
     def __init__(self, answer=None, score=None, question=None, answer_detail=None, details=None):
-        """DocBotAnswers - a model defined in huaweicloud sdk"""
+        """DocBotAnswers
+
+        The model defined in huaweicloud sdk
+
+        :param answer: 答案。
+        :type answer: str
+        :param score: 置信度。
+        :type score: float
+        :param question: 问题。
+        :type question: str
+        :param answer_detail: 
+        :type answer_detail: :class:`huaweicloudsdkcbs.v1.DocQueryAnswerDetail`
+        :param details: 候选答案列表
+        :type details: list[:class:`huaweicloudsdkcbs.v1.DocQueryAnswerDetail`]
+        """
         
         
 
@@ -75,7 +88,7 @@ class DocBotAnswers:
         答案。
 
         :param answer: The answer of this DocBotAnswers.
-        :type: str
+        :type answer: str
         """
         self._answer = answer
 
@@ -97,7 +110,7 @@ class DocBotAnswers:
         置信度。
 
         :param score: The score of this DocBotAnswers.
-        :type: float
+        :type score: float
         """
         self._score = score
 
@@ -119,7 +132,7 @@ class DocBotAnswers:
         问题。
 
         :param question: The question of this DocBotAnswers.
-        :type: str
+        :type question: str
         """
         self._question = question
 
@@ -129,7 +142,7 @@ class DocBotAnswers:
 
 
         :return: The answer_detail of this DocBotAnswers.
-        :rtype: DocQueryAnswerDetail
+        :rtype: :class:`huaweicloudsdkcbs.v1.DocQueryAnswerDetail`
         """
         return self._answer_detail
 
@@ -139,7 +152,7 @@ class DocBotAnswers:
 
 
         :param answer_detail: The answer_detail of this DocBotAnswers.
-        :type: DocQueryAnswerDetail
+        :type answer_detail: :class:`huaweicloudsdkcbs.v1.DocQueryAnswerDetail`
         """
         self._answer_detail = answer_detail
 
@@ -150,7 +163,7 @@ class DocBotAnswers:
         候选答案列表
 
         :return: The details of this DocBotAnswers.
-        :rtype: list[DocQueryAnswerDetail]
+        :rtype: list[:class:`huaweicloudsdkcbs.v1.DocQueryAnswerDetail`]
         """
         return self._details
 
@@ -161,7 +174,7 @@ class DocBotAnswers:
         候选答案列表
 
         :param details: The details of this DocBotAnswers.
-        :type: list[DocQueryAnswerDetail]
+        :type details: list[:class:`huaweicloudsdkcbs.v1.DocQueryAnswerDetail`]
         """
         self._details = details
 

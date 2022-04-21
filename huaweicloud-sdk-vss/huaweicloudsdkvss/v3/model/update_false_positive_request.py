@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateFalsePositiveRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateFalsePositiveRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateFalsePositiveRequest - a model defined in huaweicloud sdk"""
+        """UpdateFalsePositiveRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the UpdateFalsePositiveRequest
+        :type body: :class:`huaweicloudsdkvss.v3.UpdateFalsePositiveRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class UpdateFalsePositiveRequest:
 
 
         :return: The body of this UpdateFalsePositiveRequest.
-        :rtype: UpdateFalsePositiveRequestBody
+        :rtype: :class:`huaweicloudsdkvss.v3.UpdateFalsePositiveRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class UpdateFalsePositiveRequest:
 
 
         :param body: The body of this UpdateFalsePositiveRequest.
-        :type: UpdateFalsePositiveRequestBody
+        :type body: :class:`huaweicloudsdkvss.v3.UpdateFalsePositiveRequestBody`
         """
         self._body = body
 

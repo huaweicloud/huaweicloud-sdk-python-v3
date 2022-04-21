@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ForceRedirectConfig:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ForceRedirectConfig:
     }
 
     def __init__(self, status=None, type=None):
-        """ForceRedirectConfig - a model defined in huaweicloud sdk"""
+        """ForceRedirectConfig
+
+        The model defined in huaweicloud sdk
+
+        :param status: 强制跳转开关（on：打开，off：关闭）。
+        :type status: str
+        :param type: 强制跳转类型（http：强制跳转HTTP，https：强制跳转HTTPS）。
+        :type type: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ForceRedirectConfig:
         强制跳转开关（on：打开，off：关闭）。
 
         :param status: The status of this ForceRedirectConfig.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -84,7 +91,7 @@ class ForceRedirectConfig:
         强制跳转类型（http：强制跳转HTTP，https：强制跳转HTTPS）。
 
         :param type: The type of this ForceRedirectConfig.
-        :type: str
+        :type type: str
         """
         self._type = type
 

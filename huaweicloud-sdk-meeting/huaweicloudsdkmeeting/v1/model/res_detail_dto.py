@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResDetailDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ResDetailDTO:
     }
 
     def __init__(self, sum_count=None, trial_count=None, expired_count=None, expiring_count=None, used_count=None):
-        """ResDetailDTO - a model defined in huaweicloud sdk"""
+        """ResDetailDTO
+
+        The model defined in huaweicloud sdk
+
+        :param sum_count: 总数
+        :type sum_count: int
+        :param trial_count: 赠送数量
+        :type trial_count: int
+        :param expired_count: 到期数量
+        :type expired_count: int
+        :param expiring_count: 即将到期数量，到期时间在30天内
+        :type expiring_count: int
+        :param used_count: 已使用数（录播存储空间、会议并发、推流并发方数暂无法查询）。
+        :type used_count: int
+        """
         
         
 
@@ -78,7 +91,7 @@ class ResDetailDTO:
         总数
 
         :param sum_count: The sum_count of this ResDetailDTO.
-        :type: int
+        :type sum_count: int
         """
         self._sum_count = sum_count
 
@@ -100,7 +113,7 @@ class ResDetailDTO:
         赠送数量
 
         :param trial_count: The trial_count of this ResDetailDTO.
-        :type: int
+        :type trial_count: int
         """
         self._trial_count = trial_count
 
@@ -122,7 +135,7 @@ class ResDetailDTO:
         到期数量
 
         :param expired_count: The expired_count of this ResDetailDTO.
-        :type: int
+        :type expired_count: int
         """
         self._expired_count = expired_count
 
@@ -144,7 +157,7 @@ class ResDetailDTO:
         即将到期数量，到期时间在30天内
 
         :param expiring_count: The expiring_count of this ResDetailDTO.
-        :type: int
+        :type expiring_count: int
         """
         self._expiring_count = expiring_count
 
@@ -166,7 +179,7 @@ class ResDetailDTO:
         已使用数（录播存储空间、会议并发、推流并发方数暂无法查询）。
 
         :param used_count: The used_count of this ResDetailDTO.
-        :type: int
+        :type used_count: int
         """
         self._used_count = used_count
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TransformMetrics:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class TransformMetrics:
     }
 
     def __init__(self, time_span=None, tags=None, metrics=None, limit=None):
-        """TransformMetrics - a model defined in huaweicloud sdk"""
+        """TransformMetrics
+
+        The model defined in huaweicloud sdk
+
+        :param time_span: 
+        :type time_span: :class:`huaweicloudsdkiotanalytics.v1.TimeSpan`
+        :param tags: 对property按指定tags标签进行过滤查询，填入设备标签与标签值，不可为空，例如 {\&quot;deviceId\&quot;: \&quot;id0001\&quot;}
+        :type tags: dict(str, str)
+        :param metrics: 查询的测量指标列表
+        :type metrics: list[:class:`huaweicloudsdkiotanalytics.v1.TransformMetric`]
+        :param limit: 返回值个数限制
+        :type limit: int
+        """
         
         
 
@@ -58,7 +69,7 @@ class TransformMetrics:
 
 
         :return: The time_span of this TransformMetrics.
-        :rtype: TimeSpan
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.TimeSpan`
         """
         return self._time_span
 
@@ -68,7 +79,7 @@ class TransformMetrics:
 
 
         :param time_span: The time_span of this TransformMetrics.
-        :type: TimeSpan
+        :type time_span: :class:`huaweicloudsdkiotanalytics.v1.TimeSpan`
         """
         self._time_span = time_span
 
@@ -90,7 +101,7 @@ class TransformMetrics:
         对property按指定tags标签进行过滤查询，填入设备标签与标签值，不可为空，例如 {\"deviceId\": \"id0001\"}
 
         :param tags: The tags of this TransformMetrics.
-        :type: dict(str, str)
+        :type tags: dict(str, str)
         """
         self._tags = tags
 
@@ -101,7 +112,7 @@ class TransformMetrics:
         查询的测量指标列表
 
         :return: The metrics of this TransformMetrics.
-        :rtype: list[TransformMetric]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.TransformMetric`]
         """
         return self._metrics
 
@@ -112,7 +123,7 @@ class TransformMetrics:
         查询的测量指标列表
 
         :param metrics: The metrics of this TransformMetrics.
-        :type: list[TransformMetric]
+        :type metrics: list[:class:`huaweicloudsdkiotanalytics.v1.TransformMetric`]
         """
         self._metrics = metrics
 
@@ -134,7 +145,7 @@ class TransformMetrics:
         返回值个数限制
 
         :param limit: The limit of this TransformMetrics.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

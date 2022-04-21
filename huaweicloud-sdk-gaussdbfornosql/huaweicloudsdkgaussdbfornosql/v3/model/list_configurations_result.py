@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListConfigurationsResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ListConfigurationsResult:
     }
 
     def __init__(self, id=None, name=None, description=None, datastore_version_name=None, datastore_name=None, created=None, updated=None, user_defined=None):
-        """ListConfigurationsResult - a model defined in huaweicloud sdk"""
+        """ListConfigurationsResult
+
+        The model defined in huaweicloud sdk
+
+        :param id: 参数模板ID。
+        :type id: str
+        :param name: 参数模板名称。
+        :type name: str
+        :param description: 参数模板描述。
+        :type description: str
+        :param datastore_version_name: 数据库版本名称。
+        :type datastore_version_name: str
+        :param datastore_name: 数据库名称。
+        :type datastore_name: str
+        :param created: 创建时间，格式为\&quot;yyyy-MM-ddTHH:mm:ssZ\&quot;。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800
+        :type created: str
+        :param updated: 更新时间，格式为\&quot;yyyy-MM-ddTHH:mm:ssZ\&quot;。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        :type updated: str
+        :param user_defined: 是否是用户自定义参数模板： - false，表示为系统默认参数模板。 - true，表示为用户自定义参数模板。
+        :type user_defined: bool
+        """
         
         
 
@@ -86,7 +105,7 @@ class ListConfigurationsResult:
         参数模板ID。
 
         :param id: The id of this ListConfigurationsResult.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -108,7 +127,7 @@ class ListConfigurationsResult:
         参数模板名称。
 
         :param name: The name of this ListConfigurationsResult.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -130,7 +149,7 @@ class ListConfigurationsResult:
         参数模板描述。
 
         :param description: The description of this ListConfigurationsResult.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -152,7 +171,7 @@ class ListConfigurationsResult:
         数据库版本名称。
 
         :param datastore_version_name: The datastore_version_name of this ListConfigurationsResult.
-        :type: str
+        :type datastore_version_name: str
         """
         self._datastore_version_name = datastore_version_name
 
@@ -174,7 +193,7 @@ class ListConfigurationsResult:
         数据库名称。
 
         :param datastore_name: The datastore_name of this ListConfigurationsResult.
-        :type: str
+        :type datastore_name: str
         """
         self._datastore_name = datastore_name
 
@@ -196,7 +215,7 @@ class ListConfigurationsResult:
         创建时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800
 
         :param created: The created of this ListConfigurationsResult.
-        :type: str
+        :type created: str
         """
         self._created = created
 
@@ -218,7 +237,7 @@ class ListConfigurationsResult:
         更新时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
         :param updated: The updated of this ListConfigurationsResult.
-        :type: str
+        :type updated: str
         """
         self._updated = updated
 
@@ -240,7 +259,7 @@ class ListConfigurationsResult:
         是否是用户自定义参数模板： - false，表示为系统默认参数模板。 - true，表示为用户自定义参数模板。
 
         :param user_defined: The user_defined of this ListConfigurationsResult.
-        :type: bool
+        :type user_defined: bool
         """
         self._user_defined = user_defined
 

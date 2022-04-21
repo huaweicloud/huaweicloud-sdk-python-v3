@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSecretStageResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListSecretStageResponse(SdkResponse):
     }
 
     def __init__(self, stage=None):
-        """ListSecretStageResponse - a model defined in huaweicloud sdk"""
+        """ListSecretStageResponse
+
+        The model defined in huaweicloud sdk
+
+        :param stage: 
+        :type stage: :class:`huaweicloudsdkkms.v1.Stage`
+        """
         
         super(ListSecretStageResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class ListSecretStageResponse(SdkResponse):
 
 
         :return: The stage of this ListSecretStageResponse.
-        :rtype: Stage
+        :rtype: :class:`huaweicloudsdkkms.v1.Stage`
         """
         return self._stage
 
@@ -56,7 +61,7 @@ class ListSecretStageResponse(SdkResponse):
 
 
         :param stage: The stage of this ListSecretStageResponse.
-        :type: Stage
+        :type stage: :class:`huaweicloudsdkkms.v1.Stage`
         """
         self._stage = stage
 

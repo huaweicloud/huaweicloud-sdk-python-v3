@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RecognizeAutoClassificationRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RecognizeAutoClassificationRequest:
     }
 
     def __init__(self, body=None):
-        """RecognizeAutoClassificationRequest - a model defined in huaweicloud sdk"""
+        """RecognizeAutoClassificationRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the RecognizeAutoClassificationRequest
+        :type body: :class:`huaweicloudsdkocr.v1.AutoClassificationRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class RecognizeAutoClassificationRequest:
 
 
         :return: The body of this RecognizeAutoClassificationRequest.
-        :rtype: AutoClassificationRequestBody
+        :rtype: :class:`huaweicloudsdkocr.v1.AutoClassificationRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class RecognizeAutoClassificationRequest:
 
 
         :param body: The body of this RecognizeAutoClassificationRequest.
-        :type: AutoClassificationRequestBody
+        :type body: :class:`huaweicloudsdkocr.v1.AutoClassificationRequestBody`
         """
         self._body = body
 

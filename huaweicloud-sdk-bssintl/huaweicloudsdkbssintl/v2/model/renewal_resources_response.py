@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RenewalResourcesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RenewalResourcesResponse(SdkResponse):
     }
 
     def __init__(self, order_ids=None):
-        """RenewalResourcesResponse - a model defined in huaweicloud sdk"""
+        """RenewalResourcesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param order_ids: 续订资源生成的订单ID的列表。
+        :type order_ids: list[str]
+        """
         
         super(RenewalResourcesResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class RenewalResourcesResponse(SdkResponse):
         续订资源生成的订单ID的列表。
 
         :param order_ids: The order_ids of this RenewalResourcesResponse.
-        :type: list[str]
+        :type order_ids: list[str]
         """
         self._order_ids = order_ids
 

@@ -52,21 +52,17 @@ class SmsClient(Client):
         """新建迁移项目
 
         新建迁移项目
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateMigprojectRequest request
-        :return: CreateMigprojectResponse
+        :param request: Request instance for CreateMigproject
+        :type request: :class:`huaweicloudsdksms.v3.CreateMigprojectRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.CreateMigprojectResponse`
         """
         return self.create_migproject_with_http_info(request)
 
     def create_migproject_with_http_info(self, request):
-        """新建迁移项目
-
-        新建迁移项目
-
-        :param CreateMigprojectRequest request
-        :return: CreateMigprojectResponse
-        """
-
         all_params = ['create_migproject_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -110,26 +106,21 @@ class SmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_task(self, request):
         """创建迁移任务
 
         根据源端服务器创建一个迁移任务。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateTaskRequest request
-        :return: CreateTaskResponse
+        :param request: Request instance for CreateTask
+        :type request: :class:`huaweicloudsdksms.v3.CreateTaskRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.CreateTaskResponse`
         """
         return self.create_task_with_http_info(request)
 
     def create_task_with_http_info(self, request):
-        """创建迁移任务
-
-        根据源端服务器创建一个迁移任务。
-
-        :param CreateTaskRequest request
-        :return: CreateTaskResponse
-        """
-
         all_params = ['create_task_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -173,26 +164,21 @@ class SmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_template(self, request):
         """新增模板信息
 
         新增源端模板信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateTemplateRequest request
-        :return: CreateTemplateResponse
+        :param request: Request instance for CreateTemplate
+        :type request: :class:`huaweicloudsdksms.v3.CreateTemplateRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.CreateTemplateResponse`
         """
         return self.create_template_with_http_info(request)
 
     def create_template_with_http_info(self, request):
-        """新增模板信息
-
-        新增源端模板信息
-
-        :param CreateTemplateRequest request
-        :return: CreateTemplateResponse
-        """
-
         all_params = ['create_template_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -236,26 +222,21 @@ class SmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_migproject(self, request):
         """删除迁移项目
 
         删除指定ID的迁移项目
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteMigprojectRequest request
-        :return: DeleteMigprojectResponse
+        :param request: Request instance for DeleteMigproject
+        :type request: :class:`huaweicloudsdksms.v3.DeleteMigprojectRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.DeleteMigprojectResponse`
         """
         return self.delete_migproject_with_http_info(request)
 
     def delete_migproject_with_http_info(self, request):
-        """删除迁移项目
-
-        删除指定ID的迁移项目
-
-        :param DeleteMigprojectRequest request
-        :return: DeleteMigprojectResponse
-        """
-
         all_params = ['mig_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -299,26 +280,21 @@ class SmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_server(self, request):
         """删除指定ID的源端服务器信息
 
         从主机迁移服务界面上删除指定ID的源端服务器信息。一旦源端服务器信息被删除，则只能通过重启源端服务器上的迁移Agent来将源端服务器信息重新添加在主机迁移服务界面。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteServerRequest request
-        :return: DeleteServerResponse
+        :param request: Request instance for DeleteServer
+        :type request: :class:`huaweicloudsdksms.v3.DeleteServerRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.DeleteServerResponse`
         """
         return self.delete_server_with_http_info(request)
 
     def delete_server_with_http_info(self, request):
-        """删除指定ID的源端服务器信息
-
-        从主机迁移服务界面上删除指定ID的源端服务器信息。一旦源端服务器信息被删除，则只能通过重启源端服务器上的迁移Agent来将源端服务器信息重新添加在主机迁移服务界面。
-
-        :param DeleteServerRequest request
-        :return: DeleteServerResponse
-        """
-
         all_params = ['source_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -362,26 +338,21 @@ class SmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_servers(self, request):
         """批量删除源端服务器信息
 
         批量删除源端服务器信息。一旦源端服务器信息被删除，则只能通过重启源端服务器上的迁移Agent来将源端服务器信息重新添加在主机迁移服务界面。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteServersRequest request
-        :return: DeleteServersResponse
+        :param request: Request instance for DeleteServers
+        :type request: :class:`huaweicloudsdksms.v3.DeleteServersRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.DeleteServersResponse`
         """
         return self.delete_servers_with_http_info(request)
 
     def delete_servers_with_http_info(self, request):
-        """批量删除源端服务器信息
-
-        批量删除源端服务器信息。一旦源端服务器信息被删除，则只能通过重启源端服务器上的迁移Agent来将源端服务器信息重新添加在主机迁移服务界面。
-
-        :param DeleteServersRequest request
-        :return: DeleteServersResponse
-        """
-
         all_params = ['delete_servers_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -425,26 +396,21 @@ class SmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_task(self, request):
         """删除指定ID的迁移任务
 
         删除指定ID的迁移任务。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteTaskRequest request
-        :return: DeleteTaskResponse
+        :param request: Request instance for DeleteTask
+        :type request: :class:`huaweicloudsdksms.v3.DeleteTaskRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.DeleteTaskResponse`
         """
         return self.delete_task_with_http_info(request)
 
     def delete_task_with_http_info(self, request):
-        """删除指定ID的迁移任务
-
-        删除指定ID的迁移任务。
-
-        :param DeleteTaskRequest request
-        :return: DeleteTaskResponse
-        """
-
         all_params = ['task_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -488,26 +454,21 @@ class SmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_tasks(self, request):
         """批量删除迁移任务
 
         批量删除迁移任务。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteTasksRequest request
-        :return: DeleteTasksResponse
+        :param request: Request instance for DeleteTasks
+        :type request: :class:`huaweicloudsdksms.v3.DeleteTasksRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.DeleteTasksResponse`
         """
         return self.delete_tasks_with_http_info(request)
 
     def delete_tasks_with_http_info(self, request):
-        """批量删除迁移任务
-
-        批量删除迁移任务。
-
-        :param DeleteTasksRequest request
-        :return: DeleteTasksResponse
-        """
-
         all_params = ['delete_tasks_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -551,26 +512,21 @@ class SmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_template(self, request):
         """删除指定ID的模板
 
         删除指定ID的模板。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteTemplateRequest request
-        :return: DeleteTemplateResponse
+        :param request: Request instance for DeleteTemplate
+        :type request: :class:`huaweicloudsdksms.v3.DeleteTemplateRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.DeleteTemplateResponse`
         """
         return self.delete_template_with_http_info(request)
 
     def delete_template_with_http_info(self, request):
-        """删除指定ID的模板
-
-        删除指定ID的模板。
-
-        :param DeleteTemplateRequest request
-        :return: DeleteTemplateResponse
-        """
-
         all_params = ['id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -614,26 +570,21 @@ class SmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_templates(self, request):
         """批量删除指定ID的模板
 
         批量删除指定ID的模板。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteTemplatesRequest request
-        :return: DeleteTemplatesResponse
+        :param request: Request instance for DeleteTemplates
+        :type request: :class:`huaweicloudsdksms.v3.DeleteTemplatesRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.DeleteTemplatesResponse`
         """
         return self.delete_templates_with_http_info(request)
 
     def delete_templates_with_http_info(self, request):
-        """批量删除指定ID的模板
-
-        批量删除指定ID的模板。
-
-        :param DeleteTemplatesRequest request
-        :return: DeleteTemplatesResponse
-        """
-
         all_params = ['deletetemplates_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -677,26 +628,21 @@ class SmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_error_servers(self, request):
         """查询待迁移源端的所有错误
 
         主机迁移过程中可能发生错误，使用该接口可以批量查询迁移过程中出现错误的源端服务器信息，以及它们的错误信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListErrorServersRequest request
-        :return: ListErrorServersResponse
+        :param request: Request instance for ListErrorServers
+        :type request: :class:`huaweicloudsdksms.v3.ListErrorServersRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.ListErrorServersResponse`
         """
         return self.list_error_servers_with_http_info(request)
 
     def list_error_servers_with_http_info(self, request):
-        """查询待迁移源端的所有错误
-
-        主机迁移过程中可能发生错误，使用该接口可以批量查询迁移过程中出现错误的源端服务器信息，以及它们的错误信息。
-
-        :param ListErrorServersRequest request
-        :return: ListErrorServersResponse
-        """
-
         all_params = ['offset', 'limit', 'migproject', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -746,26 +692,21 @@ class SmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_migprojects(self, request):
         """获取项目列表
 
         主机迁移服务中可以使用迁移项目来对源端进行项目管理，使用该接口获取当前账户下所有的迁移项目列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListMigprojectsRequest request
-        :return: ListMigprojectsResponse
+        :param request: Request instance for ListMigprojects
+        :type request: :class:`huaweicloudsdksms.v3.ListMigprojectsRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.ListMigprojectsResponse`
         """
         return self.list_migprojects_with_http_info(request)
 
     def list_migprojects_with_http_info(self, request):
-        """获取项目列表
-
-        主机迁移服务中可以使用迁移项目来对源端进行项目管理，使用该接口获取当前账户下所有的迁移项目列表。
-
-        :param ListMigprojectsRequest request
-        :return: ListMigprojectsResponse
-        """
-
         all_params = ['limit', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -811,26 +752,21 @@ class SmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_servers(self, request):
         """查询源端服务器列表
 
         用户在源端安装并成功启动Agent后，Agent会将源端服务器信息注册在主机迁移服务中，调用该接口查询已注册的源端服务器列表信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListServersRequest request
-        :return: ListServersResponse
+        :param request: Request instance for ListServers
+        :type request: :class:`huaweicloudsdksms.v3.ListServersRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.ListServersResponse`
         """
         return self.list_servers_with_http_info(request)
 
     def list_servers_with_http_info(self, request):
-        """查询源端服务器列表
-
-        用户在源端安装并成功启动Agent后，Agent会将源端服务器信息注册在主机迁移服务中，调用该接口查询已注册的源端服务器列表信息。
-
-        :param ListServersRequest request
-        :return: ListServersResponse
-        """
-
         all_params = ['state', 'name', 'id', 'ip', 'migproject', 'limit', 'offset', 'migration_cycle', 'connected', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -892,26 +828,21 @@ class SmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_tasks(self, request):
         """查询迁移任务列表
 
         在设置目的端后，主机迁移服务会自动创建迁移任务，使用该接口可以查询迁移任务列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListTasksRequest request
-        :return: ListTasksResponse
+        :param request: Request instance for ListTasks
+        :type request: :class:`huaweicloudsdksms.v3.ListTasksRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.ListTasksResponse`
         """
         return self.list_tasks_with_http_info(request)
 
     def list_tasks_with_http_info(self, request):
-        """查询迁移任务列表
-
-        在设置目的端后，主机迁移服务会自动创建迁移任务，使用该接口可以查询迁移任务列表。
-
-        :param ListTasksRequest request
-        :return: ListTasksResponse
-        """
-
         all_params = ['state', 'name', 'id', 'source_server_id', 'limit', 'offset', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -967,26 +898,21 @@ class SmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_templates(self, request):
         """查询模板列表
 
         查询弹性云服务器模板列表，迁移时选择“新建服务器”时可使用该模板创建弹性云服务器。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListTemplatesRequest request
-        :return: ListTemplatesResponse
+        :param request: Request instance for ListTemplates
+        :type request: :class:`huaweicloudsdksms.v3.ListTemplatesRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.ListTemplatesResponse`
         """
         return self.list_templates_with_http_info(request)
 
     def list_templates_with_http_info(self, request):
-        """查询模板列表
-
-        查询弹性云服务器模板列表，迁移时选择“新建服务器”时可使用该模板创建弹性云服务器。
-
-        :param ListTemplatesRequest request
-        :return: ListTemplatesResponse
-        """
-
         all_params = ['name', 'availability_zone', 'region', 'limit', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1038,26 +964,21 @@ class SmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def register_server(self, request):
         """上报源端服务器基本信息
 
         上报源端服务器信息，上报成功后会在sms服务器列表中看到对应的源端服务器信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param RegisterServerRequest request
-        :return: RegisterServerResponse
+        :param request: Request instance for RegisterServer
+        :type request: :class:`huaweicloudsdksms.v3.RegisterServerRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.RegisterServerResponse`
         """
         return self.register_server_with_http_info(request)
 
     def register_server_with_http_info(self, request):
-        """上报源端服务器基本信息
-
-        上报源端服务器信息，上报成功后会在sms服务器列表中看到对应的源端服务器信息。
-
-        :param RegisterServerRequest request
-        :return: RegisterServerResponse
-        """
-
         all_params = ['register_server_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1101,26 +1022,21 @@ class SmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_command(self, request):
         """获取服务端命令
 
         迁移Agent调用该接口从SMS服务端获取下发给指定源端迁移Agent的命令。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowCommandRequest request
-        :return: ShowCommandResponse
+        :param request: Request instance for ShowCommand
+        :type request: :class:`huaweicloudsdksms.v3.ShowCommandRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.ShowCommandResponse`
         """
         return self.show_command_with_http_info(request)
 
     def show_command_with_http_info(self, request):
-        """获取服务端命令
-
-        迁移Agent调用该接口从SMS服务端获取下发给指定源端迁移Agent的命令。
-
-        :param ShowCommandRequest request
-        :return: ShowCommandResponse
-        """
-
         all_params = ['server_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1164,26 +1080,21 @@ class SmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_migproject(self, request):
         """查询指定ID迁移项目详情
 
         查询指定ID的迁移项目详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowMigprojectRequest request
-        :return: ShowMigprojectResponse
+        :param request: Request instance for ShowMigproject
+        :type request: :class:`huaweicloudsdksms.v3.ShowMigprojectRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.ShowMigprojectResponse`
         """
         return self.show_migproject_with_http_info(request)
 
     def show_migproject_with_http_info(self, request):
-        """查询指定ID迁移项目详情
-
-        查询指定ID的迁移项目详情。
-
-        :param ShowMigprojectRequest request
-        :return: ShowMigprojectResponse
-        """
-
         all_params = ['mig_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1227,26 +1138,21 @@ class SmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_overview(self, request):
         """获取服务器总览
 
         获取服务器总览
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowOverviewRequest request
-        :return: ShowOverviewResponse
+        :param request: Request instance for ShowOverview
+        :type request: :class:`huaweicloudsdksms.v3.ShowOverviewRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.ShowOverviewResponse`
         """
         return self.show_overview_with_http_info(request)
 
     def show_overview_with_http_info(self, request):
-        """获取服务器总览
-
-        获取服务器总览
-
-        :param ShowOverviewRequest request
-        :return: ShowOverviewResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1288,26 +1194,21 @@ class SmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_server(self, request):
         """查询指定ID的源端服务器
 
         迁移Agent将源端服务器信息上报到主机迁移服务后，主机迁移服务会对迁移的可行性进行检测，该接口返回源端服务器的基本信息和检查结果。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowServerRequest request
-        :return: ShowServerResponse
+        :param request: Request instance for ShowServer
+        :type request: :class:`huaweicloudsdksms.v3.ShowServerRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.ShowServerResponse`
         """
         return self.show_server_with_http_info(request)
 
     def show_server_with_http_info(self, request):
-        """查询指定ID的源端服务器
-
-        迁移Agent将源端服务器信息上报到主机迁移服务后，主机迁移服务会对迁移的可行性进行检测，该接口返回源端服务器的基本信息和检查结果。
-
-        :param ShowServerRequest request
-        :return: ShowServerResponse
-        """
-
         all_params = ['source_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1351,26 +1252,21 @@ class SmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_task(self, request):
         """查询指定ID的迁移任务
 
         查询指定ID的迁移任务。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowTaskRequest request
-        :return: ShowTaskResponse
+        :param request: Request instance for ShowTask
+        :type request: :class:`huaweicloudsdksms.v3.ShowTaskRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.ShowTaskResponse`
         """
         return self.show_task_with_http_info(request)
 
     def show_task_with_http_info(self, request):
-        """查询指定ID的迁移任务
-
-        查询指定ID的迁移任务。
-
-        :param ShowTaskRequest request
-        :return: ShowTaskResponse
-        """
-
         all_params = ['task_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1414,26 +1310,21 @@ class SmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_template(self, request):
         """查询指定ID模板信息
 
         查询指定ID的弹性云服务器模板信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowTemplateRequest request
-        :return: ShowTemplateResponse
+        :param request: Request instance for ShowTemplate
+        :type request: :class:`huaweicloudsdksms.v3.ShowTemplateRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.ShowTemplateResponse`
         """
         return self.show_template_with_http_info(request)
 
     def show_template_with_http_info(self, request):
-        """查询指定ID模板信息
-
-        查询指定ID的弹性云服务器模板信息。
-
-        :param ShowTemplateRequest request
-        :return: ShowTemplateResponse
-        """
-
         all_params = ['id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1477,26 +1368,21 @@ class SmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def shows_speed_limits(self, request):
         """查询任务限速规则
 
         按时间段查询迁移任务的迁移速率
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowsSpeedLimitsRequest request
-        :return: ShowsSpeedLimitsResponse
+        :param request: Request instance for ShowsSpeedLimits
+        :type request: :class:`huaweicloudsdksms.v3.ShowsSpeedLimitsRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.ShowsSpeedLimitsResponse`
         """
         return self.shows_speed_limits_with_http_info(request)
 
     def shows_speed_limits_with_http_info(self, request):
-        """查询任务限速规则
-
-        按时间段查询迁移任务的迁移速率
-
-        :param ShowsSpeedLimitsRequest request
-        :return: ShowsSpeedLimitsResponse
-        """
-
         all_params = ['task_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1540,26 +1426,21 @@ class SmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_command_result(self, request):
         """上报服务端命令执行结果
 
         迁移Agent调用该接口向SMS服务端反馈指定指令的执行结果。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateCommandResultRequest request
-        :return: UpdateCommandResultResponse
+        :param request: Request instance for UpdateCommandResult
+        :type request: :class:`huaweicloudsdksms.v3.UpdateCommandResultRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.UpdateCommandResultResponse`
         """
         return self.update_command_result_with_http_info(request)
 
     def update_command_result_with_http_info(self, request):
-        """上报服务端命令执行结果
-
-        迁移Agent调用该接口向SMS服务端反馈指定指令的执行结果。
-
-        :param UpdateCommandResultRequest request
-        :return: UpdateCommandResultResponse
-        """
-
         all_params = ['server_id', 'update_command_result_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1605,26 +1486,21 @@ class SmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_copy_state(self, request):
         """更新任务对应源端复制状态
 
         更新任务对应源端复制状态
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateCopyStateRequest request
-        :return: UpdateCopyStateResponse
+        :param request: Request instance for UpdateCopyState
+        :type request: :class:`huaweicloudsdksms.v3.UpdateCopyStateRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.UpdateCopyStateResponse`
         """
         return self.update_copy_state_with_http_info(request)
 
     def update_copy_state_with_http_info(self, request):
-        """更新任务对应源端复制状态
-
-        更新任务对应源端复制状态
-
-        :param UpdateCopyStateRequest request
-        :return: UpdateCopyStateResponse
-        """
-
         all_params = ['source_id', 'update_copy_state_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1670,26 +1546,21 @@ class SmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_default_migproject(self, request):
         """更新默认迁移项目
 
         更改默认迁移项目，注册源端会注册在当前的默认项目下。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateDefaultMigprojectRequest request
-        :return: UpdateDefaultMigprojectResponse
+        :param request: Request instance for UpdateDefaultMigproject
+        :type request: :class:`huaweicloudsdksms.v3.UpdateDefaultMigprojectRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.UpdateDefaultMigprojectResponse`
         """
         return self.update_default_migproject_with_http_info(request)
 
     def update_default_migproject_with_http_info(self, request):
-        """更新默认迁移项目
-
-        更改默认迁移项目，注册源端会注册在当前的默认项目下。
-
-        :param UpdateDefaultMigprojectRequest request
-        :return: UpdateDefaultMigprojectResponse
-        """
-
         all_params = ['mig_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1733,26 +1604,21 @@ class SmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_disk_info(self, request):
         """更新磁盘信息
 
         更新服务器的磁盘信息，此接口会把服务器原有磁盘信息清空，然后更新成新磁盘信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateDiskInfoRequest request
-        :return: UpdateDiskInfoResponse
+        :param request: Request instance for UpdateDiskInfo
+        :type request: :class:`huaweicloudsdksms.v3.UpdateDiskInfoRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.UpdateDiskInfoResponse`
         """
         return self.update_disk_info_with_http_info(request)
 
     def update_disk_info_with_http_info(self, request):
-        """更新磁盘信息
-
-        更新服务器的磁盘信息，此接口会把服务器原有磁盘信息清空，然后更新成新磁盘信息
-
-        :param UpdateDiskInfoRequest request
-        :return: UpdateDiskInfoResponse
-        """
-
         all_params = ['source_id', 'update_disk_info_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1798,26 +1664,21 @@ class SmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_migproject(self, request):
         """更新迁移项目信息
 
         更新迁移项目的信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateMigprojectRequest request
-        :return: UpdateMigprojectResponse
+        :param request: Request instance for UpdateMigproject
+        :type request: :class:`huaweicloudsdksms.v3.UpdateMigprojectRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.UpdateMigprojectResponse`
         """
         return self.update_migproject_with_http_info(request)
 
     def update_migproject_with_http_info(self, request):
-        """更新迁移项目信息
-
-        更新迁移项目的信息
-
-        :param UpdateMigprojectRequest request
-        :return: UpdateMigprojectResponse
-        """
-
         all_params = ['mig_project_id', 'update_migproject_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1863,26 +1724,21 @@ class SmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_server_name(self, request):
         """修改指定ID的源端服务器名称
 
         该功能用来修改SMS服务端的源端名称，方便用户对源端进行管理。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateServerNameRequest request
-        :return: UpdateServerNameResponse
+        :param request: Request instance for UpdateServerName
+        :type request: :class:`huaweicloudsdksms.v3.UpdateServerNameRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.UpdateServerNameResponse`
         """
         return self.update_server_name_with_http_info(request)
 
     def update_server_name_with_http_info(self, request):
-        """修改指定ID的源端服务器名称
-
-        该功能用来修改SMS服务端的源端名称，方便用户对源端进行管理。
-
-        :param UpdateServerNameRequest request
-        :return: UpdateServerNameResponse
-        """
-
         all_params = ['source_id', 'update_server_name_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1928,26 +1784,21 @@ class SmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_speed(self, request):
         """设置迁移限速规则
 
         设置迁移任务的迁移速率。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateSpeedRequest request
-        :return: UpdateSpeedResponse
+        :param request: Request instance for UpdateSpeed
+        :type request: :class:`huaweicloudsdksms.v3.UpdateSpeedRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.UpdateSpeedResponse`
         """
         return self.update_speed_with_http_info(request)
 
     def update_speed_with_http_info(self, request):
-        """设置迁移限速规则
-
-        设置迁移任务的迁移速率。
-
-        :param UpdateSpeedRequest request
-        :return: UpdateSpeedResponse
-        """
-
         all_params = ['task_id', 'update_speed_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1993,26 +1844,21 @@ class SmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_task(self, request):
         """更新指定ID的迁移任务
 
         更新指定ID的迁移任务
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateTaskRequest request
-        :return: UpdateTaskResponse
+        :param request: Request instance for UpdateTask
+        :type request: :class:`huaweicloudsdksms.v3.UpdateTaskRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.UpdateTaskResponse`
         """
         return self.update_task_with_http_info(request)
 
     def update_task_with_http_info(self, request):
-        """更新指定ID的迁移任务
-
-        更新指定ID的迁移任务
-
-        :param UpdateTaskRequest request
-        :return: UpdateTaskResponse
-        """
-
         all_params = ['task_id', 'update_task_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2058,26 +1904,23 @@ class SmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_task_speed(self, request):
         """上报数据迁移进度和速率
 
-        此接口由安装在源端服务器上的迁移Agent在数据迁移阶段调用，用来将迁移的具体进度上报给SMS服务端。   迁移Agent自动调用此接口用于上报数据迁移进度，您无需调用此接口。
+        此接口由安装在源端服务器上的迁移Agent在数据迁移阶段调用，用来将迁移的具体进度上报给SMS服务端。
+         
+        迁移Agent自动调用此接口用于上报数据迁移进度，您无需调用此接口。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateTaskSpeedRequest request
-        :return: UpdateTaskSpeedResponse
+        :param request: Request instance for UpdateTaskSpeed
+        :type request: :class:`huaweicloudsdksms.v3.UpdateTaskSpeedRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.UpdateTaskSpeedResponse`
         """
         return self.update_task_speed_with_http_info(request)
 
     def update_task_speed_with_http_info(self, request):
-        """上报数据迁移进度和速率
-
-        此接口由安装在源端服务器上的迁移Agent在数据迁移阶段调用，用来将迁移的具体进度上报给SMS服务端。   迁移Agent自动调用此接口用于上报数据迁移进度，您无需调用此接口。
-
-        :param UpdateTaskSpeedRequest request
-        :return: UpdateTaskSpeedResponse
-        """
-
         all_params = ['task_id', 'update_task_speed_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2123,26 +1966,21 @@ class SmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_task_status(self, request):
         """管理迁移任务
 
         管理迁移任务，包括启动任务，暂停任务，同步任务，日志上传，回滚失败迁移任务
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateTaskStatusRequest request
-        :return: UpdateTaskStatusResponse
+        :param request: Request instance for UpdateTaskStatus
+        :type request: :class:`huaweicloudsdksms.v3.UpdateTaskStatusRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.UpdateTaskStatusResponse`
         """
         return self.update_task_status_with_http_info(request)
 
     def update_task_status_with_http_info(self, request):
-        """管理迁移任务
-
-        管理迁移任务，包括启动任务，暂停任务，同步任务，日志上传，回滚失败迁移任务
-
-        :param UpdateTaskStatusRequest request
-        :return: UpdateTaskStatusResponse
-        """
-
         all_params = ['task_id', 'update_task_status_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2188,26 +2026,21 @@ class SmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_template(self, request):
         """修改模板信息
 
         修改源端模板信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateTemplateRequest request
-        :return: UpdateTemplateResponse
+        :param request: Request instance for UpdateTemplate
+        :type request: :class:`huaweicloudsdksms.v3.UpdateTemplateRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.UpdateTemplateResponse`
         """
         return self.update_template_with_http_info(request)
 
     def update_template_with_http_info(self, request):
-        """修改模板信息
-
-        修改源端模板信息。
-
-        :param UpdateTemplateRequest request
-        :return: UpdateTemplateResponse
-        """
-
         all_params = ['id', 'update_template_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2252,7 +2085,6 @@ class SmsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

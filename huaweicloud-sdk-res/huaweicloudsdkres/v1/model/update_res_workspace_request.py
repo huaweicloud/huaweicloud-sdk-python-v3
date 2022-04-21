@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateResWorkspaceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateResWorkspaceRequest:
     }
 
     def __init__(self, content_type=None, workspace_id=None, body=None):
-        """UpdateResWorkspaceRequest - a model defined in huaweicloud sdk"""
+        """UpdateResWorkspaceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param content_type: 内容类型，取值为application/json。
+        :type content_type: str
+        :param workspace_id: 工作空间id。
+        :type workspace_id: str
+        :param body: Body of the UpdateResWorkspaceRequest
+        :type body: :class:`huaweicloudsdkres.v1.UpdateResWorkspaceRequestBody`
+        """
         
         
 
@@ -66,7 +75,7 @@ class UpdateResWorkspaceRequest:
         内容类型，取值为application/json。
 
         :param content_type: The content_type of this UpdateResWorkspaceRequest.
-        :type: str
+        :type content_type: str
         """
         self._content_type = content_type
 
@@ -88,7 +97,7 @@ class UpdateResWorkspaceRequest:
         工作空间id。
 
         :param workspace_id: The workspace_id of this UpdateResWorkspaceRequest.
-        :type: str
+        :type workspace_id: str
         """
         self._workspace_id = workspace_id
 
@@ -98,7 +107,7 @@ class UpdateResWorkspaceRequest:
 
 
         :return: The body of this UpdateResWorkspaceRequest.
-        :rtype: UpdateResWorkspaceRequestBody
+        :rtype: :class:`huaweicloudsdkres.v1.UpdateResWorkspaceRequestBody`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class UpdateResWorkspaceRequest:
 
 
         :param body: The body of this UpdateResWorkspaceRequest.
-        :type: UpdateResWorkspaceRequestBody
+        :type body: :class:`huaweicloudsdkres.v1.UpdateResWorkspaceRequestBody`
         """
         self._body = body
 

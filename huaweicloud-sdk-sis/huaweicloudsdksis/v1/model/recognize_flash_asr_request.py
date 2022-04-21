@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RecognizeFlashAsrRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class RecognizeFlashAsrRequest:
     }
 
     def __init__(self, _property=None, audio_format=None, add_punc=None, digit_norm=None, need_word_info=None, vocabulary_id=None, obs_bucket_name=None, obs_object_key=None, first_channel_only=None):
-        """RecognizeFlashAsrRequest - a model defined in huaweicloud sdk"""
+        """RecognizeFlashAsrRequest
+
+        The model defined in huaweicloud sdk
+
+        :param _property: 所使用的模型特征串。通常是 “语种_采样率_领域”的形式。 采样率需要与音频采样率保持一致。 当前支持如下模型特征串： chinese_8k_common chinese_16k_common
+        :type _property: str
+        :param audio_format: 音频格式，audio_format取值范围： wav,mp3,m4a,aac,opus
+        :type audio_format: str
+        :param add_punc: 是否加标点， 可以为 yes, 默认no
+        :type add_punc: str
+        :param digit_norm: 是否将音频中的数字使用阿拉伯数字的形式呈现，取值为yes，no，默认为yes
+        :type digit_norm: str
+        :param need_word_info: 表示是否在识别结果中输出分词结果信息，取值为yes，no，默认no
+        :type need_word_info: str
+        :param vocabulary_id: 热词表id
+        :type vocabulary_id: str
+        :param obs_bucket_name: obs桶名
+        :type obs_bucket_name: str
+        :param obs_object_key: obs对象key，经过urlencode编码，长度不超过1024个字符
+        :type obs_object_key: str
+        :param first_channel_only: 表示是否在识别中只识别首个声道的音频数据，取值为“yes”和“no”，默认为“no”。
+        :type first_channel_only: str
+        """
         
         
 
@@ -96,7 +117,7 @@ class RecognizeFlashAsrRequest:
         所使用的模型特征串。通常是 “语种_采样率_领域”的形式。 采样率需要与音频采样率保持一致。 当前支持如下模型特征串： chinese_8k_common chinese_16k_common
 
         :param _property: The _property of this RecognizeFlashAsrRequest.
-        :type: str
+        :type _property: str
         """
         self.__property = _property
 
@@ -118,7 +139,7 @@ class RecognizeFlashAsrRequest:
         音频格式，audio_format取值范围： wav,mp3,m4a,aac,opus
 
         :param audio_format: The audio_format of this RecognizeFlashAsrRequest.
-        :type: str
+        :type audio_format: str
         """
         self._audio_format = audio_format
 
@@ -140,7 +161,7 @@ class RecognizeFlashAsrRequest:
         是否加标点， 可以为 yes, 默认no
 
         :param add_punc: The add_punc of this RecognizeFlashAsrRequest.
-        :type: str
+        :type add_punc: str
         """
         self._add_punc = add_punc
 
@@ -162,7 +183,7 @@ class RecognizeFlashAsrRequest:
         是否将音频中的数字使用阿拉伯数字的形式呈现，取值为yes，no，默认为yes
 
         :param digit_norm: The digit_norm of this RecognizeFlashAsrRequest.
-        :type: str
+        :type digit_norm: str
         """
         self._digit_norm = digit_norm
 
@@ -184,7 +205,7 @@ class RecognizeFlashAsrRequest:
         表示是否在识别结果中输出分词结果信息，取值为yes，no，默认no
 
         :param need_word_info: The need_word_info of this RecognizeFlashAsrRequest.
-        :type: str
+        :type need_word_info: str
         """
         self._need_word_info = need_word_info
 
@@ -206,7 +227,7 @@ class RecognizeFlashAsrRequest:
         热词表id
 
         :param vocabulary_id: The vocabulary_id of this RecognizeFlashAsrRequest.
-        :type: str
+        :type vocabulary_id: str
         """
         self._vocabulary_id = vocabulary_id
 
@@ -228,7 +249,7 @@ class RecognizeFlashAsrRequest:
         obs桶名
 
         :param obs_bucket_name: The obs_bucket_name of this RecognizeFlashAsrRequest.
-        :type: str
+        :type obs_bucket_name: str
         """
         self._obs_bucket_name = obs_bucket_name
 
@@ -250,7 +271,7 @@ class RecognizeFlashAsrRequest:
         obs对象key，经过urlencode编码，长度不超过1024个字符
 
         :param obs_object_key: The obs_object_key of this RecognizeFlashAsrRequest.
-        :type: str
+        :type obs_object_key: str
         """
         self._obs_object_key = obs_object_key
 
@@ -272,7 +293,7 @@ class RecognizeFlashAsrRequest:
         表示是否在识别中只识别首个声道的音频数据，取值为“yes”和“no”，默认为“no”。
 
         :param first_channel_only: The first_channel_only of this RecognizeFlashAsrRequest.
-        :type: str
+        :type first_channel_only: str
         """
         self._first_channel_only = first_channel_only
 

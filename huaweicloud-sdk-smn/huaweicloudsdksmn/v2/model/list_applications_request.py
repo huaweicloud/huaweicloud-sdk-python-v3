@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListApplicationsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListApplicationsRequest:
     }
 
     def __init__(self, offset=None, limit=None, name=None, platform=None):
-        """ListApplicationsRequest - a model defined in huaweicloud sdk"""
+        """ListApplicationsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param offset: 偏移量。  偏移量为一个大于0小于资源总个数的整数，表示查询该偏移量后面的所有的资源，默认值为0。
+        :type offset: int
+        :param limit: 查询的数量限制。  取值范围：1~100，取值一般为10，20，50。功能说明：每页返回的资源个数。默认值为100。
+        :type limit: int
+        :param name: 检索应用名称。  支持后向模糊匹配，长度不得超过64个字符，只能包含英文字母、下划线和数字。
+        :type name: str
+        :param platform: 应用平台。  目前仅支持HMS、APNS、APNS_SANDBOX。  HMS是为开发者提供的消息推送平台。  APNS和APNS_SANDBOX是用于推送iOS消息的服务平台。
+        :type platform: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class ListApplicationsRequest:
         偏移量。  偏移量为一个大于0小于资源总个数的整数，表示查询该偏移量后面的所有的资源，默认值为0。
 
         :param offset: The offset of this ListApplicationsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -95,7 +106,7 @@ class ListApplicationsRequest:
         查询的数量限制。  取值范围：1~100，取值一般为10，20，50。功能说明：每页返回的资源个数。默认值为100。
 
         :param limit: The limit of this ListApplicationsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -117,7 +128,7 @@ class ListApplicationsRequest:
         检索应用名称。  支持后向模糊匹配，长度不得超过64个字符，只能包含英文字母、下划线和数字。
 
         :param name: The name of this ListApplicationsRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -139,7 +150,7 @@ class ListApplicationsRequest:
         应用平台。  目前仅支持HMS、APNS、APNS_SANDBOX。  HMS是为开发者提供的消息推送平台。  APNS和APNS_SANDBOX是用于推送iOS消息的服务平台。
 
         :param platform: The platform of this ListApplicationsRequest.
-        :type: str
+        :type platform: str
         """
         self._platform = platform
 

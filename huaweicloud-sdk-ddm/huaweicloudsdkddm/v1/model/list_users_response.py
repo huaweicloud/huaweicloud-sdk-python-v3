@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListUsersResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListUsersResponse(SdkResponse):
     }
 
     def __init__(self, users=None, page_no=None, page_size=None, total_record=None, total_page=None):
-        """ListUsersResponse - a model defined in huaweicloud sdk"""
+        """ListUsersResponse
+
+        The model defined in huaweicloud sdk
+
+        :param users: DDM实例帐号相关信息的集合。
+        :type users: list[:class:`huaweicloudsdkddm.v1.GetUsersListDetailResponses`]
+        :param page_no: 当前页码
+        :type page_no: int
+        :param page_size: 当前页码的数据条数
+        :type page_size: int
+        :param total_record: 总条数
+        :type total_record: int
+        :param total_page: 总页数
+        :type total_page: int
+        """
         
         super(ListUsersResponse, self).__init__()
 
@@ -67,7 +80,7 @@ class ListUsersResponse(SdkResponse):
         DDM实例帐号相关信息的集合。
 
         :return: The users of this ListUsersResponse.
-        :rtype: list[GetUsersListDetailResponses]
+        :rtype: list[:class:`huaweicloudsdkddm.v1.GetUsersListDetailResponses`]
         """
         return self._users
 
@@ -78,7 +91,7 @@ class ListUsersResponse(SdkResponse):
         DDM实例帐号相关信息的集合。
 
         :param users: The users of this ListUsersResponse.
-        :type: list[GetUsersListDetailResponses]
+        :type users: list[:class:`huaweicloudsdkddm.v1.GetUsersListDetailResponses`]
         """
         self._users = users
 
@@ -100,7 +113,7 @@ class ListUsersResponse(SdkResponse):
         当前页码
 
         :param page_no: The page_no of this ListUsersResponse.
-        :type: int
+        :type page_no: int
         """
         self._page_no = page_no
 
@@ -122,7 +135,7 @@ class ListUsersResponse(SdkResponse):
         当前页码的数据条数
 
         :param page_size: The page_size of this ListUsersResponse.
-        :type: int
+        :type page_size: int
         """
         self._page_size = page_size
 
@@ -144,7 +157,7 @@ class ListUsersResponse(SdkResponse):
         总条数
 
         :param total_record: The total_record of this ListUsersResponse.
-        :type: int
+        :type total_record: int
         """
         self._total_record = total_record
 
@@ -166,7 +179,7 @@ class ListUsersResponse(SdkResponse):
         总页数
 
         :param total_page: The total_page of this ListUsersResponse.
-        :type: int
+        :type total_page: int
         """
         self._total_page = total_page
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ServerAttachableQuantity:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ServerAttachableQuantity:
     }
 
     def __init__(self, free_scsi=None, free_blk=None, free_disk=None, free_nic=None):
-        """ServerAttachableQuantity - a model defined in huaweicloud sdk"""
+        """ServerAttachableQuantity
+
+        The model defined in huaweicloud sdk
+
+        :param free_scsi: 可挂载scsi卷数。
+        :type free_scsi: int
+        :param free_blk: 可挂载vbd卷数。
+        :type free_blk: int
+        :param free_disk: 可挂载卷数。
+        :type free_disk: int
+        :param free_nic: 可挂载网卡数。
+        :type free_nic: int
+        """
         
         
 
@@ -69,7 +80,7 @@ class ServerAttachableQuantity:
         可挂载scsi卷数。
 
         :param free_scsi: The free_scsi of this ServerAttachableQuantity.
-        :type: int
+        :type free_scsi: int
         """
         self._free_scsi = free_scsi
 
@@ -91,7 +102,7 @@ class ServerAttachableQuantity:
         可挂载vbd卷数。
 
         :param free_blk: The free_blk of this ServerAttachableQuantity.
-        :type: int
+        :type free_blk: int
         """
         self._free_blk = free_blk
 
@@ -113,7 +124,7 @@ class ServerAttachableQuantity:
         可挂载卷数。
 
         :param free_disk: The free_disk of this ServerAttachableQuantity.
-        :type: int
+        :type free_disk: int
         """
         self._free_disk = free_disk
 
@@ -135,7 +146,7 @@ class ServerAttachableQuantity:
         可挂载网卡数。
 
         :param free_nic: The free_nic of this ServerAttachableQuantity.
-        :type: int
+        :type free_nic: int
         """
         self._free_nic = free_nic
 

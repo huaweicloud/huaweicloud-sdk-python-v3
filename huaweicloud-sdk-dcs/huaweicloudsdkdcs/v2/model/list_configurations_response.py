@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListConfigurationsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListConfigurationsResponse(SdkResponse):
     }
 
     def __init__(self, config_time=None, instance_id=None, redis_config=None, config_status=None, status=None):
-        """ListConfigurationsResponse - a model defined in huaweicloud sdk"""
+        """ListConfigurationsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param config_time: 实例操作时间。格式为：2017-03-31T12:24:46.297Z
+        :type config_time: str
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param redis_config: 实例配置项数组。
+        :type redis_config: list[:class:`huaweicloudsdkdcs.v2.QueryRedisConfig`]
+        :param config_status: 实例修改状态 - UPDATING - FAILURE - SUCCESS 
+        :type config_status: str
+        :param status: 实例运行状态。
+        :type status: str
+        """
         
         super(ListConfigurationsResponse, self).__init__()
 
@@ -78,7 +91,7 @@ class ListConfigurationsResponse(SdkResponse):
         实例操作时间。格式为：2017-03-31T12:24:46.297Z
 
         :param config_time: The config_time of this ListConfigurationsResponse.
-        :type: str
+        :type config_time: str
         """
         self._config_time = config_time
 
@@ -100,7 +113,7 @@ class ListConfigurationsResponse(SdkResponse):
         实例ID。
 
         :param instance_id: The instance_id of this ListConfigurationsResponse.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -111,7 +124,7 @@ class ListConfigurationsResponse(SdkResponse):
         实例配置项数组。
 
         :return: The redis_config of this ListConfigurationsResponse.
-        :rtype: list[QueryRedisConfig]
+        :rtype: list[:class:`huaweicloudsdkdcs.v2.QueryRedisConfig`]
         """
         return self._redis_config
 
@@ -122,7 +135,7 @@ class ListConfigurationsResponse(SdkResponse):
         实例配置项数组。
 
         :param redis_config: The redis_config of this ListConfigurationsResponse.
-        :type: list[QueryRedisConfig]
+        :type redis_config: list[:class:`huaweicloudsdkdcs.v2.QueryRedisConfig`]
         """
         self._redis_config = redis_config
 
@@ -144,7 +157,7 @@ class ListConfigurationsResponse(SdkResponse):
         实例修改状态 - UPDATING - FAILURE - SUCCESS 
 
         :param config_status: The config_status of this ListConfigurationsResponse.
-        :type: str
+        :type config_status: str
         """
         self._config_status = config_status
 
@@ -166,7 +179,7 @@ class ListConfigurationsResponse(SdkResponse):
         实例运行状态。
 
         :param status: The status of this ListConfigurationsResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 

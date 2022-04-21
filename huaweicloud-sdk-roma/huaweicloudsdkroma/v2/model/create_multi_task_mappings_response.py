@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateMultiTaskMappingsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateMultiTaskMappingsResponse(SdkResponse):
     }
 
     def __init__(self, mapping_id=None):
-        """CreateMultiTaskMappingsResponse - a model defined in huaweicloud sdk"""
+        """CreateMultiTaskMappingsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param mapping_id: 映射唯一ID
+        :type mapping_id: str
+        """
         
         super(CreateMultiTaskMappingsResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class CreateMultiTaskMappingsResponse(SdkResponse):
         映射唯一ID
 
         :param mapping_id: The mapping_id of this CreateMultiTaskMappingsResponse.
-        :type: str
+        :type mapping_id: str
         """
         self._mapping_id = mapping_id
 

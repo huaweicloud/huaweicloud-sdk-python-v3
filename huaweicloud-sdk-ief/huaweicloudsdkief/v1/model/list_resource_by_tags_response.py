@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListResourceByTagsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListResourceByTagsResponse(SdkResponse):
     }
 
     def __init__(self, resources=None, total_count=None):
-        """ListResourceByTagsResponse - a model defined in huaweicloud sdk"""
+        """ListResourceByTagsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param resources: 资源实例
+        :type resources: list[:class:`huaweicloudsdkief.v1.Resource`]
+        :param total_count: 总记录数
+        :type total_count: int
+        """
         
         super(ListResourceByTagsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListResourceByTagsResponse(SdkResponse):
         资源实例
 
         :return: The resources of this ListResourceByTagsResponse.
-        :rtype: list[Resource]
+        :rtype: list[:class:`huaweicloudsdkief.v1.Resource`]
         """
         return self._resources
 
@@ -63,7 +70,7 @@ class ListResourceByTagsResponse(SdkResponse):
         资源实例
 
         :param resources: The resources of this ListResourceByTagsResponse.
-        :type: list[Resource]
+        :type resources: list[:class:`huaweicloudsdkief.v1.Resource`]
         """
         self._resources = resources
 
@@ -85,7 +92,7 @@ class ListResourceByTagsResponse(SdkResponse):
         总记录数
 
         :param total_count: The total_count of this ListResourceByTagsResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 

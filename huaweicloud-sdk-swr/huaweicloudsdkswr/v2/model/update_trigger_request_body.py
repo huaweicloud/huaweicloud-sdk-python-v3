@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateTriggerRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateTriggerRequestBody:
     }
 
     def __init__(self, enable=None):
-        """UpdateTriggerRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateTriggerRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param enable: 是否生效,true启用，false不启用
+        :type enable: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class UpdateTriggerRequestBody:
         是否生效,true启用，false不启用
 
         :param enable: The enable of this UpdateTriggerRequestBody.
-        :type: str
+        :type enable: str
         """
         self._enable = enable
 

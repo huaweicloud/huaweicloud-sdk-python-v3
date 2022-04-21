@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CopyImageInRegionRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CopyImageInRegionRequestBody:
     }
 
     def __init__(self, cmk_id=None, description=None, enterprise_project_id=None, name=None):
-        """CopyImageInRegionRequestBody - a model defined in huaweicloud sdk"""
+        """CopyImageInRegionRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param cmk_id: 加密密钥。默认为空。
+        :type cmk_id: str
+        :param description: 镜像描述信息。_description参数说明请参考镜像属性。支持字母、数字、中文等，不支持回车、&lt;、 &gt;，长度不能超过1024个字符。默认为空。
+        :type description: str
+        :param enterprise_project_id: 表示当前镜像所属的企业项目。 取值为0或无该值，表示属于default企业项目。 取值为UUID，表示属于该UUID对应的企业项目。关于企业项目ID的获取及企业项目特性的详细信息，请参考《企业管理用户指南》。
+        :type enterprise_project_id: str
+        :param name: 镜像名称
+        :type name: str
+        """
         
         
 
@@ -72,7 +83,7 @@ class CopyImageInRegionRequestBody:
         加密密钥。默认为空。
 
         :param cmk_id: The cmk_id of this CopyImageInRegionRequestBody.
-        :type: str
+        :type cmk_id: str
         """
         self._cmk_id = cmk_id
 
@@ -94,7 +105,7 @@ class CopyImageInRegionRequestBody:
         镜像描述信息。_description参数说明请参考镜像属性。支持字母、数字、中文等，不支持回车、<、 >，长度不能超过1024个字符。默认为空。
 
         :param description: The description of this CopyImageInRegionRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -116,7 +127,7 @@ class CopyImageInRegionRequestBody:
         表示当前镜像所属的企业项目。 取值为0或无该值，表示属于default企业项目。 取值为UUID，表示属于该UUID对应的企业项目。关于企业项目ID的获取及企业项目特性的详细信息，请参考《企业管理用户指南》。
 
         :param enterprise_project_id: The enterprise_project_id of this CopyImageInRegionRequestBody.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -138,7 +149,7 @@ class CopyImageInRegionRequestBody:
         镜像名称
 
         :param name: The name of this CopyImageInRegionRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 

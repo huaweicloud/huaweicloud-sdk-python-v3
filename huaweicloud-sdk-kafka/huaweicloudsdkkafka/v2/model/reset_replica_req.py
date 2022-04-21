@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResetReplicaReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ResetReplicaReq:
     }
 
     def __init__(self, partitions=None):
-        """ResetReplicaReq - a model defined in huaweicloud sdk"""
+        """ResetReplicaReq
+
+        The model defined in huaweicloud sdk
+
+        :param partitions: 期望调整的分区副本分配情况。
+        :type partitions: list[:class:`huaweicloudsdkkafka.v2.ResetReplicaReqPartitions`]
+        """
         
         
 
@@ -47,7 +52,7 @@ class ResetReplicaReq:
         期望调整的分区副本分配情况。
 
         :return: The partitions of this ResetReplicaReq.
-        :rtype: list[ResetReplicaReqPartitions]
+        :rtype: list[:class:`huaweicloudsdkkafka.v2.ResetReplicaReqPartitions`]
         """
         return self._partitions
 
@@ -58,7 +63,7 @@ class ResetReplicaReq:
         期望调整的分区副本分配情况。
 
         :param partitions: The partitions of this ResetReplicaReq.
-        :type: list[ResetReplicaReqPartitions]
+        :type partitions: list[:class:`huaweicloudsdkkafka.v2.ResetReplicaReqPartitions`]
         """
         self._partitions = partitions
 

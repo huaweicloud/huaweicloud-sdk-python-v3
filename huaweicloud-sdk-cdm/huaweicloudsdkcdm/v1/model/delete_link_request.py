@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteLinkRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteLinkRequest:
     }
 
     def __init__(self, cluster_id=None, link_name=None):
-        """DeleteLinkRequest - a model defined in huaweicloud sdk"""
+        """DeleteLinkRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 集群ID
+        :type cluster_id: str
+        :param link_name: 需要删除的连接名
+        :type link_name: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class DeleteLinkRequest:
         集群ID
 
         :param cluster_id: The cluster_id of this DeleteLinkRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -83,7 +90,7 @@ class DeleteLinkRequest:
         需要删除的连接名
 
         :param link_name: The link_name of this DeleteLinkRequest.
-        :type: str
+        :type link_name: str
         """
         self._link_name = link_name
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StopIndividualStreamJobResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class StopIndividualStreamJobResponse(SdkResponse):
     }
 
     def __init__(self):
-        """StopIndividualStreamJobResponse - a model defined in huaweicloud sdk"""
+        """StopIndividualStreamJobResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(StopIndividualStreamJobResponse, self).__init__()
         self.discriminator = None

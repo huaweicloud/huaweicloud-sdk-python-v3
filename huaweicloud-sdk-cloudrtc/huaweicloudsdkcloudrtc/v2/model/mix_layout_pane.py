@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MixLayoutPane:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class MixLayoutPane:
     }
 
     def __init__(self, id=None, user_id=None, video_type=None, x=None, y=None, width=None, height=None, zorder=None, crop_mode=None):
-        """MixLayoutPane - a model defined in huaweicloud sdk"""
+        """MixLayoutPane
+
+        The model defined in huaweicloud sdk
+
+        :param id: 窗口id，从1开始编号
+        :type id: int
+        :param user_id: 加入房间的用户id
+        :type user_id: str
+        :param video_type: 标识视频流的类型，可选摄像头流或者屏幕分享流。  - CAMERASTREAM：摄像头视频流 - SCREENSTREAM：屏幕分享视频流  默认为CAMERASTREAM。 
+        :type video_type: str
+        :param x: 坐标x，归一化百分比，画布上该画面左上角的横坐标的相对值，范围是 [0.0,1.0]。从左到右布局，0.0在最左端，1.0在最右端，小数取值范围在float内，自定义布局场景下填写本字段。
+        :type x: float
+        :param y: 坐标y，归一化百分比，画布上该画面左上角的纵坐标的相对值，范围是 [0.0,1.0]。从上到下布局，0.0在最上端，1.0在最下端，小数取值范围在float内，自定义布局场景下填写本字段。
+        :type y: float
+        :param width: 窗格宽，归一化百分比，小数取值范围在float内，自定义布局场景下填写本字段。
+        :type width: float
+        :param height: 窗格宽，归一化百分比，小数取值范围在float内，自定义布局场景下填写本字段。
+        :type height: float
+        :param zorder: 叠放顺序，0为最底层，1层在0层之上，以此类推，最大支持25层，自定义布局场景下填写本字段。
+        :type zorder: int
+        :param crop_mode: 裁剪模式，自定义布局场景下填写本字段，支持两种模式：   - KEEP_RATIO_PADDING ：保持比例留边。   - KEEP_RATIO_CROP ：保持比例裁剪。 
+        :type crop_mode: str
+        """
         
         
 
@@ -98,7 +119,7 @@ class MixLayoutPane:
         窗口id，从1开始编号
 
         :param id: The id of this MixLayoutPane.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -120,7 +141,7 @@ class MixLayoutPane:
         加入房间的用户id
 
         :param user_id: The user_id of this MixLayoutPane.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -142,7 +163,7 @@ class MixLayoutPane:
         标识视频流的类型，可选摄像头流或者屏幕分享流。  - CAMERASTREAM：摄像头视频流 - SCREENSTREAM：屏幕分享视频流  默认为CAMERASTREAM。 
 
         :param video_type: The video_type of this MixLayoutPane.
-        :type: str
+        :type video_type: str
         """
         self._video_type = video_type
 
@@ -164,7 +185,7 @@ class MixLayoutPane:
         坐标x，归一化百分比，画布上该画面左上角的横坐标的相对值，范围是 [0.0,1.0]。从左到右布局，0.0在最左端，1.0在最右端，小数取值范围在float内，自定义布局场景下填写本字段。
 
         :param x: The x of this MixLayoutPane.
-        :type: float
+        :type x: float
         """
         self._x = x
 
@@ -186,7 +207,7 @@ class MixLayoutPane:
         坐标y，归一化百分比，画布上该画面左上角的纵坐标的相对值，范围是 [0.0,1.0]。从上到下布局，0.0在最上端，1.0在最下端，小数取值范围在float内，自定义布局场景下填写本字段。
 
         :param y: The y of this MixLayoutPane.
-        :type: float
+        :type y: float
         """
         self._y = y
 
@@ -208,7 +229,7 @@ class MixLayoutPane:
         窗格宽，归一化百分比，小数取值范围在float内，自定义布局场景下填写本字段。
 
         :param width: The width of this MixLayoutPane.
-        :type: float
+        :type width: float
         """
         self._width = width
 
@@ -230,7 +251,7 @@ class MixLayoutPane:
         窗格宽，归一化百分比，小数取值范围在float内，自定义布局场景下填写本字段。
 
         :param height: The height of this MixLayoutPane.
-        :type: float
+        :type height: float
         """
         self._height = height
 
@@ -252,7 +273,7 @@ class MixLayoutPane:
         叠放顺序，0为最底层，1层在0层之上，以此类推，最大支持25层，自定义布局场景下填写本字段。
 
         :param zorder: The zorder of this MixLayoutPane.
-        :type: int
+        :type zorder: int
         """
         self._zorder = zorder
 
@@ -274,7 +295,7 @@ class MixLayoutPane:
         裁剪模式，自定义布局场景下填写本字段，支持两种模式：   - KEEP_RATIO_PADDING ：保持比例留边。   - KEEP_RATIO_CROP ：保持比例裁剪。 
 
         :param crop_mode: The crop_mode of this MixLayoutPane.
-        :type: str
+        :type crop_mode: str
         """
         self._crop_mode = crop_mode
 

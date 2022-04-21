@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListHostsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListHostsRequest:
     }
 
     def __init__(self, cluster_id=None, page_size=None, current_page=None):
-        """ListHostsRequest - a model defined in huaweicloud sdk"""
+        """ListHostsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 集群ID。获取方法，请参见[获取集群ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
+        :type cluster_id: str
+        :param page_size: 分页查询每页返回的最大集群数量。 取值范围：[1～2147483646] 默认值为10。
+        :type page_size: str
+        :param current_page: 当前查询页码。默认值为1。
+        :type current_page: str
+        """
         
         
 
@@ -67,7 +76,7 @@ class ListHostsRequest:
         集群ID。获取方法，请参见[获取集群ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
 
         :param cluster_id: The cluster_id of this ListHostsRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -89,7 +98,7 @@ class ListHostsRequest:
         分页查询每页返回的最大集群数量。 取值范围：[1～2147483646] 默认值为10。
 
         :param page_size: The page_size of this ListHostsRequest.
-        :type: str
+        :type page_size: str
         """
         self._page_size = page_size
 
@@ -111,7 +120,7 @@ class ListHostsRequest:
         当前查询页码。默认值为1。
 
         :param current_page: The current_page of this ListHostsRequest.
-        :type: str
+        :type current_page: str
         """
         self._current_page = current_page
 

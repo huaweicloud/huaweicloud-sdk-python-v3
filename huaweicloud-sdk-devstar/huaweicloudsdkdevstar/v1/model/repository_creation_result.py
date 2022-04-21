@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RepositoryCreationResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class RepositoryCreationResult:
     }
 
     def __init__(self, repository=None, task_id=None, status=None, failure_reason=None):
-        """RepositoryCreationResult - a model defined in huaweicloud sdk"""
+        """RepositoryCreationResult
+
+        The model defined in huaweicloud sdk
+
+        :param repository: 
+        :type repository: :class:`huaweicloudsdkdevstar.v1.RepositoryBasicInfo`
+        :param task_id: 任务id
+        :type task_id: str
+        :param status: 任务状态, success:成功,failed:失败,creating:创建中
+        :type status: str
+        :param failure_reason: 失败原因
+        :type failure_reason: str
+        """
         
         
 
@@ -61,7 +72,7 @@ class RepositoryCreationResult:
 
 
         :return: The repository of this RepositoryCreationResult.
-        :rtype: RepositoryBasicInfo
+        :rtype: :class:`huaweicloudsdkdevstar.v1.RepositoryBasicInfo`
         """
         return self._repository
 
@@ -71,7 +82,7 @@ class RepositoryCreationResult:
 
 
         :param repository: The repository of this RepositoryCreationResult.
-        :type: RepositoryBasicInfo
+        :type repository: :class:`huaweicloudsdkdevstar.v1.RepositoryBasicInfo`
         """
         self._repository = repository
 
@@ -93,7 +104,7 @@ class RepositoryCreationResult:
         任务id
 
         :param task_id: The task_id of this RepositoryCreationResult.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -115,7 +126,7 @@ class RepositoryCreationResult:
         任务状态, success:成功,failed:失败,creating:创建中
 
         :param status: The status of this RepositoryCreationResult.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -137,7 +148,7 @@ class RepositoryCreationResult:
         失败原因
 
         :param failure_reason: The failure_reason of this RepositoryCreationResult.
-        :type: str
+        :type failure_reason: str
         """
         self._failure_reason = failure_reason
 

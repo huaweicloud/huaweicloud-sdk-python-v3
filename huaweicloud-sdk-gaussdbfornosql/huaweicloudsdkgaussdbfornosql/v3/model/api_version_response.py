@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApiVersionResponse:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ApiVersionResponse:
     }
 
     def __init__(self, id=None, links=None, status=None, version=None, min_version=None, updated=None):
-        """ApiVersionResponse - a model defined in huaweicloud sdk"""
+        """ApiVersionResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: API版本号。
+        :type id: str
+        :param links: 对应API的链接信息,v3版本该字段为[]。
+        :type links: list[:class:`huaweicloudsdkgaussdbfornosql.v3.Links`]
+        :param status: 版本状态。 取值为“CURRENT”，表示该版本目前已对外公布。
+        :type status: str
+        :param version: API版本的子版本信息。
+        :type version: str
+        :param min_version: API版本的最小版本号。
+        :type min_version: str
+        :param updated: 版本更新时间。格式为“yyyy-mm-dd Thh:mm:ssZ”。其中，T指某个时间的开始，Z指UTC时间。
+        :type updated: str
+        """
         
         
 
@@ -77,7 +92,7 @@ class ApiVersionResponse:
         API版本号。
 
         :param id: The id of this ApiVersionResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -88,7 +103,7 @@ class ApiVersionResponse:
         对应API的链接信息,v3版本该字段为[]。
 
         :return: The links of this ApiVersionResponse.
-        :rtype: list[Links]
+        :rtype: list[:class:`huaweicloudsdkgaussdbfornosql.v3.Links`]
         """
         return self._links
 
@@ -99,7 +114,7 @@ class ApiVersionResponse:
         对应API的链接信息,v3版本该字段为[]。
 
         :param links: The links of this ApiVersionResponse.
-        :type: list[Links]
+        :type links: list[:class:`huaweicloudsdkgaussdbfornosql.v3.Links`]
         """
         self._links = links
 
@@ -121,7 +136,7 @@ class ApiVersionResponse:
         版本状态。 取值为“CURRENT”，表示该版本目前已对外公布。
 
         :param status: The status of this ApiVersionResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -143,7 +158,7 @@ class ApiVersionResponse:
         API版本的子版本信息。
 
         :param version: The version of this ApiVersionResponse.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -165,7 +180,7 @@ class ApiVersionResponse:
         API版本的最小版本号。
 
         :param min_version: The min_version of this ApiVersionResponse.
-        :type: str
+        :type min_version: str
         """
         self._min_version = min_version
 
@@ -187,7 +202,7 @@ class ApiVersionResponse:
         版本更新时间。格式为“yyyy-mm-dd Thh:mm:ssZ”。其中，T指某个时间的开始，Z指UTC时间。
 
         :param updated: The updated of this ApiVersionResponse.
-        :type: str
+        :type updated: str
         """
         self._updated = updated
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateSubnetTagRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateSubnetTagRequest:
     }
 
     def __init__(self, subnet_id=None, body=None):
-        """CreateSubnetTagRequest - a model defined in huaweicloud sdk"""
+        """CreateSubnetTagRequest
+
+        The model defined in huaweicloud sdk
+
+        :param subnet_id: 子网ID
+        :type subnet_id: str
+        :param body: Body of the CreateSubnetTagRequest
+        :type body: :class:`huaweicloudsdkvpc.v2.CreateSubnetTagRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateSubnetTagRequest:
         子网ID
 
         :param subnet_id: The subnet_id of this CreateSubnetTagRequest.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -72,7 +79,7 @@ class CreateSubnetTagRequest:
 
 
         :return: The body of this CreateSubnetTagRequest.
-        :rtype: CreateSubnetTagRequestBody
+        :rtype: :class:`huaweicloudsdkvpc.v2.CreateSubnetTagRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CreateSubnetTagRequest:
 
 
         :param body: The body of this CreateSubnetTagRequest.
-        :type: CreateSubnetTagRequestBody
+        :type body: :class:`huaweicloudsdkvpc.v2.CreateSubnetTagRequestBody`
         """
         self._body = body
 

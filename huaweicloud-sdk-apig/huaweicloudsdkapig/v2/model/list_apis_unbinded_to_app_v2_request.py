@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListApisUnbindedToAppV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ListApisUnbindedToAppV2Request:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, app_id=None, env_id=None, group_id=None, api_id=None, api_name=None):
-        """ListApisUnbindedToAppV2Request - a model defined in huaweicloud sdk"""
+        """ListApisUnbindedToAppV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param offset: 偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
+        :type offset: int
+        :param limit: 每页显示的条目数量
+        :type limit: int
+        :param app_id: 应用id
+        :type app_id: str
+        :param env_id: 环境id
+        :type env_id: str
+        :param group_id: API分组编号
+        :type group_id: str
+        :param api_id: API编号
+        :type api_id: str
+        :param api_name: API名称
+        :type api_name: str
+        """
         
         
 
@@ -90,7 +109,7 @@ class ListApisUnbindedToAppV2Request:
         实例ID
 
         :param instance_id: The instance_id of this ListApisUnbindedToAppV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -112,7 +131,7 @@ class ListApisUnbindedToAppV2Request:
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
         :param offset: The offset of this ListApisUnbindedToAppV2Request.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -134,7 +153,7 @@ class ListApisUnbindedToAppV2Request:
         每页显示的条目数量
 
         :param limit: The limit of this ListApisUnbindedToAppV2Request.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -156,7 +175,7 @@ class ListApisUnbindedToAppV2Request:
         应用id
 
         :param app_id: The app_id of this ListApisUnbindedToAppV2Request.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -178,7 +197,7 @@ class ListApisUnbindedToAppV2Request:
         环境id
 
         :param env_id: The env_id of this ListApisUnbindedToAppV2Request.
-        :type: str
+        :type env_id: str
         """
         self._env_id = env_id
 
@@ -200,7 +219,7 @@ class ListApisUnbindedToAppV2Request:
         API分组编号
 
         :param group_id: The group_id of this ListApisUnbindedToAppV2Request.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -222,7 +241,7 @@ class ListApisUnbindedToAppV2Request:
         API编号
 
         :param api_id: The api_id of this ListApisUnbindedToAppV2Request.
-        :type: str
+        :type api_id: str
         """
         self._api_id = api_id
 
@@ -244,7 +263,7 @@ class ListApisUnbindedToAppV2Request:
         API名称
 
         :param api_name: The api_name of this ListApisUnbindedToAppV2Request.
-        :type: str
+        :type api_name: str
         """
         self._api_name = api_name
 

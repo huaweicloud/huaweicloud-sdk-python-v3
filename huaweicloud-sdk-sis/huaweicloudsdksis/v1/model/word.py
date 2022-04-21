@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Word:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class Word:
     }
 
     def __init__(self, text=None, text_original=None, text_normalised=None, out_of_vocabulary=None, start_time=None, end_time=None, score=None, pronunciation=None, fluency=None, phonemes=None):
-        """Word - a model defined in huaweicloud sdk"""
+        """Word
+
+        The model defined in huaweicloud sdk
+
+        :param text: 去除了所有标点符号后的原始文本 前端调用接口后推荐使用“​text​”来在UI 中展示结果
+        :type text: str
+        :param text_original: 接口接收的原始文本
+        :type text_original: str
+        :param text_normalised: 原始文本规范化后切分成的单词 如175 会 规范为 [\&quot;one\&quot;, \&quot;\&quot;hundred\&quot;, \&quot;and\&quot;, \&quot;seventy\&quot;, \&quot;five\&quot;]
+        :type text_normalised: list[str]
+        :param out_of_vocabulary: 是否命中模型发音字典 如果未命中，则表明会根据发音规律推测正确发音
+        :type out_of_vocabulary: bool
+        :param start_time: 起始时间
+        :type start_time: float
+        :param end_time: 结束时间
+        :type end_time: float
+        :param score: 综合评分
+        :type score: float
+        :param pronunciation: 
+        :type pronunciation: :class:`huaweicloudsdksis.v1.WordPronunciation`
+        :param fluency: 
+        :type fluency: :class:`huaweicloudsdksis.v1.WordFluency`
+        :param phonemes: 音节打分表
+        :type phonemes: list[:class:`huaweicloudsdksis.v1.Phoneme`]
+        """
         
         
 
@@ -100,7 +123,7 @@ class Word:
         去除了所有标点符号后的原始文本 前端调用接口后推荐使用“​text​”来在UI 中展示结果
 
         :param text: The text of this Word.
-        :type: str
+        :type text: str
         """
         self._text = text
 
@@ -122,7 +145,7 @@ class Word:
         接口接收的原始文本
 
         :param text_original: The text_original of this Word.
-        :type: str
+        :type text_original: str
         """
         self._text_original = text_original
 
@@ -144,7 +167,7 @@ class Word:
         原始文本规范化后切分成的单词 如175 会 规范为 [\"one\", \"\"hundred\", \"and\", \"seventy\", \"five\"]
 
         :param text_normalised: The text_normalised of this Word.
-        :type: list[str]
+        :type text_normalised: list[str]
         """
         self._text_normalised = text_normalised
 
@@ -166,7 +189,7 @@ class Word:
         是否命中模型发音字典 如果未命中，则表明会根据发音规律推测正确发音
 
         :param out_of_vocabulary: The out_of_vocabulary of this Word.
-        :type: bool
+        :type out_of_vocabulary: bool
         """
         self._out_of_vocabulary = out_of_vocabulary
 
@@ -188,7 +211,7 @@ class Word:
         起始时间
 
         :param start_time: The start_time of this Word.
-        :type: float
+        :type start_time: float
         """
         self._start_time = start_time
 
@@ -210,7 +233,7 @@ class Word:
         结束时间
 
         :param end_time: The end_time of this Word.
-        :type: float
+        :type end_time: float
         """
         self._end_time = end_time
 
@@ -232,7 +255,7 @@ class Word:
         综合评分
 
         :param score: The score of this Word.
-        :type: float
+        :type score: float
         """
         self._score = score
 
@@ -242,7 +265,7 @@ class Word:
 
 
         :return: The pronunciation of this Word.
-        :rtype: WordPronunciation
+        :rtype: :class:`huaweicloudsdksis.v1.WordPronunciation`
         """
         return self._pronunciation
 
@@ -252,7 +275,7 @@ class Word:
 
 
         :param pronunciation: The pronunciation of this Word.
-        :type: WordPronunciation
+        :type pronunciation: :class:`huaweicloudsdksis.v1.WordPronunciation`
         """
         self._pronunciation = pronunciation
 
@@ -262,7 +285,7 @@ class Word:
 
 
         :return: The fluency of this Word.
-        :rtype: WordFluency
+        :rtype: :class:`huaweicloudsdksis.v1.WordFluency`
         """
         return self._fluency
 
@@ -272,7 +295,7 @@ class Word:
 
 
         :param fluency: The fluency of this Word.
-        :type: WordFluency
+        :type fluency: :class:`huaweicloudsdksis.v1.WordFluency`
         """
         self._fluency = fluency
 
@@ -283,7 +306,7 @@ class Word:
         音节打分表
 
         :return: The phonemes of this Word.
-        :rtype: list[Phoneme]
+        :rtype: list[:class:`huaweicloudsdksis.v1.Phoneme`]
         """
         return self._phonemes
 
@@ -294,7 +317,7 @@ class Word:
         音节打分表
 
         :param phonemes: The phonemes of this Word.
-        :type: list[Phoneme]
+        :type phonemes: list[:class:`huaweicloudsdksis.v1.Phoneme`]
         """
         self._phonemes = phonemes
 

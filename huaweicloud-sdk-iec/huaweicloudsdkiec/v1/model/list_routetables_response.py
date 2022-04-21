@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRoutetablesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListRoutetablesResponse(SdkResponse):
     }
 
     def __init__(self, routetables=None, count=None):
-        """ListRoutetablesResponse - a model defined in huaweicloud sdk"""
+        """ListRoutetablesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param routetables: 路由表
+        :type routetables: list[:class:`huaweicloudsdkiec.v1.ListRoutetableOption`]
+        :param count: 数量
+        :type count: int
+        """
         
         super(ListRoutetablesResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListRoutetablesResponse(SdkResponse):
         路由表
 
         :return: The routetables of this ListRoutetablesResponse.
-        :rtype: list[ListRoutetableOption]
+        :rtype: list[:class:`huaweicloudsdkiec.v1.ListRoutetableOption`]
         """
         return self._routetables
 
@@ -63,7 +70,7 @@ class ListRoutetablesResponse(SdkResponse):
         路由表
 
         :param routetables: The routetables of this ListRoutetablesResponse.
-        :type: list[ListRoutetableOption]
+        :type routetables: list[:class:`huaweicloudsdkiec.v1.ListRoutetableOption`]
         """
         self._routetables = routetables
 
@@ -85,7 +92,7 @@ class ListRoutetablesResponse(SdkResponse):
         数量
 
         :param count: The count of this ListRoutetablesResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

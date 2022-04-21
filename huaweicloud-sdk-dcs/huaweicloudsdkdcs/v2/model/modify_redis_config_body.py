@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ModifyRedisConfigBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ModifyRedisConfigBody:
     }
 
     def __init__(self, redis_config=None):
-        """ModifyRedisConfigBody - a model defined in huaweicloud sdk"""
+        """ModifyRedisConfigBody
+
+        The model defined in huaweicloud sdk
+
+        :param redis_config: 实例配置项数组。
+        :type redis_config: list[:class:`huaweicloudsdkdcs.v2.RedisConfig`]
+        """
         
         
 
@@ -47,7 +52,7 @@ class ModifyRedisConfigBody:
         实例配置项数组。
 
         :return: The redis_config of this ModifyRedisConfigBody.
-        :rtype: list[RedisConfig]
+        :rtype: list[:class:`huaweicloudsdkdcs.v2.RedisConfig`]
         """
         return self._redis_config
 
@@ -58,7 +63,7 @@ class ModifyRedisConfigBody:
         实例配置项数组。
 
         :param redis_config: The redis_config of this ModifyRedisConfigBody.
-        :type: list[RedisConfig]
+        :type redis_config: list[:class:`huaweicloudsdkdcs.v2.RedisConfig`]
         """
         self._redis_config = redis_config
 

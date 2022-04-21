@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListEventsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListEventsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, events=None, next_marker=None):
-        """ListEventsResponse - a model defined in huaweicloud sdk"""
+        """ListEventsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 测试事件总数。
+        :type count: int
+        :param events: 测试事件列表。
+        :type events: list[:class:`huaweicloudsdkfunctiongraph.v2.ListEventsResult`]
+        :param next_marker: 下次读取位置。
+        :type next_marker: int
+        """
         
         super(ListEventsResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListEventsResponse(SdkResponse):
         测试事件总数。
 
         :param count: The count of this ListEventsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -79,7 +88,7 @@ class ListEventsResponse(SdkResponse):
         测试事件列表。
 
         :return: The events of this ListEventsResponse.
-        :rtype: list[ListEventsResult]
+        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.ListEventsResult`]
         """
         return self._events
 
@@ -90,7 +99,7 @@ class ListEventsResponse(SdkResponse):
         测试事件列表。
 
         :param events: The events of this ListEventsResponse.
-        :type: list[ListEventsResult]
+        :type events: list[:class:`huaweicloudsdkfunctiongraph.v2.ListEventsResult`]
         """
         self._events = events
 
@@ -112,7 +121,7 @@ class ListEventsResponse(SdkResponse):
         下次读取位置。
 
         :param next_marker: The next_marker of this ListEventsResponse.
-        :type: int
+        :type next_marker: int
         """
         self._next_marker = next_marker
 

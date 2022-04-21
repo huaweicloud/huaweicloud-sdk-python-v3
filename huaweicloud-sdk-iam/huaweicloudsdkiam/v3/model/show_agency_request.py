@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowAgencyRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowAgencyRequest:
     }
 
     def __init__(self, agency_id=None):
-        """ShowAgencyRequest - a model defined in huaweicloud sdk"""
+        """ShowAgencyRequest
+
+        The model defined in huaweicloud sdk
+
+        :param agency_id: 待查询的委托ID，获取方式请参见：[获取委托名、委托ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
+        :type agency_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowAgencyRequest:
         待查询的委托ID，获取方式请参见：[获取委托名、委托ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param agency_id: The agency_id of this ShowAgencyRequest.
-        :type: str
+        :type agency_id: str
         """
         self._agency_id = agency_id
 

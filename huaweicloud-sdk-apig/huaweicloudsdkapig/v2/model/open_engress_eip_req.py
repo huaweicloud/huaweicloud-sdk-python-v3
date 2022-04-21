@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OpenEngressEipReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class OpenEngressEipReq:
     }
 
     def __init__(self, bandwidth_size=None):
-        """OpenEngressEipReq - a model defined in huaweicloud sdk"""
+        """OpenEngressEipReq
+
+        The model defined in huaweicloud sdk
+
+        :param bandwidth_size: 出公网带宽  单位：Mbit/s
+        :type bandwidth_size: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class OpenEngressEipReq:
         出公网带宽  单位：Mbit/s
 
         :param bandwidth_size: The bandwidth_size of this OpenEngressEipReq.
-        :type: str
+        :type bandwidth_size: str
         """
         self._bandwidth_size = bandwidth_size
 

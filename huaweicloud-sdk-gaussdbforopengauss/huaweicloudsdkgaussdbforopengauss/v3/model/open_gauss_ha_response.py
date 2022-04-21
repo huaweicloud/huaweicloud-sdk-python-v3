@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OpenGaussHaResponse:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class OpenGaussHaResponse:
     }
 
     def __init__(self, mode=None, replication_mode=None, consistency=None):
-        """OpenGaussHaResponse - a model defined in huaweicloud sdk"""
+        """OpenGaussHaResponse
+
+        The model defined in huaweicloud sdk
+
+        :param mode: GaussDB(for openGauss) 分布式模式，返回值为：Enterprise（企业版）；主备版，返回值为：Ha(主备版)。
+        :type mode: str
+        :param replication_mode: 备机同步参数。  取值：  GaussDB(for openGauss)为“sync”。 说明： - “sync”为同步模式。
+        :type replication_mode: str
+        :param consistency: GaussDB(for openGauss)的预留参数：指定实例一致性类型，取值范围：strong（强一致性） | eventual(最终一致性)。
+        :type consistency: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class OpenGaussHaResponse:
         GaussDB(for openGauss) 分布式模式，返回值为：Enterprise（企业版）；主备版，返回值为：Ha(主备版)。
 
         :param mode: The mode of this OpenGaussHaResponse.
-        :type: str
+        :type mode: str
         """
         self._mode = mode
 
@@ -87,7 +96,7 @@ class OpenGaussHaResponse:
         备机同步参数。  取值：  GaussDB(for openGauss)为“sync”。 说明： - “sync”为同步模式。
 
         :param replication_mode: The replication_mode of this OpenGaussHaResponse.
-        :type: str
+        :type replication_mode: str
         """
         self._replication_mode = replication_mode
 
@@ -109,7 +118,7 @@ class OpenGaussHaResponse:
         GaussDB(for openGauss)的预留参数：指定实例一致性类型，取值范围：strong（强一致性） | eventual(最终一致性)。
 
         :param consistency: The consistency of this OpenGaussHaResponse.
-        :type: str
+        :type consistency: str
         """
         self._consistency = consistency
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateImageWatermarkByAddressRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class CreateImageWatermarkByAddressRequestBody:
     }
 
     def __init__(self, region_id=None, src_file=None, blind_watermark=None, image_watermark=None, dst_file=None):
-        """CreateImageWatermarkByAddressRequestBody - a model defined in huaweicloud sdk"""
+        """CreateImageWatermarkByAddressRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param region_id: 当前项目所在region的id，如北京一为：cn-north-1。
+        :type region_id: str
+        :param src_file: 待加暗水印的图片地址，当前只支持华为云OBS文件，格式为 **obs://bucket/object** ，其中bucket为和当前项目处于同一区域的OBS桶名称，object为对象全路径名。例如：**obs://hwbucket/hwinfo/hw.png**，其中obs://表示OBS存储，hwbucket为桶名，hwinfo/hw.png为对象全路径名。
+        :type src_file: str
+        :param blind_watermark: 待嵌入的文字暗水印内容，长度不超过32个字符。当前仅支持数字及英文大小写。与图片暗水印image_watermark二选一。
+        :type blind_watermark: str
+        :param image_watermark: 待嵌入的图片暗水印地址，格式要求同src_file字段，与文字暗水印 blind_watermark 二选一，都填写时，生效image_watermark。
+        :type image_watermark: str
+        :param dst_file: 添加水印后的图片存放的地址，格式要求同src_file字段，不设置时，默认取src_file的值，即添加水印后覆盖原文件。
+        :type dst_file: str
+        """
         
         
 
@@ -76,7 +89,7 @@ class CreateImageWatermarkByAddressRequestBody:
         当前项目所在region的id，如北京一为：cn-north-1。
 
         :param region_id: The region_id of this CreateImageWatermarkByAddressRequestBody.
-        :type: str
+        :type region_id: str
         """
         self._region_id = region_id
 
@@ -98,7 +111,7 @@ class CreateImageWatermarkByAddressRequestBody:
         待加暗水印的图片地址，当前只支持华为云OBS文件，格式为 **obs://bucket/object** ，其中bucket为和当前项目处于同一区域的OBS桶名称，object为对象全路径名。例如：**obs://hwbucket/hwinfo/hw.png**，其中obs://表示OBS存储，hwbucket为桶名，hwinfo/hw.png为对象全路径名。
 
         :param src_file: The src_file of this CreateImageWatermarkByAddressRequestBody.
-        :type: str
+        :type src_file: str
         """
         self._src_file = src_file
 
@@ -120,7 +133,7 @@ class CreateImageWatermarkByAddressRequestBody:
         待嵌入的文字暗水印内容，长度不超过32个字符。当前仅支持数字及英文大小写。与图片暗水印image_watermark二选一。
 
         :param blind_watermark: The blind_watermark of this CreateImageWatermarkByAddressRequestBody.
-        :type: str
+        :type blind_watermark: str
         """
         self._blind_watermark = blind_watermark
 
@@ -142,7 +155,7 @@ class CreateImageWatermarkByAddressRequestBody:
         待嵌入的图片暗水印地址，格式要求同src_file字段，与文字暗水印 blind_watermark 二选一，都填写时，生效image_watermark。
 
         :param image_watermark: The image_watermark of this CreateImageWatermarkByAddressRequestBody.
-        :type: str
+        :type image_watermark: str
         """
         self._image_watermark = image_watermark
 
@@ -164,7 +177,7 @@ class CreateImageWatermarkByAddressRequestBody:
         添加水印后的图片存放的地址，格式要求同src_file字段，不设置时，默认取src_file的值，即添加水印后覆盖原文件。
 
         :param dst_file: The dst_file of this CreateImageWatermarkByAddressRequestBody.
-        :type: str
+        :type dst_file: str
         """
         self._dst_file = dst_file
 

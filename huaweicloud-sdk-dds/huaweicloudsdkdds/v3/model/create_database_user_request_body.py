@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateDatabaseUserRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CreateDatabaseUserRequestBody:
     }
 
     def __init__(self, user_name=None, user_pwd=None, db_name=None, roles=None):
-        """CreateDatabaseUserRequestBody - a model defined in huaweicloud sdk"""
+        """CreateDatabaseUserRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param user_name: 数据库用户名称。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、中划线、下划线和点。
+        :type user_name: str
+        :param user_pwd: 数据库用户密码。 - 长度为8~32位，必须是大写字母（A~Z）、小写字母（a~z）、数字（0~9）、特殊字符~!@#%^*-_&#x3D;+?的组合。 - 建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。
+        :type user_pwd: str
+        :param db_name: 新用户所在的数据库，默认为“admin”。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、下划线。
+        :type db_name: str
+        :param roles: 新用户所拥有的角色。
+        :type roles: list[:class:`huaweicloudsdkdds.v3.RolesOption`]
+        """
         
         
 
@@ -70,7 +81,7 @@ class CreateDatabaseUserRequestBody:
         数据库用户名称。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、中划线、下划线和点。
 
         :param user_name: The user_name of this CreateDatabaseUserRequestBody.
-        :type: str
+        :type user_name: str
         """
         self._user_name = user_name
 
@@ -92,7 +103,7 @@ class CreateDatabaseUserRequestBody:
         数据库用户密码。 - 长度为8~32位，必须是大写字母（A~Z）、小写字母（a~z）、数字（0~9）、特殊字符~!@#%^*-_=+?的组合。 - 建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。
 
         :param user_pwd: The user_pwd of this CreateDatabaseUserRequestBody.
-        :type: str
+        :type user_pwd: str
         """
         self._user_pwd = user_pwd
 
@@ -114,7 +125,7 @@ class CreateDatabaseUserRequestBody:
         新用户所在的数据库，默认为“admin”。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、下划线。
 
         :param db_name: The db_name of this CreateDatabaseUserRequestBody.
-        :type: str
+        :type db_name: str
         """
         self._db_name = db_name
 
@@ -125,7 +136,7 @@ class CreateDatabaseUserRequestBody:
         新用户所拥有的角色。
 
         :return: The roles of this CreateDatabaseUserRequestBody.
-        :rtype: list[RolesOption]
+        :rtype: list[:class:`huaweicloudsdkdds.v3.RolesOption`]
         """
         return self._roles
 
@@ -136,7 +147,7 @@ class CreateDatabaseUserRequestBody:
         新用户所拥有的角色。
 
         :param roles: The roles of this CreateDatabaseUserRequestBody.
-        :type: list[RolesOption]
+        :type roles: list[:class:`huaweicloudsdkdds.v3.RolesOption`]
         """
         self._roles = roles
 

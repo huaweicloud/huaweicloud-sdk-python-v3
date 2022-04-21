@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResizeFlavorRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ResizeFlavorRequest:
     }
 
     def __init__(self, resize_flavor=None):
-        """ResizeFlavorRequest - a model defined in huaweicloud sdk"""
+        """ResizeFlavorRequest
+
+        The model defined in huaweicloud sdk
+
+        :param resize_flavor: 
+        :type resize_flavor: :class:`huaweicloudsdkrds.v3.ResizeFlavorObject`
+        """
         
         
 
@@ -45,7 +50,7 @@ class ResizeFlavorRequest:
 
 
         :return: The resize_flavor of this ResizeFlavorRequest.
-        :rtype: ResizeFlavorObject
+        :rtype: :class:`huaweicloudsdkrds.v3.ResizeFlavorObject`
         """
         return self._resize_flavor
 
@@ -55,7 +60,7 @@ class ResizeFlavorRequest:
 
 
         :param resize_flavor: The resize_flavor of this ResizeFlavorRequest.
-        :type: ResizeFlavorObject
+        :type resize_flavor: :class:`huaweicloudsdkrds.v3.ResizeFlavorObject`
         """
         self._resize_flavor = resize_flavor
 

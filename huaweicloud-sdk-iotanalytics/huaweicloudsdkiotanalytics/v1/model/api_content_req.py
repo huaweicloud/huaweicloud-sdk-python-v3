@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApiContentReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ApiContentReq:
     }
 
     def __init__(self, name=None):
-        """ApiContentReq - a model defined in huaweicloud sdk"""
+        """ApiContentReq
+
+        The model defined in huaweicloud sdk
+
+        :param name: api数据源名称
+        :type name: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ApiContentReq:
         api数据源名称
 
         :param name: The name of this ApiContentReq.
-        :type: str
+        :type name: str
         """
         self._name = name
 

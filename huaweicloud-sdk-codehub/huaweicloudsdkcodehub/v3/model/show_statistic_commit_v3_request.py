@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowStatisticCommitV3Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowStatisticCommitV3Request:
     }
 
     def __init__(self, repository_id=None, ref_name=None, begin_date=None, end_date=None):
-        """ShowStatisticCommitV3Request - a model defined in huaweicloud sdk"""
+        """ShowStatisticCommitV3Request
+
+        The model defined in huaweicloud sdk
+
+        :param repository_id: 仓库短id
+        :type repository_id: int
+        :param ref_name: 分支名称
+        :type ref_name: str
+        :param begin_date: 起始提交日期,格式为yyyy-MM-dd
+        :type begin_date: str
+        :param end_date: 终止提交日期,格式为yyyy-MM-dd（begin_date和end_date时间间隔不超过60天）
+        :type end_date: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class ShowStatisticCommitV3Request:
         仓库短id
 
         :param repository_id: The repository_id of this ShowStatisticCommitV3Request.
-        :type: int
+        :type repository_id: int
         """
         self._repository_id = repository_id
 
@@ -91,7 +102,7 @@ class ShowStatisticCommitV3Request:
         分支名称
 
         :param ref_name: The ref_name of this ShowStatisticCommitV3Request.
-        :type: str
+        :type ref_name: str
         """
         self._ref_name = ref_name
 
@@ -113,7 +124,7 @@ class ShowStatisticCommitV3Request:
         起始提交日期,格式为yyyy-MM-dd
 
         :param begin_date: The begin_date of this ShowStatisticCommitV3Request.
-        :type: str
+        :type begin_date: str
         """
         self._begin_date = begin_date
 
@@ -135,7 +146,7 @@ class ShowStatisticCommitV3Request:
         终止提交日期,格式为yyyy-MM-dd（begin_date和end_date时间间隔不超过60天）
 
         :param end_date: The end_date of this ShowStatisticCommitV3Request.
-        :type: str
+        :type end_date: str
         """
         self._end_date = end_date
 

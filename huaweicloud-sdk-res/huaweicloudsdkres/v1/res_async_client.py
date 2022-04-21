@@ -52,21 +52,17 @@ class ResAsyncClient(Client):
         """创建数据源
 
         在指定的工作空间下面创建一个新的数据源。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateResDatasourceRequest request
-        :return: CreateResDatasourceResponse
+        :param request: Request instance for CreateResDatasource
+        :type request: :class:`huaweicloudsdkres.v1.CreateResDatasourceRequest`
+        :rtype: :class:`huaweicloudsdkres.v1.CreateResDatasourceResponse`
         """
         return self.create_res_datasource_with_http_info(request)
 
     def create_res_datasource_with_http_info(self, request):
-        """创建数据源
-
-        在指定的工作空间下面创建一个新的数据源。
-
-        :param CreateResDatasourceRequest request
-        :return: CreateResDatasourceResponse
-        """
-
         all_params = ['content_type', 'workspace_id', 'rest_resource_create_ds_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -114,26 +110,21 @@ class ResAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_res_job_async(self, request):
         """新建训练作业
 
         新建训练作业元数据，新建成功之后可手动执行此任务。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateResJobRequest request
-        :return: CreateResJobResponse
+        :param request: Request instance for CreateResJob
+        :type request: :class:`huaweicloudsdkres.v1.CreateResJobRequest`
+        :rtype: :class:`huaweicloudsdkres.v1.CreateResJobResponse`
         """
         return self.create_res_job_with_http_info(request)
 
     def create_res_job_with_http_info(self, request):
-        """新建训练作业
-
-        新建训练作业元数据，新建成功之后可手动执行此任务。
-
-        :param CreateResJobRequest request
-        :return: CreateResJobResponse
-        """
-
         all_params = ['content_type', 'resource_id', 'workspace_id', 'rest_training_new_instance_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -183,26 +174,21 @@ class ResAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_res_jobs_async(self, request):
         """新建多个训练作业
 
         批量新建作业。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateResJobsRequest request
-        :return: CreateResJobsResponse
+        :param request: Request instance for CreateResJobs
+        :type request: :class:`huaweicloudsdkres.v1.CreateResJobsRequest`
+        :rtype: :class:`huaweicloudsdkres.v1.CreateResJobsResponse`
         """
         return self.create_res_jobs_with_http_info(request)
 
     def create_res_jobs_with_http_info(self, request):
-        """新建多个训练作业
-
-        批量新建作业。
-
-        :param CreateResJobsRequest request
-        :return: CreateResJobsResponse
-        """
-
         all_params = ['resource_id', 'workspace_id', 'rest_training_new_instances_req', 'content_type']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -252,26 +238,21 @@ class ResAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_res_online_instance_async(self, request):
         """新建在线服务
 
         新建在线服务元数据，新建成功之后可手动发布此服务。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateResOnlineInstanceRequest request
-        :return: CreateResOnlineInstanceResponse
+        :param request: Request instance for CreateResOnlineInstance
+        :type request: :class:`huaweicloudsdkres.v1.CreateResOnlineInstanceRequest`
+        :rtype: :class:`huaweicloudsdkres.v1.CreateResOnlineInstanceResponse`
         """
         return self.create_res_online_instance_with_http_info(request)
 
     def create_res_online_instance_with_http_info(self, request):
-        """新建在线服务
-
-        新建在线服务元数据，新建成功之后可手动发布此服务。
-
-        :param CreateResOnlineInstanceRequest request
-        :return: CreateResOnlineInstanceResponse
-        """
-
         all_params = ['content_type', 'resource_id', 'workspace_id', 'rest_online_new_instance_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -321,26 +302,21 @@ class ResAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_res_scene_async(self, request):
         """创建自定义场景
 
         在指定工作空间下面创建自定义场景。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateResSceneRequest request
-        :return: CreateResSceneResponse
+        :param request: Request instance for CreateResScene
+        :type request: :class:`huaweicloudsdkres.v1.CreateResSceneRequest`
+        :rtype: :class:`huaweicloudsdkres.v1.CreateResSceneResponse`
         """
         return self.create_res_scene_with_http_info(request)
 
     def create_res_scene_with_http_info(self, request):
-        """创建自定义场景
-
-        在指定工作空间下面创建自定义场景。
-
-        :param CreateResSceneRequest request
-        :return: CreateResSceneResponse
-        """
-
         all_params = ['content_type', 'workspace_id', 'rest_resource_create_scene_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -388,26 +364,21 @@ class ResAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_res_workspace_async(self, request):
         """创建工作空间
 
         用于在推荐系统下面创建独立的工作空间，用于资源的隔离，用户可以在工作空间下面继续创建数据源、场景以及推荐任务等。是否有工作空间的操作权限取决于用户是否属于当前工作空间绑定的企业项目。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateResWorkspaceRequest request
-        :return: CreateResWorkspaceResponse
+        :param request: Request instance for CreateResWorkspace
+        :type request: :class:`huaweicloudsdkres.v1.CreateResWorkspaceRequest`
+        :rtype: :class:`huaweicloudsdkres.v1.CreateResWorkspaceResponse`
         """
         return self.create_res_workspace_with_http_info(request)
 
     def create_res_workspace_with_http_info(self, request):
-        """创建工作空间
-
-        用于在推荐系统下面创建独立的工作空间，用于资源的隔离，用户可以在工作空间下面继续创建数据源、场景以及推荐任务等。是否有工作空间的操作权限取决于用户是否属于当前工作空间绑定的企业项目。
-
-        :param CreateResWorkspaceRequest request
-        :return: CreateResWorkspaceResponse
-        """
-
         all_params = ['content_type', 'create_res_workspace_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -453,26 +424,21 @@ class ResAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_res_datasource_async(self, request):
         """删除数据源
 
         删除数据源。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteResDatasourceRequest request
-        :return: DeleteResDatasourceResponse
+        :param request: Request instance for DeleteResDatasource
+        :type request: :class:`huaweicloudsdkres.v1.DeleteResDatasourceRequest`
+        :rtype: :class:`huaweicloudsdkres.v1.DeleteResDatasourceResponse`
         """
         return self.delete_res_datasource_with_http_info(request)
 
     def delete_res_datasource_with_http_info(self, request):
-        """删除数据源
-
-        删除数据源。
-
-        :param DeleteResDatasourceRequest request
-        :return: DeleteResDatasourceResponse
-        """
-
         all_params = ['content_type', 'workspace_id', 'datasource_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -520,26 +486,21 @@ class ResAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_res_job_async(self, request):
         """删除训练作业
 
         删除指定作业。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteResJobRequest request
-        :return: DeleteResJobResponse
+        :param request: Request instance for DeleteResJob
+        :type request: :class:`huaweicloudsdkres.v1.DeleteResJobRequest`
+        :rtype: :class:`huaweicloudsdkres.v1.DeleteResJobResponse`
         """
         return self.delete_res_job_with_http_info(request)
 
     def delete_res_job_with_http_info(self, request):
-        """删除训练作业
-
-        删除指定作业。
-
-        :param DeleteResJobRequest request
-        :return: DeleteResJobResponse
-        """
-
         all_params = ['content_type', 'workspace_id', 'resource_id', 'job_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -589,26 +550,21 @@ class ResAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_res_online_instance_async(self, request):
         """删除在线服务
 
         删除在线服务实例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteResOnlineInstanceRequest request
-        :return: DeleteResOnlineInstanceResponse
+        :param request: Request instance for DeleteResOnlineInstance
+        :type request: :class:`huaweicloudsdkres.v1.DeleteResOnlineInstanceRequest`
+        :rtype: :class:`huaweicloudsdkres.v1.DeleteResOnlineInstanceResponse`
         """
         return self.delete_res_online_instance_with_http_info(request)
 
     def delete_res_online_instance_with_http_info(self, request):
-        """删除在线服务
-
-        删除在线服务实例。
-
-        :param DeleteResOnlineInstanceRequest request
-        :return: DeleteResOnlineInstanceResponse
-        """
-
         all_params = ['content_type', 'workspace_id', 'resource_id', 'job_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -658,26 +614,21 @@ class ResAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_res_scene_async(self, request):
         """删除场景
 
         该接口用于删除场景，删除之后不能恢复，请您谨慎操作。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteResSceneRequest request
-        :return: DeleteResSceneResponse
+        :param request: Request instance for DeleteResScene
+        :type request: :class:`huaweicloudsdkres.v1.DeleteResSceneRequest`
+        :rtype: :class:`huaweicloudsdkres.v1.DeleteResSceneResponse`
         """
         return self.delete_res_scene_with_http_info(request)
 
     def delete_res_scene_with_http_info(self, request):
-        """删除场景
-
-        该接口用于删除场景，删除之后不能恢复，请您谨慎操作。
-
-        :param DeleteResSceneRequest request
-        :return: DeleteResSceneResponse
-        """
-
         all_params = ['content_type', 'workspace_id', 'scene_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -725,26 +676,21 @@ class ResAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_res_workspace_async(self, request):
         """删除工作空间
 
         删除指定工作空间。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteResWorkspaceRequest request
-        :return: DeleteResWorkspaceResponse
+        :param request: Request instance for DeleteResWorkspace
+        :type request: :class:`huaweicloudsdkres.v1.DeleteResWorkspaceRequest`
+        :rtype: :class:`huaweicloudsdkres.v1.DeleteResWorkspaceResponse`
         """
         return self.delete_res_workspace_with_http_info(request)
 
     def delete_res_workspace_with_http_info(self, request):
-        """删除工作空间
-
-        删除指定工作空间。
-
-        :param DeleteResWorkspaceRequest request
-        :return: DeleteResWorkspaceResponse
-        """
-
         all_params = ['content_type', 'workspace_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -790,26 +736,21 @@ class ResAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_res_datasources_async(self, request):
         """查询数据源列表
 
         查询当前工作空间下的数据源列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListResDatasourcesRequest request
-        :return: ListResDatasourcesResponse
+        :param request: Request instance for ListResDatasources
+        :type request: :class:`huaweicloudsdkres.v1.ListResDatasourcesRequest`
+        :rtype: :class:`huaweicloudsdkres.v1.ListResDatasourcesResponse`
         """
         return self.list_res_datasources_with_http_info(request)
 
     def list_res_datasources_with_http_info(self, request):
-        """查询数据源列表
-
-        查询当前工作空间下的数据源列表。
-
-        :param ListResDatasourcesRequest request
-        :return: ListResDatasourcesResponse
-        """
-
         all_params = ['content_type', 'workspace_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -855,26 +796,21 @@ class ResAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_res_enterprises_async(self, request):
         """查询企业项目列表
 
         查询用户在当前项目id下的企业项目列表。在创建工作空间时需要提供企业项目id。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListResEnterprisesRequest request
-        :return: ListResEnterprisesResponse
+        :param request: Request instance for ListResEnterprises
+        :type request: :class:`huaweicloudsdkres.v1.ListResEnterprisesRequest`
+        :rtype: :class:`huaweicloudsdkres.v1.ListResEnterprisesResponse`
         """
         return self.list_res_enterprises_with_http_info(request)
 
     def list_res_enterprises_with_http_info(self, request):
-        """查询企业项目列表
-
-        查询用户在当前项目id下的企业项目列表。在创建工作空间时需要提供企业项目id。
-
-        :param ListResEnterprisesRequest request
-        :return: ListResEnterprisesResponse
-        """
-
         all_params = ['content_type']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -918,26 +854,21 @@ class ResAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_res_online_service_details_async(self, request):
         """查询在线服务详情
 
         根据给定的workspace_id和resource_id及category查询在线服务。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListResOnlineServiceDetailsRequest request
-        :return: ListResOnlineServiceDetailsResponse
+        :param request: Request instance for ListResOnlineServiceDetails
+        :type request: :class:`huaweicloudsdkres.v1.ListResOnlineServiceDetailsRequest`
+        :rtype: :class:`huaweicloudsdkres.v1.ListResOnlineServiceDetailsResponse`
         """
         return self.list_res_online_service_details_with_http_info(request)
 
     def list_res_online_service_details_with_http_info(self, request):
-        """查询在线服务详情
-
-        根据给定的workspace_id和resource_id及category查询在线服务。
-
-        :param ListResOnlineServiceDetailsRequest request
-        :return: ListResOnlineServiceDetailsResponse
-        """
-
         all_params = ['content_type', 'workspace_id', 'resource_id', 'category']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -987,26 +918,21 @@ class ResAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_res_resource_spec_async(self, request):
         """查询训练规格
 
         查询当前推荐系统所提供的离线计算规格，实时计算规格和排序模型训练规格。在创建数据源和场景时，需要提供此信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListResResourceSpecRequest request
-        :return: ListResResourceSpecResponse
+        :param request: Request instance for ListResResourceSpec
+        :type request: :class:`huaweicloudsdkres.v1.ListResResourceSpecRequest`
+        :rtype: :class:`huaweicloudsdkres.v1.ListResResourceSpecResponse`
         """
         return self.list_res_resource_spec_with_http_info(request)
 
     def list_res_resource_spec_with_http_info(self, request):
-        """查询训练规格
-
-        查询当前推荐系统所提供的离线计算规格，实时计算规格和排序模型训练规格。在创建数据源和场景时，需要提供此信息。
-
-        :param ListResResourceSpecRequest request
-        :return: ListResResourceSpecResponse
-        """
-
         all_params = ['content_type']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1050,26 +976,21 @@ class ResAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_res_scenes_async(self, request):
         """查询场景列表
 
         查询当前工作空间下的场景列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListResScenesRequest request
-        :return: ListResScenesResponse
+        :param request: Request instance for ListResScenes
+        :type request: :class:`huaweicloudsdkres.v1.ListResScenesRequest`
+        :rtype: :class:`huaweicloudsdkres.v1.ListResScenesResponse`
         """
         return self.list_res_scenes_with_http_info(request)
 
     def list_res_scenes_with_http_info(self, request):
-        """查询场景列表
-
-        查询当前工作空间下的场景列表。
-
-        :param ListResScenesRequest request
-        :return: ListResScenesResponse
-        """
-
         all_params = ['content_type', 'workspace_id', 'category']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1117,26 +1038,21 @@ class ResAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_res_workspaces_async(self, request):
         """查询工作空间列表
 
         用于查询当前用户具有操作权限的工作空间列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListResWorkspacesRequest request
-        :return: ListResWorkspacesResponse
+        :param request: Request instance for ListResWorkspaces
+        :type request: :class:`huaweicloudsdkres.v1.ListResWorkspacesRequest`
+        :rtype: :class:`huaweicloudsdkres.v1.ListResWorkspacesResponse`
         """
         return self.list_res_workspaces_with_http_info(request)
 
     def list_res_workspaces_with_http_info(self, request):
-        """查询工作空间列表
-
-        用于查询当前用户具有操作权限的工作空间列表。
-
-        :param ListResWorkspacesRequest request
-        :return: ListResWorkspacesResponse
-        """
-
         all_params = ['content_type']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1180,26 +1096,21 @@ class ResAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_res_datasource_async(self, request):
         """查询数据源详情
 
         查询指定数据源的详情信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowResDatasourceRequest request
-        :return: ShowResDatasourceResponse
+        :param request: Request instance for ShowResDatasource
+        :type request: :class:`huaweicloudsdkres.v1.ShowResDatasourceRequest`
+        :rtype: :class:`huaweicloudsdkres.v1.ShowResDatasourceResponse`
         """
         return self.show_res_datasource_with_http_info(request)
 
     def show_res_datasource_with_http_info(self, request):
-        """查询数据源详情
-
-        查询指定数据源的详情信息。
-
-        :param ShowResDatasourceRequest request
-        :return: ShowResDatasourceResponse
-        """
-
         all_params = ['content_type', 'workspace_id', 'datasource_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1247,26 +1158,21 @@ class ResAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_res_datasource_work_detail_async(self, request):
         """查询数据源任务结果
 
         查询指定数据源下离线任务的结果。其中包括数据格式，数据检测、数据探索及效果评估的内容。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowResDatasourceWorkDetailRequest request
-        :return: ShowResDatasourceWorkDetailResponse
+        :param request: Request instance for ShowResDatasourceWorkDetail
+        :type request: :class:`huaweicloudsdkres.v1.ShowResDatasourceWorkDetailRequest`
+        :rtype: :class:`huaweicloudsdkres.v1.ShowResDatasourceWorkDetailResponse`
         """
         return self.show_res_datasource_work_detail_with_http_info(request)
 
     def show_res_datasource_work_detail_with_http_info(self, request):
-        """查询数据源任务结果
-
-        查询指定数据源下离线任务的结果。其中包括数据格式，数据检测、数据探索及效果评估的内容。
-
-        :param ShowResDatasourceWorkDetailRequest request
-        :return: ShowResDatasourceWorkDetailResponse
-        """
-
         all_params = ['content_type', 'workspace_id', 'resource_id', 'type']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1316,26 +1222,21 @@ class ResAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_res_job_async(self, request):
         """查询训练作业
 
         查询resource_id（数据源id或场景id）下的指定类型的作业。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowResJobRequest request
-        :return: ShowResJobResponse
+        :param request: Request instance for ShowResJob
+        :type request: :class:`huaweicloudsdkres.v1.ShowResJobRequest`
+        :rtype: :class:`huaweicloudsdkres.v1.ShowResJobResponse`
         """
         return self.show_res_job_with_http_info(request)
 
     def show_res_job_with_http_info(self, request):
-        """查询训练作业
-
-        查询resource_id（数据源id或场景id）下的指定类型的作业。
-
-        :param ShowResJobRequest request
-        :return: ShowResJobResponse
-        """
-
         all_params = ['workspace_id', 'resource_id', 'category', 'content_type']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1385,26 +1286,21 @@ class ResAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_res_recall_set_async(self, request):
         """查询训练作业候选集
 
         查询给定workspaces_id和指定resource_id下的候选集。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowResRecallSetRequest request
-        :return: ShowResRecallSetResponse
+        :param request: Request instance for ShowResRecallSet
+        :type request: :class:`huaweicloudsdkres.v1.ShowResRecallSetRequest`
+        :rtype: :class:`huaweicloudsdkres.v1.ShowResRecallSetResponse`
         """
         return self.show_res_recall_set_with_http_info(request)
 
     def show_res_recall_set_with_http_info(self, request):
-        """查询训练作业候选集
-
-        查询给定workspaces_id和指定resource_id下的候选集。
-
-        :param ShowResRecallSetRequest request
-        :return: ShowResRecallSetResponse
-        """
-
         all_params = ['content_type', 'workspace_id', 'resource_id', 'use_type']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1454,26 +1350,21 @@ class ResAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_res_scene_async(self, request):
         """查询场景详情
 
         查询指定场景的详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowResSceneRequest request
-        :return: ShowResSceneResponse
+        :param request: Request instance for ShowResScene
+        :type request: :class:`huaweicloudsdkres.v1.ShowResSceneRequest`
+        :rtype: :class:`huaweicloudsdkres.v1.ShowResSceneResponse`
         """
         return self.show_res_scene_with_http_info(request)
 
     def show_res_scene_with_http_info(self, request):
-        """查询场景详情
-
-        查询指定场景的详情。
-
-        :param ShowResSceneRequest request
-        :return: ShowResSceneResponse
-        """
-
         all_params = ['content_type', 'workspace_id', 'scene_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1521,26 +1412,21 @@ class ResAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_res_wrokspace_async(self, request):
         """查询工作空间详情
 
         查询指定工作空间的具体信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowResWrokspaceRequest request
-        :return: ShowResWrokspaceResponse
+        :param request: Request instance for ShowResWrokspace
+        :type request: :class:`huaweicloudsdkres.v1.ShowResWrokspaceRequest`
+        :rtype: :class:`huaweicloudsdkres.v1.ShowResWrokspaceResponse`
         """
         return self.show_res_wrokspace_with_http_info(request)
 
     def show_res_wrokspace_with_http_info(self, request):
-        """查询工作空间详情
-
-        查询指定工作空间的具体信息。
-
-        :param ShowResWrokspaceRequest request
-        :return: ShowResWrokspaceResponse
-        """
-
         all_params = ['content_type', 'workspace_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1586,26 +1472,21 @@ class ResAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def start_res_job_async(self, request):
         """执行作业
 
         执行独立的作业。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param StartResJobRequest request
-        :return: StartResJobResponse
+        :param request: Request instance for StartResJob
+        :type request: :class:`huaweicloudsdkres.v1.StartResJobRequest`
+        :rtype: :class:`huaweicloudsdkres.v1.StartResJobResponse`
         """
         return self.start_res_job_with_http_info(request)
 
     def start_res_job_with_http_info(self, request):
-        """执行作业
-
-        执行独立的作业。
-
-        :param StartResJobRequest request
-        :return: StartResJobResponse
-        """
-
         all_params = ['content_type', 'workspace_id', 'resource_id', 'job_id', 'action']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1657,26 +1538,21 @@ class ResAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def start_res_scene_jobs_async(self, request):
         """执行场景
 
         执行场景下面的所有作业和服务。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param StartResSceneJobsRequest request
-        :return: StartResSceneJobsResponse
+        :param request: Request instance for StartResSceneJobs
+        :type request: :class:`huaweicloudsdkres.v1.StartResSceneJobsRequest`
+        :rtype: :class:`huaweicloudsdkres.v1.StartResSceneJobsResponse`
         """
         return self.start_res_scene_jobs_with_http_info(request)
 
     def start_res_scene_jobs_with_http_info(self, request):
-        """执行场景
-
-        执行场景下面的所有作业和服务。
-
-        :param StartResSceneJobsRequest request
-        :return: StartResSceneJobsResponse
-        """
-
         all_params = ['content_type', 'workspace_id', 'resource_id', 'action']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1726,26 +1602,21 @@ class ResAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_res_datasource_async(self, request):
         """修改数据源内容
 
         修改指定数据源的配置内容。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateResDatasourceRequest request
-        :return: UpdateResDatasourceResponse
+        :param request: Request instance for UpdateResDatasource
+        :type request: :class:`huaweicloudsdkres.v1.UpdateResDatasourceRequest`
+        :rtype: :class:`huaweicloudsdkres.v1.UpdateResDatasourceResponse`
         """
         return self.update_res_datasource_with_http_info(request)
 
     def update_res_datasource_with_http_info(self, request):
-        """修改数据源内容
-
-        修改指定数据源的配置内容。
-
-        :param UpdateResDatasourceRequest request
-        :return: UpdateResDatasourceResponse
-        """
-
         all_params = ['content_type', 'datasource_id', 'workspace_id', 'rest_resource_put_ds_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1795,26 +1666,21 @@ class ResAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_res_datastruct_async(self, request):
         """修改数据源特征
 
         修改数据源中的特征。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateResDatastructRequest request
-        :return: UpdateResDatastructResponse
+        :param request: Request instance for UpdateResDatastruct
+        :type request: :class:`huaweicloudsdkres.v1.UpdateResDatastructRequest`
+        :rtype: :class:`huaweicloudsdkres.v1.UpdateResDatastructResponse`
         """
         return self.update_res_datastruct_with_http_info(request)
 
     def update_res_datastruct_with_http_info(self, request):
-        """修改数据源特征
-
-        修改数据源中的特征。
-
-        :param UpdateResDatastructRequest request
-        :return: UpdateResDatastructResponse
-        """
-
         all_params = ['content_type', 'datasource_id', 'workspace_id', 'rest_resource_put_ds_data_sturct_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1864,26 +1730,21 @@ class ResAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_res_job_async(self, request):
         """修改训练作业参数
 
         修改指定作业的元数据信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateResJobRequest request
-        :return: UpdateResJobResponse
+        :param request: Request instance for UpdateResJob
+        :type request: :class:`huaweicloudsdkres.v1.UpdateResJobRequest`
+        :rtype: :class:`huaweicloudsdkres.v1.UpdateResJobResponse`
         """
         return self.update_res_job_with_http_info(request)
 
     def update_res_job_with_http_info(self, request):
-        """修改训练作业参数
-
-        修改指定作业的元数据信息。
-
-        :param UpdateResJobRequest request
-        :return: UpdateResJobResponse
-        """
-
         all_params = ['job_id', 'resource_id', 'workspace_id', 'rest_training_put_instance_req', 'content_type']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1935,26 +1796,21 @@ class ResAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_res_online_instance_async(self, request):
         """修改在线服务参数
 
         修改指定在线服务的元数据内容。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateResOnlineInstanceRequest request
-        :return: UpdateResOnlineInstanceResponse
+        :param request: Request instance for UpdateResOnlineInstance
+        :type request: :class:`huaweicloudsdkres.v1.UpdateResOnlineInstanceRequest`
+        :rtype: :class:`huaweicloudsdkres.v1.UpdateResOnlineInstanceResponse`
         """
         return self.update_res_online_instance_with_http_info(request)
 
     def update_res_online_instance_with_http_info(self, request):
-        """修改在线服务参数
-
-        修改指定在线服务的元数据内容。
-
-        :param UpdateResOnlineInstanceRequest request
-        :return: UpdateResOnlineInstanceResponse
-        """
-
         all_params = ['content_type', 'job_id', 'resource_id', 'workspace_id', 'rest_onilne_put_instance_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2006,26 +1862,21 @@ class ResAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_res_scene_async(self, request):
         """更新自定义场景内容
 
         更新自定义场景的内容信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateResSceneRequest request
-        :return: UpdateResSceneResponse
+        :param request: Request instance for UpdateResScene
+        :type request: :class:`huaweicloudsdkres.v1.UpdateResSceneRequest`
+        :rtype: :class:`huaweicloudsdkres.v1.UpdateResSceneResponse`
         """
         return self.update_res_scene_with_http_info(request)
 
     def update_res_scene_with_http_info(self, request):
-        """更新自定义场景内容
-
-        更新自定义场景的内容信息。
-
-        :param UpdateResSceneRequest request
-        :return: UpdateResSceneResponse
-        """
-
         all_params = ['content_type', 'scene_id', 'workspace_id', 'rest_resource_put_scene_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2075,26 +1926,21 @@ class ResAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_res_workspace_async(self, request):
         """更新工作空间
 
         更新工作空间信息, 只允许更新描述信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateResWorkspaceRequest request
-        :return: UpdateResWorkspaceResponse
+        :param request: Request instance for UpdateResWorkspace
+        :type request: :class:`huaweicloudsdkres.v1.UpdateResWorkspaceRequest`
+        :rtype: :class:`huaweicloudsdkres.v1.UpdateResWorkspaceResponse`
         """
         return self.update_res_workspace_with_http_info(request)
 
     def update_res_workspace_with_http_info(self, request):
-        """更新工作空间
-
-        更新工作空间信息, 只允许更新描述信息。
-
-        :param UpdateResWorkspaceRequest request
-        :return: UpdateResWorkspaceResponse
-        """
-
         all_params = ['content_type', 'workspace_id', 'update_res_workspace_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2141,7 +1987,6 @@ class ResAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

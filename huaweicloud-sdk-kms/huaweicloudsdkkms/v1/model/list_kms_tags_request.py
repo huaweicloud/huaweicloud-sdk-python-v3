@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListKmsTagsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListKmsTagsRequest:
     }
 
     def __init__(self, version_id=None):
-        """ListKmsTagsRequest - a model defined in huaweicloud sdk"""
+        """ListKmsTagsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param version_id: API版本号
+        :type version_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ListKmsTagsRequest:
         API版本号
 
         :param version_id: The version_id of this ListKmsTagsRequest.
-        :type: str
+        :type version_id: str
         """
         self._version_id = version_id
 

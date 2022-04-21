@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRegionsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListRegionsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, data_center_list=None):
-        """ListRegionsResponse - a model defined in huaweicloud sdk"""
+        """ListRegionsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total_count: 总数
+        :type total_count: int
+        :param data_center_list: 区域列表
+        :type data_center_list: list[:class:`huaweicloudsdkosm.v2.DataCenterV2Do`]
+        """
         
         super(ListRegionsResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListRegionsResponse(SdkResponse):
         总数
 
         :param total_count: The total_count of this ListRegionsResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 
@@ -74,7 +81,7 @@ class ListRegionsResponse(SdkResponse):
         区域列表
 
         :return: The data_center_list of this ListRegionsResponse.
-        :rtype: list[DataCenterV2Do]
+        :rtype: list[:class:`huaweicloudsdkosm.v2.DataCenterV2Do`]
         """
         return self._data_center_list
 
@@ -85,7 +92,7 @@ class ListRegionsResponse(SdkResponse):
         区域列表
 
         :param data_center_list: The data_center_list of this ListRegionsResponse.
-        :type: list[DataCenterV2Do]
+        :type data_center_list: list[:class:`huaweicloudsdkosm.v2.DataCenterV2Do`]
         """
         self._data_center_list = data_center_list
 

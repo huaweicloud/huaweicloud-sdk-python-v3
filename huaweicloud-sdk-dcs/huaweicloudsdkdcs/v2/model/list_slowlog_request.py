@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSlowlogRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ListSlowlogRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, sort_key=None, sort_dir=None, start_time=None, end_time=None):
-        """ListSlowlogRequest - a model defined in huaweicloud sdk"""
+        """ListSlowlogRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0
+        :type offset: int
+        :param limit: 每页显示的条目数量。
+        :type limit: int
+        :param sort_key: 返回结果按该关键字排序，支持start_time，duration，默认为“start_time”
+        :type sort_key: str
+        :param sort_dir: 降序或升序（分别对应desc和asc，默认为“desc”）
+        :type sort_dir: str
+        :param start_time: 查询开始时间，时间为UTC时间的Unix时间戳。如：1598803200000。
+        :type start_time: str
+        :param end_time: 查询结束时间，时间为UTC时间的Unix时间戳。如：1599494399000。
+        :type end_time: str
+        """
         
         
 
@@ -85,7 +102,7 @@ class ListSlowlogRequest:
         实例ID。
 
         :param instance_id: The instance_id of this ListSlowlogRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -107,7 +124,7 @@ class ListSlowlogRequest:
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
         :param offset: The offset of this ListSlowlogRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -129,7 +146,7 @@ class ListSlowlogRequest:
         每页显示的条目数量。
 
         :param limit: The limit of this ListSlowlogRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -151,7 +168,7 @@ class ListSlowlogRequest:
         返回结果按该关键字排序，支持start_time，duration，默认为“start_time”
 
         :param sort_key: The sort_key of this ListSlowlogRequest.
-        :type: str
+        :type sort_key: str
         """
         self._sort_key = sort_key
 
@@ -173,7 +190,7 @@ class ListSlowlogRequest:
         降序或升序（分别对应desc和asc，默认为“desc”）
 
         :param sort_dir: The sort_dir of this ListSlowlogRequest.
-        :type: str
+        :type sort_dir: str
         """
         self._sort_dir = sort_dir
 
@@ -195,7 +212,7 @@ class ListSlowlogRequest:
         查询开始时间，时间为UTC时间的Unix时间戳。如：1598803200000。
 
         :param start_time: The start_time of this ListSlowlogRequest.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -217,7 +234,7 @@ class ListSlowlogRequest:
         查询结束时间，时间为UTC时间的Unix时间戳。如：1599494399000。
 
         :param end_time: The end_time of this ListSlowlogRequest.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 

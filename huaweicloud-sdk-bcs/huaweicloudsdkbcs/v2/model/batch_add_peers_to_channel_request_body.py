@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchAddPeersToChannelRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchAddPeersToChannelRequestBody:
     }
 
     def __init__(self, channel_peers=None):
-        """BatchAddPeersToChannelRequestBody - a model defined in huaweicloud sdk"""
+        """BatchAddPeersToChannelRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param channel_peers: 加入某个通道的节点信息
+        :type channel_peers: list[:class:`huaweicloudsdkbcs.v2.PeerChannelInfo`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class BatchAddPeersToChannelRequestBody:
         加入某个通道的节点信息
 
         :return: The channel_peers of this BatchAddPeersToChannelRequestBody.
-        :rtype: list[PeerChannelInfo]
+        :rtype: list[:class:`huaweicloudsdkbcs.v2.PeerChannelInfo`]
         """
         return self._channel_peers
 
@@ -57,7 +62,7 @@ class BatchAddPeersToChannelRequestBody:
         加入某个通道的节点信息
 
         :param channel_peers: The channel_peers of this BatchAddPeersToChannelRequestBody.
-        :type: list[PeerChannelInfo]
+        :type channel_peers: list[:class:`huaweicloudsdkbcs.v2.PeerChannelInfo`]
         """
         self._channel_peers = channel_peers
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InstanceSnapshotView:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class InstanceSnapshotView:
     }
 
     def __init__(self, create_time=None, description=None, instance_id=None, version=None):
-        """InstanceSnapshotView - a model defined in huaweicloud sdk"""
+        """InstanceSnapshotView
+
+        The model defined in huaweicloud sdk
+
+        :param create_time: 创建时间。
+        :type create_time: int
+        :param description: 描述。
+        :type description: str
+        :param instance_id: 应用组件实例ID。
+        :type instance_id: str
+        :param version: 版本号。
+        :type version: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class InstanceSnapshotView:
         创建时间。
 
         :param create_time: The create_time of this InstanceSnapshotView.
-        :type: int
+        :type create_time: int
         """
         self._create_time = create_time
 
@@ -95,7 +106,7 @@ class InstanceSnapshotView:
         描述。
 
         :param description: The description of this InstanceSnapshotView.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -117,7 +128,7 @@ class InstanceSnapshotView:
         应用组件实例ID。
 
         :param instance_id: The instance_id of this InstanceSnapshotView.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -139,7 +150,7 @@ class InstanceSnapshotView:
         版本号。
 
         :param version: The version of this InstanceSnapshotView.
-        :type: str
+        :type version: str
         """
         self._version = version
 

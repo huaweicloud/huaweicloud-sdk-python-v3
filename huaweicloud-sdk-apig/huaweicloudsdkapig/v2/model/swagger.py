@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Swagger:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Swagger:
     }
 
     def __init__(self, id=None, result=None):
-        """Swagger - a model defined in huaweicloud sdk"""
+        """Swagger
+
+        The model defined in huaweicloud sdk
+
+        :param id: swagger文档编号
+        :type id: str
+        :param result: 导入结果说明
+        :type result: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class Swagger:
         swagger文档编号
 
         :param id: The id of this Swagger.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -85,7 +92,7 @@ class Swagger:
         导入结果说明
 
         :param result: The result of this Swagger.
-        :type: str
+        :type result: str
         """
         self._result = result
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AutoClassificationResultStatus:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AutoClassificationResultStatus:
     }
 
     def __init__(self, error_code=None, error_msg=None):
-        """AutoClassificationResultStatus - a model defined in huaweicloud sdk"""
+        """AutoClassificationResultStatus
+
+        The model defined in huaweicloud sdk
+
+        :param error_code: 指示各对应票证的状态码
+        :type error_code: str
+        :param error_msg: 指示各对应票证的状态信息
+        :type error_msg: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class AutoClassificationResultStatus:
         指示各对应票证的状态码
 
         :param error_code: The error_code of this AutoClassificationResultStatus.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -85,7 +92,7 @@ class AutoClassificationResultStatus:
         指示各对应票证的状态信息
 
         :param error_msg: The error_msg of this AutoClassificationResultStatus.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 

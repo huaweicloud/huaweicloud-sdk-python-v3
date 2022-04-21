@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NovaSecurityGroupCommonRule:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class NovaSecurityGroupCommonRule:
     }
 
     def __init__(self, from_port=None, group=None, id=None, ip_protocol=None, ip_range=None, parent_group_id=None, to_port=None):
-        """NovaSecurityGroupCommonRule - a model defined in huaweicloud sdk"""
+        """NovaSecurityGroupCommonRule
+
+        The model defined in huaweicloud sdk
+
+        :param from_port: 起始端口，范围1-65535，且不大于to_port。 ip_protocol设置为icmp时，from_port表示type，范围是0-255。
+        :type from_port: int
+        :param group: 
+        :type group: :class:`huaweicloudsdkecs.v2.NovaSecurityGroupCommonGroup`
+        :param id: 安全组规则ID，UUID格式。
+        :type id: str
+        :param ip_protocol: 协议类型或直接指定IP协议号，取值可为icmp，tcp，udp或IP协议号。
+        :type ip_protocol: str
+        :param ip_range: 
+        :type ip_range: :class:`huaweicloudsdkecs.v2.NovaSecurityGroupCommonIpRange`
+        :param parent_group_id: 相关联的安全组ID，UUID格式。
+        :type parent_group_id: str
+        :param to_port: 终止端口，范围1-65535，且不小于from_port。 ip_protocol设置为icmp时，to_port表示code，范围是0-255，且如果from_port为-1，to_port为-1表示任意ICMP报文。
+        :type to_port: int
+        """
         
         
 
@@ -81,7 +98,7 @@ class NovaSecurityGroupCommonRule:
         起始端口，范围1-65535，且不大于to_port。 ip_protocol设置为icmp时，from_port表示type，范围是0-255。
 
         :param from_port: The from_port of this NovaSecurityGroupCommonRule.
-        :type: int
+        :type from_port: int
         """
         self._from_port = from_port
 
@@ -91,7 +108,7 @@ class NovaSecurityGroupCommonRule:
 
 
         :return: The group of this NovaSecurityGroupCommonRule.
-        :rtype: NovaSecurityGroupCommonGroup
+        :rtype: :class:`huaweicloudsdkecs.v2.NovaSecurityGroupCommonGroup`
         """
         return self._group
 
@@ -101,7 +118,7 @@ class NovaSecurityGroupCommonRule:
 
 
         :param group: The group of this NovaSecurityGroupCommonRule.
-        :type: NovaSecurityGroupCommonGroup
+        :type group: :class:`huaweicloudsdkecs.v2.NovaSecurityGroupCommonGroup`
         """
         self._group = group
 
@@ -123,7 +140,7 @@ class NovaSecurityGroupCommonRule:
         安全组规则ID，UUID格式。
 
         :param id: The id of this NovaSecurityGroupCommonRule.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -145,7 +162,7 @@ class NovaSecurityGroupCommonRule:
         协议类型或直接指定IP协议号，取值可为icmp，tcp，udp或IP协议号。
 
         :param ip_protocol: The ip_protocol of this NovaSecurityGroupCommonRule.
-        :type: str
+        :type ip_protocol: str
         """
         self._ip_protocol = ip_protocol
 
@@ -155,7 +172,7 @@ class NovaSecurityGroupCommonRule:
 
 
         :return: The ip_range of this NovaSecurityGroupCommonRule.
-        :rtype: NovaSecurityGroupCommonIpRange
+        :rtype: :class:`huaweicloudsdkecs.v2.NovaSecurityGroupCommonIpRange`
         """
         return self._ip_range
 
@@ -165,7 +182,7 @@ class NovaSecurityGroupCommonRule:
 
 
         :param ip_range: The ip_range of this NovaSecurityGroupCommonRule.
-        :type: NovaSecurityGroupCommonIpRange
+        :type ip_range: :class:`huaweicloudsdkecs.v2.NovaSecurityGroupCommonIpRange`
         """
         self._ip_range = ip_range
 
@@ -187,7 +204,7 @@ class NovaSecurityGroupCommonRule:
         相关联的安全组ID，UUID格式。
 
         :param parent_group_id: The parent_group_id of this NovaSecurityGroupCommonRule.
-        :type: str
+        :type parent_group_id: str
         """
         self._parent_group_id = parent_group_id
 
@@ -209,7 +226,7 @@ class NovaSecurityGroupCommonRule:
         终止端口，范围1-65535，且不小于from_port。 ip_protocol设置为icmp时，to_port表示code，范围是0-255，且如果from_port为-1，to_port为-1表示任意ICMP报文。
 
         :param to_port: The to_port of this NovaSecurityGroupCommonRule.
-        :type: int
+        :type to_port: int
         """
         self._to_port = to_port
 

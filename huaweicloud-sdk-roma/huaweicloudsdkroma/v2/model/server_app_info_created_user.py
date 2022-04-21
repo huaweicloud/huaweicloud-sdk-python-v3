@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ServerAppInfoCreatedUser:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ServerAppInfoCreatedUser:
     }
 
     def __init__(self, user_id=None, user_name=None):
-        """ServerAppInfoCreatedUser - a model defined in huaweicloud sdk"""
+        """ServerAppInfoCreatedUser
+
+        The model defined in huaweicloud sdk
+
+        :param user_id: 创建应用的用户ID
+        :type user_id: str
+        :param user_name: 创建应用的用户名称
+        :type user_name: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class ServerAppInfoCreatedUser:
         创建应用的用户ID
 
         :param user_id: The user_id of this ServerAppInfoCreatedUser.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -85,7 +92,7 @@ class ServerAppInfoCreatedUser:
         创建应用的用户名称
 
         :param user_name: The user_name of this ServerAppInfoCreatedUser.
-        :type: str
+        :type user_name: str
         """
         self._user_name = user_name
 

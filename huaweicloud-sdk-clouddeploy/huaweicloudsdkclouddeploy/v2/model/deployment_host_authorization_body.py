@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeploymentHostAuthorizationBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class DeploymentHostAuthorizationBody:
     }
 
     def __init__(self, username=None, password=None, private_key=None, trusted_type=None):
-        """DeploymentHostAuthorizationBody - a model defined in huaweicloud sdk"""
+        """DeploymentHostAuthorizationBody
+
+        The model defined in huaweicloud sdk
+
+        :param username: 用户名，可输入中英文，数字和符号(-_.)。
+        :type username: str
+        :param password: 密码，认证类型为0时，密码必填。
+        :type password: str
+        :param private_key: 密钥，认证类型为1时，密钥必填
+        :type private_key: str
+        :param trusted_type: 认证类型，0表示使用密码认证，1表示使用密钥认证
+        :type trusted_type: int
+        """
         
         
 
@@ -71,7 +82,7 @@ class DeploymentHostAuthorizationBody:
         用户名，可输入中英文，数字和符号(-_.)。
 
         :param username: The username of this DeploymentHostAuthorizationBody.
-        :type: str
+        :type username: str
         """
         self._username = username
 
@@ -93,7 +104,7 @@ class DeploymentHostAuthorizationBody:
         密码，认证类型为0时，密码必填。
 
         :param password: The password of this DeploymentHostAuthorizationBody.
-        :type: str
+        :type password: str
         """
         self._password = password
 
@@ -115,7 +126,7 @@ class DeploymentHostAuthorizationBody:
         密钥，认证类型为1时，密钥必填
 
         :param private_key: The private_key of this DeploymentHostAuthorizationBody.
-        :type: str
+        :type private_key: str
         """
         self._private_key = private_key
 
@@ -137,7 +148,7 @@ class DeploymentHostAuthorizationBody:
         认证类型，0表示使用密码认证，1表示使用密钥认证
 
         :param trusted_type: The trusted_type of this DeploymentHostAuthorizationBody.
-        :type: int
+        :type trusted_type: int
         """
         self._trusted_type = trusted_type
 

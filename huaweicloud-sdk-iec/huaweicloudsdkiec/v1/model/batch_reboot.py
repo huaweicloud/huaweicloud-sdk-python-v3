@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchReboot:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchReboot:
     }
 
     def __init__(self, servers=None, type=None):
-        """BatchReboot - a model defined in huaweicloud sdk"""
+        """BatchReboot
+
+        The model defined in huaweicloud sdk
+
+        :param servers: 待重启的边缘实例列表。
+        :type servers: list[:class:`huaweicloudsdkiec.v1.BaseId`]
+        :param type: 重启类型：   - SOFT：普通重启。  - HARD：强制重启。  &gt; 重启必须指定重启类型。
+        :type type: str
+        """
         
         
 
@@ -52,7 +59,7 @@ class BatchReboot:
         待重启的边缘实例列表。
 
         :return: The servers of this BatchReboot.
-        :rtype: list[BaseId]
+        :rtype: list[:class:`huaweicloudsdkiec.v1.BaseId`]
         """
         return self._servers
 
@@ -63,7 +70,7 @@ class BatchReboot:
         待重启的边缘实例列表。
 
         :param servers: The servers of this BatchReboot.
-        :type: list[BaseId]
+        :type servers: list[:class:`huaweicloudsdkiec.v1.BaseId`]
         """
         self._servers = servers
 
@@ -85,7 +92,7 @@ class BatchReboot:
         重启类型：   - SOFT：普通重启。  - HARD：强制重启。  > 重启必须指定重启类型。
 
         :param type: The type of this BatchReboot.
-        :type: str
+        :type type: str
         """
         self._type = type
 

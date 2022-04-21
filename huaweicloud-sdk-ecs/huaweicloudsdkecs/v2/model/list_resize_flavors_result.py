@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListResizeFlavorsResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -58,7 +57,41 @@ class ListResizeFlavorsResult:
     }
 
     def __init__(self, id=None, name=None, vcpus=None, ram=None, disk=None, swap=None, os_flv_ext_dat_aephemeral=None, os_flv_disable_ddisabled=None, rxtx_factor=None, rxtx_quota=None, rxtx_cap=None, os_flavor_accessis_public=None, links=None, extra_specs=None, instance_quota=None):
-        """ListResizeFlavorsResult - a model defined in huaweicloud sdk"""
+        """ListResizeFlavorsResult
+
+        The model defined in huaweicloud sdk
+
+        :param id: 云服务器规格的ID。
+        :type id: str
+        :param name: 云服务器规格的名称。
+        :type name: str
+        :param vcpus: 云服务器规格对应的CPU核数。
+        :type vcpus: str
+        :param ram: 云服务器规格对应的内存大小，单位为MB。
+        :type ram: int
+        :param disk: 云服务器规格对应要求的系统盘大小。  当前未使用该参数，缺省值为0。
+        :type disk: str
+        :param swap: 云服务器规格对应要求的交换分区大小。  当前未使用该参数，缺省值为\&quot;\&quot;。
+        :type swap: str
+        :param os_flv_ext_dat_aephemeral: 扩展属性，临时盘大小。  当前未使用该参数，缺省值为0
+        :type os_flv_ext_dat_aephemeral: int
+        :param os_flv_disable_ddisabled: 扩展属性，该云服务器规格是否禁用。  当前未使用该参数，缺省值为false。
+        :type os_flv_disable_ddisabled: bool
+        :param rxtx_factor: 云服务器可使用网络带宽与网络硬件带宽的比例。  当前未使用该参数，缺省值为1.0。
+        :type rxtx_factor: float
+        :param rxtx_quota: 云服务器可使用网络带宽的软限制。  当前未使用该参数，缺省值为null。
+        :type rxtx_quota: str
+        :param rxtx_cap:   云服务器可使用网络带宽的硬限制。  当前未使用该参数，缺省值为null。
+        :type rxtx_cap: str
+        :param os_flavor_accessis_public: 扩展属性，flavor是否给所有租户使用。  - true：表示给所有租户使用。 - false：表示给指定租户使用。  缺省值为true。
+        :type os_flavor_accessis_public: bool
+        :param links: 规格相关快捷链接地址。
+        :type links: list[:class:`huaweicloudsdkecs.v2.FlavorLink`]
+        :param extra_specs: 
+        :type extra_specs: :class:`huaweicloudsdkecs.v2.FlavorExtraSpec`
+        :param instance_quota: 预留属性。
+        :type instance_quota: object
+        """
         
         
 
@@ -113,7 +146,7 @@ class ListResizeFlavorsResult:
         云服务器规格的ID。
 
         :param id: The id of this ListResizeFlavorsResult.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -135,7 +168,7 @@ class ListResizeFlavorsResult:
         云服务器规格的名称。
 
         :param name: The name of this ListResizeFlavorsResult.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -157,7 +190,7 @@ class ListResizeFlavorsResult:
         云服务器规格对应的CPU核数。
 
         :param vcpus: The vcpus of this ListResizeFlavorsResult.
-        :type: str
+        :type vcpus: str
         """
         self._vcpus = vcpus
 
@@ -179,7 +212,7 @@ class ListResizeFlavorsResult:
         云服务器规格对应的内存大小，单位为MB。
 
         :param ram: The ram of this ListResizeFlavorsResult.
-        :type: int
+        :type ram: int
         """
         self._ram = ram
 
@@ -201,7 +234,7 @@ class ListResizeFlavorsResult:
         云服务器规格对应要求的系统盘大小。  当前未使用该参数，缺省值为0。
 
         :param disk: The disk of this ListResizeFlavorsResult.
-        :type: str
+        :type disk: str
         """
         self._disk = disk
 
@@ -223,7 +256,7 @@ class ListResizeFlavorsResult:
         云服务器规格对应要求的交换分区大小。  当前未使用该参数，缺省值为\"\"。
 
         :param swap: The swap of this ListResizeFlavorsResult.
-        :type: str
+        :type swap: str
         """
         self._swap = swap
 
@@ -245,7 +278,7 @@ class ListResizeFlavorsResult:
         扩展属性，临时盘大小。  当前未使用该参数，缺省值为0
 
         :param os_flv_ext_dat_aephemeral: The os_flv_ext_dat_aephemeral of this ListResizeFlavorsResult.
-        :type: int
+        :type os_flv_ext_dat_aephemeral: int
         """
         self._os_flv_ext_dat_aephemeral = os_flv_ext_dat_aephemeral
 
@@ -267,7 +300,7 @@ class ListResizeFlavorsResult:
         扩展属性，该云服务器规格是否禁用。  当前未使用该参数，缺省值为false。
 
         :param os_flv_disable_ddisabled: The os_flv_disable_ddisabled of this ListResizeFlavorsResult.
-        :type: bool
+        :type os_flv_disable_ddisabled: bool
         """
         self._os_flv_disable_ddisabled = os_flv_disable_ddisabled
 
@@ -289,7 +322,7 @@ class ListResizeFlavorsResult:
         云服务器可使用网络带宽与网络硬件带宽的比例。  当前未使用该参数，缺省值为1.0。
 
         :param rxtx_factor: The rxtx_factor of this ListResizeFlavorsResult.
-        :type: float
+        :type rxtx_factor: float
         """
         self._rxtx_factor = rxtx_factor
 
@@ -311,7 +344,7 @@ class ListResizeFlavorsResult:
         云服务器可使用网络带宽的软限制。  当前未使用该参数，缺省值为null。
 
         :param rxtx_quota: The rxtx_quota of this ListResizeFlavorsResult.
-        :type: str
+        :type rxtx_quota: str
         """
         self._rxtx_quota = rxtx_quota
 
@@ -333,7 +366,7 @@ class ListResizeFlavorsResult:
           云服务器可使用网络带宽的硬限制。  当前未使用该参数，缺省值为null。
 
         :param rxtx_cap: The rxtx_cap of this ListResizeFlavorsResult.
-        :type: str
+        :type rxtx_cap: str
         """
         self._rxtx_cap = rxtx_cap
 
@@ -355,7 +388,7 @@ class ListResizeFlavorsResult:
         扩展属性，flavor是否给所有租户使用。  - true：表示给所有租户使用。 - false：表示给指定租户使用。  缺省值为true。
 
         :param os_flavor_accessis_public: The os_flavor_accessis_public of this ListResizeFlavorsResult.
-        :type: bool
+        :type os_flavor_accessis_public: bool
         """
         self._os_flavor_accessis_public = os_flavor_accessis_public
 
@@ -366,7 +399,7 @@ class ListResizeFlavorsResult:
         规格相关快捷链接地址。
 
         :return: The links of this ListResizeFlavorsResult.
-        :rtype: list[FlavorLink]
+        :rtype: list[:class:`huaweicloudsdkecs.v2.FlavorLink`]
         """
         return self._links
 
@@ -377,7 +410,7 @@ class ListResizeFlavorsResult:
         规格相关快捷链接地址。
 
         :param links: The links of this ListResizeFlavorsResult.
-        :type: list[FlavorLink]
+        :type links: list[:class:`huaweicloudsdkecs.v2.FlavorLink`]
         """
         self._links = links
 
@@ -387,7 +420,7 @@ class ListResizeFlavorsResult:
 
 
         :return: The extra_specs of this ListResizeFlavorsResult.
-        :rtype: FlavorExtraSpec
+        :rtype: :class:`huaweicloudsdkecs.v2.FlavorExtraSpec`
         """
         return self._extra_specs
 
@@ -397,7 +430,7 @@ class ListResizeFlavorsResult:
 
 
         :param extra_specs: The extra_specs of this ListResizeFlavorsResult.
-        :type: FlavorExtraSpec
+        :type extra_specs: :class:`huaweicloudsdkecs.v2.FlavorExtraSpec`
         """
         self._extra_specs = extra_specs
 
@@ -419,7 +452,7 @@ class ListResizeFlavorsResult:
         预留属性。
 
         :param instance_quota: The instance_quota of this ListResizeFlavorsResult.
-        :type: object
+        :type instance_quota: object
         """
         self._instance_quota = instance_quota
 

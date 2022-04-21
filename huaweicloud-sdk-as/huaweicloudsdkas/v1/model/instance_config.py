@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InstanceConfig:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -58,7 +57,41 @@ class InstanceConfig:
     }
 
     def __init__(self, instance_id=None, flavor_ref=None, image_ref=None, disk=None, key_name=None, personality=None, public_ip=None, user_data=None, metadata=None, security_groups=None, server_group_id=None, tenancy=None, dedicated_host_id=None, multi_flavor_priority_policy=None, market_type=None):
-        """InstanceConfig - a model defined in huaweicloud sdk"""
+        """InstanceConfig
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 云服务器ID，当使用已存在的云服务器的规格为模板创建弹性伸缩配置时传入该字段，此时flavorRef、imageRef、disk、security_groups、tenancy和dedicated_host_id字段不生效。当不传入instance_id字段时flavorRef、imageRef、disk字段为必选。
+        :type instance_id: str
+        :param flavor_ref: 云服务器的规格ID。最多支持选择10个规格，多个规格ID以逗号分隔。云服务器的ID通过查询弹性云服务器规格详情和扩展信息列表接口获取，详情请参考 [查询云服务器规格详情和扩展信息列表](https://support.huaweicloud.com/api-ecs/zh-cn_topic_0020212656.html)。
+        :type flavor_ref: str
+        :param image_ref: 镜像ID，同image_id，指定创建实例时选择的镜像资源。通过查询镜像服务镜像列表接口获取，请参考[查询镜像列表](https://support.huaweicloud.com/api-ims/ims_03_0602.html)。
+        :type image_ref: str
+        :param disk: 磁盘组信息，系统盘必选，数据盘可选。
+        :type disk: list[:class:`huaweicloudsdkas.v1.DiskInfo`]
+        :param key_name: 登录云服务器的SSH密钥名称。  获取密钥对方式请参考[创建及导入SSH密钥对](https://support.huaweicloud.com/api-dew/CreateKeypair.html)。  说明： 当key_name与user_data同时指定时，user_data只做用户数据注入。
+        :type key_name: str
+        :param personality: 注入文件信息。仅支持注入文本文件，最大支持注入5个文件，每个文件最大1KB。
+        :type personality: list[:class:`huaweicloudsdkas.v1.PersonalityInfo`]
+        :param public_ip: 
+        :type public_ip: :class:`huaweicloudsdkas.v1.PublicIp`
+        :param user_data: cloud-init用户数据。支持注入文本、文本文件或gzip文件。文件内容需要进行base64格式编码，注入内容（编码之前的内容）最大为32KB。说明：当key_name没有指定时，user_data注入的数据默认为云服务器root账号的登录密码。创建密码方式鉴权的Linux弹性云服务器时为必填项，为root用户注入自定义初始化密码。
+        :type user_data: str
+        :param metadata: 
+        :type metadata: :class:`huaweicloudsdkas.v1.VmMetaData`
+        :param security_groups: 安全组信息。使用vpc_id通过查询VPC服务安全组列表接口获取，详见《虚拟私有云API参考》的“查询安全组列表”。当伸缩配置和伸缩组同时指定安全组时，将以伸缩配置中的安全组为准；当伸缩配置和伸缩组都没有指定安全组时，将使用默认安全组。为了使用灵活性更高，推荐在伸缩配置中指定安全组。
+        :type security_groups: list[:class:`huaweicloudsdkas.v1.SecurityGroups`]
+        :param server_group_id: 云服务器组ID。
+        :type server_group_id: str
+        :param tenancy: 在专属主机上创建弹性云服务器。参数取值为dedicated。
+        :type tenancy: str
+        :param dedicated_host_id: 专属主机的ID。 说明：该字段仅在tenancy为dedicated时生效；如果指定该字段，云服务器将被创建到指定的专属主机上；如果不指定该字段，此时系统会将云服务器创建在符合规格的专属主机中剩余内存最大的那一台上，以使各专属主机尽量均衡负载。
+        :type dedicated_host_id: str
+        :param multi_flavor_priority_policy: 使用伸缩配置创建云主机的时候，多规格使用的优先级策略。PICK_FIRST（默认）：选择优先，虚拟机扩容时规格的选择按照flavorRef列表的顺序进行优先级排序。COST_FIRST：成本优化，虚拟机扩容时规格的选择按照价格最优原则进行优先级排序。
+        :type multi_flavor_priority_policy: str
+        :param market_type: 云服务器的计费模式，可以选择竞价计费或按需计费，取值如下：按需计费：不指定该字段。竞价计费：spot
+        :type market_type: str
+        """
         
         
 
@@ -127,7 +160,7 @@ class InstanceConfig:
         云服务器ID，当使用已存在的云服务器的规格为模板创建弹性伸缩配置时传入该字段，此时flavorRef、imageRef、disk、security_groups、tenancy和dedicated_host_id字段不生效。当不传入instance_id字段时flavorRef、imageRef、disk字段为必选。
 
         :param instance_id: The instance_id of this InstanceConfig.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -149,7 +182,7 @@ class InstanceConfig:
         云服务器的规格ID。最多支持选择10个规格，多个规格ID以逗号分隔。云服务器的ID通过查询弹性云服务器规格详情和扩展信息列表接口获取，详情请参考 [查询云服务器规格详情和扩展信息列表](https://support.huaweicloud.com/api-ecs/zh-cn_topic_0020212656.html)。
 
         :param flavor_ref: The flavor_ref of this InstanceConfig.
-        :type: str
+        :type flavor_ref: str
         """
         self._flavor_ref = flavor_ref
 
@@ -171,7 +204,7 @@ class InstanceConfig:
         镜像ID，同image_id，指定创建实例时选择的镜像资源。通过查询镜像服务镜像列表接口获取，请参考[查询镜像列表](https://support.huaweicloud.com/api-ims/ims_03_0602.html)。
 
         :param image_ref: The image_ref of this InstanceConfig.
-        :type: str
+        :type image_ref: str
         """
         self._image_ref = image_ref
 
@@ -182,7 +215,7 @@ class InstanceConfig:
         磁盘组信息，系统盘必选，数据盘可选。
 
         :return: The disk of this InstanceConfig.
-        :rtype: list[DiskInfo]
+        :rtype: list[:class:`huaweicloudsdkas.v1.DiskInfo`]
         """
         return self._disk
 
@@ -193,7 +226,7 @@ class InstanceConfig:
         磁盘组信息，系统盘必选，数据盘可选。
 
         :param disk: The disk of this InstanceConfig.
-        :type: list[DiskInfo]
+        :type disk: list[:class:`huaweicloudsdkas.v1.DiskInfo`]
         """
         self._disk = disk
 
@@ -215,7 +248,7 @@ class InstanceConfig:
         登录云服务器的SSH密钥名称。  获取密钥对方式请参考[创建及导入SSH密钥对](https://support.huaweicloud.com/api-dew/CreateKeypair.html)。  说明： 当key_name与user_data同时指定时，user_data只做用户数据注入。
 
         :param key_name: The key_name of this InstanceConfig.
-        :type: str
+        :type key_name: str
         """
         self._key_name = key_name
 
@@ -226,7 +259,7 @@ class InstanceConfig:
         注入文件信息。仅支持注入文本文件，最大支持注入5个文件，每个文件最大1KB。
 
         :return: The personality of this InstanceConfig.
-        :rtype: list[PersonalityInfo]
+        :rtype: list[:class:`huaweicloudsdkas.v1.PersonalityInfo`]
         """
         return self._personality
 
@@ -237,7 +270,7 @@ class InstanceConfig:
         注入文件信息。仅支持注入文本文件，最大支持注入5个文件，每个文件最大1KB。
 
         :param personality: The personality of this InstanceConfig.
-        :type: list[PersonalityInfo]
+        :type personality: list[:class:`huaweicloudsdkas.v1.PersonalityInfo`]
         """
         self._personality = personality
 
@@ -247,7 +280,7 @@ class InstanceConfig:
 
 
         :return: The public_ip of this InstanceConfig.
-        :rtype: PublicIp
+        :rtype: :class:`huaweicloudsdkas.v1.PublicIp`
         """
         return self._public_ip
 
@@ -257,7 +290,7 @@ class InstanceConfig:
 
 
         :param public_ip: The public_ip of this InstanceConfig.
-        :type: PublicIp
+        :type public_ip: :class:`huaweicloudsdkas.v1.PublicIp`
         """
         self._public_ip = public_ip
 
@@ -279,7 +312,7 @@ class InstanceConfig:
         cloud-init用户数据。支持注入文本、文本文件或gzip文件。文件内容需要进行base64格式编码，注入内容（编码之前的内容）最大为32KB。说明：当key_name没有指定时，user_data注入的数据默认为云服务器root账号的登录密码。创建密码方式鉴权的Linux弹性云服务器时为必填项，为root用户注入自定义初始化密码。
 
         :param user_data: The user_data of this InstanceConfig.
-        :type: str
+        :type user_data: str
         """
         self._user_data = user_data
 
@@ -289,7 +322,7 @@ class InstanceConfig:
 
 
         :return: The metadata of this InstanceConfig.
-        :rtype: VmMetaData
+        :rtype: :class:`huaweicloudsdkas.v1.VmMetaData`
         """
         return self._metadata
 
@@ -299,7 +332,7 @@ class InstanceConfig:
 
 
         :param metadata: The metadata of this InstanceConfig.
-        :type: VmMetaData
+        :type metadata: :class:`huaweicloudsdkas.v1.VmMetaData`
         """
         self._metadata = metadata
 
@@ -310,7 +343,7 @@ class InstanceConfig:
         安全组信息。使用vpc_id通过查询VPC服务安全组列表接口获取，详见《虚拟私有云API参考》的“查询安全组列表”。当伸缩配置和伸缩组同时指定安全组时，将以伸缩配置中的安全组为准；当伸缩配置和伸缩组都没有指定安全组时，将使用默认安全组。为了使用灵活性更高，推荐在伸缩配置中指定安全组。
 
         :return: The security_groups of this InstanceConfig.
-        :rtype: list[SecurityGroups]
+        :rtype: list[:class:`huaweicloudsdkas.v1.SecurityGroups`]
         """
         return self._security_groups
 
@@ -321,7 +354,7 @@ class InstanceConfig:
         安全组信息。使用vpc_id通过查询VPC服务安全组列表接口获取，详见《虚拟私有云API参考》的“查询安全组列表”。当伸缩配置和伸缩组同时指定安全组时，将以伸缩配置中的安全组为准；当伸缩配置和伸缩组都没有指定安全组时，将使用默认安全组。为了使用灵活性更高，推荐在伸缩配置中指定安全组。
 
         :param security_groups: The security_groups of this InstanceConfig.
-        :type: list[SecurityGroups]
+        :type security_groups: list[:class:`huaweicloudsdkas.v1.SecurityGroups`]
         """
         self._security_groups = security_groups
 
@@ -343,7 +376,7 @@ class InstanceConfig:
         云服务器组ID。
 
         :param server_group_id: The server_group_id of this InstanceConfig.
-        :type: str
+        :type server_group_id: str
         """
         self._server_group_id = server_group_id
 
@@ -365,7 +398,7 @@ class InstanceConfig:
         在专属主机上创建弹性云服务器。参数取值为dedicated。
 
         :param tenancy: The tenancy of this InstanceConfig.
-        :type: str
+        :type tenancy: str
         """
         self._tenancy = tenancy
 
@@ -387,7 +420,7 @@ class InstanceConfig:
         专属主机的ID。 说明：该字段仅在tenancy为dedicated时生效；如果指定该字段，云服务器将被创建到指定的专属主机上；如果不指定该字段，此时系统会将云服务器创建在符合规格的专属主机中剩余内存最大的那一台上，以使各专属主机尽量均衡负载。
 
         :param dedicated_host_id: The dedicated_host_id of this InstanceConfig.
-        :type: str
+        :type dedicated_host_id: str
         """
         self._dedicated_host_id = dedicated_host_id
 
@@ -409,7 +442,7 @@ class InstanceConfig:
         使用伸缩配置创建云主机的时候，多规格使用的优先级策略。PICK_FIRST（默认）：选择优先，虚拟机扩容时规格的选择按照flavorRef列表的顺序进行优先级排序。COST_FIRST：成本优化，虚拟机扩容时规格的选择按照价格最优原则进行优先级排序。
 
         :param multi_flavor_priority_policy: The multi_flavor_priority_policy of this InstanceConfig.
-        :type: str
+        :type multi_flavor_priority_policy: str
         """
         self._multi_flavor_priority_policy = multi_flavor_priority_policy
 
@@ -431,7 +464,7 @@ class InstanceConfig:
         云服务器的计费模式，可以选择竞价计费或按需计费，取值如下：按需计费：不指定该字段。竞价计费：spot
 
         :param market_type: The market_type of this InstanceConfig.
-        :type: str
+        :type market_type: str
         """
         self._market_type = market_type
 

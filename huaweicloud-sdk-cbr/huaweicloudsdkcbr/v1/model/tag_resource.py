@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TagResource:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class TagResource:
     }
 
     def __init__(self, resource_id=None, resource_detail=None, tags=None, resource_name=None, sys_tags=None):
-        """TagResource - a model defined in huaweicloud sdk"""
+        """TagResource
+
+        The model defined in huaweicloud sdk
+
+        :param resource_id: 资源ID
+        :type resource_id: str
+        :param resource_detail: 资源详情
+        :type resource_detail: list[:class:`huaweicloudsdkcbr.v1.Vault`]
+        :param tags: 标签列表 没有标签默认为空数字。
+        :type tags: list[:class:`huaweicloudsdkcbr.v1.Tag`]
+        :param resource_name: 资源名称
+        :type resource_name: str
+        :param sys_tags: 仅op_service权限才可以获取此字段：  目前只包含一个resource_tag 结构体。  key：_sys_enterprise_project_id  value：企业项目id，0表示默认企业项目  非op_service场景不能返回此字段。
+        :type sys_tags: list[:class:`huaweicloudsdkcbr.v1.SysTag`]
+        """
         
         
 
@@ -73,7 +86,7 @@ class TagResource:
         资源ID
 
         :param resource_id: The resource_id of this TagResource.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -84,7 +97,7 @@ class TagResource:
         资源详情
 
         :return: The resource_detail of this TagResource.
-        :rtype: list[Vault]
+        :rtype: list[:class:`huaweicloudsdkcbr.v1.Vault`]
         """
         return self._resource_detail
 
@@ -95,7 +108,7 @@ class TagResource:
         资源详情
 
         :param resource_detail: The resource_detail of this TagResource.
-        :type: list[Vault]
+        :type resource_detail: list[:class:`huaweicloudsdkcbr.v1.Vault`]
         """
         self._resource_detail = resource_detail
 
@@ -106,7 +119,7 @@ class TagResource:
         标签列表 没有标签默认为空数字。
 
         :return: The tags of this TagResource.
-        :rtype: list[Tag]
+        :rtype: list[:class:`huaweicloudsdkcbr.v1.Tag`]
         """
         return self._tags
 
@@ -117,7 +130,7 @@ class TagResource:
         标签列表 没有标签默认为空数字。
 
         :param tags: The tags of this TagResource.
-        :type: list[Tag]
+        :type tags: list[:class:`huaweicloudsdkcbr.v1.Tag`]
         """
         self._tags = tags
 
@@ -139,7 +152,7 @@ class TagResource:
         资源名称
 
         :param resource_name: The resource_name of this TagResource.
-        :type: str
+        :type resource_name: str
         """
         self._resource_name = resource_name
 
@@ -150,7 +163,7 @@ class TagResource:
         仅op_service权限才可以获取此字段：  目前只包含一个resource_tag 结构体。  key：_sys_enterprise_project_id  value：企业项目id，0表示默认企业项目  非op_service场景不能返回此字段。
 
         :return: The sys_tags of this TagResource.
-        :rtype: list[SysTag]
+        :rtype: list[:class:`huaweicloudsdkcbr.v1.SysTag`]
         """
         return self._sys_tags
 
@@ -161,7 +174,7 @@ class TagResource:
         仅op_service权限才可以获取此字段：  目前只包含一个resource_tag 结构体。  key：_sys_enterprise_project_id  value：企业项目id，0表示默认企业项目  非op_service场景不能返回此字段。
 
         :param sys_tags: The sys_tags of this TagResource.
-        :type: list[SysTag]
+        :type sys_tags: list[:class:`huaweicloudsdkcbr.v1.SysTag`]
         """
         self._sys_tags = sys_tags
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Match:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Match:
     }
 
     def __init__(self, key=None, value=None):
-        """Match - a model defined in huaweicloud sdk"""
+        """Match
+
+        The model defined in huaweicloud sdk
+
+        :param key: 键。当前只有resource_name可用，表示集群的名称，后续扩展。
+        :type key: str
+        :param value: 值。每个值最大长度64个unicode字符。
+        :type value: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class Match:
         键。当前只有resource_name可用，表示集群的名称，后续扩展。
 
         :param key: The key of this Match.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -85,7 +92,7 @@ class Match:
         值。每个值最大长度64个unicode字符。
 
         :param value: The value of this Match.
-        :type: str
+        :type value: str
         """
         self._value = value
 

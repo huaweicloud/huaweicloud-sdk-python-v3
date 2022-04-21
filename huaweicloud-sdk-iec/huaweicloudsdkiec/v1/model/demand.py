@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Demand:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class Demand:
     }
 
     def __init__(self, operator=None, demand_count=None, pool_id=None):
-        """Demand - a model defined in huaweicloud sdk"""
+        """Demand
+
+        The model defined in huaweicloud sdk
+
+        :param operator: 所属运营商。
+        :type operator: str
+        :param demand_count: 站点需要发放的资源(组)总数。  &gt; 实际发放实例数量为count*demand_count。
+        :type demand_count: int
+        :param pool_id: 线路ID。 多线路场景下，将在该线路下创建弹性公网IP。 &gt; 覆盖规则为省级/大区时不支持指定线路ID创建边缘业务。
+        :type pool_id: str
+        """
         
         
 
@@ -67,7 +76,7 @@ class Demand:
         所属运营商。
 
         :param operator: The operator of this Demand.
-        :type: str
+        :type operator: str
         """
         self._operator = operator
 
@@ -89,7 +98,7 @@ class Demand:
         站点需要发放的资源(组)总数。  > 实际发放实例数量为count*demand_count。
 
         :param demand_count: The demand_count of this Demand.
-        :type: int
+        :type demand_count: int
         """
         self._demand_count = demand_count
 
@@ -111,7 +120,7 @@ class Demand:
         线路ID。 多线路场景下，将在该线路下创建弹性公网IP。 > 覆盖规则为省级/大区时不支持指定线路ID创建边缘业务。
 
         :param pool_id: The pool_id of this Demand.
-        :type: str
+        :type pool_id: str
         """
         self._pool_id = pool_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateAppQuotaRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateAppQuotaRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreateAppQuotaRequest - a model defined in huaweicloud sdk"""
+        """CreateAppQuotaRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param body: Body of the CreateAppQuotaRequest
+        :type body: :class:`huaweicloudsdkroma.v2.AppQuotaCreate`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateAppQuotaRequest:
         实例ID
 
         :param instance_id: The instance_id of this CreateAppQuotaRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -72,7 +79,7 @@ class CreateAppQuotaRequest:
 
 
         :return: The body of this CreateAppQuotaRequest.
-        :rtype: AppQuotaCreate
+        :rtype: :class:`huaweicloudsdkroma.v2.AppQuotaCreate`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CreateAppQuotaRequest:
 
 
         :param body: The body of this CreateAppQuotaRequest.
-        :type: AppQuotaCreate
+        :type body: :class:`huaweicloudsdkroma.v2.AppQuotaCreate`
         """
         self._body = body
 

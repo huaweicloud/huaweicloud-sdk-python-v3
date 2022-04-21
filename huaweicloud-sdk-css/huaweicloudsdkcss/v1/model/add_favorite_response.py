@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddFavoriteResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class AddFavoriteResponse(SdkResponse):
     }
 
     def __init__(self):
-        """AddFavoriteResponse - a model defined in huaweicloud sdk"""
+        """AddFavoriteResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(AddFavoriteResponse, self).__init__()
         self.discriminator = None

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RecordDetailInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class RecordDetailInfo:
     }
 
     def __init__(self, operation_id=None, resource_type=None, operation_type=None, domain_id=None, project_id=None, blockchain_id=None, blockchain_name=None, cluster_info=None, operation_process=None, record_time=None, operation_status=None, message=None, desc=None):
-        """RecordDetailInfo - a model defined in huaweicloud sdk"""
+        """RecordDetailInfo
+
+        The model defined in huaweicloud sdk
+
+        :param operation_id: 操作记录ID
+        :type operation_id: str
+        :param resource_type: 资源类型
+        :type resource_type: str
+        :param operation_type: 操作类型
+        :type operation_type: str
+        :param domain_id: 租户ID
+        :type domain_id: str
+        :param project_id: 项目ID
+        :type project_id: str
+        :param blockchain_id: 区块链ID
+        :type blockchain_id: str
+        :param blockchain_name: 区块链名称
+        :type blockchain_name: str
+        :param cluster_info: 
+        :type cluster_info: :class:`huaweicloudsdkbcs.v2.OprecordCluster`
+        :param operation_process: 操作流程，key为流程名，value为流程信息
+        :type operation_process: dict(str, ProcessInfo)
+        :param record_time: 记录更新时间
+        :type record_time: int
+        :param operation_status: 操作状态
+        :type operation_status: str
+        :param message: 操作过程信息记录
+        :type message: list[str]
+        :param desc: 操作描述
+        :type desc: str
+        """
         
         
 
@@ -118,7 +147,7 @@ class RecordDetailInfo:
         操作记录ID
 
         :param operation_id: The operation_id of this RecordDetailInfo.
-        :type: str
+        :type operation_id: str
         """
         self._operation_id = operation_id
 
@@ -140,7 +169,7 @@ class RecordDetailInfo:
         资源类型
 
         :param resource_type: The resource_type of this RecordDetailInfo.
-        :type: str
+        :type resource_type: str
         """
         self._resource_type = resource_type
 
@@ -162,7 +191,7 @@ class RecordDetailInfo:
         操作类型
 
         :param operation_type: The operation_type of this RecordDetailInfo.
-        :type: str
+        :type operation_type: str
         """
         self._operation_type = operation_type
 
@@ -184,7 +213,7 @@ class RecordDetailInfo:
         租户ID
 
         :param domain_id: The domain_id of this RecordDetailInfo.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -206,7 +235,7 @@ class RecordDetailInfo:
         项目ID
 
         :param project_id: The project_id of this RecordDetailInfo.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -228,7 +257,7 @@ class RecordDetailInfo:
         区块链ID
 
         :param blockchain_id: The blockchain_id of this RecordDetailInfo.
-        :type: str
+        :type blockchain_id: str
         """
         self._blockchain_id = blockchain_id
 
@@ -250,7 +279,7 @@ class RecordDetailInfo:
         区块链名称
 
         :param blockchain_name: The blockchain_name of this RecordDetailInfo.
-        :type: str
+        :type blockchain_name: str
         """
         self._blockchain_name = blockchain_name
 
@@ -260,7 +289,7 @@ class RecordDetailInfo:
 
 
         :return: The cluster_info of this RecordDetailInfo.
-        :rtype: OprecordCluster
+        :rtype: :class:`huaweicloudsdkbcs.v2.OprecordCluster`
         """
         return self._cluster_info
 
@@ -270,7 +299,7 @@ class RecordDetailInfo:
 
 
         :param cluster_info: The cluster_info of this RecordDetailInfo.
-        :type: OprecordCluster
+        :type cluster_info: :class:`huaweicloudsdkbcs.v2.OprecordCluster`
         """
         self._cluster_info = cluster_info
 
@@ -292,7 +321,7 @@ class RecordDetailInfo:
         操作流程，key为流程名，value为流程信息
 
         :param operation_process: The operation_process of this RecordDetailInfo.
-        :type: dict(str, ProcessInfo)
+        :type operation_process: dict(str, ProcessInfo)
         """
         self._operation_process = operation_process
 
@@ -314,7 +343,7 @@ class RecordDetailInfo:
         记录更新时间
 
         :param record_time: The record_time of this RecordDetailInfo.
-        :type: int
+        :type record_time: int
         """
         self._record_time = record_time
 
@@ -336,7 +365,7 @@ class RecordDetailInfo:
         操作状态
 
         :param operation_status: The operation_status of this RecordDetailInfo.
-        :type: str
+        :type operation_status: str
         """
         self._operation_status = operation_status
 
@@ -358,7 +387,7 @@ class RecordDetailInfo:
         操作过程信息记录
 
         :param message: The message of this RecordDetailInfo.
-        :type: list[str]
+        :type message: list[str]
         """
         self._message = message
 
@@ -380,7 +409,7 @@ class RecordDetailInfo:
         操作描述
 
         :param desc: The desc of this RecordDetailInfo.
-        :type: str
+        :type desc: str
         """
         self._desc = desc
 

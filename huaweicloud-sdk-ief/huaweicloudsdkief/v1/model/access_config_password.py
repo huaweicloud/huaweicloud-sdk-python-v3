@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AccessConfigPassword:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class AccessConfigPassword:
     }
 
     def __init__(self, value=None, optional=None, metadata=None):
-        """AccessConfigPassword - a model defined in huaweicloud sdk"""
+        """AccessConfigPassword
+
+        The model defined in huaweicloud sdk
+
+        :param value: value 最大长度512， value允许英文字母、数字、下划线、中划线、点、逗号、@、#、+、\\、/、？、^、&#x3D;、%、&amp;、:、~
+        :type value: str
+        :param optional: 标识属性是否可选，默认为true
+        :type optional: bool
+        :param metadata: 
+        :type metadata: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsRegisterTypeMetadata`
+        """
         
         
 
@@ -67,7 +76,7 @@ class AccessConfigPassword:
         value 最大长度512， value允许英文字母、数字、下划线、中划线、点、逗号、@、#、+、\\、/、？、^、=、%、&、:、~
 
         :param value: The value of this AccessConfigPassword.
-        :type: str
+        :type value: str
         """
         self._value = value
 
@@ -89,7 +98,7 @@ class AccessConfigPassword:
         标识属性是否可选，默认为true
 
         :param optional: The optional of this AccessConfigPassword.
-        :type: bool
+        :type optional: bool
         """
         self._optional = optional
 
@@ -99,7 +108,7 @@ class AccessConfigPassword:
 
 
         :return: The metadata of this AccessConfigPassword.
-        :rtype: ValueInPropertyVisitorsRegisterTypeMetadata
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsRegisterTypeMetadata`
         """
         return self._metadata
 
@@ -109,7 +118,7 @@ class AccessConfigPassword:
 
 
         :param metadata: The metadata of this AccessConfigPassword.
-        :type: ValueInPropertyVisitorsRegisterTypeMetadata
+        :type metadata: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsRegisterTypeMetadata`
         """
         self._metadata = metadata
 

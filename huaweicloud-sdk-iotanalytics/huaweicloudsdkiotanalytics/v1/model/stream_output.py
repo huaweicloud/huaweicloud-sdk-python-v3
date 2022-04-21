@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StreamOutput:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class StreamOutput:
     }
 
     def __init__(self, name=None, output_property=None):
-        """StreamOutput - a model defined in huaweicloud sdk"""
+        """StreamOutput
+
+        The model defined in huaweicloud sdk
+
+        :param name: 输出参数名称，必须是接收数据类型为资产数据的实时分析作业中已定义的
+        :type name: str
+        :param output_property: 输出属性名，必须是本模型分析任务类别的属性的属性名
+        :type output_property: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class StreamOutput:
         输出参数名称，必须是接收数据类型为资产数据的实时分析作业中已定义的
 
         :param name: The name of this StreamOutput.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -83,7 +90,7 @@ class StreamOutput:
         输出属性名，必须是本模型分析任务类别的属性的属性名
 
         :param output_property: The output_property of this StreamOutput.
-        :type: str
+        :type output_property: str
         """
         self._output_property = output_property
 

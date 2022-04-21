@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDisasterRecoveryDrillsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListDisasterRecoveryDrillsRequest:
     }
 
     def __init__(self, server_group_id=None, name=None, status=None, drill_vpc_id=None, limit=None, offset=None):
-        """ListDisasterRecoveryDrillsRequest - a model defined in huaweicloud sdk"""
+        """ListDisasterRecoveryDrillsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param server_group_id: 保护组的ID。
+        :type server_group_id: str
+        :param name: 容灾演练的名称。支持模糊查询。
+        :type name: str
+        :param status: 容灾演练的状态。
+        :type status: str
+        :param drill_vpc_id: 演练虚拟私有云ID。
+        :type drill_vpc_id: str
+        :param limit: 每次请求返回结果个数限制，取值范围为[0,1000]的正整数，默认值为1000。
+        :type limit: int
+        :param offset: 每次请求开始的下标，即偏移量，默认值为0。offset必须为数字，不能为负数。
+        :type offset: int
+        """
         
         
 
@@ -83,7 +98,7 @@ class ListDisasterRecoveryDrillsRequest:
         保护组的ID。
 
         :param server_group_id: The server_group_id of this ListDisasterRecoveryDrillsRequest.
-        :type: str
+        :type server_group_id: str
         """
         self._server_group_id = server_group_id
 
@@ -105,7 +120,7 @@ class ListDisasterRecoveryDrillsRequest:
         容灾演练的名称。支持模糊查询。
 
         :param name: The name of this ListDisasterRecoveryDrillsRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -127,7 +142,7 @@ class ListDisasterRecoveryDrillsRequest:
         容灾演练的状态。
 
         :param status: The status of this ListDisasterRecoveryDrillsRequest.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -149,7 +164,7 @@ class ListDisasterRecoveryDrillsRequest:
         演练虚拟私有云ID。
 
         :param drill_vpc_id: The drill_vpc_id of this ListDisasterRecoveryDrillsRequest.
-        :type: str
+        :type drill_vpc_id: str
         """
         self._drill_vpc_id = drill_vpc_id
 
@@ -171,7 +186,7 @@ class ListDisasterRecoveryDrillsRequest:
         每次请求返回结果个数限制，取值范围为[0,1000]的正整数，默认值为1000。
 
         :param limit: The limit of this ListDisasterRecoveryDrillsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -193,7 +208,7 @@ class ListDisasterRecoveryDrillsRequest:
         每次请求开始的下标，即偏移量，默认值为0。offset必须为数字，不能为负数。
 
         :param offset: The offset of this ListDisasterRecoveryDrillsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 

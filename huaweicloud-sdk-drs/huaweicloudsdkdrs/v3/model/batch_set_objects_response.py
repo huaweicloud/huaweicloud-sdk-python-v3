@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchSetObjectsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchSetObjectsResponse(SdkResponse):
     }
 
     def __init__(self, all_counts=None, results=None):
-        """BatchSetObjectsResponse - a model defined in huaweicloud sdk"""
+        """BatchSetObjectsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param all_counts: 总数
+        :type all_counts: int
+        :param results: 批量对象选择响应列表
+        :type results: list[:class:`huaweicloudsdkdrs.v3.DatabaseObjectResp`]
+        """
         
         super(BatchSetObjectsResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class BatchSetObjectsResponse(SdkResponse):
         总数
 
         :param all_counts: The all_counts of this BatchSetObjectsResponse.
-        :type: int
+        :type all_counts: int
         """
         self._all_counts = all_counts
 
@@ -74,7 +81,7 @@ class BatchSetObjectsResponse(SdkResponse):
         批量对象选择响应列表
 
         :return: The results of this BatchSetObjectsResponse.
-        :rtype: list[DatabaseObjectResp]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.DatabaseObjectResp`]
         """
         return self._results
 
@@ -85,7 +92,7 @@ class BatchSetObjectsResponse(SdkResponse):
         批量对象选择响应列表
 
         :param results: The results of this BatchSetObjectsResponse.
-        :type: list[DatabaseObjectResp]
+        :type results: list[:class:`huaweicloudsdkdrs.v3.DatabaseObjectResp`]
         """
         self._results = results
 

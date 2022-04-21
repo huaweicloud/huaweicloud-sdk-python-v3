@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateDeploymentHostRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateDeploymentHostRequest:
     }
 
     def __init__(self, group_id=None, body=None):
-        """CreateDeploymentHostRequest - a model defined in huaweicloud sdk"""
+        """CreateDeploymentHostRequest
+
+        The model defined in huaweicloud sdk
+
+        :param group_id: 主机组id
+        :type group_id: str
+        :param body: Body of the CreateDeploymentHostRequest
+        :type body: :class:`huaweicloudsdkclouddeploy.v2.DeploymentHost`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateDeploymentHostRequest:
         主机组id
 
         :param group_id: The group_id of this CreateDeploymentHostRequest.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -72,7 +79,7 @@ class CreateDeploymentHostRequest:
 
 
         :return: The body of this CreateDeploymentHostRequest.
-        :rtype: DeploymentHost
+        :rtype: :class:`huaweicloudsdkclouddeploy.v2.DeploymentHost`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CreateDeploymentHostRequest:
 
 
         :param body: The body of this CreateDeploymentHostRequest.
-        :type: DeploymentHost
+        :type body: :class:`huaweicloudsdkclouddeploy.v2.DeploymentHost`
         """
         self._body = body
 

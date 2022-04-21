@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunCelebrityRecognitionResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RunCelebrityRecognitionResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """RunCelebrityRecognitionResponse - a model defined in huaweicloud sdk"""
+        """RunCelebrityRecognitionResponse
+
+        The model defined in huaweicloud sdk
+
+        :param result: 调用成功时表示调用结果。  调用失败时无此字段。 
+        :type result: list[:class:`huaweicloudsdkimage.v2.CelebrityRecognitionResultBody`]
+        """
         
         super(RunCelebrityRecognitionResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class RunCelebrityRecognitionResponse(SdkResponse):
         调用成功时表示调用结果。  调用失败时无此字段。 
 
         :return: The result of this RunCelebrityRecognitionResponse.
-        :rtype: list[CelebrityRecognitionResultBody]
+        :rtype: list[:class:`huaweicloudsdkimage.v2.CelebrityRecognitionResultBody`]
         """
         return self._result
 
@@ -58,7 +63,7 @@ class RunCelebrityRecognitionResponse(SdkResponse):
         调用成功时表示调用结果。  调用失败时无此字段。 
 
         :param result: The result of this RunCelebrityRecognitionResponse.
-        :type: list[CelebrityRecognitionResultBody]
+        :type result: list[:class:`huaweicloudsdkimage.v2.CelebrityRecognitionResultBody`]
         """
         self._result = result
 

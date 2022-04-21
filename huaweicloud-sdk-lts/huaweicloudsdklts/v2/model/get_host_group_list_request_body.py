@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GetHostGroupListRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class GetHostGroupListRequestBody:
     }
 
     def __init__(self, host_group_id_list=None, filter=None):
-        """GetHostGroupListRequestBody - a model defined in huaweicloud sdk"""
+        """GetHostGroupListRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param host_group_id_list: 主机组ID
+        :type host_group_id_list: list[str]
+        :param filter: 
+        :type filter: :class:`huaweicloudsdklts.v2.GetHostGroupListFilter`
+        """
         
         
 
@@ -61,7 +68,7 @@ class GetHostGroupListRequestBody:
         主机组ID
 
         :param host_group_id_list: The host_group_id_list of this GetHostGroupListRequestBody.
-        :type: list[str]
+        :type host_group_id_list: list[str]
         """
         self._host_group_id_list = host_group_id_list
 
@@ -71,7 +78,7 @@ class GetHostGroupListRequestBody:
 
 
         :return: The filter of this GetHostGroupListRequestBody.
-        :rtype: GetHostGroupListFilter
+        :rtype: :class:`huaweicloudsdklts.v2.GetHostGroupListFilter`
         """
         return self._filter
 
@@ -81,7 +88,7 @@ class GetHostGroupListRequestBody:
 
 
         :param filter: The filter of this GetHostGroupListRequestBody.
-        :type: GetHostGroupListFilter
+        :type filter: :class:`huaweicloudsdklts.v2.GetHostGroupListFilter`
         """
         self._filter = filter
 

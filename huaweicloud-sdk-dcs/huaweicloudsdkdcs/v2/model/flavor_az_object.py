@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FlavorAzObject:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class FlavorAzObject:
     }
 
     def __init__(self, capacity=None, az_codes=None):
-        """FlavorAzObject - a model defined in huaweicloud sdk"""
+        """FlavorAzObject
+
+        The model defined in huaweicloud sdk
+
+        :param capacity: 缓存容量（G Byte）。
+        :type capacity: str
+        :param az_codes: 有资源的可用区编码。
+        :type az_codes: list[str]
+        """
         
         
 
@@ -63,7 +70,7 @@ class FlavorAzObject:
         缓存容量（G Byte）。
 
         :param capacity: The capacity of this FlavorAzObject.
-        :type: str
+        :type capacity: str
         """
         self._capacity = capacity
 
@@ -85,7 +92,7 @@ class FlavorAzObject:
         有资源的可用区编码。
 
         :param az_codes: The az_codes of this FlavorAzObject.
-        :type: list[str]
+        :type az_codes: list[str]
         """
         self._az_codes = az_codes
 

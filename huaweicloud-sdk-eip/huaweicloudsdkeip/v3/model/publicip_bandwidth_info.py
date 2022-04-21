@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PublicipBandwidthInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class PublicipBandwidthInfo:
     }
 
     def __init__(self, id=None, size=None, share_type=None, charge_mode=None, name=None, billing_info=None):
-        """PublicipBandwidthInfo - a model defined in huaweicloud sdk"""
+        """PublicipBandwidthInfo
+
+        The model defined in huaweicloud sdk
+
+        :param id: 带宽ID
+        :type id: str
+        :param size: 功能描述：带宽大小 取值范围：默认5Mbit/s~2000Mbit/s
+        :type size: int
+        :param share_type: 功能说明：带宽类型,标识是否是共享带宽 取值范围：PER，WHOLE。   PER：独享带宽   WHOLE：共享带宽 约束：其中IPv6暂不支持WHOLE类型带宽。
+        :type share_type: str
+        :param charge_mode: 功能说明：按流量计费还是按带宽计费 取值范围： bandwidth：按带宽计费 traffic：按流量计费 95peak_plus：按增强型95计费
+        :type charge_mode: str
+        :param name: 功能说明：带宽名称 取值范围：1-64个字符,支持数字、字母、中文、_(下划线)、-(中划线)、.(点)
+        :type name: str
+        :param billing_info: 功能说明：账单信息。如果billinginfo不为空，说明是包周期的带宽
+        :type billing_info: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class PublicipBandwidthInfo:
         带宽ID
 
         :param id: The id of this PublicipBandwidthInfo.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -105,7 +120,7 @@ class PublicipBandwidthInfo:
         功能描述：带宽大小 取值范围：默认5Mbit/s~2000Mbit/s
 
         :param size: The size of this PublicipBandwidthInfo.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -127,7 +142,7 @@ class PublicipBandwidthInfo:
         功能说明：带宽类型,标识是否是共享带宽 取值范围：PER，WHOLE。   PER：独享带宽   WHOLE：共享带宽 约束：其中IPv6暂不支持WHOLE类型带宽。
 
         :param share_type: The share_type of this PublicipBandwidthInfo.
-        :type: str
+        :type share_type: str
         """
         self._share_type = share_type
 
@@ -149,7 +164,7 @@ class PublicipBandwidthInfo:
         功能说明：按流量计费还是按带宽计费 取值范围： bandwidth：按带宽计费 traffic：按流量计费 95peak_plus：按增强型95计费
 
         :param charge_mode: The charge_mode of this PublicipBandwidthInfo.
-        :type: str
+        :type charge_mode: str
         """
         self._charge_mode = charge_mode
 
@@ -171,7 +186,7 @@ class PublicipBandwidthInfo:
         功能说明：带宽名称 取值范围：1-64个字符,支持数字、字母、中文、_(下划线)、-(中划线)、.(点)
 
         :param name: The name of this PublicipBandwidthInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -193,7 +208,7 @@ class PublicipBandwidthInfo:
         功能说明：账单信息。如果billinginfo不为空，说明是包周期的带宽
 
         :param billing_info: The billing_info of this PublicipBandwidthInfo.
-        :type: str
+        :type billing_info: str
         """
         self._billing_info = billing_info
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DisassociateRequestThrottlingPolicyV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class DisassociateRequestThrottlingPolicyV2Response(SdkResponse):
     }
 
     def __init__(self):
-        """DisassociateRequestThrottlingPolicyV2Response - a model defined in huaweicloud sdk"""
+        """DisassociateRequestThrottlingPolicyV2Response
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(DisassociateRequestThrottlingPolicyV2Response, self).__init__()
         self.discriminator = None

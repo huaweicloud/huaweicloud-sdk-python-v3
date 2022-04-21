@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRelationResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListRelationResponse(SdkResponse):
     }
 
     def __init__(self, case_relation_list=None):
-        """ListRelationResponse - a model defined in huaweicloud sdk"""
+        """ListRelationResponse
+
+        The model defined in huaweicloud sdk
+
+        :param case_relation_list: 关联工单列表
+        :type case_relation_list: list[:class:`huaweicloudsdkosm.v2.CaseRealtionInfo`]
+        """
         
         super(ListRelationResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListRelationResponse(SdkResponse):
         关联工单列表
 
         :return: The case_relation_list of this ListRelationResponse.
-        :rtype: list[CaseRealtionInfo]
+        :rtype: list[:class:`huaweicloudsdkosm.v2.CaseRealtionInfo`]
         """
         return self._case_relation_list
 
@@ -58,7 +63,7 @@ class ListRelationResponse(SdkResponse):
         关联工单列表
 
         :param case_relation_list: The case_relation_list of this ListRelationResponse.
-        :type: list[CaseRealtionInfo]
+        :type case_relation_list: list[:class:`huaweicloudsdkosm.v2.CaseRealtionInfo`]
         """
         self._case_relation_list = case_relation_list
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Event:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Event:
     }
 
     def __init__(self, metadata=None, starts_at=None):
-        """Event - a model defined in huaweicloud sdk"""
+        """Event
+
+        The model defined in huaweicloud sdk
+
+        :param metadata: 
+        :type metadata: :class:`huaweicloudsdklts.v2.Metadata`
+        :param starts_at: 告警产生时间(时间戳)
+        :type starts_at: int
+        """
         
         
 
@@ -49,7 +56,7 @@ class Event:
 
 
         :return: The metadata of this Event.
-        :rtype: Metadata
+        :rtype: :class:`huaweicloudsdklts.v2.Metadata`
         """
         return self._metadata
 
@@ -59,7 +66,7 @@ class Event:
 
 
         :param metadata: The metadata of this Event.
-        :type: Metadata
+        :type metadata: :class:`huaweicloudsdklts.v2.Metadata`
         """
         self._metadata = metadata
 
@@ -81,7 +88,7 @@ class Event:
         告警产生时间(时间戳)
 
         :param starts_at: The starts_at of this Event.
-        :type: int
+        :type starts_at: int
         """
         self._starts_at = starts_at
 

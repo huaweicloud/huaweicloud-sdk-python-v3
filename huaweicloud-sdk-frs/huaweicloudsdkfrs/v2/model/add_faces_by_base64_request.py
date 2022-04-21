@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddFacesByBase64Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AddFacesByBase64Request:
     }
 
     def __init__(self, face_set_name=None, body=None):
-        """AddFacesByBase64Request - a model defined in huaweicloud sdk"""
+        """AddFacesByBase64Request
+
+        The model defined in huaweicloud sdk
+
+        :param face_set_name: 人脸库名称。
+        :type face_set_name: str
+        :param body: Body of the AddFacesByBase64Request
+        :type body: :class:`huaweicloudsdkfrs.v2.AddFacesBase64Req`
+        """
         
         
 
@@ -62,7 +69,7 @@ class AddFacesByBase64Request:
         人脸库名称。
 
         :param face_set_name: The face_set_name of this AddFacesByBase64Request.
-        :type: str
+        :type face_set_name: str
         """
         self._face_set_name = face_set_name
 
@@ -72,7 +79,7 @@ class AddFacesByBase64Request:
 
 
         :return: The body of this AddFacesByBase64Request.
-        :rtype: AddFacesBase64Req
+        :rtype: :class:`huaweicloudsdkfrs.v2.AddFacesBase64Req`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class AddFacesByBase64Request:
 
 
         :param body: The body of this AddFacesByBase64Request.
-        :type: AddFacesBase64Req
+        :type body: :class:`huaweicloudsdkfrs.v2.AddFacesBase64Req`
         """
         self._body = body
 

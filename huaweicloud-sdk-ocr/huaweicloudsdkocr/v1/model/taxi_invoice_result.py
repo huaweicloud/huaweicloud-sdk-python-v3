@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TaxiInvoiceResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -70,7 +69,53 @@ class TaxiInvoiceResult:
     }
 
     def __init__(self, location=None, code=None, number=None, phone_number=None, company=None, taxi_number=None, certificate_number=None, identification_number=None, date=None, boarding_time=None, alighting_time=None, time=None, unit_price=None, distance=None, waiting_time=None, fare=None, fuel_oil_surcharge=None, call_service_surcharge=None, total=None, confidence=None, text_location=None):
-        """TaxiInvoiceResult - a model defined in huaweicloud sdk"""
+        """TaxiInvoiceResult
+
+        The model defined in huaweicloud sdk
+
+        :param location: 归属地区。 
+        :type location: str
+        :param code: 发票代码。 
+        :type code: str
+        :param number: 发票号码。 
+        :type number: str
+        :param phone_number: 电话（包括电话、监督电话）。 
+        :type phone_number: str
+        :param company: 单位。 
+        :type company: str
+        :param taxi_number: 车号。 
+        :type taxi_number: str
+        :param certificate_number: 证号。 
+        :type certificate_number: str
+        :param identification_number: 识别编号。 
+        :type identification_number: str
+        :param date: 开票日期。 
+        :type date: str
+        :param boarding_time: 上车时间。 
+        :type boarding_time: str
+        :param alighting_time: 下车时间。 
+        :type alighting_time: str
+        :param time: 时间(起止时间、上下车时间)。 
+        :type time: str
+        :param unit_price: 单价。 
+        :type unit_price: str
+        :param distance: 总里程。 
+        :type distance: str
+        :param waiting_time: 等候时间。 
+        :type waiting_time: str
+        :param fare: 金额。 
+        :type fare: str
+        :param fuel_oil_surcharge: 燃油附加费。 
+        :type fuel_oil_surcharge: str
+        :param call_service_surcharge: 电调费（预约费）。 
+        :type call_service_surcharge: str
+        :param total: 实收金额。 
+        :type total: str
+        :param confidence: 相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。 
+        :type confidence: object
+        :param text_location: 对应所有在原图上识别到的字段位置信息，包含所有文字区域四个顶点的二维坐标（x,y）。采用图像坐标系，坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
+        :type text_location: object
+        """
         
         
 
@@ -158,7 +203,7 @@ class TaxiInvoiceResult:
         归属地区。 
 
         :param location: The location of this TaxiInvoiceResult.
-        :type: str
+        :type location: str
         """
         self._location = location
 
@@ -180,7 +225,7 @@ class TaxiInvoiceResult:
         发票代码。 
 
         :param code: The code of this TaxiInvoiceResult.
-        :type: str
+        :type code: str
         """
         self._code = code
 
@@ -202,7 +247,7 @@ class TaxiInvoiceResult:
         发票号码。 
 
         :param number: The number of this TaxiInvoiceResult.
-        :type: str
+        :type number: str
         """
         self._number = number
 
@@ -224,7 +269,7 @@ class TaxiInvoiceResult:
         电话（包括电话、监督电话）。 
 
         :param phone_number: The phone_number of this TaxiInvoiceResult.
-        :type: str
+        :type phone_number: str
         """
         self._phone_number = phone_number
 
@@ -246,7 +291,7 @@ class TaxiInvoiceResult:
         单位。 
 
         :param company: The company of this TaxiInvoiceResult.
-        :type: str
+        :type company: str
         """
         self._company = company
 
@@ -268,7 +313,7 @@ class TaxiInvoiceResult:
         车号。 
 
         :param taxi_number: The taxi_number of this TaxiInvoiceResult.
-        :type: str
+        :type taxi_number: str
         """
         self._taxi_number = taxi_number
 
@@ -290,7 +335,7 @@ class TaxiInvoiceResult:
         证号。 
 
         :param certificate_number: The certificate_number of this TaxiInvoiceResult.
-        :type: str
+        :type certificate_number: str
         """
         self._certificate_number = certificate_number
 
@@ -312,7 +357,7 @@ class TaxiInvoiceResult:
         识别编号。 
 
         :param identification_number: The identification_number of this TaxiInvoiceResult.
-        :type: str
+        :type identification_number: str
         """
         self._identification_number = identification_number
 
@@ -334,7 +379,7 @@ class TaxiInvoiceResult:
         开票日期。 
 
         :param date: The date of this TaxiInvoiceResult.
-        :type: str
+        :type date: str
         """
         self._date = date
 
@@ -356,7 +401,7 @@ class TaxiInvoiceResult:
         上车时间。 
 
         :param boarding_time: The boarding_time of this TaxiInvoiceResult.
-        :type: str
+        :type boarding_time: str
         """
         self._boarding_time = boarding_time
 
@@ -378,7 +423,7 @@ class TaxiInvoiceResult:
         下车时间。 
 
         :param alighting_time: The alighting_time of this TaxiInvoiceResult.
-        :type: str
+        :type alighting_time: str
         """
         self._alighting_time = alighting_time
 
@@ -400,7 +445,7 @@ class TaxiInvoiceResult:
         时间(起止时间、上下车时间)。 
 
         :param time: The time of this TaxiInvoiceResult.
-        :type: str
+        :type time: str
         """
         self._time = time
 
@@ -422,7 +467,7 @@ class TaxiInvoiceResult:
         单价。 
 
         :param unit_price: The unit_price of this TaxiInvoiceResult.
-        :type: str
+        :type unit_price: str
         """
         self._unit_price = unit_price
 
@@ -444,7 +489,7 @@ class TaxiInvoiceResult:
         总里程。 
 
         :param distance: The distance of this TaxiInvoiceResult.
-        :type: str
+        :type distance: str
         """
         self._distance = distance
 
@@ -466,7 +511,7 @@ class TaxiInvoiceResult:
         等候时间。 
 
         :param waiting_time: The waiting_time of this TaxiInvoiceResult.
-        :type: str
+        :type waiting_time: str
         """
         self._waiting_time = waiting_time
 
@@ -488,7 +533,7 @@ class TaxiInvoiceResult:
         金额。 
 
         :param fare: The fare of this TaxiInvoiceResult.
-        :type: str
+        :type fare: str
         """
         self._fare = fare
 
@@ -510,7 +555,7 @@ class TaxiInvoiceResult:
         燃油附加费。 
 
         :param fuel_oil_surcharge: The fuel_oil_surcharge of this TaxiInvoiceResult.
-        :type: str
+        :type fuel_oil_surcharge: str
         """
         self._fuel_oil_surcharge = fuel_oil_surcharge
 
@@ -532,7 +577,7 @@ class TaxiInvoiceResult:
         电调费（预约费）。 
 
         :param call_service_surcharge: The call_service_surcharge of this TaxiInvoiceResult.
-        :type: str
+        :type call_service_surcharge: str
         """
         self._call_service_surcharge = call_service_surcharge
 
@@ -554,7 +599,7 @@ class TaxiInvoiceResult:
         实收金额。 
 
         :param total: The total of this TaxiInvoiceResult.
-        :type: str
+        :type total: str
         """
         self._total = total
 
@@ -576,7 +621,7 @@ class TaxiInvoiceResult:
         相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。 
 
         :param confidence: The confidence of this TaxiInvoiceResult.
-        :type: object
+        :type confidence: object
         """
         self._confidence = confidence
 
@@ -598,7 +643,7 @@ class TaxiInvoiceResult:
         对应所有在原图上识别到的字段位置信息，包含所有文字区域四个顶点的二维坐标（x,y）。采用图像坐标系，坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
         :param text_location: The text_location of this TaxiInvoiceResult.
-        :type: object
+        :type text_location: object
         """
         self._text_location = text_location
 

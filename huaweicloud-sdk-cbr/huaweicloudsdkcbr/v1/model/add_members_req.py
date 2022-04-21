@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddMembersReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class AddMembersReq:
     }
 
     def __init__(self, members=None):
-        """AddMembersReq - a model defined in huaweicloud sdk"""
+        """AddMembersReq
+
+        The model defined in huaweicloud sdk
+
+        :param members: 列表，待添加备份共享成员的project_id。
+        :type members: list[str]
+        """
         
         
 
@@ -57,7 +62,7 @@ class AddMembersReq:
         列表，待添加备份共享成员的project_id。
 
         :param members: The members of this AddMembersReq.
-        :type: list[str]
+        :type members: list[str]
         """
         self._members = members
 

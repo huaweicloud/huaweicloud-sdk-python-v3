@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteFileRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class DeleteFileRequest:
     }
 
     def __init__(self, x_repo_auth=None, namespace=None, project=None, path=None, ref=None, message=None, sha=None):
-        """DeleteFileRequest - a model defined in huaweicloud sdk"""
+        """DeleteFileRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_repo_auth: 授权名称。
+        :type x_repo_auth: str
+        :param namespace: 组织ID。
+        :type namespace: str
+        :param project: 仓库项目ID，如果含有“/”，需要将“/”替换为“:”。
+        :type project: str
+        :param path: 文件路径，需要将“/”替换为“:”。
+        :type path: str
+        :param ref: 分支名称或者tag标签名称或者commit sha。
+        :type ref: str
+        :param message: 提交描述。
+        :type message: str
+        :param sha: 最后一次提交的commit sha值。
+        :type sha: str
+        """
         
         
 
@@ -81,7 +98,7 @@ class DeleteFileRequest:
         授权名称。
 
         :param x_repo_auth: The x_repo_auth of this DeleteFileRequest.
-        :type: str
+        :type x_repo_auth: str
         """
         self._x_repo_auth = x_repo_auth
 
@@ -103,7 +120,7 @@ class DeleteFileRequest:
         组织ID。
 
         :param namespace: The namespace of this DeleteFileRequest.
-        :type: str
+        :type namespace: str
         """
         self._namespace = namespace
 
@@ -125,7 +142,7 @@ class DeleteFileRequest:
         仓库项目ID，如果含有“/”，需要将“/”替换为“:”。
 
         :param project: The project of this DeleteFileRequest.
-        :type: str
+        :type project: str
         """
         self._project = project
 
@@ -147,7 +164,7 @@ class DeleteFileRequest:
         文件路径，需要将“/”替换为“:”。
 
         :param path: The path of this DeleteFileRequest.
-        :type: str
+        :type path: str
         """
         self._path = path
 
@@ -169,7 +186,7 @@ class DeleteFileRequest:
         分支名称或者tag标签名称或者commit sha。
 
         :param ref: The ref of this DeleteFileRequest.
-        :type: str
+        :type ref: str
         """
         self._ref = ref
 
@@ -191,7 +208,7 @@ class DeleteFileRequest:
         提交描述。
 
         :param message: The message of this DeleteFileRequest.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -213,7 +230,7 @@ class DeleteFileRequest:
         最后一次提交的commit sha值。
 
         :param sha: The sha of this DeleteFileRequest.
-        :type: str
+        :type sha: str
         """
         self._sha = sha
 

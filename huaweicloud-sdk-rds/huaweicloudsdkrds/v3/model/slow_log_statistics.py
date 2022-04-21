@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SlowLogStatistics:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class SlowLogStatistics:
     }
 
     def __init__(self, count=None, time=None, lock_time=None, rows_sent=None, rows_examined=None, database=None, users=None, query_sample=None, type=None, client_ip=None):
-        """SlowLogStatistics - a model defined in huaweicloud sdk"""
+        """SlowLogStatistics
+
+        The model defined in huaweicloud sdk
+
+        :param count: 执行次数。
+        :type count: str
+        :param time: 平均执行时间。
+        :type time: str
+        :param lock_time: 平均等待锁时间。
+        :type lock_time: str
+        :param rows_sent: 平均结果行数量。
+        :type rows_sent: int
+        :param rows_examined: 平均扫描的行数量。
+        :type rows_examined: int
+        :param database: 所属数据库。
+        :type database: str
+        :param users: 帐号。
+        :type users: str
+        :param query_sample: 执行语法。
+        :type query_sample: str
+        :param type: 语句类型。
+        :type type: str
+        :param client_ip: IP地址。
+        :type client_ip: str
+        """
         
         
 
@@ -93,7 +116,7 @@ class SlowLogStatistics:
         执行次数。
 
         :param count: The count of this SlowLogStatistics.
-        :type: str
+        :type count: str
         """
         self._count = count
 
@@ -115,7 +138,7 @@ class SlowLogStatistics:
         平均执行时间。
 
         :param time: The time of this SlowLogStatistics.
-        :type: str
+        :type time: str
         """
         self._time = time
 
@@ -137,7 +160,7 @@ class SlowLogStatistics:
         平均等待锁时间。
 
         :param lock_time: The lock_time of this SlowLogStatistics.
-        :type: str
+        :type lock_time: str
         """
         self._lock_time = lock_time
 
@@ -159,7 +182,7 @@ class SlowLogStatistics:
         平均结果行数量。
 
         :param rows_sent: The rows_sent of this SlowLogStatistics.
-        :type: int
+        :type rows_sent: int
         """
         self._rows_sent = rows_sent
 
@@ -181,7 +204,7 @@ class SlowLogStatistics:
         平均扫描的行数量。
 
         :param rows_examined: The rows_examined of this SlowLogStatistics.
-        :type: int
+        :type rows_examined: int
         """
         self._rows_examined = rows_examined
 
@@ -203,7 +226,7 @@ class SlowLogStatistics:
         所属数据库。
 
         :param database: The database of this SlowLogStatistics.
-        :type: str
+        :type database: str
         """
         self._database = database
 
@@ -225,7 +248,7 @@ class SlowLogStatistics:
         帐号。
 
         :param users: The users of this SlowLogStatistics.
-        :type: str
+        :type users: str
         """
         self._users = users
 
@@ -247,7 +270,7 @@ class SlowLogStatistics:
         执行语法。
 
         :param query_sample: The query_sample of this SlowLogStatistics.
-        :type: str
+        :type query_sample: str
         """
         self._query_sample = query_sample
 
@@ -269,7 +292,7 @@ class SlowLogStatistics:
         语句类型。
 
         :param type: The type of this SlowLogStatistics.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -291,7 +314,7 @@ class SlowLogStatistics:
         IP地址。
 
         :param client_ip: The client_ip of this SlowLogStatistics.
-        :type: str
+        :type client_ip: str
         """
         self._client_ip = client_ip
 

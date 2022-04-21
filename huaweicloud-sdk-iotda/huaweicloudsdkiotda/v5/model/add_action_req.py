@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddActionReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class AddActionReq:
     }
 
     def __init__(self, rule_id=None, channel=None, channel_detail=None):
-        """AddActionReq - a model defined in huaweicloud sdk"""
+        """AddActionReq
+
+        The model defined in huaweicloud sdk
+
+        :param rule_id: **参数说明**：规则触发条件ID，用于唯一标识一条规则触发条件，在创建规则时由物联网平台分配获得。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
+        :type rule_id: str
+        :param channel: **参数说明**：规则动作的类型。 **取值范围**： - HTTP_FORWARDING：HTTP服务消息类型。 - DIS_FORWARDING：转发DIS服务消息类型。 - OBS_FORWARDING：转发OBS服务消息类型。 - AMQP_FORWARDING：转发AMQP服务消息类型。 - DMS_KAFKA_FORWARDING：转发kafka消息类型。
+        :type channel: str
+        :param channel_detail: 
+        :type channel_detail: :class:`huaweicloudsdkiotda.v5.ChannelDetail`
+        """
         
         
 
@@ -65,7 +74,7 @@ class AddActionReq:
         **参数说明**：规则触发条件ID，用于唯一标识一条规则触发条件，在创建规则时由物联网平台分配获得。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :param rule_id: The rule_id of this AddActionReq.
-        :type: str
+        :type rule_id: str
         """
         self._rule_id = rule_id
 
@@ -87,7 +96,7 @@ class AddActionReq:
         **参数说明**：规则动作的类型。 **取值范围**： - HTTP_FORWARDING：HTTP服务消息类型。 - DIS_FORWARDING：转发DIS服务消息类型。 - OBS_FORWARDING：转发OBS服务消息类型。 - AMQP_FORWARDING：转发AMQP服务消息类型。 - DMS_KAFKA_FORWARDING：转发kafka消息类型。
 
         :param channel: The channel of this AddActionReq.
-        :type: str
+        :type channel: str
         """
         self._channel = channel
 
@@ -97,7 +106,7 @@ class AddActionReq:
 
 
         :return: The channel_detail of this AddActionReq.
-        :rtype: ChannelDetail
+        :rtype: :class:`huaweicloudsdkiotda.v5.ChannelDetail`
         """
         return self._channel_detail
 
@@ -107,7 +116,7 @@ class AddActionReq:
 
 
         :param channel_detail: The channel_detail of this AddActionReq.
-        :type: ChannelDetail
+        :type channel_detail: :class:`huaweicloudsdkiotda.v5.ChannelDetail`
         """
         self._channel_detail = channel_detail
 

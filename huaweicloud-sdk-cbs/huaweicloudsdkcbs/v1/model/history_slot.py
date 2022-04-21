@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class HistorySlot:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class HistorySlot:
     }
 
     def __init__(self, slot_name=None, slot_values=None, slot_identification=None):
-        """HistorySlot - a model defined in huaweicloud sdk"""
+        """HistorySlot
+
+        The model defined in huaweicloud sdk
+
+        :param slot_name: 槽位名称。
+        :type slot_name: str
+        :param slot_values: 槽信息。
+        :type slot_values: list[:class:`huaweicloudsdkcbs.v1.HistorySlotWord`]
+        :param slot_identification: 用户设置的槽位标识。
+        :type slot_identification: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class HistorySlot:
         槽位名称。
 
         :param slot_name: The slot_name of this HistorySlot.
-        :type: str
+        :type slot_name: str
         """
         self._slot_name = slot_name
 
@@ -77,7 +86,7 @@ class HistorySlot:
         槽信息。
 
         :return: The slot_values of this HistorySlot.
-        :rtype: list[HistorySlotWord]
+        :rtype: list[:class:`huaweicloudsdkcbs.v1.HistorySlotWord`]
         """
         return self._slot_values
 
@@ -88,7 +97,7 @@ class HistorySlot:
         槽信息。
 
         :param slot_values: The slot_values of this HistorySlot.
-        :type: list[HistorySlotWord]
+        :type slot_values: list[:class:`huaweicloudsdkcbs.v1.HistorySlotWord`]
         """
         self._slot_values = slot_values
 
@@ -110,7 +119,7 @@ class HistorySlot:
         用户设置的槽位标识。
 
         :param slot_identification: The slot_identification of this HistorySlot.
-        :type: str
+        :type slot_identification: str
         """
         self._slot_identification = slot_identification
 

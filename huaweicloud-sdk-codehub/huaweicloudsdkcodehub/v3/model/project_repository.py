@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ProjectRepository:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ProjectRepository:
     }
 
     def __init__(self, project_uuid=None, repository_uuid=None):
-        """ProjectRepository - a model defined in huaweicloud sdk"""
+        """ProjectRepository
+
+        The model defined in huaweicloud sdk
+
+        :param project_uuid: 创建项目的UUID
+        :type project_uuid: str
+        :param repository_uuid: 创建仓库的UUID
+        :type repository_uuid: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class ProjectRepository:
         创建项目的UUID
 
         :param project_uuid: The project_uuid of this ProjectRepository.
-        :type: str
+        :type project_uuid: str
         """
         self._project_uuid = project_uuid
 
@@ -85,7 +92,7 @@ class ProjectRepository:
         创建仓库的UUID
 
         :param repository_uuid: The repository_uuid of this ProjectRepository.
-        :type: str
+        :type repository_uuid: str
         """
         self._repository_uuid = repository_uuid
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDisasterRecoveryDrillNameRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateDisasterRecoveryDrillNameRequestBody:
     }
 
     def __init__(self, disaster_recovery_drill=None):
-        """UpdateDisasterRecoveryDrillNameRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateDisasterRecoveryDrillNameRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param disaster_recovery_drill: 
+        :type disaster_recovery_drill: :class:`huaweicloudsdksdrs.v1.UpdateDisasterRecoveryDrillNameRequestParams`
+        """
         
         
 
@@ -45,7 +50,7 @@ class UpdateDisasterRecoveryDrillNameRequestBody:
 
 
         :return: The disaster_recovery_drill of this UpdateDisasterRecoveryDrillNameRequestBody.
-        :rtype: UpdateDisasterRecoveryDrillNameRequestParams
+        :rtype: :class:`huaweicloudsdksdrs.v1.UpdateDisasterRecoveryDrillNameRequestParams`
         """
         return self._disaster_recovery_drill
 
@@ -55,7 +60,7 @@ class UpdateDisasterRecoveryDrillNameRequestBody:
 
 
         :param disaster_recovery_drill: The disaster_recovery_drill of this UpdateDisasterRecoveryDrillNameRequestBody.
-        :type: UpdateDisasterRecoveryDrillNameRequestParams
+        :type disaster_recovery_drill: :class:`huaweicloudsdksdrs.v1.UpdateDisasterRecoveryDrillNameRequestParams`
         """
         self._disaster_recovery_drill = disaster_recovery_drill
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PacketThresholdData:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class PacketThresholdData:
     }
 
     def __init__(self, receiving=None, receiving_default=None, sending=None, sending_default=None):
-        """PacketThresholdData - a model defined in huaweicloud sdk"""
+        """PacketThresholdData
+
+        The model defined in huaweicloud sdk
+
+        :param receiving: 自定义接收方向阈值，单位为百分比(%)
+        :type receiving: int
+        :param receiving_default: 默认接收方向阈值，单位为百分比(%)
+        :type receiving_default: int
+        :param sending: 自定义发送方向阈值，单位为百分比(%)
+        :type sending: int
+        :param sending_default: 默认发送方向阈值，单位为百分比(%)
+        :type sending_default: int
+        """
         
         
 
@@ -73,7 +84,7 @@ class PacketThresholdData:
         自定义接收方向阈值，单位为百分比(%)
 
         :param receiving: The receiving of this PacketThresholdData.
-        :type: int
+        :type receiving: int
         """
         self._receiving = receiving
 
@@ -95,7 +106,7 @@ class PacketThresholdData:
         默认接收方向阈值，单位为百分比(%)
 
         :param receiving_default: The receiving_default of this PacketThresholdData.
-        :type: int
+        :type receiving_default: int
         """
         self._receiving_default = receiving_default
 
@@ -117,7 +128,7 @@ class PacketThresholdData:
         自定义发送方向阈值，单位为百分比(%)
 
         :param sending: The sending of this PacketThresholdData.
-        :type: int
+        :type sending: int
         """
         self._sending = sending
 
@@ -139,7 +150,7 @@ class PacketThresholdData:
         默认发送方向阈值，单位为百分比(%)
 
         :param sending_default: The sending_default of this PacketThresholdData.
-        :type: int
+        :type sending_default: int
         """
         self._sending_default = sending_default
 

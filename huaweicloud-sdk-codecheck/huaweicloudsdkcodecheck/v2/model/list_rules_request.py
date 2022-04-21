@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRulesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListRulesRequest:
     }
 
     def __init__(self, rule_languages=None, rule_severity=None, offset=None, limit=None):
-        """ListRulesRequest - a model defined in huaweicloud sdk"""
+        """ListRulesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param rule_languages: 规则对应的语言
+        :type rule_languages: str
+        :param rule_severity: 缺陷等级，0致命，1严重，2一般，3提示
+        :type rule_severity: str
+        :param offset: 分页索引，偏移量
+        :type offset: int
+        :param limit: 每页显示的数量
+        :type limit: int
+        """
         
         
 
@@ -73,7 +84,7 @@ class ListRulesRequest:
         规则对应的语言
 
         :param rule_languages: The rule_languages of this ListRulesRequest.
-        :type: str
+        :type rule_languages: str
         """
         self._rule_languages = rule_languages
 
@@ -95,7 +106,7 @@ class ListRulesRequest:
         缺陷等级，0致命，1严重，2一般，3提示
 
         :param rule_severity: The rule_severity of this ListRulesRequest.
-        :type: str
+        :type rule_severity: str
         """
         self._rule_severity = rule_severity
 
@@ -117,7 +128,7 @@ class ListRulesRequest:
         分页索引，偏移量
 
         :param offset: The offset of this ListRulesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -139,7 +150,7 @@ class ListRulesRequest:
         每页显示的数量
 
         :param limit: The limit of this ListRulesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

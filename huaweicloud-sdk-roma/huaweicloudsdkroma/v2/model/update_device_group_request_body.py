@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDeviceGroupRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateDeviceGroupRequestBody:
     }
 
     def __init__(self, name=None, description=None):
-        """UpdateDeviceGroupRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateDeviceGroupRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param name: 分组名称，支持中文，英文大小写，数字，下划线和中划线,长度2-64
+        :type name: str
+        :param description: 分组描述，长度0-200
+        :type description: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateDeviceGroupRequestBody:
         分组名称，支持中文，英文大小写，数字，下划线和中划线,长度2-64
 
         :param name: The name of this UpdateDeviceGroupRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -84,7 +91,7 @@ class UpdateDeviceGroupRequestBody:
         分组描述，长度0-200
 
         :param description: The description of this UpdateDeviceGroupRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 

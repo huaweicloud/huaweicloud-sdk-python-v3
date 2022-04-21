@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowKmsTagsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowKmsTagsResponse(SdkResponse):
     }
 
     def __init__(self, tags=None, exist_tags_num=None):
-        """ShowKmsTagsResponse - a model defined in huaweicloud sdk"""
+        """ShowKmsTagsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param tags: 标签列表，key和value键值对的集合。  - key：表示标签键，一个密钥下最多包含10个key，key不能为空，不能重复，同一个key中value不能重复。key最大长度为36个字符。  - value：表示标签值。每个值最大长度43个字符，value之间为“与”的关系。
+        :type tags: list[:class:`huaweicloudsdkkms.v1.TagItem`]
+        :param exist_tags_num: 密钥的标签个数。。
+        :type exist_tags_num: int
+        """
         
         super(ShowKmsTagsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ShowKmsTagsResponse(SdkResponse):
         标签列表，key和value键值对的集合。  - key：表示标签键，一个密钥下最多包含10个key，key不能为空，不能重复，同一个key中value不能重复。key最大长度为36个字符。  - value：表示标签值。每个值最大长度43个字符，value之间为“与”的关系。
 
         :return: The tags of this ShowKmsTagsResponse.
-        :rtype: list[TagItem]
+        :rtype: list[:class:`huaweicloudsdkkms.v1.TagItem`]
         """
         return self._tags
 
@@ -63,7 +70,7 @@ class ShowKmsTagsResponse(SdkResponse):
         标签列表，key和value键值对的集合。  - key：表示标签键，一个密钥下最多包含10个key，key不能为空，不能重复，同一个key中value不能重复。key最大长度为36个字符。  - value：表示标签值。每个值最大长度43个字符，value之间为“与”的关系。
 
         :param tags: The tags of this ShowKmsTagsResponse.
-        :type: list[TagItem]
+        :type tags: list[:class:`huaweicloudsdkkms.v1.TagItem`]
         """
         self._tags = tags
 
@@ -85,7 +92,7 @@ class ShowKmsTagsResponse(SdkResponse):
         密钥的标签个数。。
 
         :param exist_tags_num: The exist_tags_num of this ShowKmsTagsResponse.
-        :type: int
+        :type exist_tags_num: int
         """
         self._exist_tags_num = exist_tags_num
 

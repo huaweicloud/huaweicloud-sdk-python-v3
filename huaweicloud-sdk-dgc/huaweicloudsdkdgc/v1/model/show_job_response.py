@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowJobResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ShowJobResponse(SdkResponse):
     }
 
     def __init__(self, name=None, nodes=None, schedule=None, params=None, directory=None, job_type=None, basic_config=None):
-        """ShowJobResponse - a model defined in huaweicloud sdk"""
+        """ShowJobResponse
+
+        The model defined in huaweicloud sdk
+
+        :param name: 
+        :type name: str
+        :param nodes: 
+        :type nodes: list[:class:`huaweicloudsdkdgc.v1.Node`]
+        :param schedule: 
+        :type schedule: :class:`huaweicloudsdkdgc.v1.Schedule`
+        :param params: 
+        :type params: list[:class:`huaweicloudsdkdgc.v1.JobParam`]
+        :param directory: 
+        :type directory: str
+        :param job_type: 
+        :type job_type: str
+        :param basic_config: 
+        :type basic_config: :class:`huaweicloudsdkdgc.v1.BasicInfo`
+        """
         
         super(ShowJobResponse, self).__init__()
 
@@ -86,7 +103,7 @@ class ShowJobResponse(SdkResponse):
 
 
         :param name: The name of this ShowJobResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -96,7 +113,7 @@ class ShowJobResponse(SdkResponse):
 
 
         :return: The nodes of this ShowJobResponse.
-        :rtype: list[Node]
+        :rtype: list[:class:`huaweicloudsdkdgc.v1.Node`]
         """
         return self._nodes
 
@@ -106,7 +123,7 @@ class ShowJobResponse(SdkResponse):
 
 
         :param nodes: The nodes of this ShowJobResponse.
-        :type: list[Node]
+        :type nodes: list[:class:`huaweicloudsdkdgc.v1.Node`]
         """
         self._nodes = nodes
 
@@ -116,7 +133,7 @@ class ShowJobResponse(SdkResponse):
 
 
         :return: The schedule of this ShowJobResponse.
-        :rtype: Schedule
+        :rtype: :class:`huaweicloudsdkdgc.v1.Schedule`
         """
         return self._schedule
 
@@ -126,7 +143,7 @@ class ShowJobResponse(SdkResponse):
 
 
         :param schedule: The schedule of this ShowJobResponse.
-        :type: Schedule
+        :type schedule: :class:`huaweicloudsdkdgc.v1.Schedule`
         """
         self._schedule = schedule
 
@@ -136,7 +153,7 @@ class ShowJobResponse(SdkResponse):
 
 
         :return: The params of this ShowJobResponse.
-        :rtype: list[JobParam]
+        :rtype: list[:class:`huaweicloudsdkdgc.v1.JobParam`]
         """
         return self._params
 
@@ -146,7 +163,7 @@ class ShowJobResponse(SdkResponse):
 
 
         :param params: The params of this ShowJobResponse.
-        :type: list[JobParam]
+        :type params: list[:class:`huaweicloudsdkdgc.v1.JobParam`]
         """
         self._params = params
 
@@ -166,7 +183,7 @@ class ShowJobResponse(SdkResponse):
 
 
         :param directory: The directory of this ShowJobResponse.
-        :type: str
+        :type directory: str
         """
         self._directory = directory
 
@@ -186,7 +203,7 @@ class ShowJobResponse(SdkResponse):
 
 
         :param job_type: The job_type of this ShowJobResponse.
-        :type: str
+        :type job_type: str
         """
         self._job_type = job_type
 
@@ -196,7 +213,7 @@ class ShowJobResponse(SdkResponse):
 
 
         :return: The basic_config of this ShowJobResponse.
-        :rtype: BasicInfo
+        :rtype: :class:`huaweicloudsdkdgc.v1.BasicInfo`
         """
         return self._basic_config
 
@@ -206,7 +223,7 @@ class ShowJobResponse(SdkResponse):
 
 
         :param basic_config: The basic_config of this ShowJobResponse.
-        :type: BasicInfo
+        :type basic_config: :class:`huaweicloudsdkdgc.v1.BasicInfo`
         """
         self._basic_config = basic_config
 

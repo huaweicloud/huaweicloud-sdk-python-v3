@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListScalingActivityLogsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListScalingActivityLogsRequest:
     }
 
     def __init__(self, scaling_group_id=None, start_time=None, end_time=None, start_number=None, limit=None):
-        """ListScalingActivityLogsRequest - a model defined in huaweicloud sdk"""
+        """ListScalingActivityLogsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param scaling_group_id: 伸缩组ID。
+        :type scaling_group_id: str
+        :param start_time: 查询的起始时间，格式是“yyyy-MM-ddThh:mm:ssZ”。
+        :type start_time: str
+        :param end_time: 查询的截止时间，格式是“yyyy-MM-ddThh:mm:ssZ”。
+        :type end_time: str
+        :param start_number: 查询的起始行号，默认为0。
+        :type start_number: int
+        :param limit: 查询记录数，默认20，最大100。
+        :type limit: int
+        """
         
         
 
@@ -77,7 +90,7 @@ class ListScalingActivityLogsRequest:
         伸缩组ID。
 
         :param scaling_group_id: The scaling_group_id of this ListScalingActivityLogsRequest.
-        :type: str
+        :type scaling_group_id: str
         """
         self._scaling_group_id = scaling_group_id
 
@@ -99,7 +112,7 @@ class ListScalingActivityLogsRequest:
         查询的起始时间，格式是“yyyy-MM-ddThh:mm:ssZ”。
 
         :param start_time: The start_time of this ListScalingActivityLogsRequest.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -121,7 +134,7 @@ class ListScalingActivityLogsRequest:
         查询的截止时间，格式是“yyyy-MM-ddThh:mm:ssZ”。
 
         :param end_time: The end_time of this ListScalingActivityLogsRequest.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -143,7 +156,7 @@ class ListScalingActivityLogsRequest:
         查询的起始行号，默认为0。
 
         :param start_number: The start_number of this ListScalingActivityLogsRequest.
-        :type: int
+        :type start_number: int
         """
         self._start_number = start_number
 
@@ -165,7 +178,7 @@ class ListScalingActivityLogsRequest:
         查询记录数，默认20，最大100。
 
         :param limit: The limit of this ListScalingActivityLogsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

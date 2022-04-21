@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ProbeExec:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ProbeExec:
     }
 
     def __init__(self, command=None):
-        """ProbeExec - a model defined in huaweicloud sdk"""
+        """ProbeExec
+
+        The model defined in huaweicloud sdk
+
+        :param command: 探针执行命令，最大长度10240个字符
+        :type command: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ProbeExec:
         探针执行命令，最大长度10240个字符
 
         :param command: The command of this ProbeExec.
-        :type: str
+        :type command: str
         """
         self._command = command
 

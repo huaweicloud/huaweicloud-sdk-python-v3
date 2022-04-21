@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowCorpAdminRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowCorpAdminRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, account=None, account_type=None):
-        """ShowCorpAdminRequest - a model defined in huaweicloud sdk"""
+        """ShowCorpAdminRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        :type x_request_id: str
+        :param accept_language: 语言参数，默认为中文zh-CN, 英文为en-US
+        :type accept_language: str
+        :param account: 企业用户账号。
+        :type account: str
+        :param account_type: 账号类型 * 0：会议账号 * 1：第三方账号。 默认0 
+        :type account_type: int
+        """
         
         
 
@@ -72,7 +83,7 @@ class ShowCorpAdminRequest:
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
 
         :param x_request_id: The x_request_id of this ShowCorpAdminRequest.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 
@@ -94,7 +105,7 @@ class ShowCorpAdminRequest:
         语言参数，默认为中文zh-CN, 英文为en-US
 
         :param accept_language: The accept_language of this ShowCorpAdminRequest.
-        :type: str
+        :type accept_language: str
         """
         self._accept_language = accept_language
 
@@ -116,7 +127,7 @@ class ShowCorpAdminRequest:
         企业用户账号。
 
         :param account: The account of this ShowCorpAdminRequest.
-        :type: str
+        :type account: str
         """
         self._account = account
 
@@ -138,7 +149,7 @@ class ShowCorpAdminRequest:
         账号类型 * 0：会议账号 * 1：第三方账号。 默认0 
 
         :param account_type: The account_type of this ShowCorpAdminRequest.
-        :type: int
+        :type account_type: int
         """
         self._account_type = account_type
 

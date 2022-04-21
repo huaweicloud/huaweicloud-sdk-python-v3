@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InstanceStatusView:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class InstanceStatusView:
     }
 
     def __init__(self, status=None, available_replica=None, replica=None, fail_detail=None, last_job_id=None, enterprise_project_id=None):
-        """InstanceStatusView - a model defined in huaweicloud sdk"""
+        """InstanceStatusView
+
+        The model defined in huaweicloud sdk
+
+        :param status: 
+        :type status: :class:`huaweicloudsdkservicestage.v2.InstanceStatusType`
+        :param available_replica: 正常实例副本数。
+        :type available_replica: int
+        :param replica: 实例副本数。
+        :type replica: int
+        :param fail_detail: 
+        :type fail_detail: :class:`huaweicloudsdkservicestage.v2.InstanceFailDetail`
+        :param last_job_id: 最近Job ID。
+        :type last_job_id: str
+        :param enterprise_project_id: 企业项目ID。
+        :type enterprise_project_id: str
+        """
         
         
 
@@ -71,7 +86,7 @@ class InstanceStatusView:
 
 
         :return: The status of this InstanceStatusView.
-        :rtype: InstanceStatusType
+        :rtype: :class:`huaweicloudsdkservicestage.v2.InstanceStatusType`
         """
         return self._status
 
@@ -81,7 +96,7 @@ class InstanceStatusView:
 
 
         :param status: The status of this InstanceStatusView.
-        :type: InstanceStatusType
+        :type status: :class:`huaweicloudsdkservicestage.v2.InstanceStatusType`
         """
         self._status = status
 
@@ -103,7 +118,7 @@ class InstanceStatusView:
         正常实例副本数。
 
         :param available_replica: The available_replica of this InstanceStatusView.
-        :type: int
+        :type available_replica: int
         """
         self._available_replica = available_replica
 
@@ -125,7 +140,7 @@ class InstanceStatusView:
         实例副本数。
 
         :param replica: The replica of this InstanceStatusView.
-        :type: int
+        :type replica: int
         """
         self._replica = replica
 
@@ -135,7 +150,7 @@ class InstanceStatusView:
 
 
         :return: The fail_detail of this InstanceStatusView.
-        :rtype: InstanceFailDetail
+        :rtype: :class:`huaweicloudsdkservicestage.v2.InstanceFailDetail`
         """
         return self._fail_detail
 
@@ -145,7 +160,7 @@ class InstanceStatusView:
 
 
         :param fail_detail: The fail_detail of this InstanceStatusView.
-        :type: InstanceFailDetail
+        :type fail_detail: :class:`huaweicloudsdkservicestage.v2.InstanceFailDetail`
         """
         self._fail_detail = fail_detail
 
@@ -167,7 +182,7 @@ class InstanceStatusView:
         最近Job ID。
 
         :param last_job_id: The last_job_id of this InstanceStatusView.
-        :type: str
+        :type last_job_id: str
         """
         self._last_job_id = last_job_id
 
@@ -189,7 +204,7 @@ class InstanceStatusView:
         企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this InstanceStatusView.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 

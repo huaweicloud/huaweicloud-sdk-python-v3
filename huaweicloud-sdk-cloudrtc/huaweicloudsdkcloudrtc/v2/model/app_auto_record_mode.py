@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AppAutoRecordMode:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class AppAutoRecordMode:
     }
 
     def __init__(self, mode=None, record_rule_id=None, update_time=None):
-        """AppAutoRecordMode - a model defined in huaweicloud sdk"""
+        """AppAutoRecordMode
+
+        The model defined in huaweicloud sdk
+
+        :param mode: 录制模式。 - AUTO_RECORD_OFF：关闭自动录制。 - AUTO_INDIVIDUAL_RECORD：开启单流自动录制，此时record_rule_id必须非空。 
+        :type mode: str
+        :param record_rule_id: 录制规则id。
+        :type record_rule_id: str
+        :param update_time: 更新时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC。 
+        :type update_time: str
+        """
         
         
 
@@ -67,7 +76,7 @@ class AppAutoRecordMode:
         录制模式。 - AUTO_RECORD_OFF：关闭自动录制。 - AUTO_INDIVIDUAL_RECORD：开启单流自动录制，此时record_rule_id必须非空。 
 
         :param mode: The mode of this AppAutoRecordMode.
-        :type: str
+        :type mode: str
         """
         self._mode = mode
 
@@ -89,7 +98,7 @@ class AppAutoRecordMode:
         录制规则id。
 
         :param record_rule_id: The record_rule_id of this AppAutoRecordMode.
-        :type: str
+        :type record_rule_id: str
         """
         self._record_rule_id = record_rule_id
 
@@ -111,7 +120,7 @@ class AppAutoRecordMode:
         更新时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC。 
 
         :param update_time: The update_time of this AppAutoRecordMode.
-        :type: str
+        :type update_time: str
         """
         self._update_time = update_time
 

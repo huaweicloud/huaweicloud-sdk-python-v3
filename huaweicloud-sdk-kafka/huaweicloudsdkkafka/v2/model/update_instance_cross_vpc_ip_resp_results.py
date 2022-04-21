@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateInstanceCrossVpcIpRespResults:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateInstanceCrossVpcIpRespResults:
     }
 
     def __init__(self, advertised_ip=None, success=None, ip=None):
-        """UpdateInstanceCrossVpcIpRespResults - a model defined in huaweicloud sdk"""
+        """UpdateInstanceCrossVpcIpRespResults
+
+        The model defined in huaweicloud sdk
+
+        :param advertised_ip: advertised.listeners IP/域名。
+        :type advertised_ip: str
+        :param success: 修改broker跨VPC访问的状态。
+        :type success: bool
+        :param ip: listeners IP。
+        :type ip: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class UpdateInstanceCrossVpcIpRespResults:
         advertised.listeners IP/域名。
 
         :param advertised_ip: The advertised_ip of this UpdateInstanceCrossVpcIpRespResults.
-        :type: str
+        :type advertised_ip: str
         """
         self._advertised_ip = advertised_ip
 
@@ -90,7 +99,7 @@ class UpdateInstanceCrossVpcIpRespResults:
         修改broker跨VPC访问的状态。
 
         :param success: The success of this UpdateInstanceCrossVpcIpRespResults.
-        :type: bool
+        :type success: bool
         """
         self._success = success
 
@@ -112,7 +121,7 @@ class UpdateInstanceCrossVpcIpRespResults:
         listeners IP。
 
         :param ip: The ip of this UpdateInstanceCrossVpcIpRespResults.
-        :type: str
+        :type ip: str
         """
         self._ip = ip
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestoreSnapshotReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class RestoreSnapshotReq:
     }
 
     def __init__(self, target_cluster=None, indices=None, rename_pattern=None, rename_replacement=None):
-        """RestoreSnapshotReq - a model defined in huaweicloud sdk"""
+        """RestoreSnapshotReq
+
+        The model defined in huaweicloud sdk
+
+        :param target_cluster: 快照要恢复到的集群的ID。
+        :type target_cluster: str
+        :param indices: 指定要恢复的索引名称，多个索引用逗号隔开，默认恢复所有索引。支持使用“\\*”匹配多个索引，例如：2018-06\\*，表示恢复名称前缀是2018-06的所有索引的数据。  0～1024个字符，不能包含空格和大写字母，且不能包含\\\&quot;\\\\&lt;|&gt;/?特殊字符。
+        :type indices: str
+        :param rename_pattern: 匹配要恢复的索引规则，最大支持1024个字符。根据此处定义的过滤条件去恢复符合条件的索引，过滤条件请使用正则表达式。  0～1024个字符，不能包含空格和大写字母，且不能包含\\\&quot;\\\\&lt;|&gt;/?,特殊字符。
+        :type rename_pattern: str
+        :param rename_replacement: 索引重命名的规则。0～1024个字符，不能包含空格和大写字母，且不能包含\\\&quot;\\\\&lt;|&gt;/?,特殊字符。例如，“restored_index_$1”表示在所有恢复的索引名称前面加上“restored_”。  设置renameReplacement参数时，renamePattern和该参数必须同时设置才能生效。
+        :type rename_replacement: str
+        """
         
         
 
@@ -72,7 +83,7 @@ class RestoreSnapshotReq:
         快照要恢复到的集群的ID。
 
         :param target_cluster: The target_cluster of this RestoreSnapshotReq.
-        :type: str
+        :type target_cluster: str
         """
         self._target_cluster = target_cluster
 
@@ -94,7 +105,7 @@ class RestoreSnapshotReq:
         指定要恢复的索引名称，多个索引用逗号隔开，默认恢复所有索引。支持使用“\\*”匹配多个索引，例如：2018-06\\*，表示恢复名称前缀是2018-06的所有索引的数据。  0～1024个字符，不能包含空格和大写字母，且不能包含\\\"\\\\<|>/?特殊字符。
 
         :param indices: The indices of this RestoreSnapshotReq.
-        :type: str
+        :type indices: str
         """
         self._indices = indices
 
@@ -116,7 +127,7 @@ class RestoreSnapshotReq:
         匹配要恢复的索引规则，最大支持1024个字符。根据此处定义的过滤条件去恢复符合条件的索引，过滤条件请使用正则表达式。  0～1024个字符，不能包含空格和大写字母，且不能包含\\\"\\\\<|>/?,特殊字符。
 
         :param rename_pattern: The rename_pattern of this RestoreSnapshotReq.
-        :type: str
+        :type rename_pattern: str
         """
         self._rename_pattern = rename_pattern
 
@@ -138,7 +149,7 @@ class RestoreSnapshotReq:
         索引重命名的规则。0～1024个字符，不能包含空格和大写字母，且不能包含\\\"\\\\<|>/?,特殊字符。例如，“restored_index_$1”表示在所有恢复的索引名称前面加上“restored_”。  设置renameReplacement参数时，renamePattern和该参数必须同时设置才能生效。
 
         :param rename_replacement: The rename_replacement of this RestoreSnapshotReq.
-        :type: str
+        :type rename_replacement: str
         """
         self._rename_replacement = rename_replacement
 

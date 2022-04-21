@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UserAccountVO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class UserAccountVO:
     }
 
     def __init__(self, id=None, account=None, comment=None, is_transfer=None, privileges=None, password=None, is_set_password=None, roles=None, selected=None):
-        """UserAccountVO - a model defined in huaweicloud sdk"""
+        """UserAccountVO
+
+        The model defined in huaweicloud sdk
+
+        :param id: 用户账户ID。
+        :type id: str
+        :param account: 用户
+        :type account: str
+        :param comment: 说明
+        :type comment: str
+        :param is_transfer: 是否支持迁移
+        :type is_transfer: bool
+        :param privileges: 权限列表
+        :type privileges: list[str]
+        :param password: 密码
+        :type password: str
+        :param is_set_password: 是否重置密码。
+        :type is_set_password: bool
+        :param roles: 角色
+        :type roles: list[str]
+        :param selected: 是否选择。
+        :type selected: bool
+        """
         
         
 
@@ -93,7 +114,7 @@ class UserAccountVO:
         用户账户ID。
 
         :param id: The id of this UserAccountVO.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -115,7 +136,7 @@ class UserAccountVO:
         用户
 
         :param account: The account of this UserAccountVO.
-        :type: str
+        :type account: str
         """
         self._account = account
 
@@ -137,7 +158,7 @@ class UserAccountVO:
         说明
 
         :param comment: The comment of this UserAccountVO.
-        :type: str
+        :type comment: str
         """
         self._comment = comment
 
@@ -159,7 +180,7 @@ class UserAccountVO:
         是否支持迁移
 
         :param is_transfer: The is_transfer of this UserAccountVO.
-        :type: bool
+        :type is_transfer: bool
         """
         self._is_transfer = is_transfer
 
@@ -181,7 +202,7 @@ class UserAccountVO:
         权限列表
 
         :param privileges: The privileges of this UserAccountVO.
-        :type: list[str]
+        :type privileges: list[str]
         """
         self._privileges = privileges
 
@@ -203,7 +224,7 @@ class UserAccountVO:
         密码
 
         :param password: The password of this UserAccountVO.
-        :type: str
+        :type password: str
         """
         self._password = password
 
@@ -225,7 +246,7 @@ class UserAccountVO:
         是否重置密码。
 
         :param is_set_password: The is_set_password of this UserAccountVO.
-        :type: bool
+        :type is_set_password: bool
         """
         self._is_set_password = is_set_password
 
@@ -247,7 +268,7 @@ class UserAccountVO:
         角色
 
         :param roles: The roles of this UserAccountVO.
-        :type: list[str]
+        :type roles: list[str]
         """
         self._roles = roles
 
@@ -269,7 +290,7 @@ class UserAccountVO:
         是否选择。
 
         :param selected: The selected of this UserAccountVO.
-        :type: bool
+        :type selected: bool
         """
         self._selected = selected
 

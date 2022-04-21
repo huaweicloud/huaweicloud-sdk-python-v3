@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ReplicationRecordGet:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class ReplicationRecordGet:
     }
 
     def __init__(self, created_at=None, destination_backup_id=None, destination_checkpoint_id=None, destination_project_id=None, destination_region=None, destination_vault_id=None, extra_info=None, id=None, source_backup_id=None, source_checkpoint_id=None, source_project_id=None, source_region=None, status=None, vault_id=None):
-        """ReplicationRecordGet - a model defined in huaweicloud sdk"""
+        """ReplicationRecordGet
+
+        The model defined in huaweicloud sdk
+
+        :param created_at: 复制的开始时间
+        :type created_at: str
+        :param destination_backup_id: 复制的目的备份ID
+        :type destination_backup_id: str
+        :param destination_checkpoint_id: 复制的目的备份记录ID
+        :type destination_checkpoint_id: str
+        :param destination_project_id: 复制的目标项目ID
+        :type destination_project_id: str
+        :param destination_region: 复制的目标区域
+        :type destination_region: str
+        :param destination_vault_id: 目标存储库ID
+        :type destination_vault_id: str
+        :param extra_info: 
+        :type extra_info: :class:`huaweicloudsdkcbr.v1.ReplicationRecordsExtraInfo`
+        :param id: 复制记录ID
+        :type id: str
+        :param source_backup_id: 复制的源备份ID
+        :type source_backup_id: str
+        :param source_checkpoint_id: 复制的源备份记录ID
+        :type source_checkpoint_id: str
+        :param source_project_id: 复制的源项目ID
+        :type source_project_id: str
+        :param source_region: 复制的源区域
+        :type source_region: str
+        :param status: 复制的状态
+        :type status: str
+        :param vault_id: 备份所在的存储库ID
+        :type vault_id: str
+        """
         
         
 
@@ -122,7 +153,7 @@ class ReplicationRecordGet:
         复制的开始时间
 
         :param created_at: The created_at of this ReplicationRecordGet.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -144,7 +175,7 @@ class ReplicationRecordGet:
         复制的目的备份ID
 
         :param destination_backup_id: The destination_backup_id of this ReplicationRecordGet.
-        :type: str
+        :type destination_backup_id: str
         """
         self._destination_backup_id = destination_backup_id
 
@@ -166,7 +197,7 @@ class ReplicationRecordGet:
         复制的目的备份记录ID
 
         :param destination_checkpoint_id: The destination_checkpoint_id of this ReplicationRecordGet.
-        :type: str
+        :type destination_checkpoint_id: str
         """
         self._destination_checkpoint_id = destination_checkpoint_id
 
@@ -188,7 +219,7 @@ class ReplicationRecordGet:
         复制的目标项目ID
 
         :param destination_project_id: The destination_project_id of this ReplicationRecordGet.
-        :type: str
+        :type destination_project_id: str
         """
         self._destination_project_id = destination_project_id
 
@@ -210,7 +241,7 @@ class ReplicationRecordGet:
         复制的目标区域
 
         :param destination_region: The destination_region of this ReplicationRecordGet.
-        :type: str
+        :type destination_region: str
         """
         self._destination_region = destination_region
 
@@ -232,7 +263,7 @@ class ReplicationRecordGet:
         目标存储库ID
 
         :param destination_vault_id: The destination_vault_id of this ReplicationRecordGet.
-        :type: str
+        :type destination_vault_id: str
         """
         self._destination_vault_id = destination_vault_id
 
@@ -242,7 +273,7 @@ class ReplicationRecordGet:
 
 
         :return: The extra_info of this ReplicationRecordGet.
-        :rtype: ReplicationRecordsExtraInfo
+        :rtype: :class:`huaweicloudsdkcbr.v1.ReplicationRecordsExtraInfo`
         """
         return self._extra_info
 
@@ -252,7 +283,7 @@ class ReplicationRecordGet:
 
 
         :param extra_info: The extra_info of this ReplicationRecordGet.
-        :type: ReplicationRecordsExtraInfo
+        :type extra_info: :class:`huaweicloudsdkcbr.v1.ReplicationRecordsExtraInfo`
         """
         self._extra_info = extra_info
 
@@ -274,7 +305,7 @@ class ReplicationRecordGet:
         复制记录ID
 
         :param id: The id of this ReplicationRecordGet.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -296,7 +327,7 @@ class ReplicationRecordGet:
         复制的源备份ID
 
         :param source_backup_id: The source_backup_id of this ReplicationRecordGet.
-        :type: str
+        :type source_backup_id: str
         """
         self._source_backup_id = source_backup_id
 
@@ -318,7 +349,7 @@ class ReplicationRecordGet:
         复制的源备份记录ID
 
         :param source_checkpoint_id: The source_checkpoint_id of this ReplicationRecordGet.
-        :type: str
+        :type source_checkpoint_id: str
         """
         self._source_checkpoint_id = source_checkpoint_id
 
@@ -340,7 +371,7 @@ class ReplicationRecordGet:
         复制的源项目ID
 
         :param source_project_id: The source_project_id of this ReplicationRecordGet.
-        :type: str
+        :type source_project_id: str
         """
         self._source_project_id = source_project_id
 
@@ -362,7 +393,7 @@ class ReplicationRecordGet:
         复制的源区域
 
         :param source_region: The source_region of this ReplicationRecordGet.
-        :type: str
+        :type source_region: str
         """
         self._source_region = source_region
 
@@ -384,7 +415,7 @@ class ReplicationRecordGet:
         复制的状态
 
         :param status: The status of this ReplicationRecordGet.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -406,7 +437,7 @@ class ReplicationRecordGet:
         备份所在的存储库ID
 
         :param vault_id: The vault_id of this ReplicationRecordGet.
-        :type: str
+        :type vault_id: str
         """
         self._vault_id = vault_id
 

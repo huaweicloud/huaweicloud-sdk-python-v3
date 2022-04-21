@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RecallFiled:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RecallFiled:
     }
 
     def __init__(self, name=None, value=None):
-        """RecallFiled - a model defined in huaweicloud sdk"""
+        """RecallFiled
+
+        The model defined in huaweicloud sdk
+
+        :param name: 字段名称。
+        :type name: str
+        :param value: 使用字段值的个数。
+        :type value: int
+        """
         
         
 
@@ -63,7 +70,7 @@ class RecallFiled:
         字段名称。
 
         :param name: The name of this RecallFiled.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -85,7 +92,7 @@ class RecallFiled:
         使用字段值的个数。
 
         :param value: The value of this RecallFiled.
-        :type: int
+        :type value: int
         """
         self._value = value
 

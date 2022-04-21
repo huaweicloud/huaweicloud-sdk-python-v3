@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateRuleRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateRuleRequest:
     }
 
     def __init__(self, instance_id=None, rule_id=None, body=None):
-        """UpdateRuleRequest - a model defined in huaweicloud sdk"""
+        """UpdateRuleRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param rule_id: 规则ID
+        :type rule_id: str
+        :param body: Body of the UpdateRuleRequest
+        :type body: :class:`huaweicloudsdkroma.v2.UpdateRuleRequestBody`
+        """
         
         
 
@@ -66,7 +75,7 @@ class UpdateRuleRequest:
         实例ID
 
         :param instance_id: The instance_id of this UpdateRuleRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -88,7 +97,7 @@ class UpdateRuleRequest:
         规则ID
 
         :param rule_id: The rule_id of this UpdateRuleRequest.
-        :type: str
+        :type rule_id: str
         """
         self._rule_id = rule_id
 
@@ -98,7 +107,7 @@ class UpdateRuleRequest:
 
 
         :return: The body of this UpdateRuleRequest.
-        :rtype: UpdateRuleRequestBody
+        :rtype: :class:`huaweicloudsdkroma.v2.UpdateRuleRequestBody`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class UpdateRuleRequest:
 
 
         :param body: The body of this UpdateRuleRequest.
-        :type: UpdateRuleRequestBody
+        :type body: :class:`huaweicloudsdkroma.v2.UpdateRuleRequestBody`
         """
         self._body = body
 

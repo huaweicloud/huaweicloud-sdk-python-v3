@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LdApiScript:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class LdApiScript:
     }
 
     def __init__(self, ds_id=None, ds_name=None, ds_type=None, type=None, object_name=None, content=None, enable_result_paging=None, enable_preparestatement=None, created_time=None, modified_time=None):
-        """LdApiScript - a model defined in huaweicloud sdk"""
+        """LdApiScript
+
+        The model defined in huaweicloud sdk
+
+        :param ds_id: 数据源编号，当api_type &#x3D; data时，必选
+        :type ds_id: str
+        :param ds_name: 数据源名称
+        :type ds_name: str
+        :param ds_type: 数据源类型： - oracle：oracle数据源类型 - mysql：mysql数据源类型 - mongodb：mongodb数据源类型 - redis：redis数据源类型 - postgresql：postgresql数据源类型 - hive：hive数据源类型 - mssql：sqlserver数据源类型 - sqlserver：sqlserver数据源类型 - gauss200：gauss200数据源类型 - dws：dws数据源类型 - gauss100：gauss100数据源类型 - zenith：zenith数据源类型
+        :type ds_type: str
+        :param type: 脚本类型 - SQL：sql语句 - SP：存储过程 
+        :type type: str
+        :param object_name: 返回对象。  当api_type &#x3D; data时，必选
+        :type object_name: str
+        :param content: API脚本内容  请对脚本进行base64编码
+        :type content: str
+        :param enable_result_paging: 数据脚本是否结果分页，当api_type &#x3D; data时有效
+        :type enable_result_paging: bool
+        :param enable_preparestatement: 数据脚本是否预编译，当api_type &#x3D; data时有效
+        :type enable_preparestatement: bool
+        :param created_time: 后端API脚本创建时间
+        :type created_time: datetime
+        :param modified_time: 后端API脚本修改时间
+        :type modified_time: datetime
+        """
         
         
 
@@ -102,7 +125,7 @@ class LdApiScript:
         数据源编号，当api_type = data时，必选
 
         :param ds_id: The ds_id of this LdApiScript.
-        :type: str
+        :type ds_id: str
         """
         self._ds_id = ds_id
 
@@ -124,7 +147,7 @@ class LdApiScript:
         数据源名称
 
         :param ds_name: The ds_name of this LdApiScript.
-        :type: str
+        :type ds_name: str
         """
         self._ds_name = ds_name
 
@@ -146,7 +169,7 @@ class LdApiScript:
         数据源类型： - oracle：oracle数据源类型 - mysql：mysql数据源类型 - mongodb：mongodb数据源类型 - redis：redis数据源类型 - postgresql：postgresql数据源类型 - hive：hive数据源类型 - mssql：sqlserver数据源类型 - sqlserver：sqlserver数据源类型 - gauss200：gauss200数据源类型 - dws：dws数据源类型 - gauss100：gauss100数据源类型 - zenith：zenith数据源类型
 
         :param ds_type: The ds_type of this LdApiScript.
-        :type: str
+        :type ds_type: str
         """
         self._ds_type = ds_type
 
@@ -168,7 +191,7 @@ class LdApiScript:
         脚本类型 - SQL：sql语句 - SP：存储过程 
 
         :param type: The type of this LdApiScript.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -190,7 +213,7 @@ class LdApiScript:
         返回对象。  当api_type = data时，必选
 
         :param object_name: The object_name of this LdApiScript.
-        :type: str
+        :type object_name: str
         """
         self._object_name = object_name
 
@@ -212,7 +235,7 @@ class LdApiScript:
         API脚本内容  请对脚本进行base64编码
 
         :param content: The content of this LdApiScript.
-        :type: str
+        :type content: str
         """
         self._content = content
 
@@ -234,7 +257,7 @@ class LdApiScript:
         数据脚本是否结果分页，当api_type = data时有效
 
         :param enable_result_paging: The enable_result_paging of this LdApiScript.
-        :type: bool
+        :type enable_result_paging: bool
         """
         self._enable_result_paging = enable_result_paging
 
@@ -256,7 +279,7 @@ class LdApiScript:
         数据脚本是否预编译，当api_type = data时有效
 
         :param enable_preparestatement: The enable_preparestatement of this LdApiScript.
-        :type: bool
+        :type enable_preparestatement: bool
         """
         self._enable_preparestatement = enable_preparestatement
 
@@ -278,7 +301,7 @@ class LdApiScript:
         后端API脚本创建时间
 
         :param created_time: The created_time of this LdApiScript.
-        :type: datetime
+        :type created_time: datetime
         """
         self._created_time = created_time
 
@@ -300,7 +323,7 @@ class LdApiScript:
         后端API脚本修改时间
 
         :param modified_time: The modified_time of this LdApiScript.
-        :type: datetime
+        :type modified_time: datetime
         """
         self._modified_time = modified_time
 

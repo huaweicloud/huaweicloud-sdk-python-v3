@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchImportConfigsRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchImportConfigsRequestBody:
     }
 
     def __init__(self, configs=None):
-        """BatchImportConfigsRequestBody - a model defined in huaweicloud sdk"""
+        """BatchImportConfigsRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param configs: 南向IA配置项列表
+        :type configs: list[:class:`huaweicloudsdkiotedge.v2.BatchImportConfigRequestBody`]
+        """
         
         
 
@@ -47,7 +52,7 @@ class BatchImportConfigsRequestBody:
         南向IA配置项列表
 
         :return: The configs of this BatchImportConfigsRequestBody.
-        :rtype: list[BatchImportConfigRequestBody]
+        :rtype: list[:class:`huaweicloudsdkiotedge.v2.BatchImportConfigRequestBody`]
         """
         return self._configs
 
@@ -58,7 +63,7 @@ class BatchImportConfigsRequestBody:
         南向IA配置项列表
 
         :param configs: The configs of this BatchImportConfigsRequestBody.
-        :type: list[BatchImportConfigRequestBody]
+        :type configs: list[:class:`huaweicloudsdkiotedge.v2.BatchImportConfigRequestBody`]
         """
         self._configs = configs
 

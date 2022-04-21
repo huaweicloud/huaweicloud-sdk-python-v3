@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CheckMd5DuplicationResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CheckMd5DuplicationResponse(SdkResponse):
     }
 
     def __init__(self, is_duplicated=None, asset_ids=None):
-        """CheckMd5DuplicationResponse - a model defined in huaweicloud sdk"""
+        """CheckMd5DuplicationResponse
+
+        The model defined in huaweicloud sdk
+
+        :param is_duplicated: 是否重复。  取值如下： - 0：表示不重复。 - 1：表示重复。
+        :type is_duplicated: int
+        :param asset_ids: 重复的媒资ID
+        :type asset_ids: list[str]
+        """
         
         super(CheckMd5DuplicationResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class CheckMd5DuplicationResponse(SdkResponse):
         是否重复。  取值如下： - 0：表示不重复。 - 1：表示重复。
 
         :param is_duplicated: The is_duplicated of this CheckMd5DuplicationResponse.
-        :type: int
+        :type is_duplicated: int
         """
         self._is_duplicated = is_duplicated
 
@@ -85,7 +92,7 @@ class CheckMd5DuplicationResponse(SdkResponse):
         重复的媒资ID
 
         :param asset_ids: The asset_ids of this CheckMd5DuplicationResponse.
-        :type: list[str]
+        :type asset_ids: list[str]
         """
         self._asset_ids = asset_ids
 

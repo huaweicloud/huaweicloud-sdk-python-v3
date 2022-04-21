@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateRequestPropertyRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CreateRequestPropertyRequest:
     }
 
     def __init__(self, instance_id=None, service_id=None, command_id=None, body=None):
-        """CreateRequestPropertyRequest - a model defined in huaweicloud sdk"""
+        """CreateRequestPropertyRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param service_id: 服务ID
+        :type service_id: str
+        :param command_id: 命令ID
+        :type command_id: int
+        :param body: Body of the CreateRequestPropertyRequest
+        :type body: :class:`huaweicloudsdkroma.v2.CreatePropertyRequestBody`
+        """
         
         
 
@@ -70,7 +81,7 @@ class CreateRequestPropertyRequest:
         实例ID
 
         :param instance_id: The instance_id of this CreateRequestPropertyRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -92,7 +103,7 @@ class CreateRequestPropertyRequest:
         服务ID
 
         :param service_id: The service_id of this CreateRequestPropertyRequest.
-        :type: str
+        :type service_id: str
         """
         self._service_id = service_id
 
@@ -114,7 +125,7 @@ class CreateRequestPropertyRequest:
         命令ID
 
         :param command_id: The command_id of this CreateRequestPropertyRequest.
-        :type: int
+        :type command_id: int
         """
         self._command_id = command_id
 
@@ -124,7 +135,7 @@ class CreateRequestPropertyRequest:
 
 
         :return: The body of this CreateRequestPropertyRequest.
-        :rtype: CreatePropertyRequestBody
+        :rtype: :class:`huaweicloudsdkroma.v2.CreatePropertyRequestBody`
         """
         return self._body
 
@@ -134,7 +145,7 @@ class CreateRequestPropertyRequest:
 
 
         :param body: The body of this CreateRequestPropertyRequest.
-        :type: CreatePropertyRequestBody
+        :type body: :class:`huaweicloudsdkroma.v2.CreatePropertyRequestBody`
         """
         self._body = body
 

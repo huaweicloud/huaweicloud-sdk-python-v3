@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class JudgementResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class JudgementResult:
     }
 
     def __init__(self, output=None, file_id=None, image_id=None, case_count=None, executed_count=None, testcases=None):
-        """JudgementResult - a model defined in huaweicloud sdk"""
+        """JudgementResult
+
+        The model defined in huaweicloud sdk
+
+        :param output: 标准类型输出结果
+        :type output: str
+        :param file_id: 文件形式输出的文件id，可根据文件id下载详情
+        :type file_id: str
+        :param image_id: 图片形式输出的图片id，可根据图片id下载详情
+        :type image_id: str
+        :param case_count: 用例形式输出的用例总个数
+        :type case_count: int
+        :param executed_count: 用例形式输出的已执行用例的个数
+        :type executed_count: int
+        :param testcases: 用例形式输出的已执行用例的结果
+        :type testcases: list[:class:`huaweicloudsdkclassroom.v3.JudgementCaseResult`]
+        """
         
         
 
@@ -77,7 +92,7 @@ class JudgementResult:
         标准类型输出结果
 
         :param output: The output of this JudgementResult.
-        :type: str
+        :type output: str
         """
         self._output = output
 
@@ -99,7 +114,7 @@ class JudgementResult:
         文件形式输出的文件id，可根据文件id下载详情
 
         :param file_id: The file_id of this JudgementResult.
-        :type: str
+        :type file_id: str
         """
         self._file_id = file_id
 
@@ -121,7 +136,7 @@ class JudgementResult:
         图片形式输出的图片id，可根据图片id下载详情
 
         :param image_id: The image_id of this JudgementResult.
-        :type: str
+        :type image_id: str
         """
         self._image_id = image_id
 
@@ -143,7 +158,7 @@ class JudgementResult:
         用例形式输出的用例总个数
 
         :param case_count: The case_count of this JudgementResult.
-        :type: int
+        :type case_count: int
         """
         self._case_count = case_count
 
@@ -165,7 +180,7 @@ class JudgementResult:
         用例形式输出的已执行用例的个数
 
         :param executed_count: The executed_count of this JudgementResult.
-        :type: int
+        :type executed_count: int
         """
         self._executed_count = executed_count
 
@@ -176,7 +191,7 @@ class JudgementResult:
         用例形式输出的已执行用例的结果
 
         :return: The testcases of this JudgementResult.
-        :rtype: list[JudgementCaseResult]
+        :rtype: list[:class:`huaweicloudsdkclassroom.v3.JudgementCaseResult`]
         """
         return self._testcases
 
@@ -187,7 +202,7 @@ class JudgementResult:
         用例形式输出的已执行用例的结果
 
         :param testcases: The testcases of this JudgementResult.
-        :type: list[JudgementCaseResult]
+        :type testcases: list[:class:`huaweicloudsdkclassroom.v3.JudgementCaseResult`]
         """
         self._testcases = testcases
 

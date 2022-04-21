@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteAlarmRuleRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteAlarmRuleRequest:
     }
 
     def __init__(self, alarm_rule_id=None):
-        """DeleteAlarmRuleRequest - a model defined in huaweicloud sdk"""
+        """DeleteAlarmRuleRequest
+
+        The model defined in huaweicloud sdk
+
+        :param alarm_rule_id: 阈值规则ID。
+        :type alarm_rule_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteAlarmRuleRequest:
         阈值规则ID。
 
         :param alarm_rule_id: The alarm_rule_id of this DeleteAlarmRuleRequest.
-        :type: str
+        :type alarm_rule_id: str
         """
         self._alarm_rule_id = alarm_rule_id
 

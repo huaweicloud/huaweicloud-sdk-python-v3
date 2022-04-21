@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InstanceGroupListInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class InstanceGroupListInfo:
     }
 
     def __init__(self, group_id=None, group_name=None, replication_list=None):
-        """InstanceGroupListInfo - a model defined in huaweicloud sdk"""
+        """InstanceGroupListInfo
+
+        The model defined in huaweicloud sdk
+
+        :param group_id: 分片id
+        :type group_id: str
+        :param group_name: 分片名称
+        :type group_name: str
+        :param replication_list: 每个分片包含的副本列表。
+        :type replication_list: list[:class:`huaweicloudsdkdcs.v2.InstanceReplicationListInfo`]
+        """
         
         
 
@@ -68,7 +77,7 @@ class InstanceGroupListInfo:
         分片id
 
         :param group_id: The group_id of this InstanceGroupListInfo.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -90,7 +99,7 @@ class InstanceGroupListInfo:
         分片名称
 
         :param group_name: The group_name of this InstanceGroupListInfo.
-        :type: str
+        :type group_name: str
         """
         self._group_name = group_name
 
@@ -101,7 +110,7 @@ class InstanceGroupListInfo:
         每个分片包含的副本列表。
 
         :return: The replication_list of this InstanceGroupListInfo.
-        :rtype: list[InstanceReplicationListInfo]
+        :rtype: list[:class:`huaweicloudsdkdcs.v2.InstanceReplicationListInfo`]
         """
         return self._replication_list
 
@@ -112,7 +121,7 @@ class InstanceGroupListInfo:
         每个分片包含的副本列表。
 
         :param replication_list: The replication_list of this InstanceGroupListInfo.
-        :type: list[InstanceReplicationListInfo]
+        :type replication_list: list[:class:`huaweicloudsdkdcs.v2.InstanceReplicationListInfo`]
         """
         self._replication_list = replication_list
 

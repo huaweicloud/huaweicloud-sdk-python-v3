@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchDeleteLoadbalancerTagsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchDeleteLoadbalancerTagsRequest:
     }
 
     def __init__(self, loadbalancer_id=None, body=None):
-        """BatchDeleteLoadbalancerTagsRequest - a model defined in huaweicloud sdk"""
+        """BatchDeleteLoadbalancerTagsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param loadbalancer_id: 负载均衡器ID。
+        :type loadbalancer_id: str
+        :param body: Body of the BatchDeleteLoadbalancerTagsRequest
+        :type body: :class:`huaweicloudsdkelb.v2.BatchDeleteLoadbalancerTagsRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class BatchDeleteLoadbalancerTagsRequest:
         负载均衡器ID。
 
         :param loadbalancer_id: The loadbalancer_id of this BatchDeleteLoadbalancerTagsRequest.
-        :type: str
+        :type loadbalancer_id: str
         """
         self._loadbalancer_id = loadbalancer_id
 
@@ -72,7 +79,7 @@ class BatchDeleteLoadbalancerTagsRequest:
 
 
         :return: The body of this BatchDeleteLoadbalancerTagsRequest.
-        :rtype: BatchDeleteLoadbalancerTagsRequestBody
+        :rtype: :class:`huaweicloudsdkelb.v2.BatchDeleteLoadbalancerTagsRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class BatchDeleteLoadbalancerTagsRequest:
 
 
         :param body: The body of this BatchDeleteLoadbalancerTagsRequest.
-        :type: BatchDeleteLoadbalancerTagsRequestBody
+        :type body: :class:`huaweicloudsdkelb.v2.BatchDeleteLoadbalancerTagsRequestBody`
         """
         self._body = body
 

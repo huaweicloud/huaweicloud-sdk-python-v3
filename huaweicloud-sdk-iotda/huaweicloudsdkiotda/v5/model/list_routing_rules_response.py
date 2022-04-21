@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRoutingRulesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListRoutingRulesResponse(SdkResponse):
     }
 
     def __init__(self, rules=None, count=None, marker=None):
-        """ListRoutingRulesResponse - a model defined in huaweicloud sdk"""
+        """ListRoutingRulesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param rules: 规则条件信息列表。
+        :type rules: list[:class:`huaweicloudsdkiotda.v5.RoutingRule`]
+        :param count: 满足查询条件的记录总数。
+        :type count: int
+        :param marker: 本次分页查询结果中最后一条记录的ID，可在下一次分页查询时使用。
+        :type marker: str
+        """
         
         super(ListRoutingRulesResponse, self).__init__()
 
@@ -57,7 +66,7 @@ class ListRoutingRulesResponse(SdkResponse):
         规则条件信息列表。
 
         :return: The rules of this ListRoutingRulesResponse.
-        :rtype: list[RoutingRule]
+        :rtype: list[:class:`huaweicloudsdkiotda.v5.RoutingRule`]
         """
         return self._rules
 
@@ -68,7 +77,7 @@ class ListRoutingRulesResponse(SdkResponse):
         规则条件信息列表。
 
         :param rules: The rules of this ListRoutingRulesResponse.
-        :type: list[RoutingRule]
+        :type rules: list[:class:`huaweicloudsdkiotda.v5.RoutingRule`]
         """
         self._rules = rules
 
@@ -90,7 +99,7 @@ class ListRoutingRulesResponse(SdkResponse):
         满足查询条件的记录总数。
 
         :param count: The count of this ListRoutingRulesResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -112,7 +121,7 @@ class ListRoutingRulesResponse(SdkResponse):
         本次分页查询结果中最后一条记录的ID，可在下一次分页查询时使用。
 
         :param marker: The marker of this ListRoutingRulesResponse.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 

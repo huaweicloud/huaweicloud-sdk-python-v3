@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DomainRegion:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DomainRegion:
     }
 
     def __init__(self, domain_name=None, region_isp_details=None):
-        """DomainRegion - a model defined in huaweicloud sdk"""
+        """DomainRegion
+
+        The model defined in huaweicloud sdk
+
+        :param domain_name: 域名
+        :type domain_name: str
+        :param region_isp_details: 指标统计数据列表，如果该时间段内无值，则为空数组[]
+        :type region_isp_details: list[dict(str, object)]
+        """
         
         
 
@@ -63,7 +70,7 @@ class DomainRegion:
         域名
 
         :param domain_name: The domain_name of this DomainRegion.
-        :type: str
+        :type domain_name: str
         """
         self._domain_name = domain_name
 
@@ -85,7 +92,7 @@ class DomainRegion:
         指标统计数据列表，如果该时间段内无值，则为空数组[]
 
         :param region_isp_details: The region_isp_details of this DomainRegion.
-        :type: list[dict(str, object)]
+        :type region_isp_details: list[dict(str, object)]
         """
         self._region_isp_details = region_isp_details
 

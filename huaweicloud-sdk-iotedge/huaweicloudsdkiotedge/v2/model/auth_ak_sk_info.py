@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AuthAkSkInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class AuthAkSkInfo:
     }
 
     def __init__(self, secret=None):
-        """AuthAkSkInfo - a model defined in huaweicloud sdk"""
+        """AuthAkSkInfo
+
+        The model defined in huaweicloud sdk
+
+        :param secret: 鉴权秘钥
+        :type secret: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class AuthAkSkInfo:
         鉴权秘钥
 
         :param secret: The secret of this AuthAkSkInfo.
-        :type: str
+        :type secret: str
         """
         self._secret = secret
 

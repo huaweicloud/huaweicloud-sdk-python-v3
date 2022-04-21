@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCitiesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListCitiesResponse(SdkResponse):
     }
 
     def __init__(self, count=None, cities=None):
-        """ListCitiesResponse - a model defined in huaweicloud sdk"""
+        """ListCitiesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 查询个数，成功的时候返回。
+        :type count: int
+        :param cities: 城市信息列表，成功的时候返回，具体参见表2。
+        :type cities: list[:class:`huaweicloudsdkbss.v2.City`]
+        """
         
         super(ListCitiesResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListCitiesResponse(SdkResponse):
         查询个数，成功的时候返回。
 
         :param count: The count of this ListCitiesResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -74,7 +81,7 @@ class ListCitiesResponse(SdkResponse):
         城市信息列表，成功的时候返回，具体参见表2。
 
         :return: The cities of this ListCitiesResponse.
-        :rtype: list[City]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.City`]
         """
         return self._cities
 
@@ -85,7 +92,7 @@ class ListCitiesResponse(SdkResponse):
         城市信息列表，成功的时候返回，具体参见表2。
 
         :param cities: The cities of this ListCitiesResponse.
-        :type: list[City]
+        :type cities: list[:class:`huaweicloudsdkbss.v2.City`]
         """
         self._cities = cities
 

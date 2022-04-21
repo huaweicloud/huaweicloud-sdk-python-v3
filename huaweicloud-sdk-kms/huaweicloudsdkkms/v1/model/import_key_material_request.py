@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ImportKeyMaterialRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ImportKeyMaterialRequest:
     }
 
     def __init__(self, version_id=None, body=None):
-        """ImportKeyMaterialRequest - a model defined in huaweicloud sdk"""
+        """ImportKeyMaterialRequest
+
+        The model defined in huaweicloud sdk
+
+        :param version_id: API版本号
+        :type version_id: str
+        :param body: Body of the ImportKeyMaterialRequest
+        :type body: :class:`huaweicloudsdkkms.v1.ImportKeyMaterialRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class ImportKeyMaterialRequest:
         API版本号
 
         :param version_id: The version_id of this ImportKeyMaterialRequest.
-        :type: str
+        :type version_id: str
         """
         self._version_id = version_id
 
@@ -72,7 +79,7 @@ class ImportKeyMaterialRequest:
 
 
         :return: The body of this ImportKeyMaterialRequest.
-        :rtype: ImportKeyMaterialRequestBody
+        :rtype: :class:`huaweicloudsdkkms.v1.ImportKeyMaterialRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class ImportKeyMaterialRequest:
 
 
         :param body: The body of this ImportKeyMaterialRequest.
-        :type: ImportKeyMaterialRequestBody
+        :type body: :class:`huaweicloudsdkkms.v1.ImportKeyMaterialRequestBody`
         """
         self._body = body
 

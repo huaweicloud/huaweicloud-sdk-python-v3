@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteNatGatewayDnatRuleRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteNatGatewayDnatRuleRequest:
     }
 
     def __init__(self, nat_gateway_id=None, dnat_rule_id=None):
-        """DeleteNatGatewayDnatRuleRequest - a model defined in huaweicloud sdk"""
+        """DeleteNatGatewayDnatRuleRequest
+
+        The model defined in huaweicloud sdk
+
+        :param nat_gateway_id: 公网NAT网关实例的ID。
+        :type nat_gateway_id: str
+        :param dnat_rule_id: DNAT规则的ID。
+        :type dnat_rule_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class DeleteNatGatewayDnatRuleRequest:
         公网NAT网关实例的ID。
 
         :param nat_gateway_id: The nat_gateway_id of this DeleteNatGatewayDnatRuleRequest.
-        :type: str
+        :type nat_gateway_id: str
         """
         self._nat_gateway_id = nat_gateway_id
 
@@ -83,7 +90,7 @@ class DeleteNatGatewayDnatRuleRequest:
         DNAT规则的ID。
 
         :param dnat_rule_id: The dnat_rule_id of this DeleteNatGatewayDnatRuleRequest.
-        :type: str
+        :type dnat_rule_id: str
         """
         self._dnat_rule_id = dnat_rule_id
 

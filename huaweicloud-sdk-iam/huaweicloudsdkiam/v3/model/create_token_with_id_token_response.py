@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateTokenWithIdTokenResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateTokenWithIdTokenResponse(SdkResponse):
     }
 
     def __init__(self, token=None, x_subject_token=None):
-        """CreateTokenWithIdTokenResponse - a model defined in huaweicloud sdk"""
+        """CreateTokenWithIdTokenResponse
+
+        The model defined in huaweicloud sdk
+
+        :param token: 
+        :type token: :class:`huaweicloudsdkiam.v3.ScopedTokenInfo`
+        :param x_subject_token: 
+        :type x_subject_token: str
+        """
         
         super(CreateTokenWithIdTokenResponse, self).__init__()
 
@@ -51,7 +58,7 @@ class CreateTokenWithIdTokenResponse(SdkResponse):
 
 
         :return: The token of this CreateTokenWithIdTokenResponse.
-        :rtype: ScopedTokenInfo
+        :rtype: :class:`huaweicloudsdkiam.v3.ScopedTokenInfo`
         """
         return self._token
 
@@ -61,7 +68,7 @@ class CreateTokenWithIdTokenResponse(SdkResponse):
 
 
         :param token: The token of this CreateTokenWithIdTokenResponse.
-        :type: ScopedTokenInfo
+        :type token: :class:`huaweicloudsdkiam.v3.ScopedTokenInfo`
         """
         self._token = token
 
@@ -81,7 +88,7 @@ class CreateTokenWithIdTokenResponse(SdkResponse):
 
 
         :param x_subject_token: The x_subject_token of this CreateTokenWithIdTokenResponse.
-        :type: str
+        :type x_subject_token: str
         """
         self._x_subject_token = x_subject_token
 

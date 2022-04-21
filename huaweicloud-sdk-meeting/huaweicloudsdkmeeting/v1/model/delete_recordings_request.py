@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteRecordingsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class DeleteRecordingsRequest:
     }
 
     def __init__(self, conf_uui_ds=None, user_uuid=None, x_authorization_type=None, x_site_id=None):
-        """DeleteRecordingsRequest - a model defined in huaweicloud sdk"""
+        """DeleteRecordingsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param conf_uui_ds: 会议UUID列表，多个会议UUID之间以英文逗号隔开。
+        :type conf_uui_ds: str
+        :param user_uuid: 用户的UUID（已在USG注册过的）。
+        :type user_uuid: str
+        :param x_authorization_type: 标识是否为第三方portal过来的请求。
+        :type x_authorization_type: str
+        :param x_site_id: 用于区分到哪个HCSO站点鉴权。
+        :type x_site_id: str
+        """
         
         
 
@@ -72,7 +83,7 @@ class DeleteRecordingsRequest:
         会议UUID列表，多个会议UUID之间以英文逗号隔开。
 
         :param conf_uui_ds: The conf_uui_ds of this DeleteRecordingsRequest.
-        :type: str
+        :type conf_uui_ds: str
         """
         self._conf_uui_ds = conf_uui_ds
 
@@ -94,7 +105,7 @@ class DeleteRecordingsRequest:
         用户的UUID（已在USG注册过的）。
 
         :param user_uuid: The user_uuid of this DeleteRecordingsRequest.
-        :type: str
+        :type user_uuid: str
         """
         self._user_uuid = user_uuid
 
@@ -116,7 +127,7 @@ class DeleteRecordingsRequest:
         标识是否为第三方portal过来的请求。
 
         :param x_authorization_type: The x_authorization_type of this DeleteRecordingsRequest.
-        :type: str
+        :type x_authorization_type: str
         """
         self._x_authorization_type = x_authorization_type
 
@@ -138,7 +149,7 @@ class DeleteRecordingsRequest:
         用于区分到哪个HCSO站点鉴权。
 
         :param x_site_id: The x_site_id of this DeleteRecordingsRequest.
-        :type: str
+        :type x_site_id: str
         """
         self._x_site_id = x_site_id
 

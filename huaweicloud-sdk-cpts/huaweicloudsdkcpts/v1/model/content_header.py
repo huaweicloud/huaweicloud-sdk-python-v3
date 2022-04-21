@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ContentHeader:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ContentHeader:
     }
 
     def __init__(self, key=None, value=None):
-        """ContentHeader - a model defined in huaweicloud sdk"""
+        """ContentHeader
+
+        The model defined in huaweicloud sdk
+
+        :param key: key
+        :type key: str
+        :param value: value
+        :type value: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class ContentHeader:
         key
 
         :param key: The key of this ContentHeader.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -85,7 +92,7 @@ class ContentHeader:
         value
 
         :param value: The value of this ContentHeader.
-        :type: str
+        :type value: str
         """
         self._value = value
 

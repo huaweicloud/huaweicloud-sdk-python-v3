@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StructTemplate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class StructTemplate:
     }
 
     def __init__(self, project_id=None, template_name=None, template_type=None, demo_log=None, demo_fields=None, tag_fields=None, rule=None, demo_label=None, create_time=None):
-        """StructTemplate - a model defined in huaweicloud sdk"""
+        """StructTemplate
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: 项目id
+        :type project_id: str
+        :param template_name: 模板名称
+        :type template_name: str
+        :param template_type: 模板类型，regex,json,split,nginx
+        :type template_type: str
+        :param demo_log: 示例日志
+        :type demo_log: str
+        :param demo_fields: 示例字段数组
+        :type demo_fields: list[:class:`huaweicloudsdklts.v2.DemoField`]
+        :param tag_fields: Tag字段数组
+        :type tag_fields: list[:class:`huaweicloudsdklts.v2.TagFieldNew`]
+        :param rule: 
+        :type rule: :class:`huaweicloudsdklts.v2.TemplateRule`
+        :param demo_label: 示例日志标签
+        :type demo_label: str
+        :param create_time: 创建时间
+        :type create_time: int
+        """
         
         
 
@@ -91,7 +112,7 @@ class StructTemplate:
         项目id
 
         :param project_id: The project_id of this StructTemplate.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -113,7 +134,7 @@ class StructTemplate:
         模板名称
 
         :param template_name: The template_name of this StructTemplate.
-        :type: str
+        :type template_name: str
         """
         self._template_name = template_name
 
@@ -135,7 +156,7 @@ class StructTemplate:
         模板类型，regex,json,split,nginx
 
         :param template_type: The template_type of this StructTemplate.
-        :type: str
+        :type template_type: str
         """
         self._template_type = template_type
 
@@ -157,7 +178,7 @@ class StructTemplate:
         示例日志
 
         :param demo_log: The demo_log of this StructTemplate.
-        :type: str
+        :type demo_log: str
         """
         self._demo_log = demo_log
 
@@ -168,7 +189,7 @@ class StructTemplate:
         示例字段数组
 
         :return: The demo_fields of this StructTemplate.
-        :rtype: list[DemoField]
+        :rtype: list[:class:`huaweicloudsdklts.v2.DemoField`]
         """
         return self._demo_fields
 
@@ -179,7 +200,7 @@ class StructTemplate:
         示例字段数组
 
         :param demo_fields: The demo_fields of this StructTemplate.
-        :type: list[DemoField]
+        :type demo_fields: list[:class:`huaweicloudsdklts.v2.DemoField`]
         """
         self._demo_fields = demo_fields
 
@@ -190,7 +211,7 @@ class StructTemplate:
         Tag字段数组
 
         :return: The tag_fields of this StructTemplate.
-        :rtype: list[TagFieldNew]
+        :rtype: list[:class:`huaweicloudsdklts.v2.TagFieldNew`]
         """
         return self._tag_fields
 
@@ -201,7 +222,7 @@ class StructTemplate:
         Tag字段数组
 
         :param tag_fields: The tag_fields of this StructTemplate.
-        :type: list[TagFieldNew]
+        :type tag_fields: list[:class:`huaweicloudsdklts.v2.TagFieldNew`]
         """
         self._tag_fields = tag_fields
 
@@ -211,7 +232,7 @@ class StructTemplate:
 
 
         :return: The rule of this StructTemplate.
-        :rtype: TemplateRule
+        :rtype: :class:`huaweicloudsdklts.v2.TemplateRule`
         """
         return self._rule
 
@@ -221,7 +242,7 @@ class StructTemplate:
 
 
         :param rule: The rule of this StructTemplate.
-        :type: TemplateRule
+        :type rule: :class:`huaweicloudsdklts.v2.TemplateRule`
         """
         self._rule = rule
 
@@ -243,7 +264,7 @@ class StructTemplate:
         示例日志标签
 
         :param demo_label: The demo_label of this StructTemplate.
-        :type: str
+        :type demo_label: str
         """
         self._demo_label = demo_label
 
@@ -265,7 +286,7 @@ class StructTemplate:
         创建时间
 
         :param create_time: The create_time of this StructTemplate.
-        :type: int
+        :type create_time: int
         """
         self._create_time = create_time
 

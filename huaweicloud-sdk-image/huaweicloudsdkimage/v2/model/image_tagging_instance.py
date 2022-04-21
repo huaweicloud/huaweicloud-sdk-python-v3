@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ImageTaggingInstance:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ImageTaggingInstance:
     }
 
     def __init__(self, bounding_box=None, confidence=None):
-        """ImageTaggingInstance - a model defined in huaweicloud sdk"""
+        """ImageTaggingInstance
+
+        The model defined in huaweicloud sdk
+
+        :param bounding_box: 目标检测框位置信息，包括4个值：  width：检测框区域宽度  height：检测框区域高度  top_left_x：检测框左上角到垂直轴距离  top_left_y：检测框左上角到水平轴距离 
+        :type bounding_box: object
+        :param confidence: 检测标签置信度,将Float型置信度转为String类型返回,Float取值范围（0~100）。
+        :type confidence: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class ImageTaggingInstance:
         目标检测框位置信息，包括4个值：  width：检测框区域宽度  height：检测框区域高度  top_left_x：检测框左上角到垂直轴距离  top_left_y：检测框左上角到水平轴距离 
 
         :param bounding_box: The bounding_box of this ImageTaggingInstance.
-        :type: object
+        :type bounding_box: object
         """
         self._bounding_box = bounding_box
 
@@ -85,7 +92,7 @@ class ImageTaggingInstance:
         检测标签置信度,将Float型置信度转为String类型返回,Float取值范围（0~100）。
 
         :param confidence: The confidence of this ImageTaggingInstance.
-        :type: str
+        :type confidence: str
         """
         self._confidence = confidence
 

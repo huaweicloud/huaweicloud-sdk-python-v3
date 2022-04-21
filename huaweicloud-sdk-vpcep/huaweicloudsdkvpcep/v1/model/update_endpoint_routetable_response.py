@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateEndpointRoutetableResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateEndpointRoutetableResponse(SdkResponse):
     }
 
     def __init__(self, routetables=None, error=None):
-        """UpdateEndpointRoutetableResponse - a model defined in huaweicloud sdk"""
+        """UpdateEndpointRoutetableResponse
+
+        The model defined in huaweicloud sdk
+
+        :param routetables: 路由表ID列表。节点的白名单。 此参数可以添加IPv4或CIDR： ● 当取值不为空时，表示将白 名单更新为取值所示内容。 ● 当取值为空时，表示删除所 有白名单。 默认为空列表。
+        :type routetables: list[str]
+        :param error: 当修改终端节点子网路由表失败 时，返回错误提示信息
+        :type error: list[:class:`huaweicloudsdkvpcep.v1.RoutetableInfoError`]
+        """
         
         super(UpdateEndpointRoutetableResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class UpdateEndpointRoutetableResponse(SdkResponse):
         路由表ID列表。节点的白名单。 此参数可以添加IPv4或CIDR： ● 当取值不为空时，表示将白 名单更新为取值所示内容。 ● 当取值为空时，表示删除所 有白名单。 默认为空列表。
 
         :param routetables: The routetables of this UpdateEndpointRoutetableResponse.
-        :type: list[str]
+        :type routetables: list[str]
         """
         self._routetables = routetables
 
@@ -74,7 +81,7 @@ class UpdateEndpointRoutetableResponse(SdkResponse):
         当修改终端节点子网路由表失败 时，返回错误提示信息
 
         :return: The error of this UpdateEndpointRoutetableResponse.
-        :rtype: list[RoutetableInfoError]
+        :rtype: list[:class:`huaweicloudsdkvpcep.v1.RoutetableInfoError`]
         """
         return self._error
 
@@ -85,7 +92,7 @@ class UpdateEndpointRoutetableResponse(SdkResponse):
         当修改终端节点子网路由表失败 时，返回错误提示信息
 
         :param error: The error of this UpdateEndpointRoutetableResponse.
-        :type: list[RoutetableInfoError]
+        :type error: list[:class:`huaweicloudsdkvpcep.v1.RoutetableInfoError`]
         """
         self._error = error
 

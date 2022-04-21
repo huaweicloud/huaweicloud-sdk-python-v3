@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowMigrationTaskResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class ShowMigrationTaskResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None, task_name=None, description=None, status=None, migration_type=None, migration_method=None, ecs_tenant_private_ip=None, backup_files=None, network_type=None, source_instance=None, target_instance=None, created_at=None, updated_at=None):
-        """ShowMigrationTaskResponse - a model defined in huaweicloud sdk"""
+        """ShowMigrationTaskResponse
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 迁移任务ID。
+        :type task_id: str
+        :param task_name: 迁移任务名称。
+        :type task_name: str
+        :param description: 迁移任务描述。
+        :type description: str
+        :param status: 迁移任务状态，这个字段的值包括：SUCCESS, FAILED, MIGRATING，TERMINATED。
+        :type status: str
+        :param migration_type: 迁移任务类型,包括备份文件导入和在线迁移两种类型。
+        :type migration_type: str
+        :param migration_method: 迁移方式，包括全量迁移和增量迁移两种类型。
+        :type migration_method: str
+        :param ecs_tenant_private_ip: 迁移机租户侧私有IP，与目的/源redis私有IP处于同VPC，可将此IP加入白名单
+        :type ecs_tenant_private_ip: str
+        :param backup_files: 
+        :type backup_files: :class:`huaweicloudsdkdcs.v2.BackupFilesBody`
+        :param network_type: 网络类型，包括vpc和vpn两种类型。
+        :type network_type: str
+        :param source_instance: 
+        :type source_instance: :class:`huaweicloudsdkdcs.v2.SourceInstanceBody`
+        :param target_instance: 
+        :type target_instance: :class:`huaweicloudsdkdcs.v2.TargetInstanceBody`
+        :param created_at: 迁移任务创建时间。
+        :type created_at: str
+        :param updated_at: 迁移任务完成时间。
+        :type updated_at: str
+        """
         
         super(ShowMigrationTaskResponse, self).__init__()
 
@@ -118,7 +147,7 @@ class ShowMigrationTaskResponse(SdkResponse):
         迁移任务ID。
 
         :param task_id: The task_id of this ShowMigrationTaskResponse.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -140,7 +169,7 @@ class ShowMigrationTaskResponse(SdkResponse):
         迁移任务名称。
 
         :param task_name: The task_name of this ShowMigrationTaskResponse.
-        :type: str
+        :type task_name: str
         """
         self._task_name = task_name
 
@@ -162,7 +191,7 @@ class ShowMigrationTaskResponse(SdkResponse):
         迁移任务描述。
 
         :param description: The description of this ShowMigrationTaskResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -184,7 +213,7 @@ class ShowMigrationTaskResponse(SdkResponse):
         迁移任务状态，这个字段的值包括：SUCCESS, FAILED, MIGRATING，TERMINATED。
 
         :param status: The status of this ShowMigrationTaskResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -206,7 +235,7 @@ class ShowMigrationTaskResponse(SdkResponse):
         迁移任务类型,包括备份文件导入和在线迁移两种类型。
 
         :param migration_type: The migration_type of this ShowMigrationTaskResponse.
-        :type: str
+        :type migration_type: str
         """
         self._migration_type = migration_type
 
@@ -228,7 +257,7 @@ class ShowMigrationTaskResponse(SdkResponse):
         迁移方式，包括全量迁移和增量迁移两种类型。
 
         :param migration_method: The migration_method of this ShowMigrationTaskResponse.
-        :type: str
+        :type migration_method: str
         """
         self._migration_method = migration_method
 
@@ -250,7 +279,7 @@ class ShowMigrationTaskResponse(SdkResponse):
         迁移机租户侧私有IP，与目的/源redis私有IP处于同VPC，可将此IP加入白名单
 
         :param ecs_tenant_private_ip: The ecs_tenant_private_ip of this ShowMigrationTaskResponse.
-        :type: str
+        :type ecs_tenant_private_ip: str
         """
         self._ecs_tenant_private_ip = ecs_tenant_private_ip
 
@@ -260,7 +289,7 @@ class ShowMigrationTaskResponse(SdkResponse):
 
 
         :return: The backup_files of this ShowMigrationTaskResponse.
-        :rtype: BackupFilesBody
+        :rtype: :class:`huaweicloudsdkdcs.v2.BackupFilesBody`
         """
         return self._backup_files
 
@@ -270,7 +299,7 @@ class ShowMigrationTaskResponse(SdkResponse):
 
 
         :param backup_files: The backup_files of this ShowMigrationTaskResponse.
-        :type: BackupFilesBody
+        :type backup_files: :class:`huaweicloudsdkdcs.v2.BackupFilesBody`
         """
         self._backup_files = backup_files
 
@@ -292,7 +321,7 @@ class ShowMigrationTaskResponse(SdkResponse):
         网络类型，包括vpc和vpn两种类型。
 
         :param network_type: The network_type of this ShowMigrationTaskResponse.
-        :type: str
+        :type network_type: str
         """
         self._network_type = network_type
 
@@ -302,7 +331,7 @@ class ShowMigrationTaskResponse(SdkResponse):
 
 
         :return: The source_instance of this ShowMigrationTaskResponse.
-        :rtype: SourceInstanceBody
+        :rtype: :class:`huaweicloudsdkdcs.v2.SourceInstanceBody`
         """
         return self._source_instance
 
@@ -312,7 +341,7 @@ class ShowMigrationTaskResponse(SdkResponse):
 
 
         :param source_instance: The source_instance of this ShowMigrationTaskResponse.
-        :type: SourceInstanceBody
+        :type source_instance: :class:`huaweicloudsdkdcs.v2.SourceInstanceBody`
         """
         self._source_instance = source_instance
 
@@ -322,7 +351,7 @@ class ShowMigrationTaskResponse(SdkResponse):
 
 
         :return: The target_instance of this ShowMigrationTaskResponse.
-        :rtype: TargetInstanceBody
+        :rtype: :class:`huaweicloudsdkdcs.v2.TargetInstanceBody`
         """
         return self._target_instance
 
@@ -332,7 +361,7 @@ class ShowMigrationTaskResponse(SdkResponse):
 
 
         :param target_instance: The target_instance of this ShowMigrationTaskResponse.
-        :type: TargetInstanceBody
+        :type target_instance: :class:`huaweicloudsdkdcs.v2.TargetInstanceBody`
         """
         self._target_instance = target_instance
 
@@ -354,7 +383,7 @@ class ShowMigrationTaskResponse(SdkResponse):
         迁移任务创建时间。
 
         :param created_at: The created_at of this ShowMigrationTaskResponse.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -376,7 +405,7 @@ class ShowMigrationTaskResponse(SdkResponse):
         迁移任务完成时间。
 
         :param updated_at: The updated_at of this ShowMigrationTaskResponse.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreatePreheatingAssetRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreatePreheatingAssetRequest:
     }
 
     def __init__(self, body=None):
-        """CreatePreheatingAssetRequest - a model defined in huaweicloud sdk"""
+        """CreatePreheatingAssetRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreatePreheatingAssetRequest
+        :type body: :class:`huaweicloudsdkvod.v1.CreatePreheatingAssetReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreatePreheatingAssetRequest:
 
 
         :return: The body of this CreatePreheatingAssetRequest.
-        :rtype: CreatePreheatingAssetReq
+        :rtype: :class:`huaweicloudsdkvod.v1.CreatePreheatingAssetReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreatePreheatingAssetRequest:
 
 
         :param body: The body of this CreatePreheatingAssetRequest.
-        :type: CreatePreheatingAssetReq
+        :type body: :class:`huaweicloudsdkvod.v1.CreatePreheatingAssetReq`
         """
         self._body = body
 

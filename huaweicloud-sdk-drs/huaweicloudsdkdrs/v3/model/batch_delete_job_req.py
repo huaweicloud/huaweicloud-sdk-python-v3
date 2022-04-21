@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchDeleteJobReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchDeleteJobReq:
     }
 
     def __init__(self, jobs=None):
-        """BatchDeleteJobReq - a model defined in huaweicloud sdk"""
+        """BatchDeleteJobReq
+
+        The model defined in huaweicloud sdk
+
+        :param jobs: 批量结束与删除任务请求列表
+        :type jobs: list[:class:`huaweicloudsdkdrs.v3.DeleteJobReq`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class BatchDeleteJobReq:
         批量结束与删除任务请求列表
 
         :return: The jobs of this BatchDeleteJobReq.
-        :rtype: list[DeleteJobReq]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.DeleteJobReq`]
         """
         return self._jobs
 
@@ -57,7 +62,7 @@ class BatchDeleteJobReq:
         批量结束与删除任务请求列表
 
         :param jobs: The jobs of this BatchDeleteJobReq.
-        :type: list[DeleteJobReq]
+        :type jobs: list[:class:`huaweicloudsdkdrs.v3.DeleteJobReq`]
         """
         self._jobs = jobs
 

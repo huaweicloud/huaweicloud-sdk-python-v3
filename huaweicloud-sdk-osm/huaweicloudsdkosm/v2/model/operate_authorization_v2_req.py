@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OperateAuthorizationV2Req:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class OperateAuthorizationV2Req:
     }
 
     def __init__(self, reject_reason=None, group_id=None):
-        """OperateAuthorizationV2Req - a model defined in huaweicloud sdk"""
+        """OperateAuthorizationV2Req
+
+        The model defined in huaweicloud sdk
+
+        :param reject_reason: 拒绝理由
+        :type reject_reason: str
+        :param group_id: 组id
+        :type group_id: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class OperateAuthorizationV2Req:
         拒绝理由
 
         :param reject_reason: The reject_reason of this OperateAuthorizationV2Req.
-        :type: str
+        :type reject_reason: str
         """
         self._reject_reason = reject_reason
 
@@ -85,7 +92,7 @@ class OperateAuthorizationV2Req:
         组id
 
         :param group_id: The group_id of this OperateAuthorizationV2Req.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 

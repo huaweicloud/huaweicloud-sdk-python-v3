@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Encryption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Encryption:
     }
 
     def __init__(self, type=None, kms_key_name=None):
-        """Encryption - a model defined in huaweicloud sdk"""
+        """Encryption
+
+        The model defined in huaweicloud sdk
+
+        :param type: 取值范围：“kms”或“default”。 - “default”为默认加密方式，适用于没有kms服务的局点。 - “kms”为采用kms服务加密方式。若局点没有kms服务，请填“default”。
+        :type type: str
+        :param kms_key_name: kms密钥的名称。  - 若“type”为“kms”，则必须填入kms服务密钥名称。
+        :type kms_key_name: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class Encryption:
         取值范围：“kms”或“default”。 - “default”为默认加密方式，适用于没有kms服务的局点。 - “kms”为采用kms服务加密方式。若局点没有kms服务，请填“default”。
 
         :param type: The type of this Encryption.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -85,7 +92,7 @@ class Encryption:
         kms密钥的名称。  - 若“type”为“kms”，则必须填入kms服务密钥名称。
 
         :param kms_key_name: The kms_key_name of this Encryption.
-        :type: str
+        :type kms_key_name: str
         """
         self._kms_key_name = kms_key_name
 

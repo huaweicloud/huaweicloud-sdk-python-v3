@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CancelSqlResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CancelSqlResponse(SdkResponse):
     }
 
     def __init__(self, message=None, status=None):
-        """CancelSqlResponse - a model defined in huaweicloud sdk"""
+        """CancelSqlResponse
+
+        The model defined in huaweicloud sdk
+
+        :param message: 错误信息。
+        :type message: str
+        :param status: 取消SQL的执行结果。  说明： 默认返回SUCCEED，对于已经结束的任务也会返回SUCCEED，只有取消正在运行的SQL时没成功才会FAILED。  枚举值： - SUCCEED：成功 - FAILED：失败
+        :type status: str
+        """
         
         super(CancelSqlResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class CancelSqlResponse(SdkResponse):
         错误信息。
 
         :param message: The message of this CancelSqlResponse.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -85,7 +92,7 @@ class CancelSqlResponse(SdkResponse):
         取消SQL的执行结果。  说明： 默认返回SUCCEED，对于已经结束的任务也会返回SUCCEED，只有取消正在运行的SQL时没成功才会FAILED。  枚举值： - SUCCEED：成功 - FAILED：失败
 
         :param status: The status of this CancelSqlResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowMasterAddressResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowMasterAddressResponse(SdkResponse):
     }
 
     def __init__(self, region_name=None, master_address=None):
-        """ShowMasterAddressResponse - a model defined in huaweicloud sdk"""
+        """ShowMasterAddressResponse
+
+        The model defined in huaweicloud sdk
+
+        :param region_name: region的id，英文名称，
+        :type region_name: str
+        :param master_address: APMmaster服务对对外暴露的地址，提供服务注册和心跳上报
+        :type master_address: str
+        """
         
         super(ShowMasterAddressResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ShowMasterAddressResponse(SdkResponse):
         region的id，英文名称，
 
         :param region_name: The region_name of this ShowMasterAddressResponse.
-        :type: str
+        :type region_name: str
         """
         self._region_name = region_name
 
@@ -85,7 +92,7 @@ class ShowMasterAddressResponse(SdkResponse):
         APMmaster服务对对外暴露的地址，提供服务注册和心跳上报
 
         :param master_address: The master_address of this ShowMasterAddressResponse.
-        :type: str
+        :type master_address: str
         """
         self._master_address = master_address
 

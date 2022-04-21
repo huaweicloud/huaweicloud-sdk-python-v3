@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddServerGroupMemberResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class AddServerGroupMemberResponse(SdkResponse):
     }
 
     def __init__(self):
-        """AddServerGroupMemberResponse - a model defined in huaweicloud sdk"""
+        """AddServerGroupMemberResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(AddServerGroupMemberResponse, self).__init__()
         self.discriminator = None

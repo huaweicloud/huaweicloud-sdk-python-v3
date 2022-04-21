@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCustomAuthorizersV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListCustomAuthorizersV2Request:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, id=None, name=None, type=None):
-        """ListCustomAuthorizersV2Request - a model defined in huaweicloud sdk"""
+        """ListCustomAuthorizersV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param offset: 偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
+        :type offset: int
+        :param limit: 每页显示的条目数量
+        :type limit: int
+        :param id: 编号
+        :type id: str
+        :param name: 名称
+        :type name: str
+        :param type: 类型
+        :type type: str
+        """
         
         
 
@@ -82,7 +97,7 @@ class ListCustomAuthorizersV2Request:
         实例ID
 
         :param instance_id: The instance_id of this ListCustomAuthorizersV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -104,7 +119,7 @@ class ListCustomAuthorizersV2Request:
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
         :param offset: The offset of this ListCustomAuthorizersV2Request.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -126,7 +141,7 @@ class ListCustomAuthorizersV2Request:
         每页显示的条目数量
 
         :param limit: The limit of this ListCustomAuthorizersV2Request.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -148,7 +163,7 @@ class ListCustomAuthorizersV2Request:
         编号
 
         :param id: The id of this ListCustomAuthorizersV2Request.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -170,7 +185,7 @@ class ListCustomAuthorizersV2Request:
         名称
 
         :param name: The name of this ListCustomAuthorizersV2Request.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -192,7 +207,7 @@ class ListCustomAuthorizersV2Request:
         类型
 
         :param type: The type of this ListCustomAuthorizersV2Request.
-        :type: str
+        :type type: str
         """
         self._type = type
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Volume:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Volume:
     }
 
     def __init__(self, size=None, used=None):
-        """Volume - a model defined in huaweicloud sdk"""
+        """Volume
+
+        The model defined in huaweicloud sdk
+
+        :param size: 磁盘大小。单位：GB。
+        :type size: str
+        :param used: 磁盘使用量。单位：GB。
+        :type used: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class Volume:
         磁盘大小。单位：GB。
 
         :param size: The size of this Volume.
-        :type: str
+        :type size: str
         """
         self._size = size
 
@@ -83,7 +90,7 @@ class Volume:
         磁盘使用量。单位：GB。
 
         :param used: The used of this Volume.
-        :type: str
+        :type used: str
         """
         self._used = used
 

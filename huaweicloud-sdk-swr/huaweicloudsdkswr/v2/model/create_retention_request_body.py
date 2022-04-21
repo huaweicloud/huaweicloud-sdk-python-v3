@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateRetentionRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateRetentionRequestBody:
     }
 
     def __init__(self, algorithm=None, rules=None):
-        """CreateRetentionRequestBody - a model defined in huaweicloud sdk"""
+        """CreateRetentionRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param algorithm: 回收规则匹配策略，固定为\&quot;or\&quot;
+        :type algorithm: str
+        :param rules: 镜像老化规则
+        :type rules: list[:class:`huaweicloudsdkswr.v2.Rule`]
+        """
         
         
 
@@ -61,7 +68,7 @@ class CreateRetentionRequestBody:
         回收规则匹配策略，固定为\"or\"
 
         :param algorithm: The algorithm of this CreateRetentionRequestBody.
-        :type: str
+        :type algorithm: str
         """
         self._algorithm = algorithm
 
@@ -72,7 +79,7 @@ class CreateRetentionRequestBody:
         镜像老化规则
 
         :return: The rules of this CreateRetentionRequestBody.
-        :rtype: list[Rule]
+        :rtype: list[:class:`huaweicloudsdkswr.v2.Rule`]
         """
         return self._rules
 
@@ -83,7 +90,7 @@ class CreateRetentionRequestBody:
         镜像老化规则
 
         :param rules: The rules of this CreateRetentionRequestBody.
-        :type: list[Rule]
+        :type rules: list[:class:`huaweicloudsdkswr.v2.Rule`]
         """
         self._rules = rules
 

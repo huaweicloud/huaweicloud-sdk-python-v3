@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunNerDomainRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RunNerDomainRequest:
     }
 
     def __init__(self, body=None):
-        """RunNerDomainRequest - a model defined in huaweicloud sdk"""
+        """RunNerDomainRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the RunNerDomainRequest
+        :type body: :class:`huaweicloudsdknlp.v2.PostDomainNerRequest`
+        """
         
         
 
@@ -46,7 +51,7 @@ class RunNerDomainRequest:
 
 
         :return: The body of this RunNerDomainRequest.
-        :rtype: PostDomainNerRequest
+        :rtype: :class:`huaweicloudsdknlp.v2.PostDomainNerRequest`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class RunNerDomainRequest:
 
 
         :param body: The body of this RunNerDomainRequest.
-        :type: PostDomainNerRequest
+        :type body: :class:`huaweicloudsdknlp.v2.PostDomainNerRequest`
         """
         self._body = body
 

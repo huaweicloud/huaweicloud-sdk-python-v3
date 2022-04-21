@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BackupPolicy:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class BackupPolicy:
     }
 
     def __init__(self, keep_days=None, start_time=None, period=None, differential_period=None):
-        """BackupPolicy - a model defined in huaweicloud sdk"""
+        """BackupPolicy
+
+        The model defined in huaweicloud sdk
+
+        :param keep_days: 备份文件可以保存的天数。  取值范围：1-732天。
+        :type keep_days: int
+        :param start_time: 备份时间段。自动备份将在该时间段内触发。  取值范围：非空，格式必须为hh:mm-HH:MM且有效，当前时间指UTC时间。  HH取值必须比hh大1，mm和MM取值必须相同，且取值必须为00。  取值示例：  21:00-22:00
+        :type start_time: str
+        :param period: 全量备份周期配置。自动全量备份将在每星期指定的天进行。取值范围：格式为逗号隔开的数字，数字代表星期。取值示例：1,2,3,4则表示备份周期配置为星期一、星期二、星期三和星期四。
+        :type period: str
+        :param differential_period: 差异备份间隔时间配置。每次自动差异备份的间隔时间。  取值范围：15、30、60、180、360、720、1440。单位：分钟。  取值示例：30
+        :type differential_period: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class BackupPolicy:
         备份文件可以保存的天数。  取值范围：1-732天。
 
         :param keep_days: The keep_days of this BackupPolicy.
-        :type: int
+        :type keep_days: int
         """
         self._keep_days = keep_days
 
@@ -91,7 +102,7 @@ class BackupPolicy:
         备份时间段。自动备份将在该时间段内触发。  取值范围：非空，格式必须为hh:mm-HH:MM且有效，当前时间指UTC时间。  HH取值必须比hh大1，mm和MM取值必须相同，且取值必须为00。  取值示例：  21:00-22:00
 
         :param start_time: The start_time of this BackupPolicy.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -113,7 +124,7 @@ class BackupPolicy:
         全量备份周期配置。自动全量备份将在每星期指定的天进行。取值范围：格式为逗号隔开的数字，数字代表星期。取值示例：1,2,3,4则表示备份周期配置为星期一、星期二、星期三和星期四。
 
         :param period: The period of this BackupPolicy.
-        :type: str
+        :type period: str
         """
         self._period = period
 
@@ -135,7 +146,7 @@ class BackupPolicy:
         差异备份间隔时间配置。每次自动差异备份的间隔时间。  取值范围：15、30、60、180、360、720、1440。单位：分钟。  取值示例：30
 
         :param differential_period: The differential_period of this BackupPolicy.
-        :type: str
+        :type differential_period: str
         """
         self._differential_period = differential_period
 

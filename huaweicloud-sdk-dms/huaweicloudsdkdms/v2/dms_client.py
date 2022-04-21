@@ -52,21 +52,17 @@ class DmsClient(Client):
         """批量添加或删除队列标签
 
         批量添加或删除队列标签。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchCreateOrDeleteQueueTagRequest request
-        :return: BatchCreateOrDeleteQueueTagResponse
+        :param request: Request instance for BatchCreateOrDeleteQueueTag
+        :type request: :class:`huaweicloudsdkdms.v2.BatchCreateOrDeleteQueueTagRequest`
+        :rtype: :class:`huaweicloudsdkdms.v2.BatchCreateOrDeleteQueueTagResponse`
         """
         return self.batch_create_or_delete_queue_tag_with_http_info(request)
 
     def batch_create_or_delete_queue_tag_with_http_info(self, request):
-        """批量添加或删除队列标签
-
-        批量添加或删除队列标签。
-
-        :param BatchCreateOrDeleteQueueTagRequest request
-        :return: BatchCreateOrDeleteQueueTagResponse
-        """
-
         all_params = ['queue_id', 'batch_create_or_delete_queue_tag_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -112,26 +108,29 @@ class DmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def confirm_consumption_messages(self, request):
         """确认已消费指定消息
 
-        确认已经消费指定消息。  在消费者消费消息期间，消息仍然停留在队列中，但消息从被消费开始的30秒内不能被该消费组再次消费，若在这30秒内没有被消费者确认消费，则DMS认为消息未消费成功，将可以被继续消费。  如果消息被确认消费成功，消息将不能被该消费组再次消费，但是消息仍然保持在队列中，并且可以被其它消费组消费，消息在队列中的保留时间默认为72小时（除非队列被删除），72小时后会被删除。  消息批量消费确认时，必须严格按照消息消费的顺序提交确认，DMS按顺序判定消息是否消费成功，如果某条消息未确认或消费失败，则不再继续检测，默认后续消息全部消费失败。建议当对某一条消息处理失败时，不再需要继续处理本批消息中的后续消息，直接对已正确处理的消息进行确认。  确认消费失败后，可以再次重新消费和确认。当开启死信时，消息进行多次重复消费仍然失败后，DMS会将该条消息转存到死信队列中，有效期为72小时，用户可以根据需要对死信消息进行重新消费。
+        确认已经消费指定消息。
+        
+        在消费者消费消息期间，消息仍然停留在队列中，但消息从被消费开始的30秒内不能被该消费组再次消费，若在这30秒内没有被消费者确认消费，则DMS认为消息未消费成功，将可以被继续消费。
+        
+        如果消息被确认消费成功，消息将不能被该消费组再次消费，但是消息仍然保持在队列中，并且可以被其它消费组消费，消息在队列中的保留时间默认为72小时（除非队列被删除），72小时后会被删除。
+        
+        消息批量消费确认时，必须严格按照消息消费的顺序提交确认，DMS按顺序判定消息是否消费成功，如果某条消息未确认或消费失败，则不再继续检测，默认后续消息全部消费失败。建议当对某一条消息处理失败时，不再需要继续处理本批消息中的后续消息，直接对已正确处理的消息进行确认。
+        
+        确认消费失败后，可以再次重新消费和确认。当开启死信时，消息进行多次重复消费仍然失败后，DMS会将该条消息转存到死信队列中，有效期为72小时，用户可以根据需要对死信消息进行重新消费。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ConfirmConsumptionMessagesRequest request
-        :return: ConfirmConsumptionMessagesResponse
+        :param request: Request instance for ConfirmConsumptionMessages
+        :type request: :class:`huaweicloudsdkdms.v2.ConfirmConsumptionMessagesRequest`
+        :rtype: :class:`huaweicloudsdkdms.v2.ConfirmConsumptionMessagesResponse`
         """
         return self.confirm_consumption_messages_with_http_info(request)
 
     def confirm_consumption_messages_with_http_info(self, request):
-        """确认已消费指定消息
-
-        确认已经消费指定消息。  在消费者消费消息期间，消息仍然停留在队列中，但消息从被消费开始的30秒内不能被该消费组再次消费，若在这30秒内没有被消费者确认消费，则DMS认为消息未消费成功，将可以被继续消费。  如果消息被确认消费成功，消息将不能被该消费组再次消费，但是消息仍然保持在队列中，并且可以被其它消费组消费，消息在队列中的保留时间默认为72小时（除非队列被删除），72小时后会被删除。  消息批量消费确认时，必须严格按照消息消费的顺序提交确认，DMS按顺序判定消息是否消费成功，如果某条消息未确认或消费失败，则不再继续检测，默认后续消息全部消费失败。建议当对某一条消息处理失败时，不再需要继续处理本批消息中的后续消息，直接对已正确处理的消息进行确认。  确认消费失败后，可以再次重新消费和确认。当开启死信时，消息进行多次重复消费仍然失败后，DMS会将该条消息转存到死信队列中，有效期为72小时，用户可以根据需要对死信消息进行重新消费。
-
-        :param ConfirmConsumptionMessagesRequest request
-        :return: ConfirmConsumptionMessagesResponse
-        """
-
         all_params = ['queue_id', 'consumer_group_id', 'confirm_consumption_messages_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -179,26 +178,29 @@ class DmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def confirm_dead_letters_messages(self, request):
         """确认已消费死信消息
 
-        确认已经消费指定的死信消息。  在消费者消费死信消息期间，死信消息仍然停留在队列中，但死信消息从被消费开始的30秒内不能被该消费组再次消费，若在这30秒内没有被消费者确认消费，则DMS认为死信消息未消费成功，将可以被继续消费。  如果死信消息被确认消费成功，该死信消息将不能被该消费组再次消费，死信消息的保留时间为72小时（除非消费组被删除），72小时后会被删除。  消息批量消费确认时，必须严格按照消息消费的顺序提交确认，DMS按顺序判定消息是否消费成功，如果某条消息未确认或消费失败，则不再继续检测，默认后续消息全部消费失败。建议当对某一条消息处理失败时，不再需要继续处理本批消息中的后续消息，直接对已正确处理的消息进行确认。  仅NORMAL队列和FIFO队列可以开启死信消息，因为只有NORMAL队列和FIFO队列可消费死信消息。
+        确认已经消费指定的死信消息。
+        
+        在消费者消费死信消息期间，死信消息仍然停留在队列中，但死信消息从被消费开始的30秒内不能被该消费组再次消费，若在这30秒内没有被消费者确认消费，则DMS认为死信消息未消费成功，将可以被继续消费。
+        
+        如果死信消息被确认消费成功，该死信消息将不能被该消费组再次消费，死信消息的保留时间为72小时（除非消费组被删除），72小时后会被删除。
+        
+        消息批量消费确认时，必须严格按照消息消费的顺序提交确认，DMS按顺序判定消息是否消费成功，如果某条消息未确认或消费失败，则不再继续检测，默认后续消息全部消费失败。建议当对某一条消息处理失败时，不再需要继续处理本批消息中的后续消息，直接对已正确处理的消息进行确认。
+        
+        仅NORMAL队列和FIFO队列可以开启死信消息，因为只有NORMAL队列和FIFO队列可消费死信消息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ConfirmDeadLettersMessagesRequest request
-        :return: ConfirmDeadLettersMessagesResponse
+        :param request: Request instance for ConfirmDeadLettersMessages
+        :type request: :class:`huaweicloudsdkdms.v2.ConfirmDeadLettersMessagesRequest`
+        :rtype: :class:`huaweicloudsdkdms.v2.ConfirmDeadLettersMessagesResponse`
         """
         return self.confirm_dead_letters_messages_with_http_info(request)
 
     def confirm_dead_letters_messages_with_http_info(self, request):
-        """确认已消费死信消息
-
-        确认已经消费指定的死信消息。  在消费者消费死信消息期间，死信消息仍然停留在队列中，但死信消息从被消费开始的30秒内不能被该消费组再次消费，若在这30秒内没有被消费者确认消费，则DMS认为死信消息未消费成功，将可以被继续消费。  如果死信消息被确认消费成功，该死信消息将不能被该消费组再次消费，死信消息的保留时间为72小时（除非消费组被删除），72小时后会被删除。  消息批量消费确认时，必须严格按照消息消费的顺序提交确认，DMS按顺序判定消息是否消费成功，如果某条消息未确认或消费失败，则不再继续检测，默认后续消息全部消费失败。建议当对某一条消息处理失败时，不再需要继续处理本批消息中的后续消息，直接对已正确处理的消息进行确认。  仅NORMAL队列和FIFO队列可以开启死信消息，因为只有NORMAL队列和FIFO队列可消费死信消息。
-
-        :param ConfirmDeadLettersMessagesRequest request
-        :return: ConfirmDeadLettersMessagesResponse
-        """
-
         all_params = ['queue_id', 'consumer_group_id', 'confirm_dead_letters_messages_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -246,26 +248,23 @@ class DmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def consume_deadletters_message(self, request):
         """消费死信消息
 
-        消费指定消费组产生的死信消息。可同时消费多条消息，每次消费的消息负载不超过512KB。  仅NORMAL队列和FIFO队列可以开启死信消息，因为只有NORMAL队列和FIFO队列可消费死信消息。
+        消费指定消费组产生的死信消息。可同时消费多条消息，每次消费的消息负载不超过512KB。
+        
+        仅NORMAL队列和FIFO队列可以开启死信消息，因为只有NORMAL队列和FIFO队列可消费死信消息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ConsumeDeadlettersMessageRequest request
-        :return: ConsumeDeadlettersMessageResponse
+        :param request: Request instance for ConsumeDeadlettersMessage
+        :type request: :class:`huaweicloudsdkdms.v2.ConsumeDeadlettersMessageRequest`
+        :rtype: :class:`huaweicloudsdkdms.v2.ConsumeDeadlettersMessageResponse`
         """
         return self.consume_deadletters_message_with_http_info(request)
 
     def consume_deadletters_message_with_http_info(self, request):
-        """消费死信消息
-
-        消费指定消费组产生的死信消息。可同时消费多条消息，每次消费的消息负载不超过512KB。  仅NORMAL队列和FIFO队列可以开启死信消息，因为只有NORMAL队列和FIFO队列可消费死信消息。
-
-        :param ConsumeDeadlettersMessageRequest request
-        :return: ConsumeDeadlettersMessageResponse
-        """
-
         all_params = ['queue_id', 'consumer_group_id', 'max_msgs', 'time_wait', 'ack_wait']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -317,26 +316,25 @@ class DmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def consume_messages(self, request):
         """消费消息
 
-        消费指定队列中的消息。可同时消费多条消息，每次消费的消息负载不超过512KB。  当队列中消息较少时，单次消费返回的消息数量可能会少于指定条数，但多次消费最终可获取全部消息，当队列为空时，返回为空。  每个消费组只支持一种Label规则，如果第二次消费更换了Label规则，则消费失败。
+        消费指定队列中的消息。可同时消费多条消息，每次消费的消息负载不超过512KB。
+        
+        当队列中消息较少时，单次消费返回的消息数量可能会少于指定条数，但多次消费最终可获取全部消息，当队列为空时，返回为空。
+        
+        每个消费组只支持一种Label规则，如果第二次消费更换了Label规则，则消费失败。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ConsumeMessagesRequest request
-        :return: ConsumeMessagesResponse
+        :param request: Request instance for ConsumeMessages
+        :type request: :class:`huaweicloudsdkdms.v2.ConsumeMessagesRequest`
+        :rtype: :class:`huaweicloudsdkdms.v2.ConsumeMessagesResponse`
         """
         return self.consume_messages_with_http_info(request)
 
     def consume_messages_with_http_info(self, request):
-        """消费消息
-
-        消费指定队列中的消息。可同时消费多条消息，每次消费的消息负载不超过512KB。  当队列中消息较少时，单次消费返回的消息数量可能会少于指定条数，但多次消费最终可获取全部消息，当队列为空时，返回为空。  每个消费组只支持一种Label规则，如果第二次消费更换了Label规则，则消费失败。
-
-        :param ConsumeMessagesRequest request
-        :return: ConsumeMessagesResponse
-        """
-
         all_params = ['queue_id', 'consumer_group_id', 'max_msgs', 'time_wait', 'ack_wait', 'tag', 'tag_type']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -392,26 +390,25 @@ class DmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_consumer_group(self, request):
         """创建消费组
 
-        创建消费组。  可同时为指定队列创建多个消费组。  > 创建消费组后系统内部完成初始化需要1-3秒，如果创建消费组后立即进行操作，可能会导致消费失败。建议3秒后再操作该队列。
+        创建消费组。
+        
+        可同时为指定队列创建多个消费组。
+        
+        &gt; 创建消费组后系统内部完成初始化需要1-3秒，如果创建消费组后立即进行操作，可能会导致消费失败。建议3秒后再操作该队列。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateConsumerGroupRequest request
-        :return: CreateConsumerGroupResponse
+        :param request: Request instance for CreateConsumerGroup
+        :type request: :class:`huaweicloudsdkdms.v2.CreateConsumerGroupRequest`
+        :rtype: :class:`huaweicloudsdkdms.v2.CreateConsumerGroupResponse`
         """
         return self.create_consumer_group_with_http_info(request)
 
     def create_consumer_group_with_http_info(self, request):
-        """创建消费组
-
-        创建消费组。  可同时为指定队列创建多个消费组。  > 创建消费组后系统内部完成初始化需要1-3秒，如果创建消费组后立即进行操作，可能会导致消费失败。建议3秒后再操作该队列。
-
-        :param CreateConsumerGroupRequest request
-        :return: CreateConsumerGroupResponse
-        """
-
         all_params = ['queue_id', 'create_consumer_group_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -457,26 +454,22 @@ class DmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_queue(self, request):
         """创建队列
 
-        每个project_id默认只能创建30个队列。 > 创建队列时系统内部完成初始化需要1-3秒，如果创建队列后立即进行操作，可能会导致生产消息、消费消息、查询队列详情、创建消费组和删除队列等操作失败。建议3秒后再操作该队列。
+        每个project_id默认只能创建30个队列。
+        &gt; 创建队列时系统内部完成初始化需要1-3秒，如果创建队列后立即进行操作，可能会导致生产消息、消费消息、查询队列详情、创建消费组和删除队列等操作失败。建议3秒后再操作该队列。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateQueueRequest request
-        :return: CreateQueueResponse
+        :param request: Request instance for CreateQueue
+        :type request: :class:`huaweicloudsdkdms.v2.CreateQueueRequest`
+        :rtype: :class:`huaweicloudsdkdms.v2.CreateQueueResponse`
         """
         return self.create_queue_with_http_info(request)
 
     def create_queue_with_http_info(self, request):
-        """创建队列
-
-        每个project_id默认只能创建30个队列。 > 创建队列时系统内部完成初始化需要1-3秒，如果创建队列后立即进行操作，可能会导致生产消息、消费消息、查询队列详情、创建消费组和删除队列等操作失败。建议3秒后再操作该队列。
-
-        :param CreateQueueRequest request
-        :return: CreateQueueResponse
-        """
-
         all_params = ['create_queue_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -520,26 +513,21 @@ class DmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_queue(self, request):
         """删除指定队列
 
         删除指定的队列。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteQueueRequest request
-        :return: DeleteQueueResponse
+        :param request: Request instance for DeleteQueue
+        :type request: :class:`huaweicloudsdkdms.v2.DeleteQueueRequest`
+        :rtype: :class:`huaweicloudsdkdms.v2.DeleteQueueResponse`
         """
         return self.delete_queue_with_http_info(request)
 
     def delete_queue_with_http_info(self, request):
-        """删除指定队列
-
-        删除指定的队列。
-
-        :param DeleteQueueRequest request
-        :return: DeleteQueueResponse
-        """
-
         all_params = ['queue_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -583,26 +571,21 @@ class DmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_specified_consumer_group(self, request):
         """删除指定消费组
 
         删除指定消费组。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteSpecifiedConsumerGroupRequest request
-        :return: DeleteSpecifiedConsumerGroupResponse
+        :param request: Request instance for DeleteSpecifiedConsumerGroup
+        :type request: :class:`huaweicloudsdkdms.v2.DeleteSpecifiedConsumerGroupRequest`
+        :rtype: :class:`huaweicloudsdkdms.v2.DeleteSpecifiedConsumerGroupResponse`
         """
         return self.delete_specified_consumer_group_with_http_info(request)
 
     def delete_specified_consumer_group_with_http_info(self, request):
-        """删除指定消费组
-
-        删除指定消费组。
-
-        :param DeleteSpecifiedConsumerGroupRequest request
-        :return: DeleteSpecifiedConsumerGroupResponse
-        """
-
         all_params = ['queue_id', 'group_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -648,26 +631,21 @@ class DmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_consumer_groups(self, request):
         """查看指定队列的所有消费组
 
         获取指定队列的所有消费组。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListConsumerGroupsRequest request
-        :return: ListConsumerGroupsResponse
+        :param request: Request instance for ListConsumerGroups
+        :type request: :class:`huaweicloudsdkdms.v2.ListConsumerGroupsRequest`
+        :rtype: :class:`huaweicloudsdkdms.v2.ListConsumerGroupsResponse`
         """
         return self.list_consumer_groups_with_http_info(request)
 
     def list_consumer_groups_with_http_info(self, request):
-        """查看指定队列的所有消费组
-
-        获取指定队列的所有消费组。
-
-        :param ListConsumerGroupsRequest request
-        :return: ListConsumerGroupsResponse
-        """
-
         all_params = ['queue_id', 'include_deadletter', 'include_messages_num', 'page_size', 'current_page']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -719,26 +697,21 @@ class DmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_queues(self, request):
         """查看所有队列
 
         查看所有队列。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListQueuesRequest request
-        :return: ListQueuesResponse
+        :param request: Request instance for ListQueues
+        :type request: :class:`huaweicloudsdkdms.v2.ListQueuesRequest`
+        :rtype: :class:`huaweicloudsdkdms.v2.ListQueuesResponse`
         """
         return self.list_queues_with_http_info(request)
 
     def list_queues_with_http_info(self, request):
-        """查看所有队列
-
-        查看所有队列。
-
-        :param ListQueuesRequest request
-        :return: ListQueuesResponse
-        """
-
         all_params = ['include_deadletter']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -782,26 +755,25 @@ class DmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def send_messages(self, request):
         """向指定队列发送消息
 
-        向指定队列发送消息，可同时发送多条消息。  - 每次最多发送10条。 - 每次发送的消息总负载不超过512KB。 - Kafka队列的消息保存时间在创建队列时可以设置，可设置范围为1~72小时。其他队列的消息最大保存时长为72小时。
+        向指定队列发送消息，可同时发送多条消息。
+        
+        - 每次最多发送10条。
+        - 每次发送的消息总负载不超过512KB。
+        - Kafka队列的消息保存时间在创建队列时可以设置，可设置范围为1~72小时。其他队列的消息最大保存时长为72小时。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param SendMessagesRequest request
-        :return: SendMessagesResponse
+        :param request: Request instance for SendMessages
+        :type request: :class:`huaweicloudsdkdms.v2.SendMessagesRequest`
+        :rtype: :class:`huaweicloudsdkdms.v2.SendMessagesResponse`
         """
         return self.send_messages_with_http_info(request)
 
     def send_messages_with_http_info(self, request):
-        """向指定队列发送消息
-
-        向指定队列发送消息，可同时发送多条消息。  - 每次最多发送10条。 - 每次发送的消息总负载不超过512KB。 - Kafka队列的消息保存时间在创建队列时可以设置，可设置范围为1~72小时。其他队列的消息最大保存时长为72小时。
-
-        :param SendMessagesRequest request
-        :return: SendMessagesResponse
-        """
-
         all_params = ['queue_id', 'send_messages_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -847,26 +819,21 @@ class DmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_queue(self, request):
         """查看指定队列
 
         查看指定的队列。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowQueueRequest request
-        :return: ShowQueueResponse
+        :param request: Request instance for ShowQueue
+        :type request: :class:`huaweicloudsdkdms.v2.ShowQueueRequest`
+        :rtype: :class:`huaweicloudsdkdms.v2.ShowQueueResponse`
         """
         return self.show_queue_with_http_info(request)
 
     def show_queue_with_http_info(self, request):
-        """查看指定队列
-
-        查看指定的队列。
-
-        :param ShowQueueRequest request
-        :return: ShowQueueResponse
-        """
-
         all_params = ['queue_id', 'include_deadletter']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -912,26 +879,21 @@ class DmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_queue_project_tags(self, request):
         """查询项目标签
 
         查询项目标签。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowQueueProjectTagsRequest request
-        :return: ShowQueueProjectTagsResponse
+        :param request: Request instance for ShowQueueProjectTags
+        :type request: :class:`huaweicloudsdkdms.v2.ShowQueueProjectTagsRequest`
+        :rtype: :class:`huaweicloudsdkdms.v2.ShowQueueProjectTagsResponse`
         """
         return self.show_queue_project_tags_with_http_info(request)
 
     def show_queue_project_tags_with_http_info(self, request):
-        """查询项目标签
-
-        查询项目标签。
-
-        :param ShowQueueProjectTagsRequest request
-        :return: ShowQueueProjectTagsResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -973,26 +935,21 @@ class DmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_queue_tags(self, request):
         """查询队列标签
 
         查询队列标签。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowQueueTagsRequest request
-        :return: ShowQueueTagsResponse
+        :param request: Request instance for ShowQueueTags
+        :type request: :class:`huaweicloudsdkdms.v2.ShowQueueTagsRequest`
+        :rtype: :class:`huaweicloudsdkdms.v2.ShowQueueTagsResponse`
         """
         return self.show_queue_tags_with_http_info(request)
 
     def show_queue_tags_with_http_info(self, request):
-        """查询队列标签
-
-        查询队列标签。
-
-        :param ShowQueueTagsRequest request
-        :return: ShowQueueTagsResponse
-        """
-
         all_params = ['queue_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1036,26 +993,21 @@ class DmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_quotas(self, request):
         """查看租户配额
 
         查看当前项目的配额。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowQuotasRequest request
-        :return: ShowQuotasResponse
+        :param request: Request instance for ShowQuotas
+        :type request: :class:`huaweicloudsdkdms.v2.ShowQuotasRequest`
+        :rtype: :class:`huaweicloudsdkdms.v2.ShowQuotasResponse`
         """
         return self.show_quotas_with_http_info(request)
 
     def show_quotas_with_http_info(self, request):
-        """查看租户配额
-
-        查看当前项目的配额。
-
-        :param ShowQuotasRequest request
-        :return: ShowQuotasResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1096,7 +1048,6 @@ class DmsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

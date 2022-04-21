@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FirewallPolicy:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class FirewallPolicy:
     }
 
     def __init__(self, id=None, name=None, firewall_rules=None, insert_after=None, insert_before=None):
-        """FirewallPolicy - a model defined in huaweicloud sdk"""
+        """FirewallPolicy
+
+        The model defined in huaweicloud sdk
+
+        :param id: 网络ACL策略ID。
+        :type id: str
+        :param name: 网络ACL策略名称。
+        :type name: str
+        :param firewall_rules: 网络ACL规则列表对象。
+        :type firewall_rules: list[:class:`huaweicloudsdkiec.v1.FirewallRule`]
+        :param insert_after: ACL规则ID，表示在此ACL规则之后添加ACL规则
+        :type insert_after: str
+        :param insert_before: ACL规则ID，表示在此ACL规则之前添加ACL规则
+        :type insert_before: str
+        """
         
         
 
@@ -76,7 +89,7 @@ class FirewallPolicy:
         网络ACL策略ID。
 
         :param id: The id of this FirewallPolicy.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -98,7 +111,7 @@ class FirewallPolicy:
         网络ACL策略名称。
 
         :param name: The name of this FirewallPolicy.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -109,7 +122,7 @@ class FirewallPolicy:
         网络ACL规则列表对象。
 
         :return: The firewall_rules of this FirewallPolicy.
-        :rtype: list[FirewallRule]
+        :rtype: list[:class:`huaweicloudsdkiec.v1.FirewallRule`]
         """
         return self._firewall_rules
 
@@ -120,7 +133,7 @@ class FirewallPolicy:
         网络ACL规则列表对象。
 
         :param firewall_rules: The firewall_rules of this FirewallPolicy.
-        :type: list[FirewallRule]
+        :type firewall_rules: list[:class:`huaweicloudsdkiec.v1.FirewallRule`]
         """
         self._firewall_rules = firewall_rules
 
@@ -142,7 +155,7 @@ class FirewallPolicy:
         ACL规则ID，表示在此ACL规则之后添加ACL规则
 
         :param insert_after: The insert_after of this FirewallPolicy.
-        :type: str
+        :type insert_after: str
         """
         self._insert_after = insert_after
 
@@ -164,7 +177,7 @@ class FirewallPolicy:
         ACL规则ID，表示在此ACL规则之前添加ACL规则
 
         :param insert_before: The insert_before of this FirewallPolicy.
-        :type: str
+        :type insert_before: str
         """
         self._insert_before = insert_before
 

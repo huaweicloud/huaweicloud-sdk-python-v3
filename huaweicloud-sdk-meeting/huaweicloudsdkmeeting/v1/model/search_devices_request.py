@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SearchDevicesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class SearchDevicesRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, offset=None, limit=None, search_key=None, model=None, dept_code=None, enable_sub_dept=None):
-        """SearchDevicesRequest - a model defined in huaweicloud sdk"""
+        """SearchDevicesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        :type x_request_id: str
+        :param accept_language: 语言参数，默认为中文zh-CN, 英文为en-US
+        :type accept_language: str
+        :param offset: 查询偏移量，若超过最大数量，则返回最后一页。
+        :type offset: int
+        :param limit: 查询数量 默认值：0 
+        :type limit: int
+        :param search_key: 搜索条件。支持名称、SN模糊查询。
+        :type search_key: str
+        :param model: 终端型号，枚举类型。当前支持TE系列硬件终端，具体的终端类型可以通过获取所有终端类型接口查询。 maxLength：128 minLength：0
+        :type model: str
+        :param dept_code: 部门编号，默认为根部门 默认值：1 maxLength：32 minLength：0
+        :type dept_code: str
+        :param enable_sub_dept: 是否查询子部门 默认值：true 
+        :type enable_sub_dept: bool
+        """
         
         
 
@@ -93,7 +112,7 @@ class SearchDevicesRequest:
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
 
         :param x_request_id: The x_request_id of this SearchDevicesRequest.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 
@@ -115,7 +134,7 @@ class SearchDevicesRequest:
         语言参数，默认为中文zh-CN, 英文为en-US
 
         :param accept_language: The accept_language of this SearchDevicesRequest.
-        :type: str
+        :type accept_language: str
         """
         self._accept_language = accept_language
 
@@ -137,7 +156,7 @@ class SearchDevicesRequest:
         查询偏移量，若超过最大数量，则返回最后一页。
 
         :param offset: The offset of this SearchDevicesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -159,7 +178,7 @@ class SearchDevicesRequest:
         查询数量 默认值：0 
 
         :param limit: The limit of this SearchDevicesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -181,7 +200,7 @@ class SearchDevicesRequest:
         搜索条件。支持名称、SN模糊查询。
 
         :param search_key: The search_key of this SearchDevicesRequest.
-        :type: str
+        :type search_key: str
         """
         self._search_key = search_key
 
@@ -203,7 +222,7 @@ class SearchDevicesRequest:
         终端型号，枚举类型。当前支持TE系列硬件终端，具体的终端类型可以通过获取所有终端类型接口查询。 maxLength：128 minLength：0
 
         :param model: The model of this SearchDevicesRequest.
-        :type: str
+        :type model: str
         """
         self._model = model
 
@@ -225,7 +244,7 @@ class SearchDevicesRequest:
         部门编号，默认为根部门 默认值：1 maxLength：32 minLength：0
 
         :param dept_code: The dept_code of this SearchDevicesRequest.
-        :type: str
+        :type dept_code: str
         """
         self._dept_code = dept_code
 
@@ -247,7 +266,7 @@ class SearchDevicesRequest:
         是否查询子部门 默认值：true 
 
         :param enable_sub_dept: The enable_sub_dept of this SearchDevicesRequest.
-        :type: bool
+        :type enable_sub_dept: bool
         """
         self._enable_sub_dept = enable_sub_dept
 

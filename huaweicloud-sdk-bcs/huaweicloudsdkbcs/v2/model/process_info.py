@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ProcessInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ProcessInfo:
     }
 
     def __init__(self, step_name=None, status=None, detail=None, sub_steps=None, serial_num=None):
-        """ProcessInfo - a model defined in huaweicloud sdk"""
+        """ProcessInfo
+
+        The model defined in huaweicloud sdk
+
+        :param step_name: 操作名
+        :type step_name: str
+        :param status: 操作状态
+        :type status: str
+        :param detail: 操作详情
+        :type detail: str
+        :param sub_steps: 子操作, \&quot;map[string][SubDetail] key:子操作名 value:子操作结果\&quot;
+        :type sub_steps: dict(str, SubDetail)
+        :param serial_num: 序列号
+        :type serial_num: int
+        """
         
         
 
@@ -78,7 +91,7 @@ class ProcessInfo:
         操作名
 
         :param step_name: The step_name of this ProcessInfo.
-        :type: str
+        :type step_name: str
         """
         self._step_name = step_name
 
@@ -100,7 +113,7 @@ class ProcessInfo:
         操作状态
 
         :param status: The status of this ProcessInfo.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -122,7 +135,7 @@ class ProcessInfo:
         操作详情
 
         :param detail: The detail of this ProcessInfo.
-        :type: str
+        :type detail: str
         """
         self._detail = detail
 
@@ -144,7 +157,7 @@ class ProcessInfo:
         子操作, \"map[string][SubDetail] key:子操作名 value:子操作结果\"
 
         :param sub_steps: The sub_steps of this ProcessInfo.
-        :type: dict(str, SubDetail)
+        :type sub_steps: dict(str, SubDetail)
         """
         self._sub_steps = sub_steps
 
@@ -166,7 +179,7 @@ class ProcessInfo:
         序列号
 
         :param serial_num: The serial_num of this ProcessInfo.
-        :type: int
+        :type serial_num: int
         """
         self._serial_num = serial_num
 

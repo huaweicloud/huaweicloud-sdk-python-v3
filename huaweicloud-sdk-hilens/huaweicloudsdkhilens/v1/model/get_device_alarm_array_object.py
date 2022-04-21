@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GetDeviceAlarmArrayObject:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class GetDeviceAlarmArrayObject:
     }
 
     def __init__(self, id=None, name=None, alarm_id=None, level=None, platform=None, impact=None, detail=None, reason=None, deal_suggestion=None, create_time=None):
-        """GetDeviceAlarmArrayObject - a model defined in huaweicloud sdk"""
+        """GetDeviceAlarmArrayObject
+
+        The model defined in huaweicloud sdk
+
+        :param id: 设备告警记录ID
+        :type id: str
+        :param name: 设备告警名称
+        :type name: str
+        :param alarm_id: 设备告警ID
+        :type alarm_id: int
+        :param level: 设备告警等级，紧急告警(critical)，严重告警(major)，一般告警(minor)
+        :type level: str
+        :param platform: 设备平台
+        :type platform: str
+        :param impact: 设备告警的影响
+        :type impact: str
+        :param detail: 设备告警详情内容
+        :type detail: str
+        :param reason: 设备告警原因
+        :type reason: str
+        :param deal_suggestion: 设备告警处理建议
+        :type deal_suggestion: str
+        :param create_time: 创建时间（时间戳）
+        :type create_time: int
+        """
         
         
 
@@ -103,7 +126,7 @@ class GetDeviceAlarmArrayObject:
         设备告警记录ID
 
         :param id: The id of this GetDeviceAlarmArrayObject.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -125,7 +148,7 @@ class GetDeviceAlarmArrayObject:
         设备告警名称
 
         :param name: The name of this GetDeviceAlarmArrayObject.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -147,7 +170,7 @@ class GetDeviceAlarmArrayObject:
         设备告警ID
 
         :param alarm_id: The alarm_id of this GetDeviceAlarmArrayObject.
-        :type: int
+        :type alarm_id: int
         """
         self._alarm_id = alarm_id
 
@@ -169,7 +192,7 @@ class GetDeviceAlarmArrayObject:
         设备告警等级，紧急告警(critical)，严重告警(major)，一般告警(minor)
 
         :param level: The level of this GetDeviceAlarmArrayObject.
-        :type: str
+        :type level: str
         """
         self._level = level
 
@@ -191,7 +214,7 @@ class GetDeviceAlarmArrayObject:
         设备平台
 
         :param platform: The platform of this GetDeviceAlarmArrayObject.
-        :type: str
+        :type platform: str
         """
         self._platform = platform
 
@@ -213,7 +236,7 @@ class GetDeviceAlarmArrayObject:
         设备告警的影响
 
         :param impact: The impact of this GetDeviceAlarmArrayObject.
-        :type: str
+        :type impact: str
         """
         self._impact = impact
 
@@ -235,7 +258,7 @@ class GetDeviceAlarmArrayObject:
         设备告警详情内容
 
         :param detail: The detail of this GetDeviceAlarmArrayObject.
-        :type: str
+        :type detail: str
         """
         self._detail = detail
 
@@ -257,7 +280,7 @@ class GetDeviceAlarmArrayObject:
         设备告警原因
 
         :param reason: The reason of this GetDeviceAlarmArrayObject.
-        :type: str
+        :type reason: str
         """
         self._reason = reason
 
@@ -279,7 +302,7 @@ class GetDeviceAlarmArrayObject:
         设备告警处理建议
 
         :param deal_suggestion: The deal_suggestion of this GetDeviceAlarmArrayObject.
-        :type: str
+        :type deal_suggestion: str
         """
         self._deal_suggestion = deal_suggestion
 
@@ -301,7 +324,7 @@ class GetDeviceAlarmArrayObject:
         创建时间（时间戳）
 
         :param create_time: The create_time of this GetDeviceAlarmArrayObject.
-        :type: int
+        :type create_time: int
         """
         self._create_time = create_time
 

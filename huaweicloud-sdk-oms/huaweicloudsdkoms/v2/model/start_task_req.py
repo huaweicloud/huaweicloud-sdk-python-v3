@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StartTaskReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class StartTaskReq:
     }
 
     def __init__(self, src_ak=None, src_sk=None, src_security_token=None, dst_ak=None, dst_sk=None, dst_security_token=None, source_cdn_authentication_key=None, migrate_failed_object=None):
-        """StartTaskReq - a model defined in huaweicloud sdk"""
+        """StartTaskReq
+
+        The model defined in huaweicloud sdk
+
+        :param src_ak: 源端节点AK（最大长度100个字符）。URL列表迁移任务不需要填写此参数。
+        :type src_ak: str
+        :param src_sk: 源端节点SK（最大长度100个字符）。URL列表迁移任务不需要填写此参数。
+        :type src_sk: str
+        :param src_security_token: 源端节点临时Token
+        :type src_security_token: str
+        :param dst_ak: 目的端节点AK（最大长度100个字符）。
+        :type dst_ak: str
+        :param dst_sk: 目的端节点SK（最大长度100个字符）。
+        :type dst_sk: str
+        :param dst_security_token: 目标端节点临时Token
+        :type dst_security_token: str
+        :param source_cdn_authentication_key: CDN鉴权秘钥。
+        :type source_cdn_authentication_key: str
+        :param migrate_failed_object: 迁移类型，标识是否为全量迁移，默认false（全量迁移）。 值为true时表示只重传失败对象。 值为空或者为false时表示全量迁移。
+        :type migrate_failed_object: bool
+        """
         
         
 
@@ -91,7 +110,7 @@ class StartTaskReq:
         源端节点AK（最大长度100个字符）。URL列表迁移任务不需要填写此参数。
 
         :param src_ak: The src_ak of this StartTaskReq.
-        :type: str
+        :type src_ak: str
         """
         self._src_ak = src_ak
 
@@ -113,7 +132,7 @@ class StartTaskReq:
         源端节点SK（最大长度100个字符）。URL列表迁移任务不需要填写此参数。
 
         :param src_sk: The src_sk of this StartTaskReq.
-        :type: str
+        :type src_sk: str
         """
         self._src_sk = src_sk
 
@@ -135,7 +154,7 @@ class StartTaskReq:
         源端节点临时Token
 
         :param src_security_token: The src_security_token of this StartTaskReq.
-        :type: str
+        :type src_security_token: str
         """
         self._src_security_token = src_security_token
 
@@ -157,7 +176,7 @@ class StartTaskReq:
         目的端节点AK（最大长度100个字符）。
 
         :param dst_ak: The dst_ak of this StartTaskReq.
-        :type: str
+        :type dst_ak: str
         """
         self._dst_ak = dst_ak
 
@@ -179,7 +198,7 @@ class StartTaskReq:
         目的端节点SK（最大长度100个字符）。
 
         :param dst_sk: The dst_sk of this StartTaskReq.
-        :type: str
+        :type dst_sk: str
         """
         self._dst_sk = dst_sk
 
@@ -201,7 +220,7 @@ class StartTaskReq:
         目标端节点临时Token
 
         :param dst_security_token: The dst_security_token of this StartTaskReq.
-        :type: str
+        :type dst_security_token: str
         """
         self._dst_security_token = dst_security_token
 
@@ -223,7 +242,7 @@ class StartTaskReq:
         CDN鉴权秘钥。
 
         :param source_cdn_authentication_key: The source_cdn_authentication_key of this StartTaskReq.
-        :type: str
+        :type source_cdn_authentication_key: str
         """
         self._source_cdn_authentication_key = source_cdn_authentication_key
 
@@ -245,7 +264,7 @@ class StartTaskReq:
         迁移类型，标识是否为全量迁移，默认false（全量迁移）。 值为true时表示只重传失败对象。 值为空或者为false时表示全量迁移。
 
         :param migrate_failed_object: The migrate_failed_object of this StartTaskReq.
-        :type: bool
+        :type migrate_failed_object: bool
         """
         self._migrate_failed_object = migrate_failed_object
 

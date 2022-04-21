@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DomainsWithPort:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -70,7 +69,53 @@ class DomainsWithPort:
     }
 
     def __init__(self, id=None, domain_name=None, business_type=None, user_domain_id=None, domain_status=None, cname=None, sources=None, domain_origin_host=None, https_status=None, create_time=None, modify_time=None, disabled=None, locked=None, auto_refresh_preheat=None, service_area=None, range_status=None, follow_status=None, origin_status=None, banned_reason=None, locked_reason=None, enterprise_project_id=None):
-        """DomainsWithPort - a model defined in huaweicloud sdk"""
+        """DomainsWithPort
+
+        The model defined in huaweicloud sdk
+
+        :param id: 加速域名ID。
+        :type id: str
+        :param domain_name: 加速域名。
+        :type domain_name: str
+        :param business_type: 域名业务类型，若为web，则表示类型为网站加速；若为download，则表示业务类型为文件下载加速；若为video，则表示业务类型为点播加速；若为wholeSite，则表示类型为全站加速。
+        :type business_type: str
+        :param user_domain_id: 域名所属用户的domain_id。
+        :type user_domain_id: str
+        :param domain_status: 加速域名状态。取值意义： - online表示“已开启” - offline表示“已停用” - configuring表示“配置中” - configure_failed表示“配置失败” - checking表示“审核中” - check_failed表示“审核未通过” - deleting表示“删除中”
+        :type domain_status: str
+        :param cname: 加速域名对应的CNAME。
+        :type cname: str
+        :param sources: 源站域名或源站IP，源站为IP类型时，仅支持IPv4，如需传入多个源站IP，以多个源站对象传入，除IP其他参数请保持一致，主源站最多支持15个源站IP对象，备源站最多支持15个源站IP对象；源站为域名类型时仅支持1个源站对象。不支持IP源站和域名源站混用。
+        :type sources: list[:class:`huaweicloudsdkcdn.v1.SourceWithPort`]
+        :param domain_origin_host: 
+        :type domain_origin_host: :class:`huaweicloudsdkcdn.v1.DomainOriginHost`
+        :param https_status: 是否开启HTTPS加速。
+        :type https_status: int
+        :param create_time: 域名创建时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
+        :type create_time: int
+        :param modify_time: 域名修改时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
+        :type modify_time: int
+        :param disabled: 封禁状态（0代表未禁用；1代表禁用）。
+        :type disabled: int
+        :param locked: 锁定状态（0代表未锁定；1代表锁定）。
+        :type locked: int
+        :param auto_refresh_preheat: 自动刷新预热（0代表关闭；1代表打开）
+        :type auto_refresh_preheat: int
+        :param service_area: 华为云CDN提供的加速服务范围，包含：mainland_china中国大陆、outside_mainland_china中国大陆境外、global全球。
+        :type service_area: str
+        :param range_status: Range回源状态。
+        :type range_status: str
+        :param follow_status: 回源跟随状态。
+        :type follow_status: str
+        :param origin_status: 是否暂停源站回源。
+        :type origin_status: str
+        :param banned_reason: 域名禁用原因
+        :type banned_reason: str
+        :param locked_reason: 域名锁定原因
+        :type locked_reason: str
+        :param enterprise_project_id: 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子账号调用接口时，该参数必传。
+        :type enterprise_project_id: str
+        """
         
         
 
@@ -158,7 +203,7 @@ class DomainsWithPort:
         加速域名ID。
 
         :param id: The id of this DomainsWithPort.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -180,7 +225,7 @@ class DomainsWithPort:
         加速域名。
 
         :param domain_name: The domain_name of this DomainsWithPort.
-        :type: str
+        :type domain_name: str
         """
         self._domain_name = domain_name
 
@@ -202,7 +247,7 @@ class DomainsWithPort:
         域名业务类型，若为web，则表示类型为网站加速；若为download，则表示业务类型为文件下载加速；若为video，则表示业务类型为点播加速；若为wholeSite，则表示类型为全站加速。
 
         :param business_type: The business_type of this DomainsWithPort.
-        :type: str
+        :type business_type: str
         """
         self._business_type = business_type
 
@@ -224,7 +269,7 @@ class DomainsWithPort:
         域名所属用户的domain_id。
 
         :param user_domain_id: The user_domain_id of this DomainsWithPort.
-        :type: str
+        :type user_domain_id: str
         """
         self._user_domain_id = user_domain_id
 
@@ -246,7 +291,7 @@ class DomainsWithPort:
         加速域名状态。取值意义： - online表示“已开启” - offline表示“已停用” - configuring表示“配置中” - configure_failed表示“配置失败” - checking表示“审核中” - check_failed表示“审核未通过” - deleting表示“删除中”
 
         :param domain_status: The domain_status of this DomainsWithPort.
-        :type: str
+        :type domain_status: str
         """
         self._domain_status = domain_status
 
@@ -268,7 +313,7 @@ class DomainsWithPort:
         加速域名对应的CNAME。
 
         :param cname: The cname of this DomainsWithPort.
-        :type: str
+        :type cname: str
         """
         self._cname = cname
 
@@ -279,7 +324,7 @@ class DomainsWithPort:
         源站域名或源站IP，源站为IP类型时，仅支持IPv4，如需传入多个源站IP，以多个源站对象传入，除IP其他参数请保持一致，主源站最多支持15个源站IP对象，备源站最多支持15个源站IP对象；源站为域名类型时仅支持1个源站对象。不支持IP源站和域名源站混用。
 
         :return: The sources of this DomainsWithPort.
-        :rtype: list[SourceWithPort]
+        :rtype: list[:class:`huaweicloudsdkcdn.v1.SourceWithPort`]
         """
         return self._sources
 
@@ -290,7 +335,7 @@ class DomainsWithPort:
         源站域名或源站IP，源站为IP类型时，仅支持IPv4，如需传入多个源站IP，以多个源站对象传入，除IP其他参数请保持一致，主源站最多支持15个源站IP对象，备源站最多支持15个源站IP对象；源站为域名类型时仅支持1个源站对象。不支持IP源站和域名源站混用。
 
         :param sources: The sources of this DomainsWithPort.
-        :type: list[SourceWithPort]
+        :type sources: list[:class:`huaweicloudsdkcdn.v1.SourceWithPort`]
         """
         self._sources = sources
 
@@ -300,7 +345,7 @@ class DomainsWithPort:
 
 
         :return: The domain_origin_host of this DomainsWithPort.
-        :rtype: DomainOriginHost
+        :rtype: :class:`huaweicloudsdkcdn.v1.DomainOriginHost`
         """
         return self._domain_origin_host
 
@@ -310,7 +355,7 @@ class DomainsWithPort:
 
 
         :param domain_origin_host: The domain_origin_host of this DomainsWithPort.
-        :type: DomainOriginHost
+        :type domain_origin_host: :class:`huaweicloudsdkcdn.v1.DomainOriginHost`
         """
         self._domain_origin_host = domain_origin_host
 
@@ -332,7 +377,7 @@ class DomainsWithPort:
         是否开启HTTPS加速。
 
         :param https_status: The https_status of this DomainsWithPort.
-        :type: int
+        :type https_status: int
         """
         self._https_status = https_status
 
@@ -354,7 +399,7 @@ class DomainsWithPort:
         域名创建时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
 
         :param create_time: The create_time of this DomainsWithPort.
-        :type: int
+        :type create_time: int
         """
         self._create_time = create_time
 
@@ -376,7 +421,7 @@ class DomainsWithPort:
         域名修改时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
 
         :param modify_time: The modify_time of this DomainsWithPort.
-        :type: int
+        :type modify_time: int
         """
         self._modify_time = modify_time
 
@@ -398,7 +443,7 @@ class DomainsWithPort:
         封禁状态（0代表未禁用；1代表禁用）。
 
         :param disabled: The disabled of this DomainsWithPort.
-        :type: int
+        :type disabled: int
         """
         self._disabled = disabled
 
@@ -420,7 +465,7 @@ class DomainsWithPort:
         锁定状态（0代表未锁定；1代表锁定）。
 
         :param locked: The locked of this DomainsWithPort.
-        :type: int
+        :type locked: int
         """
         self._locked = locked
 
@@ -442,7 +487,7 @@ class DomainsWithPort:
         自动刷新预热（0代表关闭；1代表打开）
 
         :param auto_refresh_preheat: The auto_refresh_preheat of this DomainsWithPort.
-        :type: int
+        :type auto_refresh_preheat: int
         """
         self._auto_refresh_preheat = auto_refresh_preheat
 
@@ -464,7 +509,7 @@ class DomainsWithPort:
         华为云CDN提供的加速服务范围，包含：mainland_china中国大陆、outside_mainland_china中国大陆境外、global全球。
 
         :param service_area: The service_area of this DomainsWithPort.
-        :type: str
+        :type service_area: str
         """
         self._service_area = service_area
 
@@ -486,7 +531,7 @@ class DomainsWithPort:
         Range回源状态。
 
         :param range_status: The range_status of this DomainsWithPort.
-        :type: str
+        :type range_status: str
         """
         self._range_status = range_status
 
@@ -508,7 +553,7 @@ class DomainsWithPort:
         回源跟随状态。
 
         :param follow_status: The follow_status of this DomainsWithPort.
-        :type: str
+        :type follow_status: str
         """
         self._follow_status = follow_status
 
@@ -530,7 +575,7 @@ class DomainsWithPort:
         是否暂停源站回源。
 
         :param origin_status: The origin_status of this DomainsWithPort.
-        :type: str
+        :type origin_status: str
         """
         self._origin_status = origin_status
 
@@ -552,7 +597,7 @@ class DomainsWithPort:
         域名禁用原因
 
         :param banned_reason: The banned_reason of this DomainsWithPort.
-        :type: str
+        :type banned_reason: str
         """
         self._banned_reason = banned_reason
 
@@ -574,7 +619,7 @@ class DomainsWithPort:
         域名锁定原因
 
         :param locked_reason: The locked_reason of this DomainsWithPort.
-        :type: str
+        :type locked_reason: str
         """
         self._locked_reason = locked_reason
 
@@ -596,7 +641,7 @@ class DomainsWithPort:
         当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子账号调用接口时，该参数必传。
 
         :param enterprise_project_id: The enterprise_project_id of this DomainsWithPort.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 

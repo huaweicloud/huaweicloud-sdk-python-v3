@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PublicKeyList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class PublicKeyList:
     }
 
     def __init__(self, sshkey=None, total=None):
-        """PublicKeyList - a model defined in huaweicloud sdk"""
+        """PublicKeyList
+
+        The model defined in huaweicloud sdk
+
+        :param sshkey: 密钥列表
+        :type sshkey: list[:class:`huaweicloudsdkcodehub.v3.PublicKey`]
+        :param total: 密钥总数
+        :type total: int
+        """
         
         
 
@@ -52,7 +59,7 @@ class PublicKeyList:
         密钥列表
 
         :return: The sshkey of this PublicKeyList.
-        :rtype: list[PublicKey]
+        :rtype: list[:class:`huaweicloudsdkcodehub.v3.PublicKey`]
         """
         return self._sshkey
 
@@ -63,7 +70,7 @@ class PublicKeyList:
         密钥列表
 
         :param sshkey: The sshkey of this PublicKeyList.
-        :type: list[PublicKey]
+        :type sshkey: list[:class:`huaweicloudsdkcodehub.v3.PublicKey`]
         """
         self._sshkey = sshkey
 
@@ -85,7 +92,7 @@ class PublicKeyList:
         密钥总数
 
         :param total: The total of this PublicKeyList.
-        :type: int
+        :type total: int
         """
         self._total = total
 

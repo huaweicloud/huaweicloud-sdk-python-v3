@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SubCustomerInfoV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class SubCustomerInfoV2:
     }
 
     def __init__(self, id=None, name=None, display_name=None, status=None, org_id=None, org_name=None):
-        """SubCustomerInfoV2 - a model defined in huaweicloud sdk"""
+        """SubCustomerInfoV2
+
+        The model defined in huaweicloud sdk
+
+        :param id: 企业子账号的客户ID。
+        :type id: str
+        :param name: 企业子账号的用户名。
+        :type name: str
+        :param display_name: 企业子账号的显示名称。 不限制特殊字符。
+        :type display_name: str
+        :param status: 子账号状态： 1：正常2：创建中3：关闭中4：已关闭101：子账号注册中102：子账号待激活
+        :type status: int
+        :param org_id: 子账号归属的组织单元ID。
+        :type org_id: str
+        :param org_name: 子账号归属的组织单元名称。  说明： 当子账号归属的组织是企业组织根节点时，本属性可能为空。
+        :type org_name: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class SubCustomerInfoV2:
         企业子账号的客户ID。
 
         :param id: The id of this SubCustomerInfoV2.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -105,7 +120,7 @@ class SubCustomerInfoV2:
         企业子账号的用户名。
 
         :param name: The name of this SubCustomerInfoV2.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -127,7 +142,7 @@ class SubCustomerInfoV2:
         企业子账号的显示名称。 不限制特殊字符。
 
         :param display_name: The display_name of this SubCustomerInfoV2.
-        :type: str
+        :type display_name: str
         """
         self._display_name = display_name
 
@@ -149,7 +164,7 @@ class SubCustomerInfoV2:
         子账号状态： 1：正常2：创建中3：关闭中4：已关闭101：子账号注册中102：子账号待激活
 
         :param status: The status of this SubCustomerInfoV2.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -171,7 +186,7 @@ class SubCustomerInfoV2:
         子账号归属的组织单元ID。
 
         :param org_id: The org_id of this SubCustomerInfoV2.
-        :type: str
+        :type org_id: str
         """
         self._org_id = org_id
 
@@ -193,7 +208,7 @@ class SubCustomerInfoV2:
         子账号归属的组织单元名称。  说明： 当子账号归属的组织是企业组织根节点时，本属性可能为空。
 
         :param org_name: The org_name of this SubCustomerInfoV2.
-        :type: str
+        :type org_name: str
         """
         self._org_name = org_name
 

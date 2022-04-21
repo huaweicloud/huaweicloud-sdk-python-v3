@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AsscoiateReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class AsscoiateReq:
     }
 
     def __init__(self, subnets=None):
-        """AsscoiateReq - a model defined in huaweicloud sdk"""
+        """AsscoiateReq
+
+        The model defined in huaweicloud sdk
+
+        :param subnets: 
+        :type subnets: :class:`huaweicloudsdkvpc.v2.AssociateRouteTableAndSubnetReq`
+        """
         
         
 
@@ -45,7 +50,7 @@ class AsscoiateReq:
 
 
         :return: The subnets of this AsscoiateReq.
-        :rtype: AssociateRouteTableAndSubnetReq
+        :rtype: :class:`huaweicloudsdkvpc.v2.AssociateRouteTableAndSubnetReq`
         """
         return self._subnets
 
@@ -55,7 +60,7 @@ class AsscoiateReq:
 
 
         :param subnets: The subnets of this AsscoiateReq.
-        :type: AssociateRouteTableAndSubnetReq
+        :type subnets: :class:`huaweicloudsdkvpc.v2.AssociateRouteTableAndSubnetReq`
         """
         self._subnets = subnets
 

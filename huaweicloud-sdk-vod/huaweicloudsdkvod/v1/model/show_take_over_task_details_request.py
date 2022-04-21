@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowTakeOverTaskDetailsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowTakeOverTaskDetailsRequest:
     }
 
     def __init__(self, task_id=None, page=None, size=None):
-        """ShowTakeOverTaskDetailsRequest - a model defined in huaweicloud sdk"""
+        """ShowTakeOverTaskDetailsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 任务ID。
+        :type task_id: str
+        :param page: 分页编号，默认为0。
+        :type page: int
+        :param size: 每页记录数。  默认10，范围[1,100]
+        :type size: int
+        """
         
         
 
@@ -67,7 +76,7 @@ class ShowTakeOverTaskDetailsRequest:
         任务ID。
 
         :param task_id: The task_id of this ShowTakeOverTaskDetailsRequest.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -89,7 +98,7 @@ class ShowTakeOverTaskDetailsRequest:
         分页编号，默认为0。
 
         :param page: The page of this ShowTakeOverTaskDetailsRequest.
-        :type: int
+        :type page: int
         """
         self._page = page
 
@@ -111,7 +120,7 @@ class ShowTakeOverTaskDetailsRequest:
         每页记录数。  默认10，范围[1,100]
 
         :param size: The size of this ShowTakeOverTaskDetailsRequest.
-        :type: int
+        :type size: int
         """
         self._size = size
 

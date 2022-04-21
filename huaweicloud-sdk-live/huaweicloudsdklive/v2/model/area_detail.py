@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AreaDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class AreaDetail:
     }
 
     def __init__(self, area=None, summary=None, detail=None):
-        """AreaDetail - a model defined in huaweicloud sdk"""
+        """AreaDetail
+
+        The model defined in huaweicloud sdk
+
+        :param area: 各个计费大区名称，例如CN
+        :type area: str
+        :param summary: 时间戳及相应时间的指标数值
+        :type summary: list[:class:`huaweicloudsdklive.v2.TimeValue`]
+        :param detail: 各个大区下的具体省份、区域、国家的时间戳及相应时间的指标数值
+        :type detail: list[:class:`huaweicloudsdklive.v2.AreaTimeValue`]
+        """
         
         
 
@@ -65,7 +74,7 @@ class AreaDetail:
         各个计费大区名称，例如CN
 
         :param area: The area of this AreaDetail.
-        :type: str
+        :type area: str
         """
         self._area = area
 
@@ -76,7 +85,7 @@ class AreaDetail:
         时间戳及相应时间的指标数值
 
         :return: The summary of this AreaDetail.
-        :rtype: list[TimeValue]
+        :rtype: list[:class:`huaweicloudsdklive.v2.TimeValue`]
         """
         return self._summary
 
@@ -87,7 +96,7 @@ class AreaDetail:
         时间戳及相应时间的指标数值
 
         :param summary: The summary of this AreaDetail.
-        :type: list[TimeValue]
+        :type summary: list[:class:`huaweicloudsdklive.v2.TimeValue`]
         """
         self._summary = summary
 
@@ -98,7 +107,7 @@ class AreaDetail:
         各个大区下的具体省份、区域、国家的时间戳及相应时间的指标数值
 
         :return: The detail of this AreaDetail.
-        :rtype: list[AreaTimeValue]
+        :rtype: list[:class:`huaweicloudsdklive.v2.AreaTimeValue`]
         """
         return self._detail
 
@@ -109,7 +118,7 @@ class AreaDetail:
         各个大区下的具体省份、区域、国家的时间戳及相应时间的指标数值
 
         :param detail: The detail of this AreaDetail.
-        :type: list[AreaTimeValue]
+        :type detail: list[:class:`huaweicloudsdklive.v2.AreaTimeValue`]
         """
         self._detail = detail
 

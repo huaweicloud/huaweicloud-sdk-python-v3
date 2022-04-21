@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SslOptionRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class SslOptionRequest:
     }
 
     def __init__(self, ssl_option=None):
-        """SslOptionRequest - a model defined in huaweicloud sdk"""
+        """SslOptionRequest
+
+        The model defined in huaweicloud sdk
+
+        :param ssl_option: - true, 打开ssl开关。 - false, 关闭ssl开关。
+        :type ssl_option: bool
+        """
         
         
 
@@ -57,7 +62,7 @@ class SslOptionRequest:
         - true, 打开ssl开关。 - false, 关闭ssl开关。
 
         :param ssl_option: The ssl_option of this SslOptionRequest.
-        :type: bool
+        :type ssl_option: bool
         """
         self._ssl_option = ssl_option
 

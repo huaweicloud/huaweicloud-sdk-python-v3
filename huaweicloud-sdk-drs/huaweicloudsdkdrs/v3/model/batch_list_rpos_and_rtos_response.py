@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchListRposAndRtosResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchListRposAndRtosResponse(SdkResponse):
     }
 
     def __init__(self, count=None, results=None):
-        """BatchListRposAndRtosResponse - a model defined in huaweicloud sdk"""
+        """BatchListRposAndRtosResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 总数
+        :type count: int
+        :param results: 批量查询RPO&amp;RTO的响应体集合
+        :type results: list[:class:`huaweicloudsdkdrs.v3.QueryRpoAndRtoResp`]
+        """
         
         super(BatchListRposAndRtosResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class BatchListRposAndRtosResponse(SdkResponse):
         总数
 
         :param count: The count of this BatchListRposAndRtosResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -74,7 +81,7 @@ class BatchListRposAndRtosResponse(SdkResponse):
         批量查询RPO&RTO的响应体集合
 
         :return: The results of this BatchListRposAndRtosResponse.
-        :rtype: list[QueryRpoAndRtoResp]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.QueryRpoAndRtoResp`]
         """
         return self._results
 
@@ -85,7 +92,7 @@ class BatchListRposAndRtosResponse(SdkResponse):
         批量查询RPO&RTO的响应体集合
 
         :param results: The results of this BatchListRposAndRtosResponse.
-        :type: list[QueryRpoAndRtoResp]
+        :type results: list[:class:`huaweicloudsdkdrs.v3.QueryRpoAndRtoResp`]
         """
         self._results = results
 

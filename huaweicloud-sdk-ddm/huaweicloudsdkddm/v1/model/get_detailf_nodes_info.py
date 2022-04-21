@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GetDetailfNodesInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class GetDetailfNodesInfo:
     }
 
     def __init__(self, status=None, port=None, ip=None):
-        """GetDetailfNodesInfo - a model defined in huaweicloud sdk"""
+        """GetDetailfNodesInfo
+
+        The model defined in huaweicloud sdk
+
+        :param status: DDM实例节点状态。
+        :type status: str
+        :param port: DDM实例节点port。
+        :type port: str
+        :param ip: DDM实例节点IP。
+        :type ip: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class GetDetailfNodesInfo:
         DDM实例节点状态。
 
         :param status: The status of this GetDetailfNodesInfo.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -87,7 +96,7 @@ class GetDetailfNodesInfo:
         DDM实例节点port。
 
         :param port: The port of this GetDetailfNodesInfo.
-        :type: str
+        :type port: str
         """
         self._port = port
 
@@ -109,7 +118,7 @@ class GetDetailfNodesInfo:
         DDM实例节点IP。
 
         :param ip: The ip of this GetDetailfNodesInfo.
-        :type: str
+        :type ip: str
         """
         self._ip = ip
 

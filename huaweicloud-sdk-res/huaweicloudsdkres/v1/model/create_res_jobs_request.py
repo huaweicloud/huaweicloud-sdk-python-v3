@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateResJobsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CreateResJobsRequest:
     }
 
     def __init__(self, content_type=None, resource_id=None, workspace_id=None, body=None):
-        """CreateResJobsRequest - a model defined in huaweicloud sdk"""
+        """CreateResJobsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param content_type: 内容类型，包括application和json两种类型
+        :type content_type: str
+        :param resource_id: 资源id
+        :type resource_id: str
+        :param workspace_id: 工作空间id
+        :type workspace_id: str
+        :param body: Body of the CreateResJobsRequest
+        :type body: :class:`huaweicloudsdkres.v1.CreateResJobsReququestBody`
+        """
         
         
 
@@ -71,7 +82,7 @@ class CreateResJobsRequest:
         内容类型，包括application和json两种类型
 
         :param content_type: The content_type of this CreateResJobsRequest.
-        :type: str
+        :type content_type: str
         """
         self._content_type = content_type
 
@@ -93,7 +104,7 @@ class CreateResJobsRequest:
         资源id
 
         :param resource_id: The resource_id of this CreateResJobsRequest.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -115,7 +126,7 @@ class CreateResJobsRequest:
         工作空间id
 
         :param workspace_id: The workspace_id of this CreateResJobsRequest.
-        :type: str
+        :type workspace_id: str
         """
         self._workspace_id = workspace_id
 
@@ -125,7 +136,7 @@ class CreateResJobsRequest:
 
 
         :return: The body of this CreateResJobsRequest.
-        :rtype: CreateResJobsReququestBody
+        :rtype: :class:`huaweicloudsdkres.v1.CreateResJobsReququestBody`
         """
         return self._body
 
@@ -135,7 +146,7 @@ class CreateResJobsRequest:
 
 
         :param body: The body of this CreateResJobsRequest.
-        :type: CreateResJobsReququestBody
+        :type body: :class:`huaweicloudsdkres.v1.CreateResJobsReququestBody`
         """
         self._body = body
 

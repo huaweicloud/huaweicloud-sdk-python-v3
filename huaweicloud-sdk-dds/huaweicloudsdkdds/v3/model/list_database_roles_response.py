@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDatabaseRolesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListDatabaseRolesResponse(SdkResponse):
     }
 
     def __init__(self, roles=None, total_count=None):
-        """ListDatabaseRolesResponse - a model defined in huaweicloud sdk"""
+        """ListDatabaseRolesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param roles: 数据库角色信息。
+        :type roles: str
+        :param total_count: 数据库角色总数。
+        :type total_count: int
+        """
         
         super(ListDatabaseRolesResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListDatabaseRolesResponse(SdkResponse):
         数据库角色信息。
 
         :param roles: The roles of this ListDatabaseRolesResponse.
-        :type: str
+        :type roles: str
         """
         self._roles = roles
 
@@ -85,7 +92,7 @@ class ListDatabaseRolesResponse(SdkResponse):
         数据库角色总数。
 
         :param total_count: The total_count of this ListDatabaseRolesResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 

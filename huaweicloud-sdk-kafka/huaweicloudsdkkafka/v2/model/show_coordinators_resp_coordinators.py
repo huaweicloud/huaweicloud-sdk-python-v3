@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowCoordinatorsRespCoordinators:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowCoordinatorsRespCoordinators:
     }
 
     def __init__(self, group_id=None, id=None, host=None, port=None):
-        """ShowCoordinatorsRespCoordinators - a model defined in huaweicloud sdk"""
+        """ShowCoordinatorsRespCoordinators
+
+        The model defined in huaweicloud sdk
+
+        :param group_id: 消费组ID。
+        :type group_id: str
+        :param id: 对应协调器的broker id。
+        :type id: int
+        :param host: 对应协调器的地址。
+        :type host: str
+        :param port: 端口号。
+        :type port: int
+        """
         
         
 
@@ -73,7 +84,7 @@ class ShowCoordinatorsRespCoordinators:
         消费组ID。
 
         :param group_id: The group_id of this ShowCoordinatorsRespCoordinators.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -95,7 +106,7 @@ class ShowCoordinatorsRespCoordinators:
         对应协调器的broker id。
 
         :param id: The id of this ShowCoordinatorsRespCoordinators.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -117,7 +128,7 @@ class ShowCoordinatorsRespCoordinators:
         对应协调器的地址。
 
         :param host: The host of this ShowCoordinatorsRespCoordinators.
-        :type: str
+        :type host: str
         """
         self._host = host
 
@@ -139,7 +150,7 @@ class ShowCoordinatorsRespCoordinators:
         端口号。
 
         :param port: The port of this ShowCoordinatorsRespCoordinators.
-        :type: int
+        :type port: int
         """
         self._port = port
 

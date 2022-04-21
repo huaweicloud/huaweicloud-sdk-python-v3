@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateMetadataRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateMetadataRequest:
     }
 
     def __init__(self, idp_id=None, protocol_id=None, body=None):
-        """CreateMetadataRequest - a model defined in huaweicloud sdk"""
+        """CreateMetadataRequest
+
+        The model defined in huaweicloud sdk
+
+        :param idp_id: 身份提供商ID。
+        :type idp_id: str
+        :param protocol_id: 协议ID。
+        :type protocol_id: str
+        :param body: Body of the CreateMetadataRequest
+        :type body: :class:`huaweicloudsdkiam.v3.CreateMetadataRequestBody`
+        """
         
         
 
@@ -66,7 +75,7 @@ class CreateMetadataRequest:
         身份提供商ID。
 
         :param idp_id: The idp_id of this CreateMetadataRequest.
-        :type: str
+        :type idp_id: str
         """
         self._idp_id = idp_id
 
@@ -88,7 +97,7 @@ class CreateMetadataRequest:
         协议ID。
 
         :param protocol_id: The protocol_id of this CreateMetadataRequest.
-        :type: str
+        :type protocol_id: str
         """
         self._protocol_id = protocol_id
 
@@ -98,7 +107,7 @@ class CreateMetadataRequest:
 
 
         :return: The body of this CreateMetadataRequest.
-        :rtype: CreateMetadataRequestBody
+        :rtype: :class:`huaweicloudsdkiam.v3.CreateMetadataRequestBody`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class CreateMetadataRequest:
 
 
         :param body: The body of this CreateMetadataRequest.
-        :type: CreateMetadataRequestBody
+        :type body: :class:`huaweicloudsdkiam.v3.CreateMetadataRequestBody`
         """
         self._body = body
 

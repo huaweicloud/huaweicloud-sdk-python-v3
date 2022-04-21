@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowIndividualStreamJobResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -64,7 +63,47 @@ class ShowIndividualStreamJobResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, stream_name=None, app_id=None, room_id=None, user_id=None, is_record_audio=None, video_type=None, select_stream_type=None, max_idle_time=None, record_param=None, create_time=None, update_time=None, state=None, stop_reason=None, description=None, start_time=None, stop_time=None, x_request_id=None):
-        """ShowIndividualStreamJobResponse - a model defined in huaweicloud sdk"""
+        """ShowIndividualStreamJobResponse
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 任务编号
+        :type job_id: str
+        :param stream_name: 流名
+        :type stream_name: str
+        :param app_id: 应用id
+        :type app_id: str
+        :param room_id: 房间id
+        :type room_id: str
+        :param user_id: 选看的用户id，单个录制任务内保证唯一
+        :type user_id: str
+        :param is_record_audio:  是否录制音频。  - true：录制音频 - false：不录制音频  缺省为true。 
+        :type is_record_audio: bool
+        :param video_type: 标识视频流的类型，可选摄像头流或者屏幕分享流，未填写表示不录制视频。  - CAMERASTREAM：摄像头视频流 - SCREENSTREAM：屏幕分享视频流  默认为CAMERASTREAM。 
+        :type video_type: str
+        :param select_stream_type: 指定窗口拉取的分辨率档位。  - LD - SD - HD - FHD  缺省为FHD。 
+        :type select_stream_type: str
+        :param max_idle_time: 最长空闲频道时间。  取值范围：[5，43200]，默认值为30。  单位：秒。  如果频道内无连麦方的状态持续超过该时间，录制程序会自动退出。退出后，再次调用start请求，会产生新的录制任务。  连麦方指：joiner或者publisher的用户。 
+        :type max_idle_time: int
+        :param record_param: 
+        :type record_param: :class:`huaweicloudsdkcloudrtc.v2.RecordParam`
+        :param create_time: 创建时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
+        :type create_time: str
+        :param update_time: 更新时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
+        :type update_time: str
+        :param state: 任务状态。  - INIT：任务正在初始化 - RUNNING：任务正在运行 - STOPPED：任务已停止 
+        :type state: str
+        :param stop_reason: 任务结束原因
+        :type stop_reason: str
+        :param description: 针对任务状态的详细信息描述
+        :type description: str
+        :param start_time: 任务开始时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
+        :type start_time: str
+        :param stop_time: 任务完成时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
+        :type stop_time: str
+        :param x_request_id: 
+        :type x_request_id: str
+        """
         
         super(ShowIndividualStreamJobResponse, self).__init__()
 
@@ -143,7 +182,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
         任务编号
 
         :param job_id: The job_id of this ShowIndividualStreamJobResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -165,7 +204,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
         流名
 
         :param stream_name: The stream_name of this ShowIndividualStreamJobResponse.
-        :type: str
+        :type stream_name: str
         """
         self._stream_name = stream_name
 
@@ -187,7 +226,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
         应用id
 
         :param app_id: The app_id of this ShowIndividualStreamJobResponse.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -209,7 +248,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
         房间id
 
         :param room_id: The room_id of this ShowIndividualStreamJobResponse.
-        :type: str
+        :type room_id: str
         """
         self._room_id = room_id
 
@@ -231,7 +270,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
         选看的用户id，单个录制任务内保证唯一
 
         :param user_id: The user_id of this ShowIndividualStreamJobResponse.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -253,7 +292,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
          是否录制音频。  - true：录制音频 - false：不录制音频  缺省为true。 
 
         :param is_record_audio: The is_record_audio of this ShowIndividualStreamJobResponse.
-        :type: bool
+        :type is_record_audio: bool
         """
         self._is_record_audio = is_record_audio
 
@@ -275,7 +314,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
         标识视频流的类型，可选摄像头流或者屏幕分享流，未填写表示不录制视频。  - CAMERASTREAM：摄像头视频流 - SCREENSTREAM：屏幕分享视频流  默认为CAMERASTREAM。 
 
         :param video_type: The video_type of this ShowIndividualStreamJobResponse.
-        :type: str
+        :type video_type: str
         """
         self._video_type = video_type
 
@@ -297,7 +336,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
         指定窗口拉取的分辨率档位。  - LD - SD - HD - FHD  缺省为FHD。 
 
         :param select_stream_type: The select_stream_type of this ShowIndividualStreamJobResponse.
-        :type: str
+        :type select_stream_type: str
         """
         self._select_stream_type = select_stream_type
 
@@ -319,7 +358,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
         最长空闲频道时间。  取值范围：[5，43200]，默认值为30。  单位：秒。  如果频道内无连麦方的状态持续超过该时间，录制程序会自动退出。退出后，再次调用start请求，会产生新的录制任务。  连麦方指：joiner或者publisher的用户。 
 
         :param max_idle_time: The max_idle_time of this ShowIndividualStreamJobResponse.
-        :type: int
+        :type max_idle_time: int
         """
         self._max_idle_time = max_idle_time
 
@@ -329,7 +368,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
 
 
         :return: The record_param of this ShowIndividualStreamJobResponse.
-        :rtype: RecordParam
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.RecordParam`
         """
         return self._record_param
 
@@ -339,7 +378,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
 
 
         :param record_param: The record_param of this ShowIndividualStreamJobResponse.
-        :type: RecordParam
+        :type record_param: :class:`huaweicloudsdkcloudrtc.v2.RecordParam`
         """
         self._record_param = record_param
 
@@ -361,7 +400,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
         创建时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
 
         :param create_time: The create_time of this ShowIndividualStreamJobResponse.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -383,7 +422,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
         更新时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
 
         :param update_time: The update_time of this ShowIndividualStreamJobResponse.
-        :type: str
+        :type update_time: str
         """
         self._update_time = update_time
 
@@ -405,7 +444,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
         任务状态。  - INIT：任务正在初始化 - RUNNING：任务正在运行 - STOPPED：任务已停止 
 
         :param state: The state of this ShowIndividualStreamJobResponse.
-        :type: str
+        :type state: str
         """
         self._state = state
 
@@ -427,7 +466,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
         任务结束原因
 
         :param stop_reason: The stop_reason of this ShowIndividualStreamJobResponse.
-        :type: str
+        :type stop_reason: str
         """
         self._stop_reason = stop_reason
 
@@ -449,7 +488,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
         针对任务状态的详细信息描述
 
         :param description: The description of this ShowIndividualStreamJobResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -471,7 +510,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
         任务开始时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
 
         :param start_time: The start_time of this ShowIndividualStreamJobResponse.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -493,7 +532,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
         任务完成时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
 
         :param stop_time: The stop_time of this ShowIndividualStreamJobResponse.
-        :type: str
+        :type stop_time: str
         """
         self._stop_time = stop_time
 
@@ -513,7 +552,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
 
 
         :param x_request_id: The x_request_id of this ShowIndividualStreamJobResponse.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 

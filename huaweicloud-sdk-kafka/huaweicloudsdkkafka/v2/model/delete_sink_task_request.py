@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteSinkTaskRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteSinkTaskRequest:
     }
 
     def __init__(self, connector_id=None, task_id=None):
-        """DeleteSinkTaskRequest - a model defined in huaweicloud sdk"""
+        """DeleteSinkTaskRequest
+
+        The model defined in huaweicloud sdk
+
+        :param connector_id: 实例转储ID。 请参考[实例生命周期][查询实例]接口返回的数据。
+        :type connector_id: str
+        :param task_id: 转储任务ID。
+        :type task_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class DeleteSinkTaskRequest:
         实例转储ID。 请参考[实例生命周期][查询实例]接口返回的数据。
 
         :param connector_id: The connector_id of this DeleteSinkTaskRequest.
-        :type: str
+        :type connector_id: str
         """
         self._connector_id = connector_id
 
@@ -83,7 +90,7 @@ class DeleteSinkTaskRequest:
         转储任务ID。
 
         :param task_id: The task_id of this DeleteSinkTaskRequest.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 

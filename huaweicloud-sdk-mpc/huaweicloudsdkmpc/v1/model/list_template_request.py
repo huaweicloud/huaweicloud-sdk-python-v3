@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTemplateRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListTemplateRequest:
     }
 
     def __init__(self, template_id=None, page=None, size=None):
-        """ListTemplateRequest - a model defined in huaweicloud sdk"""
+        """ListTemplateRequest
+
+        The model defined in huaweicloud sdk
+
+        :param template_id: 自定义转码模板ID，最多10个 
+        :type template_id: list[int]
+        :param page: 分页编号。查询指定“task_id”时，该参数无效。  默认值：0。 
+        :type page: int
+        :param size: 每页记录数。取值范围：[1,100]，指定template_id时该参数无效 
+        :type size: int
+        """
         
         
 
@@ -68,7 +77,7 @@ class ListTemplateRequest:
         自定义转码模板ID，最多10个 
 
         :param template_id: The template_id of this ListTemplateRequest.
-        :type: list[int]
+        :type template_id: list[int]
         """
         self._template_id = template_id
 
@@ -90,7 +99,7 @@ class ListTemplateRequest:
         分页编号。查询指定“task_id”时，该参数无效。  默认值：0。 
 
         :param page: The page of this ListTemplateRequest.
-        :type: int
+        :type page: int
         """
         self._page = page
 
@@ -112,7 +121,7 @@ class ListTemplateRequest:
         每页记录数。取值范围：[1,100]，指定template_id时该参数无效 
 
         :param size: The size of this ListTemplateRequest.
-        :type: int
+        :type size: int
         """
         self._size = size
 

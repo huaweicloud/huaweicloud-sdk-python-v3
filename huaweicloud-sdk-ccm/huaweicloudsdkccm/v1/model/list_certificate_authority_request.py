@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCertificateAuthorityRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ListCertificateAuthorityRequest:
     }
 
     def __init__(self, limit=None, name=None, offset=None, status=None, type=None, sort_key=None, sort_dir=None):
-        """ListCertificateAuthorityRequest - a model defined in huaweicloud sdk"""
+        """ListCertificateAuthorityRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 指定查询返回记录条数，默认值10。
+        :type limit: int
+        :param name: CA证书名称（CN）过滤值，用于获取名称中带有特定值的CA证书集合。
+        :type name: str
+        :param offset: 索引位置，从offset指定的下一条数据开始查询。默认值为0。
+        :type offset: int
+        :param status: CA证书状态，通过状态过滤证书集合： - **EXPIRED** : 待激活，此状态下，不可用于签发证书； - **ACTIVED** : 已激活，此状态下，可用于签发证书； - **DISABLED** : 已禁用，此状态下，不可用于签发证书； - **DELETED** : 计划删除，此状态下，不可用于签发证书； - **EXPIRED** : 已过期，此状态下，不可用于签发证书。
+        :type status: str
+        :param type: CA证书类型： - **ROOT** : 根CA证书 - **SUBORDINATE** : 从属CA证书
+        :type type: str
+        :param sort_key: 排序属性，目前支持以下属性： - **create_time** : 证书创建时间（默认） - **common_name** : 证书名称 - **ca_type** : CA证书类型 - **not_after** : 证书到期时间
+        :type sort_key: str
+        :param sort_dir: 排序方向，支持以下值： - **DESC** : 降序（默认） - **ASC** : 升序
+        :type sort_dir: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class ListCertificateAuthorityRequest:
         指定查询返回记录条数，默认值10。
 
         :param limit: The limit of this ListCertificateAuthorityRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -110,7 +127,7 @@ class ListCertificateAuthorityRequest:
         CA证书名称（CN）过滤值，用于获取名称中带有特定值的CA证书集合。
 
         :param name: The name of this ListCertificateAuthorityRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -132,7 +149,7 @@ class ListCertificateAuthorityRequest:
         索引位置，从offset指定的下一条数据开始查询。默认值为0。
 
         :param offset: The offset of this ListCertificateAuthorityRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -154,7 +171,7 @@ class ListCertificateAuthorityRequest:
         CA证书状态，通过状态过滤证书集合： - **EXPIRED** : 待激活，此状态下，不可用于签发证书； - **ACTIVED** : 已激活，此状态下，可用于签发证书； - **DISABLED** : 已禁用，此状态下，不可用于签发证书； - **DELETED** : 计划删除，此状态下，不可用于签发证书； - **EXPIRED** : 已过期，此状态下，不可用于签发证书。
 
         :param status: The status of this ListCertificateAuthorityRequest.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -176,7 +193,7 @@ class ListCertificateAuthorityRequest:
         CA证书类型： - **ROOT** : 根CA证书 - **SUBORDINATE** : 从属CA证书
 
         :param type: The type of this ListCertificateAuthorityRequest.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -198,7 +215,7 @@ class ListCertificateAuthorityRequest:
         排序属性，目前支持以下属性： - **create_time** : 证书创建时间（默认） - **common_name** : 证书名称 - **ca_type** : CA证书类型 - **not_after** : 证书到期时间
 
         :param sort_key: The sort_key of this ListCertificateAuthorityRequest.
-        :type: str
+        :type sort_key: str
         """
         self._sort_key = sort_key
 
@@ -220,7 +237,7 @@ class ListCertificateAuthorityRequest:
         排序方向，支持以下值： - **DESC** : 降序（默认） - **ASC** : 升序
 
         :param sort_dir: The sort_dir of this ListCertificateAuthorityRequest.
-        :type: str
+        :type sort_dir: str
         """
         self._sort_dir = sort_dir
 

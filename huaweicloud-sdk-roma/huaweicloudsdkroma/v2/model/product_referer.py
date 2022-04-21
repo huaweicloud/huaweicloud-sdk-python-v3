@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ProductReferer:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ProductReferer:
     }
 
     def __init__(self, product_id=None, product_name=None, manufacturer_id=None, model=None, protocol_type=None, product_type=None):
-        """ProductReferer - a model defined in huaweicloud sdk"""
+        """ProductReferer
+
+        The model defined in huaweicloud sdk
+
+        :param product_id: 产品ID，未填写厂商ID+型号时产品ID必填
+        :type product_id: int
+        :param product_name: 产品名称
+        :type product_name: str
+        :param manufacturer_id: 厂商ID，未填写产品ID时厂商ID和型号必填
+        :type manufacturer_id: str
+        :param model: 型号，未填写产品ID时厂商ID和型号必填
+        :type model: str
+        :param protocol_type: 产品的协议类型：0-mqtt，1-coap，2-modbus，3-http, 4-opcua
+        :type protocol_type: int
+        :param product_type: 产品类型：0-普通产品 1-网关产品
+        :type product_type: int
+        """
         
         
 
@@ -83,7 +98,7 @@ class ProductReferer:
         产品ID，未填写厂商ID+型号时产品ID必填
 
         :param product_id: The product_id of this ProductReferer.
-        :type: int
+        :type product_id: int
         """
         self._product_id = product_id
 
@@ -105,7 +120,7 @@ class ProductReferer:
         产品名称
 
         :param product_name: The product_name of this ProductReferer.
-        :type: str
+        :type product_name: str
         """
         self._product_name = product_name
 
@@ -127,7 +142,7 @@ class ProductReferer:
         厂商ID，未填写产品ID时厂商ID和型号必填
 
         :param manufacturer_id: The manufacturer_id of this ProductReferer.
-        :type: str
+        :type manufacturer_id: str
         """
         self._manufacturer_id = manufacturer_id
 
@@ -149,7 +164,7 @@ class ProductReferer:
         型号，未填写产品ID时厂商ID和型号必填
 
         :param model: The model of this ProductReferer.
-        :type: str
+        :type model: str
         """
         self._model = model
 
@@ -171,7 +186,7 @@ class ProductReferer:
         产品的协议类型：0-mqtt，1-coap，2-modbus，3-http, 4-opcua
 
         :param protocol_type: The protocol_type of this ProductReferer.
-        :type: int
+        :type protocol_type: int
         """
         self._protocol_type = protocol_type
 
@@ -193,7 +208,7 @@ class ProductReferer:
         产品类型：0-普通产品 1-网关产品
 
         :param product_type: The product_type of this ProductReferer.
-        :type: int
+        :type product_type: int
         """
         self._product_type = product_type
 

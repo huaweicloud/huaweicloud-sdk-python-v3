@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdatePrePaidBandwidthOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdatePrePaidBandwidthOption:
     }
 
     def __init__(self, name=None, size=None):
-        """UpdatePrePaidBandwidthOption - a model defined in huaweicloud sdk"""
+        """UpdatePrePaidBandwidthOption
+
+        The model defined in huaweicloud sdk
+
+        :param name: 功能说明：带宽名称  取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点），为空表示不修改名称  约束：和参数size必须有一个参数有值
+        :type name: str
+        :param size: 功能说明：带宽大小，包周期的带宽只能改大  取值范围：默认1Mbit/s～2000Mbit/s（具体范围以各区域配置为准，请参见控制台对应页面显示），不带此参数时表示不修改大小。  约束：和参数name必须有一个参数有值。  注意：调整带宽时的最小单位会根据带宽范围不同存在差异。  小于等于300Mbit/s：默认最小单位为1Mbit/s。  300Mbit/s~1000Mbit/s：默认最小单位为50Mbit/s。  大于1000Mbit/s：默认最小单位为500Mbit/s。
+        :type size: int
+        """
         
         
 
@@ -63,7 +70,7 @@ class UpdatePrePaidBandwidthOption:
         功能说明：带宽名称  取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点），为空表示不修改名称  约束：和参数size必须有一个参数有值
 
         :param name: The name of this UpdatePrePaidBandwidthOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -85,7 +92,7 @@ class UpdatePrePaidBandwidthOption:
         功能说明：带宽大小，包周期的带宽只能改大  取值范围：默认1Mbit/s～2000Mbit/s（具体范围以各区域配置为准，请参见控制台对应页面显示），不带此参数时表示不修改大小。  约束：和参数name必须有一个参数有值。  注意：调整带宽时的最小单位会根据带宽范围不同存在差异。  小于等于300Mbit/s：默认最小单位为1Mbit/s。  300Mbit/s~1000Mbit/s：默认最小单位为50Mbit/s。  大于1000Mbit/s：默认最小单位为500Mbit/s。
 
         :param size: The size of this UpdatePrePaidBandwidthOption.
-        :type: int
+        :type size: int
         """
         self._size = size
 

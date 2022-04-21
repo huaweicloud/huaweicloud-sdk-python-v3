@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FileUpdate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class FileUpdate:
     }
 
     def __init__(self, message=None, content=None, sha=None):
-        """FileUpdate - a model defined in huaweicloud sdk"""
+        """FileUpdate
+
+        The model defined in huaweicloud sdk
+
+        :param message: 提交描述。
+        :type message: str
+        :param content: 经base64编码的文件内容。
+        :type content: str
+        :param sha: 文件的sha值。
+        :type sha: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class FileUpdate:
         提交描述。
 
         :param message: The message of this FileUpdate.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -87,7 +96,7 @@ class FileUpdate:
         经base64编码的文件内容。
 
         :param content: The content of this FileUpdate.
-        :type: str
+        :type content: str
         """
         self._content = content
 
@@ -109,7 +118,7 @@ class FileUpdate:
         文件的sha值。
 
         :param sha: The sha of this FileUpdate.
-        :type: str
+        :type sha: str
         """
         self._sha = sha
 

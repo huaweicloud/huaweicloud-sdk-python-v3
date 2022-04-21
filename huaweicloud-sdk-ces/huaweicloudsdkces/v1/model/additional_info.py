@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AdditionalInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class AdditionalInfo:
     }
 
     def __init__(self, resource_id=None, resource_name=None, event_id=None):
-        """AdditionalInfo - a model defined in huaweicloud sdk"""
+        """AdditionalInfo
+
+        The model defined in huaweicloud sdk
+
+        :param resource_id: 该条告警历史对应的资源ID；如：22d98f6c-16d2-4c2d-b424-50e79d82838f。
+        :type resource_id: str
+        :param resource_name: 该条告警历史对应的资源名称；如：ECS-Test01。
+        :type resource_name: str
+        :param event_id: 该条告警历史对应的事件监控ID，资源所产生的事件；如：ev16031292300990kKN8p17J。
+        :type event_id: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class AdditionalInfo:
         该条告警历史对应的资源ID；如：22d98f6c-16d2-4c2d-b424-50e79d82838f。
 
         :param resource_id: The resource_id of this AdditionalInfo.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -90,7 +99,7 @@ class AdditionalInfo:
         该条告警历史对应的资源名称；如：ECS-Test01。
 
         :param resource_name: The resource_name of this AdditionalInfo.
-        :type: str
+        :type resource_name: str
         """
         self._resource_name = resource_name
 
@@ -112,7 +121,7 @@ class AdditionalInfo:
         该条告警历史对应的事件监控ID，资源所产生的事件；如：ev16031292300990kKN8p17J。
 
         :param event_id: The event_id of this AdditionalInfo.
-        :type: str
+        :type event_id: str
         """
         self._event_id = event_id
 

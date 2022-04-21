@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowBlockchainFlavorsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowBlockchainFlavorsResponse(SdkResponse):
     }
 
     def __init__(self, enterprise_spec=None):
-        """ShowBlockchainFlavorsResponse - a model defined in huaweicloud sdk"""
+        """ShowBlockchainFlavorsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param enterprise_spec: 
+        :type enterprise_spec: :class:`huaweicloudsdkbcs.v2.InstanceSpc`
+        """
         
         super(ShowBlockchainFlavorsResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class ShowBlockchainFlavorsResponse(SdkResponse):
 
 
         :return: The enterprise_spec of this ShowBlockchainFlavorsResponse.
-        :rtype: InstanceSpc
+        :rtype: :class:`huaweicloudsdkbcs.v2.InstanceSpc`
         """
         return self._enterprise_spec
 
@@ -56,7 +61,7 @@ class ShowBlockchainFlavorsResponse(SdkResponse):
 
 
         :param enterprise_spec: The enterprise_spec of this ShowBlockchainFlavorsResponse.
-        :type: InstanceSpc
+        :type enterprise_spec: :class:`huaweicloudsdkbcs.v2.InstanceSpc`
         """
         self._enterprise_spec = enterprise_spec
 

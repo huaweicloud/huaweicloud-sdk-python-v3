@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateAddonInstanceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class UpdateAddonInstanceResponse(SdkResponse):
     }
 
     def __init__(self, kind=None, api_version=None, metadata=None, spec=None, status=None):
-        """UpdateAddonInstanceResponse - a model defined in huaweicloud sdk"""
+        """UpdateAddonInstanceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param kind: API类型，固定值“Addon”，该值不可修改。
+        :type kind: str
+        :param api_version: API版本，固定值“v3”，该值不可修改。
+        :type api_version: str
+        :param metadata: 
+        :type metadata: :class:`huaweicloudsdkcce.v3.Metadata`
+        :param spec: 
+        :type spec: :class:`huaweicloudsdkcce.v3.InstanceSpec`
+        :param status: 
+        :type status: :class:`huaweicloudsdkcce.v3.AddonInstanceStatus`
+        """
         
         super(UpdateAddonInstanceResponse, self).__init__()
 
@@ -78,7 +91,7 @@ class UpdateAddonInstanceResponse(SdkResponse):
         API类型，固定值“Addon”，该值不可修改。
 
         :param kind: The kind of this UpdateAddonInstanceResponse.
-        :type: str
+        :type kind: str
         """
         self._kind = kind
 
@@ -100,7 +113,7 @@ class UpdateAddonInstanceResponse(SdkResponse):
         API版本，固定值“v3”，该值不可修改。
 
         :param api_version: The api_version of this UpdateAddonInstanceResponse.
-        :type: str
+        :type api_version: str
         """
         self._api_version = api_version
 
@@ -110,7 +123,7 @@ class UpdateAddonInstanceResponse(SdkResponse):
 
 
         :return: The metadata of this UpdateAddonInstanceResponse.
-        :rtype: Metadata
+        :rtype: :class:`huaweicloudsdkcce.v3.Metadata`
         """
         return self._metadata
 
@@ -120,7 +133,7 @@ class UpdateAddonInstanceResponse(SdkResponse):
 
 
         :param metadata: The metadata of this UpdateAddonInstanceResponse.
-        :type: Metadata
+        :type metadata: :class:`huaweicloudsdkcce.v3.Metadata`
         """
         self._metadata = metadata
 
@@ -130,7 +143,7 @@ class UpdateAddonInstanceResponse(SdkResponse):
 
 
         :return: The spec of this UpdateAddonInstanceResponse.
-        :rtype: InstanceSpec
+        :rtype: :class:`huaweicloudsdkcce.v3.InstanceSpec`
         """
         return self._spec
 
@@ -140,7 +153,7 @@ class UpdateAddonInstanceResponse(SdkResponse):
 
 
         :param spec: The spec of this UpdateAddonInstanceResponse.
-        :type: InstanceSpec
+        :type spec: :class:`huaweicloudsdkcce.v3.InstanceSpec`
         """
         self._spec = spec
 
@@ -150,7 +163,7 @@ class UpdateAddonInstanceResponse(SdkResponse):
 
 
         :return: The status of this UpdateAddonInstanceResponse.
-        :rtype: AddonInstanceStatus
+        :rtype: :class:`huaweicloudsdkcce.v3.AddonInstanceStatus`
         """
         return self._status
 
@@ -160,7 +173,7 @@ class UpdateAddonInstanceResponse(SdkResponse):
 
 
         :param status: The status of this UpdateAddonInstanceResponse.
-        :type: AddonInstanceStatus
+        :type status: :class:`huaweicloudsdkcce.v3.AddonInstanceStatus`
         """
         self._status = status
 

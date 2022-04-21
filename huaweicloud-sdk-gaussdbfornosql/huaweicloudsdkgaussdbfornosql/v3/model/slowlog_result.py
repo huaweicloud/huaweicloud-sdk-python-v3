@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SlowlogResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class SlowlogResult:
     }
 
     def __init__(self, time=None, database=None, query_sample=None, type=None, start_time=None):
-        """SlowlogResult - a model defined in huaweicloud sdk"""
+        """SlowlogResult
+
+        The model defined in huaweicloud sdk
+
+        :param time: 执行时间。
+        :type time: str
+        :param database: 所属数据库。
+        :type database: str
+        :param query_sample: 执行语法。
+        :type query_sample: str
+        :param type: 语句类型。
+        :type type: str
+        :param start_time: 发生时间，UTC时间。
+        :type start_time: str
+        """
         
         
 
@@ -73,7 +86,7 @@ class SlowlogResult:
         执行时间。
 
         :param time: The time of this SlowlogResult.
-        :type: str
+        :type time: str
         """
         self._time = time
 
@@ -95,7 +108,7 @@ class SlowlogResult:
         所属数据库。
 
         :param database: The database of this SlowlogResult.
-        :type: str
+        :type database: str
         """
         self._database = database
 
@@ -117,7 +130,7 @@ class SlowlogResult:
         执行语法。
 
         :param query_sample: The query_sample of this SlowlogResult.
-        :type: str
+        :type query_sample: str
         """
         self._query_sample = query_sample
 
@@ -139,7 +152,7 @@ class SlowlogResult:
         语句类型。
 
         :param type: The type of this SlowlogResult.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -161,7 +174,7 @@ class SlowlogResult:
         发生时间，UTC时间。
 
         :param start_time: The start_time of this SlowlogResult.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPoolsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -64,7 +63,47 @@ class ListPoolsRequest:
     }
 
     def __init__(self, marker=None, limit=None, page_reverse=None, description=None, admin_state_up=None, healthmonitor_id=None, id=None, name=None, loadbalancer_id=None, protocol=None, lb_algorithm=None, enterprise_project_id=None, ip_version=None, member_address=None, member_device_id=None, member_deletion_protection_enable=None, listener_id=None, member_instance_id=None):
-        """ListPoolsRequest - a model defined in huaweicloud sdk"""
+        """ListPoolsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param marker: 上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
+        :type marker: str
+        :param limit: 每页返回的个数。
+        :type limit: int
+        :param page_reverse: 分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。使用说明：必须与limit一起使用。
+        :type page_reverse: bool
+        :param description: 后端云服务器组的描述信息。  支持多值查询，查询条件格式：*description&#x3D;xxx&amp;description&#x3D;xxx*。
+        :type description: list[str]
+        :param admin_state_up: 后端云服务器组的管理状态。  不支持该字段，请勿使用。
+        :type admin_state_up: bool
+        :param healthmonitor_id: 后端云服务器组关联的健康检查的ID。  支持多值查询，查询条件格式：*healthmonitor_id&#x3D;xxx&amp;healthmonitor_id&#x3D;xxx*。
+        :type healthmonitor_id: list[str]
+        :param id: 后端云服务器组的ID。  支持多值查询，查询条件格式：*id&#x3D;xxx&amp;id&#x3D;xxx*。
+        :type id: list[str]
+        :param name: 后端云服务器组的名称。  支持多值查询，查询条件格式：*name&#x3D;xxx&amp;name&#x3D;xxx*。
+        :type name: list[str]
+        :param loadbalancer_id: 后端云服务器组绑定的负载均衡器ID。  支持多值查询，查询条件格式：*loadbalancer_id&#x3D;xxx&amp;loadbalancer_id&#x3D;xxx*。
+        :type loadbalancer_id: list[str]
+        :param protocol: 后端云服务器组的后端协议。取值：TCP、UDP、HTTP、HTTPS和QUIC。  支持多值查询，查询条件格式：*protocol&#x3D;xxx&amp;protocol&#x3D;xxx*。
+        :type protocol: list[str]
+        :param lb_algorithm: 后端云服务器组的负载均衡算法。  取值： 1、ROUND_ROBIN：加权轮询算法。 2、LEAST_CONNECTIONS：加权最少连接算法。 3、SOURCE_IP：源IP算法。 4、QUIC_CID：连接ID算法。  支持多值查询，查询条件格式：*lb_algorithm&#x3D;xxx&amp;lb_algorithm&#x3D;xxx*。
+        :type lb_algorithm: list[str]
+        :param enterprise_project_id: 企业项目ID。  支持多值查询，查询条件格式：*enterprise_project_id&#x3D;xxx&amp;enterprise_project_id&#x3D;xxx*。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
+        :type enterprise_project_id: list[str]
+        :param ip_version: 后端云服务器组支持的IP版本。取值： [- 共享型LB下的pool：固定为v4； - 独享型LB下的pool：dualstack、v4。当该pool的协议为TCP/UDP/QUIC时，ip_version为dualstack，表示双栈。当协议为HTTP/HTTPS时，ip_version为v4。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42,dt,dt_test) [- dualstack: 当该pool的协议为TCP/UDP/QUIC时，ip_version为dualstack，表示双栈。 - v4: 当该pool的协议为HTTP/HTTPS时，ip_version为v4。](tag:hcso_dt) 支持多值查询，查询条件格式：*ip_version&#x3D;xxx&amp;ip_version&#x3D;xxx*。
+        :type ip_version: list[str]
+        :param member_address: 后端云服务器的IP地址。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_address&#x3D;xxx&amp;member_address&#x3D;xxx*。
+        :type member_address: list[str]
+        :param member_device_id: 后端云服务器对应的弹性云服务器的ID。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_device_id&#x3D;xxx&amp;member_device_id&#x3D;xxx*。
+        :type member_device_id: list[str]
+        :param member_deletion_protection_enable: 是否开启删除保护，false不开启，true开启，不传查询全部。
+        :type member_deletion_protection_enable: bool
+        :param listener_id: 关联的监听器ID，包括通过l7policy关联的。  支持多值查询，查询条件格式：*listener_id&#x3D;xxx&amp;listener_id&#x3D;xxx*。
+        :type listener_id: list[str]
+        :param member_instance_id: 后端云服务器ID。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_instance_id&#x3D;xxx&amp;member_instance_id&#x3D;xxx*。
+        :type member_instance_id: list[str]
+        """
         
         
 
@@ -143,7 +182,7 @@ class ListPoolsRequest:
         上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
         :param marker: The marker of this ListPoolsRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -165,7 +204,7 @@ class ListPoolsRequest:
         每页返回的个数。
 
         :param limit: The limit of this ListPoolsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -187,7 +226,7 @@ class ListPoolsRequest:
         分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。使用说明：必须与limit一起使用。
 
         :param page_reverse: The page_reverse of this ListPoolsRequest.
-        :type: bool
+        :type page_reverse: bool
         """
         self._page_reverse = page_reverse
 
@@ -209,7 +248,7 @@ class ListPoolsRequest:
         后端云服务器组的描述信息。  支持多值查询，查询条件格式：*description=xxx&description=xxx*。
 
         :param description: The description of this ListPoolsRequest.
-        :type: list[str]
+        :type description: list[str]
         """
         self._description = description
 
@@ -231,7 +270,7 @@ class ListPoolsRequest:
         后端云服务器组的管理状态。  不支持该字段，请勿使用。
 
         :param admin_state_up: The admin_state_up of this ListPoolsRequest.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 
@@ -253,7 +292,7 @@ class ListPoolsRequest:
         后端云服务器组关联的健康检查的ID。  支持多值查询，查询条件格式：*healthmonitor_id=xxx&healthmonitor_id=xxx*。
 
         :param healthmonitor_id: The healthmonitor_id of this ListPoolsRequest.
-        :type: list[str]
+        :type healthmonitor_id: list[str]
         """
         self._healthmonitor_id = healthmonitor_id
 
@@ -275,7 +314,7 @@ class ListPoolsRequest:
         后端云服务器组的ID。  支持多值查询，查询条件格式：*id=xxx&id=xxx*。
 
         :param id: The id of this ListPoolsRequest.
-        :type: list[str]
+        :type id: list[str]
         """
         self._id = id
 
@@ -297,7 +336,7 @@ class ListPoolsRequest:
         后端云服务器组的名称。  支持多值查询，查询条件格式：*name=xxx&name=xxx*。
 
         :param name: The name of this ListPoolsRequest.
-        :type: list[str]
+        :type name: list[str]
         """
         self._name = name
 
@@ -319,7 +358,7 @@ class ListPoolsRequest:
         后端云服务器组绑定的负载均衡器ID。  支持多值查询，查询条件格式：*loadbalancer_id=xxx&loadbalancer_id=xxx*。
 
         :param loadbalancer_id: The loadbalancer_id of this ListPoolsRequest.
-        :type: list[str]
+        :type loadbalancer_id: list[str]
         """
         self._loadbalancer_id = loadbalancer_id
 
@@ -341,7 +380,7 @@ class ListPoolsRequest:
         后端云服务器组的后端协议。取值：TCP、UDP、HTTP、HTTPS和QUIC。  支持多值查询，查询条件格式：*protocol=xxx&protocol=xxx*。
 
         :param protocol: The protocol of this ListPoolsRequest.
-        :type: list[str]
+        :type protocol: list[str]
         """
         self._protocol = protocol
 
@@ -363,7 +402,7 @@ class ListPoolsRequest:
         后端云服务器组的负载均衡算法。  取值： 1、ROUND_ROBIN：加权轮询算法。 2、LEAST_CONNECTIONS：加权最少连接算法。 3、SOURCE_IP：源IP算法。 4、QUIC_CID：连接ID算法。  支持多值查询，查询条件格式：*lb_algorithm=xxx&lb_algorithm=xxx*。
 
         :param lb_algorithm: The lb_algorithm of this ListPoolsRequest.
-        :type: list[str]
+        :type lb_algorithm: list[str]
         """
         self._lb_algorithm = lb_algorithm
 
@@ -385,7 +424,7 @@ class ListPoolsRequest:
         企业项目ID。  支持多值查询，查询条件格式：*enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
 
         :param enterprise_project_id: The enterprise_project_id of this ListPoolsRequest.
-        :type: list[str]
+        :type enterprise_project_id: list[str]
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -407,7 +446,7 @@ class ListPoolsRequest:
         后端云服务器组支持的IP版本。取值： [- 共享型LB下的pool：固定为v4； - 独享型LB下的pool：dualstack、v4。当该pool的协议为TCP/UDP/QUIC时，ip_version为dualstack，表示双栈。当协议为HTTP/HTTPS时，ip_version为v4。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42,dt,dt_test) [- dualstack: 当该pool的协议为TCP/UDP/QUIC时，ip_version为dualstack，表示双栈。 - v4: 当该pool的协议为HTTP/HTTPS时，ip_version为v4。](tag:hcso_dt) 支持多值查询，查询条件格式：*ip_version=xxx&ip_version=xxx*。
 
         :param ip_version: The ip_version of this ListPoolsRequest.
-        :type: list[str]
+        :type ip_version: list[str]
         """
         self._ip_version = ip_version
 
@@ -429,7 +468,7 @@ class ListPoolsRequest:
         后端云服务器的IP地址。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_address=xxx&member_address=xxx*。
 
         :param member_address: The member_address of this ListPoolsRequest.
-        :type: list[str]
+        :type member_address: list[str]
         """
         self._member_address = member_address
 
@@ -451,7 +490,7 @@ class ListPoolsRequest:
         后端云服务器对应的弹性云服务器的ID。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_device_id=xxx&member_device_id=xxx*。
 
         :param member_device_id: The member_device_id of this ListPoolsRequest.
-        :type: list[str]
+        :type member_device_id: list[str]
         """
         self._member_device_id = member_device_id
 
@@ -473,7 +512,7 @@ class ListPoolsRequest:
         是否开启删除保护，false不开启，true开启，不传查询全部。
 
         :param member_deletion_protection_enable: The member_deletion_protection_enable of this ListPoolsRequest.
-        :type: bool
+        :type member_deletion_protection_enable: bool
         """
         self._member_deletion_protection_enable = member_deletion_protection_enable
 
@@ -495,7 +534,7 @@ class ListPoolsRequest:
         关联的监听器ID，包括通过l7policy关联的。  支持多值查询，查询条件格式：*listener_id=xxx&listener_id=xxx*。
 
         :param listener_id: The listener_id of this ListPoolsRequest.
-        :type: list[str]
+        :type listener_id: list[str]
         """
         self._listener_id = listener_id
 
@@ -517,7 +556,7 @@ class ListPoolsRequest:
         后端云服务器ID。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_instance_id=xxx&member_instance_id=xxx*。
 
         :param member_instance_id: The member_instance_id of this ListPoolsRequest.
-        :type: list[str]
+        :type member_instance_id: list[str]
         """
         self._member_instance_id = member_instance_id
 

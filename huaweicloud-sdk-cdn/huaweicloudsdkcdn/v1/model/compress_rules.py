@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CompressRules:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CompressRules:
     }
 
     def __init__(self, compress_type=None, compress_file_type=None):
-        """CompressRules - a model defined in huaweicloud sdk"""
+        """CompressRules
+
+        The model defined in huaweicloud sdk
+
+        :param compress_type: GZIP压缩类型（目前只支持 gzip）
+        :type compress_type: str
+        :param compress_file_type: GZIP压缩文件类型（文件后缀竖线分割，如：.js|.html|.css|.xml）
+        :type compress_file_type: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class CompressRules:
         GZIP压缩类型（目前只支持 gzip）
 
         :param compress_type: The compress_type of this CompressRules.
-        :type: str
+        :type compress_type: str
         """
         self._compress_type = compress_type
 
@@ -85,7 +92,7 @@ class CompressRules:
         GZIP压缩文件类型（文件后缀竖线分割，如：.js|.html|.css|.xml）
 
         :param compress_file_type: The compress_file_type of this CompressRules.
-        :type: str
+        :type compress_file_type: str
         """
         self._compress_file_type = compress_file_type
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchUpdateJobRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchUpdateJobRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """BatchUpdateJobRequest - a model defined in huaweicloud sdk"""
+        """BatchUpdateJobRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 请求语言类型
+        :type x_language: str
+        :param body: Body of the BatchUpdateJobRequest
+        :type body: :class:`huaweicloudsdkdrs.v3.BatchModifyJobReq`
+        """
         
         
 
@@ -63,7 +70,7 @@ class BatchUpdateJobRequest:
         请求语言类型
 
         :param x_language: The x_language of this BatchUpdateJobRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -73,7 +80,7 @@ class BatchUpdateJobRequest:
 
 
         :return: The body of this BatchUpdateJobRequest.
-        :rtype: BatchModifyJobReq
+        :rtype: :class:`huaweicloudsdkdrs.v3.BatchModifyJobReq`
         """
         return self._body
 
@@ -83,7 +90,7 @@ class BatchUpdateJobRequest:
 
 
         :param body: The body of this BatchUpdateJobRequest.
-        :type: BatchModifyJobReq
+        :type body: :class:`huaweicloudsdkdrs.v3.BatchModifyJobReq`
         """
         self._body = body
 

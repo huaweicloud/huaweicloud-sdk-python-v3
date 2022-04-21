@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateClusterPublicKibanaReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateClusterPublicKibanaReq:
     }
 
     def __init__(self, eip_size=None, elb_white_list=None):
-        """CreateClusterPublicKibanaReq - a model defined in huaweicloud sdk"""
+        """CreateClusterPublicKibanaReq
+
+        The model defined in huaweicloud sdk
+
+        :param eip_size: 带宽大小。
+        :type eip_size: int
+        :param elb_white_list: 
+        :type elb_white_list: :class:`huaweicloudsdkcss.v2.CreateClusterPublicKibanaElbWhiteList`
+        """
         
         
 
@@ -61,7 +68,7 @@ class CreateClusterPublicKibanaReq:
         带宽大小。
 
         :param eip_size: The eip_size of this CreateClusterPublicKibanaReq.
-        :type: int
+        :type eip_size: int
         """
         self._eip_size = eip_size
 
@@ -71,7 +78,7 @@ class CreateClusterPublicKibanaReq:
 
 
         :return: The elb_white_list of this CreateClusterPublicKibanaReq.
-        :rtype: CreateClusterPublicKibanaElbWhiteList
+        :rtype: :class:`huaweicloudsdkcss.v2.CreateClusterPublicKibanaElbWhiteList`
         """
         return self._elb_white_list
 
@@ -81,7 +88,7 @@ class CreateClusterPublicKibanaReq:
 
 
         :param elb_white_list: The elb_white_list of this CreateClusterPublicKibanaReq.
-        :type: CreateClusterPublicKibanaElbWhiteList
+        :type elb_white_list: :class:`huaweicloudsdkcss.v2.CreateClusterPublicKibanaElbWhiteList`
         """
         self._elb_white_list = elb_white_list
 

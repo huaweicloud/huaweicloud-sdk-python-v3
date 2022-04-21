@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeploymentResources:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeploymentResources:
     }
 
     def __init__(self, limits=None, requests=None):
-        """DeploymentResources - a model defined in huaweicloud sdk"""
+        """DeploymentResources
+
+        The model defined in huaweicloud sdk
+
+        :param limits: 允许容器使用的最大资源
+        :type limits: dict(str, str)
+        :param requests: 容器需要使用的最小资源
+        :type requests: dict(str, str)
+        """
         
         
 
@@ -63,7 +70,7 @@ class DeploymentResources:
         允许容器使用的最大资源
 
         :param limits: The limits of this DeploymentResources.
-        :type: dict(str, str)
+        :type limits: dict(str, str)
         """
         self._limits = limits
 
@@ -85,7 +92,7 @@ class DeploymentResources:
         容器需要使用的最小资源
 
         :param requests: The requests of this DeploymentResources.
-        :type: dict(str, str)
+        :type requests: dict(str, str)
         """
         self._requests = requests
 

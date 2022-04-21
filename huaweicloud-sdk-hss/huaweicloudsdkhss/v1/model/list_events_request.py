@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListEventsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ListEventsRequest:
     }
 
     def __init__(self, begin_time=None, end_time=None, host_name=None, event_types=None, handle_status=None, limit=None, offset=None):
-        """ListEventsRequest - a model defined in huaweicloud sdk"""
+        """ListEventsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param begin_time: 查询时间段的起始时间，毫秒级时间戳，end_time减去begin_time小于等于2天
+        :type begin_time: str
+        :param end_time: 查询时间段的终止时间，毫秒级时间戳，end_time减去begin_time小于等于2天
+        :type end_time: str
+        :param host_name: 云主机名称
+        :type host_name: str
+        :param event_types: 事件类型，包含如下:   - Abnormal Login : 账户异常登录   - Invalid System Account : 风险账号   - Brute Force Cracking : 账号暴力破解   - System Start Script Change : 自启动检测   - Process Abnormal Activity : 进程异常行为   - Process Privilege Escalation : 进程提权操作   - File Privilege Escalation : 文件提权操作   - General Malware : 恶意程序（云查杀）   - Abnormal Shell : 异常shell   - Reverse Shell : 反弹Shell   - High-Risk Command Execution : 高危命令执行   - Key File Change : 关键文件变更   - Webshell : 网站后门
+        :type event_types: list[str]
+        :param handle_status: 是否已处理，包含如下类型：   - \&quot;unhandled\&quot; ： 未处理   - \&quot;handled\&quot; ： 已处理
+        :type handle_status: str
+        :param limit: 默认10
+        :type limit: int
+        :param offset: 默认0
+        :type offset: int
+        """
         
         
 
@@ -85,7 +102,7 @@ class ListEventsRequest:
         查询时间段的起始时间，毫秒级时间戳，end_time减去begin_time小于等于2天
 
         :param begin_time: The begin_time of this ListEventsRequest.
-        :type: str
+        :type begin_time: str
         """
         self._begin_time = begin_time
 
@@ -107,7 +124,7 @@ class ListEventsRequest:
         查询时间段的终止时间，毫秒级时间戳，end_time减去begin_time小于等于2天
 
         :param end_time: The end_time of this ListEventsRequest.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -129,7 +146,7 @@ class ListEventsRequest:
         云主机名称
 
         :param host_name: The host_name of this ListEventsRequest.
-        :type: str
+        :type host_name: str
         """
         self._host_name = host_name
 
@@ -151,7 +168,7 @@ class ListEventsRequest:
         事件类型，包含如下:   - Abnormal Login : 账户异常登录   - Invalid System Account : 风险账号   - Brute Force Cracking : 账号暴力破解   - System Start Script Change : 自启动检测   - Process Abnormal Activity : 进程异常行为   - Process Privilege Escalation : 进程提权操作   - File Privilege Escalation : 文件提权操作   - General Malware : 恶意程序（云查杀）   - Abnormal Shell : 异常shell   - Reverse Shell : 反弹Shell   - High-Risk Command Execution : 高危命令执行   - Key File Change : 关键文件变更   - Webshell : 网站后门
 
         :param event_types: The event_types of this ListEventsRequest.
-        :type: list[str]
+        :type event_types: list[str]
         """
         self._event_types = event_types
 
@@ -173,7 +190,7 @@ class ListEventsRequest:
         是否已处理，包含如下类型：   - \"unhandled\" ： 未处理   - \"handled\" ： 已处理
 
         :param handle_status: The handle_status of this ListEventsRequest.
-        :type: str
+        :type handle_status: str
         """
         self._handle_status = handle_status
 
@@ -195,7 +212,7 @@ class ListEventsRequest:
         默认10
 
         :param limit: The limit of this ListEventsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -217,7 +234,7 @@ class ListEventsRequest:
         默认0
 
         :param offset: The offset of this ListEventsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 

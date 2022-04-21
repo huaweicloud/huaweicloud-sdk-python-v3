@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSpecialThrottlingConfigurationsV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListSpecialThrottlingConfigurationsV2Request:
     }
 
     def __init__(self, instance_id=None, throttle_id=None, offset=None, limit=None, object_type=None, app_name=None):
-        """ListSpecialThrottlingConfigurationsV2Request - a model defined in huaweicloud sdk"""
+        """ListSpecialThrottlingConfigurationsV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param throttle_id: 流控策略的编号
+        :type throttle_id: str
+        :param offset: 偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
+        :type offset: int
+        :param limit: 每页显示的条目数量
+        :type limit: int
+        :param object_type: 特殊流控类型：APP, USER
+        :type object_type: str
+        :param app_name: 筛选的特殊应用名称
+        :type app_name: str
+        """
         
         
 
@@ -81,7 +96,7 @@ class ListSpecialThrottlingConfigurationsV2Request:
         实例ID
 
         :param instance_id: The instance_id of this ListSpecialThrottlingConfigurationsV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -103,7 +118,7 @@ class ListSpecialThrottlingConfigurationsV2Request:
         流控策略的编号
 
         :param throttle_id: The throttle_id of this ListSpecialThrottlingConfigurationsV2Request.
-        :type: str
+        :type throttle_id: str
         """
         self._throttle_id = throttle_id
 
@@ -125,7 +140,7 @@ class ListSpecialThrottlingConfigurationsV2Request:
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
         :param offset: The offset of this ListSpecialThrottlingConfigurationsV2Request.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -147,7 +162,7 @@ class ListSpecialThrottlingConfigurationsV2Request:
         每页显示的条目数量
 
         :param limit: The limit of this ListSpecialThrottlingConfigurationsV2Request.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -169,7 +184,7 @@ class ListSpecialThrottlingConfigurationsV2Request:
         特殊流控类型：APP, USER
 
         :param object_type: The object_type of this ListSpecialThrottlingConfigurationsV2Request.
-        :type: str
+        :type object_type: str
         """
         self._object_type = object_type
 
@@ -191,7 +206,7 @@ class ListSpecialThrottlingConfigurationsV2Request:
         筛选的特殊应用名称
 
         :param app_name: The app_name of this ListSpecialThrottlingConfigurationsV2Request.
-        :type: str
+        :type app_name: str
         """
         self._app_name = app_name
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchSetAlarmNotifyInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class BatchSetAlarmNotifyInfo:
     }
 
     def __init__(self, subscriptions=None, topic_urn=None, delay_time=None, rto_delay=None, rpo_delay=None, alarm_to_user=None):
-        """BatchSetAlarmNotifyInfo - a model defined in huaweicloud sdk"""
+        """BatchSetAlarmNotifyInfo
+
+        The model defined in huaweicloud sdk
+
+        :param subscriptions: 手动输入手机号、邮箱模式时填写
+        :type subscriptions: list[:class:`huaweicloudsdkdrs.v3.SubscriptionInfo`]
+        :param topic_urn: 主题资源标识
+        :type topic_urn: str
+        :param delay_time: 订阅延迟时间
+        :type delay_time: int
+        :param rto_delay: rto延迟时间
+        :type rto_delay: int
+        :param rpo_delay: rpo延迟时间
+        :type rpo_delay: int
+        :param alarm_to_user: 异常告警是否通知用户，不填默认为false
+        :type alarm_to_user: bool
+        """
         
         
 
@@ -72,7 +87,7 @@ class BatchSetAlarmNotifyInfo:
         手动输入手机号、邮箱模式时填写
 
         :return: The subscriptions of this BatchSetAlarmNotifyInfo.
-        :rtype: list[SubscriptionInfo]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.SubscriptionInfo`]
         """
         return self._subscriptions
 
@@ -83,7 +98,7 @@ class BatchSetAlarmNotifyInfo:
         手动输入手机号、邮箱模式时填写
 
         :param subscriptions: The subscriptions of this BatchSetAlarmNotifyInfo.
-        :type: list[SubscriptionInfo]
+        :type subscriptions: list[:class:`huaweicloudsdkdrs.v3.SubscriptionInfo`]
         """
         self._subscriptions = subscriptions
 
@@ -105,7 +120,7 @@ class BatchSetAlarmNotifyInfo:
         主题资源标识
 
         :param topic_urn: The topic_urn of this BatchSetAlarmNotifyInfo.
-        :type: str
+        :type topic_urn: str
         """
         self._topic_urn = topic_urn
 
@@ -127,7 +142,7 @@ class BatchSetAlarmNotifyInfo:
         订阅延迟时间
 
         :param delay_time: The delay_time of this BatchSetAlarmNotifyInfo.
-        :type: int
+        :type delay_time: int
         """
         self._delay_time = delay_time
 
@@ -149,7 +164,7 @@ class BatchSetAlarmNotifyInfo:
         rto延迟时间
 
         :param rto_delay: The rto_delay of this BatchSetAlarmNotifyInfo.
-        :type: int
+        :type rto_delay: int
         """
         self._rto_delay = rto_delay
 
@@ -171,7 +186,7 @@ class BatchSetAlarmNotifyInfo:
         rpo延迟时间
 
         :param rpo_delay: The rpo_delay of this BatchSetAlarmNotifyInfo.
-        :type: int
+        :type rpo_delay: int
         """
         self._rpo_delay = rpo_delay
 
@@ -193,7 +208,7 @@ class BatchSetAlarmNotifyInfo:
         异常告警是否通知用户，不填默认为false
 
         :param alarm_to_user: The alarm_to_user of this BatchSetAlarmNotifyInfo.
-        :type: bool
+        :type alarm_to_user: bool
         """
         self._alarm_to_user = alarm_to_user
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CollectTranscriberJobResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class CollectTranscriberJobResponse(SdkResponse):
     }
 
     def __init__(self, status=None, create_time=None, start_time=None, finish_time=None, segments=None):
-        """CollectTranscriberJobResponse - a model defined in huaweicloud sdk"""
+        """CollectTranscriberJobResponse
+
+        The model defined in huaweicloud sdk
+
+        :param status: 当前识别状态。具体状态如下所示：  WAITING 等待识别。 FINISHED 识别已经完成。 ERROR 识别过程中发生错误。
+        :type status: str
+        :param create_time: 任务创建时间, 遵循 RFC 3339格式。 格式示例：2018-12-04T13:10:29.310Z。
+        :type create_time: str
+        :param start_time: 开始识别时间, 遵循 RFC 3339格式。 当status为FINISHED或ERROR时存在。 格式示例：2018-12-04T13:10:29.310Z。
+        :type start_time: str
+        :param finish_time: 识别完成时间, 遵循 RFC 3339格式。 当status为FINISHED或ERROR时存在。 格式示例：2018-12-04T13:10:29.310Z。 
+        :type finish_time: str
+        :param segments: 转写结果, 多句结果的数组。 
+        :type segments: list[:class:`huaweicloudsdksis.v1.Segment`]
+        """
         
         super(CollectTranscriberJobResponse, self).__init__()
 
@@ -78,7 +91,7 @@ class CollectTranscriberJobResponse(SdkResponse):
         当前识别状态。具体状态如下所示：  WAITING 等待识别。 FINISHED 识别已经完成。 ERROR 识别过程中发生错误。
 
         :param status: The status of this CollectTranscriberJobResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -100,7 +113,7 @@ class CollectTranscriberJobResponse(SdkResponse):
         任务创建时间, 遵循 RFC 3339格式。 格式示例：2018-12-04T13:10:29.310Z。
 
         :param create_time: The create_time of this CollectTranscriberJobResponse.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -122,7 +135,7 @@ class CollectTranscriberJobResponse(SdkResponse):
         开始识别时间, 遵循 RFC 3339格式。 当status为FINISHED或ERROR时存在。 格式示例：2018-12-04T13:10:29.310Z。
 
         :param start_time: The start_time of this CollectTranscriberJobResponse.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -144,7 +157,7 @@ class CollectTranscriberJobResponse(SdkResponse):
         识别完成时间, 遵循 RFC 3339格式。 当status为FINISHED或ERROR时存在。 格式示例：2018-12-04T13:10:29.310Z。 
 
         :param finish_time: The finish_time of this CollectTranscriberJobResponse.
-        :type: str
+        :type finish_time: str
         """
         self._finish_time = finish_time
 
@@ -155,7 +168,7 @@ class CollectTranscriberJobResponse(SdkResponse):
         转写结果, 多句结果的数组。 
 
         :return: The segments of this CollectTranscriberJobResponse.
-        :rtype: list[Segment]
+        :rtype: list[:class:`huaweicloudsdksis.v1.Segment`]
         """
         return self._segments
 
@@ -166,7 +179,7 @@ class CollectTranscriberJobResponse(SdkResponse):
         转写结果, 多句结果的数组。 
 
         :param segments: The segments of this CollectTranscriberJobResponse.
-        :type: list[Segment]
+        :type segments: list[:class:`huaweicloudsdksis.v1.Segment`]
         """
         self._segments = segments
 

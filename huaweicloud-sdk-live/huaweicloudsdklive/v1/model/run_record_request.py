@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunRecordRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RunRecordRequest:
     }
 
     def __init__(self, action=None, body=None):
-        """RunRecordRequest - a model defined in huaweicloud sdk"""
+        """RunRecordRequest
+
+        The model defined in huaweicloud sdk
+
+        :param action: 操作行为。 取值如下： - START：对指定流开始录制，必须在直播流已经推送情况下才能正常启动，使用此命令启动录制的直播流如果发生了断流且超出断流时长，就会停止录制，并且重新推流后不会自动启动录制。 - STOP：对指定流停止录制。 
+        :type action: str
+        :param body: Body of the RunRecordRequest
+        :type body: :class:`huaweicloudsdklive.v1.RecordControlInfo`
+        """
         
         
 
@@ -62,7 +69,7 @@ class RunRecordRequest:
         操作行为。 取值如下： - START：对指定流开始录制，必须在直播流已经推送情况下才能正常启动，使用此命令启动录制的直播流如果发生了断流且超出断流时长，就会停止录制，并且重新推流后不会自动启动录制。 - STOP：对指定流停止录制。 
 
         :param action: The action of this RunRecordRequest.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -72,7 +79,7 @@ class RunRecordRequest:
 
 
         :return: The body of this RunRecordRequest.
-        :rtype: RecordControlInfo
+        :rtype: :class:`huaweicloudsdklive.v1.RecordControlInfo`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class RunRecordRequest:
 
 
         :param body: The body of this RunRecordRequest.
-        :type: RecordControlInfo
+        :type body: :class:`huaweicloudsdklive.v1.RecordControlInfo`
         """
         self._body = body
 

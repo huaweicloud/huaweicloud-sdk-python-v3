@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteMetadataRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteMetadataRequest:
     }
 
     def __init__(self, metadata_id=None):
-        """DeleteMetadataRequest - a model defined in huaweicloud sdk"""
+        """DeleteMetadataRequest
+
+        The model defined in huaweicloud sdk
+
+        :param metadata_id: 元数据ID。
+        :type metadata_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteMetadataRequest:
         元数据ID。
 
         :param metadata_id: The metadata_id of this DeleteMetadataRequest.
-        :type: str
+        :type metadata_id: str
         """
         self._metadata_id = metadata_id
 

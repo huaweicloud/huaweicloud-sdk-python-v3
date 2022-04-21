@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CsvMappings:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CsvMappings:
     }
 
     def __init__(self, column_name=None, json_key=None):
-        """CsvMappings - a model defined in huaweicloud sdk"""
+        """CsvMappings
+
+        The model defined in huaweicloud sdk
+
+        :param column_name: **参数说明**：OBS文件中的列名
+        :type column_name: str
+        :param json_key: **参数说明**：流转数据的属性名
+        :type json_key: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class CsvMappings:
         **参数说明**：OBS文件中的列名
 
         :param column_name: The column_name of this CsvMappings.
-        :type: str
+        :type column_name: str
         """
         self._column_name = column_name
 
@@ -83,7 +90,7 @@ class CsvMappings:
         **参数说明**：流转数据的属性名
 
         :param json_key: The json_key of this CsvMappings.
-        :type: str
+        :type json_key: str
         """
         self._json_key = json_key
 

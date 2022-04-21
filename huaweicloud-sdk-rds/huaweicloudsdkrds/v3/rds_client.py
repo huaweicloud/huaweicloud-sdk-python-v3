@@ -52,21 +52,17 @@ class RdsClient(Client):
         """应用参数模板
 
         应用参数模板。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ApplyConfigurationAsyncRequest request
-        :return: ApplyConfigurationAsyncResponse
+        :param request: Request instance for ApplyConfigurationAsync
+        :type request: :class:`huaweicloudsdkrds.v3.ApplyConfigurationAsyncRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ApplyConfigurationAsyncResponse`
         """
         return self.apply_configuration_async_with_http_info(request)
 
     def apply_configuration_async_with_http_info(self, request):
-        """应用参数模板
-
-        应用参数模板。
-
-        :param ApplyConfigurationAsyncRequest request
-        :return: ApplyConfigurationAsyncResponse
-        """
-
         all_params = ['config_id', 'apply_configuration_request', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -114,26 +110,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def attach_eip(self, request):
         """绑定和解绑弹性公网IP
 
         绑定和解绑弹性公网IP。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param AttachEipRequest request
-        :return: AttachEipResponse
+        :param request: Request instance for AttachEip
+        :type request: :class:`huaweicloudsdkrds.v3.AttachEipRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.AttachEipResponse`
         """
         return self.attach_eip_with_http_info(request)
 
     def attach_eip_with_http_info(self, request):
-        """绑定和解绑弹性公网IP
-
-        绑定和解绑弹性公网IP。
-
-        :param AttachEipRequest request
-        :return: AttachEipResponse
-        """
-
         all_params = ['instance_id', 'bind_eip_request', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -181,26 +172,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_tag_add_action(self, request):
         """批量添加标签
 
         批量添加标签。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchTagAddActionRequest request
-        :return: BatchTagAddActionResponse
+        :param request: Request instance for BatchTagAddAction
+        :type request: :class:`huaweicloudsdkrds.v3.BatchTagAddActionRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.BatchTagAddActionResponse`
         """
         return self.batch_tag_add_action_with_http_info(request)
 
     def batch_tag_add_action_with_http_info(self, request):
-        """批量添加标签
-
-        批量添加标签。
-
-        :param BatchTagAddActionRequest request
-        :return: BatchTagAddActionResponse
-        """
-
         all_params = ['instance_id', 'batch_tag_action_request', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -248,26 +234,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_tag_del_action(self, request):
         """批量删除标签
 
         批量删除标签。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchTagDelActionRequest request
-        :return: BatchTagDelActionResponse
+        :param request: Request instance for BatchTagDelAction
+        :type request: :class:`huaweicloudsdkrds.v3.BatchTagDelActionRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.BatchTagDelActionResponse`
         """
         return self.batch_tag_del_action_with_http_info(request)
 
     def batch_tag_del_action_with_http_info(self, request):
-        """批量删除标签
-
-        批量删除标签。
-
-        :param BatchTagDelActionRequest request
-        :return: BatchTagDelActionResponse
-        """
-
         all_params = ['instance_id', 'batch_tag_action_request', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -315,26 +296,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def change_failover_mode(self, request):
         """更改主备实例的数据同步方式
 
         更改主备实例的数据同步方式。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ChangeFailoverModeRequest request
-        :return: ChangeFailoverModeResponse
+        :param request: Request instance for ChangeFailoverMode
+        :type request: :class:`huaweicloudsdkrds.v3.ChangeFailoverModeRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ChangeFailoverModeResponse`
         """
         return self.change_failover_mode_with_http_info(request)
 
     def change_failover_mode_with_http_info(self, request):
-        """更改主备实例的数据同步方式
-
-        更改主备实例的数据同步方式。
-
-        :param ChangeFailoverModeRequest request
-        :return: ChangeFailoverModeResponse
-        """
-
         all_params = ['instance_id', 'failover_mode_request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -382,26 +358,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def change_failover_strategy(self, request):
         """切换主备实例的倒换策略
 
         切换主备实例的倒换策略.
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ChangeFailoverStrategyRequest request
-        :return: ChangeFailoverStrategyResponse
+        :param request: Request instance for ChangeFailoverStrategy
+        :type request: :class:`huaweicloudsdkrds.v3.ChangeFailoverStrategyRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ChangeFailoverStrategyResponse`
         """
         return self.change_failover_strategy_with_http_info(request)
 
     def change_failover_strategy_with_http_info(self, request):
-        """切换主备实例的倒换策略
-
-        切换主备实例的倒换策略.
-
-        :param ChangeFailoverStrategyRequest request
-        :return: ChangeFailoverStrategyResponse
-        """
-
         all_params = ['instance_id', 'failover_strategy_request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -449,26 +420,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def change_ops_window(self, request):
         """设置可维护时间段
 
         设置可维护时间段
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ChangeOpsWindowRequest request
-        :return: ChangeOpsWindowResponse
+        :param request: Request instance for ChangeOpsWindow
+        :type request: :class:`huaweicloudsdkrds.v3.ChangeOpsWindowRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ChangeOpsWindowResponse`
         """
         return self.change_ops_window_with_http_info(request)
 
     def change_ops_window_with_http_info(self, request):
-        """设置可维护时间段
-
-        设置可维护时间段
-
-        :param ChangeOpsWindowRequest request
-        :return: ChangeOpsWindowResponse
-        """
-
         all_params = ['instance_id', 'ops_window_request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -516,26 +482,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_configuration(self, request):
         """创建参数模板
 
         创建参数模板。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateConfigurationRequest request
-        :return: CreateConfigurationResponse
+        :param request: Request instance for CreateConfiguration
+        :type request: :class:`huaweicloudsdkrds.v3.CreateConfigurationRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.CreateConfigurationResponse`
         """
         return self.create_configuration_with_http_info(request)
 
     def create_configuration_with_http_info(self, request):
-        """创建参数模板
-
-        创建参数模板。
-
-        :param CreateConfigurationRequest request
-        :return: CreateConfigurationResponse
-        """
-
         all_params = ['create_configuration_request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -581,26 +542,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_dns_name(self, request):
         """申请域名
 
         申请域名
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateDnsNameRequest request
-        :return: CreateDnsNameResponse
+        :param request: Request instance for CreateDnsName
+        :type request: :class:`huaweicloudsdkrds.v3.CreateDnsNameRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.CreateDnsNameResponse`
         """
         return self.create_dns_name_with_http_info(request)
 
     def create_dns_name_with_http_info(self, request):
-        """申请域名
-
-        申请域名
-
-        :param CreateDnsNameRequest request
-        :return: CreateDnsNameResponse
-        """
-
         all_params = ['instance_id', 'create_dns_name_request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -648,26 +604,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_instance(self, request):
         """创建数据库实例
 
         创建数据库实例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateInstanceRequest request
-        :return: CreateInstanceResponse
+        :param request: Request instance for CreateInstance
+        :type request: :class:`huaweicloudsdkrds.v3.CreateInstanceRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.CreateInstanceResponse`
         """
         return self.create_instance_with_http_info(request)
 
     def create_instance_with_http_info(self, request):
-        """创建数据库实例
-
-        创建数据库实例。
-
-        :param CreateInstanceRequest request
-        :return: CreateInstanceResponse
-        """
-
         all_params = ['create_instance_request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -713,26 +664,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_manual_backup(self, request):
         """创建手动备份
 
         创建手动备份。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateManualBackupRequest request
-        :return: CreateManualBackupResponse
+        :param request: Request instance for CreateManualBackup
+        :type request: :class:`huaweicloudsdkrds.v3.CreateManualBackupRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.CreateManualBackupResponse`
         """
         return self.create_manual_backup_with_http_info(request)
 
     def create_manual_backup_with_http_info(self, request):
-        """创建手动备份
-
-        创建手动备份。
-
-        :param CreateManualBackupRequest request
-        :return: CreateManualBackupResponse
-        """
-
         all_params = ['create_manual_backup_request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -778,26 +724,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_restore_instance(self, request):
         """恢复到新实例
 
         恢复到新实例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateRestoreInstanceRequest request
-        :return: CreateRestoreInstanceResponse
+        :param request: Request instance for CreateRestoreInstance
+        :type request: :class:`huaweicloudsdkrds.v3.CreateRestoreInstanceRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.CreateRestoreInstanceResponse`
         """
         return self.create_restore_instance_with_http_info(request)
 
     def create_restore_instance_with_http_info(self, request):
-        """恢复到新实例
-
-        恢复到新实例。
-
-        :param CreateRestoreInstanceRequest request
-        :return: CreateRestoreInstanceResponse
-        """
-
         all_params = ['create_instance_request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -843,26 +784,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_configuration(self, request):
         """删除参数模板
 
         删除参数模板。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteConfigurationRequest request
-        :return: DeleteConfigurationResponse
+        :param request: Request instance for DeleteConfiguration
+        :type request: :class:`huaweicloudsdkrds.v3.DeleteConfigurationRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.DeleteConfigurationResponse`
         """
         return self.delete_configuration_with_http_info(request)
 
     def delete_configuration_with_http_info(self, request):
-        """删除参数模板
-
-        删除参数模板。
-
-        :param DeleteConfigurationRequest request
-        :return: DeleteConfigurationResponse
-        """
-
         all_params = ['config_id', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -908,26 +844,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_instance(self, request):
         """删除数据库实例
 
         删除数据库实例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteInstanceRequest request
-        :return: DeleteInstanceResponse
+        :param request: Request instance for DeleteInstance
+        :type request: :class:`huaweicloudsdkrds.v3.DeleteInstanceRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.DeleteInstanceResponse`
         """
         return self.delete_instance_with_http_info(request)
 
     def delete_instance_with_http_info(self, request):
-        """删除数据库实例
-
-        删除数据库实例。
-
-        :param DeleteInstanceRequest request
-        :return: DeleteInstanceResponse
-        """
-
         all_params = ['instance_id', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -973,26 +904,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_manual_backup(self, request):
         """删除手动备份
 
         删除手动备份。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteManualBackupRequest request
-        :return: DeleteManualBackupResponse
+        :param request: Request instance for DeleteManualBackup
+        :type request: :class:`huaweicloudsdkrds.v3.DeleteManualBackupRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.DeleteManualBackupResponse`
         """
         return self.delete_manual_backup_with_http_info(request)
 
     def delete_manual_backup_with_http_info(self, request):
-        """删除手动备份
-
-        删除手动备份。
-
-        :param DeleteManualBackupRequest request
-        :return: DeleteManualBackupResponse
-        """
-
         all_params = ['backup_id', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1038,26 +964,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def download_slowlog(self, request):
         """获取慢日志下载链接
 
         获取慢日志下载链接。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DownloadSlowlogRequest request
-        :return: DownloadSlowlogResponse
+        :param request: Request instance for DownloadSlowlog
+        :type request: :class:`huaweicloudsdkrds.v3.DownloadSlowlogRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.DownloadSlowlogResponse`
         """
         return self.download_slowlog_with_http_info(request)
 
     def download_slowlog_with_http_info(self, request):
-        """获取慢日志下载链接
-
-        获取慢日志下载链接。
-
-        :param DownloadSlowlogRequest request
-        :return: DownloadSlowlogResponse
-        """
-
         all_params = ['instance_id', 'slowlog_download_request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1105,26 +1026,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def enable_configuration(self, request):
         """应用参数模板
 
         应用参数模板。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param EnableConfigurationRequest request
-        :return: EnableConfigurationResponse
+        :param request: Request instance for EnableConfiguration
+        :type request: :class:`huaweicloudsdkrds.v3.EnableConfigurationRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.EnableConfigurationResponse`
         """
         return self.enable_configuration_with_http_info(request)
 
     def enable_configuration_with_http_info(self, request):
-        """应用参数模板
-
-        应用参数模板。
-
-        :param EnableConfigurationRequest request
-        :return: EnableConfigurationResponse
-        """
-
         all_params = ['config_id', 'apply_configuration_request', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1172,26 +1088,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_auditlogs(self, request):
         """获取审计日志列表
 
         获取审计日志列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListAuditlogsRequest request
-        :return: ListAuditlogsResponse
+        :param request: Request instance for ListAuditlogs
+        :type request: :class:`huaweicloudsdkrds.v3.ListAuditlogsRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListAuditlogsResponse`
         """
         return self.list_auditlogs_with_http_info(request)
 
     def list_auditlogs_with_http_info(self, request):
-        """获取审计日志列表
-
-        获取审计日志列表。
-
-        :param ListAuditlogsRequest request
-        :return: ListAuditlogsResponse
-        """
-
         all_params = ['instance_id', 'start_time', 'end_time', 'offset', 'limit', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1245,26 +1156,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_backups(self, request):
         """获取备份列表
 
         获取备份列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListBackupsRequest request
-        :return: ListBackupsResponse
+        :param request: Request instance for ListBackups
+        :type request: :class:`huaweicloudsdkrds.v3.ListBackupsRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListBackupsResponse`
         """
         return self.list_backups_with_http_info(request)
 
     def list_backups_with_http_info(self, request):
-        """获取备份列表
-
-        获取备份列表。
-
-        :param ListBackupsRequest request
-        :return: ListBackupsResponse
-        """
-
         all_params = ['instance_id', 'x_language', 'backup_id', 'backup_type', 'offset', 'limit', 'begin_time', 'end_time']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1322,26 +1228,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_collations(self, request):
         """查询SQLServer可用字符集
 
         查询SQLServer可用字符集
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListCollationsRequest request
-        :return: ListCollationsResponse
+        :param request: Request instance for ListCollations
+        :type request: :class:`huaweicloudsdkrds.v3.ListCollationsRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListCollationsResponse`
         """
         return self.list_collations_with_http_info(request)
 
     def list_collations_with_http_info(self, request):
-        """查询SQLServer可用字符集
-
-        查询SQLServer可用字符集
-
-        :param ListCollationsRequest request
-        :return: ListCollationsResponse
-        """
-
         all_params = ['x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1385,26 +1286,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_configurations(self, request):
         """获取参数模板列表
 
         获取参数模板列表，包括所有数据库的默认参数模板和用户创建的参数模板。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListConfigurationsRequest request
-        :return: ListConfigurationsResponse
+        :param request: Request instance for ListConfigurations
+        :type request: :class:`huaweicloudsdkrds.v3.ListConfigurationsRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListConfigurationsResponse`
         """
         return self.list_configurations_with_http_info(request)
 
     def list_configurations_with_http_info(self, request):
-        """获取参数模板列表
-
-        获取参数模板列表，包括所有数据库的默认参数模板和用户创建的参数模板。
-
-        :param ListConfigurationsRequest request
-        :return: ListConfigurationsResponse
-        """
-
         all_params = ['x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1448,26 +1344,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_datastores(self, request):
         """查询数据库引擎的版本
 
         查询数据库引擎的版本。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListDatastoresRequest request
-        :return: ListDatastoresResponse
+        :param request: Request instance for ListDatastores
+        :type request: :class:`huaweicloudsdkrds.v3.ListDatastoresRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListDatastoresResponse`
         """
         return self.list_datastores_with_http_info(request)
 
     def list_datastores_with_http_info(self, request):
-        """查询数据库引擎的版本
-
-        查询数据库引擎的版本。
-
-        :param ListDatastoresRequest request
-        :return: ListDatastoresResponse
-        """
-
         all_params = ['database_name', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1513,26 +1404,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_error_logs(self, request):
         """查询数据库错误日志
 
         查询数据库错误日志。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListErrorLogsRequest request
-        :return: ListErrorLogsResponse
+        :param request: Request instance for ListErrorLogs
+        :type request: :class:`huaweicloudsdkrds.v3.ListErrorLogsRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListErrorLogsResponse`
         """
         return self.list_error_logs_with_http_info(request)
 
     def list_error_logs_with_http_info(self, request):
-        """查询数据库错误日志
-
-        查询数据库错误日志。
-
-        :param ListErrorLogsRequest request
-        :return: ListErrorLogsResponse
-        """
-
         all_params = ['instance_id', 'start_date', 'end_date', 'x_language', 'offset', 'limit', 'level']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1588,26 +1474,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_error_logs_new(self, request):
         """查询数据库错误日志
 
         查询数据库错误日志。(与原v3接口相比修改offset,符合华为云服务开放 API遵从性规范3.0)
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListErrorLogsNewRequest request
-        :return: ListErrorLogsNewResponse
+        :param request: Request instance for ListErrorLogsNew
+        :type request: :class:`huaweicloudsdkrds.v3.ListErrorLogsNewRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListErrorLogsNewResponse`
         """
         return self.list_error_logs_new_with_http_info(request)
 
     def list_error_logs_new_with_http_info(self, request):
-        """查询数据库错误日志
-
-        查询数据库错误日志。(与原v3接口相比修改offset,符合华为云服务开放 API遵从性规范3.0)
-
-        :param ListErrorLogsNewRequest request
-        :return: ListErrorLogsNewResponse
-        """
-
         all_params = ['instance_id', 'start_date', 'end_date', 'x_language', 'offset', 'limit', 'level']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1663,26 +1544,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_flavors(self, request):
         """查询数据库规格
 
         查询数据库规格。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListFlavorsRequest request
-        :return: ListFlavorsResponse
+        :param request: Request instance for ListFlavors
+        :type request: :class:`huaweicloudsdkrds.v3.ListFlavorsRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListFlavorsResponse`
         """
         return self.list_flavors_with_http_info(request)
 
     def list_flavors_with_http_info(self, request):
-        """查询数据库规格
-
-        查询数据库规格。
-
-        :param ListFlavorsRequest request
-        :return: ListFlavorsResponse
-        """
-
         all_params = ['database_name', 'x_language', 'version_name', 'spec_code']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1732,26 +1608,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_instances(self, request):
         """查询数据库实例列表
 
         查询数据库实例列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListInstancesRequest request
-        :return: ListInstancesResponse
+        :param request: Request instance for ListInstances
+        :type request: :class:`huaweicloudsdkrds.v3.ListInstancesRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListInstancesResponse`
         """
         return self.list_instances_with_http_info(request)
 
     def list_instances_with_http_info(self, request):
-        """查询数据库实例列表
-
-        查询数据库实例列表。
-
-        :param ListInstancesRequest request
-        :return: ListInstancesResponse
-        """
-
         all_params = ['x_language', 'id', 'name', 'type', 'datastore_type', 'vpc_id', 'subnet_id', 'offset', 'limit', 'tags']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1813,26 +1684,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_job_info(self, request):
         """获取指定ID的任务信息
 
         获取指定ID的任务信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListJobInfoRequest request
-        :return: ListJobInfoResponse
+        :param request: Request instance for ListJobInfo
+        :type request: :class:`huaweicloudsdkrds.v3.ListJobInfoRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListJobInfoResponse`
         """
         return self.list_job_info_with_http_info(request)
 
     def list_job_info_with_http_info(self, request):
-        """获取指定ID的任务信息
-
-        获取指定ID的任务信息。
-
-        :param ListJobInfoRequest request
-        :return: ListJobInfoResponse
-        """
-
         all_params = ['id', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1878,26 +1744,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_job_info_detail(self, request):
         """获取指定实例和时间范围的任务信息（SQL Server）
 
         获取指定实例和时间范围的任务信息（SQL Server）。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListJobInfoDetailRequest request
-        :return: ListJobInfoDetailResponse
+        :param request: Request instance for ListJobInfoDetail
+        :type request: :class:`huaweicloudsdkrds.v3.ListJobInfoDetailRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListJobInfoDetailResponse`
         """
         return self.list_job_info_detail_with_http_info(request)
 
     def list_job_info_detail_with_http_info(self, request):
-        """获取指定实例和时间范围的任务信息（SQL Server）
-
-        获取指定实例和时间范围的任务信息（SQL Server）。
-
-        :param ListJobInfoDetailRequest request
-        :return: ListJobInfoDetailResponse
-        """
-
         all_params = ['instance_id', 'start_time', 'x_language', 'end_time']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1947,26 +1808,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_off_site_backups(self, request):
         """查询跨区域备份列表
 
         查询跨区域备份列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListOffSiteBackupsRequest request
-        :return: ListOffSiteBackupsResponse
+        :param request: Request instance for ListOffSiteBackups
+        :type request: :class:`huaweicloudsdkrds.v3.ListOffSiteBackupsRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListOffSiteBackupsResponse`
         """
         return self.list_off_site_backups_with_http_info(request)
 
     def list_off_site_backups_with_http_info(self, request):
-        """查询跨区域备份列表
-
-        查询跨区域备份列表。
-
-        :param ListOffSiteBackupsRequest request
-        :return: ListOffSiteBackupsResponse
-        """
-
         all_params = ['instance_id', 'x_language', 'backup_id', 'backup_type', 'offset', 'limit', 'begin_time', 'end_time']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2024,26 +1880,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_off_site_instances(self, request):
         """查询跨区域备份实例列表
 
         查询跨区域备份实例列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListOffSiteInstancesRequest request
-        :return: ListOffSiteInstancesResponse
+        :param request: Request instance for ListOffSiteInstances
+        :type request: :class:`huaweicloudsdkrds.v3.ListOffSiteInstancesRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListOffSiteInstancesResponse`
         """
         return self.list_off_site_instances_with_http_info(request)
 
     def list_off_site_instances_with_http_info(self, request):
-        """查询跨区域备份实例列表
-
-        查询跨区域备份实例列表。
-
-        :param ListOffSiteInstancesRequest request
-        :return: ListOffSiteInstancesResponse
-        """
-
         all_params = ['x_language', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2091,26 +1942,22 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_off_site_restore_times(self, request):
         """查询跨区域备份可恢复时间段
 
-        查询跨区域备份可恢复时间段。 如果您备份策略中的保存天数设置较长，建议您传入查询日期“date”。
+        查询跨区域备份可恢复时间段。
+        如果您备份策略中的保存天数设置较长，建议您传入查询日期“date”。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListOffSiteRestoreTimesRequest request
-        :return: ListOffSiteRestoreTimesResponse
+        :param request: Request instance for ListOffSiteRestoreTimes
+        :type request: :class:`huaweicloudsdkrds.v3.ListOffSiteRestoreTimesRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListOffSiteRestoreTimesResponse`
         """
         return self.list_off_site_restore_times_with_http_info(request)
 
     def list_off_site_restore_times_with_http_info(self, request):
-        """查询跨区域备份可恢复时间段
-
-        查询跨区域备份可恢复时间段。 如果您备份策略中的保存天数设置较长，建议您传入查询日期“date”。
-
-        :param ListOffSiteRestoreTimesRequest request
-        :return: ListOffSiteRestoreTimesResponse
-        """
-
         all_params = ['instance_id', 'x_language', 'date']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2158,26 +2005,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_project_tags(self, request):
         """查询项目标签
 
         查询项目标签。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListProjectTagsRequest request
-        :return: ListProjectTagsResponse
+        :param request: Request instance for ListProjectTags
+        :type request: :class:`huaweicloudsdkrds.v3.ListProjectTagsRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListProjectTagsResponse`
         """
         return self.list_project_tags_with_http_info(request)
 
     def list_project_tags_with_http_info(self, request):
-        """查询项目标签
-
-        查询项目标签。
-
-        :param ListProjectTagsRequest request
-        :return: ListProjectTagsResponse
-        """
-
         all_params = ['x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2221,26 +2063,22 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_restore_times(self, request):
         """查询可恢复时间段
 
-        查询可恢复时间段。 如果您备份策略中的保存天数设置较长，建议您传入查询日期“date”。
+        查询可恢复时间段。
+        如果您备份策略中的保存天数设置较长，建议您传入查询日期“date”。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListRestoreTimesRequest request
-        :return: ListRestoreTimesResponse
+        :param request: Request instance for ListRestoreTimes
+        :type request: :class:`huaweicloudsdkrds.v3.ListRestoreTimesRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListRestoreTimesResponse`
         """
         return self.list_restore_times_with_http_info(request)
 
     def list_restore_times_with_http_info(self, request):
-        """查询可恢复时间段
-
-        查询可恢复时间段。 如果您备份策略中的保存天数设置较长，建议您传入查询日期“date”。
-
-        :param ListRestoreTimesRequest request
-        :return: ListRestoreTimesResponse
-        """
-
         all_params = ['instance_id', 'x_language', 'date']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2288,26 +2126,22 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_slow_log_file(self, request):
         """查询慢日志文件列表
 
-        查询慢日志文件列表。 调用该接口取到慢日志文件名后，可以调用接口/v3/{project_id}/instances/{instance_id}/slowlog-download 获取慢日志文件下载链接
+        查询慢日志文件列表。
+        调用该接口取到慢日志文件名后，可以调用接口/v3/{project_id}/instances/{instance_id}/slowlog-download 获取慢日志文件下载链接
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListSlowLogFileRequest request
-        :return: ListSlowLogFileResponse
+        :param request: Request instance for ListSlowLogFile
+        :type request: :class:`huaweicloudsdkrds.v3.ListSlowLogFileRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListSlowLogFileResponse`
         """
         return self.list_slow_log_file_with_http_info(request)
 
     def list_slow_log_file_with_http_info(self, request):
-        """查询慢日志文件列表
-
-        查询慢日志文件列表。 调用该接口取到慢日志文件名后，可以调用接口/v3/{project_id}/instances/{instance_id}/slowlog-download 获取慢日志文件下载链接
-
-        :param ListSlowLogFileRequest request
-        :return: ListSlowLogFileResponse
-        """
-
         all_params = ['instance_id', 'x_language', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2357,26 +2191,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_slow_logs(self, request):
         """查询数据库慢日志
 
         查询数据库慢日志。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListSlowLogsRequest request
-        :return: ListSlowLogsResponse
+        :param request: Request instance for ListSlowLogs
+        :type request: :class:`huaweicloudsdkrds.v3.ListSlowLogsRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListSlowLogsResponse`
         """
         return self.list_slow_logs_with_http_info(request)
 
     def list_slow_logs_with_http_info(self, request):
-        """查询数据库慢日志
-
-        查询数据库慢日志。
-
-        :param ListSlowLogsRequest request
-        :return: ListSlowLogsResponse
-        """
-
         all_params = ['instance_id', 'start_date', 'end_date', 'x_language', 'offset', 'limit', 'type']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2432,26 +2261,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_slow_logs_new(self, request):
         """查询数据库慢日志
 
         查询数据库慢日志。(与原v3接口相比修改offset,符合华为云服务开放 API遵从性规范3.0)
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListSlowLogsNewRequest request
-        :return: ListSlowLogsNewResponse
+        :param request: Request instance for ListSlowLogsNew
+        :type request: :class:`huaweicloudsdkrds.v3.ListSlowLogsNewRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListSlowLogsNewResponse`
         """
         return self.list_slow_logs_new_with_http_info(request)
 
     def list_slow_logs_new_with_http_info(self, request):
-        """查询数据库慢日志
-
-        查询数据库慢日志。(与原v3接口相比修改offset,符合华为云服务开放 API遵从性规范3.0)
-
-        :param ListSlowLogsNewRequest request
-        :return: ListSlowLogsNewResponse
-        """
-
         all_params = ['instance_id', 'start_date', 'end_date', 'x_language', 'offset', 'limit', 'type']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2507,26 +2331,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_slowlog_statistics(self, request):
         """获取慢日志统计信息
 
         获取慢日志统计信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListSlowlogStatisticsRequest request
-        :return: ListSlowlogStatisticsResponse
+        :param request: Request instance for ListSlowlogStatistics
+        :type request: :class:`huaweicloudsdkrds.v3.ListSlowlogStatisticsRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListSlowlogStatisticsResponse`
         """
         return self.list_slowlog_statistics_with_http_info(request)
 
     def list_slowlog_statistics_with_http_info(self, request):
-        """获取慢日志统计信息
-
-        获取慢日志统计信息
-
-        :param ListSlowlogStatisticsRequest request
-        :return: ListSlowlogStatisticsResponse
-        """
-
         all_params = ['instance_id', 'cur_page', 'per_page', 'start_date', 'end_date', 'type', 'x_language', 'sort']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2584,26 +2403,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_storage_types(self, request):
         """查询数据库磁盘类型
 
         查询数据库磁盘类型。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListStorageTypesRequest request
-        :return: ListStorageTypesResponse
+        :param request: Request instance for ListStorageTypes
+        :type request: :class:`huaweicloudsdkrds.v3.ListStorageTypesRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListStorageTypesResponse`
         """
         return self.list_storage_types_with_http_info(request)
 
     def list_storage_types_with_http_info(self, request):
-        """查询数据库磁盘类型
-
-        查询数据库磁盘类型。
-
-        :param ListStorageTypesRequest request
-        :return: ListStorageTypesResponse
-        """
-
         all_params = ['database_name', 'version_name', 'x_language', 'ha_mode']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2653,26 +2467,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def migrate_follower(self, request):
         """迁移主备实例的备机
 
         迁移主备实例的备机
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param MigrateFollowerRequest request
-        :return: MigrateFollowerResponse
+        :param request: Request instance for MigrateFollower
+        :type request: :class:`huaweicloudsdkrds.v3.MigrateFollowerRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.MigrateFollowerResponse`
         """
         return self.migrate_follower_with_http_info(request)
 
     def migrate_follower_with_http_info(self, request):
-        """迁移主备实例的备机
-
-        迁移主备实例的备机
-
-        :param MigrateFollowerRequest request
-        :return: MigrateFollowerResponse
-        """
-
         all_params = ['instance_id', 'migrate_follower_request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2720,26 +2529,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def restore_exist_instance(self, request):
         """恢复到已有实例
 
         恢复到已有实例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param RestoreExistInstanceRequest request
-        :return: RestoreExistInstanceResponse
+        :param request: Request instance for RestoreExistInstance
+        :type request: :class:`huaweicloudsdkrds.v3.RestoreExistInstanceRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.RestoreExistInstanceResponse`
         """
         return self.restore_exist_instance_with_http_info(request)
 
     def restore_exist_instance_with_http_info(self, request):
-        """恢复到已有实例
-
-        恢复到已有实例。
-
-        :param RestoreExistInstanceRequest request
-        :return: RestoreExistInstanceResponse
-        """
-
         all_params = ['restore_to_existing_instance_request', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2785,26 +2589,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def restore_tables(self, request):
         """表级时间点恢复(MySQL)
 
         表级时间点恢复(MySQL)。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param RestoreTablesRequest request
-        :return: RestoreTablesResponse
+        :param request: Request instance for RestoreTables
+        :type request: :class:`huaweicloudsdkrds.v3.RestoreTablesRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.RestoreTablesResponse`
         """
         return self.restore_tables_with_http_info(request)
 
     def restore_tables_with_http_info(self, request):
-        """表级时间点恢复(MySQL)
-
-        表级时间点恢复(MySQL)。
-
-        :param RestoreTablesRequest request
-        :return: RestoreTablesResponse
-        """
-
         all_params = ['instance_id', 'restore_tables_request', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2852,26 +2651,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def restore_to_existing_instance(self, request):
         """恢复到已有实例
 
         恢复到已有实例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param RestoreToExistingInstanceRequest request
-        :return: RestoreToExistingInstanceResponse
+        :param request: Request instance for RestoreToExistingInstance
+        :type request: :class:`huaweicloudsdkrds.v3.RestoreToExistingInstanceRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.RestoreToExistingInstanceResponse`
         """
         return self.restore_to_existing_instance_with_http_info(request)
 
     def restore_to_existing_instance_with_http_info(self, request):
-        """恢复到已有实例
-
-        恢复到已有实例。
-
-        :param RestoreToExistingInstanceRequest request
-        :return: RestoreToExistingInstanceResponse
-        """
-
         all_params = ['restore_to_existing_instance_request', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2917,26 +2711,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def set_auditlog_policy(self, request):
         """设置审计日志策略
 
         设置审计日志策略。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param SetAuditlogPolicyRequest request
-        :return: SetAuditlogPolicyResponse
+        :param request: Request instance for SetAuditlogPolicy
+        :type request: :class:`huaweicloudsdkrds.v3.SetAuditlogPolicyRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.SetAuditlogPolicyResponse`
         """
         return self.set_auditlog_policy_with_http_info(request)
 
     def set_auditlog_policy_with_http_info(self, request):
-        """设置审计日志策略
-
-        设置审计日志策略。
-
-        :param SetAuditlogPolicyRequest request
-        :return: SetAuditlogPolicyResponse
-        """
-
         all_params = ['instance_id', 'set_auditlog_policy_request', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2984,26 +2773,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def set_backup_policy(self, request):
         """设置自动备份策略
 
         设置自动备份策略。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param SetBackupPolicyRequest request
-        :return: SetBackupPolicyResponse
+        :param request: Request instance for SetBackupPolicy
+        :type request: :class:`huaweicloudsdkrds.v3.SetBackupPolicyRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.SetBackupPolicyResponse`
         """
         return self.set_backup_policy_with_http_info(request)
 
     def set_backup_policy_with_http_info(self, request):
-        """设置自动备份策略
-
-        设置自动备份策略。
-
-        :param SetBackupPolicyRequest request
-        :return: SetBackupPolicyResponse
-        """
-
         all_params = ['instance_id', 'set_backup_policy_request', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3051,26 +2835,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def set_binlog_clear_policy(self, request):
         """设置binlog本地保留时长
 
         修改指定实例的binlog本地保留时长。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param SetBinlogClearPolicyRequest request
-        :return: SetBinlogClearPolicyResponse
+        :param request: Request instance for SetBinlogClearPolicy
+        :type request: :class:`huaweicloudsdkrds.v3.SetBinlogClearPolicyRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.SetBinlogClearPolicyResponse`
         """
         return self.set_binlog_clear_policy_with_http_info(request)
 
     def set_binlog_clear_policy_with_http_info(self, request):
-        """设置binlog本地保留时长
-
-        修改指定实例的binlog本地保留时长。
-
-        :param SetBinlogClearPolicyRequest request
-        :return: SetBinlogClearPolicyResponse
-        """
-
         all_params = ['instance_id', 'binlog_clear_policy_request', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3118,26 +2897,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def set_off_site_backup_policy(self, request):
         """设置跨区域备份策略
 
         设置跨区域备份策略。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param SetOffSiteBackupPolicyRequest request
-        :return: SetOffSiteBackupPolicyResponse
+        :param request: Request instance for SetOffSiteBackupPolicy
+        :type request: :class:`huaweicloudsdkrds.v3.SetOffSiteBackupPolicyRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.SetOffSiteBackupPolicyResponse`
         """
         return self.set_off_site_backup_policy_with_http_info(request)
 
     def set_off_site_backup_policy_with_http_info(self, request):
-        """设置跨区域备份策略
-
-        设置跨区域备份策略。
-
-        :param SetOffSiteBackupPolicyRequest request
-        :return: SetOffSiteBackupPolicyResponse
-        """
-
         all_params = ['instance_id', 'set_off_site_backup_policy_request', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3185,26 +2959,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def set_security_group(self, request):
         """修改安全组
 
         修改安全组
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param SetSecurityGroupRequest request
-        :return: SetSecurityGroupResponse
+        :param request: Request instance for SetSecurityGroup
+        :type request: :class:`huaweicloudsdkrds.v3.SetSecurityGroupRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.SetSecurityGroupResponse`
         """
         return self.set_security_group_with_http_info(request)
 
     def set_security_group_with_http_info(self, request):
-        """修改安全组
-
-        修改安全组
-
-        :param SetSecurityGroupRequest request
-        :return: SetSecurityGroupResponse
-        """
-
         all_params = ['instance_id', 'security_group_request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3252,26 +3021,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_auditlog_download_link(self, request):
         """生成审计日志下载链接
 
         生成审计日志下载链接。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowAuditlogDownloadLinkRequest request
-        :return: ShowAuditlogDownloadLinkResponse
+        :param request: Request instance for ShowAuditlogDownloadLink
+        :type request: :class:`huaweicloudsdkrds.v3.ShowAuditlogDownloadLinkRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ShowAuditlogDownloadLinkResponse`
         """
         return self.show_auditlog_download_link_with_http_info(request)
 
     def show_auditlog_download_link_with_http_info(self, request):
-        """生成审计日志下载链接
-
-        生成审计日志下载链接。
-
-        :param ShowAuditlogDownloadLinkRequest request
-        :return: ShowAuditlogDownloadLinkResponse
-        """
-
         all_params = ['instance_id', 'generate_auditlog_download_link_request', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3319,26 +3083,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_auditlog_policy(self, request):
         """查询审计日志策略
 
         查询审计日志策略。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowAuditlogPolicyRequest request
-        :return: ShowAuditlogPolicyResponse
+        :param request: Request instance for ShowAuditlogPolicy
+        :type request: :class:`huaweicloudsdkrds.v3.ShowAuditlogPolicyRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ShowAuditlogPolicyResponse`
         """
         return self.show_auditlog_policy_with_http_info(request)
 
     def show_auditlog_policy_with_http_info(self, request):
-        """查询审计日志策略
-
-        查询审计日志策略。
-
-        :param ShowAuditlogPolicyRequest request
-        :return: ShowAuditlogPolicyResponse
-        """
-
         all_params = ['instance_id', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3384,26 +3143,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_backup_download_link(self, request):
         """获取备份下载链接
 
         获取备份下载链接。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowBackupDownloadLinkRequest request
-        :return: ShowBackupDownloadLinkResponse
+        :param request: Request instance for ShowBackupDownloadLink
+        :type request: :class:`huaweicloudsdkrds.v3.ShowBackupDownloadLinkRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ShowBackupDownloadLinkResponse`
         """
         return self.show_backup_download_link_with_http_info(request)
 
     def show_backup_download_link_with_http_info(self, request):
-        """获取备份下载链接
-
-        获取备份下载链接。
-
-        :param ShowBackupDownloadLinkRequest request
-        :return: ShowBackupDownloadLinkResponse
-        """
-
         all_params = ['backup_id', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3449,26 +3203,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_backup_policy(self, request):
         """查询自动备份策略
 
         查询自动备份策略。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowBackupPolicyRequest request
-        :return: ShowBackupPolicyResponse
+        :param request: Request instance for ShowBackupPolicy
+        :type request: :class:`huaweicloudsdkrds.v3.ShowBackupPolicyRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ShowBackupPolicyResponse`
         """
         return self.show_backup_policy_with_http_info(request)
 
     def show_backup_policy_with_http_info(self, request):
-        """查询自动备份策略
-
-        查询自动备份策略。
-
-        :param ShowBackupPolicyRequest request
-        :return: ShowBackupPolicyResponse
-        """
-
         all_params = ['instance_id', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3514,26 +3263,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_binlog_clear_policy(self, request):
         """获取binlog本地保留时长
 
         查寻指定实例的binlog本地保留时长。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowBinlogClearPolicyRequest request
-        :return: ShowBinlogClearPolicyResponse
+        :param request: Request instance for ShowBinlogClearPolicy
+        :type request: :class:`huaweicloudsdkrds.v3.ShowBinlogClearPolicyRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ShowBinlogClearPolicyResponse`
         """
         return self.show_binlog_clear_policy_with_http_info(request)
 
     def show_binlog_clear_policy_with_http_info(self, request):
-        """获取binlog本地保留时长
-
-        查寻指定实例的binlog本地保留时长。
-
-        :param ShowBinlogClearPolicyRequest request
-        :return: ShowBinlogClearPolicyResponse
-        """
-
         all_params = ['instance_id', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3579,26 +3323,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_configuration(self, request):
         """获取指定参数模板的参数
 
         获取指定参数模板的参数。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowConfigurationRequest request
-        :return: ShowConfigurationResponse
+        :param request: Request instance for ShowConfiguration
+        :type request: :class:`huaweicloudsdkrds.v3.ShowConfigurationRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ShowConfigurationResponse`
         """
         return self.show_configuration_with_http_info(request)
 
     def show_configuration_with_http_info(self, request):
-        """获取指定参数模板的参数
-
-        获取指定参数模板的参数。
-
-        :param ShowConfigurationRequest request
-        :return: ShowConfigurationResponse
-        """
-
         all_params = ['config_id', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3644,26 +3383,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_dr_replica_status(self, request):
         """查询跨云容灾复制状态
 
         建立跨云容灾关系后，查询主实例和灾备实例间的复制状态及延迟。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowDrReplicaStatusRequest request
-        :return: ShowDrReplicaStatusResponse
+        :param request: Request instance for ShowDrReplicaStatus
+        :type request: :class:`huaweicloudsdkrds.v3.ShowDrReplicaStatusRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ShowDrReplicaStatusResponse`
         """
         return self.show_dr_replica_status_with_http_info(request)
 
     def show_dr_replica_status_with_http_info(self, request):
-        """查询跨云容灾复制状态
-
-        建立跨云容灾关系后，查询主实例和灾备实例间的复制状态及延迟。
-
-        :param ShowDrReplicaStatusRequest request
-        :return: ShowDrReplicaStatusResponse
-        """
-
         all_params = ['instance_id', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3709,26 +3443,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_instance_configuration(self, request):
         """获取指定实例的参数模板
 
         获取指定实例的参数模板。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowInstanceConfigurationRequest request
-        :return: ShowInstanceConfigurationResponse
+        :param request: Request instance for ShowInstanceConfiguration
+        :type request: :class:`huaweicloudsdkrds.v3.ShowInstanceConfigurationRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ShowInstanceConfigurationResponse`
         """
         return self.show_instance_configuration_with_http_info(request)
 
     def show_instance_configuration_with_http_info(self, request):
-        """获取指定实例的参数模板
-
-        获取指定实例的参数模板。
-
-        :param ShowInstanceConfigurationRequest request
-        :return: ShowInstanceConfigurationResponse
-        """
-
         all_params = ['instance_id', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3774,26 +3503,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_off_site_backup_policy(self, request):
         """查询跨区域备份策略
 
         查询跨区域备份策略。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowOffSiteBackupPolicyRequest request
-        :return: ShowOffSiteBackupPolicyResponse
+        :param request: Request instance for ShowOffSiteBackupPolicy
+        :type request: :class:`huaweicloudsdkrds.v3.ShowOffSiteBackupPolicyRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ShowOffSiteBackupPolicyResponse`
         """
         return self.show_off_site_backup_policy_with_http_info(request)
 
     def show_off_site_backup_policy_with_http_info(self, request):
-        """查询跨区域备份策略
-
-        查询跨区域备份策略。
-
-        :param ShowOffSiteBackupPolicyRequest request
-        :return: ShowOffSiteBackupPolicyResponse
-        """
-
         all_params = ['instance_id', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3839,26 +3563,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_quotas(self, request):
         """查询配额
 
         查询当前项目下资源配额情况。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowQuotasRequest request
-        :return: ShowQuotasResponse
+        :param request: Request instance for ShowQuotas
+        :type request: :class:`huaweicloudsdkrds.v3.ShowQuotasRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ShowQuotasResponse`
         """
         return self.show_quotas_with_http_info(request)
 
     def show_quotas_with_http_info(self, request):
-        """查询配额
-
-        查询当前项目下资源配额情况。
-
-        :param ShowQuotasRequest request
-        :return: ShowQuotasResponse
-        """
-
         all_params = ['x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3902,26 +3621,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def start_failover(self, request):
         """手动倒换主备
 
         手动倒换主备.
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param StartFailoverRequest request
-        :return: StartFailoverResponse
+        :param request: Request instance for StartFailover
+        :type request: :class:`huaweicloudsdkrds.v3.StartFailoverRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.StartFailoverResponse`
         """
         return self.start_failover_with_http_info(request)
 
     def start_failover_with_http_info(self, request):
-        """手动倒换主备
-
-        手动倒换主备.
-
-        :param StartFailoverRequest request
-        :return: StartFailoverResponse
-        """
-
         all_params = ['instance_id', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3967,26 +3681,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def start_instance_enlarge_volume_action(self, request):
         """扩容数据库实例的磁盘空间
 
         扩容数据库实例的磁盘空间。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param StartInstanceEnlargeVolumeActionRequest request
-        :return: StartInstanceEnlargeVolumeActionResponse
+        :param request: Request instance for StartInstanceEnlargeVolumeAction
+        :type request: :class:`huaweicloudsdkrds.v3.StartInstanceEnlargeVolumeActionRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.StartInstanceEnlargeVolumeActionResponse`
         """
         return self.start_instance_enlarge_volume_action_with_http_info(request)
 
     def start_instance_enlarge_volume_action_with_http_info(self, request):
-        """扩容数据库实例的磁盘空间
-
-        扩容数据库实例的磁盘空间。
-
-        :param StartInstanceEnlargeVolumeActionRequest request
-        :return: StartInstanceEnlargeVolumeActionResponse
-        """
-
         all_params = ['instance_id', 'enlarge_volume_request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4034,26 +3743,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def start_instance_restart_action(self, request):
         """重启数据库实例
 
         重启数据库实例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param StartInstanceRestartActionRequest request
-        :return: StartInstanceRestartActionResponse
+        :param request: Request instance for StartInstanceRestartAction
+        :type request: :class:`huaweicloudsdkrds.v3.StartInstanceRestartActionRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.StartInstanceRestartActionResponse`
         """
         return self.start_instance_restart_action_with_http_info(request)
 
     def start_instance_restart_action_with_http_info(self, request):
-        """重启数据库实例
-
-        重启数据库实例。
-
-        :param StartInstanceRestartActionRequest request
-        :return: StartInstanceRestartActionResponse
-        """
-
         all_params = ['instance_id', 'instance_restart_requset_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4101,26 +3805,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def start_instance_single_to_ha_action(self, request):
         """单机转主备实例
 
         单机转主备实例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param StartInstanceSingleToHaActionRequest request
-        :return: StartInstanceSingleToHaActionResponse
+        :param request: Request instance for StartInstanceSingleToHaAction
+        :type request: :class:`huaweicloudsdkrds.v3.StartInstanceSingleToHaActionRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.StartInstanceSingleToHaActionResponse`
         """
         return self.start_instance_single_to_ha_action_with_http_info(request)
 
     def start_instance_single_to_ha_action_with_http_info(self, request):
-        """单机转主备实例
-
-        单机转主备实例。
-
-        :param StartInstanceSingleToHaActionRequest request
-        :return: StartInstanceSingleToHaActionResponse
-        """
-
         all_params = ['instance_id', 'instance_single_to_ha_request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4168,26 +3867,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def start_recycle_policy(self, request):
         """设置回收站策略
 
         设置回收站策略。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param StartRecyclePolicyRequest request
-        :return: StartRecyclePolicyResponse
+        :param request: Request instance for StartRecyclePolicy
+        :type request: :class:`huaweicloudsdkrds.v3.StartRecyclePolicyRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.StartRecyclePolicyResponse`
         """
         return self.start_recycle_policy_with_http_info(request)
 
     def start_recycle_policy_with_http_info(self, request):
-        """设置回收站策略
-
-        设置回收站策略。
-
-        :param StartRecyclePolicyRequest request
-        :return: StartRecyclePolicyResponse
-        """
-
         all_params = ['recycle_policy_request', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4233,26 +3927,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def start_resize_flavor_action(self, request):
         """变更数据库实例的规格
 
         变更数据库实例的规格。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param StartResizeFlavorActionRequest request
-        :return: StartResizeFlavorActionResponse
+        :param request: Request instance for StartResizeFlavorAction
+        :type request: :class:`huaweicloudsdkrds.v3.StartResizeFlavorActionRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.StartResizeFlavorActionResponse`
         """
         return self.start_resize_flavor_action_with_http_info(request)
 
     def start_resize_flavor_action_with_http_info(self, request):
-        """变更数据库实例的规格
-
-        变更数据库实例的规格。
-
-        :param StartResizeFlavorActionRequest request
-        :return: StartResizeFlavorActionResponse
-        """
-
         all_params = ['instance_id', 'resize_flavor_request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4300,26 +3989,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def startup_instance(self, request):
         """开启实例
 
         停止实例以节省费用，在停止数据库实例后，支持手动重新开启实例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param StartupInstanceRequest request
-        :return: StartupInstanceResponse
+        :param request: Request instance for StartupInstance
+        :type request: :class:`huaweicloudsdkrds.v3.StartupInstanceRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.StartupInstanceResponse`
         """
         return self.startup_instance_with_http_info(request)
 
     def startup_instance_with_http_info(self, request):
-        """开启实例
-
-        停止实例以节省费用，在停止数据库实例后，支持手动重新开启实例。
-
-        :param StartupInstanceRequest request
-        :return: StartupInstanceResponse
-        """
-
         all_params = ['instance_id', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4365,26 +4049,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def stop_instance(self, request):
         """停止实例
 
         实例进行关机，通过暂时停止按需实例以节省费用，实例默认停止七天。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param StopInstanceRequest request
-        :return: StopInstanceResponse
+        :param request: Request instance for StopInstance
+        :type request: :class:`huaweicloudsdkrds.v3.StopInstanceRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.StopInstanceResponse`
         """
         return self.stop_instance_with_http_info(request)
 
     def stop_instance_with_http_info(self, request):
-        """停止实例
-
-        实例进行关机，通过暂时停止按需实例以节省费用，实例默认停止七天。
-
-        :param StopInstanceRequest request
-        :return: StopInstanceResponse
-        """
-
         all_params = ['instance_id', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4430,26 +4109,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def switch_ssl(self, request):
         """设置SSL数据加密
 
         设置SSL数据加密。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param SwitchSslRequest request
-        :return: SwitchSslResponse
+        :param request: Request instance for SwitchSsl
+        :type request: :class:`huaweicloudsdkrds.v3.SwitchSslRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.SwitchSslResponse`
         """
         return self.switch_ssl_with_http_info(request)
 
     def switch_ssl_with_http_info(self, request):
-        """设置SSL数据加密
-
-        设置SSL数据加密。
-
-        :param SwitchSslRequest request
-        :return: SwitchSslResponse
-        """
-
         all_params = ['instance_id', 'ssl_option_request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4497,26 +4171,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_configuration(self, request):
         """修改参数模板参数
 
         修改参数模板参数。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateConfigurationRequest request
-        :return: UpdateConfigurationResponse
+        :param request: Request instance for UpdateConfiguration
+        :type request: :class:`huaweicloudsdkrds.v3.UpdateConfigurationRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.UpdateConfigurationResponse`
         """
         return self.update_configuration_with_http_info(request)
 
     def update_configuration_with_http_info(self, request):
-        """修改参数模板参数
-
-        修改参数模板参数。
-
-        :param UpdateConfigurationRequest request
-        :return: UpdateConfigurationResponse
-        """
-
         all_params = ['config_id', 'update_configuration_request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4564,26 +4233,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_data_ip(self, request):
         """修改内网地址
 
         修改内网地址
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateDataIpRequest request
-        :return: UpdateDataIpResponse
+        :param request: Request instance for UpdateDataIp
+        :type request: :class:`huaweicloudsdkrds.v3.UpdateDataIpRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.UpdateDataIpResponse`
         """
         return self.update_data_ip_with_http_info(request)
 
     def update_data_ip_with_http_info(self, request):
-        """修改内网地址
-
-        修改内网地址
-
-        :param UpdateDataIpRequest request
-        :return: UpdateDataIpResponse
-        """
-
         all_params = ['instance_id', 'data_ip_request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4631,26 +4295,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_dns_name(self, request):
         """修改域名
 
         修改域名
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateDnsNameRequest request
-        :return: UpdateDnsNameResponse
+        :param request: Request instance for UpdateDnsName
+        :type request: :class:`huaweicloudsdkrds.v3.UpdateDnsNameRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.UpdateDnsNameResponse`
         """
         return self.update_dns_name_with_http_info(request)
 
     def update_dns_name_with_http_info(self, request):
-        """修改域名
-
-        修改域名
-
-        :param UpdateDnsNameRequest request
-        :return: UpdateDnsNameResponse
-        """
-
         all_params = ['instance_id', 'modify_dns_name_request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4698,26 +4357,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_instance_configuration(self, request):
         """修改指定实例的参数
 
         修改指定实例的参数。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateInstanceConfigurationRequest request
-        :return: UpdateInstanceConfigurationResponse
+        :param request: Request instance for UpdateInstanceConfiguration
+        :type request: :class:`huaweicloudsdkrds.v3.UpdateInstanceConfigurationRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.UpdateInstanceConfigurationResponse`
         """
         return self.update_instance_configuration_with_http_info(request)
 
     def update_instance_configuration_with_http_info(self, request):
-        """修改指定实例的参数
-
-        修改指定实例的参数。
-
-        :param UpdateInstanceConfigurationRequest request
-        :return: UpdateInstanceConfigurationResponse
-        """
-
         all_params = ['instance_id', 'update_instance_configuration_request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4765,26 +4419,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_instance_configuration_async(self, request):
         """修改指定实例的参数
 
         修改指定实例的参数。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateInstanceConfigurationAsyncRequest request
-        :return: UpdateInstanceConfigurationAsyncResponse
+        :param request: Request instance for UpdateInstanceConfigurationAsync
+        :type request: :class:`huaweicloudsdkrds.v3.UpdateInstanceConfigurationAsyncRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.UpdateInstanceConfigurationAsyncResponse`
         """
         return self.update_instance_configuration_async_with_http_info(request)
 
     def update_instance_configuration_async_with_http_info(self, request):
-        """修改指定实例的参数
-
-        修改指定实例的参数。
-
-        :param UpdateInstanceConfigurationAsyncRequest request
-        :return: UpdateInstanceConfigurationAsyncResponse
-        """
-
         all_params = ['instance_id', 'update_instance_configuration_request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4832,26 +4481,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_instance_name(self, request):
         """修改实例名称
 
         修改实例名称。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateInstanceNameRequest request
-        :return: UpdateInstanceNameResponse
+        :param request: Request instance for UpdateInstanceName
+        :type request: :class:`huaweicloudsdkrds.v3.UpdateInstanceNameRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.UpdateInstanceNameResponse`
         """
         return self.update_instance_name_with_http_info(request)
 
     def update_instance_name_with_http_info(self, request):
-        """修改实例名称
-
-        修改实例名称。
-
-        :param UpdateInstanceNameRequest request
-        :return: UpdateInstanceNameResponse
-        """
-
         all_params = ['instance_id', 'modify_instance_name_request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4899,26 +4543,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_port(self, request):
         """修改数据库端口
 
         修改数据库端口
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdatePortRequest request
-        :return: UpdatePortResponse
+        :param request: Request instance for UpdatePort
+        :type request: :class:`huaweicloudsdkrds.v3.UpdatePortRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.UpdatePortResponse`
         """
         return self.update_port_with_http_info(request)
 
     def update_port_with_http_info(self, request):
-        """修改数据库端口
-
-        修改数据库端口
-
-        :param UpdatePortRequest request
-        :return: UpdatePortResponse
-        """
-
         all_params = ['instance_id', 'update_db_port_request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4966,26 +4605,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_postgresql_instance_alias(self, request):
         """修改实例备注信息
 
         修改指定数据库实例的备注信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdatePostgresqlInstanceAliasRequest request
-        :return: UpdatePostgresqlInstanceAliasResponse
+        :param request: Request instance for UpdatePostgresqlInstanceAlias
+        :type request: :class:`huaweicloudsdkrds.v3.UpdatePostgresqlInstanceAliasRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.UpdatePostgresqlInstanceAliasResponse`
         """
         return self.update_postgresql_instance_alias_with_http_info(request)
 
     def update_postgresql_instance_alias_with_http_info(self, request):
-        """修改实例备注信息
-
-        修改指定数据库实例的备注信息。
-
-        :param UpdatePostgresqlInstanceAliasRequest request
-        :return: UpdatePostgresqlInstanceAliasResponse
-        """
-
         all_params = ['instance_id', 'update_rds_instance_alias_request', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -5033,26 +4667,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def upgrade_db_version(self, request):
         """升级内核小版本
 
         对实例进行小版本升级。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpgradeDbVersionRequest request
-        :return: UpgradeDbVersionResponse
+        :param request: Request instance for UpgradeDbVersion
+        :type request: :class:`huaweicloudsdkrds.v3.UpgradeDbVersionRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.UpgradeDbVersionResponse`
         """
         return self.upgrade_db_version_with_http_info(request)
 
     def upgrade_db_version_with_http_info(self, request):
-        """升级内核小版本
-
-        对实例进行小版本升级。
-
-        :param UpgradeDbVersionRequest request
-        :return: UpgradeDbVersionResponse
-        """
-
         all_params = ['instance_id', 'x_language', 'customer_upgrade_database_version_req_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -5100,26 +4729,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_api_version(self, request):
         """查询API版本列表
 
         查询API版本列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListApiVersionRequest request
-        :return: ListApiVersionResponse
+        :param request: Request instance for ListApiVersion
+        :type request: :class:`huaweicloudsdkrds.v3.ListApiVersionRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListApiVersionResponse`
         """
         return self.list_api_version_with_http_info(request)
 
     def list_api_version_with_http_info(self, request):
-        """查询API版本列表
-
-        查询API版本列表。
-
-        :param ListApiVersionRequest request
-        :return: ListApiVersionResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -5161,26 +4785,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_api_version_new(self, request):
         """查询API版本列表
 
         查询API版本列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListApiVersionNewRequest request
-        :return: ListApiVersionNewResponse
+        :param request: Request instance for ListApiVersionNew
+        :type request: :class:`huaweicloudsdkrds.v3.ListApiVersionNewRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListApiVersionNewResponse`
         """
         return self.list_api_version_new_with_http_info(request)
 
     def list_api_version_new_with_http_info(self, request):
-        """查询API版本列表
-
-        查询API版本列表。
-
-        :param ListApiVersionNewRequest request
-        :return: ListApiVersionNewResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -5222,26 +4841,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_api_version(self, request):
         """查询指定的API版本信息
 
         查询指定的API版本信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowApiVersionRequest request
-        :return: ShowApiVersionResponse
+        :param request: Request instance for ShowApiVersion
+        :type request: :class:`huaweicloudsdkrds.v3.ShowApiVersionRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ShowApiVersionResponse`
         """
         return self.show_api_version_with_http_info(request)
 
     def show_api_version_with_http_info(self, request):
-        """查询指定的API版本信息
-
-        查询指定的API版本信息。
-
-        :param ShowApiVersionRequest request
-        :return: ShowApiVersionResponse
-        """
-
         all_params = ['version']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -5285,26 +4899,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def allow_db_user_privilege(self, request):
         """授权数据库帐号
 
         授权数据库帐号。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param AllowDbUserPrivilegeRequest request
-        :return: AllowDbUserPrivilegeResponse
+        :param request: Request instance for AllowDbUserPrivilege
+        :type request: :class:`huaweicloudsdkrds.v3.AllowDbUserPrivilegeRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.AllowDbUserPrivilegeResponse`
         """
         return self.allow_db_user_privilege_with_http_info(request)
 
     def allow_db_user_privilege_with_http_info(self, request):
-        """授权数据库帐号
-
-        授权数据库帐号。
-
-        :param AllowDbUserPrivilegeRequest request
-        :return: AllowDbUserPrivilegeResponse
-        """
-
         all_params = ['instance_id', 'grant_request', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -5352,26 +4961,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_database(self, request):
         """创建数据库
 
         创建数据库。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateDatabaseRequest request
-        :return: CreateDatabaseResponse
+        :param request: Request instance for CreateDatabase
+        :type request: :class:`huaweicloudsdkrds.v3.CreateDatabaseRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.CreateDatabaseResponse`
         """
         return self.create_database_with_http_info(request)
 
     def create_database_with_http_info(self, request):
-        """创建数据库
-
-        创建数据库。
-
-        :param CreateDatabaseRequest request
-        :return: CreateDatabaseResponse
-        """
-
         all_params = ['instance_id', 'create_database_request', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -5419,26 +5023,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_db_user(self, request):
         """创建数据库用户
 
         创建数据库用户。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateDbUserRequest request
-        :return: CreateDbUserResponse
+        :param request: Request instance for CreateDbUser
+        :type request: :class:`huaweicloudsdkrds.v3.CreateDbUserRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.CreateDbUserResponse`
         """
         return self.create_db_user_with_http_info(request)
 
     def create_db_user_with_http_info(self, request):
-        """创建数据库用户
-
-        创建数据库用户。
-
-        :param CreateDbUserRequest request
-        :return: CreateDbUserResponse
-        """
-
         all_params = ['instance_id', 'create_db_user_request', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -5486,26 +5085,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_database(self, request):
         """删除数据库
 
         删除数据库。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteDatabaseRequest request
-        :return: DeleteDatabaseResponse
+        :param request: Request instance for DeleteDatabase
+        :type request: :class:`huaweicloudsdkrds.v3.DeleteDatabaseRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.DeleteDatabaseResponse`
         """
         return self.delete_database_with_http_info(request)
 
     def delete_database_with_http_info(self, request):
-        """删除数据库
-
-        删除数据库。
-
-        :param DeleteDatabaseRequest request
-        :return: DeleteDatabaseResponse
-        """
-
         all_params = ['instance_id', 'db_name', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -5553,26 +5147,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_db_user(self, request):
         """删除数据库用户
 
         删除数据库用户。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteDbUserRequest request
-        :return: DeleteDbUserResponse
+        :param request: Request instance for DeleteDbUser
+        :type request: :class:`huaweicloudsdkrds.v3.DeleteDbUserRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.DeleteDbUserResponse`
         """
         return self.delete_db_user_with_http_info(request)
 
     def delete_db_user_with_http_info(self, request):
-        """删除数据库用户
-
-        删除数据库用户。
-
-        :param DeleteDbUserRequest request
-        :return: DeleteDbUserResponse
-        """
-
         all_params = ['instance_id', 'user_name', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -5620,26 +5209,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_authorized_databases(self, request):
         """查询指定用户的已授权数据库
 
         查询指定用户的已授权数据库。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListAuthorizedDatabasesRequest request
-        :return: ListAuthorizedDatabasesResponse
+        :param request: Request instance for ListAuthorizedDatabases
+        :type request: :class:`huaweicloudsdkrds.v3.ListAuthorizedDatabasesRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListAuthorizedDatabasesResponse`
         """
         return self.list_authorized_databases_with_http_info(request)
 
     def list_authorized_databases_with_http_info(self, request):
-        """查询指定用户的已授权数据库
-
-        查询指定用户的已授权数据库。
-
-        :param ListAuthorizedDatabasesRequest request
-        :return: ListAuthorizedDatabasesResponse
-        """
-
         all_params = ['instance_id', 'user_name', 'page', 'limit', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -5691,26 +5275,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_authorized_db_users(self, request):
         """查询指定数据库的已授权用户
 
         查询指定数据库的已授权用户。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListAuthorizedDbUsersRequest request
-        :return: ListAuthorizedDbUsersResponse
+        :param request: Request instance for ListAuthorizedDbUsers
+        :type request: :class:`huaweicloudsdkrds.v3.ListAuthorizedDbUsersRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListAuthorizedDbUsersResponse`
         """
         return self.list_authorized_db_users_with_http_info(request)
 
     def list_authorized_db_users_with_http_info(self, request):
-        """查询指定数据库的已授权用户
-
-        查询指定数据库的已授权用户。
-
-        :param ListAuthorizedDbUsersRequest request
-        :return: ListAuthorizedDbUsersResponse
-        """
-
         all_params = ['instance_id', 'db_name', 'page', 'limit', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -5762,26 +5341,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_databases(self, request):
         """查询数据库列表
 
         查询数据库列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListDatabasesRequest request
-        :return: ListDatabasesResponse
+        :param request: Request instance for ListDatabases
+        :type request: :class:`huaweicloudsdkrds.v3.ListDatabasesRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListDatabasesResponse`
         """
         return self.list_databases_with_http_info(request)
 
     def list_databases_with_http_info(self, request):
-        """查询数据库列表
-
-        查询数据库列表。
-
-        :param ListDatabasesRequest request
-        :return: ListDatabasesResponse
-        """
-
         all_params = ['instance_id', 'page', 'limit', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -5831,26 +5405,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_db_users(self, request):
         """查询数据库用户列表
 
         查询数据库用户列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListDbUsersRequest request
-        :return: ListDbUsersResponse
+        :param request: Request instance for ListDbUsers
+        :type request: :class:`huaweicloudsdkrds.v3.ListDbUsersRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListDbUsersResponse`
         """
         return self.list_db_users_with_http_info(request)
 
     def list_db_users_with_http_info(self, request):
-        """查询数据库用户列表
-
-        查询数据库用户列表。
-
-        :param ListDbUsersRequest request
-        :return: ListDbUsersResponse
-        """
-
         all_params = ['instance_id', 'page', 'limit', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -5900,26 +5469,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def reset_pwd(self, request):
         """重置数据库密码
 
         重置数据库密码.
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ResetPwdRequest request
-        :return: ResetPwdResponse
+        :param request: Request instance for ResetPwd
+        :type request: :class:`huaweicloudsdkrds.v3.ResetPwdRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ResetPwdResponse`
         """
         return self.reset_pwd_with_http_info(request)
 
     def reset_pwd_with_http_info(self, request):
-        """重置数据库密码
-
-        重置数据库密码.
-
-        :param ResetPwdRequest request
-        :return: ResetPwdResponse
-        """
-
         all_params = ['instance_id', 'pwd_reset_request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -5967,26 +5531,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def revoke(self, request):
         """解除数据库帐号权限
 
         解除数据库帐号权限。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param RevokeRequest request
-        :return: RevokeResponse
+        :param request: Request instance for Revoke
+        :type request: :class:`huaweicloudsdkrds.v3.RevokeRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.RevokeResponse`
         """
         return self.revoke_with_http_info(request)
 
     def revoke_with_http_info(self, request):
-        """解除数据库帐号权限
-
-        解除数据库帐号权限。
-
-        :param RevokeRequest request
-        :return: RevokeResponse
-        """
-
         all_params = ['instance_id', 'revoke_request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -6034,26 +5593,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def set_db_user_pwd(self, request):
         """设置数据库账号密码
 
         设置数据库账号密码
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param SetDbUserPwdRequest request
-        :return: SetDbUserPwdResponse
+        :param request: Request instance for SetDbUserPwd
+        :type request: :class:`huaweicloudsdkrds.v3.SetDbUserPwdRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.SetDbUserPwdResponse`
         """
         return self.set_db_user_pwd_with_http_info(request)
 
     def set_db_user_pwd_with_http_info(self, request):
-        """设置数据库账号密码
-
-        设置数据库账号密码
-
-        :param SetDbUserPwdRequest request
-        :return: SetDbUserPwdResponse
-        """
-
         all_params = ['instance_id', 'db_user_pwd_request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -6101,26 +5655,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_database(self, request):
         """修改指定实例的数据库备注
 
         修改指定实例中的数据库备注。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateDatabaseRequest request
-        :return: UpdateDatabaseResponse
+        :param request: Request instance for UpdateDatabase
+        :type request: :class:`huaweicloudsdkrds.v3.UpdateDatabaseRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.UpdateDatabaseResponse`
         """
         return self.update_database_with_http_info(request)
 
     def update_database_with_http_info(self, request):
-        """修改指定实例的数据库备注
-
-        修改指定实例中的数据库备注。
-
-        :param UpdateDatabaseRequest request
-        :return: UpdateDatabaseResponse
-        """
-
         all_params = ['instance_id', 'update_database_req', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -6168,26 +5717,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def allow_db_privilege(self, request):
         """授权数据库帐号
 
         在指定实例的数据库中, 设置帐号的权限。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param AllowDbPrivilegeRequest request
-        :return: AllowDbPrivilegeResponse
+        :param request: Request instance for AllowDbPrivilege
+        :type request: :class:`huaweicloudsdkrds.v3.AllowDbPrivilegeRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.AllowDbPrivilegeResponse`
         """
         return self.allow_db_privilege_with_http_info(request)
 
     def allow_db_privilege_with_http_info(self, request):
-        """授权数据库帐号
-
-        在指定实例的数据库中, 设置帐号的权限。
-
-        :param AllowDbPrivilegeRequest request
-        :return: AllowDbPrivilegeResponse
-        """
-
         all_params = ['instance_id', 'grant_request', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -6235,26 +5779,23 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def change_proxy_scale(self, request):
         """数据库代理规格变更
 
-        数据库代理实例进行规格变更。  - 调用接口前，您需要了解API 认证鉴权。
+        数据库代理实例进行规格变更。
+        
+        - 调用接口前，您需要了解API 认证鉴权。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ChangeProxyScaleRequest request
-        :return: ChangeProxyScaleResponse
+        :param request: Request instance for ChangeProxyScale
+        :type request: :class:`huaweicloudsdkrds.v3.ChangeProxyScaleRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ChangeProxyScaleResponse`
         """
         return self.change_proxy_scale_with_http_info(request)
 
     def change_proxy_scale_with_http_info(self, request):
-        """数据库代理规格变更
-
-        数据库代理实例进行规格变更。  - 调用接口前，您需要了解API 认证鉴权。
-
-        :param ChangeProxyScaleRequest request
-        :return: ChangeProxyScaleResponse
-        """
-
         all_params = ['instance_id', 'scale_proxy_request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -6302,26 +5843,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def change_the_delay_threshold(self, request):
         """修改读写分离阈值
 
         修改指定实例的读写分离延时阈值。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ChangeTheDelayThresholdRequest request
-        :return: ChangeTheDelayThresholdResponse
+        :param request: Request instance for ChangeTheDelayThreshold
+        :type request: :class:`huaweicloudsdkrds.v3.ChangeTheDelayThresholdRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ChangeTheDelayThresholdResponse`
         """
         return self.change_the_delay_threshold_with_http_info(request)
 
     def change_the_delay_threshold_with_http_info(self, request):
-        """修改读写分离阈值
-
-        修改指定实例的读写分离延时阈值。
-
-        :param ChangeTheDelayThresholdRequest request
-        :return: ChangeTheDelayThresholdResponse
-        """
-
         all_params = ['instance_id', 'changing_the_delay_threshold_request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -6369,26 +5905,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_postgresql_database(self, request):
         """创建数据库
 
         在指定实例中创建数据库。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreatePostgresqlDatabaseRequest request
-        :return: CreatePostgresqlDatabaseResponse
+        :param request: Request instance for CreatePostgresqlDatabase
+        :type request: :class:`huaweicloudsdkrds.v3.CreatePostgresqlDatabaseRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.CreatePostgresqlDatabaseResponse`
         """
         return self.create_postgresql_database_with_http_info(request)
 
     def create_postgresql_database_with_http_info(self, request):
-        """创建数据库
-
-        在指定实例中创建数据库。
-
-        :param CreatePostgresqlDatabaseRequest request
-        :return: CreatePostgresqlDatabaseResponse
-        """
-
         all_params = ['instance_id', 'create_database_request', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -6436,26 +5967,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_postgresql_database_schema(self, request):
         """创建数据库SCHEMA
 
         在指定实例的数据库中, 创建数据库schema。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreatePostgresqlDatabaseSchemaRequest request
-        :return: CreatePostgresqlDatabaseSchemaResponse
+        :param request: Request instance for CreatePostgresqlDatabaseSchema
+        :type request: :class:`huaweicloudsdkrds.v3.CreatePostgresqlDatabaseSchemaRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.CreatePostgresqlDatabaseSchemaResponse`
         """
         return self.create_postgresql_database_schema_with_http_info(request)
 
     def create_postgresql_database_schema_with_http_info(self, request):
-        """创建数据库SCHEMA
-
-        在指定实例的数据库中, 创建数据库schema。
-
-        :param CreatePostgresqlDatabaseSchemaRequest request
-        :return: CreatePostgresqlDatabaseSchemaResponse
-        """
-
         all_params = ['instance_id', 'db_schema_req', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -6503,26 +6029,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_postgresql_db_user(self, request):
         """创建数据库用户
 
         在指定实例中创建数据库用户。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreatePostgresqlDbUserRequest request
-        :return: CreatePostgresqlDbUserResponse
+        :param request: Request instance for CreatePostgresqlDbUser
+        :type request: :class:`huaweicloudsdkrds.v3.CreatePostgresqlDbUserRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.CreatePostgresqlDbUserResponse`
         """
         return self.create_postgresql_db_user_with_http_info(request)
 
     def create_postgresql_db_user_with_http_info(self, request):
-        """创建数据库用户
-
-        在指定实例中创建数据库用户。
-
-        :param CreatePostgresqlDbUserRequest request
-        :return: CreatePostgresqlDbUserResponse
-        """
-
         all_params = ['instance_id', 'create_db_user_request', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -6570,26 +6091,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_postgresql_database_schemas(self, request):
         """查询数据库SCHEMA列表
 
         查询指定实例的数据库SCHEMA列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListPostgresqlDatabaseSchemasRequest request
-        :return: ListPostgresqlDatabaseSchemasResponse
+        :param request: Request instance for ListPostgresqlDatabaseSchemas
+        :type request: :class:`huaweicloudsdkrds.v3.ListPostgresqlDatabaseSchemasRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListPostgresqlDatabaseSchemasResponse`
         """
         return self.list_postgresql_database_schemas_with_http_info(request)
 
     def list_postgresql_database_schemas_with_http_info(self, request):
-        """查询数据库SCHEMA列表
-
-        查询指定实例的数据库SCHEMA列表。
-
-        :param ListPostgresqlDatabaseSchemasRequest request
-        :return: ListPostgresqlDatabaseSchemasResponse
-        """
-
         all_params = ['instance_id', 'db_name', 'page', 'limit', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -6641,26 +6157,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_postgresql_databases(self, request):
         """查询数据库列表
 
         查询指定实例中的数据库列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListPostgresqlDatabasesRequest request
-        :return: ListPostgresqlDatabasesResponse
+        :param request: Request instance for ListPostgresqlDatabases
+        :type request: :class:`huaweicloudsdkrds.v3.ListPostgresqlDatabasesRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListPostgresqlDatabasesResponse`
         """
         return self.list_postgresql_databases_with_http_info(request)
 
     def list_postgresql_databases_with_http_info(self, request):
-        """查询数据库列表
-
-        查询指定实例中的数据库列表。
-
-        :param ListPostgresqlDatabasesRequest request
-        :return: ListPostgresqlDatabasesResponse
-        """
-
         all_params = ['instance_id', 'page', 'limit', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -6710,26 +6221,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_postgresql_db_user_paginated(self, request):
         """查询数据库用户列表
 
         在指定实例中查询数据库用户列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListPostgresqlDbUserPaginatedRequest request
-        :return: ListPostgresqlDbUserPaginatedResponse
+        :param request: Request instance for ListPostgresqlDbUserPaginated
+        :type request: :class:`huaweicloudsdkrds.v3.ListPostgresqlDbUserPaginatedRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListPostgresqlDbUserPaginatedResponse`
         """
         return self.list_postgresql_db_user_paginated_with_http_info(request)
 
     def list_postgresql_db_user_paginated_with_http_info(self, request):
-        """查询数据库用户列表
-
-        在指定实例中查询数据库用户列表。
-
-        :param ListPostgresqlDbUserPaginatedRequest request
-        :return: ListPostgresqlDbUserPaginatedResponse
-        """
-
         all_params = ['instance_id', 'page', 'limit', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -6779,26 +6285,23 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def search_query_scale_compute_flavors(self, request):
         """查询数据库代理可变更的规格
 
-        查询数据库代理可变更的规格信息。  - 调用接口前，您需要了解API 认证鉴权。
+        查询数据库代理可变更的规格信息。
+        
+        - 调用接口前，您需要了解API 认证鉴权。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param SearchQueryScaleComputeFlavorsRequest request
-        :return: SearchQueryScaleComputeFlavorsResponse
+        :param request: Request instance for SearchQueryScaleComputeFlavors
+        :type request: :class:`huaweicloudsdkrds.v3.SearchQueryScaleComputeFlavorsRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.SearchQueryScaleComputeFlavorsResponse`
         """
         return self.search_query_scale_compute_flavors_with_http_info(request)
 
     def search_query_scale_compute_flavors_with_http_info(self, request):
-        """查询数据库代理可变更的规格
-
-        查询数据库代理可变更的规格信息。  - 调用接口前，您需要了解API 认证鉴权。
-
-        :param SearchQueryScaleComputeFlavorsRequest request
-        :return: SearchQueryScaleComputeFlavorsResponse
-        """
-
         all_params = ['instance_id', 'x_language', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -6848,26 +6351,23 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def search_query_scale_flavors(self, request):
         """查询数据库代理可变更的规格
 
-        查询数据库代理可变更的规格信息。  - 调用接口前，您需要了解API 认证鉴权。
+        查询数据库代理可变更的规格信息。
+        
+        - 调用接口前，您需要了解API 认证鉴权。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param SearchQueryScaleFlavorsRequest request
-        :return: SearchQueryScaleFlavorsResponse
+        :param request: Request instance for SearchQueryScaleFlavors
+        :type request: :class:`huaweicloudsdkrds.v3.SearchQueryScaleFlavorsRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.SearchQueryScaleFlavorsResponse`
         """
         return self.search_query_scale_flavors_with_http_info(request)
 
     def search_query_scale_flavors_with_http_info(self, request):
-        """查询数据库代理可变更的规格
-
-        查询数据库代理可变更的规格信息。  - 调用接口前，您需要了解API 认证鉴权。
-
-        :param SearchQueryScaleFlavorsRequest request
-        :return: SearchQueryScaleFlavorsResponse
-        """
-
         all_params = ['instance_id', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -6913,26 +6413,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def set_postgresql_db_user_pwd(self, request):
         """重置数据库帐号密码
 
         重置指定数据库帐号的密码。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param SetPostgresqlDbUserPwdRequest request
-        :return: SetPostgresqlDbUserPwdResponse
+        :param request: Request instance for SetPostgresqlDbUserPwd
+        :type request: :class:`huaweicloudsdkrds.v3.SetPostgresqlDbUserPwdRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.SetPostgresqlDbUserPwdResponse`
         """
         return self.set_postgresql_db_user_pwd_with_http_info(request)
 
     def set_postgresql_db_user_pwd_with_http_info(self, request):
-        """重置数据库帐号密码
-
-        重置指定数据库帐号的密码。
-
-        :param SetPostgresqlDbUserPwdRequest request
-        :return: SetPostgresqlDbUserPwdResponse
-        """
-
         all_params = ['instance_id', 'db_user_pwd_request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -6980,26 +6475,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_information_about_database_proxy(self, request):
         """查询数据库代理信息
 
         查询指定实例的数据库代理详细信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowInformationAboutDatabaseProxyRequest request
-        :return: ShowInformationAboutDatabaseProxyResponse
+        :param request: Request instance for ShowInformationAboutDatabaseProxy
+        :type request: :class:`huaweicloudsdkrds.v3.ShowInformationAboutDatabaseProxyRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ShowInformationAboutDatabaseProxyResponse`
         """
         return self.show_information_about_database_proxy_with_http_info(request)
 
     def show_information_about_database_proxy_with_http_info(self, request):
-        """查询数据库代理信息
-
-        查询指定实例的数据库代理详细信息。
-
-        :param ShowInformationAboutDatabaseProxyRequest request
-        :return: ShowInformationAboutDatabaseProxyResponse
-        """
-
         all_params = ['instance_id', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -7045,26 +6535,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def start_database_proxy(self, request):
         """开启数据库代理
 
         为指定实例开启数据库代理。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param StartDatabaseProxyRequest request
-        :return: StartDatabaseProxyResponse
+        :param request: Request instance for StartDatabaseProxy
+        :type request: :class:`huaweicloudsdkrds.v3.StartDatabaseProxyRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.StartDatabaseProxyResponse`
         """
         return self.start_database_proxy_with_http_info(request)
 
     def start_database_proxy_with_http_info(self, request):
-        """开启数据库代理
-
-        为指定实例开启数据库代理。
-
-        :param StartDatabaseProxyRequest request
-        :return: StartDatabaseProxyResponse
-        """
-
         all_params = ['instance_id', 'open_proxy_request', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -7112,26 +6597,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def stop_database_proxy(self, request):
         """关闭数据库代理
 
         为指定实例关闭数据库代理。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param StopDatabaseProxyRequest request
-        :return: StopDatabaseProxyResponse
+        :param request: Request instance for StopDatabaseProxy
+        :type request: :class:`huaweicloudsdkrds.v3.StopDatabaseProxyRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.StopDatabaseProxyResponse`
         """
         return self.stop_database_proxy_with_http_info(request)
 
     def stop_database_proxy_with_http_info(self, request):
-        """关闭数据库代理
-
-        为指定实例关闭数据库代理。
-
-        :param StopDatabaseProxyRequest request
-        :return: StopDatabaseProxyResponse
-        """
-
         all_params = ['instance_id', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -7177,26 +6657,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_read_weight(self, request):
         """修改读写分离权重
 
         修改指定实例的读写分离权重。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateReadWeightRequest request
-        :return: UpdateReadWeightResponse
+        :param request: Request instance for UpdateReadWeight
+        :type request: :class:`huaweicloudsdkrds.v3.UpdateReadWeightRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.UpdateReadWeightResponse`
         """
         return self.update_read_weight_with_http_info(request)
 
     def update_read_weight_with_http_info(self, request):
-        """修改读写分离权重
-
-        修改指定实例的读写分离权重。
-
-        :param UpdateReadWeightRequest request
-        :return: UpdateReadWeightResponse
-        """
-
         all_params = ['instance_id', 'modify_proxy_weight_request', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -7244,26 +6719,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def allow_sqlserver_db_user_privilege(self, request):
         """授权数据库帐号
 
         授权数据库帐号。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param AllowSqlserverDbUserPrivilegeRequest request
-        :return: AllowSqlserverDbUserPrivilegeResponse
+        :param request: Request instance for AllowSqlserverDbUserPrivilege
+        :type request: :class:`huaweicloudsdkrds.v3.AllowSqlserverDbUserPrivilegeRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.AllowSqlserverDbUserPrivilegeResponse`
         """
         return self.allow_sqlserver_db_user_privilege_with_http_info(request)
 
     def allow_sqlserver_db_user_privilege_with_http_info(self, request):
-        """授权数据库帐号
-
-        授权数据库帐号。
-
-        :param AllowSqlserverDbUserPrivilegeRequest request
-        :return: AllowSqlserverDbUserPrivilegeResponse
-        """
-
         all_params = ['instance_id', 'grant_request', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -7311,26 +6781,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_sqlserver_database(self, request):
         """创建数据库
 
         创建数据库。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateSqlserverDatabaseRequest request
-        :return: CreateSqlserverDatabaseResponse
+        :param request: Request instance for CreateSqlserverDatabase
+        :type request: :class:`huaweicloudsdkrds.v3.CreateSqlserverDatabaseRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.CreateSqlserverDatabaseResponse`
         """
         return self.create_sqlserver_database_with_http_info(request)
 
     def create_sqlserver_database_with_http_info(self, request):
-        """创建数据库
-
-        创建数据库。
-
-        :param CreateSqlserverDatabaseRequest request
-        :return: CreateSqlserverDatabaseResponse
-        """
-
         all_params = ['instance_id', 'create_database_request', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -7378,26 +6843,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_sqlserver_db_user(self, request):
         """创建数据库用户
 
         创建数据库用户。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateSqlserverDbUserRequest request
-        :return: CreateSqlserverDbUserResponse
+        :param request: Request instance for CreateSqlserverDbUser
+        :type request: :class:`huaweicloudsdkrds.v3.CreateSqlserverDbUserRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.CreateSqlserverDbUserResponse`
         """
         return self.create_sqlserver_db_user_with_http_info(request)
 
     def create_sqlserver_db_user_with_http_info(self, request):
-        """创建数据库用户
-
-        创建数据库用户。
-
-        :param CreateSqlserverDbUserRequest request
-        :return: CreateSqlserverDbUserResponse
-        """
-
         all_params = ['instance_id', 'create_db_user_request', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -7445,26 +6905,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_sqlserver_database(self, request):
         """删除数据库
 
         删除数据库。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteSqlserverDatabaseRequest request
-        :return: DeleteSqlserverDatabaseResponse
+        :param request: Request instance for DeleteSqlserverDatabase
+        :type request: :class:`huaweicloudsdkrds.v3.DeleteSqlserverDatabaseRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.DeleteSqlserverDatabaseResponse`
         """
         return self.delete_sqlserver_database_with_http_info(request)
 
     def delete_sqlserver_database_with_http_info(self, request):
-        """删除数据库
-
-        删除数据库。
-
-        :param DeleteSqlserverDatabaseRequest request
-        :return: DeleteSqlserverDatabaseResponse
-        """
-
         all_params = ['instance_id', 'db_name', 'x_language', 'drop_database_v3_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -7514,26 +6969,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_sqlserver_database_ex(self, request):
         """删除数据库
 
         删除数据库。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteSqlserverDatabaseExRequest request
-        :return: DeleteSqlserverDatabaseExResponse
+        :param request: Request instance for DeleteSqlserverDatabaseEx
+        :type request: :class:`huaweicloudsdkrds.v3.DeleteSqlserverDatabaseExRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.DeleteSqlserverDatabaseExResponse`
         """
         return self.delete_sqlserver_database_ex_with_http_info(request)
 
     def delete_sqlserver_database_ex_with_http_info(self, request):
-        """删除数据库
-
-        删除数据库。
-
-        :param DeleteSqlserverDatabaseExRequest request
-        :return: DeleteSqlserverDatabaseExResponse
-        """
-
         all_params = ['instance_id', 'db_name', 'x_language', 'drop_database_v3_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -7583,26 +7033,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_sqlserver_db_user(self, request):
         """删除数据库用户
 
         删除数据库用户。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteSqlserverDbUserRequest request
-        :return: DeleteSqlserverDbUserResponse
+        :param request: Request instance for DeleteSqlserverDbUser
+        :type request: :class:`huaweicloudsdkrds.v3.DeleteSqlserverDbUserRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.DeleteSqlserverDbUserResponse`
         """
         return self.delete_sqlserver_db_user_with_http_info(request)
 
     def delete_sqlserver_db_user_with_http_info(self, request):
-        """删除数据库用户
-
-        删除数据库用户。
-
-        :param DeleteSqlserverDbUserRequest request
-        :return: DeleteSqlserverDbUserResponse
-        """
-
         all_params = ['instance_id', 'user_name', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -7650,26 +7095,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_authorized_sqlserver_db_users(self, request):
         """查询指定数据库的已授权用户
 
         查询指定数据库的已授权用户。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListAuthorizedSqlserverDbUsersRequest request
-        :return: ListAuthorizedSqlserverDbUsersResponse
+        :param request: Request instance for ListAuthorizedSqlserverDbUsers
+        :type request: :class:`huaweicloudsdkrds.v3.ListAuthorizedSqlserverDbUsersRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListAuthorizedSqlserverDbUsersResponse`
         """
         return self.list_authorized_sqlserver_db_users_with_http_info(request)
 
     def list_authorized_sqlserver_db_users_with_http_info(self, request):
-        """查询指定数据库的已授权用户
-
-        查询指定数据库的已授权用户。
-
-        :param ListAuthorizedSqlserverDbUsersRequest request
-        :return: ListAuthorizedSqlserverDbUsersResponse
-        """
-
         all_params = ['instance_id', 'db_name', 'page', 'limit', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -7721,26 +7161,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_sqlserver_databases(self, request):
         """查询数据库列表
 
         查询数据库列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListSqlserverDatabasesRequest request
-        :return: ListSqlserverDatabasesResponse
+        :param request: Request instance for ListSqlserverDatabases
+        :type request: :class:`huaweicloudsdkrds.v3.ListSqlserverDatabasesRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListSqlserverDatabasesResponse`
         """
         return self.list_sqlserver_databases_with_http_info(request)
 
     def list_sqlserver_databases_with_http_info(self, request):
-        """查询数据库列表
-
-        查询数据库列表。
-
-        :param ListSqlserverDatabasesRequest request
-        :return: ListSqlserverDatabasesResponse
-        """
-
         all_params = ['instance_id', 'page', 'limit', 'x_language', 'db_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -7792,26 +7227,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_sqlserver_db_users(self, request):
         """查询数据库用户列表
 
         查询数据库用户列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListSqlserverDbUsersRequest request
-        :return: ListSqlserverDbUsersResponse
+        :param request: Request instance for ListSqlserverDbUsers
+        :type request: :class:`huaweicloudsdkrds.v3.ListSqlserverDbUsersRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListSqlserverDbUsersResponse`
         """
         return self.list_sqlserver_db_users_with_http_info(request)
 
     def list_sqlserver_db_users_with_http_info(self, request):
-        """查询数据库用户列表
-
-        查询数据库用户列表。
-
-        :param ListSqlserverDbUsersRequest request
-        :return: ListSqlserverDbUsersResponse
-        """
-
         all_params = ['instance_id', 'page', 'limit', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -7861,26 +7291,21 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def revoke_sqlserver_db_user_privilege(self, request):
         """解除数据库帐号权限
 
         解除数据库帐号权限。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param RevokeSqlserverDbUserPrivilegeRequest request
-        :return: RevokeSqlserverDbUserPrivilegeResponse
+        :param request: Request instance for RevokeSqlserverDbUserPrivilege
+        :type request: :class:`huaweicloudsdkrds.v3.RevokeSqlserverDbUserPrivilegeRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.RevokeSqlserverDbUserPrivilegeResponse`
         """
         return self.revoke_sqlserver_db_user_privilege_with_http_info(request)
 
     def revoke_sqlserver_db_user_privilege_with_http_info(self, request):
-        """解除数据库帐号权限
-
-        解除数据库帐号权限。
-
-        :param RevokeSqlserverDbUserPrivilegeRequest request
-        :return: RevokeSqlserverDbUserPrivilegeResponse
-        """
-
         all_params = ['instance_id', 'sqlserver_revoke_request', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -7927,7 +7352,6 @@ class RdsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

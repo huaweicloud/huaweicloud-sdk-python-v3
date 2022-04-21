@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BehaviorsConfig:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BehaviorsConfig:
     }
 
     def __init__(self, positive_behaviors=None, negative_behaviors=None):
-        """BehaviorsConfig - a model defined in huaweicloud sdk"""
+        """BehaviorsConfig
+
+        The model defined in huaweicloud sdk
+
+        :param positive_behaviors: 正向行为。
+        :type positive_behaviors: list[:class:`huaweicloudsdkres.v1.BehaviorWeights`]
+        :param negative_behaviors: 负向行为。
+        :type negative_behaviors: list[:class:`huaweicloudsdkres.v1.BehaviorWeights`]
+        """
         
         
 
@@ -52,7 +59,7 @@ class BehaviorsConfig:
         正向行为。
 
         :return: The positive_behaviors of this BehaviorsConfig.
-        :rtype: list[BehaviorWeights]
+        :rtype: list[:class:`huaweicloudsdkres.v1.BehaviorWeights`]
         """
         return self._positive_behaviors
 
@@ -63,7 +70,7 @@ class BehaviorsConfig:
         正向行为。
 
         :param positive_behaviors: The positive_behaviors of this BehaviorsConfig.
-        :type: list[BehaviorWeights]
+        :type positive_behaviors: list[:class:`huaweicloudsdkres.v1.BehaviorWeights`]
         """
         self._positive_behaviors = positive_behaviors
 
@@ -74,7 +81,7 @@ class BehaviorsConfig:
         负向行为。
 
         :return: The negative_behaviors of this BehaviorsConfig.
-        :rtype: list[BehaviorWeights]
+        :rtype: list[:class:`huaweicloudsdkres.v1.BehaviorWeights`]
         """
         return self._negative_behaviors
 
@@ -85,7 +92,7 @@ class BehaviorsConfig:
         负向行为。
 
         :param negative_behaviors: The negative_behaviors of this BehaviorsConfig.
-        :type: list[BehaviorWeights]
+        :type negative_behaviors: list[:class:`huaweicloudsdkres.v1.BehaviorWeights`]
         """
         self._negative_behaviors = negative_behaviors
 

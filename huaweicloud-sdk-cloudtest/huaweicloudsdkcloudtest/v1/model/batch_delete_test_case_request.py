@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchDeleteTestCaseRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchDeleteTestCaseRequest:
     }
 
     def __init__(self, project_id=None, body=None):
-        """BatchDeleteTestCaseRequest - a model defined in huaweicloud sdk"""
+        """BatchDeleteTestCaseRequest
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: 项目唯一标识，固定长度32位字符
+        :type project_id: str
+        :param body: Body of the BatchDeleteTestCaseRequest
+        :type body: :class:`huaweicloudsdkcloudtest.v1.BatchDeleteTestCaseRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class BatchDeleteTestCaseRequest:
         项目唯一标识，固定长度32位字符
 
         :param project_id: The project_id of this BatchDeleteTestCaseRequest.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -72,7 +79,7 @@ class BatchDeleteTestCaseRequest:
 
 
         :return: The body of this BatchDeleteTestCaseRequest.
-        :rtype: BatchDeleteTestCaseRequestBody
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.BatchDeleteTestCaseRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class BatchDeleteTestCaseRequest:
 
 
         :param body: The body of this BatchDeleteTestCaseRequest.
-        :type: BatchDeleteTestCaseRequestBody
+        :type body: :class:`huaweicloudsdkcloudtest.v1.BatchDeleteTestCaseRequestBody`
         """
         self._body = body
 

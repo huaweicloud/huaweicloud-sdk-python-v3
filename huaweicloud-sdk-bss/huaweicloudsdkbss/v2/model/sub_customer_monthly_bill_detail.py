@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SubCustomerMonthlyBillDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -108,7 +107,91 @@ class SubCustomerMonthlyBillDetail:
     }
 
     def __init__(self, bill_cycle=None, customer_id=None, association_type=None, service_type_code=None, resource_type_code=None, service_type_name=None, resource_type_name=None, charging_mode=None, trade_time=None, trade_id=None, bill_detail_type=None, resource_id=None, resource_name=None, product_spec_desc=None, region_code=None, product_id=None, product_name=None, resource_tag=None, consume_time=None, usage_type=None, usage_amount=None, usage_measure_id=None, free_resource_usage=None, free_resource_measure_id=None, ri_usage=None, ri_usage_measure_id=None, official_amount=None, official_discount_amount=None, payment_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_value_card_amount=None, debt_amount=None, writeoff_amount=None, period_type=None, account_manager_id=None, partner_id=None, region_name=None):
-        """SubCustomerMonthlyBillDetail - a model defined in huaweicloud sdk"""
+        """SubCustomerMonthlyBillDetail
+
+        The model defined in huaweicloud sdk
+
+        :param bill_cycle: 账期。 格式：YYYY-MM
+        :type bill_cycle: str
+        :param customer_id: 客户账号ID。
+        :type customer_id: str
+        :param association_type: 子客户的关联类型： 1：顾问销售2：代售
+        :type association_type: str
+        :param service_type_code: 云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
+        :type service_type_code: str
+        :param resource_type_code: 资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。 ResourceType是CloudServiceType中的一种资源，CloudServiceType由多种ResourceType组合提供。
+        :type resource_type_code: str
+        :param service_type_name: 云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
+        :type service_type_name: str
+        :param resource_type_name: 资源类型名称。例如ECS的资源类型名称为“云主机”。
+        :type resource_type_name: str
+        :param charging_mode: 计费模式。 1：包周期3：按需10：预留实例
+        :type charging_mode: int
+        :param trade_time: 交易时间，即某条消费记录对应的扣费时间。 示例：2020-11-17T06:43:38Z
+        :type trade_time: str
+        :param trade_id: 订单ID或交易ID，扣费维度的唯一标识。 账单类型为1，2，3，4，8时为订单ID。其它场景下为交易ID。非月末扣费：应收ID月末扣费：账单ID
+        :type trade_id: str
+        :param bill_detail_type: 账单类型。 1：消费-新购2：消费-续订3：消费-变更8：消费-自动续订5：消费-使用12：消费-按时计费4：退款-退订9：调账-补偿13：消费-退订手续费增收14：消费-服务支持计划月末补扣16：调账-扣费18：消费-按月付费20：退款-变更100：退款-退订税金101：调账-补偿税金102：调账-扣费税金
+        :type bill_detail_type: int
+        :param resource_id: 资源ID。
+        :type resource_id: str
+        :param resource_name: 资源名称。
+        :type resource_name: str
+        :param product_spec_desc: 产品的规格描述。
+        :type product_spec_desc: str
+        :param region_code: 云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
+        :type region_code: str
+        :param product_id: 产品ID。
+        :type product_id: str
+        :param product_name: 产品名称。
+        :type product_name: str
+        :param resource_tag: 资源标签。
+        :type resource_tag: str
+        :param consume_time: 消费时间。 包周期和预留实例订购场景下为订单支付时间；按需场景下为话单生失效时间。 格式：YYYY-MM-DDThh:mm:ssZ
+        :type consume_time: str
+        :param usage_type: 资源使用量的类型，您可以调用查询使用量类型列表接口获取。
+        :type usage_type: str
+        :param usage_amount: 资源的使用量。
+        :type usage_amount: float
+        :param usage_measure_id: 资源使用量的度量单位，您可以调用查询度量单位列表接口获取。
+        :type usage_measure_id: int
+        :param free_resource_usage: 套餐内使用量。
+        :type free_resource_usage: float
+        :param free_resource_measure_id: 套餐内使用量的度量单位，您可以调用查询度量单位列表接口获取。
+        :type free_resource_measure_id: int
+        :param ri_usage: 预留实例使用量。
+        :type ri_usage: float
+        :param ri_usage_measure_id: 预留实例使用量单位。
+        :type ri_usage_measure_id: int
+        :param official_amount: 官网价。
+        :type official_amount: float
+        :param official_discount_amount: 对应官网价折扣金额。
+        :type official_discount_amount: float
+        :param payment_amount: 应付金额。
+        :type payment_amount: float
+        :param cash_amount: 现金支付金额。
+        :type cash_amount: float
+        :param credit_amount: 信用额度支付金额。
+        :type credit_amount: float
+        :param coupon_amount: 代金券支付金额。
+        :type coupon_amount: float
+        :param flexipurchase_coupon_amount: 现金券支付金额。
+        :type flexipurchase_coupon_amount: float
+        :param stored_value_card_amount: 储值卡支付金额。
+        :type stored_value_card_amount: float
+        :param debt_amount: 欠费金额。
+        :type debt_amount: float
+        :param writeoff_amount: 欠费核销金额。
+        :type writeoff_amount: float
+        :param period_type: 周期类型： 19：年20：月24：天25：小时5：一次性
+        :type period_type: int
+        :param account_manager_id: 客户经理标识。
+        :type account_manager_id: str
+        :param partner_id: 关联的经销商ID。
+        :type partner_id: str
+        :param region_name: 云服务区名称，例如：“华北-北京一”。具体请参见地区和终端节点对应云服务的“区域名称”列的值。
+        :type region_name: str
+        """
         
         
 
@@ -253,7 +336,7 @@ class SubCustomerMonthlyBillDetail:
         账期。 格式：YYYY-MM
 
         :param bill_cycle: The bill_cycle of this SubCustomerMonthlyBillDetail.
-        :type: str
+        :type bill_cycle: str
         """
         self._bill_cycle = bill_cycle
 
@@ -275,7 +358,7 @@ class SubCustomerMonthlyBillDetail:
         客户账号ID。
 
         :param customer_id: The customer_id of this SubCustomerMonthlyBillDetail.
-        :type: str
+        :type customer_id: str
         """
         self._customer_id = customer_id
 
@@ -297,7 +380,7 @@ class SubCustomerMonthlyBillDetail:
         子客户的关联类型： 1：顾问销售2：代售
 
         :param association_type: The association_type of this SubCustomerMonthlyBillDetail.
-        :type: str
+        :type association_type: str
         """
         self._association_type = association_type
 
@@ -319,7 +402,7 @@ class SubCustomerMonthlyBillDetail:
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
         :param service_type_code: The service_type_code of this SubCustomerMonthlyBillDetail.
-        :type: str
+        :type service_type_code: str
         """
         self._service_type_code = service_type_code
 
@@ -341,7 +424,7 @@ class SubCustomerMonthlyBillDetail:
         资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。 ResourceType是CloudServiceType中的一种资源，CloudServiceType由多种ResourceType组合提供。
 
         :param resource_type_code: The resource_type_code of this SubCustomerMonthlyBillDetail.
-        :type: str
+        :type resource_type_code: str
         """
         self._resource_type_code = resource_type_code
 
@@ -363,7 +446,7 @@ class SubCustomerMonthlyBillDetail:
         云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
 
         :param service_type_name: The service_type_name of this SubCustomerMonthlyBillDetail.
-        :type: str
+        :type service_type_name: str
         """
         self._service_type_name = service_type_name
 
@@ -385,7 +468,7 @@ class SubCustomerMonthlyBillDetail:
         资源类型名称。例如ECS的资源类型名称为“云主机”。
 
         :param resource_type_name: The resource_type_name of this SubCustomerMonthlyBillDetail.
-        :type: str
+        :type resource_type_name: str
         """
         self._resource_type_name = resource_type_name
 
@@ -407,7 +490,7 @@ class SubCustomerMonthlyBillDetail:
         计费模式。 1：包周期3：按需10：预留实例
 
         :param charging_mode: The charging_mode of this SubCustomerMonthlyBillDetail.
-        :type: int
+        :type charging_mode: int
         """
         self._charging_mode = charging_mode
 
@@ -429,7 +512,7 @@ class SubCustomerMonthlyBillDetail:
         交易时间，即某条消费记录对应的扣费时间。 示例：2020-11-17T06:43:38Z
 
         :param trade_time: The trade_time of this SubCustomerMonthlyBillDetail.
-        :type: str
+        :type trade_time: str
         """
         self._trade_time = trade_time
 
@@ -451,7 +534,7 @@ class SubCustomerMonthlyBillDetail:
         订单ID或交易ID，扣费维度的唯一标识。 账单类型为1，2，3，4，8时为订单ID。其它场景下为交易ID。非月末扣费：应收ID月末扣费：账单ID
 
         :param trade_id: The trade_id of this SubCustomerMonthlyBillDetail.
-        :type: str
+        :type trade_id: str
         """
         self._trade_id = trade_id
 
@@ -473,7 +556,7 @@ class SubCustomerMonthlyBillDetail:
         账单类型。 1：消费-新购2：消费-续订3：消费-变更8：消费-自动续订5：消费-使用12：消费-按时计费4：退款-退订9：调账-补偿13：消费-退订手续费增收14：消费-服务支持计划月末补扣16：调账-扣费18：消费-按月付费20：退款-变更100：退款-退订税金101：调账-补偿税金102：调账-扣费税金
 
         :param bill_detail_type: The bill_detail_type of this SubCustomerMonthlyBillDetail.
-        :type: int
+        :type bill_detail_type: int
         """
         self._bill_detail_type = bill_detail_type
 
@@ -495,7 +578,7 @@ class SubCustomerMonthlyBillDetail:
         资源ID。
 
         :param resource_id: The resource_id of this SubCustomerMonthlyBillDetail.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -517,7 +600,7 @@ class SubCustomerMonthlyBillDetail:
         资源名称。
 
         :param resource_name: The resource_name of this SubCustomerMonthlyBillDetail.
-        :type: str
+        :type resource_name: str
         """
         self._resource_name = resource_name
 
@@ -539,7 +622,7 @@ class SubCustomerMonthlyBillDetail:
         产品的规格描述。
 
         :param product_spec_desc: The product_spec_desc of this SubCustomerMonthlyBillDetail.
-        :type: str
+        :type product_spec_desc: str
         """
         self._product_spec_desc = product_spec_desc
 
@@ -561,7 +644,7 @@ class SubCustomerMonthlyBillDetail:
         云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
         :param region_code: The region_code of this SubCustomerMonthlyBillDetail.
-        :type: str
+        :type region_code: str
         """
         self._region_code = region_code
 
@@ -583,7 +666,7 @@ class SubCustomerMonthlyBillDetail:
         产品ID。
 
         :param product_id: The product_id of this SubCustomerMonthlyBillDetail.
-        :type: str
+        :type product_id: str
         """
         self._product_id = product_id
 
@@ -605,7 +688,7 @@ class SubCustomerMonthlyBillDetail:
         产品名称。
 
         :param product_name: The product_name of this SubCustomerMonthlyBillDetail.
-        :type: str
+        :type product_name: str
         """
         self._product_name = product_name
 
@@ -627,7 +710,7 @@ class SubCustomerMonthlyBillDetail:
         资源标签。
 
         :param resource_tag: The resource_tag of this SubCustomerMonthlyBillDetail.
-        :type: str
+        :type resource_tag: str
         """
         self._resource_tag = resource_tag
 
@@ -649,7 +732,7 @@ class SubCustomerMonthlyBillDetail:
         消费时间。 包周期和预留实例订购场景下为订单支付时间；按需场景下为话单生失效时间。 格式：YYYY-MM-DDThh:mm:ssZ
 
         :param consume_time: The consume_time of this SubCustomerMonthlyBillDetail.
-        :type: str
+        :type consume_time: str
         """
         self._consume_time = consume_time
 
@@ -671,7 +754,7 @@ class SubCustomerMonthlyBillDetail:
         资源使用量的类型，您可以调用查询使用量类型列表接口获取。
 
         :param usage_type: The usage_type of this SubCustomerMonthlyBillDetail.
-        :type: str
+        :type usage_type: str
         """
         self._usage_type = usage_type
 
@@ -693,7 +776,7 @@ class SubCustomerMonthlyBillDetail:
         资源的使用量。
 
         :param usage_amount: The usage_amount of this SubCustomerMonthlyBillDetail.
-        :type: float
+        :type usage_amount: float
         """
         self._usage_amount = usage_amount
 
@@ -715,7 +798,7 @@ class SubCustomerMonthlyBillDetail:
         资源使用量的度量单位，您可以调用查询度量单位列表接口获取。
 
         :param usage_measure_id: The usage_measure_id of this SubCustomerMonthlyBillDetail.
-        :type: int
+        :type usage_measure_id: int
         """
         self._usage_measure_id = usage_measure_id
 
@@ -737,7 +820,7 @@ class SubCustomerMonthlyBillDetail:
         套餐内使用量。
 
         :param free_resource_usage: The free_resource_usage of this SubCustomerMonthlyBillDetail.
-        :type: float
+        :type free_resource_usage: float
         """
         self._free_resource_usage = free_resource_usage
 
@@ -759,7 +842,7 @@ class SubCustomerMonthlyBillDetail:
         套餐内使用量的度量单位，您可以调用查询度量单位列表接口获取。
 
         :param free_resource_measure_id: The free_resource_measure_id of this SubCustomerMonthlyBillDetail.
-        :type: int
+        :type free_resource_measure_id: int
         """
         self._free_resource_measure_id = free_resource_measure_id
 
@@ -781,7 +864,7 @@ class SubCustomerMonthlyBillDetail:
         预留实例使用量。
 
         :param ri_usage: The ri_usage of this SubCustomerMonthlyBillDetail.
-        :type: float
+        :type ri_usage: float
         """
         self._ri_usage = ri_usage
 
@@ -803,7 +886,7 @@ class SubCustomerMonthlyBillDetail:
         预留实例使用量单位。
 
         :param ri_usage_measure_id: The ri_usage_measure_id of this SubCustomerMonthlyBillDetail.
-        :type: int
+        :type ri_usage_measure_id: int
         """
         self._ri_usage_measure_id = ri_usage_measure_id
 
@@ -825,7 +908,7 @@ class SubCustomerMonthlyBillDetail:
         官网价。
 
         :param official_amount: The official_amount of this SubCustomerMonthlyBillDetail.
-        :type: float
+        :type official_amount: float
         """
         self._official_amount = official_amount
 
@@ -847,7 +930,7 @@ class SubCustomerMonthlyBillDetail:
         对应官网价折扣金额。
 
         :param official_discount_amount: The official_discount_amount of this SubCustomerMonthlyBillDetail.
-        :type: float
+        :type official_discount_amount: float
         """
         self._official_discount_amount = official_discount_amount
 
@@ -869,7 +952,7 @@ class SubCustomerMonthlyBillDetail:
         应付金额。
 
         :param payment_amount: The payment_amount of this SubCustomerMonthlyBillDetail.
-        :type: float
+        :type payment_amount: float
         """
         self._payment_amount = payment_amount
 
@@ -891,7 +974,7 @@ class SubCustomerMonthlyBillDetail:
         现金支付金额。
 
         :param cash_amount: The cash_amount of this SubCustomerMonthlyBillDetail.
-        :type: float
+        :type cash_amount: float
         """
         self._cash_amount = cash_amount
 
@@ -913,7 +996,7 @@ class SubCustomerMonthlyBillDetail:
         信用额度支付金额。
 
         :param credit_amount: The credit_amount of this SubCustomerMonthlyBillDetail.
-        :type: float
+        :type credit_amount: float
         """
         self._credit_amount = credit_amount
 
@@ -935,7 +1018,7 @@ class SubCustomerMonthlyBillDetail:
         代金券支付金额。
 
         :param coupon_amount: The coupon_amount of this SubCustomerMonthlyBillDetail.
-        :type: float
+        :type coupon_amount: float
         """
         self._coupon_amount = coupon_amount
 
@@ -957,7 +1040,7 @@ class SubCustomerMonthlyBillDetail:
         现金券支付金额。
 
         :param flexipurchase_coupon_amount: The flexipurchase_coupon_amount of this SubCustomerMonthlyBillDetail.
-        :type: float
+        :type flexipurchase_coupon_amount: float
         """
         self._flexipurchase_coupon_amount = flexipurchase_coupon_amount
 
@@ -979,7 +1062,7 @@ class SubCustomerMonthlyBillDetail:
         储值卡支付金额。
 
         :param stored_value_card_amount: The stored_value_card_amount of this SubCustomerMonthlyBillDetail.
-        :type: float
+        :type stored_value_card_amount: float
         """
         self._stored_value_card_amount = stored_value_card_amount
 
@@ -1001,7 +1084,7 @@ class SubCustomerMonthlyBillDetail:
         欠费金额。
 
         :param debt_amount: The debt_amount of this SubCustomerMonthlyBillDetail.
-        :type: float
+        :type debt_amount: float
         """
         self._debt_amount = debt_amount
 
@@ -1023,7 +1106,7 @@ class SubCustomerMonthlyBillDetail:
         欠费核销金额。
 
         :param writeoff_amount: The writeoff_amount of this SubCustomerMonthlyBillDetail.
-        :type: float
+        :type writeoff_amount: float
         """
         self._writeoff_amount = writeoff_amount
 
@@ -1045,7 +1128,7 @@ class SubCustomerMonthlyBillDetail:
         周期类型： 19：年20：月24：天25：小时5：一次性
 
         :param period_type: The period_type of this SubCustomerMonthlyBillDetail.
-        :type: int
+        :type period_type: int
         """
         self._period_type = period_type
 
@@ -1067,7 +1150,7 @@ class SubCustomerMonthlyBillDetail:
         客户经理标识。
 
         :param account_manager_id: The account_manager_id of this SubCustomerMonthlyBillDetail.
-        :type: str
+        :type account_manager_id: str
         """
         self._account_manager_id = account_manager_id
 
@@ -1075,7 +1158,7 @@ class SubCustomerMonthlyBillDetail:
     def partner_id(self):
         """Gets the partner_id of this SubCustomerMonthlyBillDetail.
 
-        经销商ID。  说明： 如果是普通经销商，那么此处可以为空。
+        关联的经销商ID。
 
         :return: The partner_id of this SubCustomerMonthlyBillDetail.
         :rtype: str
@@ -1086,10 +1169,10 @@ class SubCustomerMonthlyBillDetail:
     def partner_id(self, partner_id):
         """Sets the partner_id of this SubCustomerMonthlyBillDetail.
 
-        经销商ID。  说明： 如果是普通经销商，那么此处可以为空。
+        关联的经销商ID。
 
         :param partner_id: The partner_id of this SubCustomerMonthlyBillDetail.
-        :type: str
+        :type partner_id: str
         """
         self._partner_id = partner_id
 
@@ -1111,7 +1194,7 @@ class SubCustomerMonthlyBillDetail:
         云服务区名称，例如：“华北-北京一”。具体请参见地区和终端节点对应云服务的“区域名称”列的值。
 
         :param region_name: The region_name of this SubCustomerMonthlyBillDetail.
-        :type: str
+        :type region_name: str
         """
         self._region_name = region_name
 

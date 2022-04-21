@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TagResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class TagResp:
     }
 
     def __init__(self, key=None, values=None):
-        """TagResp - a model defined in huaweicloud sdk"""
+        """TagResp
+
+        The model defined in huaweicloud sdk
+
+        :param key: 键，key不能为空。长度不超过36个字符。由英文字母、数字、下划线、中划线、中文字符组成。
+        :type key: str
+        :param values: 值列表。
+        :type values: list[str]
+        """
         
         
 
@@ -63,7 +70,7 @@ class TagResp:
         键，key不能为空。长度不超过36个字符。由英文字母、数字、下划线、中划线、中文字符组成。
 
         :param key: The key of this TagResp.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -85,7 +92,7 @@ class TagResp:
         值列表。
 
         :param values: The values of this TagResp.
-        :type: list[str]
+        :type values: list[str]
         """
         self._values = values
 

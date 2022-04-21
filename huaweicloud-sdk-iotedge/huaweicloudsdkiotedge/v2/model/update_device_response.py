@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDeviceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateDeviceResponse(SdkResponse):
     }
 
     def __init__(self, config=None):
-        """UpdateDeviceResponse - a model defined in huaweicloud sdk"""
+        """UpdateDeviceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param config: 设备配置，内容由产品的$config服务定义。
+        :type config: object
+        """
         
         super(UpdateDeviceResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class UpdateDeviceResponse(SdkResponse):
         设备配置，内容由产品的$config服务定义。
 
         :param config: The config of this UpdateDeviceResponse.
-        :type: object
+        :type config: object
         """
         self._config = config
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ModifyInstanceNameReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ModifyInstanceNameReq:
     }
 
     def __init__(self, name=None):
-        """ModifyInstanceNameReq - a model defined in huaweicloud sdk"""
+        """ModifyInstanceNameReq
+
+        The model defined in huaweicloud sdk
+
+        :param name: DDM实例名称，命名要求如下。 - 长度为4-64个字符。 - 必须以字母开头。 - 可以包含字母、数字、中划线，不能包含其它特殊字符。
+        :type name: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ModifyInstanceNameReq:
         DDM实例名称，命名要求如下。 - 长度为4-64个字符。 - 必须以字母开头。 - 可以包含字母、数字、中划线，不能包含其它特殊字符。
 
         :param name: The name of this ModifyInstanceNameReq.
-        :type: str
+        :type name: str
         """
         self._name = name
 

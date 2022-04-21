@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunRequestV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class RunRequestV2:
     }
 
     def __init__(self, username=None, access_token=None, git_url=None, git_branch=None):
-        """RunRequestV2 - a model defined in huaweicloud sdk"""
+        """RunRequestV2
+
+        The model defined in huaweicloud sdk
+
+        :param username: 该任务对应临时仓库有权限的用户名
+        :type username: str
+        :param access_token: 该任务对应临时仓库有权限的用户token
+        :type access_token: str
+        :param git_url: 该任务对应的临时仓库地址
+        :type git_url: str
+        :param git_branch: 该任务对应的临时仓库分支
+        :type git_branch: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class RunRequestV2:
         该任务对应临时仓库有权限的用户名
 
         :param username: The username of this RunRequestV2.
-        :type: str
+        :type username: str
         """
         self._username = username
 
@@ -95,7 +106,7 @@ class RunRequestV2:
         该任务对应临时仓库有权限的用户token
 
         :param access_token: The access_token of this RunRequestV2.
-        :type: str
+        :type access_token: str
         """
         self._access_token = access_token
 
@@ -117,7 +128,7 @@ class RunRequestV2:
         该任务对应的临时仓库地址
 
         :param git_url: The git_url of this RunRequestV2.
-        :type: str
+        :type git_url: str
         """
         self._git_url = git_url
 
@@ -139,7 +150,7 @@ class RunRequestV2:
         该任务对应的临时仓库分支
 
         :param git_branch: The git_branch of this RunRequestV2.
-        :type: str
+        :type git_branch: str
         """
         self._git_branch = git_branch
 

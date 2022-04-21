@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddOrRemoveServicePermissionsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AddOrRemoveServicePermissionsRequest:
     }
 
     def __init__(self, vpc_endpoint_service_id=None, body=None):
-        """AddOrRemoveServicePermissionsRequest - a model defined in huaweicloud sdk"""
+        """AddOrRemoveServicePermissionsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param vpc_endpoint_service_id: 终端节点服务的ID。
+        :type vpc_endpoint_service_id: str
+        :param body: Body of the AddOrRemoveServicePermissionsRequest
+        :type body: :class:`huaweicloudsdkvpcep.v1.AddOrRemoveServicePermissionsRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class AddOrRemoveServicePermissionsRequest:
         终端节点服务的ID。
 
         :param vpc_endpoint_service_id: The vpc_endpoint_service_id of this AddOrRemoveServicePermissionsRequest.
-        :type: str
+        :type vpc_endpoint_service_id: str
         """
         self._vpc_endpoint_service_id = vpc_endpoint_service_id
 
@@ -72,7 +79,7 @@ class AddOrRemoveServicePermissionsRequest:
 
 
         :return: The body of this AddOrRemoveServicePermissionsRequest.
-        :rtype: AddOrRemoveServicePermissionsRequestBody
+        :rtype: :class:`huaweicloudsdkvpcep.v1.AddOrRemoveServicePermissionsRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class AddOrRemoveServicePermissionsRequest:
 
 
         :param body: The body of this AddOrRemoveServicePermissionsRequest.
-        :type: AddOrRemoveServicePermissionsRequestBody
+        :type body: :class:`huaweicloudsdkvpcep.v1.AddOrRemoveServicePermissionsRequestBody`
         """
         self._body = body
 

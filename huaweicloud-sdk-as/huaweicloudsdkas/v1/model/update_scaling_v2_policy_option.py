@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateScalingV2PolicyOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class UpdateScalingV2PolicyOption:
     }
 
     def __init__(self, scaling_policy_name=None, scaling_resource_id=None, scaling_resource_type=None, scaling_policy_type=None, alarm_id=None, scheduled_policy=None, scaling_policy_action=None, cool_down_time=None, description=None):
-        """UpdateScalingV2PolicyOption - a model defined in huaweicloud sdk"""
+        """UpdateScalingV2PolicyOption
+
+        The model defined in huaweicloud sdk
+
+        :param scaling_policy_name: 策略名称（1-64）字符，可以用中文、字母、数字、下划线、中划线的组合。
+        :type scaling_policy_name: str
+        :param scaling_resource_id: 伸缩资源ID，伸缩组唯一标识或带宽唯一标识。如果scaling_resource_type为SCALING_GROUP，对应伸缩组唯一标识。如果scaling_resource_type为BANDWIDTH，对应带宽唯一标识。
+        :type scaling_resource_id: str
+        :param scaling_resource_type: 伸缩资源类型。伸缩组：SCALING_GROUP。带宽：BANDWIDTH。
+        :type scaling_resource_type: str
+        :param scaling_policy_type: 策略类型。告警策略：ALARM（与alarm_id对应）；定时策略：SCHEDULED（与scheduled_policy对应）；周期策略：RECURRENCE（与scheduled_policy对应）
+        :type scaling_policy_type: str
+        :param alarm_id: 告警ID，即告警规则的ID，当scaling_policy_type为ALARM时该项必选，此时scheduled_policy不生效。创建告警策略成功后，会自动为该告警ID对应的告警规则的alarm_actions字段增加类型为autoscaling的告警触发动作。告警ID通过查询云监控告警规则列表获取，详见《云监控API参考》的“查询告警规则列表”。
+        :type alarm_id: str
+        :param scheduled_policy: 
+        :type scheduled_policy: :class:`huaweicloudsdkas.v1.ScheduledPolicy`
+        :param scaling_policy_action: 
+        :type scaling_policy_action: :class:`huaweicloudsdkas.v1.ScalingPolicyActionV2`
+        :param cool_down_time: 冷却时间，取值范围0-86400，默认为300，单位是秒。
+        :type cool_down_time: int
+        :param description: 伸缩策略描述（1-256个字符）
+        :type description: str
+        """
         
         
 
@@ -98,7 +119,7 @@ class UpdateScalingV2PolicyOption:
         策略名称（1-64）字符，可以用中文、字母、数字、下划线、中划线的组合。
 
         :param scaling_policy_name: The scaling_policy_name of this UpdateScalingV2PolicyOption.
-        :type: str
+        :type scaling_policy_name: str
         """
         self._scaling_policy_name = scaling_policy_name
 
@@ -120,7 +141,7 @@ class UpdateScalingV2PolicyOption:
         伸缩资源ID，伸缩组唯一标识或带宽唯一标识。如果scaling_resource_type为SCALING_GROUP，对应伸缩组唯一标识。如果scaling_resource_type为BANDWIDTH，对应带宽唯一标识。
 
         :param scaling_resource_id: The scaling_resource_id of this UpdateScalingV2PolicyOption.
-        :type: str
+        :type scaling_resource_id: str
         """
         self._scaling_resource_id = scaling_resource_id
 
@@ -142,7 +163,7 @@ class UpdateScalingV2PolicyOption:
         伸缩资源类型。伸缩组：SCALING_GROUP。带宽：BANDWIDTH。
 
         :param scaling_resource_type: The scaling_resource_type of this UpdateScalingV2PolicyOption.
-        :type: str
+        :type scaling_resource_type: str
         """
         self._scaling_resource_type = scaling_resource_type
 
@@ -164,7 +185,7 @@ class UpdateScalingV2PolicyOption:
         策略类型。告警策略：ALARM（与alarm_id对应）；定时策略：SCHEDULED（与scheduled_policy对应）；周期策略：RECURRENCE（与scheduled_policy对应）
 
         :param scaling_policy_type: The scaling_policy_type of this UpdateScalingV2PolicyOption.
-        :type: str
+        :type scaling_policy_type: str
         """
         self._scaling_policy_type = scaling_policy_type
 
@@ -186,7 +207,7 @@ class UpdateScalingV2PolicyOption:
         告警ID，即告警规则的ID，当scaling_policy_type为ALARM时该项必选，此时scheduled_policy不生效。创建告警策略成功后，会自动为该告警ID对应的告警规则的alarm_actions字段增加类型为autoscaling的告警触发动作。告警ID通过查询云监控告警规则列表获取，详见《云监控API参考》的“查询告警规则列表”。
 
         :param alarm_id: The alarm_id of this UpdateScalingV2PolicyOption.
-        :type: str
+        :type alarm_id: str
         """
         self._alarm_id = alarm_id
 
@@ -196,7 +217,7 @@ class UpdateScalingV2PolicyOption:
 
 
         :return: The scheduled_policy of this UpdateScalingV2PolicyOption.
-        :rtype: ScheduledPolicy
+        :rtype: :class:`huaweicloudsdkas.v1.ScheduledPolicy`
         """
         return self._scheduled_policy
 
@@ -206,7 +227,7 @@ class UpdateScalingV2PolicyOption:
 
 
         :param scheduled_policy: The scheduled_policy of this UpdateScalingV2PolicyOption.
-        :type: ScheduledPolicy
+        :type scheduled_policy: :class:`huaweicloudsdkas.v1.ScheduledPolicy`
         """
         self._scheduled_policy = scheduled_policy
 
@@ -216,7 +237,7 @@ class UpdateScalingV2PolicyOption:
 
 
         :return: The scaling_policy_action of this UpdateScalingV2PolicyOption.
-        :rtype: ScalingPolicyActionV2
+        :rtype: :class:`huaweicloudsdkas.v1.ScalingPolicyActionV2`
         """
         return self._scaling_policy_action
 
@@ -226,7 +247,7 @@ class UpdateScalingV2PolicyOption:
 
 
         :param scaling_policy_action: The scaling_policy_action of this UpdateScalingV2PolicyOption.
-        :type: ScalingPolicyActionV2
+        :type scaling_policy_action: :class:`huaweicloudsdkas.v1.ScalingPolicyActionV2`
         """
         self._scaling_policy_action = scaling_policy_action
 
@@ -248,7 +269,7 @@ class UpdateScalingV2PolicyOption:
         冷却时间，取值范围0-86400，默认为300，单位是秒。
 
         :param cool_down_time: The cool_down_time of this UpdateScalingV2PolicyOption.
-        :type: int
+        :type cool_down_time: int
         """
         self._cool_down_time = cool_down_time
 
@@ -270,7 +291,7 @@ class UpdateScalingV2PolicyOption:
         伸缩策略描述（1-256个字符）
 
         :param description: The description of this UpdateScalingV2PolicyOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 

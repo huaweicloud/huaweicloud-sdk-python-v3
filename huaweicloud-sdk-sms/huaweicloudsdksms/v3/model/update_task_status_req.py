@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateTaskStatusReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateTaskStatusReq:
     }
 
     def __init__(self, operation=None, param=None):
-        """UpdateTaskStatusReq - a model defined in huaweicloud sdk"""
+        """UpdateTaskStatusReq
+
+        The model defined in huaweicloud sdk
+
+        :param operation: 操作任务的具体动作
+        :type operation: str
+        :param param: 操作参数
+        :type param: dict(str, str)
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateTaskStatusReq:
         操作任务的具体动作
 
         :param operation: The operation of this UpdateTaskStatusReq.
-        :type: str
+        :type operation: str
         """
         self._operation = operation
 
@@ -84,7 +91,7 @@ class UpdateTaskStatusReq:
         操作参数
 
         :param param: The param of this UpdateTaskStatusReq.
-        :type: dict(str, str)
+        :type param: dict(str, str)
         """
         self._param = param
 

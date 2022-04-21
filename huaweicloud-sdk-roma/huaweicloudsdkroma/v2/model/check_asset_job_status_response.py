@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CheckAssetJobStatusResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class CheckAssetJobStatusResponse(SdkResponse):
     }
 
     def __init__(self, id=None, type=None, status=None, reasons=None, progress_percent=None, archive_id=None, begin_time=None, end_time=None):
-        """CheckAssetJobStatusResponse - a model defined in huaweicloud sdk"""
+        """CheckAssetJobStatusResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 作业ID
+        :type id: str
+        :param type: 作业类型
+        :type type: str
+        :param status: 作业状态 - RUNNING : 作业正在执行 - SUCCEEDED : 作业执行成功，对于导出作业，用户可以通过archive_id来下载资产包 - FAILED : 作业执行失败，通过reason字段查看具体错误原因
+        :type status: str
+        :param reasons: 导致作业失败的错误原因
+        :type reasons: list[:class:`huaweicloudsdkroma.v2.AssetJobReason`]
+        :param progress_percent: 作业进度百分比
+        :type progress_percent: float
+        :param archive_id: 导出作业成功时，供下载的资产包ID
+        :type archive_id: str
+        :param begin_time: 作业开始时间
+        :type begin_time: str
+        :param end_time: 作业结束时间
+        :type end_time: str
+        """
         
         super(CheckAssetJobStatusResponse, self).__init__()
 
@@ -93,7 +112,7 @@ class CheckAssetJobStatusResponse(SdkResponse):
         作业ID
 
         :param id: The id of this CheckAssetJobStatusResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -115,7 +134,7 @@ class CheckAssetJobStatusResponse(SdkResponse):
         作业类型
 
         :param type: The type of this CheckAssetJobStatusResponse.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -137,7 +156,7 @@ class CheckAssetJobStatusResponse(SdkResponse):
         作业状态 - RUNNING : 作业正在执行 - SUCCEEDED : 作业执行成功，对于导出作业，用户可以通过archive_id来下载资产包 - FAILED : 作业执行失败，通过reason字段查看具体错误原因
 
         :param status: The status of this CheckAssetJobStatusResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -148,7 +167,7 @@ class CheckAssetJobStatusResponse(SdkResponse):
         导致作业失败的错误原因
 
         :return: The reasons of this CheckAssetJobStatusResponse.
-        :rtype: list[AssetJobReason]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.AssetJobReason`]
         """
         return self._reasons
 
@@ -159,7 +178,7 @@ class CheckAssetJobStatusResponse(SdkResponse):
         导致作业失败的错误原因
 
         :param reasons: The reasons of this CheckAssetJobStatusResponse.
-        :type: list[AssetJobReason]
+        :type reasons: list[:class:`huaweicloudsdkroma.v2.AssetJobReason`]
         """
         self._reasons = reasons
 
@@ -181,7 +200,7 @@ class CheckAssetJobStatusResponse(SdkResponse):
         作业进度百分比
 
         :param progress_percent: The progress_percent of this CheckAssetJobStatusResponse.
-        :type: float
+        :type progress_percent: float
         """
         self._progress_percent = progress_percent
 
@@ -203,7 +222,7 @@ class CheckAssetJobStatusResponse(SdkResponse):
         导出作业成功时，供下载的资产包ID
 
         :param archive_id: The archive_id of this CheckAssetJobStatusResponse.
-        :type: str
+        :type archive_id: str
         """
         self._archive_id = archive_id
 
@@ -225,7 +244,7 @@ class CheckAssetJobStatusResponse(SdkResponse):
         作业开始时间
 
         :param begin_time: The begin_time of this CheckAssetJobStatusResponse.
-        :type: str
+        :type begin_time: str
         """
         self._begin_time = begin_time
 
@@ -247,7 +266,7 @@ class CheckAssetJobStatusResponse(SdkResponse):
         作业结束时间
 
         :param end_time: The end_time of this CheckAssetJobStatusResponse.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 

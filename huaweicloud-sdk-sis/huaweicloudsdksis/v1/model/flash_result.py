@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FlashResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class FlashResult:
     }
 
     def __init__(self, channel_id=None, sentences=None):
-        """FlashResult - a model defined in huaweicloud sdk"""
+        """FlashResult
+
+        The model defined in huaweicloud sdk
+
+        :param channel_id: 音频声道id
+        :type channel_id: int
+        :param sentences: 分句结果
+        :type sentences: list[:class:`huaweicloudsdksis.v1.Sentences`]
+        """
         
         
 
@@ -63,7 +70,7 @@ class FlashResult:
         音频声道id
 
         :param channel_id: The channel_id of this FlashResult.
-        :type: int
+        :type channel_id: int
         """
         self._channel_id = channel_id
 
@@ -74,7 +81,7 @@ class FlashResult:
         分句结果
 
         :return: The sentences of this FlashResult.
-        :rtype: list[Sentences]
+        :rtype: list[:class:`huaweicloudsdksis.v1.Sentences`]
         """
         return self._sentences
 
@@ -85,7 +92,7 @@ class FlashResult:
         分句结果
 
         :param sentences: The sentences of this FlashResult.
-        :type: list[Sentences]
+        :type sentences: list[:class:`huaweicloudsdksis.v1.Sentences`]
         """
         self._sentences = sentences
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTracesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListTracesResponse(SdkResponse):
     }
 
     def __init__(self, traces=None, meta_data=None):
-        """ListTracesResponse - a model defined in huaweicloud sdk"""
+        """ListTracesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param traces: 本次查询事件列表返回事件数组。
+        :type traces: list[:class:`huaweicloudsdkcts.v3.Traces`]
+        :param meta_data: 
+        :type meta_data: :class:`huaweicloudsdkcts.v3.MetaData`
+        """
         
         super(ListTracesResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListTracesResponse(SdkResponse):
         本次查询事件列表返回事件数组。
 
         :return: The traces of this ListTracesResponse.
-        :rtype: list[Traces]
+        :rtype: list[:class:`huaweicloudsdkcts.v3.Traces`]
         """
         return self._traces
 
@@ -63,7 +70,7 @@ class ListTracesResponse(SdkResponse):
         本次查询事件列表返回事件数组。
 
         :param traces: The traces of this ListTracesResponse.
-        :type: list[Traces]
+        :type traces: list[:class:`huaweicloudsdkcts.v3.Traces`]
         """
         self._traces = traces
 
@@ -73,7 +80,7 @@ class ListTracesResponse(SdkResponse):
 
 
         :return: The meta_data of this ListTracesResponse.
-        :rtype: MetaData
+        :rtype: :class:`huaweicloudsdkcts.v3.MetaData`
         """
         return self._meta_data
 
@@ -83,7 +90,7 @@ class ListTracesResponse(SdkResponse):
 
 
         :param meta_data: The meta_data of this ListTracesResponse.
-        :type: MetaData
+        :type meta_data: :class:`huaweicloudsdkcts.v3.MetaData`
         """
         self._meta_data = meta_data
 

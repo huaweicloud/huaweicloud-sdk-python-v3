@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateLoadbalancerRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateLoadbalancerRequest:
     }
 
     def __init__(self, loadbalancer_id=None, body=None):
-        """UpdateLoadbalancerRequest - a model defined in huaweicloud sdk"""
+        """UpdateLoadbalancerRequest
+
+        The model defined in huaweicloud sdk
+
+        :param loadbalancer_id: 待更新的负载均衡器id
+        :type loadbalancer_id: str
+        :param body: Body of the UpdateLoadbalancerRequest
+        :type body: :class:`huaweicloudsdkelb.v2.UpdateLoadbalancerRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateLoadbalancerRequest:
         待更新的负载均衡器id
 
         :param loadbalancer_id: The loadbalancer_id of this UpdateLoadbalancerRequest.
-        :type: str
+        :type loadbalancer_id: str
         """
         self._loadbalancer_id = loadbalancer_id
 
@@ -72,7 +79,7 @@ class UpdateLoadbalancerRequest:
 
 
         :return: The body of this UpdateLoadbalancerRequest.
-        :rtype: UpdateLoadbalancerRequestBody
+        :rtype: :class:`huaweicloudsdkelb.v2.UpdateLoadbalancerRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateLoadbalancerRequest:
 
 
         :param body: The body of this UpdateLoadbalancerRequest.
-        :type: UpdateLoadbalancerRequestBody
+        :type body: :class:`huaweicloudsdkelb.v2.UpdateLoadbalancerRequestBody`
         """
         self._body = body
 

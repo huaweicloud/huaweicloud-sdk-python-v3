@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RecognizeAutoClassificationResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RecognizeAutoClassificationResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """RecognizeAutoClassificationResponse - a model defined in huaweicloud sdk"""
+        """RecognizeAutoClassificationResponse
+
+        The model defined in huaweicloud sdk
+
+        :param result: 调用成功时表示调用结果。  调用失败时无此字段。 
+        :type result: list[:class:`huaweicloudsdkocr.v1.AutoClassificationResult`]
+        """
         
         super(RecognizeAutoClassificationResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class RecognizeAutoClassificationResponse(SdkResponse):
         调用成功时表示调用结果。  调用失败时无此字段。 
 
         :return: The result of this RecognizeAutoClassificationResponse.
-        :rtype: list[AutoClassificationResult]
+        :rtype: list[:class:`huaweicloudsdkocr.v1.AutoClassificationResult`]
         """
         return self._result
 
@@ -58,7 +63,7 @@ class RecognizeAutoClassificationResponse(SdkResponse):
         调用成功时表示调用结果。  调用失败时无此字段。 
 
         :param result: The result of this RecognizeAutoClassificationResponse.
-        :type: list[AutoClassificationResult]
+        :type result: list[:class:`huaweicloudsdkocr.v1.AutoClassificationResult`]
         """
         self._result = result
 

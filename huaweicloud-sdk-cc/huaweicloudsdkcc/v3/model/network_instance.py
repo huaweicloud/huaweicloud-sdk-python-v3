@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NetworkInstance:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class NetworkInstance:
     }
 
     def __init__(self, id=None, name=None, description=None, domain_id=None, status=None, created_at=None, updated_at=None, type=None, cloud_connection_id=None, instance_id=None, instance_domain_id=None, region_id=None, project_id=None, cidrs=None):
-        """NetworkInstance - a model defined in huaweicloud sdk"""
+        """NetworkInstance
+
+        The model defined in huaweicloud sdk
+
+        :param id: 网络实例的ID。
+        :type id: str
+        :param name: 网络实例的名字。
+        :type name: str
+        :param description: 网络实例的描述。
+        :type description: str
+        :param domain_id: 帐号ID。
+        :type domain_id: str
+        :param status: 网络实例的状态。ACTIVE：表示状态可用。
+        :type status: str
+        :param created_at: 网络实例的创建时间。
+        :type created_at: datetime
+        :param updated_at: 网络实例的更新时间。
+        :type updated_at: datetime
+        :param type: 网络实例的类型。|- VPC：虚拟私有云。 VGW：虚拟网关。 ER：虚拟路由器。
+        :type type: str
+        :param cloud_connection_id: 云连接实例ID。
+        :type cloud_connection_id: str
+        :param instance_id: VPC或者VGW的ID。
+        :type instance_id: str
+        :param instance_domain_id: VPC或者VGW所属账户ID。
+        :type instance_domain_id: str
+        :param region_id: VPC或者VGW所在Region的ID。
+        :type region_id: str
+        :param project_id: VPC或者VGW所在租户的项目ID。
+        :type project_id: str
+        :param cidrs: VPC或者VGW发布的网段路由列表。
+        :type cidrs: list[str]
+        """
         
         
 
@@ -123,7 +154,7 @@ class NetworkInstance:
         网络实例的ID。
 
         :param id: The id of this NetworkInstance.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -145,7 +176,7 @@ class NetworkInstance:
         网络实例的名字。
 
         :param name: The name of this NetworkInstance.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -167,7 +198,7 @@ class NetworkInstance:
         网络实例的描述。
 
         :param description: The description of this NetworkInstance.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -189,7 +220,7 @@ class NetworkInstance:
         帐号ID。
 
         :param domain_id: The domain_id of this NetworkInstance.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -211,7 +242,7 @@ class NetworkInstance:
         网络实例的状态。ACTIVE：表示状态可用。
 
         :param status: The status of this NetworkInstance.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -233,7 +264,7 @@ class NetworkInstance:
         网络实例的创建时间。
 
         :param created_at: The created_at of this NetworkInstance.
-        :type: datetime
+        :type created_at: datetime
         """
         self._created_at = created_at
 
@@ -255,7 +286,7 @@ class NetworkInstance:
         网络实例的更新时间。
 
         :param updated_at: The updated_at of this NetworkInstance.
-        :type: datetime
+        :type updated_at: datetime
         """
         self._updated_at = updated_at
 
@@ -277,7 +308,7 @@ class NetworkInstance:
         网络实例的类型。|- VPC：虚拟私有云。 VGW：虚拟网关。 ER：虚拟路由器。
 
         :param type: The type of this NetworkInstance.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -299,7 +330,7 @@ class NetworkInstance:
         云连接实例ID。
 
         :param cloud_connection_id: The cloud_connection_id of this NetworkInstance.
-        :type: str
+        :type cloud_connection_id: str
         """
         self._cloud_connection_id = cloud_connection_id
 
@@ -321,7 +352,7 @@ class NetworkInstance:
         VPC或者VGW的ID。
 
         :param instance_id: The instance_id of this NetworkInstance.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -343,7 +374,7 @@ class NetworkInstance:
         VPC或者VGW所属账户ID。
 
         :param instance_domain_id: The instance_domain_id of this NetworkInstance.
-        :type: str
+        :type instance_domain_id: str
         """
         self._instance_domain_id = instance_domain_id
 
@@ -365,7 +396,7 @@ class NetworkInstance:
         VPC或者VGW所在Region的ID。
 
         :param region_id: The region_id of this NetworkInstance.
-        :type: str
+        :type region_id: str
         """
         self._region_id = region_id
 
@@ -387,7 +418,7 @@ class NetworkInstance:
         VPC或者VGW所在租户的项目ID。
 
         :param project_id: The project_id of this NetworkInstance.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -409,7 +440,7 @@ class NetworkInstance:
         VPC或者VGW发布的网段路由列表。
 
         :param cidrs: The cidrs of this NetworkInstance.
-        :type: list[str]
+        :type cidrs: list[str]
         """
         self._cidrs = cidrs
 

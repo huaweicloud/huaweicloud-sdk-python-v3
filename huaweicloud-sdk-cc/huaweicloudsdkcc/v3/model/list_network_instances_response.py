@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListNetworkInstancesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListNetworkInstancesResponse(SdkResponse):
     }
 
     def __init__(self, network_instances=None, page_info=None, request_id=None):
-        """ListNetworkInstancesResponse - a model defined in huaweicloud sdk"""
+        """ListNetworkInstancesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param network_instances: 网络实例列表。
+        :type network_instances: list[:class:`huaweicloudsdkcc.v3.NetworkInstance`]
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkcc.v3.PageInfo`
+        :param request_id: 请求ID。
+        :type request_id: str
+        """
         
         super(ListNetworkInstancesResponse, self).__init__()
 
@@ -57,7 +66,7 @@ class ListNetworkInstancesResponse(SdkResponse):
         网络实例列表。
 
         :return: The network_instances of this ListNetworkInstancesResponse.
-        :rtype: list[NetworkInstance]
+        :rtype: list[:class:`huaweicloudsdkcc.v3.NetworkInstance`]
         """
         return self._network_instances
 
@@ -68,7 +77,7 @@ class ListNetworkInstancesResponse(SdkResponse):
         网络实例列表。
 
         :param network_instances: The network_instances of this ListNetworkInstancesResponse.
-        :type: list[NetworkInstance]
+        :type network_instances: list[:class:`huaweicloudsdkcc.v3.NetworkInstance`]
         """
         self._network_instances = network_instances
 
@@ -78,7 +87,7 @@ class ListNetworkInstancesResponse(SdkResponse):
 
 
         :return: The page_info of this ListNetworkInstancesResponse.
-        :rtype: PageInfo
+        :rtype: :class:`huaweicloudsdkcc.v3.PageInfo`
         """
         return self._page_info
 
@@ -88,7 +97,7 @@ class ListNetworkInstancesResponse(SdkResponse):
 
 
         :param page_info: The page_info of this ListNetworkInstancesResponse.
-        :type: PageInfo
+        :type page_info: :class:`huaweicloudsdkcc.v3.PageInfo`
         """
         self._page_info = page_info
 
@@ -110,7 +119,7 @@ class ListNetworkInstancesResponse(SdkResponse):
         请求ID。
 
         :param request_id: The request_id of this ListNetworkInstancesResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowVocabulariesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowVocabulariesRequest:
     }
 
     def __init__(self, body=None):
-        """ShowVocabulariesRequest - a model defined in huaweicloud sdk"""
+        """ShowVocabulariesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the ShowVocabulariesRequest
+        :type body: :class:`huaweicloudsdksis.v1.ShowVocabulariesParams`
+        """
         
         
 
@@ -46,7 +51,7 @@ class ShowVocabulariesRequest:
 
 
         :return: The body of this ShowVocabulariesRequest.
-        :rtype: ShowVocabulariesParams
+        :rtype: :class:`huaweicloudsdksis.v1.ShowVocabulariesParams`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class ShowVocabulariesRequest:
 
 
         :param body: The body of this ShowVocabulariesRequest.
-        :type: ShowVocabulariesParams
+        :type body: :class:`huaweicloudsdksis.v1.ShowVocabulariesParams`
         """
         self._body = body
 

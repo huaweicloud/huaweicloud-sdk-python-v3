@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowProtectedInstanceParams:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class ShowProtectedInstanceParams:
     }
 
     def __init__(self, id=None, name=None, description=None, status=None, source_server=None, target_server=None, server_group_id=None, created_at=None, updated_at=None, metadata=None, attachment=None, tags=None, progress=None, priority_station=None):
-        """ShowProtectedInstanceParams - a model defined in huaweicloud sdk"""
+        """ShowProtectedInstanceParams
+
+        The model defined in huaweicloud sdk
+
+        :param id: 保护实例的ID。
+        :type id: str
+        :param name: 保护实例的名称。
+        :type name: str
+        :param description: 保护实例的描述。
+        :type description: str
+        :param status: 保护实例的状态。
+        :type status: str
+        :param source_server: 生产站点云服务器ID。
+        :type source_server: str
+        :param target_server: 容灾站点云服务器ID。
+        :type target_server: str
+        :param server_group_id: 保护组的ID。
+        :type server_group_id: str
+        :param created_at: 创建时间。默认格式为：\&quot;yyyy-MM-dd HH:mm:ss.SSS\&quot;，例：\&quot;2019-04-01 12:00:00.000\&quot;。
+        :type created_at: str
+        :param updated_at: 更新时间。默认格式为：\&quot;yyyy-MM-dd HH:mm:ss.SSS\&quot;，例：\&quot;2019-04-01 12:00:00.000\&quot;。
+        :type updated_at: str
+        :param metadata: 
+        :type metadata: :class:`huaweicloudsdksdrs.v1.MetadataParams`
+        :param attachment: 挂载的复制对列表。
+        :type attachment: list[:class:`huaweicloudsdksdrs.v1.ProtectedInstanceAttachment`]
+        :param tags: 标签列表。
+        :type tags: list[:class:`huaweicloudsdksdrs.v1.ResourceTag`]
+        :param progress: 保护实例的同步进度。单位：百分比（%）。
+        :type progress: int
+        :param priority_station: 标识保护实例所在保护组的当前生产站点可用区。source：表示当前生产站点可用区为保护组source_availability_zone的值。target：表示当前生产站点可用区为保护组的target_availability_zone的值。
+        :type priority_station: str
+        """
         
         
 
@@ -110,7 +141,7 @@ class ShowProtectedInstanceParams:
         保护实例的ID。
 
         :param id: The id of this ShowProtectedInstanceParams.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -132,7 +163,7 @@ class ShowProtectedInstanceParams:
         保护实例的名称。
 
         :param name: The name of this ShowProtectedInstanceParams.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -154,7 +185,7 @@ class ShowProtectedInstanceParams:
         保护实例的描述。
 
         :param description: The description of this ShowProtectedInstanceParams.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -176,7 +207,7 @@ class ShowProtectedInstanceParams:
         保护实例的状态。
 
         :param status: The status of this ShowProtectedInstanceParams.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -198,7 +229,7 @@ class ShowProtectedInstanceParams:
         生产站点云服务器ID。
 
         :param source_server: The source_server of this ShowProtectedInstanceParams.
-        :type: str
+        :type source_server: str
         """
         self._source_server = source_server
 
@@ -220,7 +251,7 @@ class ShowProtectedInstanceParams:
         容灾站点云服务器ID。
 
         :param target_server: The target_server of this ShowProtectedInstanceParams.
-        :type: str
+        :type target_server: str
         """
         self._target_server = target_server
 
@@ -242,7 +273,7 @@ class ShowProtectedInstanceParams:
         保护组的ID。
 
         :param server_group_id: The server_group_id of this ShowProtectedInstanceParams.
-        :type: str
+        :type server_group_id: str
         """
         self._server_group_id = server_group_id
 
@@ -264,7 +295,7 @@ class ShowProtectedInstanceParams:
         创建时间。默认格式为：\"yyyy-MM-dd HH:mm:ss.SSS\"，例：\"2019-04-01 12:00:00.000\"。
 
         :param created_at: The created_at of this ShowProtectedInstanceParams.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -286,7 +317,7 @@ class ShowProtectedInstanceParams:
         更新时间。默认格式为：\"yyyy-MM-dd HH:mm:ss.SSS\"，例：\"2019-04-01 12:00:00.000\"。
 
         :param updated_at: The updated_at of this ShowProtectedInstanceParams.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 
@@ -296,7 +327,7 @@ class ShowProtectedInstanceParams:
 
 
         :return: The metadata of this ShowProtectedInstanceParams.
-        :rtype: MetadataParams
+        :rtype: :class:`huaweicloudsdksdrs.v1.MetadataParams`
         """
         return self._metadata
 
@@ -306,7 +337,7 @@ class ShowProtectedInstanceParams:
 
 
         :param metadata: The metadata of this ShowProtectedInstanceParams.
-        :type: MetadataParams
+        :type metadata: :class:`huaweicloudsdksdrs.v1.MetadataParams`
         """
         self._metadata = metadata
 
@@ -317,7 +348,7 @@ class ShowProtectedInstanceParams:
         挂载的复制对列表。
 
         :return: The attachment of this ShowProtectedInstanceParams.
-        :rtype: list[ProtectedInstanceAttachment]
+        :rtype: list[:class:`huaweicloudsdksdrs.v1.ProtectedInstanceAttachment`]
         """
         return self._attachment
 
@@ -328,7 +359,7 @@ class ShowProtectedInstanceParams:
         挂载的复制对列表。
 
         :param attachment: The attachment of this ShowProtectedInstanceParams.
-        :type: list[ProtectedInstanceAttachment]
+        :type attachment: list[:class:`huaweicloudsdksdrs.v1.ProtectedInstanceAttachment`]
         """
         self._attachment = attachment
 
@@ -339,7 +370,7 @@ class ShowProtectedInstanceParams:
         标签列表。
 
         :return: The tags of this ShowProtectedInstanceParams.
-        :rtype: list[ResourceTag]
+        :rtype: list[:class:`huaweicloudsdksdrs.v1.ResourceTag`]
         """
         return self._tags
 
@@ -350,7 +381,7 @@ class ShowProtectedInstanceParams:
         标签列表。
 
         :param tags: The tags of this ShowProtectedInstanceParams.
-        :type: list[ResourceTag]
+        :type tags: list[:class:`huaweicloudsdksdrs.v1.ResourceTag`]
         """
         self._tags = tags
 
@@ -372,7 +403,7 @@ class ShowProtectedInstanceParams:
         保护实例的同步进度。单位：百分比（%）。
 
         :param progress: The progress of this ShowProtectedInstanceParams.
-        :type: int
+        :type progress: int
         """
         self._progress = progress
 
@@ -394,7 +425,7 @@ class ShowProtectedInstanceParams:
         标识保护实例所在保护组的当前生产站点可用区。source：表示当前生产站点可用区为保护组source_availability_zone的值。target：表示当前生产站点可用区为保护组的target_availability_zone的值。
 
         :param priority_station: The priority_station of this ShowProtectedInstanceParams.
-        :type: str
+        :type priority_station: str
         """
         self._priority_station = priority_station
 

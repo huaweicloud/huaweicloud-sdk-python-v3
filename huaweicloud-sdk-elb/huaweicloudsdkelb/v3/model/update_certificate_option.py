@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateCertificateOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class UpdateCertificateOption:
     }
 
     def __init__(self, certificate=None, description=None, name=None, private_key=None, domain=None, enc_certificate=None, enc_private_key=None):
-        """UpdateCertificateOption - a model defined in huaweicloud sdk"""
+        """UpdateCertificateOption
+
+        The model defined in huaweicloud sdk
+
+        :param certificate: 证书的内容。PEM编码格式。
+        :type certificate: str
+        :param description: 证书的描述。
+        :type description: str
+        :param name: 证书的名称。
+        :type name: str
+        :param private_key: 服务器证书的私钥。PEM编码格式。  当type为client时，该参数被忽略，不影响证书的创建和使用。且若不符合格式，不报错但会被设置为空。  当type为server时，该字段必须符合格式要求，且私钥必须是有效的。
+        :type private_key: str
+        :param domain: 服务器证书所签域名。该字段仅type为server时有效。 总长度为0-1024，由若干普通域名或泛域名组成，域名之间以\&quot;,\&quot;分割，不超过30个域名。 普通域名：由若干字符串组成，字符串间以\&quot;.\&quot;分割，单个字符串长度不超过63个字符，只能包含英文字母、数字或\&quot;-\&quot;，且必须以字母或数字开头和结尾。例：www.test.com； 泛域名：在普通域名的基础上仅允许首字母为\&quot;*\&quot;。例：*.test.com
+        :type domain: str
+        :param enc_certificate: HTTPS协议使用的SM加密证书内容。  取值：PEM编码格式。  使用说明： - 仅type为server_sm时有效。
+        :type enc_certificate: str
+        :param enc_private_key: HTTPS协议使用的SM加密证书内容。  取值：PEM编码格式。  使用说明： - 仅type为server_sm时有效。
+        :type enc_private_key: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class UpdateCertificateOption:
         证书的内容。PEM编码格式。
 
         :param certificate: The certificate of this UpdateCertificateOption.
-        :type: str
+        :type certificate: str
         """
         self._certificate = certificate
 
@@ -110,7 +127,7 @@ class UpdateCertificateOption:
         证书的描述。
 
         :param description: The description of this UpdateCertificateOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -132,7 +149,7 @@ class UpdateCertificateOption:
         证书的名称。
 
         :param name: The name of this UpdateCertificateOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -154,7 +171,7 @@ class UpdateCertificateOption:
         服务器证书的私钥。PEM编码格式。  当type为client时，该参数被忽略，不影响证书的创建和使用。且若不符合格式，不报错但会被设置为空。  当type为server时，该字段必须符合格式要求，且私钥必须是有效的。
 
         :param private_key: The private_key of this UpdateCertificateOption.
-        :type: str
+        :type private_key: str
         """
         self._private_key = private_key
 
@@ -176,7 +193,7 @@ class UpdateCertificateOption:
         服务器证书所签域名。该字段仅type为server时有效。 总长度为0-1024，由若干普通域名或泛域名组成，域名之间以\",\"分割，不超过30个域名。 普通域名：由若干字符串组成，字符串间以\".\"分割，单个字符串长度不超过63个字符，只能包含英文字母、数字或\"-\"，且必须以字母或数字开头和结尾。例：www.test.com； 泛域名：在普通域名的基础上仅允许首字母为\"*\"。例：*.test.com
 
         :param domain: The domain of this UpdateCertificateOption.
-        :type: str
+        :type domain: str
         """
         self._domain = domain
 
@@ -198,7 +215,7 @@ class UpdateCertificateOption:
         HTTPS协议使用的SM加密证书内容。  取值：PEM编码格式。  使用说明： - 仅type为server_sm时有效。
 
         :param enc_certificate: The enc_certificate of this UpdateCertificateOption.
-        :type: str
+        :type enc_certificate: str
         """
         self._enc_certificate = enc_certificate
 
@@ -220,7 +237,7 @@ class UpdateCertificateOption:
         HTTPS协议使用的SM加密证书内容。  取值：PEM编码格式。  使用说明： - 仅type为server_sm时有效。
 
         :param enc_private_key: The enc_private_key of this UpdateCertificateOption.
-        :type: str
+        :type enc_private_key: str
         """
         self._enc_private_key = enc_private_key
 

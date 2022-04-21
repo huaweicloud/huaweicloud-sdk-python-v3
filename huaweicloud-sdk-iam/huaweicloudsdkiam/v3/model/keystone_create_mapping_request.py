@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneCreateMappingRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class KeystoneCreateMappingRequest:
     }
 
     def __init__(self, id=None, body=None):
-        """KeystoneCreateMappingRequest - a model defined in huaweicloud sdk"""
+        """KeystoneCreateMappingRequest
+
+        The model defined in huaweicloud sdk
+
+        :param id: 待注册的映射ID。
+        :type id: str
+        :param body: Body of the KeystoneCreateMappingRequest
+        :type body: :class:`huaweicloudsdkiam.v3.KeystoneCreateMappingRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class KeystoneCreateMappingRequest:
         待注册的映射ID。
 
         :param id: The id of this KeystoneCreateMappingRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -72,7 +79,7 @@ class KeystoneCreateMappingRequest:
 
 
         :return: The body of this KeystoneCreateMappingRequest.
-        :rtype: KeystoneCreateMappingRequestBody
+        :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCreateMappingRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class KeystoneCreateMappingRequest:
 
 
         :param body: The body of this KeystoneCreateMappingRequest.
-        :type: KeystoneCreateMappingRequestBody
+        :type body: :class:`huaweicloudsdkiam.v3.KeystoneCreateMappingRequestBody`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDDosStatusResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowDDosStatusResponse(SdkResponse):
     }
 
     def __init__(self, status=None):
-        """ShowDDosStatusResponse - a model defined in huaweicloud sdk"""
+        """ShowDDosStatusResponse
+
+        The model defined in huaweicloud sdk
+
+        :param status: 防护状态，可选范围：   - normal：表示正常   - configging：表示设置中   - notConfig：表示未设置   - packetcleaning：表示清洗   - packetdropping：表示黑洞
+        :type status: str
+        """
         
         super(ShowDDosStatusResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class ShowDDosStatusResponse(SdkResponse):
         防护状态，可选范围：   - normal：表示正常   - configging：表示设置中   - notConfig：表示未设置   - packetcleaning：表示清洗   - packetdropping：表示黑洞
 
         :param status: The status of this ShowDDosStatusResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 

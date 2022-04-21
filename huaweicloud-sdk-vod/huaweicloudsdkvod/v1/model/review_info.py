@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ReviewInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ReviewInfo:
     }
 
     def __init__(self, suggestion=None, text=None, cover=None, video=None, exec_desc=None, review_status=None):
-        """ReviewInfo - a model defined in huaweicloud sdk"""
+        """ReviewInfo
+
+        The model defined in huaweicloud sdk
+
+        :param suggestion: 检测结果是否通过。  取值如下： - block：包含敏感信息，不通过。 - pass：不包含敏感信息，通过。 - review：需要人工复检。  &gt; 当同时检测多个场景时，suggestion的值以最可能包含敏感信息的场景为准。即任一场景出现了block则总的suggestion为block，所有场景都pass时suggestion为pass，这两种情况之外则一定有场景需要review，此时suggestion为review。
+        :type suggestion: str
+        :param text: 
+        :type text: :class:`huaweicloudsdkvod.v1.TextReviewRet`
+        :param cover: 封面检测结果。
+        :type cover: list[:class:`huaweicloudsdkvod.v1.PictureReviewRet`]
+        :param video: 视频检测结果。
+        :type video: list[:class:`huaweicloudsdkvod.v1.PictureReviewRet`]
+        :param exec_desc: 执行情况描述。
+        :type exec_desc: str
+        :param review_status: 审核状态。  取值如下： - UN_REVIEW：未审核 - REVIEWING：审核中 - REVIEW_SUSPICIOUS：审核可疑，需要人工审核 - REVIEW_PASSED：审核通过 - REVIEW_FAILED：审核失败。 - REVIEW_BLOCKED：已屏蔽。
+        :type review_status: str
+        """
         
         
 
@@ -82,7 +97,7 @@ class ReviewInfo:
         检测结果是否通过。  取值如下： - block：包含敏感信息，不通过。 - pass：不包含敏感信息，通过。 - review：需要人工复检。  > 当同时检测多个场景时，suggestion的值以最可能包含敏感信息的场景为准。即任一场景出现了block则总的suggestion为block，所有场景都pass时suggestion为pass，这两种情况之外则一定有场景需要review，此时suggestion为review。
 
         :param suggestion: The suggestion of this ReviewInfo.
-        :type: str
+        :type suggestion: str
         """
         self._suggestion = suggestion
 
@@ -92,7 +107,7 @@ class ReviewInfo:
 
 
         :return: The text of this ReviewInfo.
-        :rtype: TextReviewRet
+        :rtype: :class:`huaweicloudsdkvod.v1.TextReviewRet`
         """
         return self._text
 
@@ -102,7 +117,7 @@ class ReviewInfo:
 
 
         :param text: The text of this ReviewInfo.
-        :type: TextReviewRet
+        :type text: :class:`huaweicloudsdkvod.v1.TextReviewRet`
         """
         self._text = text
 
@@ -113,7 +128,7 @@ class ReviewInfo:
         封面检测结果。
 
         :return: The cover of this ReviewInfo.
-        :rtype: list[PictureReviewRet]
+        :rtype: list[:class:`huaweicloudsdkvod.v1.PictureReviewRet`]
         """
         return self._cover
 
@@ -124,7 +139,7 @@ class ReviewInfo:
         封面检测结果。
 
         :param cover: The cover of this ReviewInfo.
-        :type: list[PictureReviewRet]
+        :type cover: list[:class:`huaweicloudsdkvod.v1.PictureReviewRet`]
         """
         self._cover = cover
 
@@ -135,7 +150,7 @@ class ReviewInfo:
         视频检测结果。
 
         :return: The video of this ReviewInfo.
-        :rtype: list[PictureReviewRet]
+        :rtype: list[:class:`huaweicloudsdkvod.v1.PictureReviewRet`]
         """
         return self._video
 
@@ -146,7 +161,7 @@ class ReviewInfo:
         视频检测结果。
 
         :param video: The video of this ReviewInfo.
-        :type: list[PictureReviewRet]
+        :type video: list[:class:`huaweicloudsdkvod.v1.PictureReviewRet`]
         """
         self._video = video
 
@@ -168,7 +183,7 @@ class ReviewInfo:
         执行情况描述。
 
         :param exec_desc: The exec_desc of this ReviewInfo.
-        :type: str
+        :type exec_desc: str
         """
         self._exec_desc = exec_desc
 
@@ -190,7 +205,7 @@ class ReviewInfo:
         审核状态。  取值如下： - UN_REVIEW：未审核 - REVIEWING：审核中 - REVIEW_SUSPICIOUS：审核可疑，需要人工审核 - REVIEW_PASSED：审核通过 - REVIEW_FAILED：审核失败。 - REVIEW_BLOCKED：已屏蔽。
 
         :param review_status: The review_status of this ReviewInfo.
-        :type: str
+        :type review_status: str
         """
         self._review_status = review_status
 

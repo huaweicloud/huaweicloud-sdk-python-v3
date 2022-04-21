@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TemplatesInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class TemplatesInfo:
     }
 
     def __init__(self, template_ids=None, platform_source=None):
-        """TemplatesInfo - a model defined in huaweicloud sdk"""
+        """TemplatesInfo
+
+        The model defined in huaweicloud sdk
+
+        :param template_ids: 模板ID列表。
+        :type template_ids: list[str]
+        :param platform_source: 平台来源： - 0：codelabs - 1：devstar 
+        :type platform_source: int
+        """
         
         
 
@@ -61,7 +68,7 @@ class TemplatesInfo:
         模板ID列表。
 
         :param template_ids: The template_ids of this TemplatesInfo.
-        :type: list[str]
+        :type template_ids: list[str]
         """
         self._template_ids = template_ids
 
@@ -83,7 +90,7 @@ class TemplatesInfo:
         平台来源： - 0：codelabs - 1：devstar 
 
         :param platform_source: The platform_source of this TemplatesInfo.
-        :type: int
+        :type platform_source: int
         """
         self._platform_source = platform_source
 

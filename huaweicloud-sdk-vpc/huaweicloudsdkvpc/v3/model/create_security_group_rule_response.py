@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateSecurityGroupRuleResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateSecurityGroupRuleResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, security_group_rule=None):
-        """CreateSecurityGroupRuleResponse - a model defined in huaweicloud sdk"""
+        """CreateSecurityGroupRuleResponse
+
+        The model defined in huaweicloud sdk
+
+        :param request_id: 请求ID
+        :type request_id: str
+        :param security_group_rule: 
+        :type security_group_rule: :class:`huaweicloudsdkvpc.v3.SecurityGroupRule`
+        """
         
         super(CreateSecurityGroupRuleResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class CreateSecurityGroupRuleResponse(SdkResponse):
         请求ID
 
         :param request_id: The request_id of this CreateSecurityGroupRuleResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 
@@ -73,7 +80,7 @@ class CreateSecurityGroupRuleResponse(SdkResponse):
 
 
         :return: The security_group_rule of this CreateSecurityGroupRuleResponse.
-        :rtype: SecurityGroupRule
+        :rtype: :class:`huaweicloudsdkvpc.v3.SecurityGroupRule`
         """
         return self._security_group_rule
 
@@ -83,7 +90,7 @@ class CreateSecurityGroupRuleResponse(SdkResponse):
 
 
         :param security_group_rule: The security_group_rule of this CreateSecurityGroupRuleResponse.
-        :type: SecurityGroupRule
+        :type security_group_rule: :class:`huaweicloudsdkvpc.v3.SecurityGroupRule`
         """
         self._security_group_rule = security_group_rule
 

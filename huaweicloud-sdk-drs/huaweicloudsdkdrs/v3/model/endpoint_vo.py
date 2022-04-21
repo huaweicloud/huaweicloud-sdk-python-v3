@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EndpointVO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -100,7 +99,83 @@ class EndpointVO:
     }
 
     def __init__(self, id=None, obj_id=None, instance_name=None, db_type=None, db_user=None, db_password=None, manage_ip=None, traffic_ip=None, db_port=None, region=None, created_at=None, updated_at=None, ip=None, public_ip=None, az_code=None, security_group_id=None, subnet_id=None, vpc_id=None, volume_size=None, full_trans_user_pwd=None, increment_trans_user_pwd=None, ssl_link=None, ssl_cert_key=None, ssl_cert_name=None, ssl_cert_check_sum=None, ssl_cert_password=None, db_version=None, mongo_ha_mode=None, project_id=None, cluster_mode=None, instance_id=None, db_name=None, topic=None, safe_mode=None, kerberos_vo=None, multi_write_db_id=None):
-        """EndpointVO - a model defined in huaweicloud sdk"""
+        """EndpointVO
+
+        The model defined in huaweicloud sdk
+
+        :param id: 数据库id。
+        :type id: str
+        :param obj_id: 对象id。
+        :type obj_id: str
+        :param instance_name: RDS实例名称。
+        :type instance_name: str
+        :param db_type: 数据库类型
+        :type db_type: str
+        :param db_user: 数据库用户。
+        :type db_user: str
+        :param db_password: 数据库密码。
+        :type db_password: str
+        :param manage_ip: 管理IP。
+        :type manage_ip: str
+        :param traffic_ip: 流量IP。
+        :type traffic_ip: str
+        :param db_port: 数据库端口。
+        :type db_port: int
+        :param region: RDS实例所在region。
+        :type region: str
+        :param created_at: 创建日期，格式yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;
+        :type created_at: str
+        :param updated_at: 修改日期，格式yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;
+        :type updated_at: str
+        :param ip: 迁移实例所在的私有IP。
+        :type ip: str
+        :param public_ip: 迁移实例所在的公网IP。
+        :type public_ip: str
+        :param az_code: 可用区azCode。
+        :type az_code: str
+        :param security_group_id: 源库所在的安全组id。
+        :type security_group_id: str
+        :param subnet_id: 源库所在的子网id。
+        :type subnet_id: str
+        :param vpc_id: 源库所在的虚拟私有云id。
+        :type vpc_id: str
+        :param volume_size: 迁移实例的磁盘大小。
+        :type volume_size: int
+        :param full_trans_user_pwd: 全量迁移用户密码，密文。
+        :type full_trans_user_pwd: str
+        :param increment_trans_user_pwd: 增量迁移用户密码，密文。
+        :type increment_trans_user_pwd: str
+        :param ssl_link: 是否SSL安全连接。
+        :type ssl_link: bool
+        :param ssl_cert_key: SSL证书内容。
+        :type ssl_cert_key: str
+        :param ssl_cert_name: SSL证书名字。
+        :type ssl_cert_name: str
+        :param ssl_cert_check_sum: SSL证书内容checksum值。
+        :type ssl_cert_check_sum: str
+        :param ssl_cert_password: SSL证书密码，密文。
+        :type ssl_cert_password: str
+        :param db_version: 数据库版本。
+        :type db_version: str
+        :param mongo_ha_mode: mongoHa模式
+        :type mongo_ha_mode: str
+        :param project_id: RDS实例projectId。
+        :type project_id: str
+        :param cluster_mode: 集群模式
+        :type cluster_mode: str
+        :param instance_id: RDS实例id。
+        :type instance_id: str
+        :param db_name: Oracle服务名serviceName。
+        :type db_name: str
+        :param topic: mrskafka topic名称。
+        :type topic: str
+        :param safe_mode: MRSkafka是否开启kerberos认证 - 0非安全认证 - 1安全认证
+        :type safe_mode: int
+        :param kerberos_vo: 
+        :type kerberos_vo: :class:`huaweicloudsdkdrs.v3.KerberosVO`
+        :param multi_write_db_id: 多写数据库Id。
+        :type multi_write_db_id: str
+        """
         
         
 
@@ -233,7 +308,7 @@ class EndpointVO:
         数据库id。
 
         :param id: The id of this EndpointVO.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -255,7 +330,7 @@ class EndpointVO:
         对象id。
 
         :param obj_id: The obj_id of this EndpointVO.
-        :type: str
+        :type obj_id: str
         """
         self._obj_id = obj_id
 
@@ -277,7 +352,7 @@ class EndpointVO:
         RDS实例名称。
 
         :param instance_name: The instance_name of this EndpointVO.
-        :type: str
+        :type instance_name: str
         """
         self._instance_name = instance_name
 
@@ -299,7 +374,7 @@ class EndpointVO:
         数据库类型
 
         :param db_type: The db_type of this EndpointVO.
-        :type: str
+        :type db_type: str
         """
         self._db_type = db_type
 
@@ -321,7 +396,7 @@ class EndpointVO:
         数据库用户。
 
         :param db_user: The db_user of this EndpointVO.
-        :type: str
+        :type db_user: str
         """
         self._db_user = db_user
 
@@ -343,7 +418,7 @@ class EndpointVO:
         数据库密码。
 
         :param db_password: The db_password of this EndpointVO.
-        :type: str
+        :type db_password: str
         """
         self._db_password = db_password
 
@@ -365,7 +440,7 @@ class EndpointVO:
         管理IP。
 
         :param manage_ip: The manage_ip of this EndpointVO.
-        :type: str
+        :type manage_ip: str
         """
         self._manage_ip = manage_ip
 
@@ -387,7 +462,7 @@ class EndpointVO:
         流量IP。
 
         :param traffic_ip: The traffic_ip of this EndpointVO.
-        :type: str
+        :type traffic_ip: str
         """
         self._traffic_ip = traffic_ip
 
@@ -409,7 +484,7 @@ class EndpointVO:
         数据库端口。
 
         :param db_port: The db_port of this EndpointVO.
-        :type: int
+        :type db_port: int
         """
         self._db_port = db_port
 
@@ -431,7 +506,7 @@ class EndpointVO:
         RDS实例所在region。
 
         :param region: The region of this EndpointVO.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -453,7 +528,7 @@ class EndpointVO:
         创建日期，格式yyyy-MM-dd'T'HH:mm:ss'Z'
 
         :param created_at: The created_at of this EndpointVO.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -475,7 +550,7 @@ class EndpointVO:
         修改日期，格式yyyy-MM-dd'T'HH:mm:ss'Z'
 
         :param updated_at: The updated_at of this EndpointVO.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 
@@ -497,7 +572,7 @@ class EndpointVO:
         迁移实例所在的私有IP。
 
         :param ip: The ip of this EndpointVO.
-        :type: str
+        :type ip: str
         """
         self._ip = ip
 
@@ -519,7 +594,7 @@ class EndpointVO:
         迁移实例所在的公网IP。
 
         :param public_ip: The public_ip of this EndpointVO.
-        :type: str
+        :type public_ip: str
         """
         self._public_ip = public_ip
 
@@ -541,7 +616,7 @@ class EndpointVO:
         可用区azCode。
 
         :param az_code: The az_code of this EndpointVO.
-        :type: str
+        :type az_code: str
         """
         self._az_code = az_code
 
@@ -563,7 +638,7 @@ class EndpointVO:
         源库所在的安全组id。
 
         :param security_group_id: The security_group_id of this EndpointVO.
-        :type: str
+        :type security_group_id: str
         """
         self._security_group_id = security_group_id
 
@@ -585,7 +660,7 @@ class EndpointVO:
         源库所在的子网id。
 
         :param subnet_id: The subnet_id of this EndpointVO.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -607,7 +682,7 @@ class EndpointVO:
         源库所在的虚拟私有云id。
 
         :param vpc_id: The vpc_id of this EndpointVO.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -629,7 +704,7 @@ class EndpointVO:
         迁移实例的磁盘大小。
 
         :param volume_size: The volume_size of this EndpointVO.
-        :type: int
+        :type volume_size: int
         """
         self._volume_size = volume_size
 
@@ -651,7 +726,7 @@ class EndpointVO:
         全量迁移用户密码，密文。
 
         :param full_trans_user_pwd: The full_trans_user_pwd of this EndpointVO.
-        :type: str
+        :type full_trans_user_pwd: str
         """
         self._full_trans_user_pwd = full_trans_user_pwd
 
@@ -673,7 +748,7 @@ class EndpointVO:
         增量迁移用户密码，密文。
 
         :param increment_trans_user_pwd: The increment_trans_user_pwd of this EndpointVO.
-        :type: str
+        :type increment_trans_user_pwd: str
         """
         self._increment_trans_user_pwd = increment_trans_user_pwd
 
@@ -695,7 +770,7 @@ class EndpointVO:
         是否SSL安全连接。
 
         :param ssl_link: The ssl_link of this EndpointVO.
-        :type: bool
+        :type ssl_link: bool
         """
         self._ssl_link = ssl_link
 
@@ -717,7 +792,7 @@ class EndpointVO:
         SSL证书内容。
 
         :param ssl_cert_key: The ssl_cert_key of this EndpointVO.
-        :type: str
+        :type ssl_cert_key: str
         """
         self._ssl_cert_key = ssl_cert_key
 
@@ -739,7 +814,7 @@ class EndpointVO:
         SSL证书名字。
 
         :param ssl_cert_name: The ssl_cert_name of this EndpointVO.
-        :type: str
+        :type ssl_cert_name: str
         """
         self._ssl_cert_name = ssl_cert_name
 
@@ -761,7 +836,7 @@ class EndpointVO:
         SSL证书内容checksum值。
 
         :param ssl_cert_check_sum: The ssl_cert_check_sum of this EndpointVO.
-        :type: str
+        :type ssl_cert_check_sum: str
         """
         self._ssl_cert_check_sum = ssl_cert_check_sum
 
@@ -783,7 +858,7 @@ class EndpointVO:
         SSL证书密码，密文。
 
         :param ssl_cert_password: The ssl_cert_password of this EndpointVO.
-        :type: str
+        :type ssl_cert_password: str
         """
         self._ssl_cert_password = ssl_cert_password
 
@@ -805,7 +880,7 @@ class EndpointVO:
         数据库版本。
 
         :param db_version: The db_version of this EndpointVO.
-        :type: str
+        :type db_version: str
         """
         self._db_version = db_version
 
@@ -827,7 +902,7 @@ class EndpointVO:
         mongoHa模式
 
         :param mongo_ha_mode: The mongo_ha_mode of this EndpointVO.
-        :type: str
+        :type mongo_ha_mode: str
         """
         self._mongo_ha_mode = mongo_ha_mode
 
@@ -849,7 +924,7 @@ class EndpointVO:
         RDS实例projectId。
 
         :param project_id: The project_id of this EndpointVO.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -871,7 +946,7 @@ class EndpointVO:
         集群模式
 
         :param cluster_mode: The cluster_mode of this EndpointVO.
-        :type: str
+        :type cluster_mode: str
         """
         self._cluster_mode = cluster_mode
 
@@ -893,7 +968,7 @@ class EndpointVO:
         RDS实例id。
 
         :param instance_id: The instance_id of this EndpointVO.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -915,7 +990,7 @@ class EndpointVO:
         Oracle服务名serviceName。
 
         :param db_name: The db_name of this EndpointVO.
-        :type: str
+        :type db_name: str
         """
         self._db_name = db_name
 
@@ -937,7 +1012,7 @@ class EndpointVO:
         mrskafka topic名称。
 
         :param topic: The topic of this EndpointVO.
-        :type: str
+        :type topic: str
         """
         self._topic = topic
 
@@ -959,7 +1034,7 @@ class EndpointVO:
         MRSkafka是否开启kerberos认证 - 0非安全认证 - 1安全认证
 
         :param safe_mode: The safe_mode of this EndpointVO.
-        :type: int
+        :type safe_mode: int
         """
         self._safe_mode = safe_mode
 
@@ -969,7 +1044,7 @@ class EndpointVO:
 
 
         :return: The kerberos_vo of this EndpointVO.
-        :rtype: KerberosVO
+        :rtype: :class:`huaweicloudsdkdrs.v3.KerberosVO`
         """
         return self._kerberos_vo
 
@@ -979,7 +1054,7 @@ class EndpointVO:
 
 
         :param kerberos_vo: The kerberos_vo of this EndpointVO.
-        :type: KerberosVO
+        :type kerberos_vo: :class:`huaweicloudsdkdrs.v3.KerberosVO`
         """
         self._kerberos_vo = kerberos_vo
 
@@ -1001,7 +1076,7 @@ class EndpointVO:
         多写数据库Id。
 
         :param multi_write_db_id: The multi_write_db_id of this EndpointVO.
-        :type: str
+        :type multi_write_db_id: str
         """
         self._multi_write_db_id = multi_write_db_id
 

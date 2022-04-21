@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Login:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Login:
     }
 
     def __init__(self, ssh_key=None, user_password=None):
-        """Login - a model defined in huaweicloud sdk"""
+        """Login
+
+        The model defined in huaweicloud sdk
+
+        :param ssh_key: 选择密钥对方式登录时的密钥对名称。密钥对和密码登录方式二者必选其一。
+        :type ssh_key: str
+        :param user_password: 
+        :type user_password: :class:`huaweicloudsdkcce.v3.UserPassword`
+        """
         
         
 
@@ -63,7 +70,7 @@ class Login:
         选择密钥对方式登录时的密钥对名称。密钥对和密码登录方式二者必选其一。
 
         :param ssh_key: The ssh_key of this Login.
-        :type: str
+        :type ssh_key: str
         """
         self._ssh_key = ssh_key
 
@@ -73,7 +80,7 @@ class Login:
 
 
         :return: The user_password of this Login.
-        :rtype: UserPassword
+        :rtype: :class:`huaweicloudsdkcce.v3.UserPassword`
         """
         return self._user_password
 
@@ -83,7 +90,7 @@ class Login:
 
 
         :param user_password: The user_password of this Login.
-        :type: UserPassword
+        :type user_password: :class:`huaweicloudsdkcce.v3.UserPassword`
         """
         self._user_password = user_password
 

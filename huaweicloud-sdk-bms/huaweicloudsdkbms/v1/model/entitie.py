@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Entitie:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Entitie:
     }
 
     def __init__(self, server_id=None, nic_id=None):
-        """Entitie - a model defined in huaweicloud sdk"""
+        """Entitie
+
+        The model defined in huaweicloud sdk
+
+        :param server_id: 裸金属服务器相关操作显示server_id
+        :type server_id: str
+        :param nic_id: 网卡相关操作显示nic_id
+        :type nic_id: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class Entitie:
         裸金属服务器相关操作显示server_id
 
         :param server_id: The server_id of this Entitie.
-        :type: str
+        :type server_id: str
         """
         self._server_id = server_id
 
@@ -85,7 +92,7 @@ class Entitie:
         网卡相关操作显示nic_id
 
         :param nic_id: The nic_id of this Entitie.
-        :type: str
+        :type nic_id: str
         """
         self._nic_id = nic_id
 

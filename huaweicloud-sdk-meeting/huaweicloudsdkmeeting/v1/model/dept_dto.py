@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeptDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class DeptDTO:
     }
 
     def __init__(self, dept_code=None, dept_name=None, parent_dept_code=None, note=None, in_permission=None, out_permission=None, designated_out_dept_codes=None, sort_level=None):
-        """DeptDTO - a model defined in huaweicloud sdk"""
+        """DeptDTO
+
+        The model defined in huaweicloud sdk
+
+        :param dept_code: 部门编码，企业内唯一，若携带则以携带为准，不支持修改。 maxLength：32 
+        :type dept_code: str
+        :param dept_name: 部门名称 maxLength：128 minLength：1 
+        :type dept_name: str
+        :param parent_dept_code: 父部门编码,默认为根部门。 默认值：1： maxLength：32 
+        :type parent_dept_code: str
+        :param note: 备注 maxLength：96 minLength：0 
+        :type note: str
+        :param in_permission: 其他用户对该部门下用户的访问权限： - UNLIMITED：默认，不做限制 - OPEN：公开，其他部门都可访问（无论对方权限如何配置）
+        :type in_permission: str
+        :param out_permission: 该部门下用户访问权限控制 - UNLIMITED：不限制 - ONLY_SELF：仅能查询自己 - SELF_AND_CHILD_DEPARTMENT：该部门下用户能查询本部门及子部门通讯 - DESIGNATED_DEPARTMENT：该部门下用户能查询指定部门通讯录
+        :type out_permission: str
+        :param designated_out_dept_codes: 允许访问的部门列表,仅outPermission为DESIGNATED_DEPARTMENT时有效，最多支持配置150
+        :type designated_out_dept_codes: list[str]
+        :param sort_level: 部门排序号，序号越小,部门排序越靠前 minimum: 1 maximum: 10000
+        :type sort_level: int
+        """
         
         
 
@@ -92,7 +111,7 @@ class DeptDTO:
         部门编码，企业内唯一，若携带则以携带为准，不支持修改。 maxLength：32 
 
         :param dept_code: The dept_code of this DeptDTO.
-        :type: str
+        :type dept_code: str
         """
         self._dept_code = dept_code
 
@@ -114,7 +133,7 @@ class DeptDTO:
         部门名称 maxLength：128 minLength：1 
 
         :param dept_name: The dept_name of this DeptDTO.
-        :type: str
+        :type dept_name: str
         """
         self._dept_name = dept_name
 
@@ -136,7 +155,7 @@ class DeptDTO:
         父部门编码,默认为根部门。 默认值：1： maxLength：32 
 
         :param parent_dept_code: The parent_dept_code of this DeptDTO.
-        :type: str
+        :type parent_dept_code: str
         """
         self._parent_dept_code = parent_dept_code
 
@@ -158,7 +177,7 @@ class DeptDTO:
         备注 maxLength：96 minLength：0 
 
         :param note: The note of this DeptDTO.
-        :type: str
+        :type note: str
         """
         self._note = note
 
@@ -180,7 +199,7 @@ class DeptDTO:
         其他用户对该部门下用户的访问权限： - UNLIMITED：默认，不做限制 - OPEN：公开，其他部门都可访问（无论对方权限如何配置）
 
         :param in_permission: The in_permission of this DeptDTO.
-        :type: str
+        :type in_permission: str
         """
         self._in_permission = in_permission
 
@@ -202,7 +221,7 @@ class DeptDTO:
         该部门下用户访问权限控制 - UNLIMITED：不限制 - ONLY_SELF：仅能查询自己 - SELF_AND_CHILD_DEPARTMENT：该部门下用户能查询本部门及子部门通讯 - DESIGNATED_DEPARTMENT：该部门下用户能查询指定部门通讯录
 
         :param out_permission: The out_permission of this DeptDTO.
-        :type: str
+        :type out_permission: str
         """
         self._out_permission = out_permission
 
@@ -224,7 +243,7 @@ class DeptDTO:
         允许访问的部门列表,仅outPermission为DESIGNATED_DEPARTMENT时有效，最多支持配置150
 
         :param designated_out_dept_codes: The designated_out_dept_codes of this DeptDTO.
-        :type: list[str]
+        :type designated_out_dept_codes: list[str]
         """
         self._designated_out_dept_codes = designated_out_dept_codes
 
@@ -246,7 +265,7 @@ class DeptDTO:
         部门排序号，序号越小,部门排序越靠前 minimum: 1 maximum: 10000
 
         :param sort_level: The sort_level of this DeptDTO.
-        :type: int
+        :type sort_level: int
         """
         self._sort_level = sort_level
 

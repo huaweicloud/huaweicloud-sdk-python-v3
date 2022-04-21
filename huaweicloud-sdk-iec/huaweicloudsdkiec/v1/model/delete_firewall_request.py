@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteFirewallRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteFirewallRequest:
     }
 
     def __init__(self, firewall_id=None):
-        """DeleteFirewallRequest - a model defined in huaweicloud sdk"""
+        """DeleteFirewallRequest
+
+        The model defined in huaweicloud sdk
+
+        :param firewall_id: 网络ACL ID
+        :type firewall_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteFirewallRequest:
         网络ACL ID
 
         :param firewall_id: The firewall_id of this DeleteFirewallRequest.
-        :type: str
+        :type firewall_id: str
         """
         self._firewall_id = firewall_id
 

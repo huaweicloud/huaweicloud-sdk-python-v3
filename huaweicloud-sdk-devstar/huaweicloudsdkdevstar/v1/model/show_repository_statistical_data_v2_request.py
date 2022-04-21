@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowRepositoryStatisticalDataV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowRepositoryStatisticalDataV2Request:
     }
 
     def __init__(self, x_language=None, repository_id=None):
-        """ShowRepositoryStatisticalDataV2Request - a model defined in huaweicloud sdk"""
+        """ShowRepositoryStatisticalDataV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言类型 中文:zh-cn 英文:en-us
+        :type x_language: str
+        :param repository_id: 代码仓库id
+        :type repository_id: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ShowRepositoryStatisticalDataV2Request:
         语言类型 中文:zh-cn 英文:en-us
 
         :param x_language: The x_language of this ShowRepositoryStatisticalDataV2Request.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -84,7 +91,7 @@ class ShowRepositoryStatisticalDataV2Request:
         代码仓库id
 
         :param repository_id: The repository_id of this ShowRepositoryStatisticalDataV2Request.
-        :type: str
+        :type repository_id: str
         """
         self._repository_id = repository_id
 

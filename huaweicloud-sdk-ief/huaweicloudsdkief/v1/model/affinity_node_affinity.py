@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AffinityNodeAffinity:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AffinityNodeAffinity:
     }
 
     def __init__(self, preferred_during_scheduling_ignored_during_execution=None, required_during_scheduling_ignored_during_execution=None):
-        """AffinityNodeAffinity - a model defined in huaweicloud sdk"""
+        """AffinityNodeAffinity
+
+        The model defined in huaweicloud sdk
+
+        :param preferred_during_scheduling_ignored_during_execution: 优先使用定义的规则调度，且不会影响已经在节点上运行的Pod。即优先选择调度到满足规则的节点，但也可能会调度到不满足规则的节点。
+        :type preferred_during_scheduling_ignored_during_execution: list[:class:`huaweicloudsdkief.v1.PreferredSchedulingTerm`]
+        :param required_during_scheduling_ignored_during_execution: 
+        :type required_during_scheduling_ignored_during_execution: :class:`huaweicloudsdkief.v1.RequiredDuringScheduling`
+        """
         
         
 
@@ -52,7 +59,7 @@ class AffinityNodeAffinity:
         优先使用定义的规则调度，且不会影响已经在节点上运行的Pod。即优先选择调度到满足规则的节点，但也可能会调度到不满足规则的节点。
 
         :return: The preferred_during_scheduling_ignored_during_execution of this AffinityNodeAffinity.
-        :rtype: list[PreferredSchedulingTerm]
+        :rtype: list[:class:`huaweicloudsdkief.v1.PreferredSchedulingTerm`]
         """
         return self._preferred_during_scheduling_ignored_during_execution
 
@@ -63,7 +70,7 @@ class AffinityNodeAffinity:
         优先使用定义的规则调度，且不会影响已经在节点上运行的Pod。即优先选择调度到满足规则的节点，但也可能会调度到不满足规则的节点。
 
         :param preferred_during_scheduling_ignored_during_execution: The preferred_during_scheduling_ignored_during_execution of this AffinityNodeAffinity.
-        :type: list[PreferredSchedulingTerm]
+        :type preferred_during_scheduling_ignored_during_execution: list[:class:`huaweicloudsdkief.v1.PreferredSchedulingTerm`]
         """
         self._preferred_during_scheduling_ignored_during_execution = preferred_during_scheduling_ignored_during_execution
 
@@ -73,7 +80,7 @@ class AffinityNodeAffinity:
 
 
         :return: The required_during_scheduling_ignored_during_execution of this AffinityNodeAffinity.
-        :rtype: RequiredDuringScheduling
+        :rtype: :class:`huaweicloudsdkief.v1.RequiredDuringScheduling`
         """
         return self._required_during_scheduling_ignored_during_execution
 
@@ -83,7 +90,7 @@ class AffinityNodeAffinity:
 
 
         :param required_during_scheduling_ignored_during_execution: The required_during_scheduling_ignored_during_execution of this AffinityNodeAffinity.
-        :type: RequiredDuringScheduling
+        :type required_during_scheduling_ignored_during_execution: :class:`huaweicloudsdkief.v1.RequiredDuringScheduling`
         """
         self._required_during_scheduling_ignored_during_execution = required_during_scheduling_ignored_during_execution
 

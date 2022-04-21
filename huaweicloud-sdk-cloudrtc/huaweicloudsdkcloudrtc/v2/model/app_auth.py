@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AppAuth:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class AppAuth:
     }
 
     def __init__(self, enable=None, expire=None, app_key=None, update_time=None):
-        """AppAuth - a model defined in huaweicloud sdk"""
+        """AppAuth
+
+        The model defined in huaweicloud sdk
+
+        :param enable: 开启或关闭URL鉴权
+        :type enable: bool
+        :param expire: 接入RTC建链认证时的signature的有效期。单位：秒。默认300秒。signature由app_key生成 
+        :type expire: int
+        :param app_key: app鉴权秘钥
+        :type app_key: str
+        :param update_time: app鉴权的更新时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
+        :type update_time: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class AppAuth:
         开启或关闭URL鉴权
 
         :param enable: The enable of this AppAuth.
-        :type: bool
+        :type enable: bool
         """
         self._enable = enable
 
@@ -95,7 +106,7 @@ class AppAuth:
         接入RTC建链认证时的signature的有效期。单位：秒。默认300秒。signature由app_key生成 
 
         :param expire: The expire of this AppAuth.
-        :type: int
+        :type expire: int
         """
         self._expire = expire
 
@@ -117,7 +128,7 @@ class AppAuth:
         app鉴权秘钥
 
         :param app_key: The app_key of this AppAuth.
-        :type: str
+        :type app_key: str
         """
         self._app_key = app_key
 
@@ -139,7 +150,7 @@ class AppAuth:
         app鉴权的更新时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
 
         :param update_time: The update_time of this AppAuth.
-        :type: str
+        :type update_time: str
         """
         self._update_time = update_time
 

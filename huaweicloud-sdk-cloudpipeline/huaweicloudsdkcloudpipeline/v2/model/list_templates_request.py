@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTemplatesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ListTemplatesRequest:
     }
 
     def __init__(self, x_language=None, template_type=None, is_build_in=None, offset=None, limit=None, name=None, sort=None, asc=None):
-        """ListTemplatesRequest - a model defined in huaweicloud sdk"""
+        """ListTemplatesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言类型 中文:zh-cn 英文:en-us，默认en-us
+        :type x_language: str
+        :param template_type: 模板类型
+        :type template_type: str
+        :param is_build_in: 是否内置模板
+        :type is_build_in: str
+        :param offset: 偏移量,表示从此偏移量开始查询,offset大于等于0
+        :type offset: int
+        :param limit: 每页显示的条目数量
+        :type limit: int
+        :param name: 模板名称，匹配规则为模糊匹配
+        :type name: str
+        :param sort: 排序字段
+        :type sort: str
+        :param asc: 是否正序
+        :type asc: str
+        """
         
         
 
@@ -91,7 +110,7 @@ class ListTemplatesRequest:
         语言类型 中文:zh-cn 英文:en-us，默认en-us
 
         :param x_language: The x_language of this ListTemplatesRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -113,7 +132,7 @@ class ListTemplatesRequest:
         模板类型
 
         :param template_type: The template_type of this ListTemplatesRequest.
-        :type: str
+        :type template_type: str
         """
         self._template_type = template_type
 
@@ -135,7 +154,7 @@ class ListTemplatesRequest:
         是否内置模板
 
         :param is_build_in: The is_build_in of this ListTemplatesRequest.
-        :type: str
+        :type is_build_in: str
         """
         self._is_build_in = is_build_in
 
@@ -157,7 +176,7 @@ class ListTemplatesRequest:
         偏移量,表示从此偏移量开始查询,offset大于等于0
 
         :param offset: The offset of this ListTemplatesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -179,7 +198,7 @@ class ListTemplatesRequest:
         每页显示的条目数量
 
         :param limit: The limit of this ListTemplatesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -201,7 +220,7 @@ class ListTemplatesRequest:
         模板名称，匹配规则为模糊匹配
 
         :param name: The name of this ListTemplatesRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -223,7 +242,7 @@ class ListTemplatesRequest:
         排序字段
 
         :param sort: The sort of this ListTemplatesRequest.
-        :type: str
+        :type sort: str
         """
         self._sort = sort
 
@@ -245,7 +264,7 @@ class ListTemplatesRequest:
         是否正序
 
         :param asc: The asc of this ListTemplatesRequest.
-        :type: str
+        :type asc: str
         """
         self._asc = asc
 

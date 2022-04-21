@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowNewTaskStatusResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowNewTaskStatusResponse(SdkResponse):
     }
 
     def __init__(self, task_status=None, task_msg=None):
-        """ShowNewTaskStatusResponse - a model defined in huaweicloud sdk"""
+        """ShowNewTaskStatusResponse
+
+        The model defined in huaweicloud sdk
+
+        :param task_status: 任务状态，有以下几种： - success - failed - waiting - running - preprocess - ready
+        :type task_status: str
+        :param task_msg: 任务的附加信息
+        :type task_msg: str
+        """
         
         super(ShowNewTaskStatusResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ShowNewTaskStatusResponse(SdkResponse):
         任务状态，有以下几种： - success - failed - waiting - running - preprocess - ready
 
         :param task_status: The task_status of this ShowNewTaskStatusResponse.
-        :type: str
+        :type task_status: str
         """
         self._task_status = task_status
 
@@ -85,7 +92,7 @@ class ShowNewTaskStatusResponse(SdkResponse):
         任务的附加信息
 
         :param task_msg: The task_msg of this ShowNewTaskStatusResponse.
-        :type: str
+        :type task_msg: str
         """
         self._task_msg = task_msg
 

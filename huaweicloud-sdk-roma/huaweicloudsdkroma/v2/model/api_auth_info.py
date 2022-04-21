@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApiAuthInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -72,7 +71,55 @@ class ApiAuthInfo:
     }
 
     def __init__(self, id=None, api_id=None, api_name=None, group_name=None, api_type=None, api_remark=None, env_id=None, auth_role=None, auth_time=None, app_name=None, app_remark=None, app_type=None, app_creator=None, publish_id=None, group_id=None, auth_tunnel=None, auth_whitelist=None, auth_blacklist=None, visit_param=None, roma_app_type=None, env_name=None, app_id=None):
-        """ApiAuthInfo - a model defined in huaweicloud sdk"""
+        """ApiAuthInfo
+
+        The model defined in huaweicloud sdk
+
+        :param id: 授权关系编号
+        :type id: str
+        :param api_id: API的编号
+        :type api_id: str
+        :param api_name: API的名称
+        :type api_name: str
+        :param group_name: API绑定的分组名称
+        :type group_name: str
+        :param api_type: API类型
+        :type api_type: int
+        :param api_remark: API的描述信息
+        :type api_remark: str
+        :param env_id: api授权绑定的环境ID
+        :type env_id: str
+        :param auth_role: 授权者
+        :type auth_role: str
+        :param auth_time: 授权创建的时间
+        :type auth_time: datetime
+        :param app_name: APP的名称
+        :type app_name: str
+        :param app_remark: APP的描述
+        :type app_remark: str
+        :param app_type: APP的类型： - apig：存量apic客户端，新建实例不支持此类型 - roma：roma集成客户端
+        :type app_type: str
+        :param app_creator: APP的创建者，取值如下： - USER：租户自己创建 - MARKET：API市场分配，暂不支持
+        :type app_creator: str
+        :param publish_id: API的发布编号
+        :type publish_id: str
+        :param group_id: API绑定的分组ID
+        :type group_id: str
+        :param auth_tunnel: 授权通道类型 - NORMAL：普通通道 - GREEN：绿色通道
+        :type auth_tunnel: str
+        :param auth_whitelist: 绿色通道的白名单配置
+        :type auth_whitelist: list[str]
+        :param auth_blacklist: 绿色通道的黑名单配置
+        :type auth_blacklist: list[str]
+        :param visit_param: 访问参数。
+        :type visit_param: str
+        :param roma_app_type: ROMA_APP的类型： - subscription：订阅应用 - integration：集成应用
+        :type roma_app_type: str
+        :param env_name: api授权绑定的环境名称
+        :type env_name: str
+        :param app_id: APP的编号
+        :type app_id: str
+        """
         
         
 
@@ -163,7 +210,7 @@ class ApiAuthInfo:
         授权关系编号
 
         :param id: The id of this ApiAuthInfo.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -185,7 +232,7 @@ class ApiAuthInfo:
         API的编号
 
         :param api_id: The api_id of this ApiAuthInfo.
-        :type: str
+        :type api_id: str
         """
         self._api_id = api_id
 
@@ -207,7 +254,7 @@ class ApiAuthInfo:
         API的名称
 
         :param api_name: The api_name of this ApiAuthInfo.
-        :type: str
+        :type api_name: str
         """
         self._api_name = api_name
 
@@ -229,7 +276,7 @@ class ApiAuthInfo:
         API绑定的分组名称
 
         :param group_name: The group_name of this ApiAuthInfo.
-        :type: str
+        :type group_name: str
         """
         self._group_name = group_name
 
@@ -251,7 +298,7 @@ class ApiAuthInfo:
         API类型
 
         :param api_type: The api_type of this ApiAuthInfo.
-        :type: int
+        :type api_type: int
         """
         self._api_type = api_type
 
@@ -273,7 +320,7 @@ class ApiAuthInfo:
         API的描述信息
 
         :param api_remark: The api_remark of this ApiAuthInfo.
-        :type: str
+        :type api_remark: str
         """
         self._api_remark = api_remark
 
@@ -295,7 +342,7 @@ class ApiAuthInfo:
         api授权绑定的环境ID
 
         :param env_id: The env_id of this ApiAuthInfo.
-        :type: str
+        :type env_id: str
         """
         self._env_id = env_id
 
@@ -317,7 +364,7 @@ class ApiAuthInfo:
         授权者
 
         :param auth_role: The auth_role of this ApiAuthInfo.
-        :type: str
+        :type auth_role: str
         """
         self._auth_role = auth_role
 
@@ -339,7 +386,7 @@ class ApiAuthInfo:
         授权创建的时间
 
         :param auth_time: The auth_time of this ApiAuthInfo.
-        :type: datetime
+        :type auth_time: datetime
         """
         self._auth_time = auth_time
 
@@ -361,7 +408,7 @@ class ApiAuthInfo:
         APP的名称
 
         :param app_name: The app_name of this ApiAuthInfo.
-        :type: str
+        :type app_name: str
         """
         self._app_name = app_name
 
@@ -383,7 +430,7 @@ class ApiAuthInfo:
         APP的描述
 
         :param app_remark: The app_remark of this ApiAuthInfo.
-        :type: str
+        :type app_remark: str
         """
         self._app_remark = app_remark
 
@@ -405,7 +452,7 @@ class ApiAuthInfo:
         APP的类型： - apig：存量apic客户端，新建实例不支持此类型 - roma：roma集成客户端
 
         :param app_type: The app_type of this ApiAuthInfo.
-        :type: str
+        :type app_type: str
         """
         self._app_type = app_type
 
@@ -427,7 +474,7 @@ class ApiAuthInfo:
         APP的创建者，取值如下： - USER：租户自己创建 - MARKET：API市场分配，暂不支持
 
         :param app_creator: The app_creator of this ApiAuthInfo.
-        :type: str
+        :type app_creator: str
         """
         self._app_creator = app_creator
 
@@ -449,7 +496,7 @@ class ApiAuthInfo:
         API的发布编号
 
         :param publish_id: The publish_id of this ApiAuthInfo.
-        :type: str
+        :type publish_id: str
         """
         self._publish_id = publish_id
 
@@ -471,7 +518,7 @@ class ApiAuthInfo:
         API绑定的分组ID
 
         :param group_id: The group_id of this ApiAuthInfo.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -493,7 +540,7 @@ class ApiAuthInfo:
         授权通道类型 - NORMAL：普通通道 - GREEN：绿色通道
 
         :param auth_tunnel: The auth_tunnel of this ApiAuthInfo.
-        :type: str
+        :type auth_tunnel: str
         """
         self._auth_tunnel = auth_tunnel
 
@@ -515,7 +562,7 @@ class ApiAuthInfo:
         绿色通道的白名单配置
 
         :param auth_whitelist: The auth_whitelist of this ApiAuthInfo.
-        :type: list[str]
+        :type auth_whitelist: list[str]
         """
         self._auth_whitelist = auth_whitelist
 
@@ -537,7 +584,7 @@ class ApiAuthInfo:
         绿色通道的黑名单配置
 
         :param auth_blacklist: The auth_blacklist of this ApiAuthInfo.
-        :type: list[str]
+        :type auth_blacklist: list[str]
         """
         self._auth_blacklist = auth_blacklist
 
@@ -559,7 +606,7 @@ class ApiAuthInfo:
         访问参数。
 
         :param visit_param: The visit_param of this ApiAuthInfo.
-        :type: str
+        :type visit_param: str
         """
         self._visit_param = visit_param
 
@@ -581,7 +628,7 @@ class ApiAuthInfo:
         ROMA_APP的类型： - subscription：订阅应用 - integration：集成应用
 
         :param roma_app_type: The roma_app_type of this ApiAuthInfo.
-        :type: str
+        :type roma_app_type: str
         """
         self._roma_app_type = roma_app_type
 
@@ -603,7 +650,7 @@ class ApiAuthInfo:
         api授权绑定的环境名称
 
         :param env_name: The env_name of this ApiAuthInfo.
-        :type: str
+        :type env_name: str
         """
         self._env_name = env_name
 
@@ -625,7 +672,7 @@ class ApiAuthInfo:
         APP的编号
 
         :param app_id: The app_id of this ApiAuthInfo.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 

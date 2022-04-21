@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExtraDhcpOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ExtraDhcpOption:
     }
 
     def __init__(self, opt_name=None, opt_value=None):
-        """ExtraDhcpOption - a model defined in huaweicloud sdk"""
+        """ExtraDhcpOption
+
+        The model defined in huaweicloud sdk
+
+        :param opt_name: 功能说明：子网配置的NTP地址名称 约束：目前只支持字段“ntp”
+        :type opt_name: str
+        :param opt_value: 功能说明：子网配置的NTP地址 约束：目前只支持IPv4地址，每个IP地址以逗号隔开，IP地址个数不能超过4个，不能存在相同地址。该字段为null表示取消该子网NTP的设置，不能为””(空字符串)。
+        :type opt_value: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ExtraDhcpOption:
         功能说明：子网配置的NTP地址名称 约束：目前只支持字段“ntp”
 
         :param opt_name: The opt_name of this ExtraDhcpOption.
-        :type: str
+        :type opt_name: str
         """
         self._opt_name = opt_name
 
@@ -84,7 +91,7 @@ class ExtraDhcpOption:
         功能说明：子网配置的NTP地址 约束：目前只支持IPv4地址，每个IP地址以逗号隔开，IP地址个数不能超过4个，不能存在相同地址。该字段为null表示取消该子网NTP的设置，不能为””(空字符串)。
 
         :param opt_value: The opt_value of this ExtraDhcpOption.
-        :type: str
+        :type opt_value: str
         """
         self._opt_value = opt_value
 

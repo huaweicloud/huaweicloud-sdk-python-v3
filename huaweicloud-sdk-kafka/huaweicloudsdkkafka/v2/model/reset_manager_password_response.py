@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResetManagerPasswordResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class ResetManagerPasswordResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ResetManagerPasswordResponse - a model defined in huaweicloud sdk"""
+        """ResetManagerPasswordResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(ResetManagerPasswordResponse, self).__init__()
         self.discriminator = None

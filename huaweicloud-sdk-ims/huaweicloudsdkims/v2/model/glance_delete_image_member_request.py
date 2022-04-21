@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GlanceDeleteImageMemberRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class GlanceDeleteImageMemberRequest:
     }
 
     def __init__(self, image_id=None, member_id=None):
-        """GlanceDeleteImageMemberRequest - a model defined in huaweicloud sdk"""
+        """GlanceDeleteImageMemberRequest
+
+        The model defined in huaweicloud sdk
+
+        :param image_id: 镜像id
+        :type image_id: str
+        :param member_id: 成员id
+        :type member_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class GlanceDeleteImageMemberRequest:
         镜像id
 
         :param image_id: The image_id of this GlanceDeleteImageMemberRequest.
-        :type: str
+        :type image_id: str
         """
         self._image_id = image_id
 
@@ -83,7 +90,7 @@ class GlanceDeleteImageMemberRequest:
         成员id
 
         :param member_id: The member_id of this GlanceDeleteImageMemberRequest.
-        :type: str
+        :type member_id: str
         """
         self._member_id = member_id
 

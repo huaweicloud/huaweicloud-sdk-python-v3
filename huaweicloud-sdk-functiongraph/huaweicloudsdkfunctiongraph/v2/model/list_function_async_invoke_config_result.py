@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListFunctionAsyncInvokeConfigResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListFunctionAsyncInvokeConfigResult:
     }
 
     def __init__(self, func_urn=None, max_async_event_age_in_seconds=None, max_async_retry_attempts=None, destination_config=None, created_time=None, last_modified=None):
-        """ListFunctionAsyncInvokeConfigResult - a model defined in huaweicloud sdk"""
+        """ListFunctionAsyncInvokeConfigResult
+
+        The model defined in huaweicloud sdk
+
+        :param func_urn: 函数URN。
+        :type func_urn: str
+        :param max_async_event_age_in_seconds: 消息最大存活时长，取值范围[60，86400]。单位：秒。
+        :type max_async_event_age_in_seconds: int
+        :param max_async_retry_attempts: 异步调用失败后的最大重试次数，默认值为3。取值范围[0，8]。
+        :type max_async_retry_attempts: int
+        :param destination_config: 
+        :type destination_config: :class:`huaweicloudsdkfunctiongraph.v2.FuncAsyncDestinationConfig`
+        :param created_time: 异步调用配置的创建时间。
+        :type created_time: str
+        :param last_modified: 异步调用配置的最后更改时间。
+        :type last_modified: str
+        """
         
         
 
@@ -79,7 +94,7 @@ class ListFunctionAsyncInvokeConfigResult:
         函数URN。
 
         :param func_urn: The func_urn of this ListFunctionAsyncInvokeConfigResult.
-        :type: str
+        :type func_urn: str
         """
         self._func_urn = func_urn
 
@@ -101,7 +116,7 @@ class ListFunctionAsyncInvokeConfigResult:
         消息最大存活时长，取值范围[60，86400]。单位：秒。
 
         :param max_async_event_age_in_seconds: The max_async_event_age_in_seconds of this ListFunctionAsyncInvokeConfigResult.
-        :type: int
+        :type max_async_event_age_in_seconds: int
         """
         self._max_async_event_age_in_seconds = max_async_event_age_in_seconds
 
@@ -123,7 +138,7 @@ class ListFunctionAsyncInvokeConfigResult:
         异步调用失败后的最大重试次数，默认值为3。取值范围[0，8]。
 
         :param max_async_retry_attempts: The max_async_retry_attempts of this ListFunctionAsyncInvokeConfigResult.
-        :type: int
+        :type max_async_retry_attempts: int
         """
         self._max_async_retry_attempts = max_async_retry_attempts
 
@@ -133,7 +148,7 @@ class ListFunctionAsyncInvokeConfigResult:
 
 
         :return: The destination_config of this ListFunctionAsyncInvokeConfigResult.
-        :rtype: FuncAsyncDestinationConfig
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.FuncAsyncDestinationConfig`
         """
         return self._destination_config
 
@@ -143,7 +158,7 @@ class ListFunctionAsyncInvokeConfigResult:
 
 
         :param destination_config: The destination_config of this ListFunctionAsyncInvokeConfigResult.
-        :type: FuncAsyncDestinationConfig
+        :type destination_config: :class:`huaweicloudsdkfunctiongraph.v2.FuncAsyncDestinationConfig`
         """
         self._destination_config = destination_config
 
@@ -165,7 +180,7 @@ class ListFunctionAsyncInvokeConfigResult:
         异步调用配置的创建时间。
 
         :param created_time: The created_time of this ListFunctionAsyncInvokeConfigResult.
-        :type: str
+        :type created_time: str
         """
         self._created_time = created_time
 
@@ -187,7 +202,7 @@ class ListFunctionAsyncInvokeConfigResult:
         异步调用配置的最后更改时间。
 
         :param last_modified: The last_modified of this ListFunctionAsyncInvokeConfigResult.
-        :type: str
+        :type last_modified: str
         """
         self._last_modified = last_modified
 

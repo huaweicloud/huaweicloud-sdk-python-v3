@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateNatGatewaySnatRuleOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateNatGatewaySnatRuleOption:
     }
 
     def __init__(self, nat_gateway_id=None, public_ip_address=None, description=None):
-        """UpdateNatGatewaySnatRuleOption - a model defined in huaweicloud sdk"""
+        """UpdateNatGatewaySnatRuleOption
+
+        The model defined in huaweicloud sdk
+
+        :param nat_gateway_id: 公网NAT网关的id。
+        :type nat_gateway_id: str
+        :param public_ip_address: 功能说明：弹性公网IP，多个弹性公网IP使用逗号分隔。 取值范围：最大长度1024字节。 约束：弹性公网IP的id个数不能超过20个 
+        :type public_ip_address: str
+        :param description: SNAT规则的描述，长度限制为255。
+        :type description: str
+        """
         
         
 
@@ -67,7 +76,7 @@ class UpdateNatGatewaySnatRuleOption:
         公网NAT网关的id。
 
         :param nat_gateway_id: The nat_gateway_id of this UpdateNatGatewaySnatRuleOption.
-        :type: str
+        :type nat_gateway_id: str
         """
         self._nat_gateway_id = nat_gateway_id
 
@@ -89,7 +98,7 @@ class UpdateNatGatewaySnatRuleOption:
         功能说明：弹性公网IP，多个弹性公网IP使用逗号分隔。 取值范围：最大长度1024字节。 约束：弹性公网IP的id个数不能超过20个 
 
         :param public_ip_address: The public_ip_address of this UpdateNatGatewaySnatRuleOption.
-        :type: str
+        :type public_ip_address: str
         """
         self._public_ip_address = public_ip_address
 
@@ -111,7 +120,7 @@ class UpdateNatGatewaySnatRuleOption:
         SNAT规则的描述，长度限制为255。
 
         :param description: The description of this UpdateNatGatewaySnatRuleOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteServerGroupMemberRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteServerGroupMemberRequestBody:
     }
 
     def __init__(self, remove_member=None):
-        """DeleteServerGroupMemberRequestBody - a model defined in huaweicloud sdk"""
+        """DeleteServerGroupMemberRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param remove_member: 
+        :type remove_member: :class:`huaweicloudsdkecs.v2.ServerGroupMember`
+        """
         
         
 
@@ -45,7 +50,7 @@ class DeleteServerGroupMemberRequestBody:
 
 
         :return: The remove_member of this DeleteServerGroupMemberRequestBody.
-        :rtype: ServerGroupMember
+        :rtype: :class:`huaweicloudsdkecs.v2.ServerGroupMember`
         """
         return self._remove_member
 
@@ -55,7 +60,7 @@ class DeleteServerGroupMemberRequestBody:
 
 
         :param remove_member: The remove_member of this DeleteServerGroupMemberRequestBody.
-        :type: ServerGroupMember
+        :type remove_member: :class:`huaweicloudsdkecs.v2.ServerGroupMember`
         """
         self._remove_member = remove_member
 

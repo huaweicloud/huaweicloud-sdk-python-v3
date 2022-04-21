@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ImportDataResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ImportDataResponse(SdkResponse):
     }
 
     def __init__(self, table_id=None, job_id=None, run_id=None):
-        """ImportDataResponse - a model defined in huaweicloud sdk"""
+        """ImportDataResponse
+
+        The model defined in huaweicloud sdk
+
+        :param table_id: 表ID。
+        :type table_id: str
+        :param job_id: 作业ID。
+        :type job_id: str
+        :param run_id: 作业运行ID。
+        :type run_id: str
+        """
         
         super(ImportDataResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ImportDataResponse(SdkResponse):
         表ID。
 
         :param table_id: The table_id of this ImportDataResponse.
-        :type: str
+        :type table_id: str
         """
         self._table_id = table_id
 
@@ -90,7 +99,7 @@ class ImportDataResponse(SdkResponse):
         作业ID。
 
         :param job_id: The job_id of this ImportDataResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -112,7 +121,7 @@ class ImportDataResponse(SdkResponse):
         作业运行ID。
 
         :param run_id: The run_id of this ImportDataResponse.
-        :type: str
+        :type run_id: str
         """
         self._run_id = run_id
 

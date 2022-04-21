@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TaskBasicRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class TaskBasicRequestBody:
     }
 
     def __init__(self, task_name=None, task_type=None, source_datasource_id=None, target_datasource_id=None, description=None, task_tag=None):
-        """TaskBasicRequestBody - a model defined in huaweicloud sdk"""
+        """TaskBasicRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param task_name: 任务名称，只能以字母、数字为开头，包含字母、数字和 . _ -  3~100个字符
+        :type task_name: str
+        :param task_type: 任务类型 - REALTIME (实时) - TIMING (定时)
+        :type task_type: str
+        :param source_datasource_id: 源端数据源ID
+        :type source_datasource_id: str
+        :param target_datasource_id: 目标端数据源ID
+        :type target_datasource_id: str
+        :param description: 描述信息
+        :type description: str
+        :param task_tag: 任务标签,只能包含字母、数字、中划线、下划线
+        :type task_tag: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class TaskBasicRequestBody:
         任务名称，只能以字母、数字为开头，包含字母、数字和 . _ -  3~100个字符
 
         :param task_name: The task_name of this TaskBasicRequestBody.
-        :type: str
+        :type task_name: str
         """
         self._task_name = task_name
 
@@ -105,7 +120,7 @@ class TaskBasicRequestBody:
         任务类型 - REALTIME (实时) - TIMING (定时)
 
         :param task_type: The task_type of this TaskBasicRequestBody.
-        :type: str
+        :type task_type: str
         """
         self._task_type = task_type
 
@@ -127,7 +142,7 @@ class TaskBasicRequestBody:
         源端数据源ID
 
         :param source_datasource_id: The source_datasource_id of this TaskBasicRequestBody.
-        :type: str
+        :type source_datasource_id: str
         """
         self._source_datasource_id = source_datasource_id
 
@@ -149,7 +164,7 @@ class TaskBasicRequestBody:
         目标端数据源ID
 
         :param target_datasource_id: The target_datasource_id of this TaskBasicRequestBody.
-        :type: str
+        :type target_datasource_id: str
         """
         self._target_datasource_id = target_datasource_id
 
@@ -171,7 +186,7 @@ class TaskBasicRequestBody:
         描述信息
 
         :param description: The description of this TaskBasicRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -193,7 +208,7 @@ class TaskBasicRequestBody:
         任务标签,只能包含字母、数字、中划线、下划线
 
         :param task_tag: The task_tag of this TaskBasicRequestBody.
-        :type: str
+        :type task_tag: str
         """
         self._task_tag = task_tag
 

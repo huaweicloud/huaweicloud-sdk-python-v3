@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateTranscodingsTemplateRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateTranscodingsTemplateRequest:
     }
 
     def __init__(self, body=None):
-        """CreateTranscodingsTemplateRequest - a model defined in huaweicloud sdk"""
+        """CreateTranscodingsTemplateRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateTranscodingsTemplateRequest
+        :type body: :class:`huaweicloudsdklive.v1.StreamTranscodingTemplate`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateTranscodingsTemplateRequest:
 
 
         :return: The body of this CreateTranscodingsTemplateRequest.
-        :rtype: StreamTranscodingTemplate
+        :rtype: :class:`huaweicloudsdklive.v1.StreamTranscodingTemplate`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateTranscodingsTemplateRequest:
 
 
         :param body: The body of this CreateTranscodingsTemplateRequest.
-        :type: StreamTranscodingTemplate
+        :type body: :class:`huaweicloudsdklive.v1.StreamTranscodingTemplate`
         """
         self._body = body
 

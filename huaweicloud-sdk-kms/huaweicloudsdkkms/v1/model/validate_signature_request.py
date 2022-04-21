@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ValidateSignatureRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ValidateSignatureRequest:
     }
 
     def __init__(self, version_id=None, body=None):
-        """ValidateSignatureRequest - a model defined in huaweicloud sdk"""
+        """ValidateSignatureRequest
+
+        The model defined in huaweicloud sdk
+
+        :param version_id: API版本号
+        :type version_id: str
+        :param body: Body of the ValidateSignatureRequest
+        :type body: :class:`huaweicloudsdkkms.v1.VerifyRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class ValidateSignatureRequest:
         API版本号
 
         :param version_id: The version_id of this ValidateSignatureRequest.
-        :type: str
+        :type version_id: str
         """
         self._version_id = version_id
 
@@ -72,7 +79,7 @@ class ValidateSignatureRequest:
 
 
         :return: The body of this ValidateSignatureRequest.
-        :rtype: VerifyRequestBody
+        :rtype: :class:`huaweicloudsdkkms.v1.VerifyRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class ValidateSignatureRequest:
 
 
         :param body: The body of this ValidateSignatureRequest.
-        :type: VerifyRequestBody
+        :type body: :class:`huaweicloudsdkkms.v1.VerifyRequestBody`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListBlockchainsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListBlockchainsResponse(SdkResponse):
     }
 
     def __init__(self, blockchains=None, count=None):
-        """ListBlockchainsResponse - a model defined in huaweicloud sdk"""
+        """ListBlockchainsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param blockchains: 服务实例简要信息
+        :type blockchains: list[:class:`huaweicloudsdkbcs.v2.BlockchainInfo`]
+        :param count: 实例总数
+        :type count: int
+        """
         
         super(ListBlockchainsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListBlockchainsResponse(SdkResponse):
         服务实例简要信息
 
         :return: The blockchains of this ListBlockchainsResponse.
-        :rtype: list[BlockchainInfo]
+        :rtype: list[:class:`huaweicloudsdkbcs.v2.BlockchainInfo`]
         """
         return self._blockchains
 
@@ -63,7 +70,7 @@ class ListBlockchainsResponse(SdkResponse):
         服务实例简要信息
 
         :param blockchains: The blockchains of this ListBlockchainsResponse.
-        :type: list[BlockchainInfo]
+        :type blockchains: list[:class:`huaweicloudsdkbcs.v2.BlockchainInfo`]
         """
         self._blockchains = blockchains
 
@@ -85,7 +92,7 @@ class ListBlockchainsResponse(SdkResponse):
         实例总数
 
         :param count: The count of this ListBlockchainsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

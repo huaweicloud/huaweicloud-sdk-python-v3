@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowTasklogRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowTasklogRequest:
     }
 
     def __init__(self, project_id=None, task_id=None, execute_id=None):
-        """ShowTasklogRequest - a model defined in huaweicloud sdk"""
+        """ShowTasklogRequest
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: 项目ID
+        :type project_id: str
+        :param task_id: 任务ID
+        :type task_id: str
+        :param execute_id: 任务单次的执行ID
+        :type execute_id: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class ShowTasklogRequest:
         项目ID
 
         :param project_id: The project_id of this ShowTasklogRequest.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -88,7 +97,7 @@ class ShowTasklogRequest:
         任务ID
 
         :param task_id: The task_id of this ShowTasklogRequest.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -110,7 +119,7 @@ class ShowTasklogRequest:
         任务单次的执行ID
 
         :param execute_id: The execute_id of this ShowTasklogRequest.
-        :type: str
+        :type execute_id: str
         """
         self._execute_id = execute_id
 

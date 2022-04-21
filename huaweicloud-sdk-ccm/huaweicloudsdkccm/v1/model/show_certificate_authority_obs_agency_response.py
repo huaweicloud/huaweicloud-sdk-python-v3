@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowCertificateAuthorityObsAgencyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowCertificateAuthorityObsAgencyResponse(SdkResponse):
     }
 
     def __init__(self, agency_granted=None):
-        """ShowCertificateAuthorityObsAgencyResponse - a model defined in huaweicloud sdk"""
+        """ShowCertificateAuthorityObsAgencyResponse
+
+        The model defined in huaweicloud sdk
+
+        :param agency_granted: OBS当前的授权结果。 - **true** - **false**
+        :type agency_granted: str
+        """
         
         super(ShowCertificateAuthorityObsAgencyResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class ShowCertificateAuthorityObsAgencyResponse(SdkResponse):
         OBS当前的授权结果。 - **true** - **false**
 
         :param agency_granted: The agency_granted of this ShowCertificateAuthorityObsAgencyResponse.
-        :type: str
+        :type agency_granted: str
         """
         self._agency_granted = agency_granted
 

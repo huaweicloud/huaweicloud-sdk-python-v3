@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteTransferRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteTransferRequest:
     }
 
     def __init__(self, log_transfer_id=None):
-        """DeleteTransferRequest - a model defined in huaweicloud sdk"""
+        """DeleteTransferRequest
+
+        The model defined in huaweicloud sdk
+
+        :param log_transfer_id: 日志转储ID。获取ID有3种方式： 1. 调用查询日志转储接口，返回值有日志转储ID  2. 调用新增日志转储接口，返回值有日志转储ID 3. 调用删除日志转储接口，返回值有日志转储ID
+        :type log_transfer_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteTransferRequest:
         日志转储ID。获取ID有3种方式： 1. 调用查询日志转储接口，返回值有日志转储ID  2. 调用新增日志转储接口，返回值有日志转储ID 3. 调用删除日志转储接口，返回值有日志转储ID
 
         :param log_transfer_id: The log_transfer_id of this DeleteTransferRequest.
-        :type: str
+        :type log_transfer_id: str
         """
         self._log_transfer_id = log_transfer_id
 

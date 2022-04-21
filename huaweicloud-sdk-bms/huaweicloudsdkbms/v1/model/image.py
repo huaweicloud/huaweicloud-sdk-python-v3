@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Image:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Image:
     }
 
     def __init__(self, id=None, links=None):
-        """Image - a model defined in huaweicloud sdk"""
+        """Image
+
+        The model defined in huaweicloud sdk
+
+        :param id: 裸金属服务器镜像ID
+        :type id: str
+        :param links: 裸金属服务器镜像相关快捷链接信息
+        :type links: list[:class:`huaweicloudsdkbms.v1.Links`]
+        """
         
         
 
@@ -63,7 +70,7 @@ class Image:
         裸金属服务器镜像ID
 
         :param id: The id of this Image.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -74,7 +81,7 @@ class Image:
         裸金属服务器镜像相关快捷链接信息
 
         :return: The links of this Image.
-        :rtype: list[Links]
+        :rtype: list[:class:`huaweicloudsdkbms.v1.Links`]
         """
         return self._links
 
@@ -85,7 +92,7 @@ class Image:
         裸金属服务器镜像相关快捷链接信息
 
         :param links: The links of this Image.
-        :type: list[Links]
+        :type links: list[:class:`huaweicloudsdkbms.v1.Links`]
         """
         self._links = links
 

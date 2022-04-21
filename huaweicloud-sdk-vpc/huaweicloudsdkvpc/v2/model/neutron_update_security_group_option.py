@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NeutronUpdateSecurityGroupOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class NeutronUpdateSecurityGroupOption:
     }
 
     def __init__(self, description=None, name=None):
-        """NeutronUpdateSecurityGroupOption - a model defined in huaweicloud sdk"""
+        """NeutronUpdateSecurityGroupOption
+
+        The model defined in huaweicloud sdk
+
+        :param description: 功能说明：安全组描述 取值范围：0-255个字符
+        :type description: str
+        :param name: 功能说明：安全组名称 取值范围：0-255个字符 约束：不允许为“default”
+        :type name: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class NeutronUpdateSecurityGroupOption:
         功能说明：安全组描述 取值范围：0-255个字符
 
         :param description: The description of this NeutronUpdateSecurityGroupOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -85,7 +92,7 @@ class NeutronUpdateSecurityGroupOption:
         功能说明：安全组名称 取值范围：0-255个字符 约束：不允许为“default”
 
         :param name: The name of this NeutronUpdateSecurityGroupOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 

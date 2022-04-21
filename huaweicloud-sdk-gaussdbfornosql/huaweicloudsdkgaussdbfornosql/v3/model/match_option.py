@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MatchOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class MatchOption:
     }
 
     def __init__(self, key=None, value=None):
-        """MatchOption - a model defined in huaweicloud sdk"""
+        """MatchOption
+
+        The model defined in huaweicloud sdk
+
+        :param key: 取值为“instance_name”或“instance_id”，分别表示按实例名称或按实例ID匹配查询。
+        :type key: str
+        :param value: 待匹配的实例名称或实例ID。
+        :type value: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class MatchOption:
         取值为“instance_name”或“instance_id”，分别表示按实例名称或按实例ID匹配查询。
 
         :param key: The key of this MatchOption.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -83,7 +90,7 @@ class MatchOption:
         待匹配的实例名称或实例ID。
 
         :param value: The value of this MatchOption.
-        :type: str
+        :type value: str
         """
         self._value = value
 

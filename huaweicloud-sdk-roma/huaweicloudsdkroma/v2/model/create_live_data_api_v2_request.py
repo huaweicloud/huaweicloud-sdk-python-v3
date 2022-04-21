@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateLiveDataApiV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateLiveDataApiV2Request:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreateLiveDataApiV2Request - a model defined in huaweicloud sdk"""
+        """CreateLiveDataApiV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param body: Body of the CreateLiveDataApiV2Request
+        :type body: :class:`huaweicloudsdkroma.v2.LdApiCreate`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateLiveDataApiV2Request:
         实例ID
 
         :param instance_id: The instance_id of this CreateLiveDataApiV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -72,7 +79,7 @@ class CreateLiveDataApiV2Request:
 
 
         :return: The body of this CreateLiveDataApiV2Request.
-        :rtype: LdApiCreate
+        :rtype: :class:`huaweicloudsdkroma.v2.LdApiCreate`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CreateLiveDataApiV2Request:
 
 
         :param body: The body of this CreateLiveDataApiV2Request.
-        :type: LdApiCreate
+        :type body: :class:`huaweicloudsdkroma.v2.LdApiCreate`
         """
         self._body = body
 

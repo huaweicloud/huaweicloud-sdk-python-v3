@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListBusinessResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListBusinessResponse(SdkResponse):
     }
 
     def __init__(self, business_nodes=None):
-        """ListBusinessResponse - a model defined in huaweicloud sdk"""
+        """ListBusinessResponse
+
+        The model defined in huaweicloud sdk
+
+        :param business_nodes: 获取业务列表数据结构
+        :type business_nodes: list[:class:`huaweicloudsdkapm.v1.BusinessNodeModel`]
+        """
         
         super(ListBusinessResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListBusinessResponse(SdkResponse):
         获取业务列表数据结构
 
         :return: The business_nodes of this ListBusinessResponse.
-        :rtype: list[BusinessNodeModel]
+        :rtype: list[:class:`huaweicloudsdkapm.v1.BusinessNodeModel`]
         """
         return self._business_nodes
 
@@ -58,7 +63,7 @@ class ListBusinessResponse(SdkResponse):
         获取业务列表数据结构
 
         :param business_nodes: The business_nodes of this ListBusinessResponse.
-        :type: list[BusinessNodeModel]
+        :type business_nodes: list[:class:`huaweicloudsdkapm.v1.BusinessNodeModel`]
         """
         self._business_nodes = business_nodes
 

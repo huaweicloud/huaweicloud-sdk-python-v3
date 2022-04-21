@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CelebrityRecognitionResultBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CelebrityRecognitionResultBody:
     }
 
     def __init__(self, confidence=None, face_detail=None, label=None):
-        """CelebrityRecognitionResultBody - a model defined in huaweicloud sdk"""
+        """CelebrityRecognitionResultBody
+
+        The model defined in huaweicloud sdk
+
+        :param confidence: 置信度，取值范围 0-1。
+        :type confidence: float
+        :param face_detail: 名人的面部信息，包括4个值：  h：人脸区域高度  w：人脸区域宽度  x：人脸区域左上角到y轴距离  y：人脸区域左上角到x轴距离 
+        :type face_detail: object
+        :param label: label为对应的名人信息。
+        :type label: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class CelebrityRecognitionResultBody:
         置信度，取值范围 0-1。
 
         :param confidence: The confidence of this CelebrityRecognitionResultBody.
-        :type: float
+        :type confidence: float
         """
         self._confidence = confidence
 
@@ -90,7 +99,7 @@ class CelebrityRecognitionResultBody:
         名人的面部信息，包括4个值：  h：人脸区域高度  w：人脸区域宽度  x：人脸区域左上角到y轴距离  y：人脸区域左上角到x轴距离 
 
         :param face_detail: The face_detail of this CelebrityRecognitionResultBody.
-        :type: object
+        :type face_detail: object
         """
         self._face_detail = face_detail
 
@@ -112,7 +121,7 @@ class CelebrityRecognitionResultBody:
         label为对应的名人信息。
 
         :param label: The label of this CelebrityRecognitionResultBody.
-        :type: str
+        :type label: str
         """
         self._label = label
 

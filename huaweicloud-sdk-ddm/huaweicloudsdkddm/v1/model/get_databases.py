@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GetDatabases:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class GetDatabases:
     }
 
     def __init__(self, dbslot=None, name=None, status=None, created=None, updated=None, id=None, id_name=None):
-        """GetDatabases - a model defined in huaweicloud sdk"""
+        """GetDatabases
+
+        The model defined in huaweicloud sdk
+
+        :param dbslot: 分片数。
+        :type dbslot: int
+        :param name: 分片名称.
+        :type name: str
+        :param status: 状态。
+        :type status: str
+        :param created: 创建时间。
+        :type created: str
+        :param updated: 最近更新时间。
+        :type updated: str
+        :param id: 所在RDS的id。
+        :type id: str
+        :param id_name: 所在RDS的名称。
+        :type id_name: str
+        """
         
         
 
@@ -81,7 +98,7 @@ class GetDatabases:
         分片数。
 
         :param dbslot: The dbslot of this GetDatabases.
-        :type: int
+        :type dbslot: int
         """
         self._dbslot = dbslot
 
@@ -103,7 +120,7 @@ class GetDatabases:
         分片名称.
 
         :param name: The name of this GetDatabases.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -125,7 +142,7 @@ class GetDatabases:
         状态。
 
         :param status: The status of this GetDatabases.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -147,7 +164,7 @@ class GetDatabases:
         创建时间。
 
         :param created: The created of this GetDatabases.
-        :type: str
+        :type created: str
         """
         self._created = created
 
@@ -169,7 +186,7 @@ class GetDatabases:
         最近更新时间。
 
         :param updated: The updated of this GetDatabases.
-        :type: str
+        :type updated: str
         """
         self._updated = updated
 
@@ -191,7 +208,7 @@ class GetDatabases:
         所在RDS的id。
 
         :param id: The id of this GetDatabases.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -213,7 +230,7 @@ class GetDatabases:
         所在RDS的名称。
 
         :param id_name: The id_name of this GetDatabases.
-        :type: str
+        :type id_name: str
         """
         self._id_name = id_name
 

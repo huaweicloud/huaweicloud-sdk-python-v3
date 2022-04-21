@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestVideoBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RestVideoBody:
     }
 
     def __init__(self, status=None):
-        """RestVideoBody - a model defined in huaweicloud sdk"""
+        """RestVideoBody
+
+        The model defined in huaweicloud sdk
+
+        :param status: 1：关闭视频 0：开启视频
+        :type status: int
+        """
         
         
 
@@ -57,7 +62,7 @@ class RestVideoBody:
         1：关闭视频 0：开启视频
 
         :param status: The status of this RestVideoBody.
-        :type: int
+        :type status: int
         """
         self._status = status
 

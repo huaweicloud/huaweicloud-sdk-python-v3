@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PublishAppMessageRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class PublishAppMessageRequestBody:
     }
 
     def __init__(self, message=None, message_structure=None, time_to_live=None):
-        """PublishAppMessageRequestBody - a model defined in huaweicloud sdk"""
+        """PublishAppMessageRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param message:  message与message_structure二者选其一。  message, App消息发布。  message_structure, 使用消息结构体方式的App消息发布。  app推送的消息内容，当前支持的推送平台有HMS、APNS、APNS_SANDBOX。  HMS是为开发者提供的消息推送平台。  APNS和APNS_SANDBOX是用于推送iOS消息的服务平台。  HMS平台指定的消息内容不超过2K。  APNS和APNS_SANDBOX平台的消息内容不能超过4K。  推送平台的消息内容格式要求详情见application消息体格式。  华为透传消息  {   \&quot;hps\&quot;: {     \&quot;msg\&quot;: {       \&quot;type\&quot;: 1,       \&quot;body\&quot;: {         \&quot;key\&quot;: \&quot;value\&quot;       }     }   } }  华为系统通知栏消息  {   \&quot;hps\&quot;: {     \&quot;msg\&quot;: {       \&quot;type\&quot;: 3,       \&quot;body\&quot;: {         \&quot;content\&quot;: \&quot;Push message content\&quot;,         \&quot;title\&quot;: \&quot;Push message content\&quot;       },       \&quot;action\&quot;: {         \&quot;type\&quot;: 1,         \&quot;param\&quot;: {           \&quot;intent\&quot;: \&quot;#Intent;compo&#x3D;com.rvr/.Activity;S.W&#x3D;U;end\&quot;         }       }     },     \&quot;ext\&quot;: {       \&quot;biTag\&quot;: \&quot;Trump\&quot;,       \&quot;icon\&quot;: \&quot;http://upload.w.org/00/150pxsvg.png\&quot;     }   } }  苹果平台消息格式 {   \&quot;aps\&quot;: {     \&quot;alert\&quot;: \&quot;hello world\&quot;   } }
+        :type message: str
+        :param message_structure: app推送的消息内容，当前支持的推送平台有HMS、APNS、APNS_SANDBOX。  HMS是为开发者提供的消息推送平台。  APNS和APNS_SANDBOX是用于推送iOS消息的服务平台。  HMS平台指定的消息内容不超过2K。  APNS和APNS_SANDBOX平台的消息内容不能超过4K。  推送平台的消息内容格式要求详情见application消息体格式。  华为透传消息  {   \&quot;HMS\&quot;: {     \&quot;hps\&quot;: {       \&quot;msg\&quot;: {         \&quot;type\&quot;: 1,         \&quot;body\&quot;: {           \&quot;key\&quot;: \&quot;value\&quot;         }       }     }   } }  华为系统通知栏消息  {   \&quot;HMS\&quot;: {     \&quot;hps\&quot;: {       \&quot;msg\&quot;: {         \&quot;type\&quot;: 3,         \&quot;body\&quot;: {           \&quot;content\&quot;: \&quot;Push message content\&quot;,           \&quot;title\&quot;: \&quot;Push message content\&quot;         },         \&quot;action\&quot;: {           \&quot;type\&quot;: 1,           \&quot;param\&quot;: {             \&quot;intent\&quot;: \&quot;#Intent;compo&#x3D;com.rvr/.Activity;S.W&#x3D;U;end\&quot;           }         }       },       \&quot;ext\&quot;: {         \&quot;biTag\&quot;: \&quot;Trump\&quot;,         \&quot;icon\&quot;: \&quot;http://upload.w.org/00/150pxsvg.png\&quot;       }     }   } }  苹果平台消息格式  {   \&quot;APNS\&quot;: {     \&quot;aps\&quot;: {       \&quot;alert\&quot;: \&quot;hello world\&quot;     }   } }
+        :type message_structure: str
+        :param time_to_live: 消息发送的生存时间，是相对于发布时间的。  SMN系统将移动推送消息转交给推送平台前，会计算该消息在系统消耗的时间。只有消耗的时间小于time_to_live时，SMN才会将消息转交给推送平台，并将time_to_live减去消耗的时间传递给推送平台，否则消息废弃。  time _to_live的单位是s，变量默认值是3600s，即一小时。值为正整数且小于等于3600*24。
+        :type time_to_live: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class PublishAppMessageRequestBody:
          message与message_structure二者选其一。  message, App消息发布。  message_structure, 使用消息结构体方式的App消息发布。  app推送的消息内容，当前支持的推送平台有HMS、APNS、APNS_SANDBOX。  HMS是为开发者提供的消息推送平台。  APNS和APNS_SANDBOX是用于推送iOS消息的服务平台。  HMS平台指定的消息内容不超过2K。  APNS和APNS_SANDBOX平台的消息内容不能超过4K。  推送平台的消息内容格式要求详情见application消息体格式。  华为透传消息  {   \"hps\": {     \"msg\": {       \"type\": 1,       \"body\": {         \"key\": \"value\"       }     }   } }  华为系统通知栏消息  {   \"hps\": {     \"msg\": {       \"type\": 3,       \"body\": {         \"content\": \"Push message content\",         \"title\": \"Push message content\"       },       \"action\": {         \"type\": 1,         \"param\": {           \"intent\": \"#Intent;compo=com.rvr/.Activity;S.W=U;end\"         }       }     },     \"ext\": {       \"biTag\": \"Trump\",       \"icon\": \"http://upload.w.org/00/150pxsvg.png\"     }   } }  苹果平台消息格式 {   \"aps\": {     \"alert\": \"hello world\"   } }
 
         :param message: The message of this PublishAppMessageRequestBody.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -90,7 +99,7 @@ class PublishAppMessageRequestBody:
         app推送的消息内容，当前支持的推送平台有HMS、APNS、APNS_SANDBOX。  HMS是为开发者提供的消息推送平台。  APNS和APNS_SANDBOX是用于推送iOS消息的服务平台。  HMS平台指定的消息内容不超过2K。  APNS和APNS_SANDBOX平台的消息内容不能超过4K。  推送平台的消息内容格式要求详情见application消息体格式。  华为透传消息  {   \"HMS\": {     \"hps\": {       \"msg\": {         \"type\": 1,         \"body\": {           \"key\": \"value\"         }       }     }   } }  华为系统通知栏消息  {   \"HMS\": {     \"hps\": {       \"msg\": {         \"type\": 3,         \"body\": {           \"content\": \"Push message content\",           \"title\": \"Push message content\"         },         \"action\": {           \"type\": 1,           \"param\": {             \"intent\": \"#Intent;compo=com.rvr/.Activity;S.W=U;end\"           }         }       },       \"ext\": {         \"biTag\": \"Trump\",         \"icon\": \"http://upload.w.org/00/150pxsvg.png\"       }     }   } }  苹果平台消息格式  {   \"APNS\": {     \"aps\": {       \"alert\": \"hello world\"     }   } }
 
         :param message_structure: The message_structure of this PublishAppMessageRequestBody.
-        :type: str
+        :type message_structure: str
         """
         self._message_structure = message_structure
 
@@ -112,7 +121,7 @@ class PublishAppMessageRequestBody:
         消息发送的生存时间，是相对于发布时间的。  SMN系统将移动推送消息转交给推送平台前，会计算该消息在系统消耗的时间。只有消耗的时间小于time_to_live时，SMN才会将消息转交给推送平台，并将time_to_live减去消耗的时间传递给推送平台，否则消息废弃。  time _to_live的单位是s，变量默认值是3600s，即一小时。值为正整数且小于等于3600*24。
 
         :param time_to_live: The time_to_live of this PublishAppMessageRequestBody.
-        :type: str
+        :type time_to_live: str
         """
         self._time_to_live = time_to_live
 

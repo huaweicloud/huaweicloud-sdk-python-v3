@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CheckpointExtraInfoResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CheckpointExtraInfoResp:
     }
 
     def __init__(self, name=None, description=None, retention_duration=None):
-        """CheckpointExtraInfoResp - a model defined in huaweicloud sdk"""
+        """CheckpointExtraInfoResp
+
+        The model defined in huaweicloud sdk
+
+        :param name: 备份名称
+        :type name: str
+        :param description: 备份描述
+        :type description: str
+        :param retention_duration: 备份保留天数
+        :type retention_duration: int
+        """
         
         
 
@@ -68,7 +77,7 @@ class CheckpointExtraInfoResp:
         备份名称
 
         :param name: The name of this CheckpointExtraInfoResp.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -90,7 +99,7 @@ class CheckpointExtraInfoResp:
         备份描述
 
         :param description: The description of this CheckpointExtraInfoResp.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -112,7 +121,7 @@ class CheckpointExtraInfoResp:
         备份保留天数
 
         :param retention_duration: The retention_duration of this CheckpointExtraInfoResp.
-        :type: int
+        :type retention_duration: int
         """
         self._retention_duration = retention_duration
 

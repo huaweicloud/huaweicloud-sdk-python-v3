@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCustomerselfResourceRecordDetailsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListCustomerselfResourceRecordDetailsResponse(SdkResponse):
     }
 
     def __init__(self, monthly_records=None, total_count=None, currency=None):
-        """ListCustomerselfResourceRecordDetailsResponse - a model defined in huaweicloud sdk"""
+        """ListCustomerselfResourceRecordDetailsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param monthly_records: 资源详单数据记录。 具体请参见表1。
+        :type monthly_records: list[:class:`huaweicloudsdkbss.v2.MonthlyBillRes`]
+        :param total_count: 结果集数量，只有成功才返回这个参数。
+        :type total_count: int
+        :param currency: 货币单位代码： CNY：人民币
+        :type currency: str
+        """
         
         super(ListCustomerselfResourceRecordDetailsResponse, self).__init__()
 
@@ -57,7 +66,7 @@ class ListCustomerselfResourceRecordDetailsResponse(SdkResponse):
         资源详单数据记录。 具体请参见表1。
 
         :return: The monthly_records of this ListCustomerselfResourceRecordDetailsResponse.
-        :rtype: list[MonthlyBillRes]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.MonthlyBillRes`]
         """
         return self._monthly_records
 
@@ -68,7 +77,7 @@ class ListCustomerselfResourceRecordDetailsResponse(SdkResponse):
         资源详单数据记录。 具体请参见表1。
 
         :param monthly_records: The monthly_records of this ListCustomerselfResourceRecordDetailsResponse.
-        :type: list[MonthlyBillRes]
+        :type monthly_records: list[:class:`huaweicloudsdkbss.v2.MonthlyBillRes`]
         """
         self._monthly_records = monthly_records
 
@@ -90,7 +99,7 @@ class ListCustomerselfResourceRecordDetailsResponse(SdkResponse):
         结果集数量，只有成功才返回这个参数。
 
         :param total_count: The total_count of this ListCustomerselfResourceRecordDetailsResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 
@@ -112,7 +121,7 @@ class ListCustomerselfResourceRecordDetailsResponse(SdkResponse):
         货币单位代码： CNY：人民币
 
         :param currency: The currency of this ListCustomerselfResourceRecordDetailsResponse.
-        :type: str
+        :type currency: str
         """
         self._currency = currency
 

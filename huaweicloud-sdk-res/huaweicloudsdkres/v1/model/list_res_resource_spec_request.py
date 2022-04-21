@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListResResourceSpecRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListResResourceSpecRequest:
     }
 
     def __init__(self, content_type=None):
-        """ListResResourceSpecRequest - a model defined in huaweicloud sdk"""
+        """ListResResourceSpecRequest
+
+        The model defined in huaweicloud sdk
+
+        :param content_type: 内容类型，取值为application/json。
+        :type content_type: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ListResResourceSpecRequest:
         内容类型，取值为application/json。
 
         :param content_type: The content_type of this ListResResourceSpecRequest.
-        :type: str
+        :type content_type: str
         """
         self._content_type = content_type
 

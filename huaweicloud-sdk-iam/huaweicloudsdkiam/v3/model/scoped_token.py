@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ScopedToken:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ScopedToken:
     }
 
     def __init__(self, id=None):
-        """ScopedToken - a model defined in huaweicloud sdk"""
+        """ScopedToken
+
+        The model defined in huaweicloud sdk
+
+        :param id: 联邦unscoped token的ID。
+        :type id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ScopedToken:
         联邦unscoped token的ID。
 
         :param id: The id of this ScopedToken.
-        :type: str
+        :type id: str
         """
         self._id = id
 

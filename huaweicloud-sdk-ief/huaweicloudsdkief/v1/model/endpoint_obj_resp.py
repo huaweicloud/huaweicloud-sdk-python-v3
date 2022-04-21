@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EndpointObjResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class EndpointObjResp:
     }
 
     def __init__(self, created_at=None, description=None, id=None, ief_instance_id=None, is_shared=None, name=None, project_id=None, properties=None, type=None, updated_at=None):
-        """EndpointObjResp - a model defined in huaweicloud sdk"""
+        """EndpointObjResp
+
+        The model defined in huaweicloud sdk
+
+        :param created_at: 创建时间
+        :type created_at: str
+        :param description: 端点描述，最大长度255，不允许^~#$%&amp;*&lt;&gt;()[]{}&#39;\&quot;\\
+        :type description: str
+        :param id: 端点ID
+        :type id: str
+        :param ief_instance_id: 铂金版实例ID，如果为空则表示是专业版实例。
+        :type ief_instance_id: str
+        :param is_shared: 是否共享
+        :type is_shared: bool
+        :param name: 端点名称，只允许中文字符、英文字符、数字、下划线、中划线，最大长度64 同一个帐号中创建的端点名唯一
+        :type name: str
+        :param project_id: 项目ID
+        :type project_id: str
+        :param properties: 端点的属性，端点需要对外展示的属性，示例： - dis: {\&quot;domain_id\&quot;:\&quot;user&#39;s domain id\&quot;} - servicebus: {\&quot;service_port\&quot;:8080} - apigw: {\&quot;domain_id\&quot;:\&quot;user&#39;s domain id\&quot;}
+        :type properties: dict(str, object)
+        :param type: 端点类型 枚举值： - dis - servicebus - apigw
+        :type type: str
+        :param updated_at: 更新时间
+        :type updated_at: str
+        """
         
         
 
@@ -93,7 +116,7 @@ class EndpointObjResp:
         创建时间
 
         :param created_at: The created_at of this EndpointObjResp.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -115,7 +138,7 @@ class EndpointObjResp:
         端点描述，最大长度255，不允许^~#$%&*<>()[]{}'\"\\
 
         :param description: The description of this EndpointObjResp.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -137,7 +160,7 @@ class EndpointObjResp:
         端点ID
 
         :param id: The id of this EndpointObjResp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -159,7 +182,7 @@ class EndpointObjResp:
         铂金版实例ID，如果为空则表示是专业版实例。
 
         :param ief_instance_id: The ief_instance_id of this EndpointObjResp.
-        :type: str
+        :type ief_instance_id: str
         """
         self._ief_instance_id = ief_instance_id
 
@@ -181,7 +204,7 @@ class EndpointObjResp:
         是否共享
 
         :param is_shared: The is_shared of this EndpointObjResp.
-        :type: bool
+        :type is_shared: bool
         """
         self._is_shared = is_shared
 
@@ -203,7 +226,7 @@ class EndpointObjResp:
         端点名称，只允许中文字符、英文字符、数字、下划线、中划线，最大长度64 同一个帐号中创建的端点名唯一
 
         :param name: The name of this EndpointObjResp.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -225,7 +248,7 @@ class EndpointObjResp:
         项目ID
 
         :param project_id: The project_id of this EndpointObjResp.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -247,7 +270,7 @@ class EndpointObjResp:
         端点的属性，端点需要对外展示的属性，示例： - dis: {\"domain_id\":\"user's domain id\"} - servicebus: {\"service_port\":8080} - apigw: {\"domain_id\":\"user's domain id\"}
 
         :param properties: The properties of this EndpointObjResp.
-        :type: dict(str, object)
+        :type properties: dict(str, object)
         """
         self._properties = properties
 
@@ -269,7 +292,7 @@ class EndpointObjResp:
         端点类型 枚举值： - dis - servicebus - apigw
 
         :param type: The type of this EndpointObjResp.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -291,7 +314,7 @@ class EndpointObjResp:
         更新时间
 
         :param updated_at: The updated_at of this EndpointObjResp.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 

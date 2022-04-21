@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CheckDataTransformationReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CheckDataTransformationReq:
     }
 
     def __init__(self, job_id=None, object_info=None, transformation_info=None, config_transformation=None):
-        """CheckDataTransformationReq - a model defined in huaweicloud sdk"""
+        """CheckDataTransformationReq
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 任务id
+        :type job_id: str
+        :param object_info: 对象信息
+        :type object_info: list[:class:`huaweicloudsdkdrs.v3.DatabaseObjectVO`]
+        :param transformation_info: 
+        :type transformation_info: :class:`huaweicloudsdkdrs.v3.TransformationInfo`
+        :param config_transformation: 
+        :type config_transformation: :class:`huaweicloudsdkdrs.v3.ConfigTransformationVo`
+        """
         
         
 
@@ -71,7 +82,7 @@ class CheckDataTransformationReq:
         任务id
 
         :param job_id: The job_id of this CheckDataTransformationReq.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -82,7 +93,7 @@ class CheckDataTransformationReq:
         对象信息
 
         :return: The object_info of this CheckDataTransformationReq.
-        :rtype: list[DatabaseObjectVO]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.DatabaseObjectVO`]
         """
         return self._object_info
 
@@ -93,7 +104,7 @@ class CheckDataTransformationReq:
         对象信息
 
         :param object_info: The object_info of this CheckDataTransformationReq.
-        :type: list[DatabaseObjectVO]
+        :type object_info: list[:class:`huaweicloudsdkdrs.v3.DatabaseObjectVO`]
         """
         self._object_info = object_info
 
@@ -103,7 +114,7 @@ class CheckDataTransformationReq:
 
 
         :return: The transformation_info of this CheckDataTransformationReq.
-        :rtype: TransformationInfo
+        :rtype: :class:`huaweicloudsdkdrs.v3.TransformationInfo`
         """
         return self._transformation_info
 
@@ -113,7 +124,7 @@ class CheckDataTransformationReq:
 
 
         :param transformation_info: The transformation_info of this CheckDataTransformationReq.
-        :type: TransformationInfo
+        :type transformation_info: :class:`huaweicloudsdkdrs.v3.TransformationInfo`
         """
         self._transformation_info = transformation_info
 
@@ -123,7 +134,7 @@ class CheckDataTransformationReq:
 
 
         :return: The config_transformation of this CheckDataTransformationReq.
-        :rtype: ConfigTransformationVo
+        :rtype: :class:`huaweicloudsdkdrs.v3.ConfigTransformationVo`
         """
         return self._config_transformation
 
@@ -133,7 +144,7 @@ class CheckDataTransformationReq:
 
 
         :param config_transformation: The config_transformation of this CheckDataTransformationReq.
-        :type: ConfigTransformationVo
+        :type config_transformation: :class:`huaweicloudsdkdrs.v3.ConfigTransformationVo`
         """
         self._config_transformation = config_transformation
 

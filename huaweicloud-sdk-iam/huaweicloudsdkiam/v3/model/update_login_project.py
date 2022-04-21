@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateLoginProject:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateLoginProject:
     }
 
     def __init__(self, enabled=None, verification_method=None):
-        """UpdateLoginProject - a model defined in huaweicloud sdk"""
+        """UpdateLoginProject
+
+        The model defined in huaweicloud sdk
+
+        :param enabled: IAM用户是否开启登录保护，开启为\&quot;true\&quot;，未开启为\&quot;false\&quot;。
+        :type enabled: bool
+        :param verification_method: IAM用户登录验证方式。手机验证为“sms”,邮箱验证为“email”,MFA验证为“vmfa”。
+        :type verification_method: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class UpdateLoginProject:
         IAM用户是否开启登录保护，开启为\"true\"，未开启为\"false\"。
 
         :param enabled: The enabled of this UpdateLoginProject.
-        :type: bool
+        :type enabled: bool
         """
         self._enabled = enabled
 
@@ -83,7 +90,7 @@ class UpdateLoginProject:
         IAM用户登录验证方式。手机验证为“sms”,邮箱验证为“email”,MFA验证为“vmfa”。
 
         :param verification_method: The verification_method of this UpdateLoginProject.
-        :type: str
+        :type verification_method: str
         """
         self._verification_method = verification_method
 

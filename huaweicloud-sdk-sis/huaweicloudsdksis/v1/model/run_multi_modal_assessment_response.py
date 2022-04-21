@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunMultiModalAssessmentResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class RunMultiModalAssessmentResponse(SdkResponse):
     }
 
     def __init__(self, score=None, completeness=None, duration=None, pronunciation=None, fluency=None, words=None, trace_id=None):
-        """RunMultiModalAssessmentResponse - a model defined in huaweicloud sdk"""
+        """RunMultiModalAssessmentResponse
+
+        The model defined in huaweicloud sdk
+
+        :param score: 综合评分，0-100
+        :type score: float
+        :param completeness: 完整性评分，0-100 表示有多少比例的单词发音是清楚的
+        :type completeness: float
+        :param duration: 音频/视频时长，单位秒
+        :type duration: float
+        :param pronunciation: 
+        :type pronunciation: :class:`huaweicloudsdksis.v1.Pronunciation`
+        :param fluency: 
+        :type fluency: :class:`huaweicloudsdksis.v1.Fluency`
+        :param words: 单词评测打分表
+        :type words: list[:class:`huaweicloudsdksis.v1.Word`]
+        :param trace_id: 评测失败时定位问题使用的字段
+        :type trace_id: str
+        """
         
         super(RunMultiModalAssessmentResponse, self).__init__()
 
@@ -88,7 +105,7 @@ class RunMultiModalAssessmentResponse(SdkResponse):
         综合评分，0-100
 
         :param score: The score of this RunMultiModalAssessmentResponse.
-        :type: float
+        :type score: float
         """
         self._score = score
 
@@ -110,7 +127,7 @@ class RunMultiModalAssessmentResponse(SdkResponse):
         完整性评分，0-100 表示有多少比例的单词发音是清楚的
 
         :param completeness: The completeness of this RunMultiModalAssessmentResponse.
-        :type: float
+        :type completeness: float
         """
         self._completeness = completeness
 
@@ -132,7 +149,7 @@ class RunMultiModalAssessmentResponse(SdkResponse):
         音频/视频时长，单位秒
 
         :param duration: The duration of this RunMultiModalAssessmentResponse.
-        :type: float
+        :type duration: float
         """
         self._duration = duration
 
@@ -142,7 +159,7 @@ class RunMultiModalAssessmentResponse(SdkResponse):
 
 
         :return: The pronunciation of this RunMultiModalAssessmentResponse.
-        :rtype: Pronunciation
+        :rtype: :class:`huaweicloudsdksis.v1.Pronunciation`
         """
         return self._pronunciation
 
@@ -152,7 +169,7 @@ class RunMultiModalAssessmentResponse(SdkResponse):
 
 
         :param pronunciation: The pronunciation of this RunMultiModalAssessmentResponse.
-        :type: Pronunciation
+        :type pronunciation: :class:`huaweicloudsdksis.v1.Pronunciation`
         """
         self._pronunciation = pronunciation
 
@@ -162,7 +179,7 @@ class RunMultiModalAssessmentResponse(SdkResponse):
 
 
         :return: The fluency of this RunMultiModalAssessmentResponse.
-        :rtype: Fluency
+        :rtype: :class:`huaweicloudsdksis.v1.Fluency`
         """
         return self._fluency
 
@@ -172,7 +189,7 @@ class RunMultiModalAssessmentResponse(SdkResponse):
 
 
         :param fluency: The fluency of this RunMultiModalAssessmentResponse.
-        :type: Fluency
+        :type fluency: :class:`huaweicloudsdksis.v1.Fluency`
         """
         self._fluency = fluency
 
@@ -183,7 +200,7 @@ class RunMultiModalAssessmentResponse(SdkResponse):
         单词评测打分表
 
         :return: The words of this RunMultiModalAssessmentResponse.
-        :rtype: list[Word]
+        :rtype: list[:class:`huaweicloudsdksis.v1.Word`]
         """
         return self._words
 
@@ -194,7 +211,7 @@ class RunMultiModalAssessmentResponse(SdkResponse):
         单词评测打分表
 
         :param words: The words of this RunMultiModalAssessmentResponse.
-        :type: list[Word]
+        :type words: list[:class:`huaweicloudsdksis.v1.Word`]
         """
         self._words = words
 
@@ -216,7 +233,7 @@ class RunMultiModalAssessmentResponse(SdkResponse):
         评测失败时定位问题使用的字段
 
         :param trace_id: The trace_id of this RunMultiModalAssessmentResponse.
-        :type: str
+        :type trace_id: str
         """
         self._trace_id = trace_id
 

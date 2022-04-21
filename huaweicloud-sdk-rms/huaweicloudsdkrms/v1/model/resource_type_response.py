@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResourceTypeResponse:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ResourceTypeResponse:
     }
 
     def __init__(self, name=None, display_name=None, _global=None, regions=None, console_endpoint_id=None, console_list_url=None, console_detail_url=None):
-        """ResourceTypeResponse - a model defined in huaweicloud sdk"""
+        """ResourceTypeResponse
+
+        The model defined in huaweicloud sdk
+
+        :param name: 资源类型名称
+        :type name: str
+        :param display_name: 资源类型显示名称，可以通过请求中 &#39;X-Language&#39;设置语言
+        :type display_name: str
+        :param _global: 是否是全局类型的资源
+        :type _global: bool
+        :param regions: 支持的region列表
+        :type regions: list[str]
+        :param console_endpoint_id: console终端id
+        :type console_endpoint_id: str
+        :param console_list_url: console列表页地址
+        :type console_list_url: str
+        :param console_detail_url: console详情页地址
+        :type console_detail_url: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class ResourceTypeResponse:
         资源类型名称
 
         :param name: The name of this ResourceTypeResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -110,7 +127,7 @@ class ResourceTypeResponse:
         资源类型显示名称，可以通过请求中 'X-Language'设置语言
 
         :param display_name: The display_name of this ResourceTypeResponse.
-        :type: str
+        :type display_name: str
         """
         self._display_name = display_name
 
@@ -132,7 +149,7 @@ class ResourceTypeResponse:
         是否是全局类型的资源
 
         :param _global: The _global of this ResourceTypeResponse.
-        :type: bool
+        :type _global: bool
         """
         self.__global = _global
 
@@ -154,7 +171,7 @@ class ResourceTypeResponse:
         支持的region列表
 
         :param regions: The regions of this ResourceTypeResponse.
-        :type: list[str]
+        :type regions: list[str]
         """
         self._regions = regions
 
@@ -176,7 +193,7 @@ class ResourceTypeResponse:
         console终端id
 
         :param console_endpoint_id: The console_endpoint_id of this ResourceTypeResponse.
-        :type: str
+        :type console_endpoint_id: str
         """
         self._console_endpoint_id = console_endpoint_id
 
@@ -198,7 +215,7 @@ class ResourceTypeResponse:
         console列表页地址
 
         :param console_list_url: The console_list_url of this ResourceTypeResponse.
-        :type: str
+        :type console_list_url: str
         """
         self._console_list_url = console_list_url
 
@@ -220,7 +237,7 @@ class ResourceTypeResponse:
         console详情页地址
 
         :param console_detail_url: The console_detail_url of this ResourceTypeResponse.
-        :type: str
+        :type console_detail_url: str
         """
         self._console_detail_url = console_detail_url
 

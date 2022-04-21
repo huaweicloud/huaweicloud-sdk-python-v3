@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowVocabulariesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowVocabulariesResponse(SdkResponse):
     }
 
     def __init__(self, count=None, result=None):
-        """ShowVocabulariesResponse - a model defined in huaweicloud sdk"""
+        """ShowVocabulariesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 热词表数。
+        :type count: int
+        :param result: 调用成功返回热词表列表，调用失败时无此字段。
+        :type result: list[:class:`huaweicloudsdksis.v1.VocabInfo`]
+        """
         
         super(ShowVocabulariesResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ShowVocabulariesResponse(SdkResponse):
         热词表数。
 
         :param count: The count of this ShowVocabulariesResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -74,7 +81,7 @@ class ShowVocabulariesResponse(SdkResponse):
         调用成功返回热词表列表，调用失败时无此字段。
 
         :return: The result of this ShowVocabulariesResponse.
-        :rtype: list[VocabInfo]
+        :rtype: list[:class:`huaweicloudsdksis.v1.VocabInfo`]
         """
         return self._result
 
@@ -85,7 +92,7 @@ class ShowVocabulariesResponse(SdkResponse):
         调用成功返回热词表列表，调用失败时无此字段。
 
         :param result: The result of this ShowVocabulariesResponse.
-        :type: list[VocabInfo]
+        :type result: list[:class:`huaweicloudsdksis.v1.VocabInfo`]
         """
         self._result = result
 

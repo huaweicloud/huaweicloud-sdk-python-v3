@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QualityInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class QualityInfo:
     }
 
     def __init__(self, template_name=None, quality=None, pvc=None, hdlb=None, codec=None, width=None, height=None, bitrate=None, video_frame_rate=None, protocol=None, i_frame_interval=None, gop=None):
-        """QualityInfo - a model defined in huaweicloud sdk"""
+        """QualityInfo
+
+        The model defined in huaweicloud sdk
+
+        :param template_name: 模板名称。
+        :type template_name: str
+        :param quality: 包含如下取值： - FHD： 超高清，系统缺省名称 - HD： 高清，系统缺省名称 - SD： 标清，系统缺省名称 - LD： 流畅，系统缺省名称 - XXX： 租户自定义名称。用户自定义名称不能与系统缺省名称冲突；多个自定义名称不能重复 
+        :type quality: str
+        :param pvc: 是否使用窄带高清转码，模板组里不同模板的PVC选项必须相同。 - on：启用。 - off：不启用。 默认为off 
+        :type pvc: str
+        :param hdlb: 是否启用高清低码，较PVC相比画质增强。 - on：启用。 - off：不启用。 默认为off。 
+        :type hdlb: str
+        :param codec: 视频编码格式，模板组里不同模板的编码格式必须相同。 - H264：使用H.264。 - H265：使用H.265。 默认为H264。 
+        :type codec: str
+        :param width: 视频宽度（单位：像素） - H264   取值范围：32-3840，必须为2的倍数 。 - H265   取值范围：320-3840 ，必须为4的倍数。 
+        :type width: int
+        :param height: 视频高度（单位：像素） - H264   取值范围：32-2160，必须为2的倍数。 - H265   取值范围：240-2160，必须为4的倍数。 
+        :type height: int
+        :param bitrate: 转码视频的码率（单位：Kbps）。 取值范围：40-30000。 
+        :type bitrate: int
+        :param video_frame_rate: 转码视频帧率（单位：fps）。 取值范围：0-30，0表示保持帧率不变。 
+        :type video_frame_rate: int
+        :param protocol: 转码输出支持的协议类型。当前只支持RTMP和HLS，且模板组里不同模板的输出协议类型必须相同。 - RTMP - HLS - DASH  默认为RTMP。 
+        :type protocol: str
+        :param i_frame_interval: I帧间隔（单位：帧）。  取值范围：0-500。  默认为25。 
+        :type i_frame_interval: int
+        :param gop: 按时间设置I帧间隔，与“iFrameInterval”选择一个设置即可。  取值范围：[0,10]  默认值：4 
+        :type gop: int
+        """
         
         
 
@@ -109,7 +136,7 @@ class QualityInfo:
         模板名称。
 
         :param template_name: The template_name of this QualityInfo.
-        :type: str
+        :type template_name: str
         """
         self._template_name = template_name
 
@@ -131,7 +158,7 @@ class QualityInfo:
         包含如下取值： - FHD： 超高清，系统缺省名称 - HD： 高清，系统缺省名称 - SD： 标清，系统缺省名称 - LD： 流畅，系统缺省名称 - XXX： 租户自定义名称。用户自定义名称不能与系统缺省名称冲突；多个自定义名称不能重复 
 
         :param quality: The quality of this QualityInfo.
-        :type: str
+        :type quality: str
         """
         self._quality = quality
 
@@ -153,7 +180,7 @@ class QualityInfo:
         是否使用窄带高清转码，模板组里不同模板的PVC选项必须相同。 - on：启用。 - off：不启用。 默认为off 
 
         :param pvc: The pvc of this QualityInfo.
-        :type: str
+        :type pvc: str
         """
         self._pvc = pvc
 
@@ -175,7 +202,7 @@ class QualityInfo:
         是否启用高清低码，较PVC相比画质增强。 - on：启用。 - off：不启用。 默认为off。 
 
         :param hdlb: The hdlb of this QualityInfo.
-        :type: str
+        :type hdlb: str
         """
         self._hdlb = hdlb
 
@@ -197,7 +224,7 @@ class QualityInfo:
         视频编码格式，模板组里不同模板的编码格式必须相同。 - H264：使用H.264。 - H265：使用H.265。 默认为H264。 
 
         :param codec: The codec of this QualityInfo.
-        :type: str
+        :type codec: str
         """
         self._codec = codec
 
@@ -219,7 +246,7 @@ class QualityInfo:
         视频宽度（单位：像素） - H264   取值范围：32-3840，必须为2的倍数 。 - H265   取值范围：320-3840 ，必须为4的倍数。 
 
         :param width: The width of this QualityInfo.
-        :type: int
+        :type width: int
         """
         self._width = width
 
@@ -241,7 +268,7 @@ class QualityInfo:
         视频高度（单位：像素） - H264   取值范围：32-2160，必须为2的倍数。 - H265   取值范围：240-2160，必须为4的倍数。 
 
         :param height: The height of this QualityInfo.
-        :type: int
+        :type height: int
         """
         self._height = height
 
@@ -263,7 +290,7 @@ class QualityInfo:
         转码视频的码率（单位：Kbps）。 取值范围：40-30000。 
 
         :param bitrate: The bitrate of this QualityInfo.
-        :type: int
+        :type bitrate: int
         """
         self._bitrate = bitrate
 
@@ -285,7 +312,7 @@ class QualityInfo:
         转码视频帧率（单位：fps）。 取值范围：0-30，0表示保持帧率不变。 
 
         :param video_frame_rate: The video_frame_rate of this QualityInfo.
-        :type: int
+        :type video_frame_rate: int
         """
         self._video_frame_rate = video_frame_rate
 
@@ -307,7 +334,7 @@ class QualityInfo:
         转码输出支持的协议类型。当前只支持RTMP和HLS，且模板组里不同模板的输出协议类型必须相同。 - RTMP - HLS - DASH  默认为RTMP。 
 
         :param protocol: The protocol of this QualityInfo.
-        :type: str
+        :type protocol: str
         """
         self._protocol = protocol
 
@@ -329,7 +356,7 @@ class QualityInfo:
         I帧间隔（单位：帧）。  取值范围：0-500。  默认为25。 
 
         :param i_frame_interval: The i_frame_interval of this QualityInfo.
-        :type: int
+        :type i_frame_interval: int
         """
         self._i_frame_interval = i_frame_interval
 
@@ -351,7 +378,7 @@ class QualityInfo:
         按时间设置I帧间隔，与“iFrameInterval”选择一个设置即可。  取值范围：[0,10]  默认值：4 
 
         :param gop: The gop of this QualityInfo.
-        :type: int
+        :type gop: int
         """
         self._gop = gop
 

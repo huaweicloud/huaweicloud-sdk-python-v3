@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateTopicRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateTopicRequestBody:
     }
 
     def __init__(self, name=None, display_name=None, enterprise_project_id=None):
-        """CreateTopicRequestBody - a model defined in huaweicloud sdk"""
+        """CreateTopicRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param name: 创建topic的名字。Topic名称只能包含大写字母、小写字母、数字、-和_，且必须由大写字母、小写字母或数字开头，长度为1到255个字符。
+        :type name: str
+        :param display_name: Topic的显示名，推送邮件消息时，作为邮件发件人显示。显示名的长度为192byte或64个中文。默认值为空。
+        :type display_name: str
+        :param enterprise_project_id: 企业项目ID。非必选参数，当企业项目开关打开时需要传入该参数。
+        :type enterprise_project_id: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class CreateTopicRequestBody:
         创建topic的名字。Topic名称只能包含大写字母、小写字母、数字、-和_，且必须由大写字母、小写字母或数字开头，长度为1到255个字符。
 
         :param name: The name of this CreateTopicRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -88,7 +97,7 @@ class CreateTopicRequestBody:
         Topic的显示名，推送邮件消息时，作为邮件发件人显示。显示名的长度为192byte或64个中文。默认值为空。
 
         :param display_name: The display_name of this CreateTopicRequestBody.
-        :type: str
+        :type display_name: str
         """
         self._display_name = display_name
 
@@ -110,7 +119,7 @@ class CreateTopicRequestBody:
         企业项目ID。非必选参数，当企业项目开关打开时需要传入该参数。
 
         :param enterprise_project_id: The enterprise_project_id of this CreateTopicRequestBody.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 

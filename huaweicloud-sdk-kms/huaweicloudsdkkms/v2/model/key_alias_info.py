@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeyAliasInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class KeyAliasInfo:
     }
 
     def __init__(self, key_id=None, key_alias=None):
-        """KeyAliasInfo - a model defined in huaweicloud sdk"""
+        """KeyAliasInfo
+
+        The model defined in huaweicloud sdk
+
+        :param key_id: 密钥ID。
+        :type key_id: str
+        :param key_alias: 密钥别名。
+        :type key_alias: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class KeyAliasInfo:
         密钥ID。
 
         :param key_id: The key_id of this KeyAliasInfo.
-        :type: str
+        :type key_id: str
         """
         self._key_id = key_id
 
@@ -85,7 +92,7 @@ class KeyAliasInfo:
         密钥别名。
 
         :param key_alias: The key_alias of this KeyAliasInfo.
-        :type: str
+        :type key_alias: str
         """
         self._key_alias = key_alias
 

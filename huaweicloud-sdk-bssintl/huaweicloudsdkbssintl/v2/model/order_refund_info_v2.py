@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OrderRefundInfoV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class OrderRefundInfoV2:
     }
 
     def __init__(self, id=None, amount=None, measure_id=None, customer_id=None, resource_type_code=None, service_type_code=None, resource_type_name=None, service_type_name=None, region_code=None, base_order_id=None):
-        """OrderRefundInfoV2 - a model defined in huaweicloud sdk"""
+        """OrderRefundInfoV2
+
+        The model defined in huaweicloud sdk
+
+        :param id: 该记录的ID。
+        :type id: str
+        :param amount: 金额。 金额为负数，表示退订金额。金额为正数，表示已消费金额或收取的退订手续费。
+        :type amount: float
+        :param measure_id: 金额的度量单位。 1：元
+        :type measure_id: str
+        :param customer_id: 客户账号ID。
+        :type customer_id: str
+        :param resource_type_code: 资源类型编码，例如ECS的VM为“hws.resource.type.vm”。
+        :type resource_type_code: str
+        :param service_type_code: 云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。
+        :type service_type_code: str
+        :param resource_type_name: 资源类型名称。例如ECS的资源类型名称为“云主机”。
+        :type resource_type_name: str
+        :param service_type_name: 云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
+        :type service_type_name: str
+        :param region_code: 云服务区编码，例如：“ap-southeast-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
+        :type region_code: str
+        :param base_order_id: 退订金额、已消费金额或收取退订手续费对应的原订单ID。
+        :type base_order_id: str
+        """
         
         
 
@@ -96,7 +119,7 @@ class OrderRefundInfoV2:
         该记录的ID。
 
         :param id: The id of this OrderRefundInfoV2.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -118,7 +141,7 @@ class OrderRefundInfoV2:
         金额。 金额为负数，表示退订金额。金额为正数，表示已消费金额或收取的退订手续费。
 
         :param amount: The amount of this OrderRefundInfoV2.
-        :type: float
+        :type amount: float
         """
         self._amount = amount
 
@@ -140,7 +163,7 @@ class OrderRefundInfoV2:
         金额的度量单位。 1：元
 
         :param measure_id: The measure_id of this OrderRefundInfoV2.
-        :type: str
+        :type measure_id: str
         """
         self._measure_id = measure_id
 
@@ -162,7 +185,7 @@ class OrderRefundInfoV2:
         客户账号ID。
 
         :param customer_id: The customer_id of this OrderRefundInfoV2.
-        :type: str
+        :type customer_id: str
         """
         self._customer_id = customer_id
 
@@ -184,7 +207,7 @@ class OrderRefundInfoV2:
         资源类型编码，例如ECS的VM为“hws.resource.type.vm”。
 
         :param resource_type_code: The resource_type_code of this OrderRefundInfoV2.
-        :type: str
+        :type resource_type_code: str
         """
         self._resource_type_code = resource_type_code
 
@@ -206,7 +229,7 @@ class OrderRefundInfoV2:
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。
 
         :param service_type_code: The service_type_code of this OrderRefundInfoV2.
-        :type: str
+        :type service_type_code: str
         """
         self._service_type_code = service_type_code
 
@@ -228,7 +251,7 @@ class OrderRefundInfoV2:
         资源类型名称。例如ECS的资源类型名称为“云主机”。
 
         :param resource_type_name: The resource_type_name of this OrderRefundInfoV2.
-        :type: str
+        :type resource_type_name: str
         """
         self._resource_type_name = resource_type_name
 
@@ -250,7 +273,7 @@ class OrderRefundInfoV2:
         云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
 
         :param service_type_name: The service_type_name of this OrderRefundInfoV2.
-        :type: str
+        :type service_type_name: str
         """
         self._service_type_name = service_type_name
 
@@ -272,7 +295,7 @@ class OrderRefundInfoV2:
         云服务区编码，例如：“ap-southeast-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
         :param region_code: The region_code of this OrderRefundInfoV2.
-        :type: str
+        :type region_code: str
         """
         self._region_code = region_code
 
@@ -294,7 +317,7 @@ class OrderRefundInfoV2:
         退订金额、已消费金额或收取退订手续费对应的原订单ID。
 
         :param base_order_id: The base_order_id of this OrderRefundInfoV2.
-        :type: str
+        :type base_order_id: str
         """
         self._base_order_id = base_order_id
 

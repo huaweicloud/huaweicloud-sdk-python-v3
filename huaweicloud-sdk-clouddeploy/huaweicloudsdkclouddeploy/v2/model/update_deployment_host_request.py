@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDeploymentHostRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateDeploymentHostRequest:
     }
 
     def __init__(self, group_id=None, host_id=None, body=None):
-        """UpdateDeploymentHostRequest - a model defined in huaweicloud sdk"""
+        """UpdateDeploymentHostRequest
+
+        The model defined in huaweicloud sdk
+
+        :param group_id: 主机组id
+        :type group_id: str
+        :param host_id: 主机id
+        :type host_id: str
+        :param body: Body of the UpdateDeploymentHostRequest
+        :type body: :class:`huaweicloudsdkclouddeploy.v2.DeploymentHostRequest`
+        """
         
         
 
@@ -66,7 +75,7 @@ class UpdateDeploymentHostRequest:
         主机组id
 
         :param group_id: The group_id of this UpdateDeploymentHostRequest.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -88,7 +97,7 @@ class UpdateDeploymentHostRequest:
         主机id
 
         :param host_id: The host_id of this UpdateDeploymentHostRequest.
-        :type: str
+        :type host_id: str
         """
         self._host_id = host_id
 
@@ -98,7 +107,7 @@ class UpdateDeploymentHostRequest:
 
 
         :return: The body of this UpdateDeploymentHostRequest.
-        :rtype: DeploymentHostRequest
+        :rtype: :class:`huaweicloudsdkclouddeploy.v2.DeploymentHostRequest`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class UpdateDeploymentHostRequest:
 
 
         :param body: The body of this UpdateDeploymentHostRequest.
-        :type: DeploymentHostRequest
+        :type body: :class:`huaweicloudsdkclouddeploy.v2.DeploymentHostRequest`
         """
         self._body = body
 

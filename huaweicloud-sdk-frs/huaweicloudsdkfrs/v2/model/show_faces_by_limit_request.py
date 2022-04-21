@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowFacesByLimitRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowFacesByLimitRequest:
     }
 
     def __init__(self, face_set_name=None, offset=None, limit=None):
-        """ShowFacesByLimitRequest - a model defined in huaweicloud sdk"""
+        """ShowFacesByLimitRequest
+
+        The model defined in huaweicloud sdk
+
+        :param face_set_name: 人脸库名称。
+        :type face_set_name: str
+        :param offset: 从第几条数据读起，默认为0。
+        :type offset: int
+        :param limit: 读取多少条，默认为5。
+        :type limit: int
+        """
         
         
 
@@ -65,7 +74,7 @@ class ShowFacesByLimitRequest:
         人脸库名称。
 
         :param face_set_name: The face_set_name of this ShowFacesByLimitRequest.
-        :type: str
+        :type face_set_name: str
         """
         self._face_set_name = face_set_name
 
@@ -87,7 +96,7 @@ class ShowFacesByLimitRequest:
         从第几条数据读起，默认为0。
 
         :param offset: The offset of this ShowFacesByLimitRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -109,7 +118,7 @@ class ShowFacesByLimitRequest:
         读取多少条，默认为5。
 
         :param limit: The limit of this ShowFacesByLimitRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

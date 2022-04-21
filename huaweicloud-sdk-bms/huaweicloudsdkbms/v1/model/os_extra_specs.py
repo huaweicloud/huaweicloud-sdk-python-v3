@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OsExtraSpecs:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class OsExtraSpecs:
     }
 
     def __init__(self, resource_type=None, capabilitiescpu_arch=None, baremetaldisk_detail=None, capabilitieshypervisor_type=None, baremetal__support_evs=None, baremetalext_boot_type=None, capabilitiesboard_type=None, baremetalnet_num=None, baremetalnetcard_detail=None, baremetalcpu_detail=None, baremetalmemory_detail=None, condoperationstatus=None, condoperationaz=None):
-        """OsExtraSpecs - a model defined in huaweicloud sdk"""
+        """OsExtraSpecs
+
+        The model defined in huaweicloud sdk
+
+        :param resource_type: 识该规格对应的资源类型，取值范围为“ironic”。
+        :type resource_type: str
+        :param capabilitiescpu_arch: 裸金属服务器的CPU架构类型，取值为：x86_64（适用于x86机型）aarch64（适用于ARM机型）
+        :type capabilitiescpu_arch: str
+        :param baremetaldisk_detail: 磁盘物理规格描述信息。
+        :type baremetaldisk_detail: str
+        :param capabilitieshypervisor_type: 标示ironic类型的规格。
+        :type capabilitieshypervisor_type: str
+        :param baremetal__support_evs: 标识当前的规格是否支持挂载EVS卷。truefalse
+        :type baremetal__support_evs: str
+        :param baremetalext_boot_type: 裸金属服务器启动源。LocalDisk：本地盘Volume：云硬盘（快速发放）
+        :type baremetalext_boot_type: str
+        :param capabilitiesboard_type: 裸金属服务器的规格类型。格式为规格的缩写，例如规格名称为“physical.o2.medium”，则规格类型为“o2m”。
+        :type capabilitiesboard_type: str
+        :param baremetalnet_num: 实际可挂载网络数量。
+        :type baremetalnet_num: str
+        :param baremetalnetcard_detail: 网卡物理规格描述信息。
+        :type baremetalnetcard_detail: str
+        :param baremetalcpu_detail: CPU物理规格描述信息。
+        :type baremetalcpu_detail: str
+        :param baremetalmemory_detail: 内存物理规格描述信息
+        :type baremetalmemory_detail: str
+        :param condoperationstatus: 裸金属服务器规格状态。不配置时等同于normal。normal：正常商用abandon：下线（即不显示）sellout：售罄obt：公测promotion：推荐（等同normal，也是商用）
+        :type condoperationstatus: str
+        :param condoperationaz: 在某个AZ的裸金属服务器规格状态。此参数是AZ级配置，某个AZ没有在此参数中配置时默认使用cond:operation:status参数的取值。格式：az(xx)。()内为某个AZ下的裸金属服务器规格状态，()内必须填写状态，不填为无效配置。例如：规格在某个区域的az0正常商用，az1售罄，az2公测，az3正常商用，其他az显示下线，可配置为：“cond:operation:status”设置为“abandon”“cond:operation:az”设置为“az0(normal), az1(sellout), az2(obt), az3(promotion)” 说明：如果规格在某个AZ下的状态与cond:operation:status配置状态不同，必须配置该参数。
+        :type condoperationaz: str
+        """
         
         
 
@@ -109,7 +138,7 @@ class OsExtraSpecs:
         识该规格对应的资源类型，取值范围为“ironic”。
 
         :param resource_type: The resource_type of this OsExtraSpecs.
-        :type: str
+        :type resource_type: str
         """
         self._resource_type = resource_type
 
@@ -131,7 +160,7 @@ class OsExtraSpecs:
         裸金属服务器的CPU架构类型，取值为：x86_64（适用于x86机型）aarch64（适用于ARM机型）
 
         :param capabilitiescpu_arch: The capabilitiescpu_arch of this OsExtraSpecs.
-        :type: str
+        :type capabilitiescpu_arch: str
         """
         self._capabilitiescpu_arch = capabilitiescpu_arch
 
@@ -153,7 +182,7 @@ class OsExtraSpecs:
         磁盘物理规格描述信息。
 
         :param baremetaldisk_detail: The baremetaldisk_detail of this OsExtraSpecs.
-        :type: str
+        :type baremetaldisk_detail: str
         """
         self._baremetaldisk_detail = baremetaldisk_detail
 
@@ -175,7 +204,7 @@ class OsExtraSpecs:
         标示ironic类型的规格。
 
         :param capabilitieshypervisor_type: The capabilitieshypervisor_type of this OsExtraSpecs.
-        :type: str
+        :type capabilitieshypervisor_type: str
         """
         self._capabilitieshypervisor_type = capabilitieshypervisor_type
 
@@ -197,7 +226,7 @@ class OsExtraSpecs:
         标识当前的规格是否支持挂载EVS卷。truefalse
 
         :param baremetal__support_evs: The baremetal__support_evs of this OsExtraSpecs.
-        :type: str
+        :type baremetal__support_evs: str
         """
         self._baremetal__support_evs = baremetal__support_evs
 
@@ -219,7 +248,7 @@ class OsExtraSpecs:
         裸金属服务器启动源。LocalDisk：本地盘Volume：云硬盘（快速发放）
 
         :param baremetalext_boot_type: The baremetalext_boot_type of this OsExtraSpecs.
-        :type: str
+        :type baremetalext_boot_type: str
         """
         self._baremetalext_boot_type = baremetalext_boot_type
 
@@ -241,7 +270,7 @@ class OsExtraSpecs:
         裸金属服务器的规格类型。格式为规格的缩写，例如规格名称为“physical.o2.medium”，则规格类型为“o2m”。
 
         :param capabilitiesboard_type: The capabilitiesboard_type of this OsExtraSpecs.
-        :type: str
+        :type capabilitiesboard_type: str
         """
         self._capabilitiesboard_type = capabilitiesboard_type
 
@@ -263,7 +292,7 @@ class OsExtraSpecs:
         实际可挂载网络数量。
 
         :param baremetalnet_num: The baremetalnet_num of this OsExtraSpecs.
-        :type: str
+        :type baremetalnet_num: str
         """
         self._baremetalnet_num = baremetalnet_num
 
@@ -285,7 +314,7 @@ class OsExtraSpecs:
         网卡物理规格描述信息。
 
         :param baremetalnetcard_detail: The baremetalnetcard_detail of this OsExtraSpecs.
-        :type: str
+        :type baremetalnetcard_detail: str
         """
         self._baremetalnetcard_detail = baremetalnetcard_detail
 
@@ -307,7 +336,7 @@ class OsExtraSpecs:
         CPU物理规格描述信息。
 
         :param baremetalcpu_detail: The baremetalcpu_detail of this OsExtraSpecs.
-        :type: str
+        :type baremetalcpu_detail: str
         """
         self._baremetalcpu_detail = baremetalcpu_detail
 
@@ -329,7 +358,7 @@ class OsExtraSpecs:
         内存物理规格描述信息
 
         :param baremetalmemory_detail: The baremetalmemory_detail of this OsExtraSpecs.
-        :type: str
+        :type baremetalmemory_detail: str
         """
         self._baremetalmemory_detail = baremetalmemory_detail
 
@@ -351,7 +380,7 @@ class OsExtraSpecs:
         裸金属服务器规格状态。不配置时等同于normal。normal：正常商用abandon：下线（即不显示）sellout：售罄obt：公测promotion：推荐（等同normal，也是商用）
 
         :param condoperationstatus: The condoperationstatus of this OsExtraSpecs.
-        :type: str
+        :type condoperationstatus: str
         """
         self._condoperationstatus = condoperationstatus
 
@@ -373,7 +402,7 @@ class OsExtraSpecs:
         在某个AZ的裸金属服务器规格状态。此参数是AZ级配置，某个AZ没有在此参数中配置时默认使用cond:operation:status参数的取值。格式：az(xx)。()内为某个AZ下的裸金属服务器规格状态，()内必须填写状态，不填为无效配置。例如：规格在某个区域的az0正常商用，az1售罄，az2公测，az3正常商用，其他az显示下线，可配置为：“cond:operation:status”设置为“abandon”“cond:operation:az”设置为“az0(normal), az1(sellout), az2(obt), az3(promotion)” 说明：如果规格在某个AZ下的状态与cond:operation:status配置状态不同，必须配置该参数。
 
         :param condoperationaz: The condoperationaz of this OsExtraSpecs.
-        :type: str
+        :type condoperationaz: str
         """
         self._condoperationaz = condoperationaz
 

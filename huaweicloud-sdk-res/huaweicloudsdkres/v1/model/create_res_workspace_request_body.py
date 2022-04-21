@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateResWorkspaceRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateResWorkspaceRequestBody:
     }
 
     def __init__(self, name=None, enterprise_project_id=None, description=None):
-        """CreateResWorkspaceRequestBody - a model defined in huaweicloud sdk"""
+        """CreateResWorkspaceRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param name: 工作空间名称，1-64位的数字、字母、下划线、中划线组成，支持中文，不能以 - 结尾。
+        :type name: str
+        :param enterprise_project_id: 企业项目编号。
+        :type enterprise_project_id: str
+        :param description: 描述。
+        :type description: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class CreateResWorkspaceRequestBody:
         工作空间名称，1-64位的数字、字母、下划线、中划线组成，支持中文，不能以 - 结尾。
 
         :param name: The name of this CreateResWorkspaceRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -88,7 +97,7 @@ class CreateResWorkspaceRequestBody:
         企业项目编号。
 
         :param enterprise_project_id: The enterprise_project_id of this CreateResWorkspaceRequestBody.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -110,7 +119,7 @@ class CreateResWorkspaceRequestBody:
         描述。
 
         :param description: The description of this CreateResWorkspaceRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 

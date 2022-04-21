@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NeutronCreateFirewallPolicyRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class NeutronCreateFirewallPolicyRequest:
     }
 
     def __init__(self, body=None):
-        """NeutronCreateFirewallPolicyRequest - a model defined in huaweicloud sdk"""
+        """NeutronCreateFirewallPolicyRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the NeutronCreateFirewallPolicyRequest
+        :type body: :class:`huaweicloudsdkvpc.v2.NeutronCreateFirewallPolicyRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class NeutronCreateFirewallPolicyRequest:
 
 
         :return: The body of this NeutronCreateFirewallPolicyRequest.
-        :rtype: NeutronCreateFirewallPolicyRequestBody
+        :rtype: :class:`huaweicloudsdkvpc.v2.NeutronCreateFirewallPolicyRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class NeutronCreateFirewallPolicyRequest:
 
 
         :param body: The body of this NeutronCreateFirewallPolicyRequest.
-        :type: NeutronCreateFirewallPolicyRequestBody
+        :type body: :class:`huaweicloudsdkvpc.v2.NeutronCreateFirewallPolicyRequestBody`
         """
         self._body = body
 

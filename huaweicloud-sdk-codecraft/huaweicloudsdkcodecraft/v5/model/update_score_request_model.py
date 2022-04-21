@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateScoreRequestModel:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UpdateScoreRequestModel:
     }
 
     def __init__(self, works_id=None, score=None, status=None, message=None):
-        """UpdateScoreRequestModel - a model defined in huaweicloud sdk"""
+        """UpdateScoreRequestModel
+
+        The model defined in huaweicloud sdk
+
+        :param works_id: 作品ID，大赛平台提供，可以通过接口[ListCompetitionWorks](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product&#x3D;CodeCraft&amp;api&#x3D;ListCompetitionWorks)查询作品ID
+        :type works_id: int
+        :param score: 作品分数，作品状态为failed时传-1，计算长度时包括小数点，小数点后面最多保留四位
+        :type score: float
+        :param status: 作品状态success|failed。判题时，需要对上传作品进行检查，当作品不符合要求时，应该返回failed，并将提示信息通过 message显示出来
+        :type status: str
+        :param message: 作品描述信息
+        :type message: str
+        """
         
         
 
@@ -70,7 +81,7 @@ class UpdateScoreRequestModel:
         作品ID，大赛平台提供，可以通过接口[ListCompetitionWorks](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=CodeCraft&api=ListCompetitionWorks)查询作品ID
 
         :param works_id: The works_id of this UpdateScoreRequestModel.
-        :type: int
+        :type works_id: int
         """
         self._works_id = works_id
 
@@ -92,7 +103,7 @@ class UpdateScoreRequestModel:
         作品分数，作品状态为failed时传-1，计算长度时包括小数点，小数点后面最多保留四位
 
         :param score: The score of this UpdateScoreRequestModel.
-        :type: float
+        :type score: float
         """
         self._score = score
 
@@ -114,7 +125,7 @@ class UpdateScoreRequestModel:
         作品状态success|failed。判题时，需要对上传作品进行检查，当作品不符合要求时，应该返回failed，并将提示信息通过 message显示出来
 
         :param status: The status of this UpdateScoreRequestModel.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -136,7 +147,7 @@ class UpdateScoreRequestModel:
         作品描述信息
 
         :param message: The message of this UpdateScoreRequestModel.
-        :type: str
+        :type message: str
         """
         self._message = message
 

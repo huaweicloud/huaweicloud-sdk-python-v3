@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateSyncEventsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateSyncEventsRequest:
     }
 
     def __init__(self, sync_task_id=None, body=None):
-        """CreateSyncEventsRequest - a model defined in huaweicloud sdk"""
+        """CreateSyncEventsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param sync_task_id: 同步任务ID
+        :type sync_task_id: str
+        :param body: Body of the CreateSyncEventsRequest
+        :type body: :class:`huaweicloudsdkoms.v2.SyncObjectReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateSyncEventsRequest:
         同步任务ID
 
         :param sync_task_id: The sync_task_id of this CreateSyncEventsRequest.
-        :type: str
+        :type sync_task_id: str
         """
         self._sync_task_id = sync_task_id
 
@@ -72,7 +79,7 @@ class CreateSyncEventsRequest:
 
 
         :return: The body of this CreateSyncEventsRequest.
-        :rtype: SyncObjectReq
+        :rtype: :class:`huaweicloudsdkoms.v2.SyncObjectReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CreateSyncEventsRequest:
 
 
         :param body: The body of this CreateSyncEventsRequest.
-        :type: SyncObjectReq
+        :type body: :class:`huaweicloudsdkoms.v2.SyncObjectReq`
         """
         self._body = body
 

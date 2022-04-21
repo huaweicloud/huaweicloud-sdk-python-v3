@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeploymentGroup:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class DeploymentGroup:
     }
 
     def __init__(self, name=None, region_name=None, project_id=None, os=None, slave_cluster_id=None, description=None):
-        """DeploymentGroup - a model defined in huaweicloud sdk"""
+        """DeploymentGroup
+
+        The model defined in huaweicloud sdk
+
+        :param name: 主机组名
+        :type name: str
+        :param region_name: 局点信息
+        :type region_name: str
+        :param project_id: devcloud项目id
+        :type project_id: str
+        :param os: 操作信息：windows|linux
+        :type os: str
+        :param slave_cluster_id: slave集群id，默认为null时使用devcloud八爪鱼slave集群，用户自定义slave时为slave集群id
+        :type slave_cluster_id: str
+        :param description: 描述
+        :type description: str
+        """
         
         
 
@@ -79,7 +94,7 @@ class DeploymentGroup:
         主机组名
 
         :param name: The name of this DeploymentGroup.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -101,7 +116,7 @@ class DeploymentGroup:
         局点信息
 
         :param region_name: The region_name of this DeploymentGroup.
-        :type: str
+        :type region_name: str
         """
         self._region_name = region_name
 
@@ -123,7 +138,7 @@ class DeploymentGroup:
         devcloud项目id
 
         :param project_id: The project_id of this DeploymentGroup.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -145,7 +160,7 @@ class DeploymentGroup:
         操作信息：windows|linux
 
         :param os: The os of this DeploymentGroup.
-        :type: str
+        :type os: str
         """
         self._os = os
 
@@ -167,7 +182,7 @@ class DeploymentGroup:
         slave集群id，默认为null时使用devcloud八爪鱼slave集群，用户自定义slave时为slave集群id
 
         :param slave_cluster_id: The slave_cluster_id of this DeploymentGroup.
-        :type: str
+        :type slave_cluster_id: str
         """
         self._slave_cluster_id = slave_cluster_id
 
@@ -189,7 +204,7 @@ class DeploymentGroup:
         描述
 
         :param description: The description of this DeploymentGroup.
-        :type: str
+        :type description: str
         """
         self._description = description
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListFirewallsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListFirewallsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, firewalls=None):
-        """ListFirewallsResponse - a model defined in huaweicloud sdk"""
+        """ListFirewallsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 网络ACL数量。
+        :type count: int
+        :param firewalls: 网络ACL列表。
+        :type firewalls: list[:class:`huaweicloudsdkiec.v1.Firewall`]
+        """
         
         super(ListFirewallsResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListFirewallsResponse(SdkResponse):
         网络ACL数量。
 
         :param count: The count of this ListFirewallsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -74,7 +81,7 @@ class ListFirewallsResponse(SdkResponse):
         网络ACL列表。
 
         :return: The firewalls of this ListFirewallsResponse.
-        :rtype: list[Firewall]
+        :rtype: list[:class:`huaweicloudsdkiec.v1.Firewall`]
         """
         return self._firewalls
 
@@ -85,7 +92,7 @@ class ListFirewallsResponse(SdkResponse):
         网络ACL列表。
 
         :param firewalls: The firewalls of this ListFirewallsResponse.
-        :type: list[Firewall]
+        :type firewalls: list[:class:`huaweicloudsdkiec.v1.Firewall`]
         """
         self._firewalls = firewalls
 

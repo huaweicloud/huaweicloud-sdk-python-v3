@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AssociateRouteTableAndSubnetReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AssociateRouteTableAndSubnetReq:
     }
 
     def __init__(self, associate=None, disassociate=None):
-        """AssociateRouteTableAndSubnetReq - a model defined in huaweicloud sdk"""
+        """AssociateRouteTableAndSubnetReq
+
+        The model defined in huaweicloud sdk
+
+        :param associate: 路由表关联子网ID列表 
+        :type associate: list[str]
+        :param disassociate: 路由表解除关联子网ID列表
+        :type disassociate: list[str]
+        """
         
         
 
@@ -63,7 +70,7 @@ class AssociateRouteTableAndSubnetReq:
         路由表关联子网ID列表 
 
         :param associate: The associate of this AssociateRouteTableAndSubnetReq.
-        :type: list[str]
+        :type associate: list[str]
         """
         self._associate = associate
 
@@ -85,7 +92,7 @@ class AssociateRouteTableAndSubnetReq:
         路由表解除关联子网ID列表
 
         :param disassociate: The disassociate of this AssociateRouteTableAndSubnetReq.
-        :type: list[str]
+        :type disassociate: list[str]
         """
         self._disassociate = disassociate
 

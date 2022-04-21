@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InstanceParam:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -72,7 +71,55 @@ class InstanceParam:
     }
 
     def __init__(self, agent_id=None, arch=None, cpu_memory=None, description=None, display_name=None, is_temporary=None, label_tag=None, plugin_enable_list=None, plugin_vars=None, port_id=None, private_ip=None, pvc_quantity=None, refresh_interval=None, repository_id=None, stack_id=None, task_type=None, token=None, vpc_id=None, instance_user_domain_name=None, instance_user_name=None, instance_domain_id=None, instance_user_id=None):
-        """InstanceParam - a model defined in huaweicloud sdk"""
+        """InstanceParam
+
+        The model defined in huaweicloud sdk
+
+        :param agent_id: 代理商id，教程活动场景下使用
+        :type agent_id: str
+        :param arch: cpu架构 x86|arm
+        :type arch: str
+        :param cpu_memory: cpu规格.arm架构支持4U8G，x86架构支持1U1G,2U4G,2U8G 与技术栈配置的规格对应，可通过技术栈管理ListStacks接口获取。如果标签不为空，以标签配置的技术栈规格为准。 quantum技术栈，x86架构cpu规格为2U8G;其他技术栈，x86架构cpu规格为1U1G,2U4G
+        :type cpu_memory: str
+        :param description: 描述
+        :type description: str
+        :param display_name: 实例名。 可以输入中文、数字、字母、下划线、点、破折号。长度介于3-100之间
+        :type display_name: str
+        :param is_temporary: 是否页面显示（以标签配置为准）
+        :type is_temporary: bool
+        :param label_tag: 实例标签（不同的第三方需要和CloudIDE服务共同设定标签），不传默认为default
+        :type label_tag: str
+        :param plugin_enable_list: 预装插件列表
+        :type plugin_enable_list: list[str]
+        :param plugin_vars: 预装插件参数
+        :type plugin_vars: dict(str, str)
+        :param port_id: 云服务器对应的portId，小网连接ecs的场景下使用
+        :type port_id: str
+        :param private_ip: 云服务器ip，小网连接ecs的场景下使用
+        :type private_ip: str
+        :param pvc_quantity: PVC规格 5GB|10GB|20GB
+        :type pvc_quantity: str
+        :param refresh_interval: 自动休眠时长。 arm架构,自动休眠时长只能设置成30，60。x86架构可取值为30，60，240，1440和-1。除-1外，其它值的单位为“分钟”。实例无操作超过自动休眠时长后，将会被暂停（已保存的数据不会被删除）。-1表示实例不会自动停止
+        :type refresh_interval: str
+        :param repository_id: 解放号的仓库id，解放号场景下使用
+        :type repository_id: int
+        :param stack_id: 技术栈ID，通过技术栈管理ListStacks接口获取。
+        :type stack_id: str
+        :param task_type: 任务类型，教程活动场景下使用
+        :type task_type: str
+        :param token: 解放号的token，解放号场景下使用
+        :type token: str
+        :param vpc_id: 云服务器对应的vpcId，小网连接ecs的场景下使用
+        :type vpc_id: str
+        :param instance_user_domain_name: 实例授权用户租户名
+        :type instance_user_domain_name: str
+        :param instance_user_name: 实例授权用户名
+        :type instance_user_name: str
+        :param instance_domain_id: 实例授权用户租户ID
+        :type instance_domain_id: str
+        :param instance_user_id: 实例授权用户ID
+        :type instance_user_id: str
+        """
         
         
 
@@ -158,7 +205,7 @@ class InstanceParam:
         代理商id，教程活动场景下使用
 
         :param agent_id: The agent_id of this InstanceParam.
-        :type: str
+        :type agent_id: str
         """
         self._agent_id = agent_id
 
@@ -180,7 +227,7 @@ class InstanceParam:
         cpu架构 x86|arm
 
         :param arch: The arch of this InstanceParam.
-        :type: str
+        :type arch: str
         """
         self._arch = arch
 
@@ -202,7 +249,7 @@ class InstanceParam:
         cpu规格.arm架构支持4U8G，x86架构支持1U1G,2U4G,2U8G 与技术栈配置的规格对应，可通过技术栈管理ListStacks接口获取。如果标签不为空，以标签配置的技术栈规格为准。 quantum技术栈，x86架构cpu规格为2U8G;其他技术栈，x86架构cpu规格为1U1G,2U4G
 
         :param cpu_memory: The cpu_memory of this InstanceParam.
-        :type: str
+        :type cpu_memory: str
         """
         self._cpu_memory = cpu_memory
 
@@ -224,7 +271,7 @@ class InstanceParam:
         描述
 
         :param description: The description of this InstanceParam.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -246,7 +293,7 @@ class InstanceParam:
         实例名。 可以输入中文、数字、字母、下划线、点、破折号。长度介于3-100之间
 
         :param display_name: The display_name of this InstanceParam.
-        :type: str
+        :type display_name: str
         """
         self._display_name = display_name
 
@@ -268,7 +315,7 @@ class InstanceParam:
         是否页面显示（以标签配置为准）
 
         :param is_temporary: The is_temporary of this InstanceParam.
-        :type: bool
+        :type is_temporary: bool
         """
         self._is_temporary = is_temporary
 
@@ -290,7 +337,7 @@ class InstanceParam:
         实例标签（不同的第三方需要和CloudIDE服务共同设定标签），不传默认为default
 
         :param label_tag: The label_tag of this InstanceParam.
-        :type: str
+        :type label_tag: str
         """
         self._label_tag = label_tag
 
@@ -312,7 +359,7 @@ class InstanceParam:
         预装插件列表
 
         :param plugin_enable_list: The plugin_enable_list of this InstanceParam.
-        :type: list[str]
+        :type plugin_enable_list: list[str]
         """
         self._plugin_enable_list = plugin_enable_list
 
@@ -334,7 +381,7 @@ class InstanceParam:
         预装插件参数
 
         :param plugin_vars: The plugin_vars of this InstanceParam.
-        :type: dict(str, str)
+        :type plugin_vars: dict(str, str)
         """
         self._plugin_vars = plugin_vars
 
@@ -356,7 +403,7 @@ class InstanceParam:
         云服务器对应的portId，小网连接ecs的场景下使用
 
         :param port_id: The port_id of this InstanceParam.
-        :type: str
+        :type port_id: str
         """
         self._port_id = port_id
 
@@ -378,7 +425,7 @@ class InstanceParam:
         云服务器ip，小网连接ecs的场景下使用
 
         :param private_ip: The private_ip of this InstanceParam.
-        :type: str
+        :type private_ip: str
         """
         self._private_ip = private_ip
 
@@ -400,7 +447,7 @@ class InstanceParam:
         PVC规格 5GB|10GB|20GB
 
         :param pvc_quantity: The pvc_quantity of this InstanceParam.
-        :type: str
+        :type pvc_quantity: str
         """
         self._pvc_quantity = pvc_quantity
 
@@ -422,7 +469,7 @@ class InstanceParam:
         自动休眠时长。 arm架构,自动休眠时长只能设置成30，60。x86架构可取值为30，60，240，1440和-1。除-1外，其它值的单位为“分钟”。实例无操作超过自动休眠时长后，将会被暂停（已保存的数据不会被删除）。-1表示实例不会自动停止
 
         :param refresh_interval: The refresh_interval of this InstanceParam.
-        :type: str
+        :type refresh_interval: str
         """
         self._refresh_interval = refresh_interval
 
@@ -444,7 +491,7 @@ class InstanceParam:
         解放号的仓库id，解放号场景下使用
 
         :param repository_id: The repository_id of this InstanceParam.
-        :type: int
+        :type repository_id: int
         """
         self._repository_id = repository_id
 
@@ -466,7 +513,7 @@ class InstanceParam:
         技术栈ID，通过技术栈管理ListStacks接口获取。
 
         :param stack_id: The stack_id of this InstanceParam.
-        :type: str
+        :type stack_id: str
         """
         self._stack_id = stack_id
 
@@ -488,7 +535,7 @@ class InstanceParam:
         任务类型，教程活动场景下使用
 
         :param task_type: The task_type of this InstanceParam.
-        :type: str
+        :type task_type: str
         """
         self._task_type = task_type
 
@@ -510,7 +557,7 @@ class InstanceParam:
         解放号的token，解放号场景下使用
 
         :param token: The token of this InstanceParam.
-        :type: str
+        :type token: str
         """
         self._token = token
 
@@ -532,7 +579,7 @@ class InstanceParam:
         云服务器对应的vpcId，小网连接ecs的场景下使用
 
         :param vpc_id: The vpc_id of this InstanceParam.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -554,7 +601,7 @@ class InstanceParam:
         实例授权用户租户名
 
         :param instance_user_domain_name: The instance_user_domain_name of this InstanceParam.
-        :type: str
+        :type instance_user_domain_name: str
         """
         self._instance_user_domain_name = instance_user_domain_name
 
@@ -576,7 +623,7 @@ class InstanceParam:
         实例授权用户名
 
         :param instance_user_name: The instance_user_name of this InstanceParam.
-        :type: str
+        :type instance_user_name: str
         """
         self._instance_user_name = instance_user_name
 
@@ -598,7 +645,7 @@ class InstanceParam:
         实例授权用户租户ID
 
         :param instance_domain_id: The instance_domain_id of this InstanceParam.
-        :type: str
+        :type instance_domain_id: str
         """
         self._instance_domain_id = instance_domain_id
 
@@ -620,7 +667,7 @@ class InstanceParam:
         实例授权用户ID
 
         :param instance_user_id: The instance_user_id of this InstanceParam.
-        :type: str
+        :type instance_user_id: str
         """
         self._instance_user_id = instance_user_id
 

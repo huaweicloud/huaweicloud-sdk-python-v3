@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResourcesPlan:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ResourcesPlan:
     }
 
     def __init__(self, period_type=None, start_time=None, end_time=None, min_capacity=None, max_capacity=None):
-        """ResourcesPlan - a model defined in huaweicloud sdk"""
+        """ResourcesPlan
+
+        The model defined in huaweicloud sdk
+
+        :param period_type: 资源计划的周期类型，当前只允许以下类型：  daily
+        :type period_type: str
+        :param start_time: 资源计划的起始时间，格式为“hour:minute”，表示时间在0:00-23:59之间。
+        :type start_time: str
+        :param end_time: 资源计划的结束时间，格式与“start_time”相同，不早于start_time表示的时间，且与start_time间隔不小于30min。
+        :type end_time: str
+        :param min_capacity: 资源计划内该节点组的最小保留节点数。  取值范围：[0～500]
+        :type min_capacity: int
+        :param max_capacity: 资源计划内该节点组的最大保留节点数。  取值范围：[0～500]
+        :type max_capacity: int
+        """
         
         
 
@@ -73,7 +86,7 @@ class ResourcesPlan:
         资源计划的周期类型，当前只允许以下类型：  daily
 
         :param period_type: The period_type of this ResourcesPlan.
-        :type: str
+        :type period_type: str
         """
         self._period_type = period_type
 
@@ -95,7 +108,7 @@ class ResourcesPlan:
         资源计划的起始时间，格式为“hour:minute”，表示时间在0:00-23:59之间。
 
         :param start_time: The start_time of this ResourcesPlan.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -117,7 +130,7 @@ class ResourcesPlan:
         资源计划的结束时间，格式与“start_time”相同，不早于start_time表示的时间，且与start_time间隔不小于30min。
 
         :param end_time: The end_time of this ResourcesPlan.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -139,7 +152,7 @@ class ResourcesPlan:
         资源计划内该节点组的最小保留节点数。  取值范围：[0～500]
 
         :param min_capacity: The min_capacity of this ResourcesPlan.
-        :type: int
+        :type min_capacity: int
         """
         self._min_capacity = min_capacity
 
@@ -161,7 +174,7 @@ class ResourcesPlan:
         资源计划内该节点组的最大保留节点数。  取值范围：[0～500]
 
         :param max_capacity: The max_capacity of this ResourcesPlan.
-        :type: int
+        :type max_capacity: int
         """
         self._max_capacity = max_capacity
 

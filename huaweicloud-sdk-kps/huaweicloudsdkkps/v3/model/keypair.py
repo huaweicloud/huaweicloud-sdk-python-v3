@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Keypair:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class Keypair:
     }
 
     def __init__(self, name=None, type=None, scope=None, public_key=None, fingerprint=None, is_key_protection=None, frozen_state=None):
-        """Keypair - a model defined in huaweicloud sdk"""
+        """Keypair
+
+        The model defined in huaweicloud sdk
+
+        :param name: SSH密钥对的名称
+        :type name: str
+        :param type: SSH密钥对的类型，值为“ssh”或“x509”
+        :type type: str
+        :param scope: 租户级或者用户级
+        :type scope: str
+        :param public_key: SSH密钥对对应的publicKey信息
+        :type public_key: str
+        :param fingerprint: SSH密钥对应指纹信息
+        :type fingerprint: str
+        :param is_key_protection: 是否托管密钥
+        :type is_key_protection: bool
+        :param frozen_state: 冻结状态 - 0：正常状态 - 1：普通冻结 - 2：公安冻结 - 3：普通冻结及公安冻结 - 4：违规冻结 - 5：普通冻结及违规冻结 - 6：公安冻结及违规冻结 - 7：普通冻结、公安冻结及违规冻结 - 8：未实名认证冻结 - 9：普通冻结及未实名认证冻结 - 10：公安冻结及未实名认证冻结
+        :type frozen_state: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class Keypair:
         SSH密钥对的名称
 
         :param name: The name of this Keypair.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -110,7 +127,7 @@ class Keypair:
         SSH密钥对的类型，值为“ssh”或“x509”
 
         :param type: The type of this Keypair.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -132,7 +149,7 @@ class Keypair:
         租户级或者用户级
 
         :param scope: The scope of this Keypair.
-        :type: str
+        :type scope: str
         """
         self._scope = scope
 
@@ -154,7 +171,7 @@ class Keypair:
         SSH密钥对对应的publicKey信息
 
         :param public_key: The public_key of this Keypair.
-        :type: str
+        :type public_key: str
         """
         self._public_key = public_key
 
@@ -176,7 +193,7 @@ class Keypair:
         SSH密钥对应指纹信息
 
         :param fingerprint: The fingerprint of this Keypair.
-        :type: str
+        :type fingerprint: str
         """
         self._fingerprint = fingerprint
 
@@ -198,7 +215,7 @@ class Keypair:
         是否托管密钥
 
         :param is_key_protection: The is_key_protection of this Keypair.
-        :type: bool
+        :type is_key_protection: bool
         """
         self._is_key_protection = is_key_protection
 
@@ -220,7 +237,7 @@ class Keypair:
         冻结状态 - 0：正常状态 - 1：普通冻结 - 2：公安冻结 - 3：普通冻结及公安冻结 - 4：违规冻结 - 5：普通冻结及违规冻结 - 6：公安冻结及违规冻结 - 7：普通冻结、公安冻结及违规冻结 - 8：未实名认证冻结 - 9：普通冻结及未实名认证冻结 - 10：公安冻结及未实名认证冻结
 
         :param frozen_state: The frozen_state of this Keypair.
-        :type: str
+        :type frozen_state: str
         """
         self._frozen_state = frozen_state
 

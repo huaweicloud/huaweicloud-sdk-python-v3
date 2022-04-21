@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PrePaidServerSecurityGroup:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class PrePaidServerSecurityGroup:
     }
 
     def __init__(self, id=None):
-        """PrePaidServerSecurityGroup - a model defined in huaweicloud sdk"""
+        """PrePaidServerSecurityGroup
+
+        The model defined in huaweicloud sdk
+
+        :param id: 可以为空，待创建云服务器的安全组，会对创建云服务器中配置的网卡生效。需要指定已有安全组的ID，UUID格式；若不传值，底层会按照空处理，不会创建安全组。
+        :type id: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class PrePaidServerSecurityGroup:
         可以为空，待创建云服务器的安全组，会对创建云服务器中配置的网卡生效。需要指定已有安全组的ID，UUID格式；若不传值，底层会按照空处理，不会创建安全组。
 
         :param id: The id of this PrePaidServerSecurityGroup.
-        :type: str
+        :type id: str
         """
         self._id = id
 

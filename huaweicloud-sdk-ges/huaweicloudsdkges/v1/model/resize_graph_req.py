@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResizeGraphReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ResizeGraphReq:
     }
 
     def __init__(self, resize=None):
-        """ResizeGraphReq - a model defined in huaweicloud sdk"""
+        """ResizeGraphReq
+
+        The model defined in huaweicloud sdk
+
+        :param resize: 
+        :type resize: :class:`huaweicloudsdkges.v1.GraphSizeTypeIndexReq`
+        """
         
         
 
@@ -45,7 +50,7 @@ class ResizeGraphReq:
 
 
         :return: The resize of this ResizeGraphReq.
-        :rtype: GraphSizeTypeIndexReq
+        :rtype: :class:`huaweicloudsdkges.v1.GraphSizeTypeIndexReq`
         """
         return self._resize
 
@@ -55,7 +60,7 @@ class ResizeGraphReq:
 
 
         :param resize: The resize of this ResizeGraphReq.
-        :type: GraphSizeTypeIndexReq
+        :type resize: :class:`huaweicloudsdkges.v1.GraphSizeTypeIndexReq`
         """
         self._resize = resize
 

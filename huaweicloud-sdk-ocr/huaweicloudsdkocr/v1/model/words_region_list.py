@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class WordsRegionList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class WordsRegionList:
     }
 
     def __init__(self, type=None, words_block_count=None, words_block_list=None):
-        """WordsRegionList - a model defined in huaweicloud sdk"""
+        """WordsRegionList
+
+        The model defined in huaweicloud sdk
+
+        :param type: 文字识别区域类型。 - text：文本识别区域; - table：表格识别区域。 
+        :type type: str
+        :param words_block_count: 子区域识别文字块数目。 
+        :type words_block_count: int
+        :param words_block_list: 子区域识别文字块列表，输出顺序从左到右，先上后下。 
+        :type words_block_list: list[:class:`huaweicloudsdkocr.v1.GeneralTableWordsBlockList`]
+        """
         
         
 
@@ -65,7 +74,7 @@ class WordsRegionList:
         文字识别区域类型。 - text：文本识别区域; - table：表格识别区域。 
 
         :param type: The type of this WordsRegionList.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -87,7 +96,7 @@ class WordsRegionList:
         子区域识别文字块数目。 
 
         :param words_block_count: The words_block_count of this WordsRegionList.
-        :type: int
+        :type words_block_count: int
         """
         self._words_block_count = words_block_count
 
@@ -98,7 +107,7 @@ class WordsRegionList:
         子区域识别文字块列表，输出顺序从左到右，先上后下。 
 
         :return: The words_block_list of this WordsRegionList.
-        :rtype: list[GeneralTableWordsBlockList]
+        :rtype: list[:class:`huaweicloudsdkocr.v1.GeneralTableWordsBlockList`]
         """
         return self._words_block_list
 
@@ -109,7 +118,7 @@ class WordsRegionList:
         子区域识别文字块列表，输出顺序从左到右，先上后下。 
 
         :param words_block_list: The words_block_list of this WordsRegionList.
-        :type: list[GeneralTableWordsBlockList]
+        :type words_block_list: list[:class:`huaweicloudsdkocr.v1.GeneralTableWordsBlockList`]
         """
         self._words_block_list = words_block_list
 

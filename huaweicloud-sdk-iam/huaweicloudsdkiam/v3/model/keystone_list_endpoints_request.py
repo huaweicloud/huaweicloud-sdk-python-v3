@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneListEndpointsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class KeystoneListEndpointsRequest:
     }
 
     def __init__(self, interface=None, service_id=None):
-        """KeystoneListEndpointsRequest - a model defined in huaweicloud sdk"""
+        """KeystoneListEndpointsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param interface: 终端节点平面。可能取值为：public、internal或admin。public： 用户可在公共网络接口上看到。internal：用户可在内部网络接口上看到。admin：管理员可以在安全的网络接口上看到。
+        :type interface: str
+        :param service_id: 服务ID。
+        :type service_id: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class KeystoneListEndpointsRequest:
         终端节点平面。可能取值为：public、internal或admin。public： 用户可在公共网络接口上看到。internal：用户可在内部网络接口上看到。admin：管理员可以在安全的网络接口上看到。
 
         :param interface: The interface of this KeystoneListEndpointsRequest.
-        :type: str
+        :type interface: str
         """
         self._interface = interface
 
@@ -85,7 +92,7 @@ class KeystoneListEndpointsRequest:
         服务ID。
 
         :param service_id: The service_id of this KeystoneListEndpointsRequest.
-        :type: str
+        :type service_id: str
         """
         self._service_id = service_id
 

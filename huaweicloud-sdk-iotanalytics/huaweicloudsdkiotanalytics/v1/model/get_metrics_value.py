@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GetMetricsValue:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class GetMetricsValue:
     }
 
     def __init__(self, type=None, transform=None, aggregate=None):
-        """GetMetricsValue - a model defined in huaweicloud sdk"""
+        """GetMetricsValue
+
+        The model defined in huaweicloud sdk
+
+        :param type: 查询类型，经过转换计算的序列值（transform）、经过聚合计算的序列值（aggregate）
+        :type type: str
+        :param transform: 
+        :type transform: :class:`huaweicloudsdkiotanalytics.v1.TransformMetricsRequest`
+        :param aggregate: 
+        :type aggregate: :class:`huaweicloudsdkiotanalytics.v1.AggregateMetricsRequest`
+        """
         
         
 
@@ -67,7 +76,7 @@ class GetMetricsValue:
         查询类型，经过转换计算的序列值（transform）、经过聚合计算的序列值（aggregate）
 
         :param type: The type of this GetMetricsValue.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -77,7 +86,7 @@ class GetMetricsValue:
 
 
         :return: The transform of this GetMetricsValue.
-        :rtype: TransformMetricsRequest
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.TransformMetricsRequest`
         """
         return self._transform
 
@@ -87,7 +96,7 @@ class GetMetricsValue:
 
 
         :param transform: The transform of this GetMetricsValue.
-        :type: TransformMetricsRequest
+        :type transform: :class:`huaweicloudsdkiotanalytics.v1.TransformMetricsRequest`
         """
         self._transform = transform
 
@@ -97,7 +106,7 @@ class GetMetricsValue:
 
 
         :return: The aggregate of this GetMetricsValue.
-        :rtype: AggregateMetricsRequest
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.AggregateMetricsRequest`
         """
         return self._aggregate
 
@@ -107,7 +116,7 @@ class GetMetricsValue:
 
 
         :param aggregate: The aggregate of this GetMetricsValue.
-        :type: AggregateMetricsRequest
+        :type aggregate: :class:`huaweicloudsdkiotanalytics.v1.AggregateMetricsRequest`
         """
         self._aggregate = aggregate
 

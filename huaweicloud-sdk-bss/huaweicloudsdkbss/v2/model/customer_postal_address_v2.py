@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CustomerPostalAddressV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class CustomerPostalAddressV2:
     }
 
     def __init__(self, address_id=None, recipient=None, nationality=None, province=None, city=None, district=None, address=None, zipcode=None, areacode=None, mobile_phone=None, is_default=None):
-        """CustomerPostalAddressV2 - a model defined in huaweicloud sdk"""
+        """CustomerPostalAddressV2
+
+        The model defined in huaweicloud sdk
+
+        :param address_id: 邮寄地址ID。
+        :type address_id: str
+        :param recipient: 收件人姓名。
+        :type recipient: str
+        :param nationality: 国家。例如：中国
+        :type nationality: str
+        :param province: 省/自治区/直辖市。例如：江苏省。
+        :type province: str
+        :param city: 市/区。例如：南京市。
+        :type city: str
+        :param district: 区。例如：雨花区。
+        :type district: str
+        :param address: 邮寄详细地址。
+        :type address: str
+        :param zipcode: 邮编。
+        :type zipcode: str
+        :param areacode: 国家码。例如： 中国：0086
+        :type areacode: str
+        :param mobile_phone: 手机号码，不带国家码。
+        :type mobile_phone: str
+        :param is_default: 是否默认地址，默认为0。 1：默认地址0：非默认地址
+        :type is_default: int
+        """
         
         
 
@@ -108,7 +133,7 @@ class CustomerPostalAddressV2:
         邮寄地址ID。
 
         :param address_id: The address_id of this CustomerPostalAddressV2.
-        :type: str
+        :type address_id: str
         """
         self._address_id = address_id
 
@@ -130,7 +155,7 @@ class CustomerPostalAddressV2:
         收件人姓名。
 
         :param recipient: The recipient of this CustomerPostalAddressV2.
-        :type: str
+        :type recipient: str
         """
         self._recipient = recipient
 
@@ -152,7 +177,7 @@ class CustomerPostalAddressV2:
         国家。例如：中国
 
         :param nationality: The nationality of this CustomerPostalAddressV2.
-        :type: str
+        :type nationality: str
         """
         self._nationality = nationality
 
@@ -174,7 +199,7 @@ class CustomerPostalAddressV2:
         省/自治区/直辖市。例如：江苏省。
 
         :param province: The province of this CustomerPostalAddressV2.
-        :type: str
+        :type province: str
         """
         self._province = province
 
@@ -196,7 +221,7 @@ class CustomerPostalAddressV2:
         市/区。例如：南京市。
 
         :param city: The city of this CustomerPostalAddressV2.
-        :type: str
+        :type city: str
         """
         self._city = city
 
@@ -218,7 +243,7 @@ class CustomerPostalAddressV2:
         区。例如：雨花区。
 
         :param district: The district of this CustomerPostalAddressV2.
-        :type: str
+        :type district: str
         """
         self._district = district
 
@@ -240,7 +265,7 @@ class CustomerPostalAddressV2:
         邮寄详细地址。
 
         :param address: The address of this CustomerPostalAddressV2.
-        :type: str
+        :type address: str
         """
         self._address = address
 
@@ -262,7 +287,7 @@ class CustomerPostalAddressV2:
         邮编。
 
         :param zipcode: The zipcode of this CustomerPostalAddressV2.
-        :type: str
+        :type zipcode: str
         """
         self._zipcode = zipcode
 
@@ -284,7 +309,7 @@ class CustomerPostalAddressV2:
         国家码。例如： 中国：0086
 
         :param areacode: The areacode of this CustomerPostalAddressV2.
-        :type: str
+        :type areacode: str
         """
         self._areacode = areacode
 
@@ -306,7 +331,7 @@ class CustomerPostalAddressV2:
         手机号码，不带国家码。
 
         :param mobile_phone: The mobile_phone of this CustomerPostalAddressV2.
-        :type: str
+        :type mobile_phone: str
         """
         self._mobile_phone = mobile_phone
 
@@ -328,7 +353,7 @@ class CustomerPostalAddressV2:
         是否默认地址，默认为0。 1：默认地址0：非默认地址
 
         :param is_default: The is_default of this CustomerPostalAddressV2.
-        :type: int
+        :type is_default: int
         """
         self._is_default = is_default
 

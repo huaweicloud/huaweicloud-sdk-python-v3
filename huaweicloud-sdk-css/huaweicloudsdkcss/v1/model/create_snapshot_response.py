@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateSnapshotResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateSnapshotResponse(SdkResponse):
     }
 
     def __init__(self, name=None, description=None, indices=None):
-        """CreateSnapshotResponse - a model defined in huaweicloud sdk"""
+        """CreateSnapshotResponse
+
+        The model defined in huaweicloud sdk
+
+        :param name: 快照名称。
+        :type name: str
+        :param description: 快照描述。
+        :type description: str
+        :param indices: 指定要备份的索引名称。
+        :type indices: str
+        """
         
         super(CreateSnapshotResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class CreateSnapshotResponse(SdkResponse):
         快照名称。
 
         :param name: The name of this CreateSnapshotResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -90,7 +99,7 @@ class CreateSnapshotResponse(SdkResponse):
         快照描述。
 
         :param description: The description of this CreateSnapshotResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -112,7 +121,7 @@ class CreateSnapshotResponse(SdkResponse):
         指定要备份的索引名称。
 
         :param indices: The indices of this CreateSnapshotResponse.
-        :type: str
+        :type indices: str
         """
         self._indices = indices
 

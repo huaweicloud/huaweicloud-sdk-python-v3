@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GlanceListImageMemberSchemasResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class GlanceListImageMemberSchemasResponse(SdkResponse):
     }
 
     def __init__(self, links=None, name=None, properties=None):
-        """GlanceListImageMemberSchemasResponse - a model defined in huaweicloud sdk"""
+        """GlanceListImageMemberSchemasResponse
+
+        The model defined in huaweicloud sdk
+
+        :param links: 视图链接。
+        :type links: list[:class:`huaweicloudsdkims.v2.Links`]
+        :param name: 视图名称。
+        :type name: str
+        :param properties: 镜像属性说明，主要是对基础属性的说明，包含每个属性的取值类型，用途。
+        :type properties: object
+        """
         
         super(GlanceListImageMemberSchemasResponse, self).__init__()
 
@@ -57,7 +66,7 @@ class GlanceListImageMemberSchemasResponse(SdkResponse):
         视图链接。
 
         :return: The links of this GlanceListImageMemberSchemasResponse.
-        :rtype: list[Links]
+        :rtype: list[:class:`huaweicloudsdkims.v2.Links`]
         """
         return self._links
 
@@ -68,7 +77,7 @@ class GlanceListImageMemberSchemasResponse(SdkResponse):
         视图链接。
 
         :param links: The links of this GlanceListImageMemberSchemasResponse.
-        :type: list[Links]
+        :type links: list[:class:`huaweicloudsdkims.v2.Links`]
         """
         self._links = links
 
@@ -90,7 +99,7 @@ class GlanceListImageMemberSchemasResponse(SdkResponse):
         视图名称。
 
         :param name: The name of this GlanceListImageMemberSchemasResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -112,7 +121,7 @@ class GlanceListImageMemberSchemasResponse(SdkResponse):
         镜像属性说明，主要是对基础属性的说明，包含每个属性的取值类型，用途。
 
         :param properties: The properties of this GlanceListImageMemberSchemasResponse.
-        :type: object
+        :type properties: object
         """
         self._properties = properties
 

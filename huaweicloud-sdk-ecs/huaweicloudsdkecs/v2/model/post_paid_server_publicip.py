@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PostPaidServerPublicip:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class PostPaidServerPublicip:
     }
 
     def __init__(self, id=None, eip=None):
-        """PostPaidServerPublicip - a model defined in huaweicloud sdk"""
+        """PostPaidServerPublicip
+
+        The model defined in huaweicloud sdk
+
+        :param id: 为待创建云服务器分配已有弹性IP时，分配的弹性IP的ID，UUID格式。  约束：只能分配状态（status）为DOWN的弹性IP。
+        :type id: str
+        :param eip: 
+        :type eip: :class:`huaweicloudsdkecs.v2.PostPaidServerEip`
+        """
         
         
 
@@ -63,7 +70,7 @@ class PostPaidServerPublicip:
         为待创建云服务器分配已有弹性IP时，分配的弹性IP的ID，UUID格式。  约束：只能分配状态（status）为DOWN的弹性IP。
 
         :param id: The id of this PostPaidServerPublicip.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -73,7 +80,7 @@ class PostPaidServerPublicip:
 
 
         :return: The eip of this PostPaidServerPublicip.
-        :rtype: PostPaidServerEip
+        :rtype: :class:`huaweicloudsdkecs.v2.PostPaidServerEip`
         """
         return self._eip
 
@@ -83,7 +90,7 @@ class PostPaidServerPublicip:
 
 
         :param eip: The eip of this PostPaidServerPublicip.
-        :type: PostPaidServerEip
+        :type eip: :class:`huaweicloudsdkecs.v2.PostPaidServerEip`
         """
         self._eip = eip
 

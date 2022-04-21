@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDiffCommitRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowDiffCommitRequest:
     }
 
     def __init__(self, repo_id=None, sha=None):
-        """ShowDiffCommitRequest - a model defined in huaweicloud sdk"""
+        """ShowDiffCommitRequest
+
+        The model defined in huaweicloud sdk
+
+        :param repo_id: 仓库短id
+        :type repo_id: int
+        :param sha: commit id，仓库的branch名或tag名
+        :type sha: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ShowDiffCommitRequest:
         仓库短id
 
         :param repo_id: The repo_id of this ShowDiffCommitRequest.
-        :type: int
+        :type repo_id: int
         """
         self._repo_id = repo_id
 
@@ -83,7 +90,7 @@ class ShowDiffCommitRequest:
         commit id，仓库的branch名或tag名
 
         :param sha: The sha of this ShowDiffCommitRequest.
-        :type: str
+        :type sha: str
         """
         self._sha = sha
 

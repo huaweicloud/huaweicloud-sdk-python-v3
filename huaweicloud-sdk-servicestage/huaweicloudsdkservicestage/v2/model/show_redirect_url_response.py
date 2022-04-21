@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowRedirectUrlResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowRedirectUrlResponse(SdkResponse):
     }
 
     def __init__(self, url=None):
-        """ShowRedirectUrlResponse - a model defined in huaweicloud sdk"""
+        """ShowRedirectUrlResponse
+
+        The model defined in huaweicloud sdk
+
+        :param url: 授权重定向URL。
+        :type url: str
+        """
         
         super(ShowRedirectUrlResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class ShowRedirectUrlResponse(SdkResponse):
         授权重定向URL。
 
         :param url: The url of this ShowRedirectUrlResponse.
-        :type: str
+        :type url: str
         """
         self._url = url
 

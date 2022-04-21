@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LoginProtectResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class LoginProtectResult:
     }
 
     def __init__(self, enabled=None, user_id=None, verification_method=None):
-        """LoginProtectResult - a model defined in huaweicloud sdk"""
+        """LoginProtectResult
+
+        The model defined in huaweicloud sdk
+
+        :param enabled: IAM用户是否开启登录保护，开启为\&quot;true\&quot;，未开启为\&quot;false\&quot;。
+        :type enabled: bool
+        :param user_id: IAM用户ID。
+        :type user_id: str
+        :param verification_method: IAM用户登录验证方式。
+        :type verification_method: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class LoginProtectResult:
         IAM用户是否开启登录保护，开启为\"true\"，未开启为\"false\"。
 
         :param enabled: The enabled of this LoginProtectResult.
-        :type: bool
+        :type enabled: bool
         """
         self._enabled = enabled
 
@@ -87,7 +96,7 @@ class LoginProtectResult:
         IAM用户ID。
 
         :param user_id: The user_id of this LoginProtectResult.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -109,7 +118,7 @@ class LoginProtectResult:
         IAM用户登录验证方式。
 
         :param verification_method: The verification_method of this LoginProtectResult.
-        :type: str
+        :type verification_method: str
         """
         self._verification_method = verification_method
 

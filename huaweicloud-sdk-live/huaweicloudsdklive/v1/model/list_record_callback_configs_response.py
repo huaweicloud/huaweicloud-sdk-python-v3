@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRecordCallbackConfigsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListRecordCallbackConfigsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, callback_config=None):
-        """ListRecordCallbackConfigsResponse - a model defined in huaweicloud sdk"""
+        """ListRecordCallbackConfigsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 查询结果的总元素数量
+        :type total: int
+        :param callback_config: 回调配置
+        :type callback_config: list[:class:`huaweicloudsdklive.v1.RecordCallbackConfig`]
+        """
         
         super(ListRecordCallbackConfigsResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListRecordCallbackConfigsResponse(SdkResponse):
         查询结果的总元素数量
 
         :param total: The total of this ListRecordCallbackConfigsResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -74,7 +81,7 @@ class ListRecordCallbackConfigsResponse(SdkResponse):
         回调配置
 
         :return: The callback_config of this ListRecordCallbackConfigsResponse.
-        :rtype: list[RecordCallbackConfig]
+        :rtype: list[:class:`huaweicloudsdklive.v1.RecordCallbackConfig`]
         """
         return self._callback_config
 
@@ -85,7 +92,7 @@ class ListRecordCallbackConfigsResponse(SdkResponse):
         回调配置
 
         :param callback_config: The callback_config of this ListRecordCallbackConfigsResponse.
-        :type: list[RecordCallbackConfig]
+        :type callback_config: list[:class:`huaweicloudsdklive.v1.RecordCallbackConfig`]
         """
         self._callback_config = callback_config
 

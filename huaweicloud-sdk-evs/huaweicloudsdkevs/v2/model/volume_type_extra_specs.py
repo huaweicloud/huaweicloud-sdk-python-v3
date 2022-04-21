@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VolumeTypeExtraSpecs:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class VolumeTypeExtraSpecs:
     }
 
     def __init__(self, reske_yavailability_zones=None, availability_zone=None, os_vendor_extendedsold_out_availability_zones=None, volume_backend_name=None, h_wavailability_zone=None):
-        """VolumeTypeExtraSpecs - a model defined in huaweicloud sdk"""
+        """VolumeTypeExtraSpecs
+
+        The model defined in huaweicloud sdk
+
+        :param reske_yavailability_zones: 支持当前云硬盘类型的可用区列表，列表的元素以逗号分隔。
+        :type reske_yavailability_zones: str
+        :param availability_zone: 预留属性。
+        :type availability_zone: str
+        :param os_vendor_extendedsold_out_availability_zones: 当前云硬盘类型已售罄的可用区列表，列表的元素以逗号分隔。
+        :type os_vendor_extendedsold_out_availability_zones: str
+        :param volume_backend_name: 预留属性。
+        :type volume_backend_name: str
+        :param h_wavailability_zone: 预留属性。
+        :type h_wavailability_zone: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class VolumeTypeExtraSpecs:
         支持当前云硬盘类型的可用区列表，列表的元素以逗号分隔。
 
         :param reske_yavailability_zones: The reske_yavailability_zones of this VolumeTypeExtraSpecs.
-        :type: str
+        :type reske_yavailability_zones: str
         """
         self._reske_yavailability_zones = reske_yavailability_zones
 
@@ -100,7 +113,7 @@ class VolumeTypeExtraSpecs:
         预留属性。
 
         :param availability_zone: The availability_zone of this VolumeTypeExtraSpecs.
-        :type: str
+        :type availability_zone: str
         """
         self._availability_zone = availability_zone
 
@@ -122,7 +135,7 @@ class VolumeTypeExtraSpecs:
         当前云硬盘类型已售罄的可用区列表，列表的元素以逗号分隔。
 
         :param os_vendor_extendedsold_out_availability_zones: The os_vendor_extendedsold_out_availability_zones of this VolumeTypeExtraSpecs.
-        :type: str
+        :type os_vendor_extendedsold_out_availability_zones: str
         """
         self._os_vendor_extendedsold_out_availability_zones = os_vendor_extendedsold_out_availability_zones
 
@@ -144,7 +157,7 @@ class VolumeTypeExtraSpecs:
         预留属性。
 
         :param volume_backend_name: The volume_backend_name of this VolumeTypeExtraSpecs.
-        :type: str
+        :type volume_backend_name: str
         """
         self._volume_backend_name = volume_backend_name
 
@@ -166,7 +179,7 @@ class VolumeTypeExtraSpecs:
         预留属性。
 
         :param h_wavailability_zone: The h_wavailability_zone of this VolumeTypeExtraSpecs.
-        :type: str
+        :type h_wavailability_zone: str
         """
         self._h_wavailability_zone = h_wavailability_zone
 

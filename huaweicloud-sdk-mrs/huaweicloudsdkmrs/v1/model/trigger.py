@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Trigger:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class Trigger:
     }
 
     def __init__(self, metric_name=None, metric_value=None, comparison_operator=None, evaluation_periods=None):
-        """Trigger - a model defined in huaweicloud sdk"""
+        """Trigger
+
+        The model defined in huaweicloud sdk
+
+        :param metric_name: 指标名称。  该触发条件会依据该名称对应指标的值来进行判断。  最大长度为64个字符。
+        :type metric_name: str
+        :param metric_value: 指标阈值。  触发该条件的指标阈值，只允许输入整数或者带两位小数的数。
+        :type metric_value: str
+        :param comparison_operator: 指标判断逻辑运算符，包括：  - LT：小于 - GT：大于 - LTOE：小于等于 - GTOE：大于等于
+        :type comparison_operator: str
+        :param evaluation_periods: 判断连续满足指标阈值的周期数(一个周期为5分钟)。  取值范围[1～288]
+        :type evaluation_periods: int
+        """
         
         
 
@@ -70,7 +81,7 @@ class Trigger:
         指标名称。  该触发条件会依据该名称对应指标的值来进行判断。  最大长度为64个字符。
 
         :param metric_name: The metric_name of this Trigger.
-        :type: str
+        :type metric_name: str
         """
         self._metric_name = metric_name
 
@@ -92,7 +103,7 @@ class Trigger:
         指标阈值。  触发该条件的指标阈值，只允许输入整数或者带两位小数的数。
 
         :param metric_value: The metric_value of this Trigger.
-        :type: str
+        :type metric_value: str
         """
         self._metric_value = metric_value
 
@@ -114,7 +125,7 @@ class Trigger:
         指标判断逻辑运算符，包括：  - LT：小于 - GT：大于 - LTOE：小于等于 - GTOE：大于等于
 
         :param comparison_operator: The comparison_operator of this Trigger.
-        :type: str
+        :type comparison_operator: str
         """
         self._comparison_operator = comparison_operator
 
@@ -136,7 +147,7 @@ class Trigger:
         判断连续满足指标阈值的周期数(一个周期为5分钟)。  取值范围[1～288]
 
         :param evaluation_periods: The evaluation_periods of this Trigger.
-        :type: int
+        :type evaluation_periods: int
         """
         self._evaluation_periods = evaluation_periods
 

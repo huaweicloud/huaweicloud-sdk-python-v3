@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowGaussMySqlQuotasRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowGaussMySqlQuotasRequest:
     }
 
     def __init__(self, x_language=None, offset=None, limit=None, enterprise_project_name=None):
-        """ShowGaussMySqlQuotasRequest - a model defined in huaweicloud sdk"""
+        """ShowGaussMySqlQuotasRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言
+        :type x_language: str
+        :param offset: 索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。 取值范围：0 - 10000
+        :type offset: str
+        :param limit: 查询记录数。默认为10，不能为负数，最小值为1，最大值为100。
+        :type limit: str
+        :param enterprise_project_name: 企业项目名称。
+        :type enterprise_project_name: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class ShowGaussMySqlQuotasRequest:
         语言
 
         :param x_language: The x_language of this ShowGaussMySqlQuotasRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -95,7 +106,7 @@ class ShowGaussMySqlQuotasRequest:
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。 取值范围：0 - 10000
 
         :param offset: The offset of this ShowGaussMySqlQuotasRequest.
-        :type: str
+        :type offset: str
         """
         self._offset = offset
 
@@ -117,7 +128,7 @@ class ShowGaussMySqlQuotasRequest:
         查询记录数。默认为10，不能为负数，最小值为1，最大值为100。
 
         :param limit: The limit of this ShowGaussMySqlQuotasRequest.
-        :type: str
+        :type limit: str
         """
         self._limit = limit
 
@@ -139,7 +150,7 @@ class ShowGaussMySqlQuotasRequest:
         企业项目名称。
 
         :param enterprise_project_name: The enterprise_project_name of this ShowGaussMySqlQuotasRequest.
-        :type: str
+        :type enterprise_project_name: str
         """
         self._enterprise_project_name = enterprise_project_name
 

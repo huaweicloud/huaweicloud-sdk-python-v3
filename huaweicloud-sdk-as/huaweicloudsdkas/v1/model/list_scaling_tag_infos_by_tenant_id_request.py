@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListScalingTagInfosByTenantIdRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListScalingTagInfosByTenantIdRequest:
     }
 
     def __init__(self, resource_type=None):
-        """ListScalingTagInfosByTenantIdRequest - a model defined in huaweicloud sdk"""
+        """ListScalingTagInfosByTenantIdRequest
+
+        The model defined in huaweicloud sdk
+
+        :param resource_type: 资源类型，枚举类：scaling_group_tag。scaling_group_tag表示资源类型为伸缩组。
+        :type resource_type: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ListScalingTagInfosByTenantIdRequest:
         资源类型，枚举类：scaling_group_tag。scaling_group_tag表示资源类型为伸缩组。
 
         :param resource_type: The resource_type of this ListScalingTagInfosByTenantIdRequest.
-        :type: str
+        :type resource_type: str
         """
         self._resource_type = resource_type
 

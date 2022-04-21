@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDevicesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class ListDevicesRequest:
     }
 
     def __init__(self, instance_id=None, limit=None, offset=None, app_id=None, product_id=None, product_name=None, device_name=None, client_id=None, node_id=None, node_type=None, online_status=None, created_date_start=None, created_date_end=None, tag=None):
-        """ListDevicesRequest - a model defined in huaweicloud sdk"""
+        """ListDevicesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param limit: 每页显示条目数量，最大数量999，超过999后只返回999
+        :type limit: int
+        :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0
+        :type offset: int
+        :param app_id: 应用ID
+        :type app_id: str
+        :param product_id: 设备归属的产品ID
+        :type product_id: int
+        :param product_name: 设备归属的产品名称
+        :type product_name: str
+        :param device_name: 设备名称，支持中文、中文标点符号（）。；，：“”、？《》及英文大小写、数字及英文符号()_,#.?&#39;-@%&amp;!, 长度2-64
+        :type device_name: str
+        :param client_id: 设备客户端ID，平台生成的设备唯一标识
+        :type client_id: str
+        :param node_id: 设备物理编号，通常使用MAC或者IMEI号，支持英文大小写，数字，下划线和中划线，长度2-64
+        :type node_id: str
+        :param node_type: 节点类型 0-直连 1-网关 2-子设备，不传默认查询所有
+        :type node_type: int
+        :param online_status: 是否在线 0-未连接 1-在线 2-离线，支持传入多个值以逗号分隔
+        :type online_status: str
+        :param created_date_start: 创建时间起始，格式timestamp(ms)，使用UTC时区
+        :type created_date_start: int
+        :param created_date_end: 创建时间截止，格式timestamp(ms)，使用UTC时区
+        :type created_date_end: int
+        :param tag: 标签
+        :type tag: str
+        """
         
         
 
@@ -122,7 +153,7 @@ class ListDevicesRequest:
         实例ID
 
         :param instance_id: The instance_id of this ListDevicesRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -144,7 +175,7 @@ class ListDevicesRequest:
         每页显示条目数量，最大数量999，超过999后只返回999
 
         :param limit: The limit of this ListDevicesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -166,7 +197,7 @@ class ListDevicesRequest:
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
         :param offset: The offset of this ListDevicesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -188,7 +219,7 @@ class ListDevicesRequest:
         应用ID
 
         :param app_id: The app_id of this ListDevicesRequest.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -210,7 +241,7 @@ class ListDevicesRequest:
         设备归属的产品ID
 
         :param product_id: The product_id of this ListDevicesRequest.
-        :type: int
+        :type product_id: int
         """
         self._product_id = product_id
 
@@ -232,7 +263,7 @@ class ListDevicesRequest:
         设备归属的产品名称
 
         :param product_name: The product_name of this ListDevicesRequest.
-        :type: str
+        :type product_name: str
         """
         self._product_name = product_name
 
@@ -254,7 +285,7 @@ class ListDevicesRequest:
         设备名称，支持中文、中文标点符号（）。；，：“”、？《》及英文大小写、数字及英文符号()_,#.?'-@%&!, 长度2-64
 
         :param device_name: The device_name of this ListDevicesRequest.
-        :type: str
+        :type device_name: str
         """
         self._device_name = device_name
 
@@ -276,7 +307,7 @@ class ListDevicesRequest:
         设备客户端ID，平台生成的设备唯一标识
 
         :param client_id: The client_id of this ListDevicesRequest.
-        :type: str
+        :type client_id: str
         """
         self._client_id = client_id
 
@@ -298,7 +329,7 @@ class ListDevicesRequest:
         设备物理编号，通常使用MAC或者IMEI号，支持英文大小写，数字，下划线和中划线，长度2-64
 
         :param node_id: The node_id of this ListDevicesRequest.
-        :type: str
+        :type node_id: str
         """
         self._node_id = node_id
 
@@ -320,7 +351,7 @@ class ListDevicesRequest:
         节点类型 0-直连 1-网关 2-子设备，不传默认查询所有
 
         :param node_type: The node_type of this ListDevicesRequest.
-        :type: int
+        :type node_type: int
         """
         self._node_type = node_type
 
@@ -342,7 +373,7 @@ class ListDevicesRequest:
         是否在线 0-未连接 1-在线 2-离线，支持传入多个值以逗号分隔
 
         :param online_status: The online_status of this ListDevicesRequest.
-        :type: str
+        :type online_status: str
         """
         self._online_status = online_status
 
@@ -364,7 +395,7 @@ class ListDevicesRequest:
         创建时间起始，格式timestamp(ms)，使用UTC时区
 
         :param created_date_start: The created_date_start of this ListDevicesRequest.
-        :type: int
+        :type created_date_start: int
         """
         self._created_date_start = created_date_start
 
@@ -386,7 +417,7 @@ class ListDevicesRequest:
         创建时间截止，格式timestamp(ms)，使用UTC时区
 
         :param created_date_end: The created_date_end of this ListDevicesRequest.
-        :type: int
+        :type created_date_end: int
         """
         self._created_date_end = created_date_end
 
@@ -408,7 +439,7 @@ class ListDevicesRequest:
         标签
 
         :param tag: The tag of this ListDevicesRequest.
-        :type: str
+        :type tag: str
         """
         self._tag = tag
 

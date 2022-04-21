@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateSecretTagRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateSecretTagRequest:
     }
 
     def __init__(self, secret_id=None, body=None):
-        """CreateSecretTagRequest - a model defined in huaweicloud sdk"""
+        """CreateSecretTagRequest
+
+        The model defined in huaweicloud sdk
+
+        :param secret_id: 凭据ID
+        :type secret_id: str
+        :param body: Body of the CreateSecretTagRequest
+        :type body: :class:`huaweicloudsdkcsms.v1.CreateSecretTagRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateSecretTagRequest:
         凭据ID
 
         :param secret_id: The secret_id of this CreateSecretTagRequest.
-        :type: str
+        :type secret_id: str
         """
         self._secret_id = secret_id
 
@@ -72,7 +79,7 @@ class CreateSecretTagRequest:
 
 
         :return: The body of this CreateSecretTagRequest.
-        :rtype: CreateSecretTagRequestBody
+        :rtype: :class:`huaweicloudsdkcsms.v1.CreateSecretTagRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CreateSecretTagRequest:
 
 
         :param body: The body of this CreateSecretTagRequest.
-        :type: CreateSecretTagRequestBody
+        :type body: :class:`huaweicloudsdkcsms.v1.CreateSecretTagRequestBody`
         """
         self._body = body
 

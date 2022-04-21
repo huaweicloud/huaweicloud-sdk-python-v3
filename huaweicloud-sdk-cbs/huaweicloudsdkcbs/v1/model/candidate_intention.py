@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CandidateIntention:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CandidateIntention:
     }
 
     def __init__(self, candidate_intention=None, candidate_confidence=None):
-        """CandidateIntention - a model defined in huaweicloud sdk"""
+        """CandidateIntention
+
+        The model defined in huaweicloud sdk
+
+        :param candidate_intention: 候选意图。
+        :type candidate_intention: str
+        :param candidate_confidence: 候选意图置信度。
+        :type candidate_confidence: float
+        """
         
         
 
@@ -61,7 +68,7 @@ class CandidateIntention:
         候选意图。
 
         :param candidate_intention: The candidate_intention of this CandidateIntention.
-        :type: str
+        :type candidate_intention: str
         """
         self._candidate_intention = candidate_intention
 
@@ -83,7 +90,7 @@ class CandidateIntention:
         候选意图置信度。
 
         :param candidate_confidence: The candidate_confidence of this CandidateIntention.
-        :type: float
+        :type candidate_confidence: float
         """
         self._candidate_confidence = candidate_confidence
 

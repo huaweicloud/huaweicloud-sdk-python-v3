@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateSinkTaskQuotaReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateSinkTaskQuotaReq:
     }
 
     def __init__(self, sink_max_tasks=None):
-        """UpdateSinkTaskQuotaReq - a model defined in huaweicloud sdk"""
+        """UpdateSinkTaskQuotaReq
+
+        The model defined in huaweicloud sdk
+
+        :param sink_max_tasks: 转储任务的总个数。 
+        :type sink_max_tasks: int
+        """
         
         
 
@@ -57,7 +62,7 @@ class UpdateSinkTaskQuotaReq:
         转储任务的总个数。 
 
         :param sink_max_tasks: The sink_max_tasks of this UpdateSinkTaskQuotaReq.
-        :type: int
+        :type sink_max_tasks: int
         """
         self._sink_max_tasks = sink_max_tasks
 

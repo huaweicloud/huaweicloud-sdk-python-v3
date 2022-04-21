@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InstanceConfigResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -64,7 +63,47 @@ class InstanceConfigResult:
     }
 
     def __init__(self, flavor_ref=None, image_ref=None, disk=None, key_name=None, key_fingerprint=None, instance_name=None, instance_id=None, admin_pass=None, personality=None, public_ip=None, user_data=None, metadata=None, security_groups=None, server_group_id=None, tenancy=None, dedicated_host_id=None, market_type=None, multi_flavor_priority_policy=None):
-        """InstanceConfigResult - a model defined in huaweicloud sdk"""
+        """InstanceConfigResult
+
+        The model defined in huaweicloud sdk
+
+        :param flavor_ref: 云服务器的规格ID。
+        :type flavor_ref: str
+        :param image_ref: 镜像ID，同image_id。
+        :type image_ref: str
+        :param disk: 磁盘组信息。
+        :type disk: list[:class:`huaweicloudsdkas.v1.DiskResult`]
+        :param key_name: 登录云服务器的SSH密钥名称。
+        :type key_name: str
+        :param key_fingerprint: 登录云服务器的SSH密钥指纹。
+        :type key_fingerprint: str
+        :param instance_name: 该参数为预留字段。
+        :type instance_name: str
+        :param instance_id: 该参数为预留字段。
+        :type instance_id: str
+        :param admin_pass: 登录云服务器的密码，非明文回显。
+        :type admin_pass: str
+        :param personality: 个人信息
+        :type personality: list[:class:`huaweicloudsdkas.v1.PersonalityResult`]
+        :param public_ip: 
+        :type public_ip: :class:`huaweicloudsdkas.v1.PublicipResult`
+        :param user_data: cloud-init用户数据，base64格式编码。
+        :type user_data: str
+        :param metadata: 
+        :type metadata: :class:`huaweicloudsdkas.v1.VmMetaData`
+        :param security_groups: 安全组信息。
+        :type security_groups: list[:class:`huaweicloudsdkas.v1.SecurityGroups`]
+        :param server_group_id: 云服务器组ID。
+        :type server_group_id: str
+        :param tenancy: 在专属主机上创建弹性云服务器。
+        :type tenancy: str
+        :param dedicated_host_id: 专属主机的ID。
+        :type dedicated_host_id: str
+        :param market_type: 云服务器的计费模式，可以选择竞价计费或按需计费。
+        :type market_type: str
+        :param multi_flavor_priority_policy: 使用伸缩配置创建云主机的时候，多规格使用的优先级策略。  PICK_FIRST（默认）：选择优先，虚拟机扩容时规格的选择按照flavorRef列表的顺序进行优先级排序。 COST_FIRST：成本优化，虚拟机扩容时规格的选择按照价格最优原则进行优先级排序。
+        :type multi_flavor_priority_policy: str
+        """
         
         
 
@@ -143,7 +182,7 @@ class InstanceConfigResult:
         云服务器的规格ID。
 
         :param flavor_ref: The flavor_ref of this InstanceConfigResult.
-        :type: str
+        :type flavor_ref: str
         """
         self._flavor_ref = flavor_ref
 
@@ -165,7 +204,7 @@ class InstanceConfigResult:
         镜像ID，同image_id。
 
         :param image_ref: The image_ref of this InstanceConfigResult.
-        :type: str
+        :type image_ref: str
         """
         self._image_ref = image_ref
 
@@ -176,7 +215,7 @@ class InstanceConfigResult:
         磁盘组信息。
 
         :return: The disk of this InstanceConfigResult.
-        :rtype: list[DiskResult]
+        :rtype: list[:class:`huaweicloudsdkas.v1.DiskResult`]
         """
         return self._disk
 
@@ -187,7 +226,7 @@ class InstanceConfigResult:
         磁盘组信息。
 
         :param disk: The disk of this InstanceConfigResult.
-        :type: list[DiskResult]
+        :type disk: list[:class:`huaweicloudsdkas.v1.DiskResult`]
         """
         self._disk = disk
 
@@ -209,7 +248,7 @@ class InstanceConfigResult:
         登录云服务器的SSH密钥名称。
 
         :param key_name: The key_name of this InstanceConfigResult.
-        :type: str
+        :type key_name: str
         """
         self._key_name = key_name
 
@@ -231,7 +270,7 @@ class InstanceConfigResult:
         登录云服务器的SSH密钥指纹。
 
         :param key_fingerprint: The key_fingerprint of this InstanceConfigResult.
-        :type: str
+        :type key_fingerprint: str
         """
         self._key_fingerprint = key_fingerprint
 
@@ -253,7 +292,7 @@ class InstanceConfigResult:
         该参数为预留字段。
 
         :param instance_name: The instance_name of this InstanceConfigResult.
-        :type: str
+        :type instance_name: str
         """
         self._instance_name = instance_name
 
@@ -275,7 +314,7 @@ class InstanceConfigResult:
         该参数为预留字段。
 
         :param instance_id: The instance_id of this InstanceConfigResult.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -297,7 +336,7 @@ class InstanceConfigResult:
         登录云服务器的密码，非明文回显。
 
         :param admin_pass: The admin_pass of this InstanceConfigResult.
-        :type: str
+        :type admin_pass: str
         """
         self._admin_pass = admin_pass
 
@@ -308,7 +347,7 @@ class InstanceConfigResult:
         个人信息
 
         :return: The personality of this InstanceConfigResult.
-        :rtype: list[PersonalityResult]
+        :rtype: list[:class:`huaweicloudsdkas.v1.PersonalityResult`]
         """
         return self._personality
 
@@ -319,7 +358,7 @@ class InstanceConfigResult:
         个人信息
 
         :param personality: The personality of this InstanceConfigResult.
-        :type: list[PersonalityResult]
+        :type personality: list[:class:`huaweicloudsdkas.v1.PersonalityResult`]
         """
         self._personality = personality
 
@@ -329,7 +368,7 @@ class InstanceConfigResult:
 
 
         :return: The public_ip of this InstanceConfigResult.
-        :rtype: PublicipResult
+        :rtype: :class:`huaweicloudsdkas.v1.PublicipResult`
         """
         return self._public_ip
 
@@ -339,7 +378,7 @@ class InstanceConfigResult:
 
 
         :param public_ip: The public_ip of this InstanceConfigResult.
-        :type: PublicipResult
+        :type public_ip: :class:`huaweicloudsdkas.v1.PublicipResult`
         """
         self._public_ip = public_ip
 
@@ -361,7 +400,7 @@ class InstanceConfigResult:
         cloud-init用户数据，base64格式编码。
 
         :param user_data: The user_data of this InstanceConfigResult.
-        :type: str
+        :type user_data: str
         """
         self._user_data = user_data
 
@@ -371,7 +410,7 @@ class InstanceConfigResult:
 
 
         :return: The metadata of this InstanceConfigResult.
-        :rtype: VmMetaData
+        :rtype: :class:`huaweicloudsdkas.v1.VmMetaData`
         """
         return self._metadata
 
@@ -381,7 +420,7 @@ class InstanceConfigResult:
 
 
         :param metadata: The metadata of this InstanceConfigResult.
-        :type: VmMetaData
+        :type metadata: :class:`huaweicloudsdkas.v1.VmMetaData`
         """
         self._metadata = metadata
 
@@ -392,7 +431,7 @@ class InstanceConfigResult:
         安全组信息。
 
         :return: The security_groups of this InstanceConfigResult.
-        :rtype: list[SecurityGroups]
+        :rtype: list[:class:`huaweicloudsdkas.v1.SecurityGroups`]
         """
         return self._security_groups
 
@@ -403,7 +442,7 @@ class InstanceConfigResult:
         安全组信息。
 
         :param security_groups: The security_groups of this InstanceConfigResult.
-        :type: list[SecurityGroups]
+        :type security_groups: list[:class:`huaweicloudsdkas.v1.SecurityGroups`]
         """
         self._security_groups = security_groups
 
@@ -425,7 +464,7 @@ class InstanceConfigResult:
         云服务器组ID。
 
         :param server_group_id: The server_group_id of this InstanceConfigResult.
-        :type: str
+        :type server_group_id: str
         """
         self._server_group_id = server_group_id
 
@@ -447,7 +486,7 @@ class InstanceConfigResult:
         在专属主机上创建弹性云服务器。
 
         :param tenancy: The tenancy of this InstanceConfigResult.
-        :type: str
+        :type tenancy: str
         """
         self._tenancy = tenancy
 
@@ -469,7 +508,7 @@ class InstanceConfigResult:
         专属主机的ID。
 
         :param dedicated_host_id: The dedicated_host_id of this InstanceConfigResult.
-        :type: str
+        :type dedicated_host_id: str
         """
         self._dedicated_host_id = dedicated_host_id
 
@@ -491,7 +530,7 @@ class InstanceConfigResult:
         云服务器的计费模式，可以选择竞价计费或按需计费。
 
         :param market_type: The market_type of this InstanceConfigResult.
-        :type: str
+        :type market_type: str
         """
         self._market_type = market_type
 
@@ -513,7 +552,7 @@ class InstanceConfigResult:
         使用伸缩配置创建云主机的时候，多规格使用的优先级策略。  PICK_FIRST（默认）：选择优先，虚拟机扩容时规格的选择按照flavorRef列表的顺序进行优先级排序。 COST_FIRST：成本优化，虚拟机扩容时规格的选择按照价格最优原则进行优先级排序。
 
         :param multi_flavor_priority_policy: The multi_flavor_priority_policy of this InstanceConfigResult.
-        :type: str
+        :type multi_flavor_priority_policy: str
         """
         self._multi_flavor_priority_policy = multi_flavor_priority_policy
 

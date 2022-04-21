@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateApiTestSuiteByRepoFileResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateApiTestSuiteByRepoFileResponse(SdkResponse):
     }
 
     def __init__(self, testsuite_id=None, testcase_ids=None):
-        """CreateApiTestSuiteByRepoFileResponse - a model defined in huaweicloud sdk"""
+        """CreateApiTestSuiteByRepoFileResponse
+
+        The model defined in huaweicloud sdk
+
+        :param testsuite_id: 生成的测试套的id
+        :type testsuite_id: str
+        :param testcase_ids: 生成的测试用例id列表
+        :type testcase_ids: list[str]
+        """
         
         super(CreateApiTestSuiteByRepoFileResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class CreateApiTestSuiteByRepoFileResponse(SdkResponse):
         生成的测试套的id
 
         :param testsuite_id: The testsuite_id of this CreateApiTestSuiteByRepoFileResponse.
-        :type: str
+        :type testsuite_id: str
         """
         self._testsuite_id = testsuite_id
 
@@ -85,7 +92,7 @@ class CreateApiTestSuiteByRepoFileResponse(SdkResponse):
         生成的测试用例id列表
 
         :param testcase_ids: The testcase_ids of this CreateApiTestSuiteByRepoFileResponse.
-        :type: list[str]
+        :type testcase_ids: list[str]
         """
         self._testcase_ids = testcase_ids
 

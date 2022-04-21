@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Resources:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Resources:
     }
 
     def __init__(self, limits=None, requests=None):
-        """Resources - a model defined in huaweicloud sdk"""
+        """Resources
+
+        The model defined in huaweicloud sdk
+
+        :param limits: 
+        :type limits: :class:`huaweicloudsdkief.v1.ResourcesLimits`
+        :param requests: 
+        :type requests: :class:`huaweicloudsdkief.v1.ResourcesRequests`
+        """
         
         
 
@@ -51,7 +58,7 @@ class Resources:
 
 
         :return: The limits of this Resources.
-        :rtype: ResourcesLimits
+        :rtype: :class:`huaweicloudsdkief.v1.ResourcesLimits`
         """
         return self._limits
 
@@ -61,7 +68,7 @@ class Resources:
 
 
         :param limits: The limits of this Resources.
-        :type: ResourcesLimits
+        :type limits: :class:`huaweicloudsdkief.v1.ResourcesLimits`
         """
         self._limits = limits
 
@@ -71,7 +78,7 @@ class Resources:
 
 
         :return: The requests of this Resources.
-        :rtype: ResourcesRequests
+        :rtype: :class:`huaweicloudsdkief.v1.ResourcesRequests`
         """
         return self._requests
 
@@ -81,7 +88,7 @@ class Resources:
 
 
         :param requests: The requests of this Resources.
-        :type: ResourcesRequests
+        :type requests: :class:`huaweicloudsdkief.v1.ResourcesRequests`
         """
         self._requests = requests
 

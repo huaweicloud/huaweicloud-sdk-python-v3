@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FaceQuality:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class FaceQuality:
     }
 
     def __init__(self, total_score=None, blur=None, pose=None, occlusion=None, illumination=None):
-        """FaceQuality - a model defined in huaweicloud sdk"""
+        """FaceQuality
+
+        The model defined in huaweicloud sdk
+
+        :param total_score: 人脸质量总分，取值范围[0-1]，分值越大质量越高。
+        :type total_score: float
+        :param blur: 模糊度，取值范围[0-1]，分值越大模糊问题越严重。
+        :type blur: float
+        :param pose: 姿态，取值范围[0-1]，分值越大姿态问题越严重。
+        :type pose: float
+        :param occlusion: 遮挡，取值范围[0-1]，分值越大遮挡问题越严重。
+        :type occlusion: float
+        :param illumination: 光照，取值范围[0-1]，分值越大光照问题越严重。
+        :type illumination: float
+        """
         
         
 
@@ -73,7 +86,7 @@ class FaceQuality:
         人脸质量总分，取值范围[0-1]，分值越大质量越高。
 
         :param total_score: The total_score of this FaceQuality.
-        :type: float
+        :type total_score: float
         """
         self._total_score = total_score
 
@@ -95,7 +108,7 @@ class FaceQuality:
         模糊度，取值范围[0-1]，分值越大模糊问题越严重。
 
         :param blur: The blur of this FaceQuality.
-        :type: float
+        :type blur: float
         """
         self._blur = blur
 
@@ -117,7 +130,7 @@ class FaceQuality:
         姿态，取值范围[0-1]，分值越大姿态问题越严重。
 
         :param pose: The pose of this FaceQuality.
-        :type: float
+        :type pose: float
         """
         self._pose = pose
 
@@ -139,7 +152,7 @@ class FaceQuality:
         遮挡，取值范围[0-1]，分值越大遮挡问题越严重。
 
         :param occlusion: The occlusion of this FaceQuality.
-        :type: float
+        :type occlusion: float
         """
         self._occlusion = occlusion
 
@@ -161,7 +174,7 @@ class FaceQuality:
         光照，取值范围[0-1]，分值越大光照问题越严重。
 
         :param illumination: The illumination of this FaceQuality.
-        :type: float
+        :type illumination: float
         """
         self._illumination = illumination
 

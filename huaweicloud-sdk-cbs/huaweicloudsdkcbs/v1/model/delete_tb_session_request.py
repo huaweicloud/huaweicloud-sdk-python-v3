@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteTbSessionRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteTbSessionRequest:
     }
 
     def __init__(self, bot_id=None, session_id=None):
-        """DeleteTbSessionRequest - a model defined in huaweicloud sdk"""
+        """DeleteTbSessionRequest
+
+        The model defined in huaweicloud sdk
+
+        :param bot_id: 话务机器人ID。
+        :type bot_id: str
+        :param session_id: 会话ID。
+        :type session_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class DeleteTbSessionRequest:
         话务机器人ID。
 
         :param bot_id: The bot_id of this DeleteTbSessionRequest.
-        :type: str
+        :type bot_id: str
         """
         self._bot_id = bot_id
 
@@ -83,7 +90,7 @@ class DeleteTbSessionRequest:
         会话ID。
 
         :param session_id: The session_id of this DeleteTbSessionRequest.
-        :type: str
+        :type session_id: str
         """
         self._session_id = session_id
 

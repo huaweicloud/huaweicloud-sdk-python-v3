@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateIssueV4Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateIssueV4Request:
     }
 
     def __init__(self, project_id=None, issue_id=None, body=None):
-        """UpdateIssueV4Request - a model defined in huaweicloud sdk"""
+        """UpdateIssueV4Request
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: devcloud的项目id
+        :type project_id: str
+        :param issue_id: 工作项id
+        :type issue_id: int
+        :param body: Body of the UpdateIssueV4Request
+        :type body: :class:`huaweicloudsdkprojectman.v4.IssueRequestV4`
+        """
         
         
 
@@ -66,7 +75,7 @@ class UpdateIssueV4Request:
         devcloud的项目id
 
         :param project_id: The project_id of this UpdateIssueV4Request.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -88,7 +97,7 @@ class UpdateIssueV4Request:
         工作项id
 
         :param issue_id: The issue_id of this UpdateIssueV4Request.
-        :type: int
+        :type issue_id: int
         """
         self._issue_id = issue_id
 
@@ -98,7 +107,7 @@ class UpdateIssueV4Request:
 
 
         :return: The body of this UpdateIssueV4Request.
-        :rtype: IssueRequestV4
+        :rtype: :class:`huaweicloudsdkprojectman.v4.IssueRequestV4`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class UpdateIssueV4Request:
 
 
         :param body: The body of this UpdateIssueV4Request.
-        :type: IssueRequestV4
+        :type body: :class:`huaweicloudsdkprojectman.v4.IssueRequestV4`
         """
         self._body = body
 

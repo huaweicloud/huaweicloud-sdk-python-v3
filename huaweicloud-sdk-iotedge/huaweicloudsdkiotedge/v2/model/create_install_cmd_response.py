@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateInstallCmdResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateInstallCmdResponse(SdkResponse):
     }
 
     def __init__(self, cmd=None):
-        """CreateInstallCmdResponse - a model defined in huaweicloud sdk"""
+        """CreateInstallCmdResponse
+
+        The model defined in huaweicloud sdk
+
+        :param cmd: 标准版节点安装命令
+        :type cmd: str
+        """
         
         super(CreateInstallCmdResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class CreateInstallCmdResponse(SdkResponse):
         标准版节点安装命令
 
         :param cmd: The cmd of this CreateInstallCmdResponse.
-        :type: str
+        :type cmd: str
         """
         self._cmd = cmd
 

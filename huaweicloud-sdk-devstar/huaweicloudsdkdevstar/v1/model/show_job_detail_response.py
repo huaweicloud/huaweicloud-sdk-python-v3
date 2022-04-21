@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowJobDetailResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ShowJobDetailResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, job_status=None, job_result=None, show_type=None):
-        """ShowJobDetailResponse - a model defined in huaweicloud sdk"""
+        """ShowJobDetailResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 任务的id。
+        :type id: str
+        :param name: 任务的名称。
+        :type name: str
+        :param job_status: 任务的状态。
+        :type job_status: object
+        :param job_result: 任务结果信息。
+        :type job_result: str
+        :param show_type: 任务显示类型，页面显示使用字段
+        :type show_type: str
+        """
         
         super(ShowJobDetailResponse, self).__init__()
 
@@ -78,7 +91,7 @@ class ShowJobDetailResponse(SdkResponse):
         任务的id。
 
         :param id: The id of this ShowJobDetailResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -100,7 +113,7 @@ class ShowJobDetailResponse(SdkResponse):
         任务的名称。
 
         :param name: The name of this ShowJobDetailResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -122,7 +135,7 @@ class ShowJobDetailResponse(SdkResponse):
         任务的状态。
 
         :param job_status: The job_status of this ShowJobDetailResponse.
-        :type: object
+        :type job_status: object
         """
         self._job_status = job_status
 
@@ -144,7 +157,7 @@ class ShowJobDetailResponse(SdkResponse):
         任务结果信息。
 
         :param job_result: The job_result of this ShowJobDetailResponse.
-        :type: str
+        :type job_result: str
         """
         self._job_result = job_result
 
@@ -166,7 +179,7 @@ class ShowJobDetailResponse(SdkResponse):
         任务显示类型，页面显示使用字段
 
         :param show_type: The show_type of this ShowJobDetailResponse.
-        :type: str
+        :type show_type: str
         """
         self._show_type = show_type
 

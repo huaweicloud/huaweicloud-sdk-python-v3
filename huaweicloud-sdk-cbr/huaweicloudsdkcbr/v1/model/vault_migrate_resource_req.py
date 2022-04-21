@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VaultMigrateResourceReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class VaultMigrateResourceReq:
     }
 
     def __init__(self, destination_vault_id=None, resource_ids=None):
-        """VaultMigrateResourceReq - a model defined in huaweicloud sdk"""
+        """VaultMigrateResourceReq
+
+        The model defined in huaweicloud sdk
+
+        :param destination_vault_id: 目标存储库
+        :type destination_vault_id: str
+        :param resource_ids: 待迁移的资源ID
+        :type resource_ids: list[str]
+        """
         
         
 
@@ -61,7 +68,7 @@ class VaultMigrateResourceReq:
         目标存储库
 
         :param destination_vault_id: The destination_vault_id of this VaultMigrateResourceReq.
-        :type: str
+        :type destination_vault_id: str
         """
         self._destination_vault_id = destination_vault_id
 
@@ -83,7 +90,7 @@ class VaultMigrateResourceReq:
         待迁移的资源ID
 
         :param resource_ids: The resource_ids of this VaultMigrateResourceReq.
-        :type: list[str]
+        :type resource_ids: list[str]
         """
         self._resource_ids = resource_ids
 

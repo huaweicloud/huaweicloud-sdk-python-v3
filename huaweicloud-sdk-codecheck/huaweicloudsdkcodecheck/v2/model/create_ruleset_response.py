@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateRulesetResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateRulesetResponse(SdkResponse):
     }
 
     def __init__(self, template_id=None):
-        """CreateRulesetResponse - a model defined in huaweicloud sdk"""
+        """CreateRulesetResponse
+
+        The model defined in huaweicloud sdk
+
+        :param template_id: 规则集ID
+        :type template_id: str
+        """
         
         super(CreateRulesetResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class CreateRulesetResponse(SdkResponse):
         规则集ID
 
         :param template_id: The template_id of this CreateRulesetResponse.
-        :type: str
+        :type template_id: str
         """
         self._template_id = template_id
 

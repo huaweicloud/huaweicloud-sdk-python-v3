@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowBackupDownloadLinkResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowBackupDownloadLinkResponse(SdkResponse):
     }
 
     def __init__(self, files=None, bucket=None):
-        """ShowBackupDownloadLinkResponse - a model defined in huaweicloud sdk"""
+        """ShowBackupDownloadLinkResponse
+
+        The model defined in huaweicloud sdk
+
+        :param files: 备份文件信息。
+        :type files: list[:class:`huaweicloudsdkdds.v3.GetBackupDownloadLinkResponseBodyFiles`]
+        :param bucket: OBS桶名。
+        :type bucket: str
+        """
         
         super(ShowBackupDownloadLinkResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ShowBackupDownloadLinkResponse(SdkResponse):
         备份文件信息。
 
         :return: The files of this ShowBackupDownloadLinkResponse.
-        :rtype: list[GetBackupDownloadLinkResponseBodyFiles]
+        :rtype: list[:class:`huaweicloudsdkdds.v3.GetBackupDownloadLinkResponseBodyFiles`]
         """
         return self._files
 
@@ -63,7 +70,7 @@ class ShowBackupDownloadLinkResponse(SdkResponse):
         备份文件信息。
 
         :param files: The files of this ShowBackupDownloadLinkResponse.
-        :type: list[GetBackupDownloadLinkResponseBodyFiles]
+        :type files: list[:class:`huaweicloudsdkdds.v3.GetBackupDownloadLinkResponseBodyFiles`]
         """
         self._files = files
 
@@ -85,7 +92,7 @@ class ShowBackupDownloadLinkResponse(SdkResponse):
         OBS桶名。
 
         :param bucket: The bucket of this ShowBackupDownloadLinkResponse.
-        :type: str
+        :type bucket: str
         """
         self._bucket = bucket
 

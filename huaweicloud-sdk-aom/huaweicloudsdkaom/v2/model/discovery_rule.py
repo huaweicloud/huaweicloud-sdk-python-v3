@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DiscoveryRule:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class DiscoveryRule:
     }
 
     def __init__(self, check_content=None, check_mode=None, check_type=None):
-        """DiscoveryRule - a model defined in huaweicloud sdk"""
+        """DiscoveryRule
+
+        The model defined in huaweicloud sdk
+
+        :param check_content: 匹配值。
+        :type check_content: list[str]
+        :param check_mode: 匹配条件。 contain、equals
+        :type check_mode: str
+        :param check_type: 匹配类型。 cmdLine、env、scope
+        :type check_type: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class DiscoveryRule:
         匹配值。
 
         :param check_content: The check_content of this DiscoveryRule.
-        :type: list[str]
+        :type check_content: list[str]
         """
         self._check_content = check_content
 
@@ -87,7 +96,7 @@ class DiscoveryRule:
         匹配条件。 contain、equals
 
         :param check_mode: The check_mode of this DiscoveryRule.
-        :type: str
+        :type check_mode: str
         """
         self._check_mode = check_mode
 
@@ -109,7 +118,7 @@ class DiscoveryRule:
         匹配类型。 cmdLine、env、scope
 
         :param check_type: The check_type of this DiscoveryRule.
-        :type: str
+        :type check_type: str
         """
         self._check_type = check_type
 

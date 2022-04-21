@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowCommitsByBranchRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ShowCommitsByBranchRequest:
     }
 
     def __init__(self, group_name=None, page_index=None, page_size=None, ref_name=None, repository_name=None):
-        """ShowCommitsByBranchRequest - a model defined in huaweicloud sdk"""
+        """ShowCommitsByBranchRequest
+
+        The model defined in huaweicloud sdk
+
+        :param group_name: 仓库组名
+        :type group_name: str
+        :param page_index: 分页索引
+        :type page_index: int
+        :param page_size: 分页索引
+        :type page_size: int
+        :param ref_name: 分支或标签名，支持SHA格式
+        :type ref_name: str
+        :param repository_name: 仓库名
+        :type repository_name: str
+        """
         
         
 
@@ -75,7 +88,7 @@ class ShowCommitsByBranchRequest:
         仓库组名
 
         :param group_name: The group_name of this ShowCommitsByBranchRequest.
-        :type: str
+        :type group_name: str
         """
         self._group_name = group_name
 
@@ -97,7 +110,7 @@ class ShowCommitsByBranchRequest:
         分页索引
 
         :param page_index: The page_index of this ShowCommitsByBranchRequest.
-        :type: int
+        :type page_index: int
         """
         self._page_index = page_index
 
@@ -119,7 +132,7 @@ class ShowCommitsByBranchRequest:
         分页索引
 
         :param page_size: The page_size of this ShowCommitsByBranchRequest.
-        :type: int
+        :type page_size: int
         """
         self._page_size = page_size
 
@@ -141,7 +154,7 @@ class ShowCommitsByBranchRequest:
         分支或标签名，支持SHA格式
 
         :param ref_name: The ref_name of this ShowCommitsByBranchRequest.
-        :type: str
+        :type ref_name: str
         """
         self._ref_name = ref_name
 
@@ -163,7 +176,7 @@ class ShowCommitsByBranchRequest:
         仓库名
 
         :param repository_name: The repository_name of this ShowCommitsByBranchRequest.
-        :type: str
+        :type repository_name: str
         """
         self._repository_name = repository_name
 

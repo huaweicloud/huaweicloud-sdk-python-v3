@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ContactV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ContactV2:
     }
 
     def __init__(self, contact_way=None, contact_value=None, area_code=None, verified_id=None):
-        """ContactV2 - a model defined in huaweicloud sdk"""
+        """ContactV2
+
+        The model defined in huaweicloud sdk
+
+        :param contact_way: 联系方式类型
+        :type contact_way: int
+        :param contact_value: 联系方式值
+        :type contact_value: str
+        :param area_code: 国家码
+        :type area_code: str
+        :param verified_id: 验证序列号
+        :type verified_id: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class ContactV2:
         联系方式类型
 
         :param contact_way: The contact_way of this ContactV2.
-        :type: int
+        :type contact_way: int
         """
         self._contact_way = contact_way
 
@@ -95,7 +106,7 @@ class ContactV2:
         联系方式值
 
         :param contact_value: The contact_value of this ContactV2.
-        :type: str
+        :type contact_value: str
         """
         self._contact_value = contact_value
 
@@ -117,7 +128,7 @@ class ContactV2:
         国家码
 
         :param area_code: The area_code of this ContactV2.
-        :type: str
+        :type area_code: str
         """
         self._area_code = area_code
 
@@ -139,7 +150,7 @@ class ContactV2:
         验证序列号
 
         :param verified_id: The verified_id of this ContactV2.
-        :type: str
+        :type verified_id: str
         """
         self._verified_id = verified_id
 

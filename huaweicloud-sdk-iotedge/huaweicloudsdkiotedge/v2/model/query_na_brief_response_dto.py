@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryNaBriefResponseDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class QueryNaBriefResponseDTO:
     }
 
     def __init__(self, na_id=None, name=None, description=None, endpoint=None, create_time=None, update_time=None):
-        """QueryNaBriefResponseDTO - a model defined in huaweicloud sdk"""
+        """QueryNaBriefResponseDTO
+
+        The model defined in huaweicloud sdk
+
+        :param na_id: NA系统ID，提供给其他系统访问的唯一标识
+        :type na_id: str
+        :param name: NA系统名称
+        :type name: str
+        :param description: 北向NA系统描述
+        :type description: str
+        :param endpoint: 访问URL地址
+        :type endpoint: str
+        :param create_time: 创建时间
+        :type create_time: str
+        :param update_time: 更新时间
+        :type update_time: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class QueryNaBriefResponseDTO:
         NA系统ID，提供给其他系统访问的唯一标识
 
         :param na_id: The na_id of this QueryNaBriefResponseDTO.
-        :type: str
+        :type na_id: str
         """
         self._na_id = na_id
 
@@ -105,7 +120,7 @@ class QueryNaBriefResponseDTO:
         NA系统名称
 
         :param name: The name of this QueryNaBriefResponseDTO.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -127,7 +142,7 @@ class QueryNaBriefResponseDTO:
         北向NA系统描述
 
         :param description: The description of this QueryNaBriefResponseDTO.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -149,7 +164,7 @@ class QueryNaBriefResponseDTO:
         访问URL地址
 
         :param endpoint: The endpoint of this QueryNaBriefResponseDTO.
-        :type: str
+        :type endpoint: str
         """
         self._endpoint = endpoint
 
@@ -171,7 +186,7 @@ class QueryNaBriefResponseDTO:
         创建时间
 
         :param create_time: The create_time of this QueryNaBriefResponseDTO.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -193,7 +208,7 @@ class QueryNaBriefResponseDTO:
         更新时间
 
         :param update_time: The update_time of this QueryNaBriefResponseDTO.
-        :type: str
+        :type update_time: str
         """
         self._update_time = update_time
 

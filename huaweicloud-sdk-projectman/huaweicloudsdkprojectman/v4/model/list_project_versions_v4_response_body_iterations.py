@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListProjectVersionsV4ResponseBodyIterations:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ListProjectVersionsV4ResponseBodyIterations:
     }
 
     def __init__(self, description=None, end_time=None, id=None, name=None, begin_time=None, status=None, updated_time=None, deleted=None):
-        """ListProjectVersionsV4ResponseBodyIterations - a model defined in huaweicloud sdk"""
+        """ListProjectVersionsV4ResponseBodyIterations
+
+        The model defined in huaweicloud sdk
+
+        :param description: 迭代描述
+        :type description: str
+        :param end_time: 迭代结束时间
+        :type end_time: str
+        :param id: 迭代id
+        :type id: int
+        :param name: 迭代标题
+        :type name: str
+        :param begin_time: 迭代开始时间
+        :type begin_time: str
+        :param status: 迭代状态
+        :type status: str
+        :param updated_time: 迭代更新时间，长整型时间戳
+        :type updated_time: int
+        :param deleted: 迭代是否已经删除，false, 未删除， true已经删除
+        :type deleted: bool
+        """
         
         
 
@@ -93,7 +112,7 @@ class ListProjectVersionsV4ResponseBodyIterations:
         迭代描述
 
         :param description: The description of this ListProjectVersionsV4ResponseBodyIterations.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -115,7 +134,7 @@ class ListProjectVersionsV4ResponseBodyIterations:
         迭代结束时间
 
         :param end_time: The end_time of this ListProjectVersionsV4ResponseBodyIterations.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -137,7 +156,7 @@ class ListProjectVersionsV4ResponseBodyIterations:
         迭代id
 
         :param id: The id of this ListProjectVersionsV4ResponseBodyIterations.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -159,7 +178,7 @@ class ListProjectVersionsV4ResponseBodyIterations:
         迭代标题
 
         :param name: The name of this ListProjectVersionsV4ResponseBodyIterations.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -181,7 +200,7 @@ class ListProjectVersionsV4ResponseBodyIterations:
         迭代开始时间
 
         :param begin_time: The begin_time of this ListProjectVersionsV4ResponseBodyIterations.
-        :type: str
+        :type begin_time: str
         """
         self._begin_time = begin_time
 
@@ -203,7 +222,7 @@ class ListProjectVersionsV4ResponseBodyIterations:
         迭代状态
 
         :param status: The status of this ListProjectVersionsV4ResponseBodyIterations.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -225,7 +244,7 @@ class ListProjectVersionsV4ResponseBodyIterations:
         迭代更新时间，长整型时间戳
 
         :param updated_time: The updated_time of this ListProjectVersionsV4ResponseBodyIterations.
-        :type: int
+        :type updated_time: int
         """
         self._updated_time = updated_time
 
@@ -247,7 +266,7 @@ class ListProjectVersionsV4ResponseBodyIterations:
         迭代是否已经删除，false, 未删除， true已经删除
 
         :param deleted: The deleted of this ListProjectVersionsV4ResponseBodyIterations.
-        :type: bool
+        :type deleted: bool
         """
         self._deleted = deleted
 

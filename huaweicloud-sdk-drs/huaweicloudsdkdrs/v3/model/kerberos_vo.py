@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KerberosVO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class KerberosVO:
     }
 
     def __init__(self, krb5_conf_file=None, key_tab_file=None, domain_name=None, user_principal=None):
-        """KerberosVO - a model defined in huaweicloud sdk"""
+        """KerberosVO
+
+        The model defined in huaweicloud sdk
+
+        :param krb5_conf_file: krb5配置文件
+        :type krb5_conf_file: str
+        :param key_tab_file: key文件
+        :type key_tab_file: str
+        :param domain_name: 域名
+        :type domain_name: str
+        :param user_principal: Kerberos用户对象
+        :type user_principal: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class KerberosVO:
         krb5配置文件
 
         :param krb5_conf_file: The krb5_conf_file of this KerberosVO.
-        :type: str
+        :type krb5_conf_file: str
         """
         self._krb5_conf_file = krb5_conf_file
 
@@ -95,7 +106,7 @@ class KerberosVO:
         key文件
 
         :param key_tab_file: The key_tab_file of this KerberosVO.
-        :type: str
+        :type key_tab_file: str
         """
         self._key_tab_file = key_tab_file
 
@@ -117,7 +128,7 @@ class KerberosVO:
         域名
 
         :param domain_name: The domain_name of this KerberosVO.
-        :type: str
+        :type domain_name: str
         """
         self._domain_name = domain_name
 
@@ -139,7 +150,7 @@ class KerberosVO:
         Kerberos用户对象
 
         :param user_principal: The user_principal of this KerberosVO.
-        :type: str
+        :type user_principal: str
         """
         self._user_principal = user_principal
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateAnonymousAuthRandomResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateAnonymousAuthRandomResponse(SdkResponse):
     }
 
     def __init__(self, site_url=None, random=None):
-        """CreateAnonymousAuthRandomResponse - a model defined in huaweicloud sdk"""
+        """CreateAnonymousAuthRandomResponse
+
+        The model defined in huaweicloud sdk
+
+        :param site_url: 下一跳URL。
+        :type site_url: str
+        :param random: 鉴权随机数。
+        :type random: str
+        """
         
         super(CreateAnonymousAuthRandomResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class CreateAnonymousAuthRandomResponse(SdkResponse):
         下一跳URL。
 
         :param site_url: The site_url of this CreateAnonymousAuthRandomResponse.
-        :type: str
+        :type site_url: str
         """
         self._site_url = site_url
 
@@ -85,7 +92,7 @@ class CreateAnonymousAuthRandomResponse(SdkResponse):
         鉴权随机数。
 
         :param random: The random of this CreateAnonymousAuthRandomResponse.
-        :type: str
+        :type random: str
         """
         self._random = random
 

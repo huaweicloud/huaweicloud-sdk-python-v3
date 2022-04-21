@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListFunctionVersionsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListFunctionVersionsResponse(SdkResponse):
     }
 
     def __init__(self, versions=None, next_marker=None, count=None):
-        """ListFunctionVersionsResponse - a model defined in huaweicloud sdk"""
+        """ListFunctionVersionsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param versions: 版本列表
+        :type versions: list[:class:`huaweicloudsdkfunctiongraph.v2.ListFunctionVersionResult`]
+        :param next_marker: 下一次记录位置
+        :type next_marker: int
+        :param count: 函数版本总数
+        :type count: int
+        """
         
         super(ListFunctionVersionsResponse, self).__init__()
 
@@ -57,7 +66,7 @@ class ListFunctionVersionsResponse(SdkResponse):
         版本列表
 
         :return: The versions of this ListFunctionVersionsResponse.
-        :rtype: list[ListFunctionVersionResult]
+        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.ListFunctionVersionResult`]
         """
         return self._versions
 
@@ -68,7 +77,7 @@ class ListFunctionVersionsResponse(SdkResponse):
         版本列表
 
         :param versions: The versions of this ListFunctionVersionsResponse.
-        :type: list[ListFunctionVersionResult]
+        :type versions: list[:class:`huaweicloudsdkfunctiongraph.v2.ListFunctionVersionResult`]
         """
         self._versions = versions
 
@@ -90,7 +99,7 @@ class ListFunctionVersionsResponse(SdkResponse):
         下一次记录位置
 
         :param next_marker: The next_marker of this ListFunctionVersionsResponse.
-        :type: int
+        :type next_marker: int
         """
         self._next_marker = next_marker
 
@@ -112,7 +121,7 @@ class ListFunctionVersionsResponse(SdkResponse):
         函数版本总数
 
         :param count: The count of this ListFunctionVersionsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

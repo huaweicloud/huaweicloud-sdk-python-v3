@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListServerBlockDevicesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListServerBlockDevicesResponse(SdkResponse):
     }
 
     def __init__(self, attachable_quantity=None, volume_attachments=None):
-        """ListServerBlockDevicesResponse - a model defined in huaweicloud sdk"""
+        """ListServerBlockDevicesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param attachable_quantity: 
+        :type attachable_quantity: :class:`huaweicloudsdkecs.v2.BlockDeviceAttachableQuantity`
+        :param volume_attachments: 云服务器挂载信息列表。
+        :type volume_attachments: list[:class:`huaweicloudsdkecs.v2.ServerBlockDevice`]
+        """
         
         super(ListServerBlockDevicesResponse, self).__init__()
 
@@ -51,7 +58,7 @@ class ListServerBlockDevicesResponse(SdkResponse):
 
 
         :return: The attachable_quantity of this ListServerBlockDevicesResponse.
-        :rtype: BlockDeviceAttachableQuantity
+        :rtype: :class:`huaweicloudsdkecs.v2.BlockDeviceAttachableQuantity`
         """
         return self._attachable_quantity
 
@@ -61,7 +68,7 @@ class ListServerBlockDevicesResponse(SdkResponse):
 
 
         :param attachable_quantity: The attachable_quantity of this ListServerBlockDevicesResponse.
-        :type: BlockDeviceAttachableQuantity
+        :type attachable_quantity: :class:`huaweicloudsdkecs.v2.BlockDeviceAttachableQuantity`
         """
         self._attachable_quantity = attachable_quantity
 
@@ -72,7 +79,7 @@ class ListServerBlockDevicesResponse(SdkResponse):
         云服务器挂载信息列表。
 
         :return: The volume_attachments of this ListServerBlockDevicesResponse.
-        :rtype: list[ServerBlockDevice]
+        :rtype: list[:class:`huaweicloudsdkecs.v2.ServerBlockDevice`]
         """
         return self._volume_attachments
 
@@ -83,7 +90,7 @@ class ListServerBlockDevicesResponse(SdkResponse):
         云服务器挂载信息列表。
 
         :param volume_attachments: The volume_attachments of this ListServerBlockDevicesResponse.
-        :type: list[ServerBlockDevice]
+        :type volume_attachments: list[:class:`huaweicloudsdkecs.v2.ServerBlockDevice`]
         """
         self._volume_attachments = volume_attachments
 

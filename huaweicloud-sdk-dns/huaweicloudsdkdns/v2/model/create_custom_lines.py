@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateCustomLines:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateCustomLines:
     }
 
     def __init__(self, name=None, ip_segments=None, description=None):
-        """CreateCustomLines - a model defined in huaweicloud sdk"""
+        """CreateCustomLines
+
+        The model defined in huaweicloud sdk
+
+        :param name: 解析线路名称。  长度限制为1-80个字符，只允许包含中文、字母、数字、&#39;-&#39;、&#39;_&#39;、&#39;.&#39;字符。  租户内，解析线路名称是唯一的。
+        :type name: str
+        :param ip_segments: IP地址段。  以“-”分隔，小IP地址在前，大IP地址在后。IP段之间不能有交叉。当只有一个IP时，填写IP1-IP1。 目前只支持IPV4。  最多支持50个。
+        :type ip_segments: list[str]
+        :param description: 自定义线路的描述信息。长度不超过255个字符。  默认值为空。
+        :type description: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class CreateCustomLines:
         解析线路名称。  长度限制为1-80个字符，只允许包含中文、字母、数字、'-'、'_'、'.'字符。  租户内，解析线路名称是唯一的。
 
         :param name: The name of this CreateCustomLines.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -88,7 +97,7 @@ class CreateCustomLines:
         IP地址段。  以“-”分隔，小IP地址在前，大IP地址在后。IP段之间不能有交叉。当只有一个IP时，填写IP1-IP1。 目前只支持IPV4。  最多支持50个。
 
         :param ip_segments: The ip_segments of this CreateCustomLines.
-        :type: list[str]
+        :type ip_segments: list[str]
         """
         self._ip_segments = ip_segments
 
@@ -110,7 +119,7 @@ class CreateCustomLines:
         自定义线路的描述信息。长度不超过255个字符。  默认值为空。
 
         :param description: The description of this CreateCustomLines.
-        :type: str
+        :type description: str
         """
         self._description = description
 

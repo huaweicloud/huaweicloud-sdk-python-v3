@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowAuthorizationDetailResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -64,7 +63,47 @@ class ShowAuthorizationDetailResponse(SdkResponse):
     }
 
     def __init__(self, id=None, status=None, incident_id=None, simple_description=None, resource_type_id=None, resource_type_name=None, visit_type_id=None, visit_type_name=None, auth_effective_time=None, auth_expire_time=None, reject_reason=None, incident_auth_detail_list=None, xcustomer_name=None, auth_handler_name=None, agency_name=None, auth_describe=None, content_type_id=None, content_type_name=None):
-        """ShowAuthorizationDetailResponse - a model defined in huaweicloud sdk"""
+        """ShowAuthorizationDetailResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 授权id
+        :type id: int
+        :param status: 授权状态
+        :type status: int
+        :param incident_id: 工单id
+        :type incident_id: str
+        :param simple_description: 简要描述
+        :type simple_description: str
+        :param resource_type_id: 授权资源类型id
+        :type resource_type_id: str
+        :param resource_type_name: 授权资源类型名称
+        :type resource_type_name: str
+        :param visit_type_id: 授权访问类型id
+        :type visit_type_id: str
+        :param visit_type_name: 授权访问类型名称
+        :type visit_type_name: str
+        :param auth_effective_time: 授权生效时间
+        :type auth_effective_time: datetime
+        :param auth_expire_time: 授权到期时间
+        :type auth_expire_time: datetime
+        :param reject_reason: 拒绝原因
+        :type reject_reason: str
+        :param incident_auth_detail_list: 授权详情列表
+        :type incident_auth_detail_list: list[:class:`huaweicloudsdkosm.v2.IncidentOrderAuthDetailInfoV2`]
+        :param xcustomer_name: 子账号名称
+        :type xcustomer_name: str
+        :param auth_handler_name: 授权处理人名称
+        :type auth_handler_name: str
+        :param agency_name: 委托名称
+        :type agency_name: str
+        :param auth_describe: 授权描述
+        :type auth_describe: str
+        :param content_type_id: 授权内容Id 
+        :type content_type_id: str
+        :param content_type_name: 授权内容名称
+        :type content_type_name: str
+        """
         
         super(ShowAuthorizationDetailResponse, self).__init__()
 
@@ -143,7 +182,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
         授权id
 
         :param id: The id of this ShowAuthorizationDetailResponse.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -165,7 +204,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
         授权状态
 
         :param status: The status of this ShowAuthorizationDetailResponse.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -187,7 +226,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
         工单id
 
         :param incident_id: The incident_id of this ShowAuthorizationDetailResponse.
-        :type: str
+        :type incident_id: str
         """
         self._incident_id = incident_id
 
@@ -209,7 +248,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
         简要描述
 
         :param simple_description: The simple_description of this ShowAuthorizationDetailResponse.
-        :type: str
+        :type simple_description: str
         """
         self._simple_description = simple_description
 
@@ -231,7 +270,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
         授权资源类型id
 
         :param resource_type_id: The resource_type_id of this ShowAuthorizationDetailResponse.
-        :type: str
+        :type resource_type_id: str
         """
         self._resource_type_id = resource_type_id
 
@@ -253,7 +292,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
         授权资源类型名称
 
         :param resource_type_name: The resource_type_name of this ShowAuthorizationDetailResponse.
-        :type: str
+        :type resource_type_name: str
         """
         self._resource_type_name = resource_type_name
 
@@ -275,7 +314,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
         授权访问类型id
 
         :param visit_type_id: The visit_type_id of this ShowAuthorizationDetailResponse.
-        :type: str
+        :type visit_type_id: str
         """
         self._visit_type_id = visit_type_id
 
@@ -297,7 +336,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
         授权访问类型名称
 
         :param visit_type_name: The visit_type_name of this ShowAuthorizationDetailResponse.
-        :type: str
+        :type visit_type_name: str
         """
         self._visit_type_name = visit_type_name
 
@@ -319,7 +358,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
         授权生效时间
 
         :param auth_effective_time: The auth_effective_time of this ShowAuthorizationDetailResponse.
-        :type: datetime
+        :type auth_effective_time: datetime
         """
         self._auth_effective_time = auth_effective_time
 
@@ -341,7 +380,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
         授权到期时间
 
         :param auth_expire_time: The auth_expire_time of this ShowAuthorizationDetailResponse.
-        :type: datetime
+        :type auth_expire_time: datetime
         """
         self._auth_expire_time = auth_expire_time
 
@@ -363,7 +402,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
         拒绝原因
 
         :param reject_reason: The reject_reason of this ShowAuthorizationDetailResponse.
-        :type: str
+        :type reject_reason: str
         """
         self._reject_reason = reject_reason
 
@@ -374,7 +413,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
         授权详情列表
 
         :return: The incident_auth_detail_list of this ShowAuthorizationDetailResponse.
-        :rtype: list[IncidentOrderAuthDetailInfoV2]
+        :rtype: list[:class:`huaweicloudsdkosm.v2.IncidentOrderAuthDetailInfoV2`]
         """
         return self._incident_auth_detail_list
 
@@ -385,7 +424,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
         授权详情列表
 
         :param incident_auth_detail_list: The incident_auth_detail_list of this ShowAuthorizationDetailResponse.
-        :type: list[IncidentOrderAuthDetailInfoV2]
+        :type incident_auth_detail_list: list[:class:`huaweicloudsdkosm.v2.IncidentOrderAuthDetailInfoV2`]
         """
         self._incident_auth_detail_list = incident_auth_detail_list
 
@@ -407,7 +446,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
         子账号名称
 
         :param xcustomer_name: The xcustomer_name of this ShowAuthorizationDetailResponse.
-        :type: str
+        :type xcustomer_name: str
         """
         self._xcustomer_name = xcustomer_name
 
@@ -429,7 +468,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
         授权处理人名称
 
         :param auth_handler_name: The auth_handler_name of this ShowAuthorizationDetailResponse.
-        :type: str
+        :type auth_handler_name: str
         """
         self._auth_handler_name = auth_handler_name
 
@@ -451,7 +490,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
         委托名称
 
         :param agency_name: The agency_name of this ShowAuthorizationDetailResponse.
-        :type: str
+        :type agency_name: str
         """
         self._agency_name = agency_name
 
@@ -473,7 +512,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
         授权描述
 
         :param auth_describe: The auth_describe of this ShowAuthorizationDetailResponse.
-        :type: str
+        :type auth_describe: str
         """
         self._auth_describe = auth_describe
 
@@ -495,7 +534,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
         授权内容Id 
 
         :param content_type_id: The content_type_id of this ShowAuthorizationDetailResponse.
-        :type: str
+        :type content_type_id: str
         """
         self._content_type_id = content_type_id
 
@@ -517,7 +556,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
         授权内容名称
 
         :param content_type_name: The content_type_name of this ShowAuthorizationDetailResponse.
-        :type: str
+        :type content_type_name: str
         """
         self._content_type_name = content_type_name
 

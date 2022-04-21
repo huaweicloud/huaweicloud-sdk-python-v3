@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TemplateJobInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class TemplateJobInfo:
     }
 
     def __init__(self, application_name=None, template_id=None, project_name=None, repo_type=None, properties=None, template_dependencies=None, repo_info=None):
-        """TemplateJobInfo - a model defined in huaweicloud sdk"""
+        """TemplateJobInfo
+
+        The model defined in huaweicloud sdk
+
+        :param application_name: 应用名称
+        :type application_name: str
+        :param template_id: 任务依赖的模板id
+        :type template_id: str
+        :param project_name: 应用名称
+        :type project_name: str
+        :param repo_type: 应用代码生成后的地址类型，目前支持0：codehub地址和1：压缩包下载地址
+        :type repo_type: int
+        :param properties: 应用的动态参数json
+        :type properties: object
+        :param template_dependencies: 模板 dependency ID 集合
+        :type template_dependencies: list[str]
+        :param repo_info: 
+        :type repo_info: :class:`huaweicloudsdkdevstar.v1.RepositoryInfo`
+        """
         
         
 
@@ -87,7 +104,7 @@ class TemplateJobInfo:
         应用名称
 
         :param application_name: The application_name of this TemplateJobInfo.
-        :type: str
+        :type application_name: str
         """
         self._application_name = application_name
 
@@ -109,7 +126,7 @@ class TemplateJobInfo:
         任务依赖的模板id
 
         :param template_id: The template_id of this TemplateJobInfo.
-        :type: str
+        :type template_id: str
         """
         self._template_id = template_id
 
@@ -131,7 +148,7 @@ class TemplateJobInfo:
         应用名称
 
         :param project_name: The project_name of this TemplateJobInfo.
-        :type: str
+        :type project_name: str
         """
         self._project_name = project_name
 
@@ -153,7 +170,7 @@ class TemplateJobInfo:
         应用代码生成后的地址类型，目前支持0：codehub地址和1：压缩包下载地址
 
         :param repo_type: The repo_type of this TemplateJobInfo.
-        :type: int
+        :type repo_type: int
         """
         self._repo_type = repo_type
 
@@ -175,7 +192,7 @@ class TemplateJobInfo:
         应用的动态参数json
 
         :param properties: The properties of this TemplateJobInfo.
-        :type: object
+        :type properties: object
         """
         self._properties = properties
 
@@ -197,7 +214,7 @@ class TemplateJobInfo:
         模板 dependency ID 集合
 
         :param template_dependencies: The template_dependencies of this TemplateJobInfo.
-        :type: list[str]
+        :type template_dependencies: list[str]
         """
         self._template_dependencies = template_dependencies
 
@@ -207,7 +224,7 @@ class TemplateJobInfo:
 
 
         :return: The repo_info of this TemplateJobInfo.
-        :rtype: RepositoryInfo
+        :rtype: :class:`huaweicloudsdkdevstar.v1.RepositoryInfo`
         """
         return self._repo_info
 
@@ -217,7 +234,7 @@ class TemplateJobInfo:
 
 
         :param repo_info: The repo_info of this TemplateJobInfo.
-        :type: RepositoryInfo
+        :type repo_info: :class:`huaweicloudsdkdevstar.v1.RepositoryInfo`
         """
         self._repo_info = repo_info
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResizeInstanceVolumeOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ResizeInstanceVolumeOption:
     }
 
     def __init__(self, group_id=None, size=None):
-        """ResizeInstanceVolumeOption - a model defined in huaweicloud sdk"""
+        """ResizeInstanceVolumeOption
+
+        The model defined in huaweicloud sdk
+
+        :param group_id: 角色组ID。 - 对于集群实例，该参数为shard组ID。 - 对于副本集和单节点实例，不传该参数。
+        :type group_id: str
+        :param size: 待扩容到的磁盘容量。取值为10的整数倍，并且大于当前磁盘容量。 - 对于集群实例，表示扩容到的单个shard组的磁盘容量。取值范围：10GB~2000GB。 - 对于副本集实例，表示扩容到的实例的磁盘容量，取值范围：10GB~2000GB。 - 对于单节点实例，表示扩容到的实例的磁盘容量，取值范围：10GB~1000GB。
+        :type size: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ResizeInstanceVolumeOption:
         角色组ID。 - 对于集群实例，该参数为shard组ID。 - 对于副本集和单节点实例，不传该参数。
 
         :param group_id: The group_id of this ResizeInstanceVolumeOption.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -84,7 +91,7 @@ class ResizeInstanceVolumeOption:
         待扩容到的磁盘容量。取值为10的整数倍，并且大于当前磁盘容量。 - 对于集群实例，表示扩容到的单个shard组的磁盘容量。取值范围：10GB~2000GB。 - 对于副本集实例，表示扩容到的实例的磁盘容量，取值范围：10GB~2000GB。 - 对于单节点实例，表示扩容到的实例的磁盘容量，取值范围：10GB~1000GB。
 
         :param size: The size of this ResizeInstanceVolumeOption.
-        :type: str
+        :type size: str
         """
         self._size = size
 

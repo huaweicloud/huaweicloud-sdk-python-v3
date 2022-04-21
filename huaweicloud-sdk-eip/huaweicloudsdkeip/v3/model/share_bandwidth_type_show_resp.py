@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShareBandwidthTypeShowResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ShareBandwidthTypeShowResp:
     }
 
     def __init__(self, id=None, bandwidth_type=None, public_border_group=None, created_at=None, updated_at=None, name_en=None, name_zh=None, description=None):
-        """ShareBandwidthTypeShowResp - a model defined in huaweicloud sdk"""
+        """ShareBandwidthTypeShowResp
+
+        The model defined in huaweicloud sdk
+
+        :param id: 支持带宽类型的id
+        :type id: str
+        :param bandwidth_type: 带宽类型
+        :type bandwidth_type: str
+        :param public_border_group: 中心站点or边缘站点，默认展示
+        :type public_border_group: str
+        :param created_at: 创建时间
+        :type created_at: str
+        :param updated_at: 更新时间
+        :type updated_at: str
+        :param name_en: 带宽类型的英文表述
+        :type name_en: str
+        :param name_zh: 带宽类型的中文表述
+        :type name_zh: str
+        :param description: 带宽类型描述信息
+        :type description: str
+        """
         
         
 
@@ -93,7 +112,7 @@ class ShareBandwidthTypeShowResp:
         支持带宽类型的id
 
         :param id: The id of this ShareBandwidthTypeShowResp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -115,7 +134,7 @@ class ShareBandwidthTypeShowResp:
         带宽类型
 
         :param bandwidth_type: The bandwidth_type of this ShareBandwidthTypeShowResp.
-        :type: str
+        :type bandwidth_type: str
         """
         self._bandwidth_type = bandwidth_type
 
@@ -137,7 +156,7 @@ class ShareBandwidthTypeShowResp:
         中心站点or边缘站点，默认展示
 
         :param public_border_group: The public_border_group of this ShareBandwidthTypeShowResp.
-        :type: str
+        :type public_border_group: str
         """
         self._public_border_group = public_border_group
 
@@ -159,7 +178,7 @@ class ShareBandwidthTypeShowResp:
         创建时间
 
         :param created_at: The created_at of this ShareBandwidthTypeShowResp.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -181,7 +200,7 @@ class ShareBandwidthTypeShowResp:
         更新时间
 
         :param updated_at: The updated_at of this ShareBandwidthTypeShowResp.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 
@@ -203,7 +222,7 @@ class ShareBandwidthTypeShowResp:
         带宽类型的英文表述
 
         :param name_en: The name_en of this ShareBandwidthTypeShowResp.
-        :type: str
+        :type name_en: str
         """
         self._name_en = name_en
 
@@ -225,7 +244,7 @@ class ShareBandwidthTypeShowResp:
         带宽类型的中文表述
 
         :param name_zh: The name_zh of this ShareBandwidthTypeShowResp.
-        :type: str
+        :type name_zh: str
         """
         self._name_zh = name_zh
 
@@ -247,7 +266,7 @@ class ShareBandwidthTypeShowResp:
         带宽类型描述信息
 
         :param description: The description of this ShareBandwidthTypeShowResp.
-        :type: str
+        :type description: str
         """
         self._description = description
 

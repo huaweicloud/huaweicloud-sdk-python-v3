@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class WordPronunciation:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class WordPronunciation:
     }
 
     def __init__(self, score=None, gop=None):
-        """WordPronunciation - a model defined in huaweicloud sdk"""
+        """WordPronunciation
+
+        The model defined in huaweicloud sdk
+
+        :param score: 单词发音综合得分 0-100
+        :type score: float
+        :param gop: 单词发音好坏得分 0-100
+        :type gop: float
+        """
         
         
 
@@ -61,7 +68,7 @@ class WordPronunciation:
         单词发音综合得分 0-100
 
         :param score: The score of this WordPronunciation.
-        :type: float
+        :type score: float
         """
         self._score = score
 
@@ -83,7 +90,7 @@ class WordPronunciation:
         单词发音好坏得分 0-100
 
         :param gop: The gop of this WordPronunciation.
-        :type: float
+        :type gop: float
         """
         self._gop = gop
 

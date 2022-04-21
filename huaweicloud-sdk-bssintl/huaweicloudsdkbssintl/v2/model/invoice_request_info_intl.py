@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InvoiceRequestInfoIntl:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -72,7 +71,55 @@ class InvoiceRequestInfoIntl:
     }
 
     def __init__(self, request_id=None, cancel_reason=None, title_type=None, channel_type=None, invoice_type=None, invoice_title=None, invoice_amount=None, invoice_method=None, invoice_class=None, invoice_state=None, apply_opera=None, address_info=None, apply_time=None, invoice_mode=None, email=None, request_mode=None, src_request_id=None, sales_id=None, invoice_no=None, trade_type=None, bill_cycle=None, tax_list=None):
-        """InvoiceRequestInfoIntl - a model defined in huaweicloud sdk"""
+        """InvoiceRequestInfoIntl
+
+        The model defined in huaweicloud sdk
+
+        :param request_id: 请求ID。
+        :type request_id: str
+        :param cancel_reason: 驳回原因。
+        :type cancel_reason: str
+        :param title_type: 开票类型。 0：个人1：企业
+        :type title_type: int
+        :param channel_type: 渠道类型。 0：华为云
+        :type channel_type: int
+        :param invoice_type: 发票种类。 0：增值税专用发票1：增值税普通发票
+        :type invoice_type: int
+        :param invoice_title: 发票抬头。
+        :type invoice_title: str
+        :param invoice_amount: 已开票金额（美元） 。
+        :type invoice_amount: float
+        :param invoice_method: 开票方式。 0：账期1：到账2：订单
+        :type invoice_method: int
+        :param invoice_class: 发票类别。 0：税票1：商票
+        :type invoice_class: int
+        :param invoice_state: 开票状态。 0：草稿1：待审核4：等待导出发票文件5：等待发票文件回填6：等待邮寄确认7：等待回执确认8：完成9：已退票11：等待驳回审核13：退票待审核14：待退票状态回填15：退票失败
+        :type invoice_state: int
+        :param apply_opera: 发票申请人员。
+        :type apply_opera: str
+        :param address_info: 
+        :type address_info: :class:`huaweicloudsdkbssintl.v2.PostAddressInfoIntl`
+        :param apply_time: 申请时间（UTC时间）。
+        :type apply_time: str
+        :param invoice_mode: 发票类型。 0：纸质票
+        :type invoice_mode: str
+        :param email: 电子发票寄送地。
+        :type email: str
+        :param request_mode: 申请类型。 0：开票申请1：退票申请2：正向开票已退票
+        :type request_mode: str
+        :param src_request_id: 退票时的原申请ID。
+        :type src_request_id: str
+        :param sales_id: 签约主体ID。
+        :type sales_id: str
+        :param invoice_no: 发票号码。
+        :type invoice_no: str
+        :param trade_type: 交易类型。 3：结算信用卡扣减4：结算未结清开票5：先开票后到款6：BP月结开票7：充值开票8：包年/包月在线支付开票10：普通提现开票
+        :type trade_type: int
+        :param bill_cycle: 发票账期。
+        :type bill_cycle: str
+        :param tax_list: 税务信息列表，参见表4。
+        :type tax_list: list[:class:`huaweicloudsdkbssintl.v2.TaxInfo`]
+        """
         
         
 
@@ -163,7 +210,7 @@ class InvoiceRequestInfoIntl:
         请求ID。
 
         :param request_id: The request_id of this InvoiceRequestInfoIntl.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 
@@ -185,7 +232,7 @@ class InvoiceRequestInfoIntl:
         驳回原因。
 
         :param cancel_reason: The cancel_reason of this InvoiceRequestInfoIntl.
-        :type: str
+        :type cancel_reason: str
         """
         self._cancel_reason = cancel_reason
 
@@ -207,7 +254,7 @@ class InvoiceRequestInfoIntl:
         开票类型。 0：个人1：企业
 
         :param title_type: The title_type of this InvoiceRequestInfoIntl.
-        :type: int
+        :type title_type: int
         """
         self._title_type = title_type
 
@@ -229,7 +276,7 @@ class InvoiceRequestInfoIntl:
         渠道类型。 0：华为云
 
         :param channel_type: The channel_type of this InvoiceRequestInfoIntl.
-        :type: int
+        :type channel_type: int
         """
         self._channel_type = channel_type
 
@@ -251,7 +298,7 @@ class InvoiceRequestInfoIntl:
         发票种类。 0：增值税专用发票1：增值税普通发票
 
         :param invoice_type: The invoice_type of this InvoiceRequestInfoIntl.
-        :type: int
+        :type invoice_type: int
         """
         self._invoice_type = invoice_type
 
@@ -273,7 +320,7 @@ class InvoiceRequestInfoIntl:
         发票抬头。
 
         :param invoice_title: The invoice_title of this InvoiceRequestInfoIntl.
-        :type: str
+        :type invoice_title: str
         """
         self._invoice_title = invoice_title
 
@@ -295,7 +342,7 @@ class InvoiceRequestInfoIntl:
         已开票金额（美元） 。
 
         :param invoice_amount: The invoice_amount of this InvoiceRequestInfoIntl.
-        :type: float
+        :type invoice_amount: float
         """
         self._invoice_amount = invoice_amount
 
@@ -317,7 +364,7 @@ class InvoiceRequestInfoIntl:
         开票方式。 0：账期1：到账2：订单
 
         :param invoice_method: The invoice_method of this InvoiceRequestInfoIntl.
-        :type: int
+        :type invoice_method: int
         """
         self._invoice_method = invoice_method
 
@@ -339,7 +386,7 @@ class InvoiceRequestInfoIntl:
         发票类别。 0：税票1：商票
 
         :param invoice_class: The invoice_class of this InvoiceRequestInfoIntl.
-        :type: int
+        :type invoice_class: int
         """
         self._invoice_class = invoice_class
 
@@ -361,7 +408,7 @@ class InvoiceRequestInfoIntl:
         开票状态。 0：草稿1：待审核4：等待导出发票文件5：等待发票文件回填6：等待邮寄确认7：等待回执确认8：完成9：已退票11：等待驳回审核13：退票待审核14：待退票状态回填15：退票失败
 
         :param invoice_state: The invoice_state of this InvoiceRequestInfoIntl.
-        :type: int
+        :type invoice_state: int
         """
         self._invoice_state = invoice_state
 
@@ -383,7 +430,7 @@ class InvoiceRequestInfoIntl:
         发票申请人员。
 
         :param apply_opera: The apply_opera of this InvoiceRequestInfoIntl.
-        :type: str
+        :type apply_opera: str
         """
         self._apply_opera = apply_opera
 
@@ -393,7 +440,7 @@ class InvoiceRequestInfoIntl:
 
 
         :return: The address_info of this InvoiceRequestInfoIntl.
-        :rtype: PostAddressInfoIntl
+        :rtype: :class:`huaweicloudsdkbssintl.v2.PostAddressInfoIntl`
         """
         return self._address_info
 
@@ -403,7 +450,7 @@ class InvoiceRequestInfoIntl:
 
 
         :param address_info: The address_info of this InvoiceRequestInfoIntl.
-        :type: PostAddressInfoIntl
+        :type address_info: :class:`huaweicloudsdkbssintl.v2.PostAddressInfoIntl`
         """
         self._address_info = address_info
 
@@ -425,7 +472,7 @@ class InvoiceRequestInfoIntl:
         申请时间（UTC时间）。
 
         :param apply_time: The apply_time of this InvoiceRequestInfoIntl.
-        :type: str
+        :type apply_time: str
         """
         self._apply_time = apply_time
 
@@ -447,7 +494,7 @@ class InvoiceRequestInfoIntl:
         发票类型。 0：纸质票
 
         :param invoice_mode: The invoice_mode of this InvoiceRequestInfoIntl.
-        :type: str
+        :type invoice_mode: str
         """
         self._invoice_mode = invoice_mode
 
@@ -469,7 +516,7 @@ class InvoiceRequestInfoIntl:
         电子发票寄送地。
 
         :param email: The email of this InvoiceRequestInfoIntl.
-        :type: str
+        :type email: str
         """
         self._email = email
 
@@ -491,7 +538,7 @@ class InvoiceRequestInfoIntl:
         申请类型。 0：开票申请1：退票申请2：正向开票已退票
 
         :param request_mode: The request_mode of this InvoiceRequestInfoIntl.
-        :type: str
+        :type request_mode: str
         """
         self._request_mode = request_mode
 
@@ -513,7 +560,7 @@ class InvoiceRequestInfoIntl:
         退票时的原申请ID。
 
         :param src_request_id: The src_request_id of this InvoiceRequestInfoIntl.
-        :type: str
+        :type src_request_id: str
         """
         self._src_request_id = src_request_id
 
@@ -535,7 +582,7 @@ class InvoiceRequestInfoIntl:
         签约主体ID。
 
         :param sales_id: The sales_id of this InvoiceRequestInfoIntl.
-        :type: str
+        :type sales_id: str
         """
         self._sales_id = sales_id
 
@@ -557,7 +604,7 @@ class InvoiceRequestInfoIntl:
         发票号码。
 
         :param invoice_no: The invoice_no of this InvoiceRequestInfoIntl.
-        :type: str
+        :type invoice_no: str
         """
         self._invoice_no = invoice_no
 
@@ -579,7 +626,7 @@ class InvoiceRequestInfoIntl:
         交易类型。 3：结算信用卡扣减4：结算未结清开票5：先开票后到款6：BP月结开票7：充值开票8：包年/包月在线支付开票10：普通提现开票
 
         :param trade_type: The trade_type of this InvoiceRequestInfoIntl.
-        :type: int
+        :type trade_type: int
         """
         self._trade_type = trade_type
 
@@ -601,7 +648,7 @@ class InvoiceRequestInfoIntl:
         发票账期。
 
         :param bill_cycle: The bill_cycle of this InvoiceRequestInfoIntl.
-        :type: str
+        :type bill_cycle: str
         """
         self._bill_cycle = bill_cycle
 
@@ -612,7 +659,7 @@ class InvoiceRequestInfoIntl:
         税务信息列表，参见表4。
 
         :return: The tax_list of this InvoiceRequestInfoIntl.
-        :rtype: list[TaxInfo]
+        :rtype: list[:class:`huaweicloudsdkbssintl.v2.TaxInfo`]
         """
         return self._tax_list
 
@@ -623,7 +670,7 @@ class InvoiceRequestInfoIntl:
         税务信息列表，参见表4。
 
         :param tax_list: The tax_list of this InvoiceRequestInfoIntl.
-        :type: list[TaxInfo]
+        :type tax_list: list[:class:`huaweicloudsdkbssintl.v2.TaxInfo`]
         """
         self._tax_list = tax_list
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateTriggerRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UpdateTriggerRequest:
     }
 
     def __init__(self, function_urn=None, trigger_type_code=None, trigger_id=None, body=None):
-        """UpdateTriggerRequest - a model defined in huaweicloud sdk"""
+        """UpdateTriggerRequest
+
+        The model defined in huaweicloud sdk
+
+        :param function_urn: 函数的URN，详细解释见FunctionGraph函数模型的描述。
+        :type function_urn: str
+        :param trigger_type_code: 触发器类型代码。
+        :type trigger_type_code: str
+        :param trigger_id: 触发器编码。
+        :type trigger_id: str
+        :param body: Body of the UpdateTriggerRequest
+        :type body: :class:`huaweicloudsdkfunctiongraph.v2.UpdateTriggerRequestBody`
+        """
         
         
 
@@ -70,7 +81,7 @@ class UpdateTriggerRequest:
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
         :param function_urn: The function_urn of this UpdateTriggerRequest.
-        :type: str
+        :type function_urn: str
         """
         self._function_urn = function_urn
 
@@ -92,7 +103,7 @@ class UpdateTriggerRequest:
         触发器类型代码。
 
         :param trigger_type_code: The trigger_type_code of this UpdateTriggerRequest.
-        :type: str
+        :type trigger_type_code: str
         """
         self._trigger_type_code = trigger_type_code
 
@@ -114,7 +125,7 @@ class UpdateTriggerRequest:
         触发器编码。
 
         :param trigger_id: The trigger_id of this UpdateTriggerRequest.
-        :type: str
+        :type trigger_id: str
         """
         self._trigger_id = trigger_id
 
@@ -124,7 +135,7 @@ class UpdateTriggerRequest:
 
 
         :return: The body of this UpdateTriggerRequest.
-        :rtype: UpdateTriggerRequestBody
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.UpdateTriggerRequestBody`
         """
         return self._body
 
@@ -134,7 +145,7 @@ class UpdateTriggerRequest:
 
 
         :param body: The body of this UpdateTriggerRequest.
-        :type: UpdateTriggerRequestBody
+        :type body: :class:`huaweicloudsdkfunctiongraph.v2.UpdateTriggerRequestBody`
         """
         self._body = body
 

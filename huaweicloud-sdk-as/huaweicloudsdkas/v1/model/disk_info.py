@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DiskInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class DiskInfo:
     }
 
     def __init__(self, size=None, volume_type=None, disk_type=None, dedicated_storage_id=None, data_disk_image_id=None, snapshot_id=None, metadata=None):
-        """DiskInfo - a model defined in huaweicloud sdk"""
+        """DiskInfo
+
+        The model defined in huaweicloud sdk
+
+        :param size: 磁盘大小，容量单位为GB。系统盘输入大小范围为1~1024，且不小于镜像中系统盘的最小(min_disk属性)值。数据盘输入大小范围为10~32768。
+        :type size: int
+        :param volume_type: 云服务器系统盘对应的磁盘类型，需要与系统所提供的磁盘类型相匹配。  SATA：普通IO磁盘类型。 SAS：高IO磁盘类型。 SSD：超高IO磁盘类型。 GPSSD：通用型SSD磁盘类型。 co-p1：高IO (性能优化Ⅰ型) uh-l1：超高IO (时延优化) 当指定的云硬盘类型在avaliability_zone内不存在时，则创建云硬盘失败。  说明： 对于HANA云服务器、HL1型云服务器、HL2型云服务器，需使用co-p1和uh-l1两种磁盘类型。对于其他类型的云服务器，不能使用co-p1和uh-l1两种磁盘类型。  了解不同磁盘类型的详细信息，请参见[磁盘类型及性能介绍](https://support.huaweicloud.com/productdesc-evs/zh-cn_topic_0044524691.html)。
+        :type volume_type: str
+        :param disk_type: 系统盘还是数据盘，DATA表示为数据盘，SYS表示为系统盘。 说明： 系统盘不支持加密。
+        :type disk_type: str
+        :param dedicated_storage_id: 云服务器的磁盘可指定创建在用户的专属存储中，需要指定专属存储ID。说明：同一个伸缩配置中的磁盘需统一指定或统一不指定专属存储，不支持混用；当指定专属存储时，所有专属存储需要属于同一个可用分区，且每个磁盘选择的专属存储支持的磁盘类型都需要和参数volume_type保持一致。
+        :type dedicated_storage_id: str
+        :param data_disk_image_id: 云服务器的数据盘可指定从数据盘镜像导出，需要指定数据盘镜像ID。
+        :type data_disk_image_id: str
+        :param snapshot_id: 当选择使用整机镜像时，云服务器的系统盘及数据盘将通过整机备份恢复，需要指定磁盘备份的快照ID。说明：磁盘备份的快照ID可通过镜像的整机备份ID在CSBS查询备份详情获得；一个伸缩配置中的每一个disk需要通过snapshot_id和整机备份中的磁盘备份一一对应。
+        :type snapshot_id: str
+        :param metadata: 
+        :type metadata: :class:`huaweicloudsdkas.v1.MetaData`
+        """
         
         
 
@@ -85,7 +102,7 @@ class DiskInfo:
         磁盘大小，容量单位为GB。系统盘输入大小范围为1~1024，且不小于镜像中系统盘的最小(min_disk属性)值。数据盘输入大小范围为10~32768。
 
         :param size: The size of this DiskInfo.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -107,7 +124,7 @@ class DiskInfo:
         云服务器系统盘对应的磁盘类型，需要与系统所提供的磁盘类型相匹配。  SATA：普通IO磁盘类型。 SAS：高IO磁盘类型。 SSD：超高IO磁盘类型。 GPSSD：通用型SSD磁盘类型。 co-p1：高IO (性能优化Ⅰ型) uh-l1：超高IO (时延优化) 当指定的云硬盘类型在avaliability_zone内不存在时，则创建云硬盘失败。  说明： 对于HANA云服务器、HL1型云服务器、HL2型云服务器，需使用co-p1和uh-l1两种磁盘类型。对于其他类型的云服务器，不能使用co-p1和uh-l1两种磁盘类型。  了解不同磁盘类型的详细信息，请参见[磁盘类型及性能介绍](https://support.huaweicloud.com/productdesc-evs/zh-cn_topic_0044524691.html)。
 
         :param volume_type: The volume_type of this DiskInfo.
-        :type: str
+        :type volume_type: str
         """
         self._volume_type = volume_type
 
@@ -129,7 +146,7 @@ class DiskInfo:
         系统盘还是数据盘，DATA表示为数据盘，SYS表示为系统盘。 说明： 系统盘不支持加密。
 
         :param disk_type: The disk_type of this DiskInfo.
-        :type: str
+        :type disk_type: str
         """
         self._disk_type = disk_type
 
@@ -151,7 +168,7 @@ class DiskInfo:
         云服务器的磁盘可指定创建在用户的专属存储中，需要指定专属存储ID。说明：同一个伸缩配置中的磁盘需统一指定或统一不指定专属存储，不支持混用；当指定专属存储时，所有专属存储需要属于同一个可用分区，且每个磁盘选择的专属存储支持的磁盘类型都需要和参数volume_type保持一致。
 
         :param dedicated_storage_id: The dedicated_storage_id of this DiskInfo.
-        :type: str
+        :type dedicated_storage_id: str
         """
         self._dedicated_storage_id = dedicated_storage_id
 
@@ -173,7 +190,7 @@ class DiskInfo:
         云服务器的数据盘可指定从数据盘镜像导出，需要指定数据盘镜像ID。
 
         :param data_disk_image_id: The data_disk_image_id of this DiskInfo.
-        :type: str
+        :type data_disk_image_id: str
         """
         self._data_disk_image_id = data_disk_image_id
 
@@ -195,7 +212,7 @@ class DiskInfo:
         当选择使用整机镜像时，云服务器的系统盘及数据盘将通过整机备份恢复，需要指定磁盘备份的快照ID。说明：磁盘备份的快照ID可通过镜像的整机备份ID在CSBS查询备份详情获得；一个伸缩配置中的每一个disk需要通过snapshot_id和整机备份中的磁盘备份一一对应。
 
         :param snapshot_id: The snapshot_id of this DiskInfo.
-        :type: str
+        :type snapshot_id: str
         """
         self._snapshot_id = snapshot_id
 
@@ -205,7 +222,7 @@ class DiskInfo:
 
 
         :return: The metadata of this DiskInfo.
-        :rtype: MetaData
+        :rtype: :class:`huaweicloudsdkas.v1.MetaData`
         """
         return self._metadata
 
@@ -215,7 +232,7 @@ class DiskInfo:
 
 
         :param metadata: The metadata of this DiskInfo.
-        :type: MetaData
+        :type metadata: :class:`huaweicloudsdkas.v1.MetaData`
         """
         self._metadata = metadata
 

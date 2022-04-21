@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowFileInfoResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowFileInfoResponse(SdkResponse):
     }
 
     def __init__(self, jobs=None, scripts=None):
-        """ShowFileInfoResponse - a model defined in huaweicloud sdk"""
+        """ShowFileInfoResponse
+
+        The model defined in huaweicloud sdk
+
+        :param jobs: 
+        :type jobs: list[:class:`huaweicloudsdkdgc.v1.Job`]
+        :param scripts: 
+        :type scripts: list[:class:`huaweicloudsdkdgc.v1.Script`]
+        """
         
         super(ShowFileInfoResponse, self).__init__()
 
@@ -51,7 +58,7 @@ class ShowFileInfoResponse(SdkResponse):
 
 
         :return: The jobs of this ShowFileInfoResponse.
-        :rtype: list[Job]
+        :rtype: list[:class:`huaweicloudsdkdgc.v1.Job`]
         """
         return self._jobs
 
@@ -61,7 +68,7 @@ class ShowFileInfoResponse(SdkResponse):
 
 
         :param jobs: The jobs of this ShowFileInfoResponse.
-        :type: list[Job]
+        :type jobs: list[:class:`huaweicloudsdkdgc.v1.Job`]
         """
         self._jobs = jobs
 
@@ -71,7 +78,7 @@ class ShowFileInfoResponse(SdkResponse):
 
 
         :return: The scripts of this ShowFileInfoResponse.
-        :rtype: list[Script]
+        :rtype: list[:class:`huaweicloudsdkdgc.v1.Script`]
         """
         return self._scripts
 
@@ -81,7 +88,7 @@ class ShowFileInfoResponse(SdkResponse):
 
 
         :param scripts: The scripts of this ShowFileInfoResponse.
-        :type: list[Script]
+        :type scripts: list[:class:`huaweicloudsdkdgc.v1.Script`]
         """
         self._scripts = scripts
 

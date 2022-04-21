@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TrackerOBSChannelConfigBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class TrackerOBSChannelConfigBody:
     }
 
     def __init__(self, bucket_name=None, region_id=None):
-        """TrackerOBSChannelConfigBody - a model defined in huaweicloud sdk"""
+        """TrackerOBSChannelConfigBody
+
+        The model defined in huaweicloud sdk
+
+        :param bucket_name: OBS桶名称
+        :type bucket_name: str
+        :param region_id: region id
+        :type region_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class TrackerOBSChannelConfigBody:
         OBS桶名称
 
         :param bucket_name: The bucket_name of this TrackerOBSChannelConfigBody.
-        :type: str
+        :type bucket_name: str
         """
         self._bucket_name = bucket_name
 
@@ -83,7 +90,7 @@ class TrackerOBSChannelConfigBody:
         region id
 
         :param region_id: The region_id of this TrackerOBSChannelConfigBody.
-        :type: str
+        :type region_id: str
         """
         self._region_id = region_id
 

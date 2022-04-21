@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AttachInternalIpResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class AttachInternalIpResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, node_id=None, new_ip=None):
-        """AttachInternalIpResponse - a model defined in huaweicloud sdk"""
+        """AttachInternalIpResponse
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 任务ID。
+        :type job_id: str
+        :param node_id: 节点ID。
+        :type node_id: str
+        :param new_ip: 新的内网IP。
+        :type new_ip: str
+        """
         
         super(AttachInternalIpResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class AttachInternalIpResponse(SdkResponse):
         任务ID。
 
         :param job_id: The job_id of this AttachInternalIpResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -90,7 +99,7 @@ class AttachInternalIpResponse(SdkResponse):
         节点ID。
 
         :param node_id: The node_id of this AttachInternalIpResponse.
-        :type: str
+        :type node_id: str
         """
         self._node_id = node_id
 
@@ -112,7 +121,7 @@ class AttachInternalIpResponse(SdkResponse):
         新的内网IP。
 
         :param new_ip: The new_ip of this AttachInternalIpResponse.
-        :type: str
+        :type new_ip: str
         """
         self._new_ip = new_ip
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateRoutingRuleRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateRoutingRuleRequest:
     }
 
     def __init__(self, instance_id=None, rule_id=None, body=None):
-        """UpdateRoutingRuleRequest - a model defined in huaweicloud sdk"""
+        """UpdateRoutingRuleRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
+        :type instance_id: str
+        :param rule_id: **参数说明**：规则条件ID。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
+        :type rule_id: str
+        :param body: Body of the UpdateRoutingRuleRequest
+        :type body: :class:`huaweicloudsdkiotda.v5.UpdateRuleReq`
+        """
         
         
 
@@ -67,7 +76,7 @@ class UpdateRoutingRuleRequest:
         **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
         :param instance_id: The instance_id of this UpdateRoutingRuleRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -89,7 +98,7 @@ class UpdateRoutingRuleRequest:
         **参数说明**：规则条件ID。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :param rule_id: The rule_id of this UpdateRoutingRuleRequest.
-        :type: str
+        :type rule_id: str
         """
         self._rule_id = rule_id
 
@@ -99,7 +108,7 @@ class UpdateRoutingRuleRequest:
 
 
         :return: The body of this UpdateRoutingRuleRequest.
-        :rtype: UpdateRuleReq
+        :rtype: :class:`huaweicloudsdkiotda.v5.UpdateRuleReq`
         """
         return self._body
 
@@ -109,7 +118,7 @@ class UpdateRoutingRuleRequest:
 
 
         :param body: The body of this UpdateRoutingRuleRequest.
-        :type: UpdateRuleReq
+        :type body: :class:`huaweicloudsdkiotda.v5.UpdateRuleReq`
         """
         self._body = body
 

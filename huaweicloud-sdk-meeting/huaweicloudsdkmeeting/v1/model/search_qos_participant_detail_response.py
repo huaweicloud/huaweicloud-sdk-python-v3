@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SearchQosParticipantDetailResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class SearchQosParticipantDetailResponse(SdkResponse):
     }
 
     def __init__(self, user=None, qos=None):
-        """SearchQosParticipantDetailResponse - a model defined in huaweicloud sdk"""
+        """SearchQosParticipantDetailResponse
+
+        The model defined in huaweicloud sdk
+
+        :param user: 
+        :type user: :class:`huaweicloudsdkmeeting.v1.QosParticipantInfo`
+        :param qos: 
+        :type qos: :class:`huaweicloudsdkmeeting.v1.QosInfo`
+        """
         
         super(SearchQosParticipantDetailResponse, self).__init__()
 
@@ -51,7 +58,7 @@ class SearchQosParticipantDetailResponse(SdkResponse):
 
 
         :return: The user of this SearchQosParticipantDetailResponse.
-        :rtype: QosParticipantInfo
+        :rtype: :class:`huaweicloudsdkmeeting.v1.QosParticipantInfo`
         """
         return self._user
 
@@ -61,7 +68,7 @@ class SearchQosParticipantDetailResponse(SdkResponse):
 
 
         :param user: The user of this SearchQosParticipantDetailResponse.
-        :type: QosParticipantInfo
+        :type user: :class:`huaweicloudsdkmeeting.v1.QosParticipantInfo`
         """
         self._user = user
 
@@ -71,7 +78,7 @@ class SearchQosParticipantDetailResponse(SdkResponse):
 
 
         :return: The qos of this SearchQosParticipantDetailResponse.
-        :rtype: QosInfo
+        :rtype: :class:`huaweicloudsdkmeeting.v1.QosInfo`
         """
         return self._qos
 
@@ -81,7 +88,7 @@ class SearchQosParticipantDetailResponse(SdkResponse):
 
 
         :param qos: The qos of this SearchQosParticipantDetailResponse.
-        :type: QosInfo
+        :type qos: :class:`huaweicloudsdkmeeting.v1.QosInfo`
         """
         self._qos = qos
 

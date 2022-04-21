@@ -52,21 +52,17 @@ class SwrAsyncClient(Client):
         """创建镜像自动同步任务
 
         创建镜像自动同步任务
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateImageSyncRepoRequest request
-        :return: CreateImageSyncRepoResponse
+        :param request: Request instance for CreateImageSyncRepo
+        :type request: :class:`huaweicloudsdkswr.v2.CreateImageSyncRepoRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.CreateImageSyncRepoResponse`
         """
         return self.create_image_sync_repo_with_http_info(request)
 
     def create_image_sync_repo_with_http_info(self, request):
-        """创建镜像自动同步任务
-
-        创建镜像自动同步任务
-
-        :param CreateImageSyncRepoRequest request
-        :return: CreateImageSyncRepoResponse
-        """
-
         all_params = ['namespace', 'repository', 'body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -114,26 +110,21 @@ class SwrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_manual_image_sync_repo_async(self, request):
         """手动同步镜像
 
         手动同步镜像
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateManualImageSyncRepoRequest request
-        :return: CreateManualImageSyncRepoResponse
+        :param request: Request instance for CreateManualImageSyncRepo
+        :type request: :class:`huaweicloudsdkswr.v2.CreateManualImageSyncRepoRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.CreateManualImageSyncRepoResponse`
         """
         return self.create_manual_image_sync_repo_with_http_info(request)
 
     def create_manual_image_sync_repo_with_http_info(self, request):
-        """手动同步镜像
-
-        手动同步镜像
-
-        :param CreateManualImageSyncRepoRequest request
-        :return: CreateManualImageSyncRepoResponse
-        """
-
         all_params = ['namespace', 'repository', 'body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -181,26 +172,21 @@ class SwrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_namespace_async(self, request):
         """创建组织
 
         创建组织
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateNamespaceRequest request
-        :return: CreateNamespaceResponse
+        :param request: Request instance for CreateNamespace
+        :type request: :class:`huaweicloudsdkswr.v2.CreateNamespaceRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.CreateNamespaceResponse`
         """
         return self.create_namespace_with_http_info(request)
 
     def create_namespace_with_http_info(self, request):
-        """创建组织
-
-        创建组织
-
-        :param CreateNamespaceRequest request
-        :return: CreateNamespaceResponse
-        """
-
         all_params = ['create_namespace_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -244,26 +230,21 @@ class SwrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_namespace_auth_async(self, request):
         """创建组织权限
 
         创建组织权限
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateNamespaceAuthRequest request
-        :return: CreateNamespaceAuthResponse
+        :param request: Request instance for CreateNamespaceAuth
+        :type request: :class:`huaweicloudsdkswr.v2.CreateNamespaceAuthRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.CreateNamespaceAuthResponse`
         """
         return self.create_namespace_auth_with_http_info(request)
 
     def create_namespace_auth_with_http_info(self, request):
-        """创建组织权限
-
-        创建组织权限
-
-        :param CreateNamespaceAuthRequest request
-        :return: CreateNamespaceAuthResponse
-        """
-
         all_params = ['namespace', 'create_namespace_auth_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -309,26 +290,21 @@ class SwrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_repo_async(self, request):
         """在组织下创建镜像仓库
 
         在组织下创建镜像仓库。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateRepoRequest request
-        :return: CreateRepoResponse
+        :param request: Request instance for CreateRepo
+        :type request: :class:`huaweicloudsdkswr.v2.CreateRepoRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.CreateRepoResponse`
         """
         return self.create_repo_with_http_info(request)
 
     def create_repo_with_http_info(self, request):
-        """在组织下创建镜像仓库
-
-        在组织下创建镜像仓库。
-
-        :param CreateRepoRequest request
-        :return: CreateRepoResponse
-        """
-
         all_params = ['namespace', 'create_repo_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -374,26 +350,21 @@ class SwrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_repo_domains_async(self, request):
         """创建共享帐号
 
         创建共享帐号。镜像上传后，您可以共享私有镜像给其他帐号，并授予下载该镜像的权限。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateRepoDomainsRequest request
-        :return: CreateRepoDomainsResponse
+        :param request: Request instance for CreateRepoDomains
+        :type request: :class:`huaweicloudsdkswr.v2.CreateRepoDomainsRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.CreateRepoDomainsResponse`
         """
         return self.create_repo_domains_with_http_info(request)
 
     def create_repo_domains_with_http_info(self, request):
-        """创建共享帐号
-
-        创建共享帐号。镜像上传后，您可以共享私有镜像给其他帐号，并授予下载该镜像的权限。
-
-        :param CreateRepoDomainsRequest request
-        :return: CreateRepoDomainsResponse
-        """
-
         all_params = ['namespace', 'repository', 'create_repo_domains_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -441,26 +412,21 @@ class SwrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_retention_async(self, request):
         """创建镜像老化规则
 
         创建镜像老化规则
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateRetentionRequest request
-        :return: CreateRetentionResponse
+        :param request: Request instance for CreateRetention
+        :type request: :class:`huaweicloudsdkswr.v2.CreateRetentionRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.CreateRetentionResponse`
         """
         return self.create_retention_with_http_info(request)
 
     def create_retention_with_http_info(self, request):
-        """创建镜像老化规则
-
-        创建镜像老化规则
-
-        :param CreateRetentionRequest request
-        :return: CreateRetentionResponse
-        """
-
         all_params = ['namespace', 'repository', 'create_retention_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -508,26 +474,21 @@ class SwrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_secret_async(self, request):
         """生成临时登录指令
 
         调用该接口，通过获取响应消息头的X-Swr-Dockerlogin的值及响应消息体的host值，可生成临时登录指令。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateSecretRequest request
-        :return: CreateSecretResponse
+        :param request: Request instance for CreateSecret
+        :type request: :class:`huaweicloudsdkswr.v2.CreateSecretRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.CreateSecretResponse`
         """
         return self.create_secret_with_http_info(request)
 
     def create_secret_with_http_info(self, request):
-        """生成临时登录指令
-
-        调用该接口，通过获取响应消息头的X-Swr-Dockerlogin的值及响应消息体的host值，可生成临时登录指令。
-
-        :param CreateSecretRequest request
-        :return: CreateSecretResponse
-        """
-
         all_params = ['projectname']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -571,26 +532,21 @@ class SwrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_trigger_async(self, request):
         """创建触发器
 
         创建触发器
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateTriggerRequest request
-        :return: CreateTriggerResponse
+        :param request: Request instance for CreateTrigger
+        :type request: :class:`huaweicloudsdkswr.v2.CreateTriggerRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.CreateTriggerResponse`
         """
         return self.create_trigger_with_http_info(request)
 
     def create_trigger_with_http_info(self, request):
-        """创建触发器
-
-        创建触发器
-
-        :param CreateTriggerRequest request
-        :return: CreateTriggerResponse
-        """
-
         all_params = ['namespace', 'repository', 'create_trigger_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -638,26 +594,21 @@ class SwrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_user_repository_auth_async(self, request):
         """创建镜像权限
 
         创建镜像权限
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateUserRepositoryAuthRequest request
-        :return: CreateUserRepositoryAuthResponse
+        :param request: Request instance for CreateUserRepositoryAuth
+        :type request: :class:`huaweicloudsdkswr.v2.CreateUserRepositoryAuthRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.CreateUserRepositoryAuthResponse`
         """
         return self.create_user_repository_auth_with_http_info(request)
 
     def create_user_repository_auth_with_http_info(self, request):
-        """创建镜像权限
-
-        创建镜像权限
-
-        :param CreateUserRepositoryAuthRequest request
-        :return: CreateUserRepositoryAuthResponse
-        """
-
         all_params = ['namespace', 'repository', 'create_user_repository_auth_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -705,26 +656,21 @@ class SwrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_image_sync_repo_async(self, request):
         """删除镜像自动同步任务
 
         删除镜像自动同步任务
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteImageSyncRepoRequest request
-        :return: DeleteImageSyncRepoResponse
+        :param request: Request instance for DeleteImageSyncRepo
+        :type request: :class:`huaweicloudsdkswr.v2.DeleteImageSyncRepoRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.DeleteImageSyncRepoResponse`
         """
         return self.delete_image_sync_repo_with_http_info(request)
 
     def delete_image_sync_repo_with_http_info(self, request):
-        """删除镜像自动同步任务
-
-        删除镜像自动同步任务
-
-        :param DeleteImageSyncRepoRequest request
-        :return: DeleteImageSyncRepoResponse
-        """
-
         all_params = ['namespace', 'repository', 'body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -772,26 +718,21 @@ class SwrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_namespace_auth_async(self, request):
         """删除组织权限
 
         删除组织权限
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteNamespaceAuthRequest request
-        :return: DeleteNamespaceAuthResponse
+        :param request: Request instance for DeleteNamespaceAuth
+        :type request: :class:`huaweicloudsdkswr.v2.DeleteNamespaceAuthRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.DeleteNamespaceAuthResponse`
         """
         return self.delete_namespace_auth_with_http_info(request)
 
     def delete_namespace_auth_with_http_info(self, request):
-        """删除组织权限
-
-        删除组织权限
-
-        :param DeleteNamespaceAuthRequest request
-        :return: DeleteNamespaceAuthResponse
-        """
-
         all_params = ['namespace', 'delete_namespace_auth_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -837,26 +778,21 @@ class SwrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_namespaces_async(self, request):
         """删除组织
 
         删除组织
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteNamespacesRequest request
-        :return: DeleteNamespacesResponse
+        :param request: Request instance for DeleteNamespaces
+        :type request: :class:`huaweicloudsdkswr.v2.DeleteNamespacesRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.DeleteNamespacesResponse`
         """
         return self.delete_namespaces_with_http_info(request)
 
     def delete_namespaces_with_http_info(self, request):
-        """删除组织
-
-        删除组织
-
-        :param DeleteNamespacesRequest request
-        :return: DeleteNamespacesResponse
-        """
-
         all_params = ['namespace']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -900,26 +836,21 @@ class SwrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_repo_async(self, request):
         """删除组织下的镜像仓库
 
         删除组织下的镜像仓库。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteRepoRequest request
-        :return: DeleteRepoResponse
+        :param request: Request instance for DeleteRepo
+        :type request: :class:`huaweicloudsdkswr.v2.DeleteRepoRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.DeleteRepoResponse`
         """
         return self.delete_repo_with_http_info(request)
 
     def delete_repo_with_http_info(self, request):
-        """删除组织下的镜像仓库
-
-        删除组织下的镜像仓库。
-
-        :param DeleteRepoRequest request
-        :return: DeleteRepoResponse
-        """
-
         all_params = ['namespace', 'repository']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -965,26 +896,21 @@ class SwrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_repo_domains_async(self, request):
         """删除共享帐号
 
         删除共享帐号
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteRepoDomainsRequest request
-        :return: DeleteRepoDomainsResponse
+        :param request: Request instance for DeleteRepoDomains
+        :type request: :class:`huaweicloudsdkswr.v2.DeleteRepoDomainsRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.DeleteRepoDomainsResponse`
         """
         return self.delete_repo_domains_with_http_info(request)
 
     def delete_repo_domains_with_http_info(self, request):
-        """删除共享帐号
-
-        删除共享帐号
-
-        :param DeleteRepoDomainsRequest request
-        :return: DeleteRepoDomainsResponse
-        """
-
         all_params = ['namespace', 'repository', 'access_domain']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1032,26 +958,21 @@ class SwrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_repo_tag_async(self, request):
         """删除指定tag的镜像
 
         删除镜像仓库中指定tag的镜像
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteRepoTagRequest request
-        :return: DeleteRepoTagResponse
+        :param request: Request instance for DeleteRepoTag
+        :type request: :class:`huaweicloudsdkswr.v2.DeleteRepoTagRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.DeleteRepoTagResponse`
         """
         return self.delete_repo_tag_with_http_info(request)
 
     def delete_repo_tag_with_http_info(self, request):
-        """删除指定tag的镜像
-
-        删除镜像仓库中指定tag的镜像
-
-        :param DeleteRepoTagRequest request
-        :return: DeleteRepoTagResponse
-        """
-
         all_params = ['namespace', 'repository', 'tag']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1099,26 +1020,21 @@ class SwrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_retention_async(self, request):
         """删除镜像老化规则
 
         删除镜像老化规则
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteRetentionRequest request
-        :return: DeleteRetentionResponse
+        :param request: Request instance for DeleteRetention
+        :type request: :class:`huaweicloudsdkswr.v2.DeleteRetentionRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.DeleteRetentionResponse`
         """
         return self.delete_retention_with_http_info(request)
 
     def delete_retention_with_http_info(self, request):
-        """删除镜像老化规则
-
-        删除镜像老化规则
-
-        :param DeleteRetentionRequest request
-        :return: DeleteRetentionResponse
-        """
-
         all_params = ['namespace', 'repository', 'retention_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1166,26 +1082,21 @@ class SwrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_trigger_async(self, request):
         """删除触发器
 
         删除触发器
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteTriggerRequest request
-        :return: DeleteTriggerResponse
+        :param request: Request instance for DeleteTrigger
+        :type request: :class:`huaweicloudsdkswr.v2.DeleteTriggerRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.DeleteTriggerResponse`
         """
         return self.delete_trigger_with_http_info(request)
 
     def delete_trigger_with_http_info(self, request):
-        """删除触发器
-
-        删除触发器
-
-        :param DeleteTriggerRequest request
-        :return: DeleteTriggerResponse
-        """
-
         all_params = ['namespace', 'repository', 'trigger']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1233,26 +1144,21 @@ class SwrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_user_repository_auth_async(self, request):
         """删除镜像权限
 
         删除镜像权限
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteUserRepositoryAuthRequest request
-        :return: DeleteUserRepositoryAuthResponse
+        :param request: Request instance for DeleteUserRepositoryAuth
+        :type request: :class:`huaweicloudsdkswr.v2.DeleteUserRepositoryAuthRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.DeleteUserRepositoryAuthResponse`
         """
         return self.delete_user_repository_auth_with_http_info(request)
 
     def delete_user_repository_auth_with_http_info(self, request):
-        """删除镜像权限
-
-        删除镜像权限
-
-        :param DeleteUserRepositoryAuthRequest request
-        :return: DeleteUserRepositoryAuthResponse
-        """
-
         all_params = ['namespace', 'repository', 'delete_user_repository_auth_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1300,26 +1206,21 @@ class SwrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_image_auto_sync_repos_details_async(self, request):
-        """获取镜像自动同步任务列表
+        """获取镜像自动同步任务信息
 
         获取镜像自动同步任务列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListImageAutoSyncReposDetailsRequest request
-        :return: ListImageAutoSyncReposDetailsResponse
+        :param request: Request instance for ListImageAutoSyncReposDetails
+        :type request: :class:`huaweicloudsdkswr.v2.ListImageAutoSyncReposDetailsRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.ListImageAutoSyncReposDetailsResponse`
         """
         return self.list_image_auto_sync_repos_details_with_http_info(request)
 
     def list_image_auto_sync_repos_details_with_http_info(self, request):
-        """获取镜像自动同步任务列表
-
-        获取镜像自动同步任务列表
-
-        :param ListImageAutoSyncReposDetailsRequest request
-        :return: ListImageAutoSyncReposDetailsResponse
-        """
-
         all_params = ['namespace', 'repository']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1365,26 +1266,21 @@ class SwrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_namespaces_async(self, request):
         """查询组织列表
 
         查询组织列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListNamespacesRequest request
-        :return: ListNamespacesResponse
+        :param request: Request instance for ListNamespaces
+        :type request: :class:`huaweicloudsdkswr.v2.ListNamespacesRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.ListNamespacesResponse`
         """
         return self.list_namespaces_with_http_info(request)
 
     def list_namespaces_with_http_info(self, request):
-        """查询组织列表
-
-        查询组织列表
-
-        :param ListNamespacesRequest request
-        :return: ListNamespacesResponse
-        """
-
         all_params = ['namespace']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1428,26 +1324,21 @@ class SwrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_quotas_async(self, request):
         """获取配额信息
 
         获取配额信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListQuotasRequest request
-        :return: ListQuotasResponse
+        :param request: Request instance for ListQuotas
+        :type request: :class:`huaweicloudsdkswr.v2.ListQuotasRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.ListQuotasResponse`
         """
         return self.list_quotas_with_http_info(request)
 
     def list_quotas_with_http_info(self, request):
-        """获取配额信息
-
-        获取配额信息
-
-        :param ListQuotasRequest request
-        :return: ListQuotasResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1489,26 +1380,21 @@ class SwrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_repo_domains_async(self, request):
         """获取共享帐号列表
 
         获取共享帐号列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListRepoDomainsRequest request
-        :return: ListRepoDomainsResponse
+        :param request: Request instance for ListRepoDomains
+        :type request: :class:`huaweicloudsdkswr.v2.ListRepoDomainsRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.ListRepoDomainsResponse`
         """
         return self.list_repo_domains_with_http_info(request)
 
     def list_repo_domains_with_http_info(self, request):
-        """获取共享帐号列表
-
-        获取共享帐号列表
-
-        :param ListRepoDomainsRequest request
-        :return: ListRepoDomainsResponse
-        """
-
         all_params = ['namespace', 'repository']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1554,26 +1440,21 @@ class SwrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_repos_details_async(self, request):
         """查询镜像仓库列表
 
         查询镜像仓库列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListReposDetailsRequest request
-        :return: ListReposDetailsResponse
+        :param request: Request instance for ListReposDetails
+        :type request: :class:`huaweicloudsdkswr.v2.ListReposDetailsRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.ListReposDetailsResponse`
         """
         return self.list_repos_details_with_http_info(request)
 
     def list_repos_details_with_http_info(self, request):
-        """查询镜像仓库列表
-
-        查询镜像仓库列表
-
-        :param ListReposDetailsRequest request
-        :return: ListReposDetailsResponse
-        """
-
         all_params = ['namespace', 'name', 'category', 'filter']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1623,26 +1504,21 @@ class SwrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_repository_tags_async(self, request):
         """查询镜像tag列表
 
         查询镜像tag列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListRepositoryTagsRequest request
-        :return: ListRepositoryTagsResponse
+        :param request: Request instance for ListRepositoryTags
+        :type request: :class:`huaweicloudsdkswr.v2.ListRepositoryTagsRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.ListRepositoryTagsResponse`
         """
         return self.list_repository_tags_with_http_info(request)
 
     def list_repository_tags_with_http_info(self, request):
-        """查询镜像tag列表
-
-        查询镜像tag列表
-
-        :param ListRepositoryTagsRequest request
-        :return: ListRepositoryTagsResponse
-        """
-
         all_params = ['namespace', 'repository', 'offset', 'limit', 'order_column', 'order_type', 'tag']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1698,26 +1574,21 @@ class SwrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_retention_histories_async(self, request):
         """获取镜像老化记录
 
         获取镜像老化记录
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListRetentionHistoriesRequest request
-        :return: ListRetentionHistoriesResponse
+        :param request: Request instance for ListRetentionHistories
+        :type request: :class:`huaweicloudsdkswr.v2.ListRetentionHistoriesRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.ListRetentionHistoriesResponse`
         """
         return self.list_retention_histories_with_http_info(request)
 
     def list_retention_histories_with_http_info(self, request):
-        """获取镜像老化记录
-
-        获取镜像老化记录
-
-        :param ListRetentionHistoriesRequest request
-        :return: ListRetentionHistoriesResponse
-        """
-
         all_params = ['namespace', 'repository', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1767,26 +1638,21 @@ class SwrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_retentions_async(self, request):
         """获取镜像老化规则列表
 
         获取镜像老化规则列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListRetentionsRequest request
-        :return: ListRetentionsResponse
+        :param request: Request instance for ListRetentions
+        :type request: :class:`huaweicloudsdkswr.v2.ListRetentionsRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.ListRetentionsResponse`
         """
         return self.list_retentions_with_http_info(request)
 
     def list_retentions_with_http_info(self, request):
-        """获取镜像老化规则列表
-
-        获取镜像老化规则列表
-
-        :param ListRetentionsRequest request
-        :return: ListRetentionsResponse
-        """
-
         all_params = ['namespace', 'repository']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1832,26 +1698,21 @@ class SwrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_shared_repos_details_async(self, request):
         """查询共享镜像列表
 
         查询共享镜像列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListSharedReposDetailsRequest request
-        :return: ListSharedReposDetailsResponse
+        :param request: Request instance for ListSharedReposDetails
+        :type request: :class:`huaweicloudsdkswr.v2.ListSharedReposDetailsRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.ListSharedReposDetailsResponse`
         """
         return self.list_shared_repos_details_with_http_info(request)
 
     def list_shared_repos_details_with_http_info(self, request):
-        """查询共享镜像列表
-
-        查询共享镜像列表
-
-        :param ListSharedReposDetailsRequest request
-        :return: ListSharedReposDetailsResponse
-        """
-
         all_params = ['filter']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1895,26 +1756,21 @@ class SwrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_triggers_details_async(self, request):
         """获取镜像仓库下的触发器列表
 
         获取镜像仓库下的触发器列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListTriggersDetailsRequest request
-        :return: ListTriggersDetailsResponse
+        :param request: Request instance for ListTriggersDetails
+        :type request: :class:`huaweicloudsdkswr.v2.ListTriggersDetailsRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.ListTriggersDetailsResponse`
         """
         return self.list_triggers_details_with_http_info(request)
 
     def list_triggers_details_with_http_info(self, request):
-        """获取镜像仓库下的触发器列表
-
-        获取镜像仓库下的触发器列表
-
-        :param ListTriggersDetailsRequest request
-        :return: ListTriggersDetailsResponse
-        """
-
         all_params = ['namespace', 'repository']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1960,26 +1816,21 @@ class SwrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_access_domain_async(self, request):
         """判断共享帐号是否存在
 
         判断共享租户是否存在
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowAccessDomainRequest request
-        :return: ShowAccessDomainResponse
+        :param request: Request instance for ShowAccessDomain
+        :type request: :class:`huaweicloudsdkswr.v2.ShowAccessDomainRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.ShowAccessDomainResponse`
         """
         return self.show_access_domain_with_http_info(request)
 
     def show_access_domain_with_http_info(self, request):
-        """判断共享帐号是否存在
-
-        判断共享租户是否存在
-
-        :param ShowAccessDomainRequest request
-        :return: ShowAccessDomainResponse
-        """
-
         all_params = ['namespace', 'repository', 'access_domain']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2027,26 +1878,21 @@ class SwrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_namespace_async(self, request):
         """获取组织详情
 
         获取组织详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowNamespaceRequest request
-        :return: ShowNamespaceResponse
+        :param request: Request instance for ShowNamespace
+        :type request: :class:`huaweicloudsdkswr.v2.ShowNamespaceRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.ShowNamespaceResponse`
         """
         return self.show_namespace_with_http_info(request)
 
     def show_namespace_with_http_info(self, request):
-        """获取组织详情
-
-        获取组织详情
-
-        :param ShowNamespaceRequest request
-        :return: ShowNamespaceResponse
-        """
-
         all_params = ['namespace']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2090,26 +1936,21 @@ class SwrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_namespace_auth_async(self, request):
         """查询组织权限
 
         查询组织权限
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowNamespaceAuthRequest request
-        :return: ShowNamespaceAuthResponse
+        :param request: Request instance for ShowNamespaceAuth
+        :type request: :class:`huaweicloudsdkswr.v2.ShowNamespaceAuthRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.ShowNamespaceAuthResponse`
         """
         return self.show_namespace_auth_with_http_info(request)
 
     def show_namespace_auth_with_http_info(self, request):
-        """查询组织权限
-
-        查询组织权限
-
-        :param ShowNamespaceAuthRequest request
-        :return: ShowNamespaceAuthResponse
-        """
-
         all_params = ['namespace']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2153,26 +1994,21 @@ class SwrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_repository_async(self, request):
         """查询镜像仓库概要信息
 
         查询镜像仓库概要信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowRepositoryRequest request
-        :return: ShowRepositoryResponse
+        :param request: Request instance for ShowRepository
+        :type request: :class:`huaweicloudsdkswr.v2.ShowRepositoryRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.ShowRepositoryResponse`
         """
         return self.show_repository_with_http_info(request)
 
     def show_repository_with_http_info(self, request):
-        """查询镜像仓库概要信息
-
-        查询镜像仓库概要信息
-
-        :param ShowRepositoryRequest request
-        :return: ShowRepositoryResponse
-        """
-
         all_params = ['namespace', 'repository']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2218,26 +2054,21 @@ class SwrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_retention_async(self, request):
         """获取镜像老化规则记录
 
         获取镜像老化规则记录
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowRetentionRequest request
-        :return: ShowRetentionResponse
+        :param request: Request instance for ShowRetention
+        :type request: :class:`huaweicloudsdkswr.v2.ShowRetentionRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.ShowRetentionResponse`
         """
         return self.show_retention_with_http_info(request)
 
     def show_retention_with_http_info(self, request):
-        """获取镜像老化规则记录
-
-        获取镜像老化规则记录
-
-        :param ShowRetentionRequest request
-        :return: ShowRetentionResponse
-        """
-
         all_params = ['namespace', 'repository', 'retention_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2285,26 +2116,21 @@ class SwrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_sync_job_async(self, request):
         """获取镜像同步任务信息
 
         获取镜像同步任务信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowSyncJobRequest request
-        :return: ShowSyncJobResponse
+        :param request: Request instance for ShowSyncJob
+        :type request: :class:`huaweicloudsdkswr.v2.ShowSyncJobRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.ShowSyncJobResponse`
         """
         return self.show_sync_job_with_http_info(request)
 
     def show_sync_job_with_http_info(self, request):
-        """获取镜像同步任务信息
-
-        获取镜像同步任务信息
-
-        :param ShowSyncJobRequest request
-        :return: ShowSyncJobResponse
-        """
-
         all_params = ['namespace', 'repository', 'filter']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2352,26 +2178,21 @@ class SwrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_trigger_async(self, request):
         """获取触发器详情
 
         获取触发器详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowTriggerRequest request
-        :return: ShowTriggerResponse
+        :param request: Request instance for ShowTrigger
+        :type request: :class:`huaweicloudsdkswr.v2.ShowTriggerRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.ShowTriggerResponse`
         """
         return self.show_trigger_with_http_info(request)
 
     def show_trigger_with_http_info(self, request):
-        """获取触发器详情
-
-        获取触发器详情
-
-        :param ShowTriggerRequest request
-        :return: ShowTriggerResponse
-        """
-
         all_params = ['namespace', 'repository', 'trigger']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2419,26 +2240,21 @@ class SwrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_user_repository_auth_async(self, request):
         """查询镜像权限
 
         查询镜像权限
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowUserRepositoryAuthRequest request
-        :return: ShowUserRepositoryAuthResponse
+        :param request: Request instance for ShowUserRepositoryAuth
+        :type request: :class:`huaweicloudsdkswr.v2.ShowUserRepositoryAuthRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.ShowUserRepositoryAuthResponse`
         """
         return self.show_user_repository_auth_with_http_info(request)
 
     def show_user_repository_auth_with_http_info(self, request):
-        """查询镜像权限
-
-        查询镜像权限
-
-        :param ShowUserRepositoryAuthRequest request
-        :return: ShowUserRepositoryAuthResponse
-        """
-
         all_params = ['namespace', 'repository']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2484,26 +2300,21 @@ class SwrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_namespace_auth_async(self, request):
         """更新组织权限
 
         更新组织权限
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateNamespaceAuthRequest request
-        :return: UpdateNamespaceAuthResponse
+        :param request: Request instance for UpdateNamespaceAuth
+        :type request: :class:`huaweicloudsdkswr.v2.UpdateNamespaceAuthRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.UpdateNamespaceAuthResponse`
         """
         return self.update_namespace_auth_with_http_info(request)
 
     def update_namespace_auth_with_http_info(self, request):
-        """更新组织权限
-
-        更新组织权限
-
-        :param UpdateNamespaceAuthRequest request
-        :return: UpdateNamespaceAuthResponse
-        """
-
         all_params = ['namespace', 'update_namespace_auth_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2549,26 +2360,21 @@ class SwrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_repo_async(self, request):
         """更新镜像仓库的概要信息
 
         更新租户命名空间下的镜像概要信息，包括镜像类型、是否公有、描述信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateRepoRequest request
-        :return: UpdateRepoResponse
+        :param request: Request instance for UpdateRepo
+        :type request: :class:`huaweicloudsdkswr.v2.UpdateRepoRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.UpdateRepoResponse`
         """
         return self.update_repo_with_http_info(request)
 
     def update_repo_with_http_info(self, request):
-        """更新镜像仓库的概要信息
-
-        更新租户命名空间下的镜像概要信息，包括镜像类型、是否公有、描述信息
-
-        :param UpdateRepoRequest request
-        :return: UpdateRepoResponse
-        """
-
         all_params = ['namespace', 'repository', 'update_repo_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2616,26 +2422,21 @@ class SwrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_repo_domains_async(self, request):
         """更新共享帐号
 
         更新共享帐号
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateRepoDomainsRequest request
-        :return: UpdateRepoDomainsResponse
+        :param request: Request instance for UpdateRepoDomains
+        :type request: :class:`huaweicloudsdkswr.v2.UpdateRepoDomainsRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.UpdateRepoDomainsResponse`
         """
         return self.update_repo_domains_with_http_info(request)
 
     def update_repo_domains_with_http_info(self, request):
-        """更新共享帐号
-
-        更新共享帐号
-
-        :param UpdateRepoDomainsRequest request
-        :return: UpdateRepoDomainsResponse
-        """
-
         all_params = ['namespace', 'repository', 'access_domain', 'update_repo_domains_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2685,26 +2486,21 @@ class SwrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_retention_async(self, request):
         """修改镜像老化规则
 
         修改镜像老化规则
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateRetentionRequest request
-        :return: UpdateRetentionResponse
+        :param request: Request instance for UpdateRetention
+        :type request: :class:`huaweicloudsdkswr.v2.UpdateRetentionRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.UpdateRetentionResponse`
         """
         return self.update_retention_with_http_info(request)
 
     def update_retention_with_http_info(self, request):
-        """修改镜像老化规则
-
-        修改镜像老化规则
-
-        :param UpdateRetentionRequest request
-        :return: UpdateRetentionResponse
-        """
-
         all_params = ['namespace', 'repository', 'retention_id', 'update_retention_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2754,26 +2550,21 @@ class SwrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_trigger_async(self, request):
         """更新触发器配置
 
         更新触发器配置
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateTriggerRequest request
-        :return: UpdateTriggerResponse
+        :param request: Request instance for UpdateTrigger
+        :type request: :class:`huaweicloudsdkswr.v2.UpdateTriggerRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.UpdateTriggerResponse`
         """
         return self.update_trigger_with_http_info(request)
 
     def update_trigger_with_http_info(self, request):
-        """更新触发器配置
-
-        更新触发器配置
-
-        :param UpdateTriggerRequest request
-        :return: UpdateTriggerResponse
-        """
-
         all_params = ['namespace', 'repository', 'trigger', 'body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2823,26 +2614,21 @@ class SwrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_user_repository_auth_async(self, request):
         """更新镜像权限
 
         更新镜像权限
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateUserRepositoryAuthRequest request
-        :return: UpdateUserRepositoryAuthResponse
+        :param request: Request instance for UpdateUserRepositoryAuth
+        :type request: :class:`huaweicloudsdkswr.v2.UpdateUserRepositoryAuthRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.UpdateUserRepositoryAuthResponse`
         """
         return self.update_user_repository_auth_with_http_info(request)
 
     def update_user_repository_auth_with_http_info(self, request):
-        """更新镜像权限
-
-        更新镜像权限
-
-        :param UpdateUserRepositoryAuthRequest request
-        :return: UpdateUserRepositoryAuthResponse
-        """
-
         all_params = ['namespace', 'repository', 'update_repository_auth_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2890,26 +2676,21 @@ class SwrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_api_versions_async(self, request):
         """查询所有API版本信息
 
         查询所有API版本信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListApiVersionsRequest request
-        :return: ListApiVersionsResponse
+        :param request: Request instance for ListApiVersions
+        :type request: :class:`huaweicloudsdkswr.v2.ListApiVersionsRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.ListApiVersionsResponse`
         """
         return self.list_api_versions_with_http_info(request)
 
     def list_api_versions_with_http_info(self, request):
-        """查询所有API版本信息
-
-        查询所有API版本信息
-
-        :param ListApiVersionsRequest request
-        :return: ListApiVersionsResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2951,26 +2732,21 @@ class SwrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_api_version_async(self, request):
         """查询指定API版本信息
 
         查询指定API版本信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowApiVersionRequest request
-        :return: ShowApiVersionResponse
+        :param request: Request instance for ShowApiVersion
+        :type request: :class:`huaweicloudsdkswr.v2.ShowApiVersionRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.ShowApiVersionResponse`
         """
         return self.show_api_version_with_http_info(request)
 
     def show_api_version_with_http_info(self, request):
-        """查询指定API版本信息
-
-        查询指定API版本信息
-
-        :param ShowApiVersionRequest request
-        :return: ShowApiVersionResponse
-        """
-
         all_params = ['api_version']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3013,7 +2789,6 @@ class SwrAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

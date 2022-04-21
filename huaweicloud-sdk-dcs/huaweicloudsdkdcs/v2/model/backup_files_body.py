@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BackupFilesBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class BackupFilesBody:
     }
 
     def __init__(self, file_source=None, bucket_name=None, files=None, backup_id=None):
-        """BackupFilesBody - a model defined in huaweicloud sdk"""
+        """BackupFilesBody
+
+        The model defined in huaweicloud sdk
+
+        :param file_source: 数据来源，当前仅支持OBS桶方式，取值为：self_build_obs。
+        :type file_source: str
+        :param bucket_name: OBS桶名。
+        :type bucket_name: str
+        :param files: 导入的备份文件文件列表。
+        :type files: list[:class:`huaweicloudsdkdcs.v2.Files`]
+        :param backup_id: 备份记录ID，数据来源为备份记录时必须填写
+        :type backup_id: str
+        """
         
         
 
@@ -71,7 +82,7 @@ class BackupFilesBody:
         数据来源，当前仅支持OBS桶方式，取值为：self_build_obs。
 
         :param file_source: The file_source of this BackupFilesBody.
-        :type: str
+        :type file_source: str
         """
         self._file_source = file_source
 
@@ -93,7 +104,7 @@ class BackupFilesBody:
         OBS桶名。
 
         :param bucket_name: The bucket_name of this BackupFilesBody.
-        :type: str
+        :type bucket_name: str
         """
         self._bucket_name = bucket_name
 
@@ -104,7 +115,7 @@ class BackupFilesBody:
         导入的备份文件文件列表。
 
         :return: The files of this BackupFilesBody.
-        :rtype: list[Files]
+        :rtype: list[:class:`huaweicloudsdkdcs.v2.Files`]
         """
         return self._files
 
@@ -115,7 +126,7 @@ class BackupFilesBody:
         导入的备份文件文件列表。
 
         :param files: The files of this BackupFilesBody.
-        :type: list[Files]
+        :type files: list[:class:`huaweicloudsdkdcs.v2.Files`]
         """
         self._files = files
 
@@ -137,7 +148,7 @@ class BackupFilesBody:
         备份记录ID，数据来源为备份记录时必须填写
 
         :param backup_id: The backup_id of this BackupFilesBody.
-        :type: str
+        :type backup_id: str
         """
         self._backup_id = backup_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateCaseRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateCaseRequestBody:
     }
 
     def __init__(self, name=None, type=None, task_id=None):
-        """CreateCaseRequestBody - a model defined in huaweicloud sdk"""
+        """CreateCaseRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param name: name
+        :type name: str
+        :param type: type (0-常规用例,1-视频流用例,2-预制用例)
+        :type type: int
+        :param task_id: task_id
+        :type task_id: int
+        """
         
         
 
@@ -65,7 +74,7 @@ class CreateCaseRequestBody:
         name
 
         :param name: The name of this CreateCaseRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -87,7 +96,7 @@ class CreateCaseRequestBody:
         type (0-常规用例,1-视频流用例,2-预制用例)
 
         :param type: The type of this CreateCaseRequestBody.
-        :type: int
+        :type type: int
         """
         self._type = type
 
@@ -109,7 +118,7 @@ class CreateCaseRequestBody:
         task_id
 
         :param task_id: The task_id of this CreateCaseRequestBody.
-        :type: int
+        :type task_id: int
         """
         self._task_id = task_id
 

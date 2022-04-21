@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRtcAbnormalEventDimensionRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListRtcAbnormalEventDimensionRequest:
     }
 
     def __init__(self, app=None, room_id=None, dimension=None, start_time=None, end_time=None):
-        """ListRtcAbnormalEventDimensionRequest - a model defined in huaweicloud sdk"""
+        """ListRtcAbnormalEventDimensionRequest
+
+        The model defined in huaweicloud sdk
+
+        :param app: 应用ID 
+        :type app: str
+        :param room_id: 房间ID 
+        :type room_id: str
+        :param dimension: 分组类型，支持同时指定两种类型 - abnormal_type：异常类型 - abnormal_factor：异常因素 
+        :type dimension: str
+        :param start_time: 查询起始时间。UTC时间，格式：YYYY-MM-DDThh:mm:ssZ，如2020-04-23T06:00:00Z，不填写则默认读取过去1小时数据数据。 
+        :type start_time: str
+        :param end_time: 查询结束时间。UTC时间，格式：YYYY-MM-DDThh:mm:ssZ，如2020-04-23T07:00:00Z，不填写则默认为当前时间。 
+        :type end_time: str
+        """
         
         
 
@@ -77,7 +90,7 @@ class ListRtcAbnormalEventDimensionRequest:
         应用ID 
 
         :param app: The app of this ListRtcAbnormalEventDimensionRequest.
-        :type: str
+        :type app: str
         """
         self._app = app
 
@@ -99,7 +112,7 @@ class ListRtcAbnormalEventDimensionRequest:
         房间ID 
 
         :param room_id: The room_id of this ListRtcAbnormalEventDimensionRequest.
-        :type: str
+        :type room_id: str
         """
         self._room_id = room_id
 
@@ -121,7 +134,7 @@ class ListRtcAbnormalEventDimensionRequest:
         分组类型，支持同时指定两种类型 - abnormal_type：异常类型 - abnormal_factor：异常因素 
 
         :param dimension: The dimension of this ListRtcAbnormalEventDimensionRequest.
-        :type: str
+        :type dimension: str
         """
         self._dimension = dimension
 
@@ -143,7 +156,7 @@ class ListRtcAbnormalEventDimensionRequest:
         查询起始时间。UTC时间，格式：YYYY-MM-DDThh:mm:ssZ，如2020-04-23T06:00:00Z，不填写则默认读取过去1小时数据数据。 
 
         :param start_time: The start_time of this ListRtcAbnormalEventDimensionRequest.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -165,7 +178,7 @@ class ListRtcAbnormalEventDimensionRequest:
         查询结束时间。UTC时间，格式：YYYY-MM-DDThh:mm:ssZ，如2020-04-23T07:00:00Z，不填写则默认为当前时间。 
 
         :param end_time: The end_time of this ListRtcAbnormalEventDimensionRequest.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 

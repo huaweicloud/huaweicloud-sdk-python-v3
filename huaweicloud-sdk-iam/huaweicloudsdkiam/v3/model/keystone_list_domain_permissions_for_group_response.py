@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneListDomainPermissionsForGroupResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class KeystoneListDomainPermissionsForGroupResponse(SdkResponse):
     }
 
     def __init__(self, links=None, roles=None):
-        """KeystoneListDomainPermissionsForGroupResponse - a model defined in huaweicloud sdk"""
+        """KeystoneListDomainPermissionsForGroupResponse
+
+        The model defined in huaweicloud sdk
+
+        :param links: 
+        :type links: :class:`huaweicloudsdkiam.v3.Links`
+        :param roles: 权限信息列表。
+        :type roles: list[:class:`huaweicloudsdkiam.v3.RoleResult`]
+        """
         
         super(KeystoneListDomainPermissionsForGroupResponse, self).__init__()
 
@@ -51,7 +58,7 @@ class KeystoneListDomainPermissionsForGroupResponse(SdkResponse):
 
 
         :return: The links of this KeystoneListDomainPermissionsForGroupResponse.
-        :rtype: Links
+        :rtype: :class:`huaweicloudsdkiam.v3.Links`
         """
         return self._links
 
@@ -61,7 +68,7 @@ class KeystoneListDomainPermissionsForGroupResponse(SdkResponse):
 
 
         :param links: The links of this KeystoneListDomainPermissionsForGroupResponse.
-        :type: Links
+        :type links: :class:`huaweicloudsdkiam.v3.Links`
         """
         self._links = links
 
@@ -72,7 +79,7 @@ class KeystoneListDomainPermissionsForGroupResponse(SdkResponse):
         权限信息列表。
 
         :return: The roles of this KeystoneListDomainPermissionsForGroupResponse.
-        :rtype: list[RoleResult]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.RoleResult`]
         """
         return self._roles
 
@@ -83,7 +90,7 @@ class KeystoneListDomainPermissionsForGroupResponse(SdkResponse):
         权限信息列表。
 
         :param roles: The roles of this KeystoneListDomainPermissionsForGroupResponse.
-        :type: list[RoleResult]
+        :type roles: list[:class:`huaweicloudsdkiam.v3.RoleResult`]
         """
         self._roles = roles
 

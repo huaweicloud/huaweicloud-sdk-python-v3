@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QosQualityData:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class QosQualityData:
     }
 
     def __init__(self, uid=None, peerid=None, mid=None, data=None):
-        """QosQualityData - a model defined in huaweicloud sdk"""
+        """QosQualityData
+
+        The model defined in huaweicloud sdk
+
+        :param uid: 用户id
+        :type uid: str
+        :param peerid: 对端的用户ID，为0时表示本端上行数据
+        :type peerid: str
+        :param mid: 指标ID
+        :type mid: str
+        :param data: 时间戳及相应时间的指标数值列表
+        :type data: list[:class:`huaweicloudsdkcloudrtc.v1.TimeFloatValueData`]
+        """
         
         
 
@@ -73,7 +84,7 @@ class QosQualityData:
         用户id
 
         :param uid: The uid of this QosQualityData.
-        :type: str
+        :type uid: str
         """
         self._uid = uid
 
@@ -95,7 +106,7 @@ class QosQualityData:
         对端的用户ID，为0时表示本端上行数据
 
         :param peerid: The peerid of this QosQualityData.
-        :type: str
+        :type peerid: str
         """
         self._peerid = peerid
 
@@ -117,7 +128,7 @@ class QosQualityData:
         指标ID
 
         :param mid: The mid of this QosQualityData.
-        :type: str
+        :type mid: str
         """
         self._mid = mid
 
@@ -128,7 +139,7 @@ class QosQualityData:
         时间戳及相应时间的指标数值列表
 
         :return: The data of this QosQualityData.
-        :rtype: list[TimeFloatValueData]
+        :rtype: list[:class:`huaweicloudsdkcloudrtc.v1.TimeFloatValueData`]
         """
         return self._data
 
@@ -139,7 +150,7 @@ class QosQualityData:
         时间戳及相应时间的指标数值列表
 
         :param data: The data of this QosQualityData.
-        :type: list[TimeFloatValueData]
+        :type data: list[:class:`huaweicloudsdkcloudrtc.v1.TimeFloatValueData`]
         """
         self._data = data
 

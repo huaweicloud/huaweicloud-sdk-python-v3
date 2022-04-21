@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateFeatureV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateFeatureV2Request:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreateFeatureV2Request - a model defined in huaweicloud sdk"""
+        """CreateFeatureV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param body: Body of the CreateFeatureV2Request
+        :type body: :class:`huaweicloudsdkapig.v2.FeatureToggle`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateFeatureV2Request:
         实例ID
 
         :param instance_id: The instance_id of this CreateFeatureV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -72,7 +79,7 @@ class CreateFeatureV2Request:
 
 
         :return: The body of this CreateFeatureV2Request.
-        :rtype: FeatureToggle
+        :rtype: :class:`huaweicloudsdkapig.v2.FeatureToggle`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CreateFeatureV2Request:
 
 
         :param body: The body of this CreateFeatureV2Request.
-        :type: FeatureToggle
+        :type body: :class:`huaweicloudsdkapig.v2.FeatureToggle`
         """
         self._body = body
 

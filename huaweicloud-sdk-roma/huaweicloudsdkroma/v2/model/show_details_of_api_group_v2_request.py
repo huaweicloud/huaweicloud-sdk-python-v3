@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDetailsOfApiGroupV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowDetailsOfApiGroupV2Request:
     }
 
     def __init__(self, instance_id=None, group_id=None):
-        """ShowDetailsOfApiGroupV2Request - a model defined in huaweicloud sdk"""
+        """ShowDetailsOfApiGroupV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param group_id: 分组的编号
+        :type group_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ShowDetailsOfApiGroupV2Request:
         实例ID
 
         :param instance_id: The instance_id of this ShowDetailsOfApiGroupV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -83,7 +90,7 @@ class ShowDetailsOfApiGroupV2Request:
         分组的编号
 
         :param group_id: The group_id of this ShowDetailsOfApiGroupV2Request.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 

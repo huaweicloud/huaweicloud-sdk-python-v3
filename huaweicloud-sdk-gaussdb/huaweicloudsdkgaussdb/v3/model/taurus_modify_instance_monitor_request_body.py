@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TaurusModifyInstanceMonitorRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class TaurusModifyInstanceMonitorRequestBody:
     }
 
     def __init__(self, monitor_switch=None, period=None):
-        """TaurusModifyInstanceMonitorRequestBody - a model defined in huaweicloud sdk"""
+        """TaurusModifyInstanceMonitorRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param monitor_switch: 实例秒级监控开关。为true时表示开启，为false时表示关闭。
+        :type monitor_switch: bool
+        :param period: 采集周期，仅在monitor_switch为true时生效。默认为5s。monitor_switch为false时，不传该参数。  取值： 1：采集周期为1s； 5：采集周期为5s。
+        :type period: int
+        """
         
         
 
@@ -62,7 +69,7 @@ class TaurusModifyInstanceMonitorRequestBody:
         实例秒级监控开关。为true时表示开启，为false时表示关闭。
 
         :param monitor_switch: The monitor_switch of this TaurusModifyInstanceMonitorRequestBody.
-        :type: bool
+        :type monitor_switch: bool
         """
         self._monitor_switch = monitor_switch
 
@@ -84,7 +91,7 @@ class TaurusModifyInstanceMonitorRequestBody:
         采集周期，仅在monitor_switch为true时生效。默认为5s。monitor_switch为false时，不传该参数。  取值： 1：采集周期为1s； 5：采集周期为5s。
 
         :param period: The period of this TaurusModifyInstanceMonitorRequestBody.
-        :type: int
+        :type period: int
         """
         self._period = period
 

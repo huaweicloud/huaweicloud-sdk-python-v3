@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CommonCreateTaskReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CommonCreateTaskReq:
     }
 
     def __init__(self, input=None, output=None, user_data=None):
-        """CommonCreateTaskReq - a model defined in huaweicloud sdk"""
+        """CommonCreateTaskReq
+
+        The model defined in huaweicloud sdk
+
+        :param input: 
+        :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        :param output: 
+        :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        :param user_data: 用户自定义数据。 
+        :type user_data: str
+        """
         
         
 
@@ -56,7 +65,7 @@ class CommonCreateTaskReq:
 
 
         :return: The input of this CommonCreateTaskReq.
-        :rtype: ObsObjInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         return self._input
 
@@ -66,7 +75,7 @@ class CommonCreateTaskReq:
 
 
         :param input: The input of this CommonCreateTaskReq.
-        :type: ObsObjInfo
+        :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         self._input = input
 
@@ -76,7 +85,7 @@ class CommonCreateTaskReq:
 
 
         :return: The output of this CommonCreateTaskReq.
-        :rtype: ObsObjInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         return self._output
 
@@ -86,7 +95,7 @@ class CommonCreateTaskReq:
 
 
         :param output: The output of this CommonCreateTaskReq.
-        :type: ObsObjInfo
+        :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         self._output = output
 
@@ -108,7 +117,7 @@ class CommonCreateTaskReq:
         用户自定义数据。 
 
         :param user_data: The user_data of this CommonCreateTaskReq.
-        :type: str
+        :type user_data: str
         """
         self._user_data = user_data
 

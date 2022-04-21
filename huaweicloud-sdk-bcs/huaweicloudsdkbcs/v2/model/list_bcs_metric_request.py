@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListBcsMetricRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListBcsMetricRequest:
     }
 
     def __init__(self, blockchain_id=None, body=None):
-        """ListBcsMetricRequest - a model defined in huaweicloud sdk"""
+        """ListBcsMetricRequest
+
+        The model defined in huaweicloud sdk
+
+        :param blockchain_id: 区块链服务id,当前不支持IEF实例
+        :type blockchain_id: str
+        :param body: Body of the ListBcsMetricRequest
+        :type body: :class:`huaweicloudsdkbcs.v2.ListBcsMetricRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class ListBcsMetricRequest:
         区块链服务id,当前不支持IEF实例
 
         :param blockchain_id: The blockchain_id of this ListBcsMetricRequest.
-        :type: str
+        :type blockchain_id: str
         """
         self._blockchain_id = blockchain_id
 
@@ -72,7 +79,7 @@ class ListBcsMetricRequest:
 
 
         :return: The body of this ListBcsMetricRequest.
-        :rtype: ListBcsMetricRequestBody
+        :rtype: :class:`huaweicloudsdkbcs.v2.ListBcsMetricRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class ListBcsMetricRequest:
 
 
         :param body: The body of this ListBcsMetricRequest.
-        :type: ListBcsMetricRequestBody
+        :type body: :class:`huaweicloudsdkbcs.v2.ListBcsMetricRequestBody`
         """
         self._body = body
 

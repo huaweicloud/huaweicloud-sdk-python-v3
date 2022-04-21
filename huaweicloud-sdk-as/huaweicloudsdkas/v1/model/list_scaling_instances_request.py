@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListScalingInstancesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListScalingInstancesRequest:
     }
 
     def __init__(self, scaling_group_id=None, life_cycle_state=None, health_status=None, protect_from_scaling_down=None, start_number=None, limit=None):
-        """ListScalingInstancesRequest - a model defined in huaweicloud sdk"""
+        """ListScalingInstancesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param scaling_group_id: 伸缩组ID。
+        :type scaling_group_id: str
+        :param life_cycle_state: 实例在伸缩组中的生命周期状态：INSERVICE： 正在使用。PENDING：正在加入伸缩组。REMOVING：正在移出伸缩组。PENDING_WAIT：正在加入伸缩组：等待。REMOVING_WAIT：正在移出伸缩组：等待。
+        :type life_cycle_state: str
+        :param health_status: 实例健康状态：INITIALIZING：初始化。NORMAL：正常。ERROR：异常
+        :type health_status: str
+        :param protect_from_scaling_down: 实例保护状态：true：已设置实例保护。false：未设置实例保护。
+        :type protect_from_scaling_down: str
+        :param start_number: 查询的起始行号，默认为0。
+        :type start_number: int
+        :param limit: 查询的记录条数，默认为20。
+        :type limit: int
+        """
         
         
 
@@ -82,7 +97,7 @@ class ListScalingInstancesRequest:
         伸缩组ID。
 
         :param scaling_group_id: The scaling_group_id of this ListScalingInstancesRequest.
-        :type: str
+        :type scaling_group_id: str
         """
         self._scaling_group_id = scaling_group_id
 
@@ -104,7 +119,7 @@ class ListScalingInstancesRequest:
         实例在伸缩组中的生命周期状态：INSERVICE： 正在使用。PENDING：正在加入伸缩组。REMOVING：正在移出伸缩组。PENDING_WAIT：正在加入伸缩组：等待。REMOVING_WAIT：正在移出伸缩组：等待。
 
         :param life_cycle_state: The life_cycle_state of this ListScalingInstancesRequest.
-        :type: str
+        :type life_cycle_state: str
         """
         self._life_cycle_state = life_cycle_state
 
@@ -126,7 +141,7 @@ class ListScalingInstancesRequest:
         实例健康状态：INITIALIZING：初始化。NORMAL：正常。ERROR：异常
 
         :param health_status: The health_status of this ListScalingInstancesRequest.
-        :type: str
+        :type health_status: str
         """
         self._health_status = health_status
 
@@ -148,7 +163,7 @@ class ListScalingInstancesRequest:
         实例保护状态：true：已设置实例保护。false：未设置实例保护。
 
         :param protect_from_scaling_down: The protect_from_scaling_down of this ListScalingInstancesRequest.
-        :type: str
+        :type protect_from_scaling_down: str
         """
         self._protect_from_scaling_down = protect_from_scaling_down
 
@@ -170,7 +185,7 @@ class ListScalingInstancesRequest:
         查询的起始行号，默认为0。
 
         :param start_number: The start_number of this ListScalingInstancesRequest.
-        :type: int
+        :type start_number: int
         """
         self._start_number = start_number
 
@@ -192,7 +207,7 @@ class ListScalingInstancesRequest:
         查询的记录条数，默认为20。
 
         :param limit: The limit of this ListScalingInstancesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

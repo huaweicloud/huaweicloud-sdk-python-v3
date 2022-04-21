@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateYmlsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateYmlsRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """UpdateYmlsRequest - a model defined in huaweicloud sdk"""
+        """UpdateYmlsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 指定待更改的集群ID。
+        :type cluster_id: str
+        :param body: Body of the UpdateYmlsRequest
+        :type body: :class:`huaweicloudsdkcss.v1.UpdateYmlsReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateYmlsRequest:
         指定待更改的集群ID。
 
         :param cluster_id: The cluster_id of this UpdateYmlsRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -72,7 +79,7 @@ class UpdateYmlsRequest:
 
 
         :return: The body of this UpdateYmlsRequest.
-        :rtype: UpdateYmlsReq
+        :rtype: :class:`huaweicloudsdkcss.v1.UpdateYmlsReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateYmlsRequest:
 
 
         :param body: The body of this UpdateYmlsRequest.
-        :type: UpdateYmlsReq
+        :type body: :class:`huaweicloudsdkcss.v1.UpdateYmlsReq`
         """
         self._body = body
 

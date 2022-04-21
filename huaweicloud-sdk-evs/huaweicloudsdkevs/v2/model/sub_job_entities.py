@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SubJobEntities:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class SubJobEntities:
     }
 
     def __init__(self, volume_type=None, size=None, volume_id=None, name=None):
-        """SubJobEntities - a model defined in huaweicloud sdk"""
+        """SubJobEntities
+
+        The model defined in huaweicloud sdk
+
+        :param volume_type: 云硬盘的类型。
+        :type volume_type: str
+        :param size: 云硬盘的容量，单位为GB。
+        :type size: int
+        :param volume_id: 云硬盘的ID。
+        :type volume_id: str
+        :param name: 云硬盘的名称。
+        :type name: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class SubJobEntities:
         云硬盘的类型。
 
         :param volume_type: The volume_type of this SubJobEntities.
-        :type: str
+        :type volume_type: str
         """
         self._volume_type = volume_type
 
@@ -95,7 +106,7 @@ class SubJobEntities:
         云硬盘的容量，单位为GB。
 
         :param size: The size of this SubJobEntities.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -117,7 +128,7 @@ class SubJobEntities:
         云硬盘的ID。
 
         :param volume_id: The volume_id of this SubJobEntities.
-        :type: str
+        :type volume_id: str
         """
         self._volume_id = volume_id
 
@@ -139,7 +150,7 @@ class SubJobEntities:
         云硬盘的名称。
 
         :param name: The name of this SubJobEntities.
-        :type: str
+        :type name: str
         """
         self._name = name
 

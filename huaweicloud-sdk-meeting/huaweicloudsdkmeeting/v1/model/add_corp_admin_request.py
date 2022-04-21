@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddCorpAdminRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class AddCorpAdminRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, account_type=None, body=None):
-        """AddCorpAdminRequest - a model defined in huaweicloud sdk"""
+        """AddCorpAdminRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        :type x_request_id: str
+        :param accept_language: 语言参数，默认为中文zh-CN, 英文为en-US
+        :type accept_language: str
+        :param account_type: 账号类型 * 0：会议账号 * 1：表示第三方账号。 默认0 
+        :type account_type: int
+        :param body: Body of the AddCorpAdminRequest
+        :type body: :class:`huaweicloudsdkmeeting.v1.CorpAdminDTO`
+        """
         
         
 
@@ -73,7 +84,7 @@ class AddCorpAdminRequest:
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
 
         :param x_request_id: The x_request_id of this AddCorpAdminRequest.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 
@@ -95,7 +106,7 @@ class AddCorpAdminRequest:
         语言参数，默认为中文zh-CN, 英文为en-US
 
         :param accept_language: The accept_language of this AddCorpAdminRequest.
-        :type: str
+        :type accept_language: str
         """
         self._accept_language = accept_language
 
@@ -117,7 +128,7 @@ class AddCorpAdminRequest:
         账号类型 * 0：会议账号 * 1：表示第三方账号。 默认0 
 
         :param account_type: The account_type of this AddCorpAdminRequest.
-        :type: int
+        :type account_type: int
         """
         self._account_type = account_type
 
@@ -127,7 +138,7 @@ class AddCorpAdminRequest:
 
 
         :return: The body of this AddCorpAdminRequest.
-        :rtype: CorpAdminDTO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.CorpAdminDTO`
         """
         return self._body
 
@@ -137,7 +148,7 @@ class AddCorpAdminRequest:
 
 
         :param body: The body of this AddCorpAdminRequest.
-        :type: CorpAdminDTO
+        :type body: :class:`huaweicloudsdkmeeting.v1.CorpAdminDTO`
         """
         self._body = body
 

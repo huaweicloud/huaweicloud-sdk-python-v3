@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PrivateKeyVerify:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class PrivateKeyVerify:
     }
 
     def __init__(self, repository_uuid=None, private_key=None):
-        """PrivateKeyVerify - a model defined in huaweicloud sdk"""
+        """PrivateKeyVerify
+
+        The model defined in huaweicloud sdk
+
+        :param repository_uuid: 仓库UUID
+        :type repository_uuid: str
+        :param private_key: 私钥
+        :type private_key: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class PrivateKeyVerify:
         仓库UUID
 
         :param repository_uuid: The repository_uuid of this PrivateKeyVerify.
-        :type: str
+        :type repository_uuid: str
         """
         self._repository_uuid = repository_uuid
 
@@ -83,7 +90,7 @@ class PrivateKeyVerify:
         私钥
 
         :param private_key: The private_key of this PrivateKeyVerify.
-        :type: str
+        :type private_key: str
         """
         self._private_key = private_key
 

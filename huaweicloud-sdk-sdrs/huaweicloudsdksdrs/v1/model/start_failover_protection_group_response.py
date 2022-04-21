@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StartFailoverProtectionGroupResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class StartFailoverProtectionGroupResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """StartFailoverProtectionGroupResponse - a model defined in huaweicloud sdk"""
+        """StartFailoverProtectionGroupResponse
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 成功返回jobId信息
+        :type job_id: str
+        """
         
         super(StartFailoverProtectionGroupResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class StartFailoverProtectionGroupResponse(SdkResponse):
         成功返回jobId信息
 
         :param job_id: The job_id of this StartFailoverProtectionGroupResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 

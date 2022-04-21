@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchAssociateNaToNodesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class BatchAssociateNaToNodesRequest:
     }
 
     def __init__(self, na_id=None, action=None, body=None):
-        """BatchAssociateNaToNodesRequest - a model defined in huaweicloud sdk"""
+        """BatchAssociateNaToNodesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param na_id: 北向数据接收端点ID
+        :type na_id: str
+        :param action: 批量删除delete，批量添加add
+        :type action: str
+        :param body: Body of the BatchAssociateNaToNodesRequest
+        :type body: :class:`huaweicloudsdkiotedge.v2.AuthorizeNa2NodesRequestDTO`
+        """
         
         
 
@@ -66,7 +75,7 @@ class BatchAssociateNaToNodesRequest:
         北向数据接收端点ID
 
         :param na_id: The na_id of this BatchAssociateNaToNodesRequest.
-        :type: str
+        :type na_id: str
         """
         self._na_id = na_id
 
@@ -88,7 +97,7 @@ class BatchAssociateNaToNodesRequest:
         批量删除delete，批量添加add
 
         :param action: The action of this BatchAssociateNaToNodesRequest.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -98,7 +107,7 @@ class BatchAssociateNaToNodesRequest:
 
 
         :return: The body of this BatchAssociateNaToNodesRequest.
-        :rtype: AuthorizeNa2NodesRequestDTO
+        :rtype: :class:`huaweicloudsdkiotedge.v2.AuthorizeNa2NodesRequestDTO`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class BatchAssociateNaToNodesRequest:
 
 
         :param body: The body of this BatchAssociateNaToNodesRequest.
-        :type: AuthorizeNa2NodesRequestDTO
+        :type body: :class:`huaweicloudsdkiotedge.v2.AuthorizeNa2NodesRequestDTO`
         """
         self._body = body
 

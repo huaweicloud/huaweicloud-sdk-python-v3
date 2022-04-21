@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTakeOverTaskResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListTakeOverTaskResponse(SdkResponse):
     }
 
     def __init__(self, tasks=None, total=None):
-        """ListTakeOverTaskResponse - a model defined in huaweicloud sdk"""
+        """ListTakeOverTaskResponse
+
+        The model defined in huaweicloud sdk
+
+        :param tasks: 托管任务信息。
+        :type tasks: list[:class:`huaweicloudsdkvod.v1.TakeOverTask`]
+        :param total: 任务数量。
+        :type total: int
+        """
         
         super(ListTakeOverTaskResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListTakeOverTaskResponse(SdkResponse):
         托管任务信息。
 
         :return: The tasks of this ListTakeOverTaskResponse.
-        :rtype: list[TakeOverTask]
+        :rtype: list[:class:`huaweicloudsdkvod.v1.TakeOverTask`]
         """
         return self._tasks
 
@@ -63,7 +70,7 @@ class ListTakeOverTaskResponse(SdkResponse):
         托管任务信息。
 
         :param tasks: The tasks of this ListTakeOverTaskResponse.
-        :type: list[TakeOverTask]
+        :type tasks: list[:class:`huaweicloudsdkvod.v1.TakeOverTask`]
         """
         self._tasks = tasks
 
@@ -85,7 +92,7 @@ class ListTakeOverTaskResponse(SdkResponse):
         任务数量。
 
         :param total: The total of this ListTakeOverTaskResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 

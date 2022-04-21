@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteTagsOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteTagsOption:
     }
 
     def __init__(self, tags=None, action=None):
-        """DeleteTagsOption - a model defined in huaweicloud sdk"""
+        """DeleteTagsOption
+
+        The model defined in huaweicloud sdk
+
+        :param tags: 标签列表。action为delete时，tags结构体不能缺失，key不能为空，或者空字符串。
+        :type tags: list[:class:`huaweicloudsdkas.v1.TagsSingleValue`]
+        :param action: 操作标识（区分大小写）：delete：删除。create：创建。若已经存在相同的key值则会覆盖对应的value值。
+        :type action: str
+        """
         
         
 
@@ -50,7 +57,7 @@ class DeleteTagsOption:
         标签列表。action为delete时，tags结构体不能缺失，key不能为空，或者空字符串。
 
         :return: The tags of this DeleteTagsOption.
-        :rtype: list[TagsSingleValue]
+        :rtype: list[:class:`huaweicloudsdkas.v1.TagsSingleValue`]
         """
         return self._tags
 
@@ -61,7 +68,7 @@ class DeleteTagsOption:
         标签列表。action为delete时，tags结构体不能缺失，key不能为空，或者空字符串。
 
         :param tags: The tags of this DeleteTagsOption.
-        :type: list[TagsSingleValue]
+        :type tags: list[:class:`huaweicloudsdkas.v1.TagsSingleValue`]
         """
         self._tags = tags
 
@@ -83,7 +90,7 @@ class DeleteTagsOption:
         操作标识（区分大小写）：delete：删除。create：创建。若已经存在相同的key值则会覆盖对应的value值。
 
         :param action: The action of this DeleteTagsOption.
-        :type: str
+        :type action: str
         """
         self._action = action
 

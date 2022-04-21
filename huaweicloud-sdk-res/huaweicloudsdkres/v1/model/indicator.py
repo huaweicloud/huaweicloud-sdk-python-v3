@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Indicator:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Indicator:
     }
 
     def __init__(self, indicator_name=None, indicator_params=None):
-        """Indicator - a model defined in huaweicloud sdk"""
+        """Indicator
+
+        The model defined in huaweicloud sdk
+
+        :param indicator_name: 指标名称： - clickPVRate，点击PV率 - clickUVRate，点击UV率 - customize，自定义
+        :type indicator_name: str
+        :param indicator_params: 
+        :type indicator_params: :class:`huaweicloudsdkres.v1.IndicatorParam`
+        """
         
         
 
@@ -63,7 +70,7 @@ class Indicator:
         指标名称： - clickPVRate，点击PV率 - clickUVRate，点击UV率 - customize，自定义
 
         :param indicator_name: The indicator_name of this Indicator.
-        :type: str
+        :type indicator_name: str
         """
         self._indicator_name = indicator_name
 
@@ -73,7 +80,7 @@ class Indicator:
 
 
         :return: The indicator_params of this Indicator.
-        :rtype: IndicatorParam
+        :rtype: :class:`huaweicloudsdkres.v1.IndicatorParam`
         """
         return self._indicator_params
 
@@ -83,7 +90,7 @@ class Indicator:
 
 
         :param indicator_params: The indicator_params of this Indicator.
-        :type: IndicatorParam
+        :type indicator_params: :class:`huaweicloudsdkres.v1.IndicatorParam`
         """
         self._indicator_params = indicator_params
 

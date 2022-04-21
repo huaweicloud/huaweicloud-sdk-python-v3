@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListProjectVpcChannelsV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class ListProjectVpcChannelsV2Request:
     }
 
     def __init__(self, offset=None, limit=None, id=None, name=None, precise_search=None, member_host=None, member_port=None, member_group_name=None, member_group_id=None, members_return=None):
-        """ListProjectVpcChannelsV2Request - a model defined in huaweicloud sdk"""
+        """ListProjectVpcChannelsV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param offset: 偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
+        :type offset: int
+        :param limit: 每页显示的条目数量
+        :type limit: int
+        :param id: VPC通道的编号
+        :type id: str
+        :param name: VPC通道的名称
+        :type name: str
+        :param precise_search: 指定需要精确匹配查找的参数名称，多个参数需要支持精确匹配时参数之间使用“,”隔开。  目前支持name，member_group_name。
+        :type precise_search: str
+        :param member_host: 后端服务地址。默认精确查询，不支持模糊查询。
+        :type member_host: str
+        :param member_port: 后端服务器端口
+        :type member_port: int
+        :param member_group_name: 后端服务器组名称
+        :type member_group_name: str
+        :param member_group_id: 后端服务器组编号
+        :type member_group_id: str
+        :param members_return: 是否返回后端实例列表
+        :type members_return: bool
+        """
         
         
 
@@ -103,7 +126,7 @@ class ListProjectVpcChannelsV2Request:
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
         :param offset: The offset of this ListProjectVpcChannelsV2Request.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -125,7 +148,7 @@ class ListProjectVpcChannelsV2Request:
         每页显示的条目数量
 
         :param limit: The limit of this ListProjectVpcChannelsV2Request.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -147,7 +170,7 @@ class ListProjectVpcChannelsV2Request:
         VPC通道的编号
 
         :param id: The id of this ListProjectVpcChannelsV2Request.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -169,7 +192,7 @@ class ListProjectVpcChannelsV2Request:
         VPC通道的名称
 
         :param name: The name of this ListProjectVpcChannelsV2Request.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -191,7 +214,7 @@ class ListProjectVpcChannelsV2Request:
         指定需要精确匹配查找的参数名称，多个参数需要支持精确匹配时参数之间使用“,”隔开。  目前支持name，member_group_name。
 
         :param precise_search: The precise_search of this ListProjectVpcChannelsV2Request.
-        :type: str
+        :type precise_search: str
         """
         self._precise_search = precise_search
 
@@ -213,7 +236,7 @@ class ListProjectVpcChannelsV2Request:
         后端服务地址。默认精确查询，不支持模糊查询。
 
         :param member_host: The member_host of this ListProjectVpcChannelsV2Request.
-        :type: str
+        :type member_host: str
         """
         self._member_host = member_host
 
@@ -235,7 +258,7 @@ class ListProjectVpcChannelsV2Request:
         后端服务器端口
 
         :param member_port: The member_port of this ListProjectVpcChannelsV2Request.
-        :type: int
+        :type member_port: int
         """
         self._member_port = member_port
 
@@ -257,7 +280,7 @@ class ListProjectVpcChannelsV2Request:
         后端服务器组名称
 
         :param member_group_name: The member_group_name of this ListProjectVpcChannelsV2Request.
-        :type: str
+        :type member_group_name: str
         """
         self._member_group_name = member_group_name
 
@@ -279,7 +302,7 @@ class ListProjectVpcChannelsV2Request:
         后端服务器组编号
 
         :param member_group_id: The member_group_id of this ListProjectVpcChannelsV2Request.
-        :type: str
+        :type member_group_id: str
         """
         self._member_group_id = member_group_id
 
@@ -301,7 +324,7 @@ class ListProjectVpcChannelsV2Request:
         是否返回后端实例列表
 
         :param members_return: The members_return of this ListProjectVpcChannelsV2Request.
-        :type: bool
+        :type members_return: bool
         """
         self._members_return = members_return
 

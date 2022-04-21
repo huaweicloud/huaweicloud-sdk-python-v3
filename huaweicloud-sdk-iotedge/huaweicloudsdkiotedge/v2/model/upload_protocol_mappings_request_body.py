@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UploadProtocolMappingsRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UploadProtocolMappingsRequestBody:
     }
 
     def __init__(self, file=None):
-        """UploadProtocolMappingsRequestBody - a model defined in huaweicloud sdk"""
+        """UploadProtocolMappingsRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param file: 上传协议映射文件。当前仅支持xlsx/xls文件格式，且文件最大行数为10000行。
+        :type file: :class:`huaweicloudsdkcore.http.formdata.FormFile`
+        """
         
         
 
@@ -46,7 +51,7 @@ class UploadProtocolMappingsRequestBody:
         上传协议映射文件。当前仅支持xlsx/xls文件格式，且文件最大行数为10000行。
 
         :return: The file of this UploadProtocolMappingsRequestBody.
-        :rtype: file
+        :rtype: :class:`huaweicloudsdkcore.http.formdata.FormFile`
         """
         return self._file
 
@@ -57,7 +62,7 @@ class UploadProtocolMappingsRequestBody:
         上传协议映射文件。当前仅支持xlsx/xls文件格式，且文件最大行数为10000行。
 
         :param file: The file of this UploadProtocolMappingsRequestBody.
-        :type: file
+        :type file: :class:`huaweicloudsdkcore.http.formdata.FormFile`
         """
         self._file = file
 

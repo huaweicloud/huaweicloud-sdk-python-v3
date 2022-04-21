@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InstanceSpc:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class InstanceSpc:
     }
 
     def __init__(self, org_peer_max_num=None, orderer_max_num=None, member_max_num=None):
-        """InstanceSpc - a model defined in huaweicloud sdk"""
+        """InstanceSpc
+
+        The model defined in huaweicloud sdk
+
+        :param org_peer_max_num: 单个组织支持的最大peer节点数量
+        :type org_peer_max_num: int
+        :param orderer_max_num: 单个联盟链支持的最大order节点数量
+        :type orderer_max_num: int
+        :param member_max_num: 单个联盟链支持的最大租户数量
+        :type member_max_num: int
+        """
         
         
 
@@ -68,7 +77,7 @@ class InstanceSpc:
         单个组织支持的最大peer节点数量
 
         :param org_peer_max_num: The org_peer_max_num of this InstanceSpc.
-        :type: int
+        :type org_peer_max_num: int
         """
         self._org_peer_max_num = org_peer_max_num
 
@@ -90,7 +99,7 @@ class InstanceSpc:
         单个联盟链支持的最大order节点数量
 
         :param orderer_max_num: The orderer_max_num of this InstanceSpc.
-        :type: int
+        :type orderer_max_num: int
         """
         self._orderer_max_num = orderer_max_num
 
@@ -112,7 +121,7 @@ class InstanceSpc:
         单个联盟链支持的最大租户数量
 
         :param member_max_num: The member_max_num of this InstanceSpc.
-        :type: int
+        :type member_max_num: int
         """
         self._member_max_num = member_max_num
 

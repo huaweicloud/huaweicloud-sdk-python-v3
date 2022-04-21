@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FileOperateLog:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class FileOperateLog:
     }
 
     def __init__(self, duration=None, operate_time=None, operate_type=None, file_name=None, from_path=None, to_path=None, file_size=None, oper_result=None):
-        """FileOperateLog - a model defined in huaweicloud sdk"""
+        """FileOperateLog
+
+        The model defined in huaweicloud sdk
+
+        :param duration: 传输时间 格式：hh:ii:ss
+        :type duration: str
+        :param operate_time: 操作时间
+        :type operate_time: str
+        :param operate_type: 操作类型
+        :type operate_type: str
+        :param file_name: 文件名
+        :type file_name: str
+        :param from_path: 来源路径
+        :type from_path: str
+        :param to_path: 目标路径
+        :type to_path: str
+        :param file_size: 文件大小，多少k，多少M，多少G。
+        :type file_size: str
+        :param oper_result: 操作结果
+        :type oper_result: str
+        """
         
         
 
@@ -93,7 +112,7 @@ class FileOperateLog:
         传输时间 格式：hh:ii:ss
 
         :param duration: The duration of this FileOperateLog.
-        :type: str
+        :type duration: str
         """
         self._duration = duration
 
@@ -115,7 +134,7 @@ class FileOperateLog:
         操作时间
 
         :param operate_time: The operate_time of this FileOperateLog.
-        :type: str
+        :type operate_time: str
         """
         self._operate_time = operate_time
 
@@ -137,7 +156,7 @@ class FileOperateLog:
         操作类型
 
         :param operate_type: The operate_type of this FileOperateLog.
-        :type: str
+        :type operate_type: str
         """
         self._operate_type = operate_type
 
@@ -159,7 +178,7 @@ class FileOperateLog:
         文件名
 
         :param file_name: The file_name of this FileOperateLog.
-        :type: str
+        :type file_name: str
         """
         self._file_name = file_name
 
@@ -181,7 +200,7 @@ class FileOperateLog:
         来源路径
 
         :param from_path: The from_path of this FileOperateLog.
-        :type: str
+        :type from_path: str
         """
         self._from_path = from_path
 
@@ -203,7 +222,7 @@ class FileOperateLog:
         目标路径
 
         :param to_path: The to_path of this FileOperateLog.
-        :type: str
+        :type to_path: str
         """
         self._to_path = to_path
 
@@ -225,7 +244,7 @@ class FileOperateLog:
         文件大小，多少k，多少M，多少G。
 
         :param file_size: The file_size of this FileOperateLog.
-        :type: str
+        :type file_size: str
         """
         self._file_size = file_size
 
@@ -247,7 +266,7 @@ class FileOperateLog:
         操作结果
 
         :param oper_result: The oper_result of this FileOperateLog.
-        :type: str
+        :type oper_result: str
         """
         self._oper_result = oper_result
 

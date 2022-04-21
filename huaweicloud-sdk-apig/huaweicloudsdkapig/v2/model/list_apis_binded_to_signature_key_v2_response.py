@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListApisBindedToSignatureKeyV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListApisBindedToSignatureKeyV2Response(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, bindings=None):
-        """ListApisBindedToSignatureKeyV2Response - a model defined in huaweicloud sdk"""
+        """ListApisBindedToSignatureKeyV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param size: 本次返回的列表长度
+        :type size: int
+        :param total: 满足条件的记录数
+        :type total: int
+        :param bindings: 本次查询到的签名密钥和API绑定关系列表
+        :type bindings: list[:class:`huaweicloudsdkapig.v2.SignApiBindingBase`]
+        """
         
         super(ListApisBindedToSignatureKeyV2Response, self).__init__()
 
@@ -66,7 +75,7 @@ class ListApisBindedToSignatureKeyV2Response(SdkResponse):
         本次返回的列表长度
 
         :param size: The size of this ListApisBindedToSignatureKeyV2Response.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -88,7 +97,7 @@ class ListApisBindedToSignatureKeyV2Response(SdkResponse):
         满足条件的记录数
 
         :param total: The total of this ListApisBindedToSignatureKeyV2Response.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -99,7 +108,7 @@ class ListApisBindedToSignatureKeyV2Response(SdkResponse):
         本次查询到的签名密钥和API绑定关系列表
 
         :return: The bindings of this ListApisBindedToSignatureKeyV2Response.
-        :rtype: list[SignApiBindingBase]
+        :rtype: list[:class:`huaweicloudsdkapig.v2.SignApiBindingBase`]
         """
         return self._bindings
 
@@ -110,7 +119,7 @@ class ListApisBindedToSignatureKeyV2Response(SdkResponse):
         本次查询到的签名密钥和API绑定关系列表
 
         :param bindings: The bindings of this ListApisBindedToSignatureKeyV2Response.
-        :type: list[SignApiBindingBase]
+        :type bindings: list[:class:`huaweicloudsdkapig.v2.SignApiBindingBase`]
         """
         self._bindings = bindings
 

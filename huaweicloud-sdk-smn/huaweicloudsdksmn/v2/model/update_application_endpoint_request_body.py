@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateApplicationEndpointRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateApplicationEndpointRequestBody:
     }
 
     def __init__(self, enabled=None, user_data=None):
-        """UpdateApplicationEndpointRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateApplicationEndpointRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param enabled: 设备是否可用，值为true或false字符串。
+        :type enabled: str
+        :param user_data: 用户自定义数据，最大长度支持UTF-8编码后2048字节。
+        :type user_data: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class UpdateApplicationEndpointRequestBody:
         设备是否可用，值为true或false字符串。
 
         :param enabled: The enabled of this UpdateApplicationEndpointRequestBody.
-        :type: str
+        :type enabled: str
         """
         self._enabled = enabled
 
@@ -85,7 +92,7 @@ class UpdateApplicationEndpointRequestBody:
         用户自定义数据，最大长度支持UTF-8编码后2048字节。
 
         :param user_data: The user_data of this UpdateApplicationEndpointRequestBody.
-        :type: str
+        :type user_data: str
         """
         self._user_data = user_data
 

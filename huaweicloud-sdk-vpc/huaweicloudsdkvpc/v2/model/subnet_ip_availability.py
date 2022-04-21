@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SubnetIpAvailability:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class SubnetIpAvailability:
     }
 
     def __init__(self, used_ips=None, subnet_id=None, subnet_name=None, ip_version=None, cidr=None, total_ips=None):
-        """SubnetIpAvailability - a model defined in huaweicloud sdk"""
+        """SubnetIpAvailability
+
+        The model defined in huaweicloud sdk
+
+        :param used_ips: 子网中已经使用的IP数目（不包含系统预留地址）
+        :type used_ips: int
+        :param subnet_id: 子网ID
+        :type subnet_id: str
+        :param subnet_name: 子网名称
+        :type subnet_name: str
+        :param ip_version: 子网的IP版本，取值为4或者6
+        :type ip_version: int
+        :param cidr: 子网的CIDR
+        :type cidr: str
+        :param total_ips: 子网中IP总数（不包含系统预留地址）
+        :type total_ips: int
+        """
         
         
 
@@ -77,7 +92,7 @@ class SubnetIpAvailability:
         子网中已经使用的IP数目（不包含系统预留地址）
 
         :param used_ips: The used_ips of this SubnetIpAvailability.
-        :type: int
+        :type used_ips: int
         """
         self._used_ips = used_ips
 
@@ -99,7 +114,7 @@ class SubnetIpAvailability:
         子网ID
 
         :param subnet_id: The subnet_id of this SubnetIpAvailability.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -121,7 +136,7 @@ class SubnetIpAvailability:
         子网名称
 
         :param subnet_name: The subnet_name of this SubnetIpAvailability.
-        :type: str
+        :type subnet_name: str
         """
         self._subnet_name = subnet_name
 
@@ -143,7 +158,7 @@ class SubnetIpAvailability:
         子网的IP版本，取值为4或者6
 
         :param ip_version: The ip_version of this SubnetIpAvailability.
-        :type: int
+        :type ip_version: int
         """
         self._ip_version = ip_version
 
@@ -165,7 +180,7 @@ class SubnetIpAvailability:
         子网的CIDR
 
         :param cidr: The cidr of this SubnetIpAvailability.
-        :type: str
+        :type cidr: str
         """
         self._cidr = cidr
 
@@ -187,7 +202,7 @@ class SubnetIpAvailability:
         子网中IP总数（不包含系统预留地址）
 
         :param total_ips: The total_ips of this SubnetIpAvailability.
-        :type: int
+        :type total_ips: int
         """
         self._total_ips = total_ips
 

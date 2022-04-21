@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IefInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class IefInfo:
     }
 
     def __init__(self, deploy_mode=None):
-        """IefInfo - a model defined in huaweicloud sdk"""
+        """IefInfo
+
+        The model defined in huaweicloud sdk
+
+        :param deploy_mode: BCS服务边缘节点部署模式，分为：随机模式（0），绑定模式（1）
+        :type deploy_mode: int
+        """
         
         
 
@@ -58,7 +63,7 @@ class IefInfo:
         BCS服务边缘节点部署模式，分为：随机模式（0），绑定模式（1）
 
         :param deploy_mode: The deploy_mode of this IefInfo.
-        :type: int
+        :type deploy_mode: int
         """
         self._deploy_mode = deploy_mode
 

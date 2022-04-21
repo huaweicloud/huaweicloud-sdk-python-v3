@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TagWithMultiValue:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class TagWithMultiValue:
     }
 
     def __init__(self, key=None, values=None):
-        """TagWithMultiValue - a model defined in huaweicloud sdk"""
+        """TagWithMultiValue
+
+        The model defined in huaweicloud sdk
+
+        :param key: 键。标签的key值不能包含“&#x3D;”,“*”,“&lt;”,“&gt;”,“\\”,“,”,“|”,“/”，且首尾字符不能为空格。
+        :type key: str
+        :param values: 值。标签的value值不能包含“&#x3D;”,“*”,“&lt;”,“&gt;”,“\\”,“,”,“|”,“/”，且首尾字符不能为空格。
+        :type values: list[str]
+        """
         
         
 
@@ -62,7 +69,7 @@ class TagWithMultiValue:
         键。标签的key值不能包含“=”,“*”,“<”,“>”,“\\”,“,”,“|”,“/”，且首尾字符不能为空格。
 
         :param key: The key of this TagWithMultiValue.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -84,7 +91,7 @@ class TagWithMultiValue:
         值。标签的value值不能包含“=”,“*”,“<”,“>”,“\\”,“,”,“|”,“/”，且首尾字符不能为空格。
 
         :param values: The values of this TagWithMultiValue.
-        :type: list[str]
+        :type values: list[str]
         """
         self._values = values
 

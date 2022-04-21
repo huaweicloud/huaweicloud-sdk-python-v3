@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ClusterStatus:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class ClusterStatus:
     }
 
     def __init__(self, phase=None, job_id=None, reason=None, message=None, endpoints=None, is_locked=None, lock_scene=None, lock_source=None, lock_source_id=None, delete_option=None, delete_status=None):
-        """ClusterStatus - a model defined in huaweicloud sdk"""
+        """ClusterStatus
+
+        The model defined in huaweicloud sdk
+
+        :param phase: 集群状态，取值如下 - Available：可用，表示集群处于正常状态。 - Unavailable：不可用，表示集群异常，需手动删除或联系管理员删除。 - ScalingUp：扩容中，表示集群正处于扩容过程中。 - ScalingDown：缩容中，表示集群正处于缩容过程中。 - Creating：创建中，表示集群正处于创建过程中。 - Deleting：删除中，表示集群正处于删除过程中。 - Upgrading：升级中，表示集群正处于升级过程中。 - Resizing：规格变更中，表示集群正处于变更规格中。 - RollingBack：回滚中，表示集群正处于回滚过程中。 - RollbackFailed：回滚异常，表示集群回滚异常，需联系管理员进行回滚重试。 - Empty：集群无任何资源
+        :type phase: str
+        :param job_id: 作业ID
+        :type job_id: str
+        :param reason: 集群变为当前状态的原因，在集群在非“Available”状态下时，会返回此参数。
+        :type reason: str
+        :param message: 集群变为当前状态的原因的详细信息，在集群在非“Available”状态下时，会返回此参数。
+        :type message: str
+        :param endpoints: 集群中 kube-apiserver 的访问地址。
+        :type endpoints: list[:class:`huaweicloudsdkcce.v3.ClusterEndpoints`]
+        :param is_locked: CBC资源锁定
+        :type is_locked: bool
+        :param lock_scene: CBC资源锁定场景
+        :type lock_scene: str
+        :param lock_source: 锁定资源
+        :type lock_source: str
+        :param lock_source_id: 锁定的资源ID
+        :type lock_source_id: str
+        :param delete_option: 删除配置状态（仅删除请求响应包含）
+        :type delete_option: object
+        :param delete_status: 删除状态信息（仅删除请求响应包含）
+        :type delete_status: object
+        """
         
         
 
@@ -108,7 +133,7 @@ class ClusterStatus:
         集群状态，取值如下 - Available：可用，表示集群处于正常状态。 - Unavailable：不可用，表示集群异常，需手动删除或联系管理员删除。 - ScalingUp：扩容中，表示集群正处于扩容过程中。 - ScalingDown：缩容中，表示集群正处于缩容过程中。 - Creating：创建中，表示集群正处于创建过程中。 - Deleting：删除中，表示集群正处于删除过程中。 - Upgrading：升级中，表示集群正处于升级过程中。 - Resizing：规格变更中，表示集群正处于变更规格中。 - RollingBack：回滚中，表示集群正处于回滚过程中。 - RollbackFailed：回滚异常，表示集群回滚异常，需联系管理员进行回滚重试。 - Empty：集群无任何资源
 
         :param phase: The phase of this ClusterStatus.
-        :type: str
+        :type phase: str
         """
         self._phase = phase
 
@@ -130,7 +155,7 @@ class ClusterStatus:
         作业ID
 
         :param job_id: The job_id of this ClusterStatus.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -152,7 +177,7 @@ class ClusterStatus:
         集群变为当前状态的原因，在集群在非“Available”状态下时，会返回此参数。
 
         :param reason: The reason of this ClusterStatus.
-        :type: str
+        :type reason: str
         """
         self._reason = reason
 
@@ -174,7 +199,7 @@ class ClusterStatus:
         集群变为当前状态的原因的详细信息，在集群在非“Available”状态下时，会返回此参数。
 
         :param message: The message of this ClusterStatus.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -185,7 +210,7 @@ class ClusterStatus:
         集群中 kube-apiserver 的访问地址。
 
         :return: The endpoints of this ClusterStatus.
-        :rtype: list[ClusterEndpoints]
+        :rtype: list[:class:`huaweicloudsdkcce.v3.ClusterEndpoints`]
         """
         return self._endpoints
 
@@ -196,7 +221,7 @@ class ClusterStatus:
         集群中 kube-apiserver 的访问地址。
 
         :param endpoints: The endpoints of this ClusterStatus.
-        :type: list[ClusterEndpoints]
+        :type endpoints: list[:class:`huaweicloudsdkcce.v3.ClusterEndpoints`]
         """
         self._endpoints = endpoints
 
@@ -218,7 +243,7 @@ class ClusterStatus:
         CBC资源锁定
 
         :param is_locked: The is_locked of this ClusterStatus.
-        :type: bool
+        :type is_locked: bool
         """
         self._is_locked = is_locked
 
@@ -240,7 +265,7 @@ class ClusterStatus:
         CBC资源锁定场景
 
         :param lock_scene: The lock_scene of this ClusterStatus.
-        :type: str
+        :type lock_scene: str
         """
         self._lock_scene = lock_scene
 
@@ -262,7 +287,7 @@ class ClusterStatus:
         锁定资源
 
         :param lock_source: The lock_source of this ClusterStatus.
-        :type: str
+        :type lock_source: str
         """
         self._lock_source = lock_source
 
@@ -284,7 +309,7 @@ class ClusterStatus:
         锁定的资源ID
 
         :param lock_source_id: The lock_source_id of this ClusterStatus.
-        :type: str
+        :type lock_source_id: str
         """
         self._lock_source_id = lock_source_id
 
@@ -306,7 +331,7 @@ class ClusterStatus:
         删除配置状态（仅删除请求响应包含）
 
         :param delete_option: The delete_option of this ClusterStatus.
-        :type: object
+        :type delete_option: object
         """
         self._delete_option = delete_option
 
@@ -328,7 +353,7 @@ class ClusterStatus:
         删除状态信息（仅删除请求响应包含）
 
         :param delete_status: The delete_status of this ClusterStatus.
-        :type: object
+        :type delete_status: object
         """
         self._delete_status = delete_status
 

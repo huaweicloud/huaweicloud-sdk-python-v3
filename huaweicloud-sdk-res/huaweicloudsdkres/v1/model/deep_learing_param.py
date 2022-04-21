@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeepLearingParam:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class DeepLearingParam:
     }
 
     def __init__(self, initial_parameters=None, optimize_parameters=None, regular_parameters=None, max_iterations=None, early_stop_iterations=None, batch_size=None, dataset_split_parts=None, restart_train=None):
-        """DeepLearingParam - a model defined in huaweicloud sdk"""
+        """DeepLearingParam
+
+        The model defined in huaweicloud sdk
+
+        :param initial_parameters: 
+        :type initial_parameters: :class:`huaweicloudsdkres.v1.Initial`
+        :param optimize_parameters: 
+        :type optimize_parameters: :class:`huaweicloudsdkres.v1.Optimizer`
+        :param regular_parameters: 
+        :type regular_parameters: :class:`huaweicloudsdkres.v1.Regular`
+        :param max_iterations: 最大迭代轮数。
+        :type max_iterations: int
+        :param early_stop_iterations: 提前终止训练轮数。
+        :type early_stop_iterations: int
+        :param batch_size: 批量大小。
+        :type batch_size: int
+        :param dataset_split_parts: 训练数据集切分数量。
+        :type dataset_split_parts: int
+        :param restart_train: 重新训练。
+        :type restart_train: bool
+        """
         
         
 
@@ -81,7 +100,7 @@ class DeepLearingParam:
 
 
         :return: The initial_parameters of this DeepLearingParam.
-        :rtype: Initial
+        :rtype: :class:`huaweicloudsdkres.v1.Initial`
         """
         return self._initial_parameters
 
@@ -91,7 +110,7 @@ class DeepLearingParam:
 
 
         :param initial_parameters: The initial_parameters of this DeepLearingParam.
-        :type: Initial
+        :type initial_parameters: :class:`huaweicloudsdkres.v1.Initial`
         """
         self._initial_parameters = initial_parameters
 
@@ -101,7 +120,7 @@ class DeepLearingParam:
 
 
         :return: The optimize_parameters of this DeepLearingParam.
-        :rtype: Optimizer
+        :rtype: :class:`huaweicloudsdkres.v1.Optimizer`
         """
         return self._optimize_parameters
 
@@ -111,7 +130,7 @@ class DeepLearingParam:
 
 
         :param optimize_parameters: The optimize_parameters of this DeepLearingParam.
-        :type: Optimizer
+        :type optimize_parameters: :class:`huaweicloudsdkres.v1.Optimizer`
         """
         self._optimize_parameters = optimize_parameters
 
@@ -121,7 +140,7 @@ class DeepLearingParam:
 
 
         :return: The regular_parameters of this DeepLearingParam.
-        :rtype: Regular
+        :rtype: :class:`huaweicloudsdkres.v1.Regular`
         """
         return self._regular_parameters
 
@@ -131,7 +150,7 @@ class DeepLearingParam:
 
 
         :param regular_parameters: The regular_parameters of this DeepLearingParam.
-        :type: Regular
+        :type regular_parameters: :class:`huaweicloudsdkres.v1.Regular`
         """
         self._regular_parameters = regular_parameters
 
@@ -153,7 +172,7 @@ class DeepLearingParam:
         最大迭代轮数。
 
         :param max_iterations: The max_iterations of this DeepLearingParam.
-        :type: int
+        :type max_iterations: int
         """
         self._max_iterations = max_iterations
 
@@ -175,7 +194,7 @@ class DeepLearingParam:
         提前终止训练轮数。
 
         :param early_stop_iterations: The early_stop_iterations of this DeepLearingParam.
-        :type: int
+        :type early_stop_iterations: int
         """
         self._early_stop_iterations = early_stop_iterations
 
@@ -197,7 +216,7 @@ class DeepLearingParam:
         批量大小。
 
         :param batch_size: The batch_size of this DeepLearingParam.
-        :type: int
+        :type batch_size: int
         """
         self._batch_size = batch_size
 
@@ -219,7 +238,7 @@ class DeepLearingParam:
         训练数据集切分数量。
 
         :param dataset_split_parts: The dataset_split_parts of this DeepLearingParam.
-        :type: int
+        :type dataset_split_parts: int
         """
         self._dataset_split_parts = dataset_split_parts
 
@@ -241,7 +260,7 @@ class DeepLearingParam:
         重新训练。
 
         :param restart_train: The restart_train of this DeepLearingParam.
-        :type: bool
+        :type restart_train: bool
         """
         self._restart_train = restart_train
 

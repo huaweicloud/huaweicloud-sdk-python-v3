@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPayPerUseCustomerResourcesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListPayPerUseCustomerResourcesResponse(SdkResponse):
     }
 
     def __init__(self, data=None, total_count=None):
-        """ListPayPerUseCustomerResourcesResponse - a model defined in huaweicloud sdk"""
+        """ListPayPerUseCustomerResourcesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param data: 资源列表。 具体请参见表2。
+        :type data: list[:class:`huaweicloudsdkbss.v2.OrderInstanceV2`]
+        :param total_count: 总记录数。
+        :type total_count: int
+        """
         
         super(ListPayPerUseCustomerResourcesResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListPayPerUseCustomerResourcesResponse(SdkResponse):
         资源列表。 具体请参见表2。
 
         :return: The data of this ListPayPerUseCustomerResourcesResponse.
-        :rtype: list[OrderInstanceV2]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.OrderInstanceV2`]
         """
         return self._data
 
@@ -63,7 +70,7 @@ class ListPayPerUseCustomerResourcesResponse(SdkResponse):
         资源列表。 具体请参见表2。
 
         :param data: The data of this ListPayPerUseCustomerResourcesResponse.
-        :type: list[OrderInstanceV2]
+        :type data: list[:class:`huaweicloudsdkbss.v2.OrderInstanceV2`]
         """
         self._data = data
 
@@ -85,7 +92,7 @@ class ListPayPerUseCustomerResourcesResponse(SdkResponse):
         总记录数。
 
         :param total_count: The total_count of this ListPayPerUseCustomerResourcesResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 

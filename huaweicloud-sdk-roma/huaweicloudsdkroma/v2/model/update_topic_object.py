@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateTopicObject:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class UpdateTopicObject:
     }
 
     def __init__(self, name=None, retention_time=None, sync_replication=None, sync_message_flush=None, description=None, sensitive_word=None):
-        """UpdateTopicObject - a model defined in huaweicloud sdk"""
+        """UpdateTopicObject
+
+        The model defined in huaweicloud sdk
+
+        :param name: topic名称。
+        :type name: str
+        :param retention_time: 消息老化时间。默认值为72。取值范围1~720，单位小时。
+        :type retention_time: int
+        :param sync_replication: 是否开启同步复制。
+        :type sync_replication: bool
+        :param sync_message_flush: 是否使用同步落盘。
+        :type sync_message_flush: bool
+        :param description: 描述。
+        :type description: str
+        :param sensitive_word: 敏感字段。
+        :type sensitive_word: str
+        """
         
         
 
@@ -82,7 +97,7 @@ class UpdateTopicObject:
         topic名称。
 
         :param name: The name of this UpdateTopicObject.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -104,7 +119,7 @@ class UpdateTopicObject:
         消息老化时间。默认值为72。取值范围1~720，单位小时。
 
         :param retention_time: The retention_time of this UpdateTopicObject.
-        :type: int
+        :type retention_time: int
         """
         self._retention_time = retention_time
 
@@ -126,7 +141,7 @@ class UpdateTopicObject:
         是否开启同步复制。
 
         :param sync_replication: The sync_replication of this UpdateTopicObject.
-        :type: bool
+        :type sync_replication: bool
         """
         self._sync_replication = sync_replication
 
@@ -148,7 +163,7 @@ class UpdateTopicObject:
         是否使用同步落盘。
 
         :param sync_message_flush: The sync_message_flush of this UpdateTopicObject.
-        :type: bool
+        :type sync_message_flush: bool
         """
         self._sync_message_flush = sync_message_flush
 
@@ -170,7 +185,7 @@ class UpdateTopicObject:
         描述。
 
         :param description: The description of this UpdateTopicObject.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -192,7 +207,7 @@ class UpdateTopicObject:
         敏感字段。
 
         :param sensitive_word: The sensitive_word of this UpdateTopicObject.
-        :type: str
+        :type sensitive_word: str
         """
         self._sensitive_word = sensitive_word
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteRepoMemberResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class DeleteRepoMemberResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """DeleteRepoMemberResponse - a model defined in huaweicloud sdk"""
+        """DeleteRepoMemberResponse
+
+        The model defined in huaweicloud sdk
+
+        :param error: 
+        :type error: :class:`huaweicloudsdkcodehub.v3.Error`
+        :param result: 
+        :type result: :class:`huaweicloudsdkcodehub.v3.Empty`
+        :param status: 响应状态
+        :type status: str
+        """
         
         super(DeleteRepoMemberResponse, self).__init__()
 
@@ -56,7 +65,7 @@ class DeleteRepoMemberResponse(SdkResponse):
 
 
         :return: The error of this DeleteRepoMemberResponse.
-        :rtype: Error
+        :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
         """
         return self._error
 
@@ -66,7 +75,7 @@ class DeleteRepoMemberResponse(SdkResponse):
 
 
         :param error: The error of this DeleteRepoMemberResponse.
-        :type: Error
+        :type error: :class:`huaweicloudsdkcodehub.v3.Error`
         """
         self._error = error
 
@@ -76,7 +85,7 @@ class DeleteRepoMemberResponse(SdkResponse):
 
 
         :return: The result of this DeleteRepoMemberResponse.
-        :rtype: Empty
+        :rtype: :class:`huaweicloudsdkcodehub.v3.Empty`
         """
         return self._result
 
@@ -86,7 +95,7 @@ class DeleteRepoMemberResponse(SdkResponse):
 
 
         :param result: The result of this DeleteRepoMemberResponse.
-        :type: Empty
+        :type result: :class:`huaweicloudsdkcodehub.v3.Empty`
         """
         self._result = result
 
@@ -108,7 +117,7 @@ class DeleteRepoMemberResponse(SdkResponse):
         响应状态
 
         :param status: The status of this DeleteRepoMemberResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 

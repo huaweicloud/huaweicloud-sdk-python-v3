@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KbqaAnswers:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class KbqaAnswers:
     }
 
     def __init__(self, answer=None, score=None):
-        """KbqaAnswers - a model defined in huaweicloud sdk"""
+        """KbqaAnswers
+
+        The model defined in huaweicloud sdk
+
+        :param answer: 答案。
+        :type answer: str
+        :param score: 答案评分。
+        :type score: float
+        """
         
         
 
@@ -61,7 +68,7 @@ class KbqaAnswers:
         答案。
 
         :param answer: The answer of this KbqaAnswers.
-        :type: str
+        :type answer: str
         """
         self._answer = answer
 
@@ -83,7 +90,7 @@ class KbqaAnswers:
         答案评分。
 
         :param score: The score of this KbqaAnswers.
-        :type: float
+        :type score: float
         """
         self._score = score
 

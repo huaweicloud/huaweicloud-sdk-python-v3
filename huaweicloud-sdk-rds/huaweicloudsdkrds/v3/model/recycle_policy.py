@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RecyclePolicy:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RecyclePolicy:
     }
 
     def __init__(self, retention_period_in_days=None):
-        """RecyclePolicy - a model defined in huaweicloud sdk"""
+        """RecyclePolicy
+
+        The model defined in huaweicloud sdk
+
+        :param retention_period_in_days: 保留时间，设置已删除实例保留天数，支持整数，可设置范围为1~7天。  当“retention_period_in_days”为空，保留时间默认是7天。
+        :type retention_period_in_days: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class RecyclePolicy:
         保留时间，设置已删除实例保留天数，支持整数，可设置范围为1~7天。  当“retention_period_in_days”为空，保留时间默认是7天。
 
         :param retention_period_in_days: The retention_period_in_days of this RecyclePolicy.
-        :type: str
+        :type retention_period_in_days: str
         """
         self._retention_period_in_days = retention_period_in_days
 

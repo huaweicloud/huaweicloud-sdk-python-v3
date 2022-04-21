@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRunsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListRunsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, runs=None):
-        """ListRunsResponse - a model defined in huaweicloud sdk"""
+        """ListRunsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 作业总个数。
+        :type count: int
+        :param runs: 作业运行列表。
+        :type runs: list[:class:`huaweicloudsdkiotanalytics.v1.Run`]
+        """
         
         super(ListRunsResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListRunsResponse(SdkResponse):
         作业总个数。
 
         :param count: The count of this ListRunsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -74,7 +81,7 @@ class ListRunsResponse(SdkResponse):
         作业运行列表。
 
         :return: The runs of this ListRunsResponse.
-        :rtype: list[Run]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.Run`]
         """
         return self._runs
 
@@ -85,7 +92,7 @@ class ListRunsResponse(SdkResponse):
         作业运行列表。
 
         :param runs: The runs of this ListRunsResponse.
-        :type: list[Run]
+        :type runs: list[:class:`huaweicloudsdkiotanalytics.v1.Run`]
         """
         self._runs = runs
 

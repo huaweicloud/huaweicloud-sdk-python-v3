@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateMergeChannelsReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateMergeChannelsReq:
     }
 
     def __init__(self, multi_audio=None):
-        """CreateMergeChannelsReq - a model defined in huaweicloud sdk"""
+        """CreateMergeChannelsReq
+
+        The model defined in huaweicloud sdk
+
+        :param multi_audio: 
+        :type multi_audio: :class:`huaweicloudsdkmpc.v1.MpcMultiAudio`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateMergeChannelsReq:
 
 
         :return: The multi_audio of this CreateMergeChannelsReq.
-        :rtype: MpcMultiAudio
+        :rtype: :class:`huaweicloudsdkmpc.v1.MpcMultiAudio`
         """
         return self._multi_audio
 
@@ -56,7 +61,7 @@ class CreateMergeChannelsReq:
 
 
         :param multi_audio: The multi_audio of this CreateMergeChannelsReq.
-        :type: MpcMultiAudio
+        :type multi_audio: :class:`huaweicloudsdkmpc.v1.MpcMultiAudio`
         """
         self._multi_audio = multi_audio
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListNasRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListNasRequest:
     }
 
     def __init__(self, name=None, offset=None, limit=None):
-        """ListNasRequest - a model defined in huaweicloud sdk"""
+        """ListNasRequest
+
+        The model defined in huaweicloud sdk
+
+        :param name: NA名称搜索关键字
+        :type name: str
+        :param offset: 查询的起始位置，取值范围为非负整数，默认为0
+        :type offset: int
+        :param limit: 每页记录数，取值范围为非负整数，默认值为10
+        :type limit: int
+        """
         
         
 
@@ -68,7 +77,7 @@ class ListNasRequest:
         NA名称搜索关键字
 
         :param name: The name of this ListNasRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -90,7 +99,7 @@ class ListNasRequest:
         查询的起始位置，取值范围为非负整数，默认为0
 
         :param offset: The offset of this ListNasRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -112,7 +121,7 @@ class ListNasRequest:
         每页记录数，取值范围为非负整数，默认值为10
 
         :param limit: The limit of this ListNasRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

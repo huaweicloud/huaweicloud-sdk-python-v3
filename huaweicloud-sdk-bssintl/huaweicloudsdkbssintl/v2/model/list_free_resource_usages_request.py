@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListFreeResourceUsagesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListFreeResourceUsagesRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """ListFreeResourceUsagesRequest - a model defined in huaweicloud sdk"""
+        """ListFreeResourceUsagesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言。中文：zh_CN英文：en_US缺省为zh_CN。
+        :type x_language: str
+        :param body: Body of the ListFreeResourceUsagesRequest
+        :type body: :class:`huaweicloudsdkbssintl.v2.ListFreeResourceUsagesReq`
+        """
         
         
 
@@ -63,7 +70,7 @@ class ListFreeResourceUsagesRequest:
         语言。中文：zh_CN英文：en_US缺省为zh_CN。
 
         :param x_language: The x_language of this ListFreeResourceUsagesRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -73,7 +80,7 @@ class ListFreeResourceUsagesRequest:
 
 
         :return: The body of this ListFreeResourceUsagesRequest.
-        :rtype: ListFreeResourceUsagesReq
+        :rtype: :class:`huaweicloudsdkbssintl.v2.ListFreeResourceUsagesReq`
         """
         return self._body
 
@@ -83,7 +90,7 @@ class ListFreeResourceUsagesRequest:
 
 
         :param body: The body of this ListFreeResourceUsagesRequest.
-        :type: ListFreeResourceUsagesReq
+        :type body: :class:`huaweicloudsdkbssintl.v2.ListFreeResourceUsagesReq`
         """
         self._body = body
 

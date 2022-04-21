@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowTenantMetricResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowTenantMetricResponse(SdkResponse):
     }
 
     def __init__(self, count=None, duration=None, fail_count=None, running_count=None):
-        """ShowTenantMetricResponse - a model defined in huaweicloud sdk"""
+        """ShowTenantMetricResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 执行次数
+        :type count: list[:class:`huaweicloudsdkfunctiongraph.v2.SlaReportsValue`]
+        :param duration: 平均时延，单位毫秒
+        :type duration: list[:class:`huaweicloudsdkfunctiongraph.v2.SlaReportsValue`]
+        :param fail_count: 错误次数
+        :type fail_count: list[:class:`huaweicloudsdkfunctiongraph.v2.SlaReportsValue`]
+        :param running_count: 运行中数量
+        :type running_count: list[:class:`huaweicloudsdkfunctiongraph.v2.SlaReportsValue`]
+        """
         
         super(ShowTenantMetricResponse, self).__init__()
 
@@ -62,7 +73,7 @@ class ShowTenantMetricResponse(SdkResponse):
         执行次数
 
         :return: The count of this ShowTenantMetricResponse.
-        :rtype: list[SlaReportsValue]
+        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.SlaReportsValue`]
         """
         return self._count
 
@@ -73,7 +84,7 @@ class ShowTenantMetricResponse(SdkResponse):
         执行次数
 
         :param count: The count of this ShowTenantMetricResponse.
-        :type: list[SlaReportsValue]
+        :type count: list[:class:`huaweicloudsdkfunctiongraph.v2.SlaReportsValue`]
         """
         self._count = count
 
@@ -84,7 +95,7 @@ class ShowTenantMetricResponse(SdkResponse):
         平均时延，单位毫秒
 
         :return: The duration of this ShowTenantMetricResponse.
-        :rtype: list[SlaReportsValue]
+        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.SlaReportsValue`]
         """
         return self._duration
 
@@ -95,7 +106,7 @@ class ShowTenantMetricResponse(SdkResponse):
         平均时延，单位毫秒
 
         :param duration: The duration of this ShowTenantMetricResponse.
-        :type: list[SlaReportsValue]
+        :type duration: list[:class:`huaweicloudsdkfunctiongraph.v2.SlaReportsValue`]
         """
         self._duration = duration
 
@@ -106,7 +117,7 @@ class ShowTenantMetricResponse(SdkResponse):
         错误次数
 
         :return: The fail_count of this ShowTenantMetricResponse.
-        :rtype: list[SlaReportsValue]
+        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.SlaReportsValue`]
         """
         return self._fail_count
 
@@ -117,7 +128,7 @@ class ShowTenantMetricResponse(SdkResponse):
         错误次数
 
         :param fail_count: The fail_count of this ShowTenantMetricResponse.
-        :type: list[SlaReportsValue]
+        :type fail_count: list[:class:`huaweicloudsdkfunctiongraph.v2.SlaReportsValue`]
         """
         self._fail_count = fail_count
 
@@ -128,7 +139,7 @@ class ShowTenantMetricResponse(SdkResponse):
         运行中数量
 
         :return: The running_count of this ShowTenantMetricResponse.
-        :rtype: list[SlaReportsValue]
+        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.SlaReportsValue`]
         """
         return self._running_count
 
@@ -139,7 +150,7 @@ class ShowTenantMetricResponse(SdkResponse):
         运行中数量
 
         :param running_count: The running_count of this ShowTenantMetricResponse.
-        :type: list[SlaReportsValue]
+        :type running_count: list[:class:`huaweicloudsdkfunctiongraph.v2.SlaReportsValue`]
         """
         self._running_count = running_count
 

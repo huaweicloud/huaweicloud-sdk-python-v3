@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListMemberGroupsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListMemberGroupsResponse(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, member_groups=None):
-        """ListMemberGroupsResponse - a model defined in huaweicloud sdk"""
+        """ListMemberGroupsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param size: 本次返回的列表长度
+        :type size: int
+        :param total: 满足条件的记录数
+        :type total: int
+        :param member_groups: VPC通道后端服务器组列表
+        :type member_groups: list[:class:`huaweicloudsdkroma.v2.MemberGroupInfo`]
+        """
         
         super(ListMemberGroupsResponse, self).__init__()
 
@@ -66,7 +75,7 @@ class ListMemberGroupsResponse(SdkResponse):
         本次返回的列表长度
 
         :param size: The size of this ListMemberGroupsResponse.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -88,7 +97,7 @@ class ListMemberGroupsResponse(SdkResponse):
         满足条件的记录数
 
         :param total: The total of this ListMemberGroupsResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -99,7 +108,7 @@ class ListMemberGroupsResponse(SdkResponse):
         VPC通道后端服务器组列表
 
         :return: The member_groups of this ListMemberGroupsResponse.
-        :rtype: list[MemberGroupInfo]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.MemberGroupInfo`]
         """
         return self._member_groups
 
@@ -110,7 +119,7 @@ class ListMemberGroupsResponse(SdkResponse):
         VPC通道后端服务器组列表
 
         :param member_groups: The member_groups of this ListMemberGroupsResponse.
-        :type: list[MemberGroupInfo]
+        :type member_groups: list[:class:`huaweicloudsdkroma.v2.MemberGroupInfo`]
         """
         self._member_groups = member_groups
 

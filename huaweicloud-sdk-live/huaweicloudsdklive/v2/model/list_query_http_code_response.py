@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListQueryHttpCodeResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListQueryHttpCodeResponse(SdkResponse):
     }
 
     def __init__(self, data_series=None, x_request_id=None):
-        """ListQueryHttpCodeResponse - a model defined in huaweicloud sdk"""
+        """ListQueryHttpCodeResponse
+
+        The model defined in huaweicloud sdk
+
+        :param data_series: 基于时间轴的状态码
+        :type data_series: list[:class:`huaweicloudsdklive.v2.HttpCodeSummary`]
+        :param x_request_id: 
+        :type x_request_id: str
+        """
         
         super(ListQueryHttpCodeResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListQueryHttpCodeResponse(SdkResponse):
         基于时间轴的状态码
 
         :return: The data_series of this ListQueryHttpCodeResponse.
-        :rtype: list[HttpCodeSummary]
+        :rtype: list[:class:`huaweicloudsdklive.v2.HttpCodeSummary`]
         """
         return self._data_series
 
@@ -63,7 +70,7 @@ class ListQueryHttpCodeResponse(SdkResponse):
         基于时间轴的状态码
 
         :param data_series: The data_series of this ListQueryHttpCodeResponse.
-        :type: list[HttpCodeSummary]
+        :type data_series: list[:class:`huaweicloudsdklive.v2.HttpCodeSummary`]
         """
         self._data_series = data_series
 
@@ -83,7 +90,7 @@ class ListQueryHttpCodeResponse(SdkResponse):
 
 
         :param x_request_id: The x_request_id of this ListQueryHttpCodeResponse.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 

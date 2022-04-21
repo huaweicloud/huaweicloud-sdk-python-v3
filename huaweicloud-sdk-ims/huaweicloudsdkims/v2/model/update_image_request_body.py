@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateImageRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateImageRequestBody:
     }
 
     def __init__(self, op=None, path=None, value=None):
-        """UpdateImageRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateImageRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param op: 操作类型，目前取值为add，replace和remove。
+        :type op: str
+        :param path: 需要更新的属性名称，需要在属性名称前加“/”。
+        :type path: str
+        :param value: 需要更新属性的值。
+        :type value: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class UpdateImageRequestBody:
         操作类型，目前取值为add，replace和remove。
 
         :param op: The op of this UpdateImageRequestBody.
-        :type: str
+        :type op: str
         """
         self._op = op
 
@@ -87,7 +96,7 @@ class UpdateImageRequestBody:
         需要更新的属性名称，需要在属性名称前加“/”。
 
         :param path: The path of this UpdateImageRequestBody.
-        :type: str
+        :type path: str
         """
         self._path = path
 
@@ -109,7 +118,7 @@ class UpdateImageRequestBody:
         需要更新属性的值。
 
         :param value: The value of this UpdateImageRequestBody.
-        :type: str
+        :type value: str
         """
         self._value = value
 

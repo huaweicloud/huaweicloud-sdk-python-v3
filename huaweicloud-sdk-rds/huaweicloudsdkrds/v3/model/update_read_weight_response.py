@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateReadWeightResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateReadWeightResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """UpdateReadWeightResponse - a model defined in huaweicloud sdk"""
+        """UpdateReadWeightResponse
+
+        The model defined in huaweicloud sdk
+
+        :param result: 修改读写分离权重或延时阈值的结果。
+        :type result: str
+        """
         
         super(UpdateReadWeightResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class UpdateReadWeightResponse(SdkResponse):
         修改读写分离权重或延时阈值的结果。
 
         :param result: The result of this UpdateReadWeightResponse.
-        :type: str
+        :type result: str
         """
         self._result = result
 

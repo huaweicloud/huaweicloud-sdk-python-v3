@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchCreateMembersResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchCreateMembersResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, members=None):
-        """BatchCreateMembersResponse - a model defined in huaweicloud sdk"""
+        """BatchCreateMembersResponse
+
+        The model defined in huaweicloud sdk
+
+        :param request_id: 请求ID。  注：自动生成 。
+        :type request_id: str
+        :param members: 后端服务器对象列表。
+        :type members: list[:class:`huaweicloudsdkelb.v3.BatchMember`]
+        """
         
         super(BatchCreateMembersResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class BatchCreateMembersResponse(SdkResponse):
         请求ID。  注：自动生成 。
 
         :param request_id: The request_id of this BatchCreateMembersResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 
@@ -74,7 +81,7 @@ class BatchCreateMembersResponse(SdkResponse):
         后端服务器对象列表。
 
         :return: The members of this BatchCreateMembersResponse.
-        :rtype: list[BatchMember]
+        :rtype: list[:class:`huaweicloudsdkelb.v3.BatchMember`]
         """
         return self._members
 
@@ -85,7 +92,7 @@ class BatchCreateMembersResponse(SdkResponse):
         后端服务器对象列表。
 
         :param members: The members of this BatchCreateMembersResponse.
-        :type: list[BatchMember]
+        :type members: list[:class:`huaweicloudsdkelb.v3.BatchMember`]
         """
         self._members = members
 

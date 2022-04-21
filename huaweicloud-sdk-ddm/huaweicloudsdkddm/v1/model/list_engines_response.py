@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListEnginesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListEnginesResponse(SdkResponse):
     }
 
     def __init__(self, engine_groups=None, offset=None, limit=None, total=None):
-        """ListEnginesResponse - a model defined in huaweicloud sdk"""
+        """ListEnginesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param engine_groups: 引擎信息列表。
+        :type engine_groups: list[:class:`huaweicloudsdkddm.v1.EngineGroupsInfo`]
+        :param offset: 分页参数: 起始值。
+        :type offset: int
+        :param limit: 分页参数：每页多少条。
+        :type limit: int
+        :param total: 引擎信息总数。
+        :type total: int
+        """
         
         super(ListEnginesResponse, self).__init__()
 
@@ -62,7 +73,7 @@ class ListEnginesResponse(SdkResponse):
         引擎信息列表。
 
         :return: The engine_groups of this ListEnginesResponse.
-        :rtype: list[EngineGroupsInfo]
+        :rtype: list[:class:`huaweicloudsdkddm.v1.EngineGroupsInfo`]
         """
         return self._engine_groups
 
@@ -73,7 +84,7 @@ class ListEnginesResponse(SdkResponse):
         引擎信息列表。
 
         :param engine_groups: The engine_groups of this ListEnginesResponse.
-        :type: list[EngineGroupsInfo]
+        :type engine_groups: list[:class:`huaweicloudsdkddm.v1.EngineGroupsInfo`]
         """
         self._engine_groups = engine_groups
 
@@ -95,7 +106,7 @@ class ListEnginesResponse(SdkResponse):
         分页参数: 起始值。
 
         :param offset: The offset of this ListEnginesResponse.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -117,7 +128,7 @@ class ListEnginesResponse(SdkResponse):
         分页参数：每页多少条。
 
         :param limit: The limit of this ListEnginesResponse.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -139,7 +150,7 @@ class ListEnginesResponse(SdkResponse):
         引擎信息总数。
 
         :param total: The total of this ListEnginesResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 

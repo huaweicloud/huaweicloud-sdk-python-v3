@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LoadbalancerInStatusResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class LoadbalancerInStatusResp:
     }
 
     def __init__(self, name=None, id=None, listeners=None, pools=None, operating_status=None, provisioning_status=None):
-        """LoadbalancerInStatusResp - a model defined in huaweicloud sdk"""
+        """LoadbalancerInStatusResp
+
+        The model defined in huaweicloud sdk
+
+        :param name: 负载均衡器名称
+        :type name: str
+        :param id: 负载均衡器ID
+        :type id: str
+        :param listeners: 负载均衡器关联的监听器列表
+        :type listeners: list[:class:`huaweicloudsdkelb.v2.ListenersInStatusResp`]
+        :param pools: 负载均衡器关联的后端云服务器组列表
+        :type pools: list[:class:`huaweicloudsdkelb.v2.PoolsInStatusResp`]
+        :param operating_status: 负载均衡器的操作状态；该字段为预留字段，暂未启用。默认为ONLINE。
+        :type operating_status: str
+        :param provisioning_status: 负载均衡器的配置状态；该字段为预留字段，暂未启用。默认为ACTIVE。
+        :type provisioning_status: str
+        """
         
         
 
@@ -77,7 +92,7 @@ class LoadbalancerInStatusResp:
         负载均衡器名称
 
         :param name: The name of this LoadbalancerInStatusResp.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -99,7 +114,7 @@ class LoadbalancerInStatusResp:
         负载均衡器ID
 
         :param id: The id of this LoadbalancerInStatusResp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -110,7 +125,7 @@ class LoadbalancerInStatusResp:
         负载均衡器关联的监听器列表
 
         :return: The listeners of this LoadbalancerInStatusResp.
-        :rtype: list[ListenersInStatusResp]
+        :rtype: list[:class:`huaweicloudsdkelb.v2.ListenersInStatusResp`]
         """
         return self._listeners
 
@@ -121,7 +136,7 @@ class LoadbalancerInStatusResp:
         负载均衡器关联的监听器列表
 
         :param listeners: The listeners of this LoadbalancerInStatusResp.
-        :type: list[ListenersInStatusResp]
+        :type listeners: list[:class:`huaweicloudsdkelb.v2.ListenersInStatusResp`]
         """
         self._listeners = listeners
 
@@ -132,7 +147,7 @@ class LoadbalancerInStatusResp:
         负载均衡器关联的后端云服务器组列表
 
         :return: The pools of this LoadbalancerInStatusResp.
-        :rtype: list[PoolsInStatusResp]
+        :rtype: list[:class:`huaweicloudsdkelb.v2.PoolsInStatusResp`]
         """
         return self._pools
 
@@ -143,7 +158,7 @@ class LoadbalancerInStatusResp:
         负载均衡器关联的后端云服务器组列表
 
         :param pools: The pools of this LoadbalancerInStatusResp.
-        :type: list[PoolsInStatusResp]
+        :type pools: list[:class:`huaweicloudsdkelb.v2.PoolsInStatusResp`]
         """
         self._pools = pools
 
@@ -165,7 +180,7 @@ class LoadbalancerInStatusResp:
         负载均衡器的操作状态；该字段为预留字段，暂未启用。默认为ONLINE。
 
         :param operating_status: The operating_status of this LoadbalancerInStatusResp.
-        :type: str
+        :type operating_status: str
         """
         self._operating_status = operating_status
 
@@ -187,7 +202,7 @@ class LoadbalancerInStatusResp:
         负载均衡器的配置状态；该字段为预留字段，暂未启用。默认为ACTIVE。
 
         :param provisioning_status: The provisioning_status of this LoadbalancerInStatusResp.
-        :type: str
+        :type provisioning_status: str
         """
         self._provisioning_status = provisioning_status
 

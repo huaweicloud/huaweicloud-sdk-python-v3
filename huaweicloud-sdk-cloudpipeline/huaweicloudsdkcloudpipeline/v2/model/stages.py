@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Stages:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class Stages:
     }
 
     def __init__(self, result=None, status=None, name=None, parameters=None, order=None, dsl_method=None, display_name=None):
-        """Stages - a model defined in huaweicloud sdk"""
+        """Stages
+
+        The model defined in huaweicloud sdk
+
+        :param result: 阶段执行结果
+        :type result: str
+        :param status: 阶段执行状态
+        :type status: str
+        :param name: 阶段名字
+        :type name: str
+        :param parameters: 任务参数
+        :type parameters: object
+        :param order: 阶段顺序
+        :type order: int
+        :param dsl_method: 阶段类型
+        :type dsl_method: str
+        :param display_name: 阶段显示名称
+        :type display_name: str
+        """
         
         
 
@@ -81,7 +98,7 @@ class Stages:
         阶段执行结果
 
         :param result: The result of this Stages.
-        :type: str
+        :type result: str
         """
         self._result = result
 
@@ -103,7 +120,7 @@ class Stages:
         阶段执行状态
 
         :param status: The status of this Stages.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -125,7 +142,7 @@ class Stages:
         阶段名字
 
         :param name: The name of this Stages.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -147,7 +164,7 @@ class Stages:
         任务参数
 
         :param parameters: The parameters of this Stages.
-        :type: object
+        :type parameters: object
         """
         self._parameters = parameters
 
@@ -169,7 +186,7 @@ class Stages:
         阶段顺序
 
         :param order: The order of this Stages.
-        :type: int
+        :type order: int
         """
         self._order = order
 
@@ -191,7 +208,7 @@ class Stages:
         阶段类型
 
         :param dsl_method: The dsl_method of this Stages.
-        :type: str
+        :type dsl_method: str
         """
         self._dsl_method = dsl_method
 
@@ -213,7 +230,7 @@ class Stages:
         阶段显示名称
 
         :param display_name: The display_name of this Stages.
-        :type: str
+        :type display_name: str
         """
         self._display_name = display_name
 

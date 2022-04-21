@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VolumeAttachments:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class VolumeAttachments:
     }
 
     def __init__(self, id=None, server_id=None, volume_id=None, device=None):
-        """VolumeAttachments - a model defined in huaweicloud sdk"""
+        """VolumeAttachments
+
+        The model defined in huaweicloud sdk
+
+        :param id: 挂载资源ID
+        :type id: str
+        :param server_id: 所属裸金属服务器ID
+        :type server_id: str
+        :param volume_id: 挂载云磁盘ID
+        :type volume_id: str
+        :param device: 挂载目录，例如“/dev/sdd”。
+        :type device: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class VolumeAttachments:
         挂载资源ID
 
         :param id: The id of this VolumeAttachments.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -95,7 +106,7 @@ class VolumeAttachments:
         所属裸金属服务器ID
 
         :param server_id: The server_id of this VolumeAttachments.
-        :type: str
+        :type server_id: str
         """
         self._server_id = server_id
 
@@ -117,7 +128,7 @@ class VolumeAttachments:
         挂载云磁盘ID
 
         :param volume_id: The volume_id of this VolumeAttachments.
-        :type: str
+        :type volume_id: str
         """
         self._volume_id = volume_id
 
@@ -139,7 +150,7 @@ class VolumeAttachments:
         挂载目录，例如“/dev/sdd”。
 
         :param device: The device of this VolumeAttachments.
-        :type: str
+        :type device: str
         """
         self._device = device
 

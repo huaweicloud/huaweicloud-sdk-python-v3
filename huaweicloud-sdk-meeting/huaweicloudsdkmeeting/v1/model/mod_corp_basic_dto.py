@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ModCorpBasicDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ModCorpBasicDTO:
     }
 
     def __init__(self, name=None, phone=None, country=None, fax=None, email=None, address=None, description=None):
-        """ModCorpBasicDTO - a model defined in huaweicloud sdk"""
+        """ModCorpBasicDTO
+
+        The model defined in huaweicloud sdk
+
+        :param name: 企业名称，格式必须满足^[^#%&amp;&#39;+;&lt;&gt;&#x3D;\&quot;&#39;？?\\\\……/]*$
+        :type name: str
+        :param phone: 手机号，必须加上国家码，例如中国大陆手机+86xxxxxxx，当填写手机号时 “country”参数必填,手机格式必须满足(^$|^[+]?[0-9]+$)
+        :type phone: str
+        :param country: 若smsNumber为手机号,则需带上手机号所属的国家。 例如国家为中国大陆则country参数取值为chinaPR 国家和国家码的对应关系请参考：https://support.huaweicloud.com/api-meeting/meeting_21_0109.html 
+        :type country: str
+        :param fax: 传真号码,格式必须满足(^$|^[+]?[0-9]+$)
+        :type fax: str
+        :param email: 邮箱地址,格式必须满足(^$|^[\\w-+]+(\\.[\\w-+]+)*@[\\w-]+(\\.[\\w-]+)*(\\.[\\w-]{1,})$)
+        :type email: str
+        :param address: 地址
+        :type address: str
+        :param description: 备注
+        :type description: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class ModCorpBasicDTO:
         企业名称，格式必须满足^[^#%&'+;<>=\"'？?\\\\……/]*$
 
         :param name: The name of this ModCorpBasicDTO.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -110,7 +127,7 @@ class ModCorpBasicDTO:
         手机号，必须加上国家码，例如中国大陆手机+86xxxxxxx，当填写手机号时 “country”参数必填,手机格式必须满足(^$|^[+]?[0-9]+$)
 
         :param phone: The phone of this ModCorpBasicDTO.
-        :type: str
+        :type phone: str
         """
         self._phone = phone
 
@@ -132,7 +149,7 @@ class ModCorpBasicDTO:
         若smsNumber为手机号,则需带上手机号所属的国家。 例如国家为中国大陆则country参数取值为chinaPR 国家和国家码的对应关系请参考：https://support.huaweicloud.com/api-meeting/meeting_21_0109.html 
 
         :param country: The country of this ModCorpBasicDTO.
-        :type: str
+        :type country: str
         """
         self._country = country
 
@@ -154,7 +171,7 @@ class ModCorpBasicDTO:
         传真号码,格式必须满足(^$|^[+]?[0-9]+$)
 
         :param fax: The fax of this ModCorpBasicDTO.
-        :type: str
+        :type fax: str
         """
         self._fax = fax
 
@@ -176,7 +193,7 @@ class ModCorpBasicDTO:
         邮箱地址,格式必须满足(^$|^[\\w-+]+(\\.[\\w-+]+)*@[\\w-]+(\\.[\\w-]+)*(\\.[\\w-]{1,})$)
 
         :param email: The email of this ModCorpBasicDTO.
-        :type: str
+        :type email: str
         """
         self._email = email
 
@@ -198,7 +215,7 @@ class ModCorpBasicDTO:
         地址
 
         :param address: The address of this ModCorpBasicDTO.
-        :type: str
+        :type address: str
         """
         self._address = address
 
@@ -220,7 +237,7 @@ class ModCorpBasicDTO:
         备注
 
         :param description: The description of this ModCorpBasicDTO.
-        :type: str
+        :type description: str
         """
         self._description = description
 

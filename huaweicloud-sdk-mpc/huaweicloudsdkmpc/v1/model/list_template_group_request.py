@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTemplateGroupRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListTemplateGroupRequest:
     }
 
     def __init__(self, group_id=None, group_name=None, page=None, size=None):
-        """ListTemplateGroupRequest - a model defined in huaweicloud sdk"""
+        """ListTemplateGroupRequest
+
+        The model defined in huaweicloud sdk
+
+        :param group_id: 转码模板组ID，最多10个 
+        :type group_id: list[str]
+        :param group_name: 转码模板组名，最多10个 
+        :type group_name: list[str]
+        :param page: 分页编号。查询指定“group_id”时，该参数无效。  默认值：0。 
+        :type page: int
+        :param size: 每页记录数。取值范围：[1,100]，指定group_id时该参数无效。 
+        :type size: int
+        """
         
         
 
@@ -73,7 +84,7 @@ class ListTemplateGroupRequest:
         转码模板组ID，最多10个 
 
         :param group_id: The group_id of this ListTemplateGroupRequest.
-        :type: list[str]
+        :type group_id: list[str]
         """
         self._group_id = group_id
 
@@ -95,7 +106,7 @@ class ListTemplateGroupRequest:
         转码模板组名，最多10个 
 
         :param group_name: The group_name of this ListTemplateGroupRequest.
-        :type: list[str]
+        :type group_name: list[str]
         """
         self._group_name = group_name
 
@@ -117,7 +128,7 @@ class ListTemplateGroupRequest:
         分页编号。查询指定“group_id”时，该参数无效。  默认值：0。 
 
         :param page: The page of this ListTemplateGroupRequest.
-        :type: int
+        :type page: int
         """
         self._page = page
 
@@ -139,7 +150,7 @@ class ListTemplateGroupRequest:
         每页记录数。取值范围：[1,100]，指定group_id时该参数无效。 
 
         :param size: The size of this ListTemplateGroupRequest.
-        :type: int
+        :type size: int
         """
         self._size = size
 

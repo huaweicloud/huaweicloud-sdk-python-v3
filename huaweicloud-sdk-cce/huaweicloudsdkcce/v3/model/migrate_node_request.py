@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MigrateNodeRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class MigrateNodeRequest:
     }
 
     def __init__(self, cluster_id=None, target_cluster_id=None, body=None):
-        """MigrateNodeRequest - a model defined in huaweicloud sdk"""
+        """MigrateNodeRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 集群 ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
+        :type cluster_id: str
+        :param target_cluster_id: 集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
+        :type target_cluster_id: str
+        :param body: Body of the MigrateNodeRequest
+        :type body: :class:`huaweicloudsdkcce.v3.MigrateNodesTask`
+        """
         
         
 
@@ -66,7 +75,7 @@ class MigrateNodeRequest:
         集群 ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
         :param cluster_id: The cluster_id of this MigrateNodeRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -88,7 +97,7 @@ class MigrateNodeRequest:
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
         :param target_cluster_id: The target_cluster_id of this MigrateNodeRequest.
-        :type: str
+        :type target_cluster_id: str
         """
         self._target_cluster_id = target_cluster_id
 
@@ -98,7 +107,7 @@ class MigrateNodeRequest:
 
 
         :return: The body of this MigrateNodeRequest.
-        :rtype: MigrateNodesTask
+        :rtype: :class:`huaweicloudsdkcce.v3.MigrateNodesTask`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class MigrateNodeRequest:
 
 
         :param body: The body of this MigrateNodeRequest.
-        :type: MigrateNodesTask
+        :type body: :class:`huaweicloudsdkcce.v3.MigrateNodesTask`
         """
         self._body = body
 

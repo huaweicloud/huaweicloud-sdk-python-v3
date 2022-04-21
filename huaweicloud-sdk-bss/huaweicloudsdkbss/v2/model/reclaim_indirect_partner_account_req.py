@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ReclaimIndirectPartnerAccountReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ReclaimIndirectPartnerAccountReq:
     }
 
     def __init__(self, indirect_partner_id=None, amount=None):
-        """ReclaimIndirectPartnerAccountReq - a model defined in huaweicloud sdk"""
+        """ReclaimIndirectPartnerAccountReq
+
+        The model defined in huaweicloud sdk
+
+        :param indirect_partner_id: 精英服务商ID。获取方法请参见查询精英服务商列表。
+        :type indirect_partner_id: str
+        :param amount: 回收金额。 华为云伙伴能力中心回收的精英服务商的账户金额。  说明： 回收金额不能大于精英服务商的账户余额。 单位：元。取值大于0且精确到小数点后2位。
+        :type amount: float
+        """
         
         
 
@@ -61,7 +68,7 @@ class ReclaimIndirectPartnerAccountReq:
         精英服务商ID。获取方法请参见查询精英服务商列表。
 
         :param indirect_partner_id: The indirect_partner_id of this ReclaimIndirectPartnerAccountReq.
-        :type: str
+        :type indirect_partner_id: str
         """
         self._indirect_partner_id = indirect_partner_id
 
@@ -83,7 +90,7 @@ class ReclaimIndirectPartnerAccountReq:
         回收金额。 华为云伙伴能力中心回收的精英服务商的账户金额。  说明： 回收金额不能大于精英服务商的账户余额。 单位：元。取值大于0且精确到小数点后2位。
 
         :param amount: The amount of this ReclaimIndirectPartnerAccountReq.
-        :type: float
+        :type amount: float
         """
         self._amount = amount
 

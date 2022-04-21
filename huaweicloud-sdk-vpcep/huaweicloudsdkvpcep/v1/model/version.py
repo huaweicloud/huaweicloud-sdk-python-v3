@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Version:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class Version:
     }
 
     def __init__(self, status=None, id=None, updated=None, version=None, min_version=None, links=None):
-        """Version - a model defined in huaweicloud sdk"""
+        """Version
+
+        The model defined in huaweicloud sdk
+
+        :param status: 版本状态。● CURRENT：表示该版本为主推版本。● SUPPORT：表示为老版本，但是现在还在继续支持。● DEPRECATED：表示为废弃版本，存在后续删除的可能。
+        :type status: str
+        :param id: 版本ID。
+        :type id: str
+        :param updated: 版本发布时间。采用UTC时间格式，格式为：YYYY-MMDDTHH:MM:SSZ
+        :type updated: str
+        :param version: 支持的版本号。
+        :type version: str
+        :param min_version: 支持的微版本号。若该版本API不支持微版本，则为空。
+        :type min_version: str
+        :param links: API的URL地址
+        :type links: list[:class:`huaweicloudsdkvpcep.v1.Link`]
+        """
         
         
 
@@ -83,7 +98,7 @@ class Version:
         版本状态。● CURRENT：表示该版本为主推版本。● SUPPORT：表示为老版本，但是现在还在继续支持。● DEPRECATED：表示为废弃版本，存在后续删除的可能。
 
         :param status: The status of this Version.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -105,7 +120,7 @@ class Version:
         版本ID。
 
         :param id: The id of this Version.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -127,7 +142,7 @@ class Version:
         版本发布时间。采用UTC时间格式，格式为：YYYY-MMDDTHH:MM:SSZ
 
         :param updated: The updated of this Version.
-        :type: str
+        :type updated: str
         """
         self._updated = updated
 
@@ -149,7 +164,7 @@ class Version:
         支持的版本号。
 
         :param version: The version of this Version.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -171,7 +186,7 @@ class Version:
         支持的微版本号。若该版本API不支持微版本，则为空。
 
         :param min_version: The min_version of this Version.
-        :type: str
+        :type min_version: str
         """
         self._min_version = min_version
 
@@ -182,7 +197,7 @@ class Version:
         API的URL地址
 
         :return: The links of this Version.
-        :rtype: list[Link]
+        :rtype: list[:class:`huaweicloudsdkvpcep.v1.Link`]
         """
         return self._links
 
@@ -193,7 +208,7 @@ class Version:
         API的URL地址
 
         :param links: The links of this Version.
-        :type: list[Link]
+        :type links: list[:class:`huaweicloudsdkvpcep.v1.Link`]
         """
         self._links = links
 

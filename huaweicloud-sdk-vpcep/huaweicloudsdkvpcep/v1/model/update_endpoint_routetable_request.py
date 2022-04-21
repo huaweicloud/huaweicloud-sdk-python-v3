@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateEndpointRoutetableRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateEndpointRoutetableRequest:
     }
 
     def __init__(self, vpc_endpoint_id=None, body=None):
-        """UpdateEndpointRoutetableRequest - a model defined in huaweicloud sdk"""
+        """UpdateEndpointRoutetableRequest
+
+        The model defined in huaweicloud sdk
+
+        :param vpc_endpoint_id: 终端节点的ID。
+        :type vpc_endpoint_id: str
+        :param body: Body of the UpdateEndpointRoutetableRequest
+        :type body: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointRoutetableRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateEndpointRoutetableRequest:
         终端节点的ID。
 
         :param vpc_endpoint_id: The vpc_endpoint_id of this UpdateEndpointRoutetableRequest.
-        :type: str
+        :type vpc_endpoint_id: str
         """
         self._vpc_endpoint_id = vpc_endpoint_id
 
@@ -72,7 +79,7 @@ class UpdateEndpointRoutetableRequest:
 
 
         :return: The body of this UpdateEndpointRoutetableRequest.
-        :rtype: UpdateEndpointRoutetableRequestBody
+        :rtype: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointRoutetableRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateEndpointRoutetableRequest:
 
 
         :param body: The body of this UpdateEndpointRoutetableRequest.
-        :type: UpdateEndpointRoutetableRequestBody
+        :type body: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointRoutetableRequestBody`
         """
         self._body = body
 

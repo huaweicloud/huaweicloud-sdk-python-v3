@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateRepoRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CreateRepoRequestBody:
     }
 
     def __init__(self, repository=None, is_public=None, category=None, description=None):
-        """CreateRepoRequestBody - a model defined in huaweicloud sdk"""
+        """CreateRepoRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param repository: 镜像仓库名称。小写字母或数字开头，后面跟小写字母、数字、小数点、斜杠、下划线或中划线（其中下划线最多允许连续两个，小数点、斜杠、下划线、中划线不能直接相连），小写字母或数字结尾，1-128个字符。
+        :type repository: str
+        :param is_public: 是否为公共仓库，可选值为true或false。
+        :type is_public: bool
+        :param category: 仓库类型，可设置为app_server, linux, framework_app, database, lang, other, windows, arm。
+        :type category: str
+        :param description: 镜像仓库的描述信息。
+        :type description: str
+        """
         
         
 
@@ -71,7 +82,7 @@ class CreateRepoRequestBody:
         镜像仓库名称。小写字母或数字开头，后面跟小写字母、数字、小数点、斜杠、下划线或中划线（其中下划线最多允许连续两个，小数点、斜杠、下划线、中划线不能直接相连），小写字母或数字结尾，1-128个字符。
 
         :param repository: The repository of this CreateRepoRequestBody.
-        :type: str
+        :type repository: str
         """
         self._repository = repository
 
@@ -93,7 +104,7 @@ class CreateRepoRequestBody:
         是否为公共仓库，可选值为true或false。
 
         :param is_public: The is_public of this CreateRepoRequestBody.
-        :type: bool
+        :type is_public: bool
         """
         self._is_public = is_public
 
@@ -115,7 +126,7 @@ class CreateRepoRequestBody:
         仓库类型，可设置为app_server, linux, framework_app, database, lang, other, windows, arm。
 
         :param category: The category of this CreateRepoRequestBody.
-        :type: str
+        :type category: str
         """
         self._category = category
 
@@ -137,7 +148,7 @@ class CreateRepoRequestBody:
         镜像仓库的描述信息。
 
         :param description: The description of this CreateRepoRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 

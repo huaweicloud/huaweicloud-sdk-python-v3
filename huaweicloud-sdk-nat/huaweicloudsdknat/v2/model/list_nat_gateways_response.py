@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListNatGatewaysResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListNatGatewaysResponse(SdkResponse):
     }
 
     def __init__(self, nat_gateways=None):
-        """ListNatGatewaysResponse - a model defined in huaweicloud sdk"""
+        """ListNatGatewaysResponse
+
+        The model defined in huaweicloud sdk
+
+        :param nat_gateways: 查询公网NAT网关实例列表的响应体。 详见NatGateway字段说明。
+        :type nat_gateways: list[:class:`huaweicloudsdknat.v2.NatGatewayResponseBody`]
+        """
         
         super(ListNatGatewaysResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListNatGatewaysResponse(SdkResponse):
         查询公网NAT网关实例列表的响应体。 详见NatGateway字段说明。
 
         :return: The nat_gateways of this ListNatGatewaysResponse.
-        :rtype: list[NatGatewayResponseBody]
+        :rtype: list[:class:`huaweicloudsdknat.v2.NatGatewayResponseBody`]
         """
         return self._nat_gateways
 
@@ -58,7 +63,7 @@ class ListNatGatewaysResponse(SdkResponse):
         查询公网NAT网关实例列表的响应体。 详见NatGateway字段说明。
 
         :param nat_gateways: The nat_gateways of this ListNatGatewaysResponse.
-        :type: list[NatGatewayResponseBody]
+        :type nat_gateways: list[:class:`huaweicloudsdknat.v2.NatGatewayResponseBody`]
         """
         self._nat_gateways = nat_gateways
 

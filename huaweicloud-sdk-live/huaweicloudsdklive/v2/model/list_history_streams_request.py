@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListHistoryStreamsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ListHistoryStreamsRequest:
     }
 
     def __init__(self, domain=None, app=None, stream=None, start_time=None, end_time=None, offset=None, limit=None):
-        """ListHistoryStreamsRequest - a model defined in huaweicloud sdk"""
+        """ListHistoryStreamsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param domain: 推流域名。 
+        :type domain: str
+        :param app: 应用名称。
+        :type app: str
+        :param stream: 流名称。
+        :type stream: str
+        :param start_time: 起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度1天。  若参数为空，默认查询1天数据。 
+        :type start_time: str
+        :param end_time: 结束时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。  若参数为空，默认为当前时间，最大查询跨度1天。结束时间需大于起始时间。 
+        :type end_time: str
+        :param offset: 分页编号，默认为0
+        :type offset: int
+        :param limit: 每页记录数。  取值范围：[1,100]  默认值：10。 
+        :type limit: int
+        """
         
         
 
@@ -87,7 +104,7 @@ class ListHistoryStreamsRequest:
         推流域名。 
 
         :param domain: The domain of this ListHistoryStreamsRequest.
-        :type: str
+        :type domain: str
         """
         self._domain = domain
 
@@ -109,7 +126,7 @@ class ListHistoryStreamsRequest:
         应用名称。
 
         :param app: The app of this ListHistoryStreamsRequest.
-        :type: str
+        :type app: str
         """
         self._app = app
 
@@ -131,7 +148,7 @@ class ListHistoryStreamsRequest:
         流名称。
 
         :param stream: The stream of this ListHistoryStreamsRequest.
-        :type: str
+        :type stream: str
         """
         self._stream = stream
 
@@ -153,7 +170,7 @@ class ListHistoryStreamsRequest:
         起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度1天。  若参数为空，默认查询1天数据。 
 
         :param start_time: The start_time of this ListHistoryStreamsRequest.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -175,7 +192,7 @@ class ListHistoryStreamsRequest:
         结束时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。  若参数为空，默认为当前时间，最大查询跨度1天。结束时间需大于起始时间。 
 
         :param end_time: The end_time of this ListHistoryStreamsRequest.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -197,7 +214,7 @@ class ListHistoryStreamsRequest:
         分页编号，默认为0
 
         :param offset: The offset of this ListHistoryStreamsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -219,7 +236,7 @@ class ListHistoryStreamsRequest:
         每页记录数。  取值范围：[1,100]  默认值：10。 
 
         :param limit: The limit of this ListHistoryStreamsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Follow302StatusRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class Follow302StatusRequest:
     }
 
     def __init__(self, follow302_status=None):
-        """Follow302StatusRequest - a model defined in huaweicloud sdk"""
+        """Follow302StatusRequest
+
+        The model defined in huaweicloud sdk
+
+        :param follow302_status: follow302状态（\&quot;off\&quot;/\&quot;on\&quot;）
+        :type follow302_status: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class Follow302StatusRequest:
         follow302状态（\"off\"/\"on\"）
 
         :param follow302_status: The follow302_status of this Follow302StatusRequest.
-        :type: str
+        :type follow302_status: str
         """
         self._follow302_status = follow302_status
 

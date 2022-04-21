@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListApplicationsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListApplicationsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, application_count=None, applications=None):
-        """ListApplicationsResponse - a model defined in huaweicloud sdk"""
+        """ListApplicationsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param request_id: 请求的唯一标识ID。
+        :type request_id: str
+        :param application_count: 返回的Application个数。该参数不受offset和limit影响，即返回的是您账户下所有的Application个数。
+        :type application_count: int
+        :param applications: 
+        :type applications: list[:class:`huaweicloudsdksmn.v2.ApplicationItem`]
+        """
         
         super(ListApplicationsResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListApplicationsResponse(SdkResponse):
         请求的唯一标识ID。
 
         :param request_id: The request_id of this ListApplicationsResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 
@@ -90,7 +99,7 @@ class ListApplicationsResponse(SdkResponse):
         返回的Application个数。该参数不受offset和limit影响，即返回的是您账户下所有的Application个数。
 
         :param application_count: The application_count of this ListApplicationsResponse.
-        :type: int
+        :type application_count: int
         """
         self._application_count = application_count
 
@@ -100,7 +109,7 @@ class ListApplicationsResponse(SdkResponse):
 
 
         :return: The applications of this ListApplicationsResponse.
-        :rtype: list[ApplicationItem]
+        :rtype: list[:class:`huaweicloudsdksmn.v2.ApplicationItem`]
         """
         return self._applications
 
@@ -110,7 +119,7 @@ class ListApplicationsResponse(SdkResponse):
 
 
         :param applications: The applications of this ListApplicationsResponse.
-        :type: list[ApplicationItem]
+        :type applications: list[:class:`huaweicloudsdksmn.v2.ApplicationItem`]
         """
         self._applications = applications
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPublishedTemplatesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListPublishedTemplatesRequest:
     }
 
     def __init__(self, x_language=None, keyword=None, offset=None, limit=None):
-        """ListPublishedTemplatesRequest - a model defined in huaweicloud sdk"""
+        """ListPublishedTemplatesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言类型，缺省值为“zh-cn”。  枚举值： - zh-cn：中文 - en-us：英文 
+        :type x_language: str
+        :param keyword: 搜索关键字，支持按名称和描述搜索，默认null。
+        :type keyword: str
+        :param offset: 偏移量，表示从此偏移量开始查询，offset大于等于0。
+        :type offset: int
+        :param limit: 每页的模板条数，默认10。
+        :type limit: int
+        """
         
         
 
@@ -73,7 +84,7 @@ class ListPublishedTemplatesRequest:
         语言类型，缺省值为“zh-cn”。  枚举值： - zh-cn：中文 - en-us：英文 
 
         :param x_language: The x_language of this ListPublishedTemplatesRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -95,7 +106,7 @@ class ListPublishedTemplatesRequest:
         搜索关键字，支持按名称和描述搜索，默认null。
 
         :param keyword: The keyword of this ListPublishedTemplatesRequest.
-        :type: str
+        :type keyword: str
         """
         self._keyword = keyword
 
@@ -117,7 +128,7 @@ class ListPublishedTemplatesRequest:
         偏移量，表示从此偏移量开始查询，offset大于等于0。
 
         :param offset: The offset of this ListPublishedTemplatesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -139,7 +150,7 @@ class ListPublishedTemplatesRequest:
         每页的模板条数，默认10。
 
         :param limit: The limit of this ListPublishedTemplatesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

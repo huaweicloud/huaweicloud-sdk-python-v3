@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CheckVerifyCodeResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CheckVerifyCodeResponse(SdkResponse):
     }
 
     def __init__(self, token=None, expire=None):
-        """CheckVerifyCodeResponse - a model defined in huaweicloud sdk"""
+        """CheckVerifyCodeResponse
+
+        The model defined in huaweicloud sdk
+
+        :param token: 访问token字符串
+        :type token: str
+        :param expire: 过期时间，单位：秒
+        :type expire: int
+        """
         
         super(CheckVerifyCodeResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class CheckVerifyCodeResponse(SdkResponse):
         访问token字符串
 
         :param token: The token of this CheckVerifyCodeResponse.
-        :type: str
+        :type token: str
         """
         self._token = token
 
@@ -85,7 +92,7 @@ class CheckVerifyCodeResponse(SdkResponse):
         过期时间，单位：秒
 
         :param expire: The expire of this CheckVerifyCodeResponse.
-        :type: int
+        :type expire: int
         """
         self._expire = expire
 

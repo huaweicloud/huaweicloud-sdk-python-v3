@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPropertiesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListPropertiesResponse(SdkResponse):
     }
 
     def __init__(self, response=None):
-        """ListPropertiesResponse - a model defined in huaweicloud sdk"""
+        """ListPropertiesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param response: 设备上报的属性执行结果。Json格式，具体格式需要应用和设备约定。
+        :type response: object
+        """
         
         super(ListPropertiesResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class ListPropertiesResponse(SdkResponse):
         设备上报的属性执行结果。Json格式，具体格式需要应用和设备约定。
 
         :param response: The response of this ListPropertiesResponse.
-        :type: object
+        :type response: object
         """
         self._response = response
 

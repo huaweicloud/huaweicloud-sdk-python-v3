@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AsyncInvokeReservedFunctionResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class AsyncInvokeReservedFunctionResponse(SdkResponse):
     }
 
     def __init__(self, instance_id=None):
-        """AsyncInvokeReservedFunctionResponse - a model defined in huaweicloud sdk"""
+        """AsyncInvokeReservedFunctionResponse
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 预留实例id
+        :type instance_id: str
+        """
         
         super(AsyncInvokeReservedFunctionResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class AsyncInvokeReservedFunctionResponse(SdkResponse):
         预留实例id
 
         :param instance_id: The instance_id of this AsyncInvokeReservedFunctionResponse.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 

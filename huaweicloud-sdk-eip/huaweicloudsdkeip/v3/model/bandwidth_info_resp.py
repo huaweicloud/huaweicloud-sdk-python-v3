@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BandwidthInfoResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class BandwidthInfoResp:
     }
 
     def __init__(self, bandwidth_name=None, bandwidth_number=None, bandwidth_type=None, bandwidth_id=None):
-        """BandwidthInfoResp - a model defined in huaweicloud sdk"""
+        """BandwidthInfoResp
+
+        The model defined in huaweicloud sdk
+
+        :param bandwidth_name: 带宽名称
+        :type bandwidth_name: str
+        :param bandwidth_number: 带宽大小
+        :type bandwidth_number: int
+        :param bandwidth_type: 带宽类型
+        :type bandwidth_type: str
+        :param bandwidth_id: 带宽id
+        :type bandwidth_id: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class BandwidthInfoResp:
         带宽名称
 
         :param bandwidth_name: The bandwidth_name of this BandwidthInfoResp.
-        :type: str
+        :type bandwidth_name: str
         """
         self._bandwidth_name = bandwidth_name
 
@@ -95,7 +106,7 @@ class BandwidthInfoResp:
         带宽大小
 
         :param bandwidth_number: The bandwidth_number of this BandwidthInfoResp.
-        :type: int
+        :type bandwidth_number: int
         """
         self._bandwidth_number = bandwidth_number
 
@@ -117,7 +128,7 @@ class BandwidthInfoResp:
         带宽类型
 
         :param bandwidth_type: The bandwidth_type of this BandwidthInfoResp.
-        :type: str
+        :type bandwidth_type: str
         """
         self._bandwidth_type = bandwidth_type
 
@@ -139,7 +150,7 @@ class BandwidthInfoResp:
         带宽id
 
         :param bandwidth_id: The bandwidth_id of this BandwidthInfoResp.
-        :type: str
+        :type bandwidth_id: str
         """
         self._bandwidth_id = bandwidth_id
 

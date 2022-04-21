@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EsflavorsVersionsFlavorsResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class EsflavorsVersionsFlavorsResp:
     }
 
     def __init__(self, ram=None, cpu=None, name=None, region=None, diskrange=None, flavor_id=None):
-        """EsflavorsVersionsFlavorsResp - a model defined in huaweicloud sdk"""
+        """EsflavorsVersionsFlavorsResp
+
+        The model defined in huaweicloud sdk
+
+        :param ram: 实例的内存大小。单位GB。
+        :type ram: int
+        :param cpu: 实例的CPU核数。
+        :type cpu: int
+        :param name: 规格名称。
+        :type name: str
+        :param region: 可用区域。
+        :type region: str
+        :param diskrange: 实例的硬盘容量范围。
+        :type diskrange: str
+        :param flavor_id: 规格对应的ID。
+        :type flavor_id: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class EsflavorsVersionsFlavorsResp:
         实例的内存大小。单位GB。
 
         :param ram: The ram of this EsflavorsVersionsFlavorsResp.
-        :type: int
+        :type ram: int
         """
         self._ram = ram
 
@@ -105,7 +120,7 @@ class EsflavorsVersionsFlavorsResp:
         实例的CPU核数。
 
         :param cpu: The cpu of this EsflavorsVersionsFlavorsResp.
-        :type: int
+        :type cpu: int
         """
         self._cpu = cpu
 
@@ -127,7 +142,7 @@ class EsflavorsVersionsFlavorsResp:
         规格名称。
 
         :param name: The name of this EsflavorsVersionsFlavorsResp.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -149,7 +164,7 @@ class EsflavorsVersionsFlavorsResp:
         可用区域。
 
         :param region: The region of this EsflavorsVersionsFlavorsResp.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -171,7 +186,7 @@ class EsflavorsVersionsFlavorsResp:
         实例的硬盘容量范围。
 
         :param diskrange: The diskrange of this EsflavorsVersionsFlavorsResp.
-        :type: str
+        :type diskrange: str
         """
         self._diskrange = diskrange
 
@@ -193,7 +208,7 @@ class EsflavorsVersionsFlavorsResp:
         规格对应的ID。
 
         :param flavor_id: The flavor_id of this EsflavorsVersionsFlavorsResp.
-        :type: str
+        :type flavor_id: str
         """
         self._flavor_id = flavor_id
 

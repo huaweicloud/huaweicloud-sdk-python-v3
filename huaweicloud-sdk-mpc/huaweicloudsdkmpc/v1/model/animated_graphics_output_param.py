@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AnimatedGraphicsOutputParam:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class AnimatedGraphicsOutputParam:
     }
 
     def __init__(self, format=None, width=None, height=None, start=None, end=None, frame_rate=None):
-        """AnimatedGraphicsOutputParam - a model defined in huaweicloud sdk"""
+        """AnimatedGraphicsOutputParam
+
+        The model defined in huaweicloud sdk
+
+        :param format: 动图格式，目前仅支持取值 gif 
+        :type format: str
+        :param width: 输出动图的宽。  取值范围：0，-1或[32,3840]之间2的倍数。  &gt;- 若设置为-1， 则宽根据高来自适应，此时“height”不能取-1或0。 &gt;- 若设置为0，则取原始视频的宽，此时“height”只能取0。 
+        :type width: int
+        :param height: 输出动图的高。  取值范围：0，-1或[32,2160]之间2的倍数。  &gt;- 若设置为-1， 则高根据宽来自适应，此时“width”不能取-1或0。 &gt;- 若设置为0，则取原始视频的高，此时“width”只能取0。 
+        :type height: int
+        :param start: 起始时间，单位：毫秒 
+        :type start: int
+        :param end: 结束时间。  单位：毫秒。  end、start差值最多60秒。 
+        :type end: int
+        :param frame_rate: 动图帧率。  取值范围：[1,75] 
+        :type frame_rate: int
+        """
         
         
 
@@ -79,7 +94,7 @@ class AnimatedGraphicsOutputParam:
         动图格式，目前仅支持取值 gif 
 
         :param format: The format of this AnimatedGraphicsOutputParam.
-        :type: str
+        :type format: str
         """
         self._format = format
 
@@ -101,7 +116,7 @@ class AnimatedGraphicsOutputParam:
         输出动图的宽。  取值范围：0，-1或[32,3840]之间2的倍数。  >- 若设置为-1， 则宽根据高来自适应，此时“height”不能取-1或0。 >- 若设置为0，则取原始视频的宽，此时“height”只能取0。 
 
         :param width: The width of this AnimatedGraphicsOutputParam.
-        :type: int
+        :type width: int
         """
         self._width = width
 
@@ -123,7 +138,7 @@ class AnimatedGraphicsOutputParam:
         输出动图的高。  取值范围：0，-1或[32,2160]之间2的倍数。  >- 若设置为-1， 则高根据宽来自适应，此时“width”不能取-1或0。 >- 若设置为0，则取原始视频的高，此时“width”只能取0。 
 
         :param height: The height of this AnimatedGraphicsOutputParam.
-        :type: int
+        :type height: int
         """
         self._height = height
 
@@ -145,7 +160,7 @@ class AnimatedGraphicsOutputParam:
         起始时间，单位：毫秒 
 
         :param start: The start of this AnimatedGraphicsOutputParam.
-        :type: int
+        :type start: int
         """
         self._start = start
 
@@ -167,7 +182,7 @@ class AnimatedGraphicsOutputParam:
         结束时间。  单位：毫秒。  end、start差值最多60秒。 
 
         :param end: The end of this AnimatedGraphicsOutputParam.
-        :type: int
+        :type end: int
         """
         self._end = end
 
@@ -189,7 +204,7 @@ class AnimatedGraphicsOutputParam:
         动图帧率。  取值范围：[1,75] 
 
         :param frame_rate: The frame_rate of this AnimatedGraphicsOutputParam.
-        :type: int
+        :type frame_rate: int
         """
         self._frame_rate = frame_rate
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StandardReqDataByNameAndId:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class StandardReqDataByNameAndId:
     }
 
     def __init__(self, verification_name=None, verification_id=None, face_image=None):
-        """StandardReqDataByNameAndId - a model defined in huaweicloud sdk"""
+        """StandardReqDataByNameAndId
+
+        The model defined in huaweicloud sdk
+
+        :param verification_name: 被验证人的姓名。
+        :type verification_name: str
+        :param verification_id: 被验证人的身份证号码。
+        :type verification_id: str
+        :param face_image: 现场人像图像数据，使用base64编码，要求base64编码后大小不超过4M。图像各边的像素大小在300到4000之间，支持JPG格式。
+        :type face_image: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class StandardReqDataByNameAndId:
         被验证人的姓名。
 
         :param verification_name: The verification_name of this StandardReqDataByNameAndId.
-        :type: str
+        :type verification_name: str
         """
         self._verification_name = verification_name
 
@@ -87,7 +96,7 @@ class StandardReqDataByNameAndId:
         被验证人的身份证号码。
 
         :param verification_id: The verification_id of this StandardReqDataByNameAndId.
-        :type: str
+        :type verification_id: str
         """
         self._verification_id = verification_id
 
@@ -109,7 +118,7 @@ class StandardReqDataByNameAndId:
         现场人像图像数据，使用base64编码，要求base64编码后大小不超过4M。图像各边的像素大小在300到4000之间，支持JPG格式。
 
         :param face_image: The face_image of this StandardReqDataByNameAndId.
-        :type: str
+        :type face_image: str
         """
         self._face_image = face_image
 

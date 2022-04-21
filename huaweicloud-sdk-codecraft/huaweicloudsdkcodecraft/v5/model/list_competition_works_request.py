@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCompetitionWorksRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ListCompetitionWorksRequest:
     }
 
     def __init__(self, competition_id=None, stage_id=None, read_time=None, time_unit=None, offset=None, limit=None, sort_key=None, sort_dir=None):
-        """ListCompetitionWorksRequest - a model defined in huaweicloud sdk"""
+        """ListCompetitionWorksRequest
+
+        The model defined in huaweicloud sdk
+
+        :param competition_id: 要查询的大赛ID，由大赛平台提供
+        :type competition_id: int
+        :param stage_id: 要查询的大赛阶段ID，由大赛平台提供
+        :type stage_id: int
+        :param read_time: 查询的截止时间
+        :type read_time: str
+        :param time_unit: 查询的时间范围。day表示以read_time作为结束时间,前一天内作为查询范围,hour表示以read_time作为结束时间,前一小内时作为查询范围。
+        :type time_unit: str
+        :param offset: 作品记录的起始编号,如果不传默认从0开始,offset为0时表示从第一条记录开始
+        :type offset: int
+        :param limit: 每页包含的作品记录数,如果不传默认返回100条，并且返回最大条数为100
+        :type limit: int
+        :param sort_key: 需要排序的字段，只支持works_id字段,如果不传则不进行排序
+        :type sort_key: str
+        :param sort_dir: 排序类型，支持asc|desc，默认为asc升序
+        :type sort_dir: str
+        """
         
         
 
@@ -90,7 +109,7 @@ class ListCompetitionWorksRequest:
         要查询的大赛ID，由大赛平台提供
 
         :param competition_id: The competition_id of this ListCompetitionWorksRequest.
-        :type: int
+        :type competition_id: int
         """
         self._competition_id = competition_id
 
@@ -112,7 +131,7 @@ class ListCompetitionWorksRequest:
         要查询的大赛阶段ID，由大赛平台提供
 
         :param stage_id: The stage_id of this ListCompetitionWorksRequest.
-        :type: int
+        :type stage_id: int
         """
         self._stage_id = stage_id
 
@@ -134,7 +153,7 @@ class ListCompetitionWorksRequest:
         查询的截止时间
 
         :param read_time: The read_time of this ListCompetitionWorksRequest.
-        :type: str
+        :type read_time: str
         """
         self._read_time = read_time
 
@@ -156,7 +175,7 @@ class ListCompetitionWorksRequest:
         查询的时间范围。day表示以read_time作为结束时间,前一天内作为查询范围,hour表示以read_time作为结束时间,前一小内时作为查询范围。
 
         :param time_unit: The time_unit of this ListCompetitionWorksRequest.
-        :type: str
+        :type time_unit: str
         """
         self._time_unit = time_unit
 
@@ -178,7 +197,7 @@ class ListCompetitionWorksRequest:
         作品记录的起始编号,如果不传默认从0开始,offset为0时表示从第一条记录开始
 
         :param offset: The offset of this ListCompetitionWorksRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -200,7 +219,7 @@ class ListCompetitionWorksRequest:
         每页包含的作品记录数,如果不传默认返回100条，并且返回最大条数为100
 
         :param limit: The limit of this ListCompetitionWorksRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -222,7 +241,7 @@ class ListCompetitionWorksRequest:
         需要排序的字段，只支持works_id字段,如果不传则不进行排序
 
         :param sort_key: The sort_key of this ListCompetitionWorksRequest.
-        :type: str
+        :type sort_key: str
         """
         self._sort_key = sort_key
 
@@ -244,7 +263,7 @@ class ListCompetitionWorksRequest:
         排序类型，支持asc|desc，默认为asc升序
 
         :param sort_dir: The sort_dir of this ListCompetitionWorksRequest.
-        :type: str
+        :type sort_dir: str
         """
         self._sort_dir = sort_dir
 

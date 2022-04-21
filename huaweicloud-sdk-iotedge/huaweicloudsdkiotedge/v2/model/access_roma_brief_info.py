@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AccessRomaBriefInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class AccessRomaBriefInfo:
     }
 
     def __init__(self, app_key=None):
-        """AccessRomaBriefInfo - a model defined in huaweicloud sdk"""
+        """AccessRomaBriefInfo
+
+        The model defined in huaweicloud sdk
+
+        :param app_key: 认证key，加密存储
+        :type app_key: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class AccessRomaBriefInfo:
         认证key，加密存储
 
         :param app_key: The app_key of this AccessRomaBriefInfo.
-        :type: str
+        :type app_key: str
         """
         self._app_key = app_key
 

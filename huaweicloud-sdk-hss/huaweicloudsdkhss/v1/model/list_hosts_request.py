@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListHostsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class ListHostsRequest:
     }
 
     def __init__(self, version=None, agent_status=None, host_status=None, protect_status=None, detect_result=None, host_name=None, host_ip=None, public_ip=None, os_type=None, charging_mode=None, limit=None, offset=None):
-        """ListHostsRequest - a model defined in huaweicloud sdk"""
+        """ListHostsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param version: 主机开通的版本，包含如下5种输入。   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。
+        :type version: str
+        :param agent_status: Agent状态，包含如下3种。   - not_register ：未注册。   - online ：在线。   - offline ：离线。
+        :type agent_status: str
+        :param host_status: Agent状态，包含如下4种。   - ACTIVE ：正在运行。   - SHUTOFF ：关机。   - BUILDING ：创建中。   - ERROR ：故障。
+        :type host_status: str
+        :param protect_status: 防护状态，包含如下2种。   - closed ：关闭。   - opened ：开启。
+        :type protect_status: str
+        :param detect_result: 防护状态，包含如下3种。   - undetect ：未检测。   - clean ：无风险。   - risk ：有风险。
+        :type detect_result: str
+        :param host_name: 云主机名称
+        :type host_name: str
+        :param host_ip: 云主机私有IP
+        :type host_ip: str
+        :param public_ip: 云主机公网IP
+        :type public_ip: str
+        :param os_type: 操作系统类型
+        :type os_type: str
+        :param charging_mode: 收费模式，包含如下2种。   - packet_cycle ：包年/包月。   - on_demand ：按需。
+        :type charging_mode: str
+        :param limit: 默认10
+        :type limit: int
+        :param offset: 默认0
+        :type offset: int
+        """
         
         
 
@@ -113,7 +140,7 @@ class ListHostsRequest:
         主机开通的版本，包含如下5种输入。   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。
 
         :param version: The version of this ListHostsRequest.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -135,7 +162,7 @@ class ListHostsRequest:
         Agent状态，包含如下3种。   - not_register ：未注册。   - online ：在线。   - offline ：离线。
 
         :param agent_status: The agent_status of this ListHostsRequest.
-        :type: str
+        :type agent_status: str
         """
         self._agent_status = agent_status
 
@@ -157,7 +184,7 @@ class ListHostsRequest:
         Agent状态，包含如下4种。   - ACTIVE ：正在运行。   - SHUTOFF ：关机。   - BUILDING ：创建中。   - ERROR ：故障。
 
         :param host_status: The host_status of this ListHostsRequest.
-        :type: str
+        :type host_status: str
         """
         self._host_status = host_status
 
@@ -179,7 +206,7 @@ class ListHostsRequest:
         防护状态，包含如下2种。   - closed ：关闭。   - opened ：开启。
 
         :param protect_status: The protect_status of this ListHostsRequest.
-        :type: str
+        :type protect_status: str
         """
         self._protect_status = protect_status
 
@@ -201,7 +228,7 @@ class ListHostsRequest:
         防护状态，包含如下3种。   - undetect ：未检测。   - clean ：无风险。   - risk ：有风险。
 
         :param detect_result: The detect_result of this ListHostsRequest.
-        :type: str
+        :type detect_result: str
         """
         self._detect_result = detect_result
 
@@ -223,7 +250,7 @@ class ListHostsRequest:
         云主机名称
 
         :param host_name: The host_name of this ListHostsRequest.
-        :type: str
+        :type host_name: str
         """
         self._host_name = host_name
 
@@ -245,7 +272,7 @@ class ListHostsRequest:
         云主机私有IP
 
         :param host_ip: The host_ip of this ListHostsRequest.
-        :type: str
+        :type host_ip: str
         """
         self._host_ip = host_ip
 
@@ -267,7 +294,7 @@ class ListHostsRequest:
         云主机公网IP
 
         :param public_ip: The public_ip of this ListHostsRequest.
-        :type: str
+        :type public_ip: str
         """
         self._public_ip = public_ip
 
@@ -289,7 +316,7 @@ class ListHostsRequest:
         操作系统类型
 
         :param os_type: The os_type of this ListHostsRequest.
-        :type: str
+        :type os_type: str
         """
         self._os_type = os_type
 
@@ -311,7 +338,7 @@ class ListHostsRequest:
         收费模式，包含如下2种。   - packet_cycle ：包年/包月。   - on_demand ：按需。
 
         :param charging_mode: The charging_mode of this ListHostsRequest.
-        :type: str
+        :type charging_mode: str
         """
         self._charging_mode = charging_mode
 
@@ -333,7 +360,7 @@ class ListHostsRequest:
         默认10
 
         :param limit: The limit of this ListHostsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -355,7 +382,7 @@ class ListHostsRequest:
         默认0
 
         :param offset: The offset of this ListHostsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 

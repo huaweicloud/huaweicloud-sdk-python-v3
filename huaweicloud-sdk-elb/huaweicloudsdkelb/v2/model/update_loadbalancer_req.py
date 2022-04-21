@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateLoadbalancerReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateLoadbalancerReq:
     }
 
     def __init__(self, name=None, description=None, admin_state_up=None):
-        """UpdateLoadbalancerReq - a model defined in huaweicloud sdk"""
+        """UpdateLoadbalancerReq
+
+        The model defined in huaweicloud sdk
+
+        :param name: 负载均衡器名称。
+        :type name: str
+        :param description: 负载均衡器的描述信息
+        :type description: str
+        :param admin_state_up: 负载均衡器的管理状态。只支持设定为true，该字段的值无实际意义。
+        :type admin_state_up: bool
+        """
         
         
 
@@ -68,7 +77,7 @@ class UpdateLoadbalancerReq:
         负载均衡器名称。
 
         :param name: The name of this UpdateLoadbalancerReq.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -90,7 +99,7 @@ class UpdateLoadbalancerReq:
         负载均衡器的描述信息
 
         :param description: The description of this UpdateLoadbalancerReq.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -112,7 +121,7 @@ class UpdateLoadbalancerReq:
         负载均衡器的管理状态。只支持设定为true，该字段的值无实际意义。
 
         :param admin_state_up: The admin_state_up of this UpdateLoadbalancerReq.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 

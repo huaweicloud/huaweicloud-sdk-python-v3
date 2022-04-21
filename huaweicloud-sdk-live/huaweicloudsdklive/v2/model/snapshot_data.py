@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SnapshotData:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class SnapshotData:
     }
 
     def __init__(self, count=None, time=None):
-        """SnapshotData - a model defined in huaweicloud sdk"""
+        """SnapshotData
+
+        The model defined in huaweicloud sdk
+
+        :param count: 每小时内截图总数，单位为张。
+        :type count: int
+        :param time: 采样时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ 。
+        :type time: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class SnapshotData:
         每小时内截图总数，单位为张。
 
         :param count: The count of this SnapshotData.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -85,7 +92,7 @@ class SnapshotData:
         采样时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ 。
 
         :param time: The time of this SnapshotData.
-        :type: str
+        :type time: str
         """
         self._time = time
 

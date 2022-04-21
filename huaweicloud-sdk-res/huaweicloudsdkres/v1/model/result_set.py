@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResultSet:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class ResultSet:
     }
 
     def __init__(self, availability=None, category=None, job_id=None, job_type=None, rec_id=None, rec_type=None, scene_id=None, table_name=None, workspace_id=None):
-        """ResultSet - a model defined in huaweicloud sdk"""
+        """ResultSet
+
+        The model defined in huaweicloud sdk
+
+        :param availability: 可用性
+        :type availability: int
+        :param category: 类别
+        :type category: str
+        :param job_id: 作业编号
+        :type job_id: str
+        :param job_type: 作业类型
+        :type job_type: str
+        :param rec_id: rec编号
+        :type rec_id: str
+        :param rec_type: rec类型
+        :type rec_type: str
+        :param scene_id: 场景编号
+        :type scene_id: str
+        :param table_name: 表名
+        :type table_name: str
+        :param workspace_id: 工作空间编号
+        :type workspace_id: str
+        """
         
         
 
@@ -98,7 +119,7 @@ class ResultSet:
         可用性
 
         :param availability: The availability of this ResultSet.
-        :type: int
+        :type availability: int
         """
         self._availability = availability
 
@@ -120,7 +141,7 @@ class ResultSet:
         类别
 
         :param category: The category of this ResultSet.
-        :type: str
+        :type category: str
         """
         self._category = category
 
@@ -142,7 +163,7 @@ class ResultSet:
         作业编号
 
         :param job_id: The job_id of this ResultSet.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -164,7 +185,7 @@ class ResultSet:
         作业类型
 
         :param job_type: The job_type of this ResultSet.
-        :type: str
+        :type job_type: str
         """
         self._job_type = job_type
 
@@ -186,7 +207,7 @@ class ResultSet:
         rec编号
 
         :param rec_id: The rec_id of this ResultSet.
-        :type: str
+        :type rec_id: str
         """
         self._rec_id = rec_id
 
@@ -208,7 +229,7 @@ class ResultSet:
         rec类型
 
         :param rec_type: The rec_type of this ResultSet.
-        :type: str
+        :type rec_type: str
         """
         self._rec_type = rec_type
 
@@ -230,7 +251,7 @@ class ResultSet:
         场景编号
 
         :param scene_id: The scene_id of this ResultSet.
-        :type: str
+        :type scene_id: str
         """
         self._scene_id = scene_id
 
@@ -252,7 +273,7 @@ class ResultSet:
         表名
 
         :param table_name: The table_name of this ResultSet.
-        :type: str
+        :type table_name: str
         """
         self._table_name = table_name
 
@@ -274,7 +295,7 @@ class ResultSet:
         工作空间编号
 
         :param workspace_id: The workspace_id of this ResultSet.
-        :type: str
+        :type workspace_id: str
         """
         self._workspace_id = workspace_id
 

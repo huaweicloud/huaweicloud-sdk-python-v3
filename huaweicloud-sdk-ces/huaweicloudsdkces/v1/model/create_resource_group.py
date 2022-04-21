@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateResourceGroup:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateResourceGroup:
     }
 
     def __init__(self, namespace=None, dimensions=None):
-        """CreateResourceGroup - a model defined in huaweicloud sdk"""
+        """CreateResourceGroup
+
+        The model defined in huaweicloud sdk
+
+        :param namespace: 资源类型。即命名空间，如弹性云服务器的资源命名空间为：SYS.ECS；各服务命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
+        :type namespace: str
+        :param dimensions: 一个或者多个资源维度。
+        :type dimensions: list[:class:`huaweicloudsdkces.v1.MetricsDimension`]
+        """
         
         
 
@@ -61,7 +68,7 @@ class CreateResourceGroup:
         资源类型。即命名空间，如弹性云服务器的资源命名空间为：SYS.ECS；各服务命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
         :param namespace: The namespace of this CreateResourceGroup.
-        :type: str
+        :type namespace: str
         """
         self._namespace = namespace
 
@@ -72,7 +79,7 @@ class CreateResourceGroup:
         一个或者多个资源维度。
 
         :return: The dimensions of this CreateResourceGroup.
-        :rtype: list[MetricsDimension]
+        :rtype: list[:class:`huaweicloudsdkces.v1.MetricsDimension`]
         """
         return self._dimensions
 
@@ -83,7 +90,7 @@ class CreateResourceGroup:
         一个或者多个资源维度。
 
         :param dimensions: The dimensions of this CreateResourceGroup.
-        :type: list[MetricsDimension]
+        :type dimensions: list[:class:`huaweicloudsdkces.v1.MetricsDimension`]
         """
         self._dimensions = dimensions
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CheckRecordDataInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CheckRecordDataInfo:
     }
 
     def __init__(self, check_time=None, issue_counts=None):
-        """CheckRecordDataInfo - a model defined in huaweicloud sdk"""
+        """CheckRecordDataInfo
+
+        The model defined in huaweicloud sdk
+
+        :param check_time: 检查时间
+        :type check_time: str
+        :param issue_counts: 
+        :type issue_counts: :class:`huaweicloudsdkcodecheck.v2.CheckRecordIssueCountsInfo`
+        """
         
         
 
@@ -63,7 +70,7 @@ class CheckRecordDataInfo:
         检查时间
 
         :param check_time: The check_time of this CheckRecordDataInfo.
-        :type: str
+        :type check_time: str
         """
         self._check_time = check_time
 
@@ -73,7 +80,7 @@ class CheckRecordDataInfo:
 
 
         :return: The issue_counts of this CheckRecordDataInfo.
-        :rtype: CheckRecordIssueCountsInfo
+        :rtype: :class:`huaweicloudsdkcodecheck.v2.CheckRecordIssueCountsInfo`
         """
         return self._issue_counts
 
@@ -83,7 +90,7 @@ class CheckRecordDataInfo:
 
 
         :param issue_counts: The issue_counts of this CheckRecordDataInfo.
-        :type: CheckRecordIssueCountsInfo
+        :type issue_counts: :class:`huaweicloudsdkcodecheck.v2.CheckRecordIssueCountsInfo`
         """
         self._issue_counts = issue_counts
 

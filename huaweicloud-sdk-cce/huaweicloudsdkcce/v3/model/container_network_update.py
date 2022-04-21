@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ContainerNetworkUpdate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ContainerNetworkUpdate:
     }
 
     def __init__(self, cidrs=None):
-        """ContainerNetworkUpdate - a model defined in huaweicloud sdk"""
+        """ContainerNetworkUpdate
+
+        The model defined in huaweicloud sdk
+
+        :param cidrs: 容器网络网段列表。1.21及新版本集群，当集群网络类型为vpc-router时，支持增量添加容器网段。  此参数在集群更新后不可更改，请谨慎选择。
+        :type cidrs: list[:class:`huaweicloudsdkcce.v3.ContainerCIDR`]
+        """
         
         
 
@@ -47,7 +52,7 @@ class ContainerNetworkUpdate:
         容器网络网段列表。1.21及新版本集群，当集群网络类型为vpc-router时，支持增量添加容器网段。  此参数在集群更新后不可更改，请谨慎选择。
 
         :return: The cidrs of this ContainerNetworkUpdate.
-        :rtype: list[ContainerCIDR]
+        :rtype: list[:class:`huaweicloudsdkcce.v3.ContainerCIDR`]
         """
         return self._cidrs
 
@@ -58,7 +63,7 @@ class ContainerNetworkUpdate:
         容器网络网段列表。1.21及新版本集群，当集群网络类型为vpc-router时，支持增量添加容器网段。  此参数在集群更新后不可更改，请谨慎选择。
 
         :param cidrs: The cidrs of this ContainerNetworkUpdate.
-        :type: list[ContainerCIDR]
+        :type cidrs: list[:class:`huaweicloudsdkcce.v3.ContainerCIDR`]
         """
         self._cidrs = cidrs
 

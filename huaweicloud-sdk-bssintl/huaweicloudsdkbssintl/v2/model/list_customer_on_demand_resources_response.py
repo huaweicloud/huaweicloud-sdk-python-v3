@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCustomerOnDemandResourcesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListCustomerOnDemandResourcesResponse(SdkResponse):
     }
 
     def __init__(self, resources=None, total_count=None):
-        """ListCustomerOnDemandResourcesResponse - a model defined in huaweicloud sdk"""
+        """ListCustomerOnDemandResourcesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param resources: 客户资源列表。 具体参见表2。
+        :type resources: list[:class:`huaweicloudsdkbssintl.v2.CustomerOnDemandResource`]
+        :param total_count: 查询总数。
+        :type total_count: int
+        """
         
         super(ListCustomerOnDemandResourcesResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListCustomerOnDemandResourcesResponse(SdkResponse):
         客户资源列表。 具体参见表2。
 
         :return: The resources of this ListCustomerOnDemandResourcesResponse.
-        :rtype: list[CustomerOnDemandResource]
+        :rtype: list[:class:`huaweicloudsdkbssintl.v2.CustomerOnDemandResource`]
         """
         return self._resources
 
@@ -63,7 +70,7 @@ class ListCustomerOnDemandResourcesResponse(SdkResponse):
         客户资源列表。 具体参见表2。
 
         :param resources: The resources of this ListCustomerOnDemandResourcesResponse.
-        :type: list[CustomerOnDemandResource]
+        :type resources: list[:class:`huaweicloudsdkbssintl.v2.CustomerOnDemandResource`]
         """
         self._resources = resources
 
@@ -85,7 +92,7 @@ class ListCustomerOnDemandResourcesResponse(SdkResponse):
         查询总数。
 
         :param total_count: The total_count of this ListCustomerOnDemandResourcesResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 

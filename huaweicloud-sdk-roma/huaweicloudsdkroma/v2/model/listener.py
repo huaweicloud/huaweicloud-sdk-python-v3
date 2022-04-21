@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Listener:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class Listener:
     }
 
     def __init__(self, name=None, port=None, backend=None, ip_version=None):
-        """Listener - a model defined in huaweicloud sdk"""
+        """Listener
+
+        The model defined in huaweicloud sdk
+
+        :param name: 监听器名称
+        :type name: str
+        :param port: 监听器对外提供服务端口
+        :type port: int
+        :param backend: 
+        :type backend: :class:`huaweicloudsdkroma.v2.Backend`
+        :param ip_version: 创建负载均衡器的IP协议类型
+        :type ip_version: int
+        """
         
         
 
@@ -73,7 +84,7 @@ class Listener:
         监听器名称
 
         :param name: The name of this Listener.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -95,7 +106,7 @@ class Listener:
         监听器对外提供服务端口
 
         :param port: The port of this Listener.
-        :type: int
+        :type port: int
         """
         self._port = port
 
@@ -105,7 +116,7 @@ class Listener:
 
 
         :return: The backend of this Listener.
-        :rtype: Backend
+        :rtype: :class:`huaweicloudsdkroma.v2.Backend`
         """
         return self._backend
 
@@ -115,7 +126,7 @@ class Listener:
 
 
         :param backend: The backend of this Listener.
-        :type: Backend
+        :type backend: :class:`huaweicloudsdkroma.v2.Backend`
         """
         self._backend = backend
 
@@ -137,7 +148,7 @@ class Listener:
         创建负载均衡器的IP协议类型
 
         :param ip_version: The ip_version of this Listener.
-        :type: int
+        :type ip_version: int
         """
         self._ip_version = ip_version
 

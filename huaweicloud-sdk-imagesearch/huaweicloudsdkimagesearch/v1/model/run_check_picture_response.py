@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunCheckPictureResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RunCheckPictureResponse(SdkResponse):
     }
 
     def __init__(self, exist=None):
-        """RunCheckPictureResponse - a model defined in huaweicloud sdk"""
+        """RunCheckPictureResponse
+
+        The model defined in huaweicloud sdk
+
+        :param exist: 调用成功时表示调用结果。  调用失败时无此字段。  - true表示图像索引库中存在查询的图片。  - false表示图像索引库中不存在查询的图片。 
+        :type exist: str
+        """
         
         super(RunCheckPictureResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class RunCheckPictureResponse(SdkResponse):
         调用成功时表示调用结果。  调用失败时无此字段。  - true表示图像索引库中存在查询的图片。  - false表示图像索引库中不存在查询的图片。 
 
         :param exist: The exist of this RunCheckPictureResponse.
-        :type: str
+        :type exist: str
         """
         self._exist = exist
 

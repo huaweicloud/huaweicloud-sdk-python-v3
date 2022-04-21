@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ScrumCustomField:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ScrumCustomField:
     }
 
     def __init__(self, name=None, value=None):
-        """ScrumCustomField - a model defined in huaweicloud sdk"""
+        """ScrumCustomField
+
+        The model defined in huaweicloud sdk
+
+        :param name: 自定义字段
+        :type name: str
+        :param value: 自定义字段值
+        :type value: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class ScrumCustomField:
         自定义字段
 
         :param name: The name of this ScrumCustomField.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -85,7 +92,7 @@ class ScrumCustomField:
         自定义字段值
 
         :param value: The value of this ScrumCustomField.
-        :type: str
+        :type value: str
         """
         self._value = value
 

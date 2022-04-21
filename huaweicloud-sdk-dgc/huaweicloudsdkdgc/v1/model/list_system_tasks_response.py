@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSystemTasksResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ListSystemTasksResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, start_time=None, end_time=None, last_update=None, status=None, message=None, sub_tasks=None):
-        """ListSystemTasksResponse - a model defined in huaweicloud sdk"""
+        """ListSystemTasksResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 
+        :type id: str
+        :param name: 
+        :type name: str
+        :param start_time: 
+        :type start_time: str
+        :param end_time: 
+        :type end_time: str
+        :param last_update: 
+        :type last_update: str
+        :param status: 
+        :type status: str
+        :param message: 
+        :type message: str
+        :param sub_tasks: 
+        :type sub_tasks: list[:class:`huaweicloudsdkdgc.v1.SubTaskStatus`]
+        """
         
         super(ListSystemTasksResponse, self).__init__()
 
@@ -91,7 +110,7 @@ class ListSystemTasksResponse(SdkResponse):
 
 
         :param id: The id of this ListSystemTasksResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -111,7 +130,7 @@ class ListSystemTasksResponse(SdkResponse):
 
 
         :param name: The name of this ListSystemTasksResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -131,7 +150,7 @@ class ListSystemTasksResponse(SdkResponse):
 
 
         :param start_time: The start_time of this ListSystemTasksResponse.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -151,7 +170,7 @@ class ListSystemTasksResponse(SdkResponse):
 
 
         :param end_time: The end_time of this ListSystemTasksResponse.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -171,7 +190,7 @@ class ListSystemTasksResponse(SdkResponse):
 
 
         :param last_update: The last_update of this ListSystemTasksResponse.
-        :type: str
+        :type last_update: str
         """
         self._last_update = last_update
 
@@ -191,7 +210,7 @@ class ListSystemTasksResponse(SdkResponse):
 
 
         :param status: The status of this ListSystemTasksResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -211,7 +230,7 @@ class ListSystemTasksResponse(SdkResponse):
 
 
         :param message: The message of this ListSystemTasksResponse.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -221,7 +240,7 @@ class ListSystemTasksResponse(SdkResponse):
 
 
         :return: The sub_tasks of this ListSystemTasksResponse.
-        :rtype: list[SubTaskStatus]
+        :rtype: list[:class:`huaweicloudsdkdgc.v1.SubTaskStatus`]
         """
         return self._sub_tasks
 
@@ -231,7 +250,7 @@ class ListSystemTasksResponse(SdkResponse):
 
 
         :param sub_tasks: The sub_tasks of this ListSystemTasksResponse.
-        :type: list[SubTaskStatus]
+        :type sub_tasks: list[:class:`huaweicloudsdkdgc.v1.SubTaskStatus`]
         """
         self._sub_tasks = sub_tasks
 

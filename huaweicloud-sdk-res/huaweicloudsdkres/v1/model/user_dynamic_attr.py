@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UserDynamicAttr:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UserDynamicAttr:
     }
 
     def __init__(self, user_interested_attrs=None, user_interested_action_type=None):
-        """UserDynamicAttr - a model defined in huaweicloud sdk"""
+        """UserDynamicAttr
+
+        The model defined in huaweicloud sdk
+
+        :param user_interested_attrs: 
+        :type user_interested_attrs: :class:`huaweicloudsdkres.v1.Attribute`
+        :param user_interested_action_type: 
+        :type user_interested_action_type: :class:`huaweicloudsdkres.v1.Attribute`
+        """
         
         
 
@@ -51,7 +58,7 @@ class UserDynamicAttr:
 
 
         :return: The user_interested_attrs of this UserDynamicAttr.
-        :rtype: Attribute
+        :rtype: :class:`huaweicloudsdkres.v1.Attribute`
         """
         return self._user_interested_attrs
 
@@ -61,7 +68,7 @@ class UserDynamicAttr:
 
 
         :param user_interested_attrs: The user_interested_attrs of this UserDynamicAttr.
-        :type: Attribute
+        :type user_interested_attrs: :class:`huaweicloudsdkres.v1.Attribute`
         """
         self._user_interested_attrs = user_interested_attrs
 
@@ -71,7 +78,7 @@ class UserDynamicAttr:
 
 
         :return: The user_interested_action_type of this UserDynamicAttr.
-        :rtype: Attribute
+        :rtype: :class:`huaweicloudsdkres.v1.Attribute`
         """
         return self._user_interested_action_type
 
@@ -81,7 +88,7 @@ class UserDynamicAttr:
 
 
         :param user_interested_action_type: The user_interested_action_type of this UserDynamicAttr.
-        :type: Attribute
+        :type user_interested_action_type: :class:`huaweicloudsdkres.v1.Attribute`
         """
         self._user_interested_action_type = user_interested_action_type
 

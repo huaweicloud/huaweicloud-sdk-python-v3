@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SetSpeedValueResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class SetSpeedValueResponse(SdkResponse):
     }
 
     def __init__(self, work_order_id=None):
-        """SetSpeedValueResponse - a model defined in huaweicloud sdk"""
+        """SetSpeedValueResponse
+
+        The model defined in huaweicloud sdk
+
+        :param work_order_id: 业务受理单号
+        :type work_order_id: int
+        """
         
         super(SetSpeedValueResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class SetSpeedValueResponse(SdkResponse):
         业务受理单号
 
         :param work_order_id: The work_order_id of this SetSpeedValueResponse.
-        :type: int
+        :type work_order_id: int
         """
         self._work_order_id = work_order_id
 

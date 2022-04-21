@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTasksRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -58,7 +57,41 @@ class ListTasksRequest:
     }
 
     def __init__(self, instance_id=None, limit=None, offset=None, task_id=None, name=None, status=None, task_type=None, source_datasource_id=None, target_datasource_id=None, sort_field=None, sort_type=None, execute_status=None, source_app_id=None, target_app_id=None, task_tag=None):
-        """ListTasksRequest - a model defined in huaweicloud sdk"""
+        """ListTasksRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param limit: 每页显示条目数量，最大数量999，超过999后只返回999
+        :type limit: int
+        :param offset: 分页查询，分页的偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
+        :type offset: int
+        :param task_id: 任务ID，可为空
+        :type task_id: str
+        :param name: 模糊匹配任务名称，可为空
+        :type name: str
+        :param status: 任务状态，可为空 - 0 （停止/未启动） - 1 （运行中）
+        :type status: int
+        :param task_type: 任务类型 - realtime (实时) - timing (定时)
+        :type task_type: str
+        :param source_datasource_id: 源端数据源ID，可为空
+        :type source_datasource_id: str
+        :param target_datasource_id: 目标端数据源ID，可为空
+        :type target_datasource_id: str
+        :param sort_field: 查询排序的条件
+        :type sort_field: str
+        :param sort_type: 排序类型，可为空 - ASC (升序) - DESC (降序)
+        :type sort_type: str
+        :param execute_status: 执行状态，可为空 - UNSTARTED (未启动) - WAITING (等待执行) - RUNNING (执行中) - SUCCESS (执行成功) - CANCELLED (任务取消) - ERROR (执行异常)
+        :type execute_status: str
+        :param source_app_id: 源端数据源所属集成应用ID，可为空
+        :type source_app_id: str
+        :param target_app_id: 目标端数据源所属集成应用ID，可为空
+        :type target_app_id: str
+        :param task_tag: 任务标签，可为空
+        :type task_tag: str
+        """
         
         
 
@@ -127,7 +160,7 @@ class ListTasksRequest:
         实例ID
 
         :param instance_id: The instance_id of this ListTasksRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -149,7 +182,7 @@ class ListTasksRequest:
         每页显示条目数量，最大数量999，超过999后只返回999
 
         :param limit: The limit of this ListTasksRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -171,7 +204,7 @@ class ListTasksRequest:
         分页查询，分页的偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
         :param offset: The offset of this ListTasksRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -193,7 +226,7 @@ class ListTasksRequest:
         任务ID，可为空
 
         :param task_id: The task_id of this ListTasksRequest.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -215,7 +248,7 @@ class ListTasksRequest:
         模糊匹配任务名称，可为空
 
         :param name: The name of this ListTasksRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -237,7 +270,7 @@ class ListTasksRequest:
         任务状态，可为空 - 0 （停止/未启动） - 1 （运行中）
 
         :param status: The status of this ListTasksRequest.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -259,7 +292,7 @@ class ListTasksRequest:
         任务类型 - realtime (实时) - timing (定时)
 
         :param task_type: The task_type of this ListTasksRequest.
-        :type: str
+        :type task_type: str
         """
         self._task_type = task_type
 
@@ -281,7 +314,7 @@ class ListTasksRequest:
         源端数据源ID，可为空
 
         :param source_datasource_id: The source_datasource_id of this ListTasksRequest.
-        :type: str
+        :type source_datasource_id: str
         """
         self._source_datasource_id = source_datasource_id
 
@@ -303,7 +336,7 @@ class ListTasksRequest:
         目标端数据源ID，可为空
 
         :param target_datasource_id: The target_datasource_id of this ListTasksRequest.
-        :type: str
+        :type target_datasource_id: str
         """
         self._target_datasource_id = target_datasource_id
 
@@ -325,7 +358,7 @@ class ListTasksRequest:
         查询排序的条件
 
         :param sort_field: The sort_field of this ListTasksRequest.
-        :type: str
+        :type sort_field: str
         """
         self._sort_field = sort_field
 
@@ -347,7 +380,7 @@ class ListTasksRequest:
         排序类型，可为空 - ASC (升序) - DESC (降序)
 
         :param sort_type: The sort_type of this ListTasksRequest.
-        :type: str
+        :type sort_type: str
         """
         self._sort_type = sort_type
 
@@ -369,7 +402,7 @@ class ListTasksRequest:
         执行状态，可为空 - UNSTARTED (未启动) - WAITING (等待执行) - RUNNING (执行中) - SUCCESS (执行成功) - CANCELLED (任务取消) - ERROR (执行异常)
 
         :param execute_status: The execute_status of this ListTasksRequest.
-        :type: str
+        :type execute_status: str
         """
         self._execute_status = execute_status
 
@@ -391,7 +424,7 @@ class ListTasksRequest:
         源端数据源所属集成应用ID，可为空
 
         :param source_app_id: The source_app_id of this ListTasksRequest.
-        :type: str
+        :type source_app_id: str
         """
         self._source_app_id = source_app_id
 
@@ -413,7 +446,7 @@ class ListTasksRequest:
         目标端数据源所属集成应用ID，可为空
 
         :param target_app_id: The target_app_id of this ListTasksRequest.
-        :type: str
+        :type target_app_id: str
         """
         self._target_app_id = target_app_id
 
@@ -435,7 +468,7 @@ class ListTasksRequest:
         任务标签，可为空
 
         :param task_tag: The task_tag of this ListTasksRequest.
-        :type: str
+        :type task_tag: str
         """
         self._task_tag = task_tag
 

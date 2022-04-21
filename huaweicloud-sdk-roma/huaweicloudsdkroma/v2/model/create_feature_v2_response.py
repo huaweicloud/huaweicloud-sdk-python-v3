@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateFeatureV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class CreateFeatureV2Response(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, enable=None, config=None, instance_id=None, update_time=None):
-        """CreateFeatureV2Response - a model defined in huaweicloud sdk"""
+        """CreateFeatureV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param id: 特性编号
+        :type id: str
+        :param name: 特性名称
+        :type name: str
+        :param enable: 是否开启特性
+        :type enable: bool
+        :param config: 特性参数配置
+        :type config: str
+        :param instance_id: 实例编号
+        :type instance_id: str
+        :param update_time: 实例特性更新时间
+        :type update_time: datetime
+        """
         
         super(CreateFeatureV2Response, self).__init__()
 
@@ -83,7 +98,7 @@ class CreateFeatureV2Response(SdkResponse):
         特性编号
 
         :param id: The id of this CreateFeatureV2Response.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -105,7 +120,7 @@ class CreateFeatureV2Response(SdkResponse):
         特性名称
 
         :param name: The name of this CreateFeatureV2Response.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -127,7 +142,7 @@ class CreateFeatureV2Response(SdkResponse):
         是否开启特性
 
         :param enable: The enable of this CreateFeatureV2Response.
-        :type: bool
+        :type enable: bool
         """
         self._enable = enable
 
@@ -149,7 +164,7 @@ class CreateFeatureV2Response(SdkResponse):
         特性参数配置
 
         :param config: The config of this CreateFeatureV2Response.
-        :type: str
+        :type config: str
         """
         self._config = config
 
@@ -171,7 +186,7 @@ class CreateFeatureV2Response(SdkResponse):
         实例编号
 
         :param instance_id: The instance_id of this CreateFeatureV2Response.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -193,7 +208,7 @@ class CreateFeatureV2Response(SdkResponse):
         实例特性更新时间
 
         :param update_time: The update_time of this CreateFeatureV2Response.
-        :type: datetime
+        :type update_time: datetime
         """
         self._update_time = update_time
 

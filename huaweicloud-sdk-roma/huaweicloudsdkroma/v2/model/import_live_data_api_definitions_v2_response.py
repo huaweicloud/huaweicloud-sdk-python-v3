@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ImportLiveDataApiDefinitionsV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ImportLiveDataApiDefinitionsV2Response(SdkResponse):
     }
 
     def __init__(self, success=None, failure=None, swagger=None):
-        """ImportLiveDataApiDefinitionsV2Response - a model defined in huaweicloud sdk"""
+        """ImportLiveDataApiDefinitionsV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param success: 导入成功信息
+        :type success: list[:class:`huaweicloudsdkroma.v2.Success`]
+        :param failure: 导入失败信息
+        :type failure: list[:class:`huaweicloudsdkroma.v2.Failure`]
+        :param swagger: 
+        :type swagger: :class:`huaweicloudsdkroma.v2.Swagger`
+        """
         
         super(ImportLiveDataApiDefinitionsV2Response, self).__init__()
 
@@ -57,7 +66,7 @@ class ImportLiveDataApiDefinitionsV2Response(SdkResponse):
         导入成功信息
 
         :return: The success of this ImportLiveDataApiDefinitionsV2Response.
-        :rtype: list[Success]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.Success`]
         """
         return self._success
 
@@ -68,7 +77,7 @@ class ImportLiveDataApiDefinitionsV2Response(SdkResponse):
         导入成功信息
 
         :param success: The success of this ImportLiveDataApiDefinitionsV2Response.
-        :type: list[Success]
+        :type success: list[:class:`huaweicloudsdkroma.v2.Success`]
         """
         self._success = success
 
@@ -79,7 +88,7 @@ class ImportLiveDataApiDefinitionsV2Response(SdkResponse):
         导入失败信息
 
         :return: The failure of this ImportLiveDataApiDefinitionsV2Response.
-        :rtype: list[Failure]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.Failure`]
         """
         return self._failure
 
@@ -90,7 +99,7 @@ class ImportLiveDataApiDefinitionsV2Response(SdkResponse):
         导入失败信息
 
         :param failure: The failure of this ImportLiveDataApiDefinitionsV2Response.
-        :type: list[Failure]
+        :type failure: list[:class:`huaweicloudsdkroma.v2.Failure`]
         """
         self._failure = failure
 
@@ -100,7 +109,7 @@ class ImportLiveDataApiDefinitionsV2Response(SdkResponse):
 
 
         :return: The swagger of this ImportLiveDataApiDefinitionsV2Response.
-        :rtype: Swagger
+        :rtype: :class:`huaweicloudsdkroma.v2.Swagger`
         """
         return self._swagger
 
@@ -110,7 +119,7 @@ class ImportLiveDataApiDefinitionsV2Response(SdkResponse):
 
 
         :param swagger: The swagger of this ImportLiveDataApiDefinitionsV2Response.
-        :type: Swagger
+        :type swagger: :class:`huaweicloudsdkroma.v2.Swagger`
         """
         self._swagger = swagger
 

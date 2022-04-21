@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchQueryJobReqPage:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchQueryJobReqPage:
     }
 
     def __init__(self, jobs=None, page_req=None):
-        """BatchQueryJobReqPage - a model defined in huaweicloud sdk"""
+        """BatchQueryJobReqPage
+
+        The model defined in huaweicloud sdk
+
+        :param jobs: 批量查询任务详情
+        :type jobs: list[str]
+        :param page_req: 
+        :type page_req: :class:`huaweicloudsdkdrs.v3.PageReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class BatchQueryJobReqPage:
         批量查询任务详情
 
         :param jobs: The jobs of this BatchQueryJobReqPage.
-        :type: list[str]
+        :type jobs: list[str]
         """
         self._jobs = jobs
 
@@ -72,7 +79,7 @@ class BatchQueryJobReqPage:
 
 
         :return: The page_req of this BatchQueryJobReqPage.
-        :rtype: PageReq
+        :rtype: :class:`huaweicloudsdkdrs.v3.PageReq`
         """
         return self._page_req
 
@@ -82,7 +89,7 @@ class BatchQueryJobReqPage:
 
 
         :param page_req: The page_req of this BatchQueryJobReqPage.
-        :type: PageReq
+        :type page_req: :class:`huaweicloudsdkdrs.v3.PageReq`
         """
         self._page_req = page_req
 

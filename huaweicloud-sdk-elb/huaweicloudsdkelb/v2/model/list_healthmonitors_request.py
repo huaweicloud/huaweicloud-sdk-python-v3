@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListHealthmonitorsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -58,7 +57,41 @@ class ListHealthmonitorsRequest:
     }
 
     def __init__(self, limit=None, marker=None, page_reverse=None, id=None, name=None, delay=None, max_retries=None, admin_state_up=None, timeout=None, type=None, monitor_port=None, expected_codes=None, domain_name=None, url_path=None, http_method=None):
-        """ListHealthmonitorsRequest - a model defined in huaweicloud sdk"""
+        """ListHealthmonitorsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 分页查询中每页的健康检查个数
+        :type limit: int
+        :param marker: 分页查询的起始的资源id，表示上一页最后一条查询记录的健康检查的id。不指定时表示查询第一页。
+        :type marker: str
+        :param page_reverse: 分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。
+        :type page_reverse: bool
+        :param id: 健康检查ID。
+        :type id: str
+        :param name: 健康检查名称。
+        :type name: str
+        :param delay: 健康检查间隔，单位秒，取值范围[1，50]。
+        :type delay: int
+        :param max_retries: 健康检查最大重试次数，取值范围[1，10]。
+        :type max_retries: int
+        :param admin_state_up: 健康检查的管理状态。取值范围：true/false。默认为true；true表示开启健康检查；false表示关闭健康检查。
+        :type admin_state_up: bool
+        :param timeout: 健康检查超时时间，单位秒，取值范围[1，50]。 建议该值小于delay的值。
+        :type timeout: int
+        :param type: 健康检查的类型。取值范围：TCP、UDP_CONNECT、HTTP。
+        :type type: str
+        :param monitor_port: 健康检查端口号]。默认为空，表示使用后端云服务器的protocol_port作为健康检查的检查端口。
+        :type monitor_port: int
+        :param expected_codes: 期望HTTP响应状态码；默认值：“200”。取值范围：单值，例如200；列表，例如200，202；区间，例如200-204。仅当type为HTTP时生效。 该字段为预留字段，暂未启用。
+        :type expected_codes: str
+        :param domain_name: 健康检查时，发送的http请求的域名。仅当type为HTTP时生效。默认为空，表示使用负载均衡器的vip_address作为http请求的目的地址。以数字或字母开头，只能包含数字、字母、’-’、’.’。例如：www.huaweitest.com
+        :type domain_name: str
+        :param url_path: 健康检查时发送的http请求路径。默认为“/”。以“/”开头。仅当type为HTTP时生效。例如：“/test”
+        :type url_path: str
+        :param http_method: HTTP请求的方法；默认值：GET取值范围：GET、HEAD、POST、PUT、DELETE、TRACE、OPTIONS、CONNECT、PATCH。仅当type为HTTP时生效。
+        :type http_method: str
+        """
         
         
 
@@ -128,7 +161,7 @@ class ListHealthmonitorsRequest:
         分页查询中每页的健康检查个数
 
         :param limit: The limit of this ListHealthmonitorsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -150,7 +183,7 @@ class ListHealthmonitorsRequest:
         分页查询的起始的资源id，表示上一页最后一条查询记录的健康检查的id。不指定时表示查询第一页。
 
         :param marker: The marker of this ListHealthmonitorsRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -172,7 +205,7 @@ class ListHealthmonitorsRequest:
         分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。
 
         :param page_reverse: The page_reverse of this ListHealthmonitorsRequest.
-        :type: bool
+        :type page_reverse: bool
         """
         self._page_reverse = page_reverse
 
@@ -194,7 +227,7 @@ class ListHealthmonitorsRequest:
         健康检查ID。
 
         :param id: The id of this ListHealthmonitorsRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -216,7 +249,7 @@ class ListHealthmonitorsRequest:
         健康检查名称。
 
         :param name: The name of this ListHealthmonitorsRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -238,7 +271,7 @@ class ListHealthmonitorsRequest:
         健康检查间隔，单位秒，取值范围[1，50]。
 
         :param delay: The delay of this ListHealthmonitorsRequest.
-        :type: int
+        :type delay: int
         """
         self._delay = delay
 
@@ -260,7 +293,7 @@ class ListHealthmonitorsRequest:
         健康检查最大重试次数，取值范围[1，10]。
 
         :param max_retries: The max_retries of this ListHealthmonitorsRequest.
-        :type: int
+        :type max_retries: int
         """
         self._max_retries = max_retries
 
@@ -282,7 +315,7 @@ class ListHealthmonitorsRequest:
         健康检查的管理状态。取值范围：true/false。默认为true；true表示开启健康检查；false表示关闭健康检查。
 
         :param admin_state_up: The admin_state_up of this ListHealthmonitorsRequest.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 
@@ -304,7 +337,7 @@ class ListHealthmonitorsRequest:
         健康检查超时时间，单位秒，取值范围[1，50]。 建议该值小于delay的值。
 
         :param timeout: The timeout of this ListHealthmonitorsRequest.
-        :type: int
+        :type timeout: int
         """
         self._timeout = timeout
 
@@ -326,7 +359,7 @@ class ListHealthmonitorsRequest:
         健康检查的类型。取值范围：TCP、UDP_CONNECT、HTTP。
 
         :param type: The type of this ListHealthmonitorsRequest.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -348,7 +381,7 @@ class ListHealthmonitorsRequest:
         健康检查端口号]。默认为空，表示使用后端云服务器的protocol_port作为健康检查的检查端口。
 
         :param monitor_port: The monitor_port of this ListHealthmonitorsRequest.
-        :type: int
+        :type monitor_port: int
         """
         self._monitor_port = monitor_port
 
@@ -370,7 +403,7 @@ class ListHealthmonitorsRequest:
         期望HTTP响应状态码；默认值：“200”。取值范围：单值，例如200；列表，例如200，202；区间，例如200-204。仅当type为HTTP时生效。 该字段为预留字段，暂未启用。
 
         :param expected_codes: The expected_codes of this ListHealthmonitorsRequest.
-        :type: str
+        :type expected_codes: str
         """
         self._expected_codes = expected_codes
 
@@ -392,7 +425,7 @@ class ListHealthmonitorsRequest:
         健康检查时，发送的http请求的域名。仅当type为HTTP时生效。默认为空，表示使用负载均衡器的vip_address作为http请求的目的地址。以数字或字母开头，只能包含数字、字母、’-’、’.’。例如：www.huaweitest.com
 
         :param domain_name: The domain_name of this ListHealthmonitorsRequest.
-        :type: str
+        :type domain_name: str
         """
         self._domain_name = domain_name
 
@@ -414,7 +447,7 @@ class ListHealthmonitorsRequest:
         健康检查时发送的http请求路径。默认为“/”。以“/”开头。仅当type为HTTP时生效。例如：“/test”
 
         :param url_path: The url_path of this ListHealthmonitorsRequest.
-        :type: str
+        :type url_path: str
         """
         self._url_path = url_path
 
@@ -436,7 +469,7 @@ class ListHealthmonitorsRequest:
         HTTP请求的方法；默认值：GET取值范围：GET、HEAD、POST、PUT、DELETE、TRACE、OPTIONS、CONNECT、PATCH。仅当type为HTTP时生效。
 
         :param http_method: The http_method of this ListHealthmonitorsRequest.
-        :type: str
+        :type http_method: str
         """
         self._http_method = http_method
 

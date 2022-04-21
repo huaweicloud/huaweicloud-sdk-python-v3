@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreatePortalRefNonceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreatePortalRefNonceResponse(SdkResponse):
     }
 
     def __init__(self, nonce=None):
-        """CreatePortalRefNonceResponse - a model defined in huaweicloud sdk"""
+        """CreatePortalRefNonceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param nonce: 用于跳转登录的nonce信息。 说明： 通过链接https://bmeeting.huaweicloud.com/?lang&#x3D;zh-CN&amp;nonce&#x3D;xxxxxxxxxxxxx#/login进行免登陆跳转。 
+        :type nonce: str
+        """
         
         super(CreatePortalRefNonceResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class CreatePortalRefNonceResponse(SdkResponse):
         用于跳转登录的nonce信息。 说明： 通过链接https://bmeeting.huaweicloud.com/?lang=zh-CN&nonce=xxxxxxxxxxxxx#/login进行免登陆跳转。 
 
         :param nonce: The nonce of this CreatePortalRefNonceResponse.
-        :type: str
+        :type nonce: str
         """
         self._nonce = nonce
 

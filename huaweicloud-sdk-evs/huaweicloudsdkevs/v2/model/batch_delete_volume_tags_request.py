@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchDeleteVolumeTagsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchDeleteVolumeTagsRequest:
     }
 
     def __init__(self, volume_id=None, body=None):
-        """BatchDeleteVolumeTagsRequest - a model defined in huaweicloud sdk"""
+        """BatchDeleteVolumeTagsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param volume_id: 磁盘ID。
+        :type volume_id: str
+        :param body: Body of the BatchDeleteVolumeTagsRequest
+        :type body: :class:`huaweicloudsdkevs.v2.BatchDeleteVolumeTagsRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class BatchDeleteVolumeTagsRequest:
         磁盘ID。
 
         :param volume_id: The volume_id of this BatchDeleteVolumeTagsRequest.
-        :type: str
+        :type volume_id: str
         """
         self._volume_id = volume_id
 
@@ -72,7 +79,7 @@ class BatchDeleteVolumeTagsRequest:
 
 
         :return: The body of this BatchDeleteVolumeTagsRequest.
-        :rtype: BatchDeleteVolumeTagsRequestBody
+        :rtype: :class:`huaweicloudsdkevs.v2.BatchDeleteVolumeTagsRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class BatchDeleteVolumeTagsRequest:
 
 
         :param body: The body of this BatchDeleteVolumeTagsRequest.
-        :type: BatchDeleteVolumeTagsRequestBody
+        :type body: :class:`huaweicloudsdkevs.v2.BatchDeleteVolumeTagsRequestBody`
         """
         self._body = body
 

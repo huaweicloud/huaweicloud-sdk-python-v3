@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddToPersonalSpaceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class AddToPersonalSpaceResponse(SdkResponse):
     }
 
     def __init__(self):
-        """AddToPersonalSpaceResponse - a model defined in huaweicloud sdk"""
+        """AddToPersonalSpaceResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(AddToPersonalSpaceResponse, self).__init__()
         self.discriminator = None

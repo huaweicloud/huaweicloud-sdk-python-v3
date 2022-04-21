@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NeutronSecurityGroupRule:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class NeutronSecurityGroupRule:
     }
 
     def __init__(self, description=None, direction=None, ethertype=None, id=None, port_range_max=None, port_range_min=None, protocol=None, remote_group_id=None, remote_ip_prefix=None, security_group_id=None, tenant_id=None, project_id=None, created_at=None, updated_at=None):
-        """NeutronSecurityGroupRule - a model defined in huaweicloud sdk"""
+        """NeutronSecurityGroupRule
+
+        The model defined in huaweicloud sdk
+
+        :param description: 安全组规则描述
+        :type description: str
+        :param direction: 功能说明：规则方向 取值范围：ingress、egress
+        :type direction: str
+        :param ethertype: 功能说明：网络类型 取值范围：IPv4、IPv6
+        :type ethertype: str
+        :param id: 安全组规则ID，查询安全组规则非必选
+        :type id: str
+        :param port_range_max: 功能说明：最大端口 取值范围：当协议类型为ICMP时，该值表示ICMP的code
+        :type port_range_max: int
+        :param port_range_min: 功能说明：最小端口 当协议类型为ICMP时，该值表示ICMP的type。protocol为tcp和udp时，port_range_max和port_range_min必须同时输入，且port_range_max应大于等于port_range_min。protocol为icmp时，指定ICMP code（port_range_max）时，必须同时指定ICMP type（port_range_min）。
+        :type port_range_min: int
+        :param protocol: 功能说明：tcp/udp/icmp/icmpv6或IP协议编号（0~255） 约束：协议为icmpv6时，网络类型应该为IPv6；协议为icmp时，网络类型应该为IPv4
+        :type protocol: str
+        :param remote_group_id: 所属安全组的对端ID
+        :type remote_group_id: str
+        :param remote_ip_prefix: 对端ip网段
+        :type remote_ip_prefix: str
+        :param security_group_id: 所属安全组ID
+        :type security_group_id: str
+        :param tenant_id: 项目ID
+        :type tenant_id: str
+        :param project_id: 项目ID
+        :type project_id: str
+        :param created_at: 功能说明：资源创建UTC时间 格式：yyyy-MM-ddTHH:mm:ss
+        :type created_at: datetime
+        :param updated_at: 功能说明：资源更新UTC时间 格式：yyyy-MM-ddTHH:mm:ss
+        :type updated_at: datetime
+        """
         
         
 
@@ -109,7 +140,7 @@ class NeutronSecurityGroupRule:
         安全组规则描述
 
         :param description: The description of this NeutronSecurityGroupRule.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -131,7 +162,7 @@ class NeutronSecurityGroupRule:
         功能说明：规则方向 取值范围：ingress、egress
 
         :param direction: The direction of this NeutronSecurityGroupRule.
-        :type: str
+        :type direction: str
         """
         self._direction = direction
 
@@ -153,7 +184,7 @@ class NeutronSecurityGroupRule:
         功能说明：网络类型 取值范围：IPv4、IPv6
 
         :param ethertype: The ethertype of this NeutronSecurityGroupRule.
-        :type: str
+        :type ethertype: str
         """
         self._ethertype = ethertype
 
@@ -175,7 +206,7 @@ class NeutronSecurityGroupRule:
         安全组规则ID，查询安全组规则非必选
 
         :param id: The id of this NeutronSecurityGroupRule.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -197,7 +228,7 @@ class NeutronSecurityGroupRule:
         功能说明：最大端口 取值范围：当协议类型为ICMP时，该值表示ICMP的code
 
         :param port_range_max: The port_range_max of this NeutronSecurityGroupRule.
-        :type: int
+        :type port_range_max: int
         """
         self._port_range_max = port_range_max
 
@@ -219,7 +250,7 @@ class NeutronSecurityGroupRule:
         功能说明：最小端口 当协议类型为ICMP时，该值表示ICMP的type。protocol为tcp和udp时，port_range_max和port_range_min必须同时输入，且port_range_max应大于等于port_range_min。protocol为icmp时，指定ICMP code（port_range_max）时，必须同时指定ICMP type（port_range_min）。
 
         :param port_range_min: The port_range_min of this NeutronSecurityGroupRule.
-        :type: int
+        :type port_range_min: int
         """
         self._port_range_min = port_range_min
 
@@ -241,7 +272,7 @@ class NeutronSecurityGroupRule:
         功能说明：tcp/udp/icmp/icmpv6或IP协议编号（0~255） 约束：协议为icmpv6时，网络类型应该为IPv6；协议为icmp时，网络类型应该为IPv4
 
         :param protocol: The protocol of this NeutronSecurityGroupRule.
-        :type: str
+        :type protocol: str
         """
         self._protocol = protocol
 
@@ -263,7 +294,7 @@ class NeutronSecurityGroupRule:
         所属安全组的对端ID
 
         :param remote_group_id: The remote_group_id of this NeutronSecurityGroupRule.
-        :type: str
+        :type remote_group_id: str
         """
         self._remote_group_id = remote_group_id
 
@@ -285,7 +316,7 @@ class NeutronSecurityGroupRule:
         对端ip网段
 
         :param remote_ip_prefix: The remote_ip_prefix of this NeutronSecurityGroupRule.
-        :type: str
+        :type remote_ip_prefix: str
         """
         self._remote_ip_prefix = remote_ip_prefix
 
@@ -307,7 +338,7 @@ class NeutronSecurityGroupRule:
         所属安全组ID
 
         :param security_group_id: The security_group_id of this NeutronSecurityGroupRule.
-        :type: str
+        :type security_group_id: str
         """
         self._security_group_id = security_group_id
 
@@ -329,7 +360,7 @@ class NeutronSecurityGroupRule:
         项目ID
 
         :param tenant_id: The tenant_id of this NeutronSecurityGroupRule.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 
@@ -351,7 +382,7 @@ class NeutronSecurityGroupRule:
         项目ID
 
         :param project_id: The project_id of this NeutronSecurityGroupRule.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -373,7 +404,7 @@ class NeutronSecurityGroupRule:
         功能说明：资源创建UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 
         :param created_at: The created_at of this NeutronSecurityGroupRule.
-        :type: datetime
+        :type created_at: datetime
         """
         self._created_at = created_at
 
@@ -395,7 +426,7 @@ class NeutronSecurityGroupRule:
         功能说明：资源更新UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 
         :param updated_at: The updated_at of this NeutronSecurityGroupRule.
-        :type: datetime
+        :type updated_at: datetime
         """
         self._updated_at = updated_at
 

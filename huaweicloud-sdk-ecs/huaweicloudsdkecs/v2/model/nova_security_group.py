@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NovaSecurityGroup:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class NovaSecurityGroup:
     }
 
     def __init__(self, description=None, id=None, name=None, tenant_id=None, rules=None):
-        """NovaSecurityGroup - a model defined in huaweicloud sdk"""
+        """NovaSecurityGroup
+
+        The model defined in huaweicloud sdk
+
+        :param description: 安全组描述信息，长度0-255
+        :type description: str
+        :param id: 安全组ID，UUID格式
+        :type id: str
+        :param name: 安全组名字，长度0-255
+        :type name: str
+        :param tenant_id: 租户ID或项目ID
+        :type tenant_id: str
+        :param rules: 安全组规则列表
+        :type rules: list[:class:`huaweicloudsdkecs.v2.NovaSecurityGroupCommonRule`]
+        """
         
         
 
@@ -73,7 +86,7 @@ class NovaSecurityGroup:
         安全组描述信息，长度0-255
 
         :param description: The description of this NovaSecurityGroup.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -95,7 +108,7 @@ class NovaSecurityGroup:
         安全组ID，UUID格式
 
         :param id: The id of this NovaSecurityGroup.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -117,7 +130,7 @@ class NovaSecurityGroup:
         安全组名字，长度0-255
 
         :param name: The name of this NovaSecurityGroup.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -139,7 +152,7 @@ class NovaSecurityGroup:
         租户ID或项目ID
 
         :param tenant_id: The tenant_id of this NovaSecurityGroup.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 
@@ -150,7 +163,7 @@ class NovaSecurityGroup:
         安全组规则列表
 
         :return: The rules of this NovaSecurityGroup.
-        :rtype: list[NovaSecurityGroupCommonRule]
+        :rtype: list[:class:`huaweicloudsdkecs.v2.NovaSecurityGroupCommonRule`]
         """
         return self._rules
 
@@ -161,7 +174,7 @@ class NovaSecurityGroup:
         安全组规则列表
 
         :param rules: The rules of this NovaSecurityGroup.
-        :type: list[NovaSecurityGroupCommonRule]
+        :type rules: list[:class:`huaweicloudsdkecs.v2.NovaSecurityGroupCommonRule`]
         """
         self._rules = rules
 

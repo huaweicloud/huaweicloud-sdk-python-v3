@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDDosResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateDDosResponse(SdkResponse):
     }
 
     def __init__(self, error_code=None, error_msg=None, task_id=None):
-        """UpdateDDosResponse - a model defined in huaweicloud sdk"""
+        """UpdateDDosResponse
+
+        The model defined in huaweicloud sdk
+
+        :param error_code: 内部错误码
+        :type error_code: str
+        :param error_msg: 内部错误描述
+        :type error_msg: str
+        :param task_id: 任务ID，后续可根据该ID查询本任务状态。 本字段为后续的任务审计扩展，暂时不需要，先保留。
+        :type task_id: str
+        """
         
         super(UpdateDDosResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class UpdateDDosResponse(SdkResponse):
         内部错误码
 
         :param error_code: The error_code of this UpdateDDosResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -90,7 +99,7 @@ class UpdateDDosResponse(SdkResponse):
         内部错误描述
 
         :param error_msg: The error_msg of this UpdateDDosResponse.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 
@@ -112,7 +121,7 @@ class UpdateDDosResponse(SdkResponse):
         任务ID，后续可根据该ID查询本任务状态。 本字段为后续的任务审计扩展，暂时不需要，先保留。
 
         :param task_id: The task_id of this UpdateDDosResponse.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 

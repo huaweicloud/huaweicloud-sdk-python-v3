@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AccessoryJsonFormatReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class AccessoryJsonFormatReq:
     }
 
     def __init__(self, accessory_name=None, accessory_from=None, upload_type=None, accessory_data=None):
-        """AccessoryJsonFormatReq - a model defined in huaweicloud sdk"""
+        """AccessoryJsonFormatReq
+
+        The model defined in huaweicloud sdk
+
+        :param accessory_name: 文件名称
+        :type accessory_name: str
+        :param accessory_from: 文件来源
+        :type accessory_from: str
+        :param upload_type: 上传类型
+        :type upload_type: int
+        :param accessory_data: 文件内容，Base64格式
+        :type accessory_data: str
+        """
         
         
 
@@ -72,7 +83,7 @@ class AccessoryJsonFormatReq:
         文件名称
 
         :param accessory_name: The accessory_name of this AccessoryJsonFormatReq.
-        :type: str
+        :type accessory_name: str
         """
         self._accessory_name = accessory_name
 
@@ -94,7 +105,7 @@ class AccessoryJsonFormatReq:
         文件来源
 
         :param accessory_from: The accessory_from of this AccessoryJsonFormatReq.
-        :type: str
+        :type accessory_from: str
         """
         self._accessory_from = accessory_from
 
@@ -116,7 +127,7 @@ class AccessoryJsonFormatReq:
         上传类型
 
         :param upload_type: The upload_type of this AccessoryJsonFormatReq.
-        :type: int
+        :type upload_type: int
         """
         self._upload_type = upload_type
 
@@ -138,7 +149,7 @@ class AccessoryJsonFormatReq:
         文件内容，Base64格式
 
         :param accessory_data: The accessory_data of this AccessoryJsonFormatReq.
-        :type: str
+        :type accessory_data: str
         """
         self._accessory_data = accessory_data
 

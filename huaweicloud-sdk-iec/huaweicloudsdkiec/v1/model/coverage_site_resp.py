@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CoverageSiteResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CoverageSiteResp:
     }
 
     def __init__(self, site=None, demands=None, i18n_site=None):
-        """CoverageSiteResp - a model defined in huaweicloud sdk"""
+        """CoverageSiteResp
+
+        The model defined in huaweicloud sdk
+
+        :param site: 站点名称。 具体信息可通过调用“查询边缘站点列表”来查询(注意：本字段区分大小写)。
+        :type site: str
+        :param demands: 租户需求数量列表。表示租户发放资源站点的运营商和发放的资源组的数量。
+        :type demands: list[:class:`huaweicloudsdkiec.v1.DemandResp`]
+        :param i18n_site: 覆盖区域的国际化信息。
+        :type i18n_site: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class CoverageSiteResp:
         站点名称。 具体信息可通过调用“查询边缘站点列表”来查询(注意：本字段区分大小写)。
 
         :param site: The site of this CoverageSiteResp.
-        :type: str
+        :type site: str
         """
         self._site = site
 
@@ -77,7 +86,7 @@ class CoverageSiteResp:
         租户需求数量列表。表示租户发放资源站点的运营商和发放的资源组的数量。
 
         :return: The demands of this CoverageSiteResp.
-        :rtype: list[DemandResp]
+        :rtype: list[:class:`huaweicloudsdkiec.v1.DemandResp`]
         """
         return self._demands
 
@@ -88,7 +97,7 @@ class CoverageSiteResp:
         租户需求数量列表。表示租户发放资源站点的运营商和发放的资源组的数量。
 
         :param demands: The demands of this CoverageSiteResp.
-        :type: list[DemandResp]
+        :type demands: list[:class:`huaweicloudsdkiec.v1.DemandResp`]
         """
         self._demands = demands
 
@@ -110,7 +119,7 @@ class CoverageSiteResp:
         覆盖区域的国际化信息。
 
         :param i18n_site: The i18n_site of this CoverageSiteResp.
-        :type: str
+        :type i18n_site: str
         """
         self._i18n_site = i18n_site
 

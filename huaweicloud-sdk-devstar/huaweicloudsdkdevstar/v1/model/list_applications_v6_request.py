@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListApplicationsV6Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class ListApplicationsV6Request:
     }
 
     def __init__(self, x_language=None, attention=None, region_id=None, keyword=None, project_id=None, topic_id=None, is_created_by_self=None, sort_key=None, sort_dir=None, limit=None, offset=None):
-        """ListApplicationsV6Request - a model defined in huaweicloud sdk"""
+        """ListApplicationsV6Request
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言类型 中文:zh-cn 英文:en-us
+        :type x_language: str
+        :param attention: 是否查询我关注的应用
+        :type attention: bool
+        :param region_id: 区域id，从控制台获取方法请参见: [获取区域ID](https://console.huaweicloud.com/iam/?region&#x3D;cn-north-1&amp;locale&#x3D;zh-cn#/iam/projects)
+        :type region_id: str
+        :param keyword: 搜索关键字,支持按名称和描述搜索，默认null
+        :type keyword: str
+        :param project_id: 所属DevCloud项目id，从 [项目列表接口](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product&#x3D;DevStar&amp;api&#x3D;ListProjectsV4) 查询。
+        :type project_id: str
+        :param topic_id: 主题id,场景或者部署方式分类id
+        :type topic_id: str
+        :param is_created_by_self: 是否查询由我创建
+        :type is_created_by_self: bool
+        :param sort_key: 排序字段, name：应用名称,created_at:创建时间,updated_at:更新时间
+        :type sort_key: list[str]
+        :param sort_dir: 排序方式, desc:降序, asc:升序
+        :type sort_dir: list[str]
+        :param limit: 每页显示的条目数量,默认10
+        :type limit: int
+        :param offset: 偏移量，表示从此偏移量开始查询,默认0
+        :type offset: int
+        """
         
         
 
@@ -108,7 +133,7 @@ class ListApplicationsV6Request:
         语言类型 中文:zh-cn 英文:en-us
 
         :param x_language: The x_language of this ListApplicationsV6Request.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -130,7 +155,7 @@ class ListApplicationsV6Request:
         是否查询我关注的应用
 
         :param attention: The attention of this ListApplicationsV6Request.
-        :type: bool
+        :type attention: bool
         """
         self._attention = attention
 
@@ -152,7 +177,7 @@ class ListApplicationsV6Request:
         区域id，从控制台获取方法请参见: [获取区域ID](https://console.huaweicloud.com/iam/?region=cn-north-1&locale=zh-cn#/iam/projects)
 
         :param region_id: The region_id of this ListApplicationsV6Request.
-        :type: str
+        :type region_id: str
         """
         self._region_id = region_id
 
@@ -174,7 +199,7 @@ class ListApplicationsV6Request:
         搜索关键字,支持按名称和描述搜索，默认null
 
         :param keyword: The keyword of this ListApplicationsV6Request.
-        :type: str
+        :type keyword: str
         """
         self._keyword = keyword
 
@@ -196,7 +221,7 @@ class ListApplicationsV6Request:
         所属DevCloud项目id，从 [项目列表接口](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=DevStar&api=ListProjectsV4) 查询。
 
         :param project_id: The project_id of this ListApplicationsV6Request.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -218,7 +243,7 @@ class ListApplicationsV6Request:
         主题id,场景或者部署方式分类id
 
         :param topic_id: The topic_id of this ListApplicationsV6Request.
-        :type: str
+        :type topic_id: str
         """
         self._topic_id = topic_id
 
@@ -240,7 +265,7 @@ class ListApplicationsV6Request:
         是否查询由我创建
 
         :param is_created_by_self: The is_created_by_self of this ListApplicationsV6Request.
-        :type: bool
+        :type is_created_by_self: bool
         """
         self._is_created_by_self = is_created_by_self
 
@@ -262,7 +287,7 @@ class ListApplicationsV6Request:
         排序字段, name：应用名称,created_at:创建时间,updated_at:更新时间
 
         :param sort_key: The sort_key of this ListApplicationsV6Request.
-        :type: list[str]
+        :type sort_key: list[str]
         """
         self._sort_key = sort_key
 
@@ -284,7 +309,7 @@ class ListApplicationsV6Request:
         排序方式, desc:降序, asc:升序
 
         :param sort_dir: The sort_dir of this ListApplicationsV6Request.
-        :type: list[str]
+        :type sort_dir: list[str]
         """
         self._sort_dir = sort_dir
 
@@ -306,7 +331,7 @@ class ListApplicationsV6Request:
         每页显示的条目数量,默认10
 
         :param limit: The limit of this ListApplicationsV6Request.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -328,7 +353,7 @@ class ListApplicationsV6Request:
         偏移量，表示从此偏移量开始查询,默认0
 
         :param offset: The offset of this ListApplicationsV6Request.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 

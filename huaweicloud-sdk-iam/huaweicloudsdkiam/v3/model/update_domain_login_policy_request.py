@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDomainLoginPolicyRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateDomainLoginPolicyRequest:
     }
 
     def __init__(self, domain_id=None, body=None):
-        """UpdateDomainLoginPolicyRequest - a model defined in huaweicloud sdk"""
+        """UpdateDomainLoginPolicyRequest
+
+        The model defined in huaweicloud sdk
+
+        :param domain_id: 账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
+        :type domain_id: str
+        :param body: Body of the UpdateDomainLoginPolicyRequest
+        :type body: :class:`huaweicloudsdkiam.v3.UpdateDomainLoginPolicyRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateDomainLoginPolicyRequest:
         账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param domain_id: The domain_id of this UpdateDomainLoginPolicyRequest.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -72,7 +79,7 @@ class UpdateDomainLoginPolicyRequest:
 
 
         :return: The body of this UpdateDomainLoginPolicyRequest.
-        :rtype: UpdateDomainLoginPolicyRequestBody
+        :rtype: :class:`huaweicloudsdkiam.v3.UpdateDomainLoginPolicyRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateDomainLoginPolicyRequest:
 
 
         :param body: The body of this UpdateDomainLoginPolicyRequest.
-        :type: UpdateDomainLoginPolicyRequestBody
+        :type body: :class:`huaweicloudsdkiam.v3.UpdateDomainLoginPolicyRequestBody`
         """
         self._body = body
 

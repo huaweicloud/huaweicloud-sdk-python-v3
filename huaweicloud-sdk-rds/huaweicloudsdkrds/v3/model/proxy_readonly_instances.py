@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ProxyReadonlyInstances:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ProxyReadonlyInstances:
     }
 
     def __init__(self, id=None, weight=None):
-        """ProxyReadonlyInstances - a model defined in huaweicloud sdk"""
+        """ProxyReadonlyInstances
+
+        The model defined in huaweicloud sdk
+
+        :param id: 只读实例ID。
+        :type id: str
+        :param weight: 只读实例权重，取值范围为0~1000。
+        :type weight: int
+        """
         
         
 
@@ -61,7 +68,7 @@ class ProxyReadonlyInstances:
         只读实例ID。
 
         :param id: The id of this ProxyReadonlyInstances.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -83,7 +90,7 @@ class ProxyReadonlyInstances:
         只读实例权重，取值范围为0~1000。
 
         :param weight: The weight of this ProxyReadonlyInstances.
-        :type: int
+        :type weight: int
         """
         self._weight = weight
 

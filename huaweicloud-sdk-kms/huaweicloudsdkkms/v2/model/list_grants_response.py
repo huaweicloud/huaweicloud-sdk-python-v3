@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListGrantsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListGrantsResponse(SdkResponse):
     }
 
     def __init__(self, grants=None, next_marker=None, truncated=None, total=None):
-        """ListGrantsResponse - a model defined in huaweicloud sdk"""
+        """ListGrantsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param grants: grant列表，详情请参见grants字段数据结构说明。
+        :type grants: list[:class:`huaweicloudsdkkms.v2.Grants`]
+        :param next_marker: 获取下一页所需要传递的marker值。 当“truncated”为“false”时，“next_marker”为空。
+        :type next_marker: str
+        :param truncated: 是否还有下一页：  - “true”表示还有数据。  - “false”表示已经是最后一页。
+        :type truncated: str
+        :param total: grant总条数。
+        :type total: int
+        """
         
         super(ListGrantsResponse, self).__init__()
 
@@ -62,7 +73,7 @@ class ListGrantsResponse(SdkResponse):
         grant列表，详情请参见grants字段数据结构说明。
 
         :return: The grants of this ListGrantsResponse.
-        :rtype: list[Grants]
+        :rtype: list[:class:`huaweicloudsdkkms.v2.Grants`]
         """
         return self._grants
 
@@ -73,7 +84,7 @@ class ListGrantsResponse(SdkResponse):
         grant列表，详情请参见grants字段数据结构说明。
 
         :param grants: The grants of this ListGrantsResponse.
-        :type: list[Grants]
+        :type grants: list[:class:`huaweicloudsdkkms.v2.Grants`]
         """
         self._grants = grants
 
@@ -95,7 +106,7 @@ class ListGrantsResponse(SdkResponse):
         获取下一页所需要传递的marker值。 当“truncated”为“false”时，“next_marker”为空。
 
         :param next_marker: The next_marker of this ListGrantsResponse.
-        :type: str
+        :type next_marker: str
         """
         self._next_marker = next_marker
 
@@ -117,7 +128,7 @@ class ListGrantsResponse(SdkResponse):
         是否还有下一页：  - “true”表示还有数据。  - “false”表示已经是最后一页。
 
         :param truncated: The truncated of this ListGrantsResponse.
-        :type: str
+        :type truncated: str
         """
         self._truncated = truncated
 
@@ -139,7 +150,7 @@ class ListGrantsResponse(SdkResponse):
         grant总条数。
 
         :param total: The total of this ListGrantsResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 

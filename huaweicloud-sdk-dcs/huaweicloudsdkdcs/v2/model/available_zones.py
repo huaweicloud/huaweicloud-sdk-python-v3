@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AvailableZones:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class AvailableZones:
     }
 
     def __init__(self, code=None, port=None, name=None, id=None, resource_availability=None):
-        """AvailableZones - a model defined in huaweicloud sdk"""
+        """AvailableZones
+
+        The model defined in huaweicloud sdk
+
+        :param code: 可用区编码。
+        :type code: str
+        :param port: 可用区端口号。
+        :type port: str
+        :param name: 可用区名称。
+        :type name: str
+        :param id: 可用区ID。
+        :type id: str
+        :param resource_availability: 分区上是否还有可用资源。 - true：还有资源。 - false：资源已售罄。 
+        :type resource_availability: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class AvailableZones:
         可用区编码。
 
         :param code: The code of this AvailableZones.
-        :type: str
+        :type code: str
         """
         self._code = code
 
@@ -100,7 +113,7 @@ class AvailableZones:
         可用区端口号。
 
         :param port: The port of this AvailableZones.
-        :type: str
+        :type port: str
         """
         self._port = port
 
@@ -122,7 +135,7 @@ class AvailableZones:
         可用区名称。
 
         :param name: The name of this AvailableZones.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -144,7 +157,7 @@ class AvailableZones:
         可用区ID。
 
         :param id: The id of this AvailableZones.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -166,7 +179,7 @@ class AvailableZones:
         分区上是否还有可用资源。 - true：还有资源。 - false：资源已售罄。 
 
         :param resource_availability: The resource_availability of this AvailableZones.
-        :type: str
+        :type resource_availability: str
         """
         self._resource_availability = resource_availability
 

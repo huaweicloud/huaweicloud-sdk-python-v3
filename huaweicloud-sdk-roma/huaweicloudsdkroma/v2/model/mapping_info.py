@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MappingInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class MappingInfo:
     }
 
     def __init__(self, source_column=None, source_column_type=None, source_column_length=None, target_column=None, target_column_type=None, target_column_length=None):
-        """MappingInfo - a model defined in huaweicloud sdk"""
+        """MappingInfo
+
+        The model defined in huaweicloud sdk
+
+        :param source_column: 源端字段
+        :type source_column: str
+        :param source_column_type: 源端字段类型
+        :type source_column_type: str
+        :param source_column_length: 源端字段长度
+        :type source_column_length: str
+        :param target_column: 目标端字段
+        :type target_column: str
+        :param target_column_type: 目标端字段类型
+        :type target_column_type: str
+        :param target_column_length: 目标端字段长度
+        :type target_column_length: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class MappingInfo:
         源端字段
 
         :param source_column: The source_column of this MappingInfo.
-        :type: str
+        :type source_column: str
         """
         self._source_column = source_column
 
@@ -105,7 +120,7 @@ class MappingInfo:
         源端字段类型
 
         :param source_column_type: The source_column_type of this MappingInfo.
-        :type: str
+        :type source_column_type: str
         """
         self._source_column_type = source_column_type
 
@@ -127,7 +142,7 @@ class MappingInfo:
         源端字段长度
 
         :param source_column_length: The source_column_length of this MappingInfo.
-        :type: str
+        :type source_column_length: str
         """
         self._source_column_length = source_column_length
 
@@ -149,7 +164,7 @@ class MappingInfo:
         目标端字段
 
         :param target_column: The target_column of this MappingInfo.
-        :type: str
+        :type target_column: str
         """
         self._target_column = target_column
 
@@ -171,7 +186,7 @@ class MappingInfo:
         目标端字段类型
 
         :param target_column_type: The target_column_type of this MappingInfo.
-        :type: str
+        :type target_column_type: str
         """
         self._target_column_type = target_column_type
 
@@ -193,7 +208,7 @@ class MappingInfo:
         目标端字段长度
 
         :param target_column_length: The target_column_length of this MappingInfo.
-        :type: str
+        :type target_column_length: str
         """
         self._target_column_length = target_column_length
 

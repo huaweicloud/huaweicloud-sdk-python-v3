@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchDeleteClusterTagsReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchDeleteClusterTagsReq:
     }
 
     def __init__(self, action=None, tags=None):
-        """BatchDeleteClusterTagsReq - a model defined in huaweicloud sdk"""
+        """BatchDeleteClusterTagsReq
+
+        The model defined in huaweicloud sdk
+
+        :param action: 操作标识：仅限于delete（删除）。
+        :type action: str
+        :param tags: 标签列表。
+        :type tags: list[:class:`huaweicloudsdkmrs.v1.Tag`]
+        """
         
         
 
@@ -61,7 +68,7 @@ class BatchDeleteClusterTagsReq:
         操作标识：仅限于delete（删除）。
 
         :param action: The action of this BatchDeleteClusterTagsReq.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -72,7 +79,7 @@ class BatchDeleteClusterTagsReq:
         标签列表。
 
         :return: The tags of this BatchDeleteClusterTagsReq.
-        :rtype: list[Tag]
+        :rtype: list[:class:`huaweicloudsdkmrs.v1.Tag`]
         """
         return self._tags
 
@@ -83,7 +90,7 @@ class BatchDeleteClusterTagsReq:
         标签列表。
 
         :param tags: The tags of this BatchDeleteClusterTagsReq.
-        :type: list[Tag]
+        :type tags: list[:class:`huaweicloudsdkmrs.v1.Tag`]
         """
         self._tags = tags
 

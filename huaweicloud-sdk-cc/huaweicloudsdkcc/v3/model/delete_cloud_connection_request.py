@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteCloudConnectionRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteCloudConnectionRequest:
     }
 
     def __init__(self, id=None):
-        """DeleteCloudConnectionRequest - a model defined in huaweicloud sdk"""
+        """DeleteCloudConnectionRequest
+
+        The model defined in huaweicloud sdk
+
+        :param id: 云连接实例ID。
+        :type id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteCloudConnectionRequest:
         云连接实例ID。
 
         :param id: The id of this DeleteCloudConnectionRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 

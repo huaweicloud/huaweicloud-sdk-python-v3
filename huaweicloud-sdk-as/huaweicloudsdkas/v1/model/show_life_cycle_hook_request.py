@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowLifeCycleHookRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowLifeCycleHookRequest:
     }
 
     def __init__(self, scaling_group_id=None, lifecycle_hook_name=None):
-        """ShowLifeCycleHookRequest - a model defined in huaweicloud sdk"""
+        """ShowLifeCycleHookRequest
+
+        The model defined in huaweicloud sdk
+
+        :param scaling_group_id: 伸缩组标识。
+        :type scaling_group_id: str
+        :param lifecycle_hook_name: 生命周期挂钩标识。
+        :type lifecycle_hook_name: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ShowLifeCycleHookRequest:
         伸缩组标识。
 
         :param scaling_group_id: The scaling_group_id of this ShowLifeCycleHookRequest.
-        :type: str
+        :type scaling_group_id: str
         """
         self._scaling_group_id = scaling_group_id
 
@@ -83,7 +90,7 @@ class ShowLifeCycleHookRequest:
         生命周期挂钩标识。
 
         :param lifecycle_hook_name: The lifecycle_hook_name of this ShowLifeCycleHookRequest.
-        :type: str
+        :type lifecycle_hook_name: str
         """
         self._lifecycle_hook_name = lifecycle_hook_name
 

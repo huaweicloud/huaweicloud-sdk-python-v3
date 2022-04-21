@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateNatGatewaySnatRuleRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateNatGatewaySnatRuleRequest:
     }
 
     def __init__(self, snat_rule_id=None, body=None):
-        """UpdateNatGatewaySnatRuleRequest - a model defined in huaweicloud sdk"""
+        """UpdateNatGatewaySnatRuleRequest
+
+        The model defined in huaweicloud sdk
+
+        :param snat_rule_id: SNAT规则的ID。
+        :type snat_rule_id: str
+        :param body: Body of the UpdateNatGatewaySnatRuleRequest
+        :type body: :class:`huaweicloudsdknat.v2.UpdateNatGatewaySnatRuleRequestOption`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateNatGatewaySnatRuleRequest:
         SNAT规则的ID。
 
         :param snat_rule_id: The snat_rule_id of this UpdateNatGatewaySnatRuleRequest.
-        :type: str
+        :type snat_rule_id: str
         """
         self._snat_rule_id = snat_rule_id
 
@@ -72,7 +79,7 @@ class UpdateNatGatewaySnatRuleRequest:
 
 
         :return: The body of this UpdateNatGatewaySnatRuleRequest.
-        :rtype: UpdateNatGatewaySnatRuleRequestOption
+        :rtype: :class:`huaweicloudsdknat.v2.UpdateNatGatewaySnatRuleRequestOption`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateNatGatewaySnatRuleRequest:
 
 
         :param body: The body of this UpdateNatGatewaySnatRuleRequest.
-        :type: UpdateNatGatewaySnatRuleRequestOption
+        :type body: :class:`huaweicloudsdknat.v2.UpdateNatGatewaySnatRuleRequestOption`
         """
         self._body = body
 

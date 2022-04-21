@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ChangeOsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ChangeOsRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """ChangeOsRequest - a model defined in huaweicloud sdk"""
+        """ChangeOsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 边缘实例ID。
+        :type instance_id: str
+        :param body: Body of the ChangeOsRequest
+        :type body: :class:`huaweicloudsdkiec.v1.ChangeOsOption`
+        """
         
         
 
@@ -62,7 +69,7 @@ class ChangeOsRequest:
         边缘实例ID。
 
         :param instance_id: The instance_id of this ChangeOsRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -72,7 +79,7 @@ class ChangeOsRequest:
 
 
         :return: The body of this ChangeOsRequest.
-        :rtype: ChangeOsOption
+        :rtype: :class:`huaweicloudsdkiec.v1.ChangeOsOption`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class ChangeOsRequest:
 
 
         :param body: The body of this ChangeOsRequest.
-        :type: ChangeOsOption
+        :type body: :class:`huaweicloudsdkiec.v1.ChangeOsOption`
         """
         self._body = body
 

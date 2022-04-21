@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApiGroupCommonInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ApiGroupCommonInfo:
     }
 
     def __init__(self, id=None, name=None, status=None, sl_domain=None, register_time=None, update_time=None, on_sell_status=None, url_domains=None):
-        """ApiGroupCommonInfo - a model defined in huaweicloud sdk"""
+        """ApiGroupCommonInfo
+
+        The model defined in huaweicloud sdk
+
+        :param id: 编号
+        :type id: str
+        :param name: API分组名称
+        :type name: str
+        :param status: 状态   - 1： 有效
+        :type status: int
+        :param sl_domain: 系统默认分配的子域名
+        :type sl_domain: str
+        :param register_time: 创建时间
+        :type register_time: datetime
+        :param update_time: 最近修改时间
+        :type update_time: datetime
+        :param on_sell_status: 是否已上架云市场： - 1：已上架 - 2：未上架 - 3：审核中  ROMAConnect暂未对接云市场，此字段默认返回2
+        :type on_sell_status: int
+        :param url_domains: 分组上绑定的独立域名列表
+        :type url_domains: list[:class:`huaweicloudsdkroma.v2.UrlDomain`]
+        """
         
         
 
@@ -86,7 +105,7 @@ class ApiGroupCommonInfo:
         编号
 
         :param id: The id of this ApiGroupCommonInfo.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -108,7 +127,7 @@ class ApiGroupCommonInfo:
         API分组名称
 
         :param name: The name of this ApiGroupCommonInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -130,7 +149,7 @@ class ApiGroupCommonInfo:
         状态   - 1： 有效
 
         :param status: The status of this ApiGroupCommonInfo.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -152,7 +171,7 @@ class ApiGroupCommonInfo:
         系统默认分配的子域名
 
         :param sl_domain: The sl_domain of this ApiGroupCommonInfo.
-        :type: str
+        :type sl_domain: str
         """
         self._sl_domain = sl_domain
 
@@ -174,7 +193,7 @@ class ApiGroupCommonInfo:
         创建时间
 
         :param register_time: The register_time of this ApiGroupCommonInfo.
-        :type: datetime
+        :type register_time: datetime
         """
         self._register_time = register_time
 
@@ -196,7 +215,7 @@ class ApiGroupCommonInfo:
         最近修改时间
 
         :param update_time: The update_time of this ApiGroupCommonInfo.
-        :type: datetime
+        :type update_time: datetime
         """
         self._update_time = update_time
 
@@ -218,7 +237,7 @@ class ApiGroupCommonInfo:
         是否已上架云市场： - 1：已上架 - 2：未上架 - 3：审核中  ROMAConnect暂未对接云市场，此字段默认返回2
 
         :param on_sell_status: The on_sell_status of this ApiGroupCommonInfo.
-        :type: int
+        :type on_sell_status: int
         """
         self._on_sell_status = on_sell_status
 
@@ -229,7 +248,7 @@ class ApiGroupCommonInfo:
         分组上绑定的独立域名列表
 
         :return: The url_domains of this ApiGroupCommonInfo.
-        :rtype: list[UrlDomain]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.UrlDomain`]
         """
         return self._url_domains
 
@@ -240,7 +259,7 @@ class ApiGroupCommonInfo:
         分组上绑定的独立域名列表
 
         :param url_domains: The url_domains of this ApiGroupCommonInfo.
-        :type: list[UrlDomain]
+        :type url_domains: list[:class:`huaweicloudsdkroma.v2.UrlDomain`]
         """
         self._url_domains = url_domains
 

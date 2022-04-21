@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowRepositoryByUuidResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowRepositoryByUuidResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """ShowRepositoryByUuidResponse - a model defined in huaweicloud sdk"""
+        """ShowRepositoryByUuidResponse
+
+        The model defined in huaweicloud sdk
+
+        :param error: 
+        :type error: :class:`huaweicloudsdkcodehub.v3.Error`
+        :param result: 
+        :type result: :class:`huaweicloudsdkcodehub.v3.RepoInfoV2`
+        :param status: 响应状态
+        :type status: str
+        """
         
         super(ShowRepositoryByUuidResponse, self).__init__()
 
@@ -56,7 +65,7 @@ class ShowRepositoryByUuidResponse(SdkResponse):
 
 
         :return: The error of this ShowRepositoryByUuidResponse.
-        :rtype: Error
+        :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
         """
         return self._error
 
@@ -66,7 +75,7 @@ class ShowRepositoryByUuidResponse(SdkResponse):
 
 
         :param error: The error of this ShowRepositoryByUuidResponse.
-        :type: Error
+        :type error: :class:`huaweicloudsdkcodehub.v3.Error`
         """
         self._error = error
 
@@ -76,7 +85,7 @@ class ShowRepositoryByUuidResponse(SdkResponse):
 
 
         :return: The result of this ShowRepositoryByUuidResponse.
-        :rtype: RepoInfoV2
+        :rtype: :class:`huaweicloudsdkcodehub.v3.RepoInfoV2`
         """
         return self._result
 
@@ -86,7 +95,7 @@ class ShowRepositoryByUuidResponse(SdkResponse):
 
 
         :param result: The result of this ShowRepositoryByUuidResponse.
-        :type: RepoInfoV2
+        :type result: :class:`huaweicloudsdkcodehub.v3.RepoInfoV2`
         """
         self._result = result
 
@@ -108,7 +117,7 @@ class ShowRepositoryByUuidResponse(SdkResponse):
         响应状态
 
         :param status: The status of this ShowRepositoryByUuidResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 

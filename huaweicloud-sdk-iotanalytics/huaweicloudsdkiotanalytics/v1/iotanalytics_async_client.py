@@ -52,21 +52,17 @@ class IoTAnalyticsAsyncClient(Client):
         """创建资产模型
 
         创建资产模型
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateAssetModelRequest request
-        :return: CreateAssetModelResponse
+        :param request: Request instance for CreateAssetModel
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.CreateAssetModelRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.CreateAssetModelResponse`
         """
         return self.create_asset_model_with_http_info(request)
 
     def create_asset_model_with_http_info(self, request):
-        """创建资产模型
-
-        创建资产模型
-
-        :param CreateAssetModelRequest request
-        :return: CreateAssetModelResponse
-        """
-
         all_params = ['asset_model']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -110,26 +106,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_asset_model_async(self, request):
         """删除资产模型
 
         删除资产模型
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteAssetModelRequest request
-        :return: DeleteAssetModelResponse
+        :param request: Request instance for DeleteAssetModel
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.DeleteAssetModelRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.DeleteAssetModelResponse`
         """
         return self.delete_asset_model_with_http_info(request)
 
     def delete_asset_model_with_http_info(self, request):
-        """删除资产模型
-
-        删除资产模型
-
-        :param DeleteAssetModelRequest request
-        :return: DeleteAssetModelResponse
-        """
-
         all_params = ['model_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -173,26 +164,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_asset_models_async(self, request):
         """获取资产模型列表
 
         获取资产模型列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListAssetModelsRequest request
-        :return: ListAssetModelsResponse
+        :param request: Request instance for ListAssetModels
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.ListAssetModelsRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.ListAssetModelsResponse`
         """
         return self.list_asset_models_with_http_info(request)
 
     def list_asset_models_with_http_info(self, request):
-        """获取资产模型列表
-
-        获取资产模型列表
-
-        :param ListAssetModelsRequest request
-        :return: ListAssetModelsResponse
-        """
-
         all_params = ['filter', 'limit', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -240,26 +226,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_asset_model_async(self, request):
         """获取资产模型详情
 
         获取资产模型详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowAssetModelRequest request
-        :return: ShowAssetModelResponse
+        :param request: Request instance for ShowAssetModel
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowAssetModelRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.ShowAssetModelResponse`
         """
         return self.show_asset_model_with_http_info(request)
 
     def show_asset_model_with_http_info(self, request):
-        """获取资产模型详情
-
-        获取资产模型详情
-
-        :param ShowAssetModelRequest request
-        :return: ShowAssetModelResponse
-        """
-
         all_params = ['model_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -303,26 +284,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_asset_model_async(self, request):
         """修改资产模型
 
         修改资产模型
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateAssetModelRequest request
-        :return: UpdateAssetModelResponse
+        :param request: Request instance for UpdateAssetModel
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.UpdateAssetModelRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.UpdateAssetModelResponse`
         """
         return self.update_asset_model_with_http_info(request)
 
     def update_asset_model_with_http_info(self, request):
-        """修改资产模型
-
-        修改资产模型
-
-        :param UpdateAssetModelRequest request
-        :return: UpdateAssetModelResponse
-        """
-
         all_params = ['model_id', 'asset_model']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -368,26 +344,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_asset_new_async(self, request):
         """创建资产
 
         创建资产
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateAssetNewRequest request
-        :return: CreateAssetNewResponse
+        :param request: Request instance for CreateAssetNew
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.CreateAssetNewRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.CreateAssetNewResponse`
         """
         return self.create_asset_new_with_http_info(request)
 
     def create_asset_new_with_http_info(self, request):
-        """创建资产
-
-        创建资产
-
-        :param CreateAssetNewRequest request
-        :return: CreateAssetNewResponse
-        """
-
         all_params = ['asset']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -431,26 +402,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_asset_new_async(self, request):
         """删除资产
 
         删除资产
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteAssetNewRequest request
-        :return: DeleteAssetNewResponse
+        :param request: Request instance for DeleteAssetNew
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.DeleteAssetNewRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.DeleteAssetNewResponse`
         """
         return self.delete_asset_new_with_http_info(request)
 
     def delete_asset_new_with_http_info(self, request):
-        """删除资产
-
-        删除资产
-
-        :param DeleteAssetNewRequest request
-        :return: DeleteAssetNewResponse
-        """
-
         all_params = ['asset_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -494,26 +460,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_assets_new_async(self, request):
         """获取资产列表
 
         获取资产列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListAssetsNewRequest request
-        :return: ListAssetsNewResponse
+        :param request: Request instance for ListAssetsNew
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.ListAssetsNewRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.ListAssetsNewResponse`
         """
         return self.list_assets_new_with_http_info(request)
 
     def list_assets_new_with_http_info(self, request):
-        """获取资产列表
-
-        获取资产列表
-
-        :param ListAssetsNewRequest request
-        :return: ListAssetsNewResponse
-        """
-
         all_params = ['type', 'limit', 'offset', 'filter']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -563,26 +524,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def publish_root_asset_async(self, request):
         """发布资产
 
         发布资产
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param PublishRootAssetRequest request
-        :return: PublishRootAssetResponse
+        :param request: Request instance for PublishRootAsset
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.PublishRootAssetRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.PublishRootAssetResponse`
         """
         return self.publish_root_asset_with_http_info(request)
 
     def publish_root_asset_with_http_info(self, request):
-        """发布资产
-
-        发布资产
-
-        :param PublishRootAssetRequest request
-        :return: PublishRootAssetResponse
-        """
-
         all_params = ['root_asset_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -626,26 +582,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_asset_new_async(self, request):
         """获取资产详情
 
         获取资产详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowAssetNewRequest request
-        :return: ShowAssetNewResponse
+        :param request: Request instance for ShowAssetNew
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowAssetNewRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.ShowAssetNewResponse`
         """
         return self.show_asset_new_with_http_info(request)
 
     def show_asset_new_with_http_info(self, request):
-        """获取资产详情
-
-        获取资产详情
-
-        :param ShowAssetNewRequest request
-        :return: ShowAssetNewResponse
-        """
-
         all_params = ['asset_id', 'type']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -691,26 +642,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_asset_new_async(self, request):
         """修改资产
 
         修改资产
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateAssetNewRequest request
-        :return: UpdateAssetNewResponse
+        :param request: Request instance for UpdateAssetNew
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.UpdateAssetNewRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.UpdateAssetNewResponse`
         """
         return self.update_asset_new_with_http_info(request)
 
     def update_asset_new_with_http_info(self, request):
-        """修改资产
-
-        修改资产
-
-        :param UpdateAssetNewRequest request
-        :return: UpdateAssetNewResponse
-        """
-
         all_params = ['asset_id', 'asset_info']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -756,26 +702,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_last_property_value_async(self, request):
         """获取资产属性最新值
 
         获取资产属性最新值
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowLastPropertyValueRequest request
-        :return: ShowLastPropertyValueResponse
+        :param request: Request instance for ShowLastPropertyValue
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowLastPropertyValueRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.ShowLastPropertyValueResponse`
         """
         return self.show_last_property_value_with_http_info(request)
 
     def show_last_property_value_with_http_info(self, request):
-        """获取资产属性最新值
-
-        获取资产属性最新值
-
-        :param ShowLastPropertyValueRequest request
-        :return: ShowLastPropertyValueResponse
-        """
-
         all_params = ['asset_id', 'request']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -821,26 +762,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_metric_value_async(self, request):
         """获取资产属性聚合值
 
         获取资产属性聚合值
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowMetricValueRequest request
-        :return: ShowMetricValueResponse
+        :param request: Request instance for ShowMetricValue
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowMetricValueRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.ShowMetricValueResponse`
         """
         return self.show_metric_value_with_http_info(request)
 
     def show_metric_value_with_http_info(self, request):
-        """获取资产属性聚合值
-
-        获取资产属性聚合值
-
-        :param ShowMetricValueRequest request
-        :return: ShowMetricValueResponse
-        """
-
         all_params = ['asset_id', 'request']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -886,26 +822,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_property_raw_value_async(self, request):
         """获取资产属性历史值
 
         获取资产属性历史值
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowPropertyRawValueRequest request
-        :return: ShowPropertyRawValueResponse
+        :param request: Request instance for ShowPropertyRawValue
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowPropertyRawValueRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.ShowPropertyRawValueResponse`
         """
         return self.show_property_raw_value_with_http_info(request)
 
     def show_property_raw_value_with_http_info(self, request):
-        """获取资产属性历史值
-
-        获取资产属性历史值
-
-        :param ShowPropertyRawValueRequest request
-        :return: ShowPropertyRawValueResponse
-        """
-
         all_params = ['asset_id', 'request']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -951,26 +882,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_datasource_async(self, request):
         """创建数据源
 
         创建数据源
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateDatasourceRequest request
-        :return: CreateDatasourceResponse
+        :param request: Request instance for CreateDatasource
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.CreateDatasourceRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.CreateDatasourceResponse`
         """
         return self.create_datasource_with_http_info(request)
 
     def create_datasource_with_http_info(self, request):
-        """创建数据源
-
-        创建数据源
-
-        :param CreateDatasourceRequest request
-        :return: CreateDatasourceResponse
-        """
-
         all_params = ['create_datasource_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1014,26 +940,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_datasource_async(self, request):
         """删除数据源
 
         删除数据源
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteDatasourceRequest request
-        :return: DeleteDatasourceResponse
+        :param request: Request instance for DeleteDatasource
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.DeleteDatasourceRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.DeleteDatasourceResponse`
         """
         return self.delete_datasource_with_http_info(request)
 
     def delete_datasource_with_http_info(self, request):
-        """删除数据源
-
-        删除数据源
-
-        :param DeleteDatasourceRequest request
-        :return: DeleteDatasourceResponse
-        """
-
         all_params = ['datasource_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1077,26 +998,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_all_data_source_async(self, request):
         """查询数据源列表
 
         查询数据源列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowAllDataSourceRequest request
-        :return: ShowAllDataSourceResponse
+        :param request: Request instance for ShowAllDataSource
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowAllDataSourceRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.ShowAllDataSourceResponse`
         """
         return self.show_all_data_source_with_http_info(request)
 
     def show_all_data_source_with_http_info(self, request):
-        """查询数据源列表
-
-        查询数据源列表
-
-        :param ShowAllDataSourceRequest request
-        :return: ShowAllDataSourceResponse
-        """
-
         all_params = ['name', 'type', 'limit', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1146,26 +1062,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_data_source_async(self, request):
         """查询数据源详情
 
         查询数据源详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowDataSourceRequest request
-        :return: ShowDataSourceResponse
+        :param request: Request instance for ShowDataSource
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowDataSourceRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.ShowDataSourceResponse`
         """
         return self.show_data_source_with_http_info(request)
 
     def show_data_source_with_http_info(self, request):
-        """查询数据源详情
-
-        查询数据源详情
-
-        :param ShowDataSourceRequest request
-        :return: ShowDataSourceResponse
-        """
-
         all_params = ['datasource_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1209,26 +1120,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_data_source_async(self, request):
         """修改数据源
 
         修改数据源
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateDataSourceRequest request
-        :return: UpdateDataSourceResponse
+        :param request: Request instance for UpdateDataSource
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.UpdateDataSourceRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.UpdateDataSourceResponse`
         """
         return self.update_data_source_with_http_info(request)
 
     def update_data_source_with_http_info(self, request):
-        """修改数据源
-
-        修改数据源
-
-        :param UpdateDataSourceRequest request
-        :return: UpdateDataSourceResponse
-        """
-
         all_params = ['datasource_id', 'update_data_source_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1274,26 +1180,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_group_async(self, request):
         """创建存储组
 
         创建存储组
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateGroupRequest request
-        :return: CreateGroupResponse
+        :param request: Request instance for CreateGroup
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.CreateGroupRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.CreateGroupResponse`
         """
         return self.create_group_with_http_info(request)
 
     def create_group_with_http_info(self, request):
-        """创建存储组
-
-        创建存储组
-
-        :param CreateGroupRequest request
-        :return: CreateGroupResponse
-        """
-
         all_params = ['create_group_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1337,26 +1238,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_group_async(self, request):
         """删除存储组
 
         删除存储组
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteGroupRequest request
-        :return: DeleteGroupResponse
+        :param request: Request instance for DeleteGroup
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.DeleteGroupRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.DeleteGroupResponse`
         """
         return self.delete_group_with_http_info(request)
 
     def delete_group_with_http_info(self, request):
-        """删除存储组
-
-        删除存储组
-
-        :param DeleteGroupRequest request
-        :return: DeleteGroupResponse
-        """
-
         all_params = ['group_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1400,26 +1296,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_groups_async(self, request):
         """查询存储组列表
 
         查询存储组列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListGroupsRequest request
-        :return: ListGroupsResponse
+        :param request: Request instance for ListGroups
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.ListGroupsRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.ListGroupsResponse`
         """
         return self.list_groups_with_http_info(request)
 
     def list_groups_with_http_info(self, request):
-        """查询存储组列表
-
-        查询存储组列表
-
-        :param ListGroupsRequest request
-        :return: ListGroupsResponse
-        """
-
         all_params = ['unit', 'type', 'group_id', 'name', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1473,26 +1364,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_group_async(self, request):
         """更新存储组
 
         更新存储组
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateGroupRequest request
-        :return: UpdateGroupResponse
+        :param request: Request instance for UpdateGroup
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.UpdateGroupRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.UpdateGroupResponse`
         """
         return self.update_group_with_http_info(request)
 
     def update_group_with_http_info(self, request):
-        """更新存储组
-
-        更新存储组
-
-        :param UpdateGroupRequest request
-        :return: UpdateGroupResponse
-        """
-
         all_params = ['group_id', 'update_group_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1538,26 +1424,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_data_store_async(self, request):
         """删除存储
 
         删除存储
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteDataStoreRequest request
-        :return: DeleteDataStoreResponse
+        :param request: Request instance for DeleteDataStore
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.DeleteDataStoreRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.DeleteDataStoreResponse`
         """
         return self.delete_data_store_with_http_info(request)
 
     def delete_data_store_with_http_info(self, request):
-        """删除存储
-
-        删除存储
-
-        :param DeleteDataStoreRequest request
-        :return: DeleteDataStoreResponse
-        """
-
         all_params = ['data_store_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1601,26 +1482,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_data_stores_async(self, request):
         """查询存储列表
 
         查询存储列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListDataStoresRequest request
-        :return: ListDataStoresResponse
+        :param request: Request instance for ListDataStores
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.ListDataStoresRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.ListDataStoresResponse`
         """
         return self.list_data_stores_with_http_info(request)
 
     def list_data_stores_with_http_info(self, request):
-        """查询存储列表
-
-        查询存储列表
-
-        :param ListDataStoresRequest request
-        :return: ListDataStoresResponse
-        """
-
         all_params = ['group_id', 'data_store_id', 'name', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1672,26 +1548,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_data_store_async(self, request):
         """更新存储
 
         更新存储
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateDataStoreRequest request
-        :return: UpdateDataStoreResponse
+        :param request: Request instance for UpdateDataStore
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.UpdateDataStoreRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.UpdateDataStoreResponse`
         """
         return self.update_data_store_with_http_info(request)
 
     def update_data_store_with_http_info(self, request):
-        """更新存储
-
-        更新存储
-
-        :param UpdateDataStoreRequest request
-        :return: UpdateDataStoreResponse
-        """
-
         all_params = ['data_store_id', 'update_data_store_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1737,26 +1608,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_history_async(self, request):
         """根据标签查询设备历史值
 
         根据标签查询设备历史值
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListHistoryRequest request
-        :return: ListHistoryResponse
+        :param request: Request instance for ListHistory
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.ListHistoryRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.ListHistoryResponse`
         """
         return self.list_history_with_http_info(request)
 
     def list_history_with_http_info(self, request):
-        """根据标签查询设备历史值
-
-        根据标签查询设备历史值
-
-        :param ListHistoryRequest request
-        :return: ListHistoryResponse
-        """
-
         all_params = ['data_store_id', 'list_history_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1802,26 +1668,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_metrics_async(self, request):
         """根据标签聚合、查询指标数据
 
         根据标签聚合、查询数据
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListMetricsRequest request
-        :return: ListMetricsResponse
+        :param request: Request instance for ListMetrics
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.ListMetricsRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.ListMetricsResponse`
         """
         return self.list_metrics_with_http_info(request)
 
     def list_metrics_with_http_info(self, request):
-        """根据标签聚合、查询指标数据
-
-        根据标签聚合、查询数据
-
-        :param ListMetricsRequest request
-        :return: ListMetricsResponse
-        """
-
         all_params = ['data_store_id', 'list_metrics_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1867,26 +1728,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_property_values_async(self, request):
         """查询设备属性最新状态值
 
         查询设备属性最新状态值
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowPropertyValuesRequest request
-        :return: ShowPropertyValuesResponse
+        :param request: Request instance for ShowPropertyValues
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowPropertyValuesRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.ShowPropertyValuesResponse`
         """
         return self.show_property_values_with_http_info(request)
 
     def show_property_values_with_http_info(self, request):
-        """查询设备属性最新状态值
-
-        查询设备属性最新状态值
-
-        :param ShowPropertyValuesRequest request
-        :return: ShowPropertyValuesResponse
-        """
-
         all_params = ['data_store_id', 'show_property_values_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1932,26 +1788,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_tag_values_async(self, request):
         """查询标签的值列表
 
         查询标签的值列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListTagValuesRequest request
-        :return: ListTagValuesResponse
+        :param request: Request instance for ListTagValues
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.ListTagValuesRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.ListTagValuesResponse`
         """
         return self.list_tag_values_with_http_info(request)
 
     def list_tag_values_with_http_info(self, request):
-        """查询标签的值列表
-
-        查询标签的值列表
-
-        :param ListTagValuesRequest request
-        :return: ListTagValuesResponse
-        """
-
         all_params = ['data_store_id', 'tag_name', 'filters', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2003,26 +1854,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def add_dev_data_async(self, request):
         """通过API数据源上报设备数据
 
         通过API数据源上报设备数据
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param AddDevDataRequest request
-        :return: AddDevDataResponse
+        :param request: Request instance for AddDevData
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.AddDevDataRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.AddDevDataResponse`
         """
         return self.add_dev_data_with_http_info(request)
 
     def add_dev_data_with_http_info(self, request):
-        """通过API数据源上报设备数据
-
-        通过API数据源上报设备数据
-
-        :param AddDevDataRequest request
-        :return: AddDevDataResponse
-        """
-
         all_params = ['datasource_id', 'add_dev_data_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2068,26 +1914,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def add_pipeline_job_async(self, request):
         """新建管道作业
 
         新建管道作业时，需要在URL中指定是更新哪一个作业，将在body中附带完整的作业信息。（作业中各算子的详细配置请参考算子配置章节。） check参数表示是否需要对作业配置进行检查，若为false，则不检查，将作业保存为草稿；若为true，则对作业配置进行检查。当检查不通过时，将作业状态修改为草稿；检查通过时，将作业状态修改为就绪，并返回成功。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param AddPipelineJobRequest request
-        :return: AddPipelineJobResponse
+        :param request: Request instance for AddPipelineJob
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.AddPipelineJobRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.AddPipelineJobResponse`
         """
         return self.add_pipeline_job_with_http_info(request)
 
     def add_pipeline_job_with_http_info(self, request):
-        """新建管道作业
-
-        新建管道作业时，需要在URL中指定是更新哪一个作业，将在body中附带完整的作业信息。（作业中各算子的详细配置请参考算子配置章节。） check参数表示是否需要对作业配置进行检查，若为false，则不检查，将作业保存为草稿；若为true，则对作业配置进行检查。当检查不通过时，将作业状态修改为草稿；检查通过时，将作业状态修改为就绪，并返回成功。
-
-        :param AddPipelineJobRequest request
-        :return: AddPipelineJobResponse
-        """
-
         all_params = ['add_pipeline_job_request_body', 'check']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2133,26 +1974,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_pipeline_job_async(self, request):
         """删除管道作业
 
         删除用户指定的管道作业
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeletePipelineJobRequest request
-        :return: DeletePipelineJobResponse
+        :param request: Request instance for DeletePipelineJob
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.DeletePipelineJobRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.DeletePipelineJobResponse`
         """
         return self.delete_pipeline_job_with_http_info(request)
 
     def delete_pipeline_job_with_http_info(self, request):
-        """删除管道作业
-
-        删除用户指定的管道作业
-
-        :param DeletePipelineJobRequest request
-        :return: DeletePipelineJobResponse
-        """
-
         all_params = ['pipeline_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2196,26 +2032,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_pipeline_jobs_async(self, request):
         """获取管道作业列表
 
         获取用户下的所有管道作业，支持分页。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListPipelineJobsRequest request
-        :return: ListPipelineJobsResponse
+        :param request: Request instance for ListPipelineJobs
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.ListPipelineJobsRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.ListPipelineJobsResponse`
         """
         return self.list_pipeline_jobs_with_http_info(request)
 
     def list_pipeline_jobs_with_http_info(self, request):
-        """获取管道作业列表
-
-        获取用户下的所有管道作业，支持分页。
-
-        :param ListPipelineJobsRequest request
-        :return: ListPipelineJobsResponse
-        """
-
         all_params = ['data_store_id', 'data_store_group_id', 'data_source_id', 'pipeline_name', 'operator_class_name', 'offset', 'limit', 'sync_status']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2273,26 +2104,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_pipeline_job_async(self, request):
         """获取管道作业详情
 
         获取指定管道作业的详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowPipelineJobRequest request
-        :return: ShowPipelineJobResponse
+        :param request: Request instance for ShowPipelineJob
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowPipelineJobRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.ShowPipelineJobResponse`
         """
         return self.show_pipeline_job_with_http_info(request)
 
     def show_pipeline_job_with_http_info(self, request):
-        """获取管道作业详情
-
-        获取指定管道作业的详情
-
-        :param ShowPipelineJobRequest request
-        :return: ShowPipelineJobResponse
-        """
-
         all_params = ['pipeline_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2336,26 +2162,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def start_pipeline_job_async(self, request):
         """启动管道作业
 
         提交管道作业到运行环境，实时接收数据源的数据并按用户定义的数据清洗逻辑对数据进行处理。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param StartPipelineJobRequest request
-        :return: StartPipelineJobResponse
+        :param request: Request instance for StartPipelineJob
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.StartPipelineJobRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.StartPipelineJobResponse`
         """
         return self.start_pipeline_job_with_http_info(request)
 
     def start_pipeline_job_with_http_info(self, request):
-        """启动管道作业
-
-        提交管道作业到运行环境，实时接收数据源的数据并按用户定义的数据清洗逻辑对数据进行处理。
-
-        :param StartPipelineJobRequest request
-        :return: StartPipelineJobResponse
-        """
-
         all_params = ['pipeline_id', 'parallel', 'rtu', 'resume_savepoint']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2405,26 +2226,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def stop_pipeline_job_async(self, request):
         """停止管道作业
 
         停止一个正在运行中的管道作业
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param StopPipelineJobRequest request
-        :return: StopPipelineJobResponse
+        :param request: Request instance for StopPipelineJob
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.StopPipelineJobRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.StopPipelineJobResponse`
         """
         return self.stop_pipeline_job_with_http_info(request)
 
     def stop_pipeline_job_with_http_info(self, request):
-        """停止管道作业
-
-        停止一个正在运行中的管道作业
-
-        :param StopPipelineJobRequest request
-        :return: StopPipelineJobResponse
-        """
-
         all_params = ['pipeline_id', 'trigger_savepoint']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2470,26 +2286,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_pipeline_job_async(self, request):
         """更新管道作业
 
         更新管道作业时，需要在URL中指定是更新哪一个作业，将在body中附带完整的作业信息。（管道作业详细配置，每个作业可选择不同的算子进行组合，各算子的使用方法详见：数据管道算子配置指南。） check参数表示是否需要对作业配置进行检查，若为false，则不检查，将作业保存为草稿；若为true，则对作业配置进行检查。当检查不通过时，将作业状态修改为草稿；检查通过时，将作业状态修改为就绪，并返回成功。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdatePipelineJobRequest request
-        :return: UpdatePipelineJobResponse
+        :param request: Request instance for UpdatePipelineJob
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.UpdatePipelineJobRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.UpdatePipelineJobResponse`
         """
         return self.update_pipeline_job_with_http_info(request)
 
     def update_pipeline_job_with_http_info(self, request):
-        """更新管道作业
-
-        更新管道作业时，需要在URL中指定是更新哪一个作业，将在body中附带完整的作业信息。（管道作业详细配置，每个作业可选择不同的算子进行组合，各算子的使用方法详见：数据管道算子配置指南。） check参数表示是否需要对作业配置进行检查，若为false，则不检查，将作业保存为草稿；若为true，则对作业配置进行检查。当检查不通过时，将作业状态修改为草稿；检查通过时，将作业状态修改为就绪，并返回成功。
-
-        :param UpdatePipelineJobRequest request
-        :return: UpdatePipelineJobResponse
-        """
-
         all_params = ['pipeline_id', 'update_pipeline_job_request_body', 'check']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2537,26 +2348,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_streaming_job_async(self, request):
         """新建实时作业
 
         除名称和描述外，可先不提供作业的详细配置信息。 check参数表示是否需要对作业配置进行检查，若为false，则不检查，将作业保存为草稿；若为true，则对作业配置进行检查，无论检查是否通过，都将作业及配置信息保存为草稿，当检查不通过时，返回失败及错误信息，检查通过时，将作业状态修改为就绪，并返回成功。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateStreamingJobRequest request
-        :return: CreateStreamingJobResponse
+        :param request: Request instance for CreateStreamingJob
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.CreateStreamingJobRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.CreateStreamingJobResponse`
         """
         return self.create_streaming_job_with_http_info(request)
 
     def create_streaming_job_with_http_info(self, request):
-        """新建实时作业
-
-        除名称和描述外，可先不提供作业的详细配置信息。 check参数表示是否需要对作业配置进行检查，若为false，则不检查，将作业保存为草稿；若为true，则对作业配置进行检查，无论检查是否通过，都将作业及配置信息保存为草稿，当检查不通过时，返回失败及错误信息，检查通过时，将作业状态修改为就绪，并返回成功。
-
-        :param CreateStreamingJobRequest request
-        :return: CreateStreamingJobResponse
-        """
-
         all_params = ['create_streaming_job_request_body', 'check']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2602,26 +2408,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_streaming_job_by_id_async(self, request):
         """删除实时作业
 
         删除用户指定的作业
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteStreamingJobByIdRequest request
-        :return: DeleteStreamingJobByIdResponse
+        :param request: Request instance for DeleteStreamingJobById
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.DeleteStreamingJobByIdRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.DeleteStreamingJobByIdResponse`
         """
         return self.delete_streaming_job_by_id_with_http_info(request)
 
     def delete_streaming_job_by_id_with_http_info(self, request):
-        """删除实时作业
-
-        删除用户指定的作业
-
-        :param DeleteStreamingJobByIdRequest request
-        :return: DeleteStreamingJobByIdResponse
-        """
-
         all_params = ['job_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2665,26 +2466,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_job_by_id_async(self, request):
         """获取实时作业详情
 
         获取指定作业的详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowJobByIdRequest request
-        :return: ShowJobByIdResponse
+        :param request: Request instance for ShowJobById
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowJobByIdRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.ShowJobByIdResponse`
         """
         return self.show_job_by_id_with_http_info(request)
 
     def show_job_by_id_with_http_info(self, request):
-        """获取实时作业详情
-
-        获取指定作业的详情
-
-        :param ShowJobByIdRequest request
-        :return: ShowJobByIdResponse
-        """
-
         all_params = ['job_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2728,26 +2524,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_jobs_async(self, request):
         """获取实时作业列表
 
         获取用户下的所有实时分析作业，支持分页。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowJobsRequest request
-        :return: ShowJobsResponse
+        :param request: Request instance for ShowJobs
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowJobsRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.ShowJobsResponse`
         """
         return self.show_jobs_with_http_info(request)
 
     def show_jobs_with_http_info(self, request):
-        """获取实时作业列表
-
-        获取用户下的所有实时分析作业，支持分页。
-
-        :param ShowJobsRequest request
-        :return: ShowJobsResponse
-        """
-
         all_params = ['job_input_type', 'offset', 'limit', 'sync_status']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2797,26 +2588,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_streaming_job_async(self, request):
         """更新实时作业
 
         更新作业时，需要在URL中指定是更新哪一个作业，将在body中附带完整的作业信息。 check参数表示是否需要对作业配置进行检查，若为false，则不检查，将作业保存为草稿；若为true，则对作业配置进行检查，无论检查是否通过，都将作业及配置信息保存为草稿，当检查不通过时，返回失败及错误信息，检查通过时，将作业状态修改为就绪，并返回成功。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateStreamingJobRequest request
-        :return: UpdateStreamingJobResponse
+        :param request: Request instance for UpdateStreamingJob
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.UpdateStreamingJobRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.UpdateStreamingJobResponse`
         """
         return self.update_streaming_job_with_http_info(request)
 
     def update_streaming_job_with_http_info(self, request):
-        """更新实时作业
-
-        更新作业时，需要在URL中指定是更新哪一个作业，将在body中附带完整的作业信息。 check参数表示是否需要对作业配置进行检查，若为false，则不检查，将作业保存为草稿；若为true，则对作业配置进行检查，无论检查是否通过，都将作业及配置信息保存为草稿，当检查不通过时，返回失败及错误信息，检查通过时，将作业状态修改为就绪，并返回成功。
-
-        :param UpdateStreamingJobRequest request
-        :return: UpdateStreamingJobResponse
-        """
-
         all_params = ['job_id', 'update_streaming_job_request_body', 'check']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2864,26 +2650,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def start_job_async(self, request):
         """启动实时作业
 
         提交作业到运行环境，实时接收数据并按用户定义的业务逻辑对数据进行处理。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param StartJobRequest request
-        :return: StartJobResponse
+        :param request: Request instance for StartJob
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.StartJobRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.StartJobResponse`
         """
         return self.start_job_with_http_info(request)
 
     def start_job_with_http_info(self, request):
-        """启动实时作业
-
-        提交作业到运行环境，实时接收数据并按用户定义的业务逻辑对数据进行处理。
-
-        :param StartJobRequest request
-        :return: StartJobResponse
-        """
-
         all_params = ['job_id', 'parallel', 'rtu', 'resume_savepoint']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2933,26 +2714,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def stop_job_async(self, request):
         """停止实时作业
 
         停止一个正在运行中的作业
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param StopJobRequest request
-        :return: StopJobResponse
+        :param request: Request instance for StopJob
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.StopJobRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.StopJobResponse`
         """
         return self.stop_job_with_http_info(request)
 
     def stop_job_with_http_info(self, request):
-        """停止实时作业
-
-        停止一个正在运行中的作业
-
-        :param StopJobRequest request
-        :return: StopJobResponse
-        """
-
         all_params = ['job_id', 'trigger_savepoint']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2998,26 +2774,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_computing_resource_async(self, request):
         """创建批计算资源
 
         创建批计算资源。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateComputingResourceRequest request
-        :return: CreateComputingResourceResponse
+        :param request: Request instance for CreateComputingResource
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.CreateComputingResourceRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.CreateComputingResourceResponse`
         """
         return self.create_computing_resource_with_http_info(request)
 
     def create_computing_resource_with_http_info(self, request):
-        """创建批计算资源
-
-        创建批计算资源。
-
-        :param CreateComputingResourceRequest request
-        :return: CreateComputingResourceResponse
-        """
-
         all_params = ['body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3061,26 +2832,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_computing_resource_async(self, request):
         """删除批计算资源
 
         删除批计算资源。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteComputingResourceRequest request
-        :return: DeleteComputingResourceResponse
+        :param request: Request instance for DeleteComputingResource
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.DeleteComputingResourceRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.DeleteComputingResourceResponse`
         """
         return self.delete_computing_resource_with_http_info(request)
 
     def delete_computing_resource_with_http_info(self, request):
-        """删除批计算资源
-
-        删除批计算资源。
-
-        :param DeleteComputingResourceRequest request
-        :return: DeleteComputingResourceResponse
-        """
-
         all_params = ['computing_resource_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3124,26 +2890,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_computing_resources_async(self, request):
         """查询批计算资源列表
 
         查询批计算资源列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListComputingResourcesRequest request
-        :return: ListComputingResourcesResponse
+        :param request: Request instance for ListComputingResources
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.ListComputingResourcesRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.ListComputingResourcesResponse`
         """
         return self.list_computing_resources_with_http_info(request)
 
     def list_computing_resources_with_http_info(self, request):
-        """查询批计算资源列表
-
-        查询批计算资源列表。
-
-        :param ListComputingResourcesRequest request
-        :return: ListComputingResourcesResponse
-        """
-
         all_params = ['computing_resource_name', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3191,26 +2952,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def export_dataset_async(self, request):
         """下载离线作业结果
 
         将SQL语句的查询结果下载到本地，只支持下载“QUERY”类型作业的查询结果。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ExportDatasetRequest request
-        :return: ExportDatasetResponse
+        :param request: Request instance for ExportDataset
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.ExportDatasetRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.ExportDatasetResponse`
         """
         return self.export_dataset_with_http_info(request)
 
     def export_dataset_with_http_info(self, request):
-        """下载离线作业结果
-
-        将SQL语句的查询结果下载到本地，只支持下载“QUERY”类型作业的查询结果。
-
-        :param ExportDatasetRequest request
-        :return: ExportDatasetResponse
-        """
-
         all_params = ['job_id', 'run_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3256,26 +3012,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def import_data_async(self, request):
         """执行导入数据离线作业
 
         将数据从文件导入OBS表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ImportDataRequest request
-        :return: ImportDataResponse
+        :param request: Request instance for ImportData
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.ImportDataRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.ImportDataResponse`
         """
         return self.import_data_with_http_info(request)
 
     def import_data_with_http_info(self, request):
-        """执行导入数据离线作业
-
-        将数据从文件导入OBS表。
-
-        :param ImportDataRequest request
-        :return: ImportDataResponse
-        """
-
         all_params = ['body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3319,26 +3070,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_dataset_async(self, request):
         """查询离线作业结果
 
         在执行SQL查询语句的作业完成后，查看该作业执行的结果。目前仅支持查看“QUERY”类型作业的执行结果。该API只能查看前1000条的结果记录，若要查看全部的结果记录，需要先导出查询结果再进行查看。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowDatasetRequest request
-        :return: ShowDatasetResponse
+        :param request: Request instance for ShowDataset
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowDatasetRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.ShowDatasetResponse`
         """
         return self.show_dataset_with_http_info(request)
 
     def show_dataset_with_http_info(self, request):
-        """查询离线作业结果
-
-        在执行SQL查询语句的作业完成后，查看该作业执行的结果。目前仅支持查看“QUERY”类型作业的执行结果。该API只能查看前1000条的结果记录，若要查看全部的结果记录，需要先导出查询结果再进行查看。
-
-        :param ShowDatasetRequest request
-        :return: ShowDatasetResponse
-        """
-
         all_params = ['job_id', 'run_id', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3388,26 +3134,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def validate_sql_async(self, request):
         """检查离线作业SQL语法
 
         检查离线作业SQL语法。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ValidateSqlRequest request
-        :return: ValidateSqlResponse
+        :param request: Request instance for ValidateSql
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.ValidateSqlRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.ValidateSqlResponse`
         """
         return self.validate_sql_with_http_info(request)
 
     def validate_sql_with_http_info(self, request):
-        """检查离线作业SQL语法
-
-        检查离线作业SQL语法。
-
-        :param ValidateSqlRequest request
-        :return: ValidateSqlResponse
-        """
-
         all_params = ['body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3451,26 +3192,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_batch_job_async(self, request):
         """创建离线作业
 
         创建离线作业。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateBatchJobRequest request
-        :return: CreateBatchJobResponse
+        :param request: Request instance for CreateBatchJob
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.CreateBatchJobRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.CreateBatchJobResponse`
         """
         return self.create_batch_job_with_http_info(request)
 
     def create_batch_job_with_http_info(self, request):
-        """创建离线作业
-
-        创建离线作业。
-
-        :param CreateBatchJobRequest request
-        :return: CreateBatchJobResponse
-        """
-
         all_params = ['body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3514,26 +3250,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_batch_job_async(self, request):
         """删除离线作业
 
         删除离线作业。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteBatchJobRequest request
-        :return: DeleteBatchJobResponse
+        :param request: Request instance for DeleteBatchJob
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.DeleteBatchJobRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.DeleteBatchJobResponse`
         """
         return self.delete_batch_job_with_http_info(request)
 
     def delete_batch_job_with_http_info(self, request):
-        """删除离线作业
-
-        删除离线作业。
-
-        :param DeleteBatchJobRequest request
-        :return: DeleteBatchJobResponse
-        """
-
         all_params = ['job_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3577,26 +3308,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_batch_jobs_async(self, request):
         """查询离线作业列表
 
         查询离线作业列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListBatchJobsRequest request
-        :return: ListBatchJobsResponse
+        :param request: Request instance for ListBatchJobs
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.ListBatchJobsRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.ListBatchJobsResponse`
         """
         return self.list_batch_jobs_with_http_info(request)
 
     def list_batch_jobs_with_http_info(self, request):
-        """查询离线作业列表
-
-        查询离线作业列表。
-
-        :param ListBatchJobsRequest request
-        :return: ListBatchJobsResponse
-        """
-
         all_params = ['offset', 'limit', 'has_schedule', 'job_name', 'schedule_status', 'order_by', 'order']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3652,26 +3378,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_batch_job_async(self, request):
         """查询离线作业详情
 
         查询离线作业详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowBatchJobRequest request
-        :return: ShowBatchJobResponse
+        :param request: Request instance for ShowBatchJob
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowBatchJobRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.ShowBatchJobResponse`
         """
         return self.show_batch_job_with_http_info(request)
 
     def show_batch_job_with_http_info(self, request):
-        """查询离线作业详情
-
-        查询离线作业详情。
-
-        :param ShowBatchJobRequest request
-        :return: ShowBatchJobResponse
-        """
-
         all_params = ['job_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3715,26 +3436,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_batch_job_async(self, request):
         """修改离线作业
 
         修改离线作业。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateBatchJobRequest request
-        :return: UpdateBatchJobResponse
+        :param request: Request instance for UpdateBatchJob
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.UpdateBatchJobRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.UpdateBatchJobResponse`
         """
         return self.update_batch_job_with_http_info(request)
 
     def update_batch_job_with_http_info(self, request):
-        """修改离线作业
-
-        修改离线作业。
-
-        :param UpdateBatchJobRequest request
-        :return: UpdateBatchJobResponse
-        """
-
         all_params = ['job_id', 'body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3780,26 +3496,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_run_async(self, request):
         """执行离线作业
 
         执行离线作业。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateRunRequest request
-        :return: CreateRunResponse
+        :param request: Request instance for CreateRun
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.CreateRunRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.CreateRunResponse`
         """
         return self.create_run_with_http_info(request)
 
     def create_run_with_http_info(self, request):
-        """执行离线作业
-
-        执行离线作业。
-
-        :param CreateRunRequest request
-        :return: CreateRunResponse
-        """
-
         all_params = ['job_id', 'body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3845,26 +3556,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_run_async(self, request):
         """停止离线作业
 
         停止提交中或运行中的离线作业，若作业已经执行结束或失败则无法停止。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteRunRequest request
-        :return: DeleteRunResponse
+        :param request: Request instance for DeleteRun
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.DeleteRunRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.DeleteRunResponse`
         """
         return self.delete_run_with_http_info(request)
 
     def delete_run_with_http_info(self, request):
-        """停止离线作业
-
-        停止提交中或运行中的离线作业，若作业已经执行结束或失败则无法停止。
-
-        :param DeleteRunRequest request
-        :return: DeleteRunResponse
-        """
-
         all_params = ['job_id', 'run_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3910,26 +3616,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_runs_async(self, request):
         """查询离线作业运行列表
 
         查询离线作业运行列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListRunsRequest request
-        :return: ListRunsResponse
+        :param request: Request instance for ListRuns
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.ListRunsRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.ListRunsResponse`
         """
         return self.list_runs_with_http_info(request)
 
     def list_runs_with_http_info(self, request):
-        """查询离线作业运行列表
-
-        查询离线作业运行列表。
-
-        :param ListRunsRequest request
-        :return: ListRunsResponse
-        """
-
         all_params = ['offset', 'limit', 'start_time', 'end_time', 'sql_pattern', 'sql_type', 'job_type', 'status', 'order_by', 'order', 'job_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3993,26 +3694,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_run_async(self, request):
         """查询离线作业运行详情
 
         查询离线作业运行详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowRunRequest request
-        :return: ShowRunResponse
+        :param request: Request instance for ShowRun
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowRunRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.ShowRunResponse`
         """
         return self.show_run_with_http_info(request)
 
     def show_run_with_http_info(self, request):
-        """查询离线作业运行详情
-
-        查询离线作业运行详情。
-
-        :param ShowRunRequest request
-        :return: ShowRunResponse
-        """
-
         all_params = ['job_id', 'run_id', 'with_details']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4060,26 +3756,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_table_async(self, request):
         """创建离线数据表
 
         创建离线数据表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateTableRequest request
-        :return: CreateTableResponse
+        :param request: Request instance for CreateTable
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.CreateTableRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.CreateTableResponse`
         """
         return self.create_table_with_http_info(request)
 
     def create_table_with_http_info(self, request):
-        """创建离线数据表
-
-        创建离线数据表。
-
-        :param CreateTableRequest request
-        :return: CreateTableResponse
-        """
-
         all_params = ['body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4123,26 +3814,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_table_async(self, request):
         """删除离线数据表
 
         删除离线数据表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteTableRequest request
-        :return: DeleteTableResponse
+        :param request: Request instance for DeleteTable
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.DeleteTableRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.DeleteTableResponse`
         """
         return self.delete_table_with_http_info(request)
 
     def delete_table_with_http_info(self, request):
-        """删除离线数据表
-
-        删除离线数据表。
-
-        :param DeleteTableRequest request
-        :return: DeleteTableResponse
-        """
-
         all_params = ['table_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4186,26 +3872,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_tables_async(self, request):
         """查询离线数据表列表
 
         查询离线数据表列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListTablesRequest request
-        :return: ListTablesResponse
+        :param request: Request instance for ListTables
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.ListTablesRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.ListTablesResponse`
         """
         return self.list_tables_with_http_info(request)
 
     def list_tables_with_http_info(self, request):
-        """查询离线数据表列表
-
-        查询离线数据表列表。
-
-        :param ListTablesRequest request
-        :return: ListTablesResponse
-        """
-
         all_params = ['keyword', 'tag', 'offset', 'limit', 'order_by', 'order']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4259,26 +3940,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_table_preview_async(self, request):
         """预览离线数据表内容
 
         预览离线数据表内容。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowTablePreviewRequest request
-        :return: ShowTablePreviewResponse
+        :param request: Request instance for ShowTablePreview
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowTablePreviewRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.ShowTablePreviewResponse`
         """
         return self.show_table_preview_with_http_info(request)
 
     def show_table_preview_with_http_info(self, request):
-        """预览离线数据表内容
-
-        预览离线数据表内容。
-
-        :param ShowTablePreviewRequest request
-        :return: ShowTablePreviewResponse
-        """
-
         all_params = ['table_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4322,26 +3998,21 @@ class IoTAnalyticsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_table_schema_async(self, request):
         """查询离线数据表结构
 
         查询离线数据表结构。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowTableSchemaRequest request
-        :return: ShowTableSchemaResponse
+        :param request: Request instance for ShowTableSchema
+        :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowTableSchemaRequest`
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.ShowTableSchemaResponse`
         """
         return self.show_table_schema_with_http_info(request)
 
     def show_table_schema_with_http_info(self, request):
-        """查询离线数据表结构
-
-        查询离线数据表结构。
-
-        :param ShowTableSchemaRequest request
-        :return: ShowTableSchemaResponse
-        """
-
         all_params = ['table_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4384,7 +4055,6 @@ class IoTAnalyticsAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

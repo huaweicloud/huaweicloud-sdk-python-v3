@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateWhiteblackipRuleRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateWhiteblackipRuleRequest:
     }
 
     def __init__(self, enterprise_project_id=None, policy_id=None, body=None):
-        """CreateWhiteblackipRuleRequest - a model defined in huaweicloud sdk"""
+        """CreateWhiteblackipRuleRequest
+
+        The model defined in huaweicloud sdk
+
+        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        :type enterprise_project_id: str
+        :param policy_id: 防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
+        :type policy_id: str
+        :param body: Body of the CreateWhiteblackipRuleRequest
+        :type body: :class:`huaweicloudsdkwaf.v1.CreateWhiteBlackIpRuleRequestBody`
+        """
         
         
 
@@ -67,7 +76,7 @@ class CreateWhiteblackipRuleRequest:
         您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this CreateWhiteblackipRuleRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -89,7 +98,7 @@ class CreateWhiteblackipRuleRequest:
         防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
 
         :param policy_id: The policy_id of this CreateWhiteblackipRuleRequest.
-        :type: str
+        :type policy_id: str
         """
         self._policy_id = policy_id
 
@@ -99,7 +108,7 @@ class CreateWhiteblackipRuleRequest:
 
 
         :return: The body of this CreateWhiteblackipRuleRequest.
-        :rtype: CreateWhiteBlackIpRuleRequestBody
+        :rtype: :class:`huaweicloudsdkwaf.v1.CreateWhiteBlackIpRuleRequestBody`
         """
         return self._body
 
@@ -109,7 +118,7 @@ class CreateWhiteblackipRuleRequest:
 
 
         :param body: The body of this CreateWhiteblackipRuleRequest.
-        :type: CreateWhiteBlackIpRuleRequestBody
+        :type body: :class:`huaweicloudsdkwaf.v1.CreateWhiteBlackIpRuleRequestBody`
         """
         self._body = body
 

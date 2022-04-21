@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InvitationDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class InvitationDetail:
     }
 
     def __init__(self, invited_user=None, status=None, invited_bcs_id=None):
-        """InvitationDetail - a model defined in huaweicloud sdk"""
+        """InvitationDetail
+
+        The model defined in huaweicloud sdk
+
+        :param invited_user: 被邀请方租户名，IAM用户名
+        :type invited_user: str
+        :param status: 邀请状态，可选：已退出（quit），等待中（waiting），已拒绝（reject），已解散（released），其他状态不允许删除
+        :type status: str
+        :param invited_bcs_id: 被邀请方bcs实例id
+        :type invited_bcs_id: str
+        """
         
         
 
@@ -67,7 +76,7 @@ class InvitationDetail:
         被邀请方租户名，IAM用户名
 
         :param invited_user: The invited_user of this InvitationDetail.
-        :type: str
+        :type invited_user: str
         """
         self._invited_user = invited_user
 
@@ -89,7 +98,7 @@ class InvitationDetail:
         邀请状态，可选：已退出（quit），等待中（waiting），已拒绝（reject），已解散（released），其他状态不允许删除
 
         :param status: The status of this InvitationDetail.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -111,7 +120,7 @@ class InvitationDetail:
         被邀请方bcs实例id
 
         :param invited_bcs_id: The invited_bcs_id of this InvitationDetail.
-        :type: str
+        :type invited_bcs_id: str
         """
         self._invited_bcs_id = invited_bcs_id
 

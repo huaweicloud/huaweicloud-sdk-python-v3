@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ThrottleBindingBatchDelete:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ThrottleBindingBatchDelete:
     }
 
     def __init__(self, throttle_bindings=None):
-        """ThrottleBindingBatchDelete - a model defined in huaweicloud sdk"""
+        """ThrottleBindingBatchDelete
+
+        The model defined in huaweicloud sdk
+
+        :param throttle_bindings: 需要解除绑定的API和流控策略绑定关系ID列表
+        :type throttle_bindings: list[str]
+        """
         
         
 
@@ -58,7 +63,7 @@ class ThrottleBindingBatchDelete:
         需要解除绑定的API和流控策略绑定关系ID列表
 
         :param throttle_bindings: The throttle_bindings of this ThrottleBindingBatchDelete.
-        :type: list[str]
+        :type throttle_bindings: list[str]
         """
         self._throttle_bindings = throttle_bindings
 

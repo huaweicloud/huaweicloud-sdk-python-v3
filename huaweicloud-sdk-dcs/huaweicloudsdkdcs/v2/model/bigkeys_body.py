@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BigkeysBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class BigkeysBody:
     }
 
     def __init__(self, name=None, type=None, shard=None, db=None, size=None, unit=None):
-        """BigkeysBody - a model defined in huaweicloud sdk"""
+        """BigkeysBody
+
+        The model defined in huaweicloud sdk
+
+        :param name: key名称
+        :type name: str
+        :param type: key类型
+        :type type: str
+        :param shard: 大key所在的分片，仅在实例类型为集群时支持,格式为ip:port
+        :type shard: str
+        :param db: 大key所在的db
+        :type db: int
+        :param size: key的value大小。
+        :type size: int
+        :param unit: key大小的单位。type为string时，单位是：byte；type为list/set/zset/hash时，单位是：count
+        :type unit: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class BigkeysBody:
         key名称
 
         :param name: The name of this BigkeysBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -105,7 +120,7 @@ class BigkeysBody:
         key类型
 
         :param type: The type of this BigkeysBody.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -127,7 +142,7 @@ class BigkeysBody:
         大key所在的分片，仅在实例类型为集群时支持,格式为ip:port
 
         :param shard: The shard of this BigkeysBody.
-        :type: str
+        :type shard: str
         """
         self._shard = shard
 
@@ -149,7 +164,7 @@ class BigkeysBody:
         大key所在的db
 
         :param db: The db of this BigkeysBody.
-        :type: int
+        :type db: int
         """
         self._db = db
 
@@ -171,7 +186,7 @@ class BigkeysBody:
         key的value大小。
 
         :param size: The size of this BigkeysBody.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -193,7 +208,7 @@ class BigkeysBody:
         key大小的单位。type为string时，单位是：byte；type为list/set/zset/hash时，单位是：count
 
         :param unit: The unit of this BigkeysBody.
-        :type: str
+        :type unit: str
         """
         self._unit = unit
 

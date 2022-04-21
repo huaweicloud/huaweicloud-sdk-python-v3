@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowAllFaceSetsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class ShowAllFaceSetsRequest:
     }
 
     def __init__(self):
-        """ShowAllFaceSetsRequest - a model defined in huaweicloud sdk"""
+        """ShowAllFaceSetsRequest
+
+        The model defined in huaweicloud sdk
+
+        """
         
         
         self.discriminator = None

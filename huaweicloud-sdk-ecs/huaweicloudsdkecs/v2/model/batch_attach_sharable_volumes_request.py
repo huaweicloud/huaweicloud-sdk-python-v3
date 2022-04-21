@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchAttachSharableVolumesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchAttachSharableVolumesRequest:
     }
 
     def __init__(self, volume_id=None, body=None):
-        """BatchAttachSharableVolumesRequest - a model defined in huaweicloud sdk"""
+        """BatchAttachSharableVolumesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param volume_id: 共享磁盘ID。
+        :type volume_id: str
+        :param body: Body of the BatchAttachSharableVolumesRequest
+        :type body: :class:`huaweicloudsdkecs.v2.BatchAttachSharableVolumesRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class BatchAttachSharableVolumesRequest:
         共享磁盘ID。
 
         :param volume_id: The volume_id of this BatchAttachSharableVolumesRequest.
-        :type: str
+        :type volume_id: str
         """
         self._volume_id = volume_id
 
@@ -72,7 +79,7 @@ class BatchAttachSharableVolumesRequest:
 
 
         :return: The body of this BatchAttachSharableVolumesRequest.
-        :rtype: BatchAttachSharableVolumesRequestBody
+        :rtype: :class:`huaweicloudsdkecs.v2.BatchAttachSharableVolumesRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class BatchAttachSharableVolumesRequest:
 
 
         :param body: The body of this BatchAttachSharableVolumesRequest.
-        :type: BatchAttachSharableVolumesRequestBody
+        :type body: :class:`huaweicloudsdkecs.v2.BatchAttachSharableVolumesRequestBody`
         """
         self._body = body
 

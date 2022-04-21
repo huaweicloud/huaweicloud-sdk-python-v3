@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GlanceDeleteImageMemberResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class GlanceDeleteImageMemberResponse(SdkResponse):
     }
 
     def __init__(self):
-        """GlanceDeleteImageMemberResponse - a model defined in huaweicloud sdk"""
+        """GlanceDeleteImageMemberResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(GlanceDeleteImageMemberResponse, self).__init__()
         self.discriminator = None

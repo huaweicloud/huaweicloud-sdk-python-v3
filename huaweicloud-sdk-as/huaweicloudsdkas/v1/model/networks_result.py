@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NetworksResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class NetworksResult:
     }
 
     def __init__(self, id=None, ipv6_enable=None, ipv6_bandwidth=None, allowed_address_pairs=None):
-        """NetworksResult - a model defined in huaweicloud sdk"""
+        """NetworksResult
+
+        The model defined in huaweicloud sdk
+
+        :param id: 网络ID
+        :type id: str
+        :param ipv6_enable: 是否启用IPv6。取值为true时，标识此网卡已启用IPv6。
+        :type ipv6_enable: bool
+        :param ipv6_bandwidth: 
+        :type ipv6_bandwidth: :class:`huaweicloudsdkas.v1.Ipv6Bandwidth`
+        :param allowed_address_pairs: 是否开启源/目的检查开关。
+        :type allowed_address_pairs: list[:class:`huaweicloudsdkas.v1.AllowedAddressPair`]
+        """
         
         
 
@@ -73,7 +84,7 @@ class NetworksResult:
         网络ID
 
         :param id: The id of this NetworksResult.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -95,7 +106,7 @@ class NetworksResult:
         是否启用IPv6。取值为true时，标识此网卡已启用IPv6。
 
         :param ipv6_enable: The ipv6_enable of this NetworksResult.
-        :type: bool
+        :type ipv6_enable: bool
         """
         self._ipv6_enable = ipv6_enable
 
@@ -105,7 +116,7 @@ class NetworksResult:
 
 
         :return: The ipv6_bandwidth of this NetworksResult.
-        :rtype: Ipv6Bandwidth
+        :rtype: :class:`huaweicloudsdkas.v1.Ipv6Bandwidth`
         """
         return self._ipv6_bandwidth
 
@@ -115,7 +126,7 @@ class NetworksResult:
 
 
         :param ipv6_bandwidth: The ipv6_bandwidth of this NetworksResult.
-        :type: Ipv6Bandwidth
+        :type ipv6_bandwidth: :class:`huaweicloudsdkas.v1.Ipv6Bandwidth`
         """
         self._ipv6_bandwidth = ipv6_bandwidth
 
@@ -126,7 +137,7 @@ class NetworksResult:
         是否开启源/目的检查开关。
 
         :return: The allowed_address_pairs of this NetworksResult.
-        :rtype: list[AllowedAddressPair]
+        :rtype: list[:class:`huaweicloudsdkas.v1.AllowedAddressPair`]
         """
         return self._allowed_address_pairs
 
@@ -137,7 +148,7 @@ class NetworksResult:
         是否开启源/目的检查开关。
 
         :param allowed_address_pairs: The allowed_address_pairs of this NetworksResult.
-        :type: list[AllowedAddressPair]
+        :type allowed_address_pairs: list[:class:`huaweicloudsdkas.v1.AllowedAddressPair`]
         """
         self._allowed_address_pairs = allowed_address_pairs
 

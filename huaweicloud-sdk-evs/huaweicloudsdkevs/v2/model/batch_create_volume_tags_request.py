@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchCreateVolumeTagsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchCreateVolumeTagsRequest:
     }
 
     def __init__(self, volume_id=None, body=None):
-        """BatchCreateVolumeTagsRequest - a model defined in huaweicloud sdk"""
+        """BatchCreateVolumeTagsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param volume_id: 云硬盘ID。
+        :type volume_id: str
+        :param body: Body of the BatchCreateVolumeTagsRequest
+        :type body: :class:`huaweicloudsdkevs.v2.BatchCreateVolumeTagsRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class BatchCreateVolumeTagsRequest:
         云硬盘ID。
 
         :param volume_id: The volume_id of this BatchCreateVolumeTagsRequest.
-        :type: str
+        :type volume_id: str
         """
         self._volume_id = volume_id
 
@@ -72,7 +79,7 @@ class BatchCreateVolumeTagsRequest:
 
 
         :return: The body of this BatchCreateVolumeTagsRequest.
-        :rtype: BatchCreateVolumeTagsRequestBody
+        :rtype: :class:`huaweicloudsdkevs.v2.BatchCreateVolumeTagsRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class BatchCreateVolumeTagsRequest:
 
 
         :param body: The body of this BatchCreateVolumeTagsRequest.
-        :type: BatchCreateVolumeTagsRequestBody
+        :type body: :class:`huaweicloudsdkevs.v2.BatchCreateVolumeTagsRequestBody`
         """
         self._body = body
 

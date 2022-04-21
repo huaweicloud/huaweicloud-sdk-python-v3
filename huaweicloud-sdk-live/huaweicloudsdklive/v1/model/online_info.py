@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OnlineInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class OnlineInfo:
     }
 
     def __init__(self, publish_domain=None, app=None, stream=None, video_codec=None, audio_codec=None, video_frame_rate=None, audio_frame_rate=None, video_bitrate=None, audio_bitrate=None, resolution=None, client_ip=None, start_time=None):
-        """OnlineInfo - a model defined in huaweicloud sdk"""
+        """OnlineInfo
+
+        The model defined in huaweicloud sdk
+
+        :param publish_domain: 域名
+        :type publish_domain: str
+        :param app: 应用名
+        :type app: str
+        :param stream: 流名
+        :type stream: str
+        :param video_codec: 视频编码方式 - H264 - H265 
+        :type video_codec: str
+        :param audio_codec: 音频编码方式 - AAC 
+        :type audio_codec: str
+        :param video_frame_rate: 视频帧率
+        :type video_frame_rate: int
+        :param audio_frame_rate: 音频帧率
+        :type audio_frame_rate: int
+        :param video_bitrate: 视频码率
+        :type video_bitrate: int
+        :param audio_bitrate: 音频码率
+        :type audio_bitrate: int
+        :param resolution: 视频分辨率
+        :type resolution: str
+        :param client_ip: 推流设备的ip
+        :type client_ip: str
+        :param start_time: 开始推流时刻 UTC格式 2006-01-02T15:04:05Z
+        :type start_time: str
+        """
         
         
 
@@ -106,7 +133,7 @@ class OnlineInfo:
         域名
 
         :param publish_domain: The publish_domain of this OnlineInfo.
-        :type: str
+        :type publish_domain: str
         """
         self._publish_domain = publish_domain
 
@@ -128,7 +155,7 @@ class OnlineInfo:
         应用名
 
         :param app: The app of this OnlineInfo.
-        :type: str
+        :type app: str
         """
         self._app = app
 
@@ -150,7 +177,7 @@ class OnlineInfo:
         流名
 
         :param stream: The stream of this OnlineInfo.
-        :type: str
+        :type stream: str
         """
         self._stream = stream
 
@@ -172,7 +199,7 @@ class OnlineInfo:
         视频编码方式 - H264 - H265 
 
         :param video_codec: The video_codec of this OnlineInfo.
-        :type: str
+        :type video_codec: str
         """
         self._video_codec = video_codec
 
@@ -194,7 +221,7 @@ class OnlineInfo:
         音频编码方式 - AAC 
 
         :param audio_codec: The audio_codec of this OnlineInfo.
-        :type: str
+        :type audio_codec: str
         """
         self._audio_codec = audio_codec
 
@@ -216,7 +243,7 @@ class OnlineInfo:
         视频帧率
 
         :param video_frame_rate: The video_frame_rate of this OnlineInfo.
-        :type: int
+        :type video_frame_rate: int
         """
         self._video_frame_rate = video_frame_rate
 
@@ -238,7 +265,7 @@ class OnlineInfo:
         音频帧率
 
         :param audio_frame_rate: The audio_frame_rate of this OnlineInfo.
-        :type: int
+        :type audio_frame_rate: int
         """
         self._audio_frame_rate = audio_frame_rate
 
@@ -260,7 +287,7 @@ class OnlineInfo:
         视频码率
 
         :param video_bitrate: The video_bitrate of this OnlineInfo.
-        :type: int
+        :type video_bitrate: int
         """
         self._video_bitrate = video_bitrate
 
@@ -282,7 +309,7 @@ class OnlineInfo:
         音频码率
 
         :param audio_bitrate: The audio_bitrate of this OnlineInfo.
-        :type: int
+        :type audio_bitrate: int
         """
         self._audio_bitrate = audio_bitrate
 
@@ -304,7 +331,7 @@ class OnlineInfo:
         视频分辨率
 
         :param resolution: The resolution of this OnlineInfo.
-        :type: str
+        :type resolution: str
         """
         self._resolution = resolution
 
@@ -326,7 +353,7 @@ class OnlineInfo:
         推流设备的ip
 
         :param client_ip: The client_ip of this OnlineInfo.
-        :type: str
+        :type client_ip: str
         """
         self._client_ip = client_ip
 
@@ -348,7 +375,7 @@ class OnlineInfo:
         开始推流时刻 UTC格式 2006-01-02T15:04:05Z
 
         :param start_time: The start_time of this OnlineInfo.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 

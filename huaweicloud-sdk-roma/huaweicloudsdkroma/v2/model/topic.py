@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Topic:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class Topic:
     }
 
     def __init__(self, id=None, name=None, description=None, permission=None, is_private=None):
-        """Topic - a model defined in huaweicloud sdk"""
+        """Topic
+
+        The model defined in huaweicloud sdk
+
+        :param id: TOPIC的ID
+        :type id: int
+        :param name: TOPIC的名称
+        :type name: str
+        :param description: TOPIC描述
+        :type description: str
+        :param permission: TOPIC权限, 主题权限 0-发布 1-订阅
+        :type permission: int
+        :param is_private: TOPIC类型 0-基础TOPIC 1-用户自定义TOPIC
+        :type is_private: int
+        """
         
         
 
@@ -78,7 +91,7 @@ class Topic:
         TOPIC的ID
 
         :param id: The id of this Topic.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -100,7 +113,7 @@ class Topic:
         TOPIC的名称
 
         :param name: The name of this Topic.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -122,7 +135,7 @@ class Topic:
         TOPIC描述
 
         :param description: The description of this Topic.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -144,7 +157,7 @@ class Topic:
         TOPIC权限, 主题权限 0-发布 1-订阅
 
         :param permission: The permission of this Topic.
-        :type: int
+        :type permission: int
         """
         self._permission = permission
 
@@ -166,7 +179,7 @@ class Topic:
         TOPIC类型 0-基础TOPIC 1-用户自定义TOPIC
 
         :param is_private: The is_private of this Topic.
-        :type: int
+        :type is_private: int
         """
         self._is_private = is_private
 

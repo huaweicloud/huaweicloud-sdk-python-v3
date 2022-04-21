@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Failure:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class Failure:
     }
 
     def __init__(self, path=None, error_msg=None, method=None, error_code=None):
-        """Failure - a model defined in huaweicloud sdk"""
+        """Failure
+
+        The model defined in huaweicloud sdk
+
+        :param path: API请求路径
+        :type path: str
+        :param error_msg: 导入失败的错误信息
+        :type error_msg: str
+        :param method: API请求方法
+        :type method: str
+        :param error_code: 导入失败的错误码
+        :type error_code: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class Failure:
         API请求路径
 
         :param path: The path of this Failure.
-        :type: str
+        :type path: str
         """
         self._path = path
 
@@ -95,7 +106,7 @@ class Failure:
         导入失败的错误信息
 
         :param error_msg: The error_msg of this Failure.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 
@@ -117,7 +128,7 @@ class Failure:
         API请求方法
 
         :param method: The method of this Failure.
-        :type: str
+        :type method: str
         """
         self._method = method
 
@@ -139,7 +150,7 @@ class Failure:
         导入失败的错误码
 
         :param error_code: The error_code of this Failure.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 

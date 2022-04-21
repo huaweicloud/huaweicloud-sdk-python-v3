@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TextTranslationReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class TextTranslationReq:
     }
 
     def __init__(self, text=None, _from=None, to=None, scene=None):
-        """TextTranslationReq - a model defined in huaweicloud sdk"""
+        """TextTranslationReq
+
+        The model defined in huaweicloud sdk
+
+        :param text: 待翻译文本，仅支持utf-8编码，长度不超过5000字符。
+        :type text: str
+        :param _from: 翻译原语言，具体取值见支持的语言列表: zh    中文 en    英文 ru    俄语 ja    日文 de    德文 fr    法文 es    西班牙文 ko    韩语 auto  自动检测输入语种并翻译成目标语种，您需要指定目标语种。
+        :type _from: str
+        :param to: 翻译原语言，具体取值见支持的语言列表: zh    中文 en    英文 ru    俄语 ja    日文 de    德文 fr    法文 es    西班牙文 ko    韩语
+        :type to: str
+        :param scene: 默认为“common”，当前只有通用场景
+        :type scene: str
+        """
         
         
 
@@ -70,7 +81,7 @@ class TextTranslationReq:
         待翻译文本，仅支持utf-8编码，长度不超过5000字符。
 
         :param text: The text of this TextTranslationReq.
-        :type: str
+        :type text: str
         """
         self._text = text
 
@@ -92,7 +103,7 @@ class TextTranslationReq:
         翻译原语言，具体取值见支持的语言列表: zh    中文 en    英文 ru    俄语 ja    日文 de    德文 fr    法文 es    西班牙文 ko    韩语 auto  自动检测输入语种并翻译成目标语种，您需要指定目标语种。
 
         :param _from: The _from of this TextTranslationReq.
-        :type: str
+        :type _from: str
         """
         self.__from = _from
 
@@ -114,7 +125,7 @@ class TextTranslationReq:
         翻译原语言，具体取值见支持的语言列表: zh    中文 en    英文 ru    俄语 ja    日文 de    德文 fr    法文 es    西班牙文 ko    韩语
 
         :param to: The to of this TextTranslationReq.
-        :type: str
+        :type to: str
         """
         self._to = to
 
@@ -136,7 +147,7 @@ class TextTranslationReq:
         默认为“common”，当前只有通用场景
 
         :param scene: The scene of this TextTranslationReq.
-        :type: str
+        :type scene: str
         """
         self._scene = scene
 

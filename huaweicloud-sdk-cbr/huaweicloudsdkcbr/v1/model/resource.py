@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Resource:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class Resource:
     }
 
     def __init__(self, extra_info=None, id=None, name=None, type=None):
-        """Resource - a model defined in huaweicloud sdk"""
+        """Resource
+
+        The model defined in huaweicloud sdk
+
+        :param extra_info: 
+        :type extra_info: :class:`huaweicloudsdkcbr.v1.ResourceExtraInfo`
+        :param id: 待备份资源id
+        :type id: str
+        :param name: 待备份资源名称，长度限制：0-255
+        :type name: str
+        :param type: 待备份资源的类型, 云服务器: OS::Nova::Server, 云硬盘: OS::Cinder::Volume, 裸金属服务器: OS::Ironic::BareMetalServer, 线下本地服务器: OS::Native::Server, 弹性文件系统: OS::Sfs::Turbo
+        :type type: str
+        """
         
         
 
@@ -59,7 +70,7 @@ class Resource:
 
 
         :return: The extra_info of this Resource.
-        :rtype: ResourceExtraInfo
+        :rtype: :class:`huaweicloudsdkcbr.v1.ResourceExtraInfo`
         """
         return self._extra_info
 
@@ -69,7 +80,7 @@ class Resource:
 
 
         :param extra_info: The extra_info of this Resource.
-        :type: ResourceExtraInfo
+        :type extra_info: :class:`huaweicloudsdkcbr.v1.ResourceExtraInfo`
         """
         self._extra_info = extra_info
 
@@ -91,7 +102,7 @@ class Resource:
         待备份资源id
 
         :param id: The id of this Resource.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -113,7 +124,7 @@ class Resource:
         待备份资源名称，长度限制：0-255
 
         :param name: The name of this Resource.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -135,7 +146,7 @@ class Resource:
         待备份资源的类型, 云服务器: OS::Nova::Server, 云硬盘: OS::Cinder::Volume, 裸金属服务器: OS::Ironic::BareMetalServer, 线下本地服务器: OS::Native::Server, 弹性文件系统: OS::Sfs::Turbo
 
         :param type: The type of this Resource.
-        :type: str
+        :type type: str
         """
         self._type = type
 

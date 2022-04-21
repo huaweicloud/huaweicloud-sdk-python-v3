@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowQueueProjectTagsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class ShowQueueProjectTagsRequest:
     }
 
     def __init__(self):
-        """ShowQueueProjectTagsRequest - a model defined in huaweicloud sdk"""
+        """ShowQueueProjectTagsRequest
+
+        The model defined in huaweicloud sdk
+
+        """
         
         
         self.discriminator = None

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteNicsRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteNicsRequestBody:
     }
 
     def __init__(self, nics=None):
-        """DeleteNicsRequestBody - a model defined in huaweicloud sdk"""
+        """DeleteNicsRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param nics: 待删除网卡信息。
+        :type nics: list[:class:`huaweicloudsdkiec.v1.NicId`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class DeleteNicsRequestBody:
         待删除网卡信息。
 
         :return: The nics of this DeleteNicsRequestBody.
-        :rtype: list[NicId]
+        :rtype: list[:class:`huaweicloudsdkiec.v1.NicId`]
         """
         return self._nics
 
@@ -57,7 +62,7 @@ class DeleteNicsRequestBody:
         待删除网卡信息。
 
         :param nics: The nics of this DeleteNicsRequestBody.
-        :type: list[NicId]
+        :type nics: list[:class:`huaweicloudsdkiec.v1.NicId`]
         """
         self._nics = nics
 

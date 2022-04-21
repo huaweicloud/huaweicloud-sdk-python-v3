@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPublicZonesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListPublicZonesResponse(SdkResponse):
     }
 
     def __init__(self, links=None, zones=None, metadata=None):
-        """ListPublicZonesResponse - a model defined in huaweicloud sdk"""
+        """ListPublicZonesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param links: 
+        :type links: :class:`huaweicloudsdkdns.v2.PageLink`
+        :param zones: 查询公网Zone的列表响应。
+        :type zones: list[:class:`huaweicloudsdkdns.v2.PublicZoneResp`]
+        :param metadata: 
+        :type metadata: :class:`huaweicloudsdkdns.v2.Metedata`
+        """
         
         super(ListPublicZonesResponse, self).__init__()
 
@@ -56,7 +65,7 @@ class ListPublicZonesResponse(SdkResponse):
 
 
         :return: The links of this ListPublicZonesResponse.
-        :rtype: PageLink
+        :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
         """
         return self._links
 
@@ -66,7 +75,7 @@ class ListPublicZonesResponse(SdkResponse):
 
 
         :param links: The links of this ListPublicZonesResponse.
-        :type: PageLink
+        :type links: :class:`huaweicloudsdkdns.v2.PageLink`
         """
         self._links = links
 
@@ -77,7 +86,7 @@ class ListPublicZonesResponse(SdkResponse):
         查询公网Zone的列表响应。
 
         :return: The zones of this ListPublicZonesResponse.
-        :rtype: list[PublicZoneResp]
+        :rtype: list[:class:`huaweicloudsdkdns.v2.PublicZoneResp`]
         """
         return self._zones
 
@@ -88,7 +97,7 @@ class ListPublicZonesResponse(SdkResponse):
         查询公网Zone的列表响应。
 
         :param zones: The zones of this ListPublicZonesResponse.
-        :type: list[PublicZoneResp]
+        :type zones: list[:class:`huaweicloudsdkdns.v2.PublicZoneResp`]
         """
         self._zones = zones
 
@@ -98,7 +107,7 @@ class ListPublicZonesResponse(SdkResponse):
 
 
         :return: The metadata of this ListPublicZonesResponse.
-        :rtype: Metedata
+        :rtype: :class:`huaweicloudsdkdns.v2.Metedata`
         """
         return self._metadata
 
@@ -108,7 +117,7 @@ class ListPublicZonesResponse(SdkResponse):
 
 
         :param metadata: The metadata of this ListPublicZonesResponse.
-        :type: Metedata
+        :type metadata: :class:`huaweicloudsdkdns.v2.Metedata`
         """
         self._metadata = metadata
 

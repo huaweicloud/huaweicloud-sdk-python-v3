@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDetailsOfInstanceProgressV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ShowDetailsOfInstanceProgressV2Response(SdkResponse):
     }
 
     def __init__(self, progress=None, status=None, error_code=None, error_msg=None, start_time=None, end_time=None):
-        """ShowDetailsOfInstanceProgressV2Response - a model defined in huaweicloud sdk"""
+        """ShowDetailsOfInstanceProgressV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param progress: 实例创建进度  单位：百分比
+        :type progress: int
+        :param status: 实例创建状态 - creating：创建中 - success：创建成功 - failed：创建失败
+        :type status: str
+        :param error_code: 实例创建失败错误码
+        :type error_code: str
+        :param error_msg: 实例创建失败错误信息
+        :type error_msg: str
+        :param start_time: 实例创建开始时间。unix时间戳格式。
+        :type start_time: int
+        :param end_time: 实例创建结束时间。unix时间戳格式。
+        :type end_time: int
+        """
         
         super(ShowDetailsOfInstanceProgressV2Response, self).__init__()
 
@@ -83,7 +98,7 @@ class ShowDetailsOfInstanceProgressV2Response(SdkResponse):
         实例创建进度  单位：百分比
 
         :param progress: The progress of this ShowDetailsOfInstanceProgressV2Response.
-        :type: int
+        :type progress: int
         """
         self._progress = progress
 
@@ -105,7 +120,7 @@ class ShowDetailsOfInstanceProgressV2Response(SdkResponse):
         实例创建状态 - creating：创建中 - success：创建成功 - failed：创建失败
 
         :param status: The status of this ShowDetailsOfInstanceProgressV2Response.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -127,7 +142,7 @@ class ShowDetailsOfInstanceProgressV2Response(SdkResponse):
         实例创建失败错误码
 
         :param error_code: The error_code of this ShowDetailsOfInstanceProgressV2Response.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -149,7 +164,7 @@ class ShowDetailsOfInstanceProgressV2Response(SdkResponse):
         实例创建失败错误信息
 
         :param error_msg: The error_msg of this ShowDetailsOfInstanceProgressV2Response.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 
@@ -171,7 +186,7 @@ class ShowDetailsOfInstanceProgressV2Response(SdkResponse):
         实例创建开始时间。unix时间戳格式。
 
         :param start_time: The start_time of this ShowDetailsOfInstanceProgressV2Response.
-        :type: int
+        :type start_time: int
         """
         self._start_time = start_time
 
@@ -193,7 +208,7 @@ class ShowDetailsOfInstanceProgressV2Response(SdkResponse):
         实例创建结束时间。unix时间戳格式。
 
         :param end_time: The end_time of this ShowDetailsOfInstanceProgressV2Response.
-        :type: int
+        :type end_time: int
         """
         self._end_time = end_time
 

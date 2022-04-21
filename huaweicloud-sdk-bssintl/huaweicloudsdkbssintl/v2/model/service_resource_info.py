@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ServiceResourceInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ServiceResourceInfo:
     }
 
     def __init__(self, basic_info=None):
-        """ServiceResourceInfo - a model defined in huaweicloud sdk"""
+        """ServiceResourceInfo
+
+        The model defined in huaweicloud sdk
+
+        :param basic_info: 
+        :type basic_info: :class:`huaweicloudsdkbssintl.v2.ResourceBasicInfo`
+        """
         
         
 
@@ -46,7 +51,7 @@ class ServiceResourceInfo:
 
 
         :return: The basic_info of this ServiceResourceInfo.
-        :rtype: ResourceBasicInfo
+        :rtype: :class:`huaweicloudsdkbssintl.v2.ResourceBasicInfo`
         """
         return self._basic_info
 
@@ -56,7 +61,7 @@ class ServiceResourceInfo:
 
 
         :param basic_info: The basic_info of this ServiceResourceInfo.
-        :type: ResourceBasicInfo
+        :type basic_info: :class:`huaweicloudsdkbssintl.v2.ResourceBasicInfo`
         """
         self._basic_info = basic_info
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LoadBalancerStatusHealthMonitor:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class LoadBalancerStatusHealthMonitor:
     }
 
     def __init__(self, type=None, id=None, name=None, provisioning_status=None):
-        """LoadBalancerStatusHealthMonitor - a model defined in huaweicloud sdk"""
+        """LoadBalancerStatusHealthMonitor
+
+        The model defined in huaweicloud sdk
+
+        :param type: 协议类型。取值：TCP、UDP_CONNECT、HTTP、HTTPS。
+        :type type: str
+        :param id: 健康检查器ID。
+        :type id: str
+        :param name: 健康检查器名称。
+        :type name: str
+        :param provisioning_status: 健康检查器的配置状态。取值：ACTIVE表示使用中。
+        :type provisioning_status: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class LoadBalancerStatusHealthMonitor:
         协议类型。取值：TCP、UDP_CONNECT、HTTP、HTTPS。
 
         :param type: The type of this LoadBalancerStatusHealthMonitor.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -95,7 +106,7 @@ class LoadBalancerStatusHealthMonitor:
         健康检查器ID。
 
         :param id: The id of this LoadBalancerStatusHealthMonitor.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -117,7 +128,7 @@ class LoadBalancerStatusHealthMonitor:
         健康检查器名称。
 
         :param name: The name of this LoadBalancerStatusHealthMonitor.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -139,7 +150,7 @@ class LoadBalancerStatusHealthMonitor:
         健康检查器的配置状态。取值：ACTIVE表示使用中。
 
         :param provisioning_status: The provisioning_status of this LoadBalancerStatusHealthMonitor.
-        :type: str
+        :type provisioning_status: str
         """
         self._provisioning_status = provisioning_status
 

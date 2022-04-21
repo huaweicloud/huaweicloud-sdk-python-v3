@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListVariablesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListVariablesResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, variable_list=None):
-        """ListVariablesResponse - a model defined in huaweicloud sdk"""
+        """ListVariablesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param code: code
+        :type code: str
+        :param message: message
+        :type message: str
+        :param variable_list: variable_list
+        :type variable_list: list[:class:`huaweicloudsdkcpts.v1.VariableDetail`]
+        """
         
         super(ListVariablesResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListVariablesResponse(SdkResponse):
         code
 
         :param code: The code of this ListVariablesResponse.
-        :type: str
+        :type code: str
         """
         self._code = code
 
@@ -90,7 +99,7 @@ class ListVariablesResponse(SdkResponse):
         message
 
         :param message: The message of this ListVariablesResponse.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -101,7 +110,7 @@ class ListVariablesResponse(SdkResponse):
         variable_list
 
         :return: The variable_list of this ListVariablesResponse.
-        :rtype: list[VariableDetail]
+        :rtype: list[:class:`huaweicloudsdkcpts.v1.VariableDetail`]
         """
         return self._variable_list
 
@@ -112,7 +121,7 @@ class ListVariablesResponse(SdkResponse):
         variable_list
 
         :param variable_list: The variable_list of this ListVariablesResponse.
-        :type: list[VariableDetail]
+        :type variable_list: list[:class:`huaweicloudsdkcpts.v1.VariableDetail`]
         """
         self._variable_list = variable_list
 

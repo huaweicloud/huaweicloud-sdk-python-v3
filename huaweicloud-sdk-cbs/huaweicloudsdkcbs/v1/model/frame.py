@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Frame:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class Frame:
     }
 
     def __init__(self, intention=None, confidence=None, current_slots=None, history_slots=None, reply=None, task_complete=None, flow_complete=None, candidate_words=None, intention_alias=None):
-        """Frame - a model defined in huaweicloud sdk"""
+        """Frame
+
+        The model defined in huaweicloud sdk
+
+        :param intention: 意图
+        :type intention: str
+        :param confidence: 命中意图置信度。
+        :type confidence: float
+        :param current_slots: 当前槽位列表。
+        :type current_slots: list[:class:`huaweicloudsdkcbs.v1.CurrentSlot`]
+        :param history_slots: 历史槽位列表。
+        :type history_slots: list[:class:`huaweicloudsdkcbs.v1.HistorySlot`]
+        :param reply: 机器人回复。
+        :type reply: str
+        :param task_complete: 任务是否完成。
+        :type task_complete: bool
+        :param flow_complete: 对话流程是否完成。
+        :type flow_complete: bool
+        :param candidate_words: 候选词。
+        :type candidate_words: list[str]
+        :param intention_alias: 意图名称
+        :type intention_alias: str
+        """
         
         
 
@@ -90,7 +111,7 @@ class Frame:
         意图
 
         :param intention: The intention of this Frame.
-        :type: str
+        :type intention: str
         """
         self._intention = intention
 
@@ -112,7 +133,7 @@ class Frame:
         命中意图置信度。
 
         :param confidence: The confidence of this Frame.
-        :type: float
+        :type confidence: float
         """
         self._confidence = confidence
 
@@ -123,7 +144,7 @@ class Frame:
         当前槽位列表。
 
         :return: The current_slots of this Frame.
-        :rtype: list[CurrentSlot]
+        :rtype: list[:class:`huaweicloudsdkcbs.v1.CurrentSlot`]
         """
         return self._current_slots
 
@@ -134,7 +155,7 @@ class Frame:
         当前槽位列表。
 
         :param current_slots: The current_slots of this Frame.
-        :type: list[CurrentSlot]
+        :type current_slots: list[:class:`huaweicloudsdkcbs.v1.CurrentSlot`]
         """
         self._current_slots = current_slots
 
@@ -145,7 +166,7 @@ class Frame:
         历史槽位列表。
 
         :return: The history_slots of this Frame.
-        :rtype: list[HistorySlot]
+        :rtype: list[:class:`huaweicloudsdkcbs.v1.HistorySlot`]
         """
         return self._history_slots
 
@@ -156,7 +177,7 @@ class Frame:
         历史槽位列表。
 
         :param history_slots: The history_slots of this Frame.
-        :type: list[HistorySlot]
+        :type history_slots: list[:class:`huaweicloudsdkcbs.v1.HistorySlot`]
         """
         self._history_slots = history_slots
 
@@ -178,7 +199,7 @@ class Frame:
         机器人回复。
 
         :param reply: The reply of this Frame.
-        :type: str
+        :type reply: str
         """
         self._reply = reply
 
@@ -200,7 +221,7 @@ class Frame:
         任务是否完成。
 
         :param task_complete: The task_complete of this Frame.
-        :type: bool
+        :type task_complete: bool
         """
         self._task_complete = task_complete
 
@@ -222,7 +243,7 @@ class Frame:
         对话流程是否完成。
 
         :param flow_complete: The flow_complete of this Frame.
-        :type: bool
+        :type flow_complete: bool
         """
         self._flow_complete = flow_complete
 
@@ -244,7 +265,7 @@ class Frame:
         候选词。
 
         :param candidate_words: The candidate_words of this Frame.
-        :type: list[str]
+        :type candidate_words: list[str]
         """
         self._candidate_words = candidate_words
 
@@ -266,7 +287,7 @@ class Frame:
         意图名称
 
         :param intention_alias: The intention_alias of this Frame.
-        :type: str
+        :type intention_alias: str
         """
         self._intention_alias = intention_alias
 

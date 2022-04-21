@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowMetricValueResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowMetricValueResponse(SdkResponse):
     }
 
     def __init__(self, timestamps=None, metrics=None):
-        """ShowMetricValueResponse - a model defined in huaweicloud sdk"""
+        """ShowMetricValueResponse
+
+        The model defined in huaweicloud sdk
+
+        :param timestamps: 时间序列,使用UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS&#39;Z&#39;,示例：2021-02-01T00:00:00.123Z
+        :type timestamps: list[str]
+        :param metrics: 指标计算结果列表
+        :type metrics: list[:class:`huaweicloudsdkiotanalytics.v1.MetricValue`]
+        """
         
         super(ShowMetricValueResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ShowMetricValueResponse(SdkResponse):
         时间序列,使用UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss.SSS'Z',示例：2021-02-01T00:00:00.123Z
 
         :param timestamps: The timestamps of this ShowMetricValueResponse.
-        :type: list[str]
+        :type timestamps: list[str]
         """
         self._timestamps = timestamps
 
@@ -74,7 +81,7 @@ class ShowMetricValueResponse(SdkResponse):
         指标计算结果列表
 
         :return: The metrics of this ShowMetricValueResponse.
-        :rtype: list[MetricValue]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.MetricValue`]
         """
         return self._metrics
 
@@ -85,7 +92,7 @@ class ShowMetricValueResponse(SdkResponse):
         指标计算结果列表
 
         :param metrics: The metrics of this ShowMetricValueResponse.
-        :type: list[MetricValue]
+        :type metrics: list[:class:`huaweicloudsdkiotanalytics.v1.MetricValue`]
         """
         self._metrics = metrics
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Location:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Location:
     }
 
     def __init__(self, x=None, y=None):
-        """Location - a model defined in huaweicloud sdk"""
+        """Location
+
+        The model defined in huaweicloud sdk
+
+        :param x: 
+        :type x: int
+        :param y: 
+        :type y: int
+        """
         
         
 
@@ -61,7 +68,7 @@ class Location:
 
 
         :param x: The x of this Location.
-        :type: int
+        :type x: int
         """
         self._x = x
 
@@ -81,7 +88,7 @@ class Location:
 
 
         :param y: The y of this Location.
-        :type: int
+        :type y: int
         """
         self._y = y
 

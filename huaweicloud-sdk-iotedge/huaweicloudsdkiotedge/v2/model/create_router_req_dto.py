@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateRouterReqDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateRouterReqDTO:
     }
 
     def __init__(self, route_id=None, sql=None):
-        """CreateRouterReqDTO - a model defined in huaweicloud sdk"""
+        """CreateRouterReqDTO
+
+        The model defined in huaweicloud sdk
+
+        :param route_id: 路由ID，节点下唯一
+        :type route_id: str
+        :param sql: sql參數
+        :type sql: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class CreateRouterReqDTO:
         路由ID，节点下唯一
 
         :param route_id: The route_id of this CreateRouterReqDTO.
-        :type: str
+        :type route_id: str
         """
         self._route_id = route_id
 
@@ -83,7 +90,7 @@ class CreateRouterReqDTO:
         sql參數
 
         :param sql: The sql of this CreateRouterReqDTO.
-        :type: str
+        :type sql: str
         """
         self._sql = sql
 

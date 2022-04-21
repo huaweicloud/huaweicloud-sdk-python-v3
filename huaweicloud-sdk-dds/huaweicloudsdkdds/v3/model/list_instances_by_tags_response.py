@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListInstancesByTagsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListInstancesByTagsResponse(SdkResponse):
     }
 
     def __init__(self, instances=None, total_count=None):
-        """ListInstancesByTagsResponse - a model defined in huaweicloud sdk"""
+        """ListInstancesByTagsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param instances: 实例列表。
+        :type instances: list[:class:`huaweicloudsdkdds.v3.InstanceItem`]
+        :param total_count: 总记录数。
+        :type total_count: int
+        """
         
         super(ListInstancesByTagsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListInstancesByTagsResponse(SdkResponse):
         实例列表。
 
         :return: The instances of this ListInstancesByTagsResponse.
-        :rtype: list[InstanceItem]
+        :rtype: list[:class:`huaweicloudsdkdds.v3.InstanceItem`]
         """
         return self._instances
 
@@ -63,7 +70,7 @@ class ListInstancesByTagsResponse(SdkResponse):
         实例列表。
 
         :param instances: The instances of this ListInstancesByTagsResponse.
-        :type: list[InstanceItem]
+        :type instances: list[:class:`huaweicloudsdkdds.v3.InstanceItem`]
         """
         self._instances = instances
 
@@ -85,7 +92,7 @@ class ListInstancesByTagsResponse(SdkResponse):
         总记录数。
 
         :param total_count: The total_count of this ListInstancesByTagsResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 

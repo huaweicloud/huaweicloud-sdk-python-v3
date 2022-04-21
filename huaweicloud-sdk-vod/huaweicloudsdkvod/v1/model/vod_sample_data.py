@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VodSampleData:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class VodSampleData:
     }
 
     def __init__(self, storage=None, transcode=None):
-        """VodSampleData - a model defined in huaweicloud sdk"""
+        """VodSampleData
+
+        The model defined in huaweicloud sdk
+
+        :param storage: 存储空间。  单位：GB。
+        :type storage: float
+        :param transcode: 转码时长。  单位：秒。
+        :type transcode: int
+        """
         
         
 
@@ -63,7 +70,7 @@ class VodSampleData:
         存储空间。  单位：GB。
 
         :param storage: The storage of this VodSampleData.
-        :type: float
+        :type storage: float
         """
         self._storage = storage
 
@@ -85,7 +92,7 @@ class VodSampleData:
         转码时长。  单位：秒。
 
         :param transcode: The transcode of this VodSampleData.
-        :type: int
+        :type transcode: int
         """
         self._transcode = transcode
 

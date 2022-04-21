@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowResDatasourceWorkDetailResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class ShowResDatasourceWorkDetailResponse(SdkResponse):
     }
 
     def __init__(self, error_count=None, data_struct=None, error_samples=None, inspect_result=None, is_success=None, message=None, legal_rate=None, inspect_rst_generated_time=None, final_report=None):
-        """ShowResDatasourceWorkDetailResponse - a model defined in huaweicloud sdk"""
+        """ShowResDatasourceWorkDetailResponse
+
+        The model defined in huaweicloud sdk
+
+        :param error_count: 
+        :type error_count: :class:`huaweicloudsdkres.v1.ErrorCount`
+        :param data_struct: 
+        :type data_struct: :class:`huaweicloudsdkres.v1.DataStruct`
+        :param error_samples: 错误样例(请求类型为DATA_INSPECTION时返回)。
+        :type error_samples: list[:class:`huaweicloudsdkres.v1.ErrorSample`]
+        :param inspect_result: 数据检测结果(请求类型为DATA_INSPECTION时返回)。
+        :type inspect_result: list[:class:`huaweicloudsdkres.v1.InspectResult`]
+        :param is_success: 是否成功。
+        :type is_success: bool
+        :param message: 返回消息。
+        :type message: str
+        :param legal_rate: 合法率(请求类型为DATA_INSPECTION时返回)。
+        :type legal_rate: float
+        :param inspect_rst_generated_time: 检测结果生成时间(请求类型为DATA_INSPECTION时返回)。
+        :type inspect_rst_generated_time: str
+        :param final_report: 
+        :type final_report: :class:`huaweicloudsdkres.v1.FinalReport`
+        """
         
         super(ShowResDatasourceWorkDetailResponse, self).__init__()
 
@@ -86,7 +107,7 @@ class ShowResDatasourceWorkDetailResponse(SdkResponse):
 
 
         :return: The error_count of this ShowResDatasourceWorkDetailResponse.
-        :rtype: ErrorCount
+        :rtype: :class:`huaweicloudsdkres.v1.ErrorCount`
         """
         return self._error_count
 
@@ -96,7 +117,7 @@ class ShowResDatasourceWorkDetailResponse(SdkResponse):
 
 
         :param error_count: The error_count of this ShowResDatasourceWorkDetailResponse.
-        :type: ErrorCount
+        :type error_count: :class:`huaweicloudsdkres.v1.ErrorCount`
         """
         self._error_count = error_count
 
@@ -106,7 +127,7 @@ class ShowResDatasourceWorkDetailResponse(SdkResponse):
 
 
         :return: The data_struct of this ShowResDatasourceWorkDetailResponse.
-        :rtype: DataStruct
+        :rtype: :class:`huaweicloudsdkres.v1.DataStruct`
         """
         return self._data_struct
 
@@ -116,7 +137,7 @@ class ShowResDatasourceWorkDetailResponse(SdkResponse):
 
 
         :param data_struct: The data_struct of this ShowResDatasourceWorkDetailResponse.
-        :type: DataStruct
+        :type data_struct: :class:`huaweicloudsdkres.v1.DataStruct`
         """
         self._data_struct = data_struct
 
@@ -127,7 +148,7 @@ class ShowResDatasourceWorkDetailResponse(SdkResponse):
         错误样例(请求类型为DATA_INSPECTION时返回)。
 
         :return: The error_samples of this ShowResDatasourceWorkDetailResponse.
-        :rtype: list[ErrorSample]
+        :rtype: list[:class:`huaweicloudsdkres.v1.ErrorSample`]
         """
         return self._error_samples
 
@@ -138,7 +159,7 @@ class ShowResDatasourceWorkDetailResponse(SdkResponse):
         错误样例(请求类型为DATA_INSPECTION时返回)。
 
         :param error_samples: The error_samples of this ShowResDatasourceWorkDetailResponse.
-        :type: list[ErrorSample]
+        :type error_samples: list[:class:`huaweicloudsdkres.v1.ErrorSample`]
         """
         self._error_samples = error_samples
 
@@ -149,7 +170,7 @@ class ShowResDatasourceWorkDetailResponse(SdkResponse):
         数据检测结果(请求类型为DATA_INSPECTION时返回)。
 
         :return: The inspect_result of this ShowResDatasourceWorkDetailResponse.
-        :rtype: list[InspectResult]
+        :rtype: list[:class:`huaweicloudsdkres.v1.InspectResult`]
         """
         return self._inspect_result
 
@@ -160,7 +181,7 @@ class ShowResDatasourceWorkDetailResponse(SdkResponse):
         数据检测结果(请求类型为DATA_INSPECTION时返回)。
 
         :param inspect_result: The inspect_result of this ShowResDatasourceWorkDetailResponse.
-        :type: list[InspectResult]
+        :type inspect_result: list[:class:`huaweicloudsdkres.v1.InspectResult`]
         """
         self._inspect_result = inspect_result
 
@@ -182,7 +203,7 @@ class ShowResDatasourceWorkDetailResponse(SdkResponse):
         是否成功。
 
         :param is_success: The is_success of this ShowResDatasourceWorkDetailResponse.
-        :type: bool
+        :type is_success: bool
         """
         self._is_success = is_success
 
@@ -204,7 +225,7 @@ class ShowResDatasourceWorkDetailResponse(SdkResponse):
         返回消息。
 
         :param message: The message of this ShowResDatasourceWorkDetailResponse.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -226,7 +247,7 @@ class ShowResDatasourceWorkDetailResponse(SdkResponse):
         合法率(请求类型为DATA_INSPECTION时返回)。
 
         :param legal_rate: The legal_rate of this ShowResDatasourceWorkDetailResponse.
-        :type: float
+        :type legal_rate: float
         """
         self._legal_rate = legal_rate
 
@@ -248,7 +269,7 @@ class ShowResDatasourceWorkDetailResponse(SdkResponse):
         检测结果生成时间(请求类型为DATA_INSPECTION时返回)。
 
         :param inspect_rst_generated_time: The inspect_rst_generated_time of this ShowResDatasourceWorkDetailResponse.
-        :type: str
+        :type inspect_rst_generated_time: str
         """
         self._inspect_rst_generated_time = inspect_rst_generated_time
 
@@ -258,7 +279,7 @@ class ShowResDatasourceWorkDetailResponse(SdkResponse):
 
 
         :return: The final_report of this ShowResDatasourceWorkDetailResponse.
-        :rtype: FinalReport
+        :rtype: :class:`huaweicloudsdkres.v1.FinalReport`
         """
         return self._final_report
 
@@ -268,7 +289,7 @@ class ShowResDatasourceWorkDetailResponse(SdkResponse):
 
 
         :param final_report: The final_report of this ShowResDatasourceWorkDetailResponse.
-        :type: FinalReport
+        :type final_report: :class:`huaweicloudsdkres.v1.FinalReport`
         """
         self._final_report = final_report
 

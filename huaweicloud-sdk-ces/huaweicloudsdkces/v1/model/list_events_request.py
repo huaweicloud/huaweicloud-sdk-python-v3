@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListEventsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListEventsRequest:
     }
 
     def __init__(self, event_type=None, event_name=None, _from=None, to=None, start=None, limit=None):
-        """ListEventsRequest - a model defined in huaweicloud sdk"""
+        """ListEventsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param event_type: 事件类型，值为EVENT.SYS或EVENT.CUSTOM，EVENT.SYS表示系统事件，EVENT.CUSTOM表示自定义事件。
+        :type event_type: str
+        :param event_name: 事件名称，值为系统产生的事件名称，或用户自定义上报的事件名称。
+        :type event_name: str
+        :param _from: 查询数据起始时间，UNIX时间戳，单位毫秒；例如：1605952700911。
+        :type _from: int
+        :param to: 查询数据截止时间UNIX时间戳，单位毫秒。from必须小于to，例如：1606557500911。
+        :type to: int
+        :param start: 分页起始值，类型为integer，默认值为0。
+        :type start: int
+        :param limit: 单次查询的条数限制，取值范围(0,100]，默认值为100，用于限制结果数据条数。
+        :type limit: int
+        """
         
         
 
@@ -83,7 +98,7 @@ class ListEventsRequest:
         事件类型，值为EVENT.SYS或EVENT.CUSTOM，EVENT.SYS表示系统事件，EVENT.CUSTOM表示自定义事件。
 
         :param event_type: The event_type of this ListEventsRequest.
-        :type: str
+        :type event_type: str
         """
         self._event_type = event_type
 
@@ -105,7 +120,7 @@ class ListEventsRequest:
         事件名称，值为系统产生的事件名称，或用户自定义上报的事件名称。
 
         :param event_name: The event_name of this ListEventsRequest.
-        :type: str
+        :type event_name: str
         """
         self._event_name = event_name
 
@@ -127,7 +142,7 @@ class ListEventsRequest:
         查询数据起始时间，UNIX时间戳，单位毫秒；例如：1605952700911。
 
         :param _from: The _from of this ListEventsRequest.
-        :type: int
+        :type _from: int
         """
         self.__from = _from
 
@@ -149,7 +164,7 @@ class ListEventsRequest:
         查询数据截止时间UNIX时间戳，单位毫秒。from必须小于to，例如：1606557500911。
 
         :param to: The to of this ListEventsRequest.
-        :type: int
+        :type to: int
         """
         self._to = to
 
@@ -171,7 +186,7 @@ class ListEventsRequest:
         分页起始值，类型为integer，默认值为0。
 
         :param start: The start of this ListEventsRequest.
-        :type: int
+        :type start: int
         """
         self._start = start
 
@@ -193,7 +208,7 @@ class ListEventsRequest:
         单次查询的条数限制，取值范围(0,100]，默认值为100，用于限制结果数据条数。
 
         :param limit: The limit of this ListEventsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPtrRecordsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListPtrRecordsRequest:
     }
 
     def __init__(self, marker=None, limit=None, offset=None, enterprise_project_id=None, tags=None, status=None):
-        """ListPtrRecordsRequest - a model defined in huaweicloud sdk"""
+        """ListPtrRecordsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param marker: 分页查询起始的资源ID，为空时为查询第一页。  默认值为空。
+        :type marker: str
+        :param limit: 每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
+        :type limit: int
+        :param offset: 分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
+        :type offset: int
+        :param enterprise_project_id: 反向解析关联的企业项目ID，长度不超过36个字符。  默认值为0。
+        :type enterprise_project_id: str
+        :param tags: 资源标签。  取值格式：key1,value1|key2,value2  多个标签之间用\&quot;|\&quot;分开，每个标签的键值用英文逗号\&quot;,\&quot;相隔。
+        :type tags: str
+        :param status: 资源状态。
+        :type status: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class ListPtrRecordsRequest:
         分页查询起始的资源ID，为空时为查询第一页。  默认值为空。
 
         :param marker: The marker of this ListPtrRecordsRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -105,7 +120,7 @@ class ListPtrRecordsRequest:
         每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
 
         :param limit: The limit of this ListPtrRecordsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -127,7 +142,7 @@ class ListPtrRecordsRequest:
         分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
 
         :param offset: The offset of this ListPtrRecordsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -149,7 +164,7 @@ class ListPtrRecordsRequest:
         反向解析关联的企业项目ID，长度不超过36个字符。  默认值为0。
 
         :param enterprise_project_id: The enterprise_project_id of this ListPtrRecordsRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -171,7 +186,7 @@ class ListPtrRecordsRequest:
         资源标签。  取值格式：key1,value1|key2,value2  多个标签之间用\"|\"分开，每个标签的键值用英文逗号\",\"相隔。
 
         :param tags: The tags of this ListPtrRecordsRequest.
-        :type: str
+        :type tags: str
         """
         self._tags = tags
 
@@ -193,7 +208,7 @@ class ListPtrRecordsRequest:
         资源状态。
 
         :param status: The status of this ListPtrRecordsRequest.
-        :type: str
+        :type status: str
         """
         self._status = status
 

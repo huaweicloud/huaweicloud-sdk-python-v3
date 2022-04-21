@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KafkaCreateInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class KafkaCreateInfo:
     }
 
     def __init__(self, spec=None, storage=None, az=None):
-        """KafkaCreateInfo - a model defined in huaweicloud sdk"""
+        """KafkaCreateInfo
+
+        The model defined in huaweicloud sdk
+
+        :param spec: kafka实例规格，可选：mini：基准带宽100MB/s，small：基准带宽300MB/s，middle：基准带宽600MB/s，high：基准带宽1200MB/s
+        :type spec: str
+        :param storage: 存储空间(单位：GB），至多9000，mini版至少300，small至少1200，middle至少2400，high至少4800
+        :type storage: int
+        :param az: kafka实例可用区
+        :type az: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class KafkaCreateInfo:
         kafka实例规格，可选：mini：基准带宽100MB/s，small：基准带宽300MB/s，middle：基准带宽600MB/s，high：基准带宽1200MB/s
 
         :param spec: The spec of this KafkaCreateInfo.
-        :type: str
+        :type spec: str
         """
         self._spec = spec
 
@@ -87,7 +96,7 @@ class KafkaCreateInfo:
         存储空间(单位：GB），至多9000，mini版至少300，small至少1200，middle至少2400，high至少4800
 
         :param storage: The storage of this KafkaCreateInfo.
-        :type: int
+        :type storage: int
         """
         self._storage = storage
 
@@ -109,7 +118,7 @@ class KafkaCreateInfo:
         kafka实例可用区
 
         :param az: The az of this KafkaCreateInfo.
-        :type: str
+        :type az: str
         """
         self._az = az
 

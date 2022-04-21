@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListIaConfigsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListIaConfigsRequest:
     }
 
     def __init__(self, node_id=None, ia_id=None, offset=None, limit=None):
-        """ListIaConfigsRequest - a model defined in huaweicloud sdk"""
+        """ListIaConfigsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param node_id: 边缘节点ID
+        :type node_id: str
+        :param ia_id: 边侧第三方应用的模块ID
+        :type ia_id: str
+        :param offset: 查询的起始位置，取值范围为非负整数，默认为0
+        :type offset: int
+        :param limit: 每页记录数，取值范围为非负整数，默认值为10
+        :type limit: int
+        """
         
         
 
@@ -71,7 +82,7 @@ class ListIaConfigsRequest:
         边缘节点ID
 
         :param node_id: The node_id of this ListIaConfigsRequest.
-        :type: str
+        :type node_id: str
         """
         self._node_id = node_id
 
@@ -93,7 +104,7 @@ class ListIaConfigsRequest:
         边侧第三方应用的模块ID
 
         :param ia_id: The ia_id of this ListIaConfigsRequest.
-        :type: str
+        :type ia_id: str
         """
         self._ia_id = ia_id
 
@@ -115,7 +126,7 @@ class ListIaConfigsRequest:
         查询的起始位置，取值范围为非负整数，默认为0
 
         :param offset: The offset of this ListIaConfigsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -137,7 +148,7 @@ class ListIaConfigsRequest:
         每页记录数，取值范围为非负整数，默认值为10
 
         :param limit: The limit of this ListIaConfigsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchOpsResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchOpsResult:
     }
 
     def __init__(self, result=None, instance=None):
-        """BatchOpsResult - a model defined in huaweicloud sdk"""
+        """BatchOpsResult
+
+        The model defined in huaweicloud sdk
+
+        :param result: 操作结果，取值有success或failed。
+        :type result: str
+        :param instance: 缓存实例ID。
+        :type instance: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class BatchOpsResult:
         操作结果，取值有success或failed。
 
         :param result: The result of this BatchOpsResult.
-        :type: str
+        :type result: str
         """
         self._result = result
 
@@ -85,7 +92,7 @@ class BatchOpsResult:
         缓存实例ID。
 
         :param instance: The instance of this BatchOpsResult.
-        :type: str
+        :type instance: str
         """
         self._instance = instance
 

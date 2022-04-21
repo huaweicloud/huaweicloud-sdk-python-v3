@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RepositoryInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class RepositoryInfo:
     }
 
     def __init__(self, name=None, description=None, project_id=None, region_id=None, gitignore=None, member_permission=None, readme_permission=None, visibility_level=None, license_id=None):
-        """RepositoryInfo - a model defined in huaweicloud sdk"""
+        """RepositoryInfo
+
+        The model defined in huaweicloud sdk
+
+        :param name: 代码仓的名称。
+        :type name: str
+        :param description: 代码仓描述。
+        :type description: str
+        :param project_id: 项目id。
+        :type project_id: str
+        :param region_id: 区域id。
+        :type region_id: str
+        :param gitignore: 根据编程语言生成gitignore文件。
+        :type gitignore: str
+        :param member_permission: 是否允许项目内成员访问仓库： - 0：不允许 - 1：允许 
+        :type member_permission: int
+        :param readme_permission: 是否允许生成README文件： - 0：不允许 - 1：允许 
+        :type readme_permission: int
+        :param visibility_level: 是否公开： - 0：私有 - 20：公开只读 
+        :type visibility_level: int
+        :param license_id:  开源许可证id （0:默认）。
+        :type license_id: int
+        """
         
         
 
@@ -98,7 +119,7 @@ class RepositoryInfo:
         代码仓的名称。
 
         :param name: The name of this RepositoryInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -120,7 +141,7 @@ class RepositoryInfo:
         代码仓描述。
 
         :param description: The description of this RepositoryInfo.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -142,7 +163,7 @@ class RepositoryInfo:
         项目id。
 
         :param project_id: The project_id of this RepositoryInfo.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -164,7 +185,7 @@ class RepositoryInfo:
         区域id。
 
         :param region_id: The region_id of this RepositoryInfo.
-        :type: str
+        :type region_id: str
         """
         self._region_id = region_id
 
@@ -186,7 +207,7 @@ class RepositoryInfo:
         根据编程语言生成gitignore文件。
 
         :param gitignore: The gitignore of this RepositoryInfo.
-        :type: str
+        :type gitignore: str
         """
         self._gitignore = gitignore
 
@@ -208,7 +229,7 @@ class RepositoryInfo:
         是否允许项目内成员访问仓库： - 0：不允许 - 1：允许 
 
         :param member_permission: The member_permission of this RepositoryInfo.
-        :type: int
+        :type member_permission: int
         """
         self._member_permission = member_permission
 
@@ -230,7 +251,7 @@ class RepositoryInfo:
         是否允许生成README文件： - 0：不允许 - 1：允许 
 
         :param readme_permission: The readme_permission of this RepositoryInfo.
-        :type: int
+        :type readme_permission: int
         """
         self._readme_permission = readme_permission
 
@@ -252,7 +273,7 @@ class RepositoryInfo:
         是否公开： - 0：私有 - 20：公开只读 
 
         :param visibility_level: The visibility_level of this RepositoryInfo.
-        :type: int
+        :type visibility_level: int
         """
         self._visibility_level = visibility_level
 
@@ -274,7 +295,7 @@ class RepositoryInfo:
          开源许可证id （0:默认）。
 
         :param license_id: The license_id of this RepositoryInfo.
-        :type: int
+        :type license_id: int
         """
         self._license_id = license_id
 

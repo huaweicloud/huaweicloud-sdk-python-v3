@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ConfigurationSummaryForCreate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ConfigurationSummaryForCreate:
     }
 
     def __init__(self, id=None, name=None, description=None, datastore_version_name=None, datastore_name=None, created=None, updated=None):
-        """ConfigurationSummaryForCreate - a model defined in huaweicloud sdk"""
+        """ConfigurationSummaryForCreate
+
+        The model defined in huaweicloud sdk
+
+        :param id: 参数组ID。
+        :type id: str
+        :param name: 参数组名称。
+        :type name: str
+        :param description: 参数组描述。
+        :type description: str
+        :param datastore_version_name: 引擎版本。
+        :type datastore_version_name: str
+        :param datastore_name: 引擎名。
+        :type datastore_name: str
+        :param created: 创建时间，格式为\&quot;yyyy-MM-ddTHH:mm:ssZ\&quot;。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        :type created: str
+        :param updated: 更新时间，格式为\&quot;yyyy-MM-ddTHH:mm:ssZ\&quot;。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        :type updated: str
+        """
         
         
 
@@ -82,7 +99,7 @@ class ConfigurationSummaryForCreate:
         参数组ID。
 
         :param id: The id of this ConfigurationSummaryForCreate.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -104,7 +121,7 @@ class ConfigurationSummaryForCreate:
         参数组名称。
 
         :param name: The name of this ConfigurationSummaryForCreate.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -126,7 +143,7 @@ class ConfigurationSummaryForCreate:
         参数组描述。
 
         :param description: The description of this ConfigurationSummaryForCreate.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -148,7 +165,7 @@ class ConfigurationSummaryForCreate:
         引擎版本。
 
         :param datastore_version_name: The datastore_version_name of this ConfigurationSummaryForCreate.
-        :type: str
+        :type datastore_version_name: str
         """
         self._datastore_version_name = datastore_version_name
 
@@ -170,7 +187,7 @@ class ConfigurationSummaryForCreate:
         引擎名。
 
         :param datastore_name: The datastore_name of this ConfigurationSummaryForCreate.
-        :type: str
+        :type datastore_name: str
         """
         self._datastore_name = datastore_name
 
@@ -192,7 +209,7 @@ class ConfigurationSummaryForCreate:
         创建时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
         :param created: The created of this ConfigurationSummaryForCreate.
-        :type: str
+        :type created: str
         """
         self._created = created
 
@@ -214,7 +231,7 @@ class ConfigurationSummaryForCreate:
         更新时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
         :param updated: The updated of this ConfigurationSummaryForCreate.
-        :type: str
+        :type updated: str
         """
         self._updated = updated
 

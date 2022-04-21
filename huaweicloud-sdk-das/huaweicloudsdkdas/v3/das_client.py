@@ -52,21 +52,17 @@ class DasClient(Client):
         """查询API版本列表
 
         查询API版本列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListApiVersionsRequest request
-        :return: ListApiVersionsResponse
+        :param request: Request instance for ListApiVersions
+        :type request: :class:`huaweicloudsdkdas.v3.ListApiVersionsRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ListApiVersionsResponse`
         """
         return self.list_api_versions_with_http_info(request)
 
     def list_api_versions_with_http_info(self, request):
-        """查询API版本列表
-
-        查询API版本列表
-
-        :param ListApiVersionsRequest request
-        :return: ListApiVersionsResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -108,26 +104,21 @@ class DasClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_api_version(self, request):
         """查询指定的API版本信息
 
         查询指定的API版本信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowApiVersionRequest request
-        :return: ShowApiVersionResponse
+        :param request: Request instance for ShowApiVersion
+        :type request: :class:`huaweicloudsdkdas.v3.ShowApiVersionRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ShowApiVersionResponse`
         """
         return self.show_api_version_with_http_info(request)
 
     def show_api_version_with_http_info(self, request):
-        """查询指定的API版本信息
-
-        查询指定的API版本信息
-
-        :param ShowApiVersionRequest request
-        :return: ShowApiVersionResponse
-        """
-
         all_params = ['version']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -171,26 +162,22 @@ class DasClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def change_sql_switch(self, request):
         """开启/关闭全量SQL、慢SQL开关
 
-        打开或者关闭DAS收集全量SQL开关，开启后，实例的性能损耗在5%以内。开启全量SQL后，本服务会对SQL的文本内容进行存储，以便进行分析。用户可自行设置全量SQL的保存时间范围，到期后会自动删除；如果未设置，数据默认保留7天。 打开或者关闭DAS收集慢SQL开关。开启慢SQL后，本服务会对慢SQL的文本内容进行存储，以便进行分析。用户可自行设置慢SQL的保存时间范围，到期后会自动删除；如果未设置，数据默认保留7天。该功能仅支持付费实例。
+        打开或者关闭DAS收集全量SQL开关，开启后，实例的性能损耗在5%以内。开启全量SQL后，本服务会对SQL的文本内容进行存储，以便进行分析。用户可自行设置全量SQL的保存时间范围，到期后会自动删除；如果未设置，数据默认保留7天。
+        打开或者关闭DAS收集慢SQL开关。开启慢SQL后，本服务会对慢SQL的文本内容进行存储，以便进行分析。用户可自行设置慢SQL的保存时间范围，到期后会自动删除；如果未设置，数据默认保留7天。该功能仅支持付费实例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ChangeSqlSwitchRequest request
-        :return: ChangeSqlSwitchResponse
+        :param request: Request instance for ChangeSqlSwitch
+        :type request: :class:`huaweicloudsdkdas.v3.ChangeSqlSwitchRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ChangeSqlSwitchResponse`
         """
         return self.change_sql_switch_with_http_info(request)
 
     def change_sql_switch_with_http_info(self, request):
-        """开启/关闭全量SQL、慢SQL开关
-
-        打开或者关闭DAS收集全量SQL开关，开启后，实例的性能损耗在5%以内。开启全量SQL后，本服务会对SQL的文本内容进行存储，以便进行分析。用户可自行设置全量SQL的保存时间范围，到期后会自动删除；如果未设置，数据默认保留7天。 打开或者关闭DAS收集慢SQL开关。开启慢SQL后，本服务会对慢SQL的文本内容进行存储，以便进行分析。用户可自行设置慢SQL的保存时间范围，到期后会自动删除；如果未设置，数据默认保留7天。该功能仅支持付费实例。
-
-        :param ChangeSqlSwitchRequest request
-        :return: ChangeSqlSwitchResponse
-        """
-
         all_params = ['instance_id', 'change_das_switch_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -238,26 +225,21 @@ class DasClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_space_analysis_task(self, request):
         """创建空间分析任务
 
         创建空间分析任务，如触发重新分析，支持MySQL和GaussDB(for MySQL)引擎
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateSpaceAnalysisTaskRequest request
-        :return: CreateSpaceAnalysisTaskResponse
+        :param request: Request instance for CreateSpaceAnalysisTask
+        :type request: :class:`huaweicloudsdkdas.v3.CreateSpaceAnalysisTaskRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.CreateSpaceAnalysisTaskResponse`
         """
         return self.create_space_analysis_task_with_http_info(request)
 
     def create_space_analysis_task_with_http_info(self, request):
-        """创建空间分析任务
-
-        创建空间分析任务，如触发重新分析，支持MySQL和GaussDB(for MySQL)引擎
-
-        :param CreateSpaceAnalysisTaskRequest request
-        :return: CreateSpaceAnalysisTaskResponse
-        """
-
         all_params = ['instance_id', 'create_space_analysis_task_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -305,26 +287,22 @@ class DasClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_db_user(self, request):
         """删除数据库用户
 
-        删除注册在DAS里的数据库用户。此接口只是将注册的数据库用户在DAS系统里删除，不会真正删除数据库用户对象。 目前仅支持MySQL实例。
+        删除注册在DAS里的数据库用户。此接口只是将注册的数据库用户在DAS系统里删除，不会真正删除数据库用户对象。
+        目前仅支持MySQL实例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteDbUserRequest request
-        :return: DeleteDbUserResponse
+        :param request: Request instance for DeleteDbUser
+        :type request: :class:`huaweicloudsdkdas.v3.DeleteDbUserRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.DeleteDbUserResponse`
         """
         return self.delete_db_user_with_http_info(request)
 
     def delete_db_user_with_http_info(self, request):
-        """删除数据库用户
-
-        删除注册在DAS里的数据库用户。此接口只是将注册的数据库用户在DAS系统里删除，不会真正删除数据库用户对象。 目前仅支持MySQL实例。
-
-        :param DeleteDbUserRequest request
-        :return: DeleteDbUserResponse
-        """
-
         all_params = ['instance_id', 'db_user_id', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -372,26 +350,22 @@ class DasClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_process(self, request):
         """查杀会话
 
-        查杀会话。支持按照用户、数据库、会话列表查杀会话，三个条件至少指定一个。 目前仅支持MySQL实例。
+        查杀会话。支持按照用户、数据库、会话列表查杀会话，三个条件至少指定一个。
+        目前仅支持MySQL实例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteProcessRequest request
-        :return: DeleteProcessResponse
+        :param request: Request instance for DeleteProcess
+        :type request: :class:`huaweicloudsdkdas.v3.DeleteProcessRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.DeleteProcessResponse`
         """
         return self.delete_process_with_http_info(request)
 
     def delete_process_with_http_info(self, request):
-        """查杀会话
-
-        查杀会话。支持按照用户、数据库、会话列表查杀会话，三个条件至少指定一个。 目前仅支持MySQL实例。
-
-        :param DeleteProcessRequest request
-        :return: DeleteProcessResponse
-        """
-
         all_params = ['instance_id', 'delete_process_req', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -439,26 +413,21 @@ class DasClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def export_slow_query_logs(self, request):
         """导出慢SQL数据
 
         DAS收集慢SQL开关打开后，一次性导出指定时间范围内的慢SQL数据，支持分页滚动获取。该功能仅支持付费实例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ExportSlowQueryLogsRequest request
-        :return: ExportSlowQueryLogsResponse
+        :param request: Request instance for ExportSlowQueryLogs
+        :type request: :class:`huaweicloudsdkdas.v3.ExportSlowQueryLogsRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ExportSlowQueryLogsResponse`
         """
         return self.export_slow_query_logs_with_http_info(request)
 
     def export_slow_query_logs_with_http_info(self, request):
-        """导出慢SQL数据
-
-        DAS收集慢SQL开关打开后，一次性导出指定时间范围内的慢SQL数据，支持分页滚动获取。该功能仅支持付费实例。
-
-        :param ExportSlowQueryLogsRequest request
-        :return: ExportSlowQueryLogsResponse
-        """
-
         all_params = ['instance_id', 'datastore_type', 'start_at', 'end_at', 'limit', 'marker', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -514,26 +483,21 @@ class DasClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def export_sql_statements(self, request):
         """导出全量SQL
 
         全量SQL开关打开后，一次性导出指定时间范围内的全量SQL数据，支持分页滚动获取。该功能仅支持付费实例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ExportSqlStatementsRequest request
-        :return: ExportSqlStatementsResponse
+        :param request: Request instance for ExportSqlStatements
+        :type request: :class:`huaweicloudsdkdas.v3.ExportSqlStatementsRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ExportSqlStatementsResponse`
         """
         return self.export_sql_statements_with_http_info(request)
 
     def export_sql_statements_with_http_info(self, request):
-        """导出全量SQL
-
-        全量SQL开关打开后，一次性导出指定时间范围内的全量SQL数据，支持分页滚动获取。该功能仅支持付费实例。
-
-        :param ExportSqlStatementsRequest request
-        :return: ExportSqlStatementsResponse
-        """
-
         all_params = ['instance_id', 'start_at', 'end_at', 'limit', 'datastore_type', 'marker', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -589,26 +553,22 @@ class DasClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_db_users(self, request):
         """查询数据库用户列表
 
-        查询注册在DAS里的数据库用户列表，后续调用其他接口时(如查询实例会话列表接口)需要用到此接口返回的db_user_id。此接口不会返回数据库实例上的数据库用户对象。 目前仅支持MySQL实例。
+        查询注册在DAS里的数据库用户列表，后续调用其他接口时(如查询实例会话列表接口)需要用到此接口返回的db_user_id。此接口不会返回数据库实例上的数据库用户对象。
+        目前仅支持MySQL实例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListDbUsersRequest request
-        :return: ListDbUsersResponse
+        :param request: Request instance for ListDbUsers
+        :type request: :class:`huaweicloudsdkdas.v3.ListDbUsersRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ListDbUsersResponse`
         """
         return self.list_db_users_with_http_info(request)
 
     def list_db_users_with_http_info(self, request):
-        """查询数据库用户列表
-
-        查询注册在DAS里的数据库用户列表，后续调用其他接口时(如查询实例会话列表接口)需要用到此接口返回的db_user_id。此接口不会返回数据库实例上的数据库用户对象。 目前仅支持MySQL实例。
-
-        :param ListDbUsersRequest request
-        :return: ListDbUsersResponse
-        """
-
         all_params = ['instance_id', 'offset', 'limit', 'db_user_id', 'db_username', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -662,26 +622,22 @@ class DasClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_innodb_locks(self, request):
         """查询InnoDB锁等待列表
 
-        查询InnoDB锁等待列表。 目前仅支持MySQL实例。
+        查询InnoDB锁等待列表。
+        目前仅支持MySQL实例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListInnodbLocksRequest request
-        :return: ListInnodbLocksResponse
+        :param request: Request instance for ListInnodbLocks
+        :type request: :class:`huaweicloudsdkdas.v3.ListInnodbLocksRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ListInnodbLocksResponse`
         """
         return self.list_innodb_locks_with_http_info(request)
 
     def list_innodb_locks_with_http_info(self, request):
-        """查询InnoDB锁等待列表
-
-        查询InnoDB锁等待列表。 目前仅支持MySQL实例。
-
-        :param ListInnodbLocksRequest request
-        :return: ListInnodbLocksResponse
-        """
-
         all_params = ['instance_id', 'db_user_id', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -729,26 +685,22 @@ class DasClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_metadata_locks(self, request):
         """查询元数据锁列表
 
-        查询元数据锁列表。 目前仅支持MySQL实例。
+        查询元数据锁列表。
+        目前仅支持MySQL实例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListMetadataLocksRequest request
-        :return: ListMetadataLocksResponse
+        :param request: Request instance for ListMetadataLocks
+        :type request: :class:`huaweicloudsdkdas.v3.ListMetadataLocksRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ListMetadataLocksResponse`
         """
         return self.list_metadata_locks_with_http_info(request)
 
     def list_metadata_locks_with_http_info(self, request):
-        """查询元数据锁列表
-
-        查询元数据锁列表。 目前仅支持MySQL实例。
-
-        :param ListMetadataLocksRequest request
-        :return: ListMetadataLocksResponse
-        """
-
         all_params = ['instance_id', 'db_user_id', 'thread_id', 'database', 'table', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -802,26 +754,22 @@ class DasClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_processes(self, request):
         """查询实例会话列表
 
-        支持根据数据库、用户查询实例会话列表。 目前仅支持MySQL实例。
+        支持根据数据库、用户查询实例会话列表。
+        目前仅支持MySQL实例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListProcessesRequest request
-        :return: ListProcessesResponse
+        :param request: Request instance for ListProcesses
+        :type request: :class:`huaweicloudsdkdas.v3.ListProcessesRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ListProcessesResponse`
         """
         return self.list_processes_with_http_info(request)
 
     def list_processes_with_http_info(self, request):
-        """查询实例会话列表
-
-        支持根据数据库、用户查询实例会话列表。 目前仅支持MySQL实例。
-
-        :param ListProcessesRequest request
-        :return: ListProcessesResponse
-        """
-
         all_params = ['instance_id', 'db_user_id', 'user', 'database', 'offset', 'limit', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -877,26 +825,21 @@ class DasClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_space_analysis(self, request):
         """获取空间分析数据列表
 
-        获取空间分析数据列表。实例级别数据来源于文件系统，库级别和表级别数据来源于information_schema.tables表。空间&元数据分析最多分析10000张表，若缺少库表空间数据，可能是因为数据库实例表个数过多或者账号未保存密码。如果为保存密码，请使用用户管理接口或页面录入数据库账号。支持MySQL和GaussDB(for MySQL)引擎
+        获取空间分析数据列表。实例级别数据来源于文件系统，库级别和表级别数据来源于information_schema.tables表。空间&amp;元数据分析最多分析10000张表，若缺少库表空间数据，可能是因为数据库实例表个数过多或者账号未保存密码。如果为保存密码，请使用用户管理接口或页面录入数据库账号。支持MySQL和GaussDB(for MySQL)引擎
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListSpaceAnalysisRequest request
-        :return: ListSpaceAnalysisResponse
+        :param request: Request instance for ListSpaceAnalysis
+        :type request: :class:`huaweicloudsdkdas.v3.ListSpaceAnalysisRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ListSpaceAnalysisResponse`
         """
         return self.list_space_analysis_with_http_info(request)
 
     def list_space_analysis_with_http_info(self, request):
-        """获取空间分析数据列表
-
-        获取空间分析数据列表。实例级别数据来源于文件系统，库级别和表级别数据来源于information_schema.tables表。空间&元数据分析最多分析10000张表，若缺少库表空间数据，可能是因为数据库实例表个数过多或者账号未保存密码。如果为保存密码，请使用用户管理接口或页面录入数据库账号。支持MySQL和GaussDB(for MySQL)引擎
-
-        :param ListSpaceAnalysisRequest request
-        :return: ListSpaceAnalysisResponse
-        """
-
         all_params = ['instance_id', 'object_type', 'datastore_type', 'x_language', 'database_id', 'offset', 'limit', 'show_instance_info']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -954,26 +897,22 @@ class DasClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def register_db_user(self, request):
         """注册数据库用户
 
-        此接口是将数据库用户和密码注册进DAS系统，同时会返回一个数据库用户ID ，后续调用其他接口时（如查询实例会话列表接口）需要用到此数据库用户ID。密码为加密存储，且仅用于DAS API相关功能。此接口不会在数据库实例上创建数据库用户对象。请确保输入的用户名和密码是已经存在并且是正确的。 目前仅支持MySQL实例。
+        此接口是将数据库用户和密码注册进DAS系统，同时会返回一个数据库用户ID ，后续调用其他接口时（如查询实例会话列表接口）需要用到此数据库用户ID。密码为加密存储，且仅用于DAS API相关功能。此接口不会在数据库实例上创建数据库用户对象。请确保输入的用户名和密码是已经存在并且是正确的。
+        目前仅支持MySQL实例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param RegisterDbUserRequest request
-        :return: RegisterDbUserResponse
+        :param request: Request instance for RegisterDbUser
+        :type request: :class:`huaweicloudsdkdas.v3.RegisterDbUserRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.RegisterDbUserResponse`
         """
         return self.register_db_user_with_http_info(request)
 
     def register_db_user_with_http_info(self, request):
-        """注册数据库用户
-
-        此接口是将数据库用户和密码注册进DAS系统，同时会返回一个数据库用户ID ，后续调用其他接口时（如查询实例会话列表接口）需要用到此数据库用户ID。密码为加密存储，且仅用于DAS API相关功能。此接口不会在数据库实例上创建数据库用户对象。请确保输入的用户名和密码是已经存在并且是正确的。 目前仅支持MySQL实例。
-
-        :param RegisterDbUserRequest request
-        :return: RegisterDbUserResponse
-        """
-
         all_params = ['instance_id', 'register_db_user_request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1021,26 +960,22 @@ class DasClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_db_user(self, request):
         """查询数据库用户信息
 
-        查询注册在DAS里的数据库用户信息。此接口不能查询数据库实例上的数据库用户对象。 目前仅支持MySQL实例。
+        查询注册在DAS里的数据库用户信息。此接口不能查询数据库实例上的数据库用户对象。
+        目前仅支持MySQL实例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowDbUserRequest request
-        :return: ShowDbUserResponse
+        :param request: Request instance for ShowDbUser
+        :type request: :class:`huaweicloudsdkdas.v3.ShowDbUserRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ShowDbUserResponse`
         """
         return self.show_db_user_with_http_info(request)
 
     def show_db_user_with_http_info(self, request):
-        """查询数据库用户信息
-
-        查询注册在DAS里的数据库用户信息。此接口不能查询数据库实例上的数据库用户对象。 目前仅支持MySQL实例。
-
-        :param ShowDbUserRequest request
-        :return: ShowDbUserResponse
-        """
-
         all_params = ['instance_id', 'db_user_id', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1088,26 +1023,21 @@ class DasClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_quotas(self, request):
         """查询云DBA配额
 
         查询云DBA配额
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowQuotasRequest request
-        :return: ShowQuotasResponse
+        :param request: Request instance for ShowQuotas
+        :type request: :class:`huaweicloudsdkdas.v3.ShowQuotasRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ShowQuotasResponse`
         """
         return self.show_quotas_with_http_info(request)
 
     def show_quotas_with_http_info(self, request):
-        """查询云DBA配额
-
-        查询云DBA配额
-
-        :param ShowQuotasRequest request
-        :return: ShowQuotasResponse
-        """
-
         all_params = ['x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1151,26 +1081,22 @@ class DasClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_sql_execution_plan(self, request):
         """查询SQL执行计划
 
-        查询SQL执行计划。 目前仅支持MySQL实例。
+        查询SQL执行计划。
+        目前仅支持MySQL实例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowSqlExecutionPlanRequest request
-        :return: ShowSqlExecutionPlanResponse
+        :param request: Request instance for ShowSqlExecutionPlan
+        :type request: :class:`huaweicloudsdkdas.v3.ShowSqlExecutionPlanRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ShowSqlExecutionPlanResponse`
         """
         return self.show_sql_execution_plan_with_http_info(request)
 
     def show_sql_execution_plan_with_http_info(self, request):
-        """查询SQL执行计划
-
-        查询SQL执行计划。 目前仅支持MySQL实例。
-
-        :param ShowSqlExecutionPlanRequest request
-        :return: ShowSqlExecutionPlanResponse
-        """
-
         all_params = ['instance_id', 'db_user_id', 'database', 'sql', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1222,26 +1148,23 @@ class DasClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_sql_explain(self, request):
         """查询SQL执行计划
 
-        查询SQL执行计划。 目前仅支持MySQL实例。 补充GET请求，处理超长SQL
+        查询SQL执行计划。
+        目前仅支持MySQL实例。
+        补充GET请求，处理超长SQL
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowSqlExplainRequest request
-        :return: ShowSqlExplainResponse
+        :param request: Request instance for ShowSqlExplain
+        :type request: :class:`huaweicloudsdkdas.v3.ShowSqlExplainRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ShowSqlExplainResponse`
         """
         return self.show_sql_explain_with_http_info(request)
 
     def show_sql_explain_with_http_info(self, request):
-        """查询SQL执行计划
-
-        查询SQL执行计划。 目前仅支持MySQL实例。 补充GET请求，处理超长SQL
-
-        :param ShowSqlExplainRequest request
-        :return: ShowSqlExplainResponse
-        """
-
         all_params = ['instance_id', 'query_sql_plan_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1289,26 +1212,21 @@ class DasClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_sql_switch_status(self, request):
         """查询全量SQL和慢SQL的开关状态。
 
         查询DAS收集全量SQL和慢SQL的开关状态。该功能仅支持付费实例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowSqlSwitchStatusRequest request
-        :return: ShowSqlSwitchStatusResponse
+        :param request: Request instance for ShowSqlSwitchStatus
+        :type request: :class:`huaweicloudsdkdas.v3.ShowSqlSwitchStatusRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ShowSqlSwitchStatusResponse`
         """
         return self.show_sql_switch_status_with_http_info(request)
 
     def show_sql_switch_status_with_http_info(self, request):
-        """查询全量SQL和慢SQL的开关状态。
-
-        查询DAS收集全量SQL和慢SQL的开关状态。该功能仅支持付费实例。
-
-        :param ShowSqlSwitchStatusRequest request
-        :return: ShowSqlSwitchStatusResponse
-        """
-
         all_params = ['instance_id', 'type', 'datastore_type', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1358,26 +1276,22 @@ class DasClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_db_user(self, request):
         """修改数据库用户
 
-        修改注册在DAS里的数据库用户名和密码。此接口不会修改数据库实例上的数据库用户对象的用户名和密码。请确保输入的用户名和密码是已经存在并且是正确的。 目前仅支持MySQL实例。
+        修改注册在DAS里的数据库用户名和密码。此接口不会修改数据库实例上的数据库用户对象的用户名和密码。请确保输入的用户名和密码是已经存在并且是正确的。
+        目前仅支持MySQL实例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateDbUserRequest request
-        :return: UpdateDbUserResponse
+        :param request: Request instance for UpdateDbUser
+        :type request: :class:`huaweicloudsdkdas.v3.UpdateDbUserRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.UpdateDbUserResponse`
         """
         return self.update_db_user_with_http_info(request)
 
     def update_db_user_with_http_info(self, request):
-        """修改数据库用户
-
-        修改注册在DAS里的数据库用户名和密码。此接口不会修改数据库实例上的数据库用户对象的用户名和密码。请确保输入的用户名和密码是已经存在并且是正确的。 目前仅支持MySQL实例。
-
-        :param UpdateDbUserRequest request
-        :return: UpdateDbUserResponse
-        """
-
         all_params = ['instance_id', 'db_user_id', 'update_db_user_request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1426,7 +1340,6 @@ class DasClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

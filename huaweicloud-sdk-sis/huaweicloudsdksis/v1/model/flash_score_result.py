@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FlashScoreResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class FlashScoreResult:
     }
 
     def __init__(self, text=None, score=None, word_info=None):
-        """FlashScoreResult - a model defined in huaweicloud sdk"""
+        """FlashScoreResult
+
+        The model defined in huaweicloud sdk
+
+        :param text: 调用成功表示识别出的内容。
+        :type text: str
+        :param score: 调用成功表示识别出的置信度，取值范围：0~1。
+        :type score: float
+        :param word_info: 分词信息列表
+        :type word_info: list[:class:`huaweicloudsdksis.v1.WordInfo`]
+        """
         
         
 
@@ -66,7 +75,7 @@ class FlashScoreResult:
         调用成功表示识别出的内容。
 
         :param text: The text of this FlashScoreResult.
-        :type: str
+        :type text: str
         """
         self._text = text
 
@@ -88,7 +97,7 @@ class FlashScoreResult:
         调用成功表示识别出的置信度，取值范围：0~1。
 
         :param score: The score of this FlashScoreResult.
-        :type: float
+        :type score: float
         """
         self._score = score
 
@@ -99,7 +108,7 @@ class FlashScoreResult:
         分词信息列表
 
         :return: The word_info of this FlashScoreResult.
-        :rtype: list[WordInfo]
+        :rtype: list[:class:`huaweicloudsdksis.v1.WordInfo`]
         """
         return self._word_info
 
@@ -110,7 +119,7 @@ class FlashScoreResult:
         分词信息列表
 
         :param word_info: The word_info of this FlashScoreResult.
-        :type: list[WordInfo]
+        :type word_info: list[:class:`huaweicloudsdksis.v1.WordInfo`]
         """
         self._word_info = word_info
 

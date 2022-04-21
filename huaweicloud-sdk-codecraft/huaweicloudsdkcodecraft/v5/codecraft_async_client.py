@@ -52,21 +52,17 @@ class CodeCraftAsyncClient(Client):
         """登记第三方提交的作品信息（得分回调）
 
         针对在第三方提交作品的场景：第三方服务对作品完成判分后，调用该接口将作品信息及作品得分返回给大赛平台
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateCompetitionScoreRequest request
-        :return: CreateCompetitionScoreResponse
+        :param request: Request instance for CreateCompetitionScore
+        :type request: :class:`huaweicloudsdkcodecraft.v5.CreateCompetitionScoreRequest`
+        :rtype: :class:`huaweicloudsdkcodecraft.v5.CreateCompetitionScoreResponse`
         """
         return self.create_competition_score_with_http_info(request)
 
     def create_competition_score_with_http_info(self, request):
-        """登记第三方提交的作品信息（得分回调）
-
-        针对在第三方提交作品的场景：第三方服务对作品完成判分后，调用该接口将作品信息及作品得分返回给大赛平台
-
-        :param CreateCompetitionScoreRequest request
-        :return: CreateCompetitionScoreResponse
-        """
-
         all_params = ['create_competition_score_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -110,26 +106,21 @@ class CodeCraftAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_competition_works_async(self, request):
         """获取指定时间内选手提交的作品
 
         第三方服务获取某个大赛某个阶段中一段时间内提交的作品信息。其中以请求参数read_time作为结束时间，定义向前一天或一小时内的时间作为查询范围
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListCompetitionWorksRequest request
-        :return: ListCompetitionWorksResponse
+        :param request: Request instance for ListCompetitionWorks
+        :type request: :class:`huaweicloudsdkcodecraft.v5.ListCompetitionWorksRequest`
+        :rtype: :class:`huaweicloudsdkcodecraft.v5.ListCompetitionWorksResponse`
         """
         return self.list_competition_works_with_http_info(request)
 
     def list_competition_works_with_http_info(self, request):
-        """获取指定时间内选手提交的作品
-
-        第三方服务获取某个大赛某个阶段中一段时间内提交的作品信息。其中以请求参数read_time作为结束时间，定义向前一天或一小时内的时间作为查询范围
-
-        :param ListCompetitionWorksRequest request
-        :return: ListCompetitionWorksResponse
-        """
-
         all_params = ['competition_id', 'stage_id', 'read_time', 'time_unit', 'offset', 'limit', 'sort_key', 'sort_dir']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -187,26 +178,21 @@ class CodeCraftAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def register_competition_info_async(self, request):
         """验证用户报名信息和团队信息
 
         第三方服务验证用户是否在大赛平台报名、是否组建团队、是否可以提交作品。如果已经报名但是未组建团队，则创建一个虚拟团队，设置为允许提交作品。如果已经组建团队则根据大赛报名截止时间判断是否可以提交作品。返回团队ID、是否可以提交作品
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param RegisterCompetitionInfoRequest request
-        :return: RegisterCompetitionInfoResponse
+        :param request: Request instance for RegisterCompetitionInfo
+        :type request: :class:`huaweicloudsdkcodecraft.v5.RegisterCompetitionInfoRequest`
+        :rtype: :class:`huaweicloudsdkcodecraft.v5.RegisterCompetitionInfoResponse`
         """
         return self.register_competition_info_with_http_info(request)
 
     def register_competition_info_with_http_info(self, request):
-        """验证用户报名信息和团队信息
-
-        第三方服务验证用户是否在大赛平台报名、是否组建团队、是否可以提交作品。如果已经报名但是未组建团队，则创建一个虚拟团队，设置为允许提交作品。如果已经组建团队则根据大赛报名截止时间判断是否可以提交作品。返回团队ID、是否可以提交作品
-
-        :param RegisterCompetitionInfoRequest request
-        :return: RegisterCompetitionInfoResponse
-        """
-
         all_params = ['register_competition_info_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -250,26 +236,21 @@ class CodeCraftAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_competition_score_async(self, request):
         """修改平台提交的作品分数（得分回调）
 
         针对在大赛平台提交作品的场景：第三方服务对作品完成判分后，根据作品ID调用该接口将作品分数、作品状态等信息返回给大赛平台
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateCompetitionScoreRequest request
-        :return: UpdateCompetitionScoreResponse
+        :param request: Request instance for UpdateCompetitionScore
+        :type request: :class:`huaweicloudsdkcodecraft.v5.UpdateCompetitionScoreRequest`
+        :rtype: :class:`huaweicloudsdkcodecraft.v5.UpdateCompetitionScoreResponse`
         """
         return self.update_competition_score_with_http_info(request)
 
     def update_competition_score_with_http_info(self, request):
-        """修改平台提交的作品分数（得分回调）
-
-        针对在大赛平台提交作品的场景：第三方服务对作品完成判分后，根据作品ID调用该接口将作品分数、作品状态等信息返回给大赛平台
-
-        :param UpdateCompetitionScoreRequest request
-        :return: UpdateCompetitionScoreResponse
-        """
-
         all_params = ['update_competition_score_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -312,7 +293,6 @@ class CodeCraftAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

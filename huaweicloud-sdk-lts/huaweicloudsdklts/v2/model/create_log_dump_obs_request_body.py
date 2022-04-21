@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateLogDumpObsRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class CreateLogDumpObsRequestBody:
     }
 
     def __init__(self, log_group_id=None, log_stream_ids=None, obs_bucket_name=None, type=None, storage_format=None, switch_on=None, prefix_name=None, dir_prefix_name=None, period=None, period_unit=None):
-        """CreateLogDumpObsRequestBody - a model defined in huaweicloud sdk"""
+        """CreateLogDumpObsRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param log_group_id: 日志组id。
+        :type log_group_id: str
+        :param log_stream_ids: 日志流id列表, 可以指定一个或多个日志流进行obs周期性转储
+        :type log_stream_ids: list[str]
+        :param obs_bucket_name: obs 桶名称。
+        :type obs_bucket_name: str
+        :param type: 周期性转储, 必须填 cycle。
+        :type type: str
+        :param storage_format: 转储格式 RAW/JSON， 默认为 RAW。
+        :type storage_format: str
+        :param switch_on: 是否开启转储 true/false, 默认为 true
+        :type switch_on: bool
+        :param prefix_name: 转储至OBS桶中的日志文件前缀。
+        :type prefix_name: str
+        :param dir_prefix_name: 自定义文件夹路径。
+        :type dir_prefix_name: str
+        :param period: 转储周期的长度， 与 period_unit 拼接后必须在该列表中 [\&quot;2min\&quot;,\&quot;5min\&quot;,\&quot;30min\&quot;,\&quot;1hour\&quot;,\&quot;3hour\&quot;,\&quot;6hour\&quot;,\&quot;12hour\&quot;]。
+        :type period: int
+        :param period_unit: 转储周期的单位， 与 period 拼接后必须在该列表中 [\&quot;2min\&quot;,\&quot;5min\&quot;,\&quot;30min\&quot;,\&quot;1hour\&quot;,\&quot;3hour\&quot;,\&quot;6hour\&quot;,\&quot;12hour\&quot;]。
+        :type period_unit: str
+        """
         
         
 
@@ -96,7 +119,7 @@ class CreateLogDumpObsRequestBody:
         日志组id。
 
         :param log_group_id: The log_group_id of this CreateLogDumpObsRequestBody.
-        :type: str
+        :type log_group_id: str
         """
         self._log_group_id = log_group_id
 
@@ -118,7 +141,7 @@ class CreateLogDumpObsRequestBody:
         日志流id列表, 可以指定一个或多个日志流进行obs周期性转储
 
         :param log_stream_ids: The log_stream_ids of this CreateLogDumpObsRequestBody.
-        :type: list[str]
+        :type log_stream_ids: list[str]
         """
         self._log_stream_ids = log_stream_ids
 
@@ -140,7 +163,7 @@ class CreateLogDumpObsRequestBody:
         obs 桶名称。
 
         :param obs_bucket_name: The obs_bucket_name of this CreateLogDumpObsRequestBody.
-        :type: str
+        :type obs_bucket_name: str
         """
         self._obs_bucket_name = obs_bucket_name
 
@@ -162,7 +185,7 @@ class CreateLogDumpObsRequestBody:
         周期性转储, 必须填 cycle。
 
         :param type: The type of this CreateLogDumpObsRequestBody.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -184,7 +207,7 @@ class CreateLogDumpObsRequestBody:
         转储格式 RAW/JSON， 默认为 RAW。
 
         :param storage_format: The storage_format of this CreateLogDumpObsRequestBody.
-        :type: str
+        :type storage_format: str
         """
         self._storage_format = storage_format
 
@@ -206,7 +229,7 @@ class CreateLogDumpObsRequestBody:
         是否开启转储 true/false, 默认为 true
 
         :param switch_on: The switch_on of this CreateLogDumpObsRequestBody.
-        :type: bool
+        :type switch_on: bool
         """
         self._switch_on = switch_on
 
@@ -228,7 +251,7 @@ class CreateLogDumpObsRequestBody:
         转储至OBS桶中的日志文件前缀。
 
         :param prefix_name: The prefix_name of this CreateLogDumpObsRequestBody.
-        :type: str
+        :type prefix_name: str
         """
         self._prefix_name = prefix_name
 
@@ -250,7 +273,7 @@ class CreateLogDumpObsRequestBody:
         自定义文件夹路径。
 
         :param dir_prefix_name: The dir_prefix_name of this CreateLogDumpObsRequestBody.
-        :type: str
+        :type dir_prefix_name: str
         """
         self._dir_prefix_name = dir_prefix_name
 
@@ -272,7 +295,7 @@ class CreateLogDumpObsRequestBody:
         转储周期的长度， 与 period_unit 拼接后必须在该列表中 [\"2min\",\"5min\",\"30min\",\"1hour\",\"3hour\",\"6hour\",\"12hour\"]。
 
         :param period: The period of this CreateLogDumpObsRequestBody.
-        :type: int
+        :type period: int
         """
         self._period = period
 
@@ -294,7 +317,7 @@ class CreateLogDumpObsRequestBody:
         转储周期的单位， 与 period 拼接后必须在该列表中 [\"2min\",\"5min\",\"30min\",\"1hour\",\"3hour\",\"6hour\",\"12hour\"]。
 
         :param period_unit: The period_unit of this CreateLogDumpObsRequestBody.
-        :type: str
+        :type period_unit: str
         """
         self._period_unit = period_unit
 

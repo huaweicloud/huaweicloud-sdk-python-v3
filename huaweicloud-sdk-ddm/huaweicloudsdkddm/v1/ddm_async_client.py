@@ -52,21 +52,17 @@ class DdmAsyncClient(Client):
         """创建DDM逻辑库
 
         创建DDM逻辑库。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateDatabaseRequest request
-        :return: CreateDatabaseResponse
+        :param request: Request instance for CreateDatabase
+        :type request: :class:`huaweicloudsdkddm.v1.CreateDatabaseRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.CreateDatabaseResponse`
         """
         return self.create_database_with_http_info(request)
 
     def create_database_with_http_info(self, request):
-        """创建DDM逻辑库
-
-        创建DDM逻辑库。
-
-        :param CreateDatabaseRequest request
-        :return: CreateDatabaseResponse
-        """
-
         all_params = ['instance_id', 'create_database_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -112,26 +108,23 @@ class DdmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_instance_async(self, request):
         """购买DDM实例
 
-        创建一个DDM实例。  DDM运行于虚拟私有云。申请DDM实例前，需保证有可用的虚拟私有云，并且已配置好子网与安全组。
+        创建一个DDM实例。
+        
+        DDM运行于虚拟私有云。申请DDM实例前，需保证有可用的虚拟私有云，并且已配置好子网与安全组。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateInstanceRequest request
-        :return: CreateInstanceResponse
+        :param request: Request instance for CreateInstance
+        :type request: :class:`huaweicloudsdkddm.v1.CreateInstanceRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.CreateInstanceResponse`
         """
         return self.create_instance_with_http_info(request)
 
     def create_instance_with_http_info(self, request):
-        """购买DDM实例
-
-        创建一个DDM实例。  DDM运行于虚拟私有云。申请DDM实例前，需保证有可用的虚拟私有云，并且已配置好子网与安全组。
-
-        :param CreateInstanceRequest request
-        :return: CreateInstanceResponse
-        """
-
         all_params = ['create_instance_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -175,26 +168,21 @@ class DdmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_users_async(self, request):
         """创建DDM帐号
 
         DDM帐号用于连接和管理逻辑库。一个DDM实例最多能创建100个DDM帐号，一个DDM帐号可以关联多个逻辑库。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateUsersRequest request
-        :return: CreateUsersResponse
+        :param request: Request instance for CreateUsers
+        :type request: :class:`huaweicloudsdkddm.v1.CreateUsersRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.CreateUsersResponse`
         """
         return self.create_users_with_http_info(request)
 
     def create_users_with_http_info(self, request):
-        """创建DDM帐号
-
-        DDM帐号用于连接和管理逻辑库。一个DDM实例最多能创建100个DDM帐号，一个DDM帐号可以关联多个逻辑库。
-
-        :param CreateUsersRequest request
-        :return: CreateUsersResponse
-        """
-
         all_params = ['instance_id', 'create_users_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -240,26 +228,21 @@ class DdmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_database_async(self, request):
         """删除DDM逻辑库
 
         删除指定的逻辑库，释放该逻辑库的所有资源。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteDatabaseRequest request
-        :return: DeleteDatabaseResponse
+        :param request: Request instance for DeleteDatabase
+        :type request: :class:`huaweicloudsdkddm.v1.DeleteDatabaseRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.DeleteDatabaseResponse`
         """
         return self.delete_database_with_http_info(request)
 
     def delete_database_with_http_info(self, request):
-        """删除DDM逻辑库
-
-        删除指定的逻辑库，释放该逻辑库的所有资源。
-
-        :param DeleteDatabaseRequest request
-        :return: DeleteDatabaseResponse
-        """
-
         all_params = ['instance_id', 'ddm_dbname', 'delete_rds_data']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -307,26 +290,21 @@ class DdmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_instance_async(self, request):
         """删除DDM实例
 
         删除指定的DDM实例，释放该实例的所有资源。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteInstanceRequest request
-        :return: DeleteInstanceResponse
+        :param request: Request instance for DeleteInstance
+        :type request: :class:`huaweicloudsdkddm.v1.DeleteInstanceRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.DeleteInstanceResponse`
         """
         return self.delete_instance_with_http_info(request)
 
     def delete_instance_with_http_info(self, request):
-        """删除DDM实例
-
-        删除指定的DDM实例，释放该实例的所有资源。
-
-        :param DeleteInstanceRequest request
-        :return: DeleteInstanceResponse
-        """
-
         all_params = ['instance_id', 'delete_rds_data']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -372,26 +350,21 @@ class DdmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_user_async(self, request):
         """删除DDM帐号
 
         删除指定的DDM实例帐号，如果帐号关联了逻辑库，则对应的关联关系也会删除。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteUserRequest request
-        :return: DeleteUserResponse
+        :param request: Request instance for DeleteUser
+        :type request: :class:`huaweicloudsdkddm.v1.DeleteUserRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.DeleteUserResponse`
         """
         return self.delete_user_with_http_info(request)
 
     def delete_user_with_http_info(self, request):
-        """删除DDM帐号
-
-        删除指定的DDM实例帐号，如果帐号关联了逻辑库，则对应的关联关系也会删除。
-
-        :param DeleteUserRequest request
-        :return: DeleteUserResponse
-        """
-
         all_params = ['instance_id', 'username']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -437,26 +410,21 @@ class DdmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def expand_instance_nodes_async(self, request):
         """DDM实例节点扩容
 
         对指定的DDM实例的节点个数进行扩容。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ExpandInstanceNodesRequest request
-        :return: ExpandInstanceNodesResponse
+        :param request: Request instance for ExpandInstanceNodes
+        :type request: :class:`huaweicloudsdkddm.v1.ExpandInstanceNodesRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.ExpandInstanceNodesResponse`
         """
         return self.expand_instance_nodes_with_http_info(request)
 
     def expand_instance_nodes_with_http_info(self, request):
-        """DDM实例节点扩容
-
-        对指定的DDM实例的节点个数进行扩容。
-
-        :param ExpandInstanceNodesRequest request
-        :return: ExpandInstanceNodesResponse
-        """
-
         all_params = ['instance_id', 'enlarge_request']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -502,26 +470,21 @@ class DdmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_available_rds_list_async(self, request):
         """查询创建逻辑库可选取的数据库实例列表
 
         查询创建逻辑库可选取的数据库实例列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListAvailableRdsListRequest request
-        :return: ListAvailableRdsListResponse
+        :param request: Request instance for ListAvailableRdsList
+        :type request: :class:`huaweicloudsdkddm.v1.ListAvailableRdsListRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.ListAvailableRdsListResponse`
         """
         return self.list_available_rds_list_with_http_info(request)
 
     def list_available_rds_list_with_http_info(self, request):
-        """查询创建逻辑库可选取的数据库实例列表
-
-        查询创建逻辑库可选取的数据库实例列表。
-
-        :param ListAvailableRdsListRequest request
-        :return: ListAvailableRdsListResponse
-        """
-
         all_params = ['instance_id', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -569,26 +532,21 @@ class DdmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_databases_async(self, request):
         """查询DDM逻辑库列表
 
         查询DDM逻辑库列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListDatabasesRequest request
-        :return: ListDatabasesResponse
+        :param request: Request instance for ListDatabases
+        :type request: :class:`huaweicloudsdkddm.v1.ListDatabasesRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.ListDatabasesResponse`
         """
         return self.list_databases_with_http_info(request)
 
     def list_databases_with_http_info(self, request):
-        """查询DDM逻辑库列表
-
-        查询DDM逻辑库列表。
-
-        :param ListDatabasesRequest request
-        :return: ListDatabasesResponse
-        """
-
         all_params = ['instance_id', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -636,26 +594,21 @@ class DdmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_engines_async(self, request):
         """查询DDM引擎信息
 
         查询DDM引擎信息详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListEnginesRequest request
-        :return: ListEnginesResponse
+        :param request: Request instance for ListEngines
+        :type request: :class:`huaweicloudsdkddm.v1.ListEnginesRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.ListEnginesResponse`
         """
         return self.list_engines_with_http_info(request)
 
     def list_engines_with_http_info(self, request):
-        """查询DDM引擎信息
-
-        查询DDM引擎信息详情。
-
-        :param ListEnginesRequest request
-        :return: ListEnginesResponse
-        """
-
         all_params = ['offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -701,26 +654,21 @@ class DdmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_flavors_async(self, request):
         """查询DDM可用区规格信息
 
         查询DDM可用区规格信息详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListFlavorsRequest request
-        :return: ListFlavorsResponse
+        :param request: Request instance for ListFlavors
+        :type request: :class:`huaweicloudsdkddm.v1.ListFlavorsRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.ListFlavorsResponse`
         """
         return self.list_flavors_with_http_info(request)
 
     def list_flavors_with_http_info(self, request):
-        """查询DDM可用区规格信息
-
-        查询DDM可用区规格信息详情。
-
-        :param ListFlavorsRequest request
-        :return: ListFlavorsResponse
-        """
-
         all_params = ['engine_id', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -768,26 +716,21 @@ class DdmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_instances_async(self, request):
         """查询DDM实例列表
 
         查询DDM实例列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListInstancesRequest request
-        :return: ListInstancesResponse
+        :param request: Request instance for ListInstances
+        :type request: :class:`huaweicloudsdkddm.v1.ListInstancesRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.ListInstancesResponse`
         """
         return self.list_instances_with_http_info(request)
 
     def list_instances_with_http_info(self, request):
-        """查询DDM实例列表
-
-        查询DDM实例列表。
-
-        :param ListInstancesRequest request
-        :return: ListInstancesResponse
-        """
-
         all_params = ['offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -833,26 +776,21 @@ class DdmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_nodes_async(self, request):
         """查询DDM实例节点列表
 
         查询DDM实例节点列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListNodesRequest request
-        :return: ListNodesResponse
+        :param request: Request instance for ListNodes
+        :type request: :class:`huaweicloudsdkddm.v1.ListNodesRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.ListNodesResponse`
         """
         return self.list_nodes_with_http_info(request)
 
     def list_nodes_with_http_info(self, request):
-        """查询DDM实例节点列表
-
-        查询DDM实例节点列表。
-
-        :param ListNodesRequest request
-        :return: ListNodesResponse
-        """
-
         all_params = ['instance_id', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -900,26 +838,21 @@ class DdmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_read_write_ratio_async(self, request):
         """读写比例监控
 
         查询指定时间段内在DDM实例的读写次数。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListReadWriteRatioRequest request
-        :return: ListReadWriteRatioResponse
+        :param request: Request instance for ListReadWriteRatio
+        :type request: :class:`huaweicloudsdkddm.v1.ListReadWriteRatioRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.ListReadWriteRatioResponse`
         """
         return self.list_read_write_ratio_with_http_info(request)
 
     def list_read_write_ratio_with_http_info(self, request):
-        """读写比例监控
-
-        查询指定时间段内在DDM实例的读写次数。
-
-        :param ListReadWriteRatioRequest request
-        :return: ListReadWriteRatioResponse
-        """
-
         all_params = ['instance_id', 'cur_page', 'per_page', 'start_date', 'end_date']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -971,26 +904,21 @@ class DdmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_slow_log_async(self, request):
         """慢日志监控
 
         查询指定时间段内在DDM实例上执行过的慢sql相关信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListSlowLogRequest request
-        :return: ListSlowLogResponse
+        :param request: Request instance for ListSlowLog
+        :type request: :class:`huaweicloudsdkddm.v1.ListSlowLogRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.ListSlowLogResponse`
         """
         return self.list_slow_log_with_http_info(request)
 
     def list_slow_log_with_http_info(self, request):
-        """慢日志监控
-
-        查询指定时间段内在DDM实例上执行过的慢sql相关信息。
-
-        :param ListSlowLogRequest request
-        :return: ListSlowLogResponse
-        """
-
         all_params = ['instance_id', 'cur_page', 'per_page', 'start_date', 'end_date']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1042,26 +970,21 @@ class DdmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_users_async(self, request):
         """查询DDM帐号列表
 
         查询DDM帐号列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListUsersRequest request
-        :return: ListUsersResponse
+        :param request: Request instance for ListUsers
+        :type request: :class:`huaweicloudsdkddm.v1.ListUsersRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.ListUsersResponse`
         """
         return self.list_users_with_http_info(request)
 
     def list_users_with_http_info(self, request):
-        """查询DDM帐号列表
-
-        查询DDM帐号列表。
-
-        :param ListUsersRequest request
-        :return: ListUsersResponse
-        """
-
         all_params = ['instance_id', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1109,26 +1032,21 @@ class DdmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def rebuild_config_async(self, request):
         """DDM表数据重载
 
         DDM实例跨region容灾场景下，针对目标DDM实例实现表数据reload，使数据同步。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param RebuildConfigRequest request
-        :return: RebuildConfigResponse
+        :param request: Request instance for RebuildConfig
+        :type request: :class:`huaweicloudsdkddm.v1.RebuildConfigRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.RebuildConfigResponse`
         """
         return self.rebuild_config_with_http_info(request)
 
     def rebuild_config_with_http_info(self, request):
-        """DDM表数据重载
-
-        DDM实例跨region容灾场景下，针对目标DDM实例实现表数据reload，使数据同步。
-
-        :param RebuildConfigRequest request
-        :return: RebuildConfigResponse
-        """
-
         all_params = ['instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1172,26 +1090,21 @@ class DdmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def reset_user_password_async(self, request):
         """重置DDM账号密码
 
         重置现有DDM帐号的密码。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ResetUserPasswordRequest request
-        :return: ResetUserPasswordResponse
+        :param request: Request instance for ResetUserPassword
+        :type request: :class:`huaweicloudsdkddm.v1.ResetUserPasswordRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.ResetUserPasswordResponse`
         """
         return self.reset_user_password_with_http_info(request)
 
     def reset_user_password_with_http_info(self, request):
-        """重置DDM账号密码
-
-        重置现有DDM帐号的密码。
-
-        :param ResetUserPasswordRequest request
-        :return: ResetUserPasswordResponse
-        """
-
         all_params = ['instance_id', 'username', 'reset_user_password_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1239,26 +1152,21 @@ class DdmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def restart_instance_async(self, request):
         """重启DDM实例
 
         重启指定的DDM实例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param RestartInstanceRequest request
-        :return: RestartInstanceResponse
+        :param request: Request instance for RestartInstance
+        :type request: :class:`huaweicloudsdkddm.v1.RestartInstanceRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.RestartInstanceResponse`
         """
         return self.restart_instance_with_http_info(request)
 
     def restart_instance_with_http_info(self, request):
-        """重启DDM实例
-
-        重启指定的DDM实例。
-
-        :param RestartInstanceRequest request
-        :return: RestartInstanceResponse
-        """
-
         all_params = ['instance_id', 'restart_instance_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1304,26 +1212,21 @@ class DdmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_database_async(self, request):
         """查询DDM逻辑库详细信息
 
         查询指定逻辑库的详细信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowDatabaseRequest request
-        :return: ShowDatabaseResponse
+        :param request: Request instance for ShowDatabase
+        :type request: :class:`huaweicloudsdkddm.v1.ShowDatabaseRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.ShowDatabaseResponse`
         """
         return self.show_database_with_http_info(request)
 
     def show_database_with_http_info(self, request):
-        """查询DDM逻辑库详细信息
-
-        查询指定逻辑库的详细信息。
-
-        :param ShowDatabaseRequest request
-        :return: ShowDatabaseResponse
-        """
-
         all_params = ['instance_id', 'ddm_dbname']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1369,26 +1272,21 @@ class DdmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_instance_async(self, request):
         """查询DDM实例详情
 
         查询指定DDM实例的详细信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowInstanceRequest request
-        :return: ShowInstanceResponse
+        :param request: Request instance for ShowInstance
+        :type request: :class:`huaweicloudsdkddm.v1.ShowInstanceRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.ShowInstanceResponse`
         """
         return self.show_instance_with_http_info(request)
 
     def show_instance_with_http_info(self, request):
-        """查询DDM实例详情
-
-        查询指定DDM实例的详细信息。
-
-        :param ShowInstanceRequest request
-        :return: ShowInstanceResponse
-        """
-
         all_params = ['instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1432,26 +1330,21 @@ class DdmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_instance_param_async(self, request):
         """查询DDM指定实例的参数详情
 
         查询DDM指定实例的参数详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowInstanceParamRequest request
-        :return: ShowInstanceParamResponse
+        :param request: Request instance for ShowInstanceParam
+        :type request: :class:`huaweicloudsdkddm.v1.ShowInstanceParamRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.ShowInstanceParamResponse`
         """
         return self.show_instance_param_with_http_info(request)
 
     def show_instance_param_with_http_info(self, request):
-        """查询DDM指定实例的参数详情
-
-        查询DDM指定实例的参数详情。
-
-        :param ShowInstanceParamRequest request
-        :return: ShowInstanceParamResponse
-        """
-
         all_params = ['instance_id', 'offset', 'limit', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1501,26 +1394,21 @@ class DdmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_node_async(self, request):
         """查询DDM实例节点详情
 
         查询DDM实例节点详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowNodeRequest request
-        :return: ShowNodeResponse
+        :param request: Request instance for ShowNode
+        :type request: :class:`huaweicloudsdkddm.v1.ShowNodeRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.ShowNodeResponse`
         """
         return self.show_node_with_http_info(request)
 
     def show_node_with_http_info(self, request):
-        """查询DDM实例节点详情
-
-        查询DDM实例节点详情。
-
-        :param ShowNodeRequest request
-        :return: ShowNodeResponse
-        """
-
         all_params = ['instance_id', 'node_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1566,26 +1454,21 @@ class DdmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def shrink_instance_nodes_async(self, request):
         """DDM实例节点缩容
 
         对指定的DDM实例的节点个数进行缩容。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShrinkInstanceNodesRequest request
-        :return: ShrinkInstanceNodesResponse
+        :param request: Request instance for ShrinkInstanceNodes
+        :type request: :class:`huaweicloudsdkddm.v1.ShrinkInstanceNodesRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.ShrinkInstanceNodesResponse`
         """
         return self.shrink_instance_nodes_with_http_info(request)
 
     def shrink_instance_nodes_with_http_info(self, request):
-        """DDM实例节点缩容
-
-        对指定的DDM实例的节点个数进行缩容。
-
-        :param ShrinkInstanceNodesRequest request
-        :return: ShrinkInstanceNodesResponse
-        """
-
         all_params = ['instance_id', 'reduce_request']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1631,26 +1514,21 @@ class DdmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_database_info_async(self, request):
         """同步数据库实例信息
 
         同步当前DDM实例已关的所有数据库实例配置信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateDatabaseInfoRequest request
-        :return: UpdateDatabaseInfoResponse
+        :param request: Request instance for UpdateDatabaseInfo
+        :type request: :class:`huaweicloudsdkddm.v1.UpdateDatabaseInfoRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.UpdateDatabaseInfoResponse`
         """
         return self.update_database_info_with_http_info(request)
 
     def update_database_info_with_http_info(self, request):
-        """同步数据库实例信息
-
-        同步当前DDM实例已关的所有数据库实例配置信息。
-
-        :param UpdateDatabaseInfoRequest request
-        :return: UpdateDatabaseInfoResponse
-        """
-
         all_params = ['instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1694,26 +1572,21 @@ class DdmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_instance_name_async(self, request):
         """修改DDM实例名称
 
         修改DDM实例名称。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateInstanceNameRequest request
-        :return: UpdateInstanceNameResponse
+        :param request: Request instance for UpdateInstanceName
+        :type request: :class:`huaweicloudsdkddm.v1.UpdateInstanceNameRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.UpdateInstanceNameResponse`
         """
         return self.update_instance_name_with_http_info(request)
 
     def update_instance_name_with_http_info(self, request):
-        """修改DDM实例名称
-
-        修改DDM实例名称。
-
-        :param UpdateInstanceNameRequest request
-        :return: UpdateInstanceNameResponse
-        """
-
         all_params = ['instance_id', 'modify_instance_name_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1759,26 +1632,21 @@ class DdmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_instance_param_async(self, request):
         """修改DDM实例参数
 
         修改DDM实例参数。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateInstanceParamRequest request
-        :return: UpdateInstanceParamResponse
+        :param request: Request instance for UpdateInstanceParam
+        :type request: :class:`huaweicloudsdkddm.v1.UpdateInstanceParamRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.UpdateInstanceParamResponse`
         """
         return self.update_instance_param_with_http_info(request)
 
     def update_instance_param_with_http_info(self, request):
-        """修改DDM实例参数
-
-        修改DDM实例参数。
-
-        :param UpdateInstanceParamRequest request
-        :return: UpdateInstanceParamResponse
-        """
-
         all_params = ['instance_id', 'update_parameters_req', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1826,26 +1694,21 @@ class DdmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_instance_security_group_async(self, request):
         """修改DDM实例安全组
 
         修改DDM实例安全组。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateInstanceSecurityGroupRequest request
-        :return: UpdateInstanceSecurityGroupResponse
+        :param request: Request instance for UpdateInstanceSecurityGroup
+        :type request: :class:`huaweicloudsdkddm.v1.UpdateInstanceSecurityGroupRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.UpdateInstanceSecurityGroupResponse`
         """
         return self.update_instance_security_group_with_http_info(request)
 
     def update_instance_security_group_with_http_info(self, request):
-        """修改DDM实例安全组
-
-        修改DDM实例安全组。
-
-        :param UpdateInstanceSecurityGroupRequest request
-        :return: UpdateInstanceSecurityGroupResponse
-        """
-
         all_params = ['instance_id', 'modify_instance_security_group_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1891,26 +1754,21 @@ class DdmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_read_and_write_strategy_async(self, request):
         """修改DDM已关联的数据库实例的读策略
 
         修改DDM已关联的数据库实例的读策略。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateReadAndWriteStrategyRequest request
-        :return: UpdateReadAndWriteStrategyResponse
+        :param request: Request instance for UpdateReadAndWriteStrategy
+        :type request: :class:`huaweicloudsdkddm.v1.UpdateReadAndWriteStrategyRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.UpdateReadAndWriteStrategyResponse`
         """
         return self.update_read_and_write_strategy_with_http_info(request)
 
     def update_read_and_write_strategy_with_http_info(self, request):
-        """修改DDM已关联的数据库实例的读策略
-
-        修改DDM已关联的数据库实例的读策略。
-
-        :param UpdateReadAndWriteStrategyRequest request
-        :return: UpdateReadAndWriteStrategyResponse
-        """
-
         all_params = ['instance_id', 'modify_read_and_write_strategy_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1956,26 +1814,21 @@ class DdmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_user_async(self, request):
         """修改DDM帐号
 
         修改现有DDM帐号的权限或者与逻辑库的管理关系。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateUserRequest request
-        :return: UpdateUserResponse
+        :param request: Request instance for UpdateUser
+        :type request: :class:`huaweicloudsdkddm.v1.UpdateUserRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.UpdateUserResponse`
         """
         return self.update_user_with_http_info(request)
 
     def update_user_with_http_info(self, request):
-        """修改DDM帐号
-
-        修改现有DDM帐号的权限或者与逻辑库的管理关系。
-
-        :param UpdateUserRequest request
-        :return: UpdateUserResponse
-        """
-
         all_params = ['instance_id', 'username', 'update_user_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2022,7 +1875,6 @@ class DdmAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

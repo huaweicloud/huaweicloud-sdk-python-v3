@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IncentiveAndDiscountPolicy:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class IncentiveAndDiscountPolicy:
     }
 
     def __init__(self, service_type_code=None, service_type_name=None, incentive_policy=None, allow_discount=None):
-        """IncentiveAndDiscountPolicy - a model defined in huaweicloud sdk"""
+        """IncentiveAndDiscountPolicy
+
+        The model defined in huaweicloud sdk
+
+        :param service_type_code: 云服务类型列表。
+        :type service_type_code: str
+        :param service_type_name: 云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
+        :type service_type_name: str
+        :param incentive_policy: 激励策略。 0：非特定产品1：特定产品2：无业绩无返点13：有业绩无返点
+        :type incentive_policy: str
+        :param allow_discount: 是否允许应用伙伴授予折扣。 YES：允许应用NO：不许应用
+        :type allow_discount: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class IncentiveAndDiscountPolicy:
         云服务类型列表。
 
         :param service_type_code: The service_type_code of this IncentiveAndDiscountPolicy.
-        :type: str
+        :type service_type_code: str
         """
         self._service_type_code = service_type_code
 
@@ -95,7 +106,7 @@ class IncentiveAndDiscountPolicy:
         云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
 
         :param service_type_name: The service_type_name of this IncentiveAndDiscountPolicy.
-        :type: str
+        :type service_type_name: str
         """
         self._service_type_name = service_type_name
 
@@ -117,7 +128,7 @@ class IncentiveAndDiscountPolicy:
         激励策略。 0：非特定产品1：特定产品2：无业绩无返点13：有业绩无返点
 
         :param incentive_policy: The incentive_policy of this IncentiveAndDiscountPolicy.
-        :type: str
+        :type incentive_policy: str
         """
         self._incentive_policy = incentive_policy
 
@@ -139,7 +150,7 @@ class IncentiveAndDiscountPolicy:
         是否允许应用伙伴授予折扣。 YES：允许应用NO：不许应用
 
         :param allow_discount: The allow_discount of this IncentiveAndDiscountPolicy.
-        :type: str
+        :type allow_discount: str
         """
         self._allow_discount = allow_discount
 

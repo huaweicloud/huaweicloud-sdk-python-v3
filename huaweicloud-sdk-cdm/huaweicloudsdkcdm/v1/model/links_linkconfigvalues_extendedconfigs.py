@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LinksLinkconfigvaluesExtendedconfigs:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class LinksLinkconfigvaluesExtendedconfigs:
     }
 
     def __init__(self, name=None, value=None):
-        """LinksLinkconfigvaluesExtendedconfigs - a model defined in huaweicloud sdk"""
+        """LinksLinkconfigvaluesExtendedconfigs
+
+        The model defined in huaweicloud sdk
+
+        :param name: 名称
+        :type name: str
+        :param value: 值
+        :type value: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class LinksLinkconfigvaluesExtendedconfigs:
         名称
 
         :param name: The name of this LinksLinkconfigvaluesExtendedconfigs.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -85,7 +92,7 @@ class LinksLinkconfigvaluesExtendedconfigs:
         值
 
         :param value: The value of this LinksLinkconfigvaluesExtendedconfigs.
-        :type: str
+        :type value: str
         """
         self._value = value
 

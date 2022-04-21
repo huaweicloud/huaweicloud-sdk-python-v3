@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TestPlanDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class TestPlanDetail:
     }
 
     def __init__(self, plan_id=None, name=None, start_date=None, end_date=None, finish_date=None, project_id=None, current_stage=None, expire_day=None, creator=None, owner=None, design_stage=None, execute_stage=None, report_stage=None, iteration=None):
-        """TestPlanDetail - a model defined in huaweicloud sdk"""
+        """TestPlanDetail
+
+        The model defined in huaweicloud sdk
+
+        :param plan_id: 测试计划id
+        :type plan_id: str
+        :param name: 测试计划名称
+        :type name: str
+        :param start_date: 测试计划开始时间
+        :type start_date: date
+        :param end_date: 测试计划截止时间
+        :type end_date: date
+        :param finish_date: 测试计划实际完成时间（测试计划实际完成指测试计划下所有测试用例处于完成状态）
+        :type finish_date: date
+        :param project_id: 项目id
+        :type project_id: str
+        :param current_stage: 当前测试计划所处的阶段
+        :type current_stage: str
+        :param expire_day: 获取超期时间,正值表示已超期
+        :type expire_day: str
+        :param creator: 
+        :type creator: :class:`huaweicloudsdkcloudtest.v1.TestPlanDetailCreator`
+        :param owner: 
+        :type owner: :class:`huaweicloudsdkcloudtest.v1.TestPlanDetailOwner`
+        :param design_stage: 
+        :type design_stage: :class:`huaweicloudsdkcloudtest.v1.TestPlanDetailDesignStage`
+        :param execute_stage: 
+        :type execute_stage: :class:`huaweicloudsdkcloudtest.v1.TestPlanDetailExecuteStage`
+        :param report_stage: 
+        :type report_stage: :class:`huaweicloudsdkcloudtest.v1.TestPlanDetailReportStage`
+        :param iteration: 
+        :type iteration: :class:`huaweicloudsdkcloudtest.v1.NameAndId`
+        """
         
         
 
@@ -123,7 +154,7 @@ class TestPlanDetail:
         测试计划id
 
         :param plan_id: The plan_id of this TestPlanDetail.
-        :type: str
+        :type plan_id: str
         """
         self._plan_id = plan_id
 
@@ -145,7 +176,7 @@ class TestPlanDetail:
         测试计划名称
 
         :param name: The name of this TestPlanDetail.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -167,7 +198,7 @@ class TestPlanDetail:
         测试计划开始时间
 
         :param start_date: The start_date of this TestPlanDetail.
-        :type: date
+        :type start_date: date
         """
         self._start_date = start_date
 
@@ -189,7 +220,7 @@ class TestPlanDetail:
         测试计划截止时间
 
         :param end_date: The end_date of this TestPlanDetail.
-        :type: date
+        :type end_date: date
         """
         self._end_date = end_date
 
@@ -211,7 +242,7 @@ class TestPlanDetail:
         测试计划实际完成时间（测试计划实际完成指测试计划下所有测试用例处于完成状态）
 
         :param finish_date: The finish_date of this TestPlanDetail.
-        :type: date
+        :type finish_date: date
         """
         self._finish_date = finish_date
 
@@ -233,7 +264,7 @@ class TestPlanDetail:
         项目id
 
         :param project_id: The project_id of this TestPlanDetail.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -255,7 +286,7 @@ class TestPlanDetail:
         当前测试计划所处的阶段
 
         :param current_stage: The current_stage of this TestPlanDetail.
-        :type: str
+        :type current_stage: str
         """
         self._current_stage = current_stage
 
@@ -277,7 +308,7 @@ class TestPlanDetail:
         获取超期时间,正值表示已超期
 
         :param expire_day: The expire_day of this TestPlanDetail.
-        :type: str
+        :type expire_day: str
         """
         self._expire_day = expire_day
 
@@ -287,7 +318,7 @@ class TestPlanDetail:
 
 
         :return: The creator of this TestPlanDetail.
-        :rtype: TestPlanDetailCreator
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.TestPlanDetailCreator`
         """
         return self._creator
 
@@ -297,7 +328,7 @@ class TestPlanDetail:
 
 
         :param creator: The creator of this TestPlanDetail.
-        :type: TestPlanDetailCreator
+        :type creator: :class:`huaweicloudsdkcloudtest.v1.TestPlanDetailCreator`
         """
         self._creator = creator
 
@@ -307,7 +338,7 @@ class TestPlanDetail:
 
 
         :return: The owner of this TestPlanDetail.
-        :rtype: TestPlanDetailOwner
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.TestPlanDetailOwner`
         """
         return self._owner
 
@@ -317,7 +348,7 @@ class TestPlanDetail:
 
 
         :param owner: The owner of this TestPlanDetail.
-        :type: TestPlanDetailOwner
+        :type owner: :class:`huaweicloudsdkcloudtest.v1.TestPlanDetailOwner`
         """
         self._owner = owner
 
@@ -327,7 +358,7 @@ class TestPlanDetail:
 
 
         :return: The design_stage of this TestPlanDetail.
-        :rtype: TestPlanDetailDesignStage
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.TestPlanDetailDesignStage`
         """
         return self._design_stage
 
@@ -337,7 +368,7 @@ class TestPlanDetail:
 
 
         :param design_stage: The design_stage of this TestPlanDetail.
-        :type: TestPlanDetailDesignStage
+        :type design_stage: :class:`huaweicloudsdkcloudtest.v1.TestPlanDetailDesignStage`
         """
         self._design_stage = design_stage
 
@@ -347,7 +378,7 @@ class TestPlanDetail:
 
 
         :return: The execute_stage of this TestPlanDetail.
-        :rtype: TestPlanDetailExecuteStage
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.TestPlanDetailExecuteStage`
         """
         return self._execute_stage
 
@@ -357,7 +388,7 @@ class TestPlanDetail:
 
 
         :param execute_stage: The execute_stage of this TestPlanDetail.
-        :type: TestPlanDetailExecuteStage
+        :type execute_stage: :class:`huaweicloudsdkcloudtest.v1.TestPlanDetailExecuteStage`
         """
         self._execute_stage = execute_stage
 
@@ -367,7 +398,7 @@ class TestPlanDetail:
 
 
         :return: The report_stage of this TestPlanDetail.
-        :rtype: TestPlanDetailReportStage
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.TestPlanDetailReportStage`
         """
         return self._report_stage
 
@@ -377,7 +408,7 @@ class TestPlanDetail:
 
 
         :param report_stage: The report_stage of this TestPlanDetail.
-        :type: TestPlanDetailReportStage
+        :type report_stage: :class:`huaweicloudsdkcloudtest.v1.TestPlanDetailReportStage`
         """
         self._report_stage = report_stage
 
@@ -387,7 +418,7 @@ class TestPlanDetail:
 
 
         :return: The iteration of this TestPlanDetail.
-        :rtype: NameAndId
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.NameAndId`
         """
         return self._iteration
 
@@ -397,7 +428,7 @@ class TestPlanDetail:
 
 
         :param iteration: The iteration of this TestPlanDetail.
-        :type: NameAndId
+        :type iteration: :class:`huaweicloudsdkcloudtest.v1.NameAndId`
         """
         self._iteration = iteration
 

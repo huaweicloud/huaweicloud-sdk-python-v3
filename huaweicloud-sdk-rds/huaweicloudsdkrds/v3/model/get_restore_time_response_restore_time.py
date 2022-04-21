@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GetRestoreTimeResponseRestoreTime:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class GetRestoreTimeResponseRestoreTime:
     }
 
     def __init__(self, start_time=None, end_time=None):
-        """GetRestoreTimeResponseRestoreTime - a model defined in huaweicloud sdk"""
+        """GetRestoreTimeResponseRestoreTime
+
+        The model defined in huaweicloud sdk
+
+        :param start_time: 可恢复时间段的起始时间点，UNIX时间戳格式，单位是毫秒，时区是UTC。
+        :type start_time: int
+        :param end_time: 可恢复时间段的结束时间点，UNIX时间戳格式，单位是毫秒，时区是UTC。
+        :type end_time: int
+        """
         
         
 
@@ -61,7 +68,7 @@ class GetRestoreTimeResponseRestoreTime:
         可恢复时间段的起始时间点，UNIX时间戳格式，单位是毫秒，时区是UTC。
 
         :param start_time: The start_time of this GetRestoreTimeResponseRestoreTime.
-        :type: int
+        :type start_time: int
         """
         self._start_time = start_time
 
@@ -83,7 +90,7 @@ class GetRestoreTimeResponseRestoreTime:
         可恢复时间段的结束时间点，UNIX时间戳格式，单位是毫秒，时区是UTC。
 
         :param end_time: The end_time of this GetRestoreTimeResponseRestoreTime.
-        :type: int
+        :type end_time: int
         """
         self._end_time = end_time
 

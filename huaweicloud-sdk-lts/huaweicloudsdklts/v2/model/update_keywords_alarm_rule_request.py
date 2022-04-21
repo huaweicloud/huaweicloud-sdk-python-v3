@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateKeywordsAlarmRuleRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateKeywordsAlarmRuleRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateKeywordsAlarmRuleRequest - a model defined in huaweicloud sdk"""
+        """UpdateKeywordsAlarmRuleRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the UpdateKeywordsAlarmRuleRequest
+        :type body: :class:`huaweicloudsdklts.v2.UpdateKeywordsAlarmRuleRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class UpdateKeywordsAlarmRuleRequest:
 
 
         :return: The body of this UpdateKeywordsAlarmRuleRequest.
-        :rtype: UpdateKeywordsAlarmRuleRequestBody
+        :rtype: :class:`huaweicloudsdklts.v2.UpdateKeywordsAlarmRuleRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class UpdateKeywordsAlarmRuleRequest:
 
 
         :param body: The body of this UpdateKeywordsAlarmRuleRequest.
-        :type: UpdateKeywordsAlarmRuleRequestBody
+        :type body: :class:`huaweicloudsdklts.v2.UpdateKeywordsAlarmRuleRequestBody`
         """
         self._body = body
 

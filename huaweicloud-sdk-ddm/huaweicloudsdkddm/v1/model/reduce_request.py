@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ReduceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ReduceRequest:
     }
 
     def __init__(self, node_number=None, group_id=None):
-        """ReduceRequest - a model defined in huaweicloud sdk"""
+        """ReduceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param node_number: 需要缩容的节点数量，最大值为实例节点数减1。
+        :type node_number: int
+        :param group_id: 组id，指定当前进行节点扩容的组。当实例的组&gt;1时，必填。
+        :type group_id: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ReduceRequest:
         需要缩容的节点数量，最大值为实例节点数减1。
 
         :param node_number: The node_number of this ReduceRequest.
-        :type: int
+        :type node_number: int
         """
         self._node_number = node_number
 
@@ -84,7 +91,7 @@ class ReduceRequest:
         组id，指定当前进行节点扩容的组。当实例的组>1时，必填。
 
         :param group_id: The group_id of this ReduceRequest.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 

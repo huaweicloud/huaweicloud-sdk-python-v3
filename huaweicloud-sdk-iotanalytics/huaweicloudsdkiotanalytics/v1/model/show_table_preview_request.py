@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowTablePreviewRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowTablePreviewRequest:
     }
 
     def __init__(self, table_id=None):
-        """ShowTablePreviewRequest - a model defined in huaweicloud sdk"""
+        """ShowTablePreviewRequest
+
+        The model defined in huaweicloud sdk
+
+        :param table_id: 表ID。
+        :type table_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowTablePreviewRequest:
         表ID。
 
         :param table_id: The table_id of this ShowTablePreviewRequest.
-        :type: str
+        :type table_id: str
         """
         self._table_id = table_id
 

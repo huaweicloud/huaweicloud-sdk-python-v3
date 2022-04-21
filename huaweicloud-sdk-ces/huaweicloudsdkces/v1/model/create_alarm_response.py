@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateAlarmResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateAlarmResponse(SdkResponse):
     }
 
     def __init__(self, alarm_id=None):
-        """CreateAlarmResponse - a model defined in huaweicloud sdk"""
+        """CreateAlarmResponse
+
+        The model defined in huaweicloud sdk
+
+        :param alarm_id: 告警规则的ID。
+        :type alarm_id: str
+        """
         
         super(CreateAlarmResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class CreateAlarmResponse(SdkResponse):
         告警规则的ID。
 
         :param alarm_id: The alarm_id of this CreateAlarmResponse.
-        :type: str
+        :type alarm_id: str
         """
         self._alarm_id = alarm_id
 

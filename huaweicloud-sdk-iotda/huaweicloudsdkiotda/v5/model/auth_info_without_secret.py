@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AuthInfoWithoutSecret:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AuthInfoWithoutSecret:
     }
 
     def __init__(self, secure_access=None, timeout=None):
-        """AuthInfoWithoutSecret - a model defined in huaweicloud sdk"""
+        """AuthInfoWithoutSecret
+
+        The model defined in huaweicloud sdk
+
+        :param secure_access: **参数说明**：指设备是否通过安全协议方式接入。 **取值范围**： - true：通过安全协议方式接入。 - false：通过非安全协议方式接入。非安全接入的设备存在被仿冒等安全风险，请谨慎使用。
+        :type secure_access: bool
+        :param timeout: **参数说明**：设备接入的有效时间，单位：秒，默认值：0。若设备在有效时间内未接入物联网平台并激活，则平台会删除该设备的注册信息。若设置为“0”，则表示平台不会删除该设备的注册信息（建议填写为“0”）。
+        :type timeout: int
+        """
         
         
 
@@ -63,7 +70,7 @@ class AuthInfoWithoutSecret:
         **参数说明**：指设备是否通过安全协议方式接入。 **取值范围**： - true：通过安全协议方式接入。 - false：通过非安全协议方式接入。非安全接入的设备存在被仿冒等安全风险，请谨慎使用。
 
         :param secure_access: The secure_access of this AuthInfoWithoutSecret.
-        :type: bool
+        :type secure_access: bool
         """
         self._secure_access = secure_access
 
@@ -85,7 +92,7 @@ class AuthInfoWithoutSecret:
         **参数说明**：设备接入的有效时间，单位：秒，默认值：0。若设备在有效时间内未接入物联网平台并激活，则平台会删除该设备的注册信息。若设置为“0”，则表示平台不会删除该设备的注册信息（建议填写为“0”）。
 
         :param timeout: The timeout of this AuthInfoWithoutSecret.
-        :type: int
+        :type timeout: int
         """
         self._timeout = timeout
 

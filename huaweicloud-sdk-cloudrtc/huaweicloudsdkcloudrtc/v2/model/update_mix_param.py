@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateMixParam:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class UpdateMixParam:
     }
 
     def __init__(self, layout_template=None, background_image=None, default_user_background_image=None, screen_background_image=None, max_idle_time=None, layout_panes=None, user_background_images=None):
-        """UpdateMixParam - a model defined in huaweicloud sdk"""
+        """UpdateMixParam
+
+        The model defined in huaweicloud sdk
+
+        :param layout_template: 视频布局模板编号，仅支持自定义模板之间的更新。
+        :type layout_template: str
+        :param background_image: 画布背景图地址，图片先上传obs。默认使用等比缩放裁剪，保证铺满。格式s3://bucket/object
+        :type background_image: str
+        :param default_user_background_image: 默认用户背景图地址，图片先上传obs，格式s3://bucket/object。默认使用等比缩放裁剪，保证铺满。
+        :type default_user_background_image: str
+        :param screen_background_image: 共享屏幕的背景图地址，图片先上传obs，格式s3://bucket/object。  在一大多小的布局场景下，无论大窗是显示非指定用户（屏幕共享人的桌面）还是指定用户的共享桌面，都通过该字段指定背景图。 
+        :type screen_background_image: str
+        :param max_idle_time: 最长空闲频道时间。  取值范围：[5，43200]，默认值为30。  单位：秒。  如果频道内无连麦方的状态持续超过该时间，录制程序会自动退出。退出后，再次调用start请求，会产生新的录制任务。  连麦方指：joiner或者publisher的用户。 
+        :type max_idle_time: int
+        :param layout_panes: 需要混流的视频列表。若不需要视频混流，则可不传递该参数。
+        :type layout_panes: list[:class:`huaweicloudsdkcloudrtc.v2.MixLayoutPane`]
+        :param user_background_images: 指定用户背景图，优先级大于default_user_background_image
+        :type user_background_images: list[:class:`huaweicloudsdkcloudrtc.v2.MixUserBackgroundImage`]
+        """
         
         
 
@@ -88,7 +105,7 @@ class UpdateMixParam:
         视频布局模板编号，仅支持自定义模板之间的更新。
 
         :param layout_template: The layout_template of this UpdateMixParam.
-        :type: str
+        :type layout_template: str
         """
         self._layout_template = layout_template
 
@@ -110,7 +127,7 @@ class UpdateMixParam:
         画布背景图地址，图片先上传obs。默认使用等比缩放裁剪，保证铺满。格式s3://bucket/object
 
         :param background_image: The background_image of this UpdateMixParam.
-        :type: str
+        :type background_image: str
         """
         self._background_image = background_image
 
@@ -132,7 +149,7 @@ class UpdateMixParam:
         默认用户背景图地址，图片先上传obs，格式s3://bucket/object。默认使用等比缩放裁剪，保证铺满。
 
         :param default_user_background_image: The default_user_background_image of this UpdateMixParam.
-        :type: str
+        :type default_user_background_image: str
         """
         self._default_user_background_image = default_user_background_image
 
@@ -154,7 +171,7 @@ class UpdateMixParam:
         共享屏幕的背景图地址，图片先上传obs，格式s3://bucket/object。  在一大多小的布局场景下，无论大窗是显示非指定用户（屏幕共享人的桌面）还是指定用户的共享桌面，都通过该字段指定背景图。 
 
         :param screen_background_image: The screen_background_image of this UpdateMixParam.
-        :type: str
+        :type screen_background_image: str
         """
         self._screen_background_image = screen_background_image
 
@@ -176,7 +193,7 @@ class UpdateMixParam:
         最长空闲频道时间。  取值范围：[5，43200]，默认值为30。  单位：秒。  如果频道内无连麦方的状态持续超过该时间，录制程序会自动退出。退出后，再次调用start请求，会产生新的录制任务。  连麦方指：joiner或者publisher的用户。 
 
         :param max_idle_time: The max_idle_time of this UpdateMixParam.
-        :type: int
+        :type max_idle_time: int
         """
         self._max_idle_time = max_idle_time
 
@@ -187,7 +204,7 @@ class UpdateMixParam:
         需要混流的视频列表。若不需要视频混流，则可不传递该参数。
 
         :return: The layout_panes of this UpdateMixParam.
-        :rtype: list[MixLayoutPane]
+        :rtype: list[:class:`huaweicloudsdkcloudrtc.v2.MixLayoutPane`]
         """
         return self._layout_panes
 
@@ -198,7 +215,7 @@ class UpdateMixParam:
         需要混流的视频列表。若不需要视频混流，则可不传递该参数。
 
         :param layout_panes: The layout_panes of this UpdateMixParam.
-        :type: list[MixLayoutPane]
+        :type layout_panes: list[:class:`huaweicloudsdkcloudrtc.v2.MixLayoutPane`]
         """
         self._layout_panes = layout_panes
 
@@ -209,7 +226,7 @@ class UpdateMixParam:
         指定用户背景图，优先级大于default_user_background_image
 
         :return: The user_background_images of this UpdateMixParam.
-        :rtype: list[MixUserBackgroundImage]
+        :rtype: list[:class:`huaweicloudsdkcloudrtc.v2.MixUserBackgroundImage`]
         """
         return self._user_background_images
 
@@ -220,7 +237,7 @@ class UpdateMixParam:
         指定用户背景图，优先级大于default_user_background_image
 
         :param user_background_images: The user_background_images of this UpdateMixParam.
-        :type: list[MixUserBackgroundImage]
+        :type user_background_images: list[:class:`huaweicloudsdkcloudrtc.v2.MixUserBackgroundImage`]
         """
         self._user_background_images = user_background_images
 

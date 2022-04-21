@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateTrackerConfigRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateTrackerConfigRequest:
     }
 
     def __init__(self, body=None):
-        """CreateTrackerConfigRequest - a model defined in huaweicloud sdk"""
+        """CreateTrackerConfigRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateTrackerConfigRequest
+        :type body: :class:`huaweicloudsdkrms.v1.TrackerConfigBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateTrackerConfigRequest:
 
 
         :return: The body of this CreateTrackerConfigRequest.
-        :rtype: TrackerConfigBody
+        :rtype: :class:`huaweicloudsdkrms.v1.TrackerConfigBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateTrackerConfigRequest:
 
 
         :param body: The body of this CreateTrackerConfigRequest.
-        :type: TrackerConfigBody
+        :type body: :class:`huaweicloudsdkrms.v1.TrackerConfigBody`
         """
         self._body = body
 

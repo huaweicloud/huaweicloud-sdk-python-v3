@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ConfigMigrationInstanceBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ConfigMigrationInstanceBody:
     }
 
     def __init__(self, id=None, addrs=None, password=None):
-        """ConfigMigrationInstanceBody - a model defined in huaweicloud sdk"""
+        """ConfigMigrationInstanceBody
+
+        The model defined in huaweicloud sdk
+
+        :param id: Redis实例ID。（Redis类型为云服务Redis时必须填写）
+        :type id: str
+        :param addrs: Redis实例地址。（Redis类型为自建Redis时必须填写）。
+        :type addrs: str
+        :param password: Redis密码，如果设置了密码，则必须填写。
+        :type password: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class ConfigMigrationInstanceBody:
         Redis实例ID。（Redis类型为云服务Redis时必须填写）
 
         :param id: The id of this ConfigMigrationInstanceBody.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -90,7 +99,7 @@ class ConfigMigrationInstanceBody:
         Redis实例地址。（Redis类型为自建Redis时必须填写）。
 
         :param addrs: The addrs of this ConfigMigrationInstanceBody.
-        :type: str
+        :type addrs: str
         """
         self._addrs = addrs
 
@@ -112,7 +121,7 @@ class ConfigMigrationInstanceBody:
         Redis密码，如果设置了密码，则必须填写。
 
         :param password: The password of this ConfigMigrationInstanceBody.
-        :type: str
+        :type password: str
         """
         self._password = password
 

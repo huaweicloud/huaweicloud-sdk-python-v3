@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SendVerificationCodeV2Req:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class SendVerificationCodeV2Req:
     }
 
     def __init__(self, receiver_type=None, timeout=None, email=None, lang=None):
-        """SendVerificationCodeV2Req - a model defined in huaweicloud sdk"""
+        """SendVerificationCodeV2Req
+
+        The model defined in huaweicloud sdk
+
+        :param receiver_type: 发送验证码的类型： 2：发送邮件验证码
+        :type receiver_type: int
+        :param timeout: 发送验证码的超时时间。 如果不填的话，采用系统默认超时时间5分钟。 单位：分钟
+        :type timeout: int
+        :param email: 指定发送验证码的邮箱地址。
+        :type email: str
+        :param lang: 根据该参数的取值选择发送邮件验证码的语言。 zh-cn：中文en-us：英文
+        :type lang: str
+        """
         
         
 
@@ -72,7 +83,7 @@ class SendVerificationCodeV2Req:
         发送验证码的类型： 2：发送邮件验证码
 
         :param receiver_type: The receiver_type of this SendVerificationCodeV2Req.
-        :type: int
+        :type receiver_type: int
         """
         self._receiver_type = receiver_type
 
@@ -94,7 +105,7 @@ class SendVerificationCodeV2Req:
         发送验证码的超时时间。 如果不填的话，采用系统默认超时时间5分钟。 单位：分钟
 
         :param timeout: The timeout of this SendVerificationCodeV2Req.
-        :type: int
+        :type timeout: int
         """
         self._timeout = timeout
 
@@ -116,7 +127,7 @@ class SendVerificationCodeV2Req:
         指定发送验证码的邮箱地址。
 
         :param email: The email of this SendVerificationCodeV2Req.
-        :type: str
+        :type email: str
         """
         self._email = email
 
@@ -138,7 +149,7 @@ class SendVerificationCodeV2Req:
         根据该参数的取值选择发送邮件验证码的语言。 zh-cn：中文en-us：英文
 
         :param lang: The lang of this SendVerificationCodeV2Req.
-        :type: str
+        :type lang: str
         """
         self._lang = lang
 

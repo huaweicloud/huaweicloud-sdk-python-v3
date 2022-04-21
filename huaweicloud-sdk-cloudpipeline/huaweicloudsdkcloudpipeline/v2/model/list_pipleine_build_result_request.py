@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPipleineBuildResultRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListPipleineBuildResultRequest:
     }
 
     def __init__(self, x_language=None, project_id=None, start_date=None, end_date=None, offset=None, limit=None):
-        """ListPipleineBuildResultRequest - a model defined in huaweicloud sdk"""
+        """ListPipleineBuildResultRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言类型 中文:zh-cn 英文:en-us，默认en-us
+        :type x_language: str
+        :param project_id: 项目id
+        :type project_id: str
+        :param start_date: 起始日期,起始日期和结束日期间隔不超过一个月，查询包含起始日期
+        :type start_date: str
+        :param end_date: 结束日期，起始日期和结束日期间隔不超过一个月，查询包含结束日期
+        :type end_date: str
+        :param offset: 偏移量,表示从此偏移量开始查询,offset大于等于0
+        :type offset: int
+        :param limit: 每次查询的条目数量
+        :type limit: int
+        """
         
         
 
@@ -78,7 +93,7 @@ class ListPipleineBuildResultRequest:
         语言类型 中文:zh-cn 英文:en-us，默认en-us
 
         :param x_language: The x_language of this ListPipleineBuildResultRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -100,7 +115,7 @@ class ListPipleineBuildResultRequest:
         项目id
 
         :param project_id: The project_id of this ListPipleineBuildResultRequest.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -122,7 +137,7 @@ class ListPipleineBuildResultRequest:
         起始日期,起始日期和结束日期间隔不超过一个月，查询包含起始日期
 
         :param start_date: The start_date of this ListPipleineBuildResultRequest.
-        :type: str
+        :type start_date: str
         """
         self._start_date = start_date
 
@@ -144,7 +159,7 @@ class ListPipleineBuildResultRequest:
         结束日期，起始日期和结束日期间隔不超过一个月，查询包含结束日期
 
         :param end_date: The end_date of this ListPipleineBuildResultRequest.
-        :type: str
+        :type end_date: str
         """
         self._end_date = end_date
 
@@ -166,7 +181,7 @@ class ListPipleineBuildResultRequest:
         偏移量,表示从此偏移量开始查询,offset大于等于0
 
         :param offset: The offset of this ListPipleineBuildResultRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -188,7 +203,7 @@ class ListPipleineBuildResultRequest:
         每次查询的条目数量
 
         :param limit: The limit of this ListPipleineBuildResultRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateAclStrategyV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateAclStrategyV2Request:
     }
 
     def __init__(self, instance_id=None, acl_id=None, body=None):
-        """UpdateAclStrategyV2Request - a model defined in huaweicloud sdk"""
+        """UpdateAclStrategyV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param acl_id: ACL策略的编号
+        :type acl_id: str
+        :param body: Body of the UpdateAclStrategyV2Request
+        :type body: :class:`huaweicloudsdkroma.v2.ApiAclCreate`
+        """
         
         
 
@@ -66,7 +75,7 @@ class UpdateAclStrategyV2Request:
         实例ID
 
         :param instance_id: The instance_id of this UpdateAclStrategyV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -88,7 +97,7 @@ class UpdateAclStrategyV2Request:
         ACL策略的编号
 
         :param acl_id: The acl_id of this UpdateAclStrategyV2Request.
-        :type: str
+        :type acl_id: str
         """
         self._acl_id = acl_id
 
@@ -98,7 +107,7 @@ class UpdateAclStrategyV2Request:
 
 
         :return: The body of this UpdateAclStrategyV2Request.
-        :rtype: ApiAclCreate
+        :rtype: :class:`huaweicloudsdkroma.v2.ApiAclCreate`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class UpdateAclStrategyV2Request:
 
 
         :param body: The body of this UpdateAclStrategyV2Request.
-        :type: ApiAclCreate
+        :type body: :class:`huaweicloudsdkroma.v2.ApiAclCreate`
         """
         self._body = body
 

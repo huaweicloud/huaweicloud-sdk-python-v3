@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateVpcPeeringOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateVpcPeeringOption:
     }
 
     def __init__(self, name=None, description=None):
-        """UpdateVpcPeeringOption - a model defined in huaweicloud sdk"""
+        """UpdateVpcPeeringOption
+
+        The model defined in huaweicloud sdk
+
+        :param name: 功能说明：对等连接名称 取值范围：支持1~64个字符
+        :type name: str
+        :param description: 功能说明：对等连接描述 取值范围：0-255个字符，支持数字、字母、中文字符
+        :type description: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class UpdateVpcPeeringOption:
         功能说明：对等连接名称 取值范围：支持1~64个字符
 
         :param name: The name of this UpdateVpcPeeringOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -85,7 +92,7 @@ class UpdateVpcPeeringOption:
         功能说明：对等连接描述 取值范围：0-255个字符，支持数字、字母、中文字符
 
         :param description: The description of this UpdateVpcPeeringOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 

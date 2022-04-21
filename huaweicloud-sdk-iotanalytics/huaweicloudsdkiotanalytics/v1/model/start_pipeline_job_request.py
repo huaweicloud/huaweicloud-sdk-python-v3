@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StartPipelineJobRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class StartPipelineJobRequest:
     }
 
     def __init__(self, pipeline_id=None, parallel=None, rtu=None, resume_savepoint=None):
-        """StartPipelineJobRequest - a model defined in huaweicloud sdk"""
+        """StartPipelineJobRequest
+
+        The model defined in huaweicloud sdk
+
+        :param pipeline_id: 管道ID
+        :type pipeline_id: str
+        :param parallel: 运行管道的并发度
+        :type parallel: int
+        :param rtu: 运行管道的RTU个数
+        :type rtu: int
+        :param resume_savepoint: 运行管道作业使用历史缓存数据
+        :type resume_savepoint: bool
+        """
         
         
 
@@ -72,7 +83,7 @@ class StartPipelineJobRequest:
         管道ID
 
         :param pipeline_id: The pipeline_id of this StartPipelineJobRequest.
-        :type: str
+        :type pipeline_id: str
         """
         self._pipeline_id = pipeline_id
 
@@ -94,7 +105,7 @@ class StartPipelineJobRequest:
         运行管道的并发度
 
         :param parallel: The parallel of this StartPipelineJobRequest.
-        :type: int
+        :type parallel: int
         """
         self._parallel = parallel
 
@@ -116,7 +127,7 @@ class StartPipelineJobRequest:
         运行管道的RTU个数
 
         :param rtu: The rtu of this StartPipelineJobRequest.
-        :type: int
+        :type rtu: int
         """
         self._rtu = rtu
 
@@ -138,7 +149,7 @@ class StartPipelineJobRequest:
         运行管道作业使用历史缓存数据
 
         :param resume_savepoint: The resume_savepoint of this StartPipelineJobRequest.
-        :type: bool
+        :type resume_savepoint: bool
         """
         self._resume_savepoint = resume_savepoint
 

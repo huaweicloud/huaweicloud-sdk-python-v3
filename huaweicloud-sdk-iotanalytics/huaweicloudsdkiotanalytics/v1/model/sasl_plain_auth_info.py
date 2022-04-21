@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SaslPlainAuthInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class SaslPlainAuthInfo:
     }
 
     def __init__(self, username=None, password=None):
-        """SaslPlainAuthInfo - a model defined in huaweicloud sdk"""
+        """SaslPlainAuthInfo
+
+        The model defined in huaweicloud sdk
+
+        :param username: 用户名。支持大小写字母、数字、“.”、“-” 、“_”
+        :type username: str
+        :param password: 密码
+        :type password: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class SaslPlainAuthInfo:
         用户名。支持大小写字母、数字、“.”、“-” 、“_”
 
         :param username: The username of this SaslPlainAuthInfo.
-        :type: str
+        :type username: str
         """
         self._username = username
 
@@ -85,7 +92,7 @@ class SaslPlainAuthInfo:
         密码
 
         :param password: The password of this SaslPlainAuthInfo.
-        :type: str
+        :type password: str
         """
         self._password = password
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowNetworkIpAvailabilitiesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowNetworkIpAvailabilitiesResponse(SdkResponse):
     }
 
     def __init__(self, network_ip_availability=None):
-        """ShowNetworkIpAvailabilitiesResponse - a model defined in huaweicloud sdk"""
+        """ShowNetworkIpAvailabilitiesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param network_ip_availability: 
+        :type network_ip_availability: :class:`huaweicloudsdkvpc.v2.NetworkIpAvailability`
+        """
         
         super(ShowNetworkIpAvailabilitiesResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class ShowNetworkIpAvailabilitiesResponse(SdkResponse):
 
 
         :return: The network_ip_availability of this ShowNetworkIpAvailabilitiesResponse.
-        :rtype: NetworkIpAvailability
+        :rtype: :class:`huaweicloudsdkvpc.v2.NetworkIpAvailability`
         """
         return self._network_ip_availability
 
@@ -56,7 +61,7 @@ class ShowNetworkIpAvailabilitiesResponse(SdkResponse):
 
 
         :param network_ip_availability: The network_ip_availability of this ShowNetworkIpAvailabilitiesResponse.
-        :type: NetworkIpAvailability
+        :type network_ip_availability: :class:`huaweicloudsdkvpc.v2.NetworkIpAvailability`
         """
         self._network_ip_availability = network_ip_availability
 

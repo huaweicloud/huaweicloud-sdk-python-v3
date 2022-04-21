@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchLimitSpeedReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchLimitSpeedReq:
     }
 
     def __init__(self, speed_limits=None):
-        """BatchLimitSpeedReq - a model defined in huaweicloud sdk"""
+        """BatchLimitSpeedReq
+
+        The model defined in huaweicloud sdk
+
+        :param speed_limits: 灾备限速设置信息
+        :type speed_limits: list[:class:`huaweicloudsdkdrs.v3.LimitSpeedReq`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class BatchLimitSpeedReq:
         灾备限速设置信息
 
         :return: The speed_limits of this BatchLimitSpeedReq.
-        :rtype: list[LimitSpeedReq]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.LimitSpeedReq`]
         """
         return self._speed_limits
 
@@ -57,7 +62,7 @@ class BatchLimitSpeedReq:
         灾备限速设置信息
 
         :param speed_limits: The speed_limits of this BatchLimitSpeedReq.
-        :type: list[LimitSpeedReq]
+        :type speed_limits: list[:class:`huaweicloudsdkdrs.v3.LimitSpeedReq`]
         """
         self._speed_limits = speed_limits
 

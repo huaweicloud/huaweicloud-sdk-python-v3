@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowResultsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowResultsRequest:
     }
 
     def __init__(self, task_id=None, offset=None, limit=None):
-        """ShowResultsRequest - a model defined in huaweicloud sdk"""
+        """ShowResultsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 任务ID
+        :type task_id: str
+        :param offset: 分页查询，偏移量，表示从此偏移量开始查询
+        :type offset: int
+        :param limit: 分页查询，每页显示的条目数量
+        :type limit: int
+        """
         
         
 
@@ -67,7 +76,7 @@ class ShowResultsRequest:
         任务ID
 
         :param task_id: The task_id of this ShowResultsRequest.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -89,7 +98,7 @@ class ShowResultsRequest:
         分页查询，偏移量，表示从此偏移量开始查询
 
         :param offset: The offset of this ShowResultsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -111,7 +120,7 @@ class ShowResultsRequest:
         分页查询，每页显示的条目数量
 
         :param limit: The limit of this ShowResultsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

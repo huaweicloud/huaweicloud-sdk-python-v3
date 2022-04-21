@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DisassociateVaultPolicyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DisassociateVaultPolicyResponse(SdkResponse):
     }
 
     def __init__(self, dissociate_policy=None):
-        """DisassociateVaultPolicyResponse - a model defined in huaweicloud sdk"""
+        """DisassociateVaultPolicyResponse
+
+        The model defined in huaweicloud sdk
+
+        :param dissociate_policy: 
+        :type dissociate_policy: :class:`huaweicloudsdkcbr.v1.VaultPolicyResp`
+        """
         
         super(DisassociateVaultPolicyResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class DisassociateVaultPolicyResponse(SdkResponse):
 
 
         :return: The dissociate_policy of this DisassociateVaultPolicyResponse.
-        :rtype: VaultPolicyResp
+        :rtype: :class:`huaweicloudsdkcbr.v1.VaultPolicyResp`
         """
         return self._dissociate_policy
 
@@ -56,7 +61,7 @@ class DisassociateVaultPolicyResponse(SdkResponse):
 
 
         :param dissociate_policy: The dissociate_policy of this DisassociateVaultPolicyResponse.
-        :type: VaultPolicyResp
+        :type dissociate_policy: :class:`huaweicloudsdkcbr.v1.VaultPolicyResp`
         """
         self._dissociate_policy = dissociate_policy
 

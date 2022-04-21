@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class V2FramerateInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class V2FramerateInfo:
     }
 
     def __init__(self, publish_domain=None, app=None, stream=None, start_time=None, end_time=None, data_list=None):
-        """V2FramerateInfo - a model defined in huaweicloud sdk"""
+        """V2FramerateInfo
+
+        The model defined in huaweicloud sdk
+
+        :param publish_domain: 推流域名。
+        :type publish_domain: str
+        :param app: 应用名称。
+        :type app: str
+        :param stream: 流名。
+        :type stream: str
+        :param start_time: 采样开始时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。
+        :type start_time: str
+        :param end_time: 采样结束时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。
+        :type end_time: str
+        :param data_list: 帧率信息列表，单位为fps。
+        :type data_list: list[int]
+        """
         
         
 
@@ -83,7 +98,7 @@ class V2FramerateInfo:
         推流域名。
 
         :param publish_domain: The publish_domain of this V2FramerateInfo.
-        :type: str
+        :type publish_domain: str
         """
         self._publish_domain = publish_domain
 
@@ -105,7 +120,7 @@ class V2FramerateInfo:
         应用名称。
 
         :param app: The app of this V2FramerateInfo.
-        :type: str
+        :type app: str
         """
         self._app = app
 
@@ -127,7 +142,7 @@ class V2FramerateInfo:
         流名。
 
         :param stream: The stream of this V2FramerateInfo.
-        :type: str
+        :type stream: str
         """
         self._stream = stream
 
@@ -149,7 +164,7 @@ class V2FramerateInfo:
         采样开始时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。
 
         :param start_time: The start_time of this V2FramerateInfo.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -171,7 +186,7 @@ class V2FramerateInfo:
         采样结束时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。
 
         :param end_time: The end_time of this V2FramerateInfo.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -193,7 +208,7 @@ class V2FramerateInfo:
         帧率信息列表，单位为fps。
 
         :param data_list: The data_list of this V2FramerateInfo.
-        :type: list[int]
+        :type data_list: list[int]
         """
         self._data_list = data_list
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DedicatedResourceCapacity:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class DedicatedResourceCapacity:
     }
 
     def __init__(self, ram=None, volume=None, vcpus=None):
-        """DedicatedResourceCapacity - a model defined in huaweicloud sdk"""
+        """DedicatedResourceCapacity
+
+        The model defined in huaweicloud sdk
+
+        :param ram: 内存大小，单位GB
+        :type ram: int
+        :param volume: 磁盘容量，单位GB
+        :type volume: int
+        :param vcpus: cpu核数
+        :type vcpus: int
+        """
         
         
 
@@ -68,7 +77,7 @@ class DedicatedResourceCapacity:
         内存大小，单位GB
 
         :param ram: The ram of this DedicatedResourceCapacity.
-        :type: int
+        :type ram: int
         """
         self._ram = ram
 
@@ -90,7 +99,7 @@ class DedicatedResourceCapacity:
         磁盘容量，单位GB
 
         :param volume: The volume of this DedicatedResourceCapacity.
-        :type: int
+        :type volume: int
         """
         self._volume = volume
 
@@ -112,7 +121,7 @@ class DedicatedResourceCapacity:
         cpu核数
 
         :param vcpus: The vcpus of this DedicatedResourceCapacity.
-        :type: int
+        :type vcpus: int
         """
         self._vcpus = vcpus
 

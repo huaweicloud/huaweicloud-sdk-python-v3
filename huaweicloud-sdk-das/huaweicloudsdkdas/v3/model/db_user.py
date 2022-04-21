@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DbUser:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DbUser:
     }
 
     def __init__(self, db_user_id=None, db_username=None):
-        """DbUser - a model defined in huaweicloud sdk"""
+        """DbUser
+
+        The model defined in huaweicloud sdk
+
+        :param db_user_id: 数据库用户ID
+        :type db_user_id: str
+        :param db_username: 数据库用户名称
+        :type db_username: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class DbUser:
         数据库用户ID
 
         :param db_user_id: The db_user_id of this DbUser.
-        :type: str
+        :type db_user_id: str
         """
         self._db_user_id = db_user_id
 
@@ -83,7 +90,7 @@ class DbUser:
         数据库用户名称
 
         :param db_username: The db_username of this DbUser.
-        :type: str
+        :type db_username: str
         """
         self._db_username = db_username
 

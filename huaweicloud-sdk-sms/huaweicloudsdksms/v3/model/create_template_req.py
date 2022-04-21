@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateTemplateReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateTemplateReq:
     }
 
     def __init__(self, template=None):
-        """CreateTemplateReq - a model defined in huaweicloud sdk"""
+        """CreateTemplateReq
+
+        The model defined in huaweicloud sdk
+
+        :param template: 
+        :type template: :class:`huaweicloudsdksms.v3.TemplateRequest`
+        """
         
         
 
@@ -45,7 +50,7 @@ class CreateTemplateReq:
 
 
         :return: The template of this CreateTemplateReq.
-        :rtype: TemplateRequest
+        :rtype: :class:`huaweicloudsdksms.v3.TemplateRequest`
         """
         return self._template
 
@@ -55,7 +60,7 @@ class CreateTemplateReq:
 
 
         :param template: The template of this CreateTemplateReq.
-        :type: TemplateRequest
+        :type template: :class:`huaweicloudsdksms.v3.TemplateRequest`
         """
         self._template = template
 

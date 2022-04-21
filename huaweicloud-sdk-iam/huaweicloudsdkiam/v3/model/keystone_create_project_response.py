@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneCreateProjectResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class KeystoneCreateProjectResponse(SdkResponse):
     }
 
     def __init__(self, project=None):
-        """KeystoneCreateProjectResponse - a model defined in huaweicloud sdk"""
+        """KeystoneCreateProjectResponse
+
+        The model defined in huaweicloud sdk
+
+        :param project: 
+        :type project: :class:`huaweicloudsdkiam.v3.AuthProjectResult`
+        """
         
         super(KeystoneCreateProjectResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class KeystoneCreateProjectResponse(SdkResponse):
 
 
         :return: The project of this KeystoneCreateProjectResponse.
-        :rtype: AuthProjectResult
+        :rtype: :class:`huaweicloudsdkiam.v3.AuthProjectResult`
         """
         return self._project
 
@@ -56,7 +61,7 @@ class KeystoneCreateProjectResponse(SdkResponse):
 
 
         :param project: The project of this KeystoneCreateProjectResponse.
-        :type: AuthProjectResult
+        :type project: :class:`huaweicloudsdkiam.v3.AuthProjectResult`
         """
         self._project = project
 

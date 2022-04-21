@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryRecordSetWithLineAndTagsResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -66,7 +65,49 @@ class QueryRecordSetWithLineAndTagsResp:
     }
 
     def __init__(self, id=None, name=None, description=None, zone_id=None, zone_name=None, type=None, ttl=None, records=None, created_at=None, updated_at=None, status=None, default=None, project_id=None, links=None, tags=None, line=None, weight=None, health_check_id=None, alias_target=None):
-        """QueryRecordSetWithLineAndTagsResp - a model defined in huaweicloud sdk"""
+        """QueryRecordSetWithLineAndTagsResp
+
+        The model defined in huaweicloud sdk
+
+        :param id: Record Set的ID。
+        :type id: str
+        :param name: Record Set的名称。
+        :type name: str
+        :param description: Record Set的描述信息。
+        :type description: str
+        :param zone_id: 托管该记录的zone_id。
+        :type zone_id: str
+        :param zone_name: 托管该记录的zone_name。
+        :type zone_name: str
+        :param type: 记录类型。
+        :type type: str
+        :param ttl: 解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
+        :type ttl: int
+        :param records: 域名解析后的值。
+        :type records: list[str]
+        :param created_at: 创建时间。
+        :type created_at: str
+        :param updated_at: 更新时间。
+        :type updated_at: str
+        :param status: 资源状态。
+        :type status: str
+        :param default: 标识是否由系统默认生成，系统默认生成的Record Set不能删除。
+        :type default: bool
+        :param project_id: 该Record Set所属的项目ID。
+        :type project_id: str
+        :param links: 
+        :type links: :class:`huaweicloudsdkdns.v2.PageLink`
+        :param tags: 资源标签。
+        :type tags: list[:class:`huaweicloudsdkdns.v2.Tag`]
+        :param line: 解析线路ID。
+        :type line: str
+        :param weight: 解析记录的权重。
+        :type weight: int
+        :param health_check_id: 健康检查ID。
+        :type health_check_id: str
+        :param alias_target: 
+        :type alias_target: :class:`huaweicloudsdkdns.v2.AliasTarget`
+        """
         
         
 
@@ -148,7 +189,7 @@ class QueryRecordSetWithLineAndTagsResp:
         Record Set的ID。
 
         :param id: The id of this QueryRecordSetWithLineAndTagsResp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -170,7 +211,7 @@ class QueryRecordSetWithLineAndTagsResp:
         Record Set的名称。
 
         :param name: The name of this QueryRecordSetWithLineAndTagsResp.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -192,7 +233,7 @@ class QueryRecordSetWithLineAndTagsResp:
         Record Set的描述信息。
 
         :param description: The description of this QueryRecordSetWithLineAndTagsResp.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -214,7 +255,7 @@ class QueryRecordSetWithLineAndTagsResp:
         托管该记录的zone_id。
 
         :param zone_id: The zone_id of this QueryRecordSetWithLineAndTagsResp.
-        :type: str
+        :type zone_id: str
         """
         self._zone_id = zone_id
 
@@ -236,7 +277,7 @@ class QueryRecordSetWithLineAndTagsResp:
         托管该记录的zone_name。
 
         :param zone_name: The zone_name of this QueryRecordSetWithLineAndTagsResp.
-        :type: str
+        :type zone_name: str
         """
         self._zone_name = zone_name
 
@@ -258,7 +299,7 @@ class QueryRecordSetWithLineAndTagsResp:
         记录类型。
 
         :param type: The type of this QueryRecordSetWithLineAndTagsResp.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -280,7 +321,7 @@ class QueryRecordSetWithLineAndTagsResp:
         解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
 
         :param ttl: The ttl of this QueryRecordSetWithLineAndTagsResp.
-        :type: int
+        :type ttl: int
         """
         self._ttl = ttl
 
@@ -302,7 +343,7 @@ class QueryRecordSetWithLineAndTagsResp:
         域名解析后的值。
 
         :param records: The records of this QueryRecordSetWithLineAndTagsResp.
-        :type: list[str]
+        :type records: list[str]
         """
         self._records = records
 
@@ -324,7 +365,7 @@ class QueryRecordSetWithLineAndTagsResp:
         创建时间。
 
         :param created_at: The created_at of this QueryRecordSetWithLineAndTagsResp.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -346,7 +387,7 @@ class QueryRecordSetWithLineAndTagsResp:
         更新时间。
 
         :param updated_at: The updated_at of this QueryRecordSetWithLineAndTagsResp.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 
@@ -368,7 +409,7 @@ class QueryRecordSetWithLineAndTagsResp:
         资源状态。
 
         :param status: The status of this QueryRecordSetWithLineAndTagsResp.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -390,7 +431,7 @@ class QueryRecordSetWithLineAndTagsResp:
         标识是否由系统默认生成，系统默认生成的Record Set不能删除。
 
         :param default: The default of this QueryRecordSetWithLineAndTagsResp.
-        :type: bool
+        :type default: bool
         """
         self._default = default
 
@@ -412,7 +453,7 @@ class QueryRecordSetWithLineAndTagsResp:
         该Record Set所属的项目ID。
 
         :param project_id: The project_id of this QueryRecordSetWithLineAndTagsResp.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -422,7 +463,7 @@ class QueryRecordSetWithLineAndTagsResp:
 
 
         :return: The links of this QueryRecordSetWithLineAndTagsResp.
-        :rtype: PageLink
+        :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
         """
         return self._links
 
@@ -432,7 +473,7 @@ class QueryRecordSetWithLineAndTagsResp:
 
 
         :param links: The links of this QueryRecordSetWithLineAndTagsResp.
-        :type: PageLink
+        :type links: :class:`huaweicloudsdkdns.v2.PageLink`
         """
         self._links = links
 
@@ -443,7 +484,7 @@ class QueryRecordSetWithLineAndTagsResp:
         资源标签。
 
         :return: The tags of this QueryRecordSetWithLineAndTagsResp.
-        :rtype: list[Tag]
+        :rtype: list[:class:`huaweicloudsdkdns.v2.Tag`]
         """
         return self._tags
 
@@ -454,7 +495,7 @@ class QueryRecordSetWithLineAndTagsResp:
         资源标签。
 
         :param tags: The tags of this QueryRecordSetWithLineAndTagsResp.
-        :type: list[Tag]
+        :type tags: list[:class:`huaweicloudsdkdns.v2.Tag`]
         """
         self._tags = tags
 
@@ -476,7 +517,7 @@ class QueryRecordSetWithLineAndTagsResp:
         解析线路ID。
 
         :param line: The line of this QueryRecordSetWithLineAndTagsResp.
-        :type: str
+        :type line: str
         """
         self._line = line
 
@@ -498,7 +539,7 @@ class QueryRecordSetWithLineAndTagsResp:
         解析记录的权重。
 
         :param weight: The weight of this QueryRecordSetWithLineAndTagsResp.
-        :type: int
+        :type weight: int
         """
         self._weight = weight
 
@@ -520,7 +561,7 @@ class QueryRecordSetWithLineAndTagsResp:
         健康检查ID。
 
         :param health_check_id: The health_check_id of this QueryRecordSetWithLineAndTagsResp.
-        :type: str
+        :type health_check_id: str
         """
         self._health_check_id = health_check_id
 
@@ -530,7 +571,7 @@ class QueryRecordSetWithLineAndTagsResp:
 
 
         :return: The alias_target of this QueryRecordSetWithLineAndTagsResp.
-        :rtype: AliasTarget
+        :rtype: :class:`huaweicloudsdkdns.v2.AliasTarget`
         """
         return self._alias_target
 
@@ -540,7 +581,7 @@ class QueryRecordSetWithLineAndTagsResp:
 
 
         :param alias_target: The alias_target of this QueryRecordSetWithLineAndTagsResp.
-        :type: AliasTarget
+        :type alias_target: :class:`huaweicloudsdkdns.v2.AliasTarget`
         """
         self._alias_target = alias_target
 

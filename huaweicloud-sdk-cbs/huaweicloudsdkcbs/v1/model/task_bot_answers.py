@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TaskBotAnswers:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class TaskBotAnswers:
     }
 
     def __init__(self, answer=None, skill_id=None, skill_responses=None):
-        """TaskBotAnswers - a model defined in huaweicloud sdk"""
+        """TaskBotAnswers
+
+        The model defined in huaweicloud sdk
+
+        :param answer: 答案。
+        :type answer: str
+        :param skill_id: 技能ID。
+        :type skill_id: str
+        :param skill_responses: 技能回复信息。
+        :type skill_responses: list[:class:`huaweicloudsdkcbs.v1.SkillResponse`]
+        """
         
         
 
@@ -65,7 +74,7 @@ class TaskBotAnswers:
         答案。
 
         :param answer: The answer of this TaskBotAnswers.
-        :type: str
+        :type answer: str
         """
         self._answer = answer
 
@@ -87,7 +96,7 @@ class TaskBotAnswers:
         技能ID。
 
         :param skill_id: The skill_id of this TaskBotAnswers.
-        :type: str
+        :type skill_id: str
         """
         self._skill_id = skill_id
 
@@ -98,7 +107,7 @@ class TaskBotAnswers:
         技能回复信息。
 
         :return: The skill_responses of this TaskBotAnswers.
-        :rtype: list[SkillResponse]
+        :rtype: list[:class:`huaweicloudsdkcbs.v1.SkillResponse`]
         """
         return self._skill_responses
 
@@ -109,7 +118,7 @@ class TaskBotAnswers:
         技能回复信息。
 
         :param skill_responses: The skill_responses of this TaskBotAnswers.
-        :type: list[SkillResponse]
+        :type skill_responses: list[:class:`huaweicloudsdkcbs.v1.SkillResponse`]
         """
         self._skill_responses = skill_responses
 

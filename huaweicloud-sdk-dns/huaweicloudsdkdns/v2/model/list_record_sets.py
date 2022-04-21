@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRecordSets:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class ListRecordSets:
     }
 
     def __init__(self, id=None, name=None, description=None, zone_id=None, zone_name=None, type=None, ttl=None, records=None, create_at=None, update_at=None, status=None, default=None, project_id=None, links=None):
-        """ListRecordSets - a model defined in huaweicloud sdk"""
+        """ListRecordSets
+
+        The model defined in huaweicloud sdk
+
+        :param id: Record Set的ID。
+        :type id: str
+        :param name: Record Set的名称。
+        :type name: str
+        :param description: Record Set的描述信息。
+        :type description: str
+        :param zone_id: 托管该记录的zone_id。
+        :type zone_id: str
+        :param zone_name: 托管该记录的zone_name。
+        :type zone_name: str
+        :param type: 记录类型。
+        :type type: str
+        :param ttl: 解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
+        :type ttl: int
+        :param records: 域名解析后的值。
+        :type records: list[str]
+        :param create_at: 创建时间。
+        :type create_at: str
+        :param update_at: 更新时间。
+        :type update_at: str
+        :param status: 资源状态。
+        :type status: str
+        :param default: 标识是否由系统默认生成，系统默认生成的Record Set不能删除。
+        :type default: bool
+        :param project_id: 该Record Set所属的项目ID。
+        :type project_id: str
+        :param links: 
+        :type links: :class:`huaweicloudsdkdns.v2.PageLink`
+        """
         
         
 
@@ -123,7 +154,7 @@ class ListRecordSets:
         Record Set的ID。
 
         :param id: The id of this ListRecordSets.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -145,7 +176,7 @@ class ListRecordSets:
         Record Set的名称。
 
         :param name: The name of this ListRecordSets.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -167,7 +198,7 @@ class ListRecordSets:
         Record Set的描述信息。
 
         :param description: The description of this ListRecordSets.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -189,7 +220,7 @@ class ListRecordSets:
         托管该记录的zone_id。
 
         :param zone_id: The zone_id of this ListRecordSets.
-        :type: str
+        :type zone_id: str
         """
         self._zone_id = zone_id
 
@@ -211,7 +242,7 @@ class ListRecordSets:
         托管该记录的zone_name。
 
         :param zone_name: The zone_name of this ListRecordSets.
-        :type: str
+        :type zone_name: str
         """
         self._zone_name = zone_name
 
@@ -233,7 +264,7 @@ class ListRecordSets:
         记录类型。
 
         :param type: The type of this ListRecordSets.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -255,7 +286,7 @@ class ListRecordSets:
         解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
 
         :param ttl: The ttl of this ListRecordSets.
-        :type: int
+        :type ttl: int
         """
         self._ttl = ttl
 
@@ -277,7 +308,7 @@ class ListRecordSets:
         域名解析后的值。
 
         :param records: The records of this ListRecordSets.
-        :type: list[str]
+        :type records: list[str]
         """
         self._records = records
 
@@ -299,7 +330,7 @@ class ListRecordSets:
         创建时间。
 
         :param create_at: The create_at of this ListRecordSets.
-        :type: str
+        :type create_at: str
         """
         self._create_at = create_at
 
@@ -321,7 +352,7 @@ class ListRecordSets:
         更新时间。
 
         :param update_at: The update_at of this ListRecordSets.
-        :type: str
+        :type update_at: str
         """
         self._update_at = update_at
 
@@ -343,7 +374,7 @@ class ListRecordSets:
         资源状态。
 
         :param status: The status of this ListRecordSets.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -365,7 +396,7 @@ class ListRecordSets:
         标识是否由系统默认生成，系统默认生成的Record Set不能删除。
 
         :param default: The default of this ListRecordSets.
-        :type: bool
+        :type default: bool
         """
         self._default = default
 
@@ -387,7 +418,7 @@ class ListRecordSets:
         该Record Set所属的项目ID。
 
         :param project_id: The project_id of this ListRecordSets.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -397,7 +428,7 @@ class ListRecordSets:
 
 
         :return: The links of this ListRecordSets.
-        :rtype: PageLink
+        :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
         """
         return self._links
 
@@ -407,7 +438,7 @@ class ListRecordSets:
 
 
         :param links: The links of this ListRecordSets.
-        :type: PageLink
+        :type links: :class:`huaweicloudsdkdns.v2.PageLink`
         """
         self._links = links
 

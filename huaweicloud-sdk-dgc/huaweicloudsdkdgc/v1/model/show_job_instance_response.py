@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowJobInstanceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ShowJobInstanceResponse(SdkResponse):
     }
 
     def __init__(self, status=None, plan_time=None, start_time=None, end_time=None, execute_time=None, instances_id=None, total=None, nodes=None):
-        """ShowJobInstanceResponse - a model defined in huaweicloud sdk"""
+        """ShowJobInstanceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param status: 
+        :type status: str
+        :param plan_time: 
+        :type plan_time: int
+        :param start_time: 
+        :type start_time: int
+        :param end_time: 
+        :type end_time: int
+        :param execute_time: 
+        :type execute_time: int
+        :param instances_id: 
+        :type instances_id: str
+        :param total: 
+        :type total: int
+        :param nodes: 
+        :type nodes: list[:class:`huaweicloudsdkdgc.v1.NodeInstance`]
+        """
         
         super(ShowJobInstanceResponse, self).__init__()
 
@@ -91,7 +110,7 @@ class ShowJobInstanceResponse(SdkResponse):
 
 
         :param status: The status of this ShowJobInstanceResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -111,7 +130,7 @@ class ShowJobInstanceResponse(SdkResponse):
 
 
         :param plan_time: The plan_time of this ShowJobInstanceResponse.
-        :type: int
+        :type plan_time: int
         """
         self._plan_time = plan_time
 
@@ -131,7 +150,7 @@ class ShowJobInstanceResponse(SdkResponse):
 
 
         :param start_time: The start_time of this ShowJobInstanceResponse.
-        :type: int
+        :type start_time: int
         """
         self._start_time = start_time
 
@@ -151,7 +170,7 @@ class ShowJobInstanceResponse(SdkResponse):
 
 
         :param end_time: The end_time of this ShowJobInstanceResponse.
-        :type: int
+        :type end_time: int
         """
         self._end_time = end_time
 
@@ -171,7 +190,7 @@ class ShowJobInstanceResponse(SdkResponse):
 
 
         :param execute_time: The execute_time of this ShowJobInstanceResponse.
-        :type: int
+        :type execute_time: int
         """
         self._execute_time = execute_time
 
@@ -191,7 +210,7 @@ class ShowJobInstanceResponse(SdkResponse):
 
 
         :param instances_id: The instances_id of this ShowJobInstanceResponse.
-        :type: str
+        :type instances_id: str
         """
         self._instances_id = instances_id
 
@@ -211,7 +230,7 @@ class ShowJobInstanceResponse(SdkResponse):
 
 
         :param total: The total of this ShowJobInstanceResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -221,7 +240,7 @@ class ShowJobInstanceResponse(SdkResponse):
 
 
         :return: The nodes of this ShowJobInstanceResponse.
-        :rtype: list[NodeInstance]
+        :rtype: list[:class:`huaweicloudsdkdgc.v1.NodeInstance`]
         """
         return self._nodes
 
@@ -231,7 +250,7 @@ class ShowJobInstanceResponse(SdkResponse):
 
 
         :param nodes: The nodes of this ShowJobInstanceResponse.
-        :type: list[NodeInstance]
+        :type nodes: list[:class:`huaweicloudsdkdgc.v1.NodeInstance`]
         """
         self._nodes = nodes
 

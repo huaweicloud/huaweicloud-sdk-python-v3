@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CheckpointCreate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class CheckpointCreate:
     }
 
     def __init__(self, created_at=None, id=None, project_id=None, status=None, vault=None, extra_info=None):
-        """CheckpointCreate - a model defined in huaweicloud sdk"""
+        """CheckpointCreate
+
+        The model defined in huaweicloud sdk
+
+        :param created_at: 创建时间，例如:\&quot;2020-02-05T10:38:34.209782\&quot;
+        :type created_at: str
+        :param id: 还原点ID
+        :type id: str
+        :param project_id: 项目ID
+        :type project_id: str
+        :param status: 状态:available,deleting,protecting,deleted,error-deleting,error
+        :type status: str
+        :param vault: 
+        :type vault: :class:`huaweicloudsdkcbr.v1.CheckpointPlanCreate`
+        :param extra_info: 
+        :type extra_info: :class:`huaweicloudsdkcbr.v1.CheckpointExtraInfoResp`
+        """
         
         
 
@@ -79,7 +94,7 @@ class CheckpointCreate:
         创建时间，例如:\"2020-02-05T10:38:34.209782\"
 
         :param created_at: The created_at of this CheckpointCreate.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -101,7 +116,7 @@ class CheckpointCreate:
         还原点ID
 
         :param id: The id of this CheckpointCreate.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -123,7 +138,7 @@ class CheckpointCreate:
         项目ID
 
         :param project_id: The project_id of this CheckpointCreate.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -145,7 +160,7 @@ class CheckpointCreate:
         状态:available,deleting,protecting,deleted,error-deleting,error
 
         :param status: The status of this CheckpointCreate.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -155,7 +170,7 @@ class CheckpointCreate:
 
 
         :return: The vault of this CheckpointCreate.
-        :rtype: CheckpointPlanCreate
+        :rtype: :class:`huaweicloudsdkcbr.v1.CheckpointPlanCreate`
         """
         return self._vault
 
@@ -165,7 +180,7 @@ class CheckpointCreate:
 
 
         :param vault: The vault of this CheckpointCreate.
-        :type: CheckpointPlanCreate
+        :type vault: :class:`huaweicloudsdkcbr.v1.CheckpointPlanCreate`
         """
         self._vault = vault
 
@@ -175,7 +190,7 @@ class CheckpointCreate:
 
 
         :return: The extra_info of this CheckpointCreate.
-        :rtype: CheckpointExtraInfoResp
+        :rtype: :class:`huaweicloudsdkcbr.v1.CheckpointExtraInfoResp`
         """
         return self._extra_info
 
@@ -185,7 +200,7 @@ class CheckpointCreate:
 
 
         :param extra_info: The extra_info of this CheckpointCreate.
-        :type: CheckpointExtraInfoResp
+        :type extra_info: :class:`huaweicloudsdkcbr.v1.CheckpointExtraInfoResp`
         """
         self._extra_info = extra_info
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateManualBackupRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CreateManualBackupRequestBody:
     }
 
     def __init__(self, instance_id=None, name=None, description=None, databases=None):
-        """CreateManualBackupRequestBody - a model defined in huaweicloud sdk"""
+        """CreateManualBackupRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param name: 备份名称，4~64个字符，必须以英文字母开头，区分大小写，可以包含英文字母、数字、中划线或者下划线，不能包含其他特殊字符。
+        :type name: str
+        :param description: 备份描述，不能包含&gt;!&lt;\&quot;&amp;&#39;&#x3D;特殊字符，不大于256个字符。
+        :type description: str
+        :param databases: 只支持Microsoft SQL Server，局部备份的用户自建数据库名列表，当有此参数时以局部备份为准。
+        :type databases: list[:class:`huaweicloudsdkrds.v3.BackupDatabase`]
+        """
         
         
 
@@ -71,7 +82,7 @@ class CreateManualBackupRequestBody:
         实例ID。
 
         :param instance_id: The instance_id of this CreateManualBackupRequestBody.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -93,7 +104,7 @@ class CreateManualBackupRequestBody:
         备份名称，4~64个字符，必须以英文字母开头，区分大小写，可以包含英文字母、数字、中划线或者下划线，不能包含其他特殊字符。
 
         :param name: The name of this CreateManualBackupRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -115,7 +126,7 @@ class CreateManualBackupRequestBody:
         备份描述，不能包含>!<\"&'=特殊字符，不大于256个字符。
 
         :param description: The description of this CreateManualBackupRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -126,7 +137,7 @@ class CreateManualBackupRequestBody:
         只支持Microsoft SQL Server，局部备份的用户自建数据库名列表，当有此参数时以局部备份为准。
 
         :return: The databases of this CreateManualBackupRequestBody.
-        :rtype: list[BackupDatabase]
+        :rtype: list[:class:`huaweicloudsdkrds.v3.BackupDatabase`]
         """
         return self._databases
 
@@ -137,7 +148,7 @@ class CreateManualBackupRequestBody:
         只支持Microsoft SQL Server，局部备份的用户自建数据库名列表，当有此参数时以局部备份为准。
 
         :param databases: The databases of this CreateManualBackupRequestBody.
-        :type: list[BackupDatabase]
+        :type databases: list[:class:`huaweicloudsdkrds.v3.BackupDatabase`]
         """
         self._databases = databases
 

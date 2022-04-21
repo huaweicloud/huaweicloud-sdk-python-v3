@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RecognizeGeneralTextResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RecognizeGeneralTextResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """RecognizeGeneralTextResponse - a model defined in huaweicloud sdk"""
+        """RecognizeGeneralTextResponse
+
+        The model defined in huaweicloud sdk
+
+        :param result: 
+        :type result: :class:`huaweicloudsdkocr.v1.GeneralTextResult`
+        """
         
         super(RecognizeGeneralTextResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class RecognizeGeneralTextResponse(SdkResponse):
 
 
         :return: The result of this RecognizeGeneralTextResponse.
-        :rtype: GeneralTextResult
+        :rtype: :class:`huaweicloudsdkocr.v1.GeneralTextResult`
         """
         return self._result
 
@@ -56,7 +61,7 @@ class RecognizeGeneralTextResponse(SdkResponse):
 
 
         :param result: The result of this RecognizeGeneralTextResponse.
-        :type: GeneralTextResult
+        :type result: :class:`huaweicloudsdkocr.v1.GeneralTextResult`
         """
         self._result = result
 

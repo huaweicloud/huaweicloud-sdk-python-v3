@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Output:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class Output:
     }
 
     def __init__(self, play_type=None, url=None, encrypted=None, quality=None, meta_data=None):
-        """Output - a model defined in huaweicloud sdk"""
+        """Output
+
+        The model defined in huaweicloud sdk
+
+        :param play_type: 协议类型。  取值如下： - hls - dash - mp4
+        :type play_type: str
+        :param url: 播放URL。
+        :type url: str
+        :param encrypted: 标记流是否已被加密。  取值如下： - 0：表示未加密。 - 1：表示已被加密。
+        :type encrypted: int
+        :param quality: 清晰度。  取值如下： - FLUENT：流畅 - SD：标清 - HD：高清 - FULL_HD：超清
+        :type quality: str
+        :param meta_data: 
+        :type meta_data: :class:`huaweicloudsdkvod.v1.MetaData`
+        """
         
         
 
@@ -75,7 +88,7 @@ class Output:
         协议类型。  取值如下： - hls - dash - mp4
 
         :param play_type: The play_type of this Output.
-        :type: str
+        :type play_type: str
         """
         self._play_type = play_type
 
@@ -97,7 +110,7 @@ class Output:
         播放URL。
 
         :param url: The url of this Output.
-        :type: str
+        :type url: str
         """
         self._url = url
 
@@ -119,7 +132,7 @@ class Output:
         标记流是否已被加密。  取值如下： - 0：表示未加密。 - 1：表示已被加密。
 
         :param encrypted: The encrypted of this Output.
-        :type: int
+        :type encrypted: int
         """
         self._encrypted = encrypted
 
@@ -141,7 +154,7 @@ class Output:
         清晰度。  取值如下： - FLUENT：流畅 - SD：标清 - HD：高清 - FULL_HD：超清
 
         :param quality: The quality of this Output.
-        :type: str
+        :type quality: str
         """
         self._quality = quality
 
@@ -151,7 +164,7 @@ class Output:
 
 
         :return: The meta_data of this Output.
-        :rtype: MetaData
+        :rtype: :class:`huaweicloudsdkvod.v1.MetaData`
         """
         return self._meta_data
 
@@ -161,7 +174,7 @@ class Output:
 
 
         :param meta_data: The meta_data of this Output.
-        :type: MetaData
+        :type meta_data: :class:`huaweicloudsdkvod.v1.MetaData`
         """
         self._meta_data = meta_data
 

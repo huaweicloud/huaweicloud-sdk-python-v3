@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IncidentSatisfactionV2Do:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class IncidentSatisfactionV2Do:
     }
 
     def __init__(self, value=None, satisfaction_id=None, satisfaction_value=None, satisfaction_name=None, per_value=None, sat_category_id=None, sat_category_name=None):
-        """IncidentSatisfactionV2Do - a model defined in huaweicloud sdk"""
+        """IncidentSatisfactionV2Do
+
+        The model defined in huaweicloud sdk
+
+        :param value: 满意度总分数
+        :type value: int
+        :param satisfaction_id: 满意度分类id
+        :type satisfaction_id: int
+        :param satisfaction_value: 满意度的值
+        :type satisfaction_value: int
+        :param satisfaction_name: 满意度分类名称
+        :type satisfaction_name: str
+        :param per_value: 每格的分数
+        :type per_value: int
+        :param sat_category_id: 满意度维度id
+        :type sat_category_id: str
+        :param sat_category_name: 满意度维度名称
+        :type sat_category_name: str
+        """
         
         
 
@@ -86,7 +103,7 @@ class IncidentSatisfactionV2Do:
         满意度总分数
 
         :param value: The value of this IncidentSatisfactionV2Do.
-        :type: int
+        :type value: int
         """
         self._value = value
 
@@ -108,7 +125,7 @@ class IncidentSatisfactionV2Do:
         满意度分类id
 
         :param satisfaction_id: The satisfaction_id of this IncidentSatisfactionV2Do.
-        :type: int
+        :type satisfaction_id: int
         """
         self._satisfaction_id = satisfaction_id
 
@@ -130,7 +147,7 @@ class IncidentSatisfactionV2Do:
         满意度的值
 
         :param satisfaction_value: The satisfaction_value of this IncidentSatisfactionV2Do.
-        :type: int
+        :type satisfaction_value: int
         """
         self._satisfaction_value = satisfaction_value
 
@@ -152,7 +169,7 @@ class IncidentSatisfactionV2Do:
         满意度分类名称
 
         :param satisfaction_name: The satisfaction_name of this IncidentSatisfactionV2Do.
-        :type: str
+        :type satisfaction_name: str
         """
         self._satisfaction_name = satisfaction_name
 
@@ -174,7 +191,7 @@ class IncidentSatisfactionV2Do:
         每格的分数
 
         :param per_value: The per_value of this IncidentSatisfactionV2Do.
-        :type: int
+        :type per_value: int
         """
         self._per_value = per_value
 
@@ -196,7 +213,7 @@ class IncidentSatisfactionV2Do:
         满意度维度id
 
         :param sat_category_id: The sat_category_id of this IncidentSatisfactionV2Do.
-        :type: str
+        :type sat_category_id: str
         """
         self._sat_category_id = sat_category_id
 
@@ -218,7 +235,7 @@ class IncidentSatisfactionV2Do:
         满意度维度名称
 
         :param sat_category_name: The sat_category_name of this IncidentSatisfactionV2Do.
-        :type: str
+        :type sat_category_name: str
         """
         self._sat_category_name = sat_category_name
 

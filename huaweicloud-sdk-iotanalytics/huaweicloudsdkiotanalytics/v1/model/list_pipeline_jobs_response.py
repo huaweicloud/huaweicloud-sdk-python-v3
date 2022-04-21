@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPipelineJobsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListPipelineJobsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, pipelines=None):
-        """ListPipelineJobsResponse - a model defined in huaweicloud sdk"""
+        """ListPipelineJobsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 总数
+        :type count: int
+        :param pipelines: 管道列表
+        :type pipelines: list[:class:`huaweicloudsdkiotanalytics.v1.PipelineJobInfoDto`]
+        """
         
         super(ListPipelineJobsResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListPipelineJobsResponse(SdkResponse):
         总数
 
         :param count: The count of this ListPipelineJobsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -74,7 +81,7 @@ class ListPipelineJobsResponse(SdkResponse):
         管道列表
 
         :return: The pipelines of this ListPipelineJobsResponse.
-        :rtype: list[PipelineJobInfoDto]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.PipelineJobInfoDto`]
         """
         return self._pipelines
 
@@ -85,7 +92,7 @@ class ListPipelineJobsResponse(SdkResponse):
         管道列表
 
         :param pipelines: The pipelines of this ListPipelineJobsResponse.
-        :type: list[PipelineJobInfoDto]
+        :type pipelines: list[:class:`huaweicloudsdkiotanalytics.v1.PipelineJobInfoDto`]
         """
         self._pipelines = pipelines
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Parameter:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class Parameter:
     }
 
     def __init__(self, format=None):
-        """Parameter - a model defined in huaweicloud sdk"""
+        """Parameter
+
+        The model defined in huaweicloud sdk
+
+        :param format: 封装格式。  取值如下： - MP3 - AAC
+        :type format: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class Parameter:
         封装格式。  取值如下： - MP3 - AAC
 
         :param format: The format of this Parameter.
-        :type: str
+        :type format: str
         """
         self._format = format
 

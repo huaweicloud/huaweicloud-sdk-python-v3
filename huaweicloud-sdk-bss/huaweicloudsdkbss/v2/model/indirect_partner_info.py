@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IndirectPartnerInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class IndirectPartnerInfo:
     }
 
     def __init__(self, indirect_partner_id=None, mobile_phone=None, email=None, account_name=None, name=None, associated_on=None, account_manager_id=None, account_manager_name=None):
-        """IndirectPartnerInfo - a model defined in huaweicloud sdk"""
+        """IndirectPartnerInfo
+
+        The model defined in huaweicloud sdk
+
+        :param indirect_partner_id: 精英服务商ID。
+        :type indirect_partner_id: str
+        :param mobile_phone: 精英服务商的手机号码。
+        :type mobile_phone: str
+        :param email: 精英服务商的邮箱。
+        :type email: str
+        :param account_name: 精英服务商的账户名。
+        :type account_name: str
+        :param name: 精英服务商的名称。
+        :type name: str
+        :param associated_on: 精英服务商关联华为云伙伴能力中心的时间。 UTC时间（包括时区），例如2016-03-28T00:00:00Z。
+        :type associated_on: str
+        :param account_manager_id: 客户经理登录账户名。
+        :type account_manager_id: str
+        :param account_manager_name: 客户经理的名称。
+        :type account_manager_name: str
+        """
         
         
 
@@ -93,7 +112,7 @@ class IndirectPartnerInfo:
         精英服务商ID。
 
         :param indirect_partner_id: The indirect_partner_id of this IndirectPartnerInfo.
-        :type: str
+        :type indirect_partner_id: str
         """
         self._indirect_partner_id = indirect_partner_id
 
@@ -115,7 +134,7 @@ class IndirectPartnerInfo:
         精英服务商的手机号码。
 
         :param mobile_phone: The mobile_phone of this IndirectPartnerInfo.
-        :type: str
+        :type mobile_phone: str
         """
         self._mobile_phone = mobile_phone
 
@@ -137,7 +156,7 @@ class IndirectPartnerInfo:
         精英服务商的邮箱。
 
         :param email: The email of this IndirectPartnerInfo.
-        :type: str
+        :type email: str
         """
         self._email = email
 
@@ -159,7 +178,7 @@ class IndirectPartnerInfo:
         精英服务商的账户名。
 
         :param account_name: The account_name of this IndirectPartnerInfo.
-        :type: str
+        :type account_name: str
         """
         self._account_name = account_name
 
@@ -181,7 +200,7 @@ class IndirectPartnerInfo:
         精英服务商的名称。
 
         :param name: The name of this IndirectPartnerInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -203,7 +222,7 @@ class IndirectPartnerInfo:
         精英服务商关联华为云伙伴能力中心的时间。 UTC时间（包括时区），例如2016-03-28T00:00:00Z。
 
         :param associated_on: The associated_on of this IndirectPartnerInfo.
-        :type: str
+        :type associated_on: str
         """
         self._associated_on = associated_on
 
@@ -225,7 +244,7 @@ class IndirectPartnerInfo:
         客户经理登录账户名。
 
         :param account_manager_id: The account_manager_id of this IndirectPartnerInfo.
-        :type: str
+        :type account_manager_id: str
         """
         self._account_manager_id = account_manager_id
 
@@ -247,7 +266,7 @@ class IndirectPartnerInfo:
         客户经理的名称。
 
         :param account_manager_name: The account_manager_name of this IndirectPartnerInfo.
-        :type: str
+        :type account_manager_name: str
         """
         self._account_manager_name = account_manager_name
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AssociateRequestThrottlingPolicyV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class AssociateRequestThrottlingPolicyV2Response(SdkResponse):
     }
 
     def __init__(self, throttle_applys=None):
-        """AssociateRequestThrottlingPolicyV2Response - a model defined in huaweicloud sdk"""
+        """AssociateRequestThrottlingPolicyV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param throttle_applys: API与流控策略的绑定关系列表
+        :type throttle_applys: list[:class:`huaweicloudsdkroma.v2.ThrottleApiBinding`]
+        """
         
         super(AssociateRequestThrottlingPolicyV2Response, self).__init__()
 
@@ -47,7 +52,7 @@ class AssociateRequestThrottlingPolicyV2Response(SdkResponse):
         API与流控策略的绑定关系列表
 
         :return: The throttle_applys of this AssociateRequestThrottlingPolicyV2Response.
-        :rtype: list[ThrottleApiBinding]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.ThrottleApiBinding`]
         """
         return self._throttle_applys
 
@@ -58,7 +63,7 @@ class AssociateRequestThrottlingPolicyV2Response(SdkResponse):
         API与流控策略的绑定关系列表
 
         :param throttle_applys: The throttle_applys of this AssociateRequestThrottlingPolicyV2Response.
-        :type: list[ThrottleApiBinding]
+        :type throttle_applys: list[:class:`huaweicloudsdkroma.v2.ThrottleApiBinding`]
         """
         self._throttle_applys = throttle_applys
 

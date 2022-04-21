@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListStorageTypesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListStorageTypesRequest:
     }
 
     def __init__(self, x_language=None, version=None, ha_mode=None):
-        """ListStorageTypesRequest - a model defined in huaweicloud sdk"""
+        """ListStorageTypesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言
+        :type x_language: str
+        :param version: 数据库版本号。
+        :type version: str
+        :param ha_mode: 实例类型： enterprise(企业版)， centralization_standard(主备版)，不区分大小写。
+        :type ha_mode: str
+        """
         
         
 
@@ -67,7 +76,7 @@ class ListStorageTypesRequest:
         语言
 
         :param x_language: The x_language of this ListStorageTypesRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -89,7 +98,7 @@ class ListStorageTypesRequest:
         数据库版本号。
 
         :param version: The version of this ListStorageTypesRequest.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -111,7 +120,7 @@ class ListStorageTypesRequest:
         实例类型： enterprise(企业版)， centralization_standard(主备版)，不区分大小写。
 
         :param ha_mode: The ha_mode of this ListStorageTypesRequest.
-        :type: str
+        :type ha_mode: str
         """
         self._ha_mode = ha_mode
 

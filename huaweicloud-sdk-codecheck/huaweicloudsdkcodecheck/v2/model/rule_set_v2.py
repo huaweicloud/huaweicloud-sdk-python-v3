@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RuleSetV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RuleSetV2:
     }
 
     def __init__(self, ruleset_id=None, language=None):
-        """RuleSetV2 - a model defined in huaweicloud sdk"""
+        """RuleSetV2
+
+        The model defined in huaweicloud sdk
+
+        :param ruleset_id: 规则集id，需要从web界面获取
+        :type ruleset_id: str
+        :param language: 检查语言，支持cpp,java,js,python,php,css,html,go,typescript
+        :type language: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class RuleSetV2:
         规则集id，需要从web界面获取
 
         :param ruleset_id: The ruleset_id of this RuleSetV2.
-        :type: str
+        :type ruleset_id: str
         """
         self._ruleset_id = ruleset_id
 
@@ -84,7 +91,7 @@ class RuleSetV2:
         检查语言，支持cpp,java,js,python,php,css,html,go,typescript
 
         :param language: The language of this RuleSetV2.
-        :type: str
+        :type language: str
         """
         self._language = language
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteInstanceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteInstanceRequest:
     }
 
     def __init__(self, instance_id=None, delete_rds_data=None):
-        """DeleteInstanceRequest - a model defined in huaweicloud sdk"""
+        """DeleteInstanceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: DDM实例ID。
+        :type instance_id: str
+        :param delete_rds_data: 是否同时删除关联后端数据库实例上存储的数据。  - 取值为空或“true”：删除。 - 取值为“false”：不删除。 默认值为空。
+        :type delete_rds_data: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class DeleteInstanceRequest:
         DDM实例ID。
 
         :param instance_id: The instance_id of this DeleteInstanceRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -84,7 +91,7 @@ class DeleteInstanceRequest:
         是否同时删除关联后端数据库实例上存储的数据。  - 取值为空或“true”：删除。 - 取值为“false”：不删除。 默认值为空。
 
         :param delete_rds_data: The delete_rds_data of this DeleteInstanceRequest.
-        :type: str
+        :type delete_rds_data: str
         """
         self._delete_rds_data = delete_rds_data
 

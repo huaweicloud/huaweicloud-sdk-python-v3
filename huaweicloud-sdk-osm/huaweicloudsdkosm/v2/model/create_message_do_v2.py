@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateMessageDoV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CreateMessageDoV2:
     }
 
     def __init__(self, content=None, is_authorized=None, authorization_content=None, accessory_ids=None):
-        """CreateMessageDoV2 - a model defined in huaweicloud sdk"""
+        """CreateMessageDoV2
+
+        The model defined in huaweicloud sdk
+
+        :param content: 留言内容
+        :type content: str
+        :param is_authorized: 是否授权
+        :type is_authorized: int
+        :param authorization_content: 机密信息
+        :type authorization_content: str
+        :param accessory_ids: 附件id
+        :type accessory_ids: list[str]
+        """
         
         
 
@@ -72,7 +83,7 @@ class CreateMessageDoV2:
         留言内容
 
         :param content: The content of this CreateMessageDoV2.
-        :type: str
+        :type content: str
         """
         self._content = content
 
@@ -94,7 +105,7 @@ class CreateMessageDoV2:
         是否授权
 
         :param is_authorized: The is_authorized of this CreateMessageDoV2.
-        :type: int
+        :type is_authorized: int
         """
         self._is_authorized = is_authorized
 
@@ -116,7 +127,7 @@ class CreateMessageDoV2:
         机密信息
 
         :param authorization_content: The authorization_content of this CreateMessageDoV2.
-        :type: str
+        :type authorization_content: str
         """
         self._authorization_content = authorization_content
 
@@ -138,7 +149,7 @@ class CreateMessageDoV2:
         附件id
 
         :param accessory_ids: The accessory_ids of this CreateMessageDoV2.
-        :type: list[str]
+        :type accessory_ids: list[str]
         """
         self._accessory_ids = accessory_ids
 

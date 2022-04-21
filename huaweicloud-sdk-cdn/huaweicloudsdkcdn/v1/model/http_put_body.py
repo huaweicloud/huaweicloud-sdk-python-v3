@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class HttpPutBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class HttpPutBody:
     }
 
     def __init__(self, https_status=None, certificate_name=None, certificate_value=None, private_key=None, certificate_source=None, http2_status=None):
-        """HttpPutBody - a model defined in huaweicloud sdk"""
+        """HttpPutBody
+
+        The model defined in huaweicloud sdk
+
+        :param https_status: HTTPS证书是否启用。（on：开启，off：关闭）
+        :type https_status: str
+        :param certificate_name: 证书名字。（长度限制为3-32字符）。当证书开启时必传。
+        :type certificate_name: str
+        :param certificate_value: HTTPS协议使用的证书内容，当证书开启时必传。取值范围：PEM编码格式。
+        :type certificate_value: str
+        :param private_key: HTTPS协议使用的私钥，当证书开启时必传。取值范围：PEM编码格式。
+        :type private_key: str
+        :param certificate_source: 证书来源。1：代表华为云托管证书；0：表示自有证书。 默认值0。当证书开启时必传。
+        :type certificate_source: int
+        :param http2_status: 是否使用HTTP2.0。（on：是，off：否。）,默认关闭，https_status&#x3D;off时，该值不生效。
+        :type http2_status: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class HttpPutBody:
         HTTPS证书是否启用。（on：开启，off：关闭）
 
         :param https_status: The https_status of this HttpPutBody.
-        :type: str
+        :type https_status: str
         """
         self._https_status = https_status
 
@@ -105,7 +120,7 @@ class HttpPutBody:
         证书名字。（长度限制为3-32字符）。当证书开启时必传。
 
         :param certificate_name: The certificate_name of this HttpPutBody.
-        :type: str
+        :type certificate_name: str
         """
         self._certificate_name = certificate_name
 
@@ -127,7 +142,7 @@ class HttpPutBody:
         HTTPS协议使用的证书内容，当证书开启时必传。取值范围：PEM编码格式。
 
         :param certificate_value: The certificate_value of this HttpPutBody.
-        :type: str
+        :type certificate_value: str
         """
         self._certificate_value = certificate_value
 
@@ -149,7 +164,7 @@ class HttpPutBody:
         HTTPS协议使用的私钥，当证书开启时必传。取值范围：PEM编码格式。
 
         :param private_key: The private_key of this HttpPutBody.
-        :type: str
+        :type private_key: str
         """
         self._private_key = private_key
 
@@ -171,7 +186,7 @@ class HttpPutBody:
         证书来源。1：代表华为云托管证书；0：表示自有证书。 默认值0。当证书开启时必传。
 
         :param certificate_source: The certificate_source of this HttpPutBody.
-        :type: int
+        :type certificate_source: int
         """
         self._certificate_source = certificate_source
 
@@ -193,7 +208,7 @@ class HttpPutBody:
         是否使用HTTP2.0。（on：是，off：否。）,默认关闭，https_status=off时，该值不生效。
 
         :param http2_status: The http2_status of this HttpPutBody.
-        :type: str
+        :type http2_status: str
         """
         self._http2_status = http2_status
 

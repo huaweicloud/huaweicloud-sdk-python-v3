@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LogPathRule:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class LogPathRule:
     }
 
     def __init__(self, args=None, name_type=None, value=None):
-        """LogPathRule - a model defined in huaweicloud sdk"""
+        """LogPathRule
+
+        The model defined in huaweicloud sdk
+
+        :param args: 命令行。
+        :type args: list[str]
+        :param name_type: 取值类型。 cmdLineHash
+        :type name_type: str
+        :param value: 日志路径。
+        :type value: list[str]
+        """
         
         
 
@@ -65,7 +74,7 @@ class LogPathRule:
         命令行。
 
         :param args: The args of this LogPathRule.
-        :type: list[str]
+        :type args: list[str]
         """
         self._args = args
 
@@ -87,7 +96,7 @@ class LogPathRule:
         取值类型。 cmdLineHash
 
         :param name_type: The name_type of this LogPathRule.
-        :type: str
+        :type name_type: str
         """
         self._name_type = name_type
 
@@ -109,7 +118,7 @@ class LogPathRule:
         日志路径。
 
         :param value: The value of this LogPathRule.
-        :type: list[str]
+        :type value: list[str]
         """
         self._value = value
 

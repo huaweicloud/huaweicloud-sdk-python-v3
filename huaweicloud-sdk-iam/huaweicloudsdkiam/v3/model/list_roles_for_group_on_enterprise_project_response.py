@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRolesForGroupOnEnterpriseProjectResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListRolesForGroupOnEnterpriseProjectResponse(SdkResponse):
     }
 
     def __init__(self, roles=None):
-        """ListRolesForGroupOnEnterpriseProjectResponse - a model defined in huaweicloud sdk"""
+        """ListRolesForGroupOnEnterpriseProjectResponse
+
+        The model defined in huaweicloud sdk
+
+        :param roles: 角色列表。
+        :type roles: list[:class:`huaweicloudsdkiam.v3.RolesItem`]
+        """
         
         super(ListRolesForGroupOnEnterpriseProjectResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListRolesForGroupOnEnterpriseProjectResponse(SdkResponse):
         角色列表。
 
         :return: The roles of this ListRolesForGroupOnEnterpriseProjectResponse.
-        :rtype: list[RolesItem]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.RolesItem`]
         """
         return self._roles
 
@@ -58,7 +63,7 @@ class ListRolesForGroupOnEnterpriseProjectResponse(SdkResponse):
         角色列表。
 
         :param roles: The roles of this ListRolesForGroupOnEnterpriseProjectResponse.
-        :type: list[RolesItem]
+        :type roles: list[:class:`huaweicloudsdkiam.v3.RolesItem`]
         """
         self._roles = roles
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRecordSetsWithLineRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -58,7 +57,41 @@ class ListRecordSetsWithLineRequest:
     }
 
     def __init__(self, zone_type=None, marker=None, limit=None, offset=None, line_id=None, tags=None, status=None, type=None, name=None, id=None, records=None, sort_key=None, sort_dir=None, health_check_id=None, search_mode=None):
-        """ListRecordSetsWithLineRequest - a model defined in huaweicloud sdk"""
+        """ListRecordSetsWithLineRequest
+
+        The model defined in huaweicloud sdk
+
+        :param zone_type: 待查询的Record Set的域名类型。  取值范围：public  搜索模式默认为模糊搜索。  默认值为public。
+        :type zone_type: str
+        :param marker: 分页查询起始的资源ID，为空时为查询第一页。  默认值为空。
+        :type marker: str
+        :param limit: 每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
+        :type limit: int
+        :param offset: 分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
+        :type offset: int
+        :param line_id: 解析线路ID。
+        :type line_id: str
+        :param tags: 资源标签。  取值格式：key1,value1|key2,value2  多个标签之间用\&quot;|\&quot;分开，每个标签的键值用英文逗号\&quot;,\&quot;相隔。
+        :type tags: str
+        :param status: 待查询的Record Set的状态。  取值范围：ACTIVE、ERROR、DISABLE、FREEZE、PENDING_CREATE、PENDING_UPDATE、PENDING_DELETE
+        :type status: str
+        :param type: 待查询的Record Set的记录集类型。  取值范围：A、CNAME、MX、AAAA、TXT、SRV、NS、CAA
+        :type type: str
+        :param name: 待查询的Record Set的域名中包含此name。  搜索模式默认为模糊搜索。  默认值为空。
+        :type name: str
+        :param id: 待查询的Record Set的id包含此id。  搜索模式默认为模糊搜索。  默认值为空。
+        :type id: str
+        :param records: 待查询的Record Set的值中包含此records。  搜索模式默认为模糊搜索。  默认值为空。
+        :type records: str
+        :param sort_key: 查询结果中Record Set列表的排序字段。  取值范围：  name：域名 type：记录集类型 默认值为空，表示不排序。
+        :type sort_key: str
+        :param sort_dir: 查询结果中Record Set列表的排序方式。  取值范围：  desc：降序排序 asc：升序排序 默认值为空，表示不排序。
+        :type sort_dir: str
+        :param health_check_id: 健康检查ID。  搜索模式默认为模糊搜索。  默认值为空。
+        :type health_check_id: str
+        :param search_mode: 查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索 默认值为like。
+        :type search_mode: str
+        """
         
         
 
@@ -128,7 +161,7 @@ class ListRecordSetsWithLineRequest:
         待查询的Record Set的域名类型。  取值范围：public  搜索模式默认为模糊搜索。  默认值为public。
 
         :param zone_type: The zone_type of this ListRecordSetsWithLineRequest.
-        :type: str
+        :type zone_type: str
         """
         self._zone_type = zone_type
 
@@ -150,7 +183,7 @@ class ListRecordSetsWithLineRequest:
         分页查询起始的资源ID，为空时为查询第一页。  默认值为空。
 
         :param marker: The marker of this ListRecordSetsWithLineRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -172,7 +205,7 @@ class ListRecordSetsWithLineRequest:
         每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
 
         :param limit: The limit of this ListRecordSetsWithLineRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -194,7 +227,7 @@ class ListRecordSetsWithLineRequest:
         分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
 
         :param offset: The offset of this ListRecordSetsWithLineRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -216,7 +249,7 @@ class ListRecordSetsWithLineRequest:
         解析线路ID。
 
         :param line_id: The line_id of this ListRecordSetsWithLineRequest.
-        :type: str
+        :type line_id: str
         """
         self._line_id = line_id
 
@@ -238,7 +271,7 @@ class ListRecordSetsWithLineRequest:
         资源标签。  取值格式：key1,value1|key2,value2  多个标签之间用\"|\"分开，每个标签的键值用英文逗号\",\"相隔。
 
         :param tags: The tags of this ListRecordSetsWithLineRequest.
-        :type: str
+        :type tags: str
         """
         self._tags = tags
 
@@ -260,7 +293,7 @@ class ListRecordSetsWithLineRequest:
         待查询的Record Set的状态。  取值范围：ACTIVE、ERROR、DISABLE、FREEZE、PENDING_CREATE、PENDING_UPDATE、PENDING_DELETE
 
         :param status: The status of this ListRecordSetsWithLineRequest.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -282,7 +315,7 @@ class ListRecordSetsWithLineRequest:
         待查询的Record Set的记录集类型。  取值范围：A、CNAME、MX、AAAA、TXT、SRV、NS、CAA
 
         :param type: The type of this ListRecordSetsWithLineRequest.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -304,7 +337,7 @@ class ListRecordSetsWithLineRequest:
         待查询的Record Set的域名中包含此name。  搜索模式默认为模糊搜索。  默认值为空。
 
         :param name: The name of this ListRecordSetsWithLineRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -326,7 +359,7 @@ class ListRecordSetsWithLineRequest:
         待查询的Record Set的id包含此id。  搜索模式默认为模糊搜索。  默认值为空。
 
         :param id: The id of this ListRecordSetsWithLineRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -348,7 +381,7 @@ class ListRecordSetsWithLineRequest:
         待查询的Record Set的值中包含此records。  搜索模式默认为模糊搜索。  默认值为空。
 
         :param records: The records of this ListRecordSetsWithLineRequest.
-        :type: str
+        :type records: str
         """
         self._records = records
 
@@ -370,7 +403,7 @@ class ListRecordSetsWithLineRequest:
         查询结果中Record Set列表的排序字段。  取值范围：  name：域名 type：记录集类型 默认值为空，表示不排序。
 
         :param sort_key: The sort_key of this ListRecordSetsWithLineRequest.
-        :type: str
+        :type sort_key: str
         """
         self._sort_key = sort_key
 
@@ -392,7 +425,7 @@ class ListRecordSetsWithLineRequest:
         查询结果中Record Set列表的排序方式。  取值范围：  desc：降序排序 asc：升序排序 默认值为空，表示不排序。
 
         :param sort_dir: The sort_dir of this ListRecordSetsWithLineRequest.
-        :type: str
+        :type sort_dir: str
         """
         self._sort_dir = sort_dir
 
@@ -414,7 +447,7 @@ class ListRecordSetsWithLineRequest:
         健康检查ID。  搜索模式默认为模糊搜索。  默认值为空。
 
         :param health_check_id: The health_check_id of this ListRecordSetsWithLineRequest.
-        :type: str
+        :type health_check_id: str
         """
         self._health_check_id = health_check_id
 
@@ -436,7 +469,7 @@ class ListRecordSetsWithLineRequest:
         查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索 默认值为like。
 
         :param search_mode: The search_mode of this ListRecordSetsWithLineRequest.
-        :type: str
+        :type search_mode: str
         """
         self._search_mode = search_mode
 

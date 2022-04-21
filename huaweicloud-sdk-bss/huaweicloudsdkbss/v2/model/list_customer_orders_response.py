@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCustomerOrdersResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListCustomerOrdersResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, order_infos=None):
-        """ListCustomerOrdersResponse - a model defined in huaweicloud sdk"""
+        """ListCustomerOrdersResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total_count: 大于等于0的整数。 符合条件的记录总数。
+        :type total_count: int
+        :param order_infos: - 客户订单详情信息。 具体请参见表2
+        :type order_infos: list[:class:`huaweicloudsdkbss.v2.CustomerOrderV2`]
+        """
         
         super(ListCustomerOrdersResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListCustomerOrdersResponse(SdkResponse):
         大于等于0的整数。 符合条件的记录总数。
 
         :param total_count: The total_count of this ListCustomerOrdersResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 
@@ -74,7 +81,7 @@ class ListCustomerOrdersResponse(SdkResponse):
         - 客户订单详情信息。 具体请参见表2
 
         :return: The order_infos of this ListCustomerOrdersResponse.
-        :rtype: list[CustomerOrderV2]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.CustomerOrderV2`]
         """
         return self._order_infos
 
@@ -85,7 +92,7 @@ class ListCustomerOrdersResponse(SdkResponse):
         - 客户订单详情信息。 具体请参见表2
 
         :param order_infos: The order_infos of this ListCustomerOrdersResponse.
-        :type: list[CustomerOrderV2]
+        :type order_infos: list[:class:`huaweicloudsdkbss.v2.CustomerOrderV2`]
         """
         self._order_infos = order_infos
 

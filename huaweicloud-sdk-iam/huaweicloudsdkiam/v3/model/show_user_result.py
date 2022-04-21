@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowUserResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -64,7 +63,47 @@ class ShowUserResult:
     }
 
     def __init__(self, enabled=None, id=None, domain_id=None, name=None, links=None, xuser_id=None, xuser_type=None, areacode=None, email=None, phone=None, pwd_status=None, update_time=None, create_time=None, last_login_time=None, pwd_strength=None, is_domain_owner=None, access_mode=None, description=None):
-        """ShowUserResult - a model defined in huaweicloud sdk"""
+        """ShowUserResult
+
+        The model defined in huaweicloud sdk
+
+        :param enabled: IAM用户是否启用。true表示启用，false表示停用，默认为true。
+        :type enabled: bool
+        :param id: IAM用户ID。
+        :type id: str
+        :param domain_id: IAM用户所属账号ID。
+        :type domain_id: str
+        :param name: IAM用户名。
+        :type name: str
+        :param links: 
+        :type links: :class:`huaweicloudsdkiam.v3.Links`
+        :param xuser_id: IAM用户在外部系统中的ID。
+        :type xuser_id: str
+        :param xuser_type: IAM用户在外部系统中的类型。
+        :type xuser_type: str
+        :param areacode: IAM用户手机号的国家码。
+        :type areacode: str
+        :param email: IAM用户邮箱。
+        :type email: str
+        :param phone: IAM用户手机号。
+        :type phone: str
+        :param pwd_status: IAM用户密码状态。true：需要修改密码，false：正常。
+        :type pwd_status: bool
+        :param update_time: IAM用户更新时间。
+        :type update_time: str
+        :param create_time: IAM用户创建时间。
+        :type create_time: str
+        :param last_login_time: IAM用户最后登录时间。
+        :type last_login_time: str
+        :param pwd_strength: IAM用户密码强度。结果为Low/Middle/High/None，分别表示密码强度低/中/高/无。
+        :type pwd_strength: str
+        :param is_domain_owner: IAM用户是否为根用户。
+        :type is_domain_owner: bool
+        :param access_mode: IAM用户访问模式。
+        :type access_mode: str
+        :param description: IAM用户描述信息
+        :type description: str
+        """
         
         
 
@@ -135,7 +174,7 @@ class ShowUserResult:
         IAM用户是否启用。true表示启用，false表示停用，默认为true。
 
         :param enabled: The enabled of this ShowUserResult.
-        :type: bool
+        :type enabled: bool
         """
         self._enabled = enabled
 
@@ -157,7 +196,7 @@ class ShowUserResult:
         IAM用户ID。
 
         :param id: The id of this ShowUserResult.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -179,7 +218,7 @@ class ShowUserResult:
         IAM用户所属账号ID。
 
         :param domain_id: The domain_id of this ShowUserResult.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -201,7 +240,7 @@ class ShowUserResult:
         IAM用户名。
 
         :param name: The name of this ShowUserResult.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -211,7 +250,7 @@ class ShowUserResult:
 
 
         :return: The links of this ShowUserResult.
-        :rtype: Links
+        :rtype: :class:`huaweicloudsdkiam.v3.Links`
         """
         return self._links
 
@@ -221,7 +260,7 @@ class ShowUserResult:
 
 
         :param links: The links of this ShowUserResult.
-        :type: Links
+        :type links: :class:`huaweicloudsdkiam.v3.Links`
         """
         self._links = links
 
@@ -243,7 +282,7 @@ class ShowUserResult:
         IAM用户在外部系统中的ID。
 
         :param xuser_id: The xuser_id of this ShowUserResult.
-        :type: str
+        :type xuser_id: str
         """
         self._xuser_id = xuser_id
 
@@ -265,7 +304,7 @@ class ShowUserResult:
         IAM用户在外部系统中的类型。
 
         :param xuser_type: The xuser_type of this ShowUserResult.
-        :type: str
+        :type xuser_type: str
         """
         self._xuser_type = xuser_type
 
@@ -287,7 +326,7 @@ class ShowUserResult:
         IAM用户手机号的国家码。
 
         :param areacode: The areacode of this ShowUserResult.
-        :type: str
+        :type areacode: str
         """
         self._areacode = areacode
 
@@ -309,7 +348,7 @@ class ShowUserResult:
         IAM用户邮箱。
 
         :param email: The email of this ShowUserResult.
-        :type: str
+        :type email: str
         """
         self._email = email
 
@@ -331,7 +370,7 @@ class ShowUserResult:
         IAM用户手机号。
 
         :param phone: The phone of this ShowUserResult.
-        :type: str
+        :type phone: str
         """
         self._phone = phone
 
@@ -353,7 +392,7 @@ class ShowUserResult:
         IAM用户密码状态。true：需要修改密码，false：正常。
 
         :param pwd_status: The pwd_status of this ShowUserResult.
-        :type: bool
+        :type pwd_status: bool
         """
         self._pwd_status = pwd_status
 
@@ -375,7 +414,7 @@ class ShowUserResult:
         IAM用户更新时间。
 
         :param update_time: The update_time of this ShowUserResult.
-        :type: str
+        :type update_time: str
         """
         self._update_time = update_time
 
@@ -397,7 +436,7 @@ class ShowUserResult:
         IAM用户创建时间。
 
         :param create_time: The create_time of this ShowUserResult.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -419,7 +458,7 @@ class ShowUserResult:
         IAM用户最后登录时间。
 
         :param last_login_time: The last_login_time of this ShowUserResult.
-        :type: str
+        :type last_login_time: str
         """
         self._last_login_time = last_login_time
 
@@ -441,7 +480,7 @@ class ShowUserResult:
         IAM用户密码强度。结果为Low/Middle/High/None，分别表示密码强度低/中/高/无。
 
         :param pwd_strength: The pwd_strength of this ShowUserResult.
-        :type: str
+        :type pwd_strength: str
         """
         self._pwd_strength = pwd_strength
 
@@ -463,7 +502,7 @@ class ShowUserResult:
         IAM用户是否为根用户。
 
         :param is_domain_owner: The is_domain_owner of this ShowUserResult.
-        :type: bool
+        :type is_domain_owner: bool
         """
         self._is_domain_owner = is_domain_owner
 
@@ -485,7 +524,7 @@ class ShowUserResult:
         IAM用户访问模式。
 
         :param access_mode: The access_mode of this ShowUserResult.
-        :type: str
+        :type access_mode: str
         """
         self._access_mode = access_mode
 
@@ -507,7 +546,7 @@ class ShowUserResult:
         IAM用户描述信息
 
         :param description: The description of this ShowUserResult.
-        :type: str
+        :type description: str
         """
         self._description = description
 

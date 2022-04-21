@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateClusterResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class CreateClusterResponse(SdkResponse):
     }
 
     def __init__(self, name=None, id=None, task=None, datastore=None, instances=None):
-        """CreateClusterResponse - a model defined in huaweicloud sdk"""
+        """CreateClusterResponse
+
+        The model defined in huaweicloud sdk
+
+        :param name: 集群名称
+        :type name: str
+        :param id: 集群ID
+        :type id: str
+        :param task: 
+        :type task: :class:`huaweicloudsdkcdm.v1.Task`
+        :param datastore: 
+        :type datastore: :class:`huaweicloudsdkcdm.v1.Datastore`
+        :param instances: 集群的节点信息
+        :type instances: list[:class:`huaweicloudsdkcdm.v1.ClusterInstance`]
+        """
         
         super(CreateClusterResponse, self).__init__()
 
@@ -78,7 +91,7 @@ class CreateClusterResponse(SdkResponse):
         集群名称
 
         :param name: The name of this CreateClusterResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -100,7 +113,7 @@ class CreateClusterResponse(SdkResponse):
         集群ID
 
         :param id: The id of this CreateClusterResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -110,7 +123,7 @@ class CreateClusterResponse(SdkResponse):
 
 
         :return: The task of this CreateClusterResponse.
-        :rtype: Task
+        :rtype: :class:`huaweicloudsdkcdm.v1.Task`
         """
         return self._task
 
@@ -120,7 +133,7 @@ class CreateClusterResponse(SdkResponse):
 
 
         :param task: The task of this CreateClusterResponse.
-        :type: Task
+        :type task: :class:`huaweicloudsdkcdm.v1.Task`
         """
         self._task = task
 
@@ -130,7 +143,7 @@ class CreateClusterResponse(SdkResponse):
 
 
         :return: The datastore of this CreateClusterResponse.
-        :rtype: Datastore
+        :rtype: :class:`huaweicloudsdkcdm.v1.Datastore`
         """
         return self._datastore
 
@@ -140,7 +153,7 @@ class CreateClusterResponse(SdkResponse):
 
 
         :param datastore: The datastore of this CreateClusterResponse.
-        :type: Datastore
+        :type datastore: :class:`huaweicloudsdkcdm.v1.Datastore`
         """
         self._datastore = datastore
 
@@ -151,7 +164,7 @@ class CreateClusterResponse(SdkResponse):
         集群的节点信息
 
         :return: The instances of this CreateClusterResponse.
-        :rtype: list[ClusterInstance]
+        :rtype: list[:class:`huaweicloudsdkcdm.v1.ClusterInstance`]
         """
         return self._instances
 
@@ -162,7 +175,7 @@ class CreateClusterResponse(SdkResponse):
         集群的节点信息
 
         :param instances: The instances of this CreateClusterResponse.
-        :type: list[ClusterInstance]
+        :type instances: list[:class:`huaweicloudsdkcdm.v1.ClusterInstance`]
         """
         self._instances = instances
 

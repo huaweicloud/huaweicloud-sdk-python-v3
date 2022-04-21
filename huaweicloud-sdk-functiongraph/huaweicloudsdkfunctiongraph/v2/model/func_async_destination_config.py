@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FuncAsyncDestinationConfig:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class FuncAsyncDestinationConfig:
     }
 
     def __init__(self, on_success=None, on_failure=None):
-        """FuncAsyncDestinationConfig - a model defined in huaweicloud sdk"""
+        """FuncAsyncDestinationConfig
+
+        The model defined in huaweicloud sdk
+
+        :param on_success: 
+        :type on_success: :class:`huaweicloudsdkfunctiongraph.v2.FuncDestinationConfig`
+        :param on_failure: 
+        :type on_failure: :class:`huaweicloudsdkfunctiongraph.v2.FuncDestinationConfig`
+        """
         
         
 
@@ -51,7 +58,7 @@ class FuncAsyncDestinationConfig:
 
 
         :return: The on_success of this FuncAsyncDestinationConfig.
-        :rtype: FuncDestinationConfig
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.FuncDestinationConfig`
         """
         return self._on_success
 
@@ -61,7 +68,7 @@ class FuncAsyncDestinationConfig:
 
 
         :param on_success: The on_success of this FuncAsyncDestinationConfig.
-        :type: FuncDestinationConfig
+        :type on_success: :class:`huaweicloudsdkfunctiongraph.v2.FuncDestinationConfig`
         """
         self._on_success = on_success
 
@@ -71,7 +78,7 @@ class FuncAsyncDestinationConfig:
 
 
         :return: The on_failure of this FuncAsyncDestinationConfig.
-        :rtype: FuncDestinationConfig
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.FuncDestinationConfig`
         """
         return self._on_failure
 
@@ -81,7 +88,7 @@ class FuncAsyncDestinationConfig:
 
 
         :param on_failure: The on_failure of this FuncAsyncDestinationConfig.
-        :type: FuncDestinationConfig
+        :type on_failure: :class:`huaweicloudsdkfunctiongraph.v2.FuncDestinationConfig`
         """
         self._on_failure = on_failure
 

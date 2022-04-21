@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NovaListKeypairsResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class NovaListKeypairsResult:
     }
 
     def __init__(self, keypair=None):
-        """NovaListKeypairsResult - a model defined in huaweicloud sdk"""
+        """NovaListKeypairsResult
+
+        The model defined in huaweicloud sdk
+
+        :param keypair: 
+        :type keypair: :class:`huaweicloudsdkecs.v2.NovaSimpleKeypair`
+        """
         
         
 
@@ -45,7 +50,7 @@ class NovaListKeypairsResult:
 
 
         :return: The keypair of this NovaListKeypairsResult.
-        :rtype: NovaSimpleKeypair
+        :rtype: :class:`huaweicloudsdkecs.v2.NovaSimpleKeypair`
         """
         return self._keypair
 
@@ -55,7 +60,7 @@ class NovaListKeypairsResult:
 
 
         :param keypair: The keypair of this NovaListKeypairsResult.
-        :type: NovaSimpleKeypair
+        :type keypair: :class:`huaweicloudsdkecs.v2.NovaSimpleKeypair`
         """
         self._keypair = keypair
 

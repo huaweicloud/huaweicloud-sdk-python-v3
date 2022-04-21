@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateClusterDatastoreBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateClusterDatastoreBody:
     }
 
     def __init__(self, version=None, type=None):
-        """CreateClusterDatastoreBody - a model defined in huaweicloud sdk"""
+        """CreateClusterDatastoreBody
+
+        The model defined in huaweicloud sdk
+
+        :param version: 引擎版本号，支持5.5.1、6.2.3、6.5.4、7.1.1、7.6.2和7.9.3，默认为5.5.1。
+        :type version: str
+        :param type: 引擎类型，默认为elasticsearch。目前只支持elasticsearch。
+        :type type: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class CreateClusterDatastoreBody:
         引擎版本号，支持5.5.1、6.2.3、6.5.4、7.1.1、7.6.2和7.9.3，默认为5.5.1。
 
         :param version: The version of this CreateClusterDatastoreBody.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -83,7 +90,7 @@ class CreateClusterDatastoreBody:
         引擎类型，默认为elasticsearch。目前只支持elasticsearch。
 
         :param type: The type of this CreateClusterDatastoreBody.
-        :type: str
+        :type type: str
         """
         self._type = type
 

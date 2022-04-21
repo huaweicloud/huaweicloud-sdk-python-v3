@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NeutronListSecurityGroupRulesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class NeutronListSecurityGroupRulesResponse(SdkResponse):
     }
 
     def __init__(self, security_group_rules=None):
-        """NeutronListSecurityGroupRulesResponse - a model defined in huaweicloud sdk"""
+        """NeutronListSecurityGroupRulesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param security_group_rules: 安全组规则对象列表
+        :type security_group_rules: list[:class:`huaweicloudsdkvpc.v2.NeutronSecurityGroupRule`]
+        """
         
         super(NeutronListSecurityGroupRulesResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class NeutronListSecurityGroupRulesResponse(SdkResponse):
         安全组规则对象列表
 
         :return: The security_group_rules of this NeutronListSecurityGroupRulesResponse.
-        :rtype: list[NeutronSecurityGroupRule]
+        :rtype: list[:class:`huaweicloudsdkvpc.v2.NeutronSecurityGroupRule`]
         """
         return self._security_group_rules
 
@@ -58,7 +63,7 @@ class NeutronListSecurityGroupRulesResponse(SdkResponse):
         安全组规则对象列表
 
         :param security_group_rules: The security_group_rules of this NeutronListSecurityGroupRulesResponse.
-        :type: list[NeutronSecurityGroupRule]
+        :type security_group_rules: list[:class:`huaweicloudsdkvpc.v2.NeutronSecurityGroupRule`]
         """
         self._security_group_rules = security_group_rules
 

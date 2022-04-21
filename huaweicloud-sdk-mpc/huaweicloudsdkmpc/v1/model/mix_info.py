@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MixInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class MixInfo:
     }
 
     def __init__(self, inputs=None, layout=None):
-        """MixInfo - a model defined in huaweicloud sdk"""
+        """MixInfo
+
+        The model defined in huaweicloud sdk
+
+        :param inputs: 合成任务原始视频配置
+        :type inputs: list[:class:`huaweicloudsdkmpc.v1.InputSetting`]
+        :param layout: 
+        :type layout: :class:`huaweicloudsdkmpc.v1.MixInfoLayout`
+        """
         
         
 
@@ -52,7 +59,7 @@ class MixInfo:
         合成任务原始视频配置
 
         :return: The inputs of this MixInfo.
-        :rtype: list[InputSetting]
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.InputSetting`]
         """
         return self._inputs
 
@@ -63,7 +70,7 @@ class MixInfo:
         合成任务原始视频配置
 
         :param inputs: The inputs of this MixInfo.
-        :type: list[InputSetting]
+        :type inputs: list[:class:`huaweicloudsdkmpc.v1.InputSetting`]
         """
         self._inputs = inputs
 
@@ -73,7 +80,7 @@ class MixInfo:
 
 
         :return: The layout of this MixInfo.
-        :rtype: MixInfoLayout
+        :rtype: :class:`huaweicloudsdkmpc.v1.MixInfoLayout`
         """
         return self._layout
 
@@ -83,7 +90,7 @@ class MixInfo:
 
 
         :param layout: The layout of this MixInfo.
-        :type: MixInfoLayout
+        :type layout: :class:`huaweicloudsdkmpc.v1.MixInfoLayout`
         """
         self._layout = layout
 

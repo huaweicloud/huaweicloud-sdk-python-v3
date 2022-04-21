@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateLoadIkThesaurusResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class CreateLoadIkThesaurusResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateLoadIkThesaurusResponse - a model defined in huaweicloud sdk"""
+        """CreateLoadIkThesaurusResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(CreateLoadIkThesaurusResponse, self).__init__()
         self.discriminator = None

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TokenAuth:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class TokenAuth:
     }
 
     def __init__(self, identity=None):
-        """TokenAuth - a model defined in huaweicloud sdk"""
+        """TokenAuth
+
+        The model defined in huaweicloud sdk
+
+        :param identity: 
+        :type identity: :class:`huaweicloudsdkiam.v3.TokenAuthIdentity`
+        """
         
         
 
@@ -45,7 +50,7 @@ class TokenAuth:
 
 
         :return: The identity of this TokenAuth.
-        :rtype: TokenAuthIdentity
+        :rtype: :class:`huaweicloudsdkiam.v3.TokenAuthIdentity`
         """
         return self._identity
 
@@ -55,7 +60,7 @@ class TokenAuth:
 
 
         :param identity: The identity of this TokenAuth.
-        :type: TokenAuthIdentity
+        :type identity: :class:`huaweicloudsdkiam.v3.TokenAuthIdentity`
         """
         self._identity = identity
 

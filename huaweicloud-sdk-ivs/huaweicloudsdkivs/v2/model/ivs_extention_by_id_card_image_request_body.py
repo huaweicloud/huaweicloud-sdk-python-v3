@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IvsExtentionByIdCardImageRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class IvsExtentionByIdCardImageRequestBody:
     }
 
     def __init__(self, meta=None, data=None):
-        """IvsExtentionByIdCardImageRequestBody - a model defined in huaweicloud sdk"""
+        """IvsExtentionByIdCardImageRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param meta: 
+        :type meta: :class:`huaweicloudsdkivs.v2.Meta`
+        :param data: 
+        :type data: :class:`huaweicloudsdkivs.v2.IvsExtentionByIdCardImageRequestBodyData`
+        """
         
         
 
@@ -49,7 +56,7 @@ class IvsExtentionByIdCardImageRequestBody:
 
 
         :return: The meta of this IvsExtentionByIdCardImageRequestBody.
-        :rtype: Meta
+        :rtype: :class:`huaweicloudsdkivs.v2.Meta`
         """
         return self._meta
 
@@ -59,7 +66,7 @@ class IvsExtentionByIdCardImageRequestBody:
 
 
         :param meta: The meta of this IvsExtentionByIdCardImageRequestBody.
-        :type: Meta
+        :type meta: :class:`huaweicloudsdkivs.v2.Meta`
         """
         self._meta = meta
 
@@ -69,7 +76,7 @@ class IvsExtentionByIdCardImageRequestBody:
 
 
         :return: The data of this IvsExtentionByIdCardImageRequestBody.
-        :rtype: IvsExtentionByIdCardImageRequestBodyData
+        :rtype: :class:`huaweicloudsdkivs.v2.IvsExtentionByIdCardImageRequestBodyData`
         """
         return self._data
 
@@ -79,7 +86,7 @@ class IvsExtentionByIdCardImageRequestBody:
 
 
         :param data: The data of this IvsExtentionByIdCardImageRequestBody.
-        :type: IvsExtentionByIdCardImageRequestBodyData
+        :type data: :class:`huaweicloudsdkivs.v2.IvsExtentionByIdCardImageRequestBodyData`
         """
         self._data = data
 

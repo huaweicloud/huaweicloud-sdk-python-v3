@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IefNodeinfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class IefNodeinfo:
     }
 
     def __init__(self, status=None, public_ip_address=None, id=None):
-        """IefNodeinfo - a model defined in huaweicloud sdk"""
+        """IefNodeinfo
+
+        The model defined in huaweicloud sdk
+
+        :param status: 节点状态，要使用此节点的话，该状态值必须为ACTIVE
+        :type status: str
+        :param public_ip_address: 节点IP，填写节点所在的EIP地址
+        :type public_ip_address: str
+        :param id: ief节点id值
+        :type id: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class IefNodeinfo:
         节点状态，要使用此节点的话，该状态值必须为ACTIVE
 
         :param status: The status of this IefNodeinfo.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -87,7 +96,7 @@ class IefNodeinfo:
         节点IP，填写节点所在的EIP地址
 
         :param public_ip_address: The public_ip_address of this IefNodeinfo.
-        :type: str
+        :type public_ip_address: str
         """
         self._public_ip_address = public_ip_address
 
@@ -109,7 +118,7 @@ class IefNodeinfo:
         ief节点id值
 
         :param id: The id of this IefNodeinfo.
-        :type: str
+        :type id: str
         """
         self._id = id
 

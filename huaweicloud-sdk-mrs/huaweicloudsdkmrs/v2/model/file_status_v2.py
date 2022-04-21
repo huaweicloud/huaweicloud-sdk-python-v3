@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FileStatusV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class FileStatusV2:
     }
 
     def __init__(self, path_suffix=None, owner=None, group=None, permission=None, replication=None, block_size=None, length=None, type=None, children_num=None, access_time=None, modification_time=None):
-        """FileStatusV2 - a model defined in huaweicloud sdk"""
+        """FileStatusV2
+
+        The model defined in huaweicloud sdk
+
+        :param path_suffix: 文件在当前目录下的后缀，如获取“/tmp”目录，下面的“/tmp/test”文件，此处path_suffix内容为“test”。
+        :type path_suffix: str
+        :param owner: 文件拥有者。
+        :type owner: str
+        :param group: 文件属组。
+        :type group: str
+        :param permission: 权限信息。
+        :type permission: str
+        :param replication: 副本数。
+        :type replication: int
+        :param block_size: 块大小。
+        :type block_size: int
+        :param length: 文件长度。
+        :type length: int
+        :param type: 文件类型：  - FILE：文件  - DIRECTORY：目录
+        :type type: str
+        :param children_num: 该目录下的文件条目数。
+        :type children_num: int
+        :param access_time: 文件访问时间。
+        :type access_time: int
+        :param modification_time: 文件修改时间。
+        :type modification_time: int
+        """
         
         
 
@@ -108,7 +133,7 @@ class FileStatusV2:
         文件在当前目录下的后缀，如获取“/tmp”目录，下面的“/tmp/test”文件，此处path_suffix内容为“test”。
 
         :param path_suffix: The path_suffix of this FileStatusV2.
-        :type: str
+        :type path_suffix: str
         """
         self._path_suffix = path_suffix
 
@@ -130,7 +155,7 @@ class FileStatusV2:
         文件拥有者。
 
         :param owner: The owner of this FileStatusV2.
-        :type: str
+        :type owner: str
         """
         self._owner = owner
 
@@ -152,7 +177,7 @@ class FileStatusV2:
         文件属组。
 
         :param group: The group of this FileStatusV2.
-        :type: str
+        :type group: str
         """
         self._group = group
 
@@ -174,7 +199,7 @@ class FileStatusV2:
         权限信息。
 
         :param permission: The permission of this FileStatusV2.
-        :type: str
+        :type permission: str
         """
         self._permission = permission
 
@@ -196,7 +221,7 @@ class FileStatusV2:
         副本数。
 
         :param replication: The replication of this FileStatusV2.
-        :type: int
+        :type replication: int
         """
         self._replication = replication
 
@@ -218,7 +243,7 @@ class FileStatusV2:
         块大小。
 
         :param block_size: The block_size of this FileStatusV2.
-        :type: int
+        :type block_size: int
         """
         self._block_size = block_size
 
@@ -240,7 +265,7 @@ class FileStatusV2:
         文件长度。
 
         :param length: The length of this FileStatusV2.
-        :type: int
+        :type length: int
         """
         self._length = length
 
@@ -262,7 +287,7 @@ class FileStatusV2:
         文件类型：  - FILE：文件  - DIRECTORY：目录
 
         :param type: The type of this FileStatusV2.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -284,7 +309,7 @@ class FileStatusV2:
         该目录下的文件条目数。
 
         :param children_num: The children_num of this FileStatusV2.
-        :type: int
+        :type children_num: int
         """
         self._children_num = children_num
 
@@ -306,7 +331,7 @@ class FileStatusV2:
         文件访问时间。
 
         :param access_time: The access_time of this FileStatusV2.
-        :type: int
+        :type access_time: int
         """
         self._access_time = access_time
 
@@ -328,7 +353,7 @@ class FileStatusV2:
         文件修改时间。
 
         :param modification_time: The modification_time of this FileStatusV2.
-        :type: int
+        :type modification_time: int
         """
         self._modification_time = modification_time
 

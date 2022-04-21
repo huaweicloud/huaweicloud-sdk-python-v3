@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CollectHotQuestionsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CollectHotQuestionsResponse(SdkResponse):
     }
 
     def __init__(self, questions=None):
-        """CollectHotQuestionsResponse - a model defined in huaweicloud sdk"""
+        """CollectHotQuestionsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param questions: 指定时间范围内，热点问题列表。
+        :type questions: list[:class:`huaweicloudsdkcbs.v1.HotQuestionCount`]
+        """
         
         super(CollectHotQuestionsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class CollectHotQuestionsResponse(SdkResponse):
         指定时间范围内，热点问题列表。
 
         :return: The questions of this CollectHotQuestionsResponse.
-        :rtype: list[HotQuestionCount]
+        :rtype: list[:class:`huaweicloudsdkcbs.v1.HotQuestionCount`]
         """
         return self._questions
 
@@ -58,7 +63,7 @@ class CollectHotQuestionsResponse(SdkResponse):
         指定时间范围内，热点问题列表。
 
         :param questions: The questions of this CollectHotQuestionsResponse.
-        :type: list[HotQuestionCount]
+        :type questions: list[:class:`huaweicloudsdkcbs.v1.HotQuestionCount`]
         """
         self._questions = questions
 

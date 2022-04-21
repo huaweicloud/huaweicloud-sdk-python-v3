@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListEdgeCloudRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListEdgeCloudRequest:
     }
 
     def __init__(self, offset=None, limit=None, name=None, id=None):
-        """ListEdgeCloudRequest - a model defined in huaweicloud sdk"""
+        """ListEdgeCloudRequest
+
+        The model defined in huaweicloud sdk
+
+        :param offset: 偏移量。 当前偏移量，默认为0。
+        :type offset: int
+        :param limit: 查询返回边缘业务列表当前页面的数量。 取值范围：0~1000。
+        :type limit: int
+        :param name: 边缘业务名称。
+        :type name: str
+        :param id: 边缘业务ID。
+        :type id: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class ListEdgeCloudRequest:
         偏移量。 当前偏移量，默认为0。
 
         :param offset: The offset of this ListEdgeCloudRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -95,7 +106,7 @@ class ListEdgeCloudRequest:
         查询返回边缘业务列表当前页面的数量。 取值范围：0~1000。
 
         :param limit: The limit of this ListEdgeCloudRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -117,7 +128,7 @@ class ListEdgeCloudRequest:
         边缘业务名称。
 
         :param name: The name of this ListEdgeCloudRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -139,7 +150,7 @@ class ListEdgeCloudRequest:
         边缘业务ID。
 
         :param id: The id of this ListEdgeCloudRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 

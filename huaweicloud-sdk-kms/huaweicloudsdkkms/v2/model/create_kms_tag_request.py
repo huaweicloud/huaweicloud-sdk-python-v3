@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateKmsTagRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateKmsTagRequest:
     }
 
     def __init__(self, key_id=None, body=None):
-        """CreateKmsTagRequest - a model defined in huaweicloud sdk"""
+        """CreateKmsTagRequest
+
+        The model defined in huaweicloud sdk
+
+        :param key_id: 密钥ID
+        :type key_id: str
+        :param body: Body of the CreateKmsTagRequest
+        :type body: :class:`huaweicloudsdkkms.v2.CreateKmsTagRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateKmsTagRequest:
         密钥ID
 
         :param key_id: The key_id of this CreateKmsTagRequest.
-        :type: str
+        :type key_id: str
         """
         self._key_id = key_id
 
@@ -72,7 +79,7 @@ class CreateKmsTagRequest:
 
 
         :return: The body of this CreateKmsTagRequest.
-        :rtype: CreateKmsTagRequestBody
+        :rtype: :class:`huaweicloudsdkkms.v2.CreateKmsTagRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CreateKmsTagRequest:
 
 
         :param body: The body of this CreateKmsTagRequest.
-        :type: CreateKmsTagRequestBody
+        :type body: :class:`huaweicloudsdkkms.v2.CreateKmsTagRequestBody`
         """
         self._body = body
 

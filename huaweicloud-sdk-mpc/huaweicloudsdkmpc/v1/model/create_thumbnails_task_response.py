@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateThumbnailsTaskResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class CreateThumbnailsTaskResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None, status=None, create_time=None, output=None, output_file_name=None, thumbnail_time=None, description=None):
-        """CreateThumbnailsTaskResponse - a model defined in huaweicloud sdk"""
+        """CreateThumbnailsTaskResponse
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 任务ID。
+        :type task_id: str
+        :param status: 任务状态
+        :type status: str
+        :param create_time: 任务创建时间
+        :type create_time: str
+        :param output: 
+        :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        :param output_file_name: 截图文件名称
+        :type output_file_name: str
+        :param thumbnail_time: 指定的截图时间点
+        :type thumbnail_time: str
+        :param description: 截图任务描述，当截图出现异常时，此字段为异常的原因
+        :type description: str
+        """
         
         super(CreateThumbnailsTaskResponse, self).__init__()
 
@@ -88,7 +105,7 @@ class CreateThumbnailsTaskResponse(SdkResponse):
         任务ID。
 
         :param task_id: The task_id of this CreateThumbnailsTaskResponse.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -110,7 +127,7 @@ class CreateThumbnailsTaskResponse(SdkResponse):
         任务状态
 
         :param status: The status of this CreateThumbnailsTaskResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -132,7 +149,7 @@ class CreateThumbnailsTaskResponse(SdkResponse):
         任务创建时间
 
         :param create_time: The create_time of this CreateThumbnailsTaskResponse.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -142,7 +159,7 @@ class CreateThumbnailsTaskResponse(SdkResponse):
 
 
         :return: The output of this CreateThumbnailsTaskResponse.
-        :rtype: ObsObjInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         return self._output
 
@@ -152,7 +169,7 @@ class CreateThumbnailsTaskResponse(SdkResponse):
 
 
         :param output: The output of this CreateThumbnailsTaskResponse.
-        :type: ObsObjInfo
+        :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         self._output = output
 
@@ -174,7 +191,7 @@ class CreateThumbnailsTaskResponse(SdkResponse):
         截图文件名称
 
         :param output_file_name: The output_file_name of this CreateThumbnailsTaskResponse.
-        :type: str
+        :type output_file_name: str
         """
         self._output_file_name = output_file_name
 
@@ -196,7 +213,7 @@ class CreateThumbnailsTaskResponse(SdkResponse):
         指定的截图时间点
 
         :param thumbnail_time: The thumbnail_time of this CreateThumbnailsTaskResponse.
-        :type: str
+        :type thumbnail_time: str
         """
         self._thumbnail_time = thumbnail_time
 
@@ -218,7 +235,7 @@ class CreateThumbnailsTaskResponse(SdkResponse):
         截图任务描述，当截图出现异常时，此字段为异常的原因
 
         :param description: The description of this CreateThumbnailsTaskResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 

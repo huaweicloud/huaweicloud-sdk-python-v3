@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPolicyAssignmentsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListPolicyAssignmentsResponse(SdkResponse):
     }
 
     def __init__(self, value=None, page_info=None):
-        """ListPolicyAssignmentsResponse - a model defined in huaweicloud sdk"""
+        """ListPolicyAssignmentsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param value: 规则列表
+        :type value: list[:class:`huaweicloudsdkrms.v1.PolicyAssignment`]
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkrms.v1.PageInfo`
+        """
         
         super(ListPolicyAssignmentsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListPolicyAssignmentsResponse(SdkResponse):
         规则列表
 
         :return: The value of this ListPolicyAssignmentsResponse.
-        :rtype: list[PolicyAssignment]
+        :rtype: list[:class:`huaweicloudsdkrms.v1.PolicyAssignment`]
         """
         return self._value
 
@@ -63,7 +70,7 @@ class ListPolicyAssignmentsResponse(SdkResponse):
         规则列表
 
         :param value: The value of this ListPolicyAssignmentsResponse.
-        :type: list[PolicyAssignment]
+        :type value: list[:class:`huaweicloudsdkrms.v1.PolicyAssignment`]
         """
         self._value = value
 
@@ -73,7 +80,7 @@ class ListPolicyAssignmentsResponse(SdkResponse):
 
 
         :return: The page_info of this ListPolicyAssignmentsResponse.
-        :rtype: PageInfo
+        :rtype: :class:`huaweicloudsdkrms.v1.PageInfo`
         """
         return self._page_info
 
@@ -83,7 +90,7 @@ class ListPolicyAssignmentsResponse(SdkResponse):
 
 
         :param page_info: The page_info of this ListPolicyAssignmentsResponse.
-        :type: PageInfo
+        :type page_info: :class:`huaweicloudsdkrms.v1.PageInfo`
         """
         self._page_info = page_info
 

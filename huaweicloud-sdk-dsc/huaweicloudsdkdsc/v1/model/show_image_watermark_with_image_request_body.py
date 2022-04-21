@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowImageWatermarkWithImageRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowImageWatermarkWithImageRequestBody:
     }
 
     def __init__(self, file=None):
-        """ShowImageWatermarkWithImageRequestBody - a model defined in huaweicloud sdk"""
+        """ShowImageWatermarkWithImageRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param file: 待提取暗水印的图片文件。
+        :type file: :class:`huaweicloudsdkcore.http.formdata.FormFile`
+        """
         
         
 
@@ -46,7 +51,7 @@ class ShowImageWatermarkWithImageRequestBody:
         待提取暗水印的图片文件。
 
         :return: The file of this ShowImageWatermarkWithImageRequestBody.
-        :rtype: file
+        :rtype: :class:`huaweicloudsdkcore.http.formdata.FormFile`
         """
         return self._file
 
@@ -57,7 +62,7 @@ class ShowImageWatermarkWithImageRequestBody:
         待提取暗水印的图片文件。
 
         :param file: The file of this ShowImageWatermarkWithImageRequestBody.
-        :type: file
+        :type file: :class:`huaweicloudsdkcore.http.formdata.FormFile`
         """
         self._file = file
 

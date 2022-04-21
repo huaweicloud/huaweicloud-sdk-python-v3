@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TrafficMark:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class TrafficMark:
     }
 
     def __init__(self, sip=None, cookie=None, params=None):
-        """TrafficMark - a model defined in huaweicloud sdk"""
+        """TrafficMark
+
+        The model defined in huaweicloud sdk
+
+        :param sip: 惩罚ip
+        :type sip: list[str]
+        :param cookie: cookie
+        :type cookie: str
+        :param params: 参数
+        :type params: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class TrafficMark:
         惩罚ip
 
         :param sip: The sip of this TrafficMark.
-        :type: list[str]
+        :type sip: list[str]
         """
         self._sip = sip
 
@@ -90,7 +99,7 @@ class TrafficMark:
         cookie
 
         :param cookie: The cookie of this TrafficMark.
-        :type: str
+        :type cookie: str
         """
         self._cookie = cookie
 
@@ -112,7 +121,7 @@ class TrafficMark:
         参数
 
         :param params: The params of this TrafficMark.
-        :type: str
+        :type params: str
         """
         self._params = params
 

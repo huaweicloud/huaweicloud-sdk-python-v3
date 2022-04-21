@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowResourcesListResponseBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowResourcesListResponseBody:
     }
 
     def __init__(self, resources=None):
-        """ShowResourcesListResponseBody - a model defined in huaweicloud sdk"""
+        """ShowResourcesListResponseBody
+
+        The model defined in huaweicloud sdk
+
+        :param resources: 资源列表对象。
+        :type resources: list[:class:`huaweicloudsdkgaussdbfornosql.v3.ShowResourcesDetailResponseBody`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class ShowResourcesListResponseBody:
         资源列表对象。
 
         :return: The resources of this ShowResourcesListResponseBody.
-        :rtype: list[ShowResourcesDetailResponseBody]
+        :rtype: list[:class:`huaweicloudsdkgaussdbfornosql.v3.ShowResourcesDetailResponseBody`]
         """
         return self._resources
 
@@ -57,7 +62,7 @@ class ShowResourcesListResponseBody:
         资源列表对象。
 
         :param resources: The resources of this ShowResourcesListResponseBody.
-        :type: list[ShowResourcesDetailResponseBody]
+        :type resources: list[:class:`huaweicloudsdkgaussdbfornosql.v3.ShowResourcesDetailResponseBody`]
         """
         self._resources = resources
 

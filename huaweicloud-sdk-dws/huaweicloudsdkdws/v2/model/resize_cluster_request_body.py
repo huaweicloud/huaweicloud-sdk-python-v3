@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResizeClusterRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ResizeClusterRequestBody:
     }
 
     def __init__(self, scale_out=None):
-        """ResizeClusterRequestBody - a model defined in huaweicloud sdk"""
+        """ResizeClusterRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param scale_out: 
+        :type scale_out: :class:`huaweicloudsdkdws.v2.ScaleOut`
+        """
         
         
 
@@ -46,7 +51,7 @@ class ResizeClusterRequestBody:
 
 
         :return: The scale_out of this ResizeClusterRequestBody.
-        :rtype: ScaleOut
+        :rtype: :class:`huaweicloudsdkdws.v2.ScaleOut`
         """
         return self._scale_out
 
@@ -56,7 +61,7 @@ class ResizeClusterRequestBody:
 
 
         :param scale_out: The scale_out of this ResizeClusterRequestBody.
-        :type: ScaleOut
+        :type scale_out: :class:`huaweicloudsdkdws.v2.ScaleOut`
         """
         self._scale_out = scale_out
 

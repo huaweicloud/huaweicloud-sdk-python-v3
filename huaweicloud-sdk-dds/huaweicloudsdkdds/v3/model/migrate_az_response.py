@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MigrateAzResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class MigrateAzResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """MigrateAzResponse - a model defined in huaweicloud sdk"""
+        """MigrateAzResponse
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 任务ID。
+        :type job_id: str
+        """
         
         super(MigrateAzResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class MigrateAzResponse(SdkResponse):
         任务ID。
 
         :param job_id: The job_id of this MigrateAzResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 

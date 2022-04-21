@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Addresses:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class Addresses:
     }
 
     def __init__(self, vpc_id=None):
-        """Addresses - a model defined in huaweicloud sdk"""
+        """Addresses
+
+        The model defined in huaweicloud sdk
+
+        :param vpc_id: 裸金属服务器所属网络信息。key表示裸金属服务器使用的虚拟私有云的ID。value为网络详细信息
+        :type vpc_id: list[:class:`huaweicloudsdkbms.v1.Address`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class Addresses:
         裸金属服务器所属网络信息。key表示裸金属服务器使用的虚拟私有云的ID。value为网络详细信息
 
         :return: The vpc_id of this Addresses.
-        :rtype: list[Address]
+        :rtype: list[:class:`huaweicloudsdkbms.v1.Address`]
         """
         return self._vpc_id
 
@@ -57,7 +62,7 @@ class Addresses:
         裸金属服务器所属网络信息。key表示裸金属服务器使用的虚拟私有云的ID。value为网络详细信息
 
         :param vpc_id: The vpc_id of this Addresses.
-        :type: list[Address]
+        :type vpc_id: list[:class:`huaweicloudsdkbms.v1.Address`]
         """
         self._vpc_id = vpc_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTrackersRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListTrackersRequest:
     }
 
     def __init__(self, tracker_name=None, tracker_type=None):
-        """ListTrackersRequest - a model defined in huaweicloud sdk"""
+        """ListTrackersRequest
+
+        The model defined in huaweicloud sdk
+
+        :param tracker_name: 标示追踪器名称。 在不传入该字段的情况下，将查询租户所有的追踪器。
+        :type tracker_name: str
+        :param tracker_type: 标识追踪器类型。 目前支持系统追踪器有管理类追踪器（system）和数据类追踪器（data）。
+        :type tracker_type: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class ListTrackersRequest:
         标示追踪器名称。 在不传入该字段的情况下，将查询租户所有的追踪器。
 
         :param tracker_name: The tracker_name of this ListTrackersRequest.
-        :type: str
+        :type tracker_name: str
         """
         self._tracker_name = tracker_name
 
@@ -85,7 +92,7 @@ class ListTrackersRequest:
         标识追踪器类型。 目前支持系统追踪器有管理类追踪器（system）和数据类追踪器（data）。
 
         :param tracker_type: The tracker_type of this ListTrackersRequest.
-        :type: str
+        :type tracker_type: str
         """
         self._tracker_type = tracker_type
 

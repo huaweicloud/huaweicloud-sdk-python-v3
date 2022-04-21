@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SetAuditlogPolicyRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class SetAuditlogPolicyRequestBody:
     }
 
     def __init__(self, keep_days=None, reserve_auditlogs=None, audit_scope=None, audit_types=None):
-        """SetAuditlogPolicyRequestBody - a model defined in huaweicloud sdk"""
+        """SetAuditlogPolicyRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param keep_days: 审计日志保存天数，取值范围0，7~732。 - 取值0，表示关闭审计日志策略。 - 取值7~732，表示开启审计日志策略，并设置审计日志保存天数为该值。
+        :type keep_days: int
+        :param reserve_auditlogs: 仅关闭审计日志策略时有效。 - true（默认），表示关闭审计日志策略的同时，保留历史审计日志。 - false，表示关闭审计日志策略的同时，删除已有的历史审计日志。
+        :type reserve_auditlogs: str
+        :param audit_scope: 仅打开审计日志策略时有效，并且为空时，默认全部。审计范围。请输入数据库或集合名称，多个库或集合请用英文逗号分隔。若名称中有英文逗号，请在逗号前添加“$”符号，用以区分分隔符。
+        :type audit_scope: str
+        :param audit_types: 仅打开审计日志策略时有效，并且为空时，默认全部。审计类型。支持insert，delete，update，query等。
+        :type audit_types: list[str]
+        """
         
         
 
@@ -72,7 +83,7 @@ class SetAuditlogPolicyRequestBody:
         审计日志保存天数，取值范围0，7~732。 - 取值0，表示关闭审计日志策略。 - 取值7~732，表示开启审计日志策略，并设置审计日志保存天数为该值。
 
         :param keep_days: The keep_days of this SetAuditlogPolicyRequestBody.
-        :type: int
+        :type keep_days: int
         """
         self._keep_days = keep_days
 
@@ -94,7 +105,7 @@ class SetAuditlogPolicyRequestBody:
         仅关闭审计日志策略时有效。 - true（默认），表示关闭审计日志策略的同时，保留历史审计日志。 - false，表示关闭审计日志策略的同时，删除已有的历史审计日志。
 
         :param reserve_auditlogs: The reserve_auditlogs of this SetAuditlogPolicyRequestBody.
-        :type: str
+        :type reserve_auditlogs: str
         """
         self._reserve_auditlogs = reserve_auditlogs
 
@@ -116,7 +127,7 @@ class SetAuditlogPolicyRequestBody:
         仅打开审计日志策略时有效，并且为空时，默认全部。审计范围。请输入数据库或集合名称，多个库或集合请用英文逗号分隔。若名称中有英文逗号，请在逗号前添加“$”符号，用以区分分隔符。
 
         :param audit_scope: The audit_scope of this SetAuditlogPolicyRequestBody.
-        :type: str
+        :type audit_scope: str
         """
         self._audit_scope = audit_scope
 
@@ -138,7 +149,7 @@ class SetAuditlogPolicyRequestBody:
         仅打开审计日志策略时有效，并且为空时，默认全部。审计类型。支持insert，delete，update，query等。
 
         :param audit_types: The audit_types of this SetAuditlogPolicyRequestBody.
-        :type: list[str]
+        :type audit_types: list[str]
         """
         self._audit_types = audit_types
 

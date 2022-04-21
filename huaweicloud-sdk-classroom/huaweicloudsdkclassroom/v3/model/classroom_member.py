@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ClassroomMember:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class ClassroomMember:
     }
 
     def __init__(self, member_id=None, name=None, number=None, class_name=None, user_name=None, join_time=None, job_received_count=None, job_finished_count=None, job_finished_rate=None):
-        """ClassroomMember - a model defined in huaweicloud sdk"""
+        """ClassroomMember
+
+        The model defined in huaweicloud sdk
+
+        :param member_id: 成员ID
+        :type member_id: str
+        :param name: 成员名称
+        :type name: str
+        :param number: 成员学号/工号
+        :type number: str
+        :param class_name: 成员所在班级的名字
+        :type class_name: str
+        :param user_name: 成员用户名
+        :type user_name: str
+        :param join_time: 成员加入课堂时间，日期格式：yyyy-MM-dd HH:mm:ss
+        :type join_time: str
+        :param job_received_count: 该成员已接收到的作业数量
+        :type job_received_count: int
+        :param job_finished_count: 该成员已完成的作业数量
+        :type job_finished_count: int
+        :param job_finished_rate: 该成员作业完成率
+        :type job_finished_rate: float
+        """
         
         
 
@@ -89,7 +110,7 @@ class ClassroomMember:
         成员ID
 
         :param member_id: The member_id of this ClassroomMember.
-        :type: str
+        :type member_id: str
         """
         self._member_id = member_id
 
@@ -111,7 +132,7 @@ class ClassroomMember:
         成员名称
 
         :param name: The name of this ClassroomMember.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -133,7 +154,7 @@ class ClassroomMember:
         成员学号/工号
 
         :param number: The number of this ClassroomMember.
-        :type: str
+        :type number: str
         """
         self._number = number
 
@@ -155,7 +176,7 @@ class ClassroomMember:
         成员所在班级的名字
 
         :param class_name: The class_name of this ClassroomMember.
-        :type: str
+        :type class_name: str
         """
         self._class_name = class_name
 
@@ -177,7 +198,7 @@ class ClassroomMember:
         成员用户名
 
         :param user_name: The user_name of this ClassroomMember.
-        :type: str
+        :type user_name: str
         """
         self._user_name = user_name
 
@@ -199,7 +220,7 @@ class ClassroomMember:
         成员加入课堂时间，日期格式：yyyy-MM-dd HH:mm:ss
 
         :param join_time: The join_time of this ClassroomMember.
-        :type: str
+        :type join_time: str
         """
         self._join_time = join_time
 
@@ -221,7 +242,7 @@ class ClassroomMember:
         该成员已接收到的作业数量
 
         :param job_received_count: The job_received_count of this ClassroomMember.
-        :type: int
+        :type job_received_count: int
         """
         self._job_received_count = job_received_count
 
@@ -243,7 +264,7 @@ class ClassroomMember:
         该成员已完成的作业数量
 
         :param job_finished_count: The job_finished_count of this ClassroomMember.
-        :type: int
+        :type job_finished_count: int
         """
         self._job_finished_count = job_finished_count
 
@@ -265,7 +286,7 @@ class ClassroomMember:
         该成员作业完成率
 
         :param job_finished_rate: The job_finished_rate of this ClassroomMember.
-        :type: float
+        :type job_finished_rate: float
         """
         self._job_finished_rate = job_finished_rate
 

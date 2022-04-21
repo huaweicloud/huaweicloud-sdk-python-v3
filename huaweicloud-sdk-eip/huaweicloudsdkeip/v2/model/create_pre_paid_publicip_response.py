@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreatePrePaidPublicipResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreatePrePaidPublicipResponse(SdkResponse):
     }
 
     def __init__(self, publicip=None, order_id=None, publicip_id=None):
-        """CreatePrePaidPublicipResponse - a model defined in huaweicloud sdk"""
+        """CreatePrePaidPublicipResponse
+
+        The model defined in huaweicloud sdk
+
+        :param publicip: 
+        :type publicip: :class:`huaweicloudsdkeip.v2.PublicipCreateResp`
+        :param order_id: 订单号（预付费场景返回该字段）
+        :type order_id: str
+        :param publicip_id: 弹性公网IP的ID（预付费场景返回该字段）
+        :type publicip_id: str
+        """
         
         super(CreatePrePaidPublicipResponse, self).__init__()
 
@@ -56,7 +65,7 @@ class CreatePrePaidPublicipResponse(SdkResponse):
 
 
         :return: The publicip of this CreatePrePaidPublicipResponse.
-        :rtype: PublicipCreateResp
+        :rtype: :class:`huaweicloudsdkeip.v2.PublicipCreateResp`
         """
         return self._publicip
 
@@ -66,7 +75,7 @@ class CreatePrePaidPublicipResponse(SdkResponse):
 
 
         :param publicip: The publicip of this CreatePrePaidPublicipResponse.
-        :type: PublicipCreateResp
+        :type publicip: :class:`huaweicloudsdkeip.v2.PublicipCreateResp`
         """
         self._publicip = publicip
 
@@ -88,7 +97,7 @@ class CreatePrePaidPublicipResponse(SdkResponse):
         订单号（预付费场景返回该字段）
 
         :param order_id: The order_id of this CreatePrePaidPublicipResponse.
-        :type: str
+        :type order_id: str
         """
         self._order_id = order_id
 
@@ -110,7 +119,7 @@ class CreatePrePaidPublicipResponse(SdkResponse):
         弹性公网IP的ID（预付费场景返回该字段）
 
         :param publicip_id: The publicip_id of this CreatePrePaidPublicipResponse.
-        :type: str
+        :type publicip_id: str
         """
         self._publicip_id = publicip_id
 

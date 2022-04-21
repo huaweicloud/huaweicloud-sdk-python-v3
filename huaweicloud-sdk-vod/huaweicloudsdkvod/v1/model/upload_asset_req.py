@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UploadAssetReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class UploadAssetReq:
     }
 
     def __init__(self, asset_id=None, video_md5=None, video_name=None, video_type=None, cover_id=None, cover_type=None, cover_md5=None, subtitles=None):
-        """UploadAssetReq - a model defined in huaweicloud sdk"""
+        """UploadAssetReq
+
+        The model defined in huaweicloud sdk
+
+        :param asset_id: 媒资ID。
+        :type asset_id: str
+        :param video_md5: 视频文件MD5值。  建议参考[媒资上传和更新](https://support.huaweicloud.com/api-vod/vod_04_0212.html)生成对应的MD5值。
+        :type video_md5: str
+        :param video_name: 视频文件名。  文件名后缀为可选。
+        :type video_name: str
+        :param video_type: 视频文件类型。 取值为MP4、TS、MOV、MXF、MPG、FLV、WMV、AVI、M4V、F4V、MPEG、3GP、ASF、MKV
+        :type video_type: str
+        :param cover_id: 封面ID。  取值范围：[0,7]。  当前只支持一张封面，只能设置为0。
+        :type cover_id: int
+        :param cover_type: 封面图片格式类型。  取值如下： - JPG - PNG
+        :type cover_type: str
+        :param cover_md5: 封面文件的MD5值。
+        :type cover_md5: str
+        :param subtitles: 字幕文件信息
+        :type subtitles: list[:class:`huaweicloudsdkvod.v1.Subtitle`]
+        """
         
         
 
@@ -92,7 +111,7 @@ class UploadAssetReq:
         媒资ID。
 
         :param asset_id: The asset_id of this UploadAssetReq.
-        :type: str
+        :type asset_id: str
         """
         self._asset_id = asset_id
 
@@ -114,7 +133,7 @@ class UploadAssetReq:
         视频文件MD5值。  建议参考[媒资上传和更新](https://support.huaweicloud.com/api-vod/vod_04_0212.html)生成对应的MD5值。
 
         :param video_md5: The video_md5 of this UploadAssetReq.
-        :type: str
+        :type video_md5: str
         """
         self._video_md5 = video_md5
 
@@ -136,7 +155,7 @@ class UploadAssetReq:
         视频文件名。  文件名后缀为可选。
 
         :param video_name: The video_name of this UploadAssetReq.
-        :type: str
+        :type video_name: str
         """
         self._video_name = video_name
 
@@ -158,7 +177,7 @@ class UploadAssetReq:
         视频文件类型。 取值为MP4、TS、MOV、MXF、MPG、FLV、WMV、AVI、M4V、F4V、MPEG、3GP、ASF、MKV
 
         :param video_type: The video_type of this UploadAssetReq.
-        :type: str
+        :type video_type: str
         """
         self._video_type = video_type
 
@@ -180,7 +199,7 @@ class UploadAssetReq:
         封面ID。  取值范围：[0,7]。  当前只支持一张封面，只能设置为0。
 
         :param cover_id: The cover_id of this UploadAssetReq.
-        :type: int
+        :type cover_id: int
         """
         self._cover_id = cover_id
 
@@ -202,7 +221,7 @@ class UploadAssetReq:
         封面图片格式类型。  取值如下： - JPG - PNG
 
         :param cover_type: The cover_type of this UploadAssetReq.
-        :type: str
+        :type cover_type: str
         """
         self._cover_type = cover_type
 
@@ -224,7 +243,7 @@ class UploadAssetReq:
         封面文件的MD5值。
 
         :param cover_md5: The cover_md5 of this UploadAssetReq.
-        :type: str
+        :type cover_md5: str
         """
         self._cover_md5 = cover_md5
 
@@ -235,7 +254,7 @@ class UploadAssetReq:
         字幕文件信息
 
         :return: The subtitles of this UploadAssetReq.
-        :rtype: list[Subtitle]
+        :rtype: list[:class:`huaweicloudsdkvod.v1.Subtitle`]
         """
         return self._subtitles
 
@@ -246,7 +265,7 @@ class UploadAssetReq:
         字幕文件信息
 
         :param subtitles: The subtitles of this UploadAssetReq.
-        :type: list[Subtitle]
+        :type subtitles: list[:class:`huaweicloudsdkvod.v1.Subtitle`]
         """
         self._subtitles = subtitles
 

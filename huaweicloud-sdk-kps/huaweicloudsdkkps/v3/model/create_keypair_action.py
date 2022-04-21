@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateKeypairAction:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class CreateKeypairAction:
     }
 
     def __init__(self, name=None, type=None, public_key=None, scope=None, user_id=None, key_protection=None):
-        """CreateKeypairAction - a model defined in huaweicloud sdk"""
+        """CreateKeypairAction
+
+        The model defined in huaweicloud sdk
+
+        :param name: SSH密钥对的名称。 - 新创建的密钥对名称不能和已有密钥对的名称相同。 - SSH密钥对名称由英文字母、数字、下划线、中划线组成，长度不能超过64个字节
+        :type name: str
+        :param type: SSH密钥对的类型
+        :type type: str
+        :param public_key: 导入公钥的字符串信息。
+        :type public_key: str
+        :param scope: 租户级或者用户级
+        :type scope: str
+        :param user_id: SSH密钥对所属的用户信息
+        :type user_id: str
+        :param key_protection: 
+        :type key_protection: :class:`huaweicloudsdkkps.v3.KeyProtection`
+        """
         
         
 
@@ -82,7 +97,7 @@ class CreateKeypairAction:
         SSH密钥对的名称。 - 新创建的密钥对名称不能和已有密钥对的名称相同。 - SSH密钥对名称由英文字母、数字、下划线、中划线组成，长度不能超过64个字节
 
         :param name: The name of this CreateKeypairAction.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -104,7 +119,7 @@ class CreateKeypairAction:
         SSH密钥对的类型
 
         :param type: The type of this CreateKeypairAction.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -126,7 +141,7 @@ class CreateKeypairAction:
         导入公钥的字符串信息。
 
         :param public_key: The public_key of this CreateKeypairAction.
-        :type: str
+        :type public_key: str
         """
         self._public_key = public_key
 
@@ -148,7 +163,7 @@ class CreateKeypairAction:
         租户级或者用户级
 
         :param scope: The scope of this CreateKeypairAction.
-        :type: str
+        :type scope: str
         """
         self._scope = scope
 
@@ -170,7 +185,7 @@ class CreateKeypairAction:
         SSH密钥对所属的用户信息
 
         :param user_id: The user_id of this CreateKeypairAction.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -180,7 +195,7 @@ class CreateKeypairAction:
 
 
         :return: The key_protection of this CreateKeypairAction.
-        :rtype: KeyProtection
+        :rtype: :class:`huaweicloudsdkkps.v3.KeyProtection`
         """
         return self._key_protection
 
@@ -190,7 +205,7 @@ class CreateKeypairAction:
 
 
         :param key_protection: The key_protection of this CreateKeypairAction.
-        :type: KeyProtection
+        :type key_protection: :class:`huaweicloudsdkkps.v3.KeyProtection`
         """
         self._key_protection = key_protection
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateEndpointRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateEndpointRequest:
     }
 
     def __init__(self, body=None):
-        """CreateEndpointRequest - a model defined in huaweicloud sdk"""
+        """CreateEndpointRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateEndpointRequest
+        :type body: :class:`huaweicloudsdkvpcep.v1.CreateEndpointRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateEndpointRequest:
 
 
         :return: The body of this CreateEndpointRequest.
-        :rtype: CreateEndpointRequestBody
+        :rtype: :class:`huaweicloudsdkvpcep.v1.CreateEndpointRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateEndpointRequest:
 
 
         :param body: The body of this CreateEndpointRequest.
-        :type: CreateEndpointRequestBody
+        :type body: :class:`huaweicloudsdkvpcep.v1.CreateEndpointRequestBody`
         """
         self._body = body
 

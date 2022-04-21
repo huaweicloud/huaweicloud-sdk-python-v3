@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunQueryInstanceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RunQueryInstanceRequest:
     }
 
     def __init__(self, instance_name=None):
-        """RunQueryInstanceRequest - a model defined in huaweicloud sdk"""
+        """RunQueryInstanceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_name: 实例名称。
+        :type instance_name: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class RunQueryInstanceRequest:
         实例名称。
 
         :param instance_name: The instance_name of this RunQueryInstanceRequest.
-        :type: str
+        :type instance_name: str
         """
         self._instance_name = instance_name
 

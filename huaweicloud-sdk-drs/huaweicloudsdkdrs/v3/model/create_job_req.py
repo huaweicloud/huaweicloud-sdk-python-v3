@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateJobReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -66,7 +65,49 @@ class CreateJobReq:
     }
 
     def __init__(self, bind_eip=None, db_use_type=None, name=None, description=None, engine_type=None, is_target_readonly=None, job_direction=None, multi_write=None, net_type=None, node_num=None, node_type=None, source_endpoint=None, target_endpoint=None, tags=None, task_type=None, customize_sutnet_id=None, product_id=None, sys_tags=None, expired_days=None):
-        """CreateJobReq - a model defined in huaweicloud sdk"""
+        """CreateJobReq
+
+        The model defined in huaweicloud sdk
+
+        :param bind_eip: 是否绑定eip，网络类型为eip时必填且为true
+        :type bind_eip: bool
+        :param db_use_type: 迁移场景，migration-实时迁移,sync-实时同步,cloudDataGuard-实时灾备
+        :type db_use_type: str
+        :param name: 任务名称，约束：任务名称在4位到50位之间，不区分大小写，可以包含字母、数字、中划线或下划线，不能包括其他特殊字符。
+        :type name: str
+        :param description: 任务描述。  **约束**：任务描述不能超过256位，且不能包含!&lt;&gt;&amp;&#39;\&quot;\\特殊字符。
+        :type description: str
+        :param engine_type: 引擎类型 - mysql：迁移，同步使用 - mongodb：迁移使用 - cloudDataGuard-mysql：灾备使用 - gaussdbv5，postgresql：同步使用
+        :type engine_type: str
+        :param is_target_readonly: 指定目标实例是否限制为只读，MySQL迁移和灾备，且job_direction为up时设置有效。（灾备场景下，单主灾备且本云为备为必填且为true，不填默认设置为true）。
+        :type is_target_readonly: bool
+        :param job_direction: 迁移方向，up ：入云 ，灾备场景时对应本云为备，down：出云，灾备场景时对应本云为主，non-dbs：自建
+        :type job_direction: str
+        :param multi_write: - db_use_type 是cloudDataGuard时，必填，灾备类型是双主灾备时 muti_write取值true, 否则为false。 - db_use_type 是其他类型时，muti_write是非必选参数
+        :type multi_write: bool
+        :param net_type: 网络类型
+        :type net_type: str
+        :param node_num: 节点个数。MongoDB数据库时对应源端分片个数，源库为集群时必填，[1-32]，MySQL双主灾备时会默认设置为2。
+        :type node_num: int
+        :param node_type: 规格类型。
+        :type node_type: str
+        :param source_endpoint: 
+        :type source_endpoint: :class:`huaweicloudsdkdrs.v3.Endpoint`
+        :param target_endpoint: 
+        :type target_endpoint: :class:`huaweicloudsdkdrs.v3.Endpoint`
+        :param tags: 标签信息。
+        :type tags: list[:class:`huaweicloudsdkdrs.v3.ResourceTag`]
+        :param task_type: 迁移模式，FULL_TRANS 全量,FULL_INCR_TRANS 全量+增量,INCR_TRANS 增量，灾备场景单主灾备仅支持全量加增量（FULL_INCR_TRANS）
+        :type task_type: str
+        :param customize_sutnet_id: DRS实例所在子网ID，对应目标库相同VPC下已创建的子网（subnet）的网络ID，UUID格式。
+        :type customize_sutnet_id: str
+        :param product_id: 产品id。
+        :type product_id: str
+        :param sys_tags: 企业项目，不填默认为default，key值必须为_sys_enterprise_project_id，value为企业项目ID，只能有一个企业项目。
+        :type sys_tags: list[:class:`huaweicloudsdkdrs.v3.ResourceTag`]
+        :param expired_days: 任务处于异常状态一段时间后，将会自动结束，单位为天。(范围14-100)，不传默认为14天。
+        :type expired_days: str
+        """
         
         
 
@@ -138,7 +179,7 @@ class CreateJobReq:
         是否绑定eip，网络类型为eip时必填且为true
 
         :param bind_eip: The bind_eip of this CreateJobReq.
-        :type: bool
+        :type bind_eip: bool
         """
         self._bind_eip = bind_eip
 
@@ -160,7 +201,7 @@ class CreateJobReq:
         迁移场景，migration-实时迁移,sync-实时同步,cloudDataGuard-实时灾备
 
         :param db_use_type: The db_use_type of this CreateJobReq.
-        :type: str
+        :type db_use_type: str
         """
         self._db_use_type = db_use_type
 
@@ -182,7 +223,7 @@ class CreateJobReq:
         任务名称，约束：任务名称在4位到50位之间，不区分大小写，可以包含字母、数字、中划线或下划线，不能包括其他特殊字符。
 
         :param name: The name of this CreateJobReq.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -204,7 +245,7 @@ class CreateJobReq:
         任务描述。  **约束**：任务描述不能超过256位，且不能包含!<>&'\"\\特殊字符。
 
         :param description: The description of this CreateJobReq.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -226,7 +267,7 @@ class CreateJobReq:
         引擎类型 - mysql：迁移，同步使用 - mongodb：迁移使用 - cloudDataGuard-mysql：灾备使用 - gaussdbv5，postgresql：同步使用
 
         :param engine_type: The engine_type of this CreateJobReq.
-        :type: str
+        :type engine_type: str
         """
         self._engine_type = engine_type
 
@@ -248,7 +289,7 @@ class CreateJobReq:
         指定目标实例是否限制为只读，MySQL迁移和灾备，且job_direction为up时设置有效。（灾备场景下，单主灾备且本云为备为必填且为true，不填默认设置为true）。
 
         :param is_target_readonly: The is_target_readonly of this CreateJobReq.
-        :type: bool
+        :type is_target_readonly: bool
         """
         self._is_target_readonly = is_target_readonly
 
@@ -270,7 +311,7 @@ class CreateJobReq:
         迁移方向，up ：入云 ，灾备场景时对应本云为备，down：出云，灾备场景时对应本云为主，non-dbs：自建
 
         :param job_direction: The job_direction of this CreateJobReq.
-        :type: str
+        :type job_direction: str
         """
         self._job_direction = job_direction
 
@@ -292,7 +333,7 @@ class CreateJobReq:
         - db_use_type 是cloudDataGuard时，必填，灾备类型是双主灾备时 muti_write取值true, 否则为false。 - db_use_type 是其他类型时，muti_write是非必选参数
 
         :param multi_write: The multi_write of this CreateJobReq.
-        :type: bool
+        :type multi_write: bool
         """
         self._multi_write = multi_write
 
@@ -314,7 +355,7 @@ class CreateJobReq:
         网络类型
 
         :param net_type: The net_type of this CreateJobReq.
-        :type: str
+        :type net_type: str
         """
         self._net_type = net_type
 
@@ -336,7 +377,7 @@ class CreateJobReq:
         节点个数。MongoDB数据库时对应源端分片个数，源库为集群时必填，[1-32]，MySQL双主灾备时会默认设置为2。
 
         :param node_num: The node_num of this CreateJobReq.
-        :type: int
+        :type node_num: int
         """
         self._node_num = node_num
 
@@ -358,7 +399,7 @@ class CreateJobReq:
         规格类型。
 
         :param node_type: The node_type of this CreateJobReq.
-        :type: str
+        :type node_type: str
         """
         self._node_type = node_type
 
@@ -368,7 +409,7 @@ class CreateJobReq:
 
 
         :return: The source_endpoint of this CreateJobReq.
-        :rtype: Endpoint
+        :rtype: :class:`huaweicloudsdkdrs.v3.Endpoint`
         """
         return self._source_endpoint
 
@@ -378,7 +419,7 @@ class CreateJobReq:
 
 
         :param source_endpoint: The source_endpoint of this CreateJobReq.
-        :type: Endpoint
+        :type source_endpoint: :class:`huaweicloudsdkdrs.v3.Endpoint`
         """
         self._source_endpoint = source_endpoint
 
@@ -388,7 +429,7 @@ class CreateJobReq:
 
 
         :return: The target_endpoint of this CreateJobReq.
-        :rtype: Endpoint
+        :rtype: :class:`huaweicloudsdkdrs.v3.Endpoint`
         """
         return self._target_endpoint
 
@@ -398,7 +439,7 @@ class CreateJobReq:
 
 
         :param target_endpoint: The target_endpoint of this CreateJobReq.
-        :type: Endpoint
+        :type target_endpoint: :class:`huaweicloudsdkdrs.v3.Endpoint`
         """
         self._target_endpoint = target_endpoint
 
@@ -409,7 +450,7 @@ class CreateJobReq:
         标签信息。
 
         :return: The tags of this CreateJobReq.
-        :rtype: list[ResourceTag]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.ResourceTag`]
         """
         return self._tags
 
@@ -420,7 +461,7 @@ class CreateJobReq:
         标签信息。
 
         :param tags: The tags of this CreateJobReq.
-        :type: list[ResourceTag]
+        :type tags: list[:class:`huaweicloudsdkdrs.v3.ResourceTag`]
         """
         self._tags = tags
 
@@ -442,7 +483,7 @@ class CreateJobReq:
         迁移模式，FULL_TRANS 全量,FULL_INCR_TRANS 全量+增量,INCR_TRANS 增量，灾备场景单主灾备仅支持全量加增量（FULL_INCR_TRANS）
 
         :param task_type: The task_type of this CreateJobReq.
-        :type: str
+        :type task_type: str
         """
         self._task_type = task_type
 
@@ -464,7 +505,7 @@ class CreateJobReq:
         DRS实例所在子网ID，对应目标库相同VPC下已创建的子网（subnet）的网络ID，UUID格式。
 
         :param customize_sutnet_id: The customize_sutnet_id of this CreateJobReq.
-        :type: str
+        :type customize_sutnet_id: str
         """
         self._customize_sutnet_id = customize_sutnet_id
 
@@ -486,7 +527,7 @@ class CreateJobReq:
         产品id。
 
         :param product_id: The product_id of this CreateJobReq.
-        :type: str
+        :type product_id: str
         """
         self._product_id = product_id
 
@@ -497,7 +538,7 @@ class CreateJobReq:
         企业项目，不填默认为default，key值必须为_sys_enterprise_project_id，value为企业项目ID，只能有一个企业项目。
 
         :return: The sys_tags of this CreateJobReq.
-        :rtype: list[ResourceTag]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.ResourceTag`]
         """
         return self._sys_tags
 
@@ -508,7 +549,7 @@ class CreateJobReq:
         企业项目，不填默认为default，key值必须为_sys_enterprise_project_id，value为企业项目ID，只能有一个企业项目。
 
         :param sys_tags: The sys_tags of this CreateJobReq.
-        :type: list[ResourceTag]
+        :type sys_tags: list[:class:`huaweicloudsdkdrs.v3.ResourceTag`]
         """
         self._sys_tags = sys_tags
 
@@ -530,7 +571,7 @@ class CreateJobReq:
         任务处于异常状态一段时间后，将会自动结束，单位为天。(范围14-100)，不传默认为14天。
 
         :param expired_days: The expired_days of this CreateJobReq.
-        :type: str
+        :type expired_days: str
         """
         self._expired_days = expired_days
 

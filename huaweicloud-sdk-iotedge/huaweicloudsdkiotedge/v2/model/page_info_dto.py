@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PageInfoDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class PageInfoDTO:
     }
 
     def __init__(self, offset=None, limit=None):
-        """PageInfoDTO - a model defined in huaweicloud sdk"""
+        """PageInfoDTO
+
+        The model defined in huaweicloud sdk
+
+        :param offset: 页码
+        :type offset: int
+        :param limit: 每页记录数
+        :type limit: int
+        """
         
         
 
@@ -63,7 +70,7 @@ class PageInfoDTO:
         页码
 
         :param offset: The offset of this PageInfoDTO.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -85,7 +92,7 @@ class PageInfoDTO:
         每页记录数
 
         :param limit: The limit of this PageInfoDTO.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

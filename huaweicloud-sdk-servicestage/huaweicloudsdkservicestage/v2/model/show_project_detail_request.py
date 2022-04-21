@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowProjectDetailRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowProjectDetailRequest:
     }
 
     def __init__(self, x_repo_auth=None, clone_url=None):
-        """ShowProjectDetailRequest - a model defined in huaweicloud sdk"""
+        """ShowProjectDetailRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_repo_auth: 授权名称。
+        :type x_repo_auth: str
+        :param clone_url: 仓库克隆URL。
+        :type clone_url: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ShowProjectDetailRequest:
         授权名称。
 
         :param x_repo_auth: The x_repo_auth of this ShowProjectDetailRequest.
-        :type: str
+        :type x_repo_auth: str
         """
         self._x_repo_auth = x_repo_auth
 
@@ -83,7 +90,7 @@ class ShowProjectDetailRequest:
         仓库克隆URL。
 
         :param clone_url: The clone_url of this ShowProjectDetailRequest.
-        :type: str
+        :type clone_url: str
         """
         self._clone_url = clone_url
 

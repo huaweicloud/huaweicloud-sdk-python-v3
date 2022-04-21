@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreatePremiumHostResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class CreatePremiumHostResponse(SdkResponse):
     }
 
     def __init__(self, id=None, policyid=None, hostname=None, domainid=None, projectid=None, protocol=None):
-        """CreatePremiumHostResponse - a model defined in huaweicloud sdk"""
+        """CreatePremiumHostResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 域名id
+        :type id: str
+        :param policyid: 策略id
+        :type policyid: str
+        :param hostname: 域名id
+        :type hostname: str
+        :param domainid: 租户id
+        :type domainid: str
+        :param projectid: 项目projectid
+        :type projectid: str
+        :param protocol: http协议
+        :type protocol: str
+        """
         
         super(CreatePremiumHostResponse, self).__init__()
 
@@ -83,7 +98,7 @@ class CreatePremiumHostResponse(SdkResponse):
         域名id
 
         :param id: The id of this CreatePremiumHostResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -105,7 +120,7 @@ class CreatePremiumHostResponse(SdkResponse):
         策略id
 
         :param policyid: The policyid of this CreatePremiumHostResponse.
-        :type: str
+        :type policyid: str
         """
         self._policyid = policyid
 
@@ -127,7 +142,7 @@ class CreatePremiumHostResponse(SdkResponse):
         域名id
 
         :param hostname: The hostname of this CreatePremiumHostResponse.
-        :type: str
+        :type hostname: str
         """
         self._hostname = hostname
 
@@ -149,7 +164,7 @@ class CreatePremiumHostResponse(SdkResponse):
         租户id
 
         :param domainid: The domainid of this CreatePremiumHostResponse.
-        :type: str
+        :type domainid: str
         """
         self._domainid = domainid
 
@@ -171,7 +186,7 @@ class CreatePremiumHostResponse(SdkResponse):
         项目projectid
 
         :param projectid: The projectid of this CreatePremiumHostResponse.
-        :type: str
+        :type projectid: str
         """
         self._projectid = projectid
 
@@ -193,7 +208,7 @@ class CreatePremiumHostResponse(SdkResponse):
         http协议
 
         :param protocol: The protocol of this CreatePremiumHostResponse.
-        :type: str
+        :type protocol: str
         """
         self._protocol = protocol
 

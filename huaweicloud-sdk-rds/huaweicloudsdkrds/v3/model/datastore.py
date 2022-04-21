@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Datastore:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class Datastore:
     }
 
     def __init__(self, type=None, version=None, complete_version=None):
-        """Datastore - a model defined in huaweicloud sdk"""
+        """Datastore
+
+        The model defined in huaweicloud sdk
+
+        :param type: 数据库引擎，不区分大小写：  - MySQL - PostgreSQL - SQLServer
+        :type type: str
+        :param version: 数据库版本。 - MySQL引擎支持5.6、5.7、8.0版本。取值示例：5.7。具有相应权限的用户才可使用8.0，您可联系华为云客服人员申请。 - PostgreSQL引擎支持9.5、9.6、10、11版本。取值示例：9.6。 - Microsoft SQL Server：仅支持2017 企业版、2017 标准版、2017 web版、2014 标准版、2014 企业版、2016 标准版、2016 企业版、2012 企业版、2012 标准版、2012 web版、2008 R2 企业版、2008 R2 web版、2014 web版、2016 web版。取值示例2014_SE。 例如：2017标准版可填写2017_SE，2017企业版可填写2017_EE，2017web版可以填写2017_WEB
+        :type version: str
+        :param complete_version: 数据库完整版本号。仅在数据库引擎是”PostgreSQL”时返回。
+        :type complete_version: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class Datastore:
         数据库引擎，不区分大小写：  - MySQL - PostgreSQL - SQLServer
 
         :param type: The type of this Datastore.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -88,7 +97,7 @@ class Datastore:
         数据库版本。 - MySQL引擎支持5.6、5.7、8.0版本。取值示例：5.7。具有相应权限的用户才可使用8.0，您可联系华为云客服人员申请。 - PostgreSQL引擎支持9.5、9.6、10、11版本。取值示例：9.6。 - Microsoft SQL Server：仅支持2017 企业版、2017 标准版、2017 web版、2014 标准版、2014 企业版、2016 标准版、2016 企业版、2012 企业版、2012 标准版、2012 web版、2008 R2 企业版、2008 R2 web版、2014 web版、2016 web版。取值示例2014_SE。 例如：2017标准版可填写2017_SE，2017企业版可填写2017_EE，2017web版可以填写2017_WEB
 
         :param version: The version of this Datastore.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -110,7 +119,7 @@ class Datastore:
         数据库完整版本号。仅在数据库引擎是”PostgreSQL”时返回。
 
         :param complete_version: The complete_version of this Datastore.
-        :type: str
+        :type complete_version: str
         """
         self._complete_version = complete_version
 

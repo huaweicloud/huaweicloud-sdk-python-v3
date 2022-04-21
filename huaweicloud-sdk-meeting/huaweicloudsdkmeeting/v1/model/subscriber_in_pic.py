@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SubscriberInPic:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class SubscriberInPic:
     }
 
     def __init__(self, index=None, subscriber=None, is_assist_stream=None):
-        """SubscriberInPic - a model defined in huaweicloud sdk"""
+        """SubscriberInPic
+
+        The model defined in huaweicloud sdk
+
+        :param index: 多画面中每个画面的编号。编号从1开始。 默认值为1。
+        :type index: int
+        :param subscriber: 每个画面中与会者标识列表。
+        :type subscriber: list[str]
+        :param is_assist_stream: 是否为辅流。默认值为0。 - 0: 不是辅流。 - 1: 是辅流。
+        :type is_assist_stream: int
+        """
         
         
 
@@ -67,7 +76,7 @@ class SubscriberInPic:
         多画面中每个画面的编号。编号从1开始。 默认值为1。
 
         :param index: The index of this SubscriberInPic.
-        :type: int
+        :type index: int
         """
         self._index = index
 
@@ -89,7 +98,7 @@ class SubscriberInPic:
         每个画面中与会者标识列表。
 
         :param subscriber: The subscriber of this SubscriberInPic.
-        :type: list[str]
+        :type subscriber: list[str]
         """
         self._subscriber = subscriber
 
@@ -111,7 +120,7 @@ class SubscriberInPic:
         是否为辅流。默认值为0。 - 0: 不是辅流。 - 1: 是辅流。
 
         :param is_assist_stream: The is_assist_stream of this SubscriberInPic.
-        :type: int
+        :type is_assist_stream: int
         """
         self._is_assist_stream = is_assist_stream
 

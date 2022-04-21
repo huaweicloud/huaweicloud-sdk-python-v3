@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateUserOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class CreateUserOption:
     }
 
     def __init__(self, access_mode=None, name=None, domain_id=None, password=None, email=None, areacode=None, phone=None, enabled=None, pwd_status=None, xuser_type=None, xuser_id=None, description=None):
-        """CreateUserOption - a model defined in huaweicloud sdk"""
+        """CreateUserOption
+
+        The model defined in huaweicloud sdk
+
+        :param access_mode: IAM用户访问方式。 - default：默认访问模式，编程访问和管理控制台访问。 - programmatic：编程访问。 - console：管理控制台访问。
+        :type access_mode: str
+        :param name: IAM用户名。长度5~32字符之间，首位不能为数字，特殊字符只能包含下划线“_”、中划线“-”和空格。
+        :type name: str
+        :param domain_id: IAM用户所属的账号ID，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
+        :type domain_id: str
+        :param password: IAM用户密码。 - 系统默认密码最小长度为6字符，在6-32字符之间支持用户自定义密码长度。 - 至少包含以下四种字符中的两种： 大写字母、小写字母、数字和特殊字符。 - 不能包含手机号和邮箱。 - 必须满足账户设置中密码策略的要求。
+        :type password: str
+        :param email: IAM用户邮箱，需符合邮箱格式，长度小于等于255字符。
+        :type email: str
+        :param areacode: 国家码。必须与手机号同时存在。中国大陆为“0086”。
+        :type areacode: str
+        :param phone: IAM用户手机号，纯数字，长度小于等于32字符。必须与国家码同时存在。
+        :type phone: str
+        :param enabled: 是否启用IAM用户。true为启用，false为停用，默认为true。
+        :type enabled: bool
+        :param pwd_status: IAM用户首次登录是否重置密码，默认需要重置。
+        :type pwd_status: bool
+        :param xuser_type: IAM用户在外部系统中的类型。长度小于等于64字符。xuser_type如果存在且不等于TenantIdp时，则需要与同一租户中的xaccount_type、xdomain_type校验，须与xuser_id同时存在。 &gt;外部系统指与华为云对接的外部企业管理系统，xaccount_type、xaccount_id、xdomain_type、xdomain_id、xuser_type、xuser_id等参数值，无法在华为云获取，请咨询企业管理员。 
+        :type xuser_type: str
+        :param xuser_id: IAM用户在外部系统中的ID。长度小于等于128字符，须与xuser_type同时存在。 &gt;外部系统指与华为云对接的外部企业管理系统，xaccount_type、xaccount_id、xdomain_type、xdomain_id、xuser_type、xuser_id等参数值，无法在华为云获取，请咨询企业管理员。
+        :type xuser_id: str
+        :param description: IAM用户描述信息。
+        :type description: str
+        """
         
         
 
@@ -111,7 +138,7 @@ class CreateUserOption:
         IAM用户访问方式。 - default：默认访问模式，编程访问和管理控制台访问。 - programmatic：编程访问。 - console：管理控制台访问。
 
         :param access_mode: The access_mode of this CreateUserOption.
-        :type: str
+        :type access_mode: str
         """
         self._access_mode = access_mode
 
@@ -133,7 +160,7 @@ class CreateUserOption:
         IAM用户名。长度5~32字符之间，首位不能为数字，特殊字符只能包含下划线“_”、中划线“-”和空格。
 
         :param name: The name of this CreateUserOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -155,7 +182,7 @@ class CreateUserOption:
         IAM用户所属的账号ID，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param domain_id: The domain_id of this CreateUserOption.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -177,7 +204,7 @@ class CreateUserOption:
         IAM用户密码。 - 系统默认密码最小长度为6字符，在6-32字符之间支持用户自定义密码长度。 - 至少包含以下四种字符中的两种： 大写字母、小写字母、数字和特殊字符。 - 不能包含手机号和邮箱。 - 必须满足账户设置中密码策略的要求。
 
         :param password: The password of this CreateUserOption.
-        :type: str
+        :type password: str
         """
         self._password = password
 
@@ -199,7 +226,7 @@ class CreateUserOption:
         IAM用户邮箱，需符合邮箱格式，长度小于等于255字符。
 
         :param email: The email of this CreateUserOption.
-        :type: str
+        :type email: str
         """
         self._email = email
 
@@ -221,7 +248,7 @@ class CreateUserOption:
         国家码。必须与手机号同时存在。中国大陆为“0086”。
 
         :param areacode: The areacode of this CreateUserOption.
-        :type: str
+        :type areacode: str
         """
         self._areacode = areacode
 
@@ -243,7 +270,7 @@ class CreateUserOption:
         IAM用户手机号，纯数字，长度小于等于32字符。必须与国家码同时存在。
 
         :param phone: The phone of this CreateUserOption.
-        :type: str
+        :type phone: str
         """
         self._phone = phone
 
@@ -265,7 +292,7 @@ class CreateUserOption:
         是否启用IAM用户。true为启用，false为停用，默认为true。
 
         :param enabled: The enabled of this CreateUserOption.
-        :type: bool
+        :type enabled: bool
         """
         self._enabled = enabled
 
@@ -287,7 +314,7 @@ class CreateUserOption:
         IAM用户首次登录是否重置密码，默认需要重置。
 
         :param pwd_status: The pwd_status of this CreateUserOption.
-        :type: bool
+        :type pwd_status: bool
         """
         self._pwd_status = pwd_status
 
@@ -309,7 +336,7 @@ class CreateUserOption:
         IAM用户在外部系统中的类型。长度小于等于64字符。xuser_type如果存在且不等于TenantIdp时，则需要与同一租户中的xaccount_type、xdomain_type校验，须与xuser_id同时存在。 >外部系统指与华为云对接的外部企业管理系统，xaccount_type、xaccount_id、xdomain_type、xdomain_id、xuser_type、xuser_id等参数值，无法在华为云获取，请咨询企业管理员。 
 
         :param xuser_type: The xuser_type of this CreateUserOption.
-        :type: str
+        :type xuser_type: str
         """
         self._xuser_type = xuser_type
 
@@ -331,7 +358,7 @@ class CreateUserOption:
         IAM用户在外部系统中的ID。长度小于等于128字符，须与xuser_type同时存在。 >外部系统指与华为云对接的外部企业管理系统，xaccount_type、xaccount_id、xdomain_type、xdomain_id、xuser_type、xuser_id等参数值，无法在华为云获取，请咨询企业管理员。
 
         :param xuser_id: The xuser_id of this CreateUserOption.
-        :type: str
+        :type xuser_id: str
         """
         self._xuser_id = xuser_id
 
@@ -353,7 +380,7 @@ class CreateUserOption:
         IAM用户描述信息。
 
         :param description: The description of this CreateUserOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 

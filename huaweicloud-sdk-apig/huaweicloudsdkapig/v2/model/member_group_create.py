@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MemberGroupCreate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class MemberGroupCreate:
     }
 
     def __init__(self, member_group_name=None, member_group_remark=None, member_group_weight=None, dict_code=None):
-        """MemberGroupCreate - a model defined in huaweicloud sdk"""
+        """MemberGroupCreate
+
+        The model defined in huaweicloud sdk
+
+        :param member_group_name: VPC通道后端服务器组名称
+        :type member_group_name: str
+        :param member_group_remark: VPC通道后端服务器组描述
+        :type member_group_remark: str
+        :param member_group_weight: VPC通道后端服务器组权重值。  当前服务器组存在服务器且此权重值存在时，自动使用此权重值分配权重。
+        :type member_group_weight: int
+        :param dict_code: VPC通道后端服务器组的字典编码  支持英文，数字，特殊字符（-_.）  暂不支持
+        :type dict_code: str
+        """
         
         
 
@@ -72,7 +83,7 @@ class MemberGroupCreate:
         VPC通道后端服务器组名称
 
         :param member_group_name: The member_group_name of this MemberGroupCreate.
-        :type: str
+        :type member_group_name: str
         """
         self._member_group_name = member_group_name
 
@@ -94,7 +105,7 @@ class MemberGroupCreate:
         VPC通道后端服务器组描述
 
         :param member_group_remark: The member_group_remark of this MemberGroupCreate.
-        :type: str
+        :type member_group_remark: str
         """
         self._member_group_remark = member_group_remark
 
@@ -116,7 +127,7 @@ class MemberGroupCreate:
         VPC通道后端服务器组权重值。  当前服务器组存在服务器且此权重值存在时，自动使用此权重值分配权重。
 
         :param member_group_weight: The member_group_weight of this MemberGroupCreate.
-        :type: int
+        :type member_group_weight: int
         """
         self._member_group_weight = member_group_weight
 
@@ -138,7 +149,7 @@ class MemberGroupCreate:
         VPC通道后端服务器组的字典编码  支持英文，数字，特殊字符（-_.）  暂不支持
 
         :param dict_code: The dict_code of this MemberGroupCreate.
-        :type: str
+        :type dict_code: str
         """
         self._dict_code = dict_code
 

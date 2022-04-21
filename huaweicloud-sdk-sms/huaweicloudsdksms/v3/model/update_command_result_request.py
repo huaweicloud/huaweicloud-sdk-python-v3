@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateCommandResultRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateCommandResultRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """UpdateCommandResultRequest - a model defined in huaweicloud sdk"""
+        """UpdateCommandResultRequest
+
+        The model defined in huaweicloud sdk
+
+        :param server_id: 上报命令执行结果的命令所对应的服务端id
+        :type server_id: str
+        :param body: Body of the UpdateCommandResultRequest
+        :type body: :class:`huaweicloudsdksms.v3.CommandBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateCommandResultRequest:
         上报命令执行结果的命令所对应的服务端id
 
         :param server_id: The server_id of this UpdateCommandResultRequest.
-        :type: str
+        :type server_id: str
         """
         self._server_id = server_id
 
@@ -72,7 +79,7 @@ class UpdateCommandResultRequest:
 
 
         :return: The body of this UpdateCommandResultRequest.
-        :rtype: CommandBody
+        :rtype: :class:`huaweicloudsdksms.v3.CommandBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateCommandResultRequest:
 
 
         :param body: The body of this UpdateCommandResultRequest.
-        :type: CommandBody
+        :type body: :class:`huaweicloudsdksms.v3.CommandBody`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateLoginTokenRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateLoginTokenRequestBody:
     }
 
     def __init__(self, auth=None):
-        """CreateLoginTokenRequestBody - a model defined in huaweicloud sdk"""
+        """CreateLoginTokenRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param auth: 
+        :type auth: :class:`huaweicloudsdkiam.v3.LoginTokenAuth`
+        """
         
         
 
@@ -45,7 +50,7 @@ class CreateLoginTokenRequestBody:
 
 
         :return: The auth of this CreateLoginTokenRequestBody.
-        :rtype: LoginTokenAuth
+        :rtype: :class:`huaweicloudsdkiam.v3.LoginTokenAuth`
         """
         return self._auth
 
@@ -55,7 +60,7 @@ class CreateLoginTokenRequestBody:
 
 
         :param auth: The auth of this CreateLoginTokenRequestBody.
-        :type: LoginTokenAuth
+        :type auth: :class:`huaweicloudsdkiam.v3.LoginTokenAuth`
         """
         self._auth = auth
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class JobSubmitResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class JobSubmitResult:
     }
 
     def __init__(self, job_id=None, state=None):
-        """JobSubmitResult - a model defined in huaweicloud sdk"""
+        """JobSubmitResult
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 作业ID。
+        :type job_id: str
+        :param state: 作业提交状态。 枚举值： - COMPLETE：作业提交完成。 - FAILED：作业提交失败。
+        :type state: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class JobSubmitResult:
         作业ID。
 
         :param job_id: The job_id of this JobSubmitResult.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -85,7 +92,7 @@ class JobSubmitResult:
         作业提交状态。 枚举值： - COMPLETE：作业提交完成。 - FAILED：作业提交失败。
 
         :param state: The state of this JobSubmitResult.
-        :type: str
+        :type state: str
         """
         self._state = state
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateIpGroupRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateIpGroupRequestBody:
     }
 
     def __init__(self, ipgroup=None):
-        """CreateIpGroupRequestBody - a model defined in huaweicloud sdk"""
+        """CreateIpGroupRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param ipgroup: 
+        :type ipgroup: :class:`huaweicloudsdkelb.v3.CreateIpGroupOption`
+        """
         
         
 
@@ -45,7 +50,7 @@ class CreateIpGroupRequestBody:
 
 
         :return: The ipgroup of this CreateIpGroupRequestBody.
-        :rtype: CreateIpGroupOption
+        :rtype: :class:`huaweicloudsdkelb.v3.CreateIpGroupOption`
         """
         return self._ipgroup
 
@@ -55,7 +60,7 @@ class CreateIpGroupRequestBody:
 
 
         :param ipgroup: The ipgroup of this CreateIpGroupRequestBody.
-        :type: CreateIpGroupOption
+        :type ipgroup: :class:`huaweicloudsdkelb.v3.CreateIpGroupOption`
         """
         self._ipgroup = ipgroup
 

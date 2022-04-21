@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GetIdTokenScopeDomainOrProjectBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class GetIdTokenScopeDomainOrProjectBody:
     }
 
     def __init__(self, id=None, name=None):
-        """GetIdTokenScopeDomainOrProjectBody - a model defined in huaweicloud sdk"""
+        """GetIdTokenScopeDomainOrProjectBody
+
+        The model defined in huaweicloud sdk
+
+        :param id: domain id 或者 project id，与name字段至少存在一个。
+        :type id: str
+        :param name: domain name 或者 project name，与id字段至少存在一个。
+        :type name: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class GetIdTokenScopeDomainOrProjectBody:
         domain id 或者 project id，与name字段至少存在一个。
 
         :param id: The id of this GetIdTokenScopeDomainOrProjectBody.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -85,7 +92,7 @@ class GetIdTokenScopeDomainOrProjectBody:
         domain name 或者 project name，与id字段至少存在一个。
 
         :param name: The name of this GetIdTokenScopeDomainOrProjectBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 

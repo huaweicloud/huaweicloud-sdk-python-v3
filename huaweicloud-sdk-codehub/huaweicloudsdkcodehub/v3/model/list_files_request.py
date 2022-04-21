@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListFilesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListFilesRequest:
     }
 
     def __init__(self, repository_uuid=None, branch_name=None, path=None):
-        """ListFilesRequest - a model defined in huaweicloud sdk"""
+        """ListFilesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param repository_uuid: 仓库id
+        :type repository_uuid: str
+        :param branch_name: 分支名称
+        :type branch_name: str
+        :param path: 文件路径
+        :type path: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class ListFilesRequest:
         仓库id
 
         :param repository_uuid: The repository_uuid of this ListFilesRequest.
-        :type: str
+        :type repository_uuid: str
         """
         self._repository_uuid = repository_uuid
 
@@ -87,7 +96,7 @@ class ListFilesRequest:
         分支名称
 
         :param branch_name: The branch_name of this ListFilesRequest.
-        :type: str
+        :type branch_name: str
         """
         self._branch_name = branch_name
 
@@ -109,7 +118,7 @@ class ListFilesRequest:
         文件路径
 
         :param path: The path of this ListFilesRequest.
-        :type: str
+        :type path: str
         """
         self._path = path
 

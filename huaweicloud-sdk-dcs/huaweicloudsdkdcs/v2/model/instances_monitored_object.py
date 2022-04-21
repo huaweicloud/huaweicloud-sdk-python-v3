@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InstancesMonitoredObject:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class InstancesMonitoredObject:
     }
 
     def __init__(self, dcs_instance_id=None, name=None, status=None):
-        """InstancesMonitoredObject - a model defined in huaweicloud sdk"""
+        """InstancesMonitoredObject
+
+        The model defined in huaweicloud sdk
+
+        :param dcs_instance_id: 测量对象ID，即实例的ID。
+        :type dcs_instance_id: str
+        :param name: 测量对象名称，即实例名称。
+        :type name: str
+        :param status: 测量对象状态，即实例状态。
+        :type status: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class InstancesMonitoredObject:
         测量对象ID，即实例的ID。
 
         :param dcs_instance_id: The dcs_instance_id of this InstancesMonitoredObject.
-        :type: str
+        :type dcs_instance_id: str
         """
         self._dcs_instance_id = dcs_instance_id
 
@@ -90,7 +99,7 @@ class InstancesMonitoredObject:
         测量对象名称，即实例名称。
 
         :param name: The name of this InstancesMonitoredObject.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -112,7 +121,7 @@ class InstancesMonitoredObject:
         测量对象状态，即实例状态。
 
         :param status: The status of this InstancesMonitoredObject.
-        :type: str
+        :type status: str
         """
         self._status = status
 

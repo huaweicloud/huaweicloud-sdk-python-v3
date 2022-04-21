@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchDeleteMembersOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class BatchDeleteMembersOption:
     }
 
     def __init__(self, id=None, address=None, protocol_port=None):
-        """BatchDeleteMembersOption - a model defined in huaweicloud sdk"""
+        """BatchDeleteMembersOption
+
+        The model defined in huaweicloud sdk
+
+        :param id: 需要删除的后端服务器ID。  使用说明： - 若传入id则不能传其他参数，否则报错。
+        :type id: str
+        :param address: 后端服务器IP地址。  使用说明： - address和protocol_port必须同时传入。 - 不能同时传入ID字段
+        :type address: str
+        :param protocol_port: 后端服务器端口。  使用说明： - address和protocol_port必须同时传入。 - 不能同时传入ID字段
+        :type protocol_port: int
+        """
         
         
 
@@ -68,7 +77,7 @@ class BatchDeleteMembersOption:
         需要删除的后端服务器ID。  使用说明： - 若传入id则不能传其他参数，否则报错。
 
         :param id: The id of this BatchDeleteMembersOption.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -90,7 +99,7 @@ class BatchDeleteMembersOption:
         后端服务器IP地址。  使用说明： - address和protocol_port必须同时传入。 - 不能同时传入ID字段
 
         :param address: The address of this BatchDeleteMembersOption.
-        :type: str
+        :type address: str
         """
         self._address = address
 
@@ -112,7 +121,7 @@ class BatchDeleteMembersOption:
         后端服务器端口。  使用说明： - address和protocol_port必须同时传入。 - 不能同时传入ID字段
 
         :param protocol_port: The protocol_port of this BatchDeleteMembersOption.
-        :type: int
+        :type protocol_port: int
         """
         self._protocol_port = protocol_port
 

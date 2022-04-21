@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateMaterialRequestDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateMaterialRequestDTO:
     }
 
     def __init__(self, material_name=None):
-        """UpdateMaterialRequestDTO - a model defined in huaweicloud sdk"""
+        """UpdateMaterialRequestDTO
+
+        The model defined in huaweicloud sdk
+
+        :param material_name: 素材名称
+        :type material_name: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class UpdateMaterialRequestDTO:
         素材名称
 
         :param material_name: The material_name of this UpdateMaterialRequestDTO.
-        :type: str
+        :type material_name: str
         """
         self._material_name = material_name
 

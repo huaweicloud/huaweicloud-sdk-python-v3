@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeletePictureReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeletePictureReq:
     }
 
     def __init__(self, path=None):
-        """DeletePictureReq - a model defined in huaweicloud sdk"""
+        """DeletePictureReq
+
+        The model defined in huaweicloud sdk
+
+        :param path: 图片URL路径，作为图片库中索引图片的ID。
+        :type path: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class DeletePictureReq:
         图片URL路径，作为图片库中索引图片的ID。
 
         :param path: The path of this DeletePictureReq.
-        :type: str
+        :type path: str
         """
         self._path = path
 

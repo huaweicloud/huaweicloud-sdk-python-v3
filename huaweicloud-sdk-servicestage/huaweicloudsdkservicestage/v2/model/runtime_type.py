@@ -12,7 +12,6 @@ class RuntimeType:
     """
     allowed enum values
     """
-
     TOMCAT8 = "Tomcat8"
     JAVA8 = "Java8"
     PHP7 = "Php7"
@@ -20,7 +19,6 @@ class RuntimeType:
     DOCKER = "Docker"
     PYTHON3 = "Python3"
     CUSTOM = "Custom"
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +36,11 @@ class RuntimeType:
     }
 
     def __init__(self):
-        """RuntimeType - a model defined in huaweicloud sdk"""
+        """RuntimeType
+
+        The model defined in huaweicloud sdk
+
+        """
         
         
         self.discriminator = None

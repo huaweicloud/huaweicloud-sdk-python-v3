@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PayOrdersRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class PayOrdersRequest:
     }
 
     def __init__(self, body=None):
-        """PayOrdersRequest - a model defined in huaweicloud sdk"""
+        """PayOrdersRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the PayOrdersRequest
+        :type body: :class:`huaweicloudsdkbssintl.v2.PayCustomerOrderReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class PayOrdersRequest:
 
 
         :return: The body of this PayOrdersRequest.
-        :rtype: PayCustomerOrderReq
+        :rtype: :class:`huaweicloudsdkbssintl.v2.PayCustomerOrderReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class PayOrdersRequest:
 
 
         :param body: The body of this PayOrdersRequest.
-        :type: PayCustomerOrderReq
+        :type body: :class:`huaweicloudsdkbssintl.v2.PayCustomerOrderReq`
         """
         self._body = body
 

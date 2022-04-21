@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteAssetResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteAssetResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """DeleteAssetResponse - a model defined in huaweicloud sdk"""
+        """DeleteAssetResponse
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 资产导出或删除作业的ID，可用于查询作业进。
+        :type job_id: str
+        """
         
         super(DeleteAssetResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class DeleteAssetResponse(SdkResponse):
         资产导出或删除作业的ID，可用于查询作业进。
 
         :param job_id: The job_id of this DeleteAssetResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 

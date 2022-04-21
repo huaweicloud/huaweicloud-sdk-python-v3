@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteTaskRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteTaskRequest:
     }
 
     def __init__(self, task_id=None):
-        """DeleteTaskRequest - a model defined in huaweicloud sdk"""
+        """DeleteTaskRequest
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 任务id
+        :type task_id: int
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteTaskRequest:
         任务id
 
         :param task_id: The task_id of this DeleteTaskRequest.
-        :type: int
+        :type task_id: int
         """
         self._task_id = task_id
 

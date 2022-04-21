@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GetOffSiteBackupPolicy:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class GetOffSiteBackupPolicy:
     }
 
     def __init__(self, backup_type=None, keep_days=None, destination_region=None, destination_project_id=None):
-        """GetOffSiteBackupPolicy - a model defined in huaweicloud sdk"""
+        """GetOffSiteBackupPolicy
+
+        The model defined in huaweicloud sdk
+
+        :param backup_type: 指定备份的类型。取值如下：  - auto：自动全量备份。 - incremental：自动增量备份。 - manual：手动备份，仅SQL Server返回该备份类型 。
+        :type backup_type: str
+        :param keep_days: 备份文件可以保存的天数。
+        :type keep_days: int
+        :param destination_region: 设置跨区域备份策略的目标区域ID。
+        :type destination_region: str
+        :param destination_project_id: 设置跨区域备份策略的目标project ID。
+        :type destination_project_id: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class GetOffSiteBackupPolicy:
         指定备份的类型。取值如下：  - auto：自动全量备份。 - incremental：自动增量备份。 - manual：手动备份，仅SQL Server返回该备份类型 。
 
         :param backup_type: The backup_type of this GetOffSiteBackupPolicy.
-        :type: str
+        :type backup_type: str
         """
         self._backup_type = backup_type
 
@@ -95,7 +106,7 @@ class GetOffSiteBackupPolicy:
         备份文件可以保存的天数。
 
         :param keep_days: The keep_days of this GetOffSiteBackupPolicy.
-        :type: int
+        :type keep_days: int
         """
         self._keep_days = keep_days
 
@@ -117,7 +128,7 @@ class GetOffSiteBackupPolicy:
         设置跨区域备份策略的目标区域ID。
 
         :param destination_region: The destination_region of this GetOffSiteBackupPolicy.
-        :type: str
+        :type destination_region: str
         """
         self._destination_region = destination_region
 
@@ -139,7 +150,7 @@ class GetOffSiteBackupPolicy:
         设置跨区域备份策略的目标project ID。
 
         :param destination_project_id: The destination_project_id of this GetOffSiteBackupPolicy.
-        :type: str
+        :type destination_project_id: str
         """
         self._destination_project_id = destination_project_id
 

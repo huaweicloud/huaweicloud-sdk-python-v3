@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchSwitchesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchSwitchesRequest:
     }
 
     def __init__(self, ids=None, status=None):
-        """BatchSwitchesRequest - a model defined in huaweicloud sdk"""
+        """BatchSwitchesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param ids: risk id, ids 中间逗号分隔
+        :type ids: str
+        :param status: OFF：关闭 ON：开启
+        :type status: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class BatchSwitchesRequest:
         risk id, ids 中间逗号分隔
 
         :param ids: The ids of this BatchSwitchesRequest.
-        :type: str
+        :type ids: str
         """
         self._ids = ids
 
@@ -85,7 +92,7 @@ class BatchSwitchesRequest:
         OFF：关闭 ON：开启
 
         :param status: The status of this BatchSwitchesRequest.
-        :type: str
+        :type status: str
         """
         self._status = status
 

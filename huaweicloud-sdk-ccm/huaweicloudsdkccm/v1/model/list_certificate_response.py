@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCertificateResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListCertificateResponse(SdkResponse):
     }
 
     def __init__(self, total=None, certificates=None):
-        """ListCertificateResponse - a model defined in huaweicloud sdk"""
+        """ListCertificateResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 私有证书总数。
+        :type total: int
+        :param certificates: 证书列表，详情请参见**Certificates**字段数据结构说明。
+        :type certificates: list[:class:`huaweicloudsdkccm.v1.Certificates`]
+        """
         
         super(ListCertificateResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListCertificateResponse(SdkResponse):
         私有证书总数。
 
         :param total: The total of this ListCertificateResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -74,7 +81,7 @@ class ListCertificateResponse(SdkResponse):
         证书列表，详情请参见**Certificates**字段数据结构说明。
 
         :return: The certificates of this ListCertificateResponse.
-        :rtype: list[Certificates]
+        :rtype: list[:class:`huaweicloudsdkccm.v1.Certificates`]
         """
         return self._certificates
 
@@ -85,7 +92,7 @@ class ListCertificateResponse(SdkResponse):
         证书列表，详情请参见**Certificates**字段数据结构说明。
 
         :param certificates: The certificates of this ListCertificateResponse.
-        :type: list[Certificates]
+        :type certificates: list[:class:`huaweicloudsdkccm.v1.Certificates`]
         """
         self._certificates = certificates
 

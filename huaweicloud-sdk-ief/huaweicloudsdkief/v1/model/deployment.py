@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Deployment:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class Deployment:
     }
 
     def __init__(self, name=None, description=None, source=None, group_id=None, node_ids=None, tags=None, deployment=None):
-        """Deployment - a model defined in huaweicloud sdk"""
+        """Deployment
+
+        The model defined in huaweicloud sdk
+
+        :param name: 部署名称
+        :type name: str
+        :param description: 部署描述
+        :type description: str
+        :param source: 应用部署来源: 边缘市场(iem) or 自定义(userdefined)
+        :type source: str
+        :param group_id: 应用部署到指定节点组，与node_ids二选一
+        :type group_id: str
+        :param node_ids: 应用部署到指定节点，当前只支持一个边缘节点
+        :type node_ids: list[str]
+        :param tags: 节点属性
+        :type tags: list[:class:`huaweicloudsdkief.v1.Attributes`]
+        :param deployment: 
+        :type deployment: :class:`huaweicloudsdkief.v1.CreateAppsInDeploymentV3`
+        """
         
         
 
@@ -85,7 +102,7 @@ class Deployment:
         部署名称
 
         :param name: The name of this Deployment.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -107,7 +124,7 @@ class Deployment:
         部署描述
 
         :param description: The description of this Deployment.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -129,7 +146,7 @@ class Deployment:
         应用部署来源: 边缘市场(iem) or 自定义(userdefined)
 
         :param source: The source of this Deployment.
-        :type: str
+        :type source: str
         """
         self._source = source
 
@@ -151,7 +168,7 @@ class Deployment:
         应用部署到指定节点组，与node_ids二选一
 
         :param group_id: The group_id of this Deployment.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -173,7 +190,7 @@ class Deployment:
         应用部署到指定节点，当前只支持一个边缘节点
 
         :param node_ids: The node_ids of this Deployment.
-        :type: list[str]
+        :type node_ids: list[str]
         """
         self._node_ids = node_ids
 
@@ -184,7 +201,7 @@ class Deployment:
         节点属性
 
         :return: The tags of this Deployment.
-        :rtype: list[Attributes]
+        :rtype: list[:class:`huaweicloudsdkief.v1.Attributes`]
         """
         return self._tags
 
@@ -195,7 +212,7 @@ class Deployment:
         节点属性
 
         :param tags: The tags of this Deployment.
-        :type: list[Attributes]
+        :type tags: list[:class:`huaweicloudsdkief.v1.Attributes`]
         """
         self._tags = tags
 
@@ -205,7 +222,7 @@ class Deployment:
 
 
         :return: The deployment of this Deployment.
-        :rtype: CreateAppsInDeploymentV3
+        :rtype: :class:`huaweicloudsdkief.v1.CreateAppsInDeploymentV3`
         """
         return self._deployment
 
@@ -215,7 +232,7 @@ class Deployment:
 
 
         :param deployment: The deployment of this Deployment.
-        :type: CreateAppsInDeploymentV3
+        :type deployment: :class:`huaweicloudsdkief.v1.CreateAppsInDeploymentV3`
         """
         self._deployment = deployment
 

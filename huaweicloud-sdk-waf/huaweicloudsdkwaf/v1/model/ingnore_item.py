@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IngnoreItem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class IngnoreItem:
     }
 
     def __init__(self, id=None, policyid=None, timestamp=None, description=None, status=None, url=None, rule=None, domain=None, url_logic=None, advanced=None):
-        """IngnoreItem - a model defined in huaweicloud sdk"""
+        """IngnoreItem
+
+        The model defined in huaweicloud sdk
+
+        :param id: 规则id
+        :type id: str
+        :param policyid: 策略id
+        :type policyid: str
+        :param timestamp: 创建规则的时间戳
+        :type timestamp: int
+        :param description: 规则描述
+        :type description: str
+        :param status: 规则状态，0：关闭，1：开启
+        :type status: int
+        :param url: 防篡改规则防护的url，需要填写标准的url格式，例如/admin/xxx或者/admin/*,以\&quot;*\&quot;号结尾代表路径前缀
+        :type url: str
+        :param rule: 屏蔽的规则，可以是命中规则id，对应防护事件的命中规则；或者所有规则（所有规则：all）；或者攻击类型枚举（XSS攻击：xss，sqli，命令注入：cmdi，恶意爬虫：robot，本地文件包含：lfi，远程文件包含：rfi，网站木马：webshell，cc攻击：cc，精准防护：custom_custom，IP黑白名单：custom_whiteblackip，地理位置访问控制：custom_geoip，防篡改：antitamper，反爬虫：anticrawler，网站信息防泄漏：leakage，非法请求：illegal，其它类型攻击：vuln）
+        :type rule: str
+        :param domain: 防护的域名
+        :type domain: list[str]
+        :param url_logic: url匹配逻辑（prefix：前缀匹配，equal：全等）
+        :type url_logic: str
+        :param advanced: 
+        :type advanced: :class:`huaweicloudsdkwaf.v1.Advance`
+        """
         
         
 
@@ -103,7 +126,7 @@ class IngnoreItem:
         规则id
 
         :param id: The id of this IngnoreItem.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -125,7 +148,7 @@ class IngnoreItem:
         策略id
 
         :param policyid: The policyid of this IngnoreItem.
-        :type: str
+        :type policyid: str
         """
         self._policyid = policyid
 
@@ -147,7 +170,7 @@ class IngnoreItem:
         创建规则的时间戳
 
         :param timestamp: The timestamp of this IngnoreItem.
-        :type: int
+        :type timestamp: int
         """
         self._timestamp = timestamp
 
@@ -169,7 +192,7 @@ class IngnoreItem:
         规则描述
 
         :param description: The description of this IngnoreItem.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -191,7 +214,7 @@ class IngnoreItem:
         规则状态，0：关闭，1：开启
 
         :param status: The status of this IngnoreItem.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -213,7 +236,7 @@ class IngnoreItem:
         防篡改规则防护的url，需要填写标准的url格式，例如/admin/xxx或者/admin/*,以\"*\"号结尾代表路径前缀
 
         :param url: The url of this IngnoreItem.
-        :type: str
+        :type url: str
         """
         self._url = url
 
@@ -235,7 +258,7 @@ class IngnoreItem:
         屏蔽的规则，可以是命中规则id，对应防护事件的命中规则；或者所有规则（所有规则：all）；或者攻击类型枚举（XSS攻击：xss，sqli，命令注入：cmdi，恶意爬虫：robot，本地文件包含：lfi，远程文件包含：rfi，网站木马：webshell，cc攻击：cc，精准防护：custom_custom，IP黑白名单：custom_whiteblackip，地理位置访问控制：custom_geoip，防篡改：antitamper，反爬虫：anticrawler，网站信息防泄漏：leakage，非法请求：illegal，其它类型攻击：vuln）
 
         :param rule: The rule of this IngnoreItem.
-        :type: str
+        :type rule: str
         """
         self._rule = rule
 
@@ -257,7 +280,7 @@ class IngnoreItem:
         防护的域名
 
         :param domain: The domain of this IngnoreItem.
-        :type: list[str]
+        :type domain: list[str]
         """
         self._domain = domain
 
@@ -279,7 +302,7 @@ class IngnoreItem:
         url匹配逻辑（prefix：前缀匹配，equal：全等）
 
         :param url_logic: The url_logic of this IngnoreItem.
-        :type: str
+        :type url_logic: str
         """
         self._url_logic = url_logic
 
@@ -289,7 +312,7 @@ class IngnoreItem:
 
 
         :return: The advanced of this IngnoreItem.
-        :rtype: Advance
+        :rtype: :class:`huaweicloudsdkwaf.v1.Advance`
         """
         return self._advanced
 
@@ -299,7 +322,7 @@ class IngnoreItem:
 
 
         :param advanced: The advanced of this IngnoreItem.
-        :type: Advance
+        :type advanced: :class:`huaweicloudsdkwaf.v1.Advance`
         """
         self._advanced = advanced
 

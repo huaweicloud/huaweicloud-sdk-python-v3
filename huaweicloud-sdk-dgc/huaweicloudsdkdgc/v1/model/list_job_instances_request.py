@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListJobInstancesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class ListJobInstancesRequest:
     }
 
     def __init__(self):
-        """ListJobInstancesRequest - a model defined in huaweicloud sdk"""
+        """ListJobInstancesRequest
+
+        The model defined in huaweicloud sdk
+
+        """
         
         
         self.discriminator = None

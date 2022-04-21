@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListFlavorsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ListFlavorsRequest:
     }
 
     def __init__(self, marker=None, limit=None, page_reverse=None, id=None, name=None, type=None, shared=None):
-        """ListFlavorsRequest - a model defined in huaweicloud sdk"""
+        """ListFlavorsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param marker: 上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
+        :type marker: str
+        :param limit: 每页返回的个数。
+        :type limit: int
+        :param page_reverse: 分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。  使用说明： - 必须与limit一起使用。
+        :type page_reverse: bool
+        :param id: 规格ID。  支持多值查询，查询条件格式：*id&#x3D;xxx&amp;id&#x3D;xxx*。
+        :type id: list[str]
+        :param name: 规格名称。   支持多值查询，查询条件格式：*name&#x3D;xxx&amp;name&#x3D;xxx*。
+        :type name: list[str]
+        :param type: L4和L7 分别表示四层和七层flavor，查询支持按type过滤。  支持多值查询，查询条件格式：*type&#x3D;xxx&amp;type&#x3D;xxx*。
+        :type type: list[str]
+        :param shared: 是否查询公共规格。取值： - true表示公共规格，所有租户可见。 - false表示私有规格，为当前租户所有。
+        :type shared: bool
+        """
         
         
 
@@ -88,7 +105,7 @@ class ListFlavorsRequest:
         上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
         :param marker: The marker of this ListFlavorsRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -110,7 +127,7 @@ class ListFlavorsRequest:
         每页返回的个数。
 
         :param limit: The limit of this ListFlavorsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -132,7 +149,7 @@ class ListFlavorsRequest:
         分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。  使用说明： - 必须与limit一起使用。
 
         :param page_reverse: The page_reverse of this ListFlavorsRequest.
-        :type: bool
+        :type page_reverse: bool
         """
         self._page_reverse = page_reverse
 
@@ -154,7 +171,7 @@ class ListFlavorsRequest:
         规格ID。  支持多值查询，查询条件格式：*id=xxx&id=xxx*。
 
         :param id: The id of this ListFlavorsRequest.
-        :type: list[str]
+        :type id: list[str]
         """
         self._id = id
 
@@ -176,7 +193,7 @@ class ListFlavorsRequest:
         规格名称。   支持多值查询，查询条件格式：*name=xxx&name=xxx*。
 
         :param name: The name of this ListFlavorsRequest.
-        :type: list[str]
+        :type name: list[str]
         """
         self._name = name
 
@@ -198,7 +215,7 @@ class ListFlavorsRequest:
         L4和L7 分别表示四层和七层flavor，查询支持按type过滤。  支持多值查询，查询条件格式：*type=xxx&type=xxx*。
 
         :param type: The type of this ListFlavorsRequest.
-        :type: list[str]
+        :type type: list[str]
         """
         self._type = type
 
@@ -220,7 +237,7 @@ class ListFlavorsRequest:
         是否查询公共规格。取值： - true表示公共规格，所有租户可见。 - false表示私有规格，为当前租户所有。
 
         :param shared: The shared of this ListFlavorsRequest.
-        :type: bool
+        :type shared: bool
         """
         self._shared = shared
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NeutronDeleteSecurityGroupRuleRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class NeutronDeleteSecurityGroupRuleRequest:
     }
 
     def __init__(self, security_group_rule_id=None):
-        """NeutronDeleteSecurityGroupRuleRequest - a model defined in huaweicloud sdk"""
+        """NeutronDeleteSecurityGroupRuleRequest
+
+        The model defined in huaweicloud sdk
+
+        :param security_group_rule_id: 安全组规则ID
+        :type security_group_rule_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class NeutronDeleteSecurityGroupRuleRequest:
         安全组规则ID
 
         :param security_group_rule_id: The security_group_rule_id of this NeutronDeleteSecurityGroupRuleRequest.
-        :type: str
+        :type security_group_rule_id: str
         """
         self._security_group_rule_id = security_group_rule_id
 

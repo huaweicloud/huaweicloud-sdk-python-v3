@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DailyData:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class DailyData:
     }
 
     def __init__(self, period_start=None, bps_in=None, bps_attack=None, total_bps=None, pps_in=None, pps_attack=None, total_pps=None):
-        """DailyData - a model defined in huaweicloud sdk"""
+        """DailyData
+
+        The model defined in huaweicloud sdk
+
+        :param period_start: 开始时间
+        :type period_start: int
+        :param bps_in: 入流量（bit/s）
+        :type bps_in: int
+        :param bps_attack: 攻击流量（bit/s）
+        :type bps_attack: int
+        :param total_bps: 总流量
+        :type total_bps: int
+        :param pps_in: 入报文速率（个/s）
+        :type pps_in: int
+        :param pps_attack: 攻击文速率（个/s）
+        :type pps_attack: int
+        :param total_pps: 总报文速率
+        :type total_pps: int
+        """
         
         
 
@@ -81,7 +98,7 @@ class DailyData:
         开始时间
 
         :param period_start: The period_start of this DailyData.
-        :type: int
+        :type period_start: int
         """
         self._period_start = period_start
 
@@ -103,7 +120,7 @@ class DailyData:
         入流量（bit/s）
 
         :param bps_in: The bps_in of this DailyData.
-        :type: int
+        :type bps_in: int
         """
         self._bps_in = bps_in
 
@@ -125,7 +142,7 @@ class DailyData:
         攻击流量（bit/s）
 
         :param bps_attack: The bps_attack of this DailyData.
-        :type: int
+        :type bps_attack: int
         """
         self._bps_attack = bps_attack
 
@@ -147,7 +164,7 @@ class DailyData:
         总流量
 
         :param total_bps: The total_bps of this DailyData.
-        :type: int
+        :type total_bps: int
         """
         self._total_bps = total_bps
 
@@ -169,7 +186,7 @@ class DailyData:
         入报文速率（个/s）
 
         :param pps_in: The pps_in of this DailyData.
-        :type: int
+        :type pps_in: int
         """
         self._pps_in = pps_in
 
@@ -191,7 +208,7 @@ class DailyData:
         攻击文速率（个/s）
 
         :param pps_attack: The pps_attack of this DailyData.
-        :type: int
+        :type pps_attack: int
         """
         self._pps_attack = pps_attack
 
@@ -213,7 +230,7 @@ class DailyData:
         总报文速率
 
         :param total_pps: The total_pps of this DailyData.
-        :type: int
+        :type total_pps: int
         """
         self._total_pps = total_pps
 

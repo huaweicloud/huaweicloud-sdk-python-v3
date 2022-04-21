@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateResetTracksTaskRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateResetTracksTaskRequest:
     }
 
     def __init__(self, body=None):
-        """CreateResetTracksTaskRequest - a model defined in huaweicloud sdk"""
+        """CreateResetTracksTaskRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateResetTracksTaskRequest
+        :type body: :class:`huaweicloudsdkmpc.v1.CreateResetTracksReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateResetTracksTaskRequest:
 
 
         :return: The body of this CreateResetTracksTaskRequest.
-        :rtype: CreateResetTracksReq
+        :rtype: :class:`huaweicloudsdkmpc.v1.CreateResetTracksReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateResetTracksTaskRequest:
 
 
         :param body: The body of this CreateResetTracksTaskRequest.
-        :type: CreateResetTracksReq
+        :type body: :class:`huaweicloudsdkmpc.v1.CreateResetTracksReq`
         """
         self._body = body
 

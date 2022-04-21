@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Environment:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class Environment:
     }
 
     def __init__(self, environment_id=None, environment_name=None, environment_description=None, is_default=None):
-        """Environment - a model defined in huaweicloud sdk"""
+        """Environment
+
+        The model defined in huaweicloud sdk
+
+        :param environment_id: 环境分组id
+        :type environment_id: str
+        :param environment_name: 环境分组名
+        :type environment_name: str
+        :param environment_description: 环境分组描述
+        :type environment_description: str
+        :param is_default: 是否是默认环境
+        :type is_default: bool
+        """
         
         
 
@@ -73,7 +84,7 @@ class Environment:
         环境分组id
 
         :param environment_id: The environment_id of this Environment.
-        :type: str
+        :type environment_id: str
         """
         self._environment_id = environment_id
 
@@ -95,7 +106,7 @@ class Environment:
         环境分组名
 
         :param environment_name: The environment_name of this Environment.
-        :type: str
+        :type environment_name: str
         """
         self._environment_name = environment_name
 
@@ -117,7 +128,7 @@ class Environment:
         环境分组描述
 
         :param environment_description: The environment_description of this Environment.
-        :type: str
+        :type environment_description: str
         """
         self._environment_description = environment_description
 
@@ -139,7 +150,7 @@ class Environment:
         是否是默认环境
 
         :param is_default: The is_default of this Environment.
-        :type: bool
+        :type is_default: bool
         """
         self._is_default = is_default
 

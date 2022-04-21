@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListListenersByTagsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListListenersByTagsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, resources=None):
-        """ListListenersByTagsResponse - a model defined in huaweicloud sdk"""
+        """ListListenersByTagsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total_count: 总记录数。当resources为空时，表示名称为matches字段中指定的value的资源个数；resources不为空时，表示和tags字段匹配的资源的个数。
+        :type total_count: int
+        :param resources: 根据tag查询出的资源对象。 当请求中的action为filters，返回体中有该字段。 当请求中的action为count时，返回体中无该字段。
+        :type resources: list[:class:`huaweicloudsdkelb.v2.ResourcesByTag`]
+        """
         
         super(ListListenersByTagsResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListListenersByTagsResponse(SdkResponse):
         总记录数。当resources为空时，表示名称为matches字段中指定的value的资源个数；resources不为空时，表示和tags字段匹配的资源的个数。
 
         :param total_count: The total_count of this ListListenersByTagsResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 
@@ -74,7 +81,7 @@ class ListListenersByTagsResponse(SdkResponse):
         根据tag查询出的资源对象。 当请求中的action为filters，返回体中有该字段。 当请求中的action为count时，返回体中无该字段。
 
         :return: The resources of this ListListenersByTagsResponse.
-        :rtype: list[ResourcesByTag]
+        :rtype: list[:class:`huaweicloudsdkelb.v2.ResourcesByTag`]
         """
         return self._resources
 
@@ -85,7 +92,7 @@ class ListListenersByTagsResponse(SdkResponse):
         根据tag查询出的资源对象。 当请求中的action为filters，返回体中有该字段。 当请求中的action为count时，返回体中无该字段。
 
         :param resources: The resources of this ListListenersByTagsResponse.
-        :type: list[ResourcesByTag]
+        :type resources: list[:class:`huaweicloudsdkelb.v2.ResourcesByTag`]
         """
         self._resources = resources
 

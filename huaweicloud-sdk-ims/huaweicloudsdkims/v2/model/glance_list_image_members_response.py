@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GlanceListImageMembersResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class GlanceListImageMembersResponse(SdkResponse):
     }
 
     def __init__(self, members=None, schema=None):
-        """GlanceListImageMembersResponse - a model defined in huaweicloud sdk"""
+        """GlanceListImageMembersResponse
+
+        The model defined in huaweicloud sdk
+
+        :param members: 成员信息
+        :type members: list[:class:`huaweicloudsdkims.v2.GlanceImageMembers`]
+        :param schema: 视图信息
+        :type schema: str
+        """
         
         super(GlanceListImageMembersResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class GlanceListImageMembersResponse(SdkResponse):
         成员信息
 
         :return: The members of this GlanceListImageMembersResponse.
-        :rtype: list[GlanceImageMembers]
+        :rtype: list[:class:`huaweicloudsdkims.v2.GlanceImageMembers`]
         """
         return self._members
 
@@ -63,7 +70,7 @@ class GlanceListImageMembersResponse(SdkResponse):
         成员信息
 
         :param members: The members of this GlanceListImageMembersResponse.
-        :type: list[GlanceImageMembers]
+        :type members: list[:class:`huaweicloudsdkims.v2.GlanceImageMembers`]
         """
         self._members = members
 
@@ -85,7 +92,7 @@ class GlanceListImageMembersResponse(SdkResponse):
         视图信息
 
         :param schema: The schema of this GlanceListImageMembersResponse.
-        :type: str
+        :type schema: str
         """
         self._schema = schema
 

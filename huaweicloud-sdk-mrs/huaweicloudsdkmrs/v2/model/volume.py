@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Volume:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Volume:
     }
 
     def __init__(self, type=None, size=None):
-        """Volume - a model defined in huaweicloud sdk"""
+        """Volume
+
+        The model defined in huaweicloud sdk
+
+        :param type: 磁盘类型。 磁盘类型枚举值： - SATA：普通IO磁盘类型。 - SAS：高IO磁盘类型。 - SSD：超高IO磁盘类型。 - GPSSD：通用型SSD磁盘类型
+        :type type: str
+        :param size: 数据盘大小，容量单位为GB，输入大小范围为[10,32768]。
+        :type size: int
+        """
         
         
 
@@ -61,7 +68,7 @@ class Volume:
         磁盘类型。 磁盘类型枚举值： - SATA：普通IO磁盘类型。 - SAS：高IO磁盘类型。 - SSD：超高IO磁盘类型。 - GPSSD：通用型SSD磁盘类型
 
         :param type: The type of this Volume.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -83,7 +90,7 @@ class Volume:
         数据盘大小，容量单位为GB，输入大小范围为[10,32768]。
 
         :param size: The size of this Volume.
-        :type: int
+        :type size: int
         """
         self._size = size
 

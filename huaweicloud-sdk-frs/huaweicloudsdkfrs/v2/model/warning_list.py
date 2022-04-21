@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class WarningList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class WarningList:
     }
 
     def __init__(self, warning_code=None, warning_msg=None):
-        """WarningList - a model defined in huaweicloud sdk"""
+        """WarningList
+
+        The model defined in huaweicloud sdk
+
+        :param warning_code: 警告ID。
+        :type warning_code: int
+        :param warning_msg: 告警消息。
+        :type warning_msg: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class WarningList:
         警告ID。
 
         :param warning_code: The warning_code of this WarningList.
-        :type: int
+        :type warning_code: int
         """
         self._warning_code = warning_code
 
@@ -85,7 +92,7 @@ class WarningList:
         告警消息。
 
         :param warning_msg: The warning_msg of this WarningList.
-        :type: str
+        :type warning_msg: str
         """
         self._warning_msg = warning_msg
 

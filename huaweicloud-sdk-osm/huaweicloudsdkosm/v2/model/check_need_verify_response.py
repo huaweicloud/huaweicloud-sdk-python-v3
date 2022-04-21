@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CheckNeedVerifyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CheckNeedVerifyResponse(SdkResponse):
     }
 
     def __init__(self, need_verify_code=None, expire_time=None):
-        """CheckNeedVerifyResponse - a model defined in huaweicloud sdk"""
+        """CheckNeedVerifyResponse
+
+        The model defined in huaweicloud sdk
+
+        :param need_verify_code: 是否需要验证
+        :type need_verify_code: int
+        :param expire_time: 过期时间
+        :type expire_time: datetime
+        """
         
         super(CheckNeedVerifyResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class CheckNeedVerifyResponse(SdkResponse):
         是否需要验证
 
         :param need_verify_code: The need_verify_code of this CheckNeedVerifyResponse.
-        :type: int
+        :type need_verify_code: int
         """
         self._need_verify_code = need_verify_code
 
@@ -85,7 +92,7 @@ class CheckNeedVerifyResponse(SdkResponse):
         过期时间
 
         :param expire_time: The expire_time of this CheckNeedVerifyResponse.
-        :type: datetime
+        :type expire_time: datetime
         """
         self._expire_time = expire_time
 

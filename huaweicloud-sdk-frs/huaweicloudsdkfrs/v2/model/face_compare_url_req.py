@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FaceCompareUrlReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class FaceCompareUrlReq:
     }
 
     def __init__(self, image1_url=None, image2_url=None):
-        """FaceCompareUrlReq - a model defined in huaweicloud sdk"""
+        """FaceCompareUrlReq
+
+        The model defined in huaweicloud sdk
+
+        :param image1_url: 图片的URL路径，目前仅支持华为云上OBS的URL，且人脸识别服务有权限读取该OBS桶的数据。 开通读取权限的操作请参见[服务授权](https://support.huaweicloud.com/api-face/face_02_0006.html)。  与image1_file、image1_base64三选一
+        :type image1_url: str
+        :param image2_url: 图片的URL路径，目前仅支持华为云上OBS的URL，且人脸识别服务有权限读取该OBS桶的数据。 开通读取权限的操作请参见[服务授权](https://support.huaweicloud.com/api-face/face_02_0006.html)。  与image2_file、image2_base64三选一
+        :type image2_url: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class FaceCompareUrlReq:
         图片的URL路径，目前仅支持华为云上OBS的URL，且人脸识别服务有权限读取该OBS桶的数据。 开通读取权限的操作请参见[服务授权](https://support.huaweicloud.com/api-face/face_02_0006.html)。  与image1_file、image1_base64三选一
 
         :param image1_url: The image1_url of this FaceCompareUrlReq.
-        :type: str
+        :type image1_url: str
         """
         self._image1_url = image1_url
 
@@ -83,7 +90,7 @@ class FaceCompareUrlReq:
         图片的URL路径，目前仅支持华为云上OBS的URL，且人脸识别服务有权限读取该OBS桶的数据。 开通读取权限的操作请参见[服务授权](https://support.huaweicloud.com/api-face/face_02_0006.html)。  与image2_file、image2_base64三选一
 
         :param image2_url: The image2_url of this FaceCompareUrlReq.
-        :type: str
+        :type image2_url: str
         """
         self._image2_url = image2_url
 

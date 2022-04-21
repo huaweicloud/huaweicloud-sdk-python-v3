@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Entities:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Entities:
     }
 
     def __init__(self, sub_jobs_total=None, sub_jobs=None):
-        """Entities - a model defined in huaweicloud sdk"""
+        """Entities
+
+        The model defined in huaweicloud sdk
+
+        :param sub_jobs_total: 子任务数量。没有子任务时为0
+        :type sub_jobs_total: int
+        :param sub_jobs: 每个子任务的执行信息。没有子任务时为空列表
+        :type sub_jobs: list[:class:`huaweicloudsdkbms.v1.SubJobs`]
+        """
         
         
 
@@ -63,7 +70,7 @@ class Entities:
         子任务数量。没有子任务时为0
 
         :param sub_jobs_total: The sub_jobs_total of this Entities.
-        :type: int
+        :type sub_jobs_total: int
         """
         self._sub_jobs_total = sub_jobs_total
 
@@ -74,7 +81,7 @@ class Entities:
         每个子任务的执行信息。没有子任务时为空列表
 
         :return: The sub_jobs of this Entities.
-        :rtype: list[SubJobs]
+        :rtype: list[:class:`huaweicloudsdkbms.v1.SubJobs`]
         """
         return self._sub_jobs
 
@@ -85,7 +92,7 @@ class Entities:
         每个子任务的执行信息。没有子任务时为空列表
 
         :param sub_jobs: The sub_jobs of this Entities.
-        :type: list[SubJobs]
+        :type sub_jobs: list[:class:`huaweicloudsdkbms.v1.SubJobs`]
         """
         self._sub_jobs = sub_jobs
 

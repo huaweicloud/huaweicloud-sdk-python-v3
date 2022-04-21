@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ProductSummary:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class ProductSummary:
     }
 
     def __init__(self, app_id=None, app_name=None, product_id=None, name=None, device_type=None, protocol_type=None, data_format=None, manufacturer_name=None, industry=None, description=None, create_time=None):
-        """ProductSummary - a model defined in huaweicloud sdk"""
+        """ProductSummary
+
+        The model defined in huaweicloud sdk
+
+        :param app_id: 资源空间ID。
+        :type app_id: str
+        :param app_name: 资源空间名称。
+        :type app_name: str
+        :param product_id: 产品ID，用于唯一标识一个产品，在物联网平台创建产品后由平台分配获得。
+        :type product_id: str
+        :param name: 产品名称。
+        :type name: str
+        :param device_type: 设备类型。
+        :type device_type: str
+        :param protocol_type: 设备使用的协议类型。取值范围：MQTT，CoAP，HTTP，HTTPS，Modbus，ONVIF， OPC-UA，OPC-DA，Other。
+        :type protocol_type: str
+        :param data_format: 设备上报数据的格式，取值范围：json，binary。
+        :type data_format: str
+        :param manufacturer_name: 厂商名称。
+        :type manufacturer_name: str
+        :param industry: 设备所属行业。
+        :type industry: str
+        :param description: 产品的描述信息。
+        :type description: str
+        :param create_time: 在物联网平台创建产品的时间，格式：yyyyMMdd&#39;T&#39;HHmmss&#39;Z&#39;，如20151212T121212Z。
+        :type create_time: str
+        """
         
         
 
@@ -108,7 +133,7 @@ class ProductSummary:
         资源空间ID。
 
         :param app_id: The app_id of this ProductSummary.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -130,7 +155,7 @@ class ProductSummary:
         资源空间名称。
 
         :param app_name: The app_name of this ProductSummary.
-        :type: str
+        :type app_name: str
         """
         self._app_name = app_name
 
@@ -152,7 +177,7 @@ class ProductSummary:
         产品ID，用于唯一标识一个产品，在物联网平台创建产品后由平台分配获得。
 
         :param product_id: The product_id of this ProductSummary.
-        :type: str
+        :type product_id: str
         """
         self._product_id = product_id
 
@@ -174,7 +199,7 @@ class ProductSummary:
         产品名称。
 
         :param name: The name of this ProductSummary.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -196,7 +221,7 @@ class ProductSummary:
         设备类型。
 
         :param device_type: The device_type of this ProductSummary.
-        :type: str
+        :type device_type: str
         """
         self._device_type = device_type
 
@@ -218,7 +243,7 @@ class ProductSummary:
         设备使用的协议类型。取值范围：MQTT，CoAP，HTTP，HTTPS，Modbus，ONVIF， OPC-UA，OPC-DA，Other。
 
         :param protocol_type: The protocol_type of this ProductSummary.
-        :type: str
+        :type protocol_type: str
         """
         self._protocol_type = protocol_type
 
@@ -240,7 +265,7 @@ class ProductSummary:
         设备上报数据的格式，取值范围：json，binary。
 
         :param data_format: The data_format of this ProductSummary.
-        :type: str
+        :type data_format: str
         """
         self._data_format = data_format
 
@@ -262,7 +287,7 @@ class ProductSummary:
         厂商名称。
 
         :param manufacturer_name: The manufacturer_name of this ProductSummary.
-        :type: str
+        :type manufacturer_name: str
         """
         self._manufacturer_name = manufacturer_name
 
@@ -284,7 +309,7 @@ class ProductSummary:
         设备所属行业。
 
         :param industry: The industry of this ProductSummary.
-        :type: str
+        :type industry: str
         """
         self._industry = industry
 
@@ -306,7 +331,7 @@ class ProductSummary:
         产品的描述信息。
 
         :param description: The description of this ProductSummary.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -328,7 +353,7 @@ class ProductSummary:
         在物联网平台创建产品的时间，格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
         :param create_time: The create_time of this ProductSummary.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 

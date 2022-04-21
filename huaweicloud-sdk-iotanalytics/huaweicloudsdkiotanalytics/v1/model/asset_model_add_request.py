@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AssetModelAddRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class AssetModelAddRequest:
     }
 
     def __init__(self, name=None, display_name=None, properties=None, analyses=None):
-        """AssetModelAddRequest - a model defined in huaweicloud sdk"""
+        """AssetModelAddRequest
+
+        The model defined in huaweicloud sdk
+
+        :param name: 模型名称，正则：\&quot;^[a-zA-Z][a-zA-Z0-9_-]{0,63}$\&quot;
+        :type name: str
+        :param display_name: 模型显示名称，正则：\&quot;^[\\\\u4E00-\\\\u9FA5A-Za-z0-9_@#.-]{1,64}$\&quot;
+        :type display_name: str
+        :param properties: 属性集，最多200个
+        :type properties: list[:class:`huaweicloudsdkiotanalytics.v1.PropertyModelRequest`]
+        :param analyses: 分析任务集，最多50个
+        :type analyses: list[:class:`huaweicloudsdkiotanalytics.v1.AnalysisModelRequest`]
+        """
         
         
 
@@ -72,7 +83,7 @@ class AssetModelAddRequest:
         模型名称，正则：\"^[a-zA-Z][a-zA-Z0-9_-]{0,63}$\"
 
         :param name: The name of this AssetModelAddRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -94,7 +105,7 @@ class AssetModelAddRequest:
         模型显示名称，正则：\"^[\\\\u4E00-\\\\u9FA5A-Za-z0-9_@#.-]{1,64}$\"
 
         :param display_name: The display_name of this AssetModelAddRequest.
-        :type: str
+        :type display_name: str
         """
         self._display_name = display_name
 
@@ -105,7 +116,7 @@ class AssetModelAddRequest:
         属性集，最多200个
 
         :return: The properties of this AssetModelAddRequest.
-        :rtype: list[PropertyModelRequest]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.PropertyModelRequest`]
         """
         return self._properties
 
@@ -116,7 +127,7 @@ class AssetModelAddRequest:
         属性集，最多200个
 
         :param properties: The properties of this AssetModelAddRequest.
-        :type: list[PropertyModelRequest]
+        :type properties: list[:class:`huaweicloudsdkiotanalytics.v1.PropertyModelRequest`]
         """
         self._properties = properties
 
@@ -127,7 +138,7 @@ class AssetModelAddRequest:
         分析任务集，最多50个
 
         :return: The analyses of this AssetModelAddRequest.
-        :rtype: list[AnalysisModelRequest]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.AnalysisModelRequest`]
         """
         return self._analyses
 
@@ -138,7 +149,7 @@ class AssetModelAddRequest:
         分析任务集，最多50个
 
         :param analyses: The analyses of this AssetModelAddRequest.
-        :type: list[AnalysisModelRequest]
+        :type analyses: list[:class:`huaweicloudsdkiotanalytics.v1.AnalysisModelRequest`]
         """
         self._analyses = analyses
 

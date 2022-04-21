@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListMetricItemsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListMetricItemsResponse(SdkResponse):
     }
 
     def __init__(self, meta_data=None, metrics=None):
-        """ListMetricItemsResponse - a model defined in huaweicloud sdk"""
+        """ListMetricItemsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param meta_data: 
+        :type meta_data: :class:`huaweicloudsdkaom.v2.MetaData`
+        :param metrics: 指标对象列表。
+        :type metrics: list[:class:`huaweicloudsdkaom.v2.MetricItemResultAPI`]
+        """
         
         super(ListMetricItemsResponse, self).__init__()
 
@@ -51,7 +58,7 @@ class ListMetricItemsResponse(SdkResponse):
 
 
         :return: The meta_data of this ListMetricItemsResponse.
-        :rtype: MetaData
+        :rtype: :class:`huaweicloudsdkaom.v2.MetaData`
         """
         return self._meta_data
 
@@ -61,7 +68,7 @@ class ListMetricItemsResponse(SdkResponse):
 
 
         :param meta_data: The meta_data of this ListMetricItemsResponse.
-        :type: MetaData
+        :type meta_data: :class:`huaweicloudsdkaom.v2.MetaData`
         """
         self._meta_data = meta_data
 
@@ -72,7 +79,7 @@ class ListMetricItemsResponse(SdkResponse):
         指标对象列表。
 
         :return: The metrics of this ListMetricItemsResponse.
-        :rtype: list[MetricItemResultAPI]
+        :rtype: list[:class:`huaweicloudsdkaom.v2.MetricItemResultAPI`]
         """
         return self._metrics
 
@@ -83,7 +90,7 @@ class ListMetricItemsResponse(SdkResponse):
         指标对象列表。
 
         :param metrics: The metrics of this ListMetricItemsResponse.
-        :type: list[MetricItemResultAPI]
+        :type metrics: list[:class:`huaweicloudsdkaom.v2.MetricItemResultAPI`]
         """
         self._metrics = metrics
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CompareTaskList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class CompareTaskList:
     }
 
     def __init__(self, compare_task_id=None, compare_type=None, compare_task_status=None, create_time=None, end_time=None):
-        """CompareTaskList - a model defined in huaweicloud sdk"""
+        """CompareTaskList
+
+        The model defined in huaweicloud sdk
+
+        :param compare_task_id: 对比任务的id。
+        :type compare_task_id: str
+        :param compare_type: 对比任务的类型。
+        :type compare_type: str
+        :param compare_task_status: 对比任务的状态。
+        :type compare_task_status: str
+        :param create_time: 对比开始时间。
+        :type create_time: str
+        :param end_time: 对比结束时间。
+        :type end_time: str
+        """
         
         
 
@@ -74,7 +87,7 @@ class CompareTaskList:
         对比任务的id。
 
         :param compare_task_id: The compare_task_id of this CompareTaskList.
-        :type: str
+        :type compare_task_id: str
         """
         self._compare_task_id = compare_task_id
 
@@ -96,7 +109,7 @@ class CompareTaskList:
         对比任务的类型。
 
         :param compare_type: The compare_type of this CompareTaskList.
-        :type: str
+        :type compare_type: str
         """
         self._compare_type = compare_type
 
@@ -118,7 +131,7 @@ class CompareTaskList:
         对比任务的状态。
 
         :param compare_task_status: The compare_task_status of this CompareTaskList.
-        :type: str
+        :type compare_task_status: str
         """
         self._compare_task_status = compare_task_status
 
@@ -140,7 +153,7 @@ class CompareTaskList:
         对比开始时间。
 
         :param create_time: The create_time of this CompareTaskList.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -162,7 +175,7 @@ class CompareTaskList:
         对比结束时间。
 
         :param end_time: The end_time of this CompareTaskList.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 

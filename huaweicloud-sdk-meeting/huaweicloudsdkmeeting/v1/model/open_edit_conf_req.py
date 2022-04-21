@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OpenEditConfReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class OpenEditConfReq:
     }
 
     def __init__(self, conference_id=None, subject=None, description=None, start_time=None, duration=None, time_zone_id=None, attendees=None, notify_setting=None, guest_passwd=None, audience_passwd=None, call_restriction=None, scope=None, audience_scope=None):
-        """OpenEditConfReq - a model defined in huaweicloud sdk"""
+        """OpenEditConfReq
+
+        The model defined in huaweicloud sdk
+
+        :param conference_id: 会议ID, 预约会议成功后分配的ID标识
+        :type conference_id: str
+        :param subject: 主题
+        :type subject: str
+        :param description: 描述
+        :type description: str
+        :param start_time: 会议开始时间（UTC时间）， 格式：yyyy-MM-dd HH:mm。说明：创建预约会议时，如果没有指定开始时间或填空串，则表示会议马上开始。
+        :type start_time: str
+        :param duration: 会议持续时长，单位分钟，取值范围[15,1440]。
+        :type duration: int
+        :param time_zone_id: 开始时间的时区信息。时区信息，参考时区映射关系。
+        :type time_zone_id: int
+        :param attendees: 与会者列表。该列表可以用于发送会议通知、会议提醒、会议开始时候进行自动邀请。
+        :type attendees: list[:class:`huaweicloudsdkmeeting.v1.OpenAttendeeEntity`]
+        :param notify_setting: 
+        :type notify_setting: :class:`huaweicloudsdkmeeting.v1.OpenNotifySetting`
+        :param guest_passwd: 自定义嘉宾入会密码, 4-16位数字，不能与观众密码相同；不指定则系统自动创建。
+        :type guest_passwd: str
+        :param audience_passwd: 自定义观众入会密码, 4-16位数字，不能与嘉宾密码相同；不指定则系统自动创建。
+        :type audience_passwd: str
+        :param call_restriction: 入会范围开关
+        :type call_restriction: bool
+        :param scope: 主持人、嘉宾入会范围  0: 所有用户 1: 非匿名用户（手机pstn入会视为匿名入会） 2: 企业内用户 3: 被邀请用户; 默认值 0。
+        :type scope: int
+        :param audience_scope: 观众入会范围 0: 所有用户 2: 企业内用户和被邀请用户; 默认值 0。
+        :type audience_scope: int
+        """
         
         
 
@@ -113,7 +142,7 @@ class OpenEditConfReq:
         会议ID, 预约会议成功后分配的ID标识
 
         :param conference_id: The conference_id of this OpenEditConfReq.
-        :type: str
+        :type conference_id: str
         """
         self._conference_id = conference_id
 
@@ -135,7 +164,7 @@ class OpenEditConfReq:
         主题
 
         :param subject: The subject of this OpenEditConfReq.
-        :type: str
+        :type subject: str
         """
         self._subject = subject
 
@@ -157,7 +186,7 @@ class OpenEditConfReq:
         描述
 
         :param description: The description of this OpenEditConfReq.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -179,7 +208,7 @@ class OpenEditConfReq:
         会议开始时间（UTC时间）， 格式：yyyy-MM-dd HH:mm。说明：创建预约会议时，如果没有指定开始时间或填空串，则表示会议马上开始。
 
         :param start_time: The start_time of this OpenEditConfReq.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -201,7 +230,7 @@ class OpenEditConfReq:
         会议持续时长，单位分钟，取值范围[15,1440]。
 
         :param duration: The duration of this OpenEditConfReq.
-        :type: int
+        :type duration: int
         """
         self._duration = duration
 
@@ -223,7 +252,7 @@ class OpenEditConfReq:
         开始时间的时区信息。时区信息，参考时区映射关系。
 
         :param time_zone_id: The time_zone_id of this OpenEditConfReq.
-        :type: int
+        :type time_zone_id: int
         """
         self._time_zone_id = time_zone_id
 
@@ -234,7 +263,7 @@ class OpenEditConfReq:
         与会者列表。该列表可以用于发送会议通知、会议提醒、会议开始时候进行自动邀请。
 
         :return: The attendees of this OpenEditConfReq.
-        :rtype: list[OpenAttendeeEntity]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.OpenAttendeeEntity`]
         """
         return self._attendees
 
@@ -245,7 +274,7 @@ class OpenEditConfReq:
         与会者列表。该列表可以用于发送会议通知、会议提醒、会议开始时候进行自动邀请。
 
         :param attendees: The attendees of this OpenEditConfReq.
-        :type: list[OpenAttendeeEntity]
+        :type attendees: list[:class:`huaweicloudsdkmeeting.v1.OpenAttendeeEntity`]
         """
         self._attendees = attendees
 
@@ -255,7 +284,7 @@ class OpenEditConfReq:
 
 
         :return: The notify_setting of this OpenEditConfReq.
-        :rtype: OpenNotifySetting
+        :rtype: :class:`huaweicloudsdkmeeting.v1.OpenNotifySetting`
         """
         return self._notify_setting
 
@@ -265,7 +294,7 @@ class OpenEditConfReq:
 
 
         :param notify_setting: The notify_setting of this OpenEditConfReq.
-        :type: OpenNotifySetting
+        :type notify_setting: :class:`huaweicloudsdkmeeting.v1.OpenNotifySetting`
         """
         self._notify_setting = notify_setting
 
@@ -287,7 +316,7 @@ class OpenEditConfReq:
         自定义嘉宾入会密码, 4-16位数字，不能与观众密码相同；不指定则系统自动创建。
 
         :param guest_passwd: The guest_passwd of this OpenEditConfReq.
-        :type: str
+        :type guest_passwd: str
         """
         self._guest_passwd = guest_passwd
 
@@ -309,7 +338,7 @@ class OpenEditConfReq:
         自定义观众入会密码, 4-16位数字，不能与嘉宾密码相同；不指定则系统自动创建。
 
         :param audience_passwd: The audience_passwd of this OpenEditConfReq.
-        :type: str
+        :type audience_passwd: str
         """
         self._audience_passwd = audience_passwd
 
@@ -331,7 +360,7 @@ class OpenEditConfReq:
         入会范围开关
 
         :param call_restriction: The call_restriction of this OpenEditConfReq.
-        :type: bool
+        :type call_restriction: bool
         """
         self._call_restriction = call_restriction
 
@@ -353,7 +382,7 @@ class OpenEditConfReq:
         主持人、嘉宾入会范围  0: 所有用户 1: 非匿名用户（手机pstn入会视为匿名入会） 2: 企业内用户 3: 被邀请用户; 默认值 0。
 
         :param scope: The scope of this OpenEditConfReq.
-        :type: int
+        :type scope: int
         """
         self._scope = scope
 
@@ -375,7 +404,7 @@ class OpenEditConfReq:
         观众入会范围 0: 所有用户 2: 企业内用户和被邀请用户; 默认值 0。
 
         :param audience_scope: The audience_scope of this OpenEditConfReq.
-        :type: int
+        :type audience_scope: int
         """
         self._audience_scope = audience_scope
 

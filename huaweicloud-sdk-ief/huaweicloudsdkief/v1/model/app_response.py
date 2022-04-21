@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AppResponse:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class AppResponse:
     }
 
     def __init__(self, id=None, name=None, alias=None, description=None, icon_url=None, created_at=None, project_id=None, visibility=None, app_versions=None):
-        """AppResponse - a model defined in huaweicloud sdk"""
+        """AppResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 应用模板ID
+        :type id: str
+        :param name: 应用模板名称，只允许英文小写字母、数字、中划线，最大长度32, 英文小写字母或数字开头和结尾 Name为必填字段，且本租户中唯一
+        :type name: str
+        :param alias: 应用模板别名，中文英文字母、数字、中划线、下划线，最大64字符
+        :type alias: str
+        :param description: 应用模板描述，最大长度255，不允许^ ~ # $ % &amp; * &lt; &gt; ( ) [ ] { } &#39; \&quot; \\
+        :type description: str
+        :param icon_url: 应用图标存储url地址，最大长度2083
+        :type icon_url: str
+        :param created_at: 创建时间
+        :type created_at: str
+        :param project_id: 项目ID
+        :type project_id: str
+        :param visibility: 模板类型
+        :type visibility: str
+        :param app_versions: app详情
+        :type app_versions: list[:class:`huaweicloudsdkief.v1.AppVersionDetail`]
+        """
         
         
 
@@ -89,7 +110,7 @@ class AppResponse:
         应用模板ID
 
         :param id: The id of this AppResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -111,7 +132,7 @@ class AppResponse:
         应用模板名称，只允许英文小写字母、数字、中划线，最大长度32, 英文小写字母或数字开头和结尾 Name为必填字段，且本租户中唯一
 
         :param name: The name of this AppResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -133,7 +154,7 @@ class AppResponse:
         应用模板别名，中文英文字母、数字、中划线、下划线，最大64字符
 
         :param alias: The alias of this AppResponse.
-        :type: str
+        :type alias: str
         """
         self._alias = alias
 
@@ -155,7 +176,7 @@ class AppResponse:
         应用模板描述，最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
         :param description: The description of this AppResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -177,7 +198,7 @@ class AppResponse:
         应用图标存储url地址，最大长度2083
 
         :param icon_url: The icon_url of this AppResponse.
-        :type: str
+        :type icon_url: str
         """
         self._icon_url = icon_url
 
@@ -199,7 +220,7 @@ class AppResponse:
         创建时间
 
         :param created_at: The created_at of this AppResponse.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -221,7 +242,7 @@ class AppResponse:
         项目ID
 
         :param project_id: The project_id of this AppResponse.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -243,7 +264,7 @@ class AppResponse:
         模板类型
 
         :param visibility: The visibility of this AppResponse.
-        :type: str
+        :type visibility: str
         """
         self._visibility = visibility
 
@@ -254,7 +275,7 @@ class AppResponse:
         app详情
 
         :return: The app_versions of this AppResponse.
-        :rtype: list[AppVersionDetail]
+        :rtype: list[:class:`huaweicloudsdkief.v1.AppVersionDetail`]
         """
         return self._app_versions
 
@@ -265,7 +286,7 @@ class AppResponse:
         app详情
 
         :param app_versions: The app_versions of this AppResponse.
-        :type: list[AppVersionDetail]
+        :type app_versions: list[:class:`huaweicloudsdkief.v1.AppVersionDetail`]
         """
         self._app_versions = app_versions
 

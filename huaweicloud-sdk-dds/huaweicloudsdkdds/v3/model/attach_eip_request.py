@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AttachEipRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AttachEipRequest:
     }
 
     def __init__(self, node_id=None, body=None):
-        """AttachEipRequest - a model defined in huaweicloud sdk"""
+        """AttachEipRequest
+
+        The model defined in huaweicloud sdk
+
+        :param node_id: 需要绑定公网IP的节点ID。集群实例选择mongos节点，副本集实例选择primary或者secondary节点，单节点实例选择primary节点。
+        :type node_id: str
+        :param body: Body of the AttachEipRequest
+        :type body: :class:`huaweicloudsdkdds.v3.AttachEipRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class AttachEipRequest:
         需要绑定公网IP的节点ID。集群实例选择mongos节点，副本集实例选择primary或者secondary节点，单节点实例选择primary节点。
 
         :param node_id: The node_id of this AttachEipRequest.
-        :type: str
+        :type node_id: str
         """
         self._node_id = node_id
 
@@ -72,7 +79,7 @@ class AttachEipRequest:
 
 
         :return: The body of this AttachEipRequest.
-        :rtype: AttachEipRequestBody
+        :rtype: :class:`huaweicloudsdkdds.v3.AttachEipRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class AttachEipRequest:
 
 
         :param body: The body of this AttachEipRequest.
-        :type: AttachEipRequestBody
+        :type body: :class:`huaweicloudsdkdds.v3.AttachEipRequestBody`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RenewalResourcesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RenewalResourcesRequest:
     }
 
     def __init__(self, body=None):
-        """RenewalResourcesRequest - a model defined in huaweicloud sdk"""
+        """RenewalResourcesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the RenewalResourcesRequest
+        :type body: :class:`huaweicloudsdkbssintl.v2.RenewalResourcesReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class RenewalResourcesRequest:
 
 
         :return: The body of this RenewalResourcesRequest.
-        :rtype: RenewalResourcesReq
+        :rtype: :class:`huaweicloudsdkbssintl.v2.RenewalResourcesReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class RenewalResourcesRequest:
 
 
         :param body: The body of this RenewalResourcesRequest.
-        :type: RenewalResourcesReq
+        :type body: :class:`huaweicloudsdkbssintl.v2.RenewalResourcesReq`
         """
         self._body = body
 

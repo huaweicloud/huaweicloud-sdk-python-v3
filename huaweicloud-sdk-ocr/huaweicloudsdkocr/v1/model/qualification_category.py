@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QualificationCategory:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class QualificationCategory:
     }
 
     def __init__(self, category=None, initial_issue_date=None, issue_date=None, expiry_date=None):
-        """QualificationCategory - a model defined in huaweicloud sdk"""
+        """QualificationCategory
+
+        The model defined in huaweicloud sdk
+
+        :param category: 诚信考核信息（非必有，依赖对应从业资格证板式）。 
+        :type category: str
+        :param initial_issue_date: 初次领证日期（非必有，依赖对应从业资格证板式） 
+        :type initial_issue_date: str
+        :param issue_date: 有效起始日期（非必有，依赖对应从业资格证板式） 
+        :type issue_date: str
+        :param expiry_date: 有效期至 
+        :type expiry_date: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class QualificationCategory:
         诚信考核信息（非必有，依赖对应从业资格证板式）。 
 
         :param category: The category of this QualificationCategory.
-        :type: str
+        :type category: str
         """
         self._category = category
 
@@ -95,7 +106,7 @@ class QualificationCategory:
         初次领证日期（非必有，依赖对应从业资格证板式） 
 
         :param initial_issue_date: The initial_issue_date of this QualificationCategory.
-        :type: str
+        :type initial_issue_date: str
         """
         self._initial_issue_date = initial_issue_date
 
@@ -117,7 +128,7 @@ class QualificationCategory:
         有效起始日期（非必有，依赖对应从业资格证板式） 
 
         :param issue_date: The issue_date of this QualificationCategory.
-        :type: str
+        :type issue_date: str
         """
         self._issue_date = issue_date
 
@@ -139,7 +150,7 @@ class QualificationCategory:
         有效期至 
 
         :param expiry_date: The expiry_date of this QualificationCategory.
-        :type: str
+        :type expiry_date: str
         """
         self._expiry_date = expiry_date
 

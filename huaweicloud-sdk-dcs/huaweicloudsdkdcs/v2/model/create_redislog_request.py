@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateRedislogRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CreateRedislogRequest:
     }
 
     def __init__(self, instance_id=None, query_time=None, log_type=None, replication_id=None):
-        """CreateRedislogRequest - a model defined in huaweicloud sdk"""
+        """CreateRedislogRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param query_time: 日期偏移量，表示从过去的n天开始查询，例如：传入0则表示查询今天的日志，传入7则表示查询过去7天的日志。最大支持0-7。
+        :type query_time: int
+        :param log_type: 返回日志的类型，当前仅支持Redis运行日志，类型为run
+        :type log_type: str
+        :param replication_id: 副本ID，可以从分片与副本中查询对应节点的副本ID
+        :type replication_id: str
+        """
         
         
 
@@ -71,7 +82,7 @@ class CreateRedislogRequest:
         实例ID。
 
         :param instance_id: The instance_id of this CreateRedislogRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -93,7 +104,7 @@ class CreateRedislogRequest:
         日期偏移量，表示从过去的n天开始查询，例如：传入0则表示查询今天的日志，传入7则表示查询过去7天的日志。最大支持0-7。
 
         :param query_time: The query_time of this CreateRedislogRequest.
-        :type: int
+        :type query_time: int
         """
         self._query_time = query_time
 
@@ -115,7 +126,7 @@ class CreateRedislogRequest:
         返回日志的类型，当前仅支持Redis运行日志，类型为run
 
         :param log_type: The log_type of this CreateRedislogRequest.
-        :type: str
+        :type log_type: str
         """
         self._log_type = log_type
 
@@ -137,7 +148,7 @@ class CreateRedislogRequest:
         副本ID，可以从分片与副本中查询对应节点的副本ID
 
         :param replication_id: The replication_id of this CreateRedislogRequest.
-        :type: str
+        :type replication_id: str
         """
         self._replication_id = replication_id
 

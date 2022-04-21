@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchCheckResultsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchCheckResultsRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """BatchCheckResultsRequest - a model defined in huaweicloud sdk"""
+        """BatchCheckResultsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 请求语言类型
+        :type x_language: str
+        :param body: Body of the BatchCheckResultsRequest
+        :type body: :class:`huaweicloudsdkdrs.v3.BatchQueryPrecheckResultReq`
+        """
         
         
 
@@ -63,7 +70,7 @@ class BatchCheckResultsRequest:
         请求语言类型
 
         :param x_language: The x_language of this BatchCheckResultsRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -73,7 +80,7 @@ class BatchCheckResultsRequest:
 
 
         :return: The body of this BatchCheckResultsRequest.
-        :rtype: BatchQueryPrecheckResultReq
+        :rtype: :class:`huaweicloudsdkdrs.v3.BatchQueryPrecheckResultReq`
         """
         return self._body
 
@@ -83,7 +90,7 @@ class BatchCheckResultsRequest:
 
 
         :param body: The body of this BatchCheckResultsRequest.
-        :type: BatchQueryPrecheckResultReq
+        :type body: :class:`huaweicloudsdkdrs.v3.BatchQueryPrecheckResultReq`
         """
         self._body = body
 

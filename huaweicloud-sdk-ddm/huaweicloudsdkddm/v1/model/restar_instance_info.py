@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestarInstanceInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RestarInstanceInfo:
     }
 
     def __init__(self, type=None):
-        """RestarInstanceInfo - a model defined in huaweicloud sdk"""
+        """RestarInstanceInfo
+
+        The model defined in huaweicloud sdk
+
+        :param type: 重启的类型，soft或者hard。 - soft表示软重启（只重启进程）。 - hard表示强制重启（重启虚拟机）。
+        :type type: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class RestarInstanceInfo:
         重启的类型，soft或者hard。 - soft表示软重启（只重启进程）。 - hard表示强制重启（重启虚拟机）。
 
         :param type: The type of this RestarInstanceInfo.
-        :type: str
+        :type type: str
         """
         self._type = type
 

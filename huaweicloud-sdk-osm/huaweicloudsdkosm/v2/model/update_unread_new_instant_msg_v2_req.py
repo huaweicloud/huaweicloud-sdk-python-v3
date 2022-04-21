@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateUnreadNewInstantMsgV2Req:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateUnreadNewInstantMsgV2Req:
     }
 
     def __init__(self, group_id=None):
-        """UpdateUnreadNewInstantMsgV2Req - a model defined in huaweicloud sdk"""
+        """UpdateUnreadNewInstantMsgV2Req
+
+        The model defined in huaweicloud sdk
+
+        :param group_id: 组id
+        :type group_id: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class UpdateUnreadNewInstantMsgV2Req:
         组id
 
         :param group_id: The group_id of this UpdateUnreadNewInstantMsgV2Req.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 

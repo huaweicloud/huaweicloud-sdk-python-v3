@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowAccessoryLimitsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowAccessoryLimitsResponse(SdkResponse):
     }
 
     def __init__(self, accessory_limit=None):
-        """ShowAccessoryLimitsResponse - a model defined in huaweicloud sdk"""
+        """ShowAccessoryLimitsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param accessory_limit: 
+        :type accessory_limit: :class:`huaweicloudsdkosm.v2.AccessoryLimitVo`
+        """
         
         super(ShowAccessoryLimitsResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class ShowAccessoryLimitsResponse(SdkResponse):
 
 
         :return: The accessory_limit of this ShowAccessoryLimitsResponse.
-        :rtype: AccessoryLimitVo
+        :rtype: :class:`huaweicloudsdkosm.v2.AccessoryLimitVo`
         """
         return self._accessory_limit
 
@@ -56,7 +61,7 @@ class ShowAccessoryLimitsResponse(SdkResponse):
 
 
         :param accessory_limit: The accessory_limit of this ShowAccessoryLimitsResponse.
-        :type: AccessoryLimitVo
+        :type accessory_limit: :class:`huaweicloudsdkosm.v2.AccessoryLimitVo`
         """
         self._accessory_limit = accessory_limit
 

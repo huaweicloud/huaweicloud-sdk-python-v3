@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApplyCertificateToHostRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ApplyCertificateToHostRequestBody:
     }
 
     def __init__(self, cloud_host_ids=None, premium_host_ids=None):
-        """ApplyCertificateToHostRequestBody - a model defined in huaweicloud sdk"""
+        """ApplyCertificateToHostRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param cloud_host_ids: 云模式HTTPS域名id，通过查询云模式防护域名列表（ListHost）接口获取
+        :type cloud_host_ids: list[str]
+        :param premium_host_ids: 独享模式HTTPS域名id，通过独享模式域名列表（ListPremiumHost）接口获取
+        :type premium_host_ids: list[str]
+        """
         
         
 
@@ -63,7 +70,7 @@ class ApplyCertificateToHostRequestBody:
         云模式HTTPS域名id，通过查询云模式防护域名列表（ListHost）接口获取
 
         :param cloud_host_ids: The cloud_host_ids of this ApplyCertificateToHostRequestBody.
-        :type: list[str]
+        :type cloud_host_ids: list[str]
         """
         self._cloud_host_ids = cloud_host_ids
 
@@ -85,7 +92,7 @@ class ApplyCertificateToHostRequestBody:
         独享模式HTTPS域名id，通过独享模式域名列表（ListPremiumHost）接口获取
 
         :param premium_host_ids: The premium_host_ids of this ApplyCertificateToHostRequestBody.
-        :type: list[str]
+        :type premium_host_ids: list[str]
         """
         self._premium_host_ids = premium_host_ids
 

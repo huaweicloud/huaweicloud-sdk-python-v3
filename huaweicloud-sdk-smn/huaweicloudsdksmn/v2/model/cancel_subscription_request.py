@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CancelSubscriptionRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CancelSubscriptionRequest:
     }
 
     def __init__(self, subscription_urn=None):
-        """CancelSubscriptionRequest - a model defined in huaweicloud sdk"""
+        """CancelSubscriptionRequest
+
+        The model defined in huaweicloud sdk
+
+        :param subscription_urn: 订阅者的唯一的资源标识，可通过[查询订阅者列表](https://support.huaweicloud.com/api-smn/ListSubscriptions.html)获取该标识。
+        :type subscription_urn: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class CancelSubscriptionRequest:
         订阅者的唯一的资源标识，可通过[查询订阅者列表](https://support.huaweicloud.com/api-smn/ListSubscriptions.html)获取该标识。
 
         :param subscription_urn: The subscription_urn of this CancelSubscriptionRequest.
-        :type: str
+        :type subscription_urn: str
         """
         self._subscription_urn = subscription_urn
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CancelCustomerOrderReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CancelCustomerOrderReq:
     }
 
     def __init__(self, order_id=None):
-        """CancelCustomerOrderReq - a model defined in huaweicloud sdk"""
+        """CancelCustomerOrderReq
+
+        The model defined in huaweicloud sdk
+
+        :param order_id: 订单ID。 取值为调用“查询订单列表”接口时响应消息中的“order_id”字段的值。
+        :type order_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class CancelCustomerOrderReq:
         订单ID。 取值为调用“查询订单列表”接口时响应消息中的“order_id”字段的值。
 
         :param order_id: The order_id of this CancelCustomerOrderReq.
-        :type: str
+        :type order_id: str
         """
         self._order_id = order_id
 

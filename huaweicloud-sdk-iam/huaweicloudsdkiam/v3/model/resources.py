@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Resources:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class Resources:
     }
 
     def __init__(self, max=None, min=None, quota=None, type=None, used=None):
-        """Resources - a model defined in huaweicloud sdk"""
+        """Resources
+
+        The model defined in huaweicloud sdk
+
+        :param max: 配额最大值。
+        :type max: int
+        :param min: 配额最小值。
+        :type min: int
+        :param quota: 当前配额。
+        :type quota: int
+        :param type: 配额类型。
+        :type type: str
+        :param used: 已使用的配额。
+        :type used: int
+        """
         
         
 
@@ -78,7 +91,7 @@ class Resources:
         配额最大值。
 
         :param max: The max of this Resources.
-        :type: int
+        :type max: int
         """
         self._max = max
 
@@ -100,7 +113,7 @@ class Resources:
         配额最小值。
 
         :param min: The min of this Resources.
-        :type: int
+        :type min: int
         """
         self._min = min
 
@@ -122,7 +135,7 @@ class Resources:
         当前配额。
 
         :param quota: The quota of this Resources.
-        :type: int
+        :type quota: int
         """
         self._quota = quota
 
@@ -144,7 +157,7 @@ class Resources:
         配额类型。
 
         :param type: The type of this Resources.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -166,7 +179,7 @@ class Resources:
         已使用的配额。
 
         :param used: The used of this Resources.
-        :type: int
+        :type used: int
         """
         self._used = used
 

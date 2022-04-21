@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateInstanceRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -64,7 +63,47 @@ class CreateInstanceRequestBody:
     }
 
     def __init__(self, name=None, datastore=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, port=None, password=None, disk_encryption_id=None, mode=None, flavor=None, backup_strategy=None, enterprise_project_id=None, ssl_option=None, dss_pool_id=None, server_group_policies=None, tags=None):
-        """CreateInstanceRequestBody - a model defined in huaweicloud sdk"""
+        """CreateInstanceRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param name: 实例名称。用于表示实例的名称，用于表示实例的名称，允许和已有名称重复。 取值范围：长度为4~64位，必须以字母开头（A~Z或a~z），区分大小写，可以包含字母、数字（0~9）、中划线（-）或者下划线（_），不能包含其他特殊字符。
+        :type name: str
+        :param datastore: 
+        :type datastore: :class:`huaweicloudsdkdds.v3.Datastore`
+        :param region: - 区域ID - 取值：非空。
+        :type region: str
+        :param availability_zone: 可用区ID。非专属云用户可以选择多个AZ，创建跨AZ的集群。专属云用户暂不支持创建跨AZ的集群。取值：非空，请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
+        :type availability_zone: str
+        :param vpc_id: 虚拟私有云ID。获取方法请参见《虚拟私有云API参考》中“VPC”的内容。 取值：非空，字符长度校验，严格UUID正则校验。
+        :type vpc_id: str
+        :param subnet_id: 子网ID。获取方法请参见《虚拟私有云API参考》中“子网”的内容。
+        :type subnet_id: str
+        :param security_group_id: 指定实例所属的安全组ID。 获取方法请参见《虚拟私有云API参考》中“安全组”的内容。
+        :type security_group_id: str
+        :param port: 数据库访问端口。 取值范围：2100~9500，以及27017、27018、27019。 不传该参数时，创建实例的访问端口默认为8635。
+        :type port: str
+        :param password: 数据库密码。 取值范围：长度为8~32位，必须是大写字母（A~Z）、小写字母（a~z）、数字（0~9）、特殊字符~!@#%^*-_&#x3D;+?的组合。 建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。
+        :type password: str
+        :param disk_encryption_id: 磁盘加密时的密钥ID，严格UUID正则校验。 不传该参数时，表示不进行磁盘加密。
+        :type disk_encryption_id: str
+        :param mode: 实例类型。支持集群、副本集、以及单节点。 取值   - Sharding   - ReplicaSet   - Single
+        :type mode: str
+        :param flavor: 实例规格详情。
+        :type flavor: list[:class:`huaweicloudsdkdds.v3.CreateInstanceFlavorOption`]
+        :param backup_strategy: 
+        :type backup_strategy: :class:`huaweicloudsdkdds.v3.BackupStrategy`
+        :param enterprise_project_id: 企业项目ID。
+        :type enterprise_project_id: str
+        :param ssl_option: SSL开关选项。 取值： - 取“0”，表示DDS实例默认不启用SSL连接。 - 取“1”，表示DDS实例默认启用SSL连接。 - 不传该参数时，默认启用SSL连接。
+        :type ssl_option: str
+        :param dss_pool_id: Dec用户专属存储ID，默认为空。仅Dec用户支持该参数。
+        :type dss_pool_id: str
+        :param server_group_policies: 创建新实例设置云服务器组关联的策略名称列表，仅专属云创建实例时有效。 取值    - 取“anti-affinity”，表示DDS实例开启反亲和部署，反亲和部署是出于高可用性考虑，将您的Primary、Secondary和Hidden节点分别创建在不同的物理机上。当前仅支持该值，不传该值默认不开启反亲和部署。
+        :type server_group_policies: list[str]
+        :param tags: 标签列表。单个实例总标签数上限20个。
+        :type tags: list[:class:`huaweicloudsdkdds.v3.TagWithKeyValue`]
+        """
         
         
 
@@ -134,7 +173,7 @@ class CreateInstanceRequestBody:
         实例名称。用于表示实例的名称，用于表示实例的名称，允许和已有名称重复。 取值范围：长度为4~64位，必须以字母开头（A~Z或a~z），区分大小写，可以包含字母、数字（0~9）、中划线（-）或者下划线（_），不能包含其他特殊字符。
 
         :param name: The name of this CreateInstanceRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -144,7 +183,7 @@ class CreateInstanceRequestBody:
 
 
         :return: The datastore of this CreateInstanceRequestBody.
-        :rtype: Datastore
+        :rtype: :class:`huaweicloudsdkdds.v3.Datastore`
         """
         return self._datastore
 
@@ -154,7 +193,7 @@ class CreateInstanceRequestBody:
 
 
         :param datastore: The datastore of this CreateInstanceRequestBody.
-        :type: Datastore
+        :type datastore: :class:`huaweicloudsdkdds.v3.Datastore`
         """
         self._datastore = datastore
 
@@ -176,7 +215,7 @@ class CreateInstanceRequestBody:
         - 区域ID - 取值：非空。
 
         :param region: The region of this CreateInstanceRequestBody.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -198,7 +237,7 @@ class CreateInstanceRequestBody:
         可用区ID。非专属云用户可以选择多个AZ，创建跨AZ的集群。专属云用户暂不支持创建跨AZ的集群。取值：非空，请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
 
         :param availability_zone: The availability_zone of this CreateInstanceRequestBody.
-        :type: str
+        :type availability_zone: str
         """
         self._availability_zone = availability_zone
 
@@ -220,7 +259,7 @@ class CreateInstanceRequestBody:
         虚拟私有云ID。获取方法请参见《虚拟私有云API参考》中“VPC”的内容。 取值：非空，字符长度校验，严格UUID正则校验。
 
         :param vpc_id: The vpc_id of this CreateInstanceRequestBody.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -242,7 +281,7 @@ class CreateInstanceRequestBody:
         子网ID。获取方法请参见《虚拟私有云API参考》中“子网”的内容。
 
         :param subnet_id: The subnet_id of this CreateInstanceRequestBody.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -264,7 +303,7 @@ class CreateInstanceRequestBody:
         指定实例所属的安全组ID。 获取方法请参见《虚拟私有云API参考》中“安全组”的内容。
 
         :param security_group_id: The security_group_id of this CreateInstanceRequestBody.
-        :type: str
+        :type security_group_id: str
         """
         self._security_group_id = security_group_id
 
@@ -286,7 +325,7 @@ class CreateInstanceRequestBody:
         数据库访问端口。 取值范围：2100~9500，以及27017、27018、27019。 不传该参数时，创建实例的访问端口默认为8635。
 
         :param port: The port of this CreateInstanceRequestBody.
-        :type: str
+        :type port: str
         """
         self._port = port
 
@@ -308,7 +347,7 @@ class CreateInstanceRequestBody:
         数据库密码。 取值范围：长度为8~32位，必须是大写字母（A~Z）、小写字母（a~z）、数字（0~9）、特殊字符~!@#%^*-_=+?的组合。 建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。
 
         :param password: The password of this CreateInstanceRequestBody.
-        :type: str
+        :type password: str
         """
         self._password = password
 
@@ -330,7 +369,7 @@ class CreateInstanceRequestBody:
         磁盘加密时的密钥ID，严格UUID正则校验。 不传该参数时，表示不进行磁盘加密。
 
         :param disk_encryption_id: The disk_encryption_id of this CreateInstanceRequestBody.
-        :type: str
+        :type disk_encryption_id: str
         """
         self._disk_encryption_id = disk_encryption_id
 
@@ -352,7 +391,7 @@ class CreateInstanceRequestBody:
         实例类型。支持集群、副本集、以及单节点。 取值   - Sharding   - ReplicaSet   - Single
 
         :param mode: The mode of this CreateInstanceRequestBody.
-        :type: str
+        :type mode: str
         """
         self._mode = mode
 
@@ -363,7 +402,7 @@ class CreateInstanceRequestBody:
         实例规格详情。
 
         :return: The flavor of this CreateInstanceRequestBody.
-        :rtype: list[CreateInstanceFlavorOption]
+        :rtype: list[:class:`huaweicloudsdkdds.v3.CreateInstanceFlavorOption`]
         """
         return self._flavor
 
@@ -374,7 +413,7 @@ class CreateInstanceRequestBody:
         实例规格详情。
 
         :param flavor: The flavor of this CreateInstanceRequestBody.
-        :type: list[CreateInstanceFlavorOption]
+        :type flavor: list[:class:`huaweicloudsdkdds.v3.CreateInstanceFlavorOption`]
         """
         self._flavor = flavor
 
@@ -384,7 +423,7 @@ class CreateInstanceRequestBody:
 
 
         :return: The backup_strategy of this CreateInstanceRequestBody.
-        :rtype: BackupStrategy
+        :rtype: :class:`huaweicloudsdkdds.v3.BackupStrategy`
         """
         return self._backup_strategy
 
@@ -394,7 +433,7 @@ class CreateInstanceRequestBody:
 
 
         :param backup_strategy: The backup_strategy of this CreateInstanceRequestBody.
-        :type: BackupStrategy
+        :type backup_strategy: :class:`huaweicloudsdkdds.v3.BackupStrategy`
         """
         self._backup_strategy = backup_strategy
 
@@ -416,7 +455,7 @@ class CreateInstanceRequestBody:
         企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this CreateInstanceRequestBody.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -438,7 +477,7 @@ class CreateInstanceRequestBody:
         SSL开关选项。 取值： - 取“0”，表示DDS实例默认不启用SSL连接。 - 取“1”，表示DDS实例默认启用SSL连接。 - 不传该参数时，默认启用SSL连接。
 
         :param ssl_option: The ssl_option of this CreateInstanceRequestBody.
-        :type: str
+        :type ssl_option: str
         """
         self._ssl_option = ssl_option
 
@@ -460,7 +499,7 @@ class CreateInstanceRequestBody:
         Dec用户专属存储ID，默认为空。仅Dec用户支持该参数。
 
         :param dss_pool_id: The dss_pool_id of this CreateInstanceRequestBody.
-        :type: str
+        :type dss_pool_id: str
         """
         self._dss_pool_id = dss_pool_id
 
@@ -482,7 +521,7 @@ class CreateInstanceRequestBody:
         创建新实例设置云服务器组关联的策略名称列表，仅专属云创建实例时有效。 取值    - 取“anti-affinity”，表示DDS实例开启反亲和部署，反亲和部署是出于高可用性考虑，将您的Primary、Secondary和Hidden节点分别创建在不同的物理机上。当前仅支持该值，不传该值默认不开启反亲和部署。
 
         :param server_group_policies: The server_group_policies of this CreateInstanceRequestBody.
-        :type: list[str]
+        :type server_group_policies: list[str]
         """
         self._server_group_policies = server_group_policies
 
@@ -493,7 +532,7 @@ class CreateInstanceRequestBody:
         标签列表。单个实例总标签数上限20个。
 
         :return: The tags of this CreateInstanceRequestBody.
-        :rtype: list[TagWithKeyValue]
+        :rtype: list[:class:`huaweicloudsdkdds.v3.TagWithKeyValue`]
         """
         return self._tags
 
@@ -504,7 +543,7 @@ class CreateInstanceRequestBody:
         标签列表。单个实例总标签数上限20个。
 
         :param tags: The tags of this CreateInstanceRequestBody.
-        :type: list[TagWithKeyValue]
+        :type tags: list[:class:`huaweicloudsdkdds.v3.TagWithKeyValue`]
         """
         self._tags = tags
 

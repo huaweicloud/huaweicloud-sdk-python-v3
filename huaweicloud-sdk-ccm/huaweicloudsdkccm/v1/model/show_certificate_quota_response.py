@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowCertificateQuotaResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowCertificateQuotaResponse(SdkResponse):
     }
 
     def __init__(self, quotas=None):
-        """ShowCertificateQuotaResponse - a model defined in huaweicloud sdk"""
+        """ShowCertificateQuotaResponse
+
+        The model defined in huaweicloud sdk
+
+        :param quotas: 
+        :type quotas: :class:`huaweicloudsdkccm.v1.Quotas`
+        """
         
         super(ShowCertificateQuotaResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class ShowCertificateQuotaResponse(SdkResponse):
 
 
         :return: The quotas of this ShowCertificateQuotaResponse.
-        :rtype: Quotas
+        :rtype: :class:`huaweicloudsdkccm.v1.Quotas`
         """
         return self._quotas
 
@@ -56,7 +61,7 @@ class ShowCertificateQuotaResponse(SdkResponse):
 
 
         :param quotas: The quotas of this ShowCertificateQuotaResponse.
-        :type: Quotas
+        :type quotas: :class:`huaweicloudsdkccm.v1.Quotas`
         """
         self._quotas = quotas
 

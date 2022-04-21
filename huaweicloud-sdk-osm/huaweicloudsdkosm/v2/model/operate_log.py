@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OperateLog:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class OperateLog:
     }
 
     def __init__(self, oper=None, operate_time=None):
-        """OperateLog - a model defined in huaweicloud sdk"""
+        """OperateLog
+
+        The model defined in huaweicloud sdk
+
+        :param oper: 操作指令
+        :type oper: str
+        :param operate_time: 操作时间
+        :type operate_time: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class OperateLog:
         操作指令
 
         :param oper: The oper of this OperateLog.
-        :type: str
+        :type oper: str
         """
         self._oper = oper
 
@@ -85,7 +92,7 @@ class OperateLog:
         操作时间
 
         :param operate_time: The operate_time of this OperateLog.
-        :type: str
+        :type operate_time: str
         """
         self._operate_time = operate_time
 

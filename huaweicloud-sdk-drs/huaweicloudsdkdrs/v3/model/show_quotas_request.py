@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowQuotasRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowQuotasRequest:
     }
 
     def __init__(self, x_language=None):
-        """ShowQuotasRequest - a model defined in huaweicloud sdk"""
+        """ShowQuotasRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 请求语言类型。
+        :type x_language: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class ShowQuotasRequest:
         请求语言类型。
 
         :param x_language: The x_language of this ShowQuotasRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 

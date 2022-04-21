@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SignRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class SignRequest:
     }
 
     def __init__(self, body=None):
-        """SignRequest - a model defined in huaweicloud sdk"""
+        """SignRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the SignRequest
+        :type body: :class:`huaweicloudsdkkms.v2.SignRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class SignRequest:
 
 
         :return: The body of this SignRequest.
-        :rtype: SignRequestBody
+        :rtype: :class:`huaweicloudsdkkms.v2.SignRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class SignRequest:
 
 
         :param body: The body of this SignRequest.
-        :type: SignRequestBody
+        :type body: :class:`huaweicloudsdkkms.v2.SignRequestBody`
         """
         self._body = body
 

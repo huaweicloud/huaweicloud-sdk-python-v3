@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListVersionsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListVersionsResponse(SdkResponse):
     }
 
     def __init__(self, versions=None):
-        """ListVersionsResponse - a model defined in huaweicloud sdk"""
+        """ListVersionsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param versions: 版本信息
+        :type versions: list[:class:`huaweicloudsdkims.v2.OsVersionResponse`]
+        """
         
         super(ListVersionsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListVersionsResponse(SdkResponse):
         版本信息
 
         :return: The versions of this ListVersionsResponse.
-        :rtype: list[OsVersionResponse]
+        :rtype: list[:class:`huaweicloudsdkims.v2.OsVersionResponse`]
         """
         return self._versions
 
@@ -58,7 +63,7 @@ class ListVersionsResponse(SdkResponse):
         版本信息
 
         :param versions: The versions of this ListVersionsResponse.
-        :type: list[OsVersionResponse]
+        :type versions: list[:class:`huaweicloudsdkims.v2.OsVersionResponse`]
         """
         self._versions = versions
 

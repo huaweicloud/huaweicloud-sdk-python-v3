@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DisassociateKeypairRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DisassociateKeypairRequestBody:
     }
 
     def __init__(self, server=None):
-        """DisassociateKeypairRequestBody - a model defined in huaweicloud sdk"""
+        """DisassociateKeypairRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param server: 
+        :type server: :class:`huaweicloudsdkkps.v3.DisassociateEcsServerInfo`
+        """
         
         
 
@@ -45,7 +50,7 @@ class DisassociateKeypairRequestBody:
 
 
         :return: The server of this DisassociateKeypairRequestBody.
-        :rtype: DisassociateEcsServerInfo
+        :rtype: :class:`huaweicloudsdkkps.v3.DisassociateEcsServerInfo`
         """
         return self._server
 
@@ -55,7 +60,7 @@ class DisassociateKeypairRequestBody:
 
 
         :param server: The server of this DisassociateKeypairRequestBody.
-        :type: DisassociateEcsServerInfo
+        :type server: :class:`huaweicloudsdkkps.v3.DisassociateEcsServerInfo`
         """
         self._server = server
 

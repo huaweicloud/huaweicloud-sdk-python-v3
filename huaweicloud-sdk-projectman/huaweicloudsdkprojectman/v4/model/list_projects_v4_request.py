@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListProjectsV4Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ListProjectsV4Request:
     }
 
     def __init__(self, offset=None, limit=None, search=None, project_type=None, sort=None, archive=None, query_type=None):
-        """ListProjectsV4Request - a model defined in huaweicloud sdk"""
+        """ListProjectsV4Request
+
+        The model defined in huaweicloud sdk
+
+        :param offset: 偏移量 从0开始
+        :type offset: int
+        :param limit: 条数 最小1条,最大1000
+        :type limit: int
+        :param search: 模糊查询项目名称或描述,不支持通配符等高级查询
+        :type search: str
+        :param project_type: 项目类型 scrum|xboard
+        :type project_type: str
+        :param sort: 排序条件 默认创建时间降序(name|created_on)(asc|desc)
+        :type sort: str
+        :param archive: 是否归档 true已归档|false未归档
+        :type archive: str
+        :param query_type: 默认返回当前用户参与的项目列表,domain_projects租户下的所有项目列表,absent返回当前用户未参与的租户项目列表
+        :type query_type: str
+        """
         
         
 
@@ -86,7 +103,7 @@ class ListProjectsV4Request:
         偏移量 从0开始
 
         :param offset: The offset of this ListProjectsV4Request.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -108,7 +125,7 @@ class ListProjectsV4Request:
         条数 最小1条,最大1000
 
         :param limit: The limit of this ListProjectsV4Request.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -130,7 +147,7 @@ class ListProjectsV4Request:
         模糊查询项目名称或描述,不支持通配符等高级查询
 
         :param search: The search of this ListProjectsV4Request.
-        :type: str
+        :type search: str
         """
         self._search = search
 
@@ -152,7 +169,7 @@ class ListProjectsV4Request:
         项目类型 scrum|xboard
 
         :param project_type: The project_type of this ListProjectsV4Request.
-        :type: str
+        :type project_type: str
         """
         self._project_type = project_type
 
@@ -174,7 +191,7 @@ class ListProjectsV4Request:
         排序条件 默认创建时间降序(name|created_on)(asc|desc)
 
         :param sort: The sort of this ListProjectsV4Request.
-        :type: str
+        :type sort: str
         """
         self._sort = sort
 
@@ -196,7 +213,7 @@ class ListProjectsV4Request:
         是否归档 true已归档|false未归档
 
         :param archive: The archive of this ListProjectsV4Request.
-        :type: str
+        :type archive: str
         """
         self._archive = archive
 
@@ -218,7 +235,7 @@ class ListProjectsV4Request:
         默认返回当前用户参与的项目列表,domain_projects租户下的所有项目列表,absent返回当前用户未参与的租户项目列表
 
         :param query_type: The query_type of this ListProjectsV4Request.
-        :type: str
+        :type query_type: str
         """
         self._query_type = query_type
 

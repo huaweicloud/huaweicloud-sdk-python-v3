@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateLogGroupRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateLogGroupRequest:
     }
 
     def __init__(self, log_group_id=None, body=None):
-        """UpdateLogGroupRequest - a model defined in huaweicloud sdk"""
+        """UpdateLogGroupRequest
+
+        The model defined in huaweicloud sdk
+
+        :param log_group_id: 日志组ID，获取方式请参见：获取账号ID、项目ID、日志组ID、日志流ID（https://support.huaweicloud.com/api-lts/lts_api_0006.html）
+        :type log_group_id: str
+        :param body: Body of the UpdateLogGroupRequest
+        :type body: :class:`huaweicloudsdklts.v2.UpdateLogGroupParams`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateLogGroupRequest:
         日志组ID，获取方式请参见：获取账号ID、项目ID、日志组ID、日志流ID（https://support.huaweicloud.com/api-lts/lts_api_0006.html）
 
         :param log_group_id: The log_group_id of this UpdateLogGroupRequest.
-        :type: str
+        :type log_group_id: str
         """
         self._log_group_id = log_group_id
 
@@ -72,7 +79,7 @@ class UpdateLogGroupRequest:
 
 
         :return: The body of this UpdateLogGroupRequest.
-        :rtype: UpdateLogGroupParams
+        :rtype: :class:`huaweicloudsdklts.v2.UpdateLogGroupParams`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateLogGroupRequest:
 
 
         :param body: The body of this UpdateLogGroupRequest.
-        :type: UpdateLogGroupParams
+        :type body: :class:`huaweicloudsdklts.v2.UpdateLogGroupParams`
         """
         self._body = body
 

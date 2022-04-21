@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListUsersRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListUsersRequest:
     }
 
     def __init__(self, x_language=None, job_id=None):
-        """ListUsersRequest - a model defined in huaweicloud sdk"""
+        """ListUsersRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 请求语言类型
+        :type x_language: str
+        :param job_id: 任务ID
+        :type job_id: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ListUsersRequest:
         请求语言类型
 
         :param x_language: The x_language of this ListUsersRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -84,7 +91,7 @@ class ListUsersRequest:
         任务ID
 
         :param job_id: The job_id of this ListUsersRequest.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchDeleteClusterTagsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchDeleteClusterTagsRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """BatchDeleteClusterTagsRequest - a model defined in huaweicloud sdk"""
+        """BatchDeleteClusterTagsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 集群ID。获取方法，请参见[获取集群ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
+        :type cluster_id: str
+        :param body: Body of the BatchDeleteClusterTagsRequest
+        :type body: :class:`huaweicloudsdkmrs.v1.BatchDeleteClusterTagsReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class BatchDeleteClusterTagsRequest:
         集群ID。获取方法，请参见[获取集群ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
 
         :param cluster_id: The cluster_id of this BatchDeleteClusterTagsRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -72,7 +79,7 @@ class BatchDeleteClusterTagsRequest:
 
 
         :return: The body of this BatchDeleteClusterTagsRequest.
-        :rtype: BatchDeleteClusterTagsReq
+        :rtype: :class:`huaweicloudsdkmrs.v1.BatchDeleteClusterTagsReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class BatchDeleteClusterTagsRequest:
 
 
         :param body: The body of this BatchDeleteClusterTagsRequest.
-        :type: BatchDeleteClusterTagsReq
+        :type body: :class:`huaweicloudsdkmrs.v1.BatchDeleteClusterTagsReq`
         """
         self._body = body
 

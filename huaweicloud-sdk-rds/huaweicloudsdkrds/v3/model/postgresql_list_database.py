@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PostgresqlListDatabase:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class PostgresqlListDatabase:
     }
 
     def __init__(self, name=None, owner=None, character_set=None, collate_set=None, size=None):
-        """PostgresqlListDatabase - a model defined in huaweicloud sdk"""
+        """PostgresqlListDatabase
+
+        The model defined in huaweicloud sdk
+
+        :param name: 数据库名称。
+        :type name: str
+        :param owner: 数据库所属用户。
+        :type owner: str
+        :param character_set: 数据库使用的字符集，例如UTF8。
+        :type character_set: str
+        :param collate_set: 数据库排序集，例如en_US.UTF-8等。
+        :type collate_set: str
+        :param size: 数据库大小（单位：字节）。
+        :type size: int
+        """
         
         
 
@@ -78,7 +91,7 @@ class PostgresqlListDatabase:
         数据库名称。
 
         :param name: The name of this PostgresqlListDatabase.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -100,7 +113,7 @@ class PostgresqlListDatabase:
         数据库所属用户。
 
         :param owner: The owner of this PostgresqlListDatabase.
-        :type: str
+        :type owner: str
         """
         self._owner = owner
 
@@ -122,7 +135,7 @@ class PostgresqlListDatabase:
         数据库使用的字符集，例如UTF8。
 
         :param character_set: The character_set of this PostgresqlListDatabase.
-        :type: str
+        :type character_set: str
         """
         self._character_set = character_set
 
@@ -144,7 +157,7 @@ class PostgresqlListDatabase:
         数据库排序集，例如en_US.UTF-8等。
 
         :param collate_set: The collate_set of this PostgresqlListDatabase.
-        :type: str
+        :type collate_set: str
         """
         self._collate_set = collate_set
 
@@ -166,7 +179,7 @@ class PostgresqlListDatabase:
         数据库大小（单位：字节）。
 
         :param size: The size of this PostgresqlListDatabase.
-        :type: int
+        :type size: int
         """
         self._size = size
 

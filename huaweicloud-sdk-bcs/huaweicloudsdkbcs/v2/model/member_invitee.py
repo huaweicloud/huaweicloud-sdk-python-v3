@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MemberInvitee:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class MemberInvitee:
     }
 
     def __init__(self, invitee_bcs_id=None, invitee_user_id=None, invitee_username=None):
-        """MemberInvitee - a model defined in huaweicloud sdk"""
+        """MemberInvitee
+
+        The model defined in huaweicloud sdk
+
+        :param invitee_bcs_id: 被邀请方实例id
+        :type invitee_bcs_id: str
+        :param invitee_user_id: 被邀请方租户id
+        :type invitee_user_id: str
+        :param invitee_username: 被邀请方租户名
+        :type invitee_username: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class MemberInvitee:
         被邀请方实例id
 
         :param invitee_bcs_id: The invitee_bcs_id of this MemberInvitee.
-        :type: str
+        :type invitee_bcs_id: str
         """
         self._invitee_bcs_id = invitee_bcs_id
 
@@ -90,7 +99,7 @@ class MemberInvitee:
         被邀请方租户id
 
         :param invitee_user_id: The invitee_user_id of this MemberInvitee.
-        :type: str
+        :type invitee_user_id: str
         """
         self._invitee_user_id = invitee_user_id
 
@@ -112,7 +121,7 @@ class MemberInvitee:
         被邀请方租户名
 
         :param invitee_username: The invitee_username of this MemberInvitee.
-        :type: str
+        :type invitee_username: str
         """
         self._invitee_username = invitee_username
 

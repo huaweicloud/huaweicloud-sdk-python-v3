@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Config:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class Config:
     }
 
     def __init__(self, security_compliance=None):
-        """Config - a model defined in huaweicloud sdk"""
+        """Config
+
+        The model defined in huaweicloud sdk
+
+        :param security_compliance: 
+        :type security_compliance: :class:`huaweicloudsdkiam.v3.SecurityCompliance`
+        """
         
         
 
@@ -45,7 +50,7 @@ class Config:
 
 
         :return: The security_compliance of this Config.
-        :rtype: SecurityCompliance
+        :rtype: :class:`huaweicloudsdkiam.v3.SecurityCompliance`
         """
         return self._security_compliance
 
@@ -55,7 +60,7 @@ class Config:
 
 
         :param security_compliance: The security_compliance of this Config.
-        :type: SecurityCompliance
+        :type security_compliance: :class:`huaweicloudsdkiam.v3.SecurityCompliance`
         """
         self._security_compliance = security_compliance
 

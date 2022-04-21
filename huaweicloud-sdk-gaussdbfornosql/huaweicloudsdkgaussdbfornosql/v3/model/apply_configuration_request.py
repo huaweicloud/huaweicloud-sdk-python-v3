@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApplyConfigurationRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ApplyConfigurationRequest:
     }
 
     def __init__(self, config_id=None, body=None):
-        """ApplyConfigurationRequest - a model defined in huaweicloud sdk"""
+        """ApplyConfigurationRequest
+
+        The model defined in huaweicloud sdk
+
+        :param config_id: 参数模板ID。
+        :type config_id: str
+        :param body: Body of the ApplyConfigurationRequest
+        :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.ApplyConfigurationRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class ApplyConfigurationRequest:
         参数模板ID。
 
         :param config_id: The config_id of this ApplyConfigurationRequest.
-        :type: str
+        :type config_id: str
         """
         self._config_id = config_id
 
@@ -72,7 +79,7 @@ class ApplyConfigurationRequest:
 
 
         :return: The body of this ApplyConfigurationRequest.
-        :rtype: ApplyConfigurationRequestBody
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ApplyConfigurationRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class ApplyConfigurationRequest:
 
 
         :param body: The body of this ApplyConfigurationRequest.
-        :type: ApplyConfigurationRequestBody
+        :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.ApplyConfigurationRequestBody`
         """
         self._body = body
 

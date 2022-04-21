@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MonthlyBillRecord:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -86,7 +85,69 @@ class MonthlyBillRecord:
     }
 
     def __init__(self, bill_cycle=None, customer_id=None, service_type_code=None, resource_type_code=None, service_type_name=None, resource_type_name=None, region_code=None, enterprise_project_id=None, enterprise_project_name=None, charging_mode=None, consume_time=None, trade_time=None, provider_type=None, trade_id=None, bill_type=None, status=None, official_amount=None, official_discount_amount=None, erase_amount=None, consume_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_value_card_amount=None, bonus_amount=None, debt_amount=None, writeoff_amount=None, region_name=None):
-        """MonthlyBillRecord - a model defined in huaweicloud sdk"""
+        """MonthlyBillRecord
+
+        The model defined in huaweicloud sdk
+
+        :param bill_cycle: 流水账单所在账期，格式为YYYY-MM。
+        :type bill_cycle: str
+        :param customer_id: 消费的客户账号ID。 如果是普通客户或者企业子客户查询消费记录，只能查询到客户自己的消费记录，且此处显示的是客户自己的客户ID。如果是企业主查询消费记录，可以查询到企业主以及企业子客户的消费记录，此处为消费的实际客户ID。如果是企业主自己的消费记录，则为企业主ID；如果是某个企业子客户的消费记录，则此处为企业子账号ID。
+        :type customer_id: str
+        :param service_type_code: 云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
+        :type service_type_code: str
+        :param resource_type_code: 资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
+        :type resource_type_code: str
+        :param service_type_name: 云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
+        :type service_type_name: str
+        :param resource_type_name: 资源类型名称。例如ECS的资源类型名称为“云主机”。
+        :type resource_type_name: str
+        :param region_code: 云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
+        :type region_code: str
+        :param enterprise_project_id: 企业项目标识（企业项目ID）。 default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见如何获取企业项目ID。
+        :type enterprise_project_id: str
+        :param enterprise_project_name: 企业项目的名称。
+        :type enterprise_project_name: str
+        :param charging_mode: 计费模式。 1：包年/包月3：按需10：预留实例
+        :type charging_mode: int
+        :param consume_time: 消费时间。 计费模式为包年/包月和预留实例场景时为订单的支付时间。计费模式为按需场景时为话单的生/失效时间。
+        :type consume_time: str
+        :param trade_time: 交易时间，某条消费记录对应的扣费时间。
+        :type trade_time: str
+        :param provider_type: 服务商。 1：华为云2：云市场
+        :type provider_type: int
+        :param trade_id: 订单ID或交易ID，扣费维度的唯一标识。
+        :type trade_id: str
+        :param bill_type: 账单类型。 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更
+        :type bill_type: int
+        :param status: 支付状态。 1：已支付2：未结清3：未结算
+        :type status: int
+        :param official_amount: 官网价。单位：元。  说明： official_amount &#x3D; official_discount_amount + erase_amount + consume_amount
+        :type official_amount: float
+        :param official_discount_amount: 折扣金额。单位：元。
+        :type official_discount_amount: float
+        :param erase_amount: 抹零金额。单位：元。
+        :type erase_amount: float
+        :param consume_amount: 应付金额，包括现金券和储值卡和代金券金额。单位：元。  说明： consume_amount的值等于cash_amount，credit_amount，coupon_amount，flexipurchase_coupon_amount，stored_value_card_amount，bonus_amount，debt_amount，writeoff_amount的总和。
+        :type consume_amount: float
+        :param cash_amount: 现金支付金额。单位：元.
+        :type cash_amount: float
+        :param credit_amount: 信用额度支付金额。单位：元。
+        :type credit_amount: float
+        :param coupon_amount: 代金券支付金额。单位：元。
+        :type coupon_amount: float
+        :param flexipurchase_coupon_amount: 现金券支付金额。单位：元。
+        :type flexipurchase_coupon_amount: float
+        :param stored_value_card_amount: 储值卡支付金额。单位：元。
+        :type stored_value_card_amount: float
+        :param bonus_amount: 奖励金支付金额（奖励金已经下线，目前用于现网客户未使用完的奖励金）。单位：元。
+        :type bonus_amount: float
+        :param debt_amount: 欠费金额。单位：元。  说明： 对于月结客户，欠费金额即页面上的月度结算金额。
+        :type debt_amount: float
+        :param writeoff_amount: 欠费核销金额。单位：元。
+        :type writeoff_amount: float
+        :param region_name: 云服务区名称，例如：“华北-北京一”。具体请参见地区和终端节点对应云服务的“区域名称”列的值。
+        :type region_name: str
+        """
         
         
 
@@ -198,7 +259,7 @@ class MonthlyBillRecord:
         流水账单所在账期，格式为YYYY-MM。
 
         :param bill_cycle: The bill_cycle of this MonthlyBillRecord.
-        :type: str
+        :type bill_cycle: str
         """
         self._bill_cycle = bill_cycle
 
@@ -220,7 +281,7 @@ class MonthlyBillRecord:
         消费的客户账号ID。 如果是普通客户或者企业子客户查询消费记录，只能查询到客户自己的消费记录，且此处显示的是客户自己的客户ID。如果是企业主查询消费记录，可以查询到企业主以及企业子客户的消费记录，此处为消费的实际客户ID。如果是企业主自己的消费记录，则为企业主ID；如果是某个企业子客户的消费记录，则此处为企业子账号ID。
 
         :param customer_id: The customer_id of this MonthlyBillRecord.
-        :type: str
+        :type customer_id: str
         """
         self._customer_id = customer_id
 
@@ -242,7 +303,7 @@ class MonthlyBillRecord:
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
         :param service_type_code: The service_type_code of this MonthlyBillRecord.
-        :type: str
+        :type service_type_code: str
         """
         self._service_type_code = service_type_code
 
@@ -264,7 +325,7 @@ class MonthlyBillRecord:
         资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
 
         :param resource_type_code: The resource_type_code of this MonthlyBillRecord.
-        :type: str
+        :type resource_type_code: str
         """
         self._resource_type_code = resource_type_code
 
@@ -286,7 +347,7 @@ class MonthlyBillRecord:
         云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
 
         :param service_type_name: The service_type_name of this MonthlyBillRecord.
-        :type: str
+        :type service_type_name: str
         """
         self._service_type_name = service_type_name
 
@@ -308,7 +369,7 @@ class MonthlyBillRecord:
         资源类型名称。例如ECS的资源类型名称为“云主机”。
 
         :param resource_type_name: The resource_type_name of this MonthlyBillRecord.
-        :type: str
+        :type resource_type_name: str
         """
         self._resource_type_name = resource_type_name
 
@@ -330,7 +391,7 @@ class MonthlyBillRecord:
         云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
         :param region_code: The region_code of this MonthlyBillRecord.
-        :type: str
+        :type region_code: str
         """
         self._region_code = region_code
 
@@ -352,7 +413,7 @@ class MonthlyBillRecord:
         企业项目标识（企业项目ID）。 default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见如何获取企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this MonthlyBillRecord.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -374,7 +435,7 @@ class MonthlyBillRecord:
         企业项目的名称。
 
         :param enterprise_project_name: The enterprise_project_name of this MonthlyBillRecord.
-        :type: str
+        :type enterprise_project_name: str
         """
         self._enterprise_project_name = enterprise_project_name
 
@@ -396,7 +457,7 @@ class MonthlyBillRecord:
         计费模式。 1：包年/包月3：按需10：预留实例
 
         :param charging_mode: The charging_mode of this MonthlyBillRecord.
-        :type: int
+        :type charging_mode: int
         """
         self._charging_mode = charging_mode
 
@@ -418,7 +479,7 @@ class MonthlyBillRecord:
         消费时间。 计费模式为包年/包月和预留实例场景时为订单的支付时间。计费模式为按需场景时为话单的生/失效时间。
 
         :param consume_time: The consume_time of this MonthlyBillRecord.
-        :type: str
+        :type consume_time: str
         """
         self._consume_time = consume_time
 
@@ -440,7 +501,7 @@ class MonthlyBillRecord:
         交易时间，某条消费记录对应的扣费时间。
 
         :param trade_time: The trade_time of this MonthlyBillRecord.
-        :type: str
+        :type trade_time: str
         """
         self._trade_time = trade_time
 
@@ -462,7 +523,7 @@ class MonthlyBillRecord:
         服务商。 1：华为云2：云市场
 
         :param provider_type: The provider_type of this MonthlyBillRecord.
-        :type: int
+        :type provider_type: int
         """
         self._provider_type = provider_type
 
@@ -484,7 +545,7 @@ class MonthlyBillRecord:
         订单ID或交易ID，扣费维度的唯一标识。
 
         :param trade_id: The trade_id of this MonthlyBillRecord.
-        :type: str
+        :type trade_id: str
         """
         self._trade_id = trade_id
 
@@ -506,7 +567,7 @@ class MonthlyBillRecord:
         账单类型。 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更
 
         :param bill_type: The bill_type of this MonthlyBillRecord.
-        :type: int
+        :type bill_type: int
         """
         self._bill_type = bill_type
 
@@ -528,7 +589,7 @@ class MonthlyBillRecord:
         支付状态。 1：已支付2：未结清3：未结算
 
         :param status: The status of this MonthlyBillRecord.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -550,7 +611,7 @@ class MonthlyBillRecord:
         官网价。单位：元。  说明： official_amount = official_discount_amount + erase_amount + consume_amount
 
         :param official_amount: The official_amount of this MonthlyBillRecord.
-        :type: float
+        :type official_amount: float
         """
         self._official_amount = official_amount
 
@@ -572,7 +633,7 @@ class MonthlyBillRecord:
         折扣金额。单位：元。
 
         :param official_discount_amount: The official_discount_amount of this MonthlyBillRecord.
-        :type: float
+        :type official_discount_amount: float
         """
         self._official_discount_amount = official_discount_amount
 
@@ -594,7 +655,7 @@ class MonthlyBillRecord:
         抹零金额。单位：元。
 
         :param erase_amount: The erase_amount of this MonthlyBillRecord.
-        :type: float
+        :type erase_amount: float
         """
         self._erase_amount = erase_amount
 
@@ -616,7 +677,7 @@ class MonthlyBillRecord:
         应付金额，包括现金券和储值卡和代金券金额。单位：元。  说明： consume_amount的值等于cash_amount，credit_amount，coupon_amount，flexipurchase_coupon_amount，stored_value_card_amount，bonus_amount，debt_amount，writeoff_amount的总和。
 
         :param consume_amount: The consume_amount of this MonthlyBillRecord.
-        :type: float
+        :type consume_amount: float
         """
         self._consume_amount = consume_amount
 
@@ -638,7 +699,7 @@ class MonthlyBillRecord:
         现金支付金额。单位：元.
 
         :param cash_amount: The cash_amount of this MonthlyBillRecord.
-        :type: float
+        :type cash_amount: float
         """
         self._cash_amount = cash_amount
 
@@ -660,7 +721,7 @@ class MonthlyBillRecord:
         信用额度支付金额。单位：元。
 
         :param credit_amount: The credit_amount of this MonthlyBillRecord.
-        :type: float
+        :type credit_amount: float
         """
         self._credit_amount = credit_amount
 
@@ -682,7 +743,7 @@ class MonthlyBillRecord:
         代金券支付金额。单位：元。
 
         :param coupon_amount: The coupon_amount of this MonthlyBillRecord.
-        :type: float
+        :type coupon_amount: float
         """
         self._coupon_amount = coupon_amount
 
@@ -704,7 +765,7 @@ class MonthlyBillRecord:
         现金券支付金额。单位：元。
 
         :param flexipurchase_coupon_amount: The flexipurchase_coupon_amount of this MonthlyBillRecord.
-        :type: float
+        :type flexipurchase_coupon_amount: float
         """
         self._flexipurchase_coupon_amount = flexipurchase_coupon_amount
 
@@ -726,7 +787,7 @@ class MonthlyBillRecord:
         储值卡支付金额。单位：元。
 
         :param stored_value_card_amount: The stored_value_card_amount of this MonthlyBillRecord.
-        :type: float
+        :type stored_value_card_amount: float
         """
         self._stored_value_card_amount = stored_value_card_amount
 
@@ -748,7 +809,7 @@ class MonthlyBillRecord:
         奖励金支付金额（奖励金已经下线，目前用于现网客户未使用完的奖励金）。单位：元。
 
         :param bonus_amount: The bonus_amount of this MonthlyBillRecord.
-        :type: float
+        :type bonus_amount: float
         """
         self._bonus_amount = bonus_amount
 
@@ -770,7 +831,7 @@ class MonthlyBillRecord:
         欠费金额。单位：元。  说明： 对于月结客户，欠费金额即页面上的月度结算金额。
 
         :param debt_amount: The debt_amount of this MonthlyBillRecord.
-        :type: float
+        :type debt_amount: float
         """
         self._debt_amount = debt_amount
 
@@ -792,7 +853,7 @@ class MonthlyBillRecord:
         欠费核销金额。单位：元。
 
         :param writeoff_amount: The writeoff_amount of this MonthlyBillRecord.
-        :type: float
+        :type writeoff_amount: float
         """
         self._writeoff_amount = writeoff_amount
 
@@ -814,7 +875,7 @@ class MonthlyBillRecord:
         云服务区名称，例如：“华北-北京一”。具体请参见地区和终端节点对应云服务的“区域名称”列的值。
 
         :param region_name: The region_name of this MonthlyBillRecord.
-        :type: str
+        :type region_name: str
         """
         self._region_name = region_name
 

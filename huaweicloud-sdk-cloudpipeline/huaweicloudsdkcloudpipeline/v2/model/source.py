@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Source:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class Source:
     }
 
     def __init__(self, codehub_name=None, branches=None, scm_type=None, hook_flag=None, branch=None, git_url=None, codehub_id=None, web_url=None, branch_list=None, init_id=None, disable=None):
-        """Source - a model defined in huaweicloud sdk"""
+        """Source
+
+        The model defined in huaweicloud sdk
+
+        :param codehub_name: 源码仓名字
+        :type codehub_name: str
+        :param branches: 触发分支
+        :type branches: list[str]
+        :param scm_type: 源码仓来源
+        :type scm_type: str
+        :param hook_flag: 是否开启触发执行流水线功能
+        :type hook_flag: bool
+        :param branch: 触发分支
+        :type branch: str
+        :param git_url: 源码仓ssh地址
+        :type git_url: str
+        :param codehub_id: 源码仓ID
+        :type codehub_id: str
+        :param web_url: 源码仓首页url
+        :type web_url: str
+        :param branch_list: 分支列表
+        :type branch_list: list[str]
+        :param init_id: 初始化ID
+        :type init_id: str
+        :param disable: 是否废弃
+        :type disable: bool
+        """
         
         
 
@@ -97,7 +122,7 @@ class Source:
         源码仓名字
 
         :param codehub_name: The codehub_name of this Source.
-        :type: str
+        :type codehub_name: str
         """
         self._codehub_name = codehub_name
 
@@ -119,7 +144,7 @@ class Source:
         触发分支
 
         :param branches: The branches of this Source.
-        :type: list[str]
+        :type branches: list[str]
         """
         self._branches = branches
 
@@ -141,7 +166,7 @@ class Source:
         源码仓来源
 
         :param scm_type: The scm_type of this Source.
-        :type: str
+        :type scm_type: str
         """
         self._scm_type = scm_type
 
@@ -163,7 +188,7 @@ class Source:
         是否开启触发执行流水线功能
 
         :param hook_flag: The hook_flag of this Source.
-        :type: bool
+        :type hook_flag: bool
         """
         self._hook_flag = hook_flag
 
@@ -185,7 +210,7 @@ class Source:
         触发分支
 
         :param branch: The branch of this Source.
-        :type: str
+        :type branch: str
         """
         self._branch = branch
 
@@ -207,7 +232,7 @@ class Source:
         源码仓ssh地址
 
         :param git_url: The git_url of this Source.
-        :type: str
+        :type git_url: str
         """
         self._git_url = git_url
 
@@ -229,7 +254,7 @@ class Source:
         源码仓ID
 
         :param codehub_id: The codehub_id of this Source.
-        :type: str
+        :type codehub_id: str
         """
         self._codehub_id = codehub_id
 
@@ -251,7 +276,7 @@ class Source:
         源码仓首页url
 
         :param web_url: The web_url of this Source.
-        :type: str
+        :type web_url: str
         """
         self._web_url = web_url
 
@@ -273,7 +298,7 @@ class Source:
         分支列表
 
         :param branch_list: The branch_list of this Source.
-        :type: list[str]
+        :type branch_list: list[str]
         """
         self._branch_list = branch_list
 
@@ -295,7 +320,7 @@ class Source:
         初始化ID
 
         :param init_id: The init_id of this Source.
-        :type: str
+        :type init_id: str
         """
         self._init_id = init_id
 
@@ -317,7 +342,7 @@ class Source:
         是否废弃
 
         :param disable: The disable of this Source.
-        :type: bool
+        :type disable: bool
         """
         self._disable = disable
 

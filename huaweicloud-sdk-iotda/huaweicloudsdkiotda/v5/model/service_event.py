@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ServiceEvent:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ServiceEvent:
     }
 
     def __init__(self, event_type=None, paras=None):
-        """ServiceEvent - a model defined in huaweicloud sdk"""
+        """ServiceEvent
+
+        The model defined in huaweicloud sdk
+
+        :param event_type: **参数说明**：设备事件类型。注：设备服务内不允许重复。 **取值范围**：长度不超过32，只允许中文、字母、数字、以及_?&#39;#().,&amp;%@!-等字符的组合。
+        :type event_type: str
+        :param paras: **参数说明**：设备事件的参数列表。
+        :type paras: list[:class:`huaweicloudsdkiotda.v5.ServiceCommandPara`]
+        """
         
         
 
@@ -62,7 +69,7 @@ class ServiceEvent:
         **参数说明**：设备事件类型。注：设备服务内不允许重复。 **取值范围**：长度不超过32，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
         :param event_type: The event_type of this ServiceEvent.
-        :type: str
+        :type event_type: str
         """
         self._event_type = event_type
 
@@ -73,7 +80,7 @@ class ServiceEvent:
         **参数说明**：设备事件的参数列表。
 
         :return: The paras of this ServiceEvent.
-        :rtype: list[ServiceCommandPara]
+        :rtype: list[:class:`huaweicloudsdkiotda.v5.ServiceCommandPara`]
         """
         return self._paras
 
@@ -84,7 +91,7 @@ class ServiceEvent:
         **参数说明**：设备事件的参数列表。
 
         :param paras: The paras of this ServiceEvent.
-        :type: list[ServiceCommandPara]
+        :type paras: list[:class:`huaweicloudsdkiotda.v5.ServiceCommandPara`]
         """
         self._paras = paras
 

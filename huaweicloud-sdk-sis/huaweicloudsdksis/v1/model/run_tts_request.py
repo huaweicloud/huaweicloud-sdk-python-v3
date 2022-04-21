@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunTtsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RunTtsRequest:
     }
 
     def __init__(self, body=None):
-        """RunTtsRequest - a model defined in huaweicloud sdk"""
+        """RunTtsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the RunTtsRequest
+        :type body: :class:`huaweicloudsdksis.v1.PostCustomTTSReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class RunTtsRequest:
 
 
         :return: The body of this RunTtsRequest.
-        :rtype: PostCustomTTSReq
+        :rtype: :class:`huaweicloudsdksis.v1.PostCustomTTSReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class RunTtsRequest:
 
 
         :param body: The body of this RunTtsRequest.
-        :type: PostCustomTTSReq
+        :type body: :class:`huaweicloudsdksis.v1.PostCustomTTSReq`
         """
         self._body = body
 

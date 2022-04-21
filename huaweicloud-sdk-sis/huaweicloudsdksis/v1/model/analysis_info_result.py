@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AnalysisInfoResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class AnalysisInfoResult:
     }
 
     def __init__(self, role=None, emotion=None, speed=None):
-        """AnalysisInfoResult - a model defined in huaweicloud sdk"""
+        """AnalysisInfoResult
+
+        The model defined in huaweicloud sdk
+
+        :param role: 角色类型, 目前仅支持 AGENT(座席), USER(用户)。
+        :type role: str
+        :param emotion: 情绪类型，目前支持NORMAL(正常)，ANGRY(愤怒)，UNKNOWN(未知)。 在识别配置中emotion为true时存在。
+        :type emotion: str
+        :param speed: 语速信息，单位是\&quot;每秒字数\&quot;。 在识别配置中speed为true时存在。
+        :type speed: float
+        """
         
         
 
@@ -68,7 +77,7 @@ class AnalysisInfoResult:
         角色类型, 目前仅支持 AGENT(座席), USER(用户)。
 
         :param role: The role of this AnalysisInfoResult.
-        :type: str
+        :type role: str
         """
         self._role = role
 
@@ -90,7 +99,7 @@ class AnalysisInfoResult:
         情绪类型，目前支持NORMAL(正常)，ANGRY(愤怒)，UNKNOWN(未知)。 在识别配置中emotion为true时存在。
 
         :param emotion: The emotion of this AnalysisInfoResult.
-        :type: str
+        :type emotion: str
         """
         self._emotion = emotion
 
@@ -112,7 +121,7 @@ class AnalysisInfoResult:
         语速信息，单位是\"每秒字数\"。 在识别配置中speed为true时存在。
 
         :param speed: The speed of this AnalysisInfoResult.
-        :type: float
+        :type speed: float
         """
         self._speed = speed
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RespInstanceCapacity:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RespInstanceCapacity:
     }
 
     def __init__(self, flavor=None):
-        """RespInstanceCapacity - a model defined in huaweicloud sdk"""
+        """RespInstanceCapacity
+
+        The model defined in huaweicloud sdk
+
+        :param flavor: 支持创建的云服务器规格。
+        :type flavor: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class RespInstanceCapacity:
         支持创建的云服务器规格。
 
         :param flavor: The flavor of this RespInstanceCapacity.
-        :type: str
+        :type flavor: str
         """
         self._flavor = flavor
 

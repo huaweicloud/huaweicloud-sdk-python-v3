@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DatabaseObjectVO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DatabaseObjectVO:
     }
 
     def __init__(self, id=None, select=None):
-        """DatabaseObjectVO - a model defined in huaweicloud sdk"""
+        """DatabaseObjectVO
+
+        The model defined in huaweicloud sdk
+
+        :param id: 数据库对象和数据库表名称，例如格式为hec-*-*-drs_test1。
+        :type id: str
+        :param select: 是否选择高级配置，值为true。
+        :type select: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class DatabaseObjectVO:
         数据库对象和数据库表名称，例如格式为hec-*-*-drs_test1。
 
         :param id: The id of this DatabaseObjectVO.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -83,7 +90,7 @@ class DatabaseObjectVO:
         是否选择高级配置，值为true。
 
         :param select: The select of this DatabaseObjectVO.
-        :type: str
+        :type select: str
         """
         self._select = select
 

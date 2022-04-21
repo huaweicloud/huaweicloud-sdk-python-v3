@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AttrValueRules:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AttrValueRules:
     }
 
     def __init__(self, attr_values_a=None, attr_values_b=None):
-        """AttrValueRules - a model defined in huaweicloud sdk"""
+        """AttrValueRules
+
+        The model defined in huaweicloud sdk
+
+        :param attr_values_a: 被推荐对象的属性-值配置。
+        :type attr_values_a: list[:class:`huaweicloudsdkres.v1.AttrValue`]
+        :param attr_values_b: 待推荐对象的属性-值配置。
+        :type attr_values_b: list[:class:`huaweicloudsdkres.v1.AttrValue`]
+        """
         
         
 
@@ -51,7 +58,7 @@ class AttrValueRules:
         被推荐对象的属性-值配置。
 
         :return: The attr_values_a of this AttrValueRules.
-        :rtype: list[AttrValue]
+        :rtype: list[:class:`huaweicloudsdkres.v1.AttrValue`]
         """
         return self._attr_values_a
 
@@ -62,7 +69,7 @@ class AttrValueRules:
         被推荐对象的属性-值配置。
 
         :param attr_values_a: The attr_values_a of this AttrValueRules.
-        :type: list[AttrValue]
+        :type attr_values_a: list[:class:`huaweicloudsdkres.v1.AttrValue`]
         """
         self._attr_values_a = attr_values_a
 
@@ -73,7 +80,7 @@ class AttrValueRules:
         待推荐对象的属性-值配置。
 
         :return: The attr_values_b of this AttrValueRules.
-        :rtype: list[AttrValue]
+        :rtype: list[:class:`huaweicloudsdkres.v1.AttrValue`]
         """
         return self._attr_values_b
 
@@ -84,7 +91,7 @@ class AttrValueRules:
         待推荐对象的属性-值配置。
 
         :param attr_values_b: The attr_values_b of this AttrValueRules.
-        :type: list[AttrValue]
+        :type attr_values_b: list[:class:`huaweicloudsdkres.v1.AttrValue`]
         """
         self._attr_values_b = attr_values_b
 

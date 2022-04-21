@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ValidationResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ValidationResult:
     }
 
     def __init__(self, link_config=None):
-        """ValidationResult - a model defined in huaweicloud sdk"""
+        """ValidationResult
+
+        The model defined in huaweicloud sdk
+
+        :param link_config: 创建或更新连接校验结果，请参见linkConfig参数说明
+        :type link_config: list[:class:`huaweicloudsdkcdm.v1.ValidationLinkConfig`]
+        """
         
         
 
@@ -47,7 +52,7 @@ class ValidationResult:
         创建或更新连接校验结果，请参见linkConfig参数说明
 
         :return: The link_config of this ValidationResult.
-        :rtype: list[ValidationLinkConfig]
+        :rtype: list[:class:`huaweicloudsdkcdm.v1.ValidationLinkConfig`]
         """
         return self._link_config
 
@@ -58,7 +63,7 @@ class ValidationResult:
         创建或更新连接校验结果，请参见linkConfig参数说明
 
         :param link_config: The link_config of this ValidationResult.
-        :type: list[ValidationLinkConfig]
+        :type link_config: list[:class:`huaweicloudsdkcdm.v1.ValidationLinkConfig`]
         """
         self._link_config = link_config
 

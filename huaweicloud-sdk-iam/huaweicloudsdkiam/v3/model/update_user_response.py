@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateUserResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateUserResponse(SdkResponse):
     }
 
     def __init__(self, user=None):
-        """UpdateUserResponse - a model defined in huaweicloud sdk"""
+        """UpdateUserResponse
+
+        The model defined in huaweicloud sdk
+
+        :param user: 
+        :type user: :class:`huaweicloudsdkiam.v3.UpdateUserResult`
+        """
         
         super(UpdateUserResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class UpdateUserResponse(SdkResponse):
 
 
         :return: The user of this UpdateUserResponse.
-        :rtype: UpdateUserResult
+        :rtype: :class:`huaweicloudsdkiam.v3.UpdateUserResult`
         """
         return self._user
 
@@ -56,7 +61,7 @@ class UpdateUserResponse(SdkResponse):
 
 
         :param user: The user of this UpdateUserResponse.
-        :type: UpdateUserResult
+        :type user: :class:`huaweicloudsdkiam.v3.UpdateUserResult`
         """
         self._user = user
 

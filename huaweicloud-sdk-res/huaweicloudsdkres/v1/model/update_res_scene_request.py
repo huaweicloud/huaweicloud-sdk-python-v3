@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateResSceneRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UpdateResSceneRequest:
     }
 
     def __init__(self, content_type=None, scene_id=None, workspace_id=None, body=None):
-        """UpdateResSceneRequest - a model defined in huaweicloud sdk"""
+        """UpdateResSceneRequest
+
+        The model defined in huaweicloud sdk
+
+        :param content_type: 内容类型，取值为application/json。
+        :type content_type: str
+        :param scene_id: 场景id。
+        :type scene_id: str
+        :param workspace_id: 工作空间id。
+        :type workspace_id: str
+        :param body: Body of the UpdateResSceneRequest
+        :type body: :class:`huaweicloudsdkres.v1.UpdateResSceneRequestBody`
+        """
         
         
 
@@ -70,7 +81,7 @@ class UpdateResSceneRequest:
         内容类型，取值为application/json。
 
         :param content_type: The content_type of this UpdateResSceneRequest.
-        :type: str
+        :type content_type: str
         """
         self._content_type = content_type
 
@@ -92,7 +103,7 @@ class UpdateResSceneRequest:
         场景id。
 
         :param scene_id: The scene_id of this UpdateResSceneRequest.
-        :type: str
+        :type scene_id: str
         """
         self._scene_id = scene_id
 
@@ -114,7 +125,7 @@ class UpdateResSceneRequest:
         工作空间id。
 
         :param workspace_id: The workspace_id of this UpdateResSceneRequest.
-        :type: str
+        :type workspace_id: str
         """
         self._workspace_id = workspace_id
 
@@ -124,7 +135,7 @@ class UpdateResSceneRequest:
 
 
         :return: The body of this UpdateResSceneRequest.
-        :rtype: UpdateResSceneRequestBody
+        :rtype: :class:`huaweicloudsdkres.v1.UpdateResSceneRequestBody`
         """
         return self._body
 
@@ -134,7 +145,7 @@ class UpdateResSceneRequest:
 
 
         :param body: The body of this UpdateResSceneRequest.
-        :type: UpdateResSceneRequestBody
+        :type body: :class:`huaweicloudsdkres.v1.UpdateResSceneRequestBody`
         """
         self._body = body
 

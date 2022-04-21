@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MediaProcessTaskInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class MediaProcessTaskInfo:
     }
 
     def __init__(self, task_id=None, status=None, create_time=None, end_time=None, output=None, description=None, output_file_name=None, input=None):
-        """MediaProcessTaskInfo - a model defined in huaweicloud sdk"""
+        """MediaProcessTaskInfo
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 任务Id
+        :type task_id: str
+        :param status: 任务执行状态，取值如下。 \&quot;NO_TASK\&quot;      //无任务，task_id非法 \&quot;WAITING\&quot;      //等待启动 \&quot;PROCESSING\&quot;   //处理中 \&quot;SUCCEEDED\&quot;    //成功 \&quot;FAILED\&quot;       //失败 \&quot;CANCELED\&quot;     //已删除 
+        :type status: str
+        :param create_time: 任务启动时间 
+        :type create_time: str
+        :param end_time: 任务结束时间 
+        :type end_time: str
+        :param output: 
+        :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        :param description: 任务描述，当出现异常时，此字段为异常的原因。 
+        :type description: str
+        :param output_file_name: 输出文件名。 
+        :type output_file_name: list[str]
+        :param input: 
+        :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        """
         
         
 
@@ -93,7 +112,7 @@ class MediaProcessTaskInfo:
         任务Id
 
         :param task_id: The task_id of this MediaProcessTaskInfo.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -115,7 +134,7 @@ class MediaProcessTaskInfo:
         任务执行状态，取值如下。 \"NO_TASK\"      //无任务，task_id非法 \"WAITING\"      //等待启动 \"PROCESSING\"   //处理中 \"SUCCEEDED\"    //成功 \"FAILED\"       //失败 \"CANCELED\"     //已删除 
 
         :param status: The status of this MediaProcessTaskInfo.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -137,7 +156,7 @@ class MediaProcessTaskInfo:
         任务启动时间 
 
         :param create_time: The create_time of this MediaProcessTaskInfo.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -159,7 +178,7 @@ class MediaProcessTaskInfo:
         任务结束时间 
 
         :param end_time: The end_time of this MediaProcessTaskInfo.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -169,7 +188,7 @@ class MediaProcessTaskInfo:
 
 
         :return: The output of this MediaProcessTaskInfo.
-        :rtype: ObsObjInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         return self._output
 
@@ -179,7 +198,7 @@ class MediaProcessTaskInfo:
 
 
         :param output: The output of this MediaProcessTaskInfo.
-        :type: ObsObjInfo
+        :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         self._output = output
 
@@ -201,7 +220,7 @@ class MediaProcessTaskInfo:
         任务描述，当出现异常时，此字段为异常的原因。 
 
         :param description: The description of this MediaProcessTaskInfo.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -223,7 +242,7 @@ class MediaProcessTaskInfo:
         输出文件名。 
 
         :param output_file_name: The output_file_name of this MediaProcessTaskInfo.
-        :type: list[str]
+        :type output_file_name: list[str]
         """
         self._output_file_name = output_file_name
 
@@ -233,7 +252,7 @@ class MediaProcessTaskInfo:
 
 
         :return: The input of this MediaProcessTaskInfo.
-        :rtype: ObsObjInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         return self._input
 
@@ -243,7 +262,7 @@ class MediaProcessTaskInfo:
 
 
         :param input: The input of this MediaProcessTaskInfo.
-        :type: ObsObjInfo
+        :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         self._input = input
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LifecycleHookList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class LifecycleHookList:
     }
 
     def __init__(self, lifecycle_hook_name=None, lifecycle_hook_type=None, default_result=None, default_timeout=None, notification_topic_urn=None, notification_topic_name=None, notification_metadata=None, create_time=None):
-        """LifecycleHookList - a model defined in huaweicloud sdk"""
+        """LifecycleHookList
+
+        The model defined in huaweicloud sdk
+
+        :param lifecycle_hook_name: 生命周期挂钩名称。
+        :type lifecycle_hook_name: str
+        :param lifecycle_hook_type: 生命周期挂钩类型。INSTANCE_TERMINATING；INSTANCE_LAUNCHING。
+        :type lifecycle_hook_type: str
+        :param default_result: 生命周期挂钩默认回调操作。ABANDON;CONTINUE。
+        :type default_result: str
+        :param default_timeout: 生命周期挂钩超时时间，单位秒。
+        :type default_timeout: int
+        :param notification_topic_urn: SMN服务中Topic的唯一的资源标识。
+        :type notification_topic_urn: str
+        :param notification_topic_name: SMN服务中Topic的资源名称。
+        :type notification_topic_name: str
+        :param notification_metadata: 自定义通知消息。
+        :type notification_metadata: str
+        :param create_time: 创建生命周期挂钩时间，遵循UTC时间。
+        :type create_time: str
+        """
         
         
 
@@ -93,7 +112,7 @@ class LifecycleHookList:
         生命周期挂钩名称。
 
         :param lifecycle_hook_name: The lifecycle_hook_name of this LifecycleHookList.
-        :type: str
+        :type lifecycle_hook_name: str
         """
         self._lifecycle_hook_name = lifecycle_hook_name
 
@@ -115,7 +134,7 @@ class LifecycleHookList:
         生命周期挂钩类型。INSTANCE_TERMINATING；INSTANCE_LAUNCHING。
 
         :param lifecycle_hook_type: The lifecycle_hook_type of this LifecycleHookList.
-        :type: str
+        :type lifecycle_hook_type: str
         """
         self._lifecycle_hook_type = lifecycle_hook_type
 
@@ -137,7 +156,7 @@ class LifecycleHookList:
         生命周期挂钩默认回调操作。ABANDON;CONTINUE。
 
         :param default_result: The default_result of this LifecycleHookList.
-        :type: str
+        :type default_result: str
         """
         self._default_result = default_result
 
@@ -159,7 +178,7 @@ class LifecycleHookList:
         生命周期挂钩超时时间，单位秒。
 
         :param default_timeout: The default_timeout of this LifecycleHookList.
-        :type: int
+        :type default_timeout: int
         """
         self._default_timeout = default_timeout
 
@@ -181,7 +200,7 @@ class LifecycleHookList:
         SMN服务中Topic的唯一的资源标识。
 
         :param notification_topic_urn: The notification_topic_urn of this LifecycleHookList.
-        :type: str
+        :type notification_topic_urn: str
         """
         self._notification_topic_urn = notification_topic_urn
 
@@ -203,7 +222,7 @@ class LifecycleHookList:
         SMN服务中Topic的资源名称。
 
         :param notification_topic_name: The notification_topic_name of this LifecycleHookList.
-        :type: str
+        :type notification_topic_name: str
         """
         self._notification_topic_name = notification_topic_name
 
@@ -225,7 +244,7 @@ class LifecycleHookList:
         自定义通知消息。
 
         :param notification_metadata: The notification_metadata of this LifecycleHookList.
-        :type: str
+        :type notification_metadata: str
         """
         self._notification_metadata = notification_metadata
 
@@ -247,7 +266,7 @@ class LifecycleHookList:
         创建生命周期挂钩时间，遵循UTC时间。
 
         :param create_time: The create_time of this LifecycleHookList.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 

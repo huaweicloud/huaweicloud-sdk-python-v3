@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EipResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class EipResult:
     }
 
     def __init__(self, ip_type=None, bandwidth=None):
-        """EipResult - a model defined in huaweicloud sdk"""
+        """EipResult
+
+        The model defined in huaweicloud sdk
+
+        :param ip_type: IP地址类型。
+        :type ip_type: str
+        :param bandwidth: 
+        :type bandwidth: :class:`huaweicloudsdkas.v1.BandwidthResult`
+        """
         
         
 
@@ -63,7 +70,7 @@ class EipResult:
         IP地址类型。
 
         :param ip_type: The ip_type of this EipResult.
-        :type: str
+        :type ip_type: str
         """
         self._ip_type = ip_type
 
@@ -73,7 +80,7 @@ class EipResult:
 
 
         :return: The bandwidth of this EipResult.
-        :rtype: BandwidthResult
+        :rtype: :class:`huaweicloudsdkas.v1.BandwidthResult`
         """
         return self._bandwidth
 
@@ -83,7 +90,7 @@ class EipResult:
 
 
         :param bandwidth: The bandwidth of this EipResult.
-        :type: BandwidthResult
+        :type bandwidth: :class:`huaweicloudsdkas.v1.BandwidthResult`
         """
         self._bandwidth = bandwidth
 

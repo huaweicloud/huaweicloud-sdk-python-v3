@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreatePostPaidServersRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreatePostPaidServersRequestBody:
     }
 
     def __init__(self, dry_run=None, server=None):
-        """CreatePostPaidServersRequestBody - a model defined in huaweicloud sdk"""
+        """CreatePostPaidServersRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param dry_run: 是否只预检此次请求。  true：发送检查请求，不会创建实例。检查项包括是否填写了必需参数、请求格式等。 如果检查不通过，则返回对应错误。 如果检查通过，则返回202状态码。 false：发送正常请求，通过检查后并且执行创建云服务器请求。
+        :type dry_run: bool
+        :param server: 
+        :type server: :class:`huaweicloudsdkecs.v2.PostPaidServer`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreatePostPaidServersRequestBody:
         是否只预检此次请求。  true：发送检查请求，不会创建实例。检查项包括是否填写了必需参数、请求格式等。 如果检查不通过，则返回对应错误。 如果检查通过，则返回202状态码。 false：发送正常请求，通过检查后并且执行创建云服务器请求。
 
         :param dry_run: The dry_run of this CreatePostPaidServersRequestBody.
-        :type: bool
+        :type dry_run: bool
         """
         self._dry_run = dry_run
 
@@ -72,7 +79,7 @@ class CreatePostPaidServersRequestBody:
 
 
         :return: The server of this CreatePostPaidServersRequestBody.
-        :rtype: PostPaidServer
+        :rtype: :class:`huaweicloudsdkecs.v2.PostPaidServer`
         """
         return self._server
 
@@ -82,7 +89,7 @@ class CreatePostPaidServersRequestBody:
 
 
         :param server: The server of this CreatePostPaidServersRequestBody.
-        :type: PostPaidServer
+        :type server: :class:`huaweicloudsdkecs.v2.PostPaidServer`
         """
         self._server = server
 

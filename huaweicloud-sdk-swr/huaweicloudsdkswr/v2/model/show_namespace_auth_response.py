@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowNamespaceAuthResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ShowNamespaceAuthResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, creator_name=None, self_auth=None, others_auths=None):
-        """ShowNamespaceAuthResponse - a model defined in huaweicloud sdk"""
+        """ShowNamespaceAuthResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: id
+        :type id: int
+        :param name: 组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
+        :type name: str
+        :param creator_name: 组织创建者
+        :type creator_name: str
+        :param self_auth: 
+        :type self_auth: :class:`huaweicloudsdkswr.v2.UserAuth`
+        :param others_auths: 其他用户的权限
+        :type others_auths: list[:class:`huaweicloudsdkswr.v2.UserAuth`]
+        """
         
         super(ShowNamespaceAuthResponse, self).__init__()
 
@@ -78,7 +91,7 @@ class ShowNamespaceAuthResponse(SdkResponse):
         id
 
         :param id: The id of this ShowNamespaceAuthResponse.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -100,7 +113,7 @@ class ShowNamespaceAuthResponse(SdkResponse):
         组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
 
         :param name: The name of this ShowNamespaceAuthResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -122,7 +135,7 @@ class ShowNamespaceAuthResponse(SdkResponse):
         组织创建者
 
         :param creator_name: The creator_name of this ShowNamespaceAuthResponse.
-        :type: str
+        :type creator_name: str
         """
         self._creator_name = creator_name
 
@@ -132,7 +145,7 @@ class ShowNamespaceAuthResponse(SdkResponse):
 
 
         :return: The self_auth of this ShowNamespaceAuthResponse.
-        :rtype: UserAuth
+        :rtype: :class:`huaweicloudsdkswr.v2.UserAuth`
         """
         return self._self_auth
 
@@ -142,7 +155,7 @@ class ShowNamespaceAuthResponse(SdkResponse):
 
 
         :param self_auth: The self_auth of this ShowNamespaceAuthResponse.
-        :type: UserAuth
+        :type self_auth: :class:`huaweicloudsdkswr.v2.UserAuth`
         """
         self._self_auth = self_auth
 
@@ -153,7 +166,7 @@ class ShowNamespaceAuthResponse(SdkResponse):
         其他用户的权限
 
         :return: The others_auths of this ShowNamespaceAuthResponse.
-        :rtype: list[UserAuth]
+        :rtype: list[:class:`huaweicloudsdkswr.v2.UserAuth`]
         """
         return self._others_auths
 
@@ -164,7 +177,7 @@ class ShowNamespaceAuthResponse(SdkResponse):
         其他用户的权限
 
         :param others_auths: The others_auths of this ShowNamespaceAuthResponse.
-        :type: list[UserAuth]
+        :type others_auths: list[:class:`huaweicloudsdkswr.v2.UserAuth`]
         """
         self._others_auths = others_auths
 

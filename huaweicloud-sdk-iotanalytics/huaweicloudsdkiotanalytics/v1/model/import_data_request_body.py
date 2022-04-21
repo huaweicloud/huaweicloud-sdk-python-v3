@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ImportDataRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class ImportDataRequestBody:
     }
 
     def __init__(self, data_path=None, data_type=None, table_id=None, with_column_header=None, delimiter=None, quote_char=None, escape_char=None, date_format=None, bad_records_path=None, timestamp_format=None, computing_resource_id=None):
-        """ImportDataRequestBody - a model defined in huaweicloud sdk"""
+        """ImportDataRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param data_path: 导入的数据路径（当前仅支持导入OBS上的数据，且OBS路径须以s3a开头）。必须先把该OBS桶添加到离线数据源。
+        :type data_path: str
+        :param data_type: 导入的数据类型（当前支持csv、parquet、orc、json、avro数据类型）。
+        :type data_type: str
+        :param table_id: 表ID。
+        :type table_id: str
+        :param with_column_header: 导入数据中的第一行数据是否包括列名，即表头。默认为“false”，表示不包括列名。导入CSV类型数据时可指定。
+        :type with_column_header: str
+        :param delimiter: 用户自定义数据分隔符，默认为逗号。导入CSV类型数据时可指定。
+        :type delimiter: str
+        :param quote_char: 用户自定义引用字符，默认为双引号。导入CSV类型数据时可指定。
+        :type quote_char: str
+        :param escape_char: 用户自定义转义字符，默认为反斜杠。导入CSV类型数据时可指定。
+        :type escape_char: str
+        :param date_format: 指定特定的日期格式，默认为“yyyy-MM-dd”。日期格式字符定义详见表3。导入CSV及JSON类型数据时可指定。
+        :type date_format: str
+        :param bad_records_path: 作业执行过程中的bad records存储目录。设置该配置项后，bad records不会导入到目标表。
+        :type bad_records_path: str
+        :param timestamp_format: 指定特定的时间格式，默认为“yyyy-MM-dd HH:mm:ss”。时间格式字符定义详见表3。导入CSV及JSON类型数据时可指定。
+        :type timestamp_format: str
+        :param computing_resource_id: 计算资源ID。
+        :type computing_resource_id: str
+        """
         
         
 
@@ -104,7 +129,7 @@ class ImportDataRequestBody:
         导入的数据路径（当前仅支持导入OBS上的数据，且OBS路径须以s3a开头）。必须先把该OBS桶添加到离线数据源。
 
         :param data_path: The data_path of this ImportDataRequestBody.
-        :type: str
+        :type data_path: str
         """
         self._data_path = data_path
 
@@ -126,7 +151,7 @@ class ImportDataRequestBody:
         导入的数据类型（当前支持csv、parquet、orc、json、avro数据类型）。
 
         :param data_type: The data_type of this ImportDataRequestBody.
-        :type: str
+        :type data_type: str
         """
         self._data_type = data_type
 
@@ -148,7 +173,7 @@ class ImportDataRequestBody:
         表ID。
 
         :param table_id: The table_id of this ImportDataRequestBody.
-        :type: str
+        :type table_id: str
         """
         self._table_id = table_id
 
@@ -170,7 +195,7 @@ class ImportDataRequestBody:
         导入数据中的第一行数据是否包括列名，即表头。默认为“false”，表示不包括列名。导入CSV类型数据时可指定。
 
         :param with_column_header: The with_column_header of this ImportDataRequestBody.
-        :type: str
+        :type with_column_header: str
         """
         self._with_column_header = with_column_header
 
@@ -192,7 +217,7 @@ class ImportDataRequestBody:
         用户自定义数据分隔符，默认为逗号。导入CSV类型数据时可指定。
 
         :param delimiter: The delimiter of this ImportDataRequestBody.
-        :type: str
+        :type delimiter: str
         """
         self._delimiter = delimiter
 
@@ -214,7 +239,7 @@ class ImportDataRequestBody:
         用户自定义引用字符，默认为双引号。导入CSV类型数据时可指定。
 
         :param quote_char: The quote_char of this ImportDataRequestBody.
-        :type: str
+        :type quote_char: str
         """
         self._quote_char = quote_char
 
@@ -236,7 +261,7 @@ class ImportDataRequestBody:
         用户自定义转义字符，默认为反斜杠。导入CSV类型数据时可指定。
 
         :param escape_char: The escape_char of this ImportDataRequestBody.
-        :type: str
+        :type escape_char: str
         """
         self._escape_char = escape_char
 
@@ -258,7 +283,7 @@ class ImportDataRequestBody:
         指定特定的日期格式，默认为“yyyy-MM-dd”。日期格式字符定义详见表3。导入CSV及JSON类型数据时可指定。
 
         :param date_format: The date_format of this ImportDataRequestBody.
-        :type: str
+        :type date_format: str
         """
         self._date_format = date_format
 
@@ -280,7 +305,7 @@ class ImportDataRequestBody:
         作业执行过程中的bad records存储目录。设置该配置项后，bad records不会导入到目标表。
 
         :param bad_records_path: The bad_records_path of this ImportDataRequestBody.
-        :type: str
+        :type bad_records_path: str
         """
         self._bad_records_path = bad_records_path
 
@@ -302,7 +327,7 @@ class ImportDataRequestBody:
         指定特定的时间格式，默认为“yyyy-MM-dd HH:mm:ss”。时间格式字符定义详见表3。导入CSV及JSON类型数据时可指定。
 
         :param timestamp_format: The timestamp_format of this ImportDataRequestBody.
-        :type: str
+        :type timestamp_format: str
         """
         self._timestamp_format = timestamp_format
 
@@ -324,7 +349,7 @@ class ImportDataRequestBody:
         计算资源ID。
 
         :param computing_resource_id: The computing_resource_id of this ImportDataRequestBody.
-        :type: str
+        :type computing_resource_id: str
         """
         self._computing_resource_id = computing_resource_id
 

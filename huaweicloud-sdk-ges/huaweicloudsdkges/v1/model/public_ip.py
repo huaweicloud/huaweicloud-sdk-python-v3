@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PublicIp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class PublicIp:
     }
 
     def __init__(self, public_bind_type=None, eip_id=None):
-        """PublicIp - a model defined in huaweicloud sdk"""
+        """PublicIp
+
+        The model defined in huaweicloud sdk
+
+        :param public_bind_type: 弹性IP绑定类型，取值如下。 - auto_assign：自动绑定。 - bind_existing：使用已有。
+        :type public_bind_type: str
+        :param eip_id: 弹性IP的id，当publicBindType设置为bind_existing时，该值为用户某个已创建但尚未绑定的EIP的ID；当publicBindType设置为auto_assign时，该值设置为空。
+        :type eip_id: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class PublicIp:
         弹性IP绑定类型，取值如下。 - auto_assign：自动绑定。 - bind_existing：使用已有。
 
         :param public_bind_type: The public_bind_type of this PublicIp.
-        :type: str
+        :type public_bind_type: str
         """
         self._public_bind_type = public_bind_type
 
@@ -85,7 +92,7 @@ class PublicIp:
         弹性IP的id，当publicBindType设置为bind_existing时，该值为用户某个已创建但尚未绑定的EIP的ID；当publicBindType设置为auto_assign时，该值设置为空。
 
         :param eip_id: The eip_id of this PublicIp.
-        :type: str
+        :type eip_id: str
         """
         self._eip_id = eip_id
 

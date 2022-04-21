@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneShowSecurityComplianceByOptionResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class KeystoneShowSecurityComplianceByOptionResponse(SdkResponse):
     }
 
     def __init__(self, config=None):
-        """KeystoneShowSecurityComplianceByOptionResponse - a model defined in huaweicloud sdk"""
+        """KeystoneShowSecurityComplianceByOptionResponse
+
+        The model defined in huaweicloud sdk
+
+        :param config: 
+        :type config: :class:`huaweicloudsdkiam.v3.ConfigByOption`
+        """
         
         super(KeystoneShowSecurityComplianceByOptionResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class KeystoneShowSecurityComplianceByOptionResponse(SdkResponse):
 
 
         :return: The config of this KeystoneShowSecurityComplianceByOptionResponse.
-        :rtype: ConfigByOption
+        :rtype: :class:`huaweicloudsdkiam.v3.ConfigByOption`
         """
         return self._config
 
@@ -56,7 +61,7 @@ class KeystoneShowSecurityComplianceByOptionResponse(SdkResponse):
 
 
         :param config: The config of this KeystoneShowSecurityComplianceByOptionResponse.
-        :type: ConfigByOption
+        :type config: :class:`huaweicloudsdkiam.v3.ConfigByOption`
         """
         self._config = config
 

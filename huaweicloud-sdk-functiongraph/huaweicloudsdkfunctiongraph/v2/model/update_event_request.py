@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateEventRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateEventRequest:
     }
 
     def __init__(self, event_id=None, function_urn=None, body=None):
-        """UpdateEventRequest - a model defined in huaweicloud sdk"""
+        """UpdateEventRequest
+
+        The model defined in huaweicloud sdk
+
+        :param event_id: 事件ID。
+        :type event_id: str
+        :param function_urn: 函数的URN（Uniform Resource Name），唯一标识函数。
+        :type function_urn: str
+        :param body: Body of the UpdateEventRequest
+        :type body: :class:`huaweicloudsdkfunctiongraph.v2.UpdateEventRequestBody`
+        """
         
         
 
@@ -66,7 +75,7 @@ class UpdateEventRequest:
         事件ID。
 
         :param event_id: The event_id of this UpdateEventRequest.
-        :type: str
+        :type event_id: str
         """
         self._event_id = event_id
 
@@ -88,7 +97,7 @@ class UpdateEventRequest:
         函数的URN（Uniform Resource Name），唯一标识函数。
 
         :param function_urn: The function_urn of this UpdateEventRequest.
-        :type: str
+        :type function_urn: str
         """
         self._function_urn = function_urn
 
@@ -98,7 +107,7 @@ class UpdateEventRequest:
 
 
         :return: The body of this UpdateEventRequest.
-        :rtype: UpdateEventRequestBody
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.UpdateEventRequestBody`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class UpdateEventRequest:
 
 
         :param body: The body of this UpdateEventRequest.
-        :type: UpdateEventRequestBody
+        :type body: :class:`huaweicloudsdkfunctiongraph.v2.UpdateEventRequestBody`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListUserLoginProtectsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListUserLoginProtectsResponse(SdkResponse):
     }
 
     def __init__(self, login_protects=None):
-        """ListUserLoginProtectsResponse - a model defined in huaweicloud sdk"""
+        """ListUserLoginProtectsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param login_protects: 登录状态保护信息列表。
+        :type login_protects: list[:class:`huaweicloudsdkiam.v3.LoginProtectResult`]
+        """
         
         super(ListUserLoginProtectsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListUserLoginProtectsResponse(SdkResponse):
         登录状态保护信息列表。
 
         :return: The login_protects of this ListUserLoginProtectsResponse.
-        :rtype: list[LoginProtectResult]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.LoginProtectResult`]
         """
         return self._login_protects
 
@@ -58,7 +63,7 @@ class ListUserLoginProtectsResponse(SdkResponse):
         登录状态保护信息列表。
 
         :param login_protects: The login_protects of this ListUserLoginProtectsResponse.
-        :type: list[LoginProtectResult]
+        :type login_protects: list[:class:`huaweicloudsdkiam.v3.LoginProtectResult`]
         """
         self._login_protects = login_protects
 

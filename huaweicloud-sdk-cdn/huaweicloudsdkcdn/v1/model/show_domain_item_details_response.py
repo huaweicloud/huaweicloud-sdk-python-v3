@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDomainItemDetailsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowDomainItemDetailsResponse(SdkResponse):
     }
 
     def __init__(self, domain_item_details=None):
-        """ShowDomainItemDetailsResponse - a model defined in huaweicloud sdk"""
+        """ShowDomainItemDetailsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param domain_item_details: 
+        :type domain_item_details: :class:`huaweicloudsdkcdn.v1.DomainItemDetail`
+        """
         
         super(ShowDomainItemDetailsResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class ShowDomainItemDetailsResponse(SdkResponse):
 
 
         :return: The domain_item_details of this ShowDomainItemDetailsResponse.
-        :rtype: DomainItemDetail
+        :rtype: :class:`huaweicloudsdkcdn.v1.DomainItemDetail`
         """
         return self._domain_item_details
 
@@ -56,7 +61,7 @@ class ShowDomainItemDetailsResponse(SdkResponse):
 
 
         :param domain_item_details: The domain_item_details of this ShowDomainItemDetailsResponse.
-        :type: DomainItemDetail
+        :type domain_item_details: :class:`huaweicloudsdkcdn.v1.DomainItemDetail`
         """
         self._domain_item_details = domain_item_details
 

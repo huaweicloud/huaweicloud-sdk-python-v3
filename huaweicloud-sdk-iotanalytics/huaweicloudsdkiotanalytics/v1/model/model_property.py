@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ModelProperty:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ModelProperty:
     }
 
     def __init__(self, name=None, type=None, description=None, unit=None):
-        """ModelProperty - a model defined in huaweicloud sdk"""
+        """ModelProperty
+
+        The model defined in huaweicloud sdk
+
+        :param name: 属性名称
+        :type name: str
+        :param type: 属性值类型
+        :type type: str
+        :param description: 属性描述
+        :type description: str
+        :param unit: 属性单位
+        :type unit: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class ModelProperty:
         属性名称
 
         :param name: The name of this ModelProperty.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -95,7 +106,7 @@ class ModelProperty:
         属性值类型
 
         :param type: The type of this ModelProperty.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -117,7 +128,7 @@ class ModelProperty:
         属性描述
 
         :param description: The description of this ModelProperty.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -139,7 +150,7 @@ class ModelProperty:
         属性单位
 
         :param unit: The unit of this ModelProperty.
-        :type: str
+        :type unit: str
         """
         self._unit = unit
 

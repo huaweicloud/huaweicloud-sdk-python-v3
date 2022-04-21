@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InsuranceItem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class InsuranceItem:
     }
 
     def __init__(self, insurance_name=None, insurance_period=None, insurance_amount=None, payment_frequency=None, payment_period=None, payment_amount=None):
-        """InsuranceItem - a model defined in huaweicloud sdk"""
+        """InsuranceItem
+
+        The model defined in huaweicloud sdk
+
+        :param insurance_name: 
+        :type insurance_name: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
+        :param insurance_period: 
+        :type insurance_period: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
+        :param insurance_amount: 
+        :type insurance_amount: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
+        :param payment_frequency: 
+        :type payment_frequency: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
+        :param payment_period: 
+        :type payment_period: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
+        :param payment_amount: 
+        :type payment_amount: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
+        """
         
         
 
@@ -71,7 +86,7 @@ class InsuranceItem:
 
 
         :return: The insurance_name of this InsuranceItem.
-        :rtype: InsurancePolicyDetail
+        :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
         return self._insurance_name
 
@@ -81,7 +96,7 @@ class InsuranceItem:
 
 
         :param insurance_name: The insurance_name of this InsuranceItem.
-        :type: InsurancePolicyDetail
+        :type insurance_name: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
         self._insurance_name = insurance_name
 
@@ -91,7 +106,7 @@ class InsuranceItem:
 
 
         :return: The insurance_period of this InsuranceItem.
-        :rtype: InsurancePolicyDetail
+        :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
         return self._insurance_period
 
@@ -101,7 +116,7 @@ class InsuranceItem:
 
 
         :param insurance_period: The insurance_period of this InsuranceItem.
-        :type: InsurancePolicyDetail
+        :type insurance_period: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
         self._insurance_period = insurance_period
 
@@ -111,7 +126,7 @@ class InsuranceItem:
 
 
         :return: The insurance_amount of this InsuranceItem.
-        :rtype: InsurancePolicyDetail
+        :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
         return self._insurance_amount
 
@@ -121,7 +136,7 @@ class InsuranceItem:
 
 
         :param insurance_amount: The insurance_amount of this InsuranceItem.
-        :type: InsurancePolicyDetail
+        :type insurance_amount: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
         self._insurance_amount = insurance_amount
 
@@ -131,7 +146,7 @@ class InsuranceItem:
 
 
         :return: The payment_frequency of this InsuranceItem.
-        :rtype: InsurancePolicyDetail
+        :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
         return self._payment_frequency
 
@@ -141,7 +156,7 @@ class InsuranceItem:
 
 
         :param payment_frequency: The payment_frequency of this InsuranceItem.
-        :type: InsurancePolicyDetail
+        :type payment_frequency: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
         self._payment_frequency = payment_frequency
 
@@ -151,7 +166,7 @@ class InsuranceItem:
 
 
         :return: The payment_period of this InsuranceItem.
-        :rtype: InsurancePolicyDetail
+        :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
         return self._payment_period
 
@@ -161,7 +176,7 @@ class InsuranceItem:
 
 
         :param payment_period: The payment_period of this InsuranceItem.
-        :type: InsurancePolicyDetail
+        :type payment_period: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
         self._payment_period = payment_period
 
@@ -171,7 +186,7 @@ class InsuranceItem:
 
 
         :return: The payment_amount of this InsuranceItem.
-        :rtype: InsurancePolicyDetail
+        :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
         return self._payment_amount
 
@@ -181,7 +196,7 @@ class InsuranceItem:
 
 
         :param payment_amount: The payment_amount of this InsuranceItem.
-        :type: InsurancePolicyDetail
+        :type payment_amount: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
         self._payment_amount = payment_amount
 

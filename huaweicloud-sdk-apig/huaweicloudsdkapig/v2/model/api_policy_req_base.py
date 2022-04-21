@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApiPolicyReqBase:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ApiPolicyReqBase:
     }
 
     def __init__(self, effect_mode=None, name=None, backend_params=None, conditions=None, authorizer_id=None):
-        """ApiPolicyReqBase - a model defined in huaweicloud sdk"""
+        """ApiPolicyReqBase
+
+        The model defined in huaweicloud sdk
+
+        :param effect_mode: 关联的策略组合模式： - ALL：满足全部条件 - ANY：满足任一条件
+        :type effect_mode: str
+        :param name: 策略后端名称。字符串由中文、英文字母、数字、下划线组成，且只能以中文或英文开头。
+        :type name: str
+        :param backend_params: 后端参数列表
+        :type backend_params: list[:class:`huaweicloudsdkapig.v2.BackendParamBase`]
+        :param conditions: 策略条件列表
+        :type conditions: list[:class:`huaweicloudsdkapig.v2.ApiConditionBase`]
+        :param authorizer_id: 后端自定义认证对象的ID
+        :type authorizer_id: str
+        """
         
         
 
@@ -75,7 +88,7 @@ class ApiPolicyReqBase:
         关联的策略组合模式： - ALL：满足全部条件 - ANY：满足任一条件
 
         :param effect_mode: The effect_mode of this ApiPolicyReqBase.
-        :type: str
+        :type effect_mode: str
         """
         self._effect_mode = effect_mode
 
@@ -97,7 +110,7 @@ class ApiPolicyReqBase:
         策略后端名称。字符串由中文、英文字母、数字、下划线组成，且只能以中文或英文开头。
 
         :param name: The name of this ApiPolicyReqBase.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -108,7 +121,7 @@ class ApiPolicyReqBase:
         后端参数列表
 
         :return: The backend_params of this ApiPolicyReqBase.
-        :rtype: list[BackendParamBase]
+        :rtype: list[:class:`huaweicloudsdkapig.v2.BackendParamBase`]
         """
         return self._backend_params
 
@@ -119,7 +132,7 @@ class ApiPolicyReqBase:
         后端参数列表
 
         :param backend_params: The backend_params of this ApiPolicyReqBase.
-        :type: list[BackendParamBase]
+        :type backend_params: list[:class:`huaweicloudsdkapig.v2.BackendParamBase`]
         """
         self._backend_params = backend_params
 
@@ -130,7 +143,7 @@ class ApiPolicyReqBase:
         策略条件列表
 
         :return: The conditions of this ApiPolicyReqBase.
-        :rtype: list[ApiConditionBase]
+        :rtype: list[:class:`huaweicloudsdkapig.v2.ApiConditionBase`]
         """
         return self._conditions
 
@@ -141,7 +154,7 @@ class ApiPolicyReqBase:
         策略条件列表
 
         :param conditions: The conditions of this ApiPolicyReqBase.
-        :type: list[ApiConditionBase]
+        :type conditions: list[:class:`huaweicloudsdkapig.v2.ApiConditionBase`]
         """
         self._conditions = conditions
 
@@ -163,7 +176,7 @@ class ApiPolicyReqBase:
         后端自定义认证对象的ID
 
         :param authorizer_id: The authorizer_id of this ApiPolicyReqBase.
-        :type: str
+        :type authorizer_id: str
         """
         self._authorizer_id = authorizer_id
 

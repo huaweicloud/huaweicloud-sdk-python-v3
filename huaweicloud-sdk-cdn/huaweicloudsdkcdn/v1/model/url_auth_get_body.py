@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UrlAuthGetBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UrlAuthGetBody:
     }
 
     def __init__(self, status=None, type=None, time_format=None, expire_time=None):
-        """UrlAuthGetBody - a model defined in huaweicloud sdk"""
+        """UrlAuthGetBody
+
+        The model defined in huaweicloud sdk
+
+        :param status: A/B/C类防盗链开关（on：开启，off：关闭）。
+        :type status: str
+        :param type: 鉴权方式 type_a：鉴权方式A type_b：鉴权方式B type_c1：鉴权方式C1 type_c2：鉴权方式C2
+        :type type: str
+        :param time_format: 时间格式 dec：十进制 hex：十六进制 鉴权方式A：只支持十进制 鉴权方式B：只支持十进制 鉴权方式C1：只支持十六进制鉴权方式 鉴权方式C2：支持十进制/十六进制
+        :type time_format: str
+        :param expire_time: 过期时间：范围：0-31536000单位为秒。
+        :type expire_time: int
+        """
         
         
 
@@ -72,7 +83,7 @@ class UrlAuthGetBody:
         A/B/C类防盗链开关（on：开启，off：关闭）。
 
         :param status: The status of this UrlAuthGetBody.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -94,7 +105,7 @@ class UrlAuthGetBody:
         鉴权方式 type_a：鉴权方式A type_b：鉴权方式B type_c1：鉴权方式C1 type_c2：鉴权方式C2
 
         :param type: The type of this UrlAuthGetBody.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -116,7 +127,7 @@ class UrlAuthGetBody:
         时间格式 dec：十进制 hex：十六进制 鉴权方式A：只支持十进制 鉴权方式B：只支持十进制 鉴权方式C1：只支持十六进制鉴权方式 鉴权方式C2：支持十进制/十六进制
 
         :param time_format: The time_format of this UrlAuthGetBody.
-        :type: str
+        :type time_format: str
         """
         self._time_format = time_format
 
@@ -138,7 +149,7 @@ class UrlAuthGetBody:
         过期时间：范围：0-31536000单位为秒。
 
         :param expire_time: The expire_time of this UrlAuthGetBody.
-        :type: int
+        :type expire_time: int
         """
         self._expire_time = expire_time
 

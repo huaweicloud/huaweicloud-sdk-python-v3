@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Common:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class Common:
     }
 
     def __init__(self, pvc=None, hls_interval=None, dash_interval=None, pack_type=None):
-        """Common - a model defined in huaweicloud sdk"""
+        """Common
+
+        The model defined in huaweicloud sdk
+
+        :param pvc: 是否开启高清低码功能。  取值如下： - false：关闭。 - true：开启。 
+        :type pvc: bool
+        :param hls_interval: HLS分片间隔，仅封装类型“pack_type”取值为1或3时，该参数生效。  取值范围：[2，10]。  单位：秒。 
+        :type hls_interval: int
+        :param dash_interval: DASH间隔，仅封装类型“pack_type”取值为2或3时，该参数生效。  取值范围：[2，10]。  单位：秒。 
+        :type dash_interval: int
+        :param pack_type: 封装类型。  取值如下： - 1：HLS - 2：DASH - 3：HLS+DASH - 4：MP4 - 5：MP3 - 6：ADTS  &gt; pack_type设置为5和6时，不能设置视频参数。 
+        :type pack_type: int
+        """
         
         
 
@@ -69,7 +80,7 @@ class Common:
         是否开启高清低码功能。  取值如下： - false：关闭。 - true：开启。 
 
         :param pvc: The pvc of this Common.
-        :type: bool
+        :type pvc: bool
         """
         self._pvc = pvc
 
@@ -91,7 +102,7 @@ class Common:
         HLS分片间隔，仅封装类型“pack_type”取值为1或3时，该参数生效。  取值范围：[2，10]。  单位：秒。 
 
         :param hls_interval: The hls_interval of this Common.
-        :type: int
+        :type hls_interval: int
         """
         self._hls_interval = hls_interval
 
@@ -113,7 +124,7 @@ class Common:
         DASH间隔，仅封装类型“pack_type”取值为2或3时，该参数生效。  取值范围：[2，10]。  单位：秒。 
 
         :param dash_interval: The dash_interval of this Common.
-        :type: int
+        :type dash_interval: int
         """
         self._dash_interval = dash_interval
 
@@ -135,7 +146,7 @@ class Common:
         封装类型。  取值如下： - 1：HLS - 2：DASH - 3：HLS+DASH - 4：MP4 - 5：MP3 - 6：ADTS  > pack_type设置为5和6时，不能设置视频参数。 
 
         :param pack_type: The pack_type of this Common.
-        :type: int
+        :type pack_type: int
         """
         self._pack_type = pack_type
 

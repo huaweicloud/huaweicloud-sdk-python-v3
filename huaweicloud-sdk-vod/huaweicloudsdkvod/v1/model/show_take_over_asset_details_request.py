@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowTakeOverAssetDetailsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowTakeOverAssetDetailsRequest:
     }
 
     def __init__(self, source_bucket=None, source_object=None):
-        """ShowTakeOverAssetDetailsRequest - a model defined in huaweicloud sdk"""
+        """ShowTakeOverAssetDetailsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param source_bucket: 媒资原始输入存放的桶。
+        :type source_bucket: str
+        :param source_object: 媒资原始输入的objectKey。
+        :type source_object: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ShowTakeOverAssetDetailsRequest:
         媒资原始输入存放的桶。
 
         :param source_bucket: The source_bucket of this ShowTakeOverAssetDetailsRequest.
-        :type: str
+        :type source_bucket: str
         """
         self._source_bucket = source_bucket
 
@@ -83,7 +90,7 @@ class ShowTakeOverAssetDetailsRequest:
         媒资原始输入的objectKey。
 
         :param source_object: The source_object of this ShowTakeOverAssetDetailsRequest.
-        :type: str
+        :type source_object: str
         """
         self._source_object = source_object
 

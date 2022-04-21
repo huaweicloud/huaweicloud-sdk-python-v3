@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MysqlSlowLogList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class MysqlSlowLogList:
     }
 
     def __init__(self, node_id=None, count=None, time=None, lock_time=None, rows_sent=None, rows_examined=None, database=None, users=None, query_sample=None, type=None, start_time=None, client_ip=None):
-        """MysqlSlowLogList - a model defined in huaweicloud sdk"""
+        """MysqlSlowLogList
+
+        The model defined in huaweicloud sdk
+
+        :param node_id: 节点ID。
+        :type node_id: str
+        :param count: 执行次数。
+        :type count: str
+        :param time: 执行时间。
+        :type time: str
+        :param lock_time: 等待锁时间。
+        :type lock_time: str
+        :param rows_sent: 结果行数量。
+        :type rows_sent: str
+        :param rows_examined: 扫描的行数量。
+        :type rows_examined: str
+        :param database: 所属数据库。
+        :type database: str
+        :param users: 账号。
+        :type users: str
+        :param query_sample: 执行语法。
+        :type query_sample: str
+        :param type: 语句类型。
+        :type type: str
+        :param start_time: 发生时间,UTC时间
+        :type start_time: str
+        :param client_ip: IP地址。
+        :type client_ip: str
+        """
         
         
 
@@ -113,7 +140,7 @@ class MysqlSlowLogList:
         节点ID。
 
         :param node_id: The node_id of this MysqlSlowLogList.
-        :type: str
+        :type node_id: str
         """
         self._node_id = node_id
 
@@ -135,7 +162,7 @@ class MysqlSlowLogList:
         执行次数。
 
         :param count: The count of this MysqlSlowLogList.
-        :type: str
+        :type count: str
         """
         self._count = count
 
@@ -157,7 +184,7 @@ class MysqlSlowLogList:
         执行时间。
 
         :param time: The time of this MysqlSlowLogList.
-        :type: str
+        :type time: str
         """
         self._time = time
 
@@ -179,7 +206,7 @@ class MysqlSlowLogList:
         等待锁时间。
 
         :param lock_time: The lock_time of this MysqlSlowLogList.
-        :type: str
+        :type lock_time: str
         """
         self._lock_time = lock_time
 
@@ -201,7 +228,7 @@ class MysqlSlowLogList:
         结果行数量。
 
         :param rows_sent: The rows_sent of this MysqlSlowLogList.
-        :type: str
+        :type rows_sent: str
         """
         self._rows_sent = rows_sent
 
@@ -223,7 +250,7 @@ class MysqlSlowLogList:
         扫描的行数量。
 
         :param rows_examined: The rows_examined of this MysqlSlowLogList.
-        :type: str
+        :type rows_examined: str
         """
         self._rows_examined = rows_examined
 
@@ -245,7 +272,7 @@ class MysqlSlowLogList:
         所属数据库。
 
         :param database: The database of this MysqlSlowLogList.
-        :type: str
+        :type database: str
         """
         self._database = database
 
@@ -267,7 +294,7 @@ class MysqlSlowLogList:
         账号。
 
         :param users: The users of this MysqlSlowLogList.
-        :type: str
+        :type users: str
         """
         self._users = users
 
@@ -289,7 +316,7 @@ class MysqlSlowLogList:
         执行语法。
 
         :param query_sample: The query_sample of this MysqlSlowLogList.
-        :type: str
+        :type query_sample: str
         """
         self._query_sample = query_sample
 
@@ -311,7 +338,7 @@ class MysqlSlowLogList:
         语句类型。
 
         :param type: The type of this MysqlSlowLogList.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -333,7 +360,7 @@ class MysqlSlowLogList:
         发生时间,UTC时间
 
         :param start_time: The start_time of this MysqlSlowLogList.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -355,7 +382,7 @@ class MysqlSlowLogList:
         IP地址。
 
         :param client_ip: The client_ip of this MysqlSlowLogList.
-        :type: str
+        :type client_ip: str
         """
         self._client_ip = client_ip
 

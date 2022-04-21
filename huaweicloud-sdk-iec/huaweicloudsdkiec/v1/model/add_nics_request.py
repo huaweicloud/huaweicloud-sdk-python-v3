@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddNicsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AddNicsRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """AddNicsRequest - a model defined in huaweicloud sdk"""
+        """AddNicsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 边缘实例ID。
+        :type instance_id: str
+        :param body: Body of the AddNicsRequest
+        :type body: :class:`huaweicloudsdkiec.v1.AddNicsRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class AddNicsRequest:
         边缘实例ID。
 
         :param instance_id: The instance_id of this AddNicsRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -72,7 +79,7 @@ class AddNicsRequest:
 
 
         :return: The body of this AddNicsRequest.
-        :rtype: AddNicsRequestBody
+        :rtype: :class:`huaweicloudsdkiec.v1.AddNicsRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class AddNicsRequest:
 
 
         :param body: The body of this AddNicsRequest.
-        :type: AddNicsRequestBody
+        :type body: :class:`huaweicloudsdkiec.v1.AddNicsRequestBody`
         """
         self._body = body
 

@@ -12,11 +12,9 @@ class ChargeMode:
     """
     allowed enum values
     """
-
     PROVIDED = "provided"
     ON_DEMANDED = "on_demanded"
     MONTHLY = "monthly"
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +32,11 @@ class ChargeMode:
     }
 
     def __init__(self):
-        """ChargeMode - a model defined in huaweicloud sdk"""
+        """ChargeMode
+
+        The model defined in huaweicloud sdk
+
+        """
         
         
         self.discriminator = None

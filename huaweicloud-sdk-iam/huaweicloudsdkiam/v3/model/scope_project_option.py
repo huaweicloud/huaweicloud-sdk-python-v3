@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ScopeProjectOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ScopeProjectOption:
     }
 
     def __init__(self, id=None, name=None, domain=None):
-        """ScopeProjectOption - a model defined in huaweicloud sdk"""
+        """ScopeProjectOption
+
+        The model defined in huaweicloud sdk
+
+        :param id: 项目ID，id与name二选一即可。
+        :type id: str
+        :param name: 项目名，id与name二选一即可。
+        :type name: str
+        :param domain: 
+        :type domain: :class:`huaweicloudsdkiam.v3.ScopeDomainOption`
+        """
         
         
 
@@ -68,7 +77,7 @@ class ScopeProjectOption:
         项目ID，id与name二选一即可。
 
         :param id: The id of this ScopeProjectOption.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -90,7 +99,7 @@ class ScopeProjectOption:
         项目名，id与name二选一即可。
 
         :param name: The name of this ScopeProjectOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -100,7 +109,7 @@ class ScopeProjectOption:
 
 
         :return: The domain of this ScopeProjectOption.
-        :rtype: ScopeDomainOption
+        :rtype: :class:`huaweicloudsdkiam.v3.ScopeDomainOption`
         """
         return self._domain
 
@@ -110,7 +119,7 @@ class ScopeProjectOption:
 
 
         :param domain: The domain of this ScopeProjectOption.
-        :type: ScopeDomainOption
+        :type domain: :class:`huaweicloudsdkiam.v3.ScopeDomainOption`
         """
         self._domain = domain
 

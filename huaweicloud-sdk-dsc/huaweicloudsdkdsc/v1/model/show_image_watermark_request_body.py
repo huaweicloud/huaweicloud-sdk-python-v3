@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowImageWatermarkRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowImageWatermarkRequestBody:
     }
 
     def __init__(self, file=None, mark_len=None):
-        """ShowImageWatermarkRequestBody - a model defined in huaweicloud sdk"""
+        """ShowImageWatermarkRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param file: 待提取暗水印的图片文件。
+        :type file: :class:`huaweicloudsdkcore.http.formdata.FormFile`
+        :param mark_len: 指定待提取水印的长度，mark_len长度大于0，小于32。设置后可以提升水印提取性能
+        :type mark_len: str
+        """
         
         
 
@@ -51,7 +58,7 @@ class ShowImageWatermarkRequestBody:
         待提取暗水印的图片文件。
 
         :return: The file of this ShowImageWatermarkRequestBody.
-        :rtype: file
+        :rtype: :class:`huaweicloudsdkcore.http.formdata.FormFile`
         """
         return self._file
 
@@ -62,7 +69,7 @@ class ShowImageWatermarkRequestBody:
         待提取暗水印的图片文件。
 
         :param file: The file of this ShowImageWatermarkRequestBody.
-        :type: file
+        :type file: :class:`huaweicloudsdkcore.http.formdata.FormFile`
         """
         self._file = file
 
@@ -84,7 +91,7 @@ class ShowImageWatermarkRequestBody:
         指定待提取水印的长度，mark_len长度大于0，小于32。设置后可以提升水印提取性能
 
         :param mark_len: The mark_len of this ShowImageWatermarkRequestBody.
-        :type: str
+        :type mark_len: str
         """
         self._mark_len = mark_len
 

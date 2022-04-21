@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDeploymentHostResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateDeploymentHostResponse(SdkResponse):
     }
 
     def __init__(self, host_id=None):
-        """UpdateDeploymentHostResponse - a model defined in huaweicloud sdk"""
+        """UpdateDeploymentHostResponse
+
+        The model defined in huaweicloud sdk
+
+        :param host_id: 主机id
+        :type host_id: str
+        """
         
         super(UpdateDeploymentHostResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class UpdateDeploymentHostResponse(SdkResponse):
         主机id
 
         :param host_id: The host_id of this UpdateDeploymentHostResponse.
-        :type: str
+        :type host_id: str
         """
         self._host_id = host_id
 

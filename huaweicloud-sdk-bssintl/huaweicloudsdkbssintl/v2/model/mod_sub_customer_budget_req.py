@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ModSubCustomerBudgetReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ModSubCustomerBudgetReq:
     }
 
     def __init__(self, customer_id=None, budget_amount=None, cancel_partner_frozen=None):
-        """ModSubCustomerBudgetReq - a model defined in huaweicloud sdk"""
+        """ModSubCustomerBudgetReq
+
+        The model defined in huaweicloud sdk
+
+        :param customer_id: 客户账号ID。您可以调用查询客户列表接口获取customer_id。
+        :type customer_id: str
+        :param budget_amount: 调整的目标金额。 单位：元。精确至小数点后2位。
+        :type budget_amount: float
+        :param cancel_partner_frozen: 是否在设置客户预算的同时解除账号冻结： 0：否1：是 默认值为0。
+        :type cancel_partner_frozen: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class ModSubCustomerBudgetReq:
         客户账号ID。您可以调用查询客户列表接口获取customer_id。
 
         :param customer_id: The customer_id of this ModSubCustomerBudgetReq.
-        :type: str
+        :type customer_id: str
         """
         self._customer_id = customer_id
 
@@ -88,7 +97,7 @@ class ModSubCustomerBudgetReq:
         调整的目标金额。 单位：元。精确至小数点后2位。
 
         :param budget_amount: The budget_amount of this ModSubCustomerBudgetReq.
-        :type: float
+        :type budget_amount: float
         """
         self._budget_amount = budget_amount
 
@@ -110,7 +119,7 @@ class ModSubCustomerBudgetReq:
         是否在设置客户预算的同时解除账号冻结： 0：否1：是 默认值为0。
 
         :param cancel_partner_frozen: The cancel_partner_frozen of this ModSubCustomerBudgetReq.
-        :type: str
+        :type cancel_partner_frozen: str
         """
         self._cancel_partner_frozen = cancel_partner_frozen
 

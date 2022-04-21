@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResetFingerprint:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -33,7 +32,15 @@ class ResetFingerprint:
     }
 
     def __init__(self, fingerprint=None, force_disconnect=None):
-        """ResetFingerprint - a model defined in huaweicloud sdk"""
+        """ResetFingerprint
+
+        The model defined in huaweicloud sdk
+
+        :param fingerprint: **参数说明**：设备指纹。设置改字段时平台将设备指纹重置为指定值；不携带时将之置空，后续设备第一次接入时，该设备指纹的值将设置为第一次接入时的证书指纹。 **取值范围**：长度为40的十六进制字符串或者长度为64的十六进制字符串。
+        :type fingerprint: str
+        :param force_disconnect: **参数说明**：是否强制断开设备的连接，当前仅限长连接。默认值false。
+        :type force_disconnect: bool
+        """
         
         
 
@@ -64,7 +71,7 @@ class ResetFingerprint:
         **参数说明**：设备指纹。设置改字段时平台将设备指纹重置为指定值；不携带时将之置空，后续设备第一次接入时，该设备指纹的值将设置为第一次接入时的证书指纹。 **取值范围**：长度为40的十六进制字符串或者长度为64的十六进制字符串。
 
         :param fingerprint: The fingerprint of this ResetFingerprint.
-        :type: str
+        :type fingerprint: str
         """
         self._fingerprint = fingerprint
 
@@ -86,7 +93,7 @@ class ResetFingerprint:
         **参数说明**：是否强制断开设备的连接，当前仅限长连接。默认值false。
 
         :param force_disconnect: The force_disconnect of this ResetFingerprint.
-        :type: bool
+        :type force_disconnect: bool
         """
         self._force_disconnect = force_disconnect
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ChangeRuleStatusRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ChangeRuleStatusRequest:
     }
 
     def __init__(self, instance_id=None, rule_id=None, body=None):
-        """ChangeRuleStatusRequest - a model defined in huaweicloud sdk"""
+        """ChangeRuleStatusRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
+        :type instance_id: str
+        :param rule_id: **参数说明**：规则Id。 **取值范围**：长度不超过32，只允许字母、数字的组合。
+        :type rule_id: str
+        :param body: Body of the ChangeRuleStatusRequest
+        :type body: :class:`huaweicloudsdkiotda.v5.RuleStatus`
+        """
         
         
 
@@ -67,7 +76,7 @@ class ChangeRuleStatusRequest:
         **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
         :param instance_id: The instance_id of this ChangeRuleStatusRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -89,7 +98,7 @@ class ChangeRuleStatusRequest:
         **参数说明**：规则Id。 **取值范围**：长度不超过32，只允许字母、数字的组合。
 
         :param rule_id: The rule_id of this ChangeRuleStatusRequest.
-        :type: str
+        :type rule_id: str
         """
         self._rule_id = rule_id
 
@@ -99,7 +108,7 @@ class ChangeRuleStatusRequest:
 
 
         :return: The body of this ChangeRuleStatusRequest.
-        :rtype: RuleStatus
+        :rtype: :class:`huaweicloudsdkiotda.v5.RuleStatus`
         """
         return self._body
 
@@ -109,7 +118,7 @@ class ChangeRuleStatusRequest:
 
 
         :param body: The body of this ChangeRuleStatusRequest.
-        :type: RuleStatus
+        :type body: :class:`huaweicloudsdkiotda.v5.RuleStatus`
         """
         self._body = body
 

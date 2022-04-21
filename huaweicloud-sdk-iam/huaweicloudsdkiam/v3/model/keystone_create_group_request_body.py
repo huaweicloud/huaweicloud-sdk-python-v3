@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneCreateGroupRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class KeystoneCreateGroupRequestBody:
     }
 
     def __init__(self, group=None):
-        """KeystoneCreateGroupRequestBody - a model defined in huaweicloud sdk"""
+        """KeystoneCreateGroupRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param group: 
+        :type group: :class:`huaweicloudsdkiam.v3.KeystoneCreateGroupOption`
+        """
         
         
 
@@ -45,7 +50,7 @@ class KeystoneCreateGroupRequestBody:
 
 
         :return: The group of this KeystoneCreateGroupRequestBody.
-        :rtype: KeystoneCreateGroupOption
+        :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCreateGroupOption`
         """
         return self._group
 
@@ -55,7 +60,7 @@ class KeystoneCreateGroupRequestBody:
 
 
         :param group: The group of this KeystoneCreateGroupRequestBody.
-        :type: KeystoneCreateGroupOption
+        :type group: :class:`huaweicloudsdkiam.v3.KeystoneCreateGroupOption`
         """
         self._group = group
 

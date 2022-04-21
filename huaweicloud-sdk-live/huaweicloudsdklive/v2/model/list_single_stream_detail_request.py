@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSingleStreamDetailRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListSingleStreamDetailRequest:
     }
 
     def __init__(self, publish_domain=None, app=None, stream=None, start_time=None, end_time=None):
-        """ListSingleStreamDetailRequest - a model defined in huaweicloud sdk"""
+        """ListSingleStreamDetailRequest
+
+        The model defined in huaweicloud sdk
+
+        :param publish_domain: 推流域名。 
+        :type publish_domain: str
+        :param app: 应用名。 
+        :type app: str
+        :param stream: 流名。 
+        :type stream: str
+        :param start_time: 起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度1天，最大查询周期1个月。  若参数为空，默认查询最近1小时数据。 
+        :type start_time: str
+        :param end_time: 结束时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度1天，最大查询周期1个月。  若参数为空，默认为当前时间。结束时间需大于起始时间。 
+        :type end_time: str
+        """
         
         
 
@@ -75,7 +88,7 @@ class ListSingleStreamDetailRequest:
         推流域名。 
 
         :param publish_domain: The publish_domain of this ListSingleStreamDetailRequest.
-        :type: str
+        :type publish_domain: str
         """
         self._publish_domain = publish_domain
 
@@ -97,7 +110,7 @@ class ListSingleStreamDetailRequest:
         应用名。 
 
         :param app: The app of this ListSingleStreamDetailRequest.
-        :type: str
+        :type app: str
         """
         self._app = app
 
@@ -119,7 +132,7 @@ class ListSingleStreamDetailRequest:
         流名。 
 
         :param stream: The stream of this ListSingleStreamDetailRequest.
-        :type: str
+        :type stream: str
         """
         self._stream = stream
 
@@ -141,7 +154,7 @@ class ListSingleStreamDetailRequest:
         起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度1天，最大查询周期1个月。  若参数为空，默认查询最近1小时数据。 
 
         :param start_time: The start_time of this ListSingleStreamDetailRequest.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -163,7 +176,7 @@ class ListSingleStreamDetailRequest:
         结束时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度1天，最大查询周期1个月。  若参数为空，默认为当前时间。结束时间需大于起始时间。 
 
         :param end_time: The end_time of this ListSingleStreamDetailRequest.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 

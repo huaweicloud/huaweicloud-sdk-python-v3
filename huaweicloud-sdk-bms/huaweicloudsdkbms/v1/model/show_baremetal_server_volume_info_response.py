@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowBaremetalServerVolumeInfoResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowBaremetalServerVolumeInfoResponse(SdkResponse):
     }
 
     def __init__(self, volume_attachments=None):
-        """ShowBaremetalServerVolumeInfoResponse - a model defined in huaweicloud sdk"""
+        """ShowBaremetalServerVolumeInfoResponse
+
+        The model defined in huaweicloud sdk
+
+        :param volume_attachments: 裸金属服务器挂载信息列表，详情请参见表2 volumeAttachments字段数据结构说明。
+        :type volume_attachments: list[:class:`huaweicloudsdkbms.v1.VolumeAttachments`]
+        """
         
         super(ShowBaremetalServerVolumeInfoResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ShowBaremetalServerVolumeInfoResponse(SdkResponse):
         裸金属服务器挂载信息列表，详情请参见表2 volumeAttachments字段数据结构说明。
 
         :return: The volume_attachments of this ShowBaremetalServerVolumeInfoResponse.
-        :rtype: list[VolumeAttachments]
+        :rtype: list[:class:`huaweicloudsdkbms.v1.VolumeAttachments`]
         """
         return self._volume_attachments
 
@@ -58,7 +63,7 @@ class ShowBaremetalServerVolumeInfoResponse(SdkResponse):
         裸金属服务器挂载信息列表，详情请参见表2 volumeAttachments字段数据结构说明。
 
         :param volume_attachments: The volume_attachments of this ShowBaremetalServerVolumeInfoResponse.
-        :type: list[VolumeAttachments]
+        :type volume_attachments: list[:class:`huaweicloudsdkbms.v1.VolumeAttachments`]
         """
         self._volume_attachments = volume_attachments
 

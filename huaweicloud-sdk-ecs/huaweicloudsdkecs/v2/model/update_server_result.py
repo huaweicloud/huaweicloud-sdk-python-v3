@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateServerResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -70,7 +69,53 @@ class UpdateServerResult:
     }
 
     def __init__(self, tenant_id=None, image=None, access_i_pv4=None, access_i_pv6=None, metadata=None, addresses=None, created=None, host_id=None, flavor=None, os_dc_fdisk_config=None, user_id=None, name=None, progress=None, links=None, id=None, updated=None, locked=None, description=None, tags=None, status=None, os_ext_srv_att_rhostname=None):
-        """UpdateServerResult - a model defined in huaweicloud sdk"""
+        """UpdateServerResult
+
+        The model defined in huaweicloud sdk
+
+        :param tenant_id: 项目ID。
+        :type tenant_id: str
+        :param image: 镜像ID。
+        :type image: str
+        :param access_i_pv4: 预留属性。
+        :type access_i_pv4: str
+        :param access_i_pv6: 预留属性。
+        :type access_i_pv6: str
+        :param metadata: 云服务器元数据。
+        :type metadata: dict(str, str)
+        :param addresses: 弹性云服务器的网络属性。
+        :type addresses: dict(str, list[UpdateServerAddress])
+        :param created: 弹性云服务器创建时间。  时间格式例如：2019-05-22T03:19:19Z
+        :type created: str
+        :param host_id: 弹性云服务器所在主机的主机ID。
+        :type host_id: str
+        :param flavor: 
+        :type flavor: :class:`huaweicloudsdkecs.v2.SimpleFlavor`
+        :param os_dc_fdisk_config: 扩展属性， diskConfig的类型。  - MANUAL，镜像空间不会扩展。 - AUTO，系统盘镜像空间会自动扩展为与flavor大小一致。
+        :type os_dc_fdisk_config: str
+        :param user_id: 创建弹性云服务器的用户ID，格式为UUID。
+        :type user_id: str
+        :param name: 弹性云服务器名称。
+        :type name: str
+        :param progress: 弹性云服务器进度。
+        :type progress: int
+        :param links: 云服务器相关标记快捷链接信息。
+        :type links: list[:class:`huaweicloudsdkecs.v2.Link`]
+        :param id: 弹性云服务器ID，格式为UUID。
+        :type id: str
+        :param updated: 弹性云服务器更新时间。  时间格式例如：2019-05-22T03:30:52Z
+        :type updated: str
+        :param locked: 弹性云服务器是否为锁定状态。  - true：锁定 - false：未锁定
+        :type locked: bool
+        :param description: 弹性云服务器的描述信息。
+        :type description: str
+        :param tags: 云服务器的标签列表。  微版本2.26后支持，如果不使用微版本查询，响应中无tags字段。  系统近期对标签功能进行了升级，升级后，返回的tag值遵循如下规则：  - key与value使用“&#x3D;”连接，如“key&#x3D;value”。 - 如果value为空字符串，则仅返回key。 - key与value使用“&#x3D;”连接，如“key&#x3D;value”。 - 如果value为空字符串，则仅返回key。
+        :type tags: list[str]
+        :param status: 弹性云服务器状态。  取值范围：  ACTIVE、BUILD、DELETED、ERROR、HARD_REBOOT、MIGRATING、PAUSED、REBOOT、REBUILD、RESIZE、REVERT_RESIZE、SHUTOFF、SHELVED、SHELVED_OFFLOADED、SOFT_DELETED、SUSPENDED、VERIFY_RESIZE  弹性云服务器状态说明请参考[云服务器状态](https://support.huaweicloud.com/api-ecs/ecs_08_0002.html)
+        :type status: str
+        :param os_ext_srv_att_rhostname: 弹性云服务器的主机名。
+        :type os_ext_srv_att_rhostname: str
+        """
         
         
 
@@ -140,7 +185,7 @@ class UpdateServerResult:
         项目ID。
 
         :param tenant_id: The tenant_id of this UpdateServerResult.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 
@@ -162,7 +207,7 @@ class UpdateServerResult:
         镜像ID。
 
         :param image: The image of this UpdateServerResult.
-        :type: str
+        :type image: str
         """
         self._image = image
 
@@ -184,7 +229,7 @@ class UpdateServerResult:
         预留属性。
 
         :param access_i_pv4: The access_i_pv4 of this UpdateServerResult.
-        :type: str
+        :type access_i_pv4: str
         """
         self._access_i_pv4 = access_i_pv4
 
@@ -206,7 +251,7 @@ class UpdateServerResult:
         预留属性。
 
         :param access_i_pv6: The access_i_pv6 of this UpdateServerResult.
-        :type: str
+        :type access_i_pv6: str
         """
         self._access_i_pv6 = access_i_pv6
 
@@ -228,7 +273,7 @@ class UpdateServerResult:
         云服务器元数据。
 
         :param metadata: The metadata of this UpdateServerResult.
-        :type: dict(str, str)
+        :type metadata: dict(str, str)
         """
         self._metadata = metadata
 
@@ -250,7 +295,7 @@ class UpdateServerResult:
         弹性云服务器的网络属性。
 
         :param addresses: The addresses of this UpdateServerResult.
-        :type: dict(str, list[UpdateServerAddress])
+        :type addresses: dict(str, list[UpdateServerAddress])
         """
         self._addresses = addresses
 
@@ -272,7 +317,7 @@ class UpdateServerResult:
         弹性云服务器创建时间。  时间格式例如：2019-05-22T03:19:19Z
 
         :param created: The created of this UpdateServerResult.
-        :type: str
+        :type created: str
         """
         self._created = created
 
@@ -294,7 +339,7 @@ class UpdateServerResult:
         弹性云服务器所在主机的主机ID。
 
         :param host_id: The host_id of this UpdateServerResult.
-        :type: str
+        :type host_id: str
         """
         self._host_id = host_id
 
@@ -304,7 +349,7 @@ class UpdateServerResult:
 
 
         :return: The flavor of this UpdateServerResult.
-        :rtype: SimpleFlavor
+        :rtype: :class:`huaweicloudsdkecs.v2.SimpleFlavor`
         """
         return self._flavor
 
@@ -314,7 +359,7 @@ class UpdateServerResult:
 
 
         :param flavor: The flavor of this UpdateServerResult.
-        :type: SimpleFlavor
+        :type flavor: :class:`huaweicloudsdkecs.v2.SimpleFlavor`
         """
         self._flavor = flavor
 
@@ -336,7 +381,7 @@ class UpdateServerResult:
         扩展属性， diskConfig的类型。  - MANUAL，镜像空间不会扩展。 - AUTO，系统盘镜像空间会自动扩展为与flavor大小一致。
 
         :param os_dc_fdisk_config: The os_dc_fdisk_config of this UpdateServerResult.
-        :type: str
+        :type os_dc_fdisk_config: str
         """
         self._os_dc_fdisk_config = os_dc_fdisk_config
 
@@ -358,7 +403,7 @@ class UpdateServerResult:
         创建弹性云服务器的用户ID，格式为UUID。
 
         :param user_id: The user_id of this UpdateServerResult.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -380,7 +425,7 @@ class UpdateServerResult:
         弹性云服务器名称。
 
         :param name: The name of this UpdateServerResult.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -402,7 +447,7 @@ class UpdateServerResult:
         弹性云服务器进度。
 
         :param progress: The progress of this UpdateServerResult.
-        :type: int
+        :type progress: int
         """
         self._progress = progress
 
@@ -413,7 +458,7 @@ class UpdateServerResult:
         云服务器相关标记快捷链接信息。
 
         :return: The links of this UpdateServerResult.
-        :rtype: list[Link]
+        :rtype: list[:class:`huaweicloudsdkecs.v2.Link`]
         """
         return self._links
 
@@ -424,7 +469,7 @@ class UpdateServerResult:
         云服务器相关标记快捷链接信息。
 
         :param links: The links of this UpdateServerResult.
-        :type: list[Link]
+        :type links: list[:class:`huaweicloudsdkecs.v2.Link`]
         """
         self._links = links
 
@@ -446,7 +491,7 @@ class UpdateServerResult:
         弹性云服务器ID，格式为UUID。
 
         :param id: The id of this UpdateServerResult.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -468,7 +513,7 @@ class UpdateServerResult:
         弹性云服务器更新时间。  时间格式例如：2019-05-22T03:30:52Z
 
         :param updated: The updated of this UpdateServerResult.
-        :type: str
+        :type updated: str
         """
         self._updated = updated
 
@@ -490,7 +535,7 @@ class UpdateServerResult:
         弹性云服务器是否为锁定状态。  - true：锁定 - false：未锁定
 
         :param locked: The locked of this UpdateServerResult.
-        :type: bool
+        :type locked: bool
         """
         self._locked = locked
 
@@ -512,7 +557,7 @@ class UpdateServerResult:
         弹性云服务器的描述信息。
 
         :param description: The description of this UpdateServerResult.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -534,7 +579,7 @@ class UpdateServerResult:
         云服务器的标签列表。  微版本2.26后支持，如果不使用微版本查询，响应中无tags字段。  系统近期对标签功能进行了升级，升级后，返回的tag值遵循如下规则：  - key与value使用“=”连接，如“key=value”。 - 如果value为空字符串，则仅返回key。 - key与value使用“=”连接，如“key=value”。 - 如果value为空字符串，则仅返回key。
 
         :param tags: The tags of this UpdateServerResult.
-        :type: list[str]
+        :type tags: list[str]
         """
         self._tags = tags
 
@@ -556,7 +601,7 @@ class UpdateServerResult:
         弹性云服务器状态。  取值范围：  ACTIVE、BUILD、DELETED、ERROR、HARD_REBOOT、MIGRATING、PAUSED、REBOOT、REBUILD、RESIZE、REVERT_RESIZE、SHUTOFF、SHELVED、SHELVED_OFFLOADED、SOFT_DELETED、SUSPENDED、VERIFY_RESIZE  弹性云服务器状态说明请参考[云服务器状态](https://support.huaweicloud.com/api-ecs/ecs_08_0002.html)
 
         :param status: The status of this UpdateServerResult.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -578,7 +623,7 @@ class UpdateServerResult:
         弹性云服务器的主机名。
 
         :param os_ext_srv_att_rhostname: The os_ext_srv_att_rhostname of this UpdateServerResult.
-        :type: str
+        :type os_ext_srv_att_rhostname: str
         """
         self._os_ext_srv_att_rhostname = os_ext_srv_att_rhostname
 

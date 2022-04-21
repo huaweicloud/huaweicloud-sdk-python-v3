@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateResDatastructRequestBodyBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateResDatastructRequestBodyBody:
     }
 
     def __init__(self, item_attrs=None, user_attrs=None, behaviors=None):
-        """UpdateResDatastructRequestBodyBody - a model defined in huaweicloud sdk"""
+        """UpdateResDatastructRequestBodyBody
+
+        The model defined in huaweicloud sdk
+
+        :param item_attrs: 物品特征信息。
+        :type item_attrs: list[:class:`huaweicloudsdkres.v1.ItemAttrs`]
+        :param user_attrs: 用户特征信息。
+        :type user_attrs: list[:class:`huaweicloudsdkres.v1.UserAttrs`]
+        :param behaviors: 
+        :type behaviors: :class:`huaweicloudsdkres.v1.BehaviorsConfig`
+        """
         
         
 
@@ -54,7 +63,7 @@ class UpdateResDatastructRequestBodyBody:
         物品特征信息。
 
         :return: The item_attrs of this UpdateResDatastructRequestBodyBody.
-        :rtype: list[ItemAttrs]
+        :rtype: list[:class:`huaweicloudsdkres.v1.ItemAttrs`]
         """
         return self._item_attrs
 
@@ -65,7 +74,7 @@ class UpdateResDatastructRequestBodyBody:
         物品特征信息。
 
         :param item_attrs: The item_attrs of this UpdateResDatastructRequestBodyBody.
-        :type: list[ItemAttrs]
+        :type item_attrs: list[:class:`huaweicloudsdkres.v1.ItemAttrs`]
         """
         self._item_attrs = item_attrs
 
@@ -76,7 +85,7 @@ class UpdateResDatastructRequestBodyBody:
         用户特征信息。
 
         :return: The user_attrs of this UpdateResDatastructRequestBodyBody.
-        :rtype: list[UserAttrs]
+        :rtype: list[:class:`huaweicloudsdkres.v1.UserAttrs`]
         """
         return self._user_attrs
 
@@ -87,7 +96,7 @@ class UpdateResDatastructRequestBodyBody:
         用户特征信息。
 
         :param user_attrs: The user_attrs of this UpdateResDatastructRequestBodyBody.
-        :type: list[UserAttrs]
+        :type user_attrs: list[:class:`huaweicloudsdkres.v1.UserAttrs`]
         """
         self._user_attrs = user_attrs
 
@@ -97,7 +106,7 @@ class UpdateResDatastructRequestBodyBody:
 
 
         :return: The behaviors of this UpdateResDatastructRequestBodyBody.
-        :rtype: BehaviorsConfig
+        :rtype: :class:`huaweicloudsdkres.v1.BehaviorsConfig`
         """
         return self._behaviors
 
@@ -107,7 +116,7 @@ class UpdateResDatastructRequestBodyBody:
 
 
         :param behaviors: The behaviors of this UpdateResDatastructRequestBodyBody.
-        :type: BehaviorsConfig
+        :type behaviors: :class:`huaweicloudsdkres.v1.BehaviorsConfig`
         """
         self._behaviors = behaviors
 

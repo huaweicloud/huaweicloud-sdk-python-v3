@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListClustersByTagsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListClustersByTagsRequest:
     }
 
     def __init__(self, body=None):
-        """ListClustersByTagsRequest - a model defined in huaweicloud sdk"""
+        """ListClustersByTagsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the ListClustersByTagsRequest
+        :type body: :class:`huaweicloudsdkmrs.v1.ListResourceReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class ListClustersByTagsRequest:
 
 
         :return: The body of this ListClustersByTagsRequest.
-        :rtype: ListResourceReq
+        :rtype: :class:`huaweicloudsdkmrs.v1.ListResourceReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class ListClustersByTagsRequest:
 
 
         :param body: The body of this ListClustersByTagsRequest.
-        :type: ListResourceReq
+        :type body: :class:`huaweicloudsdkmrs.v1.ListResourceReq`
         """
         self._body = body
 

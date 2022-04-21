@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ValueInPropertyVisitorsRegisterType:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ValueInPropertyVisitorsRegisterType:
     }
 
     def __init__(self, value=None, optional=None, metadata=None):
-        """ValueInPropertyVisitorsRegisterType - a model defined in huaweicloud sdk"""
+        """ValueInPropertyVisitorsRegisterType
+
+        The model defined in huaweicloud sdk
+
+        :param value: value 最大长度512， value允许英文字母、数字、下划线、中划线、点、逗号、@、#、+、\\、/、？、^、&#x3D;、%、&amp;、:、~
+        :type value: str
+        :param optional: 标识属性是否可选，默认为true
+        :type optional: bool
+        :param metadata: 
+        :type metadata: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsRegisterTypeMetadata`
+        """
         
         
 
@@ -67,7 +76,7 @@ class ValueInPropertyVisitorsRegisterType:
         value 最大长度512， value允许英文字母、数字、下划线、中划线、点、逗号、@、#、+、\\、/、？、^、=、%、&、:、~
 
         :param value: The value of this ValueInPropertyVisitorsRegisterType.
-        :type: str
+        :type value: str
         """
         self._value = value
 
@@ -89,7 +98,7 @@ class ValueInPropertyVisitorsRegisterType:
         标识属性是否可选，默认为true
 
         :param optional: The optional of this ValueInPropertyVisitorsRegisterType.
-        :type: bool
+        :type optional: bool
         """
         self._optional = optional
 
@@ -99,7 +108,7 @@ class ValueInPropertyVisitorsRegisterType:
 
 
         :return: The metadata of this ValueInPropertyVisitorsRegisterType.
-        :rtype: ValueInPropertyVisitorsRegisterTypeMetadata
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsRegisterTypeMetadata`
         """
         return self._metadata
 
@@ -109,7 +118,7 @@ class ValueInPropertyVisitorsRegisterType:
 
 
         :param metadata: The metadata of this ValueInPropertyVisitorsRegisterType.
-        :type: ValueInPropertyVisitorsRegisterTypeMetadata
+        :type metadata: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsRegisterTypeMetadata`
         """
         self._metadata = metadata
 

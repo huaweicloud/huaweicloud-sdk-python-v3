@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateDeploymentGroupResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateDeploymentGroupResponse(SdkResponse):
     }
 
     def __init__(self, group_id=None):
-        """CreateDeploymentGroupResponse - a model defined in huaweicloud sdk"""
+        """CreateDeploymentGroupResponse
+
+        The model defined in huaweicloud sdk
+
+        :param group_id: 主机组ID
+        :type group_id: str
+        """
         
         super(CreateDeploymentGroupResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class CreateDeploymentGroupResponse(SdkResponse):
         主机组ID
 
         :param group_id: The group_id of this CreateDeploymentGroupResponse.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAz2MigrateResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListAz2MigrateResponse(SdkResponse):
     }
 
     def __init__(self, az_list=None):
-        """ListAz2MigrateResponse - a model defined in huaweicloud sdk"""
+        """ListAz2MigrateResponse
+
+        The model defined in huaweicloud sdk
+
+        :param az_list: 可用区具体信息。
+        :type az_list: list[:class:`huaweicloudsdkdds.v3.Az2Migrate`]
+        """
         
         super(ListAz2MigrateResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListAz2MigrateResponse(SdkResponse):
         可用区具体信息。
 
         :return: The az_list of this ListAz2MigrateResponse.
-        :rtype: list[Az2Migrate]
+        :rtype: list[:class:`huaweicloudsdkdds.v3.Az2Migrate`]
         """
         return self._az_list
 
@@ -58,7 +63,7 @@ class ListAz2MigrateResponse(SdkResponse):
         可用区具体信息。
 
         :param az_list: The az_list of this ListAz2MigrateResponse.
-        :type: list[Az2Migrate]
+        :type az_list: list[:class:`huaweicloudsdkdds.v3.Az2Migrate`]
         """
         self._az_list = az_list
 

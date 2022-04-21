@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunSentenceEmbeddingRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RunSentenceEmbeddingRequest:
     }
 
     def __init__(self, body=None):
-        """RunSentenceEmbeddingRequest - a model defined in huaweicloud sdk"""
+        """RunSentenceEmbeddingRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the RunSentenceEmbeddingRequest
+        :type body: :class:`huaweicloudsdknlp.v2.PostSentenceEmbeddingReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class RunSentenceEmbeddingRequest:
 
 
         :return: The body of this RunSentenceEmbeddingRequest.
-        :rtype: PostSentenceEmbeddingReq
+        :rtype: :class:`huaweicloudsdknlp.v2.PostSentenceEmbeddingReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class RunSentenceEmbeddingRequest:
 
 
         :param body: The body of this RunSentenceEmbeddingRequest.
-        :type: PostSentenceEmbeddingReq
+        :type body: :class:`huaweicloudsdknlp.v2.PostSentenceEmbeddingReq`
         """
         self._body = body
 

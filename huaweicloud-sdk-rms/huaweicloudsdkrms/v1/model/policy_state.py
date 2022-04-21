@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PolicyState:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class PolicyState:
     }
 
     def __init__(self, domain_id=None, region_id=None, resource_id=None, resource_name=None, resource_provider=None, resource_type=None, compliance_state=None, policy_assignment_id=None, policy_assignment_name=None, policy_definition_id=None, evaluation_time=None):
-        """PolicyState - a model defined in huaweicloud sdk"""
+        """PolicyState
+
+        The model defined in huaweicloud sdk
+
+        :param domain_id: 合规状态所属用户ID
+        :type domain_id: str
+        :param region_id: 合规状态所属资源区域ID
+        :type region_id: str
+        :param resource_id: 合规状态所属资源ID
+        :type resource_id: str
+        :param resource_name: 合规状态所属资源名字
+        :type resource_name: str
+        :param resource_provider: 合规状态所属资源provider
+        :type resource_provider: str
+        :param resource_type: 合规状态所属资源类型
+        :type resource_type: str
+        :param compliance_state: 合规状态
+        :type compliance_state: str
+        :param policy_assignment_id: 合规状态所属规则ID
+        :type policy_assignment_id: str
+        :param policy_assignment_name: 合规状态所属规则名字
+        :type policy_assignment_name: str
+        :param policy_definition_id: 合规状态所属策略ID
+        :type policy_definition_id: str
+        :param evaluation_time: 合规状态评估时间
+        :type evaluation_time: str
+        """
         
         
 
@@ -108,7 +133,7 @@ class PolicyState:
         合规状态所属用户ID
 
         :param domain_id: The domain_id of this PolicyState.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -130,7 +155,7 @@ class PolicyState:
         合规状态所属资源区域ID
 
         :param region_id: The region_id of this PolicyState.
-        :type: str
+        :type region_id: str
         """
         self._region_id = region_id
 
@@ -152,7 +177,7 @@ class PolicyState:
         合规状态所属资源ID
 
         :param resource_id: The resource_id of this PolicyState.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -174,7 +199,7 @@ class PolicyState:
         合规状态所属资源名字
 
         :param resource_name: The resource_name of this PolicyState.
-        :type: str
+        :type resource_name: str
         """
         self._resource_name = resource_name
 
@@ -196,7 +221,7 @@ class PolicyState:
         合规状态所属资源provider
 
         :param resource_provider: The resource_provider of this PolicyState.
-        :type: str
+        :type resource_provider: str
         """
         self._resource_provider = resource_provider
 
@@ -218,7 +243,7 @@ class PolicyState:
         合规状态所属资源类型
 
         :param resource_type: The resource_type of this PolicyState.
-        :type: str
+        :type resource_type: str
         """
         self._resource_type = resource_type
 
@@ -240,7 +265,7 @@ class PolicyState:
         合规状态
 
         :param compliance_state: The compliance_state of this PolicyState.
-        :type: str
+        :type compliance_state: str
         """
         self._compliance_state = compliance_state
 
@@ -262,7 +287,7 @@ class PolicyState:
         合规状态所属规则ID
 
         :param policy_assignment_id: The policy_assignment_id of this PolicyState.
-        :type: str
+        :type policy_assignment_id: str
         """
         self._policy_assignment_id = policy_assignment_id
 
@@ -284,7 +309,7 @@ class PolicyState:
         合规状态所属规则名字
 
         :param policy_assignment_name: The policy_assignment_name of this PolicyState.
-        :type: str
+        :type policy_assignment_name: str
         """
         self._policy_assignment_name = policy_assignment_name
 
@@ -306,7 +331,7 @@ class PolicyState:
         合规状态所属策略ID
 
         :param policy_definition_id: The policy_definition_id of this PolicyState.
-        :type: str
+        :type policy_definition_id: str
         """
         self._policy_definition_id = policy_definition_id
 
@@ -328,7 +353,7 @@ class PolicyState:
         合规状态评估时间
 
         :param evaluation_time: The evaluation_time of this PolicyState.
-        :type: str
+        :type evaluation_time: str
         """
         self._evaluation_time = evaluation_time
 

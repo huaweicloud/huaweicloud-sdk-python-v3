@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDetailsOfAppAclResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowDetailsOfAppAclResponse(SdkResponse):
     }
 
     def __init__(self, app_id=None, app_acl_type=None, app_acl_values=None):
-        """ShowDetailsOfAppAclResponse - a model defined in huaweicloud sdk"""
+        """ShowDetailsOfAppAclResponse
+
+        The model defined in huaweicloud sdk
+
+        :param app_id: APP编号
+        :type app_id: str
+        :param app_acl_type: 类型 -  PERMIT (白名单类型) -  DENY (黑名单类型)
+        :type app_acl_type: str
+        :param app_acl_values: ACL策略值，支持IP、IP范围和CIDR方式。IP范围以英文中划线分隔。
+        :type app_acl_values: list[str]
+        """
         
         super(ShowDetailsOfAppAclResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ShowDetailsOfAppAclResponse(SdkResponse):
         APP编号
 
         :param app_id: The app_id of this ShowDetailsOfAppAclResponse.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -90,7 +99,7 @@ class ShowDetailsOfAppAclResponse(SdkResponse):
         类型 -  PERMIT (白名单类型) -  DENY (黑名单类型)
 
         :param app_acl_type: The app_acl_type of this ShowDetailsOfAppAclResponse.
-        :type: str
+        :type app_acl_type: str
         """
         self._app_acl_type = app_acl_type
 
@@ -112,7 +121,7 @@ class ShowDetailsOfAppAclResponse(SdkResponse):
         ACL策略值，支持IP、IP范围和CIDR方式。IP范围以英文中划线分隔。
 
         :param app_acl_values: The app_acl_values of this ShowDetailsOfAppAclResponse.
-        :type: list[str]
+        :type app_acl_values: list[str]
         """
         self._app_acl_values = app_acl_values
 

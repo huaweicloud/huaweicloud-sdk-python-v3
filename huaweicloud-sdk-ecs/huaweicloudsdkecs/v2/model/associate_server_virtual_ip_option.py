@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AssociateServerVirtualIpOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class AssociateServerVirtualIpOption:
     }
 
     def __init__(self, subnet_id=None, ip_address=None, reverse_binding=None):
-        """AssociateServerVirtualIpOption - a model defined in huaweicloud sdk"""
+        """AssociateServerVirtualIpOption
+
+        The model defined in huaweicloud sdk
+
+        :param subnet_id: 网卡的子网ID。
+        :type subnet_id: str
+        :param ip_address: 网卡即将配置的私有IP的地址。
+        :type ip_address: str
+        :param reverse_binding: 私有IP的allowed_address_pairs属性是否添加网卡的IP/Mac对。
+        :type reverse_binding: bool
+        """
         
         
 
@@ -66,7 +75,7 @@ class AssociateServerVirtualIpOption:
         网卡的子网ID。
 
         :param subnet_id: The subnet_id of this AssociateServerVirtualIpOption.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -88,7 +97,7 @@ class AssociateServerVirtualIpOption:
         网卡即将配置的私有IP的地址。
 
         :param ip_address: The ip_address of this AssociateServerVirtualIpOption.
-        :type: str
+        :type ip_address: str
         """
         self._ip_address = ip_address
 
@@ -110,7 +119,7 @@ class AssociateServerVirtualIpOption:
         私有IP的allowed_address_pairs属性是否添加网卡的IP/Mac对。
 
         :param reverse_binding: The reverse_binding of this AssociateServerVirtualIpOption.
-        :type: bool
+        :type reverse_binding: bool
         """
         self._reverse_binding = reverse_binding
 

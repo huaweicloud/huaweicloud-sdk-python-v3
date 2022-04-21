@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Authentification:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class Authentification:
     }
 
     def __init__(self, record_name=None, record_type=None, record_value=None, domain=None):
-        """Authentification - a model defined in huaweicloud sdk"""
+        """Authentification
+
+        The model defined in huaweicloud sdk
+
+        :param record_name: 域名校验值名字。
+        :type record_name: str
+        :param record_type: 域名校验值类型。
+        :type record_type: str
+        :param record_value: 域名校验值。
+        :type record_value: str
+        :param domain: 校验值对应的域名。
+        :type domain: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class Authentification:
         域名校验值名字。
 
         :param record_name: The record_name of this Authentification.
-        :type: str
+        :type record_name: str
         """
         self._record_name = record_name
 
@@ -95,7 +106,7 @@ class Authentification:
         域名校验值类型。
 
         :param record_type: The record_type of this Authentification.
-        :type: str
+        :type record_type: str
         """
         self._record_type = record_type
 
@@ -117,7 +128,7 @@ class Authentification:
         域名校验值。
 
         :param record_value: The record_value of this Authentification.
-        :type: str
+        :type record_value: str
         """
         self._record_value = record_value
 
@@ -139,7 +150,7 @@ class Authentification:
         校验值对应的域名。
 
         :param domain: The domain of this Authentification.
-        :type: str
+        :type domain: str
         """
         self._domain = domain
 

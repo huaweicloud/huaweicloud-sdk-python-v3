@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateMessageV2Req:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateMessageV2Req:
     }
 
     def __init__(self, message=None, group_id=None):
-        """CreateMessageV2Req - a model defined in huaweicloud sdk"""
+        """CreateMessageV2Req
+
+        The model defined in huaweicloud sdk
+
+        :param message: 
+        :type message: :class:`huaweicloudsdkosm.v2.CreateMessageDoV2`
+        :param group_id: 组id
+        :type group_id: str
+        """
         
         
 
@@ -50,7 +57,7 @@ class CreateMessageV2Req:
 
 
         :return: The message of this CreateMessageV2Req.
-        :rtype: CreateMessageDoV2
+        :rtype: :class:`huaweicloudsdkosm.v2.CreateMessageDoV2`
         """
         return self._message
 
@@ -60,7 +67,7 @@ class CreateMessageV2Req:
 
 
         :param message: The message of this CreateMessageV2Req.
-        :type: CreateMessageDoV2
+        :type message: :class:`huaweicloudsdkosm.v2.CreateMessageDoV2`
         """
         self._message = message
 
@@ -82,7 +89,7 @@ class CreateMessageV2Req:
         组id
 
         :param group_id: The group_id of this CreateMessageV2Req.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 

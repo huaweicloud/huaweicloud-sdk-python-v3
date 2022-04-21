@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowTestCaseDetailV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowTestCaseDetailV2Request:
     }
 
     def __init__(self, project_id=None, testcase_number=None):
-        """ShowTestCaseDetailV2Request - a model defined in huaweicloud sdk"""
+        """ShowTestCaseDetailV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: 项目唯一标识，固定长度32位字符
+        :type project_id: str
+        :param testcase_number: 用例编号，长度为[3-128]位字符
+        :type testcase_number: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ShowTestCaseDetailV2Request:
         项目唯一标识，固定长度32位字符
 
         :param project_id: The project_id of this ShowTestCaseDetailV2Request.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -83,7 +90,7 @@ class ShowTestCaseDetailV2Request:
         用例编号，长度为[3-128]位字符
 
         :param testcase_number: The testcase_number of this ShowTestCaseDetailV2Request.
-        :type: str
+        :type testcase_number: str
         """
         self._testcase_number = testcase_number
 

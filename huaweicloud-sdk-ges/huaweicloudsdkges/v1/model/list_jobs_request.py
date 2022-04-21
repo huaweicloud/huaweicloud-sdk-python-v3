@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListJobsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListJobsRequest:
     }
 
     def __init__(self, end_time=None, graph_name=None, limit=None, offset=None, start_time=None, status=None):
-        """ListJobsRequest - a model defined in huaweicloud sdk"""
+        """ListJobsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param end_time: 任务结束日期，当前只支持日期，不支持时间。格式为：yyyy-MM-dd，比如2019-03-27。
+        :type end_time: str
+        :param graph_name: 关联的图名称
+        :type graph_name: str
+        :param limit: 每页资源数量的最大值，默认为10。
+        :type limit: str
+        :param offset: 本次请求的起始位置，默认为0。
+        :type offset: str
+        :param start_time: 任务开始日期，当前只支持日期，不支持时间。格式为：yyyy-MM-dd，比如2019-03-27。
+        :type start_time: str
+        :param status: 任务状态。取值为：  - running - waiting - success - failed
+        :type status: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class ListJobsRequest:
         任务结束日期，当前只支持日期，不支持时间。格式为：yyyy-MM-dd，比如2019-03-27。
 
         :param end_time: The end_time of this ListJobsRequest.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -105,7 +120,7 @@ class ListJobsRequest:
         关联的图名称
 
         :param graph_name: The graph_name of this ListJobsRequest.
-        :type: str
+        :type graph_name: str
         """
         self._graph_name = graph_name
 
@@ -127,7 +142,7 @@ class ListJobsRequest:
         每页资源数量的最大值，默认为10。
 
         :param limit: The limit of this ListJobsRequest.
-        :type: str
+        :type limit: str
         """
         self._limit = limit
 
@@ -149,7 +164,7 @@ class ListJobsRequest:
         本次请求的起始位置，默认为0。
 
         :param offset: The offset of this ListJobsRequest.
-        :type: str
+        :type offset: str
         """
         self._offset = offset
 
@@ -171,7 +186,7 @@ class ListJobsRequest:
         任务开始日期，当前只支持日期，不支持时间。格式为：yyyy-MM-dd，比如2019-03-27。
 
         :param start_time: The start_time of this ListJobsRequest.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -193,7 +208,7 @@ class ListJobsRequest:
         任务状态。取值为：  - running - waiting - success - failed
 
         :param status: The status of this ListJobsRequest.
-        :type: str
+        :type status: str
         """
         self._status = status
 

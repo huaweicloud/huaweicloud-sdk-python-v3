@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RtcServerRoomInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class RtcServerRoomInfo:
     }
 
     def __init__(self, domain=None, app=None, room_id=None, state=None, duration=None, start_time=None, end_time=None):
-        """RtcServerRoomInfo - a model defined in huaweicloud sdk"""
+        """RtcServerRoomInfo
+
+        The model defined in huaweicloud sdk
+
+        :param domain: 域名
+        :type domain: str
+        :param app: 应用标识
+        :type app: str
+        :param room_id: 房间ID
+        :type room_id: str
+        :param state: 房间状态，取值如下：  - RUNNING：开启中  - CLOSED：已关闭 
+        :type state: str
+        :param duration: 房间持续时长
+        :type duration: int
+        :param start_time: 房间开始时间，即第一个用户加入房间时间，UTC时间，格式：YYYY-MM-DDThh:mm:ssZ，如2020-04-23T07:00:00Z 
+        :type start_time: str
+        :param end_time: 房间关闭时间，即最后一个room_uuid关闭的时间，UTC时间，格式：YYYY-MM-DDThh:mm:ssZ，如2020-04-23T07:00:00Z，若房间未关闭，则返回 “-” 
+        :type end_time: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class RtcServerRoomInfo:
         域名
 
         :param domain: The domain of this RtcServerRoomInfo.
-        :type: str
+        :type domain: str
         """
         self._domain = domain
 
@@ -110,7 +127,7 @@ class RtcServerRoomInfo:
         应用标识
 
         :param app: The app of this RtcServerRoomInfo.
-        :type: str
+        :type app: str
         """
         self._app = app
 
@@ -132,7 +149,7 @@ class RtcServerRoomInfo:
         房间ID
 
         :param room_id: The room_id of this RtcServerRoomInfo.
-        :type: str
+        :type room_id: str
         """
         self._room_id = room_id
 
@@ -154,7 +171,7 @@ class RtcServerRoomInfo:
         房间状态，取值如下：  - RUNNING：开启中  - CLOSED：已关闭 
 
         :param state: The state of this RtcServerRoomInfo.
-        :type: str
+        :type state: str
         """
         self._state = state
 
@@ -176,7 +193,7 @@ class RtcServerRoomInfo:
         房间持续时长
 
         :param duration: The duration of this RtcServerRoomInfo.
-        :type: int
+        :type duration: int
         """
         self._duration = duration
 
@@ -198,7 +215,7 @@ class RtcServerRoomInfo:
         房间开始时间，即第一个用户加入房间时间，UTC时间，格式：YYYY-MM-DDThh:mm:ssZ，如2020-04-23T07:00:00Z 
 
         :param start_time: The start_time of this RtcServerRoomInfo.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -220,7 +237,7 @@ class RtcServerRoomInfo:
         房间关闭时间，即最后一个room_uuid关闭的时间，UTC时间，格式：YYYY-MM-DDThh:mm:ssZ，如2020-04-23T07:00:00Z，若房间未关闭，则返回 “-” 
 
         :param end_time: The end_time of this RtcServerRoomInfo.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 

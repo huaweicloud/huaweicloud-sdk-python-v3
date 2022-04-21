@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateCertificateOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class CreateCertificateOption:
     }
 
     def __init__(self, admin_state_up=None, certificate=None, description=None, domain=None, name=None, private_key=None, project_id=None, type=None, enterprise_project_id=None, enc_certificate=None, enc_private_key=None):
-        """CreateCertificateOption - a model defined in huaweicloud sdk"""
+        """CreateCertificateOption
+
+        The model defined in huaweicloud sdk
+
+        :param admin_state_up: 证书的管理状态。  不支持该字段，请勿使用。
+        :type admin_state_up: bool
+        :param certificate: HTTPS协议使用的证书内容。 如果type为server_sm时，该字段填写SM签名证书内容。 取值范围：PEM编码格式。
+        :type certificate: str
+        :param description: 证书的描述。
+        :type description: str
+        :param domain: 服务器证书所签域名。该字段仅type为server或server_sm时有效。  总长度为0-1024，由若干普通域名或泛域名组成，域名之间以\&quot;,\&quot;分割，不超过30个域名。  普通域名：由若干字符串组成，字符串间以\&quot;.\&quot;分割，单个字符串长度不超过63个字符，只能包含英文字母、数字或\&quot;-\&quot;，且必须以字母或数字开头和结尾。例：www.test.com；  泛域名：在普通域名的基础上仅允许首字母为\&quot;\&quot;。例：.test.com
+        :type domain: str
+        :param name: 证书的名称。
+        :type name: str
+        :param private_key: HTTPS协议使用的私钥。仅type为server或server_sm时有效。type为server或server_sm时必选。 如果type为server_sm时，该字段填写SM签名证书的私钥。 取值范围：PEM编码格式。
+        :type private_key: str
+        :param project_id: 证书所在的项目ID。
+        :type project_id: str
+        :param type: SSL证书的类型。分为服务器证书(server)、CA证书(client)和服务器SM双证书(server_sm)。 默认值：server
+        :type type: str
+        :param enterprise_project_id: 证书所属的企业项目ID。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
+        :type enterprise_project_id: str
+        :param enc_certificate: HTTPS协议使用的SM加密证书内容。  取值：PEM编码格式。  使用说明： - 仅type为server_sm时有效且必选。
+        :type enc_certificate: str
+        :param enc_private_key: HTTPS协议使用的SM加密证书私钥。  取值：PEM编码格式。  使用说明： - 仅type为server_sm时有效且必选。
+        :type enc_private_key: str
+        """
         
         
 
@@ -107,7 +132,7 @@ class CreateCertificateOption:
         证书的管理状态。  不支持该字段，请勿使用。
 
         :param admin_state_up: The admin_state_up of this CreateCertificateOption.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 
@@ -129,7 +154,7 @@ class CreateCertificateOption:
         HTTPS协议使用的证书内容。 如果type为server_sm时，该字段填写SM签名证书内容。 取值范围：PEM编码格式。
 
         :param certificate: The certificate of this CreateCertificateOption.
-        :type: str
+        :type certificate: str
         """
         self._certificate = certificate
 
@@ -151,7 +176,7 @@ class CreateCertificateOption:
         证书的描述。
 
         :param description: The description of this CreateCertificateOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -173,7 +198,7 @@ class CreateCertificateOption:
         服务器证书所签域名。该字段仅type为server或server_sm时有效。  总长度为0-1024，由若干普通域名或泛域名组成，域名之间以\",\"分割，不超过30个域名。  普通域名：由若干字符串组成，字符串间以\".\"分割，单个字符串长度不超过63个字符，只能包含英文字母、数字或\"-\"，且必须以字母或数字开头和结尾。例：www.test.com；  泛域名：在普通域名的基础上仅允许首字母为\"\"。例：.test.com
 
         :param domain: The domain of this CreateCertificateOption.
-        :type: str
+        :type domain: str
         """
         self._domain = domain
 
@@ -195,7 +220,7 @@ class CreateCertificateOption:
         证书的名称。
 
         :param name: The name of this CreateCertificateOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -217,7 +242,7 @@ class CreateCertificateOption:
         HTTPS协议使用的私钥。仅type为server或server_sm时有效。type为server或server_sm时必选。 如果type为server_sm时，该字段填写SM签名证书的私钥。 取值范围：PEM编码格式。
 
         :param private_key: The private_key of this CreateCertificateOption.
-        :type: str
+        :type private_key: str
         """
         self._private_key = private_key
 
@@ -239,7 +264,7 @@ class CreateCertificateOption:
         证书所在的项目ID。
 
         :param project_id: The project_id of this CreateCertificateOption.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -261,7 +286,7 @@ class CreateCertificateOption:
         SSL证书的类型。分为服务器证书(server)、CA证书(client)和服务器SM双证书(server_sm)。 默认值：server
 
         :param type: The type of this CreateCertificateOption.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -283,7 +308,7 @@ class CreateCertificateOption:
         证书所属的企业项目ID。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
 
         :param enterprise_project_id: The enterprise_project_id of this CreateCertificateOption.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -305,7 +330,7 @@ class CreateCertificateOption:
         HTTPS协议使用的SM加密证书内容。  取值：PEM编码格式。  使用说明： - 仅type为server_sm时有效且必选。
 
         :param enc_certificate: The enc_certificate of this CreateCertificateOption.
-        :type: str
+        :type enc_certificate: str
         """
         self._enc_certificate = enc_certificate
 
@@ -327,7 +352,7 @@ class CreateCertificateOption:
         HTTPS协议使用的SM加密证书私钥。  取值：PEM编码格式。  使用说明： - 仅type为server_sm时有效且必选。
 
         :param enc_private_key: The enc_private_key of this CreateCertificateOption.
-        :type: str
+        :type enc_private_key: str
         """
         self._enc_private_key = enc_private_key
 

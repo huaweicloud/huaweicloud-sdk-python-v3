@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowConfigurationResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ShowConfigurationResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, datastore_version_name=None, datastore_name=None, created=None, updated=None, configuration_parameters=None):
-        """ShowConfigurationResponse - a model defined in huaweicloud sdk"""
+        """ShowConfigurationResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 参数组ID。
+        :type id: str
+        :param name: 参数组名称。
+        :type name: str
+        :param description: 参数组描述。
+        :type description: str
+        :param datastore_version_name: 引擎版本。
+        :type datastore_version_name: str
+        :param datastore_name: 引擎名。
+        :type datastore_name: str
+        :param created: 创建时间，格式为\&quot;yyyy-MM-ddTHH:mm:ssZ\&quot;。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        :type created: str
+        :param updated: 更新时间，格式为\&quot;yyyy-MM-ddTHH:mm:ssZ\&quot;。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        :type updated: str
+        :param configuration_parameters: 参数对象，用户基于默认参数模板自定义的参数配置。
+        :type configuration_parameters: list[:class:`huaweicloudsdkrds.v3.ConfigurationParameter`]
+        """
         
         super(ShowConfigurationResponse, self).__init__()
 
@@ -93,7 +112,7 @@ class ShowConfigurationResponse(SdkResponse):
         参数组ID。
 
         :param id: The id of this ShowConfigurationResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -115,7 +134,7 @@ class ShowConfigurationResponse(SdkResponse):
         参数组名称。
 
         :param name: The name of this ShowConfigurationResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -137,7 +156,7 @@ class ShowConfigurationResponse(SdkResponse):
         参数组描述。
 
         :param description: The description of this ShowConfigurationResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -159,7 +178,7 @@ class ShowConfigurationResponse(SdkResponse):
         引擎版本。
 
         :param datastore_version_name: The datastore_version_name of this ShowConfigurationResponse.
-        :type: str
+        :type datastore_version_name: str
         """
         self._datastore_version_name = datastore_version_name
 
@@ -181,7 +200,7 @@ class ShowConfigurationResponse(SdkResponse):
         引擎名。
 
         :param datastore_name: The datastore_name of this ShowConfigurationResponse.
-        :type: str
+        :type datastore_name: str
         """
         self._datastore_name = datastore_name
 
@@ -203,7 +222,7 @@ class ShowConfigurationResponse(SdkResponse):
         创建时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
         :param created: The created of this ShowConfigurationResponse.
-        :type: str
+        :type created: str
         """
         self._created = created
 
@@ -225,7 +244,7 @@ class ShowConfigurationResponse(SdkResponse):
         更新时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
         :param updated: The updated of this ShowConfigurationResponse.
-        :type: str
+        :type updated: str
         """
         self._updated = updated
 
@@ -236,7 +255,7 @@ class ShowConfigurationResponse(SdkResponse):
         参数对象，用户基于默认参数模板自定义的参数配置。
 
         :return: The configuration_parameters of this ShowConfigurationResponse.
-        :rtype: list[ConfigurationParameter]
+        :rtype: list[:class:`huaweicloudsdkrds.v3.ConfigurationParameter`]
         """
         return self._configuration_parameters
 
@@ -247,7 +266,7 @@ class ShowConfigurationResponse(SdkResponse):
         参数对象，用户基于默认参数模板自定义的参数配置。
 
         :param configuration_parameters: The configuration_parameters of this ShowConfigurationResponse.
-        :type: list[ConfigurationParameter]
+        :type configuration_parameters: list[:class:`huaweicloudsdkrds.v3.ConfigurationParameter`]
         """
         self._configuration_parameters = configuration_parameters
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateCnfReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateCnfReq:
     }
 
     def __init__(self, name=None, conf_content=None, setting=None):
-        """CreateCnfReq - a model defined in huaweicloud sdk"""
+        """CreateCnfReq
+
+        The model defined in huaweicloud sdk
+
+        :param name: 配置文件名称。4～32个字符，只能包含数字、字母、中划线和下划线，且必须以字母开头
+        :type name: str
+        :param conf_content: 配置文件内容。
+        :type conf_content: str
+        :param setting: 
+        :type setting: :class:`huaweicloudsdkcss.v1.Setting`
+        """
         
         
 
@@ -65,7 +74,7 @@ class CreateCnfReq:
         配置文件名称。4～32个字符，只能包含数字、字母、中划线和下划线，且必须以字母开头
 
         :param name: The name of this CreateCnfReq.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -87,7 +96,7 @@ class CreateCnfReq:
         配置文件内容。
 
         :param conf_content: The conf_content of this CreateCnfReq.
-        :type: str
+        :type conf_content: str
         """
         self._conf_content = conf_content
 
@@ -97,7 +106,7 @@ class CreateCnfReq:
 
 
         :return: The setting of this CreateCnfReq.
-        :rtype: Setting
+        :rtype: :class:`huaweicloudsdkcss.v1.Setting`
         """
         return self._setting
 
@@ -107,7 +116,7 @@ class CreateCnfReq:
 
 
         :param setting: The setting of this CreateCnfReq.
-        :type: Setting
+        :type setting: :class:`huaweicloudsdkcss.v1.Setting`
         """
         self._setting = setting
 

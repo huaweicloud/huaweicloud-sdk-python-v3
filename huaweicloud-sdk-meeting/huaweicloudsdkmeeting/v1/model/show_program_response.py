@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowProgramResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ShowProgramResponse(SdkResponse):
     }
 
     def __init__(self, id=None, last_updated_by=None, update_time=None, program_name=None, material_size_str=None, play_time=None, program_item_list=None):
-        """ShowProgramResponse - a model defined in huaweicloud sdk"""
+        """ShowProgramResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 节目ID
+        :type id: str
+        :param last_updated_by: 更新者
+        :type last_updated_by: str
+        :param update_time: 更新时间
+        :type update_time: int
+        :param program_name: 节目名称
+        :type program_name: str
+        :param material_size_str: 节目的总素材大小（含单位）
+        :type material_size_str: str
+        :param play_time: 节目的总播放时长，单位秒
+        :type play_time: int
+        :param program_item_list: 节目素材列表
+        :type program_item_list: list[:class:`huaweicloudsdkmeeting.v1.ProgramItemResponseBase`]
+        """
         
         super(ShowProgramResponse, self).__init__()
 
@@ -88,7 +105,7 @@ class ShowProgramResponse(SdkResponse):
         节目ID
 
         :param id: The id of this ShowProgramResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -110,7 +127,7 @@ class ShowProgramResponse(SdkResponse):
         更新者
 
         :param last_updated_by: The last_updated_by of this ShowProgramResponse.
-        :type: str
+        :type last_updated_by: str
         """
         self._last_updated_by = last_updated_by
 
@@ -132,7 +149,7 @@ class ShowProgramResponse(SdkResponse):
         更新时间
 
         :param update_time: The update_time of this ShowProgramResponse.
-        :type: int
+        :type update_time: int
         """
         self._update_time = update_time
 
@@ -154,7 +171,7 @@ class ShowProgramResponse(SdkResponse):
         节目名称
 
         :param program_name: The program_name of this ShowProgramResponse.
-        :type: str
+        :type program_name: str
         """
         self._program_name = program_name
 
@@ -176,7 +193,7 @@ class ShowProgramResponse(SdkResponse):
         节目的总素材大小（含单位）
 
         :param material_size_str: The material_size_str of this ShowProgramResponse.
-        :type: str
+        :type material_size_str: str
         """
         self._material_size_str = material_size_str
 
@@ -198,7 +215,7 @@ class ShowProgramResponse(SdkResponse):
         节目的总播放时长，单位秒
 
         :param play_time: The play_time of this ShowProgramResponse.
-        :type: int
+        :type play_time: int
         """
         self._play_time = play_time
 
@@ -209,7 +226,7 @@ class ShowProgramResponse(SdkResponse):
         节目素材列表
 
         :return: The program_item_list of this ShowProgramResponse.
-        :rtype: list[ProgramItemResponseBase]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.ProgramItemResponseBase`]
         """
         return self._program_item_list
 
@@ -220,7 +237,7 @@ class ShowProgramResponse(SdkResponse):
         节目素材列表
 
         :param program_item_list: The program_item_list of this ShowProgramResponse.
-        :type: list[ProgramItemResponseBase]
+        :type program_item_list: list[:class:`huaweicloudsdkmeeting.v1.ProgramItemResponseBase`]
         """
         self._program_item_list = program_item_list
 

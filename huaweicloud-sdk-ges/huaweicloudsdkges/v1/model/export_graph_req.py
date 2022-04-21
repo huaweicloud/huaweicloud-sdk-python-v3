@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExportGraphReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ExportGraphReq:
     }
 
     def __init__(self, graph_export_path=None, edge_set_name=None, vertex_set_name=None, schema_name=None):
-        """ExportGraphReq - a model defined in huaweicloud sdk"""
+        """ExportGraphReq
+
+        The model defined in huaweicloud sdk
+
+        :param graph_export_path: 图的导出OBS路径。
+        :type graph_export_path: str
+        :param edge_set_name: 导出边文件名。
+        :type edge_set_name: str
+        :param vertex_set_name: 导出点文件名。
+        :type vertex_set_name: str
+        :param schema_name: 导出元数据文件名。
+        :type schema_name: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class ExportGraphReq:
         图的导出OBS路径。
 
         :param graph_export_path: The graph_export_path of this ExportGraphReq.
-        :type: str
+        :type graph_export_path: str
         """
         self._graph_export_path = graph_export_path
 
@@ -91,7 +102,7 @@ class ExportGraphReq:
         导出边文件名。
 
         :param edge_set_name: The edge_set_name of this ExportGraphReq.
-        :type: str
+        :type edge_set_name: str
         """
         self._edge_set_name = edge_set_name
 
@@ -113,7 +124,7 @@ class ExportGraphReq:
         导出点文件名。
 
         :param vertex_set_name: The vertex_set_name of this ExportGraphReq.
-        :type: str
+        :type vertex_set_name: str
         """
         self._vertex_set_name = vertex_set_name
 
@@ -135,7 +146,7 @@ class ExportGraphReq:
         导出元数据文件名。
 
         :param schema_name: The schema_name of this ExportGraphReq.
-        :type: str
+        :type schema_name: str
         """
         self._schema_name = schema_name
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Chart:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class Chart:
     }
 
     def __init__(self, date=None, finished_num=None, iteration_id=None, project_num_id=None, remaining_num=None, total=None):
-        """Chart - a model defined in huaweicloud sdk"""
+        """Chart
+
+        The model defined in huaweicloud sdk
+
+        :param date: 统计时间
+        :type date: str
+        :param finished_num: 完成story工单
+        :type finished_num: int
+        :param iteration_id: 迭代id
+        :type iteration_id: int
+        :param project_num_id: 项目id
+        :type project_num_id: int
+        :param remaining_num: 未完成story数
+        :type remaining_num: int
+        :param total: 总story数
+        :type total: int
+        """
         
         
 
@@ -83,7 +98,7 @@ class Chart:
         统计时间
 
         :param date: The date of this Chart.
-        :type: str
+        :type date: str
         """
         self._date = date
 
@@ -105,7 +120,7 @@ class Chart:
         完成story工单
 
         :param finished_num: The finished_num of this Chart.
-        :type: int
+        :type finished_num: int
         """
         self._finished_num = finished_num
 
@@ -127,7 +142,7 @@ class Chart:
         迭代id
 
         :param iteration_id: The iteration_id of this Chart.
-        :type: int
+        :type iteration_id: int
         """
         self._iteration_id = iteration_id
 
@@ -149,7 +164,7 @@ class Chart:
         项目id
 
         :param project_num_id: The project_num_id of this Chart.
-        :type: int
+        :type project_num_id: int
         """
         self._project_num_id = project_num_id
 
@@ -171,7 +186,7 @@ class Chart:
         未完成story数
 
         :param remaining_num: The remaining_num of this Chart.
-        :type: int
+        :type remaining_num: int
         """
         self._remaining_num = remaining_num
 
@@ -193,7 +208,7 @@ class Chart:
         总story数
 
         :param total: The total of this Chart.
-        :type: int
+        :type total: int
         """
         self._total = total
 

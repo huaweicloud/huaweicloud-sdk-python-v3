@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NeutronCreateFirewallGroupOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class NeutronCreateFirewallGroupOption:
     }
 
     def __init__(self, name=None, description=None, ingress_firewall_policy_id=None, egress_firewall_policy_id=None, ports=None, admin_state_up=None):
-        """NeutronCreateFirewallGroupOption - a model defined in huaweicloud sdk"""
+        """NeutronCreateFirewallGroupOption
+
+        The model defined in huaweicloud sdk
+
+        :param name: 功能说明：网络ACL组名称 取值范围：0-255个字符
+        :type name: str
+        :param description: 功能说明：网络ACL防火墙组描述 取值范围：最长255个字符
+        :type description: str
+        :param ingress_firewall_policy_id: 功能说明：入方向网络ACL策略
+        :type ingress_firewall_policy_id: str
+        :param egress_firewall_policy_id: 功能说明：出方向网络ACL策略
+        :type egress_firewall_policy_id: str
+        :param ports: 功能说明：网络ACL防火墙组绑定的端口列表 约束：必须为分布式router的端口id
+        :type ports: list[str]
+        :param admin_state_up: 功能说明：网络ACL是否受管理员控制
+        :type admin_state_up: bool
+        """
         
         
 
@@ -83,7 +98,7 @@ class NeutronCreateFirewallGroupOption:
         功能说明：网络ACL组名称 取值范围：0-255个字符
 
         :param name: The name of this NeutronCreateFirewallGroupOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -105,7 +120,7 @@ class NeutronCreateFirewallGroupOption:
         功能说明：网络ACL防火墙组描述 取值范围：最长255个字符
 
         :param description: The description of this NeutronCreateFirewallGroupOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -127,7 +142,7 @@ class NeutronCreateFirewallGroupOption:
         功能说明：入方向网络ACL策略
 
         :param ingress_firewall_policy_id: The ingress_firewall_policy_id of this NeutronCreateFirewallGroupOption.
-        :type: str
+        :type ingress_firewall_policy_id: str
         """
         self._ingress_firewall_policy_id = ingress_firewall_policy_id
 
@@ -149,7 +164,7 @@ class NeutronCreateFirewallGroupOption:
         功能说明：出方向网络ACL策略
 
         :param egress_firewall_policy_id: The egress_firewall_policy_id of this NeutronCreateFirewallGroupOption.
-        :type: str
+        :type egress_firewall_policy_id: str
         """
         self._egress_firewall_policy_id = egress_firewall_policy_id
 
@@ -171,7 +186,7 @@ class NeutronCreateFirewallGroupOption:
         功能说明：网络ACL防火墙组绑定的端口列表 约束：必须为分布式router的端口id
 
         :param ports: The ports of this NeutronCreateFirewallGroupOption.
-        :type: list[str]
+        :type ports: list[str]
         """
         self._ports = ports
 
@@ -193,7 +208,7 @@ class NeutronCreateFirewallGroupOption:
         功能说明：网络ACL是否受管理员控制
 
         :param admin_state_up: The admin_state_up of this NeutronCreateFirewallGroupOption.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 

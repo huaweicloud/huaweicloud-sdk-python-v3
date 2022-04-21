@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExportSlowQueryLogsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ExportSlowQueryLogsResponse(SdkResponse):
     }
 
     def __init__(self, slow_logs=None, next_marker=None):
-        """ExportSlowQueryLogsResponse - a model defined in huaweicloud sdk"""
+        """ExportSlowQueryLogsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param slow_logs: 慢SQL集合。当集合为空时，说明慢SQL已全部导出。
+        :type slow_logs: list[:class:`huaweicloudsdkdas.v3.SlowLog`]
+        :param next_marker: 获取下一页所需的标识符。marker仅在3分钟内有效。
+        :type next_marker: str
+        """
         
         super(ExportSlowQueryLogsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ExportSlowQueryLogsResponse(SdkResponse):
         慢SQL集合。当集合为空时，说明慢SQL已全部导出。
 
         :return: The slow_logs of this ExportSlowQueryLogsResponse.
-        :rtype: list[SlowLog]
+        :rtype: list[:class:`huaweicloudsdkdas.v3.SlowLog`]
         """
         return self._slow_logs
 
@@ -63,7 +70,7 @@ class ExportSlowQueryLogsResponse(SdkResponse):
         慢SQL集合。当集合为空时，说明慢SQL已全部导出。
 
         :param slow_logs: The slow_logs of this ExportSlowQueryLogsResponse.
-        :type: list[SlowLog]
+        :type slow_logs: list[:class:`huaweicloudsdkdas.v3.SlowLog`]
         """
         self._slow_logs = slow_logs
 
@@ -85,7 +92,7 @@ class ExportSlowQueryLogsResponse(SdkResponse):
         获取下一页所需的标识符。marker仅在3分钟内有效。
 
         :param next_marker: The next_marker of this ExportSlowQueryLogsResponse.
-        :type: str
+        :type next_marker: str
         """
         self._next_marker = next_marker
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Endpoint:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -74,7 +73,57 @@ class Endpoint:
     }
 
     def __init__(self, db_type=None, az_code=None, region=None, inst_id=None, vpc_id=None, subnet_id=None, security_group_id=None, project_id=None, db_name=None, db_password=None, db_port=None, db_user=None, inst_name=None, ip=None, mongo_ha_mode=None, safe_mode=None, ssl_cert_password=None, ssl_cert_check_sum=None, ssl_cert_key=None, ssl_cert_name=None, ssl_link=None, topic=None, cluster_mode=None):
-        """Endpoint - a model defined in huaweicloud sdk"""
+        """Endpoint
+
+        The model defined in huaweicloud sdk
+
+        :param db_type: 数据库类型
+        :type db_type: str
+        :param az_code: 数据库所在可用区azCode
+        :type az_code: str
+        :param region: RDS实例所在Region，数据库为RDS实例时必填（灾备场景下job_direction为down时source_endpoint中该值为必填，job_direction为up时target_endpoint中该值为必填）。
+        :type region: str
+        :param inst_id: RDS实例ID，数据库为RDS实例必填（灾备场景下job_direction为down时source_endpoint中该值为必填，job_direction为up时target_endpoint中该值为必填）。
+        :type inst_id: str
+        :param vpc_id: 数据库所在的虚拟私有云id
+        :type vpc_id: str
+        :param subnet_id: 数据库所在的子网id
+        :type subnet_id: str
+        :param security_group_id: 数据库所在的安全组id。
+        :type security_group_id: str
+        :param project_id: RDS实例projectId
+        :type project_id: str
+        :param db_name: 服务名serviceName，源库为oracle场景时必填。约束：不能超过128位，不能包含!&lt;&gt;&amp;&#39;\&quot;\\特殊字符。待还原数据库名称是指备份文件中包含的数据库名称，当您选择部分数据库恢复时，需要选择恢复一个或者多个数据库。
+        :type db_name: str
+        :param db_password: 数据库密码。
+        :type db_password: str
+        :param db_port: 数据库端口。约束：输入范围为1-65535之间的整数。
+        :type db_port: int
+        :param db_user: 数据库用户。
+        :type db_user: str
+        :param inst_name: RDS实例名称。
+        :type inst_name: str
+        :param ip: 数据库ip
+        :type ip: str
+        :param mongo_ha_mode: mongo ha模式。
+        :type mongo_ha_mode: str
+        :param safe_mode: MRS集群运行模式，取值： - 0普通集群 - 1安全集群
+        :type safe_mode: int
+        :param ssl_cert_password: SSL证书密码，证书文件后缀为.p12
+        :type ssl_cert_password: str
+        :param ssl_cert_check_sum: SSL证书内容checksum值，后端校验，源库安全连接必选。
+        :type ssl_cert_check_sum: str
+        :param ssl_cert_key: SSL证书内容，用base64加密
+        :type ssl_cert_key: str
+        :param ssl_cert_name: SSL证书名字
+        :type ssl_cert_name: str
+        :param ssl_link: 是否SSL安全连接。
+        :type ssl_link: bool
+        :param topic: kafka topic名称
+        :type topic: str
+        :param cluster_mode: MongDB集群4.0及以上版本，当集群实例无法获取到分片节点的IP时，source_endpoint中需要填写，值为：Sharding4.0+。
+        :type cluster_mode: str
+        """
         
         
 
@@ -167,7 +216,7 @@ class Endpoint:
         数据库类型
 
         :param db_type: The db_type of this Endpoint.
-        :type: str
+        :type db_type: str
         """
         self._db_type = db_type
 
@@ -189,7 +238,7 @@ class Endpoint:
         数据库所在可用区azCode
 
         :param az_code: The az_code of this Endpoint.
-        :type: str
+        :type az_code: str
         """
         self._az_code = az_code
 
@@ -211,7 +260,7 @@ class Endpoint:
         RDS实例所在Region，数据库为RDS实例时必填（灾备场景下job_direction为down时source_endpoint中该值为必填，job_direction为up时target_endpoint中该值为必填）。
 
         :param region: The region of this Endpoint.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -233,7 +282,7 @@ class Endpoint:
         RDS实例ID，数据库为RDS实例必填（灾备场景下job_direction为down时source_endpoint中该值为必填，job_direction为up时target_endpoint中该值为必填）。
 
         :param inst_id: The inst_id of this Endpoint.
-        :type: str
+        :type inst_id: str
         """
         self._inst_id = inst_id
 
@@ -255,7 +304,7 @@ class Endpoint:
         数据库所在的虚拟私有云id
 
         :param vpc_id: The vpc_id of this Endpoint.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -277,7 +326,7 @@ class Endpoint:
         数据库所在的子网id
 
         :param subnet_id: The subnet_id of this Endpoint.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -299,7 +348,7 @@ class Endpoint:
         数据库所在的安全组id。
 
         :param security_group_id: The security_group_id of this Endpoint.
-        :type: str
+        :type security_group_id: str
         """
         self._security_group_id = security_group_id
 
@@ -321,7 +370,7 @@ class Endpoint:
         RDS实例projectId
 
         :param project_id: The project_id of this Endpoint.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -343,7 +392,7 @@ class Endpoint:
         服务名serviceName，源库为oracle场景时必填。约束：不能超过128位，不能包含!<>&'\"\\特殊字符。待还原数据库名称是指备份文件中包含的数据库名称，当您选择部分数据库恢复时，需要选择恢复一个或者多个数据库。
 
         :param db_name: The db_name of this Endpoint.
-        :type: str
+        :type db_name: str
         """
         self._db_name = db_name
 
@@ -365,7 +414,7 @@ class Endpoint:
         数据库密码。
 
         :param db_password: The db_password of this Endpoint.
-        :type: str
+        :type db_password: str
         """
         self._db_password = db_password
 
@@ -387,7 +436,7 @@ class Endpoint:
         数据库端口。约束：输入范围为1-65535之间的整数。
 
         :param db_port: The db_port of this Endpoint.
-        :type: int
+        :type db_port: int
         """
         self._db_port = db_port
 
@@ -409,7 +458,7 @@ class Endpoint:
         数据库用户。
 
         :param db_user: The db_user of this Endpoint.
-        :type: str
+        :type db_user: str
         """
         self._db_user = db_user
 
@@ -431,7 +480,7 @@ class Endpoint:
         RDS实例名称。
 
         :param inst_name: The inst_name of this Endpoint.
-        :type: str
+        :type inst_name: str
         """
         self._inst_name = inst_name
 
@@ -453,7 +502,7 @@ class Endpoint:
         数据库ip
 
         :param ip: The ip of this Endpoint.
-        :type: str
+        :type ip: str
         """
         self._ip = ip
 
@@ -475,7 +524,7 @@ class Endpoint:
         mongo ha模式。
 
         :param mongo_ha_mode: The mongo_ha_mode of this Endpoint.
-        :type: str
+        :type mongo_ha_mode: str
         """
         self._mongo_ha_mode = mongo_ha_mode
 
@@ -497,7 +546,7 @@ class Endpoint:
         MRS集群运行模式，取值： - 0普通集群 - 1安全集群
 
         :param safe_mode: The safe_mode of this Endpoint.
-        :type: int
+        :type safe_mode: int
         """
         self._safe_mode = safe_mode
 
@@ -519,7 +568,7 @@ class Endpoint:
         SSL证书密码，证书文件后缀为.p12
 
         :param ssl_cert_password: The ssl_cert_password of this Endpoint.
-        :type: str
+        :type ssl_cert_password: str
         """
         self._ssl_cert_password = ssl_cert_password
 
@@ -541,7 +590,7 @@ class Endpoint:
         SSL证书内容checksum值，后端校验，源库安全连接必选。
 
         :param ssl_cert_check_sum: The ssl_cert_check_sum of this Endpoint.
-        :type: str
+        :type ssl_cert_check_sum: str
         """
         self._ssl_cert_check_sum = ssl_cert_check_sum
 
@@ -563,7 +612,7 @@ class Endpoint:
         SSL证书内容，用base64加密
 
         :param ssl_cert_key: The ssl_cert_key of this Endpoint.
-        :type: str
+        :type ssl_cert_key: str
         """
         self._ssl_cert_key = ssl_cert_key
 
@@ -585,7 +634,7 @@ class Endpoint:
         SSL证书名字
 
         :param ssl_cert_name: The ssl_cert_name of this Endpoint.
-        :type: str
+        :type ssl_cert_name: str
         """
         self._ssl_cert_name = ssl_cert_name
 
@@ -607,7 +656,7 @@ class Endpoint:
         是否SSL安全连接。
 
         :param ssl_link: The ssl_link of this Endpoint.
-        :type: bool
+        :type ssl_link: bool
         """
         self._ssl_link = ssl_link
 
@@ -629,7 +678,7 @@ class Endpoint:
         kafka topic名称
 
         :param topic: The topic of this Endpoint.
-        :type: str
+        :type topic: str
         """
         self._topic = topic
 
@@ -651,7 +700,7 @@ class Endpoint:
         MongDB集群4.0及以上版本，当集群实例无法获取到分片节点的IP时，source_endpoint中需要填写，值为：Sharding4.0+。
 
         :param cluster_mode: The cluster_mode of this Endpoint.
-        :type: str
+        :type cluster_mode: str
         """
         self._cluster_mode = cluster_mode
 

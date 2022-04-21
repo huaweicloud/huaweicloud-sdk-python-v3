@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDatabaseUsersRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListDatabaseUsersRequest:
     }
 
     def __init__(self, instance_id=None, user_name=None, db_name=None, offset=None, limit=None):
-        """ListDatabaseUsersRequest - a model defined in huaweicloud sdk"""
+        """ListDatabaseUsersRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
+        :type instance_id: str
+        :param user_name: 用户名称。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、中划线、下划线和点。
+        :type user_name: str
+        :param db_name: 数据库名称，默认为admin。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、下划线。
+        :type db_name: str
+        :param offset: 索引位置偏移量。 取值大于或等于0。不传该参数时，查询偏移量默认为0。
+        :type offset: int
+        :param limit: 查询实例个数上限值。 取值范围：1~100。不传该参数时，默认查询前100条实例信息。
+        :type limit: int
+        """
         
         
 
@@ -77,7 +90,7 @@ class ListDatabaseUsersRequest:
         实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
         :param instance_id: The instance_id of this ListDatabaseUsersRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -99,7 +112,7 @@ class ListDatabaseUsersRequest:
         用户名称。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、中划线、下划线和点。
 
         :param user_name: The user_name of this ListDatabaseUsersRequest.
-        :type: str
+        :type user_name: str
         """
         self._user_name = user_name
 
@@ -121,7 +134,7 @@ class ListDatabaseUsersRequest:
         数据库名称，默认为admin。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、下划线。
 
         :param db_name: The db_name of this ListDatabaseUsersRequest.
-        :type: str
+        :type db_name: str
         """
         self._db_name = db_name
 
@@ -143,7 +156,7 @@ class ListDatabaseUsersRequest:
         索引位置偏移量。 取值大于或等于0。不传该参数时，查询偏移量默认为0。
 
         :param offset: The offset of this ListDatabaseUsersRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -165,7 +178,7 @@ class ListDatabaseUsersRequest:
         查询实例个数上限值。 取值范围：1~100。不传该参数时，默认查询前100条实例信息。
 
         :param limit: The limit of this ListDatabaseUsersRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

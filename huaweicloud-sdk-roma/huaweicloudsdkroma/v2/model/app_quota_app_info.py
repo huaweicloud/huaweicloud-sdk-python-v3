@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AppQuotaAppInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class AppQuotaAppInfo:
     }
 
     def __init__(self, app_id=None, name=None, status=None, app_key=None, remark=None, register_time=None, update_time=None, app_quota_id=None, app_quota_name=None, bound_time=None):
-        """AppQuotaAppInfo - a model defined in huaweicloud sdk"""
+        """AppQuotaAppInfo
+
+        The model defined in huaweicloud sdk
+
+        :param app_id: 客户端应用编号
+        :type app_id: str
+        :param name: 客户端应用名称
+        :type name: str
+        :param status: 客户端应用状态： - 1：启用 - 2：禁用
+        :type status: int
+        :param app_key: 客户端应用的Key
+        :type app_key: str
+        :param remark: 客户端应用描述
+        :type remark: str
+        :param register_time: 创建时间
+        :type register_time: datetime
+        :param update_time: 更新时间
+        :type update_time: datetime
+        :param app_quota_id: 客户端配额编号
+        :type app_quota_id: str
+        :param app_quota_name: 配额名称。支持汉字，英文，数字，下划线，且只能以英文和汉字开头，3-255字符
+        :type app_quota_name: str
+        :param bound_time: 绑定时间
+        :type bound_time: datetime
+        """
         
         
 
@@ -103,7 +126,7 @@ class AppQuotaAppInfo:
         客户端应用编号
 
         :param app_id: The app_id of this AppQuotaAppInfo.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -125,7 +148,7 @@ class AppQuotaAppInfo:
         客户端应用名称
 
         :param name: The name of this AppQuotaAppInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -147,7 +170,7 @@ class AppQuotaAppInfo:
         客户端应用状态： - 1：启用 - 2：禁用
 
         :param status: The status of this AppQuotaAppInfo.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -169,7 +192,7 @@ class AppQuotaAppInfo:
         客户端应用的Key
 
         :param app_key: The app_key of this AppQuotaAppInfo.
-        :type: str
+        :type app_key: str
         """
         self._app_key = app_key
 
@@ -191,7 +214,7 @@ class AppQuotaAppInfo:
         客户端应用描述
 
         :param remark: The remark of this AppQuotaAppInfo.
-        :type: str
+        :type remark: str
         """
         self._remark = remark
 
@@ -213,7 +236,7 @@ class AppQuotaAppInfo:
         创建时间
 
         :param register_time: The register_time of this AppQuotaAppInfo.
-        :type: datetime
+        :type register_time: datetime
         """
         self._register_time = register_time
 
@@ -235,7 +258,7 @@ class AppQuotaAppInfo:
         更新时间
 
         :param update_time: The update_time of this AppQuotaAppInfo.
-        :type: datetime
+        :type update_time: datetime
         """
         self._update_time = update_time
 
@@ -257,7 +280,7 @@ class AppQuotaAppInfo:
         客户端配额编号
 
         :param app_quota_id: The app_quota_id of this AppQuotaAppInfo.
-        :type: str
+        :type app_quota_id: str
         """
         self._app_quota_id = app_quota_id
 
@@ -279,7 +302,7 @@ class AppQuotaAppInfo:
         配额名称。支持汉字，英文，数字，下划线，且只能以英文和汉字开头，3-255字符
 
         :param app_quota_name: The app_quota_name of this AppQuotaAppInfo.
-        :type: str
+        :type app_quota_name: str
         """
         self._app_quota_name = app_quota_name
 
@@ -301,7 +324,7 @@ class AppQuotaAppInfo:
         绑定时间
 
         :param bound_time: The bound_time of this AppQuotaAppInfo.
-        :type: datetime
+        :type bound_time: datetime
         """
         self._bound_time = bound_time
 

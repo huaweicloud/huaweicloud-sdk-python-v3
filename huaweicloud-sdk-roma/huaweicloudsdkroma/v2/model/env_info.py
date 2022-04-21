@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EnvInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class EnvInfo:
     }
 
     def __init__(self, create_time=None, name=None, remark=None, id=None):
-        """EnvInfo - a model defined in huaweicloud sdk"""
+        """EnvInfo
+
+        The model defined in huaweicloud sdk
+
+        :param create_time: 创建时间
+        :type create_time: datetime
+        :param name: 环境名称
+        :type name: str
+        :param remark: 描述信息
+        :type remark: str
+        :param id: 环境编号
+        :type id: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class EnvInfo:
         创建时间
 
         :param create_time: The create_time of this EnvInfo.
-        :type: datetime
+        :type create_time: datetime
         """
         self._create_time = create_time
 
@@ -95,7 +106,7 @@ class EnvInfo:
         环境名称
 
         :param name: The name of this EnvInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -117,7 +128,7 @@ class EnvInfo:
         描述信息
 
         :param remark: The remark of this EnvInfo.
-        :type: str
+        :type remark: str
         """
         self._remark = remark
 
@@ -139,7 +150,7 @@ class EnvInfo:
         环境编号
 
         :param id: The id of this EnvInfo.
-        :type: str
+        :type id: str
         """
         self._id = id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListStatisticsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListStatisticsRequest:
     }
 
     def __init__(self, filter=None, period=None):
-        """ListStatisticsRequest - a model defined in huaweicloud sdk"""
+        """ListStatisticsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param filter: 参数过滤器。
+        :type filter: str
+        :param period: 时间段单位为分钟，与filter参数配合使用。
+        :type period: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ListStatisticsRequest:
         参数过滤器。
 
         :param filter: The filter of this ListStatisticsRequest.
-        :type: str
+        :type filter: str
         """
         self._filter = filter
 
@@ -84,7 +91,7 @@ class ListStatisticsRequest:
         时间段单位为分钟，与filter参数配合使用。
 
         :param period: The period of this ListStatisticsRequest.
-        :type: str
+        :type period: str
         """
         self._period = period
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CheckVeriCodeForUpdateUserInfoResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class CheckVeriCodeForUpdateUserInfoResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CheckVeriCodeForUpdateUserInfoResponse - a model defined in huaweicloud sdk"""
+        """CheckVeriCodeForUpdateUserInfoResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(CheckVeriCodeForUpdateUserInfoResponse, self).__init__()
         self.discriminator = None

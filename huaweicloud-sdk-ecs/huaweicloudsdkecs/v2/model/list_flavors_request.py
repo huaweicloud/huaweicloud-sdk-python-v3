@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListFlavorsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListFlavorsRequest:
     }
 
     def __init__(self, availability_zone=None):
-        """ListFlavorsRequest - a model defined in huaweicloud sdk"""
+        """ListFlavorsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param availability_zone: 可用区，需要指定可用区（AZ）的名称或者ID或者code。  可通过接口 [查询可用区列表接口](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product&#x3D;ECS&amp;api&#x3D;NovaListAvailabilityZones) 获取，也可参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)获取。
+        :type availability_zone: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class ListFlavorsRequest:
         可用区，需要指定可用区（AZ）的名称或者ID或者code。  可通过接口 [查询可用区列表接口](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=ECS&api=NovaListAvailabilityZones) 获取，也可参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)获取。
 
         :param availability_zone: The availability_zone of this ListFlavorsRequest.
-        :type: str
+        :type availability_zone: str
         """
         self._availability_zone = availability_zone
 

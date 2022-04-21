@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApplyCertificateToHostRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ApplyCertificateToHostRequest:
     }
 
     def __init__(self, enterprise_project_id=None, certificate_id=None, body=None):
-        """ApplyCertificateToHostRequest - a model defined in huaweicloud sdk"""
+        """ApplyCertificateToHostRequest
+
+        The model defined in huaweicloud sdk
+
+        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        :type enterprise_project_id: str
+        :param certificate_id: https证书id，您可以通过调用查询证书列表（ListCertificates）接口获取证书id
+        :type certificate_id: str
+        :param body: Body of the ApplyCertificateToHostRequest
+        :type body: :class:`huaweicloudsdkwaf.v1.ApplyCertificateToHostRequestBody`
+        """
         
         
 
@@ -67,7 +76,7 @@ class ApplyCertificateToHostRequest:
         您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this ApplyCertificateToHostRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -89,7 +98,7 @@ class ApplyCertificateToHostRequest:
         https证书id，您可以通过调用查询证书列表（ListCertificates）接口获取证书id
 
         :param certificate_id: The certificate_id of this ApplyCertificateToHostRequest.
-        :type: str
+        :type certificate_id: str
         """
         self._certificate_id = certificate_id
 
@@ -99,7 +108,7 @@ class ApplyCertificateToHostRequest:
 
 
         :return: The body of this ApplyCertificateToHostRequest.
-        :rtype: ApplyCertificateToHostRequestBody
+        :rtype: :class:`huaweicloudsdkwaf.v1.ApplyCertificateToHostRequestBody`
         """
         return self._body
 
@@ -109,7 +118,7 @@ class ApplyCertificateToHostRequest:
 
 
         :param body: The body of this ApplyCertificateToHostRequest.
-        :type: ApplyCertificateToHostRequestBody
+        :type body: :class:`huaweicloudsdkwaf.v1.ApplyCertificateToHostRequestBody`
         """
         self._body = body
 

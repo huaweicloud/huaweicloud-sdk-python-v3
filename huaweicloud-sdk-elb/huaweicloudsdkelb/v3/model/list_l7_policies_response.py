@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListL7PoliciesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListL7PoliciesResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, page_info=None, l7policies=None):
-        """ListL7PoliciesResponse - a model defined in huaweicloud sdk"""
+        """ListL7PoliciesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param request_id: 请求ID。  注：自动生成 。
+        :type request_id: str
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`
+        :param l7policies: 转发策略对象列表。
+        :type l7policies: list[:class:`huaweicloudsdkelb.v3.L7Policy`]
+        """
         
         super(ListL7PoliciesResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListL7PoliciesResponse(SdkResponse):
         请求ID。  注：自动生成 。
 
         :param request_id: The request_id of this ListL7PoliciesResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 
@@ -78,7 +87,7 @@ class ListL7PoliciesResponse(SdkResponse):
 
 
         :return: The page_info of this ListL7PoliciesResponse.
-        :rtype: PageInfo
+        :rtype: :class:`huaweicloudsdkelb.v3.PageInfo`
         """
         return self._page_info
 
@@ -88,7 +97,7 @@ class ListL7PoliciesResponse(SdkResponse):
 
 
         :param page_info: The page_info of this ListL7PoliciesResponse.
-        :type: PageInfo
+        :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`
         """
         self._page_info = page_info
 
@@ -99,7 +108,7 @@ class ListL7PoliciesResponse(SdkResponse):
         转发策略对象列表。
 
         :return: The l7policies of this ListL7PoliciesResponse.
-        :rtype: list[L7Policy]
+        :rtype: list[:class:`huaweicloudsdkelb.v3.L7Policy`]
         """
         return self._l7policies
 
@@ -110,7 +119,7 @@ class ListL7PoliciesResponse(SdkResponse):
         转发策略对象列表。
 
         :param l7policies: The l7policies of this ListL7PoliciesResponse.
-        :type: list[L7Policy]
+        :type l7policies: list[:class:`huaweicloudsdkelb.v3.L7Policy`]
         """
         self._l7policies = l7policies
 

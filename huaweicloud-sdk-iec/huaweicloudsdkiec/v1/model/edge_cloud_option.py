@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EdgeCloudOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class EdgeCloudOption:
     }
 
     def __init__(self, name=None, id=None, description=None, coverage=None, stack=None):
-        """EdgeCloudOption - a model defined in huaweicloud sdk"""
+        """EdgeCloudOption
+
+        The model defined in huaweicloud sdk
+
+        :param name: 边缘业务名称。 取值范围：只能由中文字符、大小写英文字母、数字及中划线、下划线组成，且长度为[1-32]个字符。
+        :type name: str
+        :param id: 已有边缘业务ID，该参数用于扩容边缘业务场景。 &gt;-  id与name不可同时为空，同时有值时部署计划无效； - 通过id扩容场景要求区域分布层级与原边缘业务一致； - 区域分布层级为站点级的边缘业务不支持扩容。
+        :type id: str
+        :param description: 描述，缺省值为空字符串。
+        :type description: str
+        :param coverage: 
+        :type coverage: :class:`huaweicloudsdkiec.v1.Coverage`
+        :param stack: 
+        :type stack: :class:`huaweicloudsdkiec.v1.Stack`
+        """
         
         
 
@@ -76,7 +89,7 @@ class EdgeCloudOption:
         边缘业务名称。 取值范围：只能由中文字符、大小写英文字母、数字及中划线、下划线组成，且长度为[1-32]个字符。
 
         :param name: The name of this EdgeCloudOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -98,7 +111,7 @@ class EdgeCloudOption:
         已有边缘业务ID，该参数用于扩容边缘业务场景。 >-  id与name不可同时为空，同时有值时部署计划无效； - 通过id扩容场景要求区域分布层级与原边缘业务一致； - 区域分布层级为站点级的边缘业务不支持扩容。
 
         :param id: The id of this EdgeCloudOption.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -120,7 +133,7 @@ class EdgeCloudOption:
         描述，缺省值为空字符串。
 
         :param description: The description of this EdgeCloudOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -130,7 +143,7 @@ class EdgeCloudOption:
 
 
         :return: The coverage of this EdgeCloudOption.
-        :rtype: Coverage
+        :rtype: :class:`huaweicloudsdkiec.v1.Coverage`
         """
         return self._coverage
 
@@ -140,7 +153,7 @@ class EdgeCloudOption:
 
 
         :param coverage: The coverage of this EdgeCloudOption.
-        :type: Coverage
+        :type coverage: :class:`huaweicloudsdkiec.v1.Coverage`
         """
         self._coverage = coverage
 
@@ -150,7 +163,7 @@ class EdgeCloudOption:
 
 
         :return: The stack of this EdgeCloudOption.
-        :rtype: Stack
+        :rtype: :class:`huaweicloudsdkiec.v1.Stack`
         """
         return self._stack
 
@@ -160,7 +173,7 @@ class EdgeCloudOption:
 
 
         :param stack: The stack of this EdgeCloudOption.
-        :type: Stack
+        :type stack: :class:`huaweicloudsdkiec.v1.Stack`
         """
         self._stack = stack
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResourcesByTag:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ResourcesByTag:
     }
 
     def __init__(self, resource_id=None, resource_name=None, resource_detail=None, tags=None, super_resource_id=None):
-        """ResourcesByTag - a model defined in huaweicloud sdk"""
+        """ResourcesByTag
+
+        The model defined in huaweicloud sdk
+
+        :param resource_id: 资源ID.
+        :type resource_id: str
+        :param resource_name: 资源名称。
+        :type resource_name: str
+        :param resource_detail: 资源描述。
+        :type resource_detail: str
+        :param tags: 资源标签。
+        :type tags: list[:class:`huaweicloudsdkelb.v2.ResourceTag`]
+        :param super_resource_id: 父级资源ID。
+        :type super_resource_id: str
+        """
         
         
 
@@ -74,7 +87,7 @@ class ResourcesByTag:
         资源ID.
 
         :param resource_id: The resource_id of this ResourcesByTag.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -96,7 +109,7 @@ class ResourcesByTag:
         资源名称。
 
         :param resource_name: The resource_name of this ResourcesByTag.
-        :type: str
+        :type resource_name: str
         """
         self._resource_name = resource_name
 
@@ -118,7 +131,7 @@ class ResourcesByTag:
         资源描述。
 
         :param resource_detail: The resource_detail of this ResourcesByTag.
-        :type: str
+        :type resource_detail: str
         """
         self._resource_detail = resource_detail
 
@@ -129,7 +142,7 @@ class ResourcesByTag:
         资源标签。
 
         :return: The tags of this ResourcesByTag.
-        :rtype: list[ResourceTag]
+        :rtype: list[:class:`huaweicloudsdkelb.v2.ResourceTag`]
         """
         return self._tags
 
@@ -140,7 +153,7 @@ class ResourcesByTag:
         资源标签。
 
         :param tags: The tags of this ResourcesByTag.
-        :type: list[ResourceTag]
+        :type tags: list[:class:`huaweicloudsdkelb.v2.ResourceTag`]
         """
         self._tags = tags
 
@@ -162,7 +175,7 @@ class ResourcesByTag:
         父级资源ID。
 
         :param super_resource_id: The super_resource_id of this ResourcesByTag.
-        :type: str
+        :type super_resource_id: str
         """
         self._super_resource_id = super_resource_id
 

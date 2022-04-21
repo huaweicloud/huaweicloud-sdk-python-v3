@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateClusterNameReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateClusterNameReq:
     }
 
     def __init__(self, display_name=None):
-        """UpdateClusterNameReq - a model defined in huaweicloud sdk"""
+        """UpdateClusterNameReq
+
+        The model defined in huaweicloud sdk
+
+        :param display_name: 修改后集群名称。
+        :type display_name: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class UpdateClusterNameReq:
         修改后集群名称。
 
         :param display_name: The display_name of this UpdateClusterNameReq.
-        :type: str
+        :type display_name: str
         """
         self._display_name = display_name
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchOperateInstanceTagRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchOperateInstanceTagRequestBody:
     }
 
     def __init__(self, action=None, tags=None):
-        """BatchOperateInstanceTagRequestBody - a model defined in huaweicloud sdk"""
+        """BatchOperateInstanceTagRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param action: 操作标识，取值： - create，表示添加标签。 - delete，表示删除标签。
+        :type action: str
+        :param tags: 标签列表。
+        :type tags: list[:class:`huaweicloudsdkgaussdb.v3.TagItem`]
+        """
         
         
 
@@ -61,7 +68,7 @@ class BatchOperateInstanceTagRequestBody:
         操作标识，取值： - create，表示添加标签。 - delete，表示删除标签。
 
         :param action: The action of this BatchOperateInstanceTagRequestBody.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -72,7 +79,7 @@ class BatchOperateInstanceTagRequestBody:
         标签列表。
 
         :return: The tags of this BatchOperateInstanceTagRequestBody.
-        :rtype: list[TagItem]
+        :rtype: list[:class:`huaweicloudsdkgaussdb.v3.TagItem`]
         """
         return self._tags
 
@@ -83,7 +90,7 @@ class BatchOperateInstanceTagRequestBody:
         标签列表。
 
         :param tags: The tags of this BatchOperateInstanceTagRequestBody.
-        :type: list[TagItem]
+        :type tags: list[:class:`huaweicloudsdkgaussdb.v3.TagItem`]
         """
         self._tags = tags
 

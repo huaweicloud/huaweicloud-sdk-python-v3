@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowQueueRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowQueueRequest:
     }
 
     def __init__(self, instance_id=None, queue_id=None):
-        """ShowQueueRequest - a model defined in huaweicloud sdk"""
+        """ShowQueueRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
+        :type instance_id: str
+        :param queue_id: **参数说明**：队列ID，用于唯一标识一个队列。 **取值范围**：长度36位，只允许字母、数字、下划线（_）、连接符（-）的组合。
+        :type queue_id: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ShowQueueRequest:
         **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
         :param instance_id: The instance_id of this ShowQueueRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -84,7 +91,7 @@ class ShowQueueRequest:
         **参数说明**：队列ID，用于唯一标识一个队列。 **取值范围**：长度36位，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :param queue_id: The queue_id of this ShowQueueRequest.
-        :type: str
+        :type queue_id: str
         """
         self._queue_id = queue_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateExternalEntityRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateExternalEntityRequest:
     }
 
     def __init__(self, edge_node_id=None, external_id=None, body=None):
-        """UpdateExternalEntityRequest - a model defined in huaweicloud sdk"""
+        """UpdateExternalEntityRequest
+
+        The model defined in huaweicloud sdk
+
+        :param edge_node_id: 边缘节点ID
+        :type edge_node_id: str
+        :param external_id: 外部实体ID
+        :type external_id: str
+        :param body: Body of the UpdateExternalEntityRequest
+        :type body: :class:`huaweicloudsdkiotedge.v2.UpdateExternalEntityReqDTO`
+        """
         
         
 
@@ -66,7 +75,7 @@ class UpdateExternalEntityRequest:
         边缘节点ID
 
         :param edge_node_id: The edge_node_id of this UpdateExternalEntityRequest.
-        :type: str
+        :type edge_node_id: str
         """
         self._edge_node_id = edge_node_id
 
@@ -88,7 +97,7 @@ class UpdateExternalEntityRequest:
         外部实体ID
 
         :param external_id: The external_id of this UpdateExternalEntityRequest.
-        :type: str
+        :type external_id: str
         """
         self._external_id = external_id
 
@@ -98,7 +107,7 @@ class UpdateExternalEntityRequest:
 
 
         :return: The body of this UpdateExternalEntityRequest.
-        :rtype: UpdateExternalEntityReqDTO
+        :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateExternalEntityReqDTO`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class UpdateExternalEntityRequest:
 
 
         :param body: The body of this UpdateExternalEntityRequest.
-        :type: UpdateExternalEntityReqDTO
+        :type body: :class:`huaweicloudsdkiotedge.v2.UpdateExternalEntityReqDTO`
         """
         self._body = body
 

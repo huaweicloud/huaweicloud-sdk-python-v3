@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ComandParam:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ComandParam:
     }
 
     def __init__(self, task_id=None, bucket=None):
-        """ComandParam - a model defined in huaweicloud sdk"""
+        """ComandParam
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 任务id
+        :type task_id: str
+        :param bucket: 桶名
+        :type bucket: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class ComandParam:
         任务id
 
         :param task_id: The task_id of this ComandParam.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -85,7 +92,7 @@ class ComandParam:
         桶名
 
         :param bucket: The bucket of this ComandParam.
-        :type: str
+        :type bucket: str
         """
         self._bucket = bucket
 

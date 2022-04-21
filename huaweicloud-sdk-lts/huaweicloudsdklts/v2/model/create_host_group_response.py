@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateHostGroupResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class CreateHostGroupResponse(SdkResponse):
     }
 
     def __init__(self, host_group_id=None, host_group_name=None, host_group_type=None, host_id_list=None, host_group_tag=None, create_time=None, update_time=None):
-        """CreateHostGroupResponse - a model defined in huaweicloud sdk"""
+        """CreateHostGroupResponse
+
+        The model defined in huaweicloud sdk
+
+        :param host_group_id: 主机组ID
+        :type host_group_id: str
+        :param host_group_name: 主机组名称
+        :type host_group_name: str
+        :param host_group_type: 主机组类型。linux：linux类型，windows：windows类型
+        :type host_group_type: str
+        :param host_id_list: 主机ID列表
+        :type host_id_list: list[str]
+        :param host_group_tag: 标签信息
+        :type host_group_tag: list[:class:`huaweicloudsdklts.v2.HostGroupTag`]
+        :param create_time: 创建时间
+        :type create_time: int
+        :param update_time: 更新时间
+        :type update_time: int
+        """
         
         super(CreateHostGroupResponse, self).__init__()
 
@@ -88,7 +105,7 @@ class CreateHostGroupResponse(SdkResponse):
         主机组ID
 
         :param host_group_id: The host_group_id of this CreateHostGroupResponse.
-        :type: str
+        :type host_group_id: str
         """
         self._host_group_id = host_group_id
 
@@ -110,7 +127,7 @@ class CreateHostGroupResponse(SdkResponse):
         主机组名称
 
         :param host_group_name: The host_group_name of this CreateHostGroupResponse.
-        :type: str
+        :type host_group_name: str
         """
         self._host_group_name = host_group_name
 
@@ -132,7 +149,7 @@ class CreateHostGroupResponse(SdkResponse):
         主机组类型。linux：linux类型，windows：windows类型
 
         :param host_group_type: The host_group_type of this CreateHostGroupResponse.
-        :type: str
+        :type host_group_type: str
         """
         self._host_group_type = host_group_type
 
@@ -154,7 +171,7 @@ class CreateHostGroupResponse(SdkResponse):
         主机ID列表
 
         :param host_id_list: The host_id_list of this CreateHostGroupResponse.
-        :type: list[str]
+        :type host_id_list: list[str]
         """
         self._host_id_list = host_id_list
 
@@ -165,7 +182,7 @@ class CreateHostGroupResponse(SdkResponse):
         标签信息
 
         :return: The host_group_tag of this CreateHostGroupResponse.
-        :rtype: list[HostGroupTag]
+        :rtype: list[:class:`huaweicloudsdklts.v2.HostGroupTag`]
         """
         return self._host_group_tag
 
@@ -176,7 +193,7 @@ class CreateHostGroupResponse(SdkResponse):
         标签信息
 
         :param host_group_tag: The host_group_tag of this CreateHostGroupResponse.
-        :type: list[HostGroupTag]
+        :type host_group_tag: list[:class:`huaweicloudsdklts.v2.HostGroupTag`]
         """
         self._host_group_tag = host_group_tag
 
@@ -198,7 +215,7 @@ class CreateHostGroupResponse(SdkResponse):
         创建时间
 
         :param create_time: The create_time of this CreateHostGroupResponse.
-        :type: int
+        :type create_time: int
         """
         self._create_time = create_time
 
@@ -220,7 +237,7 @@ class CreateHostGroupResponse(SdkResponse):
         更新时间
 
         :param update_time: The update_time of this CreateHostGroupResponse.
-        :type: int
+        :type update_time: int
         """
         self._update_time = update_time
 

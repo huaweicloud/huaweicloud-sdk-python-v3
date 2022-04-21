@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NeutronCreateFirewallRuleOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class NeutronCreateFirewallRuleOption:
     }
 
     def __init__(self, name=None, description=None, protocol=None, action=None, ip_version=None, destination_ip_address=None, destination_port=None, source_ip_address=None, source_port=None, enabled=None):
-        """NeutronCreateFirewallRuleOption - a model defined in huaweicloud sdk"""
+        """NeutronCreateFirewallRuleOption
+
+        The model defined in huaweicloud sdk
+
+        :param name: 功能说明：网络ACL规则名称 取值范围：0-255个字符
+        :type name: str
+        :param description: 功能说明：网络ACL规则描述 取值范围：0-255个字符
+        :type description: str
+        :param protocol: 功能说明：IP协议 取值范围：支持TCP,UDP,ICMP, ICMPV6或者ip协议号（0-255）
+        :type protocol: str
+        :param action: 功能说明：对通过网络ACL的流量执行的操作 取值范围：DENY（拒绝）/ALLOW（允许）
+        :type action: str
+        :param ip_version: 功能说明：IP协议版本
+        :type ip_version: int
+        :param destination_ip_address: 功能说明：目的地址或者CIDR
+        :type destination_ip_address: str
+        :param destination_port: 功能说明：目的端口号或者一段端口范围
+        :type destination_port: str
+        :param source_ip_address: 功能说明：源地址或者CIDR
+        :type source_ip_address: str
+        :param source_port: 功能说明：源端口号或者一段端口范围
+        :type source_port: str
+        :param enabled: 功能说明：是否使能网络ACL防火墙规则。
+        :type enabled: bool
+        """
         
         
 
@@ -103,7 +126,7 @@ class NeutronCreateFirewallRuleOption:
         功能说明：网络ACL规则名称 取值范围：0-255个字符
 
         :param name: The name of this NeutronCreateFirewallRuleOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -125,7 +148,7 @@ class NeutronCreateFirewallRuleOption:
         功能说明：网络ACL规则描述 取值范围：0-255个字符
 
         :param description: The description of this NeutronCreateFirewallRuleOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -147,7 +170,7 @@ class NeutronCreateFirewallRuleOption:
         功能说明：IP协议 取值范围：支持TCP,UDP,ICMP, ICMPV6或者ip协议号（0-255）
 
         :param protocol: The protocol of this NeutronCreateFirewallRuleOption.
-        :type: str
+        :type protocol: str
         """
         self._protocol = protocol
 
@@ -169,7 +192,7 @@ class NeutronCreateFirewallRuleOption:
         功能说明：对通过网络ACL的流量执行的操作 取值范围：DENY（拒绝）/ALLOW（允许）
 
         :param action: The action of this NeutronCreateFirewallRuleOption.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -191,7 +214,7 @@ class NeutronCreateFirewallRuleOption:
         功能说明：IP协议版本
 
         :param ip_version: The ip_version of this NeutronCreateFirewallRuleOption.
-        :type: int
+        :type ip_version: int
         """
         self._ip_version = ip_version
 
@@ -213,7 +236,7 @@ class NeutronCreateFirewallRuleOption:
         功能说明：目的地址或者CIDR
 
         :param destination_ip_address: The destination_ip_address of this NeutronCreateFirewallRuleOption.
-        :type: str
+        :type destination_ip_address: str
         """
         self._destination_ip_address = destination_ip_address
 
@@ -235,7 +258,7 @@ class NeutronCreateFirewallRuleOption:
         功能说明：目的端口号或者一段端口范围
 
         :param destination_port: The destination_port of this NeutronCreateFirewallRuleOption.
-        :type: str
+        :type destination_port: str
         """
         self._destination_port = destination_port
 
@@ -257,7 +280,7 @@ class NeutronCreateFirewallRuleOption:
         功能说明：源地址或者CIDR
 
         :param source_ip_address: The source_ip_address of this NeutronCreateFirewallRuleOption.
-        :type: str
+        :type source_ip_address: str
         """
         self._source_ip_address = source_ip_address
 
@@ -279,7 +302,7 @@ class NeutronCreateFirewallRuleOption:
         功能说明：源端口号或者一段端口范围
 
         :param source_port: The source_port of this NeutronCreateFirewallRuleOption.
-        :type: str
+        :type source_port: str
         """
         self._source_port = source_port
 
@@ -301,7 +324,7 @@ class NeutronCreateFirewallRuleOption:
         功能说明：是否使能网络ACL防火墙规则。
 
         :param enabled: The enabled of this NeutronCreateFirewallRuleOption.
-        :type: bool
+        :type enabled: bool
         """
         self._enabled = enabled
 

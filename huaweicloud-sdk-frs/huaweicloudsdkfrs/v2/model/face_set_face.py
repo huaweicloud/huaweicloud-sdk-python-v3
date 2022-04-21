@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FaceSetFace:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class FaceSetFace:
     }
 
     def __init__(self, bounding_box=None, external_fields=None, external_image_id=None, face_id=None):
-        """FaceSetFace - a model defined in huaweicloud sdk"""
+        """FaceSetFace
+
+        The model defined in huaweicloud sdk
+
+        :param bounding_box: 
+        :type bounding_box: :class:`huaweicloudsdkfrs.v2.BoundingBox`
+        :param external_fields: 用户添加的额外字段。
+        :type external_fields: object
+        :param external_image_id: 人脸所在的外部图片ID。
+        :type external_image_id: str
+        :param face_id: 人脸ID，由系统内部生成的唯一ID。
+        :type face_id: str
+        """
         
         
 
@@ -57,7 +68,7 @@ class FaceSetFace:
 
 
         :return: The bounding_box of this FaceSetFace.
-        :rtype: BoundingBox
+        :rtype: :class:`huaweicloudsdkfrs.v2.BoundingBox`
         """
         return self._bounding_box
 
@@ -67,7 +78,7 @@ class FaceSetFace:
 
 
         :param bounding_box: The bounding_box of this FaceSetFace.
-        :type: BoundingBox
+        :type bounding_box: :class:`huaweicloudsdkfrs.v2.BoundingBox`
         """
         self._bounding_box = bounding_box
 
@@ -89,7 +100,7 @@ class FaceSetFace:
         用户添加的额外字段。
 
         :param external_fields: The external_fields of this FaceSetFace.
-        :type: object
+        :type external_fields: object
         """
         self._external_fields = external_fields
 
@@ -111,7 +122,7 @@ class FaceSetFace:
         人脸所在的外部图片ID。
 
         :param external_image_id: The external_image_id of this FaceSetFace.
-        :type: str
+        :type external_image_id: str
         """
         self._external_image_id = external_image_id
 
@@ -133,7 +144,7 @@ class FaceSetFace:
         人脸ID，由系统内部生成的唯一ID。
 
         :param face_id: The face_id of this FaceSetFace.
-        :type: str
+        :type face_id: str
         """
         self._face_id = face_id
 

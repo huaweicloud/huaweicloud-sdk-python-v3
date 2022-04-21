@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListEventsResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListEventsResult:
     }
 
     def __init__(self, id=None, last_modified=None, name=None):
-        """ListEventsResult - a model defined in huaweicloud sdk"""
+        """ListEventsResult
+
+        The model defined in huaweicloud sdk
+
+        :param id: 测试事件ID。
+        :type id: str
+        :param last_modified: 上次修改的时间。
+        :type last_modified: float
+        :param name: 测试事件名称。
+        :type name: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class ListEventsResult:
         测试事件ID。
 
         :param id: The id of this ListEventsResult.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -90,7 +99,7 @@ class ListEventsResult:
         上次修改的时间。
 
         :param last_modified: The last_modified of this ListEventsResult.
-        :type: float
+        :type last_modified: float
         """
         self._last_modified = last_modified
 
@@ -112,7 +121,7 @@ class ListEventsResult:
         测试事件名称。
 
         :param name: The name of this ListEventsResult.
-        :type: str
+        :type name: str
         """
         self._name = name
 

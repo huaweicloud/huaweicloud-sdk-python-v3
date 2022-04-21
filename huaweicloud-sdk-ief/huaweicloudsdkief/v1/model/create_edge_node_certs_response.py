@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateEdgeNodeCertsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class CreateEdgeNodeCertsResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, created_at=None, node_id=None, type=None, serial_num=None, ca=None, certificate=None, private_key=None, package=None):
-        """CreateEdgeNodeCertsResponse - a model defined in huaweicloud sdk"""
+        """CreateEdgeNodeCertsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 证书id
+        :type id: str
+        :param name: 证书名称
+        :type name: str
+        :param description: 证书的描述
+        :type description: str
+        :param created_at: 证书的创建时间
+        :type created_at: str
+        :param node_id: 节点id
+        :type node_id: str
+        :param type: 证书类型，包含： - system：创建节点时会默认创建一套系统证书； - application：应用证书； - device：设备证书；
+        :type type: str
+        :param serial_num: 证书序列号
+        :type serial_num: str
+        :param ca: 根证书
+        :type ca: str
+        :param certificate: 证书
+        :type certificate: str
+        :param private_key: 私钥
+        :type private_key: str
+        :param package: 将证书文件certificate/ca/private_key打成.tar.gz包后用base64编码的字符串。 使用时请使用base64解码成.tar.gz包。
+        :type package: str
+        """
         
         super(CreateEdgeNodeCertsResponse, self).__init__()
 
@@ -108,7 +133,7 @@ class CreateEdgeNodeCertsResponse(SdkResponse):
         证书id
 
         :param id: The id of this CreateEdgeNodeCertsResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -130,7 +155,7 @@ class CreateEdgeNodeCertsResponse(SdkResponse):
         证书名称
 
         :param name: The name of this CreateEdgeNodeCertsResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -152,7 +177,7 @@ class CreateEdgeNodeCertsResponse(SdkResponse):
         证书的描述
 
         :param description: The description of this CreateEdgeNodeCertsResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -174,7 +199,7 @@ class CreateEdgeNodeCertsResponse(SdkResponse):
         证书的创建时间
 
         :param created_at: The created_at of this CreateEdgeNodeCertsResponse.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -196,7 +221,7 @@ class CreateEdgeNodeCertsResponse(SdkResponse):
         节点id
 
         :param node_id: The node_id of this CreateEdgeNodeCertsResponse.
-        :type: str
+        :type node_id: str
         """
         self._node_id = node_id
 
@@ -218,7 +243,7 @@ class CreateEdgeNodeCertsResponse(SdkResponse):
         证书类型，包含： - system：创建节点时会默认创建一套系统证书； - application：应用证书； - device：设备证书；
 
         :param type: The type of this CreateEdgeNodeCertsResponse.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -240,7 +265,7 @@ class CreateEdgeNodeCertsResponse(SdkResponse):
         证书序列号
 
         :param serial_num: The serial_num of this CreateEdgeNodeCertsResponse.
-        :type: str
+        :type serial_num: str
         """
         self._serial_num = serial_num
 
@@ -262,7 +287,7 @@ class CreateEdgeNodeCertsResponse(SdkResponse):
         根证书
 
         :param ca: The ca of this CreateEdgeNodeCertsResponse.
-        :type: str
+        :type ca: str
         """
         self._ca = ca
 
@@ -284,7 +309,7 @@ class CreateEdgeNodeCertsResponse(SdkResponse):
         证书
 
         :param certificate: The certificate of this CreateEdgeNodeCertsResponse.
-        :type: str
+        :type certificate: str
         """
         self._certificate = certificate
 
@@ -306,7 +331,7 @@ class CreateEdgeNodeCertsResponse(SdkResponse):
         私钥
 
         :param private_key: The private_key of this CreateEdgeNodeCertsResponse.
-        :type: str
+        :type private_key: str
         """
         self._private_key = private_key
 
@@ -328,7 +353,7 @@ class CreateEdgeNodeCertsResponse(SdkResponse):
         将证书文件certificate/ca/private_key打成.tar.gz包后用base64编码的字符串。 使用时请使用base64解码成.tar.gz包。
 
         :param package: The package of this CreateEdgeNodeCertsResponse.
-        :type: str
+        :type package: str
         """
         self._package = package
 

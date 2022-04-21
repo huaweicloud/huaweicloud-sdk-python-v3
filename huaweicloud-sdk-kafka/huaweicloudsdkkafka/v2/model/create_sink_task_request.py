@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateSinkTaskRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateSinkTaskRequest:
     }
 
     def __init__(self, connector_id=None, body=None):
-        """CreateSinkTaskRequest - a model defined in huaweicloud sdk"""
+        """CreateSinkTaskRequest
+
+        The model defined in huaweicloud sdk
+
+        :param connector_id: 实例转储ID。 请参考[实例生命周期][查询实例]接口返回的数据。
+        :type connector_id: str
+        :param body: Body of the CreateSinkTaskRequest
+        :type body: :class:`huaweicloudsdkkafka.v2.CreateSinkTaskReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateSinkTaskRequest:
         实例转储ID。 请参考[实例生命周期][查询实例]接口返回的数据。
 
         :param connector_id: The connector_id of this CreateSinkTaskRequest.
-        :type: str
+        :type connector_id: str
         """
         self._connector_id = connector_id
 
@@ -72,7 +79,7 @@ class CreateSinkTaskRequest:
 
 
         :return: The body of this CreateSinkTaskRequest.
-        :rtype: CreateSinkTaskReq
+        :rtype: :class:`huaweicloudsdkkafka.v2.CreateSinkTaskReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CreateSinkTaskRequest:
 
 
         :param body: The body of this CreateSinkTaskRequest.
-        :type: CreateSinkTaskReq
+        :type body: :class:`huaweicloudsdkkafka.v2.CreateSinkTaskReq`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCertificateAuthorityObsBucketResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListCertificateAuthorityObsBucketResponse(SdkResponse):
     }
 
     def __init__(self, total=None, obs_buckets=None):
-        """ListCertificateAuthorityObsBucketResponse - a model defined in huaweicloud sdk"""
+        """ListCertificateAuthorityObsBucketResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: OBS桶总数。
+        :type total: int
+        :param obs_buckets: OBS桶列表，详情请参见**ObsBuckets**字段数据结构说明。
+        :type obs_buckets: list[:class:`huaweicloudsdkccm.v1.ObsBuckets`]
+        """
         
         super(ListCertificateAuthorityObsBucketResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListCertificateAuthorityObsBucketResponse(SdkResponse):
         OBS桶总数。
 
         :param total: The total of this ListCertificateAuthorityObsBucketResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -74,7 +81,7 @@ class ListCertificateAuthorityObsBucketResponse(SdkResponse):
         OBS桶列表，详情请参见**ObsBuckets**字段数据结构说明。
 
         :return: The obs_buckets of this ListCertificateAuthorityObsBucketResponse.
-        :rtype: list[ObsBuckets]
+        :rtype: list[:class:`huaweicloudsdkccm.v1.ObsBuckets`]
         """
         return self._obs_buckets
 
@@ -85,7 +92,7 @@ class ListCertificateAuthorityObsBucketResponse(SdkResponse):
         OBS桶列表，详情请参见**ObsBuckets**字段数据结构说明。
 
         :param obs_buckets: The obs_buckets of this ListCertificateAuthorityObsBucketResponse.
-        :type: list[ObsBuckets]
+        :type obs_buckets: list[:class:`huaweicloudsdkccm.v1.ObsBuckets`]
         """
         self._obs_buckets = obs_buckets
 

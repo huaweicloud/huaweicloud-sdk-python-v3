@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Event:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -84,7 +83,67 @@ class Event:
     }
 
     def __init__(self, version=None, environment=None, data_source=None, first_observed_time=None, last_observed_time=None, create_time=None, arrive_time=None, event_id=None, title=None, description=None, source_url=None, count=None, confidence=None, severity=None, criticality=None, type=None, compliance=None, network=None, vulnerability_patch=None, malware=None, threat_intel=None, resource=None, remediation=None, data_source_fields=None, verification_state=None, handle_status=None, phase=None, sla=None):
-        """Event - a model defined in huaweicloud sdk"""
+        """Event
+
+        The model defined in huaweicloud sdk
+
+        :param version: SA数据对象版本号，数据接入时需携带版本号。版本号由SA服务团队负责更新，数据源只可填写SA给定的版本号。目前版本为1.0.0。
+        :type version: str
+        :param environment: 
+        :type environment: :class:`huaweicloudsdksa.v1.Environment`
+        :param data_source: 
+        :type data_source: :class:`huaweicloudsdksa.v1.DataSource`
+        :param first_observed_time: 首次发现时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区。
+        :type first_observed_time: str
+        :param last_observed_time: 最新发现时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区。
+        :type last_observed_time: str
+        :param create_time: 记录时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区。
+        :type create_time: str
+        :param arrive_time: 数据接收时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区。  是指事件数据被SA侧接收的时间，由SA接收时填写，产品上报数据时不用填写。
+        :type arrive_time: str
+        :param event_id: 事件唯一标识，UUID格式。
+        :type event_id: str
+        :param title: 事件标题，最大255字符。
+        :type title: str
+        :param description: 事件描述信息，最大1024个字符
+        :type description: str
+        :param source_url: 事件URL链接，指向数据源产品中有关当前事件说明的页面。
+        :type source_url: str
+        :param count: 事件发生次数，默认为1，必填。
+        :type count: int
+        :param confidence: 事件的置信度。置信度的定义旨在说明识别的行为或问题的可能性。 取值范围：0-100，0表示置信度为0%，100表示置信度为100%。
+        :type confidence: int
+        :param severity: 
+        :type severity: :class:`huaweicloudsdksa.v1.Severity`
+        :param criticality: 关键性，是指事件涉及的资源的重要性级别。 取值范围：0-100，0表示资源不关键，100表示最关键资源。
+        :type criticality: int
+        :param type: 
+        :type type: :class:`huaweicloudsdksa.v1.Type`
+        :param compliance: 
+        :type compliance: :class:`huaweicloudsdksa.v1.Compliance`
+        :param network: 
+        :type network: :class:`huaweicloudsdksa.v1.Network`
+        :param vulnerability_patch: 
+        :type vulnerability_patch: :class:`huaweicloudsdksa.v1.VulnerabilityPatch`
+        :param malware: 
+        :type malware: :class:`huaweicloudsdksa.v1.Malware`
+        :param threat_intel: 
+        :type threat_intel: :class:`huaweicloudsdksa.v1.ThreatIntel`
+        :param resource: 
+        :type resource: :class:`huaweicloudsdksa.v1.Resource`
+        :param remediation: 
+        :type remediation: :class:`huaweicloudsdksa.v1.Remediation`
+        :param data_source_fields: 数据源自定义信息，最多支持50个key/value对，约束条件： 1、该对象不能包含冗余数据，并且不能与已定义的SSA事件格式字段冲突。 2、字段名称可以包含字母数字字符、空格和以下符号：_ . / &#x3D; + \\ - @。 示例： \&quot;data_source_fields\&quot;: {     \&quot;key1\&quot;: \&quot;value1\&quot;,     \&quot;key2\&quot;, \&quot;value2\&quot;,   }
+        :type data_source_fields: object
+        :param verification_state: 事件验证状态，标识事件的准确性。 Unknown – 未知，默认 True_positive – 确认 False_positive – 误报。
+        :type verification_state: str
+        :param handle_status: 事件处理状态，New/Ignored/Resolved；默认New。
+        :type handle_status: str
+        :param phase: 阶段：Prepartion|Detection and Analysis|Containm，Eradication&amp; Recovery| Post-Incident-Activity。
+        :type phase: str
+        :param sla: 约束闭环时间：单位：天。
+        :type sla: int
+        """
         
         
 
@@ -178,7 +237,7 @@ class Event:
         SA数据对象版本号，数据接入时需携带版本号。版本号由SA服务团队负责更新，数据源只可填写SA给定的版本号。目前版本为1.0.0。
 
         :param version: The version of this Event.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -188,7 +247,7 @@ class Event:
 
 
         :return: The environment of this Event.
-        :rtype: Environment
+        :rtype: :class:`huaweicloudsdksa.v1.Environment`
         """
         return self._environment
 
@@ -198,7 +257,7 @@ class Event:
 
 
         :param environment: The environment of this Event.
-        :type: Environment
+        :type environment: :class:`huaweicloudsdksa.v1.Environment`
         """
         self._environment = environment
 
@@ -208,7 +267,7 @@ class Event:
 
 
         :return: The data_source of this Event.
-        :rtype: DataSource
+        :rtype: :class:`huaweicloudsdksa.v1.DataSource`
         """
         return self._data_source
 
@@ -218,7 +277,7 @@ class Event:
 
 
         :param data_source: The data_source of this Event.
-        :type: DataSource
+        :type data_source: :class:`huaweicloudsdksa.v1.DataSource`
         """
         self._data_source = data_source
 
@@ -240,7 +299,7 @@ class Event:
         首次发现时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区。
 
         :param first_observed_time: The first_observed_time of this Event.
-        :type: str
+        :type first_observed_time: str
         """
         self._first_observed_time = first_observed_time
 
@@ -262,7 +321,7 @@ class Event:
         最新发现时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区。
 
         :param last_observed_time: The last_observed_time of this Event.
-        :type: str
+        :type last_observed_time: str
         """
         self._last_observed_time = last_observed_time
 
@@ -284,7 +343,7 @@ class Event:
         记录时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区。
 
         :param create_time: The create_time of this Event.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -306,7 +365,7 @@ class Event:
         数据接收时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区。  是指事件数据被SA侧接收的时间，由SA接收时填写，产品上报数据时不用填写。
 
         :param arrive_time: The arrive_time of this Event.
-        :type: str
+        :type arrive_time: str
         """
         self._arrive_time = arrive_time
 
@@ -328,7 +387,7 @@ class Event:
         事件唯一标识，UUID格式。
 
         :param event_id: The event_id of this Event.
-        :type: str
+        :type event_id: str
         """
         self._event_id = event_id
 
@@ -350,7 +409,7 @@ class Event:
         事件标题，最大255字符。
 
         :param title: The title of this Event.
-        :type: str
+        :type title: str
         """
         self._title = title
 
@@ -372,7 +431,7 @@ class Event:
         事件描述信息，最大1024个字符
 
         :param description: The description of this Event.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -394,7 +453,7 @@ class Event:
         事件URL链接，指向数据源产品中有关当前事件说明的页面。
 
         :param source_url: The source_url of this Event.
-        :type: str
+        :type source_url: str
         """
         self._source_url = source_url
 
@@ -416,7 +475,7 @@ class Event:
         事件发生次数，默认为1，必填。
 
         :param count: The count of this Event.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -438,7 +497,7 @@ class Event:
         事件的置信度。置信度的定义旨在说明识别的行为或问题的可能性。 取值范围：0-100，0表示置信度为0%，100表示置信度为100%。
 
         :param confidence: The confidence of this Event.
-        :type: int
+        :type confidence: int
         """
         self._confidence = confidence
 
@@ -448,7 +507,7 @@ class Event:
 
 
         :return: The severity of this Event.
-        :rtype: Severity
+        :rtype: :class:`huaweicloudsdksa.v1.Severity`
         """
         return self._severity
 
@@ -458,7 +517,7 @@ class Event:
 
 
         :param severity: The severity of this Event.
-        :type: Severity
+        :type severity: :class:`huaweicloudsdksa.v1.Severity`
         """
         self._severity = severity
 
@@ -480,7 +539,7 @@ class Event:
         关键性，是指事件涉及的资源的重要性级别。 取值范围：0-100，0表示资源不关键，100表示最关键资源。
 
         :param criticality: The criticality of this Event.
-        :type: int
+        :type criticality: int
         """
         self._criticality = criticality
 
@@ -490,7 +549,7 @@ class Event:
 
 
         :return: The type of this Event.
-        :rtype: Type
+        :rtype: :class:`huaweicloudsdksa.v1.Type`
         """
         return self._type
 
@@ -500,7 +559,7 @@ class Event:
 
 
         :param type: The type of this Event.
-        :type: Type
+        :type type: :class:`huaweicloudsdksa.v1.Type`
         """
         self._type = type
 
@@ -510,7 +569,7 @@ class Event:
 
 
         :return: The compliance of this Event.
-        :rtype: Compliance
+        :rtype: :class:`huaweicloudsdksa.v1.Compliance`
         """
         return self._compliance
 
@@ -520,7 +579,7 @@ class Event:
 
 
         :param compliance: The compliance of this Event.
-        :type: Compliance
+        :type compliance: :class:`huaweicloudsdksa.v1.Compliance`
         """
         self._compliance = compliance
 
@@ -530,7 +589,7 @@ class Event:
 
 
         :return: The network of this Event.
-        :rtype: Network
+        :rtype: :class:`huaweicloudsdksa.v1.Network`
         """
         return self._network
 
@@ -540,7 +599,7 @@ class Event:
 
 
         :param network: The network of this Event.
-        :type: Network
+        :type network: :class:`huaweicloudsdksa.v1.Network`
         """
         self._network = network
 
@@ -550,7 +609,7 @@ class Event:
 
 
         :return: The vulnerability_patch of this Event.
-        :rtype: VulnerabilityPatch
+        :rtype: :class:`huaweicloudsdksa.v1.VulnerabilityPatch`
         """
         return self._vulnerability_patch
 
@@ -560,7 +619,7 @@ class Event:
 
 
         :param vulnerability_patch: The vulnerability_patch of this Event.
-        :type: VulnerabilityPatch
+        :type vulnerability_patch: :class:`huaweicloudsdksa.v1.VulnerabilityPatch`
         """
         self._vulnerability_patch = vulnerability_patch
 
@@ -570,7 +629,7 @@ class Event:
 
 
         :return: The malware of this Event.
-        :rtype: Malware
+        :rtype: :class:`huaweicloudsdksa.v1.Malware`
         """
         return self._malware
 
@@ -580,7 +639,7 @@ class Event:
 
 
         :param malware: The malware of this Event.
-        :type: Malware
+        :type malware: :class:`huaweicloudsdksa.v1.Malware`
         """
         self._malware = malware
 
@@ -590,7 +649,7 @@ class Event:
 
 
         :return: The threat_intel of this Event.
-        :rtype: ThreatIntel
+        :rtype: :class:`huaweicloudsdksa.v1.ThreatIntel`
         """
         return self._threat_intel
 
@@ -600,7 +659,7 @@ class Event:
 
 
         :param threat_intel: The threat_intel of this Event.
-        :type: ThreatIntel
+        :type threat_intel: :class:`huaweicloudsdksa.v1.ThreatIntel`
         """
         self._threat_intel = threat_intel
 
@@ -610,7 +669,7 @@ class Event:
 
 
         :return: The resource of this Event.
-        :rtype: Resource
+        :rtype: :class:`huaweicloudsdksa.v1.Resource`
         """
         return self._resource
 
@@ -620,7 +679,7 @@ class Event:
 
 
         :param resource: The resource of this Event.
-        :type: Resource
+        :type resource: :class:`huaweicloudsdksa.v1.Resource`
         """
         self._resource = resource
 
@@ -630,7 +689,7 @@ class Event:
 
 
         :return: The remediation of this Event.
-        :rtype: Remediation
+        :rtype: :class:`huaweicloudsdksa.v1.Remediation`
         """
         return self._remediation
 
@@ -640,7 +699,7 @@ class Event:
 
 
         :param remediation: The remediation of this Event.
-        :type: Remediation
+        :type remediation: :class:`huaweicloudsdksa.v1.Remediation`
         """
         self._remediation = remediation
 
@@ -662,7 +721,7 @@ class Event:
         数据源自定义信息，最多支持50个key/value对，约束条件： 1、该对象不能包含冗余数据，并且不能与已定义的SSA事件格式字段冲突。 2、字段名称可以包含字母数字字符、空格和以下符号：_ . / = + \\ - @。 示例： \"data_source_fields\": {     \"key1\": \"value1\",     \"key2\", \"value2\",   }
 
         :param data_source_fields: The data_source_fields of this Event.
-        :type: object
+        :type data_source_fields: object
         """
         self._data_source_fields = data_source_fields
 
@@ -684,7 +743,7 @@ class Event:
         事件验证状态，标识事件的准确性。 Unknown – 未知，默认 True_positive – 确认 False_positive – 误报。
 
         :param verification_state: The verification_state of this Event.
-        :type: str
+        :type verification_state: str
         """
         self._verification_state = verification_state
 
@@ -706,7 +765,7 @@ class Event:
         事件处理状态，New/Ignored/Resolved；默认New。
 
         :param handle_status: The handle_status of this Event.
-        :type: str
+        :type handle_status: str
         """
         self._handle_status = handle_status
 
@@ -728,7 +787,7 @@ class Event:
         阶段：Prepartion|Detection and Analysis|Containm，Eradication& Recovery| Post-Incident-Activity。
 
         :param phase: The phase of this Event.
-        :type: str
+        :type phase: str
         """
         self._phase = phase
 
@@ -750,7 +809,7 @@ class Event:
         约束闭环时间：单位：天。
 
         :param sla: The sla of this Event.
-        :type: int
+        :type sla: int
         """
         self._sla = sla
 

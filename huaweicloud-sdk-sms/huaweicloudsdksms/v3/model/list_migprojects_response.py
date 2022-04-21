@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListMigprojectsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListMigprojectsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, migprojects=None):
-        """ListMigprojectsResponse - a model defined in huaweicloud sdk"""
+        """ListMigprojectsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 查询到的迁移项目的数量
+        :type count: int
+        :param migprojects: 查询到的迁移项目详情
+        :type migprojects: list[:class:`huaweicloudsdksms.v3.MigprojectsResponseBody`]
+        """
         
         super(ListMigprojectsResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListMigprojectsResponse(SdkResponse):
         查询到的迁移项目的数量
 
         :param count: The count of this ListMigprojectsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -74,7 +81,7 @@ class ListMigprojectsResponse(SdkResponse):
         查询到的迁移项目详情
 
         :return: The migprojects of this ListMigprojectsResponse.
-        :rtype: list[MigprojectsResponseBody]
+        :rtype: list[:class:`huaweicloudsdksms.v3.MigprojectsResponseBody`]
         """
         return self._migprojects
 
@@ -85,7 +92,7 @@ class ListMigprojectsResponse(SdkResponse):
         查询到的迁移项目详情
 
         :param migprojects: The migprojects of this ListMigprojectsResponse.
-        :type: list[MigprojectsResponseBody]
+        :type migprojects: list[:class:`huaweicloudsdksms.v3.MigprojectsResponseBody`]
         """
         self._migprojects = migprojects
 

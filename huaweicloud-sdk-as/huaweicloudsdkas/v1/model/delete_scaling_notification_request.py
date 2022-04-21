@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteScalingNotificationRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteScalingNotificationRequest:
     }
 
     def __init__(self, scaling_group_id=None, topic_urn=None):
-        """DeleteScalingNotificationRequest - a model defined in huaweicloud sdk"""
+        """DeleteScalingNotificationRequest
+
+        The model defined in huaweicloud sdk
+
+        :param scaling_group_id: 伸缩组标识。
+        :type scaling_group_id: str
+        :param topic_urn: SMN服务中Topic的唯一的资源标识。
+        :type topic_urn: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class DeleteScalingNotificationRequest:
         伸缩组标识。
 
         :param scaling_group_id: The scaling_group_id of this DeleteScalingNotificationRequest.
-        :type: str
+        :type scaling_group_id: str
         """
         self._scaling_group_id = scaling_group_id
 
@@ -83,7 +90,7 @@ class DeleteScalingNotificationRequest:
         SMN服务中Topic的唯一的资源标识。
 
         :param topic_urn: The topic_urn of this DeleteScalingNotificationRequest.
-        :type: str
+        :type topic_urn: str
         """
         self._topic_urn = topic_urn
 

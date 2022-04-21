@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneCreateUserRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class KeystoneCreateUserRequest:
     }
 
     def __init__(self, body=None):
-        """KeystoneCreateUserRequest - a model defined in huaweicloud sdk"""
+        """KeystoneCreateUserRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the KeystoneCreateUserRequest
+        :type body: :class:`huaweicloudsdkiam.v3.KeystoneCreateUserRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class KeystoneCreateUserRequest:
 
 
         :return: The body of this KeystoneCreateUserRequest.
-        :rtype: KeystoneCreateUserRequestBody
+        :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCreateUserRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class KeystoneCreateUserRequest:
 
 
         :param body: The body of this KeystoneCreateUserRequest.
-        :type: KeystoneCreateUserRequestBody
+        :type body: :class:`huaweicloudsdkiam.v3.KeystoneCreateUserRequestBody`
         """
         self._body = body
 

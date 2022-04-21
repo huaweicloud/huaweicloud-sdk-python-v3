@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class WatermarkTemplate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -58,7 +57,41 @@ class WatermarkTemplate:
     }
 
     def __init__(self, name=None, id=None, status=None, dx=None, dy=None, position=None, width=None, height=None, create_time=None, image_url=None, type=None, watermark_type=None, image_process=None, timeline_start=None, timeline_duration=None):
-        """WatermarkTemplate - a model defined in huaweicloud sdk"""
+        """WatermarkTemplate
+
+        The model defined in huaweicloud sdk
+
+        :param name: 水印模板名称。
+        :type name: str
+        :param id: 水印模板配置id。
+        :type id: str
+        :param status: 启用状态。  取值为： - 0：停用 - 1：启用
+        :type status: int
+        :param dx: 水印图片相对输出视频的水平偏移量。  默认值是0。
+        :type dx: str
+        :param dy: 水印图片相对输出视频的垂直偏移量。  默认值是0。
+        :type dy: str
+        :param position: 水印的位置。
+        :type position: str
+        :param width: 水印图片宽。
+        :type width: str
+        :param height: 水印图片高。
+        :type height: str
+        :param create_time: 创建时间。
+        :type create_time: str
+        :param image_url: 水印图片下载url。
+        :type image_url: str
+        :param type: 水印图片格式类型。
+        :type type: str
+        :param watermark_type: 水印类型，当前只支持Image（图片水印）。
+        :type watermark_type: str
+        :param image_process: type设置为Image时有效。  目前包括： - Original：只做简单缩放，不做其他处理 - Transparent：图片底色透明 - Grayed：彩色图片变灰
+        :type image_process: str
+        :param timeline_start: 水印开始时间。
+        :type timeline_start: str
+        :param timeline_duration: 水印持续时间。
+        :type timeline_duration: str
+        """
         
         
 
@@ -128,7 +161,7 @@ class WatermarkTemplate:
         水印模板名称。
 
         :param name: The name of this WatermarkTemplate.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -150,7 +183,7 @@ class WatermarkTemplate:
         水印模板配置id。
 
         :param id: The id of this WatermarkTemplate.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -172,7 +205,7 @@ class WatermarkTemplate:
         启用状态。  取值为： - 0：停用 - 1：启用
 
         :param status: The status of this WatermarkTemplate.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -194,7 +227,7 @@ class WatermarkTemplate:
         水印图片相对输出视频的水平偏移量。  默认值是0。
 
         :param dx: The dx of this WatermarkTemplate.
-        :type: str
+        :type dx: str
         """
         self._dx = dx
 
@@ -216,7 +249,7 @@ class WatermarkTemplate:
         水印图片相对输出视频的垂直偏移量。  默认值是0。
 
         :param dy: The dy of this WatermarkTemplate.
-        :type: str
+        :type dy: str
         """
         self._dy = dy
 
@@ -238,7 +271,7 @@ class WatermarkTemplate:
         水印的位置。
 
         :param position: The position of this WatermarkTemplate.
-        :type: str
+        :type position: str
         """
         self._position = position
 
@@ -260,7 +293,7 @@ class WatermarkTemplate:
         水印图片宽。
 
         :param width: The width of this WatermarkTemplate.
-        :type: str
+        :type width: str
         """
         self._width = width
 
@@ -282,7 +315,7 @@ class WatermarkTemplate:
         水印图片高。
 
         :param height: The height of this WatermarkTemplate.
-        :type: str
+        :type height: str
         """
         self._height = height
 
@@ -304,7 +337,7 @@ class WatermarkTemplate:
         创建时间。
 
         :param create_time: The create_time of this WatermarkTemplate.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -326,7 +359,7 @@ class WatermarkTemplate:
         水印图片下载url。
 
         :param image_url: The image_url of this WatermarkTemplate.
-        :type: str
+        :type image_url: str
         """
         self._image_url = image_url
 
@@ -348,7 +381,7 @@ class WatermarkTemplate:
         水印图片格式类型。
 
         :param type: The type of this WatermarkTemplate.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -370,7 +403,7 @@ class WatermarkTemplate:
         水印类型，当前只支持Image（图片水印）。
 
         :param watermark_type: The watermark_type of this WatermarkTemplate.
-        :type: str
+        :type watermark_type: str
         """
         self._watermark_type = watermark_type
 
@@ -392,7 +425,7 @@ class WatermarkTemplate:
         type设置为Image时有效。  目前包括： - Original：只做简单缩放，不做其他处理 - Transparent：图片底色透明 - Grayed：彩色图片变灰
 
         :param image_process: The image_process of this WatermarkTemplate.
-        :type: str
+        :type image_process: str
         """
         self._image_process = image_process
 
@@ -414,7 +447,7 @@ class WatermarkTemplate:
         水印开始时间。
 
         :param timeline_start: The timeline_start of this WatermarkTemplate.
-        :type: str
+        :type timeline_start: str
         """
         self._timeline_start = timeline_start
 
@@ -436,7 +469,7 @@ class WatermarkTemplate:
         水印持续时间。
 
         :param timeline_duration: The timeline_duration of this WatermarkTemplate.
-        :type: str
+        :type timeline_duration: str
         """
         self._timeline_duration = timeline_duration
 

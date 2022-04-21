@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ScalingActivityLogV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -64,7 +63,47 @@ class ScalingActivityLogV2:
     }
 
     def __init__(self, status=None, start_time=None, end_time=None, id=None, instance_removed_list=None, instance_deleted_list=None, instance_added_list=None, instance_failed_list=None, instance_standby_list=None, scaling_value=None, description=None, instance_value=None, desire_value=None, lb_bind_success_list=None, lb_bind_failed_list=None, lb_unbind_success_list=None, lb_unbind_failed_list=None, type=None):
-        """ScalingActivityLogV2 - a model defined in huaweicloud sdk"""
+        """ScalingActivityLogV2
+
+        The model defined in huaweicloud sdk
+
+        :param status: 伸缩活动状态：SUCCESS：成功。FAIL：失败。DOING：伸缩过程中。
+        :type status: str
+        :param start_time: 伸缩活动触发时间，遵循UTC时间。
+        :type start_time: datetime
+        :param end_time: 伸缩活动结束时间，遵循UTC时间。
+        :type end_time: datetime
+        :param id: 伸缩活动日志ID。
+        :type id: str
+        :param instance_removed_list: 完成伸缩活动且只被移出弹性伸缩组的云服务器名称列表，云服务信息之间以逗号分隔。
+        :type instance_removed_list: list[:class:`huaweicloudsdkas.v1.ScalingInstance`]
+        :param instance_deleted_list: 完成伸缩活动且被移出弹性伸缩组并删除的云服务器名称列表，云服务器信息之间以逗号分隔。
+        :type instance_deleted_list: list[:class:`huaweicloudsdkas.v1.ScalingInstance`]
+        :param instance_added_list: 完成伸缩活动且被加入弹性伸缩组的云服务器名称列表，云服务器信息之间以逗号分割。
+        :type instance_added_list: list[:class:`huaweicloudsdkas.v1.ScalingInstance`]
+        :param instance_failed_list: 弹性伸缩组中伸缩活动失败的云服务器列表。
+        :type instance_failed_list: list[:class:`huaweicloudsdkas.v1.ScalingInstance`]
+        :param instance_standby_list: 完成伸缩活动且被转入/移出备用状态的云服务器列表
+        :type instance_standby_list: list[:class:`huaweicloudsdkas.v1.ScalingInstance`]
+        :param scaling_value: 伸缩活动中变化（增加或减少）的云服务器数量。
+        :type scaling_value: str
+        :param description: 伸缩活动的描述信息。
+        :type description: str
+        :param instance_value: 伸缩组当前instance值。
+        :type instance_value: int
+        :param desire_value: 伸缩活动最终desire值。
+        :type desire_value: int
+        :param lb_bind_success_list: 绑定成功的负载均衡器列表。
+        :type lb_bind_success_list: list[:class:`huaweicloudsdkas.v1.ModifyLb`]
+        :param lb_bind_failed_list: 绑定失败的负载均衡器列表。
+        :type lb_bind_failed_list: list[:class:`huaweicloudsdkas.v1.ModifyLb`]
+        :param lb_unbind_success_list: 解绑成功的负载均衡器列表。
+        :type lb_unbind_success_list: list[:class:`huaweicloudsdkas.v1.ModifyLb`]
+        :param lb_unbind_failed_list: 解绑失败的负载均衡器列表。
+        :type lb_unbind_failed_list: list[:class:`huaweicloudsdkas.v1.ModifyLb`]
+        :param type: 伸缩组活动类型
+        :type type: str
+        """
         
         
 
@@ -143,7 +182,7 @@ class ScalingActivityLogV2:
         伸缩活动状态：SUCCESS：成功。FAIL：失败。DOING：伸缩过程中。
 
         :param status: The status of this ScalingActivityLogV2.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -165,7 +204,7 @@ class ScalingActivityLogV2:
         伸缩活动触发时间，遵循UTC时间。
 
         :param start_time: The start_time of this ScalingActivityLogV2.
-        :type: datetime
+        :type start_time: datetime
         """
         self._start_time = start_time
 
@@ -187,7 +226,7 @@ class ScalingActivityLogV2:
         伸缩活动结束时间，遵循UTC时间。
 
         :param end_time: The end_time of this ScalingActivityLogV2.
-        :type: datetime
+        :type end_time: datetime
         """
         self._end_time = end_time
 
@@ -209,7 +248,7 @@ class ScalingActivityLogV2:
         伸缩活动日志ID。
 
         :param id: The id of this ScalingActivityLogV2.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -220,7 +259,7 @@ class ScalingActivityLogV2:
         完成伸缩活动且只被移出弹性伸缩组的云服务器名称列表，云服务信息之间以逗号分隔。
 
         :return: The instance_removed_list of this ScalingActivityLogV2.
-        :rtype: list[ScalingInstance]
+        :rtype: list[:class:`huaweicloudsdkas.v1.ScalingInstance`]
         """
         return self._instance_removed_list
 
@@ -231,7 +270,7 @@ class ScalingActivityLogV2:
         完成伸缩活动且只被移出弹性伸缩组的云服务器名称列表，云服务信息之间以逗号分隔。
 
         :param instance_removed_list: The instance_removed_list of this ScalingActivityLogV2.
-        :type: list[ScalingInstance]
+        :type instance_removed_list: list[:class:`huaweicloudsdkas.v1.ScalingInstance`]
         """
         self._instance_removed_list = instance_removed_list
 
@@ -242,7 +281,7 @@ class ScalingActivityLogV2:
         完成伸缩活动且被移出弹性伸缩组并删除的云服务器名称列表，云服务器信息之间以逗号分隔。
 
         :return: The instance_deleted_list of this ScalingActivityLogV2.
-        :rtype: list[ScalingInstance]
+        :rtype: list[:class:`huaweicloudsdkas.v1.ScalingInstance`]
         """
         return self._instance_deleted_list
 
@@ -253,7 +292,7 @@ class ScalingActivityLogV2:
         完成伸缩活动且被移出弹性伸缩组并删除的云服务器名称列表，云服务器信息之间以逗号分隔。
 
         :param instance_deleted_list: The instance_deleted_list of this ScalingActivityLogV2.
-        :type: list[ScalingInstance]
+        :type instance_deleted_list: list[:class:`huaweicloudsdkas.v1.ScalingInstance`]
         """
         self._instance_deleted_list = instance_deleted_list
 
@@ -264,7 +303,7 @@ class ScalingActivityLogV2:
         完成伸缩活动且被加入弹性伸缩组的云服务器名称列表，云服务器信息之间以逗号分割。
 
         :return: The instance_added_list of this ScalingActivityLogV2.
-        :rtype: list[ScalingInstance]
+        :rtype: list[:class:`huaweicloudsdkas.v1.ScalingInstance`]
         """
         return self._instance_added_list
 
@@ -275,7 +314,7 @@ class ScalingActivityLogV2:
         完成伸缩活动且被加入弹性伸缩组的云服务器名称列表，云服务器信息之间以逗号分割。
 
         :param instance_added_list: The instance_added_list of this ScalingActivityLogV2.
-        :type: list[ScalingInstance]
+        :type instance_added_list: list[:class:`huaweicloudsdkas.v1.ScalingInstance`]
         """
         self._instance_added_list = instance_added_list
 
@@ -286,7 +325,7 @@ class ScalingActivityLogV2:
         弹性伸缩组中伸缩活动失败的云服务器列表。
 
         :return: The instance_failed_list of this ScalingActivityLogV2.
-        :rtype: list[ScalingInstance]
+        :rtype: list[:class:`huaweicloudsdkas.v1.ScalingInstance`]
         """
         return self._instance_failed_list
 
@@ -297,7 +336,7 @@ class ScalingActivityLogV2:
         弹性伸缩组中伸缩活动失败的云服务器列表。
 
         :param instance_failed_list: The instance_failed_list of this ScalingActivityLogV2.
-        :type: list[ScalingInstance]
+        :type instance_failed_list: list[:class:`huaweicloudsdkas.v1.ScalingInstance`]
         """
         self._instance_failed_list = instance_failed_list
 
@@ -308,7 +347,7 @@ class ScalingActivityLogV2:
         完成伸缩活动且被转入/移出备用状态的云服务器列表
 
         :return: The instance_standby_list of this ScalingActivityLogV2.
-        :rtype: list[ScalingInstance]
+        :rtype: list[:class:`huaweicloudsdkas.v1.ScalingInstance`]
         """
         return self._instance_standby_list
 
@@ -319,7 +358,7 @@ class ScalingActivityLogV2:
         完成伸缩活动且被转入/移出备用状态的云服务器列表
 
         :param instance_standby_list: The instance_standby_list of this ScalingActivityLogV2.
-        :type: list[ScalingInstance]
+        :type instance_standby_list: list[:class:`huaweicloudsdkas.v1.ScalingInstance`]
         """
         self._instance_standby_list = instance_standby_list
 
@@ -341,7 +380,7 @@ class ScalingActivityLogV2:
         伸缩活动中变化（增加或减少）的云服务器数量。
 
         :param scaling_value: The scaling_value of this ScalingActivityLogV2.
-        :type: str
+        :type scaling_value: str
         """
         self._scaling_value = scaling_value
 
@@ -363,7 +402,7 @@ class ScalingActivityLogV2:
         伸缩活动的描述信息。
 
         :param description: The description of this ScalingActivityLogV2.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -385,7 +424,7 @@ class ScalingActivityLogV2:
         伸缩组当前instance值。
 
         :param instance_value: The instance_value of this ScalingActivityLogV2.
-        :type: int
+        :type instance_value: int
         """
         self._instance_value = instance_value
 
@@ -407,7 +446,7 @@ class ScalingActivityLogV2:
         伸缩活动最终desire值。
 
         :param desire_value: The desire_value of this ScalingActivityLogV2.
-        :type: int
+        :type desire_value: int
         """
         self._desire_value = desire_value
 
@@ -418,7 +457,7 @@ class ScalingActivityLogV2:
         绑定成功的负载均衡器列表。
 
         :return: The lb_bind_success_list of this ScalingActivityLogV2.
-        :rtype: list[ModifyLb]
+        :rtype: list[:class:`huaweicloudsdkas.v1.ModifyLb`]
         """
         return self._lb_bind_success_list
 
@@ -429,7 +468,7 @@ class ScalingActivityLogV2:
         绑定成功的负载均衡器列表。
 
         :param lb_bind_success_list: The lb_bind_success_list of this ScalingActivityLogV2.
-        :type: list[ModifyLb]
+        :type lb_bind_success_list: list[:class:`huaweicloudsdkas.v1.ModifyLb`]
         """
         self._lb_bind_success_list = lb_bind_success_list
 
@@ -440,7 +479,7 @@ class ScalingActivityLogV2:
         绑定失败的负载均衡器列表。
 
         :return: The lb_bind_failed_list of this ScalingActivityLogV2.
-        :rtype: list[ModifyLb]
+        :rtype: list[:class:`huaweicloudsdkas.v1.ModifyLb`]
         """
         return self._lb_bind_failed_list
 
@@ -451,7 +490,7 @@ class ScalingActivityLogV2:
         绑定失败的负载均衡器列表。
 
         :param lb_bind_failed_list: The lb_bind_failed_list of this ScalingActivityLogV2.
-        :type: list[ModifyLb]
+        :type lb_bind_failed_list: list[:class:`huaweicloudsdkas.v1.ModifyLb`]
         """
         self._lb_bind_failed_list = lb_bind_failed_list
 
@@ -462,7 +501,7 @@ class ScalingActivityLogV2:
         解绑成功的负载均衡器列表。
 
         :return: The lb_unbind_success_list of this ScalingActivityLogV2.
-        :rtype: list[ModifyLb]
+        :rtype: list[:class:`huaweicloudsdkas.v1.ModifyLb`]
         """
         return self._lb_unbind_success_list
 
@@ -473,7 +512,7 @@ class ScalingActivityLogV2:
         解绑成功的负载均衡器列表。
 
         :param lb_unbind_success_list: The lb_unbind_success_list of this ScalingActivityLogV2.
-        :type: list[ModifyLb]
+        :type lb_unbind_success_list: list[:class:`huaweicloudsdkas.v1.ModifyLb`]
         """
         self._lb_unbind_success_list = lb_unbind_success_list
 
@@ -484,7 +523,7 @@ class ScalingActivityLogV2:
         解绑失败的负载均衡器列表。
 
         :return: The lb_unbind_failed_list of this ScalingActivityLogV2.
-        :rtype: list[ModifyLb]
+        :rtype: list[:class:`huaweicloudsdkas.v1.ModifyLb`]
         """
         return self._lb_unbind_failed_list
 
@@ -495,7 +534,7 @@ class ScalingActivityLogV2:
         解绑失败的负载均衡器列表。
 
         :param lb_unbind_failed_list: The lb_unbind_failed_list of this ScalingActivityLogV2.
-        :type: list[ModifyLb]
+        :type lb_unbind_failed_list: list[:class:`huaweicloudsdkas.v1.ModifyLb`]
         """
         self._lb_unbind_failed_list = lb_unbind_failed_list
 
@@ -517,7 +556,7 @@ class ScalingActivityLogV2:
         伸缩组活动类型
 
         :param type: The type of this ScalingActivityLogV2.
-        :type: str
+        :type type: str
         """
         self._type = type
 

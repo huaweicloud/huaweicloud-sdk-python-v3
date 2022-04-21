@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Annotations:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class Annotations:
     }
 
     def __init__(self, message=None, log_info=None, current_value=None, old_annotations=None):
-        """Annotations - a model defined in huaweicloud sdk"""
+        """Annotations
+
+        The model defined in huaweicloud sdk
+
+        :param message: 告警列表详情
+        :type message: str
+        :param log_info: 日志组/流id,名称
+        :type log_info: str
+        :param current_value: 当前值
+        :type current_value: str
+        :param old_annotations: (sql/关键词)告警详情原始数据
+        :type old_annotations: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class Annotations:
         告警列表详情
 
         :param message: The message of this Annotations.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -91,7 +102,7 @@ class Annotations:
         日志组/流id,名称
 
         :param log_info: The log_info of this Annotations.
-        :type: str
+        :type log_info: str
         """
         self._log_info = log_info
 
@@ -113,7 +124,7 @@ class Annotations:
         当前值
 
         :param current_value: The current_value of this Annotations.
-        :type: str
+        :type current_value: str
         """
         self._current_value = current_value
 
@@ -135,7 +146,7 @@ class Annotations:
         (sql/关键词)告警详情原始数据
 
         :param old_annotations: The old_annotations of this Annotations.
-        :type: str
+        :type old_annotations: str
         """
         self._old_annotations = old_annotations
 

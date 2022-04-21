@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class HttpCode:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class HttpCode:
     }
 
     def __init__(self, code=None, count=None, proportion=None):
-        """HttpCode - a model defined in huaweicloud sdk"""
+        """HttpCode
+
+        The model defined in huaweicloud sdk
+
+        :param code: 状态码
+        :type code: int
+        :param count: 状态码出现次数
+        :type count: int
+        :param proportion: 状态码在对应时间点中的占比，保留4位小数。 
+        :type proportion: float
+        """
         
         
 
@@ -68,7 +77,7 @@ class HttpCode:
         状态码
 
         :param code: The code of this HttpCode.
-        :type: int
+        :type code: int
         """
         self._code = code
 
@@ -90,7 +99,7 @@ class HttpCode:
         状态码出现次数
 
         :param count: The count of this HttpCode.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -112,7 +121,7 @@ class HttpCode:
         状态码在对应时间点中的占比，保留4位小数。 
 
         :param proportion: The proportion of this HttpCode.
-        :type: float
+        :type proportion: float
         """
         self._proportion = proportion
 

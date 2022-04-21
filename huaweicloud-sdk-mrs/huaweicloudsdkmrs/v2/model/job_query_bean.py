@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class JobQueryBean:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -62,7 +61,45 @@ class JobQueryBean:
     }
 
     def __init__(self, job_id=None, user=None, job_name=None, job_result=None, job_state=None, job_progress=None, job_type=None, started_time=None, submitted_time=None, finished_time=None, elapsed_time=None, arguments=None, launcher_id=None, properties=None, app_id=None, tracking_url=None, queue=None):
-        """JobQueryBean - a model defined in huaweicloud sdk"""
+        """JobQueryBean
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 作业ID。
+        :type job_id: str
+        :param user: 提交作业的用户名称。
+        :type user: str
+        :param job_name: 作业名称。
+        :type job_name: str
+        :param job_result: 作业最终结果。  - FAILED：执行失败的作业 - KILLED：执行中被手动终止的作业。 - UNDEFINED：正在执行的作业。 - SUCCEEDED：执行成功的作业。
+        :type job_result: str
+        :param job_state: 作业执行状态。  - FAILED：失败 - KILLED：已终止 - NEW：已创建 - NEW_SAVING：已创建保存中 - SUBMITTED：已提交 - ACCEPTED：已接受 - RUNNING：运行中 - FINISHED：已完成
+        :type job_state: str
+        :param job_progress: 作业执行进度。
+        :type job_progress: float
+        :param job_type: 作业类型。  - MapReduce - SparkSubmit：SparkPython类型的作业在查询时作业类型请选择SparkSubmit。 - HiveScript - HiveSql - DistCp，导入、导出数据。 - SparkScript - SparkSql - Flink
+        :type job_type: str
+        :param started_time: 作业开始执行时间。单位：毫秒。
+        :type started_time: int
+        :param submitted_time: 作业提交时间。单位：毫秒。
+        :type submitted_time: int
+        :param finished_time: 作业完成时间。单位：毫秒。
+        :type finished_time: int
+        :param elapsed_time: 作业执行时长。单位：毫秒。
+        :type elapsed_time: int
+        :param arguments: 运行参数。
+        :type arguments: str
+        :param launcher_id: 实际作业编号。
+        :type launcher_id: str
+        :param properties: 配置参数，用于传-d参数。最多为2048字符，不能包含&gt;&lt;|&#39;&#x60;&amp;!\\特殊字符，可为空。
+        :type properties: str
+        :param app_id: 实际作业编号。
+        :type app_id: str
+        :param tracking_url: 日志链接地址。当前仅SparkSubmit作业支持该参数。  该参数基于集群的EIP访问集群中的YARN WebUI页面，用户如果在VPC界面解绑EIP，MRS服务侧数据会因为未更新导致该参数引用旧EIP导致访问失败，可通过对集群重新进行EIP的绑定来修复该问题。
+        :type tracking_url: str
+        :param queue: 作业的资源对列类型。
+        :type queue: str
+        """
         
         
 
@@ -138,7 +175,7 @@ class JobQueryBean:
         作业ID。
 
         :param job_id: The job_id of this JobQueryBean.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -160,7 +197,7 @@ class JobQueryBean:
         提交作业的用户名称。
 
         :param user: The user of this JobQueryBean.
-        :type: str
+        :type user: str
         """
         self._user = user
 
@@ -182,7 +219,7 @@ class JobQueryBean:
         作业名称。
 
         :param job_name: The job_name of this JobQueryBean.
-        :type: str
+        :type job_name: str
         """
         self._job_name = job_name
 
@@ -204,7 +241,7 @@ class JobQueryBean:
         作业最终结果。  - FAILED：执行失败的作业 - KILLED：执行中被手动终止的作业。 - UNDEFINED：正在执行的作业。 - SUCCEEDED：执行成功的作业。
 
         :param job_result: The job_result of this JobQueryBean.
-        :type: str
+        :type job_result: str
         """
         self._job_result = job_result
 
@@ -226,7 +263,7 @@ class JobQueryBean:
         作业执行状态。  - FAILED：失败 - KILLED：已终止 - NEW：已创建 - NEW_SAVING：已创建保存中 - SUBMITTED：已提交 - ACCEPTED：已接受 - RUNNING：运行中 - FINISHED：已完成
 
         :param job_state: The job_state of this JobQueryBean.
-        :type: str
+        :type job_state: str
         """
         self._job_state = job_state
 
@@ -248,7 +285,7 @@ class JobQueryBean:
         作业执行进度。
 
         :param job_progress: The job_progress of this JobQueryBean.
-        :type: float
+        :type job_progress: float
         """
         self._job_progress = job_progress
 
@@ -270,7 +307,7 @@ class JobQueryBean:
         作业类型。  - MapReduce - SparkSubmit：SparkPython类型的作业在查询时作业类型请选择SparkSubmit。 - HiveScript - HiveSql - DistCp，导入、导出数据。 - SparkScript - SparkSql - Flink
 
         :param job_type: The job_type of this JobQueryBean.
-        :type: str
+        :type job_type: str
         """
         self._job_type = job_type
 
@@ -292,7 +329,7 @@ class JobQueryBean:
         作业开始执行时间。单位：毫秒。
 
         :param started_time: The started_time of this JobQueryBean.
-        :type: int
+        :type started_time: int
         """
         self._started_time = started_time
 
@@ -314,7 +351,7 @@ class JobQueryBean:
         作业提交时间。单位：毫秒。
 
         :param submitted_time: The submitted_time of this JobQueryBean.
-        :type: int
+        :type submitted_time: int
         """
         self._submitted_time = submitted_time
 
@@ -336,7 +373,7 @@ class JobQueryBean:
         作业完成时间。单位：毫秒。
 
         :param finished_time: The finished_time of this JobQueryBean.
-        :type: int
+        :type finished_time: int
         """
         self._finished_time = finished_time
 
@@ -358,7 +395,7 @@ class JobQueryBean:
         作业执行时长。单位：毫秒。
 
         :param elapsed_time: The elapsed_time of this JobQueryBean.
-        :type: int
+        :type elapsed_time: int
         """
         self._elapsed_time = elapsed_time
 
@@ -380,7 +417,7 @@ class JobQueryBean:
         运行参数。
 
         :param arguments: The arguments of this JobQueryBean.
-        :type: str
+        :type arguments: str
         """
         self._arguments = arguments
 
@@ -402,7 +439,7 @@ class JobQueryBean:
         实际作业编号。
 
         :param launcher_id: The launcher_id of this JobQueryBean.
-        :type: str
+        :type launcher_id: str
         """
         self._launcher_id = launcher_id
 
@@ -424,7 +461,7 @@ class JobQueryBean:
         配置参数，用于传-d参数。最多为2048字符，不能包含><|'`&!\\特殊字符，可为空。
 
         :param properties: The properties of this JobQueryBean.
-        :type: str
+        :type properties: str
         """
         self._properties = properties
 
@@ -446,7 +483,7 @@ class JobQueryBean:
         实际作业编号。
 
         :param app_id: The app_id of this JobQueryBean.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -468,7 +505,7 @@ class JobQueryBean:
         日志链接地址。当前仅SparkSubmit作业支持该参数。  该参数基于集群的EIP访问集群中的YARN WebUI页面，用户如果在VPC界面解绑EIP，MRS服务侧数据会因为未更新导致该参数引用旧EIP导致访问失败，可通过对集群重新进行EIP的绑定来修复该问题。
 
         :param tracking_url: The tracking_url of this JobQueryBean.
-        :type: str
+        :type tracking_url: str
         """
         self._tracking_url = tracking_url
 
@@ -490,7 +527,7 @@ class JobQueryBean:
         作业的资源对列类型。
 
         :param queue: The queue of this JobQueryBean.
-        :type: str
+        :type queue: str
         """
         self._queue = queue
 

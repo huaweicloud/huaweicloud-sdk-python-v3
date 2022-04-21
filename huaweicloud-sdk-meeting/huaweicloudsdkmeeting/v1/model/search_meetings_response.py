@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SearchMeetingsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class SearchMeetingsResponse(SdkResponse):
     }
 
     def __init__(self, offset=None, limit=None, count=None, data=None):
-        """SearchMeetingsResponse - a model defined in huaweicloud sdk"""
+        """SearchMeetingsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param offset: 第几条。
+        :type offset: int
+        :param limit: 每页的记录数。
+        :type limit: int
+        :param count: 总记录数。
+        :type count: int
+        :param data: 会议信息列表。
+        :type data: list[:class:`huaweicloudsdkmeeting.v1.ConferenceInfo`]
+        """
         
         super(SearchMeetingsResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class SearchMeetingsResponse(SdkResponse):
         第几条。
 
         :param offset: The offset of this SearchMeetingsResponse.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -95,7 +106,7 @@ class SearchMeetingsResponse(SdkResponse):
         每页的记录数。
 
         :param limit: The limit of this SearchMeetingsResponse.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -117,7 +128,7 @@ class SearchMeetingsResponse(SdkResponse):
         总记录数。
 
         :param count: The count of this SearchMeetingsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -128,7 +139,7 @@ class SearchMeetingsResponse(SdkResponse):
         会议信息列表。
 
         :return: The data of this SearchMeetingsResponse.
-        :rtype: list[ConferenceInfo]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.ConferenceInfo`]
         """
         return self._data
 
@@ -139,7 +150,7 @@ class SearchMeetingsResponse(SdkResponse):
         会议信息列表。
 
         :param data: The data of this SearchMeetingsResponse.
-        :type: list[ConferenceInfo]
+        :type data: list[:class:`huaweicloudsdkmeeting.v1.ConferenceInfo`]
         """
         self._data = data
 

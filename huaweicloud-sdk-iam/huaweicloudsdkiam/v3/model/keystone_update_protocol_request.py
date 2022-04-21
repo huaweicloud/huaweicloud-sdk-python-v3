@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneUpdateProtocolRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class KeystoneUpdateProtocolRequest:
     }
 
     def __init__(self, idp_id=None, protocol_id=None, body=None):
-        """KeystoneUpdateProtocolRequest - a model defined in huaweicloud sdk"""
+        """KeystoneUpdateProtocolRequest
+
+        The model defined in huaweicloud sdk
+
+        :param idp_id: 身份提供商ID。
+        :type idp_id: str
+        :param protocol_id: 待更新的协议ID。
+        :type protocol_id: str
+        :param body: Body of the KeystoneUpdateProtocolRequest
+        :type body: :class:`huaweicloudsdkiam.v3.KeystoneUpdateProtocolRequestBody`
+        """
         
         
 
@@ -66,7 +75,7 @@ class KeystoneUpdateProtocolRequest:
         身份提供商ID。
 
         :param idp_id: The idp_id of this KeystoneUpdateProtocolRequest.
-        :type: str
+        :type idp_id: str
         """
         self._idp_id = idp_id
 
@@ -88,7 +97,7 @@ class KeystoneUpdateProtocolRequest:
         待更新的协议ID。
 
         :param protocol_id: The protocol_id of this KeystoneUpdateProtocolRequest.
-        :type: str
+        :type protocol_id: str
         """
         self._protocol_id = protocol_id
 
@@ -98,7 +107,7 @@ class KeystoneUpdateProtocolRequest:
 
 
         :return: The body of this KeystoneUpdateProtocolRequest.
-        :rtype: KeystoneUpdateProtocolRequestBody
+        :rtype: :class:`huaweicloudsdkiam.v3.KeystoneUpdateProtocolRequestBody`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class KeystoneUpdateProtocolRequest:
 
 
         :param body: The body of this KeystoneUpdateProtocolRequest.
-        :type: KeystoneUpdateProtocolRequestBody
+        :type body: :class:`huaweicloudsdkiam.v3.KeystoneUpdateProtocolRequestBody`
         """
         self._body = body
 

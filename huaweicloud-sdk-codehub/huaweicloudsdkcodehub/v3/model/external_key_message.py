@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExternalKeyMessage:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ExternalKeyMessage:
     }
 
     def __init__(self, external_key_message=None, external_service=None):
-        """ExternalKeyMessage - a model defined in huaweicloud sdk"""
+        """ExternalKeyMessage
+
+        The model defined in huaweicloud sdk
+
+        :param external_key_message: 第三方保存在codehub的关键信息
+        :type external_key_message: str
+        :param external_service: 外部服务名称
+        :type external_service: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class ExternalKeyMessage:
         第三方保存在codehub的关键信息
 
         :param external_key_message: The external_key_message of this ExternalKeyMessage.
-        :type: str
+        :type external_key_message: str
         """
         self._external_key_message = external_key_message
 
@@ -85,7 +92,7 @@ class ExternalKeyMessage:
         外部服务名称
 
         :param external_service: The external_service of this ExternalKeyMessage.
-        :type: str
+        :type external_service: str
         """
         self._external_service = external_service
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDatabasesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListDatabasesResponse(SdkResponse):
     }
 
     def __init__(self, databases=None, total_count=None):
-        """ListDatabasesResponse - a model defined in huaweicloud sdk"""
+        """ListDatabasesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param databases: 数据库信息。
+        :type databases: list[:class:`huaweicloudsdkrds.v3.DatabaseForCreation`]
+        :param total_count: 总数。
+        :type total_count: int
+        """
         
         super(ListDatabasesResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListDatabasesResponse(SdkResponse):
         数据库信息。
 
         :return: The databases of this ListDatabasesResponse.
-        :rtype: list[DatabaseForCreation]
+        :rtype: list[:class:`huaweicloudsdkrds.v3.DatabaseForCreation`]
         """
         return self._databases
 
@@ -63,7 +70,7 @@ class ListDatabasesResponse(SdkResponse):
         数据库信息。
 
         :param databases: The databases of this ListDatabasesResponse.
-        :type: list[DatabaseForCreation]
+        :type databases: list[:class:`huaweicloudsdkrds.v3.DatabaseForCreation`]
         """
         self._databases = databases
 
@@ -85,7 +92,7 @@ class ListDatabasesResponse(SdkResponse):
         总数。
 
         :param total_count: The total_count of this ListDatabasesResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 

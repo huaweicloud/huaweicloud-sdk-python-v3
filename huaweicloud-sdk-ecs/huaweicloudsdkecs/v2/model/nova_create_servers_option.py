@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NovaCreateServersOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -64,7 +63,47 @@ class NovaCreateServersOption:
     }
 
     def __init__(self, auto_terminate_time=None, image_ref=None, flavor_ref=None, name=None, metadata=None, admin_pass=None, block_device_mapping_v2=None, config_drive=None, security_groups=None, networks=None, key_name=None, user_data=None, availability_zone=None, return_reservation_id=None, min_count=None, max_count=None, os_dc_fdisk_config=None, description=None):
-        """NovaCreateServersOption - a model defined in huaweicloud sdk"""
+        """NovaCreateServersOption
+
+        The model defined in huaweicloud sdk
+
+        :param auto_terminate_time: 弹性云服务器自动释放时间。  时间格式例如：2020-01-19T03:30:52Z
+        :type auto_terminate_time: str
+        :param image_ref: 镜像ID或者镜像资源的URL。  - 镜像ID示例：3b8d6fef-af77-42ab-b8b7-5a7f0f0af8f2 - 镜像URL示例：http://glance.openstack.example.com/images/3b8d6fef-af77-42ab-b8b7-5a7f0f0af8f2 - 指定卷作为系统卷创弹性云服务器时，不需填写该参数；非卷创建弹性云服务器时需填写有效的UUID参数，否则API将返回400错误。  &gt; 说明： &gt; - 对于部分规格的弹性云服务器，不能支持公有云平台提供的所有公共镜像。具体规格的镜像支持列表，请登录管理控制台，以“创建弹性云服务器”页面系统自动过滤的镜像信息为准，并在镜像服务页面查询镜像ID。 &gt; - 如果创建失败，请尝试修改参数配置。
+        :type image_ref: str
+        :param flavor_ref: 规格ID或URL。
+        :type flavor_ref: str
+        :param name: 弹性云服务器名称，长度大于0小于256字节。  &gt; 说明： &gt;  &gt; 云服务器内部主机名(hostname)命名规则遵循 [RFC 952](https://tools.ietf.org/html/rfc952)和[RFC 1123](https://tools.ietf.org/html/rfc1123)命名规范，建议使用a-zA-z或0-9以及中划线\&quot;-\&quot;组成的名称命名，\&quot;_\&quot;将在弹性云服务器内部默认转化为\&quot;-\&quot;。
+        :type name: str
+        :param metadata: 用户自定义字段键值对。  &gt; - key的长度大于0小于256字节 &gt; - value的长度大于等于0小于256字节   系统预留字段  1. admin_pass：弹性云服务器密码        Windows弹性云服务器Administrator用户的密码。     &gt; 说明：     &gt; 创建密码方式鉴权的Windows弹性云服务器时为必选字段。
+        :type metadata: dict(str, str)
+        :param admin_pass: 如果需要使用密码方式登录云服务器，可使用adminPass字段指定云服务器管理员帐户初始登录密码。其中，Linux管理员帐户为root，Windows管理员帐户为Administrator。
+        :type admin_pass: str
+        :param block_device_mapping_v2: 扩展属性，指定弹性云服务器存储设备的v2接口。是存储资源的新版本接口，指定卷场景不能批创弹性云服务器。  裸金属服务器场景不支持。
+        :type block_device_mapping_v2: list[:class:`huaweicloudsdkecs.v2.NovaServerBlockDeviceMapping`]
+        :param config_drive: 扩展属性，开启后在弹性云服务器创建时挂载config_drive向弹性云服务器内部传递信息。  当前不支持该功能。
+        :type config_drive: str
+        :param security_groups: 扩展属性，指定弹性云服务器的安全组，默认为default。  指定network创建弹性云服务器时该字段有效。对于已存在端口，安全组请求无效。
+        :type security_groups: list[:class:`huaweicloudsdkecs.v2.NovaServerSecurityGroup`]
+        :param networks: 扩展属性，指定弹性云服务器的网卡信息。有多个租户网络时必须指定。 
+        :type networks: list[:class:`huaweicloudsdkecs.v2.NovaServerNetwork`]
+        :param key_name: 扩展属性，指定keypair的名称。
+        :type key_name: str
+        :param user_data: 扩展属性，字符串长度小于65535，且必须是base64加密的。
+        :type user_data: str
+        :param availability_zone: 扩展属性，指定弹性云服务器所在的AZ。  创建弹性云服务器时需要填入该参数。
+        :type availability_zone: str
+        :param return_reservation_id: 扩展属性，是否支持返回批量创建弹性云服务器的reservation_id。通过返回的reservation_id，可以过滤查询到本次创建的弹性云服务器。  - true，返回reservation_id。 - false，返回弹性云服务器信息。  &gt; 说明： &gt;  &gt; 批量创建弹性云服务器时，支持使用该字段。
+        :type return_reservation_id: bool
+        :param min_count: 扩展属性，表示创建弹性云服务器最小数量。  默认值为1。  &gt; 说明： &gt;  &gt; 指定镜像创建弹性云服务器时，支持使用该字段。
+        :type min_count: int
+        :param max_count: 表示创建弹性云服务器最大数量。  默认值与min_count的取值一致。  约束：  参数max_count的取值必须大于参数min_count的取值。  当min_count、max_count同时设置时，创弹性云服务器的数量取决于服务器的资源情况。根据资源情况，在min_count至max_count的取值范围内创建最大数量的弹性云服务器。  - 说明： -  - 指定镜像创建弹性云服务器时，支持使用该字段。
+        :type max_count: int
+        :param os_dc_fdisk_config: diskConfig的方式，取值为AUTO、MANUAL。  - MANUAL，镜像空间不会扩展。 - AUTO，系统盘镜像空间会自动扩展为与flavor大小一致。  当前不支持该功能。
+        :type os_dc_fdisk_config: str
+        :param description: 扩展属性，表示弹性云服务器描述信息，默认为空字符串。  - 长度最多允许85个字符。 - 不能包含“&lt;” 和 “&gt;”等特殊符号。  &gt; 说明： &gt;  &gt; - V2接口不支持该字段。 &gt; - V2.1接口支持该字段，此时，需在请求Header中增加一组Key-Value值。其中，Key固定为“X-OpenStack-Nova-API-Version” ，Value为微版本号，当Value的值为2.19时，支持使用该字段。
+        :type description: str
+        """
         
         
 
@@ -140,7 +179,7 @@ class NovaCreateServersOption:
         弹性云服务器自动释放时间。  时间格式例如：2020-01-19T03:30:52Z
 
         :param auto_terminate_time: The auto_terminate_time of this NovaCreateServersOption.
-        :type: str
+        :type auto_terminate_time: str
         """
         self._auto_terminate_time = auto_terminate_time
 
@@ -162,7 +201,7 @@ class NovaCreateServersOption:
         镜像ID或者镜像资源的URL。  - 镜像ID示例：3b8d6fef-af77-42ab-b8b7-5a7f0f0af8f2 - 镜像URL示例：http://glance.openstack.example.com/images/3b8d6fef-af77-42ab-b8b7-5a7f0f0af8f2 - 指定卷作为系统卷创弹性云服务器时，不需填写该参数；非卷创建弹性云服务器时需填写有效的UUID参数，否则API将返回400错误。  > 说明： > - 对于部分规格的弹性云服务器，不能支持公有云平台提供的所有公共镜像。具体规格的镜像支持列表，请登录管理控制台，以“创建弹性云服务器”页面系统自动过滤的镜像信息为准，并在镜像服务页面查询镜像ID。 > - 如果创建失败，请尝试修改参数配置。
 
         :param image_ref: The image_ref of this NovaCreateServersOption.
-        :type: str
+        :type image_ref: str
         """
         self._image_ref = image_ref
 
@@ -184,7 +223,7 @@ class NovaCreateServersOption:
         规格ID或URL。
 
         :param flavor_ref: The flavor_ref of this NovaCreateServersOption.
-        :type: str
+        :type flavor_ref: str
         """
         self._flavor_ref = flavor_ref
 
@@ -206,7 +245,7 @@ class NovaCreateServersOption:
         弹性云服务器名称，长度大于0小于256字节。  > 说明： >  > 云服务器内部主机名(hostname)命名规则遵循 [RFC 952](https://tools.ietf.org/html/rfc952)和[RFC 1123](https://tools.ietf.org/html/rfc1123)命名规范，建议使用a-zA-z或0-9以及中划线\"-\"组成的名称命名，\"_\"将在弹性云服务器内部默认转化为\"-\"。
 
         :param name: The name of this NovaCreateServersOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -228,7 +267,7 @@ class NovaCreateServersOption:
         用户自定义字段键值对。  > - key的长度大于0小于256字节 > - value的长度大于等于0小于256字节   系统预留字段  1. admin_pass：弹性云服务器密码        Windows弹性云服务器Administrator用户的密码。     > 说明：     > 创建密码方式鉴权的Windows弹性云服务器时为必选字段。
 
         :param metadata: The metadata of this NovaCreateServersOption.
-        :type: dict(str, str)
+        :type metadata: dict(str, str)
         """
         self._metadata = metadata
 
@@ -250,7 +289,7 @@ class NovaCreateServersOption:
         如果需要使用密码方式登录云服务器，可使用adminPass字段指定云服务器管理员帐户初始登录密码。其中，Linux管理员帐户为root，Windows管理员帐户为Administrator。
 
         :param admin_pass: The admin_pass of this NovaCreateServersOption.
-        :type: str
+        :type admin_pass: str
         """
         self._admin_pass = admin_pass
 
@@ -261,7 +300,7 @@ class NovaCreateServersOption:
         扩展属性，指定弹性云服务器存储设备的v2接口。是存储资源的新版本接口，指定卷场景不能批创弹性云服务器。  裸金属服务器场景不支持。
 
         :return: The block_device_mapping_v2 of this NovaCreateServersOption.
-        :rtype: list[NovaServerBlockDeviceMapping]
+        :rtype: list[:class:`huaweicloudsdkecs.v2.NovaServerBlockDeviceMapping`]
         """
         return self._block_device_mapping_v2
 
@@ -272,7 +311,7 @@ class NovaCreateServersOption:
         扩展属性，指定弹性云服务器存储设备的v2接口。是存储资源的新版本接口，指定卷场景不能批创弹性云服务器。  裸金属服务器场景不支持。
 
         :param block_device_mapping_v2: The block_device_mapping_v2 of this NovaCreateServersOption.
-        :type: list[NovaServerBlockDeviceMapping]
+        :type block_device_mapping_v2: list[:class:`huaweicloudsdkecs.v2.NovaServerBlockDeviceMapping`]
         """
         self._block_device_mapping_v2 = block_device_mapping_v2
 
@@ -294,7 +333,7 @@ class NovaCreateServersOption:
         扩展属性，开启后在弹性云服务器创建时挂载config_drive向弹性云服务器内部传递信息。  当前不支持该功能。
 
         :param config_drive: The config_drive of this NovaCreateServersOption.
-        :type: str
+        :type config_drive: str
         """
         self._config_drive = config_drive
 
@@ -305,7 +344,7 @@ class NovaCreateServersOption:
         扩展属性，指定弹性云服务器的安全组，默认为default。  指定network创建弹性云服务器时该字段有效。对于已存在端口，安全组请求无效。
 
         :return: The security_groups of this NovaCreateServersOption.
-        :rtype: list[NovaServerSecurityGroup]
+        :rtype: list[:class:`huaweicloudsdkecs.v2.NovaServerSecurityGroup`]
         """
         return self._security_groups
 
@@ -316,7 +355,7 @@ class NovaCreateServersOption:
         扩展属性，指定弹性云服务器的安全组，默认为default。  指定network创建弹性云服务器时该字段有效。对于已存在端口，安全组请求无效。
 
         :param security_groups: The security_groups of this NovaCreateServersOption.
-        :type: list[NovaServerSecurityGroup]
+        :type security_groups: list[:class:`huaweicloudsdkecs.v2.NovaServerSecurityGroup`]
         """
         self._security_groups = security_groups
 
@@ -327,7 +366,7 @@ class NovaCreateServersOption:
         扩展属性，指定弹性云服务器的网卡信息。有多个租户网络时必须指定。 
 
         :return: The networks of this NovaCreateServersOption.
-        :rtype: list[NovaServerNetwork]
+        :rtype: list[:class:`huaweicloudsdkecs.v2.NovaServerNetwork`]
         """
         return self._networks
 
@@ -338,7 +377,7 @@ class NovaCreateServersOption:
         扩展属性，指定弹性云服务器的网卡信息。有多个租户网络时必须指定。 
 
         :param networks: The networks of this NovaCreateServersOption.
-        :type: list[NovaServerNetwork]
+        :type networks: list[:class:`huaweicloudsdkecs.v2.NovaServerNetwork`]
         """
         self._networks = networks
 
@@ -360,7 +399,7 @@ class NovaCreateServersOption:
         扩展属性，指定keypair的名称。
 
         :param key_name: The key_name of this NovaCreateServersOption.
-        :type: str
+        :type key_name: str
         """
         self._key_name = key_name
 
@@ -382,7 +421,7 @@ class NovaCreateServersOption:
         扩展属性，字符串长度小于65535，且必须是base64加密的。
 
         :param user_data: The user_data of this NovaCreateServersOption.
-        :type: str
+        :type user_data: str
         """
         self._user_data = user_data
 
@@ -404,7 +443,7 @@ class NovaCreateServersOption:
         扩展属性，指定弹性云服务器所在的AZ。  创建弹性云服务器时需要填入该参数。
 
         :param availability_zone: The availability_zone of this NovaCreateServersOption.
-        :type: str
+        :type availability_zone: str
         """
         self._availability_zone = availability_zone
 
@@ -426,7 +465,7 @@ class NovaCreateServersOption:
         扩展属性，是否支持返回批量创建弹性云服务器的reservation_id。通过返回的reservation_id，可以过滤查询到本次创建的弹性云服务器。  - true，返回reservation_id。 - false，返回弹性云服务器信息。  > 说明： >  > 批量创建弹性云服务器时，支持使用该字段。
 
         :param return_reservation_id: The return_reservation_id of this NovaCreateServersOption.
-        :type: bool
+        :type return_reservation_id: bool
         """
         self._return_reservation_id = return_reservation_id
 
@@ -448,7 +487,7 @@ class NovaCreateServersOption:
         扩展属性，表示创建弹性云服务器最小数量。  默认值为1。  > 说明： >  > 指定镜像创建弹性云服务器时，支持使用该字段。
 
         :param min_count: The min_count of this NovaCreateServersOption.
-        :type: int
+        :type min_count: int
         """
         self._min_count = min_count
 
@@ -470,7 +509,7 @@ class NovaCreateServersOption:
         表示创建弹性云服务器最大数量。  默认值与min_count的取值一致。  约束：  参数max_count的取值必须大于参数min_count的取值。  当min_count、max_count同时设置时，创弹性云服务器的数量取决于服务器的资源情况。根据资源情况，在min_count至max_count的取值范围内创建最大数量的弹性云服务器。  - 说明： -  - 指定镜像创建弹性云服务器时，支持使用该字段。
 
         :param max_count: The max_count of this NovaCreateServersOption.
-        :type: int
+        :type max_count: int
         """
         self._max_count = max_count
 
@@ -492,7 +531,7 @@ class NovaCreateServersOption:
         diskConfig的方式，取值为AUTO、MANUAL。  - MANUAL，镜像空间不会扩展。 - AUTO，系统盘镜像空间会自动扩展为与flavor大小一致。  当前不支持该功能。
 
         :param os_dc_fdisk_config: The os_dc_fdisk_config of this NovaCreateServersOption.
-        :type: str
+        :type os_dc_fdisk_config: str
         """
         self._os_dc_fdisk_config = os_dc_fdisk_config
 
@@ -514,7 +553,7 @@ class NovaCreateServersOption:
         扩展属性，表示弹性云服务器描述信息，默认为空字符串。  - 长度最多允许85个字符。 - 不能包含“<” 和 “>”等特殊符号。  > 说明： >  > - V2接口不支持该字段。 > - V2.1接口支持该字段，此时，需在请求Header中增加一组Key-Value值。其中，Key固定为“X-OpenStack-Nova-API-Version” ，Value为微版本号，当Value的值为2.19时，支持使用该字段。
 
         :param description: The description of this NovaCreateServersOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 

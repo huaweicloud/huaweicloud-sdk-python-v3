@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchCreateVolumeTagsRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchCreateVolumeTagsRequestBody:
     }
 
     def __init__(self, action=None, tags=None):
-        """BatchCreateVolumeTagsRequestBody - a model defined in huaweicloud sdk"""
+        """BatchCreateVolumeTagsRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param action: 操作标识，当前支持的取值如下：  添加标签：create
+        :type action: str
+        :param tags: 标签列表。
+        :type tags: list[:class:`huaweicloudsdkevs.v2.Tag`]
+        """
         
         
 
@@ -61,7 +68,7 @@ class BatchCreateVolumeTagsRequestBody:
         操作标识，当前支持的取值如下：  添加标签：create
 
         :param action: The action of this BatchCreateVolumeTagsRequestBody.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -72,7 +79,7 @@ class BatchCreateVolumeTagsRequestBody:
         标签列表。
 
         :return: The tags of this BatchCreateVolumeTagsRequestBody.
-        :rtype: list[Tag]
+        :rtype: list[:class:`huaweicloudsdkevs.v2.Tag`]
         """
         return self._tags
 
@@ -83,7 +90,7 @@ class BatchCreateVolumeTagsRequestBody:
         标签列表。
 
         :param tags: The tags of this BatchCreateVolumeTagsRequestBody.
-        :type: list[Tag]
+        :type tags: list[:class:`huaweicloudsdkevs.v2.Tag`]
         """
         self._tags = tags
 

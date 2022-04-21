@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDDosStatusRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowDDosStatusRequest:
     }
 
     def __init__(self, floating_ip_id=None, ip=None):
-        """ShowDDosStatusRequest - a model defined in huaweicloud sdk"""
+        """ShowDDosStatusRequest
+
+        The model defined in huaweicloud sdk
+
+        :param floating_ip_id: 用户EIP对应的ID
+        :type floating_ip_id: str
+        :param ip: 用户EIP
+        :type ip: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ShowDDosStatusRequest:
         用户EIP对应的ID
 
         :param floating_ip_id: The floating_ip_id of this ShowDDosStatusRequest.
-        :type: str
+        :type floating_ip_id: str
         """
         self._floating_ip_id = floating_ip_id
 
@@ -84,7 +91,7 @@ class ShowDDosStatusRequest:
         用户EIP
 
         :param ip: The ip of this ShowDDosStatusRequest.
-        :type: str
+        :type ip: str
         """
         self._ip = ip
 

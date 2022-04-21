@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExpandEdgecloudRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ExpandEdgecloudRequest:
     }
 
     def __init__(self, deployment_id=None):
-        """ExpandEdgecloudRequest - a model defined in huaweicloud sdk"""
+        """ExpandEdgecloudRequest
+
+        The model defined in huaweicloud sdk
+
+        :param deployment_id: 部署计划ID。  约束： - 该接口只能执行指定边缘业务ID（id）创建的部署计划。
+        :type deployment_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ExpandEdgecloudRequest:
         部署计划ID。  约束： - 该接口只能执行指定边缘业务ID（id）创建的部署计划。
 
         :param deployment_id: The deployment_id of this ExpandEdgecloudRequest.
-        :type: str
+        :type deployment_id: str
         """
         self._deployment_id = deployment_id
 

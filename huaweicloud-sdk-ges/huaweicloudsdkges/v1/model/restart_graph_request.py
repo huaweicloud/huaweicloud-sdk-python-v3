@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestartGraphRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RestartGraphRequest:
     }
 
     def __init__(self, graph_id=None, action_id=None):
-        """RestartGraphRequest - a model defined in huaweicloud sdk"""
+        """RestartGraphRequest
+
+        The model defined in huaweicloud sdk
+
+        :param graph_id: 图ID。
+        :type graph_id: str
+        :param action_id: 图actionId
+        :type action_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class RestartGraphRequest:
         图ID。
 
         :param graph_id: The graph_id of this RestartGraphRequest.
-        :type: str
+        :type graph_id: str
         """
         self._graph_id = graph_id
 
@@ -83,7 +90,7 @@ class RestartGraphRequest:
         图actionId
 
         :param action_id: The action_id of this RestartGraphRequest.
-        :type: str
+        :type action_id: str
         """
         self._action_id = action_id
 

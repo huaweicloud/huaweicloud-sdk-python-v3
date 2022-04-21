@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowReposResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -64,7 +63,47 @@ class ShowReposResp:
     }
 
     def __init__(self, name=None, category=None, description=None, size=None, is_public=None, num_images=None, num_download=None, created_at=None, updated_at=None, logo=None, url=None, path=None, internal_path=None, domain_name=None, namespace=None, tags=None, status=None, total_range=None):
-        """ShowReposResp - a model defined in huaweicloud sdk"""
+        """ShowReposResp
+
+        The model defined in huaweicloud sdk
+
+        :param name: 仓库名称
+        :type name: str
+        :param category: 仓库类型（计划改造，每个镜像会有多个lable标示）
+        :type category: str
+        :param description: 仓库描述信息
+        :type description: str
+        :param size: 仓库大小 
+        :type size: int
+        :param is_public: 仓库是否为公共仓库，值为true或false
+        :type is_public: bool
+        :param num_images: 仓库中镜像个数，0 ~ 9223372036854775807
+        :type num_images: int
+        :param num_download: 仓库下载次数
+        :type num_download: int
+        :param created_at: 仓库创建时间，UTC日期格式，时间为UTC标准时间，用户需要根据本地时间计算偏移量；如东8区需要+8:00
+        :type created_at: str
+        :param updated_at: 仓库更新时间，UTC日期格式，时间为UTC标准时间，用户需要根据本地时间计算偏移量；如东8区需要+8:00
+        :type updated_at: str
+        :param logo: 仓库logo地址（暂时未用）
+        :type logo: str
+        :param url: 仓库logo图片的URL，URL格式。（暂时未用）
+        :type url: str
+        :param path: 镜像pull路径，格式为 swr.cn-north-1.myhuaweicloud.com/namespace/repository
+        :type path: str
+        :param internal_path: 镜像pull路径，格式为 10.125.0.198:20202/namespace/repository
+        :type internal_path: str
+        :param domain_name: 租户名
+        :type domain_name: str
+        :param namespace: 租户的命名空间名称
+        :type namespace: str
+        :param tags: 镜像版本列表
+        :type tags: list[str]
+        :param status: 查询他人共享镜像：共享是否过期 查询我共享的镜像：默认为false,无意义
+        :type status: bool
+        :param total_range: 总记录条数
+        :type total_range: int
+        """
         
         
 
@@ -125,7 +164,7 @@ class ShowReposResp:
         仓库名称
 
         :param name: The name of this ShowReposResp.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -147,7 +186,7 @@ class ShowReposResp:
         仓库类型（计划改造，每个镜像会有多个lable标示）
 
         :param category: The category of this ShowReposResp.
-        :type: str
+        :type category: str
         """
         self._category = category
 
@@ -169,7 +208,7 @@ class ShowReposResp:
         仓库描述信息
 
         :param description: The description of this ShowReposResp.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -191,7 +230,7 @@ class ShowReposResp:
         仓库大小 
 
         :param size: The size of this ShowReposResp.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -213,7 +252,7 @@ class ShowReposResp:
         仓库是否为公共仓库，值为true或false
 
         :param is_public: The is_public of this ShowReposResp.
-        :type: bool
+        :type is_public: bool
         """
         self._is_public = is_public
 
@@ -235,7 +274,7 @@ class ShowReposResp:
         仓库中镜像个数，0 ~ 9223372036854775807
 
         :param num_images: The num_images of this ShowReposResp.
-        :type: int
+        :type num_images: int
         """
         self._num_images = num_images
 
@@ -257,7 +296,7 @@ class ShowReposResp:
         仓库下载次数
 
         :param num_download: The num_download of this ShowReposResp.
-        :type: int
+        :type num_download: int
         """
         self._num_download = num_download
 
@@ -279,7 +318,7 @@ class ShowReposResp:
         仓库创建时间，UTC日期格式，时间为UTC标准时间，用户需要根据本地时间计算偏移量；如东8区需要+8:00
 
         :param created_at: The created_at of this ShowReposResp.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -301,7 +340,7 @@ class ShowReposResp:
         仓库更新时间，UTC日期格式，时间为UTC标准时间，用户需要根据本地时间计算偏移量；如东8区需要+8:00
 
         :param updated_at: The updated_at of this ShowReposResp.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 
@@ -323,7 +362,7 @@ class ShowReposResp:
         仓库logo地址（暂时未用）
 
         :param logo: The logo of this ShowReposResp.
-        :type: str
+        :type logo: str
         """
         self._logo = logo
 
@@ -345,7 +384,7 @@ class ShowReposResp:
         仓库logo图片的URL，URL格式。（暂时未用）
 
         :param url: The url of this ShowReposResp.
-        :type: str
+        :type url: str
         """
         self._url = url
 
@@ -367,7 +406,7 @@ class ShowReposResp:
         镜像pull路径，格式为 swr.cn-north-1.myhuaweicloud.com/namespace/repository
 
         :param path: The path of this ShowReposResp.
-        :type: str
+        :type path: str
         """
         self._path = path
 
@@ -389,7 +428,7 @@ class ShowReposResp:
         镜像pull路径，格式为 10.125.0.198:20202/namespace/repository
 
         :param internal_path: The internal_path of this ShowReposResp.
-        :type: str
+        :type internal_path: str
         """
         self._internal_path = internal_path
 
@@ -411,7 +450,7 @@ class ShowReposResp:
         租户名
 
         :param domain_name: The domain_name of this ShowReposResp.
-        :type: str
+        :type domain_name: str
         """
         self._domain_name = domain_name
 
@@ -433,7 +472,7 @@ class ShowReposResp:
         租户的命名空间名称
 
         :param namespace: The namespace of this ShowReposResp.
-        :type: str
+        :type namespace: str
         """
         self._namespace = namespace
 
@@ -455,7 +494,7 @@ class ShowReposResp:
         镜像版本列表
 
         :param tags: The tags of this ShowReposResp.
-        :type: list[str]
+        :type tags: list[str]
         """
         self._tags = tags
 
@@ -477,7 +516,7 @@ class ShowReposResp:
         查询他人共享镜像：共享是否过期 查询我共享的镜像：默认为false,无意义
 
         :param status: The status of this ShowReposResp.
-        :type: bool
+        :type status: bool
         """
         self._status = status
 
@@ -499,7 +538,7 @@ class ShowReposResp:
         总记录条数
 
         :param total_range: The total_range of this ShowReposResp.
-        :type: int
+        :type total_range: int
         """
         self._total_range = total_range
 

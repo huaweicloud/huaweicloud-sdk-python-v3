@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MigrateResourceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class MigrateResourceRequest:
     }
 
     def __init__(self, enterprise_project_id=None, body=None):
-        """MigrateResourceRequest - a model defined in huaweicloud sdk"""
+        """MigrateResourceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param enterprise_project_id: 目标企业项目ID，enterprise_project_id为0时表示迁移资源到默认资源组default。
+        :type enterprise_project_id: str
+        :param body: Body of the MigrateResourceRequest
+        :type body: :class:`huaweicloudsdkeps.v1.MigrateResource`
+        """
         
         
 
@@ -62,7 +69,7 @@ class MigrateResourceRequest:
         目标企业项目ID，enterprise_project_id为0时表示迁移资源到默认资源组default。
 
         :param enterprise_project_id: The enterprise_project_id of this MigrateResourceRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -72,7 +79,7 @@ class MigrateResourceRequest:
 
 
         :return: The body of this MigrateResourceRequest.
-        :rtype: MigrateResource
+        :rtype: :class:`huaweicloudsdkeps.v1.MigrateResource`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class MigrateResourceRequest:
 
 
         :param body: The body of this MigrateResourceRequest.
-        :type: MigrateResource
+        :type body: :class:`huaweicloudsdkeps.v1.MigrateResource`
         """
         self._body = body
 

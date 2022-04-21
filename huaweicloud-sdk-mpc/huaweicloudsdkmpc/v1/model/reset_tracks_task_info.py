@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResetTracksTaskInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class ResetTracksTaskInfo:
     }
 
     def __init__(self, task_id=None, status=None, create_time=None, end_time=None, output=None, description=None, output_filename=None, tracks_info=None, input=None):
-        """ResetTracksTaskInfo - a model defined in huaweicloud sdk"""
+        """ResetTracksTaskInfo
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 任务Id
+        :type task_id: str
+        :param status: 任务执行状态，取值如下。 \&quot;NO_TASK\&quot;      //无任务，task_id非法 \&quot;WAITING\&quot;      //等待启动 \&quot;PROCESSING\&quot;   //处理中 \&quot;SUCCEEDED\&quot;    //成功 \&quot;FAILED\&quot;       //失败 \&quot;CANCELED\&quot;     //已删除 
+        :type status: str
+        :param create_time: 任务启动时间 
+        :type create_time: str
+        :param end_time: 任务结束时间 
+        :type end_time: str
+        :param output: 
+        :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        :param description: 任务描述，当出现异常时，此字段为异常的原因。 
+        :type description: str
+        :param output_filename: 输出文件名。
+        :type output_filename: str
+        :param tracks_info: 音轨信息
+        :type tracks_info: list[:class:`huaweicloudsdkmpc.v1.TracksInfo`]
+        :param input: 
+        :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        """
         
         
 
@@ -98,7 +119,7 @@ class ResetTracksTaskInfo:
         任务Id
 
         :param task_id: The task_id of this ResetTracksTaskInfo.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -120,7 +141,7 @@ class ResetTracksTaskInfo:
         任务执行状态，取值如下。 \"NO_TASK\"      //无任务，task_id非法 \"WAITING\"      //等待启动 \"PROCESSING\"   //处理中 \"SUCCEEDED\"    //成功 \"FAILED\"       //失败 \"CANCELED\"     //已删除 
 
         :param status: The status of this ResetTracksTaskInfo.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -142,7 +163,7 @@ class ResetTracksTaskInfo:
         任务启动时间 
 
         :param create_time: The create_time of this ResetTracksTaskInfo.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -164,7 +185,7 @@ class ResetTracksTaskInfo:
         任务结束时间 
 
         :param end_time: The end_time of this ResetTracksTaskInfo.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -174,7 +195,7 @@ class ResetTracksTaskInfo:
 
 
         :return: The output of this ResetTracksTaskInfo.
-        :rtype: ObsObjInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         return self._output
 
@@ -184,7 +205,7 @@ class ResetTracksTaskInfo:
 
 
         :param output: The output of this ResetTracksTaskInfo.
-        :type: ObsObjInfo
+        :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         self._output = output
 
@@ -206,7 +227,7 @@ class ResetTracksTaskInfo:
         任务描述，当出现异常时，此字段为异常的原因。 
 
         :param description: The description of this ResetTracksTaskInfo.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -228,7 +249,7 @@ class ResetTracksTaskInfo:
         输出文件名。
 
         :param output_filename: The output_filename of this ResetTracksTaskInfo.
-        :type: str
+        :type output_filename: str
         """
         self._output_filename = output_filename
 
@@ -239,7 +260,7 @@ class ResetTracksTaskInfo:
         音轨信息
 
         :return: The tracks_info of this ResetTracksTaskInfo.
-        :rtype: list[TracksInfo]
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.TracksInfo`]
         """
         return self._tracks_info
 
@@ -250,7 +271,7 @@ class ResetTracksTaskInfo:
         音轨信息
 
         :param tracks_info: The tracks_info of this ResetTracksTaskInfo.
-        :type: list[TracksInfo]
+        :type tracks_info: list[:class:`huaweicloudsdkmpc.v1.TracksInfo`]
         """
         self._tracks_info = tracks_info
 
@@ -260,7 +281,7 @@ class ResetTracksTaskInfo:
 
 
         :return: The input of this ResetTracksTaskInfo.
-        :rtype: ObsObjInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         return self._input
 
@@ -270,7 +291,7 @@ class ResetTracksTaskInfo:
 
 
         :param input: The input of this ResetTracksTaskInfo.
-        :type: ObsObjInfo
+        :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         self._input = input
 

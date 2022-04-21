@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DependJob:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class DependJob:
     }
 
     def __init__(self, jobs=None, depend_period=None, depend_fail_policy=None):
-        """DependJob - a model defined in huaweicloud sdk"""
+        """DependJob
+
+        The model defined in huaweicloud sdk
+
+        :param jobs: 
+        :type jobs: str
+        :param depend_period: 
+        :type depend_period: str
+        :param depend_fail_policy: 
+        :type depend_fail_policy: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class DependJob:
 
 
         :param jobs: The jobs of this DependJob.
-        :type: str
+        :type jobs: str
         """
         self._jobs = jobs
 
@@ -86,7 +95,7 @@ class DependJob:
 
 
         :param depend_period: The depend_period of this DependJob.
-        :type: str
+        :type depend_period: str
         """
         self._depend_period = depend_period
 
@@ -106,7 +115,7 @@ class DependJob:
 
 
         :param depend_fail_policy: The depend_fail_policy of this DependJob.
-        :type: str
+        :type depend_fail_policy: str
         """
         self._depend_fail_policy = depend_fail_policy
 

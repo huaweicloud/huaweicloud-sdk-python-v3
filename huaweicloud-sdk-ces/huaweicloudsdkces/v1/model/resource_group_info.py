@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResourceGroupInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ResourceGroupInfo:
     }
 
     def __init__(self, group_name=None, group_id=None, create_time=None, instance_statistics=None, status=None, enterprise_project_id=None):
-        """ResourceGroupInfo - a model defined in huaweicloud sdk"""
+        """ResourceGroupInfo
+
+        The model defined in huaweicloud sdk
+
+        :param group_name: 资源分组的名称，如：ResourceGroup-Test01。
+        :type group_name: str
+        :param group_id: 资源分组的ID，如：rg1603786526428bWbVmk4rP。
+        :type group_id: str
+        :param create_time: 资源分组的创建时间，UNIX时间戳，单位毫秒；如：1603819753000。
+        :type create_time: int
+        :param instance_statistics: 
+        :type instance_statistics: :class:`huaweicloudsdkces.v1.InstanceStatistics`
+        :param status: 资源分组的当前状态，值可为health、unhealth、no_alarm_rule；health表示健康，unhealth表示不健康，no_alarm_rule表示未设置告警规则。
+        :type status: str
+        :param enterprise_project_id: 创建资源分组时关联的企业项目，默认值为0，表示企业项目为default。
+        :type enterprise_project_id: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class ResourceGroupInfo:
         资源分组的名称，如：ResourceGroup-Test01。
 
         :param group_name: The group_name of this ResourceGroupInfo.
-        :type: str
+        :type group_name: str
         """
         self._group_name = group_name
 
@@ -105,7 +120,7 @@ class ResourceGroupInfo:
         资源分组的ID，如：rg1603786526428bWbVmk4rP。
 
         :param group_id: The group_id of this ResourceGroupInfo.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -127,7 +142,7 @@ class ResourceGroupInfo:
         资源分组的创建时间，UNIX时间戳，单位毫秒；如：1603819753000。
 
         :param create_time: The create_time of this ResourceGroupInfo.
-        :type: int
+        :type create_time: int
         """
         self._create_time = create_time
 
@@ -137,7 +152,7 @@ class ResourceGroupInfo:
 
 
         :return: The instance_statistics of this ResourceGroupInfo.
-        :rtype: InstanceStatistics
+        :rtype: :class:`huaweicloudsdkces.v1.InstanceStatistics`
         """
         return self._instance_statistics
 
@@ -147,7 +162,7 @@ class ResourceGroupInfo:
 
 
         :param instance_statistics: The instance_statistics of this ResourceGroupInfo.
-        :type: InstanceStatistics
+        :type instance_statistics: :class:`huaweicloudsdkces.v1.InstanceStatistics`
         """
         self._instance_statistics = instance_statistics
 
@@ -169,7 +184,7 @@ class ResourceGroupInfo:
         资源分组的当前状态，值可为health、unhealth、no_alarm_rule；health表示健康，unhealth表示不健康，no_alarm_rule表示未设置告警规则。
 
         :param status: The status of this ResourceGroupInfo.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -191,7 +206,7 @@ class ResourceGroupInfo:
         创建资源分组时关联的企业项目，默认值为0，表示企业项目为default。
 
         :param enterprise_project_id: The enterprise_project_id of this ResourceGroupInfo.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 

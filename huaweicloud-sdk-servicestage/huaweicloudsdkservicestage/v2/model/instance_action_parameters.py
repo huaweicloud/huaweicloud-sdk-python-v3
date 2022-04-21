@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InstanceActionParameters:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class InstanceActionParameters:
     }
 
     def __init__(self, replica=None, hosts=None, version=None):
-        """InstanceActionParameters - a model defined in huaweicloud sdk"""
+        """InstanceActionParameters
+
+        The model defined in huaweicloud sdk
+
+        :param replica: 实例数，在scale操作时提供。
+        :type replica: int
+        :param hosts: ECS ID列表，指定虚机扩容时部署的ECS主机。
+        :type hosts: list[str]
+        :param version: 版本号，在rollback操作时提供，通过查询快照接口获取。
+        :type version: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class InstanceActionParameters:
         实例数，在scale操作时提供。
 
         :param replica: The replica of this InstanceActionParameters.
-        :type: int
+        :type replica: int
         """
         self._replica = replica
 
@@ -90,7 +99,7 @@ class InstanceActionParameters:
         ECS ID列表，指定虚机扩容时部署的ECS主机。
 
         :param hosts: The hosts of this InstanceActionParameters.
-        :type: list[str]
+        :type hosts: list[str]
         """
         self._hosts = hosts
 
@@ -112,7 +121,7 @@ class InstanceActionParameters:
         版本号，在rollback操作时提供，通过查询快照接口获取。
 
         :param version: The version of this InstanceActionParameters.
-        :type: str
+        :type version: str
         """
         self._version = version
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowCommandRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowCommandRequest:
     }
 
     def __init__(self, server_id=None):
-        """ShowCommandRequest - a model defined in huaweicloud sdk"""
+        """ShowCommandRequest
+
+        The model defined in huaweicloud sdk
+
+        :param server_id: 命令对应的服务器id
+        :type server_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowCommandRequest:
         命令对应的服务器id
 
         :param server_id: The server_id of this ShowCommandRequest.
-        :type: str
+        :type server_id: str
         """
         self._server_id = server_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteLogStreamRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteLogStreamRequest:
     }
 
     def __init__(self, log_group_id=None, log_stream_id=None):
-        """DeleteLogStreamRequest - a model defined in huaweicloud sdk"""
+        """DeleteLogStreamRequest
+
+        The model defined in huaweicloud sdk
+
+        :param log_group_id: 租户想删除的日志流所在的日志组的groupid，一般为36位字符串。
+        :type log_group_id: str
+        :param log_stream_id: 需要删除的日志流ID，获取方式请参见：获取账号ID、项目ID、日志组ID、日志流ID（https://support.huaweicloud.com/api-lts/lts_api_0006.html）。
+        :type log_stream_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class DeleteLogStreamRequest:
         租户想删除的日志流所在的日志组的groupid，一般为36位字符串。
 
         :param log_group_id: The log_group_id of this DeleteLogStreamRequest.
-        :type: str
+        :type log_group_id: str
         """
         self._log_group_id = log_group_id
 
@@ -83,7 +90,7 @@ class DeleteLogStreamRequest:
         需要删除的日志流ID，获取方式请参见：获取账号ID、项目ID、日志组ID、日志流ID（https://support.huaweicloud.com/api-lts/lts_api_0006.html）。
 
         :param log_stream_id: The log_stream_id of this DeleteLogStreamRequest.
-        :type: str
+        :type log_stream_id: str
         """
         self._log_stream_id = log_stream_id
 

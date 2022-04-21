@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Graph1:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -92,7 +91,75 @@ class Graph1:
     }
 
     def __init__(self, id=None, name=None, created_by=None, is_multi_az=None, region_code=None, az_code=None, schema_path=None, edgeset_path=None, edgeset_format=None, edgeset_default_label=None, vertexset_path=None, vertexset_format=None, vertexset_default_label=None, data_store_version=None, sys_tags=None, status=None, action_progress=None, graph_size_type_index=None, vpc_id=None, subnet_id=None, security_group_id=None, replication=None, created=None, updated=None, private_ip=None, public_ip=None, arch=None, encrypted=None, master_key_id=None, master_key_name=None, enable_rbac=None, enable_fulltext_index=None):
-        """Graph1 - a model defined in huaweicloud sdk"""
+        """Graph1
+
+        The model defined in huaweicloud sdk
+
+        :param id: 图ID。
+        :type id: str
+        :param name: 图名称。
+        :type name: str
+        :param created_by: 图的创建人账号。
+        :type created_by: str
+        :param is_multi_az: 是否支持跨AZ高可用。
+        :type is_multi_az: str
+        :param region_code: 域编码。
+        :type region_code: str
+        :param az_code: 可用区编码。
+        :type az_code: str
+        :param schema_path: 元数据文件路径。
+        :type schema_path: list[:class:`huaweicloudsdkges.v1.SchemaPath1`]
+        :param edgeset_path: 边数据集OBS路径。
+        :type edgeset_path: list[:class:`huaweicloudsdkges.v1.EdgesetPath1`]
+        :param edgeset_format: 边数据集文件格式。
+        :type edgeset_format: str
+        :param edgeset_default_label: 边数据集文件默认Label。
+        :type edgeset_default_label: str
+        :param vertexset_path: 点数据集OBS路径。
+        :type vertexset_path: list[:class:`huaweicloudsdkges.v1.VertexsetPath1`]
+        :param vertexset_format: 点数据集文件格式。
+        :type vertexset_format: str
+        :param vertexset_default_label: 点数据集文件默认Label。
+        :type vertexset_default_label: str
+        :param data_store_version: 图版本。
+        :type data_store_version: str
+        :param sys_tags: 企业项目信息，如果未指定则不开启，默认不开启。
+        :type sys_tags: list[:class:`huaweicloudsdkges.v1.SysTagsRes`]
+        :param status: 图的状态码。  - 100：准备中 - 200：运行中 - 201：升级中 - 202：导入中 - 203：回滚中 - 204：导出中 - 205：清空中 - 206：扩容准备中 - 207：扩容中 - 208：扩容回退中 - 300：故障 - 303：创建失败 - 400：被删除 - 800：已冻结 - 900：停止 - 901：停止中 - 920：启动中
+        :type status: str
+        :param action_progress: 图创建进度百分比。 &gt;只有图状态码为100时返回该字段。
+        :type action_progress: str
+        :param graph_size_type_index: 图规模类型索引。  - 0：一万边 - 1：百万边 - 2：千万边 - 3：一亿边 - 4：十亿边 - 5：百亿边 - 6：千亿边
+        :type graph_size_type_index: str
+        :param vpc_id: 虚拟私有云ID。
+        :type vpc_id: str
+        :param subnet_id: 指定虚拟私有云下的子网ID。
+        :type subnet_id: str
+        :param security_group_id: 安全组ID。
+        :type security_group_id: str
+        :param replication: 副本个数，默认为1。
+        :type replication: int
+        :param created: 图创建时间。
+        :type created: str
+        :param updated: 图更新时间。
+        :type updated: str
+        :param private_ip: 图实例私有网络访问地址，通过该IP用户可以通过私有网络中已部署的弹性云服务器对图实例进行访问。
+        :type private_ip: str
+        :param public_ip: 图实例公网访问地址，通过该IP用户可以从互联网对图实例进行访问。
+        :type public_ip: str
+        :param arch: 图实例CPU架构类型，取值为x86_64和aarch64。
+        :type arch: str
+        :param encrypted: 是否加密。默认值为“false”，默认不加密。
+        :type encrypted: bool
+        :param master_key_id: 用户主密钥ID。
+        :type master_key_id: str
+        :param master_key_name: 用户主密钥名称。
+        :type master_key_name: str
+        :param enable_rbac: 是否启用细粒度权限控制。
+        :type enable_rbac: bool
+        :param enable_fulltext_index: 是否启用全文索引。
+        :type enable_fulltext_index: bool
+        """
         
         
 
@@ -213,7 +280,7 @@ class Graph1:
         图ID。
 
         :param id: The id of this Graph1.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -235,7 +302,7 @@ class Graph1:
         图名称。
 
         :param name: The name of this Graph1.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -257,7 +324,7 @@ class Graph1:
         图的创建人账号。
 
         :param created_by: The created_by of this Graph1.
-        :type: str
+        :type created_by: str
         """
         self._created_by = created_by
 
@@ -279,7 +346,7 @@ class Graph1:
         是否支持跨AZ高可用。
 
         :param is_multi_az: The is_multi_az of this Graph1.
-        :type: str
+        :type is_multi_az: str
         """
         self._is_multi_az = is_multi_az
 
@@ -301,7 +368,7 @@ class Graph1:
         域编码。
 
         :param region_code: The region_code of this Graph1.
-        :type: str
+        :type region_code: str
         """
         self._region_code = region_code
 
@@ -323,7 +390,7 @@ class Graph1:
         可用区编码。
 
         :param az_code: The az_code of this Graph1.
-        :type: str
+        :type az_code: str
         """
         self._az_code = az_code
 
@@ -334,7 +401,7 @@ class Graph1:
         元数据文件路径。
 
         :return: The schema_path of this Graph1.
-        :rtype: list[SchemaPath1]
+        :rtype: list[:class:`huaweicloudsdkges.v1.SchemaPath1`]
         """
         return self._schema_path
 
@@ -345,7 +412,7 @@ class Graph1:
         元数据文件路径。
 
         :param schema_path: The schema_path of this Graph1.
-        :type: list[SchemaPath1]
+        :type schema_path: list[:class:`huaweicloudsdkges.v1.SchemaPath1`]
         """
         self._schema_path = schema_path
 
@@ -356,7 +423,7 @@ class Graph1:
         边数据集OBS路径。
 
         :return: The edgeset_path of this Graph1.
-        :rtype: list[EdgesetPath1]
+        :rtype: list[:class:`huaweicloudsdkges.v1.EdgesetPath1`]
         """
         return self._edgeset_path
 
@@ -367,7 +434,7 @@ class Graph1:
         边数据集OBS路径。
 
         :param edgeset_path: The edgeset_path of this Graph1.
-        :type: list[EdgesetPath1]
+        :type edgeset_path: list[:class:`huaweicloudsdkges.v1.EdgesetPath1`]
         """
         self._edgeset_path = edgeset_path
 
@@ -389,7 +456,7 @@ class Graph1:
         边数据集文件格式。
 
         :param edgeset_format: The edgeset_format of this Graph1.
-        :type: str
+        :type edgeset_format: str
         """
         self._edgeset_format = edgeset_format
 
@@ -411,7 +478,7 @@ class Graph1:
         边数据集文件默认Label。
 
         :param edgeset_default_label: The edgeset_default_label of this Graph1.
-        :type: str
+        :type edgeset_default_label: str
         """
         self._edgeset_default_label = edgeset_default_label
 
@@ -422,7 +489,7 @@ class Graph1:
         点数据集OBS路径。
 
         :return: The vertexset_path of this Graph1.
-        :rtype: list[VertexsetPath1]
+        :rtype: list[:class:`huaweicloudsdkges.v1.VertexsetPath1`]
         """
         return self._vertexset_path
 
@@ -433,7 +500,7 @@ class Graph1:
         点数据集OBS路径。
 
         :param vertexset_path: The vertexset_path of this Graph1.
-        :type: list[VertexsetPath1]
+        :type vertexset_path: list[:class:`huaweicloudsdkges.v1.VertexsetPath1`]
         """
         self._vertexset_path = vertexset_path
 
@@ -455,7 +522,7 @@ class Graph1:
         点数据集文件格式。
 
         :param vertexset_format: The vertexset_format of this Graph1.
-        :type: str
+        :type vertexset_format: str
         """
         self._vertexset_format = vertexset_format
 
@@ -477,7 +544,7 @@ class Graph1:
         点数据集文件默认Label。
 
         :param vertexset_default_label: The vertexset_default_label of this Graph1.
-        :type: str
+        :type vertexset_default_label: str
         """
         self._vertexset_default_label = vertexset_default_label
 
@@ -499,7 +566,7 @@ class Graph1:
         图版本。
 
         :param data_store_version: The data_store_version of this Graph1.
-        :type: str
+        :type data_store_version: str
         """
         self._data_store_version = data_store_version
 
@@ -510,7 +577,7 @@ class Graph1:
         企业项目信息，如果未指定则不开启，默认不开启。
 
         :return: The sys_tags of this Graph1.
-        :rtype: list[SysTagsRes]
+        :rtype: list[:class:`huaweicloudsdkges.v1.SysTagsRes`]
         """
         return self._sys_tags
 
@@ -521,7 +588,7 @@ class Graph1:
         企业项目信息，如果未指定则不开启，默认不开启。
 
         :param sys_tags: The sys_tags of this Graph1.
-        :type: list[SysTagsRes]
+        :type sys_tags: list[:class:`huaweicloudsdkges.v1.SysTagsRes`]
         """
         self._sys_tags = sys_tags
 
@@ -543,7 +610,7 @@ class Graph1:
         图的状态码。  - 100：准备中 - 200：运行中 - 201：升级中 - 202：导入中 - 203：回滚中 - 204：导出中 - 205：清空中 - 206：扩容准备中 - 207：扩容中 - 208：扩容回退中 - 300：故障 - 303：创建失败 - 400：被删除 - 800：已冻结 - 900：停止 - 901：停止中 - 920：启动中
 
         :param status: The status of this Graph1.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -565,7 +632,7 @@ class Graph1:
         图创建进度百分比。 >只有图状态码为100时返回该字段。
 
         :param action_progress: The action_progress of this Graph1.
-        :type: str
+        :type action_progress: str
         """
         self._action_progress = action_progress
 
@@ -587,7 +654,7 @@ class Graph1:
         图规模类型索引。  - 0：一万边 - 1：百万边 - 2：千万边 - 3：一亿边 - 4：十亿边 - 5：百亿边 - 6：千亿边
 
         :param graph_size_type_index: The graph_size_type_index of this Graph1.
-        :type: str
+        :type graph_size_type_index: str
         """
         self._graph_size_type_index = graph_size_type_index
 
@@ -609,7 +676,7 @@ class Graph1:
         虚拟私有云ID。
 
         :param vpc_id: The vpc_id of this Graph1.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -631,7 +698,7 @@ class Graph1:
         指定虚拟私有云下的子网ID。
 
         :param subnet_id: The subnet_id of this Graph1.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -653,7 +720,7 @@ class Graph1:
         安全组ID。
 
         :param security_group_id: The security_group_id of this Graph1.
-        :type: str
+        :type security_group_id: str
         """
         self._security_group_id = security_group_id
 
@@ -675,7 +742,7 @@ class Graph1:
         副本个数，默认为1。
 
         :param replication: The replication of this Graph1.
-        :type: int
+        :type replication: int
         """
         self._replication = replication
 
@@ -697,7 +764,7 @@ class Graph1:
         图创建时间。
 
         :param created: The created of this Graph1.
-        :type: str
+        :type created: str
         """
         self._created = created
 
@@ -719,7 +786,7 @@ class Graph1:
         图更新时间。
 
         :param updated: The updated of this Graph1.
-        :type: str
+        :type updated: str
         """
         self._updated = updated
 
@@ -741,7 +808,7 @@ class Graph1:
         图实例私有网络访问地址，通过该IP用户可以通过私有网络中已部署的弹性云服务器对图实例进行访问。
 
         :param private_ip: The private_ip of this Graph1.
-        :type: str
+        :type private_ip: str
         """
         self._private_ip = private_ip
 
@@ -763,7 +830,7 @@ class Graph1:
         图实例公网访问地址，通过该IP用户可以从互联网对图实例进行访问。
 
         :param public_ip: The public_ip of this Graph1.
-        :type: str
+        :type public_ip: str
         """
         self._public_ip = public_ip
 
@@ -785,7 +852,7 @@ class Graph1:
         图实例CPU架构类型，取值为x86_64和aarch64。
 
         :param arch: The arch of this Graph1.
-        :type: str
+        :type arch: str
         """
         self._arch = arch
 
@@ -807,7 +874,7 @@ class Graph1:
         是否加密。默认值为“false”，默认不加密。
 
         :param encrypted: The encrypted of this Graph1.
-        :type: bool
+        :type encrypted: bool
         """
         self._encrypted = encrypted
 
@@ -829,7 +896,7 @@ class Graph1:
         用户主密钥ID。
 
         :param master_key_id: The master_key_id of this Graph1.
-        :type: str
+        :type master_key_id: str
         """
         self._master_key_id = master_key_id
 
@@ -851,7 +918,7 @@ class Graph1:
         用户主密钥名称。
 
         :param master_key_name: The master_key_name of this Graph1.
-        :type: str
+        :type master_key_name: str
         """
         self._master_key_name = master_key_name
 
@@ -873,7 +940,7 @@ class Graph1:
         是否启用细粒度权限控制。
 
         :param enable_rbac: The enable_rbac of this Graph1.
-        :type: bool
+        :type enable_rbac: bool
         """
         self._enable_rbac = enable_rbac
 
@@ -895,7 +962,7 @@ class Graph1:
         是否启用全文索引。
 
         :param enable_fulltext_index: The enable_fulltext_index of this Graph1.
-        :type: bool
+        :type enable_fulltext_index: bool
         """
         self._enable_fulltext_index = enable_fulltext_index
 

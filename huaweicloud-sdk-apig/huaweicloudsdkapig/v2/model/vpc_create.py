@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VpcCreate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class VpcCreate:
     }
 
     def __init__(self, name=None, port=None, balance_strategy=None, member_type=None, members=None, vpc_health_config=None):
-        """VpcCreate - a model defined in huaweicloud sdk"""
+        """VpcCreate
+
+        The model defined in huaweicloud sdk
+
+        :param name: VPC通道的名称。  长度为3 ~ 64位的字符串，字符串由中文、英文字母、数字、中划线、下划线组成，且只能以英文或中文开头。 &gt; 中文字符必须为UTF-8或者unicode编码。
+        :type name: str
+        :param port: VPC通道中主机的端口号。  取值范围1 ~ 65535，仅VPC通道类型为2时有效。  VPC通道类型为2时必选。
+        :type port: int
+        :param balance_strategy: 分发算法。 - 1：加权轮询（wrr） - 2：加权最少连接（wleastconn） - 3：源地址哈希（source） - 4：URI哈希（uri）  VPC通道类型为2时必选。
+        :type balance_strategy: int
+        :param member_type: VPC通道的成员类型。 - ip - ecs  VPC通道类型为2时必选。
+        :type member_type: str
+        :param members: VPC后端实例列表，VPC通道类型为1时，有且仅有1个后端实例。
+        :type members: list[:class:`huaweicloudsdkapig.v2.MemberInfo`]
+        :param vpc_health_config: 
+        :type vpc_health_config: :class:`huaweicloudsdkapig.v2.VpcHealthConfig`
+        """
         
         
 
@@ -82,7 +97,7 @@ class VpcCreate:
         VPC通道的名称。  长度为3 ~ 64位的字符串，字符串由中文、英文字母、数字、中划线、下划线组成，且只能以英文或中文开头。 > 中文字符必须为UTF-8或者unicode编码。
 
         :param name: The name of this VpcCreate.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -104,7 +119,7 @@ class VpcCreate:
         VPC通道中主机的端口号。  取值范围1 ~ 65535，仅VPC通道类型为2时有效。  VPC通道类型为2时必选。
 
         :param port: The port of this VpcCreate.
-        :type: int
+        :type port: int
         """
         self._port = port
 
@@ -126,7 +141,7 @@ class VpcCreate:
         分发算法。 - 1：加权轮询（wrr） - 2：加权最少连接（wleastconn） - 3：源地址哈希（source） - 4：URI哈希（uri）  VPC通道类型为2时必选。
 
         :param balance_strategy: The balance_strategy of this VpcCreate.
-        :type: int
+        :type balance_strategy: int
         """
         self._balance_strategy = balance_strategy
 
@@ -148,7 +163,7 @@ class VpcCreate:
         VPC通道的成员类型。 - ip - ecs  VPC通道类型为2时必选。
 
         :param member_type: The member_type of this VpcCreate.
-        :type: str
+        :type member_type: str
         """
         self._member_type = member_type
 
@@ -159,7 +174,7 @@ class VpcCreate:
         VPC后端实例列表，VPC通道类型为1时，有且仅有1个后端实例。
 
         :return: The members of this VpcCreate.
-        :rtype: list[MemberInfo]
+        :rtype: list[:class:`huaweicloudsdkapig.v2.MemberInfo`]
         """
         return self._members
 
@@ -170,7 +185,7 @@ class VpcCreate:
         VPC后端实例列表，VPC通道类型为1时，有且仅有1个后端实例。
 
         :param members: The members of this VpcCreate.
-        :type: list[MemberInfo]
+        :type members: list[:class:`huaweicloudsdkapig.v2.MemberInfo`]
         """
         self._members = members
 
@@ -180,7 +195,7 @@ class VpcCreate:
 
 
         :return: The vpc_health_config of this VpcCreate.
-        :rtype: VpcHealthConfig
+        :rtype: :class:`huaweicloudsdkapig.v2.VpcHealthConfig`
         """
         return self._vpc_health_config
 
@@ -190,7 +205,7 @@ class VpcCreate:
 
 
         :param vpc_health_config: The vpc_health_config of this VpcCreate.
-        :type: VpcHealthConfig
+        :type vpc_health_config: :class:`huaweicloudsdkapig.v2.VpcHealthConfig`
         """
         self._vpc_health_config = vpc_health_config
 

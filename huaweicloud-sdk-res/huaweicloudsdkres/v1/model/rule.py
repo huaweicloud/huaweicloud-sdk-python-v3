@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Rule:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class Rule:
     }
 
     def __init__(self, table_name=None, rule_ratio=None, priority=None):
-        """Rule - a model defined in huaweicloud sdk"""
+        """Rule
+
+        The model defined in huaweicloud sdk
+
+        :param table_name: 候选集表名。
+        :type table_name: str
+        :param rule_ratio: 规则占比。
+        :type rule_ratio: int
+        :param priority: 优先级。
+        :type priority: int
+        """
         
         
 
@@ -65,7 +74,7 @@ class Rule:
         候选集表名。
 
         :param table_name: The table_name of this Rule.
-        :type: str
+        :type table_name: str
         """
         self._table_name = table_name
 
@@ -87,7 +96,7 @@ class Rule:
         规则占比。
 
         :param rule_ratio: The rule_ratio of this Rule.
-        :type: int
+        :type rule_ratio: int
         """
         self._rule_ratio = rule_ratio
 
@@ -109,7 +118,7 @@ class Rule:
         优先级。
 
         :param priority: The priority of this Rule.
-        :type: int
+        :type priority: int
         """
         self._priority = priority
 

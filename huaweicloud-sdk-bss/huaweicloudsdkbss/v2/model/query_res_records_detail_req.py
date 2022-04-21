@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryResRecordsDetailReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class QueryResRecordsDetailReq:
     }
 
     def __init__(self, cycle=None, cloud_service_type=None, resource_type=None, region=None, res_instance_id=None, charge_mode=None, bill_type=None, enterprise_project_id=None, include_zero_record=None, offset=None, limit=None, method=None, sub_customer_id=None, statistic_type=None):
-        """QueryResRecordsDetailReq - a model defined in huaweicloud sdk"""
+        """QueryResRecordsDetailReq
+
+        The model defined in huaweicloud sdk
+
+        :param cycle: 查询的资源详单所在账期，格式为YYYY-MM。 示例：2019-01。  说明： 不支持2019年1月份之前的资源详单。
+        :type cycle: str
+        :param cloud_service_type: 云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
+        :type cloud_service_type: str
+        :param resource_type: 资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
+        :type resource_type: str
+        :param region: 云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
+        :type region: str
+        :param res_instance_id: 资源实例ID。
+        :type res_instance_id: str
+        :param charge_mode: 计费模式： 1 : 包年/包月3：按需10：预留实例
+        :type charge_mode: int
+        :param bill_type: 账单类型： 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更
+        :type bill_type: int
+        :param enterprise_project_id: 企业项目标识（企业项目ID）。 default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见如何获取企业项目ID。
+        :type enterprise_project_id: str
+        :param include_zero_record: 返回是否包含应付金额为0的记录。 true: 包含false: 不包含
+        :type include_zero_record: bool
+        :param offset: 偏移量，从0开始。默认值为0。  说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset &#x3D; 1，则返回满足条件的第二个数据至最后一个数据。 例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
+        :type offset: int
+        :param limit: 页面大小。默认值为10。
+        :type limit: int
+        :param method: 查询方式。 oneself：客户自己sub_customer：企业子客户all：客户自己和企业子客户 默认为all，如果没有企业子客户，all的时候也是查询客户自己的数据。
+        :type method: str
+        :param sub_customer_id: 企业子账号ID。  说明： 如果method取值不为sub_customer，则该参数无效。如果method取值为sub_customer，则该参数不能为空。
+        :type sub_customer_id: str
+        :param statistic_type: 统计类型。默认值为1。 1：按账期2：按天
+        :type statistic_type: int
+        """
         
         
 
@@ -122,7 +153,7 @@ class QueryResRecordsDetailReq:
         查询的资源详单所在账期，格式为YYYY-MM。 示例：2019-01。  说明： 不支持2019年1月份之前的资源详单。
 
         :param cycle: The cycle of this QueryResRecordsDetailReq.
-        :type: str
+        :type cycle: str
         """
         self._cycle = cycle
 
@@ -144,7 +175,7 @@ class QueryResRecordsDetailReq:
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
         :param cloud_service_type: The cloud_service_type of this QueryResRecordsDetailReq.
-        :type: str
+        :type cloud_service_type: str
         """
         self._cloud_service_type = cloud_service_type
 
@@ -166,7 +197,7 @@ class QueryResRecordsDetailReq:
         资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
 
         :param resource_type: The resource_type of this QueryResRecordsDetailReq.
-        :type: str
+        :type resource_type: str
         """
         self._resource_type = resource_type
 
@@ -188,7 +219,7 @@ class QueryResRecordsDetailReq:
         云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
         :param region: The region of this QueryResRecordsDetailReq.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -210,7 +241,7 @@ class QueryResRecordsDetailReq:
         资源实例ID。
 
         :param res_instance_id: The res_instance_id of this QueryResRecordsDetailReq.
-        :type: str
+        :type res_instance_id: str
         """
         self._res_instance_id = res_instance_id
 
@@ -232,7 +263,7 @@ class QueryResRecordsDetailReq:
         计费模式： 1 : 包年/包月3：按需10：预留实例
 
         :param charge_mode: The charge_mode of this QueryResRecordsDetailReq.
-        :type: int
+        :type charge_mode: int
         """
         self._charge_mode = charge_mode
 
@@ -254,7 +285,7 @@ class QueryResRecordsDetailReq:
         账单类型： 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更
 
         :param bill_type: The bill_type of this QueryResRecordsDetailReq.
-        :type: int
+        :type bill_type: int
         """
         self._bill_type = bill_type
 
@@ -276,7 +307,7 @@ class QueryResRecordsDetailReq:
         企业项目标识（企业项目ID）。 default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见如何获取企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this QueryResRecordsDetailReq.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -298,7 +329,7 @@ class QueryResRecordsDetailReq:
         返回是否包含应付金额为0的记录。 true: 包含false: 不包含
 
         :param include_zero_record: The include_zero_record of this QueryResRecordsDetailReq.
-        :type: bool
+        :type include_zero_record: bool
         """
         self._include_zero_record = include_zero_record
 
@@ -320,7 +351,7 @@ class QueryResRecordsDetailReq:
         偏移量，从0开始。默认值为0。  说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。 例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
         :param offset: The offset of this QueryResRecordsDetailReq.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -342,7 +373,7 @@ class QueryResRecordsDetailReq:
         页面大小。默认值为10。
 
         :param limit: The limit of this QueryResRecordsDetailReq.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -364,7 +395,7 @@ class QueryResRecordsDetailReq:
         查询方式。 oneself：客户自己sub_customer：企业子客户all：客户自己和企业子客户 默认为all，如果没有企业子客户，all的时候也是查询客户自己的数据。
 
         :param method: The method of this QueryResRecordsDetailReq.
-        :type: str
+        :type method: str
         """
         self._method = method
 
@@ -386,7 +417,7 @@ class QueryResRecordsDetailReq:
         企业子账号ID。  说明： 如果method取值不为sub_customer，则该参数无效。如果method取值为sub_customer，则该参数不能为空。
 
         :param sub_customer_id: The sub_customer_id of this QueryResRecordsDetailReq.
-        :type: str
+        :type sub_customer_id: str
         """
         self._sub_customer_id = sub_customer_id
 
@@ -408,7 +439,7 @@ class QueryResRecordsDetailReq:
         统计类型。默认值为1。 1：按账期2：按天
 
         :param statistic_type: The statistic_type of this QueryResRecordsDetailReq.
-        :type: int
+        :type statistic_type: int
         """
         self._statistic_type = statistic_type
 

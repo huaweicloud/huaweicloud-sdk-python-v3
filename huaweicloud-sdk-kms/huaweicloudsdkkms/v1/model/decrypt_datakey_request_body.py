@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DecryptDatakeyRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class DecryptDatakeyRequestBody:
     }
 
     def __init__(self, key_id=None, encryption_context=None, cipher_text=None, datakey_cipher_length=None, sequence=None):
-        """DecryptDatakeyRequestBody - a model defined in huaweicloud sdk"""
+        """DecryptDatakeyRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param key_id: 密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
+        :type key_id: str
+        :param encryption_context: 一系列key-value键值对，用于记录资源上下文信息，用于保护数据的完整性，不应包含敏感信息，最大长度为8192。 当在加密时指定了该参数时，解密密文时，需要传入相同的参数，才能正确的解密。 例如：{\&quot;Key1\&quot;:\&quot;Value1\&quot;,\&quot;Key2\&quot;:\&quot;Value2\&quot;}
+        :type encryption_context: object
+        :param cipher_text: DEK密文及元数据的16进制字符串。取值为加密数据密钥结果中的cipher_text的值。
+        :type cipher_text: str
+        :param datakey_cipher_length: 密钥字节长度，取值范围为1~1024。 密钥字节长度，取值为“64”。
+        :type datakey_cipher_length: str
+        :param sequence: 请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
+        :type sequence: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class DecryptDatakeyRequestBody:
         密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
 
         :param key_id: The key_id of this DecryptDatakeyRequestBody.
-        :type: str
+        :type key_id: str
         """
         self._key_id = key_id
 
@@ -100,7 +113,7 @@ class DecryptDatakeyRequestBody:
         一系列key-value键值对，用于记录资源上下文信息，用于保护数据的完整性，不应包含敏感信息，最大长度为8192。 当在加密时指定了该参数时，解密密文时，需要传入相同的参数，才能正确的解密。 例如：{\"Key1\":\"Value1\",\"Key2\":\"Value2\"}
 
         :param encryption_context: The encryption_context of this DecryptDatakeyRequestBody.
-        :type: object
+        :type encryption_context: object
         """
         self._encryption_context = encryption_context
 
@@ -122,7 +135,7 @@ class DecryptDatakeyRequestBody:
         DEK密文及元数据的16进制字符串。取值为加密数据密钥结果中的cipher_text的值。
 
         :param cipher_text: The cipher_text of this DecryptDatakeyRequestBody.
-        :type: str
+        :type cipher_text: str
         """
         self._cipher_text = cipher_text
 
@@ -144,7 +157,7 @@ class DecryptDatakeyRequestBody:
         密钥字节长度，取值范围为1~1024。 密钥字节长度，取值为“64”。
 
         :param datakey_cipher_length: The datakey_cipher_length of this DecryptDatakeyRequestBody.
-        :type: str
+        :type datakey_cipher_length: str
         """
         self._datakey_cipher_length = datakey_cipher_length
 
@@ -166,7 +179,7 @@ class DecryptDatakeyRequestBody:
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
 
         :param sequence: The sequence of this DecryptDatakeyRequestBody.
-        :type: str
+        :type sequence: str
         """
         self._sequence = sequence
 

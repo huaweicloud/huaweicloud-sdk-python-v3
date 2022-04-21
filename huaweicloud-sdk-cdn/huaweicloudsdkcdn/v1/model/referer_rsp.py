@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RefererRsp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class RefererRsp:
     }
 
     def __init__(self, referer_type=None, referer_list=None, include_empty=None):
-        """RefererRsp - a model defined in huaweicloud sdk"""
+        """RefererRsp
+
+        The model defined in huaweicloud sdk
+
+        :param referer_type: Referer类型。取值：0代表不设置Referer过滤；1代表黑名单；2代表白名单。默认取值为0。
+        :type referer_type: int
+        :param referer_list: 请输入域名或IP地址，以“;”进行分割，域名、IP地址可以混合输入，支持泛域名添加。输入的域名、IP地址总数不超过100个。当设置防盗链时，此项必填。
+        :type referer_list: str
+        :param include_empty: 是否包含空Referer。如果是黑名单并开启该选项，则表示无referer不允许访问。如果是白名单并开启该选项，则表示无referer允许访问。默认不包含。
+        :type include_empty: bool
+        """
         
         
 
@@ -68,7 +77,7 @@ class RefererRsp:
         Referer类型。取值：0代表不设置Referer过滤；1代表黑名单；2代表白名单。默认取值为0。
 
         :param referer_type: The referer_type of this RefererRsp.
-        :type: int
+        :type referer_type: int
         """
         self._referer_type = referer_type
 
@@ -90,7 +99,7 @@ class RefererRsp:
         请输入域名或IP地址，以“;”进行分割，域名、IP地址可以混合输入，支持泛域名添加。输入的域名、IP地址总数不超过100个。当设置防盗链时，此项必填。
 
         :param referer_list: The referer_list of this RefererRsp.
-        :type: str
+        :type referer_list: str
         """
         self._referer_list = referer_list
 
@@ -112,7 +121,7 @@ class RefererRsp:
         是否包含空Referer。如果是黑名单并开启该选项，则表示无referer不允许访问。如果是白名单并开启该选项，则表示无referer允许访问。默认不包含。
 
         :param include_empty: The include_empty of this RefererRsp.
-        :type: bool
+        :type include_empty: bool
         """
         self._include_empty = include_empty
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteApiAclBindingV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteApiAclBindingV2Request:
     }
 
     def __init__(self, instance_id=None, acl_bindings_id=None):
-        """DeleteApiAclBindingV2Request - a model defined in huaweicloud sdk"""
+        """DeleteApiAclBindingV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param acl_bindings_id: 绑定关系编号
+        :type acl_bindings_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class DeleteApiAclBindingV2Request:
         实例ID
 
         :param instance_id: The instance_id of this DeleteApiAclBindingV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -83,7 +90,7 @@ class DeleteApiAclBindingV2Request:
         绑定关系编号
 
         :param acl_bindings_id: The acl_bindings_id of this DeleteApiAclBindingV2Request.
-        :type: str
+        :type acl_bindings_id: str
         """
         self._acl_bindings_id = acl_bindings_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowIpInfoRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowIpInfoRequest:
     }
 
     def __init__(self, enterprise_project_id=None, ips=None):
-        """ShowIpInfoRequest - a model defined in huaweicloud sdk"""
+        """ShowIpInfoRequest
+
+        The model defined in huaweicloud sdk
+
+        :param enterprise_project_id: 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子账号调用接口时，该参数必传。
+        :type enterprise_project_id: str
+        :param ips: IP地址列表，以“,”分割，最多20个。
+        :type ips: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ShowIpInfoRequest:
         当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子账号调用接口时，该参数必传。
 
         :param enterprise_project_id: The enterprise_project_id of this ShowIpInfoRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -84,7 +91,7 @@ class ShowIpInfoRequest:
         IP地址列表，以“,”分割，最多20个。
 
         :param ips: The ips of this ShowIpInfoRequest.
-        :type: str
+        :type ips: str
         """
         self._ips = ips
 

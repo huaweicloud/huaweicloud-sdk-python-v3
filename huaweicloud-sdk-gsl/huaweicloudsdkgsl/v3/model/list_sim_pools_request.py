@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSimPoolsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListSimPoolsRequest:
     }
 
     def __init__(self, pool_name=None, limit=None, offset=None, billing_cycle=None):
-        """ListSimPoolsRequest - a model defined in huaweicloud sdk"""
+        """ListSimPoolsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param pool_name: 流量池名称
+        :type pool_name: str
+        :param limit: 分页查询时每页显示的记录数，默认值为10，取值范围为10-500的整数
+        :type limit: int
+        :param offset: 分页查询时的页码数，默认值为1，取值范围为1-1000000的整数
+        :type offset: int
+        :param billing_cycle: 账期，例如：2021-04
+        :type billing_cycle: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class ListSimPoolsRequest:
         流量池名称
 
         :param pool_name: The pool_name of this ListSimPoolsRequest.
-        :type: str
+        :type pool_name: str
         """
         self._pool_name = pool_name
 
@@ -95,7 +106,7 @@ class ListSimPoolsRequest:
         分页查询时每页显示的记录数，默认值为10，取值范围为10-500的整数
 
         :param limit: The limit of this ListSimPoolsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -117,7 +128,7 @@ class ListSimPoolsRequest:
         分页查询时的页码数，默认值为1，取值范围为1-1000000的整数
 
         :param offset: The offset of this ListSimPoolsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -139,7 +150,7 @@ class ListSimPoolsRequest:
         账期，例如：2021-04
 
         :param billing_cycle: The billing_cycle of this ListSimPoolsRequest.
-        :type: str
+        :type billing_cycle: str
         """
         self._billing_cycle = billing_cycle
 

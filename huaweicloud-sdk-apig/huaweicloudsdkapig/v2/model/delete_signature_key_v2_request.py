@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteSignatureKeyV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteSignatureKeyV2Request:
     }
 
     def __init__(self, instance_id=None, sign_id=None):
-        """DeleteSignatureKeyV2Request - a model defined in huaweicloud sdk"""
+        """DeleteSignatureKeyV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param sign_id: 签名密钥编号
+        :type sign_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class DeleteSignatureKeyV2Request:
         实例ID
 
         :param instance_id: The instance_id of this DeleteSignatureKeyV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -83,7 +90,7 @@ class DeleteSignatureKeyV2Request:
         签名密钥编号
 
         :param sign_id: The sign_id of this DeleteSignatureKeyV2Request.
-        :type: str
+        :type sign_id: str
         """
         self._sign_id = sign_id
 

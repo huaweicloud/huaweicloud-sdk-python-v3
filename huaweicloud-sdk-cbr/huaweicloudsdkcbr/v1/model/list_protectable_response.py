@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListProtectableResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListProtectableResponse(SdkResponse):
     }
 
     def __init__(self, instances=None):
-        """ListProtectableResponse - a model defined in huaweicloud sdk"""
+        """ListProtectableResponse
+
+        The model defined in huaweicloud sdk
+
+        :param instances: 可保护性查询实例
+        :type instances: list[:class:`huaweicloudsdkcbr.v1.ProtectablesResp`]
+        """
         
         super(ListProtectableResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListProtectableResponse(SdkResponse):
         可保护性查询实例
 
         :return: The instances of this ListProtectableResponse.
-        :rtype: list[ProtectablesResp]
+        :rtype: list[:class:`huaweicloudsdkcbr.v1.ProtectablesResp`]
         """
         return self._instances
 
@@ -58,7 +63,7 @@ class ListProtectableResponse(SdkResponse):
         可保护性查询实例
 
         :param instances: The instances of this ListProtectableResponse.
-        :type: list[ProtectablesResp]
+        :type instances: list[:class:`huaweicloudsdkcbr.v1.ProtectablesResp`]
         """
         self._instances = instances
 

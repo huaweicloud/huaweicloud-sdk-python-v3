@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateTransferRequestBodyLogTransferInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class CreateTransferRequestBodyLogTransferInfo:
     }
 
     def __init__(self, log_transfer_type=None, log_transfer_mode=None, log_storage_format=None, log_transfer_status=None, log_agency_transfer=None, log_transfer_detail=None):
-        """CreateTransferRequestBodyLogTransferInfo - a model defined in huaweicloud sdk"""
+        """CreateTransferRequestBodyLogTransferInfo
+
+        The model defined in huaweicloud sdk
+
+        :param log_transfer_type: 日志转储类型。OBS指OBS日志转储，DIS指DIS日志转储，DMS指DMS日志转储
+        :type log_transfer_type: str
+        :param log_transfer_mode: 日志转储方式。cycle是指周期性转储，realTime是指实时转储。OBS转储只支持\&quot;cycle\&quot;，DIS转储和DMS转储只支持\&quot;realTime\&quot;。
+        :type log_transfer_mode: str
+        :param log_storage_format: 日志转储格式。只支持\&quot;RAW\&quot;, \&quot;JSON\&quot;。RAW是指原始日志格式，JSON是指JSON日志格式。OBS转储和DIS转储支持JSON和RAW，DMS转储仅支持RAW
+        :type log_storage_format: str
+        :param log_transfer_status: 日志转储状态，只支持\&quot;ENABLE\&quot;,\&quot;DISABLE\&quot;,\&quot;EXCEPTION\&quot;。ENABLE是指日志转储开启状态，DISABLE是指日志转储关闭状态，EXCEPTION是指日志转储异常状态
+        :type log_transfer_status: str
+        :param log_agency_transfer: 
+        :type log_agency_transfer: :class:`huaweicloudsdklts.v2.CreateTransferRequestBodyLogTransferInfoLogAgencyTransfer`
+        :param log_transfer_detail: 
+        :type log_transfer_detail: :class:`huaweicloudsdklts.v2.TransferDetail`
+        """
         
         
 
@@ -78,7 +93,7 @@ class CreateTransferRequestBodyLogTransferInfo:
         日志转储类型。OBS指OBS日志转储，DIS指DIS日志转储，DMS指DMS日志转储
 
         :param log_transfer_type: The log_transfer_type of this CreateTransferRequestBodyLogTransferInfo.
-        :type: str
+        :type log_transfer_type: str
         """
         self._log_transfer_type = log_transfer_type
 
@@ -100,7 +115,7 @@ class CreateTransferRequestBodyLogTransferInfo:
         日志转储方式。cycle是指周期性转储，realTime是指实时转储。OBS转储只支持\"cycle\"，DIS转储和DMS转储只支持\"realTime\"。
 
         :param log_transfer_mode: The log_transfer_mode of this CreateTransferRequestBodyLogTransferInfo.
-        :type: str
+        :type log_transfer_mode: str
         """
         self._log_transfer_mode = log_transfer_mode
 
@@ -122,7 +137,7 @@ class CreateTransferRequestBodyLogTransferInfo:
         日志转储格式。只支持\"RAW\", \"JSON\"。RAW是指原始日志格式，JSON是指JSON日志格式。OBS转储和DIS转储支持JSON和RAW，DMS转储仅支持RAW
 
         :param log_storage_format: The log_storage_format of this CreateTransferRequestBodyLogTransferInfo.
-        :type: str
+        :type log_storage_format: str
         """
         self._log_storage_format = log_storage_format
 
@@ -144,7 +159,7 @@ class CreateTransferRequestBodyLogTransferInfo:
         日志转储状态，只支持\"ENABLE\",\"DISABLE\",\"EXCEPTION\"。ENABLE是指日志转储开启状态，DISABLE是指日志转储关闭状态，EXCEPTION是指日志转储异常状态
 
         :param log_transfer_status: The log_transfer_status of this CreateTransferRequestBodyLogTransferInfo.
-        :type: str
+        :type log_transfer_status: str
         """
         self._log_transfer_status = log_transfer_status
 
@@ -154,7 +169,7 @@ class CreateTransferRequestBodyLogTransferInfo:
 
 
         :return: The log_agency_transfer of this CreateTransferRequestBodyLogTransferInfo.
-        :rtype: CreateTransferRequestBodyLogTransferInfoLogAgencyTransfer
+        :rtype: :class:`huaweicloudsdklts.v2.CreateTransferRequestBodyLogTransferInfoLogAgencyTransfer`
         """
         return self._log_agency_transfer
 
@@ -164,7 +179,7 @@ class CreateTransferRequestBodyLogTransferInfo:
 
 
         :param log_agency_transfer: The log_agency_transfer of this CreateTransferRequestBodyLogTransferInfo.
-        :type: CreateTransferRequestBodyLogTransferInfoLogAgencyTransfer
+        :type log_agency_transfer: :class:`huaweicloudsdklts.v2.CreateTransferRequestBodyLogTransferInfoLogAgencyTransfer`
         """
         self._log_agency_transfer = log_agency_transfer
 
@@ -174,7 +189,7 @@ class CreateTransferRequestBodyLogTransferInfo:
 
 
         :return: The log_transfer_detail of this CreateTransferRequestBodyLogTransferInfo.
-        :rtype: TransferDetail
+        :rtype: :class:`huaweicloudsdklts.v2.TransferDetail`
         """
         return self._log_transfer_detail
 
@@ -184,7 +199,7 @@ class CreateTransferRequestBodyLogTransferInfo:
 
 
         :param log_transfer_detail: The log_transfer_detail of this CreateTransferRequestBodyLogTransferInfo.
-        :type: TransferDetail
+        :type log_transfer_detail: :class:`huaweicloudsdklts.v2.TransferDetail`
         """
         self._log_transfer_detail = log_transfer_detail
 

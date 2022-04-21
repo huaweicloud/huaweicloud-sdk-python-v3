@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListFunctionsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListFunctionsRequest:
     }
 
     def __init__(self, marker=None, maxitems=None, package_name=None):
-        """ListFunctionsRequest - a model defined in huaweicloud sdk"""
+        """ListFunctionsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param marker: 上一次查询到的最后的记录位置。
+        :type marker: str
+        :param maxitems: 每次查询获取的最大函数记录数量 最大值：400 如果不提供该值或者提供的值大于400或等于0，则使用默认值：400 如果该值小于0，则返回参数错误。
+        :type maxitems: str
+        :param package_name: 应用名称。
+        :type package_name: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class ListFunctionsRequest:
         上一次查询到的最后的记录位置。
 
         :param marker: The marker of this ListFunctionsRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -90,7 +99,7 @@ class ListFunctionsRequest:
         每次查询获取的最大函数记录数量 最大值：400 如果不提供该值或者提供的值大于400或等于0，则使用默认值：400 如果该值小于0，则返回参数错误。
 
         :param maxitems: The maxitems of this ListFunctionsRequest.
-        :type: str
+        :type maxitems: str
         """
         self._maxitems = maxitems
 
@@ -112,7 +121,7 @@ class ListFunctionsRequest:
         应用名称。
 
         :param package_name: The package_name of this ListFunctionsRequest.
-        :type: str
+        :type package_name: str
         """
         self._package_name = package_name
 

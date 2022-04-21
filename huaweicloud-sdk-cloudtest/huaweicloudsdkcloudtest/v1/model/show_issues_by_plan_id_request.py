@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowIssuesByPlanIdRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowIssuesByPlanIdRequest:
     }
 
     def __init__(self, project_id=None, plan_id=None, offset=None, limit=None):
-        """ShowIssuesByPlanIdRequest - a model defined in huaweicloud sdk"""
+        """ShowIssuesByPlanIdRequest
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: DevCloud项目id，项目唯一标识，固定长度32位字符
+        :type project_id: str
+        :param plan_id: 测试计划id，测试计划的唯一标识，固定长度32位字符
+        :type plan_id: str
+        :param offset: 起始偏移量，表示从此偏移量开始查询， offset大于等于0
+        :type offset: int
+        :param limit: 每页显示的条目数量,最大支持200条
+        :type limit: int
+        """
         
         
 
@@ -69,7 +80,7 @@ class ShowIssuesByPlanIdRequest:
         DevCloud项目id，项目唯一标识，固定长度32位字符
 
         :param project_id: The project_id of this ShowIssuesByPlanIdRequest.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -91,7 +102,7 @@ class ShowIssuesByPlanIdRequest:
         测试计划id，测试计划的唯一标识，固定长度32位字符
 
         :param plan_id: The plan_id of this ShowIssuesByPlanIdRequest.
-        :type: str
+        :type plan_id: str
         """
         self._plan_id = plan_id
 
@@ -113,7 +124,7 @@ class ShowIssuesByPlanIdRequest:
         起始偏移量，表示从此偏移量开始查询， offset大于等于0
 
         :param offset: The offset of this ShowIssuesByPlanIdRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -135,7 +146,7 @@ class ShowIssuesByPlanIdRequest:
         每页显示的条目数量,最大支持200条
 
         :param limit: The limit of this ShowIssuesByPlanIdRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

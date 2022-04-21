@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSlowLogsNewRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ListSlowLogsNewRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, start_date=None, end_date=None, offset=None, limit=None, type=None):
-        """ListSlowLogsNewRequest - a model defined in huaweicloud sdk"""
+        """ListSlowLogsNewRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言
+        :type x_language: str
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param start_date: 开始日期，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        :type start_date: str
+        :param end_date: 结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。只能查询当前时间前一个月内的慢日志。
+        :type end_date: str
+        :param offset: 索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
+        :type offset: int
+        :param limit: 每页多少条记录，取值范围是1~100，不填时默认为10。
+        :type limit: int
+        :param type: 语句类型，取空值，表示查询所有语句类型。
+        :type type: str
+        """
         
         
 
@@ -85,7 +102,7 @@ class ListSlowLogsNewRequest:
         语言
 
         :param x_language: The x_language of this ListSlowLogsNewRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -107,7 +124,7 @@ class ListSlowLogsNewRequest:
         实例ID。
 
         :param instance_id: The instance_id of this ListSlowLogsNewRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -129,7 +146,7 @@ class ListSlowLogsNewRequest:
         开始日期，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
         :param start_date: The start_date of this ListSlowLogsNewRequest.
-        :type: str
+        :type start_date: str
         """
         self._start_date = start_date
 
@@ -151,7 +168,7 @@ class ListSlowLogsNewRequest:
         结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。只能查询当前时间前一个月内的慢日志。
 
         :param end_date: The end_date of this ListSlowLogsNewRequest.
-        :type: str
+        :type end_date: str
         """
         self._end_date = end_date
 
@@ -173,7 +190,7 @@ class ListSlowLogsNewRequest:
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
         :param offset: The offset of this ListSlowLogsNewRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -195,7 +212,7 @@ class ListSlowLogsNewRequest:
         每页多少条记录，取值范围是1~100，不填时默认为10。
 
         :param limit: The limit of this ListSlowLogsNewRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -217,7 +234,7 @@ class ListSlowLogsNewRequest:
         语句类型，取空值，表示查询所有语句类型。
 
         :param type: The type of this ListSlowLogsNewRequest.
-        :type: str
+        :type type: str
         """
         self._type = type
 

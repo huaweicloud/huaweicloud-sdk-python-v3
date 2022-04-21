@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateTempRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateTempRequest:
     }
 
     def __init__(self, template_id=None, body=None):
-        """UpdateTempRequest - a model defined in huaweicloud sdk"""
+        """UpdateTempRequest
+
+        The model defined in huaweicloud sdk
+
+        :param template_id: 事务id
+        :type template_id: int
+        :param body: Body of the UpdateTempRequest
+        :type body: :class:`huaweicloudsdkcpts.v1.UpdateTempRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateTempRequest:
         事务id
 
         :param template_id: The template_id of this UpdateTempRequest.
-        :type: int
+        :type template_id: int
         """
         self._template_id = template_id
 
@@ -72,7 +79,7 @@ class UpdateTempRequest:
 
 
         :return: The body of this UpdateTempRequest.
-        :rtype: UpdateTempRequestBody
+        :rtype: :class:`huaweicloudsdkcpts.v1.UpdateTempRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateTempRequest:
 
 
         :param body: The body of this UpdateTempRequest.
-        :type: UpdateTempRequestBody
+        :type body: :class:`huaweicloudsdkcpts.v1.UpdateTempRequestBody`
         """
         self._body = body
 

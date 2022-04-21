@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdatePredefineTagsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class UpdatePredefineTagsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdatePredefineTagsResponse - a model defined in huaweicloud sdk"""
+        """UpdatePredefineTagsResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(UpdatePredefineTagsResponse, self).__init__()
         self.discriminator = None

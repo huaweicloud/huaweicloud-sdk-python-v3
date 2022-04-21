@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResourceGroup:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ResourceGroup:
     }
 
     def __init__(self, namespace=None, dimensions=None, status=None):
-        """ResourceGroup - a model defined in huaweicloud sdk"""
+        """ResourceGroup
+
+        The model defined in huaweicloud sdk
+
+        :param namespace: 资源类型。即命名空间，如弹性云服务器的资源命名空间为：SYS.ECS；各服务的命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
+        :type namespace: str
+        :param dimensions: 一个或者多个资源维度。
+        :type dimensions: list[:class:`huaweicloudsdkces.v1.MetricsDimension`]
+        :param status: 资源分组中该资源的当前状态，值可为health、unhealth、no_alarm_rule；health表示健康，unhealth表示不健康，no_alarm_rule表示未设置告警规则。
+        :type status: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class ResourceGroup:
         资源类型。即命名空间，如弹性云服务器的资源命名空间为：SYS.ECS；各服务的命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
         :param namespace: The namespace of this ResourceGroup.
-        :type: str
+        :type namespace: str
         """
         self._namespace = namespace
 
@@ -79,7 +88,7 @@ class ResourceGroup:
         一个或者多个资源维度。
 
         :return: The dimensions of this ResourceGroup.
-        :rtype: list[MetricsDimension]
+        :rtype: list[:class:`huaweicloudsdkces.v1.MetricsDimension`]
         """
         return self._dimensions
 
@@ -90,7 +99,7 @@ class ResourceGroup:
         一个或者多个资源维度。
 
         :param dimensions: The dimensions of this ResourceGroup.
-        :type: list[MetricsDimension]
+        :type dimensions: list[:class:`huaweicloudsdkces.v1.MetricsDimension`]
         """
         self._dimensions = dimensions
 
@@ -112,7 +121,7 @@ class ResourceGroup:
         资源分组中该资源的当前状态，值可为health、unhealth、no_alarm_rule；health表示健康，unhealth表示不健康，no_alarm_rule表示未设置告警规则。
 
         :param status: The status of this ResourceGroup.
-        :type: str
+        :type status: str
         """
         self._status = status
 

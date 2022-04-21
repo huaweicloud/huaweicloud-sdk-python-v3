@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Phoneme:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class Phoneme:
     }
 
     def __init__(self, arpa=None, ipa=None, start_time=None, end_time=None, fluency=None, pronunciation=None):
-        """Phoneme - a model defined in huaweicloud sdk"""
+        """Phoneme
+
+        The model defined in huaweicloud sdk
+
+        :param arpa: 音标（ARPAbet音标系统）
+        :type arpa: str
+        :param ipa: 音标（国际音标系统）
+        :type ipa: str
+        :param start_time: 
+        :type start_time: float
+        :param end_time: 
+        :type end_time: float
+        :param fluency: 
+        :type fluency: :class:`huaweicloudsdksis.v1.PhonemeFluency`
+        :param pronunciation: 
+        :type pronunciation: :class:`huaweicloudsdksis.v1.PhonemePronunciation`
+        """
         
         
 
@@ -77,7 +92,7 @@ class Phoneme:
         音标（ARPAbet音标系统）
 
         :param arpa: The arpa of this Phoneme.
-        :type: str
+        :type arpa: str
         """
         self._arpa = arpa
 
@@ -99,7 +114,7 @@ class Phoneme:
         音标（国际音标系统）
 
         :param ipa: The ipa of this Phoneme.
-        :type: str
+        :type ipa: str
         """
         self._ipa = ipa
 
@@ -121,7 +136,7 @@ class Phoneme:
         
 
         :param start_time: The start_time of this Phoneme.
-        :type: float
+        :type start_time: float
         """
         self._start_time = start_time
 
@@ -143,7 +158,7 @@ class Phoneme:
         
 
         :param end_time: The end_time of this Phoneme.
-        :type: float
+        :type end_time: float
         """
         self._end_time = end_time
 
@@ -153,7 +168,7 @@ class Phoneme:
 
 
         :return: The fluency of this Phoneme.
-        :rtype: PhonemeFluency
+        :rtype: :class:`huaweicloudsdksis.v1.PhonemeFluency`
         """
         return self._fluency
 
@@ -163,7 +178,7 @@ class Phoneme:
 
 
         :param fluency: The fluency of this Phoneme.
-        :type: PhonemeFluency
+        :type fluency: :class:`huaweicloudsdksis.v1.PhonemeFluency`
         """
         self._fluency = fluency
 
@@ -173,7 +188,7 @@ class Phoneme:
 
 
         :return: The pronunciation of this Phoneme.
-        :rtype: PhonemePronunciation
+        :rtype: :class:`huaweicloudsdksis.v1.PhonemePronunciation`
         """
         return self._pronunciation
 
@@ -183,7 +198,7 @@ class Phoneme:
 
 
         :param pronunciation: The pronunciation of this Phoneme.
-        :type: PhonemePronunciation
+        :type pronunciation: :class:`huaweicloudsdksis.v1.PhonemePronunciation`
         """
         self._pronunciation = pronunciation
 

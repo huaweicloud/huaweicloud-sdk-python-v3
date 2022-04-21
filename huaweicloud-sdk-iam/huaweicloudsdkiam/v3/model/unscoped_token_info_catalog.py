@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UnscopedTokenInfoCatalog:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class UnscopedTokenInfoCatalog:
     }
 
     def __init__(self, id=None, interface=None, region=None, region_id=None, url=None):
-        """UnscopedTokenInfoCatalog - a model defined in huaweicloud sdk"""
+        """UnscopedTokenInfoCatalog
+
+        The model defined in huaweicloud sdk
+
+        :param id: 终端节点ID。
+        :type id: str
+        :param interface: 接口类型，描述接口在该终端节点的可见性。值为“public”，表示该接口为公开接口。
+        :type interface: str
+        :param region: 终端节点所属区域。
+        :type region: str
+        :param region_id: 终端节点所属区域ID。
+        :type region_id: str
+        :param url: 终端节点的URL。
+        :type url: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class UnscopedTokenInfoCatalog:
         终端节点ID。
 
         :param id: The id of this UnscopedTokenInfoCatalog.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -100,7 +113,7 @@ class UnscopedTokenInfoCatalog:
         接口类型，描述接口在该终端节点的可见性。值为“public”，表示该接口为公开接口。
 
         :param interface: The interface of this UnscopedTokenInfoCatalog.
-        :type: str
+        :type interface: str
         """
         self._interface = interface
 
@@ -122,7 +135,7 @@ class UnscopedTokenInfoCatalog:
         终端节点所属区域。
 
         :param region: The region of this UnscopedTokenInfoCatalog.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -144,7 +157,7 @@ class UnscopedTokenInfoCatalog:
         终端节点所属区域ID。
 
         :param region_id: The region_id of this UnscopedTokenInfoCatalog.
-        :type: str
+        :type region_id: str
         """
         self._region_id = region_id
 
@@ -166,7 +179,7 @@ class UnscopedTokenInfoCatalog:
         终端节点的URL。
 
         :param url: The url of this UnscopedTokenInfoCatalog.
-        :type: str
+        :type url: str
         """
         self._url = url
 

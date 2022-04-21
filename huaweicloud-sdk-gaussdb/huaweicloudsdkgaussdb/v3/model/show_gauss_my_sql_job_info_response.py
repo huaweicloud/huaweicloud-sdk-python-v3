@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowGaussMySqlJobInfoResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowGaussMySqlJobInfoResponse(SdkResponse):
     }
 
     def __init__(self, job=None):
-        """ShowGaussMySqlJobInfoResponse - a model defined in huaweicloud sdk"""
+        """ShowGaussMySqlJobInfoResponse
+
+        The model defined in huaweicloud sdk
+
+        :param job: 
+        :type job: :class:`huaweicloudsdkgaussdb.v3.GetJobInfoDetail`
+        """
         
         super(ShowGaussMySqlJobInfoResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class ShowGaussMySqlJobInfoResponse(SdkResponse):
 
 
         :return: The job of this ShowGaussMySqlJobInfoResponse.
-        :rtype: GetJobInfoDetail
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.GetJobInfoDetail`
         """
         return self._job
 
@@ -56,7 +61,7 @@ class ShowGaussMySqlJobInfoResponse(SdkResponse):
 
 
         :param job: The job of this ShowGaussMySqlJobInfoResponse.
-        :type: GetJobInfoDetail
+        :type job: :class:`huaweicloudsdkgaussdb.v3.GetJobInfoDetail`
         """
         self._job = job
 

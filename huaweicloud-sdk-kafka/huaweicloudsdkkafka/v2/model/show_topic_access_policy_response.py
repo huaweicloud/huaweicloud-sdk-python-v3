@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowTopicAccessPolicyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowTopicAccessPolicyResponse(SdkResponse):
     }
 
     def __init__(self, name=None, topic_type=None, policies=None):
-        """ShowTopicAccessPolicyResponse - a model defined in huaweicloud sdk"""
+        """ShowTopicAccessPolicyResponse
+
+        The model defined in huaweicloud sdk
+
+        :param name: topic名称。
+        :type name: str
+        :param topic_type: topic类型。
+        :type topic_type: int
+        :param policies: 权限列表。
+        :type policies: list[:class:`huaweicloudsdkkafka.v2.PolicyEntity`]
+        """
         
         super(ShowTopicAccessPolicyResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ShowTopicAccessPolicyResponse(SdkResponse):
         topic名称。
 
         :param name: The name of this ShowTopicAccessPolicyResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -90,7 +99,7 @@ class ShowTopicAccessPolicyResponse(SdkResponse):
         topic类型。
 
         :param topic_type: The topic_type of this ShowTopicAccessPolicyResponse.
-        :type: int
+        :type topic_type: int
         """
         self._topic_type = topic_type
 
@@ -101,7 +110,7 @@ class ShowTopicAccessPolicyResponse(SdkResponse):
         权限列表。
 
         :return: The policies of this ShowTopicAccessPolicyResponse.
-        :rtype: list[PolicyEntity]
+        :rtype: list[:class:`huaweicloudsdkkafka.v2.PolicyEntity`]
         """
         return self._policies
 
@@ -112,7 +121,7 @@ class ShowTopicAccessPolicyResponse(SdkResponse):
         权限列表。
 
         :param policies: The policies of this ShowTopicAccessPolicyResponse.
-        :type: list[PolicyEntity]
+        :type policies: list[:class:`huaweicloudsdkkafka.v2.PolicyEntity`]
         """
         self._policies = policies
 

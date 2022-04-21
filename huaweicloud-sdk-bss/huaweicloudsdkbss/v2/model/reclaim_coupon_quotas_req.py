@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ReclaimCouponQuotasReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ReclaimCouponQuotasReq:
     }
 
     def __init__(self, quota_ids=None, remark=None):
-        """ReclaimCouponQuotasReq - a model defined in huaweicloud sdk"""
+        """ReclaimCouponQuotasReq
+
+        The model defined in huaweicloud sdk
+
+        :param quota_ids: 被回收的精英服务商的代金券额度ID。获取方法请参见查询优惠券额度。
+        :type quota_ids: list[str]
+        :param remark: 回收时的备注。
+        :type remark: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ReclaimCouponQuotasReq:
         被回收的精英服务商的代金券额度ID。获取方法请参见查询优惠券额度。
 
         :param quota_ids: The quota_ids of this ReclaimCouponQuotasReq.
-        :type: list[str]
+        :type quota_ids: list[str]
         """
         self._quota_ids = quota_ids
 
@@ -84,7 +91,7 @@ class ReclaimCouponQuotasReq:
         回收时的备注。
 
         :param remark: The remark of this ReclaimCouponQuotasReq.
-        :type: str
+        :type remark: str
         """
         self._remark = remark
 

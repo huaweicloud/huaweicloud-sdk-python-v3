@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VpcBaseInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class VpcBaseInfo:
     }
 
     def __init__(self, ecs_id=None, ecs_name=None, cascade_flag=None):
-        """VpcBaseInfo - a model defined in huaweicloud sdk"""
+        """VpcBaseInfo
+
+        The model defined in huaweicloud sdk
+
+        :param ecs_id: 云服务器ID
+        :type ecs_id: str
+        :param ecs_name: 云服务器名称
+        :type ecs_name: str
+        :param cascade_flag: 是否使用级联方式  暂不支持
+        :type cascade_flag: bool
+        """
         
         
 
@@ -68,7 +77,7 @@ class VpcBaseInfo:
         云服务器ID
 
         :param ecs_id: The ecs_id of this VpcBaseInfo.
-        :type: str
+        :type ecs_id: str
         """
         self._ecs_id = ecs_id
 
@@ -90,7 +99,7 @@ class VpcBaseInfo:
         云服务器名称
 
         :param ecs_name: The ecs_name of this VpcBaseInfo.
-        :type: str
+        :type ecs_name: str
         """
         self._ecs_name = ecs_name
 
@@ -112,7 +121,7 @@ class VpcBaseInfo:
         是否使用级联方式  暂不支持
 
         :param cascade_flag: The cascade_flag of this VpcBaseInfo.
-        :type: bool
+        :type cascade_flag: bool
         """
         self._cascade_flag = cascade_flag
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCommitsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListCommitsResponse(SdkResponse):
     }
 
     def __init__(self, commits=None):
-        """ListCommitsResponse - a model defined in huaweicloud sdk"""
+        """ListCommitsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param commits: 提交记录列表。
+        :type commits: list[:class:`huaweicloudsdkservicestage.v2.CommitsCommits`]
+        """
         
         super(ListCommitsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListCommitsResponse(SdkResponse):
         提交记录列表。
 
         :return: The commits of this ListCommitsResponse.
-        :rtype: list[CommitsCommits]
+        :rtype: list[:class:`huaweicloudsdkservicestage.v2.CommitsCommits`]
         """
         return self._commits
 
@@ -58,7 +63,7 @@ class ListCommitsResponse(SdkResponse):
         提交记录列表。
 
         :param commits: The commits of this ListCommitsResponse.
-        :type: list[CommitsCommits]
+        :type commits: list[:class:`huaweicloudsdkservicestage.v2.CommitsCommits`]
         """
         self._commits = commits
 

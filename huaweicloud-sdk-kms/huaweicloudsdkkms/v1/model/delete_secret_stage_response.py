@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteSecretStageResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class DeleteSecretStageResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteSecretStageResponse - a model defined in huaweicloud sdk"""
+        """DeleteSecretStageResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(DeleteSecretStageResponse, self).__init__()
         self.discriminator = None

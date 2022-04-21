@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowKeyRotationStatusResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowKeyRotationStatusResponse(SdkResponse):
     }
 
     def __init__(self, key_rotation_enabled=None, rotation_interval=None, last_rotation_time=None, number_of_rotations=None):
-        """ShowKeyRotationStatusResponse - a model defined in huaweicloud sdk"""
+        """ShowKeyRotationStatusResponse
+
+        The model defined in huaweicloud sdk
+
+        :param key_rotation_enabled: 密钥轮换状态，默认为“false”，表示关闭密钥轮换功能。
+        :type key_rotation_enabled: bool
+        :param rotation_interval: 轮换周期，取值范围为30~365的整数。 周期范围设置根据密钥使用频率进行，若密钥使用频率高，建议设置为短周期；反之，则设置为长周期。
+        :type rotation_interval: int
+        :param last_rotation_time: 上一次密钥轮换时间。时间戳，即从1970年1月1日至该时间的总秒数。
+        :type last_rotation_time: str
+        :param number_of_rotations: 密钥轮换次数。
+        :type number_of_rotations: int
+        """
         
         super(ShowKeyRotationStatusResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class ShowKeyRotationStatusResponse(SdkResponse):
         密钥轮换状态，默认为“false”，表示关闭密钥轮换功能。
 
         :param key_rotation_enabled: The key_rotation_enabled of this ShowKeyRotationStatusResponse.
-        :type: bool
+        :type key_rotation_enabled: bool
         """
         self._key_rotation_enabled = key_rotation_enabled
 
@@ -95,7 +106,7 @@ class ShowKeyRotationStatusResponse(SdkResponse):
         轮换周期，取值范围为30~365的整数。 周期范围设置根据密钥使用频率进行，若密钥使用频率高，建议设置为短周期；反之，则设置为长周期。
 
         :param rotation_interval: The rotation_interval of this ShowKeyRotationStatusResponse.
-        :type: int
+        :type rotation_interval: int
         """
         self._rotation_interval = rotation_interval
 
@@ -117,7 +128,7 @@ class ShowKeyRotationStatusResponse(SdkResponse):
         上一次密钥轮换时间。时间戳，即从1970年1月1日至该时间的总秒数。
 
         :param last_rotation_time: The last_rotation_time of this ShowKeyRotationStatusResponse.
-        :type: str
+        :type last_rotation_time: str
         """
         self._last_rotation_time = last_rotation_time
 
@@ -139,7 +150,7 @@ class ShowKeyRotationStatusResponse(SdkResponse):
         密钥轮换次数。
 
         :param number_of_rotations: The number_of_rotations of this ShowKeyRotationStatusResponse.
-        :type: int
+        :type number_of_rotations: int
         """
         self._number_of_rotations = number_of_rotations
 

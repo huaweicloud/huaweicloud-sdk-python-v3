@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListInstancesV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListInstancesV2Request:
     }
 
     def __init__(self, offset=None, limit=None, instance_id=None, instance_name=None, status=None):
-        """ListInstancesV2Request - a model defined in huaweicloud sdk"""
+        """ListInstancesV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param offset: 偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
+        :type offset: int
+        :param limit: 每页显示的条目数量
+        :type limit: int
+        :param instance_id: 实例编号
+        :type instance_id: str
+        :param instance_name: 实例名称
+        :type instance_name: str
+        :param status: 实例状态： - Creating：创建中 - CreateSuccess：创建成功 - CreateFail：创建失败 - Initing：初始化中 - Registering：注册中 - Running：运行中 - InitingFailed：初始化失败 - RegisterFailed：注册失败 - Installing：安装中 - InstallFailed：安装失败 - Updating：升级中 - UpdateFailed：升级失败 - Rollbacking：回滚中 - RollbackSuccess：回滚成功 - RollbackFailed：回滚失败 - Deleting：删除中 - DeleteFailed：删除失败 - Unregistering：注销中 - UnRegisterFailed：注销失败 - CreateTimeout：创建超时 - InitTimeout：初始化超时 - RegisterTimeout：注册超时 - InstallTimeout：安装超时 - UpdateTimeout：升级超时 - RollbackTimeout：回滚超时 - DeleteTimeout：删除超时 - UnregisterTimeout：注销超时 - Starting：启动中 - Freezing：冻结中 - Frozen：已冻结 - Restarting：重启中 - RestartFail：重启失败 - Unhealthy：实例异常 - RestartTimeout：重启超时
+        :type status: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class ListInstancesV2Request:
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
         :param offset: The offset of this ListInstancesV2Request.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -100,7 +113,7 @@ class ListInstancesV2Request:
         每页显示的条目数量
 
         :param limit: The limit of this ListInstancesV2Request.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -122,7 +135,7 @@ class ListInstancesV2Request:
         实例编号
 
         :param instance_id: The instance_id of this ListInstancesV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -144,7 +157,7 @@ class ListInstancesV2Request:
         实例名称
 
         :param instance_name: The instance_name of this ListInstancesV2Request.
-        :type: str
+        :type instance_name: str
         """
         self._instance_name = instance_name
 
@@ -166,7 +179,7 @@ class ListInstancesV2Request:
         实例状态： - Creating：创建中 - CreateSuccess：创建成功 - CreateFail：创建失败 - Initing：初始化中 - Registering：注册中 - Running：运行中 - InitingFailed：初始化失败 - RegisterFailed：注册失败 - Installing：安装中 - InstallFailed：安装失败 - Updating：升级中 - UpdateFailed：升级失败 - Rollbacking：回滚中 - RollbackSuccess：回滚成功 - RollbackFailed：回滚失败 - Deleting：删除中 - DeleteFailed：删除失败 - Unregistering：注销中 - UnRegisterFailed：注销失败 - CreateTimeout：创建超时 - InitTimeout：初始化超时 - RegisterTimeout：注册超时 - InstallTimeout：安装超时 - UpdateTimeout：升级超时 - RollbackTimeout：回滚超时 - DeleteTimeout：删除超时 - UnregisterTimeout：注销超时 - Starting：启动中 - Freezing：冻结中 - Frozen：已冻结 - Restarting：重启中 - RestartFail：重启失败 - Unhealthy：实例异常 - RestartTimeout：重启超时
 
         :param status: The status of this ListInstancesV2Request.
-        :type: str
+        :type status: str
         """
         self._status = status
 

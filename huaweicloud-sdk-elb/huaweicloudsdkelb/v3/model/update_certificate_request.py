@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateCertificateRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateCertificateRequest:
     }
 
     def __init__(self, certificate_id=None, body=None):
-        """UpdateCertificateRequest - a model defined in huaweicloud sdk"""
+        """UpdateCertificateRequest
+
+        The model defined in huaweicloud sdk
+
+        :param certificate_id: 证书ID。
+        :type certificate_id: str
+        :param body: Body of the UpdateCertificateRequest
+        :type body: :class:`huaweicloudsdkelb.v3.UpdateCertificateRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateCertificateRequest:
         证书ID。
 
         :param certificate_id: The certificate_id of this UpdateCertificateRequest.
-        :type: str
+        :type certificate_id: str
         """
         self._certificate_id = certificate_id
 
@@ -72,7 +79,7 @@ class UpdateCertificateRequest:
 
 
         :return: The body of this UpdateCertificateRequest.
-        :rtype: UpdateCertificateRequestBody
+        :rtype: :class:`huaweicloudsdkelb.v3.UpdateCertificateRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateCertificateRequest:
 
 
         :param body: The body of this UpdateCertificateRequest.
-        :type: UpdateCertificateRequestBody
+        :type body: :class:`huaweicloudsdkelb.v3.UpdateCertificateRequestBody`
         """
         self._body = body
 

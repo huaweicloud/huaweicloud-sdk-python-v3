@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ActionsList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ActionsList:
     }
 
     def __init__(self, confidence=None, action=None):
-        """ActionsList - a model defined in huaweicloud sdk"""
+        """ActionsList
+
+        The model defined in huaweicloud sdk
+
+        :param confidence: 置信度，取值范围0～1。
+        :type confidence: float
+        :param action: 动作编号，取值范围：[1,2,3,4]，其中： • 1：左摇头 • 2：右摇头 • 3：点头 • 4：嘴部动作
+        :type action: int
+        """
         
         
 
@@ -62,7 +69,7 @@ class ActionsList:
         置信度，取值范围0～1。
 
         :param confidence: The confidence of this ActionsList.
-        :type: float
+        :type confidence: float
         """
         self._confidence = confidence
 
@@ -84,7 +91,7 @@ class ActionsList:
         动作编号，取值范围：[1,2,3,4]，其中： • 1：左摇头 • 2：右摇头 • 3：点头 • 4：嘴部动作
 
         :param action: The action of this ActionsList.
-        :type: int
+        :type action: int
         """
         self._action = action
 

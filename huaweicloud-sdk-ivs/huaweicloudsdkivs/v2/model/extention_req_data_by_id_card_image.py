@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExtentionReqDataByIdCardImage:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ExtentionReqDataByIdCardImage:
     }
 
     def __init__(self, idcard_image1=None, idcard_image2=None):
-        """ExtentionReqDataByIdCardImage - a model defined in huaweicloud sdk"""
+        """ExtentionReqDataByIdCardImage
+
+        The model defined in huaweicloud sdk
+
+        :param idcard_image1: 身份证人像面图像数据，使用base64编码，要求base64编码后大小不超过4M。图像各边的像素大小在300到4000之间，支持JPG格式。
+        :type idcard_image1: str
+        :param idcard_image2: 身份证国徽面图像数据，使用base64编码，要求base64编码后大小不超过4M。图像各边的像素大小在300到4000之间，支持JPG格式。
+        :type idcard_image2: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ExtentionReqDataByIdCardImage:
         身份证人像面图像数据，使用base64编码，要求base64编码后大小不超过4M。图像各边的像素大小在300到4000之间，支持JPG格式。
 
         :param idcard_image1: The idcard_image1 of this ExtentionReqDataByIdCardImage.
-        :type: str
+        :type idcard_image1: str
         """
         self._idcard_image1 = idcard_image1
 
@@ -84,7 +91,7 @@ class ExtentionReqDataByIdCardImage:
         身份证国徽面图像数据，使用base64编码，要求base64编码后大小不超过4M。图像各边的像素大小在300到4000之间，支持JPG格式。
 
         :param idcard_image2: The idcard_image2 of this ExtentionReqDataByIdCardImage.
-        :type: str
+        :type idcard_image2: str
         """
         self._idcard_image2 = idcard_image2
 

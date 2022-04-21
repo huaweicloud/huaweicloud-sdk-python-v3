@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowAssetModelResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ShowAssetModelResponse(SdkResponse):
     }
 
     def __init__(self, asset_model_id=None, name=None, display_name=None, properties=None, analyses=None, created_time=None, modified_time=None):
-        """ShowAssetModelResponse - a model defined in huaweicloud sdk"""
+        """ShowAssetModelResponse
+
+        The model defined in huaweicloud sdk
+
+        :param asset_model_id: 模型ID
+        :type asset_model_id: str
+        :param name: 模型名称
+        :type name: str
+        :param display_name: 模型显示名称
+        :type display_name: str
+        :param properties: 属性集
+        :type properties: list[:class:`huaweicloudsdkiotanalytics.v1.PropertyModelResponse`]
+        :param analyses: 分析任务集
+        :type analyses: list[:class:`huaweicloudsdkiotanalytics.v1.AnalysisModelResponse`]
+        :param created_time: 创建时间
+        :type created_time: str
+        :param modified_time: 修改时间
+        :type modified_time: str
+        """
         
         super(ShowAssetModelResponse, self).__init__()
 
@@ -88,7 +105,7 @@ class ShowAssetModelResponse(SdkResponse):
         模型ID
 
         :param asset_model_id: The asset_model_id of this ShowAssetModelResponse.
-        :type: str
+        :type asset_model_id: str
         """
         self._asset_model_id = asset_model_id
 
@@ -110,7 +127,7 @@ class ShowAssetModelResponse(SdkResponse):
         模型名称
 
         :param name: The name of this ShowAssetModelResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -132,7 +149,7 @@ class ShowAssetModelResponse(SdkResponse):
         模型显示名称
 
         :param display_name: The display_name of this ShowAssetModelResponse.
-        :type: str
+        :type display_name: str
         """
         self._display_name = display_name
 
@@ -143,7 +160,7 @@ class ShowAssetModelResponse(SdkResponse):
         属性集
 
         :return: The properties of this ShowAssetModelResponse.
-        :rtype: list[PropertyModelResponse]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.PropertyModelResponse`]
         """
         return self._properties
 
@@ -154,7 +171,7 @@ class ShowAssetModelResponse(SdkResponse):
         属性集
 
         :param properties: The properties of this ShowAssetModelResponse.
-        :type: list[PropertyModelResponse]
+        :type properties: list[:class:`huaweicloudsdkiotanalytics.v1.PropertyModelResponse`]
         """
         self._properties = properties
 
@@ -165,7 +182,7 @@ class ShowAssetModelResponse(SdkResponse):
         分析任务集
 
         :return: The analyses of this ShowAssetModelResponse.
-        :rtype: list[AnalysisModelResponse]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.AnalysisModelResponse`]
         """
         return self._analyses
 
@@ -176,7 +193,7 @@ class ShowAssetModelResponse(SdkResponse):
         分析任务集
 
         :param analyses: The analyses of this ShowAssetModelResponse.
-        :type: list[AnalysisModelResponse]
+        :type analyses: list[:class:`huaweicloudsdkiotanalytics.v1.AnalysisModelResponse`]
         """
         self._analyses = analyses
 
@@ -198,7 +215,7 @@ class ShowAssetModelResponse(SdkResponse):
         创建时间
 
         :param created_time: The created_time of this ShowAssetModelResponse.
-        :type: str
+        :type created_time: str
         """
         self._created_time = created_time
 
@@ -220,7 +237,7 @@ class ShowAssetModelResponse(SdkResponse):
         修改时间
 
         :param modified_time: The modified_time of this ShowAssetModelResponse.
-        :type: str
+        :type modified_time: str
         """
         self._modified_time = modified_time
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class JobDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class JobDetail:
     }
 
     def __init__(self, id=None, name=None, status=None, created=None, ended=None, progress=None, instance=None, fail_reason=None):
-        """JobDetail - a model defined in huaweicloud sdk"""
+        """JobDetail
+
+        The model defined in huaweicloud sdk
+
+        :param id: 任务ID
+        :type id: str
+        :param name: 任务名称。
+        :type name: str
+        :param status: 任务执行状态。
+        :type status: str
+        :param created: 任务创建时间，格式为yyyy-mm-ddThh:mm:ssZ。
+        :type created: str
+        :param ended: 任务结束时间，格式为yyyy-mm-ddThh:mm:ssZ。
+        :type ended: str
+        :param progress: 任务执行进度。
+        :type progress: str
+        :param instance: 
+        :type instance: :class:`huaweicloudsdkdds.v3.JobInstanceInfo`
+        :param fail_reason: 任务执行失败时的错误信息。
+        :type fail_reason: str
+        """
         
         
 
@@ -85,7 +104,7 @@ class JobDetail:
         任务ID
 
         :param id: The id of this JobDetail.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -107,7 +126,7 @@ class JobDetail:
         任务名称。
 
         :param name: The name of this JobDetail.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -129,7 +148,7 @@ class JobDetail:
         任务执行状态。
 
         :param status: The status of this JobDetail.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -151,7 +170,7 @@ class JobDetail:
         任务创建时间，格式为yyyy-mm-ddThh:mm:ssZ。
 
         :param created: The created of this JobDetail.
-        :type: str
+        :type created: str
         """
         self._created = created
 
@@ -173,7 +192,7 @@ class JobDetail:
         任务结束时间，格式为yyyy-mm-ddThh:mm:ssZ。
 
         :param ended: The ended of this JobDetail.
-        :type: str
+        :type ended: str
         """
         self._ended = ended
 
@@ -195,7 +214,7 @@ class JobDetail:
         任务执行进度。
 
         :param progress: The progress of this JobDetail.
-        :type: str
+        :type progress: str
         """
         self._progress = progress
 
@@ -205,7 +224,7 @@ class JobDetail:
 
 
         :return: The instance of this JobDetail.
-        :rtype: JobInstanceInfo
+        :rtype: :class:`huaweicloudsdkdds.v3.JobInstanceInfo`
         """
         return self._instance
 
@@ -215,7 +234,7 @@ class JobDetail:
 
 
         :param instance: The instance of this JobDetail.
-        :type: JobInstanceInfo
+        :type instance: :class:`huaweicloudsdkdds.v3.JobInstanceInfo`
         """
         self._instance = instance
 
@@ -237,7 +256,7 @@ class JobDetail:
         任务执行失败时的错误信息。
 
         :param fail_reason: The fail_reason of this JobDetail.
-        :type: str
+        :type fail_reason: str
         """
         self._fail_reason = fail_reason
 

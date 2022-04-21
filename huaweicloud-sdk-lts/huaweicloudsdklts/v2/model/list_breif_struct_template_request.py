@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListBreifStructTemplateRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class ListBreifStructTemplateRequest:
     }
 
     def __init__(self):
-        """ListBreifStructTemplateRequest - a model defined in huaweicloud sdk"""
+        """ListBreifStructTemplateRequest
+
+        The model defined in huaweicloud sdk
+
+        """
         
         
         self.discriminator = None

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ClusterList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -66,7 +65,49 @@ class ClusterList:
     }
 
     def __init__(self, datastore=None, instances=None, updated=None, name=None, created=None, id=None, status=None, endpoint=None, action_progress=None, actions=None, failed_reasons=None, authority_enable=None, vpc_id=None, subnet_id=None, security_group_id=None, enterprise_project_id=None, period=None, https_enable=None, tags=None):
-        """ClusterList - a model defined in huaweicloud sdk"""
+        """ClusterList
+
+        The model defined in huaweicloud sdk
+
+        :param datastore: 
+        :type datastore: :class:`huaweicloudsdkcss.v1.ClusterListDatastore`
+        :param instances: 节点对象列表。
+        :type instances: list[:class:`huaweicloudsdkcss.v1.ClusterListInstances`]
+        :param updated: 集群上次修改时间，格式为ISO8601: CCYY-MM-DDThh:mm:ss。
+        :type updated: str
+        :param name: 集群名称。
+        :type name: str
+        :param created: 集群创建时间，格式为ISO8601: CCYY-MM-DDThh:mm:ss。     说明：返回的集群列表信息按照创建时间降序排序，即创建时间最新的集群排在最前。
+        :type created: str
+        :param id: 集群ID。
+        :type id: str
+        :param status: 查询返回值。  - 100：创建中。 - 200：可用。 - 303：不可用，如创建失败。
+        :type status: str
+        :param endpoint: 用户VPC访问IP地址和端口号。
+        :type endpoint: str
+        :param action_progress: 
+        :type action_progress: :class:`huaweicloudsdkcss.v1.ClusterListActionProgress`
+        :param actions: 集群当前行为，REBOOTING表示重启，GROWING表示扩容，RESTORING表示恢复集群，SNAPSHOTTING表示创建快照。
+        :type actions: list[str]
+        :param failed_reasons: 
+        :type failed_reasons: :class:`huaweicloudsdkcss.v1.ClusterListFailedReasons`
+        :param authority_enable: 是否开启认证，取值范围为true或false。默认关闭认证功能。当开启认证时，httpsEnable需要设置为true。 - true：表示集群开启认证。 - false：表示集群不开启认证。
+        :type authority_enable: bool
+        :param vpc_id: VPC ID。
+        :type vpc_id: str
+        :param subnet_id: 子网ID。
+        :type subnet_id: str
+        :param security_group_id: 安全组ID。
+        :type security_group_id: str
+        :param enterprise_project_id: 集群所属的企业项目ID。  如果集群所属用户没有开通企业项目，则不会返回该参数。
+        :type enterprise_project_id: str
+        :param period: 是为包周期集群。
+        :type period: bool
+        :param https_enable: 是否开启https访问。
+        :type https_enable: bool
+        :param tags: 集群标签。
+        :type tags: list[:class:`huaweicloudsdkcss.v1.ClusterListTags`]
+        """
         
         
 
@@ -136,7 +177,7 @@ class ClusterList:
 
 
         :return: The datastore of this ClusterList.
-        :rtype: ClusterListDatastore
+        :rtype: :class:`huaweicloudsdkcss.v1.ClusterListDatastore`
         """
         return self._datastore
 
@@ -146,7 +187,7 @@ class ClusterList:
 
 
         :param datastore: The datastore of this ClusterList.
-        :type: ClusterListDatastore
+        :type datastore: :class:`huaweicloudsdkcss.v1.ClusterListDatastore`
         """
         self._datastore = datastore
 
@@ -157,7 +198,7 @@ class ClusterList:
         节点对象列表。
 
         :return: The instances of this ClusterList.
-        :rtype: list[ClusterListInstances]
+        :rtype: list[:class:`huaweicloudsdkcss.v1.ClusterListInstances`]
         """
         return self._instances
 
@@ -168,7 +209,7 @@ class ClusterList:
         节点对象列表。
 
         :param instances: The instances of this ClusterList.
-        :type: list[ClusterListInstances]
+        :type instances: list[:class:`huaweicloudsdkcss.v1.ClusterListInstances`]
         """
         self._instances = instances
 
@@ -190,7 +231,7 @@ class ClusterList:
         集群上次修改时间，格式为ISO8601: CCYY-MM-DDThh:mm:ss。
 
         :param updated: The updated of this ClusterList.
-        :type: str
+        :type updated: str
         """
         self._updated = updated
 
@@ -212,7 +253,7 @@ class ClusterList:
         集群名称。
 
         :param name: The name of this ClusterList.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -234,7 +275,7 @@ class ClusterList:
         集群创建时间，格式为ISO8601: CCYY-MM-DDThh:mm:ss。     说明：返回的集群列表信息按照创建时间降序排序，即创建时间最新的集群排在最前。
 
         :param created: The created of this ClusterList.
-        :type: str
+        :type created: str
         """
         self._created = created
 
@@ -256,7 +297,7 @@ class ClusterList:
         集群ID。
 
         :param id: The id of this ClusterList.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -278,7 +319,7 @@ class ClusterList:
         查询返回值。  - 100：创建中。 - 200：可用。 - 303：不可用，如创建失败。
 
         :param status: The status of this ClusterList.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -300,7 +341,7 @@ class ClusterList:
         用户VPC访问IP地址和端口号。
 
         :param endpoint: The endpoint of this ClusterList.
-        :type: str
+        :type endpoint: str
         """
         self._endpoint = endpoint
 
@@ -310,7 +351,7 @@ class ClusterList:
 
 
         :return: The action_progress of this ClusterList.
-        :rtype: ClusterListActionProgress
+        :rtype: :class:`huaweicloudsdkcss.v1.ClusterListActionProgress`
         """
         return self._action_progress
 
@@ -320,7 +361,7 @@ class ClusterList:
 
 
         :param action_progress: The action_progress of this ClusterList.
-        :type: ClusterListActionProgress
+        :type action_progress: :class:`huaweicloudsdkcss.v1.ClusterListActionProgress`
         """
         self._action_progress = action_progress
 
@@ -342,7 +383,7 @@ class ClusterList:
         集群当前行为，REBOOTING表示重启，GROWING表示扩容，RESTORING表示恢复集群，SNAPSHOTTING表示创建快照。
 
         :param actions: The actions of this ClusterList.
-        :type: list[str]
+        :type actions: list[str]
         """
         self._actions = actions
 
@@ -352,7 +393,7 @@ class ClusterList:
 
 
         :return: The failed_reasons of this ClusterList.
-        :rtype: ClusterListFailedReasons
+        :rtype: :class:`huaweicloudsdkcss.v1.ClusterListFailedReasons`
         """
         return self._failed_reasons
 
@@ -362,7 +403,7 @@ class ClusterList:
 
 
         :param failed_reasons: The failed_reasons of this ClusterList.
-        :type: ClusterListFailedReasons
+        :type failed_reasons: :class:`huaweicloudsdkcss.v1.ClusterListFailedReasons`
         """
         self._failed_reasons = failed_reasons
 
@@ -384,7 +425,7 @@ class ClusterList:
         是否开启认证，取值范围为true或false。默认关闭认证功能。当开启认证时，httpsEnable需要设置为true。 - true：表示集群开启认证。 - false：表示集群不开启认证。
 
         :param authority_enable: The authority_enable of this ClusterList.
-        :type: bool
+        :type authority_enable: bool
         """
         self._authority_enable = authority_enable
 
@@ -406,7 +447,7 @@ class ClusterList:
         VPC ID。
 
         :param vpc_id: The vpc_id of this ClusterList.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -428,7 +469,7 @@ class ClusterList:
         子网ID。
 
         :param subnet_id: The subnet_id of this ClusterList.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -450,7 +491,7 @@ class ClusterList:
         安全组ID。
 
         :param security_group_id: The security_group_id of this ClusterList.
-        :type: str
+        :type security_group_id: str
         """
         self._security_group_id = security_group_id
 
@@ -472,7 +513,7 @@ class ClusterList:
         集群所属的企业项目ID。  如果集群所属用户没有开通企业项目，则不会返回该参数。
 
         :param enterprise_project_id: The enterprise_project_id of this ClusterList.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -494,7 +535,7 @@ class ClusterList:
         是为包周期集群。
 
         :param period: The period of this ClusterList.
-        :type: bool
+        :type period: bool
         """
         self._period = period
 
@@ -516,7 +557,7 @@ class ClusterList:
         是否开启https访问。
 
         :param https_enable: The https_enable of this ClusterList.
-        :type: bool
+        :type https_enable: bool
         """
         self._https_enable = https_enable
 
@@ -527,7 +568,7 @@ class ClusterList:
         集群标签。
 
         :return: The tags of this ClusterList.
-        :rtype: list[ClusterListTags]
+        :rtype: list[:class:`huaweicloudsdkcss.v1.ClusterListTags`]
         """
         return self._tags
 
@@ -538,7 +579,7 @@ class ClusterList:
         集群标签。
 
         :param tags: The tags of this ClusterList.
-        :type: list[ClusterListTags]
+        :type tags: list[:class:`huaweicloudsdkcss.v1.ClusterListTags`]
         """
         self._tags = tags
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowJobsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowJobsRequest:
     }
 
     def __init__(self, job_input_type=None, offset=None, limit=None, sync_status=None):
-        """ShowJobsRequest - a model defined in huaweicloud sdk"""
+        """ShowJobsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param job_input_type: 接收数据类型，支持两种接收数据类型：“管道数据”、“资产数据”。管道数据：“实时分析”使用来自“数据管道”的数据进行分析，并可将数据输出到其他云服务。资产数据：“实时分析”使用来自“资产模型”的数据进行分析，并将分析后的结果返回给“资产模型”，丰富资产模型。
+        :type job_input_type: str
+        :param offset: 偏移量，表示从此偏移量开始查询，offset大于等于0
+        :type offset: int
+        :param limit: 每页显示的条目数量
+        :type limit: int
+        :param sync_status: 立即同步作业状态，默认是false
+        :type sync_status: bool
+        """
         
         
 
@@ -73,7 +84,7 @@ class ShowJobsRequest:
         接收数据类型，支持两种接收数据类型：“管道数据”、“资产数据”。管道数据：“实时分析”使用来自“数据管道”的数据进行分析，并可将数据输出到其他云服务。资产数据：“实时分析”使用来自“资产模型”的数据进行分析，并将分析后的结果返回给“资产模型”，丰富资产模型。
 
         :param job_input_type: The job_input_type of this ShowJobsRequest.
-        :type: str
+        :type job_input_type: str
         """
         self._job_input_type = job_input_type
 
@@ -95,7 +106,7 @@ class ShowJobsRequest:
         偏移量，表示从此偏移量开始查询，offset大于等于0
 
         :param offset: The offset of this ShowJobsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -117,7 +128,7 @@ class ShowJobsRequest:
         每页显示的条目数量
 
         :param limit: The limit of this ShowJobsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -139,7 +150,7 @@ class ShowJobsRequest:
         立即同步作业状态，默认是false
 
         :param sync_status: The sync_status of this ShowJobsRequest.
-        :type: bool
+        :type sync_status: bool
         """
         self._sync_status = sync_status
 

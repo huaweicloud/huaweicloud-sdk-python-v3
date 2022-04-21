@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BackupRestoreServerMapping:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BackupRestoreServerMapping:
     }
 
     def __init__(self, backup_id=None, volume_id=None):
-        """BackupRestoreServerMapping - a model defined in huaweicloud sdk"""
+        """BackupRestoreServerMapping
+
+        The model defined in huaweicloud sdk
+
+        :param backup_id: 卷备份ID，可以通过控制台或者“查询指定备份”接口获取。
+        :type backup_id: str
+        :param volume_id: 待恢复目标卷ID
+        :type volume_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class BackupRestoreServerMapping:
         卷备份ID，可以通过控制台或者“查询指定备份”接口获取。
 
         :param backup_id: The backup_id of this BackupRestoreServerMapping.
-        :type: str
+        :type backup_id: str
         """
         self._backup_id = backup_id
 
@@ -83,7 +90,7 @@ class BackupRestoreServerMapping:
         待恢复目标卷ID
 
         :param volume_id: The volume_id of this BackupRestoreServerMapping.
-        :type: str
+        :type volume_id: str
         """
         self._volume_id = volume_id
 

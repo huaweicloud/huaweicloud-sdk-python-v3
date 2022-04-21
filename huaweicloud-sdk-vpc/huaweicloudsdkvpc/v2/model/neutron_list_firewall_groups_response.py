@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NeutronListFirewallGroupsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class NeutronListFirewallGroupsResponse(SdkResponse):
     }
 
     def __init__(self, firewall_groups=None, firewall_groups_links=None):
-        """NeutronListFirewallGroupsResponse - a model defined in huaweicloud sdk"""
+        """NeutronListFirewallGroupsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param firewall_groups: firewall_group对象列表
+        :type firewall_groups: list[:class:`huaweicloudsdkvpc.v2.NeutronFirewallGroup`]
+        :param firewall_groups_links: 分页信息
+        :type firewall_groups_links: list[:class:`huaweicloudsdkvpc.v2.NeutronPageLink`]
+        """
         
         super(NeutronListFirewallGroupsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class NeutronListFirewallGroupsResponse(SdkResponse):
         firewall_group对象列表
 
         :return: The firewall_groups of this NeutronListFirewallGroupsResponse.
-        :rtype: list[NeutronFirewallGroup]
+        :rtype: list[:class:`huaweicloudsdkvpc.v2.NeutronFirewallGroup`]
         """
         return self._firewall_groups
 
@@ -63,7 +70,7 @@ class NeutronListFirewallGroupsResponse(SdkResponse):
         firewall_group对象列表
 
         :param firewall_groups: The firewall_groups of this NeutronListFirewallGroupsResponse.
-        :type: list[NeutronFirewallGroup]
+        :type firewall_groups: list[:class:`huaweicloudsdkvpc.v2.NeutronFirewallGroup`]
         """
         self._firewall_groups = firewall_groups
 
@@ -74,7 +81,7 @@ class NeutronListFirewallGroupsResponse(SdkResponse):
         分页信息
 
         :return: The firewall_groups_links of this NeutronListFirewallGroupsResponse.
-        :rtype: list[NeutronPageLink]
+        :rtype: list[:class:`huaweicloudsdkvpc.v2.NeutronPageLink`]
         """
         return self._firewall_groups_links
 
@@ -85,7 +92,7 @@ class NeutronListFirewallGroupsResponse(SdkResponse):
         分页信息
 
         :param firewall_groups_links: The firewall_groups_links of this NeutronListFirewallGroupsResponse.
-        :type: list[NeutronPageLink]
+        :type firewall_groups_links: list[:class:`huaweicloudsdkvpc.v2.NeutronPageLink`]
         """
         self._firewall_groups_links = firewall_groups_links
 

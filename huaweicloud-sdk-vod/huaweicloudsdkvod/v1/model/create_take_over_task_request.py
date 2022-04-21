@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateTakeOverTaskRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateTakeOverTaskRequest:
     }
 
     def __init__(self, body=None):
-        """CreateTakeOverTaskRequest - a model defined in huaweicloud sdk"""
+        """CreateTakeOverTaskRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateTakeOverTaskRequest
+        :type body: :class:`huaweicloudsdkvod.v1.CreateTakeOverTaskReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateTakeOverTaskRequest:
 
 
         :return: The body of this CreateTakeOverTaskRequest.
-        :rtype: CreateTakeOverTaskReq
+        :rtype: :class:`huaweicloudsdkvod.v1.CreateTakeOverTaskReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateTakeOverTaskRequest:
 
 
         :param body: The body of this CreateTakeOverTaskRequest.
-        :type: CreateTakeOverTaskReq
+        :type body: :class:`huaweicloudsdkvod.v1.CreateTakeOverTaskReq`
         """
         self._body = body
 

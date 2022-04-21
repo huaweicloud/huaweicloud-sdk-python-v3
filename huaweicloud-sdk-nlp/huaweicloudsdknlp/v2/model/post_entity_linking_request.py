@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PostEntityLinkingRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class PostEntityLinkingRequest:
     }
 
     def __init__(self, text=None, lang=None):
-        """PostEntityLinkingRequest - a model defined in huaweicloud sdk"""
+        """PostEntityLinkingRequest
+
+        The model defined in huaweicloud sdk
+
+        :param text: 待分析文本，长度为1~50，文本编码为UTF-8。
+        :type text: str
+        :param lang: 支持的文本语言类型，目前只支持中文，默认为zh。
+        :type lang: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class PostEntityLinkingRequest:
         待分析文本，长度为1~50，文本编码为UTF-8。
 
         :param text: The text of this PostEntityLinkingRequest.
-        :type: str
+        :type text: str
         """
         self._text = text
 
@@ -84,7 +91,7 @@ class PostEntityLinkingRequest:
         支持的文本语言类型，目前只支持中文，默认为zh。
 
         :param lang: The lang of this PostEntityLinkingRequest.
-        :type: str
+        :type lang: str
         """
         self._lang = lang
 

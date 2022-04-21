@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchCreateListenerTagsRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchCreateListenerTagsRequestBody:
     }
 
     def __init__(self, action=None, tags=None):
-        """BatchCreateListenerTagsRequestBody - a model defined in huaweicloud sdk"""
+        """BatchCreateListenerTagsRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param action: 操作类型。 取值范围：create - 创建标签。
+        :type action: str
+        :param tags: 标签对象列表。
+        :type tags: list[:class:`huaweicloudsdkelb.v2.ResourceTag`]
+        """
         
         
 
@@ -62,7 +69,7 @@ class BatchCreateListenerTagsRequestBody:
         操作类型。 取值范围：create - 创建标签。
 
         :param action: The action of this BatchCreateListenerTagsRequestBody.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -73,7 +80,7 @@ class BatchCreateListenerTagsRequestBody:
         标签对象列表。
 
         :return: The tags of this BatchCreateListenerTagsRequestBody.
-        :rtype: list[ResourceTag]
+        :rtype: list[:class:`huaweicloudsdkelb.v2.ResourceTag`]
         """
         return self._tags
 
@@ -84,7 +91,7 @@ class BatchCreateListenerTagsRequestBody:
         标签对象列表。
 
         :param tags: The tags of this BatchCreateListenerTagsRequestBody.
-        :type: list[ResourceTag]
+        :type tags: list[:class:`huaweicloudsdkelb.v2.ResourceTag`]
         """
         self._tags = tags
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ContentCompareDiff:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ContentCompareDiff:
     }
 
     def __init__(self, target_select_sql=None, source_select_sql=None, source_key_value=None, target_key_value=None):
-        """ContentCompareDiff - a model defined in huaweicloud sdk"""
+        """ContentCompareDiff
+
+        The model defined in huaweicloud sdk
+
+        :param target_select_sql: 查询目标库的SQL。
+        :type target_select_sql: str
+        :param source_select_sql: 查询源库的SQL。
+        :type source_select_sql: str
+        :param source_key_value: 源库KEY值列表。
+        :type source_key_value: list[str]
+        :param target_key_value: 目标库KEY值列表。
+        :type target_key_value: list[str]
+        """
         
         
 
@@ -71,7 +82,7 @@ class ContentCompareDiff:
         查询目标库的SQL。
 
         :param target_select_sql: The target_select_sql of this ContentCompareDiff.
-        :type: str
+        :type target_select_sql: str
         """
         self._target_select_sql = target_select_sql
 
@@ -93,7 +104,7 @@ class ContentCompareDiff:
         查询源库的SQL。
 
         :param source_select_sql: The source_select_sql of this ContentCompareDiff.
-        :type: str
+        :type source_select_sql: str
         """
         self._source_select_sql = source_select_sql
 
@@ -115,7 +126,7 @@ class ContentCompareDiff:
         源库KEY值列表。
 
         :param source_key_value: The source_key_value of this ContentCompareDiff.
-        :type: list[str]
+        :type source_key_value: list[str]
         """
         self._source_key_value = source_key_value
 
@@ -137,7 +148,7 @@ class ContentCompareDiff:
         目标库KEY值列表。
 
         :param target_key_value: The target_key_value of this ContentCompareDiff.
-        :type: list[str]
+        :type target_key_value: list[str]
         """
         self._target_key_value = target_key_value
 

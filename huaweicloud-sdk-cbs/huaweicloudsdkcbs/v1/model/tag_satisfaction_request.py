@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TagSatisfactionRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class TagSatisfactionRequest:
     }
 
     def __init__(self, qabot_id=None, request_id=None, body=None):
-        """TagSatisfactionRequest - a model defined in huaweicloud sdk"""
+        """TagSatisfactionRequest
+
+        The model defined in huaweicloud sdk
+
+        :param qabot_id: qabot编号，UUID格式。
+        :type qabot_id: str
+        :param request_id: 请求ID，由问答机器人会话生成。
+        :type request_id: str
+        :param body: Body of the TagSatisfactionRequest
+        :type body: :class:`huaweicloudsdkcbs.v1.PostSatisfactionReq`
+        """
         
         
 
@@ -66,7 +75,7 @@ class TagSatisfactionRequest:
         qabot编号，UUID格式。
 
         :param qabot_id: The qabot_id of this TagSatisfactionRequest.
-        :type: str
+        :type qabot_id: str
         """
         self._qabot_id = qabot_id
 
@@ -88,7 +97,7 @@ class TagSatisfactionRequest:
         请求ID，由问答机器人会话生成。
 
         :param request_id: The request_id of this TagSatisfactionRequest.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 
@@ -98,7 +107,7 @@ class TagSatisfactionRequest:
 
 
         :return: The body of this TagSatisfactionRequest.
-        :rtype: PostSatisfactionReq
+        :rtype: :class:`huaweicloudsdkcbs.v1.PostSatisfactionReq`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class TagSatisfactionRequest:
 
 
         :param body: The body of this TagSatisfactionRequest.
-        :type: PostSatisfactionReq
+        :type body: :class:`huaweicloudsdkcbs.v1.PostSatisfactionReq`
         """
         self._body = body
 

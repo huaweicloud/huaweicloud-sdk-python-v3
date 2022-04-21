@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Counter:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class Counter:
     }
 
     def __init__(self, bytes_written=None, total_files=None, rows_read=None, bytes_read=None, rows_written=None, files_written=None, files_read=None, total_size=None, files_skipped=None, rows_written_skipped=None):
-        """Counter - a model defined in huaweicloud sdk"""
+        """Counter
+
+        The model defined in huaweicloud sdk
+
+        :param bytes_written: 写入的字节数
+        :type bytes_written: int
+        :param total_files: 总文件数
+        :type total_files: int
+        :param rows_read: 读取的行数
+        :type rows_read: int
+        :param bytes_read: 读取的字节数
+        :type bytes_read: int
+        :param rows_written: 写入的行数
+        :type rows_written: int
+        :param files_written: 写入的文件数
+        :type files_written: int
+        :param files_read: 读取的文件数
+        :type files_read: int
+        :param total_size: 总字节数
+        :type total_size: int
+        :param files_skipped: 跳过的文件数
+        :type files_skipped: int
+        :param rows_written_skipped: 跳过的行数
+        :type rows_written_skipped: int
+        """
         
         
 
@@ -103,7 +126,7 @@ class Counter:
         写入的字节数
 
         :param bytes_written: The bytes_written of this Counter.
-        :type: int
+        :type bytes_written: int
         """
         self._bytes_written = bytes_written
 
@@ -125,7 +148,7 @@ class Counter:
         总文件数
 
         :param total_files: The total_files of this Counter.
-        :type: int
+        :type total_files: int
         """
         self._total_files = total_files
 
@@ -147,7 +170,7 @@ class Counter:
         读取的行数
 
         :param rows_read: The rows_read of this Counter.
-        :type: int
+        :type rows_read: int
         """
         self._rows_read = rows_read
 
@@ -169,7 +192,7 @@ class Counter:
         读取的字节数
 
         :param bytes_read: The bytes_read of this Counter.
-        :type: int
+        :type bytes_read: int
         """
         self._bytes_read = bytes_read
 
@@ -191,7 +214,7 @@ class Counter:
         写入的行数
 
         :param rows_written: The rows_written of this Counter.
-        :type: int
+        :type rows_written: int
         """
         self._rows_written = rows_written
 
@@ -213,7 +236,7 @@ class Counter:
         写入的文件数
 
         :param files_written: The files_written of this Counter.
-        :type: int
+        :type files_written: int
         """
         self._files_written = files_written
 
@@ -235,7 +258,7 @@ class Counter:
         读取的文件数
 
         :param files_read: The files_read of this Counter.
-        :type: int
+        :type files_read: int
         """
         self._files_read = files_read
 
@@ -257,7 +280,7 @@ class Counter:
         总字节数
 
         :param total_size: The total_size of this Counter.
-        :type: int
+        :type total_size: int
         """
         self._total_size = total_size
 
@@ -279,7 +302,7 @@ class Counter:
         跳过的文件数
 
         :param files_skipped: The files_skipped of this Counter.
-        :type: int
+        :type files_skipped: int
         """
         self._files_skipped = files_skipped
 
@@ -301,7 +324,7 @@ class Counter:
         跳过的行数
 
         :param rows_written_skipped: The rows_written_skipped of this Counter.
-        :type: int
+        :type rows_written_skipped: int
         """
         self._rows_written_skipped = rows_written_skipped
 

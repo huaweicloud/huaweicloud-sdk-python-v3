@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PrecheckResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class PrecheckResult:
     }
 
     def __init__(self, item=None, result=None, failed_reason=None, data=None, raw_error_msg=None, group=None, failed_sub_jobs=None):
-        """PrecheckResult - a model defined in huaweicloud sdk"""
+        """PrecheckResult
+
+        The model defined in huaweicloud sdk
+
+        :param item: 检查项。
+        :type item: str
+        :param result: 检查结果
+        :type result: str
+        :param failed_reason: 失败原因。
+        :type failed_reason: str
+        :param data: 加密的数据。
+        :type data: str
+        :param raw_error_msg: 行错误信息。
+        :type raw_error_msg: str
+        :param group: 检查项分组
+        :type group: str
+        :param failed_sub_jobs: 失败的子任务信息。
+        :type failed_sub_jobs: list[:class:`huaweicloudsdkdrs.v3.PrecheckFailSubJobVO`]
+        """
         
         
 
@@ -88,7 +105,7 @@ class PrecheckResult:
         检查项。
 
         :param item: The item of this PrecheckResult.
-        :type: str
+        :type item: str
         """
         self._item = item
 
@@ -110,7 +127,7 @@ class PrecheckResult:
         检查结果
 
         :param result: The result of this PrecheckResult.
-        :type: str
+        :type result: str
         """
         self._result = result
 
@@ -132,7 +149,7 @@ class PrecheckResult:
         失败原因。
 
         :param failed_reason: The failed_reason of this PrecheckResult.
-        :type: str
+        :type failed_reason: str
         """
         self._failed_reason = failed_reason
 
@@ -154,7 +171,7 @@ class PrecheckResult:
         加密的数据。
 
         :param data: The data of this PrecheckResult.
-        :type: str
+        :type data: str
         """
         self._data = data
 
@@ -176,7 +193,7 @@ class PrecheckResult:
         行错误信息。
 
         :param raw_error_msg: The raw_error_msg of this PrecheckResult.
-        :type: str
+        :type raw_error_msg: str
         """
         self._raw_error_msg = raw_error_msg
 
@@ -198,7 +215,7 @@ class PrecheckResult:
         检查项分组
 
         :param group: The group of this PrecheckResult.
-        :type: str
+        :type group: str
         """
         self._group = group
 
@@ -209,7 +226,7 @@ class PrecheckResult:
         失败的子任务信息。
 
         :return: The failed_sub_jobs of this PrecheckResult.
-        :rtype: list[PrecheckFailSubJobVO]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.PrecheckFailSubJobVO`]
         """
         return self._failed_sub_jobs
 
@@ -220,7 +237,7 @@ class PrecheckResult:
         失败的子任务信息。
 
         :param failed_sub_jobs: The failed_sub_jobs of this PrecheckResult.
-        :type: list[PrecheckFailSubJobVO]
+        :type failed_sub_jobs: list[:class:`huaweicloudsdkdrs.v3.PrecheckFailSubJobVO`]
         """
         self._failed_sub_jobs = failed_sub_jobs
 

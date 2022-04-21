@@ -12,7 +12,6 @@ class ResourceType:
     """
     allowed enum values
     """
-
     SECURITY_GROUP = "security_group"
     EIP = "eip"
     ELB = "elb"
@@ -25,7 +24,6 @@ class ResourceType:
     RDS = "rds"
     PVC = "pvc"
     APM = "apm"
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -43,7 +41,11 @@ class ResourceType:
     }
 
     def __init__(self):
-        """ResourceType - a model defined in huaweicloud sdk"""
+        """ResourceType
+
+        The model defined in huaweicloud sdk
+
+        """
         
         
         self.discriminator = None

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InnodbTrx:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class InnodbTrx:
     }
 
     def __init__(self, trx_id=None, trx_state=None, trx_started=None, trx_wait_started=None, trx_mysql_thread_id=None, trx_query=None, trx_tables_locked=None, trx_rows_locked=None, trx_rows_modified=None, trx_isolation_level=None, innodb_wait_locks=None, innodb_hold_locks=None):
-        """InnodbTrx - a model defined in huaweicloud sdk"""
+        """InnodbTrx
+
+        The model defined in huaweicloud sdk
+
+        :param trx_id: 事务ID
+        :type trx_id: str
+        :param trx_state: 事务状态
+        :type trx_state: str
+        :param trx_started: 事务开始时间
+        :type trx_started: str
+        :param trx_wait_started: 事务等待开始时间
+        :type trx_wait_started: str
+        :param trx_mysql_thread_id: 会话ID，同ListProcesses接口返回的id。
+        :type trx_mysql_thread_id: str
+        :param trx_query: 事务运行的SQL语句
+        :type trx_query: str
+        :param trx_tables_locked: 加行锁的表数量
+        :type trx_tables_locked: str
+        :param trx_rows_locked: 锁定的行数量（近似值）
+        :type trx_rows_locked: str
+        :param trx_rows_modified: 事务插入或者修改的行数
+        :type trx_rows_modified: str
+        :param trx_isolation_level: 隔离级别
+        :type trx_isolation_level: str
+        :param innodb_wait_locks: 等待锁信息
+        :type innodb_wait_locks: list[:class:`huaweicloudsdkdas.v3.InnodbLock`]
+        :param innodb_hold_locks: 持有锁信息
+        :type innodb_hold_locks: list[:class:`huaweicloudsdkdas.v3.InnodbLock`]
+        """
         
         
 
@@ -101,7 +128,7 @@ class InnodbTrx:
         事务ID
 
         :param trx_id: The trx_id of this InnodbTrx.
-        :type: str
+        :type trx_id: str
         """
         self._trx_id = trx_id
 
@@ -123,7 +150,7 @@ class InnodbTrx:
         事务状态
 
         :param trx_state: The trx_state of this InnodbTrx.
-        :type: str
+        :type trx_state: str
         """
         self._trx_state = trx_state
 
@@ -145,7 +172,7 @@ class InnodbTrx:
         事务开始时间
 
         :param trx_started: The trx_started of this InnodbTrx.
-        :type: str
+        :type trx_started: str
         """
         self._trx_started = trx_started
 
@@ -167,7 +194,7 @@ class InnodbTrx:
         事务等待开始时间
 
         :param trx_wait_started: The trx_wait_started of this InnodbTrx.
-        :type: str
+        :type trx_wait_started: str
         """
         self._trx_wait_started = trx_wait_started
 
@@ -189,7 +216,7 @@ class InnodbTrx:
         会话ID，同ListProcesses接口返回的id。
 
         :param trx_mysql_thread_id: The trx_mysql_thread_id of this InnodbTrx.
-        :type: str
+        :type trx_mysql_thread_id: str
         """
         self._trx_mysql_thread_id = trx_mysql_thread_id
 
@@ -211,7 +238,7 @@ class InnodbTrx:
         事务运行的SQL语句
 
         :param trx_query: The trx_query of this InnodbTrx.
-        :type: str
+        :type trx_query: str
         """
         self._trx_query = trx_query
 
@@ -233,7 +260,7 @@ class InnodbTrx:
         加行锁的表数量
 
         :param trx_tables_locked: The trx_tables_locked of this InnodbTrx.
-        :type: str
+        :type trx_tables_locked: str
         """
         self._trx_tables_locked = trx_tables_locked
 
@@ -255,7 +282,7 @@ class InnodbTrx:
         锁定的行数量（近似值）
 
         :param trx_rows_locked: The trx_rows_locked of this InnodbTrx.
-        :type: str
+        :type trx_rows_locked: str
         """
         self._trx_rows_locked = trx_rows_locked
 
@@ -277,7 +304,7 @@ class InnodbTrx:
         事务插入或者修改的行数
 
         :param trx_rows_modified: The trx_rows_modified of this InnodbTrx.
-        :type: str
+        :type trx_rows_modified: str
         """
         self._trx_rows_modified = trx_rows_modified
 
@@ -299,7 +326,7 @@ class InnodbTrx:
         隔离级别
 
         :param trx_isolation_level: The trx_isolation_level of this InnodbTrx.
-        :type: str
+        :type trx_isolation_level: str
         """
         self._trx_isolation_level = trx_isolation_level
 
@@ -310,7 +337,7 @@ class InnodbTrx:
         等待锁信息
 
         :return: The innodb_wait_locks of this InnodbTrx.
-        :rtype: list[InnodbLock]
+        :rtype: list[:class:`huaweicloudsdkdas.v3.InnodbLock`]
         """
         return self._innodb_wait_locks
 
@@ -321,7 +348,7 @@ class InnodbTrx:
         等待锁信息
 
         :param innodb_wait_locks: The innodb_wait_locks of this InnodbTrx.
-        :type: list[InnodbLock]
+        :type innodb_wait_locks: list[:class:`huaweicloudsdkdas.v3.InnodbLock`]
         """
         self._innodb_wait_locks = innodb_wait_locks
 
@@ -332,7 +359,7 @@ class InnodbTrx:
         持有锁信息
 
         :return: The innodb_hold_locks of this InnodbTrx.
-        :rtype: list[InnodbLock]
+        :rtype: list[:class:`huaweicloudsdkdas.v3.InnodbLock`]
         """
         return self._innodb_hold_locks
 
@@ -343,7 +370,7 @@ class InnodbTrx:
         持有锁信息
 
         :param innodb_hold_locks: The innodb_hold_locks of this InnodbTrx.
-        :type: list[InnodbLock]
+        :type innodb_hold_locks: list[:class:`huaweicloudsdkdas.v3.InnodbLock`]
         """
         self._innodb_hold_locks = innodb_hold_locks
 

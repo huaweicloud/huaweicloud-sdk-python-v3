@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DebugRuleRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DebugRuleRequestBody:
     }
 
     def __init__(self, test_data=None, test_rule_express=None):
-        """DebugRuleRequestBody - a model defined in huaweicloud sdk"""
+        """DebugRuleRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param test_data: 测试的被规则执行的数据
+        :type test_data: str
+        :param test_rule_express: 测试的规则
+        :type test_rule_express: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class DebugRuleRequestBody:
         测试的被规则执行的数据
 
         :param test_data: The test_data of this DebugRuleRequestBody.
-        :type: str
+        :type test_data: str
         """
         self._test_data = test_data
 
@@ -85,7 +92,7 @@ class DebugRuleRequestBody:
         测试的规则
 
         :param test_rule_express: The test_rule_express of this DebugRuleRequestBody.
-        :type: str
+        :type test_rule_express: str
         """
         self._test_rule_express = test_rule_express
 

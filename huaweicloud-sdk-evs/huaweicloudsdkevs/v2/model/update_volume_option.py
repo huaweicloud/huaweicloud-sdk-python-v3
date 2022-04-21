@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateVolumeOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateVolumeOption:
     }
 
     def __init__(self, description=None, name=None):
-        """UpdateVolumeOption - a model defined in huaweicloud sdk"""
+        """UpdateVolumeOption
+
+        The model defined in huaweicloud sdk
+
+        :param description: 新的云硬盘的描述，name和description不能同时为null。最大支持255个字节。
+        :type description: str
+        :param name: 新的云硬盘的名字，name和description不能同时为null。最大支持255个字节。
+        :type name: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class UpdateVolumeOption:
         新的云硬盘的描述，name和description不能同时为null。最大支持255个字节。
 
         :param description: The description of this UpdateVolumeOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -85,7 +92,7 @@ class UpdateVolumeOption:
         新的云硬盘的名字，name和description不能同时为null。最大支持255个字节。
 
         :param name: The name of this UpdateVolumeOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 

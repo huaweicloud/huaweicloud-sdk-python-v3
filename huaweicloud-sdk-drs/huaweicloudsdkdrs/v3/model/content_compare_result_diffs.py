@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ContentCompareResultDiffs:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ContentCompareResultDiffs:
     }
 
     def __init__(self, source_db_name=None, source_table_name=None, content_compare_diff=None, content_compare_diff_count=None):
-        """ContentCompareResultDiffs - a model defined in huaweicloud sdk"""
+        """ContentCompareResultDiffs
+
+        The model defined in huaweicloud sdk
+
+        :param source_db_name: 源库名称。
+        :type source_db_name: str
+        :param source_table_name: 源库的表名称。
+        :type source_table_name: str
+        :param content_compare_diff: 内容对比结果差异。
+        :type content_compare_diff: list[:class:`huaweicloudsdkdrs.v3.ContentCompareDiff`]
+        :param content_compare_diff_count: 内容对比结果差异总数。
+        :type content_compare_diff_count: int
+        """
         
         
 
@@ -69,7 +80,7 @@ class ContentCompareResultDiffs:
         源库名称。
 
         :param source_db_name: The source_db_name of this ContentCompareResultDiffs.
-        :type: str
+        :type source_db_name: str
         """
         self._source_db_name = source_db_name
 
@@ -91,7 +102,7 @@ class ContentCompareResultDiffs:
         源库的表名称。
 
         :param source_table_name: The source_table_name of this ContentCompareResultDiffs.
-        :type: str
+        :type source_table_name: str
         """
         self._source_table_name = source_table_name
 
@@ -102,7 +113,7 @@ class ContentCompareResultDiffs:
         内容对比结果差异。
 
         :return: The content_compare_diff of this ContentCompareResultDiffs.
-        :rtype: list[ContentCompareDiff]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.ContentCompareDiff`]
         """
         return self._content_compare_diff
 
@@ -113,7 +124,7 @@ class ContentCompareResultDiffs:
         内容对比结果差异。
 
         :param content_compare_diff: The content_compare_diff of this ContentCompareResultDiffs.
-        :type: list[ContentCompareDiff]
+        :type content_compare_diff: list[:class:`huaweicloudsdkdrs.v3.ContentCompareDiff`]
         """
         self._content_compare_diff = content_compare_diff
 
@@ -135,7 +146,7 @@ class ContentCompareResultDiffs:
         内容对比结果差异总数。
 
         :param content_compare_diff_count: The content_compare_diff_count of this ContentCompareResultDiffs.
-        :type: int
+        :type content_compare_diff_count: int
         """
         self._content_compare_diff_count = content_compare_diff_count
 

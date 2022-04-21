@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RelatedInstance:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RelatedInstance:
     }
 
     def __init__(self, id=None, type=None):
-        """RelatedInstance - a model defined in huaweicloud sdk"""
+        """RelatedInstance
+
+        The model defined in huaweicloud sdk
+
+        :param id: 关联实例id。
+        :type id: str
+        :param type: 关联实例类型。  - “replica_of”对应于“主实例”。 - “replica”对应于“只读实例”。
+        :type type: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class RelatedInstance:
         关联实例id。
 
         :param id: The id of this RelatedInstance.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -83,7 +90,7 @@ class RelatedInstance:
         关联实例类型。  - “replica_of”对应于“主实例”。 - “replica”对应于“只读实例”。
 
         :param type: The type of this RelatedInstance.
-        :type: str
+        :type type: str
         """
         self._type = type
 

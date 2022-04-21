@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowBaremetalServerInterfaceAttachmentsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowBaremetalServerInterfaceAttachmentsResponse(SdkResponse):
     }
 
     def __init__(self, interface_attachments=None):
-        """ShowBaremetalServerInterfaceAttachmentsResponse - a model defined in huaweicloud sdk"""
+        """ShowBaremetalServerInterfaceAttachmentsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param interface_attachments: 裸金属服务器网卡信息列表，详情请参见表2 interfaceAttachments字段数据结构说明。
+        :type interface_attachments: list[:class:`huaweicloudsdkbms.v1.InterfaceAttachments`]
+        """
         
         super(ShowBaremetalServerInterfaceAttachmentsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ShowBaremetalServerInterfaceAttachmentsResponse(SdkResponse):
         裸金属服务器网卡信息列表，详情请参见表2 interfaceAttachments字段数据结构说明。
 
         :return: The interface_attachments of this ShowBaremetalServerInterfaceAttachmentsResponse.
-        :rtype: list[InterfaceAttachments]
+        :rtype: list[:class:`huaweicloudsdkbms.v1.InterfaceAttachments`]
         """
         return self._interface_attachments
 
@@ -58,7 +63,7 @@ class ShowBaremetalServerInterfaceAttachmentsResponse(SdkResponse):
         裸金属服务器网卡信息列表，详情请参见表2 interfaceAttachments字段数据结构说明。
 
         :param interface_attachments: The interface_attachments of this ShowBaremetalServerInterfaceAttachmentsResponse.
-        :type: list[InterfaceAttachments]
+        :type interface_attachments: list[:class:`huaweicloudsdkbms.v1.InterfaceAttachments`]
         """
         self._interface_attachments = interface_attachments
 

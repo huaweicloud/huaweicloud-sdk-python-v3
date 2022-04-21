@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowTaskResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowTaskResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, taskinfo=None):
-        """ShowTaskResponse - a model defined in huaweicloud sdk"""
+        """ShowTaskResponse
+
+        The model defined in huaweicloud sdk
+
+        :param code: code
+        :type code: str
+        :param message: message
+        :type message: str
+        :param taskinfo: 
+        :type taskinfo: :class:`huaweicloudsdkcpts.v1.TaskInfo`
+        """
         
         super(ShowTaskResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ShowTaskResponse(SdkResponse):
         code
 
         :param code: The code of this ShowTaskResponse.
-        :type: str
+        :type code: str
         """
         self._code = code
 
@@ -90,7 +99,7 @@ class ShowTaskResponse(SdkResponse):
         message
 
         :param message: The message of this ShowTaskResponse.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -100,7 +109,7 @@ class ShowTaskResponse(SdkResponse):
 
 
         :return: The taskinfo of this ShowTaskResponse.
-        :rtype: TaskInfo
+        :rtype: :class:`huaweicloudsdkcpts.v1.TaskInfo`
         """
         return self._taskinfo
 
@@ -110,7 +119,7 @@ class ShowTaskResponse(SdkResponse):
 
 
         :param taskinfo: The taskinfo of this ShowTaskResponse.
-        :type: TaskInfo
+        :type taskinfo: :class:`huaweicloudsdkcpts.v1.TaskInfo`
         """
         self._taskinfo = taskinfo
 

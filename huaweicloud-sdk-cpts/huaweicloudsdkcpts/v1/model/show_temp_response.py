@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowTempResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowTempResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, temp_info=None):
-        """ShowTempResponse - a model defined in huaweicloud sdk"""
+        """ShowTempResponse
+
+        The model defined in huaweicloud sdk
+
+        :param code: code
+        :type code: str
+        :param message: message
+        :type message: str
+        :param temp_info: 
+        :type temp_info: :class:`huaweicloudsdkcpts.v1.TempInfo`
+        """
         
         super(ShowTempResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ShowTempResponse(SdkResponse):
         code
 
         :param code: The code of this ShowTempResponse.
-        :type: str
+        :type code: str
         """
         self._code = code
 
@@ -90,7 +99,7 @@ class ShowTempResponse(SdkResponse):
         message
 
         :param message: The message of this ShowTempResponse.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -100,7 +109,7 @@ class ShowTempResponse(SdkResponse):
 
 
         :return: The temp_info of this ShowTempResponse.
-        :rtype: TempInfo
+        :rtype: :class:`huaweicloudsdkcpts.v1.TempInfo`
         """
         return self._temp_info
 
@@ -110,7 +119,7 @@ class ShowTempResponse(SdkResponse):
 
 
         :param temp_info: The temp_info of this ShowTempResponse.
-        :type: TempInfo
+        :type temp_info: :class:`huaweicloudsdkcpts.v1.TempInfo`
         """
         self._temp_info = temp_info
 

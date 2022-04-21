@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BandwidthInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class BandwidthInfo:
     }
 
     def __init__(self, size=None, share_type=None, charging_mode=None, id=None):
-        """BandwidthInfo - a model defined in huaweicloud sdk"""
+        """BandwidthInfo
+
+        The model defined in huaweicloud sdk
+
+        :param size: 带宽（Mbit/s），按带宽分配取值范围为[1,2000]，按流量分配取值范围为[1,300]。  说明： - 若share_type是PER，该参数为必选项。若share_type是WHOLE，会忽略该参数。 - 具体范围以各区域配置为准，请参见控制台对应页面显示。 - 创建带宽时的最小单位会根据带宽取值范围不同存在差异。 - 小于等于300Mbit/s：默认最小单位为1Mbit/s。 - 300Mbit/s~1000Mbit/s：默认最小单位为50Mbit/s。 - 大于1000Mbit/s：默认最小单位为500Mbit/s。
+        :type size: int
+        :param share_type: 带宽的共享类型。共享类型枚举：PER：独享型。WHOLE：共享型。
+        :type share_type: str
+        :param charging_mode: 带宽的计费类型。字段值为“bandwidth”，表示按带宽计费。字段值为“traffic”，表示按流量计费。字段为其它值，会导致创建云服务器失败。如果share_type是PER，该参数为必选项。如果share_type是WHOLE，会忽略该参数。
+        :type charging_mode: str
+        :param id: 带宽ID，使用共享型带宽时，可以选择之前创建的共享带宽来创建弹性IP。如果share_type是PER，会忽略该参数。如果share_type是WHOLE，该参数为必选项。
+        :type id: str
+        """
         
         
 
@@ -72,7 +83,7 @@ class BandwidthInfo:
         带宽（Mbit/s），按带宽分配取值范围为[1,2000]，按流量分配取值范围为[1,300]。  说明： - 若share_type是PER，该参数为必选项。若share_type是WHOLE，会忽略该参数。 - 具体范围以各区域配置为准，请参见控制台对应页面显示。 - 创建带宽时的最小单位会根据带宽取值范围不同存在差异。 - 小于等于300Mbit/s：默认最小单位为1Mbit/s。 - 300Mbit/s~1000Mbit/s：默认最小单位为50Mbit/s。 - 大于1000Mbit/s：默认最小单位为500Mbit/s。
 
         :param size: The size of this BandwidthInfo.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -94,7 +105,7 @@ class BandwidthInfo:
         带宽的共享类型。共享类型枚举：PER：独享型。WHOLE：共享型。
 
         :param share_type: The share_type of this BandwidthInfo.
-        :type: str
+        :type share_type: str
         """
         self._share_type = share_type
 
@@ -116,7 +127,7 @@ class BandwidthInfo:
         带宽的计费类型。字段值为“bandwidth”，表示按带宽计费。字段值为“traffic”，表示按流量计费。字段为其它值，会导致创建云服务器失败。如果share_type是PER，该参数为必选项。如果share_type是WHOLE，会忽略该参数。
 
         :param charging_mode: The charging_mode of this BandwidthInfo.
-        :type: str
+        :type charging_mode: str
         """
         self._charging_mode = charging_mode
 
@@ -138,7 +149,7 @@ class BandwidthInfo:
         带宽ID，使用共享型带宽时，可以选择之前创建的共享带宽来创建弹性IP。如果share_type是PER，会忽略该参数。如果share_type是WHOLE，该参数为必选项。
 
         :param id: The id of this BandwidthInfo.
-        :type: str
+        :type id: str
         """
         self._id = id
 

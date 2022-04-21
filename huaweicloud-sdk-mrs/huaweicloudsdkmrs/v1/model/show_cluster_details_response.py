@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowClusterDetailsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowClusterDetailsResponse(SdkResponse):
     }
 
     def __init__(self, cluster=None):
-        """ShowClusterDetailsResponse - a model defined in huaweicloud sdk"""
+        """ShowClusterDetailsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param cluster: 
+        :type cluster: :class:`huaweicloudsdkmrs.v1.Cluster`
+        """
         
         super(ShowClusterDetailsResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class ShowClusterDetailsResponse(SdkResponse):
 
 
         :return: The cluster of this ShowClusterDetailsResponse.
-        :rtype: Cluster
+        :rtype: :class:`huaweicloudsdkmrs.v1.Cluster`
         """
         return self._cluster
 
@@ -56,7 +61,7 @@ class ShowClusterDetailsResponse(SdkResponse):
 
 
         :param cluster: The cluster of this ShowClusterDetailsResponse.
-        :type: Cluster
+        :type cluster: :class:`huaweicloudsdkmrs.v1.Cluster`
         """
         self._cluster = cluster
 

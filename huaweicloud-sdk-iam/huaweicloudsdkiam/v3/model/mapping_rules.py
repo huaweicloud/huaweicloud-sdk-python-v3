@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MappingRules:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class MappingRules:
     }
 
     def __init__(self, local=None, remote=None):
-        """MappingRules - a model defined in huaweicloud sdk"""
+        """MappingRules
+
+        The model defined in huaweicloud sdk
+
+        :param local: 表示联邦用户在本系统中的用户信息。 user：联邦用户在本系统中的用户名称。group：联邦用户在本系统中所属用户组。 
+        :type local: list[dict(str, RulesLocalAdditional)]
+        :param remote: 表示联邦用户在IdP中的用户信息。由断言属性及运算符组成的表达式，取值由断言决定。
+        :type remote: list[:class:`huaweicloudsdkiam.v3.RulesRemote`]
+        """
         
         
 
@@ -61,7 +68,7 @@ class MappingRules:
         表示联邦用户在本系统中的用户信息。 user：联邦用户在本系统中的用户名称。group：联邦用户在本系统中所属用户组。 
 
         :param local: The local of this MappingRules.
-        :type: list[dict(str, RulesLocalAdditional)]
+        :type local: list[dict(str, RulesLocalAdditional)]
         """
         self._local = local
 
@@ -72,7 +79,7 @@ class MappingRules:
         表示联邦用户在IdP中的用户信息。由断言属性及运算符组成的表达式，取值由断言决定。
 
         :return: The remote of this MappingRules.
-        :rtype: list[RulesRemote]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.RulesRemote`]
         """
         return self._remote
 
@@ -83,7 +90,7 @@ class MappingRules:
         表示联邦用户在IdP中的用户信息。由断言属性及运算符组成的表达式，取值由断言决定。
 
         :param remote: The remote of this MappingRules.
-        :type: list[RulesRemote]
+        :type remote: list[:class:`huaweicloudsdkiam.v3.RulesRemote`]
         """
         self._remote = remote
 

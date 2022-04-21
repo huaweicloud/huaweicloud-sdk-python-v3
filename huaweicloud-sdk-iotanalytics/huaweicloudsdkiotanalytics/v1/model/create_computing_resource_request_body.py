@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateComputingResourceRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class CreateComputingResourceRequestBody:
     }
 
     def __init__(self, computing_resource_name=None, computing_resource_type=None, description=None, cu_count=None, charging_mode=None):
-        """CreateComputingResourceRequestBody - a model defined in huaweicloud sdk"""
+        """CreateComputingResourceRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param computing_resource_name: 新建的计算资源名称，名称只能包含数字、英文字母和下划线，但不能是纯数字，且不能以下划线开头。
+        :type computing_resource_name: str
+        :param computing_resource_type: 计算资源的类型。默认为sql。
+        :type computing_resource_type: str
+        :param description: 计算资源的描述信息。
+        :type description: str
+        :param cu_count: 与计算资源绑定的最小计算单元个数。设置值当前只支持16，64，256。
+        :type cu_count: int
+        :param charging_mode: 计算资源的收费模式。只能设置为“1”，表示按照CU时收费。
+        :type charging_mode: int
+        """
         
         
 
@@ -76,7 +89,7 @@ class CreateComputingResourceRequestBody:
         新建的计算资源名称，名称只能包含数字、英文字母和下划线，但不能是纯数字，且不能以下划线开头。
 
         :param computing_resource_name: The computing_resource_name of this CreateComputingResourceRequestBody.
-        :type: str
+        :type computing_resource_name: str
         """
         self._computing_resource_name = computing_resource_name
 
@@ -98,7 +111,7 @@ class CreateComputingResourceRequestBody:
         计算资源的类型。默认为sql。
 
         :param computing_resource_type: The computing_resource_type of this CreateComputingResourceRequestBody.
-        :type: str
+        :type computing_resource_type: str
         """
         self._computing_resource_type = computing_resource_type
 
@@ -120,7 +133,7 @@ class CreateComputingResourceRequestBody:
         计算资源的描述信息。
 
         :param description: The description of this CreateComputingResourceRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -142,7 +155,7 @@ class CreateComputingResourceRequestBody:
         与计算资源绑定的最小计算单元个数。设置值当前只支持16，64，256。
 
         :param cu_count: The cu_count of this CreateComputingResourceRequestBody.
-        :type: int
+        :type cu_count: int
         """
         self._cu_count = cu_count
 
@@ -164,7 +177,7 @@ class CreateComputingResourceRequestBody:
         计算资源的收费模式。只能设置为“1”，表示按照CU时收费。
 
         :param charging_mode: The charging_mode of this CreateComputingResourceRequestBody.
-        :type: int
+        :type charging_mode: int
         """
         self._charging_mode = charging_mode
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateAutoRecordRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class UpdateAutoRecordRequest:
     }
 
     def __init__(self, content_type=None, authorization=None, x_sdk_date=None, x_project_id=None, app_id=None, body=None):
-        """UpdateAutoRecordRequest - a model defined in huaweicloud sdk"""
+        """UpdateAutoRecordRequest
+
+        The model defined in huaweicloud sdk
+
+        :param content_type: 内容类型。
+        :type content_type: str
+        :param authorization: 使用AK/SK方式认证时必选，携带的鉴权信息。
+        :type authorization: str
+        :param x_sdk_date: 使用AK/SK方式认证时必选，请求的发生时间。
+        :type x_sdk_date: str
+        :param x_project_id: 使用AK/SK方式认证时必选，携带项目ID信息。
+        :type x_project_id: str
+        :param app_id: 应用id
+        :type app_id: str
+        :param body: Body of the UpdateAutoRecordRequest
+        :type body: :class:`huaweicloudsdkcloudrtc.v2.AutoRecordModeReq`
+        """
         
         
 
@@ -81,7 +96,7 @@ class UpdateAutoRecordRequest:
         内容类型。
 
         :param content_type: The content_type of this UpdateAutoRecordRequest.
-        :type: str
+        :type content_type: str
         """
         self._content_type = content_type
 
@@ -103,7 +118,7 @@ class UpdateAutoRecordRequest:
         使用AK/SK方式认证时必选，携带的鉴权信息。
 
         :param authorization: The authorization of this UpdateAutoRecordRequest.
-        :type: str
+        :type authorization: str
         """
         self._authorization = authorization
 
@@ -125,7 +140,7 @@ class UpdateAutoRecordRequest:
         使用AK/SK方式认证时必选，请求的发生时间。
 
         :param x_sdk_date: The x_sdk_date of this UpdateAutoRecordRequest.
-        :type: str
+        :type x_sdk_date: str
         """
         self._x_sdk_date = x_sdk_date
 
@@ -147,7 +162,7 @@ class UpdateAutoRecordRequest:
         使用AK/SK方式认证时必选，携带项目ID信息。
 
         :param x_project_id: The x_project_id of this UpdateAutoRecordRequest.
-        :type: str
+        :type x_project_id: str
         """
         self._x_project_id = x_project_id
 
@@ -169,7 +184,7 @@ class UpdateAutoRecordRequest:
         应用id
 
         :param app_id: The app_id of this UpdateAutoRecordRequest.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -179,7 +194,7 @@ class UpdateAutoRecordRequest:
 
 
         :return: The body of this UpdateAutoRecordRequest.
-        :rtype: AutoRecordModeReq
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.AutoRecordModeReq`
         """
         return self._body
 
@@ -189,7 +204,7 @@ class UpdateAutoRecordRequest:
 
 
         :param body: The body of this UpdateAutoRecordRequest.
-        :type: AutoRecordModeReq
+        :type body: :class:`huaweicloudsdkcloudrtc.v2.AutoRecordModeReq`
         """
         self._body = body
 

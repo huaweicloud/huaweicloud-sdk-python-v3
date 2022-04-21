@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SetBackupPolicyRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class SetBackupPolicyRequestBody:
     }
 
     def __init__(self, backup_policy=None):
-        """SetBackupPolicyRequestBody - a model defined in huaweicloud sdk"""
+        """SetBackupPolicyRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param backup_policy: 
+        :type backup_policy: :class:`huaweicloudsdkgaussdbfornosql.v3.BackupPolicy`
+        """
         
         
 
@@ -45,7 +50,7 @@ class SetBackupPolicyRequestBody:
 
 
         :return: The backup_policy of this SetBackupPolicyRequestBody.
-        :rtype: BackupPolicy
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.BackupPolicy`
         """
         return self._backup_policy
 
@@ -55,7 +60,7 @@ class SetBackupPolicyRequestBody:
 
 
         :param backup_policy: The backup_policy of this SetBackupPolicyRequestBody.
-        :type: BackupPolicy
+        :type backup_policy: :class:`huaweicloudsdkgaussdbfornosql.v3.BackupPolicy`
         """
         self._backup_policy = backup_policy
 

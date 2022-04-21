@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddNicsRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class AddNicsRequestBody:
     }
 
     def __init__(self, vpc_id=None, security_groups=None, subnet_id=None, nic_num=None):
-        """AddNicsRequestBody - a model defined in huaweicloud sdk"""
+        """AddNicsRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param vpc_id: 虚拟私有云ID。
+        :type vpc_id: str
+        :param security_groups: 安全组ID列表。
+        :type security_groups: list[:class:`huaweicloudsdkiec.v1.BaseId`]
+        :param subnet_id: 子网ID。  当subnet_id提供时，则在该子网下创建nic_num个网卡； 不输入，则自动分配subnet。 当添加网卡的VPC为手动规划VPC时，subnet_id必填。
+        :type subnet_id: str
+        :param nic_num: 待添加网卡数量。
+        :type nic_num: int
+        """
         
         
 
@@ -70,7 +81,7 @@ class AddNicsRequestBody:
         虚拟私有云ID。
 
         :param vpc_id: The vpc_id of this AddNicsRequestBody.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -81,7 +92,7 @@ class AddNicsRequestBody:
         安全组ID列表。
 
         :return: The security_groups of this AddNicsRequestBody.
-        :rtype: list[BaseId]
+        :rtype: list[:class:`huaweicloudsdkiec.v1.BaseId`]
         """
         return self._security_groups
 
@@ -92,7 +103,7 @@ class AddNicsRequestBody:
         安全组ID列表。
 
         :param security_groups: The security_groups of this AddNicsRequestBody.
-        :type: list[BaseId]
+        :type security_groups: list[:class:`huaweicloudsdkiec.v1.BaseId`]
         """
         self._security_groups = security_groups
 
@@ -114,7 +125,7 @@ class AddNicsRequestBody:
         子网ID。  当subnet_id提供时，则在该子网下创建nic_num个网卡； 不输入，则自动分配subnet。 当添加网卡的VPC为手动规划VPC时，subnet_id必填。
 
         :param subnet_id: The subnet_id of this AddNicsRequestBody.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -136,7 +147,7 @@ class AddNicsRequestBody:
         待添加网卡数量。
 
         :param nic_num: The nic_num of this AddNicsRequestBody.
-        :type: int
+        :type nic_num: int
         """
         self._nic_num = nic_num
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchMember:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class BatchMember:
     }
 
     def __init__(self, id=None, name=None, project_id=None, admin_state_up=None, subnet_cidr_id=None, protocol_port=None, weight=None, address=None, operating_status=None, member_type=None, instance_id=None, port_id=None, ret_status=None):
-        """BatchMember - a model defined in huaweicloud sdk"""
+        """BatchMember
+
+        The model defined in huaweicloud sdk
+
+        :param id: 后端服务器ID。
+        :type id: str
+        :param name: 后端服务器名称。
+        :type name: str
+        :param project_id: 后端服务器所在的项目ID。
+        :type project_id: str
+        :param admin_state_up: 后端云服务器的管理状态。取值：true、false。  虽然创建、更新请求支持该字段，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
+        :type admin_state_up: bool
+        :param subnet_cidr_id: 后端云服务器所在子网的IPv4子网ID或IPv6子网ID。  若所属的LB的跨VPC后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为IPv4地址，所在的pool的协议必须为TCP/HTTP/HTTPS。  使用说明： - 该子网和关联的负载均衡器的子网必须在同一VPC下。 [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt,dt_test)
+        :type subnet_cidr_id: str
+        :param protocol_port: 后端服务器业务端口号。
+        :type protocol_port: int
+        :param weight: 后端云服务器的权重，请求将根据pool配置的负载均衡算法和后端云服务器的权重进行负载分发。权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。 取值：0-100，默认1。 使用说明：  - 若所在pool的lb_algorithm取值为SOURCE_IP，该字段无效。
+        :type weight: int
+        :param address: 后端服务器对应的IP地址。 使用说明：  - 若subnet_cidr_id为空，表示添加跨VPC后端，此时address必须为IPv4地址。  - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。该IP地址可以是IPv4或IPv6。但必须在subnet_cidr_id对应的子网网段中。且只能指定为关联ECS的主网卡IP。 [不支持IPv6，请勿设置为IPv6地址。](tag:dt,dt_test)
+        :type address: str
+        :param operating_status: 后端云服务器的健康状态。取值： - ONLINE：后端云服务器正常。 - NO_MONITOR：后端云服务器所在的服务器组没有健康检查器。 - OFFLINE：后端云服务器关联的ECS服务器不存在或已关机。
+        :type operating_status: str
+        :param member_type: 后端云服务器的类型。取值： - ip：跨VPC的member。 - instance：关联到ECS的member。
+        :type member_type: str
+        :param instance_id: member关联的实例ID，空表示跨VPC场景的member。
+        :type instance_id: str
+        :param port_id: IP地址对应的VPC port ID
+        :type port_id: str
+        :param ret_status: 当前后端服务器创建结果状态。取值： - successful：添加成功。 - existed：member已存在。
+        :type ret_status: str
+        """
         
         
 
@@ -108,7 +137,7 @@ class BatchMember:
         后端服务器ID。
 
         :param id: The id of this BatchMember.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -130,7 +159,7 @@ class BatchMember:
         后端服务器名称。
 
         :param name: The name of this BatchMember.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -152,7 +181,7 @@ class BatchMember:
         后端服务器所在的项目ID。
 
         :param project_id: The project_id of this BatchMember.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -174,7 +203,7 @@ class BatchMember:
         后端云服务器的管理状态。取值：true、false。  虽然创建、更新请求支持该字段，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
 
         :param admin_state_up: The admin_state_up of this BatchMember.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 
@@ -196,7 +225,7 @@ class BatchMember:
         后端云服务器所在子网的IPv4子网ID或IPv6子网ID。  若所属的LB的跨VPC后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为IPv4地址，所在的pool的协议必须为TCP/HTTP/HTTPS。  使用说明： - 该子网和关联的负载均衡器的子网必须在同一VPC下。 [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt,dt_test)
 
         :param subnet_cidr_id: The subnet_cidr_id of this BatchMember.
-        :type: str
+        :type subnet_cidr_id: str
         """
         self._subnet_cidr_id = subnet_cidr_id
 
@@ -218,7 +247,7 @@ class BatchMember:
         后端服务器业务端口号。
 
         :param protocol_port: The protocol_port of this BatchMember.
-        :type: int
+        :type protocol_port: int
         """
         self._protocol_port = protocol_port
 
@@ -240,7 +269,7 @@ class BatchMember:
         后端云服务器的权重，请求将根据pool配置的负载均衡算法和后端云服务器的权重进行负载分发。权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。 取值：0-100，默认1。 使用说明：  - 若所在pool的lb_algorithm取值为SOURCE_IP，该字段无效。
 
         :param weight: The weight of this BatchMember.
-        :type: int
+        :type weight: int
         """
         self._weight = weight
 
@@ -262,7 +291,7 @@ class BatchMember:
         后端服务器对应的IP地址。 使用说明：  - 若subnet_cidr_id为空，表示添加跨VPC后端，此时address必须为IPv4地址。  - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。该IP地址可以是IPv4或IPv6。但必须在subnet_cidr_id对应的子网网段中。且只能指定为关联ECS的主网卡IP。 [不支持IPv6，请勿设置为IPv6地址。](tag:dt,dt_test)
 
         :param address: The address of this BatchMember.
-        :type: str
+        :type address: str
         """
         self._address = address
 
@@ -284,7 +313,7 @@ class BatchMember:
         后端云服务器的健康状态。取值： - ONLINE：后端云服务器正常。 - NO_MONITOR：后端云服务器所在的服务器组没有健康检查器。 - OFFLINE：后端云服务器关联的ECS服务器不存在或已关机。
 
         :param operating_status: The operating_status of this BatchMember.
-        :type: str
+        :type operating_status: str
         """
         self._operating_status = operating_status
 
@@ -306,7 +335,7 @@ class BatchMember:
         后端云服务器的类型。取值： - ip：跨VPC的member。 - instance：关联到ECS的member。
 
         :param member_type: The member_type of this BatchMember.
-        :type: str
+        :type member_type: str
         """
         self._member_type = member_type
 
@@ -328,7 +357,7 @@ class BatchMember:
         member关联的实例ID，空表示跨VPC场景的member。
 
         :param instance_id: The instance_id of this BatchMember.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -350,7 +379,7 @@ class BatchMember:
         IP地址对应的VPC port ID
 
         :param port_id: The port_id of this BatchMember.
-        :type: str
+        :type port_id: str
         """
         self._port_id = port_id
 
@@ -372,7 +401,7 @@ class BatchMember:
         当前后端服务器创建结果状态。取值： - successful：添加成功。 - existed：member已存在。
 
         :param ret_status: The ret_status of this BatchMember.
-        :type: str
+        :type ret_status: str
         """
         self._ret_status = ret_status
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BankcardResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class BankcardResult:
     }
 
     def __init__(self, bank_name=None, card_number=None, issue_date=None, expiry_date=None, type=None, confidence=None, text_location=None):
-        """BankcardResult - a model defined in huaweicloud sdk"""
+        """BankcardResult
+
+        The model defined in huaweicloud sdk
+
+        :param bank_name: 发卡行。 
+        :type bank_name: str
+        :param card_number: 银行卡号。 
+        :type card_number: str
+        :param issue_date: 有效期开始日期。 
+        :type issue_date: str
+        :param expiry_date: 有效期截止日期。 
+        :type expiry_date: str
+        :param type: 银行卡类别，如：储蓄卡，信用卡。 
+        :type type: str
+        :param confidence: 相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。 
+        :type confidence: object
+        :param text_location: 对应所有在原图上识别到的字段位置信息，包含所有文字区域四个顶点的二维坐标（x,y）。采用图像坐标系，坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
+        :type text_location: object
+        """
         
         
 
@@ -88,7 +105,7 @@ class BankcardResult:
         发卡行。 
 
         :param bank_name: The bank_name of this BankcardResult.
-        :type: str
+        :type bank_name: str
         """
         self._bank_name = bank_name
 
@@ -110,7 +127,7 @@ class BankcardResult:
         银行卡号。 
 
         :param card_number: The card_number of this BankcardResult.
-        :type: str
+        :type card_number: str
         """
         self._card_number = card_number
 
@@ -132,7 +149,7 @@ class BankcardResult:
         有效期开始日期。 
 
         :param issue_date: The issue_date of this BankcardResult.
-        :type: str
+        :type issue_date: str
         """
         self._issue_date = issue_date
 
@@ -154,7 +171,7 @@ class BankcardResult:
         有效期截止日期。 
 
         :param expiry_date: The expiry_date of this BankcardResult.
-        :type: str
+        :type expiry_date: str
         """
         self._expiry_date = expiry_date
 
@@ -176,7 +193,7 @@ class BankcardResult:
         银行卡类别，如：储蓄卡，信用卡。 
 
         :param type: The type of this BankcardResult.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -198,7 +215,7 @@ class BankcardResult:
         相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。 
 
         :param confidence: The confidence of this BankcardResult.
-        :type: object
+        :type confidence: object
         """
         self._confidence = confidence
 
@@ -220,7 +237,7 @@ class BankcardResult:
         对应所有在原图上识别到的字段位置信息，包含所有文字区域四个顶点的二维坐标（x,y）。采用图像坐标系，坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
         :param text_location: The text_location of this BankcardResult.
-        :type: object
+        :type text_location: object
         """
         self._text_location = text_location
 

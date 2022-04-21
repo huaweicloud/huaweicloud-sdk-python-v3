@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowScanJobResultsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ShowScanJobResultsResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, job_name=None, type=None, db_scan_result=None, obs_scan_result=None, es_scan_result=None):
-        """ShowScanJobResultsResponse - a model defined in huaweicloud sdk"""
+        """ShowScanJobResultsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 任务ID
+        :type job_id: str
+        :param job_name: 任务名
+        :type job_name: str
+        :param type: 查询资产类型
+        :type type: str
+        :param db_scan_result: 
+        :type db_scan_result: :class:`huaweicloudsdkdsc.v1.DbScanResult`
+        :param obs_scan_result: 
+        :type obs_scan_result: :class:`huaweicloudsdkdsc.v1.ObsScanResult`
+        :param es_scan_result: 
+        :type es_scan_result: :class:`huaweicloudsdkdsc.v1.EsScanResult`
+        """
         
         super(ShowScanJobResultsResponse, self).__init__()
 
@@ -83,7 +98,7 @@ class ShowScanJobResultsResponse(SdkResponse):
         任务ID
 
         :param job_id: The job_id of this ShowScanJobResultsResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -105,7 +120,7 @@ class ShowScanJobResultsResponse(SdkResponse):
         任务名
 
         :param job_name: The job_name of this ShowScanJobResultsResponse.
-        :type: str
+        :type job_name: str
         """
         self._job_name = job_name
 
@@ -127,7 +142,7 @@ class ShowScanJobResultsResponse(SdkResponse):
         查询资产类型
 
         :param type: The type of this ShowScanJobResultsResponse.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -137,7 +152,7 @@ class ShowScanJobResultsResponse(SdkResponse):
 
 
         :return: The db_scan_result of this ShowScanJobResultsResponse.
-        :rtype: DbScanResult
+        :rtype: :class:`huaweicloudsdkdsc.v1.DbScanResult`
         """
         return self._db_scan_result
 
@@ -147,7 +162,7 @@ class ShowScanJobResultsResponse(SdkResponse):
 
 
         :param db_scan_result: The db_scan_result of this ShowScanJobResultsResponse.
-        :type: DbScanResult
+        :type db_scan_result: :class:`huaweicloudsdkdsc.v1.DbScanResult`
         """
         self._db_scan_result = db_scan_result
 
@@ -157,7 +172,7 @@ class ShowScanJobResultsResponse(SdkResponse):
 
 
         :return: The obs_scan_result of this ShowScanJobResultsResponse.
-        :rtype: ObsScanResult
+        :rtype: :class:`huaweicloudsdkdsc.v1.ObsScanResult`
         """
         return self._obs_scan_result
 
@@ -167,7 +182,7 @@ class ShowScanJobResultsResponse(SdkResponse):
 
 
         :param obs_scan_result: The obs_scan_result of this ShowScanJobResultsResponse.
-        :type: ObsScanResult
+        :type obs_scan_result: :class:`huaweicloudsdkdsc.v1.ObsScanResult`
         """
         self._obs_scan_result = obs_scan_result
 
@@ -177,7 +192,7 @@ class ShowScanJobResultsResponse(SdkResponse):
 
 
         :return: The es_scan_result of this ShowScanJobResultsResponse.
-        :rtype: EsScanResult
+        :rtype: :class:`huaweicloudsdkdsc.v1.EsScanResult`
         """
         return self._es_scan_result
 
@@ -187,7 +202,7 @@ class ShowScanJobResultsResponse(SdkResponse):
 
 
         :param es_scan_result: The es_scan_result of this ShowScanJobResultsResponse.
-        :type: EsScanResult
+        :type es_scan_result: :class:`huaweicloudsdkdsc.v1.EsScanResult`
         """
         self._es_scan_result = es_scan_result
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchRebootSeversOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchRebootSeversOption:
     }
 
     def __init__(self, servers=None, type=None):
-        """BatchRebootSeversOption - a model defined in huaweicloud sdk"""
+        """BatchRebootSeversOption
+
+        The model defined in huaweicloud sdk
+
+        :param servers: 云服务器ID列表。
+        :type servers: list[:class:`huaweicloudsdkecs.v2.ServerId`]
+        :param type: 重启类型：  - SOFT：普通重启。 - HARD：强制重启。
+        :type type: str
+        """
         
         
 
@@ -50,7 +57,7 @@ class BatchRebootSeversOption:
         云服务器ID列表。
 
         :return: The servers of this BatchRebootSeversOption.
-        :rtype: list[ServerId]
+        :rtype: list[:class:`huaweicloudsdkecs.v2.ServerId`]
         """
         return self._servers
 
@@ -61,7 +68,7 @@ class BatchRebootSeversOption:
         云服务器ID列表。
 
         :param servers: The servers of this BatchRebootSeversOption.
-        :type: list[ServerId]
+        :type servers: list[:class:`huaweicloudsdkecs.v2.ServerId`]
         """
         self._servers = servers
 
@@ -83,7 +90,7 @@ class BatchRebootSeversOption:
         重启类型：  - SOFT：普通重启。 - HARD：强制重启。
 
         :param type: The type of this BatchRebootSeversOption.
-        :type: str
+        :type type: str
         """
         self._type = type
 

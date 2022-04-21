@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListHealthMonitorsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListHealthMonitorsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, page_info=None, healthmonitors=None):
-        """ListHealthMonitorsResponse - a model defined in huaweicloud sdk"""
+        """ListHealthMonitorsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param request_id: 请求ID。  注：自动生成 。
+        :type request_id: str
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`
+        :param healthmonitors: 健康检查对象。
+        :type healthmonitors: list[:class:`huaweicloudsdkelb.v3.HealthMonitor`]
+        """
         
         super(ListHealthMonitorsResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListHealthMonitorsResponse(SdkResponse):
         请求ID。  注：自动生成 。
 
         :param request_id: The request_id of this ListHealthMonitorsResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 
@@ -78,7 +87,7 @@ class ListHealthMonitorsResponse(SdkResponse):
 
 
         :return: The page_info of this ListHealthMonitorsResponse.
-        :rtype: PageInfo
+        :rtype: :class:`huaweicloudsdkelb.v3.PageInfo`
         """
         return self._page_info
 
@@ -88,7 +97,7 @@ class ListHealthMonitorsResponse(SdkResponse):
 
 
         :param page_info: The page_info of this ListHealthMonitorsResponse.
-        :type: PageInfo
+        :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`
         """
         self._page_info = page_info
 
@@ -99,7 +108,7 @@ class ListHealthMonitorsResponse(SdkResponse):
         健康检查对象。
 
         :return: The healthmonitors of this ListHealthMonitorsResponse.
-        :rtype: list[HealthMonitor]
+        :rtype: list[:class:`huaweicloudsdkelb.v3.HealthMonitor`]
         """
         return self._healthmonitors
 
@@ -110,7 +119,7 @@ class ListHealthMonitorsResponse(SdkResponse):
         健康检查对象。
 
         :param healthmonitors: The healthmonitors of this ListHealthMonitorsResponse.
-        :type: list[HealthMonitor]
+        :type healthmonitors: list[:class:`huaweicloudsdkelb.v3.HealthMonitor`]
         """
         self._healthmonitors = healthmonitors
 

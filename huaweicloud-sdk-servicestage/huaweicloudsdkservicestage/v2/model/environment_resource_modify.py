@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EnvironmentResourceModify:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class EnvironmentResourceModify:
     }
 
     def __init__(self, add_base_resources=None, add_optional_resources=None, remove_resources=None):
-        """EnvironmentResourceModify - a model defined in huaweicloud sdk"""
+        """EnvironmentResourceModify
+
+        The model defined in huaweicloud sdk
+
+        :param add_base_resources: 添加基础资源。
+        :type add_base_resources: list[:class:`huaweicloudsdkservicestage.v2.Resource`]
+        :param add_optional_resources: 添加其他资源。
+        :type add_optional_resources: list[:class:`huaweicloudsdkservicestage.v2.Resource`]
+        :param remove_resources: 移除资源。
+        :type remove_resources: list[:class:`huaweicloudsdkservicestage.v2.Resource`]
+        """
         
         
 
@@ -57,7 +66,7 @@ class EnvironmentResourceModify:
         添加基础资源。
 
         :return: The add_base_resources of this EnvironmentResourceModify.
-        :rtype: list[Resource]
+        :rtype: list[:class:`huaweicloudsdkservicestage.v2.Resource`]
         """
         return self._add_base_resources
 
@@ -68,7 +77,7 @@ class EnvironmentResourceModify:
         添加基础资源。
 
         :param add_base_resources: The add_base_resources of this EnvironmentResourceModify.
-        :type: list[Resource]
+        :type add_base_resources: list[:class:`huaweicloudsdkservicestage.v2.Resource`]
         """
         self._add_base_resources = add_base_resources
 
@@ -79,7 +88,7 @@ class EnvironmentResourceModify:
         添加其他资源。
 
         :return: The add_optional_resources of this EnvironmentResourceModify.
-        :rtype: list[Resource]
+        :rtype: list[:class:`huaweicloudsdkservicestage.v2.Resource`]
         """
         return self._add_optional_resources
 
@@ -90,7 +99,7 @@ class EnvironmentResourceModify:
         添加其他资源。
 
         :param add_optional_resources: The add_optional_resources of this EnvironmentResourceModify.
-        :type: list[Resource]
+        :type add_optional_resources: list[:class:`huaweicloudsdkservicestage.v2.Resource`]
         """
         self._add_optional_resources = add_optional_resources
 
@@ -101,7 +110,7 @@ class EnvironmentResourceModify:
         移除资源。
 
         :return: The remove_resources of this EnvironmentResourceModify.
-        :rtype: list[Resource]
+        :rtype: list[:class:`huaweicloudsdkservicestage.v2.Resource`]
         """
         return self._remove_resources
 
@@ -112,7 +121,7 @@ class EnvironmentResourceModify:
         移除资源。
 
         :param remove_resources: The remove_resources of this EnvironmentResourceModify.
-        :type: list[Resource]
+        :type remove_resources: list[:class:`huaweicloudsdkservicestage.v2.Resource`]
         """
         self._remove_resources = remove_resources
 

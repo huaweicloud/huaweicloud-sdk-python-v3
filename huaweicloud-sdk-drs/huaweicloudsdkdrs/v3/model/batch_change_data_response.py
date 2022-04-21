@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchChangeDataResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchChangeDataResponse(SdkResponse):
     }
 
     def __init__(self, results=None, count=None):
-        """BatchChangeDataResponse - a model defined in huaweicloud sdk"""
+        """BatchChangeDataResponse
+
+        The model defined in huaweicloud sdk
+
+        :param results: 批量数据加工响应列表
+        :type results: list[:class:`huaweicloudsdkdrs.v3.DataTransformationResp`]
+        :param count: 总数
+        :type count: int
+        """
         
         super(BatchChangeDataResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class BatchChangeDataResponse(SdkResponse):
         批量数据加工响应列表
 
         :return: The results of this BatchChangeDataResponse.
-        :rtype: list[DataTransformationResp]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.DataTransformationResp`]
         """
         return self._results
 
@@ -63,7 +70,7 @@ class BatchChangeDataResponse(SdkResponse):
         批量数据加工响应列表
 
         :param results: The results of this BatchChangeDataResponse.
-        :type: list[DataTransformationResp]
+        :type results: list[:class:`huaweicloudsdkdrs.v3.DataTransformationResp`]
         """
         self._results = results
 
@@ -85,7 +92,7 @@ class BatchChangeDataResponse(SdkResponse):
         总数
 
         :param count: The count of this BatchChangeDataResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

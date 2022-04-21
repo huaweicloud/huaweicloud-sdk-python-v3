@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TemplateCddl:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class TemplateCddl:
     }
 
     def __init__(self, flow=None, states=None, workflow=None):
-        """TemplateCddl - a model defined in huaweicloud sdk"""
+        """TemplateCddl
+
+        The model defined in huaweicloud sdk
+
+        :param flow: 编排flow详情，描述流水线内各阶段任务的串并行关系。map类型数据，key为阶段名字，默认第一阶段initial，最后阶段为final，其余名字以&#39;state_数字&#39;标识。value为该阶段内任务(以&#39;Task_数字&#39;标识)以及后续阶段的标识。本字段为描述流水线基础编排数据之一，建议可通过流水线真实界面基于模板创建接口中获取
+        :type flow: dict(str, dict(str, str))
+        :param states: 编排State详情，map类型数据。本字段为描述流水线基础编排数据之一，建议可通过流水线真实界面基于模板创建接口中获取
+        :type states: dict(str, TemplateState)
+        :param workflow: 
+        :type workflow: :class:`huaweicloudsdkcloudpipeline.v2.Workflow`
+        """
         
         
 
@@ -65,7 +74,7 @@ class TemplateCddl:
         编排flow详情，描述流水线内各阶段任务的串并行关系。map类型数据，key为阶段名字，默认第一阶段initial，最后阶段为final，其余名字以'state_数字'标识。value为该阶段内任务(以'Task_数字'标识)以及后续阶段的标识。本字段为描述流水线基础编排数据之一，建议可通过流水线真实界面基于模板创建接口中获取
 
         :param flow: The flow of this TemplateCddl.
-        :type: dict(str, dict(str, str))
+        :type flow: dict(str, dict(str, str))
         """
         self._flow = flow
 
@@ -87,7 +96,7 @@ class TemplateCddl:
         编排State详情，map类型数据。本字段为描述流水线基础编排数据之一，建议可通过流水线真实界面基于模板创建接口中获取
 
         :param states: The states of this TemplateCddl.
-        :type: dict(str, TemplateState)
+        :type states: dict(str, TemplateState)
         """
         self._states = states
 
@@ -97,7 +106,7 @@ class TemplateCddl:
 
 
         :return: The workflow of this TemplateCddl.
-        :rtype: Workflow
+        :rtype: :class:`huaweicloudsdkcloudpipeline.v2.Workflow`
         """
         return self._workflow
 
@@ -107,7 +116,7 @@ class TemplateCddl:
 
 
         :param workflow: The workflow of this TemplateCddl.
-        :type: Workflow
+        :type workflow: :class:`huaweicloudsdkcloudpipeline.v2.Workflow`
         """
         self._workflow = workflow
 

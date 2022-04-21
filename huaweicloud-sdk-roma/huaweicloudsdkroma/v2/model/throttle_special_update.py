@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ThrottleSpecialUpdate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ThrottleSpecialUpdate:
     }
 
     def __init__(self, call_limits=None):
-        """ThrottleSpecialUpdate - a model defined in huaweicloud sdk"""
+        """ThrottleSpecialUpdate
+
+        The model defined in huaweicloud sdk
+
+        :param call_limits: 流控时间内特殊对象能够访问API的最大次数限制
+        :type call_limits: int
+        """
         
         
 
@@ -57,7 +62,7 @@ class ThrottleSpecialUpdate:
         流控时间内特殊对象能够访问API的最大次数限制
 
         :param call_limits: The call_limits of this ThrottleSpecialUpdate.
-        :type: int
+        :type call_limits: int
         """
         self._call_limits = call_limits
 

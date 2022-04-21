@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListMemberJobRecordsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListMemberJobRecordsResponse(SdkResponse):
     }
 
     def __init__(self, records=None, total=None):
-        """ListMemberJobRecordsResponse - a model defined in huaweicloud sdk"""
+        """ListMemberJobRecordsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param records: 习题提交列表信息
+        :type records: list[:class:`huaweicloudsdkclassroom.v3.JobRecords`]
+        :param total: 习题提交总次数
+        :type total: int
+        """
         
         super(ListMemberJobRecordsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListMemberJobRecordsResponse(SdkResponse):
         习题提交列表信息
 
         :return: The records of this ListMemberJobRecordsResponse.
-        :rtype: list[JobRecords]
+        :rtype: list[:class:`huaweicloudsdkclassroom.v3.JobRecords`]
         """
         return self._records
 
@@ -63,7 +70,7 @@ class ListMemberJobRecordsResponse(SdkResponse):
         习题提交列表信息
 
         :param records: The records of this ListMemberJobRecordsResponse.
-        :type: list[JobRecords]
+        :type records: list[:class:`huaweicloudsdkclassroom.v3.JobRecords`]
         """
         self._records = records
 
@@ -85,7 +92,7 @@ class ListMemberJobRecordsResponse(SdkResponse):
         习题提交总次数
 
         :param total: The total of this ListMemberJobRecordsResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 

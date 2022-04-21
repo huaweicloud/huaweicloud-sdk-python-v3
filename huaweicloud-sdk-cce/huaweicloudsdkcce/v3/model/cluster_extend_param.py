@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ClusterExtendParam:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -58,7 +57,41 @@ class ClusterExtendParam:
     }
 
     def __init__(self, cluster_az=None, dss_master_volumes=None, enterprise_project_id=None, kube_proxy_mode=None, cluster_external_ip=None, alpha_cce_fix_pool_mask=None, dec_master_flavor=None, docker_umask_mode=None, kubernetes_io_cpu_manager_policy=None, order_id=None, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None, upgradefrom=None):
-        """ClusterExtendParam - a model defined in huaweicloud sdk"""
+        """ClusterExtendParam
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_az: 集群控制节点可用区配置。 [CCE支持的可用区请参考[地区和终端节点](https://developer.huaweicloud.com/endpoint?CCE)](tag:hws) [CCE支持的可用区请参考[地区和终端节点](https://developer.huaweicloud.com/intl/zh-cn/endpoint?CCE)](tag:hws_hk)    - multi_az：多可用区，可选。仅使用高可用集群时才可以配置多可用区。 - 专属云计算池可用区：用于指定专属云可用区部署集群控制节点。如果需配置专属CCE集群，该字段为必选。 
+        :type cluster_az: str
+        :param dss_master_volumes: 用于指定控制节点的系统盘和数据盘使用专属分布式存储，未指定或者值为空时，默认使用EVS云硬盘。 如果配置专属CCE集群，该字段为必选，请按照如下格式设置： &#x60;&#x60;&#x60; &lt;rootVol.dssPoolID&gt;.&lt;rootVol.volType&gt;;&lt;dataVol.dssPoolID&gt;.&lt;dataVol.volType&gt; &#x60;&#x60;&#x60; 字段说明： - rootVol为系统盘；dataVol为数据盘； - dssPoolID为专属分布式存储池ID； - volType为专属分布式存储池的存储类型，如SAS、SSD。  样例：c950ee97-587c-4f24-8a74-3367e3da570f.sas;6edbc2f4-1507-44f8-ac0d-eed1d2608d38.ssd &gt; 非专属CCE集群不支持配置该字段。 
+        :type dss_master_volumes: str
+        :param enterprise_project_id: 集群所属的企业项目ID。 &gt;   - 需要开通企业项目功能后才可配置企业项目。 &gt;   - 集群所属的企业项目与集群下所关联的其他云服务资源所属的企业项目必须保持一致。 
+        :type enterprise_project_id: str
+        :param kube_proxy_mode: 服务转发模式，支持以下两种实现： - iptables：社区传统的kube-proxy模式，完全以iptables规则的方式来实现service负载均衡。该方式最主要的问题是在服务多的时候产生太多的iptables规则，非增量式更新会引入一定的时延，大规模情况下有明显的性能问题 - ipvs：主导开发并在社区获得广泛支持的kube-proxy模式，采用增量式更新，吞吐更高，速度更快，并可以保证service更新期间连接保持不断开，适用于大规模场景。 &gt; 此参数已废弃，若同时指定此参数和ClusterSpec下的kubeProxyMode，以ClusterSpec下的为准。 
+        :type kube_proxy_mode: str
+        :param cluster_external_ip: master 弹性公网IP
+        :type cluster_external_ip: str
+        :param alpha_cce_fix_pool_mask: 容器网络固定IP池掩码位数，仅vpc-router网络支持。  该参数决定节点可分配容器IP数量，与创建节点时设置的maxPods参数共同决定节点最多可以创建多少个Pod， 具体请参见[节点最多可以创建多少Pod](maxPods.xml)。   整数字符传取值范围: 24 ~ 28 
+        :type alpha_cce_fix_pool_mask: str
+        :param dec_master_flavor: 专属CCE集群指定可控制节点的规格。
+        :type dec_master_flavor: str
+        :param docker_umask_mode: 集群默认Docker的UmaskMode配置，可取值为secure或normal，不指定时默认为normal。 
+        :type docker_umask_mode: str
+        :param kubernetes_io_cpu_manager_policy: 集群CPU管理策略。取值为none或static，默认为none。 - none：关闭工作负载实例独占CPU核的功能，优点是CPU共享池的可分配核数较多 - static：支持给节点上的工作负载实例配置CPU独占，适用于对CPU缓存和调度延迟敏感的工作负载，Turbo集群下仅对普通容器节点有效，安全容器节点无效。 
+        :type kubernetes_io_cpu_manager_policy: str
+        :param order_id: 订单ID，集群付费类型为自动付费包周期类型时，响应中会返回此字段。
+        :type order_id: str
+        :param period_type: - month：月 - year：年 &gt; billingMode为1（包周期）时生效，且为必选。 
+        :type period_type: str
+        :param period_num: 订购周期数，取值范围： - periodType&#x3D;month（周期类型为月）时，取值为[1-9]。 - periodType&#x3D;year（周期类型为年）时，取值为1-3。 &gt; billingMode为1时生效，且为必选。 
+        :type period_num: int
+        :param is_auto_renew: 是否自动续订 - “true”：自动续订 - “false”：不自动续订 &gt; billingMode为1时生效，不填写此参数时默认不会自动续费。 
+        :type is_auto_renew: str
+        :param is_auto_pay: 是否自动扣款 - “true”：自动扣款 - “false”：不自动扣款 &gt; billingMode为1时生效，不填写此参数时默认不会自动扣款。 
+        :type is_auto_pay: str
+        :param upgradefrom: 记录集群通过何种升级方式升级到当前版本。 
+        :type upgradefrom: str
+        """
         
         
 
@@ -128,7 +161,7 @@ class ClusterExtendParam:
         集群控制节点可用区配置。 [CCE支持的可用区请参考[地区和终端节点](https://developer.huaweicloud.com/endpoint?CCE)](tag:hws) [CCE支持的可用区请参考[地区和终端节点](https://developer.huaweicloud.com/intl/zh-cn/endpoint?CCE)](tag:hws_hk)    - multi_az：多可用区，可选。仅使用高可用集群时才可以配置多可用区。 - 专属云计算池可用区：用于指定专属云可用区部署集群控制节点。如果需配置专属CCE集群，该字段为必选。 
 
         :param cluster_az: The cluster_az of this ClusterExtendParam.
-        :type: str
+        :type cluster_az: str
         """
         self._cluster_az = cluster_az
 
@@ -150,7 +183,7 @@ class ClusterExtendParam:
         用于指定控制节点的系统盘和数据盘使用专属分布式存储，未指定或者值为空时，默认使用EVS云硬盘。 如果配置专属CCE集群，该字段为必选，请按照如下格式设置： ``` <rootVol.dssPoolID>.<rootVol.volType>;<dataVol.dssPoolID>.<dataVol.volType> ``` 字段说明： - rootVol为系统盘；dataVol为数据盘； - dssPoolID为专属分布式存储池ID； - volType为专属分布式存储池的存储类型，如SAS、SSD。  样例：c950ee97-587c-4f24-8a74-3367e3da570f.sas;6edbc2f4-1507-44f8-ac0d-eed1d2608d38.ssd > 非专属CCE集群不支持配置该字段。 
 
         :param dss_master_volumes: The dss_master_volumes of this ClusterExtendParam.
-        :type: str
+        :type dss_master_volumes: str
         """
         self._dss_master_volumes = dss_master_volumes
 
@@ -172,7 +205,7 @@ class ClusterExtendParam:
         集群所属的企业项目ID。 >   - 需要开通企业项目功能后才可配置企业项目。 >   - 集群所属的企业项目与集群下所关联的其他云服务资源所属的企业项目必须保持一致。 
 
         :param enterprise_project_id: The enterprise_project_id of this ClusterExtendParam.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -194,7 +227,7 @@ class ClusterExtendParam:
         服务转发模式，支持以下两种实现： - iptables：社区传统的kube-proxy模式，完全以iptables规则的方式来实现service负载均衡。该方式最主要的问题是在服务多的时候产生太多的iptables规则，非增量式更新会引入一定的时延，大规模情况下有明显的性能问题 - ipvs：主导开发并在社区获得广泛支持的kube-proxy模式，采用增量式更新，吞吐更高，速度更快，并可以保证service更新期间连接保持不断开，适用于大规模场景。 > 此参数已废弃，若同时指定此参数和ClusterSpec下的kubeProxyMode，以ClusterSpec下的为准。 
 
         :param kube_proxy_mode: The kube_proxy_mode of this ClusterExtendParam.
-        :type: str
+        :type kube_proxy_mode: str
         """
         self._kube_proxy_mode = kube_proxy_mode
 
@@ -216,7 +249,7 @@ class ClusterExtendParam:
         master 弹性公网IP
 
         :param cluster_external_ip: The cluster_external_ip of this ClusterExtendParam.
-        :type: str
+        :type cluster_external_ip: str
         """
         self._cluster_external_ip = cluster_external_ip
 
@@ -238,7 +271,7 @@ class ClusterExtendParam:
         容器网络固定IP池掩码位数，仅vpc-router网络支持。  该参数决定节点可分配容器IP数量，与创建节点时设置的maxPods参数共同决定节点最多可以创建多少个Pod， 具体请参见[节点最多可以创建多少Pod](maxPods.xml)。   整数字符传取值范围: 24 ~ 28 
 
         :param alpha_cce_fix_pool_mask: The alpha_cce_fix_pool_mask of this ClusterExtendParam.
-        :type: str
+        :type alpha_cce_fix_pool_mask: str
         """
         self._alpha_cce_fix_pool_mask = alpha_cce_fix_pool_mask
 
@@ -260,7 +293,7 @@ class ClusterExtendParam:
         专属CCE集群指定可控制节点的规格。
 
         :param dec_master_flavor: The dec_master_flavor of this ClusterExtendParam.
-        :type: str
+        :type dec_master_flavor: str
         """
         self._dec_master_flavor = dec_master_flavor
 
@@ -282,7 +315,7 @@ class ClusterExtendParam:
         集群默认Docker的UmaskMode配置，可取值为secure或normal，不指定时默认为normal。 
 
         :param docker_umask_mode: The docker_umask_mode of this ClusterExtendParam.
-        :type: str
+        :type docker_umask_mode: str
         """
         self._docker_umask_mode = docker_umask_mode
 
@@ -304,7 +337,7 @@ class ClusterExtendParam:
         集群CPU管理策略。取值为none或static，默认为none。 - none：关闭工作负载实例独占CPU核的功能，优点是CPU共享池的可分配核数较多 - static：支持给节点上的工作负载实例配置CPU独占，适用于对CPU缓存和调度延迟敏感的工作负载，Turbo集群下仅对普通容器节点有效，安全容器节点无效。 
 
         :param kubernetes_io_cpu_manager_policy: The kubernetes_io_cpu_manager_policy of this ClusterExtendParam.
-        :type: str
+        :type kubernetes_io_cpu_manager_policy: str
         """
         self._kubernetes_io_cpu_manager_policy = kubernetes_io_cpu_manager_policy
 
@@ -326,7 +359,7 @@ class ClusterExtendParam:
         订单ID，集群付费类型为自动付费包周期类型时，响应中会返回此字段。
 
         :param order_id: The order_id of this ClusterExtendParam.
-        :type: str
+        :type order_id: str
         """
         self._order_id = order_id
 
@@ -348,7 +381,7 @@ class ClusterExtendParam:
         - month：月 - year：年 > billingMode为1（包周期）时生效，且为必选。 
 
         :param period_type: The period_type of this ClusterExtendParam.
-        :type: str
+        :type period_type: str
         """
         self._period_type = period_type
 
@@ -370,7 +403,7 @@ class ClusterExtendParam:
         订购周期数，取值范围： - periodType=month（周期类型为月）时，取值为[1-9]。 - periodType=year（周期类型为年）时，取值为1-3。 > billingMode为1时生效，且为必选。 
 
         :param period_num: The period_num of this ClusterExtendParam.
-        :type: int
+        :type period_num: int
         """
         self._period_num = period_num
 
@@ -392,7 +425,7 @@ class ClusterExtendParam:
         是否自动续订 - “true”：自动续订 - “false”：不自动续订 > billingMode为1时生效，不填写此参数时默认不会自动续费。 
 
         :param is_auto_renew: The is_auto_renew of this ClusterExtendParam.
-        :type: str
+        :type is_auto_renew: str
         """
         self._is_auto_renew = is_auto_renew
 
@@ -414,7 +447,7 @@ class ClusterExtendParam:
         是否自动扣款 - “true”：自动扣款 - “false”：不自动扣款 > billingMode为1时生效，不填写此参数时默认不会自动扣款。 
 
         :param is_auto_pay: The is_auto_pay of this ClusterExtendParam.
-        :type: str
+        :type is_auto_pay: str
         """
         self._is_auto_pay = is_auto_pay
 
@@ -436,7 +469,7 @@ class ClusterExtendParam:
         记录集群通过何种升级方式升级到当前版本。 
 
         :param upgradefrom: The upgradefrom of this ClusterExtendParam.
-        :type: str
+        :type upgradefrom: str
         """
         self._upgradefrom = upgradefrom
 

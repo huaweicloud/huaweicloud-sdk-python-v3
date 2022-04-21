@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateWhitelistReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateWhitelistReq:
     }
 
     def __init__(self, enable_whitelist=None, whitelist=None):
-        """UpdateWhitelistReq - a model defined in huaweicloud sdk"""
+        """UpdateWhitelistReq
+
+        The model defined in huaweicloud sdk
+
+        :param enable_whitelist: 是否开启白名单访问控制开关。true：开启；false：关闭
+        :type enable_whitelist: bool
+        :param whitelist: 白名单IP列表。可以是ip，例如192.168.10.123；也可以是一个网段，例如192.168.10.1/24；不同的值之间用逗号分隔
+        :type whitelist: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class UpdateWhitelistReq:
         是否开启白名单访问控制开关。true：开启；false：关闭
 
         :param enable_whitelist: The enable_whitelist of this UpdateWhitelistReq.
-        :type: bool
+        :type enable_whitelist: bool
         """
         self._enable_whitelist = enable_whitelist
 
@@ -85,7 +92,7 @@ class UpdateWhitelistReq:
         白名单IP列表。可以是ip，例如192.168.10.123；也可以是一个网段，例如192.168.10.1/24；不同的值之间用逗号分隔
 
         :param whitelist: The whitelist of this UpdateWhitelistReq.
-        :type: str
+        :type whitelist: str
         """
         self._whitelist = whitelist
 

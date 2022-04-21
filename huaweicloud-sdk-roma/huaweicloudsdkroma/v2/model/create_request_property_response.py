@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateRequestPropertyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class CreateRequestPropertyResponse(SdkResponse):
     }
 
     def __init__(self, property_id=None, property_name=None, description=None, data_type=None, required=None, min=None, max=None, step=None, max_length=None, unit=None, enum_list=None):
-        """CreateRequestPropertyResponse - a model defined in huaweicloud sdk"""
+        """CreateRequestPropertyResponse
+
+        The model defined in huaweicloud sdk
+
+        :param property_id: 属性ID
+        :type property_id: int
+        :param property_name: 属性名称，首位必须为字母，支持大小写字母，数字，中划线及下划线，长度2-50
+        :type property_name: str
+        :param description: 属性描述，长度0-200
+        :type description: str
+        :param data_type: 属性数据类型，枚举值大小写敏感；number格式为数字，范围±1.0 x 10^-28 to ±7.9228 x 10^28；sting为字符串；integer为整数；datetime为时间，格式为yyyyMMddTHHmmss；json为自定义json格式
+        :type data_type: str
+        :param required: 是否必填 0-非必填 1-必填
+        :type required: int
+        :param min: 最小值，当data_type为integer或number时有效
+        :type min: str
+        :param max: 最大值，当data_type为integer或number时有效
+        :type max: str
+        :param step: 步长，当data_type为integer或number时有效
+        :type step: str
+        :param max_length: 字符串最大长度，当data_type为string, datetime, json时有效
+        :type max_length: int
+        :param unit: 属性单位
+        :type unit: str
+        :param enum_list: string的枚举值数组，使用逗号分隔
+        :type enum_list: str
+        """
         
         super(CreateRequestPropertyResponse, self).__init__()
 
@@ -108,7 +133,7 @@ class CreateRequestPropertyResponse(SdkResponse):
         属性ID
 
         :param property_id: The property_id of this CreateRequestPropertyResponse.
-        :type: int
+        :type property_id: int
         """
         self._property_id = property_id
 
@@ -130,7 +155,7 @@ class CreateRequestPropertyResponse(SdkResponse):
         属性名称，首位必须为字母，支持大小写字母，数字，中划线及下划线，长度2-50
 
         :param property_name: The property_name of this CreateRequestPropertyResponse.
-        :type: str
+        :type property_name: str
         """
         self._property_name = property_name
 
@@ -152,7 +177,7 @@ class CreateRequestPropertyResponse(SdkResponse):
         属性描述，长度0-200
 
         :param description: The description of this CreateRequestPropertyResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -174,7 +199,7 @@ class CreateRequestPropertyResponse(SdkResponse):
         属性数据类型，枚举值大小写敏感；number格式为数字，范围±1.0 x 10^-28 to ±7.9228 x 10^28；sting为字符串；integer为整数；datetime为时间，格式为yyyyMMddTHHmmss；json为自定义json格式
 
         :param data_type: The data_type of this CreateRequestPropertyResponse.
-        :type: str
+        :type data_type: str
         """
         self._data_type = data_type
 
@@ -196,7 +221,7 @@ class CreateRequestPropertyResponse(SdkResponse):
         是否必填 0-非必填 1-必填
 
         :param required: The required of this CreateRequestPropertyResponse.
-        :type: int
+        :type required: int
         """
         self._required = required
 
@@ -218,7 +243,7 @@ class CreateRequestPropertyResponse(SdkResponse):
         最小值，当data_type为integer或number时有效
 
         :param min: The min of this CreateRequestPropertyResponse.
-        :type: str
+        :type min: str
         """
         self._min = min
 
@@ -240,7 +265,7 @@ class CreateRequestPropertyResponse(SdkResponse):
         最大值，当data_type为integer或number时有效
 
         :param max: The max of this CreateRequestPropertyResponse.
-        :type: str
+        :type max: str
         """
         self._max = max
 
@@ -262,7 +287,7 @@ class CreateRequestPropertyResponse(SdkResponse):
         步长，当data_type为integer或number时有效
 
         :param step: The step of this CreateRequestPropertyResponse.
-        :type: str
+        :type step: str
         """
         self._step = step
 
@@ -284,7 +309,7 @@ class CreateRequestPropertyResponse(SdkResponse):
         字符串最大长度，当data_type为string, datetime, json时有效
 
         :param max_length: The max_length of this CreateRequestPropertyResponse.
-        :type: int
+        :type max_length: int
         """
         self._max_length = max_length
 
@@ -306,7 +331,7 @@ class CreateRequestPropertyResponse(SdkResponse):
         属性单位
 
         :param unit: The unit of this CreateRequestPropertyResponse.
-        :type: str
+        :type unit: str
         """
         self._unit = unit
 
@@ -328,7 +353,7 @@ class CreateRequestPropertyResponse(SdkResponse):
         string的枚举值数组，使用逗号分隔
 
         :param enum_list: The enum_list of this CreateRequestPropertyResponse.
-        :type: str
+        :type enum_list: str
         """
         self._enum_list = enum_list
 

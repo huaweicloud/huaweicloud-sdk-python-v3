@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TaskByServerSources:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -68,7 +67,51 @@ class TaskByServerSources:
     }
 
     def __init__(self, id=None, name=None, type=None, state=None, estimate_complete_time=None, start_date=None, speed_limit=None, migrate_speed=None, compress_rate=None, start_target_server=None, vm_template_id=None, region_id=None, project_name=None, project_id=None, target_server=None, log_collect_status=None, exist_server=None, use_public_ip=None, clone_server=None, remain_seconds=None):
-        """TaskByServerSources - a model defined in huaweicloud sdk"""
+        """TaskByServerSources
+
+        The model defined in huaweicloud sdk
+
+        :param id: 任务id
+        :type id: str
+        :param name: 任务名称
+        :type name: str
+        :param type: 任务类型
+        :type type: str
+        :param state: 任务状态
+        :type state: str
+        :param estimate_complete_time: 预估结束时间
+        :type estimate_complete_time: int
+        :param start_date: 开始时间
+        :type start_date: int
+        :param speed_limit: 限速
+        :type speed_limit: int
+        :param migrate_speed: 迁移速率
+        :type migrate_speed: float
+        :param compress_rate: 压缩率
+        :type compress_rate: float
+        :param start_target_server: 是否启动虚拟机
+        :type start_target_server: bool
+        :param vm_template_id: 虚拟机模板id
+        :type vm_template_id: str
+        :param region_id: region_id
+        :type region_id: str
+        :param project_name: 项目名称
+        :type project_name: str
+        :param project_id: 项目id
+        :type project_id: str
+        :param target_server: 
+        :type target_server: :class:`huaweicloudsdksms.v3.TargetServerById`
+        :param log_collect_status: 日志收集状态
+        :type log_collect_status: str
+        :param exist_server: 是否使用已有虚拟机
+        :type exist_server: bool
+        :param use_public_ip: 是否使用公网ip
+        :type use_public_ip: bool
+        :param clone_server: 
+        :type clone_server: :class:`huaweicloudsdksms.v3.CloneServer`
+        :param remain_seconds: 已迁移时长
+        :type remain_seconds: int
+        """
         
         
 
@@ -153,7 +196,7 @@ class TaskByServerSources:
         任务id
 
         :param id: The id of this TaskByServerSources.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -175,7 +218,7 @@ class TaskByServerSources:
         任务名称
 
         :param name: The name of this TaskByServerSources.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -197,7 +240,7 @@ class TaskByServerSources:
         任务类型
 
         :param type: The type of this TaskByServerSources.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -219,7 +262,7 @@ class TaskByServerSources:
         任务状态
 
         :param state: The state of this TaskByServerSources.
-        :type: str
+        :type state: str
         """
         self._state = state
 
@@ -241,7 +284,7 @@ class TaskByServerSources:
         预估结束时间
 
         :param estimate_complete_time: The estimate_complete_time of this TaskByServerSources.
-        :type: int
+        :type estimate_complete_time: int
         """
         self._estimate_complete_time = estimate_complete_time
 
@@ -263,7 +306,7 @@ class TaskByServerSources:
         开始时间
 
         :param start_date: The start_date of this TaskByServerSources.
-        :type: int
+        :type start_date: int
         """
         self._start_date = start_date
 
@@ -285,7 +328,7 @@ class TaskByServerSources:
         限速
 
         :param speed_limit: The speed_limit of this TaskByServerSources.
-        :type: int
+        :type speed_limit: int
         """
         self._speed_limit = speed_limit
 
@@ -307,7 +350,7 @@ class TaskByServerSources:
         迁移速率
 
         :param migrate_speed: The migrate_speed of this TaskByServerSources.
-        :type: float
+        :type migrate_speed: float
         """
         self._migrate_speed = migrate_speed
 
@@ -329,7 +372,7 @@ class TaskByServerSources:
         压缩率
 
         :param compress_rate: The compress_rate of this TaskByServerSources.
-        :type: float
+        :type compress_rate: float
         """
         self._compress_rate = compress_rate
 
@@ -351,7 +394,7 @@ class TaskByServerSources:
         是否启动虚拟机
 
         :param start_target_server: The start_target_server of this TaskByServerSources.
-        :type: bool
+        :type start_target_server: bool
         """
         self._start_target_server = start_target_server
 
@@ -373,7 +416,7 @@ class TaskByServerSources:
         虚拟机模板id
 
         :param vm_template_id: The vm_template_id of this TaskByServerSources.
-        :type: str
+        :type vm_template_id: str
         """
         self._vm_template_id = vm_template_id
 
@@ -395,7 +438,7 @@ class TaskByServerSources:
         region_id
 
         :param region_id: The region_id of this TaskByServerSources.
-        :type: str
+        :type region_id: str
         """
         self._region_id = region_id
 
@@ -417,7 +460,7 @@ class TaskByServerSources:
         项目名称
 
         :param project_name: The project_name of this TaskByServerSources.
-        :type: str
+        :type project_name: str
         """
         self._project_name = project_name
 
@@ -439,7 +482,7 @@ class TaskByServerSources:
         项目id
 
         :param project_id: The project_id of this TaskByServerSources.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -449,7 +492,7 @@ class TaskByServerSources:
 
 
         :return: The target_server of this TaskByServerSources.
-        :rtype: TargetServerById
+        :rtype: :class:`huaweicloudsdksms.v3.TargetServerById`
         """
         return self._target_server
 
@@ -459,7 +502,7 @@ class TaskByServerSources:
 
 
         :param target_server: The target_server of this TaskByServerSources.
-        :type: TargetServerById
+        :type target_server: :class:`huaweicloudsdksms.v3.TargetServerById`
         """
         self._target_server = target_server
 
@@ -481,7 +524,7 @@ class TaskByServerSources:
         日志收集状态
 
         :param log_collect_status: The log_collect_status of this TaskByServerSources.
-        :type: str
+        :type log_collect_status: str
         """
         self._log_collect_status = log_collect_status
 
@@ -503,7 +546,7 @@ class TaskByServerSources:
         是否使用已有虚拟机
 
         :param exist_server: The exist_server of this TaskByServerSources.
-        :type: bool
+        :type exist_server: bool
         """
         self._exist_server = exist_server
 
@@ -525,7 +568,7 @@ class TaskByServerSources:
         是否使用公网ip
 
         :param use_public_ip: The use_public_ip of this TaskByServerSources.
-        :type: bool
+        :type use_public_ip: bool
         """
         self._use_public_ip = use_public_ip
 
@@ -535,7 +578,7 @@ class TaskByServerSources:
 
 
         :return: The clone_server of this TaskByServerSources.
-        :rtype: CloneServer
+        :rtype: :class:`huaweicloudsdksms.v3.CloneServer`
         """
         return self._clone_server
 
@@ -545,7 +588,7 @@ class TaskByServerSources:
 
 
         :param clone_server: The clone_server of this TaskByServerSources.
-        :type: CloneServer
+        :type clone_server: :class:`huaweicloudsdksms.v3.CloneServer`
         """
         self._clone_server = clone_server
 
@@ -567,7 +610,7 @@ class TaskByServerSources:
         已迁移时长
 
         :param remain_seconds: The remain_seconds of this TaskByServerSources.
-        :type: int
+        :type remain_seconds: int
         """
         self._remain_seconds = remain_seconds
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IdMarkDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class IdMarkDTO:
     }
 
     def __init__(self, id=None, mark=None):
-        """IdMarkDTO - a model defined in huaweicloud sdk"""
+        """IdMarkDTO
+
+        The model defined in huaweicloud sdk
+
+        :param id: 唯一标识。
+        :type id: str
+        :param mark: id对应的回显描述，一般为名称等。
+        :type mark: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class IdMarkDTO:
         唯一标识。
 
         :param id: The id of this IdMarkDTO.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -85,7 +92,7 @@ class IdMarkDTO:
         id对应的回显描述，一般为名称等。
 
         :param mark: The mark of this IdMarkDTO.
-        :type: str
+        :type mark: str
         """
         self._mark = mark
 

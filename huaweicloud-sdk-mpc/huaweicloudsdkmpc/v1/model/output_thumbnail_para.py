@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OutputThumbnailPara:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class OutputThumbnailPara:
     }
 
     def __init__(self, total_pictures=None, width=None, height=None, file_name=None, output=None):
-        """OutputThumbnailPara - a model defined in huaweicloud sdk"""
+        """OutputThumbnailPara
+
+        The model defined in huaweicloud sdk
+
+        :param total_pictures: 抽帧图片张数 
+        :type total_pictures: int
+        :param width: 抽帧图片宽度 
+        :type width: int
+        :param height: 抽帧图片高度 
+        :type height: int
+        :param file_name: 抽帧文件名 
+        :type file_name: str
+        :param output: 
+        :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        """
         
         
 
@@ -78,7 +91,7 @@ class OutputThumbnailPara:
         抽帧图片张数 
 
         :param total_pictures: The total_pictures of this OutputThumbnailPara.
-        :type: int
+        :type total_pictures: int
         """
         self._total_pictures = total_pictures
 
@@ -100,7 +113,7 @@ class OutputThumbnailPara:
         抽帧图片宽度 
 
         :param width: The width of this OutputThumbnailPara.
-        :type: int
+        :type width: int
         """
         self._width = width
 
@@ -122,7 +135,7 @@ class OutputThumbnailPara:
         抽帧图片高度 
 
         :param height: The height of this OutputThumbnailPara.
-        :type: int
+        :type height: int
         """
         self._height = height
 
@@ -144,7 +157,7 @@ class OutputThumbnailPara:
         抽帧文件名 
 
         :param file_name: The file_name of this OutputThumbnailPara.
-        :type: str
+        :type file_name: str
         """
         self._file_name = file_name
 
@@ -154,7 +167,7 @@ class OutputThumbnailPara:
 
 
         :return: The output of this OutputThumbnailPara.
-        :rtype: ObsObjInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         return self._output
 
@@ -164,7 +177,7 @@ class OutputThumbnailPara:
 
 
         :param output: The output of this OutputThumbnailPara.
-        :type: ObsObjInfo
+        :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         self._output = output
 

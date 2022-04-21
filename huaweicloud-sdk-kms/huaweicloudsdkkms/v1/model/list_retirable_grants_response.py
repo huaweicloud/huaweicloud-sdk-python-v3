@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRetirableGrantsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListRetirableGrantsResponse(SdkResponse):
     }
 
     def __init__(self, grants=None, next_marker=None, truncated=None):
-        """ListRetirableGrantsResponse - a model defined in huaweicloud sdk"""
+        """ListRetirableGrantsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param grants: grant列表，详情请参见grants字段数据结构说明。
+        :type grants: list[:class:`huaweicloudsdkkms.v1.Grants`]
+        :param next_marker: 获取下一页所需要传递的marker值。 当“truncated”为“false”时，“next_marker”为空。
+        :type next_marker: str
+        :param truncated: 是否还有下一页：  - “true”表示还有数据。  - “false”表示已经是最后一页。
+        :type truncated: str
+        """
         
         super(ListRetirableGrantsResponse, self).__init__()
 
@@ -57,7 +66,7 @@ class ListRetirableGrantsResponse(SdkResponse):
         grant列表，详情请参见grants字段数据结构说明。
 
         :return: The grants of this ListRetirableGrantsResponse.
-        :rtype: list[Grants]
+        :rtype: list[:class:`huaweicloudsdkkms.v1.Grants`]
         """
         return self._grants
 
@@ -68,7 +77,7 @@ class ListRetirableGrantsResponse(SdkResponse):
         grant列表，详情请参见grants字段数据结构说明。
 
         :param grants: The grants of this ListRetirableGrantsResponse.
-        :type: list[Grants]
+        :type grants: list[:class:`huaweicloudsdkkms.v1.Grants`]
         """
         self._grants = grants
 
@@ -90,7 +99,7 @@ class ListRetirableGrantsResponse(SdkResponse):
         获取下一页所需要传递的marker值。 当“truncated”为“false”时，“next_marker”为空。
 
         :param next_marker: The next_marker of this ListRetirableGrantsResponse.
-        :type: str
+        :type next_marker: str
         """
         self._next_marker = next_marker
 
@@ -112,7 +121,7 @@ class ListRetirableGrantsResponse(SdkResponse):
         是否还有下一页：  - “true”表示还有数据。  - “false”表示已经是最后一页。
 
         :param truncated: The truncated of this ListRetirableGrantsResponse.
-        :type: str
+        :type truncated: str
         """
         self._truncated = truncated
 

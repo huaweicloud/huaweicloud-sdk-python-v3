@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowExtensionAuthorizationResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowExtensionAuthorizationResponse(SdkResponse):
     }
 
     def __init__(self, result=None, status=None):
-        """ShowExtensionAuthorizationResponse - a model defined in huaweicloud sdk"""
+        """ShowExtensionAuthorizationResponse
+
+        The model defined in huaweicloud sdk
+
+        :param result: 返回值
+        :type result: object
+        :param status: 状态
+        :type status: str
+        """
         
         super(ShowExtensionAuthorizationResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ShowExtensionAuthorizationResponse(SdkResponse):
         返回值
 
         :param result: The result of this ShowExtensionAuthorizationResponse.
-        :type: object
+        :type result: object
         """
         self._result = result
 
@@ -85,7 +92,7 @@ class ShowExtensionAuthorizationResponse(SdkResponse):
         状态
 
         :param status: The status of this ShowExtensionAuthorizationResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 

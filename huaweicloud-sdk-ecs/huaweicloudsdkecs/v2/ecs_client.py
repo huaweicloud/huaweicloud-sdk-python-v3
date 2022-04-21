@@ -52,21 +52,17 @@ class EcsClient(Client):
         """云服务器组添加成员
 
         将云服务器加入云服务器组。添加成功后，如果该云服务器组是反亲和性策略的，则该云服务器与云服务器组中的其他成员尽量分散地创建在不同主机上。如果该云服务器时故障域类型的，则该云服务器会拥有故障域属性。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param AddServerGroupMemberRequest request
-        :return: AddServerGroupMemberResponse
+        :param request: Request instance for AddServerGroupMember
+        :type request: :class:`huaweicloudsdkecs.v2.AddServerGroupMemberRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.AddServerGroupMemberResponse`
         """
         return self.add_server_group_member_with_http_info(request)
 
     def add_server_group_member_with_http_info(self, request):
-        """云服务器组添加成员
-
-        将云服务器加入云服务器组。添加成功后，如果该云服务器组是反亲和性策略的，则该云服务器与云服务器组中的其他成员尽量分散地创建在不同主机上。如果该云服务器时故障域类型的，则该云服务器会拥有故障域属性。
-
-        :param AddServerGroupMemberRequest request
-        :return: AddServerGroupMemberResponse
-        """
-
         all_params = ['server_group_id', 'add_server_group_member_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -112,26 +108,27 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def associate_server_virtual_ip(self, request):
         """云服务器网卡配置虚拟IP地址
 
-        虚拟IP地址用于为网卡提供第二个IP地址，同时支持与多个弹性云服务器的网卡绑定，从而实现多个弹性云服务器之间的高可用性。  该接口用于给云服务器网卡配置虚拟IP地址：  - 当指定的IP地址是一个不存在的虚拟IP地址时，系统会创建该虚拟IP，并绑定至对应网卡。  - 当指定的IP地址是一个已经创建好的私有IP时，系统会将指定的网卡和虚拟IP绑定。如果该IP的device_owner为空，则仅支持VPC内二三层通信；如果该IP的device_owner为neutron:VIP_PORT，则支持VPC内二三层通信、VPC之间对等连接访问，以及弹性公网IP、VPN、云专线等Internet接入。
+        虚拟IP地址用于为网卡提供第二个IP地址，同时支持与多个弹性云服务器的网卡绑定，从而实现多个弹性云服务器之间的高可用性。
+        
+        该接口用于给云服务器网卡配置虚拟IP地址：
+        
+        - 当指定的IP地址是一个不存在的虚拟IP地址时，系统会创建该虚拟IP，并绑定至对应网卡。
+        
+        - 当指定的IP地址是一个已经创建好的私有IP时，系统会将指定的网卡和虚拟IP绑定。如果该IP的device_owner为空，则仅支持VPC内二三层通信；如果该IP的device_owner为neutron:VIP_PORT，则支持VPC内二三层通信、VPC之间对等连接访问，以及弹性公网IP、VPN、云专线等Internet接入。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param AssociateServerVirtualIpRequest request
-        :return: AssociateServerVirtualIpResponse
+        :param request: Request instance for AssociateServerVirtualIp
+        :type request: :class:`huaweicloudsdkecs.v2.AssociateServerVirtualIpRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.AssociateServerVirtualIpResponse`
         """
         return self.associate_server_virtual_ip_with_http_info(request)
 
     def associate_server_virtual_ip_with_http_info(self, request):
-        """云服务器网卡配置虚拟IP地址
-
-        虚拟IP地址用于为网卡提供第二个IP地址，同时支持与多个弹性云服务器的网卡绑定，从而实现多个弹性云服务器之间的高可用性。  该接口用于给云服务器网卡配置虚拟IP地址：  - 当指定的IP地址是一个不存在的虚拟IP地址时，系统会创建该虚拟IP，并绑定至对应网卡。  - 当指定的IP地址是一个已经创建好的私有IP时，系统会将指定的网卡和虚拟IP绑定。如果该IP的device_owner为空，则仅支持VPC内二三层通信；如果该IP的device_owner为neutron:VIP_PORT，则支持VPC内二三层通信、VPC之间对等连接访问，以及弹性公网IP、VPN、云专线等Internet接入。
-
-        :param AssociateServerVirtualIpRequest request
-        :return: AssociateServerVirtualIpResponse
-        """
-
         all_params = ['nic_id', 'associate_server_virtual_ip_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -177,26 +174,21 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def attach_server_volume(self, request):
         """弹性云服务器挂载磁盘
 
         把磁盘挂载到弹性云服务器上。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param AttachServerVolumeRequest request
-        :return: AttachServerVolumeResponse
+        :param request: Request instance for AttachServerVolume
+        :type request: :class:`huaweicloudsdkecs.v2.AttachServerVolumeRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.AttachServerVolumeResponse`
         """
         return self.attach_server_volume_with_http_info(request)
 
     def attach_server_volume_with_http_info(self, request):
-        """弹性云服务器挂载磁盘
-
-        把磁盘挂载到弹性云服务器上。
-
-        :param AttachServerVolumeRequest request
-        :return: AttachServerVolumeResponse
-        """
-
         all_params = ['server_id', 'attach_server_volume_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -242,26 +234,21 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_add_server_nics(self, request):
         """批量添加云服务器网卡
 
         给云服务器添加一张或多张网卡。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchAddServerNicsRequest request
-        :return: BatchAddServerNicsResponse
+        :param request: Request instance for BatchAddServerNics
+        :type request: :class:`huaweicloudsdkecs.v2.BatchAddServerNicsRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.BatchAddServerNicsResponse`
         """
         return self.batch_add_server_nics_with_http_info(request)
 
     def batch_add_server_nics_with_http_info(self, request):
-        """批量添加云服务器网卡
-
-        给云服务器添加一张或多张网卡。
-
-        :param BatchAddServerNicsRequest request
-        :return: BatchAddServerNicsResponse
-        """
-
         all_params = ['server_id', 'batch_add_server_nics_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -307,26 +294,21 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_attach_sharable_volumes(self, request):
         """批量挂载指定共享盘
 
         将指定的共享磁盘一次性挂载到多个弹性云服务器，实现批量挂载。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchAttachSharableVolumesRequest request
-        :return: BatchAttachSharableVolumesResponse
+        :param request: Request instance for BatchAttachSharableVolumes
+        :type request: :class:`huaweicloudsdkecs.v2.BatchAttachSharableVolumesRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.BatchAttachSharableVolumesResponse`
         """
         return self.batch_attach_sharable_volumes_with_http_info(request)
 
     def batch_attach_sharable_volumes_with_http_info(self, request):
-        """批量挂载指定共享盘
-
-        将指定的共享磁盘一次性挂载到多个弹性云服务器，实现批量挂载。
-
-        :param BatchAttachSharableVolumesRequest request
-        :return: BatchAttachSharableVolumesResponse
-        """
-
         all_params = ['volume_id', 'batch_attach_sharable_volumes_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -372,26 +354,23 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_create_server_tags(self, request):
         """批量添加云服务器标签
 
-        - 为指定云服务器批量添加标签。  - 标签管理服务TMS使用该接口批量管理云服务器的标签。
+        - 为指定云服务器批量添加标签。
+        
+        - 标签管理服务TMS使用该接口批量管理云服务器的标签。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchCreateServerTagsRequest request
-        :return: BatchCreateServerTagsResponse
+        :param request: Request instance for BatchCreateServerTags
+        :type request: :class:`huaweicloudsdkecs.v2.BatchCreateServerTagsRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.BatchCreateServerTagsResponse`
         """
         return self.batch_create_server_tags_with_http_info(request)
 
     def batch_create_server_tags_with_http_info(self, request):
-        """批量添加云服务器标签
-
-        - 为指定云服务器批量添加标签。  - 标签管理服务TMS使用该接口批量管理云服务器的标签。
-
-        :param BatchCreateServerTagsRequest request
-        :return: BatchCreateServerTagsResponse
-        """
-
         all_params = ['server_id', 'batch_create_server_tags_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -437,26 +416,21 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_delete_server_nics(self, request):
         """批量删除云服务器网卡
 
         卸载并删除云服务器中的一张或多张网卡。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchDeleteServerNicsRequest request
-        :return: BatchDeleteServerNicsResponse
+        :param request: Request instance for BatchDeleteServerNics
+        :type request: :class:`huaweicloudsdkecs.v2.BatchDeleteServerNicsRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.BatchDeleteServerNicsResponse`
         """
         return self.batch_delete_server_nics_with_http_info(request)
 
     def batch_delete_server_nics_with_http_info(self, request):
-        """批量删除云服务器网卡
-
-        卸载并删除云服务器中的一张或多张网卡。
-
-        :param BatchDeleteServerNicsRequest request
-        :return: BatchDeleteServerNicsResponse
-        """
-
         all_params = ['server_id', 'batch_delete_server_nics_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -502,26 +476,23 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_delete_server_tags(self, request):
         """批量删除云服务器标签
 
-        - 为指定云服务器批量删除标签。  - 标签管理服务TMS使用该接口批量管理云服务器的标签。
+        - 为指定云服务器批量删除标签。
+        
+        - 标签管理服务TMS使用该接口批量管理云服务器的标签。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchDeleteServerTagsRequest request
-        :return: BatchDeleteServerTagsResponse
+        :param request: Request instance for BatchDeleteServerTags
+        :type request: :class:`huaweicloudsdkecs.v2.BatchDeleteServerTagsRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.BatchDeleteServerTagsResponse`
         """
         return self.batch_delete_server_tags_with_http_info(request)
 
     def batch_delete_server_tags_with_http_info(self, request):
-        """批量删除云服务器标签
-
-        - 为指定云服务器批量删除标签。  - 标签管理服务TMS使用该接口批量管理云服务器的标签。
-
-        :param BatchDeleteServerTagsRequest request
-        :return: BatchDeleteServerTagsResponse
-        """
-
         all_params = ['server_id', 'batch_delete_server_tags_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -567,26 +538,21 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_reboot_servers(self, request):
         """批量重启云服务器
 
         根据给定的云服务器ID列表，批量重启云服务器，一次最多可以重启1000台。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchRebootServersRequest request
-        :return: BatchRebootServersResponse
+        :param request: Request instance for BatchRebootServers
+        :type request: :class:`huaweicloudsdkecs.v2.BatchRebootServersRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.BatchRebootServersResponse`
         """
         return self.batch_reboot_servers_with_http_info(request)
 
     def batch_reboot_servers_with_http_info(self, request):
-        """批量重启云服务器
-
-        根据给定的云服务器ID列表，批量重启云服务器，一次最多可以重启1000台。
-
-        :param BatchRebootServersRequest request
-        :return: BatchRebootServersResponse
-        """
-
         all_params = ['batch_reboot_servers_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -630,26 +596,21 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_reset_servers_password(self, request):
         """批量重置弹性云服务器密码
 
         批量重置弹性云服务器管理帐号（root用户或Administrator用户）的密码。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchResetServersPasswordRequest request
-        :return: BatchResetServersPasswordResponse
+        :param request: Request instance for BatchResetServersPassword
+        :type request: :class:`huaweicloudsdkecs.v2.BatchResetServersPasswordRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.BatchResetServersPasswordResponse`
         """
         return self.batch_reset_servers_password_with_http_info(request)
 
     def batch_reset_servers_password_with_http_info(self, request):
-        """批量重置弹性云服务器密码
-
-        批量重置弹性云服务器管理帐号（root用户或Administrator用户）的密码。
-
-        :param BatchResetServersPasswordRequest request
-        :return: BatchResetServersPasswordResponse
-        """
-
         all_params = ['batch_reset_servers_password_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -693,26 +654,21 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_start_servers(self, request):
         """批量启动云服务器
 
         根据给定的云服务器ID列表，批量启动云服务器，一次最多可以启动1000台。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchStartServersRequest request
-        :return: BatchStartServersResponse
+        :param request: Request instance for BatchStartServers
+        :type request: :class:`huaweicloudsdkecs.v2.BatchStartServersRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.BatchStartServersResponse`
         """
         return self.batch_start_servers_with_http_info(request)
 
     def batch_start_servers_with_http_info(self, request):
-        """批量启动云服务器
-
-        根据给定的云服务器ID列表，批量启动云服务器，一次最多可以启动1000台。
-
-        :param BatchStartServersRequest request
-        :return: BatchStartServersResponse
-        """
-
         all_params = ['batch_start_servers_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -756,26 +712,21 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_stop_servers(self, request):
         """批量关闭云服务器
 
         根据给定的云服务器ID列表，批量关闭云服务器，一次最多可以关闭1000台。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchStopServersRequest request
-        :return: BatchStopServersResponse
+        :param request: Request instance for BatchStopServers
+        :type request: :class:`huaweicloudsdkecs.v2.BatchStopServersRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.BatchStopServersResponse`
         """
         return self.batch_stop_servers_with_http_info(request)
 
     def batch_stop_servers_with_http_info(self, request):
-        """批量关闭云服务器
-
-        根据给定的云服务器ID列表，批量关闭云服务器，一次最多可以关闭1000台。
-
-        :param BatchStopServersRequest request
-        :return: BatchStopServersResponse
-        """
-
         all_params = ['batch_stop_servers_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -819,26 +770,22 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_update_servers_name(self, request):
         """批量修改弹性云服务器
 
-        批量修改弹性云服务器信息。 当前仅支持批量修改云服务器名称，一次最多可以修改1000台。
+        批量修改弹性云服务器信息。
+        当前仅支持批量修改云服务器名称，一次最多可以修改1000台。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchUpdateServersNameRequest request
-        :return: BatchUpdateServersNameResponse
+        :param request: Request instance for BatchUpdateServersName
+        :type request: :class:`huaweicloudsdkecs.v2.BatchUpdateServersNameRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.BatchUpdateServersNameResponse`
         """
         return self.batch_update_servers_name_with_http_info(request)
 
     def batch_update_servers_name_with_http_info(self, request):
-        """批量修改弹性云服务器
-
-        批量修改弹性云服务器信息。 当前仅支持批量修改云服务器名称，一次最多可以修改1000台。
-
-        :param BatchUpdateServersNameRequest request
-        :return: BatchUpdateServersNameResponse
-        """
-
         all_params = ['batch_update_servers_name_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -882,26 +829,23 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def change_server_os_with_cloud_init(self, request):
         """切换弹性云服务器操作系统(安装Cloud init)
 
-        切换弹性云服务器操作系统。支持弹性云服务器数据盘不变的情况下，使用新镜像重装系统盘。  调用该接口后，系统将卸载系统盘，然后使用新镜像重新创建系统盘，并挂载至弹性云服务器，实现切换操作系统功能。
+        切换弹性云服务器操作系统。支持弹性云服务器数据盘不变的情况下，使用新镜像重装系统盘。
+        
+        调用该接口后，系统将卸载系统盘，然后使用新镜像重新创建系统盘，并挂载至弹性云服务器，实现切换操作系统功能。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ChangeServerOsWithCloudInitRequest request
-        :return: ChangeServerOsWithCloudInitResponse
+        :param request: Request instance for ChangeServerOsWithCloudInit
+        :type request: :class:`huaweicloudsdkecs.v2.ChangeServerOsWithCloudInitRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.ChangeServerOsWithCloudInitResponse`
         """
         return self.change_server_os_with_cloud_init_with_http_info(request)
 
     def change_server_os_with_cloud_init_with_http_info(self, request):
-        """切换弹性云服务器操作系统(安装Cloud init)
-
-        切换弹性云服务器操作系统。支持弹性云服务器数据盘不变的情况下，使用新镜像重装系统盘。  调用该接口后，系统将卸载系统盘，然后使用新镜像重新创建系统盘，并挂载至弹性云服务器，实现切换操作系统功能。
-
-        :param ChangeServerOsWithCloudInitRequest request
-        :return: ChangeServerOsWithCloudInitResponse
-        """
-
         all_params = ['server_id', 'change_server_os_with_cloud_init_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -947,26 +891,23 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def change_server_os_without_cloud_init(self, request):
         """切换弹性云服务器操作系统(未安装Cloud init)
 
-        切换弹性云服务器操作系统。  该接口支持未安装Cloud-init或Cloudbase-init的镜像使用。
+        切换弹性云服务器操作系统。
+        
+        该接口支持未安装Cloud-init或Cloudbase-init的镜像使用。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ChangeServerOsWithoutCloudInitRequest request
-        :return: ChangeServerOsWithoutCloudInitResponse
+        :param request: Request instance for ChangeServerOsWithoutCloudInit
+        :type request: :class:`huaweicloudsdkecs.v2.ChangeServerOsWithoutCloudInitRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.ChangeServerOsWithoutCloudInitResponse`
         """
         return self.change_server_os_without_cloud_init_with_http_info(request)
 
     def change_server_os_without_cloud_init_with_http_info(self, request):
-        """切换弹性云服务器操作系统(未安装Cloud init)
-
-        切换弹性云服务器操作系统。  该接口支持未安装Cloud-init或Cloudbase-init的镜像使用。
-
-        :param ChangeServerOsWithoutCloudInitRequest request
-        :return: ChangeServerOsWithoutCloudInitResponse
-        """
-
         all_params = ['server_id', 'change_server_os_without_cloud_init_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1012,26 +953,34 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_post_paid_servers(self, request):
         """创建云服务器(按需)
 
-        创建一台或多台[按需付费](https://support.huaweicloud.com/productdesc-ecs/ecs_01_0065.html)方式的云服务器。  弹性云服务器的登录鉴权方式包括两种：密钥对、密码。为安全起见，推荐使用密钥对方式。  - 密钥对 密钥对指使用密钥对作为弹性云服务器的鉴权方式。 接口调用方法：使用key_name字段，指定弹性云服务器登录时使用的密钥文件。  - 密码 密码指使用设置初始密码方式作为弹性云服务器的鉴权方式，此时，您可以通过用户名密码方式登录弹性云服务器，Linux操作系统时为root用户的初始密码，Windows操作系统时为Administrator用户的初始密码。  接口调用方法：使用adminPass字段，指定管理员帐号的初始登录密码。对于镜像已安装Cloud-init的Linux云服务器，如果需要使用密文密码，可以使用user_data字段进行密码注入。  > 对于安装Cloud-init镜像的Linux云服务器云主机，若指定user_data字段，则adminPass字段无效。
+        创建一台或多台[按需付费](https://support.huaweicloud.com/productdesc-ecs/ecs_01_0065.html)方式的云服务器。
+        
+        弹性云服务器的登录鉴权方式包括两种：密钥对、密码。为安全起见，推荐使用密钥对方式。
+        
+        - 密钥对
+        密钥对指使用密钥对作为弹性云服务器的鉴权方式。
+        接口调用方法：使用key_name字段，指定弹性云服务器登录时使用的密钥文件。
+        
+        - 密码
+        密码指使用设置初始密码方式作为弹性云服务器的鉴权方式，此时，您可以通过用户名密码方式登录弹性云服务器，Linux操作系统时为root用户的初始密码，Windows操作系统时为Administrator用户的初始密码。
+        
+        接口调用方法：使用adminPass字段，指定管理员帐号的初始登录密码。对于镜像已安装Cloud-init的Linux云服务器，如果需要使用密文密码，可以使用user_data字段进行密码注入。
+        
+        &gt; 对于安装Cloud-init镜像的Linux云服务器云主机，若指定user_data字段，则adminPass字段无效。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreatePostPaidServersRequest request
-        :return: CreatePostPaidServersResponse
+        :param request: Request instance for CreatePostPaidServers
+        :type request: :class:`huaweicloudsdkecs.v2.CreatePostPaidServersRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.CreatePostPaidServersResponse`
         """
         return self.create_post_paid_servers_with_http_info(request)
 
     def create_post_paid_servers_with_http_info(self, request):
-        """创建云服务器(按需)
-
-        创建一台或多台[按需付费](https://support.huaweicloud.com/productdesc-ecs/ecs_01_0065.html)方式的云服务器。  弹性云服务器的登录鉴权方式包括两种：密钥对、密码。为安全起见，推荐使用密钥对方式。  - 密钥对 密钥对指使用密钥对作为弹性云服务器的鉴权方式。 接口调用方法：使用key_name字段，指定弹性云服务器登录时使用的密钥文件。  - 密码 密码指使用设置初始密码方式作为弹性云服务器的鉴权方式，此时，您可以通过用户名密码方式登录弹性云服务器，Linux操作系统时为root用户的初始密码，Windows操作系统时为Administrator用户的初始密码。  接口调用方法：使用adminPass字段，指定管理员帐号的初始登录密码。对于镜像已安装Cloud-init的Linux云服务器，如果需要使用密文密码，可以使用user_data字段进行密码注入。  > 对于安装Cloud-init镜像的Linux云服务器云主机，若指定user_data字段，则adminPass字段无效。
-
-        :param CreatePostPaidServersRequest request
-        :return: CreatePostPaidServersResponse
-        """
-
         all_params = ['create_post_paid_servers_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1075,26 +1024,23 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_server_group(self, request):
         """创建云服务器组
 
-        创建弹性云服务器组。  与原生的创建云服务器组接口不同之处在于该接口支持企业项目细粒度权限的校验。
+        创建弹性云服务器组。
+        
+        与原生的创建云服务器组接口不同之处在于该接口支持企业项目细粒度权限的校验。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateServerGroupRequest request
-        :return: CreateServerGroupResponse
+        :param request: Request instance for CreateServerGroup
+        :type request: :class:`huaweicloudsdkecs.v2.CreateServerGroupRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.CreateServerGroupResponse`
         """
         return self.create_server_group_with_http_info(request)
 
     def create_server_group_with_http_info(self, request):
-        """创建云服务器组
-
-        创建弹性云服务器组。  与原生的创建云服务器组接口不同之处在于该接口支持企业项目细粒度权限的校验。
-
-        :param CreateServerGroupRequest request
-        :return: CreateServerGroupResponse
-        """
-
         all_params = ['create_server_group_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1138,26 +1084,43 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_servers(self, request):
         """创建云服务器
 
-        创建一台或多台云服务器。  指该接口兼容《弹性云服务器接口参考》创建云服务器v1的功能，同时合入新功能，支持创建[包年/包月](https://support.huaweicloud.com/productdesc-ecs/ecs_01_0065.html)的弹性云服务器。  弹性云服务器的登录鉴权方式包括两种：密钥对、密码。为安全起见，推荐使用密钥对方式。  - 密钥对  指使用密钥对作为弹性云服务器的鉴权方式。  接口调用方法：使用key_name字段，指定弹性云服务器登录时使用的密钥文件。  - 密码  指使用设置初始密码方式作为弹性云服务器的鉴权方式，此时，您可以通过用户名密码方式登录弹性云服务器，Linux操作系统时为root用户的初始密码，Windows操作系统时为Administrator用户的初始密码。  接口调用方法：使用adminPass字段，指定管理员帐号的初始登录密码。对于镜像已安装Cloud-init的Linux云服务器，如果需要使用密文密码，可以使用user_data字段进行密码注入。  > 对于安装Cloud-init镜像的Linux云服务器云主机，若指定user_data字段，则adminPass字段无效。  购买操作示例： - [使用API购买ECS过程中常见问题及处理方法](https://support.huaweicloud.com/api-ecs/ecs_04_0007.html) - [获取Token并检验Token的有效期 ](https://support.huaweicloud.com/api-ecs/ecs_04_0008.html)
+        创建一台或多台云服务器。
+        
+        指该接口兼容《弹性云服务器接口参考》创建云服务器v1的功能，同时合入新功能，支持创建[包年/包月](https://support.huaweicloud.com/productdesc-ecs/ecs_01_0065.html)的弹性云服务器。
+        
+        弹性云服务器的登录鉴权方式包括两种：密钥对、密码。为安全起见，推荐使用密钥对方式。
+        
+        - 密钥对
+        
+        指使用密钥对作为弹性云服务器的鉴权方式。
+        
+        接口调用方法：使用key_name字段，指定弹性云服务器登录时使用的密钥文件。
+        
+        - 密码
+        
+        指使用设置初始密码方式作为弹性云服务器的鉴权方式，此时，您可以通过用户名密码方式登录弹性云服务器，Linux操作系统时为root用户的初始密码，Windows操作系统时为Administrator用户的初始密码。
+        
+        接口调用方法：使用adminPass字段，指定管理员帐号的初始登录密码。对于镜像已安装Cloud-init的Linux云服务器，如果需要使用密文密码，可以使用user_data字段进行密码注入。
+        
+        &gt; 对于安装Cloud-init镜像的Linux云服务器云主机，若指定user_data字段，则adminPass字段无效。
+        
+        购买操作示例：
+        - [使用API购买ECS过程中常见问题及处理方法](https://support.huaweicloud.com/api-ecs/ecs_04_0007.html)
+        - [获取Token并检验Token的有效期 ](https://support.huaweicloud.com/api-ecs/ecs_04_0008.html)
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateServersRequest request
-        :return: CreateServersResponse
+        :param request: Request instance for CreateServers
+        :type request: :class:`huaweicloudsdkecs.v2.CreateServersRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.CreateServersResponse`
         """
         return self.create_servers_with_http_info(request)
 
     def create_servers_with_http_info(self, request):
-        """创建云服务器
-
-        创建一台或多台云服务器。  指该接口兼容《弹性云服务器接口参考》创建云服务器v1的功能，同时合入新功能，支持创建[包年/包月](https://support.huaweicloud.com/productdesc-ecs/ecs_01_0065.html)的弹性云服务器。  弹性云服务器的登录鉴权方式包括两种：密钥对、密码。为安全起见，推荐使用密钥对方式。  - 密钥对  指使用密钥对作为弹性云服务器的鉴权方式。  接口调用方法：使用key_name字段，指定弹性云服务器登录时使用的密钥文件。  - 密码  指使用设置初始密码方式作为弹性云服务器的鉴权方式，此时，您可以通过用户名密码方式登录弹性云服务器，Linux操作系统时为root用户的初始密码，Windows操作系统时为Administrator用户的初始密码。  接口调用方法：使用adminPass字段，指定管理员帐号的初始登录密码。对于镜像已安装Cloud-init的Linux云服务器，如果需要使用密文密码，可以使用user_data字段进行密码注入。  > 对于安装Cloud-init镜像的Linux云服务器云主机，若指定user_data字段，则adminPass字段无效。  购买操作示例： - [使用API购买ECS过程中常见问题及处理方法](https://support.huaweicloud.com/api-ecs/ecs_04_0007.html) - [获取Token并检验Token的有效期 ](https://support.huaweicloud.com/api-ecs/ecs_04_0008.html)
-
-        :param CreateServersRequest request
-        :return: CreateServersResponse
-        """
-
         all_params = ['create_servers_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1201,26 +1164,23 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_server_group(self, request):
         """删除云服务器组
 
-        删除云服务器组。  与原生的删除云服务器组接口不同之处在于该接口支持企业项目细粒度权限的校验。
+        删除云服务器组。
+        
+        与原生的删除云服务器组接口不同之处在于该接口支持企业项目细粒度权限的校验。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteServerGroupRequest request
-        :return: DeleteServerGroupResponse
+        :param request: Request instance for DeleteServerGroup
+        :type request: :class:`huaweicloudsdkecs.v2.DeleteServerGroupRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.DeleteServerGroupResponse`
         """
         return self.delete_server_group_with_http_info(request)
 
     def delete_server_group_with_http_info(self, request):
-        """删除云服务器组
-
-        删除云服务器组。  与原生的删除云服务器组接口不同之处在于该接口支持企业项目细粒度权限的校验。
-
-        :param DeleteServerGroupRequest request
-        :return: DeleteServerGroupResponse
-        """
-
         all_params = ['server_group_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1264,26 +1224,21 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_server_group_member(self, request):
         """云服务器组删除成员
 
         将弹性云服务器移出云服务器组。移出后，该云服务器与云服务器组中的成员不再遵从反亲和策略。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteServerGroupMemberRequest request
-        :return: DeleteServerGroupMemberResponse
+        :param request: Request instance for DeleteServerGroupMember
+        :type request: :class:`huaweicloudsdkecs.v2.DeleteServerGroupMemberRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.DeleteServerGroupMemberResponse`
         """
         return self.delete_server_group_member_with_http_info(request)
 
     def delete_server_group_member_with_http_info(self, request):
-        """云服务器组删除成员
-
-        将弹性云服务器移出云服务器组。移出后，该云服务器与云服务器组中的成员不再遵从反亲和策略。
-
-        :param DeleteServerGroupMemberRequest request
-        :return: DeleteServerGroupMemberResponse
-        """
-
         all_params = ['server_group_id', 'delete_server_group_member_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1329,26 +1284,21 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_server_metadata(self, request):
         """删除云服务器指定元数据
 
         删除云服务器指定元数据。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteServerMetadataRequest request
-        :return: DeleteServerMetadataResponse
+        :param request: Request instance for DeleteServerMetadata
+        :type request: :class:`huaweicloudsdkecs.v2.DeleteServerMetadataRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.DeleteServerMetadataResponse`
         """
         return self.delete_server_metadata_with_http_info(request)
 
     def delete_server_metadata_with_http_info(self, request):
-        """删除云服务器指定元数据
-
-        删除云服务器指定元数据。
-
-        :param DeleteServerMetadataRequest request
-        :return: DeleteServerMetadataResponse
-        """
-
         all_params = ['key', 'server_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1394,26 +1344,21 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_server_password(self, request):
         """云服务器清除密码(企业项目)
 
         清除Windows云服务器初始安装时系统生成的密码记录。清除密码后，不影响云服务器密码登录功能，但不能再使用获取密码功能来查询该云服务器密码。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteServerPasswordRequest request
-        :return: DeleteServerPasswordResponse
+        :param request: Request instance for DeleteServerPassword
+        :type request: :class:`huaweicloudsdkecs.v2.DeleteServerPasswordRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.DeleteServerPasswordResponse`
         """
         return self.delete_server_password_with_http_info(request)
 
     def delete_server_password_with_http_info(self, request):
-        """云服务器清除密码(企业项目)
-
-        清除Windows云服务器初始安装时系统生成的密码记录。清除密码后，不影响云服务器密码登录功能，但不能再使用获取密码功能来查询该云服务器密码。
-
-        :param DeleteServerPasswordRequest request
-        :return: DeleteServerPasswordResponse
-        """
-
         all_params = ['server_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1457,26 +1402,23 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_servers(self, request):
         """删除云服务器
 
-        根据指定的云服务器ID列表，删除云服务器。  系统支持删除单台云服务器和批量删除多台云服务器操作，批量删除云服务器时，一次最多可以删除1000台。
+        根据指定的云服务器ID列表，删除云服务器。
+        
+        系统支持删除单台云服务器和批量删除多台云服务器操作，批量删除云服务器时，一次最多可以删除1000台。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteServersRequest request
-        :return: DeleteServersResponse
+        :param request: Request instance for DeleteServers
+        :type request: :class:`huaweicloudsdkecs.v2.DeleteServersRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.DeleteServersResponse`
         """
         return self.delete_servers_with_http_info(request)
 
     def delete_servers_with_http_info(self, request):
-        """删除云服务器
-
-        根据指定的云服务器ID列表，删除云服务器。  系统支持删除单台云服务器和批量删除多台云服务器操作，批量删除云服务器时，一次最多可以删除1000台。
-
-        :param DeleteServersRequest request
-        :return: DeleteServersResponse
-        """
-
         all_params = ['delete_servers_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1520,26 +1462,21 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def detach_server_volume(self, request):
         """弹性云服务器卸载磁盘
 
         从弹性云服务器中卸载磁盘。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DetachServerVolumeRequest request
-        :return: DetachServerVolumeResponse
+        :param request: Request instance for DetachServerVolume
+        :type request: :class:`huaweicloudsdkecs.v2.DetachServerVolumeRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.DetachServerVolumeResponse`
         """
         return self.detach_server_volume_with_http_info(request)
 
     def detach_server_volume_with_http_info(self, request):
-        """弹性云服务器卸载磁盘
-
-        从弹性云服务器中卸载磁盘。
-
-        :param DetachServerVolumeRequest request
-        :return: DetachServerVolumeResponse
-        """
-
         all_params = ['server_id', 'volume_id', 'delete_flag']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1587,26 +1524,23 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def disassociate_server_virtual_ip(self, request):
         """云服务器网卡解绑虚拟IP地址
 
-        虚拟IP地址用于为网卡提供第二个IP地址，同时支持与多个弹性云服务器的网卡绑定，从而实现多个弹性云服务器之间的高可用性。  该接口用于解绑定弹性云服务器网卡的虚拟IP地址。解绑后，网卡不会被删除。
+        虚拟IP地址用于为网卡提供第二个IP地址，同时支持与多个弹性云服务器的网卡绑定，从而实现多个弹性云服务器之间的高可用性。
+        
+        该接口用于解绑定弹性云服务器网卡的虚拟IP地址。解绑后，网卡不会被删除。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DisassociateServerVirtualIpRequest request
-        :return: DisassociateServerVirtualIpResponse
+        :param request: Request instance for DisassociateServerVirtualIp
+        :type request: :class:`huaweicloudsdkecs.v2.DisassociateServerVirtualIpRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.DisassociateServerVirtualIpResponse`
         """
         return self.disassociate_server_virtual_ip_with_http_info(request)
 
     def disassociate_server_virtual_ip_with_http_info(self, request):
-        """云服务器网卡解绑虚拟IP地址
-
-        虚拟IP地址用于为网卡提供第二个IP地址，同时支持与多个弹性云服务器的网卡绑定，从而实现多个弹性云服务器之间的高可用性。  该接口用于解绑定弹性云服务器网卡的虚拟IP地址。解绑后，网卡不会被删除。
-
-        :param DisassociateServerVirtualIpRequest request
-        :return: DisassociateServerVirtualIpResponse
-        """
-
         all_params = ['nic_id', 'disassociate_server_virtual_ip_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1652,26 +1586,21 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_flavors(self, request):
         """查询规格详情和规格扩展信息列表
 
         查询云服务器规格详情信息和规格扩展信息列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListFlavorsRequest request
-        :return: ListFlavorsResponse
+        :param request: Request instance for ListFlavors
+        :type request: :class:`huaweicloudsdkecs.v2.ListFlavorsRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.ListFlavorsResponse`
         """
         return self.list_flavors_with_http_info(request)
 
     def list_flavors_with_http_info(self, request):
-        """查询规格详情和规格扩展信息列表
-
-        查询云服务器规格详情信息和规格扩展信息列表。
-
-        :param ListFlavorsRequest request
-        :return: ListFlavorsResponse
-        """
-
         all_params = ['availability_zone']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1715,26 +1644,21 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_resize_flavors(self, request):
         """查询云服务器规格变更支持列表
 
         变更规格时，部分规格的云服务器之间不能互相变更。您可以通过本接口，通过指定弹性云服务器规格，查询该规格可以变更的规格列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListResizeFlavorsRequest request
-        :return: ListResizeFlavorsResponse
+        :param request: Request instance for ListResizeFlavors
+        :type request: :class:`huaweicloudsdkecs.v2.ListResizeFlavorsRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.ListResizeFlavorsResponse`
         """
         return self.list_resize_flavors_with_http_info(request)
 
     def list_resize_flavors_with_http_info(self, request):
-        """查询云服务器规格变更支持列表
-
-        变更规格时，部分规格的云服务器之间不能互相变更。您可以通过本接口，通过指定弹性云服务器规格，查询该规格可以变更的规格列表。
-
-        :param ListResizeFlavorsRequest request
-        :return: ListResizeFlavorsResponse
-        """
-
         all_params = ['instance_uuid', 'limit', 'marker', 'sort_dir', 'sort_key', 'source_flavor_id', 'source_flavor_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1790,26 +1714,21 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_server_block_devices(self, request):
         """查询弹性云服务器磁盘信息
 
         查询弹性云服务器挂载的磁盘信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListServerBlockDevicesRequest request
-        :return: ListServerBlockDevicesResponse
+        :param request: Request instance for ListServerBlockDevices
+        :type request: :class:`huaweicloudsdkecs.v2.ListServerBlockDevicesRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.ListServerBlockDevicesResponse`
         """
         return self.list_server_block_devices_with_http_info(request)
 
     def list_server_block_devices_with_http_info(self, request):
-        """查询弹性云服务器磁盘信息
-
-        查询弹性云服务器挂载的磁盘信息。
-
-        :param ListServerBlockDevicesRequest request
-        :return: ListServerBlockDevicesResponse
-        """
-
         all_params = ['server_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1853,26 +1772,23 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_server_groups(self, request):
         """查询云服务器组列表
 
-        查询弹性云服务器组。  与原生的创建云服务器组接口不同之处在于该接口支持企业项目细粒度权限的校验。
+        查询弹性云服务器组。
+        
+        与原生的创建云服务器组接口不同之处在于该接口支持企业项目细粒度权限的校验。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListServerGroupsRequest request
-        :return: ListServerGroupsResponse
+        :param request: Request instance for ListServerGroups
+        :type request: :class:`huaweicloudsdkecs.v2.ListServerGroupsRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.ListServerGroupsResponse`
         """
         return self.list_server_groups_with_http_info(request)
 
     def list_server_groups_with_http_info(self, request):
-        """查询云服务器组列表
-
-        查询弹性云服务器组。  与原生的创建云服务器组接口不同之处在于该接口支持企业项目细粒度权限的校验。
-
-        :param ListServerGroupsRequest request
-        :return: ListServerGroupsResponse
-        """
-
         all_params = ['limit', 'marker']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1918,26 +1834,21 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_server_interfaces(self, request):
         """查询云服务器网卡信息
 
         查询云服务器网卡信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListServerInterfacesRequest request
-        :return: ListServerInterfacesResponse
+        :param request: Request instance for ListServerInterfaces
+        :type request: :class:`huaweicloudsdkecs.v2.ListServerInterfacesRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.ListServerInterfacesResponse`
         """
         return self.list_server_interfaces_with_http_info(request)
 
     def list_server_interfaces_with_http_info(self, request):
-        """查询云服务器网卡信息
-
-        查询云服务器网卡信息。
-
-        :param ListServerInterfacesRequest request
-        :return: ListServerInterfacesResponse
-        """
-
         all_params = ['server_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1981,26 +1892,23 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_server_tags(self, request):
         """查询项目标签
 
-        项目（Project）用于将OpenStack的资源（计算资源、存储资源和网络资源）进行分组和隔离。项目可以是一个部门或者一个项目组。一个帐户中可以创建多个项目。  该接口用于查询用户在指定项目所使用的全部标签。
+        项目（Project）用于将OpenStack的资源（计算资源、存储资源和网络资源）进行分组和隔离。项目可以是一个部门或者一个项目组。一个帐户中可以创建多个项目。
+        
+        该接口用于查询用户在指定项目所使用的全部标签。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListServerTagsRequest request
-        :return: ListServerTagsResponse
+        :param request: Request instance for ListServerTags
+        :type request: :class:`huaweicloudsdkecs.v2.ListServerTagsRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.ListServerTagsResponse`
         """
         return self.list_server_tags_with_http_info(request)
 
     def list_server_tags_with_http_info(self, request):
-        """查询项目标签
-
-        项目（Project）用于将OpenStack的资源（计算资源、存储资源和网络资源）进行分组和隔离。项目可以是一个部门或者一个项目组。一个帐户中可以创建多个项目。  该接口用于查询用户在指定项目所使用的全部标签。
-
-        :param ListServerTagsRequest request
-        :return: ListServerTagsResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2042,26 +1950,23 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_servers_details(self, request):
         """查询云服务器详情列表
 
-        根据用户请求条件从数据库筛选、查询所有的弹性云服务器，并关联相关表获取到弹性云服务器的详细信息。  该接口支持查询弹性云服务器计费方式，以及是否被冻结。
+        根据用户请求条件从数据库筛选、查询所有的弹性云服务器，并关联相关表获取到弹性云服务器的详细信息。
+        
+        该接口支持查询弹性云服务器计费方式，以及是否被冻结。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListServersDetailsRequest request
-        :return: ListServersDetailsResponse
+        :param request: Request instance for ListServersDetails
+        :type request: :class:`huaweicloudsdkecs.v2.ListServersDetailsRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.ListServersDetailsResponse`
         """
         return self.list_servers_details_with_http_info(request)
 
     def list_servers_details_with_http_info(self, request):
-        """查询云服务器详情列表
-
-        根据用户请求条件从数据库筛选、查询所有的弹性云服务器，并关联相关表获取到弹性云服务器的详细信息。  该接口支持查询弹性云服务器计费方式，以及是否被冻结。
-
-        :param ListServersDetailsRequest request
-        :return: ListServersDetailsResponse
-        """
-
         all_params = ['enterprise_project_id', 'flavor', 'ip', 'limit', 'name', 'not_tags', 'offset', 'reservation_id', 'status', 'tags', 'ip_eq']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2125,26 +2030,23 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def migrate_server(self, request):
         """冷迁移云服务器
 
-        - 将部署在专属主机上的弹性云服务器迁移至其他专属主机。 - 将部署在专属主机上的弹性云服务器迁移至公共资源池，即不再部署在专属主机上。 - 将公共资源池的弹性云服务器迁移至专属主机上，成为专属主机上部署的弹性云服务器。
+        - 将部署在专属主机上的弹性云服务器迁移至其他专属主机。
+        - 将部署在专属主机上的弹性云服务器迁移至公共资源池，即不再部署在专属主机上。
+        - 将公共资源池的弹性云服务器迁移至专属主机上，成为专属主机上部署的弹性云服务器。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param MigrateServerRequest request
-        :return: MigrateServerResponse
+        :param request: Request instance for MigrateServer
+        :type request: :class:`huaweicloudsdkecs.v2.MigrateServerRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.MigrateServerResponse`
         """
         return self.migrate_server_with_http_info(request)
 
     def migrate_server_with_http_info(self, request):
-        """冷迁移云服务器
-
-        - 将部署在专属主机上的弹性云服务器迁移至其他专属主机。 - 将部署在专属主机上的弹性云服务器迁移至公共资源池，即不再部署在专属主机上。 - 将公共资源池的弹性云服务器迁移至专属主机上，成为专属主机上部署的弹性云服务器。
-
-        :param MigrateServerRequest request
-        :return: MigrateServerResponse
-        """
-
         all_params = ['server_id', 'migrate_server_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2190,26 +2092,23 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def nova_associate_security_group(self, request):
         """添加安全组
 
-        为弹性云服务器添加一个安全组。  添加多个安全组时，建议最多为弹性云服务器添加5个安全组。
+        为弹性云服务器添加一个安全组。
+        
+        添加多个安全组时，建议最多为弹性云服务器添加5个安全组。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param NovaAssociateSecurityGroupRequest request
-        :return: NovaAssociateSecurityGroupResponse
+        :param request: Request instance for NovaAssociateSecurityGroup
+        :type request: :class:`huaweicloudsdkecs.v2.NovaAssociateSecurityGroupRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.NovaAssociateSecurityGroupResponse`
         """
         return self.nova_associate_security_group_with_http_info(request)
 
     def nova_associate_security_group_with_http_info(self, request):
-        """添加安全组
-
-        为弹性云服务器添加一个安全组。  添加多个安全组时，建议最多为弹性云服务器添加5个安全组。
-
-        :param NovaAssociateSecurityGroupRequest request
-        :return: NovaAssociateSecurityGroupResponse
-        """
-
         all_params = ['server_id', 'nova_associate_security_group_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2255,26 +2154,23 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def nova_create_keypair(self, request):
         """创建和导入SSH密钥
 
-        创建SSH密钥，或把公钥导入系统，生成密钥对。  创建SSH密钥成功后，请把响应数据中的私钥内容保存到本地文件，用户使用该私钥登录云服务器云主机。为保证云服务器云主机器安全，私钥数据只能读取一次，请妥善保管。
+        创建SSH密钥，或把公钥导入系统，生成密钥对。
+        
+        创建SSH密钥成功后，请把响应数据中的私钥内容保存到本地文件，用户使用该私钥登录云服务器云主机。为保证云服务器云主机器安全，私钥数据只能读取一次，请妥善保管。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param NovaCreateKeypairRequest request
-        :return: NovaCreateKeypairResponse
+        :param request: Request instance for NovaCreateKeypair
+        :type request: :class:`huaweicloudsdkecs.v2.NovaCreateKeypairRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.NovaCreateKeypairResponse`
         """
         return self.nova_create_keypair_with_http_info(request)
 
     def nova_create_keypair_with_http_info(self, request):
-        """创建和导入SSH密钥
-
-        创建SSH密钥，或把公钥导入系统，生成密钥对。  创建SSH密钥成功后，请把响应数据中的私钥内容保存到本地文件，用户使用该私钥登录云服务器云主机。为保证云服务器云主机器安全，私钥数据只能读取一次，请妥善保管。
-
-        :param NovaCreateKeypairRequest request
-        :return: NovaCreateKeypairResponse
-        """
-
         all_params = ['nova_create_keypair_request_body', 'open_stack_api_version']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2320,26 +2216,25 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def nova_create_servers(self, request):
         """创建云服务器
 
-        创建一台弹性云服务器。  弹性云服务器创建完成后，如需开启自动恢复功能，可以调用配置云服务器自动恢复的接口，具体使用请参见管理云服务器自动恢复动作。  该接口在云服务器创建失败后不支持自动回滚。若需要自动回滚能力，可以调用POST /v1/{project_id}/cloudservers接口，具体使用请参见创建云服务器（按需）。
+        创建一台弹性云服务器。
+        
+        弹性云服务器创建完成后，如需开启自动恢复功能，可以调用配置云服务器自动恢复的接口，具体使用请参见管理云服务器自动恢复动作。
+        
+        该接口在云服务器创建失败后不支持自动回滚。若需要自动回滚能力，可以调用POST /v1/{project_id}/cloudservers接口，具体使用请参见创建云服务器（按需）。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param NovaCreateServersRequest request
-        :return: NovaCreateServersResponse
+        :param request: Request instance for NovaCreateServers
+        :type request: :class:`huaweicloudsdkecs.v2.NovaCreateServersRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.NovaCreateServersResponse`
         """
         return self.nova_create_servers_with_http_info(request)
 
     def nova_create_servers_with_http_info(self, request):
-        """创建云服务器
-
-        创建一台弹性云服务器。  弹性云服务器创建完成后，如需开启自动恢复功能，可以调用配置云服务器自动恢复的接口，具体使用请参见管理云服务器自动恢复动作。  该接口在云服务器创建失败后不支持自动回滚。若需要自动回滚能力，可以调用POST /v1/{project_id}/cloudservers接口，具体使用请参见创建云服务器（按需）。
-
-        :param NovaCreateServersRequest request
-        :return: NovaCreateServersResponse
-        """
-
         all_params = ['nova_create_servers_request_body', 'open_stack_api_version']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2385,26 +2280,21 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def nova_delete_keypair(self, request):
         """删除SSH密钥
 
         根据SSH密钥的名称，删除指定SSH密钥。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param NovaDeleteKeypairRequest request
-        :return: NovaDeleteKeypairResponse
+        :param request: Request instance for NovaDeleteKeypair
+        :type request: :class:`huaweicloudsdkecs.v2.NovaDeleteKeypairRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.NovaDeleteKeypairResponse`
         """
         return self.nova_delete_keypair_with_http_info(request)
 
     def nova_delete_keypair_with_http_info(self, request):
-        """删除SSH密钥
-
-        根据SSH密钥的名称，删除指定SSH密钥。
-
-        :param NovaDeleteKeypairRequest request
-        :return: NovaDeleteKeypairResponse
-        """
-
         all_params = ['keypair_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2448,26 +2338,21 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def nova_delete_server(self, request):
         """删除云服务器
 
         删除一台云服务器。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param NovaDeleteServerRequest request
-        :return: NovaDeleteServerResponse
+        :param request: Request instance for NovaDeleteServer
+        :type request: :class:`huaweicloudsdkecs.v2.NovaDeleteServerRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.NovaDeleteServerResponse`
         """
         return self.nova_delete_server_with_http_info(request)
 
     def nova_delete_server_with_http_info(self, request):
-        """删除云服务器
-
-        删除一台云服务器。
-
-        :param NovaDeleteServerRequest request
-        :return: NovaDeleteServerResponse
-        """
-
         all_params = ['server_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2511,26 +2396,21 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def nova_disassociate_security_group(self, request):
         """移除安全组
 
         移除弹性云服务器中的安全组。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param NovaDisassociateSecurityGroupRequest request
-        :return: NovaDisassociateSecurityGroupResponse
+        :param request: Request instance for NovaDisassociateSecurityGroup
+        :type request: :class:`huaweicloudsdkecs.v2.NovaDisassociateSecurityGroupRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.NovaDisassociateSecurityGroupResponse`
         """
         return self.nova_disassociate_security_group_with_http_info(request)
 
     def nova_disassociate_security_group_with_http_info(self, request):
-        """移除安全组
-
-        移除弹性云服务器中的安全组。
-
-        :param NovaDisassociateSecurityGroupRequest request
-        :return: NovaDisassociateSecurityGroupResponse
-        """
-
         all_params = ['server_id', 'nova_disassociate_security_group_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2576,26 +2456,21 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def nova_list_availability_zones(self, request):
         """查询可用区列表
 
         查询可用域列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param NovaListAvailabilityZonesRequest request
-        :return: NovaListAvailabilityZonesResponse
+        :param request: Request instance for NovaListAvailabilityZones
+        :type request: :class:`huaweicloudsdkecs.v2.NovaListAvailabilityZonesRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.NovaListAvailabilityZonesResponse`
         """
         return self.nova_list_availability_zones_with_http_info(request)
 
     def nova_list_availability_zones_with_http_info(self, request):
-        """查询可用区列表
-
-        查询可用域列表。
-
-        :param NovaListAvailabilityZonesRequest request
-        :return: NovaListAvailabilityZonesResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2637,26 +2512,21 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def nova_list_keypairs(self, request):
         """查询SSH密钥列表
 
         查询SSH密钥信息列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param NovaListKeypairsRequest request
-        :return: NovaListKeypairsResponse
+        :param request: Request instance for NovaListKeypairs
+        :type request: :class:`huaweicloudsdkecs.v2.NovaListKeypairsRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.NovaListKeypairsResponse`
         """
         return self.nova_list_keypairs_with_http_info(request)
 
     def nova_list_keypairs_with_http_info(self, request):
-        """查询SSH密钥列表
-
-        查询SSH密钥信息列表。
-
-        :param NovaListKeypairsRequest request
-        :return: NovaListKeypairsResponse
-        """
-
         all_params = ['limit', 'marker', 'open_stack_api_version']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2704,26 +2574,21 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def nova_list_server_security_groups(self, request):
         """查询指定云服务器安全组列表
 
         查询指定弹性云服务器的安全组。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param NovaListServerSecurityGroupsRequest request
-        :return: NovaListServerSecurityGroupsResponse
+        :param request: Request instance for NovaListServerSecurityGroups
+        :type request: :class:`huaweicloudsdkecs.v2.NovaListServerSecurityGroupsRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.NovaListServerSecurityGroupsResponse`
         """
         return self.nova_list_server_security_groups_with_http_info(request)
 
     def nova_list_server_security_groups_with_http_info(self, request):
-        """查询指定云服务器安全组列表
-
-        查询指定弹性云服务器的安全组。
-
-        :param NovaListServerSecurityGroupsRequest request
-        :return: NovaListServerSecurityGroupsResponse
-        """
-
         all_params = ['server_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2767,26 +2632,21 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def nova_list_servers_details(self, request):
         """查询云服务器详情列表
 
         查询云服务器详情信息列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param NovaListServersDetailsRequest request
-        :return: NovaListServersDetailsResponse
+        :param request: Request instance for NovaListServersDetails
+        :type request: :class:`huaweicloudsdkecs.v2.NovaListServersDetailsRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.NovaListServersDetailsResponse`
         """
         return self.nova_list_servers_details_with_http_info(request)
 
     def nova_list_servers_details_with_http_info(self, request):
-        """查询云服务器详情列表
-
-        查询云服务器详情信息列表。
-
-        :param NovaListServersDetailsRequest request
-        :return: NovaListServersDetailsResponse
-        """
-
         all_params = ['changes_since', 'flavor', 'image', 'ip', 'limit', 'marker', 'name', 'not_tags', 'reservation_id', 'sort_key', 'status', 'tags', 'open_stack_api_version']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2854,26 +2714,21 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def nova_show_keypair(self, request):
         """查询SSH密钥详情
 
         根据SSH密钥名称查询指定SSH密钥。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param NovaShowKeypairRequest request
-        :return: NovaShowKeypairResponse
+        :param request: Request instance for NovaShowKeypair
+        :type request: :class:`huaweicloudsdkecs.v2.NovaShowKeypairRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.NovaShowKeypairResponse`
         """
         return self.nova_show_keypair_with_http_info(request)
 
     def nova_show_keypair_with_http_info(self, request):
-        """查询SSH密钥详情
-
-        根据SSH密钥名称查询指定SSH密钥。
-
-        :param NovaShowKeypairRequest request
-        :return: NovaShowKeypairResponse
-        """
-
         all_params = ['keypair_name', 'open_stack_api_version']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2919,26 +2774,21 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def nova_show_server(self, request):
         """查询云服务器详情
 
         根据云服务器ID，查询云服务器的详细信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param NovaShowServerRequest request
-        :return: NovaShowServerResponse
+        :param request: Request instance for NovaShowServer
+        :type request: :class:`huaweicloudsdkecs.v2.NovaShowServerRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.NovaShowServerResponse`
         """
         return self.nova_show_server_with_http_info(request)
 
     def nova_show_server_with_http_info(self, request):
-        """查询云服务器详情
-
-        根据云服务器ID，查询云服务器的详细信息。
-
-        :param NovaShowServerRequest request
-        :return: NovaShowServerResponse
-        """
-
         all_params = ['server_id', 'open_stack_api_version']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2984,26 +2834,21 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def register_server_auto_recovery(self, request):
         """管理云服务器自动恢复动作
 
         配置、删除云服务器自动恢复动作。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param RegisterServerAutoRecoveryRequest request
-        :return: RegisterServerAutoRecoveryResponse
+        :param request: Request instance for RegisterServerAutoRecovery
+        :type request: :class:`huaweicloudsdkecs.v2.RegisterServerAutoRecoveryRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.RegisterServerAutoRecoveryResponse`
         """
         return self.register_server_auto_recovery_with_http_info(request)
 
     def register_server_auto_recovery_with_http_info(self, request):
-        """管理云服务器自动恢复动作
-
-        配置、删除云服务器自动恢复动作。
-
-        :param RegisterServerAutoRecoveryRequest request
-        :return: RegisterServerAutoRecoveryResponse
-        """
-
         all_params = ['server_id', 'register_server_auto_recovery_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3049,26 +2894,23 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def reinstall_server_with_cloud_init(self, request):
         """重装弹性云服务器操作系统(安装Cloud-init)
 
-        重装弹性云服务器的操作系统。支持弹性云服务器数据盘不变的情况下，使用原镜像重装系统盘。  调用该接口后，系统将卸载系统盘，然后使用原镜像重新创建系统盘，并挂载至弹性云服务器，实现重装操作系统功能。
+        重装弹性云服务器的操作系统。支持弹性云服务器数据盘不变的情况下，使用原镜像重装系统盘。
+        
+        调用该接口后，系统将卸载系统盘，然后使用原镜像重新创建系统盘，并挂载至弹性云服务器，实现重装操作系统功能。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ReinstallServerWithCloudInitRequest request
-        :return: ReinstallServerWithCloudInitResponse
+        :param request: Request instance for ReinstallServerWithCloudInit
+        :type request: :class:`huaweicloudsdkecs.v2.ReinstallServerWithCloudInitRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.ReinstallServerWithCloudInitResponse`
         """
         return self.reinstall_server_with_cloud_init_with_http_info(request)
 
     def reinstall_server_with_cloud_init_with_http_info(self, request):
-        """重装弹性云服务器操作系统(安装Cloud-init)
-
-        重装弹性云服务器的操作系统。支持弹性云服务器数据盘不变的情况下，使用原镜像重装系统盘。  调用该接口后，系统将卸载系统盘，然后使用原镜像重新创建系统盘，并挂载至弹性云服务器，实现重装操作系统功能。
-
-        :param ReinstallServerWithCloudInitRequest request
-        :return: ReinstallServerWithCloudInitResponse
-        """
-
         all_params = ['server_id', 'reinstall_server_with_cloud_init_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3114,26 +2956,23 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def reinstall_server_without_cloud_init(self, request):
         """重装弹性云服务器操作系统(未安装Cloud init)
 
-        重装弹性云服务器的操作系统。  该接口支持未安装Cloud-init或Cloudbase-init的镜像。
+        重装弹性云服务器的操作系统。
+        
+        该接口支持未安装Cloud-init或Cloudbase-init的镜像。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ReinstallServerWithoutCloudInitRequest request
-        :return: ReinstallServerWithoutCloudInitResponse
+        :param request: Request instance for ReinstallServerWithoutCloudInit
+        :type request: :class:`huaweicloudsdkecs.v2.ReinstallServerWithoutCloudInitRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.ReinstallServerWithoutCloudInitResponse`
         """
         return self.reinstall_server_without_cloud_init_with_http_info(request)
 
     def reinstall_server_without_cloud_init_with_http_info(self, request):
-        """重装弹性云服务器操作系统(未安装Cloud init)
-
-        重装弹性云服务器的操作系统。  该接口支持未安装Cloud-init或Cloudbase-init的镜像。
-
-        :param ReinstallServerWithoutCloudInitRequest request
-        :return: ReinstallServerWithoutCloudInitResponse
-        """
-
         all_params = ['server_id', 'reinstall_server_without_cloud_init_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3179,26 +3018,21 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def reset_server_password(self, request):
         """一键重置弹性云服务器密码(企业项目)
 
         重置弹性云服务器管理帐号（root用户或Administrator用户）的密码。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ResetServerPasswordRequest request
-        :return: ResetServerPasswordResponse
+        :param request: Request instance for ResetServerPassword
+        :type request: :class:`huaweicloudsdkecs.v2.ResetServerPasswordRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.ResetServerPasswordResponse`
         """
         return self.reset_server_password_with_http_info(request)
 
     def reset_server_password_with_http_info(self, request):
-        """一键重置弹性云服务器密码(企业项目)
-
-        重置弹性云服务器管理帐号（root用户或Administrator用户）的密码。
-
-        :param ResetServerPasswordRequest request
-        :return: ResetServerPasswordResponse
-        """
-
         all_params = ['server_id', 'reset_server_password_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3244,26 +3078,25 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def resize_post_paid_server(self, request):
         """变更云服务器规格(按需)
 
-        当您创建的弹性云服务器规格无法满足业务需要时，可以变更云服务器规格，升级vCPU、内存。具体接口的使用，请参见本节内容。  变更规格时，部分规格的云服务器之间不能互相变更。  您可以通过接口“/v1/{project_id}/cloudservers/resize_flavors?{instance_uuid,source_flavor_id,source_flavor_name}”查询支持列表。
+        当您创建的弹性云服务器规格无法满足业务需要时，可以变更云服务器规格，升级vCPU、内存。具体接口的使用，请参见本节内容。
+        
+        变更规格时，部分规格的云服务器之间不能互相变更。
+        
+        您可以通过接口“/v1/{project_id}/cloudservers/resize_flavors?{instance_uuid,source_flavor_id,source_flavor_name}”查询支持列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ResizePostPaidServerRequest request
-        :return: ResizePostPaidServerResponse
+        :param request: Request instance for ResizePostPaidServer
+        :type request: :class:`huaweicloudsdkecs.v2.ResizePostPaidServerRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.ResizePostPaidServerResponse`
         """
         return self.resize_post_paid_server_with_http_info(request)
 
     def resize_post_paid_server_with_http_info(self, request):
-        """变更云服务器规格(按需)
-
-        当您创建的弹性云服务器规格无法满足业务需要时，可以变更云服务器规格，升级vCPU、内存。具体接口的使用，请参见本节内容。  变更规格时，部分规格的云服务器之间不能互相变更。  您可以通过接口“/v1/{project_id}/cloudservers/resize_flavors?{instance_uuid,source_flavor_id,source_flavor_name}”查询支持列表。
-
-        :param ResizePostPaidServerRequest request
-        :return: ResizePostPaidServerResponse
-        """
-
         all_params = ['server_id', 'resize_post_paid_server_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3309,26 +3142,29 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def resize_server(self, request):
         """变更云服务器规格
 
-        变更云服务器规格。  v1.1版本：指该接口兼容v1接口的功能，同时合入新功能，支持变更包年/包月弹性云服务器的规格。  注意事项：  - 该接口可以使用合作伙伴自身的AK/SK或者token调用，也可以用合作伙伴子客户的AK/SK或者token来调用。 - 如果使用AK/SK认证方式，示例代码中region请参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)中“弹性云服务 ECS”下“区域”的内容，，serviceName（英文服务名称缩写）请指定为ECS。 - Endpoint请参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)中“弹性云服务 ECS”下“终端节点（Endpoint）”的内容。
+        变更云服务器规格。
+        
+        v1.1版本：指该接口兼容v1接口的功能，同时合入新功能，支持变更包年/包月弹性云服务器的规格。
+        
+        注意事项：
+        
+        - 该接口可以使用合作伙伴自身的AK/SK或者token调用，也可以用合作伙伴子客户的AK/SK或者token来调用。
+        - 如果使用AK/SK认证方式，示例代码中region请参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)中“弹性云服务 ECS”下“区域”的内容，，serviceName（英文服务名称缩写）请指定为ECS。
+        - Endpoint请参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)中“弹性云服务 ECS”下“终端节点（Endpoint）”的内容。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ResizeServerRequest request
-        :return: ResizeServerResponse
+        :param request: Request instance for ResizeServer
+        :type request: :class:`huaweicloudsdkecs.v2.ResizeServerRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.ResizeServerResponse`
         """
         return self.resize_server_with_http_info(request)
 
     def resize_server_with_http_info(self, request):
-        """变更云服务器规格
-
-        变更云服务器规格。  v1.1版本：指该接口兼容v1接口的功能，同时合入新功能，支持变更包年/包月弹性云服务器的规格。  注意事项：  - 该接口可以使用合作伙伴自身的AK/SK或者token调用，也可以用合作伙伴子客户的AK/SK或者token来调用。 - 如果使用AK/SK认证方式，示例代码中region请参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)中“弹性云服务 ECS”下“区域”的内容，，serviceName（英文服务名称缩写）请指定为ECS。 - Endpoint请参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)中“弹性云服务 ECS”下“终端节点（Endpoint）”的内容。
-
-        :param ResizeServerRequest request
-        :return: ResizeServerResponse
-        """
-
         all_params = ['server_id', 'resize_server_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3374,26 +3210,21 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_reset_password_flag(self, request):
         """查询是否支持一键重置密码
 
         查询弹性云服务器是否支持一键重置密码。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowResetPasswordFlagRequest request
-        :return: ShowResetPasswordFlagResponse
+        :param request: Request instance for ShowResetPasswordFlag
+        :type request: :class:`huaweicloudsdkecs.v2.ShowResetPasswordFlagRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.ShowResetPasswordFlagResponse`
         """
         return self.show_reset_password_flag_with_http_info(request)
 
     def show_reset_password_flag_with_http_info(self, request):
-        """查询是否支持一键重置密码
-
-        查询弹性云服务器是否支持一键重置密码。
-
-        :param ShowResetPasswordFlagRequest request
-        :return: ShowResetPasswordFlagResponse
-        """
-
         all_params = ['server_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3437,26 +3268,23 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_server(self, request):
         """查询云服务器详情
 
-        查询弹性云服务器的详细信息。  该接口支持查询弹性云服务器的计费方式，以及是否被冻结。
+        查询弹性云服务器的详细信息。
+        
+        该接口支持查询弹性云服务器的计费方式，以及是否被冻结。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowServerRequest request
-        :return: ShowServerResponse
+        :param request: Request instance for ShowServer
+        :type request: :class:`huaweicloudsdkecs.v2.ShowServerRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.ShowServerResponse`
         """
         return self.show_server_with_http_info(request)
 
     def show_server_with_http_info(self, request):
-        """查询云服务器详情
-
-        查询弹性云服务器的详细信息。  该接口支持查询弹性云服务器的计费方式，以及是否被冻结。
-
-        :param ShowServerRequest request
-        :return: ShowServerResponse
-        """
-
         all_params = ['server_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3500,26 +3328,21 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_server_auto_recovery(self, request):
         """查询云服务器是否配置了自动恢复动作
 
         查询云服务器是否配置了自动恢复动作。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowServerAutoRecoveryRequest request
-        :return: ShowServerAutoRecoveryResponse
+        :param request: Request instance for ShowServerAutoRecovery
+        :type request: :class:`huaweicloudsdkecs.v2.ShowServerAutoRecoveryRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.ShowServerAutoRecoveryResponse`
         """
         return self.show_server_auto_recovery_with_http_info(request)
 
     def show_server_auto_recovery_with_http_info(self, request):
-        """查询云服务器是否配置了自动恢复动作
-
-        查询云服务器是否配置了自动恢复动作。
-
-        :param ShowServerAutoRecoveryRequest request
-        :return: ShowServerAutoRecoveryResponse
-        """
-
         all_params = ['server_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3563,26 +3386,21 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_server_block_device(self, request):
         """查询弹性云服务器单个磁盘信息
 
         查询弹性云服务器挂载的单个磁盘信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowServerBlockDeviceRequest request
-        :return: ShowServerBlockDeviceResponse
+        :param request: Request instance for ShowServerBlockDevice
+        :type request: :class:`huaweicloudsdkecs.v2.ShowServerBlockDeviceRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.ShowServerBlockDeviceResponse`
         """
         return self.show_server_block_device_with_http_info(request)
 
     def show_server_block_device_with_http_info(self, request):
-        """查询弹性云服务器单个磁盘信息
-
-        查询弹性云服务器挂载的单个磁盘信息。
-
-        :param ShowServerBlockDeviceRequest request
-        :return: ShowServerBlockDeviceResponse
-        """
-
         all_params = ['server_id', 'volume_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3628,26 +3446,23 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_server_group(self, request):
         """查询云服务器组详情
 
-        查询弹性云服务器组详情。  与原生的创建云服务器组接口不同之处在于该接口支持企业项目细粒度权限的校验。
+        查询弹性云服务器组详情。
+        
+        与原生的创建云服务器组接口不同之处在于该接口支持企业项目细粒度权限的校验。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowServerGroupRequest request
-        :return: ShowServerGroupResponse
+        :param request: Request instance for ShowServerGroup
+        :type request: :class:`huaweicloudsdkecs.v2.ShowServerGroupRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.ShowServerGroupResponse`
         """
         return self.show_server_group_with_http_info(request)
 
     def show_server_group_with_http_info(self, request):
-        """查询云服务器组详情
-
-        查询弹性云服务器组详情。  与原生的创建云服务器组接口不同之处在于该接口支持企业项目细粒度权限的校验。
-
-        :param ShowServerGroupRequest request
-        :return: ShowServerGroupResponse
-        """
-
         all_params = ['server_group_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3691,26 +3506,21 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_server_limits(self, request):
         """查询租户配额
 
         查询租户配额信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowServerLimitsRequest request
-        :return: ShowServerLimitsResponse
+        :param request: Request instance for ShowServerLimits
+        :type request: :class:`huaweicloudsdkecs.v2.ShowServerLimitsRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.ShowServerLimitsResponse`
         """
         return self.show_server_limits_with_http_info(request)
 
     def show_server_limits_with_http_info(self, request):
-        """查询租户配额
-
-        查询租户配额信息。
-
-        :param ShowServerLimitsRequest request
-        :return: ShowServerLimitsResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3752,26 +3562,21 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_server_password(self, request):
         """云服务器获取密码(企业项目)
 
         当通过支持Cloudbase-init功能的镜像创建Windows云服务器时，获取云服务器初始安装时系统生成的管理员帐户（Administrator帐户或Cloudbase-init设置的帐户）随机密码。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowServerPasswordRequest request
-        :return: ShowServerPasswordResponse
+        :param request: Request instance for ShowServerPassword
+        :type request: :class:`huaweicloudsdkecs.v2.ShowServerPasswordRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.ShowServerPasswordResponse`
         """
         return self.show_server_password_with_http_info(request)
 
     def show_server_password_with_http_info(self, request):
-        """云服务器获取密码(企业项目)
-
-        当通过支持Cloudbase-init功能的镜像创建Windows云服务器时，获取云服务器初始安装时系统生成的管理员帐户（Administrator帐户或Cloudbase-init设置的帐户）随机密码。
-
-        :param ShowServerPasswordRequest request
-        :return: ShowServerPasswordResponse
-        """
-
         all_params = ['server_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3815,26 +3620,21 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_server_remote_console(self, request):
         """获取VNC远程登录地址
 
         获取弹性云服务器VNC远程登录地址。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowServerRemoteConsoleRequest request
-        :return: ShowServerRemoteConsoleResponse
+        :param request: Request instance for ShowServerRemoteConsole
+        :type request: :class:`huaweicloudsdkecs.v2.ShowServerRemoteConsoleRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.ShowServerRemoteConsoleResponse`
         """
         return self.show_server_remote_console_with_http_info(request)
 
     def show_server_remote_console_with_http_info(self, request):
-        """获取VNC远程登录地址
-
-        获取弹性云服务器VNC远程登录地址。
-
-        :param ShowServerRemoteConsoleRequest request
-        :return: ShowServerRemoteConsoleResponse
-        """
-
         all_params = ['server_id', 'show_server_remote_console_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3880,26 +3680,23 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_server_tags(self, request):
         """查询云服务器标签
 
-        - 查询指定云服务器的标签信息。  - 标签管理服务TMS使用该接口查询指定云服务器的全部标签数据。
+        - 查询指定云服务器的标签信息。
+        
+        - 标签管理服务TMS使用该接口查询指定云服务器的全部标签数据。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowServerTagsRequest request
-        :return: ShowServerTagsResponse
+        :param request: Request instance for ShowServerTags
+        :type request: :class:`huaweicloudsdkecs.v2.ShowServerTagsRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.ShowServerTagsResponse`
         """
         return self.show_server_tags_with_http_info(request)
 
     def show_server_tags_with_http_info(self, request):
-        """查询云服务器标签
-
-        - 查询指定云服务器的标签信息。  - 标签管理服务TMS使用该接口查询指定云服务器的全部标签数据。
-
-        :param ShowServerTagsRequest request
-        :return: ShowServerTagsResponse
-        """
-
         all_params = ['server_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3943,26 +3740,21 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_server(self, request):
         """修改云服务器
 
         修改云服务器信息，目前支持修改云服务器名称及描述和hostname。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateServerRequest request
-        :return: UpdateServerResponse
+        :param request: Request instance for UpdateServer
+        :type request: :class:`huaweicloudsdkecs.v2.UpdateServerRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.UpdateServerResponse`
         """
         return self.update_server_with_http_info(request)
 
     def update_server_with_http_info(self, request):
-        """修改云服务器
-
-        修改云服务器信息，目前支持修改云服务器名称及描述和hostname。
-
-        :param UpdateServerRequest request
-        :return: UpdateServerResponse
-        """
-
         all_params = ['server_id', 'update_server_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4008,26 +3800,23 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_server_auto_terminate_time(self, request):
         """修改云服务器销毁时间
 
-        修改按需服务器，设置定时销毁时间。如果设置的销毁时间为空，表示取消销毁时间。  该接口支持企业项目细粒度权限的校验，具体细粒度请参见 ecs:cloudServers:put。
+        修改按需服务器，设置定时销毁时间。如果设置的销毁时间为空，表示取消销毁时间。
+        
+        该接口支持企业项目细粒度权限的校验，具体细粒度请参见 ecs:cloudServers:put。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateServerAutoTerminateTimeRequest request
-        :return: UpdateServerAutoTerminateTimeResponse
+        :param request: Request instance for UpdateServerAutoTerminateTime
+        :type request: :class:`huaweicloudsdkecs.v2.UpdateServerAutoTerminateTimeRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.UpdateServerAutoTerminateTimeResponse`
         """
         return self.update_server_auto_terminate_time_with_http_info(request)
 
     def update_server_auto_terminate_time_with_http_info(self, request):
-        """修改云服务器销毁时间
-
-        修改按需服务器，设置定时销毁时间。如果设置的销毁时间为空，表示取消销毁时间。  该接口支持企业项目细粒度权限的校验，具体细粒度请参见 ecs:cloudServers:put。
-
-        :param UpdateServerAutoTerminateTimeRequest request
-        :return: UpdateServerAutoTerminateTimeResponse
-        """
-
         all_params = ['server_id', 'update_server_auto_terminate_time_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4073,26 +3862,27 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_server_metadata(self, request):
         """更新云服务器元数据
 
-        更新云服务器元数据。  - 如果元数据中没有待更新字段，则自动添加该字段。  - 如果元数据中已存在待更新字段，则直接更新字段值。  - 如果元数据中的字段不再请求参数中，则保持不变
+        更新云服务器元数据。
+        
+        - 如果元数据中没有待更新字段，则自动添加该字段。
+        
+        - 如果元数据中已存在待更新字段，则直接更新字段值。
+        
+        - 如果元数据中的字段不再请求参数中，则保持不变
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateServerMetadataRequest request
-        :return: UpdateServerMetadataResponse
+        :param request: Request instance for UpdateServerMetadata
+        :type request: :class:`huaweicloudsdkecs.v2.UpdateServerMetadataRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.UpdateServerMetadataResponse`
         """
         return self.update_server_metadata_with_http_info(request)
 
     def update_server_metadata_with_http_info(self, request):
-        """更新云服务器元数据
-
-        更新云服务器元数据。  - 如果元数据中没有待更新字段，则自动添加该字段。  - 如果元数据中已存在待更新字段，则直接更新字段值。  - 如果元数据中的字段不再请求参数中，则保持不变
-
-        :param UpdateServerMetadataRequest request
-        :return: UpdateServerMetadataResponse
-        """
-
         all_params = ['server_id', 'update_server_metadata_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4138,26 +3928,23 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_job(self, request):
         """查询任务的执行状态
 
-        查询Job的执行状态。  对于创建云服务器、删除云服务器、云服务器批量操作和网卡操作等异步API，命令下发后，会返回job_id，通过job_id可以查询任务的执行状态。
+        查询Job的执行状态。
+        
+        对于创建云服务器、删除云服务器、云服务器批量操作和网卡操作等异步API，命令下发后，会返回job_id，通过job_id可以查询任务的执行状态。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowJobRequest request
-        :return: ShowJobResponse
+        :param request: Request instance for ShowJob
+        :type request: :class:`huaweicloudsdkecs.v2.ShowJobRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.ShowJobResponse`
         """
         return self.show_job_with_http_info(request)
 
     def show_job_with_http_info(self, request):
-        """查询任务的执行状态
-
-        查询Job的执行状态。  对于创建云服务器、删除云服务器、云服务器批量操作和网卡操作等异步API，命令下发后，会返回job_id，通过job_id可以查询任务的执行状态。
-
-        :param ShowJobRequest request
-        :return: ShowJobResponse
-        """
-
         all_params = ['job_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4200,7 +3987,6 @@ class EcsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

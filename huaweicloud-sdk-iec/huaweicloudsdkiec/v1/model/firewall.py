@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Firewall:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class Firewall:
     }
 
     def __init__(self, id=None, name=None, admin_state_up=None, status=None, description=None, domain_id=None, egress_firewall_policy=None, egress_firewall_rule_count=None, ingress_firewall_policy=None, ingress_firewall_rule_count=None):
-        """Firewall - a model defined in huaweicloud sdk"""
+        """Firewall
+
+        The model defined in huaweicloud sdk
+
+        :param id: 网络ACL ID
+        :type id: str
+        :param name: 网络ACL名称。
+        :type name: str
+        :param admin_state_up: 网络ACL使能开关。  取值范围：true（开启），false（关闭）。默认为true
+        :type admin_state_up: bool
+        :param status: 网络ACL状态。  取值范围：INACTIVE
+        :type status: str
+        :param description: 网络ACL描述。
+        :type description: str
+        :param domain_id: 租户domainID
+        :type domain_id: str
+        :param egress_firewall_policy: 
+        :type egress_firewall_policy: :class:`huaweicloudsdkiec.v1.FirewallPolicy`
+        :param egress_firewall_rule_count: 出方向网络ACL规则个数。
+        :type egress_firewall_rule_count: int
+        :param ingress_firewall_policy: 
+        :type ingress_firewall_policy: :class:`huaweicloudsdkiec.v1.FirewallPolicy`
+        :param ingress_firewall_rule_count: 入方向网络ACL规则个数。
+        :type ingress_firewall_rule_count: int
+        """
         
         
 
@@ -103,7 +126,7 @@ class Firewall:
         网络ACL ID
 
         :param id: The id of this Firewall.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -125,7 +148,7 @@ class Firewall:
         网络ACL名称。
 
         :param name: The name of this Firewall.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -147,7 +170,7 @@ class Firewall:
         网络ACL使能开关。  取值范围：true（开启），false（关闭）。默认为true
 
         :param admin_state_up: The admin_state_up of this Firewall.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 
@@ -169,7 +192,7 @@ class Firewall:
         网络ACL状态。  取值范围：INACTIVE
 
         :param status: The status of this Firewall.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -191,7 +214,7 @@ class Firewall:
         网络ACL描述。
 
         :param description: The description of this Firewall.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -213,7 +236,7 @@ class Firewall:
         租户domainID
 
         :param domain_id: The domain_id of this Firewall.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -223,7 +246,7 @@ class Firewall:
 
 
         :return: The egress_firewall_policy of this Firewall.
-        :rtype: FirewallPolicy
+        :rtype: :class:`huaweicloudsdkiec.v1.FirewallPolicy`
         """
         return self._egress_firewall_policy
 
@@ -233,7 +256,7 @@ class Firewall:
 
 
         :param egress_firewall_policy: The egress_firewall_policy of this Firewall.
-        :type: FirewallPolicy
+        :type egress_firewall_policy: :class:`huaweicloudsdkiec.v1.FirewallPolicy`
         """
         self._egress_firewall_policy = egress_firewall_policy
 
@@ -255,7 +278,7 @@ class Firewall:
         出方向网络ACL规则个数。
 
         :param egress_firewall_rule_count: The egress_firewall_rule_count of this Firewall.
-        :type: int
+        :type egress_firewall_rule_count: int
         """
         self._egress_firewall_rule_count = egress_firewall_rule_count
 
@@ -265,7 +288,7 @@ class Firewall:
 
 
         :return: The ingress_firewall_policy of this Firewall.
-        :rtype: FirewallPolicy
+        :rtype: :class:`huaweicloudsdkiec.v1.FirewallPolicy`
         """
         return self._ingress_firewall_policy
 
@@ -275,7 +298,7 @@ class Firewall:
 
 
         :param ingress_firewall_policy: The ingress_firewall_policy of this Firewall.
-        :type: FirewallPolicy
+        :type ingress_firewall_policy: :class:`huaweicloudsdkiec.v1.FirewallPolicy`
         """
         self._ingress_firewall_policy = ingress_firewall_policy
 
@@ -297,7 +320,7 @@ class Firewall:
         入方向网络ACL规则个数。
 
         :param ingress_firewall_rule_count: The ingress_firewall_rule_count of this Firewall.
-        :type: int
+        :type ingress_firewall_rule_count: int
         """
         self._ingress_firewall_rule_count = ingress_firewall_rule_count
 

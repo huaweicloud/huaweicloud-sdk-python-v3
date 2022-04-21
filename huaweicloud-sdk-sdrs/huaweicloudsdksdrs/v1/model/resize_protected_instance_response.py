@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResizeProtectedInstanceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ResizeProtectedInstanceResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """ResizeProtectedInstanceResponse - a model defined in huaweicloud sdk"""
+        """ResizeProtectedInstanceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 成功返回jobId信息
+        :type job_id: str
+        """
         
         super(ResizeProtectedInstanceResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class ResizeProtectedInstanceResponse(SdkResponse):
         成功返回jobId信息
 
         :param job_id: The job_id of this ResizeProtectedInstanceResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 

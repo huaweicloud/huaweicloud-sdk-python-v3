@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPublicipPoolResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListPublicipPoolResponse(SdkResponse):
     }
 
     def __init__(self, publicip_pools=None, request_id=None, page_info=None):
-        """ListPublicipPoolResponse - a model defined in huaweicloud sdk"""
+        """ListPublicipPoolResponse
+
+        The model defined in huaweicloud sdk
+
+        :param publicip_pools: 功能说明：公网池对象
+        :type publicip_pools: list[:class:`huaweicloudsdkeip.v3.PublicipPoolShowResp`]
+        :param request_id: 本次请求的编号
+        :type request_id: str
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkeip.v3.PageInfoOption`
+        """
         
         super(ListPublicipPoolResponse, self).__init__()
 
@@ -57,7 +66,7 @@ class ListPublicipPoolResponse(SdkResponse):
         功能说明：公网池对象
 
         :return: The publicip_pools of this ListPublicipPoolResponse.
-        :rtype: list[PublicipPoolShowResp]
+        :rtype: list[:class:`huaweicloudsdkeip.v3.PublicipPoolShowResp`]
         """
         return self._publicip_pools
 
@@ -68,7 +77,7 @@ class ListPublicipPoolResponse(SdkResponse):
         功能说明：公网池对象
 
         :param publicip_pools: The publicip_pools of this ListPublicipPoolResponse.
-        :type: list[PublicipPoolShowResp]
+        :type publicip_pools: list[:class:`huaweicloudsdkeip.v3.PublicipPoolShowResp`]
         """
         self._publicip_pools = publicip_pools
 
@@ -90,7 +99,7 @@ class ListPublicipPoolResponse(SdkResponse):
         本次请求的编号
 
         :param request_id: The request_id of this ListPublicipPoolResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 
@@ -100,7 +109,7 @@ class ListPublicipPoolResponse(SdkResponse):
 
 
         :return: The page_info of this ListPublicipPoolResponse.
-        :rtype: PageInfoOption
+        :rtype: :class:`huaweicloudsdkeip.v3.PageInfoOption`
         """
         return self._page_info
 
@@ -110,7 +119,7 @@ class ListPublicipPoolResponse(SdkResponse):
 
 
         :param page_info: The page_info of this ListPublicipPoolResponse.
-        :type: PageInfoOption
+        :type page_info: :class:`huaweicloudsdkeip.v3.PageInfoOption`
         """
         self._page_info = page_info
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListMeetingFileResponseDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class ListMeetingFileResponseDTO:
     }
 
     def __init__(self, file_code=None, topic=None, file_id=None, file_name=None, file_size=None, thumbnail_file_id=None, thumbnail_file_name=None, thumbnail_file_size=None, pdf_file_id=None, pdf_file_name=None, pdf_file_size=None, user_id=None, creation_timestamp=None):
-        """ListMeetingFileResponseDTO - a model defined in huaweicloud sdk"""
+        """ListMeetingFileResponseDTO
+
+        The model defined in huaweicloud sdk
+
+        :param file_code: 会议纪要文件码
+        :type file_code: str
+        :param topic: 文件主题
+        :type topic: str
+        :param file_id: 文件Id
+        :type file_id: str
+        :param file_name: 文件名
+        :type file_name: str
+        :param file_size: 文件大小，单位字节
+        :type file_size: int
+        :param thumbnail_file_id: 缩略图文件Id
+        :type thumbnail_file_id: str
+        :param thumbnail_file_name: 缩略图文件名
+        :type thumbnail_file_name: str
+        :param thumbnail_file_size: 缩略图文件大小，单位字节
+        :type thumbnail_file_size: int
+        :param pdf_file_id: pdf文件Id
+        :type pdf_file_id: str
+        :param pdf_file_name: pdf文件名
+        :type pdf_file_name: str
+        :param pdf_file_size: pdf文件大小，单位字节
+        :type pdf_file_size: int
+        :param user_id: 用户ID
+        :type user_id: str
+        :param creation_timestamp: 文件创建时间戳
+        :type creation_timestamp: int
+        """
         
         
 
@@ -118,7 +147,7 @@ class ListMeetingFileResponseDTO:
         会议纪要文件码
 
         :param file_code: The file_code of this ListMeetingFileResponseDTO.
-        :type: str
+        :type file_code: str
         """
         self._file_code = file_code
 
@@ -140,7 +169,7 @@ class ListMeetingFileResponseDTO:
         文件主题
 
         :param topic: The topic of this ListMeetingFileResponseDTO.
-        :type: str
+        :type topic: str
         """
         self._topic = topic
 
@@ -162,7 +191,7 @@ class ListMeetingFileResponseDTO:
         文件Id
 
         :param file_id: The file_id of this ListMeetingFileResponseDTO.
-        :type: str
+        :type file_id: str
         """
         self._file_id = file_id
 
@@ -184,7 +213,7 @@ class ListMeetingFileResponseDTO:
         文件名
 
         :param file_name: The file_name of this ListMeetingFileResponseDTO.
-        :type: str
+        :type file_name: str
         """
         self._file_name = file_name
 
@@ -206,7 +235,7 @@ class ListMeetingFileResponseDTO:
         文件大小，单位字节
 
         :param file_size: The file_size of this ListMeetingFileResponseDTO.
-        :type: int
+        :type file_size: int
         """
         self._file_size = file_size
 
@@ -228,7 +257,7 @@ class ListMeetingFileResponseDTO:
         缩略图文件Id
 
         :param thumbnail_file_id: The thumbnail_file_id of this ListMeetingFileResponseDTO.
-        :type: str
+        :type thumbnail_file_id: str
         """
         self._thumbnail_file_id = thumbnail_file_id
 
@@ -250,7 +279,7 @@ class ListMeetingFileResponseDTO:
         缩略图文件名
 
         :param thumbnail_file_name: The thumbnail_file_name of this ListMeetingFileResponseDTO.
-        :type: str
+        :type thumbnail_file_name: str
         """
         self._thumbnail_file_name = thumbnail_file_name
 
@@ -272,7 +301,7 @@ class ListMeetingFileResponseDTO:
         缩略图文件大小，单位字节
 
         :param thumbnail_file_size: The thumbnail_file_size of this ListMeetingFileResponseDTO.
-        :type: int
+        :type thumbnail_file_size: int
         """
         self._thumbnail_file_size = thumbnail_file_size
 
@@ -294,7 +323,7 @@ class ListMeetingFileResponseDTO:
         pdf文件Id
 
         :param pdf_file_id: The pdf_file_id of this ListMeetingFileResponseDTO.
-        :type: str
+        :type pdf_file_id: str
         """
         self._pdf_file_id = pdf_file_id
 
@@ -316,7 +345,7 @@ class ListMeetingFileResponseDTO:
         pdf文件名
 
         :param pdf_file_name: The pdf_file_name of this ListMeetingFileResponseDTO.
-        :type: str
+        :type pdf_file_name: str
         """
         self._pdf_file_name = pdf_file_name
 
@@ -338,7 +367,7 @@ class ListMeetingFileResponseDTO:
         pdf文件大小，单位字节
 
         :param pdf_file_size: The pdf_file_size of this ListMeetingFileResponseDTO.
-        :type: int
+        :type pdf_file_size: int
         """
         self._pdf_file_size = pdf_file_size
 
@@ -360,7 +389,7 @@ class ListMeetingFileResponseDTO:
         用户ID
 
         :param user_id: The user_id of this ListMeetingFileResponseDTO.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -382,7 +411,7 @@ class ListMeetingFileResponseDTO:
         文件创建时间戳
 
         :param creation_timestamp: The creation_timestamp of this ListMeetingFileResponseDTO.
-        :type: int
+        :type creation_timestamp: int
         """
         self._creation_timestamp = creation_timestamp
 

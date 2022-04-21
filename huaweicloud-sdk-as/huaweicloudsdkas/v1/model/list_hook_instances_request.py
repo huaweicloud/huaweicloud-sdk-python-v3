@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListHookInstancesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListHookInstancesRequest:
     }
 
     def __init__(self, scaling_group_id=None, instance_id=None):
-        """ListHookInstancesRequest - a model defined in huaweicloud sdk"""
+        """ListHookInstancesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param scaling_group_id: 伸缩组ID。
+        :type scaling_group_id: str
+        :param instance_id: 伸缩实例ID。
+        :type instance_id: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ListHookInstancesRequest:
         伸缩组ID。
 
         :param scaling_group_id: The scaling_group_id of this ListHookInstancesRequest.
-        :type: str
+        :type scaling_group_id: str
         """
         self._scaling_group_id = scaling_group_id
 
@@ -84,7 +91,7 @@ class ListHookInstancesRequest:
         伸缩实例ID。
 
         :param instance_id: The instance_id of this ListHookInstancesRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 

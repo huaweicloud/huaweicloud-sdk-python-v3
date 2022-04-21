@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListJobInfoDetailRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListJobInfoDetailRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, start_time=None, end_time=None):
-        """ListJobInfoDetailRequest - a model defined in huaweicloud sdk"""
+        """ListJobInfoDetailRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言
+        :type x_language: str
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param start_time: 开始时间，格式为UTC时间戳。
+        :type start_time: str
+        :param end_time: 结束时间，格式为UTC时间戳。
+        :type end_time: str
+        """
         
         
 
@@ -71,7 +82,7 @@ class ListJobInfoDetailRequest:
         语言
 
         :param x_language: The x_language of this ListJobInfoDetailRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -93,7 +104,7 @@ class ListJobInfoDetailRequest:
         实例ID。
 
         :param instance_id: The instance_id of this ListJobInfoDetailRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -115,7 +126,7 @@ class ListJobInfoDetailRequest:
         开始时间，格式为UTC时间戳。
 
         :param start_time: The start_time of this ListJobInfoDetailRequest.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -137,7 +148,7 @@ class ListJobInfoDetailRequest:
         结束时间，格式为UTC时间戳。
 
         :param end_time: The end_time of this ListJobInfoDetailRequest.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 

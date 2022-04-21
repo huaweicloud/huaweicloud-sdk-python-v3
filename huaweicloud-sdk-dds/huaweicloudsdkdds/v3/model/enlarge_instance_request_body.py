@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EnlargeInstanceRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class EnlargeInstanceRequestBody:
     }
 
     def __init__(self, type=None, spec_code=None, num=None, volume=None):
-        """EnlargeInstanceRequestBody - a model defined in huaweicloud sdk"""
+        """EnlargeInstanceRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param type: 待扩容的对象类型。 - 扩容mongos节点时，取值为“mongos”。 - 扩容shard组时，取值为“shard”。
+        :type type: str
+        :param spec_code: 资源规格编码。
+        :type spec_code: str
+        :param num: 一个集群实例下，最多支持16个mongos节点和16个shard组。
+        :type num: str
+        :param volume: 
+        :type volume: :class:`huaweicloudsdkdds.v3.AddShardingNodeVolumeOption`
+        """
         
         
 
@@ -70,7 +81,7 @@ class EnlargeInstanceRequestBody:
         待扩容的对象类型。 - 扩容mongos节点时，取值为“mongos”。 - 扩容shard组时，取值为“shard”。
 
         :param type: The type of this EnlargeInstanceRequestBody.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -92,7 +103,7 @@ class EnlargeInstanceRequestBody:
         资源规格编码。
 
         :param spec_code: The spec_code of this EnlargeInstanceRequestBody.
-        :type: str
+        :type spec_code: str
         """
         self._spec_code = spec_code
 
@@ -114,7 +125,7 @@ class EnlargeInstanceRequestBody:
         一个集群实例下，最多支持16个mongos节点和16个shard组。
 
         :param num: The num of this EnlargeInstanceRequestBody.
-        :type: str
+        :type num: str
         """
         self._num = num
 
@@ -124,7 +135,7 @@ class EnlargeInstanceRequestBody:
 
 
         :return: The volume of this EnlargeInstanceRequestBody.
-        :rtype: AddShardingNodeVolumeOption
+        :rtype: :class:`huaweicloudsdkdds.v3.AddShardingNodeVolumeOption`
         """
         return self._volume
 
@@ -134,7 +145,7 @@ class EnlargeInstanceRequestBody:
 
 
         :param volume: The volume of this EnlargeInstanceRequestBody.
-        :type: AddShardingNodeVolumeOption
+        :type volume: :class:`huaweicloudsdkdds.v3.AddShardingNodeVolumeOption`
         """
         self._volume = volume
 

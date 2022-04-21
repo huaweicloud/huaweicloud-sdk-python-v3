@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TagReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class TagReq:
     }
 
     def __init__(self, key=None, values=None):
-        """TagReq - a model defined in huaweicloud sdk"""
+        """TagReq
+
+        The model defined in huaweicloud sdk
+
+        :param key: 键。最大长度127个unicode字符。 key不能为空。(搜索时不对此参数做校验)
+        :type key: str
+        :param values: 值列表。每个值最大长度255个unicode字符，如果values为空列表，则表示any_value。value之间为或的关系。
+        :type values: list[str]
+        """
         
         
 
@@ -61,7 +68,7 @@ class TagReq:
         键。最大长度127个unicode字符。 key不能为空。(搜索时不对此参数做校验)
 
         :param key: The key of this TagReq.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -83,7 +90,7 @@ class TagReq:
         值列表。每个值最大长度255个unicode字符，如果values为空列表，则表示any_value。value之间为或的关系。
 
         :param values: The values of this TagReq.
-        :type: list[str]
+        :type values: list[str]
         """
         self._values = values
 

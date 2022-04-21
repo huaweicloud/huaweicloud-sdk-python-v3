@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SearchQosOnlineMeetingsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class SearchQosOnlineMeetingsRequest:
     }
 
     def __init__(self, offset=None, limit=None, search_key=None):
-        """SearchQosOnlineMeetingsRequest - a model defined in huaweicloud sdk"""
+        """SearchQosOnlineMeetingsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param offset: 查询偏移量。 * 取值：大于等于0，默认值为0。 * 小于最小值0时，系统设置为0。 * 大于等于最大条目数量，则返回最后一页的数据。
+        :type offset: int
+        :param limit: 查询的条目数量。 * 取值：1-500，默认值为20。 * 小于最小值1时，系统设置为1。 * 大于最大值500时，系统设置为500。
+        :type limit: int
+        :param search_key: 根据会议主题,预定人和会议id作为关键词，模糊查询会议列表。最大不超过512个字节。
+        :type search_key: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class SearchQosOnlineMeetingsRequest:
         查询偏移量。 * 取值：大于等于0，默认值为0。 * 小于最小值0时，系统设置为0。 * 大于等于最大条目数量，则返回最后一页的数据。
 
         :param offset: The offset of this SearchQosOnlineMeetingsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -90,7 +99,7 @@ class SearchQosOnlineMeetingsRequest:
         查询的条目数量。 * 取值：1-500，默认值为20。 * 小于最小值1时，系统设置为1。 * 大于最大值500时，系统设置为500。
 
         :param limit: The limit of this SearchQosOnlineMeetingsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -112,7 +121,7 @@ class SearchQosOnlineMeetingsRequest:
         根据会议主题,预定人和会议id作为关键词，模糊查询会议列表。最大不超过512个字节。
 
         :param search_key: The search_key of this SearchQosOnlineMeetingsRequest.
-        :type: str
+        :type search_key: str
         """
         self._search_key = search_key
 

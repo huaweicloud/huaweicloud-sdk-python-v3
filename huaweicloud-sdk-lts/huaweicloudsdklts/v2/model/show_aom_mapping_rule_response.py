@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowAomMappingRuleResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowAomMappingRuleResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ShowAomMappingRuleResponse - a model defined in huaweicloud sdk"""
+        """ShowAomMappingRuleResponse
+
+        The model defined in huaweicloud sdk
+
+        :param body: 
+        :type body: list[:class:`huaweicloudsdklts.v2.AomMappingRuleResp`]
+        """
         
         super(ShowAomMappingRuleResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class ShowAomMappingRuleResponse(SdkResponse):
 
 
         :return: The body of this ShowAomMappingRuleResponse.
-        :rtype: list[AomMappingRuleResp]
+        :rtype: list[:class:`huaweicloudsdklts.v2.AomMappingRuleResp`]
         """
         return self._body
 
@@ -56,7 +61,7 @@ class ShowAomMappingRuleResponse(SdkResponse):
 
 
         :param body: The body of this ShowAomMappingRuleResponse.
-        :type: list[AomMappingRuleResp]
+        :type body: list[:class:`huaweicloudsdklts.v2.AomMappingRuleResp`]
         """
         self._body = body
 

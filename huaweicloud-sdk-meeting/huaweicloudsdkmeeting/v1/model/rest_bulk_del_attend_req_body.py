@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestBulkDelAttendReqBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RestBulkDelAttendReqBody:
     }
 
     def __init__(self, bulk_del_attend_info=None):
-        """RestBulkDelAttendReqBody - a model defined in huaweicloud sdk"""
+        """RestBulkDelAttendReqBody
+
+        The model defined in huaweicloud sdk
+
+        :param bulk_del_attend_info: 待删除列表
+        :type bulk_del_attend_info: list[:class:`huaweicloudsdkmeeting.v1.DelAttendInfo`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class RestBulkDelAttendReqBody:
         待删除列表
 
         :return: The bulk_del_attend_info of this RestBulkDelAttendReqBody.
-        :rtype: list[DelAttendInfo]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.DelAttendInfo`]
         """
         return self._bulk_del_attend_info
 
@@ -57,7 +62,7 @@ class RestBulkDelAttendReqBody:
         待删除列表
 
         :param bulk_del_attend_info: The bulk_del_attend_info of this RestBulkDelAttendReqBody.
-        :type: list[DelAttendInfo]
+        :type bulk_del_attend_info: list[:class:`huaweicloudsdkmeeting.v1.DelAttendInfo`]
         """
         self._bulk_del_attend_info = bulk_del_attend_info
 

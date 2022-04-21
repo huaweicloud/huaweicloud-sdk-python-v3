@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateImageSyncRepoRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateImageSyncRepoRequest:
     }
 
     def __init__(self, namespace=None, repository=None, body=None):
-        """CreateImageSyncRepoRequest - a model defined in huaweicloud sdk"""
+        """CreateImageSyncRepoRequest
+
+        The model defined in huaweicloud sdk
+
+        :param namespace: 组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
+        :type namespace: str
+        :param repository: 镜像仓库名称
+        :type repository: str
+        :param body: Body of the CreateImageSyncRepoRequest
+        :type body: :class:`huaweicloudsdkswr.v2.CreateImageSyncRepoRequestBody`
+        """
         
         
 
@@ -66,7 +75,7 @@ class CreateImageSyncRepoRequest:
         组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
 
         :param namespace: The namespace of this CreateImageSyncRepoRequest.
-        :type: str
+        :type namespace: str
         """
         self._namespace = namespace
 
@@ -88,7 +97,7 @@ class CreateImageSyncRepoRequest:
         镜像仓库名称
 
         :param repository: The repository of this CreateImageSyncRepoRequest.
-        :type: str
+        :type repository: str
         """
         self._repository = repository
 
@@ -98,7 +107,7 @@ class CreateImageSyncRepoRequest:
 
 
         :return: The body of this CreateImageSyncRepoRequest.
-        :rtype: CreateImageSyncRepoRequestBody
+        :rtype: :class:`huaweicloudsdkswr.v2.CreateImageSyncRepoRequestBody`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class CreateImageSyncRepoRequest:
 
 
         :param body: The body of this CreateImageSyncRepoRequest.
-        :type: CreateImageSyncRepoRequestBody
+        :type body: :class:`huaweicloudsdkswr.v2.CreateImageSyncRepoRequestBody`
         """
         self._body = body
 

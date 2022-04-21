@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCustomerBillsFeeRecordsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -64,7 +63,47 @@ class ListCustomerBillsFeeRecordsRequest:
     }
 
     def __init__(self, x_language=None, bill_cycle=None, provider_type=None, service_type_code=None, resource_type_code=None, region_code=None, charging_mode=None, bill_type=None, trade_id=None, enterprise_project_id=None, include_zero_record=None, status=None, method=None, sub_customer_id=None, offset=None, limit=None, bill_date_begin=None, bill_date_end=None):
-        """ListCustomerBillsFeeRecordsRequest - a model defined in huaweicloud sdk"""
+        """ListCustomerBillsFeeRecordsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: |zh_CN：中文 en_US：英文。默认为zh_CN：中文。|
+        :type x_language: str
+        :param bill_cycle: 查询的流水账单所在账期，格式为YYYY-MM。
+        :type bill_cycle: str
+        :param provider_type: 服务商。1：华为云2：云市场为空时查询包含华为云和云市场在内的全部服务商。
+        :type provider_type: int
+        :param service_type_code: 云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
+        :type service_type_code: str
+        :param resource_type_code: 资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
+        :type resource_type_code: str
+        :param region_code: 云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
+        :type region_code: str
+        :param charging_mode: 计费模式：1 : 包年/包月3：按需10：预留实例
+        :type charging_mode: int
+        :param bill_type: 账单类型：1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更
+        :type bill_type: int
+        :param trade_id: 订单ID或交易ID。账单类型为1、2、3、4和8时此处为订单ID。账单类型为其它场景时此处为交易ID，为扣费维度的唯一标识。例如非月末扣费时为应收ID；月末扣费时为账单ID。
+        :type trade_id: str
+        :param enterprise_project_id: 企业项目标识（企业项目ID）。default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见如何获取企业项目ID。
+        :type enterprise_project_id: str
+        :param include_zero_record: 返回是否包含应付金额为0的记录。true：包含false：不包含
+        :type include_zero_record: bool
+        :param status: 支付状态。1：已支付2：未结清3：未出账
+        :type status: int
+        :param method: 查询流水账单的方式。oneself：客户自己sub_customer：企业子客户all：客户自己和企业子客户默认为all，如果没有企业子客户，取值为all时查询的是客户自己的流水账单。
+        :type method: str
+        :param sub_customer_id: 企业子账号ID。 说明： 如果method取值不为sub_customer，则该参数无效。如果method取值为sub_customer，则该参数不能为空。
+        :type sub_customer_id: str
+        :param offset: 偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset &#x3D; 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
+        :type offset: int
+        :param limit: 页面大小。默认值为10。
+        :type limit: int
+        :param bill_date_begin: 查询的流水账单的开始日期，格式为YYYY-MM-DD。 说明： 必须和bill_cycle（即流水账单的所在账期）在同一个月。bill_date_begin和bill_date_end两个参数必须同时出现，否则仅按照bill_cycle（即流水账单的所在账期）进行查询。
+        :type bill_date_begin: str
+        :param bill_date_end: 查询的流水账单的结束日期，格式为YYYY-MM-DD。 说明： 必须和bill_cycle（即流水账单的所在账期）在同一个月。bill_date_begin和bill_date_end两个参数必须同时出现，否则仅按照bill_cycle（即流水账单的所在账期）进行查询。
+        :type bill_date_end: str
+        """
         
         
 
@@ -142,7 +181,7 @@ class ListCustomerBillsFeeRecordsRequest:
         |zh_CN：中文 en_US：英文。默认为zh_CN：中文。|
 
         :param x_language: The x_language of this ListCustomerBillsFeeRecordsRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -164,7 +203,7 @@ class ListCustomerBillsFeeRecordsRequest:
         查询的流水账单所在账期，格式为YYYY-MM。
 
         :param bill_cycle: The bill_cycle of this ListCustomerBillsFeeRecordsRequest.
-        :type: str
+        :type bill_cycle: str
         """
         self._bill_cycle = bill_cycle
 
@@ -186,7 +225,7 @@ class ListCustomerBillsFeeRecordsRequest:
         服务商。1：华为云2：云市场为空时查询包含华为云和云市场在内的全部服务商。
 
         :param provider_type: The provider_type of this ListCustomerBillsFeeRecordsRequest.
-        :type: int
+        :type provider_type: int
         """
         self._provider_type = provider_type
 
@@ -208,7 +247,7 @@ class ListCustomerBillsFeeRecordsRequest:
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
         :param service_type_code: The service_type_code of this ListCustomerBillsFeeRecordsRequest.
-        :type: str
+        :type service_type_code: str
         """
         self._service_type_code = service_type_code
 
@@ -230,7 +269,7 @@ class ListCustomerBillsFeeRecordsRequest:
         资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
 
         :param resource_type_code: The resource_type_code of this ListCustomerBillsFeeRecordsRequest.
-        :type: str
+        :type resource_type_code: str
         """
         self._resource_type_code = resource_type_code
 
@@ -252,7 +291,7 @@ class ListCustomerBillsFeeRecordsRequest:
         云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
         :param region_code: The region_code of this ListCustomerBillsFeeRecordsRequest.
-        :type: str
+        :type region_code: str
         """
         self._region_code = region_code
 
@@ -274,7 +313,7 @@ class ListCustomerBillsFeeRecordsRequest:
         计费模式：1 : 包年/包月3：按需10：预留实例
 
         :param charging_mode: The charging_mode of this ListCustomerBillsFeeRecordsRequest.
-        :type: int
+        :type charging_mode: int
         """
         self._charging_mode = charging_mode
 
@@ -296,7 +335,7 @@ class ListCustomerBillsFeeRecordsRequest:
         账单类型：1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更
 
         :param bill_type: The bill_type of this ListCustomerBillsFeeRecordsRequest.
-        :type: int
+        :type bill_type: int
         """
         self._bill_type = bill_type
 
@@ -318,7 +357,7 @@ class ListCustomerBillsFeeRecordsRequest:
         订单ID或交易ID。账单类型为1、2、3、4和8时此处为订单ID。账单类型为其它场景时此处为交易ID，为扣费维度的唯一标识。例如非月末扣费时为应收ID；月末扣费时为账单ID。
 
         :param trade_id: The trade_id of this ListCustomerBillsFeeRecordsRequest.
-        :type: str
+        :type trade_id: str
         """
         self._trade_id = trade_id
 
@@ -340,7 +379,7 @@ class ListCustomerBillsFeeRecordsRequest:
         企业项目标识（企业项目ID）。default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见如何获取企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this ListCustomerBillsFeeRecordsRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -362,7 +401,7 @@ class ListCustomerBillsFeeRecordsRequest:
         返回是否包含应付金额为0的记录。true：包含false：不包含
 
         :param include_zero_record: The include_zero_record of this ListCustomerBillsFeeRecordsRequest.
-        :type: bool
+        :type include_zero_record: bool
         """
         self._include_zero_record = include_zero_record
 
@@ -384,7 +423,7 @@ class ListCustomerBillsFeeRecordsRequest:
         支付状态。1：已支付2：未结清3：未出账
 
         :param status: The status of this ListCustomerBillsFeeRecordsRequest.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -406,7 +445,7 @@ class ListCustomerBillsFeeRecordsRequest:
         查询流水账单的方式。oneself：客户自己sub_customer：企业子客户all：客户自己和企业子客户默认为all，如果没有企业子客户，取值为all时查询的是客户自己的流水账单。
 
         :param method: The method of this ListCustomerBillsFeeRecordsRequest.
-        :type: str
+        :type method: str
         """
         self._method = method
 
@@ -428,7 +467,7 @@ class ListCustomerBillsFeeRecordsRequest:
         企业子账号ID。 说明： 如果method取值不为sub_customer，则该参数无效。如果method取值为sub_customer，则该参数不能为空。
 
         :param sub_customer_id: The sub_customer_id of this ListCustomerBillsFeeRecordsRequest.
-        :type: str
+        :type sub_customer_id: str
         """
         self._sub_customer_id = sub_customer_id
 
@@ -450,7 +489,7 @@ class ListCustomerBillsFeeRecordsRequest:
         偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
         :param offset: The offset of this ListCustomerBillsFeeRecordsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -472,7 +511,7 @@ class ListCustomerBillsFeeRecordsRequest:
         页面大小。默认值为10。
 
         :param limit: The limit of this ListCustomerBillsFeeRecordsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -494,7 +533,7 @@ class ListCustomerBillsFeeRecordsRequest:
         查询的流水账单的开始日期，格式为YYYY-MM-DD。 说明： 必须和bill_cycle（即流水账单的所在账期）在同一个月。bill_date_begin和bill_date_end两个参数必须同时出现，否则仅按照bill_cycle（即流水账单的所在账期）进行查询。
 
         :param bill_date_begin: The bill_date_begin of this ListCustomerBillsFeeRecordsRequest.
-        :type: str
+        :type bill_date_begin: str
         """
         self._bill_date_begin = bill_date_begin
 
@@ -516,7 +555,7 @@ class ListCustomerBillsFeeRecordsRequest:
         查询的流水账单的结束日期，格式为YYYY-MM-DD。 说明： 必须和bill_cycle（即流水账单的所在账期）在同一个月。bill_date_begin和bill_date_end两个参数必须同时出现，否则仅按照bill_cycle（即流水账单的所在账期）进行查询。
 
         :param bill_date_end: The bill_date_end of this ListCustomerBillsFeeRecordsRequest.
-        :type: str
+        :type bill_date_end: str
         """
         self._bill_date_end = bill_date_end
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowOpenApiCalledRecordsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ShowOpenApiCalledRecordsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, succeed=None, failed=None, openapi_called_records=None, next_marker=None):
-        """ShowOpenApiCalledRecordsResponse - a model defined in huaweicloud sdk"""
+        """ShowOpenApiCalledRecordsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 调用API总次数
+        :type total: int
+        :param succeed: 调用API成功次数
+        :type succeed: int
+        :param failed: 调用API失败次数
+        :type failed: int
+        :param openapi_called_records: API调用记录列表
+        :type openapi_called_records: list[:class:`huaweicloudsdkdsc.v1.OpenApiCalledRecord`]
+        :param next_marker: 获取下一页所需的标识符。
+        :type next_marker: str
+        """
         
         super(ShowOpenApiCalledRecordsResponse, self).__init__()
 
@@ -78,7 +91,7 @@ class ShowOpenApiCalledRecordsResponse(SdkResponse):
         调用API总次数
 
         :param total: The total of this ShowOpenApiCalledRecordsResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -100,7 +113,7 @@ class ShowOpenApiCalledRecordsResponse(SdkResponse):
         调用API成功次数
 
         :param succeed: The succeed of this ShowOpenApiCalledRecordsResponse.
-        :type: int
+        :type succeed: int
         """
         self._succeed = succeed
 
@@ -122,7 +135,7 @@ class ShowOpenApiCalledRecordsResponse(SdkResponse):
         调用API失败次数
 
         :param failed: The failed of this ShowOpenApiCalledRecordsResponse.
-        :type: int
+        :type failed: int
         """
         self._failed = failed
 
@@ -133,7 +146,7 @@ class ShowOpenApiCalledRecordsResponse(SdkResponse):
         API调用记录列表
 
         :return: The openapi_called_records of this ShowOpenApiCalledRecordsResponse.
-        :rtype: list[OpenApiCalledRecord]
+        :rtype: list[:class:`huaweicloudsdkdsc.v1.OpenApiCalledRecord`]
         """
         return self._openapi_called_records
 
@@ -144,7 +157,7 @@ class ShowOpenApiCalledRecordsResponse(SdkResponse):
         API调用记录列表
 
         :param openapi_called_records: The openapi_called_records of this ShowOpenApiCalledRecordsResponse.
-        :type: list[OpenApiCalledRecord]
+        :type openapi_called_records: list[:class:`huaweicloudsdkdsc.v1.OpenApiCalledRecord`]
         """
         self._openapi_called_records = openapi_called_records
 
@@ -166,7 +179,7 @@ class ShowOpenApiCalledRecordsResponse(SdkResponse):
         获取下一页所需的标识符。
 
         :param next_marker: The next_marker of this ShowOpenApiCalledRecordsResponse.
-        :type: str
+        :type next_marker: str
         """
         self._next_marker = next_marker
 

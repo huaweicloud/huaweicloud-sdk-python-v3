@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListMetricItemsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListMetricItemsRequest:
     }
 
     def __init__(self, type=None, limit=None, start=None, body=None):
-        """ListMetricItemsRequest - a model defined in huaweicloud sdk"""
+        """ListMetricItemsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param type: 指标查询方式。
+        :type type: str
+        :param limit: 用于限制本次返回的结果数据条数。 取值范围(0,1000]，默认值为1000。
+        :type limit: str
+        :param start: 分页查询起始位置，为非负整数。
+        :type start: str
+        :param body: Body of the ListMetricItemsRequest
+        :type body: :class:`huaweicloudsdkaom.v2.MetricAPIQueryItemParam`
+        """
         
         
 
@@ -73,7 +84,7 @@ class ListMetricItemsRequest:
         指标查询方式。
 
         :param type: The type of this ListMetricItemsRequest.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -95,7 +106,7 @@ class ListMetricItemsRequest:
         用于限制本次返回的结果数据条数。 取值范围(0,1000]，默认值为1000。
 
         :param limit: The limit of this ListMetricItemsRequest.
-        :type: str
+        :type limit: str
         """
         self._limit = limit
 
@@ -117,7 +128,7 @@ class ListMetricItemsRequest:
         分页查询起始位置，为非负整数。
 
         :param start: The start of this ListMetricItemsRequest.
-        :type: str
+        :type start: str
         """
         self._start = start
 
@@ -127,7 +138,7 @@ class ListMetricItemsRequest:
 
 
         :return: The body of this ListMetricItemsRequest.
-        :rtype: MetricAPIQueryItemParam
+        :rtype: :class:`huaweicloudsdkaom.v2.MetricAPIQueryItemParam`
         """
         return self._body
 
@@ -137,7 +148,7 @@ class ListMetricItemsRequest:
 
 
         :param body: The body of this ListMetricItemsRequest.
-        :type: MetricAPIQueryItemParam
+        :type body: :class:`huaweicloudsdkaom.v2.MetricAPIQueryItemParam`
         """
         self._body = body
 

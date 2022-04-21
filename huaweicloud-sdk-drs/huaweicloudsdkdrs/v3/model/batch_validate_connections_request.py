@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchValidateConnectionsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchValidateConnectionsRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """BatchValidateConnectionsRequest - a model defined in huaweicloud sdk"""
+        """BatchValidateConnectionsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 请求语言类型
+        :type x_language: str
+        :param body: Body of the BatchValidateConnectionsRequest
+        :type body: :class:`huaweicloudsdkdrs.v3.BatchTestConnectionReq`
+        """
         
         
 
@@ -63,7 +70,7 @@ class BatchValidateConnectionsRequest:
         请求语言类型
 
         :param x_language: The x_language of this BatchValidateConnectionsRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -73,7 +80,7 @@ class BatchValidateConnectionsRequest:
 
 
         :return: The body of this BatchValidateConnectionsRequest.
-        :rtype: BatchTestConnectionReq
+        :rtype: :class:`huaweicloudsdkdrs.v3.BatchTestConnectionReq`
         """
         return self._body
 
@@ -83,7 +90,7 @@ class BatchValidateConnectionsRequest:
 
 
         :param body: The body of this BatchValidateConnectionsRequest.
-        :type: BatchTestConnectionReq
+        :type body: :class:`huaweicloudsdkdrs.v3.BatchTestConnectionReq`
         """
         self._body = body
 

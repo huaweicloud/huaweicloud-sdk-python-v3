@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowJudgementDetailResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ShowJudgementDetailResponse(SdkResponse):
     }
 
     def __init__(self, task_status=None, status=None, judgement_id=None, start_time=None, end_time=None, result=None):
-        """ShowJudgementDetailResponse - a model defined in huaweicloud sdk"""
+        """ShowJudgementDetailResponse
+
+        The model defined in huaweicloud sdk
+
+        :param task_status: 任务回调状态:callback_success(回调成功)、callback_error(回调出错)
+        :type task_status: str
+        :param status: 任务运行状态:success(成功)、compile_error(编译错误)、internal_error(系统内部错误)、run_timeout(运行超时)、judging(代码运行中)、runtime_error(运行出错)、output_match_error(不符合输出规范)
+        :type status: str
+        :param judgement_id: 判题任务ID
+        :type judgement_id: str
+        :param start_time: 任务开始时间
+        :type start_time: str
+        :param end_time: 任务结束时间
+        :type end_time: str
+        :param result: 
+        :type result: :class:`huaweicloudsdkclassroom.v3.JudgementResult`
+        """
         
         super(ShowJudgementDetailResponse, self).__init__()
 
@@ -83,7 +98,7 @@ class ShowJudgementDetailResponse(SdkResponse):
         任务回调状态:callback_success(回调成功)、callback_error(回调出错)
 
         :param task_status: The task_status of this ShowJudgementDetailResponse.
-        :type: str
+        :type task_status: str
         """
         self._task_status = task_status
 
@@ -105,7 +120,7 @@ class ShowJudgementDetailResponse(SdkResponse):
         任务运行状态:success(成功)、compile_error(编译错误)、internal_error(系统内部错误)、run_timeout(运行超时)、judging(代码运行中)、runtime_error(运行出错)、output_match_error(不符合输出规范)
 
         :param status: The status of this ShowJudgementDetailResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -127,7 +142,7 @@ class ShowJudgementDetailResponse(SdkResponse):
         判题任务ID
 
         :param judgement_id: The judgement_id of this ShowJudgementDetailResponse.
-        :type: str
+        :type judgement_id: str
         """
         self._judgement_id = judgement_id
 
@@ -149,7 +164,7 @@ class ShowJudgementDetailResponse(SdkResponse):
         任务开始时间
 
         :param start_time: The start_time of this ShowJudgementDetailResponse.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -171,7 +186,7 @@ class ShowJudgementDetailResponse(SdkResponse):
         任务结束时间
 
         :param end_time: The end_time of this ShowJudgementDetailResponse.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -181,7 +196,7 @@ class ShowJudgementDetailResponse(SdkResponse):
 
 
         :return: The result of this ShowJudgementDetailResponse.
-        :rtype: JudgementResult
+        :rtype: :class:`huaweicloudsdkclassroom.v3.JudgementResult`
         """
         return self._result
 
@@ -191,7 +206,7 @@ class ShowJudgementDetailResponse(SdkResponse):
 
 
         :param result: The result of this ShowJudgementDetailResponse.
-        :type: JudgementResult
+        :type result: :class:`huaweicloudsdkclassroom.v3.JudgementResult`
         """
         self._result = result
 

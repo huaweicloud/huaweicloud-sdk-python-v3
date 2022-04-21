@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PasswordEntry:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class PasswordEntry:
     }
 
     def __init__(self, conference_role=None, password=None):
-        """PasswordEntry - a model defined in huaweicloud sdk"""
+        """PasswordEntry
+
+        The model defined in huaweicloud sdk
+
+        :param conference_role: 会议角色。 - chair: 会议主持人。 - general: 普通与会者。
+        :type conference_role: str
+        :param password: 会议中角色的密码（明文）。
+        :type password: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class PasswordEntry:
         会议角色。 - chair: 会议主持人。 - general: 普通与会者。
 
         :param conference_role: The conference_role of this PasswordEntry.
-        :type: str
+        :type conference_role: str
         """
         self._conference_role = conference_role
 
@@ -85,7 +92,7 @@ class PasswordEntry:
         会议中角色的密码（明文）。
 
         :param password: The password of this PasswordEntry.
-        :type: str
+        :type password: str
         """
         self._password = password
 

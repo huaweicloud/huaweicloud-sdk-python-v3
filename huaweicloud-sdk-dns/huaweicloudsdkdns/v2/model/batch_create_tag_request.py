@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchCreateTagRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class BatchCreateTagRequest:
     }
 
     def __init__(self, resource_type=None, resource_id=None, body=None):
-        """BatchCreateTagRequest - a model defined in huaweicloud sdk"""
+        """BatchCreateTagRequest
+
+        The model defined in huaweicloud sdk
+
+        :param resource_type: 资源的类型：DNS-public_zone，DNS-private_zone，DNS-public_recordset，DNS-private_recordset，DNS-ptr_record。
+        :type resource_type: str
+        :param resource_id: 资源id。
+        :type resource_id: str
+        :param body: Body of the BatchCreateTagRequest
+        :type body: :class:`huaweicloudsdkdns.v2.BatchHandTags`
+        """
         
         
 
@@ -66,7 +75,7 @@ class BatchCreateTagRequest:
         资源的类型：DNS-public_zone，DNS-private_zone，DNS-public_recordset，DNS-private_recordset，DNS-ptr_record。
 
         :param resource_type: The resource_type of this BatchCreateTagRequest.
-        :type: str
+        :type resource_type: str
         """
         self._resource_type = resource_type
 
@@ -88,7 +97,7 @@ class BatchCreateTagRequest:
         资源id。
 
         :param resource_id: The resource_id of this BatchCreateTagRequest.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -98,7 +107,7 @@ class BatchCreateTagRequest:
 
 
         :return: The body of this BatchCreateTagRequest.
-        :rtype: BatchHandTags
+        :rtype: :class:`huaweicloudsdkdns.v2.BatchHandTags`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class BatchCreateTagRequest:
 
 
         :param body: The body of this BatchCreateTagRequest.
-        :type: BatchHandTags
+        :type body: :class:`huaweicloudsdkdns.v2.BatchHandTags`
         """
         self._body = body
 

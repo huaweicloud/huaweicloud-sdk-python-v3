@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MultiModalConfig:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class MultiModalConfig:
     }
 
     def __init__(self, video_format=None, language=None, mode=None):
-        """MultiModalConfig - a model defined in huaweicloud sdk"""
+        """MultiModalConfig
+
+        The model defined in huaweicloud sdk
+
+        :param video_format: 视频的封装格式。不填写此字段，则默认为auto。注意不论何种格式，均要求帧率在25fps以上，清晰度在240*240以上。   auto  自动判断，系统会自动判断视频封装格式。  avi  avi封装格式。  mp4  mp4封装格式。  webm  webm封装格式。  mkv  mkv封装格式。  flv  flv封装格式。 
+        :type video_format: str
+        :param language: 评测语言和口音。  en_gb 英语-英式口音。
+        :type language: str
+        :param mode: 评测模式。  word 单词模式。  sentence 句子模式。
+        :type mode: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class MultiModalConfig:
         视频的封装格式。不填写此字段，则默认为auto。注意不论何种格式，均要求帧率在25fps以上，清晰度在240*240以上。   auto  自动判断，系统会自动判断视频封装格式。  avi  avi封装格式。  mp4  mp4封装格式。  webm  webm封装格式。  mkv  mkv封装格式。  flv  flv封装格式。 
 
         :param video_format: The video_format of this MultiModalConfig.
-        :type: str
+        :type video_format: str
         """
         self._video_format = video_format
 
@@ -88,7 +97,7 @@ class MultiModalConfig:
         评测语言和口音。  en_gb 英语-英式口音。
 
         :param language: The language of this MultiModalConfig.
-        :type: str
+        :type language: str
         """
         self._language = language
 
@@ -110,7 +119,7 @@ class MultiModalConfig:
         评测模式。  word 单词模式。  sentence 句子模式。
 
         :param mode: The mode of this MultiModalConfig.
-        :type: str
+        :type mode: str
         """
         self._mode = mode
 

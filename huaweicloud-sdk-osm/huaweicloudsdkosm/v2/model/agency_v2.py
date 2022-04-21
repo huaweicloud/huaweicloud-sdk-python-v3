@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AgencyV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class AgencyV2:
     }
 
     def __init__(self, id=None, name=None, duration=None, trust_domain_name=None, trust_domain_id=None, create_time=None, expire_time=None):
-        """AgencyV2 - a model defined in huaweicloud sdk"""
+        """AgencyV2
+
+        The model defined in huaweicloud sdk
+
+        :param id: 委托id
+        :type id: str
+        :param name: 委托名称
+        :type name: str
+        :param duration: 委托的期限
+        :type duration: str
+        :param trust_domain_name: 委托的账号名称
+        :type trust_domain_name: str
+        :param trust_domain_id: 委托的账号id
+        :type trust_domain_id: str
+        :param create_time: 创建时间
+        :type create_time: str
+        :param expire_time: 超期时间
+        :type expire_time: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class AgencyV2:
         委托id
 
         :param id: The id of this AgencyV2.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -110,7 +127,7 @@ class AgencyV2:
         委托名称
 
         :param name: The name of this AgencyV2.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -132,7 +149,7 @@ class AgencyV2:
         委托的期限
 
         :param duration: The duration of this AgencyV2.
-        :type: str
+        :type duration: str
         """
         self._duration = duration
 
@@ -154,7 +171,7 @@ class AgencyV2:
         委托的账号名称
 
         :param trust_domain_name: The trust_domain_name of this AgencyV2.
-        :type: str
+        :type trust_domain_name: str
         """
         self._trust_domain_name = trust_domain_name
 
@@ -176,7 +193,7 @@ class AgencyV2:
         委托的账号id
 
         :param trust_domain_id: The trust_domain_id of this AgencyV2.
-        :type: str
+        :type trust_domain_id: str
         """
         self._trust_domain_id = trust_domain_id
 
@@ -198,7 +215,7 @@ class AgencyV2:
         创建时间
 
         :param create_time: The create_time of this AgencyV2.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -220,7 +237,7 @@ class AgencyV2:
         超期时间
 
         :param expire_time: The expire_time of this AgencyV2.
-        :type: str
+        :type expire_time: str
         """
         self._expire_time = expire_time
 

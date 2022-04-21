@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneUpdateUserByAdminRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class KeystoneUpdateUserByAdminRequest:
     }
 
     def __init__(self, user_id=None, body=None):
-        """KeystoneUpdateUserByAdminRequest - a model defined in huaweicloud sdk"""
+        """KeystoneUpdateUserByAdminRequest
+
+        The model defined in huaweicloud sdk
+
+        :param user_id: 待修改信息的IAM用户ID，获取方式请参见：[获取用户ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
+        :type user_id: str
+        :param body: Body of the KeystoneUpdateUserByAdminRequest
+        :type body: :class:`huaweicloudsdkiam.v3.KeystoneUpdateUserByAdminRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class KeystoneUpdateUserByAdminRequest:
         待修改信息的IAM用户ID，获取方式请参见：[获取用户ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param user_id: The user_id of this KeystoneUpdateUserByAdminRequest.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -72,7 +79,7 @@ class KeystoneUpdateUserByAdminRequest:
 
 
         :return: The body of this KeystoneUpdateUserByAdminRequest.
-        :rtype: KeystoneUpdateUserByAdminRequestBody
+        :rtype: :class:`huaweicloudsdkiam.v3.KeystoneUpdateUserByAdminRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class KeystoneUpdateUserByAdminRequest:
 
 
         :param body: The body of this KeystoneUpdateUserByAdminRequest.
-        :type: KeystoneUpdateUserByAdminRequestBody
+        :type body: :class:`huaweicloudsdkiam.v3.KeystoneUpdateUserByAdminRequestBody`
         """
         self._body = body
 

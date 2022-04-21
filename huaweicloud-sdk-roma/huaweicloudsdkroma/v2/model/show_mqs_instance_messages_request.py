@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowMqsInstanceMessagesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class ShowMqsInstanceMessagesRequest:
     }
 
     def __init__(self, instance_id=None, topic=None, asc=None, start_time=None, end_time=None, limit=None, offset=None, download=None, message_offset=None, partition=None, key=None, message_id=None, tag=None):
-        """ShowMqsInstanceMessagesRequest - a model defined in huaweicloud sdk"""
+        """ShowMqsInstanceMessagesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param topic: topic名称。
+        :type topic: str
+        :param asc: 是否按照时间排序。
+        :type asc: bool
+        :param start_time: 开始时间。Unix毫秒时间戳。 查询消息偏移量时，为必选参数。
+        :type start_time: str
+        :param end_time: 结束时间。Unix毫秒时间戳。 查询消息偏移量时，为必选参数。
+        :type end_time: str
+        :param limit: 查询消息的数量。
+        :type limit: str
+        :param offset: 查询的偏移量。
+        :type offset: str
+        :param download: 是否下载。
+        :type download: bool
+        :param message_offset: 消息偏移量。 查询消息内容时，为必选参数。 若start_time、end_time参数不为空，该参数无效。
+        :type message_offset: str
+        :param partition: 分区。 查询消息内容时，为必选参数。 若start_time、end_time参数不为空，该参数无效。
+        :type partition: str
+        :param key: 消息key。
+        :type key: str
+        :param message_id: 消息ID。
+        :type message_id: str
+        :param tag: 消息标签。
+        :type tag: str
+        """
         
         
 
@@ -114,7 +143,7 @@ class ShowMqsInstanceMessagesRequest:
         实例ID。
 
         :param instance_id: The instance_id of this ShowMqsInstanceMessagesRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -136,7 +165,7 @@ class ShowMqsInstanceMessagesRequest:
         topic名称。
 
         :param topic: The topic of this ShowMqsInstanceMessagesRequest.
-        :type: str
+        :type topic: str
         """
         self._topic = topic
 
@@ -158,7 +187,7 @@ class ShowMqsInstanceMessagesRequest:
         是否按照时间排序。
 
         :param asc: The asc of this ShowMqsInstanceMessagesRequest.
-        :type: bool
+        :type asc: bool
         """
         self._asc = asc
 
@@ -180,7 +209,7 @@ class ShowMqsInstanceMessagesRequest:
         开始时间。Unix毫秒时间戳。 查询消息偏移量时，为必选参数。
 
         :param start_time: The start_time of this ShowMqsInstanceMessagesRequest.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -202,7 +231,7 @@ class ShowMqsInstanceMessagesRequest:
         结束时间。Unix毫秒时间戳。 查询消息偏移量时，为必选参数。
 
         :param end_time: The end_time of this ShowMqsInstanceMessagesRequest.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -224,7 +253,7 @@ class ShowMqsInstanceMessagesRequest:
         查询消息的数量。
 
         :param limit: The limit of this ShowMqsInstanceMessagesRequest.
-        :type: str
+        :type limit: str
         """
         self._limit = limit
 
@@ -246,7 +275,7 @@ class ShowMqsInstanceMessagesRequest:
         查询的偏移量。
 
         :param offset: The offset of this ShowMqsInstanceMessagesRequest.
-        :type: str
+        :type offset: str
         """
         self._offset = offset
 
@@ -268,7 +297,7 @@ class ShowMqsInstanceMessagesRequest:
         是否下载。
 
         :param download: The download of this ShowMqsInstanceMessagesRequest.
-        :type: bool
+        :type download: bool
         """
         self._download = download
 
@@ -290,7 +319,7 @@ class ShowMqsInstanceMessagesRequest:
         消息偏移量。 查询消息内容时，为必选参数。 若start_time、end_time参数不为空，该参数无效。
 
         :param message_offset: The message_offset of this ShowMqsInstanceMessagesRequest.
-        :type: str
+        :type message_offset: str
         """
         self._message_offset = message_offset
 
@@ -312,7 +341,7 @@ class ShowMqsInstanceMessagesRequest:
         分区。 查询消息内容时，为必选参数。 若start_time、end_time参数不为空，该参数无效。
 
         :param partition: The partition of this ShowMqsInstanceMessagesRequest.
-        :type: str
+        :type partition: str
         """
         self._partition = partition
 
@@ -334,7 +363,7 @@ class ShowMqsInstanceMessagesRequest:
         消息key。
 
         :param key: The key of this ShowMqsInstanceMessagesRequest.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -356,7 +385,7 @@ class ShowMqsInstanceMessagesRequest:
         消息ID。
 
         :param message_id: The message_id of this ShowMqsInstanceMessagesRequest.
-        :type: str
+        :type message_id: str
         """
         self._message_id = message_id
 
@@ -378,7 +407,7 @@ class ShowMqsInstanceMessagesRequest:
         消息标签。
 
         :param tag: The tag of this ShowMqsInstanceMessagesRequest.
-        :type: str
+        :type tag: str
         """
         self._tag = tag
 

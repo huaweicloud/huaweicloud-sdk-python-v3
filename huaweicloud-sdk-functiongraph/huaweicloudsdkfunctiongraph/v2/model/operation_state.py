@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OperationState:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class OperationState:
     }
 
     def __init__(self, id=None, name=None, type=None, end=None, transition=None, state_data_filter=None, action_mode=None, actions=None, on_errors=None):
-        """OperationState - a model defined in huaweicloud sdk"""
+        """OperationState
+
+        The model defined in huaweicloud sdk
+
+        :param id: 节点ID，需要在当前工作流中唯一
+        :type id: str
+        :param name: 节点名称
+        :type name: str
+        :param type: 节点类型
+        :type type: str
+        :param end: 是否是结束节点
+        :type end: bool
+        :param transition: 下一步骤节点ID
+        :type transition: str
+        :param state_data_filter: 
+        :type state_data_filter: :class:`huaweicloudsdkfunctiongraph.v2.StateDataFilter`
+        :param action_mode: Action执行模式，支持串行，并行两种模式，默认串行
+        :type action_mode: str
+        :param actions: 节点中要执行的操作列表
+        :type actions: list[:class:`huaweicloudsdkfunctiongraph.v2.Action`]
+        :param on_errors: 错误处理策略
+        :type on_errors: list[:class:`huaweicloudsdkfunctiongraph.v2.OnError`]
+        """
         
         
 
@@ -98,7 +119,7 @@ class OperationState:
         节点ID，需要在当前工作流中唯一
 
         :param id: The id of this OperationState.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -120,7 +141,7 @@ class OperationState:
         节点名称
 
         :param name: The name of this OperationState.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -142,7 +163,7 @@ class OperationState:
         节点类型
 
         :param type: The type of this OperationState.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -164,7 +185,7 @@ class OperationState:
         是否是结束节点
 
         :param end: The end of this OperationState.
-        :type: bool
+        :type end: bool
         """
         self._end = end
 
@@ -186,7 +207,7 @@ class OperationState:
         下一步骤节点ID
 
         :param transition: The transition of this OperationState.
-        :type: str
+        :type transition: str
         """
         self._transition = transition
 
@@ -196,7 +217,7 @@ class OperationState:
 
 
         :return: The state_data_filter of this OperationState.
-        :rtype: StateDataFilter
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.StateDataFilter`
         """
         return self._state_data_filter
 
@@ -206,7 +227,7 @@ class OperationState:
 
 
         :param state_data_filter: The state_data_filter of this OperationState.
-        :type: StateDataFilter
+        :type state_data_filter: :class:`huaweicloudsdkfunctiongraph.v2.StateDataFilter`
         """
         self._state_data_filter = state_data_filter
 
@@ -228,7 +249,7 @@ class OperationState:
         Action执行模式，支持串行，并行两种模式，默认串行
 
         :param action_mode: The action_mode of this OperationState.
-        :type: str
+        :type action_mode: str
         """
         self._action_mode = action_mode
 
@@ -239,7 +260,7 @@ class OperationState:
         节点中要执行的操作列表
 
         :return: The actions of this OperationState.
-        :rtype: list[Action]
+        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.Action`]
         """
         return self._actions
 
@@ -250,7 +271,7 @@ class OperationState:
         节点中要执行的操作列表
 
         :param actions: The actions of this OperationState.
-        :type: list[Action]
+        :type actions: list[:class:`huaweicloudsdkfunctiongraph.v2.Action`]
         """
         self._actions = actions
 
@@ -261,7 +282,7 @@ class OperationState:
         错误处理策略
 
         :return: The on_errors of this OperationState.
-        :rtype: list[OnError]
+        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.OnError`]
         """
         return self._on_errors
 
@@ -272,7 +293,7 @@ class OperationState:
         错误处理策略
 
         :param on_errors: The on_errors of this OperationState.
-        :type: list[OnError]
+        :type on_errors: list[:class:`huaweicloudsdkfunctiongraph.v2.OnError`]
         """
         self._on_errors = on_errors
 

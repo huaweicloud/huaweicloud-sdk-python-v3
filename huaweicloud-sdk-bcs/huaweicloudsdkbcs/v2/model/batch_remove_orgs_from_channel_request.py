@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchRemoveOrgsFromChannelRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class BatchRemoveOrgsFromChannelRequest:
     }
 
     def __init__(self, blockchain_id=None, channel_id=None, body=None):
-        """BatchRemoveOrgsFromChannelRequest - a model defined in huaweicloud sdk"""
+        """BatchRemoveOrgsFromChannelRequest
+
+        The model defined in huaweicloud sdk
+
+        :param blockchain_id: 区块链服务id。
+        :type blockchain_id: str
+        :param channel_id: 区块链通道名称。
+        :type channel_id: str
+        :param body: Body of the BatchRemoveOrgsFromChannelRequest
+        :type body: :class:`huaweicloudsdkbcs.v2.BatchRemoveOrgsFromChannelRequestBody`
+        """
         
         
 
@@ -66,7 +75,7 @@ class BatchRemoveOrgsFromChannelRequest:
         区块链服务id。
 
         :param blockchain_id: The blockchain_id of this BatchRemoveOrgsFromChannelRequest.
-        :type: str
+        :type blockchain_id: str
         """
         self._blockchain_id = blockchain_id
 
@@ -88,7 +97,7 @@ class BatchRemoveOrgsFromChannelRequest:
         区块链通道名称。
 
         :param channel_id: The channel_id of this BatchRemoveOrgsFromChannelRequest.
-        :type: str
+        :type channel_id: str
         """
         self._channel_id = channel_id
 
@@ -98,7 +107,7 @@ class BatchRemoveOrgsFromChannelRequest:
 
 
         :return: The body of this BatchRemoveOrgsFromChannelRequest.
-        :rtype: BatchRemoveOrgsFromChannelRequestBody
+        :rtype: :class:`huaweicloudsdkbcs.v2.BatchRemoveOrgsFromChannelRequestBody`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class BatchRemoveOrgsFromChannelRequest:
 
 
         :param body: The body of this BatchRemoveOrgsFromChannelRequest.
-        :type: BatchRemoveOrgsFromChannelRequestBody
+        :type body: :class:`huaweicloudsdkbcs.v2.BatchRemoveOrgsFromChannelRequestBody`
         """
         self._body = body
 

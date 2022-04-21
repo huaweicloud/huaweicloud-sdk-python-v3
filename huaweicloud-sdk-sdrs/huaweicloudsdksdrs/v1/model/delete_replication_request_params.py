@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteReplicationRequestParams:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteReplicationRequestParams:
     }
 
     def __init__(self, server_group_id=None, delete_target_volume=None):
-        """DeleteReplicationRequestParams - a model defined in huaweicloud sdk"""
+        """DeleteReplicationRequestParams
+
+        The model defined in huaweicloud sdk
+
+        :param server_group_id: 保护组的ID。
+        :type server_group_id: str
+        :param delete_target_volume: 是否删除容灾站点磁盘，默认值为false。
+        :type delete_target_volume: bool
+        """
         
         
 
@@ -63,7 +70,7 @@ class DeleteReplicationRequestParams:
         保护组的ID。
 
         :param server_group_id: The server_group_id of this DeleteReplicationRequestParams.
-        :type: str
+        :type server_group_id: str
         """
         self._server_group_id = server_group_id
 
@@ -85,7 +92,7 @@ class DeleteReplicationRequestParams:
         是否删除容灾站点磁盘，默认值为false。
 
         :param delete_target_volume: The delete_target_volume of this DeleteReplicationRequestParams.
-        :type: bool
+        :type delete_target_volume: bool
         """
         self._delete_target_volume = delete_target_volume
 

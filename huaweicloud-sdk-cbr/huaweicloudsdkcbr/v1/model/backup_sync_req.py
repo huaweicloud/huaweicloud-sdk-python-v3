@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BackupSyncReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BackupSyncReq:
     }
 
     def __init__(self, sync=None):
-        """BackupSyncReq - a model defined in huaweicloud sdk"""
+        """BackupSyncReq
+
+        The model defined in huaweicloud sdk
+
+        :param sync: 待同步备份副本列表
+        :type sync: list[:class:`huaweicloudsdkcbr.v1.BackupSync`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class BackupSyncReq:
         待同步备份副本列表
 
         :return: The sync of this BackupSyncReq.
-        :rtype: list[BackupSync]
+        :rtype: list[:class:`huaweicloudsdkcbr.v1.BackupSync`]
         """
         return self._sync
 
@@ -57,7 +62,7 @@ class BackupSyncReq:
         待同步备份副本列表
 
         :param sync: The sync of this BackupSyncReq.
-        :type: list[BackupSync]
+        :type sync: list[:class:`huaweicloudsdkcbr.v1.BackupSync`]
         """
         self._sync = sync
 

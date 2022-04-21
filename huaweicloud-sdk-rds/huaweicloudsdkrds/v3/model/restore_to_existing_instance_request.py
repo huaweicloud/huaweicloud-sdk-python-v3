@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestoreToExistingInstanceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RestoreToExistingInstanceRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """RestoreToExistingInstanceRequest - a model defined in huaweicloud sdk"""
+        """RestoreToExistingInstanceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言
+        :type x_language: str
+        :param body: Body of the RestoreToExistingInstanceRequest
+        :type body: :class:`huaweicloudsdkrds.v3.RestoreToExistingInstanceRequestBody`
+        """
         
         
 
@@ -63,7 +70,7 @@ class RestoreToExistingInstanceRequest:
         语言
 
         :param x_language: The x_language of this RestoreToExistingInstanceRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -73,7 +80,7 @@ class RestoreToExistingInstanceRequest:
 
 
         :return: The body of this RestoreToExistingInstanceRequest.
-        :rtype: RestoreToExistingInstanceRequestBody
+        :rtype: :class:`huaweicloudsdkrds.v3.RestoreToExistingInstanceRequestBody`
         """
         return self._body
 
@@ -83,7 +90,7 @@ class RestoreToExistingInstanceRequest:
 
 
         :param body: The body of this RestoreToExistingInstanceRequest.
-        :type: RestoreToExistingInstanceRequestBody
+        :type body: :class:`huaweicloudsdkrds.v3.RestoreToExistingInstanceRequestBody`
         """
         self._body = body
 

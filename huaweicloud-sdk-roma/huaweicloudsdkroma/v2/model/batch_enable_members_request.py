@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchEnableMembersRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class BatchEnableMembersRequest:
     }
 
     def __init__(self, instance_id=None, vpc_channel_id=None, body=None):
-        """BatchEnableMembersRequest - a model defined in huaweicloud sdk"""
+        """BatchEnableMembersRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param vpc_channel_id: VPC通道的编号
+        :type vpc_channel_id: str
+        :param body: Body of the BatchEnableMembersRequest
+        :type body: :class:`huaweicloudsdkroma.v2.MembersBatchEnableOrDisable`
+        """
         
         
 
@@ -66,7 +75,7 @@ class BatchEnableMembersRequest:
         实例ID
 
         :param instance_id: The instance_id of this BatchEnableMembersRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -88,7 +97,7 @@ class BatchEnableMembersRequest:
         VPC通道的编号
 
         :param vpc_channel_id: The vpc_channel_id of this BatchEnableMembersRequest.
-        :type: str
+        :type vpc_channel_id: str
         """
         self._vpc_channel_id = vpc_channel_id
 
@@ -98,7 +107,7 @@ class BatchEnableMembersRequest:
 
 
         :return: The body of this BatchEnableMembersRequest.
-        :rtype: MembersBatchEnableOrDisable
+        :rtype: :class:`huaweicloudsdkroma.v2.MembersBatchEnableOrDisable`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class BatchEnableMembersRequest:
 
 
         :param body: The body of this BatchEnableMembersRequest.
-        :type: MembersBatchEnableOrDisable
+        :type body: :class:`huaweicloudsdkroma.v2.MembersBatchEnableOrDisable`
         """
         self._body = body
 

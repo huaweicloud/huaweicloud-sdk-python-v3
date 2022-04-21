@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRtcRealtimeNetworkResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListRtcRealtimeNetworkResponse(SdkResponse):
     }
 
     def __init__(self, network=None, x_request_id=None):
-        """ListRtcRealtimeNetworkResponse - a model defined in huaweicloud sdk"""
+        """ListRtcRealtimeNetworkResponse
+
+        The model defined in huaweicloud sdk
+
+        :param network: 时间戳及相应时间的指标数值列表
+        :type network: list[:class:`huaweicloudsdkcloudrtc.v1.TimeDoubleValueData`]
+        :param x_request_id: 
+        :type x_request_id: str
+        """
         
         super(ListRtcRealtimeNetworkResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListRtcRealtimeNetworkResponse(SdkResponse):
         时间戳及相应时间的指标数值列表
 
         :return: The network of this ListRtcRealtimeNetworkResponse.
-        :rtype: list[TimeDoubleValueData]
+        :rtype: list[:class:`huaweicloudsdkcloudrtc.v1.TimeDoubleValueData`]
         """
         return self._network
 
@@ -63,7 +70,7 @@ class ListRtcRealtimeNetworkResponse(SdkResponse):
         时间戳及相应时间的指标数值列表
 
         :param network: The network of this ListRtcRealtimeNetworkResponse.
-        :type: list[TimeDoubleValueData]
+        :type network: list[:class:`huaweicloudsdkcloudrtc.v1.TimeDoubleValueData`]
         """
         self._network = network
 
@@ -83,7 +90,7 @@ class ListRtcRealtimeNetworkResponse(SdkResponse):
 
 
         :param x_request_id: The x_request_id of this ListRtcRealtimeNetworkResponse.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 

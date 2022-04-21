@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ReclaimToPartnerAccountResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ReclaimToPartnerAccountResponse(SdkResponse):
     }
 
     def __init__(self, trans_id=None):
-        """ReclaimToPartnerAccountResponse - a model defined in huaweicloud sdk"""
+        """ReclaimToPartnerAccountResponse
+
+        The model defined in huaweicloud sdk
+
+        :param trans_id: 事务流水ID，只有成功响应才会返回。
+        :type trans_id: str
+        """
         
         super(ReclaimToPartnerAccountResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class ReclaimToPartnerAccountResponse(SdkResponse):
         事务流水ID，只有成功响应才会返回。
 
         :param trans_id: The trans_id of this ReclaimToPartnerAccountResponse.
-        :type: str
+        :type trans_id: str
         """
         self._trans_id = trans_id
 

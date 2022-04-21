@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExportOpenApiReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ExportOpenApiReq:
     }
 
     def __init__(self, env_id=None, group_id=None, define=None, type=None, version=None, apis=None):
-        """ExportOpenApiReq - a model defined in huaweicloud sdk"""
+        """ExportOpenApiReq
+
+        The model defined in huaweicloud sdk
+
+        :param env_id: API分组发布的环境ID
+        :type env_id: str
+        :param group_id: API分组ID
+        :type group_id: str
+        :param define: 导出API的定义范围： - spec：基础定义，只包括api前端定义 - proxy：全量定义，包括api前后端定义 - all：扩展定义，包括api前后端定义以及流控、访问控制、自定义认证等扩展定义 - dev：开发定义，包括未发布的api的前后端定义
+        :type define: str
+        :param type: 导出的API定义的格式
+        :type type: str
+        :param version: 导出的API定义版本，默认为当前时间
+        :type version: str
+        :param apis: 导出的API ID列表
+        :type apis: list[str]
+        """
         
         
 
@@ -82,7 +97,7 @@ class ExportOpenApiReq:
         API分组发布的环境ID
 
         :param env_id: The env_id of this ExportOpenApiReq.
-        :type: str
+        :type env_id: str
         """
         self._env_id = env_id
 
@@ -104,7 +119,7 @@ class ExportOpenApiReq:
         API分组ID
 
         :param group_id: The group_id of this ExportOpenApiReq.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -126,7 +141,7 @@ class ExportOpenApiReq:
         导出API的定义范围： - spec：基础定义，只包括api前端定义 - proxy：全量定义，包括api前后端定义 - all：扩展定义，包括api前后端定义以及流控、访问控制、自定义认证等扩展定义 - dev：开发定义，包括未发布的api的前后端定义
 
         :param define: The define of this ExportOpenApiReq.
-        :type: str
+        :type define: str
         """
         self._define = define
 
@@ -148,7 +163,7 @@ class ExportOpenApiReq:
         导出的API定义的格式
 
         :param type: The type of this ExportOpenApiReq.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -170,7 +185,7 @@ class ExportOpenApiReq:
         导出的API定义版本，默认为当前时间
 
         :param version: The version of this ExportOpenApiReq.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -192,7 +207,7 @@ class ExportOpenApiReq:
         导出的API ID列表
 
         :param apis: The apis of this ExportOpenApiReq.
-        :type: list[str]
+        :type apis: list[str]
         """
         self._apis = apis
 

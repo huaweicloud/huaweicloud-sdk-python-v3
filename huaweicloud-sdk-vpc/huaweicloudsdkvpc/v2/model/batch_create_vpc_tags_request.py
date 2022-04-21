@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchCreateVpcTagsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchCreateVpcTagsRequest:
     }
 
     def __init__(self, vpc_id=None, body=None):
-        """BatchCreateVpcTagsRequest - a model defined in huaweicloud sdk"""
+        """BatchCreateVpcTagsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param vpc_id: 功能说明：虚拟私有云唯一标识 取值范围：合法UUID 约束：ID对应的VPC必须存在
+        :type vpc_id: str
+        :param body: Body of the BatchCreateVpcTagsRequest
+        :type body: :class:`huaweicloudsdkvpc.v2.BatchCreateVpcTagsRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class BatchCreateVpcTagsRequest:
         功能说明：虚拟私有云唯一标识 取值范围：合法UUID 约束：ID对应的VPC必须存在
 
         :param vpc_id: The vpc_id of this BatchCreateVpcTagsRequest.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -72,7 +79,7 @@ class BatchCreateVpcTagsRequest:
 
 
         :return: The body of this BatchCreateVpcTagsRequest.
-        :rtype: BatchCreateVpcTagsRequestBody
+        :rtype: :class:`huaweicloudsdkvpc.v2.BatchCreateVpcTagsRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class BatchCreateVpcTagsRequest:
 
 
         :param body: The body of this BatchCreateVpcTagsRequest.
-        :type: BatchCreateVpcTagsRequestBody
+        :type body: :class:`huaweicloudsdkvpc.v2.BatchCreateVpcTagsRequestBody`
         """
         self._body = body
 

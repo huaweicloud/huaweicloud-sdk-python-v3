@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NeutronUpdateFloatingIpRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class NeutronUpdateFloatingIpRequestBody:
     }
 
     def __init__(self, floatingip=None):
-        """NeutronUpdateFloatingIpRequestBody - a model defined in huaweicloud sdk"""
+        """NeutronUpdateFloatingIpRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param floatingip: 
+        :type floatingip: :class:`huaweicloudsdkeip.v2.UpdateFloatingIpOption`
+        """
         
         
 
@@ -45,7 +50,7 @@ class NeutronUpdateFloatingIpRequestBody:
 
 
         :return: The floatingip of this NeutronUpdateFloatingIpRequestBody.
-        :rtype: UpdateFloatingIpOption
+        :rtype: :class:`huaweicloudsdkeip.v2.UpdateFloatingIpOption`
         """
         return self._floatingip
 
@@ -55,7 +60,7 @@ class NeutronUpdateFloatingIpRequestBody:
 
 
         :param floatingip: The floatingip of this NeutronUpdateFloatingIpRequestBody.
-        :type: UpdateFloatingIpOption
+        :type floatingip: :class:`huaweicloudsdkeip.v2.UpdateFloatingIpOption`
         """
         self._floatingip = floatingip
 

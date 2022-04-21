@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchDeleteScalingConfigsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchDeleteScalingConfigsRequest:
     }
 
     def __init__(self, body=None):
-        """BatchDeleteScalingConfigsRequest - a model defined in huaweicloud sdk"""
+        """BatchDeleteScalingConfigsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the BatchDeleteScalingConfigsRequest
+        :type body: :class:`huaweicloudsdkas.v1.BatchDeleteScalingConfigOption`
+        """
         
         
 
@@ -46,7 +51,7 @@ class BatchDeleteScalingConfigsRequest:
 
 
         :return: The body of this BatchDeleteScalingConfigsRequest.
-        :rtype: BatchDeleteScalingConfigOption
+        :rtype: :class:`huaweicloudsdkas.v1.BatchDeleteScalingConfigOption`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class BatchDeleteScalingConfigsRequest:
 
 
         :param body: The body of this BatchDeleteScalingConfigsRequest.
-        :type: BatchDeleteScalingConfigOption
+        :type body: :class:`huaweicloudsdkas.v1.BatchDeleteScalingConfigOption`
         """
         self._body = body
 

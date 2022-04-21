@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateProtectionGroupRequestParams:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class CreateProtectionGroupRequestParams:
     }
 
     def __init__(self, name=None, description=None, source_availability_zone=None, target_availability_zone=None, domain_id=None, source_vpc_id=None, dr_type=None):
-        """CreateProtectionGroupRequestParams - a model defined in huaweicloud sdk"""
+        """CreateProtectionGroupRequestParams
+
+        The model defined in huaweicloud sdk
+
+        :param name: 指定保护组的名称，最大支持长度为64个字节。只包含中文字符、英文字母（a～ｚ、Ａ～Ｚ）、数字（０~９）、小数点（．）、下划线（_）、中划线（-）。
+        :type name: str
+        :param description: 指定保护组的描述，最大支持长度为64个字节。不能包含左尖括号（&lt;）或右尖括号（&gt;）。
+        :type description: str
+        :param source_availability_zone: 指定保护组的生产站点可用区名称。
+        :type source_availability_zone: str
+        :param target_availability_zone: 指定保护组的容灾站点可用区名称。
+        :type target_availability_zone: str
+        :param domain_id: 指定双活域的ID。
+        :type domain_id: str
+        :param source_vpc_id: 生产站点虚拟私有云ID。
+        :type source_vpc_id: str
+        :param dr_type: 部署模式。默认值为“migration”，migration表示VPC内迁移。
+        :type dr_type: str
+        """
         
         
 
@@ -83,7 +100,7 @@ class CreateProtectionGroupRequestParams:
         指定保护组的名称，最大支持长度为64个字节。只包含中文字符、英文字母（a～ｚ、Ａ～Ｚ）、数字（０~９）、小数点（．）、下划线（_）、中划线（-）。
 
         :param name: The name of this CreateProtectionGroupRequestParams.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -105,7 +122,7 @@ class CreateProtectionGroupRequestParams:
         指定保护组的描述，最大支持长度为64个字节。不能包含左尖括号（<）或右尖括号（>）。
 
         :param description: The description of this CreateProtectionGroupRequestParams.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -127,7 +144,7 @@ class CreateProtectionGroupRequestParams:
         指定保护组的生产站点可用区名称。
 
         :param source_availability_zone: The source_availability_zone of this CreateProtectionGroupRequestParams.
-        :type: str
+        :type source_availability_zone: str
         """
         self._source_availability_zone = source_availability_zone
 
@@ -149,7 +166,7 @@ class CreateProtectionGroupRequestParams:
         指定保护组的容灾站点可用区名称。
 
         :param target_availability_zone: The target_availability_zone of this CreateProtectionGroupRequestParams.
-        :type: str
+        :type target_availability_zone: str
         """
         self._target_availability_zone = target_availability_zone
 
@@ -171,7 +188,7 @@ class CreateProtectionGroupRequestParams:
         指定双活域的ID。
 
         :param domain_id: The domain_id of this CreateProtectionGroupRequestParams.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -193,7 +210,7 @@ class CreateProtectionGroupRequestParams:
         生产站点虚拟私有云ID。
 
         :param source_vpc_id: The source_vpc_id of this CreateProtectionGroupRequestParams.
-        :type: str
+        :type source_vpc_id: str
         """
         self._source_vpc_id = source_vpc_id
 
@@ -215,7 +232,7 @@ class CreateProtectionGroupRequestParams:
         部署模式。默认值为“migration”，migration表示VPC内迁移。
 
         :param dr_type: The dr_type of this CreateProtectionGroupRequestParams.
-        :type: str
+        :type dr_type: str
         """
         self._dr_type = dr_type
 

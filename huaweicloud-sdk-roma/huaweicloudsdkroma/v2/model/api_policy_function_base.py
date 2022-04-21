@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApiPolicyFunctionBase:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ApiPolicyFunctionBase:
     }
 
     def __init__(self, function_urn=None, invocation_type=None, timeout=None, version=None):
-        """ApiPolicyFunctionBase - a model defined in huaweicloud sdk"""
+        """ApiPolicyFunctionBase
+
+        The model defined in huaweicloud sdk
+
+        :param function_urn: 函数URN
+        :type function_urn: str
+        :param invocation_type: 调用类型 - async： 异步 - sync：同步
+        :type invocation_type: str
+        :param timeout: ROMA Connect APIC请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000  单位：毫秒。
+        :type timeout: int
+        :param version: 版本。字符长度不超过64
+        :type version: str
+        """
         
         
 
@@ -70,7 +81,7 @@ class ApiPolicyFunctionBase:
         函数URN
 
         :param function_urn: The function_urn of this ApiPolicyFunctionBase.
-        :type: str
+        :type function_urn: str
         """
         self._function_urn = function_urn
 
@@ -92,7 +103,7 @@ class ApiPolicyFunctionBase:
         调用类型 - async： 异步 - sync：同步
 
         :param invocation_type: The invocation_type of this ApiPolicyFunctionBase.
-        :type: str
+        :type invocation_type: str
         """
         self._invocation_type = invocation_type
 
@@ -114,7 +125,7 @@ class ApiPolicyFunctionBase:
         ROMA Connect APIC请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000  单位：毫秒。
 
         :param timeout: The timeout of this ApiPolicyFunctionBase.
-        :type: int
+        :type timeout: int
         """
         self._timeout = timeout
 
@@ -136,7 +147,7 @@ class ApiPolicyFunctionBase:
         版本。字符长度不超过64
 
         :param version: The version of this ApiPolicyFunctionBase.
-        :type: str
+        :type version: str
         """
         self._version = version
 

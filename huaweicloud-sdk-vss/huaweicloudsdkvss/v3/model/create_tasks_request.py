@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateTasksRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateTasksRequest:
     }
 
     def __init__(self, upgrade=None, body=None):
-        """CreateTasksRequest - a model defined in huaweicloud sdk"""
+        """CreateTasksRequest
+
+        The model defined in huaweicloud sdk
+
+        :param upgrade: 是否将本次扫描升级为专业版规格（￥99.00/次）
+        :type upgrade: bool
+        :param body: Body of the CreateTasksRequest
+        :type body: :class:`huaweicloudsdkvss.v3.CreateTasksRequestBody`
+        """
         
         
 
@@ -63,7 +70,7 @@ class CreateTasksRequest:
         是否将本次扫描升级为专业版规格（￥99.00/次）
 
         :param upgrade: The upgrade of this CreateTasksRequest.
-        :type: bool
+        :type upgrade: bool
         """
         self._upgrade = upgrade
 
@@ -73,7 +80,7 @@ class CreateTasksRequest:
 
 
         :return: The body of this CreateTasksRequest.
-        :rtype: CreateTasksRequestBody
+        :rtype: :class:`huaweicloudsdkvss.v3.CreateTasksRequestBody`
         """
         return self._body
 
@@ -83,7 +90,7 @@ class CreateTasksRequest:
 
 
         :param body: The body of this CreateTasksRequest.
-        :type: CreateTasksRequestBody
+        :type body: :class:`huaweicloudsdkvss.v3.CreateTasksRequestBody`
         """
         self._body = body
 

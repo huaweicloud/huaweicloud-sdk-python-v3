@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateRepositoryResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateRepositoryResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """CreateRepositoryResponse - a model defined in huaweicloud sdk"""
+        """CreateRepositoryResponse
+
+        The model defined in huaweicloud sdk
+
+        :param error: 
+        :type error: :class:`huaweicloudsdkcodehub.v3.Error`
+        :param result: 
+        :type result: :class:`huaweicloudsdkcodehub.v3.Repository`
+        :param status: 响应状态
+        :type status: str
+        """
         
         super(CreateRepositoryResponse, self).__init__()
 
@@ -56,7 +65,7 @@ class CreateRepositoryResponse(SdkResponse):
 
 
         :return: The error of this CreateRepositoryResponse.
-        :rtype: Error
+        :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
         """
         return self._error
 
@@ -66,7 +75,7 @@ class CreateRepositoryResponse(SdkResponse):
 
 
         :param error: The error of this CreateRepositoryResponse.
-        :type: Error
+        :type error: :class:`huaweicloudsdkcodehub.v3.Error`
         """
         self._error = error
 
@@ -76,7 +85,7 @@ class CreateRepositoryResponse(SdkResponse):
 
 
         :return: The result of this CreateRepositoryResponse.
-        :rtype: Repository
+        :rtype: :class:`huaweicloudsdkcodehub.v3.Repository`
         """
         return self._result
 
@@ -86,7 +95,7 @@ class CreateRepositoryResponse(SdkResponse):
 
 
         :param result: The result of this CreateRepositoryResponse.
-        :type: Repository
+        :type result: :class:`huaweicloudsdkcodehub.v3.Repository`
         """
         self._result = result
 
@@ -108,7 +117,7 @@ class CreateRepositoryResponse(SdkResponse):
         响应状态
 
         :param status: The status of this CreateRepositoryResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 

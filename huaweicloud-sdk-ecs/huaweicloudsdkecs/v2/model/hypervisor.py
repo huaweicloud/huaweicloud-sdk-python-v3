@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Hypervisor:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Hypervisor:
     }
 
     def __init__(self, hypervisor_type=None, csd_hypervisor=None):
-        """Hypervisor - a model defined in huaweicloud sdk"""
+        """Hypervisor
+
+        The model defined in huaweicloud sdk
+
+        :param hypervisor_type: hypervisor类型
+        :type hypervisor_type: str
+        :param csd_hypervisor: hypervisor csd信息
+        :type csd_hypervisor: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class Hypervisor:
         hypervisor类型
 
         :param hypervisor_type: The hypervisor_type of this Hypervisor.
-        :type: str
+        :type hypervisor_type: str
         """
         self._hypervisor_type = hypervisor_type
 
@@ -85,7 +92,7 @@ class Hypervisor:
         hypervisor csd信息
 
         :param csd_hypervisor: The csd_hypervisor of this Hypervisor.
-        :type: str
+        :type csd_hypervisor: str
         """
         self._csd_hypervisor = csd_hypervisor
 

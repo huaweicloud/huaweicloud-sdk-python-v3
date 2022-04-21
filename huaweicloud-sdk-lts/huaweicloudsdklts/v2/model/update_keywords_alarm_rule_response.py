@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateKeywordsAlarmRuleResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -58,7 +57,41 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
     }
 
     def __init__(self, keywords_alarm_rule_id=None, keywords_alarm_rule_name=None, keywords_alarm_rule_description=None, keywords_requests=None, frequency=None, keywords_alarm_level=None, keywords_alarm_send=None, domain_id=None, create_time=None, update_time=None, language=None, project_id=None, topics=None, condition_expression=None, index_id=None):
-        """UpdateKeywordsAlarmRuleResponse - a model defined in huaweicloud sdk"""
+        """UpdateKeywordsAlarmRuleResponse
+
+        The model defined in huaweicloud sdk
+
+        :param keywords_alarm_rule_id: 关键词告警id
+        :type keywords_alarm_rule_id: str
+        :param keywords_alarm_rule_name: 关键词告警名称
+        :type keywords_alarm_rule_name: str
+        :param keywords_alarm_rule_description: 关键词告警信息描述
+        :type keywords_alarm_rule_description: str
+        :param keywords_requests: 关键词详细信息
+        :type keywords_requests: list[:class:`huaweicloudsdklts.v2.KeywordsRequest`]
+        :param frequency: 
+        :type frequency: :class:`huaweicloudsdklts.v2.Frequency`
+        :param keywords_alarm_level: 告警级别
+        :type keywords_alarm_level: str
+        :param keywords_alarm_send: 是否发送
+        :type keywords_alarm_send: bool
+        :param domain_id: domainId
+        :type domain_id: str
+        :param create_time: 创建时间(毫秒时间戳)
+        :type create_time: int
+        :param update_time: 更新时间(毫秒时间戳)
+        :type update_time: int
+        :param language: 语言
+        :type language: str
+        :param project_id: 项目id
+        :type project_id: str
+        :param topics: 主题信息
+        :type topics: list[:class:`huaweicloudsdklts.v2.Topics`]
+        :param condition_expression: 暂无
+        :type condition_expression: str
+        :param index_id: 暂无
+        :type index_id: str
+        """
         
         super(UpdateKeywordsAlarmRuleResponse, self).__init__()
 
@@ -128,7 +161,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
         关键词告警id
 
         :param keywords_alarm_rule_id: The keywords_alarm_rule_id of this UpdateKeywordsAlarmRuleResponse.
-        :type: str
+        :type keywords_alarm_rule_id: str
         """
         self._keywords_alarm_rule_id = keywords_alarm_rule_id
 
@@ -150,7 +183,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
         关键词告警名称
 
         :param keywords_alarm_rule_name: The keywords_alarm_rule_name of this UpdateKeywordsAlarmRuleResponse.
-        :type: str
+        :type keywords_alarm_rule_name: str
         """
         self._keywords_alarm_rule_name = keywords_alarm_rule_name
 
@@ -172,7 +205,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
         关键词告警信息描述
 
         :param keywords_alarm_rule_description: The keywords_alarm_rule_description of this UpdateKeywordsAlarmRuleResponse.
-        :type: str
+        :type keywords_alarm_rule_description: str
         """
         self._keywords_alarm_rule_description = keywords_alarm_rule_description
 
@@ -183,7 +216,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
         关键词详细信息
 
         :return: The keywords_requests of this UpdateKeywordsAlarmRuleResponse.
-        :rtype: list[KeywordsRequest]
+        :rtype: list[:class:`huaweicloudsdklts.v2.KeywordsRequest`]
         """
         return self._keywords_requests
 
@@ -194,7 +227,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
         关键词详细信息
 
         :param keywords_requests: The keywords_requests of this UpdateKeywordsAlarmRuleResponse.
-        :type: list[KeywordsRequest]
+        :type keywords_requests: list[:class:`huaweicloudsdklts.v2.KeywordsRequest`]
         """
         self._keywords_requests = keywords_requests
 
@@ -204,7 +237,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
 
 
         :return: The frequency of this UpdateKeywordsAlarmRuleResponse.
-        :rtype: Frequency
+        :rtype: :class:`huaweicloudsdklts.v2.Frequency`
         """
         return self._frequency
 
@@ -214,7 +247,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
 
 
         :param frequency: The frequency of this UpdateKeywordsAlarmRuleResponse.
-        :type: Frequency
+        :type frequency: :class:`huaweicloudsdklts.v2.Frequency`
         """
         self._frequency = frequency
 
@@ -236,7 +269,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
         告警级别
 
         :param keywords_alarm_level: The keywords_alarm_level of this UpdateKeywordsAlarmRuleResponse.
-        :type: str
+        :type keywords_alarm_level: str
         """
         self._keywords_alarm_level = keywords_alarm_level
 
@@ -258,7 +291,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
         是否发送
 
         :param keywords_alarm_send: The keywords_alarm_send of this UpdateKeywordsAlarmRuleResponse.
-        :type: bool
+        :type keywords_alarm_send: bool
         """
         self._keywords_alarm_send = keywords_alarm_send
 
@@ -280,7 +313,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
         domainId
 
         :param domain_id: The domain_id of this UpdateKeywordsAlarmRuleResponse.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -302,7 +335,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
         创建时间(毫秒时间戳)
 
         :param create_time: The create_time of this UpdateKeywordsAlarmRuleResponse.
-        :type: int
+        :type create_time: int
         """
         self._create_time = create_time
 
@@ -324,7 +357,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
         更新时间(毫秒时间戳)
 
         :param update_time: The update_time of this UpdateKeywordsAlarmRuleResponse.
-        :type: int
+        :type update_time: int
         """
         self._update_time = update_time
 
@@ -346,7 +379,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
         语言
 
         :param language: The language of this UpdateKeywordsAlarmRuleResponse.
-        :type: str
+        :type language: str
         """
         self._language = language
 
@@ -368,7 +401,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
         项目id
 
         :param project_id: The project_id of this UpdateKeywordsAlarmRuleResponse.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -379,7 +412,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
         主题信息
 
         :return: The topics of this UpdateKeywordsAlarmRuleResponse.
-        :rtype: list[Topics]
+        :rtype: list[:class:`huaweicloudsdklts.v2.Topics`]
         """
         return self._topics
 
@@ -390,7 +423,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
         主题信息
 
         :param topics: The topics of this UpdateKeywordsAlarmRuleResponse.
-        :type: list[Topics]
+        :type topics: list[:class:`huaweicloudsdklts.v2.Topics`]
         """
         self._topics = topics
 
@@ -412,7 +445,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
         暂无
 
         :param condition_expression: The condition_expression of this UpdateKeywordsAlarmRuleResponse.
-        :type: str
+        :type condition_expression: str
         """
         self._condition_expression = condition_expression
 
@@ -434,7 +467,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
         暂无
 
         :param index_id: The index_id of this UpdateKeywordsAlarmRuleResponse.
-        :type: str
+        :type index_id: str
         """
         self._index_id = index_id
 

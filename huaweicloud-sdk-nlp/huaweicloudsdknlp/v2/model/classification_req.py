@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ClassificationReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ClassificationReq:
     }
 
     def __init__(self, content=None, domain=None):
-        """ClassificationReq - a model defined in huaweicloud sdk"""
+        """ClassificationReq
+
+        The model defined in huaweicloud sdk
+
+        :param content: 待分析文本。文本编码要求为utf-8。 限定400个字符以内，文本长度超过400个字符时，只检测前400个字符。
+        :type content: str
+        :param domain: 1 广告检测
+        :type domain: int
+        """
         
         
 
@@ -62,7 +69,7 @@ class ClassificationReq:
         待分析文本。文本编码要求为utf-8。 限定400个字符以内，文本长度超过400个字符时，只检测前400个字符。
 
         :param content: The content of this ClassificationReq.
-        :type: str
+        :type content: str
         """
         self._content = content
 
@@ -84,7 +91,7 @@ class ClassificationReq:
         1 广告检测
 
         :param domain: The domain of this ClassificationReq.
-        :type: int
+        :type domain: int
         """
         self._domain = domain
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Nameserver:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Nameserver:
     }
 
     def __init__(self, hostname=None, priority=None):
-        """Nameserver - a model defined in huaweicloud sdk"""
+        """Nameserver
+
+        The model defined in huaweicloud sdk
+
+        :param hostname: 主机名。
+        :type hostname: str
+        :param priority: 优先级。
+        :type priority: int
+        """
         
         
 
@@ -63,7 +70,7 @@ class Nameserver:
         主机名。
 
         :param hostname: The hostname of this Nameserver.
-        :type: str
+        :type hostname: str
         """
         self._hostname = hostname
 
@@ -85,7 +92,7 @@ class Nameserver:
         优先级。
 
         :param priority: The priority of this Nameserver.
-        :type: int
+        :type priority: int
         """
         self._priority = priority
 

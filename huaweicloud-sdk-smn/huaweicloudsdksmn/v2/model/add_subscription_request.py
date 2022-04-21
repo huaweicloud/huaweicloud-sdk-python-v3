@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddSubscriptionRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AddSubscriptionRequest:
     }
 
     def __init__(self, topic_urn=None, body=None):
-        """AddSubscriptionRequest - a model defined in huaweicloud sdk"""
+        """AddSubscriptionRequest
+
+        The model defined in huaweicloud sdk
+
+        :param topic_urn: Topic的唯一的资源标识，可通过[查询主题列表](https://support.huaweicloud.com/api-smn/smn_api_51004.html)获取该标识。
+        :type topic_urn: str
+        :param body: Body of the AddSubscriptionRequest
+        :type body: :class:`huaweicloudsdksmn.v2.AddSubscriptionRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class AddSubscriptionRequest:
         Topic的唯一的资源标识，可通过[查询主题列表](https://support.huaweicloud.com/api-smn/smn_api_51004.html)获取该标识。
 
         :param topic_urn: The topic_urn of this AddSubscriptionRequest.
-        :type: str
+        :type topic_urn: str
         """
         self._topic_urn = topic_urn
 
@@ -72,7 +79,7 @@ class AddSubscriptionRequest:
 
 
         :return: The body of this AddSubscriptionRequest.
-        :rtype: AddSubscriptionRequestBody
+        :rtype: :class:`huaweicloudsdksmn.v2.AddSubscriptionRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class AddSubscriptionRequest:
 
 
         :param body: The body of this AddSubscriptionRequest.
-        :type: AddSubscriptionRequestBody
+        :type body: :class:`huaweicloudsdksmn.v2.AddSubscriptionRequestBody`
         """
         self._body = body
 

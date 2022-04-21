@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Host:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -74,7 +73,57 @@ class Host:
     }
 
     def __init__(self, agent_id=None, host_id=None, host_name=None, host_ip=None, public_ip=None, enterprise_project_name=None, group_name=None, expire_time=None, policy_group_name=None, host_status=None, agent_status=None, version=None, protect_status=None, os_image=None, os_type=None, os_bit=None, detect_result=None, risk_port_num=None, risk_vul_num=None, risk_intrusion_num=None, risk_baseline_num=None, charging_mode=None, resource_id=None):
-        """Host - a model defined in huaweicloud sdk"""
+        """Host
+
+        The model defined in huaweicloud sdk
+
+        :param agent_id: 云主机id
+        :type agent_id: str
+        :param host_id: 云主机id
+        :type host_id: str
+        :param host_name: 云主机名称
+        :type host_name: str
+        :param host_ip: 云主机私有IP
+        :type host_ip: str
+        :param public_ip: 云主机公网IP
+        :type public_ip: str
+        :param enterprise_project_name: 所属企业项目名称
+        :type enterprise_project_name: str
+        :param group_name: 服务器组名称
+        :type group_name: str
+        :param expire_time: 服务到期时间
+        :type expire_time: int
+        :param policy_group_name: 策略组名称
+        :type policy_group_name: str
+        :param host_status: Agent状态，包含如下4种。   - ACTIVE ：正在运行。   - SHUTOFF ：关机。   - BUILDING ：创建中。   - ERROR ：故障。
+        :type host_status: str
+        :param agent_status: Agent状态，包含如下3种。   - uninstall ：未注册。   - online ：在线。   - offline ：离线。
+        :type agent_status: str
+        :param version: 主机开通的版本，包含如下5种输入。   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。
+        :type version: str
+        :param protect_status: 防护状态，包含如下2种。 - closed ：关闭。 - opened ：开启。
+        :type protect_status: str
+        :param os_image: 系统镜像
+        :type os_image: str
+        :param os_type: 系统类型
+        :type os_type: str
+        :param os_bit: 操作系统位数
+        :type os_bit: str
+        :param detect_result: 云主机安全检测结果，包含如下3种。 - undetect ：未检测。 - clean ：无风险。 - risk ：有风险。
+        :type detect_result: str
+        :param risk_port_num: 资产风险个数
+        :type risk_port_num: int
+        :param risk_vul_num: 漏洞风险个数
+        :type risk_vul_num: int
+        :param risk_intrusion_num: 入侵风险个数
+        :type risk_intrusion_num: int
+        :param risk_baseline_num: 基线风险个数
+        :type risk_baseline_num: int
+        :param charging_mode: 收费模式，包含如下2种。   - packet_cycle ：包年/包月。   - on_demand ：按需。
+        :type charging_mode: str
+        :param resource_id: 云服务资源实例ID（UUID）
+        :type resource_id: str
+        """
         
         
 
@@ -168,7 +217,7 @@ class Host:
         云主机id
 
         :param agent_id: The agent_id of this Host.
-        :type: str
+        :type agent_id: str
         """
         self._agent_id = agent_id
 
@@ -190,7 +239,7 @@ class Host:
         云主机id
 
         :param host_id: The host_id of this Host.
-        :type: str
+        :type host_id: str
         """
         self._host_id = host_id
 
@@ -212,7 +261,7 @@ class Host:
         云主机名称
 
         :param host_name: The host_name of this Host.
-        :type: str
+        :type host_name: str
         """
         self._host_name = host_name
 
@@ -234,7 +283,7 @@ class Host:
         云主机私有IP
 
         :param host_ip: The host_ip of this Host.
-        :type: str
+        :type host_ip: str
         """
         self._host_ip = host_ip
 
@@ -256,7 +305,7 @@ class Host:
         云主机公网IP
 
         :param public_ip: The public_ip of this Host.
-        :type: str
+        :type public_ip: str
         """
         self._public_ip = public_ip
 
@@ -278,7 +327,7 @@ class Host:
         所属企业项目名称
 
         :param enterprise_project_name: The enterprise_project_name of this Host.
-        :type: str
+        :type enterprise_project_name: str
         """
         self._enterprise_project_name = enterprise_project_name
 
@@ -300,7 +349,7 @@ class Host:
         服务器组名称
 
         :param group_name: The group_name of this Host.
-        :type: str
+        :type group_name: str
         """
         self._group_name = group_name
 
@@ -322,7 +371,7 @@ class Host:
         服务到期时间
 
         :param expire_time: The expire_time of this Host.
-        :type: int
+        :type expire_time: int
         """
         self._expire_time = expire_time
 
@@ -344,7 +393,7 @@ class Host:
         策略组名称
 
         :param policy_group_name: The policy_group_name of this Host.
-        :type: str
+        :type policy_group_name: str
         """
         self._policy_group_name = policy_group_name
 
@@ -366,7 +415,7 @@ class Host:
         Agent状态，包含如下4种。   - ACTIVE ：正在运行。   - SHUTOFF ：关机。   - BUILDING ：创建中。   - ERROR ：故障。
 
         :param host_status: The host_status of this Host.
-        :type: str
+        :type host_status: str
         """
         self._host_status = host_status
 
@@ -388,7 +437,7 @@ class Host:
         Agent状态，包含如下3种。   - uninstall ：未注册。   - online ：在线。   - offline ：离线。
 
         :param agent_status: The agent_status of this Host.
-        :type: str
+        :type agent_status: str
         """
         self._agent_status = agent_status
 
@@ -410,7 +459,7 @@ class Host:
         主机开通的版本，包含如下5种输入。   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。
 
         :param version: The version of this Host.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -432,7 +481,7 @@ class Host:
         防护状态，包含如下2种。 - closed ：关闭。 - opened ：开启。
 
         :param protect_status: The protect_status of this Host.
-        :type: str
+        :type protect_status: str
         """
         self._protect_status = protect_status
 
@@ -454,7 +503,7 @@ class Host:
         系统镜像
 
         :param os_image: The os_image of this Host.
-        :type: str
+        :type os_image: str
         """
         self._os_image = os_image
 
@@ -476,7 +525,7 @@ class Host:
         系统类型
 
         :param os_type: The os_type of this Host.
-        :type: str
+        :type os_type: str
         """
         self._os_type = os_type
 
@@ -498,7 +547,7 @@ class Host:
         操作系统位数
 
         :param os_bit: The os_bit of this Host.
-        :type: str
+        :type os_bit: str
         """
         self._os_bit = os_bit
 
@@ -520,7 +569,7 @@ class Host:
         云主机安全检测结果，包含如下3种。 - undetect ：未检测。 - clean ：无风险。 - risk ：有风险。
 
         :param detect_result: The detect_result of this Host.
-        :type: str
+        :type detect_result: str
         """
         self._detect_result = detect_result
 
@@ -542,7 +591,7 @@ class Host:
         资产风险个数
 
         :param risk_port_num: The risk_port_num of this Host.
-        :type: int
+        :type risk_port_num: int
         """
         self._risk_port_num = risk_port_num
 
@@ -564,7 +613,7 @@ class Host:
         漏洞风险个数
 
         :param risk_vul_num: The risk_vul_num of this Host.
-        :type: int
+        :type risk_vul_num: int
         """
         self._risk_vul_num = risk_vul_num
 
@@ -586,7 +635,7 @@ class Host:
         入侵风险个数
 
         :param risk_intrusion_num: The risk_intrusion_num of this Host.
-        :type: int
+        :type risk_intrusion_num: int
         """
         self._risk_intrusion_num = risk_intrusion_num
 
@@ -608,7 +657,7 @@ class Host:
         基线风险个数
 
         :param risk_baseline_num: The risk_baseline_num of this Host.
-        :type: int
+        :type risk_baseline_num: int
         """
         self._risk_baseline_num = risk_baseline_num
 
@@ -630,7 +679,7 @@ class Host:
         收费模式，包含如下2种。   - packet_cycle ：包年/包月。   - on_demand ：按需。
 
         :param charging_mode: The charging_mode of this Host.
-        :type: str
+        :type charging_mode: str
         """
         self._charging_mode = charging_mode
 
@@ -652,7 +701,7 @@ class Host:
         云服务资源实例ID（UUID）
 
         :param resource_id: The resource_id of this Host.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 

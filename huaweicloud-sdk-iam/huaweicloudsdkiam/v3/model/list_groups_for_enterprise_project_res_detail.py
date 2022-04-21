@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListGroupsForEnterpriseProjectResDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListGroupsForEnterpriseProjectResDetail:
     }
 
     def __init__(self, create_time=None, description=None, domain_id=None, id=None, name=None):
-        """ListGroupsForEnterpriseProjectResDetail - a model defined in huaweicloud sdk"""
+        """ListGroupsForEnterpriseProjectResDetail
+
+        The model defined in huaweicloud sdk
+
+        :param create_time: 用户组创建时间。
+        :type create_time: int
+        :param description: 用户组描述。
+        :type description: str
+        :param domain_id: 租户Id。
+        :type domain_id: str
+        :param id: 用户组Id。
+        :type id: str
+        :param name: 用户组名称。
+        :type name: str
+        """
         
         
 
@@ -73,7 +86,7 @@ class ListGroupsForEnterpriseProjectResDetail:
         用户组创建时间。
 
         :param create_time: The create_time of this ListGroupsForEnterpriseProjectResDetail.
-        :type: int
+        :type create_time: int
         """
         self._create_time = create_time
 
@@ -95,7 +108,7 @@ class ListGroupsForEnterpriseProjectResDetail:
         用户组描述。
 
         :param description: The description of this ListGroupsForEnterpriseProjectResDetail.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -117,7 +130,7 @@ class ListGroupsForEnterpriseProjectResDetail:
         租户Id。
 
         :param domain_id: The domain_id of this ListGroupsForEnterpriseProjectResDetail.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -139,7 +152,7 @@ class ListGroupsForEnterpriseProjectResDetail:
         用户组Id。
 
         :param id: The id of this ListGroupsForEnterpriseProjectResDetail.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -161,7 +174,7 @@ class ListGroupsForEnterpriseProjectResDetail:
         用户组名称。
 
         :param name: The name of this ListGroupsForEnterpriseProjectResDetail.
-        :type: str
+        :type name: str
         """
         self._name = name
 

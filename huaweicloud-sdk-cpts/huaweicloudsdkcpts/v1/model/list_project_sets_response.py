@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListProjectSetsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListProjectSetsResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, projects=None):
-        """ListProjectSetsResponse - a model defined in huaweicloud sdk"""
+        """ListProjectSetsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param code: 状态码
+        :type code: str
+        :param message: 描述
+        :type message: str
+        :param projects: 工程集详细信息
+        :type projects: list[:class:`huaweicloudsdkcpts.v1.ProjectsSet`]
+        """
         
         super(ListProjectSetsResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListProjectSetsResponse(SdkResponse):
         状态码
 
         :param code: The code of this ListProjectSetsResponse.
-        :type: str
+        :type code: str
         """
         self._code = code
 
@@ -90,7 +99,7 @@ class ListProjectSetsResponse(SdkResponse):
         描述
 
         :param message: The message of this ListProjectSetsResponse.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -101,7 +110,7 @@ class ListProjectSetsResponse(SdkResponse):
         工程集详细信息
 
         :return: The projects of this ListProjectSetsResponse.
-        :rtype: list[ProjectsSet]
+        :rtype: list[:class:`huaweicloudsdkcpts.v1.ProjectsSet`]
         """
         return self._projects
 
@@ -112,7 +121,7 @@ class ListProjectSetsResponse(SdkResponse):
         工程集详细信息
 
         :param projects: The projects of this ListProjectSetsResponse.
-        :type: list[ProjectsSet]
+        :type projects: list[:class:`huaweicloudsdkcpts.v1.ProjectsSet`]
         """
         self._projects = projects
 

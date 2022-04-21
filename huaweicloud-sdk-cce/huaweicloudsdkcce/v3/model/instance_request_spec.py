@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InstanceRequestSpec:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class InstanceRequestSpec:
     }
 
     def __init__(self, version=None, cluster_id=None, values=None, addon_template_name=None):
-        """InstanceRequestSpec - a model defined in huaweicloud sdk"""
+        """InstanceRequestSpec
+
+        The model defined in huaweicloud sdk
+
+        :param version: 待安装、升级插件的具体版本版本号，例如1.0.0
+        :type version: str
+        :param cluster_id: 集群id
+        :type cluster_id: str
+        :param values: 插件模板安装参数（各插件不同），升级插件时需要填写全量安装参数，未填写参数将使用插件模板中的默认值，当前插件安装参数可通过查询插件实例接口获取。
+        :type values: dict(str, object)
+        :param addon_template_name: 待安装插件模板名称，如coredns
+        :type addon_template_name: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class InstanceRequestSpec:
         待安装、升级插件的具体版本版本号，例如1.0.0
 
         :param version: The version of this InstanceRequestSpec.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -91,7 +102,7 @@ class InstanceRequestSpec:
         集群id
 
         :param cluster_id: The cluster_id of this InstanceRequestSpec.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -113,7 +124,7 @@ class InstanceRequestSpec:
         插件模板安装参数（各插件不同），升级插件时需要填写全量安装参数，未填写参数将使用插件模板中的默认值，当前插件安装参数可通过查询插件实例接口获取。
 
         :param values: The values of this InstanceRequestSpec.
-        :type: dict(str, object)
+        :type values: dict(str, object)
         """
         self._values = values
 
@@ -135,7 +146,7 @@ class InstanceRequestSpec:
         待安装插件模板名称，如coredns
 
         :param addon_template_name: The addon_template_name of this InstanceRequestSpec.
-        :type: str
+        :type addon_template_name: str
         """
         self._addon_template_name = addon_template_name
 

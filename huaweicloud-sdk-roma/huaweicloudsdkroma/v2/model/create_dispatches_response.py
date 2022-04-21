@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateDispatchesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class CreateDispatchesResponse(SdkResponse):
     }
 
     def __init__(self, dispatch_id=None, task_id=None, start_datetime=None, period=None, dispatch_interval=None, created_date=None, last_modified_date=None, remark=None, use_quartz_cron=None, cron=None):
-        """CreateDispatchesResponse - a model defined in huaweicloud sdk"""
+        """CreateDispatchesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param dispatch_id: 调度计划ID
+        :type dispatch_id: str
+        :param task_id: 调度计划关联的任务ID
+        :type task_id: str
+        :param start_datetime: 调度计划的执行开始时间
+        :type start_datetime: int
+        :param period: 调度计划执行周期的时间单位，当使用cron表达式时，为空 - MIN (分钟) - HOUR (小时) - DAY (日) - WEEK (周) - MON (月)
+        :type period: str
+        :param dispatch_interval: 调度计划的执行间隔时间周期
+        :type dispatch_interval: int
+        :param created_date: 调度计划的创建时间
+        :type created_date: int
+        :param last_modified_date: 调度计划最近一次的修改时间
+        :type last_modified_date: int
+        :param remark: 调度计划的备注信息
+        :type remark: str
+        :param use_quartz_cron: 调度计划是否使用cron表达式，允许如下值： - true (使用cron表达式) - false (不使用cron表达式)
+        :type use_quartz_cron: bool
+        :param cron: 调度计划的cron表达式
+        :type cron: str
+        """
         
         super(CreateDispatchesResponse, self).__init__()
 
@@ -103,7 +126,7 @@ class CreateDispatchesResponse(SdkResponse):
         调度计划ID
 
         :param dispatch_id: The dispatch_id of this CreateDispatchesResponse.
-        :type: str
+        :type dispatch_id: str
         """
         self._dispatch_id = dispatch_id
 
@@ -125,7 +148,7 @@ class CreateDispatchesResponse(SdkResponse):
         调度计划关联的任务ID
 
         :param task_id: The task_id of this CreateDispatchesResponse.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -147,7 +170,7 @@ class CreateDispatchesResponse(SdkResponse):
         调度计划的执行开始时间
 
         :param start_datetime: The start_datetime of this CreateDispatchesResponse.
-        :type: int
+        :type start_datetime: int
         """
         self._start_datetime = start_datetime
 
@@ -169,7 +192,7 @@ class CreateDispatchesResponse(SdkResponse):
         调度计划执行周期的时间单位，当使用cron表达式时，为空 - MIN (分钟) - HOUR (小时) - DAY (日) - WEEK (周) - MON (月)
 
         :param period: The period of this CreateDispatchesResponse.
-        :type: str
+        :type period: str
         """
         self._period = period
 
@@ -191,7 +214,7 @@ class CreateDispatchesResponse(SdkResponse):
         调度计划的执行间隔时间周期
 
         :param dispatch_interval: The dispatch_interval of this CreateDispatchesResponse.
-        :type: int
+        :type dispatch_interval: int
         """
         self._dispatch_interval = dispatch_interval
 
@@ -213,7 +236,7 @@ class CreateDispatchesResponse(SdkResponse):
         调度计划的创建时间
 
         :param created_date: The created_date of this CreateDispatchesResponse.
-        :type: int
+        :type created_date: int
         """
         self._created_date = created_date
 
@@ -235,7 +258,7 @@ class CreateDispatchesResponse(SdkResponse):
         调度计划最近一次的修改时间
 
         :param last_modified_date: The last_modified_date of this CreateDispatchesResponse.
-        :type: int
+        :type last_modified_date: int
         """
         self._last_modified_date = last_modified_date
 
@@ -257,7 +280,7 @@ class CreateDispatchesResponse(SdkResponse):
         调度计划的备注信息
 
         :param remark: The remark of this CreateDispatchesResponse.
-        :type: str
+        :type remark: str
         """
         self._remark = remark
 
@@ -279,7 +302,7 @@ class CreateDispatchesResponse(SdkResponse):
         调度计划是否使用cron表达式，允许如下值： - true (使用cron表达式) - false (不使用cron表达式)
 
         :param use_quartz_cron: The use_quartz_cron of this CreateDispatchesResponse.
-        :type: bool
+        :type use_quartz_cron: bool
         """
         self._use_quartz_cron = use_quartz_cron
 
@@ -301,7 +324,7 @@ class CreateDispatchesResponse(SdkResponse):
         调度计划的cron表达式
 
         :param cron: The cron of this CreateDispatchesResponse.
-        :type: str
+        :type cron: str
         """
         self._cron = cron
 

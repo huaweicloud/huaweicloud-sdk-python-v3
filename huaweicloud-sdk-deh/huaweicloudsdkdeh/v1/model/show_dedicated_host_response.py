@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDedicatedHostResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowDedicatedHostResponse(SdkResponse):
     }
 
     def __init__(self, dedicated_host=None):
-        """ShowDedicatedHostResponse - a model defined in huaweicloud sdk"""
+        """ShowDedicatedHostResponse
+
+        The model defined in huaweicloud sdk
+
+        :param dedicated_host: 
+        :type dedicated_host: :class:`huaweicloudsdkdeh.v1.RespDedicatedHost`
+        """
         
         super(ShowDedicatedHostResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class ShowDedicatedHostResponse(SdkResponse):
 
 
         :return: The dedicated_host of this ShowDedicatedHostResponse.
-        :rtype: RespDedicatedHost
+        :rtype: :class:`huaweicloudsdkdeh.v1.RespDedicatedHost`
         """
         return self._dedicated_host
 
@@ -56,7 +61,7 @@ class ShowDedicatedHostResponse(SdkResponse):
 
 
         :param dedicated_host: The dedicated_host of this ShowDedicatedHostResponse.
-        :type: RespDedicatedHost
+        :type dedicated_host: :class:`huaweicloudsdkdeh.v1.RespDedicatedHost`
         """
         self._dedicated_host = dedicated_host
 

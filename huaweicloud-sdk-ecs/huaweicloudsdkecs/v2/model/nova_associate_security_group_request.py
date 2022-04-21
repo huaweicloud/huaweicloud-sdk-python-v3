@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NovaAssociateSecurityGroupRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class NovaAssociateSecurityGroupRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """NovaAssociateSecurityGroupRequest - a model defined in huaweicloud sdk"""
+        """NovaAssociateSecurityGroupRequest
+
+        The model defined in huaweicloud sdk
+
+        :param server_id: 弹性云服务器ID。
+        :type server_id: str
+        :param body: Body of the NovaAssociateSecurityGroupRequest
+        :type body: :class:`huaweicloudsdkecs.v2.NovaAssociateSecurityGroupRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class NovaAssociateSecurityGroupRequest:
         弹性云服务器ID。
 
         :param server_id: The server_id of this NovaAssociateSecurityGroupRequest.
-        :type: str
+        :type server_id: str
         """
         self._server_id = server_id
 
@@ -72,7 +79,7 @@ class NovaAssociateSecurityGroupRequest:
 
 
         :return: The body of this NovaAssociateSecurityGroupRequest.
-        :rtype: NovaAssociateSecurityGroupRequestBody
+        :rtype: :class:`huaweicloudsdkecs.v2.NovaAssociateSecurityGroupRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class NovaAssociateSecurityGroupRequest:
 
 
         :param body: The body of this NovaAssociateSecurityGroupRequest.
-        :type: NovaAssociateSecurityGroupRequestBody
+        :type body: :class:`huaweicloudsdkecs.v2.NovaAssociateSecurityGroupRequestBody`
         """
         self._body = body
 

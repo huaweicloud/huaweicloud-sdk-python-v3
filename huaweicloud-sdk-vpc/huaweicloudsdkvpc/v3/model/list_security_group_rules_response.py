@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSecurityGroupRulesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListSecurityGroupRulesResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, security_group_rules=None, page_info=None):
-        """ListSecurityGroupRulesResponse - a model defined in huaweicloud sdk"""
+        """ListSecurityGroupRulesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param request_id: 请求ID
+        :type request_id: str
+        :param security_group_rules: 安全组规则列表响应体
+        :type security_group_rules: list[:class:`huaweicloudsdkvpc.v3.SecurityGroupRule`]
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkvpc.v3.PageInfo`
+        """
         
         super(ListSecurityGroupRulesResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListSecurityGroupRulesResponse(SdkResponse):
         请求ID
 
         :param request_id: The request_id of this ListSecurityGroupRulesResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 
@@ -79,7 +88,7 @@ class ListSecurityGroupRulesResponse(SdkResponse):
         安全组规则列表响应体
 
         :return: The security_group_rules of this ListSecurityGroupRulesResponse.
-        :rtype: list[SecurityGroupRule]
+        :rtype: list[:class:`huaweicloudsdkvpc.v3.SecurityGroupRule`]
         """
         return self._security_group_rules
 
@@ -90,7 +99,7 @@ class ListSecurityGroupRulesResponse(SdkResponse):
         安全组规则列表响应体
 
         :param security_group_rules: The security_group_rules of this ListSecurityGroupRulesResponse.
-        :type: list[SecurityGroupRule]
+        :type security_group_rules: list[:class:`huaweicloudsdkvpc.v3.SecurityGroupRule`]
         """
         self._security_group_rules = security_group_rules
 
@@ -100,7 +109,7 @@ class ListSecurityGroupRulesResponse(SdkResponse):
 
 
         :return: The page_info of this ListSecurityGroupRulesResponse.
-        :rtype: PageInfo
+        :rtype: :class:`huaweicloudsdkvpc.v3.PageInfo`
         """
         return self._page_info
 
@@ -110,7 +119,7 @@ class ListSecurityGroupRulesResponse(SdkResponse):
 
 
         :param page_info: The page_info of this ListSecurityGroupRulesResponse.
-        :type: PageInfo
+        :type page_info: :class:`huaweicloudsdkvpc.v3.PageInfo`
         """
         self._page_info = page_info
 

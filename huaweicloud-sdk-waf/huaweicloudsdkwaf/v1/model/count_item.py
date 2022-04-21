@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CountItem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CountItem:
     }
 
     def __init__(self, key=None, num=None):
-        """CountItem - a model defined in huaweicloud sdk"""
+        """CountItem
+
+        The model defined in huaweicloud sdk
+
+        :param key: 类型
+        :type key: str
+        :param num: 数量
+        :type num: int
+        """
         
         
 
@@ -63,7 +70,7 @@ class CountItem:
         类型
 
         :param key: The key of this CountItem.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -85,7 +92,7 @@ class CountItem:
         数量
 
         :param num: The num of this CountItem.
-        :type: int
+        :type num: int
         """
         self._num = num
 

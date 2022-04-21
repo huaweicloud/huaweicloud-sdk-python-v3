@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowResourceGroupResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ShowResourceGroupResponse(SdkResponse):
     }
 
     def __init__(self, group_name=None, group_id=None, resources=None, status=None, create_time=None, meta_data=None, enterprise_project_id=None):
-        """ShowResourceGroupResponse - a model defined in huaweicloud sdk"""
+        """ShowResourceGroupResponse
+
+        The model defined in huaweicloud sdk
+
+        :param group_name: 资源分组的名称，如：Resource-Group-ECS-01。
+        :type group_name: str
+        :param group_id: 资源分组的ID，如：rg1603786526428bWbVmk4rP。
+        :type group_id: str
+        :param resources: 一组或者多个资源信息。
+        :type resources: list[:class:`huaweicloudsdkces.v1.ResourceGroup`]
+        :param status: 资源分组的当前状态，值可为health、unhealth、no_alarm_rule；health表示健康，unhealth表示不健康，no_alarm_rule表示未设置告警规则。
+        :type status: str
+        :param create_time: 资源分组的创建时间，UNIX时间戳，单位毫秒；如：1603819753000。
+        :type create_time: int
+        :param meta_data: 
+        :type meta_data: :class:`huaweicloudsdkces.v1.MetaData`
+        :param enterprise_project_id: 创建资源分组时关联的企业项目，默认值为0，表示企业项目为default。
+        :type enterprise_project_id: str
+        """
         
         super(ShowResourceGroupResponse, self).__init__()
 
@@ -88,7 +105,7 @@ class ShowResourceGroupResponse(SdkResponse):
         资源分组的名称，如：Resource-Group-ECS-01。
 
         :param group_name: The group_name of this ShowResourceGroupResponse.
-        :type: str
+        :type group_name: str
         """
         self._group_name = group_name
 
@@ -110,7 +127,7 @@ class ShowResourceGroupResponse(SdkResponse):
         资源分组的ID，如：rg1603786526428bWbVmk4rP。
 
         :param group_id: The group_id of this ShowResourceGroupResponse.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -121,7 +138,7 @@ class ShowResourceGroupResponse(SdkResponse):
         一组或者多个资源信息。
 
         :return: The resources of this ShowResourceGroupResponse.
-        :rtype: list[ResourceGroup]
+        :rtype: list[:class:`huaweicloudsdkces.v1.ResourceGroup`]
         """
         return self._resources
 
@@ -132,7 +149,7 @@ class ShowResourceGroupResponse(SdkResponse):
         一组或者多个资源信息。
 
         :param resources: The resources of this ShowResourceGroupResponse.
-        :type: list[ResourceGroup]
+        :type resources: list[:class:`huaweicloudsdkces.v1.ResourceGroup`]
         """
         self._resources = resources
 
@@ -154,7 +171,7 @@ class ShowResourceGroupResponse(SdkResponse):
         资源分组的当前状态，值可为health、unhealth、no_alarm_rule；health表示健康，unhealth表示不健康，no_alarm_rule表示未设置告警规则。
 
         :param status: The status of this ShowResourceGroupResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -176,7 +193,7 @@ class ShowResourceGroupResponse(SdkResponse):
         资源分组的创建时间，UNIX时间戳，单位毫秒；如：1603819753000。
 
         :param create_time: The create_time of this ShowResourceGroupResponse.
-        :type: int
+        :type create_time: int
         """
         self._create_time = create_time
 
@@ -186,7 +203,7 @@ class ShowResourceGroupResponse(SdkResponse):
 
 
         :return: The meta_data of this ShowResourceGroupResponse.
-        :rtype: MetaData
+        :rtype: :class:`huaweicloudsdkces.v1.MetaData`
         """
         return self._meta_data
 
@@ -196,7 +213,7 @@ class ShowResourceGroupResponse(SdkResponse):
 
 
         :param meta_data: The meta_data of this ShowResourceGroupResponse.
-        :type: MetaData
+        :type meta_data: :class:`huaweicloudsdkces.v1.MetaData`
         """
         self._meta_data = meta_data
 
@@ -218,7 +235,7 @@ class ShowResourceGroupResponse(SdkResponse):
         创建资源分组时关联的企业项目，默认值为0，表示企业项目为default。
 
         :param enterprise_project_id: The enterprise_project_id of this ShowResourceGroupResponse.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 

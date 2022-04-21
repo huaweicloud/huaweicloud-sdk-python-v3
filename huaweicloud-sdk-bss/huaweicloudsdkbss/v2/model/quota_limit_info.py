@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QuotaLimitInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class QuotaLimitInfo:
     }
 
     def __init__(self, limit_key=None, limit_values=None):
-        """QuotaLimitInfo - a model defined in huaweicloud sdk"""
+        """QuotaLimitInfo
+
+        The model defined in huaweicloud sdk
+
+        :param limit_key: 属性key值。
+        :type limit_key: str
+        :param limit_values: 属性值，具体参见表3。
+        :type limit_values: list[:class:`huaweicloudsdkbss.v2.LimitValue`]
+        """
         
         
 
@@ -63,7 +70,7 @@ class QuotaLimitInfo:
         属性key值。
 
         :param limit_key: The limit_key of this QuotaLimitInfo.
-        :type: str
+        :type limit_key: str
         """
         self._limit_key = limit_key
 
@@ -74,7 +81,7 @@ class QuotaLimitInfo:
         属性值，具体参见表3。
 
         :return: The limit_values of this QuotaLimitInfo.
-        :rtype: list[LimitValue]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.LimitValue`]
         """
         return self._limit_values
 
@@ -85,7 +92,7 @@ class QuotaLimitInfo:
         属性值，具体参见表3。
 
         :param limit_values: The limit_values of this QuotaLimitInfo.
-        :type: list[LimitValue]
+        :type limit_values: list[:class:`huaweicloudsdkbss.v2.LimitValue`]
         """
         self._limit_values = limit_values
 

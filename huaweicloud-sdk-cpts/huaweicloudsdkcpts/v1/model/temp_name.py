@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TempName:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class TempName:
     }
 
     def __init__(self, name=None):
-        """TempName - a model defined in huaweicloud sdk"""
+        """TempName
+
+        The model defined in huaweicloud sdk
+
+        :param name: name
+        :type name: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class TempName:
         name
 
         :param name: The name of this TempName.
-        :type: str
+        :type name: str
         """
         self._name = name
 

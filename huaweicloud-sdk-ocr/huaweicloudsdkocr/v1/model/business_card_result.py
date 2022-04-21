@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BusinessCardResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class BusinessCardResult:
     }
 
     def __init__(self, name=None, title=None, company=None, department=None, phone=None, address=None, email=None, fax=None, postcode=None, website=None, extra_info_list=None, adjusted_image=None):
-        """BusinessCardResult - a model defined in huaweicloud sdk"""
+        """BusinessCardResult
+
+        The model defined in huaweicloud sdk
+
+        :param name: 姓名列表。 
+        :type name: list[str]
+        :param title: 职位头衔列表。 
+        :type title: list[str]
+        :param company: 公司列表。 
+        :type company: list[str]
+        :param department: 部门列表。 
+        :type department: list[str]
+        :param phone: 联系方式列表。 
+        :type phone: list[str]
+        :param address: 地址列表。 
+        :type address: list[str]
+        :param email: 邮箱列表。 
+        :type email: list[str]
+        :param fax: 传真列表。 
+        :type fax: list[str]
+        :param postcode: 邮编列表。 
+        :type postcode: list[str]
+        :param website: 公司网址列表。 
+        :type website: list[str]
+        :param extra_info_list: 其余信息列表。 
+        :type extra_info_list: list[:class:`huaweicloudsdkocr.v1.ExtraInfoList`]
+        :param adjusted_image: 返回矫正后的名片图像的BASE64编码。 
+        :type adjusted_image: str
+        """
         
         
 
@@ -113,7 +140,7 @@ class BusinessCardResult:
         姓名列表。 
 
         :param name: The name of this BusinessCardResult.
-        :type: list[str]
+        :type name: list[str]
         """
         self._name = name
 
@@ -135,7 +162,7 @@ class BusinessCardResult:
         职位头衔列表。 
 
         :param title: The title of this BusinessCardResult.
-        :type: list[str]
+        :type title: list[str]
         """
         self._title = title
 
@@ -157,7 +184,7 @@ class BusinessCardResult:
         公司列表。 
 
         :param company: The company of this BusinessCardResult.
-        :type: list[str]
+        :type company: list[str]
         """
         self._company = company
 
@@ -179,7 +206,7 @@ class BusinessCardResult:
         部门列表。 
 
         :param department: The department of this BusinessCardResult.
-        :type: list[str]
+        :type department: list[str]
         """
         self._department = department
 
@@ -201,7 +228,7 @@ class BusinessCardResult:
         联系方式列表。 
 
         :param phone: The phone of this BusinessCardResult.
-        :type: list[str]
+        :type phone: list[str]
         """
         self._phone = phone
 
@@ -223,7 +250,7 @@ class BusinessCardResult:
         地址列表。 
 
         :param address: The address of this BusinessCardResult.
-        :type: list[str]
+        :type address: list[str]
         """
         self._address = address
 
@@ -245,7 +272,7 @@ class BusinessCardResult:
         邮箱列表。 
 
         :param email: The email of this BusinessCardResult.
-        :type: list[str]
+        :type email: list[str]
         """
         self._email = email
 
@@ -267,7 +294,7 @@ class BusinessCardResult:
         传真列表。 
 
         :param fax: The fax of this BusinessCardResult.
-        :type: list[str]
+        :type fax: list[str]
         """
         self._fax = fax
 
@@ -289,7 +316,7 @@ class BusinessCardResult:
         邮编列表。 
 
         :param postcode: The postcode of this BusinessCardResult.
-        :type: list[str]
+        :type postcode: list[str]
         """
         self._postcode = postcode
 
@@ -311,7 +338,7 @@ class BusinessCardResult:
         公司网址列表。 
 
         :param website: The website of this BusinessCardResult.
-        :type: list[str]
+        :type website: list[str]
         """
         self._website = website
 
@@ -322,7 +349,7 @@ class BusinessCardResult:
         其余信息列表。 
 
         :return: The extra_info_list of this BusinessCardResult.
-        :rtype: list[ExtraInfoList]
+        :rtype: list[:class:`huaweicloudsdkocr.v1.ExtraInfoList`]
         """
         return self._extra_info_list
 
@@ -333,7 +360,7 @@ class BusinessCardResult:
         其余信息列表。 
 
         :param extra_info_list: The extra_info_list of this BusinessCardResult.
-        :type: list[ExtraInfoList]
+        :type extra_info_list: list[:class:`huaweicloudsdkocr.v1.ExtraInfoList`]
         """
         self._extra_info_list = extra_info_list
 
@@ -355,7 +382,7 @@ class BusinessCardResult:
         返回矫正后的名片图像的BASE64编码。 
 
         :param adjusted_image: The adjusted_image of this BusinessCardResult.
-        :type: str
+        :type adjusted_image: str
         """
         self._adjusted_image = adjusted_image
 

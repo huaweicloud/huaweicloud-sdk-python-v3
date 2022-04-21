@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Topics:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class Topics:
     }
 
     def __init__(self, name=None, topic_urn=None, display_name=None, push_policy=None):
-        """Topics - a model defined in huaweicloud sdk"""
+        """Topics
+
+        The model defined in huaweicloud sdk
+
+        :param name: 主题名称
+        :type name: str
+        :param topic_urn: Topic的唯一的资源标识。
+        :type topic_urn: str
+        :param display_name: Topic的显示名，推送邮件消息时，作为邮件发件人显示
+        :type display_name: str
+        :param push_policy: 消息推送的策略
+        :type push_policy: int
+        """
         
         
 
@@ -71,7 +82,7 @@ class Topics:
         主题名称
 
         :param name: The name of this Topics.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -93,7 +104,7 @@ class Topics:
         Topic的唯一的资源标识。
 
         :param topic_urn: The topic_urn of this Topics.
-        :type: str
+        :type topic_urn: str
         """
         self._topic_urn = topic_urn
 
@@ -115,7 +126,7 @@ class Topics:
         Topic的显示名，推送邮件消息时，作为邮件发件人显示
 
         :param display_name: The display_name of this Topics.
-        :type: str
+        :type display_name: str
         """
         self._display_name = display_name
 
@@ -137,7 +148,7 @@ class Topics:
         消息推送的策略
 
         :param push_policy: The push_policy of this Topics.
-        :type: int
+        :type push_policy: int
         """
         self._push_policy = push_policy
 

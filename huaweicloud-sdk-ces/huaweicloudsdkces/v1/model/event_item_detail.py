@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EventItemDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class EventItemDetail:
     }
 
     def __init__(self, content=None, group_id=None, resource_id=None, resource_name=None, event_state=None, event_level=None, event_user=None):
-        """EventItemDetail - a model defined in huaweicloud sdk"""
+        """EventItemDetail
+
+        The model defined in huaweicloud sdk
+
+        :param content: 事件内容，最大长度4096。
+        :type content: str
+        :param group_id: 所属分组。  资源分组对应的ID，必须传存在的分组ID。
+        :type group_id: str
+        :param resource_id: 资源ID，支持字母、数字_ -：，最大长度128。
+        :type resource_id: str
+        :param resource_name: 资源名称，支持字母 中文 数字_ -. ，最大长度128。
+        :type resource_name: str
+        :param event_state: 事件状态。  枚举类型：normal\\warning\\incident
+        :type event_state: str
+        :param event_level: 事件级别。  枚举类型：Critical, Major, Minor, Info
+        :type event_level: str
+        :param event_user: 事件用户。  支持字母 数字_ -/空格 ，最大长度64。
+        :type event_user: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class EventItemDetail:
         事件内容，最大长度4096。
 
         :param content: The content of this EventItemDetail.
-        :type: str
+        :type content: str
         """
         self._content = content
 
@@ -110,7 +127,7 @@ class EventItemDetail:
         所属分组。  资源分组对应的ID，必须传存在的分组ID。
 
         :param group_id: The group_id of this EventItemDetail.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -132,7 +149,7 @@ class EventItemDetail:
         资源ID，支持字母、数字_ -：，最大长度128。
 
         :param resource_id: The resource_id of this EventItemDetail.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -154,7 +171,7 @@ class EventItemDetail:
         资源名称，支持字母 中文 数字_ -. ，最大长度128。
 
         :param resource_name: The resource_name of this EventItemDetail.
-        :type: str
+        :type resource_name: str
         """
         self._resource_name = resource_name
 
@@ -176,7 +193,7 @@ class EventItemDetail:
         事件状态。  枚举类型：normal\\warning\\incident
 
         :param event_state: The event_state of this EventItemDetail.
-        :type: str
+        :type event_state: str
         """
         self._event_state = event_state
 
@@ -198,7 +215,7 @@ class EventItemDetail:
         事件级别。  枚举类型：Critical, Major, Minor, Info
 
         :param event_level: The event_level of this EventItemDetail.
-        :type: str
+        :type event_level: str
         """
         self._event_level = event_level
 
@@ -220,7 +237,7 @@ class EventItemDetail:
         事件用户。  支持字母 数字_ -/空格 ，最大长度64。
 
         :param event_user: The event_user of this EventItemDetail.
-        :type: str
+        :type event_user: str
         """
         self._event_user = event_user
 

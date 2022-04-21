@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PostMultiGrainedSegmentReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class PostMultiGrainedSegmentReq:
     }
 
     def __init__(self, text=None, lang=None, granularity=None):
-        """PostMultiGrainedSegmentReq - a model defined in huaweicloud sdk"""
+        """PostMultiGrainedSegmentReq
+
+        The model defined in huaweicloud sdk
+
+        :param text: 待分词文本，长度为1~64，文本编码为UTF-8。
+        :type text: str
+        :param lang: 支持的文本语言类型，目前只支持中文，默认为zh。
+        :type lang: str
+        :param granularity: 分词粒度，1为最细粒度，2为最粗粒度，其它情况默认返回全部粒度分词树结果。
+        :type granularity: int
+        """
         
         
 
@@ -67,7 +76,7 @@ class PostMultiGrainedSegmentReq:
         待分词文本，长度为1~64，文本编码为UTF-8。
 
         :param text: The text of this PostMultiGrainedSegmentReq.
-        :type: str
+        :type text: str
         """
         self._text = text
 
@@ -89,7 +98,7 @@ class PostMultiGrainedSegmentReq:
         支持的文本语言类型，目前只支持中文，默认为zh。
 
         :param lang: The lang of this PostMultiGrainedSegmentReq.
-        :type: str
+        :type lang: str
         """
         self._lang = lang
 
@@ -111,7 +120,7 @@ class PostMultiGrainedSegmentReq:
         分词粒度，1为最细粒度，2为最粗粒度，其它情况默认返回全部粒度分词树结果。
 
         :param granularity: The granularity of this PostMultiGrainedSegmentReq.
-        :type: int
+        :type granularity: int
         """
         self._granularity = granularity
 

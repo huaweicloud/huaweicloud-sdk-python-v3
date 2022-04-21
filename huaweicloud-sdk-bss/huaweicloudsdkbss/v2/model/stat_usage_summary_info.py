@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StatUsageSummaryInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class StatUsageSummaryInfo:
     }
 
     def __init__(self, resource_id=None, actual_days=None, band_width=None, monthly_guaranteed_band_width=None, monthly_peak_band_width=None, band_width_measure_id=None):
-        """StatUsageSummaryInfo - a model defined in huaweicloud sdk"""
+        """StatUsageSummaryInfo
+
+        The model defined in huaweicloud sdk
+
+        :param resource_id: 资源ID。
+        :type resource_id: str
+        :param actual_days: 有效天数，精度最高返回小数点后20位。  说明： 计算方式为上报的点数/288所得出的值。其中288为一天的点数，5分钟为一个点数单位。计算95费用时，因95费用是按月定价，若实际不足月，则是使用官网价*折扣*actual_days/当月天数，来计算费用明细。
+        :type actual_days: str
+        :param band_width: 计费带宽的按月汇总。  说明： 每月2日20点后可查询上月数据；若查询当月数据，则为空。
+        :type band_width: str
+        :param monthly_guaranteed_band_width: 月保底带宽的按月汇总。  说明： 每月2日20点后可查询上月数据；若查询当月数据，则为空。该字段为预留值，当前始终为空；当场景为95增强时才返回数值。
+        :type monthly_guaranteed_band_width: str
+        :param monthly_peak_band_width: 月峰值带宽。  说明： 每月2日20点后可查询上月数据；若查询当月数据，则为空。该字段为预留值，当前始终为空；当场景为95增强时才返回数值。
+        :type monthly_peak_band_width: str
+        :param band_width_measure_id: 带宽单位，您可以调用查询度量单位列表接口获取。若所有带宽为空，则该字段为空。
+        :type band_width_measure_id: int
+        """
         
         
 
@@ -83,7 +98,7 @@ class StatUsageSummaryInfo:
         资源ID。
 
         :param resource_id: The resource_id of this StatUsageSummaryInfo.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -105,7 +120,7 @@ class StatUsageSummaryInfo:
         有效天数，精度最高返回小数点后20位。  说明： 计算方式为上报的点数/288所得出的值。其中288为一天的点数，5分钟为一个点数单位。计算95费用时，因95费用是按月定价，若实际不足月，则是使用官网价*折扣*actual_days/当月天数，来计算费用明细。
 
         :param actual_days: The actual_days of this StatUsageSummaryInfo.
-        :type: str
+        :type actual_days: str
         """
         self._actual_days = actual_days
 
@@ -127,7 +142,7 @@ class StatUsageSummaryInfo:
         计费带宽的按月汇总。  说明： 每月2日20点后可查询上月数据；若查询当月数据，则为空。
 
         :param band_width: The band_width of this StatUsageSummaryInfo.
-        :type: str
+        :type band_width: str
         """
         self._band_width = band_width
 
@@ -149,7 +164,7 @@ class StatUsageSummaryInfo:
         月保底带宽的按月汇总。  说明： 每月2日20点后可查询上月数据；若查询当月数据，则为空。该字段为预留值，当前始终为空；当场景为95增强时才返回数值。
 
         :param monthly_guaranteed_band_width: The monthly_guaranteed_band_width of this StatUsageSummaryInfo.
-        :type: str
+        :type monthly_guaranteed_band_width: str
         """
         self._monthly_guaranteed_band_width = monthly_guaranteed_band_width
 
@@ -171,7 +186,7 @@ class StatUsageSummaryInfo:
         月峰值带宽。  说明： 每月2日20点后可查询上月数据；若查询当月数据，则为空。该字段为预留值，当前始终为空；当场景为95增强时才返回数值。
 
         :param monthly_peak_band_width: The monthly_peak_band_width of this StatUsageSummaryInfo.
-        :type: str
+        :type monthly_peak_band_width: str
         """
         self._monthly_peak_band_width = monthly_peak_band_width
 
@@ -193,7 +208,7 @@ class StatUsageSummaryInfo:
         带宽单位，您可以调用查询度量单位列表接口获取。若所有带宽为空，则该字段为空。
 
         :param band_width_measure_id: The band_width_measure_id of this StatUsageSummaryInfo.
-        :type: int
+        :type band_width_measure_id: int
         """
         self._band_width_measure_id = band_width_measure_id
 

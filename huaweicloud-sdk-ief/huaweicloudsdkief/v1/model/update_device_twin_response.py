@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDeviceTwinResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateDeviceTwinResponse(SdkResponse):
     }
 
     def __init__(self, property_visitors=None, twin=None):
-        """UpdateDeviceTwinResponse - a model defined in huaweicloud sdk"""
+        """UpdateDeviceTwinResponse
+
+        The model defined in huaweicloud sdk
+
+        :param property_visitors: 
+        :type property_visitors: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitors`
+        :param twin: 
+        :type twin: :class:`huaweicloudsdkief.v1.ValueInTwinResponse`
+        """
         
         super(UpdateDeviceTwinResponse, self).__init__()
 
@@ -51,7 +58,7 @@ class UpdateDeviceTwinResponse(SdkResponse):
 
 
         :return: The property_visitors of this UpdateDeviceTwinResponse.
-        :rtype: ValueInPropertyVisitors
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitors`
         """
         return self._property_visitors
 
@@ -61,7 +68,7 @@ class UpdateDeviceTwinResponse(SdkResponse):
 
 
         :param property_visitors: The property_visitors of this UpdateDeviceTwinResponse.
-        :type: ValueInPropertyVisitors
+        :type property_visitors: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitors`
         """
         self._property_visitors = property_visitors
 
@@ -71,7 +78,7 @@ class UpdateDeviceTwinResponse(SdkResponse):
 
 
         :return: The twin of this UpdateDeviceTwinResponse.
-        :rtype: ValueInTwinResponse
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInTwinResponse`
         """
         return self._twin
 
@@ -81,7 +88,7 @@ class UpdateDeviceTwinResponse(SdkResponse):
 
 
         :param twin: The twin of this UpdateDeviceTwinResponse.
-        :type: ValueInTwinResponse
+        :type twin: :class:`huaweicloudsdkief.v1.ValueInTwinResponse`
         """
         self._twin = twin
 

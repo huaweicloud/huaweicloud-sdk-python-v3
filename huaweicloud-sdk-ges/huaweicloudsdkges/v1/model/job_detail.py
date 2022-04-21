@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class JobDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class JobDetail:
     }
 
     def __init__(self, schema_path=None, edgeset_path=None, vertexset_path=None):
-        """JobDetail - a model defined in huaweicloud sdk"""
+        """JobDetail
+
+        The model defined in huaweicloud sdk
+
+        :param schema_path: 元数据路径。
+        :type schema_path: list[:class:`huaweicloudsdkges.v1.SchemaPath`]
+        :param edgeset_path: 边数据集路径。
+        :type edgeset_path: list[:class:`huaweicloudsdkges.v1.EdgesetPath`]
+        :param vertexset_path: 点数据集路径。
+        :type vertexset_path: list[:class:`huaweicloudsdkges.v1.VertexsetPath`]
+        """
         
         
 
@@ -57,7 +66,7 @@ class JobDetail:
         元数据路径。
 
         :return: The schema_path of this JobDetail.
-        :rtype: list[SchemaPath]
+        :rtype: list[:class:`huaweicloudsdkges.v1.SchemaPath`]
         """
         return self._schema_path
 
@@ -68,7 +77,7 @@ class JobDetail:
         元数据路径。
 
         :param schema_path: The schema_path of this JobDetail.
-        :type: list[SchemaPath]
+        :type schema_path: list[:class:`huaweicloudsdkges.v1.SchemaPath`]
         """
         self._schema_path = schema_path
 
@@ -79,7 +88,7 @@ class JobDetail:
         边数据集路径。
 
         :return: The edgeset_path of this JobDetail.
-        :rtype: list[EdgesetPath]
+        :rtype: list[:class:`huaweicloudsdkges.v1.EdgesetPath`]
         """
         return self._edgeset_path
 
@@ -90,7 +99,7 @@ class JobDetail:
         边数据集路径。
 
         :param edgeset_path: The edgeset_path of this JobDetail.
-        :type: list[EdgesetPath]
+        :type edgeset_path: list[:class:`huaweicloudsdkges.v1.EdgesetPath`]
         """
         self._edgeset_path = edgeset_path
 
@@ -101,7 +110,7 @@ class JobDetail:
         点数据集路径。
 
         :return: The vertexset_path of this JobDetail.
-        :rtype: list[VertexsetPath]
+        :rtype: list[:class:`huaweicloudsdkges.v1.VertexsetPath`]
         """
         return self._vertexset_path
 
@@ -112,7 +121,7 @@ class JobDetail:
         点数据集路径。
 
         :param vertexset_path: The vertexset_path of this JobDetail.
-        :type: list[VertexsetPath]
+        :type vertexset_path: list[:class:`huaweicloudsdkges.v1.VertexsetPath`]
         """
         self._vertexset_path = vertexset_path
 

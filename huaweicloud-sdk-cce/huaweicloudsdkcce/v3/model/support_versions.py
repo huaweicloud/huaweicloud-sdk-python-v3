@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SupportVersions:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class SupportVersions:
     }
 
     def __init__(self, cluster_type=None, cluster_version=None):
-        """SupportVersions - a model defined in huaweicloud sdk"""
+        """SupportVersions
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_type: 支持的集群类型
+        :type cluster_type: str
+        :param cluster_version: 支持的集群版本（正则表达式）
+        :type cluster_version: list[str]
+        """
         
         
 
@@ -61,7 +68,7 @@ class SupportVersions:
         支持的集群类型
 
         :param cluster_type: The cluster_type of this SupportVersions.
-        :type: str
+        :type cluster_type: str
         """
         self._cluster_type = cluster_type
 
@@ -83,7 +90,7 @@ class SupportVersions:
         支持的集群版本（正则表达式）
 
         :param cluster_version: The cluster_version of this SupportVersions.
-        :type: list[str]
+        :type cluster_version: list[str]
         """
         self._cluster_version = cluster_version
 

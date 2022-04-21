@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListConsumerGroupsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListConsumerGroupsResponse(SdkResponse):
     }
 
     def __init__(self, queue_id=None, queue_name=None, groups=None, redrive_policy=None):
-        """ListConsumerGroupsResponse - a model defined in huaweicloud sdk"""
+        """ListConsumerGroupsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param queue_id: 队列ID。
+        :type queue_id: str
+        :param queue_name: 队列的名称。
+        :type queue_name: str
+        :param groups: 消费组列表。
+        :type groups: list[:class:`huaweicloudsdkdms.v2.ListQueueGroupsRespGroups`]
+        :param redrive_policy: 该队列是否开启死信消息。仅当include_deadletter为true时，才有该响应参数。 - enable：表示开启。 - disable：表示不开启。
+        :type redrive_policy: str
+        """
         
         super(ListConsumerGroupsResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class ListConsumerGroupsResponse(SdkResponse):
         队列ID。
 
         :param queue_id: The queue_id of this ListConsumerGroupsResponse.
-        :type: str
+        :type queue_id: str
         """
         self._queue_id = queue_id
 
@@ -95,7 +106,7 @@ class ListConsumerGroupsResponse(SdkResponse):
         队列的名称。
 
         :param queue_name: The queue_name of this ListConsumerGroupsResponse.
-        :type: str
+        :type queue_name: str
         """
         self._queue_name = queue_name
 
@@ -106,7 +117,7 @@ class ListConsumerGroupsResponse(SdkResponse):
         消费组列表。
 
         :return: The groups of this ListConsumerGroupsResponse.
-        :rtype: list[ListQueueGroupsRespGroups]
+        :rtype: list[:class:`huaweicloudsdkdms.v2.ListQueueGroupsRespGroups`]
         """
         return self._groups
 
@@ -117,7 +128,7 @@ class ListConsumerGroupsResponse(SdkResponse):
         消费组列表。
 
         :param groups: The groups of this ListConsumerGroupsResponse.
-        :type: list[ListQueueGroupsRespGroups]
+        :type groups: list[:class:`huaweicloudsdkdms.v2.ListQueueGroupsRespGroups`]
         """
         self._groups = groups
 
@@ -139,7 +150,7 @@ class ListConsumerGroupsResponse(SdkResponse):
         该队列是否开启死信消息。仅当include_deadletter为true时，才有该响应参数。 - enable：表示开启。 - disable：表示不开启。
 
         :param redrive_policy: The redrive_policy of this ListConsumerGroupsResponse.
-        :type: str
+        :type redrive_policy: str
         """
         self._redrive_policy = redrive_policy
 

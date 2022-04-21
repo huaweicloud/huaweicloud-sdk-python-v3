@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TopUrlSummary:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class TopUrlSummary:
     }
 
     def __init__(self, url=None, value=None, start_time=None, end_time=None, stat_type=None):
-        """TopUrlSummary - a model defined in huaweicloud sdk"""
+        """TopUrlSummary
+
+        The model defined in huaweicloud sdk
+
+        :param url: URL名称。
+        :type url: str
+        :param value: 对应查询类型的值。（流量单位：Byte）
+        :type value: int
+        :param start_time: 查询起始时间戳。
+        :type start_time: int
+        :param end_time: 查询结束时间戳
+        :type end_time: int
+        :param stat_type: 参数类型支持：flux(流量)，req_num(请求总数)。
+        :type stat_type: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class TopUrlSummary:
         URL名称。
 
         :param url: The url of this TopUrlSummary.
-        :type: str
+        :type url: str
         """
         self._url = url
 
@@ -100,7 +113,7 @@ class TopUrlSummary:
         对应查询类型的值。（流量单位：Byte）
 
         :param value: The value of this TopUrlSummary.
-        :type: int
+        :type value: int
         """
         self._value = value
 
@@ -122,7 +135,7 @@ class TopUrlSummary:
         查询起始时间戳。
 
         :param start_time: The start_time of this TopUrlSummary.
-        :type: int
+        :type start_time: int
         """
         self._start_time = start_time
 
@@ -144,7 +157,7 @@ class TopUrlSummary:
         查询结束时间戳
 
         :param end_time: The end_time of this TopUrlSummary.
-        :type: int
+        :type end_time: int
         """
         self._end_time = end_time
 
@@ -166,7 +179,7 @@ class TopUrlSummary:
         参数类型支持：flux(流量)，req_num(请求总数)。
 
         :param stat_type: The stat_type of this TopUrlSummary.
-        :type: str
+        :type stat_type: str
         """
         self._stat_type = stat_type
 

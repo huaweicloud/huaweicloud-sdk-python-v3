@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OrgPeer:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class OrgPeer:
     }
 
     def __init__(self, name=None, node_count=None):
-        """OrgPeer - a model defined in huaweicloud sdk"""
+        """OrgPeer
+
+        The model defined in huaweicloud sdk
+
+        :param name: 组织名称
+        :type name: str
+        :param node_count: 组织节点数
+        :type node_count: int
+        """
         
         
 
@@ -61,7 +68,7 @@ class OrgPeer:
         组织名称
 
         :param name: The name of this OrgPeer.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -83,7 +90,7 @@ class OrgPeer:
         组织节点数
 
         :param node_count: The node_count of this OrgPeer.
-        :type: int
+        :type node_count: int
         """
         self._node_count = node_count
 

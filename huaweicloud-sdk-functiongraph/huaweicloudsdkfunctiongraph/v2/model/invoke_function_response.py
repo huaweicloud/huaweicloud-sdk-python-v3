@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InvokeFunctionResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class InvokeFunctionResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, result=None, log=None, status=None):
-        """InvokeFunctionResponse - a model defined in huaweicloud sdk"""
+        """InvokeFunctionResponse
+
+        The model defined in huaweicloud sdk
+
+        :param request_id: 请求ID。
+        :type request_id: str
+        :param result: 函数执行结果
+        :type result: str
+        :param log: 函数执行返回日志
+        :type log: str
+        :param status: 函数执行返回状态
+        :type status: int
+        """
         
         super(InvokeFunctionResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class InvokeFunctionResponse(SdkResponse):
         请求ID。
 
         :param request_id: The request_id of this InvokeFunctionResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 
@@ -95,7 +106,7 @@ class InvokeFunctionResponse(SdkResponse):
         函数执行结果
 
         :param result: The result of this InvokeFunctionResponse.
-        :type: str
+        :type result: str
         """
         self._result = result
 
@@ -117,7 +128,7 @@ class InvokeFunctionResponse(SdkResponse):
         函数执行返回日志
 
         :param log: The log of this InvokeFunctionResponse.
-        :type: str
+        :type log: str
         """
         self._log = log
 
@@ -139,7 +150,7 @@ class InvokeFunctionResponse(SdkResponse):
         函数执行返回状态
 
         :param status: The status of this InvokeFunctionResponse.
-        :type: int
+        :type status: int
         """
         self._status = status
 

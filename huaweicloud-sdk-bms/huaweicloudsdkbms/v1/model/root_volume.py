@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RootVolume:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class RootVolume:
     }
 
     def __init__(self, volumetype=None, size=None, cluster_id=None, cluster_type=None):
-        """RootVolume - a model defined in huaweicloud sdk"""
+        """RootVolume
+
+        The model defined in huaweicloud sdk
+
+        :param volumetype: 裸金属服务器系统盘对应的磁盘类型，需要与系统所提供的磁盘类型相匹配。SATA：普通IO磁盘类型SAS：高IO磁盘类型SSD：超高IO磁盘类型
+        :type volumetype: str
+        :param size: 系统盘大小，容量单位为GB，输入大小范围为[40-1024]。约束：系统盘大小取值应不小于镜像中系统盘的最小值（min_disk属性）。
+        :type size: int
+        :param cluster_id: 裸金属服务器系统盘对应的存储池的ID。 说明：使用专属分布式存储时需要该字段。存储池ID可以从管理控制台或者参考《专属分布式存储API参考》的“获取专属分布式存储池详情列表”章节获取。
+        :type cluster_id: str
+        :param cluster_type: 裸金属服务器系统盘对应的磁盘存储类型。磁盘存储类型枚举值：DSS（专属分布式存储）。 说明：使用专属分布式存储时需要该字段。存储池类型可以从管理控制台或者参考《专属分布式存储API参考》的“获取专属分布式存储池详情列表”章节获取。
+        :type cluster_type: str
+        """
         
         
 
@@ -71,7 +82,7 @@ class RootVolume:
         裸金属服务器系统盘对应的磁盘类型，需要与系统所提供的磁盘类型相匹配。SATA：普通IO磁盘类型SAS：高IO磁盘类型SSD：超高IO磁盘类型
 
         :param volumetype: The volumetype of this RootVolume.
-        :type: str
+        :type volumetype: str
         """
         self._volumetype = volumetype
 
@@ -93,7 +104,7 @@ class RootVolume:
         系统盘大小，容量单位为GB，输入大小范围为[40-1024]。约束：系统盘大小取值应不小于镜像中系统盘的最小值（min_disk属性）。
 
         :param size: The size of this RootVolume.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -115,7 +126,7 @@ class RootVolume:
         裸金属服务器系统盘对应的存储池的ID。 说明：使用专属分布式存储时需要该字段。存储池ID可以从管理控制台或者参考《专属分布式存储API参考》的“获取专属分布式存储池详情列表”章节获取。
 
         :param cluster_id: The cluster_id of this RootVolume.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -137,7 +148,7 @@ class RootVolume:
         裸金属服务器系统盘对应的磁盘存储类型。磁盘存储类型枚举值：DSS（专属分布式存储）。 说明：使用专属分布式存储时需要该字段。存储池类型可以从管理控制台或者参考《专属分布式存储API参考》的“获取专属分布式存储池详情列表”章节获取。
 
         :param cluster_type: The cluster_type of this RootVolume.
-        :type: str
+        :type cluster_type: str
         """
         self._cluster_type = cluster_type
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AlarmNotifyInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class AlarmNotifyInfo:
     }
 
     def __init__(self, delay_time=None, rto_delay=None, rpo_delay=None, alarm_to_user=None, subscriptions=None):
-        """AlarmNotifyInfo - a model defined in huaweicloud sdk"""
+        """AlarmNotifyInfo
+
+        The model defined in huaweicloud sdk
+
+        :param delay_time: 订阅延迟时间(单位为s)
+        :type delay_time: int
+        :param rto_delay: rto延迟时间
+        :type rto_delay: int
+        :param rpo_delay: rpo延迟时间
+        :type rpo_delay: int
+        :param alarm_to_user: 异常告警是否通知用户
+        :type alarm_to_user: bool
+        :param subscriptions: 收件方式与信息体
+        :type subscriptions: list[:class:`huaweicloudsdkdrs.v3.SubscriptionInfo`]
+        """
         
         
 
@@ -77,7 +90,7 @@ class AlarmNotifyInfo:
         订阅延迟时间(单位为s)
 
         :param delay_time: The delay_time of this AlarmNotifyInfo.
-        :type: int
+        :type delay_time: int
         """
         self._delay_time = delay_time
 
@@ -99,7 +112,7 @@ class AlarmNotifyInfo:
         rto延迟时间
 
         :param rto_delay: The rto_delay of this AlarmNotifyInfo.
-        :type: int
+        :type rto_delay: int
         """
         self._rto_delay = rto_delay
 
@@ -121,7 +134,7 @@ class AlarmNotifyInfo:
         rpo延迟时间
 
         :param rpo_delay: The rpo_delay of this AlarmNotifyInfo.
-        :type: int
+        :type rpo_delay: int
         """
         self._rpo_delay = rpo_delay
 
@@ -143,7 +156,7 @@ class AlarmNotifyInfo:
         异常告警是否通知用户
 
         :param alarm_to_user: The alarm_to_user of this AlarmNotifyInfo.
-        :type: bool
+        :type alarm_to_user: bool
         """
         self._alarm_to_user = alarm_to_user
 
@@ -154,7 +167,7 @@ class AlarmNotifyInfo:
         收件方式与信息体
 
         :return: The subscriptions of this AlarmNotifyInfo.
-        :rtype: list[SubscriptionInfo]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.SubscriptionInfo`]
         """
         return self._subscriptions
 
@@ -165,7 +178,7 @@ class AlarmNotifyInfo:
         收件方式与信息体
 
         :param subscriptions: The subscriptions of this AlarmNotifyInfo.
-        :type: list[SubscriptionInfo]
+        :type subscriptions: list[:class:`huaweicloudsdkdrs.v3.SubscriptionInfo`]
         """
         self._subscriptions = subscriptions
 

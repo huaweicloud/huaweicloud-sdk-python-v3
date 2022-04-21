@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AcceptOrRejectEndpointRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AcceptOrRejectEndpointRequestBody:
     }
 
     def __init__(self, action=None, endpoints=None):
-        """AcceptOrRejectEndpointRequestBody - a model defined in huaweicloud sdk"""
+        """AcceptOrRejectEndpointRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param action: 允许或拒绝连接。 ● receive：允许连接。 ● reject：拒绝连接。
+        :type action: str
+        :param endpoints: 终端节点ID列表。 每次请求目前支持单条endpoint的 接受或拒绝。
+        :type endpoints: list[str]
+        """
         
         
 
@@ -61,7 +68,7 @@ class AcceptOrRejectEndpointRequestBody:
         允许或拒绝连接。 ● receive：允许连接。 ● reject：拒绝连接。
 
         :param action: The action of this AcceptOrRejectEndpointRequestBody.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -83,7 +90,7 @@ class AcceptOrRejectEndpointRequestBody:
         终端节点ID列表。 每次请求目前支持单条endpoint的 接受或拒绝。
 
         :param endpoints: The endpoints of this AcceptOrRejectEndpointRequestBody.
-        :type: list[str]
+        :type endpoints: list[str]
         """
         self._endpoints = endpoints
 

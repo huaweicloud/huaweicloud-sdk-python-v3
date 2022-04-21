@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListBandwidthsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListBandwidthsRequest:
     }
 
     def __init__(self, limit=None, offset=None, site_id=None):
-        """ListBandwidthsRequest - a model defined in huaweicloud sdk"""
+        """ListBandwidthsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 查询的数目，取值范围：0~1000。
+        :type limit: int
+        :param offset: 查询的偏移量。
+        :type offset: int
+        :param site_id: 边缘站点ID。
+        :type site_id: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class ListBandwidthsRequest:
         查询的数目，取值范围：0~1000。
 
         :param limit: The limit of this ListBandwidthsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -90,7 +99,7 @@ class ListBandwidthsRequest:
         查询的偏移量。
 
         :param offset: The offset of this ListBandwidthsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -112,7 +121,7 @@ class ListBandwidthsRequest:
         边缘站点ID。
 
         :param site_id: The site_id of this ListBandwidthsRequest.
-        :type: str
+        :type site_id: str
         """
         self._site_id = site_id
 

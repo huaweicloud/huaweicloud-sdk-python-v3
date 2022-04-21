@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateSinkTaskResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateSinkTaskResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None):
-        """CreateSinkTaskResponse - a model defined in huaweicloud sdk"""
+        """CreateSinkTaskResponse
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 任务ID。 
+        :type task_id: str
+        """
         
         super(CreateSinkTaskResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class CreateSinkTaskResponse(SdkResponse):
         任务ID。 
 
         :param task_id: The task_id of this CreateSinkTaskResponse.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 

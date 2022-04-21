@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowStreamPortraitRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowStreamPortraitRequest:
     }
 
     def __init__(self, play_domain=None, stream=None, time=None):
-        """ShowStreamPortraitRequest - a model defined in huaweicloud sdk"""
+        """ShowStreamPortraitRequest
+
+        The model defined in huaweicloud sdk
+
+        :param play_domain: 播放域名。 
+        :type play_domain: str
+        :param stream: 流名。 
+        :type stream: str
+        :param time: 统计日期，日期格式按照ISO8601表示法，格式：YYYYMMDD，如20200904。可以查询过去31天的数据（不含当天）。 
+        :type time: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class ShowStreamPortraitRequest:
         播放域名。 
 
         :param play_domain: The play_domain of this ShowStreamPortraitRequest.
-        :type: str
+        :type play_domain: str
         """
         self._play_domain = play_domain
 
@@ -88,7 +97,7 @@ class ShowStreamPortraitRequest:
         流名。 
 
         :param stream: The stream of this ShowStreamPortraitRequest.
-        :type: str
+        :type stream: str
         """
         self._stream = stream
 
@@ -110,7 +119,7 @@ class ShowStreamPortraitRequest:
         统计日期，日期格式按照ISO8601表示法，格式：YYYYMMDD，如20200904。可以查询过去31天的数据（不含当天）。 
 
         :param time: The time of this ShowStreamPortraitRequest.
-        :type: str
+        :type time: str
         """
         self._time = time
 

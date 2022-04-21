@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDomainBandwidthPeakResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListDomainBandwidthPeakResponse(SdkResponse):
     }
 
     def __init__(self, bandwidth_list=None, x_request_id=None):
-        """ListDomainBandwidthPeakResponse - a model defined in huaweicloud sdk"""
+        """ListDomainBandwidthPeakResponse
+
+        The model defined in huaweicloud sdk
+
+        :param bandwidth_list: 域名对应的带宽峰值列表。
+        :type bandwidth_list: list[:class:`huaweicloudsdklive.v2.PeakBandwidthData`]
+        :param x_request_id: 
+        :type x_request_id: str
+        """
         
         super(ListDomainBandwidthPeakResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListDomainBandwidthPeakResponse(SdkResponse):
         域名对应的带宽峰值列表。
 
         :return: The bandwidth_list of this ListDomainBandwidthPeakResponse.
-        :rtype: list[PeakBandwidthData]
+        :rtype: list[:class:`huaweicloudsdklive.v2.PeakBandwidthData`]
         """
         return self._bandwidth_list
 
@@ -63,7 +70,7 @@ class ListDomainBandwidthPeakResponse(SdkResponse):
         域名对应的带宽峰值列表。
 
         :param bandwidth_list: The bandwidth_list of this ListDomainBandwidthPeakResponse.
-        :type: list[PeakBandwidthData]
+        :type bandwidth_list: list[:class:`huaweicloudsdklive.v2.PeakBandwidthData`]
         """
         self._bandwidth_list = bandwidth_list
 
@@ -83,7 +90,7 @@ class ListDomainBandwidthPeakResponse(SdkResponse):
 
 
         :param x_request_id: The x_request_id of this ListDomainBandwidthPeakResponse.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 

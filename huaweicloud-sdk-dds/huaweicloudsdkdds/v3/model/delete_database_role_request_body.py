@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteDatabaseRoleRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteDatabaseRoleRequestBody:
     }
 
     def __init__(self, role_name=None, db_name=None):
-        """DeleteDatabaseRoleRequestBody - a model defined in huaweicloud sdk"""
+        """DeleteDatabaseRoleRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param role_name: 角色名称。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、中划线、下划线和点。
+        :type role_name: str
+        :param db_name: 角色所在的数据库名称。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、下划线。
+        :type db_name: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class DeleteDatabaseRoleRequestBody:
         角色名称。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、中划线、下划线和点。
 
         :param role_name: The role_name of this DeleteDatabaseRoleRequestBody.
-        :type: str
+        :type role_name: str
         """
         self._role_name = role_name
 
@@ -83,7 +90,7 @@ class DeleteDatabaseRoleRequestBody:
         角色所在的数据库名称。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、下划线。
 
         :param db_name: The db_name of this DeleteDatabaseRoleRequestBody.
-        :type: str
+        :type db_name: str
         """
         self._db_name = db_name
 

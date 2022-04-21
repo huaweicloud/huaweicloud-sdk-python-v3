@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateLabelsReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateLabelsReq:
     }
 
     def __init__(self, name=None, color=None):
-        """CreateLabelsReq - a model defined in huaweicloud sdk"""
+        """CreateLabelsReq
+
+        The model defined in huaweicloud sdk
+
+        :param name: 标签名称
+        :type name: str
+        :param color: 颜色值，如#000000
+        :type color: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class CreateLabelsReq:
         标签名称
 
         :param name: The name of this CreateLabelsReq.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -83,7 +90,7 @@ class CreateLabelsReq:
         颜色值，如#000000
 
         :param color: The color of this CreateLabelsReq.
-        :type: str
+        :type color: str
         """
         self._color = color
 

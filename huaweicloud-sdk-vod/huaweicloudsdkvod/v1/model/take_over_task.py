@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TakeOverTask:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class TakeOverTask:
     }
 
     def __init__(self, bucket=None, object=None, host_type=None, output_bucket=None, output_path=None, task_id=None, suffix=None, template_group_name=None, create_time=None, end_time=None, status=None, exec_desc=None):
-        """TakeOverTask - a model defined in huaweicloud sdk"""
+        """TakeOverTask
+
+        The model defined in huaweicloud sdk
+
+        :param bucket: 桶名。
+        :type bucket: str
+        :param object: 目录/文件名。
+        :type object: str
+        :param host_type: 托管类型。  取值如下： - 0：表示存储到点播桶 - 1：表示存储在租户桶 - 2：表示存储到租户OBS桶中，且输出目录与源文件的存储目录相同。
+        :type host_type: int
+        :param output_bucket: 输出桶 。
+        :type output_bucket: str
+        :param output_path: 输出路径 。
+        :type output_path: str
+        :param task_id: 任务ID。
+        :type task_id: str
+        :param suffix: 托管文件类型。
+        :type suffix: list[str]
+        :param template_group_name: 转码模板组 。
+        :type template_group_name: str
+        :param create_time: 创建时间。
+        :type create_time: str
+        :param end_time: 结束时间。
+        :type end_time: str
+        :param status: 任务状态。
+        :type status: str
+        :param exec_desc: 媒资的任务执行描述汇总。
+        :type exec_desc: str
+        """
         
         
 
@@ -113,7 +140,7 @@ class TakeOverTask:
         桶名。
 
         :param bucket: The bucket of this TakeOverTask.
-        :type: str
+        :type bucket: str
         """
         self._bucket = bucket
 
@@ -135,7 +162,7 @@ class TakeOverTask:
         目录/文件名。
 
         :param object: The object of this TakeOverTask.
-        :type: str
+        :type object: str
         """
         self._object = object
 
@@ -157,7 +184,7 @@ class TakeOverTask:
         托管类型。  取值如下： - 0：表示存储到点播桶 - 1：表示存储在租户桶 - 2：表示存储到租户OBS桶中，且输出目录与源文件的存储目录相同。
 
         :param host_type: The host_type of this TakeOverTask.
-        :type: int
+        :type host_type: int
         """
         self._host_type = host_type
 
@@ -179,7 +206,7 @@ class TakeOverTask:
         输出桶 。
 
         :param output_bucket: The output_bucket of this TakeOverTask.
-        :type: str
+        :type output_bucket: str
         """
         self._output_bucket = output_bucket
 
@@ -201,7 +228,7 @@ class TakeOverTask:
         输出路径 。
 
         :param output_path: The output_path of this TakeOverTask.
-        :type: str
+        :type output_path: str
         """
         self._output_path = output_path
 
@@ -223,7 +250,7 @@ class TakeOverTask:
         任务ID。
 
         :param task_id: The task_id of this TakeOverTask.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -245,7 +272,7 @@ class TakeOverTask:
         托管文件类型。
 
         :param suffix: The suffix of this TakeOverTask.
-        :type: list[str]
+        :type suffix: list[str]
         """
         self._suffix = suffix
 
@@ -267,7 +294,7 @@ class TakeOverTask:
         转码模板组 。
 
         :param template_group_name: The template_group_name of this TakeOverTask.
-        :type: str
+        :type template_group_name: str
         """
         self._template_group_name = template_group_name
 
@@ -289,7 +316,7 @@ class TakeOverTask:
         创建时间。
 
         :param create_time: The create_time of this TakeOverTask.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -311,7 +338,7 @@ class TakeOverTask:
         结束时间。
 
         :param end_time: The end_time of this TakeOverTask.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -333,7 +360,7 @@ class TakeOverTask:
         任务状态。
 
         :param status: The status of this TakeOverTask.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -355,7 +382,7 @@ class TakeOverTask:
         媒资的任务执行描述汇总。
 
         :param exec_desc: The exec_desc of this TakeOverTask.
-        :type: str
+        :type exec_desc: str
         """
         self._exec_desc = exec_desc
 

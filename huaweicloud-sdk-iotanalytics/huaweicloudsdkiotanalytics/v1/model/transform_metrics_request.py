@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TransformMetricsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class TransformMetricsRequest:
     }
 
     def __init__(self, time_span=None, tags=None, property_filter=None, metrics=None, limit=None):
-        """TransformMetricsRequest - a model defined in huaweicloud sdk"""
+        """TransformMetricsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param time_span: 
+        :type time_span: :class:`huaweicloudsdkiotanalytics.v1.TimeSpanDT`
+        :param tags: 对property按指定tags标签进行过滤查询，填入资产标签属性的属性名与属性值，不可为空，例如 {\&quot;tagPropertyA\&quot;: \&quot;id0001\&quot;}；注意，标签过滤只对打上标签时刻之后的数据生效，打标签之前的数据不能通过标签过滤
+        :type tags: dict(str, object)
+        :param property_filter: 属性过滤器，最多5个
+        :type property_filter: list[:class:`huaweicloudsdkiotanalytics.v1.PropertyFilter`]
+        :param metrics: 转换查询指标列表，对资产属性进行转换查询得到指标
+        :type metrics: list[:class:`huaweicloudsdkiotanalytics.v1.DTTransformMetrics`]
+        :param limit: 返回值个数限制，最多2000个
+        :type limit: int
+        """
         
         
 
@@ -65,7 +78,7 @@ class TransformMetricsRequest:
 
 
         :return: The time_span of this TransformMetricsRequest.
-        :rtype: TimeSpanDT
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.TimeSpanDT`
         """
         return self._time_span
 
@@ -75,7 +88,7 @@ class TransformMetricsRequest:
 
 
         :param time_span: The time_span of this TransformMetricsRequest.
-        :type: TimeSpanDT
+        :type time_span: :class:`huaweicloudsdkiotanalytics.v1.TimeSpanDT`
         """
         self._time_span = time_span
 
@@ -97,7 +110,7 @@ class TransformMetricsRequest:
         对property按指定tags标签进行过滤查询，填入资产标签属性的属性名与属性值，不可为空，例如 {\"tagPropertyA\": \"id0001\"}；注意，标签过滤只对打上标签时刻之后的数据生效，打标签之前的数据不能通过标签过滤
 
         :param tags: The tags of this TransformMetricsRequest.
-        :type: dict(str, object)
+        :type tags: dict(str, object)
         """
         self._tags = tags
 
@@ -108,7 +121,7 @@ class TransformMetricsRequest:
         属性过滤器，最多5个
 
         :return: The property_filter of this TransformMetricsRequest.
-        :rtype: list[PropertyFilter]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.PropertyFilter`]
         """
         return self._property_filter
 
@@ -119,7 +132,7 @@ class TransformMetricsRequest:
         属性过滤器，最多5个
 
         :param property_filter: The property_filter of this TransformMetricsRequest.
-        :type: list[PropertyFilter]
+        :type property_filter: list[:class:`huaweicloudsdkiotanalytics.v1.PropertyFilter`]
         """
         self._property_filter = property_filter
 
@@ -130,7 +143,7 @@ class TransformMetricsRequest:
         转换查询指标列表，对资产属性进行转换查询得到指标
 
         :return: The metrics of this TransformMetricsRequest.
-        :rtype: list[DTTransformMetrics]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.DTTransformMetrics`]
         """
         return self._metrics
 
@@ -141,7 +154,7 @@ class TransformMetricsRequest:
         转换查询指标列表，对资产属性进行转换查询得到指标
 
         :param metrics: The metrics of this TransformMetricsRequest.
-        :type: list[DTTransformMetrics]
+        :type metrics: list[:class:`huaweicloudsdkiotanalytics.v1.DTTransformMetrics`]
         """
         self._metrics = metrics
 
@@ -163,7 +176,7 @@ class TransformMetricsRequest:
         返回值个数限制，最多2000个
 
         :param limit: The limit of this TransformMetricsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

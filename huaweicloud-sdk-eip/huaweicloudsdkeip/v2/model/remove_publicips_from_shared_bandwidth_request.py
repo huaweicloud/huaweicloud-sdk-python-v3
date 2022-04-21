@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RemovePublicipsFromSharedBandwidthRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RemovePublicipsFromSharedBandwidthRequest:
     }
 
     def __init__(self, bandwidth_id=None, body=None):
-        """RemovePublicipsFromSharedBandwidthRequest - a model defined in huaweicloud sdk"""
+        """RemovePublicipsFromSharedBandwidthRequest
+
+        The model defined in huaweicloud sdk
+
+        :param bandwidth_id: 带宽唯一标识
+        :type bandwidth_id: str
+        :param body: Body of the RemovePublicipsFromSharedBandwidthRequest
+        :type body: :class:`huaweicloudsdkeip.v2.RemovePublicipsFromSharedBandwidthRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class RemovePublicipsFromSharedBandwidthRequest:
         带宽唯一标识
 
         :param bandwidth_id: The bandwidth_id of this RemovePublicipsFromSharedBandwidthRequest.
-        :type: str
+        :type bandwidth_id: str
         """
         self._bandwidth_id = bandwidth_id
 
@@ -72,7 +79,7 @@ class RemovePublicipsFromSharedBandwidthRequest:
 
 
         :return: The body of this RemovePublicipsFromSharedBandwidthRequest.
-        :rtype: RemovePublicipsFromSharedBandwidthRequestBody
+        :rtype: :class:`huaweicloudsdkeip.v2.RemovePublicipsFromSharedBandwidthRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class RemovePublicipsFromSharedBandwidthRequest:
 
 
         :param body: The body of this RemovePublicipsFromSharedBandwidthRequest.
-        :type: RemovePublicipsFromSharedBandwidthRequestBody
+        :type body: :class:`huaweicloudsdkeip.v2.RemovePublicipsFromSharedBandwidthRequestBody`
         """
         self._body = body
 

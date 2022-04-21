@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAppQuotaBoundAppsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListAppQuotaBoundAppsResponse(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, apps=None):
-        """ListAppQuotaBoundAppsResponse - a model defined in huaweicloud sdk"""
+        """ListAppQuotaBoundAppsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param size: 本次返回的列表长度
+        :type size: int
+        :param total: 满足条件的记录数
+        :type total: int
+        :param apps: 客户端应用列表
+        :type apps: list[:class:`huaweicloudsdkroma.v2.AppQuotaAppInfo`]
+        """
         
         super(ListAppQuotaBoundAppsResponse, self).__init__()
 
@@ -66,7 +75,7 @@ class ListAppQuotaBoundAppsResponse(SdkResponse):
         本次返回的列表长度
 
         :param size: The size of this ListAppQuotaBoundAppsResponse.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -88,7 +97,7 @@ class ListAppQuotaBoundAppsResponse(SdkResponse):
         满足条件的记录数
 
         :param total: The total of this ListAppQuotaBoundAppsResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -99,7 +108,7 @@ class ListAppQuotaBoundAppsResponse(SdkResponse):
         客户端应用列表
 
         :return: The apps of this ListAppQuotaBoundAppsResponse.
-        :rtype: list[AppQuotaAppInfo]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.AppQuotaAppInfo`]
         """
         return self._apps
 
@@ -110,7 +119,7 @@ class ListAppQuotaBoundAppsResponse(SdkResponse):
         客户端应用列表
 
         :param apps: The apps of this ListAppQuotaBoundAppsResponse.
-        :type: list[AppQuotaAppInfo]
+        :type apps: list[:class:`huaweicloudsdkroma.v2.AppQuotaAppInfo`]
         """
         self._apps = apps
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRecordRulesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListRecordRulesResponse(SdkResponse):
     }
 
     def __init__(self, total=None, record_config=None):
-        """ListRecordRulesResponse - a model defined in huaweicloud sdk"""
+        """ListRecordRulesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 查询结果的总元素数量
+        :type total: int
+        :param record_config: 录制配置数组
+        :type record_config: list[:class:`huaweicloudsdklive.v1.RecordRule`]
+        """
         
         super(ListRecordRulesResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListRecordRulesResponse(SdkResponse):
         查询结果的总元素数量
 
         :param total: The total of this ListRecordRulesResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -74,7 +81,7 @@ class ListRecordRulesResponse(SdkResponse):
         录制配置数组
 
         :return: The record_config of this ListRecordRulesResponse.
-        :rtype: list[RecordRule]
+        :rtype: list[:class:`huaweicloudsdklive.v1.RecordRule`]
         """
         return self._record_config
 
@@ -85,7 +92,7 @@ class ListRecordRulesResponse(SdkResponse):
         录制配置数组
 
         :param record_config: The record_config of this ListRecordRulesResponse.
-        :type: list[RecordRule]
+        :type record_config: list[:class:`huaweicloudsdklive.v1.RecordRule`]
         """
         self._record_config = record_config
 

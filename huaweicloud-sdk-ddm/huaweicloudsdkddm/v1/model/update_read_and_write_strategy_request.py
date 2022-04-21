@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateReadAndWriteStrategyRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateReadAndWriteStrategyRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """UpdateReadAndWriteStrategyRequest - a model defined in huaweicloud sdk"""
+        """UpdateReadAndWriteStrategyRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: DDM实例ID
+        :type instance_id: str
+        :param body: Body of the UpdateReadAndWriteStrategyRequest
+        :type body: :class:`huaweicloudsdkddm.v1.ModifyReadAndWriteStrategyReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateReadAndWriteStrategyRequest:
         DDM实例ID
 
         :param instance_id: The instance_id of this UpdateReadAndWriteStrategyRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -72,7 +79,7 @@ class UpdateReadAndWriteStrategyRequest:
 
 
         :return: The body of this UpdateReadAndWriteStrategyRequest.
-        :rtype: ModifyReadAndWriteStrategyReq
+        :rtype: :class:`huaweicloudsdkddm.v1.ModifyReadAndWriteStrategyReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateReadAndWriteStrategyRequest:
 
 
         :param body: The body of this UpdateReadAndWriteStrategyRequest.
-        :type: ModifyReadAndWriteStrategyReq
+        :type body: :class:`huaweicloudsdkddm.v1.ModifyReadAndWriteStrategyReq`
         """
         self._body = body
 

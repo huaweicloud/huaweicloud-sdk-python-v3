@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ErrorlogResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ErrorlogResult:
     }
 
     def __init__(self, node_name=None, level=None, time=None, content=None):
-        """ErrorlogResult - a model defined in huaweicloud sdk"""
+        """ErrorlogResult
+
+        The model defined in huaweicloud sdk
+
+        :param node_name: 节点名称。
+        :type node_name: str
+        :param level: 日志级别。
+        :type level: str
+        :param time: 发生时间，UTC时间。
+        :type time: str
+        :param content: 日志内容。
+        :type content: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class ErrorlogResult:
         节点名称。
 
         :param node_name: The node_name of this ErrorlogResult.
-        :type: str
+        :type node_name: str
         """
         self._node_name = node_name
 
@@ -91,7 +102,7 @@ class ErrorlogResult:
         日志级别。
 
         :param level: The level of this ErrorlogResult.
-        :type: str
+        :type level: str
         """
         self._level = level
 
@@ -113,7 +124,7 @@ class ErrorlogResult:
         发生时间，UTC时间。
 
         :param time: The time of this ErrorlogResult.
-        :type: str
+        :type time: str
         """
         self._time = time
 
@@ -135,7 +146,7 @@ class ErrorlogResult:
         日志内容。
 
         :param content: The content of this ErrorlogResult.
-        :type: str
+        :type content: str
         """
         self._content = content
 

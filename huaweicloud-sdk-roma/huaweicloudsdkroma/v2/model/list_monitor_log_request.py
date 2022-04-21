@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListMonitorLogRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListMonitorLogRequest:
     }
 
     def __init__(self, instance_id=None, task_id=None, offset=None, limit=None, begin_time=None, end_time=None):
-        """ListMonitorLogRequest - a model defined in huaweicloud sdk"""
+        """ListMonitorLogRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param task_id: 任务ID
+        :type task_id: str
+        :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于1
+        :type offset: int
+        :param limit: 每页显示条目数量，最大数量999，超过999后只返回999
+        :type limit: int
+        :param begin_time: 日志查询的起始时间，格式timestamp(ms)，使用UTC时区
+        :type begin_time: int
+        :param end_time: 日志查询的结束时间，格式timestamp(ms)，使用UTC时区
+        :type end_time: int
+        """
         
         
 
@@ -81,7 +96,7 @@ class ListMonitorLogRequest:
         实例ID
 
         :param instance_id: The instance_id of this ListMonitorLogRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -103,7 +118,7 @@ class ListMonitorLogRequest:
         任务ID
 
         :param task_id: The task_id of this ListMonitorLogRequest.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -125,7 +140,7 @@ class ListMonitorLogRequest:
         偏移量，表示从此偏移量开始查询， offset大于等于1
 
         :param offset: The offset of this ListMonitorLogRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -147,7 +162,7 @@ class ListMonitorLogRequest:
         每页显示条目数量，最大数量999，超过999后只返回999
 
         :param limit: The limit of this ListMonitorLogRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -169,7 +184,7 @@ class ListMonitorLogRequest:
         日志查询的起始时间，格式timestamp(ms)，使用UTC时区
 
         :param begin_time: The begin_time of this ListMonitorLogRequest.
-        :type: int
+        :type begin_time: int
         """
         self._begin_time = begin_time
 
@@ -191,7 +206,7 @@ class ListMonitorLogRequest:
         日志查询的结束时间，格式timestamp(ms)，使用UTC时区
 
         :param end_time: The end_time of this ListMonitorLogRequest.
-        :type: int
+        :type end_time: int
         """
         self._end_time = end_time
 

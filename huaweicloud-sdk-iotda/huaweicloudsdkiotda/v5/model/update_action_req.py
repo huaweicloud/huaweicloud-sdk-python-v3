@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateActionReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateActionReq:
     }
 
     def __init__(self, channel=None, channel_detail=None):
-        """UpdateActionReq - a model defined in huaweicloud sdk"""
+        """UpdateActionReq
+
+        The model defined in huaweicloud sdk
+
+        :param channel: **参数说明**：规则动作的类型。 **取值范围**： - HTTP_FORWARDING：HTTP服务消息类型。 - DIS_FORWARDING：转发DIS服务消息类型。 - OBS_FORWARDING：转发OBS服务消息类型。 - AMQP_FORWARDING：转发AMQP服务消息类型。 - DMS_KAFKA_FORWARDING：转发kafka消息类型。
+        :type channel: str
+        :param channel_detail: 
+        :type channel_detail: :class:`huaweicloudsdkiotda.v5.ChannelDetail`
+        """
         
         
 
@@ -63,7 +70,7 @@ class UpdateActionReq:
         **参数说明**：规则动作的类型。 **取值范围**： - HTTP_FORWARDING：HTTP服务消息类型。 - DIS_FORWARDING：转发DIS服务消息类型。 - OBS_FORWARDING：转发OBS服务消息类型。 - AMQP_FORWARDING：转发AMQP服务消息类型。 - DMS_KAFKA_FORWARDING：转发kafka消息类型。
 
         :param channel: The channel of this UpdateActionReq.
-        :type: str
+        :type channel: str
         """
         self._channel = channel
 
@@ -73,7 +80,7 @@ class UpdateActionReq:
 
 
         :return: The channel_detail of this UpdateActionReq.
-        :rtype: ChannelDetail
+        :rtype: :class:`huaweicloudsdkiotda.v5.ChannelDetail`
         """
         return self._channel_detail
 
@@ -83,7 +90,7 @@ class UpdateActionReq:
 
 
         :param channel_detail: The channel_detail of this UpdateActionReq.
-        :type: ChannelDetail
+        :type channel_detail: :class:`huaweicloudsdkiotda.v5.ChannelDetail`
         """
         self._channel_detail = channel_detail
 

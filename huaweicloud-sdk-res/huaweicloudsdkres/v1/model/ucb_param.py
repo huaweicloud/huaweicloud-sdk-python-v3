@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UcbParam:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UcbParam:
     }
 
     def __init__(self, alpha=None, min_used_num=None):
-        """UcbParam - a model defined in huaweicloud sdk"""
+        """UcbParam
+
+        The model defined in huaweicloud sdk
+
+        :param alpha: 折中参数。
+        :type alpha: float
+        :param min_used_num: 最小行为次数。
+        :type min_used_num: int
+        """
         
         
 
@@ -61,7 +68,7 @@ class UcbParam:
         折中参数。
 
         :param alpha: The alpha of this UcbParam.
-        :type: float
+        :type alpha: float
         """
         self._alpha = alpha
 
@@ -83,7 +90,7 @@ class UcbParam:
         最小行为次数。
 
         :param min_used_num: The min_used_num of this UcbParam.
-        :type: int
+        :type min_used_num: int
         """
         self._min_used_num = min_used_num
 

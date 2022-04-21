@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PipelineBuildResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class PipelineBuildResult:
     }
 
     def __init__(self, build_id=None, elapse_time=None, end_time=None, outcome=None, pipeline_id=None, pipeline_name=None, start_time=None, status=None):
-        """PipelineBuildResult - a model defined in huaweicloud sdk"""
+        """PipelineBuildResult
+
+        The model defined in huaweicloud sdk
+
+        :param build_id: 执行ID
+        :type build_id: str
+        :param elapse_time: 运行耗时
+        :type elapse_time: str
+        :param end_time: 执行结束时间
+        :type end_time: str
+        :param outcome: 运行结果
+        :type outcome: str
+        :param pipeline_id: 流水线id
+        :type pipeline_id: str
+        :param pipeline_name: 流水线名称
+        :type pipeline_name: str
+        :param start_time: 执行开始时间
+        :type start_time: str
+        :param status: 运行状态
+        :type status: str
+        """
         
         
 
@@ -86,7 +105,7 @@ class PipelineBuildResult:
         执行ID
 
         :param build_id: The build_id of this PipelineBuildResult.
-        :type: str
+        :type build_id: str
         """
         self._build_id = build_id
 
@@ -108,7 +127,7 @@ class PipelineBuildResult:
         运行耗时
 
         :param elapse_time: The elapse_time of this PipelineBuildResult.
-        :type: str
+        :type elapse_time: str
         """
         self._elapse_time = elapse_time
 
@@ -130,7 +149,7 @@ class PipelineBuildResult:
         执行结束时间
 
         :param end_time: The end_time of this PipelineBuildResult.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -152,7 +171,7 @@ class PipelineBuildResult:
         运行结果
 
         :param outcome: The outcome of this PipelineBuildResult.
-        :type: str
+        :type outcome: str
         """
         self._outcome = outcome
 
@@ -174,7 +193,7 @@ class PipelineBuildResult:
         流水线id
 
         :param pipeline_id: The pipeline_id of this PipelineBuildResult.
-        :type: str
+        :type pipeline_id: str
         """
         self._pipeline_id = pipeline_id
 
@@ -196,7 +215,7 @@ class PipelineBuildResult:
         流水线名称
 
         :param pipeline_name: The pipeline_name of this PipelineBuildResult.
-        :type: str
+        :type pipeline_name: str
         """
         self._pipeline_name = pipeline_name
 
@@ -218,7 +237,7 @@ class PipelineBuildResult:
         执行开始时间
 
         :param start_time: The start_time of this PipelineBuildResult.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -240,7 +259,7 @@ class PipelineBuildResult:
         运行状态
 
         :param status: The status of this PipelineBuildResult.
-        :type: str
+        :type status: str
         """
         self._status = status
 

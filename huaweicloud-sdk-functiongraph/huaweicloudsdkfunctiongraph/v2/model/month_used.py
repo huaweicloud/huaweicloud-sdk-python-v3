@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MonthUsed:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class MonthUsed:
     }
 
     def __init__(self, date=None, value=None):
-        """MonthUsed - a model defined in huaweicloud sdk"""
+        """MonthUsed
+
+        The model defined in huaweicloud sdk
+
+        :param date: 日期
+        :type date: str
+        :param value: 使用量
+        :type value: float
+        """
         
         
 
@@ -63,7 +70,7 @@ class MonthUsed:
         日期
 
         :param date: The date of this MonthUsed.
-        :type: str
+        :type date: str
         """
         self._date = date
 
@@ -85,7 +92,7 @@ class MonthUsed:
         使用量
 
         :param value: The value of this MonthUsed.
-        :type: float
+        :type value: float
         """
         self._value = value
 

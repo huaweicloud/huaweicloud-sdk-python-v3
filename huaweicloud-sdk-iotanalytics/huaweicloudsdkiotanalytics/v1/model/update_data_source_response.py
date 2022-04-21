@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDataSourceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class UpdateDataSourceResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, type=None, content=None, created_time=None, modified_time=None):
-        """UpdateDataSourceResponse - a model defined in huaweicloud sdk"""
+        """UpdateDataSourceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 数据源id
+        :type id: str
+        :param name: 数据源名称
+        :type name: str
+        :param type: 数据源类型, 包括：IOTDA、API[、OBS、DIS、SMN、FUNCTION_GRAPH、MODEL_ARTS、DCS、KAFKA](tag:IoTA-Cloud-Only)、NODE。数据源不支持修改类型。
+        :type type: str
+        :param content: 
+        :type content: :class:`huaweicloudsdkiotanalytics.v1.ContentDetailRsp`
+        :param created_time: 创建时间，格式为：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;
+        :type created_time: str
+        :param modified_time: 修改时间，格式为：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;
+        :type modified_time: str
+        """
         
         super(UpdateDataSourceResponse, self).__init__()
 
@@ -83,7 +98,7 @@ class UpdateDataSourceResponse(SdkResponse):
         数据源id
 
         :param id: The id of this UpdateDataSourceResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -105,7 +120,7 @@ class UpdateDataSourceResponse(SdkResponse):
         数据源名称
 
         :param name: The name of this UpdateDataSourceResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -127,7 +142,7 @@ class UpdateDataSourceResponse(SdkResponse):
         数据源类型, 包括：IOTDA、API[、OBS、DIS、SMN、FUNCTION_GRAPH、MODEL_ARTS、DCS、KAFKA](tag:IoTA-Cloud-Only)、NODE。数据源不支持修改类型。
 
         :param type: The type of this UpdateDataSourceResponse.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -137,7 +152,7 @@ class UpdateDataSourceResponse(SdkResponse):
 
 
         :return: The content of this UpdateDataSourceResponse.
-        :rtype: ContentDetailRsp
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.ContentDetailRsp`
         """
         return self._content
 
@@ -147,7 +162,7 @@ class UpdateDataSourceResponse(SdkResponse):
 
 
         :param content: The content of this UpdateDataSourceResponse.
-        :type: ContentDetailRsp
+        :type content: :class:`huaweicloudsdkiotanalytics.v1.ContentDetailRsp`
         """
         self._content = content
 
@@ -169,7 +184,7 @@ class UpdateDataSourceResponse(SdkResponse):
         创建时间，格式为：yyyy-MM-dd'T'HH:mm:ss'Z'
 
         :param created_time: The created_time of this UpdateDataSourceResponse.
-        :type: str
+        :type created_time: str
         """
         self._created_time = created_time
 
@@ -191,7 +206,7 @@ class UpdateDataSourceResponse(SdkResponse):
         修改时间，格式为：yyyy-MM-dd'T'HH:mm:ss'Z'
 
         :param modified_time: The modified_time of this UpdateDataSourceResponse.
-        :type: str
+        :type modified_time: str
         """
         self._modified_time = modified_time
 

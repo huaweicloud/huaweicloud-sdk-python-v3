@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateProjectResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateProjectResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, project_id=None):
-        """CreateProjectResponse - a model defined in huaweicloud sdk"""
+        """CreateProjectResponse
+
+        The model defined in huaweicloud sdk
+
+        :param code: code
+        :type code: str
+        :param message: message
+        :type message: str
+        :param project_id: project_id
+        :type project_id: int
+        """
         
         super(CreateProjectResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class CreateProjectResponse(SdkResponse):
         code
 
         :param code: The code of this CreateProjectResponse.
-        :type: str
+        :type code: str
         """
         self._code = code
 
@@ -90,7 +99,7 @@ class CreateProjectResponse(SdkResponse):
         message
 
         :param message: The message of this CreateProjectResponse.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -112,7 +121,7 @@ class CreateProjectResponse(SdkResponse):
         project_id
 
         :param project_id: The project_id of this CreateProjectResponse.
-        :type: int
+        :type project_id: int
         """
         self._project_id = project_id
 

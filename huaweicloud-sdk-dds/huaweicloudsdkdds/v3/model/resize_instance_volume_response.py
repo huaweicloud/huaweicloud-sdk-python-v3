@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResizeInstanceVolumeResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ResizeInstanceVolumeResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """ResizeInstanceVolumeResponse - a model defined in huaweicloud sdk"""
+        """ResizeInstanceVolumeResponse
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 工作流ID。
+        :type job_id: str
+        """
         
         super(ResizeInstanceVolumeResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class ResizeInstanceVolumeResponse(SdkResponse):
         工作流ID。
 
         :param job_id: The job_id of this ResizeInstanceVolumeResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 

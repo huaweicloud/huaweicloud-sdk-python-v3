@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IssueCompletionRateV4IssueStatus:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class IssueCompletionRateV4IssueStatus:
     }
 
     def __init__(self, closed_num=None, new_num=None, process_num=None, rejected_num=None, solved_num=None, test_num=None):
-        """IssueCompletionRateV4IssueStatus - a model defined in huaweicloud sdk"""
+        """IssueCompletionRateV4IssueStatus
+
+        The model defined in huaweicloud sdk
+
+        :param closed_num: 已关闭的工作项
+        :type closed_num: int
+        :param new_num: 新建的工作项
+        :type new_num: int
+        :param process_num: 进行中的工作项数目
+        :type process_num: int
+        :param rejected_num: 已经拒绝的工作项
+        :type rejected_num: int
+        :param solved_num: 已经解决的工作项
+        :type solved_num: int
+        :param test_num: 测试中的工作项
+        :type test_num: int
+        """
         
         
 
@@ -83,7 +98,7 @@ class IssueCompletionRateV4IssueStatus:
         已关闭的工作项
 
         :param closed_num: The closed_num of this IssueCompletionRateV4IssueStatus.
-        :type: int
+        :type closed_num: int
         """
         self._closed_num = closed_num
 
@@ -105,7 +120,7 @@ class IssueCompletionRateV4IssueStatus:
         新建的工作项
 
         :param new_num: The new_num of this IssueCompletionRateV4IssueStatus.
-        :type: int
+        :type new_num: int
         """
         self._new_num = new_num
 
@@ -127,7 +142,7 @@ class IssueCompletionRateV4IssueStatus:
         进行中的工作项数目
 
         :param process_num: The process_num of this IssueCompletionRateV4IssueStatus.
-        :type: int
+        :type process_num: int
         """
         self._process_num = process_num
 
@@ -149,7 +164,7 @@ class IssueCompletionRateV4IssueStatus:
         已经拒绝的工作项
 
         :param rejected_num: The rejected_num of this IssueCompletionRateV4IssueStatus.
-        :type: int
+        :type rejected_num: int
         """
         self._rejected_num = rejected_num
 
@@ -171,7 +186,7 @@ class IssueCompletionRateV4IssueStatus:
         已经解决的工作项
 
         :param solved_num: The solved_num of this IssueCompletionRateV4IssueStatus.
-        :type: int
+        :type solved_num: int
         """
         self._solved_num = solved_num
 
@@ -193,7 +208,7 @@ class IssueCompletionRateV4IssueStatus:
         测试中的工作项
 
         :param test_num: The test_num of this IssueCompletionRateV4IssueStatus.
-        :type: int
+        :type test_num: int
         """
         self._test_num = test_num
 

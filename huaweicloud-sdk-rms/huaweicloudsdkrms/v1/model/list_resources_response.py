@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListResourcesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListResourcesResponse(SdkResponse):
     }
 
     def __init__(self, resources=None, page_info=None):
-        """ListResourcesResponse - a model defined in huaweicloud sdk"""
+        """ListResourcesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param resources: 资源列表
+        :type resources: list[:class:`huaweicloudsdkrms.v1.ResourceEntity`]
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkrms.v1.PageInfo`
+        """
         
         super(ListResourcesResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListResourcesResponse(SdkResponse):
         资源列表
 
         :return: The resources of this ListResourcesResponse.
-        :rtype: list[ResourceEntity]
+        :rtype: list[:class:`huaweicloudsdkrms.v1.ResourceEntity`]
         """
         return self._resources
 
@@ -63,7 +70,7 @@ class ListResourcesResponse(SdkResponse):
         资源列表
 
         :param resources: The resources of this ListResourcesResponse.
-        :type: list[ResourceEntity]
+        :type resources: list[:class:`huaweicloudsdkrms.v1.ResourceEntity`]
         """
         self._resources = resources
 
@@ -73,7 +80,7 @@ class ListResourcesResponse(SdkResponse):
 
 
         :return: The page_info of this ListResourcesResponse.
-        :rtype: PageInfo
+        :rtype: :class:`huaweicloudsdkrms.v1.PageInfo`
         """
         return self._page_info
 
@@ -83,7 +90,7 @@ class ListResourcesResponse(SdkResponse):
 
 
         :param page_info: The page_info of this ListResourcesResponse.
-        :type: PageInfo
+        :type page_info: :class:`huaweicloudsdkrms.v1.PageInfo`
         """
         self._page_info = page_info
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteRecordSetsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteRecordSetsRequest:
     }
 
     def __init__(self, zone_id=None, recordset_id=None):
-        """DeleteRecordSetsRequest - a model defined in huaweicloud sdk"""
+        """DeleteRecordSetsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param zone_id: 
+        :type zone_id: str
+        :param recordset_id: 
+        :type recordset_id: str
+        """
         
         
 
@@ -59,7 +66,7 @@ class DeleteRecordSetsRequest:
 
 
         :param zone_id: The zone_id of this DeleteRecordSetsRequest.
-        :type: str
+        :type zone_id: str
         """
         self._zone_id = zone_id
 
@@ -79,7 +86,7 @@ class DeleteRecordSetsRequest:
 
 
         :param recordset_id: The recordset_id of this DeleteRecordSetsRequest.
-        :type: str
+        :type recordset_id: str
         """
         self._recordset_id = recordset_id
 

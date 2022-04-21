@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListHasVerifiedContactsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListHasVerifiedContactsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, contact_list=None):
-        """ListHasVerifiedContactsResponse - a model defined in huaweicloud sdk"""
+        """ListHasVerifiedContactsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 总数
+        :type count: int
+        :param contact_list: 联系方式列表
+        :type contact_list: list[:class:`huaweicloudsdkosm.v2.ContactV2`]
+        """
         
         super(ListHasVerifiedContactsResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListHasVerifiedContactsResponse(SdkResponse):
         总数
 
         :param count: The count of this ListHasVerifiedContactsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -74,7 +81,7 @@ class ListHasVerifiedContactsResponse(SdkResponse):
         联系方式列表
 
         :return: The contact_list of this ListHasVerifiedContactsResponse.
-        :rtype: list[ContactV2]
+        :rtype: list[:class:`huaweicloudsdkosm.v2.ContactV2`]
         """
         return self._contact_list
 
@@ -85,7 +92,7 @@ class ListHasVerifiedContactsResponse(SdkResponse):
         联系方式列表
 
         :param contact_list: The contact_list of this ListHasVerifiedContactsResponse.
-        :type: list[ContactV2]
+        :type contact_list: list[:class:`huaweicloudsdkosm.v2.ContactV2`]
         """
         self._contact_list = contact_list
 

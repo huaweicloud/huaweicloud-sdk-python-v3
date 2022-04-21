@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SubJobParams:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class SubJobParams:
     }
 
     def __init__(self, status=None, entities=None, job_id=None, job_type=None, begin_time=None, end_time=None, error_code=None, fail_reason=None):
-        """SubJobParams - a model defined in huaweicloud sdk"""
+        """SubJobParams
+
+        The model defined in huaweicloud sdk
+
+        :param status: Job的状态。 SUCCESS：成功。 RUNNING：运行中。 FAIL：失败。 INIT：正在初始化。
+        :type status: str
+        :param entities: 
+        :type entities: :class:`huaweicloudsdksdrs.v1.SubJobEntities`
+        :param job_id: Job ID。
+        :type job_id: str
+        :param job_type: Job的类型。createProtectionGroupNoCG：创建保护组。deleteProtectionGroupNoCG：删除保护组。startProtectionGroupNoCG ：保护组开始保护。reprotectProtectionGroupNoCG ：保护组重保护。stopProtectionGroupNoCG ：保护组停止保护。failoverProtectionGroupNoCG  ：保护组故障切换。reverseProtectionGroupNoCG：保护组切换。createProtectedInstanceNoCG：创建保护实例。deleteProtectedInstanceNoCG：删除保护实例。attachReplicationPairNew：保护实例挂载复制对。detachReplicationPairNew：保护实例卸载复制对。addNicNew：保护实例添加网卡。deleteNicNew：保护实例删除网卡。resizeProtectedInstanceNew：保护实例变更规格。createReplicationPairNoCG：创建复制对。deleteReplicationPairNoCG：删除复制对。expandReplicationPairNew：复制对扩容。createDisasterRecoveryDrill：创建容灾演练。deleteDisasterRecoveryDrill：删除容灾演练。
+        :type job_type: str
+        :param begin_time: 开始时间。默认格式为：\&quot;yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSSZ\&quot;，例：\&quot;2019-04-01T12:00:00.000Z\&quot;。
+        :type begin_time: str
+        :param end_time: 结束时间。默认格式为：\&quot;yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSSZ\&quot;，例：\&quot;2019-04-01T12:00:00.000Z\&quot;。
+        :type end_time: str
+        :param error_code: Job执行失败时的错误码。
+        :type error_code: str
+        :param fail_reason: Job执行失败时的错误原因。
+        :type fail_reason: str
+        """
         
         
 
@@ -85,7 +104,7 @@ class SubJobParams:
         Job的状态。 SUCCESS：成功。 RUNNING：运行中。 FAIL：失败。 INIT：正在初始化。
 
         :param status: The status of this SubJobParams.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -95,7 +114,7 @@ class SubJobParams:
 
 
         :return: The entities of this SubJobParams.
-        :rtype: SubJobEntities
+        :rtype: :class:`huaweicloudsdksdrs.v1.SubJobEntities`
         """
         return self._entities
 
@@ -105,7 +124,7 @@ class SubJobParams:
 
 
         :param entities: The entities of this SubJobParams.
-        :type: SubJobEntities
+        :type entities: :class:`huaweicloudsdksdrs.v1.SubJobEntities`
         """
         self._entities = entities
 
@@ -127,7 +146,7 @@ class SubJobParams:
         Job ID。
 
         :param job_id: The job_id of this SubJobParams.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -149,7 +168,7 @@ class SubJobParams:
         Job的类型。createProtectionGroupNoCG：创建保护组。deleteProtectionGroupNoCG：删除保护组。startProtectionGroupNoCG ：保护组开始保护。reprotectProtectionGroupNoCG ：保护组重保护。stopProtectionGroupNoCG ：保护组停止保护。failoverProtectionGroupNoCG  ：保护组故障切换。reverseProtectionGroupNoCG：保护组切换。createProtectedInstanceNoCG：创建保护实例。deleteProtectedInstanceNoCG：删除保护实例。attachReplicationPairNew：保护实例挂载复制对。detachReplicationPairNew：保护实例卸载复制对。addNicNew：保护实例添加网卡。deleteNicNew：保护实例删除网卡。resizeProtectedInstanceNew：保护实例变更规格。createReplicationPairNoCG：创建复制对。deleteReplicationPairNoCG：删除复制对。expandReplicationPairNew：复制对扩容。createDisasterRecoveryDrill：创建容灾演练。deleteDisasterRecoveryDrill：删除容灾演练。
 
         :param job_type: The job_type of this SubJobParams.
-        :type: str
+        :type job_type: str
         """
         self._job_type = job_type
 
@@ -171,7 +190,7 @@ class SubJobParams:
         开始时间。默认格式为：\"yyyy-MM-dd'T'HH:mm:ss.SSSZ\"，例：\"2019-04-01T12:00:00.000Z\"。
 
         :param begin_time: The begin_time of this SubJobParams.
-        :type: str
+        :type begin_time: str
         """
         self._begin_time = begin_time
 
@@ -193,7 +212,7 @@ class SubJobParams:
         结束时间。默认格式为：\"yyyy-MM-dd'T'HH:mm:ss.SSSZ\"，例：\"2019-04-01T12:00:00.000Z\"。
 
         :param end_time: The end_time of this SubJobParams.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -215,7 +234,7 @@ class SubJobParams:
         Job执行失败时的错误码。
 
         :param error_code: The error_code of this SubJobParams.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -237,7 +256,7 @@ class SubJobParams:
         Job执行失败时的错误原因。
 
         :param fail_reason: The fail_reason of this SubJobParams.
-        :type: str
+        :type fail_reason: str
         """
         self._fail_reason = fail_reason
 

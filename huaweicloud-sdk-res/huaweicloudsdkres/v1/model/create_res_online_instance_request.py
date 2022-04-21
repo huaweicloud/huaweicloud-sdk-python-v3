@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateResOnlineInstanceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CreateResOnlineInstanceRequest:
     }
 
     def __init__(self, content_type=None, resource_id=None, workspace_id=None, body=None):
-        """CreateResOnlineInstanceRequest - a model defined in huaweicloud sdk"""
+        """CreateResOnlineInstanceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param content_type: 内容类型，取值为application/json。
+        :type content_type: str
+        :param resource_id: 资源id（数据源id或场景id）。
+        :type resource_id: str
+        :param workspace_id: 工作空间id。
+        :type workspace_id: str
+        :param body: Body of the CreateResOnlineInstanceRequest
+        :type body: :class:`huaweicloudsdkres.v1.CreateResOnlineInstanceRequestBody`
+        """
         
         
 
@@ -70,7 +81,7 @@ class CreateResOnlineInstanceRequest:
         内容类型，取值为application/json。
 
         :param content_type: The content_type of this CreateResOnlineInstanceRequest.
-        :type: str
+        :type content_type: str
         """
         self._content_type = content_type
 
@@ -92,7 +103,7 @@ class CreateResOnlineInstanceRequest:
         资源id（数据源id或场景id）。
 
         :param resource_id: The resource_id of this CreateResOnlineInstanceRequest.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -114,7 +125,7 @@ class CreateResOnlineInstanceRequest:
         工作空间id。
 
         :param workspace_id: The workspace_id of this CreateResOnlineInstanceRequest.
-        :type: str
+        :type workspace_id: str
         """
         self._workspace_id = workspace_id
 
@@ -124,7 +135,7 @@ class CreateResOnlineInstanceRequest:
 
 
         :return: The body of this CreateResOnlineInstanceRequest.
-        :rtype: CreateResOnlineInstanceRequestBody
+        :rtype: :class:`huaweicloudsdkres.v1.CreateResOnlineInstanceRequestBody`
         """
         return self._body
 
@@ -134,7 +145,7 @@ class CreateResOnlineInstanceRequest:
 
 
         :param body: The body of this CreateResOnlineInstanceRequest.
-        :type: CreateResOnlineInstanceRequestBody
+        :type body: :class:`huaweicloudsdkres.v1.CreateResOnlineInstanceRequestBody`
         """
         self._body = body
 

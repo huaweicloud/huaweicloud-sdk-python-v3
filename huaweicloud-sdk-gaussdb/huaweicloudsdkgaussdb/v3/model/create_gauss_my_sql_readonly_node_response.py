@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateGaussMySqlReadonlyNodeResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CreateGaussMySqlReadonlyNodeResponse(SdkResponse):
     }
 
     def __init__(self, instance_id=None, node_names=None, job_id=None, order_id=None):
-        """CreateGaussMySqlReadonlyNodeResponse - a model defined in huaweicloud sdk"""
+        """CreateGaussMySqlReadonlyNodeResponse
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param node_names: 节点名称列表。
+        :type node_names: list[str]
+        :param job_id: 实例创建的任务id。  仅创建按需实例时会返回该参数。
+        :type job_id: str
+        :param order_id: 订单号，创建包年包月时返回该参数。
+        :type order_id: str
+        """
         
         super(CreateGaussMySqlReadonlyNodeResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class CreateGaussMySqlReadonlyNodeResponse(SdkResponse):
         实例ID。
 
         :param instance_id: The instance_id of this CreateGaussMySqlReadonlyNodeResponse.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -95,7 +106,7 @@ class CreateGaussMySqlReadonlyNodeResponse(SdkResponse):
         节点名称列表。
 
         :param node_names: The node_names of this CreateGaussMySqlReadonlyNodeResponse.
-        :type: list[str]
+        :type node_names: list[str]
         """
         self._node_names = node_names
 
@@ -117,7 +128,7 @@ class CreateGaussMySqlReadonlyNodeResponse(SdkResponse):
         实例创建的任务id。  仅创建按需实例时会返回该参数。
 
         :param job_id: The job_id of this CreateGaussMySqlReadonlyNodeResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -139,7 +150,7 @@ class CreateGaussMySqlReadonlyNodeResponse(SdkResponse):
         订单号，创建包年包月时返回该参数。
 
         :param order_id: The order_id of this CreateGaussMySqlReadonlyNodeResponse.
-        :type: str
+        :type order_id: str
         """
         self._order_id = order_id
 

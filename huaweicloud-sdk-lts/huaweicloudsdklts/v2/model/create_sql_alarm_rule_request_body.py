@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateSqlAlarmRuleRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class CreateSqlAlarmRuleRequestBody:
     }
 
     def __init__(self, sql_alarm_rule_name=None, sql_alarm_rule_description=None, sql_requests=None, frequency=None, condition_expression=None, sql_alarm_level=None, sql_alarm_send=None, domain_id=None, notification_save_rule=None):
-        """CreateSqlAlarmRuleRequestBody - a model defined in huaweicloud sdk"""
+        """CreateSqlAlarmRuleRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param sql_alarm_rule_name: SQL告警名称
+        :type sql_alarm_rule_name: str
+        :param sql_alarm_rule_description: SQL告警信息描述
+        :type sql_alarm_rule_description: str
+        :param sql_requests: SQL详细信息
+        :type sql_requests: list[:class:`huaweicloudsdklts.v2.SqlRequest`]
+        :param frequency: 告警统计周期
+        :type frequency: :class:`huaweicloudsdklts.v2.Frequency`
+        :param condition_expression: 条件表达式
+        :type condition_expression: str
+        :param sql_alarm_level: 告警级别
+        :type sql_alarm_level: str
+        :param sql_alarm_send: 是否发送
+        :type sql_alarm_send: bool
+        :param domain_id: domainId
+        :type domain_id: str
+        :param notification_save_rule: 通知主题
+        :type notification_save_rule: :class:`huaweicloudsdklts.v2.NotificationSaveRule`
+        """
         
         
 
@@ -91,7 +112,7 @@ class CreateSqlAlarmRuleRequestBody:
         SQL告警名称
 
         :param sql_alarm_rule_name: The sql_alarm_rule_name of this CreateSqlAlarmRuleRequestBody.
-        :type: str
+        :type sql_alarm_rule_name: str
         """
         self._sql_alarm_rule_name = sql_alarm_rule_name
 
@@ -113,7 +134,7 @@ class CreateSqlAlarmRuleRequestBody:
         SQL告警信息描述
 
         :param sql_alarm_rule_description: The sql_alarm_rule_description of this CreateSqlAlarmRuleRequestBody.
-        :type: str
+        :type sql_alarm_rule_description: str
         """
         self._sql_alarm_rule_description = sql_alarm_rule_description
 
@@ -124,7 +145,7 @@ class CreateSqlAlarmRuleRequestBody:
         SQL详细信息
 
         :return: The sql_requests of this CreateSqlAlarmRuleRequestBody.
-        :rtype: list[SqlRequest]
+        :rtype: list[:class:`huaweicloudsdklts.v2.SqlRequest`]
         """
         return self._sql_requests
 
@@ -135,7 +156,7 @@ class CreateSqlAlarmRuleRequestBody:
         SQL详细信息
 
         :param sql_requests: The sql_requests of this CreateSqlAlarmRuleRequestBody.
-        :type: list[SqlRequest]
+        :type sql_requests: list[:class:`huaweicloudsdklts.v2.SqlRequest`]
         """
         self._sql_requests = sql_requests
 
@@ -146,7 +167,7 @@ class CreateSqlAlarmRuleRequestBody:
         告警统计周期
 
         :return: The frequency of this CreateSqlAlarmRuleRequestBody.
-        :rtype: Frequency
+        :rtype: :class:`huaweicloudsdklts.v2.Frequency`
         """
         return self._frequency
 
@@ -157,7 +178,7 @@ class CreateSqlAlarmRuleRequestBody:
         告警统计周期
 
         :param frequency: The frequency of this CreateSqlAlarmRuleRequestBody.
-        :type: Frequency
+        :type frequency: :class:`huaweicloudsdklts.v2.Frequency`
         """
         self._frequency = frequency
 
@@ -179,7 +200,7 @@ class CreateSqlAlarmRuleRequestBody:
         条件表达式
 
         :param condition_expression: The condition_expression of this CreateSqlAlarmRuleRequestBody.
-        :type: str
+        :type condition_expression: str
         """
         self._condition_expression = condition_expression
 
@@ -201,7 +222,7 @@ class CreateSqlAlarmRuleRequestBody:
         告警级别
 
         :param sql_alarm_level: The sql_alarm_level of this CreateSqlAlarmRuleRequestBody.
-        :type: str
+        :type sql_alarm_level: str
         """
         self._sql_alarm_level = sql_alarm_level
 
@@ -223,7 +244,7 @@ class CreateSqlAlarmRuleRequestBody:
         是否发送
 
         :param sql_alarm_send: The sql_alarm_send of this CreateSqlAlarmRuleRequestBody.
-        :type: bool
+        :type sql_alarm_send: bool
         """
         self._sql_alarm_send = sql_alarm_send
 
@@ -245,7 +266,7 @@ class CreateSqlAlarmRuleRequestBody:
         domainId
 
         :param domain_id: The domain_id of this CreateSqlAlarmRuleRequestBody.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -256,7 +277,7 @@ class CreateSqlAlarmRuleRequestBody:
         通知主题
 
         :return: The notification_save_rule of this CreateSqlAlarmRuleRequestBody.
-        :rtype: NotificationSaveRule
+        :rtype: :class:`huaweicloudsdklts.v2.NotificationSaveRule`
         """
         return self._notification_save_rule
 
@@ -267,7 +288,7 @@ class CreateSqlAlarmRuleRequestBody:
         通知主题
 
         :param notification_save_rule: The notification_save_rule of this CreateSqlAlarmRuleRequestBody.
-        :type: NotificationSaveRule
+        :type notification_save_rule: :class:`huaweicloudsdklts.v2.NotificationSaveRule`
         """
         self._notification_save_rule = notification_save_rule
 

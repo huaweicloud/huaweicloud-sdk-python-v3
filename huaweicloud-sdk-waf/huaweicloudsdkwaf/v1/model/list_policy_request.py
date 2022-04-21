@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPolicyRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListPolicyRequest:
     }
 
     def __init__(self, enterprise_project_id=None, page=None, pagesize=None, name=None):
-        """ListPolicyRequest - a model defined in huaweicloud sdk"""
+        """ListPolicyRequest
+
+        The model defined in huaweicloud sdk
+
+        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        :type enterprise_project_id: str
+        :param page: 分页查询时，返回第几页数据。范围0-100000，默认值为1，表示返回第1页数据。
+        :type page: int
+        :param pagesize: 分页查询时，每页包含多少条结果。范围1-100，默认值为10，表示每页包含10条结果。
+        :type pagesize: int
+        :param name: 策略名称
+        :type name: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class ListPolicyRequest:
         您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this ListPolicyRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -95,7 +106,7 @@ class ListPolicyRequest:
         分页查询时，返回第几页数据。范围0-100000，默认值为1，表示返回第1页数据。
 
         :param page: The page of this ListPolicyRequest.
-        :type: int
+        :type page: int
         """
         self._page = page
 
@@ -117,7 +128,7 @@ class ListPolicyRequest:
         分页查询时，每页包含多少条结果。范围1-100，默认值为10，表示每页包含10条结果。
 
         :param pagesize: The pagesize of this ListPolicyRequest.
-        :type: int
+        :type pagesize: int
         """
         self._pagesize = pagesize
 
@@ -139,7 +150,7 @@ class ListPolicyRequest:
         策略名称
 
         :param name: The name of this ListPolicyRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 

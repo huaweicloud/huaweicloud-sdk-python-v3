@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowPriceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class ShowPriceRequest:
     }
 
     def __init__(self):
-        """ShowPriceRequest - a model defined in huaweicloud sdk"""
+        """ShowPriceRequest
+
+        The model defined in huaweicloud sdk
+
+        """
         
         
         self.discriminator = None

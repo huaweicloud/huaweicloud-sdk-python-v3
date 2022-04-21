@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListStructuredLogsWithTimeRangeRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListStructuredLogsWithTimeRangeRequest:
     }
 
     def __init__(self, log_stream_id=None, body=None):
-        """ListStructuredLogsWithTimeRangeRequest - a model defined in huaweicloud sdk"""
+        """ListStructuredLogsWithTimeRangeRequest
+
+        The model defined in huaweicloud sdk
+
+        :param log_stream_id: 日志流id，获取方式请参见：获取账号ID、项目ID、日志组ID、日志流ID（https://support.huaweicloud.com/api-lts/lts_api_0006.html）。
+        :type log_stream_id: str
+        :param body: Body of the ListStructuredLogsWithTimeRangeRequest
+        :type body: :class:`huaweicloudsdklts.v2.QueryLtsStructLogParamsNew`
+        """
         
         
 
@@ -62,7 +69,7 @@ class ListStructuredLogsWithTimeRangeRequest:
         日志流id，获取方式请参见：获取账号ID、项目ID、日志组ID、日志流ID（https://support.huaweicloud.com/api-lts/lts_api_0006.html）。
 
         :param log_stream_id: The log_stream_id of this ListStructuredLogsWithTimeRangeRequest.
-        :type: str
+        :type log_stream_id: str
         """
         self._log_stream_id = log_stream_id
 
@@ -72,7 +79,7 @@ class ListStructuredLogsWithTimeRangeRequest:
 
 
         :return: The body of this ListStructuredLogsWithTimeRangeRequest.
-        :rtype: QueryLtsStructLogParamsNew
+        :rtype: :class:`huaweicloudsdklts.v2.QueryLtsStructLogParamsNew`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class ListStructuredLogsWithTimeRangeRequest:
 
 
         :param body: The body of this ListStructuredLogsWithTimeRangeRequest.
-        :type: QueryLtsStructLogParamsNew
+        :type body: :class:`huaweicloudsdklts.v2.QueryLtsStructLogParamsNew`
         """
         self._body = body
 

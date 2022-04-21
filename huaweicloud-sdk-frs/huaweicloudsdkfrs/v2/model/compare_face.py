@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CompareFace:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CompareFace:
     }
 
     def __init__(self, bounding_box=None):
-        """CompareFace - a model defined in huaweicloud sdk"""
+        """CompareFace
+
+        The model defined in huaweicloud sdk
+
+        :param bounding_box: 
+        :type bounding_box: :class:`huaweicloudsdkfrs.v2.BoundingBox`
+        """
         
         
 
@@ -45,7 +50,7 @@ class CompareFace:
 
 
         :return: The bounding_box of this CompareFace.
-        :rtype: BoundingBox
+        :rtype: :class:`huaweicloudsdkfrs.v2.BoundingBox`
         """
         return self._bounding_box
 
@@ -55,7 +60,7 @@ class CompareFace:
 
 
         :param bounding_box: The bounding_box of this CompareFace.
-        :type: BoundingBox
+        :type bounding_box: :class:`huaweicloudsdkfrs.v2.BoundingBox`
         """
         self._bounding_box = bounding_box
 

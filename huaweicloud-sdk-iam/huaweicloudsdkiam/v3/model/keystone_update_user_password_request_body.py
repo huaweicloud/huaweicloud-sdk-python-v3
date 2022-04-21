@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneUpdateUserPasswordRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class KeystoneUpdateUserPasswordRequestBody:
     }
 
     def __init__(self, user=None):
-        """KeystoneUpdateUserPasswordRequestBody - a model defined in huaweicloud sdk"""
+        """KeystoneUpdateUserPasswordRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param user: 
+        :type user: :class:`huaweicloudsdkiam.v3.KeystoneUpdatePasswordOption`
+        """
         
         
 
@@ -45,7 +50,7 @@ class KeystoneUpdateUserPasswordRequestBody:
 
 
         :return: The user of this KeystoneUpdateUserPasswordRequestBody.
-        :rtype: KeystoneUpdatePasswordOption
+        :rtype: :class:`huaweicloudsdkiam.v3.KeystoneUpdatePasswordOption`
         """
         return self._user
 
@@ -55,7 +60,7 @@ class KeystoneUpdateUserPasswordRequestBody:
 
 
         :param user: The user of this KeystoneUpdateUserPasswordRequestBody.
-        :type: KeystoneUpdatePasswordOption
+        :type user: :class:`huaweicloudsdkiam.v3.KeystoneUpdatePasswordOption`
         """
         self._user = user
 

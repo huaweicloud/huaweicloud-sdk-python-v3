@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateNickNameV4Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateNickNameV4Request:
     }
 
     def __init__(self, body=None):
-        """UpdateNickNameV4Request - a model defined in huaweicloud sdk"""
+        """UpdateNickNameV4Request
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the UpdateNickNameV4Request
+        :type body: :class:`huaweicloudsdkprojectman.v4.UpdateUserNickNameRequestV4`
+        """
         
         
 
@@ -46,7 +51,7 @@ class UpdateNickNameV4Request:
 
 
         :return: The body of this UpdateNickNameV4Request.
-        :rtype: UpdateUserNickNameRequestV4
+        :rtype: :class:`huaweicloudsdkprojectman.v4.UpdateUserNickNameRequestV4`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class UpdateNickNameV4Request:
 
 
         :param body: The body of this UpdateNickNameV4Request.
-        :type: UpdateUserNickNameRequestV4
+        :type body: :class:`huaweicloudsdkprojectman.v4.UpdateUserNickNameRequestV4`
         """
         self._body = body
 

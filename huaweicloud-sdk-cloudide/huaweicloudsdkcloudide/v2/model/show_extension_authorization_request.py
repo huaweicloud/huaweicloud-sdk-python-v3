@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowExtensionAuthorizationRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowExtensionAuthorizationRequest:
     }
 
     def __init__(self, extension_version=None, identifier=None, instance_id=None):
-        """ShowExtensionAuthorizationRequest - a model defined in huaweicloud sdk"""
+        """ShowExtensionAuthorizationRequest
+
+        The model defined in huaweicloud sdk
+
+        :param extension_version: 插件版本
+        :type extension_version: str
+        :param identifier: 插件标识(发布者.插件名)
+        :type identifier: str
+        :param instance_id: CloudIDE实例ID
+        :type instance_id: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class ShowExtensionAuthorizationRequest:
         插件版本
 
         :param extension_version: The extension_version of this ShowExtensionAuthorizationRequest.
-        :type: str
+        :type extension_version: str
         """
         self._extension_version = extension_version
 
@@ -87,7 +96,7 @@ class ShowExtensionAuthorizationRequest:
         插件标识(发布者.插件名)
 
         :param identifier: The identifier of this ShowExtensionAuthorizationRequest.
-        :type: str
+        :type identifier: str
         """
         self._identifier = identifier
 
@@ -109,7 +118,7 @@ class ShowExtensionAuthorizationRequest:
         CloudIDE实例ID
 
         :param instance_id: The instance_id of this ShowExtensionAuthorizationRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 

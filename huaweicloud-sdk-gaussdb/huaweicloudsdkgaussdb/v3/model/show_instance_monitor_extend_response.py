@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowInstanceMonitorExtendResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowInstanceMonitorExtendResponse(SdkResponse):
     }
 
     def __init__(self, monitor_switch=None, period=None):
-        """ShowInstanceMonitorExtendResponse - a model defined in huaweicloud sdk"""
+        """ShowInstanceMonitorExtendResponse
+
+        The model defined in huaweicloud sdk
+
+        :param monitor_switch: 实例秒级监控开关。为true时表示开启，为false时表示关闭。
+        :type monitor_switch: bool
+        :param period: 采集周期，仅在monitor_switch为true时返回。1：采集周期为1s； 5：采集周期为5s。
+        :type period: int
+        """
         
         super(ShowInstanceMonitorExtendResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ShowInstanceMonitorExtendResponse(SdkResponse):
         实例秒级监控开关。为true时表示开启，为false时表示关闭。
 
         :param monitor_switch: The monitor_switch of this ShowInstanceMonitorExtendResponse.
-        :type: bool
+        :type monitor_switch: bool
         """
         self._monitor_switch = monitor_switch
 
@@ -85,7 +92,7 @@ class ShowInstanceMonitorExtendResponse(SdkResponse):
         采集周期，仅在monitor_switch为true时返回。1：采集周期为1s； 5：采集周期为5s。
 
         :param period: The period of this ShowInstanceMonitorExtendResponse.
-        :type: int
+        :type period: int
         """
         self._period = period
 

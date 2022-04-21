@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowScanJobsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ShowScanJobsRequest:
     }
 
     def __init__(self, offset=None, limit=None, content=None, start_time=None, end_time=None):
-        """ShowScanJobsRequest - a model defined in huaweicloud sdk"""
+        """ShowScanJobsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param offset: 页码
+        :type offset: int
+        :param limit: 分页大小
+        :type limit: int
+        :param content: 内容
+        :type content: str
+        :param start_time: 预留，待启用
+        :type start_time: str
+        :param end_time: 预留，待启用
+        :type end_time: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class ShowScanJobsRequest:
         页码
 
         :param offset: The offset of this ShowScanJobsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -100,7 +113,7 @@ class ShowScanJobsRequest:
         分页大小
 
         :param limit: The limit of this ShowScanJobsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -122,7 +135,7 @@ class ShowScanJobsRequest:
         内容
 
         :param content: The content of this ShowScanJobsRequest.
-        :type: str
+        :type content: str
         """
         self._content = content
 
@@ -144,7 +157,7 @@ class ShowScanJobsRequest:
         预留，待启用
 
         :param start_time: The start_time of this ShowScanJobsRequest.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -166,7 +179,7 @@ class ShowScanJobsRequest:
         预留，待启用
 
         :param end_time: The end_time of this ShowScanJobsRequest.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 

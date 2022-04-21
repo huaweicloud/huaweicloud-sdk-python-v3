@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchDeleteTestCaseRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchDeleteTestCaseRequestBody:
     }
 
     def __init__(self, service_id=None, testcase_id_list=None):
-        """BatchDeleteTestCaseRequestBody - a model defined in huaweicloud sdk"""
+        """BatchDeleteTestCaseRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param service_id: 注册测试类型服务接口返回的服务id，取值范围为10-9999
+        :type service_id: int
+        :param testcase_id_list: 测试用例唯一标识，数组长度小于50个
+        :type testcase_id_list: list[str]
+        """
         
         
 
@@ -61,7 +68,7 @@ class BatchDeleteTestCaseRequestBody:
         注册测试类型服务接口返回的服务id，取值范围为10-9999
 
         :param service_id: The service_id of this BatchDeleteTestCaseRequestBody.
-        :type: int
+        :type service_id: int
         """
         self._service_id = service_id
 
@@ -83,7 +90,7 @@ class BatchDeleteTestCaseRequestBody:
         测试用例唯一标识，数组长度小于50个
 
         :param testcase_id_list: The testcase_id_list of this BatchDeleteTestCaseRequestBody.
-        :type: list[str]
+        :type testcase_id_list: list[str]
         """
         self._testcase_id_list = testcase_id_list
 

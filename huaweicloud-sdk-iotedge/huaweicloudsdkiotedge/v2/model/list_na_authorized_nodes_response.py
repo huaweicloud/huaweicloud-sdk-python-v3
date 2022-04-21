@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListNaAuthorizedNodesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListNaAuthorizedNodesResponse(SdkResponse):
     }
 
     def __init__(self, count=None, page_info=None, nodes=None):
-        """ListNaAuthorizedNodesResponse - a model defined in huaweicloud sdk"""
+        """ListNaAuthorizedNodesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 总记录数
+        :type count: int
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkiotedge.v2.PageInfoDTO`
+        :param nodes: 查询授权北向NA信息到边缘节点列表的返回结构体
+        :type nodes: list[:class:`huaweicloudsdkiotedge.v2.QueryAuthorizedNodeDTO`]
+        """
         
         super(ListNaAuthorizedNodesResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListNaAuthorizedNodesResponse(SdkResponse):
         总记录数
 
         :param count: The count of this ListNaAuthorizedNodesResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -78,7 +87,7 @@ class ListNaAuthorizedNodesResponse(SdkResponse):
 
 
         :return: The page_info of this ListNaAuthorizedNodesResponse.
-        :rtype: PageInfoDTO
+        :rtype: :class:`huaweicloudsdkiotedge.v2.PageInfoDTO`
         """
         return self._page_info
 
@@ -88,7 +97,7 @@ class ListNaAuthorizedNodesResponse(SdkResponse):
 
 
         :param page_info: The page_info of this ListNaAuthorizedNodesResponse.
-        :type: PageInfoDTO
+        :type page_info: :class:`huaweicloudsdkiotedge.v2.PageInfoDTO`
         """
         self._page_info = page_info
 
@@ -99,7 +108,7 @@ class ListNaAuthorizedNodesResponse(SdkResponse):
         查询授权北向NA信息到边缘节点列表的返回结构体
 
         :return: The nodes of this ListNaAuthorizedNodesResponse.
-        :rtype: list[QueryAuthorizedNodeDTO]
+        :rtype: list[:class:`huaweicloudsdkiotedge.v2.QueryAuthorizedNodeDTO`]
         """
         return self._nodes
 
@@ -110,7 +119,7 @@ class ListNaAuthorizedNodesResponse(SdkResponse):
         查询授权北向NA信息到边缘节点列表的返回结构体
 
         :param nodes: The nodes of this ListNaAuthorizedNodesResponse.
-        :type: list[QueryAuthorizedNodeDTO]
+        :type nodes: list[:class:`huaweicloudsdkiotedge.v2.QueryAuthorizedNodeDTO`]
         """
         self._nodes = nodes
 

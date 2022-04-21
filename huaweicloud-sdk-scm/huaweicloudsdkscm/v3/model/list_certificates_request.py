@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCertificatesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ListCertificatesRequest:
     }
 
     def __init__(self, limit=None, offset=None, sort_dir=None, sort_key=None, status=None, enterprise_project_id=None, deploy_support=None):
-        """ListCertificatesRequest - a model defined in huaweicloud sdk"""
+        """ListCertificatesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 每页条目数量，取值如下： - 10：每页显示10条证书信息。 - 20：每页显示20条证书信息。 - 50：每页显示50条证书信息。
+        :type limit: int
+        :param offset: 偏移量。取值范围为1~30。
+        :type offset: int
+        :param sort_dir: 排序方式。根据排序参数sort_key进行排序，取值如下： - ASC：升序。 - DESC：降序。
+        :type sort_dir: str
+        :param sort_key: 排序依据参数，取值如下： - certExpiredTime：证书到期时间。 - certStatus：证书状态。 - certUpdateTime：证书更新时间。
+        :type sort_key: str
+        :param status: 证书状态，取值如下： - ALL：所有证书状态。 - PAID：证书已支付，待申请证书。 - ISSUED：证书已签发。 - CHECKING：证书申请审核中。 - CANCELCHECKING：取消证书申请审核中。 - UNPASSED：证书申请未通过。 - EXPIRED：证书已过期。 - REVOKING：证书吊销申请审核中。 - REVOKED：证书已吊销。 - UPLOAD：证书托管中。 - CHECKING_ORG：待完成企业资格认证。 - ISSUING：证书待签发。 - SUPPLEMENTCHECKING：多域名证书新增附加域名审核中。
+        :type status: str
+        :param enterprise_project_id: 企业多项目ID。用户未开通企业多项目时，不需要输入该字段。 用户开通企业多项目时，查询资源可以输入该字段。 若用户不输入该字段，默认查询租户所有有权限的企业多项目下的资源。 此时“enterprise_project_id”取值为“all”。 若用户输入该字段，取值满足以下任一条件.  取值为“all”  取值为“0”  满足正则匹配：“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”
+        :type enterprise_project_id: str
+        :param deploy_support: 是否支持部署。
+        :type deploy_support: bool
+        """
         
         
 
@@ -88,7 +105,7 @@ class ListCertificatesRequest:
         每页条目数量，取值如下： - 10：每页显示10条证书信息。 - 20：每页显示20条证书信息。 - 50：每页显示50条证书信息。
 
         :param limit: The limit of this ListCertificatesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -110,7 +127,7 @@ class ListCertificatesRequest:
         偏移量。取值范围为1~30。
 
         :param offset: The offset of this ListCertificatesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -132,7 +149,7 @@ class ListCertificatesRequest:
         排序方式。根据排序参数sort_key进行排序，取值如下： - ASC：升序。 - DESC：降序。
 
         :param sort_dir: The sort_dir of this ListCertificatesRequest.
-        :type: str
+        :type sort_dir: str
         """
         self._sort_dir = sort_dir
 
@@ -154,7 +171,7 @@ class ListCertificatesRequest:
         排序依据参数，取值如下： - certExpiredTime：证书到期时间。 - certStatus：证书状态。 - certUpdateTime：证书更新时间。
 
         :param sort_key: The sort_key of this ListCertificatesRequest.
-        :type: str
+        :type sort_key: str
         """
         self._sort_key = sort_key
 
@@ -176,7 +193,7 @@ class ListCertificatesRequest:
         证书状态，取值如下： - ALL：所有证书状态。 - PAID：证书已支付，待申请证书。 - ISSUED：证书已签发。 - CHECKING：证书申请审核中。 - CANCELCHECKING：取消证书申请审核中。 - UNPASSED：证书申请未通过。 - EXPIRED：证书已过期。 - REVOKING：证书吊销申请审核中。 - REVOKED：证书已吊销。 - UPLOAD：证书托管中。 - CHECKING_ORG：待完成企业资格认证。 - ISSUING：证书待签发。 - SUPPLEMENTCHECKING：多域名证书新增附加域名审核中。
 
         :param status: The status of this ListCertificatesRequest.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -198,7 +215,7 @@ class ListCertificatesRequest:
         企业多项目ID。用户未开通企业多项目时，不需要输入该字段。 用户开通企业多项目时，查询资源可以输入该字段。 若用户不输入该字段，默认查询租户所有有权限的企业多项目下的资源。 此时“enterprise_project_id”取值为“all”。 若用户输入该字段，取值满足以下任一条件.  取值为“all”  取值为“0”  满足正则匹配：“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”
 
         :param enterprise_project_id: The enterprise_project_id of this ListCertificatesRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -220,7 +237,7 @@ class ListCertificatesRequest:
         是否支持部署。
 
         :param deploy_support: The deploy_support of this ListCertificatesRequest.
-        :type: bool
+        :type deploy_support: bool
         """
         self._deploy_support = deploy_support
 

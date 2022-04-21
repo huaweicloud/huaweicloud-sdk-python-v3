@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListEdgeNodeCertsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListEdgeNodeCertsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, node_certs=None):
-        """ListEdgeNodeCertsResponse - a model defined in huaweicloud sdk"""
+        """ListEdgeNodeCertsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 节点上已关联的应用证书和设备证书的数目
+        :type count: int
+        :param node_certs: 节点上的证书列表
+        :type node_certs: list[:class:`huaweicloudsdkief.v1.NodeCert`]
+        """
         
         super(ListEdgeNodeCertsResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListEdgeNodeCertsResponse(SdkResponse):
         节点上已关联的应用证书和设备证书的数目
 
         :param count: The count of this ListEdgeNodeCertsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -74,7 +81,7 @@ class ListEdgeNodeCertsResponse(SdkResponse):
         节点上的证书列表
 
         :return: The node_certs of this ListEdgeNodeCertsResponse.
-        :rtype: list[NodeCert]
+        :rtype: list[:class:`huaweicloudsdkief.v1.NodeCert`]
         """
         return self._node_certs
 
@@ -85,7 +92,7 @@ class ListEdgeNodeCertsResponse(SdkResponse):
         节点上的证书列表
 
         :param node_certs: The node_certs of this ListEdgeNodeCertsResponse.
-        :type: list[NodeCert]
+        :type node_certs: list[:class:`huaweicloudsdkief.v1.NodeCert`]
         """
         self._node_certs = node_certs
 

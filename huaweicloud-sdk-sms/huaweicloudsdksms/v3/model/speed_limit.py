@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SpeedLimit:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class SpeedLimit:
     }
 
     def __init__(self, speed_limit=None):
-        """SpeedLimit - a model defined in huaweicloud sdk"""
+        """SpeedLimit
+
+        The model defined in huaweicloud sdk
+
+        :param speed_limit: 按时间段限速信息
+        :type speed_limit: list[:class:`huaweicloudsdksms.v3.SpeedLimitlJson`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class SpeedLimit:
         按时间段限速信息
 
         :return: The speed_limit of this SpeedLimit.
-        :rtype: list[SpeedLimitlJson]
+        :rtype: list[:class:`huaweicloudsdksms.v3.SpeedLimitlJson`]
         """
         return self._speed_limit
 
@@ -57,7 +62,7 @@ class SpeedLimit:
         按时间段限速信息
 
         :param speed_limit: The speed_limit of this SpeedLimit.
-        :type: list[SpeedLimitlJson]
+        :type speed_limit: list[:class:`huaweicloudsdksms.v3.SpeedLimitlJson`]
         """
         self._speed_limit = speed_limit
 

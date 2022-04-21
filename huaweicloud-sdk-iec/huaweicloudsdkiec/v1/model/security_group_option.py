@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SecurityGroupOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class SecurityGroupOption:
     }
 
     def __init__(self, id=None):
-        """SecurityGroupOption - a model defined in huaweicloud sdk"""
+        """SecurityGroupOption
+
+        The model defined in huaweicloud sdk
+
+        :param id: 边缘实例的安全组，会对边缘实例中配置的网卡生效。需要指定已有安全组的ID。不填写时选择默认安全组
+        :type id: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class SecurityGroupOption:
         边缘实例的安全组，会对边缘实例中配置的网卡生效。需要指定已有安全组的ID。不填写时选择默认安全组
 
         :param id: The id of this SecurityGroupOption.
-        :type: str
+        :type id: str
         """
         self._id = id
 

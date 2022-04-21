@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PeerInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class PeerInfo:
     }
 
     def __init__(self, name=None, node_cnt=None, status=None, status_detail=None, pvc_name=None, address=None):
-        """PeerInfo - a model defined in huaweicloud sdk"""
+        """PeerInfo
+
+        The model defined in huaweicloud sdk
+
+        :param name: 组织名称
+        :type name: str
+        :param node_cnt: 节点数量
+        :type node_cnt: int
+        :param status: 节点状态，分为创建中（IsCreating），升级中（IsUpgrading），扩缩容中（Adding/IsScaling），删除中（Isdeleting），正常（Normal），异常（AbNormal），未知（其余值）
+        :type status: str
+        :param status_detail: 节点状态，形式如：1/1，分母是该组织下节点总数，分子是正常节点个数
+        :type status_detail: str
+        :param pvc_name: 节点对应pvc名称
+        :type pvc_name: str
+        :param address: Peer节点域名/IP地址
+        :type address: list[:class:`huaweicloudsdkbcs.v2.PeerAddress`]
+        """
         
         
 
@@ -83,7 +98,7 @@ class PeerInfo:
         组织名称
 
         :param name: The name of this PeerInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -105,7 +120,7 @@ class PeerInfo:
         节点数量
 
         :param node_cnt: The node_cnt of this PeerInfo.
-        :type: int
+        :type node_cnt: int
         """
         self._node_cnt = node_cnt
 
@@ -127,7 +142,7 @@ class PeerInfo:
         节点状态，分为创建中（IsCreating），升级中（IsUpgrading），扩缩容中（Adding/IsScaling），删除中（Isdeleting），正常（Normal），异常（AbNormal），未知（其余值）
 
         :param status: The status of this PeerInfo.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -149,7 +164,7 @@ class PeerInfo:
         节点状态，形式如：1/1，分母是该组织下节点总数，分子是正常节点个数
 
         :param status_detail: The status_detail of this PeerInfo.
-        :type: str
+        :type status_detail: str
         """
         self._status_detail = status_detail
 
@@ -171,7 +186,7 @@ class PeerInfo:
         节点对应pvc名称
 
         :param pvc_name: The pvc_name of this PeerInfo.
-        :type: str
+        :type pvc_name: str
         """
         self._pvc_name = pvc_name
 
@@ -182,7 +197,7 @@ class PeerInfo:
         Peer节点域名/IP地址
 
         :return: The address of this PeerInfo.
-        :rtype: list[PeerAddress]
+        :rtype: list[:class:`huaweicloudsdkbcs.v2.PeerAddress`]
         """
         return self._address
 
@@ -193,7 +208,7 @@ class PeerInfo:
         Peer节点域名/IP地址
 
         :param address: The address of this PeerInfo.
-        :type: list[PeerAddress]
+        :type address: list[:class:`huaweicloudsdkbcs.v2.PeerAddress`]
         """
         self._address = address
 

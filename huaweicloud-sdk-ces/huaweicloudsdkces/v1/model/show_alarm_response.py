@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowAlarmResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowAlarmResponse(SdkResponse):
     }
 
     def __init__(self, metric_alarms=None):
-        """ShowAlarmResponse - a model defined in huaweicloud sdk"""
+        """ShowAlarmResponse
+
+        The model defined in huaweicloud sdk
+
+        :param metric_alarms: 告警对象列表。
+        :type metric_alarms: list[:class:`huaweicloudsdkces.v1.MetricAlarms`]
+        """
         
         super(ShowAlarmResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ShowAlarmResponse(SdkResponse):
         告警对象列表。
 
         :return: The metric_alarms of this ShowAlarmResponse.
-        :rtype: list[MetricAlarms]
+        :rtype: list[:class:`huaweicloudsdkces.v1.MetricAlarms`]
         """
         return self._metric_alarms
 
@@ -58,7 +63,7 @@ class ShowAlarmResponse(SdkResponse):
         告警对象列表。
 
         :param metric_alarms: The metric_alarms of this ShowAlarmResponse.
-        :type: list[MetricAlarms]
+        :type metric_alarms: list[:class:`huaweicloudsdkces.v1.MetricAlarms`]
         """
         self._metric_alarms = metric_alarms
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Commit:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class Commit:
     }
 
     def __init__(self, author_email=None, author_name=None, authored_date=None, committed_date=None, committer_email=None, committer_name=None, format=None, id=None, message=None, parent_ids=None):
-        """Commit - a model defined in huaweicloud sdk"""
+        """Commit
+
+        The model defined in huaweicloud sdk
+
+        :param author_email: 作者邮箱
+        :type author_email: str
+        :param author_name: 作者
+        :type author_name: str
+        :param authored_date: 作者提交时间
+        :type authored_date: datetime
+        :param committed_date: 提交时间
+        :type committed_date: datetime
+        :param committer_email: 提交作者邮箱
+        :type committer_email: str
+        :param committer_name: 提交作者
+        :type committer_name: str
+        :param format: 文件变更的详情信息，其格式由请求查询参数 stat_format 决定
+        :type format: object
+        :param id: 提交对应的SHA id
+        :type id: str
+        :param message: 提交的信息
+        :type message: str
+        :param parent_ids: 父提交id
+        :type parent_ids: list[str]
+        """
         
         
 
@@ -103,7 +126,7 @@ class Commit:
         作者邮箱
 
         :param author_email: The author_email of this Commit.
-        :type: str
+        :type author_email: str
         """
         self._author_email = author_email
 
@@ -125,7 +148,7 @@ class Commit:
         作者
 
         :param author_name: The author_name of this Commit.
-        :type: str
+        :type author_name: str
         """
         self._author_name = author_name
 
@@ -147,7 +170,7 @@ class Commit:
         作者提交时间
 
         :param authored_date: The authored_date of this Commit.
-        :type: datetime
+        :type authored_date: datetime
         """
         self._authored_date = authored_date
 
@@ -169,7 +192,7 @@ class Commit:
         提交时间
 
         :param committed_date: The committed_date of this Commit.
-        :type: datetime
+        :type committed_date: datetime
         """
         self._committed_date = committed_date
 
@@ -191,7 +214,7 @@ class Commit:
         提交作者邮箱
 
         :param committer_email: The committer_email of this Commit.
-        :type: str
+        :type committer_email: str
         """
         self._committer_email = committer_email
 
@@ -213,7 +236,7 @@ class Commit:
         提交作者
 
         :param committer_name: The committer_name of this Commit.
-        :type: str
+        :type committer_name: str
         """
         self._committer_name = committer_name
 
@@ -235,7 +258,7 @@ class Commit:
         文件变更的详情信息，其格式由请求查询参数 stat_format 决定
 
         :param format: The format of this Commit.
-        :type: object
+        :type format: object
         """
         self._format = format
 
@@ -257,7 +280,7 @@ class Commit:
         提交对应的SHA id
 
         :param id: The id of this Commit.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -279,7 +302,7 @@ class Commit:
         提交的信息
 
         :param message: The message of this Commit.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -301,7 +324,7 @@ class Commit:
         父提交id
 
         :param parent_ids: The parent_ids of this Commit.
-        :type: list[str]
+        :type parent_ids: list[str]
         """
         self._parent_ids = parent_ids
 

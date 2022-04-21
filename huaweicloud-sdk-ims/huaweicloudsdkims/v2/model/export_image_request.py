@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExportImageRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ExportImageRequest:
     }
 
     def __init__(self, image_id=None, body=None):
-        """ExportImageRequest - a model defined in huaweicloud sdk"""
+        """ExportImageRequest
+
+        The model defined in huaweicloud sdk
+
+        :param image_id: 镜像ID。
+        :type image_id: str
+        :param body: Body of the ExportImageRequest
+        :type body: :class:`huaweicloudsdkims.v2.ExportImageRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class ExportImageRequest:
         镜像ID。
 
         :param image_id: The image_id of this ExportImageRequest.
-        :type: str
+        :type image_id: str
         """
         self._image_id = image_id
 
@@ -72,7 +79,7 @@ class ExportImageRequest:
 
 
         :return: The body of this ExportImageRequest.
-        :rtype: ExportImageRequestBody
+        :rtype: :class:`huaweicloudsdkims.v2.ExportImageRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class ExportImageRequest:
 
 
         :param body: The body of this ExportImageRequest.
-        :type: ExportImageRequestBody
+        :type body: :class:`huaweicloudsdkims.v2.ExportImageRequestBody`
         """
         self._body = body
 

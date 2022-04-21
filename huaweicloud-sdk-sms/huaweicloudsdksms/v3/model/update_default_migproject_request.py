@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDefaultMigprojectRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateDefaultMigprojectRequest:
     }
 
     def __init__(self, mig_project_id=None):
-        """UpdateDefaultMigprojectRequest - a model defined in huaweicloud sdk"""
+        """UpdateDefaultMigprojectRequest
+
+        The model defined in huaweicloud sdk
+
+        :param mig_project_id: 迁移项目ID
+        :type mig_project_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class UpdateDefaultMigprojectRequest:
         迁移项目ID
 
         :param mig_project_id: The mig_project_id of this UpdateDefaultMigprojectRequest.
-        :type: str
+        :type mig_project_id: str
         """
         self._mig_project_id = mig_project_id
 

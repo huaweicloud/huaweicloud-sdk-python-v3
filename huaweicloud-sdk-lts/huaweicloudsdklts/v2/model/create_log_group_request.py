@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateLogGroupRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateLogGroupRequest:
     }
 
     def __init__(self, body=None):
-        """CreateLogGroupRequest - a model defined in huaweicloud sdk"""
+        """CreateLogGroupRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateLogGroupRequest
+        :type body: :class:`huaweicloudsdklts.v2.CreateLogGroupParams`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateLogGroupRequest:
 
 
         :return: The body of this CreateLogGroupRequest.
-        :rtype: CreateLogGroupParams
+        :rtype: :class:`huaweicloudsdklts.v2.CreateLogGroupParams`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateLogGroupRequest:
 
 
         :param body: The body of this CreateLogGroupRequest.
-        :type: CreateLogGroupParams
+        :type body: :class:`huaweicloudsdklts.v2.CreateLogGroupParams`
         """
         self._body = body
 

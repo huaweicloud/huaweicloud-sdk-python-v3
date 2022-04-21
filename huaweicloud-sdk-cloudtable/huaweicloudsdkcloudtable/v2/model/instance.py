@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Instance:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class Instance:
     }
 
     def __init__(self, availability_zone=None, cu_num=None, lemon_num=None, nics=None, tsd_num=None):
-        """Instance - a model defined in huaweicloud sdk"""
+        """Instance
+
+        The model defined in huaweicloud sdk
+
+        :param availability_zone: 集群所在可用区的ID。
+        :type availability_zone: str
+        :param cu_num: CloudTable集群计算单元节点数目，至少为2。
+        :type cu_num: int
+        :param lemon_num: CloudTable集群Lemon节点数目。
+        :type lemon_num: int
+        :param nics: 集群所在网络信息。
+        :type nics: list[:class:`huaweicloudsdkcloudtable.v2.Nics`]
+        :param tsd_num: CloudTable集群TSD节点数目，至少为2。
+        :type tsd_num: int
+        """
         
         
 
@@ -74,7 +87,7 @@ class Instance:
         集群所在可用区的ID。
 
         :param availability_zone: The availability_zone of this Instance.
-        :type: str
+        :type availability_zone: str
         """
         self._availability_zone = availability_zone
 
@@ -96,7 +109,7 @@ class Instance:
         CloudTable集群计算单元节点数目，至少为2。
 
         :param cu_num: The cu_num of this Instance.
-        :type: int
+        :type cu_num: int
         """
         self._cu_num = cu_num
 
@@ -118,7 +131,7 @@ class Instance:
         CloudTable集群Lemon节点数目。
 
         :param lemon_num: The lemon_num of this Instance.
-        :type: int
+        :type lemon_num: int
         """
         self._lemon_num = lemon_num
 
@@ -129,7 +142,7 @@ class Instance:
         集群所在网络信息。
 
         :return: The nics of this Instance.
-        :rtype: list[Nics]
+        :rtype: list[:class:`huaweicloudsdkcloudtable.v2.Nics`]
         """
         return self._nics
 
@@ -140,7 +153,7 @@ class Instance:
         集群所在网络信息。
 
         :param nics: The nics of this Instance.
-        :type: list[Nics]
+        :type nics: list[:class:`huaweicloudsdkcloudtable.v2.Nics`]
         """
         self._nics = nics
 
@@ -162,7 +175,7 @@ class Instance:
         CloudTable集群TSD节点数目，至少为2。
 
         :param tsd_num: The tsd_num of this Instance.
-        :type: int
+        :type tsd_num: int
         """
         self._tsd_num = tsd_num
 

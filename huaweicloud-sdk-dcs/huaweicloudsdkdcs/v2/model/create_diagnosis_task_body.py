@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateDiagnosisTaskBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateDiagnosisTaskBody:
     }
 
     def __init__(self, begin_time=None, end_time=None, node_ip_list=None):
-        """CreateDiagnosisTaskBody - a model defined in huaweicloud sdk"""
+        """CreateDiagnosisTaskBody
+
+        The model defined in huaweicloud sdk
+
+        :param begin_time: 诊断开始时间。UNIX时间戳，单位毫秒。
+        :type begin_time: str
+        :param end_time: 诊断结束时间。UNIX时间戳，单位毫秒。
+        :type end_time: str
+        :param node_ip_list: 诊断节点IP列表。默认诊断所有节点。 非读写分离实例查询方法如下：   - 方法一：参考[查看实例信息](https://support.huaweicloud.com/usermanual-dcs/dcs-ug-0312016.html)。   - 方法二：调用[查询指定实例](https://support.huaweicloud.com/api-dcs/ShowInstance.html)查询。  读写分离实例查询方法：调用[查询分片信息](https://support.huaweicloud.com/api-dcs/ListGroupReplicationInfo.html#ListGroupReplicationInfo__response_InstanceReplicationListInfo)。 
+        :type node_ip_list: list[str]
+        """
         
         
 
@@ -66,7 +75,7 @@ class CreateDiagnosisTaskBody:
         诊断开始时间。UNIX时间戳，单位毫秒。
 
         :param begin_time: The begin_time of this CreateDiagnosisTaskBody.
-        :type: str
+        :type begin_time: str
         """
         self._begin_time = begin_time
 
@@ -88,7 +97,7 @@ class CreateDiagnosisTaskBody:
         诊断结束时间。UNIX时间戳，单位毫秒。
 
         :param end_time: The end_time of this CreateDiagnosisTaskBody.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -110,7 +119,7 @@ class CreateDiagnosisTaskBody:
         诊断节点IP列表。默认诊断所有节点。 非读写分离实例查询方法如下：   - 方法一：参考[查看实例信息](https://support.huaweicloud.com/usermanual-dcs/dcs-ug-0312016.html)。   - 方法二：调用[查询指定实例](https://support.huaweicloud.com/api-dcs/ShowInstance.html)查询。  读写分离实例查询方法：调用[查询分片信息](https://support.huaweicloud.com/api-dcs/ListGroupReplicationInfo.html#ListGroupReplicationInfo__response_InstanceReplicationListInfo)。 
 
         :param node_ip_list: The node_ip_list of this CreateDiagnosisTaskBody.
-        :type: list[str]
+        :type node_ip_list: list[str]
         """
         self._node_ip_list = node_ip_list
 

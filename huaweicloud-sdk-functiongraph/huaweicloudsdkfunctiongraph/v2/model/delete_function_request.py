@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteFunctionRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteFunctionRequest:
     }
 
     def __init__(self, function_urn=None):
-        """DeleteFunctionRequest - a model defined in huaweicloud sdk"""
+        """DeleteFunctionRequest
+
+        The model defined in huaweicloud sdk
+
+        :param function_urn: 函数的URN，详细解释见FunctionGraph函数模型的描述。  不允许删除函数的latest版本，如要删除整个函数（包含所有版本），提供不带任何版本号/别名的urn，如： urn:fss:xxxxxxxx:7aad83af3e8d42e99ac194e8419e2c9b:function:default:test
+        :type function_urn: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteFunctionRequest:
         函数的URN，详细解释见FunctionGraph函数模型的描述。  不允许删除函数的latest版本，如要删除整个函数（包含所有版本），提供不带任何版本号/别名的urn，如： urn:fss:xxxxxxxx:7aad83af3e8d42e99ac194e8419e2c9b:function:default:test
 
         :param function_urn: The function_urn of this DeleteFunctionRequest.
-        :type: str
+        :type function_urn: str
         """
         self._function_urn = function_urn
 

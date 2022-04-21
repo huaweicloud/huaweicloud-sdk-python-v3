@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IssueAccessory:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class IssueAccessory:
     }
 
     def __init__(self, attachment_id=None, issue_id=None, creator_num_id=None, created_date=None, file_name=None, container_type=None, disk_file_name=None, digest=None, disk_directory=None, creator_id=None):
-        """IssueAccessory - a model defined in huaweicloud sdk"""
+        """IssueAccessory
+
+        The model defined in huaweicloud sdk
+
+        :param attachment_id: 附件id
+        :type attachment_id: int
+        :param issue_id: 工作鞋ID
+        :type issue_id: int
+        :param creator_num_id: 创建者数字ID
+        :type creator_num_id: int
+        :param created_date: 附件创建时间
+        :type created_date: str
+        :param file_name: 上传时文件名
+        :type file_name: str
+        :param container_type: 附件id
+        :type container_type: str
+        :param disk_file_name: 附件名称
+        :type disk_file_name: str
+        :param digest: 附件id
+        :type digest: str
+        :param disk_directory: 附件路径
+        :type disk_directory: str
+        :param creator_id: 创建这用户uuid
+        :type creator_id: str
+        """
         
         
 
@@ -103,7 +126,7 @@ class IssueAccessory:
         附件id
 
         :param attachment_id: The attachment_id of this IssueAccessory.
-        :type: int
+        :type attachment_id: int
         """
         self._attachment_id = attachment_id
 
@@ -125,7 +148,7 @@ class IssueAccessory:
         工作鞋ID
 
         :param issue_id: The issue_id of this IssueAccessory.
-        :type: int
+        :type issue_id: int
         """
         self._issue_id = issue_id
 
@@ -147,7 +170,7 @@ class IssueAccessory:
         创建者数字ID
 
         :param creator_num_id: The creator_num_id of this IssueAccessory.
-        :type: int
+        :type creator_num_id: int
         """
         self._creator_num_id = creator_num_id
 
@@ -169,7 +192,7 @@ class IssueAccessory:
         附件创建时间
 
         :param created_date: The created_date of this IssueAccessory.
-        :type: str
+        :type created_date: str
         """
         self._created_date = created_date
 
@@ -191,7 +214,7 @@ class IssueAccessory:
         上传时文件名
 
         :param file_name: The file_name of this IssueAccessory.
-        :type: str
+        :type file_name: str
         """
         self._file_name = file_name
 
@@ -213,7 +236,7 @@ class IssueAccessory:
         附件id
 
         :param container_type: The container_type of this IssueAccessory.
-        :type: str
+        :type container_type: str
         """
         self._container_type = container_type
 
@@ -235,7 +258,7 @@ class IssueAccessory:
         附件名称
 
         :param disk_file_name: The disk_file_name of this IssueAccessory.
-        :type: str
+        :type disk_file_name: str
         """
         self._disk_file_name = disk_file_name
 
@@ -257,7 +280,7 @@ class IssueAccessory:
         附件id
 
         :param digest: The digest of this IssueAccessory.
-        :type: str
+        :type digest: str
         """
         self._digest = digest
 
@@ -279,7 +302,7 @@ class IssueAccessory:
         附件路径
 
         :param disk_directory: The disk_directory of this IssueAccessory.
-        :type: str
+        :type disk_directory: str
         """
         self._disk_directory = disk_directory
 
@@ -301,7 +324,7 @@ class IssueAccessory:
         创建这用户uuid
 
         :param creator_id: The creator_id of this IssueAccessory.
-        :type: str
+        :type creator_id: str
         """
         self._creator_id = creator_id
 

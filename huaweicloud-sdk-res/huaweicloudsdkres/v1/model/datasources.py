@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Datasources:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class Datasources:
     }
 
     def __init__(self, datasource_id=None, datasource_name=None, status=None, structure=None, workspace_id=None, data_config=None, specs_config=None, created_at=None, update_at=None):
-        """Datasources - a model defined in huaweicloud sdk"""
+        """Datasources
+
+        The model defined in huaweicloud sdk
+
+        :param datasource_id: 数据源id。
+        :type datasource_id: str
+        :param datasource_name: 名称。
+        :type datasource_name: str
+        :param status: 状态。
+        :type status: str
+        :param structure: 结构。
+        :type structure: str
+        :param workspace_id: 工作空间编号。
+        :type workspace_id: str
+        :param data_config: 
+        :type data_config: :class:`huaweicloudsdkres.v1.DataConfig`
+        :param specs_config: 
+        :type specs_config: :class:`huaweicloudsdkres.v1.SpecsConfig`
+        :param created_at: 创建时间。
+        :type created_at: int
+        :param update_at: 更新时间。
+        :type update_at: int
+        """
         
         
 
@@ -98,7 +119,7 @@ class Datasources:
         数据源id。
 
         :param datasource_id: The datasource_id of this Datasources.
-        :type: str
+        :type datasource_id: str
         """
         self._datasource_id = datasource_id
 
@@ -120,7 +141,7 @@ class Datasources:
         名称。
 
         :param datasource_name: The datasource_name of this Datasources.
-        :type: str
+        :type datasource_name: str
         """
         self._datasource_name = datasource_name
 
@@ -142,7 +163,7 @@ class Datasources:
         状态。
 
         :param status: The status of this Datasources.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -164,7 +185,7 @@ class Datasources:
         结构。
 
         :param structure: The structure of this Datasources.
-        :type: str
+        :type structure: str
         """
         self._structure = structure
 
@@ -186,7 +207,7 @@ class Datasources:
         工作空间编号。
 
         :param workspace_id: The workspace_id of this Datasources.
-        :type: str
+        :type workspace_id: str
         """
         self._workspace_id = workspace_id
 
@@ -196,7 +217,7 @@ class Datasources:
 
 
         :return: The data_config of this Datasources.
-        :rtype: DataConfig
+        :rtype: :class:`huaweicloudsdkres.v1.DataConfig`
         """
         return self._data_config
 
@@ -206,7 +227,7 @@ class Datasources:
 
 
         :param data_config: The data_config of this Datasources.
-        :type: DataConfig
+        :type data_config: :class:`huaweicloudsdkres.v1.DataConfig`
         """
         self._data_config = data_config
 
@@ -216,7 +237,7 @@ class Datasources:
 
 
         :return: The specs_config of this Datasources.
-        :rtype: SpecsConfig
+        :rtype: :class:`huaweicloudsdkres.v1.SpecsConfig`
         """
         return self._specs_config
 
@@ -226,7 +247,7 @@ class Datasources:
 
 
         :param specs_config: The specs_config of this Datasources.
-        :type: SpecsConfig
+        :type specs_config: :class:`huaweicloudsdkres.v1.SpecsConfig`
         """
         self._specs_config = specs_config
 
@@ -248,7 +269,7 @@ class Datasources:
         创建时间。
 
         :param created_at: The created_at of this Datasources.
-        :type: int
+        :type created_at: int
         """
         self._created_at = created_at
 
@@ -270,7 +291,7 @@ class Datasources:
         更新时间。
 
         :param update_at: The update_at of this Datasources.
-        :type: int
+        :type update_at: int
         """
         self._update_at = update_at
 

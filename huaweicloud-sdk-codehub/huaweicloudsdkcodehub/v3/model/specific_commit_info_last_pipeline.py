@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SpecificCommitInfoLastPipeline:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class SpecificCommitInfoLastPipeline:
     }
 
     def __init__(self, id=None, sha=None, ref=None, status=None, web_url=None):
-        """SpecificCommitInfoLastPipeline - a model defined in huaweicloud sdk"""
+        """SpecificCommitInfoLastPipeline
+
+        The model defined in huaweicloud sdk
+
+        :param id: 流水线id
+        :type id: int
+        :param sha: 提交对应的SHA id
+        :type sha: str
+        :param ref: 分支名
+        :type ref: str
+        :param status: 流水线状态
+        :type status: str
+        :param web_url: 流水线url
+        :type web_url: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class SpecificCommitInfoLastPipeline:
         流水线id
 
         :param id: The id of this SpecificCommitInfoLastPipeline.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -100,7 +113,7 @@ class SpecificCommitInfoLastPipeline:
         提交对应的SHA id
 
         :param sha: The sha of this SpecificCommitInfoLastPipeline.
-        :type: str
+        :type sha: str
         """
         self._sha = sha
 
@@ -122,7 +135,7 @@ class SpecificCommitInfoLastPipeline:
         分支名
 
         :param ref: The ref of this SpecificCommitInfoLastPipeline.
-        :type: str
+        :type ref: str
         """
         self._ref = ref
 
@@ -144,7 +157,7 @@ class SpecificCommitInfoLastPipeline:
         流水线状态
 
         :param status: The status of this SpecificCommitInfoLastPipeline.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -166,7 +179,7 @@ class SpecificCommitInfoLastPipeline:
         流水线url
 
         :param web_url: The web_url of this SpecificCommitInfoLastPipeline.
-        :type: str
+        :type web_url: str
         """
         self._web_url = web_url
 

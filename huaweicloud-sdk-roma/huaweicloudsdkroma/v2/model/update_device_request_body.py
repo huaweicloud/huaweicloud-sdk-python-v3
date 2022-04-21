@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDeviceRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UpdateDeviceRequestBody:
     }
 
     def __init__(self, device_name=None, status=None, description=None, tags=None):
-        """UpdateDeviceRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateDeviceRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param device_name: 设备名称，支持中文、中文标点符号（）。；，：“”、？《》及英文大小写、数字及英文符号()_,#.?&#39;-@%&amp;!, 长度2-64
+        :type device_name: str
+        :param status: 设备状态 0启用 1禁用
+        :type status: int
+        :param description: 备注
+        :type description: str
+        :param tags: 标签
+        :type tags: list[str]
+        """
         
         
 
@@ -71,7 +82,7 @@ class UpdateDeviceRequestBody:
         设备名称，支持中文、中文标点符号（）。；，：“”、？《》及英文大小写、数字及英文符号()_,#.?'-@%&!, 长度2-64
 
         :param device_name: The device_name of this UpdateDeviceRequestBody.
-        :type: str
+        :type device_name: str
         """
         self._device_name = device_name
 
@@ -93,7 +104,7 @@ class UpdateDeviceRequestBody:
         设备状态 0启用 1禁用
 
         :param status: The status of this UpdateDeviceRequestBody.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -115,7 +126,7 @@ class UpdateDeviceRequestBody:
         备注
 
         :param description: The description of this UpdateDeviceRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -137,7 +148,7 @@ class UpdateDeviceRequestBody:
         标签
 
         :param tags: The tags of this UpdateDeviceRequestBody.
-        :type: list[str]
+        :type tags: list[str]
         """
         self._tags = tags
 

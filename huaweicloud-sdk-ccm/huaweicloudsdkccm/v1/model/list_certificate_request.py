@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCertificateRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListCertificateRequest:
     }
 
     def __init__(self, limit=None, name=None, offset=None, status=None, sort_key=None, sort_dir=None):
-        """ListCertificateRequest - a model defined in huaweicloud sdk"""
+        """ListCertificateRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 指定查询返回记录条数，默认值10。
+        :type limit: int
+        :param name: 私有证书名称，返回名称带有name字段的证书集合。
+        :type name: str
+        :param offset: 索引位置，从offset指定的下一条数据开始查询。
+        :type offset: int
+        :param status: 私有证书状态，通过状态过滤证书集合。   - **ISSUED** : 已签发；   - **REVOKED** : 已吊销；   - **EXPIRED** : 已过期。
+        :type status: str
+        :param sort_key: 排序属性，目前支持以下属性： - **create_time** : 证书创建时间（默认） - **common_name** : 证书名称 - **issuer_name** : 签发CA名称 - **not_after** : 证书到期时间
+        :type sort_key: str
+        :param sort_dir: 排序方向，支持以下值：   - **DESC** : 降序（默认）   - **ASC** : 升序
+        :type sort_dir: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class ListCertificateRequest:
         指定查询返回记录条数，默认值10。
 
         :param limit: The limit of this ListCertificateRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -105,7 +120,7 @@ class ListCertificateRequest:
         私有证书名称，返回名称带有name字段的证书集合。
 
         :param name: The name of this ListCertificateRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -127,7 +142,7 @@ class ListCertificateRequest:
         索引位置，从offset指定的下一条数据开始查询。
 
         :param offset: The offset of this ListCertificateRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -149,7 +164,7 @@ class ListCertificateRequest:
         私有证书状态，通过状态过滤证书集合。   - **ISSUED** : 已签发；   - **REVOKED** : 已吊销；   - **EXPIRED** : 已过期。
 
         :param status: The status of this ListCertificateRequest.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -171,7 +186,7 @@ class ListCertificateRequest:
         排序属性，目前支持以下属性： - **create_time** : 证书创建时间（默认） - **common_name** : 证书名称 - **issuer_name** : 签发CA名称 - **not_after** : 证书到期时间
 
         :param sort_key: The sort_key of this ListCertificateRequest.
-        :type: str
+        :type sort_key: str
         """
         self._sort_key = sort_key
 
@@ -193,7 +208,7 @@ class ListCertificateRequest:
         排序方向，支持以下值：   - **DESC** : 降序（默认）   - **ASC** : 升序
 
         :param sort_dir: The sort_dir of this ListCertificateRequest.
-        :type: str
+        :type sort_dir: str
         """
         self._sort_dir = sort_dir
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MulInputFileInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class MulInputFileInfo:
     }
 
     def __init__(self, language=None, input=None):
-        """MulInputFileInfo - a model defined in huaweicloud sdk"""
+        """MulInputFileInfo
+
+        The model defined in huaweicloud sdk
+
+        :param language: 语言标签。
+        :type language: str
+        :param input: 
+        :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        """
         
         
 
@@ -63,7 +70,7 @@ class MulInputFileInfo:
         语言标签。
 
         :param language: The language of this MulInputFileInfo.
-        :type: str
+        :type language: str
         """
         self._language = language
 
@@ -73,7 +80,7 @@ class MulInputFileInfo:
 
 
         :return: The input of this MulInputFileInfo.
-        :rtype: ObsObjInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         return self._input
 
@@ -83,7 +90,7 @@ class MulInputFileInfo:
 
 
         :param input: The input of this MulInputFileInfo.
-        :type: ObsObjInfo
+        :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         self._input = input
 

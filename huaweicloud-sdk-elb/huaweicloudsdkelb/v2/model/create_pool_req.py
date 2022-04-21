@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreatePoolReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class CreatePoolReq:
     }
 
     def __init__(self, protocol=None, lb_algorithm=None, loadbalancer_id=None, listener_id=None, tenant_id=None, name=None, description=None, admin_state_up=None, session_persistence=None):
-        """CreatePoolReq - a model defined in huaweicloud sdk"""
+        """CreatePoolReq
+
+        The model defined in huaweicloud sdk
+
+        :param protocol: 后端云服务器组的后端协议。取值：UDP、TCP、HTTP。当指定istener_id创建后端云服务器组时，后端云服务器组的protocol和它关联的监听器的protocol有如下关系：监听器的protocol为TCP时，后端云服务器组的protocol必须为TCP。监听器的protocol为UDP时，后端云服务器组的protocol必须为UDP。监听器的protocol为HTTP或TERMINATED_HTTPS时，后端云服务器组的protocol必须为HTTP。
+        :type protocol: str
+        :param lb_algorithm: 后端云服务器组的负载均衡算法，取值：ROUND_ROBIN：加权轮询算法；LEAST_CONNECTIONS：加权最少连接算法；SOURCE_IP：源IP算法；当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。
+        :type lb_algorithm: str
+        :param loadbalancer_id: 后端云服务器组关联的负载均衡器ID。listener_id和loadbalancer_id中至少指定一个。
+        :type loadbalancer_id: str
+        :param listener_id: 后端云服务器组关联的监听器的ID。listener_id和loadbalancer_id中至少指定一个。
+        :type listener_id: str
+        :param tenant_id: 后端云服务器组所在的项目ID。
+        :type tenant_id: str
+        :param name: 后端云服务器组的名称。
+        :type name: str
+        :param description: 后端云服务器组的描述信息
+        :type description: str
+        :param admin_state_up: 后端云服务器组的管理状态。只支持设定为true，该字段的值无实际意义。
+        :type admin_state_up: bool
+        :param session_persistence: 
+        :type session_persistence: :class:`huaweicloudsdkelb.v2.SessionPersistence`
+        """
         
         
 
@@ -96,7 +117,7 @@ class CreatePoolReq:
         后端云服务器组的后端协议。取值：UDP、TCP、HTTP。当指定istener_id创建后端云服务器组时，后端云服务器组的protocol和它关联的监听器的protocol有如下关系：监听器的protocol为TCP时，后端云服务器组的protocol必须为TCP。监听器的protocol为UDP时，后端云服务器组的protocol必须为UDP。监听器的protocol为HTTP或TERMINATED_HTTPS时，后端云服务器组的protocol必须为HTTP。
 
         :param protocol: The protocol of this CreatePoolReq.
-        :type: str
+        :type protocol: str
         """
         self._protocol = protocol
 
@@ -118,7 +139,7 @@ class CreatePoolReq:
         后端云服务器组的负载均衡算法，取值：ROUND_ROBIN：加权轮询算法；LEAST_CONNECTIONS：加权最少连接算法；SOURCE_IP：源IP算法；当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。
 
         :param lb_algorithm: The lb_algorithm of this CreatePoolReq.
-        :type: str
+        :type lb_algorithm: str
         """
         self._lb_algorithm = lb_algorithm
 
@@ -140,7 +161,7 @@ class CreatePoolReq:
         后端云服务器组关联的负载均衡器ID。listener_id和loadbalancer_id中至少指定一个。
 
         :param loadbalancer_id: The loadbalancer_id of this CreatePoolReq.
-        :type: str
+        :type loadbalancer_id: str
         """
         self._loadbalancer_id = loadbalancer_id
 
@@ -162,7 +183,7 @@ class CreatePoolReq:
         后端云服务器组关联的监听器的ID。listener_id和loadbalancer_id中至少指定一个。
 
         :param listener_id: The listener_id of this CreatePoolReq.
-        :type: str
+        :type listener_id: str
         """
         self._listener_id = listener_id
 
@@ -184,7 +205,7 @@ class CreatePoolReq:
         后端云服务器组所在的项目ID。
 
         :param tenant_id: The tenant_id of this CreatePoolReq.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 
@@ -206,7 +227,7 @@ class CreatePoolReq:
         后端云服务器组的名称。
 
         :param name: The name of this CreatePoolReq.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -228,7 +249,7 @@ class CreatePoolReq:
         后端云服务器组的描述信息
 
         :param description: The description of this CreatePoolReq.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -250,7 +271,7 @@ class CreatePoolReq:
         后端云服务器组的管理状态。只支持设定为true，该字段的值无实际意义。
 
         :param admin_state_up: The admin_state_up of this CreatePoolReq.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 
@@ -260,7 +281,7 @@ class CreatePoolReq:
 
 
         :return: The session_persistence of this CreatePoolReq.
-        :rtype: SessionPersistence
+        :rtype: :class:`huaweicloudsdkelb.v2.SessionPersistence`
         """
         return self._session_persistence
 
@@ -270,7 +291,7 @@ class CreatePoolReq:
 
 
         :param session_persistence: The session_persistence of this CreatePoolReq.
-        :type: SessionPersistence
+        :type session_persistence: :class:`huaweicloudsdkelb.v2.SessionPersistence`
         """
         self._session_persistence = session_persistence
 

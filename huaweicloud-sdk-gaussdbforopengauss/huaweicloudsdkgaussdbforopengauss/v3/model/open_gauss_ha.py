@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OpenGaussHa:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class OpenGaussHa:
     }
 
     def __init__(self, mode=None, consistency=None, replication_mode=None):
-        """OpenGaussHa - a model defined in huaweicloud sdk"""
+        """OpenGaussHa
+
+        The model defined in huaweicloud sdk
+
+        :param mode: GaussDB(for openGauss)为分布式时，取值：enterprise；为集中式时，取值：centralization_standard。不区分大小写。
+        :type mode: str
+        :param consistency: 指定实例一致性类型，当创建分布式模式实例时，该字段值必传，当创建主备模式实例时，该字段值不传。取值范围：strong（强一致性） | eventual(最终一致性)，不分区大小写。
+        :type consistency: str
+        :param replication_mode: 备机同步参数。  取值：  GaussDB(for openGauss)为“sync\&quot;  说明： - “sync”为同步模式。
+        :type replication_mode: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class OpenGaussHa:
         GaussDB(for openGauss)为分布式时，取值：enterprise；为集中式时，取值：centralization_standard。不区分大小写。
 
         :param mode: The mode of this OpenGaussHa.
-        :type: str
+        :type mode: str
         """
         self._mode = mode
 
@@ -87,7 +96,7 @@ class OpenGaussHa:
         指定实例一致性类型，当创建分布式模式实例时，该字段值必传，当创建主备模式实例时，该字段值不传。取值范围：strong（强一致性） | eventual(最终一致性)，不分区大小写。
 
         :param consistency: The consistency of this OpenGaussHa.
-        :type: str
+        :type consistency: str
         """
         self._consistency = consistency
 
@@ -109,7 +118,7 @@ class OpenGaussHa:
         备机同步参数。  取值：  GaussDB(for openGauss)为“sync\"  说明： - “sync”为同步模式。
 
         :param replication_mode: The replication_mode of this OpenGaussHa.
-        :type: str
+        :type replication_mode: str
         """
         self._replication_mode = replication_mode
 

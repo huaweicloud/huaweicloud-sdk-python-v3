@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateAlarmRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class CreateAlarmRequestBody:
     }
 
     def __init__(self, alarm_name=None, alarm_description=None, metric=None, condition=None, alarm_enabled=None, alarm_action_enabled=None, alarm_level=None, alarm_type=None, alarm_actions=None, insufficientdata_actions=None, ok_actions=None, enterprise_project_id=None):
-        """CreateAlarmRequestBody - a model defined in huaweicloud sdk"""
+        """CreateAlarmRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param alarm_name: 告警名称，只能包含0-9/a-z/A-Z/_/-或汉字。
+        :type alarm_name: str
+        :param alarm_description: 告警描述，长度0-256。
+        :type alarm_description: str
+        :param metric: 
+        :type metric: :class:`huaweicloudsdkces.v1.MetricForAlarm`
+        :param condition: 
+        :type condition: :class:`huaweicloudsdkces.v1.Condition`
+        :param alarm_enabled: 是否启用该条告警，默认为true。
+        :type alarm_enabled: bool
+        :param alarm_action_enabled: 是否启用该条告警触发的动作，默认为true。注：若alarm_action_enabled为true，对应的alarm_actions、ok_actions至少有一个不能为空。若alarm_actions、ok_actions同时存在时，notificationList值保持一致。
+        :type alarm_action_enabled: bool
+        :param alarm_level: 告警级别，默认为2，级别为1、2、3、4。分别对应紧急、重要、次要、提示。
+        :type alarm_level: int
+        :param alarm_type: 告警类型，支持的枚举类型：EVENT.SYS：针对系统事件的告警规则；EVENT.CUSTOM：针对自定义事件的告警规则；RESOURCE_GROUP：针对资源分组的告警规则。
+        :type alarm_type: str
+        :param alarm_actions: 告警触发的动作。 结构样例如下： { \&quot;type\&quot;: \&quot;notification\&quot;,\&quot;notificationList\&quot;: [\&quot;urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\&quot;] } type取值： notification：通知。 autoscaling：弹性伸缩。
+        :type alarm_actions: list[:class:`huaweicloudsdkces.v1.AlarmActions`]
+        :param insufficientdata_actions: 数据不足触发的动作（该参数已废弃，建议无需配置）。
+        :type insufficientdata_actions: list[:class:`huaweicloudsdkces.v1.AlarmActions`]
+        :param ok_actions: 告警恢复触发的动作
+        :type ok_actions: list[:class:`huaweicloudsdkces.v1.AlarmActions`]
+        :param enterprise_project_id: 企业项目ID。默认值为0，表示默认的企业项目default。说明：此参数在“华东-上海一”区域上线。
+        :type enterprise_project_id: str
+        """
         
         
 
@@ -110,7 +137,7 @@ class CreateAlarmRequestBody:
         告警名称，只能包含0-9/a-z/A-Z/_/-或汉字。
 
         :param alarm_name: The alarm_name of this CreateAlarmRequestBody.
-        :type: str
+        :type alarm_name: str
         """
         self._alarm_name = alarm_name
 
@@ -132,7 +159,7 @@ class CreateAlarmRequestBody:
         告警描述，长度0-256。
 
         :param alarm_description: The alarm_description of this CreateAlarmRequestBody.
-        :type: str
+        :type alarm_description: str
         """
         self._alarm_description = alarm_description
 
@@ -142,7 +169,7 @@ class CreateAlarmRequestBody:
 
 
         :return: The metric of this CreateAlarmRequestBody.
-        :rtype: MetricForAlarm
+        :rtype: :class:`huaweicloudsdkces.v1.MetricForAlarm`
         """
         return self._metric
 
@@ -152,7 +179,7 @@ class CreateAlarmRequestBody:
 
 
         :param metric: The metric of this CreateAlarmRequestBody.
-        :type: MetricForAlarm
+        :type metric: :class:`huaweicloudsdkces.v1.MetricForAlarm`
         """
         self._metric = metric
 
@@ -162,7 +189,7 @@ class CreateAlarmRequestBody:
 
 
         :return: The condition of this CreateAlarmRequestBody.
-        :rtype: Condition
+        :rtype: :class:`huaweicloudsdkces.v1.Condition`
         """
         return self._condition
 
@@ -172,7 +199,7 @@ class CreateAlarmRequestBody:
 
 
         :param condition: The condition of this CreateAlarmRequestBody.
-        :type: Condition
+        :type condition: :class:`huaweicloudsdkces.v1.Condition`
         """
         self._condition = condition
 
@@ -194,7 +221,7 @@ class CreateAlarmRequestBody:
         是否启用该条告警，默认为true。
 
         :param alarm_enabled: The alarm_enabled of this CreateAlarmRequestBody.
-        :type: bool
+        :type alarm_enabled: bool
         """
         self._alarm_enabled = alarm_enabled
 
@@ -216,7 +243,7 @@ class CreateAlarmRequestBody:
         是否启用该条告警触发的动作，默认为true。注：若alarm_action_enabled为true，对应的alarm_actions、ok_actions至少有一个不能为空。若alarm_actions、ok_actions同时存在时，notificationList值保持一致。
 
         :param alarm_action_enabled: The alarm_action_enabled of this CreateAlarmRequestBody.
-        :type: bool
+        :type alarm_action_enabled: bool
         """
         self._alarm_action_enabled = alarm_action_enabled
 
@@ -238,7 +265,7 @@ class CreateAlarmRequestBody:
         告警级别，默认为2，级别为1、2、3、4。分别对应紧急、重要、次要、提示。
 
         :param alarm_level: The alarm_level of this CreateAlarmRequestBody.
-        :type: int
+        :type alarm_level: int
         """
         self._alarm_level = alarm_level
 
@@ -260,7 +287,7 @@ class CreateAlarmRequestBody:
         告警类型，支持的枚举类型：EVENT.SYS：针对系统事件的告警规则；EVENT.CUSTOM：针对自定义事件的告警规则；RESOURCE_GROUP：针对资源分组的告警规则。
 
         :param alarm_type: The alarm_type of this CreateAlarmRequestBody.
-        :type: str
+        :type alarm_type: str
         """
         self._alarm_type = alarm_type
 
@@ -271,7 +298,7 @@ class CreateAlarmRequestBody:
         告警触发的动作。 结构样例如下： { \"type\": \"notification\",\"notificationList\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"] } type取值： notification：通知。 autoscaling：弹性伸缩。
 
         :return: The alarm_actions of this CreateAlarmRequestBody.
-        :rtype: list[AlarmActions]
+        :rtype: list[:class:`huaweicloudsdkces.v1.AlarmActions`]
         """
         return self._alarm_actions
 
@@ -282,7 +309,7 @@ class CreateAlarmRequestBody:
         告警触发的动作。 结构样例如下： { \"type\": \"notification\",\"notificationList\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"] } type取值： notification：通知。 autoscaling：弹性伸缩。
 
         :param alarm_actions: The alarm_actions of this CreateAlarmRequestBody.
-        :type: list[AlarmActions]
+        :type alarm_actions: list[:class:`huaweicloudsdkces.v1.AlarmActions`]
         """
         self._alarm_actions = alarm_actions
 
@@ -293,7 +320,7 @@ class CreateAlarmRequestBody:
         数据不足触发的动作（该参数已废弃，建议无需配置）。
 
         :return: The insufficientdata_actions of this CreateAlarmRequestBody.
-        :rtype: list[AlarmActions]
+        :rtype: list[:class:`huaweicloudsdkces.v1.AlarmActions`]
         """
         return self._insufficientdata_actions
 
@@ -304,7 +331,7 @@ class CreateAlarmRequestBody:
         数据不足触发的动作（该参数已废弃，建议无需配置）。
 
         :param insufficientdata_actions: The insufficientdata_actions of this CreateAlarmRequestBody.
-        :type: list[AlarmActions]
+        :type insufficientdata_actions: list[:class:`huaweicloudsdkces.v1.AlarmActions`]
         """
         self._insufficientdata_actions = insufficientdata_actions
 
@@ -315,7 +342,7 @@ class CreateAlarmRequestBody:
         告警恢复触发的动作
 
         :return: The ok_actions of this CreateAlarmRequestBody.
-        :rtype: list[AlarmActions]
+        :rtype: list[:class:`huaweicloudsdkces.v1.AlarmActions`]
         """
         return self._ok_actions
 
@@ -326,7 +353,7 @@ class CreateAlarmRequestBody:
         告警恢复触发的动作
 
         :param ok_actions: The ok_actions of this CreateAlarmRequestBody.
-        :type: list[AlarmActions]
+        :type ok_actions: list[:class:`huaweicloudsdkces.v1.AlarmActions`]
         """
         self._ok_actions = ok_actions
 
@@ -348,7 +375,7 @@ class CreateAlarmRequestBody:
         企业项目ID。默认值为0，表示默认的企业项目default。说明：此参数在“华东-上海一”区域上线。
 
         :param enterprise_project_id: The enterprise_project_id of this CreateAlarmRequestBody.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 

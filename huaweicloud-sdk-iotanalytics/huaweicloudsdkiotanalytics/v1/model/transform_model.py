@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TransformModel:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class TransformModel:
     }
 
     def __init__(self, inputs=None, expression=None, output_property=None, outputs=None):
-        """TransformModel - a model defined in huaweicloud sdk"""
+        """TransformModel
+
+        The model defined in huaweicloud sdk
+
+        :param inputs: 输入参数，最多支持10个
+        :type inputs: list[:class:`huaweicloudsdkiotanalytics.v1.InputModel`]
+        :param expression: 
+        :type expression: :class:`huaweicloudsdkiotanalytics.v1.Formula`
+        :param output_property: 输出属性名(分析任务单输出场景，配合expression的formula使用)
+        :type output_property: str
+        :param outputs: 输出属性，最多支持10个
+        :type outputs: list[:class:`huaweicloudsdkiotanalytics.v1.OutputWithModel`]
+        """
         
         
 
@@ -60,7 +71,7 @@ class TransformModel:
         输入参数，最多支持10个
 
         :return: The inputs of this TransformModel.
-        :rtype: list[InputModel]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.InputModel`]
         """
         return self._inputs
 
@@ -71,7 +82,7 @@ class TransformModel:
         输入参数，最多支持10个
 
         :param inputs: The inputs of this TransformModel.
-        :type: list[InputModel]
+        :type inputs: list[:class:`huaweicloudsdkiotanalytics.v1.InputModel`]
         """
         self._inputs = inputs
 
@@ -81,7 +92,7 @@ class TransformModel:
 
 
         :return: The expression of this TransformModel.
-        :rtype: Formula
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.Formula`
         """
         return self._expression
 
@@ -91,7 +102,7 @@ class TransformModel:
 
 
         :param expression: The expression of this TransformModel.
-        :type: Formula
+        :type expression: :class:`huaweicloudsdkiotanalytics.v1.Formula`
         """
         self._expression = expression
 
@@ -113,7 +124,7 @@ class TransformModel:
         输出属性名(分析任务单输出场景，配合expression的formula使用)
 
         :param output_property: The output_property of this TransformModel.
-        :type: str
+        :type output_property: str
         """
         self._output_property = output_property
 
@@ -124,7 +135,7 @@ class TransformModel:
         输出属性，最多支持10个
 
         :return: The outputs of this TransformModel.
-        :rtype: list[OutputWithModel]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.OutputWithModel`]
         """
         return self._outputs
 
@@ -135,7 +146,7 @@ class TransformModel:
         输出属性，最多支持10个
 
         :param outputs: The outputs of this TransformModel.
-        :type: list[OutputWithModel]
+        :type outputs: list[:class:`huaweicloudsdkiotanalytics.v1.OutputWithModel`]
         """
         self._outputs = outputs
 

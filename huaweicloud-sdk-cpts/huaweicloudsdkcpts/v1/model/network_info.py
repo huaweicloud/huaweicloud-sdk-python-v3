@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NetworkInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class NetworkInfo:
     }
 
     def __init__(self, network_type=None):
-        """NetworkInfo - a model defined in huaweicloud sdk"""
+        """NetworkInfo
+
+        The model defined in huaweicloud sdk
+
+        :param network_type: network_type
+        :type network_type: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class NetworkInfo:
         network_type
 
         :param network_type: The network_type of this NetworkInfo.
-        :type: str
+        :type network_type: str
         """
         self._network_type = network_type
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowProcessResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowProcessResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, json=None, extend=None):
-        """ShowProcessResponse - a model defined in huaweicloud sdk"""
+        """ShowProcessResponse
+
+        The model defined in huaweicloud sdk
+
+        :param code: code
+        :type code: str
+        :param message: message
+        :type message: str
+        :param json: 
+        :type json: :class:`huaweicloudsdkcpts.v1.UploadProcessJson`
+        :param extend: extend
+        :type extend: str
+        """
         
         super(ShowProcessResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class ShowProcessResponse(SdkResponse):
         code
 
         :param code: The code of this ShowProcessResponse.
-        :type: str
+        :type code: str
         """
         self._code = code
 
@@ -95,7 +106,7 @@ class ShowProcessResponse(SdkResponse):
         message
 
         :param message: The message of this ShowProcessResponse.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -105,7 +116,7 @@ class ShowProcessResponse(SdkResponse):
 
 
         :return: The json of this ShowProcessResponse.
-        :rtype: UploadProcessJson
+        :rtype: :class:`huaweicloudsdkcpts.v1.UploadProcessJson`
         """
         return self._json
 
@@ -115,7 +126,7 @@ class ShowProcessResponse(SdkResponse):
 
 
         :param json: The json of this ShowProcessResponse.
-        :type: UploadProcessJson
+        :type json: :class:`huaweicloudsdkcpts.v1.UploadProcessJson`
         """
         self._json = json
 
@@ -137,7 +148,7 @@ class ShowProcessResponse(SdkResponse):
         extend
 
         :param extend: The extend of this ShowProcessResponse.
-        :type: str
+        :type extend: str
         """
         self._extend = extend
 

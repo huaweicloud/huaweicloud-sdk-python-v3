@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExportMqsInstanceTopicRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ExportMqsInstanceTopicRequest:
     }
 
     def __init__(self, instance_id=None, name=None):
-        """ExportMqsInstanceTopicRequest - a model defined in huaweicloud sdk"""
+        """ExportMqsInstanceTopicRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param name: 待导出的topic。多个topic以“,”分隔。默认导出所有的topic。
+        :type name: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ExportMqsInstanceTopicRequest:
         实例ID。
 
         :param instance_id: The instance_id of this ExportMqsInstanceTopicRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -84,7 +91,7 @@ class ExportMqsInstanceTopicRequest:
         待导出的topic。多个topic以“,”分隔。默认导出所有的topic。
 
         :param name: The name of this ExportMqsInstanceTopicRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 

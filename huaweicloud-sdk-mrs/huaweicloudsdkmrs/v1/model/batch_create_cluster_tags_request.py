@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchCreateClusterTagsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchCreateClusterTagsRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """BatchCreateClusterTagsRequest - a model defined in huaweicloud sdk"""
+        """BatchCreateClusterTagsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 集群ID。获取方法，请参见[获取集群ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
+        :type cluster_id: str
+        :param body: Body of the BatchCreateClusterTagsRequest
+        :type body: :class:`huaweicloudsdkmrs.v1.BatchCreateClusterTagsReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class BatchCreateClusterTagsRequest:
         集群ID。获取方法，请参见[获取集群ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
 
         :param cluster_id: The cluster_id of this BatchCreateClusterTagsRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -72,7 +79,7 @@ class BatchCreateClusterTagsRequest:
 
 
         :return: The body of this BatchCreateClusterTagsRequest.
-        :rtype: BatchCreateClusterTagsReq
+        :rtype: :class:`huaweicloudsdkmrs.v1.BatchCreateClusterTagsReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class BatchCreateClusterTagsRequest:
 
 
         :param body: The body of this BatchCreateClusterTagsRequest.
-        :type: BatchCreateClusterTagsReq
+        :type body: :class:`huaweicloudsdkmrs.v1.BatchCreateClusterTagsReq`
         """
         self._body = body
 

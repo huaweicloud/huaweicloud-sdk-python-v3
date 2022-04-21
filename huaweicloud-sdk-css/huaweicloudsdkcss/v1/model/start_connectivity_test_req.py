@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StartConnectivityTestReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class StartConnectivityTestReq:
     }
 
     def __init__(self, address_and_ports=None):
-        """StartConnectivityTestReq - a model defined in huaweicloud sdk"""
+        """StartConnectivityTestReq
+
+        The model defined in huaweicloud sdk
+
+        :param address_and_ports: 地址和端口列表。
+        :type address_and_ports: list[:class:`huaweicloudsdkcss.v1.AddressAndPorts`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class StartConnectivityTestReq:
         地址和端口列表。
 
         :return: The address_and_ports of this StartConnectivityTestReq.
-        :rtype: list[AddressAndPorts]
+        :rtype: list[:class:`huaweicloudsdkcss.v1.AddressAndPorts`]
         """
         return self._address_and_ports
 
@@ -57,7 +62,7 @@ class StartConnectivityTestReq:
         地址和端口列表。
 
         :param address_and_ports: The address_and_ports of this StartConnectivityTestReq.
-        :type: list[AddressAndPorts]
+        :type address_and_ports: list[:class:`huaweicloudsdkcss.v1.AddressAndPorts`]
         """
         self._address_and_ports = address_and_ports
 

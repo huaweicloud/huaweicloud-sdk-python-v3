@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDatabaseRolesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListDatabaseRolesRequest:
     }
 
     def __init__(self, instance_id=None, role_name=None, db_name=None, offset=None, limit=None):
-        """ListDatabaseRolesRequest - a model defined in huaweicloud sdk"""
+        """ListDatabaseRolesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
+        :type instance_id: str
+        :param role_name: 角色名称。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、中划线、下划线和点。
+        :type role_name: str
+        :param db_name: 数据库名称，默认为admin。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、下划线。
+        :type db_name: str
+        :param offset: 索引位置偏移量。 取值大于或等于0。不传该参数时，查询偏移量默认为0。
+        :type offset: int
+        :param limit: 查询实例个数上限值。 取值范围：1~100。不传该参数时，默认查询前100条实例信息。
+        :type limit: int
+        """
         
         
 
@@ -77,7 +90,7 @@ class ListDatabaseRolesRequest:
         实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
         :param instance_id: The instance_id of this ListDatabaseRolesRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -99,7 +112,7 @@ class ListDatabaseRolesRequest:
         角色名称。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、中划线、下划线和点。
 
         :param role_name: The role_name of this ListDatabaseRolesRequest.
-        :type: str
+        :type role_name: str
         """
         self._role_name = role_name
 
@@ -121,7 +134,7 @@ class ListDatabaseRolesRequest:
         数据库名称，默认为admin。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、下划线。
 
         :param db_name: The db_name of this ListDatabaseRolesRequest.
-        :type: str
+        :type db_name: str
         """
         self._db_name = db_name
 
@@ -143,7 +156,7 @@ class ListDatabaseRolesRequest:
         索引位置偏移量。 取值大于或等于0。不传该参数时，查询偏移量默认为0。
 
         :param offset: The offset of this ListDatabaseRolesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -165,7 +178,7 @@ class ListDatabaseRolesRequest:
         查询实例个数上限值。 取值范围：1~100。不传该参数时，默认查询前100条实例信息。
 
         :param limit: The limit of this ListDatabaseRolesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTemplatesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, system_templates=None, custom_templates=None):
-        """ListTemplatesResponse - a model defined in huaweicloud sdk"""
+        """ListTemplatesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param system_templates: 系统模板列表。
+        :type system_templates: list[:class:`huaweicloudsdkcss.v1.SystemTemplates`]
+        :param custom_templates: 自定义模板列表。
+        :type custom_templates: list[:class:`huaweicloudsdkcss.v1.CustomTemplates`]
+        """
         
         super(ListTemplatesResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListTemplatesResponse(SdkResponse):
         系统模板列表。
 
         :return: The system_templates of this ListTemplatesResponse.
-        :rtype: list[SystemTemplates]
+        :rtype: list[:class:`huaweicloudsdkcss.v1.SystemTemplates`]
         """
         return self._system_templates
 
@@ -63,7 +70,7 @@ class ListTemplatesResponse(SdkResponse):
         系统模板列表。
 
         :param system_templates: The system_templates of this ListTemplatesResponse.
-        :type: list[SystemTemplates]
+        :type system_templates: list[:class:`huaweicloudsdkcss.v1.SystemTemplates`]
         """
         self._system_templates = system_templates
 
@@ -74,7 +81,7 @@ class ListTemplatesResponse(SdkResponse):
         自定义模板列表。
 
         :return: The custom_templates of this ListTemplatesResponse.
-        :rtype: list[CustomTemplates]
+        :rtype: list[:class:`huaweicloudsdkcss.v1.CustomTemplates`]
         """
         return self._custom_templates
 
@@ -85,7 +92,7 @@ class ListTemplatesResponse(SdkResponse):
         自定义模板列表。
 
         :param custom_templates: The custom_templates of this ListTemplatesResponse.
-        :type: list[CustomTemplates]
+        :type custom_templates: list[:class:`huaweicloudsdkcss.v1.CustomTemplates`]
         """
         self._custom_templates = custom_templates
 

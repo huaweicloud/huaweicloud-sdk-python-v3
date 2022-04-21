@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BackupForList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class BackupForList:
     }
 
     def __init__(self, id=None, instance_id=None, name=None, databases=None, begin_time=None, end_time=None, status=None, type=None, size=None, datastore=None, associated_with_ddm=None):
-        """BackupForList - a model defined in huaweicloud sdk"""
+        """BackupForList
+
+        The model defined in huaweicloud sdk
+
+        :param id: 备份ID。
+        :type id: str
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param name: 备份名称。
+        :type name: str
+        :param databases: 备份的数据库。
+        :type databases: list[:class:`huaweicloudsdkrds.v3.BackupDatabase`]
+        :param begin_time: 备份开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        :type begin_time: str
+        :param end_time: 备份结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        :type end_time: str
+        :param status: 备份状态，取值：  - BUILDING: 备份中。 - COMPLETED: 备份完成。 - FAILED：备份失败。 - DELETING：备份删除中。
+        :type status: str
+        :param type: 备份类型，取值：  - “auto”: 自动全量备份 - “manual”: 手动全量备份 - “fragment”: 差异全量备份 - “incremental”: 自动增量备份
+        :type type: str
+        :param size: 备份大小，单位为KB。
+        :type size: int
+        :param datastore: 
+        :type datastore: :class:`huaweicloudsdkrds.v3.BackupDatastore`
+        :param associated_with_ddm: 是否已被DDM实例关联。
+        :type associated_with_ddm: bool
+        """
         
         
 
@@ -99,7 +124,7 @@ class BackupForList:
         备份ID。
 
         :param id: The id of this BackupForList.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -121,7 +146,7 @@ class BackupForList:
         实例ID。
 
         :param instance_id: The instance_id of this BackupForList.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -143,7 +168,7 @@ class BackupForList:
         备份名称。
 
         :param name: The name of this BackupForList.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -154,7 +179,7 @@ class BackupForList:
         备份的数据库。
 
         :return: The databases of this BackupForList.
-        :rtype: list[BackupDatabase]
+        :rtype: list[:class:`huaweicloudsdkrds.v3.BackupDatabase`]
         """
         return self._databases
 
@@ -165,7 +190,7 @@ class BackupForList:
         备份的数据库。
 
         :param databases: The databases of this BackupForList.
-        :type: list[BackupDatabase]
+        :type databases: list[:class:`huaweicloudsdkrds.v3.BackupDatabase`]
         """
         self._databases = databases
 
@@ -187,7 +212,7 @@ class BackupForList:
         备份开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
         :param begin_time: The begin_time of this BackupForList.
-        :type: str
+        :type begin_time: str
         """
         self._begin_time = begin_time
 
@@ -209,7 +234,7 @@ class BackupForList:
         备份结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
         :param end_time: The end_time of this BackupForList.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -231,7 +256,7 @@ class BackupForList:
         备份状态，取值：  - BUILDING: 备份中。 - COMPLETED: 备份完成。 - FAILED：备份失败。 - DELETING：备份删除中。
 
         :param status: The status of this BackupForList.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -253,7 +278,7 @@ class BackupForList:
         备份类型，取值：  - “auto”: 自动全量备份 - “manual”: 手动全量备份 - “fragment”: 差异全量备份 - “incremental”: 自动增量备份
 
         :param type: The type of this BackupForList.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -275,7 +300,7 @@ class BackupForList:
         备份大小，单位为KB。
 
         :param size: The size of this BackupForList.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -285,7 +310,7 @@ class BackupForList:
 
 
         :return: The datastore of this BackupForList.
-        :rtype: BackupDatastore
+        :rtype: :class:`huaweicloudsdkrds.v3.BackupDatastore`
         """
         return self._datastore
 
@@ -295,7 +320,7 @@ class BackupForList:
 
 
         :param datastore: The datastore of this BackupForList.
-        :type: BackupDatastore
+        :type datastore: :class:`huaweicloudsdkrds.v3.BackupDatastore`
         """
         self._datastore = datastore
 
@@ -317,7 +342,7 @@ class BackupForList:
         是否已被DDM实例关联。
 
         :param associated_with_ddm: The associated_with_ddm of this BackupForList.
-        :type: bool
+        :type associated_with_ddm: bool
         """
         self._associated_with_ddm = associated_with_ddm
 

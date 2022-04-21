@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VideoSharp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class VideoSharp:
     }
 
     def __init__(self, name=None, execution_order=None, amount=None):
-        """VideoSharp - a model defined in huaweicloud sdk"""
+        """VideoSharp
+
+        The model defined in huaweicloud sdk
+
+        :param name: 锐化算法名称\&quot;hw-sharp\&quot;。 
+        :type name: str
+        :param execution_order: 1 表示视频处理时第一个执行，2表示第二个执行，以此类推；除不执行，各视频处理算法的执行次序不可相同。 
+        :type execution_order: int
+        :param amount: 锐化的程度， 值越大，锐化越强。 
+        :type amount: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class VideoSharp:
         锐化算法名称\"hw-sharp\"。 
 
         :param name: The name of this VideoSharp.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -90,7 +99,7 @@ class VideoSharp:
         1 表示视频处理时第一个执行，2表示第二个执行，以此类推；除不执行，各视频处理算法的执行次序不可相同。 
 
         :param execution_order: The execution_order of this VideoSharp.
-        :type: int
+        :type execution_order: int
         """
         self._execution_order = execution_order
 
@@ -112,7 +121,7 @@ class VideoSharp:
         锐化的程度， 值越大，锐化越强。 
 
         :param amount: The amount of this VideoSharp.
-        :type: str
+        :type amount: str
         """
         self._amount = amount
 

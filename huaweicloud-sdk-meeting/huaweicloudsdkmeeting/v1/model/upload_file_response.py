@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UploadFileResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UploadFileResponse(SdkResponse):
     }
 
     def __init__(self, file_id=None, image_moderation=None):
-        """UploadFileResponse - a model defined in huaweicloud sdk"""
+        """UploadFileResponse
+
+        The model defined in huaweicloud sdk
+
+        :param file_id: 文件Id
+        :type file_id: str
+        :param image_moderation: 
+        :type image_moderation: :class:`huaweicloudsdkmeeting.v1.ImageModerationResult`
+        """
         
         super(UploadFileResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class UploadFileResponse(SdkResponse):
         文件Id
 
         :param file_id: The file_id of this UploadFileResponse.
-        :type: str
+        :type file_id: str
         """
         self._file_id = file_id
 
@@ -73,7 +80,7 @@ class UploadFileResponse(SdkResponse):
 
 
         :return: The image_moderation of this UploadFileResponse.
-        :rtype: ImageModerationResult
+        :rtype: :class:`huaweicloudsdkmeeting.v1.ImageModerationResult`
         """
         return self._image_moderation
 
@@ -83,7 +90,7 @@ class UploadFileResponse(SdkResponse):
 
 
         :param image_moderation: The image_moderation of this UploadFileResponse.
-        :type: ImageModerationResult
+        :type image_moderation: :class:`huaweicloudsdkmeeting.v1.ImageModerationResult`
         """
         self._image_moderation = image_moderation
 

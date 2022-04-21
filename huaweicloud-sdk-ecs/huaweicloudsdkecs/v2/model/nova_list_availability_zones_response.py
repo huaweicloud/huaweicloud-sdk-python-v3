@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NovaListAvailabilityZonesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class NovaListAvailabilityZonesResponse(SdkResponse):
     }
 
     def __init__(self, availability_zone_info=None):
-        """NovaListAvailabilityZonesResponse - a model defined in huaweicloud sdk"""
+        """NovaListAvailabilityZonesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param availability_zone_info: 可用域信息。
+        :type availability_zone_info: list[:class:`huaweicloudsdkecs.v2.NovaAvailabilityZone`]
+        """
         
         super(NovaListAvailabilityZonesResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class NovaListAvailabilityZonesResponse(SdkResponse):
         可用域信息。
 
         :return: The availability_zone_info of this NovaListAvailabilityZonesResponse.
-        :rtype: list[NovaAvailabilityZone]
+        :rtype: list[:class:`huaweicloudsdkecs.v2.NovaAvailabilityZone`]
         """
         return self._availability_zone_info
 
@@ -58,7 +63,7 @@ class NovaListAvailabilityZonesResponse(SdkResponse):
         可用域信息。
 
         :param availability_zone_info: The availability_zone_info of this NovaListAvailabilityZonesResponse.
-        :type: list[NovaAvailabilityZone]
+        :type availability_zone_info: list[:class:`huaweicloudsdkecs.v2.NovaAvailabilityZone`]
         """
         self._availability_zone_info = availability_zone_info
 

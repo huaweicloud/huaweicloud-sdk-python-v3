@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PolicyParameterValue:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class PolicyParameterValue:
     }
 
     def __init__(self, value=None):
-        """PolicyParameterValue - a model defined in huaweicloud sdk"""
+        """PolicyParameterValue
+
+        The model defined in huaweicloud sdk
+
+        :param value: 规则参数值
+        :type value: object
+        """
         
         
 
@@ -58,7 +63,7 @@ class PolicyParameterValue:
         规则参数值
 
         :param value: The value of this PolicyParameterValue.
-        :type: object
+        :type value: object
         """
         self._value = value
 

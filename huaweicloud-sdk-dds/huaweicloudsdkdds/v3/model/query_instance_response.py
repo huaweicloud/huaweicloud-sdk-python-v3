@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryInstanceResponse:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -82,7 +81,65 @@ class QueryInstanceResponse:
     }
 
     def __init__(self, id=None, name=None, remark=None, status=None, port=None, mode=None, region=None, datastore=None, engine=None, created=None, updated=None, db_user_name=None, ssl=None, vpc_id=None, subnet_id=None, security_group_id=None, backup_strategy=None, pay_mode=None, maintenance_window=None, groups=None, disk_encryption_id=None, enterprise_project_id=None, time_zone=None, dss_pool_id=None, actions=None, order_id=None, tags=None):
-        """QueryInstanceResponse - a model defined in huaweicloud sdk"""
+        """QueryInstanceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 实例ID。
+        :type id: str
+        :param name: 实例名称。
+        :type name: str
+        :param remark: 实例备注。
+        :type remark: str
+        :param status: 实例状态。 取值： - normal，表示实例正常。 - abnormal，表示实例异常。 - creating，表示实例创建中。 - frozen，表示实例被冻结。 - data_disk_full，表示实例磁盘已满。 - createfail，表示实例创建失败。 - enlargefail，表示实例扩容节点个数失败。
+        :type status: str
+        :param port: 数据库端口号。文档数据库实例支持的端口号范围为2100～9500。
+        :type port: str
+        :param mode: 实例类型。与请求参数相同。
+        :type mode: str
+        :param region: 实例所在区域。
+        :type region: str
+        :param datastore: 
+        :type datastore: :class:`huaweicloudsdkdds.v3.DatastoreItem`
+        :param engine: 存储引擎。取值为“wiredTiger”。
+        :type engine: str
+        :param created: 实例创建时间。
+        :type created: str
+        :param updated: 实例操作最新变更的时间。
+        :type updated: str
+        :param db_user_name: 默认用户名。取值为“rwuser”。
+        :type db_user_name: str
+        :param ssl: 是否开启SSL安全连接。 - 取值为“1”，表示开启。 - 取值为“0”，表示不开启。
+        :type ssl: int
+        :param vpc_id: 虚拟私有云ID。
+        :type vpc_id: str
+        :param subnet_id: 子网ID。
+        :type subnet_id: str
+        :param security_group_id: 安全组ID。
+        :type security_group_id: str
+        :param backup_strategy: 
+        :type backup_strategy: :class:`huaweicloudsdkdds.v3.BackupStrategyForItemResponse`
+        :param pay_mode: 计费方式。 - 取值为“0”，表示按需计费。 - 取值为“1”，表示包年/包月计费。
+        :type pay_mode: str
+        :param maintenance_window: 系统可维护时间窗。
+        :type maintenance_window: str
+        :param groups: 组信息。
+        :type groups: list[:class:`huaweicloudsdkdds.v3.GroupResponseItem`]
+        :param disk_encryption_id: 磁盘加密的密钥ID。
+        :type disk_encryption_id: str
+        :param enterprise_project_id: 企业项目ID。取值为“0”，表示为default企业项目。
+        :type enterprise_project_id: str
+        :param time_zone: 时区。
+        :type time_zone: str
+        :param dss_pool_id: 专属存储池ID。
+        :type dss_pool_id: str
+        :param actions: 实例正在执行的动作。
+        :type actions: list[str]
+        :param order_id: 订单ID，仅包周期场景返回。
+        :type order_id: str
+        :param tags: 标签列表。
+        :type tags: list[:class:`huaweicloudsdkdds.v3.TagResponse`]
+        """
         
         
 
@@ -164,7 +221,7 @@ class QueryInstanceResponse:
         实例ID。
 
         :param id: The id of this QueryInstanceResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -186,7 +243,7 @@ class QueryInstanceResponse:
         实例名称。
 
         :param name: The name of this QueryInstanceResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -208,7 +265,7 @@ class QueryInstanceResponse:
         实例备注。
 
         :param remark: The remark of this QueryInstanceResponse.
-        :type: str
+        :type remark: str
         """
         self._remark = remark
 
@@ -230,7 +287,7 @@ class QueryInstanceResponse:
         实例状态。 取值： - normal，表示实例正常。 - abnormal，表示实例异常。 - creating，表示实例创建中。 - frozen，表示实例被冻结。 - data_disk_full，表示实例磁盘已满。 - createfail，表示实例创建失败。 - enlargefail，表示实例扩容节点个数失败。
 
         :param status: The status of this QueryInstanceResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -252,7 +309,7 @@ class QueryInstanceResponse:
         数据库端口号。文档数据库实例支持的端口号范围为2100～9500。
 
         :param port: The port of this QueryInstanceResponse.
-        :type: str
+        :type port: str
         """
         self._port = port
 
@@ -274,7 +331,7 @@ class QueryInstanceResponse:
         实例类型。与请求参数相同。
 
         :param mode: The mode of this QueryInstanceResponse.
-        :type: str
+        :type mode: str
         """
         self._mode = mode
 
@@ -296,7 +353,7 @@ class QueryInstanceResponse:
         实例所在区域。
 
         :param region: The region of this QueryInstanceResponse.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -306,7 +363,7 @@ class QueryInstanceResponse:
 
 
         :return: The datastore of this QueryInstanceResponse.
-        :rtype: DatastoreItem
+        :rtype: :class:`huaweicloudsdkdds.v3.DatastoreItem`
         """
         return self._datastore
 
@@ -316,7 +373,7 @@ class QueryInstanceResponse:
 
 
         :param datastore: The datastore of this QueryInstanceResponse.
-        :type: DatastoreItem
+        :type datastore: :class:`huaweicloudsdkdds.v3.DatastoreItem`
         """
         self._datastore = datastore
 
@@ -338,7 +395,7 @@ class QueryInstanceResponse:
         存储引擎。取值为“wiredTiger”。
 
         :param engine: The engine of this QueryInstanceResponse.
-        :type: str
+        :type engine: str
         """
         self._engine = engine
 
@@ -360,7 +417,7 @@ class QueryInstanceResponse:
         实例创建时间。
 
         :param created: The created of this QueryInstanceResponse.
-        :type: str
+        :type created: str
         """
         self._created = created
 
@@ -382,7 +439,7 @@ class QueryInstanceResponse:
         实例操作最新变更的时间。
 
         :param updated: The updated of this QueryInstanceResponse.
-        :type: str
+        :type updated: str
         """
         self._updated = updated
 
@@ -404,7 +461,7 @@ class QueryInstanceResponse:
         默认用户名。取值为“rwuser”。
 
         :param db_user_name: The db_user_name of this QueryInstanceResponse.
-        :type: str
+        :type db_user_name: str
         """
         self._db_user_name = db_user_name
 
@@ -426,7 +483,7 @@ class QueryInstanceResponse:
         是否开启SSL安全连接。 - 取值为“1”，表示开启。 - 取值为“0”，表示不开启。
 
         :param ssl: The ssl of this QueryInstanceResponse.
-        :type: int
+        :type ssl: int
         """
         self._ssl = ssl
 
@@ -448,7 +505,7 @@ class QueryInstanceResponse:
         虚拟私有云ID。
 
         :param vpc_id: The vpc_id of this QueryInstanceResponse.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -470,7 +527,7 @@ class QueryInstanceResponse:
         子网ID。
 
         :param subnet_id: The subnet_id of this QueryInstanceResponse.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -492,7 +549,7 @@ class QueryInstanceResponse:
         安全组ID。
 
         :param security_group_id: The security_group_id of this QueryInstanceResponse.
-        :type: str
+        :type security_group_id: str
         """
         self._security_group_id = security_group_id
 
@@ -502,7 +559,7 @@ class QueryInstanceResponse:
 
 
         :return: The backup_strategy of this QueryInstanceResponse.
-        :rtype: BackupStrategyForItemResponse
+        :rtype: :class:`huaweicloudsdkdds.v3.BackupStrategyForItemResponse`
         """
         return self._backup_strategy
 
@@ -512,7 +569,7 @@ class QueryInstanceResponse:
 
 
         :param backup_strategy: The backup_strategy of this QueryInstanceResponse.
-        :type: BackupStrategyForItemResponse
+        :type backup_strategy: :class:`huaweicloudsdkdds.v3.BackupStrategyForItemResponse`
         """
         self._backup_strategy = backup_strategy
 
@@ -534,7 +591,7 @@ class QueryInstanceResponse:
         计费方式。 - 取值为“0”，表示按需计费。 - 取值为“1”，表示包年/包月计费。
 
         :param pay_mode: The pay_mode of this QueryInstanceResponse.
-        :type: str
+        :type pay_mode: str
         """
         self._pay_mode = pay_mode
 
@@ -556,7 +613,7 @@ class QueryInstanceResponse:
         系统可维护时间窗。
 
         :param maintenance_window: The maintenance_window of this QueryInstanceResponse.
-        :type: str
+        :type maintenance_window: str
         """
         self._maintenance_window = maintenance_window
 
@@ -567,7 +624,7 @@ class QueryInstanceResponse:
         组信息。
 
         :return: The groups of this QueryInstanceResponse.
-        :rtype: list[GroupResponseItem]
+        :rtype: list[:class:`huaweicloudsdkdds.v3.GroupResponseItem`]
         """
         return self._groups
 
@@ -578,7 +635,7 @@ class QueryInstanceResponse:
         组信息。
 
         :param groups: The groups of this QueryInstanceResponse.
-        :type: list[GroupResponseItem]
+        :type groups: list[:class:`huaweicloudsdkdds.v3.GroupResponseItem`]
         """
         self._groups = groups
 
@@ -600,7 +657,7 @@ class QueryInstanceResponse:
         磁盘加密的密钥ID。
 
         :param disk_encryption_id: The disk_encryption_id of this QueryInstanceResponse.
-        :type: str
+        :type disk_encryption_id: str
         """
         self._disk_encryption_id = disk_encryption_id
 
@@ -622,7 +679,7 @@ class QueryInstanceResponse:
         企业项目ID。取值为“0”，表示为default企业项目。
 
         :param enterprise_project_id: The enterprise_project_id of this QueryInstanceResponse.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -644,7 +701,7 @@ class QueryInstanceResponse:
         时区。
 
         :param time_zone: The time_zone of this QueryInstanceResponse.
-        :type: str
+        :type time_zone: str
         """
         self._time_zone = time_zone
 
@@ -666,7 +723,7 @@ class QueryInstanceResponse:
         专属存储池ID。
 
         :param dss_pool_id: The dss_pool_id of this QueryInstanceResponse.
-        :type: str
+        :type dss_pool_id: str
         """
         self._dss_pool_id = dss_pool_id
 
@@ -688,7 +745,7 @@ class QueryInstanceResponse:
         实例正在执行的动作。
 
         :param actions: The actions of this QueryInstanceResponse.
-        :type: list[str]
+        :type actions: list[str]
         """
         self._actions = actions
 
@@ -710,7 +767,7 @@ class QueryInstanceResponse:
         订单ID，仅包周期场景返回。
 
         :param order_id: The order_id of this QueryInstanceResponse.
-        :type: str
+        :type order_id: str
         """
         self._order_id = order_id
 
@@ -721,7 +778,7 @@ class QueryInstanceResponse:
         标签列表。
 
         :return: The tags of this QueryInstanceResponse.
-        :rtype: list[TagResponse]
+        :rtype: list[:class:`huaweicloudsdkdds.v3.TagResponse`]
         """
         return self._tags
 
@@ -732,7 +789,7 @@ class QueryInstanceResponse:
         标签列表。
 
         :param tags: The tags of this QueryInstanceResponse.
-        :type: list[TagResponse]
+        :type tags: list[:class:`huaweicloudsdkdds.v3.TagResponse`]
         """
         self._tags = tags
 

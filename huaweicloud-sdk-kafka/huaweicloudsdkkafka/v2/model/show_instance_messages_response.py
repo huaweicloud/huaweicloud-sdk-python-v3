@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowInstanceMessagesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowInstanceMessagesResponse(SdkResponse):
     }
 
     def __init__(self, messages=None, total=None, size=None):
-        """ShowInstanceMessagesResponse - a model defined in huaweicloud sdk"""
+        """ShowInstanceMessagesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param messages: 消息列表。
+        :type messages: list[:class:`huaweicloudsdkkafka.v2.MessagesEntity`]
+        :param total: 消息总条数。
+        :type total: int
+        :param size: 消息条数。
+        :type size: int
+        """
         
         super(ShowInstanceMessagesResponse, self).__init__()
 
@@ -57,7 +66,7 @@ class ShowInstanceMessagesResponse(SdkResponse):
         消息列表。
 
         :return: The messages of this ShowInstanceMessagesResponse.
-        :rtype: list[MessagesEntity]
+        :rtype: list[:class:`huaweicloudsdkkafka.v2.MessagesEntity`]
         """
         return self._messages
 
@@ -68,7 +77,7 @@ class ShowInstanceMessagesResponse(SdkResponse):
         消息列表。
 
         :param messages: The messages of this ShowInstanceMessagesResponse.
-        :type: list[MessagesEntity]
+        :type messages: list[:class:`huaweicloudsdkkafka.v2.MessagesEntity`]
         """
         self._messages = messages
 
@@ -90,7 +99,7 @@ class ShowInstanceMessagesResponse(SdkResponse):
         消息总条数。
 
         :param total: The total of this ShowInstanceMessagesResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -112,7 +121,7 @@ class ShowInstanceMessagesResponse(SdkResponse):
         消息条数。
 
         :param size: The size of this ShowInstanceMessagesResponse.
-        :type: int
+        :type size: int
         """
         self._size = size
 

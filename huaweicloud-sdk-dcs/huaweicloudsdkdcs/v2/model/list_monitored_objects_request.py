@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListMonitoredObjectsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListMonitoredObjectsRequest:
     }
 
     def __init__(self, dim_name=None, offset=None, limit=None):
-        """ListMonitoredObjectsRequest - a model defined in huaweicloud sdk"""
+        """ListMonitoredObjectsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param dim_name: 主维度ID，当前支持dcs_instance_id，dcs_memcached_instance_id。
+        :type dim_name: str
+        :param offset: 偏移量，表示从此偏移量开始查询，offset大于等于0
+        :type offset: int
+        :param limit: 每页显示的条目数量
+        :type limit: int
+        """
         
         
 
@@ -67,7 +76,7 @@ class ListMonitoredObjectsRequest:
         主维度ID，当前支持dcs_instance_id，dcs_memcached_instance_id。
 
         :param dim_name: The dim_name of this ListMonitoredObjectsRequest.
-        :type: str
+        :type dim_name: str
         """
         self._dim_name = dim_name
 
@@ -89,7 +98,7 @@ class ListMonitoredObjectsRequest:
         偏移量，表示从此偏移量开始查询，offset大于等于0
 
         :param offset: The offset of this ListMonitoredObjectsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -111,7 +120,7 @@ class ListMonitoredObjectsRequest:
         每页显示的条目数量
 
         :param limit: The limit of this ListMonitoredObjectsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GetServerRemoteConsoleOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class GetServerRemoteConsoleOption:
     }
 
     def __init__(self, protocol=None, type=None):
-        """GetServerRemoteConsoleOption - a model defined in huaweicloud sdk"""
+        """GetServerRemoteConsoleOption
+
+        The model defined in huaweicloud sdk
+
+        :param protocol: 远程登录协议，请将protocol配置为“vnc”。
+        :type protocol: str
+        :param type: 远程登录的类型，请将type配置为“novnc”。
+        :type type: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class GetServerRemoteConsoleOption:
         远程登录协议，请将protocol配置为“vnc”。
 
         :param protocol: The protocol of this GetServerRemoteConsoleOption.
-        :type: str
+        :type protocol: str
         """
         self._protocol = protocol
 
@@ -83,7 +90,7 @@ class GetServerRemoteConsoleOption:
         远程登录的类型，请将type配置为“novnc”。
 
         :param type: The type of this GetServerRemoteConsoleOption.
-        :type: str
+        :type type: str
         """
         self._type = type
 

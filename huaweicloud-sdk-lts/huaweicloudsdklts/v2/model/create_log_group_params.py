@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateLogGroupParams:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateLogGroupParams:
     }
 
     def __init__(self, log_group_name=None, ttl_in_days=None):
-        """CreateLogGroupParams - a model defined in huaweicloud sdk"""
+        """CreateLogGroupParams
+
+        The model defined in huaweicloud sdk
+
+        :param log_group_name: 需要创建的日志组名称。
+        :type log_group_name: str
+        :param ttl_in_days: 日志存储时间（天），取值范围：1-30。
+        :type ttl_in_days: int
+        """
         
         
 
@@ -61,7 +68,7 @@ class CreateLogGroupParams:
         需要创建的日志组名称。
 
         :param log_group_name: The log_group_name of this CreateLogGroupParams.
-        :type: str
+        :type log_group_name: str
         """
         self._log_group_name = log_group_name
 
@@ -83,7 +90,7 @@ class CreateLogGroupParams:
         日志存储时间（天），取值范围：1-30。
 
         :param ttl_in_days: The ttl_in_days of this CreateLogGroupParams.
-        :type: int
+        :type ttl_in_days: int
         """
         self._ttl_in_days = ttl_in_days
 

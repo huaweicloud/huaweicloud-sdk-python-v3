@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DomainItemDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class DomainItemDetail:
     }
 
     def __init__(self, start_time=None, end_time=None, stat_type=None, domains=None):
-        """DomainItemDetail - a model defined in huaweicloud sdk"""
+        """DomainItemDetail
+
+        The model defined in huaweicloud sdk
+
+        :param start_time: 数据起始时间戳，可能与请求时间不一致
+        :type start_time: int
+        :param end_time: 数据结束时间戳，可能与请求时间不一致
+        :type end_time: int
+        :param stat_type: 指标类型
+        :type stat_type: str
+        :param domains: 指标统计数据列表，如果该时间段内无值，则为空数组[]
+        :type domains: list[dict(str, object)]
+        """
         
         
 
@@ -73,7 +84,7 @@ class DomainItemDetail:
         数据起始时间戳，可能与请求时间不一致
 
         :param start_time: The start_time of this DomainItemDetail.
-        :type: int
+        :type start_time: int
         """
         self._start_time = start_time
 
@@ -95,7 +106,7 @@ class DomainItemDetail:
         数据结束时间戳，可能与请求时间不一致
 
         :param end_time: The end_time of this DomainItemDetail.
-        :type: int
+        :type end_time: int
         """
         self._end_time = end_time
 
@@ -117,7 +128,7 @@ class DomainItemDetail:
         指标类型
 
         :param stat_type: The stat_type of this DomainItemDetail.
-        :type: str
+        :type stat_type: str
         """
         self._stat_type = stat_type
 
@@ -139,7 +150,7 @@ class DomainItemDetail:
         指标统计数据列表，如果该时间段内无值，则为空数组[]
 
         :param domains: The domains of this DomainItemDetail.
-        :type: list[dict(str, object)]
+        :type domains: list[dict(str, object)]
         """
         self._domains = domains
 

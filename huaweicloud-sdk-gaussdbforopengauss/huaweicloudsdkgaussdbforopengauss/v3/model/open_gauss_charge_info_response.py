@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OpenGaussChargeInfoResponse:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class OpenGaussChargeInfoResponse:
     }
 
     def __init__(self, charge_mode=None):
-        """OpenGaussChargeInfoResponse - a model defined in huaweicloud sdk"""
+        """OpenGaussChargeInfoResponse
+
+        The model defined in huaweicloud sdk
+
+        :param charge_mode: 计费模式。 取值范围： postPaid：后付费，即按需付费。
+        :type charge_mode: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class OpenGaussChargeInfoResponse:
         计费模式。 取值范围： postPaid：后付费，即按需付费。
 
         :param charge_mode: The charge_mode of this OpenGaussChargeInfoResponse.
-        :type: str
+        :type charge_mode: str
         """
         self._charge_mode = charge_mode
 

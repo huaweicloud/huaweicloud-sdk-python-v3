@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ChangeBaremetalNameResponsesServers:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -118,7 +117,101 @@ class ChangeBaremetalNameResponsesServers:
     }
 
     def __init__(self, name=None, id=None, status=None, created=None, updated=None, flavor=None, image=None, tenant_id=None, key_name=None, user_id=None, metadata=None, host_id=None, addresses=None, security_groups=None, links=None, os_dc_fdisk_config=None, os_ext_a_zavailability_zone=None, os_ext_srv_att_rhost=None, os_ext_srv_att_rhypervisor_hostname=None, os_ext_srv_att_rinstance_name=None, os_ext_st_spower_state=None, os_ext_st_stask_state=None, os_ext_st_svm_state=None, os_srv_us_glaunched_at=None, os_srv_us_gterminated_at=None, os_extended_volumesvolumes_attached=None, access_i_pv4=None, access_i_pv6=None, fault=None, config_drive=None, progress=None, description=None, host_status=None, os_ext_srv_att_rhostname=None, os_ext_srv_att_rreservation_id=None, os_ext_srv_att_rlaunch_index=None, os_ext_srv_att_rkernel_id=None, os_ext_srv_att_rramdisk_id=None, os_ext_srv_att_rroot_device_name=None, os_ext_srv_att_ruser_data=None, locked=None, tags=None, sys_tags=None, enterprise_project_id=None, osscheduler_hints=None):
-        """ChangeBaremetalNameResponsesServers - a model defined in huaweicloud sdk"""
+        """ChangeBaremetalNameResponsesServers
+
+        The model defined in huaweicloud sdk
+
+        :param name: 裸金属服务器名称
+        :type name: str
+        :param id: 裸金属服务器唯一标识ID
+        :type id: str
+        :param status: 裸金属服务器当前状态。ACTIVE：运行中/正在关机/删除中BUILD：创建中ERROR：故障HARD_REBOOT：强制重启中REBOOT：重启中 SHUTOFF：关机/正在开机/删除中/重建中/重装操作系统中/重装操作系统失败/冻结
+        :type status: str
+        :param created: 裸金属服务器创建时间。时间戳格式为ISO 8601：YYYY-MM-DDTHH:MM:SSZ，例如：2019-05-22T03:30:52Z
+        :type created: datetime
+        :param updated: 裸金属服务器上一次更新时间。时间戳格式为ISO 8601：YYYY-MM-DDTHH:MM:SSZ，例如：2019-05-22T04:30:52Z
+        :type updated: datetime
+        :param flavor: 
+        :type flavor: :class:`huaweicloudsdkbms.v1.FlavorInfo`
+        :param image: 
+        :type image: :class:`huaweicloudsdkbms.v1.Image`
+        :param tenant_id: 裸金属服务器所属租户ID，格式为UUID。该参数和project_id表示相同的概念。
+        :type tenant_id: str
+        :param key_name: SSH密钥名称
+        :type key_name: str
+        :param user_id: 裸金属服务器所属用户ID。
+        :type user_id: str
+        :param metadata: 
+        :type metadata: :class:`huaweicloudsdkbms.v1.MetadataInfos`
+        :param host_id: 裸金属服务器的主机ID
+        :type host_id: str
+        :param addresses: 
+        :type addresses: :class:`huaweicloudsdkbms.v1.Addresses`
+        :param security_groups: 裸金属服务器所属安全组列表。
+        :type security_groups: list[:class:`huaweicloudsdkbms.v1.SecurityGroups`]
+        :param links: 裸金属服务器相关信息快捷链接
+        :type links: list[:class:`huaweicloudsdkbms.v1.Links`]
+        :param os_dc_fdisk_config: 扩展属性，磁盘配置方式，取值为如下两种：MANUAL：API使用镜像中的分区方案和文件系统创建裸金属服务器。如果目标flavor磁盘较大，则API不会对剩余磁盘空间进行分区。AUTO：API使用与目标flavor磁盘大小相同的单个分区创建裸金属服务器，API会自动调整文件系统以适应整个分区。
+        :type os_dc_fdisk_config: str
+        :param os_ext_a_zavailability_zone: 扩展属性，可用分区编码。
+        :type os_ext_a_zavailability_zone: str
+        :param os_ext_srv_att_rhost: 扩展属性，裸金属服务器宿主名称
+        :type os_ext_srv_att_rhost: str
+        :param os_ext_srv_att_rhypervisor_hostname: 扩展属性，hypervisor主机名称，由Nova virt驱动提供
+        :type os_ext_srv_att_rhypervisor_hostname: str
+        :param os_ext_srv_att_rinstance_name: 扩展属性，裸金属服务器实例ID
+        :type os_ext_srv_att_rinstance_name: str
+        :param os_ext_st_spower_state: 扩展属性，裸金属服务器电源状态。例如：0表示“NO STATE”1表示“RUNNING”4表示“SHUTDOWN”
+        :type os_ext_st_spower_state: int
+        :param os_ext_st_stask_state: 扩展属性，裸金属服务器任务状态。例如：rebooting表示重启中reboot_started表示普通重启reboot_started_hard表示强制重启powering-off表示关机中powering-on表示开机中rebuilding表示重建中scheduling表示调度中deleting表示删除中
+        :type os_ext_st_stask_state: str
+        :param os_ext_st_svm_state: 扩展属性，裸金属服务器状态。例如：RUNNING表示运行中SHUTOFF表示关机SUSPENDED表示暂停REBOOT表示重启
+        :type os_ext_st_svm_state: str
+        :param os_srv_us_glaunched_at: 扩展属性，裸金属服务器启动时间。时间戳格式为ISO 8601，例如：2019-05-25T03:40:25.000000
+        :type os_srv_us_glaunched_at: datetime
+        :param os_srv_us_gterminated_at: 扩展属性，裸金属服务器关闭时间。时间戳格式为ISO 8601，例如：2019-06-25T03:40:25.000000
+        :type os_srv_us_gterminated_at: datetime
+        :param os_extended_volumesvolumes_attached: 裸金属服务器挂载的云硬盘信息。详情请参见表 os-extended-volumes:volumes_attached字段数据结构说明。
+        :type os_extended_volumesvolumes_attached: list[:class:`huaweicloudsdkbms.v1.OsExtendedVolumes`]
+        :param access_i_pv4: 预留属性
+        :type access_i_pv4: str
+        :param access_i_pv6: 预留属性
+        :type access_i_pv6: str
+        :param fault: 
+        :type fault: :class:`huaweicloudsdkbms.v1.Fault`
+        :param config_drive: config drive信息
+        :type config_drive: str
+        :param progress: 预留属性
+        :type progress: int
+        :param description: 裸金属服务器的描述信息。
+        :type description: str
+        :param host_status: 裸金属服务器宿主机状态。UP：服务正常UNKNOWN：状态未知DOWN：服务异常MAINTENANCE：维护状态空字符串：裸金属服务器无主机信息
+        :type host_status: str
+        :param os_ext_srv_att_rhostname: 裸金属服务器的主机名
+        :type os_ext_srv_att_rhostname: str
+        :param os_ext_srv_att_rreservation_id: 批量创建场景，裸金属服务器的预留ID。当批量创建裸金属服务器时，这些服务器将拥有相同的reservation_id。您可以使用6.3.3-查询裸金属服务器详情列表API并指定reservation_id来过滤查询同一批创建的所有裸金属服务器。
+        :type os_ext_srv_att_rreservation_id: str
+        :param os_ext_srv_att_rlaunch_index: 批量创建场景，裸金属服务器的启动顺序
+        :type os_ext_srv_att_rlaunch_index: int
+        :param os_ext_srv_att_rkernel_id: 若使用AMI格式的镜像，则表示kernel image的UUID；否则，留空
+        :type os_ext_srv_att_rkernel_id: str
+        :param os_ext_srv_att_rramdisk_id: 若使用AMI格式镜像，则表示ramdisk image的UUID；否则，留空。
+        :type os_ext_srv_att_rramdisk_id: str
+        :param os_ext_srv_att_rroot_device_name: 裸金属服务器系统盘的设备名称，例如“/dev/sdb”。
+        :type os_ext_srv_att_rroot_device_name: str
+        :param os_ext_srv_att_ruser_data: 创建裸金属服务器时指定的user_data。取值为base64编码后的结果或空字符串。
+        :type os_ext_srv_att_ruser_data: str
+        :param locked: 裸金属服务器实例是否为锁定状态。true：锁定false：未锁定
+        :type locked: bool
+        :param tags: 裸金属服务器标签
+        :type tags: list[str]
+        :param sys_tags: 裸金属服务器的系统标签
+        :type sys_tags: list[:class:`huaweicloudsdkbms.v1.SystemTags`]
+        :param enterprise_project_id: enterprise_project_id。
+        :type enterprise_project_id: str
+        :param osscheduler_hints: 
+        :type osscheduler_hints: :class:`huaweicloudsdkbms.v1.ServerOsSchedulerHints`
+        """
         
         
 
@@ -278,7 +371,7 @@ class ChangeBaremetalNameResponsesServers:
         裸金属服务器名称
 
         :param name: The name of this ChangeBaremetalNameResponsesServers.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -300,7 +393,7 @@ class ChangeBaremetalNameResponsesServers:
         裸金属服务器唯一标识ID
 
         :param id: The id of this ChangeBaremetalNameResponsesServers.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -322,7 +415,7 @@ class ChangeBaremetalNameResponsesServers:
         裸金属服务器当前状态。ACTIVE：运行中/正在关机/删除中BUILD：创建中ERROR：故障HARD_REBOOT：强制重启中REBOOT：重启中 SHUTOFF：关机/正在开机/删除中/重建中/重装操作系统中/重装操作系统失败/冻结
 
         :param status: The status of this ChangeBaremetalNameResponsesServers.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -344,7 +437,7 @@ class ChangeBaremetalNameResponsesServers:
         裸金属服务器创建时间。时间戳格式为ISO 8601：YYYY-MM-DDTHH:MM:SSZ，例如：2019-05-22T03:30:52Z
 
         :param created: The created of this ChangeBaremetalNameResponsesServers.
-        :type: datetime
+        :type created: datetime
         """
         self._created = created
 
@@ -366,7 +459,7 @@ class ChangeBaremetalNameResponsesServers:
         裸金属服务器上一次更新时间。时间戳格式为ISO 8601：YYYY-MM-DDTHH:MM:SSZ，例如：2019-05-22T04:30:52Z
 
         :param updated: The updated of this ChangeBaremetalNameResponsesServers.
-        :type: datetime
+        :type updated: datetime
         """
         self._updated = updated
 
@@ -376,7 +469,7 @@ class ChangeBaremetalNameResponsesServers:
 
 
         :return: The flavor of this ChangeBaremetalNameResponsesServers.
-        :rtype: FlavorInfo
+        :rtype: :class:`huaweicloudsdkbms.v1.FlavorInfo`
         """
         return self._flavor
 
@@ -386,7 +479,7 @@ class ChangeBaremetalNameResponsesServers:
 
 
         :param flavor: The flavor of this ChangeBaremetalNameResponsesServers.
-        :type: FlavorInfo
+        :type flavor: :class:`huaweicloudsdkbms.v1.FlavorInfo`
         """
         self._flavor = flavor
 
@@ -396,7 +489,7 @@ class ChangeBaremetalNameResponsesServers:
 
 
         :return: The image of this ChangeBaremetalNameResponsesServers.
-        :rtype: Image
+        :rtype: :class:`huaweicloudsdkbms.v1.Image`
         """
         return self._image
 
@@ -406,7 +499,7 @@ class ChangeBaremetalNameResponsesServers:
 
 
         :param image: The image of this ChangeBaremetalNameResponsesServers.
-        :type: Image
+        :type image: :class:`huaweicloudsdkbms.v1.Image`
         """
         self._image = image
 
@@ -428,7 +521,7 @@ class ChangeBaremetalNameResponsesServers:
         裸金属服务器所属租户ID，格式为UUID。该参数和project_id表示相同的概念。
 
         :param tenant_id: The tenant_id of this ChangeBaremetalNameResponsesServers.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 
@@ -450,7 +543,7 @@ class ChangeBaremetalNameResponsesServers:
         SSH密钥名称
 
         :param key_name: The key_name of this ChangeBaremetalNameResponsesServers.
-        :type: str
+        :type key_name: str
         """
         self._key_name = key_name
 
@@ -472,7 +565,7 @@ class ChangeBaremetalNameResponsesServers:
         裸金属服务器所属用户ID。
 
         :param user_id: The user_id of this ChangeBaremetalNameResponsesServers.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -482,7 +575,7 @@ class ChangeBaremetalNameResponsesServers:
 
 
         :return: The metadata of this ChangeBaremetalNameResponsesServers.
-        :rtype: MetadataInfos
+        :rtype: :class:`huaweicloudsdkbms.v1.MetadataInfos`
         """
         return self._metadata
 
@@ -492,7 +585,7 @@ class ChangeBaremetalNameResponsesServers:
 
 
         :param metadata: The metadata of this ChangeBaremetalNameResponsesServers.
-        :type: MetadataInfos
+        :type metadata: :class:`huaweicloudsdkbms.v1.MetadataInfos`
         """
         self._metadata = metadata
 
@@ -514,7 +607,7 @@ class ChangeBaremetalNameResponsesServers:
         裸金属服务器的主机ID
 
         :param host_id: The host_id of this ChangeBaremetalNameResponsesServers.
-        :type: str
+        :type host_id: str
         """
         self._host_id = host_id
 
@@ -524,7 +617,7 @@ class ChangeBaremetalNameResponsesServers:
 
 
         :return: The addresses of this ChangeBaremetalNameResponsesServers.
-        :rtype: Addresses
+        :rtype: :class:`huaweicloudsdkbms.v1.Addresses`
         """
         return self._addresses
 
@@ -534,7 +627,7 @@ class ChangeBaremetalNameResponsesServers:
 
 
         :param addresses: The addresses of this ChangeBaremetalNameResponsesServers.
-        :type: Addresses
+        :type addresses: :class:`huaweicloudsdkbms.v1.Addresses`
         """
         self._addresses = addresses
 
@@ -545,7 +638,7 @@ class ChangeBaremetalNameResponsesServers:
         裸金属服务器所属安全组列表。
 
         :return: The security_groups of this ChangeBaremetalNameResponsesServers.
-        :rtype: list[SecurityGroups]
+        :rtype: list[:class:`huaweicloudsdkbms.v1.SecurityGroups`]
         """
         return self._security_groups
 
@@ -556,7 +649,7 @@ class ChangeBaremetalNameResponsesServers:
         裸金属服务器所属安全组列表。
 
         :param security_groups: The security_groups of this ChangeBaremetalNameResponsesServers.
-        :type: list[SecurityGroups]
+        :type security_groups: list[:class:`huaweicloudsdkbms.v1.SecurityGroups`]
         """
         self._security_groups = security_groups
 
@@ -567,7 +660,7 @@ class ChangeBaremetalNameResponsesServers:
         裸金属服务器相关信息快捷链接
 
         :return: The links of this ChangeBaremetalNameResponsesServers.
-        :rtype: list[Links]
+        :rtype: list[:class:`huaweicloudsdkbms.v1.Links`]
         """
         return self._links
 
@@ -578,7 +671,7 @@ class ChangeBaremetalNameResponsesServers:
         裸金属服务器相关信息快捷链接
 
         :param links: The links of this ChangeBaremetalNameResponsesServers.
-        :type: list[Links]
+        :type links: list[:class:`huaweicloudsdkbms.v1.Links`]
         """
         self._links = links
 
@@ -600,7 +693,7 @@ class ChangeBaremetalNameResponsesServers:
         扩展属性，磁盘配置方式，取值为如下两种：MANUAL：API使用镜像中的分区方案和文件系统创建裸金属服务器。如果目标flavor磁盘较大，则API不会对剩余磁盘空间进行分区。AUTO：API使用与目标flavor磁盘大小相同的单个分区创建裸金属服务器，API会自动调整文件系统以适应整个分区。
 
         :param os_dc_fdisk_config: The os_dc_fdisk_config of this ChangeBaremetalNameResponsesServers.
-        :type: str
+        :type os_dc_fdisk_config: str
         """
         self._os_dc_fdisk_config = os_dc_fdisk_config
 
@@ -622,7 +715,7 @@ class ChangeBaremetalNameResponsesServers:
         扩展属性，可用分区编码。
 
         :param os_ext_a_zavailability_zone: The os_ext_a_zavailability_zone of this ChangeBaremetalNameResponsesServers.
-        :type: str
+        :type os_ext_a_zavailability_zone: str
         """
         self._os_ext_a_zavailability_zone = os_ext_a_zavailability_zone
 
@@ -644,7 +737,7 @@ class ChangeBaremetalNameResponsesServers:
         扩展属性，裸金属服务器宿主名称
 
         :param os_ext_srv_att_rhost: The os_ext_srv_att_rhost of this ChangeBaremetalNameResponsesServers.
-        :type: str
+        :type os_ext_srv_att_rhost: str
         """
         self._os_ext_srv_att_rhost = os_ext_srv_att_rhost
 
@@ -666,7 +759,7 @@ class ChangeBaremetalNameResponsesServers:
         扩展属性，hypervisor主机名称，由Nova virt驱动提供
 
         :param os_ext_srv_att_rhypervisor_hostname: The os_ext_srv_att_rhypervisor_hostname of this ChangeBaremetalNameResponsesServers.
-        :type: str
+        :type os_ext_srv_att_rhypervisor_hostname: str
         """
         self._os_ext_srv_att_rhypervisor_hostname = os_ext_srv_att_rhypervisor_hostname
 
@@ -688,7 +781,7 @@ class ChangeBaremetalNameResponsesServers:
         扩展属性，裸金属服务器实例ID
 
         :param os_ext_srv_att_rinstance_name: The os_ext_srv_att_rinstance_name of this ChangeBaremetalNameResponsesServers.
-        :type: str
+        :type os_ext_srv_att_rinstance_name: str
         """
         self._os_ext_srv_att_rinstance_name = os_ext_srv_att_rinstance_name
 
@@ -710,7 +803,7 @@ class ChangeBaremetalNameResponsesServers:
         扩展属性，裸金属服务器电源状态。例如：0表示“NO STATE”1表示“RUNNING”4表示“SHUTDOWN”
 
         :param os_ext_st_spower_state: The os_ext_st_spower_state of this ChangeBaremetalNameResponsesServers.
-        :type: int
+        :type os_ext_st_spower_state: int
         """
         self._os_ext_st_spower_state = os_ext_st_spower_state
 
@@ -732,7 +825,7 @@ class ChangeBaremetalNameResponsesServers:
         扩展属性，裸金属服务器任务状态。例如：rebooting表示重启中reboot_started表示普通重启reboot_started_hard表示强制重启powering-off表示关机中powering-on表示开机中rebuilding表示重建中scheduling表示调度中deleting表示删除中
 
         :param os_ext_st_stask_state: The os_ext_st_stask_state of this ChangeBaremetalNameResponsesServers.
-        :type: str
+        :type os_ext_st_stask_state: str
         """
         self._os_ext_st_stask_state = os_ext_st_stask_state
 
@@ -754,7 +847,7 @@ class ChangeBaremetalNameResponsesServers:
         扩展属性，裸金属服务器状态。例如：RUNNING表示运行中SHUTOFF表示关机SUSPENDED表示暂停REBOOT表示重启
 
         :param os_ext_st_svm_state: The os_ext_st_svm_state of this ChangeBaremetalNameResponsesServers.
-        :type: str
+        :type os_ext_st_svm_state: str
         """
         self._os_ext_st_svm_state = os_ext_st_svm_state
 
@@ -776,7 +869,7 @@ class ChangeBaremetalNameResponsesServers:
         扩展属性，裸金属服务器启动时间。时间戳格式为ISO 8601，例如：2019-05-25T03:40:25.000000
 
         :param os_srv_us_glaunched_at: The os_srv_us_glaunched_at of this ChangeBaremetalNameResponsesServers.
-        :type: datetime
+        :type os_srv_us_glaunched_at: datetime
         """
         self._os_srv_us_glaunched_at = os_srv_us_glaunched_at
 
@@ -798,7 +891,7 @@ class ChangeBaremetalNameResponsesServers:
         扩展属性，裸金属服务器关闭时间。时间戳格式为ISO 8601，例如：2019-06-25T03:40:25.000000
 
         :param os_srv_us_gterminated_at: The os_srv_us_gterminated_at of this ChangeBaremetalNameResponsesServers.
-        :type: datetime
+        :type os_srv_us_gterminated_at: datetime
         """
         self._os_srv_us_gterminated_at = os_srv_us_gterminated_at
 
@@ -809,7 +902,7 @@ class ChangeBaremetalNameResponsesServers:
         裸金属服务器挂载的云硬盘信息。详情请参见表 os-extended-volumes:volumes_attached字段数据结构说明。
 
         :return: The os_extended_volumesvolumes_attached of this ChangeBaremetalNameResponsesServers.
-        :rtype: list[OsExtendedVolumes]
+        :rtype: list[:class:`huaweicloudsdkbms.v1.OsExtendedVolumes`]
         """
         return self._os_extended_volumesvolumes_attached
 
@@ -820,7 +913,7 @@ class ChangeBaremetalNameResponsesServers:
         裸金属服务器挂载的云硬盘信息。详情请参见表 os-extended-volumes:volumes_attached字段数据结构说明。
 
         :param os_extended_volumesvolumes_attached: The os_extended_volumesvolumes_attached of this ChangeBaremetalNameResponsesServers.
-        :type: list[OsExtendedVolumes]
+        :type os_extended_volumesvolumes_attached: list[:class:`huaweicloudsdkbms.v1.OsExtendedVolumes`]
         """
         self._os_extended_volumesvolumes_attached = os_extended_volumesvolumes_attached
 
@@ -842,7 +935,7 @@ class ChangeBaremetalNameResponsesServers:
         预留属性
 
         :param access_i_pv4: The access_i_pv4 of this ChangeBaremetalNameResponsesServers.
-        :type: str
+        :type access_i_pv4: str
         """
         self._access_i_pv4 = access_i_pv4
 
@@ -864,7 +957,7 @@ class ChangeBaremetalNameResponsesServers:
         预留属性
 
         :param access_i_pv6: The access_i_pv6 of this ChangeBaremetalNameResponsesServers.
-        :type: str
+        :type access_i_pv6: str
         """
         self._access_i_pv6 = access_i_pv6
 
@@ -874,7 +967,7 @@ class ChangeBaremetalNameResponsesServers:
 
 
         :return: The fault of this ChangeBaremetalNameResponsesServers.
-        :rtype: Fault
+        :rtype: :class:`huaweicloudsdkbms.v1.Fault`
         """
         return self._fault
 
@@ -884,7 +977,7 @@ class ChangeBaremetalNameResponsesServers:
 
 
         :param fault: The fault of this ChangeBaremetalNameResponsesServers.
-        :type: Fault
+        :type fault: :class:`huaweicloudsdkbms.v1.Fault`
         """
         self._fault = fault
 
@@ -906,7 +999,7 @@ class ChangeBaremetalNameResponsesServers:
         config drive信息
 
         :param config_drive: The config_drive of this ChangeBaremetalNameResponsesServers.
-        :type: str
+        :type config_drive: str
         """
         self._config_drive = config_drive
 
@@ -928,7 +1021,7 @@ class ChangeBaremetalNameResponsesServers:
         预留属性
 
         :param progress: The progress of this ChangeBaremetalNameResponsesServers.
-        :type: int
+        :type progress: int
         """
         self._progress = progress
 
@@ -950,7 +1043,7 @@ class ChangeBaremetalNameResponsesServers:
         裸金属服务器的描述信息。
 
         :param description: The description of this ChangeBaremetalNameResponsesServers.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -972,7 +1065,7 @@ class ChangeBaremetalNameResponsesServers:
         裸金属服务器宿主机状态。UP：服务正常UNKNOWN：状态未知DOWN：服务异常MAINTENANCE：维护状态空字符串：裸金属服务器无主机信息
 
         :param host_status: The host_status of this ChangeBaremetalNameResponsesServers.
-        :type: str
+        :type host_status: str
         """
         self._host_status = host_status
 
@@ -994,7 +1087,7 @@ class ChangeBaremetalNameResponsesServers:
         裸金属服务器的主机名
 
         :param os_ext_srv_att_rhostname: The os_ext_srv_att_rhostname of this ChangeBaremetalNameResponsesServers.
-        :type: str
+        :type os_ext_srv_att_rhostname: str
         """
         self._os_ext_srv_att_rhostname = os_ext_srv_att_rhostname
 
@@ -1016,7 +1109,7 @@ class ChangeBaremetalNameResponsesServers:
         批量创建场景，裸金属服务器的预留ID。当批量创建裸金属服务器时，这些服务器将拥有相同的reservation_id。您可以使用6.3.3-查询裸金属服务器详情列表API并指定reservation_id来过滤查询同一批创建的所有裸金属服务器。
 
         :param os_ext_srv_att_rreservation_id: The os_ext_srv_att_rreservation_id of this ChangeBaremetalNameResponsesServers.
-        :type: str
+        :type os_ext_srv_att_rreservation_id: str
         """
         self._os_ext_srv_att_rreservation_id = os_ext_srv_att_rreservation_id
 
@@ -1038,7 +1131,7 @@ class ChangeBaremetalNameResponsesServers:
         批量创建场景，裸金属服务器的启动顺序
 
         :param os_ext_srv_att_rlaunch_index: The os_ext_srv_att_rlaunch_index of this ChangeBaremetalNameResponsesServers.
-        :type: int
+        :type os_ext_srv_att_rlaunch_index: int
         """
         self._os_ext_srv_att_rlaunch_index = os_ext_srv_att_rlaunch_index
 
@@ -1060,7 +1153,7 @@ class ChangeBaremetalNameResponsesServers:
         若使用AMI格式的镜像，则表示kernel image的UUID；否则，留空
 
         :param os_ext_srv_att_rkernel_id: The os_ext_srv_att_rkernel_id of this ChangeBaremetalNameResponsesServers.
-        :type: str
+        :type os_ext_srv_att_rkernel_id: str
         """
         self._os_ext_srv_att_rkernel_id = os_ext_srv_att_rkernel_id
 
@@ -1082,7 +1175,7 @@ class ChangeBaremetalNameResponsesServers:
         若使用AMI格式镜像，则表示ramdisk image的UUID；否则，留空。
 
         :param os_ext_srv_att_rramdisk_id: The os_ext_srv_att_rramdisk_id of this ChangeBaremetalNameResponsesServers.
-        :type: str
+        :type os_ext_srv_att_rramdisk_id: str
         """
         self._os_ext_srv_att_rramdisk_id = os_ext_srv_att_rramdisk_id
 
@@ -1104,7 +1197,7 @@ class ChangeBaremetalNameResponsesServers:
         裸金属服务器系统盘的设备名称，例如“/dev/sdb”。
 
         :param os_ext_srv_att_rroot_device_name: The os_ext_srv_att_rroot_device_name of this ChangeBaremetalNameResponsesServers.
-        :type: str
+        :type os_ext_srv_att_rroot_device_name: str
         """
         self._os_ext_srv_att_rroot_device_name = os_ext_srv_att_rroot_device_name
 
@@ -1126,7 +1219,7 @@ class ChangeBaremetalNameResponsesServers:
         创建裸金属服务器时指定的user_data。取值为base64编码后的结果或空字符串。
 
         :param os_ext_srv_att_ruser_data: The os_ext_srv_att_ruser_data of this ChangeBaremetalNameResponsesServers.
-        :type: str
+        :type os_ext_srv_att_ruser_data: str
         """
         self._os_ext_srv_att_ruser_data = os_ext_srv_att_ruser_data
 
@@ -1148,7 +1241,7 @@ class ChangeBaremetalNameResponsesServers:
         裸金属服务器实例是否为锁定状态。true：锁定false：未锁定
 
         :param locked: The locked of this ChangeBaremetalNameResponsesServers.
-        :type: bool
+        :type locked: bool
         """
         self._locked = locked
 
@@ -1170,7 +1263,7 @@ class ChangeBaremetalNameResponsesServers:
         裸金属服务器标签
 
         :param tags: The tags of this ChangeBaremetalNameResponsesServers.
-        :type: list[str]
+        :type tags: list[str]
         """
         self._tags = tags
 
@@ -1181,7 +1274,7 @@ class ChangeBaremetalNameResponsesServers:
         裸金属服务器的系统标签
 
         :return: The sys_tags of this ChangeBaremetalNameResponsesServers.
-        :rtype: list[SystemTags]
+        :rtype: list[:class:`huaweicloudsdkbms.v1.SystemTags`]
         """
         return self._sys_tags
 
@@ -1192,7 +1285,7 @@ class ChangeBaremetalNameResponsesServers:
         裸金属服务器的系统标签
 
         :param sys_tags: The sys_tags of this ChangeBaremetalNameResponsesServers.
-        :type: list[SystemTags]
+        :type sys_tags: list[:class:`huaweicloudsdkbms.v1.SystemTags`]
         """
         self._sys_tags = sys_tags
 
@@ -1214,7 +1307,7 @@ class ChangeBaremetalNameResponsesServers:
         enterprise_project_id。
 
         :param enterprise_project_id: The enterprise_project_id of this ChangeBaremetalNameResponsesServers.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -1224,7 +1317,7 @@ class ChangeBaremetalNameResponsesServers:
 
 
         :return: The osscheduler_hints of this ChangeBaremetalNameResponsesServers.
-        :rtype: ServerOsSchedulerHints
+        :rtype: :class:`huaweicloudsdkbms.v1.ServerOsSchedulerHints`
         """
         return self._osscheduler_hints
 
@@ -1234,7 +1327,7 @@ class ChangeBaremetalNameResponsesServers:
 
 
         :param osscheduler_hints: The osscheduler_hints of this ChangeBaremetalNameResponsesServers.
-        :type: ServerOsSchedulerHints
+        :type osscheduler_hints: :class:`huaweicloudsdkbms.v1.ServerOsSchedulerHints`
         """
         self._osscheduler_hints = osscheduler_hints
 

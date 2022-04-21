@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RuleDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RuleDetail:
     }
 
     def __init__(self, rule=None):
-        """RuleDetail - a model defined in huaweicloud sdk"""
+        """RuleDetail
+
+        The model defined in huaweicloud sdk
+
+        :param rule: 
+        :type rule: :class:`huaweicloudsdkief.v1.RuleConfig`
+        """
         
         
 
@@ -46,7 +51,7 @@ class RuleDetail:
 
 
         :return: The rule of this RuleDetail.
-        :rtype: RuleConfig
+        :rtype: :class:`huaweicloudsdkief.v1.RuleConfig`
         """
         return self._rule
 
@@ -56,7 +61,7 @@ class RuleDetail:
 
 
         :param rule: The rule of this RuleDetail.
-        :type: RuleConfig
+        :type rule: :class:`huaweicloudsdkief.v1.RuleConfig`
         """
         self._rule = rule
 

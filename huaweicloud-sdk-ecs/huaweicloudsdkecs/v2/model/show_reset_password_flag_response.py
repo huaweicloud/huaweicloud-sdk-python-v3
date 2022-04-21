@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowResetPasswordFlagResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowResetPasswordFlagResponse(SdkResponse):
     }
 
     def __init__(self, resetpwd_flag=None):
-        """ShowResetPasswordFlagResponse - a model defined in huaweicloud sdk"""
+        """ShowResetPasswordFlagResponse
+
+        The model defined in huaweicloud sdk
+
+        :param resetpwd_flag: 是否支持重置密码。  - True：支持一键重置密码。  - False：不支持一键重置密码。
+        :type resetpwd_flag: str
+        """
         
         super(ShowResetPasswordFlagResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class ShowResetPasswordFlagResponse(SdkResponse):
         是否支持重置密码。  - True：支持一键重置密码。  - False：不支持一键重置密码。
 
         :param resetpwd_flag: The resetpwd_flag of this ShowResetPasswordFlagResponse.
-        :type: str
+        :type resetpwd_flag: str
         """
         self._resetpwd_flag = resetpwd_flag
 

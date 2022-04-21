@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class XCodeError:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class XCodeError:
     }
 
     def __init__(self, code=None, msg=None):
-        """XCodeError - a model defined in huaweicloud sdk"""
+        """XCodeError
+
+        The model defined in huaweicloud sdk
+
+        :param code: 错误码
+        :type code: str
+        :param msg: 错误信息
+        :type msg: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class XCodeError:
         错误码
 
         :param code: The code of this XCodeError.
-        :type: str
+        :type code: str
         """
         self._code = code
 
@@ -85,7 +92,7 @@ class XCodeError:
         错误信息
 
         :param msg: The msg of this XCodeError.
-        :type: str
+        :type msg: str
         """
         self._msg = msg
 

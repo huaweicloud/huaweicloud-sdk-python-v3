@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RecognizeWebImageRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RecognizeWebImageRequest:
     }
 
     def __init__(self, body=None):
-        """RecognizeWebImageRequest - a model defined in huaweicloud sdk"""
+        """RecognizeWebImageRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the RecognizeWebImageRequest
+        :type body: :class:`huaweicloudsdkocr.v1.WebImageRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class RecognizeWebImageRequest:
 
 
         :return: The body of this RecognizeWebImageRequest.
-        :rtype: WebImageRequestBody
+        :rtype: :class:`huaweicloudsdkocr.v1.WebImageRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class RecognizeWebImageRequest:
 
 
         :param body: The body of this RecognizeWebImageRequest.
-        :type: WebImageRequestBody
+        :type body: :class:`huaweicloudsdkocr.v1.WebImageRequestBody`
         """
         self._body = body
 

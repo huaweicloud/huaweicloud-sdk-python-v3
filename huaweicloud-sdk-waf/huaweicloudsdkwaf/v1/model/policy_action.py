@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PolicyAction:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class PolicyAction:
     }
 
     def __init__(self, category=None):
-        """PolicyAction - a model defined in huaweicloud sdk"""
+        """PolicyAction
+
+        The model defined in huaweicloud sdk
+
+        :param category: 防护等级（log为仅记录、block为拦截）
+        :type category: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class PolicyAction:
         防护等级（log为仅记录、block为拦截）
 
         :param category: The category of this PolicyAction.
-        :type: str
+        :type category: str
         """
         self._category = category
 

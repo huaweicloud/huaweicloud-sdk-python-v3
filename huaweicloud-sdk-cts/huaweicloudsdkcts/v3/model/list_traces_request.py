@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTracesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class ListTracesRequest:
     }
 
     def __init__(self, trace_type=None, limit=None, _from=None, next=None, to=None, tracker_name=None, service_type=None, user=None, resource_id=None, resource_name=None, resource_type=None, trace_id=None, trace_name=None, trace_rating=None):
-        """ListTracesRequest - a model defined in huaweicloud sdk"""
+        """ListTracesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param trace_type: 标识审计事件类型。 目前支持管理类事件（system）和数据类事件（data）。 默认值为\&quot;system\&quot;。
+        :type trace_type: str
+        :param limit: 标示查询事件列表中限定返回的事件条数。不传时默认10条，最大值200条。
+        :type limit: int
+        :param _from: 标识查询事件列表的起始时间戳（timestamp，为标准UTC时间，毫秒级，13位数字，不包括传入时间）默认为上一小时的时间戳。查询条件from与to配套使用。
+        :type _from: int
+        :param next: 取值为响应中中marker的值，用于标识查询事件的起始时间（自此条事件的记录时间起，向更早时间查询）。 可以与“from”、“to”结合使用。 最终的查询条件取两组时间条件的交集。
+        :type next: str
+        :param to: 标识查询事件列表的结束时间戳（timestamp，为标准UTC时间，毫秒级，13位数字，不包括传入时间）默认为当前时间戳。查询条件to与from配套使用。
+        :type to: int
+        :param tracker_name: 当\&quot;trace_type\&quot;字段值为\&quot;system\&quot;时，该字段值默认为\&quot;system\&quot;。 当\&quot;trace_type\&quot;字段值为\&quot;data\&quot;时，该字段值可以传入数据类追踪器名称，达到筛选某个数据类追踪器下的数据事件目的。
+        :type tracker_name: str
+        :param service_type: 标识查询事件列表对应的云服务类型。必须为已对接CTS的云服务的英文缩写，且服务类型一般为大写字母。 当\&quot;trace_type\&quot;字段值为\&quot;system\&quot;时，该字段筛选有效\&quot;。 已对接的云服务列表参见《云审计服务用户指南》“支持的服务”章节。
+        :type service_type: str
+        :param user: 标识特定用户名称，用以查询该用户下的所有事件。 当\&quot;trace_type\&quot;字段值为\&quot;system\&quot;时，该字段筛选有效\&quot;。
+        :type user: str
+        :param resource_id: 标示查询事件列表对应的云服务资源ID。 当\&quot;trace_type\&quot;字段值为\&quot;system\&quot;时，该字段筛选有效\&quot;。
+        :type resource_id: str
+        :param resource_name: 标示查询事件列表对应的的资源名称。 当\&quot;trace_type\&quot;字段值为\&quot;system\&quot;时，该字段筛选有效\&quot;。 说明：该字段可能包含大写字母。
+        :type resource_name: str
+        :param resource_type: 标示查询事件列表对应的资源类型。 当\&quot;trace_type\&quot;字段值为\&quot;system\&quot;时，该字段筛选有效\&quot;。
+        :type resource_type: str
+        :param trace_id: 标示某一条事件的事件ID。当传入这个查询条件时，其他查询条件自动不生效。 当\&quot;trace_type\&quot;字段值为\&quot;system\&quot;时，该字段筛选有效\&quot;。
+        :type trace_id: str
+        :param trace_name: 标示查询事件列表对应的事件名称。 当\&quot;trace_type\&quot;字段值为\&quot;system\&quot;时，该字段筛选有效\&quot;。 说明：该字段可能包含大写字母。
+        :type trace_name: str
+        :param trace_rating: 标示查询事件列表对应的事件等级目前有三种：正常(normal), 警告(warning),事故(incident)。 当\&quot;trace_type\&quot;字段值为\&quot;system\&quot;时，该字段筛选有效\&quot;。
+        :type trace_rating: str
+        """
         
         
 
@@ -122,7 +153,7 @@ class ListTracesRequest:
         标识审计事件类型。 目前支持管理类事件（system）和数据类事件（data）。 默认值为\"system\"。
 
         :param trace_type: The trace_type of this ListTracesRequest.
-        :type: str
+        :type trace_type: str
         """
         self._trace_type = trace_type
 
@@ -144,7 +175,7 @@ class ListTracesRequest:
         标示查询事件列表中限定返回的事件条数。不传时默认10条，最大值200条。
 
         :param limit: The limit of this ListTracesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -166,7 +197,7 @@ class ListTracesRequest:
         标识查询事件列表的起始时间戳（timestamp，为标准UTC时间，毫秒级，13位数字，不包括传入时间）默认为上一小时的时间戳。查询条件from与to配套使用。
 
         :param _from: The _from of this ListTracesRequest.
-        :type: int
+        :type _from: int
         """
         self.__from = _from
 
@@ -188,7 +219,7 @@ class ListTracesRequest:
         取值为响应中中marker的值，用于标识查询事件的起始时间（自此条事件的记录时间起，向更早时间查询）。 可以与“from”、“to”结合使用。 最终的查询条件取两组时间条件的交集。
 
         :param next: The next of this ListTracesRequest.
-        :type: str
+        :type next: str
         """
         self._next = next
 
@@ -210,7 +241,7 @@ class ListTracesRequest:
         标识查询事件列表的结束时间戳（timestamp，为标准UTC时间，毫秒级，13位数字，不包括传入时间）默认为当前时间戳。查询条件to与from配套使用。
 
         :param to: The to of this ListTracesRequest.
-        :type: int
+        :type to: int
         """
         self._to = to
 
@@ -232,7 +263,7 @@ class ListTracesRequest:
         当\"trace_type\"字段值为\"system\"时，该字段值默认为\"system\"。 当\"trace_type\"字段值为\"data\"时，该字段值可以传入数据类追踪器名称，达到筛选某个数据类追踪器下的数据事件目的。
 
         :param tracker_name: The tracker_name of this ListTracesRequest.
-        :type: str
+        :type tracker_name: str
         """
         self._tracker_name = tracker_name
 
@@ -254,7 +285,7 @@ class ListTracesRequest:
         标识查询事件列表对应的云服务类型。必须为已对接CTS的云服务的英文缩写，且服务类型一般为大写字母。 当\"trace_type\"字段值为\"system\"时，该字段筛选有效\"。 已对接的云服务列表参见《云审计服务用户指南》“支持的服务”章节。
 
         :param service_type: The service_type of this ListTracesRequest.
-        :type: str
+        :type service_type: str
         """
         self._service_type = service_type
 
@@ -276,7 +307,7 @@ class ListTracesRequest:
         标识特定用户名称，用以查询该用户下的所有事件。 当\"trace_type\"字段值为\"system\"时，该字段筛选有效\"。
 
         :param user: The user of this ListTracesRequest.
-        :type: str
+        :type user: str
         """
         self._user = user
 
@@ -298,7 +329,7 @@ class ListTracesRequest:
         标示查询事件列表对应的云服务资源ID。 当\"trace_type\"字段值为\"system\"时，该字段筛选有效\"。
 
         :param resource_id: The resource_id of this ListTracesRequest.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -320,7 +351,7 @@ class ListTracesRequest:
         标示查询事件列表对应的的资源名称。 当\"trace_type\"字段值为\"system\"时，该字段筛选有效\"。 说明：该字段可能包含大写字母。
 
         :param resource_name: The resource_name of this ListTracesRequest.
-        :type: str
+        :type resource_name: str
         """
         self._resource_name = resource_name
 
@@ -342,7 +373,7 @@ class ListTracesRequest:
         标示查询事件列表对应的资源类型。 当\"trace_type\"字段值为\"system\"时，该字段筛选有效\"。
 
         :param resource_type: The resource_type of this ListTracesRequest.
-        :type: str
+        :type resource_type: str
         """
         self._resource_type = resource_type
 
@@ -364,7 +395,7 @@ class ListTracesRequest:
         标示某一条事件的事件ID。当传入这个查询条件时，其他查询条件自动不生效。 当\"trace_type\"字段值为\"system\"时，该字段筛选有效\"。
 
         :param trace_id: The trace_id of this ListTracesRequest.
-        :type: str
+        :type trace_id: str
         """
         self._trace_id = trace_id
 
@@ -386,7 +417,7 @@ class ListTracesRequest:
         标示查询事件列表对应的事件名称。 当\"trace_type\"字段值为\"system\"时，该字段筛选有效\"。 说明：该字段可能包含大写字母。
 
         :param trace_name: The trace_name of this ListTracesRequest.
-        :type: str
+        :type trace_name: str
         """
         self._trace_name = trace_name
 
@@ -408,7 +439,7 @@ class ListTracesRequest:
         标示查询事件列表对应的事件等级目前有三种：正常(normal), 警告(warning),事故(incident)。 当\"trace_type\"字段值为\"system\"时，该字段筛选有效\"。
 
         :param trace_rating: The trace_rating of this ListTracesRequest.
-        :type: str
+        :type trace_rating: str
         """
         self._trace_rating = trace_rating
 

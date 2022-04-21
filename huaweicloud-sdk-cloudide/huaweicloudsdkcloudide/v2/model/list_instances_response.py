@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListInstancesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListInstancesResponse(SdkResponse):
     }
 
     def __init__(self, instances=None, status=None):
-        """ListInstancesResponse - a model defined in huaweicloud sdk"""
+        """ListInstancesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param instances: 
+        :type instances: :class:`huaweicloudsdkcloudide.v2.PageInstancesVO`
+        :param status: 状态
+        :type status: str
+        """
         
         super(ListInstancesResponse, self).__init__()
 
@@ -51,7 +58,7 @@ class ListInstancesResponse(SdkResponse):
 
 
         :return: The instances of this ListInstancesResponse.
-        :rtype: PageInstancesVO
+        :rtype: :class:`huaweicloudsdkcloudide.v2.PageInstancesVO`
         """
         return self._instances
 
@@ -61,7 +68,7 @@ class ListInstancesResponse(SdkResponse):
 
 
         :param instances: The instances of this ListInstancesResponse.
-        :type: PageInstancesVO
+        :type instances: :class:`huaweicloudsdkcloudide.v2.PageInstancesVO`
         """
         self._instances = instances
 
@@ -83,7 +90,7 @@ class ListInstancesResponse(SdkResponse):
         状态
 
         :param status: The status of this ListInstancesResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 

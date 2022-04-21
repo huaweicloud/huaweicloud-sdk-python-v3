@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IncConfigV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class IncConfigV2:
     }
 
     def __init__(self, parent_task_id=None, git_source_branch=None, git_target_branch=None, merge_id=None, event_type=None, action=None, title=None):
-        """IncConfigV2 - a model defined in huaweicloud sdk"""
+        """IncConfigV2
+
+        The model defined in huaweicloud sdk
+
+        :param parent_task_id: 需要关联的父任务ID，流水线创建或MR创建任务需要该参数
+        :type parent_task_id: str
+        :param git_source_branch: 增量检查代码源分支
+        :type git_source_branch: str
+        :param git_target_branch: 增量检查代码目标分支
+        :type git_target_branch: str
+        :param merge_id: MR唯一标示ID
+        :type merge_id: str
+        :param event_type: webhook触发事件类型,merge_request/push_request
+        :type event_type: str
+        :param action: webhook事件状态，open/close/update
+        :type action: str
+        :param title: MR标题
+        :type title: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class IncConfigV2:
         需要关联的父任务ID，流水线创建或MR创建任务需要该参数
 
         :param parent_task_id: The parent_task_id of this IncConfigV2.
-        :type: str
+        :type parent_task_id: str
         """
         self._parent_task_id = parent_task_id
 
@@ -110,7 +127,7 @@ class IncConfigV2:
         增量检查代码源分支
 
         :param git_source_branch: The git_source_branch of this IncConfigV2.
-        :type: str
+        :type git_source_branch: str
         """
         self._git_source_branch = git_source_branch
 
@@ -132,7 +149,7 @@ class IncConfigV2:
         增量检查代码目标分支
 
         :param git_target_branch: The git_target_branch of this IncConfigV2.
-        :type: str
+        :type git_target_branch: str
         """
         self._git_target_branch = git_target_branch
 
@@ -154,7 +171,7 @@ class IncConfigV2:
         MR唯一标示ID
 
         :param merge_id: The merge_id of this IncConfigV2.
-        :type: str
+        :type merge_id: str
         """
         self._merge_id = merge_id
 
@@ -176,7 +193,7 @@ class IncConfigV2:
         webhook触发事件类型,merge_request/push_request
 
         :param event_type: The event_type of this IncConfigV2.
-        :type: str
+        :type event_type: str
         """
         self._event_type = event_type
 
@@ -198,7 +215,7 @@ class IncConfigV2:
         webhook事件状态，open/close/update
 
         :param action: The action of this IncConfigV2.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -220,7 +237,7 @@ class IncConfigV2:
         MR标题
 
         :param title: The title of this IncConfigV2.
-        :type: str
+        :type title: str
         """
         self._title = title
 

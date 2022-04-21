@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateEndpointRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class CreateEndpointRequestBody:
     }
 
     def __init__(self, subnet_id=None, endpoint_service_id=None, vpc_id=None, enable_dns=None, tags=None, routetables=None, port_ip=None, whitelist=None, enable_whitelist=None):
-        """CreateEndpointRequestBody - a model defined in huaweicloud sdk"""
+        """CreateEndpointRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param subnet_id: 说明： 创建Interface类型Client必选。需要指定vpc_id对应VPC下已 创建的网络（network）的 ID，UUID格式。 详细内容请参考《虚拟私有云 API参考》中的“查询子 网”，详见响应消息中的 “id”字段。 创建连接Interface类型终端节 点服务的终端节点时，此参数 必选。 说明 ● VPC的子网网段不能与 198.19.128.0/17重叠 ● VPC路由表中自定义路由的目 的地址不能与 198.19.128.0/17重叠
+        :type subnet_id: str
+        :param endpoint_service_id: 终端节点服务的ID。 可以通过查询终端节点服务概 要获取要连接的终端节点服务 ID。
+        :type endpoint_service_id: str
+        :param vpc_id: 终端节点所在的VPC的ID。 详细内容请参考《虚拟私有云 API参考》中的“查询VPC”， 详见响应消息中的“id”字 段。
+        :type vpc_id: str
+        :param enable_dns: 是否创建域名。 ● true：创建域名 ● false：不创建域名 默认值为false。 说明 当创建连接gateway类型终端节点服务的终端节点时，“enable_dns”设置为true或者false，均不创建域名。
+        :type enable_dns: bool
+        :param tags: 标签列表，没有标签默认为空数组。
+        :type tags: list[:class:`huaweicloudsdkvpcep.v1.TagList`]
+        :param routetables: 路由表ID列表。详细内容请参考《虚拟私有云 API参考》中的“查询VPC路由”，详见响应消息中的“id”字段。 创建连接gateway类型终端节点服务的终节点时，此参数必选。 说明 不设置此参数时，选择默认路由表。
+        :type routetables: list[str]
+        :param port_ip: 访问所连接的终端节点服务的IP。 创建终端节点时，可以指定访问所连接的终端节点服务的IP，目前只支持IPv4类型 。 创建连接Interface类型终端节点服务的终端节点时，此参数必选。
+        :type port_ip: str
+        :param whitelist: 添加用于控制访问终端节点的白名单。 创建终端节点时，支持访问控制，使用此参数可以添加IPv4或CIDR，默认空列表。 仅当创建连接Interface类型终端节点服务的终端节点时，支持设置此参数。
+        :type whitelist: list[str]
+        :param enable_whitelist: 是否开启网络ACL隔离。
+        :type enable_whitelist: bool
+        """
         
         
 
@@ -96,7 +117,7 @@ class CreateEndpointRequestBody:
         说明： 创建Interface类型Client必选。需要指定vpc_id对应VPC下已 创建的网络（network）的 ID，UUID格式。 详细内容请参考《虚拟私有云 API参考》中的“查询子 网”，详见响应消息中的 “id”字段。 创建连接Interface类型终端节 点服务的终端节点时，此参数 必选。 说明 ● VPC的子网网段不能与 198.19.128.0/17重叠 ● VPC路由表中自定义路由的目 的地址不能与 198.19.128.0/17重叠
 
         :param subnet_id: The subnet_id of this CreateEndpointRequestBody.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -118,7 +139,7 @@ class CreateEndpointRequestBody:
         终端节点服务的ID。 可以通过查询终端节点服务概 要获取要连接的终端节点服务 ID。
 
         :param endpoint_service_id: The endpoint_service_id of this CreateEndpointRequestBody.
-        :type: str
+        :type endpoint_service_id: str
         """
         self._endpoint_service_id = endpoint_service_id
 
@@ -140,7 +161,7 @@ class CreateEndpointRequestBody:
         终端节点所在的VPC的ID。 详细内容请参考《虚拟私有云 API参考》中的“查询VPC”， 详见响应消息中的“id”字 段。
 
         :param vpc_id: The vpc_id of this CreateEndpointRequestBody.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -162,7 +183,7 @@ class CreateEndpointRequestBody:
         是否创建域名。 ● true：创建域名 ● false：不创建域名 默认值为false。 说明 当创建连接gateway类型终端节点服务的终端节点时，“enable_dns”设置为true或者false，均不创建域名。
 
         :param enable_dns: The enable_dns of this CreateEndpointRequestBody.
-        :type: bool
+        :type enable_dns: bool
         """
         self._enable_dns = enable_dns
 
@@ -173,7 +194,7 @@ class CreateEndpointRequestBody:
         标签列表，没有标签默认为空数组。
 
         :return: The tags of this CreateEndpointRequestBody.
-        :rtype: list[TagList]
+        :rtype: list[:class:`huaweicloudsdkvpcep.v1.TagList`]
         """
         return self._tags
 
@@ -184,7 +205,7 @@ class CreateEndpointRequestBody:
         标签列表，没有标签默认为空数组。
 
         :param tags: The tags of this CreateEndpointRequestBody.
-        :type: list[TagList]
+        :type tags: list[:class:`huaweicloudsdkvpcep.v1.TagList`]
         """
         self._tags = tags
 
@@ -206,7 +227,7 @@ class CreateEndpointRequestBody:
         路由表ID列表。详细内容请参考《虚拟私有云 API参考》中的“查询VPC路由”，详见响应消息中的“id”字段。 创建连接gateway类型终端节点服务的终节点时，此参数必选。 说明 不设置此参数时，选择默认路由表。
 
         :param routetables: The routetables of this CreateEndpointRequestBody.
-        :type: list[str]
+        :type routetables: list[str]
         """
         self._routetables = routetables
 
@@ -228,7 +249,7 @@ class CreateEndpointRequestBody:
         访问所连接的终端节点服务的IP。 创建终端节点时，可以指定访问所连接的终端节点服务的IP，目前只支持IPv4类型 。 创建连接Interface类型终端节点服务的终端节点时，此参数必选。
 
         :param port_ip: The port_ip of this CreateEndpointRequestBody.
-        :type: str
+        :type port_ip: str
         """
         self._port_ip = port_ip
 
@@ -250,7 +271,7 @@ class CreateEndpointRequestBody:
         添加用于控制访问终端节点的白名单。 创建终端节点时，支持访问控制，使用此参数可以添加IPv4或CIDR，默认空列表。 仅当创建连接Interface类型终端节点服务的终端节点时，支持设置此参数。
 
         :param whitelist: The whitelist of this CreateEndpointRequestBody.
-        :type: list[str]
+        :type whitelist: list[str]
         """
         self._whitelist = whitelist
 
@@ -272,7 +293,7 @@ class CreateEndpointRequestBody:
         是否开启网络ACL隔离。
 
         :param enable_whitelist: The enable_whitelist of this CreateEndpointRequestBody.
-        :type: bool
+        :type enable_whitelist: bool
         """
         self._enable_whitelist = enable_whitelist
 

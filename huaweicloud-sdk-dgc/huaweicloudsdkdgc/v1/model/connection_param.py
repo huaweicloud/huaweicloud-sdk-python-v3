@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ConnectionParam:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ConnectionParam:
     }
 
     def __init__(self, name=None, connection_type=None, params=None):
-        """ConnectionParam - a model defined in huaweicloud sdk"""
+        """ConnectionParam
+
+        The model defined in huaweicloud sdk
+
+        :param name: 
+        :type name: str
+        :param connection_type: 
+        :type connection_type: str
+        :param params: 
+        :type params: object
+        """
         
         
 
@@ -66,7 +75,7 @@ class ConnectionParam:
 
 
         :param name: The name of this ConnectionParam.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -86,7 +95,7 @@ class ConnectionParam:
 
 
         :param connection_type: The connection_type of this ConnectionParam.
-        :type: str
+        :type connection_type: str
         """
         self._connection_type = connection_type
 
@@ -106,7 +115,7 @@ class ConnectionParam:
 
 
         :param params: The params of this ConnectionParam.
-        :type: object
+        :type params: object
         """
         self._params = params
 

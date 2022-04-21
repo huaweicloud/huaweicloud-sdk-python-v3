@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDomainsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListDomainsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, domains=None):
-        """ListDomainsResponse - a model defined in huaweicloud sdk"""
+        """ListDomainsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 总条数。
+        :type total: int
+        :param domains: 域名信息
+        :type domains: list[:class:`huaweicloudsdkcdn.v1.Domains`]
+        """
         
         super(ListDomainsResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListDomainsResponse(SdkResponse):
         总条数。
 
         :param total: The total of this ListDomainsResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -74,7 +81,7 @@ class ListDomainsResponse(SdkResponse):
         域名信息
 
         :return: The domains of this ListDomainsResponse.
-        :rtype: list[Domains]
+        :rtype: list[:class:`huaweicloudsdkcdn.v1.Domains`]
         """
         return self._domains
 
@@ -85,7 +92,7 @@ class ListDomainsResponse(SdkResponse):
         域名信息
 
         :param domains: The domains of this ListDomainsResponse.
-        :type: list[Domains]
+        :type domains: list[:class:`huaweicloudsdkcdn.v1.Domains`]
         """
         self._domains = domains
 

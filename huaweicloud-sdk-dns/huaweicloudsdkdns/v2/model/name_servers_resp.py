@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NameServersResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class NameServersResp:
     }
 
     def __init__(self, type=None, region=None, ns_records=None):
-        """NameServersResp - a model defined in huaweicloud sdk"""
+        """NameServersResp
+
+        The model defined in huaweicloud sdk
+
+        :param type: 待查询名称服务器的类型。  取值范围: public, private。  如果为空，表示查询所有类型的名称服务器。 如果为public，表示查询公网的名称服务器。  如果为private，表示查询内网的名称服务器。
+        :type type: str
+        :param region: 待查询的region ID。  当查询公网的名称服务器时，此处不填。
+        :type region: str
+        :param ns_records: 
+        :type ns_records: list[:class:`huaweicloudsdkdns.v2.NsRecords`]
+        """
         
         
 
@@ -68,7 +77,7 @@ class NameServersResp:
         待查询名称服务器的类型。  取值范围: public, private。  如果为空，表示查询所有类型的名称服务器。 如果为public，表示查询公网的名称服务器。  如果为private，表示查询内网的名称服务器。
 
         :param type: The type of this NameServersResp.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -90,7 +99,7 @@ class NameServersResp:
         待查询的region ID。  当查询公网的名称服务器时，此处不填。
 
         :param region: The region of this NameServersResp.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -100,7 +109,7 @@ class NameServersResp:
 
 
         :return: The ns_records of this NameServersResp.
-        :rtype: list[NsRecords]
+        :rtype: list[:class:`huaweicloudsdkdns.v2.NsRecords`]
         """
         return self._ns_records
 
@@ -110,7 +119,7 @@ class NameServersResp:
 
 
         :param ns_records: The ns_records of this NameServersResp.
-        :type: list[NsRecords]
+        :type ns_records: list[:class:`huaweicloudsdkdns.v2.NsRecords`]
         """
         self._ns_records = ns_records
 

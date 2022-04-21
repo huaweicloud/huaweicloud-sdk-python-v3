@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowResourceGroupRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ShowResourceGroupRequest:
     }
 
     def __init__(self, group_id=None, status=None, namespace=None, dname=None, start=None, limit=None):
-        """ShowResourceGroupRequest - a model defined in huaweicloud sdk"""
+        """ShowResourceGroupRequest
+
+        The model defined in huaweicloud sdk
+
+        :param group_id: 资源分组ID。
+        :type group_id: str
+        :param status: 资源健康状态，值可为health、unhealth、no_alarm_rule；health表示健康，
+        :type status: str
+        :param namespace: 资源类型，即命名空间，如弹性云服务器的资源命名空间为：SYS.ECS；各服务命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
+        :type namespace: str
+        :param dname: 资源维度，如：弹性云服务器，则维度为instance_id，各资源的监控维度名称可查看：“[服务指标维度](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
+        :type dname: str
+        :param start: 分页起始值，类型为integer，默认值为0。
+        :type start: str
+        :param limit: 单次查询的条数限制，取值范围(0,100]，默认值为100， 用于限制结果数据条数。
+        :type limit: str
+        """
         
         
 
@@ -82,7 +97,7 @@ class ShowResourceGroupRequest:
         资源分组ID。
 
         :param group_id: The group_id of this ShowResourceGroupRequest.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -104,7 +119,7 @@ class ShowResourceGroupRequest:
         资源健康状态，值可为health、unhealth、no_alarm_rule；health表示健康，
 
         :param status: The status of this ShowResourceGroupRequest.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -126,7 +141,7 @@ class ShowResourceGroupRequest:
         资源类型，即命名空间，如弹性云服务器的资源命名空间为：SYS.ECS；各服务命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
         :param namespace: The namespace of this ShowResourceGroupRequest.
-        :type: str
+        :type namespace: str
         """
         self._namespace = namespace
 
@@ -148,7 +163,7 @@ class ShowResourceGroupRequest:
         资源维度，如：弹性云服务器，则维度为instance_id，各资源的监控维度名称可查看：“[服务指标维度](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
         :param dname: The dname of this ShowResourceGroupRequest.
-        :type: str
+        :type dname: str
         """
         self._dname = dname
 
@@ -170,7 +185,7 @@ class ShowResourceGroupRequest:
         分页起始值，类型为integer，默认值为0。
 
         :param start: The start of this ShowResourceGroupRequest.
-        :type: str
+        :type start: str
         """
         self._start = start
 
@@ -192,7 +207,7 @@ class ShowResourceGroupRequest:
         单次查询的条数限制，取值范围(0,100]，默认值为100， 用于限制结果数据条数。
 
         :param limit: The limit of this ShowResourceGroupRequest.
-        :type: str
+        :type limit: str
         """
         self._limit = limit
 

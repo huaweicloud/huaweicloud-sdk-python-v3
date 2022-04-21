@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunModerationAudioRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class RunModerationAudioRequestBody:
     }
 
     def __init__(self, data=None, url=None, config=None, categories=None):
-        """RunModerationAudioRequestBody - a model defined in huaweicloud sdk"""
+        """RunModerationAudioRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param data: 与url二选一  语音文件Base64编码字符串。要求base64编码后大小不超过4M。语音时长不超过1分钟。 
+        :type data: str
+        :param url: 与data二选一  语音的URL路径，目前支持对服务授权访问华为云上OBS的URL，华为云上OBS提供的临时授权访问的URL和匿名公开授权的URL。 OBS服务的访问权限设置请参见配置OBS访问权限。 出于安全的考虑，当前服务不支持从公网上任意URL读取数据。 
+        :type url: str
+        :param config: 
+        :type config: :class:`huaweicloudsdkmoderation.v2.RunModerationAudioRequestBodyConfig`
+        :param categories: 审核场景。 当前支持的场景有默认场景和用户自定义场景： ● 默认场景为：   – politics：涉政   – porn：涉黄   – ad：广告   – abuse：辱骂   – contraband：违禁品 ● 用户自定义场景为：自定义词库。 说明 自定义词库的创建和使用请参见配置自定义词库。 
+        :type categories: list[str]
+        """
         
         
 
@@ -72,7 +83,7 @@ class RunModerationAudioRequestBody:
         与url二选一  语音文件Base64编码字符串。要求base64编码后大小不超过4M。语音时长不超过1分钟。 
 
         :param data: The data of this RunModerationAudioRequestBody.
-        :type: str
+        :type data: str
         """
         self._data = data
 
@@ -94,7 +105,7 @@ class RunModerationAudioRequestBody:
         与data二选一  语音的URL路径，目前支持对服务授权访问华为云上OBS的URL，华为云上OBS提供的临时授权访问的URL和匿名公开授权的URL。 OBS服务的访问权限设置请参见配置OBS访问权限。 出于安全的考虑，当前服务不支持从公网上任意URL读取数据。 
 
         :param url: The url of this RunModerationAudioRequestBody.
-        :type: str
+        :type url: str
         """
         self._url = url
 
@@ -104,7 +115,7 @@ class RunModerationAudioRequestBody:
 
 
         :return: The config of this RunModerationAudioRequestBody.
-        :rtype: RunModerationAudioRequestBodyConfig
+        :rtype: :class:`huaweicloudsdkmoderation.v2.RunModerationAudioRequestBodyConfig`
         """
         return self._config
 
@@ -114,7 +125,7 @@ class RunModerationAudioRequestBody:
 
 
         :param config: The config of this RunModerationAudioRequestBody.
-        :type: RunModerationAudioRequestBodyConfig
+        :type config: :class:`huaweicloudsdkmoderation.v2.RunModerationAudioRequestBodyConfig`
         """
         self._config = config
 
@@ -136,7 +147,7 @@ class RunModerationAudioRequestBody:
         审核场景。 当前支持的场景有默认场景和用户自定义场景： ● 默认场景为：   – politics：涉政   – porn：涉黄   – ad：广告   – abuse：辱骂   – contraband：违禁品 ● 用户自定义场景为：自定义词库。 说明 自定义词库的创建和使用请参见配置自定义词库。 
 
         :param categories: The categories of this RunModerationAudioRequestBody.
-        :type: list[str]
+        :type categories: list[str]
         """
         self._categories = categories
 

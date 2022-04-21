@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NovaListServerSecurityGroupsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class NovaListServerSecurityGroupsResponse(SdkResponse):
     }
 
     def __init__(self, security_groups=None):
-        """NovaListServerSecurityGroupsResponse - a model defined in huaweicloud sdk"""
+        """NovaListServerSecurityGroupsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param security_groups: security_group列表
+        :type security_groups: list[:class:`huaweicloudsdkecs.v2.NovaSecurityGroup`]
+        """
         
         super(NovaListServerSecurityGroupsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class NovaListServerSecurityGroupsResponse(SdkResponse):
         security_group列表
 
         :return: The security_groups of this NovaListServerSecurityGroupsResponse.
-        :rtype: list[NovaSecurityGroup]
+        :rtype: list[:class:`huaweicloudsdkecs.v2.NovaSecurityGroup`]
         """
         return self._security_groups
 
@@ -58,7 +63,7 @@ class NovaListServerSecurityGroupsResponse(SdkResponse):
         security_group列表
 
         :param security_groups: The security_groups of this NovaListServerSecurityGroupsResponse.
-        :type: list[NovaSecurityGroup]
+        :type security_groups: list[:class:`huaweicloudsdkecs.v2.NovaSecurityGroup`]
         """
         self._security_groups = security_groups
 

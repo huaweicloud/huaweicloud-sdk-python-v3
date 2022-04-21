@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRecordSetsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListRecordSetsResponse(SdkResponse):
     }
 
     def __init__(self, links=None, recordsets=None, metadata=None):
-        """ListRecordSetsResponse - a model defined in huaweicloud sdk"""
+        """ListRecordSetsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param links: 
+        :type links: :class:`huaweicloudsdkdns.v2.PageLink`
+        :param recordsets: 
+        :type recordsets: list[:class:`huaweicloudsdkdns.v2.ListRecordSetsWithTags`]
+        :param metadata: 
+        :type metadata: :class:`huaweicloudsdkdns.v2.Metedata`
+        """
         
         super(ListRecordSetsResponse, self).__init__()
 
@@ -56,7 +65,7 @@ class ListRecordSetsResponse(SdkResponse):
 
 
         :return: The links of this ListRecordSetsResponse.
-        :rtype: PageLink
+        :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
         """
         return self._links
 
@@ -66,7 +75,7 @@ class ListRecordSetsResponse(SdkResponse):
 
 
         :param links: The links of this ListRecordSetsResponse.
-        :type: PageLink
+        :type links: :class:`huaweicloudsdkdns.v2.PageLink`
         """
         self._links = links
 
@@ -76,7 +85,7 @@ class ListRecordSetsResponse(SdkResponse):
 
 
         :return: The recordsets of this ListRecordSetsResponse.
-        :rtype: list[ListRecordSetsWithTags]
+        :rtype: list[:class:`huaweicloudsdkdns.v2.ListRecordSetsWithTags`]
         """
         return self._recordsets
 
@@ -86,7 +95,7 @@ class ListRecordSetsResponse(SdkResponse):
 
 
         :param recordsets: The recordsets of this ListRecordSetsResponse.
-        :type: list[ListRecordSetsWithTags]
+        :type recordsets: list[:class:`huaweicloudsdkdns.v2.ListRecordSetsWithTags`]
         """
         self._recordsets = recordsets
 
@@ -96,7 +105,7 @@ class ListRecordSetsResponse(SdkResponse):
 
 
         :return: The metadata of this ListRecordSetsResponse.
-        :rtype: Metedata
+        :rtype: :class:`huaweicloudsdkdns.v2.Metedata`
         """
         return self._metadata
 
@@ -106,7 +115,7 @@ class ListRecordSetsResponse(SdkResponse):
 
 
         :param metadata: The metadata of this ListRecordSetsResponse.
-        :type: Metedata
+        :type metadata: :class:`huaweicloudsdkdns.v2.Metedata`
         """
         self._metadata = metadata
 

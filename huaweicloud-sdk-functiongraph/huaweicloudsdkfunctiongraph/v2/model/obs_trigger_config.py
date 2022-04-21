@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OBSTriggerConfig:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class OBSTriggerConfig:
     }
 
     def __init__(self, bucket=None, events=None, prefix=None, suffix=None):
-        """OBSTriggerConfig - a model defined in huaweicloud sdk"""
+        """OBSTriggerConfig
+
+        The model defined in huaweicloud sdk
+
+        :param bucket: OBS桶名（trigger_type为OBS时配置）
+        :type bucket: str
+        :param events: OBS事件列表（trigger_type为OBS时配置）
+        :type events: list[str]
+        :param prefix: 对象名前缀（trigger_type为OBS时配置）
+        :type prefix: str
+        :param suffix: 对象名后缀（trigger_type为OBS时配置）
+        :type suffix: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class OBSTriggerConfig:
         OBS桶名（trigger_type为OBS时配置）
 
         :param bucket: The bucket of this OBSTriggerConfig.
-        :type: str
+        :type bucket: str
         """
         self._bucket = bucket
 
@@ -95,7 +106,7 @@ class OBSTriggerConfig:
         OBS事件列表（trigger_type为OBS时配置）
 
         :param events: The events of this OBSTriggerConfig.
-        :type: list[str]
+        :type events: list[str]
         """
         self._events = events
 
@@ -117,7 +128,7 @@ class OBSTriggerConfig:
         对象名前缀（trigger_type为OBS时配置）
 
         :param prefix: The prefix of this OBSTriggerConfig.
-        :type: str
+        :type prefix: str
         """
         self._prefix = prefix
 
@@ -139,7 +150,7 @@ class OBSTriggerConfig:
         对象名后缀（trigger_type为OBS时配置）
 
         :param suffix: The suffix of this OBSTriggerConfig.
-        :type: str
+        :type suffix: str
         """
         self._suffix = suffix
 

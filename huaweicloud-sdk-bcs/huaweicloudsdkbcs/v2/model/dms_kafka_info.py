@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DmsKafkaInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class DmsKafkaInfo:
     }
 
     def __init__(self, addr=None, order_fade_enable=None, order_fade_cache=None):
-        """DmsKafkaInfo - a model defined in huaweicloud sdk"""
+        """DmsKafkaInfo
+
+        The model defined in huaweicloud sdk
+
+        :param addr: Kafka连接地址
+        :type addr: list[str]
+        :param order_fade_enable: Kafka模式下，是否开启共识节点老化
+        :type order_fade_enable: bool
+        :param order_fade_cache: Kafka模式下，开启共识节点后的老化阈值
+        :type order_fade_cache: int
+        """
         
         
 
@@ -68,7 +77,7 @@ class DmsKafkaInfo:
         Kafka连接地址
 
         :param addr: The addr of this DmsKafkaInfo.
-        :type: list[str]
+        :type addr: list[str]
         """
         self._addr = addr
 
@@ -90,7 +99,7 @@ class DmsKafkaInfo:
         Kafka模式下，是否开启共识节点老化
 
         :param order_fade_enable: The order_fade_enable of this DmsKafkaInfo.
-        :type: bool
+        :type order_fade_enable: bool
         """
         self._order_fade_enable = order_fade_enable
 
@@ -112,7 +121,7 @@ class DmsKafkaInfo:
         Kafka模式下，开启共识节点后的老化阈值
 
         :param order_fade_cache: The order_fade_cache of this DmsKafkaInfo.
-        :type: int
+        :type order_fade_cache: int
         """
         self._order_fade_cache = order_fade_cache
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StacksTags:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class StacksTags:
     }
 
     def __init__(self, stack_list=None, tags=None):
-        """StacksTags - a model defined in huaweicloud sdk"""
+        """StacksTags
+
+        The model defined in huaweicloud sdk
+
+        :param stack_list: 技术栈列表
+        :type stack_list: list[:class:`huaweicloudsdkcloudide.v2.StackInfo`]
+        :param tags: 技术栈tag集合
+        :type tags: list[str]
+        """
         
         
 
@@ -52,7 +59,7 @@ class StacksTags:
         技术栈列表
 
         :return: The stack_list of this StacksTags.
-        :rtype: list[StackInfo]
+        :rtype: list[:class:`huaweicloudsdkcloudide.v2.StackInfo`]
         """
         return self._stack_list
 
@@ -63,7 +70,7 @@ class StacksTags:
         技术栈列表
 
         :param stack_list: The stack_list of this StacksTags.
-        :type: list[StackInfo]
+        :type stack_list: list[:class:`huaweicloudsdkcloudide.v2.StackInfo`]
         """
         self._stack_list = stack_list
 
@@ -85,7 +92,7 @@ class StacksTags:
         技术栈tag集合
 
         :param tags: The tags of this StacksTags.
-        :type: list[str]
+        :type tags: list[str]
         """
         self._tags = tags
 

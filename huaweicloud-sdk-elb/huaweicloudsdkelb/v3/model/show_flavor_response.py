@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowFlavorResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowFlavorResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, flavor=None):
-        """ShowFlavorResponse - a model defined in huaweicloud sdk"""
+        """ShowFlavorResponse
+
+        The model defined in huaweicloud sdk
+
+        :param request_id: 请求ID。  注：自动生成 。
+        :type request_id: str
+        :param flavor: 
+        :type flavor: :class:`huaweicloudsdkelb.v3.Flavor`
+        """
         
         super(ShowFlavorResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ShowFlavorResponse(SdkResponse):
         请求ID。  注：自动生成 。
 
         :param request_id: The request_id of this ShowFlavorResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 
@@ -73,7 +80,7 @@ class ShowFlavorResponse(SdkResponse):
 
 
         :return: The flavor of this ShowFlavorResponse.
-        :rtype: Flavor
+        :rtype: :class:`huaweicloudsdkelb.v3.Flavor`
         """
         return self._flavor
 
@@ -83,7 +90,7 @@ class ShowFlavorResponse(SdkResponse):
 
 
         :param flavor: The flavor of this ShowFlavorResponse.
-        :type: Flavor
+        :type flavor: :class:`huaweicloudsdkelb.v3.Flavor`
         """
         self._flavor = flavor
 

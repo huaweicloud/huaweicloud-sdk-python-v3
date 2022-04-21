@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateCloudConnectionRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateCloudConnectionRequest:
     }
 
     def __init__(self, body=None):
-        """CreateCloudConnectionRequest - a model defined in huaweicloud sdk"""
+        """CreateCloudConnectionRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateCloudConnectionRequest
+        :type body: :class:`huaweicloudsdkcc.v3.CreateCloudConnectionRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateCloudConnectionRequest:
 
 
         :return: The body of this CreateCloudConnectionRequest.
-        :rtype: CreateCloudConnectionRequestBody
+        :rtype: :class:`huaweicloudsdkcc.v3.CreateCloudConnectionRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateCloudConnectionRequest:
 
 
         :param body: The body of this CreateCloudConnectionRequest.
-        :type: CreateCloudConnectionRequestBody
+        :type body: :class:`huaweicloudsdkcc.v3.CreateCloudConnectionRequestBody`
         """
         self._body = body
 

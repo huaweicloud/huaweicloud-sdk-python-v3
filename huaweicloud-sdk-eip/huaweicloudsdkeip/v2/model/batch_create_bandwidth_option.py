@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchCreateBandwidthOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class BatchCreateBandwidthOption:
     }
 
     def __init__(self, count=None, name=None, size=None, public_border_group=None):
-        """BatchCreateBandwidthOption - a model defined in huaweicloud sdk"""
+        """BatchCreateBandwidthOption
+
+        The model defined in huaweicloud sdk
+
+        :param count: 取值范围：正整数  功能说明：批创的共享带宽的个数  说明： 如果传入的参数为小数（如 2.2）或者字符类型（如“2”），会自动强制转换为整数。
+        :type count: int
+        :param name: 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）  功能说明：带宽名称
+        :type name: str
+        :param size: 功能说明：带宽大小。共享带宽的大小有最小值限制，默认为2M，可能因局点不同而不同。  取值范围：默认5Mbit/s~2000Mbit/s（具体范围以各区域配置为准，请参见控制台对应页面显示）。  注意：调整带宽时的最小单位会根据带宽范围不同存在差异。  小于等于300Mbit/s：默认最小单位为1Mbit/s。  300Mbit/s~1000Mbit/s：默认最小单位为50Mbit/s。  大于1000Mbit/s：默认最小单位为500Mbit/s。
+        :type size: int
+        :param public_border_group: 功能说明：表示中心站点资源或者边缘站点资源 取值范围： center、边缘站点名称 约束：共享带宽只能插入与该字段相同的publicip
+        :type public_border_group: str
+        """
         
         
 
@@ -70,7 +81,7 @@ class BatchCreateBandwidthOption:
         取值范围：正整数  功能说明：批创的共享带宽的个数  说明： 如果传入的参数为小数（如 2.2）或者字符类型（如“2”），会自动强制转换为整数。
 
         :param count: The count of this BatchCreateBandwidthOption.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -92,7 +103,7 @@ class BatchCreateBandwidthOption:
         取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）  功能说明：带宽名称
 
         :param name: The name of this BatchCreateBandwidthOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -114,7 +125,7 @@ class BatchCreateBandwidthOption:
         功能说明：带宽大小。共享带宽的大小有最小值限制，默认为2M，可能因局点不同而不同。  取值范围：默认5Mbit/s~2000Mbit/s（具体范围以各区域配置为准，请参见控制台对应页面显示）。  注意：调整带宽时的最小单位会根据带宽范围不同存在差异。  小于等于300Mbit/s：默认最小单位为1Mbit/s。  300Mbit/s~1000Mbit/s：默认最小单位为50Mbit/s。  大于1000Mbit/s：默认最小单位为500Mbit/s。
 
         :param size: The size of this BatchCreateBandwidthOption.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -136,7 +147,7 @@ class BatchCreateBandwidthOption:
         功能说明：表示中心站点资源或者边缘站点资源 取值范围： center、边缘站点名称 约束：共享带宽只能插入与该字段相同的publicip
 
         :param public_border_group: The public_border_group of this BatchCreateBandwidthOption.
-        :type: str
+        :type public_border_group: str
         """
         self._public_border_group = public_border_group
 

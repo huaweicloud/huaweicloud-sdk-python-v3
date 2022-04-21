@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateDestinationRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class CreateDestinationRequestBody:
     }
 
     def __init__(self, destination_type=None, app_id=None, destination_name=None, topic=None, server=None, token=None, tag=None, mqs_sasl_ssl=None, user_name=None, password=None):
-        """CreateDestinationRequestBody - a model defined in huaweicloud sdk"""
+        """CreateDestinationRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param destination_type: 操作类型，枚举值:0-目标端为本ROMA实例内MQS，； 7-目标端为设备
+        :type destination_type: int
+        :param app_id: 应用ID，目标端为0时需明确对方的APP_ID
+        :type app_id: str
+        :param destination_name: 目标数据源名称
+        :type destination_name: str
+        :param topic: 目标数据源主题，从MQS服务中获取已有topic
+        :type topic: str
+        :param server: 目标端数据源服务，连接地址
+        :type server: str
+        :param token: 目标端数据源token
+        :type token: str
+        :param tag: 目标数据源标签
+        :type tag: str
+        :param mqs_sasl_ssl: 目标端数据源MQS的SASL字段是否需要支持SSL加密
+        :type mqs_sasl_ssl: bool
+        :param user_name: 目标数据源用户名
+        :type user_name: str
+        :param password: 目标数据源密码
+        :type password: str
+        """
         
         
 
@@ -101,7 +124,7 @@ class CreateDestinationRequestBody:
         操作类型，枚举值:0-目标端为本ROMA实例内MQS，； 7-目标端为设备
 
         :param destination_type: The destination_type of this CreateDestinationRequestBody.
-        :type: int
+        :type destination_type: int
         """
         self._destination_type = destination_type
 
@@ -123,7 +146,7 @@ class CreateDestinationRequestBody:
         应用ID，目标端为0时需明确对方的APP_ID
 
         :param app_id: The app_id of this CreateDestinationRequestBody.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -145,7 +168,7 @@ class CreateDestinationRequestBody:
         目标数据源名称
 
         :param destination_name: The destination_name of this CreateDestinationRequestBody.
-        :type: str
+        :type destination_name: str
         """
         self._destination_name = destination_name
 
@@ -167,7 +190,7 @@ class CreateDestinationRequestBody:
         目标数据源主题，从MQS服务中获取已有topic
 
         :param topic: The topic of this CreateDestinationRequestBody.
-        :type: str
+        :type topic: str
         """
         self._topic = topic
 
@@ -189,7 +212,7 @@ class CreateDestinationRequestBody:
         目标端数据源服务，连接地址
 
         :param server: The server of this CreateDestinationRequestBody.
-        :type: str
+        :type server: str
         """
         self._server = server
 
@@ -211,7 +234,7 @@ class CreateDestinationRequestBody:
         目标端数据源token
 
         :param token: The token of this CreateDestinationRequestBody.
-        :type: str
+        :type token: str
         """
         self._token = token
 
@@ -233,7 +256,7 @@ class CreateDestinationRequestBody:
         目标数据源标签
 
         :param tag: The tag of this CreateDestinationRequestBody.
-        :type: str
+        :type tag: str
         """
         self._tag = tag
 
@@ -255,7 +278,7 @@ class CreateDestinationRequestBody:
         目标端数据源MQS的SASL字段是否需要支持SSL加密
 
         :param mqs_sasl_ssl: The mqs_sasl_ssl of this CreateDestinationRequestBody.
-        :type: bool
+        :type mqs_sasl_ssl: bool
         """
         self._mqs_sasl_ssl = mqs_sasl_ssl
 
@@ -277,7 +300,7 @@ class CreateDestinationRequestBody:
         目标数据源用户名
 
         :param user_name: The user_name of this CreateDestinationRequestBody.
-        :type: str
+        :type user_name: str
         """
         self._user_name = user_name
 
@@ -299,7 +322,7 @@ class CreateDestinationRequestBody:
         目标数据源密码
 
         :param password: The password of this CreateDestinationRequestBody.
-        :type: str
+        :type password: str
         """
         self._password = password
 

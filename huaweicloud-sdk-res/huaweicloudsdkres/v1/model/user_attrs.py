@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UserAttrs:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UserAttrs:
     }
 
     def __init__(self, data_type=None, name=None):
-        """UserAttrs - a model defined in huaweicloud sdk"""
+        """UserAttrs
+
+        The model defined in huaweicloud sdk
+
+        :param data_type: 数据类型。
+        :type data_type: str
+        :param name: 用户名称。
+        :type name: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class UserAttrs:
         数据类型。
 
         :param data_type: The data_type of this UserAttrs.
-        :type: str
+        :type data_type: str
         """
         self._data_type = data_type
 
@@ -85,7 +92,7 @@ class UserAttrs:
         用户名称。
 
         :param name: The name of this UserAttrs.
-        :type: str
+        :type name: str
         """
         self._name = name
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchImportConfigRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class BatchImportConfigRequestBody:
     }
 
     def __init__(self, id=None, name=None, value=None, description=None):
-        """BatchImportConfigRequestBody - a model defined in huaweicloud sdk"""
+        """BatchImportConfigRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param id: 配置项ID
+        :type id: str
+        :param name: 配置项名称
+        :type name: str
+        :param value: 配置项详情，长度2MB以内
+        :type value: str
+        :param description: 配置项描述
+        :type description: str
+        """
         
         
 
@@ -70,7 +81,7 @@ class BatchImportConfigRequestBody:
         配置项ID
 
         :param id: The id of this BatchImportConfigRequestBody.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -92,7 +103,7 @@ class BatchImportConfigRequestBody:
         配置项名称
 
         :param name: The name of this BatchImportConfigRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -114,7 +125,7 @@ class BatchImportConfigRequestBody:
         配置项详情，长度2MB以内
 
         :param value: The value of this BatchImportConfigRequestBody.
-        :type: str
+        :type value: str
         """
         self._value = value
 
@@ -136,7 +147,7 @@ class BatchImportConfigRequestBody:
         配置项描述
 
         :param description: The description of this BatchImportConfigRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 

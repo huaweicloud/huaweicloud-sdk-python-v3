@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateMemberReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateMemberReq:
     }
 
     def __init__(self, name=None, admin_state_up=None, weight=None):
-        """UpdateMemberReq - a model defined in huaweicloud sdk"""
+        """UpdateMemberReq
+
+        The model defined in huaweicloud sdk
+
+        :param name: 后端云服务器名称。
+        :type name: str
+        :param admin_state_up: 后端云服务器的管理状态；该字段虽然支持创建、更新，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。该字段虽然支持创建、更新，但实际取值决定于member对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
+        :type admin_state_up: bool
+        :param weight: 后端云服务器的权重，请求按权重在同一后端云服务器组下的后端云服务器间分发。权重为0的后端不再接受新的请求。当后端云服务器所在的后端云服务器组的lb_algorithm的取值为SOURCE_IP时，该字段无效。
+        :type weight: int
+        """
         
         
 
@@ -68,7 +77,7 @@ class UpdateMemberReq:
         后端云服务器名称。
 
         :param name: The name of this UpdateMemberReq.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -90,7 +99,7 @@ class UpdateMemberReq:
         后端云服务器的管理状态；该字段虽然支持创建、更新，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。该字段虽然支持创建、更新，但实际取值决定于member对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
 
         :param admin_state_up: The admin_state_up of this UpdateMemberReq.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 
@@ -112,7 +121,7 @@ class UpdateMemberReq:
         后端云服务器的权重，请求按权重在同一后端云服务器组下的后端云服务器间分发。权重为0的后端不再接受新的请求。当后端云服务器所在的后端云服务器组的lb_algorithm的取值为SOURCE_IP时，该字段无效。
 
         :param weight: The weight of this UpdateMemberReq.
-        :type: int
+        :type weight: int
         """
         self._weight = weight
 

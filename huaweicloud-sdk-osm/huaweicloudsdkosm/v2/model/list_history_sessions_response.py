@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListHistorySessionsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListHistorySessionsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, session_list=None):
-        """ListHistorySessionsResponse - a model defined in huaweicloud sdk"""
+        """ListHistorySessionsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total_count: 总记录数
+        :type total_count: int
+        :param session_list: 会话列表
+        :type session_list: list[:class:`huaweicloudsdkosm.v2.OperateHistorySession`]
+        """
         
         super(ListHistorySessionsResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListHistorySessionsResponse(SdkResponse):
         总记录数
 
         :param total_count: The total_count of this ListHistorySessionsResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 
@@ -74,7 +81,7 @@ class ListHistorySessionsResponse(SdkResponse):
         会话列表
 
         :return: The session_list of this ListHistorySessionsResponse.
-        :rtype: list[OperateHistorySession]
+        :rtype: list[:class:`huaweicloudsdkosm.v2.OperateHistorySession`]
         """
         return self._session_list
 
@@ -85,7 +92,7 @@ class ListHistorySessionsResponse(SdkResponse):
         会话列表
 
         :param session_list: The session_list of this ListHistorySessionsResponse.
-        :type: list[OperateHistorySession]
+        :type session_list: list[:class:`huaweicloudsdkosm.v2.OperateHistorySession`]
         """
         self._session_list = session_list
 

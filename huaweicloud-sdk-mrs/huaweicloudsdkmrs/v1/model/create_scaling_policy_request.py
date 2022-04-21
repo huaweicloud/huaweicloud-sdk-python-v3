@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateScalingPolicyRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateScalingPolicyRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """CreateScalingPolicyRequest - a model defined in huaweicloud sdk"""
+        """CreateScalingPolicyRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 集群ID。获取方法，请参见[获取集群ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
+        :type cluster_id: str
+        :param body: Body of the CreateScalingPolicyRequest
+        :type body: :class:`huaweicloudsdkmrs.v1.AutoScalingPolicyReqV11`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateScalingPolicyRequest:
         集群ID。获取方法，请参见[获取集群ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
 
         :param cluster_id: The cluster_id of this CreateScalingPolicyRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -72,7 +79,7 @@ class CreateScalingPolicyRequest:
 
 
         :return: The body of this CreateScalingPolicyRequest.
-        :rtype: AutoScalingPolicyReqV11
+        :rtype: :class:`huaweicloudsdkmrs.v1.AutoScalingPolicyReqV11`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CreateScalingPolicyRequest:
 
 
         :param body: The body of this CreateScalingPolicyRequest.
-        :type: AutoScalingPolicyReqV11
+        :type body: :class:`huaweicloudsdkmrs.v1.AutoScalingPolicyReqV11`
         """
         self._body = body
 

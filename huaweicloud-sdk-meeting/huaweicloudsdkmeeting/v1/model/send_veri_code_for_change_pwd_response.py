@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SendVeriCodeForChangePwdResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class SendVeriCodeForChangePwdResponse(SdkResponse):
     }
 
     def __init__(self, expire=None, bind_phone=None, bind_email=None):
-        """SendVeriCodeForChangePwdResponse - a model defined in huaweicloud sdk"""
+        """SendVeriCodeForChangePwdResponse
+
+        The model defined in huaweicloud sdk
+
+        :param expire: 过期时间，单位：秒。
+        :type expire: int
+        :param bind_phone: 如果通过手机发送验证码，则该字段携带该用户绑定的手机号（手机号经过处理，屏蔽中间几位，如+8618****12345）
+        :type bind_phone: str
+        :param bind_email: 如果通过邮箱发送验证码，则该字段携带用户绑定的邮箱账号（邮箱账号经过处理，屏蔽中间几位，如tes****ount@huawei.com）
+        :type bind_email: str
+        """
         
         super(SendVeriCodeForChangePwdResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class SendVeriCodeForChangePwdResponse(SdkResponse):
         过期时间，单位：秒。
 
         :param expire: The expire of this SendVeriCodeForChangePwdResponse.
-        :type: int
+        :type expire: int
         """
         self._expire = expire
 
@@ -90,7 +99,7 @@ class SendVeriCodeForChangePwdResponse(SdkResponse):
         如果通过手机发送验证码，则该字段携带该用户绑定的手机号（手机号经过处理，屏蔽中间几位，如+8618****12345）
 
         :param bind_phone: The bind_phone of this SendVeriCodeForChangePwdResponse.
-        :type: str
+        :type bind_phone: str
         """
         self._bind_phone = bind_phone
 
@@ -112,7 +121,7 @@ class SendVeriCodeForChangePwdResponse(SdkResponse):
         如果通过邮箱发送验证码，则该字段携带用户绑定的邮箱账号（邮箱账号经过处理，屏蔽中间几位，如tes****ount@huawei.com）
 
         :param bind_email: The bind_email of this SendVeriCodeForChangePwdResponse.
-        :type: str
+        :type bind_email: str
         """
         self._bind_email = bind_email
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryPreCheckResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class QueryPreCheckResp:
     }
 
     def __init__(self, precheck_id=None, result=None, process=None, total_passed_rate=None, rds_instance_id=None, job_direction=None, precheck_result=None, error_msg=None, error_code=None):
-        """QueryPreCheckResp - a model defined in huaweicloud sdk"""
+        """QueryPreCheckResp
+
+        The model defined in huaweicloud sdk
+
+        :param precheck_id: 预检查id。
+        :type precheck_id: str
+        :param result: 返回的预检查结果是否通过。true表示预检查通过，通过后才可进行启动任务。
+        :type result: bool
+        :param process: 预检查进度百分比。
+        :type process: str
+        :param total_passed_rate: 预检查通过百分比。
+        :type total_passed_rate: str
+        :param rds_instance_id: RDS实例id。
+        :type rds_instance_id: str
+        :param job_direction: 迁移方向
+        :type job_direction: str
+        :param precheck_result: 预检查各项结果。
+        :type precheck_result: list[:class:`huaweicloudsdkdrs.v3.PrecheckResult`]
+        :param error_msg: 错误信息
+        :type error_msg: str
+        :param error_code: 任务错误码。
+        :type error_code: str
+        """
         
         
 
@@ -98,7 +119,7 @@ class QueryPreCheckResp:
         预检查id。
 
         :param precheck_id: The precheck_id of this QueryPreCheckResp.
-        :type: str
+        :type precheck_id: str
         """
         self._precheck_id = precheck_id
 
@@ -120,7 +141,7 @@ class QueryPreCheckResp:
         返回的预检查结果是否通过。true表示预检查通过，通过后才可进行启动任务。
 
         :param result: The result of this QueryPreCheckResp.
-        :type: bool
+        :type result: bool
         """
         self._result = result
 
@@ -142,7 +163,7 @@ class QueryPreCheckResp:
         预检查进度百分比。
 
         :param process: The process of this QueryPreCheckResp.
-        :type: str
+        :type process: str
         """
         self._process = process
 
@@ -164,7 +185,7 @@ class QueryPreCheckResp:
         预检查通过百分比。
 
         :param total_passed_rate: The total_passed_rate of this QueryPreCheckResp.
-        :type: str
+        :type total_passed_rate: str
         """
         self._total_passed_rate = total_passed_rate
 
@@ -186,7 +207,7 @@ class QueryPreCheckResp:
         RDS实例id。
 
         :param rds_instance_id: The rds_instance_id of this QueryPreCheckResp.
-        :type: str
+        :type rds_instance_id: str
         """
         self._rds_instance_id = rds_instance_id
 
@@ -208,7 +229,7 @@ class QueryPreCheckResp:
         迁移方向
 
         :param job_direction: The job_direction of this QueryPreCheckResp.
-        :type: str
+        :type job_direction: str
         """
         self._job_direction = job_direction
 
@@ -219,7 +240,7 @@ class QueryPreCheckResp:
         预检查各项结果。
 
         :return: The precheck_result of this QueryPreCheckResp.
-        :rtype: list[PrecheckResult]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.PrecheckResult`]
         """
         return self._precheck_result
 
@@ -230,7 +251,7 @@ class QueryPreCheckResp:
         预检查各项结果。
 
         :param precheck_result: The precheck_result of this QueryPreCheckResp.
-        :type: list[PrecheckResult]
+        :type precheck_result: list[:class:`huaweicloudsdkdrs.v3.PrecheckResult`]
         """
         self._precheck_result = precheck_result
 
@@ -252,7 +273,7 @@ class QueryPreCheckResp:
         错误信息
 
         :param error_msg: The error_msg of this QueryPreCheckResp.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 
@@ -274,7 +295,7 @@ class QueryPreCheckResp:
         任务错误码。
 
         :param error_code: The error_code of this QueryPreCheckResp.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 

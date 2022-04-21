@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LoginToken:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class LoginToken:
     }
 
     def __init__(self, domain_id=None, expires_at=None, method=None, user_id=None, user_name=None, session_id=None, session_user_id=None, session_name=None, assumed_by=None):
-        """LoginToken - a model defined in huaweicloud sdk"""
+        """LoginToken
+
+        The model defined in huaweicloud sdk
+
+        :param domain_id: 账号ID。
+        :type domain_id: str
+        :param expires_at: logintoken的过期时间，默认10min。
+        :type expires_at: str
+        :param method: 认证方法。当认证用户为华为云用户时，该字段内容为“token”，当认证用户为自定义代理用户时，该字段内容为“federation_proxy”。
+        :type method: str
+        :param user_id: 用户ID。
+        :type user_id: str
+        :param user_name: 用户名。
+        :type user_name: str
+        :param session_id: 会话ID。
+        :type session_id: str
+        :param session_user_id: 自定义代理用户ID。
+        :type session_user_id: str
+        :param session_name: 自定义代理用户名。 &gt; - [通过委托获取临时访问密钥和securitytoken](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product&#x3D;IAM&amp;api&#x3D;CreateTemporaryAccessKeyByAgency)且请求体中填写session_user.name参数时，会返回该字段。该字段的值即为session_user.name所填写的值。
+        :type session_name: str
+        :param assumed_by: 
+        :type assumed_by: :class:`huaweicloudsdkiam.v3.LoginTokenAssumedBy`
+        """
         
         
 
@@ -92,7 +113,7 @@ class LoginToken:
         账号ID。
 
         :param domain_id: The domain_id of this LoginToken.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -114,7 +135,7 @@ class LoginToken:
         logintoken的过期时间，默认10min。
 
         :param expires_at: The expires_at of this LoginToken.
-        :type: str
+        :type expires_at: str
         """
         self._expires_at = expires_at
 
@@ -136,7 +157,7 @@ class LoginToken:
         认证方法。当认证用户为华为云用户时，该字段内容为“token”，当认证用户为自定义代理用户时，该字段内容为“federation_proxy”。
 
         :param method: The method of this LoginToken.
-        :type: str
+        :type method: str
         """
         self._method = method
 
@@ -158,7 +179,7 @@ class LoginToken:
         用户ID。
 
         :param user_id: The user_id of this LoginToken.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -180,7 +201,7 @@ class LoginToken:
         用户名。
 
         :param user_name: The user_name of this LoginToken.
-        :type: str
+        :type user_name: str
         """
         self._user_name = user_name
 
@@ -202,7 +223,7 @@ class LoginToken:
         会话ID。
 
         :param session_id: The session_id of this LoginToken.
-        :type: str
+        :type session_id: str
         """
         self._session_id = session_id
 
@@ -224,7 +245,7 @@ class LoginToken:
         自定义代理用户ID。
 
         :param session_user_id: The session_user_id of this LoginToken.
-        :type: str
+        :type session_user_id: str
         """
         self._session_user_id = session_user_id
 
@@ -246,7 +267,7 @@ class LoginToken:
         自定义代理用户名。 > - [通过委托获取临时访问密钥和securitytoken](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=IAM&api=CreateTemporaryAccessKeyByAgency)且请求体中填写session_user.name参数时，会返回该字段。该字段的值即为session_user.name所填写的值。
 
         :param session_name: The session_name of this LoginToken.
-        :type: str
+        :type session_name: str
         """
         self._session_name = session_name
 
@@ -256,7 +277,7 @@ class LoginToken:
 
 
         :return: The assumed_by of this LoginToken.
-        :rtype: LoginTokenAssumedBy
+        :rtype: :class:`huaweicloudsdkiam.v3.LoginTokenAssumedBy`
         """
         return self._assumed_by
 
@@ -266,7 +287,7 @@ class LoginToken:
 
 
         :param assumed_by: The assumed_by of this LoginToken.
-        :type: LoginTokenAssumedBy
+        :type assumed_by: :class:`huaweicloudsdkiam.v3.LoginTokenAssumedBy`
         """
         self._assumed_by = assumed_by
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class WebHookConfigRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class WebHookConfigRequest:
     }
 
     def __init__(self, corp_id=None, sp_id=None, subscriber_id=None, subscriber_key=None, url=None):
-        """WebHookConfigRequest - a model defined in huaweicloud sdk"""
+        """WebHookConfigRequest
+
+        The model defined in huaweicloud sdk
+
+        :param corp_id: 企业ID，与spId二者必填一个
+        :type corp_id: str
+        :param sp_id: sp管理员ID，与corpId二者必填一个
+        :type sp_id: str
+        :param subscriber_id: 订阅者ID
+        :type subscriber_id: str
+        :param subscriber_key: 订阅者秘钥
+        :type subscriber_key: str
+        :param url: 订阅url，建议使用HTTPS
+        :type url: str
+        """
         
         
 
@@ -75,7 +88,7 @@ class WebHookConfigRequest:
         企业ID，与spId二者必填一个
 
         :param corp_id: The corp_id of this WebHookConfigRequest.
-        :type: str
+        :type corp_id: str
         """
         self._corp_id = corp_id
 
@@ -97,7 +110,7 @@ class WebHookConfigRequest:
         sp管理员ID，与corpId二者必填一个
 
         :param sp_id: The sp_id of this WebHookConfigRequest.
-        :type: str
+        :type sp_id: str
         """
         self._sp_id = sp_id
 
@@ -119,7 +132,7 @@ class WebHookConfigRequest:
         订阅者ID
 
         :param subscriber_id: The subscriber_id of this WebHookConfigRequest.
-        :type: str
+        :type subscriber_id: str
         """
         self._subscriber_id = subscriber_id
 
@@ -141,7 +154,7 @@ class WebHookConfigRequest:
         订阅者秘钥
 
         :param subscriber_key: The subscriber_key of this WebHookConfigRequest.
-        :type: str
+        :type subscriber_key: str
         """
         self._subscriber_key = subscriber_key
 
@@ -163,7 +176,7 @@ class WebHookConfigRequest:
         订阅url，建议使用HTTPS
 
         :param url: The url of this WebHookConfigRequest.
-        :type: str
+        :type url: str
         """
         self._url = url
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MultiPicDisplayDO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class MultiPicDisplayDO:
     }
 
     def __init__(self, manual_set=None, image_type=None, subscriber_in_pics=None, switch_time=None, pic_layout_info=None):
-        """MultiPicDisplayDO - a model defined in huaweicloud sdk"""
+        """MultiPicDisplayDO
+
+        The model defined in huaweicloud sdk
+
+        :param manual_set: 是否为手工设置多画面 0： 系统自动多画面 1： 手工设置多画面
+        :type manual_set: int
+        :param image_type: 画面类型
+        :type image_type: str
+        :param subscriber_in_pics: 子画面列表
+        :type subscriber_in_pics: list[:class:`huaweicloudsdkmeeting.v1.PicInfoNotify`]
+        :param switch_time: 表示轮询间隔，单位：秒。当同一个子画面中包含有多个视频源时，此参数有效
+        :type switch_time: str
+        :param pic_layout_info: 
+        :type pic_layout_info: :class:`huaweicloudsdkmeeting.v1.PicLayoutInfo`
+        """
         
         
 
@@ -78,7 +91,7 @@ class MultiPicDisplayDO:
         是否为手工设置多画面 0： 系统自动多画面 1： 手工设置多画面
 
         :param manual_set: The manual_set of this MultiPicDisplayDO.
-        :type: int
+        :type manual_set: int
         """
         self._manual_set = manual_set
 
@@ -100,7 +113,7 @@ class MultiPicDisplayDO:
         画面类型
 
         :param image_type: The image_type of this MultiPicDisplayDO.
-        :type: str
+        :type image_type: str
         """
         self._image_type = image_type
 
@@ -111,7 +124,7 @@ class MultiPicDisplayDO:
         子画面列表
 
         :return: The subscriber_in_pics of this MultiPicDisplayDO.
-        :rtype: list[PicInfoNotify]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.PicInfoNotify`]
         """
         return self._subscriber_in_pics
 
@@ -122,7 +135,7 @@ class MultiPicDisplayDO:
         子画面列表
 
         :param subscriber_in_pics: The subscriber_in_pics of this MultiPicDisplayDO.
-        :type: list[PicInfoNotify]
+        :type subscriber_in_pics: list[:class:`huaweicloudsdkmeeting.v1.PicInfoNotify`]
         """
         self._subscriber_in_pics = subscriber_in_pics
 
@@ -144,7 +157,7 @@ class MultiPicDisplayDO:
         表示轮询间隔，单位：秒。当同一个子画面中包含有多个视频源时，此参数有效
 
         :param switch_time: The switch_time of this MultiPicDisplayDO.
-        :type: str
+        :type switch_time: str
         """
         self._switch_time = switch_time
 
@@ -154,7 +167,7 @@ class MultiPicDisplayDO:
 
 
         :return: The pic_layout_info of this MultiPicDisplayDO.
-        :rtype: PicLayoutInfo
+        :rtype: :class:`huaweicloudsdkmeeting.v1.PicLayoutInfo`
         """
         return self._pic_layout_info
 
@@ -164,7 +177,7 @@ class MultiPicDisplayDO:
 
 
         :param pic_layout_info: The pic_layout_info of this MultiPicDisplayDO.
-        :type: PicLayoutInfo
+        :type pic_layout_info: :class:`huaweicloudsdkmeeting.v1.PicLayoutInfo`
         """
         self._pic_layout_info = pic_layout_info
 

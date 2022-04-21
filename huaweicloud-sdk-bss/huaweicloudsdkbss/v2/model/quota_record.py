@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QuotaRecord:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class QuotaRecord:
     }
 
     def __init__(self, id=None, operator=None, operation_type=None, quota_id=None, parent_quota_id=None, amount=None, operation_time=None, result=None, indirect_partner_account_name=None, indirect_partner_id=None, indirect_partner_name=None, remark=None):
-        """QuotaRecord - a model defined in huaweicloud sdk"""
+        """QuotaRecord
+
+        The model defined in huaweicloud sdk
+
+        :param id: 记录ID。
+        :type id: str
+        :param operator: 操作员的账号名称。
+        :type operator: str
+        :param operation_type: 操作类型。 10：发放额度11：回收额度
+        :type operation_type: str
+        :param quota_id: 精英服务商的代金券额度ID。 即华为云伙伴能力中心给精英服务商发放代金券额度时，产生的精英服务商的代金券额度ID，或者从精英服务商回收代金券额度时，精英服务商的代金券额度ID。
+        :type quota_id: str
+        :param parent_quota_id: 父额度ID。 这即华为云伙伴能力中心给精英服务商发放代金券额度时，华为云伙伴能力中心的额度ID，或者从精英服务商回收代金券额度时，回收的华为云伙伴能力中心的额度ID。
+        :type parent_quota_id: str
+        :param amount: 发放回收的金额。 取值大于0且精确到小数点后2位，单位：元。
+        :type amount: float
+        :param operation_time: 操作时间，UTC时间，UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。
+        :type operation_time: str
+        :param result: 操作结果。 0：成功-1：失败
+        :type result: str
+        :param indirect_partner_account_name: 精英服务商的账号名。
+        :type indirect_partner_account_name: str
+        :param indirect_partner_id: 精英服务商ID。
+        :type indirect_partner_id: str
+        :param indirect_partner_name: 精英服务商的公司名称。
+        :type indirect_partner_name: str
+        :param remark: 备注。
+        :type remark: str
+        """
         
         
 
@@ -113,7 +140,7 @@ class QuotaRecord:
         记录ID。
 
         :param id: The id of this QuotaRecord.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -135,7 +162,7 @@ class QuotaRecord:
         操作员的账号名称。
 
         :param operator: The operator of this QuotaRecord.
-        :type: str
+        :type operator: str
         """
         self._operator = operator
 
@@ -157,7 +184,7 @@ class QuotaRecord:
         操作类型。 10：发放额度11：回收额度
 
         :param operation_type: The operation_type of this QuotaRecord.
-        :type: str
+        :type operation_type: str
         """
         self._operation_type = operation_type
 
@@ -179,7 +206,7 @@ class QuotaRecord:
         精英服务商的代金券额度ID。 即华为云伙伴能力中心给精英服务商发放代金券额度时，产生的精英服务商的代金券额度ID，或者从精英服务商回收代金券额度时，精英服务商的代金券额度ID。
 
         :param quota_id: The quota_id of this QuotaRecord.
-        :type: str
+        :type quota_id: str
         """
         self._quota_id = quota_id
 
@@ -201,7 +228,7 @@ class QuotaRecord:
         父额度ID。 这即华为云伙伴能力中心给精英服务商发放代金券额度时，华为云伙伴能力中心的额度ID，或者从精英服务商回收代金券额度时，回收的华为云伙伴能力中心的额度ID。
 
         :param parent_quota_id: The parent_quota_id of this QuotaRecord.
-        :type: str
+        :type parent_quota_id: str
         """
         self._parent_quota_id = parent_quota_id
 
@@ -223,7 +250,7 @@ class QuotaRecord:
         发放回收的金额。 取值大于0且精确到小数点后2位，单位：元。
 
         :param amount: The amount of this QuotaRecord.
-        :type: float
+        :type amount: float
         """
         self._amount = amount
 
@@ -245,7 +272,7 @@ class QuotaRecord:
         操作时间，UTC时间，UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。
 
         :param operation_time: The operation_time of this QuotaRecord.
-        :type: str
+        :type operation_time: str
         """
         self._operation_time = operation_time
 
@@ -267,7 +294,7 @@ class QuotaRecord:
         操作结果。 0：成功-1：失败
 
         :param result: The result of this QuotaRecord.
-        :type: str
+        :type result: str
         """
         self._result = result
 
@@ -289,7 +316,7 @@ class QuotaRecord:
         精英服务商的账号名。
 
         :param indirect_partner_account_name: The indirect_partner_account_name of this QuotaRecord.
-        :type: str
+        :type indirect_partner_account_name: str
         """
         self._indirect_partner_account_name = indirect_partner_account_name
 
@@ -311,7 +338,7 @@ class QuotaRecord:
         精英服务商ID。
 
         :param indirect_partner_id: The indirect_partner_id of this QuotaRecord.
-        :type: str
+        :type indirect_partner_id: str
         """
         self._indirect_partner_id = indirect_partner_id
 
@@ -333,7 +360,7 @@ class QuotaRecord:
         精英服务商的公司名称。
 
         :param indirect_partner_name: The indirect_partner_name of this QuotaRecord.
-        :type: str
+        :type indirect_partner_name: str
         """
         self._indirect_partner_name = indirect_partner_name
 
@@ -355,7 +382,7 @@ class QuotaRecord:
         备注。
 
         :param remark: The remark of this QuotaRecord.
-        :type: str
+        :type remark: str
         """
         self._remark = remark
 

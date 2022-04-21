@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListInstanceMetricRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListInstanceMetricRequestBody:
     }
 
     def __init__(self, type=None, entity_name=None, instance_name=None):
-        """ListInstanceMetricRequestBody - a model defined in huaweicloud sdk"""
+        """ListInstanceMetricRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param type: 实体类型，[可选值如下 org     # 节点组织 plugin  # 插件](tag:online) 默认为org 
+        :type type: str
+        :param entity_name: 所属实体的名称
+        :type entity_name: str
+        :param instance_name: 具体实例的名称
+        :type instance_name: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class ListInstanceMetricRequestBody:
         实体类型，[可选值如下 org     # 节点组织 plugin  # 插件](tag:online) 默认为org 
 
         :param type: The type of this ListInstanceMetricRequestBody.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -87,7 +96,7 @@ class ListInstanceMetricRequestBody:
         所属实体的名称
 
         :param entity_name: The entity_name of this ListInstanceMetricRequestBody.
-        :type: str
+        :type entity_name: str
         """
         self._entity_name = entity_name
 
@@ -109,7 +118,7 @@ class ListInstanceMetricRequestBody:
         具体实例的名称
 
         :param instance_name: The instance_name of this ListInstanceMetricRequestBody.
-        :type: str
+        :type instance_name: str
         """
         self._instance_name = instance_name
 

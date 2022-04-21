@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AutoscalingRef:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class AutoscalingRef:
     }
 
     def __init__(self, enable=None, min_l4_flavor_id=None, min_l7_flavor_id=None):
-        """AutoscalingRef - a model defined in huaweicloud sdk"""
+        """AutoscalingRef
+
+        The model defined in huaweicloud sdk
+
+        :param enable: 当前负载均衡器是否开启弹性扩缩容。 取值： - true：开启。 - false：不开启。
+        :type enable: bool
+        :param min_l4_flavor_id: 弹性扩缩容的最小四层规格ID，有四层监听器时，该字段不能为空。
+        :type min_l4_flavor_id: str
+        :param min_l7_flavor_id: 弹性扩缩容的最小七层规格ID，有七层监听器时，该字段不能为空。
+        :type min_l7_flavor_id: str
+        """
         
         
 
@@ -67,7 +76,7 @@ class AutoscalingRef:
         当前负载均衡器是否开启弹性扩缩容。 取值： - true：开启。 - false：不开启。
 
         :param enable: The enable of this AutoscalingRef.
-        :type: bool
+        :type enable: bool
         """
         self._enable = enable
 
@@ -89,7 +98,7 @@ class AutoscalingRef:
         弹性扩缩容的最小四层规格ID，有四层监听器时，该字段不能为空。
 
         :param min_l4_flavor_id: The min_l4_flavor_id of this AutoscalingRef.
-        :type: str
+        :type min_l4_flavor_id: str
         """
         self._min_l4_flavor_id = min_l4_flavor_id
 
@@ -111,7 +120,7 @@ class AutoscalingRef:
         弹性扩缩容的最小七层规格ID，有七层监听器时，该字段不能为空。
 
         :param min_l7_flavor_id: The min_l7_flavor_id of this AutoscalingRef.
-        :type: str
+        :type min_l7_flavor_id: str
         """
         self._min_l7_flavor_id = min_l7_flavor_id
 

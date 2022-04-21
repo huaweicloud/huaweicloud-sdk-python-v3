@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ProjectTagItem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ProjectTagItem:
     }
 
     def __init__(self, key=None, values=None):
-        """ProjectTagItem - a model defined in huaweicloud sdk"""
+        """ProjectTagItem
+
+        The model defined in huaweicloud sdk
+
+        :param key: 标签键。
+        :type key: str
+        :param values: 标签值。
+        :type values: list[str]
+        """
         
         
 
@@ -61,7 +68,7 @@ class ProjectTagItem:
         标签键。
 
         :param key: The key of this ProjectTagItem.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -83,7 +90,7 @@ class ProjectTagItem:
         标签值。
 
         :param values: The values of this ProjectTagItem.
-        :type: list[str]
+        :type values: list[str]
         """
         self._values = values
 

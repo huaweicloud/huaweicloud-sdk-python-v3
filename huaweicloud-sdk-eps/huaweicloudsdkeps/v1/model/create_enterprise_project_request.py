@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateEnterpriseProjectRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateEnterpriseProjectRequest:
     }
 
     def __init__(self, body=None):
-        """CreateEnterpriseProjectRequest - a model defined in huaweicloud sdk"""
+        """CreateEnterpriseProjectRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateEnterpriseProjectRequest
+        :type body: :class:`huaweicloudsdkeps.v1.EnterpriseProject`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateEnterpriseProjectRequest:
 
 
         :return: The body of this CreateEnterpriseProjectRequest.
-        :rtype: EnterpriseProject
+        :rtype: :class:`huaweicloudsdkeps.v1.EnterpriseProject`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateEnterpriseProjectRequest:
 
 
         :param body: The body of this CreateEnterpriseProjectRequest.
-        :type: EnterpriseProject
+        :type body: :class:`huaweicloudsdkeps.v1.EnterpriseProject`
         """
         self._body = body
 

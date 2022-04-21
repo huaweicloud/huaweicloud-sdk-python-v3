@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListFunctionStatisticsResponseBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListFunctionStatisticsResponseBody:
     }
 
     def __init__(self, count=None, duration=None, fail_count=None, max_duration=None, min_duration=None, reject_count=None):
-        """ListFunctionStatisticsResponseBody - a model defined in huaweicloud sdk"""
+        """ListFunctionStatisticsResponseBody
+
+        The model defined in huaweicloud sdk
+
+        :param count: 调用次数
+        :type count: list[:class:`huaweicloudsdkfunctiongraph.v2.SlaReportsValue`]
+        :param duration: 平均时延，单位毫秒
+        :type duration: list[:class:`huaweicloudsdkfunctiongraph.v2.SlaReportsValue`]
+        :param fail_count: 错误次数
+        :type fail_count: list[:class:`huaweicloudsdkfunctiongraph.v2.SlaReportsValue`]
+        :param max_duration: 最大时延，单位毫秒
+        :type max_duration: list[:class:`huaweicloudsdkfunctiongraph.v2.SlaReportsValue`]
+        :param min_duration: 最小时延，单位毫秒
+        :type min_duration: list[:class:`huaweicloudsdkfunctiongraph.v2.SlaReportsValue`]
+        :param reject_count: 被拒绝次数
+        :type reject_count: list[:class:`huaweicloudsdkfunctiongraph.v2.SlaReportsValue`]
+        """
         
         
 
@@ -72,7 +87,7 @@ class ListFunctionStatisticsResponseBody:
         调用次数
 
         :return: The count of this ListFunctionStatisticsResponseBody.
-        :rtype: list[SlaReportsValue]
+        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.SlaReportsValue`]
         """
         return self._count
 
@@ -83,7 +98,7 @@ class ListFunctionStatisticsResponseBody:
         调用次数
 
         :param count: The count of this ListFunctionStatisticsResponseBody.
-        :type: list[SlaReportsValue]
+        :type count: list[:class:`huaweicloudsdkfunctiongraph.v2.SlaReportsValue`]
         """
         self._count = count
 
@@ -94,7 +109,7 @@ class ListFunctionStatisticsResponseBody:
         平均时延，单位毫秒
 
         :return: The duration of this ListFunctionStatisticsResponseBody.
-        :rtype: list[SlaReportsValue]
+        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.SlaReportsValue`]
         """
         return self._duration
 
@@ -105,7 +120,7 @@ class ListFunctionStatisticsResponseBody:
         平均时延，单位毫秒
 
         :param duration: The duration of this ListFunctionStatisticsResponseBody.
-        :type: list[SlaReportsValue]
+        :type duration: list[:class:`huaweicloudsdkfunctiongraph.v2.SlaReportsValue`]
         """
         self._duration = duration
 
@@ -116,7 +131,7 @@ class ListFunctionStatisticsResponseBody:
         错误次数
 
         :return: The fail_count of this ListFunctionStatisticsResponseBody.
-        :rtype: list[SlaReportsValue]
+        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.SlaReportsValue`]
         """
         return self._fail_count
 
@@ -127,7 +142,7 @@ class ListFunctionStatisticsResponseBody:
         错误次数
 
         :param fail_count: The fail_count of this ListFunctionStatisticsResponseBody.
-        :type: list[SlaReportsValue]
+        :type fail_count: list[:class:`huaweicloudsdkfunctiongraph.v2.SlaReportsValue`]
         """
         self._fail_count = fail_count
 
@@ -138,7 +153,7 @@ class ListFunctionStatisticsResponseBody:
         最大时延，单位毫秒
 
         :return: The max_duration of this ListFunctionStatisticsResponseBody.
-        :rtype: list[SlaReportsValue]
+        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.SlaReportsValue`]
         """
         return self._max_duration
 
@@ -149,7 +164,7 @@ class ListFunctionStatisticsResponseBody:
         最大时延，单位毫秒
 
         :param max_duration: The max_duration of this ListFunctionStatisticsResponseBody.
-        :type: list[SlaReportsValue]
+        :type max_duration: list[:class:`huaweicloudsdkfunctiongraph.v2.SlaReportsValue`]
         """
         self._max_duration = max_duration
 
@@ -160,7 +175,7 @@ class ListFunctionStatisticsResponseBody:
         最小时延，单位毫秒
 
         :return: The min_duration of this ListFunctionStatisticsResponseBody.
-        :rtype: list[SlaReportsValue]
+        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.SlaReportsValue`]
         """
         return self._min_duration
 
@@ -171,7 +186,7 @@ class ListFunctionStatisticsResponseBody:
         最小时延，单位毫秒
 
         :param min_duration: The min_duration of this ListFunctionStatisticsResponseBody.
-        :type: list[SlaReportsValue]
+        :type min_duration: list[:class:`huaweicloudsdkfunctiongraph.v2.SlaReportsValue`]
         """
         self._min_duration = min_duration
 
@@ -182,7 +197,7 @@ class ListFunctionStatisticsResponseBody:
         被拒绝次数
 
         :return: The reject_count of this ListFunctionStatisticsResponseBody.
-        :rtype: list[SlaReportsValue]
+        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.SlaReportsValue`]
         """
         return self._reject_count
 
@@ -193,7 +208,7 @@ class ListFunctionStatisticsResponseBody:
         被拒绝次数
 
         :param reject_count: The reject_count of this ListFunctionStatisticsResponseBody.
-        :type: list[SlaReportsValue]
+        :type reject_count: list[:class:`huaweicloudsdkfunctiongraph.v2.SlaReportsValue`]
         """
         self._reject_count = reject_count
 

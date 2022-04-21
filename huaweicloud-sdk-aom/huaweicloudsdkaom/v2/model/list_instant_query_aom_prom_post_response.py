@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListInstantQueryAomPromPostResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListInstantQueryAomPromPostResponse(SdkResponse):
     }
 
     def __init__(self, status=None, data=None):
-        """ListInstantQueryAomPromPostResponse - a model defined in huaweicloud sdk"""
+        """ListInstantQueryAomPromPostResponse
+
+        The model defined in huaweicloud sdk
+
+        :param status: 响应状态。
+        :type status: str
+        :param data: 
+        :type data: :class:`huaweicloudsdkaom.v2.Data`
+        """
         
         super(ListInstantQueryAomPromPostResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListInstantQueryAomPromPostResponse(SdkResponse):
         响应状态。
 
         :param status: The status of this ListInstantQueryAomPromPostResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -73,7 +80,7 @@ class ListInstantQueryAomPromPostResponse(SdkResponse):
 
 
         :return: The data of this ListInstantQueryAomPromPostResponse.
-        :rtype: Data
+        :rtype: :class:`huaweicloudsdkaom.v2.Data`
         """
         return self._data
 
@@ -83,7 +90,7 @@ class ListInstantQueryAomPromPostResponse(SdkResponse):
 
 
         :param data: The data of this ListInstantQueryAomPromPostResponse.
-        :type: Data
+        :type data: :class:`huaweicloudsdkaom.v2.Data`
         """
         self._data = data
 

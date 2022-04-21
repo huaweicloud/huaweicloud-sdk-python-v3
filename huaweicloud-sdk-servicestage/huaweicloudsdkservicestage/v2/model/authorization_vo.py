@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AuthorizationVO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class AuthorizationVO:
     }
 
     def __init__(self, name=None, repo_type=None, repo_host=None, repo_home=None, repo_user=None, avartar=None, token_type=None, create_time=None, update_time=None, status=None):
-        """AuthorizationVO - a model defined in huaweicloud sdk"""
+        """AuthorizationVO
+
+        The model defined in huaweicloud sdk
+
+        :param name: 授权名称。
+        :type name: str
+        :param repo_type: 仓库类型。 取值范围：github、gitlab、gitee、bitbucket、devcloud。 
+        :type repo_type: str
+        :param repo_host: 仓库地址。
+        :type repo_host: str
+        :param repo_home: 仓库主页。
+        :type repo_home: str
+        :param repo_user: 仓库用户名。
+        :type repo_user: str
+        :param avartar: 头像。
+        :type avartar: str
+        :param token_type: 授权方式。
+        :type token_type: str
+        :param create_time: 创建时间。
+        :type create_time: int
+        :param update_time: 修改时间。
+        :type update_time: int
+        :param status: 状态。
+        :type status: int
+        """
         
         
 
@@ -93,7 +116,7 @@ class AuthorizationVO:
         授权名称。
 
         :param name: The name of this AuthorizationVO.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -115,7 +138,7 @@ class AuthorizationVO:
         仓库类型。 取值范围：github、gitlab、gitee、bitbucket、devcloud。 
 
         :param repo_type: The repo_type of this AuthorizationVO.
-        :type: str
+        :type repo_type: str
         """
         self._repo_type = repo_type
 
@@ -137,7 +160,7 @@ class AuthorizationVO:
         仓库地址。
 
         :param repo_host: The repo_host of this AuthorizationVO.
-        :type: str
+        :type repo_host: str
         """
         self._repo_host = repo_host
 
@@ -159,7 +182,7 @@ class AuthorizationVO:
         仓库主页。
 
         :param repo_home: The repo_home of this AuthorizationVO.
-        :type: str
+        :type repo_home: str
         """
         self._repo_home = repo_home
 
@@ -181,7 +204,7 @@ class AuthorizationVO:
         仓库用户名。
 
         :param repo_user: The repo_user of this AuthorizationVO.
-        :type: str
+        :type repo_user: str
         """
         self._repo_user = repo_user
 
@@ -203,7 +226,7 @@ class AuthorizationVO:
         头像。
 
         :param avartar: The avartar of this AuthorizationVO.
-        :type: str
+        :type avartar: str
         """
         self._avartar = avartar
 
@@ -225,7 +248,7 @@ class AuthorizationVO:
         授权方式。
 
         :param token_type: The token_type of this AuthorizationVO.
-        :type: str
+        :type token_type: str
         """
         self._token_type = token_type
 
@@ -247,7 +270,7 @@ class AuthorizationVO:
         创建时间。
 
         :param create_time: The create_time of this AuthorizationVO.
-        :type: int
+        :type create_time: int
         """
         self._create_time = create_time
 
@@ -269,7 +292,7 @@ class AuthorizationVO:
         修改时间。
 
         :param update_time: The update_time of this AuthorizationVO.
-        :type: int
+        :type update_time: int
         """
         self._update_time = update_time
 
@@ -291,7 +314,7 @@ class AuthorizationVO:
         状态。
 
         :param status: The status of this AuthorizationVO.
-        :type: int
+        :type status: int
         """
         self._status = status
 

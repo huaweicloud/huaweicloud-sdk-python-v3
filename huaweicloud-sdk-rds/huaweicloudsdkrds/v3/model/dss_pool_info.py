@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DssPoolInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class DssPoolInfo:
     }
 
     def __init__(self, az_name=None, free_capacity_gb=None, dsspool_volume_type=None, dsspool_id=None, dsspool_status=None):
-        """DssPoolInfo - a model defined in huaweicloud sdk"""
+        """DssPoolInfo
+
+        The model defined in huaweicloud sdk
+
+        :param az_name: 专属存储池所在az
+        :type az_name: str
+        :param free_capacity_gb: 专属存储池免费空间大小，单位GB
+        :type free_capacity_gb: str
+        :param dsspool_volume_type: 专属存储池磁盘类型名称，可能取值如下：  - ULTRAHIGH，表示SSD。  - LOCALSSD：表示本地SSD。  - CLOUDSSD：表示SSD云盘，仅支持通用型和独享型规格实例。  - ESSD：表示极速型SSD，仅支持独享型规格实例。
+        :type dsspool_volume_type: str
+        :param dsspool_id: 专属存储池ID
+        :type dsspool_id: str
+        :param dsspool_status: 专属存储池当前状态，可能取值如下： - available，表示可用。 - deploying，表示正在部署。 - enlarging，表示正在扩容。 - frozen，表示冻结。 - sellout，表示售罄。
+        :type dsspool_status: str
+        """
         
         
 
@@ -73,7 +86,7 @@ class DssPoolInfo:
         专属存储池所在az
 
         :param az_name: The az_name of this DssPoolInfo.
-        :type: str
+        :type az_name: str
         """
         self._az_name = az_name
 
@@ -95,7 +108,7 @@ class DssPoolInfo:
         专属存储池免费空间大小，单位GB
 
         :param free_capacity_gb: The free_capacity_gb of this DssPoolInfo.
-        :type: str
+        :type free_capacity_gb: str
         """
         self._free_capacity_gb = free_capacity_gb
 
@@ -117,7 +130,7 @@ class DssPoolInfo:
         专属存储池磁盘类型名称，可能取值如下：  - ULTRAHIGH，表示SSD。  - LOCALSSD：表示本地SSD。  - CLOUDSSD：表示SSD云盘，仅支持通用型和独享型规格实例。  - ESSD：表示极速型SSD，仅支持独享型规格实例。
 
         :param dsspool_volume_type: The dsspool_volume_type of this DssPoolInfo.
-        :type: str
+        :type dsspool_volume_type: str
         """
         self._dsspool_volume_type = dsspool_volume_type
 
@@ -139,7 +152,7 @@ class DssPoolInfo:
         专属存储池ID
 
         :param dsspool_id: The dsspool_id of this DssPoolInfo.
-        :type: str
+        :type dsspool_id: str
         """
         self._dsspool_id = dsspool_id
 
@@ -161,7 +174,7 @@ class DssPoolInfo:
         专属存储池当前状态，可能取值如下： - available，表示可用。 - deploying，表示正在部署。 - enlarging，表示正在扩容。 - frozen，表示冻结。 - sellout，表示售罄。
 
         :param dsspool_status: The dsspool_status of this DssPoolInfo.
-        :type: str
+        :type dsspool_status: str
         """
         self._dsspool_status = dsspool_status
 

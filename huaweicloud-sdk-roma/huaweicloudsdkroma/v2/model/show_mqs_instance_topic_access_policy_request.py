@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowMqsInstanceTopicAccessPolicyRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowMqsInstanceTopicAccessPolicyRequest:
     }
 
     def __init__(self, instance_id=None, topic_name=None, offset=None, limit=None):
-        """ShowMqsInstanceTopicAccessPolicyRequest - a model defined in huaweicloud sdk"""
+        """ShowMqsInstanceTopicAccessPolicyRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param topic_name: topic名称。
+        :type topic_name: str
+        :param offset: 分页查询偏移量。
+        :type offset: str
+        :param limit: 分页查询大小。
+        :type limit: str
+        """
         
         
 
@@ -71,7 +82,7 @@ class ShowMqsInstanceTopicAccessPolicyRequest:
         实例ID。
 
         :param instance_id: The instance_id of this ShowMqsInstanceTopicAccessPolicyRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -93,7 +104,7 @@ class ShowMqsInstanceTopicAccessPolicyRequest:
         topic名称。
 
         :param topic_name: The topic_name of this ShowMqsInstanceTopicAccessPolicyRequest.
-        :type: str
+        :type topic_name: str
         """
         self._topic_name = topic_name
 
@@ -115,7 +126,7 @@ class ShowMqsInstanceTopicAccessPolicyRequest:
         分页查询偏移量。
 
         :param offset: The offset of this ShowMqsInstanceTopicAccessPolicyRequest.
-        :type: str
+        :type offset: str
         """
         self._offset = offset
 
@@ -137,7 +148,7 @@ class ShowMqsInstanceTopicAccessPolicyRequest:
         分页查询大小。
 
         :param limit: The limit of this ShowMqsInstanceTopicAccessPolicyRequest.
-        :type: str
+        :type limit: str
         """
         self._limit = limit
 

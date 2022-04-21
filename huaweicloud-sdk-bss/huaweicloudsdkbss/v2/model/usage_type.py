@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UsageType:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class UsageType:
     }
 
     def __init__(self, code=None, name=None, resource_type_code=None, service_type_code=None, resource_type_name=None, service_type_name=None):
-        """UsageType - a model defined in huaweicloud sdk"""
+        """UsageType
+
+        The model defined in huaweicloud sdk
+
+        :param code: 使用量类型编码。如：reqNumber。
+        :type code: str
+        :param name: 使用量类型名称。如：调用次数。
+        :type name: str
+        :param resource_type_code: 资源类型编码。例如ECS的VM为“hws.resource.type.vm”。
+        :type resource_type_code: str
+        :param service_type_code: 云服务类型编码。例如OBS的云服务类型编码为“hws.service.type.obs”。
+        :type service_type_code: str
+        :param resource_type_name: 资源类型名称。例如ECS的资源类型名称为“云主机”。
+        :type resource_type_name: str
+        :param service_type_name: 云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
+        :type service_type_name: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class UsageType:
         使用量类型编码。如：reqNumber。
 
         :param code: The code of this UsageType.
-        :type: str
+        :type code: str
         """
         self._code = code
 
@@ -105,7 +120,7 @@ class UsageType:
         使用量类型名称。如：调用次数。
 
         :param name: The name of this UsageType.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -127,7 +142,7 @@ class UsageType:
         资源类型编码。例如ECS的VM为“hws.resource.type.vm”。
 
         :param resource_type_code: The resource_type_code of this UsageType.
-        :type: str
+        :type resource_type_code: str
         """
         self._resource_type_code = resource_type_code
 
@@ -149,7 +164,7 @@ class UsageType:
         云服务类型编码。例如OBS的云服务类型编码为“hws.service.type.obs”。
 
         :param service_type_code: The service_type_code of this UsageType.
-        :type: str
+        :type service_type_code: str
         """
         self._service_type_code = service_type_code
 
@@ -171,7 +186,7 @@ class UsageType:
         资源类型名称。例如ECS的资源类型名称为“云主机”。
 
         :param resource_type_name: The resource_type_name of this UsageType.
-        :type: str
+        :type resource_type_name: str
         """
         self._resource_type_name = resource_type_name
 
@@ -193,7 +208,7 @@ class UsageType:
         云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
 
         :param service_type_name: The service_type_name of this UsageType.
-        :type: str
+        :type service_type_name: str
         """
         self._service_type_name = service_type_name
 

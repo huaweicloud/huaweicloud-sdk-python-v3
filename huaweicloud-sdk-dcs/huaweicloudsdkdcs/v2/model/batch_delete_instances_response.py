@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchDeleteInstancesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchDeleteInstancesResponse(SdkResponse):
     }
 
     def __init__(self, results=None):
-        """BatchDeleteInstancesResponse - a model defined in huaweicloud sdk"""
+        """BatchDeleteInstancesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param results: 删除/重启/清空实例的结果。
+        :type results: list[:class:`huaweicloudsdkdcs.v2.BatchOpsResult`]
+        """
         
         super(BatchDeleteInstancesResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class BatchDeleteInstancesResponse(SdkResponse):
         删除/重启/清空实例的结果。
 
         :return: The results of this BatchDeleteInstancesResponse.
-        :rtype: list[BatchOpsResult]
+        :rtype: list[:class:`huaweicloudsdkdcs.v2.BatchOpsResult`]
         """
         return self._results
 
@@ -58,7 +63,7 @@ class BatchDeleteInstancesResponse(SdkResponse):
         删除/重启/清空实例的结果。
 
         :param results: The results of this BatchDeleteInstancesResponse.
-        :type: list[BatchOpsResult]
+        :type results: list[:class:`huaweicloudsdkdcs.v2.BatchOpsResult`]
         """
         self._results = results
 

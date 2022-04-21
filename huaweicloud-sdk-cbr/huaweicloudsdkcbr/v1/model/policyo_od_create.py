@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PolicyoODCreate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class PolicyoODCreate:
     }
 
     def __init__(self, day_backups=None, destination_project_id=None, destination_region=None, enable_acceleration=None, max_backups=None, month_backups=None, retention_duration_days=None, timezone=None, week_backups=None, year_backups=None):
-        """PolicyoODCreate - a model defined in huaweicloud sdk"""
+        """PolicyoODCreate
+
+        The model defined in huaweicloud sdk
+
+        :param day_backups: 保留日备个数，该备份不受保留最大备份数限制。取值为0到100。若选择该参数，则timezone 也必选。
+        :type day_backups: int
+        :param destination_project_id: 复制的目标项目ID，仅在跨区域复制时才会使用并且必须指定。
+        :type destination_project_id: str
+        :param destination_region: 复制的目标区域，仅在跨区域复制时才会使用并且必须指定。长度限制：0- 255，只能由字母、数字、“_”、“-”组成
+        :type destination_region: str
+        :param enable_acceleration: 跨区域复制时，是否启用加速从而缩减复制的时间，如果不指定，默认不启用加速。
+        :type enable_acceleration: bool
+        :param max_backups: 单个备份对象自动备份的最大备份数。取值为-1或0-99999。-1代表不按备份数清理。若该字段和retention_duration_days字段同时为空，备份会永久保留。
+        :type max_backups: int
+        :param month_backups: 保留月备个数，该备份不受保留最大备份数限制。取值为0到100。若选择该参数，则timezone 也必选。
+        :type month_backups: int
+        :param retention_duration_days: 备份保留时长，单位天。最长支持99999天。-1代表不按时间清理。若该字段和max_backups 参数同时为空，备份会永久保留。
+        :type retention_duration_days: int
+        :param timezone: 用户所在时区,格式形如UTC+08:00, 若选择年备，月备，周备，日备中任一参数，则该参数不能为空。
+        :type timezone: str
+        :param week_backups: 保留周备个数，该备份不受保留最大备份数限制。取值为0到100。若选择该参数，则timezone 也必选。
+        :type week_backups: int
+        :param year_backups: 保留年备个数，该备份不受保留最大备份数限制。取值为0到100。若选择该参数，则timezone 也必选。
+        :type year_backups: int
+        """
         
         
 
@@ -103,7 +126,7 @@ class PolicyoODCreate:
         保留日备个数，该备份不受保留最大备份数限制。取值为0到100。若选择该参数，则timezone 也必选。
 
         :param day_backups: The day_backups of this PolicyoODCreate.
-        :type: int
+        :type day_backups: int
         """
         self._day_backups = day_backups
 
@@ -125,7 +148,7 @@ class PolicyoODCreate:
         复制的目标项目ID，仅在跨区域复制时才会使用并且必须指定。
 
         :param destination_project_id: The destination_project_id of this PolicyoODCreate.
-        :type: str
+        :type destination_project_id: str
         """
         self._destination_project_id = destination_project_id
 
@@ -147,7 +170,7 @@ class PolicyoODCreate:
         复制的目标区域，仅在跨区域复制时才会使用并且必须指定。长度限制：0- 255，只能由字母、数字、“_”、“-”组成
 
         :param destination_region: The destination_region of this PolicyoODCreate.
-        :type: str
+        :type destination_region: str
         """
         self._destination_region = destination_region
 
@@ -169,7 +192,7 @@ class PolicyoODCreate:
         跨区域复制时，是否启用加速从而缩减复制的时间，如果不指定，默认不启用加速。
 
         :param enable_acceleration: The enable_acceleration of this PolicyoODCreate.
-        :type: bool
+        :type enable_acceleration: bool
         """
         self._enable_acceleration = enable_acceleration
 
@@ -191,7 +214,7 @@ class PolicyoODCreate:
         单个备份对象自动备份的最大备份数。取值为-1或0-99999。-1代表不按备份数清理。若该字段和retention_duration_days字段同时为空，备份会永久保留。
 
         :param max_backups: The max_backups of this PolicyoODCreate.
-        :type: int
+        :type max_backups: int
         """
         self._max_backups = max_backups
 
@@ -213,7 +236,7 @@ class PolicyoODCreate:
         保留月备个数，该备份不受保留最大备份数限制。取值为0到100。若选择该参数，则timezone 也必选。
 
         :param month_backups: The month_backups of this PolicyoODCreate.
-        :type: int
+        :type month_backups: int
         """
         self._month_backups = month_backups
 
@@ -235,7 +258,7 @@ class PolicyoODCreate:
         备份保留时长，单位天。最长支持99999天。-1代表不按时间清理。若该字段和max_backups 参数同时为空，备份会永久保留。
 
         :param retention_duration_days: The retention_duration_days of this PolicyoODCreate.
-        :type: int
+        :type retention_duration_days: int
         """
         self._retention_duration_days = retention_duration_days
 
@@ -257,7 +280,7 @@ class PolicyoODCreate:
         用户所在时区,格式形如UTC+08:00, 若选择年备，月备，周备，日备中任一参数，则该参数不能为空。
 
         :param timezone: The timezone of this PolicyoODCreate.
-        :type: str
+        :type timezone: str
         """
         self._timezone = timezone
 
@@ -279,7 +302,7 @@ class PolicyoODCreate:
         保留周备个数，该备份不受保留最大备份数限制。取值为0到100。若选择该参数，则timezone 也必选。
 
         :param week_backups: The week_backups of this PolicyoODCreate.
-        :type: int
+        :type week_backups: int
         """
         self._week_backups = week_backups
 
@@ -301,7 +324,7 @@ class PolicyoODCreate:
         保留年备个数，该备份不受保留最大备份数限制。取值为0到100。若选择该参数，则timezone 也必选。
 
         :param year_backups: The year_backups of this PolicyoODCreate.
-        :type: int
+        :type year_backups: int
         """
         self._year_backups = year_backups
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateLoadBalancerPublicIpOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class CreateLoadBalancerPublicIpOption:
     }
 
     def __init__(self, ip_version=None, network_type=None, billing_info=None, description=None, bandwidth=None):
-        """CreateLoadBalancerPublicIpOption - a model defined in huaweicloud sdk"""
+        """CreateLoadBalancerPublicIpOption
+
+        The model defined in huaweicloud sdk
+
+        :param ip_version: IP版本。取值：4表示IPv4，6表示IPv6。  [不支持IPv6，请勿设置为6。](tag:dt,dt_test)
+        :type ip_version: int
+        :param network_type: 弹性公网IP的网络类型，默认5_bgp，更多请参考弹性公网ip创建。  [&gt; 德国Region只支持5_gray.](tag:dt,dt_test) [&gt; hcso_dt Cloud只支持5_gray.](tag:hcso_dt)
+        :type network_type: str
+        :param billing_info: 资源账单信息，取值： - 空：按需计费。 - 非空：包周期计费。  [不支持该字段，请勿使用](tag:dt,dt_test)
+        :type billing_info: str
+        :param description: 弹性公网IP的描述信息，不支持特殊字符
+        :type description: str
+        :param bandwidth: 
+        :type bandwidth: :class:`huaweicloudsdkelb.v3.CreateLoadBalancerBandwidthOption`
+        """
         
         
 
@@ -76,7 +89,7 @@ class CreateLoadBalancerPublicIpOption:
         IP版本。取值：4表示IPv4，6表示IPv6。  [不支持IPv6，请勿设置为6。](tag:dt,dt_test)
 
         :param ip_version: The ip_version of this CreateLoadBalancerPublicIpOption.
-        :type: int
+        :type ip_version: int
         """
         self._ip_version = ip_version
 
@@ -98,7 +111,7 @@ class CreateLoadBalancerPublicIpOption:
         弹性公网IP的网络类型，默认5_bgp，更多请参考弹性公网ip创建。  [> 德国Region只支持5_gray.](tag:dt,dt_test) [> hcso_dt Cloud只支持5_gray.](tag:hcso_dt)
 
         :param network_type: The network_type of this CreateLoadBalancerPublicIpOption.
-        :type: str
+        :type network_type: str
         """
         self._network_type = network_type
 
@@ -120,7 +133,7 @@ class CreateLoadBalancerPublicIpOption:
         资源账单信息，取值： - 空：按需计费。 - 非空：包周期计费。  [不支持该字段，请勿使用](tag:dt,dt_test)
 
         :param billing_info: The billing_info of this CreateLoadBalancerPublicIpOption.
-        :type: str
+        :type billing_info: str
         """
         self._billing_info = billing_info
 
@@ -142,7 +155,7 @@ class CreateLoadBalancerPublicIpOption:
         弹性公网IP的描述信息，不支持特殊字符
 
         :param description: The description of this CreateLoadBalancerPublicIpOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -152,7 +165,7 @@ class CreateLoadBalancerPublicIpOption:
 
 
         :return: The bandwidth of this CreateLoadBalancerPublicIpOption.
-        :rtype: CreateLoadBalancerBandwidthOption
+        :rtype: :class:`huaweicloudsdkelb.v3.CreateLoadBalancerBandwidthOption`
         """
         return self._bandwidth
 
@@ -162,7 +175,7 @@ class CreateLoadBalancerPublicIpOption:
 
 
         :param bandwidth: The bandwidth of this CreateLoadBalancerPublicIpOption.
-        :type: CreateLoadBalancerBandwidthOption
+        :type bandwidth: :class:`huaweicloudsdkelb.v3.CreateLoadBalancerBandwidthOption`
         """
         self._bandwidth = bandwidth
 

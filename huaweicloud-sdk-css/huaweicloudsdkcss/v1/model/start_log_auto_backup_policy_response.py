@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StartLogAutoBackupPolicyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class StartLogAutoBackupPolicyResponse(SdkResponse):
     }
 
     def __init__(self):
-        """StartLogAutoBackupPolicyResponse - a model defined in huaweicloud sdk"""
+        """StartLogAutoBackupPolicyResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(StartLogAutoBackupPolicyResponse, self).__init__()
         self.discriminator = None

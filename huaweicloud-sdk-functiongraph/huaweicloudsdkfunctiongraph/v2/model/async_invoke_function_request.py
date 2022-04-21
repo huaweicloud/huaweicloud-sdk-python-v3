@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AsyncInvokeFunctionRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AsyncInvokeFunctionRequest:
     }
 
     def __init__(self, function_urn=None, body=None):
-        """AsyncInvokeFunctionRequest - a model defined in huaweicloud sdk"""
+        """AsyncInvokeFunctionRequest
+
+        The model defined in huaweicloud sdk
+
+        :param function_urn: 函数的URN，详细解释见FunctionGraph函数模型的描述。
+        :type function_urn: str
+        :param body: 执行函数请求体，为json格式。
+        :type body: dict(str, object)
+        """
         
         
 
@@ -62,7 +69,7 @@ class AsyncInvokeFunctionRequest:
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
         :param function_urn: The function_urn of this AsyncInvokeFunctionRequest.
-        :type: str
+        :type function_urn: str
         """
         self._function_urn = function_urn
 
@@ -84,7 +91,7 @@ class AsyncInvokeFunctionRequest:
         执行函数请求体，为json格式。
 
         :param body: The body of this AsyncInvokeFunctionRequest.
-        :type: dict(str, object)
+        :type body: dict(str, object)
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ConfigurationParameterResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ConfigurationParameterResult:
     }
 
     def __init__(self, name=None, value=None, restart_required=None, readonly=None, value_range=None, type=None, description=None):
-        """ConfigurationParameterResult - a model defined in huaweicloud sdk"""
+        """ConfigurationParameterResult
+
+        The model defined in huaweicloud sdk
+
+        :param name: 参数名称。
+        :type name: str
+        :param value: 参数值。
+        :type value: str
+        :param restart_required: 是否需要重启。 - 取值为“false”，不需要重启。 - 取值为“true”，需要重启。
+        :type restart_required: bool
+        :param readonly: 是否只读。 - 取值为“false”，非只读参数。 - 取值为“true”，只读参数。
+        :type readonly: bool
+        :param value_range: 参数值范围，如integer取值0-1、boolean取值true|false等。
+        :type value_range: str
+        :param type: 参数类型，取值为“string”、“integer”、“boolean”、“list”或“float”之一。
+        :type type: str
+        :param description: 参数描述。
+        :type description: str
+        """
         
         
 
@@ -81,7 +98,7 @@ class ConfigurationParameterResult:
         参数名称。
 
         :param name: The name of this ConfigurationParameterResult.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -103,7 +120,7 @@ class ConfigurationParameterResult:
         参数值。
 
         :param value: The value of this ConfigurationParameterResult.
-        :type: str
+        :type value: str
         """
         self._value = value
 
@@ -125,7 +142,7 @@ class ConfigurationParameterResult:
         是否需要重启。 - 取值为“false”，不需要重启。 - 取值为“true”，需要重启。
 
         :param restart_required: The restart_required of this ConfigurationParameterResult.
-        :type: bool
+        :type restart_required: bool
         """
         self._restart_required = restart_required
 
@@ -147,7 +164,7 @@ class ConfigurationParameterResult:
         是否只读。 - 取值为“false”，非只读参数。 - 取值为“true”，只读参数。
 
         :param readonly: The readonly of this ConfigurationParameterResult.
-        :type: bool
+        :type readonly: bool
         """
         self._readonly = readonly
 
@@ -169,7 +186,7 @@ class ConfigurationParameterResult:
         参数值范围，如integer取值0-1、boolean取值true|false等。
 
         :param value_range: The value_range of this ConfigurationParameterResult.
-        :type: str
+        :type value_range: str
         """
         self._value_range = value_range
 
@@ -191,7 +208,7 @@ class ConfigurationParameterResult:
         参数类型，取值为“string”、“integer”、“boolean”、“list”或“float”之一。
 
         :param type: The type of this ConfigurationParameterResult.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -213,7 +230,7 @@ class ConfigurationParameterResult:
         参数描述。
 
         :param description: The description of this ConfigurationParameterResult.
-        :type: str
+        :type description: str
         """
         self._description = description
 

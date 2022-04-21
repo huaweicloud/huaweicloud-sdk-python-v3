@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateInstanceTopicReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateInstanceTopicReq:
     }
 
     def __init__(self, topics=None):
-        """UpdateInstanceTopicReq - a model defined in huaweicloud sdk"""
+        """UpdateInstanceTopicReq
+
+        The model defined in huaweicloud sdk
+
+        :param topics: 修改的topic列表。
+        :type topics: list[:class:`huaweicloudsdkkafka.v2.UpdateInstanceTopicReqTopics`]
+        """
         
         
 
@@ -47,7 +52,7 @@ class UpdateInstanceTopicReq:
         修改的topic列表。
 
         :return: The topics of this UpdateInstanceTopicReq.
-        :rtype: list[UpdateInstanceTopicReqTopics]
+        :rtype: list[:class:`huaweicloudsdkkafka.v2.UpdateInstanceTopicReqTopics`]
         """
         return self._topics
 
@@ -58,7 +63,7 @@ class UpdateInstanceTopicReq:
         修改的topic列表。
 
         :param topics: The topics of this UpdateInstanceTopicReq.
-        :type: list[UpdateInstanceTopicReqTopics]
+        :type topics: list[:class:`huaweicloudsdkkafka.v2.UpdateInstanceTopicReqTopics`]
         """
         self._topics = topics
 

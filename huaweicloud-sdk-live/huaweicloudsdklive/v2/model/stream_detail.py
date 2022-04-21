@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StreamDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class StreamDetail:
     }
 
     def __init__(self, start_time=None, end_time=None, data_list=None):
-        """StreamDetail - a model defined in huaweicloud sdk"""
+        """StreamDetail
+
+        The model defined in huaweicloud sdk
+
+        :param start_time: 采样开始时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。
+        :type start_time: str
+        :param end_time: 采样结束时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。
+        :type end_time: str
+        :param data_list: 流监控数据列表。
+        :type data_list: list[int]
+        """
         
         
 
@@ -65,7 +74,7 @@ class StreamDetail:
         采样开始时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。
 
         :param start_time: The start_time of this StreamDetail.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -87,7 +96,7 @@ class StreamDetail:
         采样结束时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。
 
         :param end_time: The end_time of this StreamDetail.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -109,7 +118,7 @@ class StreamDetail:
         流监控数据列表。
 
         :param data_list: The data_list of this StreamDetail.
-        :type: list[int]
+        :type data_list: list[int]
         """
         self._data_list = data_list
 

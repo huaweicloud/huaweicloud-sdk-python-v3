@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreatePropertyRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreatePropertyRequest:
     }
 
     def __init__(self, instance_id=None, service_id=None, body=None):
-        """CreatePropertyRequest - a model defined in huaweicloud sdk"""
+        """CreatePropertyRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param service_id: 服务ID
+        :type service_id: str
+        :param body: Body of the CreatePropertyRequest
+        :type body: :class:`huaweicloudsdkroma.v2.CreatePropertyRequestBody`
+        """
         
         
 
@@ -66,7 +75,7 @@ class CreatePropertyRequest:
         实例ID
 
         :param instance_id: The instance_id of this CreatePropertyRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -88,7 +97,7 @@ class CreatePropertyRequest:
         服务ID
 
         :param service_id: The service_id of this CreatePropertyRequest.
-        :type: str
+        :type service_id: str
         """
         self._service_id = service_id
 
@@ -98,7 +107,7 @@ class CreatePropertyRequest:
 
 
         :return: The body of this CreatePropertyRequest.
-        :rtype: CreatePropertyRequestBody
+        :rtype: :class:`huaweicloudsdkroma.v2.CreatePropertyRequestBody`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class CreatePropertyRequest:
 
 
         :param body: The body of this CreatePropertyRequest.
-        :type: CreatePropertyRequestBody
+        :type body: :class:`huaweicloudsdkroma.v2.CreatePropertyRequestBody`
         """
         self._body = body
 

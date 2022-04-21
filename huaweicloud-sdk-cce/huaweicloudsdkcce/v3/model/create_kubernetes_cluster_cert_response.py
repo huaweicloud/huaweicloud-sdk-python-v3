@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateKubernetesClusterCertResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class CreateKubernetesClusterCertResponse(SdkResponse):
     }
 
     def __init__(self, kind=None, api_version=None, preferences=None, clusters=None, users=None, contexts=None, current_context=None, port_id=None):
-        """CreateKubernetesClusterCertResponse - a model defined in huaweicloud sdk"""
+        """CreateKubernetesClusterCertResponse
+
+        The model defined in huaweicloud sdk
+
+        :param kind: API类型，固定值“Config”，该值不可修改。 
+        :type kind: str
+        :param api_version: API版本，固定值“v1”。
+        :type api_version: str
+        :param preferences: 当前未使用该字段，当前默认为空。
+        :type preferences: object
+        :param clusters: 集群列表。
+        :type clusters: list[:class:`huaweicloudsdkcce.v3.Clusters`]
+        :param users: 存放了指定用户的一些证书信息和ClientKey信息。
+        :type users: list[:class:`huaweicloudsdkcce.v3.Users`]
+        :param contexts: 上下文列表。
+        :type contexts: list[:class:`huaweicloudsdkcce.v3.Contexts`]
+        :param current_context: 当前上下文，若存在publicIp（虚拟机弹性IP）时为 external; 若不存在publicIp为 internal。
+        :type current_context: str
+        :param port_id: 
+        :type port_id: str
+        """
         
         super(CreateKubernetesClusterCertResponse, self).__init__()
 
@@ -93,7 +112,7 @@ class CreateKubernetesClusterCertResponse(SdkResponse):
         API类型，固定值“Config”，该值不可修改。 
 
         :param kind: The kind of this CreateKubernetesClusterCertResponse.
-        :type: str
+        :type kind: str
         """
         self._kind = kind
 
@@ -115,7 +134,7 @@ class CreateKubernetesClusterCertResponse(SdkResponse):
         API版本，固定值“v1”。
 
         :param api_version: The api_version of this CreateKubernetesClusterCertResponse.
-        :type: str
+        :type api_version: str
         """
         self._api_version = api_version
 
@@ -137,7 +156,7 @@ class CreateKubernetesClusterCertResponse(SdkResponse):
         当前未使用该字段，当前默认为空。
 
         :param preferences: The preferences of this CreateKubernetesClusterCertResponse.
-        :type: object
+        :type preferences: object
         """
         self._preferences = preferences
 
@@ -148,7 +167,7 @@ class CreateKubernetesClusterCertResponse(SdkResponse):
         集群列表。
 
         :return: The clusters of this CreateKubernetesClusterCertResponse.
-        :rtype: list[Clusters]
+        :rtype: list[:class:`huaweicloudsdkcce.v3.Clusters`]
         """
         return self._clusters
 
@@ -159,7 +178,7 @@ class CreateKubernetesClusterCertResponse(SdkResponse):
         集群列表。
 
         :param clusters: The clusters of this CreateKubernetesClusterCertResponse.
-        :type: list[Clusters]
+        :type clusters: list[:class:`huaweicloudsdkcce.v3.Clusters`]
         """
         self._clusters = clusters
 
@@ -170,7 +189,7 @@ class CreateKubernetesClusterCertResponse(SdkResponse):
         存放了指定用户的一些证书信息和ClientKey信息。
 
         :return: The users of this CreateKubernetesClusterCertResponse.
-        :rtype: list[Users]
+        :rtype: list[:class:`huaweicloudsdkcce.v3.Users`]
         """
         return self._users
 
@@ -181,7 +200,7 @@ class CreateKubernetesClusterCertResponse(SdkResponse):
         存放了指定用户的一些证书信息和ClientKey信息。
 
         :param users: The users of this CreateKubernetesClusterCertResponse.
-        :type: list[Users]
+        :type users: list[:class:`huaweicloudsdkcce.v3.Users`]
         """
         self._users = users
 
@@ -192,7 +211,7 @@ class CreateKubernetesClusterCertResponse(SdkResponse):
         上下文列表。
 
         :return: The contexts of this CreateKubernetesClusterCertResponse.
-        :rtype: list[Contexts]
+        :rtype: list[:class:`huaweicloudsdkcce.v3.Contexts`]
         """
         return self._contexts
 
@@ -203,7 +222,7 @@ class CreateKubernetesClusterCertResponse(SdkResponse):
         上下文列表。
 
         :param contexts: The contexts of this CreateKubernetesClusterCertResponse.
-        :type: list[Contexts]
+        :type contexts: list[:class:`huaweicloudsdkcce.v3.Contexts`]
         """
         self._contexts = contexts
 
@@ -225,7 +244,7 @@ class CreateKubernetesClusterCertResponse(SdkResponse):
         当前上下文，若存在publicIp（虚拟机弹性IP）时为 external; 若不存在publicIp为 internal。
 
         :param current_context: The current_context of this CreateKubernetesClusterCertResponse.
-        :type: str
+        :type current_context: str
         """
         self._current_context = current_context
 
@@ -245,7 +264,7 @@ class CreateKubernetesClusterCertResponse(SdkResponse):
 
 
         :param port_id: The port_id of this CreateKubernetesClusterCertResponse.
-        :type: str
+        :type port_id: str
         """
         self._port_id = port_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PwdIdentity:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class PwdIdentity:
     }
 
     def __init__(self, methods=None, password=None):
-        """PwdIdentity - a model defined in huaweicloud sdk"""
+        """PwdIdentity
+
+        The model defined in huaweicloud sdk
+
+        :param methods: 认证方法，该字段内容为[\&quot;password\&quot;]。
+        :type methods: list[str]
+        :param password: 
+        :type password: :class:`huaweicloudsdkiam.v3.PwdPassword`
+        """
         
         
 
@@ -61,7 +68,7 @@ class PwdIdentity:
         认证方法，该字段内容为[\"password\"]。
 
         :param methods: The methods of this PwdIdentity.
-        :type: list[str]
+        :type methods: list[str]
         """
         self._methods = methods
 
@@ -71,7 +78,7 @@ class PwdIdentity:
 
 
         :return: The password of this PwdIdentity.
-        :rtype: PwdPassword
+        :rtype: :class:`huaweicloudsdkiam.v3.PwdPassword`
         """
         return self._password
 
@@ -81,7 +88,7 @@ class PwdIdentity:
 
 
         :param password: The password of this PwdIdentity.
-        :type: PwdPassword
+        :type password: :class:`huaweicloudsdkiam.v3.PwdPassword`
         """
         self._password = password
 

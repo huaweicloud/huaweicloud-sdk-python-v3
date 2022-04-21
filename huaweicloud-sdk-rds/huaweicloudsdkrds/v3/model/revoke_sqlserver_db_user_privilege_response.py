@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RevokeSqlserverDbUserPrivilegeResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RevokeSqlserverDbUserPrivilegeResponse(SdkResponse):
     }
 
     def __init__(self, resp=None):
-        """RevokeSqlserverDbUserPrivilegeResponse - a model defined in huaweicloud sdk"""
+        """RevokeSqlserverDbUserPrivilegeResponse
+
+        The model defined in huaweicloud sdk
+
+        :param resp: 操作结果。
+        :type resp: str
+        """
         
         super(RevokeSqlserverDbUserPrivilegeResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class RevokeSqlserverDbUserPrivilegeResponse(SdkResponse):
         操作结果。
 
         :param resp: The resp of this RevokeSqlserverDbUserPrivilegeResponse.
-        :type: str
+        :type resp: str
         """
         self._resp = resp
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FaceDetectUrlReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class FaceDetectUrlReq:
     }
 
     def __init__(self, image_url=None, attributes=None):
-        """FaceDetectUrlReq - a model defined in huaweicloud sdk"""
+        """FaceDetectUrlReq
+
+        The model defined in huaweicloud sdk
+
+        :param image_url: 图片的URL路径，目前仅支持华为云上OBS的URL，且人脸识别服务有权限读取该OBS桶的数据。 开通读取权限的操作请参见[服务授权](https://support.huaweicloud.com/api-face/face_02_0006.html)。
+        :type image_url: str
+        :param attributes: 是否返回人脸属性，希望获取的属性列表，多个属性间使用逗号（,）隔开。目前支持的属性有：   • 2：年龄   • 4：装束（帽子、眼镜）   • 6：口罩   • 7：发型   • 8：胡须   • 11：图片类型   • 12：质量   • 13：表情   • 21：人脸图片旋转角（顺时针偏转角度），支持0°、90°、180°和270°图片旋转
+        :type attributes: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class FaceDetectUrlReq:
         图片的URL路径，目前仅支持华为云上OBS的URL，且人脸识别服务有权限读取该OBS桶的数据。 开通读取权限的操作请参见[服务授权](https://support.huaweicloud.com/api-face/face_02_0006.html)。
 
         :param image_url: The image_url of this FaceDetectUrlReq.
-        :type: str
+        :type image_url: str
         """
         self._image_url = image_url
 
@@ -84,7 +91,7 @@ class FaceDetectUrlReq:
         是否返回人脸属性，希望获取的属性列表，多个属性间使用逗号（,）隔开。目前支持的属性有：   • 2：年龄   • 4：装束（帽子、眼镜）   • 6：口罩   • 7：发型   • 8：胡须   • 11：图片类型   • 12：质量   • 13：表情   • 21：人脸图片旋转角（顺时针偏转角度），支持0°、90°、180°和270°图片旋转
 
         :param attributes: The attributes of this FaceDetectUrlReq.
-        :type: str
+        :type attributes: str
         """
         self._attributes = attributes
 

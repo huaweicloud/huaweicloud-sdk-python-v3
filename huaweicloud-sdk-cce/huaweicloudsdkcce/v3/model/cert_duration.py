@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CertDuration:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CertDuration:
     }
 
     def __init__(self, duration=None):
-        """CertDuration - a model defined in huaweicloud sdk"""
+        """CertDuration
+
+        The model defined in huaweicloud sdk
+
+        :param duration: 集群证书有效时间，单位为天，用户可申请1-10950天，若填写-1则为最大值10950天，10950天约为30年。
+        :type duration: int
+        """
         
         
 
@@ -57,7 +62,7 @@ class CertDuration:
         集群证书有效时间，单位为天，用户可申请1-10950天，若填写-1则为最大值10950天，10950天约为30年。
 
         :param duration: The duration of this CertDuration.
-        :type: int
+        :type duration: int
         """
         self._duration = duration
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdatePublicZoneStatus:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdatePublicZoneStatus:
     }
 
     def __init__(self, status=None):
-        """UpdatePublicZoneStatus - a model defined in huaweicloud sdk"""
+        """UpdatePublicZoneStatus
+
+        The model defined in huaweicloud sdk
+
+        :param status: Zone状态。  取值范围：  ENABLE：启用解析 DISABLE：暂停解析
+        :type status: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class UpdatePublicZoneStatus:
         Zone状态。  取值范围：  ENABLE：启用解析 DISABLE：暂停解析
 
         :param status: The status of this UpdatePublicZoneStatus.
-        :type: str
+        :type status: str
         """
         self._status = status
 

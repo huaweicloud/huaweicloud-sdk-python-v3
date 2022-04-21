@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateNatGatewayDnatRuleRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateNatGatewayDnatRuleRequest:
     }
 
     def __init__(self, dnat_rule_id=None, body=None):
-        """UpdateNatGatewayDnatRuleRequest - a model defined in huaweicloud sdk"""
+        """UpdateNatGatewayDnatRuleRequest
+
+        The model defined in huaweicloud sdk
+
+        :param dnat_rule_id: DNAT规则的ID。
+        :type dnat_rule_id: str
+        :param body: Body of the UpdateNatGatewayDnatRuleRequest
+        :type body: :class:`huaweicloudsdknat.v2.UpdateNatGatewayDnatRuleRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateNatGatewayDnatRuleRequest:
         DNAT规则的ID。
 
         :param dnat_rule_id: The dnat_rule_id of this UpdateNatGatewayDnatRuleRequest.
-        :type: str
+        :type dnat_rule_id: str
         """
         self._dnat_rule_id = dnat_rule_id
 
@@ -72,7 +79,7 @@ class UpdateNatGatewayDnatRuleRequest:
 
 
         :return: The body of this UpdateNatGatewayDnatRuleRequest.
-        :rtype: UpdateNatGatewayDnatRuleRequestBody
+        :rtype: :class:`huaweicloudsdknat.v2.UpdateNatGatewayDnatRuleRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateNatGatewayDnatRuleRequest:
 
 
         :param body: The body of this UpdateNatGatewayDnatRuleRequest.
-        :type: UpdateNatGatewayDnatRuleRequestBody
+        :type body: :class:`huaweicloudsdknat.v2.UpdateNatGatewayDnatRuleRequestBody`
         """
         self._body = body
 

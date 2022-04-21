@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ComputeFlavorGroupsInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ComputeFlavorGroupsInfo:
     }
 
     def __init__(self, group_type=None, compute_flavors=None, offset=None, limit=None, total=None):
-        """ComputeFlavorGroupsInfo - a model defined in huaweicloud sdk"""
+        """ComputeFlavorGroupsInfo
+
+        The model defined in huaweicloud sdk
+
+        :param group_type: 计算资源架构类型，目前分X86和ARM两种。
+        :type group_type: str
+        :param compute_flavors: 计算类型规格详情。
+        :type compute_flavors: list[:class:`huaweicloudsdkddm.v1.ComputeFlavors`]
+        :param offset: 分页参数: 起始值。
+        :type offset: int
+        :param limit: 分页参数：每页多少条。
+        :type limit: int
+        :param total: 计算类型规格总数。
+        :type total: int
+        """
         
         
 
@@ -78,7 +91,7 @@ class ComputeFlavorGroupsInfo:
         计算资源架构类型，目前分X86和ARM两种。
 
         :param group_type: The group_type of this ComputeFlavorGroupsInfo.
-        :type: str
+        :type group_type: str
         """
         self._group_type = group_type
 
@@ -89,7 +102,7 @@ class ComputeFlavorGroupsInfo:
         计算类型规格详情。
 
         :return: The compute_flavors of this ComputeFlavorGroupsInfo.
-        :rtype: list[ComputeFlavors]
+        :rtype: list[:class:`huaweicloudsdkddm.v1.ComputeFlavors`]
         """
         return self._compute_flavors
 
@@ -100,7 +113,7 @@ class ComputeFlavorGroupsInfo:
         计算类型规格详情。
 
         :param compute_flavors: The compute_flavors of this ComputeFlavorGroupsInfo.
-        :type: list[ComputeFlavors]
+        :type compute_flavors: list[:class:`huaweicloudsdkddm.v1.ComputeFlavors`]
         """
         self._compute_flavors = compute_flavors
 
@@ -122,7 +135,7 @@ class ComputeFlavorGroupsInfo:
         分页参数: 起始值。
 
         :param offset: The offset of this ComputeFlavorGroupsInfo.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -144,7 +157,7 @@ class ComputeFlavorGroupsInfo:
         分页参数：每页多少条。
 
         :param limit: The limit of this ComputeFlavorGroupsInfo.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -166,7 +179,7 @@ class ComputeFlavorGroupsInfo:
         计算类型规格总数。
 
         :param total: The total of this ComputeFlavorGroupsInfo.
-        :type: int
+        :type total: int
         """
         self._total = total
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StartInstanceRestartActionRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class StartInstanceRestartActionRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """StartInstanceRestartActionRequest - a model defined in huaweicloud sdk"""
+        """StartInstanceRestartActionRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言
+        :type x_language: str
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param body: Body of the StartInstanceRestartActionRequest
+        :type body: :class:`huaweicloudsdkrds.v3.InstanceRestartRequsetBody`
+        """
         
         
 
@@ -67,7 +76,7 @@ class StartInstanceRestartActionRequest:
         语言
 
         :param x_language: The x_language of this StartInstanceRestartActionRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -89,7 +98,7 @@ class StartInstanceRestartActionRequest:
         实例ID。
 
         :param instance_id: The instance_id of this StartInstanceRestartActionRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -99,7 +108,7 @@ class StartInstanceRestartActionRequest:
 
 
         :return: The body of this StartInstanceRestartActionRequest.
-        :rtype: InstanceRestartRequsetBody
+        :rtype: :class:`huaweicloudsdkrds.v3.InstanceRestartRequsetBody`
         """
         return self._body
 
@@ -109,7 +118,7 @@ class StartInstanceRestartActionRequest:
 
 
         :param body: The body of this StartInstanceRestartActionRequest.
-        :type: InstanceRestartRequsetBody
+        :type body: :class:`huaweicloudsdkrds.v3.InstanceRestartRequsetBody`
         """
         self._body = body
 

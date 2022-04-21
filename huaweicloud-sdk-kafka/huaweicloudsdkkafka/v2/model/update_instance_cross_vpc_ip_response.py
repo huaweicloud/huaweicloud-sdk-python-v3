@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateInstanceCrossVpcIpResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateInstanceCrossVpcIpResponse(SdkResponse):
     }
 
     def __init__(self, success=None, results=None):
-        """UpdateInstanceCrossVpcIpResponse - a model defined in huaweicloud sdk"""
+        """UpdateInstanceCrossVpcIpResponse
+
+        The model defined in huaweicloud sdk
+
+        :param success: 修改跨VPC访问结果。
+        :type success: bool
+        :param results: 修改broker跨VPC访问的结果列表。
+        :type results: list[:class:`huaweicloudsdkkafka.v2.UpdateInstanceCrossVpcIpRespResults`]
+        """
         
         super(UpdateInstanceCrossVpcIpResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class UpdateInstanceCrossVpcIpResponse(SdkResponse):
         修改跨VPC访问结果。
 
         :param success: The success of this UpdateInstanceCrossVpcIpResponse.
-        :type: bool
+        :type success: bool
         """
         self._success = success
 
@@ -74,7 +81,7 @@ class UpdateInstanceCrossVpcIpResponse(SdkResponse):
         修改broker跨VPC访问的结果列表。
 
         :return: The results of this UpdateInstanceCrossVpcIpResponse.
-        :rtype: list[UpdateInstanceCrossVpcIpRespResults]
+        :rtype: list[:class:`huaweicloudsdkkafka.v2.UpdateInstanceCrossVpcIpRespResults`]
         """
         return self._results
 
@@ -85,7 +92,7 @@ class UpdateInstanceCrossVpcIpResponse(SdkResponse):
         修改broker跨VPC访问的结果列表。
 
         :param results: The results of this UpdateInstanceCrossVpcIpResponse.
-        :type: list[UpdateInstanceCrossVpcIpRespResults]
+        :type results: list[:class:`huaweicloudsdkkafka.v2.UpdateInstanceCrossVpcIpRespResults`]
         """
         self._results = results
 

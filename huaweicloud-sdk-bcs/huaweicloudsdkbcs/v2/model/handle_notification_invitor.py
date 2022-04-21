@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class HandleNotificationInvitor:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class HandleNotificationInvitor:
     }
 
     def __init__(self, invitor_bcs_id=None, invitor_bcs_name=None, invitor_project_id=None, invitor_user_id=None):
-        """HandleNotificationInvitor - a model defined in huaweicloud sdk"""
+        """HandleNotificationInvitor
+
+        The model defined in huaweicloud sdk
+
+        :param invitor_bcs_id: 邀请方实例id
+        :type invitor_bcs_id: str
+        :param invitor_bcs_name: 邀请方实例名称
+        :type invitor_bcs_name: str
+        :param invitor_project_id: 邀请方project id
+        :type invitor_project_id: str
+        :param invitor_user_id: 邀请方租户id
+        :type invitor_user_id: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class HandleNotificationInvitor:
         邀请方实例id
 
         :param invitor_bcs_id: The invitor_bcs_id of this HandleNotificationInvitor.
-        :type: str
+        :type invitor_bcs_id: str
         """
         self._invitor_bcs_id = invitor_bcs_id
 
@@ -91,7 +102,7 @@ class HandleNotificationInvitor:
         邀请方实例名称
 
         :param invitor_bcs_name: The invitor_bcs_name of this HandleNotificationInvitor.
-        :type: str
+        :type invitor_bcs_name: str
         """
         self._invitor_bcs_name = invitor_bcs_name
 
@@ -113,7 +124,7 @@ class HandleNotificationInvitor:
         邀请方project id
 
         :param invitor_project_id: The invitor_project_id of this HandleNotificationInvitor.
-        :type: str
+        :type invitor_project_id: str
         """
         self._invitor_project_id = invitor_project_id
 
@@ -135,7 +146,7 @@ class HandleNotificationInvitor:
         邀请方租户id
 
         :param invitor_user_id: The invitor_user_id of this HandleNotificationInvitor.
-        :type: str
+        :type invitor_user_id: str
         """
         self._invitor_user_id = invitor_user_id
 

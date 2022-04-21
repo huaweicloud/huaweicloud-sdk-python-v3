@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTemplateRulesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ListTemplateRulesRequest:
     }
 
     def __init__(self, project_id=None, ruleset_id=None, types=None, languages=None, tags=None, offset=None, limit=None):
-        """ListTemplateRulesRequest - a model defined in huaweicloud sdk"""
+        """ListTemplateRulesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: 项目ID
+        :type project_id: str
+        :param ruleset_id: 规则集ID
+        :type ruleset_id: str
+        :param types: 规则状态  &#39;1查询全部，2已启动，3未启用&#39;
+        :type types: str
+        :param languages: 规则语言
+        :type languages: str
+        :param tags: 规则所属标签
+        :type tags: str
+        :param offset: 分页索引，偏移量
+        :type offset: int
+        :param limit: 每页显示的数量
+        :type limit: int
+        """
         
         
 
@@ -85,7 +102,7 @@ class ListTemplateRulesRequest:
         项目ID
 
         :param project_id: The project_id of this ListTemplateRulesRequest.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -107,7 +124,7 @@ class ListTemplateRulesRequest:
         规则集ID
 
         :param ruleset_id: The ruleset_id of this ListTemplateRulesRequest.
-        :type: str
+        :type ruleset_id: str
         """
         self._ruleset_id = ruleset_id
 
@@ -129,7 +146,7 @@ class ListTemplateRulesRequest:
         规则状态  '1查询全部，2已启动，3未启用'
 
         :param types: The types of this ListTemplateRulesRequest.
-        :type: str
+        :type types: str
         """
         self._types = types
 
@@ -151,7 +168,7 @@ class ListTemplateRulesRequest:
         规则语言
 
         :param languages: The languages of this ListTemplateRulesRequest.
-        :type: str
+        :type languages: str
         """
         self._languages = languages
 
@@ -173,7 +190,7 @@ class ListTemplateRulesRequest:
         规则所属标签
 
         :param tags: The tags of this ListTemplateRulesRequest.
-        :type: str
+        :type tags: str
         """
         self._tags = tags
 
@@ -195,7 +212,7 @@ class ListTemplateRulesRequest:
         分页索引，偏移量
 
         :param offset: The offset of this ListTemplateRulesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -217,7 +234,7 @@ class ListTemplateRulesRequest:
         每页显示的数量
 
         :param limit: The limit of this ListTemplateRulesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowSqlExecutionPlanResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowSqlExecutionPlanResponse(SdkResponse):
     }
 
     def __init__(self, execution_plans=None, error_message=None):
-        """ShowSqlExecutionPlanResponse - a model defined in huaweicloud sdk"""
+        """ShowSqlExecutionPlanResponse
+
+        The model defined in huaweicloud sdk
+
+        :param execution_plans: SQL执行计划列表
+        :type execution_plans: list[:class:`huaweicloudsdkdas.v3.ExecutionPlan`]
+        :param error_message: SQL执行失败时，显示执行错误信息
+        :type error_message: str
+        """
         
         super(ShowSqlExecutionPlanResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ShowSqlExecutionPlanResponse(SdkResponse):
         SQL执行计划列表
 
         :return: The execution_plans of this ShowSqlExecutionPlanResponse.
-        :rtype: list[ExecutionPlan]
+        :rtype: list[:class:`huaweicloudsdkdas.v3.ExecutionPlan`]
         """
         return self._execution_plans
 
@@ -63,7 +70,7 @@ class ShowSqlExecutionPlanResponse(SdkResponse):
         SQL执行计划列表
 
         :param execution_plans: The execution_plans of this ShowSqlExecutionPlanResponse.
-        :type: list[ExecutionPlan]
+        :type execution_plans: list[:class:`huaweicloudsdkdas.v3.ExecutionPlan`]
         """
         self._execution_plans = execution_plans
 
@@ -85,7 +92,7 @@ class ShowSqlExecutionPlanResponse(SdkResponse):
         SQL执行失败时，显示执行错误信息
 
         :param error_message: The error_message of this ShowSqlExecutionPlanResponse.
-        :type: str
+        :type error_message: str
         """
         self._error_message = error_message
 

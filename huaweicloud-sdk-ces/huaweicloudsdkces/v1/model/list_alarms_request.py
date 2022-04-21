@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAlarmsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListAlarmsRequest:
     }
 
     def __init__(self, limit=None, order=None, start=None):
-        """ListAlarmsRequest - a model defined in huaweicloud sdk"""
+        """ListAlarmsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 取值范围(0,100]，默认值为100  用于限制结果数据条数。
+        :type limit: int
+        :param order: 用于标识结果排序方法。  取值说明，默认值为desc。  asc：升序 desc：降序
+        :type order: str
+        :param start: 分页起始值，内容为alarm_id。
+        :type start: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class ListAlarmsRequest:
         取值范围(0,100]，默认值为100  用于限制结果数据条数。
 
         :param limit: The limit of this ListAlarmsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -90,7 +99,7 @@ class ListAlarmsRequest:
         用于标识结果排序方法。  取值说明，默认值为desc。  asc：升序 desc：降序
 
         :param order: The order of this ListAlarmsRequest.
-        :type: str
+        :type order: str
         """
         self._order = order
 
@@ -112,7 +121,7 @@ class ListAlarmsRequest:
         分页起始值，内容为alarm_id。
 
         :param start: The start of this ListAlarmsRequest.
-        :type: str
+        :type start: str
         """
         self._start = start
 

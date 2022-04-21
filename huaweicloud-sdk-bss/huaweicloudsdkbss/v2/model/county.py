@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class County:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class County:
     }
 
     def __init__(self, code=None, name=None):
-        """County - a model defined in huaweicloud sdk"""
+        """County
+
+        The model defined in huaweicloud sdk
+
+        :param code: 区县的编码。
+        :type code: str
+        :param name: 区县的名称，根据请求的语言会传递回对应的语言的名称，目前仅支持中文。
+        :type name: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class County:
         区县的编码。
 
         :param code: The code of this County.
-        :type: str
+        :type code: str
         """
         self._code = code
 
@@ -83,7 +90,7 @@ class County:
         区县的名称，根据请求的语言会传递回对应的语言的名称，目前仅支持中文。
 
         :param name: The name of this County.
-        :type: str
+        :type name: str
         """
         self._name = name
 

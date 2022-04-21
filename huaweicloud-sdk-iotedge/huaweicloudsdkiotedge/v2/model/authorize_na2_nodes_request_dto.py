@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AuthorizeNa2NodesRequestDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class AuthorizeNa2NodesRequestDTO:
     }
 
     def __init__(self, node_ids=None):
-        """AuthorizeNa2NodesRequestDTO - a model defined in huaweicloud sdk"""
+        """AuthorizeNa2NodesRequestDTO
+
+        The model defined in huaweicloud sdk
+
+        :param node_ids: 授权北向NA信息到边缘节点的请求结构体
+        :type node_ids: object
+        """
         
         
 
@@ -57,7 +62,7 @@ class AuthorizeNa2NodesRequestDTO:
         授权北向NA信息到边缘节点的请求结构体
 
         :param node_ids: The node_ids of this AuthorizeNa2NodesRequestDTO.
-        :type: object
+        :type node_ids: object
         """
         self._node_ids = node_ids
 

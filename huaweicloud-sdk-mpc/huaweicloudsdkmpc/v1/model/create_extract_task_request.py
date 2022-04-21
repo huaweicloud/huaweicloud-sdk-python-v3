@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateExtractTaskRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateExtractTaskRequest:
     }
 
     def __init__(self, body=None):
-        """CreateExtractTaskRequest - a model defined in huaweicloud sdk"""
+        """CreateExtractTaskRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateExtractTaskRequest
+        :type body: :class:`huaweicloudsdkmpc.v1.CreateExtractTaskReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateExtractTaskRequest:
 
 
         :return: The body of this CreateExtractTaskRequest.
-        :rtype: CreateExtractTaskReq
+        :rtype: :class:`huaweicloudsdkmpc.v1.CreateExtractTaskReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateExtractTaskRequest:
 
 
         :param body: The body of this CreateExtractTaskRequest.
-        :type: CreateExtractTaskReq
+        :type body: :class:`huaweicloudsdkmpc.v1.CreateExtractTaskReq`
         """
         self._body = body
 

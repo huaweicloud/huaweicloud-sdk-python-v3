@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResourceDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ResourceDTO:
     }
 
     def __init__(self, id=None, type=None, type_id=None, count=None, expire_date=None):
-        """ResourceDTO - a model defined in huaweicloud sdk"""
+        """ResourceDTO
+
+        The model defined in huaweicloud sdk
+
+        :param id: 资源标识，不携带则后台自动生成
+        :type id: str
+        :param type: 资源类型，前台通过查询接口返回该sp支持售卖的资源在界面上做相应屏蔽，当前为枚举类型. - VMR        - 云会议室 - CONF_CALL  - 会议并发数 - HARD_1080P - 1080P硬终端 - HARD_720P  - 720P硬终端 - SOFT       - 软终端用户数 - ROOM       - 大屏软终端 - LIVE       - 直播推流 - RECORD     - 录播空间 - HARD_THIRD_PARTY - 第三方硬终端账号 - HUAWEI_VISION -智慧屏 - IDEA_HUB   - ideahub
+        :type type: str
+        :param type_id: 类型标识，比如资源类型为vmr，vmr又分为5方，10方等，该参数为vmrPkgId，用来区分子类别，详见如下： - vmr10:ff808081699b56d40169c410d5080179 - vmr50:ff808081699b56cb0169c411a0980152 - vmr100:ff808081699b56cb0169c41167850151 - vmr200:ff808081699b56d40169c410913d0178 - vmr25:ff808081699b56d40169c4111fe5017a - vmr300:ff8080816b9ec3ab016bdff237962e83 - vmr400:ff8080816b9ec475016bdff37efc279f - vmr500:ff8080816b9ec3ab016bdff338542e84
+        :type type_id: str
+        :param count: 资源数量
+        :type count: int
+        :param expire_date: 到期时间,utc时间戳
+        :type expire_date: int
+        """
         
         
 
@@ -75,7 +88,7 @@ class ResourceDTO:
         资源标识，不携带则后台自动生成
 
         :param id: The id of this ResourceDTO.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -97,7 +110,7 @@ class ResourceDTO:
         资源类型，前台通过查询接口返回该sp支持售卖的资源在界面上做相应屏蔽，当前为枚举类型. - VMR        - 云会议室 - CONF_CALL  - 会议并发数 - HARD_1080P - 1080P硬终端 - HARD_720P  - 720P硬终端 - SOFT       - 软终端用户数 - ROOM       - 大屏软终端 - LIVE       - 直播推流 - RECORD     - 录播空间 - HARD_THIRD_PARTY - 第三方硬终端账号 - HUAWEI_VISION -智慧屏 - IDEA_HUB   - ideahub
 
         :param type: The type of this ResourceDTO.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -119,7 +132,7 @@ class ResourceDTO:
         类型标识，比如资源类型为vmr，vmr又分为5方，10方等，该参数为vmrPkgId，用来区分子类别，详见如下： - vmr10:ff808081699b56d40169c410d5080179 - vmr50:ff808081699b56cb0169c411a0980152 - vmr100:ff808081699b56cb0169c41167850151 - vmr200:ff808081699b56d40169c410913d0178 - vmr25:ff808081699b56d40169c4111fe5017a - vmr300:ff8080816b9ec3ab016bdff237962e83 - vmr400:ff8080816b9ec475016bdff37efc279f - vmr500:ff8080816b9ec3ab016bdff338542e84
 
         :param type_id: The type_id of this ResourceDTO.
-        :type: str
+        :type type_id: str
         """
         self._type_id = type_id
 
@@ -141,7 +154,7 @@ class ResourceDTO:
         资源数量
 
         :param count: The count of this ResourceDTO.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -163,7 +176,7 @@ class ResourceDTO:
         到期时间,utc时间戳
 
         :param expire_date: The expire_date of this ResourceDTO.
-        :type: int
+        :type expire_date: int
         """
         self._expire_date = expire_date
 

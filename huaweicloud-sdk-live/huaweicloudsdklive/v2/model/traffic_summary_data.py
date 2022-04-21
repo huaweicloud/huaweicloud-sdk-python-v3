@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TrafficSummaryData:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class TrafficSummaryData:
     }
 
     def __init__(self, value=None, domain=None):
-        """TrafficSummaryData - a model defined in huaweicloud sdk"""
+        """TrafficSummaryData
+
+        The model defined in huaweicloud sdk
+
+        :param value: 流量，单位为byte。
+        :type value: int
+        :param domain: 域名。
+        :type domain: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class TrafficSummaryData:
         流量，单位为byte。
 
         :param value: The value of this TrafficSummaryData.
-        :type: int
+        :type value: int
         """
         self._value = value
 
@@ -85,7 +92,7 @@ class TrafficSummaryData:
         域名。
 
         :param domain: The domain of this TrafficSummaryData.
-        :type: str
+        :type domain: str
         """
         self._domain = domain
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OpenGaussCoordinators:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class OpenGaussCoordinators:
     }
 
     def __init__(self, az_code=None):
-        """OpenGaussCoordinators - a model defined in huaweicloud sdk"""
+        """OpenGaussCoordinators
+
+        The model defined in huaweicloud sdk
+
+        :param az_code: 新增CN横向扩容每个节点的可用区。如果需要扩容多个CN，请分别填写待扩容CN所在的可用区。  不同区域的可用区请参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)。  说明： 扩容后，实例中CN节点的数量必须小于或等于两倍的分片数量。
+        :type az_code: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class OpenGaussCoordinators:
         新增CN横向扩容每个节点的可用区。如果需要扩容多个CN，请分别填写待扩容CN所在的可用区。  不同区域的可用区请参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)。  说明： 扩容后，实例中CN节点的数量必须小于或等于两倍的分片数量。
 
         :param az_code: The az_code of this OpenGaussCoordinators.
-        :type: str
+        :type az_code: str
         """
         self._az_code = az_code
 

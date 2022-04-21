@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CopyInstanceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CopyInstanceRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CopyInstanceRequest - a model defined in huaweicloud sdk"""
+        """CopyInstanceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param body: Body of the CopyInstanceRequest
+        :type body: :class:`huaweicloudsdkdcs.v2.BackupInstanceBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CopyInstanceRequest:
         实例ID。
 
         :param instance_id: The instance_id of this CopyInstanceRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -72,7 +79,7 @@ class CopyInstanceRequest:
 
 
         :return: The body of this CopyInstanceRequest.
-        :rtype: BackupInstanceBody
+        :rtype: :class:`huaweicloudsdkdcs.v2.BackupInstanceBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CopyInstanceRequest:
 
 
         :param body: The body of this CopyInstanceRequest.
-        :type: BackupInstanceBody
+        :type body: :class:`huaweicloudsdkdcs.v2.BackupInstanceBody`
         """
         self._body = body
 

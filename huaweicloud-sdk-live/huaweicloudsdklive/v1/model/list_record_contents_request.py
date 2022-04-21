@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRecordContentsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ListRecordContentsRequest:
     }
 
     def __init__(self, publish_domain=None, app=None, stream=None, record_type=None, start_time=None, end_time=None, offset=None, limit=None):
-        """ListRecordContentsRequest - a model defined in huaweicloud sdk"""
+        """ListRecordContentsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param publish_domain: 直播推流放域名
+        :type publish_domain: str
+        :param app: 流应用名称
+        :type app: str
+        :param stream: 流名称
+        :type stream: str
+        :param record_type: 录制类型，包括：CONTINUOUS_RECORD，COMMAND_RECORD，PLAN_RECORD，ON_DEMAND_RECORD。默认CONTINUOUS_RECORD。 - CONTINUOUS_RECORD：持续录制，在该规则类型配置后，只要有流到推送到录制系统，就触发录制。 - COMMAND_RECORD：命令录制，在该规则类型配置后，在流推送到录制系统后，租户需要通过命令控制该流的录制开始和结束。 - PLAN_RECORD：计划录制，在该规则类型配置后，推的流如果在计划录制的时间区间则触发录制。 - ON_DEMAND_RECORD：按需录制，在该规则类型配置后，录制系统收到推流后，需要调用租户提供的接口查询录制规则，并根据规则录制。 
+        :type record_type: str
+        :param start_time: 开始时间,格式为：yyyy-mm-ddThh:mm:ssZ，UTC时间
+        :type start_time: str
+        :param end_time: 结束时间，格式为：yyyy-mm-ddThh:mm:ssZ，UTC时间
+        :type end_time: str
+        :param offset: 分页编号，从0开始算
+        :type offset: int
+        :param limit: 每页记录数，取值范围[1,100]
+        :type limit: int
+        """
         
         
 
@@ -92,7 +111,7 @@ class ListRecordContentsRequest:
         直播推流放域名
 
         :param publish_domain: The publish_domain of this ListRecordContentsRequest.
-        :type: str
+        :type publish_domain: str
         """
         self._publish_domain = publish_domain
 
@@ -114,7 +133,7 @@ class ListRecordContentsRequest:
         流应用名称
 
         :param app: The app of this ListRecordContentsRequest.
-        :type: str
+        :type app: str
         """
         self._app = app
 
@@ -136,7 +155,7 @@ class ListRecordContentsRequest:
         流名称
 
         :param stream: The stream of this ListRecordContentsRequest.
-        :type: str
+        :type stream: str
         """
         self._stream = stream
 
@@ -158,7 +177,7 @@ class ListRecordContentsRequest:
         录制类型，包括：CONTINUOUS_RECORD，COMMAND_RECORD，PLAN_RECORD，ON_DEMAND_RECORD。默认CONTINUOUS_RECORD。 - CONTINUOUS_RECORD：持续录制，在该规则类型配置后，只要有流到推送到录制系统，就触发录制。 - COMMAND_RECORD：命令录制，在该规则类型配置后，在流推送到录制系统后，租户需要通过命令控制该流的录制开始和结束。 - PLAN_RECORD：计划录制，在该规则类型配置后，推的流如果在计划录制的时间区间则触发录制。 - ON_DEMAND_RECORD：按需录制，在该规则类型配置后，录制系统收到推流后，需要调用租户提供的接口查询录制规则，并根据规则录制。 
 
         :param record_type: The record_type of this ListRecordContentsRequest.
-        :type: str
+        :type record_type: str
         """
         self._record_type = record_type
 
@@ -180,7 +199,7 @@ class ListRecordContentsRequest:
         开始时间,格式为：yyyy-mm-ddThh:mm:ssZ，UTC时间
 
         :param start_time: The start_time of this ListRecordContentsRequest.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -202,7 +221,7 @@ class ListRecordContentsRequest:
         结束时间，格式为：yyyy-mm-ddThh:mm:ssZ，UTC时间
 
         :param end_time: The end_time of this ListRecordContentsRequest.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -224,7 +243,7 @@ class ListRecordContentsRequest:
         分页编号，从0开始算
 
         :param offset: The offset of this ListRecordContentsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -246,7 +265,7 @@ class ListRecordContentsRequest:
         每页记录数，取值范围[1,100]
 
         :param limit: The limit of this ListRecordContentsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

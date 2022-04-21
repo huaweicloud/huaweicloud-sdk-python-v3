@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApiAclCreate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ApiAclCreate:
     }
 
     def __init__(self, acl_name=None, acl_type=None, acl_value=None, entity_type=None):
-        """ApiAclCreate - a model defined in huaweicloud sdk"""
+        """ApiAclCreate
+
+        The model defined in huaweicloud sdk
+
+        :param acl_name: ACL策略名称。支持汉字，英文，数字，下划线，且只能以英文和汉字开头，3 ~ 64字符。 &gt; 中文字符必须为UTF-8或者unicode编码。
+        :type acl_name: str
+        :param acl_type: 类型 -  PERMIT (白名单类型) -  DENY (黑名单类型)
+        :type acl_type: str
+        :param acl_value: ACL策略值，支持一个或多个值，使用英文半角逗号分隔
+        :type acl_value: str
+        :param entity_type: 对象类型： - IP - DOMAIN
+        :type entity_type: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class ApiAclCreate:
         ACL策略名称。支持汉字，英文，数字，下划线，且只能以英文和汉字开头，3 ~ 64字符。 > 中文字符必须为UTF-8或者unicode编码。
 
         :param acl_name: The acl_name of this ApiAclCreate.
-        :type: str
+        :type acl_name: str
         """
         self._acl_name = acl_name
 
@@ -91,7 +102,7 @@ class ApiAclCreate:
         类型 -  PERMIT (白名单类型) -  DENY (黑名单类型)
 
         :param acl_type: The acl_type of this ApiAclCreate.
-        :type: str
+        :type acl_type: str
         """
         self._acl_type = acl_type
 
@@ -113,7 +124,7 @@ class ApiAclCreate:
         ACL策略值，支持一个或多个值，使用英文半角逗号分隔
 
         :param acl_value: The acl_value of this ApiAclCreate.
-        :type: str
+        :type acl_value: str
         """
         self._acl_value = acl_value
 
@@ -135,7 +146,7 @@ class ApiAclCreate:
         对象类型： - IP - DOMAIN
 
         :param entity_type: The entity_type of this ApiAclCreate.
-        :type: str
+        :type entity_type: str
         """
         self._entity_type = entity_type
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LinksInfoResponse:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class LinksInfoResponse:
     }
 
     def __init__(self, href=None, rel=None):
-        """LinksInfoResponse - a model defined in huaweicloud sdk"""
+        """LinksInfoResponse
+
+        The model defined in huaweicloud sdk
+
+        :param href: 对应该API的URL
+        :type href: str
+        :param rel: 取值为“self”，表示href为本地链接。
+        :type rel: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class LinksInfoResponse:
         对应该API的URL
 
         :param href: The href of this LinksInfoResponse.
-        :type: str
+        :type href: str
         """
         self._href = href
 
@@ -85,7 +92,7 @@ class LinksInfoResponse:
         取值为“self”，表示href为本地链接。
 
         :param rel: The rel of this LinksInfoResponse.
-        :type: str
+        :type rel: str
         """
         self._rel = rel
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AssetModRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class AssetModRequest:
     }
 
     def __init__(self, name=None, display_name=None, parent=None, properties=None, analyses=None):
-        """AssetModRequest - a model defined in huaweicloud sdk"""
+        """AssetModRequest
+
+        The model defined in huaweicloud sdk
+
+        :param name: 资产名称，修改资产时，null或不携带代表不修改，正则：\&quot;^[a-zA-Z][a-zA-Z0-9_-]{0,63}$\&quot;
+        :type name: str
+        :param display_name: 资产显示名称，修改资产时，\&quot;\&quot;代表配置为空、null或不携带代表不修改，正则：\&quot;^[\\\\u4E00-\\\\u9FA5A-Za-z0-9_@#.-]{0,64}$\&quot;
+        :type display_name: str
+        :param parent: 父资产ID，根资产的父资产ID为null，修改资产时，null或不携带代表不修改
+        :type parent: str
+        :param properties: 属性集，最多200个
+        :type properties: list[:class:`huaweicloudsdkiotanalytics.v1.PropertyRequest`]
+        :param analyses: 分析任务集，最多50个
+        :type analyses: list[:class:`huaweicloudsdkiotanalytics.v1.AnalysisRequest`]
+        """
         
         
 
@@ -78,7 +91,7 @@ class AssetModRequest:
         资产名称，修改资产时，null或不携带代表不修改，正则：\"^[a-zA-Z][a-zA-Z0-9_-]{0,63}$\"
 
         :param name: The name of this AssetModRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -100,7 +113,7 @@ class AssetModRequest:
         资产显示名称，修改资产时，\"\"代表配置为空、null或不携带代表不修改，正则：\"^[\\\\u4E00-\\\\u9FA5A-Za-z0-9_@#.-]{0,64}$\"
 
         :param display_name: The display_name of this AssetModRequest.
-        :type: str
+        :type display_name: str
         """
         self._display_name = display_name
 
@@ -122,7 +135,7 @@ class AssetModRequest:
         父资产ID，根资产的父资产ID为null，修改资产时，null或不携带代表不修改
 
         :param parent: The parent of this AssetModRequest.
-        :type: str
+        :type parent: str
         """
         self._parent = parent
 
@@ -133,7 +146,7 @@ class AssetModRequest:
         属性集，最多200个
 
         :return: The properties of this AssetModRequest.
-        :rtype: list[PropertyRequest]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.PropertyRequest`]
         """
         return self._properties
 
@@ -144,7 +157,7 @@ class AssetModRequest:
         属性集，最多200个
 
         :param properties: The properties of this AssetModRequest.
-        :type: list[PropertyRequest]
+        :type properties: list[:class:`huaweicloudsdkiotanalytics.v1.PropertyRequest`]
         """
         self._properties = properties
 
@@ -155,7 +168,7 @@ class AssetModRequest:
         分析任务集，最多50个
 
         :return: The analyses of this AssetModRequest.
-        :rtype: list[AnalysisRequest]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.AnalysisRequest`]
         """
         return self._analyses
 
@@ -166,7 +179,7 @@ class AssetModRequest:
         分析任务集，最多50个
 
         :param analyses: The analyses of this AssetModRequest.
-        :type: list[AnalysisRequest]
+        :type analyses: list[:class:`huaweicloudsdkiotanalytics.v1.AnalysisRequest`]
         """
         self._analyses = analyses
 

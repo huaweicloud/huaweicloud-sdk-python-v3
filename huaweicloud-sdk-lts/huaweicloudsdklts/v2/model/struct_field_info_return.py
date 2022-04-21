@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StructFieldInfoReturn:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class StructFieldInfoReturn:
     }
 
     def __init__(self, field_name=None, type=None, content=None, is_analysis=None, index=None):
-        """StructFieldInfoReturn - a model defined in huaweicloud sdk"""
+        """StructFieldInfoReturn
+
+        The model defined in huaweicloud sdk
+
+        :param field_name: 字段名称
+        :type field_name: str
+        :param type: 字段数据类型
+        :type type: str
+        :param content: 字段内容
+        :type content: str
+        :param is_analysis: 结构化方式
+        :type is_analysis: bool
+        :param index: 序号
+        :type index: int
+        """
         
         
 
@@ -78,7 +91,7 @@ class StructFieldInfoReturn:
         字段名称
 
         :param field_name: The field_name of this StructFieldInfoReturn.
-        :type: str
+        :type field_name: str
         """
         self._field_name = field_name
 
@@ -100,7 +113,7 @@ class StructFieldInfoReturn:
         字段数据类型
 
         :param type: The type of this StructFieldInfoReturn.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -122,7 +135,7 @@ class StructFieldInfoReturn:
         字段内容
 
         :param content: The content of this StructFieldInfoReturn.
-        :type: str
+        :type content: str
         """
         self._content = content
 
@@ -144,7 +157,7 @@ class StructFieldInfoReturn:
         结构化方式
 
         :param is_analysis: The is_analysis of this StructFieldInfoReturn.
-        :type: bool
+        :type is_analysis: bool
         """
         self._is_analysis = is_analysis
 
@@ -166,7 +179,7 @@ class StructFieldInfoReturn:
         序号
 
         :param index: The index of this StructFieldInfoReturn.
-        :type: int
+        :type index: int
         """
         self._index = index
 

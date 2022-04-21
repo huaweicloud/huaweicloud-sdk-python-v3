@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StreamResponse:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class StreamResponse:
     }
 
     def __init__(self, inputs=None, job_id=None, outputs=None):
-        """StreamResponse - a model defined in huaweicloud sdk"""
+        """StreamResponse
+
+        The model defined in huaweicloud sdk
+
+        :param inputs: 输入参数
+        :type inputs: list[:class:`huaweicloudsdkiotanalytics.v1.InputResponse`]
+        :param job_id: 流计算任务ID
+        :type job_id: str
+        :param outputs: 输出属性，最多支持10个
+        :type outputs: list[:class:`huaweicloudsdkiotanalytics.v1.StreamOutput`]
+        """
         
         
 
@@ -57,7 +66,7 @@ class StreamResponse:
         输入参数
 
         :return: The inputs of this StreamResponse.
-        :rtype: list[InputResponse]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.InputResponse`]
         """
         return self._inputs
 
@@ -68,7 +77,7 @@ class StreamResponse:
         输入参数
 
         :param inputs: The inputs of this StreamResponse.
-        :type: list[InputResponse]
+        :type inputs: list[:class:`huaweicloudsdkiotanalytics.v1.InputResponse`]
         """
         self._inputs = inputs
 
@@ -90,7 +99,7 @@ class StreamResponse:
         流计算任务ID
 
         :param job_id: The job_id of this StreamResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -101,7 +110,7 @@ class StreamResponse:
         输出属性，最多支持10个
 
         :return: The outputs of this StreamResponse.
-        :rtype: list[StreamOutput]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.StreamOutput`]
         """
         return self._outputs
 
@@ -112,7 +121,7 @@ class StreamResponse:
         输出属性，最多支持10个
 
         :param outputs: The outputs of this StreamResponse.
-        :type: list[StreamOutput]
+        :type outputs: list[:class:`huaweicloudsdkiotanalytics.v1.StreamOutput`]
         """
         self._outputs = outputs
 

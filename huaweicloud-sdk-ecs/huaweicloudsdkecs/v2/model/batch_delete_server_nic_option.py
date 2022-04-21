@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchDeleteServerNicOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchDeleteServerNicOption:
     }
 
     def __init__(self, id=None):
-        """BatchDeleteServerNicOption - a model defined in huaweicloud sdk"""
+        """BatchDeleteServerNicOption
+
+        The model defined in huaweicloud sdk
+
+        :param id: 网卡Port ID。
+        :type id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class BatchDeleteServerNicOption:
         网卡Port ID。
 
         :param id: The id of this BatchDeleteServerNicOption.
-        :type: str
+        :type id: str
         """
         self._id = id
 

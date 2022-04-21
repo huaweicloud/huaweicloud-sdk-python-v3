@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateOrDeleteInstanceTags:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateOrDeleteInstanceTags:
     }
 
     def __init__(self, action=None, tags=None):
-        """CreateOrDeleteInstanceTags - a model defined in huaweicloud sdk"""
+        """CreateOrDeleteInstanceTags
+
+        The model defined in huaweicloud sdk
+
+        :param action: 操作标识：仅限于create（创建）、delete（删除）。
+        :type action: str
+        :param tags: 标签列表。
+        :type tags: list[:class:`huaweicloudsdkdcs.v2.ResourceTag`]
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateOrDeleteInstanceTags:
         操作标识：仅限于create（创建）、delete（删除）。
 
         :param action: The action of this CreateOrDeleteInstanceTags.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -73,7 +80,7 @@ class CreateOrDeleteInstanceTags:
         标签列表。
 
         :return: The tags of this CreateOrDeleteInstanceTags.
-        :rtype: list[ResourceTag]
+        :rtype: list[:class:`huaweicloudsdkdcs.v2.ResourceTag`]
         """
         return self._tags
 
@@ -84,7 +91,7 @@ class CreateOrDeleteInstanceTags:
         标签列表。
 
         :param tags: The tags of this CreateOrDeleteInstanceTags.
-        :type: list[ResourceTag]
+        :type tags: list[:class:`huaweicloudsdkdcs.v2.ResourceTag`]
         """
         self._tags = tags
 

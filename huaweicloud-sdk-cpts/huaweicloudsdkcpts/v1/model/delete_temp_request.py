@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteTempRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteTempRequest:
     }
 
     def __init__(self, template_id=None):
-        """DeleteTempRequest - a model defined in huaweicloud sdk"""
+        """DeleteTempRequest
+
+        The model defined in huaweicloud sdk
+
+        :param template_id: 事务id
+        :type template_id: int
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteTempRequest:
         事务id
 
         :param template_id: The template_id of this DeleteTempRequest.
-        :type: int
+        :type template_id: int
         """
         self._template_id = template_id
 

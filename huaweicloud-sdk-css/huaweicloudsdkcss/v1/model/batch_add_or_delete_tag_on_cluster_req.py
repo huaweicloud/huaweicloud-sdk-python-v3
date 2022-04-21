@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchAddOrDeleteTagOnClusterReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class BatchAddOrDeleteTagOnClusterReq:
     }
 
     def __init__(self, action=None, tags=None, sys_tags=None):
-        """BatchAddOrDeleteTagOnClusterReq - a model defined in huaweicloud sdk"""
+        """BatchAddOrDeleteTagOnClusterReq
+
+        The model defined in huaweicloud sdk
+
+        :param action: 操作类型。 说明：通过该属性标识当前所需的操作类型。 - create：批量添加标签。 - delete：批量删除标签。
+        :type action: str
+        :param tags: 标签列表。
+        :type tags: list[:class:`huaweicloudsdkcss.v1.Tag`]
+        :param sys_tags: 标签列表。
+        :type sys_tags: list[:class:`huaweicloudsdkcss.v1.SysTags`]
+        """
         
         
 
@@ -66,7 +75,7 @@ class BatchAddOrDeleteTagOnClusterReq:
         操作类型。 说明：通过该属性标识当前所需的操作类型。 - create：批量添加标签。 - delete：批量删除标签。
 
         :param action: The action of this BatchAddOrDeleteTagOnClusterReq.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -77,7 +86,7 @@ class BatchAddOrDeleteTagOnClusterReq:
         标签列表。
 
         :return: The tags of this BatchAddOrDeleteTagOnClusterReq.
-        :rtype: list[Tag]
+        :rtype: list[:class:`huaweicloudsdkcss.v1.Tag`]
         """
         return self._tags
 
@@ -88,7 +97,7 @@ class BatchAddOrDeleteTagOnClusterReq:
         标签列表。
 
         :param tags: The tags of this BatchAddOrDeleteTagOnClusterReq.
-        :type: list[Tag]
+        :type tags: list[:class:`huaweicloudsdkcss.v1.Tag`]
         """
         self._tags = tags
 
@@ -99,7 +108,7 @@ class BatchAddOrDeleteTagOnClusterReq:
         标签列表。
 
         :return: The sys_tags of this BatchAddOrDeleteTagOnClusterReq.
-        :rtype: list[SysTags]
+        :rtype: list[:class:`huaweicloudsdkcss.v1.SysTags`]
         """
         return self._sys_tags
 
@@ -110,7 +119,7 @@ class BatchAddOrDeleteTagOnClusterReq:
         标签列表。
 
         :param sys_tags: The sys_tags of this BatchAddOrDeleteTagOnClusterReq.
-        :type: list[SysTags]
+        :type sys_tags: list[:class:`huaweicloudsdkcss.v1.SysTags`]
         """
         self._sys_tags = sys_tags
 

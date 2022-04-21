@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SelectorConfigBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class SelectorConfigBody:
     }
 
     def __init__(self, all_supported=None, resource_types=None):
-        """SelectorConfigBody - a model defined in huaweicloud sdk"""
+        """SelectorConfigBody
+
+        The model defined in huaweicloud sdk
+
+        :param all_supported: 是否选择所有支持的资源
+        :type all_supported: bool
+        :param resource_types: 资源类型列表
+        :type resource_types: list[str]
+        """
         
         
 
@@ -61,7 +68,7 @@ class SelectorConfigBody:
         是否选择所有支持的资源
 
         :param all_supported: The all_supported of this SelectorConfigBody.
-        :type: bool
+        :type all_supported: bool
         """
         self._all_supported = all_supported
 
@@ -83,7 +90,7 @@ class SelectorConfigBody:
         资源类型列表
 
         :param resource_types: The resource_types of this SelectorConfigBody.
-        :type: list[str]
+        :type resource_types: list[str]
         """
         self._resource_types = resource_types
 

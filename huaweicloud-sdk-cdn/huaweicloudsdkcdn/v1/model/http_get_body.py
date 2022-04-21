@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class HttpGetBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class HttpGetBody:
     }
 
     def __init__(self, https_status=None, certificate_name=None, certificate_value=None, certificate_source=None, http2_status=None):
-        """HttpGetBody - a model defined in huaweicloud sdk"""
+        """HttpGetBody
+
+        The model defined in huaweicloud sdk
+
+        :param https_status: HTTPS证书是否启用。（on：开启，off：关闭）
+        :type https_status: str
+        :param certificate_name: 证书名字。（长度限制为3-32字符）。当证书开启时必返回该字段。
+        :type certificate_name: str
+        :param certificate_value: HTTPS协议使用的证书内容，当证书开启时必返回该字段。取值范围：PEM编码格式。
+        :type certificate_value: str
+        :param certificate_source: 证书来源。1：代表华为云托管证书；0：表示自有证书。 默认值0。当证书开启时必返回该字段。
+        :type certificate_source: int
+        :param http2_status: 是否使用HTTP2.0。（on：是，off：否）
+        :type http2_status: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class HttpGetBody:
         HTTPS证书是否启用。（on：开启，off：关闭）
 
         :param https_status: The https_status of this HttpGetBody.
-        :type: str
+        :type https_status: str
         """
         self._https_status = https_status
 
@@ -100,7 +113,7 @@ class HttpGetBody:
         证书名字。（长度限制为3-32字符）。当证书开启时必返回该字段。
 
         :param certificate_name: The certificate_name of this HttpGetBody.
-        :type: str
+        :type certificate_name: str
         """
         self._certificate_name = certificate_name
 
@@ -122,7 +135,7 @@ class HttpGetBody:
         HTTPS协议使用的证书内容，当证书开启时必返回该字段。取值范围：PEM编码格式。
 
         :param certificate_value: The certificate_value of this HttpGetBody.
-        :type: str
+        :type certificate_value: str
         """
         self._certificate_value = certificate_value
 
@@ -144,7 +157,7 @@ class HttpGetBody:
         证书来源。1：代表华为云托管证书；0：表示自有证书。 默认值0。当证书开启时必返回该字段。
 
         :param certificate_source: The certificate_source of this HttpGetBody.
-        :type: int
+        :type certificate_source: int
         """
         self._certificate_source = certificate_source
 
@@ -166,7 +179,7 @@ class HttpGetBody:
         是否使用HTTP2.0。（on：是，off：否）
 
         :param http2_status: The http2_status of this HttpGetBody.
-        :type: str
+        :type http2_status: str
         """
         self._http2_status = http2_status
 

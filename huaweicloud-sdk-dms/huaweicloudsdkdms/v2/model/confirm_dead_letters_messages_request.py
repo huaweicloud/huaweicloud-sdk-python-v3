@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ConfirmDeadLettersMessagesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ConfirmDeadLettersMessagesRequest:
     }
 
     def __init__(self, queue_id=None, consumer_group_id=None, body=None):
-        """ConfirmDeadLettersMessagesRequest - a model defined in huaweicloud sdk"""
+        """ConfirmDeadLettersMessagesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param queue_id: 队列ID。
+        :type queue_id: str
+        :param consumer_group_id: 消费组ID。
+        :type consumer_group_id: str
+        :param body: Body of the ConfirmDeadLettersMessagesRequest
+        :type body: :class:`huaweicloudsdkdms.v2.ConfirmDeadLettersMessagesReq`
+        """
         
         
 
@@ -66,7 +75,7 @@ class ConfirmDeadLettersMessagesRequest:
         队列ID。
 
         :param queue_id: The queue_id of this ConfirmDeadLettersMessagesRequest.
-        :type: str
+        :type queue_id: str
         """
         self._queue_id = queue_id
 
@@ -88,7 +97,7 @@ class ConfirmDeadLettersMessagesRequest:
         消费组ID。
 
         :param consumer_group_id: The consumer_group_id of this ConfirmDeadLettersMessagesRequest.
-        :type: str
+        :type consumer_group_id: str
         """
         self._consumer_group_id = consumer_group_id
 
@@ -98,7 +107,7 @@ class ConfirmDeadLettersMessagesRequest:
 
 
         :return: The body of this ConfirmDeadLettersMessagesRequest.
-        :rtype: ConfirmDeadLettersMessagesReq
+        :rtype: :class:`huaweicloudsdkdms.v2.ConfirmDeadLettersMessagesReq`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class ConfirmDeadLettersMessagesRequest:
 
 
         :param body: The body of this ConfirmDeadLettersMessagesRequest.
-        :type: ConfirmDeadLettersMessagesReq
+        :type body: :class:`huaweicloudsdkdms.v2.ConfirmDeadLettersMessagesReq`
         """
         self._body = body
 

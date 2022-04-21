@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StartWorkflowExecutionRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class StartWorkflowExecutionRequestBody:
     }
 
     def __init__(self, headers=None, input=None):
-        """StartWorkflowExecutionRequestBody - a model defined in huaweicloud sdk"""
+        """StartWorkflowExecutionRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param headers: 函数执行时需要的Header
+        :type headers: object
+        :param input: 定义函数执行时的入参，支持使用JSONPATH进行映射，以及指定默认值
+        :type input: object
+        """
         
         
 
@@ -63,7 +70,7 @@ class StartWorkflowExecutionRequestBody:
         函数执行时需要的Header
 
         :param headers: The headers of this StartWorkflowExecutionRequestBody.
-        :type: object
+        :type headers: object
         """
         self._headers = headers
 
@@ -85,7 +92,7 @@ class StartWorkflowExecutionRequestBody:
         定义函数执行时的入参，支持使用JSONPATH进行映射，以及指定默认值
 
         :param input: The input of this StartWorkflowExecutionRequestBody.
-        :type: object
+        :type input: object
         """
         self._input = input
 

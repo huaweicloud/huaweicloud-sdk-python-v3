@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListFlavorsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListFlavorsRequest:
     }
 
     def __init__(self, spec_code=None, cache_mode=None, engine=None, engine_version=None, cpu_type=None, capacity=None):
-        """ListFlavorsRequest - a model defined in huaweicloud sdk"""
+        """ListFlavorsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param spec_code: 产品规格编码。
+        :type spec_code: str
+        :param cache_mode: 缓存实例类型。取值范围如下： - single：表示单机实例 - ha：表示主备实例 - cluster：表示cluster集群实例 - proxy：表示Proxy集群实例 - ha_rw_split： 表示读写分离实例 
+        :type cache_mode: str
+        :param engine: 缓存引擎类型。取值范围如下： - Redis - Memcached 
+        :type engine: str
+        :param engine_version: 缓存版本，当缓存引擎为Redis时，取值范围如下： - 3.0 - 4.0 - 5.0 
+        :type engine_version: str
+        :param cpu_type: CPU架构类型。取值范围如下： - x86_64：X86架构 - aarch64：ARM架构 
+        :type cpu_type: str
+        :param capacity: 缓存容量（G Byte）。 - Redis3.0：单机和主备类型实例取值：2、4、8、16、32、64。Proxy集群实例规格支持64、128、256、512和1024。 - Redis4.0和Redis5.0：单机和主备类型实例取值：0.125、0.25、0.5、1、2、4、8、16、32、64。Cluster集群实例规格支持24、32、48、64、96、128、192、256、384、512、768、1024。 - Memcached：单机和主备类型实例取值：2、4、8、16、32、64。 
+        :type capacity: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class ListFlavorsRequest:
         产品规格编码。
 
         :param spec_code: The spec_code of this ListFlavorsRequest.
-        :type: str
+        :type spec_code: str
         """
         self._spec_code = spec_code
 
@@ -105,7 +120,7 @@ class ListFlavorsRequest:
         缓存实例类型。取值范围如下： - single：表示单机实例 - ha：表示主备实例 - cluster：表示cluster集群实例 - proxy：表示Proxy集群实例 - ha_rw_split： 表示读写分离实例 
 
         :param cache_mode: The cache_mode of this ListFlavorsRequest.
-        :type: str
+        :type cache_mode: str
         """
         self._cache_mode = cache_mode
 
@@ -127,7 +142,7 @@ class ListFlavorsRequest:
         缓存引擎类型。取值范围如下： - Redis - Memcached 
 
         :param engine: The engine of this ListFlavorsRequest.
-        :type: str
+        :type engine: str
         """
         self._engine = engine
 
@@ -149,7 +164,7 @@ class ListFlavorsRequest:
         缓存版本，当缓存引擎为Redis时，取值范围如下： - 3.0 - 4.0 - 5.0 
 
         :param engine_version: The engine_version of this ListFlavorsRequest.
-        :type: str
+        :type engine_version: str
         """
         self._engine_version = engine_version
 
@@ -171,7 +186,7 @@ class ListFlavorsRequest:
         CPU架构类型。取值范围如下： - x86_64：X86架构 - aarch64：ARM架构 
 
         :param cpu_type: The cpu_type of this ListFlavorsRequest.
-        :type: str
+        :type cpu_type: str
         """
         self._cpu_type = cpu_type
 
@@ -193,7 +208,7 @@ class ListFlavorsRequest:
         缓存容量（G Byte）。 - Redis3.0：单机和主备类型实例取值：2、4、8、16、32、64。Proxy集群实例规格支持64、128、256、512和1024。 - Redis4.0和Redis5.0：单机和主备类型实例取值：0.125、0.25、0.5、1、2、4、8、16、32、64。Cluster集群实例规格支持24、32、48、64、96、128、192、256、384、512、768、1024。 - Memcached：单机和主备类型实例取值：2、4、8、16、32、64。 
 
         :param capacity: The capacity of this ListFlavorsRequest.
-        :type: str
+        :type capacity: str
         """
         self._capacity = capacity
 

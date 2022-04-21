@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListNatGatewaySnatRulesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListNatGatewaySnatRulesResponse(SdkResponse):
     }
 
     def __init__(self, snat_rules=None):
-        """ListNatGatewaySnatRulesResponse - a model defined in huaweicloud sdk"""
+        """ListNatGatewaySnatRulesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param snat_rules: 查询SNAT规则列表的响应体。
+        :type snat_rules: list[:class:`huaweicloudsdknat.v2.NatGatewaySnatRuleResponseBody`]
+        """
         
         super(ListNatGatewaySnatRulesResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListNatGatewaySnatRulesResponse(SdkResponse):
         查询SNAT规则列表的响应体。
 
         :return: The snat_rules of this ListNatGatewaySnatRulesResponse.
-        :rtype: list[NatGatewaySnatRuleResponseBody]
+        :rtype: list[:class:`huaweicloudsdknat.v2.NatGatewaySnatRuleResponseBody`]
         """
         return self._snat_rules
 
@@ -58,7 +63,7 @@ class ListNatGatewaySnatRulesResponse(SdkResponse):
         查询SNAT规则列表的响应体。
 
         :param snat_rules: The snat_rules of this ListNatGatewaySnatRulesResponse.
-        :type: list[NatGatewaySnatRuleResponseBody]
+        :type snat_rules: list[:class:`huaweicloudsdknat.v2.NatGatewaySnatRuleResponseBody`]
         """
         self._snat_rules = snat_rules
 

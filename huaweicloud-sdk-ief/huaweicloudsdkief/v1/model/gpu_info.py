@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GpuInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class GpuInfo:
     }
 
     def __init__(self, name=None, type=None, capacity=None):
-        """GpuInfo - a model defined in huaweicloud sdk"""
+        """GpuInfo
+
+        The model defined in huaweicloud sdk
+
+        :param name: GPU名称
+        :type name: str
+        :param type: GPU类型
+        :type type: str
+        :param capacity: GPU memory大小，单位MB
+        :type capacity: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class GpuInfo:
         GPU名称
 
         :param name: The name of this GpuInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -90,7 +99,7 @@ class GpuInfo:
         GPU类型
 
         :param type: The type of this GpuInfo.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -112,7 +121,7 @@ class GpuInfo:
         GPU memory大小，单位MB
 
         :param capacity: The capacity of this GpuInfo.
-        :type: str
+        :type capacity: str
         """
         self._capacity = capacity
 

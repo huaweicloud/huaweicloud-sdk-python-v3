@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NovaSimpleKeypair:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class NovaSimpleKeypair:
     }
 
     def __init__(self, fingerprint=None, name=None, public_key=None, type=None):
-        """NovaSimpleKeypair - a model defined in huaweicloud sdk"""
+        """NovaSimpleKeypair
+
+        The model defined in huaweicloud sdk
+
+        :param fingerprint: 密钥对应指纹信息。
+        :type fingerprint: str
+        :param name: 密钥名称。
+        :type name: str
+        :param public_key: 密钥对应publicKey信息。
+        :type public_key: str
+        :param type: 密钥类型，默认“ssh”  微版本2.2以上支持
+        :type type: str
+        """
         
         
 
@@ -70,7 +81,7 @@ class NovaSimpleKeypair:
         密钥对应指纹信息。
 
         :param fingerprint: The fingerprint of this NovaSimpleKeypair.
-        :type: str
+        :type fingerprint: str
         """
         self._fingerprint = fingerprint
 
@@ -92,7 +103,7 @@ class NovaSimpleKeypair:
         密钥名称。
 
         :param name: The name of this NovaSimpleKeypair.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -114,7 +125,7 @@ class NovaSimpleKeypair:
         密钥对应publicKey信息。
 
         :param public_key: The public_key of this NovaSimpleKeypair.
-        :type: str
+        :type public_key: str
         """
         self._public_key = public_key
 
@@ -136,7 +147,7 @@ class NovaSimpleKeypair:
         密钥类型，默认“ssh”  微版本2.2以上支持
 
         :param type: The type of this NovaSimpleKeypair.
-        :type: str
+        :type type: str
         """
         self._type = type
 

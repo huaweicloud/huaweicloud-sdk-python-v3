@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RecordData:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RecordData:
     }
 
     def __init__(self, concurrent_count=None, time=None):
-        """RecordData - a model defined in huaweicloud sdk"""
+        """RecordData
+
+        The model defined in huaweicloud sdk
+
+        :param concurrent_count: 最大并发路数。
+        :type concurrent_count: int
+        :param time: 采样时间，每小时内最大并发路数时间点。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ 。
+        :type time: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class RecordData:
         最大并发路数。
 
         :param concurrent_count: The concurrent_count of this RecordData.
-        :type: int
+        :type concurrent_count: int
         """
         self._concurrent_count = concurrent_count
 
@@ -85,7 +92,7 @@ class RecordData:
         采样时间，每小时内最大并发路数时间点。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ 。
 
         :param time: The time of this RecordData.
-        :type: str
+        :type time: str
         """
         self._time = time
 

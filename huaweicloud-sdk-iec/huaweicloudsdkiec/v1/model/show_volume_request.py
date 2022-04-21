@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowVolumeRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowVolumeRequest:
     }
 
     def __init__(self, volume_id=None):
-        """ShowVolumeRequest - a model defined in huaweicloud sdk"""
+        """ShowVolumeRequest
+
+        The model defined in huaweicloud sdk
+
+        :param volume_id: 磁盘ID。
+        :type volume_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowVolumeRequest:
         磁盘ID。
 
         :param volume_id: The volume_id of this ShowVolumeRequest.
-        :type: str
+        :type volume_id: str
         """
         self._volume_id = volume_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AccessPassword:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class AccessPassword:
     }
 
     def __init__(self, name=None, user=None, password=None):
-        """AccessPassword - a model defined in huaweicloud sdk"""
+        """AccessPassword
+
+        The model defined in huaweicloud sdk
+
+        :param name: 授权名称。
+        :type name: str
+        :param user: 仓库用户名。
+        :type user: str
+        :param password: 仓库密码。
+        :type password: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class AccessPassword:
         授权名称。
 
         :param name: The name of this AccessPassword.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -87,7 +96,7 @@ class AccessPassword:
         仓库用户名。
 
         :param user: The user of this AccessPassword.
-        :type: str
+        :type user: str
         """
         self._user = user
 
@@ -109,7 +118,7 @@ class AccessPassword:
         仓库密码。
 
         :param password: The password of this AccessPassword.
-        :type: str
+        :type password: str
         """
         self._password = password
 

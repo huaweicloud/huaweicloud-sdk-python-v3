@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TriggerHistories:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class TriggerHistories:
     }
 
     def __init__(self, action=None, app_type=None, application=None, cluster_id=None, cluster_name=None, cluster_ns=None, condition=None, container=None, created_at=None, creator_name=None, detail=None, result=None, tag=None):
-        """TriggerHistories - a model defined in huaweicloud sdk"""
+        """TriggerHistories
+
+        The model defined in huaweicloud sdk
+
+        :param action: 触发动作，update
+        :type action: str
+        :param app_type: 应用类型，deployments、statefulsets
+        :type app_type: str
+        :param application: 应用名
+        :type application: str
+        :param cluster_id: 集群ID（cci时为空）
+        :type cluster_id: str
+        :param cluster_name: 集群名（cci时为空）
+        :type cluster_name: str
+        :param cluster_ns: 应用名所在的namespace
+        :type cluster_ns: str
+        :param condition: 触发条件，type为all时为.*,type为tag时为tag名,type为regular时为正则表达式
+        :type condition: str
+        :param container: 需更新的container名，默认为所有container
+        :type container: str
+        :param created_at: 创建时间
+        :type created_at: str
+        :param creator_name: 创建人
+        :type creator_name: str
+        :param detail: 详情
+        :type detail: str
+        :param result: 更新结果，success、failed
+        :type result: str
+        :param tag: 触发的版本号
+        :type tag: str
+        """
         
         
 
@@ -105,7 +134,7 @@ class TriggerHistories:
         触发动作，update
 
         :param action: The action of this TriggerHistories.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -127,7 +156,7 @@ class TriggerHistories:
         应用类型，deployments、statefulsets
 
         :param app_type: The app_type of this TriggerHistories.
-        :type: str
+        :type app_type: str
         """
         self._app_type = app_type
 
@@ -149,7 +178,7 @@ class TriggerHistories:
         应用名
 
         :param application: The application of this TriggerHistories.
-        :type: str
+        :type application: str
         """
         self._application = application
 
@@ -171,7 +200,7 @@ class TriggerHistories:
         集群ID（cci时为空）
 
         :param cluster_id: The cluster_id of this TriggerHistories.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -193,7 +222,7 @@ class TriggerHistories:
         集群名（cci时为空）
 
         :param cluster_name: The cluster_name of this TriggerHistories.
-        :type: str
+        :type cluster_name: str
         """
         self._cluster_name = cluster_name
 
@@ -215,7 +244,7 @@ class TriggerHistories:
         应用名所在的namespace
 
         :param cluster_ns: The cluster_ns of this TriggerHistories.
-        :type: str
+        :type cluster_ns: str
         """
         self._cluster_ns = cluster_ns
 
@@ -237,7 +266,7 @@ class TriggerHistories:
         触发条件，type为all时为.*,type为tag时为tag名,type为regular时为正则表达式
 
         :param condition: The condition of this TriggerHistories.
-        :type: str
+        :type condition: str
         """
         self._condition = condition
 
@@ -259,7 +288,7 @@ class TriggerHistories:
         需更新的container名，默认为所有container
 
         :param container: The container of this TriggerHistories.
-        :type: str
+        :type container: str
         """
         self._container = container
 
@@ -281,7 +310,7 @@ class TriggerHistories:
         创建时间
 
         :param created_at: The created_at of this TriggerHistories.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -303,7 +332,7 @@ class TriggerHistories:
         创建人
 
         :param creator_name: The creator_name of this TriggerHistories.
-        :type: str
+        :type creator_name: str
         """
         self._creator_name = creator_name
 
@@ -325,7 +354,7 @@ class TriggerHistories:
         详情
 
         :param detail: The detail of this TriggerHistories.
-        :type: str
+        :type detail: str
         """
         self._detail = detail
 
@@ -347,7 +376,7 @@ class TriggerHistories:
         更新结果，success、failed
 
         :param result: The result of this TriggerHistories.
-        :type: str
+        :type result: str
         """
         self._result = result
 
@@ -369,7 +398,7 @@ class TriggerHistories:
         触发的版本号
 
         :param tag: The tag of this TriggerHistories.
-        :type: str
+        :type tag: str
         """
         self._tag = tag
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowRepositoryStatisticsRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowRepositoryStatisticsRequestBody:
     }
 
     def __init__(self, branch_name=None):
-        """ShowRepositoryStatisticsRequestBody - a model defined in huaweicloud sdk"""
+        """ShowRepositoryStatisticsRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param branch_name: 仓库分支名
+        :type branch_name: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowRepositoryStatisticsRequestBody:
         仓库分支名
 
         :param branch_name: The branch_name of this ShowRepositoryStatisticsRequestBody.
-        :type: str
+        :type branch_name: str
         """
         self._branch_name = branch_name
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAuthorizedDatabasesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListAuthorizedDatabasesResponse(SdkResponse):
     }
 
     def __init__(self, databases=None, total_count=None):
-        """ListAuthorizedDatabasesResponse - a model defined in huaweicloud sdk"""
+        """ListAuthorizedDatabasesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param databases: 数据库及相关权限。
+        :type databases: list[:class:`huaweicloudsdkrds.v3.DatabaseWithPrivilege`]
+        :param total_count: 总数。
+        :type total_count: int
+        """
         
         super(ListAuthorizedDatabasesResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListAuthorizedDatabasesResponse(SdkResponse):
         数据库及相关权限。
 
         :return: The databases of this ListAuthorizedDatabasesResponse.
-        :rtype: list[DatabaseWithPrivilege]
+        :rtype: list[:class:`huaweicloudsdkrds.v3.DatabaseWithPrivilege`]
         """
         return self._databases
 
@@ -63,7 +70,7 @@ class ListAuthorizedDatabasesResponse(SdkResponse):
         数据库及相关权限。
 
         :param databases: The databases of this ListAuthorizedDatabasesResponse.
-        :type: list[DatabaseWithPrivilege]
+        :type databases: list[:class:`huaweicloudsdkrds.v3.DatabaseWithPrivilege`]
         """
         self._databases = databases
 
@@ -85,7 +92,7 @@ class ListAuthorizedDatabasesResponse(SdkResponse):
         总数。
 
         :param total_count: The total_count of this ListAuthorizedDatabasesResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TargetDisk:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class TargetDisk:
     }
 
     def __init__(self, device_use=None, disk_id=None, name=None, physical_volumes=None, size=None, used_size=None):
-        """TargetDisk - a model defined in huaweicloud sdk"""
+        """TargetDisk
+
+        The model defined in huaweicloud sdk
+
+        :param device_use: 判断是普通分区，启动分区还是系统分区
+        :type device_use: str
+        :param disk_id: 磁盘id
+        :type disk_id: str
+        :param name: 磁盘名称
+        :type name: str
+        :param physical_volumes: 逻辑卷信息
+        :type physical_volumes: list[:class:`huaweicloudsdksms.v3.TargetPhysicalVolumes`]
+        :param size: 大小
+        :type size: int
+        :param used_size: 已使用大小
+        :type used_size: int
+        """
         
         
 
@@ -83,7 +98,7 @@ class TargetDisk:
         判断是普通分区，启动分区还是系统分区
 
         :param device_use: The device_use of this TargetDisk.
-        :type: str
+        :type device_use: str
         """
         self._device_use = device_use
 
@@ -105,7 +120,7 @@ class TargetDisk:
         磁盘id
 
         :param disk_id: The disk_id of this TargetDisk.
-        :type: str
+        :type disk_id: str
         """
         self._disk_id = disk_id
 
@@ -127,7 +142,7 @@ class TargetDisk:
         磁盘名称
 
         :param name: The name of this TargetDisk.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -138,7 +153,7 @@ class TargetDisk:
         逻辑卷信息
 
         :return: The physical_volumes of this TargetDisk.
-        :rtype: list[TargetPhysicalVolumes]
+        :rtype: list[:class:`huaweicloudsdksms.v3.TargetPhysicalVolumes`]
         """
         return self._physical_volumes
 
@@ -149,7 +164,7 @@ class TargetDisk:
         逻辑卷信息
 
         :param physical_volumes: The physical_volumes of this TargetDisk.
-        :type: list[TargetPhysicalVolumes]
+        :type physical_volumes: list[:class:`huaweicloudsdksms.v3.TargetPhysicalVolumes`]
         """
         self._physical_volumes = physical_volumes
 
@@ -171,7 +186,7 @@ class TargetDisk:
         大小
 
         :param size: The size of this TargetDisk.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -193,7 +208,7 @@ class TargetDisk:
         已使用大小
 
         :param used_size: The used_size of this TargetDisk.
-        :type: int
+        :type used_size: int
         """
         self._used_size = used_size
 

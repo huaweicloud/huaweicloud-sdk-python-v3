@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateServerGroupRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateServerGroupRequestBody:
     }
 
     def __init__(self, server_group=None):
-        """CreateServerGroupRequestBody - a model defined in huaweicloud sdk"""
+        """CreateServerGroupRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param server_group: 
+        :type server_group: :class:`huaweicloudsdkecs.v2.CreateServerGroupOption`
+        """
         
         
 
@@ -45,7 +50,7 @@ class CreateServerGroupRequestBody:
 
 
         :return: The server_group of this CreateServerGroupRequestBody.
-        :rtype: CreateServerGroupOption
+        :rtype: :class:`huaweicloudsdkecs.v2.CreateServerGroupOption`
         """
         return self._server_group
 
@@ -55,7 +60,7 @@ class CreateServerGroupRequestBody:
 
 
         :param server_group: The server_group of this CreateServerGroupRequestBody.
-        :type: CreateServerGroupOption
+        :type server_group: :class:`huaweicloudsdkecs.v2.CreateServerGroupOption`
         """
         self._server_group = server_group
 

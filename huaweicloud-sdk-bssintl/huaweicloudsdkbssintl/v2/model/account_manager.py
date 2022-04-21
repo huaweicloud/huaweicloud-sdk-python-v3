@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AccountManager:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class AccountManager:
     }
 
     def __init__(self, account_name=None):
-        """AccountManager - a model defined in huaweicloud sdk"""
+        """AccountManager
+
+        The model defined in huaweicloud sdk
+
+        :param account_name: 客户经理登录名称。
+        :type account_name: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class AccountManager:
         客户经理登录名称。
 
         :param account_name: The account_name of this AccountManager.
-        :type: str
+        :type account_name: str
         """
         self._account_name = account_name
 

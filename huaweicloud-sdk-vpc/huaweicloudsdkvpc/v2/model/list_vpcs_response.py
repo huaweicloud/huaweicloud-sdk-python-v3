@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListVpcsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListVpcsResponse(SdkResponse):
     }
 
     def __init__(self, vpcs=None):
-        """ListVpcsResponse - a model defined in huaweicloud sdk"""
+        """ListVpcsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param vpcs: vpc对象列表
+        :type vpcs: list[:class:`huaweicloudsdkvpc.v2.Vpc`]
+        """
         
         super(ListVpcsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListVpcsResponse(SdkResponse):
         vpc对象列表
 
         :return: The vpcs of this ListVpcsResponse.
-        :rtype: list[Vpc]
+        :rtype: list[:class:`huaweicloudsdkvpc.v2.Vpc`]
         """
         return self._vpcs
 
@@ -58,7 +63,7 @@ class ListVpcsResponse(SdkResponse):
         vpc对象列表
 
         :param vpcs: The vpcs of this ListVpcsResponse.
-        :type: list[Vpc]
+        :type vpcs: list[:class:`huaweicloudsdkvpc.v2.Vpc`]
         """
         self._vpcs = vpcs
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateEngressEipV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateEngressEipV2Request:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """UpdateEngressEipV2Request - a model defined in huaweicloud sdk"""
+        """UpdateEngressEipV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param body: Body of the UpdateEngressEipV2Request
+        :type body: :class:`huaweicloudsdkapig.v2.OpenEngressEipReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateEngressEipV2Request:
         实例ID
 
         :param instance_id: The instance_id of this UpdateEngressEipV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -72,7 +79,7 @@ class UpdateEngressEipV2Request:
 
 
         :return: The body of this UpdateEngressEipV2Request.
-        :rtype: OpenEngressEipReq
+        :rtype: :class:`huaweicloudsdkapig.v2.OpenEngressEipReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateEngressEipV2Request:
 
 
         :param body: The body of this UpdateEngressEipV2Request.
-        :type: OpenEngressEipReq
+        :type body: :class:`huaweicloudsdkapig.v2.OpenEngressEipReq`
         """
         self._body = body
 

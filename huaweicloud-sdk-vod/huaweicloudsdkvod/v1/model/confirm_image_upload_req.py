@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ConfirmImageUploadReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ConfirmImageUploadReq:
     }
 
     def __init__(self, id=None, status=None):
-        """ConfirmImageUploadReq - a model defined in huaweicloud sdk"""
+        """ConfirmImageUploadReq
+
+        The model defined in huaweicloud sdk
+
+        :param id: 水印配置模板id。
+        :type id: str
+        :param status: 水印上传状态。
+        :type status: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ConfirmImageUploadReq:
         水印配置模板id。
 
         :param id: The id of this ConfirmImageUploadReq.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -83,7 +90,7 @@ class ConfirmImageUploadReq:
         水印上传状态。
 
         :param status: The status of this ConfirmImageUploadReq.
-        :type: str
+        :type status: str
         """
         self._status = status
 

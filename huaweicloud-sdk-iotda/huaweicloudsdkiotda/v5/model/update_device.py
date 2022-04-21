@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDevice:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UpdateDevice:
     }
 
     def __init__(self, device_name=None, description=None, extension_info=None, auth_info=None):
-        """UpdateDevice - a model defined in huaweicloud sdk"""
+        """UpdateDevice
+
+        The model defined in huaweicloud sdk
+
+        :param device_name: **参数说明**：设备名称。 **取值范围**：长度不超过256，只允许中文、字母、数字、以及_?&#39;#().,&amp;%@!-等字符的组合，建议不少于4个字符。
+        :type device_name: str
+        :param description: **参数说明**：设备的描述信息。 **取值范围**：长度不超过2048，只允许中文、字母、数字、以及_?&#39;#().,&amp;%@!-等字符的组合
+        :type description: str
+        :param extension_info: **参数说明**：设备扩展信息。用户可以自定义任何想要的扩展信息，修改子设备信息时不会下发给网关。
+        :type extension_info: object
+        :param auth_info: 
+        :type auth_info: :class:`huaweicloudsdkiotda.v5.AuthInfoWithoutSecret`
+        """
         
         
 
@@ -73,7 +84,7 @@ class UpdateDevice:
         **参数说明**：设备名称。 **取值范围**：长度不超过256，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合，建议不少于4个字符。
 
         :param device_name: The device_name of this UpdateDevice.
-        :type: str
+        :type device_name: str
         """
         self._device_name = device_name
 
@@ -95,7 +106,7 @@ class UpdateDevice:
         **参数说明**：设备的描述信息。 **取值范围**：长度不超过2048，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合
 
         :param description: The description of this UpdateDevice.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -117,7 +128,7 @@ class UpdateDevice:
         **参数说明**：设备扩展信息。用户可以自定义任何想要的扩展信息，修改子设备信息时不会下发给网关。
 
         :param extension_info: The extension_info of this UpdateDevice.
-        :type: object
+        :type extension_info: object
         """
         self._extension_info = extension_info
 
@@ -127,7 +138,7 @@ class UpdateDevice:
 
 
         :return: The auth_info of this UpdateDevice.
-        :rtype: AuthInfoWithoutSecret
+        :rtype: :class:`huaweicloudsdkiotda.v5.AuthInfoWithoutSecret`
         """
         return self._auth_info
 
@@ -137,7 +148,7 @@ class UpdateDevice:
 
 
         :param auth_info: The auth_info of this UpdateDevice.
-        :type: AuthInfoWithoutSecret
+        :type auth_info: :class:`huaweicloudsdkiotda.v5.AuthInfoWithoutSecret`
         """
         self._auth_info = auth_info
 

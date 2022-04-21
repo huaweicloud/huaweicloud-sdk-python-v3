@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowApplicationDependentResourcesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowApplicationDependentResourcesResponse(SdkResponse):
     }
 
     def __init__(self, dependent_services=None, count=None):
-        """ShowApplicationDependentResourcesResponse - a model defined in huaweicloud sdk"""
+        """ShowApplicationDependentResourcesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param dependent_services: 依赖云资源信息
+        :type dependent_services: list[:class:`huaweicloudsdkdevstar.v1.ResouceInfo`]
+        :param count: 资源总个数
+        :type count: int
+        """
         
         super(ShowApplicationDependentResourcesResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ShowApplicationDependentResourcesResponse(SdkResponse):
         依赖云资源信息
 
         :return: The dependent_services of this ShowApplicationDependentResourcesResponse.
-        :rtype: list[ResouceInfo]
+        :rtype: list[:class:`huaweicloudsdkdevstar.v1.ResouceInfo`]
         """
         return self._dependent_services
 
@@ -63,7 +70,7 @@ class ShowApplicationDependentResourcesResponse(SdkResponse):
         依赖云资源信息
 
         :param dependent_services: The dependent_services of this ShowApplicationDependentResourcesResponse.
-        :type: list[ResouceInfo]
+        :type dependent_services: list[:class:`huaweicloudsdkdevstar.v1.ResouceInfo`]
         """
         self._dependent_services = dependent_services
 
@@ -85,7 +92,7 @@ class ShowApplicationDependentResourcesResponse(SdkResponse):
         资源总个数
 
         :param count: The count of this ShowApplicationDependentResourcesResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

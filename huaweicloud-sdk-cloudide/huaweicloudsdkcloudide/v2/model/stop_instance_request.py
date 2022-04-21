@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StopInstanceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class StopInstanceRequest:
     }
 
     def __init__(self, instance_id=None):
-        """StopInstanceRequest - a model defined in huaweicloud sdk"""
+        """StopInstanceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例id
+        :type instance_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class StopInstanceRequest:
         实例id
 
         :param instance_id: The instance_id of this StopInstanceRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 

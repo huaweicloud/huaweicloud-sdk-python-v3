@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class HostContainerPort:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class HostContainerPort:
     }
 
     def __init__(self, container_port=None, host_port=None, host_ip=None):
-        """HostContainerPort - a model defined in huaweicloud sdk"""
+        """HostContainerPort
+
+        The model defined in huaweicloud sdk
+
+        :param container_port: 构成一堆映射的容器端口
+        :type container_port: int
+        :param host_port: 构成一对映射的物理机对应网卡端口
+        :type host_port: int
+        :param host_ip: 对应网卡地址
+        :type host_ip: str
+        """
         
         
 
@@ -67,7 +76,7 @@ class HostContainerPort:
         构成一堆映射的容器端口
 
         :param container_port: The container_port of this HostContainerPort.
-        :type: int
+        :type container_port: int
         """
         self._container_port = container_port
 
@@ -89,7 +98,7 @@ class HostContainerPort:
         构成一对映射的物理机对应网卡端口
 
         :param host_port: The host_port of this HostContainerPort.
-        :type: int
+        :type host_port: int
         """
         self._host_port = host_port
 
@@ -111,7 +120,7 @@ class HostContainerPort:
         对应网卡地址
 
         :param host_ip: The host_ip of this HostContainerPort.
-        :type: str
+        :type host_ip: str
         """
         self._host_ip = host_ip
 

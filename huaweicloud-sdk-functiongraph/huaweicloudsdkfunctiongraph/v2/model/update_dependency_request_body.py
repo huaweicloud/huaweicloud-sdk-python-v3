@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDependencyRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class UpdateDependencyRequestBody:
     }
 
     def __init__(self, depend_file=None, depend_link=None, depend_type=None, runtime=None, name=None, description=None):
-        """UpdateDependencyRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateDependencyRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param depend_file: depend_type为zip类型时必填，为文件流格式。
+        :type depend_file: str
+        :param depend_link: depend_type为obs类型时，依赖包在obs的存储地址。
+        :type depend_link: str
+        :param depend_type: 导入类型,目前支持obs和zip。
+        :type depend_type: str
+        :param runtime: 运行时语言， Java11、Nodejs14:、Python3:在type为v2时支持。
+        :type runtime: str
+        :param name: 依赖包名称。必须以大、小写字母开头，以字母或数字结尾，只能由字母、数字、下划线、点和中划线组成，长度不超过96个字符。
+        :type name: str
+        :param description: 依赖包描述，不超过512个字符。
+        :type description: str
+        """
         
         
 
@@ -80,7 +95,7 @@ class UpdateDependencyRequestBody:
         depend_type为zip类型时必填，为文件流格式。
 
         :param depend_file: The depend_file of this UpdateDependencyRequestBody.
-        :type: str
+        :type depend_file: str
         """
         self._depend_file = depend_file
 
@@ -102,7 +117,7 @@ class UpdateDependencyRequestBody:
         depend_type为obs类型时，依赖包在obs的存储地址。
 
         :param depend_link: The depend_link of this UpdateDependencyRequestBody.
-        :type: str
+        :type depend_link: str
         """
         self._depend_link = depend_link
 
@@ -124,7 +139,7 @@ class UpdateDependencyRequestBody:
         导入类型,目前支持obs和zip。
 
         :param depend_type: The depend_type of this UpdateDependencyRequestBody.
-        :type: str
+        :type depend_type: str
         """
         self._depend_type = depend_type
 
@@ -146,7 +161,7 @@ class UpdateDependencyRequestBody:
         运行时语言， Java11、Nodejs14:、Python3:在type为v2时支持。
 
         :param runtime: The runtime of this UpdateDependencyRequestBody.
-        :type: str
+        :type runtime: str
         """
         self._runtime = runtime
 
@@ -168,7 +183,7 @@ class UpdateDependencyRequestBody:
         依赖包名称。必须以大、小写字母开头，以字母或数字结尾，只能由字母、数字、下划线、点和中划线组成，长度不超过96个字符。
 
         :param name: The name of this UpdateDependencyRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -190,7 +205,7 @@ class UpdateDependencyRequestBody:
         依赖包描述，不超过512个字符。
 
         :param description: The description of this UpdateDependencyRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateTableResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class CreateTableResponse(SdkResponse):
     }
 
     def __init__(self, table_id=None, table_name=None, table_alias=None, created_time=None, modified_time=None, data_location=None, data_type=None, data_source=None, table_type=None, description=None, partition_columns=None, data_store_id=None, tags=None):
-        """CreateTableResponse - a model defined in huaweicloud sdk"""
+        """CreateTableResponse
+
+        The model defined in huaweicloud sdk
+
+        :param table_id: 表ID。
+        :type table_id: str
+        :param table_name: 表名称。
+        :type table_name: str
+        :param table_alias: 表别名。
+        :type table_alias: str
+        :param created_time: 表创建时间。
+        :type created_time: str
+        :param modified_time: 表更新时间。
+        :type modified_time: str
+        :param data_location: 数据存储位置，分为IoTA和VIEW
+        :type data_location: str
+        :param data_type: 数据类型，包括“csv”，“parquet”。
+        :type data_type: str
+        :param data_source: 数据来源。来源类型有：pipeline, default. 默认为default.
+        :type data_source: str
+        :param table_type: 表类型:IoTA表为MANAGED, View为VIEW
+        :type table_type: str
+        :param description: 表的描述信息。
+        :type description: str
+        :param partition_columns: 分区字段。只有OBS分区表有该参数，其他表没有该参数。
+        :type partition_columns: list[str]
+        :param data_store_id: 仅当数据来源为pipeline时返回。Data Store ID.
+        :type data_store_id: str
+        :param tags: 标签。
+        :type tags: str
+        """
         
         super(CreateTableResponse, self).__init__()
 
@@ -118,7 +147,7 @@ class CreateTableResponse(SdkResponse):
         表ID。
 
         :param table_id: The table_id of this CreateTableResponse.
-        :type: str
+        :type table_id: str
         """
         self._table_id = table_id
 
@@ -140,7 +169,7 @@ class CreateTableResponse(SdkResponse):
         表名称。
 
         :param table_name: The table_name of this CreateTableResponse.
-        :type: str
+        :type table_name: str
         """
         self._table_name = table_name
 
@@ -162,7 +191,7 @@ class CreateTableResponse(SdkResponse):
         表别名。
 
         :param table_alias: The table_alias of this CreateTableResponse.
-        :type: str
+        :type table_alias: str
         """
         self._table_alias = table_alias
 
@@ -184,7 +213,7 @@ class CreateTableResponse(SdkResponse):
         表创建时间。
 
         :param created_time: The created_time of this CreateTableResponse.
-        :type: str
+        :type created_time: str
         """
         self._created_time = created_time
 
@@ -206,7 +235,7 @@ class CreateTableResponse(SdkResponse):
         表更新时间。
 
         :param modified_time: The modified_time of this CreateTableResponse.
-        :type: str
+        :type modified_time: str
         """
         self._modified_time = modified_time
 
@@ -228,7 +257,7 @@ class CreateTableResponse(SdkResponse):
         数据存储位置，分为IoTA和VIEW
 
         :param data_location: The data_location of this CreateTableResponse.
-        :type: str
+        :type data_location: str
         """
         self._data_location = data_location
 
@@ -250,7 +279,7 @@ class CreateTableResponse(SdkResponse):
         数据类型，包括“csv”，“parquet”。
 
         :param data_type: The data_type of this CreateTableResponse.
-        :type: str
+        :type data_type: str
         """
         self._data_type = data_type
 
@@ -272,7 +301,7 @@ class CreateTableResponse(SdkResponse):
         数据来源。来源类型有：pipeline, default. 默认为default.
 
         :param data_source: The data_source of this CreateTableResponse.
-        :type: str
+        :type data_source: str
         """
         self._data_source = data_source
 
@@ -294,7 +323,7 @@ class CreateTableResponse(SdkResponse):
         表类型:IoTA表为MANAGED, View为VIEW
 
         :param table_type: The table_type of this CreateTableResponse.
-        :type: str
+        :type table_type: str
         """
         self._table_type = table_type
 
@@ -316,7 +345,7 @@ class CreateTableResponse(SdkResponse):
         表的描述信息。
 
         :param description: The description of this CreateTableResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -338,7 +367,7 @@ class CreateTableResponse(SdkResponse):
         分区字段。只有OBS分区表有该参数，其他表没有该参数。
 
         :param partition_columns: The partition_columns of this CreateTableResponse.
-        :type: list[str]
+        :type partition_columns: list[str]
         """
         self._partition_columns = partition_columns
 
@@ -360,7 +389,7 @@ class CreateTableResponse(SdkResponse):
         仅当数据来源为pipeline时返回。Data Store ID.
 
         :param data_store_id: The data_store_id of this CreateTableResponse.
-        :type: str
+        :type data_store_id: str
         """
         self._data_store_id = data_store_id
 
@@ -382,7 +411,7 @@ class CreateTableResponse(SdkResponse):
         标签。
 
         :param tags: The tags of this CreateTableResponse.
-        :type: str
+        :type tags: str
         """
         self._tags = tags
 

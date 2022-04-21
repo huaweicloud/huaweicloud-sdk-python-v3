@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneShowVersionRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class KeystoneShowVersionRequest:
     }
 
     def __init__(self):
-        """KeystoneShowVersionRequest - a model defined in huaweicloud sdk"""
+        """KeystoneShowVersionRequest
+
+        The model defined in huaweicloud sdk
+
+        """
         
         
         self.discriminator = None

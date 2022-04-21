@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StartInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class StartInfo:
     }
 
     def __init__(self, job_id=None, start_time=None):
-        """StartInfo - a model defined in huaweicloud sdk"""
+        """StartInfo
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 任务id。 
+        :type job_id: str
+        :param start_time: 任务启动时间，时间戳格式精确到秒，例如：1614078283，取值为空代表立即启动。
+        :type start_time: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class StartInfo:
         任务id。 
 
         :param job_id: The job_id of this StartInfo.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -84,7 +91,7 @@ class StartInfo:
         任务启动时间，时间戳格式精确到秒，例如：1614078283，取值为空代表立即启动。
 
         :param start_time: The start_time of this StartInfo.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 

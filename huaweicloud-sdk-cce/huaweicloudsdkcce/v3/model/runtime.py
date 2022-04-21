@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Runtime:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class Runtime:
     }
 
     def __init__(self, name=None):
-        """Runtime - a model defined in huaweicloud sdk"""
+        """Runtime
+
+        The model defined in huaweicloud sdk
+
+        :param name: 容器运行时，默认为“docker”
+        :type name: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class Runtime:
         容器运行时，默认为“docker”
 
         :param name: The name of this Runtime.
-        :type: str
+        :type name: str
         """
         self._name = name
 

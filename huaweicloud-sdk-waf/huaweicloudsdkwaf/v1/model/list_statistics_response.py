@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListStatisticsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListStatisticsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListStatisticsResponse - a model defined in huaweicloud sdk"""
+        """ListStatisticsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param body: 安全统计数据
+        :type body: list[:class:`huaweicloudsdkwaf.v1.CountItem`]
+        """
         
         super(ListStatisticsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListStatisticsResponse(SdkResponse):
         安全统计数据
 
         :return: The body of this ListStatisticsResponse.
-        :rtype: list[CountItem]
+        :rtype: list[:class:`huaweicloudsdkwaf.v1.CountItem`]
         """
         return self._body
 
@@ -58,7 +63,7 @@ class ListStatisticsResponse(SdkResponse):
         安全统计数据
 
         :param body: The body of this ListStatisticsResponse.
-        :type: list[CountItem]
+        :type body: list[:class:`huaweicloudsdkwaf.v1.CountItem`]
         """
         self._body = body
 

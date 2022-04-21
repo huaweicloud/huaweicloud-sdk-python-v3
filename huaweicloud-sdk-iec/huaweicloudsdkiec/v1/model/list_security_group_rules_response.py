@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSecurityGroupRulesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListSecurityGroupRulesResponse(SdkResponse):
     }
 
     def __init__(self, security_group_rules=None, count=None):
-        """ListSecurityGroupRulesResponse - a model defined in huaweicloud sdk"""
+        """ListSecurityGroupRulesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param security_group_rules: 安全组规则列表对象。
+        :type security_group_rules: list[:class:`huaweicloudsdkiec.v1.SecurityGroupRule`]
+        :param count: 安全组规则数目。
+        :type count: int
+        """
         
         super(ListSecurityGroupRulesResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListSecurityGroupRulesResponse(SdkResponse):
         安全组规则列表对象。
 
         :return: The security_group_rules of this ListSecurityGroupRulesResponse.
-        :rtype: list[SecurityGroupRule]
+        :rtype: list[:class:`huaweicloudsdkiec.v1.SecurityGroupRule`]
         """
         return self._security_group_rules
 
@@ -63,7 +70,7 @@ class ListSecurityGroupRulesResponse(SdkResponse):
         安全组规则列表对象。
 
         :param security_group_rules: The security_group_rules of this ListSecurityGroupRulesResponse.
-        :type: list[SecurityGroupRule]
+        :type security_group_rules: list[:class:`huaweicloudsdkiec.v1.SecurityGroupRule`]
         """
         self._security_group_rules = security_group_rules
 
@@ -85,7 +92,7 @@ class ListSecurityGroupRulesResponse(SdkResponse):
         安全组规则数目。
 
         :param count: The count of this ListSecurityGroupRulesResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

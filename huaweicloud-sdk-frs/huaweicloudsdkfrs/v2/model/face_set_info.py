@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FaceSetInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class FaceSetInfo:
     }
 
     def __init__(self, face_number=None, external_fields=None, face_set_id=None, face_set_name=None, create_date=None, face_set_capacity=None):
-        """FaceSetInfo - a model defined in huaweicloud sdk"""
+        """FaceSetInfo
+
+        The model defined in huaweicloud sdk
+
+        :param face_number: 人脸库当中的人脸数量。
+        :type face_number: int
+        :param external_fields: 用户的自定义字段。
+        :type external_fields: object
+        :param face_set_id: 人脸库ID，随机生成的包含八个字符的字符串。
+        :type face_set_id: str
+        :param face_set_name: 人脸库名称。
+        :type face_set_name: str
+        :param create_date: 创建时间。
+        :type create_date: str
+        :param face_set_capacity: 人脸库最大的容量。
+        :type face_set_capacity: int
+        """
         
         
 
@@ -77,7 +92,7 @@ class FaceSetInfo:
         人脸库当中的人脸数量。
 
         :param face_number: The face_number of this FaceSetInfo.
-        :type: int
+        :type face_number: int
         """
         self._face_number = face_number
 
@@ -99,7 +114,7 @@ class FaceSetInfo:
         用户的自定义字段。
 
         :param external_fields: The external_fields of this FaceSetInfo.
-        :type: object
+        :type external_fields: object
         """
         self._external_fields = external_fields
 
@@ -121,7 +136,7 @@ class FaceSetInfo:
         人脸库ID，随机生成的包含八个字符的字符串。
 
         :param face_set_id: The face_set_id of this FaceSetInfo.
-        :type: str
+        :type face_set_id: str
         """
         self._face_set_id = face_set_id
 
@@ -143,7 +158,7 @@ class FaceSetInfo:
         人脸库名称。
 
         :param face_set_name: The face_set_name of this FaceSetInfo.
-        :type: str
+        :type face_set_name: str
         """
         self._face_set_name = face_set_name
 
@@ -165,7 +180,7 @@ class FaceSetInfo:
         创建时间。
 
         :param create_date: The create_date of this FaceSetInfo.
-        :type: str
+        :type create_date: str
         """
         self._create_date = create_date
 
@@ -187,7 +202,7 @@ class FaceSetInfo:
         人脸库最大的容量。
 
         :param face_set_capacity: The face_set_capacity of this FaceSetInfo.
-        :type: int
+        :type face_set_capacity: int
         """
         self._face_set_capacity = face_set_capacity
 

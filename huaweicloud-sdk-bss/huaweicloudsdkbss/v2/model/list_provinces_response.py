@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListProvincesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListProvincesResponse(SdkResponse):
     }
 
     def __init__(self, count=None, provinces=None):
-        """ListProvincesResponse - a model defined in huaweicloud sdk"""
+        """ListProvincesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 查询个数，成功的时候返回。
+        :type count: int
+        :param provinces: 省份信息列表，成功的时候返回，具体参见表3。
+        :type provinces: list[:class:`huaweicloudsdkbss.v2.Province`]
+        """
         
         super(ListProvincesResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListProvincesResponse(SdkResponse):
         查询个数，成功的时候返回。
 
         :param count: The count of this ListProvincesResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -74,7 +81,7 @@ class ListProvincesResponse(SdkResponse):
         省份信息列表，成功的时候返回，具体参见表3。
 
         :return: The provinces of this ListProvincesResponse.
-        :rtype: list[Province]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.Province`]
         """
         return self._provinces
 
@@ -85,7 +92,7 @@ class ListProvincesResponse(SdkResponse):
         省份信息列表，成功的时候返回，具体参见表3。
 
         :param provinces: The provinces of this ListProvincesResponse.
-        :type: list[Province]
+        :type provinces: list[:class:`huaweicloudsdkbss.v2.Province`]
         """
         self._provinces = provinces
 

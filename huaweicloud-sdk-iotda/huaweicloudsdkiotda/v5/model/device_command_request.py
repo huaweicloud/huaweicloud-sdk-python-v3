@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeviceCommandRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class DeviceCommandRequest:
     }
 
     def __init__(self, service_id=None, command_name=None, paras=None):
-        """DeviceCommandRequest - a model defined in huaweicloud sdk"""
+        """DeviceCommandRequest
+
+        The model defined in huaweicloud sdk
+
+        :param service_id: **参数说明**：设备命令所属的设备服务ID，在设备关联的产品模型中定义。 **取值范围**：长度不超过64的字符串。
+        :type service_id: str
+        :param command_name: **参数说明**：设备命令名称，在设备关联的产品模型中定义。 **取值范围**：长度不超过128的字符串。
+        :type command_name: str
+        :param paras: **参数说明**：设备执行的命令，Json格式，里面是一个个键值对，如果serviceId不为空，每个键都是profile中命令的参数名（paraName）;如果serviceId为空则由用户自定义命令格式。设备命令示例：{\&quot;value\&quot;:\&quot;1\&quot;}，具体格式需要应用和设备约定。此参数仅支持Json格式，暂不支持字符串。
+        :type paras: object
+        """
         
         
 
@@ -67,7 +76,7 @@ class DeviceCommandRequest:
         **参数说明**：设备命令所属的设备服务ID，在设备关联的产品模型中定义。 **取值范围**：长度不超过64的字符串。
 
         :param service_id: The service_id of this DeviceCommandRequest.
-        :type: str
+        :type service_id: str
         """
         self._service_id = service_id
 
@@ -89,7 +98,7 @@ class DeviceCommandRequest:
         **参数说明**：设备命令名称，在设备关联的产品模型中定义。 **取值范围**：长度不超过128的字符串。
 
         :param command_name: The command_name of this DeviceCommandRequest.
-        :type: str
+        :type command_name: str
         """
         self._command_name = command_name
 
@@ -111,7 +120,7 @@ class DeviceCommandRequest:
         **参数说明**：设备执行的命令，Json格式，里面是一个个键值对，如果serviceId不为空，每个键都是profile中命令的参数名（paraName）;如果serviceId为空则由用户自定义命令格式。设备命令示例：{\"value\":\"1\"}，具体格式需要应用和设备约定。此参数仅支持Json格式，暂不支持字符串。
 
         :param paras: The paras of this DeviceCommandRequest.
-        :type: object
+        :type paras: object
         """
         self._paras = paras
 

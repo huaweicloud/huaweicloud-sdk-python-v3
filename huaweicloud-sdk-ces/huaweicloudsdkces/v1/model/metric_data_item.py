@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MetricDataItem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class MetricDataItem:
     }
 
     def __init__(self, metric=None, ttl=None, collect_time=None, value=None, unit=None, type=None):
-        """MetricDataItem - a model defined in huaweicloud sdk"""
+        """MetricDataItem
+
+        The model defined in huaweicloud sdk
+
+        :param metric: 
+        :type metric: :class:`huaweicloudsdkces.v1.MetricInfo`
+        :param ttl: 数据的有效期，超出该有效期则自动删除该数据，单位秒，最大值604800。
+        :type ttl: int
+        :param collect_time: 数据收集时间  UNIX时间戳，单位毫秒。  说明： 因为客户端到服务器端有延时，因此插入数据的时间戳应该在[当前时间-3天+20秒，当前时间+10分钟-20秒]区间内，保证到达服务器时不会因为传输时延造成数据不能插入数据库。
+        :type collect_time: int
+        :param value: 指标数据的值。
+        :type value: float
+        :param unit: 数据的单位。
+        :type unit: str
+        :param type: 数据的类型，只能是\&quot;int\&quot;或\&quot;float\&quot;
+        :type type: str
+        """
         
         
 
@@ -67,7 +82,7 @@ class MetricDataItem:
 
 
         :return: The metric of this MetricDataItem.
-        :rtype: MetricInfo
+        :rtype: :class:`huaweicloudsdkces.v1.MetricInfo`
         """
         return self._metric
 
@@ -77,7 +92,7 @@ class MetricDataItem:
 
 
         :param metric: The metric of this MetricDataItem.
-        :type: MetricInfo
+        :type metric: :class:`huaweicloudsdkces.v1.MetricInfo`
         """
         self._metric = metric
 
@@ -99,7 +114,7 @@ class MetricDataItem:
         数据的有效期，超出该有效期则自动删除该数据，单位秒，最大值604800。
 
         :param ttl: The ttl of this MetricDataItem.
-        :type: int
+        :type ttl: int
         """
         self._ttl = ttl
 
@@ -121,7 +136,7 @@ class MetricDataItem:
         数据收集时间  UNIX时间戳，单位毫秒。  说明： 因为客户端到服务器端有延时，因此插入数据的时间戳应该在[当前时间-3天+20秒，当前时间+10分钟-20秒]区间内，保证到达服务器时不会因为传输时延造成数据不能插入数据库。
 
         :param collect_time: The collect_time of this MetricDataItem.
-        :type: int
+        :type collect_time: int
         """
         self._collect_time = collect_time
 
@@ -143,7 +158,7 @@ class MetricDataItem:
         指标数据的值。
 
         :param value: The value of this MetricDataItem.
-        :type: float
+        :type value: float
         """
         self._value = value
 
@@ -165,7 +180,7 @@ class MetricDataItem:
         数据的单位。
 
         :param unit: The unit of this MetricDataItem.
-        :type: str
+        :type unit: str
         """
         self._unit = unit
 
@@ -187,7 +202,7 @@ class MetricDataItem:
         数据的类型，只能是\"int\"或\"float\"
 
         :param type: The type of this MetricDataItem.
-        :type: str
+        :type type: str
         """
         self._type = type
 

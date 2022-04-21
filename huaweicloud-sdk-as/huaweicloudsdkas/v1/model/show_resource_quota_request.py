@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowResourceQuotaRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class ShowResourceQuotaRequest:
     }
 
     def __init__(self):
-        """ShowResourceQuotaRequest - a model defined in huaweicloud sdk"""
+        """ShowResourceQuotaRequest
+
+        The model defined in huaweicloud sdk
+
+        """
         
         
         self.discriminator = None

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteAssetsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteAssetsResponse(SdkResponse):
     }
 
     def __init__(self, delete_result_array=None):
-        """DeleteAssetsResponse - a model defined in huaweicloud sdk"""
+        """DeleteAssetsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param delete_result_array: 删除媒资任务的处理结果。
+        :type delete_result_array: list[:class:`huaweicloudsdkvod.v1.DeleteResult`]
+        """
         
         super(DeleteAssetsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class DeleteAssetsResponse(SdkResponse):
         删除媒资任务的处理结果。
 
         :return: The delete_result_array of this DeleteAssetsResponse.
-        :rtype: list[DeleteResult]
+        :rtype: list[:class:`huaweicloudsdkvod.v1.DeleteResult`]
         """
         return self._delete_result_array
 
@@ -58,7 +63,7 @@ class DeleteAssetsResponse(SdkResponse):
         删除媒资任务的处理结果。
 
         :param delete_result_array: The delete_result_array of this DeleteAssetsResponse.
-        :type: list[DeleteResult]
+        :type delete_result_array: list[:class:`huaweicloudsdkvod.v1.DeleteResult`]
         """
         self._delete_result_array = delete_result_array
 

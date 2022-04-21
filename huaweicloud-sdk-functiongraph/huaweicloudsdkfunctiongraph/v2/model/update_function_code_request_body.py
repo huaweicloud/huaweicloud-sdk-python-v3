@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateFunctionCodeRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class UpdateFunctionCodeRequestBody:
     }
 
     def __init__(self, code_type=None, code_url=None, code_filename=None, func_code=None, depend_list=None):
-        """UpdateFunctionCodeRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateFunctionCodeRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param code_type: 函数代码类型，取值有4种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。
+        :type code_type: str
+        :param code_url: 当CodeType为obs时，该值为函数代码包在OBS上的地址，CodeType为其他值时，该字段为空。
+        :type code_url: str
+        :param code_filename: 函数的文件名，当CodeType为jar/zip时必须提供该字段，inline和obs不需要提供。
+        :type code_filename: str
+        :param func_code: 
+        :type func_code: :class:`huaweicloudsdkfunctiongraph.v2.FuncCode`
+        :param depend_list: 依赖id列表
+        :type depend_list: list[str]
+        """
         
         
 
@@ -76,7 +89,7 @@ class UpdateFunctionCodeRequestBody:
         函数代码类型，取值有4种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。
 
         :param code_type: The code_type of this UpdateFunctionCodeRequestBody.
-        :type: str
+        :type code_type: str
         """
         self._code_type = code_type
 
@@ -98,7 +111,7 @@ class UpdateFunctionCodeRequestBody:
         当CodeType为obs时，该值为函数代码包在OBS上的地址，CodeType为其他值时，该字段为空。
 
         :param code_url: The code_url of this UpdateFunctionCodeRequestBody.
-        :type: str
+        :type code_url: str
         """
         self._code_url = code_url
 
@@ -120,7 +133,7 @@ class UpdateFunctionCodeRequestBody:
         函数的文件名，当CodeType为jar/zip时必须提供该字段，inline和obs不需要提供。
 
         :param code_filename: The code_filename of this UpdateFunctionCodeRequestBody.
-        :type: str
+        :type code_filename: str
         """
         self._code_filename = code_filename
 
@@ -130,7 +143,7 @@ class UpdateFunctionCodeRequestBody:
 
 
         :return: The func_code of this UpdateFunctionCodeRequestBody.
-        :rtype: FuncCode
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.FuncCode`
         """
         return self._func_code
 
@@ -140,7 +153,7 @@ class UpdateFunctionCodeRequestBody:
 
 
         :param func_code: The func_code of this UpdateFunctionCodeRequestBody.
-        :type: FuncCode
+        :type func_code: :class:`huaweicloudsdkfunctiongraph.v2.FuncCode`
         """
         self._func_code = func_code
 
@@ -162,7 +175,7 @@ class UpdateFunctionCodeRequestBody:
         依赖id列表
 
         :param depend_list: The depend_list of this UpdateFunctionCodeRequestBody.
-        :type: list[str]
+        :type depend_list: list[str]
         """
         self._depend_list = depend_list
 

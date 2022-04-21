@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowConsoleConfigResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -64,7 +63,47 @@ class ShowConsoleConfigResponse(SdkResponse):
     }
 
     def __init__(self, eps=None, tls=None, ipv6=None, alert=None, custom=None, elb_mode=None, event_lts=None, multi_dns=None, search_ip=None, cc_enhance=None, cname_switch=None, custom_block=None, advanced_ignore=None, js_crawler_enable=None, deep_decode_enable=None, overview_bandwidth=None, proxy_use_oldcname=None, check_all_headers_enable=None):
-        """ShowConsoleConfigResponse - a model defined in huaweicloud sdk"""
+        """ShowConsoleConfigResponse
+
+        The model defined in huaweicloud sdk
+
+        :param eps: 支持EPS
+        :type eps: bool
+        :param tls: 支持最低的TLS版本（TLS v1.0/TLS v1.1/TLS v1.2）,默认为TLS v1.0版本
+        :type tls: bool
+        :param ipv6: 支持IPV6
+        :type ipv6: bool
+        :param alert: 支持告警
+        :type alert: bool
+        :param custom: 支持精准防护
+        :type custom: bool
+        :param elb_mode: 支持ELB模式
+        :type elb_mode: bool
+        :param event_lts: 支持LTS全量日志
+        :type event_lts: bool
+        :param multi_dns: 支持多DNS解析
+        :type multi_dns: bool
+        :param search_ip: 支持搜索IP
+        :type search_ip: bool
+        :param cc_enhance: 支持CC增强
+        :type cc_enhance: bool
+        :param cname_switch: 支持cname切换
+        :type cname_switch: bool
+        :param custom_block: 支持精准拦截
+        :type custom_block: bool
+        :param advanced_ignore: 支持误报屏蔽
+        :type advanced_ignore: bool
+        :param js_crawler_enable: 支持js反爬虫
+        :type js_crawler_enable: bool
+        :param deep_decode_enable: 支持深度解析
+        :type deep_decode_enable: bool
+        :param overview_bandwidth: 支持安全总览带宽统计
+        :type overview_bandwidth: bool
+        :param proxy_use_oldcname: 支持使用旧cname解析
+        :type proxy_use_oldcname: bool
+        :param check_all_headers_enable: 支持检查所有的header
+        :type check_all_headers_enable: bool
+        """
         
         super(ShowConsoleConfigResponse, self).__init__()
 
@@ -143,7 +182,7 @@ class ShowConsoleConfigResponse(SdkResponse):
         支持EPS
 
         :param eps: The eps of this ShowConsoleConfigResponse.
-        :type: bool
+        :type eps: bool
         """
         self._eps = eps
 
@@ -165,7 +204,7 @@ class ShowConsoleConfigResponse(SdkResponse):
         支持最低的TLS版本（TLS v1.0/TLS v1.1/TLS v1.2）,默认为TLS v1.0版本
 
         :param tls: The tls of this ShowConsoleConfigResponse.
-        :type: bool
+        :type tls: bool
         """
         self._tls = tls
 
@@ -187,7 +226,7 @@ class ShowConsoleConfigResponse(SdkResponse):
         支持IPV6
 
         :param ipv6: The ipv6 of this ShowConsoleConfigResponse.
-        :type: bool
+        :type ipv6: bool
         """
         self._ipv6 = ipv6
 
@@ -209,7 +248,7 @@ class ShowConsoleConfigResponse(SdkResponse):
         支持告警
 
         :param alert: The alert of this ShowConsoleConfigResponse.
-        :type: bool
+        :type alert: bool
         """
         self._alert = alert
 
@@ -231,7 +270,7 @@ class ShowConsoleConfigResponse(SdkResponse):
         支持精准防护
 
         :param custom: The custom of this ShowConsoleConfigResponse.
-        :type: bool
+        :type custom: bool
         """
         self._custom = custom
 
@@ -253,7 +292,7 @@ class ShowConsoleConfigResponse(SdkResponse):
         支持ELB模式
 
         :param elb_mode: The elb_mode of this ShowConsoleConfigResponse.
-        :type: bool
+        :type elb_mode: bool
         """
         self._elb_mode = elb_mode
 
@@ -275,7 +314,7 @@ class ShowConsoleConfigResponse(SdkResponse):
         支持LTS全量日志
 
         :param event_lts: The event_lts of this ShowConsoleConfigResponse.
-        :type: bool
+        :type event_lts: bool
         """
         self._event_lts = event_lts
 
@@ -297,7 +336,7 @@ class ShowConsoleConfigResponse(SdkResponse):
         支持多DNS解析
 
         :param multi_dns: The multi_dns of this ShowConsoleConfigResponse.
-        :type: bool
+        :type multi_dns: bool
         """
         self._multi_dns = multi_dns
 
@@ -319,7 +358,7 @@ class ShowConsoleConfigResponse(SdkResponse):
         支持搜索IP
 
         :param search_ip: The search_ip of this ShowConsoleConfigResponse.
-        :type: bool
+        :type search_ip: bool
         """
         self._search_ip = search_ip
 
@@ -341,7 +380,7 @@ class ShowConsoleConfigResponse(SdkResponse):
         支持CC增强
 
         :param cc_enhance: The cc_enhance of this ShowConsoleConfigResponse.
-        :type: bool
+        :type cc_enhance: bool
         """
         self._cc_enhance = cc_enhance
 
@@ -363,7 +402,7 @@ class ShowConsoleConfigResponse(SdkResponse):
         支持cname切换
 
         :param cname_switch: The cname_switch of this ShowConsoleConfigResponse.
-        :type: bool
+        :type cname_switch: bool
         """
         self._cname_switch = cname_switch
 
@@ -385,7 +424,7 @@ class ShowConsoleConfigResponse(SdkResponse):
         支持精准拦截
 
         :param custom_block: The custom_block of this ShowConsoleConfigResponse.
-        :type: bool
+        :type custom_block: bool
         """
         self._custom_block = custom_block
 
@@ -407,7 +446,7 @@ class ShowConsoleConfigResponse(SdkResponse):
         支持误报屏蔽
 
         :param advanced_ignore: The advanced_ignore of this ShowConsoleConfigResponse.
-        :type: bool
+        :type advanced_ignore: bool
         """
         self._advanced_ignore = advanced_ignore
 
@@ -429,7 +468,7 @@ class ShowConsoleConfigResponse(SdkResponse):
         支持js反爬虫
 
         :param js_crawler_enable: The js_crawler_enable of this ShowConsoleConfigResponse.
-        :type: bool
+        :type js_crawler_enable: bool
         """
         self._js_crawler_enable = js_crawler_enable
 
@@ -451,7 +490,7 @@ class ShowConsoleConfigResponse(SdkResponse):
         支持深度解析
 
         :param deep_decode_enable: The deep_decode_enable of this ShowConsoleConfigResponse.
-        :type: bool
+        :type deep_decode_enable: bool
         """
         self._deep_decode_enable = deep_decode_enable
 
@@ -473,7 +512,7 @@ class ShowConsoleConfigResponse(SdkResponse):
         支持安全总览带宽统计
 
         :param overview_bandwidth: The overview_bandwidth of this ShowConsoleConfigResponse.
-        :type: bool
+        :type overview_bandwidth: bool
         """
         self._overview_bandwidth = overview_bandwidth
 
@@ -495,7 +534,7 @@ class ShowConsoleConfigResponse(SdkResponse):
         支持使用旧cname解析
 
         :param proxy_use_oldcname: The proxy_use_oldcname of this ShowConsoleConfigResponse.
-        :type: bool
+        :type proxy_use_oldcname: bool
         """
         self._proxy_use_oldcname = proxy_use_oldcname
 
@@ -517,7 +556,7 @@ class ShowConsoleConfigResponse(SdkResponse):
         支持检查所有的header
 
         :param check_all_headers_enable: The check_all_headers_enable of this ShowConsoleConfigResponse.
-        :type: bool
+        :type check_all_headers_enable: bool
         """
         self._check_all_headers_enable = check_all_headers_enable
 

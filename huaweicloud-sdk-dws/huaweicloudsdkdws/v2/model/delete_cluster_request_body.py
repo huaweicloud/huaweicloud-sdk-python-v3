@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteClusterRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteClusterRequestBody:
     }
 
     def __init__(self, keep_last_manual_snapshot=None):
-        """DeleteClusterRequestBody - a model defined in huaweicloud sdk"""
+        """DeleteClusterRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param keep_last_manual_snapshot: 集群需要保留的快照数
+        :type keep_last_manual_snapshot: int
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteClusterRequestBody:
         集群需要保留的快照数
 
         :param keep_last_manual_snapshot: The keep_last_manual_snapshot of this DeleteClusterRequestBody.
-        :type: int
+        :type keep_last_manual_snapshot: int
         """
         self._keep_last_manual_snapshot = keep_last_manual_snapshot
 

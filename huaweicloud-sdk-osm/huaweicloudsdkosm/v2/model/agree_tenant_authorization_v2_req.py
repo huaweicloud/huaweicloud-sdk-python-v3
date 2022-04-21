@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AgreeTenantAuthorizationV2Req:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class AgreeTenantAuthorizationV2Req:
     }
 
     def __init__(self, auth_detail_list=None, auth_effective_time=None, auth_expire_time=None, group_id=None, agency_id=None):
-        """AgreeTenantAuthorizationV2Req - a model defined in huaweicloud sdk"""
+        """AgreeTenantAuthorizationV2Req
+
+        The model defined in huaweicloud sdk
+
+        :param auth_detail_list: 授权详情列表
+        :type auth_detail_list: list[:class:`huaweicloudsdkosm.v2.TenantAgreeAuthDetailV2`]
+        :param auth_effective_time: 授权生效时间
+        :type auth_effective_time: int
+        :param auth_expire_time: 授权到期时间
+        :type auth_expire_time: int
+        :param group_id: 组id
+        :type group_id: str
+        :param agency_id: 委托id
+        :type agency_id: str
+        """
         
         
 
@@ -67,7 +80,7 @@ class AgreeTenantAuthorizationV2Req:
         授权详情列表
 
         :return: The auth_detail_list of this AgreeTenantAuthorizationV2Req.
-        :rtype: list[TenantAgreeAuthDetailV2]
+        :rtype: list[:class:`huaweicloudsdkosm.v2.TenantAgreeAuthDetailV2`]
         """
         return self._auth_detail_list
 
@@ -78,7 +91,7 @@ class AgreeTenantAuthorizationV2Req:
         授权详情列表
 
         :param auth_detail_list: The auth_detail_list of this AgreeTenantAuthorizationV2Req.
-        :type: list[TenantAgreeAuthDetailV2]
+        :type auth_detail_list: list[:class:`huaweicloudsdkosm.v2.TenantAgreeAuthDetailV2`]
         """
         self._auth_detail_list = auth_detail_list
 
@@ -100,7 +113,7 @@ class AgreeTenantAuthorizationV2Req:
         授权生效时间
 
         :param auth_effective_time: The auth_effective_time of this AgreeTenantAuthorizationV2Req.
-        :type: int
+        :type auth_effective_time: int
         """
         self._auth_effective_time = auth_effective_time
 
@@ -122,7 +135,7 @@ class AgreeTenantAuthorizationV2Req:
         授权到期时间
 
         :param auth_expire_time: The auth_expire_time of this AgreeTenantAuthorizationV2Req.
-        :type: int
+        :type auth_expire_time: int
         """
         self._auth_expire_time = auth_expire_time
 
@@ -144,7 +157,7 @@ class AgreeTenantAuthorizationV2Req:
         组id
 
         :param group_id: The group_id of this AgreeTenantAuthorizationV2Req.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -166,7 +179,7 @@ class AgreeTenantAuthorizationV2Req:
         委托id
 
         :param agency_id: The agency_id of this AgreeTenantAuthorizationV2Req.
-        :type: str
+        :type agency_id: str
         """
         self._agency_id = agency_id
 

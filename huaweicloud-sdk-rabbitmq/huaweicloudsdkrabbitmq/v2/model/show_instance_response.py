@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowInstanceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -110,7 +109,93 @@ class ShowInstanceResponse(SdkResponse):
     }
 
     def __init__(self, name=None, engine=None, engine_version=None, specification=None, storage_space=None, used_storage_space=None, connect_address=None, port=None, status=None, description=None, instance_id=None, resource_spec_code=None, charging_mode=None, vpc_id=None, vpc_name=None, created_at=None, user_id=None, user_name=None, order_id=None, maintain_begin=None, maintain_end=None, enable_publicip=None, publicip_address=None, publicip_id=None, management_connect_address=None, ssl_enable=None, enterprise_project_id=None, is_logical_volume=None, extend_times=None, type=None, product_id=None, security_group_id=None, security_group_name=None, subnet_id=None, available_zones=None, total_storage_space=None, storage_resource_id=None, storage_spec_code=None, ipv6_enable=None, ipv6_connect_addresses=None, tags=None):
-        """ShowInstanceResponse - a model defined in huaweicloud sdk"""
+        """ShowInstanceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param name: 实例名称。
+        :type name: str
+        :param engine: 消息引擎。
+        :type engine: str
+        :param engine_version: 消息引擎版本。
+        :type engine_version: str
+        :param specification: 实例规格。   - RabbitMQ实例单机返回vm规格。   - RabbitMQ实例集群返回vm规格和节点数。
+        :type specification: str
+        :param storage_space: 消息存储空间，单位：GB。
+        :type storage_space: int
+        :param used_storage_space: 已使用的消息存储空间，单位：GB。
+        :type used_storage_space: int
+        :param connect_address: 实例连接IP地址。
+        :type connect_address: str
+        :param port: 实例连接端口。
+        :type port: int
+        :param status: 实例的状态。
+        :type status: str
+        :param description: 实例描述。
+        :type description: str
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param resource_spec_code: 资源规格标识。   - dms.instance.rabbitmq.single.c3.2u4g：RabbitMQ单机，vm规格2u4g   - dms.instance.rabbitmq.single.c3.4u8g：RabbitMQ单机，vm规格4u8g   - dms.instance.rabbitmq.single.c3.8u16g：RabbitMQ单机，vm规格8u16g   - dms.instance.rabbitmq.single.c3.16u32g：RabbitMQ单机，vm规格16u32g   - dms.instance.rabbitmq.cluster.c3.4u8g.3：RabbitMQ集群，vm规格4u8g，3个节点   - dms.instance.rabbitmq.cluster.c3.4u8g.5：RabbitMQ集群，vm规格4u8g，5个节点   - dms.instance.rabbitmq.cluster.c3.4u8g.7：RabbitMQ集群，vm规格4u8g，7个节点   - dms.instance.rabbitmq.cluster.c3.8u16g.3：RabbitMQ集群，vm规格8u16g，3个节点   - dms.instance.rabbitmq.cluster.c3.8u16g.5：RabbitMQ集群，vm规格8u16g，5个节点   - dms.instance.rabbitmq.cluster.c3.8u16g.7：RabbitMQ集群，vm规格8u16g，7个节点   - dms.instance.rabbitmq.cluster.c3.16u32g.3：RabbitMQ集群，vm规格16u32g，3个节点   - dms.instance.rabbitmq.cluster.c3.16u32g.5：RabbitMQ集群，vm规格16u32g，5个节点   - dms.instance.rabbitmq.cluster.c3.16u32g.7：RabbitMQ集群，vm规格16u32g，7个节点
+        :type resource_spec_code: str
+        :param charging_mode: 付费模式，1表示按需计费，0表示包年/包月计费。
+        :type charging_mode: int
+        :param vpc_id: VPC ID。
+        :type vpc_id: str
+        :param vpc_name: VPC的名称。
+        :type vpc_name: str
+        :param created_at: 完成创建时间。格式为时间戳，指从格林威治时间 1970年01月01日00时00分00秒起至指定时间的偏差总毫秒数。
+        :type created_at: str
+        :param user_id: 用户ID。
+        :type user_id: str
+        :param user_name: 用户名。
+        :type user_name: str
+        :param order_id: 订单ID，只有在包周期计费时才会有order_id值，其他计费方式order_id值为空。
+        :type order_id: str
+        :param maintain_begin: 维护时间窗开始时间，格式为HH:mm:ss。
+        :type maintain_begin: str
+        :param maintain_end: 维护时间窗结束时间，格式为HH:mm:ss。
+        :type maintain_end: str
+        :param enable_publicip: RabbitMQ实例是否开启公网访问功能。   - true：开启   - false：未开启
+        :type enable_publicip: bool
+        :param publicip_address: RabbitMQ实例绑定的弹性IP地址。  如果未开启公网访问功能，该字段值为null。
+        :type publicip_address: str
+        :param publicip_id: RabbitMQ实例绑定的弹性IP地址的ID。  如果未开启公网访问功能，该字段值为null。
+        :type publicip_id: str
+        :param management_connect_address: RabbitMQ实例的管理地址。
+        :type management_connect_address: str
+        :param ssl_enable: 是否开启安全认证。   - true：开启   - false：未开启
+        :type ssl_enable: bool
+        :param enterprise_project_id: 企业项目ID。
+        :type enterprise_project_id: str
+        :param is_logical_volume: 实例扩容时用于区分老实例与新实例。 - true：新创建的实例，允许磁盘动态扩容不需要重启。 - false：老实例
+        :type is_logical_volume: bool
+        :param extend_times: 实例扩容磁盘次数，如果超过20次则无法扩容磁盘。
+        :type extend_times: int
+        :param type: 实例类型：集群，cluster。
+        :type type: str
+        :param product_id: 产品标识。
+        :type product_id: str
+        :param security_group_id: 安全组ID。
+        :type security_group_id: str
+        :param security_group_name: 租户安全组名称。
+        :type security_group_name: str
+        :param subnet_id: 子网ID。
+        :type subnet_id: str
+        :param available_zones: 实例节点所在的可用区，返回“可用区ID”。
+        :type available_zones: list[str]
+        :param total_storage_space: 总共消息存储空间，单位：GB。
+        :type total_storage_space: int
+        :param storage_resource_id: 存储资源ID。
+        :type storage_resource_id: str
+        :param storage_spec_code: IO规格。
+        :type storage_spec_code: str
+        :param ipv6_enable: 是否开启ipv6。
+        :type ipv6_enable: bool
+        :param ipv6_connect_addresses: IPv6的连接地址。
+        :type ipv6_connect_addresses: list[str]
+        :param tags: 标签列表。
+        :type tags: list[:class:`huaweicloudsdkrabbitmq.v2.TagEntity`]
+        """
         
         super(ShowInstanceResponse, self).__init__()
 
@@ -258,7 +343,7 @@ class ShowInstanceResponse(SdkResponse):
         实例名称。
 
         :param name: The name of this ShowInstanceResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -280,7 +365,7 @@ class ShowInstanceResponse(SdkResponse):
         消息引擎。
 
         :param engine: The engine of this ShowInstanceResponse.
-        :type: str
+        :type engine: str
         """
         self._engine = engine
 
@@ -302,7 +387,7 @@ class ShowInstanceResponse(SdkResponse):
         消息引擎版本。
 
         :param engine_version: The engine_version of this ShowInstanceResponse.
-        :type: str
+        :type engine_version: str
         """
         self._engine_version = engine_version
 
@@ -324,7 +409,7 @@ class ShowInstanceResponse(SdkResponse):
         实例规格。   - RabbitMQ实例单机返回vm规格。   - RabbitMQ实例集群返回vm规格和节点数。
 
         :param specification: The specification of this ShowInstanceResponse.
-        :type: str
+        :type specification: str
         """
         self._specification = specification
 
@@ -346,7 +431,7 @@ class ShowInstanceResponse(SdkResponse):
         消息存储空间，单位：GB。
 
         :param storage_space: The storage_space of this ShowInstanceResponse.
-        :type: int
+        :type storage_space: int
         """
         self._storage_space = storage_space
 
@@ -368,7 +453,7 @@ class ShowInstanceResponse(SdkResponse):
         已使用的消息存储空间，单位：GB。
 
         :param used_storage_space: The used_storage_space of this ShowInstanceResponse.
-        :type: int
+        :type used_storage_space: int
         """
         self._used_storage_space = used_storage_space
 
@@ -390,7 +475,7 @@ class ShowInstanceResponse(SdkResponse):
         实例连接IP地址。
 
         :param connect_address: The connect_address of this ShowInstanceResponse.
-        :type: str
+        :type connect_address: str
         """
         self._connect_address = connect_address
 
@@ -412,7 +497,7 @@ class ShowInstanceResponse(SdkResponse):
         实例连接端口。
 
         :param port: The port of this ShowInstanceResponse.
-        :type: int
+        :type port: int
         """
         self._port = port
 
@@ -434,7 +519,7 @@ class ShowInstanceResponse(SdkResponse):
         实例的状态。
 
         :param status: The status of this ShowInstanceResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -456,7 +541,7 @@ class ShowInstanceResponse(SdkResponse):
         实例描述。
 
         :param description: The description of this ShowInstanceResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -478,7 +563,7 @@ class ShowInstanceResponse(SdkResponse):
         实例ID。
 
         :param instance_id: The instance_id of this ShowInstanceResponse.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -500,7 +585,7 @@ class ShowInstanceResponse(SdkResponse):
         资源规格标识。   - dms.instance.rabbitmq.single.c3.2u4g：RabbitMQ单机，vm规格2u4g   - dms.instance.rabbitmq.single.c3.4u8g：RabbitMQ单机，vm规格4u8g   - dms.instance.rabbitmq.single.c3.8u16g：RabbitMQ单机，vm规格8u16g   - dms.instance.rabbitmq.single.c3.16u32g：RabbitMQ单机，vm规格16u32g   - dms.instance.rabbitmq.cluster.c3.4u8g.3：RabbitMQ集群，vm规格4u8g，3个节点   - dms.instance.rabbitmq.cluster.c3.4u8g.5：RabbitMQ集群，vm规格4u8g，5个节点   - dms.instance.rabbitmq.cluster.c3.4u8g.7：RabbitMQ集群，vm规格4u8g，7个节点   - dms.instance.rabbitmq.cluster.c3.8u16g.3：RabbitMQ集群，vm规格8u16g，3个节点   - dms.instance.rabbitmq.cluster.c3.8u16g.5：RabbitMQ集群，vm规格8u16g，5个节点   - dms.instance.rabbitmq.cluster.c3.8u16g.7：RabbitMQ集群，vm规格8u16g，7个节点   - dms.instance.rabbitmq.cluster.c3.16u32g.3：RabbitMQ集群，vm规格16u32g，3个节点   - dms.instance.rabbitmq.cluster.c3.16u32g.5：RabbitMQ集群，vm规格16u32g，5个节点   - dms.instance.rabbitmq.cluster.c3.16u32g.7：RabbitMQ集群，vm规格16u32g，7个节点
 
         :param resource_spec_code: The resource_spec_code of this ShowInstanceResponse.
-        :type: str
+        :type resource_spec_code: str
         """
         self._resource_spec_code = resource_spec_code
 
@@ -522,7 +607,7 @@ class ShowInstanceResponse(SdkResponse):
         付费模式，1表示按需计费，0表示包年/包月计费。
 
         :param charging_mode: The charging_mode of this ShowInstanceResponse.
-        :type: int
+        :type charging_mode: int
         """
         self._charging_mode = charging_mode
 
@@ -544,7 +629,7 @@ class ShowInstanceResponse(SdkResponse):
         VPC ID。
 
         :param vpc_id: The vpc_id of this ShowInstanceResponse.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -566,7 +651,7 @@ class ShowInstanceResponse(SdkResponse):
         VPC的名称。
 
         :param vpc_name: The vpc_name of this ShowInstanceResponse.
-        :type: str
+        :type vpc_name: str
         """
         self._vpc_name = vpc_name
 
@@ -588,7 +673,7 @@ class ShowInstanceResponse(SdkResponse):
         完成创建时间。格式为时间戳，指从格林威治时间 1970年01月01日00时00分00秒起至指定时间的偏差总毫秒数。
 
         :param created_at: The created_at of this ShowInstanceResponse.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -610,7 +695,7 @@ class ShowInstanceResponse(SdkResponse):
         用户ID。
 
         :param user_id: The user_id of this ShowInstanceResponse.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -632,7 +717,7 @@ class ShowInstanceResponse(SdkResponse):
         用户名。
 
         :param user_name: The user_name of this ShowInstanceResponse.
-        :type: str
+        :type user_name: str
         """
         self._user_name = user_name
 
@@ -654,7 +739,7 @@ class ShowInstanceResponse(SdkResponse):
         订单ID，只有在包周期计费时才会有order_id值，其他计费方式order_id值为空。
 
         :param order_id: The order_id of this ShowInstanceResponse.
-        :type: str
+        :type order_id: str
         """
         self._order_id = order_id
 
@@ -676,7 +761,7 @@ class ShowInstanceResponse(SdkResponse):
         维护时间窗开始时间，格式为HH:mm:ss。
 
         :param maintain_begin: The maintain_begin of this ShowInstanceResponse.
-        :type: str
+        :type maintain_begin: str
         """
         self._maintain_begin = maintain_begin
 
@@ -698,7 +783,7 @@ class ShowInstanceResponse(SdkResponse):
         维护时间窗结束时间，格式为HH:mm:ss。
 
         :param maintain_end: The maintain_end of this ShowInstanceResponse.
-        :type: str
+        :type maintain_end: str
         """
         self._maintain_end = maintain_end
 
@@ -720,7 +805,7 @@ class ShowInstanceResponse(SdkResponse):
         RabbitMQ实例是否开启公网访问功能。   - true：开启   - false：未开启
 
         :param enable_publicip: The enable_publicip of this ShowInstanceResponse.
-        :type: bool
+        :type enable_publicip: bool
         """
         self._enable_publicip = enable_publicip
 
@@ -742,7 +827,7 @@ class ShowInstanceResponse(SdkResponse):
         RabbitMQ实例绑定的弹性IP地址。  如果未开启公网访问功能，该字段值为null。
 
         :param publicip_address: The publicip_address of this ShowInstanceResponse.
-        :type: str
+        :type publicip_address: str
         """
         self._publicip_address = publicip_address
 
@@ -764,7 +849,7 @@ class ShowInstanceResponse(SdkResponse):
         RabbitMQ实例绑定的弹性IP地址的ID。  如果未开启公网访问功能，该字段值为null。
 
         :param publicip_id: The publicip_id of this ShowInstanceResponse.
-        :type: str
+        :type publicip_id: str
         """
         self._publicip_id = publicip_id
 
@@ -786,7 +871,7 @@ class ShowInstanceResponse(SdkResponse):
         RabbitMQ实例的管理地址。
 
         :param management_connect_address: The management_connect_address of this ShowInstanceResponse.
-        :type: str
+        :type management_connect_address: str
         """
         self._management_connect_address = management_connect_address
 
@@ -808,7 +893,7 @@ class ShowInstanceResponse(SdkResponse):
         是否开启安全认证。   - true：开启   - false：未开启
 
         :param ssl_enable: The ssl_enable of this ShowInstanceResponse.
-        :type: bool
+        :type ssl_enable: bool
         """
         self._ssl_enable = ssl_enable
 
@@ -830,7 +915,7 @@ class ShowInstanceResponse(SdkResponse):
         企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this ShowInstanceResponse.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -852,7 +937,7 @@ class ShowInstanceResponse(SdkResponse):
         实例扩容时用于区分老实例与新实例。 - true：新创建的实例，允许磁盘动态扩容不需要重启。 - false：老实例
 
         :param is_logical_volume: The is_logical_volume of this ShowInstanceResponse.
-        :type: bool
+        :type is_logical_volume: bool
         """
         self._is_logical_volume = is_logical_volume
 
@@ -874,7 +959,7 @@ class ShowInstanceResponse(SdkResponse):
         实例扩容磁盘次数，如果超过20次则无法扩容磁盘。
 
         :param extend_times: The extend_times of this ShowInstanceResponse.
-        :type: int
+        :type extend_times: int
         """
         self._extend_times = extend_times
 
@@ -896,7 +981,7 @@ class ShowInstanceResponse(SdkResponse):
         实例类型：集群，cluster。
 
         :param type: The type of this ShowInstanceResponse.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -918,7 +1003,7 @@ class ShowInstanceResponse(SdkResponse):
         产品标识。
 
         :param product_id: The product_id of this ShowInstanceResponse.
-        :type: str
+        :type product_id: str
         """
         self._product_id = product_id
 
@@ -940,7 +1025,7 @@ class ShowInstanceResponse(SdkResponse):
         安全组ID。
 
         :param security_group_id: The security_group_id of this ShowInstanceResponse.
-        :type: str
+        :type security_group_id: str
         """
         self._security_group_id = security_group_id
 
@@ -962,7 +1047,7 @@ class ShowInstanceResponse(SdkResponse):
         租户安全组名称。
 
         :param security_group_name: The security_group_name of this ShowInstanceResponse.
-        :type: str
+        :type security_group_name: str
         """
         self._security_group_name = security_group_name
 
@@ -984,7 +1069,7 @@ class ShowInstanceResponse(SdkResponse):
         子网ID。
 
         :param subnet_id: The subnet_id of this ShowInstanceResponse.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -1006,7 +1091,7 @@ class ShowInstanceResponse(SdkResponse):
         实例节点所在的可用区，返回“可用区ID”。
 
         :param available_zones: The available_zones of this ShowInstanceResponse.
-        :type: list[str]
+        :type available_zones: list[str]
         """
         self._available_zones = available_zones
 
@@ -1028,7 +1113,7 @@ class ShowInstanceResponse(SdkResponse):
         总共消息存储空间，单位：GB。
 
         :param total_storage_space: The total_storage_space of this ShowInstanceResponse.
-        :type: int
+        :type total_storage_space: int
         """
         self._total_storage_space = total_storage_space
 
@@ -1050,7 +1135,7 @@ class ShowInstanceResponse(SdkResponse):
         存储资源ID。
 
         :param storage_resource_id: The storage_resource_id of this ShowInstanceResponse.
-        :type: str
+        :type storage_resource_id: str
         """
         self._storage_resource_id = storage_resource_id
 
@@ -1072,7 +1157,7 @@ class ShowInstanceResponse(SdkResponse):
         IO规格。
 
         :param storage_spec_code: The storage_spec_code of this ShowInstanceResponse.
-        :type: str
+        :type storage_spec_code: str
         """
         self._storage_spec_code = storage_spec_code
 
@@ -1094,7 +1179,7 @@ class ShowInstanceResponse(SdkResponse):
         是否开启ipv6。
 
         :param ipv6_enable: The ipv6_enable of this ShowInstanceResponse.
-        :type: bool
+        :type ipv6_enable: bool
         """
         self._ipv6_enable = ipv6_enable
 
@@ -1116,7 +1201,7 @@ class ShowInstanceResponse(SdkResponse):
         IPv6的连接地址。
 
         :param ipv6_connect_addresses: The ipv6_connect_addresses of this ShowInstanceResponse.
-        :type: list[str]
+        :type ipv6_connect_addresses: list[str]
         """
         self._ipv6_connect_addresses = ipv6_connect_addresses
 
@@ -1127,7 +1212,7 @@ class ShowInstanceResponse(SdkResponse):
         标签列表。
 
         :return: The tags of this ShowInstanceResponse.
-        :rtype: list[TagEntity]
+        :rtype: list[:class:`huaweicloudsdkrabbitmq.v2.TagEntity`]
         """
         return self._tags
 
@@ -1138,7 +1223,7 @@ class ShowInstanceResponse(SdkResponse):
         标签列表。
 
         :param tags: The tags of this ShowInstanceResponse.
-        :type: list[TagEntity]
+        :type tags: list[:class:`huaweicloudsdkrabbitmq.v2.TagEntity`]
         """
         self._tags = tags
 

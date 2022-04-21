@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CheckMd5DuplicationRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CheckMd5DuplicationRequest:
     }
 
     def __init__(self, size=None, md5=None):
-        """CheckMd5DuplicationRequest - a model defined in huaweicloud sdk"""
+        """CheckMd5DuplicationRequest
+
+        The model defined in huaweicloud sdk
+
+        :param size: 文件大小
+        :type size: int
+        :param md5: 文件MD5。  建议参考[上传校验](https://support.huaweicloud.com/api-vod/vod_04_0212.html#vod_04_0212__section575102165412)生成对应的MD5值。
+        :type md5: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class CheckMd5DuplicationRequest:
         文件大小
 
         :param size: The size of this CheckMd5DuplicationRequest.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -83,7 +90,7 @@ class CheckMd5DuplicationRequest:
         文件MD5。  建议参考[上传校验](https://support.huaweicloud.com/api-vod/vod_04_0212.html#vod_04_0212__section575102165412)生成对应的MD5值。
 
         :param md5: The md5 of this CheckMd5DuplicationRequest.
-        :type: str
+        :type md5: str
         """
         self._md5 = md5
 

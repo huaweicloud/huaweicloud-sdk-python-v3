@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateVersionAliasResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class CreateVersionAliasResponse(SdkResponse):
     }
 
     def __init__(self, name=None, version=None, description=None, last_modified=None, alias_urn=None, additional_version_weights=None):
-        """CreateVersionAliasResponse - a model defined in huaweicloud sdk"""
+        """CreateVersionAliasResponse
+
+        The model defined in huaweicloud sdk
+
+        :param name: 要获取的别名名称。
+        :type name: str
+        :param version: 别名对应的版本名称。
+        :type version: str
+        :param description: 别名描述信息。
+        :type description: str
+        :param last_modified: 别名最后修改时间。
+        :type last_modified: datetime
+        :param alias_urn: 版本别名唯一标识。
+        :type alias_urn: str
+        :param additional_version_weights: 灰度版本信息
+        :type additional_version_weights: dict(str, int)
+        """
         
         super(CreateVersionAliasResponse, self).__init__()
 
@@ -83,7 +98,7 @@ class CreateVersionAliasResponse(SdkResponse):
         要获取的别名名称。
 
         :param name: The name of this CreateVersionAliasResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -105,7 +120,7 @@ class CreateVersionAliasResponse(SdkResponse):
         别名对应的版本名称。
 
         :param version: The version of this CreateVersionAliasResponse.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -127,7 +142,7 @@ class CreateVersionAliasResponse(SdkResponse):
         别名描述信息。
 
         :param description: The description of this CreateVersionAliasResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -149,7 +164,7 @@ class CreateVersionAliasResponse(SdkResponse):
         别名最后修改时间。
 
         :param last_modified: The last_modified of this CreateVersionAliasResponse.
-        :type: datetime
+        :type last_modified: datetime
         """
         self._last_modified = last_modified
 
@@ -171,7 +186,7 @@ class CreateVersionAliasResponse(SdkResponse):
         版本别名唯一标识。
 
         :param alias_urn: The alias_urn of this CreateVersionAliasResponse.
-        :type: str
+        :type alias_urn: str
         """
         self._alias_urn = alias_urn
 
@@ -193,7 +208,7 @@ class CreateVersionAliasResponse(SdkResponse):
         灰度版本信息
 
         :param additional_version_weights: The additional_version_weights of this CreateVersionAliasResponse.
-        :type: dict(str, int)
+        :type additional_version_weights: dict(str, int)
         """
         self._additional_version_weights = additional_version_weights
 

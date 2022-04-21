@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SecurityGroup:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class SecurityGroup:
     }
 
     def __init__(self, id=None, name=None, description=None, security_group_rules=None):
-        """SecurityGroup - a model defined in huaweicloud sdk"""
+        """SecurityGroup
+
+        The model defined in huaweicloud sdk
+
+        :param id: 安全组的ID。UUID
+        :type id: str
+        :param name: 安全组的名称。
+        :type name: str
+        :param description: 安全组的描述。
+        :type description: str
+        :param security_group_rules: 安全组规则列表。
+        :type security_group_rules: list[:class:`huaweicloudsdkiec.v1.SecurityGroupRule`]
+        """
         
         
 
@@ -73,7 +84,7 @@ class SecurityGroup:
         安全组的ID。UUID
 
         :param id: The id of this SecurityGroup.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -95,7 +106,7 @@ class SecurityGroup:
         安全组的名称。
 
         :param name: The name of this SecurityGroup.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -117,7 +128,7 @@ class SecurityGroup:
         安全组的描述。
 
         :param description: The description of this SecurityGroup.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -128,7 +139,7 @@ class SecurityGroup:
         安全组规则列表。
 
         :return: The security_group_rules of this SecurityGroup.
-        :rtype: list[SecurityGroupRule]
+        :rtype: list[:class:`huaweicloudsdkiec.v1.SecurityGroupRule`]
         """
         return self._security_group_rules
 
@@ -139,7 +150,7 @@ class SecurityGroup:
         安全组规则列表。
 
         :param security_group_rules: The security_group_rules of this SecurityGroup.
-        :type: list[SecurityGroupRule]
+        :type security_group_rules: list[:class:`huaweicloudsdkiec.v1.SecurityGroupRule`]
         """
         self._security_group_rules = security_group_rules
 

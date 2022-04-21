@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StopSnapshotRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class StopSnapshotRequest:
     }
 
     def __init__(self, cluster_id=None):
-        """StopSnapshotRequest - a model defined in huaweicloud sdk"""
+        """StopSnapshotRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 快照所属的集群的ID。
+        :type cluster_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class StopSnapshotRequest:
         快照所属的集群的ID。
 
         :param cluster_id: The cluster_id of this StopSnapshotRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 

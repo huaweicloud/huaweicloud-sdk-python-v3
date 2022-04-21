@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InterfaceAttachableQuantity:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class InterfaceAttachableQuantity:
     }
 
     def __init__(self, free_nic=None):
-        """InterfaceAttachableQuantity - a model defined in huaweicloud sdk"""
+        """InterfaceAttachableQuantity
+
+        The model defined in huaweicloud sdk
+
+        :param free_nic: 云服务器剩余可挂载网卡数量
+        :type free_nic: int
+        """
         
         
 
@@ -58,7 +63,7 @@ class InterfaceAttachableQuantity:
         云服务器剩余可挂载网卡数量
 
         :param free_nic: The free_nic of this InterfaceAttachableQuantity.
-        :type: int
+        :type free_nic: int
         """
         self._free_nic = free_nic
 

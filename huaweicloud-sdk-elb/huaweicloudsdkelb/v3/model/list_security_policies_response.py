@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSecurityPoliciesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListSecurityPoliciesResponse(SdkResponse):
     }
 
     def __init__(self, security_policies=None, request_id=None, page_info=None):
-        """ListSecurityPoliciesResponse - a model defined in huaweicloud sdk"""
+        """ListSecurityPoliciesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param security_policies: 自定义安全策略列表返回对象。
+        :type security_policies: list[:class:`huaweicloudsdkelb.v3.SecurityPolicy`]
+        :param request_id: 请求ID。  注：自动生成 。
+        :type request_id: str
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`
+        """
         
         super(ListSecurityPoliciesResponse, self).__init__()
 
@@ -57,7 +66,7 @@ class ListSecurityPoliciesResponse(SdkResponse):
         自定义安全策略列表返回对象。
 
         :return: The security_policies of this ListSecurityPoliciesResponse.
-        :rtype: list[SecurityPolicy]
+        :rtype: list[:class:`huaweicloudsdkelb.v3.SecurityPolicy`]
         """
         return self._security_policies
 
@@ -68,7 +77,7 @@ class ListSecurityPoliciesResponse(SdkResponse):
         自定义安全策略列表返回对象。
 
         :param security_policies: The security_policies of this ListSecurityPoliciesResponse.
-        :type: list[SecurityPolicy]
+        :type security_policies: list[:class:`huaweicloudsdkelb.v3.SecurityPolicy`]
         """
         self._security_policies = security_policies
 
@@ -90,7 +99,7 @@ class ListSecurityPoliciesResponse(SdkResponse):
         请求ID。  注：自动生成 。
 
         :param request_id: The request_id of this ListSecurityPoliciesResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 
@@ -100,7 +109,7 @@ class ListSecurityPoliciesResponse(SdkResponse):
 
 
         :return: The page_info of this ListSecurityPoliciesResponse.
-        :rtype: PageInfo
+        :rtype: :class:`huaweicloudsdkelb.v3.PageInfo`
         """
         return self._page_info
 
@@ -110,7 +119,7 @@ class ListSecurityPoliciesResponse(SdkResponse):
 
 
         :param page_info: The page_info of this ListSecurityPoliciesResponse.
-        :type: PageInfo
+        :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`
         """
         self._page_info = page_info
 

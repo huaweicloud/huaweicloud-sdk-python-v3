@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListEnvironmentsV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListEnvironmentsV2Request:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, name=None):
-        """ListEnvironmentsV2Request - a model defined in huaweicloud sdk"""
+        """ListEnvironmentsV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param offset: 偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
+        :type offset: int
+        :param limit: 每页显示的条目数量
+        :type limit: int
+        :param name: 环境名称
+        :type name: str
+        """
         
         
 
@@ -72,7 +83,7 @@ class ListEnvironmentsV2Request:
         实例ID
 
         :param instance_id: The instance_id of this ListEnvironmentsV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -94,7 +105,7 @@ class ListEnvironmentsV2Request:
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
         :param offset: The offset of this ListEnvironmentsV2Request.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -116,7 +127,7 @@ class ListEnvironmentsV2Request:
         每页显示的条目数量
 
         :param limit: The limit of this ListEnvironmentsV2Request.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -138,7 +149,7 @@ class ListEnvironmentsV2Request:
         环境名称
 
         :param name: The name of this ListEnvironmentsV2Request.
-        :type: str
+        :type name: str
         """
         self._name = name
 

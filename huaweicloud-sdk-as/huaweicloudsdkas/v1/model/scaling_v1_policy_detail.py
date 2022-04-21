@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ScalingV1PolicyDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class ScalingV1PolicyDetail:
     }
 
     def __init__(self, scaling_group_id=None, scaling_policy_name=None, scaling_policy_id=None, policy_status=None, scaling_policy_type=None, alarm_id=None, scheduled_policy=None, scaling_policy_action=None, cool_down_time=None, create_time=None):
-        """ScalingV1PolicyDetail - a model defined in huaweicloud sdk"""
+        """ScalingV1PolicyDetail
+
+        The model defined in huaweicloud sdk
+
+        :param scaling_group_id: 伸缩组ID。
+        :type scaling_group_id: str
+        :param scaling_policy_name: 伸缩策略名称。
+        :type scaling_policy_name: str
+        :param scaling_policy_id: 伸缩策略ID。
+        :type scaling_policy_id: str
+        :param policy_status: 伸缩策略状态  INSERVICE：已启用 PAUSED：已停用 EXECUTING：执行中
+        :type policy_status: str
+        :param scaling_policy_type: 伸缩策略类型：ALARM：告警策略，此时alarm_id有返回，scheduled_policy不会返回。SCHEDULED：定时策略，此时alarm_id不会返回，scheduled_policy有返回，并且recurrence_type、recurrence_value、start_time和end_time不会返回。RECURRENCE：周期策略，此时alarm_id不会返回，scheduled_policy有返回，并且recurrence_type、recurrence_value、start_time和end_time有返回。
+        :type scaling_policy_type: str
+        :param alarm_id: 告警ID，即告警规则的ID，当scaling_policy_type为ALARM时该项必选，此时scheduled_policy不生效。创建告警策略成功后，会自动为该告警ID对应的告警规则的alarm_actions字段增加类型为autoscaling的告警触发动作。告警ID通过查询云监控告警规则列表获取，详见《云监控API参考》的“查询告警规则列表”。
+        :type alarm_id: str
+        :param scheduled_policy: 
+        :type scheduled_policy: :class:`huaweicloudsdkas.v1.ScheduledPolicy`
+        :param scaling_policy_action: 
+        :type scaling_policy_action: :class:`huaweicloudsdkas.v1.ScalingPolicyActionV1`
+        :param cool_down_time: 冷却时间，取值范围0-86400，默认为300，单位是秒。
+        :type cool_down_time: int
+        :param create_time: 创建伸缩策略时间，遵循UTC时间。
+        :type create_time: str
+        """
         
         
 
@@ -103,7 +126,7 @@ class ScalingV1PolicyDetail:
         伸缩组ID。
 
         :param scaling_group_id: The scaling_group_id of this ScalingV1PolicyDetail.
-        :type: str
+        :type scaling_group_id: str
         """
         self._scaling_group_id = scaling_group_id
 
@@ -125,7 +148,7 @@ class ScalingV1PolicyDetail:
         伸缩策略名称。
 
         :param scaling_policy_name: The scaling_policy_name of this ScalingV1PolicyDetail.
-        :type: str
+        :type scaling_policy_name: str
         """
         self._scaling_policy_name = scaling_policy_name
 
@@ -147,7 +170,7 @@ class ScalingV1PolicyDetail:
         伸缩策略ID。
 
         :param scaling_policy_id: The scaling_policy_id of this ScalingV1PolicyDetail.
-        :type: str
+        :type scaling_policy_id: str
         """
         self._scaling_policy_id = scaling_policy_id
 
@@ -169,7 +192,7 @@ class ScalingV1PolicyDetail:
         伸缩策略状态  INSERVICE：已启用 PAUSED：已停用 EXECUTING：执行中
 
         :param policy_status: The policy_status of this ScalingV1PolicyDetail.
-        :type: str
+        :type policy_status: str
         """
         self._policy_status = policy_status
 
@@ -191,7 +214,7 @@ class ScalingV1PolicyDetail:
         伸缩策略类型：ALARM：告警策略，此时alarm_id有返回，scheduled_policy不会返回。SCHEDULED：定时策略，此时alarm_id不会返回，scheduled_policy有返回，并且recurrence_type、recurrence_value、start_time和end_time不会返回。RECURRENCE：周期策略，此时alarm_id不会返回，scheduled_policy有返回，并且recurrence_type、recurrence_value、start_time和end_time有返回。
 
         :param scaling_policy_type: The scaling_policy_type of this ScalingV1PolicyDetail.
-        :type: str
+        :type scaling_policy_type: str
         """
         self._scaling_policy_type = scaling_policy_type
 
@@ -213,7 +236,7 @@ class ScalingV1PolicyDetail:
         告警ID，即告警规则的ID，当scaling_policy_type为ALARM时该项必选，此时scheduled_policy不生效。创建告警策略成功后，会自动为该告警ID对应的告警规则的alarm_actions字段增加类型为autoscaling的告警触发动作。告警ID通过查询云监控告警规则列表获取，详见《云监控API参考》的“查询告警规则列表”。
 
         :param alarm_id: The alarm_id of this ScalingV1PolicyDetail.
-        :type: str
+        :type alarm_id: str
         """
         self._alarm_id = alarm_id
 
@@ -223,7 +246,7 @@ class ScalingV1PolicyDetail:
 
 
         :return: The scheduled_policy of this ScalingV1PolicyDetail.
-        :rtype: ScheduledPolicy
+        :rtype: :class:`huaweicloudsdkas.v1.ScheduledPolicy`
         """
         return self._scheduled_policy
 
@@ -233,7 +256,7 @@ class ScalingV1PolicyDetail:
 
 
         :param scheduled_policy: The scheduled_policy of this ScalingV1PolicyDetail.
-        :type: ScheduledPolicy
+        :type scheduled_policy: :class:`huaweicloudsdkas.v1.ScheduledPolicy`
         """
         self._scheduled_policy = scheduled_policy
 
@@ -243,7 +266,7 @@ class ScalingV1PolicyDetail:
 
 
         :return: The scaling_policy_action of this ScalingV1PolicyDetail.
-        :rtype: ScalingPolicyActionV1
+        :rtype: :class:`huaweicloudsdkas.v1.ScalingPolicyActionV1`
         """
         return self._scaling_policy_action
 
@@ -253,7 +276,7 @@ class ScalingV1PolicyDetail:
 
 
         :param scaling_policy_action: The scaling_policy_action of this ScalingV1PolicyDetail.
-        :type: ScalingPolicyActionV1
+        :type scaling_policy_action: :class:`huaweicloudsdkas.v1.ScalingPolicyActionV1`
         """
         self._scaling_policy_action = scaling_policy_action
 
@@ -275,7 +298,7 @@ class ScalingV1PolicyDetail:
         冷却时间，取值范围0-86400，默认为300，单位是秒。
 
         :param cool_down_time: The cool_down_time of this ScalingV1PolicyDetail.
-        :type: int
+        :type cool_down_time: int
         """
         self._cool_down_time = cool_down_time
 
@@ -297,7 +320,7 @@ class ScalingV1PolicyDetail:
         创建伸缩策略时间，遵循UTC时间。
 
         :param create_time: The create_time of this ScalingV1PolicyDetail.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 

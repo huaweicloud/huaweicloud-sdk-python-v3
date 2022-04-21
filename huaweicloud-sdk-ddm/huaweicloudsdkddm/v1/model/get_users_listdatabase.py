@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GetUsersListdatabase:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class GetUsersListdatabase:
     }
 
     def __init__(self, name=None, description=None):
-        """GetUsersListdatabase - a model defined in huaweicloud sdk"""
+        """GetUsersListdatabase
+
+        The model defined in huaweicloud sdk
+
+        :param name: DDM实例帐号关联的逻辑库名称。
+        :type name: str
+        :param description: 逻辑库的描述信息。
+        :type description: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class GetUsersListdatabase:
         DDM实例帐号关联的逻辑库名称。
 
         :param name: The name of this GetUsersListdatabase.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -85,7 +92,7 @@ class GetUsersListdatabase:
         逻辑库的描述信息。
 
         :param description: The description of this GetUsersListdatabase.
-        :type: str
+        :type description: str
         """
         self._description = description
 

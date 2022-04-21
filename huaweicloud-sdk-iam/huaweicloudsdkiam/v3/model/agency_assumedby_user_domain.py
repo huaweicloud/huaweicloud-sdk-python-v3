@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AgencyAssumedbyUserDomain:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AgencyAssumedbyUserDomain:
     }
 
     def __init__(self, name=None, id=None):
-        """AgencyAssumedbyUserDomain - a model defined in huaweicloud sdk"""
+        """AgencyAssumedbyUserDomain
+
+        The model defined in huaweicloud sdk
+
+        :param name: 被委托方B的账号名称。
+        :type name: str
+        :param id: 被委托方B的账号ID。
+        :type id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class AgencyAssumedbyUserDomain:
         被委托方B的账号名称。
 
         :param name: The name of this AgencyAssumedbyUserDomain.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -83,7 +90,7 @@ class AgencyAssumedbyUserDomain:
         被委托方B的账号ID。
 
         :param id: The id of this AgencyAssumedbyUserDomain.
-        :type: str
+        :type id: str
         """
         self._id = id
 

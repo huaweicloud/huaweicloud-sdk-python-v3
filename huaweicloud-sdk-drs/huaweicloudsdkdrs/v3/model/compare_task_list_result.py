@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CompareTaskListResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CompareTaskListResult:
     }
 
     def __init__(self, compare_task_list=None, compare_task_list_count=None, error_msg=None, error_code=None):
-        """CompareTaskListResult - a model defined in huaweicloud sdk"""
+        """CompareTaskListResult
+
+        The model defined in huaweicloud sdk
+
+        :param compare_task_list: 对比任务列表。
+        :type compare_task_list: list[:class:`huaweicloudsdkdrs.v3.CompareTaskList`]
+        :param compare_task_list_count: 对比任务列表总数。
+        :type compare_task_list_count: int
+        :param error_msg: 错误信息
+        :type error_msg: str
+        :param error_code: 错误码。
+        :type error_code: str
+        """
         
         
 
@@ -62,7 +73,7 @@ class CompareTaskListResult:
         对比任务列表。
 
         :return: The compare_task_list of this CompareTaskListResult.
-        :rtype: list[CompareTaskList]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.CompareTaskList`]
         """
         return self._compare_task_list
 
@@ -73,7 +84,7 @@ class CompareTaskListResult:
         对比任务列表。
 
         :param compare_task_list: The compare_task_list of this CompareTaskListResult.
-        :type: list[CompareTaskList]
+        :type compare_task_list: list[:class:`huaweicloudsdkdrs.v3.CompareTaskList`]
         """
         self._compare_task_list = compare_task_list
 
@@ -95,7 +106,7 @@ class CompareTaskListResult:
         对比任务列表总数。
 
         :param compare_task_list_count: The compare_task_list_count of this CompareTaskListResult.
-        :type: int
+        :type compare_task_list_count: int
         """
         self._compare_task_list_count = compare_task_list_count
 
@@ -117,7 +128,7 @@ class CompareTaskListResult:
         错误信息
 
         :param error_msg: The error_msg of this CompareTaskListResult.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 
@@ -139,7 +150,7 @@ class CompareTaskListResult:
         错误码。
 
         :param error_code: The error_code of this CompareTaskListResult.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 

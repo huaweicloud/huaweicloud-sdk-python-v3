@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SqlRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class SqlRequest:
     }
 
     def __init__(self, is_time_range_relative=None, log_stream_id=None, log_stream_name=None, log_group_id=None, log_group_name=None, sql=None, sql_request_title=None, search_time_range=None, search_time_range_unit=None):
-        """SqlRequest - a model defined in huaweicloud sdk"""
+        """SqlRequest
+
+        The model defined in huaweicloud sdk
+
+        :param is_time_range_relative: 是时间范围相对
+        :type is_time_range_relative: bool
+        :param log_stream_id: 日志流id
+        :type log_stream_id: str
+        :param log_stream_name: 日志流名称
+        :type log_stream_name: str
+        :param log_group_id: 日志组id
+        :type log_group_id: str
+        :param log_group_name: 日志组名称
+        :type log_group_name: str
+        :param sql: sql语句
+        :type sql: str
+        :param sql_request_title: 图表名称
+        :type sql_request_title: str
+        :param search_time_range: 查询执行任务时最近数据的时间范围(当search_time_range_unit为minute，则最大值为60;当search_time_range_unit为hour，则最大值为24)
+        :type search_time_range: int
+        :param search_time_range_unit: 查询时间单位
+        :type search_time_range_unit: str
+        """
         
         
 
@@ -92,7 +113,7 @@ class SqlRequest:
         是时间范围相对
 
         :param is_time_range_relative: The is_time_range_relative of this SqlRequest.
-        :type: bool
+        :type is_time_range_relative: bool
         """
         self._is_time_range_relative = is_time_range_relative
 
@@ -114,7 +135,7 @@ class SqlRequest:
         日志流id
 
         :param log_stream_id: The log_stream_id of this SqlRequest.
-        :type: str
+        :type log_stream_id: str
         """
         self._log_stream_id = log_stream_id
 
@@ -136,7 +157,7 @@ class SqlRequest:
         日志流名称
 
         :param log_stream_name: The log_stream_name of this SqlRequest.
-        :type: str
+        :type log_stream_name: str
         """
         self._log_stream_name = log_stream_name
 
@@ -158,7 +179,7 @@ class SqlRequest:
         日志组id
 
         :param log_group_id: The log_group_id of this SqlRequest.
-        :type: str
+        :type log_group_id: str
         """
         self._log_group_id = log_group_id
 
@@ -180,7 +201,7 @@ class SqlRequest:
         日志组名称
 
         :param log_group_name: The log_group_name of this SqlRequest.
-        :type: str
+        :type log_group_name: str
         """
         self._log_group_name = log_group_name
 
@@ -202,7 +223,7 @@ class SqlRequest:
         sql语句
 
         :param sql: The sql of this SqlRequest.
-        :type: str
+        :type sql: str
         """
         self._sql = sql
 
@@ -224,7 +245,7 @@ class SqlRequest:
         图表名称
 
         :param sql_request_title: The sql_request_title of this SqlRequest.
-        :type: str
+        :type sql_request_title: str
         """
         self._sql_request_title = sql_request_title
 
@@ -246,7 +267,7 @@ class SqlRequest:
         查询执行任务时最近数据的时间范围(当search_time_range_unit为minute，则最大值为60;当search_time_range_unit为hour，则最大值为24)
 
         :param search_time_range: The search_time_range of this SqlRequest.
-        :type: int
+        :type search_time_range: int
         """
         self._search_time_range = search_time_range
 
@@ -268,7 +289,7 @@ class SqlRequest:
         查询时间单位
 
         :param search_time_range_unit: The search_time_range_unit of this SqlRequest.
-        :type: str
+        :type search_time_range_unit: str
         """
         self._search_time_range_unit = search_time_range_unit
 

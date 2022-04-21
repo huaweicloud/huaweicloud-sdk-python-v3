@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IssueRecordV4Details:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class IssueRecordV4Details:
     }
 
     def __init__(self, _property=None, old_value=None, new_value=None, operation=None, id=None, name=None):
-        """IssueRecordV4Details - a model defined in huaweicloud sdk"""
+        """IssueRecordV4Details
+
+        The model defined in huaweicloud sdk
+
+        :param _property: 操作属性
+        :type _property: str
+        :param old_value: 上次的记录
+        :type old_value: str
+        :param new_value: 当前值
+        :type new_value: str
+        :param operation: 操作
+        :type operation: str
+        :param id: 操作记录的id
+        :type id: int
+        :param name: 操作的字段
+        :type name: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class IssueRecordV4Details:
         操作属性
 
         :param _property: The _property of this IssueRecordV4Details.
-        :type: str
+        :type _property: str
         """
         self.__property = _property
 
@@ -105,7 +120,7 @@ class IssueRecordV4Details:
         上次的记录
 
         :param old_value: The old_value of this IssueRecordV4Details.
-        :type: str
+        :type old_value: str
         """
         self._old_value = old_value
 
@@ -127,7 +142,7 @@ class IssueRecordV4Details:
         当前值
 
         :param new_value: The new_value of this IssueRecordV4Details.
-        :type: str
+        :type new_value: str
         """
         self._new_value = new_value
 
@@ -149,7 +164,7 @@ class IssueRecordV4Details:
         操作
 
         :param operation: The operation of this IssueRecordV4Details.
-        :type: str
+        :type operation: str
         """
         self._operation = operation
 
@@ -171,7 +186,7 @@ class IssueRecordV4Details:
         操作记录的id
 
         :param id: The id of this IssueRecordV4Details.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -193,7 +208,7 @@ class IssueRecordV4Details:
         操作的字段
 
         :param name: The name of this IssueRecordV4Details.
-        :type: str
+        :type name: str
         """
         self._name = name
 

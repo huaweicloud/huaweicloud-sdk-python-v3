@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListProtectedInstancesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListProtectedInstancesResponse(SdkResponse):
     }
 
     def __init__(self, protected_instances=None, count=None):
-        """ListProtectedInstancesResponse - a model defined in huaweicloud sdk"""
+        """ListProtectedInstancesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param protected_instances: 保护实例的信息列表。
+        :type protected_instances: list[:class:`huaweicloudsdksdrs.v1.ShowProtectedInstanceParams`]
+        :param count: 列表中包含的保护实例个数。
+        :type count: int
+        """
         
         super(ListProtectedInstancesResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListProtectedInstancesResponse(SdkResponse):
         保护实例的信息列表。
 
         :return: The protected_instances of this ListProtectedInstancesResponse.
-        :rtype: list[ShowProtectedInstanceParams]
+        :rtype: list[:class:`huaweicloudsdksdrs.v1.ShowProtectedInstanceParams`]
         """
         return self._protected_instances
 
@@ -63,7 +70,7 @@ class ListProtectedInstancesResponse(SdkResponse):
         保护实例的信息列表。
 
         :param protected_instances: The protected_instances of this ListProtectedInstancesResponse.
-        :type: list[ShowProtectedInstanceParams]
+        :type protected_instances: list[:class:`huaweicloudsdksdrs.v1.ShowProtectedInstanceParams`]
         """
         self._protected_instances = protected_instances
 
@@ -85,7 +92,7 @@ class ListProtectedInstancesResponse(SdkResponse):
         列表中包含的保护实例个数。
 
         :param count: The count of this ListProtectedInstancesResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowClusterRespClusterBrokers:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ShowClusterRespClusterBrokers:
     }
 
     def __init__(self, host=None, port=None, broker_id=None, is_controller=None, version=None, register_time=None, is_health=None):
-        """ShowClusterRespClusterBrokers - a model defined in huaweicloud sdk"""
+        """ShowClusterRespClusterBrokers
+
+        The model defined in huaweicloud sdk
+
+        :param host: 节点IP。
+        :type host: str
+        :param port: 端口号。
+        :type port: int
+        :param broker_id: 节点id。
+        :type broker_id: str
+        :param is_controller: 是否为contoller节点。
+        :type is_controller: bool
+        :param version: 服务端版本。
+        :type version: str
+        :param register_time: broker注册时间，为unix时间戳格式。
+        :type register_time: int
+        :param is_health: Kafka实例节点的连通性是否正常。
+        :type is_health: bool
+        """
         
         
 
@@ -88,7 +105,7 @@ class ShowClusterRespClusterBrokers:
         节点IP。
 
         :param host: The host of this ShowClusterRespClusterBrokers.
-        :type: str
+        :type host: str
         """
         self._host = host
 
@@ -110,7 +127,7 @@ class ShowClusterRespClusterBrokers:
         端口号。
 
         :param port: The port of this ShowClusterRespClusterBrokers.
-        :type: int
+        :type port: int
         """
         self._port = port
 
@@ -132,7 +149,7 @@ class ShowClusterRespClusterBrokers:
         节点id。
 
         :param broker_id: The broker_id of this ShowClusterRespClusterBrokers.
-        :type: str
+        :type broker_id: str
         """
         self._broker_id = broker_id
 
@@ -154,7 +171,7 @@ class ShowClusterRespClusterBrokers:
         是否为contoller节点。
 
         :param is_controller: The is_controller of this ShowClusterRespClusterBrokers.
-        :type: bool
+        :type is_controller: bool
         """
         self._is_controller = is_controller
 
@@ -176,7 +193,7 @@ class ShowClusterRespClusterBrokers:
         服务端版本。
 
         :param version: The version of this ShowClusterRespClusterBrokers.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -198,7 +215,7 @@ class ShowClusterRespClusterBrokers:
         broker注册时间，为unix时间戳格式。
 
         :param register_time: The register_time of this ShowClusterRespClusterBrokers.
-        :type: int
+        :type register_time: int
         """
         self._register_time = register_time
 
@@ -220,7 +237,7 @@ class ShowClusterRespClusterBrokers:
         Kafka实例节点的连通性是否正常。
 
         :param is_health: The is_health of this ShowClusterRespClusterBrokers.
-        :type: bool
+        :type is_health: bool
         """
         self._is_health = is_health
 

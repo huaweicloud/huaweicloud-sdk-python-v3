@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ImportLiveDataApiDefinitionsV2RequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ImportLiveDataApiDefinitionsV2RequestBody:
     }
 
     def __init__(self, extend_mode=None, api_mode=None, file_name=None):
-        """ImportLiveDataApiDefinitionsV2RequestBody - a model defined in huaweicloud sdk"""
+        """ImportLiveDataApiDefinitionsV2RequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param extend_mode: 扩展信息导入模式 - merge：当扩展信息定义冲突时，merge保留原有扩展信息 - override：当扩展信息定义冲突时，override会覆盖原有扩展信息
+        :type extend_mode: str
+        :param api_mode: 导入模式 - merge：当API信息定义冲突时，merge保留原有API信息 - override：当API信息定义冲突时，override会覆盖原有API信息
+        :type api_mode: str
+        :param file_name: 导入自定义后端API的请求体，json或yaml格式的文件
+        :type file_name: :class:`huaweicloudsdkcore.http.formdata.FormFile`
+        """
         
         
 
@@ -67,7 +76,7 @@ class ImportLiveDataApiDefinitionsV2RequestBody:
         扩展信息导入模式 - merge：当扩展信息定义冲突时，merge保留原有扩展信息 - override：当扩展信息定义冲突时，override会覆盖原有扩展信息
 
         :param extend_mode: The extend_mode of this ImportLiveDataApiDefinitionsV2RequestBody.
-        :type: str
+        :type extend_mode: str
         """
         self._extend_mode = extend_mode
 
@@ -89,7 +98,7 @@ class ImportLiveDataApiDefinitionsV2RequestBody:
         导入模式 - merge：当API信息定义冲突时，merge保留原有API信息 - override：当API信息定义冲突时，override会覆盖原有API信息
 
         :param api_mode: The api_mode of this ImportLiveDataApiDefinitionsV2RequestBody.
-        :type: str
+        :type api_mode: str
         """
         self._api_mode = api_mode
 
@@ -100,7 +109,7 @@ class ImportLiveDataApiDefinitionsV2RequestBody:
         导入自定义后端API的请求体，json或yaml格式的文件
 
         :return: The file_name of this ImportLiveDataApiDefinitionsV2RequestBody.
-        :rtype: file
+        :rtype: :class:`huaweicloudsdkcore.http.formdata.FormFile`
         """
         return self._file_name
 
@@ -111,7 +120,7 @@ class ImportLiveDataApiDefinitionsV2RequestBody:
         导入自定义后端API的请求体，json或yaml格式的文件
 
         :param file_name: The file_name of this ImportLiveDataApiDefinitionsV2RequestBody.
-        :type: file
+        :type file_name: :class:`huaweicloudsdkcore.http.formdata.FormFile`
         """
         self._file_name = file_name
 

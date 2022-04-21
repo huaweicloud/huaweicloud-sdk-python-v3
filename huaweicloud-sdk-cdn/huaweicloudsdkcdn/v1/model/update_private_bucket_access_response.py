@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdatePrivateBucketAccessResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdatePrivateBucketAccessResponse(SdkResponse):
     }
 
     def __init__(self, status=None):
-        """UpdatePrivateBucketAccessResponse - a model defined in huaweicloud sdk"""
+        """UpdatePrivateBucketAccessResponse
+
+        The model defined in huaweicloud sdk
+
+        :param status: 桶开启关闭状态（true：开启；false：关闭）
+        :type status: bool
+        """
         
         super(UpdatePrivateBucketAccessResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class UpdatePrivateBucketAccessResponse(SdkResponse):
         桶开启关闭状态（true：开启；false：关闭）
 
         :param status: The status of this UpdatePrivateBucketAccessResponse.
-        :type: bool
+        :type status: bool
         """
         self._status = status
 

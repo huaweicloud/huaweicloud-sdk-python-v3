@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CheckDictionaryRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CheckDictionaryRequest:
     }
 
     def __init__(self, dict_id=None, instance_id=None):
-        """CheckDictionaryRequest - a model defined in huaweicloud sdk"""
+        """CheckDictionaryRequest
+
+        The model defined in huaweicloud sdk
+
+        :param dict_id: 字典ID
+        :type dict_id: str
+        :param instance_id: 实例ID
+        :type instance_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class CheckDictionaryRequest:
         字典ID
 
         :param dict_id: The dict_id of this CheckDictionaryRequest.
-        :type: str
+        :type dict_id: str
         """
         self._dict_id = dict_id
 
@@ -83,7 +90,7 @@ class CheckDictionaryRequest:
         实例ID
 
         :param instance_id: The instance_id of this CheckDictionaryRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VolumeGroups:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class VolumeGroups:
     }
 
     def __init__(self, components=None, free_size=None, logical_volumes=None, name=None, size=None):
-        """VolumeGroups - a model defined in huaweicloud sdk"""
+        """VolumeGroups
+
+        The model defined in huaweicloud sdk
+
+        :param components: Pv信息
+        :type components: str
+        :param free_size: 剩余空间
+        :type free_size: int
+        :param logical_volumes: lv信息
+        :type logical_volumes: list[:class:`huaweicloudsdksms.v3.LogicalVolumes`]
+        :param name: 名称
+        :type name: str
+        :param size: 大小
+        :type size: int
+        """
         
         
 
@@ -78,7 +91,7 @@ class VolumeGroups:
         Pv信息
 
         :param components: The components of this VolumeGroups.
-        :type: str
+        :type components: str
         """
         self._components = components
 
@@ -100,7 +113,7 @@ class VolumeGroups:
         剩余空间
 
         :param free_size: The free_size of this VolumeGroups.
-        :type: int
+        :type free_size: int
         """
         self._free_size = free_size
 
@@ -111,7 +124,7 @@ class VolumeGroups:
         lv信息
 
         :return: The logical_volumes of this VolumeGroups.
-        :rtype: list[LogicalVolumes]
+        :rtype: list[:class:`huaweicloudsdksms.v3.LogicalVolumes`]
         """
         return self._logical_volumes
 
@@ -122,7 +135,7 @@ class VolumeGroups:
         lv信息
 
         :param logical_volumes: The logical_volumes of this VolumeGroups.
-        :type: list[LogicalVolumes]
+        :type logical_volumes: list[:class:`huaweicloudsdksms.v3.LogicalVolumes`]
         """
         self._logical_volumes = logical_volumes
 
@@ -144,7 +157,7 @@ class VolumeGroups:
         名称
 
         :param name: The name of this VolumeGroups.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -166,7 +179,7 @@ class VolumeGroups:
         大小
 
         :param size: The size of this VolumeGroups.
-        :type: int
+        :type size: int
         """
         self._size = size
 

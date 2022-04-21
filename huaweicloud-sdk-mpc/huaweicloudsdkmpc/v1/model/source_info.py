@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SourceInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class SourceInfo:
     }
 
     def __init__(self, duration=None, duration_ms=None, format=None, size=None, video_info=None, audio_info=None):
-        """SourceInfo - a model defined in huaweicloud sdk"""
+        """SourceInfo
+
+        The model defined in huaweicloud sdk
+
+        :param duration: 片源时长，单位：秒
+        :type duration: int
+        :param duration_ms: 片源时长，单位：毫秒
+        :type duration_ms: int
+        :param format: 片源格式
+        :type format: str
+        :param size: 片源大小
+        :type size: int
+        :param video_info: 
+        :type video_info: :class:`huaweicloudsdkmpc.v1.VideoInfo`
+        :param audio_info: 音频信息
+        :type audio_info: list[:class:`huaweicloudsdkmpc.v1.AudioInfo`]
+        """
         
         
 
@@ -83,7 +98,7 @@ class SourceInfo:
         片源时长，单位：秒
 
         :param duration: The duration of this SourceInfo.
-        :type: int
+        :type duration: int
         """
         self._duration = duration
 
@@ -105,7 +120,7 @@ class SourceInfo:
         片源时长，单位：毫秒
 
         :param duration_ms: The duration_ms of this SourceInfo.
-        :type: int
+        :type duration_ms: int
         """
         self._duration_ms = duration_ms
 
@@ -127,7 +142,7 @@ class SourceInfo:
         片源格式
 
         :param format: The format of this SourceInfo.
-        :type: str
+        :type format: str
         """
         self._format = format
 
@@ -149,7 +164,7 @@ class SourceInfo:
         片源大小
 
         :param size: The size of this SourceInfo.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -159,7 +174,7 @@ class SourceInfo:
 
 
         :return: The video_info of this SourceInfo.
-        :rtype: VideoInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.VideoInfo`
         """
         return self._video_info
 
@@ -169,7 +184,7 @@ class SourceInfo:
 
 
         :param video_info: The video_info of this SourceInfo.
-        :type: VideoInfo
+        :type video_info: :class:`huaweicloudsdkmpc.v1.VideoInfo`
         """
         self._video_info = video_info
 
@@ -180,7 +195,7 @@ class SourceInfo:
         音频信息
 
         :return: The audio_info of this SourceInfo.
-        :rtype: list[AudioInfo]
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.AudioInfo`]
         """
         return self._audio_info
 
@@ -191,7 +206,7 @@ class SourceInfo:
         音频信息
 
         :param audio_info: The audio_info of this SourceInfo.
-        :type: list[AudioInfo]
+        :type audio_info: list[:class:`huaweicloudsdkmpc.v1.AudioInfo`]
         """
         self._audio_info = audio_info
 

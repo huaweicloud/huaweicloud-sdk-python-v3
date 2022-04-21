@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowGaussMySqlInstanceInfoResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowGaussMySqlInstanceInfoResponse(SdkResponse):
     }
 
     def __init__(self, instance=None):
-        """ShowGaussMySqlInstanceInfoResponse - a model defined in huaweicloud sdk"""
+        """ShowGaussMySqlInstanceInfoResponse
+
+        The model defined in huaweicloud sdk
+
+        :param instance: 
+        :type instance: :class:`huaweicloudsdkgaussdb.v3.MysqlInstanceInfoDetail`
+        """
         
         super(ShowGaussMySqlInstanceInfoResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class ShowGaussMySqlInstanceInfoResponse(SdkResponse):
 
 
         :return: The instance of this ShowGaussMySqlInstanceInfoResponse.
-        :rtype: MysqlInstanceInfoDetail
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlInstanceInfoDetail`
         """
         return self._instance
 
@@ -56,7 +61,7 @@ class ShowGaussMySqlInstanceInfoResponse(SdkResponse):
 
 
         :param instance: The instance of this ShowGaussMySqlInstanceInfoResponse.
-        :type: MysqlInstanceInfoDetail
+        :type instance: :class:`huaweicloudsdkgaussdb.v3.MysqlInstanceInfoDetail`
         """
         self._instance = instance
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PoolsInStatusResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class PoolsInStatusResp:
     }
 
     def __init__(self, id=None, name=None, members=None, operating_status=None, provisioning_status=None, healthmonitor=None):
-        """PoolsInStatusResp - a model defined in huaweicloud sdk"""
+        """PoolsInStatusResp
+
+        The model defined in huaweicloud sdk
+
+        :param id: 后端云服务器组ID
+        :type id: str
+        :param name: 后端云服务器组名称
+        :type name: str
+        :param members: 后端云服务器组关联的后端云服务器列表
+        :type members: list[:class:`huaweicloudsdkelb.v2.MembersInStatusResp`]
+        :param operating_status: 后端云服务器组的操作状态；该字段为预留字段，暂未启用。默认为ONLINE。
+        :type operating_status: str
+        :param provisioning_status: 后端云服务器组的配置状态；该字段为预留字段，暂未启用。默认为ACTIVE。
+        :type provisioning_status: str
+        :param healthmonitor: 
+        :type healthmonitor: :class:`huaweicloudsdkelb.v2.HealthmonitorsInStatusResp`
+        """
         
         
 
@@ -77,7 +92,7 @@ class PoolsInStatusResp:
         后端云服务器组ID
 
         :param id: The id of this PoolsInStatusResp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -99,7 +114,7 @@ class PoolsInStatusResp:
         后端云服务器组名称
 
         :param name: The name of this PoolsInStatusResp.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -110,7 +125,7 @@ class PoolsInStatusResp:
         后端云服务器组关联的后端云服务器列表
 
         :return: The members of this PoolsInStatusResp.
-        :rtype: list[MembersInStatusResp]
+        :rtype: list[:class:`huaweicloudsdkelb.v2.MembersInStatusResp`]
         """
         return self._members
 
@@ -121,7 +136,7 @@ class PoolsInStatusResp:
         后端云服务器组关联的后端云服务器列表
 
         :param members: The members of this PoolsInStatusResp.
-        :type: list[MembersInStatusResp]
+        :type members: list[:class:`huaweicloudsdkelb.v2.MembersInStatusResp`]
         """
         self._members = members
 
@@ -143,7 +158,7 @@ class PoolsInStatusResp:
         后端云服务器组的操作状态；该字段为预留字段，暂未启用。默认为ONLINE。
 
         :param operating_status: The operating_status of this PoolsInStatusResp.
-        :type: str
+        :type operating_status: str
         """
         self._operating_status = operating_status
 
@@ -165,7 +180,7 @@ class PoolsInStatusResp:
         后端云服务器组的配置状态；该字段为预留字段，暂未启用。默认为ACTIVE。
 
         :param provisioning_status: The provisioning_status of this PoolsInStatusResp.
-        :type: str
+        :type provisioning_status: str
         """
         self._provisioning_status = provisioning_status
 
@@ -175,7 +190,7 @@ class PoolsInStatusResp:
 
 
         :return: The healthmonitor of this PoolsInStatusResp.
-        :rtype: HealthmonitorsInStatusResp
+        :rtype: :class:`huaweicloudsdkelb.v2.HealthmonitorsInStatusResp`
         """
         return self._healthmonitor
 
@@ -185,7 +200,7 @@ class PoolsInStatusResp:
 
 
         :param healthmonitor: The healthmonitor of this PoolsInStatusResp.
-        :type: HealthmonitorsInStatusResp
+        :type healthmonitor: :class:`huaweicloudsdkelb.v2.HealthmonitorsInStatusResp`
         """
         self._healthmonitor = healthmonitor
 

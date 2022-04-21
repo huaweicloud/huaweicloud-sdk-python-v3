@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddSshKeyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class AddSshKeyResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """AddSshKeyResponse - a model defined in huaweicloud sdk"""
+        """AddSshKeyResponse
+
+        The model defined in huaweicloud sdk
+
+        :param error: 
+        :type error: :class:`huaweicloudsdkcodehub.v3.Error`
+        :param result: 
+        :type result: :class:`huaweicloudsdkcodehub.v3.PublicKey`
+        :param status: 响应状态
+        :type status: str
+        """
         
         super(AddSshKeyResponse, self).__init__()
 
@@ -56,7 +65,7 @@ class AddSshKeyResponse(SdkResponse):
 
 
         :return: The error of this AddSshKeyResponse.
-        :rtype: Error
+        :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
         """
         return self._error
 
@@ -66,7 +75,7 @@ class AddSshKeyResponse(SdkResponse):
 
 
         :param error: The error of this AddSshKeyResponse.
-        :type: Error
+        :type error: :class:`huaweicloudsdkcodehub.v3.Error`
         """
         self._error = error
 
@@ -76,7 +85,7 @@ class AddSshKeyResponse(SdkResponse):
 
 
         :return: The result of this AddSshKeyResponse.
-        :rtype: PublicKey
+        :rtype: :class:`huaweicloudsdkcodehub.v3.PublicKey`
         """
         return self._result
 
@@ -86,7 +95,7 @@ class AddSshKeyResponse(SdkResponse):
 
 
         :param result: The result of this AddSshKeyResponse.
-        :type: PublicKey
+        :type result: :class:`huaweicloudsdkcodehub.v3.PublicKey`
         """
         self._result = result
 
@@ -108,7 +117,7 @@ class AddSshKeyResponse(SdkResponse):
         响应状态
 
         :param status: The status of this AddSshKeyResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 

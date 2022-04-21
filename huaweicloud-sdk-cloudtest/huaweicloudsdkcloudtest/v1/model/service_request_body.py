@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ServiceRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ServiceRequestBody:
     }
 
     def __init__(self, service_name=None, server_host=None):
-        """ServiceRequestBody - a model defined in huaweicloud sdk"""
+        """ServiceRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param service_name: 测试类型名称，用于界面显示，不能使用当前保留名，长度小于等于16位字符
+        :type service_name: str
+        :param server_host: server_host是由用户提供的域名。 我们会通过此域名进行接口调用，请以https/http开头,长度小于等于128位字符。 TestHub将会通过此域名下的接口，保证云测数据与用户系统数据的一致性。
+        :type server_host: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ServiceRequestBody:
         测试类型名称，用于界面显示，不能使用当前保留名，长度小于等于16位字符
 
         :param service_name: The service_name of this ServiceRequestBody.
-        :type: str
+        :type service_name: str
         """
         self._service_name = service_name
 
@@ -83,7 +90,7 @@ class ServiceRequestBody:
         server_host是由用户提供的域名。 我们会通过此域名进行接口调用，请以https/http开头,长度小于等于128位字符。 TestHub将会通过此域名下的接口，保证云测数据与用户系统数据的一致性。
 
         :param server_host: The server_host of this ServiceRequestBody.
-        :type: str
+        :type server_host: str
         """
         self._server_host = server_host
 

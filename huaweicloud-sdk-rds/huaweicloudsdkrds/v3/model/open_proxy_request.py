@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OpenProxyRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class OpenProxyRequest:
     }
 
     def __init__(self, flavor_id=None, node_num=None):
-        """OpenProxyRequest - a model defined in huaweicloud sdk"""
+        """OpenProxyRequest
+
+        The model defined in huaweicloud sdk
+
+        :param flavor_id: 规格ID。
+        :type flavor_id: str
+        :param node_num: 节点数量。
+        :type node_num: int
+        """
         
         
 
@@ -63,7 +70,7 @@ class OpenProxyRequest:
         规格ID。
 
         :param flavor_id: The flavor_id of this OpenProxyRequest.
-        :type: str
+        :type flavor_id: str
         """
         self._flavor_id = flavor_id
 
@@ -85,7 +92,7 @@ class OpenProxyRequest:
         节点数量。
 
         :param node_num: The node_num of this OpenProxyRequest.
-        :type: int
+        :type node_num: int
         """
         self._node_num = node_num
 

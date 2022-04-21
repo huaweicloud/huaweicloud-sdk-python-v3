@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowPublicationRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowPublicationRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, id=None):
-        """ShowPublicationRequest - a model defined in huaweicloud sdk"""
+        """ShowPublicationRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        :type x_request_id: str
+        :param accept_language: 语言参数，默认为中文zh-CN, 英文为en-US
+        :type accept_language: str
+        :param id: 发布ID
+        :type id: str
+        """
         
         
 
@@ -67,7 +76,7 @@ class ShowPublicationRequest:
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
 
         :param x_request_id: The x_request_id of this ShowPublicationRequest.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 
@@ -89,7 +98,7 @@ class ShowPublicationRequest:
         语言参数，默认为中文zh-CN, 英文为en-US
 
         :param accept_language: The accept_language of this ShowPublicationRequest.
-        :type: str
+        :type accept_language: str
         """
         self._accept_language = accept_language
 
@@ -111,7 +120,7 @@ class ShowPublicationRequest:
         发布ID
 
         :param id: The id of this ShowPublicationRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ConfAttendeeRecordInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ConfAttendeeRecordInfo:
     }
 
     def __init__(self, display_name=None, call_number=None, device_type=None, join_time=None, left_time=None, media_type=None, dept_name=None):
-        """ConfAttendeeRecordInfo - a model defined in huaweicloud sdk"""
+        """ConfAttendeeRecordInfo
+
+        The model defined in huaweicloud sdk
+
+        :param display_name: 名称。
+        :type display_name: str
+        :param call_number: 号码。
+        :type call_number: str
+        :param device_type: 设备类型。
+        :type device_type: str
+        :param join_time: 入会时间（UTC时间，单位毫秒）。
+        :type join_time: int
+        :param left_time: 离会时间（UTC时间，单位毫秒）。
+        :type left_time: int
+        :param media_type: 媒体类型。
+        :type media_type: str
+        :param dept_name: 部门名称。
+        :type dept_name: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class ConfAttendeeRecordInfo:
         名称。
 
         :param display_name: The display_name of this ConfAttendeeRecordInfo.
-        :type: str
+        :type display_name: str
         """
         self._display_name = display_name
 
@@ -110,7 +127,7 @@ class ConfAttendeeRecordInfo:
         号码。
 
         :param call_number: The call_number of this ConfAttendeeRecordInfo.
-        :type: str
+        :type call_number: str
         """
         self._call_number = call_number
 
@@ -132,7 +149,7 @@ class ConfAttendeeRecordInfo:
         设备类型。
 
         :param device_type: The device_type of this ConfAttendeeRecordInfo.
-        :type: str
+        :type device_type: str
         """
         self._device_type = device_type
 
@@ -154,7 +171,7 @@ class ConfAttendeeRecordInfo:
         入会时间（UTC时间，单位毫秒）。
 
         :param join_time: The join_time of this ConfAttendeeRecordInfo.
-        :type: int
+        :type join_time: int
         """
         self._join_time = join_time
 
@@ -176,7 +193,7 @@ class ConfAttendeeRecordInfo:
         离会时间（UTC时间，单位毫秒）。
 
         :param left_time: The left_time of this ConfAttendeeRecordInfo.
-        :type: int
+        :type left_time: int
         """
         self._left_time = left_time
 
@@ -198,7 +215,7 @@ class ConfAttendeeRecordInfo:
         媒体类型。
 
         :param media_type: The media_type of this ConfAttendeeRecordInfo.
-        :type: str
+        :type media_type: str
         """
         self._media_type = media_type
 
@@ -220,7 +237,7 @@ class ConfAttendeeRecordInfo:
         部门名称。
 
         :param dept_name: The dept_name of this ConfAttendeeRecordInfo.
-        :type: str
+        :type dept_name: str
         """
         self._dept_name = dept_name
 

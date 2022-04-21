@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateCustomLineRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateCustomLineRequest:
     }
 
     def __init__(self, line_id=None, body=None):
-        """UpdateCustomLineRequest - a model defined in huaweicloud sdk"""
+        """UpdateCustomLineRequest
+
+        The model defined in huaweicloud sdk
+
+        :param line_id: 解析线路ID。
+        :type line_id: str
+        :param body: Body of the UpdateCustomLineRequest
+        :type body: :class:`huaweicloudsdkdns.v2.UpdateCustomsLineReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateCustomLineRequest:
         解析线路ID。
 
         :param line_id: The line_id of this UpdateCustomLineRequest.
-        :type: str
+        :type line_id: str
         """
         self._line_id = line_id
 
@@ -72,7 +79,7 @@ class UpdateCustomLineRequest:
 
 
         :return: The body of this UpdateCustomLineRequest.
-        :rtype: UpdateCustomsLineReq
+        :rtype: :class:`huaweicloudsdkdns.v2.UpdateCustomsLineReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateCustomLineRequest:
 
 
         :param body: The body of this UpdateCustomLineRequest.
-        :type: UpdateCustomsLineReq
+        :type body: :class:`huaweicloudsdkdns.v2.UpdateCustomsLineReq`
         """
         self._body = body
 

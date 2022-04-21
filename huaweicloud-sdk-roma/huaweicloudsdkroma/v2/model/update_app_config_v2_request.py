@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateAppConfigV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UpdateAppConfigV2Request:
     }
 
     def __init__(self, instance_id=None, app_id=None, app_config_id=None, body=None):
-        """UpdateAppConfigV2Request - a model defined in huaweicloud sdk"""
+        """UpdateAppConfigV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param app_id: 应用编号
+        :type app_id: str
+        :param app_config_id: 应用配置编号
+        :type app_config_id: str
+        :param body: Body of the UpdateAppConfigV2Request
+        :type body: :class:`huaweicloudsdkroma.v2.AppConfigModifyRequestV2`
+        """
         
         
 
@@ -70,7 +81,7 @@ class UpdateAppConfigV2Request:
         实例ID
 
         :param instance_id: The instance_id of this UpdateAppConfigV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -92,7 +103,7 @@ class UpdateAppConfigV2Request:
         应用编号
 
         :param app_id: The app_id of this UpdateAppConfigV2Request.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -114,7 +125,7 @@ class UpdateAppConfigV2Request:
         应用配置编号
 
         :param app_config_id: The app_config_id of this UpdateAppConfigV2Request.
-        :type: str
+        :type app_config_id: str
         """
         self._app_config_id = app_config_id
 
@@ -124,7 +135,7 @@ class UpdateAppConfigV2Request:
 
 
         :return: The body of this UpdateAppConfigV2Request.
-        :rtype: AppConfigModifyRequestV2
+        :rtype: :class:`huaweicloudsdkroma.v2.AppConfigModifyRequestV2`
         """
         return self._body
 
@@ -134,7 +145,7 @@ class UpdateAppConfigV2Request:
 
 
         :param body: The body of this UpdateAppConfigV2Request.
-        :type: AppConfigModifyRequestV2
+        :type body: :class:`huaweicloudsdkroma.v2.AppConfigModifyRequestV2`
         """
         self._body = body
 

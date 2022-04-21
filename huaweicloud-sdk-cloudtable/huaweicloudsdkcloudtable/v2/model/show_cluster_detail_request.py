@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowClusterDetailRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowClusterDetailRequest:
     }
 
     def __init__(self, x_language=None, cluster_id=None):
-        """ShowClusterDetailRequest - a model defined in huaweicloud sdk"""
+        """ShowClusterDetailRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言类型
+        :type x_language: str
+        :param cluster_id: 集群ID。  获取方法：在ClooudTable控制台，单击要查询的集群名称进入集群详情页，获取“集群ID\&quot;。
+        :type cluster_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ShowClusterDetailRequest:
         语言类型
 
         :param x_language: The x_language of this ShowClusterDetailRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -83,7 +90,7 @@ class ShowClusterDetailRequest:
         集群ID。  获取方法：在ClooudTable控制台，单击要查询的集群名称进入集群详情页，获取“集群ID\"。
 
         :param cluster_id: The cluster_id of this ShowClusterDetailRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 

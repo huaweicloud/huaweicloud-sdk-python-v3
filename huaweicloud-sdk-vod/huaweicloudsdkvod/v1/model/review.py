@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Review:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class Review:
     }
 
     def __init__(self, template_id=None):
-        """Review - a model defined in huaweicloud sdk"""
+        """Review
+
+        The model defined in huaweicloud sdk
+
+        :param template_id: 审核模板ID。您可以在视频点播控制台配置审核模板后获取，具体请参见[审核设置](https://support.huaweicloud.com/usermanual-vod/vod_01_0057.html)。
+        :type template_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class Review:
         审核模板ID。您可以在视频点播控制台配置审核模板后获取，具体请参见[审核设置](https://support.huaweicloud.com/usermanual-vod/vod_01_0057.html)。
 
         :param template_id: The template_id of this Review.
-        :type: str
+        :type template_id: str
         """
         self._template_id = template_id
 

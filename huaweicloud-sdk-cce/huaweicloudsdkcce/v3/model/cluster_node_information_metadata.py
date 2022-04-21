@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ClusterNodeInformationMetadata:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ClusterNodeInformationMetadata:
     }
 
     def __init__(self, name=None):
-        """ClusterNodeInformationMetadata - a model defined in huaweicloud sdk"""
+        """ClusterNodeInformationMetadata
+
+        The model defined in huaweicloud sdk
+
+        :param name: 节点名称  &gt; 修改节点名称后，弹性云服务器名称（虚拟机名称）会同步修改。 &gt; &gt; 命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围1-56位，且不能以中划线(-)结尾。
+        :type name: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ClusterNodeInformationMetadata:
         节点名称  > 修改节点名称后，弹性云服务器名称（虚拟机名称）会同步修改。 > > 命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围1-56位，且不能以中划线(-)结尾。
 
         :param name: The name of this ClusterNodeInformationMetadata.
-        :type: str
+        :type name: str
         """
         self._name = name
 

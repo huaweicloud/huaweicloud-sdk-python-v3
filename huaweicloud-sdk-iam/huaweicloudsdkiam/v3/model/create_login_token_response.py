@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateLoginTokenResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateLoginTokenResponse(SdkResponse):
     }
 
     def __init__(self, logintoken=None, x_subject_login_token=None):
-        """CreateLoginTokenResponse - a model defined in huaweicloud sdk"""
+        """CreateLoginTokenResponse
+
+        The model defined in huaweicloud sdk
+
+        :param logintoken: 
+        :type logintoken: :class:`huaweicloudsdkiam.v3.LoginToken`
+        :param x_subject_login_token: 
+        :type x_subject_login_token: str
+        """
         
         super(CreateLoginTokenResponse, self).__init__()
 
@@ -51,7 +58,7 @@ class CreateLoginTokenResponse(SdkResponse):
 
 
         :return: The logintoken of this CreateLoginTokenResponse.
-        :rtype: LoginToken
+        :rtype: :class:`huaweicloudsdkiam.v3.LoginToken`
         """
         return self._logintoken
 
@@ -61,7 +68,7 @@ class CreateLoginTokenResponse(SdkResponse):
 
 
         :param logintoken: The logintoken of this CreateLoginTokenResponse.
-        :type: LoginToken
+        :type logintoken: :class:`huaweicloudsdkiam.v3.LoginToken`
         """
         self._logintoken = logintoken
 
@@ -81,7 +88,7 @@ class CreateLoginTokenResponse(SdkResponse):
 
 
         :param x_subject_login_token: The x_subject_login_token of this CreateLoginTokenResponse.
-        :type: str
+        :type x_subject_login_token: str
         """
         self._x_subject_login_token = x_subject_login_token
 

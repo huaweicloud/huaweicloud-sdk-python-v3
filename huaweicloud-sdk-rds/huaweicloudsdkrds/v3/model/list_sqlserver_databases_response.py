@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSqlserverDatabasesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListSqlserverDatabasesResponse(SdkResponse):
     }
 
     def __init__(self, databases=None, total_count=None):
-        """ListSqlserverDatabasesResponse - a model defined in huaweicloud sdk"""
+        """ListSqlserverDatabasesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param databases: 数据库信息。
+        :type databases: list[:class:`huaweicloudsdkrds.v3.SqlserverDatabaseForDetail`]
+        :param total_count: 总数。
+        :type total_count: int
+        """
         
         super(ListSqlserverDatabasesResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListSqlserverDatabasesResponse(SdkResponse):
         数据库信息。
 
         :return: The databases of this ListSqlserverDatabasesResponse.
-        :rtype: list[SqlserverDatabaseForDetail]
+        :rtype: list[:class:`huaweicloudsdkrds.v3.SqlserverDatabaseForDetail`]
         """
         return self._databases
 
@@ -63,7 +70,7 @@ class ListSqlserverDatabasesResponse(SdkResponse):
         数据库信息。
 
         :param databases: The databases of this ListSqlserverDatabasesResponse.
-        :type: list[SqlserverDatabaseForDetail]
+        :type databases: list[:class:`huaweicloudsdkrds.v3.SqlserverDatabaseForDetail`]
         """
         self._databases = databases
 
@@ -85,7 +92,7 @@ class ListSqlserverDatabasesResponse(SdkResponse):
         总数。
 
         :param total_count: The total_count of this ListSqlserverDatabasesResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 

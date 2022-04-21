@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteEdgeNodeCertsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class DeleteEdgeNodeCertsRequest:
     }
 
     def __init__(self, node_id=None, cert_id=None, ief_instance_id=None):
-        """DeleteEdgeNodeCertsRequest - a model defined in huaweicloud sdk"""
+        """DeleteEdgeNodeCertsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param node_id: 边缘节点ID
+        :type node_id: str
+        :param cert_id: 证书id
+        :type cert_id: str
+        :param ief_instance_id: 铂金版实例ID，专业版实例为空值
+        :type ief_instance_id: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class DeleteEdgeNodeCertsRequest:
         边缘节点ID
 
         :param node_id: The node_id of this DeleteEdgeNodeCertsRequest.
-        :type: str
+        :type node_id: str
         """
         self._node_id = node_id
 
@@ -88,7 +97,7 @@ class DeleteEdgeNodeCertsRequest:
         证书id
 
         :param cert_id: The cert_id of this DeleteEdgeNodeCertsRequest.
-        :type: str
+        :type cert_id: str
         """
         self._cert_id = cert_id
 
@@ -110,7 +119,7 @@ class DeleteEdgeNodeCertsRequest:
         铂金版实例ID，专业版实例为空值
 
         :param ief_instance_id: The ief_instance_id of this DeleteEdgeNodeCertsRequest.
-        :type: str
+        :type ief_instance_id: str
         """
         self._ief_instance_id = ief_instance_id
 

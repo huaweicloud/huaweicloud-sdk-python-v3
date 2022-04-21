@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Expression:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class Expression:
     }
 
     def __init__(self, formula=None, formulas=None, time_range=None):
-        """Expression - a model defined in huaweicloud sdk"""
+        """Expression
+
+        The model defined in huaweicloud sdk
+
+        :param formula: 公式，最多1024个字符(分析任务单输出场景，配合TransformModel或AggregateModel的output_property使用)
+        :type formula: str
+        :param formulas: 带名称的公式
+        :type formulas: list[:class:`huaweicloudsdkiotanalytics.v1.NamedFormula`]
+        :param time_range: 时间范围，调度时间往前的时间范围，比如1m表示调度时间往前1分钟到调度时间的时间范围，正则：\&quot;1m|5m|15m|1h\&quot;
+        :type time_range: str
+        """
         
         
 
@@ -67,7 +76,7 @@ class Expression:
         公式，最多1024个字符(分析任务单输出场景，配合TransformModel或AggregateModel的output_property使用)
 
         :param formula: The formula of this Expression.
-        :type: str
+        :type formula: str
         """
         self._formula = formula
 
@@ -78,7 +87,7 @@ class Expression:
         带名称的公式
 
         :return: The formulas of this Expression.
-        :rtype: list[NamedFormula]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.NamedFormula`]
         """
         return self._formulas
 
@@ -89,7 +98,7 @@ class Expression:
         带名称的公式
 
         :param formulas: The formulas of this Expression.
-        :type: list[NamedFormula]
+        :type formulas: list[:class:`huaweicloudsdkiotanalytics.v1.NamedFormula`]
         """
         self._formulas = formulas
 
@@ -111,7 +120,7 @@ class Expression:
         时间范围，调度时间往前的时间范围，比如1m表示调度时间往前1分钟到调度时间的时间范围，正则：\"1m|5m|15m|1h\"
 
         :param time_range: The time_range of this Expression.
-        :type: str
+        :type time_range: str
         """
         self._time_range = time_range
 

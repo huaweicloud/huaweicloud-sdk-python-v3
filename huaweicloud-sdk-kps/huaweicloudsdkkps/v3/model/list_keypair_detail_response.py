@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListKeypairDetailResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListKeypairDetailResponse(SdkResponse):
     }
 
     def __init__(self, keypair=None):
-        """ListKeypairDetailResponse - a model defined in huaweicloud sdk"""
+        """ListKeypairDetailResponse
+
+        The model defined in huaweicloud sdk
+
+        :param keypair: 
+        :type keypair: :class:`huaweicloudsdkkps.v3.KeypairDetail`
+        """
         
         super(ListKeypairDetailResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class ListKeypairDetailResponse(SdkResponse):
 
 
         :return: The keypair of this ListKeypairDetailResponse.
-        :rtype: KeypairDetail
+        :rtype: :class:`huaweicloudsdkkps.v3.KeypairDetail`
         """
         return self._keypair
 
@@ -56,7 +61,7 @@ class ListKeypairDetailResponse(SdkResponse):
 
 
         :param keypair: The keypair of this ListKeypairDetailResponse.
-        :type: KeypairDetail
+        :type keypair: :class:`huaweicloudsdkkps.v3.KeypairDetail`
         """
         self._keypair = keypair
 

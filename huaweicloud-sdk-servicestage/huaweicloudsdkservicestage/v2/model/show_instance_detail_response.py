@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowInstanceDetailResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -58,7 +57,41 @@ class ShowInstanceDetailResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, environment_id=None, platform_type=None, flavor_id=None, artifacts=None, version=None, configuration=None, creator=None, create_time=None, update_time=None, external_accesses=None, refer_resources=None, status_detail=None):
-        """ShowInstanceDetailResponse - a model defined in huaweicloud sdk"""
+        """ShowInstanceDetailResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 应用组件实例ID。
+        :type id: str
+        :param name: 应用组件实例名称。
+        :type name: str
+        :param description: 实例描述。
+        :type description: str
+        :param environment_id: 应用组件环境ID。
+        :type environment_id: str
+        :param platform_type: 
+        :type platform_type: :class:`huaweicloudsdkservicestage.v2.InstancePlatformType`
+        :param flavor_id: 
+        :type flavor_id: :class:`huaweicloudsdkservicestage.v2.FlavorId`
+        :param artifacts: 组件部署件。key为组件component_name，对于Docker多容器场景，key为容器名称。
+        :type artifacts: dict(str, object)
+        :param version: 应用组件版本号。
+        :type version: str
+        :param configuration: 应用组件配置，如环境变量。
+        :type configuration: object
+        :param creator: 创建人。
+        :type creator: str
+        :param create_time: 创建时间。
+        :type create_time: int
+        :param update_time: 修改时间。
+        :type update_time: int
+        :param external_accesses: 访问方式列表。
+        :type external_accesses: list[:class:`huaweicloudsdkservicestage.v2.ExternalAccesses`]
+        :param refer_resources: 部署资源列表。
+        :type refer_resources: list[:class:`huaweicloudsdkservicestage.v2.ReferResources`]
+        :param status_detail: 
+        :type status_detail: :class:`huaweicloudsdkservicestage.v2.InstanceStatusView`
+        """
         
         super(ShowInstanceDetailResponse, self).__init__()
 
@@ -128,7 +161,7 @@ class ShowInstanceDetailResponse(SdkResponse):
         应用组件实例ID。
 
         :param id: The id of this ShowInstanceDetailResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -150,7 +183,7 @@ class ShowInstanceDetailResponse(SdkResponse):
         应用组件实例名称。
 
         :param name: The name of this ShowInstanceDetailResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -172,7 +205,7 @@ class ShowInstanceDetailResponse(SdkResponse):
         实例描述。
 
         :param description: The description of this ShowInstanceDetailResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -194,7 +227,7 @@ class ShowInstanceDetailResponse(SdkResponse):
         应用组件环境ID。
 
         :param environment_id: The environment_id of this ShowInstanceDetailResponse.
-        :type: str
+        :type environment_id: str
         """
         self._environment_id = environment_id
 
@@ -204,7 +237,7 @@ class ShowInstanceDetailResponse(SdkResponse):
 
 
         :return: The platform_type of this ShowInstanceDetailResponse.
-        :rtype: InstancePlatformType
+        :rtype: :class:`huaweicloudsdkservicestage.v2.InstancePlatformType`
         """
         return self._platform_type
 
@@ -214,7 +247,7 @@ class ShowInstanceDetailResponse(SdkResponse):
 
 
         :param platform_type: The platform_type of this ShowInstanceDetailResponse.
-        :type: InstancePlatformType
+        :type platform_type: :class:`huaweicloudsdkservicestage.v2.InstancePlatformType`
         """
         self._platform_type = platform_type
 
@@ -224,7 +257,7 @@ class ShowInstanceDetailResponse(SdkResponse):
 
 
         :return: The flavor_id of this ShowInstanceDetailResponse.
-        :rtype: FlavorId
+        :rtype: :class:`huaweicloudsdkservicestage.v2.FlavorId`
         """
         return self._flavor_id
 
@@ -234,7 +267,7 @@ class ShowInstanceDetailResponse(SdkResponse):
 
 
         :param flavor_id: The flavor_id of this ShowInstanceDetailResponse.
-        :type: FlavorId
+        :type flavor_id: :class:`huaweicloudsdkservicestage.v2.FlavorId`
         """
         self._flavor_id = flavor_id
 
@@ -256,7 +289,7 @@ class ShowInstanceDetailResponse(SdkResponse):
         组件部署件。key为组件component_name，对于Docker多容器场景，key为容器名称。
 
         :param artifacts: The artifacts of this ShowInstanceDetailResponse.
-        :type: dict(str, object)
+        :type artifacts: dict(str, object)
         """
         self._artifacts = artifacts
 
@@ -278,7 +311,7 @@ class ShowInstanceDetailResponse(SdkResponse):
         应用组件版本号。
 
         :param version: The version of this ShowInstanceDetailResponse.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -300,7 +333,7 @@ class ShowInstanceDetailResponse(SdkResponse):
         应用组件配置，如环境变量。
 
         :param configuration: The configuration of this ShowInstanceDetailResponse.
-        :type: object
+        :type configuration: object
         """
         self._configuration = configuration
 
@@ -322,7 +355,7 @@ class ShowInstanceDetailResponse(SdkResponse):
         创建人。
 
         :param creator: The creator of this ShowInstanceDetailResponse.
-        :type: str
+        :type creator: str
         """
         self._creator = creator
 
@@ -344,7 +377,7 @@ class ShowInstanceDetailResponse(SdkResponse):
         创建时间。
 
         :param create_time: The create_time of this ShowInstanceDetailResponse.
-        :type: int
+        :type create_time: int
         """
         self._create_time = create_time
 
@@ -366,7 +399,7 @@ class ShowInstanceDetailResponse(SdkResponse):
         修改时间。
 
         :param update_time: The update_time of this ShowInstanceDetailResponse.
-        :type: int
+        :type update_time: int
         """
         self._update_time = update_time
 
@@ -377,7 +410,7 @@ class ShowInstanceDetailResponse(SdkResponse):
         访问方式列表。
 
         :return: The external_accesses of this ShowInstanceDetailResponse.
-        :rtype: list[ExternalAccesses]
+        :rtype: list[:class:`huaweicloudsdkservicestage.v2.ExternalAccesses`]
         """
         return self._external_accesses
 
@@ -388,7 +421,7 @@ class ShowInstanceDetailResponse(SdkResponse):
         访问方式列表。
 
         :param external_accesses: The external_accesses of this ShowInstanceDetailResponse.
-        :type: list[ExternalAccesses]
+        :type external_accesses: list[:class:`huaweicloudsdkservicestage.v2.ExternalAccesses`]
         """
         self._external_accesses = external_accesses
 
@@ -399,7 +432,7 @@ class ShowInstanceDetailResponse(SdkResponse):
         部署资源列表。
 
         :return: The refer_resources of this ShowInstanceDetailResponse.
-        :rtype: list[ReferResources]
+        :rtype: list[:class:`huaweicloudsdkservicestage.v2.ReferResources`]
         """
         return self._refer_resources
 
@@ -410,7 +443,7 @@ class ShowInstanceDetailResponse(SdkResponse):
         部署资源列表。
 
         :param refer_resources: The refer_resources of this ShowInstanceDetailResponse.
-        :type: list[ReferResources]
+        :type refer_resources: list[:class:`huaweicloudsdkservicestage.v2.ReferResources`]
         """
         self._refer_resources = refer_resources
 
@@ -420,7 +453,7 @@ class ShowInstanceDetailResponse(SdkResponse):
 
 
         :return: The status_detail of this ShowInstanceDetailResponse.
-        :rtype: InstanceStatusView
+        :rtype: :class:`huaweicloudsdkservicestage.v2.InstanceStatusView`
         """
         return self._status_detail
 
@@ -430,7 +463,7 @@ class ShowInstanceDetailResponse(SdkResponse):
 
 
         :param status_detail: The status_detail of this ShowInstanceDetailResponse.
-        :type: InstanceStatusView
+        :type status_detail: :class:`huaweicloudsdkservicestage.v2.InstanceStatusView`
         """
         self._status_detail = status_detail
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NovaServerFlavor:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class NovaServerFlavor:
     }
 
     def __init__(self, id=None, links=None, vcpus=None, ram=None, disk=None, ephemeral=None, swap=None, original_name=None, extra_specs=None):
-        """NovaServerFlavor - a model defined in huaweicloud sdk"""
+        """NovaServerFlavor
+
+        The model defined in huaweicloud sdk
+
+        :param id: 云服务器类型ID。  微版本2.47后不支持。
+        :type id: str
+        :param links: 云服务器类型相关标记快捷链接信息。  微版本2.47后不支持。
+        :type links: list[:class:`huaweicloudsdkecs.v2.NovaLink`]
+        :param vcpus: 该云服务器规格对应的CPU核数。  在微版本2.47后支持。
+        :type vcpus: int
+        :param ram: 该云服务器规格对应的内存大小，单位为MB。  在微版本2.47后支持。
+        :type ram: int
+        :param disk: 该云服务器规格对应要求系统盘大小，0为不限制。  在微版本2.47后支持。
+        :type disk: int
+        :param ephemeral: 未使用。  在微版本2.47后支持。
+        :type ephemeral: int
+        :param swap: 未使用。  在微版本2.47后支持。
+        :type swap: int
+        :param original_name: 云服务器规格名称。  在微版本2.47后支持。
+        :type original_name: str
+        :param extra_specs: flavor扩展字段。  在微版本2.47后支持。
+        :type extra_specs: dict(str, str)
+        """
         
         
 
@@ -98,7 +119,7 @@ class NovaServerFlavor:
         云服务器类型ID。  微版本2.47后不支持。
 
         :param id: The id of this NovaServerFlavor.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -109,7 +130,7 @@ class NovaServerFlavor:
         云服务器类型相关标记快捷链接信息。  微版本2.47后不支持。
 
         :return: The links of this NovaServerFlavor.
-        :rtype: list[NovaLink]
+        :rtype: list[:class:`huaweicloudsdkecs.v2.NovaLink`]
         """
         return self._links
 
@@ -120,7 +141,7 @@ class NovaServerFlavor:
         云服务器类型相关标记快捷链接信息。  微版本2.47后不支持。
 
         :param links: The links of this NovaServerFlavor.
-        :type: list[NovaLink]
+        :type links: list[:class:`huaweicloudsdkecs.v2.NovaLink`]
         """
         self._links = links
 
@@ -142,7 +163,7 @@ class NovaServerFlavor:
         该云服务器规格对应的CPU核数。  在微版本2.47后支持。
 
         :param vcpus: The vcpus of this NovaServerFlavor.
-        :type: int
+        :type vcpus: int
         """
         self._vcpus = vcpus
 
@@ -164,7 +185,7 @@ class NovaServerFlavor:
         该云服务器规格对应的内存大小，单位为MB。  在微版本2.47后支持。
 
         :param ram: The ram of this NovaServerFlavor.
-        :type: int
+        :type ram: int
         """
         self._ram = ram
 
@@ -186,7 +207,7 @@ class NovaServerFlavor:
         该云服务器规格对应要求系统盘大小，0为不限制。  在微版本2.47后支持。
 
         :param disk: The disk of this NovaServerFlavor.
-        :type: int
+        :type disk: int
         """
         self._disk = disk
 
@@ -208,7 +229,7 @@ class NovaServerFlavor:
         未使用。  在微版本2.47后支持。
 
         :param ephemeral: The ephemeral of this NovaServerFlavor.
-        :type: int
+        :type ephemeral: int
         """
         self._ephemeral = ephemeral
 
@@ -230,7 +251,7 @@ class NovaServerFlavor:
         未使用。  在微版本2.47后支持。
 
         :param swap: The swap of this NovaServerFlavor.
-        :type: int
+        :type swap: int
         """
         self._swap = swap
 
@@ -252,7 +273,7 @@ class NovaServerFlavor:
         云服务器规格名称。  在微版本2.47后支持。
 
         :param original_name: The original_name of this NovaServerFlavor.
-        :type: str
+        :type original_name: str
         """
         self._original_name = original_name
 
@@ -274,7 +295,7 @@ class NovaServerFlavor:
         flavor扩展字段。  在微版本2.47后支持。
 
         :param extra_specs: The extra_specs of this NovaServerFlavor.
-        :type: dict(str, str)
+        :type extra_specs: dict(str, str)
         """
         self._extra_specs = extra_specs
 

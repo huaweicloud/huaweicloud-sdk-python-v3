@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NodePoolStatus:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class NodePoolStatus:
     }
 
     def __init__(self, current_node=None, creating_node=None, deleting_node=None, phase=None, job_id=None, conditions=None):
-        """NodePoolStatus - a model defined in huaweicloud sdk"""
+        """NodePoolStatus
+
+        The model defined in huaweicloud sdk
+
+        :param current_node: 当前节点池中所有节点数量（不含删除中的节点）。
+        :type current_node: int
+        :param creating_node: 当前节点池中处于创建流程中的节点数量。
+        :type creating_node: int
+        :param deleting_node: 当前节点池中删除中的节点数量。
+        :type deleting_node: int
+        :param phase: 节点池状态。 - 空值：可用（节点池当前节点数已达到预期，且无伸缩中的节点） - Synchronizing：伸缩中（节点池当前节点数未达到预期，且无伸缩中的节点） - Synchronized：伸缩等待中（节点池当前节点数未达到预期，或者存在伸缩中的节点） - SoldOut：节点池当前不可扩容（兼容字段，标记节点池资源售罄、资源配额不足等不可扩容状态） &gt; 上述节点池状态已废弃，仅兼容保留，不建议使用，替代感知方式如下： &gt; - 节点池扩缩状态：可通过currentNode/creatingNode/deletingNode节点状态统计信息，精确感知当前节点池扩缩状态。 &gt; - 节点池可扩容状态：可通过conditions感知节点池详细状态，其中\&quot;Scalable\&quot;可替代SoldOut语义。 - Deleting：删除中 - Error：错误 
+        :type phase: str
+        :param job_id: 对节点池执行操作时的 JobID。
+        :type job_id: str
+        :param conditions: 节点池当前详细状态列表，详情参见Condition类型定义。 
+        :type conditions: list[:class:`huaweicloudsdkcce.v3.NodePoolCondition`]
+        """
         
         
 
@@ -83,7 +98,7 @@ class NodePoolStatus:
         当前节点池中所有节点数量（不含删除中的节点）。
 
         :param current_node: The current_node of this NodePoolStatus.
-        :type: int
+        :type current_node: int
         """
         self._current_node = current_node
 
@@ -105,7 +120,7 @@ class NodePoolStatus:
         当前节点池中处于创建流程中的节点数量。
 
         :param creating_node: The creating_node of this NodePoolStatus.
-        :type: int
+        :type creating_node: int
         """
         self._creating_node = creating_node
 
@@ -127,7 +142,7 @@ class NodePoolStatus:
         当前节点池中删除中的节点数量。
 
         :param deleting_node: The deleting_node of this NodePoolStatus.
-        :type: int
+        :type deleting_node: int
         """
         self._deleting_node = deleting_node
 
@@ -149,7 +164,7 @@ class NodePoolStatus:
         节点池状态。 - 空值：可用（节点池当前节点数已达到预期，且无伸缩中的节点） - Synchronizing：伸缩中（节点池当前节点数未达到预期，且无伸缩中的节点） - Synchronized：伸缩等待中（节点池当前节点数未达到预期，或者存在伸缩中的节点） - SoldOut：节点池当前不可扩容（兼容字段，标记节点池资源售罄、资源配额不足等不可扩容状态） > 上述节点池状态已废弃，仅兼容保留，不建议使用，替代感知方式如下： > - 节点池扩缩状态：可通过currentNode/creatingNode/deletingNode节点状态统计信息，精确感知当前节点池扩缩状态。 > - 节点池可扩容状态：可通过conditions感知节点池详细状态，其中\"Scalable\"可替代SoldOut语义。 - Deleting：删除中 - Error：错误 
 
         :param phase: The phase of this NodePoolStatus.
-        :type: str
+        :type phase: str
         """
         self._phase = phase
 
@@ -171,7 +186,7 @@ class NodePoolStatus:
         对节点池执行操作时的 JobID。
 
         :param job_id: The job_id of this NodePoolStatus.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -182,7 +197,7 @@ class NodePoolStatus:
         节点池当前详细状态列表，详情参见Condition类型定义。 
 
         :return: The conditions of this NodePoolStatus.
-        :rtype: list[NodePoolCondition]
+        :rtype: list[:class:`huaweicloudsdkcce.v3.NodePoolCondition`]
         """
         return self._conditions
 
@@ -193,7 +208,7 @@ class NodePoolStatus:
         节点池当前详细状态列表，详情参见Condition类型定义。 
 
         :param conditions: The conditions of this NodePoolStatus.
-        :type: list[NodePoolCondition]
+        :type conditions: list[:class:`huaweicloudsdkcce.v3.NodePoolCondition`]
         """
         self._conditions = conditions
 

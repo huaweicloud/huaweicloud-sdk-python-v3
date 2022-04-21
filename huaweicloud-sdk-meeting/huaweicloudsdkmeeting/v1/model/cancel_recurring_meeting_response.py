@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CancelRecurringMeetingResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class CancelRecurringMeetingResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CancelRecurringMeetingResponse - a model defined in huaweicloud sdk"""
+        """CancelRecurringMeetingResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(CancelRecurringMeetingResponse, self).__init__()
         self.discriminator = None

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RefreshTaskRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RefreshTaskRequest:
     }
 
     def __init__(self, refresh_task=None):
-        """RefreshTaskRequest - a model defined in huaweicloud sdk"""
+        """RefreshTaskRequest
+
+        The model defined in huaweicloud sdk
+
+        :param refresh_task: 
+        :type refresh_task: :class:`huaweicloudsdkcdn.v1.RefreshTaskRequestBody`
+        """
         
         
 
@@ -45,7 +50,7 @@ class RefreshTaskRequest:
 
 
         :return: The refresh_task of this RefreshTaskRequest.
-        :rtype: RefreshTaskRequestBody
+        :rtype: :class:`huaweicloudsdkcdn.v1.RefreshTaskRequestBody`
         """
         return self._refresh_task
 
@@ -55,7 +60,7 @@ class RefreshTaskRequest:
 
 
         :param refresh_task: The refresh_task of this RefreshTaskRequest.
-        :type: RefreshTaskRequestBody
+        :type refresh_task: :class:`huaweicloudsdkcdn.v1.RefreshTaskRequestBody`
         """
         self._refresh_task = refresh_task
 

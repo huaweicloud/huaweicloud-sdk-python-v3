@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListProductsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListProductsResponse(SdkResponse):
     }
 
     def __init__(self, products=None, page=None):
-        """ListProductsResponse - a model defined in huaweicloud sdk"""
+        """ListProductsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param products: 产品信息列表。
+        :type products: list[:class:`huaweicloudsdkiotda.v5.ProductSummary`]
+        :param page: 
+        :type page: :class:`huaweicloudsdkiotda.v5.Page`
+        """
         
         super(ListProductsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListProductsResponse(SdkResponse):
         产品信息列表。
 
         :return: The products of this ListProductsResponse.
-        :rtype: list[ProductSummary]
+        :rtype: list[:class:`huaweicloudsdkiotda.v5.ProductSummary`]
         """
         return self._products
 
@@ -63,7 +70,7 @@ class ListProductsResponse(SdkResponse):
         产品信息列表。
 
         :param products: The products of this ListProductsResponse.
-        :type: list[ProductSummary]
+        :type products: list[:class:`huaweicloudsdkiotda.v5.ProductSummary`]
         """
         self._products = products
 
@@ -73,7 +80,7 @@ class ListProductsResponse(SdkResponse):
 
 
         :return: The page of this ListProductsResponse.
-        :rtype: Page
+        :rtype: :class:`huaweicloudsdkiotda.v5.Page`
         """
         return self._page
 
@@ -83,7 +90,7 @@ class ListProductsResponse(SdkResponse):
 
 
         :param page: The page of this ListProductsResponse.
-        :type: Page
+        :type page: :class:`huaweicloudsdkiotda.v5.Page`
         """
         self._page = page
 

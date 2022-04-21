@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Member:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class Member:
     }
 
     def __init__(self, tcs_need=None, channel_name=None, invited_orgs=None, invitor_info=None, invitee_info=None):
-        """Member - a model defined in huaweicloud sdk"""
+        """Member
+
+        The model defined in huaweicloud sdk
+
+        :param tcs_need: 是否支持可信
+        :type tcs_need: bool
+        :param channel_name: 通道名称
+        :type channel_name: str
+        :param invited_orgs: 被邀请的组织
+        :type invited_orgs: list[:class:`huaweicloudsdkbcs.v2.OrganizationV2`]
+        :param invitor_info: 
+        :type invitor_info: :class:`huaweicloudsdkbcs.v2.MemberInvitor`
+        :param invitee_info: 
+        :type invitee_info: :class:`huaweicloudsdkbcs.v2.MemberInvitee`
+        """
         
         
 
@@ -78,7 +91,7 @@ class Member:
         是否支持可信
 
         :param tcs_need: The tcs_need of this Member.
-        :type: bool
+        :type tcs_need: bool
         """
         self._tcs_need = tcs_need
 
@@ -100,7 +113,7 @@ class Member:
         通道名称
 
         :param channel_name: The channel_name of this Member.
-        :type: str
+        :type channel_name: str
         """
         self._channel_name = channel_name
 
@@ -111,7 +124,7 @@ class Member:
         被邀请的组织
 
         :return: The invited_orgs of this Member.
-        :rtype: list[OrganizationV2]
+        :rtype: list[:class:`huaweicloudsdkbcs.v2.OrganizationV2`]
         """
         return self._invited_orgs
 
@@ -122,7 +135,7 @@ class Member:
         被邀请的组织
 
         :param invited_orgs: The invited_orgs of this Member.
-        :type: list[OrganizationV2]
+        :type invited_orgs: list[:class:`huaweicloudsdkbcs.v2.OrganizationV2`]
         """
         self._invited_orgs = invited_orgs
 
@@ -132,7 +145,7 @@ class Member:
 
 
         :return: The invitor_info of this Member.
-        :rtype: MemberInvitor
+        :rtype: :class:`huaweicloudsdkbcs.v2.MemberInvitor`
         """
         return self._invitor_info
 
@@ -142,7 +155,7 @@ class Member:
 
 
         :param invitor_info: The invitor_info of this Member.
-        :type: MemberInvitor
+        :type invitor_info: :class:`huaweicloudsdkbcs.v2.MemberInvitor`
         """
         self._invitor_info = invitor_info
 
@@ -152,7 +165,7 @@ class Member:
 
 
         :return: The invitee_info of this Member.
-        :rtype: MemberInvitee
+        :rtype: :class:`huaweicloudsdkbcs.v2.MemberInvitee`
         """
         return self._invitee_info
 
@@ -162,7 +175,7 @@ class Member:
 
 
         :param invitee_info: The invitee_info of this Member.
-        :type: MemberInvitee
+        :type invitee_info: :class:`huaweicloudsdkbcs.v2.MemberInvitee`
         """
         self._invitee_info = invitee_info
 

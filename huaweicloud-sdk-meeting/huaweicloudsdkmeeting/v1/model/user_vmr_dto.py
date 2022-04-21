@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UserVmrDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class UserVmrDTO:
     }
 
     def __init__(self, id=None, vmr_id=None, vmr_name=None, vmr_mode=None, vmr_pkg_id=None, vmr_pkg_name=None, vmr_pkg_parties=None, vmr_pkg_length=None, status=None):
-        """UserVmrDTO - a model defined in huaweicloud sdk"""
+        """UserVmrDTO
+
+        The model defined in huaweicloud sdk
+
+        :param id: 云会议室的唯一标识
+        :type id: str
+        :param vmr_id: 云会议室ID即预约会议的id，分为两种，一种是创建用户时生成的，为用户个人的，另一种是企业管理员分配的专用云会议室
+        :type vmr_id: str
+        :param vmr_name: 云会议室名称
+        :type vmr_name: str
+        :param vmr_mode: VMR模式。 - 0：个人会议ID - 1: 云会议室 - 2: 网络研讨会 
+        :type vmr_mode: int
+        :param vmr_pkg_id: 云会议室套餐包的id，仅专用云会议室返回
+        :type vmr_pkg_id: str
+        :param vmr_pkg_name: 云会议室套餐包的名称，仅专用云会议室返回
+        :type vmr_pkg_name: str
+        :param vmr_pkg_parties: 云会议室套餐包的会议并发方数，仅专用云会议室返回
+        :type vmr_pkg_parties: int
+        :param vmr_pkg_length: 云会议室套餐包的与会时间，若为0则代表无限时长，仅专用云会议室返回
+        :type vmr_pkg_length: int
+        :param status: 云会议室状态。 * 0.正常 * 1.停用 * 2.未分配 
+        :type status: int
+        """
         
         
 
@@ -98,7 +119,7 @@ class UserVmrDTO:
         云会议室的唯一标识
 
         :param id: The id of this UserVmrDTO.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -120,7 +141,7 @@ class UserVmrDTO:
         云会议室ID即预约会议的id，分为两种，一种是创建用户时生成的，为用户个人的，另一种是企业管理员分配的专用云会议室
 
         :param vmr_id: The vmr_id of this UserVmrDTO.
-        :type: str
+        :type vmr_id: str
         """
         self._vmr_id = vmr_id
 
@@ -142,7 +163,7 @@ class UserVmrDTO:
         云会议室名称
 
         :param vmr_name: The vmr_name of this UserVmrDTO.
-        :type: str
+        :type vmr_name: str
         """
         self._vmr_name = vmr_name
 
@@ -164,7 +185,7 @@ class UserVmrDTO:
         VMR模式。 - 0：个人会议ID - 1: 云会议室 - 2: 网络研讨会 
 
         :param vmr_mode: The vmr_mode of this UserVmrDTO.
-        :type: int
+        :type vmr_mode: int
         """
         self._vmr_mode = vmr_mode
 
@@ -186,7 +207,7 @@ class UserVmrDTO:
         云会议室套餐包的id，仅专用云会议室返回
 
         :param vmr_pkg_id: The vmr_pkg_id of this UserVmrDTO.
-        :type: str
+        :type vmr_pkg_id: str
         """
         self._vmr_pkg_id = vmr_pkg_id
 
@@ -208,7 +229,7 @@ class UserVmrDTO:
         云会议室套餐包的名称，仅专用云会议室返回
 
         :param vmr_pkg_name: The vmr_pkg_name of this UserVmrDTO.
-        :type: str
+        :type vmr_pkg_name: str
         """
         self._vmr_pkg_name = vmr_pkg_name
 
@@ -230,7 +251,7 @@ class UserVmrDTO:
         云会议室套餐包的会议并发方数，仅专用云会议室返回
 
         :param vmr_pkg_parties: The vmr_pkg_parties of this UserVmrDTO.
-        :type: int
+        :type vmr_pkg_parties: int
         """
         self._vmr_pkg_parties = vmr_pkg_parties
 
@@ -252,7 +273,7 @@ class UserVmrDTO:
         云会议室套餐包的与会时间，若为0则代表无限时长，仅专用云会议室返回
 
         :param vmr_pkg_length: The vmr_pkg_length of this UserVmrDTO.
-        :type: int
+        :type vmr_pkg_length: int
         """
         self._vmr_pkg_length = vmr_pkg_length
 
@@ -274,7 +295,7 @@ class UserVmrDTO:
         云会议室状态。 * 0.正常 * 1.停用 * 2.未分配 
 
         :param status: The status of this UserVmrDTO.
-        :type: int
+        :type status: int
         """
         self._status = status
 

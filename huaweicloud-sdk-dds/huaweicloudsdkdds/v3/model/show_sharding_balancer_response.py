@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowShardingBalancerResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowShardingBalancerResponse(SdkResponse):
     }
 
     def __init__(self, is_open=None, active_window=None):
-        """ShowShardingBalancerResponse - a model defined in huaweicloud sdk"""
+        """ShowShardingBalancerResponse
+
+        The model defined in huaweicloud sdk
+
+        :param is_open: 集群均衡是否打开。
+        :type is_open: bool
+        :param active_window: 
+        :type active_window: :class:`huaweicloudsdkdds.v3.BalancerActiveWindow`
+        """
         
         super(ShowShardingBalancerResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ShowShardingBalancerResponse(SdkResponse):
         集群均衡是否打开。
 
         :param is_open: The is_open of this ShowShardingBalancerResponse.
-        :type: bool
+        :type is_open: bool
         """
         self._is_open = is_open
 
@@ -73,7 +80,7 @@ class ShowShardingBalancerResponse(SdkResponse):
 
 
         :return: The active_window of this ShowShardingBalancerResponse.
-        :rtype: BalancerActiveWindow
+        :rtype: :class:`huaweicloudsdkdds.v3.BalancerActiveWindow`
         """
         return self._active_window
 
@@ -83,7 +90,7 @@ class ShowShardingBalancerResponse(SdkResponse):
 
 
         :param active_window: The active_window of this ShowShardingBalancerResponse.
-        :type: BalancerActiveWindow
+        :type active_window: :class:`huaweicloudsdkdds.v3.BalancerActiveWindow`
         """
         self._active_window = active_window
 

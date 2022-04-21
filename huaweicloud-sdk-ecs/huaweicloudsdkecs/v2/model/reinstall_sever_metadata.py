@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ReinstallSeverMetadata:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ReinstallSeverMetadata:
     }
 
     def __init__(self, user_data=None):
-        """ReinstallSeverMetadata - a model defined in huaweicloud sdk"""
+        """ReinstallSeverMetadata
+
+        The model defined in huaweicloud sdk
+
+        :param user_data: 重装云服务器过程中注入用户数据。  支持注入文本、文本文件或gzip文件。注入内容最大长度32KB。注入内容，需要进行base64格式编码。  了解更多用户数据注入请参考[用户数据注入](https://support.huaweicloud.com/usermanual-ecs/zh-cn_topic_0032380449.html)。
+        :type user_data: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class ReinstallSeverMetadata:
         重装云服务器过程中注入用户数据。  支持注入文本、文本文件或gzip文件。注入内容最大长度32KB。注入内容，需要进行base64格式编码。  了解更多用户数据注入请参考[用户数据注入](https://support.huaweicloud.com/usermanual-ecs/zh-cn_topic_0032380449.html)。
 
         :param user_data: The user_data of this ReinstallSeverMetadata.
-        :type: str
+        :type user_data: str
         """
         self._user_data = user_data
 

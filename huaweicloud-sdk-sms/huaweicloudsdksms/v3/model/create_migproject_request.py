@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateMigprojectRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateMigprojectRequest:
     }
 
     def __init__(self, body=None):
-        """CreateMigprojectRequest - a model defined in huaweicloud sdk"""
+        """CreateMigprojectRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateMigprojectRequest
+        :type body: :class:`huaweicloudsdksms.v3.PostMigProjectBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateMigprojectRequest:
 
 
         :return: The body of this CreateMigprojectRequest.
-        :rtype: PostMigProjectBody
+        :rtype: :class:`huaweicloudsdksms.v3.PostMigProjectBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateMigprojectRequest:
 
 
         :param body: The body of this CreateMigprojectRequest.
-        :type: PostMigProjectBody
+        :type body: :class:`huaweicloudsdksms.v3.PostMigProjectBody`
         """
         self._body = body
 

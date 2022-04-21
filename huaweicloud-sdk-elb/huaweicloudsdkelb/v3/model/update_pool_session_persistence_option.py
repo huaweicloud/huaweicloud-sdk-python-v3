@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdatePoolSessionPersistenceOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdatePoolSessionPersistenceOption:
     }
 
     def __init__(self, cookie_name=None, type=None, persistence_timeout=None):
-        """UpdatePoolSessionPersistenceOption - a model defined in huaweicloud sdk"""
+        """UpdatePoolSessionPersistenceOption
+
+        The model defined in huaweicloud sdk
+
+        :param cookie_name: cookie名称。  [格式：仅支持字母、数字、中划线(-)、下划线(_)和点号(.)。  使用说明： - 只有当type为APP_COOKIE时才有效。其他情况下传该字段会报错。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42,dt,dt_test) [不支持该字段，请勿使用。](tag:hcso_dt)
+        :type cookie_name: str
+        :param type: 描述：类型，可以为SOURCE_IP、HTTP_COOKIE、APP_COOKIE。  使用说明： - 当pool的protocol为TCP、UDP、QUIC时，只按SOURCE_IP生效； - 当pool的protocol为HTTP、HTTPS时，只按HTTP_COOKIE、APP_COOKIE生效。
+        :type type: str
+        :param persistence_timeout: 会话保持的时间。当type为APP_COOKIE时不生效。  适用范围：如果pool的protocol为TCP、UDP和QUIC则范围为[1,60]（分钟），默认值1；如果pool的protocol为HTTP和HTTPS则范围为[1,1440]（分钟），默认值1440。
+        :type persistence_timeout: int
+        """
         
         
 
@@ -68,7 +77,7 @@ class UpdatePoolSessionPersistenceOption:
         cookie名称。  [格式：仅支持字母、数字、中划线(-)、下划线(_)和点号(.)。  使用说明： - 只有当type为APP_COOKIE时才有效。其他情况下传该字段会报错。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42,dt,dt_test) [不支持该字段，请勿使用。](tag:hcso_dt)
 
         :param cookie_name: The cookie_name of this UpdatePoolSessionPersistenceOption.
-        :type: str
+        :type cookie_name: str
         """
         self._cookie_name = cookie_name
 
@@ -90,7 +99,7 @@ class UpdatePoolSessionPersistenceOption:
         描述：类型，可以为SOURCE_IP、HTTP_COOKIE、APP_COOKIE。  使用说明： - 当pool的protocol为TCP、UDP、QUIC时，只按SOURCE_IP生效； - 当pool的protocol为HTTP、HTTPS时，只按HTTP_COOKIE、APP_COOKIE生效。
 
         :param type: The type of this UpdatePoolSessionPersistenceOption.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -112,7 +121,7 @@ class UpdatePoolSessionPersistenceOption:
         会话保持的时间。当type为APP_COOKIE时不生效。  适用范围：如果pool的protocol为TCP、UDP和QUIC则范围为[1,60]（分钟），默认值1；如果pool的protocol为HTTP和HTTPS则范围为[1,1440]（分钟），默认值1440。
 
         :param persistence_timeout: The persistence_timeout of this UpdatePoolSessionPersistenceOption.
-        :type: int
+        :type persistence_timeout: int
         """
         self._persistence_timeout = persistence_timeout
 

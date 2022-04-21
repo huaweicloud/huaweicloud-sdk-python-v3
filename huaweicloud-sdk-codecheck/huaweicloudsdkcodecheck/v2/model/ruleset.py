@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Ruleset:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class Ruleset:
     }
 
     def __init__(self, project_id=None, template_name=None, language=None, is_default=None, rule_ids=None, uncheck_ids=None, template_id=None, custom_attributes=None):
-        """Ruleset - a model defined in huaweicloud sdk"""
+        """Ruleset
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: 项目ID
+        :type project_id: str
+        :param template_name: 新规则集名称
+        :type template_name: str
+        :param language: 规则集语言
+        :type language: str
+        :param is_default: 如果有基于的规则集则是1，没有基于的规则集则是0
+        :type is_default: str
+        :param rule_ids: 新启用规则ids
+        :type rule_ids: str
+        :param uncheck_ids: 新关闭规则id
+        :type uncheck_ids: str
+        :param template_id: 规则集ID
+        :type template_id: str
+        :param custom_attributes: 自定义规则参数项，支持修改规则阈值
+        :type custom_attributes: list[:class:`huaweicloudsdkcodecheck.v2.CustomAttributes`]
+        """
         
         
 
@@ -88,7 +107,7 @@ class Ruleset:
         项目ID
 
         :param project_id: The project_id of this Ruleset.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -110,7 +129,7 @@ class Ruleset:
         新规则集名称
 
         :param template_name: The template_name of this Ruleset.
-        :type: str
+        :type template_name: str
         """
         self._template_name = template_name
 
@@ -132,7 +151,7 @@ class Ruleset:
         规则集语言
 
         :param language: The language of this Ruleset.
-        :type: str
+        :type language: str
         """
         self._language = language
 
@@ -154,7 +173,7 @@ class Ruleset:
         如果有基于的规则集则是1，没有基于的规则集则是0
 
         :param is_default: The is_default of this Ruleset.
-        :type: str
+        :type is_default: str
         """
         self._is_default = is_default
 
@@ -176,7 +195,7 @@ class Ruleset:
         新启用规则ids
 
         :param rule_ids: The rule_ids of this Ruleset.
-        :type: str
+        :type rule_ids: str
         """
         self._rule_ids = rule_ids
 
@@ -198,7 +217,7 @@ class Ruleset:
         新关闭规则id
 
         :param uncheck_ids: The uncheck_ids of this Ruleset.
-        :type: str
+        :type uncheck_ids: str
         """
         self._uncheck_ids = uncheck_ids
 
@@ -220,7 +239,7 @@ class Ruleset:
         规则集ID
 
         :param template_id: The template_id of this Ruleset.
-        :type: str
+        :type template_id: str
         """
         self._template_id = template_id
 
@@ -231,7 +250,7 @@ class Ruleset:
         自定义规则参数项，支持修改规则阈值
 
         :return: The custom_attributes of this Ruleset.
-        :rtype: list[CustomAttributes]
+        :rtype: list[:class:`huaweicloudsdkcodecheck.v2.CustomAttributes`]
         """
         return self._custom_attributes
 
@@ -242,7 +261,7 @@ class Ruleset:
         自定义规则参数项，支持修改规则阈值
 
         :param custom_attributes: The custom_attributes of this Ruleset.
-        :type: list[CustomAttributes]
+        :type custom_attributes: list[:class:`huaweicloudsdkcodecheck.v2.CustomAttributes`]
         """
         self._custom_attributes = custom_attributes
 

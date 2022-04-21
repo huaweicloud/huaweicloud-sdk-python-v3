@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateAddonInstanceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateAddonInstanceRequest:
     }
 
     def __init__(self, id=None, body=None):
-        """UpdateAddonInstanceRequest - a model defined in huaweicloud sdk"""
+        """UpdateAddonInstanceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param id: 插件实例id
+        :type id: str
+        :param body: Body of the UpdateAddonInstanceRequest
+        :type body: :class:`huaweicloudsdkcce.v3.InstanceRequest`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateAddonInstanceRequest:
         插件实例id
 
         :param id: The id of this UpdateAddonInstanceRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -72,7 +79,7 @@ class UpdateAddonInstanceRequest:
 
 
         :return: The body of this UpdateAddonInstanceRequest.
-        :rtype: InstanceRequest
+        :rtype: :class:`huaweicloudsdkcce.v3.InstanceRequest`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateAddonInstanceRequest:
 
 
         :param body: The body of this UpdateAddonInstanceRequest.
-        :type: InstanceRequest
+        :type body: :class:`huaweicloudsdkcce.v3.InstanceRequest`
         """
         self._body = body
 

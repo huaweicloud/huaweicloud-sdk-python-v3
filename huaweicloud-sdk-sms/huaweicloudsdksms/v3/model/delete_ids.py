@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteIds:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteIds:
     }
 
     def __init__(self, ids=None):
-        """DeleteIds - a model defined in huaweicloud sdk"""
+        """DeleteIds
+
+        The model defined in huaweicloud sdk
+
+        :param ids: 所有删除对象id的集合
+        :type ids: list[str]
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteIds:
         所有删除对象id的集合
 
         :param ids: The ids of this DeleteIds.
-        :type: list[str]
+        :type ids: list[str]
         """
         self._ids = ids
 

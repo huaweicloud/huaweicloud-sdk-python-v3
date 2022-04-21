@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Versions:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class Versions:
     }
 
     def __init__(self, version=None, input=None, stable=None, translate=None, support_versions=None, creation_timestamp=None, update_timestamp=None):
-        """Versions - a model defined in huaweicloud sdk"""
+        """Versions
+
+        The model defined in huaweicloud sdk
+
+        :param version: 插件版本号
+        :type version: str
+        :param input: 插件安装参数
+        :type input: object
+        :param stable: 是否为稳定版本
+        :type stable: bool
+        :param translate: 供界面使用的翻译信息
+        :type translate: object
+        :param support_versions: 支持集群版本号
+        :type support_versions: list[:class:`huaweicloudsdkcce.v3.SupportVersions`]
+        :param creation_timestamp: 创建时间
+        :type creation_timestamp: date
+        :param update_timestamp: 更新时间
+        :type update_timestamp: date
+        """
         
         
 
@@ -82,7 +99,7 @@ class Versions:
         插件版本号
 
         :param version: The version of this Versions.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -104,7 +121,7 @@ class Versions:
         插件安装参数
 
         :param input: The input of this Versions.
-        :type: object
+        :type input: object
         """
         self._input = input
 
@@ -126,7 +143,7 @@ class Versions:
         是否为稳定版本
 
         :param stable: The stable of this Versions.
-        :type: bool
+        :type stable: bool
         """
         self._stable = stable
 
@@ -148,7 +165,7 @@ class Versions:
         供界面使用的翻译信息
 
         :param translate: The translate of this Versions.
-        :type: object
+        :type translate: object
         """
         self._translate = translate
 
@@ -159,7 +176,7 @@ class Versions:
         支持集群版本号
 
         :return: The support_versions of this Versions.
-        :rtype: list[SupportVersions]
+        :rtype: list[:class:`huaweicloudsdkcce.v3.SupportVersions`]
         """
         return self._support_versions
 
@@ -170,7 +187,7 @@ class Versions:
         支持集群版本号
 
         :param support_versions: The support_versions of this Versions.
-        :type: list[SupportVersions]
+        :type support_versions: list[:class:`huaweicloudsdkcce.v3.SupportVersions`]
         """
         self._support_versions = support_versions
 
@@ -192,7 +209,7 @@ class Versions:
         创建时间
 
         :param creation_timestamp: The creation_timestamp of this Versions.
-        :type: date
+        :type creation_timestamp: date
         """
         self._creation_timestamp = creation_timestamp
 
@@ -214,7 +231,7 @@ class Versions:
         更新时间
 
         :param update_timestamp: The update_timestamp of this Versions.
-        :type: date
+        :type update_timestamp: date
         """
         self._update_timestamp = update_timestamp
 

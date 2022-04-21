@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NodeGroupV11:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class NodeGroupV11:
     }
 
     def __init__(self, group_name=None, node_num=None, node_size=None, root_volume_size=None, root_volume_type=None, data_volume_type=None, data_volume_count=None, data_volume_size=None, auto_scaling_policy=None):
-        """NodeGroupV11 - a model defined in huaweicloud sdk"""
+        """NodeGroupV11
+
+        The model defined in huaweicloud sdk
+
+        :param group_name: 节点组名。 - master_node_default_group - core_node_analysis_group - core_node_streaming_group - task_node_analysis_group - task_node_streaming_group
+        :type group_name: str
+        :param node_num: 节点数量，取值范围0～500，Core与Task节点总数最大为500个。
+        :type node_num: int
+        :param node_size: 节点的实例规格，例如：c3.4xlarge.2.linux.bigdata。MRS当前支持主机规格的配型由CPU+内存+Disk共同决定。实例规格详细说明请参见[MRS所使用的弹性云服务器规格](https://support.huaweicloud.com/api-mrs/mrs_01_9006.html)和[MRS所使用的裸金属服务器规格](https://support.huaweicloud.com/api-mrs/mrs_01_9001.html)。 该参数建议从MRS控制台的集群创建页面获取对应区域对应版本所支持的规格。
+        :type node_size: str
+        :param root_volume_size: 节点系统磁盘存储大小。
+        :type root_volume_size: str
+        :param root_volume_type: 节点系统磁盘存储类别，目前支持SATA、SAS和SSD。 - SATA：普通IO - SAS：高IO - SSD：超高IO - GPSSD：通用型SSD
+        :type root_volume_type: str
+        :param data_volume_type: 节点数据磁盘存储类别，目前支持SATA、SAS和SSD。 - SATA：普通IO - SAS：高IO - SSD：超高IO - GPSSD：通用型SSD
+        :type data_volume_type: str
+        :param data_volume_count: 节点数据磁盘存储数目 取值范围：0～10。
+        :type data_volume_count: int
+        :param data_volume_size: 节点数据磁盘存储大小 取值范围：100GB～32000GB。
+        :type data_volume_size: int
+        :param auto_scaling_policy: 
+        :type auto_scaling_policy: :class:`huaweicloudsdkmrs.v1.AutoScalingPolicy`
+        """
         
         
 
@@ -95,7 +116,7 @@ class NodeGroupV11:
         节点组名。 - master_node_default_group - core_node_analysis_group - core_node_streaming_group - task_node_analysis_group - task_node_streaming_group
 
         :param group_name: The group_name of this NodeGroupV11.
-        :type: str
+        :type group_name: str
         """
         self._group_name = group_name
 
@@ -117,7 +138,7 @@ class NodeGroupV11:
         节点数量，取值范围0～500，Core与Task节点总数最大为500个。
 
         :param node_num: The node_num of this NodeGroupV11.
-        :type: int
+        :type node_num: int
         """
         self._node_num = node_num
 
@@ -139,7 +160,7 @@ class NodeGroupV11:
         节点的实例规格，例如：c3.4xlarge.2.linux.bigdata。MRS当前支持主机规格的配型由CPU+内存+Disk共同决定。实例规格详细说明请参见[MRS所使用的弹性云服务器规格](https://support.huaweicloud.com/api-mrs/mrs_01_9006.html)和[MRS所使用的裸金属服务器规格](https://support.huaweicloud.com/api-mrs/mrs_01_9001.html)。 该参数建议从MRS控制台的集群创建页面获取对应区域对应版本所支持的规格。
 
         :param node_size: The node_size of this NodeGroupV11.
-        :type: str
+        :type node_size: str
         """
         self._node_size = node_size
 
@@ -161,7 +182,7 @@ class NodeGroupV11:
         节点系统磁盘存储大小。
 
         :param root_volume_size: The root_volume_size of this NodeGroupV11.
-        :type: str
+        :type root_volume_size: str
         """
         self._root_volume_size = root_volume_size
 
@@ -183,7 +204,7 @@ class NodeGroupV11:
         节点系统磁盘存储类别，目前支持SATA、SAS和SSD。 - SATA：普通IO - SAS：高IO - SSD：超高IO - GPSSD：通用型SSD
 
         :param root_volume_type: The root_volume_type of this NodeGroupV11.
-        :type: str
+        :type root_volume_type: str
         """
         self._root_volume_type = root_volume_type
 
@@ -205,7 +226,7 @@ class NodeGroupV11:
         节点数据磁盘存储类别，目前支持SATA、SAS和SSD。 - SATA：普通IO - SAS：高IO - SSD：超高IO - GPSSD：通用型SSD
 
         :param data_volume_type: The data_volume_type of this NodeGroupV11.
-        :type: str
+        :type data_volume_type: str
         """
         self._data_volume_type = data_volume_type
 
@@ -227,7 +248,7 @@ class NodeGroupV11:
         节点数据磁盘存储数目 取值范围：0～10。
 
         :param data_volume_count: The data_volume_count of this NodeGroupV11.
-        :type: int
+        :type data_volume_count: int
         """
         self._data_volume_count = data_volume_count
 
@@ -249,7 +270,7 @@ class NodeGroupV11:
         节点数据磁盘存储大小 取值范围：100GB～32000GB。
 
         :param data_volume_size: The data_volume_size of this NodeGroupV11.
-        :type: int
+        :type data_volume_size: int
         """
         self._data_volume_size = data_volume_size
 
@@ -259,7 +280,7 @@ class NodeGroupV11:
 
 
         :return: The auto_scaling_policy of this NodeGroupV11.
-        :rtype: AutoScalingPolicy
+        :rtype: :class:`huaweicloudsdkmrs.v1.AutoScalingPolicy`
         """
         return self._auto_scaling_policy
 
@@ -269,7 +290,7 @@ class NodeGroupV11:
 
 
         :param auto_scaling_policy: The auto_scaling_policy of this NodeGroupV11.
-        :type: AutoScalingPolicy
+        :type auto_scaling_policy: :class:`huaweicloudsdkmrs.v1.AutoScalingPolicy`
         """
         self._auto_scaling_policy = auto_scaling_policy
 

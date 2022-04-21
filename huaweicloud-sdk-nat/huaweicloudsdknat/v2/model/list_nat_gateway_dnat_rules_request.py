@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListNatGatewayDnatRulesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class ListNatGatewayDnatRulesRequest:
     }
 
     def __init__(self, admin_state_up=None, external_service_port=None, floating_ip_address=None, status=None, floating_ip_id=None, internal_service_port=None, limit=None, id=None, description=None, created_at=None, nat_gateway_id=None, port_id=None, private_ip=None, protocol=None):
-        """ListNatGatewayDnatRulesRequest - a model defined in huaweicloud sdk"""
+        """ListNatGatewayDnatRulesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param admin_state_up: 解冻/冻结状态。 取值范围： \&quot;true\&quot;：解冻 \&quot;false\&quot;：冻结
+        :type admin_state_up: bool
+        :param external_service_port: Floatingip对外提供服务的端口号。 取值范围：0~65535。
+        :type external_service_port: int
+        :param floating_ip_address: 弹性公网的IP地址。
+        :type floating_ip_address: str
+        :param status: Dnat规则的状态。
+        :type status: list[str]
+        :param floating_ip_id: 弹性公网IP的id。
+        :type floating_ip_id: str
+        :param internal_service_port: 虚拟机或者裸机对外提供服务的协议端口号。 取值范围：0~65535。
+        :type internal_service_port: int
+        :param limit: 功能说明：每页返回的个数。 取值范围：0~2000。 默认值：2000。
+        :type limit: int
+        :param id: DNAT规则的ID。
+        :type id: str
+        :param description: DNAT规则的描述，长度限制为255。
+        :type description: str
+        :param created_at: DNAT规则的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
+        :type created_at: datetime
+        :param nat_gateway_id: 公网NAT网关实例的ID。
+        :type nat_gateway_id: list[str]
+        :param port_id: 虚拟机或者裸机的Port ID，对应虚拟私有云场景，与private_ip参数二选一。
+        :type port_id: str
+        :param private_ip: 用户私有IP地址，对应专线、云连接场景，与port_id参数二选一。
+        :type private_ip: str
+        :param protocol: 协议类型，目前支持TCP/tcp、UDP/udp、ANY/any。 对应协议号6、17、0。
+        :type protocol: list[str]
+        """
         
         
 
@@ -123,7 +154,7 @@ class ListNatGatewayDnatRulesRequest:
         解冻/冻结状态。 取值范围： \"true\"：解冻 \"false\"：冻结
 
         :param admin_state_up: The admin_state_up of this ListNatGatewayDnatRulesRequest.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 
@@ -145,7 +176,7 @@ class ListNatGatewayDnatRulesRequest:
         Floatingip对外提供服务的端口号。 取值范围：0~65535。
 
         :param external_service_port: The external_service_port of this ListNatGatewayDnatRulesRequest.
-        :type: int
+        :type external_service_port: int
         """
         self._external_service_port = external_service_port
 
@@ -167,7 +198,7 @@ class ListNatGatewayDnatRulesRequest:
         弹性公网的IP地址。
 
         :param floating_ip_address: The floating_ip_address of this ListNatGatewayDnatRulesRequest.
-        :type: str
+        :type floating_ip_address: str
         """
         self._floating_ip_address = floating_ip_address
 
@@ -189,7 +220,7 @@ class ListNatGatewayDnatRulesRequest:
         Dnat规则的状态。
 
         :param status: The status of this ListNatGatewayDnatRulesRequest.
-        :type: list[str]
+        :type status: list[str]
         """
         self._status = status
 
@@ -211,7 +242,7 @@ class ListNatGatewayDnatRulesRequest:
         弹性公网IP的id。
 
         :param floating_ip_id: The floating_ip_id of this ListNatGatewayDnatRulesRequest.
-        :type: str
+        :type floating_ip_id: str
         """
         self._floating_ip_id = floating_ip_id
 
@@ -233,7 +264,7 @@ class ListNatGatewayDnatRulesRequest:
         虚拟机或者裸机对外提供服务的协议端口号。 取值范围：0~65535。
 
         :param internal_service_port: The internal_service_port of this ListNatGatewayDnatRulesRequest.
-        :type: int
+        :type internal_service_port: int
         """
         self._internal_service_port = internal_service_port
 
@@ -255,7 +286,7 @@ class ListNatGatewayDnatRulesRequest:
         功能说明：每页返回的个数。 取值范围：0~2000。 默认值：2000。
 
         :param limit: The limit of this ListNatGatewayDnatRulesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -277,7 +308,7 @@ class ListNatGatewayDnatRulesRequest:
         DNAT规则的ID。
 
         :param id: The id of this ListNatGatewayDnatRulesRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -299,7 +330,7 @@ class ListNatGatewayDnatRulesRequest:
         DNAT规则的描述，长度限制为255。
 
         :param description: The description of this ListNatGatewayDnatRulesRequest.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -321,7 +352,7 @@ class ListNatGatewayDnatRulesRequest:
         DNAT规则的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
 
         :param created_at: The created_at of this ListNatGatewayDnatRulesRequest.
-        :type: datetime
+        :type created_at: datetime
         """
         self._created_at = created_at
 
@@ -343,7 +374,7 @@ class ListNatGatewayDnatRulesRequest:
         公网NAT网关实例的ID。
 
         :param nat_gateway_id: The nat_gateway_id of this ListNatGatewayDnatRulesRequest.
-        :type: list[str]
+        :type nat_gateway_id: list[str]
         """
         self._nat_gateway_id = nat_gateway_id
 
@@ -365,7 +396,7 @@ class ListNatGatewayDnatRulesRequest:
         虚拟机或者裸机的Port ID，对应虚拟私有云场景，与private_ip参数二选一。
 
         :param port_id: The port_id of this ListNatGatewayDnatRulesRequest.
-        :type: str
+        :type port_id: str
         """
         self._port_id = port_id
 
@@ -387,7 +418,7 @@ class ListNatGatewayDnatRulesRequest:
         用户私有IP地址，对应专线、云连接场景，与port_id参数二选一。
 
         :param private_ip: The private_ip of this ListNatGatewayDnatRulesRequest.
-        :type: str
+        :type private_ip: str
         """
         self._private_ip = private_ip
 
@@ -409,7 +440,7 @@ class ListNatGatewayDnatRulesRequest:
         协议类型，目前支持TCP/tcp、UDP/udp、ANY/any。 对应协议号6、17、0。
 
         :param protocol: The protocol of this ListNatGatewayDnatRulesRequest.
-        :type: list[str]
+        :type protocol: list[str]
         """
         self._protocol = protocol
 

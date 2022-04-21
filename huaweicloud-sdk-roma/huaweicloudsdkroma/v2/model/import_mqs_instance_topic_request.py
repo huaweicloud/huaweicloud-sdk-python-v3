@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ImportMqsInstanceTopicRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ImportMqsInstanceTopicRequest:
     }
 
     def __init__(self, instance_id=None, mode=None, prefix=None, body=None):
-        """ImportMqsInstanceTopicRequest - a model defined in huaweicloud sdk"""
+        """ImportMqsInstanceTopicRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param mode: 导入topic的模式。 - AddNew：全量新增导入。 - Merge：合并导入。  默认为AddNew模式。
+        :type mode: str
+        :param prefix: App应用的前缀。  若加上前缀，导入Topic时会拼接前缀和已有的App应用，形成新的App应用名称，再根据新的App应用名称导入Topic。
+        :type prefix: str
+        :param body: Body of the ImportMqsInstanceTopicRequest
+        :type body: :class:`huaweicloudsdkroma.v2.ImportMqsInstanceTopicRequestBody`
+        """
         
         
 
@@ -72,7 +83,7 @@ class ImportMqsInstanceTopicRequest:
         实例ID。
 
         :param instance_id: The instance_id of this ImportMqsInstanceTopicRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -94,7 +105,7 @@ class ImportMqsInstanceTopicRequest:
         导入topic的模式。 - AddNew：全量新增导入。 - Merge：合并导入。  默认为AddNew模式。
 
         :param mode: The mode of this ImportMqsInstanceTopicRequest.
-        :type: str
+        :type mode: str
         """
         self._mode = mode
 
@@ -116,7 +127,7 @@ class ImportMqsInstanceTopicRequest:
         App应用的前缀。  若加上前缀，导入Topic时会拼接前缀和已有的App应用，形成新的App应用名称，再根据新的App应用名称导入Topic。
 
         :param prefix: The prefix of this ImportMqsInstanceTopicRequest.
-        :type: str
+        :type prefix: str
         """
         self._prefix = prefix
 
@@ -126,7 +137,7 @@ class ImportMqsInstanceTopicRequest:
 
 
         :return: The body of this ImportMqsInstanceTopicRequest.
-        :rtype: ImportMqsInstanceTopicRequestBody
+        :rtype: :class:`huaweicloudsdkroma.v2.ImportMqsInstanceTopicRequestBody`
         """
         return self._body
 
@@ -136,7 +147,7 @@ class ImportMqsInstanceTopicRequest:
 
 
         :param body: The body of this ImportMqsInstanceTopicRequest.
-        :type: ImportMqsInstanceTopicRequestBody
+        :type body: :class:`huaweicloudsdkroma.v2.ImportMqsInstanceTopicRequestBody`
         """
         self._body = body
 

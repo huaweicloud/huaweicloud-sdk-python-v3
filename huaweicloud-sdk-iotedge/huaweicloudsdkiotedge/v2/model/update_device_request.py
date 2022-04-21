@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDeviceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateDeviceRequest:
     }
 
     def __init__(self, edge_node_id=None, device_id=None, body=None):
-        """UpdateDeviceRequest - a model defined in huaweicloud sdk"""
+        """UpdateDeviceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param edge_node_id: 边缘节点ID
+        :type edge_node_id: str
+        :param device_id: 设备ID
+        :type device_id: str
+        :param body: Body of the UpdateDeviceRequest
+        :type body: :class:`huaweicloudsdkiotedge.v2.UpdateDesireds`
+        """
         
         
 
@@ -66,7 +75,7 @@ class UpdateDeviceRequest:
         边缘节点ID
 
         :param edge_node_id: The edge_node_id of this UpdateDeviceRequest.
-        :type: str
+        :type edge_node_id: str
         """
         self._edge_node_id = edge_node_id
 
@@ -88,7 +97,7 @@ class UpdateDeviceRequest:
         设备ID
 
         :param device_id: The device_id of this UpdateDeviceRequest.
-        :type: str
+        :type device_id: str
         """
         self._device_id = device_id
 
@@ -98,7 +107,7 @@ class UpdateDeviceRequest:
 
 
         :return: The body of this UpdateDeviceRequest.
-        :rtype: UpdateDesireds
+        :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateDesireds`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class UpdateDeviceRequest:
 
 
         :param body: The body of this UpdateDeviceRequest.
-        :type: UpdateDesireds
+        :type body: :class:`huaweicloudsdkiotedge.v2.UpdateDesireds`
         """
         self._body = body
 

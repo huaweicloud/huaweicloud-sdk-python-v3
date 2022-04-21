@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDisasterRecoveryDrillsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListDisasterRecoveryDrillsResponse(SdkResponse):
     }
 
     def __init__(self, disaster_recovery_drills=None, count=None):
-        """ListDisasterRecoveryDrillsResponse - a model defined in huaweicloud sdk"""
+        """ListDisasterRecoveryDrillsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param disaster_recovery_drills: 容灾演练列表。
+        :type disaster_recovery_drills: list[:class:`huaweicloudsdksdrs.v1.ShowDisasterRecoveryDrillParams`]
+        :param count: 列表中包含的容灾演练个数。
+        :type count: int
+        """
         
         super(ListDisasterRecoveryDrillsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListDisasterRecoveryDrillsResponse(SdkResponse):
         容灾演练列表。
 
         :return: The disaster_recovery_drills of this ListDisasterRecoveryDrillsResponse.
-        :rtype: list[ShowDisasterRecoveryDrillParams]
+        :rtype: list[:class:`huaweicloudsdksdrs.v1.ShowDisasterRecoveryDrillParams`]
         """
         return self._disaster_recovery_drills
 
@@ -63,7 +70,7 @@ class ListDisasterRecoveryDrillsResponse(SdkResponse):
         容灾演练列表。
 
         :param disaster_recovery_drills: The disaster_recovery_drills of this ListDisasterRecoveryDrillsResponse.
-        :type: list[ShowDisasterRecoveryDrillParams]
+        :type disaster_recovery_drills: list[:class:`huaweicloudsdksdrs.v1.ShowDisasterRecoveryDrillParams`]
         """
         self._disaster_recovery_drills = disaster_recovery_drills
 
@@ -85,7 +92,7 @@ class ListDisasterRecoveryDrillsResponse(SdkResponse):
         列表中包含的容灾演练个数。
 
         :param count: The count of this ListDisasterRecoveryDrillsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

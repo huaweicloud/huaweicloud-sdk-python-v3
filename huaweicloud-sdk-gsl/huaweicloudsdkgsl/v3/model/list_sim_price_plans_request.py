@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSimPricePlansRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListSimPricePlansRequest:
     }
 
     def __init__(self, sim_card_id=None, real_time=None, limit=None, offset=None):
-        """ListSimPricePlansRequest - a model defined in huaweicloud sdk"""
+        """ListSimPricePlansRequest
+
+        The model defined in huaweicloud sdk
+
+        :param sim_card_id: SIM卡标识，可通过[查询SIM卡列表接口](https://support.huaweicloud.com/api-ocgsl/gsl_07_0008.html)获取
+        :type sim_card_id: int
+        :param real_time: 是否查实时流量
+        :type real_time: bool
+        :param limit: 分页查询时每页显示的记录数，默认值为10，取值范围为10-500的整数
+        :type limit: int
+        :param offset: 分页查询时的页码数，默认值为1，取值范围为1-1000000的整数
+        :type offset: int
+        """
         
         
 
@@ -72,7 +83,7 @@ class ListSimPricePlansRequest:
         SIM卡标识，可通过[查询SIM卡列表接口](https://support.huaweicloud.com/api-ocgsl/gsl_07_0008.html)获取
 
         :param sim_card_id: The sim_card_id of this ListSimPricePlansRequest.
-        :type: int
+        :type sim_card_id: int
         """
         self._sim_card_id = sim_card_id
 
@@ -94,7 +105,7 @@ class ListSimPricePlansRequest:
         是否查实时流量
 
         :param real_time: The real_time of this ListSimPricePlansRequest.
-        :type: bool
+        :type real_time: bool
         """
         self._real_time = real_time
 
@@ -116,7 +127,7 @@ class ListSimPricePlansRequest:
         分页查询时每页显示的记录数，默认值为10，取值范围为10-500的整数
 
         :param limit: The limit of this ListSimPricePlansRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -138,7 +149,7 @@ class ListSimPricePlansRequest:
         分页查询时的页码数，默认值为1，取值范围为1-1000000的整数
 
         :param offset: The offset of this ListSimPricePlansRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 

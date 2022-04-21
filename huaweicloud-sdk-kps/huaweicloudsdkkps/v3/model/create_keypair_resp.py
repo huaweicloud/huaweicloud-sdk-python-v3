@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateKeypairResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class CreateKeypairResp:
     }
 
     def __init__(self, name=None, type=None, public_key=None, private_key=None, fingerprint=None, user_id=None):
-        """CreateKeypairResp - a model defined in huaweicloud sdk"""
+        """CreateKeypairResp
+
+        The model defined in huaweicloud sdk
+
+        :param name: SSH密钥对的名称
+        :type name: str
+        :param type: SSH密钥对的类型
+        :type type: str
+        :param public_key: SSH密钥对对应的publicKey信息
+        :type public_key: str
+        :param private_key: SSH密钥对对应的privateKey信息 - 创建SSH密钥对时，响应中包括private_key的信息。 - 导入SSH密钥对时，响应中不包括private_key的信息。
+        :type private_key: str
+        :param fingerprint: SSH密钥对应指纹信息
+        :type fingerprint: str
+        :param user_id: SSH密钥对所属的用户信息
+        :type user_id: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class CreateKeypairResp:
         SSH密钥对的名称
 
         :param name: The name of this CreateKeypairResp.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -105,7 +120,7 @@ class CreateKeypairResp:
         SSH密钥对的类型
 
         :param type: The type of this CreateKeypairResp.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -127,7 +142,7 @@ class CreateKeypairResp:
         SSH密钥对对应的publicKey信息
 
         :param public_key: The public_key of this CreateKeypairResp.
-        :type: str
+        :type public_key: str
         """
         self._public_key = public_key
 
@@ -149,7 +164,7 @@ class CreateKeypairResp:
         SSH密钥对对应的privateKey信息 - 创建SSH密钥对时，响应中包括private_key的信息。 - 导入SSH密钥对时，响应中不包括private_key的信息。
 
         :param private_key: The private_key of this CreateKeypairResp.
-        :type: str
+        :type private_key: str
         """
         self._private_key = private_key
 
@@ -171,7 +186,7 @@ class CreateKeypairResp:
         SSH密钥对应指纹信息
 
         :param fingerprint: The fingerprint of this CreateKeypairResp.
-        :type: str
+        :type fingerprint: str
         """
         self._fingerprint = fingerprint
 
@@ -193,7 +208,7 @@ class CreateKeypairResp:
         SSH密钥对所属的用户信息
 
         :param user_id: The user_id of this CreateKeypairResp.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 

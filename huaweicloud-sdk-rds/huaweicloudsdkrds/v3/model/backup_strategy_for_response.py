@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BackupStrategyForResponse:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BackupStrategyForResponse:
     }
 
     def __init__(self, start_time=None, keep_days=None):
-        """BackupStrategyForResponse - a model defined in huaweicloud sdk"""
+        """BackupStrategyForResponse
+
+        The model defined in huaweicloud sdk
+
+        :param start_time: 备份时间段。自动备份将在该时间段内触发。  取值范围：非空，格式必须为hh:mm-HH:MM且有效，当前时间指UTC时间。  HH取值必须比hh大1。 mm和MM取值必须相同，且取值必须为00、15、30或45。
+        :type start_time: str
+        :param keep_days: 指定备份文件的可保存天数。  取值范围：0～732。该参数缺省，或取值为0，表示关闭自动备份策略。如果需要延长保留时间请联系客服人员申请，自动备份最长可以保留2562天。  说明：SQL Server的HA实例不支持关闭自动备份策略。
+        :type keep_days: int
+        """
         
         
 
@@ -61,7 +68,7 @@ class BackupStrategyForResponse:
         备份时间段。自动备份将在该时间段内触发。  取值范围：非空，格式必须为hh:mm-HH:MM且有效，当前时间指UTC时间。  HH取值必须比hh大1。 mm和MM取值必须相同，且取值必须为00、15、30或45。
 
         :param start_time: The start_time of this BackupStrategyForResponse.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -83,7 +90,7 @@ class BackupStrategyForResponse:
         指定备份文件的可保存天数。  取值范围：0～732。该参数缺省，或取值为0，表示关闭自动备份策略。如果需要延长保留时间请联系客服人员申请，自动备份最长可以保留2562天。  说明：SQL Server的HA实例不支持关闭自动备份策略。
 
         :param keep_days: The keep_days of this BackupStrategyForResponse.
-        :type: int
+        :type keep_days: int
         """
         self._keep_days = keep_days
 

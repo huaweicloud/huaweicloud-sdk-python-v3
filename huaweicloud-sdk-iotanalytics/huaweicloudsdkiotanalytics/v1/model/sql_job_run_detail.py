@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SqlJobRunDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class SqlJobRunDetail:
     }
 
     def __init__(self, sql_type=None, start_time=None, duration=None, input_row_count=None, bad_row_count=None, input_size=None, result_count=None, table_name=None, with_column_header=None, detail=None, statement=None, message=None):
-        """SqlJobRunDetail - a model defined in huaweicloud sdk"""
+        """SqlJobRunDetail
+
+        The model defined in huaweicloud sdk
+
+        :param sql_type: 作业类型。
+        :type sql_type: str
+        :param start_time: 作业开始的时间。时间格式为ISO日期时间格式yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;
+        :type start_time: str
+        :param duration: 作业运行时长，单位毫秒。
+        :type duration: int
+        :param input_row_count: Insert作业执行过程中扫描的记录条数。
+        :type input_row_count: int
+        :param bad_row_count: Insert作业执行过程中扫描到的错误记录数。
+        :type bad_row_count: int
+        :param input_size: 作业执行过程中扫描文件的大小。
+        :type input_size: int
+        :param result_count: 当前作业返回的结果总条数或insert作业插入的总条数。
+        :type result_count: int
+        :param table_name: 记录其操作的表名称。类型为Import和Export作业才有“table_name”属性。
+        :type table_name: str
+        :param with_column_header: Import类型的作业，记录其导入的数据是否包括列名。
+        :type with_column_header: bool
+        :param detail: SQL查询的相关列信息的Json字符串。
+        :type detail: str
+        :param statement: 作业执行的SQL语句。
+        :type statement: str
+        :param message: 系统提示信息。运行失败时，失败原因。
+        :type message: str
+        """
         
         
 
@@ -113,7 +140,7 @@ class SqlJobRunDetail:
         作业类型。
 
         :param sql_type: The sql_type of this SqlJobRunDetail.
-        :type: str
+        :type sql_type: str
         """
         self._sql_type = sql_type
 
@@ -135,7 +162,7 @@ class SqlJobRunDetail:
         作业开始的时间。时间格式为ISO日期时间格式yyyy-MM-dd'T'HH:mm:ss'Z'
 
         :param start_time: The start_time of this SqlJobRunDetail.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -157,7 +184,7 @@ class SqlJobRunDetail:
         作业运行时长，单位毫秒。
 
         :param duration: The duration of this SqlJobRunDetail.
-        :type: int
+        :type duration: int
         """
         self._duration = duration
 
@@ -179,7 +206,7 @@ class SqlJobRunDetail:
         Insert作业执行过程中扫描的记录条数。
 
         :param input_row_count: The input_row_count of this SqlJobRunDetail.
-        :type: int
+        :type input_row_count: int
         """
         self._input_row_count = input_row_count
 
@@ -201,7 +228,7 @@ class SqlJobRunDetail:
         Insert作业执行过程中扫描到的错误记录数。
 
         :param bad_row_count: The bad_row_count of this SqlJobRunDetail.
-        :type: int
+        :type bad_row_count: int
         """
         self._bad_row_count = bad_row_count
 
@@ -223,7 +250,7 @@ class SqlJobRunDetail:
         作业执行过程中扫描文件的大小。
 
         :param input_size: The input_size of this SqlJobRunDetail.
-        :type: int
+        :type input_size: int
         """
         self._input_size = input_size
 
@@ -245,7 +272,7 @@ class SqlJobRunDetail:
         当前作业返回的结果总条数或insert作业插入的总条数。
 
         :param result_count: The result_count of this SqlJobRunDetail.
-        :type: int
+        :type result_count: int
         """
         self._result_count = result_count
 
@@ -267,7 +294,7 @@ class SqlJobRunDetail:
         记录其操作的表名称。类型为Import和Export作业才有“table_name”属性。
 
         :param table_name: The table_name of this SqlJobRunDetail.
-        :type: str
+        :type table_name: str
         """
         self._table_name = table_name
 
@@ -289,7 +316,7 @@ class SqlJobRunDetail:
         Import类型的作业，记录其导入的数据是否包括列名。
 
         :param with_column_header: The with_column_header of this SqlJobRunDetail.
-        :type: bool
+        :type with_column_header: bool
         """
         self._with_column_header = with_column_header
 
@@ -311,7 +338,7 @@ class SqlJobRunDetail:
         SQL查询的相关列信息的Json字符串。
 
         :param detail: The detail of this SqlJobRunDetail.
-        :type: str
+        :type detail: str
         """
         self._detail = detail
 
@@ -333,7 +360,7 @@ class SqlJobRunDetail:
         作业执行的SQL语句。
 
         :param statement: The statement of this SqlJobRunDetail.
-        :type: str
+        :type statement: str
         """
         self._statement = statement
 
@@ -355,7 +382,7 @@ class SqlJobRunDetail:
         系统提示信息。运行失败时，失败原因。
 
         :param message: The message of this SqlJobRunDetail.
-        :type: str
+        :type message: str
         """
         self._message = message
 

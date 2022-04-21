@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TaskInputData:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class TaskInputData:
     }
 
     def __init__(self, stream_name=None, bucket=None, path=None, url=None, headers=None, certificate_check=None, rtsp_path_in_response=None, device_id=None, stream_type=None, id=None, index=None):
-        """TaskInputData - a model defined in huaweicloud sdk"""
+        """TaskInputData
+
+        The model defined in huaweicloud sdk
+
+        :param stream_name: VIS的视频流名称，当输入为vis类型时必选
+        :type stream_name: str
+        :param bucket: OBS桶名，当输入为obs类型是必选
+        :type bucket: str
+        :param path: OBS的路径，当输入为obs类型时必选
+        :type path: str
+        :param url: url输入源的地址或者获取视频流地址的restful请求地址，当输入为url或者edgerestful类型时必选
+        :type url: str
+        :param headers: 获取视频流的restful请求携带的请求头，当输入为edgerestful类型时可选
+        :type headers: object
+        :param certificate_check: 是否需要对https请求进行证书校验，当输入为edgerestful类型时必选
+        :type certificate_check: bool
+        :param rtsp_path_in_response: restful请求返回的body中，视频流地址的路径，当输入为edgerestful类型时必选
+        :type rtsp_path_in_response: str
+        :param device_id: VCN设备ID，当输入为vcn类型时必选
+        :type device_id: str
+        :param stream_type: 准备进行分析的码流，其中1代表主码流，2代表子码流1,3代表子码流2，当输入为vcn类型时可选
+        :type stream_type: int
+        :param id: IEF挂载的边缘设备的ID，当输入为edgecamera类型时必选
+        :type id: str
+        :param index: 可选，当前输入的序号，从0开始递增，不可重复
+        :type index: int
+        """
         
         
 
@@ -108,7 +133,7 @@ class TaskInputData:
         VIS的视频流名称，当输入为vis类型时必选
 
         :param stream_name: The stream_name of this TaskInputData.
-        :type: str
+        :type stream_name: str
         """
         self._stream_name = stream_name
 
@@ -130,7 +155,7 @@ class TaskInputData:
         OBS桶名，当输入为obs类型是必选
 
         :param bucket: The bucket of this TaskInputData.
-        :type: str
+        :type bucket: str
         """
         self._bucket = bucket
 
@@ -152,7 +177,7 @@ class TaskInputData:
         OBS的路径，当输入为obs类型时必选
 
         :param path: The path of this TaskInputData.
-        :type: str
+        :type path: str
         """
         self._path = path
 
@@ -174,7 +199,7 @@ class TaskInputData:
         url输入源的地址或者获取视频流地址的restful请求地址，当输入为url或者edgerestful类型时必选
 
         :param url: The url of this TaskInputData.
-        :type: str
+        :type url: str
         """
         self._url = url
 
@@ -196,7 +221,7 @@ class TaskInputData:
         获取视频流的restful请求携带的请求头，当输入为edgerestful类型时可选
 
         :param headers: The headers of this TaskInputData.
-        :type: object
+        :type headers: object
         """
         self._headers = headers
 
@@ -218,7 +243,7 @@ class TaskInputData:
         是否需要对https请求进行证书校验，当输入为edgerestful类型时必选
 
         :param certificate_check: The certificate_check of this TaskInputData.
-        :type: bool
+        :type certificate_check: bool
         """
         self._certificate_check = certificate_check
 
@@ -240,7 +265,7 @@ class TaskInputData:
         restful请求返回的body中，视频流地址的路径，当输入为edgerestful类型时必选
 
         :param rtsp_path_in_response: The rtsp_path_in_response of this TaskInputData.
-        :type: str
+        :type rtsp_path_in_response: str
         """
         self._rtsp_path_in_response = rtsp_path_in_response
 
@@ -262,7 +287,7 @@ class TaskInputData:
         VCN设备ID，当输入为vcn类型时必选
 
         :param device_id: The device_id of this TaskInputData.
-        :type: str
+        :type device_id: str
         """
         self._device_id = device_id
 
@@ -284,7 +309,7 @@ class TaskInputData:
         准备进行分析的码流，其中1代表主码流，2代表子码流1,3代表子码流2，当输入为vcn类型时可选
 
         :param stream_type: The stream_type of this TaskInputData.
-        :type: int
+        :type stream_type: int
         """
         self._stream_type = stream_type
 
@@ -306,7 +331,7 @@ class TaskInputData:
         IEF挂载的边缘设备的ID，当输入为edgecamera类型时必选
 
         :param id: The id of this TaskInputData.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -328,7 +353,7 @@ class TaskInputData:
         可选，当前输入的序号，从0开始递增，不可重复
 
         :param index: The index of this TaskInputData.
-        :type: int
+        :type index: int
         """
         self._index = index
 

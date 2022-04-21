@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NodeExecution:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class NodeExecution:
     }
 
     def __init__(self, status=None, input=None, output=None, begin_time=None, end_time=None, error_message=None):
-        """NodeExecution - a model defined in huaweicloud sdk"""
+        """NodeExecution
+
+        The model defined in huaweicloud sdk
+
+        :param status: 流程节点执行状态
+        :type status: str
+        :param input: 函数执行时的入参
+        :type input: object
+        :param output: 函数执行结果
+        :type output: object
+        :param begin_time: 节点启动时间，UTC毫秒时间戳格式
+        :type begin_time: int
+        :param end_time: 节点结束时间，UTC毫秒时间戳格式
+        :type end_time: int
+        :param error_message: 节点错误信息，仅在节点出错时非空
+        :type error_message: object
+        """
         
         
 
@@ -83,7 +98,7 @@ class NodeExecution:
         流程节点执行状态
 
         :param status: The status of this NodeExecution.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -105,7 +120,7 @@ class NodeExecution:
         函数执行时的入参
 
         :param input: The input of this NodeExecution.
-        :type: object
+        :type input: object
         """
         self._input = input
 
@@ -127,7 +142,7 @@ class NodeExecution:
         函数执行结果
 
         :param output: The output of this NodeExecution.
-        :type: object
+        :type output: object
         """
         self._output = output
 
@@ -149,7 +164,7 @@ class NodeExecution:
         节点启动时间，UTC毫秒时间戳格式
 
         :param begin_time: The begin_time of this NodeExecution.
-        :type: int
+        :type begin_time: int
         """
         self._begin_time = begin_time
 
@@ -171,7 +186,7 @@ class NodeExecution:
         节点结束时间，UTC毫秒时间戳格式
 
         :param end_time: The end_time of this NodeExecution.
-        :type: int
+        :type end_time: int
         """
         self._end_time = end_time
 
@@ -193,7 +208,7 @@ class NodeExecution:
         节点错误信息，仅在节点出错时非空
 
         :param error_message: The error_message of this NodeExecution.
-        :type: object
+        :type error_message: object
         """
         self._error_message = error_message
 

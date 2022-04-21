@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MemberInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class MemberInfo:
     }
 
     def __init__(self, host=None, weight=None, is_backup=None, member_group_name=None, status=None, port=None, ecs_id=None, ecs_name=None):
-        """MemberInfo - a model defined in huaweicloud sdk"""
+        """MemberInfo
+
+        The model defined in huaweicloud sdk
+
+        :param host: 后端服务器地址  后端实例类型为ip时必填
+        :type host: str
+        :param weight: 权重值。  允许您对后端服务进行评级，权重值越大，转发到该云服务的请求数量越多。
+        :type weight: int
+        :param is_backup: 是否备用节点。  开启后对应后端服务为备用节点，仅当非备用节点全部故障时工作。  实例需要升级到对应版本才支持此功能，若不支持请联系技术支持。
+        :type is_backup: bool
+        :param member_group_name: 后端服务器组名称。为后端服务地址选择服务器组，便于统一修改对应服务器组的后端地址。
+        :type member_group_name: str
+        :param status: 后端服务器状态   - 1：可用   - 2：不可用
+        :type status: int
+        :param port: 后端服务器端口
+        :type port: int
+        :param ecs_id: [后端云服务器的编号。](tag:hws;hws_hk;hcs;fcs;g42;)  [后端实例类型为ecs时必填，支持英文，数字，“-”,“_”，1 ~ 64字符。](tag:hws;hws_hk;hcs;fcs;g42;) [不支持后端云服务器类型](tag:Site)
+        :type ecs_id: str
+        :param ecs_name: [后端云服务器的名称。]  [后端实例类型为ecs时必填，支持汉字，英文，数字，“-”,“_”,“.”，1 ~ 64字符。](tag:hws;hws_hk;hcs;fcs;g42;) [不支持后端云服务器类型](tag:Site)
+        :type ecs_name: str
+        """
         
         
 
@@ -93,7 +112,7 @@ class MemberInfo:
         后端服务器地址  后端实例类型为ip时必填
 
         :param host: The host of this MemberInfo.
-        :type: str
+        :type host: str
         """
         self._host = host
 
@@ -115,7 +134,7 @@ class MemberInfo:
         权重值。  允许您对后端服务进行评级，权重值越大，转发到该云服务的请求数量越多。
 
         :param weight: The weight of this MemberInfo.
-        :type: int
+        :type weight: int
         """
         self._weight = weight
 
@@ -137,7 +156,7 @@ class MemberInfo:
         是否备用节点。  开启后对应后端服务为备用节点，仅当非备用节点全部故障时工作。  实例需要升级到对应版本才支持此功能，若不支持请联系技术支持。
 
         :param is_backup: The is_backup of this MemberInfo.
-        :type: bool
+        :type is_backup: bool
         """
         self._is_backup = is_backup
 
@@ -159,7 +178,7 @@ class MemberInfo:
         后端服务器组名称。为后端服务地址选择服务器组，便于统一修改对应服务器组的后端地址。
 
         :param member_group_name: The member_group_name of this MemberInfo.
-        :type: str
+        :type member_group_name: str
         """
         self._member_group_name = member_group_name
 
@@ -181,7 +200,7 @@ class MemberInfo:
         后端服务器状态   - 1：可用   - 2：不可用
 
         :param status: The status of this MemberInfo.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -203,7 +222,7 @@ class MemberInfo:
         后端服务器端口
 
         :param port: The port of this MemberInfo.
-        :type: int
+        :type port: int
         """
         self._port = port
 
@@ -225,7 +244,7 @@ class MemberInfo:
         [后端云服务器的编号。](tag:hws;hws_hk;hcs;fcs;g42;)  [后端实例类型为ecs时必填，支持英文，数字，“-”,“_”，1 ~ 64字符。](tag:hws;hws_hk;hcs;fcs;g42;) [不支持后端云服务器类型](tag:Site)
 
         :param ecs_id: The ecs_id of this MemberInfo.
-        :type: str
+        :type ecs_id: str
         """
         self._ecs_id = ecs_id
 
@@ -247,7 +266,7 @@ class MemberInfo:
         [后端云服务器的名称。]  [后端实例类型为ecs时必填，支持汉字，英文，数字，“-”,“_”,“.”，1 ~ 64字符。](tag:hws;hws_hk;hcs;fcs;g42;) [不支持后端云服务器类型](tag:Site)
 
         :param ecs_name: The ecs_name of this MemberInfo.
-        :type: str
+        :type ecs_name: str
         """
         self._ecs_name = ecs_name
 

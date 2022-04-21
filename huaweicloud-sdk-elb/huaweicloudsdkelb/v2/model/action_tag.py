@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ActionTag:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ActionTag:
     }
 
     def __init__(self, key=None, values=None):
-        """ActionTag - a model defined in huaweicloud sdk"""
+        """ActionTag
+
+        The model defined in huaweicloud sdk
+
+        :param key: 标签的键。最大长度127个unicode字符。
+        :type key: str
+        :param values: 标签的值列表。每个值最大长度255个unicode字符， value之间为或的关系。
+        :type values: list[str]
+        """
         
         
 
@@ -62,7 +69,7 @@ class ActionTag:
         标签的键。最大长度127个unicode字符。
 
         :param key: The key of this ActionTag.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -84,7 +91,7 @@ class ActionTag:
         标签的值列表。每个值最大长度255个unicode字符， value之间为或的关系。
 
         :param values: The values of this ActionTag.
-        :type: list[str]
+        :type values: list[str]
         """
         self._values = values
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDatasetResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowDatasetResponse(SdkResponse):
     }
 
     def __init__(self, count=None, run_id=None, job_type=None, sql_job=None):
-        """ShowDatasetResponse - a model defined in huaweicloud sdk"""
+        """ShowDatasetResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 作业结果总个数。
+        :type count: int
+        :param run_id: 作业运行ID。
+        :type run_id: str
+        :param job_type: 作业类型。
+        :type job_type: str
+        :param sql_job: 
+        :type sql_job: :class:`huaweicloudsdkiotanalytics.v1.SqlJobQueryDataset`
+        """
         
         super(ShowDatasetResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class ShowDatasetResponse(SdkResponse):
         作业结果总个数。
 
         :param count: The count of this ShowDatasetResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -95,7 +106,7 @@ class ShowDatasetResponse(SdkResponse):
         作业运行ID。
 
         :param run_id: The run_id of this ShowDatasetResponse.
-        :type: str
+        :type run_id: str
         """
         self._run_id = run_id
 
@@ -117,7 +128,7 @@ class ShowDatasetResponse(SdkResponse):
         作业类型。
 
         :param job_type: The job_type of this ShowDatasetResponse.
-        :type: str
+        :type job_type: str
         """
         self._job_type = job_type
 
@@ -127,7 +138,7 @@ class ShowDatasetResponse(SdkResponse):
 
 
         :return: The sql_job of this ShowDatasetResponse.
-        :rtype: SqlJobQueryDataset
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.SqlJobQueryDataset`
         """
         return self._sql_job
 
@@ -137,7 +148,7 @@ class ShowDatasetResponse(SdkResponse):
 
 
         :param sql_job: The sql_job of this ShowDatasetResponse.
-        :type: SqlJobQueryDataset
+        :type sql_job: :class:`huaweicloudsdkiotanalytics.v1.SqlJobQueryDataset`
         """
         self._sql_job = sql_job
 

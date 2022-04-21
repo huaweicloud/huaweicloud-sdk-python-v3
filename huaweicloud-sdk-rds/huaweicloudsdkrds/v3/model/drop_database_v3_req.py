@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DropDatabaseV3Req:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DropDatabaseV3Req:
     }
 
     def __init__(self, is_force_delete=None):
-        """DropDatabaseV3Req - a model defined in huaweicloud sdk"""
+        """DropDatabaseV3Req
+
+        The model defined in huaweicloud sdk
+
+        :param is_force_delete: 是否强制删除数据库，默认是false。
+        :type is_force_delete: bool
+        """
         
         
 
@@ -58,7 +63,7 @@ class DropDatabaseV3Req:
         是否强制删除数据库，默认是false。
 
         :param is_force_delete: The is_force_delete of this DropDatabaseV3Req.
-        :type: bool
+        :type is_force_delete: bool
         """
         self._is_force_delete = is_force_delete
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneListProjectsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class KeystoneListProjectsRequest:
     }
 
     def __init__(self, domain_id=None, name=None, parent_id=None, enabled=None, is_domain=None, page=None, per_page=None):
-        """KeystoneListProjectsRequest - a model defined in huaweicloud sdk"""
+        """KeystoneListProjectsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param domain_id: 项目所属账号ID，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
+        :type domain_id: str
+        :param name: 项目名称，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
+        :type name: str
+        :param parent_id: 如果查询自己创建的项目，则此处应填为所属区域的项目ID。  如果查询的是系统内置项目，如cn-north-4，则此处应填为账号ID。  获取项目ID和账号ID，请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
+        :type parent_id: str
+        :param enabled: 项目是否启用。
+        :type enabled: bool
+        :param is_domain: 该字段无需填写。
+        :type is_domain: bool
+        :param page: 分页查询时数据的页数，查询值最小为1。需要与per_page同时存在。
+        :type page: int
+        :param per_page: 分页查询时每页的数据个数，取值范围为[1,5000]。需要与page同时存在。
+        :type per_page: int
+        """
         
         
 
@@ -88,7 +105,7 @@ class KeystoneListProjectsRequest:
         项目所属账号ID，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param domain_id: The domain_id of this KeystoneListProjectsRequest.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -110,7 +127,7 @@ class KeystoneListProjectsRequest:
         项目名称，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param name: The name of this KeystoneListProjectsRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -132,7 +149,7 @@ class KeystoneListProjectsRequest:
         如果查询自己创建的项目，则此处应填为所属区域的项目ID。  如果查询的是系统内置项目，如cn-north-4，则此处应填为账号ID。  获取项目ID和账号ID，请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param parent_id: The parent_id of this KeystoneListProjectsRequest.
-        :type: str
+        :type parent_id: str
         """
         self._parent_id = parent_id
 
@@ -154,7 +171,7 @@ class KeystoneListProjectsRequest:
         项目是否启用。
 
         :param enabled: The enabled of this KeystoneListProjectsRequest.
-        :type: bool
+        :type enabled: bool
         """
         self._enabled = enabled
 
@@ -176,7 +193,7 @@ class KeystoneListProjectsRequest:
         该字段无需填写。
 
         :param is_domain: The is_domain of this KeystoneListProjectsRequest.
-        :type: bool
+        :type is_domain: bool
         """
         self._is_domain = is_domain
 
@@ -198,7 +215,7 @@ class KeystoneListProjectsRequest:
         分页查询时数据的页数，查询值最小为1。需要与per_page同时存在。
 
         :param page: The page of this KeystoneListProjectsRequest.
-        :type: int
+        :type page: int
         """
         self._page = page
 
@@ -220,7 +237,7 @@ class KeystoneListProjectsRequest:
         分页查询时每页的数据个数，取值范围为[1,5000]。需要与page同时存在。
 
         :param per_page: The per_page of this KeystoneListProjectsRequest.
-        :type: int
+        :type per_page: int
         """
         self._per_page = per_page
 

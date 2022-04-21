@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RegisterDmsKafkaInstanceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RegisterDmsKafkaInstanceResponse(SdkResponse):
     }
 
     def __init__(self, instance_id=None):
-        """RegisterDmsKafkaInstanceResponse - a model defined in huaweicloud sdk"""
+        """RegisterDmsKafkaInstanceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: kafka ID
+        :type instance_id: str
+        """
         
         super(RegisterDmsKafkaInstanceResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class RegisterDmsKafkaInstanceResponse(SdkResponse):
         kafka ID
 
         :param instance_id: The instance_id of this RegisterDmsKafkaInstanceResponse.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 

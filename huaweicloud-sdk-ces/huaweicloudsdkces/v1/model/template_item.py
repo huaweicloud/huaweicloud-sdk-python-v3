@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TemplateItem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class TemplateItem:
     }
 
     def __init__(self, metric_name=None, condition=None, alarm_level=None):
-        """TemplateItem - a model defined in huaweicloud sdk"""
+        """TemplateItem
+
+        The model defined in huaweicloud sdk
+
+        :param metric_name: 告警模板添加的监控指标，如弹性云服务器可添加的监控指标为cpu_util等；各服务的指标名称可查看：“[服务指标名称](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
+        :type metric_name: str
+        :param condition: 
+        :type condition: :class:`huaweicloudsdkces.v1.AlarmTemplateCondition`
+        :param alarm_level: 设置告警级别，值为1,2,3,4；1为紧急，2为重要，3为次要，4为提示。
+        :type alarm_level: int
+        """
         
         
 
@@ -66,7 +75,7 @@ class TemplateItem:
         告警模板添加的监控指标，如弹性云服务器可添加的监控指标为cpu_util等；各服务的指标名称可查看：“[服务指标名称](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
         :param metric_name: The metric_name of this TemplateItem.
-        :type: str
+        :type metric_name: str
         """
         self._metric_name = metric_name
 
@@ -76,7 +85,7 @@ class TemplateItem:
 
 
         :return: The condition of this TemplateItem.
-        :rtype: AlarmTemplateCondition
+        :rtype: :class:`huaweicloudsdkces.v1.AlarmTemplateCondition`
         """
         return self._condition
 
@@ -86,7 +95,7 @@ class TemplateItem:
 
 
         :param condition: The condition of this TemplateItem.
-        :type: AlarmTemplateCondition
+        :type condition: :class:`huaweicloudsdkces.v1.AlarmTemplateCondition`
         """
         self._condition = condition
 
@@ -108,7 +117,7 @@ class TemplateItem:
         设置告警级别，值为1,2,3,4；1为紧急，2为重要，3为次要，4为提示。
 
         :param alarm_level: The alarm_level of this TemplateItem.
-        :type: int
+        :type alarm_level: int
         """
         self._alarm_level = alarm_level
 

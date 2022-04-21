@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RecognizeTollInvoiceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RecognizeTollInvoiceRequest:
     }
 
     def __init__(self, body=None):
-        """RecognizeTollInvoiceRequest - a model defined in huaweicloud sdk"""
+        """RecognizeTollInvoiceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the RecognizeTollInvoiceRequest
+        :type body: :class:`huaweicloudsdkocr.v1.TollInvoiceRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class RecognizeTollInvoiceRequest:
 
 
         :return: The body of this RecognizeTollInvoiceRequest.
-        :rtype: TollInvoiceRequestBody
+        :rtype: :class:`huaweicloudsdkocr.v1.TollInvoiceRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class RecognizeTollInvoiceRequest:
 
 
         :param body: The body of this RecognizeTollInvoiceRequest.
-        :type: TollInvoiceRequestBody
+        :type body: :class:`huaweicloudsdkocr.v1.TollInvoiceRequestBody`
         """
         self._body = body
 

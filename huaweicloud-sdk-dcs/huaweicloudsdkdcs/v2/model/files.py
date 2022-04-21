@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Files:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class Files:
     }
 
     def __init__(self, file_name=None, size=None, update_at=None):
-        """Files - a model defined in huaweicloud sdk"""
+        """Files
+
+        The model defined in huaweicloud sdk
+
+        :param file_name: 备份文件名。
+        :type file_name: str
+        :param size: 文件大小（单位：Byte）。
+        :type size: str
+        :param update_at: 文件最后修改时间（格式YYYY-MM-DD HH:MM:SS）。
+        :type update_at: str
+        """
         
         
 
@@ -67,7 +76,7 @@ class Files:
         备份文件名。
 
         :param file_name: The file_name of this Files.
-        :type: str
+        :type file_name: str
         """
         self._file_name = file_name
 
@@ -89,7 +98,7 @@ class Files:
         文件大小（单位：Byte）。
 
         :param size: The size of this Files.
-        :type: str
+        :type size: str
         """
         self._size = size
 
@@ -111,7 +120,7 @@ class Files:
         文件最后修改时间（格式YYYY-MM-DD HH:MM:SS）。
 
         :param update_at: The update_at of this Files.
-        :type: str
+        :type update_at: str
         """
         self._update_at = update_at
 

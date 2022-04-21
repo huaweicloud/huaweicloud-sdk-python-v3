@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateApplicationResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateApplicationResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, application_urn=None, application_id=None):
-        """CreateApplicationResponse - a model defined in huaweicloud sdk"""
+        """CreateApplicationResponse
+
+        The model defined in huaweicloud sdk
+
+        :param request_id: 请求的唯一标识ID。
+        :type request_id: str
+        :param application_urn: Application的唯一资源标识。
+        :type application_urn: str
+        :param application_id: Application资源的ID。
+        :type application_id: str
+        """
         
         super(CreateApplicationResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class CreateApplicationResponse(SdkResponse):
         请求的唯一标识ID。
 
         :param request_id: The request_id of this CreateApplicationResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 
@@ -90,7 +99,7 @@ class CreateApplicationResponse(SdkResponse):
         Application的唯一资源标识。
 
         :param application_urn: The application_urn of this CreateApplicationResponse.
-        :type: str
+        :type application_urn: str
         """
         self._application_urn = application_urn
 
@@ -112,7 +121,7 @@ class CreateApplicationResponse(SdkResponse):
         Application资源的ID。
 
         :param application_id: The application_id of this CreateApplicationResponse.
-        :type: str
+        :type application_id: str
         """
         self._application_id = application_id
 

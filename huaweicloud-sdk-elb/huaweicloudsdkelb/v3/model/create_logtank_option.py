@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateLogtankOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateLogtankOption:
     }
 
     def __init__(self, loadbalancer_id=None, log_group_id=None, log_topic_id=None):
-        """CreateLogtankOption - a model defined in huaweicloud sdk"""
+        """CreateLogtankOption
+
+        The model defined in huaweicloud sdk
+
+        :param loadbalancer_id: 负载均衡器id
+        :type loadbalancer_id: str
+        :param log_group_id: 日志组别id，其他（非ELB）服务提供
+        :type log_group_id: str
+        :param log_topic_id: 日志订阅主题id，其他（非ELB）服务提供
+        :type log_topic_id: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class CreateLogtankOption:
         负载均衡器id
 
         :param loadbalancer_id: The loadbalancer_id of this CreateLogtankOption.
-        :type: str
+        :type loadbalancer_id: str
         """
         self._loadbalancer_id = loadbalancer_id
 
@@ -87,7 +96,7 @@ class CreateLogtankOption:
         日志组别id，其他（非ELB）服务提供
 
         :param log_group_id: The log_group_id of this CreateLogtankOption.
-        :type: str
+        :type log_group_id: str
         """
         self._log_group_id = log_group_id
 
@@ -109,7 +118,7 @@ class CreateLogtankOption:
         日志订阅主题id，其他（非ELB）服务提供
 
         :param log_topic_id: The log_topic_id of this CreateLogtankOption.
-        :type: str
+        :type log_topic_id: str
         """
         self._log_topic_id = log_topic_id
 

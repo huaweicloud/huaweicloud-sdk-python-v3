@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PostShortAudioAssessmentReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class PostShortAudioAssessmentReq:
     }
 
     def __init__(self, config=None, audio_data=None, ref_text=None):
-        """PostShortAudioAssessmentReq - a model defined in huaweicloud sdk"""
+        """PostShortAudioAssessmentReq
+
+        The model defined in huaweicloud sdk
+
+        :param config: 
+        :type config: :class:`huaweicloudsdksis.v1.AudioConfig`
+        :param audio_data: 语音数据，Base64编码，要求Base64编码后大小不超过1M。  注意评测接口使用次数定义为：每8秒的音频作为一次，不足8秒按一次计算。例如传入4秒或8秒的音频，都算作使用一次，传入9秒的音频则视为调用2次。
+        :type audio_data: str
+        :param ref_text: 评测文本
+        :type ref_text: str
+        """
         
         
 
@@ -53,7 +62,7 @@ class PostShortAudioAssessmentReq:
 
 
         :return: The config of this PostShortAudioAssessmentReq.
-        :rtype: AudioConfig
+        :rtype: :class:`huaweicloudsdksis.v1.AudioConfig`
         """
         return self._config
 
@@ -63,7 +72,7 @@ class PostShortAudioAssessmentReq:
 
 
         :param config: The config of this PostShortAudioAssessmentReq.
-        :type: AudioConfig
+        :type config: :class:`huaweicloudsdksis.v1.AudioConfig`
         """
         self._config = config
 
@@ -85,7 +94,7 @@ class PostShortAudioAssessmentReq:
         语音数据，Base64编码，要求Base64编码后大小不超过1M。  注意评测接口使用次数定义为：每8秒的音频作为一次，不足8秒按一次计算。例如传入4秒或8秒的音频，都算作使用一次，传入9秒的音频则视为调用2次。
 
         :param audio_data: The audio_data of this PostShortAudioAssessmentReq.
-        :type: str
+        :type audio_data: str
         """
         self._audio_data = audio_data
 
@@ -107,7 +116,7 @@ class PostShortAudioAssessmentReq:
         评测文本
 
         :param ref_text: The ref_text of this PostShortAudioAssessmentReq.
-        :type: str
+        :type ref_text: str
         """
         self._ref_text = ref_text
 

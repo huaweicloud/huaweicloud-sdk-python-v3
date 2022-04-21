@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListOsVersionsResponseBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListOsVersionsResponseBody:
     }
 
     def __init__(self, platform=None, version_list=None):
-        """ListOsVersionsResponseBody - a model defined in huaweicloud sdk"""
+        """ListOsVersionsResponseBody
+
+        The model defined in huaweicloud sdk
+
+        :param platform: 操作系统的平台值，如RedHat等
+        :type platform: str
+        :param version_list: 操作系统的详情值
+        :type version_list: list[:class:`huaweicloudsdkims.v2.OsVersionInfo`]
+        """
         
         
 
@@ -61,7 +68,7 @@ class ListOsVersionsResponseBody:
         操作系统的平台值，如RedHat等
 
         :param platform: The platform of this ListOsVersionsResponseBody.
-        :type: str
+        :type platform: str
         """
         self._platform = platform
 
@@ -72,7 +79,7 @@ class ListOsVersionsResponseBody:
         操作系统的详情值
 
         :return: The version_list of this ListOsVersionsResponseBody.
-        :rtype: list[OsVersionInfo]
+        :rtype: list[:class:`huaweicloudsdkims.v2.OsVersionInfo`]
         """
         return self._version_list
 
@@ -83,7 +90,7 @@ class ListOsVersionsResponseBody:
         操作系统的详情值
 
         :param version_list: The version_list of this ListOsVersionsResponseBody.
-        :type: list[OsVersionInfo]
+        :type version_list: list[:class:`huaweicloudsdkims.v2.OsVersionInfo`]
         """
         self._version_list = version_list
 

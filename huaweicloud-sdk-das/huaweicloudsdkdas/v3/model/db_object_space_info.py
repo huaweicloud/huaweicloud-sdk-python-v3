@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DbObjectSpaceInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class DbObjectSpaceInfo:
     }
 
     def __init__(self, object_type=None, object_name=None, object_id=None, used_size=None, data_size=None, index_size=None, estimated_rows=None):
-        """DbObjectSpaceInfo - a model defined in huaweicloud sdk"""
+        """DbObjectSpaceInfo
+
+        The model defined in huaweicloud sdk
+
+        :param object_type: 对象类型，如果是table，同时需要传database_id
+        :type object_type: str
+        :param object_name: 对象名称
+        :type object_name: str
+        :param object_id: 对象ID
+        :type object_id: str
+        :param used_size: 已使用空间，以字节为单位
+        :type used_size: int
+        :param data_size: 数据空间，以字节为单位
+        :type data_size: int
+        :param index_size: 索引空间，以字节为单位
+        :type index_size: int
+        :param estimated_rows: 估算值行数，以字节为单位
+        :type estimated_rows: int
+        """
         
         
 
@@ -86,7 +103,7 @@ class DbObjectSpaceInfo:
         对象类型，如果是table，同时需要传database_id
 
         :param object_type: The object_type of this DbObjectSpaceInfo.
-        :type: str
+        :type object_type: str
         """
         self._object_type = object_type
 
@@ -108,7 +125,7 @@ class DbObjectSpaceInfo:
         对象名称
 
         :param object_name: The object_name of this DbObjectSpaceInfo.
-        :type: str
+        :type object_name: str
         """
         self._object_name = object_name
 
@@ -130,7 +147,7 @@ class DbObjectSpaceInfo:
         对象ID
 
         :param object_id: The object_id of this DbObjectSpaceInfo.
-        :type: str
+        :type object_id: str
         """
         self._object_id = object_id
 
@@ -152,7 +169,7 @@ class DbObjectSpaceInfo:
         已使用空间，以字节为单位
 
         :param used_size: The used_size of this DbObjectSpaceInfo.
-        :type: int
+        :type used_size: int
         """
         self._used_size = used_size
 
@@ -174,7 +191,7 @@ class DbObjectSpaceInfo:
         数据空间，以字节为单位
 
         :param data_size: The data_size of this DbObjectSpaceInfo.
-        :type: int
+        :type data_size: int
         """
         self._data_size = data_size
 
@@ -196,7 +213,7 @@ class DbObjectSpaceInfo:
         索引空间，以字节为单位
 
         :param index_size: The index_size of this DbObjectSpaceInfo.
-        :type: int
+        :type index_size: int
         """
         self._index_size = index_size
 
@@ -218,7 +235,7 @@ class DbObjectSpaceInfo:
         估算值行数，以字节为单位
 
         :param estimated_rows: The estimated_rows of this DbObjectSpaceInfo.
-        :type: int
+        :type estimated_rows: int
         """
         self._estimated_rows = estimated_rows
 

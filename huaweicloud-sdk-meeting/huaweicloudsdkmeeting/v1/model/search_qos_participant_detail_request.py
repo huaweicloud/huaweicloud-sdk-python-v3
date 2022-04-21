@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SearchQosParticipantDetailRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class SearchQosParticipantDetailRequest:
     }
 
     def __init__(self, conf_uuid=None, conf_type=None, participant_id=None, qos_type=None):
-        """SearchQosParticipantDetailRequest - a model defined in huaweicloud sdk"""
+        """SearchQosParticipantDetailRequest
+
+        The model defined in huaweicloud sdk
+
+        :param conf_uuid: 会议UUID。最大不超过64个字节。
+        :type conf_uuid: str
+        :param conf_type: 会议类别。 * online：在线会议，在召开的会议。 * history：历史会议，已召开的会议。
+        :type conf_type: str
+        :param participant_id: 与会者ID。最大不超过64个字节。
+        :type participant_id: str
+        :param qos_type: Qos类型。 - audio：音频。 - video：视频。 - screen：屏幕共享。 - cpu：cpu。
+        :type qos_type: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class SearchQosParticipantDetailRequest:
         会议UUID。最大不超过64个字节。
 
         :param conf_uuid: The conf_uuid of this SearchQosParticipantDetailRequest.
-        :type: str
+        :type conf_uuid: str
         """
         self._conf_uuid = conf_uuid
 
@@ -91,7 +102,7 @@ class SearchQosParticipantDetailRequest:
         会议类别。 * online：在线会议，在召开的会议。 * history：历史会议，已召开的会议。
 
         :param conf_type: The conf_type of this SearchQosParticipantDetailRequest.
-        :type: str
+        :type conf_type: str
         """
         self._conf_type = conf_type
 
@@ -113,7 +124,7 @@ class SearchQosParticipantDetailRequest:
         与会者ID。最大不超过64个字节。
 
         :param participant_id: The participant_id of this SearchQosParticipantDetailRequest.
-        :type: str
+        :type participant_id: str
         """
         self._participant_id = participant_id
 
@@ -135,7 +146,7 @@ class SearchQosParticipantDetailRequest:
         Qos类型。 - audio：音频。 - video：视频。 - screen：屏幕共享。 - cpu：cpu。
 
         :param qos_type: The qos_type of this SearchQosParticipantDetailRequest.
-        :type: str
+        :type qos_type: str
         """
         self._qos_type = qos_type
 

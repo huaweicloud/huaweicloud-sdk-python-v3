@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateAlarmRuleStatusResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateAlarmRuleStatusResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """UpdateAlarmRuleStatusResponse - a model defined in huaweicloud sdk"""
+        """UpdateAlarmRuleStatusResponse
+
+        The model defined in huaweicloud sdk
+
+        :param body: 
+        :type body: str
+        """
         
         super(UpdateAlarmRuleStatusResponse, self).__init__()
 
@@ -56,7 +61,7 @@ class UpdateAlarmRuleStatusResponse(SdkResponse):
 
 
         :param body: The body of this UpdateAlarmRuleStatusResponse.
-        :type: str
+        :type body: str
         """
         self._body = body
 

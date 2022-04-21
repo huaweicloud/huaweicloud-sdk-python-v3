@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestParticipantViewReqBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RestParticipantViewReqBody:
     }
 
     def __init__(self, view_type=None, participant_id=None):
-        """RestParticipantViewReqBody - a model defined in huaweicloud sdk"""
+        """RestParticipantViewReqBody
+
+        The model defined in huaweicloud sdk
+
+        :param view_type: 选看类型。 - 2: 选看会场。
+        :type view_type: int
+        :param participant_id: 被选看的与会者标识。
+        :type participant_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class RestParticipantViewReqBody:
         选看类型。 - 2: 选看会场。
 
         :param view_type: The view_type of this RestParticipantViewReqBody.
-        :type: int
+        :type view_type: int
         """
         self._view_type = view_type
 
@@ -83,7 +90,7 @@ class RestParticipantViewReqBody:
         被选看的与会者标识。
 
         :param participant_id: The participant_id of this RestParticipantViewReqBody.
-        :type: str
+        :type participant_id: str
         """
         self._participant_id = participant_id
 

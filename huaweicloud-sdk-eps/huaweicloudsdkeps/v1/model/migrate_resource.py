@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MigrateResource:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class MigrateResource:
     }
 
     def __init__(self, project_id=None, resource_id=None, resource_type=None, associated=None):
-        """MigrateResource - a model defined in huaweicloud sdk"""
+        """MigrateResource
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: 项目ID。resource_type为region级别服务时为必选项。
+        :type project_id: str
+        :param resource_id: 资源ID
+        :type resource_id: str
+        :param resource_type: 资源类型
+        :type resource_type: str
+        :param associated: 是否关联迁移。目前仅支持ECS关联资源EVS、EIP迁移。
+        :type associated: bool
+        """
         
         
 
@@ -71,7 +82,7 @@ class MigrateResource:
         项目ID。resource_type为region级别服务时为必选项。
 
         :param project_id: The project_id of this MigrateResource.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -93,7 +104,7 @@ class MigrateResource:
         资源ID
 
         :param resource_id: The resource_id of this MigrateResource.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -115,7 +126,7 @@ class MigrateResource:
         资源类型
 
         :param resource_type: The resource_type of this MigrateResource.
-        :type: str
+        :type resource_type: str
         """
         self._resource_type = resource_type
 
@@ -137,7 +148,7 @@ class MigrateResource:
         是否关联迁移。目前仅支持ECS关联资源EVS、EIP迁移。
 
         :param associated: The associated of this MigrateResource.
-        :type: bool
+        :type associated: bool
         """
         self._associated = associated
 

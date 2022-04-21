@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListContainerNodesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListContainerNodesResponse(SdkResponse):
     }
 
     def __init__(self, total_num=None, data_list=None):
-        """ListContainerNodesResponse - a model defined in huaweicloud sdk"""
+        """ListContainerNodesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total_num: 容器节点总数
+        :type total_num: int
+        :param data_list: 容器节点列表
+        :type data_list: list[:class:`huaweicloudsdkcgs.v5.ContainerNodeInfo`]
+        """
         
         super(ListContainerNodesResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListContainerNodesResponse(SdkResponse):
         容器节点总数
 
         :param total_num: The total_num of this ListContainerNodesResponse.
-        :type: int
+        :type total_num: int
         """
         self._total_num = total_num
 
@@ -74,7 +81,7 @@ class ListContainerNodesResponse(SdkResponse):
         容器节点列表
 
         :return: The data_list of this ListContainerNodesResponse.
-        :rtype: list[ContainerNodeInfo]
+        :rtype: list[:class:`huaweicloudsdkcgs.v5.ContainerNodeInfo`]
         """
         return self._data_list
 
@@ -85,7 +92,7 @@ class ListContainerNodesResponse(SdkResponse):
         容器节点列表
 
         :param data_list: The data_list of this ListContainerNodesResponse.
-        :type: list[ContainerNodeInfo]
+        :type data_list: list[:class:`huaweicloudsdkcgs.v5.ContainerNodeInfo`]
         """
         self._data_list = data_list
 

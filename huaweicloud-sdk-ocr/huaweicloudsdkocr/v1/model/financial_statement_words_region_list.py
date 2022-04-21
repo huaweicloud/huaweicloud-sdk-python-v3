@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FinancialStatementWordsRegionList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class FinancialStatementWordsRegionList:
     }
 
     def __init__(self, type=None, words_block_count=None, table_location=None, words_block_list=None):
-        """FinancialStatementWordsRegionList - a model defined in huaweicloud sdk"""
+        """FinancialStatementWordsRegionList
+
+        The model defined in huaweicloud sdk
+
+        :param type: 区域属性：文本或表格。 
+        :type type: str
+        :param words_block_count: 区域内文字块数目。对文本区，文字块以文本字段为单位；对表格区，文字块以单元格内所有字段为单位。 
+        :type words_block_count: float
+        :param table_location: 表格位置信息，列表形式，分别表示表格4个顶点的x, y坐标;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
+        :type table_location: list[list[int]]
+        :param words_block_list: 区域内文字块列表，输出顺序从左到右，从上到下。 
+        :type words_block_list: list[:class:`huaweicloudsdkocr.v1.FinancialStatementWordsBlockList`]
+        """
         
         
 
@@ -73,7 +84,7 @@ class FinancialStatementWordsRegionList:
         区域属性：文本或表格。 
 
         :param type: The type of this FinancialStatementWordsRegionList.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -95,7 +106,7 @@ class FinancialStatementWordsRegionList:
         区域内文字块数目。对文本区，文字块以文本字段为单位；对表格区，文字块以单元格内所有字段为单位。 
 
         :param words_block_count: The words_block_count of this FinancialStatementWordsRegionList.
-        :type: float
+        :type words_block_count: float
         """
         self._words_block_count = words_block_count
 
@@ -117,7 +128,7 @@ class FinancialStatementWordsRegionList:
         表格位置信息，列表形式，分别表示表格4个顶点的x, y坐标;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
         :param table_location: The table_location of this FinancialStatementWordsRegionList.
-        :type: list[list[int]]
+        :type table_location: list[list[int]]
         """
         self._table_location = table_location
 
@@ -128,7 +139,7 @@ class FinancialStatementWordsRegionList:
         区域内文字块列表，输出顺序从左到右，从上到下。 
 
         :return: The words_block_list of this FinancialStatementWordsRegionList.
-        :rtype: list[FinancialStatementWordsBlockList]
+        :rtype: list[:class:`huaweicloudsdkocr.v1.FinancialStatementWordsBlockList`]
         """
         return self._words_block_list
 
@@ -139,7 +150,7 @@ class FinancialStatementWordsRegionList:
         区域内文字块列表，输出顺序从左到右，从上到下。 
 
         :param words_block_list: The words_block_list of this FinancialStatementWordsRegionList.
-        :type: list[FinancialStatementWordsBlockList]
+        :type words_block_list: list[:class:`huaweicloudsdkocr.v1.FinancialStatementWordsBlockList`]
         """
         self._words_block_list = words_block_list
 

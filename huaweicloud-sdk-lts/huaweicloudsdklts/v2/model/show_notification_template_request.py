@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowNotificationTemplateRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowNotificationTemplateRequest:
     }
 
     def __init__(self, domain_id=None, template_name=None):
-        """ShowNotificationTemplateRequest - a model defined in huaweicloud sdk"""
+        """ShowNotificationTemplateRequest
+
+        The model defined in huaweicloud sdk
+
+        :param domain_id: 账号id，获取方式请参见：获取账号ID、项目ID、日志组ID、日志流ID（https://support.huaweicloud.com/api-lts/lts_api_0006.html）。
+        :type domain_id: str
+        :param template_name: template_name
+        :type template_name: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ShowNotificationTemplateRequest:
         账号id，获取方式请参见：获取账号ID、项目ID、日志组ID、日志流ID（https://support.huaweicloud.com/api-lts/lts_api_0006.html）。
 
         :param domain_id: The domain_id of this ShowNotificationTemplateRequest.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -83,7 +90,7 @@ class ShowNotificationTemplateRequest:
         template_name
 
         :param template_name: The template_name of this ShowNotificationTemplateRequest.
-        :type: str
+        :type template_name: str
         """
         self._template_name = template_name
 

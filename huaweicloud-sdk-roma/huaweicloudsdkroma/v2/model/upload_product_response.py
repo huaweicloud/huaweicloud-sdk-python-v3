@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UploadProductResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UploadProductResponse(SdkResponse):
     }
 
     def __init__(self, succ_num=None, fail_num=None, fail_objects_ids=None):
-        """UploadProductResponse - a model defined in huaweicloud sdk"""
+        """UploadProductResponse
+
+        The model defined in huaweicloud sdk
+
+        :param succ_num: 导入成功的产品数
+        :type succ_num: int
+        :param fail_num: 导入失败的产品数
+        :type fail_num: int
+        :param fail_objects_ids: 导入失败的产品名称列表
+        :type fail_objects_ids: list[str]
+        """
         
         super(UploadProductResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class UploadProductResponse(SdkResponse):
         导入成功的产品数
 
         :param succ_num: The succ_num of this UploadProductResponse.
-        :type: int
+        :type succ_num: int
         """
         self._succ_num = succ_num
 
@@ -90,7 +99,7 @@ class UploadProductResponse(SdkResponse):
         导入失败的产品数
 
         :param fail_num: The fail_num of this UploadProductResponse.
-        :type: int
+        :type fail_num: int
         """
         self._fail_num = fail_num
 
@@ -112,7 +121,7 @@ class UploadProductResponse(SdkResponse):
         导入失败的产品名称列表
 
         :param fail_objects_ids: The fail_objects_ids of this UploadProductResponse.
-        :type: list[str]
+        :type fail_objects_ids: list[str]
         """
         self._fail_objects_ids = fail_objects_ids
 

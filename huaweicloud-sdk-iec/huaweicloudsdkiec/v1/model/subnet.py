@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Subnet:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class Subnet:
     }
 
     def __init__(self, id=None, name=None, cidr=None, dns_list=None, gateway_ip=None, dhcp_enable=None, primary_dns=None, secondary_dns=None, status=None, vpc_id=None, site_id=None, site_info=None, neutron_network_id=None, neutron_subnet_id=None):
-        """Subnet - a model defined in huaweicloud sdk"""
+        """Subnet
+
+        The model defined in huaweicloud sdk
+
+        :param id: 子网的ID。
+        :type id: str
+        :param name: 子网名称  取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
+        :type name: str
+        :param cidr: 子网的网段  取值范围：必须在vpc对应cidr范围内  约束：必须是cidr格式。掩码长度不能大于28
+        :type cidr: str
+        :param dns_list: 子网dns服务器地址列表
+        :type dns_list: list[str]
+        :param gateway_ip: 子网的网关  取值范围：子网网段中的IP地址  约束：必须是ip格式
+        :type gateway_ip: str
+        :param dhcp_enable: 子网是否开启dhcp功能
+        :type dhcp_enable: bool
+        :param primary_dns: 子网dns服务器地址1
+        :type primary_dns: str
+        :param secondary_dns: 子网dns服务器地址2
+        :type secondary_dns: str
+        :param status: 子网的状态  取值范围： - ACTIVE：表示子网已挂载到ROUTER上 - UNKNOWN：表示子网还未挂载到ROUTER上 - ERROR：表示子网状态故障
+        :type status: str
+        :param vpc_id: 虚拟私有云ID。
+        :type vpc_id: str
+        :param site_id: 子网所属的站点ID。
+        :type site_id: str
+        :param site_info: 子网所属的站点信息。
+        :type site_info: str
+        :param neutron_network_id: 对应网络（OpenStack Neutron接口） id。
+        :type neutron_network_id: str
+        :param neutron_subnet_id: 对应子网（OpenStack Neutron接口） id。
+        :type neutron_subnet_id: str
+        """
         
         
 
@@ -123,7 +154,7 @@ class Subnet:
         子网的ID。
 
         :param id: The id of this Subnet.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -145,7 +176,7 @@ class Subnet:
         子网名称  取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
         :param name: The name of this Subnet.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -167,7 +198,7 @@ class Subnet:
         子网的网段  取值范围：必须在vpc对应cidr范围内  约束：必须是cidr格式。掩码长度不能大于28
 
         :param cidr: The cidr of this Subnet.
-        :type: str
+        :type cidr: str
         """
         self._cidr = cidr
 
@@ -189,7 +220,7 @@ class Subnet:
         子网dns服务器地址列表
 
         :param dns_list: The dns_list of this Subnet.
-        :type: list[str]
+        :type dns_list: list[str]
         """
         self._dns_list = dns_list
 
@@ -211,7 +242,7 @@ class Subnet:
         子网的网关  取值范围：子网网段中的IP地址  约束：必须是ip格式
 
         :param gateway_ip: The gateway_ip of this Subnet.
-        :type: str
+        :type gateway_ip: str
         """
         self._gateway_ip = gateway_ip
 
@@ -233,7 +264,7 @@ class Subnet:
         子网是否开启dhcp功能
 
         :param dhcp_enable: The dhcp_enable of this Subnet.
-        :type: bool
+        :type dhcp_enable: bool
         """
         self._dhcp_enable = dhcp_enable
 
@@ -255,7 +286,7 @@ class Subnet:
         子网dns服务器地址1
 
         :param primary_dns: The primary_dns of this Subnet.
-        :type: str
+        :type primary_dns: str
         """
         self._primary_dns = primary_dns
 
@@ -277,7 +308,7 @@ class Subnet:
         子网dns服务器地址2
 
         :param secondary_dns: The secondary_dns of this Subnet.
-        :type: str
+        :type secondary_dns: str
         """
         self._secondary_dns = secondary_dns
 
@@ -299,7 +330,7 @@ class Subnet:
         子网的状态  取值范围： - ACTIVE：表示子网已挂载到ROUTER上 - UNKNOWN：表示子网还未挂载到ROUTER上 - ERROR：表示子网状态故障
 
         :param status: The status of this Subnet.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -321,7 +352,7 @@ class Subnet:
         虚拟私有云ID。
 
         :param vpc_id: The vpc_id of this Subnet.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -343,7 +374,7 @@ class Subnet:
         子网所属的站点ID。
 
         :param site_id: The site_id of this Subnet.
-        :type: str
+        :type site_id: str
         """
         self._site_id = site_id
 
@@ -365,7 +396,7 @@ class Subnet:
         子网所属的站点信息。
 
         :param site_info: The site_info of this Subnet.
-        :type: str
+        :type site_info: str
         """
         self._site_info = site_info
 
@@ -387,7 +418,7 @@ class Subnet:
         对应网络（OpenStack Neutron接口） id。
 
         :param neutron_network_id: The neutron_network_id of this Subnet.
-        :type: str
+        :type neutron_network_id: str
         """
         self._neutron_network_id = neutron_network_id
 
@@ -409,7 +440,7 @@ class Subnet:
         对应子网（OpenStack Neutron接口） id。
 
         :param neutron_subnet_id: The neutron_subnet_id of this Subnet.
-        :type: str
+        :type neutron_subnet_id: str
         """
         self._neutron_subnet_id = neutron_subnet_id
 

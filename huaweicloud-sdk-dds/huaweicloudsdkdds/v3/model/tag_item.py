@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TagItem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class TagItem:
     }
 
     def __init__(self, key=None, value=None):
-        """TagItem - a model defined in huaweicloud sdk"""
+        """TagItem
+
+        The model defined in huaweicloud sdk
+
+        :param key: 标签键。最大长度36个unicode字符，不能为null或者空字符串，不能为空格，校验和使用之前会自动过滤掉前后空格。 字符集：0-9，A-Z，a-z，“_”，“-”，中文。
+        :type key: str
+        :param value: 标签值。最大长度43个unicode字符，可以为空字符串，不能为空格，校验和使用之前会自动过滤掉前后空格。 字符集：0-9，A-Z，a-z，“_”，“.”，“-”，中文。 - “action”值为“create”时，该参数必选。 - “action”值为“delete”时，该参数可选。
+        :type value: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class TagItem:
         标签键。最大长度36个unicode字符，不能为null或者空字符串，不能为空格，校验和使用之前会自动过滤掉前后空格。 字符集：0-9，A-Z，a-z，“_”，“-”，中文。
 
         :param key: The key of this TagItem.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -84,7 +91,7 @@ class TagItem:
         标签值。最大长度43个unicode字符，可以为空字符串，不能为空格，校验和使用之前会自动过滤掉前后空格。 字符集：0-9，A-Z，a-z，“_”，“.”，“-”，中文。 - “action”值为“create”时，该参数必选。 - “action”值为“delete”时，该参数可选。
 
         :param value: The value of this TagItem.
-        :type: str
+        :type value: str
         """
         self._value = value
 

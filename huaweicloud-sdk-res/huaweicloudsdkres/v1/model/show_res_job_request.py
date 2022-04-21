@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowResJobRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowResJobRequest:
     }
 
     def __init__(self, content_type=None, workspace_id=None, resource_id=None, category=None):
-        """ShowResJobRequest - a model defined in huaweicloud sdk"""
+        """ShowResJobRequest
+
+        The model defined in huaweicloud sdk
+
+        :param content_type: 内容类型，取值为application/json
+        :type content_type: str
+        :param workspace_id: 工作空间id
+        :type workspace_id: str
+        :param resource_id: 资源id（数据源id 或 场景id）
+        :type resource_id: str
+        :param category: 类别： - RECALL，召回作业 - DATASOURCE，数据源作业 - FILTER，过滤作业 - SORTING，排序作业 - EVALUATE，效果评估作业
+        :type category: str
+        """
         
         
 
@@ -70,7 +81,7 @@ class ShowResJobRequest:
         内容类型，取值为application/json
 
         :param content_type: The content_type of this ShowResJobRequest.
-        :type: str
+        :type content_type: str
         """
         self._content_type = content_type
 
@@ -92,7 +103,7 @@ class ShowResJobRequest:
         工作空间id
 
         :param workspace_id: The workspace_id of this ShowResJobRequest.
-        :type: str
+        :type workspace_id: str
         """
         self._workspace_id = workspace_id
 
@@ -114,7 +125,7 @@ class ShowResJobRequest:
         资源id（数据源id 或 场景id）
 
         :param resource_id: The resource_id of this ShowResJobRequest.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -136,7 +147,7 @@ class ShowResJobRequest:
         类别： - RECALL，召回作业 - DATASOURCE，数据源作业 - FILTER，过滤作业 - SORTING，排序作业 - EVALUATE，效果评估作业
 
         :param category: The category of this ShowResJobRequest.
-        :type: str
+        :type category: str
         """
         self._category = category
 

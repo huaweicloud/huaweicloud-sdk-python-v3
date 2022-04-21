@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AllowIpRangesResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AllowIpRangesResult:
     }
 
     def __init__(self, description=None, ip_range=None):
-        """AllowIpRangesResult - a model defined in huaweicloud sdk"""
+        """AllowIpRangesResult
+
+        The model defined in huaweicloud sdk
+
+        :param description: 描述信息。
+        :type description: str
+        :param ip_range: IP地址区间，例如：0.0.0.0-255.255.255.255。
+        :type ip_range: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class AllowIpRangesResult:
         描述信息。
 
         :param description: The description of this AllowIpRangesResult.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -83,7 +90,7 @@ class AllowIpRangesResult:
         IP地址区间，例如：0.0.0.0-255.255.255.255。
 
         :param ip_range: The ip_range of this AllowIpRangesResult.
-        :type: str
+        :type ip_range: str
         """
         self._ip_range = ip_range
 

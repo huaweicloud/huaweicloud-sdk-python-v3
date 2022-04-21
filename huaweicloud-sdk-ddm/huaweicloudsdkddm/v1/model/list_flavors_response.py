@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListFlavorsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListFlavorsResponse(SdkResponse):
     }
 
     def __init__(self, compute_flavor_groups=None):
-        """ListFlavorsResponse - a model defined in huaweicloud sdk"""
+        """ListFlavorsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param compute_flavor_groups: 计算类型规格组。
+        :type compute_flavor_groups: list[:class:`huaweicloudsdkddm.v1.ComputeFlavorGroupsInfo`]
+        """
         
         super(ListFlavorsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListFlavorsResponse(SdkResponse):
         计算类型规格组。
 
         :return: The compute_flavor_groups of this ListFlavorsResponse.
-        :rtype: list[ComputeFlavorGroupsInfo]
+        :rtype: list[:class:`huaweicloudsdkddm.v1.ComputeFlavorGroupsInfo`]
         """
         return self._compute_flavor_groups
 
@@ -58,7 +63,7 @@ class ListFlavorsResponse(SdkResponse):
         计算类型规格组。
 
         :param compute_flavor_groups: The compute_flavor_groups of this ListFlavorsResponse.
-        :type: list[ComputeFlavorGroupsInfo]
+        :type compute_flavor_groups: list[:class:`huaweicloudsdkddm.v1.ComputeFlavorGroupsInfo`]
         """
         self._compute_flavor_groups = compute_flavor_groups
 

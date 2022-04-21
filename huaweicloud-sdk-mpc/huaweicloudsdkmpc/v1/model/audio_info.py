@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AudioInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class AudioInfo:
     }
 
     def __init__(self, codec=None, sample=None, channels=None, bitrate=None, bitrate_bps=None):
-        """AudioInfo - a model defined in huaweicloud sdk"""
+        """AudioInfo
+
+        The model defined in huaweicloud sdk
+
+        :param codec: 音频编码格式
+        :type codec: str
+        :param sample: 音频采样率
+        :type sample: int
+        :param channels: 音频信道
+        :type channels: int
+        :param bitrate: 音频码率，单位: kbit/s 
+        :type bitrate: int
+        :param bitrate_bps: 音频码率，单位: bit/s 
+        :type bitrate_bps: int
+        """
         
         
 
@@ -78,7 +91,7 @@ class AudioInfo:
         音频编码格式
 
         :param codec: The codec of this AudioInfo.
-        :type: str
+        :type codec: str
         """
         self._codec = codec
 
@@ -100,7 +113,7 @@ class AudioInfo:
         音频采样率
 
         :param sample: The sample of this AudioInfo.
-        :type: int
+        :type sample: int
         """
         self._sample = sample
 
@@ -122,7 +135,7 @@ class AudioInfo:
         音频信道
 
         :param channels: The channels of this AudioInfo.
-        :type: int
+        :type channels: int
         """
         self._channels = channels
 
@@ -144,7 +157,7 @@ class AudioInfo:
         音频码率，单位: kbit/s 
 
         :param bitrate: The bitrate of this AudioInfo.
-        :type: int
+        :type bitrate: int
         """
         self._bitrate = bitrate
 
@@ -166,7 +179,7 @@ class AudioInfo:
         音频码率，单位: bit/s 
 
         :param bitrate_bps: The bitrate_bps of this AudioInfo.
-        :type: int
+        :type bitrate_bps: int
         """
         self._bitrate_bps = bitrate_bps
 

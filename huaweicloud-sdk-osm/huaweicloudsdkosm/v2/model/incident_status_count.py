@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IncidentStatusCount:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class IncidentStatusCount:
     }
 
     def __init__(self, status=None, count=None):
-        """IncidentStatusCount - a model defined in huaweicloud sdk"""
+        """IncidentStatusCount
+
+        The model defined in huaweicloud sdk
+
+        :param status: 状态 0：待受理 1：处理中 2：待确认结果 3：已完成 4：已撤销 12：无效 17： 待反馈
+        :type status: int
+        :param count: 数量
+        :type count: int
+        """
         
         
 
@@ -63,7 +70,7 @@ class IncidentStatusCount:
         状态 0：待受理 1：处理中 2：待确认结果 3：已完成 4：已撤销 12：无效 17： 待反馈
 
         :param status: The status of this IncidentStatusCount.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -85,7 +92,7 @@ class IncidentStatusCount:
         数量
 
         :param count: The count of this IncidentStatusCount.
-        :type: int
+        :type count: int
         """
         self._count = count
 

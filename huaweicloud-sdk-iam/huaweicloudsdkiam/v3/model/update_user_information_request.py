@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateUserInformationRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateUserInformationRequest:
     }
 
     def __init__(self, user_id=None, body=None):
-        """UpdateUserInformationRequest - a model defined in huaweicloud sdk"""
+        """UpdateUserInformationRequest
+
+        The model defined in huaweicloud sdk
+
+        :param user_id: 待修改信息的IAM用户ID，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
+        :type user_id: str
+        :param body: Body of the UpdateUserInformationRequest
+        :type body: :class:`huaweicloudsdkiam.v3.UpdateUserInformationRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateUserInformationRequest:
         待修改信息的IAM用户ID，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param user_id: The user_id of this UpdateUserInformationRequest.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -72,7 +79,7 @@ class UpdateUserInformationRequest:
 
 
         :return: The body of this UpdateUserInformationRequest.
-        :rtype: UpdateUserInformationRequestBody
+        :rtype: :class:`huaweicloudsdkiam.v3.UpdateUserInformationRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateUserInformationRequest:
 
 
         :param body: The body of this UpdateUserInformationRequest.
-        :type: UpdateUserInformationRequestBody
+        :type body: :class:`huaweicloudsdkiam.v3.UpdateUserInformationRequestBody`
         """
         self._body = body
 

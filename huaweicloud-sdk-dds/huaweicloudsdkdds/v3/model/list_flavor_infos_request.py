@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListFlavorInfosRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListFlavorInfosRequest:
     }
 
     def __init__(self, engine_name=None, engine_version=None, offset=None, limit=None):
-        """ListFlavorInfosRequest - a model defined in huaweicloud sdk"""
+        """ListFlavorInfosRequest
+
+        The model defined in huaweicloud sdk
+
+        :param engine_name: 数据库版本类型。取值为“DDS-Community”。
+        :type engine_name: str
+        :param engine_version: 数据库版本号。
+        :type engine_version: str
+        :param offset: 索引位置，偏移量。   - 从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询）。   - 取值必须为数字，不能为负数。
+        :type offset: int
+        :param limit: 查询规格信息上限值。   - 取值范围: 1~100。   - 不传该参数时，默认查询前100条规格信息。
+        :type limit: int
+        """
         
         
 
@@ -73,7 +84,7 @@ class ListFlavorInfosRequest:
         数据库版本类型。取值为“DDS-Community”。
 
         :param engine_name: The engine_name of this ListFlavorInfosRequest.
-        :type: str
+        :type engine_name: str
         """
         self._engine_name = engine_name
 
@@ -95,7 +106,7 @@ class ListFlavorInfosRequest:
         数据库版本号。
 
         :param engine_version: The engine_version of this ListFlavorInfosRequest.
-        :type: str
+        :type engine_version: str
         """
         self._engine_version = engine_version
 
@@ -117,7 +128,7 @@ class ListFlavorInfosRequest:
         索引位置，偏移量。   - 从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询）。   - 取值必须为数字，不能为负数。
 
         :param offset: The offset of this ListFlavorInfosRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -139,7 +150,7 @@ class ListFlavorInfosRequest:
         查询规格信息上限值。   - 取值范围: 1~100。   - 不传该参数时，默认查询前100条规格信息。
 
         :param limit: The limit of this ListFlavorInfosRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

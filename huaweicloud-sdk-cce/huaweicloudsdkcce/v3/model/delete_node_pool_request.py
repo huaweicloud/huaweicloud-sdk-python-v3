@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteNodePoolRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteNodePoolRequest:
     }
 
     def __init__(self, cluster_id=None, nodepool_id=None):
-        """DeleteNodePoolRequest - a model defined in huaweicloud sdk"""
+        """DeleteNodePoolRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 集群 ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
+        :type cluster_id: str
+        :param nodepool_id: 节点池ID
+        :type nodepool_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class DeleteNodePoolRequest:
         集群 ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
         :param cluster_id: The cluster_id of this DeleteNodePoolRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -83,7 +90,7 @@ class DeleteNodePoolRequest:
         节点池ID
 
         :param nodepool_id: The nodepool_id of this DeleteNodePoolRequest.
-        :type: str
+        :type nodepool_id: str
         """
         self._nodepool_id = nodepool_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DownloadImagesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class DownloadImagesRequest:
     }
 
     def __init__(self, accessory_id=None, group_id=None, x_site=None, x_language=None, x_time_zone=None):
-        """DownloadImagesRequest - a model defined in huaweicloud sdk"""
+        """DownloadImagesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param accessory_id: 附件id
+        :type accessory_id: str
+        :param group_id: 对应的组id
+        :type group_id: str
+        :param x_site: 对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
+        :type x_site: int
+        :param x_language: 语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
+        :type x_language: str
+        :param x_time_zone: 环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
+        :type x_time_zone: str
+        """
         
         
 
@@ -77,7 +90,7 @@ class DownloadImagesRequest:
         附件id
 
         :param accessory_id: The accessory_id of this DownloadImagesRequest.
-        :type: str
+        :type accessory_id: str
         """
         self._accessory_id = accessory_id
 
@@ -99,7 +112,7 @@ class DownloadImagesRequest:
         对应的组id
 
         :param group_id: The group_id of this DownloadImagesRequest.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -121,7 +134,7 @@ class DownloadImagesRequest:
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
         :param x_site: The x_site of this DownloadImagesRequest.
-        :type: int
+        :type x_site: int
         """
         self._x_site = x_site
 
@@ -143,7 +156,7 @@ class DownloadImagesRequest:
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
         :param x_language: The x_language of this DownloadImagesRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -165,7 +178,7 @@ class DownloadImagesRequest:
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 
         :param x_time_zone: The x_time_zone of this DownloadImagesRequest.
-        :type: str
+        :type x_time_zone: str
         """
         self._x_time_zone = x_time_zone
 

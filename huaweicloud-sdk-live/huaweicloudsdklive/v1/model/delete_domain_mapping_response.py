@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteDomainMappingResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class DeleteDomainMappingResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteDomainMappingResponse - a model defined in huaweicloud sdk"""
+        """DeleteDomainMappingResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(DeleteDomainMappingResponse, self).__init__()
         self.discriminator = None

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPortsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class ListPortsRequest:
     }
 
     def __init__(self, limit=None, offset=None, network_id=None, id=None, name=None, admin_state_up=None, fixed_ips=None, mac_address=None, device_id=None, device_owner=None, status=None, security_groups=None):
-        """ListPortsRequest - a model defined in huaweicloud sdk"""
+        """ListPortsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 查询返回端口列表数量。取值范围：0~1000。
+        :type limit: int
+        :param offset: 查询的偏移量。
+        :type offset: int
+        :param network_id: 子网的neutron的network的ID。
+        :type network_id: str
+        :param id: 按照端口ID过滤查询
+        :type id: str
+        :param name: 按照name过滤查询  取值范围：最大长度不超过255
+        :type name: str
+        :param admin_state_up: 按照admin_state_up进行过滤  约束：只支持true
+        :type admin_state_up: bool
+        :param fixed_ips: 根据绑定的IP查询端口。按照fixed_ips&#x3D;ip_address或者fixed_ips&#x3D;subnet_id过滤查询，示例：fixed_ips&#x3D;ip_address&#x3D;xxx&amp;fixed_ips&#x3D;subnet_id&#x3D;xxxx
+        :type fixed_ips: list[str]
+        :param mac_address: 根据网卡的mac地址查询端口。
+        :type mac_address: str
+        :param device_id: 根据设备ID查询端口。
+        :type device_id: str
+        :param device_owner: 根据设备主查询端口。
+        :type device_owner: str
+        :param status: 按照status过滤查询  取值范围：ACTIVE、BUILD、DOWN
+        :type status: str
+        :param security_groups: 根据安全组信息ID查询端口。
+        :type security_groups: str
+        """
         
         
 
@@ -113,7 +140,7 @@ class ListPortsRequest:
         查询返回端口列表数量。取值范围：0~1000。
 
         :param limit: The limit of this ListPortsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -135,7 +162,7 @@ class ListPortsRequest:
         查询的偏移量。
 
         :param offset: The offset of this ListPortsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -157,7 +184,7 @@ class ListPortsRequest:
         子网的neutron的network的ID。
 
         :param network_id: The network_id of this ListPortsRequest.
-        :type: str
+        :type network_id: str
         """
         self._network_id = network_id
 
@@ -179,7 +206,7 @@ class ListPortsRequest:
         按照端口ID过滤查询
 
         :param id: The id of this ListPortsRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -201,7 +228,7 @@ class ListPortsRequest:
         按照name过滤查询  取值范围：最大长度不超过255
 
         :param name: The name of this ListPortsRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -223,7 +250,7 @@ class ListPortsRequest:
         按照admin_state_up进行过滤  约束：只支持true
 
         :param admin_state_up: The admin_state_up of this ListPortsRequest.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 
@@ -245,7 +272,7 @@ class ListPortsRequest:
         根据绑定的IP查询端口。按照fixed_ips=ip_address或者fixed_ips=subnet_id过滤查询，示例：fixed_ips=ip_address=xxx&fixed_ips=subnet_id=xxxx
 
         :param fixed_ips: The fixed_ips of this ListPortsRequest.
-        :type: list[str]
+        :type fixed_ips: list[str]
         """
         self._fixed_ips = fixed_ips
 
@@ -267,7 +294,7 @@ class ListPortsRequest:
         根据网卡的mac地址查询端口。
 
         :param mac_address: The mac_address of this ListPortsRequest.
-        :type: str
+        :type mac_address: str
         """
         self._mac_address = mac_address
 
@@ -289,7 +316,7 @@ class ListPortsRequest:
         根据设备ID查询端口。
 
         :param device_id: The device_id of this ListPortsRequest.
-        :type: str
+        :type device_id: str
         """
         self._device_id = device_id
 
@@ -311,7 +338,7 @@ class ListPortsRequest:
         根据设备主查询端口。
 
         :param device_owner: The device_owner of this ListPortsRequest.
-        :type: str
+        :type device_owner: str
         """
         self._device_owner = device_owner
 
@@ -333,7 +360,7 @@ class ListPortsRequest:
         按照status过滤查询  取值范围：ACTIVE、BUILD、DOWN
 
         :param status: The status of this ListPortsRequest.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -355,7 +382,7 @@ class ListPortsRequest:
         根据安全组信息ID查询端口。
 
         :param security_groups: The security_groups of this ListPortsRequest.
-        :type: str
+        :type security_groups: str
         """
         self._security_groups = security_groups
 

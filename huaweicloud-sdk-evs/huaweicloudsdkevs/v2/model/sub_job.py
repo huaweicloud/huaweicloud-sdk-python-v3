@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SubJob:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class SubJob:
     }
 
     def __init__(self, status=None, entities=None, job_id=None, job_type=None, begin_time=None, end_time=None, error_code=None, fail_reason=None):
-        """SubJob - a model defined in huaweicloud sdk"""
+        """SubJob
+
+        The model defined in huaweicloud sdk
+
+        :param status: 子job的状态。SUCCESS：成功。RUNNING：运行中。FAIL：失败。INIT：正在初始化。
+        :type status: str
+        :param entities: 
+        :type entities: :class:`huaweicloudsdkevs.v2.SubJobEntities`
+        :param job_id: 子job的ID。
+        :type job_id: str
+        :param job_type: 子job的类型。createVolume：创建单个云硬盘。batchCreateVolume：批量创建云硬盘。deleteVolume：删除单个云硬盘。extendVolume：扩容云硬盘。bulkDeleteVolume：批量删除云硬盘。deleteSingleVolume：批量删除时逐个删除单个云硬盘。retypeVolume：对云硬盘做硬盘类型变更。
+        :type job_type: str
+        :param begin_time: 开始时间。
+        :type begin_time: str
+        :param end_time: 结束时间。
+        :type end_time: str
+        :param error_code: 子job执行失败时的错误码。
+        :type error_code: str
+        :param fail_reason: 子job执行失败时的错误原因。
+        :type fail_reason: str
+        """
         
         
 
@@ -85,7 +104,7 @@ class SubJob:
         子job的状态。SUCCESS：成功。RUNNING：运行中。FAIL：失败。INIT：正在初始化。
 
         :param status: The status of this SubJob.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -95,7 +114,7 @@ class SubJob:
 
 
         :return: The entities of this SubJob.
-        :rtype: SubJobEntities
+        :rtype: :class:`huaweicloudsdkevs.v2.SubJobEntities`
         """
         return self._entities
 
@@ -105,7 +124,7 @@ class SubJob:
 
 
         :param entities: The entities of this SubJob.
-        :type: SubJobEntities
+        :type entities: :class:`huaweicloudsdkevs.v2.SubJobEntities`
         """
         self._entities = entities
 
@@ -127,7 +146,7 @@ class SubJob:
         子job的ID。
 
         :param job_id: The job_id of this SubJob.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -149,7 +168,7 @@ class SubJob:
         子job的类型。createVolume：创建单个云硬盘。batchCreateVolume：批量创建云硬盘。deleteVolume：删除单个云硬盘。extendVolume：扩容云硬盘。bulkDeleteVolume：批量删除云硬盘。deleteSingleVolume：批量删除时逐个删除单个云硬盘。retypeVolume：对云硬盘做硬盘类型变更。
 
         :param job_type: The job_type of this SubJob.
-        :type: str
+        :type job_type: str
         """
         self._job_type = job_type
 
@@ -171,7 +190,7 @@ class SubJob:
         开始时间。
 
         :param begin_time: The begin_time of this SubJob.
-        :type: str
+        :type begin_time: str
         """
         self._begin_time = begin_time
 
@@ -193,7 +212,7 @@ class SubJob:
         结束时间。
 
         :param end_time: The end_time of this SubJob.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -215,7 +234,7 @@ class SubJob:
         子job执行失败时的错误码。
 
         :param error_code: The error_code of this SubJob.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -237,7 +256,7 @@ class SubJob:
         子job执行失败时的错误原因。
 
         :param fail_reason: The fail_reason of this SubJob.
-        :type: str
+        :type fail_reason: str
         """
         self._fail_reason = fail_reason
 

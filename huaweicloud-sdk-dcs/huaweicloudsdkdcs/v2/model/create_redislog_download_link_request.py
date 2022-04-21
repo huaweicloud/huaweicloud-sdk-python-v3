@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateRedislogDownloadLinkRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateRedislogDownloadLinkRequest:
     }
 
     def __init__(self, instance_id=None, id=None):
-        """CreateRedislogDownloadLinkRequest - a model defined in huaweicloud sdk"""
+        """CreateRedislogDownloadLinkRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param id: 日志的唯一ID，来自于查询运行日志查询接口
+        :type id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class CreateRedislogDownloadLinkRequest:
         实例ID。
 
         :param instance_id: The instance_id of this CreateRedislogDownloadLinkRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -83,7 +90,7 @@ class CreateRedislogDownloadLinkRequest:
         日志的唯一ID，来自于查询运行日志查询接口
 
         :param id: The id of this CreateRedislogDownloadLinkRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 

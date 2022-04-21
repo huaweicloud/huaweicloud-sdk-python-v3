@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowResourcesDetailResponseBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowResourcesDetailResponseBody:
     }
 
     def __init__(self, type=None, quota=None, used=None):
-        """ShowResourcesDetailResponseBody - a model defined in huaweicloud sdk"""
+        """ShowResourcesDetailResponseBody
+
+        The model defined in huaweicloud sdk
+
+        :param type: 配额资源类型，当前配额类型仅支持实例类型（instance）。
+        :type type: str
+        :param quota: 当前配额值。
+        :type quota: int
+        :param used: 已使用的资源数。
+        :type used: int
+        """
         
         
 
@@ -65,7 +74,7 @@ class ShowResourcesDetailResponseBody:
         配额资源类型，当前配额类型仅支持实例类型（instance）。
 
         :param type: The type of this ShowResourcesDetailResponseBody.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -87,7 +96,7 @@ class ShowResourcesDetailResponseBody:
         当前配额值。
 
         :param quota: The quota of this ShowResourcesDetailResponseBody.
-        :type: int
+        :type quota: int
         """
         self._quota = quota
 
@@ -109,7 +118,7 @@ class ShowResourcesDetailResponseBody:
         已使用的资源数。
 
         :param used: The used of this ShowResourcesDetailResponseBody.
-        :type: int
+        :type used: int
         """
         self._used = used
 

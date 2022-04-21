@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SetCPUThresholdData:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class SetCPUThresholdData:
     }
 
     def __init__(self, cpu=None):
-        """SetCPUThresholdData - a model defined in huaweicloud sdk"""
+        """SetCPUThresholdData
+
+        The model defined in huaweicloud sdk
+
+        :param cpu: CPU阈值设定值，单位为百分比(%)。 取值范围：0 - 100。
+        :type cpu: int
+        """
         
         
 
@@ -58,7 +63,7 @@ class SetCPUThresholdData:
         CPU阈值设定值，单位为百分比(%)。 取值范围：0 - 100。
 
         :param cpu: The cpu of this SetCPUThresholdData.
-        :type: int
+        :type cpu: int
         """
         self._cpu = cpu
 

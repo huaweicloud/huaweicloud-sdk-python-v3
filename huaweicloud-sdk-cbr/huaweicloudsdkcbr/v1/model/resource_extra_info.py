@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResourceExtraInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ResourceExtraInfo:
     }
 
     def __init__(self, exclude_volumes=None, include_volumes=None):
-        """ResourceExtraInfo - a model defined in huaweicloud sdk"""
+        """ResourceExtraInfo
+
+        The model defined in huaweicloud sdk
+
+        :param exclude_volumes: 需要排除备份的卷id。仅在多系统盘备份特性中有效，排除不需要备份的磁盘。当虚拟机新绑定磁盘时，也能继续排除之前设置不用备份的卷。
+        :type exclude_volumes: list[str]
+        :param include_volumes: 指定需要备份的卷,若有指定值，则每次备份都只备份指定的卷，如虚拟机绑定存储库之后新绑定的卷不会备份；若为空默认为资源全部卷；仅虚拟机磁盘级备份特性中有效。
+        :type include_volumes: list[:class:`huaweicloudsdkcbr.v1.ResourceExtraInfoIncludeVolumes`]
+        """
         
         
 
@@ -63,7 +70,7 @@ class ResourceExtraInfo:
         需要排除备份的卷id。仅在多系统盘备份特性中有效，排除不需要备份的磁盘。当虚拟机新绑定磁盘时，也能继续排除之前设置不用备份的卷。
 
         :param exclude_volumes: The exclude_volumes of this ResourceExtraInfo.
-        :type: list[str]
+        :type exclude_volumes: list[str]
         """
         self._exclude_volumes = exclude_volumes
 
@@ -74,7 +81,7 @@ class ResourceExtraInfo:
         指定需要备份的卷,若有指定值，则每次备份都只备份指定的卷，如虚拟机绑定存储库之后新绑定的卷不会备份；若为空默认为资源全部卷；仅虚拟机磁盘级备份特性中有效。
 
         :return: The include_volumes of this ResourceExtraInfo.
-        :rtype: list[ResourceExtraInfoIncludeVolumes]
+        :rtype: list[:class:`huaweicloudsdkcbr.v1.ResourceExtraInfoIncludeVolumes`]
         """
         return self._include_volumes
 
@@ -85,7 +92,7 @@ class ResourceExtraInfo:
         指定需要备份的卷,若有指定值，则每次备份都只备份指定的卷，如虚拟机绑定存储库之后新绑定的卷不会备份；若为空默认为资源全部卷；仅虚拟机磁盘级备份特性中有效。
 
         :param include_volumes: The include_volumes of this ResourceExtraInfo.
-        :type: list[ResourceExtraInfoIncludeVolumes]
+        :type include_volumes: list[:class:`huaweicloudsdkcbr.v1.ResourceExtraInfoIncludeVolumes`]
         """
         self._include_volumes = include_volumes
 

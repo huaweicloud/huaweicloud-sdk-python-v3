@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShrinkNodeReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShrinkNodeReq:
     }
 
     def __init__(self, reduced_node_num=None, type=None):
-        """ShrinkNodeReq - a model defined in huaweicloud sdk"""
+        """ShrinkNodeReq
+
+        The model defined in huaweicloud sdk
+
+        :param reduced_node_num: 下线节点个数。 没有Master节点的集群，缩容后剩余的数据节点个数(包含冷数据节点和其他类型节点)须大于之前的一半。 有Master节点的集群，缩容后Master节点的总数须为大于等于3的奇数。 跨AZ的集群，缩容后须确保剩余的节点个数大等于AZ个数。
+        :type reduced_node_num: int
+        :param type: 下线节点类型。（ess、ess-master、ess-client、ess-cold、lgs）
+        :type type: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ShrinkNodeReq:
         下线节点个数。 没有Master节点的集群，缩容后剩余的数据节点个数(包含冷数据节点和其他类型节点)须大于之前的一半。 有Master节点的集群，缩容后Master节点的总数须为大于等于3的奇数。 跨AZ的集群，缩容后须确保剩余的节点个数大等于AZ个数。
 
         :param reduced_node_num: The reduced_node_num of this ShrinkNodeReq.
-        :type: int
+        :type reduced_node_num: int
         """
         self._reduced_node_num = reduced_node_num
 
@@ -83,7 +90,7 @@ class ShrinkNodeReq:
         下线节点类型。（ess、ess-master、ess-client、ess-cold、lgs）
 
         :param type: The type of this ShrinkNodeReq.
-        :type: str
+        :type type: str
         """
         self._type = type
 

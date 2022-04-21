@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EmbeddedDatabaseWatermark:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class EmbeddedDatabaseWatermark:
     }
 
     def __init__(self, watermark_content=None, watermark_key=None, columns=None, data=None):
-        """EmbeddedDatabaseWatermark - a model defined in huaweicloud sdk"""
+        """EmbeddedDatabaseWatermark
+
+        The model defined in huaweicloud sdk
+
+        :param watermark_content: 添加水印的内容
+        :type watermark_content: str
+        :param watermark_key: 水印密钥
+        :type watermark_key: str
+        :param columns: 字段类型列表，最大长度100。使用时，至少包含两个字段，一个“primary_key”为true表示主键，一个为false用来嵌入水印
+        :type columns: list[:class:`huaweicloudsdkdsc.v1.Columns`]
+        :param data: 数据字段的内容，最大支持长度2000
+        :type data: list[dict(str, object)]
+        """
         
         
 
@@ -69,7 +80,7 @@ class EmbeddedDatabaseWatermark:
         添加水印的内容
 
         :param watermark_content: The watermark_content of this EmbeddedDatabaseWatermark.
-        :type: str
+        :type watermark_content: str
         """
         self._watermark_content = watermark_content
 
@@ -91,7 +102,7 @@ class EmbeddedDatabaseWatermark:
         水印密钥
 
         :param watermark_key: The watermark_key of this EmbeddedDatabaseWatermark.
-        :type: str
+        :type watermark_key: str
         """
         self._watermark_key = watermark_key
 
@@ -102,7 +113,7 @@ class EmbeddedDatabaseWatermark:
         字段类型列表，最大长度100。使用时，至少包含两个字段，一个“primary_key”为true表示主键，一个为false用来嵌入水印
 
         :return: The columns of this EmbeddedDatabaseWatermark.
-        :rtype: list[Columns]
+        :rtype: list[:class:`huaweicloudsdkdsc.v1.Columns`]
         """
         return self._columns
 
@@ -113,7 +124,7 @@ class EmbeddedDatabaseWatermark:
         字段类型列表，最大长度100。使用时，至少包含两个字段，一个“primary_key”为true表示主键，一个为false用来嵌入水印
 
         :param columns: The columns of this EmbeddedDatabaseWatermark.
-        :type: list[Columns]
+        :type columns: list[:class:`huaweicloudsdkdsc.v1.Columns`]
         """
         self._columns = columns
 
@@ -135,7 +146,7 @@ class EmbeddedDatabaseWatermark:
         数据字段的内容，最大支持长度2000
 
         :param data: The data of this EmbeddedDatabaseWatermark.
-        :type: list[dict(str, object)]
+        :type data: list[dict(str, object)]
         """
         self._data = data
 

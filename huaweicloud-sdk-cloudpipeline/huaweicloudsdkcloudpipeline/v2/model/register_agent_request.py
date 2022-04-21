@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RegisterAgentRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RegisterAgentRequest:
     }
 
     def __init__(self, body=None):
-        """RegisterAgentRequest - a model defined in huaweicloud sdk"""
+        """RegisterAgentRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the RegisterAgentRequest
+        :type body: :class:`huaweicloudsdkcloudpipeline.v2.SlaveRegister`
+        """
         
         
 
@@ -46,7 +51,7 @@ class RegisterAgentRequest:
 
 
         :return: The body of this RegisterAgentRequest.
-        :rtype: SlaveRegister
+        :rtype: :class:`huaweicloudsdkcloudpipeline.v2.SlaveRegister`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class RegisterAgentRequest:
 
 
         :param body: The body of this RegisterAgentRequest.
-        :type: SlaveRegister
+        :type body: :class:`huaweicloudsdkcloudpipeline.v2.SlaveRegister`
         """
         self._body = body
 

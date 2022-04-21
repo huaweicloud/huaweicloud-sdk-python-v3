@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteTranscodingsTemplateRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteTranscodingsTemplateRequest:
     }
 
     def __init__(self, domain=None, app_name=None):
-        """DeleteTranscodingsTemplateRequest - a model defined in huaweicloud sdk"""
+        """DeleteTranscodingsTemplateRequest
+
+        The model defined in huaweicloud sdk
+
+        :param domain: 推流域名
+        :type domain: str
+        :param app_name: 应用名称
+        :type app_name: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class DeleteTranscodingsTemplateRequest:
         推流域名
 
         :param domain: The domain of this DeleteTranscodingsTemplateRequest.
-        :type: str
+        :type domain: str
         """
         self._domain = domain
 
@@ -83,7 +90,7 @@ class DeleteTranscodingsTemplateRequest:
         应用名称
 
         :param app_name: The app_name of this DeleteTranscodingsTemplateRequest.
-        :type: str
+        :type app_name: str
         """
         self._app_name = app_name
 

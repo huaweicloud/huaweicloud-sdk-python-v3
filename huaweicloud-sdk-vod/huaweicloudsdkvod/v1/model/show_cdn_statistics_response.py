@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowCdnStatisticsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowCdnStatisticsResponse(SdkResponse):
     }
 
     def __init__(self, start_time=None, interval=None, values=None):
-        """ShowCdnStatisticsResponse - a model defined in huaweicloud sdk"""
+        """ShowCdnStatisticsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param start_time: 统计起始时间。
+        :type start_time: str
+        :param interval: 统计间隔。
+        :type interval: int
+        :param values: 采样数据数组。  从start_time开始，每个间隔对应一个采样数据。
+        :type values: list[int]
+        """
         
         super(ShowCdnStatisticsResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ShowCdnStatisticsResponse(SdkResponse):
         统计起始时间。
 
         :param start_time: The start_time of this ShowCdnStatisticsResponse.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -90,7 +99,7 @@ class ShowCdnStatisticsResponse(SdkResponse):
         统计间隔。
 
         :param interval: The interval of this ShowCdnStatisticsResponse.
-        :type: int
+        :type interval: int
         """
         self._interval = interval
 
@@ -112,7 +121,7 @@ class ShowCdnStatisticsResponse(SdkResponse):
         采样数据数组。  从start_time开始，每个间隔对应一个采样数据。
 
         :param values: The values of this ShowCdnStatisticsResponse.
-        :type: list[int]
+        :type values: list[int]
         """
         self._values = values
 

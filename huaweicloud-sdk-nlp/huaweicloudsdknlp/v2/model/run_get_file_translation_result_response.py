@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunGetFileTranslationResultResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class RunGetFileTranslationResultResponse(SdkResponse):
     }
 
     def __init__(self, status=None, url=None, error_code=None, error_msg=None):
-        """RunGetFileTranslationResultResponse - a model defined in huaweicloud sdk"""
+        """RunGetFileTranslationResultResponse
+
+        The model defined in huaweicloud sdk
+
+        :param status: 当前翻译状态。具体状态如下所示： WAITING 等待翻译。 FINISHED 翻译已经完成。 ERROR 翻译过程中发生错误。 调用失败时无此字段。
+        :type status: str
+        :param url: 临时url，用于获取翻译结果，有效期十分钟。过期后请再次调用接口获取新的url。调用失败时或翻译状态非FINISHED时无此字段。
+        :type url: str
+        :param error_code: 调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
+        :type error_code: str
+        :param error_msg: 调用失败时的错误信息。调用成功时无此字段。
+        :type error_msg: str
+        """
         
         super(RunGetFileTranslationResultResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class RunGetFileTranslationResultResponse(SdkResponse):
         当前翻译状态。具体状态如下所示： WAITING 等待翻译。 FINISHED 翻译已经完成。 ERROR 翻译过程中发生错误。 调用失败时无此字段。
 
         :param status: The status of this RunGetFileTranslationResultResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -95,7 +106,7 @@ class RunGetFileTranslationResultResponse(SdkResponse):
         临时url，用于获取翻译结果，有效期十分钟。过期后请再次调用接口获取新的url。调用失败时或翻译状态非FINISHED时无此字段。
 
         :param url: The url of this RunGetFileTranslationResultResponse.
-        :type: str
+        :type url: str
         """
         self._url = url
 
@@ -117,7 +128,7 @@ class RunGetFileTranslationResultResponse(SdkResponse):
         调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
 
         :param error_code: The error_code of this RunGetFileTranslationResultResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -139,7 +150,7 @@ class RunGetFileTranslationResultResponse(SdkResponse):
         调用失败时的错误信息。调用成功时无此字段。
 
         :param error_msg: The error_msg of this RunGetFileTranslationResultResponse.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 

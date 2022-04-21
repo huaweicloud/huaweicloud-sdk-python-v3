@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RateOnDemandReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class RateOnDemandReq:
     }
 
     def __init__(self, project_id=None, inquiry_precision=None, product_infos=None):
-        """RateOnDemandReq - a model defined in huaweicloud sdk"""
+        """RateOnDemandReq
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: 项目ID。  说明： 使用客户Token，可以调用通过assume_role方式获取用户token接口获取“regionId”的取值对应的“project id”。具体请参见如何将合作伙伴Token置换为客户Token的步骤2。IAM子用户调用此接口，需要IAM主账号授权，具体请参考创建用户组并授权。
+        :type project_id: str
+        :param inquiry_precision: 查询价格结果的精度模式。 0：询价结果默认精度截取，即最长保留到元后6位小数点，如0.000001元1：询价结果保留10位精度，即最长保留到元后10位小数点，如1.0000000001元  说明： 如果询价结果只到元后2位或者3位，那么价格也只到元后2位或者3位，不管传0或者传1都一样，只有询价结果到了小数点后面6位以上，传0和传1才有区别。
+        :type inquiry_precision: int
+        :param product_infos: 产品信息列表，询价时要询价产品的信息的列表，具体参见表1。
+        :type product_infos: list[:class:`huaweicloudsdkbssintl.v2.DemandProductInfo`]
+        """
         
         
 
@@ -66,7 +75,7 @@ class RateOnDemandReq:
         项目ID。  说明： 使用客户Token，可以调用通过assume_role方式获取用户token接口获取“regionId”的取值对应的“project id”。具体请参见如何将合作伙伴Token置换为客户Token的步骤2。IAM子用户调用此接口，需要IAM主账号授权，具体请参考创建用户组并授权。
 
         :param project_id: The project_id of this RateOnDemandReq.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -88,7 +97,7 @@ class RateOnDemandReq:
         查询价格结果的精度模式。 0：询价结果默认精度截取，即最长保留到元后6位小数点，如0.000001元1：询价结果保留10位精度，即最长保留到元后10位小数点，如1.0000000001元  说明： 如果询价结果只到元后2位或者3位，那么价格也只到元后2位或者3位，不管传0或者传1都一样，只有询价结果到了小数点后面6位以上，传0和传1才有区别。
 
         :param inquiry_precision: The inquiry_precision of this RateOnDemandReq.
-        :type: int
+        :type inquiry_precision: int
         """
         self._inquiry_precision = inquiry_precision
 
@@ -99,7 +108,7 @@ class RateOnDemandReq:
         产品信息列表，询价时要询价产品的信息的列表，具体参见表1。
 
         :return: The product_infos of this RateOnDemandReq.
-        :rtype: list[DemandProductInfo]
+        :rtype: list[:class:`huaweicloudsdkbssintl.v2.DemandProductInfo`]
         """
         return self._product_infos
 
@@ -110,7 +119,7 @@ class RateOnDemandReq:
         产品信息列表，询价时要询价产品的信息的列表，具体参见表1。
 
         :param product_infos: The product_infos of this RateOnDemandReq.
-        :type: list[DemandProductInfo]
+        :type product_infos: list[:class:`huaweicloudsdkbssintl.v2.DemandProductInfo`]
         """
         self._product_infos = product_infos
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchStopMigrationTasksRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchStopMigrationTasksRequest:
     }
 
     def __init__(self, body=None):
-        """BatchStopMigrationTasksRequest - a model defined in huaweicloud sdk"""
+        """BatchStopMigrationTasksRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the BatchStopMigrationTasksRequest
+        :type body: :class:`huaweicloudsdkdcs.v2.BatchStopMigrationTasksBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class BatchStopMigrationTasksRequest:
 
 
         :return: The body of this BatchStopMigrationTasksRequest.
-        :rtype: BatchStopMigrationTasksBody
+        :rtype: :class:`huaweicloudsdkdcs.v2.BatchStopMigrationTasksBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class BatchStopMigrationTasksRequest:
 
 
         :param body: The body of this BatchStopMigrationTasksRequest.
-        :type: BatchStopMigrationTasksBody
+        :type body: :class:`huaweicloudsdkdcs.v2.BatchStopMigrationTasksBody`
         """
         self._body = body
 

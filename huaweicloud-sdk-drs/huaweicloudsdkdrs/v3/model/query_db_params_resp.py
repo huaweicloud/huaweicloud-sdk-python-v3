@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryDbParamsResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class QueryDbParamsResp:
     }
 
     def __init__(self, params=None):
-        """QueryDbParamsResp - a model defined in huaweicloud sdk"""
+        """QueryDbParamsResp
+
+        The model defined in huaweicloud sdk
+
+        :param params: 
+        :type params: list[:class:`huaweicloudsdkdrs.v3.Params`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class QueryDbParamsResp:
 
 
         :return: The params of this QueryDbParamsResp.
-        :rtype: list[Params]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.Params`]
         """
         return self._params
 
@@ -56,7 +61,7 @@ class QueryDbParamsResp:
 
 
         :param params: The params of this QueryDbParamsResp.
-        :type: list[Params]
+        :type params: list[:class:`huaweicloudsdkdrs.v3.Params`]
         """
         self._params = params
 

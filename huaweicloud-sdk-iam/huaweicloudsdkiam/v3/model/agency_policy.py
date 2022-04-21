@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AgencyPolicy:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AgencyPolicy:
     }
 
     def __init__(self, version=None, statement=None):
-        """AgencyPolicy - a model defined in huaweicloud sdk"""
+        """AgencyPolicy
+
+        The model defined in huaweicloud sdk
+
+        :param version: 权限版本号，创建自定义策略时，该字段值填为“1.1”。 &gt; - 1.0：系统预置的角色。以服务为粒度，提供有限的服务相关角色用于授权。 &gt; - 1.1：策略。IAM最新提供的一种细粒度授权的能力，可以精确到具体服务的操作、资源以及请求条件等。
+        :type version: str
+        :param statement: 授权语句，描述自定义策略的具体内容，不超过8个。
+        :type statement: list[:class:`huaweicloudsdkiam.v3.AgencyPolicyStatement`]
+        """
         
         
 
@@ -61,7 +68,7 @@ class AgencyPolicy:
         权限版本号，创建自定义策略时，该字段值填为“1.1”。 > - 1.0：系统预置的角色。以服务为粒度，提供有限的服务相关角色用于授权。 > - 1.1：策略。IAM最新提供的一种细粒度授权的能力，可以精确到具体服务的操作、资源以及请求条件等。
 
         :param version: The version of this AgencyPolicy.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -72,7 +79,7 @@ class AgencyPolicy:
         授权语句，描述自定义策略的具体内容，不超过8个。
 
         :return: The statement of this AgencyPolicy.
-        :rtype: list[AgencyPolicyStatement]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.AgencyPolicyStatement`]
         """
         return self._statement
 
@@ -83,7 +90,7 @@ class AgencyPolicy:
         授权语句，描述自定义策略的具体内容，不超过8个。
 
         :param statement: The statement of this AgencyPolicy.
-        :type: list[AgencyPolicyStatement]
+        :type statement: list[:class:`huaweicloudsdkiam.v3.AgencyPolicyStatement`]
         """
         self._statement = statement
 

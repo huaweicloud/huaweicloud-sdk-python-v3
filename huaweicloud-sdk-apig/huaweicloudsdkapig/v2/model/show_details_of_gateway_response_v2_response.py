@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDetailsOfGatewayResponseV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ShowDetailsOfGatewayResponseV2Response(SdkResponse):
     }
 
     def __init__(self, name=None, responses=None, id=None, default=None, create_time=None, update_time=None):
-        """ShowDetailsOfGatewayResponseV2Response - a model defined in huaweicloud sdk"""
+        """ShowDetailsOfGatewayResponseV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param name: 响应名称
+        :type name: str
+        :param responses: 错误类型的响应定义，其中key为错误类型。key的枚举值为： - AUTH_FAILURE：认证失败 - AUTH_HEADER_MISSING：认证身份来源缺失 - AUTHORIZER_FAILURE：自定义认证失败 - AUTHORIZER_CONF_FAILURE：自定义认证配置错误 - AUTHORIZER_IDENTITIES_FAILURE：自定义认证身份来源错误 - BACKEND_UNAVAILABLE：后端不可用 - BACKEND_TIMEOUT：后端超时 - THROTTLED：调用次数超出阈值 - UNAUTHORIZED：应用未授权 - ACCESS_DENIED：拒绝访问 - NOT_FOUND：未找到匹配的API - REQUEST_PARAMETERS_FAILURE：请求参数错误 - DEFAULT_4XX：默认4XX - DEFAULT_5XX：默认5XX  每项错误类型均为一个JSON体
+        :type responses: dict(str, ResponseInfoResp)
+        :param id: 响应ID
+        :type id: str
+        :param default: 是否为分组默认响应
+        :type default: bool
+        :param create_time: 创建时间
+        :type create_time: datetime
+        :param update_time: 修改时间
+        :type update_time: datetime
+        """
         
         super(ShowDetailsOfGatewayResponseV2Response, self).__init__()
 
@@ -83,7 +98,7 @@ class ShowDetailsOfGatewayResponseV2Response(SdkResponse):
         响应名称
 
         :param name: The name of this ShowDetailsOfGatewayResponseV2Response.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -105,7 +120,7 @@ class ShowDetailsOfGatewayResponseV2Response(SdkResponse):
         错误类型的响应定义，其中key为错误类型。key的枚举值为： - AUTH_FAILURE：认证失败 - AUTH_HEADER_MISSING：认证身份来源缺失 - AUTHORIZER_FAILURE：自定义认证失败 - AUTHORIZER_CONF_FAILURE：自定义认证配置错误 - AUTHORIZER_IDENTITIES_FAILURE：自定义认证身份来源错误 - BACKEND_UNAVAILABLE：后端不可用 - BACKEND_TIMEOUT：后端超时 - THROTTLED：调用次数超出阈值 - UNAUTHORIZED：应用未授权 - ACCESS_DENIED：拒绝访问 - NOT_FOUND：未找到匹配的API - REQUEST_PARAMETERS_FAILURE：请求参数错误 - DEFAULT_4XX：默认4XX - DEFAULT_5XX：默认5XX  每项错误类型均为一个JSON体
 
         :param responses: The responses of this ShowDetailsOfGatewayResponseV2Response.
-        :type: dict(str, ResponseInfoResp)
+        :type responses: dict(str, ResponseInfoResp)
         """
         self._responses = responses
 
@@ -127,7 +142,7 @@ class ShowDetailsOfGatewayResponseV2Response(SdkResponse):
         响应ID
 
         :param id: The id of this ShowDetailsOfGatewayResponseV2Response.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -149,7 +164,7 @@ class ShowDetailsOfGatewayResponseV2Response(SdkResponse):
         是否为分组默认响应
 
         :param default: The default of this ShowDetailsOfGatewayResponseV2Response.
-        :type: bool
+        :type default: bool
         """
         self._default = default
 
@@ -171,7 +186,7 @@ class ShowDetailsOfGatewayResponseV2Response(SdkResponse):
         创建时间
 
         :param create_time: The create_time of this ShowDetailsOfGatewayResponseV2Response.
-        :type: datetime
+        :type create_time: datetime
         """
         self._create_time = create_time
 
@@ -193,7 +208,7 @@ class ShowDetailsOfGatewayResponseV2Response(SdkResponse):
         修改时间
 
         :param update_time: The update_time of this ShowDetailsOfGatewayResponseV2Response.
-        :type: datetime
+        :type update_time: datetime
         """
         self._update_time = update_time
 

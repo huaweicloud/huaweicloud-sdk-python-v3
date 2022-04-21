@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NodeInstance:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class NodeInstance:
     }
 
     def __init__(self, node_name=None, status=None, plan_time=None, start_time=None, end_time=None, execute_time=None, node_type=None, retry_times=None, instance_id=None, input_row_count=None, output_row_count=None, log_path=None):
-        """NodeInstance - a model defined in huaweicloud sdk"""
+        """NodeInstance
+
+        The model defined in huaweicloud sdk
+
+        :param node_name: 
+        :type node_name: str
+        :param status: 
+        :type status: str
+        :param plan_time: 
+        :type plan_time: int
+        :param start_time: 
+        :type start_time: int
+        :param end_time: 
+        :type end_time: int
+        :param execute_time: 
+        :type execute_time: int
+        :param node_type: 
+        :type node_type: str
+        :param retry_times: 
+        :type retry_times: int
+        :param instance_id: 
+        :type instance_id: int
+        :param input_row_count: 
+        :type input_row_count: int
+        :param output_row_count: 
+        :type output_row_count: int
+        :param log_path: 
+        :type log_path: str
+        """
         
         
 
@@ -111,7 +138,7 @@ class NodeInstance:
 
 
         :param node_name: The node_name of this NodeInstance.
-        :type: str
+        :type node_name: str
         """
         self._node_name = node_name
 
@@ -131,7 +158,7 @@ class NodeInstance:
 
 
         :param status: The status of this NodeInstance.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -151,7 +178,7 @@ class NodeInstance:
 
 
         :param plan_time: The plan_time of this NodeInstance.
-        :type: int
+        :type plan_time: int
         """
         self._plan_time = plan_time
 
@@ -171,7 +198,7 @@ class NodeInstance:
 
 
         :param start_time: The start_time of this NodeInstance.
-        :type: int
+        :type start_time: int
         """
         self._start_time = start_time
 
@@ -191,7 +218,7 @@ class NodeInstance:
 
 
         :param end_time: The end_time of this NodeInstance.
-        :type: int
+        :type end_time: int
         """
         self._end_time = end_time
 
@@ -211,7 +238,7 @@ class NodeInstance:
 
 
         :param execute_time: The execute_time of this NodeInstance.
-        :type: int
+        :type execute_time: int
         """
         self._execute_time = execute_time
 
@@ -231,7 +258,7 @@ class NodeInstance:
 
 
         :param node_type: The node_type of this NodeInstance.
-        :type: str
+        :type node_type: str
         """
         self._node_type = node_type
 
@@ -251,7 +278,7 @@ class NodeInstance:
 
 
         :param retry_times: The retry_times of this NodeInstance.
-        :type: int
+        :type retry_times: int
         """
         self._retry_times = retry_times
 
@@ -271,7 +298,7 @@ class NodeInstance:
 
 
         :param instance_id: The instance_id of this NodeInstance.
-        :type: int
+        :type instance_id: int
         """
         self._instance_id = instance_id
 
@@ -291,7 +318,7 @@ class NodeInstance:
 
 
         :param input_row_count: The input_row_count of this NodeInstance.
-        :type: int
+        :type input_row_count: int
         """
         self._input_row_count = input_row_count
 
@@ -311,7 +338,7 @@ class NodeInstance:
 
 
         :param output_row_count: The output_row_count of this NodeInstance.
-        :type: int
+        :type output_row_count: int
         """
         self._output_row_count = output_row_count
 
@@ -331,7 +358,7 @@ class NodeInstance:
 
 
         :param log_path: The log_path of this NodeInstance.
-        :type: str
+        :type log_path: str
         """
         self._log_path = log_path
 

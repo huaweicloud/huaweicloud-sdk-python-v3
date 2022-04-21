@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAllMembersRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -58,7 +57,41 @@ class ListAllMembersRequest:
     }
 
     def __init__(self, marker=None, limit=None, page_reverse=None, name=None, weight=None, admin_state_up=None, subnet_cidr_id=None, address=None, protocol_port=None, id=None, operating_status=None, enterprise_project_id=None, ip_version=None, pool_id=None, loadbalancer_id=None):
-        """ListAllMembersRequest - a model defined in huaweicloud sdk"""
+        """ListAllMembersRequest
+
+        The model defined in huaweicloud sdk
+
+        :param marker: 上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
+        :type marker: str
+        :param limit: 每页返回的个数。
+        :type limit: int
+        :param page_reverse: 分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。  使用说明： - 必须与limit一起使用。
+        :type page_reverse: bool
+        :param name: 后端云服务器名称。  支持多值查询，查询条件格式：*name&#x3D;xxx&amp;name&#x3D;xxx*。
+        :type name: list[str]
+        :param weight: 后端云服务器的权重，请求按权重在同一后端云服务器组下的后端云服务器间分发。权重为0的后端不再接受新的请求。当后端云服务器所在的后端云服务器组的lb_algorithm的取值为SOURCE_IP时，该字段无效。 支持多值查询，查询条件格式：*weight&#x3D;xxx&amp;weight&#x3D;xxx*。
+        :type weight: list[int]
+        :param admin_state_up: 后端云服务器的管理状态；该字段虽然支持创建、更新，但实际取值决定于member对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
+        :type admin_state_up: bool
+        :param subnet_cidr_id: 后端云服务器所在的子网ID。该子网和后端云服务器关联的负载均衡器的子网必须在同一VPC下。只支持指定IPv4的子网ID。  支持多值查询，查询条件格式：***subnet_cidr_id&#x3D;xxx&amp;subnet_cidr_id&#x3D;xxx*。
+        :type subnet_cidr_id: list[str]
+        :param address: 后端云服务器的对应的IP地址。 支持多值查询，查询条件格式：*address&#x3D;xxx&amp;address&#x3D;xxx*。
+        :type address: list[str]
+        :param protocol_port: 后端服务器端口号。  支持多值查询，查询条件格式：*protocol_port&#x3D;xxx&amp;protocol_port&#x3D;xxx*。
+        :type protocol_port: list[int]
+        :param id: 后端云服务器ID。  支持多值查询，查询条件格式：*id&#x3D;xxx&amp;id&#x3D;xxx*。
+        :type id: list[str]
+        :param operating_status: 后端云服务器的健康状态，取值： ONLINE，后端服务器正常运行。 NO_MONITOR，后端服务器无健康检查。 OFFLINE，已下线。  支持多值查询，查询条件格式：*operating_status&#x3D;xxx&amp;operating_status&#x3D;*。
+        :type operating_status: list[str]
+        :param enterprise_project_id: 企业项目ID。  支持多值查询，查询条件格式：*enterprise_project_id&#x3D;xxx&amp;enterprise_project_id&#x3D;xxx*。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
+        :type enterprise_project_id: list[str]
+        :param ip_version: IP版本，取值v4、v6。  支持多值查询，查询条件格式：*ip_version&#x3D;xxx&amp;ip_version&#x3D;xxx*。
+        :type ip_version: list[str]
+        :param pool_id: member所属的服务器组ID  支持多值查询，查询条件格式：*pool_id&#x3D;xxx&amp;pool_id&#x3D;xxx*。
+        :type pool_id: list[str]
+        :param loadbalancer_id: member所属的负载均衡器ID。  支持多值查询，查询条件格式：*loadbalancer_id&#x3D;xxx&amp;loadbalancer_id&#x3D;xxx*。
+        :type loadbalancer_id: list[str]
+        """
         
         
 
@@ -128,7 +161,7 @@ class ListAllMembersRequest:
         上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
         :param marker: The marker of this ListAllMembersRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -150,7 +183,7 @@ class ListAllMembersRequest:
         每页返回的个数。
 
         :param limit: The limit of this ListAllMembersRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -172,7 +205,7 @@ class ListAllMembersRequest:
         分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。  使用说明： - 必须与limit一起使用。
 
         :param page_reverse: The page_reverse of this ListAllMembersRequest.
-        :type: bool
+        :type page_reverse: bool
         """
         self._page_reverse = page_reverse
 
@@ -194,7 +227,7 @@ class ListAllMembersRequest:
         后端云服务器名称。  支持多值查询，查询条件格式：*name=xxx&name=xxx*。
 
         :param name: The name of this ListAllMembersRequest.
-        :type: list[str]
+        :type name: list[str]
         """
         self._name = name
 
@@ -216,7 +249,7 @@ class ListAllMembersRequest:
         后端云服务器的权重，请求按权重在同一后端云服务器组下的后端云服务器间分发。权重为0的后端不再接受新的请求。当后端云服务器所在的后端云服务器组的lb_algorithm的取值为SOURCE_IP时，该字段无效。 支持多值查询，查询条件格式：*weight=xxx&weight=xxx*。
 
         :param weight: The weight of this ListAllMembersRequest.
-        :type: list[int]
+        :type weight: list[int]
         """
         self._weight = weight
 
@@ -238,7 +271,7 @@ class ListAllMembersRequest:
         后端云服务器的管理状态；该字段虽然支持创建、更新，但实际取值决定于member对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
 
         :param admin_state_up: The admin_state_up of this ListAllMembersRequest.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 
@@ -260,7 +293,7 @@ class ListAllMembersRequest:
         后端云服务器所在的子网ID。该子网和后端云服务器关联的负载均衡器的子网必须在同一VPC下。只支持指定IPv4的子网ID。  支持多值查询，查询条件格式：***subnet_cidr_id=xxx&subnet_cidr_id=xxx*。
 
         :param subnet_cidr_id: The subnet_cidr_id of this ListAllMembersRequest.
-        :type: list[str]
+        :type subnet_cidr_id: list[str]
         """
         self._subnet_cidr_id = subnet_cidr_id
 
@@ -282,7 +315,7 @@ class ListAllMembersRequest:
         后端云服务器的对应的IP地址。 支持多值查询，查询条件格式：*address=xxx&address=xxx*。
 
         :param address: The address of this ListAllMembersRequest.
-        :type: list[str]
+        :type address: list[str]
         """
         self._address = address
 
@@ -304,7 +337,7 @@ class ListAllMembersRequest:
         后端服务器端口号。  支持多值查询，查询条件格式：*protocol_port=xxx&protocol_port=xxx*。
 
         :param protocol_port: The protocol_port of this ListAllMembersRequest.
-        :type: list[int]
+        :type protocol_port: list[int]
         """
         self._protocol_port = protocol_port
 
@@ -326,7 +359,7 @@ class ListAllMembersRequest:
         后端云服务器ID。  支持多值查询，查询条件格式：*id=xxx&id=xxx*。
 
         :param id: The id of this ListAllMembersRequest.
-        :type: list[str]
+        :type id: list[str]
         """
         self._id = id
 
@@ -348,7 +381,7 @@ class ListAllMembersRequest:
         后端云服务器的健康状态，取值： ONLINE，后端服务器正常运行。 NO_MONITOR，后端服务器无健康检查。 OFFLINE，已下线。  支持多值查询，查询条件格式：*operating_status=xxx&operating_status=*。
 
         :param operating_status: The operating_status of this ListAllMembersRequest.
-        :type: list[str]
+        :type operating_status: list[str]
         """
         self._operating_status = operating_status
 
@@ -370,7 +403,7 @@ class ListAllMembersRequest:
         企业项目ID。  支持多值查询，查询条件格式：*enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
 
         :param enterprise_project_id: The enterprise_project_id of this ListAllMembersRequest.
-        :type: list[str]
+        :type enterprise_project_id: list[str]
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -392,7 +425,7 @@ class ListAllMembersRequest:
         IP版本，取值v4、v6。  支持多值查询，查询条件格式：*ip_version=xxx&ip_version=xxx*。
 
         :param ip_version: The ip_version of this ListAllMembersRequest.
-        :type: list[str]
+        :type ip_version: list[str]
         """
         self._ip_version = ip_version
 
@@ -414,7 +447,7 @@ class ListAllMembersRequest:
         member所属的服务器组ID  支持多值查询，查询条件格式：*pool_id=xxx&pool_id=xxx*。
 
         :param pool_id: The pool_id of this ListAllMembersRequest.
-        :type: list[str]
+        :type pool_id: list[str]
         """
         self._pool_id = pool_id
 
@@ -436,7 +469,7 @@ class ListAllMembersRequest:
         member所属的负载均衡器ID。  支持多值查询，查询条件格式：*loadbalancer_id=xxx&loadbalancer_id=xxx*。
 
         :param loadbalancer_id: The loadbalancer_id of this ListAllMembersRequest.
-        :type: list[str]
+        :type loadbalancer_id: list[str]
         """
         self._loadbalancer_id = loadbalancer_id
 

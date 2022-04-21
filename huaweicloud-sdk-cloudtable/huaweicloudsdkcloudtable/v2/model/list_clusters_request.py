@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListClustersRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListClustersRequest:
     }
 
     def __init__(self, offset=None, limit=None):
-        """ListClustersRequest - a model defined in huaweicloud sdk"""
+        """ListClustersRequest
+
+        The model defined in huaweicloud sdk
+
+        :param offset: 分页参数，列表的偏移量，默认值为0
+        :type offset: int
+        :param limit: 分页参数，列表当前分页的数量限制，默认为10。
+        :type limit: int
+        """
         
         
 
@@ -63,7 +70,7 @@ class ListClustersRequest:
         分页参数，列表的偏移量，默认值为0
 
         :param offset: The offset of this ListClustersRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -85,7 +92,7 @@ class ListClustersRequest:
         分页参数，列表当前分页的数量限制，默认为10。
 
         :param limit: The limit of this ListClustersRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

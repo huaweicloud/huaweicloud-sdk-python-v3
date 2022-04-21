@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RemoveNodesSpec:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RemoveNodesSpec:
     }
 
     def __init__(self, login=None, nodes=None):
-        """RemoveNodesSpec - a model defined in huaweicloud sdk"""
+        """RemoveNodesSpec
+
+        The model defined in huaweicloud sdk
+
+        :param login: 
+        :type login: :class:`huaweicloudsdkcce.v3.Login`
+        :param nodes: 待操作节点列表
+        :type nodes: list[:class:`huaweicloudsdkcce.v3.NodeItem`]
+        """
         
         
 
@@ -49,7 +56,7 @@ class RemoveNodesSpec:
 
 
         :return: The login of this RemoveNodesSpec.
-        :rtype: Login
+        :rtype: :class:`huaweicloudsdkcce.v3.Login`
         """
         return self._login
 
@@ -59,7 +66,7 @@ class RemoveNodesSpec:
 
 
         :param login: The login of this RemoveNodesSpec.
-        :type: Login
+        :type login: :class:`huaweicloudsdkcce.v3.Login`
         """
         self._login = login
 
@@ -70,7 +77,7 @@ class RemoveNodesSpec:
         待操作节点列表
 
         :return: The nodes of this RemoveNodesSpec.
-        :rtype: list[NodeItem]
+        :rtype: list[:class:`huaweicloudsdkcce.v3.NodeItem`]
         """
         return self._nodes
 
@@ -81,7 +88,7 @@ class RemoveNodesSpec:
         待操作节点列表
 
         :param nodes: The nodes of this RemoveNodesSpec.
-        :type: list[NodeItem]
+        :type nodes: list[:class:`huaweicloudsdkcce.v3.NodeItem`]
         """
         self._nodes = nodes
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDeployment:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateDeployment:
     }
 
     def __init__(self, deployment=None, description=None):
-        """UpdateDeployment - a model defined in huaweicloud sdk"""
+        """UpdateDeployment
+
+        The model defined in huaweicloud sdk
+
+        :param deployment: 
+        :type deployment: :class:`huaweicloudsdkief.v1.UpdatePodDeployment`
+        :param description: 应用部署描述修改，只修改描述不需要传入deployment参数
+        :type description: str
+        """
         
         
 
@@ -51,7 +58,7 @@ class UpdateDeployment:
 
 
         :return: The deployment of this UpdateDeployment.
-        :rtype: UpdatePodDeployment
+        :rtype: :class:`huaweicloudsdkief.v1.UpdatePodDeployment`
         """
         return self._deployment
 
@@ -61,7 +68,7 @@ class UpdateDeployment:
 
 
         :param deployment: The deployment of this UpdateDeployment.
-        :type: UpdatePodDeployment
+        :type deployment: :class:`huaweicloudsdkief.v1.UpdatePodDeployment`
         """
         self._deployment = deployment
 
@@ -83,7 +90,7 @@ class UpdateDeployment:
         应用部署描述修改，只修改描述不需要传入deployment参数
 
         :param description: The description of this UpdateDeployment.
-        :type: str
+        :type description: str
         """
         self._description = description
 

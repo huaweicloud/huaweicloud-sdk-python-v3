@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OriginHostBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class OriginHostBody:
     }
 
     def __init__(self, origin_host_type=None, customize_domain=None):
-        """OriginHostBody - a model defined in huaweicloud sdk"""
+        """OriginHostBody
+
+        The model defined in huaweicloud sdk
+
+        :param origin_host_type: accelerate：选择加速域名作为回源地址；  customize：使用自定义的域名作为回源host域名；
+        :type origin_host_type: str
+        :param customize_domain: 自定义回源域名，origin_host_type为 customize时传入该参数。
+        :type customize_domain: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class OriginHostBody:
         accelerate：选择加速域名作为回源地址；  customize：使用自定义的域名作为回源host域名；
 
         :param origin_host_type: The origin_host_type of this OriginHostBody.
-        :type: str
+        :type origin_host_type: str
         """
         self._origin_host_type = origin_host_type
 
@@ -84,7 +91,7 @@ class OriginHostBody:
         自定义回源域名，origin_host_type为 customize时传入该参数。
 
         :param customize_domain: The customize_domain of this OriginHostBody.
-        :type: str
+        :type customize_domain: str
         """
         self._customize_domain = customize_domain
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AppResetCreate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class AppResetCreate:
     }
 
     def __init__(self, app_secret=None):
-        """AppResetCreate - a model defined in huaweicloud sdk"""
+        """AppResetCreate
+
+        The model defined in huaweicloud sdk
+
+        :param app_secret: 密钥支持英文，数字，“_”,“-”,“!”,“@”,“#”,“$”,“%”,且只能以英文或数字开头，8 ~ 64个字符。用户自定义APP的密钥需要开启配额开关
+        :type app_secret: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class AppResetCreate:
         密钥支持英文，数字，“_”,“-”,“!”,“@”,“#”,“$”,“%”,且只能以英文或数字开头，8 ~ 64个字符。用户自定义APP的密钥需要开启配额开关
 
         :param app_secret: The app_secret of this AppResetCreate.
-        :type: str
+        :type app_secret: str
         """
         self._app_secret = app_secret
 

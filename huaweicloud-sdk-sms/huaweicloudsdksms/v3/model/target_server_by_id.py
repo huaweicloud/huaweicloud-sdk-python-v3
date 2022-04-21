@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TargetServerById:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class TargetServerById:
     }
 
     def __init__(self, vm_id=None, name=None):
-        """TargetServerById - a model defined in huaweicloud sdk"""
+        """TargetServerById
+
+        The model defined in huaweicloud sdk
+
+        :param vm_id: 目的端服务器ID
+        :type vm_id: str
+        :param name: 目的端服务器名称
+        :type name: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class TargetServerById:
         目的端服务器ID
 
         :param vm_id: The vm_id of this TargetServerById.
-        :type: str
+        :type vm_id: str
         """
         self._vm_id = vm_id
 
@@ -85,7 +92,7 @@ class TargetServerById:
         目的端服务器名称
 
         :param name: The name of this TargetServerById.
-        :type: str
+        :type name: str
         """
         self._name = name
 

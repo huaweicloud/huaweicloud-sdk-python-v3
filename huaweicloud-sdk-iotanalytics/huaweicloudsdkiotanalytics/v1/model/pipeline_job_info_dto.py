@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PipelineJobInfoDto:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class PipelineJobInfoDto:
     }
 
     def __init__(self, pipeline_id=None, pipeline_name=None, data_source_id=None, data_store_list=None, pipeline_description=None, tag_list=None, pipeline_state=None, status=None, rtu=None, created_time=None, modified_time=None, user_id=None, has_savepoint=None):
-        """PipelineJobInfoDto - a model defined in huaweicloud sdk"""
+        """PipelineJobInfoDto
+
+        The model defined in huaweicloud sdk
+
+        :param pipeline_id: 管道ID
+        :type pipeline_id: str
+        :param pipeline_name: 管道名称
+        :type pipeline_name: str
+        :param data_source_id: 数据源ID
+        :type data_source_id: str
+        :param data_store_list: 存储列表
+        :type data_store_list: list[:class:`huaweicloudsdkiotanalytics.v1.DataStoreDto`]
+        :param pipeline_description: 管道描述
+        :type pipeline_description: str
+        :param tag_list: 存储列表
+        :type tag_list: list[:class:`huaweicloudsdkiotanalytics.v1.TagInfoDto`]
+        :param pipeline_state: 管道状态
+        :type pipeline_state: str
+        :param status: 操作状态
+        :type status: str
+        :param rtu: 运行管道的RTU个数
+        :type rtu: int
+        :param created_time: 创建时间
+        :type created_time: str
+        :param modified_time: 修改时间
+        :type modified_time: str
+        :param user_id: 用户ID
+        :type user_id: str
+        :param has_savepoint: 已停止的管道作业是否有历史缓存数据
+        :type has_savepoint: bool
+        """
         
         
 
@@ -118,7 +147,7 @@ class PipelineJobInfoDto:
         管道ID
 
         :param pipeline_id: The pipeline_id of this PipelineJobInfoDto.
-        :type: str
+        :type pipeline_id: str
         """
         self._pipeline_id = pipeline_id
 
@@ -140,7 +169,7 @@ class PipelineJobInfoDto:
         管道名称
 
         :param pipeline_name: The pipeline_name of this PipelineJobInfoDto.
-        :type: str
+        :type pipeline_name: str
         """
         self._pipeline_name = pipeline_name
 
@@ -162,7 +191,7 @@ class PipelineJobInfoDto:
         数据源ID
 
         :param data_source_id: The data_source_id of this PipelineJobInfoDto.
-        :type: str
+        :type data_source_id: str
         """
         self._data_source_id = data_source_id
 
@@ -173,7 +202,7 @@ class PipelineJobInfoDto:
         存储列表
 
         :return: The data_store_list of this PipelineJobInfoDto.
-        :rtype: list[DataStoreDto]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.DataStoreDto`]
         """
         return self._data_store_list
 
@@ -184,7 +213,7 @@ class PipelineJobInfoDto:
         存储列表
 
         :param data_store_list: The data_store_list of this PipelineJobInfoDto.
-        :type: list[DataStoreDto]
+        :type data_store_list: list[:class:`huaweicloudsdkiotanalytics.v1.DataStoreDto`]
         """
         self._data_store_list = data_store_list
 
@@ -206,7 +235,7 @@ class PipelineJobInfoDto:
         管道描述
 
         :param pipeline_description: The pipeline_description of this PipelineJobInfoDto.
-        :type: str
+        :type pipeline_description: str
         """
         self._pipeline_description = pipeline_description
 
@@ -217,7 +246,7 @@ class PipelineJobInfoDto:
         存储列表
 
         :return: The tag_list of this PipelineJobInfoDto.
-        :rtype: list[TagInfoDto]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.TagInfoDto`]
         """
         return self._tag_list
 
@@ -228,7 +257,7 @@ class PipelineJobInfoDto:
         存储列表
 
         :param tag_list: The tag_list of this PipelineJobInfoDto.
-        :type: list[TagInfoDto]
+        :type tag_list: list[:class:`huaweicloudsdkiotanalytics.v1.TagInfoDto`]
         """
         self._tag_list = tag_list
 
@@ -250,7 +279,7 @@ class PipelineJobInfoDto:
         管道状态
 
         :param pipeline_state: The pipeline_state of this PipelineJobInfoDto.
-        :type: str
+        :type pipeline_state: str
         """
         self._pipeline_state = pipeline_state
 
@@ -272,7 +301,7 @@ class PipelineJobInfoDto:
         操作状态
 
         :param status: The status of this PipelineJobInfoDto.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -294,7 +323,7 @@ class PipelineJobInfoDto:
         运行管道的RTU个数
 
         :param rtu: The rtu of this PipelineJobInfoDto.
-        :type: int
+        :type rtu: int
         """
         self._rtu = rtu
 
@@ -316,7 +345,7 @@ class PipelineJobInfoDto:
         创建时间
 
         :param created_time: The created_time of this PipelineJobInfoDto.
-        :type: str
+        :type created_time: str
         """
         self._created_time = created_time
 
@@ -338,7 +367,7 @@ class PipelineJobInfoDto:
         修改时间
 
         :param modified_time: The modified_time of this PipelineJobInfoDto.
-        :type: str
+        :type modified_time: str
         """
         self._modified_time = modified_time
 
@@ -360,7 +389,7 @@ class PipelineJobInfoDto:
         用户ID
 
         :param user_id: The user_id of this PipelineJobInfoDto.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -382,7 +411,7 @@ class PipelineJobInfoDto:
         已停止的管道作业是否有历史缓存数据
 
         :param has_savepoint: The has_savepoint of this PipelineJobInfoDto.
-        :type: bool
+        :type has_savepoint: bool
         """
         self._has_savepoint = has_savepoint
 

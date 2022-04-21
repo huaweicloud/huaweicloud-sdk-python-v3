@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FinalReport:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class FinalReport:
     }
 
     def __init__(self, generated_time=None, wide_table_num=None, user_complete_degree=None, item_complete_degree=None, bhv_count=None, user_long_feature_report=None, user_float_feature_report=None, user_str_feature_report=None, user_str_array_feature_report=None, item_long_feature_report=None, item_float_feature_report=None, item_str_feature_report=None, item_str_array_feature_report=None):
-        """FinalReport - a model defined in huaweicloud sdk"""
+        """FinalReport
+
+        The model defined in huaweicloud sdk
+
+        :param generated_time: 报告生成时间。
+        :type generated_time: str
+        :param wide_table_num: 宽表条目数，行为数据去重以后的数目。
+        :type wide_table_num: int
+        :param user_complete_degree: 用户齐全度，一条行为中的用户是否在产生这条行为的时候拥有画像。
+        :type user_complete_degree: float
+        :param item_complete_degree: 物品齐全度，一条行为中的物品是否在这条行为产生的时候拥有画像。
+        :type item_complete_degree: float
+        :param bhv_count: 行为次数统计。
+        :type bhv_count: dict(str, int)
+        :param user_long_feature_report: 用户数字类型特征统计。
+        :type user_long_feature_report: list[:class:`huaweicloudsdkres.v1.NumFeatureReport`]
+        :param user_float_feature_report: 用户连续类型特征统计。
+        :type user_float_feature_report: list[:class:`huaweicloudsdkres.v1.NumFeatureReport`]
+        :param user_str_feature_report: 用户单值离散值类型特征统计。
+        :type user_str_feature_report: list[:class:`huaweicloudsdkres.v1.StrFeatureReport`]
+        :param user_str_array_feature_report: 用户多值离散值类型特征统计。
+        :type user_str_array_feature_report: list[:class:`huaweicloudsdkres.v1.StrFeatureReport`]
+        :param item_long_feature_report: 物品数字类型特征统计。
+        :type item_long_feature_report: list[:class:`huaweicloudsdkres.v1.NumFeatureReport`]
+        :param item_float_feature_report: 物品连续类型特征统计。
+        :type item_float_feature_report: list[:class:`huaweicloudsdkres.v1.NumFeatureReport`]
+        :param item_str_feature_report: 物品单值离散值类型特征统计。
+        :type item_str_feature_report: list[:class:`huaweicloudsdkres.v1.StrFeatureReport`]
+        :param item_str_array_feature_report: 物品多值离散值类型特征统计。
+        :type item_str_array_feature_report: list[:class:`huaweicloudsdkres.v1.StrFeatureReport`]
+        """
         
         
 
@@ -118,7 +147,7 @@ class FinalReport:
         报告生成时间。
 
         :param generated_time: The generated_time of this FinalReport.
-        :type: str
+        :type generated_time: str
         """
         self._generated_time = generated_time
 
@@ -140,7 +169,7 @@ class FinalReport:
         宽表条目数，行为数据去重以后的数目。
 
         :param wide_table_num: The wide_table_num of this FinalReport.
-        :type: int
+        :type wide_table_num: int
         """
         self._wide_table_num = wide_table_num
 
@@ -162,7 +191,7 @@ class FinalReport:
         用户齐全度，一条行为中的用户是否在产生这条行为的时候拥有画像。
 
         :param user_complete_degree: The user_complete_degree of this FinalReport.
-        :type: float
+        :type user_complete_degree: float
         """
         self._user_complete_degree = user_complete_degree
 
@@ -184,7 +213,7 @@ class FinalReport:
         物品齐全度，一条行为中的物品是否在这条行为产生的时候拥有画像。
 
         :param item_complete_degree: The item_complete_degree of this FinalReport.
-        :type: float
+        :type item_complete_degree: float
         """
         self._item_complete_degree = item_complete_degree
 
@@ -206,7 +235,7 @@ class FinalReport:
         行为次数统计。
 
         :param bhv_count: The bhv_count of this FinalReport.
-        :type: dict(str, int)
+        :type bhv_count: dict(str, int)
         """
         self._bhv_count = bhv_count
 
@@ -217,7 +246,7 @@ class FinalReport:
         用户数字类型特征统计。
 
         :return: The user_long_feature_report of this FinalReport.
-        :rtype: list[NumFeatureReport]
+        :rtype: list[:class:`huaweicloudsdkres.v1.NumFeatureReport`]
         """
         return self._user_long_feature_report
 
@@ -228,7 +257,7 @@ class FinalReport:
         用户数字类型特征统计。
 
         :param user_long_feature_report: The user_long_feature_report of this FinalReport.
-        :type: list[NumFeatureReport]
+        :type user_long_feature_report: list[:class:`huaweicloudsdkres.v1.NumFeatureReport`]
         """
         self._user_long_feature_report = user_long_feature_report
 
@@ -239,7 +268,7 @@ class FinalReport:
         用户连续类型特征统计。
 
         :return: The user_float_feature_report of this FinalReport.
-        :rtype: list[NumFeatureReport]
+        :rtype: list[:class:`huaweicloudsdkres.v1.NumFeatureReport`]
         """
         return self._user_float_feature_report
 
@@ -250,7 +279,7 @@ class FinalReport:
         用户连续类型特征统计。
 
         :param user_float_feature_report: The user_float_feature_report of this FinalReport.
-        :type: list[NumFeatureReport]
+        :type user_float_feature_report: list[:class:`huaweicloudsdkres.v1.NumFeatureReport`]
         """
         self._user_float_feature_report = user_float_feature_report
 
@@ -261,7 +290,7 @@ class FinalReport:
         用户单值离散值类型特征统计。
 
         :return: The user_str_feature_report of this FinalReport.
-        :rtype: list[StrFeatureReport]
+        :rtype: list[:class:`huaweicloudsdkres.v1.StrFeatureReport`]
         """
         return self._user_str_feature_report
 
@@ -272,7 +301,7 @@ class FinalReport:
         用户单值离散值类型特征统计。
 
         :param user_str_feature_report: The user_str_feature_report of this FinalReport.
-        :type: list[StrFeatureReport]
+        :type user_str_feature_report: list[:class:`huaweicloudsdkres.v1.StrFeatureReport`]
         """
         self._user_str_feature_report = user_str_feature_report
 
@@ -283,7 +312,7 @@ class FinalReport:
         用户多值离散值类型特征统计。
 
         :return: The user_str_array_feature_report of this FinalReport.
-        :rtype: list[StrFeatureReport]
+        :rtype: list[:class:`huaweicloudsdkres.v1.StrFeatureReport`]
         """
         return self._user_str_array_feature_report
 
@@ -294,7 +323,7 @@ class FinalReport:
         用户多值离散值类型特征统计。
 
         :param user_str_array_feature_report: The user_str_array_feature_report of this FinalReport.
-        :type: list[StrFeatureReport]
+        :type user_str_array_feature_report: list[:class:`huaweicloudsdkres.v1.StrFeatureReport`]
         """
         self._user_str_array_feature_report = user_str_array_feature_report
 
@@ -305,7 +334,7 @@ class FinalReport:
         物品数字类型特征统计。
 
         :return: The item_long_feature_report of this FinalReport.
-        :rtype: list[NumFeatureReport]
+        :rtype: list[:class:`huaweicloudsdkres.v1.NumFeatureReport`]
         """
         return self._item_long_feature_report
 
@@ -316,7 +345,7 @@ class FinalReport:
         物品数字类型特征统计。
 
         :param item_long_feature_report: The item_long_feature_report of this FinalReport.
-        :type: list[NumFeatureReport]
+        :type item_long_feature_report: list[:class:`huaweicloudsdkres.v1.NumFeatureReport`]
         """
         self._item_long_feature_report = item_long_feature_report
 
@@ -327,7 +356,7 @@ class FinalReport:
         物品连续类型特征统计。
 
         :return: The item_float_feature_report of this FinalReport.
-        :rtype: list[NumFeatureReport]
+        :rtype: list[:class:`huaweicloudsdkres.v1.NumFeatureReport`]
         """
         return self._item_float_feature_report
 
@@ -338,7 +367,7 @@ class FinalReport:
         物品连续类型特征统计。
 
         :param item_float_feature_report: The item_float_feature_report of this FinalReport.
-        :type: list[NumFeatureReport]
+        :type item_float_feature_report: list[:class:`huaweicloudsdkres.v1.NumFeatureReport`]
         """
         self._item_float_feature_report = item_float_feature_report
 
@@ -349,7 +378,7 @@ class FinalReport:
         物品单值离散值类型特征统计。
 
         :return: The item_str_feature_report of this FinalReport.
-        :rtype: list[StrFeatureReport]
+        :rtype: list[:class:`huaweicloudsdkres.v1.StrFeatureReport`]
         """
         return self._item_str_feature_report
 
@@ -360,7 +389,7 @@ class FinalReport:
         物品单值离散值类型特征统计。
 
         :param item_str_feature_report: The item_str_feature_report of this FinalReport.
-        :type: list[StrFeatureReport]
+        :type item_str_feature_report: list[:class:`huaweicloudsdkres.v1.StrFeatureReport`]
         """
         self._item_str_feature_report = item_str_feature_report
 
@@ -371,7 +400,7 @@ class FinalReport:
         物品多值离散值类型特征统计。
 
         :return: The item_str_array_feature_report of this FinalReport.
-        :rtype: list[StrFeatureReport]
+        :rtype: list[:class:`huaweicloudsdkres.v1.StrFeatureReport`]
         """
         return self._item_str_array_feature_report
 
@@ -382,7 +411,7 @@ class FinalReport:
         物品多值离散值类型特征统计。
 
         :param item_str_array_feature_report: The item_str_array_feature_report of this FinalReport.
-        :type: list[StrFeatureReport]
+        :type item_str_array_feature_report: list[:class:`huaweicloudsdkres.v1.StrFeatureReport`]
         """
         self._item_str_array_feature_report = item_str_array_feature_report
 

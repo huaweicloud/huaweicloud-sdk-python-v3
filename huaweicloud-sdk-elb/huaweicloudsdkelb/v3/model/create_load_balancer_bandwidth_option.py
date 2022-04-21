@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateLoadBalancerBandwidthOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class CreateLoadBalancerBandwidthOption:
     }
 
     def __init__(self, name=None, size=None, charge_mode=None, share_type=None, billing_info=None, id=None):
-        """CreateLoadBalancerBandwidthOption - a model defined in huaweicloud sdk"""
+        """CreateLoadBalancerBandwidthOption
+
+        The model defined in huaweicloud sdk
+
+        :param name: 带宽名称。取值：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）  使用说明： - 如果share_type是PER，该字段是必选。 - 如果bandwidth对象的id有值，该字段被忽略。
+        :type name: str
+        :param size: 带宽大小 取值范围:默认1Mbit/s~2000Mbit/s(具体范围以各区域配置为准,请参见控制台对应页面显示)。  注意：调整带宽时的最小单位会根据带宽范围不同存在差异。 小于等于300Mbit/s:默认最小单位为1Mbit/s。 300Mbit/s~1000Mbit/s:默认最小单位为50Mbit/s。 大于1000Mbit/s:默认最小单位为500Mbit/s。  使用说明： - 当id字段为null时，size是必须的。
+        :type size: int
+        :param charge_mode: 计费模式。 [取值范围：bandwidth表示按带宽计费，traffic表示按流量计费。](tag:hws,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42) [当前仅支持traffic按流量计费](tag:dt,dt_test,hcso_dt) 使用说明：   - 当id字段为null时，charge_mode是必须的。
+        :type charge_mode: str
+        :param share_type: 带宽类型。 取值： - PER：独享带宽。 - WHOLE：共享带宽。  使用说明： - 当id字段为null时，share_type是必须的。当id不为null时，该字段被忽略。 - 该字段为WHOLE时,必须指定带宽ID。 - IPv6的EIP不支持WHOLE类型带宽。
+        :type share_type: str
+        :param billing_info: 预留资源账单信息，默认为空表示按需计费，非空为包周期。 不支持该字段，请勿使用。
+        :type billing_info: str
+        :param id: 功能说明：使用已有的共享带宽创建IP 取值范围：共享带宽ID  使用说明： - WHOLE类型的带宽ID； - 在预付费的情况下，不填该值。该字段取空字符串时，会被忽略。
+        :type id: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class CreateLoadBalancerBandwidthOption:
         带宽名称。取值：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）  使用说明： - 如果share_type是PER，该字段是必选。 - 如果bandwidth对象的id有值，该字段被忽略。
 
         :param name: The name of this CreateLoadBalancerBandwidthOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -105,7 +120,7 @@ class CreateLoadBalancerBandwidthOption:
         带宽大小 取值范围:默认1Mbit/s~2000Mbit/s(具体范围以各区域配置为准,请参见控制台对应页面显示)。  注意：调整带宽时的最小单位会根据带宽范围不同存在差异。 小于等于300Mbit/s:默认最小单位为1Mbit/s。 300Mbit/s~1000Mbit/s:默认最小单位为50Mbit/s。 大于1000Mbit/s:默认最小单位为500Mbit/s。  使用说明： - 当id字段为null时，size是必须的。
 
         :param size: The size of this CreateLoadBalancerBandwidthOption.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -127,7 +142,7 @@ class CreateLoadBalancerBandwidthOption:
         计费模式。 [取值范围：bandwidth表示按带宽计费，traffic表示按流量计费。](tag:hws,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42) [当前仅支持traffic按流量计费](tag:dt,dt_test,hcso_dt) 使用说明：   - 当id字段为null时，charge_mode是必须的。
 
         :param charge_mode: The charge_mode of this CreateLoadBalancerBandwidthOption.
-        :type: str
+        :type charge_mode: str
         """
         self._charge_mode = charge_mode
 
@@ -149,7 +164,7 @@ class CreateLoadBalancerBandwidthOption:
         带宽类型。 取值： - PER：独享带宽。 - WHOLE：共享带宽。  使用说明： - 当id字段为null时，share_type是必须的。当id不为null时，该字段被忽略。 - 该字段为WHOLE时,必须指定带宽ID。 - IPv6的EIP不支持WHOLE类型带宽。
 
         :param share_type: The share_type of this CreateLoadBalancerBandwidthOption.
-        :type: str
+        :type share_type: str
         """
         self._share_type = share_type
 
@@ -171,7 +186,7 @@ class CreateLoadBalancerBandwidthOption:
         预留资源账单信息，默认为空表示按需计费，非空为包周期。 不支持该字段，请勿使用。
 
         :param billing_info: The billing_info of this CreateLoadBalancerBandwidthOption.
-        :type: str
+        :type billing_info: str
         """
         self._billing_info = billing_info
 
@@ -193,7 +208,7 @@ class CreateLoadBalancerBandwidthOption:
         功能说明：使用已有的共享带宽创建IP 取值范围：共享带宽ID  使用说明： - WHOLE类型的带宽ID； - 在预付费的情况下，不填该值。该字段取空字符串时，会被忽略。
 
         :param id: The id of this CreateLoadBalancerBandwidthOption.
-        :type: str
+        :type id: str
         """
         self._id = id
 

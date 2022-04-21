@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListInstancesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ListInstancesRequest:
     }
 
     def __init__(self, limit=None, offset=None, is_temporary=None, label=None, search=None, sort_dir=None, sort_key=None):
-        """ListInstancesRequest - a model defined in huaweicloud sdk"""
+        """ListInstancesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 每页显示的条目数量 10/15/30
+        :type limit: int
+        :param offset: 偏移量，表示从此偏移量开始查询
+        :type offset: int
+        :param is_temporary: 是否页面显示（以标签配置为准）
+        :type is_temporary: bool
+        :param label: 标签
+        :type label: str
+        :param search: 关键字查询(根据实例名，描述模糊查询)
+        :type search: str
+        :param sort_dir: 排序方式 asc/desc
+        :type sort_dir: str
+        :param sort_key: 排序字段。 display_name 实例名、status状态、pvc_quantity 存储容量、created_time 创建时间、stack_id 技术栈
+        :type sort_key: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class ListInstancesRequest:
         每页显示的条目数量 10/15/30
 
         :param limit: The limit of this ListInstancesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -110,7 +127,7 @@ class ListInstancesRequest:
         偏移量，表示从此偏移量开始查询
 
         :param offset: The offset of this ListInstancesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -132,7 +149,7 @@ class ListInstancesRequest:
         是否页面显示（以标签配置为准）
 
         :param is_temporary: The is_temporary of this ListInstancesRequest.
-        :type: bool
+        :type is_temporary: bool
         """
         self._is_temporary = is_temporary
 
@@ -154,7 +171,7 @@ class ListInstancesRequest:
         标签
 
         :param label: The label of this ListInstancesRequest.
-        :type: str
+        :type label: str
         """
         self._label = label
 
@@ -176,7 +193,7 @@ class ListInstancesRequest:
         关键字查询(根据实例名，描述模糊查询)
 
         :param search: The search of this ListInstancesRequest.
-        :type: str
+        :type search: str
         """
         self._search = search
 
@@ -198,7 +215,7 @@ class ListInstancesRequest:
         排序方式 asc/desc
 
         :param sort_dir: The sort_dir of this ListInstancesRequest.
-        :type: str
+        :type sort_dir: str
         """
         self._sort_dir = sort_dir
 
@@ -220,7 +237,7 @@ class ListInstancesRequest:
         排序字段。 display_name 实例名、status状态、pvc_quantity 存储容量、created_time 创建时间、stack_id 技术栈
 
         :param sort_key: The sort_key of this ListInstancesRequest.
-        :type: str
+        :type sort_key: str
         """
         self._sort_key = sort_key
 

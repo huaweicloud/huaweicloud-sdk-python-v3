@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OpenIdConnectConfig:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class OpenIdConnectConfig:
     }
 
     def __init__(self, access_mode=None, idp_url=None, client_id=None, authorization_endpoint=None, scope=None, response_type=None, response_mode=None, signing_key=None):
-        """OpenIdConnectConfig - a model defined in huaweicloud sdk"""
+        """OpenIdConnectConfig
+
+        The model defined in huaweicloud sdk
+
+        :param access_mode: 访问方式: program_console: 支持编程访问和管理控制台访问方式; program: 支持编程访问方式
+        :type access_mode: str
+        :param idp_url: OpenID Connect身份提供商标识, 对应ID token 中 iss
+        :type idp_url: str
+        :param client_id: 在OpenID Connect身份提供商注册的客户端ID
+        :type client_id: str
+        :param authorization_endpoint: OpenID Connect身份提供商授权地址; 编程访问和管理控制台访问方式值不为空，编程访问方式值可为空
+        :type authorization_endpoint: str
+        :param scope: 授权请求信息范围，编程访问和管理控制台访问方式必选，编程访问方式不可选，可选值：openid 、email、profile，IDP自定义scope，字符集a-zA-Z_0-9 ，1-10个可选值组合空格分割，至少包括openid，顺序无关，总长度最长255字符，例如：\&quot;openid\&quot;、\&quot;openid email\&quot;、\&quot;openid profile\&quot; 、\&quot;openid email profile\&quot;
+        :type scope: str
+        :param response_type: 授权请求返回的类型；id_token ；编程访问和管理控制台访问方式值不为空，编程访问方式值可为空 
+        :type response_type: str
+        :param response_mode: 授权请求返回方式， form_post 或 fragment ；编程访问和管理控制台访问方式值不为空，编程访问方式值可为空
+        :type response_mode: str
+        :param signing_key: OpenID Connect身份提供商ID Token签名的公钥
+        :type signing_key: str
+        """
         
         
 
@@ -85,7 +104,7 @@ class OpenIdConnectConfig:
         访问方式: program_console: 支持编程访问和管理控制台访问方式; program: 支持编程访问方式
 
         :param access_mode: The access_mode of this OpenIdConnectConfig.
-        :type: str
+        :type access_mode: str
         """
         self._access_mode = access_mode
 
@@ -107,7 +126,7 @@ class OpenIdConnectConfig:
         OpenID Connect身份提供商标识, 对应ID token 中 iss
 
         :param idp_url: The idp_url of this OpenIdConnectConfig.
-        :type: str
+        :type idp_url: str
         """
         self._idp_url = idp_url
 
@@ -129,7 +148,7 @@ class OpenIdConnectConfig:
         在OpenID Connect身份提供商注册的客户端ID
 
         :param client_id: The client_id of this OpenIdConnectConfig.
-        :type: str
+        :type client_id: str
         """
         self._client_id = client_id
 
@@ -151,7 +170,7 @@ class OpenIdConnectConfig:
         OpenID Connect身份提供商授权地址; 编程访问和管理控制台访问方式值不为空，编程访问方式值可为空
 
         :param authorization_endpoint: The authorization_endpoint of this OpenIdConnectConfig.
-        :type: str
+        :type authorization_endpoint: str
         """
         self._authorization_endpoint = authorization_endpoint
 
@@ -173,7 +192,7 @@ class OpenIdConnectConfig:
         授权请求信息范围，编程访问和管理控制台访问方式必选，编程访问方式不可选，可选值：openid 、email、profile，IDP自定义scope，字符集a-zA-Z_0-9 ，1-10个可选值组合空格分割，至少包括openid，顺序无关，总长度最长255字符，例如：\"openid\"、\"openid email\"、\"openid profile\" 、\"openid email profile\"
 
         :param scope: The scope of this OpenIdConnectConfig.
-        :type: str
+        :type scope: str
         """
         self._scope = scope
 
@@ -195,7 +214,7 @@ class OpenIdConnectConfig:
         授权请求返回的类型；id_token ；编程访问和管理控制台访问方式值不为空，编程访问方式值可为空 
 
         :param response_type: The response_type of this OpenIdConnectConfig.
-        :type: str
+        :type response_type: str
         """
         self._response_type = response_type
 
@@ -217,7 +236,7 @@ class OpenIdConnectConfig:
         授权请求返回方式， form_post 或 fragment ；编程访问和管理控制台访问方式值不为空，编程访问方式值可为空
 
         :param response_mode: The response_mode of this OpenIdConnectConfig.
-        :type: str
+        :type response_mode: str
         """
         self._response_mode = response_mode
 
@@ -239,7 +258,7 @@ class OpenIdConnectConfig:
         OpenID Connect身份提供商ID Token签名的公钥
 
         :param signing_key: The signing_key of this OpenIdConnectConfig.
-        :type: str
+        :type signing_key: str
         """
         self._signing_key = signing_key
 

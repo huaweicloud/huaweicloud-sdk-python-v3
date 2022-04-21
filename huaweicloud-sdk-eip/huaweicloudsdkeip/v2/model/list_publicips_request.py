@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPublicipsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class ListPublicipsRequest:
     }
 
     def __init__(self, marker=None, limit=None, ip_version=None, enterprise_project_id=None, port_id=None, public_ip_address=None, private_ip_address=None, id=None, allow_share_bandwidth_type_any=None):
-        """ListPublicipsRequest - a model defined in huaweicloud sdk"""
+        """ListPublicipsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param marker: 取值为上一页数据的最后一条记录的id，为空时为查询第一页
+        :type marker: str
+        :param limit: 功能说明：每页返回的个数  取值范围：0~intmax
+        :type limit: int
+        :param ip_version: IP地址版本信息  4：IPv4  6：IPv6
+        :type ip_version: int
+        :param enterprise_project_id: 功能说明：企业项目ID。可以使用该字段过滤某个企业项目下的弹性IP弹性公网IP。  取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。若需要查询当前用户所有企业项目绑定的弹性公网IP，请传参all_granted_eps。
+        :type enterprise_project_id: str
+        :param port_id: 绑定弹性公网IP的端口id
+        :type port_id: list[str]
+        :param public_ip_address: IPv4时是申请到的弹性公网IP地址，IPv6时是IPv6地址对应的IPv4地址
+        :type public_ip_address: list[str]
+        :param private_ip_address: 关联端口的私有IP地址
+        :type private_ip_address: list[str]
+        :param id: 弹性公网IP唯一标识
+        :type id: list[str]
+        :param allow_share_bandwidth_type_any: 共享带宽类型，根据任一共享带宽类型过滤EIP列表。 可以指定多个带宽类型，不同的带宽类型间用逗号分隔。
+        :type allow_share_bandwidth_type_any: list[str]
+        """
         
         
 
@@ -98,7 +119,7 @@ class ListPublicipsRequest:
         取值为上一页数据的最后一条记录的id，为空时为查询第一页
 
         :param marker: The marker of this ListPublicipsRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -120,7 +141,7 @@ class ListPublicipsRequest:
         功能说明：每页返回的个数  取值范围：0~intmax
 
         :param limit: The limit of this ListPublicipsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -142,7 +163,7 @@ class ListPublicipsRequest:
         IP地址版本信息  4：IPv4  6：IPv6
 
         :param ip_version: The ip_version of this ListPublicipsRequest.
-        :type: int
+        :type ip_version: int
         """
         self._ip_version = ip_version
 
@@ -164,7 +185,7 @@ class ListPublicipsRequest:
         功能说明：企业项目ID。可以使用该字段过滤某个企业项目下的弹性IP弹性公网IP。  取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。若需要查询当前用户所有企业项目绑定的弹性公网IP，请传参all_granted_eps。
 
         :param enterprise_project_id: The enterprise_project_id of this ListPublicipsRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -186,7 +207,7 @@ class ListPublicipsRequest:
         绑定弹性公网IP的端口id
 
         :param port_id: The port_id of this ListPublicipsRequest.
-        :type: list[str]
+        :type port_id: list[str]
         """
         self._port_id = port_id
 
@@ -208,7 +229,7 @@ class ListPublicipsRequest:
         IPv4时是申请到的弹性公网IP地址，IPv6时是IPv6地址对应的IPv4地址
 
         :param public_ip_address: The public_ip_address of this ListPublicipsRequest.
-        :type: list[str]
+        :type public_ip_address: list[str]
         """
         self._public_ip_address = public_ip_address
 
@@ -230,7 +251,7 @@ class ListPublicipsRequest:
         关联端口的私有IP地址
 
         :param private_ip_address: The private_ip_address of this ListPublicipsRequest.
-        :type: list[str]
+        :type private_ip_address: list[str]
         """
         self._private_ip_address = private_ip_address
 
@@ -252,7 +273,7 @@ class ListPublicipsRequest:
         弹性公网IP唯一标识
 
         :param id: The id of this ListPublicipsRequest.
-        :type: list[str]
+        :type id: list[str]
         """
         self._id = id
 
@@ -274,7 +295,7 @@ class ListPublicipsRequest:
         共享带宽类型，根据任一共享带宽类型过滤EIP列表。 可以指定多个带宽类型，不同的带宽类型间用逗号分隔。
 
         :param allow_share_bandwidth_type_any: The allow_share_bandwidth_type_any of this ListPublicipsRequest.
-        :type: list[str]
+        :type allow_share_bandwidth_type_any: list[str]
         """
         self._allow_share_bandwidth_type_any = allow_share_bandwidth_type_any
 

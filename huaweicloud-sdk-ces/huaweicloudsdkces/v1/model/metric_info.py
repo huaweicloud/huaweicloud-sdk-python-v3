@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MetricInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class MetricInfo:
     }
 
     def __init__(self, namespace=None, metric_name=None, dimensions=None):
-        """MetricInfo - a model defined in huaweicloud sdk"""
+        """MetricInfo
+
+        The model defined in huaweicloud sdk
+
+        :param namespace: 服务指标命名空间，格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_，字符总长度最短为3，最大为32。说明： 当alarm_type为（EVENT.SYS| EVENT.CUSTOM）时允许为空；如：弹性云服务器的命名空间为SYS.ECS，文档数据库的命名空间为SYS.DDS，各服务的命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
+        :type namespace: str
+        :param metric_name: 资源的监控指标名称，必须以字母开头，只能包含0-9/a-z/A-Z/_，字符长度最短为1，最大为64；如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率；各服务的指标名称可查看：“[服务指标名称](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
+        :type metric_name: str
+        :param dimensions: 指标维度，目前最大可添加4个维度。
+        :type dimensions: list[:class:`huaweicloudsdkces.v1.MetricsDimension`]
+        """
         
         
 
@@ -65,7 +74,7 @@ class MetricInfo:
         服务指标命名空间，格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_，字符总长度最短为3，最大为32。说明： 当alarm_type为（EVENT.SYS| EVENT.CUSTOM）时允许为空；如：弹性云服务器的命名空间为SYS.ECS，文档数据库的命名空间为SYS.DDS，各服务的命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
         :param namespace: The namespace of this MetricInfo.
-        :type: str
+        :type namespace: str
         """
         self._namespace = namespace
 
@@ -87,7 +96,7 @@ class MetricInfo:
         资源的监控指标名称，必须以字母开头，只能包含0-9/a-z/A-Z/_，字符长度最短为1，最大为64；如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率；各服务的指标名称可查看：“[服务指标名称](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
         :param metric_name: The metric_name of this MetricInfo.
-        :type: str
+        :type metric_name: str
         """
         self._metric_name = metric_name
 
@@ -98,7 +107,7 @@ class MetricInfo:
         指标维度，目前最大可添加4个维度。
 
         :return: The dimensions of this MetricInfo.
-        :rtype: list[MetricsDimension]
+        :rtype: list[:class:`huaweicloudsdkces.v1.MetricsDimension`]
         """
         return self._dimensions
 
@@ -109,7 +118,7 @@ class MetricInfo:
         指标维度，目前最大可添加4个维度。
 
         :param dimensions: The dimensions of this MetricInfo.
-        :type: list[MetricsDimension]
+        :type dimensions: list[:class:`huaweicloudsdkces.v1.MetricsDimension`]
         """
         self._dimensions = dimensions
 

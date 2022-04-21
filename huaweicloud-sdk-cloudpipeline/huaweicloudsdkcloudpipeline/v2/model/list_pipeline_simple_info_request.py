@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPipelineSimpleInfoRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListPipelineSimpleInfoRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """ListPipelineSimpleInfoRequest - a model defined in huaweicloud sdk"""
+        """ListPipelineSimpleInfoRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言类型 中文:zh-cn 英文:en-us，默认en-us
+        :type x_language: str
+        :param body: Body of the ListPipelineSimpleInfoRequest
+        :type body: :class:`huaweicloudsdkcloudpipeline.v2.ListPipelineSimpleInfoRequestBody`
+        """
         
         
 
@@ -63,7 +70,7 @@ class ListPipelineSimpleInfoRequest:
         语言类型 中文:zh-cn 英文:en-us，默认en-us
 
         :param x_language: The x_language of this ListPipelineSimpleInfoRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -73,7 +80,7 @@ class ListPipelineSimpleInfoRequest:
 
 
         :return: The body of this ListPipelineSimpleInfoRequest.
-        :rtype: ListPipelineSimpleInfoRequestBody
+        :rtype: :class:`huaweicloudsdkcloudpipeline.v2.ListPipelineSimpleInfoRequestBody`
         """
         return self._body
 
@@ -83,7 +90,7 @@ class ListPipelineSimpleInfoRequest:
 
 
         :param body: The body of this ListPipelineSimpleInfoRequest.
-        :type: ListPipelineSimpleInfoRequestBody
+        :type body: :class:`huaweicloudsdkcloudpipeline.v2.ListPipelineSimpleInfoRequestBody`
         """
         self._body = body
 

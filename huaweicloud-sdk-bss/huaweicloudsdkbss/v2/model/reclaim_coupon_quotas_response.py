@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ReclaimCouponQuotasResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ReclaimCouponQuotasResponse(SdkResponse):
     }
 
     def __init__(self, error_details=None, simple_quota_infos=None):
-        """ReclaimCouponQuotasResponse - a model defined in huaweicloud sdk"""
+        """ReclaimCouponQuotasResponse
+
+        The model defined in huaweicloud sdk
+
+        :param error_details: 回收失败的精英服务商额度信息，具体参见表1，只有HTTP STATUS 200的时候才有这个结构体。
+        :type error_details: list[:class:`huaweicloudsdkbss.v2.ErrorDetail`]
+        :param simple_quota_infos: 回收成功的精英服务商额度信息，具体参见表2，只有HTTP STATUS 200的时候才有这个结构体。
+        :type simple_quota_infos: list[:class:`huaweicloudsdkbss.v2.QuotaReclaim`]
+        """
         
         super(ReclaimCouponQuotasResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ReclaimCouponQuotasResponse(SdkResponse):
         回收失败的精英服务商额度信息，具体参见表1，只有HTTP STATUS 200的时候才有这个结构体。
 
         :return: The error_details of this ReclaimCouponQuotasResponse.
-        :rtype: list[ErrorDetail]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.ErrorDetail`]
         """
         return self._error_details
 
@@ -63,7 +70,7 @@ class ReclaimCouponQuotasResponse(SdkResponse):
         回收失败的精英服务商额度信息，具体参见表1，只有HTTP STATUS 200的时候才有这个结构体。
 
         :param error_details: The error_details of this ReclaimCouponQuotasResponse.
-        :type: list[ErrorDetail]
+        :type error_details: list[:class:`huaweicloudsdkbss.v2.ErrorDetail`]
         """
         self._error_details = error_details
 
@@ -74,7 +81,7 @@ class ReclaimCouponQuotasResponse(SdkResponse):
         回收成功的精英服务商额度信息，具体参见表2，只有HTTP STATUS 200的时候才有这个结构体。
 
         :return: The simple_quota_infos of this ReclaimCouponQuotasResponse.
-        :rtype: list[QuotaReclaim]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.QuotaReclaim`]
         """
         return self._simple_quota_infos
 
@@ -85,7 +92,7 @@ class ReclaimCouponQuotasResponse(SdkResponse):
         回收成功的精英服务商额度信息，具体参见表2，只有HTTP STATUS 200的时候才有这个结构体。
 
         :param simple_quota_infos: The simple_quota_infos of this ReclaimCouponQuotasResponse.
-        :type: list[QuotaReclaim]
+        :type simple_quota_infos: list[:class:`huaweicloudsdkbss.v2.QuotaReclaim`]
         """
         self._simple_quota_infos = simple_quota_infos
 

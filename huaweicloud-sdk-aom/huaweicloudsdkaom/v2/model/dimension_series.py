@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DimensionSeries:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DimensionSeries:
     }
 
     def __init__(self, name=None, value=None):
-        """DimensionSeries - a model defined in huaweicloud sdk"""
+        """DimensionSeries
+
+        The model defined in huaweicloud sdk
+
+        :param name: 维度名称。
+        :type name: str
+        :param value: 维度取值。
+        :type value: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class DimensionSeries:
         维度名称。
 
         :param name: The name of this DimensionSeries.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -85,7 +92,7 @@ class DimensionSeries:
         维度取值。
 
         :param value: The value of this DimensionSeries.
-        :type: str
+        :type value: str
         """
         self._value = value
 

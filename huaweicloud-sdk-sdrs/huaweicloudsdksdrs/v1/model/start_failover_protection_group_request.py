@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StartFailoverProtectionGroupRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class StartFailoverProtectionGroupRequest:
     }
 
     def __init__(self, server_group_id=None, body=None):
-        """StartFailoverProtectionGroupRequest - a model defined in huaweicloud sdk"""
+        """StartFailoverProtectionGroupRequest
+
+        The model defined in huaweicloud sdk
+
+        :param server_group_id: 保护组的ID。
+        :type server_group_id: str
+        :param body: Body of the StartFailoverProtectionGroupRequest
+        :type body: :class:`huaweicloudsdksdrs.v1.FailoverProtectionGroupRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class StartFailoverProtectionGroupRequest:
         保护组的ID。
 
         :param server_group_id: The server_group_id of this StartFailoverProtectionGroupRequest.
-        :type: str
+        :type server_group_id: str
         """
         self._server_group_id = server_group_id
 
@@ -72,7 +79,7 @@ class StartFailoverProtectionGroupRequest:
 
 
         :return: The body of this StartFailoverProtectionGroupRequest.
-        :rtype: FailoverProtectionGroupRequestBody
+        :rtype: :class:`huaweicloudsdksdrs.v1.FailoverProtectionGroupRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class StartFailoverProtectionGroupRequest:
 
 
         :param body: The body of this StartFailoverProtectionGroupRequest.
-        :type: FailoverProtectionGroupRequestBody
+        :type body: :class:`huaweicloudsdksdrs.v1.FailoverProtectionGroupRequestBody`
         """
         self._body = body
 

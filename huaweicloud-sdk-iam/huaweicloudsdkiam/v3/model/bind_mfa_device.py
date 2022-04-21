@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BindMfaDevice:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class BindMfaDevice:
     }
 
     def __init__(self, user_id=None, serial_number=None, authentication_code_first=None, authentication_code_second=None):
-        """BindMfaDevice - a model defined in huaweicloud sdk"""
+        """BindMfaDevice
+
+        The model defined in huaweicloud sdk
+
+        :param user_id: 待绑定MFA设备的IAM用户ID。
+        :type user_id: str
+        :param serial_number: MFA设备序列号。
+        :type serial_number: str
+        :param authentication_code_first: 第一组验证码。
+        :type authentication_code_first: str
+        :param authentication_code_second: 第二组验证码。
+        :type authentication_code_second: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class BindMfaDevice:
         待绑定MFA设备的IAM用户ID。
 
         :param user_id: The user_id of this BindMfaDevice.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -91,7 +102,7 @@ class BindMfaDevice:
         MFA设备序列号。
 
         :param serial_number: The serial_number of this BindMfaDevice.
-        :type: str
+        :type serial_number: str
         """
         self._serial_number = serial_number
 
@@ -113,7 +124,7 @@ class BindMfaDevice:
         第一组验证码。
 
         :param authentication_code_first: The authentication_code_first of this BindMfaDevice.
-        :type: str
+        :type authentication_code_first: str
         """
         self._authentication_code_first = authentication_code_first
 
@@ -135,7 +146,7 @@ class BindMfaDevice:
         第二组验证码。
 
         :param authentication_code_second: The authentication_code_second of this BindMfaDevice.
-        :type: str
+        :type authentication_code_second: str
         """
         self._authentication_code_second = authentication_code_second
 

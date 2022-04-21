@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryLtsLogParams:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class QueryLtsLogParams:
     }
 
     def __init__(self, start_time=None, end_time=None, labels=None, is_count=None, keywords=None, line_num=None, is_desc=None, search_type=None, limit=None, highlight=None):
-        """QueryLtsLogParams - a model defined in huaweicloud sdk"""
+        """QueryLtsLogParams
+
+        The model defined in huaweicloud sdk
+
+        :param start_time: 搜索起始时间（UTC时间，毫秒级）。
+        :type start_time: str
+        :param end_time: 搜索结束时间（UTC时间，毫秒级）。
+        :type end_time: str
+        :param labels: 日志过滤条件集合，不同日志来源所需字段不同。
+        :type labels: dict(str, str)
+        :param is_count: 日志条数统计。默认为false(不统计)，true为统计日志条数。
+        :type is_count: bool
+        :param keywords: 支持关键词精确搜索。关键词指相邻两个分词符之间的单词,例：error
+        :type keywords: str
+        :param line_num: 日志单行序列号，第一次查询时不需要此参数，后续分页查询时需要使用，可从上次查询的返回信息中获取。line_num应在start_time 和 end_time 之间。
+        :type line_num: str
+        :param is_desc: 顺序或者倒序查询, 默认为false(顺序查询)
+        :type is_desc: bool
+        :param search_type: 首次查询为 “init”, 分页查询时为 “forwards”或者“backwards”, 默认为首次查询“init”, 与 is_desc 参数配合进行分页查询。
+        :type search_type: str
+        :param limit: 表示每次查询的日志条数，不填时默认为50，建议您设置为100。
+        :type limit: int
+        :param highlight: 日志关键词高亮显示，默认为true（高亮显示），false为取消高亮显示。
+        :type highlight: bool
+        """
         
         
 
@@ -101,7 +124,7 @@ class QueryLtsLogParams:
         搜索起始时间（UTC时间，毫秒级）。
 
         :param start_time: The start_time of this QueryLtsLogParams.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -123,7 +146,7 @@ class QueryLtsLogParams:
         搜索结束时间（UTC时间，毫秒级）。
 
         :param end_time: The end_time of this QueryLtsLogParams.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -145,7 +168,7 @@ class QueryLtsLogParams:
         日志过滤条件集合，不同日志来源所需字段不同。
 
         :param labels: The labels of this QueryLtsLogParams.
-        :type: dict(str, str)
+        :type labels: dict(str, str)
         """
         self._labels = labels
 
@@ -167,7 +190,7 @@ class QueryLtsLogParams:
         日志条数统计。默认为false(不统计)，true为统计日志条数。
 
         :param is_count: The is_count of this QueryLtsLogParams.
-        :type: bool
+        :type is_count: bool
         """
         self._is_count = is_count
 
@@ -189,7 +212,7 @@ class QueryLtsLogParams:
         支持关键词精确搜索。关键词指相邻两个分词符之间的单词,例：error
 
         :param keywords: The keywords of this QueryLtsLogParams.
-        :type: str
+        :type keywords: str
         """
         self._keywords = keywords
 
@@ -211,7 +234,7 @@ class QueryLtsLogParams:
         日志单行序列号，第一次查询时不需要此参数，后续分页查询时需要使用，可从上次查询的返回信息中获取。line_num应在start_time 和 end_time 之间。
 
         :param line_num: The line_num of this QueryLtsLogParams.
-        :type: str
+        :type line_num: str
         """
         self._line_num = line_num
 
@@ -233,7 +256,7 @@ class QueryLtsLogParams:
         顺序或者倒序查询, 默认为false(顺序查询)
 
         :param is_desc: The is_desc of this QueryLtsLogParams.
-        :type: bool
+        :type is_desc: bool
         """
         self._is_desc = is_desc
 
@@ -255,7 +278,7 @@ class QueryLtsLogParams:
         首次查询为 “init”, 分页查询时为 “forwards”或者“backwards”, 默认为首次查询“init”, 与 is_desc 参数配合进行分页查询。
 
         :param search_type: The search_type of this QueryLtsLogParams.
-        :type: str
+        :type search_type: str
         """
         self._search_type = search_type
 
@@ -277,7 +300,7 @@ class QueryLtsLogParams:
         表示每次查询的日志条数，不填时默认为50，建议您设置为100。
 
         :param limit: The limit of this QueryLtsLogParams.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -299,7 +322,7 @@ class QueryLtsLogParams:
         日志关键词高亮显示，默认为true（高亮显示），false为取消高亮显示。
 
         :param highlight: The highlight of this QueryLtsLogParams.
-        :type: bool
+        :type highlight: bool
         """
         self._highlight = highlight
 

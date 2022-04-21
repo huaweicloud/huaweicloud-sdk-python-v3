@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListIssueCommentsV4Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListIssueCommentsV4Response(SdkResponse):
     }
 
     def __init__(self, total=None, comments=None):
-        """ListIssueCommentsV4Response - a model defined in huaweicloud sdk"""
+        """ListIssueCommentsV4Response
+
+        The model defined in huaweicloud sdk
+
+        :param total: 评论总数
+        :type total: int
+        :param comments: 品论列表
+        :type comments: list[:class:`huaweicloudsdkprojectman.v4.IssueCommentV4`]
+        """
         
         super(ListIssueCommentsV4Response, self).__init__()
 
@@ -63,7 +70,7 @@ class ListIssueCommentsV4Response(SdkResponse):
         评论总数
 
         :param total: The total of this ListIssueCommentsV4Response.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -74,7 +81,7 @@ class ListIssueCommentsV4Response(SdkResponse):
         品论列表
 
         :return: The comments of this ListIssueCommentsV4Response.
-        :rtype: list[IssueCommentV4]
+        :rtype: list[:class:`huaweicloudsdkprojectman.v4.IssueCommentV4`]
         """
         return self._comments
 
@@ -85,7 +92,7 @@ class ListIssueCommentsV4Response(SdkResponse):
         品论列表
 
         :param comments: The comments of this ListIssueCommentsV4Response.
-        :type: list[IssueCommentV4]
+        :type comments: list[:class:`huaweicloudsdkprojectman.v4.IssueCommentV4`]
         """
         self._comments = comments
 

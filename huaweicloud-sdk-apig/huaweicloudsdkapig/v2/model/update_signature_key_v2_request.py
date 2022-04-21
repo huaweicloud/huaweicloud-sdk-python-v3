@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateSignatureKeyV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateSignatureKeyV2Request:
     }
 
     def __init__(self, instance_id=None, sign_id=None, body=None):
-        """UpdateSignatureKeyV2Request - a model defined in huaweicloud sdk"""
+        """UpdateSignatureKeyV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param sign_id: 签名密钥编号
+        :type sign_id: str
+        :param body: Body of the UpdateSignatureKeyV2Request
+        :type body: :class:`huaweicloudsdkapig.v2.BaseSignature`
+        """
         
         
 
@@ -66,7 +75,7 @@ class UpdateSignatureKeyV2Request:
         实例ID
 
         :param instance_id: The instance_id of this UpdateSignatureKeyV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -88,7 +97,7 @@ class UpdateSignatureKeyV2Request:
         签名密钥编号
 
         :param sign_id: The sign_id of this UpdateSignatureKeyV2Request.
-        :type: str
+        :type sign_id: str
         """
         self._sign_id = sign_id
 
@@ -98,7 +107,7 @@ class UpdateSignatureKeyV2Request:
 
 
         :return: The body of this UpdateSignatureKeyV2Request.
-        :rtype: BaseSignature
+        :rtype: :class:`huaweicloudsdkapig.v2.BaseSignature`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class UpdateSignatureKeyV2Request:
 
 
         :param body: The body of this UpdateSignatureKeyV2Request.
-        :type: BaseSignature
+        :type body: :class:`huaweicloudsdkapig.v2.BaseSignature`
         """
         self._body = body
 

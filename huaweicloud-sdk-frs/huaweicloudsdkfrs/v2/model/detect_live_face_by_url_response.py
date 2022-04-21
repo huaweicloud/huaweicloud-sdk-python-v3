@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DetectLiveFaceByUrlResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DetectLiveFaceByUrlResponse(SdkResponse):
     }
 
     def __init__(self, result=None, warning_list=None):
-        """DetectLiveFaceByUrlResponse - a model defined in huaweicloud sdk"""
+        """DetectLiveFaceByUrlResponse
+
+        The model defined in huaweicloud sdk
+
+        :param result: 
+        :type result: :class:`huaweicloudsdkfrs.v2.LiveDetectFaceRespResult`
+        :param warning_list: 警告信息列表。 调用失败时无此字段。
+        :type warning_list: list[:class:`huaweicloudsdkfrs.v2.WarningList`]
+        """
         
         super(DetectLiveFaceByUrlResponse, self).__init__()
 
@@ -51,7 +58,7 @@ class DetectLiveFaceByUrlResponse(SdkResponse):
 
 
         :return: The result of this DetectLiveFaceByUrlResponse.
-        :rtype: LiveDetectFaceRespResult
+        :rtype: :class:`huaweicloudsdkfrs.v2.LiveDetectFaceRespResult`
         """
         return self._result
 
@@ -61,7 +68,7 @@ class DetectLiveFaceByUrlResponse(SdkResponse):
 
 
         :param result: The result of this DetectLiveFaceByUrlResponse.
-        :type: LiveDetectFaceRespResult
+        :type result: :class:`huaweicloudsdkfrs.v2.LiveDetectFaceRespResult`
         """
         self._result = result
 
@@ -72,7 +79,7 @@ class DetectLiveFaceByUrlResponse(SdkResponse):
         警告信息列表。 调用失败时无此字段。
 
         :return: The warning_list of this DetectLiveFaceByUrlResponse.
-        :rtype: list[WarningList]
+        :rtype: list[:class:`huaweicloudsdkfrs.v2.WarningList`]
         """
         return self._warning_list
 
@@ -83,7 +90,7 @@ class DetectLiveFaceByUrlResponse(SdkResponse):
         警告信息列表。 调用失败时无此字段。
 
         :param warning_list: The warning_list of this DetectLiveFaceByUrlResponse.
-        :type: list[WarningList]
+        :type warning_list: list[:class:`huaweicloudsdkfrs.v2.WarningList`]
         """
         self._warning_list = warning_list
 

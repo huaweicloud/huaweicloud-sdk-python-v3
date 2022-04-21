@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ChangeResourceInEnvironmentResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class ChangeResourceInEnvironmentResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, alias=None, description=None, project_id=None, enterprise_project_id=None, charge_mode=None, vpc_id=None, base_resources=None, optional_resources=None, creator=None, create_time=None, update_time=None):
-        """ChangeResourceInEnvironmentResponse - a model defined in huaweicloud sdk"""
+        """ChangeResourceInEnvironmentResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 环境ID。
+        :type id: str
+        :param name: 环境名称。
+        :type name: str
+        :param alias: 环境别名。
+        :type alias: str
+        :param description: 环境描述。
+        :type description: str
+        :param project_id: 项目ID。
+        :type project_id: str
+        :param enterprise_project_id: 企业项目ID。
+        :type enterprise_project_id: str
+        :param charge_mode: 收费模式。
+        :type charge_mode: str
+        :param vpc_id: 虚拟私有云ID。
+        :type vpc_id: str
+        :param base_resources: 基础资源。
+        :type base_resources: list[:class:`huaweicloudsdkservicestage.v2.Resource`]
+        :param optional_resources: 可选资源。
+        :type optional_resources: list[:class:`huaweicloudsdkservicestage.v2.Resource`]
+        :param creator: 创建人。
+        :type creator: str
+        :param create_time: 创建时间。
+        :type create_time: int
+        :param update_time: 修改时间。
+        :type update_time: int
+        """
         
         super(ChangeResourceInEnvironmentResponse, self).__init__()
 
@@ -118,7 +147,7 @@ class ChangeResourceInEnvironmentResponse(SdkResponse):
         环境ID。
 
         :param id: The id of this ChangeResourceInEnvironmentResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -140,7 +169,7 @@ class ChangeResourceInEnvironmentResponse(SdkResponse):
         环境名称。
 
         :param name: The name of this ChangeResourceInEnvironmentResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -162,7 +191,7 @@ class ChangeResourceInEnvironmentResponse(SdkResponse):
         环境别名。
 
         :param alias: The alias of this ChangeResourceInEnvironmentResponse.
-        :type: str
+        :type alias: str
         """
         self._alias = alias
 
@@ -184,7 +213,7 @@ class ChangeResourceInEnvironmentResponse(SdkResponse):
         环境描述。
 
         :param description: The description of this ChangeResourceInEnvironmentResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -206,7 +235,7 @@ class ChangeResourceInEnvironmentResponse(SdkResponse):
         项目ID。
 
         :param project_id: The project_id of this ChangeResourceInEnvironmentResponse.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -228,7 +257,7 @@ class ChangeResourceInEnvironmentResponse(SdkResponse):
         企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this ChangeResourceInEnvironmentResponse.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -250,7 +279,7 @@ class ChangeResourceInEnvironmentResponse(SdkResponse):
         收费模式。
 
         :param charge_mode: The charge_mode of this ChangeResourceInEnvironmentResponse.
-        :type: str
+        :type charge_mode: str
         """
         self._charge_mode = charge_mode
 
@@ -272,7 +301,7 @@ class ChangeResourceInEnvironmentResponse(SdkResponse):
         虚拟私有云ID。
 
         :param vpc_id: The vpc_id of this ChangeResourceInEnvironmentResponse.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -283,7 +312,7 @@ class ChangeResourceInEnvironmentResponse(SdkResponse):
         基础资源。
 
         :return: The base_resources of this ChangeResourceInEnvironmentResponse.
-        :rtype: list[Resource]
+        :rtype: list[:class:`huaweicloudsdkservicestage.v2.Resource`]
         """
         return self._base_resources
 
@@ -294,7 +323,7 @@ class ChangeResourceInEnvironmentResponse(SdkResponse):
         基础资源。
 
         :param base_resources: The base_resources of this ChangeResourceInEnvironmentResponse.
-        :type: list[Resource]
+        :type base_resources: list[:class:`huaweicloudsdkservicestage.v2.Resource`]
         """
         self._base_resources = base_resources
 
@@ -305,7 +334,7 @@ class ChangeResourceInEnvironmentResponse(SdkResponse):
         可选资源。
 
         :return: The optional_resources of this ChangeResourceInEnvironmentResponse.
-        :rtype: list[Resource]
+        :rtype: list[:class:`huaweicloudsdkservicestage.v2.Resource`]
         """
         return self._optional_resources
 
@@ -316,7 +345,7 @@ class ChangeResourceInEnvironmentResponse(SdkResponse):
         可选资源。
 
         :param optional_resources: The optional_resources of this ChangeResourceInEnvironmentResponse.
-        :type: list[Resource]
+        :type optional_resources: list[:class:`huaweicloudsdkservicestage.v2.Resource`]
         """
         self._optional_resources = optional_resources
 
@@ -338,7 +367,7 @@ class ChangeResourceInEnvironmentResponse(SdkResponse):
         创建人。
 
         :param creator: The creator of this ChangeResourceInEnvironmentResponse.
-        :type: str
+        :type creator: str
         """
         self._creator = creator
 
@@ -360,7 +389,7 @@ class ChangeResourceInEnvironmentResponse(SdkResponse):
         创建时间。
 
         :param create_time: The create_time of this ChangeResourceInEnvironmentResponse.
-        :type: int
+        :type create_time: int
         """
         self._create_time = create_time
 
@@ -382,7 +411,7 @@ class ChangeResourceInEnvironmentResponse(SdkResponse):
         修改时间。
 
         :param update_time: The update_time of this ChangeResourceInEnvironmentResponse.
-        :type: int
+        :type update_time: int
         """
         self._update_time = update_time
 

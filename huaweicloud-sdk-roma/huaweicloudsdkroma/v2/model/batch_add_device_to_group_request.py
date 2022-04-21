@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchAddDeviceToGroupRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class BatchAddDeviceToGroupRequest:
     }
 
     def __init__(self, instance_id=None, group_id=None, body=None):
-        """BatchAddDeviceToGroupRequest - a model defined in huaweicloud sdk"""
+        """BatchAddDeviceToGroupRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param group_id: 设备分组ID
+        :type group_id: int
+        :param body: Body of the BatchAddDeviceToGroupRequest
+        :type body: :class:`huaweicloudsdkroma.v2.BatchAddDeviceToGroupRequestBody`
+        """
         
         
 
@@ -66,7 +75,7 @@ class BatchAddDeviceToGroupRequest:
         实例ID
 
         :param instance_id: The instance_id of this BatchAddDeviceToGroupRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -88,7 +97,7 @@ class BatchAddDeviceToGroupRequest:
         设备分组ID
 
         :param group_id: The group_id of this BatchAddDeviceToGroupRequest.
-        :type: int
+        :type group_id: int
         """
         self._group_id = group_id
 
@@ -98,7 +107,7 @@ class BatchAddDeviceToGroupRequest:
 
 
         :return: The body of this BatchAddDeviceToGroupRequest.
-        :rtype: BatchAddDeviceToGroupRequestBody
+        :rtype: :class:`huaweicloudsdkroma.v2.BatchAddDeviceToGroupRequestBody`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class BatchAddDeviceToGroupRequest:
 
 
         :param body: The body of this BatchAddDeviceToGroupRequest.
-        :type: BatchAddDeviceToGroupRequestBody
+        :type body: :class:`huaweicloudsdkroma.v2.BatchAddDeviceToGroupRequestBody`
         """
         self._body = body
 

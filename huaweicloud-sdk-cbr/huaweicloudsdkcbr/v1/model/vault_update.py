@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VaultUpdate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class VaultUpdate:
     }
 
     def __init__(self, billing=None, name=None, auto_bind=None, bind_rules=None, auto_expand=None, smn_notify=None, threshold=None):
-        """VaultUpdate - a model defined in huaweicloud sdk"""
+        """VaultUpdate
+
+        The model defined in huaweicloud sdk
+
+        :param billing: 
+        :type billing: :class:`huaweicloudsdkcbr.v1.BillingUpdate`
+        :param name: 存储库名称
+        :type name: str
+        :param auto_bind: 是否支持自动挂载
+        :type auto_bind: bool
+        :param bind_rules: 
+        :type bind_rules: :class:`huaweicloudsdkcbr.v1.VaultBindRules`
+        :param auto_expand: 是否自动扩容。按需存储库支持自动扩容，包周期存储库不支持扩容。
+        :type auto_expand: bool
+        :param smn_notify: 发送smn通知开关
+        :type smn_notify: bool
+        :param threshold: 存储库容量阈值，存储库已用容量和总容量的百分比超过该值，若smn_notify为开，将发送相关通知。
+        :type threshold: int
+        """
         
         
 
@@ -76,7 +93,7 @@ class VaultUpdate:
 
 
         :return: The billing of this VaultUpdate.
-        :rtype: BillingUpdate
+        :rtype: :class:`huaweicloudsdkcbr.v1.BillingUpdate`
         """
         return self._billing
 
@@ -86,7 +103,7 @@ class VaultUpdate:
 
 
         :param billing: The billing of this VaultUpdate.
-        :type: BillingUpdate
+        :type billing: :class:`huaweicloudsdkcbr.v1.BillingUpdate`
         """
         self._billing = billing
 
@@ -108,7 +125,7 @@ class VaultUpdate:
         存储库名称
 
         :param name: The name of this VaultUpdate.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -130,7 +147,7 @@ class VaultUpdate:
         是否支持自动挂载
 
         :param auto_bind: The auto_bind of this VaultUpdate.
-        :type: bool
+        :type auto_bind: bool
         """
         self._auto_bind = auto_bind
 
@@ -140,7 +157,7 @@ class VaultUpdate:
 
 
         :return: The bind_rules of this VaultUpdate.
-        :rtype: VaultBindRules
+        :rtype: :class:`huaweicloudsdkcbr.v1.VaultBindRules`
         """
         return self._bind_rules
 
@@ -150,7 +167,7 @@ class VaultUpdate:
 
 
         :param bind_rules: The bind_rules of this VaultUpdate.
-        :type: VaultBindRules
+        :type bind_rules: :class:`huaweicloudsdkcbr.v1.VaultBindRules`
         """
         self._bind_rules = bind_rules
 
@@ -172,7 +189,7 @@ class VaultUpdate:
         是否自动扩容。按需存储库支持自动扩容，包周期存储库不支持扩容。
 
         :param auto_expand: The auto_expand of this VaultUpdate.
-        :type: bool
+        :type auto_expand: bool
         """
         self._auto_expand = auto_expand
 
@@ -194,7 +211,7 @@ class VaultUpdate:
         发送smn通知开关
 
         :param smn_notify: The smn_notify of this VaultUpdate.
-        :type: bool
+        :type smn_notify: bool
         """
         self._smn_notify = smn_notify
 
@@ -216,7 +233,7 @@ class VaultUpdate:
         存储库容量阈值，存储库已用容量和总容量的百分比超过该值，若smn_notify为开，将发送相关通知。
 
         :param threshold: The threshold of this VaultUpdate.
-        :type: int
+        :type threshold: int
         """
         self._threshold = threshold
 

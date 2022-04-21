@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CompareObjectInfoWithToken:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CompareObjectInfoWithToken:
     }
 
     def __init__(self, db_name=None, table_name_with_token=None):
-        """CompareObjectInfoWithToken - a model defined in huaweicloud sdk"""
+        """CompareObjectInfoWithToken
+
+        The model defined in huaweicloud sdk
+
+        :param db_name: 库名。
+        :type db_name: str
+        :param table_name_with_token: 该库下的表信息列表（带token）。
+        :type table_name_with_token: list[:class:`huaweicloudsdkdrs.v3.CompareTableInfoWithToken`]
+        """
         
         
 
@@ -62,7 +69,7 @@ class CompareObjectInfoWithToken:
         库名。
 
         :param db_name: The db_name of this CompareObjectInfoWithToken.
-        :type: str
+        :type db_name: str
         """
         self._db_name = db_name
 
@@ -73,7 +80,7 @@ class CompareObjectInfoWithToken:
         该库下的表信息列表（带token）。
 
         :return: The table_name_with_token of this CompareObjectInfoWithToken.
-        :rtype: list[CompareTableInfoWithToken]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.CompareTableInfoWithToken`]
         """
         return self._table_name_with_token
 
@@ -84,7 +91,7 @@ class CompareObjectInfoWithToken:
         该库下的表信息列表（带token）。
 
         :param table_name_with_token: The table_name_with_token of this CompareObjectInfoWithToken.
-        :type: list[CompareTableInfoWithToken]
+        :type table_name_with_token: list[:class:`huaweicloudsdkdrs.v3.CompareTableInfoWithToken`]
         """
         self._table_name_with_token = table_name_with_token
 

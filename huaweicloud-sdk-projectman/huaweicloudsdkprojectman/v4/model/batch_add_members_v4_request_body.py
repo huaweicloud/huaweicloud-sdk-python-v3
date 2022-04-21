@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchAddMembersV4RequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchAddMembersV4RequestBody:
     }
 
     def __init__(self, users=None):
-        """BatchAddMembersV4RequestBody - a model defined in huaweicloud sdk"""
+        """BatchAddMembersV4RequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param users: 添加的用户信息
+        :type users: list[:class:`huaweicloudsdkprojectman.v4.BatchAddMemberRequestV4`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class BatchAddMembersV4RequestBody:
         添加的用户信息
 
         :return: The users of this BatchAddMembersV4RequestBody.
-        :rtype: list[BatchAddMemberRequestV4]
+        :rtype: list[:class:`huaweicloudsdkprojectman.v4.BatchAddMemberRequestV4`]
         """
         return self._users
 
@@ -57,7 +62,7 @@ class BatchAddMembersV4RequestBody:
         添加的用户信息
 
         :param users: The users of this BatchAddMembersV4RequestBody.
-        :type: list[BatchAddMemberRequestV4]
+        :type users: list[:class:`huaweicloudsdkprojectman.v4.BatchAddMemberRequestV4`]
         """
         self._users = users
 

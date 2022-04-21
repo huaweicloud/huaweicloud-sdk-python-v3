@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCertificatesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListCertificatesResponse(SdkResponse):
     }
 
     def __init__(self, certificates=None, page=None):
-        """ListCertificatesResponse - a model defined in huaweicloud sdk"""
+        """ListCertificatesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param certificates: 证书列表。
+        :type certificates: list[:class:`huaweicloudsdkiotda.v5.CertificatesRspDTO`]
+        :param page: 
+        :type page: :class:`huaweicloudsdkiotda.v5.Page`
+        """
         
         super(ListCertificatesResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListCertificatesResponse(SdkResponse):
         证书列表。
 
         :return: The certificates of this ListCertificatesResponse.
-        :rtype: list[CertificatesRspDTO]
+        :rtype: list[:class:`huaweicloudsdkiotda.v5.CertificatesRspDTO`]
         """
         return self._certificates
 
@@ -63,7 +70,7 @@ class ListCertificatesResponse(SdkResponse):
         证书列表。
 
         :param certificates: The certificates of this ListCertificatesResponse.
-        :type: list[CertificatesRspDTO]
+        :type certificates: list[:class:`huaweicloudsdkiotda.v5.CertificatesRspDTO`]
         """
         self._certificates = certificates
 
@@ -73,7 +80,7 @@ class ListCertificatesResponse(SdkResponse):
 
 
         :return: The page of this ListCertificatesResponse.
-        :rtype: Page
+        :rtype: :class:`huaweicloudsdkiotda.v5.Page`
         """
         return self._page
 
@@ -83,7 +90,7 @@ class ListCertificatesResponse(SdkResponse):
 
 
         :param page: The page of this ListCertificatesResponse.
-        :type: Page
+        :type page: :class:`huaweicloudsdkiotda.v5.Page`
         """
         self._page = page
 

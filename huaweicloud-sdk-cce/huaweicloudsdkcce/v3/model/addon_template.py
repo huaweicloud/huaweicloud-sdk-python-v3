@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddonTemplate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class AddonTemplate:
     }
 
     def __init__(self, kind=None, api_version=None, metadata=None, spec=None):
-        """AddonTemplate - a model defined in huaweicloud sdk"""
+        """AddonTemplate
+
+        The model defined in huaweicloud sdk
+
+        :param kind: API类型，固定值“Addon”，该值不可修改。
+        :type kind: str
+        :param api_version: API版本，固定值“v3”，该值不可修改。
+        :type api_version: str
+        :param metadata: 
+        :type metadata: :class:`huaweicloudsdkcce.v3.Metadata`
+        :param spec: 
+        :type spec: :class:`huaweicloudsdkcce.v3.Templatespec`
+        """
         
         
 
@@ -69,7 +80,7 @@ class AddonTemplate:
         API类型，固定值“Addon”，该值不可修改。
 
         :param kind: The kind of this AddonTemplate.
-        :type: str
+        :type kind: str
         """
         self._kind = kind
 
@@ -91,7 +102,7 @@ class AddonTemplate:
         API版本，固定值“v3”，该值不可修改。
 
         :param api_version: The api_version of this AddonTemplate.
-        :type: str
+        :type api_version: str
         """
         self._api_version = api_version
 
@@ -101,7 +112,7 @@ class AddonTemplate:
 
 
         :return: The metadata of this AddonTemplate.
-        :rtype: Metadata
+        :rtype: :class:`huaweicloudsdkcce.v3.Metadata`
         """
         return self._metadata
 
@@ -111,7 +122,7 @@ class AddonTemplate:
 
 
         :param metadata: The metadata of this AddonTemplate.
-        :type: Metadata
+        :type metadata: :class:`huaweicloudsdkcce.v3.Metadata`
         """
         self._metadata = metadata
 
@@ -121,7 +132,7 @@ class AddonTemplate:
 
 
         :return: The spec of this AddonTemplate.
-        :rtype: Templatespec
+        :rtype: :class:`huaweicloudsdkcce.v3.Templatespec`
         """
         return self._spec
 
@@ -131,7 +142,7 @@ class AddonTemplate:
 
 
         :param spec: The spec of this AddonTemplate.
-        :type: Templatespec
+        :type spec: :class:`huaweicloudsdkcce.v3.Templatespec`
         """
         self._spec = spec
 

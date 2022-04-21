@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MysqlBackupStrategy:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class MysqlBackupStrategy:
     }
 
     def __init__(self, start_time=None, keep_days=None):
-        """MysqlBackupStrategy - a model defined in huaweicloud sdk"""
+        """MysqlBackupStrategy
+
+        The model defined in huaweicloud sdk
+
+        :param start_time: 自动备份开始时间段。自动备份将在该时间一个小时内触发。  取值范围：非空，格式必须为hh:mm-HH:MM且有效，当前时间指UTC时间。  1. HH取值必须比hh大1。 2. mm和MM取值必须相同，且取值必须为00。
+        :type start_time: str
+        :param keep_days: 自动备份保留天数，取值范围：1-732
+        :type keep_days: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class MysqlBackupStrategy:
         自动备份开始时间段。自动备份将在该时间一个小时内触发。  取值范围：非空，格式必须为hh:mm-HH:MM且有效，当前时间指UTC时间。  1. HH取值必须比hh大1。 2. mm和MM取值必须相同，且取值必须为00。
 
         :param start_time: The start_time of this MysqlBackupStrategy.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -84,7 +91,7 @@ class MysqlBackupStrategy:
         自动备份保留天数，取值范围：1-732
 
         :param keep_days: The keep_days of this MysqlBackupStrategy.
-        :type: str
+        :type keep_days: str
         """
         self._keep_days = keep_days
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateFunctionVersionRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateFunctionVersionRequest:
     }
 
     def __init__(self, function_urn=None, body=None):
-        """CreateFunctionVersionRequest - a model defined in huaweicloud sdk"""
+        """CreateFunctionVersionRequest
+
+        The model defined in huaweicloud sdk
+
+        :param function_urn: 函数的URN，详细解释见FunctionGraph函数模型的描述。
+        :type function_urn: str
+        :param body: Body of the CreateFunctionVersionRequest
+        :type body: :class:`huaweicloudsdkfunctiongraph.v2.CreateFunctionVersionRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateFunctionVersionRequest:
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
         :param function_urn: The function_urn of this CreateFunctionVersionRequest.
-        :type: str
+        :type function_urn: str
         """
         self._function_urn = function_urn
 
@@ -72,7 +79,7 @@ class CreateFunctionVersionRequest:
 
 
         :return: The body of this CreateFunctionVersionRequest.
-        :rtype: CreateFunctionVersionRequestBody
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CreateFunctionVersionRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CreateFunctionVersionRequest:
 
 
         :param body: The body of this CreateFunctionVersionRequest.
-        :type: CreateFunctionVersionRequestBody
+        :type body: :class:`huaweicloudsdkfunctiongraph.v2.CreateFunctionVersionRequestBody`
         """
         self._body = body
 

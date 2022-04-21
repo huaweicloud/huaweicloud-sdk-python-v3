@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FullSql:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class FullSql:
     }
 
     def __init__(self, sql=None, operate_type=None, status=None, error_no=None, database=None, client=None, thread_id=None, user=None, execute_at=None, query_time=None, lock_time=None, rows_examined=None, rows_sent=None, rows_affected=None):
-        """FullSql - a model defined in huaweicloud sdk"""
+        """FullSql
+
+        The model defined in huaweicloud sdk
+
+        :param sql: SQL语句。
+        :type sql: str
+        :param operate_type: 操作类型。
+        :type operate_type: str
+        :param status: 状态。
+        :type status: str
+        :param error_no: 错误码。
+        :type error_no: str
+        :param database: 数据库名。
+        :type database: str
+        :param client: 客户端。
+        :type client: str
+        :param thread_id: 线程ID。
+        :type thread_id: str
+        :param user: 用户。
+        :type user: str
+        :param execute_at: 执行开始时间（Unix timestamp），单位：毫秒。
+        :type execute_at: int
+        :param query_time: 执行耗时（毫秒）。
+        :type query_time: float
+        :param lock_time: 锁等待耗时（毫秒）。
+        :type lock_time: float
+        :param rows_examined: 扫描行数。
+        :type rows_examined: int
+        :param rows_sent: 返回行数。
+        :type rows_sent: int
+        :param rows_affected: 更新行数。
+        :type rows_affected: int
+        """
         
         
 
@@ -109,7 +140,7 @@ class FullSql:
         SQL语句。
 
         :param sql: The sql of this FullSql.
-        :type: str
+        :type sql: str
         """
         self._sql = sql
 
@@ -131,7 +162,7 @@ class FullSql:
         操作类型。
 
         :param operate_type: The operate_type of this FullSql.
-        :type: str
+        :type operate_type: str
         """
         self._operate_type = operate_type
 
@@ -153,7 +184,7 @@ class FullSql:
         状态。
 
         :param status: The status of this FullSql.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -175,7 +206,7 @@ class FullSql:
         错误码。
 
         :param error_no: The error_no of this FullSql.
-        :type: str
+        :type error_no: str
         """
         self._error_no = error_no
 
@@ -197,7 +228,7 @@ class FullSql:
         数据库名。
 
         :param database: The database of this FullSql.
-        :type: str
+        :type database: str
         """
         self._database = database
 
@@ -219,7 +250,7 @@ class FullSql:
         客户端。
 
         :param client: The client of this FullSql.
-        :type: str
+        :type client: str
         """
         self._client = client
 
@@ -241,7 +272,7 @@ class FullSql:
         线程ID。
 
         :param thread_id: The thread_id of this FullSql.
-        :type: str
+        :type thread_id: str
         """
         self._thread_id = thread_id
 
@@ -263,7 +294,7 @@ class FullSql:
         用户。
 
         :param user: The user of this FullSql.
-        :type: str
+        :type user: str
         """
         self._user = user
 
@@ -285,7 +316,7 @@ class FullSql:
         执行开始时间（Unix timestamp），单位：毫秒。
 
         :param execute_at: The execute_at of this FullSql.
-        :type: int
+        :type execute_at: int
         """
         self._execute_at = execute_at
 
@@ -307,7 +338,7 @@ class FullSql:
         执行耗时（毫秒）。
 
         :param query_time: The query_time of this FullSql.
-        :type: float
+        :type query_time: float
         """
         self._query_time = query_time
 
@@ -329,7 +360,7 @@ class FullSql:
         锁等待耗时（毫秒）。
 
         :param lock_time: The lock_time of this FullSql.
-        :type: float
+        :type lock_time: float
         """
         self._lock_time = lock_time
 
@@ -351,7 +382,7 @@ class FullSql:
         扫描行数。
 
         :param rows_examined: The rows_examined of this FullSql.
-        :type: int
+        :type rows_examined: int
         """
         self._rows_examined = rows_examined
 
@@ -373,7 +404,7 @@ class FullSql:
         返回行数。
 
         :param rows_sent: The rows_sent of this FullSql.
-        :type: int
+        :type rows_sent: int
         """
         self._rows_sent = rows_sent
 
@@ -395,7 +426,7 @@ class FullSql:
         更新行数。
 
         :param rows_affected: The rows_affected of this FullSql.
-        :type: int
+        :type rows_affected: int
         """
         self._rows_affected = rows_affected
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchUnprotectScalingInstancesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchUnprotectScalingInstancesRequest:
     }
 
     def __init__(self, scaling_group_id=None, body=None):
-        """BatchUnprotectScalingInstancesRequest - a model defined in huaweicloud sdk"""
+        """BatchUnprotectScalingInstancesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param scaling_group_id: 实例ID。
+        :type scaling_group_id: str
+        :param body: Body of the BatchUnprotectScalingInstancesRequest
+        :type body: :class:`huaweicloudsdkas.v1.BatchUnprotectInstancesOption`
+        """
         
         
 
@@ -62,7 +69,7 @@ class BatchUnprotectScalingInstancesRequest:
         实例ID。
 
         :param scaling_group_id: The scaling_group_id of this BatchUnprotectScalingInstancesRequest.
-        :type: str
+        :type scaling_group_id: str
         """
         self._scaling_group_id = scaling_group_id
 
@@ -72,7 +79,7 @@ class BatchUnprotectScalingInstancesRequest:
 
 
         :return: The body of this BatchUnprotectScalingInstancesRequest.
-        :rtype: BatchUnprotectInstancesOption
+        :rtype: :class:`huaweicloudsdkas.v1.BatchUnprotectInstancesOption`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class BatchUnprotectScalingInstancesRequest:
 
 
         :param body: The body of this BatchUnprotectScalingInstancesRequest.
-        :type: BatchUnprotectInstancesOption
+        :type body: :class:`huaweicloudsdkas.v1.BatchUnprotectInstancesOption`
         """
         self._body = body
 

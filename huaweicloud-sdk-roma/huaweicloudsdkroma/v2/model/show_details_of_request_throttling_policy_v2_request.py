@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDetailsOfRequestThrottlingPolicyV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowDetailsOfRequestThrottlingPolicyV2Request:
     }
 
     def __init__(self, instance_id=None, throttle_id=None):
-        """ShowDetailsOfRequestThrottlingPolicyV2Request - a model defined in huaweicloud sdk"""
+        """ShowDetailsOfRequestThrottlingPolicyV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param throttle_id: 流控策略的编号
+        :type throttle_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ShowDetailsOfRequestThrottlingPolicyV2Request:
         实例ID
 
         :param instance_id: The instance_id of this ShowDetailsOfRequestThrottlingPolicyV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -83,7 +90,7 @@ class ShowDetailsOfRequestThrottlingPolicyV2Request:
         流控策略的编号
 
         :param throttle_id: The throttle_id of this ShowDetailsOfRequestThrottlingPolicyV2Request.
-        :type: str
+        :type throttle_id: str
         """
         self._throttle_id = throttle_id
 

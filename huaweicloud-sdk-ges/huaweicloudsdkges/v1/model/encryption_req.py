@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EncryptionReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class EncryptionReq:
     }
 
     def __init__(self, enable=None, master_key_id=None):
-        """EncryptionReq - a model defined in huaweicloud sdk"""
+        """EncryptionReq
+
+        The model defined in huaweicloud sdk
+
+        :param enable: 是否启动加密特性。取值为“true”或者“false”。默认为“false”。
+        :type enable: bool
+        :param master_key_id: 与建图对应的project下，华为云数据加密服务创建的用户主密钥ID。
+        :type master_key_id: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class EncryptionReq:
         是否启动加密特性。取值为“true”或者“false”。默认为“false”。
 
         :param enable: The enable of this EncryptionReq.
-        :type: bool
+        :type enable: bool
         """
         self._enable = enable
 
@@ -85,7 +92,7 @@ class EncryptionReq:
         与建图对应的project下，华为云数据加密服务创建的用户主密钥ID。
 
         :param master_key_id: The master_key_id of this EncryptionReq.
-        :type: str
+        :type master_key_id: str
         """
         self._master_key_id = master_key_id
 

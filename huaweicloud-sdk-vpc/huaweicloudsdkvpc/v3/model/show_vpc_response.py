@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowVpcResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowVpcResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, vpc=None):
-        """ShowVpcResponse - a model defined in huaweicloud sdk"""
+        """ShowVpcResponse
+
+        The model defined in huaweicloud sdk
+
+        :param request_id: 请求ID
+        :type request_id: str
+        :param vpc: 
+        :type vpc: :class:`huaweicloudsdkvpc.v3.Vpc`
+        """
         
         super(ShowVpcResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ShowVpcResponse(SdkResponse):
         请求ID
 
         :param request_id: The request_id of this ShowVpcResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 
@@ -73,7 +80,7 @@ class ShowVpcResponse(SdkResponse):
 
 
         :return: The vpc of this ShowVpcResponse.
-        :rtype: Vpc
+        :rtype: :class:`huaweicloudsdkvpc.v3.Vpc`
         """
         return self._vpc
 
@@ -83,7 +90,7 @@ class ShowVpcResponse(SdkResponse):
 
 
         :param vpc: The vpc of this ShowVpcResponse.
-        :type: Vpc
+        :type vpc: :class:`huaweicloudsdkvpc.v3.Vpc`
         """
         self._vpc = vpc
 

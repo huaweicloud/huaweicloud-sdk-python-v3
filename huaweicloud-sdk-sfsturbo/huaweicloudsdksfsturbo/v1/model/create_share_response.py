@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateShareResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateShareResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, status=None):
-        """CreateShareResponse - a model defined in huaweicloud sdk"""
+        """CreateShareResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 创建的SFS Turbo文件系统ID。
+        :type id: str
+        :param name: 创建的SFS Turbo文件系统名称。
+        :type name: str
+        :param status: SFS Turbo文件系统的状态
+        :type status: str
+        """
         
         super(CreateShareResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class CreateShareResponse(SdkResponse):
         创建的SFS Turbo文件系统ID。
 
         :param id: The id of this CreateShareResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -90,7 +99,7 @@ class CreateShareResponse(SdkResponse):
         创建的SFS Turbo文件系统名称。
 
         :param name: The name of this CreateShareResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -112,7 +121,7 @@ class CreateShareResponse(SdkResponse):
         SFS Turbo文件系统的状态
 
         :param status: The status of this CreateShareResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 

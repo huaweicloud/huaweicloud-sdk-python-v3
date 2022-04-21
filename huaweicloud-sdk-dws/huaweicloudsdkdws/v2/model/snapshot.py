@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Snapshot:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -22,53 +21,41 @@ class Snapshot:
     sensitive_list = []
 
     openapi_types = {
-        'cluster_id': 'str',
         'name': 'str',
+        'cluster_id': 'str',
         'description': 'str'
     }
 
     attribute_map = {
-        'cluster_id': 'cluster_id',
         'name': 'name',
+        'cluster_id': 'cluster_id',
         'description': 'description'
     }
 
-    def __init__(self, cluster_id=None, name=None, description=None):
-        """Snapshot - a model defined in huaweicloud sdk"""
+    def __init__(self, name=None, cluster_id=None, description=None):
+        """Snapshot
+
+        The model defined in huaweicloud sdk
+
+        :param name: 快照名称，要求唯一性且必须以字母开头，不区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他的特殊字符，长度为4～64个字符。
+        :type name: str
+        :param cluster_id: 指定创建快照的集群ID
+        :type cluster_id: str
+        :param description: 快照描述，若不指定，描述为空。快照描述的字符长度不能超过256个字符，且不支持特殊字符!&lt;&gt;&#39;&#x3D;&amp;\&quot;。
+        :type description: str
+        """
         
         
 
-        self._cluster_id = None
         self._name = None
+        self._cluster_id = None
         self._description = None
         self.discriminator = None
 
-        self.cluster_id = cluster_id
         self.name = name
+        self.cluster_id = cluster_id
         if description is not None:
             self.description = description
-
-    @property
-    def cluster_id(self):
-        """Gets the cluster_id of this Snapshot.
-
-        指定创建快照的集群ID
-
-        :return: The cluster_id of this Snapshot.
-        :rtype: str
-        """
-        return self._cluster_id
-
-    @cluster_id.setter
-    def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this Snapshot.
-
-        指定创建快照的集群ID
-
-        :param cluster_id: The cluster_id of this Snapshot.
-        :type: str
-        """
-        self._cluster_id = cluster_id
 
     @property
     def name(self):
@@ -88,15 +75,37 @@ class Snapshot:
         快照名称，要求唯一性且必须以字母开头，不区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他的特殊字符，长度为4～64个字符。
 
         :param name: The name of this Snapshot.
-        :type: str
+        :type name: str
         """
         self._name = name
+
+    @property
+    def cluster_id(self):
+        """Gets the cluster_id of this Snapshot.
+
+        指定创建快照的集群ID
+
+        :return: The cluster_id of this Snapshot.
+        :rtype: str
+        """
+        return self._cluster_id
+
+    @cluster_id.setter
+    def cluster_id(self, cluster_id):
+        """Sets the cluster_id of this Snapshot.
+
+        指定创建快照的集群ID
+
+        :param cluster_id: The cluster_id of this Snapshot.
+        :type cluster_id: str
+        """
+        self._cluster_id = cluster_id
 
     @property
     def description(self):
         """Gets the description of this Snapshot.
 
-        快照描述
+        快照描述，若不指定，描述为空。快照描述的字符长度不能超过256个字符，且不支持特殊字符!<>'=&\"。
 
         :return: The description of this Snapshot.
         :rtype: str
@@ -107,10 +116,10 @@ class Snapshot:
     def description(self, description):
         """Sets the description of this Snapshot.
 
-        快照描述
+        快照描述，若不指定，描述为空。快照描述的字符长度不能超过256个字符，且不支持特殊字符!<>'=&\"。
 
         :param description: The description of this Snapshot.
-        :type: str
+        :type description: str
         """
         self._description = description
 

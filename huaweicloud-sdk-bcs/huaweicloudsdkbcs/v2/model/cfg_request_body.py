@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CfgRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class CfgRequestBody:
     }
 
     def __init__(self, chaincode_name=None, cert_path=None, channel_name=None, peer_orgs=None, union_info=None, is_multi_chan=None, channel_chaincode=None):
-        """CfgRequestBody - a model defined in huaweicloud sdk"""
+        """CfgRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param chaincode_name: 链代码名称，以小写字母开头，支持小写字母和数字，长度6-25位
+        :type chaincode_name: str
+        :param cert_path: SDK配置文件存放路径
+        :type cert_path: str
+        :param channel_name: 通道名称
+        :type channel_name: str
+        :param peer_orgs: key：组织名，value：该组织下需要下载的peer节点信息，peer节点请按照0,1,2的顺序升序填写
+        :type peer_orgs: dict(str, list[str])
+        :param union_info: key：联盟成员名称，value：该联盟成员peer组织名称hash值数组
+        :type union_info: dict(str, list[str])
+        :param is_multi_chan: 是否是多通道请求，如此处设成true则必须传入channel_chaincode，chaincode_name和channel_name设为空即可
+        :type is_multi_chan: bool
+        :param channel_chaincode: key：通道名称，value：该通道对应的链代码数组
+        :type channel_chaincode: dict(str, list[str])
+        """
         
         
 
@@ -84,7 +101,7 @@ class CfgRequestBody:
         链代码名称，以小写字母开头，支持小写字母和数字，长度6-25位
 
         :param chaincode_name: The chaincode_name of this CfgRequestBody.
-        :type: str
+        :type chaincode_name: str
         """
         self._chaincode_name = chaincode_name
 
@@ -106,7 +123,7 @@ class CfgRequestBody:
         SDK配置文件存放路径
 
         :param cert_path: The cert_path of this CfgRequestBody.
-        :type: str
+        :type cert_path: str
         """
         self._cert_path = cert_path
 
@@ -128,7 +145,7 @@ class CfgRequestBody:
         通道名称
 
         :param channel_name: The channel_name of this CfgRequestBody.
-        :type: str
+        :type channel_name: str
         """
         self._channel_name = channel_name
 
@@ -150,7 +167,7 @@ class CfgRequestBody:
         key：组织名，value：该组织下需要下载的peer节点信息，peer节点请按照0,1,2的顺序升序填写
 
         :param peer_orgs: The peer_orgs of this CfgRequestBody.
-        :type: dict(str, list[str])
+        :type peer_orgs: dict(str, list[str])
         """
         self._peer_orgs = peer_orgs
 
@@ -172,7 +189,7 @@ class CfgRequestBody:
         key：联盟成员名称，value：该联盟成员peer组织名称hash值数组
 
         :param union_info: The union_info of this CfgRequestBody.
-        :type: dict(str, list[str])
+        :type union_info: dict(str, list[str])
         """
         self._union_info = union_info
 
@@ -194,7 +211,7 @@ class CfgRequestBody:
         是否是多通道请求，如此处设成true则必须传入channel_chaincode，chaincode_name和channel_name设为空即可
 
         :param is_multi_chan: The is_multi_chan of this CfgRequestBody.
-        :type: bool
+        :type is_multi_chan: bool
         """
         self._is_multi_chan = is_multi_chan
 
@@ -216,7 +233,7 @@ class CfgRequestBody:
         key：通道名称，value：该通道对应的链代码数组
 
         :param channel_chaincode: The channel_chaincode of this CfgRequestBody.
-        :type: dict(str, list[str])
+        :type channel_chaincode: dict(str, list[str])
         """
         self._channel_chaincode = channel_chaincode
 

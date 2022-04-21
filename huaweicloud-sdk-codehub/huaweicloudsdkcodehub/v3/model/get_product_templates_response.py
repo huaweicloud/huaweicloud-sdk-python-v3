@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GetProductTemplatesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class GetProductTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """GetProductTemplatesResponse - a model defined in huaweicloud sdk"""
+        """GetProductTemplatesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param error: 
+        :type error: :class:`huaweicloudsdkcodehub.v3.Error`
+        :param result: 
+        :type result: :class:`huaweicloudsdkcodehub.v3.TemplateListInfo`
+        :param status: 响应状态
+        :type status: str
+        """
         
         super(GetProductTemplatesResponse, self).__init__()
 
@@ -56,7 +65,7 @@ class GetProductTemplatesResponse(SdkResponse):
 
 
         :return: The error of this GetProductTemplatesResponse.
-        :rtype: Error
+        :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
         """
         return self._error
 
@@ -66,7 +75,7 @@ class GetProductTemplatesResponse(SdkResponse):
 
 
         :param error: The error of this GetProductTemplatesResponse.
-        :type: Error
+        :type error: :class:`huaweicloudsdkcodehub.v3.Error`
         """
         self._error = error
 
@@ -76,7 +85,7 @@ class GetProductTemplatesResponse(SdkResponse):
 
 
         :return: The result of this GetProductTemplatesResponse.
-        :rtype: TemplateListInfo
+        :rtype: :class:`huaweicloudsdkcodehub.v3.TemplateListInfo`
         """
         return self._result
 
@@ -86,7 +95,7 @@ class GetProductTemplatesResponse(SdkResponse):
 
 
         :param result: The result of this GetProductTemplatesResponse.
-        :type: TemplateListInfo
+        :type result: :class:`huaweicloudsdkcodehub.v3.TemplateListInfo`
         """
         self._result = result
 
@@ -108,7 +117,7 @@ class GetProductTemplatesResponse(SdkResponse):
         响应状态
 
         :param status: The status of this GetProductTemplatesResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 

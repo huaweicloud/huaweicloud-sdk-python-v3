@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FirewallRule:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class FirewallRule:
     }
 
     def __init__(self, action=None, description=None, destination_ip_address=None, destination_port=None, enabled=None, id=None, ip_version=None, name=None, operate_type=None, protocol=None, source_ip_address=None, source_port=None):
-        """FirewallRule - a model defined in huaweicloud sdk"""
+        """FirewallRule
+
+        The model defined in huaweicloud sdk
+
+        :param action: 策略是否允许  取值范围：allow，deny，reject
+        :type action: str
+        :param description: 网络ACL规则描述。
+        :type description: str
+        :param destination_ip_address: 目的地IP地址，IPv4[或IPv6](tag:hide)的CIDR格式
+        :type destination_ip_address: str
+        :param destination_port: 目的地端口范围  取值范围：整数，比如80，或者以\&quot;-\&quot;隔开的范围，比如80-90
+        :type destination_port: str
+        :param enabled: 网络ACL规则使能开关。  取值范围：true，false
+        :type enabled: bool
+        :param id: 网络ACL规则ID。  进行更新规则时，如果operate_type为add，则该值为空。
+        :type id: str
+        :param ip_version: IP协议版本  取值范围：4[、6](tag:hide)
+        :type ip_version: int
+        :param name: 网络ACL规则名称。
+        :type name: str
+        :param operate_type: 网络ACL规则操作状态，作为请求时取值为\&quot;add\&quot;/\&quot;modify\&quot;/\&quot;delete\&quot;，作为返回值时为\&quot;normal\&quot;。 当请求更新规则时，本参数值为delete时，除id之外，本请求体其他参数均可为空。
+        :type operate_type: str
+        :param protocol: IP协议，为any时代表所有协议  取值范围：icmp，tcp，udp，[icmpv6，](tag:hide)any 
+        :type protocol: str
+        :param source_ip_address: 源IP地址，IPv4[或IPv6](tag:hide)的CIDR格式
+        :type source_ip_address: str
+        :param source_port: 源地端口范围  取值范围：整数，比如80，或者以\&quot;-\&quot;隔开的范围，比如80-90
+        :type source_port: str
+        """
         
         
 
@@ -102,7 +129,7 @@ class FirewallRule:
         策略是否允许  取值范围：allow，deny，reject
 
         :param action: The action of this FirewallRule.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -124,7 +151,7 @@ class FirewallRule:
         网络ACL规则描述。
 
         :param description: The description of this FirewallRule.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -146,7 +173,7 @@ class FirewallRule:
         目的地IP地址，IPv4[或IPv6](tag:hide)的CIDR格式
 
         :param destination_ip_address: The destination_ip_address of this FirewallRule.
-        :type: str
+        :type destination_ip_address: str
         """
         self._destination_ip_address = destination_ip_address
 
@@ -168,7 +195,7 @@ class FirewallRule:
         目的地端口范围  取值范围：整数，比如80，或者以\"-\"隔开的范围，比如80-90
 
         :param destination_port: The destination_port of this FirewallRule.
-        :type: str
+        :type destination_port: str
         """
         self._destination_port = destination_port
 
@@ -190,7 +217,7 @@ class FirewallRule:
         网络ACL规则使能开关。  取值范围：true，false
 
         :param enabled: The enabled of this FirewallRule.
-        :type: bool
+        :type enabled: bool
         """
         self._enabled = enabled
 
@@ -212,7 +239,7 @@ class FirewallRule:
         网络ACL规则ID。  进行更新规则时，如果operate_type为add，则该值为空。
 
         :param id: The id of this FirewallRule.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -234,7 +261,7 @@ class FirewallRule:
         IP协议版本  取值范围：4[、6](tag:hide)
 
         :param ip_version: The ip_version of this FirewallRule.
-        :type: int
+        :type ip_version: int
         """
         self._ip_version = ip_version
 
@@ -256,7 +283,7 @@ class FirewallRule:
         网络ACL规则名称。
 
         :param name: The name of this FirewallRule.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -278,7 +305,7 @@ class FirewallRule:
         网络ACL规则操作状态，作为请求时取值为\"add\"/\"modify\"/\"delete\"，作为返回值时为\"normal\"。 当请求更新规则时，本参数值为delete时，除id之外，本请求体其他参数均可为空。
 
         :param operate_type: The operate_type of this FirewallRule.
-        :type: str
+        :type operate_type: str
         """
         self._operate_type = operate_type
 
@@ -300,7 +327,7 @@ class FirewallRule:
         IP协议，为any时代表所有协议  取值范围：icmp，tcp，udp，[icmpv6，](tag:hide)any 
 
         :param protocol: The protocol of this FirewallRule.
-        :type: str
+        :type protocol: str
         """
         self._protocol = protocol
 
@@ -322,7 +349,7 @@ class FirewallRule:
         源IP地址，IPv4[或IPv6](tag:hide)的CIDR格式
 
         :param source_ip_address: The source_ip_address of this FirewallRule.
-        :type: str
+        :type source_ip_address: str
         """
         self._source_ip_address = source_ip_address
 
@@ -344,7 +371,7 @@ class FirewallRule:
         源地端口范围  取值范围：整数，比如80，或者以\"-\"隔开的范围，比如80-90
 
         :param source_port: The source_port of this FirewallRule.
-        :type: str
+        :type source_port: str
         """
         self._source_port = source_port
 

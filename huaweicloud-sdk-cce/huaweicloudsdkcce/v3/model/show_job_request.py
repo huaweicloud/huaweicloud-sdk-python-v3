@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowJobRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowJobRequest:
     }
 
     def __init__(self, job_id=None):
-        """ShowJobRequest - a model defined in huaweicloud sdk"""
+        """ShowJobRequest
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 任务ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
+        :type job_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowJobRequest:
         任务ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
         :param job_id: The job_id of this ShowJobRequest.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 

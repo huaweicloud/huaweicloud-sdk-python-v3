@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAppVersionsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListAppVersionsResponse(SdkResponse):
     }
 
     def __init__(self, versions=None, count=None):
-        """ListAppVersionsResponse - a model defined in huaweicloud sdk"""
+        """ListAppVersionsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param versions: app详情
+        :type versions: list[:class:`huaweicloudsdkief.v1.AppVersionDetail`]
+        :param count: 满足条件的应用版本个数
+        :type count: int
+        """
         
         super(ListAppVersionsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListAppVersionsResponse(SdkResponse):
         app详情
 
         :return: The versions of this ListAppVersionsResponse.
-        :rtype: list[AppVersionDetail]
+        :rtype: list[:class:`huaweicloudsdkief.v1.AppVersionDetail`]
         """
         return self._versions
 
@@ -63,7 +70,7 @@ class ListAppVersionsResponse(SdkResponse):
         app详情
 
         :param versions: The versions of this ListAppVersionsResponse.
-        :type: list[AppVersionDetail]
+        :type versions: list[:class:`huaweicloudsdkief.v1.AppVersionDetail`]
         """
         self._versions = versions
 
@@ -85,7 +92,7 @@ class ListAppVersionsResponse(SdkResponse):
         满足条件的应用版本个数
 
         :param count: The count of this ListAppVersionsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

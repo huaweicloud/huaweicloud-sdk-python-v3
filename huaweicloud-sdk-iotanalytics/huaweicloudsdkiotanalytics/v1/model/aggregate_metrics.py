@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AggregateMetrics:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class AggregateMetrics:
     }
 
     def __init__(self, time_span=None, interval=None, offset=None, tags=None, metrics=None, limit=None):
-        """AggregateMetrics - a model defined in huaweicloud sdk"""
+        """AggregateMetrics
+
+        The model defined in huaweicloud sdk
+
+        :param time_span: 
+        :type time_span: :class:`huaweicloudsdkiotanalytics.v1.TimeSpan`
+        :param interval: 聚合时间间隔, 示例：\&quot;1d|1h|10m|10s\&quot;
+        :type interval: str
+        :param offset: 聚合时间偏移量, 需要小于interval, 示例： \&quot;1h|10m|10s\&quot;
+        :type offset: str
+        :param tags: 对property按指定tags标签进行过滤查询，填入设备标签与标签值，不可为空，例如 {\&quot;deviceId\&quot;: \&quot;id0001\&quot;}
+        :type tags: dict(str, str)
+        :param metrics: 查询的测量指标列表
+        :type metrics: list[:class:`huaweicloudsdkiotanalytics.v1.AggregateMetric`]
+        :param limit: 返回值个数限制
+        :type limit: int
+        """
         
         
 
@@ -68,7 +83,7 @@ class AggregateMetrics:
 
 
         :return: The time_span of this AggregateMetrics.
-        :rtype: TimeSpan
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.TimeSpan`
         """
         return self._time_span
 
@@ -78,7 +93,7 @@ class AggregateMetrics:
 
 
         :param time_span: The time_span of this AggregateMetrics.
-        :type: TimeSpan
+        :type time_span: :class:`huaweicloudsdkiotanalytics.v1.TimeSpan`
         """
         self._time_span = time_span
 
@@ -100,7 +115,7 @@ class AggregateMetrics:
         聚合时间间隔, 示例：\"1d|1h|10m|10s\"
 
         :param interval: The interval of this AggregateMetrics.
-        :type: str
+        :type interval: str
         """
         self._interval = interval
 
@@ -122,7 +137,7 @@ class AggregateMetrics:
         聚合时间偏移量, 需要小于interval, 示例： \"1h|10m|10s\"
 
         :param offset: The offset of this AggregateMetrics.
-        :type: str
+        :type offset: str
         """
         self._offset = offset
 
@@ -144,7 +159,7 @@ class AggregateMetrics:
         对property按指定tags标签进行过滤查询，填入设备标签与标签值，不可为空，例如 {\"deviceId\": \"id0001\"}
 
         :param tags: The tags of this AggregateMetrics.
-        :type: dict(str, str)
+        :type tags: dict(str, str)
         """
         self._tags = tags
 
@@ -155,7 +170,7 @@ class AggregateMetrics:
         查询的测量指标列表
 
         :return: The metrics of this AggregateMetrics.
-        :rtype: list[AggregateMetric]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.AggregateMetric`]
         """
         return self._metrics
 
@@ -166,7 +181,7 @@ class AggregateMetrics:
         查询的测量指标列表
 
         :param metrics: The metrics of this AggregateMetrics.
-        :type: list[AggregateMetric]
+        :type metrics: list[:class:`huaweicloudsdkiotanalytics.v1.AggregateMetric`]
         """
         self._metrics = metrics
 
@@ -188,7 +203,7 @@ class AggregateMetrics:
         返回值个数限制
 
         :param limit: The limit of this AggregateMetrics.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

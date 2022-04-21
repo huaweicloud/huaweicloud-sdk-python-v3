@@ -94,6 +94,9 @@ from huaweicloudsdkbss.v2.model.limit_info_v2 import LimitInfoV2
 from huaweicloudsdkbss.v2.model.limit_value import LimitValue
 from huaweicloudsdkbss.v2.model.list_cities_request import ListCitiesRequest
 from huaweicloudsdkbss.v2.model.list_cities_response import ListCitiesResponse
+from huaweicloudsdkbss.v2.model.list_consume_sub_customers_req import ListConsumeSubCustomersReq
+from huaweicloudsdkbss.v2.model.list_consume_sub_customers_request import ListConsumeSubCustomersRequest
+from huaweicloudsdkbss.v2.model.list_consume_sub_customers_response import ListConsumeSubCustomersResponse
 from huaweicloudsdkbss.v2.model.list_conversions_request import ListConversionsRequest
 from huaweicloudsdkbss.v2.model.list_conversions_response import ListConversionsResponse
 from huaweicloudsdkbss.v2.model.list_counties_request import ListCountiesRequest
@@ -260,6 +263,7 @@ from huaweicloudsdkbss.v2.model.show_refund_order_details_response import ShowRe
 from huaweicloudsdkbss.v2.model.stat_usage_info import StatUsageInfo
 from huaweicloudsdkbss.v2.model.stat_usage_summary_info import StatUsageSummaryInfo
 from huaweicloudsdkbss.v2.model.sub_customer_info_v2 import SubCustomerInfoV2
+from huaweicloudsdkbss.v2.model.sub_customer_info_v3 import SubCustomerInfoV3
 from huaweicloudsdkbss.v2.model.sub_customer_monthly_bill_detail import SubCustomerMonthlyBillDetail
 from huaweicloudsdkbss.v2.model.template_args import TemplateArgs
 from huaweicloudsdkbss.v2.model.transfer_amount_info_v2 import TransferAmountInfoV2

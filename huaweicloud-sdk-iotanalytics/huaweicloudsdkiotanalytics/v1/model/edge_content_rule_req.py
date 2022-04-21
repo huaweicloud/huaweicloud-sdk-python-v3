@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EdgeContentRuleReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class EdgeContentRuleReq:
     }
 
     def __init__(self, app_id=None, products=None):
-        """EdgeContentRuleReq - a model defined in huaweicloud sdk"""
+        """EdgeContentRuleReq
+
+        The model defined in huaweicloud sdk
+
+        :param app_id: Edge中的资源空间Id
+        :type app_id: str
+        :param products: Edge中某资源空间Id下的产品列表
+        :type products: list[str]
+        """
         
         
 
@@ -61,7 +68,7 @@ class EdgeContentRuleReq:
         Edge中的资源空间Id
 
         :param app_id: The app_id of this EdgeContentRuleReq.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -83,7 +90,7 @@ class EdgeContentRuleReq:
         Edge中某资源空间Id下的产品列表
 
         :param products: The products of this EdgeContentRuleReq.
-        :type: list[str]
+        :type products: list[str]
         """
         self._products = products
 

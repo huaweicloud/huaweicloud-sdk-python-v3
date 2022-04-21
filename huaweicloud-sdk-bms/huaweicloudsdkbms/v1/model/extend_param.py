@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExtendParam:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ExtendParam:
     }
 
     def __init__(self, charging_mode=None, region_id=None, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None, enterprise_project_id=None):
-        """ExtendParam - a model defined in huaweicloud sdk"""
+        """ExtendParam
+
+        The model defined in huaweicloud sdk
+
+        :param charging_mode: 计费模式。取值范围：prePaid：预付费，即包年包月。默认值是prePaid。
+        :type charging_mode: str
+        :param region_id: 裸金属服务器所在区域ID。请参考地区和终端节点获取。
+        :type region_id: str
+        :param period_type: 订购周期类型。取值范围：month：月year：年 说明：chargingMode为prePaid时生效，且为必选值。
+        :type period_type: str
+        :param period_num: 订购周期数。取值范围：periodType&#x3D;month（周期类型为月）时，取值为[1-9]。periodType&#x3D;year（周期类型为年）时，取值为1。 说明：chargingMode为prePaid时生效，且为必选值。
+        :type period_num: int
+        :param is_auto_renew: 是否自动续订。true：自动续订false：不自动续订 说明：chargingMode为prePaid时生效，不指定该参数或者该参数值为空时默认为不自动续订。
+        :type is_auto_renew: str
+        :param is_auto_pay: 下单订购后，是否自动从客户的帐户中支付，而不需要客户手动去支付。true：是（自动支付）false：否（需要客户手动支付） 说明：chargingMode为prePaid时生效，不指定该参数或者该参数值为空时默认为客户手动支付。
+        :type is_auto_pay: str
+        :param enterprise_project_id: 企业项目ID。该字段不传（或传为字符串“0”），则将资源绑定给默认企业项目。 说明：关于企业项目ID的获取及企业项目特性的详细信息，请参见《企业管理API参考》。
+        :type enterprise_project_id: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class ExtendParam:
         计费模式。取值范围：prePaid：预付费，即包年包月。默认值是prePaid。
 
         :param charging_mode: The charging_mode of this ExtendParam.
-        :type: str
+        :type charging_mode: str
         """
         self._charging_mode = charging_mode
 
@@ -110,7 +127,7 @@ class ExtendParam:
         裸金属服务器所在区域ID。请参考地区和终端节点获取。
 
         :param region_id: The region_id of this ExtendParam.
-        :type: str
+        :type region_id: str
         """
         self._region_id = region_id
 
@@ -132,7 +149,7 @@ class ExtendParam:
         订购周期类型。取值范围：month：月year：年 说明：chargingMode为prePaid时生效，且为必选值。
 
         :param period_type: The period_type of this ExtendParam.
-        :type: str
+        :type period_type: str
         """
         self._period_type = period_type
 
@@ -154,7 +171,7 @@ class ExtendParam:
         订购周期数。取值范围：periodType=month（周期类型为月）时，取值为[1-9]。periodType=year（周期类型为年）时，取值为1。 说明：chargingMode为prePaid时生效，且为必选值。
 
         :param period_num: The period_num of this ExtendParam.
-        :type: int
+        :type period_num: int
         """
         self._period_num = period_num
 
@@ -176,7 +193,7 @@ class ExtendParam:
         是否自动续订。true：自动续订false：不自动续订 说明：chargingMode为prePaid时生效，不指定该参数或者该参数值为空时默认为不自动续订。
 
         :param is_auto_renew: The is_auto_renew of this ExtendParam.
-        :type: str
+        :type is_auto_renew: str
         """
         self._is_auto_renew = is_auto_renew
 
@@ -198,7 +215,7 @@ class ExtendParam:
         下单订购后，是否自动从客户的帐户中支付，而不需要客户手动去支付。true：是（自动支付）false：否（需要客户手动支付） 说明：chargingMode为prePaid时生效，不指定该参数或者该参数值为空时默认为客户手动支付。
 
         :param is_auto_pay: The is_auto_pay of this ExtendParam.
-        :type: str
+        :type is_auto_pay: str
         """
         self._is_auto_pay = is_auto_pay
 
@@ -220,7 +237,7 @@ class ExtendParam:
         企业项目ID。该字段不传（或传为字符串“0”），则将资源绑定给默认企业项目。 说明：关于企业项目ID的获取及企业项目特性的详细信息，请参见《企业管理API参考》。
 
         :param enterprise_project_id: The enterprise_project_id of this ExtendParam.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 

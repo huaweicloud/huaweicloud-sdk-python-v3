@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListLogHistogramResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListLogHistogramResponse(SdkResponse):
     }
 
     def __init__(self, histogram=None, count=None):
-        """ListLogHistogramResponse - a model defined in huaweicloud sdk"""
+        """ListLogHistogramResponse
+
+        The model defined in huaweicloud sdk
+
+        :param histogram: 直方图结果
+        :type histogram: str
+        :param count: 日志条数
+        :type count: int
+        """
         
         super(ListLogHistogramResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListLogHistogramResponse(SdkResponse):
         直方图结果
 
         :param histogram: The histogram of this ListLogHistogramResponse.
-        :type: str
+        :type histogram: str
         """
         self._histogram = histogram
 
@@ -85,7 +92,7 @@ class ListLogHistogramResponse(SdkResponse):
         日志条数
 
         :param count: The count of this ListLogHistogramResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

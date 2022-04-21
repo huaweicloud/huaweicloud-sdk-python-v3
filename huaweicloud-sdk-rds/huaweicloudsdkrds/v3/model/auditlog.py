@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Auditlog:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class Auditlog:
     }
 
     def __init__(self, id=None, name=None, size=None, begin_time=None, end_time=None):
-        """Auditlog - a model defined in huaweicloud sdk"""
+        """Auditlog
+
+        The model defined in huaweicloud sdk
+
+        :param id: 审计日志ID。
+        :type id: str
+        :param name: 审计日志文件名。
+        :type name: str
+        :param size: 审计日志大小，单位：KB。
+        :type size: int
+        :param begin_time: 审计日志开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始，Z指时区偏移量，例如北京时间偏移显示为+0800。
+        :type begin_time: str
+        :param end_time: 审计日志结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始，Z指时区偏移量，例如北京时间偏移显示为+0800。
+        :type end_time: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class Auditlog:
         审计日志ID。
 
         :param id: The id of this Auditlog.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -100,7 +113,7 @@ class Auditlog:
         审计日志文件名。
 
         :param name: The name of this Auditlog.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -122,7 +135,7 @@ class Auditlog:
         审计日志大小，单位：KB。
 
         :param size: The size of this Auditlog.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -144,7 +157,7 @@ class Auditlog:
         审计日志开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始，Z指时区偏移量，例如北京时间偏移显示为+0800。
 
         :param begin_time: The begin_time of this Auditlog.
-        :type: str
+        :type begin_time: str
         """
         self._begin_time = begin_time
 
@@ -166,7 +179,7 @@ class Auditlog:
         审计日志结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始，Z指时区偏移量，例如北京时间偏移显示为+0800。
 
         :param end_time: The end_time of this Auditlog.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneShowSecurityComplianceByOptionRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class KeystoneShowSecurityComplianceByOptionRequest:
     }
 
     def __init__(self, domain_id=None, option=None):
-        """KeystoneShowSecurityComplianceByOptionRequest - a model defined in huaweicloud sdk"""
+        """KeystoneShowSecurityComplianceByOptionRequest
+
+        The model defined in huaweicloud sdk
+
+        :param domain_id: 待查询的账号ID，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
+        :type domain_id: str
+        :param option: 查询条件。该字段内容为：password_regex或password_regex_description。  password_regex：密码强度策略的正则表达式；password_regex_description：密码强度策略的描述。
+        :type option: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class KeystoneShowSecurityComplianceByOptionRequest:
         待查询的账号ID，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param domain_id: The domain_id of this KeystoneShowSecurityComplianceByOptionRequest.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -83,7 +90,7 @@ class KeystoneShowSecurityComplianceByOptionRequest:
         查询条件。该字段内容为：password_regex或password_regex_description。  password_regex：密码强度策略的正则表达式；password_regex_description：密码强度策略的描述。
 
         :param option: The option of this KeystoneShowSecurityComplianceByOptionRequest.
-        :type: str
+        :type option: str
         """
         self._option = option
 

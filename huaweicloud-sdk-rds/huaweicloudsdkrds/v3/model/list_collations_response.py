@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCollationsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListCollationsResponse(SdkResponse):
     }
 
     def __init__(self, char_sets=None):
-        """ListCollationsResponse - a model defined in huaweicloud sdk"""
+        """ListCollationsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param char_sets: 字符集信息列表
+        :type char_sets: list[str]
+        """
         
         super(ListCollationsResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class ListCollationsResponse(SdkResponse):
         字符集信息列表
 
         :param char_sets: The char_sets of this ListCollationsResponse.
-        :type: list[str]
+        :type char_sets: list[str]
         """
         self._char_sets = char_sets
 

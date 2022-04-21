@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteDeployKeyV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class DeleteDeployKeyV2Response(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """DeleteDeployKeyV2Response - a model defined in huaweicloud sdk"""
+        """DeleteDeployKeyV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param error: 
+        :type error: :class:`huaweicloudsdkcodehub.v3.Error`
+        :param result: 响应结果
+        :type result: bool
+        :param status: 响应状态
+        :type status: str
+        """
         
         super(DeleteDeployKeyV2Response, self).__init__()
 
@@ -56,7 +65,7 @@ class DeleteDeployKeyV2Response(SdkResponse):
 
 
         :return: The error of this DeleteDeployKeyV2Response.
-        :rtype: Error
+        :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
         """
         return self._error
 
@@ -66,7 +75,7 @@ class DeleteDeployKeyV2Response(SdkResponse):
 
 
         :param error: The error of this DeleteDeployKeyV2Response.
-        :type: Error
+        :type error: :class:`huaweicloudsdkcodehub.v3.Error`
         """
         self._error = error
 
@@ -88,7 +97,7 @@ class DeleteDeployKeyV2Response(SdkResponse):
         响应结果
 
         :param result: The result of this DeleteDeployKeyV2Response.
-        :type: bool
+        :type result: bool
         """
         self._result = result
 
@@ -110,7 +119,7 @@ class DeleteDeployKeyV2Response(SdkResponse):
         响应状态
 
         :param status: The status of this DeleteDeployKeyV2Response.
-        :type: str
+        :type status: str
         """
         self._status = status
 

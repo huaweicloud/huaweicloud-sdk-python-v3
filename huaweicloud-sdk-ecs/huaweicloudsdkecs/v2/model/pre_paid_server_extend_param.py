@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PrePaidServerExtendParam:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class PrePaidServerExtendParam:
     }
 
     def __init__(self, charging_mode=None, region_id=None, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None, enterprise_project_id=None, support_auto_recovery=None, market_type=None, spot_price=None, disk_prior=None, spot_duration_hours=None, interruption_policy=None, spot_duration_count=None):
-        """PrePaidServerExtendParam - a model defined in huaweicloud sdk"""
+        """PrePaidServerExtendParam
+
+        The model defined in huaweicloud sdk
+
+        :param charging_mode: 计费模式。  功能说明：付费方式  取值范围：  - prePaid-预付费，即包年包月； - postPaid-后付费，即按需付费； - 默认值是postPaid  &gt; 说明： &gt;  &gt; 当chargingMode为prePaid（即创建包年包月付费的云服务器），且使用SSH秘钥方式登录云服务器时，metadata 中的 op_svc_userid 字段为必选字段。
+        :type charging_mode: str
+        :param region_id: 云服务器所在区域ID。  请参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)获取。
+        :type region_id: str
+        :param period_type: 订购周期类型。  取值范围：  - month-月 - year-年  &gt; 说明： &gt;  &gt; chargingMode为prePaid时生效且为必选值。
+        :type period_type: str
+        :param period_num: 订购周期数。  取值范围：  - periodType&#x3D;month（周期类型为月）时，取值为[1，9]； - periodType&#x3D;year（周期类型为年）时，取值为[1，3]；  &gt; 说明： &gt;  &gt; chargingMode为prePaid时生效且为必选值。 &gt;  &gt; periodNum为正整数。
+        :type period_num: int
+        :param is_auto_renew: 是否自动续订。  - “true”：自动续订 - “false”：不自动续订  &gt; 说明： &gt;  &gt; chargingMode为prePaid时生效，不传该字段时默认为不自动续订。
+        :type is_auto_renew: str
+        :param is_auto_pay: 下单订购后，是否自动从客户的账户中支付，而不需要客户手动去进行支付。  - “true”：是（自动支付） - “false”：否（需要客户手动支付）  &gt; 说明： &gt;  &gt; chargingMode为prePaid时生效，不传该字段时默认为客户手动支付。
+        :type is_auto_pay: str
+        :param enterprise_project_id: 企业项目ID。  &gt; 说明： &gt;  &gt; 关于企业项目ID的获取及企业项目特性的详细信息，请参见《[企业管理服务用户指南](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)》。 &gt;  &gt; 该字段不传（或传为字符串“0”），则将资源绑定给默认企业项目。
+        :type enterprise_project_id: str
+        :param support_auto_recovery: 是否配置弹性云服务器自动恢复的功能。  - “true”：配置该功能 - “false”：不配置该功能  &gt; 说明： &gt;  &gt; 此参数为boolean类型，若传入非boolean类型字符，程序将按照【“false”：不配置该功能】方式处理。 &gt;  &gt; 当marketType为spot时，不支持该功能。
+        :type support_auto_recovery: bool
+        :param market_type: 创建竞价实例时，需指定该参数的值为“spot”。  &gt; 说明： &gt;  &gt; 当chargingMode&#x3D;postPaid且marketType&#x3D;spot时，此参数生效。
+        :type market_type: str
+        :param spot_price: 用户愿意为竞价实例每小时支付的最高价格。  &gt; 说明： &gt;  &gt; 仅chargingMode&#x3D;postPaid且marketType&#x3D;spot时，该参数设置后生效。 &gt;  &gt; 当chargingMode&#x3D;postPaid且marketType&#x3D;spot时，如果不传递spotPrice或者传递一个空字符串，默认使用按需购买的价格作为竞价。
+        :type spot_price: str
+        :param disk_prior: 是否支持先创建卷，再创建虚拟机。  “true”：配置该功能 “false”：不配置该功能
+        :type disk_prior: str
+        :param spot_duration_hours: 购买的竞价实例时长。  - 仅interruption_policy&#x3D;immediate 时该字段有效 。 - spot_duration_hours大于0。最大值由预测系统给出可以从flavor的extra_specs的cond:spot_block:operation:longest_duration_hours字段中查询。
+        :type spot_duration_hours: int
+        :param interruption_policy: 竞价实例中断策略，当前支持immediate。  - 当interruption_policy&#x3D;immediate时表示释放策略为立即释放。 
+        :type interruption_policy: str
+        :param spot_duration_count: 表示购买的“竞价实例时长”的个数。  - 仅spot_duration_hours&gt;0 时该字段有效。 - spot_duration_hours小于6时，spot_duration_count值必须为1。 - spot_duration_hours等于6时，spot_duration_count大于等于1。  spot_duration_count的最大值由预测系统给出可以从flavor的extra_specs的cond:spot_block:operation:longest_duration_count字段中查询。  
+        :type spot_duration_count: int
+        """
         
         
 
@@ -123,7 +154,7 @@ class PrePaidServerExtendParam:
         计费模式。  功能说明：付费方式  取值范围：  - prePaid-预付费，即包年包月； - postPaid-后付费，即按需付费； - 默认值是postPaid  > 说明： >  > 当chargingMode为prePaid（即创建包年包月付费的云服务器），且使用SSH秘钥方式登录云服务器时，metadata 中的 op_svc_userid 字段为必选字段。
 
         :param charging_mode: The charging_mode of this PrePaidServerExtendParam.
-        :type: str
+        :type charging_mode: str
         """
         self._charging_mode = charging_mode
 
@@ -145,7 +176,7 @@ class PrePaidServerExtendParam:
         云服务器所在区域ID。  请参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)获取。
 
         :param region_id: The region_id of this PrePaidServerExtendParam.
-        :type: str
+        :type region_id: str
         """
         self._region_id = region_id
 
@@ -167,7 +198,7 @@ class PrePaidServerExtendParam:
         订购周期类型。  取值范围：  - month-月 - year-年  > 说明： >  > chargingMode为prePaid时生效且为必选值。
 
         :param period_type: The period_type of this PrePaidServerExtendParam.
-        :type: str
+        :type period_type: str
         """
         self._period_type = period_type
 
@@ -189,7 +220,7 @@ class PrePaidServerExtendParam:
         订购周期数。  取值范围：  - periodType=month（周期类型为月）时，取值为[1，9]； - periodType=year（周期类型为年）时，取值为[1，3]；  > 说明： >  > chargingMode为prePaid时生效且为必选值。 >  > periodNum为正整数。
 
         :param period_num: The period_num of this PrePaidServerExtendParam.
-        :type: int
+        :type period_num: int
         """
         self._period_num = period_num
 
@@ -211,7 +242,7 @@ class PrePaidServerExtendParam:
         是否自动续订。  - “true”：自动续订 - “false”：不自动续订  > 说明： >  > chargingMode为prePaid时生效，不传该字段时默认为不自动续订。
 
         :param is_auto_renew: The is_auto_renew of this PrePaidServerExtendParam.
-        :type: str
+        :type is_auto_renew: str
         """
         self._is_auto_renew = is_auto_renew
 
@@ -233,7 +264,7 @@ class PrePaidServerExtendParam:
         下单订购后，是否自动从客户的账户中支付，而不需要客户手动去进行支付。  - “true”：是（自动支付） - “false”：否（需要客户手动支付）  > 说明： >  > chargingMode为prePaid时生效，不传该字段时默认为客户手动支付。
 
         :param is_auto_pay: The is_auto_pay of this PrePaidServerExtendParam.
-        :type: str
+        :type is_auto_pay: str
         """
         self._is_auto_pay = is_auto_pay
 
@@ -255,7 +286,7 @@ class PrePaidServerExtendParam:
         企业项目ID。  > 说明： >  > 关于企业项目ID的获取及企业项目特性的详细信息，请参见《[企业管理服务用户指南](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)》。 >  > 该字段不传（或传为字符串“0”），则将资源绑定给默认企业项目。
 
         :param enterprise_project_id: The enterprise_project_id of this PrePaidServerExtendParam.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -277,7 +308,7 @@ class PrePaidServerExtendParam:
         是否配置弹性云服务器自动恢复的功能。  - “true”：配置该功能 - “false”：不配置该功能  > 说明： >  > 此参数为boolean类型，若传入非boolean类型字符，程序将按照【“false”：不配置该功能】方式处理。 >  > 当marketType为spot时，不支持该功能。
 
         :param support_auto_recovery: The support_auto_recovery of this PrePaidServerExtendParam.
-        :type: bool
+        :type support_auto_recovery: bool
         """
         self._support_auto_recovery = support_auto_recovery
 
@@ -299,7 +330,7 @@ class PrePaidServerExtendParam:
         创建竞价实例时，需指定该参数的值为“spot”。  > 说明： >  > 当chargingMode=postPaid且marketType=spot时，此参数生效。
 
         :param market_type: The market_type of this PrePaidServerExtendParam.
-        :type: str
+        :type market_type: str
         """
         self._market_type = market_type
 
@@ -321,7 +352,7 @@ class PrePaidServerExtendParam:
         用户愿意为竞价实例每小时支付的最高价格。  > 说明： >  > 仅chargingMode=postPaid且marketType=spot时，该参数设置后生效。 >  > 当chargingMode=postPaid且marketType=spot时，如果不传递spotPrice或者传递一个空字符串，默认使用按需购买的价格作为竞价。
 
         :param spot_price: The spot_price of this PrePaidServerExtendParam.
-        :type: str
+        :type spot_price: str
         """
         self._spot_price = spot_price
 
@@ -343,7 +374,7 @@ class PrePaidServerExtendParam:
         是否支持先创建卷，再创建虚拟机。  “true”：配置该功能 “false”：不配置该功能
 
         :param disk_prior: The disk_prior of this PrePaidServerExtendParam.
-        :type: str
+        :type disk_prior: str
         """
         self._disk_prior = disk_prior
 
@@ -365,7 +396,7 @@ class PrePaidServerExtendParam:
         购买的竞价实例时长。  - 仅interruption_policy=immediate 时该字段有效 。 - spot_duration_hours大于0。最大值由预测系统给出可以从flavor的extra_specs的cond:spot_block:operation:longest_duration_hours字段中查询。
 
         :param spot_duration_hours: The spot_duration_hours of this PrePaidServerExtendParam.
-        :type: int
+        :type spot_duration_hours: int
         """
         self._spot_duration_hours = spot_duration_hours
 
@@ -387,7 +418,7 @@ class PrePaidServerExtendParam:
         竞价实例中断策略，当前支持immediate。  - 当interruption_policy=immediate时表示释放策略为立即释放。 
 
         :param interruption_policy: The interruption_policy of this PrePaidServerExtendParam.
-        :type: str
+        :type interruption_policy: str
         """
         self._interruption_policy = interruption_policy
 
@@ -409,7 +440,7 @@ class PrePaidServerExtendParam:
         表示购买的“竞价实例时长”的个数。  - 仅spot_duration_hours>0 时该字段有效。 - spot_duration_hours小于6时，spot_duration_count值必须为1。 - spot_duration_hours等于6时，spot_duration_count大于等于1。  spot_duration_count的最大值由预测系统给出可以从flavor的extra_specs的cond:spot_block:operation:longest_duration_count字段中查询。  
 
         :param spot_duration_count: The spot_duration_count of this PrePaidServerExtendParam.
-        :type: int
+        :type spot_duration_count: int
         """
         self._spot_duration_count = spot_duration_count
 

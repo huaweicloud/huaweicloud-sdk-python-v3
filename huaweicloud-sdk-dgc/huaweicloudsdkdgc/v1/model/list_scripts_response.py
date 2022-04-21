@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListScriptsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListScriptsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, scripts=None):
-        """ListScriptsResponse - a model defined in huaweicloud sdk"""
+        """ListScriptsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 
+        :type total: int
+        :param scripts: 
+        :type scripts: list[:class:`huaweicloudsdkdgc.v1.ScriptInfo`]
+        """
         
         super(ListScriptsResponse, self).__init__()
 
@@ -61,7 +68,7 @@ class ListScriptsResponse(SdkResponse):
 
 
         :param total: The total of this ListScriptsResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -71,7 +78,7 @@ class ListScriptsResponse(SdkResponse):
 
 
         :return: The scripts of this ListScriptsResponse.
-        :rtype: list[ScriptInfo]
+        :rtype: list[:class:`huaweicloudsdkdgc.v1.ScriptInfo`]
         """
         return self._scripts
 
@@ -81,7 +88,7 @@ class ListScriptsResponse(SdkResponse):
 
 
         :param scripts: The scripts of this ListScriptsResponse.
-        :type: list[ScriptInfo]
+        :type scripts: list[:class:`huaweicloudsdkdgc.v1.ScriptInfo`]
         """
         self._scripts = scripts
 

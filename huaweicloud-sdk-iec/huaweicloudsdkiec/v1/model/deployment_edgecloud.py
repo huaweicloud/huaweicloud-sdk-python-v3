@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeploymentEdgecloud:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class DeploymentEdgecloud:
     }
 
     def __init__(self, id=None, name=None, stacks=None, description=None, coverage=None):
-        """DeploymentEdgecloud - a model defined in huaweicloud sdk"""
+        """DeploymentEdgecloud
+
+        The model defined in huaweicloud sdk
+
+        :param id: 边缘业务ID。
+        :type id: str
+        :param name: 边缘业务名称。
+        :type name: str
+        :param stacks: 
+        :type stacks: :class:`huaweicloudsdkiec.v1.Stack`
+        :param description: 边缘业务描述，最大支持255字节。
+        :type description: str
+        :param coverage: 
+        :type coverage: :class:`huaweicloudsdkiec.v1.Coverage`
+        """
         
         
 
@@ -78,7 +91,7 @@ class DeploymentEdgecloud:
         边缘业务ID。
 
         :param id: The id of this DeploymentEdgecloud.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -100,7 +113,7 @@ class DeploymentEdgecloud:
         边缘业务名称。
 
         :param name: The name of this DeploymentEdgecloud.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -110,7 +123,7 @@ class DeploymentEdgecloud:
 
 
         :return: The stacks of this DeploymentEdgecloud.
-        :rtype: Stack
+        :rtype: :class:`huaweicloudsdkiec.v1.Stack`
         """
         return self._stacks
 
@@ -120,7 +133,7 @@ class DeploymentEdgecloud:
 
 
         :param stacks: The stacks of this DeploymentEdgecloud.
-        :type: Stack
+        :type stacks: :class:`huaweicloudsdkiec.v1.Stack`
         """
         self._stacks = stacks
 
@@ -142,7 +155,7 @@ class DeploymentEdgecloud:
         边缘业务描述，最大支持255字节。
 
         :param description: The description of this DeploymentEdgecloud.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -152,7 +165,7 @@ class DeploymentEdgecloud:
 
 
         :return: The coverage of this DeploymentEdgecloud.
-        :rtype: Coverage
+        :rtype: :class:`huaweicloudsdkiec.v1.Coverage`
         """
         return self._coverage
 
@@ -162,7 +175,7 @@ class DeploymentEdgecloud:
 
 
         :param coverage: The coverage of this DeploymentEdgecloud.
-        :type: Coverage
+        :type coverage: :class:`huaweicloudsdkiec.v1.Coverage`
         """
         self._coverage = coverage
 

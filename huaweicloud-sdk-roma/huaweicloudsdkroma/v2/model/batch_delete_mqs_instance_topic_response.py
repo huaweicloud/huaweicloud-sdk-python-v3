@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchDeleteMqsInstanceTopicResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchDeleteMqsInstanceTopicResponse(SdkResponse):
     }
 
     def __init__(self, topics=None):
-        """BatchDeleteMqsInstanceTopicResponse - a model defined in huaweicloud sdk"""
+        """BatchDeleteMqsInstanceTopicResponse
+
+        The model defined in huaweicloud sdk
+
+        :param topics: 待删除的topic列表。
+        :type topics: list[:class:`huaweicloudsdkroma.v2.BatchDeleteMqsInstanceTopicRespTopics`]
+        """
         
         super(BatchDeleteMqsInstanceTopicResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class BatchDeleteMqsInstanceTopicResponse(SdkResponse):
         待删除的topic列表。
 
         :return: The topics of this BatchDeleteMqsInstanceTopicResponse.
-        :rtype: list[BatchDeleteMqsInstanceTopicRespTopics]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.BatchDeleteMqsInstanceTopicRespTopics`]
         """
         return self._topics
 
@@ -58,7 +63,7 @@ class BatchDeleteMqsInstanceTopicResponse(SdkResponse):
         待删除的topic列表。
 
         :param topics: The topics of this BatchDeleteMqsInstanceTopicResponse.
-        :type: list[BatchDeleteMqsInstanceTopicRespTopics]
+        :type topics: list[:class:`huaweicloudsdkroma.v2.BatchDeleteMqsInstanceTopicRespTopics`]
         """
         self._topics = topics
 

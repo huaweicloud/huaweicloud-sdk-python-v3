@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IdcardVerificationResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class IdcardVerificationResult:
     }
 
     def __init__(self, valid_number=None, valid_birth=None, valid_sex=None, valid_date=None):
-        """IdcardVerificationResult - a model defined in huaweicloud sdk"""
+        """IdcardVerificationResult
+
+        The model defined in huaweicloud sdk
+
+        :param valid_number: 身份证号规则校验是否通过。“true”表示身份证号规则校验通过，“false”表示身份证号规则校验不通过。当身份证图片是国徽面时，默认是false。仅在输入参数return_verification为true时，返回该字段。 
+        :type valid_number: bool
+        :param valid_birth: 出生日期与身份证号所表示的出生日期是否一致。“true”表示一致，“false”表示不一致。当身份证图片是国徽面，或者身份证号规则校验不通过时，默认是false。仅在输入参数return_verification为true时，返回该字段。 
+        :type valid_birth: bool
+        :param valid_sex: 性别与身份证号所表示的性别信息是否一致。“true”表示一致，“false”表示不一致。当身份证图片是国徽面，或者身份证号规则校验不通过时，默认是false。仅在输入参数return_verification为true时，返回该字段。 
+        :type valid_sex: bool
+        :param valid_date: 当前日期是否在有效期内。“true”表示当前日期在有效期内，“false”表示当前日期不在有效期内。当身份证图片是人像面时，默认是false。仅在输入参数return_verification为true时，返回该字段。 
+        :type valid_date: bool
+        """
         
         
 
@@ -73,7 +84,7 @@ class IdcardVerificationResult:
         身份证号规则校验是否通过。“true”表示身份证号规则校验通过，“false”表示身份证号规则校验不通过。当身份证图片是国徽面时，默认是false。仅在输入参数return_verification为true时，返回该字段。 
 
         :param valid_number: The valid_number of this IdcardVerificationResult.
-        :type: bool
+        :type valid_number: bool
         """
         self._valid_number = valid_number
 
@@ -95,7 +106,7 @@ class IdcardVerificationResult:
         出生日期与身份证号所表示的出生日期是否一致。“true”表示一致，“false”表示不一致。当身份证图片是国徽面，或者身份证号规则校验不通过时，默认是false。仅在输入参数return_verification为true时，返回该字段。 
 
         :param valid_birth: The valid_birth of this IdcardVerificationResult.
-        :type: bool
+        :type valid_birth: bool
         """
         self._valid_birth = valid_birth
 
@@ -117,7 +128,7 @@ class IdcardVerificationResult:
         性别与身份证号所表示的性别信息是否一致。“true”表示一致，“false”表示不一致。当身份证图片是国徽面，或者身份证号规则校验不通过时，默认是false。仅在输入参数return_verification为true时，返回该字段。 
 
         :param valid_sex: The valid_sex of this IdcardVerificationResult.
-        :type: bool
+        :type valid_sex: bool
         """
         self._valid_sex = valid_sex
 
@@ -139,7 +150,7 @@ class IdcardVerificationResult:
         当前日期是否在有效期内。“true”表示当前日期在有效期内，“false”表示当前日期不在有效期内。当身份证图片是人像面时，默认是false。仅在输入参数return_verification为true时，返回该字段。 
 
         :param valid_date: The valid_date of this IdcardVerificationResult.
-        :type: bool
+        :type valid_date: bool
         """
         self._valid_date = valid_date
 

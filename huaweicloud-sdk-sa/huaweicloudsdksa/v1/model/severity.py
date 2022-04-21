@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Severity:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class Severity:
     }
 
     def __init__(self, label=None, normalize_score=None, original_score=None):
-        """Severity - a model defined in huaweicloud sdk"""
+        """Severity
+
+        The model defined in huaweicloud sdk
+
+        :param label: 严重性等级取值范围：TIPS、LOW、MEDIUM、HIGH、FATAL。 TIPS：未发现任何问题。 LOW：无需针对问题执行任何操作。 MEDIUM：问题需要处理，但不紧急。 HIGH：问题必须优先处理。 FATAL：问题必须立即处理，以防止产生进一步的损害。
+        :type label: str
+        :param normalize_score: 严重性评分取值范围：0-100； 与严重性等级的对应关系： TIPS 0； LOW 1-39； MEDIUM 40-69； HIGH 70-89； FATAL 90-100。
+        :type normalize_score: int
+        :param original_score: 严重性原始评分，指在数据源产品中的评分。
+        :type original_score: int
+        """
         
         
 
@@ -67,7 +76,7 @@ class Severity:
         严重性等级取值范围：TIPS、LOW、MEDIUM、HIGH、FATAL。 TIPS：未发现任何问题。 LOW：无需针对问题执行任何操作。 MEDIUM：问题需要处理，但不紧急。 HIGH：问题必须优先处理。 FATAL：问题必须立即处理，以防止产生进一步的损害。
 
         :param label: The label of this Severity.
-        :type: str
+        :type label: str
         """
         self._label = label
 
@@ -89,7 +98,7 @@ class Severity:
         严重性评分取值范围：0-100； 与严重性等级的对应关系： TIPS 0； LOW 1-39； MEDIUM 40-69； HIGH 70-89； FATAL 90-100。
 
         :param normalize_score: The normalize_score of this Severity.
-        :type: int
+        :type normalize_score: int
         """
         self._normalize_score = normalize_score
 
@@ -111,7 +120,7 @@ class Severity:
         严重性原始评分，指在数据源产品中的评分。
 
         :param original_score: The original_score of this Severity.
-        :type: int
+        :type original_score: int
         """
         self._original_score = original_score
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateCompareTaskResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateCompareTaskResult:
     }
 
     def __init__(self, compare_task_id=None, error_code=None, error_msg=None):
-        """CreateCompareTaskResult - a model defined in huaweicloud sdk"""
+        """CreateCompareTaskResult
+
+        The model defined in huaweicloud sdk
+
+        :param compare_task_id: 对比任务创建成功后，返回对比任务的id，用于查询该对比任务的结果。
+        :type compare_task_id: str
+        :param error_code: 错误码。
+        :type error_code: str
+        :param error_msg: 错误信息。
+        :type error_msg: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class CreateCompareTaskResult:
         对比任务创建成功后，返回对比任务的id，用于查询该对比任务的结果。
 
         :param compare_task_id: The compare_task_id of this CreateCompareTaskResult.
-        :type: str
+        :type compare_task_id: str
         """
         self._compare_task_id = compare_task_id
 
@@ -90,7 +99,7 @@ class CreateCompareTaskResult:
         错误码。
 
         :param error_code: The error_code of this CreateCompareTaskResult.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -112,7 +121,7 @@ class CreateCompareTaskResult:
         错误信息。
 
         :param error_msg: The error_msg of this CreateCompareTaskResult.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 

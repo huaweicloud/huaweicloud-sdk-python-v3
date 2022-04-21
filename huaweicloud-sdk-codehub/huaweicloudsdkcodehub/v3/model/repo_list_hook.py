@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RepoListHook:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RepoListHook:
     }
 
     def __init__(self, hooks=None):
-        """RepoListHook - a model defined in huaweicloud sdk"""
+        """RepoListHook
+
+        The model defined in huaweicloud sdk
+
+        :param hooks: hook列表
+        :type hooks: list[:class:`huaweicloudsdkcodehub.v3.RepoHook`]
+        """
         
         
 
@@ -47,7 +52,7 @@ class RepoListHook:
         hook列表
 
         :return: The hooks of this RepoListHook.
-        :rtype: list[RepoHook]
+        :rtype: list[:class:`huaweicloudsdkcodehub.v3.RepoHook`]
         """
         return self._hooks
 
@@ -58,7 +63,7 @@ class RepoListHook:
         hook列表
 
         :param hooks: The hooks of this RepoListHook.
-        :type: list[RepoHook]
+        :type hooks: list[:class:`huaweicloudsdkcodehub.v3.RepoHook`]
         """
         self._hooks = hooks
 

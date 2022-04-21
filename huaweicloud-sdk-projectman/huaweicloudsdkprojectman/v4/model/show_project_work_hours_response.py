@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowProjectWorkHoursResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowProjectWorkHoursResponse(SdkResponse):
     }
 
     def __init__(self, work_hours=None, total=None):
-        """ShowProjectWorkHoursResponse - a model defined in huaweicloud sdk"""
+        """ShowProjectWorkHoursResponse
+
+        The model defined in huaweicloud sdk
+
+        :param work_hours: 工时列表
+        :type work_hours: list[:class:`huaweicloudsdkprojectman.v4.ShowProjectWorkHoursResponseBodyWorkHours`]
+        :param total: 总数
+        :type total: int
+        """
         
         super(ShowProjectWorkHoursResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ShowProjectWorkHoursResponse(SdkResponse):
         工时列表
 
         :return: The work_hours of this ShowProjectWorkHoursResponse.
-        :rtype: list[ShowProjectWorkHoursResponseBodyWorkHours]
+        :rtype: list[:class:`huaweicloudsdkprojectman.v4.ShowProjectWorkHoursResponseBodyWorkHours`]
         """
         return self._work_hours
 
@@ -63,7 +70,7 @@ class ShowProjectWorkHoursResponse(SdkResponse):
         工时列表
 
         :param work_hours: The work_hours of this ShowProjectWorkHoursResponse.
-        :type: list[ShowProjectWorkHoursResponseBodyWorkHours]
+        :type work_hours: list[:class:`huaweicloudsdkprojectman.v4.ShowProjectWorkHoursResponseBodyWorkHours`]
         """
         self._work_hours = work_hours
 
@@ -85,7 +92,7 @@ class ShowProjectWorkHoursResponse(SdkResponse):
         总数
 
         :param total: The total of this ShowProjectWorkHoursResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateDefaultConfigRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateDefaultConfigRequest:
     }
 
     def __init__(self, body=None):
-        """CreateDefaultConfigRequest - a model defined in huaweicloud sdk"""
+        """CreateDefaultConfigRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateDefaultConfigRequest
+        :type body: :class:`huaweicloudsdkantiddos.v1.DdosConfig`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateDefaultConfigRequest:
 
 
         :return: The body of this CreateDefaultConfigRequest.
-        :rtype: DdosConfig
+        :rtype: :class:`huaweicloudsdkantiddos.v1.DdosConfig`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateDefaultConfigRequest:
 
 
         :param body: The body of this CreateDefaultConfigRequest.
-        :type: DdosConfig
+        :type body: :class:`huaweicloudsdkantiddos.v1.DdosConfig`
         """
         self._body = body
 

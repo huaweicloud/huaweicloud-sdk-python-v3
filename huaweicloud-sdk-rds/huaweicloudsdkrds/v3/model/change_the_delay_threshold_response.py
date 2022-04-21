@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ChangeTheDelayThresholdResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ChangeTheDelayThresholdResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """ChangeTheDelayThresholdResponse - a model defined in huaweicloud sdk"""
+        """ChangeTheDelayThresholdResponse
+
+        The model defined in huaweicloud sdk
+
+        :param result: 修改读写分离权重或延时阈值的结果。
+        :type result: str
+        """
         
         super(ChangeTheDelayThresholdResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class ChangeTheDelayThresholdResponse(SdkResponse):
         修改读写分离权重或延时阈值的结果。
 
         :param result: The result of this ChangeTheDelayThresholdResponse.
-        :type: str
+        :type result: str
         """
         self._result = result
 

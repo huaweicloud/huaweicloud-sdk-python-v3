@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PaneSetting:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class PaneSetting:
     }
 
     def __init__(self, pane_id=None, x=None, y=None, width=None, height=None):
-        """PaneSetting - a model defined in huaweicloud sdk"""
+        """PaneSetting
+
+        The model defined in huaweicloud sdk
+
+        :param pane_id: 原视频的id。
+        :type pane_id: str
+        :param x: pane_id标记的原视频起点，在合成视频中相对于左下角的水平偏移量。 目前只支持小数类型，表示相对于输出视频宽的水平偏移比率。取值范围(0,1)。
+        :type x: str
+        :param y: pane_id标记的原视频，在合成视频中相对于左下角的垂直偏移量。 目前只支持小数型，表示相对于输出视频高的垂直偏移比率。取值范围:(0,1)。
+        :type y: str
+        :param width: pane_id标记的原视频，在合成视频中占的宽。目前只支持小数型，范围(0,1)，表示占据合成视频宽的比率。 
+        :type width: str
+        :param height: pane_id标记的原视频，在合成视频中占的高。目前只支持小数型，范围(0,1)，表示占据合成视频高的比率。 
+        :type height: str
+        """
         
         
 
@@ -73,7 +86,7 @@ class PaneSetting:
         原视频的id。
 
         :param pane_id: The pane_id of this PaneSetting.
-        :type: str
+        :type pane_id: str
         """
         self._pane_id = pane_id
 
@@ -95,7 +108,7 @@ class PaneSetting:
         pane_id标记的原视频起点，在合成视频中相对于左下角的水平偏移量。 目前只支持小数类型，表示相对于输出视频宽的水平偏移比率。取值范围(0,1)。
 
         :param x: The x of this PaneSetting.
-        :type: str
+        :type x: str
         """
         self._x = x
 
@@ -117,7 +130,7 @@ class PaneSetting:
         pane_id标记的原视频，在合成视频中相对于左下角的垂直偏移量。 目前只支持小数型，表示相对于输出视频高的垂直偏移比率。取值范围:(0,1)。
 
         :param y: The y of this PaneSetting.
-        :type: str
+        :type y: str
         """
         self._y = y
 
@@ -139,7 +152,7 @@ class PaneSetting:
         pane_id标记的原视频，在合成视频中占的宽。目前只支持小数型，范围(0,1)，表示占据合成视频宽的比率。 
 
         :param width: The width of this PaneSetting.
-        :type: str
+        :type width: str
         """
         self._width = width
 
@@ -161,7 +174,7 @@ class PaneSetting:
         pane_id标记的原视频，在合成视频中占的高。目前只支持小数型，范围(0,1)，表示占据合成视频高的比率。 
 
         :param height: The height of this PaneSetting.
-        :type: str
+        :type height: str
         """
         self._height = height
 

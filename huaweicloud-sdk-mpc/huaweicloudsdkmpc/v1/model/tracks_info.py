@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TracksInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class TracksInfo:
     }
 
     def __init__(self, channel_layout=None, language=None):
-        """TracksInfo - a model defined in huaweicloud sdk"""
+        """TracksInfo
+
+        The model defined in huaweicloud sdk
+
+        :param channel_layout: 音频轨的声道layout 
+        :type channel_layout: str
+        :param language: 音频轨对应语言描述 
+        :type language: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class TracksInfo:
         音频轨的声道layout 
 
         :param channel_layout: The channel_layout of this TracksInfo.
-        :type: str
+        :type channel_layout: str
         """
         self._channel_layout = channel_layout
 
@@ -85,7 +92,7 @@ class TracksInfo:
         音频轨对应语言描述 
 
         :param language: The language of this TracksInfo.
-        :type: str
+        :type language: str
         """
         self._language = language
 

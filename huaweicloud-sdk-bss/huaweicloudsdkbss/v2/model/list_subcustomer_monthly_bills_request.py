@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSubcustomerMonthlyBillsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ListSubcustomerMonthlyBillsRequest:
     }
 
     def __init__(self, customer_id=None, cycle=None, cloud_service_type=None, charge_mode=None, offset=None, limit=None, bill_type=None, indirect_partner_id=None):
-        """ListSubcustomerMonthlyBillsRequest - a model defined in huaweicloud sdk"""
+        """ListSubcustomerMonthlyBillsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param customer_id: 客户账号ID。您可以调用查询客户列表接口获取customer_id。
+        :type customer_id: str
+        :param cycle: 消费时间。格式固定为YYYY-MM。示例：2018-08
+        :type cycle: str
+        :param cloud_service_type: 云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
+        :type cloud_service_type: str
+        :param charge_mode: 计费模式。1：包年/包月3：按需
+        :type charge_mode: str
+        :param offset: 偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset &#x3D; 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
+        :type offset: int
+        :param limit: 每页个数。默认值为10。
+        :type limit: int
+        :param bill_type: 账单类型。0：消费1：退订2：华为核销
+        :type bill_type: str
+        :param indirect_partner_id: 精英服务商ID。获取方法请参见查询精英服务商列表。
+        :type indirect_partner_id: str
+        """
         
         
 
@@ -91,7 +110,7 @@ class ListSubcustomerMonthlyBillsRequest:
         客户账号ID。您可以调用查询客户列表接口获取customer_id。
 
         :param customer_id: The customer_id of this ListSubcustomerMonthlyBillsRequest.
-        :type: str
+        :type customer_id: str
         """
         self._customer_id = customer_id
 
@@ -113,7 +132,7 @@ class ListSubcustomerMonthlyBillsRequest:
         消费时间。格式固定为YYYY-MM。示例：2018-08
 
         :param cycle: The cycle of this ListSubcustomerMonthlyBillsRequest.
-        :type: str
+        :type cycle: str
         """
         self._cycle = cycle
 
@@ -135,7 +154,7 @@ class ListSubcustomerMonthlyBillsRequest:
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
         :param cloud_service_type: The cloud_service_type of this ListSubcustomerMonthlyBillsRequest.
-        :type: str
+        :type cloud_service_type: str
         """
         self._cloud_service_type = cloud_service_type
 
@@ -157,7 +176,7 @@ class ListSubcustomerMonthlyBillsRequest:
         计费模式。1：包年/包月3：按需
 
         :param charge_mode: The charge_mode of this ListSubcustomerMonthlyBillsRequest.
-        :type: str
+        :type charge_mode: str
         """
         self._charge_mode = charge_mode
 
@@ -179,7 +198,7 @@ class ListSubcustomerMonthlyBillsRequest:
         偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
         :param offset: The offset of this ListSubcustomerMonthlyBillsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -201,7 +220,7 @@ class ListSubcustomerMonthlyBillsRequest:
         每页个数。默认值为10。
 
         :param limit: The limit of this ListSubcustomerMonthlyBillsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -223,7 +242,7 @@ class ListSubcustomerMonthlyBillsRequest:
         账单类型。0：消费1：退订2：华为核销
 
         :param bill_type: The bill_type of this ListSubcustomerMonthlyBillsRequest.
-        :type: str
+        :type bill_type: str
         """
         self._bill_type = bill_type
 
@@ -245,7 +264,7 @@ class ListSubcustomerMonthlyBillsRequest:
         精英服务商ID。获取方法请参见查询精英服务商列表。
 
         :param indirect_partner_id: The indirect_partner_id of this ListSubcustomerMonthlyBillsRequest.
-        :type: str
+        :type indirect_partner_id: str
         """
         self._indirect_partner_id = indirect_partner_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowApplicationDetailResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class ShowApplicationDetailResponse(SdkResponse):
     }
 
     def __init__(self, component_count=None, id=None, name=None, description=None, creator=None, project_id=None, enterprise_project_id=None, create_time=None, update_time=None):
-        """ShowApplicationDetailResponse - a model defined in huaweicloud sdk"""
+        """ShowApplicationDetailResponse
+
+        The model defined in huaweicloud sdk
+
+        :param component_count: 组件个数。
+        :type component_count: int
+        :param id: 应用ID。
+        :type id: str
+        :param name: 应用名称。
+        :type name: str
+        :param description: 应用描述。
+        :type description: str
+        :param creator: 创建人。
+        :type creator: str
+        :param project_id: 项目ID。
+        :type project_id: str
+        :param enterprise_project_id: 企业项目ID。
+        :type enterprise_project_id: str
+        :param create_time: 创建时间。
+        :type create_time: int
+        :param update_time: 修改时间。
+        :type update_time: int
+        """
         
         super(ShowApplicationDetailResponse, self).__init__()
 
@@ -98,7 +119,7 @@ class ShowApplicationDetailResponse(SdkResponse):
         组件个数。
 
         :param component_count: The component_count of this ShowApplicationDetailResponse.
-        :type: int
+        :type component_count: int
         """
         self._component_count = component_count
 
@@ -120,7 +141,7 @@ class ShowApplicationDetailResponse(SdkResponse):
         应用ID。
 
         :param id: The id of this ShowApplicationDetailResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -142,7 +163,7 @@ class ShowApplicationDetailResponse(SdkResponse):
         应用名称。
 
         :param name: The name of this ShowApplicationDetailResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -164,7 +185,7 @@ class ShowApplicationDetailResponse(SdkResponse):
         应用描述。
 
         :param description: The description of this ShowApplicationDetailResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -186,7 +207,7 @@ class ShowApplicationDetailResponse(SdkResponse):
         创建人。
 
         :param creator: The creator of this ShowApplicationDetailResponse.
-        :type: str
+        :type creator: str
         """
         self._creator = creator
 
@@ -208,7 +229,7 @@ class ShowApplicationDetailResponse(SdkResponse):
         项目ID。
 
         :param project_id: The project_id of this ShowApplicationDetailResponse.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -230,7 +251,7 @@ class ShowApplicationDetailResponse(SdkResponse):
         企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this ShowApplicationDetailResponse.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -252,7 +273,7 @@ class ShowApplicationDetailResponse(SdkResponse):
         创建时间。
 
         :param create_time: The create_time of this ShowApplicationDetailResponse.
-        :type: int
+        :type create_time: int
         """
         self._create_time = create_time
 
@@ -274,7 +295,7 @@ class ShowApplicationDetailResponse(SdkResponse):
         修改时间。
 
         :param update_time: The update_time of this ShowApplicationDetailResponse.
-        :type: int
+        :type update_time: int
         """
         self._update_time = update_time
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AssetPropertyLastValue:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class AssetPropertyLastValue:
     }
 
     def __init__(self, property_name=None, value=None, timestamp=None):
-        """AssetPropertyLastValue - a model defined in huaweicloud sdk"""
+        """AssetPropertyLastValue
+
+        The model defined in huaweicloud sdk
+
+        :param property_name: 资产属性名称
+        :type property_name: str
+        :param value: 资产属性值
+        :type value: object
+        :param timestamp: 资产属性值最后更新时间
+        :type timestamp: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class AssetPropertyLastValue:
         资产属性名称
 
         :param property_name: The property_name of this AssetPropertyLastValue.
-        :type: str
+        :type property_name: str
         """
         self._property_name = property_name
 
@@ -90,7 +99,7 @@ class AssetPropertyLastValue:
         资产属性值
 
         :param value: The value of this AssetPropertyLastValue.
-        :type: object
+        :type value: object
         """
         self._value = value
 
@@ -112,7 +121,7 @@ class AssetPropertyLastValue:
         资产属性值最后更新时间
 
         :param timestamp: The timestamp of this AssetPropertyLastValue.
-        :type: str
+        :type timestamp: str
         """
         self._timestamp = timestamp
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowTaskDetailResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -82,7 +81,65 @@ class ShowTaskDetailResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None, task_name=None, creator_id=None, git_url=None, git_branch=None, last_check_time=None, code_line_total=None, code_line=None, code_quality=None, issue_count=None, risk_coefficient=None, duplication_ratio=None, complexity_count=None, duplicated_lines=None, comment_lines=None, comment_ratio=None, duplicated_blocks=None, last_exec_time=None, check_type=None, created_at=None, cyclomatic_complexity_per_method=None, critical_count=None, major_count=None, minor_count=None, suggestion_count=None, is_access=None, trigger_type=None):
-        """ShowTaskDetailResponse - a model defined in huaweicloud sdk"""
+        """ShowTaskDetailResponse
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 任务id
+        :type task_id: str
+        :param task_name: 任务名字
+        :type task_name: str
+        :param creator_id: 创建者id
+        :type creator_id: str
+        :param git_url: 代码仓地址
+        :type git_url: str
+        :param git_branch: 代码仓分支,如果是MR模式，为源分支
+        :type git_branch: str
+        :param last_check_time: 上一次检查时间
+        :type last_check_time: str
+        :param code_line_total: 代码总行数
+        :type code_line_total: int
+        :param code_line: 代码有效行数
+        :type code_line: int
+        :param code_quality: 代码质量
+        :type code_quality: float
+        :param issue_count: 问题数
+        :type issue_count: int
+        :param risk_coefficient: 危险系数
+        :type risk_coefficient: float
+        :param duplication_ratio: 重复比例
+        :type duplication_ratio: str
+        :param complexity_count: 复杂度
+        :type complexity_count: int
+        :param duplicated_lines: 重复行数
+        :type duplicated_lines: int
+        :param comment_lines: 注释行数
+        :type comment_lines: int
+        :param comment_ratio: 注释比例
+        :type comment_ratio: str
+        :param duplicated_blocks: 重复块
+        :type duplicated_blocks: int
+        :param last_exec_time: 上次执行时间
+        :type last_exec_time: str
+        :param check_type: 检查类型
+        :type check_type: str
+        :param created_at: 创建时间
+        :type created_at: str
+        :param cyclomatic_complexity_per_method: 代码平均复杂度
+        :type cyclomatic_complexity_per_method: str
+        :param critical_count: 致命问题数
+        :type critical_count: str
+        :param major_count: 严重问题数
+        :type major_count: str
+        :param minor_count: 一般问题数
+        :type minor_count: str
+        :param suggestion_count: 提示问题数
+        :type suggestion_count: str
+        :param is_access: 门禁质量是否通过
+        :type is_access: str
+        :param trigger_type: 任务触发方式
+        :type trigger_type: str
+        """
         
         super(ShowTaskDetailResponse, self).__init__()
 
@@ -188,7 +245,7 @@ class ShowTaskDetailResponse(SdkResponse):
         任务id
 
         :param task_id: The task_id of this ShowTaskDetailResponse.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -210,7 +267,7 @@ class ShowTaskDetailResponse(SdkResponse):
         任务名字
 
         :param task_name: The task_name of this ShowTaskDetailResponse.
-        :type: str
+        :type task_name: str
         """
         self._task_name = task_name
 
@@ -232,7 +289,7 @@ class ShowTaskDetailResponse(SdkResponse):
         创建者id
 
         :param creator_id: The creator_id of this ShowTaskDetailResponse.
-        :type: str
+        :type creator_id: str
         """
         self._creator_id = creator_id
 
@@ -254,7 +311,7 @@ class ShowTaskDetailResponse(SdkResponse):
         代码仓地址
 
         :param git_url: The git_url of this ShowTaskDetailResponse.
-        :type: str
+        :type git_url: str
         """
         self._git_url = git_url
 
@@ -276,7 +333,7 @@ class ShowTaskDetailResponse(SdkResponse):
         代码仓分支,如果是MR模式，为源分支
 
         :param git_branch: The git_branch of this ShowTaskDetailResponse.
-        :type: str
+        :type git_branch: str
         """
         self._git_branch = git_branch
 
@@ -298,7 +355,7 @@ class ShowTaskDetailResponse(SdkResponse):
         上一次检查时间
 
         :param last_check_time: The last_check_time of this ShowTaskDetailResponse.
-        :type: str
+        :type last_check_time: str
         """
         self._last_check_time = last_check_time
 
@@ -320,7 +377,7 @@ class ShowTaskDetailResponse(SdkResponse):
         代码总行数
 
         :param code_line_total: The code_line_total of this ShowTaskDetailResponse.
-        :type: int
+        :type code_line_total: int
         """
         self._code_line_total = code_line_total
 
@@ -342,7 +399,7 @@ class ShowTaskDetailResponse(SdkResponse):
         代码有效行数
 
         :param code_line: The code_line of this ShowTaskDetailResponse.
-        :type: int
+        :type code_line: int
         """
         self._code_line = code_line
 
@@ -364,7 +421,7 @@ class ShowTaskDetailResponse(SdkResponse):
         代码质量
 
         :param code_quality: The code_quality of this ShowTaskDetailResponse.
-        :type: float
+        :type code_quality: float
         """
         self._code_quality = code_quality
 
@@ -386,7 +443,7 @@ class ShowTaskDetailResponse(SdkResponse):
         问题数
 
         :param issue_count: The issue_count of this ShowTaskDetailResponse.
-        :type: int
+        :type issue_count: int
         """
         self._issue_count = issue_count
 
@@ -408,7 +465,7 @@ class ShowTaskDetailResponse(SdkResponse):
         危险系数
 
         :param risk_coefficient: The risk_coefficient of this ShowTaskDetailResponse.
-        :type: float
+        :type risk_coefficient: float
         """
         self._risk_coefficient = risk_coefficient
 
@@ -430,7 +487,7 @@ class ShowTaskDetailResponse(SdkResponse):
         重复比例
 
         :param duplication_ratio: The duplication_ratio of this ShowTaskDetailResponse.
-        :type: str
+        :type duplication_ratio: str
         """
         self._duplication_ratio = duplication_ratio
 
@@ -452,7 +509,7 @@ class ShowTaskDetailResponse(SdkResponse):
         复杂度
 
         :param complexity_count: The complexity_count of this ShowTaskDetailResponse.
-        :type: int
+        :type complexity_count: int
         """
         self._complexity_count = complexity_count
 
@@ -474,7 +531,7 @@ class ShowTaskDetailResponse(SdkResponse):
         重复行数
 
         :param duplicated_lines: The duplicated_lines of this ShowTaskDetailResponse.
-        :type: int
+        :type duplicated_lines: int
         """
         self._duplicated_lines = duplicated_lines
 
@@ -496,7 +553,7 @@ class ShowTaskDetailResponse(SdkResponse):
         注释行数
 
         :param comment_lines: The comment_lines of this ShowTaskDetailResponse.
-        :type: int
+        :type comment_lines: int
         """
         self._comment_lines = comment_lines
 
@@ -518,7 +575,7 @@ class ShowTaskDetailResponse(SdkResponse):
         注释比例
 
         :param comment_ratio: The comment_ratio of this ShowTaskDetailResponse.
-        :type: str
+        :type comment_ratio: str
         """
         self._comment_ratio = comment_ratio
 
@@ -540,7 +597,7 @@ class ShowTaskDetailResponse(SdkResponse):
         重复块
 
         :param duplicated_blocks: The duplicated_blocks of this ShowTaskDetailResponse.
-        :type: int
+        :type duplicated_blocks: int
         """
         self._duplicated_blocks = duplicated_blocks
 
@@ -562,7 +619,7 @@ class ShowTaskDetailResponse(SdkResponse):
         上次执行时间
 
         :param last_exec_time: The last_exec_time of this ShowTaskDetailResponse.
-        :type: str
+        :type last_exec_time: str
         """
         self._last_exec_time = last_exec_time
 
@@ -584,7 +641,7 @@ class ShowTaskDetailResponse(SdkResponse):
         检查类型
 
         :param check_type: The check_type of this ShowTaskDetailResponse.
-        :type: str
+        :type check_type: str
         """
         self._check_type = check_type
 
@@ -606,7 +663,7 @@ class ShowTaskDetailResponse(SdkResponse):
         创建时间
 
         :param created_at: The created_at of this ShowTaskDetailResponse.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -628,7 +685,7 @@ class ShowTaskDetailResponse(SdkResponse):
         代码平均复杂度
 
         :param cyclomatic_complexity_per_method: The cyclomatic_complexity_per_method of this ShowTaskDetailResponse.
-        :type: str
+        :type cyclomatic_complexity_per_method: str
         """
         self._cyclomatic_complexity_per_method = cyclomatic_complexity_per_method
 
@@ -650,7 +707,7 @@ class ShowTaskDetailResponse(SdkResponse):
         致命问题数
 
         :param critical_count: The critical_count of this ShowTaskDetailResponse.
-        :type: str
+        :type critical_count: str
         """
         self._critical_count = critical_count
 
@@ -672,7 +729,7 @@ class ShowTaskDetailResponse(SdkResponse):
         严重问题数
 
         :param major_count: The major_count of this ShowTaskDetailResponse.
-        :type: str
+        :type major_count: str
         """
         self._major_count = major_count
 
@@ -694,7 +751,7 @@ class ShowTaskDetailResponse(SdkResponse):
         一般问题数
 
         :param minor_count: The minor_count of this ShowTaskDetailResponse.
-        :type: str
+        :type minor_count: str
         """
         self._minor_count = minor_count
 
@@ -716,7 +773,7 @@ class ShowTaskDetailResponse(SdkResponse):
         提示问题数
 
         :param suggestion_count: The suggestion_count of this ShowTaskDetailResponse.
-        :type: str
+        :type suggestion_count: str
         """
         self._suggestion_count = suggestion_count
 
@@ -738,7 +795,7 @@ class ShowTaskDetailResponse(SdkResponse):
         门禁质量是否通过
 
         :param is_access: The is_access of this ShowTaskDetailResponse.
-        :type: str
+        :type is_access: str
         """
         self._is_access = is_access
 
@@ -760,7 +817,7 @@ class ShowTaskDetailResponse(SdkResponse):
         任务触发方式
 
         :param trigger_type: The trigger_type of this ShowTaskDetailResponse.
-        :type: str
+        :type trigger_type: str
         """
         self._trigger_type = trigger_type
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowRegionInfoOfMeetingResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowRegionInfoOfMeetingResponse(SdkResponse):
     }
 
     def __init__(self, region_ip=None, region_url=None):
-        """ShowRegionInfoOfMeetingResponse - a model defined in huaweicloud sdk"""
+        """ShowRegionInfoOfMeetingResponse
+
+        The model defined in huaweicloud sdk
+
+        :param region_ip: 会议所在区域的公网IP地址。
+        :type region_ip: str
+        :param region_url: 会议所在区域的公网域名。
+        :type region_url: str
+        """
         
         super(ShowRegionInfoOfMeetingResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ShowRegionInfoOfMeetingResponse(SdkResponse):
         会议所在区域的公网IP地址。
 
         :param region_ip: The region_ip of this ShowRegionInfoOfMeetingResponse.
-        :type: str
+        :type region_ip: str
         """
         self._region_ip = region_ip
 
@@ -85,7 +92,7 @@ class ShowRegionInfoOfMeetingResponse(SdkResponse):
         会议所在区域的公网域名。
 
         :param region_url: The region_url of this ShowRegionInfoOfMeetingResponse.
-        :type: str
+        :type region_url: str
         """
         self._region_url = region_url
 

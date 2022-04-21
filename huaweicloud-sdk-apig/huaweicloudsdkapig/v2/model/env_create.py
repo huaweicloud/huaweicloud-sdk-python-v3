@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EnvCreate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class EnvCreate:
     }
 
     def __init__(self, name=None, remark=None):
-        """EnvCreate - a model defined in huaweicloud sdk"""
+        """EnvCreate
+
+        The model defined in huaweicloud sdk
+
+        :param name: 环境的名称，支持英文，数字，下划线，且只能以英文字母开头。
+        :type name: str
+        :param remark: 描述信息 &gt; 中文字符必须为UTF-8或者unicode编码。
+        :type remark: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class EnvCreate:
         环境的名称，支持英文，数字，下划线，且只能以英文字母开头。
 
         :param name: The name of this EnvCreate.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -84,7 +91,7 @@ class EnvCreate:
         描述信息 > 中文字符必须为UTF-8或者unicode编码。
 
         :param remark: The remark of this EnvCreate.
-        :type: str
+        :type remark: str
         """
         self._remark = remark
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListInstanceSnapshotsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ListInstanceSnapshotsRequest:
     }
 
     def __init__(self, application_id=None, component_id=None, instance_id=None, limit=None, offset=None, snapshot_order_by=None, order=None):
-        """ListInstanceSnapshotsRequest - a model defined in huaweicloud sdk"""
+        """ListInstanceSnapshotsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param application_id: 应用ID。
+        :type application_id: str
+        :param component_id: 组件ID。
+        :type component_id: str
+        :param instance_id: 组件实例ID。
+        :type instance_id: str
+        :param limit: 指定个数，明确指定的时候用于分页，取值[0, 100]。不指定的时候表示不分页，最多查询1000条记录。
+        :type limit: int
+        :param offset: 指定查询偏移量，默认偏移量为0.
+        :type offset: int
+        :param snapshot_order_by: 排序字段，默认按创建时间排序。  排序字段支持枚举值：create_time、version。 
+        :type snapshot_order_by: str
+        :param order: desc/asc，默认desc。
+        :type order: str
+        """
         
         
 
@@ -85,7 +102,7 @@ class ListInstanceSnapshotsRequest:
         应用ID。
 
         :param application_id: The application_id of this ListInstanceSnapshotsRequest.
-        :type: str
+        :type application_id: str
         """
         self._application_id = application_id
 
@@ -107,7 +124,7 @@ class ListInstanceSnapshotsRequest:
         组件ID。
 
         :param component_id: The component_id of this ListInstanceSnapshotsRequest.
-        :type: str
+        :type component_id: str
         """
         self._component_id = component_id
 
@@ -129,7 +146,7 @@ class ListInstanceSnapshotsRequest:
         组件实例ID。
 
         :param instance_id: The instance_id of this ListInstanceSnapshotsRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -151,7 +168,7 @@ class ListInstanceSnapshotsRequest:
         指定个数，明确指定的时候用于分页，取值[0, 100]。不指定的时候表示不分页，最多查询1000条记录。
 
         :param limit: The limit of this ListInstanceSnapshotsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -173,7 +190,7 @@ class ListInstanceSnapshotsRequest:
         指定查询偏移量，默认偏移量为0.
 
         :param offset: The offset of this ListInstanceSnapshotsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -195,7 +212,7 @@ class ListInstanceSnapshotsRequest:
         排序字段，默认按创建时间排序。  排序字段支持枚举值：create_time、version。 
 
         :param snapshot_order_by: The snapshot_order_by of this ListInstanceSnapshotsRequest.
-        :type: str
+        :type snapshot_order_by: str
         """
         self._snapshot_order_by = snapshot_order_by
 
@@ -217,7 +234,7 @@ class ListInstanceSnapshotsRequest:
         desc/asc，默认desc。
 
         :param order: The order of this ListInstanceSnapshotsRequest.
-        :type: str
+        :type order: str
         """
         self._order = order
 

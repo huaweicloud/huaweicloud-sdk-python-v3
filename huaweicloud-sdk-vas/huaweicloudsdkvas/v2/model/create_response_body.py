@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateResponseBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateResponseBody:
     }
 
     def __init__(self, id=None):
-        """CreateResponseBody - a model defined in huaweicloud sdk"""
+        """CreateResponseBody
+
+        The model defined in huaweicloud sdk
+
+        :param id: 创建出的服务作业ID
+        :type id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class CreateResponseBody:
         创建出的服务作业ID
 
         :param id: The id of this CreateResponseBody.
-        :type: str
+        :type id: str
         """
         self._id = id
 

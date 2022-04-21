@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListProjectBugStaticsV4Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListProjectBugStaticsV4Response(SdkResponse):
     }
 
     def __init__(self, bug_statistics=None):
-        """ListProjectBugStaticsV4Response - a model defined in huaweicloud sdk"""
+        """ListProjectBugStaticsV4Response
+
+        The model defined in huaweicloud sdk
+
+        :param bug_statistics: bug统计
+        :type bug_statistics: list[:class:`huaweicloudsdkprojectman.v4.BugStatisticResponseV4`]
+        """
         
         super(ListProjectBugStaticsV4Response, self).__init__()
 
@@ -47,7 +52,7 @@ class ListProjectBugStaticsV4Response(SdkResponse):
         bug统计
 
         :return: The bug_statistics of this ListProjectBugStaticsV4Response.
-        :rtype: list[BugStatisticResponseV4]
+        :rtype: list[:class:`huaweicloudsdkprojectman.v4.BugStatisticResponseV4`]
         """
         return self._bug_statistics
 
@@ -58,7 +63,7 @@ class ListProjectBugStaticsV4Response(SdkResponse):
         bug统计
 
         :param bug_statistics: The bug_statistics of this ListProjectBugStaticsV4Response.
-        :type: list[BugStatisticResponseV4]
+        :type bug_statistics: list[:class:`huaweicloudsdkprojectman.v4.BugStatisticResponseV4`]
         """
         self._bug_statistics = bug_statistics
 

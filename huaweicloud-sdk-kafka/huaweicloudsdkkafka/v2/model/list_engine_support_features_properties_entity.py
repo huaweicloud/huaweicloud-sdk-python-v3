@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListEngineSupportFeaturesPropertiesEntity:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListEngineSupportFeaturesPropertiesEntity:
     }
 
     def __init__(self, max_task=None, min_task=None, max_node=None, min_node=None):
-        """ListEngineSupportFeaturesPropertiesEntity - a model defined in huaweicloud sdk"""
+        """ListEngineSupportFeaturesPropertiesEntity
+
+        The model defined in huaweicloud sdk
+
+        :param max_task: 转储功能的最大任务数。
+        :type max_task: str
+        :param min_task: 转储功能的最小任务数。
+        :type min_task: str
+        :param max_node: 转储功能的最大节点数。
+        :type max_node: str
+        :param min_node: 转储功能的最小节点数。
+        :type min_node: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class ListEngineSupportFeaturesPropertiesEntity:
         转储功能的最大任务数。
 
         :param max_task: The max_task of this ListEngineSupportFeaturesPropertiesEntity.
-        :type: str
+        :type max_task: str
         """
         self._max_task = max_task
 
@@ -95,7 +106,7 @@ class ListEngineSupportFeaturesPropertiesEntity:
         转储功能的最小任务数。
 
         :param min_task: The min_task of this ListEngineSupportFeaturesPropertiesEntity.
-        :type: str
+        :type min_task: str
         """
         self._min_task = min_task
 
@@ -117,7 +128,7 @@ class ListEngineSupportFeaturesPropertiesEntity:
         转储功能的最大节点数。
 
         :param max_node: The max_node of this ListEngineSupportFeaturesPropertiesEntity.
-        :type: str
+        :type max_node: str
         """
         self._max_node = max_node
 
@@ -139,7 +150,7 @@ class ListEngineSupportFeaturesPropertiesEntity:
         转储功能的最小节点数。
 
         :param min_node: The min_node of this ListEngineSupportFeaturesPropertiesEntity.
-        :type: str
+        :type min_node: str
         """
         self._min_node = min_node
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneValidateTokenRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -33,7 +32,15 @@ class KeystoneValidateTokenRequest:
     }
 
     def __init__(self, x_subject_token=None, nocatalog=None):
-        """KeystoneValidateTokenRequest - a model defined in huaweicloud sdk"""
+        """KeystoneValidateTokenRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_subject_token: 待校验的token。
+        :type x_subject_token: str
+        :param nocatalog: 如果设置该参数，返回的响应体中将不显示catalog信息。任何非空字符串都将解释为true，并使该字段生效。
+        :type nocatalog: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class KeystoneValidateTokenRequest:
         待校验的token。
 
         :param x_subject_token: The x_subject_token of this KeystoneValidateTokenRequest.
-        :type: str
+        :type x_subject_token: str
         """
         self._x_subject_token = x_subject_token
 
@@ -85,7 +92,7 @@ class KeystoneValidateTokenRequest:
         如果设置该参数，返回的响应体中将不显示catalog信息。任何非空字符串都将解释为true，并使该字段生效。
 
         :param nocatalog: The nocatalog of this KeystoneValidateTokenRequest.
-        :type: str
+        :type nocatalog: str
         """
         self._nocatalog = nocatalog
 

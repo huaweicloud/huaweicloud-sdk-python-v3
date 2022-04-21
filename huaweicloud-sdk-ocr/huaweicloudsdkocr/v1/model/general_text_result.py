@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GeneralTextResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class GeneralTextResult:
     }
 
     def __init__(self, direction=None, words_block_count=None, words_block_list=None):
-        """GeneralTextResult - a model defined in huaweicloud sdk"""
+        """GeneralTextResult
+
+        The model defined in huaweicloud sdk
+
+        :param direction: 图片朝向，仅当detect_direction为true时，该字段有效。返回图片逆时针旋转角度，值区间为[0， 359]。当detect_direction为false时，该字段值为 -1。 
+        :type direction: int
+        :param words_block_count: 识别文字块数目。 
+        :type words_block_count: int
+        :param words_block_list: 识别文字块列表，输出顺序从左到右，先上后下。 
+        :type words_block_list: list[:class:`huaweicloudsdkocr.v1.GeneralTextWordsBlockList`]
+        """
         
         
 
@@ -65,7 +74,7 @@ class GeneralTextResult:
         图片朝向，仅当detect_direction为true时，该字段有效。返回图片逆时针旋转角度，值区间为[0， 359]。当detect_direction为false时，该字段值为 -1。 
 
         :param direction: The direction of this GeneralTextResult.
-        :type: int
+        :type direction: int
         """
         self._direction = direction
 
@@ -87,7 +96,7 @@ class GeneralTextResult:
         识别文字块数目。 
 
         :param words_block_count: The words_block_count of this GeneralTextResult.
-        :type: int
+        :type words_block_count: int
         """
         self._words_block_count = words_block_count
 
@@ -98,7 +107,7 @@ class GeneralTextResult:
         识别文字块列表，输出顺序从左到右，先上后下。 
 
         :return: The words_block_list of this GeneralTextResult.
-        :rtype: list[GeneralTextWordsBlockList]
+        :rtype: list[:class:`huaweicloudsdkocr.v1.GeneralTextWordsBlockList`]
         """
         return self._words_block_list
 
@@ -109,7 +118,7 @@ class GeneralTextResult:
         识别文字块列表，输出顺序从左到右，先上后下。 
 
         :param words_block_list: The words_block_list of this GeneralTextResult.
-        :type: list[GeneralTextWordsBlockList]
+        :type words_block_list: list[:class:`huaweicloudsdkocr.v1.GeneralTextWordsBlockList`]
         """
         self._words_block_list = words_block_list
 

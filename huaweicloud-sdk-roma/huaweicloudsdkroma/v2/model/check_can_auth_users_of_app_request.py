@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CheckCanAuthUsersOfAppRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CheckCanAuthUsersOfAppRequest:
     }
 
     def __init__(self, app_id=None, instance_id=None, filter=None):
-        """CheckCanAuthUsersOfAppRequest - a model defined in huaweicloud sdk"""
+        """CheckCanAuthUsersOfAppRequest
+
+        The model defined in huaweicloud sdk
+
+        :param app_id: 应用ID
+        :type app_id: str
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param filter: 过滤条件 - 过滤条件，未提供时返回包括应用成员在内的所有候选用户列表 - 取值members时，过滤掉当前应用成员，适合增量添加应用成员时使用
+        :type filter: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class CheckCanAuthUsersOfAppRequest:
         应用ID
 
         :param app_id: The app_id of this CheckCanAuthUsersOfAppRequest.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -88,7 +97,7 @@ class CheckCanAuthUsersOfAppRequest:
         实例ID
 
         :param instance_id: The instance_id of this CheckCanAuthUsersOfAppRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -110,7 +119,7 @@ class CheckCanAuthUsersOfAppRequest:
         过滤条件 - 过滤条件，未提供时返回包括应用成员在内的所有候选用户列表 - 取值members时，过滤掉当前应用成员，适合增量添加应用成员时使用
 
         :param filter: The filter of this CheckCanAuthUsersOfAppRequest.
-        :type: str
+        :type filter: str
         """
         self._filter = filter
 

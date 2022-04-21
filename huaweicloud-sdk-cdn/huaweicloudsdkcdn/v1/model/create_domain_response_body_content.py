@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateDomainResponseBodyContent:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -64,7 +63,47 @@ class CreateDomainResponseBodyContent:
     }
 
     def __init__(self, id=None, domain_name=None, business_type=None, service_area=None, user_domain_id=None, domain_status=None, cname=None, sources=None, domain_origin_host=None, https_status=None, create_time=None, modify_time=None, disabled=None, locked=None, range_status=None, follow_status=None, origin_status=None, auto_refresh_preheat=None):
-        """CreateDomainResponseBodyContent - a model defined in huaweicloud sdk"""
+        """CreateDomainResponseBodyContent
+
+        The model defined in huaweicloud sdk
+
+        :param id: 加速域名ID。
+        :type id: str
+        :param domain_name: 加速域名。
+        :type domain_name: str
+        :param business_type: 域名业务类型：-web：网站加速；-download：文件下载加速；-video：点播加速；-wholeSite：全站加速。
+        :type business_type: str
+        :param service_area: 域名服务范围，若为mainland_china，则表示服务范围为中国大陆；若为outside_mainland_china，则表示服务范围为中国大陆境外；若为global，则表示服务范围为全球。
+        :type service_area: str
+        :param user_domain_id: 域名所属用户的domain_id。
+        :type user_domain_id: str
+        :param domain_status: 加速域名状态。取值意义：online表示“已开启”、offline表示“已停用”、configuring表示“配置中”、configure_failed表示“配置失败”、checking表示“审核中”、check_failed表示“审核未通过”、deleting表示“删除中”。
+        :type domain_status: str
+        :param cname: 加速域名对应的CNAME。
+        :type cname: str
+        :param sources: 源站信息
+        :type sources: list[:class:`huaweicloudsdkcdn.v1.Sources`]
+        :param domain_origin_host: 
+        :type domain_origin_host: :class:`huaweicloudsdkcdn.v1.DomainOriginHost`
+        :param https_status: 是否开启HTTPS加速。
+        :type https_status: int
+        :param create_time: 域名创建时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
+        :type create_time: int
+        :param modify_time: 域名修改时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
+        :type modify_time: int
+        :param disabled: 封禁状态（0代表未禁用；1代表禁用）。
+        :type disabled: int
+        :param locked: 锁定状态（0代表未锁定；1代表锁定）。
+        :type locked: int
+        :param range_status: range状态（\&quot;off\&quot;/\&quot;on\&quot;）。
+        :type range_status: str
+        :param follow_status: follow302状态（\&quot;off\&quot;/\&quot;on\&quot;）。
+        :type follow_status: str
+        :param origin_status: 是否暂停源站回源。
+        :type origin_status: str
+        :param auto_refresh_preheat: 自动刷新预热（0代表关闭；1代表打开）
+        :type auto_refresh_preheat: int
+        """
         
         
 
@@ -143,7 +182,7 @@ class CreateDomainResponseBodyContent:
         加速域名ID。
 
         :param id: The id of this CreateDomainResponseBodyContent.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -165,7 +204,7 @@ class CreateDomainResponseBodyContent:
         加速域名。
 
         :param domain_name: The domain_name of this CreateDomainResponseBodyContent.
-        :type: str
+        :type domain_name: str
         """
         self._domain_name = domain_name
 
@@ -187,7 +226,7 @@ class CreateDomainResponseBodyContent:
         域名业务类型：-web：网站加速；-download：文件下载加速；-video：点播加速；-wholeSite：全站加速。
 
         :param business_type: The business_type of this CreateDomainResponseBodyContent.
-        :type: str
+        :type business_type: str
         """
         self._business_type = business_type
 
@@ -209,7 +248,7 @@ class CreateDomainResponseBodyContent:
         域名服务范围，若为mainland_china，则表示服务范围为中国大陆；若为outside_mainland_china，则表示服务范围为中国大陆境外；若为global，则表示服务范围为全球。
 
         :param service_area: The service_area of this CreateDomainResponseBodyContent.
-        :type: str
+        :type service_area: str
         """
         self._service_area = service_area
 
@@ -231,7 +270,7 @@ class CreateDomainResponseBodyContent:
         域名所属用户的domain_id。
 
         :param user_domain_id: The user_domain_id of this CreateDomainResponseBodyContent.
-        :type: str
+        :type user_domain_id: str
         """
         self._user_domain_id = user_domain_id
 
@@ -253,7 +292,7 @@ class CreateDomainResponseBodyContent:
         加速域名状态。取值意义：online表示“已开启”、offline表示“已停用”、configuring表示“配置中”、configure_failed表示“配置失败”、checking表示“审核中”、check_failed表示“审核未通过”、deleting表示“删除中”。
 
         :param domain_status: The domain_status of this CreateDomainResponseBodyContent.
-        :type: str
+        :type domain_status: str
         """
         self._domain_status = domain_status
 
@@ -275,7 +314,7 @@ class CreateDomainResponseBodyContent:
         加速域名对应的CNAME。
 
         :param cname: The cname of this CreateDomainResponseBodyContent.
-        :type: str
+        :type cname: str
         """
         self._cname = cname
 
@@ -286,7 +325,7 @@ class CreateDomainResponseBodyContent:
         源站信息
 
         :return: The sources of this CreateDomainResponseBodyContent.
-        :rtype: list[Sources]
+        :rtype: list[:class:`huaweicloudsdkcdn.v1.Sources`]
         """
         return self._sources
 
@@ -297,7 +336,7 @@ class CreateDomainResponseBodyContent:
         源站信息
 
         :param sources: The sources of this CreateDomainResponseBodyContent.
-        :type: list[Sources]
+        :type sources: list[:class:`huaweicloudsdkcdn.v1.Sources`]
         """
         self._sources = sources
 
@@ -307,7 +346,7 @@ class CreateDomainResponseBodyContent:
 
 
         :return: The domain_origin_host of this CreateDomainResponseBodyContent.
-        :rtype: DomainOriginHost
+        :rtype: :class:`huaweicloudsdkcdn.v1.DomainOriginHost`
         """
         return self._domain_origin_host
 
@@ -317,7 +356,7 @@ class CreateDomainResponseBodyContent:
 
 
         :param domain_origin_host: The domain_origin_host of this CreateDomainResponseBodyContent.
-        :type: DomainOriginHost
+        :type domain_origin_host: :class:`huaweicloudsdkcdn.v1.DomainOriginHost`
         """
         self._domain_origin_host = domain_origin_host
 
@@ -339,7 +378,7 @@ class CreateDomainResponseBodyContent:
         是否开启HTTPS加速。
 
         :param https_status: The https_status of this CreateDomainResponseBodyContent.
-        :type: int
+        :type https_status: int
         """
         self._https_status = https_status
 
@@ -361,7 +400,7 @@ class CreateDomainResponseBodyContent:
         域名创建时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
 
         :param create_time: The create_time of this CreateDomainResponseBodyContent.
-        :type: int
+        :type create_time: int
         """
         self._create_time = create_time
 
@@ -383,7 +422,7 @@ class CreateDomainResponseBodyContent:
         域名修改时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
 
         :param modify_time: The modify_time of this CreateDomainResponseBodyContent.
-        :type: int
+        :type modify_time: int
         """
         self._modify_time = modify_time
 
@@ -405,7 +444,7 @@ class CreateDomainResponseBodyContent:
         封禁状态（0代表未禁用；1代表禁用）。
 
         :param disabled: The disabled of this CreateDomainResponseBodyContent.
-        :type: int
+        :type disabled: int
         """
         self._disabled = disabled
 
@@ -427,7 +466,7 @@ class CreateDomainResponseBodyContent:
         锁定状态（0代表未锁定；1代表锁定）。
 
         :param locked: The locked of this CreateDomainResponseBodyContent.
-        :type: int
+        :type locked: int
         """
         self._locked = locked
 
@@ -449,7 +488,7 @@ class CreateDomainResponseBodyContent:
         range状态（\"off\"/\"on\"）。
 
         :param range_status: The range_status of this CreateDomainResponseBodyContent.
-        :type: str
+        :type range_status: str
         """
         self._range_status = range_status
 
@@ -471,7 +510,7 @@ class CreateDomainResponseBodyContent:
         follow302状态（\"off\"/\"on\"）。
 
         :param follow_status: The follow_status of this CreateDomainResponseBodyContent.
-        :type: str
+        :type follow_status: str
         """
         self._follow_status = follow_status
 
@@ -493,7 +532,7 @@ class CreateDomainResponseBodyContent:
         是否暂停源站回源。
 
         :param origin_status: The origin_status of this CreateDomainResponseBodyContent.
-        :type: str
+        :type origin_status: str
         """
         self._origin_status = origin_status
 
@@ -515,7 +554,7 @@ class CreateDomainResponseBodyContent:
         自动刷新预热（0代表关闭；1代表打开）
 
         :param auto_refresh_preheat: The auto_refresh_preheat of this CreateDomainResponseBodyContent.
-        :type: int
+        :type auto_refresh_preheat: int
         """
         self._auto_refresh_preheat = auto_refresh_preheat
 

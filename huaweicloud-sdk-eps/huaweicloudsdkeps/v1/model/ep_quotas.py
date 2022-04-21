@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EpQuotas:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class EpQuotas:
     }
 
     def __init__(self, quota=None, type=None, used=None):
-        """EpQuotas - a model defined in huaweicloud sdk"""
+        """EpQuotas
+
+        The model defined in huaweicloud sdk
+
+        :param quota: 总配额
+        :type quota: int
+        :param type: qutoa的资源类型
+        :type type: str
+        :param used: 配额使用量
+        :type used: int
+        """
         
         
 
@@ -65,7 +74,7 @@ class EpQuotas:
         总配额
 
         :param quota: The quota of this EpQuotas.
-        :type: int
+        :type quota: int
         """
         self._quota = quota
 
@@ -87,7 +96,7 @@ class EpQuotas:
         qutoa的资源类型
 
         :param type: The type of this EpQuotas.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -109,7 +118,7 @@ class EpQuotas:
         配额使用量
 
         :param used: The used of this EpQuotas.
-        :type: int
+        :type used: int
         """
         self._used = used
 

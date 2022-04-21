@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDDosStatusResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListDDosStatusResponse(SdkResponse):
     }
 
     def __init__(self, total=None, ddos_status=None):
-        """ListDDosStatusResponse - a model defined in huaweicloud sdk"""
+        """ListDDosStatusResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 弹性IP总数
+        :type total: int
+        :param ddos_status: 防护状态列表
+        :type ddos_status: list[:class:`huaweicloudsdkantiddos.v1.DDosStatus`]
+        """
         
         super(ListDDosStatusResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListDDosStatusResponse(SdkResponse):
         弹性IP总数
 
         :param total: The total of this ListDDosStatusResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -74,7 +81,7 @@ class ListDDosStatusResponse(SdkResponse):
         防护状态列表
 
         :return: The ddos_status of this ListDDosStatusResponse.
-        :rtype: list[DDosStatus]
+        :rtype: list[:class:`huaweicloudsdkantiddos.v1.DDosStatus`]
         """
         return self._ddos_status
 
@@ -85,7 +92,7 @@ class ListDDosStatusResponse(SdkResponse):
         防护状态列表
 
         :param ddos_status: The ddos_status of this ListDDosStatusResponse.
-        :type: list[DDosStatus]
+        :type ddos_status: list[:class:`huaweicloudsdkantiddos.v1.DDosStatus`]
         """
         self._ddos_status = ddos_status
 

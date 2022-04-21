@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateRepoRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class CreateRepoRequest:
     }
 
     def __init__(self, import_members=None, name=None, project_uuid=None, template_id=None, visibility_level=None, import_url=None, description=None, gitignore_id=None, license_id=None, enable_readme=None, caller=None):
-        """CreateRepoRequest - a model defined in huaweicloud sdk"""
+        """CreateRepoRequest
+
+        The model defined in huaweicloud sdk
+
+        :param import_members: 是否导入项目成员，取值范围：0-&gt;不导入项目成员，1-&gt;导入项目成员
+        :type import_members: int
+        :param name: 仓库名称，取值范围：可以输入英文大小写字母、数字、连字符、下划线，且必须以字母开头
+        :type name: str
+        :param project_uuid: 指定项目的UUID
+        :type project_uuid: str
+        :param template_id: 复制模板的ID
+        :type template_id: str
+        :param visibility_level: 仓库状态，取值范围：0-&gt;私有，20-&gt;公开只读
+        :type visibility_level: int
+        :param import_url: 模板仓库的https地址的base64加密
+        :type import_url: str
+        :param description: 仓库描述信息
+        :type description: str
+        :param gitignore_id: 根据编程语言生成.gitignore文件
+        :type gitignore_id: str
+        :param license_id: 许可证id
+        :type license_id: int
+        :param enable_readme: 是否允许生成README文件
+        :type enable_readme: int
+        :param caller: 调用者
+        :type caller: str
+        """
         
         
 
@@ -106,7 +131,7 @@ class CreateRepoRequest:
         是否导入项目成员，取值范围：0->不导入项目成员，1->导入项目成员
 
         :param import_members: The import_members of this CreateRepoRequest.
-        :type: int
+        :type import_members: int
         """
         self._import_members = import_members
 
@@ -128,7 +153,7 @@ class CreateRepoRequest:
         仓库名称，取值范围：可以输入英文大小写字母、数字、连字符、下划线，且必须以字母开头
 
         :param name: The name of this CreateRepoRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -150,7 +175,7 @@ class CreateRepoRequest:
         指定项目的UUID
 
         :param project_uuid: The project_uuid of this CreateRepoRequest.
-        :type: str
+        :type project_uuid: str
         """
         self._project_uuid = project_uuid
 
@@ -172,7 +197,7 @@ class CreateRepoRequest:
         复制模板的ID
 
         :param template_id: The template_id of this CreateRepoRequest.
-        :type: str
+        :type template_id: str
         """
         self._template_id = template_id
 
@@ -194,7 +219,7 @@ class CreateRepoRequest:
         仓库状态，取值范围：0->私有，20->公开只读
 
         :param visibility_level: The visibility_level of this CreateRepoRequest.
-        :type: int
+        :type visibility_level: int
         """
         self._visibility_level = visibility_level
 
@@ -216,7 +241,7 @@ class CreateRepoRequest:
         模板仓库的https地址的base64加密
 
         :param import_url: The import_url of this CreateRepoRequest.
-        :type: str
+        :type import_url: str
         """
         self._import_url = import_url
 
@@ -238,7 +263,7 @@ class CreateRepoRequest:
         仓库描述信息
 
         :param description: The description of this CreateRepoRequest.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -260,7 +285,7 @@ class CreateRepoRequest:
         根据编程语言生成.gitignore文件
 
         :param gitignore_id: The gitignore_id of this CreateRepoRequest.
-        :type: str
+        :type gitignore_id: str
         """
         self._gitignore_id = gitignore_id
 
@@ -282,7 +307,7 @@ class CreateRepoRequest:
         许可证id
 
         :param license_id: The license_id of this CreateRepoRequest.
-        :type: int
+        :type license_id: int
         """
         self._license_id = license_id
 
@@ -304,7 +329,7 @@ class CreateRepoRequest:
         是否允许生成README文件
 
         :param enable_readme: The enable_readme of this CreateRepoRequest.
-        :type: int
+        :type enable_readme: int
         """
         self._enable_readme = enable_readme
 
@@ -326,7 +351,7 @@ class CreateRepoRequest:
         调用者
 
         :param caller: The caller of this CreateRepoRequest.
-        :type: str
+        :type caller: str
         """
         self._caller = caller
 

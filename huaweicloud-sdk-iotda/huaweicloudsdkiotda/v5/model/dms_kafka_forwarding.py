@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DmsKafkaForwarding:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -43,7 +42,25 @@ class DmsKafkaForwarding:
     }
 
     def __init__(self, region_name=None, project_id=None, addresses=None, topic=None, username=None, password=None, mechanism=None):
-        """DmsKafkaForwarding - a model defined in huaweicloud sdk"""
+        """DmsKafkaForwarding
+
+        The model defined in huaweicloud sdk
+
+        :param region_name: **参数说明**：Kafka服务对应的region区域
+        :type region_name: str
+        :param project_id: **参数说明**：Kafka服务对应的projectId信息
+        :type project_id: str
+        :param addresses: **参数说明**：转发kafka消息对应的地址列表
+        :type addresses: list[:class:`huaweicloudsdkiotda.v5.NetAddress`]
+        :param topic: **参数说明**：转发kafka消息关联的topic信息。
+        :type topic: str
+        :param username: **参数说明**：转发kafka关联的用户名信息。
+        :type username: str
+        :param password: **参数说明**：转发kafka关联的密码信息。
+        :type password: str
+        :param mechanism: **参数说明**：转发kafka关联的鉴权机制。 **取值范围**： - PAAS：非SASL鉴权。 - PLAIN：SASL/PLAIN模式。需要填写对应的用户名密码信息。
+        :type mechanism: str
+        """
         
         
 
@@ -85,7 +102,7 @@ class DmsKafkaForwarding:
         **参数说明**：Kafka服务对应的region区域
 
         :param region_name: The region_name of this DmsKafkaForwarding.
-        :type: str
+        :type region_name: str
         """
         self._region_name = region_name
 
@@ -107,7 +124,7 @@ class DmsKafkaForwarding:
         **参数说明**：Kafka服务对应的projectId信息
 
         :param project_id: The project_id of this DmsKafkaForwarding.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -118,7 +135,7 @@ class DmsKafkaForwarding:
         **参数说明**：转发kafka消息对应的地址列表
 
         :return: The addresses of this DmsKafkaForwarding.
-        :rtype: list[NetAddress]
+        :rtype: list[:class:`huaweicloudsdkiotda.v5.NetAddress`]
         """
         return self._addresses
 
@@ -129,7 +146,7 @@ class DmsKafkaForwarding:
         **参数说明**：转发kafka消息对应的地址列表
 
         :param addresses: The addresses of this DmsKafkaForwarding.
-        :type: list[NetAddress]
+        :type addresses: list[:class:`huaweicloudsdkiotda.v5.NetAddress`]
         """
         self._addresses = addresses
 
@@ -151,7 +168,7 @@ class DmsKafkaForwarding:
         **参数说明**：转发kafka消息关联的topic信息。
 
         :param topic: The topic of this DmsKafkaForwarding.
-        :type: str
+        :type topic: str
         """
         self._topic = topic
 
@@ -173,7 +190,7 @@ class DmsKafkaForwarding:
         **参数说明**：转发kafka关联的用户名信息。
 
         :param username: The username of this DmsKafkaForwarding.
-        :type: str
+        :type username: str
         """
         self._username = username
 
@@ -195,7 +212,7 @@ class DmsKafkaForwarding:
         **参数说明**：转发kafka关联的密码信息。
 
         :param password: The password of this DmsKafkaForwarding.
-        :type: str
+        :type password: str
         """
         self._password = password
 
@@ -217,7 +234,7 @@ class DmsKafkaForwarding:
         **参数说明**：转发kafka关联的鉴权机制。 **取值范围**： - PAAS：非SASL鉴权。 - PLAIN：SASL/PLAIN模式。需要填写对应的用户名密码信息。
 
         :param mechanism: The mechanism of this DmsKafkaForwarding.
-        :type: str
+        :type mechanism: str
         """
         self._mechanism = mechanism
 

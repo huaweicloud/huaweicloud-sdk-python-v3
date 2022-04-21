@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AutoScalingPolicyReqV11:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AutoScalingPolicyReqV11:
     }
 
     def __init__(self, node_group=None, auto_scaling_policy=None):
-        """AutoScalingPolicyReqV11 - a model defined in huaweicloud sdk"""
+        """AutoScalingPolicyReqV11
+
+        The model defined in huaweicloud sdk
+
+        :param node_group: 弹性伸缩规则适用的节点类型，当前只支持task节点。
+        :type node_group: str
+        :param auto_scaling_policy: 
+        :type auto_scaling_policy: :class:`huaweicloudsdkmrs.v1.AutoScalingPolicy`
+        """
         
         
 
@@ -61,7 +68,7 @@ class AutoScalingPolicyReqV11:
         弹性伸缩规则适用的节点类型，当前只支持task节点。
 
         :param node_group: The node_group of this AutoScalingPolicyReqV11.
-        :type: str
+        :type node_group: str
         """
         self._node_group = node_group
 
@@ -71,7 +78,7 @@ class AutoScalingPolicyReqV11:
 
 
         :return: The auto_scaling_policy of this AutoScalingPolicyReqV11.
-        :rtype: AutoScalingPolicy
+        :rtype: :class:`huaweicloudsdkmrs.v1.AutoScalingPolicy`
         """
         return self._auto_scaling_policy
 
@@ -81,7 +88,7 @@ class AutoScalingPolicyReqV11:
 
 
         :param auto_scaling_policy: The auto_scaling_policy of this AutoScalingPolicyReqV11.
-        :type: AutoScalingPolicy
+        :type auto_scaling_policy: :class:`huaweicloudsdkmrs.v1.AutoScalingPolicy`
         """
         self._auto_scaling_policy = auto_scaling_policy
 

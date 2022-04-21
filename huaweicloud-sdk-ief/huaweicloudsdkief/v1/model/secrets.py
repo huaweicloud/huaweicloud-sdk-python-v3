@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Secrets:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Secrets:
     }
 
     def __init__(self, name=None, key=None):
-        """Secrets - a model defined in huaweicloud sdk"""
+        """Secrets
+
+        The model defined in huaweicloud sdk
+
+        :param name: 密钥的名称
+        :type name: str
+        :param key: 密钥的属性名
+        :type key: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class Secrets:
         密钥的名称
 
         :param name: The name of this Secrets.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -83,7 +90,7 @@ class Secrets:
         密钥的属性名
 
         :param key: The key of this Secrets.
-        :type: str
+        :type key: str
         """
         self._key = key
 

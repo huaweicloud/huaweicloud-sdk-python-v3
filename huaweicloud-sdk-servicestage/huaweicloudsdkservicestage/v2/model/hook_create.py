@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class HookCreate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class HookCreate:
     }
 
     def __init__(self, secret=None, url=None):
-        """HookCreate - a model defined in huaweicloud sdk"""
+        """HookCreate
+
+        The model defined in huaweicloud sdk
+
+        :param secret: 无法猜测的随机字符串，用于验证接收到的payloads。
+        :type secret: str
+        :param url: hook触发时的回调URL。
+        :type url: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class HookCreate:
         无法猜测的随机字符串，用于验证接收到的payloads。
 
         :param secret: The secret of this HookCreate.
-        :type: str
+        :type secret: str
         """
         self._secret = secret
 
@@ -83,7 +90,7 @@ class HookCreate:
         hook触发时的回调URL。
 
         :param url: The url of this HookCreate.
-        :type: str
+        :type url: str
         """
         self._url = url
 

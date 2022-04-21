@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchDeletePublicipTagsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchDeletePublicipTagsRequest:
     }
 
     def __init__(self, publicip_id=None, body=None):
-        """BatchDeletePublicipTagsRequest - a model defined in huaweicloud sdk"""
+        """BatchDeletePublicipTagsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param publicip_id: 资源ID
+        :type publicip_id: str
+        :param body: Body of the BatchDeletePublicipTagsRequest
+        :type body: :class:`huaweicloudsdkeip.v2.BatchDeletePublicipTagsRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class BatchDeletePublicipTagsRequest:
         资源ID
 
         :param publicip_id: The publicip_id of this BatchDeletePublicipTagsRequest.
-        :type: str
+        :type publicip_id: str
         """
         self._publicip_id = publicip_id
 
@@ -72,7 +79,7 @@ class BatchDeletePublicipTagsRequest:
 
 
         :return: The body of this BatchDeletePublicipTagsRequest.
-        :rtype: BatchDeletePublicipTagsRequestBody
+        :rtype: :class:`huaweicloudsdkeip.v2.BatchDeletePublicipTagsRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class BatchDeletePublicipTagsRequest:
 
 
         :param body: The body of this BatchDeletePublicipTagsRequest.
-        :type: BatchDeletePublicipTagsRequestBody
+        :type body: :class:`huaweicloudsdkeip.v2.BatchDeletePublicipTagsRequestBody`
         """
         self._body = body
 

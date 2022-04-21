@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PrePaidServerSchedulerHints:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class PrePaidServerSchedulerHints:
     }
 
     def __init__(self, group=None, tenancy=None, dedicated_host_id=None):
-        """PrePaidServerSchedulerHints - a model defined in huaweicloud sdk"""
+        """PrePaidServerSchedulerHints
+
+        The model defined in huaweicloud sdk
+
+        :param group: 云服务器组ID，UUID格式。  云服务器组的ID可以从控制台或者参考[查询云服务器组列表](https://support.huaweicloud.com/api-ecs/ecs_03_1402.html)获取。
+        :type group: str
+        :param tenancy: 在指定的专属主机或者共享主机上创建弹性云服务器。参数值为shared或者dedicated。
+        :type tenancy: str
+        :param dedicated_host_id: 专属主机的ID。
+        :type dedicated_host_id: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class PrePaidServerSchedulerHints:
         云服务器组ID，UUID格式。  云服务器组的ID可以从控制台或者参考[查询云服务器组列表](https://support.huaweicloud.com/api-ecs/ecs_03_1402.html)获取。
 
         :param group: The group of this PrePaidServerSchedulerHints.
-        :type: str
+        :type group: str
         """
         self._group = group
 
@@ -90,7 +99,7 @@ class PrePaidServerSchedulerHints:
         在指定的专属主机或者共享主机上创建弹性云服务器。参数值为shared或者dedicated。
 
         :param tenancy: The tenancy of this PrePaidServerSchedulerHints.
-        :type: str
+        :type tenancy: str
         """
         self._tenancy = tenancy
 
@@ -112,7 +121,7 @@ class PrePaidServerSchedulerHints:
         专属主机的ID。
 
         :param dedicated_host_id: The dedicated_host_id of this PrePaidServerSchedulerHints.
-        :type: str
+        :type dedicated_host_id: str
         """
         self._dedicated_host_id = dedicated_host_id
 

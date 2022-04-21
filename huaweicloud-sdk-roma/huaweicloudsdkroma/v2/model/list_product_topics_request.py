@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListProductTopicsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListProductTopicsRequest:
     }
 
     def __init__(self, instance_id=None, product_id=None, limit=None, offset=None):
-        """ListProductTopicsRequest - a model defined in huaweicloud sdk"""
+        """ListProductTopicsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param product_id: 产品ID
+        :type product_id: int
+        :param limit: 每页显示条目数量，最大数量999，超过999后只返回999
+        :type limit: int
+        :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0
+        :type offset: int
+        """
         
         
 
@@ -71,7 +82,7 @@ class ListProductTopicsRequest:
         实例ID
 
         :param instance_id: The instance_id of this ListProductTopicsRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -93,7 +104,7 @@ class ListProductTopicsRequest:
         产品ID
 
         :param product_id: The product_id of this ListProductTopicsRequest.
-        :type: int
+        :type product_id: int
         """
         self._product_id = product_id
 
@@ -115,7 +126,7 @@ class ListProductTopicsRequest:
         每页显示条目数量，最大数量999，超过999后只返回999
 
         :param limit: The limit of this ListProductTopicsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -137,7 +148,7 @@ class ListProductTopicsRequest:
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
         :param offset: The offset of this ListProductTopicsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 

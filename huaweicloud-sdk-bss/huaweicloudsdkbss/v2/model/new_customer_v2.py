@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NewCustomerV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class NewCustomerV2:
     }
 
     def __init__(self, customer_name=None, mobile_phone=None, use_pri_mobile_phone=None, password=None, verification_code=None):
-        """NewCustomerV2 - a model defined in huaweicloud sdk"""
+        """NewCustomerV2
+
+        The model defined in huaweicloud sdk
+
+        :param customer_name: 企业子账号登录名。
+        :type customer_name: str
+        :param mobile_phone: 企业管理员的手机号码。如果use_pri_mobile_phone取值为Y，则这个参数无效，否则必选。
+        :type mobile_phone: str
+        :param use_pri_mobile_phone: 是否使用企业主账号手机号码作为子账号手机号码： Y：是N：否（默认值） 当为Y时，mobile_phone输入无效。
+        :type use_pri_mobile_phone: str
+        :param password: 企业子账号的登录密码。
+        :type password: str
+        :param verification_code: 验证码，只有输入企业子账号的手机号的情况下，才需要填写该字段。 具体请参见发送短信验证码。
+        :type verification_code: str
+        """
         
         
 
@@ -76,7 +89,7 @@ class NewCustomerV2:
         企业子账号登录名。
 
         :param customer_name: The customer_name of this NewCustomerV2.
-        :type: str
+        :type customer_name: str
         """
         self._customer_name = customer_name
 
@@ -98,7 +111,7 @@ class NewCustomerV2:
         企业管理员的手机号码。如果use_pri_mobile_phone取值为Y，则这个参数无效，否则必选。
 
         :param mobile_phone: The mobile_phone of this NewCustomerV2.
-        :type: str
+        :type mobile_phone: str
         """
         self._mobile_phone = mobile_phone
 
@@ -120,7 +133,7 @@ class NewCustomerV2:
         是否使用企业主账号手机号码作为子账号手机号码： Y：是N：否（默认值） 当为Y时，mobile_phone输入无效。
 
         :param use_pri_mobile_phone: The use_pri_mobile_phone of this NewCustomerV2.
-        :type: str
+        :type use_pri_mobile_phone: str
         """
         self._use_pri_mobile_phone = use_pri_mobile_phone
 
@@ -142,7 +155,7 @@ class NewCustomerV2:
         企业子账号的登录密码。
 
         :param password: The password of this NewCustomerV2.
-        :type: str
+        :type password: str
         """
         self._password = password
 
@@ -164,7 +177,7 @@ class NewCustomerV2:
         验证码，只有输入企业子账号的手机号的情况下，才需要填写该字段。 具体请参见发送短信验证码。
 
         :param verification_code: The verification_code of this NewCustomerV2.
-        :type: str
+        :type verification_code: str
         """
         self._verification_code = verification_code
 

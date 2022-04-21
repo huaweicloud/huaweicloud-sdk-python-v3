@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateGaussMySqlInstanceNameRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateGaussMySqlInstanceNameRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """UpdateGaussMySqlInstanceNameRequest - a model defined in huaweicloud sdk"""
+        """UpdateGaussMySqlInstanceNameRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言
+        :type x_language: str
+        :param instance_id: 实例ID，严格匹配UUID规则。
+        :type instance_id: str
+        :param body: Body of the UpdateGaussMySqlInstanceNameRequest
+        :type body: :class:`huaweicloudsdkgaussdb.v3.MysqlUpdateInstanceNameRequest`
+        """
         
         
 
@@ -67,7 +76,7 @@ class UpdateGaussMySqlInstanceNameRequest:
         语言
 
         :param x_language: The x_language of this UpdateGaussMySqlInstanceNameRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -89,7 +98,7 @@ class UpdateGaussMySqlInstanceNameRequest:
         实例ID，严格匹配UUID规则。
 
         :param instance_id: The instance_id of this UpdateGaussMySqlInstanceNameRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -99,7 +108,7 @@ class UpdateGaussMySqlInstanceNameRequest:
 
 
         :return: The body of this UpdateGaussMySqlInstanceNameRequest.
-        :rtype: MysqlUpdateInstanceNameRequest
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlUpdateInstanceNameRequest`
         """
         return self._body
 
@@ -109,7 +118,7 @@ class UpdateGaussMySqlInstanceNameRequest:
 
 
         :param body: The body of this UpdateGaussMySqlInstanceNameRequest.
-        :type: MysqlUpdateInstanceNameRequest
+        :type body: :class:`huaweicloudsdkgaussdb.v3.MysqlUpdateInstanceNameRequest`
         """
         self._body = body
 

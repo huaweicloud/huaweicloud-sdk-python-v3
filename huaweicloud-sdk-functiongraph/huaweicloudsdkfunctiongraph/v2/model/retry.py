@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Retry:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class Retry:
     }
 
     def __init__(self, name=None, delay=None, max_attempts=None):
-        """Retry - a model defined in huaweicloud sdk"""
+        """Retry
+
+        The model defined in huaweicloud sdk
+
+        :param name: 重试策略名称，在单个流程中，名称需要唯一
+        :type name: str
+        :param delay: 重试间隔，单位：秒。若不传，默认为1
+        :type delay: int
+        :param max_attempts: 最大重试次数，。若不传，默认为3
+        :type max_attempts: int
+        """
         
         
 
@@ -68,7 +77,7 @@ class Retry:
         重试策略名称，在单个流程中，名称需要唯一
 
         :param name: The name of this Retry.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -90,7 +99,7 @@ class Retry:
         重试间隔，单位：秒。若不传，默认为1
 
         :param delay: The delay of this Retry.
-        :type: int
+        :type delay: int
         """
         self._delay = delay
 
@@ -112,7 +121,7 @@ class Retry:
         最大重试次数，。若不传，默认为3
 
         :param max_attempts: The max_attempts of this Retry.
-        :type: int
+        :type max_attempts: int
         """
         self._max_attempts = max_attempts
 

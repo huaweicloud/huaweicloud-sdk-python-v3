@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListNamespacesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListNamespacesRequest:
     }
 
     def __init__(self, x_repo_auth=None):
-        """ListNamespacesRequest - a model defined in huaweicloud sdk"""
+        """ListNamespacesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_repo_auth: 授权名称。
+        :type x_repo_auth: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ListNamespacesRequest:
         授权名称。
 
         :param x_repo_auth: The x_repo_auth of this ListNamespacesRequest.
-        :type: str
+        :type x_repo_auth: str
         """
         self._x_repo_auth = x_repo_auth
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OSChangeReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class OSChangeReq:
     }
 
     def __init__(self, os_change=None):
-        """OSChangeReq - a model defined in huaweicloud sdk"""
+        """OSChangeReq
+
+        The model defined in huaweicloud sdk
+
+        :param os_change: 
+        :type os_change: :class:`huaweicloudsdkbms.v1.OsChange`
+        """
         
         
 
@@ -45,7 +50,7 @@ class OSChangeReq:
 
 
         :return: The os_change of this OSChangeReq.
-        :rtype: OsChange
+        :rtype: :class:`huaweicloudsdkbms.v1.OsChange`
         """
         return self._os_change
 
@@ -55,7 +60,7 @@ class OSChangeReq:
 
 
         :param os_change: The os_change of this OSChangeReq.
-        :type: OsChange
+        :type os_change: :class:`huaweicloudsdkbms.v1.OsChange`
         """
         self._os_change = os_change
 

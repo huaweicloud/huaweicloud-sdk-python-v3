@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TemplateInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -104,7 +103,87 @@ class TemplateInfo:
     }
 
     def __init__(self, id=None, title=None, description=None, productshorts=None, products=None, topic=None, creator_id=None, creator=None, nickname=None, score=None, label=None, store=None, store_info=None, status=None, view_count=None, usage_count=None, created_at=None, updated_at=None, published_at=None, favorite_state=None, tags=None, type=None, is_static=None, maintainers=None, pipeline_template=None, platform_source=None, references=None, properties=None, dependencies=None, dependency_type=None, forum_id=None, file_size=None, deployment=None, update_id=None, is_support_cloudide=None, has_notices=None, dependents=None, dependent_services=None):
-        """TemplateInfo - a model defined in huaweicloud sdk"""
+        """TemplateInfo
+
+        The model defined in huaweicloud sdk
+
+        :param id: 模板id。
+        :type id: str
+        :param title: 模板名。
+        :type title: str
+        :param description: 模板描述。
+        :type description: str
+        :param productshorts: 模板关联的所有云服务（产品短名）。
+        :type productshorts: list[str]
+        :param products: 模板关联的云产品。
+        :type products: list[:class:`huaweicloudsdkdevstar.v1.TemplateProductExt`]
+        :param topic: 模板标签。
+        :type topic: list[:class:`huaweicloudsdkdevstar.v1.TopicCategory`]
+        :param creator_id: 模板创建者id。
+        :type creator_id: str
+        :param creator: 模板创建者,有别名返回别名。
+        :type creator: str
+        :param nickname: 模板创建者,有别名返回别名。
+        :type nickname: str
+        :param score: 模板评分（点赞数）。
+        :type score: int
+        :param label: 模板标签（new、hot等）。
+        :type label: str
+        :param store: 代码存储位置。
+        :type store: int
+        :param store_info: 获取代码模版所需的信息。
+        :type store_info: str
+        :param status: 模板状态： - 0：审核中 - 1：已上架 - 2：未上架（已下架） - 3：未上架（合规检查不通过） - 4：未上架（待上架） - 5：已删除 
+        :type status: int
+        :param view_count: 访问量。
+        :type view_count: int
+        :param usage_count: 引用量。
+        :type usage_count: int
+        :param created_at: 创建时间。
+        :type created_at: str
+        :param updated_at: 更新时间。
+        :type updated_at: str
+        :param published_at: 模板上架时间。
+        :type published_at: str
+        :param favorite_state: 点赞状态： - 1：点赞 - 0：未点赞 
+        :type favorite_state: int
+        :param tags: 模板标签。
+        :type tags: list[:class:`huaweicloudsdkdevstar.v1.TagInfo`]
+        :param type: 模板类型： - 0：doc - 1：code - 2：pipeline - 3：devops 四种 
+        :type type: int
+        :param is_static: 动、静态代码模板标识： - 0：动态模板codetemplate - 1：静态模板codesample 
+        :type is_static: int
+        :param maintainers: 模板相关联的所有维护人账号名称。
+        :type maintainers: list[str]
+        :param pipeline_template: 
+        :type pipeline_template: :class:`huaweicloudsdkdevstar.v1.PipelineTemplateInfo`
+        :param platform_source: 平台来源： - 0：codelabs - 1：devstar 
+        :type platform_source: int
+        :param references: 相关文档，示例，帖子。
+        :type references: list[:class:`huaweicloudsdkdevstar.v1.Reference`]
+        :param properties: 模板自定义参数列表。
+        :type properties: object
+        :param dependencies: dependency信息。
+        :type dependencies: list[object]
+        :param dependency_type: dependency类型。
+        :type dependency_type: str
+        :param forum_id: 关联论坛板块id。
+        :type forum_id: int
+        :param file_size: 模板文件解压缩之后的大小(单位:KB)。
+        :type file_size: int
+        :param deployment: 部署信息。
+        :type deployment: object
+        :param update_id: 模板关联更新态Id。
+        :type update_id: str
+        :param is_support_cloudide: 是否支持使用CloudIDE运行源码。
+        :type is_support_cloudide: bool
+        :param has_notices: 是否有消息
+        :type has_notices: bool
+        :param dependents: 模板部署方式依赖信息
+        :type dependents: list[:class:`huaweicloudsdkdevstar.v1.Dependent`]
+        :param dependent_services: 模板关联云服务。
+        :type dependent_services: str
+        """
         
         
 
@@ -243,7 +322,7 @@ class TemplateInfo:
         模板id。
 
         :param id: The id of this TemplateInfo.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -265,7 +344,7 @@ class TemplateInfo:
         模板名。
 
         :param title: The title of this TemplateInfo.
-        :type: str
+        :type title: str
         """
         self._title = title
 
@@ -287,7 +366,7 @@ class TemplateInfo:
         模板描述。
 
         :param description: The description of this TemplateInfo.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -309,7 +388,7 @@ class TemplateInfo:
         模板关联的所有云服务（产品短名）。
 
         :param productshorts: The productshorts of this TemplateInfo.
-        :type: list[str]
+        :type productshorts: list[str]
         """
         self._productshorts = productshorts
 
@@ -320,7 +399,7 @@ class TemplateInfo:
         模板关联的云产品。
 
         :return: The products of this TemplateInfo.
-        :rtype: list[TemplateProductExt]
+        :rtype: list[:class:`huaweicloudsdkdevstar.v1.TemplateProductExt`]
         """
         return self._products
 
@@ -331,7 +410,7 @@ class TemplateInfo:
         模板关联的云产品。
 
         :param products: The products of this TemplateInfo.
-        :type: list[TemplateProductExt]
+        :type products: list[:class:`huaweicloudsdkdevstar.v1.TemplateProductExt`]
         """
         self._products = products
 
@@ -342,7 +421,7 @@ class TemplateInfo:
         模板标签。
 
         :return: The topic of this TemplateInfo.
-        :rtype: list[TopicCategory]
+        :rtype: list[:class:`huaweicloudsdkdevstar.v1.TopicCategory`]
         """
         return self._topic
 
@@ -353,7 +432,7 @@ class TemplateInfo:
         模板标签。
 
         :param topic: The topic of this TemplateInfo.
-        :type: list[TopicCategory]
+        :type topic: list[:class:`huaweicloudsdkdevstar.v1.TopicCategory`]
         """
         self._topic = topic
 
@@ -375,7 +454,7 @@ class TemplateInfo:
         模板创建者id。
 
         :param creator_id: The creator_id of this TemplateInfo.
-        :type: str
+        :type creator_id: str
         """
         self._creator_id = creator_id
 
@@ -397,7 +476,7 @@ class TemplateInfo:
         模板创建者,有别名返回别名。
 
         :param creator: The creator of this TemplateInfo.
-        :type: str
+        :type creator: str
         """
         self._creator = creator
 
@@ -419,7 +498,7 @@ class TemplateInfo:
         模板创建者,有别名返回别名。
 
         :param nickname: The nickname of this TemplateInfo.
-        :type: str
+        :type nickname: str
         """
         self._nickname = nickname
 
@@ -441,7 +520,7 @@ class TemplateInfo:
         模板评分（点赞数）。
 
         :param score: The score of this TemplateInfo.
-        :type: int
+        :type score: int
         """
         self._score = score
 
@@ -463,7 +542,7 @@ class TemplateInfo:
         模板标签（new、hot等）。
 
         :param label: The label of this TemplateInfo.
-        :type: str
+        :type label: str
         """
         self._label = label
 
@@ -485,7 +564,7 @@ class TemplateInfo:
         代码存储位置。
 
         :param store: The store of this TemplateInfo.
-        :type: int
+        :type store: int
         """
         self._store = store
 
@@ -507,7 +586,7 @@ class TemplateInfo:
         获取代码模版所需的信息。
 
         :param store_info: The store_info of this TemplateInfo.
-        :type: str
+        :type store_info: str
         """
         self._store_info = store_info
 
@@ -529,7 +608,7 @@ class TemplateInfo:
         模板状态： - 0：审核中 - 1：已上架 - 2：未上架（已下架） - 3：未上架（合规检查不通过） - 4：未上架（待上架） - 5：已删除 
 
         :param status: The status of this TemplateInfo.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -551,7 +630,7 @@ class TemplateInfo:
         访问量。
 
         :param view_count: The view_count of this TemplateInfo.
-        :type: int
+        :type view_count: int
         """
         self._view_count = view_count
 
@@ -573,7 +652,7 @@ class TemplateInfo:
         引用量。
 
         :param usage_count: The usage_count of this TemplateInfo.
-        :type: int
+        :type usage_count: int
         """
         self._usage_count = usage_count
 
@@ -595,7 +674,7 @@ class TemplateInfo:
         创建时间。
 
         :param created_at: The created_at of this TemplateInfo.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -617,7 +696,7 @@ class TemplateInfo:
         更新时间。
 
         :param updated_at: The updated_at of this TemplateInfo.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 
@@ -639,7 +718,7 @@ class TemplateInfo:
         模板上架时间。
 
         :param published_at: The published_at of this TemplateInfo.
-        :type: str
+        :type published_at: str
         """
         self._published_at = published_at
 
@@ -661,7 +740,7 @@ class TemplateInfo:
         点赞状态： - 1：点赞 - 0：未点赞 
 
         :param favorite_state: The favorite_state of this TemplateInfo.
-        :type: int
+        :type favorite_state: int
         """
         self._favorite_state = favorite_state
 
@@ -672,7 +751,7 @@ class TemplateInfo:
         模板标签。
 
         :return: The tags of this TemplateInfo.
-        :rtype: list[TagInfo]
+        :rtype: list[:class:`huaweicloudsdkdevstar.v1.TagInfo`]
         """
         return self._tags
 
@@ -683,7 +762,7 @@ class TemplateInfo:
         模板标签。
 
         :param tags: The tags of this TemplateInfo.
-        :type: list[TagInfo]
+        :type tags: list[:class:`huaweicloudsdkdevstar.v1.TagInfo`]
         """
         self._tags = tags
 
@@ -705,7 +784,7 @@ class TemplateInfo:
         模板类型： - 0：doc - 1：code - 2：pipeline - 3：devops 四种 
 
         :param type: The type of this TemplateInfo.
-        :type: int
+        :type type: int
         """
         self._type = type
 
@@ -727,7 +806,7 @@ class TemplateInfo:
         动、静态代码模板标识： - 0：动态模板codetemplate - 1：静态模板codesample 
 
         :param is_static: The is_static of this TemplateInfo.
-        :type: int
+        :type is_static: int
         """
         self._is_static = is_static
 
@@ -749,7 +828,7 @@ class TemplateInfo:
         模板相关联的所有维护人账号名称。
 
         :param maintainers: The maintainers of this TemplateInfo.
-        :type: list[str]
+        :type maintainers: list[str]
         """
         self._maintainers = maintainers
 
@@ -759,7 +838,7 @@ class TemplateInfo:
 
 
         :return: The pipeline_template of this TemplateInfo.
-        :rtype: PipelineTemplateInfo
+        :rtype: :class:`huaweicloudsdkdevstar.v1.PipelineTemplateInfo`
         """
         return self._pipeline_template
 
@@ -769,7 +848,7 @@ class TemplateInfo:
 
 
         :param pipeline_template: The pipeline_template of this TemplateInfo.
-        :type: PipelineTemplateInfo
+        :type pipeline_template: :class:`huaweicloudsdkdevstar.v1.PipelineTemplateInfo`
         """
         self._pipeline_template = pipeline_template
 
@@ -791,7 +870,7 @@ class TemplateInfo:
         平台来源： - 0：codelabs - 1：devstar 
 
         :param platform_source: The platform_source of this TemplateInfo.
-        :type: int
+        :type platform_source: int
         """
         self._platform_source = platform_source
 
@@ -802,7 +881,7 @@ class TemplateInfo:
         相关文档，示例，帖子。
 
         :return: The references of this TemplateInfo.
-        :rtype: list[Reference]
+        :rtype: list[:class:`huaweicloudsdkdevstar.v1.Reference`]
         """
         return self._references
 
@@ -813,7 +892,7 @@ class TemplateInfo:
         相关文档，示例，帖子。
 
         :param references: The references of this TemplateInfo.
-        :type: list[Reference]
+        :type references: list[:class:`huaweicloudsdkdevstar.v1.Reference`]
         """
         self._references = references
 
@@ -835,7 +914,7 @@ class TemplateInfo:
         模板自定义参数列表。
 
         :param properties: The properties of this TemplateInfo.
-        :type: object
+        :type properties: object
         """
         self._properties = properties
 
@@ -857,7 +936,7 @@ class TemplateInfo:
         dependency信息。
 
         :param dependencies: The dependencies of this TemplateInfo.
-        :type: list[object]
+        :type dependencies: list[object]
         """
         self._dependencies = dependencies
 
@@ -879,7 +958,7 @@ class TemplateInfo:
         dependency类型。
 
         :param dependency_type: The dependency_type of this TemplateInfo.
-        :type: str
+        :type dependency_type: str
         """
         self._dependency_type = dependency_type
 
@@ -901,7 +980,7 @@ class TemplateInfo:
         关联论坛板块id。
 
         :param forum_id: The forum_id of this TemplateInfo.
-        :type: int
+        :type forum_id: int
         """
         self._forum_id = forum_id
 
@@ -923,7 +1002,7 @@ class TemplateInfo:
         模板文件解压缩之后的大小(单位:KB)。
 
         :param file_size: The file_size of this TemplateInfo.
-        :type: int
+        :type file_size: int
         """
         self._file_size = file_size
 
@@ -945,7 +1024,7 @@ class TemplateInfo:
         部署信息。
 
         :param deployment: The deployment of this TemplateInfo.
-        :type: object
+        :type deployment: object
         """
         self._deployment = deployment
 
@@ -967,7 +1046,7 @@ class TemplateInfo:
         模板关联更新态Id。
 
         :param update_id: The update_id of this TemplateInfo.
-        :type: str
+        :type update_id: str
         """
         self._update_id = update_id
 
@@ -989,7 +1068,7 @@ class TemplateInfo:
         是否支持使用CloudIDE运行源码。
 
         :param is_support_cloudide: The is_support_cloudide of this TemplateInfo.
-        :type: bool
+        :type is_support_cloudide: bool
         """
         self._is_support_cloudide = is_support_cloudide
 
@@ -1011,7 +1090,7 @@ class TemplateInfo:
         是否有消息
 
         :param has_notices: The has_notices of this TemplateInfo.
-        :type: bool
+        :type has_notices: bool
         """
         self._has_notices = has_notices
 
@@ -1022,7 +1101,7 @@ class TemplateInfo:
         模板部署方式依赖信息
 
         :return: The dependents of this TemplateInfo.
-        :rtype: list[Dependent]
+        :rtype: list[:class:`huaweicloudsdkdevstar.v1.Dependent`]
         """
         return self._dependents
 
@@ -1033,7 +1112,7 @@ class TemplateInfo:
         模板部署方式依赖信息
 
         :param dependents: The dependents of this TemplateInfo.
-        :type: list[Dependent]
+        :type dependents: list[:class:`huaweicloudsdkdevstar.v1.Dependent`]
         """
         self._dependents = dependents
 
@@ -1055,7 +1134,7 @@ class TemplateInfo:
         模板关联云服务。
 
         :param dependent_services: The dependent_services of this TemplateInfo.
-        :type: str
+        :type dependent_services: str
         """
         self._dependent_services = dependent_services
 

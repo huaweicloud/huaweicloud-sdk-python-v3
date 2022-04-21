@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListIndirectPartnersRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListIndirectPartnersRequest:
     }
 
     def __init__(self, body=None):
-        """ListIndirectPartnersRequest - a model defined in huaweicloud sdk"""
+        """ListIndirectPartnersRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the ListIndirectPartnersRequest
+        :type body: :class:`huaweicloudsdkbss.v2.QueryIndirectPartnersReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class ListIndirectPartnersRequest:
 
 
         :return: The body of this ListIndirectPartnersRequest.
-        :rtype: QueryIndirectPartnersReq
+        :rtype: :class:`huaweicloudsdkbss.v2.QueryIndirectPartnersReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class ListIndirectPartnersRequest:
 
 
         :param body: The body of this ListIndirectPartnersRequest.
-        :type: QueryIndirectPartnersReq
+        :type body: :class:`huaweicloudsdkbss.v2.QueryIndirectPartnersReq`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateLoadBalancerOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -76,7 +75,59 @@ class CreateLoadBalancerOption:
     }
 
     def __init__(self, name=None, description=None, vip_address=None, vip_subnet_cidr_id=None, ipv6_vip_virsubnet_id=None, provider=None, l4_flavor_id=None, project_id=None, guaranteed=None, vpc_id=None, availability_zone_list=None, enterprise_project_id=None, tags=None, admin_state_up=None, l7_flavor_id=None, billing_info=None, ipv6_bandwidth=None, publicip_ids=None, publicip=None, elb_virsubnet_ids=None, ip_target_enable=None, deletion_protection_enable=None, prepaid_options=None, autoscaling=None):
-        """CreateLoadBalancerOption - a model defined in huaweicloud sdk"""
+        """CreateLoadBalancerOption
+
+        The model defined in huaweicloud sdk
+
+        :param name: 负载均衡器的名称。
+        :type name: str
+        :param description: 负载均衡器的描述。
+        :type description: str
+        :param vip_address: 负载均衡器的IPv4虚拟IP。该地址必须包含在所在子网的IPv4网段内，且未被占用。  使用说明： - 传入vip_address时必须传入vip_subnet_cidr_id。 - 不传入vip_address，但传入vip_subnet_cidr_id，则自动分配IPv4虚拟IP。 - 不传入vip_address，且不传vip_subnet_cidr_id，则不分配虚拟IP，vip_address&#x3D;null。
+        :type vip_address: str
+        :param vip_subnet_cidr_id: 负载均衡器所在子网的IPv4子网ID。若需要创建带IPv4虚拟IP的LB，该字段必须传入。 可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_subnet_id得到。 使用说明：   - vpc_id, vip_subnet_cidr_id, ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。 - 若同时传入vpc_id和vip_subnet_cidr_id，则vip_subnet_cidr_id对应的子网必须属于vpc_id对应的VPC。
+        :type vip_subnet_cidr_id: str
+        :param ipv6_vip_virsubnet_id: 双栈类型负载均衡器所在子网的IPv6网络ID。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的id得到。  使用说明： - vpc_id，vip_subnet_cidr_id，ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。 - 需要对应的子网开启IPv6。  [不支持IPv6，请勿使用](tag:dt,dt_test)
+        :type ipv6_vip_virsubnet_id: str
+        :param provider: 负载均衡器的生产者名称。固定为vlb。
+        :type provider: str
+        :param l4_flavor_id: 四层Flavor ID。[只支持设置为l4_flavor.elb.shared。](tag:hcso_dt)  [hcso场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hws,hcso)  注意：当l4_flavor_id和l7_flavor_id都不传的时，会使用默认flavor。
+        :type l4_flavor_id: str
+        :param project_id: 负载均衡器所在的项目ID。
+        :type project_id: str
+        :param guaranteed: 是否独享型负载均衡器。取值： - true：独享型。 - false：共享型。  当前只支持设置为true，设置为false会返回400 Bad Request 。默认：true。
+        :type guaranteed: bool
+        :param vpc_id: 负载均衡器所在的VPC ID。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/vpcs 响应参数中的id得到。  使用说明： - vpc_id，vip_subnet_cidr_id，ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。
+        :type vpc_id: str
+        :param availability_zone_list: 可用区列表。可通过GET https://{ELB_Endpoint}/v3/{project_id}/elb/availability-zones接口来查询可用区集合列表。创建负载均衡器时，从查询结果选择某一个可用区集合，并从中选择一个或多个可用区。
+        :type availability_zone_list: list[str]
+        :param enterprise_project_id: 负载均衡器所属的企业项目ID。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
+        :type enterprise_project_id: str
+        :param tags: 负载均衡的标签列表。示例：\&quot;tags\&quot;:[{\&quot;key\&quot;:\&quot;my_tag\&quot;,\&quot;value\&quot;:\&quot;my_tag_value\&quot;}]
+        :type tags: list[:class:`huaweicloudsdkelb.v3.Tag`]
+        :param admin_state_up: 负载均衡器的管理状态。只能设置为true。默认：true。  [不支持该字段，请勿使用。](tag:dt,dt_test)
+        :type admin_state_up: bool
+        :param l7_flavor_id: 七层Flavor ID。 [hcso场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hws,hcso) 注意：当l4_flavor_id和l7_flavor_id都不传的时，会使用默认flavor。
+        :type l7_flavor_id: str
+        :param billing_info: 资源账单信息。 [取值： - 空：按需计费。  - 非空：包周期计费。 包周期计费billing_info字段的格式为：order_id:product_id:region_id:project_id，如： CS2107161019CDJZZ:OFFI569702121789763584:eu-de:057ef081eb00d2732fd1c01a9be75e6f](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42)  [不支持该字段，请勿使用](tag:dt,dt_test,hcso_dt)
+        :type billing_info: str
+        :param ipv6_bandwidth: 
+        :type ipv6_bandwidth: :class:`huaweicloudsdkelb.v3.BandwidthRef`
+        :param publicip_ids: 负载均衡器绑定的公网IP ID。只支持绑定数组中的第一个EIP，其他将被忽略。
+        :type publicip_ids: list[str]
+        :param publicip: 
+        :type publicip: :class:`huaweicloudsdkelb.v3.CreateLoadBalancerPublicIpOption`
+        :param elb_virsubnet_ids: 下联面子网的网络ID列表。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的id得到。  使用说明： - 若不指定该字段，则会在当前负载均衡器所在子网作为下联面子网。  - 若指定多个下联面子网，则按顺序优先使用第一个子网来为负载均衡器下联面端口分配ip地址。  - 下联面子网必须属于该LB所在的VPC。  - 不支持边缘云子网。
+        :type elb_virsubnet_ids: list[str]
+        :param ip_target_enable: 是否启用跨VPC后端转发。开启跨VPC后端转发后，后端服务器组支持添加其他VPC、其他公有云、云下数据中心的服务器。取值： - true：开启。 - false：不开启。 [仅独享型负载均衡器支持该特性。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42,dt,dt_test) [不支持该字段，请勿使用。](tag:dt,dt_test)
+        :type ip_target_enable: bool
+        :param deletion_protection_enable: 是否开启删除保护。取值：false不开启，true开启。默认false不开启。 &gt; 退场时需要先关闭所有资源的删除保护开关。  [不支持该字段，请勿使用](tag:dt,dt_test)
+        :type deletion_protection_enable: bool
+        :param prepaid_options: 
+        :type prepaid_options: :class:`huaweicloudsdkelb.v3.PrepaidCreateOption`
+        :param autoscaling: 
+        :type autoscaling: :class:`huaweicloudsdkelb.v3.CreateLoadbalancerAutoscalingOption`
+        """
         
         
 
@@ -172,7 +223,7 @@ class CreateLoadBalancerOption:
         负载均衡器的名称。
 
         :param name: The name of this CreateLoadBalancerOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -194,7 +245,7 @@ class CreateLoadBalancerOption:
         负载均衡器的描述。
 
         :param description: The description of this CreateLoadBalancerOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -216,7 +267,7 @@ class CreateLoadBalancerOption:
         负载均衡器的IPv4虚拟IP。该地址必须包含在所在子网的IPv4网段内，且未被占用。  使用说明： - 传入vip_address时必须传入vip_subnet_cidr_id。 - 不传入vip_address，但传入vip_subnet_cidr_id，则自动分配IPv4虚拟IP。 - 不传入vip_address，且不传vip_subnet_cidr_id，则不分配虚拟IP，vip_address=null。
 
         :param vip_address: The vip_address of this CreateLoadBalancerOption.
-        :type: str
+        :type vip_address: str
         """
         self._vip_address = vip_address
 
@@ -238,7 +289,7 @@ class CreateLoadBalancerOption:
         负载均衡器所在子网的IPv4子网ID。若需要创建带IPv4虚拟IP的LB，该字段必须传入。 可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_subnet_id得到。 使用说明：   - vpc_id, vip_subnet_cidr_id, ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。 - 若同时传入vpc_id和vip_subnet_cidr_id，则vip_subnet_cidr_id对应的子网必须属于vpc_id对应的VPC。
 
         :param vip_subnet_cidr_id: The vip_subnet_cidr_id of this CreateLoadBalancerOption.
-        :type: str
+        :type vip_subnet_cidr_id: str
         """
         self._vip_subnet_cidr_id = vip_subnet_cidr_id
 
@@ -260,7 +311,7 @@ class CreateLoadBalancerOption:
         双栈类型负载均衡器所在子网的IPv6网络ID。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的id得到。  使用说明： - vpc_id，vip_subnet_cidr_id，ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。 - 需要对应的子网开启IPv6。  [不支持IPv6，请勿使用](tag:dt,dt_test)
 
         :param ipv6_vip_virsubnet_id: The ipv6_vip_virsubnet_id of this CreateLoadBalancerOption.
-        :type: str
+        :type ipv6_vip_virsubnet_id: str
         """
         self._ipv6_vip_virsubnet_id = ipv6_vip_virsubnet_id
 
@@ -282,7 +333,7 @@ class CreateLoadBalancerOption:
         负载均衡器的生产者名称。固定为vlb。
 
         :param provider: The provider of this CreateLoadBalancerOption.
-        :type: str
+        :type provider: str
         """
         self._provider = provider
 
@@ -304,7 +355,7 @@ class CreateLoadBalancerOption:
         四层Flavor ID。[只支持设置为l4_flavor.elb.shared。](tag:hcso_dt)  [hcso场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hws,hcso)  注意：当l4_flavor_id和l7_flavor_id都不传的时，会使用默认flavor。
 
         :param l4_flavor_id: The l4_flavor_id of this CreateLoadBalancerOption.
-        :type: str
+        :type l4_flavor_id: str
         """
         self._l4_flavor_id = l4_flavor_id
 
@@ -326,7 +377,7 @@ class CreateLoadBalancerOption:
         负载均衡器所在的项目ID。
 
         :param project_id: The project_id of this CreateLoadBalancerOption.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -348,7 +399,7 @@ class CreateLoadBalancerOption:
         是否独享型负载均衡器。取值： - true：独享型。 - false：共享型。  当前只支持设置为true，设置为false会返回400 Bad Request 。默认：true。
 
         :param guaranteed: The guaranteed of this CreateLoadBalancerOption.
-        :type: bool
+        :type guaranteed: bool
         """
         self._guaranteed = guaranteed
 
@@ -370,7 +421,7 @@ class CreateLoadBalancerOption:
         负载均衡器所在的VPC ID。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/vpcs 响应参数中的id得到。  使用说明： - vpc_id，vip_subnet_cidr_id，ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。
 
         :param vpc_id: The vpc_id of this CreateLoadBalancerOption.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -392,7 +443,7 @@ class CreateLoadBalancerOption:
         可用区列表。可通过GET https://{ELB_Endpoint}/v3/{project_id}/elb/availability-zones接口来查询可用区集合列表。创建负载均衡器时，从查询结果选择某一个可用区集合，并从中选择一个或多个可用区。
 
         :param availability_zone_list: The availability_zone_list of this CreateLoadBalancerOption.
-        :type: list[str]
+        :type availability_zone_list: list[str]
         """
         self._availability_zone_list = availability_zone_list
 
@@ -414,7 +465,7 @@ class CreateLoadBalancerOption:
         负载均衡器所属的企业项目ID。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
 
         :param enterprise_project_id: The enterprise_project_id of this CreateLoadBalancerOption.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -425,7 +476,7 @@ class CreateLoadBalancerOption:
         负载均衡的标签列表。示例：\"tags\":[{\"key\":\"my_tag\",\"value\":\"my_tag_value\"}]
 
         :return: The tags of this CreateLoadBalancerOption.
-        :rtype: list[Tag]
+        :rtype: list[:class:`huaweicloudsdkelb.v3.Tag`]
         """
         return self._tags
 
@@ -436,7 +487,7 @@ class CreateLoadBalancerOption:
         负载均衡的标签列表。示例：\"tags\":[{\"key\":\"my_tag\",\"value\":\"my_tag_value\"}]
 
         :param tags: The tags of this CreateLoadBalancerOption.
-        :type: list[Tag]
+        :type tags: list[:class:`huaweicloudsdkelb.v3.Tag`]
         """
         self._tags = tags
 
@@ -458,7 +509,7 @@ class CreateLoadBalancerOption:
         负载均衡器的管理状态。只能设置为true。默认：true。  [不支持该字段，请勿使用。](tag:dt,dt_test)
 
         :param admin_state_up: The admin_state_up of this CreateLoadBalancerOption.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 
@@ -480,7 +531,7 @@ class CreateLoadBalancerOption:
         七层Flavor ID。 [hcso场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hws,hcso) 注意：当l4_flavor_id和l7_flavor_id都不传的时，会使用默认flavor。
 
         :param l7_flavor_id: The l7_flavor_id of this CreateLoadBalancerOption.
-        :type: str
+        :type l7_flavor_id: str
         """
         self._l7_flavor_id = l7_flavor_id
 
@@ -502,7 +553,7 @@ class CreateLoadBalancerOption:
         资源账单信息。 [取值： - 空：按需计费。  - 非空：包周期计费。 包周期计费billing_info字段的格式为：order_id:product_id:region_id:project_id，如： CS2107161019CDJZZ:OFFI569702121789763584:eu-de:057ef081eb00d2732fd1c01a9be75e6f](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42)  [不支持该字段，请勿使用](tag:dt,dt_test,hcso_dt)
 
         :param billing_info: The billing_info of this CreateLoadBalancerOption.
-        :type: str
+        :type billing_info: str
         """
         self._billing_info = billing_info
 
@@ -512,7 +563,7 @@ class CreateLoadBalancerOption:
 
 
         :return: The ipv6_bandwidth of this CreateLoadBalancerOption.
-        :rtype: BandwidthRef
+        :rtype: :class:`huaweicloudsdkelb.v3.BandwidthRef`
         """
         return self._ipv6_bandwidth
 
@@ -522,7 +573,7 @@ class CreateLoadBalancerOption:
 
 
         :param ipv6_bandwidth: The ipv6_bandwidth of this CreateLoadBalancerOption.
-        :type: BandwidthRef
+        :type ipv6_bandwidth: :class:`huaweicloudsdkelb.v3.BandwidthRef`
         """
         self._ipv6_bandwidth = ipv6_bandwidth
 
@@ -544,7 +595,7 @@ class CreateLoadBalancerOption:
         负载均衡器绑定的公网IP ID。只支持绑定数组中的第一个EIP，其他将被忽略。
 
         :param publicip_ids: The publicip_ids of this CreateLoadBalancerOption.
-        :type: list[str]
+        :type publicip_ids: list[str]
         """
         self._publicip_ids = publicip_ids
 
@@ -554,7 +605,7 @@ class CreateLoadBalancerOption:
 
 
         :return: The publicip of this CreateLoadBalancerOption.
-        :rtype: CreateLoadBalancerPublicIpOption
+        :rtype: :class:`huaweicloudsdkelb.v3.CreateLoadBalancerPublicIpOption`
         """
         return self._publicip
 
@@ -564,7 +615,7 @@ class CreateLoadBalancerOption:
 
 
         :param publicip: The publicip of this CreateLoadBalancerOption.
-        :type: CreateLoadBalancerPublicIpOption
+        :type publicip: :class:`huaweicloudsdkelb.v3.CreateLoadBalancerPublicIpOption`
         """
         self._publicip = publicip
 
@@ -586,7 +637,7 @@ class CreateLoadBalancerOption:
         下联面子网的网络ID列表。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的id得到。  使用说明： - 若不指定该字段，则会在当前负载均衡器所在子网作为下联面子网。  - 若指定多个下联面子网，则按顺序优先使用第一个子网来为负载均衡器下联面端口分配ip地址。  - 下联面子网必须属于该LB所在的VPC。  - 不支持边缘云子网。
 
         :param elb_virsubnet_ids: The elb_virsubnet_ids of this CreateLoadBalancerOption.
-        :type: list[str]
+        :type elb_virsubnet_ids: list[str]
         """
         self._elb_virsubnet_ids = elb_virsubnet_ids
 
@@ -608,7 +659,7 @@ class CreateLoadBalancerOption:
         是否启用跨VPC后端转发。开启跨VPC后端转发后，后端服务器组支持添加其他VPC、其他公有云、云下数据中心的服务器。取值： - true：开启。 - false：不开启。 [仅独享型负载均衡器支持该特性。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42,dt,dt_test) [不支持该字段，请勿使用。](tag:dt,dt_test)
 
         :param ip_target_enable: The ip_target_enable of this CreateLoadBalancerOption.
-        :type: bool
+        :type ip_target_enable: bool
         """
         self._ip_target_enable = ip_target_enable
 
@@ -630,7 +681,7 @@ class CreateLoadBalancerOption:
         是否开启删除保护。取值：false不开启，true开启。默认false不开启。 > 退场时需要先关闭所有资源的删除保护开关。  [不支持该字段，请勿使用](tag:dt,dt_test)
 
         :param deletion_protection_enable: The deletion_protection_enable of this CreateLoadBalancerOption.
-        :type: bool
+        :type deletion_protection_enable: bool
         """
         self._deletion_protection_enable = deletion_protection_enable
 
@@ -640,7 +691,7 @@ class CreateLoadBalancerOption:
 
 
         :return: The prepaid_options of this CreateLoadBalancerOption.
-        :rtype: PrepaidCreateOption
+        :rtype: :class:`huaweicloudsdkelb.v3.PrepaidCreateOption`
         """
         return self._prepaid_options
 
@@ -650,7 +701,7 @@ class CreateLoadBalancerOption:
 
 
         :param prepaid_options: The prepaid_options of this CreateLoadBalancerOption.
-        :type: PrepaidCreateOption
+        :type prepaid_options: :class:`huaweicloudsdkelb.v3.PrepaidCreateOption`
         """
         self._prepaid_options = prepaid_options
 
@@ -660,7 +711,7 @@ class CreateLoadBalancerOption:
 
 
         :return: The autoscaling of this CreateLoadBalancerOption.
-        :rtype: CreateLoadbalancerAutoscalingOption
+        :rtype: :class:`huaweicloudsdkelb.v3.CreateLoadbalancerAutoscalingOption`
         """
         return self._autoscaling
 
@@ -670,7 +721,7 @@ class CreateLoadBalancerOption:
 
 
         :param autoscaling: The autoscaling of this CreateLoadBalancerOption.
-        :type: CreateLoadbalancerAutoscalingOption
+        :type autoscaling: :class:`huaweicloudsdkelb.v3.CreateLoadbalancerAutoscalingOption`
         """
         self._autoscaling = autoscaling
 

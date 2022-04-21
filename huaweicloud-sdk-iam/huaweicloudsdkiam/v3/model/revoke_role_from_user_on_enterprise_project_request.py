@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RevokeRoleFromUserOnEnterpriseProjectRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class RevokeRoleFromUserOnEnterpriseProjectRequest:
     }
 
     def __init__(self, enterprise_project_id=None, user_id=None, role_id=None):
-        """RevokeRoleFromUserOnEnterpriseProjectRequest - a model defined in huaweicloud sdk"""
+        """RevokeRoleFromUserOnEnterpriseProjectRequest
+
+        The model defined in huaweicloud sdk
+
+        :param enterprise_project_id: 企业项目ID。
+        :type enterprise_project_id: str
+        :param user_id: 用户ID。
+        :type user_id: str
+        :param role_id: 权限ID。
+        :type role_id: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class RevokeRoleFromUserOnEnterpriseProjectRequest:
         企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this RevokeRoleFromUserOnEnterpriseProjectRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -87,7 +96,7 @@ class RevokeRoleFromUserOnEnterpriseProjectRequest:
         用户ID。
 
         :param user_id: The user_id of this RevokeRoleFromUserOnEnterpriseProjectRequest.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -109,7 +118,7 @@ class RevokeRoleFromUserOnEnterpriseProjectRequest:
         权限ID。
 
         :param role_id: The role_id of this RevokeRoleFromUserOnEnterpriseProjectRequest.
-        :type: str
+        :type role_id: str
         """
         self._role_id = role_id
 

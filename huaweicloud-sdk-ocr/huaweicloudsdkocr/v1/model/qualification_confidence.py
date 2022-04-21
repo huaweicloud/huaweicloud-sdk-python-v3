@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QualificationConfidence:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -64,7 +63,47 @@ class QualificationConfidence:
     }
 
     def __init__(self, id_number=None, assessment_date=None, certificate_number=None, file_number=None, union_card_number=None, continuing_education_info=None, sex=None, phone_number=None, registration_date=None, work_unit=None, integrity_assessment_info=None, nationality=None, name=None, address=None, driving_class=None, issuing_authority=None, birth_date=None, qualification_category_list=None):
-        """QualificationConfidence - a model defined in huaweicloud sdk"""
+        """QualificationConfidence
+
+        The model defined in huaweicloud sdk
+
+        :param id_number: 身份证号置信度。 
+        :type id_number: float
+        :param assessment_date: 考核时间置信度。 
+        :type assessment_date: float
+        :param certificate_number: 从业资格证号置信度。 
+        :type certificate_number: float
+        :param file_number: 档案号置信度。 
+        :type file_number: float
+        :param union_card_number: 福路通号置信度。 
+        :type union_card_number: float
+        :param continuing_education_info: 继续教育信息置信度。 
+        :type continuing_education_info: float
+        :param sex: 性别置信度。 
+        :type sex: float
+        :param phone_number: 联系电话置信度。 
+        :type phone_number: float
+        :param registration_date: 登记时间置信度。 
+        :type registration_date: float
+        :param work_unit: 单位置信度。 
+        :type work_unit: float
+        :param integrity_assessment_info: 诚信考核信息置信度。 
+        :type integrity_assessment_info: float
+        :param nationality: 国籍置信度。 
+        :type nationality: float
+        :param name: 姓名置信度。 
+        :type name: float
+        :param address: 住址置信度。 
+        :type address: float
+        :param driving_class: 准驾车型置信度。 
+        :type driving_class: float
+        :param issuing_authority: 发证机关置信度。 
+        :type issuing_authority: float
+        :param birth_date: 出生日期置信度。 
+        :type birth_date: float
+        :param qualification_category_list: 从业资格列表置信度。 
+        :type qualification_category_list: list[:class:`huaweicloudsdkocr.v1.QualificationCategoryConfidence`]
+        """
         
         
 
@@ -143,7 +182,7 @@ class QualificationConfidence:
         身份证号置信度。 
 
         :param id_number: The id_number of this QualificationConfidence.
-        :type: float
+        :type id_number: float
         """
         self._id_number = id_number
 
@@ -165,7 +204,7 @@ class QualificationConfidence:
         考核时间置信度。 
 
         :param assessment_date: The assessment_date of this QualificationConfidence.
-        :type: float
+        :type assessment_date: float
         """
         self._assessment_date = assessment_date
 
@@ -187,7 +226,7 @@ class QualificationConfidence:
         从业资格证号置信度。 
 
         :param certificate_number: The certificate_number of this QualificationConfidence.
-        :type: float
+        :type certificate_number: float
         """
         self._certificate_number = certificate_number
 
@@ -209,7 +248,7 @@ class QualificationConfidence:
         档案号置信度。 
 
         :param file_number: The file_number of this QualificationConfidence.
-        :type: float
+        :type file_number: float
         """
         self._file_number = file_number
 
@@ -231,7 +270,7 @@ class QualificationConfidence:
         福路通号置信度。 
 
         :param union_card_number: The union_card_number of this QualificationConfidence.
-        :type: float
+        :type union_card_number: float
         """
         self._union_card_number = union_card_number
 
@@ -253,7 +292,7 @@ class QualificationConfidence:
         继续教育信息置信度。 
 
         :param continuing_education_info: The continuing_education_info of this QualificationConfidence.
-        :type: float
+        :type continuing_education_info: float
         """
         self._continuing_education_info = continuing_education_info
 
@@ -275,7 +314,7 @@ class QualificationConfidence:
         性别置信度。 
 
         :param sex: The sex of this QualificationConfidence.
-        :type: float
+        :type sex: float
         """
         self._sex = sex
 
@@ -297,7 +336,7 @@ class QualificationConfidence:
         联系电话置信度。 
 
         :param phone_number: The phone_number of this QualificationConfidence.
-        :type: float
+        :type phone_number: float
         """
         self._phone_number = phone_number
 
@@ -319,7 +358,7 @@ class QualificationConfidence:
         登记时间置信度。 
 
         :param registration_date: The registration_date of this QualificationConfidence.
-        :type: float
+        :type registration_date: float
         """
         self._registration_date = registration_date
 
@@ -341,7 +380,7 @@ class QualificationConfidence:
         单位置信度。 
 
         :param work_unit: The work_unit of this QualificationConfidence.
-        :type: float
+        :type work_unit: float
         """
         self._work_unit = work_unit
 
@@ -363,7 +402,7 @@ class QualificationConfidence:
         诚信考核信息置信度。 
 
         :param integrity_assessment_info: The integrity_assessment_info of this QualificationConfidence.
-        :type: float
+        :type integrity_assessment_info: float
         """
         self._integrity_assessment_info = integrity_assessment_info
 
@@ -385,7 +424,7 @@ class QualificationConfidence:
         国籍置信度。 
 
         :param nationality: The nationality of this QualificationConfidence.
-        :type: float
+        :type nationality: float
         """
         self._nationality = nationality
 
@@ -407,7 +446,7 @@ class QualificationConfidence:
         姓名置信度。 
 
         :param name: The name of this QualificationConfidence.
-        :type: float
+        :type name: float
         """
         self._name = name
 
@@ -429,7 +468,7 @@ class QualificationConfidence:
         住址置信度。 
 
         :param address: The address of this QualificationConfidence.
-        :type: float
+        :type address: float
         """
         self._address = address
 
@@ -451,7 +490,7 @@ class QualificationConfidence:
         准驾车型置信度。 
 
         :param driving_class: The driving_class of this QualificationConfidence.
-        :type: float
+        :type driving_class: float
         """
         self._driving_class = driving_class
 
@@ -473,7 +512,7 @@ class QualificationConfidence:
         发证机关置信度。 
 
         :param issuing_authority: The issuing_authority of this QualificationConfidence.
-        :type: float
+        :type issuing_authority: float
         """
         self._issuing_authority = issuing_authority
 
@@ -495,7 +534,7 @@ class QualificationConfidence:
         出生日期置信度。 
 
         :param birth_date: The birth_date of this QualificationConfidence.
-        :type: float
+        :type birth_date: float
         """
         self._birth_date = birth_date
 
@@ -506,7 +545,7 @@ class QualificationConfidence:
         从业资格列表置信度。 
 
         :return: The qualification_category_list of this QualificationConfidence.
-        :rtype: list[QualificationCategoryConfidence]
+        :rtype: list[:class:`huaweicloudsdkocr.v1.QualificationCategoryConfidence`]
         """
         return self._qualification_category_list
 
@@ -517,7 +556,7 @@ class QualificationConfidence:
         从业资格列表置信度。 
 
         :param qualification_category_list: The qualification_category_list of this QualificationConfidence.
-        :type: list[QualificationCategoryConfidence]
+        :type qualification_category_list: list[:class:`huaweicloudsdkocr.v1.QualificationCategoryConfidence`]
         """
         self._qualification_category_list = qualification_category_list
 

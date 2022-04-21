@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestartClusterResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RestartClusterResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """RestartClusterResponse - a model defined in huaweicloud sdk"""
+        """RestartClusterResponse
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 重启任务的ID。
+        :type job_id: list[str]
+        """
         
         super(RestartClusterResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class RestartClusterResponse(SdkResponse):
         重启任务的ID。
 
         :param job_id: The job_id of this RestartClusterResponse.
-        :type: list[str]
+        :type job_id: list[str]
         """
         self._job_id = job_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TollInvoiceResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class TollInvoiceResult:
     }
 
     def __init__(self, code=None, number=None, entry=None, exit=None, amount=None, cashier=None, vehicle_type=None, date=None, time=None, confidence=None):
-        """TollInvoiceResult - a model defined in huaweicloud sdk"""
+        """TollInvoiceResult
+
+        The model defined in huaweicloud sdk
+
+        :param code: 发票代码。 
+        :type code: str
+        :param number: 发票号码。 
+        :type number: str
+        :param entry: 入口。 
+        :type entry: str
+        :param exit: 出口。 
+        :type exit: str
+        :param amount: 收费金额。 
+        :type amount: str
+        :param cashier: 收费员。 
+        :type cashier: str
+        :param vehicle_type: 车辆类型。 
+        :type vehicle_type: str
+        :param date: 日期。 
+        :type date: str
+        :param time: 时间。 
+        :type time: str
+        :param confidence: 相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。
+        :type confidence: object
+        """
         
         
 
@@ -103,7 +126,7 @@ class TollInvoiceResult:
         发票代码。 
 
         :param code: The code of this TollInvoiceResult.
-        :type: str
+        :type code: str
         """
         self._code = code
 
@@ -125,7 +148,7 @@ class TollInvoiceResult:
         发票号码。 
 
         :param number: The number of this TollInvoiceResult.
-        :type: str
+        :type number: str
         """
         self._number = number
 
@@ -147,7 +170,7 @@ class TollInvoiceResult:
         入口。 
 
         :param entry: The entry of this TollInvoiceResult.
-        :type: str
+        :type entry: str
         """
         self._entry = entry
 
@@ -169,7 +192,7 @@ class TollInvoiceResult:
         出口。 
 
         :param exit: The exit of this TollInvoiceResult.
-        :type: str
+        :type exit: str
         """
         self._exit = exit
 
@@ -191,7 +214,7 @@ class TollInvoiceResult:
         收费金额。 
 
         :param amount: The amount of this TollInvoiceResult.
-        :type: str
+        :type amount: str
         """
         self._amount = amount
 
@@ -213,7 +236,7 @@ class TollInvoiceResult:
         收费员。 
 
         :param cashier: The cashier of this TollInvoiceResult.
-        :type: str
+        :type cashier: str
         """
         self._cashier = cashier
 
@@ -235,7 +258,7 @@ class TollInvoiceResult:
         车辆类型。 
 
         :param vehicle_type: The vehicle_type of this TollInvoiceResult.
-        :type: str
+        :type vehicle_type: str
         """
         self._vehicle_type = vehicle_type
 
@@ -257,7 +280,7 @@ class TollInvoiceResult:
         日期。 
 
         :param date: The date of this TollInvoiceResult.
-        :type: str
+        :type date: str
         """
         self._date = date
 
@@ -279,7 +302,7 @@ class TollInvoiceResult:
         时间。 
 
         :param time: The time of this TollInvoiceResult.
-        :type: str
+        :type time: str
         """
         self._time = time
 
@@ -301,7 +324,7 @@ class TollInvoiceResult:
         相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。
 
         :param confidence: The confidence of this TollInvoiceResult.
-        :type: object
+        :type confidence: object
         """
         self._confidence = confidence
 

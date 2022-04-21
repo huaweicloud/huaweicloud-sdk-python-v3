@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BillingCreate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class BillingCreate:
     }
 
     def __init__(self, cloud_type=None, consistent_level=None, object_type=None, protect_type=None, size=None, charging_mode=None, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None, console_url=None, extra_info=None, is_multi_az=None):
-        """BillingCreate - a model defined in huaweicloud sdk"""
+        """BillingCreate
+
+        The model defined in huaweicloud sdk
+
+        :param cloud_type: 云平台，公有云或者混合云
+        :type cloud_type: str
+        :param consistent_level: 规格，崩溃一致性（crash_consistent）或应用一致性（app_consistent）
+        :type consistent_level: str
+        :param object_type: 对象类型：云服务器（server），云硬盘（disk），文件系统（turbo）。
+        :type object_type: str
+        :param protect_type: 保护类型：备份（backup）、复制(replication)
+        :type protect_type: str
+        :param size: 容量，单位GB
+        :type size: int
+        :param charging_mode: 创建模式，按需：post_paid，包周期：pre_paid，默认为post_paid
+        :type charging_mode: str
+        :param period_type: 创建类型，charging_mode为pre_paid必填，按年(year)或者按月(month)
+        :type period_type: str
+        :param period_num: 创建类型的数量，charging_mode为pre_paid必填
+        :type period_num: int
+        :param is_auto_renew: 到期后是否自动续期，默认不续期
+        :type is_auto_renew: bool
+        :param is_auto_pay: 是否自动付费，默认为不自动付费
+        :type is_auto_pay: bool
+        :param console_url: 跳转URL
+        :type console_url: str
+        :param extra_info: 
+        :type extra_info: :class:`huaweicloudsdkcbr.v1.BillbingCreateExtraInfo`
+        :param is_multi_az: 存储库多az属性，默认为false
+        :type is_multi_az: bool
+        """
         
         
 
@@ -114,7 +143,7 @@ class BillingCreate:
         云平台，公有云或者混合云
 
         :param cloud_type: The cloud_type of this BillingCreate.
-        :type: str
+        :type cloud_type: str
         """
         self._cloud_type = cloud_type
 
@@ -136,7 +165,7 @@ class BillingCreate:
         规格，崩溃一致性（crash_consistent）或应用一致性（app_consistent）
 
         :param consistent_level: The consistent_level of this BillingCreate.
-        :type: str
+        :type consistent_level: str
         """
         self._consistent_level = consistent_level
 
@@ -158,7 +187,7 @@ class BillingCreate:
         对象类型：云服务器（server），云硬盘（disk），文件系统（turbo）。
 
         :param object_type: The object_type of this BillingCreate.
-        :type: str
+        :type object_type: str
         """
         self._object_type = object_type
 
@@ -180,7 +209,7 @@ class BillingCreate:
         保护类型：备份（backup）、复制(replication)
 
         :param protect_type: The protect_type of this BillingCreate.
-        :type: str
+        :type protect_type: str
         """
         self._protect_type = protect_type
 
@@ -202,7 +231,7 @@ class BillingCreate:
         容量，单位GB
 
         :param size: The size of this BillingCreate.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -224,7 +253,7 @@ class BillingCreate:
         创建模式，按需：post_paid，包周期：pre_paid，默认为post_paid
 
         :param charging_mode: The charging_mode of this BillingCreate.
-        :type: str
+        :type charging_mode: str
         """
         self._charging_mode = charging_mode
 
@@ -246,7 +275,7 @@ class BillingCreate:
         创建类型，charging_mode为pre_paid必填，按年(year)或者按月(month)
 
         :param period_type: The period_type of this BillingCreate.
-        :type: str
+        :type period_type: str
         """
         self._period_type = period_type
 
@@ -268,7 +297,7 @@ class BillingCreate:
         创建类型的数量，charging_mode为pre_paid必填
 
         :param period_num: The period_num of this BillingCreate.
-        :type: int
+        :type period_num: int
         """
         self._period_num = period_num
 
@@ -290,7 +319,7 @@ class BillingCreate:
         到期后是否自动续期，默认不续期
 
         :param is_auto_renew: The is_auto_renew of this BillingCreate.
-        :type: bool
+        :type is_auto_renew: bool
         """
         self._is_auto_renew = is_auto_renew
 
@@ -312,7 +341,7 @@ class BillingCreate:
         是否自动付费，默认为不自动付费
 
         :param is_auto_pay: The is_auto_pay of this BillingCreate.
-        :type: bool
+        :type is_auto_pay: bool
         """
         self._is_auto_pay = is_auto_pay
 
@@ -334,7 +363,7 @@ class BillingCreate:
         跳转URL
 
         :param console_url: The console_url of this BillingCreate.
-        :type: str
+        :type console_url: str
         """
         self._console_url = console_url
 
@@ -344,7 +373,7 @@ class BillingCreate:
 
 
         :return: The extra_info of this BillingCreate.
-        :rtype: BillbingCreateExtraInfo
+        :rtype: :class:`huaweicloudsdkcbr.v1.BillbingCreateExtraInfo`
         """
         return self._extra_info
 
@@ -354,7 +383,7 @@ class BillingCreate:
 
 
         :param extra_info: The extra_info of this BillingCreate.
-        :type: BillbingCreateExtraInfo
+        :type extra_info: :class:`huaweicloudsdkcbr.v1.BillbingCreateExtraInfo`
         """
         self._extra_info = extra_info
 
@@ -376,7 +405,7 @@ class BillingCreate:
         存储库多az属性，默认为false
 
         :param is_multi_az: The is_multi_az of this BillingCreate.
-        :type: bool
+        :type is_multi_az: bool
         """
         self._is_multi_az = is_multi_az
 

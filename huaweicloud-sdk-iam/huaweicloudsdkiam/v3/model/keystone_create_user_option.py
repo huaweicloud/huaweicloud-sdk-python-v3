@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneCreateUserOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class KeystoneCreateUserOption:
     }
 
     def __init__(self, name=None, domain_id=None, password=None, enabled=None, description=None):
-        """KeystoneCreateUserOption - a model defined in huaweicloud sdk"""
+        """KeystoneCreateUserOption
+
+        The model defined in huaweicloud sdk
+
+        :param name: IAM用户名，长度5~32之间，首位不能为数字，特殊字符只能包含下划线“_”、中划线“-”和空格。
+        :type name: str
+        :param domain_id: IAM用户所属账号ID。
+        :type domain_id: str
+        :param password: IAM用户密码。 - 系统默认密码最小长度为6位字符，在6-32位之间支持用户自定义密码长度。 - 至少包含以下四种字符中的两种： 大写字母、小写字母、数字和特殊字符。 - 不能包含手机号和邮箱。 - 必须满足账户设置中密码策略的要求。
+        :type password: str
+        :param enabled: 是否启用IAM用户。true为启用，false为停用，默认为true。
+        :type enabled: bool
+        :param description: IAM用户描述信息。
+        :type description: str
+        """
         
         
 
@@ -77,7 +90,7 @@ class KeystoneCreateUserOption:
         IAM用户名，长度5~32之间，首位不能为数字，特殊字符只能包含下划线“_”、中划线“-”和空格。
 
         :param name: The name of this KeystoneCreateUserOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -99,7 +112,7 @@ class KeystoneCreateUserOption:
         IAM用户所属账号ID。
 
         :param domain_id: The domain_id of this KeystoneCreateUserOption.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -121,7 +134,7 @@ class KeystoneCreateUserOption:
         IAM用户密码。 - 系统默认密码最小长度为6位字符，在6-32位之间支持用户自定义密码长度。 - 至少包含以下四种字符中的两种： 大写字母、小写字母、数字和特殊字符。 - 不能包含手机号和邮箱。 - 必须满足账户设置中密码策略的要求。
 
         :param password: The password of this KeystoneCreateUserOption.
-        :type: str
+        :type password: str
         """
         self._password = password
 
@@ -143,7 +156,7 @@ class KeystoneCreateUserOption:
         是否启用IAM用户。true为启用，false为停用，默认为true。
 
         :param enabled: The enabled of this KeystoneCreateUserOption.
-        :type: bool
+        :type enabled: bool
         """
         self._enabled = enabled
 
@@ -165,7 +178,7 @@ class KeystoneCreateUserOption:
         IAM用户描述信息。
 
         :param description: The description of this KeystoneCreateUserOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 

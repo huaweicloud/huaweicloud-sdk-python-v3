@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSecurityGroupsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListSecurityGroupsResponse(SdkResponse):
     }
 
     def __init__(self, security_groups=None, request_id=None, page_info=None):
-        """ListSecurityGroupsResponse - a model defined in huaweicloud sdk"""
+        """ListSecurityGroupsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param security_groups: 安全组列表响应体
+        :type security_groups: list[:class:`huaweicloudsdkvpc.v3.SecurityGroup`]
+        :param request_id: 请求ID
+        :type request_id: str
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkvpc.v3.PageInfo`
+        """
         
         super(ListSecurityGroupsResponse, self).__init__()
 
@@ -57,7 +66,7 @@ class ListSecurityGroupsResponse(SdkResponse):
         安全组列表响应体
 
         :return: The security_groups of this ListSecurityGroupsResponse.
-        :rtype: list[SecurityGroup]
+        :rtype: list[:class:`huaweicloudsdkvpc.v3.SecurityGroup`]
         """
         return self._security_groups
 
@@ -68,7 +77,7 @@ class ListSecurityGroupsResponse(SdkResponse):
         安全组列表响应体
 
         :param security_groups: The security_groups of this ListSecurityGroupsResponse.
-        :type: list[SecurityGroup]
+        :type security_groups: list[:class:`huaweicloudsdkvpc.v3.SecurityGroup`]
         """
         self._security_groups = security_groups
 
@@ -90,7 +99,7 @@ class ListSecurityGroupsResponse(SdkResponse):
         请求ID
 
         :param request_id: The request_id of this ListSecurityGroupsResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 
@@ -100,7 +109,7 @@ class ListSecurityGroupsResponse(SdkResponse):
 
 
         :return: The page_info of this ListSecurityGroupsResponse.
-        :rtype: PageInfo
+        :rtype: :class:`huaweicloudsdkvpc.v3.PageInfo`
         """
         return self._page_info
 
@@ -110,7 +119,7 @@ class ListSecurityGroupsResponse(SdkResponse):
 
 
         :param page_info: The page_info of this ListSecurityGroupsResponse.
-        :type: PageInfo
+        :type page_info: :class:`huaweicloudsdkvpc.v3.PageInfo`
         """
         self._page_info = page_info
 

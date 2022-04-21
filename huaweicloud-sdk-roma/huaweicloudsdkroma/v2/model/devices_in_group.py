@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DevicesInGroup:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class DevicesInGroup:
     }
 
     def __init__(self, device_id=None, device_name=None, product_id=None, product_name=None, status=None, online_status=None):
-        """DevicesInGroup - a model defined in huaweicloud sdk"""
+        """DevicesInGroup
+
+        The model defined in huaweicloud sdk
+
+        :param device_id: 设备ID
+        :type device_id: int
+        :param device_name: 设备名称
+        :type device_name: str
+        :param product_id: 产品ID
+        :type product_id: int
+        :param product_name: 产品名称
+        :type product_name: str
+        :param status: 设备状态 0-启用 1-禁用
+        :type status: int
+        :param online_status: 是否在线 0-未连接 1-在线 2-离线
+        :type online_status: int
+        """
         
         
 
@@ -83,7 +98,7 @@ class DevicesInGroup:
         设备ID
 
         :param device_id: The device_id of this DevicesInGroup.
-        :type: int
+        :type device_id: int
         """
         self._device_id = device_id
 
@@ -105,7 +120,7 @@ class DevicesInGroup:
         设备名称
 
         :param device_name: The device_name of this DevicesInGroup.
-        :type: str
+        :type device_name: str
         """
         self._device_name = device_name
 
@@ -127,7 +142,7 @@ class DevicesInGroup:
         产品ID
 
         :param product_id: The product_id of this DevicesInGroup.
-        :type: int
+        :type product_id: int
         """
         self._product_id = product_id
 
@@ -149,7 +164,7 @@ class DevicesInGroup:
         产品名称
 
         :param product_name: The product_name of this DevicesInGroup.
-        :type: str
+        :type product_name: str
         """
         self._product_name = product_name
 
@@ -171,7 +186,7 @@ class DevicesInGroup:
         设备状态 0-启用 1-禁用
 
         :param status: The status of this DevicesInGroup.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -193,7 +208,7 @@ class DevicesInGroup:
         是否在线 0-未连接 1-在线 2-离线
 
         :param online_status: The online_status of this DevicesInGroup.
-        :type: int
+        :type online_status: int
         """
         self._online_status = online_status
 

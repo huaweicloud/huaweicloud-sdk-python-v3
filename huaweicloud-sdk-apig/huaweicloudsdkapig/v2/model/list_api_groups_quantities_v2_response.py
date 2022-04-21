@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListApiGroupsQuantitiesV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListApiGroupsQuantitiesV2Response(SdkResponse):
     }
 
     def __init__(self, offsell_nums=None, onsell_nums=None):
-        """ListApiGroupsQuantitiesV2Response - a model defined in huaweicloud sdk"""
+        """ListApiGroupsQuantitiesV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param offsell_nums: 未上架的API分组个数  暂不支持
+        :type offsell_nums: int
+        :param onsell_nums: 已上架的API分组个数
+        :type onsell_nums: int
+        """
         
         super(ListApiGroupsQuantitiesV2Response, self).__init__()
 
@@ -63,7 +70,7 @@ class ListApiGroupsQuantitiesV2Response(SdkResponse):
         未上架的API分组个数  暂不支持
 
         :param offsell_nums: The offsell_nums of this ListApiGroupsQuantitiesV2Response.
-        :type: int
+        :type offsell_nums: int
         """
         self._offsell_nums = offsell_nums
 
@@ -85,7 +92,7 @@ class ListApiGroupsQuantitiesV2Response(SdkResponse):
         已上架的API分组个数
 
         :param onsell_nums: The onsell_nums of this ListApiGroupsQuantitiesV2Response.
-        :type: int
+        :type onsell_nums: int
         """
         self._onsell_nums = onsell_nums
 

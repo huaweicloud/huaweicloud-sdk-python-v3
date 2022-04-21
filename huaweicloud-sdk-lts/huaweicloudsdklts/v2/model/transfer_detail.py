@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TransferDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -58,7 +57,41 @@ class TransferDetail:
     }
 
     def __init__(self, obs_period=None, obs_encrypted_id=None, obs_prefix_name=None, obs_period_unit=None, obs_transfer_path=None, obs_eps_id=None, obs_bucket_name=None, obs_encrypted_enable=None, obs_dir_pre_fix_name=None, dis_id=None, dis_name=None, kafka_id=None, kafka_topic=None, obs_time_zone=None, obs_time_zone_id=None):
-        """TransferDetail - a model defined in huaweicloud sdk"""
+        """TransferDetail
+
+        The model defined in huaweicloud sdk
+
+        :param obs_period: OBS转储时间
+        :type obs_period: int
+        :param obs_encrypted_id: OBS转储KMS秘钥ID。若OBS转储未加密则不返回此字段
+        :type obs_encrypted_id: str
+        :param obs_prefix_name: OBS转储日志文件前缀
+        :type obs_prefix_name: str
+        :param obs_period_unit: OBS转储单位
+        :type obs_period_unit: str
+        :param obs_transfer_path: OBS转储路径，指OBS日志桶中的路径
+        :type obs_transfer_path: str
+        :param obs_eps_id: OBS企业项目ID
+        :type obs_eps_id: str
+        :param obs_bucket_name: OBS日志桶名称
+        :type obs_bucket_name: str
+        :param obs_encrypted_enable: OBS是否开启加密。
+        :type obs_encrypted_enable: bool
+        :param obs_dir_pre_fix_name: OBS转储自定义转储路径
+        :type obs_dir_pre_fix_name: str
+        :param dis_id: DIS转储通道ID
+        :type dis_id: str
+        :param dis_name: DIS转储通道名称
+        :type dis_name: str
+        :param kafka_id: DMS转储kafka ID
+        :type kafka_id: str
+        :param kafka_topic: DMS转储kafka topic
+        :type kafka_topic: str
+        :param obs_time_zone: OBS转储时区。如果选择该参数，则必须选择obs_time_zone_id。
+        :type obs_time_zone: str
+        :param obs_time_zone_id: OBS转储时区ID。参数选择参考OBS转储时区表。如果选择该参数，则必须选择obs_time_zone。
+        :type obs_time_zone_id: str
+        """
         
         
 
@@ -125,7 +158,7 @@ class TransferDetail:
         OBS转储时间
 
         :param obs_period: The obs_period of this TransferDetail.
-        :type: int
+        :type obs_period: int
         """
         self._obs_period = obs_period
 
@@ -147,7 +180,7 @@ class TransferDetail:
         OBS转储KMS秘钥ID。若OBS转储未加密则不返回此字段
 
         :param obs_encrypted_id: The obs_encrypted_id of this TransferDetail.
-        :type: str
+        :type obs_encrypted_id: str
         """
         self._obs_encrypted_id = obs_encrypted_id
 
@@ -169,7 +202,7 @@ class TransferDetail:
         OBS转储日志文件前缀
 
         :param obs_prefix_name: The obs_prefix_name of this TransferDetail.
-        :type: str
+        :type obs_prefix_name: str
         """
         self._obs_prefix_name = obs_prefix_name
 
@@ -191,7 +224,7 @@ class TransferDetail:
         OBS转储单位
 
         :param obs_period_unit: The obs_period_unit of this TransferDetail.
-        :type: str
+        :type obs_period_unit: str
         """
         self._obs_period_unit = obs_period_unit
 
@@ -213,7 +246,7 @@ class TransferDetail:
         OBS转储路径，指OBS日志桶中的路径
 
         :param obs_transfer_path: The obs_transfer_path of this TransferDetail.
-        :type: str
+        :type obs_transfer_path: str
         """
         self._obs_transfer_path = obs_transfer_path
 
@@ -235,7 +268,7 @@ class TransferDetail:
         OBS企业项目ID
 
         :param obs_eps_id: The obs_eps_id of this TransferDetail.
-        :type: str
+        :type obs_eps_id: str
         """
         self._obs_eps_id = obs_eps_id
 
@@ -257,7 +290,7 @@ class TransferDetail:
         OBS日志桶名称
 
         :param obs_bucket_name: The obs_bucket_name of this TransferDetail.
-        :type: str
+        :type obs_bucket_name: str
         """
         self._obs_bucket_name = obs_bucket_name
 
@@ -279,7 +312,7 @@ class TransferDetail:
         OBS是否开启加密。
 
         :param obs_encrypted_enable: The obs_encrypted_enable of this TransferDetail.
-        :type: bool
+        :type obs_encrypted_enable: bool
         """
         self._obs_encrypted_enable = obs_encrypted_enable
 
@@ -301,7 +334,7 @@ class TransferDetail:
         OBS转储自定义转储路径
 
         :param obs_dir_pre_fix_name: The obs_dir_pre_fix_name of this TransferDetail.
-        :type: str
+        :type obs_dir_pre_fix_name: str
         """
         self._obs_dir_pre_fix_name = obs_dir_pre_fix_name
 
@@ -323,7 +356,7 @@ class TransferDetail:
         DIS转储通道ID
 
         :param dis_id: The dis_id of this TransferDetail.
-        :type: str
+        :type dis_id: str
         """
         self._dis_id = dis_id
 
@@ -345,7 +378,7 @@ class TransferDetail:
         DIS转储通道名称
 
         :param dis_name: The dis_name of this TransferDetail.
-        :type: str
+        :type dis_name: str
         """
         self._dis_name = dis_name
 
@@ -367,7 +400,7 @@ class TransferDetail:
         DMS转储kafka ID
 
         :param kafka_id: The kafka_id of this TransferDetail.
-        :type: str
+        :type kafka_id: str
         """
         self._kafka_id = kafka_id
 
@@ -389,7 +422,7 @@ class TransferDetail:
         DMS转储kafka topic
 
         :param kafka_topic: The kafka_topic of this TransferDetail.
-        :type: str
+        :type kafka_topic: str
         """
         self._kafka_topic = kafka_topic
 
@@ -411,7 +444,7 @@ class TransferDetail:
         OBS转储时区。如果选择该参数，则必须选择obs_time_zone_id。
 
         :param obs_time_zone: The obs_time_zone of this TransferDetail.
-        :type: str
+        :type obs_time_zone: str
         """
         self._obs_time_zone = obs_time_zone
 
@@ -433,7 +466,7 @@ class TransferDetail:
         OBS转储时区ID。参数选择参考OBS转储时区表。如果选择该参数，则必须选择obs_time_zone。
 
         :param obs_time_zone_id: The obs_time_zone_id of this TransferDetail.
-        :type: str
+        :type obs_time_zone_id: str
         """
         self._obs_time_zone_id = obs_time_zone_id
 

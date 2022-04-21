@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PushTranscriberJobsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class PushTranscriberJobsRequest:
     }
 
     def __init__(self, body=None):
-        """PushTranscriberJobsRequest - a model defined in huaweicloud sdk"""
+        """PushTranscriberJobsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the PushTranscriberJobsRequest
+        :type body: :class:`huaweicloudsdksis.v1.PostTranscriberJobs`
+        """
         
         
 
@@ -46,7 +51,7 @@ class PushTranscriberJobsRequest:
 
 
         :return: The body of this PushTranscriberJobsRequest.
-        :rtype: PostTranscriberJobs
+        :rtype: :class:`huaweicloudsdksis.v1.PostTranscriberJobs`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class PushTranscriberJobsRequest:
 
 
         :param body: The body of this PushTranscriberJobsRequest.
-        :type: PostTranscriberJobs
+        :type body: :class:`huaweicloudsdksis.v1.PostTranscriberJobs`
         """
         self._body = body
 

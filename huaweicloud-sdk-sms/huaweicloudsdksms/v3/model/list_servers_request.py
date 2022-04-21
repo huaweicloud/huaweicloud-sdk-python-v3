@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListServersRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class ListServersRequest:
     }
 
     def __init__(self, state=None, name=None, id=None, ip=None, migproject=None, limit=None, offset=None, migration_cycle=None, connected=None, enterprise_project_id=None):
-        """ListServersRequest - a model defined in huaweicloud sdk"""
+        """ListServersRequest
+
+        The model defined in huaweicloud sdk
+
+        :param state: 源端服务器状态
+        :type state: str
+        :param name: 源端服务器名称
+        :type name: str
+        :param id: 源端服务器ID
+        :type id: str
+        :param ip: 源端服务器IP地址
+        :type ip: str
+        :param migproject: 迁移项目id，填写该参数将查询迁移项目下的所有虚拟机
+        :type migproject: str
+        :param limit: 每一页记录的源端服务器数量，0表示用默认值 200
+        :type limit: int
+        :param offset: 偏移量，默认值0
+        :type offset: int
+        :param migration_cycle: 根据迁移周期查询
+        :type migration_cycle: str
+        :param connected: 查询失去连接的源端
+        :type connected: bool
+        :param enterprise_project_id: 需要查询的企业项目id
+        :type enterprise_project_id: str
+        """
         
         
 
@@ -103,7 +126,7 @@ class ListServersRequest:
         源端服务器状态
 
         :param state: The state of this ListServersRequest.
-        :type: str
+        :type state: str
         """
         self._state = state
 
@@ -125,7 +148,7 @@ class ListServersRequest:
         源端服务器名称
 
         :param name: The name of this ListServersRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -147,7 +170,7 @@ class ListServersRequest:
         源端服务器ID
 
         :param id: The id of this ListServersRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -169,7 +192,7 @@ class ListServersRequest:
         源端服务器IP地址
 
         :param ip: The ip of this ListServersRequest.
-        :type: str
+        :type ip: str
         """
         self._ip = ip
 
@@ -191,7 +214,7 @@ class ListServersRequest:
         迁移项目id，填写该参数将查询迁移项目下的所有虚拟机
 
         :param migproject: The migproject of this ListServersRequest.
-        :type: str
+        :type migproject: str
         """
         self._migproject = migproject
 
@@ -213,7 +236,7 @@ class ListServersRequest:
         每一页记录的源端服务器数量，0表示用默认值 200
 
         :param limit: The limit of this ListServersRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -235,7 +258,7 @@ class ListServersRequest:
         偏移量，默认值0
 
         :param offset: The offset of this ListServersRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -257,7 +280,7 @@ class ListServersRequest:
         根据迁移周期查询
 
         :param migration_cycle: The migration_cycle of this ListServersRequest.
-        :type: str
+        :type migration_cycle: str
         """
         self._migration_cycle = migration_cycle
 
@@ -279,7 +302,7 @@ class ListServersRequest:
         查询失去连接的源端
 
         :param connected: The connected of this ListServersRequest.
-        :type: bool
+        :type connected: bool
         """
         self._connected = connected
 
@@ -301,7 +324,7 @@ class ListServersRequest:
         需要查询的企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this ListServersRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 

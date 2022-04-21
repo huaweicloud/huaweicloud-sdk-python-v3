@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListInstancesGroupResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListInstancesGroupResult:
     }
 
     def __init__(self, id=None, status=None, volume=None, nodes=None):
-        """ListInstancesGroupResult - a model defined in huaweicloud sdk"""
+        """ListInstancesGroupResult
+
+        The model defined in huaweicloud sdk
+
+        :param id: 组ID。
+        :type id: str
+        :param status: 组状态。
+        :type status: str
+        :param volume: 
+        :type volume: :class:`huaweicloudsdkgaussdbfornosql.v3.Volume`
+        :param nodes: 节点信息。
+        :type nodes: list[:class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesNodeResult`]
+        """
         
         
 
@@ -69,7 +80,7 @@ class ListInstancesGroupResult:
         组ID。
 
         :param id: The id of this ListInstancesGroupResult.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -91,7 +102,7 @@ class ListInstancesGroupResult:
         组状态。
 
         :param status: The status of this ListInstancesGroupResult.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -101,7 +112,7 @@ class ListInstancesGroupResult:
 
 
         :return: The volume of this ListInstancesGroupResult.
-        :rtype: Volume
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.Volume`
         """
         return self._volume
 
@@ -111,7 +122,7 @@ class ListInstancesGroupResult:
 
 
         :param volume: The volume of this ListInstancesGroupResult.
-        :type: Volume
+        :type volume: :class:`huaweicloudsdkgaussdbfornosql.v3.Volume`
         """
         self._volume = volume
 
@@ -122,7 +133,7 @@ class ListInstancesGroupResult:
         节点信息。
 
         :return: The nodes of this ListInstancesGroupResult.
-        :rtype: list[ListInstancesNodeResult]
+        :rtype: list[:class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesNodeResult`]
         """
         return self._nodes
 
@@ -133,7 +144,7 @@ class ListInstancesGroupResult:
         节点信息。
 
         :param nodes: The nodes of this ListInstancesGroupResult.
-        :type: list[ListInstancesNodeResult]
+        :type nodes: list[:class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesNodeResult`]
         """
         self._nodes = nodes
 

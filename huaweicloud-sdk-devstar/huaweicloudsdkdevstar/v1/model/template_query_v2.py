@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TemplateQueryV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -60,7 +59,43 @@ class TemplateQueryV2:
     }
 
     def __init__(self, category=None, keyword=None, sort_by=None, label=None, my_templates=None, status=None, status_array=None, has_notices=None, productshorts=None, offset=None, limit=None, tag_ids=None, types=None, is_static=None, platform_source=None, tag_names=None):
-        """TemplateQueryV2 - a model defined in huaweicloud sdk"""
+        """TemplateQueryV2
+
+        The model defined in huaweicloud sdk
+
+        :param category: 模板分类数组。
+        :type category: list[str]
+        :param keyword: 搜索关键字，支持按名称和描述搜索，默认null。
+        :type keyword: str
+        :param sort_by: 排序字段和排序顺序指定。比如： - desc(created_at)：根据创建时间降序 - desc(usage_count)：根据引用次数降序 
+        :type sort_by: str
+        :param label: 标签： - all：全部 - new：最新 - hot：热门 - recommend：推荐 
+        :type label: str
+        :param my_templates: 是否查询用户自己创建的模板，默认查所有模板。
+        :type my_templates: bool
+        :param status: 查所有模板时只处理上架的；查用户模板，需支持按状态查询，状态： - 0：审核中 - 1：上架 - 2：下架 不传表示查所有的（默认） 
+        :type status: int
+        :param status_array: 模板状态数组。
+        :type status_array: list[int]
+        :param has_notices: 是否查询有消息的模板，默认查所有模板。
+        :type has_notices: bool
+        :param productshorts: 模板关联的云产品(产品短名)列表。
+        :type productshorts: list[str]
+        :param offset: 偏移量，表示从此偏移量开始查询，offset大于等于0。
+        :type offset: int
+        :param limit: 每页的模板条数。
+        :type limit: int
+        :param tag_ids: 模板关联的自定义标签列表。
+        :type tag_ids: list[str]
+        :param types: 模板类型： - 0：doc - 1：code - 2：pipeline - 3：devops 
+        :type types: list[int]
+        :param is_static: 动、静态代码模板标识： - 0：动态模板codetemplate - 1：静态模板codesample 
+        :type is_static: int
+        :param platform_source: 平台来源： - 0：codelabs - 1：devstar 
+        :type platform_source: list[int]
+        :param tag_names: 模板关联的标签名称列表。
+        :type tag_names: list[str]
+        """
         
         
 
@@ -133,7 +168,7 @@ class TemplateQueryV2:
         模板分类数组。
 
         :param category: The category of this TemplateQueryV2.
-        :type: list[str]
+        :type category: list[str]
         """
         self._category = category
 
@@ -155,7 +190,7 @@ class TemplateQueryV2:
         搜索关键字，支持按名称和描述搜索，默认null。
 
         :param keyword: The keyword of this TemplateQueryV2.
-        :type: str
+        :type keyword: str
         """
         self._keyword = keyword
 
@@ -177,7 +212,7 @@ class TemplateQueryV2:
         排序字段和排序顺序指定。比如： - desc(created_at)：根据创建时间降序 - desc(usage_count)：根据引用次数降序 
 
         :param sort_by: The sort_by of this TemplateQueryV2.
-        :type: str
+        :type sort_by: str
         """
         self._sort_by = sort_by
 
@@ -199,7 +234,7 @@ class TemplateQueryV2:
         标签： - all：全部 - new：最新 - hot：热门 - recommend：推荐 
 
         :param label: The label of this TemplateQueryV2.
-        :type: str
+        :type label: str
         """
         self._label = label
 
@@ -221,7 +256,7 @@ class TemplateQueryV2:
         是否查询用户自己创建的模板，默认查所有模板。
 
         :param my_templates: The my_templates of this TemplateQueryV2.
-        :type: bool
+        :type my_templates: bool
         """
         self._my_templates = my_templates
 
@@ -243,7 +278,7 @@ class TemplateQueryV2:
         查所有模板时只处理上架的；查用户模板，需支持按状态查询，状态： - 0：审核中 - 1：上架 - 2：下架 不传表示查所有的（默认） 
 
         :param status: The status of this TemplateQueryV2.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -265,7 +300,7 @@ class TemplateQueryV2:
         模板状态数组。
 
         :param status_array: The status_array of this TemplateQueryV2.
-        :type: list[int]
+        :type status_array: list[int]
         """
         self._status_array = status_array
 
@@ -287,7 +322,7 @@ class TemplateQueryV2:
         是否查询有消息的模板，默认查所有模板。
 
         :param has_notices: The has_notices of this TemplateQueryV2.
-        :type: bool
+        :type has_notices: bool
         """
         self._has_notices = has_notices
 
@@ -309,7 +344,7 @@ class TemplateQueryV2:
         模板关联的云产品(产品短名)列表。
 
         :param productshorts: The productshorts of this TemplateQueryV2.
-        :type: list[str]
+        :type productshorts: list[str]
         """
         self._productshorts = productshorts
 
@@ -331,7 +366,7 @@ class TemplateQueryV2:
         偏移量，表示从此偏移量开始查询，offset大于等于0。
 
         :param offset: The offset of this TemplateQueryV2.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -353,7 +388,7 @@ class TemplateQueryV2:
         每页的模板条数。
 
         :param limit: The limit of this TemplateQueryV2.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -375,7 +410,7 @@ class TemplateQueryV2:
         模板关联的自定义标签列表。
 
         :param tag_ids: The tag_ids of this TemplateQueryV2.
-        :type: list[str]
+        :type tag_ids: list[str]
         """
         self._tag_ids = tag_ids
 
@@ -397,7 +432,7 @@ class TemplateQueryV2:
         模板类型： - 0：doc - 1：code - 2：pipeline - 3：devops 
 
         :param types: The types of this TemplateQueryV2.
-        :type: list[int]
+        :type types: list[int]
         """
         self._types = types
 
@@ -419,7 +454,7 @@ class TemplateQueryV2:
         动、静态代码模板标识： - 0：动态模板codetemplate - 1：静态模板codesample 
 
         :param is_static: The is_static of this TemplateQueryV2.
-        :type: int
+        :type is_static: int
         """
         self._is_static = is_static
 
@@ -441,7 +476,7 @@ class TemplateQueryV2:
         平台来源： - 0：codelabs - 1：devstar 
 
         :param platform_source: The platform_source of this TemplateQueryV2.
-        :type: list[int]
+        :type platform_source: list[int]
         """
         self._platform_source = platform_source
 
@@ -463,7 +498,7 @@ class TemplateQueryV2:
         模板关联的标签名称列表。
 
         :param tag_names: The tag_names of this TemplateQueryV2.
-        :type: list[str]
+        :type tag_names: list[str]
         """
         self._tag_names = tag_names
 

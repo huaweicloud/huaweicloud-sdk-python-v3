@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Clusters:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Clusters:
     }
 
     def __init__(self, name=None, cluster=None):
-        """Clusters - a model defined in huaweicloud sdk"""
+        """Clusters
+
+        The model defined in huaweicloud sdk
+
+        :param name: 集群名字。 - 若不存在publicIp（虚拟机弹性IP），则集群列表的集群数量为1，该字段值为“internalCluster”。 - 若存在publicIp，则集群列表的集群数量大于1，所有扩展的cluster的name的值为“externalCluster”。 
+        :type name: str
+        :param cluster: 
+        :type cluster: :class:`huaweicloudsdkcce.v3.ClusterCert`
+        """
         
         
 
@@ -63,7 +70,7 @@ class Clusters:
         集群名字。 - 若不存在publicIp（虚拟机弹性IP），则集群列表的集群数量为1，该字段值为“internalCluster”。 - 若存在publicIp，则集群列表的集群数量大于1，所有扩展的cluster的name的值为“externalCluster”。 
 
         :param name: The name of this Clusters.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -73,7 +80,7 @@ class Clusters:
 
 
         :return: The cluster of this Clusters.
-        :rtype: ClusterCert
+        :rtype: :class:`huaweicloudsdkcce.v3.ClusterCert`
         """
         return self._cluster
 
@@ -83,7 +90,7 @@ class Clusters:
 
 
         :param cluster: The cluster of this Clusters.
-        :type: ClusterCert
+        :type cluster: :class:`huaweicloudsdkcce.v3.ClusterCert`
         """
         self._cluster = cluster
 

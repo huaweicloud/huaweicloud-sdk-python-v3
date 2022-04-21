@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApplyJudgementResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ApplyJudgementResponse(SdkResponse):
     }
 
     def __init__(self, judgement_id=None):
-        """ApplyJudgementResponse - a model defined in huaweicloud sdk"""
+        """ApplyJudgementResponse
+
+        The model defined in huaweicloud sdk
+
+        :param judgement_id: 判题任务ID
+        :type judgement_id: str
+        """
         
         super(ApplyJudgementResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class ApplyJudgementResponse(SdkResponse):
         判题任务ID
 
         :param judgement_id: The judgement_id of this ApplyJudgementResponse.
-        :type: str
+        :type judgement_id: str
         """
         self._judgement_id = judgement_id
 

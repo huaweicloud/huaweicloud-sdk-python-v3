@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchDeleteScalingConfigOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchDeleteScalingConfigOption:
     }
 
     def __init__(self, scaling_configuration_id=None):
-        """BatchDeleteScalingConfigOption - a model defined in huaweicloud sdk"""
+        """BatchDeleteScalingConfigOption
+
+        The model defined in huaweicloud sdk
+
+        :param scaling_configuration_id: 伸缩配置ID。
+        :type scaling_configuration_id: list[str]
+        """
         
         
 
@@ -57,7 +62,7 @@ class BatchDeleteScalingConfigOption:
         伸缩配置ID。
 
         :param scaling_configuration_id: The scaling_configuration_id of this BatchDeleteScalingConfigOption.
-        :type: list[str]
+        :type scaling_configuration_id: list[str]
         """
         self._scaling_configuration_id = scaling_configuration_id
 

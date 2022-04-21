@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateMaterialResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class UpdateMaterialResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateMaterialResponse - a model defined in huaweicloud sdk"""
+        """UpdateMaterialResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(UpdateMaterialResponse, self).__init__()
         self.discriminator = None

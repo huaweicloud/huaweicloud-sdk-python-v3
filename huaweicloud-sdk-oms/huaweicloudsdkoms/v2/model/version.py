@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Version:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class Version:
     }
 
     def __init__(self, id=None, links=None, status=None, updated=None):
-        """Version - a model defined in huaweicloud sdk"""
+        """Version
+
+        The model defined in huaweicloud sdk
+
+        :param id: 版本号，例如v1。
+        :type id: str
+        :param links: 链接地址信息。
+        :type links: list[:class:`huaweicloudsdkoms.v2.Link`]
+        :param status: 版本状态。  取值“CURRENT”，表示该版本为主推版本。  取值\&quot;SUPPORTED\&quot;，表示支持该版本。  取值“DEPRECATED”，表示为废弃版本，存在后续删除的可能。
+        :type status: str
+        :param updated: 版本更新时间。  格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指UTC时间。
+        :type updated: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class Version:
         版本号，例如v1。
 
         :param id: The id of this Version.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -84,7 +95,7 @@ class Version:
         链接地址信息。
 
         :return: The links of this Version.
-        :rtype: list[Link]
+        :rtype: list[:class:`huaweicloudsdkoms.v2.Link`]
         """
         return self._links
 
@@ -95,7 +106,7 @@ class Version:
         链接地址信息。
 
         :param links: The links of this Version.
-        :type: list[Link]
+        :type links: list[:class:`huaweicloudsdkoms.v2.Link`]
         """
         self._links = links
 
@@ -117,7 +128,7 @@ class Version:
         版本状态。  取值“CURRENT”，表示该版本为主推版本。  取值\"SUPPORTED\"，表示支持该版本。  取值“DEPRECATED”，表示为废弃版本，存在后续删除的可能。
 
         :param status: The status of this Version.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -139,7 +150,7 @@ class Version:
         版本更新时间。  格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指UTC时间。
 
         :param updated: The updated of this Version.
-        :type: str
+        :type updated: str
         """
         self._updated = updated
 

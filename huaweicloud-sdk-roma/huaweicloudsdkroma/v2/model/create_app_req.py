@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateAppReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class CreateAppReq:
     }
 
     def __init__(self, name=None, remark=None, key=None, secret=None, favorite=None):
-        """CreateAppReq - a model defined in huaweicloud sdk"""
+        """CreateAppReq
+
+        The model defined in huaweicloud sdk
+
+        :param name: 应用名称 - 字符集：支持中文、英文字母、数字、中划线、下划线、点、空格和中英文圆括号 - 约束：实例下唯一
+        :type name: str
+        :param remark: 应用描述
+        :type remark: str
+        :param key: 应用认证访问KEY,未提供时随机生成 - 字符集：支持中文、英文字母、数字、中划线、下划线、@号和点，以字母或中文或数字开头 - 约束：实例下唯一
+        :type key: str
+        :param secret: 应用认证访问SECRET,未提供（字段不存在或值为null）时随机生成 - 字符集：英文字母、数字、！、@、#、$、%、+、&#x3D;、点、中划线、斜线/ - 复杂度：满足大小写字母、数字、特殊字符的复杂度组合，考虑兼容性暂时可不做
+        :type secret: str
+        :param favorite: 是否收藏应用，收藏的应用会在列表里优先显示
+        :type favorite: bool
+        """
         
         
 
@@ -77,7 +90,7 @@ class CreateAppReq:
         应用名称 - 字符集：支持中文、英文字母、数字、中划线、下划线、点、空格和中英文圆括号 - 约束：实例下唯一
 
         :param name: The name of this CreateAppReq.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -99,7 +112,7 @@ class CreateAppReq:
         应用描述
 
         :param remark: The remark of this CreateAppReq.
-        :type: str
+        :type remark: str
         """
         self._remark = remark
 
@@ -121,7 +134,7 @@ class CreateAppReq:
         应用认证访问KEY,未提供时随机生成 - 字符集：支持中文、英文字母、数字、中划线、下划线、@号和点，以字母或中文或数字开头 - 约束：实例下唯一
 
         :param key: The key of this CreateAppReq.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -143,7 +156,7 @@ class CreateAppReq:
         应用认证访问SECRET,未提供（字段不存在或值为null）时随机生成 - 字符集：英文字母、数字、！、@、#、$、%、+、=、点、中划线、斜线/ - 复杂度：满足大小写字母、数字、特殊字符的复杂度组合，考虑兼容性暂时可不做
 
         :param secret: The secret of this CreateAppReq.
-        :type: str
+        :type secret: str
         """
         self._secret = secret
 
@@ -165,7 +178,7 @@ class CreateAppReq:
         是否收藏应用，收藏的应用会在列表里优先显示
 
         :param favorite: The favorite of this CreateAppReq.
-        :type: bool
+        :type favorite: bool
         """
         self._favorite = favorite
 

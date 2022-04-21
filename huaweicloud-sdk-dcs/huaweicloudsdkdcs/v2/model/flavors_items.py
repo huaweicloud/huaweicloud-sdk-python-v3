@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FlavorsItems:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -60,7 +59,43 @@ class FlavorsItems:
     }
 
     def __init__(self, spec_code=None, cloud_service_type_code=None, cloud_resource_type_code=None, cache_mode=None, engine=None, engine_version=None, product_type=None, cpu_type=None, storage_type=None, capacity=None, billing_mode=None, tenant_ip_count=None, pricing_type=None, is_dec=None, attrs=None, flavors_available_zones=None):
-        """FlavorsItems - a model defined in huaweicloud sdk"""
+        """FlavorsItems
+
+        The model defined in huaweicloud sdk
+
+        :param spec_code: 产品规格编码。
+        :type spec_code: str
+        :param cloud_service_type_code: 云服务类型编码。
+        :type cloud_service_type_code: str
+        :param cloud_resource_type_code: 云资源类型编码。
+        :type cloud_resource_type_code: str
+        :param cache_mode: 缓存实例类型。取值范围如下： - single：表示单机实例 - ha：表示主备实例 - cluster：表示cluster集群实例 - proxy：表示Proxy集群实例 - ha_rw_split： 表示读写分离实例 
+        :type cache_mode: str
+        :param engine: 缓存引擎类型。
+        :type engine: str
+        :param engine_version: 缓存版本，当缓存引擎为Redis时，取值为3.0、4.0或5.0。
+        :type engine_version: str
+        :param product_type: Redis缓存实例的产品类型。取值当前仅支持： generic：标准类型 
+        :type product_type: str
+        :param cpu_type: CPU架构类型。取值范围如下： - x86_64：X86架构 - aarch64: ARM架构 
+        :type cpu_type: str
+        :param storage_type: 存储类型，取值当前仅支持： DRAM:内存存储 
+        :type storage_type: str
+        :param capacity: 缓存容量（G Byte）。
+        :type capacity: list[str]
+        :param billing_mode: 计费模式，取值范围如下： - Hourly：按需计费 - Monthly: 包月计费 - Yearly: 包周期计费 
+        :type billing_mode: list[str]
+        :param tenant_ip_count: 租户侧IP数量。
+        :type tenant_ip_count: int
+        :param pricing_type: 定价类型，取值如下： - tier: 阶梯定价，一个规格对应多个容量 - normal: 规格和容量一一对应 
+        :type pricing_type: str
+        :param is_dec: 是否支持专属云。
+        :type is_dec: bool
+        :param attrs: 规格的其他信息。
+        :type attrs: list[:class:`huaweicloudsdkdcs.v2.AttrsObject`]
+        :param flavors_available_zones: 有资源的可用区。
+        :type flavors_available_zones: list[:class:`huaweicloudsdkdcs.v2.FlavorAzObject`]
+        """
         
         
 
@@ -133,7 +168,7 @@ class FlavorsItems:
         产品规格编码。
 
         :param spec_code: The spec_code of this FlavorsItems.
-        :type: str
+        :type spec_code: str
         """
         self._spec_code = spec_code
 
@@ -155,7 +190,7 @@ class FlavorsItems:
         云服务类型编码。
 
         :param cloud_service_type_code: The cloud_service_type_code of this FlavorsItems.
-        :type: str
+        :type cloud_service_type_code: str
         """
         self._cloud_service_type_code = cloud_service_type_code
 
@@ -177,7 +212,7 @@ class FlavorsItems:
         云资源类型编码。
 
         :param cloud_resource_type_code: The cloud_resource_type_code of this FlavorsItems.
-        :type: str
+        :type cloud_resource_type_code: str
         """
         self._cloud_resource_type_code = cloud_resource_type_code
 
@@ -199,7 +234,7 @@ class FlavorsItems:
         缓存实例类型。取值范围如下： - single：表示单机实例 - ha：表示主备实例 - cluster：表示cluster集群实例 - proxy：表示Proxy集群实例 - ha_rw_split： 表示读写分离实例 
 
         :param cache_mode: The cache_mode of this FlavorsItems.
-        :type: str
+        :type cache_mode: str
         """
         self._cache_mode = cache_mode
 
@@ -221,7 +256,7 @@ class FlavorsItems:
         缓存引擎类型。
 
         :param engine: The engine of this FlavorsItems.
-        :type: str
+        :type engine: str
         """
         self._engine = engine
 
@@ -243,7 +278,7 @@ class FlavorsItems:
         缓存版本，当缓存引擎为Redis时，取值为3.0、4.0或5.0。
 
         :param engine_version: The engine_version of this FlavorsItems.
-        :type: str
+        :type engine_version: str
         """
         self._engine_version = engine_version
 
@@ -265,7 +300,7 @@ class FlavorsItems:
         Redis缓存实例的产品类型。取值当前仅支持： generic：标准类型 
 
         :param product_type: The product_type of this FlavorsItems.
-        :type: str
+        :type product_type: str
         """
         self._product_type = product_type
 
@@ -287,7 +322,7 @@ class FlavorsItems:
         CPU架构类型。取值范围如下： - x86_64：X86架构 - aarch64: ARM架构 
 
         :param cpu_type: The cpu_type of this FlavorsItems.
-        :type: str
+        :type cpu_type: str
         """
         self._cpu_type = cpu_type
 
@@ -309,7 +344,7 @@ class FlavorsItems:
         存储类型，取值当前仅支持： DRAM:内存存储 
 
         :param storage_type: The storage_type of this FlavorsItems.
-        :type: str
+        :type storage_type: str
         """
         self._storage_type = storage_type
 
@@ -331,7 +366,7 @@ class FlavorsItems:
         缓存容量（G Byte）。
 
         :param capacity: The capacity of this FlavorsItems.
-        :type: list[str]
+        :type capacity: list[str]
         """
         self._capacity = capacity
 
@@ -353,7 +388,7 @@ class FlavorsItems:
         计费模式，取值范围如下： - Hourly：按需计费 - Monthly: 包月计费 - Yearly: 包周期计费 
 
         :param billing_mode: The billing_mode of this FlavorsItems.
-        :type: list[str]
+        :type billing_mode: list[str]
         """
         self._billing_mode = billing_mode
 
@@ -375,7 +410,7 @@ class FlavorsItems:
         租户侧IP数量。
 
         :param tenant_ip_count: The tenant_ip_count of this FlavorsItems.
-        :type: int
+        :type tenant_ip_count: int
         """
         self._tenant_ip_count = tenant_ip_count
 
@@ -397,7 +432,7 @@ class FlavorsItems:
         定价类型，取值如下： - tier: 阶梯定价，一个规格对应多个容量 - normal: 规格和容量一一对应 
 
         :param pricing_type: The pricing_type of this FlavorsItems.
-        :type: str
+        :type pricing_type: str
         """
         self._pricing_type = pricing_type
 
@@ -419,7 +454,7 @@ class FlavorsItems:
         是否支持专属云。
 
         :param is_dec: The is_dec of this FlavorsItems.
-        :type: bool
+        :type is_dec: bool
         """
         self._is_dec = is_dec
 
@@ -430,7 +465,7 @@ class FlavorsItems:
         规格的其他信息。
 
         :return: The attrs of this FlavorsItems.
-        :rtype: list[AttrsObject]
+        :rtype: list[:class:`huaweicloudsdkdcs.v2.AttrsObject`]
         """
         return self._attrs
 
@@ -441,7 +476,7 @@ class FlavorsItems:
         规格的其他信息。
 
         :param attrs: The attrs of this FlavorsItems.
-        :type: list[AttrsObject]
+        :type attrs: list[:class:`huaweicloudsdkdcs.v2.AttrsObject`]
         """
         self._attrs = attrs
 
@@ -452,7 +487,7 @@ class FlavorsItems:
         有资源的可用区。
 
         :return: The flavors_available_zones of this FlavorsItems.
-        :rtype: list[FlavorAzObject]
+        :rtype: list[:class:`huaweicloudsdkdcs.v2.FlavorAzObject`]
         """
         return self._flavors_available_zones
 
@@ -463,7 +498,7 @@ class FlavorsItems:
         有资源的可用区。
 
         :param flavors_available_zones: The flavors_available_zones of this FlavorsItems.
-        :type: list[FlavorAzObject]
+        :type flavors_available_zones: list[:class:`huaweicloudsdkdcs.v2.FlavorAzObject`]
         """
         self._flavors_available_zones = flavors_available_zones
 

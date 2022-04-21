@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FGSDeploymentJobsParam:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class FGSDeploymentJobsParam:
     }
 
     def __init__(self, file_id=None, handler=None):
-        """FGSDeploymentJobsParam - a model defined in huaweicloud sdk"""
+        """FGSDeploymentJobsParam
+
+        The model defined in huaweicloud sdk
+
+        :param file_id: 版本包id,使用历史版本包部署时需要
+        :type file_id: str
+        :param handler: 函数入口
+        :type handler: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class FGSDeploymentJobsParam:
         版本包id,使用历史版本包部署时需要
 
         :param file_id: The file_id of this FGSDeploymentJobsParam.
-        :type: str
+        :type file_id: str
         """
         self._file_id = file_id
 
@@ -85,7 +92,7 @@ class FGSDeploymentJobsParam:
         函数入口
 
         :param handler: The handler of this FGSDeploymentJobsParam.
-        :type: str
+        :type handler: str
         """
         self._handler = handler
 

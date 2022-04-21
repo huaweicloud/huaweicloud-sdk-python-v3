@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryJobsReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class QueryJobsReq:
     }
 
     def __init__(self, cur_page=None, per_page=None, db_use_type=None, engine_type=None, enterprise_project_id=None, name=None, net_type=None, service_name=None, status=None, tags=None):
-        """QueryJobsReq - a model defined in huaweicloud sdk"""
+        """QueryJobsReq
+
+        The model defined in huaweicloud sdk
+
+        :param cur_page: 第几页
+        :type cur_page: int
+        :param per_page: 每页记录数
+        :type per_page: int
+        :param db_use_type: 迁移场景，migration:实时迁移,sync:实时同步,cloudDataGuard:实时灾备
+        :type db_use_type: str
+        :param engine_type: 引擎类型,mysql：迁移，同步使用。mongodb：迁移使用。cloudDataGuard-mysql：灾备使用。
+        :type engine_type: str
+        :param enterprise_project_id: 企业项目
+        :type enterprise_project_id: str
+        :param name: name或id
+        :type name: str
+        :param net_type: 网络类型
+        :type net_type: str
+        :param service_name: 开启EPS时使用，值为eps
+        :type service_name: str
+        :param status: 状态，CREATING：创建中,CREATE_FAILED: 创建失败,CONFIGURATION: 配置中,STARTJOBING: 启动中,WAITING_FOR_START：等待启动中,START_JOB_FAILED：任务启动失败,FULL_TRANSFER_STARTED：全量迁移中 灾备场景为初始化,FULL_TRANSFER_FAILED：全量迁移失败  灾备场景为初始化失败,FULL_TRANSFER_COMPLETE：全量迁移完成 灾备场景为初始化完成,INCRE_TRANSFER_STARTED：增量迁移中 灾备场景为灾备中,INCRE_TRANSFER_FAILED：增量迁移失败 灾备场景为灾备异常,RELEASE_RESOURCE_STARTED：结束任务中,RELEASE_RESOURCE_FAILED：结束任务失败,RELEASE_RESOURCE_COMPLETE：已结束,CHANGE_JOB_STARTED：任务变更中,CHANGE_JOB_FAILED：任务变更失败,CHILD_TRANSFER_STARTING：子任务启动中,CHILD_TRANSFER_STARTED：子任务迁移中,CHILD_TRANSFER_COMPLETE：子任务迁移完成,CHILD_TRANSFER_FAILED：子任务迁移失败,RELEASE_CHILD_TRANSFER_STARTED：子任务结束中,RELEASE_CHILD_TRANSFER_COMPLETE：子任务已结束
+        :type status: str
+        :param tags: 标签
+        :type tags: dict(str, str)
+        """
         
         
 
@@ -100,7 +123,7 @@ class QueryJobsReq:
         第几页
 
         :param cur_page: The cur_page of this QueryJobsReq.
-        :type: int
+        :type cur_page: int
         """
         self._cur_page = cur_page
 
@@ -122,7 +145,7 @@ class QueryJobsReq:
         每页记录数
 
         :param per_page: The per_page of this QueryJobsReq.
-        :type: int
+        :type per_page: int
         """
         self._per_page = per_page
 
@@ -144,7 +167,7 @@ class QueryJobsReq:
         迁移场景，migration:实时迁移,sync:实时同步,cloudDataGuard:实时灾备
 
         :param db_use_type: The db_use_type of this QueryJobsReq.
-        :type: str
+        :type db_use_type: str
         """
         self._db_use_type = db_use_type
 
@@ -166,7 +189,7 @@ class QueryJobsReq:
         引擎类型,mysql：迁移，同步使用。mongodb：迁移使用。cloudDataGuard-mysql：灾备使用。
 
         :param engine_type: The engine_type of this QueryJobsReq.
-        :type: str
+        :type engine_type: str
         """
         self._engine_type = engine_type
 
@@ -188,7 +211,7 @@ class QueryJobsReq:
         企业项目
 
         :param enterprise_project_id: The enterprise_project_id of this QueryJobsReq.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -210,7 +233,7 @@ class QueryJobsReq:
         name或id
 
         :param name: The name of this QueryJobsReq.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -232,7 +255,7 @@ class QueryJobsReq:
         网络类型
 
         :param net_type: The net_type of this QueryJobsReq.
-        :type: str
+        :type net_type: str
         """
         self._net_type = net_type
 
@@ -254,7 +277,7 @@ class QueryJobsReq:
         开启EPS时使用，值为eps
 
         :param service_name: The service_name of this QueryJobsReq.
-        :type: str
+        :type service_name: str
         """
         self._service_name = service_name
 
@@ -276,7 +299,7 @@ class QueryJobsReq:
         状态，CREATING：创建中,CREATE_FAILED: 创建失败,CONFIGURATION: 配置中,STARTJOBING: 启动中,WAITING_FOR_START：等待启动中,START_JOB_FAILED：任务启动失败,FULL_TRANSFER_STARTED：全量迁移中 灾备场景为初始化,FULL_TRANSFER_FAILED：全量迁移失败  灾备场景为初始化失败,FULL_TRANSFER_COMPLETE：全量迁移完成 灾备场景为初始化完成,INCRE_TRANSFER_STARTED：增量迁移中 灾备场景为灾备中,INCRE_TRANSFER_FAILED：增量迁移失败 灾备场景为灾备异常,RELEASE_RESOURCE_STARTED：结束任务中,RELEASE_RESOURCE_FAILED：结束任务失败,RELEASE_RESOURCE_COMPLETE：已结束,CHANGE_JOB_STARTED：任务变更中,CHANGE_JOB_FAILED：任务变更失败,CHILD_TRANSFER_STARTING：子任务启动中,CHILD_TRANSFER_STARTED：子任务迁移中,CHILD_TRANSFER_COMPLETE：子任务迁移完成,CHILD_TRANSFER_FAILED：子任务迁移失败,RELEASE_CHILD_TRANSFER_STARTED：子任务结束中,RELEASE_CHILD_TRANSFER_COMPLETE：子任务已结束
 
         :param status: The status of this QueryJobsReq.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -298,7 +321,7 @@ class QueryJobsReq:
         标签
 
         :param tags: The tags of this QueryJobsReq.
-        :type: dict(str, str)
+        :type tags: dict(str, str)
         """
         self._tags = tags
 

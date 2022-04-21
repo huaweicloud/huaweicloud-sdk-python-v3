@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowServerAutoRecoveryResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowServerAutoRecoveryResponse(SdkResponse):
     }
 
     def __init__(self, support_auto_recovery=None):
-        """ShowServerAutoRecoveryResponse - a model defined in huaweicloud sdk"""
+        """ShowServerAutoRecoveryResponse
+
+        The model defined in huaweicloud sdk
+
+        :param support_auto_recovery: 云服务器是否配置了自动恢复动作。  - true：表示配置了自动恢复。 - false：表示没有配置自动恢复。
+        :type support_auto_recovery: str
+        """
         
         super(ShowServerAutoRecoveryResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class ShowServerAutoRecoveryResponse(SdkResponse):
         云服务器是否配置了自动恢复动作。  - true：表示配置了自动恢复。 - false：表示没有配置自动恢复。
 
         :param support_auto_recovery: The support_auto_recovery of this ShowServerAutoRecoveryResponse.
-        :type: str
+        :type support_auto_recovery: str
         """
         self._support_auto_recovery = support_auto_recovery
 

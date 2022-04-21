@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CdmCreateAndUpdateLinkReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CdmCreateAndUpdateLinkReq:
     }
 
     def __init__(self, links=None):
-        """CdmCreateAndUpdateLinkReq - a model defined in huaweicloud sdk"""
+        """CdmCreateAndUpdateLinkReq
+
+        The model defined in huaweicloud sdk
+
+        :param links: 连接列表，请参见links数据结构说明
+        :type links: list[:class:`huaweicloudsdkcdm.v1.Links`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class CdmCreateAndUpdateLinkReq:
         连接列表，请参见links数据结构说明
 
         :return: The links of this CdmCreateAndUpdateLinkReq.
-        :rtype: list[Links]
+        :rtype: list[:class:`huaweicloudsdkcdm.v1.Links`]
         """
         return self._links
 
@@ -57,7 +62,7 @@ class CdmCreateAndUpdateLinkReq:
         连接列表，请参见links数据结构说明
 
         :param links: The links of this CdmCreateAndUpdateLinkReq.
-        :type: list[Links]
+        :type links: list[:class:`huaweicloudsdkcdm.v1.Links`]
         """
         self._links = links
 

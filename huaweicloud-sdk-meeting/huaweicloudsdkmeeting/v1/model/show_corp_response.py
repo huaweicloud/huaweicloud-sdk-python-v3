@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowCorpResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ShowCorpResponse(SdkResponse):
     }
 
     def __init__(self, basic_info=None, admin_info=None, res_info=None, group_dto=None, id=None):
-        """ShowCorpResponse - a model defined in huaweicloud sdk"""
+        """ShowCorpResponse
+
+        The model defined in huaweicloud sdk
+
+        :param basic_info: 
+        :type basic_info: :class:`huaweicloudsdkmeeting.v1.QueryCorpBasicResultDTO`
+        :param admin_info: 
+        :type admin_info: :class:`huaweicloudsdkmeeting.v1.QueryAdminResultDTO`
+        :param res_info: 
+        :type res_info: :class:`huaweicloudsdkmeeting.v1.QueryCorpResResultDTO`
+        :param group_dto: 
+        :type group_dto: :class:`huaweicloudsdkmeeting.v1.OrgGroupDTO`
+        :param id: 企业id
+        :type id: str
+        """
         
         super(ShowCorpResponse, self).__init__()
 
@@ -66,7 +79,7 @@ class ShowCorpResponse(SdkResponse):
 
 
         :return: The basic_info of this ShowCorpResponse.
-        :rtype: QueryCorpBasicResultDTO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.QueryCorpBasicResultDTO`
         """
         return self._basic_info
 
@@ -76,7 +89,7 @@ class ShowCorpResponse(SdkResponse):
 
 
         :param basic_info: The basic_info of this ShowCorpResponse.
-        :type: QueryCorpBasicResultDTO
+        :type basic_info: :class:`huaweicloudsdkmeeting.v1.QueryCorpBasicResultDTO`
         """
         self._basic_info = basic_info
 
@@ -86,7 +99,7 @@ class ShowCorpResponse(SdkResponse):
 
 
         :return: The admin_info of this ShowCorpResponse.
-        :rtype: QueryAdminResultDTO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.QueryAdminResultDTO`
         """
         return self._admin_info
 
@@ -96,7 +109,7 @@ class ShowCorpResponse(SdkResponse):
 
 
         :param admin_info: The admin_info of this ShowCorpResponse.
-        :type: QueryAdminResultDTO
+        :type admin_info: :class:`huaweicloudsdkmeeting.v1.QueryAdminResultDTO`
         """
         self._admin_info = admin_info
 
@@ -106,7 +119,7 @@ class ShowCorpResponse(SdkResponse):
 
 
         :return: The res_info of this ShowCorpResponse.
-        :rtype: QueryCorpResResultDTO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.QueryCorpResResultDTO`
         """
         return self._res_info
 
@@ -116,7 +129,7 @@ class ShowCorpResponse(SdkResponse):
 
 
         :param res_info: The res_info of this ShowCorpResponse.
-        :type: QueryCorpResResultDTO
+        :type res_info: :class:`huaweicloudsdkmeeting.v1.QueryCorpResResultDTO`
         """
         self._res_info = res_info
 
@@ -126,7 +139,7 @@ class ShowCorpResponse(SdkResponse):
 
 
         :return: The group_dto of this ShowCorpResponse.
-        :rtype: OrgGroupDTO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.OrgGroupDTO`
         """
         return self._group_dto
 
@@ -136,7 +149,7 @@ class ShowCorpResponse(SdkResponse):
 
 
         :param group_dto: The group_dto of this ShowCorpResponse.
-        :type: OrgGroupDTO
+        :type group_dto: :class:`huaweicloudsdkmeeting.v1.OrgGroupDTO`
         """
         self._group_dto = group_dto
 
@@ -158,7 +171,7 @@ class ShowCorpResponse(SdkResponse):
         企业id
 
         :param id: The id of this ShowCorpResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneUserResultExtra:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class KeystoneUserResultExtra:
     }
 
     def __init__(self, description=None, pwd_status=None, last_project_id=None):
-        """KeystoneUserResultExtra - a model defined in huaweicloud sdk"""
+        """KeystoneUserResultExtra
+
+        The model defined in huaweicloud sdk
+
+        :param description: IAM用户描述信息。
+        :type description: str
+        :param pwd_status: IAM用户密码状态。true：需要修改密码，false：正常。
+        :type pwd_status: bool
+        :param last_project_id: IAM用户退出系统前，在控制台最后访问的项目ID。
+        :type last_project_id: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class KeystoneUserResultExtra:
         IAM用户描述信息。
 
         :param description: The description of this KeystoneUserResultExtra.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -90,7 +99,7 @@ class KeystoneUserResultExtra:
         IAM用户密码状态。true：需要修改密码，false：正常。
 
         :param pwd_status: The pwd_status of this KeystoneUserResultExtra.
-        :type: bool
+        :type pwd_status: bool
         """
         self._pwd_status = pwd_status
 
@@ -112,7 +121,7 @@ class KeystoneUserResultExtra:
         IAM用户退出系统前，在控制台最后访问的项目ID。
 
         :param last_project_id: The last_project_id of this KeystoneUserResultExtra.
-        :type: str
+        :type last_project_id: str
         """
         self._last_project_id = last_project_id
 

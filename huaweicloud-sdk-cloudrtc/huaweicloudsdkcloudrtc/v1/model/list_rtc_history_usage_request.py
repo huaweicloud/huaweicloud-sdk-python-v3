@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRtcHistoryUsageRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ListRtcHistoryUsageRequest:
     }
 
     def __init__(self, authorization=None, x_sdk_date=None, x_project_id=None, project_id=None, app=None, metric=None, start_date=None, end_date=None):
-        """ListRtcHistoryUsageRequest - a model defined in huaweicloud sdk"""
+        """ListRtcHistoryUsageRequest
+
+        The model defined in huaweicloud sdk
+
+        :param authorization: 使用AK/SK方式认证时必选，携带的鉴权信息。 
+        :type authorization: str
+        :param x_sdk_date: 使用AK/SK方式认证时必选，请求的发生时间。 
+        :type x_sdk_date: str
+        :param x_project_id: 使用AK/SK方式认证时必选，携带项目ID信息，与路径参数中的项目ID相同。 
+        :type x_project_id: str
+        :param project_id: 项目ID，获取方法请参考[获取项目ID](rtc_07_0015.xml)。 
+        :type project_id: str
+        :param app: 应用标识 
+        :type app: str
+        :param metric: 查询的数据类型 - CommunicationDuration: 音视频通话时长; - TranscodeDuration：转码时长; - RecordDuration：录制时长; 
+        :type metric: str
+        :param start_date: 查询起始时间。UTC时间，格式：YYYY-MM-DD，如2020-04-23。 
+        :type start_date: str
+        :param end_date: 查询结束时间。UTC时间，格式：YYYY-MM-DD，如2020-04-23。 
+        :type end_date: str
+        """
         
         
 
@@ -88,7 +107,7 @@ class ListRtcHistoryUsageRequest:
         使用AK/SK方式认证时必选，携带的鉴权信息。 
 
         :param authorization: The authorization of this ListRtcHistoryUsageRequest.
-        :type: str
+        :type authorization: str
         """
         self._authorization = authorization
 
@@ -110,7 +129,7 @@ class ListRtcHistoryUsageRequest:
         使用AK/SK方式认证时必选，请求的发生时间。 
 
         :param x_sdk_date: The x_sdk_date of this ListRtcHistoryUsageRequest.
-        :type: str
+        :type x_sdk_date: str
         """
         self._x_sdk_date = x_sdk_date
 
@@ -132,7 +151,7 @@ class ListRtcHistoryUsageRequest:
         使用AK/SK方式认证时必选，携带项目ID信息，与路径参数中的项目ID相同。 
 
         :param x_project_id: The x_project_id of this ListRtcHistoryUsageRequest.
-        :type: str
+        :type x_project_id: str
         """
         self._x_project_id = x_project_id
 
@@ -154,7 +173,7 @@ class ListRtcHistoryUsageRequest:
         项目ID，获取方法请参考[获取项目ID](rtc_07_0015.xml)。 
 
         :param project_id: The project_id of this ListRtcHistoryUsageRequest.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -176,7 +195,7 @@ class ListRtcHistoryUsageRequest:
         应用标识 
 
         :param app: The app of this ListRtcHistoryUsageRequest.
-        :type: str
+        :type app: str
         """
         self._app = app
 
@@ -198,7 +217,7 @@ class ListRtcHistoryUsageRequest:
         查询的数据类型 - CommunicationDuration: 音视频通话时长; - TranscodeDuration：转码时长; - RecordDuration：录制时长; 
 
         :param metric: The metric of this ListRtcHistoryUsageRequest.
-        :type: str
+        :type metric: str
         """
         self._metric = metric
 
@@ -220,7 +239,7 @@ class ListRtcHistoryUsageRequest:
         查询起始时间。UTC时间，格式：YYYY-MM-DD，如2020-04-23。 
 
         :param start_date: The start_date of this ListRtcHistoryUsageRequest.
-        :type: str
+        :type start_date: str
         """
         self._start_date = start_date
 
@@ -242,7 +261,7 @@ class ListRtcHistoryUsageRequest:
         查询结束时间。UTC时间，格式：YYYY-MM-DD，如2020-04-23。 
 
         :param end_date: The end_date of this ListRtcHistoryUsageRequest.
-        :type: str
+        :type end_date: str
         """
         self._end_date = end_date
 

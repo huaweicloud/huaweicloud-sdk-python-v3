@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDedicatedHostRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowDedicatedHostRequest:
     }
 
     def __init__(self, dedicated_host_id=None):
-        """ShowDedicatedHostRequest - a model defined in huaweicloud sdk"""
+        """ShowDedicatedHostRequest
+
+        The model defined in huaweicloud sdk
+
+        :param dedicated_host_id: 专属主机ID。  可以从专属主机控制台查询，或者通过调用查询专属主机列表API获取。
+        :type dedicated_host_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowDedicatedHostRequest:
         专属主机ID。  可以从专属主机控制台查询，或者通过调用查询专属主机列表API获取。
 
         :param dedicated_host_id: The dedicated_host_id of this ShowDedicatedHostRequest.
-        :type: str
+        :type dedicated_host_id: str
         """
         self._dedicated_host_id = dedicated_host_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TagItem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class TagItem:
     }
 
     def __init__(self, key=None, value=None):
-        """TagItem - a model defined in huaweicloud sdk"""
+        """TagItem
+
+        The model defined in huaweicloud sdk
+
+        :param key: 键。 最大长度36个unicode字符。 key不能为空。不能包含非打印字符“ASCII(0-31)”、“*”、“&lt;”、“&gt;”、“\\”、“&#x3D;”。
+        :type key: str
+        :param value: 值。 每个值最大长度43个unicode字符，可以为空字符串。 不能包含非打印字符“ASCII(0-31)”、“*”、“&lt;”、“&gt;”、“\\”、“&#x3D;”。
+        :type value: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class TagItem:
         键。 最大长度36个unicode字符。 key不能为空。不能包含非打印字符“ASCII(0-31)”、“*”、“<”、“>”、“\\”、“=”。
 
         :param key: The key of this TagItem.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -85,7 +92,7 @@ class TagItem:
         值。 每个值最大长度43个unicode字符，可以为空字符串。 不能包含非打印字符“ASCII(0-31)”、“*”、“<”、“>”、“\\”、“=”。
 
         :param value: The value of this TagItem.
-        :type: str
+        :type value: str
         """
         self._value = value
 

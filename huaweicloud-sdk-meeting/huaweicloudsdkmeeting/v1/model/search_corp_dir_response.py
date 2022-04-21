@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SearchCorpDirResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class SearchCorpDirResponse(SdkResponse):
     }
 
     def __init__(self, offset=None, limit=None, count=None, data=None):
-        """SearchCorpDirResponse - a model defined in huaweicloud sdk"""
+        """SearchCorpDirResponse
+
+        The model defined in huaweicloud sdk
+
+        :param offset: 页面起始页，从0开始
+        :type offset: int
+        :param limit: 每页显示的条目数量。 默认值：10。 
+        :type limit: int
+        :param count: 总数量。
+        :type count: int
+        :param data: 分页查询企业用户信息
+        :type data: list[:class:`huaweicloudsdkmeeting.v1.UserDTO`]
+        """
         
         super(SearchCorpDirResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class SearchCorpDirResponse(SdkResponse):
         页面起始页，从0开始
 
         :param offset: The offset of this SearchCorpDirResponse.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -95,7 +106,7 @@ class SearchCorpDirResponse(SdkResponse):
         每页显示的条目数量。 默认值：10。 
 
         :param limit: The limit of this SearchCorpDirResponse.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -117,7 +128,7 @@ class SearchCorpDirResponse(SdkResponse):
         总数量。
 
         :param count: The count of this SearchCorpDirResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -128,7 +139,7 @@ class SearchCorpDirResponse(SdkResponse):
         分页查询企业用户信息
 
         :return: The data of this SearchCorpDirResponse.
-        :rtype: list[UserDTO]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.UserDTO`]
         """
         return self._data
 
@@ -139,7 +150,7 @@ class SearchCorpDirResponse(SdkResponse):
         分页查询企业用户信息
 
         :param data: The data of this SearchCorpDirResponse.
-        :type: list[UserDTO]
+        :type data: list[:class:`huaweicloudsdkmeeting.v1.UserDTO`]
         """
         self._data = data
 

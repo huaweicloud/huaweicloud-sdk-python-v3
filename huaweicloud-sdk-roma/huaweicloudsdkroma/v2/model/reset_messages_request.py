@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResetMessagesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ResetMessagesRequest:
     }
 
     def __init__(self, instance_id=None, action_id=None, body=None):
-        """ResetMessagesRequest - a model defined in huaweicloud sdk"""
+        """ResetMessagesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param action_id: 重发类型。当前只支持“resend”。
+        :type action_id: str
+        :param body: Body of the ResetMessagesRequest
+        :type body: :class:`huaweicloudsdkroma.v2.ResetMessagesReq`
+        """
         
         
 
@@ -66,7 +75,7 @@ class ResetMessagesRequest:
         实例ID。
 
         :param instance_id: The instance_id of this ResetMessagesRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -88,7 +97,7 @@ class ResetMessagesRequest:
         重发类型。当前只支持“resend”。
 
         :param action_id: The action_id of this ResetMessagesRequest.
-        :type: str
+        :type action_id: str
         """
         self._action_id = action_id
 
@@ -98,7 +107,7 @@ class ResetMessagesRequest:
 
 
         :return: The body of this ResetMessagesRequest.
-        :rtype: ResetMessagesReq
+        :rtype: :class:`huaweicloudsdkroma.v2.ResetMessagesReq`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class ResetMessagesRequest:
 
 
         :param body: The body of this ResetMessagesRequest.
-        :type: ResetMessagesReq
+        :type body: :class:`huaweicloudsdkroma.v2.ResetMessagesReq`
         """
         self._body = body
 

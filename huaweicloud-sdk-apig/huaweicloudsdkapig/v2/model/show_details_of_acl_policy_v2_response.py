@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDetailsOfAclPolicyV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ShowDetailsOfAclPolicyV2Response(SdkResponse):
     }
 
     def __init__(self, acl_name=None, acl_type=None, acl_value=None, entity_type=None, id=None, update_time=None):
-        """ShowDetailsOfAclPolicyV2Response - a model defined in huaweicloud sdk"""
+        """ShowDetailsOfAclPolicyV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param acl_name: 名称
+        :type acl_name: str
+        :param acl_type: 类型: - PERMIT（白名单类型） - DENY（黑名单类型）
+        :type acl_type: str
+        :param acl_value: ACL策略值
+        :type acl_value: str
+        :param entity_type: 对象类型： - IP - DOMAIN
+        :type entity_type: str
+        :param id: 编号
+        :type id: str
+        :param update_time: 更新时间
+        :type update_time: datetime
+        """
         
         super(ShowDetailsOfAclPolicyV2Response, self).__init__()
 
@@ -83,7 +98,7 @@ class ShowDetailsOfAclPolicyV2Response(SdkResponse):
         名称
 
         :param acl_name: The acl_name of this ShowDetailsOfAclPolicyV2Response.
-        :type: str
+        :type acl_name: str
         """
         self._acl_name = acl_name
 
@@ -105,7 +120,7 @@ class ShowDetailsOfAclPolicyV2Response(SdkResponse):
         类型: - PERMIT（白名单类型） - DENY（黑名单类型）
 
         :param acl_type: The acl_type of this ShowDetailsOfAclPolicyV2Response.
-        :type: str
+        :type acl_type: str
         """
         self._acl_type = acl_type
 
@@ -127,7 +142,7 @@ class ShowDetailsOfAclPolicyV2Response(SdkResponse):
         ACL策略值
 
         :param acl_value: The acl_value of this ShowDetailsOfAclPolicyV2Response.
-        :type: str
+        :type acl_value: str
         """
         self._acl_value = acl_value
 
@@ -149,7 +164,7 @@ class ShowDetailsOfAclPolicyV2Response(SdkResponse):
         对象类型： - IP - DOMAIN
 
         :param entity_type: The entity_type of this ShowDetailsOfAclPolicyV2Response.
-        :type: str
+        :type entity_type: str
         """
         self._entity_type = entity_type
 
@@ -171,7 +186,7 @@ class ShowDetailsOfAclPolicyV2Response(SdkResponse):
         编号
 
         :param id: The id of this ShowDetailsOfAclPolicyV2Response.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -193,7 +208,7 @@ class ShowDetailsOfAclPolicyV2Response(SdkResponse):
         更新时间
 
         :param update_time: The update_time of this ShowDetailsOfAclPolicyV2Response.
-        :type: datetime
+        :type update_time: datetime
         """
         self._update_time = update_time
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CCECreateInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class CCECreateInfo:
     }
 
     def __init__(self, node_num=None, node_flavor=None, cce_flavor=None, init_node_pwd=None, az=None, cluster_platform_type=None):
-        """CCECreateInfo - a model defined in huaweicloud sdk"""
+        """CCECreateInfo
+
+        The model defined in huaweicloud sdk
+
+        :param node_num: 集群节点数
+        :type node_num: int
+        :param node_flavor: 集群节点规格
+        :type node_flavor: str
+        :param cce_flavor: CCE集群规格
+        :type cce_flavor: str
+        :param init_node_pwd: 节点初始密码
+        :type init_node_pwd: str
+        :param az: 可用区
+        :type az: str
+        :param cluster_platform_type: 集群CPU架构类型：X86（VirtualMachine），ARM（ARM64）
+        :type cluster_platform_type: str
+        """
         
         
 
@@ -77,7 +92,7 @@ class CCECreateInfo:
         集群节点数
 
         :param node_num: The node_num of this CCECreateInfo.
-        :type: int
+        :type node_num: int
         """
         self._node_num = node_num
 
@@ -99,7 +114,7 @@ class CCECreateInfo:
         集群节点规格
 
         :param node_flavor: The node_flavor of this CCECreateInfo.
-        :type: str
+        :type node_flavor: str
         """
         self._node_flavor = node_flavor
 
@@ -121,7 +136,7 @@ class CCECreateInfo:
         CCE集群规格
 
         :param cce_flavor: The cce_flavor of this CCECreateInfo.
-        :type: str
+        :type cce_flavor: str
         """
         self._cce_flavor = cce_flavor
 
@@ -143,7 +158,7 @@ class CCECreateInfo:
         节点初始密码
 
         :param init_node_pwd: The init_node_pwd of this CCECreateInfo.
-        :type: str
+        :type init_node_pwd: str
         """
         self._init_node_pwd = init_node_pwd
 
@@ -165,7 +180,7 @@ class CCECreateInfo:
         可用区
 
         :param az: The az of this CCECreateInfo.
-        :type: str
+        :type az: str
         """
         self._az = az
 
@@ -187,7 +202,7 @@ class CCECreateInfo:
         集群CPU架构类型：X86（VirtualMachine），ARM（ARM64）
 
         :param cluster_platform_type: The cluster_platform_type of this CCECreateInfo.
-        :type: str
+        :type cluster_platform_type: str
         """
         self._cluster_platform_type = cluster_platform_type
 

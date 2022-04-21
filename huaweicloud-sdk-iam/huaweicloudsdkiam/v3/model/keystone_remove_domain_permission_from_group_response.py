@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneRemoveDomainPermissionFromGroupResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class KeystoneRemoveDomainPermissionFromGroupResponse(SdkResponse):
     }
 
     def __init__(self):
-        """KeystoneRemoveDomainPermissionFromGroupResponse - a model defined in huaweicloud sdk"""
+        """KeystoneRemoveDomainPermissionFromGroupResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(KeystoneRemoveDomainPermissionFromGroupResponse, self).__init__()
         self.discriminator = None

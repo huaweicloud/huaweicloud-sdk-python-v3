@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAvailableRdsListResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListAvailableRdsListResponse(SdkResponse):
     }
 
     def __init__(self, instances=None, offset=None, limit=None, total=None):
-        """ListAvailableRdsListResponse - a model defined in huaweicloud sdk"""
+        """ListAvailableRdsListResponse
+
+        The model defined in huaweicloud sdk
+
+        :param instances: 获取创建逻辑库可用数据库实例信息列表的集合。
+        :type instances: list[:class:`huaweicloudsdkddm.v1.QueryAvailableRdsList`]
+        :param offset: 分页参数: 起始值。
+        :type offset: int
+        :param limit: 分页参数：每页多少条。
+        :type limit: int
+        :param total: 集合总数
+        :type total: int
+        """
         
         super(ListAvailableRdsListResponse, self).__init__()
 
@@ -62,7 +73,7 @@ class ListAvailableRdsListResponse(SdkResponse):
         获取创建逻辑库可用数据库实例信息列表的集合。
 
         :return: The instances of this ListAvailableRdsListResponse.
-        :rtype: list[QueryAvailableRdsList]
+        :rtype: list[:class:`huaweicloudsdkddm.v1.QueryAvailableRdsList`]
         """
         return self._instances
 
@@ -73,7 +84,7 @@ class ListAvailableRdsListResponse(SdkResponse):
         获取创建逻辑库可用数据库实例信息列表的集合。
 
         :param instances: The instances of this ListAvailableRdsListResponse.
-        :type: list[QueryAvailableRdsList]
+        :type instances: list[:class:`huaweicloudsdkddm.v1.QueryAvailableRdsList`]
         """
         self._instances = instances
 
@@ -95,7 +106,7 @@ class ListAvailableRdsListResponse(SdkResponse):
         分页参数: 起始值。
 
         :param offset: The offset of this ListAvailableRdsListResponse.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -117,7 +128,7 @@ class ListAvailableRdsListResponse(SdkResponse):
         分页参数：每页多少条。
 
         :param limit: The limit of this ListAvailableRdsListResponse.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -139,7 +150,7 @@ class ListAvailableRdsListResponse(SdkResponse):
         集合总数
 
         :param total: The total of this ListAvailableRdsListResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 

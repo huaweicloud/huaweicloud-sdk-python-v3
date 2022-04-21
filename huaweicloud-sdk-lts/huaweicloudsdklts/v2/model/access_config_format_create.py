@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AccessConfigFormatCreate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AccessConfigFormatCreate:
     }
 
     def __init__(self, single=None, multi=None):
-        """AccessConfigFormatCreate - a model defined in huaweicloud sdk"""
+        """AccessConfigFormatCreate
+
+        The model defined in huaweicloud sdk
+
+        :param single: 
+        :type single: :class:`huaweicloudsdklts.v2.AccessConfigFormatSingleCreate`
+        :param multi: 
+        :type multi: :class:`huaweicloudsdklts.v2.AccessConfigFormatMutilCreate`
+        """
         
         
 
@@ -51,7 +58,7 @@ class AccessConfigFormatCreate:
 
 
         :return: The single of this AccessConfigFormatCreate.
-        :rtype: AccessConfigFormatSingleCreate
+        :rtype: :class:`huaweicloudsdklts.v2.AccessConfigFormatSingleCreate`
         """
         return self._single
 
@@ -61,7 +68,7 @@ class AccessConfigFormatCreate:
 
 
         :param single: The single of this AccessConfigFormatCreate.
-        :type: AccessConfigFormatSingleCreate
+        :type single: :class:`huaweicloudsdklts.v2.AccessConfigFormatSingleCreate`
         """
         self._single = single
 
@@ -71,7 +78,7 @@ class AccessConfigFormatCreate:
 
 
         :return: The multi of this AccessConfigFormatCreate.
-        :rtype: AccessConfigFormatMutilCreate
+        :rtype: :class:`huaweicloudsdklts.v2.AccessConfigFormatMutilCreate`
         """
         return self._multi
 
@@ -81,7 +88,7 @@ class AccessConfigFormatCreate:
 
 
         :param multi: The multi of this AccessConfigFormatCreate.
-        :type: AccessConfigFormatMutilCreate
+        :type multi: :class:`huaweicloudsdklts.v2.AccessConfigFormatMutilCreate`
         """
         self._multi = multi
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OpErrorInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class OpErrorInfo:
     }
 
     def __init__(self, code=None, message=None):
-        """OpErrorInfo - a model defined in huaweicloud sdk"""
+        """OpErrorInfo
+
+        The model defined in huaweicloud sdk
+
+        :param code: 请参见[错误码](ErrorCode.xml)。
+        :type code: str
+        :param message: 错误信息
+        :type message: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class OpErrorInfo:
         请参见[错误码](ErrorCode.xml)。
 
         :param code: The code of this OpErrorInfo.
-        :type: str
+        :type code: str
         """
         self._code = code
 
@@ -85,7 +92,7 @@ class OpErrorInfo:
         错误信息
 
         :param message: The message of this OpErrorInfo.
-        :type: str
+        :type message: str
         """
         self._message = message
 

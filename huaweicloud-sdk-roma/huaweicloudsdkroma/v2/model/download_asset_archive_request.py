@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DownloadAssetArchiveRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DownloadAssetArchiveRequest:
     }
 
     def __init__(self, instance_id=None, archive_id=None):
-        """DownloadAssetArchiveRequest - a model defined in huaweicloud sdk"""
+        """DownloadAssetArchiveRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param archive_id: 作业执行成功后，查询作业进度返回的entities.archive_id字段
+        :type archive_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class DownloadAssetArchiveRequest:
         实例ID
 
         :param instance_id: The instance_id of this DownloadAssetArchiveRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -83,7 +90,7 @@ class DownloadAssetArchiveRequest:
         作业执行成功后，查询作业进度返回的entities.archive_id字段
 
         :param archive_id: The archive_id of this DownloadAssetArchiveRequest.
-        :type: str
+        :type archive_id: str
         """
         self._archive_id = archive_id
 

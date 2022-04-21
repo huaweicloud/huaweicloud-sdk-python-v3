@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateNotificationResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class UpdateNotificationResponse(SdkResponse):
     }
 
     def __init__(self, notification_name=None, operation_type=None, operations=None, notify_user_list=None, status=None, topic_id=None, notification_id=None, notification_type=None, project_id=None, create_time=None):
-        """UpdateNotificationResponse - a model defined in huaweicloud sdk"""
+        """UpdateNotificationResponse
+
+        The model defined in huaweicloud sdk
+
+        :param notification_name: 标识关键操作名称。
+        :type notification_name: str
+        :param operation_type: 标识操作类型。 目前支持的操作类型有完整类型(complete)和自定义类型(customized)。 完整类型下，CTS发送通知的对象为已对接服务的所有事件。 自定义类型下，CTS发送通知的对象是在operations列表中指定的事件。
+        :type operation_type: str
+        :param operations: 操作事件列表。
+        :type operations: list[:class:`huaweicloudsdkcts.v3.Operations`]
+        :param notify_user_list: 通知用户列表，目前最多支持对10个用户组和50个用户发起的操作进行配置。
+        :type notify_user_list: list[:class:`huaweicloudsdkcts.v3.NotificationUsers`]
+        :param status: 标识关键操作通知状态，包括正常(enabled)，停止(disabled)两种状态。
+        :type status: str
+        :param topic_id: 消息通知服务的topic_urn或者函数工作流的func_urn。 - 消息通知服务的topic_urn可以通过消息通知服务的查询主题列表API获取，示例：urn:smn:regionId:f96188c7ccaf4ffba0c9aa149ab2bd57:test_topic_v2。 - 函数工作流的func_urn可以通过函数工作流的获取函数列表API获取，示例：urn:fss:xxxxxxxxx:7aad83af3e8d42e99ac194e8419e2c9b:function:default:test。
+        :type topic_id: str
+        :param notification_id: 关键操作通知的唯一标识。
+        :type notification_id: str
+        :param notification_type: 关键操作通知类型，根据topic_id区分为消息通知服务(smn)和函数工作流(fun)。
+        :type notification_type: str
+        :param project_id: 项目ID。
+        :type project_id: str
+        :param create_time: 关键操作通知创建时间戳。
+        :type create_time: int
+        """
         
         super(UpdateNotificationResponse, self).__init__()
 
@@ -103,7 +126,7 @@ class UpdateNotificationResponse(SdkResponse):
         标识关键操作名称。
 
         :param notification_name: The notification_name of this UpdateNotificationResponse.
-        :type: str
+        :type notification_name: str
         """
         self._notification_name = notification_name
 
@@ -125,7 +148,7 @@ class UpdateNotificationResponse(SdkResponse):
         标识操作类型。 目前支持的操作类型有完整类型(complete)和自定义类型(customized)。 完整类型下，CTS发送通知的对象为已对接服务的所有事件。 自定义类型下，CTS发送通知的对象是在operations列表中指定的事件。
 
         :param operation_type: The operation_type of this UpdateNotificationResponse.
-        :type: str
+        :type operation_type: str
         """
         self._operation_type = operation_type
 
@@ -136,7 +159,7 @@ class UpdateNotificationResponse(SdkResponse):
         操作事件列表。
 
         :return: The operations of this UpdateNotificationResponse.
-        :rtype: list[Operations]
+        :rtype: list[:class:`huaweicloudsdkcts.v3.Operations`]
         """
         return self._operations
 
@@ -147,7 +170,7 @@ class UpdateNotificationResponse(SdkResponse):
         操作事件列表。
 
         :param operations: The operations of this UpdateNotificationResponse.
-        :type: list[Operations]
+        :type operations: list[:class:`huaweicloudsdkcts.v3.Operations`]
         """
         self._operations = operations
 
@@ -158,7 +181,7 @@ class UpdateNotificationResponse(SdkResponse):
         通知用户列表，目前最多支持对10个用户组和50个用户发起的操作进行配置。
 
         :return: The notify_user_list of this UpdateNotificationResponse.
-        :rtype: list[NotificationUsers]
+        :rtype: list[:class:`huaweicloudsdkcts.v3.NotificationUsers`]
         """
         return self._notify_user_list
 
@@ -169,7 +192,7 @@ class UpdateNotificationResponse(SdkResponse):
         通知用户列表，目前最多支持对10个用户组和50个用户发起的操作进行配置。
 
         :param notify_user_list: The notify_user_list of this UpdateNotificationResponse.
-        :type: list[NotificationUsers]
+        :type notify_user_list: list[:class:`huaweicloudsdkcts.v3.NotificationUsers`]
         """
         self._notify_user_list = notify_user_list
 
@@ -191,7 +214,7 @@ class UpdateNotificationResponse(SdkResponse):
         标识关键操作通知状态，包括正常(enabled)，停止(disabled)两种状态。
 
         :param status: The status of this UpdateNotificationResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -213,7 +236,7 @@ class UpdateNotificationResponse(SdkResponse):
         消息通知服务的topic_urn或者函数工作流的func_urn。 - 消息通知服务的topic_urn可以通过消息通知服务的查询主题列表API获取，示例：urn:smn:regionId:f96188c7ccaf4ffba0c9aa149ab2bd57:test_topic_v2。 - 函数工作流的func_urn可以通过函数工作流的获取函数列表API获取，示例：urn:fss:xxxxxxxxx:7aad83af3e8d42e99ac194e8419e2c9b:function:default:test。
 
         :param topic_id: The topic_id of this UpdateNotificationResponse.
-        :type: str
+        :type topic_id: str
         """
         self._topic_id = topic_id
 
@@ -235,7 +258,7 @@ class UpdateNotificationResponse(SdkResponse):
         关键操作通知的唯一标识。
 
         :param notification_id: The notification_id of this UpdateNotificationResponse.
-        :type: str
+        :type notification_id: str
         """
         self._notification_id = notification_id
 
@@ -257,7 +280,7 @@ class UpdateNotificationResponse(SdkResponse):
         关键操作通知类型，根据topic_id区分为消息通知服务(smn)和函数工作流(fun)。
 
         :param notification_type: The notification_type of this UpdateNotificationResponse.
-        :type: str
+        :type notification_type: str
         """
         self._notification_type = notification_type
 
@@ -279,7 +302,7 @@ class UpdateNotificationResponse(SdkResponse):
         项目ID。
 
         :param project_id: The project_id of this UpdateNotificationResponse.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -301,7 +324,7 @@ class UpdateNotificationResponse(SdkResponse):
         关键操作通知创建时间戳。
 
         :param create_time: The create_time of this UpdateNotificationResponse.
-        :type: int
+        :type create_time: int
         """
         self._create_time = create_time
 

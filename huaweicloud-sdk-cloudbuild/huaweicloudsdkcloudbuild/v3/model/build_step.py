@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BuildStep:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class BuildStep:
     }
 
     def __init__(self, name=None, status=None, build_time=None):
-        """BuildStep - a model defined in huaweicloud sdk"""
+        """BuildStep
+
+        The model defined in huaweicloud sdk
+
+        :param name: 步骤名称
+        :type name: str
+        :param status: 步骤状态,可选值（running运行中，success成功，error失败，未运行为空字符串）
+        :type status: str
+        :param build_time: 步骤执行时长，单位ms
+        :type build_time: int
+        """
         
         
 
@@ -68,7 +77,7 @@ class BuildStep:
         步骤名称
 
         :param name: The name of this BuildStep.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -90,7 +99,7 @@ class BuildStep:
         步骤状态,可选值（running运行中，success成功，error失败，未运行为空字符串）
 
         :param status: The status of this BuildStep.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -112,7 +121,7 @@ class BuildStep:
         步骤执行时长，单位ms
 
         :param build_time: The build_time of this BuildStep.
-        :type: int
+        :type build_time: int
         """
         self._build_time = build_time
 

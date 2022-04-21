@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FeatureInfoV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class FeatureInfoV2:
     }
 
     def __init__(self, id=None, name=None, enable=None, config=None, instance_id=None, update_time=None):
-        """FeatureInfoV2 - a model defined in huaweicloud sdk"""
+        """FeatureInfoV2
+
+        The model defined in huaweicloud sdk
+
+        :param id: 特性编号
+        :type id: str
+        :param name: 特性名称
+        :type name: str
+        :param enable: 是否开启特性
+        :type enable: bool
+        :param config: 特性参数配置
+        :type config: str
+        :param instance_id: 实例编号
+        :type instance_id: str
+        :param update_time: 实例特性更新时间
+        :type update_time: datetime
+        """
         
         
 
@@ -83,7 +98,7 @@ class FeatureInfoV2:
         特性编号
 
         :param id: The id of this FeatureInfoV2.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -105,7 +120,7 @@ class FeatureInfoV2:
         特性名称
 
         :param name: The name of this FeatureInfoV2.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -127,7 +142,7 @@ class FeatureInfoV2:
         是否开启特性
 
         :param enable: The enable of this FeatureInfoV2.
-        :type: bool
+        :type enable: bool
         """
         self._enable = enable
 
@@ -149,7 +164,7 @@ class FeatureInfoV2:
         特性参数配置
 
         :param config: The config of this FeatureInfoV2.
-        :type: str
+        :type config: str
         """
         self._config = config
 
@@ -171,7 +186,7 @@ class FeatureInfoV2:
         实例编号
 
         :param instance_id: The instance_id of this FeatureInfoV2.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -193,7 +208,7 @@ class FeatureInfoV2:
         实例特性更新时间
 
         :param update_time: The update_time of this FeatureInfoV2.
-        :type: datetime
+        :type update_time: datetime
         """
         self._update_time = update_time
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListVpcsByTagsRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListVpcsByTagsRequestBody:
     }
 
     def __init__(self, action=None, limit=None, offset=None, matches=None, tags=None):
-        """ListVpcsByTagsRequestBody - a model defined in huaweicloud sdk"""
+        """ListVpcsByTagsRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param action: 功能说明：操作标识 取值范围：filter(过滤)，count(查询总条数)
+        :type action: str
+        :param limit: 功能说明：查询记录数 取值范围：1-1000 约束：action为count时此参数不生效；action为filter时默认为1000
+        :type limit: int
+        :param offset: 功能说明：索引位置， 从offset指定的下一条数据开始查询。 查询第一页数据时，不需要传入此参数，查询后续页码数据时，将查询前一页数据时响应体中的值带入此参数 约束：action为count时无此参数；action为filter时默认为0；必须为数字，不能为负数
+        :type offset: int
+        :param matches: 功能说明：搜索字段，key为要匹配的字段，value为匹配的值 约束：当前仅支持resource_name
+        :type matches: list[:class:`huaweicloudsdkvpc.v2.Match`]
+        :param tags: 包含标签，最多包含10个key，每个key下面的value最多10个，结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复
+        :type tags: list[:class:`huaweicloudsdkvpc.v2.ListTag`]
+        """
         
         
 
@@ -77,7 +90,7 @@ class ListVpcsByTagsRequestBody:
         功能说明：操作标识 取值范围：filter(过滤)，count(查询总条数)
 
         :param action: The action of this ListVpcsByTagsRequestBody.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -99,7 +112,7 @@ class ListVpcsByTagsRequestBody:
         功能说明：查询记录数 取值范围：1-1000 约束：action为count时此参数不生效；action为filter时默认为1000
 
         :param limit: The limit of this ListVpcsByTagsRequestBody.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -121,7 +134,7 @@ class ListVpcsByTagsRequestBody:
         功能说明：索引位置， 从offset指定的下一条数据开始查询。 查询第一页数据时，不需要传入此参数，查询后续页码数据时，将查询前一页数据时响应体中的值带入此参数 约束：action为count时无此参数；action为filter时默认为0；必须为数字，不能为负数
 
         :param offset: The offset of this ListVpcsByTagsRequestBody.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -132,7 +145,7 @@ class ListVpcsByTagsRequestBody:
         功能说明：搜索字段，key为要匹配的字段，value为匹配的值 约束：当前仅支持resource_name
 
         :return: The matches of this ListVpcsByTagsRequestBody.
-        :rtype: list[Match]
+        :rtype: list[:class:`huaweicloudsdkvpc.v2.Match`]
         """
         return self._matches
 
@@ -143,7 +156,7 @@ class ListVpcsByTagsRequestBody:
         功能说明：搜索字段，key为要匹配的字段，value为匹配的值 约束：当前仅支持resource_name
 
         :param matches: The matches of this ListVpcsByTagsRequestBody.
-        :type: list[Match]
+        :type matches: list[:class:`huaweicloudsdkvpc.v2.Match`]
         """
         self._matches = matches
 
@@ -154,7 +167,7 @@ class ListVpcsByTagsRequestBody:
         包含标签，最多包含10个key，每个key下面的value最多10个，结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复
 
         :return: The tags of this ListVpcsByTagsRequestBody.
-        :rtype: list[ListTag]
+        :rtype: list[:class:`huaweicloudsdkvpc.v2.ListTag`]
         """
         return self._tags
 
@@ -165,7 +178,7 @@ class ListVpcsByTagsRequestBody:
         包含标签，最多包含10个key，每个key下面的value最多10个，结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复
 
         :param tags: The tags of this ListVpcsByTagsRequestBody.
-        :type: list[ListTag]
+        :type tags: list[:class:`huaweicloudsdkvpc.v2.ListTag`]
         """
         self._tags = tags
 

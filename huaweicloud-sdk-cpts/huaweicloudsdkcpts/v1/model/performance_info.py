@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PerformanceInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -148,7 +147,131 @@ class PerformanceInfo:
     }
 
     def __init__(self, average_resp_time=None, avg_network_traffic=None, avg_rec_bytes=None, avg_sent_bytes=None, avg_tran_resp_time=None, case_uri=None, create_time=None, current_thread_num=None, detail_id=None, end_time=None, error_count=None, error_events_count=None, failed_assert=None, failed_others=None, failed_parsed=None, failed_refused=None, failed_timeout=None, id=None, is_aw=None, max=None, max_network_traffic=None, max_rec_bytes=None, max_resp_time=None, max_sent_bytes=None, max_tran_resp_time=None, min=None, min_network_traffic=None, name=None, requests=None, result=None, start_time=None, status=None, success_count=None, success_rate=None, sum1xx=None, sum2xx=None, sum3xx=None, sum4xx=None, sum5xx=None, task_id=None, task_project_id=None, task_status=None, test_case_uri=None, tp50=None, tp75=None, tp90=None, tp95=None, tp99=None, tp999=None, tp9999=None, tps=None, tran_tps=None, transaction_id=None, transaction_success=None, transactional_success_rate=None, transactional_tps=None, transactional_tps_success=None, transactions=None, update_time=None, vum=None):
-        """PerformanceInfo - a model defined in huaweicloud sdk"""
+        """PerformanceInfo
+
+        The model defined in huaweicloud sdk
+
+        :param average_resp_time: 平均响应时间
+        :type average_resp_time: float
+        :param avg_network_traffic: 平均带宽
+        :type avg_network_traffic: float
+        :param avg_rec_bytes: 平均下行带宽
+        :type avg_rec_bytes: float
+        :param avg_sent_bytes: 平均上行带宽
+        :type avg_sent_bytes: float
+        :param avg_tran_resp_time: 事务平均响应时间
+        :type avg_tran_resp_time: float
+        :param case_uri: 用例Uri
+        :type case_uri: str
+        :param create_time: 创建时间
+        :type create_time: str
+        :param current_thread_num: 最大并发数
+        :type current_thread_num: float
+        :param detail_id: 详情id
+        :type detail_id: str
+        :param end_time: 结束时间
+        :type end_time: str
+        :param error_count: 失败请求数
+        :type error_count: float
+        :param error_events_count: ERROR级别的事件个数
+        :type error_events_count: float
+        :param failed_assert: 断言失败
+        :type failed_assert: float
+        :param failed_others: 其他失败
+        :type failed_others: float
+        :param failed_parsed: 解析失败
+        :type failed_parsed: float
+        :param failed_refused: 连接被拒
+        :type failed_refused: float
+        :param failed_timeout: 超时失败
+        :type failed_timeout: float
+        :param id: id
+        :type id: str
+        :param is_aw: 是否aw
+        :type is_aw: bool
+        :param max: 最大响应时间
+        :type max: float
+        :param max_network_traffic: 最大带宽
+        :type max_network_traffic: float
+        :param max_rec_bytes: 最大接收字节数
+        :type max_rec_bytes: float
+        :param max_resp_time: 探底结果：响应时间
+        :type max_resp_time: float
+        :param max_sent_bytes: 最大发送带宽
+        :type max_sent_bytes: float
+        :param max_tran_resp_time: 事务最大响应时间
+        :type max_tran_resp_time: float
+        :param min: 最小响应时间
+        :type min: float
+        :param min_network_traffic: 最小带宽
+        :type min_network_traffic: float
+        :param name: 名称
+        :type name: str
+        :param requests: 请求数
+        :type requests: float
+        :param result: 用例/aw的执行结果
+        :type result: float
+        :param start_time: 开始时间
+        :type start_time: str
+        :param status: 用例状态
+        :type status: float
+        :param success_count: 成功数
+        :type success_count: float
+        :param success_rate: 成功率
+        :type success_rate: float
+        :param sum1xx: 1xx响应码计数
+        :type sum1xx: float
+        :param sum2xx: 2xx响应码计数
+        :type sum2xx: float
+        :param sum3xx: 3xx响应码计数
+        :type sum3xx: float
+        :param sum4xx: 4xx响应码计数
+        :type sum4xx: float
+        :param sum5xx: 5xx响应码计数
+        :type sum5xx: float
+        :param task_id: 任务id_轮次
+        :type task_id: str
+        :param task_project_id: 任务id
+        :type task_project_id: str
+        :param task_status: 任务状态
+        :type task_status: float
+        :param test_case_uri: 用例uri
+        :type test_case_uri: str
+        :param tp50: tp50
+        :type tp50: float
+        :param tp75: tp75
+        :type tp75: float
+        :param tp90: tp90
+        :type tp90: float
+        :param tp95: tp95
+        :type tp95: float
+        :param tp99: tp99
+        :type tp99: float
+        :param tp999: tp999
+        :type tp999: float
+        :param tp9999: tp9999
+        :type tp9999: float
+        :param tps: tps
+        :type tps: float
+        :param tran_tps: 事务TPS
+        :type tran_tps: float
+        :param transaction_id: 事务id
+        :type transaction_id: str
+        :param transaction_success: 成功事务数
+        :type transaction_success: float
+        :param transactional_success_rate: 事务成功率
+        :type transactional_success_rate: float
+        :param transactional_tps: 自定义事务tps
+        :type transactional_tps: float
+        :param transactional_tps_success: 自定义事务成功率
+        :type transactional_tps_success: float
+        :param transactions: 事务数
+        :type transactions: float
+        :param update_time: 更新时间
+        :type update_time: str
+        :param vum: 分钟数*并发数
+        :type vum: float
+        """
         
         
 
@@ -353,7 +476,7 @@ class PerformanceInfo:
         平均响应时间
 
         :param average_resp_time: The average_resp_time of this PerformanceInfo.
-        :type: float
+        :type average_resp_time: float
         """
         self._average_resp_time = average_resp_time
 
@@ -375,7 +498,7 @@ class PerformanceInfo:
         平均带宽
 
         :param avg_network_traffic: The avg_network_traffic of this PerformanceInfo.
-        :type: float
+        :type avg_network_traffic: float
         """
         self._avg_network_traffic = avg_network_traffic
 
@@ -397,7 +520,7 @@ class PerformanceInfo:
         平均下行带宽
 
         :param avg_rec_bytes: The avg_rec_bytes of this PerformanceInfo.
-        :type: float
+        :type avg_rec_bytes: float
         """
         self._avg_rec_bytes = avg_rec_bytes
 
@@ -419,7 +542,7 @@ class PerformanceInfo:
         平均上行带宽
 
         :param avg_sent_bytes: The avg_sent_bytes of this PerformanceInfo.
-        :type: float
+        :type avg_sent_bytes: float
         """
         self._avg_sent_bytes = avg_sent_bytes
 
@@ -441,7 +564,7 @@ class PerformanceInfo:
         事务平均响应时间
 
         :param avg_tran_resp_time: The avg_tran_resp_time of this PerformanceInfo.
-        :type: float
+        :type avg_tran_resp_time: float
         """
         self._avg_tran_resp_time = avg_tran_resp_time
 
@@ -463,7 +586,7 @@ class PerformanceInfo:
         用例Uri
 
         :param case_uri: The case_uri of this PerformanceInfo.
-        :type: str
+        :type case_uri: str
         """
         self._case_uri = case_uri
 
@@ -485,7 +608,7 @@ class PerformanceInfo:
         创建时间
 
         :param create_time: The create_time of this PerformanceInfo.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -507,7 +630,7 @@ class PerformanceInfo:
         最大并发数
 
         :param current_thread_num: The current_thread_num of this PerformanceInfo.
-        :type: float
+        :type current_thread_num: float
         """
         self._current_thread_num = current_thread_num
 
@@ -529,7 +652,7 @@ class PerformanceInfo:
         详情id
 
         :param detail_id: The detail_id of this PerformanceInfo.
-        :type: str
+        :type detail_id: str
         """
         self._detail_id = detail_id
 
@@ -551,7 +674,7 @@ class PerformanceInfo:
         结束时间
 
         :param end_time: The end_time of this PerformanceInfo.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -573,7 +696,7 @@ class PerformanceInfo:
         失败请求数
 
         :param error_count: The error_count of this PerformanceInfo.
-        :type: float
+        :type error_count: float
         """
         self._error_count = error_count
 
@@ -595,7 +718,7 @@ class PerformanceInfo:
         ERROR级别的事件个数
 
         :param error_events_count: The error_events_count of this PerformanceInfo.
-        :type: float
+        :type error_events_count: float
         """
         self._error_events_count = error_events_count
 
@@ -617,7 +740,7 @@ class PerformanceInfo:
         断言失败
 
         :param failed_assert: The failed_assert of this PerformanceInfo.
-        :type: float
+        :type failed_assert: float
         """
         self._failed_assert = failed_assert
 
@@ -639,7 +762,7 @@ class PerformanceInfo:
         其他失败
 
         :param failed_others: The failed_others of this PerformanceInfo.
-        :type: float
+        :type failed_others: float
         """
         self._failed_others = failed_others
 
@@ -661,7 +784,7 @@ class PerformanceInfo:
         解析失败
 
         :param failed_parsed: The failed_parsed of this PerformanceInfo.
-        :type: float
+        :type failed_parsed: float
         """
         self._failed_parsed = failed_parsed
 
@@ -683,7 +806,7 @@ class PerformanceInfo:
         连接被拒
 
         :param failed_refused: The failed_refused of this PerformanceInfo.
-        :type: float
+        :type failed_refused: float
         """
         self._failed_refused = failed_refused
 
@@ -705,7 +828,7 @@ class PerformanceInfo:
         超时失败
 
         :param failed_timeout: The failed_timeout of this PerformanceInfo.
-        :type: float
+        :type failed_timeout: float
         """
         self._failed_timeout = failed_timeout
 
@@ -727,7 +850,7 @@ class PerformanceInfo:
         id
 
         :param id: The id of this PerformanceInfo.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -749,7 +872,7 @@ class PerformanceInfo:
         是否aw
 
         :param is_aw: The is_aw of this PerformanceInfo.
-        :type: bool
+        :type is_aw: bool
         """
         self._is_aw = is_aw
 
@@ -771,7 +894,7 @@ class PerformanceInfo:
         最大响应时间
 
         :param max: The max of this PerformanceInfo.
-        :type: float
+        :type max: float
         """
         self._max = max
 
@@ -793,7 +916,7 @@ class PerformanceInfo:
         最大带宽
 
         :param max_network_traffic: The max_network_traffic of this PerformanceInfo.
-        :type: float
+        :type max_network_traffic: float
         """
         self._max_network_traffic = max_network_traffic
 
@@ -815,7 +938,7 @@ class PerformanceInfo:
         最大接收字节数
 
         :param max_rec_bytes: The max_rec_bytes of this PerformanceInfo.
-        :type: float
+        :type max_rec_bytes: float
         """
         self._max_rec_bytes = max_rec_bytes
 
@@ -837,7 +960,7 @@ class PerformanceInfo:
         探底结果：响应时间
 
         :param max_resp_time: The max_resp_time of this PerformanceInfo.
-        :type: float
+        :type max_resp_time: float
         """
         self._max_resp_time = max_resp_time
 
@@ -859,7 +982,7 @@ class PerformanceInfo:
         最大发送带宽
 
         :param max_sent_bytes: The max_sent_bytes of this PerformanceInfo.
-        :type: float
+        :type max_sent_bytes: float
         """
         self._max_sent_bytes = max_sent_bytes
 
@@ -881,7 +1004,7 @@ class PerformanceInfo:
         事务最大响应时间
 
         :param max_tran_resp_time: The max_tran_resp_time of this PerformanceInfo.
-        :type: float
+        :type max_tran_resp_time: float
         """
         self._max_tran_resp_time = max_tran_resp_time
 
@@ -903,7 +1026,7 @@ class PerformanceInfo:
         最小响应时间
 
         :param min: The min of this PerformanceInfo.
-        :type: float
+        :type min: float
         """
         self._min = min
 
@@ -925,7 +1048,7 @@ class PerformanceInfo:
         最小带宽
 
         :param min_network_traffic: The min_network_traffic of this PerformanceInfo.
-        :type: float
+        :type min_network_traffic: float
         """
         self._min_network_traffic = min_network_traffic
 
@@ -947,7 +1070,7 @@ class PerformanceInfo:
         名称
 
         :param name: The name of this PerformanceInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -969,7 +1092,7 @@ class PerformanceInfo:
         请求数
 
         :param requests: The requests of this PerformanceInfo.
-        :type: float
+        :type requests: float
         """
         self._requests = requests
 
@@ -991,7 +1114,7 @@ class PerformanceInfo:
         用例/aw的执行结果
 
         :param result: The result of this PerformanceInfo.
-        :type: float
+        :type result: float
         """
         self._result = result
 
@@ -1013,7 +1136,7 @@ class PerformanceInfo:
         开始时间
 
         :param start_time: The start_time of this PerformanceInfo.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -1035,7 +1158,7 @@ class PerformanceInfo:
         用例状态
 
         :param status: The status of this PerformanceInfo.
-        :type: float
+        :type status: float
         """
         self._status = status
 
@@ -1057,7 +1180,7 @@ class PerformanceInfo:
         成功数
 
         :param success_count: The success_count of this PerformanceInfo.
-        :type: float
+        :type success_count: float
         """
         self._success_count = success_count
 
@@ -1079,7 +1202,7 @@ class PerformanceInfo:
         成功率
 
         :param success_rate: The success_rate of this PerformanceInfo.
-        :type: float
+        :type success_rate: float
         """
         self._success_rate = success_rate
 
@@ -1101,7 +1224,7 @@ class PerformanceInfo:
         1xx响应码计数
 
         :param sum1xx: The sum1xx of this PerformanceInfo.
-        :type: float
+        :type sum1xx: float
         """
         self._sum1xx = sum1xx
 
@@ -1123,7 +1246,7 @@ class PerformanceInfo:
         2xx响应码计数
 
         :param sum2xx: The sum2xx of this PerformanceInfo.
-        :type: float
+        :type sum2xx: float
         """
         self._sum2xx = sum2xx
 
@@ -1145,7 +1268,7 @@ class PerformanceInfo:
         3xx响应码计数
 
         :param sum3xx: The sum3xx of this PerformanceInfo.
-        :type: float
+        :type sum3xx: float
         """
         self._sum3xx = sum3xx
 
@@ -1167,7 +1290,7 @@ class PerformanceInfo:
         4xx响应码计数
 
         :param sum4xx: The sum4xx of this PerformanceInfo.
-        :type: float
+        :type sum4xx: float
         """
         self._sum4xx = sum4xx
 
@@ -1189,7 +1312,7 @@ class PerformanceInfo:
         5xx响应码计数
 
         :param sum5xx: The sum5xx of this PerformanceInfo.
-        :type: float
+        :type sum5xx: float
         """
         self._sum5xx = sum5xx
 
@@ -1211,7 +1334,7 @@ class PerformanceInfo:
         任务id_轮次
 
         :param task_id: The task_id of this PerformanceInfo.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -1233,7 +1356,7 @@ class PerformanceInfo:
         任务id
 
         :param task_project_id: The task_project_id of this PerformanceInfo.
-        :type: str
+        :type task_project_id: str
         """
         self._task_project_id = task_project_id
 
@@ -1255,7 +1378,7 @@ class PerformanceInfo:
         任务状态
 
         :param task_status: The task_status of this PerformanceInfo.
-        :type: float
+        :type task_status: float
         """
         self._task_status = task_status
 
@@ -1277,7 +1400,7 @@ class PerformanceInfo:
         用例uri
 
         :param test_case_uri: The test_case_uri of this PerformanceInfo.
-        :type: str
+        :type test_case_uri: str
         """
         self._test_case_uri = test_case_uri
 
@@ -1299,7 +1422,7 @@ class PerformanceInfo:
         tp50
 
         :param tp50: The tp50 of this PerformanceInfo.
-        :type: float
+        :type tp50: float
         """
         self._tp50 = tp50
 
@@ -1321,7 +1444,7 @@ class PerformanceInfo:
         tp75
 
         :param tp75: The tp75 of this PerformanceInfo.
-        :type: float
+        :type tp75: float
         """
         self._tp75 = tp75
 
@@ -1343,7 +1466,7 @@ class PerformanceInfo:
         tp90
 
         :param tp90: The tp90 of this PerformanceInfo.
-        :type: float
+        :type tp90: float
         """
         self._tp90 = tp90
 
@@ -1365,7 +1488,7 @@ class PerformanceInfo:
         tp95
 
         :param tp95: The tp95 of this PerformanceInfo.
-        :type: float
+        :type tp95: float
         """
         self._tp95 = tp95
 
@@ -1387,7 +1510,7 @@ class PerformanceInfo:
         tp99
 
         :param tp99: The tp99 of this PerformanceInfo.
-        :type: float
+        :type tp99: float
         """
         self._tp99 = tp99
 
@@ -1409,7 +1532,7 @@ class PerformanceInfo:
         tp999
 
         :param tp999: The tp999 of this PerformanceInfo.
-        :type: float
+        :type tp999: float
         """
         self._tp999 = tp999
 
@@ -1431,7 +1554,7 @@ class PerformanceInfo:
         tp9999
 
         :param tp9999: The tp9999 of this PerformanceInfo.
-        :type: float
+        :type tp9999: float
         """
         self._tp9999 = tp9999
 
@@ -1453,7 +1576,7 @@ class PerformanceInfo:
         tps
 
         :param tps: The tps of this PerformanceInfo.
-        :type: float
+        :type tps: float
         """
         self._tps = tps
 
@@ -1475,7 +1598,7 @@ class PerformanceInfo:
         事务TPS
 
         :param tran_tps: The tran_tps of this PerformanceInfo.
-        :type: float
+        :type tran_tps: float
         """
         self._tran_tps = tran_tps
 
@@ -1497,7 +1620,7 @@ class PerformanceInfo:
         事务id
 
         :param transaction_id: The transaction_id of this PerformanceInfo.
-        :type: str
+        :type transaction_id: str
         """
         self._transaction_id = transaction_id
 
@@ -1519,7 +1642,7 @@ class PerformanceInfo:
         成功事务数
 
         :param transaction_success: The transaction_success of this PerformanceInfo.
-        :type: float
+        :type transaction_success: float
         """
         self._transaction_success = transaction_success
 
@@ -1541,7 +1664,7 @@ class PerformanceInfo:
         事务成功率
 
         :param transactional_success_rate: The transactional_success_rate of this PerformanceInfo.
-        :type: float
+        :type transactional_success_rate: float
         """
         self._transactional_success_rate = transactional_success_rate
 
@@ -1563,7 +1686,7 @@ class PerformanceInfo:
         自定义事务tps
 
         :param transactional_tps: The transactional_tps of this PerformanceInfo.
-        :type: float
+        :type transactional_tps: float
         """
         self._transactional_tps = transactional_tps
 
@@ -1585,7 +1708,7 @@ class PerformanceInfo:
         自定义事务成功率
 
         :param transactional_tps_success: The transactional_tps_success of this PerformanceInfo.
-        :type: float
+        :type transactional_tps_success: float
         """
         self._transactional_tps_success = transactional_tps_success
 
@@ -1607,7 +1730,7 @@ class PerformanceInfo:
         事务数
 
         :param transactions: The transactions of this PerformanceInfo.
-        :type: float
+        :type transactions: float
         """
         self._transactions = transactions
 
@@ -1629,7 +1752,7 @@ class PerformanceInfo:
         更新时间
 
         :param update_time: The update_time of this PerformanceInfo.
-        :type: str
+        :type update_time: str
         """
         self._update_time = update_time
 
@@ -1651,7 +1774,7 @@ class PerformanceInfo:
         分钟数*并发数
 
         :param vum: The vum of this PerformanceInfo.
-        :type: float
+        :type vum: float
         """
         self._vum = vum
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSubsetsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListSubsetsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, size=None, items=None):
-        """ListSubsetsResponse - a model defined in huaweicloud sdk"""
+        """ListSubsetsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 总数
+        :type total: int
+        :param size: 本次返回数量
+        :type size: int
+        :param items: 设备ID列表
+        :type items: list[:class:`huaweicloudsdkroma.v2.Device`]
+        """
         
         super(ListSubsetsResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListSubsetsResponse(SdkResponse):
         总数
 
         :param total: The total of this ListSubsetsResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -90,7 +99,7 @@ class ListSubsetsResponse(SdkResponse):
         本次返回数量
 
         :param size: The size of this ListSubsetsResponse.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -101,7 +110,7 @@ class ListSubsetsResponse(SdkResponse):
         设备ID列表
 
         :return: The items of this ListSubsetsResponse.
-        :rtype: list[Device]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.Device`]
         """
         return self._items
 
@@ -112,7 +121,7 @@ class ListSubsetsResponse(SdkResponse):
         设备ID列表
 
         :param items: The items of this ListSubsetsResponse.
-        :type: list[Device]
+        :type items: list[:class:`huaweicloudsdkroma.v2.Device`]
         """
         self._items = items
 

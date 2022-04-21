@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RespAddr:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RespAddr:
     }
 
     def __init__(self, addr=None, version=None):
-        """RespAddr - a model defined in huaweicloud sdk"""
+        """RespAddr
+
+        The model defined in huaweicloud sdk
+
+        :param addr: 云服务器的vpc ip。
+        :type addr: str
+        :param version: 云服务器的vpc版本。
+        :type version: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class RespAddr:
         云服务器的vpc ip。
 
         :param addr: The addr of this RespAddr.
-        :type: str
+        :type addr: str
         """
         self._addr = addr
 
@@ -83,7 +90,7 @@ class RespAddr:
         云服务器的vpc版本。
 
         :param version: The version of this RespAddr.
-        :type: str
+        :type version: str
         """
         self._version = version
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListEnvironmentsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListEnvironmentsResponse(SdkResponse):
     }
 
     def __init__(self, environments=None, offset=None, limit=None, total_count=None):
-        """ListEnvironmentsResponse - a model defined in huaweicloud sdk"""
+        """ListEnvironmentsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param environments: 环境分组列表
+        :type environments: list[:class:`huaweicloudsdkcloudtest.v1.Environment`]
+        :param offset: 偏移量，表示从此偏移量开始查询，offset大于等于0
+        :type offset: int
+        :param limit: 每页显示的条目数量,最大支持200条
+        :type limit: int
+        :param total_count: 环境分组总条数
+        :type total_count: int
+        """
         
         super(ListEnvironmentsResponse, self).__init__()
 
@@ -62,7 +73,7 @@ class ListEnvironmentsResponse(SdkResponse):
         环境分组列表
 
         :return: The environments of this ListEnvironmentsResponse.
-        :rtype: list[Environment]
+        :rtype: list[:class:`huaweicloudsdkcloudtest.v1.Environment`]
         """
         return self._environments
 
@@ -73,7 +84,7 @@ class ListEnvironmentsResponse(SdkResponse):
         环境分组列表
 
         :param environments: The environments of this ListEnvironmentsResponse.
-        :type: list[Environment]
+        :type environments: list[:class:`huaweicloudsdkcloudtest.v1.Environment`]
         """
         self._environments = environments
 
@@ -95,7 +106,7 @@ class ListEnvironmentsResponse(SdkResponse):
         偏移量，表示从此偏移量开始查询，offset大于等于0
 
         :param offset: The offset of this ListEnvironmentsResponse.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -117,7 +128,7 @@ class ListEnvironmentsResponse(SdkResponse):
         每页显示的条目数量,最大支持200条
 
         :param limit: The limit of this ListEnvironmentsResponse.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -139,7 +150,7 @@ class ListEnvironmentsResponse(SdkResponse):
         环境分组总条数
 
         :param total_count: The total_count of this ListEnvironmentsResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 

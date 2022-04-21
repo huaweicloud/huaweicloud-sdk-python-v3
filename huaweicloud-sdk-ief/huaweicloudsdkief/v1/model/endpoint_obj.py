@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EndpointObj:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class EndpointObj:
     }
 
     def __init__(self, description=None, ief_instance_id=None, name=None, properties=None, type=None):
-        """EndpointObj - a model defined in huaweicloud sdk"""
+        """EndpointObj
+
+        The model defined in huaweicloud sdk
+
+        :param description: 端点描述，最大长度255，不允许^~#$%&amp;*&lt;&gt;()[]{}&#39;\&quot;\\
+        :type description: str
+        :param ief_instance_id: 铂金版实例ID，如果为空则表示是专业版实例。
+        :type ief_instance_id: str
+        :param name: 端点名称，只允许中文字符、英文字符、数字、下划线、中划线，最大长度64 同一个帐号中创建的端点名唯一
+        :type name: str
+        :param properties: 端点的属性，端点需要对外展示的属性，示例： - dis: {\&quot;domain_id\&quot;:\&quot;user&#39;s domain id\&quot;} - servicebus: {\&quot;service_port\&quot;:8080} - apigw: {\&quot;domain_id\&quot;:\&quot;user&#39;s domain id\&quot;}
+        :type properties: dict(str, str)
+        :param type: 端点类型 枚举值： - dis - servicebus - apigw
+        :type type: str
+        """
         
         
 
@@ -75,7 +88,7 @@ class EndpointObj:
         端点描述，最大长度255，不允许^~#$%&*<>()[]{}'\"\\
 
         :param description: The description of this EndpointObj.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -97,7 +110,7 @@ class EndpointObj:
         铂金版实例ID，如果为空则表示是专业版实例。
 
         :param ief_instance_id: The ief_instance_id of this EndpointObj.
-        :type: str
+        :type ief_instance_id: str
         """
         self._ief_instance_id = ief_instance_id
 
@@ -119,7 +132,7 @@ class EndpointObj:
         端点名称，只允许中文字符、英文字符、数字、下划线、中划线，最大长度64 同一个帐号中创建的端点名唯一
 
         :param name: The name of this EndpointObj.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -141,7 +154,7 @@ class EndpointObj:
         端点的属性，端点需要对外展示的属性，示例： - dis: {\"domain_id\":\"user's domain id\"} - servicebus: {\"service_port\":8080} - apigw: {\"domain_id\":\"user's domain id\"}
 
         :param properties: The properties of this EndpointObj.
-        :type: dict(str, str)
+        :type properties: dict(str, str)
         """
         self._properties = properties
 
@@ -163,7 +176,7 @@ class EndpointObj:
         端点类型 枚举值： - dis - servicebus - apigw
 
         :param type: The type of this EndpointObj.
-        :type: str
+        :type type: str
         """
         self._type = type
 

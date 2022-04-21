@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateAgencyRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateAgencyRequest:
     }
 
     def __init__(self, agency_id=None, body=None):
-        """UpdateAgencyRequest - a model defined in huaweicloud sdk"""
+        """UpdateAgencyRequest
+
+        The model defined in huaweicloud sdk
+
+        :param agency_id: 待修改的委托ID，获取方式请参见：[获取委托名、委托ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
+        :type agency_id: str
+        :param body: Body of the UpdateAgencyRequest
+        :type body: :class:`huaweicloudsdkiam.v3.UpdateAgencyRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateAgencyRequest:
         待修改的委托ID，获取方式请参见：[获取委托名、委托ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param agency_id: The agency_id of this UpdateAgencyRequest.
-        :type: str
+        :type agency_id: str
         """
         self._agency_id = agency_id
 
@@ -72,7 +79,7 @@ class UpdateAgencyRequest:
 
 
         :return: The body of this UpdateAgencyRequest.
-        :rtype: UpdateAgencyRequestBody
+        :rtype: :class:`huaweicloudsdkiam.v3.UpdateAgencyRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateAgencyRequest:
 
 
         :param body: The body of this UpdateAgencyRequest.
-        :type: UpdateAgencyRequestBody
+        :type body: :class:`huaweicloudsdkiam.v3.UpdateAgencyRequestBody`
         """
         self._body = body
 

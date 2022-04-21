@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FunctionGraphContentRsp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class FunctionGraphContentRsp:
     }
 
     def __init__(self, function_name=None, orig_url=None, final_url=None, verify_body=None, ak=None, sk=None, project_id=None):
-        """FunctionGraphContentRsp - a model defined in huaweicloud sdk"""
+        """FunctionGraphContentRsp
+
+        The model defined in huaweicloud sdk
+
+        :param function_name: 名称
+        :type function_name: str
+        :param orig_url: 原始URL
+        :type orig_url: str
+        :param final_url: 转换后的URL
+        :type final_url: str
+        :param verify_body: 校验参数
+        :type verify_body: str
+        :param ak: 租户的AK
+        :type ak: str
+        :param sk: 租户的SK
+        :type sk: str
+        :param project_id: 项目id
+        :type project_id: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class FunctionGraphContentRsp:
         名称
 
         :param function_name: The function_name of this FunctionGraphContentRsp.
-        :type: str
+        :type function_name: str
         """
         self._function_name = function_name
 
@@ -110,7 +127,7 @@ class FunctionGraphContentRsp:
         原始URL
 
         :param orig_url: The orig_url of this FunctionGraphContentRsp.
-        :type: str
+        :type orig_url: str
         """
         self._orig_url = orig_url
 
@@ -132,7 +149,7 @@ class FunctionGraphContentRsp:
         转换后的URL
 
         :param final_url: The final_url of this FunctionGraphContentRsp.
-        :type: str
+        :type final_url: str
         """
         self._final_url = final_url
 
@@ -154,7 +171,7 @@ class FunctionGraphContentRsp:
         校验参数
 
         :param verify_body: The verify_body of this FunctionGraphContentRsp.
-        :type: str
+        :type verify_body: str
         """
         self._verify_body = verify_body
 
@@ -176,7 +193,7 @@ class FunctionGraphContentRsp:
         租户的AK
 
         :param ak: The ak of this FunctionGraphContentRsp.
-        :type: str
+        :type ak: str
         """
         self._ak = ak
 
@@ -198,7 +215,7 @@ class FunctionGraphContentRsp:
         租户的SK
 
         :param sk: The sk of this FunctionGraphContentRsp.
-        :type: str
+        :type sk: str
         """
         self._sk = sk
 
@@ -220,7 +237,7 @@ class FunctionGraphContentRsp:
         项目id
 
         :param project_id: The project_id of this FunctionGraphContentRsp.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 

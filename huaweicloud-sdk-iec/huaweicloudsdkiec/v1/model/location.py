@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Location:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class Location:
     }
 
     def __init__(self, site_id=None, area=None, province=None, city=None, operator=None, pool_id=None, stack_count=None, city_short_name=None):
-        """Location - a model defined in huaweicloud sdk"""
+        """Location
+
+        The model defined in huaweicloud sdk
+
+        :param site_id: 站点ID。
+        :type site_id: str
+        :param area: 所在大区。
+        :type area: str
+        :param province: 所属省份英文名称。 大小写通用，皆支持
+        :type province: str
+        :param city: 所在城市英文名称。
+        :type city: str
+        :param operator: 所属运营商。
+        :type operator: str
+        :param pool_id: 线路ID。多线路场景下，创建的弹性公网IP在该线路下。
+        :type pool_id: str
+        :param stack_count: 站点需要发放的资源(组)总数。
+        :type stack_count: int
+        :param city_short_name: 城市简称。
+        :type city_short_name: str
+        """
         
         
 
@@ -93,7 +112,7 @@ class Location:
         站点ID。
 
         :param site_id: The site_id of this Location.
-        :type: str
+        :type site_id: str
         """
         self._site_id = site_id
 
@@ -115,7 +134,7 @@ class Location:
         所在大区。
 
         :param area: The area of this Location.
-        :type: str
+        :type area: str
         """
         self._area = area
 
@@ -137,7 +156,7 @@ class Location:
         所属省份英文名称。 大小写通用，皆支持
 
         :param province: The province of this Location.
-        :type: str
+        :type province: str
         """
         self._province = province
 
@@ -159,7 +178,7 @@ class Location:
         所在城市英文名称。
 
         :param city: The city of this Location.
-        :type: str
+        :type city: str
         """
         self._city = city
 
@@ -181,7 +200,7 @@ class Location:
         所属运营商。
 
         :param operator: The operator of this Location.
-        :type: str
+        :type operator: str
         """
         self._operator = operator
 
@@ -203,7 +222,7 @@ class Location:
         线路ID。多线路场景下，创建的弹性公网IP在该线路下。
 
         :param pool_id: The pool_id of this Location.
-        :type: str
+        :type pool_id: str
         """
         self._pool_id = pool_id
 
@@ -225,7 +244,7 @@ class Location:
         站点需要发放的资源(组)总数。
 
         :param stack_count: The stack_count of this Location.
-        :type: int
+        :type stack_count: int
         """
         self._stack_count = stack_count
 
@@ -247,7 +266,7 @@ class Location:
         城市简称。
 
         :param city_short_name: The city_short_name of this Location.
-        :type: str
+        :type city_short_name: str
         """
         self._city_short_name = city_short_name
 

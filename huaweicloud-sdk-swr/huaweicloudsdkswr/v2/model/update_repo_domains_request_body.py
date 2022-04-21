@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateRepoDomainsRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateRepoDomainsRequestBody:
     }
 
     def __init__(self, permit=None, deadline=None, description=None):
-        """UpdateRepoDomainsRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateRepoDomainsRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param permit: 当前只支持read权限
+        :type permit: str
+        :param deadline: 截止时间，UTC时间格式。永久有效为forever
+        :type deadline: str
+        :param description: 描述。默认值为空字符串
+        :type description: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class UpdateRepoDomainsRequestBody:
         当前只支持read权限
 
         :param permit: The permit of this UpdateRepoDomainsRequestBody.
-        :type: str
+        :type permit: str
         """
         self._permit = permit
 
@@ -88,7 +97,7 @@ class UpdateRepoDomainsRequestBody:
         截止时间，UTC时间格式。永久有效为forever
 
         :param deadline: The deadline of this UpdateRepoDomainsRequestBody.
-        :type: str
+        :type deadline: str
         """
         self._deadline = deadline
 
@@ -110,7 +119,7 @@ class UpdateRepoDomainsRequestBody:
         描述。默认值为空字符串
 
         :param description: The description of this UpdateRepoDomainsRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 

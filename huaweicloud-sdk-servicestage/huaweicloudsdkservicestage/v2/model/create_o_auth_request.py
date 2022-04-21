@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateOAuthRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateOAuthRequest:
     }
 
     def __init__(self, repo_type=None, tag=None, body=None):
-        """CreateOAuthRequest - a model defined in huaweicloud sdk"""
+        """CreateOAuthRequest
+
+        The model defined in huaweicloud sdk
+
+        :param repo_type: 仓库类型。 支持OAuth授权的仓库类型有：github、gitlab、gitee、bitbucket。
+        :type repo_type: str
+        :param tag: 站点标签。 比如国际站的，?tag&#x3D;intl。 默认为空。
+        :type tag: str
+        :param body: Body of the CreateOAuthRequest
+        :type body: :class:`huaweicloudsdkservicestage.v2.OAuth`
+        """
         
         
 
@@ -67,7 +76,7 @@ class CreateOAuthRequest:
         仓库类型。 支持OAuth授权的仓库类型有：github、gitlab、gitee、bitbucket。
 
         :param repo_type: The repo_type of this CreateOAuthRequest.
-        :type: str
+        :type repo_type: str
         """
         self._repo_type = repo_type
 
@@ -89,7 +98,7 @@ class CreateOAuthRequest:
         站点标签。 比如国际站的，?tag=intl。 默认为空。
 
         :param tag: The tag of this CreateOAuthRequest.
-        :type: str
+        :type tag: str
         """
         self._tag = tag
 
@@ -99,7 +108,7 @@ class CreateOAuthRequest:
 
 
         :return: The body of this CreateOAuthRequest.
-        :rtype: OAuth
+        :rtype: :class:`huaweicloudsdkservicestage.v2.OAuth`
         """
         return self._body
 
@@ -109,7 +118,7 @@ class CreateOAuthRequest:
 
 
         :param body: The body of this CreateOAuthRequest.
-        :type: OAuth
+        :type body: :class:`huaweicloudsdkservicestage.v2.OAuth`
         """
         self._body = body
 

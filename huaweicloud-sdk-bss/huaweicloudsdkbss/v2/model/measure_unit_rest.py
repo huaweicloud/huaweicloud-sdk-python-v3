@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MeasureUnitRest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class MeasureUnitRest:
     }
 
     def __init__(self, measure_id=None, measure_name=None, abbreviation=None, measure_type=None):
-        """MeasureUnitRest - a model defined in huaweicloud sdk"""
+        """MeasureUnitRest
+
+        The model defined in huaweicloud sdk
+
+        :param measure_id: 度量单位ID。 例如：10表示GB。
+        :type measure_id: int
+        :param measure_name: 度量单位的名称，根据查询的语言类型返回结果。 例如：GB。
+        :type measure_name: str
+        :param abbreviation: 度量单位名称的英文缩写。 例如：度量单位名称“GB”的英文缩写为“GB”。
+        :type abbreviation: str
+        :param measure_type: 度量类型。 1：货币2：时长3：流量4：数量7：容量9：行数10：周期11：频率12：个数16：带宽速率17：容量时长18：查询速率19：带宽速率（1000进制）20：性能测试用量21：面积22：视频23：吞吐量25：测试类型
+        :type measure_type: int
+        """
         
         
 
@@ -73,7 +84,7 @@ class MeasureUnitRest:
         度量单位ID。 例如：10表示GB。
 
         :param measure_id: The measure_id of this MeasureUnitRest.
-        :type: int
+        :type measure_id: int
         """
         self._measure_id = measure_id
 
@@ -95,7 +106,7 @@ class MeasureUnitRest:
         度量单位的名称，根据查询的语言类型返回结果。 例如：GB。
 
         :param measure_name: The measure_name of this MeasureUnitRest.
-        :type: str
+        :type measure_name: str
         """
         self._measure_name = measure_name
 
@@ -117,7 +128,7 @@ class MeasureUnitRest:
         度量单位名称的英文缩写。 例如：度量单位名称“GB”的英文缩写为“GB”。
 
         :param abbreviation: The abbreviation of this MeasureUnitRest.
-        :type: str
+        :type abbreviation: str
         """
         self._abbreviation = abbreviation
 
@@ -139,7 +150,7 @@ class MeasureUnitRest:
         度量类型。 1：货币2：时长3：流量4：数量7：容量9：行数10：周期11：频率12：个数16：带宽速率17：容量时长18：查询速率19：带宽速率（1000进制）20：性能测试用量21：面积22：视频23：吞吐量25：测试类型
 
         :param measure_type: The measure_type of this MeasureUnitRest.
-        :type: int
+        :type measure_type: int
         """
         self._measure_type = measure_type
 

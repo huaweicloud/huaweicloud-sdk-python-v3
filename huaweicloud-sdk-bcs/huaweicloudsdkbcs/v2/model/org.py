@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Org:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class Org:
     }
 
     def __init__(self, org_msp_id=None, org_domain=None, peers=None):
-        """Org - a model defined in huaweicloud sdk"""
+        """Org
+
+        The model defined in huaweicloud sdk
+
+        :param org_msp_id: 组织MSP标识
+        :type org_msp_id: str
+        :param org_domain: 组织域名
+        :type org_domain: str
+        :param peers: key:节点名称，value：节点详细信息
+        :type peers: dict(str, Node)
+        """
         
         
 
@@ -68,7 +77,7 @@ class Org:
         组织MSP标识
 
         :param org_msp_id: The org_msp_id of this Org.
-        :type: str
+        :type org_msp_id: str
         """
         self._org_msp_id = org_msp_id
 
@@ -90,7 +99,7 @@ class Org:
         组织域名
 
         :param org_domain: The org_domain of this Org.
-        :type: str
+        :type org_domain: str
         """
         self._org_domain = org_domain
 
@@ -112,7 +121,7 @@ class Org:
         key:节点名称，value：节点详细信息
 
         :param peers: The peers of this Org.
-        :type: dict(str, Node)
+        :type peers: dict(str, Node)
         """
         self._peers = peers
 

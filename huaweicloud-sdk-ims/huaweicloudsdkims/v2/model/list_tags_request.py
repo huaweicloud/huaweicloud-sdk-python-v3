@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTagsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -58,7 +57,41 @@ class ListTagsRequest:
     }
 
     def __init__(self, limit=None, page=None, imagetype=None, id=None, status=None, name=None, min_disk=None, platform=None, os_type=None, member_status=None, virtual_env_type=None, enterprise_project_id=None, architecture=None, created_at=None, updated_at=None):
-        """ListTagsRequest - a model defined in huaweicloud sdk"""
+        """ListTagsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 用于分页，表示查询几条记录，取值为整数，默认为所有。
+        :type limit: int
+        :param page: 页码，表示需要查询第几页的数据。默认值为1。
+        :type page: int
+        :param imagetype: 镜像类型，目前支持以下类型：公共镜像：gold私有镜像：private共享镜像：shared
+        :type imagetype: str
+        :param id: 镜像ID。
+        :type id: str
+        :param status: 镜像状态。取值如下： queued：表示镜像元数据已经创建成功，等待上传镜像文件。 saving：表示镜像正在上传文件到后端存储。 deleted：表示镜像已经删除。 killed：表示镜像上传错误。 active：表示镜像可以正常使用。
+        :type status: str
+        :param name: 镜像名称。
+        :type name: str
+        :param min_disk: 镜像运行需要的最小磁盘，单位为GB 。
+        :type min_disk: int
+        :param platform: 镜像平台分类。
+        :type platform: str
+        :param os_type: 镜像系统类型，取值如下：Linux,Windows,Other
+        :type os_type: str
+        :param member_status: 成员状态。目前取值有accepted、rejected、pending。
+        :type member_status: str
+        :param virtual_env_type: 镜像使用环境类型：FusionCompute、Ironic、DataImage。
+        :type virtual_env_type: str
+        :param enterprise_project_id: 表示查询某个企业项目下的镜像。
+        :type enterprise_project_id: str
+        :param architecture: 镜像架构类型。取值包括：x86，arm
+        :type architecture: str
+        :param created_at: 镜像创建时间。支持按照时间点过滤查询，取值格式为“操作符:UTC时间”。 其中操作符支持如下几种： gt：大于 gte：大于等于 lt：小于 lte：小于等于 eq：等于 neq：不等于 时间格式支持：yyyy-MM-ddThh:mm:ssZ或者yyyy-MM-dd hh:mm:ss 例如，查询创建时间在2018-10-28 10:00:00之前的镜像，可以通过如下条件过滤： created_at&#x3D;gt:2018-10-28T10:00:00Z
+        :type created_at: str
+        :param updated_at: 镜像修改时间。支持按照时间点过滤查询，取值格式为“ 操作符:UTC时间”。 其中操作符支持如下几种： gt：大于 gte：大于等于 lt：小于 lte：小于等于 eq：等于 neq：不等于 时间格式支持：yyyy-MM-ddThh:mm:ssZ或者yyyy-MM-dd hh:mm:ss 例如，查询修改时间在2018-10-28 10:00:00之前的镜像，可以通过如下条件过滤： updated_at&#x3D;gt:2018-10-28T10:00:00Z
+        :type updated_at: str
+        """
         
         
 
@@ -128,7 +161,7 @@ class ListTagsRequest:
         用于分页，表示查询几条记录，取值为整数，默认为所有。
 
         :param limit: The limit of this ListTagsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -150,7 +183,7 @@ class ListTagsRequest:
         页码，表示需要查询第几页的数据。默认值为1。
 
         :param page: The page of this ListTagsRequest.
-        :type: int
+        :type page: int
         """
         self._page = page
 
@@ -172,7 +205,7 @@ class ListTagsRequest:
         镜像类型，目前支持以下类型：公共镜像：gold私有镜像：private共享镜像：shared
 
         :param imagetype: The imagetype of this ListTagsRequest.
-        :type: str
+        :type imagetype: str
         """
         self._imagetype = imagetype
 
@@ -194,7 +227,7 @@ class ListTagsRequest:
         镜像ID。
 
         :param id: The id of this ListTagsRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -216,7 +249,7 @@ class ListTagsRequest:
         镜像状态。取值如下： queued：表示镜像元数据已经创建成功，等待上传镜像文件。 saving：表示镜像正在上传文件到后端存储。 deleted：表示镜像已经删除。 killed：表示镜像上传错误。 active：表示镜像可以正常使用。
 
         :param status: The status of this ListTagsRequest.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -238,7 +271,7 @@ class ListTagsRequest:
         镜像名称。
 
         :param name: The name of this ListTagsRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -260,7 +293,7 @@ class ListTagsRequest:
         镜像运行需要的最小磁盘，单位为GB 。
 
         :param min_disk: The min_disk of this ListTagsRequest.
-        :type: int
+        :type min_disk: int
         """
         self._min_disk = min_disk
 
@@ -282,7 +315,7 @@ class ListTagsRequest:
         镜像平台分类。
 
         :param platform: The platform of this ListTagsRequest.
-        :type: str
+        :type platform: str
         """
         self._platform = platform
 
@@ -304,7 +337,7 @@ class ListTagsRequest:
         镜像系统类型，取值如下：Linux,Windows,Other
 
         :param os_type: The os_type of this ListTagsRequest.
-        :type: str
+        :type os_type: str
         """
         self._os_type = os_type
 
@@ -326,7 +359,7 @@ class ListTagsRequest:
         成员状态。目前取值有accepted、rejected、pending。
 
         :param member_status: The member_status of this ListTagsRequest.
-        :type: str
+        :type member_status: str
         """
         self._member_status = member_status
 
@@ -348,7 +381,7 @@ class ListTagsRequest:
         镜像使用环境类型：FusionCompute、Ironic、DataImage。
 
         :param virtual_env_type: The virtual_env_type of this ListTagsRequest.
-        :type: str
+        :type virtual_env_type: str
         """
         self._virtual_env_type = virtual_env_type
 
@@ -370,7 +403,7 @@ class ListTagsRequest:
         表示查询某个企业项目下的镜像。
 
         :param enterprise_project_id: The enterprise_project_id of this ListTagsRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -392,7 +425,7 @@ class ListTagsRequest:
         镜像架构类型。取值包括：x86，arm
 
         :param architecture: The architecture of this ListTagsRequest.
-        :type: str
+        :type architecture: str
         """
         self._architecture = architecture
 
@@ -414,7 +447,7 @@ class ListTagsRequest:
         镜像创建时间。支持按照时间点过滤查询，取值格式为“操作符:UTC时间”。 其中操作符支持如下几种： gt：大于 gte：大于等于 lt：小于 lte：小于等于 eq：等于 neq：不等于 时间格式支持：yyyy-MM-ddThh:mm:ssZ或者yyyy-MM-dd hh:mm:ss 例如，查询创建时间在2018-10-28 10:00:00之前的镜像，可以通过如下条件过滤： created_at=gt:2018-10-28T10:00:00Z
 
         :param created_at: The created_at of this ListTagsRequest.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -436,7 +469,7 @@ class ListTagsRequest:
         镜像修改时间。支持按照时间点过滤查询，取值格式为“ 操作符:UTC时间”。 其中操作符支持如下几种： gt：大于 gte：大于等于 lt：小于 lte：小于等于 eq：等于 neq：不等于 时间格式支持：yyyy-MM-ddThh:mm:ssZ或者yyyy-MM-dd hh:mm:ss 例如，查询修改时间在2018-10-28 10:00:00之前的镜像，可以通过如下条件过滤： updated_at=gt:2018-10-28T10:00:00Z
 
         :param updated_at: The updated_at of this ListTagsRequest.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 

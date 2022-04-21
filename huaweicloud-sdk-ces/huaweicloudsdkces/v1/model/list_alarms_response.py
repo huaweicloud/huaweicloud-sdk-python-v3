@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAlarmsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListAlarmsResponse(SdkResponse):
     }
 
     def __init__(self, metric_alarms=None, meta_data=None):
-        """ListAlarmsResponse - a model defined in huaweicloud sdk"""
+        """ListAlarmsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param metric_alarms: 告警对象列表。
+        :type metric_alarms: list[:class:`huaweicloudsdkces.v1.MetricAlarms`]
+        :param meta_data: 
+        :type meta_data: :class:`huaweicloudsdkces.v1.MetaData`
+        """
         
         super(ListAlarmsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListAlarmsResponse(SdkResponse):
         告警对象列表。
 
         :return: The metric_alarms of this ListAlarmsResponse.
-        :rtype: list[MetricAlarms]
+        :rtype: list[:class:`huaweicloudsdkces.v1.MetricAlarms`]
         """
         return self._metric_alarms
 
@@ -63,7 +70,7 @@ class ListAlarmsResponse(SdkResponse):
         告警对象列表。
 
         :param metric_alarms: The metric_alarms of this ListAlarmsResponse.
-        :type: list[MetricAlarms]
+        :type metric_alarms: list[:class:`huaweicloudsdkces.v1.MetricAlarms`]
         """
         self._metric_alarms = metric_alarms
 
@@ -73,7 +80,7 @@ class ListAlarmsResponse(SdkResponse):
 
 
         :return: The meta_data of this ListAlarmsResponse.
-        :rtype: MetaData
+        :rtype: :class:`huaweicloudsdkces.v1.MetaData`
         """
         return self._meta_data
 
@@ -83,7 +90,7 @@ class ListAlarmsResponse(SdkResponse):
 
 
         :param meta_data: The meta_data of this ListAlarmsResponse.
-        :type: MetaData
+        :type meta_data: :class:`huaweicloudsdkces.v1.MetaData`
         """
         self._meta_data = meta_data
 

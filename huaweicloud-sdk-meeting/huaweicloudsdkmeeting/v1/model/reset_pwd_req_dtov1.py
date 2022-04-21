@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResetPwdReqDTOV1:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ResetPwdReqDTOV1:
     }
 
     def __init__(self, user=None, new_pwd=None, pass_word_type=None):
-        """ResetPwdReqDTOV1 - a model defined in huaweicloud sdk"""
+        """ResetPwdReqDTOV1
+
+        The model defined in huaweicloud sdk
+
+        :param user: 用户身份信息（手机号码或邮箱账号或用户真实账号） maxLength：255 minLength：1 
+        :type user: str
+        :param new_pwd: 用户新的登录密码 密码要求： * 长度范围要求8~32 * 至少包含大小写字母、数字 * 不能包含3个以上重复字符 * 密码不能包含与其对应的用户名（不区分大小写）以及逆序的用户名（不区分大小写） 
+        :type new_pwd: str
+        :param pass_word_type: * 1:临时密码，重置完密码后登录Web Portal根据配置可能需要强制修改密码 * 非1：正式密码，重置完密码后登录Web Portal不需要强制修改密码。 
+        :type pass_word_type: int
+        """
         
         
 
@@ -66,7 +75,7 @@ class ResetPwdReqDTOV1:
         用户身份信息（手机号码或邮箱账号或用户真实账号） maxLength：255 minLength：1 
 
         :param user: The user of this ResetPwdReqDTOV1.
-        :type: str
+        :type user: str
         """
         self._user = user
 
@@ -88,7 +97,7 @@ class ResetPwdReqDTOV1:
         用户新的登录密码 密码要求： * 长度范围要求8~32 * 至少包含大小写字母、数字 * 不能包含3个以上重复字符 * 密码不能包含与其对应的用户名（不区分大小写）以及逆序的用户名（不区分大小写） 
 
         :param new_pwd: The new_pwd of this ResetPwdReqDTOV1.
-        :type: str
+        :type new_pwd: str
         """
         self._new_pwd = new_pwd
 
@@ -110,7 +119,7 @@ class ResetPwdReqDTOV1:
         * 1:临时密码，重置完密码后登录Web Portal根据配置可能需要强制修改密码 * 非1：正式密码，重置完密码后登录Web Portal不需要强制修改密码。 
 
         :param pass_word_type: The pass_word_type of this ResetPwdReqDTOV1.
-        :type: int
+        :type pass_word_type: int
         """
         self._pass_word_type = pass_word_type
 

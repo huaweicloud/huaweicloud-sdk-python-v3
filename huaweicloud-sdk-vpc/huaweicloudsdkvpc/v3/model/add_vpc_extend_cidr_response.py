@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddVpcExtendCidrResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AddVpcExtendCidrResponse(SdkResponse):
     }
 
     def __init__(self, vpc=None, request_id=None):
-        """AddVpcExtendCidrResponse - a model defined in huaweicloud sdk"""
+        """AddVpcExtendCidrResponse
+
+        The model defined in huaweicloud sdk
+
+        :param vpc: 
+        :type vpc: :class:`huaweicloudsdkvpc.v3.Vpc`
+        :param request_id: 请求ID
+        :type request_id: str
+        """
         
         super(AddVpcExtendCidrResponse, self).__init__()
 
@@ -51,7 +58,7 @@ class AddVpcExtendCidrResponse(SdkResponse):
 
 
         :return: The vpc of this AddVpcExtendCidrResponse.
-        :rtype: Vpc
+        :rtype: :class:`huaweicloudsdkvpc.v3.Vpc`
         """
         return self._vpc
 
@@ -61,7 +68,7 @@ class AddVpcExtendCidrResponse(SdkResponse):
 
 
         :param vpc: The vpc of this AddVpcExtendCidrResponse.
-        :type: Vpc
+        :type vpc: :class:`huaweicloudsdkvpc.v3.Vpc`
         """
         self._vpc = vpc
 
@@ -83,7 +90,7 @@ class AddVpcExtendCidrResponse(SdkResponse):
         请求ID
 
         :param request_id: The request_id of this AddVpcExtendCidrResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRtcAbnormalEventsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListRtcAbnormalEventsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, events=None, x_request_id=None):
-        """ListRtcAbnormalEventsResponse - a model defined in huaweicloud sdk"""
+        """ListRtcAbnormalEventsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 异常总数
+        :type total: int
+        :param events: 异常体验列表
+        :type events: list[:class:`huaweicloudsdkcloudrtc.v1.AbnormalEvent`]
+        :param x_request_id: 
+        :type x_request_id: str
+        """
         
         super(ListRtcAbnormalEventsResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListRtcAbnormalEventsResponse(SdkResponse):
         异常总数
 
         :param total: The total of this ListRtcAbnormalEventsResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -79,7 +88,7 @@ class ListRtcAbnormalEventsResponse(SdkResponse):
         异常体验列表
 
         :return: The events of this ListRtcAbnormalEventsResponse.
-        :rtype: list[AbnormalEvent]
+        :rtype: list[:class:`huaweicloudsdkcloudrtc.v1.AbnormalEvent`]
         """
         return self._events
 
@@ -90,7 +99,7 @@ class ListRtcAbnormalEventsResponse(SdkResponse):
         异常体验列表
 
         :param events: The events of this ListRtcAbnormalEventsResponse.
-        :type: list[AbnormalEvent]
+        :type events: list[:class:`huaweicloudsdkcloudrtc.v1.AbnormalEvent`]
         """
         self._events = events
 
@@ -110,7 +119,7 @@ class ListRtcAbnormalEventsResponse(SdkResponse):
 
 
         :param x_request_id: The x_request_id of this ListRtcAbnormalEventsResponse.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 

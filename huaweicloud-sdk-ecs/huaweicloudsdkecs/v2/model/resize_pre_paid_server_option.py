@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResizePrePaidServerOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ResizePrePaidServerOption:
     }
 
     def __init__(self, flavor_ref=None, dedicated_host_id=None, extendparam=None, mode=None):
-        """ResizePrePaidServerOption - a model defined in huaweicloud sdk"""
+        """ResizePrePaidServerOption
+
+        The model defined in huaweicloud sdk
+
+        :param flavor_ref: 变更后的云服务器规格ID。  可通过[查询云服务器规格变更支持列表](https://support.huaweicloud.com/api-ecs/ecs_02_0402.html)接口查询允许变更的规格列表。
+        :type flavor_ref: str
+        :param dedicated_host_id: 新专属主机ID（仅适用于专属主机上的弹性云服务器）。
+        :type dedicated_host_id: str
+        :param extendparam: 
+        :type extendparam: :class:`huaweicloudsdkecs.v2.ResizeServerExtendParam`
+        :param mode: 取值为withStopServer ，支持开机状态下变更规格。  mode取值为withStopServer时，对开机状态的云服务器执行变更规格操作，系统自动对云服务器先执行关机，再变更规格，变更成功后再执行开机。
+        :type mode: str
+        """
         
         
 
@@ -72,7 +83,7 @@ class ResizePrePaidServerOption:
         变更后的云服务器规格ID。  可通过[查询云服务器规格变更支持列表](https://support.huaweicloud.com/api-ecs/ecs_02_0402.html)接口查询允许变更的规格列表。
 
         :param flavor_ref: The flavor_ref of this ResizePrePaidServerOption.
-        :type: str
+        :type flavor_ref: str
         """
         self._flavor_ref = flavor_ref
 
@@ -94,7 +105,7 @@ class ResizePrePaidServerOption:
         新专属主机ID（仅适用于专属主机上的弹性云服务器）。
 
         :param dedicated_host_id: The dedicated_host_id of this ResizePrePaidServerOption.
-        :type: str
+        :type dedicated_host_id: str
         """
         self._dedicated_host_id = dedicated_host_id
 
@@ -104,7 +115,7 @@ class ResizePrePaidServerOption:
 
 
         :return: The extendparam of this ResizePrePaidServerOption.
-        :rtype: ResizeServerExtendParam
+        :rtype: :class:`huaweicloudsdkecs.v2.ResizeServerExtendParam`
         """
         return self._extendparam
 
@@ -114,7 +125,7 @@ class ResizePrePaidServerOption:
 
 
         :param extendparam: The extendparam of this ResizePrePaidServerOption.
-        :type: ResizeServerExtendParam
+        :type extendparam: :class:`huaweicloudsdkecs.v2.ResizeServerExtendParam`
         """
         self._extendparam = extendparam
 
@@ -136,7 +147,7 @@ class ResizePrePaidServerOption:
         取值为withStopServer ，支持开机状态下变更规格。  mode取值为withStopServer时，对开机状态的云服务器执行变更规格操作，系统自动对云服务器先执行关机，再变更规格，变更成功后再执行开机。
 
         :param mode: The mode of this ResizePrePaidServerOption.
-        :type: str
+        :type mode: str
         """
         self._mode = mode
 

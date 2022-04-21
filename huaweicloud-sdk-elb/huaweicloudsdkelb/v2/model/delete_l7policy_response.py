@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteL7policyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class DeleteL7policyResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteL7policyResponse - a model defined in huaweicloud sdk"""
+        """DeleteL7policyResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(DeleteL7policyResponse, self).__init__()
         self.discriminator = None

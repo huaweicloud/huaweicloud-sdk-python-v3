@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListEnterpriseSubCustomersResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListEnterpriseSubCustomersResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, sub_customer_infos=None):
-        """ListEnterpriseSubCustomersResponse - a model defined in huaweicloud sdk"""
+        """ListEnterpriseSubCustomersResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total_count: 结果集数量，成功才有。
+        :type total_count: int
+        :param sub_customer_infos: 客户信息列表，成功才有。 具体请参见表2。
+        :type sub_customer_infos: list[:class:`huaweicloudsdkbss.v2.SubCustomerInfoV2`]
+        """
         
         super(ListEnterpriseSubCustomersResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListEnterpriseSubCustomersResponse(SdkResponse):
         结果集数量，成功才有。
 
         :param total_count: The total_count of this ListEnterpriseSubCustomersResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 
@@ -74,7 +81,7 @@ class ListEnterpriseSubCustomersResponse(SdkResponse):
         客户信息列表，成功才有。 具体请参见表2。
 
         :return: The sub_customer_infos of this ListEnterpriseSubCustomersResponse.
-        :rtype: list[SubCustomerInfoV2]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.SubCustomerInfoV2`]
         """
         return self._sub_customer_infos
 
@@ -85,7 +92,7 @@ class ListEnterpriseSubCustomersResponse(SdkResponse):
         客户信息列表，成功才有。 具体请参见表2。
 
         :param sub_customer_infos: The sub_customer_infos of this ListEnterpriseSubCustomersResponse.
-        :type: list[SubCustomerInfoV2]
+        :type sub_customer_infos: list[:class:`huaweicloudsdkbss.v2.SubCustomerInfoV2`]
         """
         self._sub_customer_infos = sub_customer_infos
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VerifyRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class VerifyRequestBody:
     }
 
     def __init__(self, key_id=None, message=None, signature=None, signing_algorithm=None, message_type=None, sequence=None):
-        """VerifyRequestBody - a model defined in huaweicloud sdk"""
+        """VerifyRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param key_id: 密钥ID，36字节，满足正则匹配“^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
+        :type key_id: str
+        :param message: 待签名的消息摘要或者消息，消息长度要求小于4096字节，使用Base64编码。
+        :type message: str
+        :param signature: 待验证的签名值，使用Base64编码。
+        :type signature: str
+        :param signing_algorithm: 签名算法，枚举如下：  - RSASSA_PSS_SHA_256  - RSASSA_PSS_SHA_384  - RSASSA_PSS_SHA_512  - RSASSA_PKCS1_V1_5_SHA_256  - RSASSA_PKCS1_V1_5_SHA_384  - RSASSA_PKCS1_V1_5_SHA_512  - ECDSA_SHA_256  - ECDSA_SHA_384  - ECDSA_SHA_512  - SM2DSA_SM3
+        :type signing_algorithm: str
+        :param message_type: 消息类型，默认为“DIGEST”，枚举如下：  - DIGEST 表示消息摘要  - RAW 表示消息原文
+        :type message_type: str
+        :param sequence: 请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff。
+        :type sequence: str
+        """
         
         
 
@@ -79,7 +94,7 @@ class VerifyRequestBody:
         密钥ID，36字节，满足正则匹配“^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
 
         :param key_id: The key_id of this VerifyRequestBody.
-        :type: str
+        :type key_id: str
         """
         self._key_id = key_id
 
@@ -101,7 +116,7 @@ class VerifyRequestBody:
         待签名的消息摘要或者消息，消息长度要求小于4096字节，使用Base64编码。
 
         :param message: The message of this VerifyRequestBody.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -123,7 +138,7 @@ class VerifyRequestBody:
         待验证的签名值，使用Base64编码。
 
         :param signature: The signature of this VerifyRequestBody.
-        :type: str
+        :type signature: str
         """
         self._signature = signature
 
@@ -145,7 +160,7 @@ class VerifyRequestBody:
         签名算法，枚举如下：  - RSASSA_PSS_SHA_256  - RSASSA_PSS_SHA_384  - RSASSA_PSS_SHA_512  - RSASSA_PKCS1_V1_5_SHA_256  - RSASSA_PKCS1_V1_5_SHA_384  - RSASSA_PKCS1_V1_5_SHA_512  - ECDSA_SHA_256  - ECDSA_SHA_384  - ECDSA_SHA_512  - SM2DSA_SM3
 
         :param signing_algorithm: The signing_algorithm of this VerifyRequestBody.
-        :type: str
+        :type signing_algorithm: str
         """
         self._signing_algorithm = signing_algorithm
 
@@ -167,7 +182,7 @@ class VerifyRequestBody:
         消息类型，默认为“DIGEST”，枚举如下：  - DIGEST 表示消息摘要  - RAW 表示消息原文
 
         :param message_type: The message_type of this VerifyRequestBody.
-        :type: str
+        :type message_type: str
         """
         self._message_type = message_type
 
@@ -189,7 +204,7 @@ class VerifyRequestBody:
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff。
 
         :param sequence: The sequence of this VerifyRequestBody.
-        :type: str
+        :type sequence: str
         """
         self._sequence = sequence
 

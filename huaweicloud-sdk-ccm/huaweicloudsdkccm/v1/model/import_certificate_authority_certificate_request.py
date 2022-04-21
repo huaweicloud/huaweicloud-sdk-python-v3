@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ImportCertificateAuthorityCertificateRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ImportCertificateAuthorityCertificateRequest:
     }
 
     def __init__(self, ca_id=None, body=None):
-        """ImportCertificateAuthorityCertificateRequest - a model defined in huaweicloud sdk"""
+        """ImportCertificateAuthorityCertificateRequest
+
+        The model defined in huaweicloud sdk
+
+        :param ca_id: 所要导入的CA证书ID。
+        :type ca_id: str
+        :param body: Body of the ImportCertificateAuthorityCertificateRequest
+        :type body: :class:`huaweicloudsdkccm.v1.ImportCertificateAuthorityCertificateRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class ImportCertificateAuthorityCertificateRequest:
         所要导入的CA证书ID。
 
         :param ca_id: The ca_id of this ImportCertificateAuthorityCertificateRequest.
-        :type: str
+        :type ca_id: str
         """
         self._ca_id = ca_id
 
@@ -72,7 +79,7 @@ class ImportCertificateAuthorityCertificateRequest:
 
 
         :return: The body of this ImportCertificateAuthorityCertificateRequest.
-        :rtype: ImportCertificateAuthorityCertificateRequestBody
+        :rtype: :class:`huaweicloudsdkccm.v1.ImportCertificateAuthorityCertificateRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class ImportCertificateAuthorityCertificateRequest:
 
 
         :param body: The body of this ImportCertificateAuthorityCertificateRequest.
-        :type: ImportCertificateAuthorityCertificateRequestBody
+        :type body: :class:`huaweicloudsdkccm.v1.ImportCertificateAuthorityCertificateRequestBody`
         """
         self._body = body
 

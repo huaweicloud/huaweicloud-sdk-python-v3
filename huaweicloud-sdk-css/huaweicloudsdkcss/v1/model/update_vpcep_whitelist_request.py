@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateVpcepWhitelistRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateVpcepWhitelistRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """UpdateVpcepWhitelistRequest - a model defined in huaweicloud sdk"""
+        """UpdateVpcepWhitelistRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 指定待更改的集群ID。
+        :type cluster_id: str
+        :param body: Body of the UpdateVpcepWhitelistRequest
+        :type body: :class:`huaweicloudsdkcss.v1.UpdateVpcepWhitelistReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateVpcepWhitelistRequest:
         指定待更改的集群ID。
 
         :param cluster_id: The cluster_id of this UpdateVpcepWhitelistRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -72,7 +79,7 @@ class UpdateVpcepWhitelistRequest:
 
 
         :return: The body of this UpdateVpcepWhitelistRequest.
-        :rtype: UpdateVpcepWhitelistReq
+        :rtype: :class:`huaweicloudsdkcss.v1.UpdateVpcepWhitelistReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateVpcepWhitelistRequest:
 
 
         :param body: The body of this UpdateVpcepWhitelistRequest.
-        :type: UpdateVpcepWhitelistReq
+        :type body: :class:`huaweicloudsdkcss.v1.UpdateVpcepWhitelistReq`
         """
         self._body = body
 

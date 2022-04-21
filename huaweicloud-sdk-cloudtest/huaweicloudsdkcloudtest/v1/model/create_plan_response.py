@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreatePlanResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreatePlanResponse(SdkResponse):
     }
 
     def __init__(self, plan_id=None, error_code=None, error_msg=None):
-        """CreatePlanResponse - a model defined in huaweicloud sdk"""
+        """CreatePlanResponse
+
+        The model defined in huaweicloud sdk
+
+        :param plan_id: 接口调用成功返回的计划id
+        :type plan_id: str
+        :param error_code: 接口调用成功不返回，调用失败错误码
+        :type error_code: str
+        :param error_msg: 接口调用成功不返回，调用失败错误信息
+        :type error_msg: str
+        """
         
         super(CreatePlanResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class CreatePlanResponse(SdkResponse):
         接口调用成功返回的计划id
 
         :param plan_id: The plan_id of this CreatePlanResponse.
-        :type: str
+        :type plan_id: str
         """
         self._plan_id = plan_id
 
@@ -90,7 +99,7 @@ class CreatePlanResponse(SdkResponse):
         接口调用成功不返回，调用失败错误码
 
         :param error_code: The error_code of this CreatePlanResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -112,7 +121,7 @@ class CreatePlanResponse(SdkResponse):
         接口调用成功不返回，调用失败错误信息
 
         :param error_msg: The error_msg of this CreatePlanResponse.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 

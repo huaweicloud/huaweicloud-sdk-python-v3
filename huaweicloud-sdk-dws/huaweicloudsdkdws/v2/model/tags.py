@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Tags:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -22,54 +21,40 @@ class Tags:
     sensitive_list = []
 
     openapi_types = {
-        'value': 'str',
-        'key': 'str'
+        'key': 'str',
+        'value': 'str'
     }
 
     attribute_map = {
-        'value': 'value',
-        'key': 'key'
+        'key': 'key',
+        'value': 'value'
     }
 
-    def __init__(self, value=None, key=None):
-        """Tags - a model defined in huaweicloud sdk"""
+    def __init__(self, key=None, value=None):
+        """Tags
+
+        The model defined in huaweicloud sdk
+
+        :param key: 键。输入标签键的最大长度为36个unicode字符，不能为空字符串，且首尾字符不能为空格。 不能包含“&#x3D;”,“*”,“&lt;”,“&gt;”,“\\\\”,“,”,“|”,“/”。 只能包含大写字母（A-Z）、小写字母（a-z）、数字（0-9）和特殊字符（中划线-、下划线_）以及中文字符。
+        :type key: str
+        :param value: 值。输入标签值的最大长度为43个字符，首尾字符不能为空格，可以为空字符串。 不能包含“&#x3D;”,“*”,“&lt;”,“&gt;”,“\\\\”,“,”,“|”,“/”。 只能包含大写字母（A-Z）、小写字母（a-z）、数字（0-9）和特殊字符（中划线-、下划线_）以及中文字符。
+        :type value: str
+        """
         
         
 
-        self._value = None
         self._key = None
+        self._value = None
         self.discriminator = None
 
-        self.value = value
         self.key = key
-
-    @property
-    def value(self):
-        """Gets the value of this Tags.
-
-        值。输入标签值的最大长度为43个字符，首尾字符不能为空格，可以为空字符串。 不能包含“=”,“*”,“<”,“>”,“\\\\”,“,”,“|”,“/”。 只能包含大写字母（A-Z）、小写字母（a-z）、数字（0-9）和特殊字符（中划线-、下划线_）以及中文字符。 
-
-        :return: The value of this Tags.
-        :rtype: str
-        """
-        return self._value
-
-    @value.setter
-    def value(self, value):
-        """Sets the value of this Tags.
-
-        值。输入标签值的最大长度为43个字符，首尾字符不能为空格，可以为空字符串。 不能包含“=”,“*”,“<”,“>”,“\\\\”,“,”,“|”,“/”。 只能包含大写字母（A-Z）、小写字母（a-z）、数字（0-9）和特殊字符（中划线-、下划线_）以及中文字符。 
-
-        :param value: The value of this Tags.
-        :type: str
-        """
-        self._value = value
+        self.value = value
 
     @property
     def key(self):
         """Gets the key of this Tags.
 
-        键。输入标签键的最大长度为36个unicode字符，不能为空字符串，且首尾字符不能为空格。 不能包含“=”,“*”,“<”,“>”,“\\\\”,“,”,“|”,“/”。 只能包含大写字母（A-Z）、小写字母（a-z）、数字（0-9）和特殊字符（中划线-、下划线_）以及中文字符。 
+        键。输入标签键的最大长度为36个unicode字符，不能为空字符串，且首尾字符不能为空格。 不能包含“=”,“*”,“<”,“>”,“\\\\”,“,”,“|”,“/”。 只能包含大写字母（A-Z）、小写字母（a-z）、数字（0-9）和特殊字符（中划线-、下划线_）以及中文字符。
 
         :return: The key of this Tags.
         :rtype: str
@@ -80,12 +65,34 @@ class Tags:
     def key(self, key):
         """Sets the key of this Tags.
 
-        键。输入标签键的最大长度为36个unicode字符，不能为空字符串，且首尾字符不能为空格。 不能包含“=”,“*”,“<”,“>”,“\\\\”,“,”,“|”,“/”。 只能包含大写字母（A-Z）、小写字母（a-z）、数字（0-9）和特殊字符（中划线-、下划线_）以及中文字符。 
+        键。输入标签键的最大长度为36个unicode字符，不能为空字符串，且首尾字符不能为空格。 不能包含“=”,“*”,“<”,“>”,“\\\\”,“,”,“|”,“/”。 只能包含大写字母（A-Z）、小写字母（a-z）、数字（0-9）和特殊字符（中划线-、下划线_）以及中文字符。
 
         :param key: The key of this Tags.
-        :type: str
+        :type key: str
         """
         self._key = key
+
+    @property
+    def value(self):
+        """Gets the value of this Tags.
+
+        值。输入标签值的最大长度为43个字符，首尾字符不能为空格，可以为空字符串。 不能包含“=”,“*”,“<”,“>”,“\\\\”,“,”,“|”,“/”。 只能包含大写字母（A-Z）、小写字母（a-z）、数字（0-9）和特殊字符（中划线-、下划线_）以及中文字符。
+
+        :return: The value of this Tags.
+        :rtype: str
+        """
+        return self._value
+
+    @value.setter
+    def value(self, value):
+        """Sets the value of this Tags.
+
+        值。输入标签值的最大长度为43个字符，首尾字符不能为空格，可以为空字符串。 不能包含“=”,“*”,“<”,“>”,“\\\\”,“,”,“|”,“/”。 只能包含大写字母（A-Z）、小写字母（a-z）、数字（0-9）和特殊字符（中划线-、下划线_）以及中文字符。
+
+        :param value: The value of this Tags.
+        :type value: str
+        """
+        self._value = value
 
     def to_dict(self):
         """Returns the model properties as a dict"""

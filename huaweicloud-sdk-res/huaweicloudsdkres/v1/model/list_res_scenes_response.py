@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListResScenesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListResScenesResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, res_scenes=None, message=None, error_code=None):
-        """ListResScenesResponse - a model defined in huaweicloud sdk"""
+        """ListResScenesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param is_success: 是否成功。
+        :type is_success: bool
+        :param res_scenes: 场景列表信息。
+        :type res_scenes: list[:class:`huaweicloudsdkres.v1.ResScene`]
+        :param message: 返回消息（请求成功时，不返回此字段）。
+        :type message: str
+        :param error_code: 错误码（请求成功时，不返回此字段）。
+        :type error_code: str
+        """
         
         super(ListResScenesResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class ListResScenesResponse(SdkResponse):
         是否成功。
 
         :param is_success: The is_success of this ListResScenesResponse.
-        :type: bool
+        :type is_success: bool
         """
         self._is_success = is_success
 
@@ -84,7 +95,7 @@ class ListResScenesResponse(SdkResponse):
         场景列表信息。
 
         :return: The res_scenes of this ListResScenesResponse.
-        :rtype: list[ResScene]
+        :rtype: list[:class:`huaweicloudsdkres.v1.ResScene`]
         """
         return self._res_scenes
 
@@ -95,7 +106,7 @@ class ListResScenesResponse(SdkResponse):
         场景列表信息。
 
         :param res_scenes: The res_scenes of this ListResScenesResponse.
-        :type: list[ResScene]
+        :type res_scenes: list[:class:`huaweicloudsdkres.v1.ResScene`]
         """
         self._res_scenes = res_scenes
 
@@ -117,7 +128,7 @@ class ListResScenesResponse(SdkResponse):
         返回消息（请求成功时，不返回此字段）。
 
         :param message: The message of this ListResScenesResponse.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -139,7 +150,7 @@ class ListResScenesResponse(SdkResponse):
         错误码（请求成功时，不返回此字段）。
 
         :param error_code: The error_code of this ListResScenesResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 

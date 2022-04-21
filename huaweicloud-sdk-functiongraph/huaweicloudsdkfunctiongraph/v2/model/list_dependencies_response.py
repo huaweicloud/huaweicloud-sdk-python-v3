@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDependenciesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListDependenciesResponse(SdkResponse):
     }
 
     def __init__(self, count=None, dependencies=None, next_marker=None):
-        """ListDependenciesResponse - a model defined in huaweicloud sdk"""
+        """ListDependenciesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 依赖包总数。
+        :type count: int
+        :param dependencies: 依赖包列表。
+        :type dependencies: list[:class:`huaweicloudsdkfunctiongraph.v2.ListDependenciesResult`]
+        :param next_marker: 下次读取位置。
+        :type next_marker: int
+        """
         
         super(ListDependenciesResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListDependenciesResponse(SdkResponse):
         依赖包总数。
 
         :param count: The count of this ListDependenciesResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -79,7 +88,7 @@ class ListDependenciesResponse(SdkResponse):
         依赖包列表。
 
         :return: The dependencies of this ListDependenciesResponse.
-        :rtype: list[ListDependenciesResult]
+        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.ListDependenciesResult`]
         """
         return self._dependencies
 
@@ -90,7 +99,7 @@ class ListDependenciesResponse(SdkResponse):
         依赖包列表。
 
         :param dependencies: The dependencies of this ListDependenciesResponse.
-        :type: list[ListDependenciesResult]
+        :type dependencies: list[:class:`huaweicloudsdkfunctiongraph.v2.ListDependenciesResult`]
         """
         self._dependencies = dependencies
 
@@ -112,7 +121,7 @@ class ListDependenciesResponse(SdkResponse):
         下次读取位置。
 
         :param next_marker: The next_marker of this ListDependenciesResponse.
-        :type: int
+        :type next_marker: int
         """
         self._next_marker = next_marker
 

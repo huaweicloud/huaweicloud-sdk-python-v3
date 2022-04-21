@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Metadata:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class Metadata:
     }
 
     def __init__(self, id=None, name=None, description=None, status=None, metadata_path=None, create_timestamp=None, last_update_timestamp=None):
-        """Metadata - a model defined in huaweicloud sdk"""
+        """Metadata
+
+        The model defined in huaweicloud sdk
+
+        :param id: 元数据 ID。
+        :type id: str
+        :param name: 元数据名称。
+        :type name: str
+        :param description: 元数据 描述。
+        :type description: str
+        :param status: 元数据是否可用。
+        :type status: str
+        :param metadata_path: 元数据对应路径。
+        :type metadata_path: str
+        :param create_timestamp: 元数据创建时间戳。
+        :type create_timestamp: str
+        :param last_update_timestamp: 元数据最后更新时间戳。
+        :type last_update_timestamp: str
+        """
         
         
 
@@ -83,7 +100,7 @@ class Metadata:
         元数据 ID。
 
         :param id: The id of this Metadata.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -105,7 +122,7 @@ class Metadata:
         元数据名称。
 
         :param name: The name of this Metadata.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -127,7 +144,7 @@ class Metadata:
         元数据 描述。
 
         :param description: The description of this Metadata.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -149,7 +166,7 @@ class Metadata:
         元数据是否可用。
 
         :param status: The status of this Metadata.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -171,7 +188,7 @@ class Metadata:
         元数据对应路径。
 
         :param metadata_path: The metadata_path of this Metadata.
-        :type: str
+        :type metadata_path: str
         """
         self._metadata_path = metadata_path
 
@@ -193,7 +210,7 @@ class Metadata:
         元数据创建时间戳。
 
         :param create_timestamp: The create_timestamp of this Metadata.
-        :type: str
+        :type create_timestamp: str
         """
         self._create_timestamp = create_timestamp
 
@@ -215,7 +232,7 @@ class Metadata:
         元数据最后更新时间戳。
 
         :param last_update_timestamp: The last_update_timestamp of this Metadata.
-        :type: str
+        :type last_update_timestamp: str
         """
         self._last_update_timestamp = last_update_timestamp
 

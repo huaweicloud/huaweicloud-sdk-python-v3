@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ModifyTransTemplateGroup:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ModifyTransTemplateGroup:
     }
 
     def __init__(self, group_id=None, name=None, status=None, auto_encrypt=None, quality_info_list=None, watermark_template_ids=None, description=None, common=None):
-        """ModifyTransTemplateGroup - a model defined in huaweicloud sdk"""
+        """ModifyTransTemplateGroup
+
+        The model defined in huaweicloud sdk
+
+        :param group_id: 模板组名称。
+        :type group_id: str
+        :param name: 模板组名称。
+        :type name: str
+        :param status: 是否设置默认。
+        :type status: str
+        :param auto_encrypt: 是否自动加密。  取值如下： - 0：表示不加密。 - 1：表示需要加密。  默认值：0。  加密与转码必须要一起进行，当需要加密时，转码参数不能为空，且转码输出格式必须要为HLS。
+        :type auto_encrypt: int
+        :param quality_info_list: 画质配置信息列表。
+        :type quality_info_list: list[:class:`huaweicloudsdkvod.v1.QualityInfo`]
+        :param watermark_template_ids: 绑定的水印模板组ID数组。
+        :type watermark_template_ids: list[str]
+        :param description: 模板介绍。
+        :type description: str
+        :param common: 
+        :type common: :class:`huaweicloudsdkvod.v1.Common`
+        """
         
         
 
@@ -91,7 +110,7 @@ class ModifyTransTemplateGroup:
         模板组名称。
 
         :param group_id: The group_id of this ModifyTransTemplateGroup.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -113,7 +132,7 @@ class ModifyTransTemplateGroup:
         模板组名称。
 
         :param name: The name of this ModifyTransTemplateGroup.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -135,7 +154,7 @@ class ModifyTransTemplateGroup:
         是否设置默认。
 
         :param status: The status of this ModifyTransTemplateGroup.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -157,7 +176,7 @@ class ModifyTransTemplateGroup:
         是否自动加密。  取值如下： - 0：表示不加密。 - 1：表示需要加密。  默认值：0。  加密与转码必须要一起进行，当需要加密时，转码参数不能为空，且转码输出格式必须要为HLS。
 
         :param auto_encrypt: The auto_encrypt of this ModifyTransTemplateGroup.
-        :type: int
+        :type auto_encrypt: int
         """
         self._auto_encrypt = auto_encrypt
 
@@ -168,7 +187,7 @@ class ModifyTransTemplateGroup:
         画质配置信息列表。
 
         :return: The quality_info_list of this ModifyTransTemplateGroup.
-        :rtype: list[QualityInfo]
+        :rtype: list[:class:`huaweicloudsdkvod.v1.QualityInfo`]
         """
         return self._quality_info_list
 
@@ -179,7 +198,7 @@ class ModifyTransTemplateGroup:
         画质配置信息列表。
 
         :param quality_info_list: The quality_info_list of this ModifyTransTemplateGroup.
-        :type: list[QualityInfo]
+        :type quality_info_list: list[:class:`huaweicloudsdkvod.v1.QualityInfo`]
         """
         self._quality_info_list = quality_info_list
 
@@ -201,7 +220,7 @@ class ModifyTransTemplateGroup:
         绑定的水印模板组ID数组。
 
         :param watermark_template_ids: The watermark_template_ids of this ModifyTransTemplateGroup.
-        :type: list[str]
+        :type watermark_template_ids: list[str]
         """
         self._watermark_template_ids = watermark_template_ids
 
@@ -223,7 +242,7 @@ class ModifyTransTemplateGroup:
         模板介绍。
 
         :param description: The description of this ModifyTransTemplateGroup.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -233,7 +252,7 @@ class ModifyTransTemplateGroup:
 
 
         :return: The common of this ModifyTransTemplateGroup.
-        :rtype: Common
+        :rtype: :class:`huaweicloudsdkvod.v1.Common`
         """
         return self._common
 
@@ -243,7 +262,7 @@ class ModifyTransTemplateGroup:
 
 
         :param common: The common of this ModifyTransTemplateGroup.
-        :type: Common
+        :type common: :class:`huaweicloudsdkvod.v1.Common`
         """
         self._common = common
 

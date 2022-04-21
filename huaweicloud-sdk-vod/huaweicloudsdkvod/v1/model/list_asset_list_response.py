@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAssetListResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListAssetListResponse(SdkResponse):
     }
 
     def __init__(self, total=None, assets=None):
-        """ListAssetListResponse - a model defined in huaweicloud sdk"""
+        """ListAssetListResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 媒资总数  &gt; 暂只能统计2万个媒资，若您需要查询具体的媒资总数，请提交工单申请。
+        :type total: int
+        :param assets: 媒资列表
+        :type assets: list[:class:`huaweicloudsdkvod.v1.AssetSummary`]
+        """
         
         super(ListAssetListResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListAssetListResponse(SdkResponse):
         媒资总数  > 暂只能统计2万个媒资，若您需要查询具体的媒资总数，请提交工单申请。
 
         :param total: The total of this ListAssetListResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -74,7 +81,7 @@ class ListAssetListResponse(SdkResponse):
         媒资列表
 
         :return: The assets of this ListAssetListResponse.
-        :rtype: list[AssetSummary]
+        :rtype: list[:class:`huaweicloudsdkvod.v1.AssetSummary`]
         """
         return self._assets
 
@@ -85,7 +92,7 @@ class ListAssetListResponse(SdkResponse):
         媒资列表
 
         :param assets: The assets of this ListAssetListResponse.
-        :type: list[AssetSummary]
+        :type assets: list[:class:`huaweicloudsdkvod.v1.AssetSummary`]
         """
         self._assets = assets
 

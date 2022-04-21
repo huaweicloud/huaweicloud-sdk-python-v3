@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowGroupsRespGroupGroupMessageOffsets:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ShowGroupsRespGroupGroupMessageOffsets:
     }
 
     def __init__(self, partition=None, lag=None, topic=None, message_current_offset=None, message_log_end_offset=None):
-        """ShowGroupsRespGroupGroupMessageOffsets - a model defined in huaweicloud sdk"""
+        """ShowGroupsRespGroupGroupMessageOffsets
+
+        The model defined in huaweicloud sdk
+
+        :param partition: 分区编号。
+        :type partition: int
+        :param lag: 剩余可消费消息数，即消息堆积数。
+        :type lag: int
+        :param topic: topic名称。
+        :type topic: str
+        :param message_current_offset: 当前消费进度。
+        :type message_current_offset: int
+        :param message_log_end_offset: 最大消息位置（LEO）。
+        :type message_log_end_offset: int
+        """
         
         
 
@@ -78,7 +91,7 @@ class ShowGroupsRespGroupGroupMessageOffsets:
         分区编号。
 
         :param partition: The partition of this ShowGroupsRespGroupGroupMessageOffsets.
-        :type: int
+        :type partition: int
         """
         self._partition = partition
 
@@ -100,7 +113,7 @@ class ShowGroupsRespGroupGroupMessageOffsets:
         剩余可消费消息数，即消息堆积数。
 
         :param lag: The lag of this ShowGroupsRespGroupGroupMessageOffsets.
-        :type: int
+        :type lag: int
         """
         self._lag = lag
 
@@ -122,7 +135,7 @@ class ShowGroupsRespGroupGroupMessageOffsets:
         topic名称。
 
         :param topic: The topic of this ShowGroupsRespGroupGroupMessageOffsets.
-        :type: str
+        :type topic: str
         """
         self._topic = topic
 
@@ -144,7 +157,7 @@ class ShowGroupsRespGroupGroupMessageOffsets:
         当前消费进度。
 
         :param message_current_offset: The message_current_offset of this ShowGroupsRespGroupGroupMessageOffsets.
-        :type: int
+        :type message_current_offset: int
         """
         self._message_current_offset = message_current_offset
 
@@ -166,7 +179,7 @@ class ShowGroupsRespGroupGroupMessageOffsets:
         最大消息位置（LEO）。
 
         :param message_log_end_offset: The message_log_end_offset of this ShowGroupsRespGroupGroupMessageOffsets.
-        :type: int
+        :type message_log_end_offset: int
         """
         self._message_log_end_offset = message_log_end_offset
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListGaussMySqlErrorLogRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ListGaussMySqlErrorLogRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, start_date=None, end_date=None, offset=None, limit=None, level=None, node_id=None):
-        """ListGaussMySqlErrorLogRequest - a model defined in huaweicloud sdk"""
+        """ListGaussMySqlErrorLogRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言
+        :type x_language: str
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param start_date: 开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        :type start_date: str
+        :param end_date: 结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        :type end_date: str
+        :param offset: 索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数
+        :type offset: int
+        :param limit: 查询记录数。默认为100，不能为负数，最小值为1，最大值为100
+        :type limit: int
+        :param level: 日志级别
+        :type level: str
+        :param node_id: 节点ID
+        :type node_id: str
+        """
         
         
 
@@ -90,7 +109,7 @@ class ListGaussMySqlErrorLogRequest:
         语言
 
         :param x_language: The x_language of this ListGaussMySqlErrorLogRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -112,7 +131,7 @@ class ListGaussMySqlErrorLogRequest:
         实例ID
 
         :param instance_id: The instance_id of this ListGaussMySqlErrorLogRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -134,7 +153,7 @@ class ListGaussMySqlErrorLogRequest:
         开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
         :param start_date: The start_date of this ListGaussMySqlErrorLogRequest.
-        :type: str
+        :type start_date: str
         """
         self._start_date = start_date
 
@@ -156,7 +175,7 @@ class ListGaussMySqlErrorLogRequest:
         结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
         :param end_date: The end_date of this ListGaussMySqlErrorLogRequest.
-        :type: str
+        :type end_date: str
         """
         self._end_date = end_date
 
@@ -178,7 +197,7 @@ class ListGaussMySqlErrorLogRequest:
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数
 
         :param offset: The offset of this ListGaussMySqlErrorLogRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -200,7 +219,7 @@ class ListGaussMySqlErrorLogRequest:
         查询记录数。默认为100，不能为负数，最小值为1，最大值为100
 
         :param limit: The limit of this ListGaussMySqlErrorLogRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -222,7 +241,7 @@ class ListGaussMySqlErrorLogRequest:
         日志级别
 
         :param level: The level of this ListGaussMySqlErrorLogRequest.
-        :type: str
+        :type level: str
         """
         self._level = level
 
@@ -244,7 +263,7 @@ class ListGaussMySqlErrorLogRequest:
         节点ID
 
         :param node_id: The node_id of this ListGaussMySqlErrorLogRequest.
-        :type: str
+        :type node_id: str
         """
         self._node_id = node_id
 

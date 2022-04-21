@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResourceTags:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ResourceTags:
     }
 
     def __init__(self, key=None, value=None):
-        """ResourceTags - a model defined in huaweicloud sdk"""
+        """ResourceTags
+
+        The model defined in huaweicloud sdk
+
+        :param key: 资源标签值。最大长度36个unicode字符。
+        :type key: str
+        :param value: 资源标签值。
+        :type value: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class ResourceTags:
         资源标签值。最大长度36个unicode字符。
 
         :param key: The key of this ResourceTags.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -85,7 +92,7 @@ class ResourceTags:
         资源标签值。
 
         :param value: The value of this ResourceTags.
-        :type: str
+        :type value: str
         """
         self._value = value
 

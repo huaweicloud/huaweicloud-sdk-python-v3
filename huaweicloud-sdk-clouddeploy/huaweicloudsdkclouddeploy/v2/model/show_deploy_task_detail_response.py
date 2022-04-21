@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDeployTaskDetailResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -82,7 +81,65 @@ class ShowDeployTaskDetailResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None, name=None, project_id=None, project_name=None, deploy_system=None, create_time=None, update_time=None, state=None, execution_time=None, description=None, is_defaut_permission=None, template_id=None, owner=None, nick_name=None, owner_id=None, tenant_id=None, tenant_name=None, slave_cluster_id=None, is_care=None, can_modify=None, can_delete=None, can_view=None, can_execute=None, can_copy=None, can_manage=None, app_component_list=None, role_id=None):
-        """ShowDeployTaskDetailResponse - a model defined in huaweicloud sdk"""
+        """ShowDeployTaskDetailResponse
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 部署任务id
+        :type task_id: str
+        :param name: 部署任务名称
+        :type name: str
+        :param project_id: devcloud项目id
+        :type project_id: str
+        :param project_name: devcloud项目名称
+        :type project_name: str
+        :param deploy_system: 部署类型模式，包括deployTemplate，ansible，shell
+        :type deploy_system: str
+        :param create_time: 创建时间
+        :type create_time: str
+        :param update_time: 修改时间
+        :type update_time: str
+        :param state: 部署任务状态，Draft表示草稿状态，Available表示可用状态
+        :type state: str
+        :param execution_time: 最后一次执行时间
+        :type execution_time: str
+        :param description: 描述
+        :type description: str
+        :param is_defaut_permission: 是否使用默认权限矩阵
+        :type is_defaut_permission: bool
+        :param template_id: 模板id
+        :type template_id: str
+        :param owner: 部署任务创建者用户名
+        :type owner: str
+        :param nick_name: 部署任务创建者昵称
+        :type nick_name: str
+        :param owner_id: 部署任务创建者用户ID
+        :type owner_id: str
+        :param tenant_id: 部署任务创建者租户ID
+        :type tenant_id: str
+        :param tenant_name: 部署任务创建者租户名
+        :type tenant_name: str
+        :param slave_cluster_id: slave集群id，默认为null时使用devcloud八爪鱼slave集群，用户自定义slave时为slave集群id
+        :type slave_cluster_id: str
+        :param is_care: 当前用户是否已收藏
+        :type is_care: bool
+        :param can_modify: 是否有编辑权限
+        :type can_modify: bool
+        :param can_delete: 是否有删除的权限
+        :type can_delete: bool
+        :param can_view: 是否有查看权限
+        :type can_view: bool
+        :param can_execute: 是否有执行权限
+        :type can_execute: bool
+        :param can_copy: 是否有复制权限
+        :type can_copy: bool
+        :param can_manage: 是否有管理权限，包含增删改查执行以及权限修改
+        :type can_manage: bool
+        :param app_component_list: 部署任务和应用组件对应关系
+        :type app_component_list: list[:class:`huaweicloudsdkclouddeploy.v2.AppComponentDao`]
+        :param role_id: 角色ID,0：部署任务创建者，-1：项目创建者，3：项目经理，4：开发人员，5：测试经理，6：测试人员，7：参与者，8：浏览者
+        :type role_id: int
+        """
         
         super(ShowDeployTaskDetailResponse, self).__init__()
 
@@ -188,7 +245,7 @@ class ShowDeployTaskDetailResponse(SdkResponse):
         部署任务id
 
         :param task_id: The task_id of this ShowDeployTaskDetailResponse.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -210,7 +267,7 @@ class ShowDeployTaskDetailResponse(SdkResponse):
         部署任务名称
 
         :param name: The name of this ShowDeployTaskDetailResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -232,7 +289,7 @@ class ShowDeployTaskDetailResponse(SdkResponse):
         devcloud项目id
 
         :param project_id: The project_id of this ShowDeployTaskDetailResponse.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -254,7 +311,7 @@ class ShowDeployTaskDetailResponse(SdkResponse):
         devcloud项目名称
 
         :param project_name: The project_name of this ShowDeployTaskDetailResponse.
-        :type: str
+        :type project_name: str
         """
         self._project_name = project_name
 
@@ -276,7 +333,7 @@ class ShowDeployTaskDetailResponse(SdkResponse):
         部署类型模式，包括deployTemplate，ansible，shell
 
         :param deploy_system: The deploy_system of this ShowDeployTaskDetailResponse.
-        :type: str
+        :type deploy_system: str
         """
         self._deploy_system = deploy_system
 
@@ -298,7 +355,7 @@ class ShowDeployTaskDetailResponse(SdkResponse):
         创建时间
 
         :param create_time: The create_time of this ShowDeployTaskDetailResponse.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -320,7 +377,7 @@ class ShowDeployTaskDetailResponse(SdkResponse):
         修改时间
 
         :param update_time: The update_time of this ShowDeployTaskDetailResponse.
-        :type: str
+        :type update_time: str
         """
         self._update_time = update_time
 
@@ -342,7 +399,7 @@ class ShowDeployTaskDetailResponse(SdkResponse):
         部署任务状态，Draft表示草稿状态，Available表示可用状态
 
         :param state: The state of this ShowDeployTaskDetailResponse.
-        :type: str
+        :type state: str
         """
         self._state = state
 
@@ -364,7 +421,7 @@ class ShowDeployTaskDetailResponse(SdkResponse):
         最后一次执行时间
 
         :param execution_time: The execution_time of this ShowDeployTaskDetailResponse.
-        :type: str
+        :type execution_time: str
         """
         self._execution_time = execution_time
 
@@ -386,7 +443,7 @@ class ShowDeployTaskDetailResponse(SdkResponse):
         描述
 
         :param description: The description of this ShowDeployTaskDetailResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -408,7 +465,7 @@ class ShowDeployTaskDetailResponse(SdkResponse):
         是否使用默认权限矩阵
 
         :param is_defaut_permission: The is_defaut_permission of this ShowDeployTaskDetailResponse.
-        :type: bool
+        :type is_defaut_permission: bool
         """
         self._is_defaut_permission = is_defaut_permission
 
@@ -430,7 +487,7 @@ class ShowDeployTaskDetailResponse(SdkResponse):
         模板id
 
         :param template_id: The template_id of this ShowDeployTaskDetailResponse.
-        :type: str
+        :type template_id: str
         """
         self._template_id = template_id
 
@@ -452,7 +509,7 @@ class ShowDeployTaskDetailResponse(SdkResponse):
         部署任务创建者用户名
 
         :param owner: The owner of this ShowDeployTaskDetailResponse.
-        :type: str
+        :type owner: str
         """
         self._owner = owner
 
@@ -474,7 +531,7 @@ class ShowDeployTaskDetailResponse(SdkResponse):
         部署任务创建者昵称
 
         :param nick_name: The nick_name of this ShowDeployTaskDetailResponse.
-        :type: str
+        :type nick_name: str
         """
         self._nick_name = nick_name
 
@@ -496,7 +553,7 @@ class ShowDeployTaskDetailResponse(SdkResponse):
         部署任务创建者用户ID
 
         :param owner_id: The owner_id of this ShowDeployTaskDetailResponse.
-        :type: str
+        :type owner_id: str
         """
         self._owner_id = owner_id
 
@@ -518,7 +575,7 @@ class ShowDeployTaskDetailResponse(SdkResponse):
         部署任务创建者租户ID
 
         :param tenant_id: The tenant_id of this ShowDeployTaskDetailResponse.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 
@@ -540,7 +597,7 @@ class ShowDeployTaskDetailResponse(SdkResponse):
         部署任务创建者租户名
 
         :param tenant_name: The tenant_name of this ShowDeployTaskDetailResponse.
-        :type: str
+        :type tenant_name: str
         """
         self._tenant_name = tenant_name
 
@@ -562,7 +619,7 @@ class ShowDeployTaskDetailResponse(SdkResponse):
         slave集群id，默认为null时使用devcloud八爪鱼slave集群，用户自定义slave时为slave集群id
 
         :param slave_cluster_id: The slave_cluster_id of this ShowDeployTaskDetailResponse.
-        :type: str
+        :type slave_cluster_id: str
         """
         self._slave_cluster_id = slave_cluster_id
 
@@ -584,7 +641,7 @@ class ShowDeployTaskDetailResponse(SdkResponse):
         当前用户是否已收藏
 
         :param is_care: The is_care of this ShowDeployTaskDetailResponse.
-        :type: bool
+        :type is_care: bool
         """
         self._is_care = is_care
 
@@ -606,7 +663,7 @@ class ShowDeployTaskDetailResponse(SdkResponse):
         是否有编辑权限
 
         :param can_modify: The can_modify of this ShowDeployTaskDetailResponse.
-        :type: bool
+        :type can_modify: bool
         """
         self._can_modify = can_modify
 
@@ -628,7 +685,7 @@ class ShowDeployTaskDetailResponse(SdkResponse):
         是否有删除的权限
 
         :param can_delete: The can_delete of this ShowDeployTaskDetailResponse.
-        :type: bool
+        :type can_delete: bool
         """
         self._can_delete = can_delete
 
@@ -650,7 +707,7 @@ class ShowDeployTaskDetailResponse(SdkResponse):
         是否有查看权限
 
         :param can_view: The can_view of this ShowDeployTaskDetailResponse.
-        :type: bool
+        :type can_view: bool
         """
         self._can_view = can_view
 
@@ -672,7 +729,7 @@ class ShowDeployTaskDetailResponse(SdkResponse):
         是否有执行权限
 
         :param can_execute: The can_execute of this ShowDeployTaskDetailResponse.
-        :type: bool
+        :type can_execute: bool
         """
         self._can_execute = can_execute
 
@@ -694,7 +751,7 @@ class ShowDeployTaskDetailResponse(SdkResponse):
         是否有复制权限
 
         :param can_copy: The can_copy of this ShowDeployTaskDetailResponse.
-        :type: bool
+        :type can_copy: bool
         """
         self._can_copy = can_copy
 
@@ -716,7 +773,7 @@ class ShowDeployTaskDetailResponse(SdkResponse):
         是否有管理权限，包含增删改查执行以及权限修改
 
         :param can_manage: The can_manage of this ShowDeployTaskDetailResponse.
-        :type: bool
+        :type can_manage: bool
         """
         self._can_manage = can_manage
 
@@ -727,7 +784,7 @@ class ShowDeployTaskDetailResponse(SdkResponse):
         部署任务和应用组件对应关系
 
         :return: The app_component_list of this ShowDeployTaskDetailResponse.
-        :rtype: list[AppComponentDao]
+        :rtype: list[:class:`huaweicloudsdkclouddeploy.v2.AppComponentDao`]
         """
         return self._app_component_list
 
@@ -738,7 +795,7 @@ class ShowDeployTaskDetailResponse(SdkResponse):
         部署任务和应用组件对应关系
 
         :param app_component_list: The app_component_list of this ShowDeployTaskDetailResponse.
-        :type: list[AppComponentDao]
+        :type app_component_list: list[:class:`huaweicloudsdkclouddeploy.v2.AppComponentDao`]
         """
         self._app_component_list = app_component_list
 
@@ -760,7 +817,7 @@ class ShowDeployTaskDetailResponse(SdkResponse):
         角色ID,0：部署任务创建者，-1：项目创建者，3：项目经理，4：开发人员，5：测试经理，6：测试人员，7：参与者，8：浏览者
 
         :param role_id: The role_id of this ShowDeployTaskDetailResponse.
-        :type: int
+        :type role_id: int
         """
         self._role_id = role_id
 

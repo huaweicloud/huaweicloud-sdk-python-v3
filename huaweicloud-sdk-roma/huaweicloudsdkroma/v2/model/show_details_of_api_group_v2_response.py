@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDetailsOfApiGroupV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -62,7 +61,45 @@ class ShowDetailsOfApiGroupV2Response(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, status=None, sl_domain=None, register_time=None, update_time=None, on_sell_status=None, url_domains=None, sl_domains=None, remark=None, call_limits=None, time_interval=None, time_unit=None, is_default=None, version=None, roma_app_id=None, roma_app_name=None):
-        """ShowDetailsOfApiGroupV2Response - a model defined in huaweicloud sdk"""
+        """ShowDetailsOfApiGroupV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param id: 编号
+        :type id: str
+        :param name: API分组名称
+        :type name: str
+        :param status: 状态   - 1： 有效
+        :type status: int
+        :param sl_domain: 系统默认分配的子域名
+        :type sl_domain: str
+        :param register_time: 创建时间
+        :type register_time: datetime
+        :param update_time: 最近修改时间
+        :type update_time: datetime
+        :param on_sell_status: 是否已上架云市场： - 1：已上架 - 2：未上架 - 3：审核中  ROMAConnect暂未对接云市场，此字段默认返回2
+        :type on_sell_status: int
+        :param url_domains: 分组上绑定的独立域名列表
+        :type url_domains: list[:class:`huaweicloudsdkroma.v2.UrlDomain`]
+        :param sl_domains: 系统默认分配的子域名列表
+        :type sl_domains: list[str]
+        :param remark: 描述
+        :type remark: str
+        :param call_limits: 流控时长内分组下的API的总访问次数限制，默认不限，请根据服务的负载能力自行设置  暂不支持
+        :type call_limits: int
+        :param time_interval: 流控时长  暂不支持
+        :type time_interval: int
+        :param time_unit: 流控的时间单位  暂不支持
+        :type time_unit: str
+        :param is_default: 是否为默认分组
+        :type is_default: int
+        :param version: 分组版本  - V1：全局分组 - V2：应用级分组
+        :type version: str
+        :param roma_app_id: 分组归属的集成应用编号。  分组版本V2时必填。
+        :type roma_app_id: str
+        :param roma_app_name: 分组归属的集成应用名称
+        :type roma_app_name: str
+        """
         
         super(ShowDetailsOfApiGroupV2Response, self).__init__()
 
@@ -131,7 +168,7 @@ class ShowDetailsOfApiGroupV2Response(SdkResponse):
         编号
 
         :param id: The id of this ShowDetailsOfApiGroupV2Response.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -153,7 +190,7 @@ class ShowDetailsOfApiGroupV2Response(SdkResponse):
         API分组名称
 
         :param name: The name of this ShowDetailsOfApiGroupV2Response.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -175,7 +212,7 @@ class ShowDetailsOfApiGroupV2Response(SdkResponse):
         状态   - 1： 有效
 
         :param status: The status of this ShowDetailsOfApiGroupV2Response.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -197,7 +234,7 @@ class ShowDetailsOfApiGroupV2Response(SdkResponse):
         系统默认分配的子域名
 
         :param sl_domain: The sl_domain of this ShowDetailsOfApiGroupV2Response.
-        :type: str
+        :type sl_domain: str
         """
         self._sl_domain = sl_domain
 
@@ -219,7 +256,7 @@ class ShowDetailsOfApiGroupV2Response(SdkResponse):
         创建时间
 
         :param register_time: The register_time of this ShowDetailsOfApiGroupV2Response.
-        :type: datetime
+        :type register_time: datetime
         """
         self._register_time = register_time
 
@@ -241,7 +278,7 @@ class ShowDetailsOfApiGroupV2Response(SdkResponse):
         最近修改时间
 
         :param update_time: The update_time of this ShowDetailsOfApiGroupV2Response.
-        :type: datetime
+        :type update_time: datetime
         """
         self._update_time = update_time
 
@@ -263,7 +300,7 @@ class ShowDetailsOfApiGroupV2Response(SdkResponse):
         是否已上架云市场： - 1：已上架 - 2：未上架 - 3：审核中  ROMAConnect暂未对接云市场，此字段默认返回2
 
         :param on_sell_status: The on_sell_status of this ShowDetailsOfApiGroupV2Response.
-        :type: int
+        :type on_sell_status: int
         """
         self._on_sell_status = on_sell_status
 
@@ -274,7 +311,7 @@ class ShowDetailsOfApiGroupV2Response(SdkResponse):
         分组上绑定的独立域名列表
 
         :return: The url_domains of this ShowDetailsOfApiGroupV2Response.
-        :rtype: list[UrlDomain]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.UrlDomain`]
         """
         return self._url_domains
 
@@ -285,7 +322,7 @@ class ShowDetailsOfApiGroupV2Response(SdkResponse):
         分组上绑定的独立域名列表
 
         :param url_domains: The url_domains of this ShowDetailsOfApiGroupV2Response.
-        :type: list[UrlDomain]
+        :type url_domains: list[:class:`huaweicloudsdkroma.v2.UrlDomain`]
         """
         self._url_domains = url_domains
 
@@ -307,7 +344,7 @@ class ShowDetailsOfApiGroupV2Response(SdkResponse):
         系统默认分配的子域名列表
 
         :param sl_domains: The sl_domains of this ShowDetailsOfApiGroupV2Response.
-        :type: list[str]
+        :type sl_domains: list[str]
         """
         self._sl_domains = sl_domains
 
@@ -329,7 +366,7 @@ class ShowDetailsOfApiGroupV2Response(SdkResponse):
         描述
 
         :param remark: The remark of this ShowDetailsOfApiGroupV2Response.
-        :type: str
+        :type remark: str
         """
         self._remark = remark
 
@@ -351,7 +388,7 @@ class ShowDetailsOfApiGroupV2Response(SdkResponse):
         流控时长内分组下的API的总访问次数限制，默认不限，请根据服务的负载能力自行设置  暂不支持
 
         :param call_limits: The call_limits of this ShowDetailsOfApiGroupV2Response.
-        :type: int
+        :type call_limits: int
         """
         self._call_limits = call_limits
 
@@ -373,7 +410,7 @@ class ShowDetailsOfApiGroupV2Response(SdkResponse):
         流控时长  暂不支持
 
         :param time_interval: The time_interval of this ShowDetailsOfApiGroupV2Response.
-        :type: int
+        :type time_interval: int
         """
         self._time_interval = time_interval
 
@@ -395,7 +432,7 @@ class ShowDetailsOfApiGroupV2Response(SdkResponse):
         流控的时间单位  暂不支持
 
         :param time_unit: The time_unit of this ShowDetailsOfApiGroupV2Response.
-        :type: str
+        :type time_unit: str
         """
         self._time_unit = time_unit
 
@@ -417,7 +454,7 @@ class ShowDetailsOfApiGroupV2Response(SdkResponse):
         是否为默认分组
 
         :param is_default: The is_default of this ShowDetailsOfApiGroupV2Response.
-        :type: int
+        :type is_default: int
         """
         self._is_default = is_default
 
@@ -439,7 +476,7 @@ class ShowDetailsOfApiGroupV2Response(SdkResponse):
         分组版本  - V1：全局分组 - V2：应用级分组
 
         :param version: The version of this ShowDetailsOfApiGroupV2Response.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -461,7 +498,7 @@ class ShowDetailsOfApiGroupV2Response(SdkResponse):
         分组归属的集成应用编号。  分组版本V2时必填。
 
         :param roma_app_id: The roma_app_id of this ShowDetailsOfApiGroupV2Response.
-        :type: str
+        :type roma_app_id: str
         """
         self._roma_app_id = roma_app_id
 
@@ -483,7 +520,7 @@ class ShowDetailsOfApiGroupV2Response(SdkResponse):
         分组归属的集成应用名称
 
         :param roma_app_name: The roma_app_name of this ShowDetailsOfApiGroupV2Response.
-        :type: str
+        :type roma_app_name: str
         """
         self._roma_app_name = roma_app_name
 

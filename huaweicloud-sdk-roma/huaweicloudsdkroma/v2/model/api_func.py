@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApiFunc:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class ApiFunc:
     }
 
     def __init__(self, function_urn=None, remark=None, invocation_type=None, version=None, timeout=None, authorizer_id=None, id=None, register_time=None, status=None, update_time=None):
-        """ApiFunc - a model defined in huaweicloud sdk"""
+        """ApiFunc
+
+        The model defined in huaweicloud sdk
+
+        :param function_urn: 函数URN
+        :type function_urn: str
+        :param remark: 描述信息。 &gt; 中文字符必须为UTF-8或者unicode编码。
+        :type remark: str
+        :param invocation_type: 调用类型 - async： 异步 - sync：同步
+        :type invocation_type: str
+        :param version: 版本。
+        :type version: str
+        :param timeout: ROMA Connect APIC请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000  单位：毫秒。
+        :type timeout: int
+        :param authorizer_id: 后端自定义认证ID
+        :type authorizer_id: str
+        :param id: 编号
+        :type id: str
+        :param register_time: 注册时间
+        :type register_time: datetime
+        :param status: 后端状态   - 1： 有效
+        :type status: int
+        :param update_time: 修改时间
+        :type update_time: datetime
+        """
         
         
 
@@ -100,7 +123,7 @@ class ApiFunc:
         函数URN
 
         :param function_urn: The function_urn of this ApiFunc.
-        :type: str
+        :type function_urn: str
         """
         self._function_urn = function_urn
 
@@ -122,7 +145,7 @@ class ApiFunc:
         描述信息。 > 中文字符必须为UTF-8或者unicode编码。
 
         :param remark: The remark of this ApiFunc.
-        :type: str
+        :type remark: str
         """
         self._remark = remark
 
@@ -144,7 +167,7 @@ class ApiFunc:
         调用类型 - async： 异步 - sync：同步
 
         :param invocation_type: The invocation_type of this ApiFunc.
-        :type: str
+        :type invocation_type: str
         """
         self._invocation_type = invocation_type
 
@@ -166,7 +189,7 @@ class ApiFunc:
         版本。
 
         :param version: The version of this ApiFunc.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -188,7 +211,7 @@ class ApiFunc:
         ROMA Connect APIC请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000  单位：毫秒。
 
         :param timeout: The timeout of this ApiFunc.
-        :type: int
+        :type timeout: int
         """
         self._timeout = timeout
 
@@ -210,7 +233,7 @@ class ApiFunc:
         后端自定义认证ID
 
         :param authorizer_id: The authorizer_id of this ApiFunc.
-        :type: str
+        :type authorizer_id: str
         """
         self._authorizer_id = authorizer_id
 
@@ -232,7 +255,7 @@ class ApiFunc:
         编号
 
         :param id: The id of this ApiFunc.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -254,7 +277,7 @@ class ApiFunc:
         注册时间
 
         :param register_time: The register_time of this ApiFunc.
-        :type: datetime
+        :type register_time: datetime
         """
         self._register_time = register_time
 
@@ -276,7 +299,7 @@ class ApiFunc:
         后端状态   - 1： 有效
 
         :param status: The status of this ApiFunc.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -298,7 +321,7 @@ class ApiFunc:
         修改时间
 
         :param update_time: The update_time of this ApiFunc.
-        :type: datetime
+        :type update_time: datetime
         """
         self._update_time = update_time
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListVariablesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListVariablesRequest:
     }
 
     def __init__(self, variable_type=None, test_suite_id=None):
-        """ListVariablesRequest - a model defined in huaweicloud sdk"""
+        """ListVariablesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param variable_type: 变量类型
+        :type variable_type: int
+        :param test_suite_id: 测试工程id
+        :type test_suite_id: int
+        """
         
         
 
@@ -61,7 +68,7 @@ class ListVariablesRequest:
         变量类型
 
         :param variable_type: The variable_type of this ListVariablesRequest.
-        :type: int
+        :type variable_type: int
         """
         self._variable_type = variable_type
 
@@ -83,7 +90,7 @@ class ListVariablesRequest:
         测试工程id
 
         :param test_suite_id: The test_suite_id of this ListVariablesRequest.
-        :type: int
+        :type test_suite_id: int
         """
         self._test_suite_id = test_suite_id
 

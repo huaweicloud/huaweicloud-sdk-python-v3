@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateDocWatermarkRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class CreateDocWatermarkRequestBody:
     }
 
     def __init__(self, doc_type=None, file_password=None, marked_file_password=None, readonly_password=None, visible_watermark=None, font_size=None, rotation=None, opacity=None, blind_watermark=None, file=None, image_mark=None, visible_type=None):
-        """CreateDocWatermarkRequestBody - a model defined in huaweicloud sdk"""
+        """CreateDocWatermarkRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param doc_type: 要嵌入水印的文档类型
+        :type doc_type: str
+        :param file_password: 输入文件有密码时，读取文件的密码， 最大支持长度256。如果Office文档有读密码或域控的权限密码，请输入读密码，或者有读权限的域控密码。
+        :type file_password: str
+        :param marked_file_password: 添加水印后给文件设置密码， 最大支持长度256。默认不加文档密码。
+        :type marked_file_password: str
+        :param readonly_password: 添加水印后给文件设置只读密码， 最大支持长度256。默认不加只读密码。
+        :type readonly_password: str
+        :param visible_watermark: 明水印内容，与“blind_watermark”字段至少有一个不为空
+        :type visible_watermark: str
+        :param font_size: 明水印字体大小，取值为[1,100]，默认值50
+        :type font_size: str
+        :param rotation: 明水印旋转角度，逆时针方向，取值为[0,90]，默认值45
+        :type rotation: str
+        :param opacity: 明水印的透明度，取值[0,1]，默认值为0.3；
+        :type opacity: str
+        :param blind_watermark: 暗水印内容，与“visible_watermark”字段至少有一个不为空
+        :type blind_watermark: str
+        :param file: 要添加水印的文档
+        :type file: :class:`huaweicloudsdkcore.http.formdata.FormFile`
+        :param image_mark: 图形水印的字节流。图形文件的格式必须为“png”或“jpg”，否则返回参数错误；图像文件大小不超过1MB；在分段的请求体“Content-Disposition”部分，参数“name”的值必须为“image_mark”。
+        :type image_mark: :class:`huaweicloudsdkcore.http.formdata.FormFile`
+        :param visible_type: 该字段为空时，默认为**TEXT**类型。  当该字段为**IMAGE**时: - 请求的表单中必须包含名为“image”的图像文件，图像格式必须为“png”或“jpg”，否则返回参数错误； - 图像文件大小不超过1MB； - “visible_watermark”，“font_size”，“rotation”和“opacity”字段无效。
+        :type visible_type: str
+        """
         
         
 
@@ -111,7 +138,7 @@ class CreateDocWatermarkRequestBody:
         要嵌入水印的文档类型
 
         :param doc_type: The doc_type of this CreateDocWatermarkRequestBody.
-        :type: str
+        :type doc_type: str
         """
         self._doc_type = doc_type
 
@@ -133,7 +160,7 @@ class CreateDocWatermarkRequestBody:
         输入文件有密码时，读取文件的密码， 最大支持长度256。如果Office文档有读密码或域控的权限密码，请输入读密码，或者有读权限的域控密码。
 
         :param file_password: The file_password of this CreateDocWatermarkRequestBody.
-        :type: str
+        :type file_password: str
         """
         self._file_password = file_password
 
@@ -155,7 +182,7 @@ class CreateDocWatermarkRequestBody:
         添加水印后给文件设置密码， 最大支持长度256。默认不加文档密码。
 
         :param marked_file_password: The marked_file_password of this CreateDocWatermarkRequestBody.
-        :type: str
+        :type marked_file_password: str
         """
         self._marked_file_password = marked_file_password
 
@@ -177,7 +204,7 @@ class CreateDocWatermarkRequestBody:
         添加水印后给文件设置只读密码， 最大支持长度256。默认不加只读密码。
 
         :param readonly_password: The readonly_password of this CreateDocWatermarkRequestBody.
-        :type: str
+        :type readonly_password: str
         """
         self._readonly_password = readonly_password
 
@@ -199,7 +226,7 @@ class CreateDocWatermarkRequestBody:
         明水印内容，与“blind_watermark”字段至少有一个不为空
 
         :param visible_watermark: The visible_watermark of this CreateDocWatermarkRequestBody.
-        :type: str
+        :type visible_watermark: str
         """
         self._visible_watermark = visible_watermark
 
@@ -221,7 +248,7 @@ class CreateDocWatermarkRequestBody:
         明水印字体大小，取值为[1,100]，默认值50
 
         :param font_size: The font_size of this CreateDocWatermarkRequestBody.
-        :type: str
+        :type font_size: str
         """
         self._font_size = font_size
 
@@ -243,7 +270,7 @@ class CreateDocWatermarkRequestBody:
         明水印旋转角度，逆时针方向，取值为[0,90]，默认值45
 
         :param rotation: The rotation of this CreateDocWatermarkRequestBody.
-        :type: str
+        :type rotation: str
         """
         self._rotation = rotation
 
@@ -265,7 +292,7 @@ class CreateDocWatermarkRequestBody:
         明水印的透明度，取值[0,1]，默认值为0.3；
 
         :param opacity: The opacity of this CreateDocWatermarkRequestBody.
-        :type: str
+        :type opacity: str
         """
         self._opacity = opacity
 
@@ -287,7 +314,7 @@ class CreateDocWatermarkRequestBody:
         暗水印内容，与“visible_watermark”字段至少有一个不为空
 
         :param blind_watermark: The blind_watermark of this CreateDocWatermarkRequestBody.
-        :type: str
+        :type blind_watermark: str
         """
         self._blind_watermark = blind_watermark
 
@@ -298,7 +325,7 @@ class CreateDocWatermarkRequestBody:
         要添加水印的文档
 
         :return: The file of this CreateDocWatermarkRequestBody.
-        :rtype: file
+        :rtype: :class:`huaweicloudsdkcore.http.formdata.FormFile`
         """
         return self._file
 
@@ -309,7 +336,7 @@ class CreateDocWatermarkRequestBody:
         要添加水印的文档
 
         :param file: The file of this CreateDocWatermarkRequestBody.
-        :type: file
+        :type file: :class:`huaweicloudsdkcore.http.formdata.FormFile`
         """
         self._file = file
 
@@ -320,7 +347,7 @@ class CreateDocWatermarkRequestBody:
         图形水印的字节流。图形文件的格式必须为“png”或“jpg”，否则返回参数错误；图像文件大小不超过1MB；在分段的请求体“Content-Disposition”部分，参数“name”的值必须为“image_mark”。
 
         :return: The image_mark of this CreateDocWatermarkRequestBody.
-        :rtype: file
+        :rtype: :class:`huaweicloudsdkcore.http.formdata.FormFile`
         """
         return self._image_mark
 
@@ -331,7 +358,7 @@ class CreateDocWatermarkRequestBody:
         图形水印的字节流。图形文件的格式必须为“png”或“jpg”，否则返回参数错误；图像文件大小不超过1MB；在分段的请求体“Content-Disposition”部分，参数“name”的值必须为“image_mark”。
 
         :param image_mark: The image_mark of this CreateDocWatermarkRequestBody.
-        :type: file
+        :type image_mark: :class:`huaweicloudsdkcore.http.formdata.FormFile`
         """
         self._image_mark = image_mark
 
@@ -353,7 +380,7 @@ class CreateDocWatermarkRequestBody:
         该字段为空时，默认为**TEXT**类型。  当该字段为**IMAGE**时: - 请求的表单中必须包含名为“image”的图像文件，图像格式必须为“png”或“jpg”，否则返回参数错误； - 图像文件大小不超过1MB； - “visible_watermark”，“font_size”，“rotation”和“opacity”字段无效。
 
         :param visible_type: The visible_type of this CreateDocWatermarkRequestBody.
-        :type: str
+        :type visible_type: str
         """
         self._visible_type = visible_type
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTagsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListTagsRequest:
     }
 
     def __init__(self, resource_type=None):
-        """ListTagsRequest - a model defined in huaweicloud sdk"""
+        """ListTagsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param resource_type: 资源的类型：DNS-public_zone，DNS-private_zone，DNS-public_recordset，DNS-private_recordset，DNS-ptr_record。
+        :type resource_type: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ListTagsRequest:
         资源的类型：DNS-public_zone，DNS-private_zone，DNS-public_recordset，DNS-private_recordset，DNS-ptr_record。
 
         :param resource_type: The resource_type of this ListTagsRequest.
-        :type: str
+        :type resource_type: str
         """
         self._resource_type = resource_type
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowResSceneResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowResSceneResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, scene=None, message=None, error_code=None):
-        """ShowResSceneResponse - a model defined in huaweicloud sdk"""
+        """ShowResSceneResponse
+
+        The model defined in huaweicloud sdk
+
+        :param is_success: 是否成功。
+        :type is_success: bool
+        :param scene: 
+        :type scene: :class:`huaweicloudsdkres.v1.ResScene`
+        :param message: 返回消息（请求成功时，不返回此字段）。
+        :type message: str
+        :param error_code: 错误码（请求成功时，不返回此字段）。
+        :type error_code: str
+        """
         
         super(ShowResSceneResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class ShowResSceneResponse(SdkResponse):
         是否成功。
 
         :param is_success: The is_success of this ShowResSceneResponse.
-        :type: bool
+        :type is_success: bool
         """
         self._is_success = is_success
 
@@ -83,7 +94,7 @@ class ShowResSceneResponse(SdkResponse):
 
 
         :return: The scene of this ShowResSceneResponse.
-        :rtype: ResScene
+        :rtype: :class:`huaweicloudsdkres.v1.ResScene`
         """
         return self._scene
 
@@ -93,7 +104,7 @@ class ShowResSceneResponse(SdkResponse):
 
 
         :param scene: The scene of this ShowResSceneResponse.
-        :type: ResScene
+        :type scene: :class:`huaweicloudsdkres.v1.ResScene`
         """
         self._scene = scene
 
@@ -115,7 +126,7 @@ class ShowResSceneResponse(SdkResponse):
         返回消息（请求成功时，不返回此字段）。
 
         :param message: The message of this ShowResSceneResponse.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -137,7 +148,7 @@ class ShowResSceneResponse(SdkResponse):
         错误码（请求成功时，不返回此字段）。
 
         :param error_code: The error_code of this ShowResSceneResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 

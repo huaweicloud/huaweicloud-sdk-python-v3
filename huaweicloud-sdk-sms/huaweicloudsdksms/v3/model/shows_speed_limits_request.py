@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowsSpeedLimitsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowsSpeedLimitsRequest:
     }
 
     def __init__(self, task_id=None):
-        """ShowsSpeedLimitsRequest - a model defined in huaweicloud sdk"""
+        """ShowsSpeedLimitsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 查询限速信息的任务id
+        :type task_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowsSpeedLimitsRequest:
         查询限速信息的任务id
 
         :param task_id: The task_id of this ShowsSpeedLimitsRequest.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 

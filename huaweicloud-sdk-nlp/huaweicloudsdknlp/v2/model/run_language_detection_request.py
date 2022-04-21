@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunLanguageDetectionRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RunLanguageDetectionRequest:
     }
 
     def __init__(self, body=None):
-        """RunLanguageDetectionRequest - a model defined in huaweicloud sdk"""
+        """RunLanguageDetectionRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the RunLanguageDetectionRequest
+        :type body: :class:`huaweicloudsdknlp.v2.LanguageDetectionReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class RunLanguageDetectionRequest:
 
 
         :return: The body of this RunLanguageDetectionRequest.
-        :rtype: LanguageDetectionReq
+        :rtype: :class:`huaweicloudsdknlp.v2.LanguageDetectionReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class RunLanguageDetectionRequest:
 
 
         :param body: The body of this RunLanguageDetectionRequest.
-        :type: LanguageDetectionReq
+        :type body: :class:`huaweicloudsdknlp.v2.LanguageDetectionReq`
         """
         self._body = body
 

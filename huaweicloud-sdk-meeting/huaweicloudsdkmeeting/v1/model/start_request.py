@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StartRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class StartRequest:
     }
 
     def __init__(self, conference_id=None, password=None):
-        """StartRequest - a model defined in huaweicloud sdk"""
+        """StartRequest
+
+        The model defined in huaweicloud sdk
+
+        :param conference_id: 会议ID
+        :type conference_id: str
+        :param password: 主席密码
+        :type password: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class StartRequest:
         会议ID
 
         :param conference_id: The conference_id of this StartRequest.
-        :type: str
+        :type conference_id: str
         """
         self._conference_id = conference_id
 
@@ -83,7 +90,7 @@ class StartRequest:
         主席密码
 
         :param password: The password of this StartRequest.
-        :type: str
+        :type password: str
         """
         self._password = password
 

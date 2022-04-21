@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Eip:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class Eip:
     }
 
     def __init__(self, iptype=None, bandwidth=None, extendparam=None):
-        """Eip - a model defined in huaweicloud sdk"""
+        """Eip
+
+        The model defined in huaweicloud sdk
+
+        :param iptype: 弹性公网IP地址类型。类型枚举值：5_bgp、5_sbgp详情请参见《虚拟私有云API参考》申请弹性公网IP章节的publicip字段说明。
+        :type iptype: str
+        :param bandwidth: 
+        :type bandwidth: :class:`huaweicloudsdkbms.v1.BandWidth`
+        :param extendparam: 
+        :type extendparam: :class:`huaweicloudsdkbms.v1.ExtendParamEip`
+        """
         
         
 
@@ -65,7 +74,7 @@ class Eip:
         弹性公网IP地址类型。类型枚举值：5_bgp、5_sbgp详情请参见《虚拟私有云API参考》申请弹性公网IP章节的publicip字段说明。
 
         :param iptype: The iptype of this Eip.
-        :type: str
+        :type iptype: str
         """
         self._iptype = iptype
 
@@ -75,7 +84,7 @@ class Eip:
 
 
         :return: The bandwidth of this Eip.
-        :rtype: BandWidth
+        :rtype: :class:`huaweicloudsdkbms.v1.BandWidth`
         """
         return self._bandwidth
 
@@ -85,7 +94,7 @@ class Eip:
 
 
         :param bandwidth: The bandwidth of this Eip.
-        :type: BandWidth
+        :type bandwidth: :class:`huaweicloudsdkbms.v1.BandWidth`
         """
         self._bandwidth = bandwidth
 
@@ -95,7 +104,7 @@ class Eip:
 
 
         :return: The extendparam of this Eip.
-        :rtype: ExtendParamEip
+        :rtype: :class:`huaweicloudsdkbms.v1.ExtendParamEip`
         """
         return self._extendparam
 
@@ -105,7 +114,7 @@ class Eip:
 
 
         :param extendparam: The extendparam of this Eip.
-        :type: ExtendParamEip
+        :type extendparam: :class:`huaweicloudsdkbms.v1.ExtendParamEip`
         """
         self._extendparam = extendparam
 

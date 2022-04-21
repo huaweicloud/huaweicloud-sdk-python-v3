@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ChangeOpsWindowResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class ChangeOpsWindowResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ChangeOpsWindowResponse - a model defined in huaweicloud sdk"""
+        """ChangeOpsWindowResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(ChangeOpsWindowResponse, self).__init__()
         self.discriminator = None

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NodePoolMetadataUpdate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class NodePoolMetadataUpdate:
     }
 
     def __init__(self, name=None):
-        """NodePoolMetadataUpdate - a model defined in huaweicloud sdk"""
+        """NodePoolMetadataUpdate
+
+        The model defined in huaweicloud sdk
+
+        :param name: 节点池名称。  &gt; 命名规则： &gt; &gt;  - 以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围1-50位，且不能以中划线(-)结尾。 &gt; &gt;  - 不允许创建名为 DefaultPool 的节点池。
+        :type name: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class NodePoolMetadataUpdate:
         节点池名称。  > 命名规则： > >  - 以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围1-50位，且不能以中划线(-)结尾。 > >  - 不允许创建名为 DefaultPool 的节点池。
 
         :param name: The name of this NodePoolMetadataUpdate.
-        :type: str
+        :type name: str
         """
         self._name = name
 

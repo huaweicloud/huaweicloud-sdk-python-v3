@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAppsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ListAppsRequest:
     }
 
     def __init__(self, content_type=None, authorization=None, x_sdk_date=None, x_project_id=None, state=None, offset=None, limit=None):
-        """ListAppsRequest - a model defined in huaweicloud sdk"""
+        """ListAppsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param content_type: 内容类型。
+        :type content_type: str
+        :param authorization: 使用AK/SK方式认证时必选，携带的鉴权信息。
+        :type authorization: str
+        :param x_sdk_date: 使用AK/SK方式认证时必选，请求的发生时间。
+        :type x_sdk_date: str
+        :param x_project_id: 使用AK/SK方式认证时必选，携带项目ID信息。
+        :type x_project_id: str
+        :param state: 应用的状态：  - ACTIVATION：应用开启  - DEACTIVATION：应用停用  - ARREARS：应用欠费 
+        :type state: str
+        :param offset: 查询结果起始编号，此处代表分页的页码，默认为0。
+        :type offset: int
+        :param limit: 查询结果集数量，此处代表每一页的条数，最小为1，最大为100。默认为100。 
+        :type limit: int
+        """
         
         
 
@@ -87,7 +104,7 @@ class ListAppsRequest:
         内容类型。
 
         :param content_type: The content_type of this ListAppsRequest.
-        :type: str
+        :type content_type: str
         """
         self._content_type = content_type
 
@@ -109,7 +126,7 @@ class ListAppsRequest:
         使用AK/SK方式认证时必选，携带的鉴权信息。
 
         :param authorization: The authorization of this ListAppsRequest.
-        :type: str
+        :type authorization: str
         """
         self._authorization = authorization
 
@@ -131,7 +148,7 @@ class ListAppsRequest:
         使用AK/SK方式认证时必选，请求的发生时间。
 
         :param x_sdk_date: The x_sdk_date of this ListAppsRequest.
-        :type: str
+        :type x_sdk_date: str
         """
         self._x_sdk_date = x_sdk_date
 
@@ -153,7 +170,7 @@ class ListAppsRequest:
         使用AK/SK方式认证时必选，携带项目ID信息。
 
         :param x_project_id: The x_project_id of this ListAppsRequest.
-        :type: str
+        :type x_project_id: str
         """
         self._x_project_id = x_project_id
 
@@ -175,7 +192,7 @@ class ListAppsRequest:
         应用的状态：  - ACTIVATION：应用开启  - DEACTIVATION：应用停用  - ARREARS：应用欠费 
 
         :param state: The state of this ListAppsRequest.
-        :type: str
+        :type state: str
         """
         self._state = state
 
@@ -197,7 +214,7 @@ class ListAppsRequest:
         查询结果起始编号，此处代表分页的页码，默认为0。
 
         :param offset: The offset of this ListAppsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -219,7 +236,7 @@ class ListAppsRequest:
         查询结果集数量，此处代表每一页的条数，最小为1，最大为100。默认为100。 
 
         :param limit: The limit of this ListAppsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

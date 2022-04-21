@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteMigrationTaskResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteMigrationTaskResponse(SdkResponse):
     }
 
     def __init__(self, task_id_list=None):
-        """DeleteMigrationTaskResponse - a model defined in huaweicloud sdk"""
+        """DeleteMigrationTaskResponse
+
+        The model defined in huaweicloud sdk
+
+        :param task_id_list: 删除的迁移任务ID列表。
+        :type task_id_list: list[str]
+        """
         
         super(DeleteMigrationTaskResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class DeleteMigrationTaskResponse(SdkResponse):
         删除的迁移任务ID列表。
 
         :param task_id_list: The task_id_list of this DeleteMigrationTaskResponse.
-        :type: list[str]
+        :type task_id_list: list[str]
         """
         self._task_id_list = task_id_list
 

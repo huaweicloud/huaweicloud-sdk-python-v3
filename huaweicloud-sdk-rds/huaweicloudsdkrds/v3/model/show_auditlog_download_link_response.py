@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowAuditlogDownloadLinkResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowAuditlogDownloadLinkResponse(SdkResponse):
     }
 
     def __init__(self, links=None):
-        """ShowAuditlogDownloadLinkResponse - a model defined in huaweicloud sdk"""
+        """ShowAuditlogDownloadLinkResponse
+
+        The model defined in huaweicloud sdk
+
+        :param links: 审计日志下载链接列表。
+        :type links: list[str]
+        """
         
         super(ShowAuditlogDownloadLinkResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class ShowAuditlogDownloadLinkResponse(SdkResponse):
         审计日志下载链接列表。
 
         :param links: The links of this ShowAuditlogDownloadLinkResponse.
-        :type: list[str]
+        :type links: list[str]
         """
         self._links = links
 

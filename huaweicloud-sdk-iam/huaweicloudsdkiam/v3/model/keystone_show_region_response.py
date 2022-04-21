@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneShowRegionResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class KeystoneShowRegionResponse(SdkResponse):
     }
 
     def __init__(self, region=None):
-        """KeystoneShowRegionResponse - a model defined in huaweicloud sdk"""
+        """KeystoneShowRegionResponse
+
+        The model defined in huaweicloud sdk
+
+        :param region: 
+        :type region: :class:`huaweicloudsdkiam.v3.Region`
+        """
         
         super(KeystoneShowRegionResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class KeystoneShowRegionResponse(SdkResponse):
 
 
         :return: The region of this KeystoneShowRegionResponse.
-        :rtype: Region
+        :rtype: :class:`huaweicloudsdkiam.v3.Region`
         """
         return self._region
 
@@ -56,7 +61,7 @@ class KeystoneShowRegionResponse(SdkResponse):
 
 
         :param region: The region of this KeystoneShowRegionResponse.
-        :type: Region
+        :type region: :class:`huaweicloudsdkiam.v3.Region`
         """
         self._region = region
 

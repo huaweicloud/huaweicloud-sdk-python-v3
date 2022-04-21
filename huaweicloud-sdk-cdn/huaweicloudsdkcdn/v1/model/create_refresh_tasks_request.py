@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateRefreshTasksRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateRefreshTasksRequest:
     }
 
     def __init__(self, enterprise_project_id=None, body=None):
-        """CreateRefreshTasksRequest - a model defined in huaweicloud sdk"""
+        """CreateRefreshTasksRequest
+
+        The model defined in huaweicloud sdk
+
+        :param enterprise_project_id: 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子账号调用接口时，该参数必传。
+        :type enterprise_project_id: str
+        :param body: Body of the CreateRefreshTasksRequest
+        :type body: :class:`huaweicloudsdkcdn.v1.RefreshTaskRequest`
+        """
         
         
 
@@ -63,7 +70,7 @@ class CreateRefreshTasksRequest:
         当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子账号调用接口时，该参数必传。
 
         :param enterprise_project_id: The enterprise_project_id of this CreateRefreshTasksRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -73,7 +80,7 @@ class CreateRefreshTasksRequest:
 
 
         :return: The body of this CreateRefreshTasksRequest.
-        :rtype: RefreshTaskRequest
+        :rtype: :class:`huaweicloudsdkcdn.v1.RefreshTaskRequest`
         """
         return self._body
 
@@ -83,7 +90,7 @@ class CreateRefreshTasksRequest:
 
 
         :param body: The body of this CreateRefreshTasksRequest.
-        :type: RefreshTaskRequest
+        :type body: :class:`huaweicloudsdkcdn.v1.RefreshTaskRequest`
         """
         self._body = body
 

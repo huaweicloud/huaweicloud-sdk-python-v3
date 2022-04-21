@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AppInfoWithBindNum:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class AppInfoWithBindNum:
     }
 
     def __init__(self, id=None, name=None, remark=None, creator=None, update_time=None, app_key=None, app_secret=None, register_time=None, status=None, app_type=None, roma_app_type=None, bind_num=None):
-        """AppInfoWithBindNum - a model defined in huaweicloud sdk"""
+        """AppInfoWithBindNum
+
+        The model defined in huaweicloud sdk
+
+        :param id: 编号
+        :type id: str
+        :param name: 名称
+        :type name: str
+        :param remark: 描述
+        :type remark: str
+        :param creator: APP的创建者 - USER：用户自行创建 - MARKET：云市场分配  暂不支持MARKET
+        :type creator: str
+        :param update_time: 更新时间
+        :type update_time: datetime
+        :param app_key: APP的key
+        :type app_key: str
+        :param app_secret: 密钥
+        :type app_secret: str
+        :param register_time: 注册时间
+        :type register_time: datetime
+        :param status: 状态   - 1： 有效
+        :type status: int
+        :param app_type: APP的类型： - apig：存量apig应用，不推荐使用 - roma：roma集成应用
+        :type app_type: str
+        :param roma_app_type: ROMA_APP的类型： - subscription：订阅应用 - integration：集成应用
+        :type roma_app_type: str
+        :param bind_num: 绑定的API数量
+        :type bind_num: int
+        """
         
         
 
@@ -113,7 +140,7 @@ class AppInfoWithBindNum:
         编号
 
         :param id: The id of this AppInfoWithBindNum.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -135,7 +162,7 @@ class AppInfoWithBindNum:
         名称
 
         :param name: The name of this AppInfoWithBindNum.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -157,7 +184,7 @@ class AppInfoWithBindNum:
         描述
 
         :param remark: The remark of this AppInfoWithBindNum.
-        :type: str
+        :type remark: str
         """
         self._remark = remark
 
@@ -179,7 +206,7 @@ class AppInfoWithBindNum:
         APP的创建者 - USER：用户自行创建 - MARKET：云市场分配  暂不支持MARKET
 
         :param creator: The creator of this AppInfoWithBindNum.
-        :type: str
+        :type creator: str
         """
         self._creator = creator
 
@@ -201,7 +228,7 @@ class AppInfoWithBindNum:
         更新时间
 
         :param update_time: The update_time of this AppInfoWithBindNum.
-        :type: datetime
+        :type update_time: datetime
         """
         self._update_time = update_time
 
@@ -223,7 +250,7 @@ class AppInfoWithBindNum:
         APP的key
 
         :param app_key: The app_key of this AppInfoWithBindNum.
-        :type: str
+        :type app_key: str
         """
         self._app_key = app_key
 
@@ -245,7 +272,7 @@ class AppInfoWithBindNum:
         密钥
 
         :param app_secret: The app_secret of this AppInfoWithBindNum.
-        :type: str
+        :type app_secret: str
         """
         self._app_secret = app_secret
 
@@ -267,7 +294,7 @@ class AppInfoWithBindNum:
         注册时间
 
         :param register_time: The register_time of this AppInfoWithBindNum.
-        :type: datetime
+        :type register_time: datetime
         """
         self._register_time = register_time
 
@@ -289,7 +316,7 @@ class AppInfoWithBindNum:
         状态   - 1： 有效
 
         :param status: The status of this AppInfoWithBindNum.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -311,7 +338,7 @@ class AppInfoWithBindNum:
         APP的类型： - apig：存量apig应用，不推荐使用 - roma：roma集成应用
 
         :param app_type: The app_type of this AppInfoWithBindNum.
-        :type: str
+        :type app_type: str
         """
         self._app_type = app_type
 
@@ -333,7 +360,7 @@ class AppInfoWithBindNum:
         ROMA_APP的类型： - subscription：订阅应用 - integration：集成应用
 
         :param roma_app_type: The roma_app_type of this AppInfoWithBindNum.
-        :type: str
+        :type roma_app_type: str
         """
         self._roma_app_type = roma_app_type
 
@@ -355,7 +382,7 @@ class AppInfoWithBindNum:
         绑定的API数量
 
         :param bind_num: The bind_num of this AppInfoWithBindNum.
-        :type: int
+        :type bind_num: int
         """
         self._bind_num = bind_num
 

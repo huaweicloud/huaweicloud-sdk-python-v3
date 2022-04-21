@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Actions:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class Actions:
     }
 
     def __init__(self, id=None, action_type=None, conf_content=None, status=None, update_at=None, error_msg=None, message=None):
-        """Actions - a model defined in huaweicloud sdk"""
+        """Actions
+
+        The model defined in huaweicloud sdk
+
+        :param id: 操作记录id。
+        :type id: str
+        :param action_type: 操作类型。
+        :type action_type: str
+        :param conf_content: 配置文件内容。
+        :type conf_content: str
+        :param status: 操作状态。
+        :type status: str
+        :param update_at: 更新时间。
+        :type update_at: str
+        :param error_msg: 错误信息。
+        :type error_msg: str
+        :param message: 内容。
+        :type message: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class Actions:
         操作记录id。
 
         :param id: The id of this Actions.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -110,7 +127,7 @@ class Actions:
         操作类型。
 
         :param action_type: The action_type of this Actions.
-        :type: str
+        :type action_type: str
         """
         self._action_type = action_type
 
@@ -132,7 +149,7 @@ class Actions:
         配置文件内容。
 
         :param conf_content: The conf_content of this Actions.
-        :type: str
+        :type conf_content: str
         """
         self._conf_content = conf_content
 
@@ -154,7 +171,7 @@ class Actions:
         操作状态。
 
         :param status: The status of this Actions.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -176,7 +193,7 @@ class Actions:
         更新时间。
 
         :param update_at: The update_at of this Actions.
-        :type: str
+        :type update_at: str
         """
         self._update_at = update_at
 
@@ -198,7 +215,7 @@ class Actions:
         错误信息。
 
         :param error_msg: The error_msg of this Actions.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 
@@ -220,7 +237,7 @@ class Actions:
         内容。
 
         :param message: The message of this Actions.
-        :type: str
+        :type message: str
         """
         self._message = message
 

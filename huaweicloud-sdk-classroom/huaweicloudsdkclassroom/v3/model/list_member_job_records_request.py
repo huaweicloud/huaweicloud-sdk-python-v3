@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListMemberJobRecordsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListMemberJobRecordsRequest:
     }
 
     def __init__(self, job_id=None, exercise_id=None, member_id=None, offset=None, limit=None):
-        """ListMemberJobRecordsRequest - a model defined in huaweicloud sdk"""
+        """ListMemberJobRecordsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 作业ID
+        :type job_id: str
+        :param exercise_id: 习题ID
+        :type exercise_id: str
+        :param member_id: 用户ID
+        :type member_id: str
+        :param offset: 信息记录的起始编号
+        :type offset: int
+        :param limit: 每页包含的信息记录数
+        :type limit: int
+        """
         
         
 
@@ -75,7 +88,7 @@ class ListMemberJobRecordsRequest:
         作业ID
 
         :param job_id: The job_id of this ListMemberJobRecordsRequest.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -97,7 +110,7 @@ class ListMemberJobRecordsRequest:
         习题ID
 
         :param exercise_id: The exercise_id of this ListMemberJobRecordsRequest.
-        :type: str
+        :type exercise_id: str
         """
         self._exercise_id = exercise_id
 
@@ -119,7 +132,7 @@ class ListMemberJobRecordsRequest:
         用户ID
 
         :param member_id: The member_id of this ListMemberJobRecordsRequest.
-        :type: str
+        :type member_id: str
         """
         self._member_id = member_id
 
@@ -141,7 +154,7 @@ class ListMemberJobRecordsRequest:
         信息记录的起始编号
 
         :param offset: The offset of this ListMemberJobRecordsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -163,7 +176,7 @@ class ListMemberJobRecordsRequest:
         每页包含的信息记录数
 
         :param limit: The limit of this ListMemberJobRecordsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

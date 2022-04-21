@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExpandReplicationRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ExpandReplicationRequest:
     }
 
     def __init__(self, replication_id=None, body=None):
-        """ExpandReplicationRequest - a model defined in huaweicloud sdk"""
+        """ExpandReplicationRequest
+
+        The model defined in huaweicloud sdk
+
+        :param replication_id: 复制对的ID。
+        :type replication_id: str
+        :param body: Body of the ExpandReplicationRequest
+        :type body: :class:`huaweicloudsdksdrs.v1.ExtendReplicationRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class ExpandReplicationRequest:
         复制对的ID。
 
         :param replication_id: The replication_id of this ExpandReplicationRequest.
-        :type: str
+        :type replication_id: str
         """
         self._replication_id = replication_id
 
@@ -72,7 +79,7 @@ class ExpandReplicationRequest:
 
 
         :return: The body of this ExpandReplicationRequest.
-        :rtype: ExtendReplicationRequestBody
+        :rtype: :class:`huaweicloudsdksdrs.v1.ExtendReplicationRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class ExpandReplicationRequest:
 
 
         :param body: The body of this ExpandReplicationRequest.
-        :type: ExtendReplicationRequestBody
+        :type body: :class:`huaweicloudsdksdrs.v1.ExtendReplicationRequestBody`
         """
         self._body = body
 

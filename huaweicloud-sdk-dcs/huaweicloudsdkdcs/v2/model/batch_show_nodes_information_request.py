@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchShowNodesInformationRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchShowNodesInformationRequest:
     }
 
     def __init__(self, offset=None, limit=None):
-        """BatchShowNodesInformationRequest - a model defined in huaweicloud sdk"""
+        """BatchShowNodesInformationRequest
+
+        The model defined in huaweicloud sdk
+
+        :param offset: 偏移量，表示从此偏移量开始查询，offset大于等于0。
+        :type offset: int
+        :param limit: 每页显示的条目数量，当前最大值为100。若不设置该参数，则为10。 
+        :type limit: int
+        """
         
         
 
@@ -63,7 +70,7 @@ class BatchShowNodesInformationRequest:
         偏移量，表示从此偏移量开始查询，offset大于等于0。
 
         :param offset: The offset of this BatchShowNodesInformationRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -85,7 +92,7 @@ class BatchShowNodesInformationRequest:
         每页显示的条目数量，当前最大值为100。若不设置该参数，则为10。 
 
         :param limit: The limit of this BatchShowNodesInformationRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

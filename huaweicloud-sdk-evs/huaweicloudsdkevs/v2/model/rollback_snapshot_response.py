@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RollbackSnapshotResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RollbackSnapshotResponse(SdkResponse):
     }
 
     def __init__(self, rollback=None):
-        """RollbackSnapshotResponse - a model defined in huaweicloud sdk"""
+        """RollbackSnapshotResponse
+
+        The model defined in huaweicloud sdk
+
+        :param rollback: 
+        :type rollback: :class:`huaweicloudsdkevs.v2.RollbackInfo`
+        """
         
         super(RollbackSnapshotResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class RollbackSnapshotResponse(SdkResponse):
 
 
         :return: The rollback of this RollbackSnapshotResponse.
-        :rtype: RollbackInfo
+        :rtype: :class:`huaweicloudsdkevs.v2.RollbackInfo`
         """
         return self._rollback
 
@@ -56,7 +61,7 @@ class RollbackSnapshotResponse(SdkResponse):
 
 
         :param rollback: The rollback of this RollbackSnapshotResponse.
-        :type: RollbackInfo
+        :type rollback: :class:`huaweicloudsdkevs.v2.RollbackInfo`
         """
         self._rollback = rollback
 

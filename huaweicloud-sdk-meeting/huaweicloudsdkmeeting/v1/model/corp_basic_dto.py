@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CorpBasicDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class CorpBasicDTO:
     }
 
     def __init__(self, name=None, domain=None, phone=None, country=None, fax=None, email=None, address=None, description=None, sp_id=None, language=None, time_zone_id=None):
-        """CorpBasicDTO - a model defined in huaweicloud sdk"""
+        """CorpBasicDTO
+
+        The model defined in huaweicloud sdk
+
+        :param name: 企业名称，格式必须满足^[^#%&amp;&#39;+;&lt;&gt;&#x3D;\&quot;&#39;？?\\\\……/]*$
+        :type name: str
+        :param domain: 企业域名
+        :type domain: str
+        :param phone: 手机号，必须加上国家码，例如中国大陆手机+86xxxxxxx，当填写手机号时， “country”参数必填,手机格式必须满足(^$|^[+]?[0-9]+$)
+        :type phone: str
+        :param country: 若smsNumber为手机号,则需带上手机号所属的国家。 例如国家为中国大陆则country参数取值为chinaPR 国家和国家码的对应关系请参考：https://support.huaweicloud.com/api-meeting/meeting_21_0109.html 
+        :type country: str
+        :param fax: 传真号码,格式必须满足(^$|^[+]?[0-9]+$)
+        :type fax: str
+        :param email: 邮箱地址,格式必须满足(^$|^[\\w-+]+(\\.[\\w-+]+)*@[\\w-]+(\\.[\\w-]+)*(\\.[\\w-]{1,})$)
+        :type email: str
+        :param address: 地址
+        :type address: str
+        :param description: 备注
+        :type description: str
+        :param sp_id: 仅在查询时返回
+        :type sp_id: str
+        :param language: 企业提示音语言设置,zh-CN或en-US
+        :type language: str
+        :param time_zone_id: 时区Id设置,例如北京东8区timeZoneId值为56,时区Id和时区的对应关系请参考: https://support.huaweicloud.com/api-meeting/meeting_21_0110.html
+        :type time_zone_id: str
+        """
         
         
 
@@ -107,7 +132,7 @@ class CorpBasicDTO:
         企业名称，格式必须满足^[^#%&'+;<>=\"'？?\\\\……/]*$
 
         :param name: The name of this CorpBasicDTO.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -129,7 +154,7 @@ class CorpBasicDTO:
         企业域名
 
         :param domain: The domain of this CorpBasicDTO.
-        :type: str
+        :type domain: str
         """
         self._domain = domain
 
@@ -151,7 +176,7 @@ class CorpBasicDTO:
         手机号，必须加上国家码，例如中国大陆手机+86xxxxxxx，当填写手机号时， “country”参数必填,手机格式必须满足(^$|^[+]?[0-9]+$)
 
         :param phone: The phone of this CorpBasicDTO.
-        :type: str
+        :type phone: str
         """
         self._phone = phone
 
@@ -173,7 +198,7 @@ class CorpBasicDTO:
         若smsNumber为手机号,则需带上手机号所属的国家。 例如国家为中国大陆则country参数取值为chinaPR 国家和国家码的对应关系请参考：https://support.huaweicloud.com/api-meeting/meeting_21_0109.html 
 
         :param country: The country of this CorpBasicDTO.
-        :type: str
+        :type country: str
         """
         self._country = country
 
@@ -195,7 +220,7 @@ class CorpBasicDTO:
         传真号码,格式必须满足(^$|^[+]?[0-9]+$)
 
         :param fax: The fax of this CorpBasicDTO.
-        :type: str
+        :type fax: str
         """
         self._fax = fax
 
@@ -217,7 +242,7 @@ class CorpBasicDTO:
         邮箱地址,格式必须满足(^$|^[\\w-+]+(\\.[\\w-+]+)*@[\\w-]+(\\.[\\w-]+)*(\\.[\\w-]{1,})$)
 
         :param email: The email of this CorpBasicDTO.
-        :type: str
+        :type email: str
         """
         self._email = email
 
@@ -239,7 +264,7 @@ class CorpBasicDTO:
         地址
 
         :param address: The address of this CorpBasicDTO.
-        :type: str
+        :type address: str
         """
         self._address = address
 
@@ -261,7 +286,7 @@ class CorpBasicDTO:
         备注
 
         :param description: The description of this CorpBasicDTO.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -283,7 +308,7 @@ class CorpBasicDTO:
         仅在查询时返回
 
         :param sp_id: The sp_id of this CorpBasicDTO.
-        :type: str
+        :type sp_id: str
         """
         self._sp_id = sp_id
 
@@ -305,7 +330,7 @@ class CorpBasicDTO:
         企业提示音语言设置,zh-CN或en-US
 
         :param language: The language of this CorpBasicDTO.
-        :type: str
+        :type language: str
         """
         self._language = language
 
@@ -327,7 +352,7 @@ class CorpBasicDTO:
         时区Id设置,例如北京东8区timeZoneId值为56,时区Id和时区的对应关系请参考: https://support.huaweicloud.com/api-meeting/meeting_21_0110.html
 
         :param time_zone_id: The time_zone_id of this CorpBasicDTO.
-        :type: str
+        :type time_zone_id: str
         """
         self._time_zone_id = time_zone_id
 

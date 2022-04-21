@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Single2Ha:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class Single2Ha:
     }
 
     def __init__(self, single_to_ha=None):
-        """Single2Ha - a model defined in huaweicloud sdk"""
+        """Single2Ha
+
+        The model defined in huaweicloud sdk
+
+        :param single_to_ha: 
+        :type single_to_ha: :class:`huaweicloudsdkrds.v3.Single2HaObject`
+        """
         
         
 
@@ -45,7 +50,7 @@ class Single2Ha:
 
 
         :return: The single_to_ha of this Single2Ha.
-        :rtype: Single2HaObject
+        :rtype: :class:`huaweicloudsdkrds.v3.Single2HaObject`
         """
         return self._single_to_ha
 
@@ -55,7 +60,7 @@ class Single2Ha:
 
 
         :param single_to_ha: The single_to_ha of this Single2Ha.
-        :type: Single2HaObject
+        :type single_to_ha: :class:`huaweicloudsdkrds.v3.Single2HaObject`
         """
         self._single_to_ha = single_to_ha
 

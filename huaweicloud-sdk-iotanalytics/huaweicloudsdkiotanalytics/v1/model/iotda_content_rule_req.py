@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IotdaContentRuleReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class IotdaContentRuleReq:
     }
 
     def __init__(self, app_id=None, products=None):
-        """IotdaContentRuleReq - a model defined in huaweicloud sdk"""
+        """IotdaContentRuleReq
+
+        The model defined in huaweicloud sdk
+
+        :param app_id: IoTDA中的资源空间Id
+        :type app_id: str
+        :param products: IoTDA中某资源空间Id下的产品列表
+        :type products: list[str]
+        """
         
         
 
@@ -61,7 +68,7 @@ class IotdaContentRuleReq:
         IoTDA中的资源空间Id
 
         :param app_id: The app_id of this IotdaContentRuleReq.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -83,7 +90,7 @@ class IotdaContentRuleReq:
         IoTDA中某资源空间Id下的产品列表
 
         :param products: The products of this IotdaContentRuleReq.
-        :type: list[str]
+        :type products: list[str]
         """
         self._products = products
 

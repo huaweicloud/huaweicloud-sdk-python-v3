@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchAssociateNaToNodesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchAssociateNaToNodesResponse(SdkResponse):
     }
 
     def __init__(self, nodes=None):
-        """BatchAssociateNaToNodesResponse - a model defined in huaweicloud sdk"""
+        """BatchAssociateNaToNodesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param nodes: 授权北向NA信息到边缘节点列表的返回结构体，仅返回本次授权的节点列表信息
+        :type nodes: list[:class:`huaweicloudsdkiotedge.v2.QueryAuthorizedNodeDTO`]
+        """
         
         super(BatchAssociateNaToNodesResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class BatchAssociateNaToNodesResponse(SdkResponse):
         授权北向NA信息到边缘节点列表的返回结构体，仅返回本次授权的节点列表信息
 
         :return: The nodes of this BatchAssociateNaToNodesResponse.
-        :rtype: list[QueryAuthorizedNodeDTO]
+        :rtype: list[:class:`huaweicloudsdkiotedge.v2.QueryAuthorizedNodeDTO`]
         """
         return self._nodes
 
@@ -58,7 +63,7 @@ class BatchAssociateNaToNodesResponse(SdkResponse):
         授权北向NA信息到边缘节点列表的返回结构体，仅返回本次授权的节点列表信息
 
         :param nodes: The nodes of this BatchAssociateNaToNodesResponse.
-        :type: list[QueryAuthorizedNodeDTO]
+        :type nodes: list[:class:`huaweicloudsdkiotedge.v2.QueryAuthorizedNodeDTO`]
         """
         self._nodes = nodes
 

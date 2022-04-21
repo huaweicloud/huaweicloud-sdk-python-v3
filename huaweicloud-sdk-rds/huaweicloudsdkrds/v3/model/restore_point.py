@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestorePoint:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class RestorePoint:
     }
 
     def __init__(self, instance_id=None, type=None, backup_id=None, restore_time=None, database_name=None):
-        """RestorePoint - a model defined in huaweicloud sdk"""
+        """RestorePoint
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 源实例ID。
+        :type instance_id: str
+        :param type: 表示恢复方式，枚举值：  - “backup”，表示使用备份文件恢复，按照此方式恢复时，“type”字段为非必选，“backup_id”必选。 - “timestamp”，表示按时间点恢复，按照此方式恢复时，“type”字段必选，“restore_time”必选。
+        :type type: str
+        :param backup_id: 用于恢复的备份ID。当使用备份文件恢复时需要指定该参数。
+        :type backup_id: str
+        :param restore_time: 恢复数据的时间点，格式为UNIX时间戳，单位是毫秒，时区为UTC。
+        :type restore_time: int
+        :param database_name: 仅适用于SQL Server引擎，当有此参数时表示支持局部恢复和重命名恢复，恢复数据以局部恢复为主。  - 新数据库名称不可与源实例数据库名称重名，新数据库名称为空，默认按照原数据库名进行恢复。   注意：   不填写该字段时，默认恢复全部数据库。    示例：”database_name”:{“原库名”:”新库名”}  - 新数据库名不能包含rdsadmin、master、msdb、tempdb、model或resource字段（不区分大小写）。 - 数据库名称长度在1~64个字符之间，包含字母、数字、下划线或中划线，不能包含其他特殊字符。
+        :type database_name: dict(str, str)
+        """
         
         
 
@@ -76,7 +89,7 @@ class RestorePoint:
         源实例ID。
 
         :param instance_id: The instance_id of this RestorePoint.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -98,7 +111,7 @@ class RestorePoint:
         表示恢复方式，枚举值：  - “backup”，表示使用备份文件恢复，按照此方式恢复时，“type”字段为非必选，“backup_id”必选。 - “timestamp”，表示按时间点恢复，按照此方式恢复时，“type”字段必选，“restore_time”必选。
 
         :param type: The type of this RestorePoint.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -120,7 +133,7 @@ class RestorePoint:
         用于恢复的备份ID。当使用备份文件恢复时需要指定该参数。
 
         :param backup_id: The backup_id of this RestorePoint.
-        :type: str
+        :type backup_id: str
         """
         self._backup_id = backup_id
 
@@ -142,7 +155,7 @@ class RestorePoint:
         恢复数据的时间点，格式为UNIX时间戳，单位是毫秒，时区为UTC。
 
         :param restore_time: The restore_time of this RestorePoint.
-        :type: int
+        :type restore_time: int
         """
         self._restore_time = restore_time
 
@@ -164,7 +177,7 @@ class RestorePoint:
         仅适用于SQL Server引擎，当有此参数时表示支持局部恢复和重命名恢复，恢复数据以局部恢复为主。  - 新数据库名称不可与源实例数据库名称重名，新数据库名称为空，默认按照原数据库名进行恢复。   注意：   不填写该字段时，默认恢复全部数据库。    示例：”database_name”:{“原库名”:”新库名”}  - 新数据库名不能包含rdsadmin、master、msdb、tempdb、model或resource字段（不区分大小写）。 - 数据库名称长度在1~64个字符之间，包含字母、数字、下划线或中划线，不能包含其他特殊字符。
 
         :param database_name: The database_name of this RestorePoint.
-        :type: dict(str, str)
+        :type database_name: dict(str, str)
         """
         self._database_name = database_name
 

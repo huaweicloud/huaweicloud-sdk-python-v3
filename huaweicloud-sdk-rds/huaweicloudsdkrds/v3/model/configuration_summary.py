@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ConfigurationSummary:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ConfigurationSummary:
     }
 
     def __init__(self, id=None, name=None, description=None, datastore_version_name=None, datastore_name=None, created=None, updated=None, user_defined=None):
-        """ConfigurationSummary - a model defined in huaweicloud sdk"""
+        """ConfigurationSummary
+
+        The model defined in huaweicloud sdk
+
+        :param id: 参数组ID。
+        :type id: str
+        :param name: 参数组名称。
+        :type name: str
+        :param description: 参数组描述。
+        :type description: str
+        :param datastore_version_name: 引擎版本。
+        :type datastore_version_name: str
+        :param datastore_name: 引擎名。
+        :type datastore_name: str
+        :param created: 创建时间，格式为\&quot;yyyy-MM-ddTHH:mm:ssZ\&quot;。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        :type created: str
+        :param updated: 更新时间，格式为\&quot;yyyy-MM-ddTHH:mm:ssZ\&quot;。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        :type updated: str
+        :param user_defined: 是否是用户自定义参数模板：  - false，表示为系统默认参数模板。 - true，表示为用户自定义参数模板。
+        :type user_defined: bool
+        """
         
         
 
@@ -86,7 +105,7 @@ class ConfigurationSummary:
         参数组ID。
 
         :param id: The id of this ConfigurationSummary.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -108,7 +127,7 @@ class ConfigurationSummary:
         参数组名称。
 
         :param name: The name of this ConfigurationSummary.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -130,7 +149,7 @@ class ConfigurationSummary:
         参数组描述。
 
         :param description: The description of this ConfigurationSummary.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -152,7 +171,7 @@ class ConfigurationSummary:
         引擎版本。
 
         :param datastore_version_name: The datastore_version_name of this ConfigurationSummary.
-        :type: str
+        :type datastore_version_name: str
         """
         self._datastore_version_name = datastore_version_name
 
@@ -174,7 +193,7 @@ class ConfigurationSummary:
         引擎名。
 
         :param datastore_name: The datastore_name of this ConfigurationSummary.
-        :type: str
+        :type datastore_name: str
         """
         self._datastore_name = datastore_name
 
@@ -196,7 +215,7 @@ class ConfigurationSummary:
         创建时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
         :param created: The created of this ConfigurationSummary.
-        :type: str
+        :type created: str
         """
         self._created = created
 
@@ -218,7 +237,7 @@ class ConfigurationSummary:
         更新时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
         :param updated: The updated of this ConfigurationSummary.
-        :type: str
+        :type updated: str
         """
         self._updated = updated
 
@@ -240,7 +259,7 @@ class ConfigurationSummary:
         是否是用户自定义参数模板：  - false，表示为系统默认参数模板。 - true，表示为用户自定义参数模板。
 
         :param user_defined: The user_defined of this ConfigurationSummary.
-        :type: bool
+        :type user_defined: bool
         """
         self._user_defined = user_defined
 

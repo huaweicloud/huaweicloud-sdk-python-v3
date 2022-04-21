@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RenameCommandResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class RenameCommandResp:
     }
 
     def __init__(self, command=None, flushall=None, flushdb=None, hgetall=None, keys=None):
-        """RenameCommandResp - a model defined in huaweicloud sdk"""
+        """RenameCommandResp
+
+        The model defined in huaweicloud sdk
+
+        :param command: 命令command
+        :type command: str
+        :param flushall: 命令flushall
+        :type flushall: str
+        :param flushdb: 命令flushdb
+        :type flushdb: str
+        :param hgetall: 命令hgetall
+        :type hgetall: str
+        :param keys: 命令keys
+        :type keys: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class RenameCommandResp:
         命令command
 
         :param command: The command of this RenameCommandResp.
-        :type: str
+        :type command: str
         """
         self._command = command
 
@@ -100,7 +113,7 @@ class RenameCommandResp:
         命令flushall
 
         :param flushall: The flushall of this RenameCommandResp.
-        :type: str
+        :type flushall: str
         """
         self._flushall = flushall
 
@@ -122,7 +135,7 @@ class RenameCommandResp:
         命令flushdb
 
         :param flushdb: The flushdb of this RenameCommandResp.
-        :type: str
+        :type flushdb: str
         """
         self._flushdb = flushdb
 
@@ -144,7 +157,7 @@ class RenameCommandResp:
         命令hgetall
 
         :param hgetall: The hgetall of this RenameCommandResp.
-        :type: str
+        :type hgetall: str
         """
         self._hgetall = hgetall
 
@@ -166,7 +179,7 @@ class RenameCommandResp:
         命令keys
 
         :param keys: The keys of this RenameCommandResp.
-        :type: str
+        :type keys: str
         """
         self._keys = keys
 

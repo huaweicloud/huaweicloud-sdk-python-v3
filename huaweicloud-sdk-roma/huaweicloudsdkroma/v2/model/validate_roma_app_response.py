@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ValidateRomaAppResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ValidateRomaAppResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, remark=None):
-        """ValidateRomaAppResponse - a model defined in huaweicloud sdk"""
+        """ValidateRomaAppResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 应用ID
+        :type id: str
+        :param name: 应用名称 - 字符集：支持中文、英文字母、数字、中划线、下划线、点、空格和中英文圆括号 - 约束：实例下唯一
+        :type name: str
+        :param remark: 应用描述
+        :type remark: str
+        """
         
         super(ValidateRomaAppResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ValidateRomaAppResponse(SdkResponse):
         应用ID
 
         :param id: The id of this ValidateRomaAppResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -90,7 +99,7 @@ class ValidateRomaAppResponse(SdkResponse):
         应用名称 - 字符集：支持中文、英文字母、数字、中划线、下划线、点、空格和中英文圆括号 - 约束：实例下唯一
 
         :param name: The name of this ValidateRomaAppResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -112,7 +121,7 @@ class ValidateRomaAppResponse(SdkResponse):
         应用描述
 
         :param remark: The remark of this ValidateRomaAppResponse.
-        :type: str
+        :type remark: str
         """
         self._remark = remark
 

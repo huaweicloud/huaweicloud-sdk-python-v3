@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAppsV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class ListAppsV2Request:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, id=None, name=None, status=None, app_key=None, creator=None, precise_search=None):
-        """ListAppsV2Request - a model defined in huaweicloud sdk"""
+        """ListAppsV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param offset: 偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
+        :type offset: int
+        :param limit: 每页显示的条目数量
+        :type limit: int
+        :param id: APP编号
+        :type id: str
+        :param name: APP名称
+        :type name: str
+        :param status: APP状态
+        :type status: int
+        :param app_key: APP的KEY
+        :type app_key: str
+        :param creator: APP的创建者。 - USER：用户自行创建 - MARKET：云市场分配
+        :type creator: str
+        :param precise_search: 指定需要精确匹配查找的参数名称，目前仅支持name
+        :type precise_search: str
+        """
         
         
 
@@ -97,7 +118,7 @@ class ListAppsV2Request:
         实例ID
 
         :param instance_id: The instance_id of this ListAppsV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -119,7 +140,7 @@ class ListAppsV2Request:
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
         :param offset: The offset of this ListAppsV2Request.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -141,7 +162,7 @@ class ListAppsV2Request:
         每页显示的条目数量
 
         :param limit: The limit of this ListAppsV2Request.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -163,7 +184,7 @@ class ListAppsV2Request:
         APP编号
 
         :param id: The id of this ListAppsV2Request.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -185,7 +206,7 @@ class ListAppsV2Request:
         APP名称
 
         :param name: The name of this ListAppsV2Request.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -207,7 +228,7 @@ class ListAppsV2Request:
         APP状态
 
         :param status: The status of this ListAppsV2Request.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -229,7 +250,7 @@ class ListAppsV2Request:
         APP的KEY
 
         :param app_key: The app_key of this ListAppsV2Request.
-        :type: str
+        :type app_key: str
         """
         self._app_key = app_key
 
@@ -251,7 +272,7 @@ class ListAppsV2Request:
         APP的创建者。 - USER：用户自行创建 - MARKET：云市场分配
 
         :param creator: The creator of this ListAppsV2Request.
-        :type: str
+        :type creator: str
         """
         self._creator = creator
 
@@ -273,7 +294,7 @@ class ListAppsV2Request:
         指定需要精确匹配查找的参数名称，目前仅支持name
 
         :param precise_search: The precise_search of this ListAppsV2Request.
-        :type: str
+        :type precise_search: str
         """
         self._precise_search = precise_search
 

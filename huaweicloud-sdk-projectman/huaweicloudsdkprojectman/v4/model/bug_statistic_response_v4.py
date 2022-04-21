@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BugStatisticResponseV4:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class BugStatisticResponseV4:
     }
 
     def __init__(self, critical_num=None, defect_index=None, module=None, normal_num=None, serious_num=None, tip_num=None, total=None):
-        """BugStatisticResponseV4 - a model defined in huaweicloud sdk"""
+        """BugStatisticResponseV4
+
+        The model defined in huaweicloud sdk
+
+        :param critical_num: 重要程度为关键的缺陷数
+        :type critical_num: int
+        :param defect_index: DI
+        :type defect_index: float
+        :param module: 模块
+        :type module: str
+        :param normal_num: 重要程度为一般的缺陷数
+        :type normal_num: int
+        :param serious_num: 重要程度为严重的缺陷数
+        :type serious_num: int
+        :param tip_num: 重要程度为提示的缺陷数
+        :type tip_num: int
+        :param total: 总数
+        :type total: int
+        """
         
         
 
@@ -88,7 +105,7 @@ class BugStatisticResponseV4:
         重要程度为关键的缺陷数
 
         :param critical_num: The critical_num of this BugStatisticResponseV4.
-        :type: int
+        :type critical_num: int
         """
         self._critical_num = critical_num
 
@@ -110,7 +127,7 @@ class BugStatisticResponseV4:
         DI
 
         :param defect_index: The defect_index of this BugStatisticResponseV4.
-        :type: float
+        :type defect_index: float
         """
         self._defect_index = defect_index
 
@@ -132,7 +149,7 @@ class BugStatisticResponseV4:
         模块
 
         :param module: The module of this BugStatisticResponseV4.
-        :type: str
+        :type module: str
         """
         self._module = module
 
@@ -154,7 +171,7 @@ class BugStatisticResponseV4:
         重要程度为一般的缺陷数
 
         :param normal_num: The normal_num of this BugStatisticResponseV4.
-        :type: int
+        :type normal_num: int
         """
         self._normal_num = normal_num
 
@@ -176,7 +193,7 @@ class BugStatisticResponseV4:
         重要程度为严重的缺陷数
 
         :param serious_num: The serious_num of this BugStatisticResponseV4.
-        :type: int
+        :type serious_num: int
         """
         self._serious_num = serious_num
 
@@ -198,7 +215,7 @@ class BugStatisticResponseV4:
         重要程度为提示的缺陷数
 
         :param tip_num: The tip_num of this BugStatisticResponseV4.
-        :type: int
+        :type tip_num: int
         """
         self._tip_num = tip_num
 
@@ -220,7 +237,7 @@ class BugStatisticResponseV4:
         总数
 
         :param total: The total of this BugStatisticResponseV4.
-        :type: int
+        :type total: int
         """
         self._total = total
 

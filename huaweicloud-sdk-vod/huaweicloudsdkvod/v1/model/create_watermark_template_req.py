@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateWatermarkTemplateReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class CreateWatermarkTemplateReq:
     }
 
     def __init__(self, name=None, watermark_type=None, image_process=None, dx=None, dy=None, position=None, width=None, height=None, timeline_start=None, timeline_duration=None, type=None, md5=None):
-        """CreateWatermarkTemplateReq - a model defined in huaweicloud sdk"""
+        """CreateWatermarkTemplateReq
+
+        The model defined in huaweicloud sdk
+
+        :param name: 水印模板名称。
+        :type name: str
+        :param watermark_type: 水印类型，当前只支持Image（图片水印）。
+        :type watermark_type: str
+        :param image_process: type设置为Image时有效。  目前包括： - Original：只做简单缩放，不做其他处理 - Transparent：图片底色透明 - Grayed：彩色图片变灰
+        :type image_process: str
+        :param dx: 水印图片相对输出视频的水平偏移量，默认值是0。
+        :type dx: str
+        :param dy: 水印图片相对输出视频的垂直偏移量，默认值是0。
+        :type dy: str
+        :param position: 水印的位置。
+        :type position: str
+        :param width: 水印图片宽。
+        :type width: str
+        :param height: 水印图片高。
+        :type height: str
+        :param timeline_start: 水印开始时间。
+        :type timeline_start: str
+        :param timeline_duration: 水印持续时间。
+        :type timeline_duration: str
+        :param type: 水印图片格式类型。
+        :type type: str
+        :param md5: 水印图片MD5值。
+        :type md5: str
+        """
         
         
 
@@ -111,7 +138,7 @@ class CreateWatermarkTemplateReq:
         水印模板名称。
 
         :param name: The name of this CreateWatermarkTemplateReq.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -133,7 +160,7 @@ class CreateWatermarkTemplateReq:
         水印类型，当前只支持Image（图片水印）。
 
         :param watermark_type: The watermark_type of this CreateWatermarkTemplateReq.
-        :type: str
+        :type watermark_type: str
         """
         self._watermark_type = watermark_type
 
@@ -155,7 +182,7 @@ class CreateWatermarkTemplateReq:
         type设置为Image时有效。  目前包括： - Original：只做简单缩放，不做其他处理 - Transparent：图片底色透明 - Grayed：彩色图片变灰
 
         :param image_process: The image_process of this CreateWatermarkTemplateReq.
-        :type: str
+        :type image_process: str
         """
         self._image_process = image_process
 
@@ -177,7 +204,7 @@ class CreateWatermarkTemplateReq:
         水印图片相对输出视频的水平偏移量，默认值是0。
 
         :param dx: The dx of this CreateWatermarkTemplateReq.
-        :type: str
+        :type dx: str
         """
         self._dx = dx
 
@@ -199,7 +226,7 @@ class CreateWatermarkTemplateReq:
         水印图片相对输出视频的垂直偏移量，默认值是0。
 
         :param dy: The dy of this CreateWatermarkTemplateReq.
-        :type: str
+        :type dy: str
         """
         self._dy = dy
 
@@ -221,7 +248,7 @@ class CreateWatermarkTemplateReq:
         水印的位置。
 
         :param position: The position of this CreateWatermarkTemplateReq.
-        :type: str
+        :type position: str
         """
         self._position = position
 
@@ -243,7 +270,7 @@ class CreateWatermarkTemplateReq:
         水印图片宽。
 
         :param width: The width of this CreateWatermarkTemplateReq.
-        :type: str
+        :type width: str
         """
         self._width = width
 
@@ -265,7 +292,7 @@ class CreateWatermarkTemplateReq:
         水印图片高。
 
         :param height: The height of this CreateWatermarkTemplateReq.
-        :type: str
+        :type height: str
         """
         self._height = height
 
@@ -287,7 +314,7 @@ class CreateWatermarkTemplateReq:
         水印开始时间。
 
         :param timeline_start: The timeline_start of this CreateWatermarkTemplateReq.
-        :type: str
+        :type timeline_start: str
         """
         self._timeline_start = timeline_start
 
@@ -309,7 +336,7 @@ class CreateWatermarkTemplateReq:
         水印持续时间。
 
         :param timeline_duration: The timeline_duration of this CreateWatermarkTemplateReq.
-        :type: str
+        :type timeline_duration: str
         """
         self._timeline_duration = timeline_duration
 
@@ -331,7 +358,7 @@ class CreateWatermarkTemplateReq:
         水印图片格式类型。
 
         :param type: The type of this CreateWatermarkTemplateReq.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -353,7 +380,7 @@ class CreateWatermarkTemplateReq:
         水印图片MD5值。
 
         :param md5: The md5 of this CreateWatermarkTemplateReq.
-        :type: str
+        :type md5: str
         """
         self._md5 = md5
 

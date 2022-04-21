@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PublicipInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class PublicipInfo:
     }
 
     def __init__(self, ip_version=None, publicip_address=None, publicip_id=None, publicip_type=None):
-        """PublicipInfo - a model defined in huaweicloud sdk"""
+        """PublicipInfo
+
+        The model defined in huaweicloud sdk
+
+        :param ip_version:   IP版本的信息
+        :type ip_version: int
+        :param publicip_address: 弹性公网IP
+        :type publicip_address: str
+        :param publicip_id: 弹性公网IP的ID。
+        :type publicip_id: str
+        :param publicip_type: 功能说明：弹性公网IP的类型
+        :type publicip_type: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class PublicipInfo:
           IP版本的信息
 
         :param ip_version: The ip_version of this PublicipInfo.
-        :type: int
+        :type ip_version: int
         """
         self._ip_version = ip_version
 
@@ -95,7 +106,7 @@ class PublicipInfo:
         弹性公网IP
 
         :param publicip_address: The publicip_address of this PublicipInfo.
-        :type: str
+        :type publicip_address: str
         """
         self._publicip_address = publicip_address
 
@@ -117,7 +128,7 @@ class PublicipInfo:
         弹性公网IP的ID。
 
         :param publicip_id: The publicip_id of this PublicipInfo.
-        :type: str
+        :type publicip_id: str
         """
         self._publicip_id = publicip_id
 
@@ -139,7 +150,7 @@ class PublicipInfo:
         功能说明：弹性公网IP的类型
 
         :param publicip_type: The publicip_type of this PublicipInfo.
-        :type: str
+        :type publicip_type: str
         """
         self._publicip_type = publicip_type
 

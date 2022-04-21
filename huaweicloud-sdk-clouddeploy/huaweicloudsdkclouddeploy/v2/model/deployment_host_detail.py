@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeploymentHostDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -58,7 +57,41 @@ class DeploymentHostDetail:
     }
 
     def __init__(self, group_id=None, host_name=None, ip=None, port=None, os=None, as_proxy=None, proxy_host_id=None, authorization=None, install_icagent=None, host_id=None, proxy_host=None, group_name=None, project_id=None, project_name=None, permission=None):
-        """DeploymentHostDetail - a model defined in huaweicloud sdk"""
+        """DeploymentHostDetail
+
+        The model defined in huaweicloud sdk
+
+        :param group_id: 主机组id
+        :type group_id: str
+        :param host_name: 主机名称
+        :type host_name: str
+        :param ip: IP，请输入弹性ip格式：161.17.101.12
+        :type ip: str
+        :param port: ssh端口，如：22
+        :type port: int
+        :param os: 操作系统：windows|linux，需要和主机组保持一致
+        :type os: str
+        :param as_proxy: 是否为代理机
+        :type as_proxy: bool
+        :param proxy_host_id: 代理机id
+        :type proxy_host_id: str
+        :param authorization: 
+        :type authorization: :class:`huaweicloudsdkclouddeploy.v2.DeploymentHostAuthorizationBody`
+        :param install_icagent: 免费启用应用运维服务（AOM），提供指标监控、日志查询、告警功能（自动安装数据采集器 ICAgent，仅支持华为云linux主机）
+        :type install_icagent: bool
+        :param host_id: 主机ID
+        :type host_id: str
+        :param proxy_host: 
+        :type proxy_host: :class:`huaweicloudsdkclouddeploy.v2.DeploymentHostDetail`
+        :param group_name: 主机组名
+        :type group_name: str
+        :param project_id: devcloud项目id
+        :type project_id: str
+        :param project_name: devcloud项目名称
+        :type project_name: str
+        :param permission: 
+        :type permission: :class:`huaweicloudsdkclouddeploy.v2.PermissionHostDetail`
+        """
         
         
 
@@ -121,7 +154,7 @@ class DeploymentHostDetail:
         主机组id
 
         :param group_id: The group_id of this DeploymentHostDetail.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -143,7 +176,7 @@ class DeploymentHostDetail:
         主机名称
 
         :param host_name: The host_name of this DeploymentHostDetail.
-        :type: str
+        :type host_name: str
         """
         self._host_name = host_name
 
@@ -165,7 +198,7 @@ class DeploymentHostDetail:
         IP，请输入弹性ip格式：161.17.101.12
 
         :param ip: The ip of this DeploymentHostDetail.
-        :type: str
+        :type ip: str
         """
         self._ip = ip
 
@@ -187,7 +220,7 @@ class DeploymentHostDetail:
         ssh端口，如：22
 
         :param port: The port of this DeploymentHostDetail.
-        :type: int
+        :type port: int
         """
         self._port = port
 
@@ -209,7 +242,7 @@ class DeploymentHostDetail:
         操作系统：windows|linux，需要和主机组保持一致
 
         :param os: The os of this DeploymentHostDetail.
-        :type: str
+        :type os: str
         """
         self._os = os
 
@@ -231,7 +264,7 @@ class DeploymentHostDetail:
         是否为代理机
 
         :param as_proxy: The as_proxy of this DeploymentHostDetail.
-        :type: bool
+        :type as_proxy: bool
         """
         self._as_proxy = as_proxy
 
@@ -253,7 +286,7 @@ class DeploymentHostDetail:
         代理机id
 
         :param proxy_host_id: The proxy_host_id of this DeploymentHostDetail.
-        :type: str
+        :type proxy_host_id: str
         """
         self._proxy_host_id = proxy_host_id
 
@@ -263,7 +296,7 @@ class DeploymentHostDetail:
 
 
         :return: The authorization of this DeploymentHostDetail.
-        :rtype: DeploymentHostAuthorizationBody
+        :rtype: :class:`huaweicloudsdkclouddeploy.v2.DeploymentHostAuthorizationBody`
         """
         return self._authorization
 
@@ -273,7 +306,7 @@ class DeploymentHostDetail:
 
 
         :param authorization: The authorization of this DeploymentHostDetail.
-        :type: DeploymentHostAuthorizationBody
+        :type authorization: :class:`huaweicloudsdkclouddeploy.v2.DeploymentHostAuthorizationBody`
         """
         self._authorization = authorization
 
@@ -295,7 +328,7 @@ class DeploymentHostDetail:
         免费启用应用运维服务（AOM），提供指标监控、日志查询、告警功能（自动安装数据采集器 ICAgent，仅支持华为云linux主机）
 
         :param install_icagent: The install_icagent of this DeploymentHostDetail.
-        :type: bool
+        :type install_icagent: bool
         """
         self._install_icagent = install_icagent
 
@@ -317,7 +350,7 @@ class DeploymentHostDetail:
         主机ID
 
         :param host_id: The host_id of this DeploymentHostDetail.
-        :type: str
+        :type host_id: str
         """
         self._host_id = host_id
 
@@ -327,7 +360,7 @@ class DeploymentHostDetail:
 
 
         :return: The proxy_host of this DeploymentHostDetail.
-        :rtype: DeploymentHostDetail
+        :rtype: :class:`huaweicloudsdkclouddeploy.v2.DeploymentHostDetail`
         """
         return self._proxy_host
 
@@ -337,7 +370,7 @@ class DeploymentHostDetail:
 
 
         :param proxy_host: The proxy_host of this DeploymentHostDetail.
-        :type: DeploymentHostDetail
+        :type proxy_host: :class:`huaweicloudsdkclouddeploy.v2.DeploymentHostDetail`
         """
         self._proxy_host = proxy_host
 
@@ -359,7 +392,7 @@ class DeploymentHostDetail:
         主机组名
 
         :param group_name: The group_name of this DeploymentHostDetail.
-        :type: str
+        :type group_name: str
         """
         self._group_name = group_name
 
@@ -381,7 +414,7 @@ class DeploymentHostDetail:
         devcloud项目id
 
         :param project_id: The project_id of this DeploymentHostDetail.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -403,7 +436,7 @@ class DeploymentHostDetail:
         devcloud项目名称
 
         :param project_name: The project_name of this DeploymentHostDetail.
-        :type: str
+        :type project_name: str
         """
         self._project_name = project_name
 
@@ -413,7 +446,7 @@ class DeploymentHostDetail:
 
 
         :return: The permission of this DeploymentHostDetail.
-        :rtype: PermissionHostDetail
+        :rtype: :class:`huaweicloudsdkclouddeploy.v2.PermissionHostDetail`
         """
         return self._permission
 
@@ -423,7 +456,7 @@ class DeploymentHostDetail:
 
 
         :param permission: The permission of this DeploymentHostDetail.
-        :type: PermissionHostDetail
+        :type permission: :class:`huaweicloudsdkclouddeploy.v2.PermissionHostDetail`
         """
         self._permission = permission
 

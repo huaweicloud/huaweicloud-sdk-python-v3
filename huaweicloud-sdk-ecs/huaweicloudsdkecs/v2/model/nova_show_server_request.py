@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NovaShowServerRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class NovaShowServerRequest:
     }
 
     def __init__(self, server_id=None, open_stack_api_version=None):
-        """NovaShowServerRequest - a model defined in huaweicloud sdk"""
+        """NovaShowServerRequest
+
+        The model defined in huaweicloud sdk
+
+        :param server_id: 云服务器ID。
+        :type server_id: str
+        :param open_stack_api_version: 微版本头
+        :type open_stack_api_version: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class NovaShowServerRequest:
         云服务器ID。
 
         :param server_id: The server_id of this NovaShowServerRequest.
-        :type: str
+        :type server_id: str
         """
         self._server_id = server_id
 
@@ -84,7 +91,7 @@ class NovaShowServerRequest:
         微版本头
 
         :param open_stack_api_version: The open_stack_api_version of this NovaShowServerRequest.
-        :type: str
+        :type open_stack_api_version: str
         """
         self._open_stack_api_version = open_stack_api_version
 

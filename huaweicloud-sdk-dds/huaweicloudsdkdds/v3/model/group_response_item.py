@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GroupResponseItem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class GroupResponseItem:
     }
 
     def __init__(self, type=None, id=None, name=None, status=None, volume=None, nodes=None):
-        """GroupResponseItem - a model defined in huaweicloud sdk"""
+        """GroupResponseItem
+
+        The model defined in huaweicloud sdk
+
+        :param type: 节点类型。 取值： - shard - config - mongos - replica - single
+        :type type: str
+        :param id: 组ID。节点类型为shard和config时，该参数有效。
+        :type id: str
+        :param name: 组名称。节点类型为shard和config时，该参数有效。
+        :type name: str
+        :param status: 组状态。节点类型为shard和config时，该参数有效。
+        :type status: str
+        :param volume: 
+        :type volume: :class:`huaweicloudsdkdds.v3.Volume`
+        :param nodes: 节点信息。
+        :type nodes: list[:class:`huaweicloudsdkdds.v3.NodeItem`]
+        """
         
         
 
@@ -77,7 +92,7 @@ class GroupResponseItem:
         节点类型。 取值： - shard - config - mongos - replica - single
 
         :param type: The type of this GroupResponseItem.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -99,7 +114,7 @@ class GroupResponseItem:
         组ID。节点类型为shard和config时，该参数有效。
 
         :param id: The id of this GroupResponseItem.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -121,7 +136,7 @@ class GroupResponseItem:
         组名称。节点类型为shard和config时，该参数有效。
 
         :param name: The name of this GroupResponseItem.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -143,7 +158,7 @@ class GroupResponseItem:
         组状态。节点类型为shard和config时，该参数有效。
 
         :param status: The status of this GroupResponseItem.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -153,7 +168,7 @@ class GroupResponseItem:
 
 
         :return: The volume of this GroupResponseItem.
-        :rtype: Volume
+        :rtype: :class:`huaweicloudsdkdds.v3.Volume`
         """
         return self._volume
 
@@ -163,7 +178,7 @@ class GroupResponseItem:
 
 
         :param volume: The volume of this GroupResponseItem.
-        :type: Volume
+        :type volume: :class:`huaweicloudsdkdds.v3.Volume`
         """
         self._volume = volume
 
@@ -174,7 +189,7 @@ class GroupResponseItem:
         节点信息。
 
         :return: The nodes of this GroupResponseItem.
-        :rtype: list[NodeItem]
+        :rtype: list[:class:`huaweicloudsdkdds.v3.NodeItem`]
         """
         return self._nodes
 
@@ -185,7 +200,7 @@ class GroupResponseItem:
         节点信息。
 
         :param nodes: The nodes of this GroupResponseItem.
-        :type: list[NodeItem]
+        :type nodes: list[:class:`huaweicloudsdkdds.v3.NodeItem`]
         """
         self._nodes = nodes
 

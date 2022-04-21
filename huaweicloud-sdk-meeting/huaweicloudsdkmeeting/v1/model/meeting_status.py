@@ -12,11 +12,9 @@ class MeetingStatus:
     """
     allowed enum values
     """
-
     SCHEDULE = "schedule"
     CREATED = "created"
     DESTROYED = "destroyed"
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +32,11 @@ class MeetingStatus:
     }
 
     def __init__(self):
-        """MeetingStatus - a model defined in huaweicloud sdk"""
+        """MeetingStatus
+
+        The model defined in huaweicloud sdk
+
+        """
         
         
         self.discriminator = None

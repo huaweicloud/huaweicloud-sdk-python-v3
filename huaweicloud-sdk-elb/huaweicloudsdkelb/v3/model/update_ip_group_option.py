@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateIpGroupOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateIpGroupOption:
     }
 
     def __init__(self, description=None, name=None, ip_list=None):
-        """UpdateIpGroupOption - a model defined in huaweicloud sdk"""
+        """UpdateIpGroupOption
+
+        The model defined in huaweicloud sdk
+
+        :param description: IP地址组的描述信息
+        :type description: str
+        :param name: IP地址组的名称
+        :type name: str
+        :param ip_list: IP地址组中包含的IP列表。
+        :type ip_list: list[:class:`huaweicloudsdkelb.v3.UpadateIpGroupIpOption`]
+        """
         
         
 
@@ -68,7 +77,7 @@ class UpdateIpGroupOption:
         IP地址组的描述信息
 
         :param description: The description of this UpdateIpGroupOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -90,7 +99,7 @@ class UpdateIpGroupOption:
         IP地址组的名称
 
         :param name: The name of this UpdateIpGroupOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -101,7 +110,7 @@ class UpdateIpGroupOption:
         IP地址组中包含的IP列表。
 
         :return: The ip_list of this UpdateIpGroupOption.
-        :rtype: list[UpadateIpGroupIpOption]
+        :rtype: list[:class:`huaweicloudsdkelb.v3.UpadateIpGroupIpOption`]
         """
         return self._ip_list
 
@@ -112,7 +121,7 @@ class UpdateIpGroupOption:
         IP地址组中包含的IP列表。
 
         :param ip_list: The ip_list of this UpdateIpGroupOption.
-        :type: list[UpadateIpGroupIpOption]
+        :type ip_list: list[:class:`huaweicloudsdkelb.v3.UpadateIpGroupIpOption`]
         """
         self._ip_list = ip_list
 

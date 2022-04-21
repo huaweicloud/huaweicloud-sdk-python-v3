@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IvsExtentionByNameAndIdResponseBodyResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class IvsExtentionByNameAndIdResponseBodyResult:
     }
 
     def __init__(self, service_name=None, count=None, resp_data=None):
-        """IvsExtentionByNameAndIdResponseBodyResult - a model defined in huaweicloud sdk"""
+        """IvsExtentionByNameAndIdResponseBodyResult
+
+        The model defined in huaweicloud sdk
+
+        :param service_name: 子服务名称。
+        :type service_name: str
+        :param count: 成功的结果数量，与resp_data字段对应。
+        :type count: int
+        :param resp_data: 请求列表，用于支持批量调用。目前暂时只支持单个数据查询。
+        :type resp_data: list[:class:`huaweicloudsdkivs.v2.ExtentionRespDataByNameAndId`]
+        """
         
         
 
@@ -68,7 +77,7 @@ class IvsExtentionByNameAndIdResponseBodyResult:
         子服务名称。
 
         :param service_name: The service_name of this IvsExtentionByNameAndIdResponseBodyResult.
-        :type: str
+        :type service_name: str
         """
         self._service_name = service_name
 
@@ -90,7 +99,7 @@ class IvsExtentionByNameAndIdResponseBodyResult:
         成功的结果数量，与resp_data字段对应。
 
         :param count: The count of this IvsExtentionByNameAndIdResponseBodyResult.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -101,7 +110,7 @@ class IvsExtentionByNameAndIdResponseBodyResult:
         请求列表，用于支持批量调用。目前暂时只支持单个数据查询。
 
         :return: The resp_data of this IvsExtentionByNameAndIdResponseBodyResult.
-        :rtype: list[ExtentionRespDataByNameAndId]
+        :rtype: list[:class:`huaweicloudsdkivs.v2.ExtentionRespDataByNameAndId`]
         """
         return self._resp_data
 
@@ -112,7 +121,7 @@ class IvsExtentionByNameAndIdResponseBodyResult:
         请求列表，用于支持批量调用。目前暂时只支持单个数据查询。
 
         :param resp_data: The resp_data of this IvsExtentionByNameAndIdResponseBodyResult.
-        :type: list[ExtentionRespDataByNameAndId]
+        :type resp_data: list[:class:`huaweicloudsdkivs.v2.ExtentionRespDataByNameAndId`]
         """
         self._resp_data = resp_data
 

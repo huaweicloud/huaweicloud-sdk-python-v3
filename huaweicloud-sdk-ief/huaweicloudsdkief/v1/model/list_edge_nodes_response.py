@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListEdgeNodesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListEdgeNodesResponse(SdkResponse):
     }
 
     def __init__(self, nodes=None, count=None):
-        """ListEdgeNodesResponse - a model defined in huaweicloud sdk"""
+        """ListEdgeNodesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param nodes: 边缘节点列表
+        :type nodes: list[:class:`huaweicloudsdkief.v1.EdgeNodeResp`]
+        :param count: 满足条件的边缘节点个数
+        :type count: int
+        """
         
         super(ListEdgeNodesResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListEdgeNodesResponse(SdkResponse):
         边缘节点列表
 
         :return: The nodes of this ListEdgeNodesResponse.
-        :rtype: list[EdgeNodeResp]
+        :rtype: list[:class:`huaweicloudsdkief.v1.EdgeNodeResp`]
         """
         return self._nodes
 
@@ -63,7 +70,7 @@ class ListEdgeNodesResponse(SdkResponse):
         边缘节点列表
 
         :param nodes: The nodes of this ListEdgeNodesResponse.
-        :type: list[EdgeNodeResp]
+        :type nodes: list[:class:`huaweicloudsdkief.v1.EdgeNodeResp`]
         """
         self._nodes = nodes
 
@@ -85,7 +92,7 @@ class ListEdgeNodesResponse(SdkResponse):
         满足条件的边缘节点个数
 
         :param count: The count of this ListEdgeNodesResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

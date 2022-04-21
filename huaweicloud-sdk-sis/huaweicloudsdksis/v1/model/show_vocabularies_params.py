@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowVocabulariesParams:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowVocabulariesParams:
     }
 
     def __init__(self, name=None):
-        """ShowVocabulariesParams - a model defined in huaweicloud sdk"""
+        """ShowVocabulariesParams
+
+        The model defined in huaweicloud sdk
+
+        :param name: 热词表的表名，用于筛选热词表表名。
+        :type name: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class ShowVocabulariesParams:
         热词表的表名，用于筛选热词表表名。
 
         :param name: The name of this ShowVocabulariesParams.
-        :type: str
+        :type name: str
         """
         self._name = name
 

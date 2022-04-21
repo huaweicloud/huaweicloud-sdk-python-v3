@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateAppSecretReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateAppSecretReq:
     }
 
     def __init__(self, secret=None):
-        """UpdateAppSecretReq - a model defined in huaweicloud sdk"""
+        """UpdateAppSecretReq
+
+        The model defined in huaweicloud sdk
+
+        :param secret: 应用认证访问SECRET,未提供（字段不存在或值为null）时随机生成 - 字符集：英文字母、数字、！、@、#、$、%、+、&#x3D;、点、中划线、斜线/ - 复杂度：满足大小写字母、数字、特殊字符的复杂度组合，考虑兼容性暂时可不做
+        :type secret: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class UpdateAppSecretReq:
         应用认证访问SECRET,未提供（字段不存在或值为null）时随机生成 - 字符集：英文字母、数字、！、@、#、$、%、+、=、点、中划线、斜线/ - 复杂度：满足大小写字母、数字、特殊字符的复杂度组合，考虑兼容性暂时可不做
 
         :param secret: The secret of this UpdateAppSecretReq.
-        :type: str
+        :type secret: str
         """
         self._secret = secret
 

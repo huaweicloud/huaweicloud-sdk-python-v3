@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SimpleIncidentBusinessTypeV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class SimpleIncidentBusinessTypeV2:
     }
 
     def __init__(self, business_type_id=None, business_type_name=None, case_type=None, can_use_support_plan=None):
-        """SimpleIncidentBusinessTypeV2 - a model defined in huaweicloud sdk"""
+        """SimpleIncidentBusinessTypeV2
+
+        The model defined in huaweicloud sdk
+
+        :param business_type_id: 问题类型id
+        :type business_type_id: str
+        :param business_type_name: 问题类型名称
+        :type business_type_name: str
+        :param case_type: 对应的工单类型0咨询 5报障
+        :type case_type: str
+        :param can_use_support_plan: 是否可以使用支持计划
+        :type can_use_support_plan: bool
+        """
         
         
 
@@ -73,7 +84,7 @@ class SimpleIncidentBusinessTypeV2:
         问题类型id
 
         :param business_type_id: The business_type_id of this SimpleIncidentBusinessTypeV2.
-        :type: str
+        :type business_type_id: str
         """
         self._business_type_id = business_type_id
 
@@ -95,7 +106,7 @@ class SimpleIncidentBusinessTypeV2:
         问题类型名称
 
         :param business_type_name: The business_type_name of this SimpleIncidentBusinessTypeV2.
-        :type: str
+        :type business_type_name: str
         """
         self._business_type_name = business_type_name
 
@@ -117,7 +128,7 @@ class SimpleIncidentBusinessTypeV2:
         对应的工单类型0咨询 5报障
 
         :param case_type: The case_type of this SimpleIncidentBusinessTypeV2.
-        :type: str
+        :type case_type: str
         """
         self._case_type = case_type
 
@@ -139,7 +150,7 @@ class SimpleIncidentBusinessTypeV2:
         是否可以使用支持计划
 
         :param can_use_support_plan: The can_use_support_plan of this SimpleIncidentBusinessTypeV2.
-        :type: bool
+        :type can_use_support_plan: bool
         """
         self._can_use_support_plan = can_use_support_plan
 

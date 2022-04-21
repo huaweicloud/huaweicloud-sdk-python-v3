@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OriginRangeBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class OriginRangeBody:
     }
 
     def __init__(self, range_status=None, domain_id=None):
-        """OriginRangeBody - a model defined in huaweicloud sdk"""
+        """OriginRangeBody
+
+        The model defined in huaweicloud sdk
+
+        :param range_status: range状态（\&quot;off\&quot;/\&quot;on\&quot;）
+        :type range_status: str
+        :param domain_id: 加速域名id。获取方法请参见查询加速域名。
+        :type domain_id: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class OriginRangeBody:
         range状态（\"off\"/\"on\"）
 
         :param range_status: The range_status of this OriginRangeBody.
-        :type: str
+        :type range_status: str
         """
         self._range_status = range_status
 
@@ -85,7 +92,7 @@ class OriginRangeBody:
         加速域名id。获取方法请参见查询加速域名。
 
         :param domain_id: The domain_id of this OriginRangeBody.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 

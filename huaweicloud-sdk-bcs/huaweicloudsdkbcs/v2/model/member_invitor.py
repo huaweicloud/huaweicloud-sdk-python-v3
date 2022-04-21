@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MemberInvitor:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class MemberInvitor:
     }
 
     def __init__(self, invitor_bcs_id=None, invitor_bcs_name=None, invitor_project_id=None, invitor_user_id=None, invitor_username=None):
-        """MemberInvitor - a model defined in huaweicloud sdk"""
+        """MemberInvitor
+
+        The model defined in huaweicloud sdk
+
+        :param invitor_bcs_id: 邀请方实例id
+        :type invitor_bcs_id: str
+        :param invitor_bcs_name: 邀请方实例名称
+        :type invitor_bcs_name: str
+        :param invitor_project_id: 邀请方project id
+        :type invitor_project_id: str
+        :param invitor_user_id: 邀请方租户id
+        :type invitor_user_id: str
+        :param invitor_username: 邀请方租户名
+        :type invitor_username: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class MemberInvitor:
         邀请方实例id
 
         :param invitor_bcs_id: The invitor_bcs_id of this MemberInvitor.
-        :type: str
+        :type invitor_bcs_id: str
         """
         self._invitor_bcs_id = invitor_bcs_id
 
@@ -100,7 +113,7 @@ class MemberInvitor:
         邀请方实例名称
 
         :param invitor_bcs_name: The invitor_bcs_name of this MemberInvitor.
-        :type: str
+        :type invitor_bcs_name: str
         """
         self._invitor_bcs_name = invitor_bcs_name
 
@@ -122,7 +135,7 @@ class MemberInvitor:
         邀请方project id
 
         :param invitor_project_id: The invitor_project_id of this MemberInvitor.
-        :type: str
+        :type invitor_project_id: str
         """
         self._invitor_project_id = invitor_project_id
 
@@ -144,7 +157,7 @@ class MemberInvitor:
         邀请方租户id
 
         :param invitor_user_id: The invitor_user_id of this MemberInvitor.
-        :type: str
+        :type invitor_user_id: str
         """
         self._invitor_user_id = invitor_user_id
 
@@ -166,7 +179,7 @@ class MemberInvitor:
         邀请方租户名
 
         :param invitor_username: The invitor_username of this MemberInvitor.
-        :type: str
+        :type invitor_username: str
         """
         self._invitor_username = invitor_username
 

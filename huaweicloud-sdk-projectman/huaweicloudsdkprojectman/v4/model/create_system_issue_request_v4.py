@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateSystemIssueRequestV4:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -66,7 +65,49 @@ class CreateSystemIssueRequestV4:
     }
 
     def __init__(self, actual_work_hours=None, assigned_id=None, begin_time=None, description=None, developer_id=None, domain_id=None, done_ratio=None, end_time=None, expected_work_hours=None, iteration_id=None, module_id=None, name=None, parent_issue_id=None, priority_id=None, severity_id=None, status_id=None, tracker_id=None, creator=None, custom_fields=None):
-        """CreateSystemIssueRequestV4 - a model defined in huaweicloud sdk"""
+        """CreateSystemIssueRequestV4
+
+        The model defined in huaweicloud sdk
+
+        :param actual_work_hours: 实际工时
+        :type actual_work_hours: float
+        :param assigned_id: 处理人id,对应用户信息的数字id
+        :type assigned_id: int
+        :param begin_time: 开始时间，年-月-日
+        :type begin_time: str
+        :param description: 描述信息
+        :type description: str
+        :param developer_id: 开发者id,对应用户信息的数字id
+        :type developer_id: int
+        :param domain_id: id 领域, 14 &#39;性能&#39;, 15 &#39;功能&#39;, 16 &#39;可靠性&#39; 17 &#39;网络安全&#39; 18 &#39;可维护性&#39; 19 &#39;其他DFX&#39; 20 &#39;可用性&#39;
+        :type domain_id: int
+        :param done_ratio: 工作项进度值
+        :type done_ratio: int
+        :param end_time: 结束时间，年-月-日
+        :type end_time: str
+        :param expected_work_hours: 预计工时
+        :type expected_work_hours: float
+        :param iteration_id: 迭代id
+        :type iteration_id: int
+        :param module_id: 模块id
+        :type module_id: int
+        :param name: 标题
+        :type name: str
+        :param parent_issue_id: 父工作项的id,创建子工作项时必填，父工作项的类型tracker_id不能为2,3
+        :type parent_issue_id: int
+        :param priority_id: 优先级,   1 低,   2 中,   3 高,
+        :type priority_id: int
+        :param severity_id: 重要程度,   10 关键,   11 重要,   12 一般,   13 提示,
+        :type severity_id: int
+        :param status_id: 状态   id, 开始   1, 进行中 2, 已解决 3, 测试中 4, 已关闭 5, 已拒绝 6,
+        :type status_id: int
+        :param tracker_id: 工作项类型, 2任务/task,3缺陷/bug,5epic,6feature,7story;     5 只能为 6 的父工作项类型;     6 只能为 7 的父工作项类型;     7 只能为 2,3的父;
+        :type tracker_id: int
+        :param creator: 
+        :type creator: :class:`huaweicloudsdkprojectman.v4.Creator`
+        :param custom_fields: 用户自定义字段
+        :type custom_fields: list[:class:`huaweicloudsdkprojectman.v4.ScrumCustomField`]
+        """
         
         
 
@@ -144,7 +185,7 @@ class CreateSystemIssueRequestV4:
         实际工时
 
         :param actual_work_hours: The actual_work_hours of this CreateSystemIssueRequestV4.
-        :type: float
+        :type actual_work_hours: float
         """
         self._actual_work_hours = actual_work_hours
 
@@ -166,7 +207,7 @@ class CreateSystemIssueRequestV4:
         处理人id,对应用户信息的数字id
 
         :param assigned_id: The assigned_id of this CreateSystemIssueRequestV4.
-        :type: int
+        :type assigned_id: int
         """
         self._assigned_id = assigned_id
 
@@ -188,7 +229,7 @@ class CreateSystemIssueRequestV4:
         开始时间，年-月-日
 
         :param begin_time: The begin_time of this CreateSystemIssueRequestV4.
-        :type: str
+        :type begin_time: str
         """
         self._begin_time = begin_time
 
@@ -210,7 +251,7 @@ class CreateSystemIssueRequestV4:
         描述信息
 
         :param description: The description of this CreateSystemIssueRequestV4.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -232,7 +273,7 @@ class CreateSystemIssueRequestV4:
         开发者id,对应用户信息的数字id
 
         :param developer_id: The developer_id of this CreateSystemIssueRequestV4.
-        :type: int
+        :type developer_id: int
         """
         self._developer_id = developer_id
 
@@ -254,7 +295,7 @@ class CreateSystemIssueRequestV4:
         id 领域, 14 '性能', 15 '功能', 16 '可靠性' 17 '网络安全' 18 '可维护性' 19 '其他DFX' 20 '可用性'
 
         :param domain_id: The domain_id of this CreateSystemIssueRequestV4.
-        :type: int
+        :type domain_id: int
         """
         self._domain_id = domain_id
 
@@ -276,7 +317,7 @@ class CreateSystemIssueRequestV4:
         工作项进度值
 
         :param done_ratio: The done_ratio of this CreateSystemIssueRequestV4.
-        :type: int
+        :type done_ratio: int
         """
         self._done_ratio = done_ratio
 
@@ -298,7 +339,7 @@ class CreateSystemIssueRequestV4:
         结束时间，年-月-日
 
         :param end_time: The end_time of this CreateSystemIssueRequestV4.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -320,7 +361,7 @@ class CreateSystemIssueRequestV4:
         预计工时
 
         :param expected_work_hours: The expected_work_hours of this CreateSystemIssueRequestV4.
-        :type: float
+        :type expected_work_hours: float
         """
         self._expected_work_hours = expected_work_hours
 
@@ -342,7 +383,7 @@ class CreateSystemIssueRequestV4:
         迭代id
 
         :param iteration_id: The iteration_id of this CreateSystemIssueRequestV4.
-        :type: int
+        :type iteration_id: int
         """
         self._iteration_id = iteration_id
 
@@ -364,7 +405,7 @@ class CreateSystemIssueRequestV4:
         模块id
 
         :param module_id: The module_id of this CreateSystemIssueRequestV4.
-        :type: int
+        :type module_id: int
         """
         self._module_id = module_id
 
@@ -386,7 +427,7 @@ class CreateSystemIssueRequestV4:
         标题
 
         :param name: The name of this CreateSystemIssueRequestV4.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -408,7 +449,7 @@ class CreateSystemIssueRequestV4:
         父工作项的id,创建子工作项时必填，父工作项的类型tracker_id不能为2,3
 
         :param parent_issue_id: The parent_issue_id of this CreateSystemIssueRequestV4.
-        :type: int
+        :type parent_issue_id: int
         """
         self._parent_issue_id = parent_issue_id
 
@@ -430,7 +471,7 @@ class CreateSystemIssueRequestV4:
         优先级,   1 低,   2 中,   3 高,
 
         :param priority_id: The priority_id of this CreateSystemIssueRequestV4.
-        :type: int
+        :type priority_id: int
         """
         self._priority_id = priority_id
 
@@ -452,7 +493,7 @@ class CreateSystemIssueRequestV4:
         重要程度,   10 关键,   11 重要,   12 一般,   13 提示,
 
         :param severity_id: The severity_id of this CreateSystemIssueRequestV4.
-        :type: int
+        :type severity_id: int
         """
         self._severity_id = severity_id
 
@@ -474,7 +515,7 @@ class CreateSystemIssueRequestV4:
         状态   id, 开始   1, 进行中 2, 已解决 3, 测试中 4, 已关闭 5, 已拒绝 6,
 
         :param status_id: The status_id of this CreateSystemIssueRequestV4.
-        :type: int
+        :type status_id: int
         """
         self._status_id = status_id
 
@@ -496,7 +537,7 @@ class CreateSystemIssueRequestV4:
         工作项类型, 2任务/task,3缺陷/bug,5epic,6feature,7story;     5 只能为 6 的父工作项类型;     6 只能为 7 的父工作项类型;     7 只能为 2,3的父;
 
         :param tracker_id: The tracker_id of this CreateSystemIssueRequestV4.
-        :type: int
+        :type tracker_id: int
         """
         self._tracker_id = tracker_id
 
@@ -506,7 +547,7 @@ class CreateSystemIssueRequestV4:
 
 
         :return: The creator of this CreateSystemIssueRequestV4.
-        :rtype: Creator
+        :rtype: :class:`huaweicloudsdkprojectman.v4.Creator`
         """
         return self._creator
 
@@ -516,7 +557,7 @@ class CreateSystemIssueRequestV4:
 
 
         :param creator: The creator of this CreateSystemIssueRequestV4.
-        :type: Creator
+        :type creator: :class:`huaweicloudsdkprojectman.v4.Creator`
         """
         self._creator = creator
 
@@ -527,7 +568,7 @@ class CreateSystemIssueRequestV4:
         用户自定义字段
 
         :return: The custom_fields of this CreateSystemIssueRequestV4.
-        :rtype: list[ScrumCustomField]
+        :rtype: list[:class:`huaweicloudsdkprojectman.v4.ScrumCustomField`]
         """
         return self._custom_fields
 
@@ -538,7 +579,7 @@ class CreateSystemIssueRequestV4:
         用户自定义字段
 
         :param custom_fields: The custom_fields of this CreateSystemIssueRequestV4.
-        :type: list[ScrumCustomField]
+        :type custom_fields: list[:class:`huaweicloudsdkprojectman.v4.ScrumCustomField`]
         """
         self._custom_fields = custom_fields
 

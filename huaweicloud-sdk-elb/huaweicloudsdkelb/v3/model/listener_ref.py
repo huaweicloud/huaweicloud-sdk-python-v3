@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListenerRef:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListenerRef:
     }
 
     def __init__(self, id=None):
-        """ListenerRef - a model defined in huaweicloud sdk"""
+        """ListenerRef
+
+        The model defined in huaweicloud sdk
+
+        :param id: 监听器ID。
+        :type id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ListenerRef:
         监听器ID。
 
         :param id: The id of this ListenerRef.
-        :type: str
+        :type id: str
         """
         self._id = id
 

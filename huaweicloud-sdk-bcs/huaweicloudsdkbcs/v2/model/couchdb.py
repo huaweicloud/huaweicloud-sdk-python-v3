@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Couchdb:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Couchdb:
     }
 
     def __init__(self, user_name=None, password=None):
-        """Couchdb - a model defined in huaweicloud sdk"""
+        """Couchdb
+
+        The model defined in huaweicloud sdk
+
+        :param user_name: couchDB用户名
+        :type user_name: str
+        :param password: couchDB密码
+        :type password: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class Couchdb:
         couchDB用户名
 
         :param user_name: The user_name of this Couchdb.
-        :type: str
+        :type user_name: str
         """
         self._user_name = user_name
 
@@ -83,7 +90,7 @@ class Couchdb:
         couchDB密码
 
         :param password: The password of this Couchdb.
-        :type: str
+        :type password: str
         """
         self._password = password
 

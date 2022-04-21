@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowLoadBalancerStatusResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowLoadBalancerStatusResponse(SdkResponse):
     }
 
     def __init__(self, statuses=None, request_id=None):
-        """ShowLoadBalancerStatusResponse - a model defined in huaweicloud sdk"""
+        """ShowLoadBalancerStatusResponse
+
+        The model defined in huaweicloud sdk
+
+        :param statuses: 
+        :type statuses: :class:`huaweicloudsdkelb.v3.LoadBalancerStatusResult`
+        :param request_id: 请求ID。  注：自动生成 。
+        :type request_id: str
+        """
         
         super(ShowLoadBalancerStatusResponse, self).__init__()
 
@@ -51,7 +58,7 @@ class ShowLoadBalancerStatusResponse(SdkResponse):
 
 
         :return: The statuses of this ShowLoadBalancerStatusResponse.
-        :rtype: LoadBalancerStatusResult
+        :rtype: :class:`huaweicloudsdkelb.v3.LoadBalancerStatusResult`
         """
         return self._statuses
 
@@ -61,7 +68,7 @@ class ShowLoadBalancerStatusResponse(SdkResponse):
 
 
         :param statuses: The statuses of this ShowLoadBalancerStatusResponse.
-        :type: LoadBalancerStatusResult
+        :type statuses: :class:`huaweicloudsdkelb.v3.LoadBalancerStatusResult`
         """
         self._statuses = statuses
 
@@ -83,7 +90,7 @@ class ShowLoadBalancerStatusResponse(SdkResponse):
         请求ID。  注：自动生成 。
 
         :param request_id: The request_id of this ShowLoadBalancerStatusResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 

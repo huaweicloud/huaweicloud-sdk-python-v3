@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NeutronFirewallRule:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class NeutronFirewallRule:
     }
 
     def __init__(self, id=None, name=None, description=None, action=None, protocol=None, ip_version=None, enabled=None, public=None, destination_ip_address=None, destination_port=None, source_ip_address=None, source_port=None, tenant_id=None, project_id=None):
-        """NeutronFirewallRule - a model defined in huaweicloud sdk"""
+        """NeutronFirewallRule
+
+        The model defined in huaweicloud sdk
+
+        :param id: 功能说明：网络ACL规则的uuid标识。
+        :type id: str
+        :param name: 功能说明：网络ACL规则名称。 取值范围：0-255个字符
+        :type name: str
+        :param description: 功能说明：网络ACL规则描述 取值范围：0-255个字符长度
+        :type description: str
+        :param action: 功能说明：对通过网络ACL的流量执行的操作。 取值范围：DENY（拒绝）/ALLOW（允许）
+        :type action: str
+        :param protocol: 功能说明：IP协议 取值范围：支持TCP,UDP,ICMP, ICMPV6或者IP协议号（0-255）
+        :type protocol: str
+        :param ip_version: 功能说明：IP协议版本 取值范围：Ipv4/Ipv6
+        :type ip_version: int
+        :param enabled: 功能说明：是否使能网络ACL规则。 取值范围：true/false
+        :type enabled: bool
+        :param public: 功能说明：是否支持跨租户共享 取值范围：true/false
+        :type public: bool
+        :param destination_ip_address: 功能说明：目的地址或者CIDR。
+        :type destination_ip_address: str
+        :param destination_port: 功能说明：目的端口号或者一段端口范围。
+        :type destination_port: str
+        :param source_ip_address: 功能说明：源地址或者CIDR。
+        :type source_ip_address: str
+        :param source_port: 功能说明：源端口号或者一段端口范围。
+        :type source_port: str
+        :param tenant_id: 功能说明：项目ID
+        :type tenant_id: str
+        :param project_id: 功能说明：项目ID
+        :type project_id: str
+        """
         
         
 
@@ -109,7 +140,7 @@ class NeutronFirewallRule:
         功能说明：网络ACL规则的uuid标识。
 
         :param id: The id of this NeutronFirewallRule.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -131,7 +162,7 @@ class NeutronFirewallRule:
         功能说明：网络ACL规则名称。 取值范围：0-255个字符
 
         :param name: The name of this NeutronFirewallRule.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -153,7 +184,7 @@ class NeutronFirewallRule:
         功能说明：网络ACL规则描述 取值范围：0-255个字符长度
 
         :param description: The description of this NeutronFirewallRule.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -175,7 +206,7 @@ class NeutronFirewallRule:
         功能说明：对通过网络ACL的流量执行的操作。 取值范围：DENY（拒绝）/ALLOW（允许）
 
         :param action: The action of this NeutronFirewallRule.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -197,7 +228,7 @@ class NeutronFirewallRule:
         功能说明：IP协议 取值范围：支持TCP,UDP,ICMP, ICMPV6或者IP协议号（0-255）
 
         :param protocol: The protocol of this NeutronFirewallRule.
-        :type: str
+        :type protocol: str
         """
         self._protocol = protocol
 
@@ -219,7 +250,7 @@ class NeutronFirewallRule:
         功能说明：IP协议版本 取值范围：Ipv4/Ipv6
 
         :param ip_version: The ip_version of this NeutronFirewallRule.
-        :type: int
+        :type ip_version: int
         """
         self._ip_version = ip_version
 
@@ -241,7 +272,7 @@ class NeutronFirewallRule:
         功能说明：是否使能网络ACL规则。 取值范围：true/false
 
         :param enabled: The enabled of this NeutronFirewallRule.
-        :type: bool
+        :type enabled: bool
         """
         self._enabled = enabled
 
@@ -263,7 +294,7 @@ class NeutronFirewallRule:
         功能说明：是否支持跨租户共享 取值范围：true/false
 
         :param public: The public of this NeutronFirewallRule.
-        :type: bool
+        :type public: bool
         """
         self._public = public
 
@@ -285,7 +316,7 @@ class NeutronFirewallRule:
         功能说明：目的地址或者CIDR。
 
         :param destination_ip_address: The destination_ip_address of this NeutronFirewallRule.
-        :type: str
+        :type destination_ip_address: str
         """
         self._destination_ip_address = destination_ip_address
 
@@ -307,7 +338,7 @@ class NeutronFirewallRule:
         功能说明：目的端口号或者一段端口范围。
 
         :param destination_port: The destination_port of this NeutronFirewallRule.
-        :type: str
+        :type destination_port: str
         """
         self._destination_port = destination_port
 
@@ -329,7 +360,7 @@ class NeutronFirewallRule:
         功能说明：源地址或者CIDR。
 
         :param source_ip_address: The source_ip_address of this NeutronFirewallRule.
-        :type: str
+        :type source_ip_address: str
         """
         self._source_ip_address = source_ip_address
 
@@ -351,7 +382,7 @@ class NeutronFirewallRule:
         功能说明：源端口号或者一段端口范围。
 
         :param source_port: The source_port of this NeutronFirewallRule.
-        :type: str
+        :type source_port: str
         """
         self._source_port = source_port
 
@@ -373,7 +404,7 @@ class NeutronFirewallRule:
         功能说明：项目ID
 
         :param tenant_id: The tenant_id of this NeutronFirewallRule.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 
@@ -395,7 +426,7 @@ class NeutronFirewallRule:
         功能说明：项目ID
 
         :param project_id: The project_id of this NeutronFirewallRule.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 

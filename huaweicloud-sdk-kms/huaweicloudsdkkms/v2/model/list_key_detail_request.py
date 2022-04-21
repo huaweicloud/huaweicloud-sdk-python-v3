@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListKeyDetailRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListKeyDetailRequest:
     }
 
     def __init__(self, body=None):
-        """ListKeyDetailRequest - a model defined in huaweicloud sdk"""
+        """ListKeyDetailRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the ListKeyDetailRequest
+        :type body: :class:`huaweicloudsdkkms.v2.OperateKeyRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class ListKeyDetailRequest:
 
 
         :return: The body of this ListKeyDetailRequest.
-        :rtype: OperateKeyRequestBody
+        :rtype: :class:`huaweicloudsdkkms.v2.OperateKeyRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class ListKeyDetailRequest:
 
 
         :param body: The body of this ListKeyDetailRequest.
-        :type: OperateKeyRequestBody
+        :type body: :class:`huaweicloudsdkkms.v2.OperateKeyRequestBody`
         """
         self._body = body
 

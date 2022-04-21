@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowIaConfigRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowIaConfigRequest:
     }
 
     def __init__(self, node_id=None, ia_id=None, config_id=None):
-        """ShowIaConfigRequest - a model defined in huaweicloud sdk"""
+        """ShowIaConfigRequest
+
+        The model defined in huaweicloud sdk
+
+        :param node_id: 边缘节点ID
+        :type node_id: str
+        :param ia_id: 边侧第三方应用的模块ID
+        :type ia_id: str
+        :param config_id: 配置ID
+        :type config_id: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class ShowIaConfigRequest:
         边缘节点ID
 
         :param node_id: The node_id of this ShowIaConfigRequest.
-        :type: str
+        :type node_id: str
         """
         self._node_id = node_id
 
@@ -87,7 +96,7 @@ class ShowIaConfigRequest:
         边侧第三方应用的模块ID
 
         :param ia_id: The ia_id of this ShowIaConfigRequest.
-        :type: str
+        :type ia_id: str
         """
         self._ia_id = ia_id
 
@@ -109,7 +118,7 @@ class ShowIaConfigRequest:
         配置ID
 
         :param config_id: The config_id of this ShowIaConfigRequest.
-        :type: str
+        :type config_id: str
         """
         self._config_id = config_id
 

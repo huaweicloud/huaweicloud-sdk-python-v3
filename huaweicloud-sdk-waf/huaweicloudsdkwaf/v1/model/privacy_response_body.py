@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PrivacyResponseBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class PrivacyResponseBody:
     }
 
     def __init__(self, id=None, policyid=None, timestamp=None, status=None, url=None, category=None, index=None):
-        """PrivacyResponseBody - a model defined in huaweicloud sdk"""
+        """PrivacyResponseBody
+
+        The model defined in huaweicloud sdk
+
+        :param id: 规则id
+        :type id: str
+        :param policyid: 策略id
+        :type policyid: str
+        :param timestamp: 创建规则的时间，格式为13位毫秒时间戳
+        :type timestamp: int
+        :param status: 规则状态，0：关闭，1：开启
+        :type status: int
+        :param url: 隐私屏蔽规则应用的url
+        :type url: str
+        :param category: 屏蔽字段
+        :type category: str
+        :param index: 屏蔽字段名
+        :type index: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class PrivacyResponseBody:
         规则id
 
         :param id: The id of this PrivacyResponseBody.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -110,7 +127,7 @@ class PrivacyResponseBody:
         策略id
 
         :param policyid: The policyid of this PrivacyResponseBody.
-        :type: str
+        :type policyid: str
         """
         self._policyid = policyid
 
@@ -132,7 +149,7 @@ class PrivacyResponseBody:
         创建规则的时间，格式为13位毫秒时间戳
 
         :param timestamp: The timestamp of this PrivacyResponseBody.
-        :type: int
+        :type timestamp: int
         """
         self._timestamp = timestamp
 
@@ -154,7 +171,7 @@ class PrivacyResponseBody:
         规则状态，0：关闭，1：开启
 
         :param status: The status of this PrivacyResponseBody.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -176,7 +193,7 @@ class PrivacyResponseBody:
         隐私屏蔽规则应用的url
 
         :param url: The url of this PrivacyResponseBody.
-        :type: str
+        :type url: str
         """
         self._url = url
 
@@ -198,7 +215,7 @@ class PrivacyResponseBody:
         屏蔽字段
 
         :param category: The category of this PrivacyResponseBody.
-        :type: str
+        :type category: str
         """
         self._category = category
 
@@ -220,7 +237,7 @@ class PrivacyResponseBody:
         屏蔽字段名
 
         :param index: The index of this PrivacyResponseBody.
-        :type: str
+        :type index: str
         """
         self._index = index
 

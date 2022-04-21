@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FinancialStatementWordsBlockList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class FinancialStatementWordsBlockList:
     }
 
     def __init__(self, words=None, location=None, confidence=None, rows=None, columns=None, cell_location=None):
-        """FinancialStatementWordsBlockList - a model defined in huaweicloud sdk"""
+        """FinancialStatementWordsBlockList
+
+        The model defined in huaweicloud sdk
+
+        :param words: 文字块内容。当入参\&quot;return_text_location\&quot;为false时，每个单元格返回一个文本值，不同行文本由换行符 \&quot;\\n\&quot; 拼接。 
+        :type words: str
+        :param location: 文字块位置信息，列表形式，分别表示文字块4个顶点的x, y坐标;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
+        :type location: list[list[int]]
+        :param confidence: 文字块识别结果置信度信息，置信度越大，表示本次识别的对应字段的可靠性越大，在统计意义上，置信度越大正确率越高。注：置信度由算法给出，其不直接等价于对应字段的精度。 
+        :type confidence: float
+        :param rows: 单元格行信息，列表形式。多个连续值表示单元格垮多行。 
+        :type rows: list[int]
+        :param columns: 单元格列信息，列表形式。多个连续值表示单元格垮多列。 
+        :type columns: list[int]
+        :param cell_location: 单元格位置信息，列表形式，分别表示单元格4个顶点的x, y坐标;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
+        :type cell_location: list[list[int]]
+        """
         
         
 
@@ -83,7 +98,7 @@ class FinancialStatementWordsBlockList:
         文字块内容。当入参\"return_text_location\"为false时，每个单元格返回一个文本值，不同行文本由换行符 \"\\n\" 拼接。 
 
         :param words: The words of this FinancialStatementWordsBlockList.
-        :type: str
+        :type words: str
         """
         self._words = words
 
@@ -105,7 +120,7 @@ class FinancialStatementWordsBlockList:
         文字块位置信息，列表形式，分别表示文字块4个顶点的x, y坐标;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
         :param location: The location of this FinancialStatementWordsBlockList.
-        :type: list[list[int]]
+        :type location: list[list[int]]
         """
         self._location = location
 
@@ -127,7 +142,7 @@ class FinancialStatementWordsBlockList:
         文字块识别结果置信度信息，置信度越大，表示本次识别的对应字段的可靠性越大，在统计意义上，置信度越大正确率越高。注：置信度由算法给出，其不直接等价于对应字段的精度。 
 
         :param confidence: The confidence of this FinancialStatementWordsBlockList.
-        :type: float
+        :type confidence: float
         """
         self._confidence = confidence
 
@@ -149,7 +164,7 @@ class FinancialStatementWordsBlockList:
         单元格行信息，列表形式。多个连续值表示单元格垮多行。 
 
         :param rows: The rows of this FinancialStatementWordsBlockList.
-        :type: list[int]
+        :type rows: list[int]
         """
         self._rows = rows
 
@@ -171,7 +186,7 @@ class FinancialStatementWordsBlockList:
         单元格列信息，列表形式。多个连续值表示单元格垮多列。 
 
         :param columns: The columns of this FinancialStatementWordsBlockList.
-        :type: list[int]
+        :type columns: list[int]
         """
         self._columns = columns
 
@@ -193,7 +208,7 @@ class FinancialStatementWordsBlockList:
         单元格位置信息，列表形式，分别表示单元格4个顶点的x, y坐标;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
         :param cell_location: The cell_location of this FinancialStatementWordsBlockList.
-        :type: list[list[int]]
+        :type cell_location: list[list[int]]
         """
         self._cell_location = cell_location
 

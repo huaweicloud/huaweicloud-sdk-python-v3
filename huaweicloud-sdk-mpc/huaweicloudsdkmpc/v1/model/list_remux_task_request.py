@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRemuxTaskRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ListRemuxTaskRequest:
     }
 
     def __init__(self, task_id=None, status=None, start_time=None, end_time=None, input_bucket=None, input_object=None, page=None, size=None):
-        """ListRemuxTaskRequest - a model defined in huaweicloud sdk"""
+        """ListRemuxTaskRequest
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 任务ID。一次最多10个 
+        :type task_id: list[str]
+        :param status: 任务执行状态。  取值如下： - INIT：初始状态 - WAITING：等待启动 - PROCESSING：处理中 - SUCCEED：处理成功 - FAILED：处理失败 - CANCELED：已取消 
+        :type status: str
+        :param start_time: 起始时间。格式为yyyymmddhhmmss。必须是与时区无关的UTC时间，指定task_id时该参数无效 
+        :type start_time: str
+        :param end_time: 结束时间。格式为yyyymmddhhmmss。必须是与时区无关的UTC时间，指定task_id时该参数无效 
+        :type end_time: str
+        :param input_bucket: 源文件存储桶。 
+        :type input_bucket: str
+        :param input_object: 源对象名称. 
+        :type input_object: str
+        :param page: 分页编号。查询指定“task_id”时，该参数无效。  默认值：0。 
+        :type page: int
+        :param size: 每页记录数。查询指定“task_id”时，该参数无效。  取值范围：[1,100]。  默认值：10。 
+        :type size: int
+        """
         
         
 
@@ -93,7 +112,7 @@ class ListRemuxTaskRequest:
         任务ID。一次最多10个 
 
         :param task_id: The task_id of this ListRemuxTaskRequest.
-        :type: list[str]
+        :type task_id: list[str]
         """
         self._task_id = task_id
 
@@ -115,7 +134,7 @@ class ListRemuxTaskRequest:
         任务执行状态。  取值如下： - INIT：初始状态 - WAITING：等待启动 - PROCESSING：处理中 - SUCCEED：处理成功 - FAILED：处理失败 - CANCELED：已取消 
 
         :param status: The status of this ListRemuxTaskRequest.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -137,7 +156,7 @@ class ListRemuxTaskRequest:
         起始时间。格式为yyyymmddhhmmss。必须是与时区无关的UTC时间，指定task_id时该参数无效 
 
         :param start_time: The start_time of this ListRemuxTaskRequest.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -159,7 +178,7 @@ class ListRemuxTaskRequest:
         结束时间。格式为yyyymmddhhmmss。必须是与时区无关的UTC时间，指定task_id时该参数无效 
 
         :param end_time: The end_time of this ListRemuxTaskRequest.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -181,7 +200,7 @@ class ListRemuxTaskRequest:
         源文件存储桶。 
 
         :param input_bucket: The input_bucket of this ListRemuxTaskRequest.
-        :type: str
+        :type input_bucket: str
         """
         self._input_bucket = input_bucket
 
@@ -203,7 +222,7 @@ class ListRemuxTaskRequest:
         源对象名称. 
 
         :param input_object: The input_object of this ListRemuxTaskRequest.
-        :type: str
+        :type input_object: str
         """
         self._input_object = input_object
 
@@ -225,7 +244,7 @@ class ListRemuxTaskRequest:
         分页编号。查询指定“task_id”时，该参数无效。  默认值：0。 
 
         :param page: The page of this ListRemuxTaskRequest.
-        :type: int
+        :type page: int
         """
         self._page = page
 
@@ -247,7 +266,7 @@ class ListRemuxTaskRequest:
         每页记录数。查询指定“task_id”时，该参数无效。  取值范围：[1,100]。  默认值：10。 
 
         :param size: The size of this ListRemuxTaskRequest.
-        :type: int
+        :type size: int
         """
         self._size = size
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListLoadBalancersResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListLoadBalancersResponse(SdkResponse):
     }
 
     def __init__(self, loadbalancers=None, page_info=None, request_id=None):
-        """ListLoadBalancersResponse - a model defined in huaweicloud sdk"""
+        """ListLoadBalancersResponse
+
+        The model defined in huaweicloud sdk
+
+        :param loadbalancers: Loadbalancer的列表。
+        :type loadbalancers: list[:class:`huaweicloudsdkelb.v3.LoadBalancer`]
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`
+        :param request_id: 请求ID。  注：自动生成 。
+        :type request_id: str
+        """
         
         super(ListLoadBalancersResponse, self).__init__()
 
@@ -57,7 +66,7 @@ class ListLoadBalancersResponse(SdkResponse):
         Loadbalancer的列表。
 
         :return: The loadbalancers of this ListLoadBalancersResponse.
-        :rtype: list[LoadBalancer]
+        :rtype: list[:class:`huaweicloudsdkelb.v3.LoadBalancer`]
         """
         return self._loadbalancers
 
@@ -68,7 +77,7 @@ class ListLoadBalancersResponse(SdkResponse):
         Loadbalancer的列表。
 
         :param loadbalancers: The loadbalancers of this ListLoadBalancersResponse.
-        :type: list[LoadBalancer]
+        :type loadbalancers: list[:class:`huaweicloudsdkelb.v3.LoadBalancer`]
         """
         self._loadbalancers = loadbalancers
 
@@ -78,7 +87,7 @@ class ListLoadBalancersResponse(SdkResponse):
 
 
         :return: The page_info of this ListLoadBalancersResponse.
-        :rtype: PageInfo
+        :rtype: :class:`huaweicloudsdkelb.v3.PageInfo`
         """
         return self._page_info
 
@@ -88,7 +97,7 @@ class ListLoadBalancersResponse(SdkResponse):
 
 
         :param page_info: The page_info of this ListLoadBalancersResponse.
-        :type: PageInfo
+        :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`
         """
         self._page_info = page_info
 
@@ -110,7 +119,7 @@ class ListLoadBalancersResponse(SdkResponse):
         请求ID。  注：自动生成 。
 
         :param request_id: The request_id of this ListLoadBalancersResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 

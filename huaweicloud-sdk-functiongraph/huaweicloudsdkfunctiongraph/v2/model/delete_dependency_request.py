@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteDependencyRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteDependencyRequest:
     }
 
     def __init__(self, depend_id=None):
-        """DeleteDependencyRequest - a model defined in huaweicloud sdk"""
+        """DeleteDependencyRequest
+
+        The model defined in huaweicloud sdk
+
+        :param depend_id: 依赖包的ID。
+        :type depend_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteDependencyRequest:
         依赖包的ID。
 
         :param depend_id: The depend_id of this DeleteDependencyRequest.
-        :type: str
+        :type depend_id: str
         """
         self._depend_id = depend_id
 

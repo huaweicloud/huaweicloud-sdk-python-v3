@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListServicesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListServicesResponse(SdkResponse):
     }
 
     def __init__(self, total=None, size=None, items=None):
-        """ListServicesResponse - a model defined in huaweicloud sdk"""
+        """ListServicesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 总数
+        :type total: int
+        :param size: 本次返回数量
+        :type size: int
+        :param items: 服务列表
+        :type items: list[:class:`huaweicloudsdkroma.v2.Service`]
+        """
         
         super(ListServicesResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListServicesResponse(SdkResponse):
         总数
 
         :param total: The total of this ListServicesResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -90,7 +99,7 @@ class ListServicesResponse(SdkResponse):
         本次返回数量
 
         :param size: The size of this ListServicesResponse.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -101,7 +110,7 @@ class ListServicesResponse(SdkResponse):
         服务列表
 
         :return: The items of this ListServicesResponse.
-        :rtype: list[Service]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.Service`]
         """
         return self._items
 
@@ -112,7 +121,7 @@ class ListServicesResponse(SdkResponse):
         服务列表
 
         :param items: The items of this ListServicesResponse.
-        :type: list[Service]
+        :type items: list[:class:`huaweicloudsdkroma.v2.Service`]
         """
         self._items = items
 

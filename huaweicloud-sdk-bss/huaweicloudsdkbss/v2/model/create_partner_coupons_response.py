@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreatePartnerCouponsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreatePartnerCouponsResponse(SdkResponse):
     }
 
     def __init__(self, error_details=None, coupon_infos=None):
-        """CreatePartnerCouponsResponse - a model defined in huaweicloud sdk"""
+        """CreatePartnerCouponsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param error_details: 错误的客户列表和错误信息，只有HTTP 200的时候才会返回这个结构体，具体参见表1。
+        :type error_details: list[:class:`huaweicloudsdkbss.v2.ErrorDetail`]
+        :param coupon_infos: 成功的客户ID和对应的券ID列表，只有HTTP 200的时候才会返回这个结构体，具体参见表2。
+        :type coupon_infos: list[:class:`huaweicloudsdkbss.v2.CouponSimpleInfo`]
+        """
         
         super(CreatePartnerCouponsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class CreatePartnerCouponsResponse(SdkResponse):
         错误的客户列表和错误信息，只有HTTP 200的时候才会返回这个结构体，具体参见表1。
 
         :return: The error_details of this CreatePartnerCouponsResponse.
-        :rtype: list[ErrorDetail]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.ErrorDetail`]
         """
         return self._error_details
 
@@ -63,7 +70,7 @@ class CreatePartnerCouponsResponse(SdkResponse):
         错误的客户列表和错误信息，只有HTTP 200的时候才会返回这个结构体，具体参见表1。
 
         :param error_details: The error_details of this CreatePartnerCouponsResponse.
-        :type: list[ErrorDetail]
+        :type error_details: list[:class:`huaweicloudsdkbss.v2.ErrorDetail`]
         """
         self._error_details = error_details
 
@@ -74,7 +81,7 @@ class CreatePartnerCouponsResponse(SdkResponse):
         成功的客户ID和对应的券ID列表，只有HTTP 200的时候才会返回这个结构体，具体参见表2。
 
         :return: The coupon_infos of this CreatePartnerCouponsResponse.
-        :rtype: list[CouponSimpleInfo]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.CouponSimpleInfo`]
         """
         return self._coupon_infos
 
@@ -85,7 +92,7 @@ class CreatePartnerCouponsResponse(SdkResponse):
         成功的客户ID和对应的券ID列表，只有HTTP 200的时候才会返回这个结构体，具体参见表2。
 
         :param coupon_infos: The coupon_infos of this CreatePartnerCouponsResponse.
-        :type: list[CouponSimpleInfo]
+        :type coupon_infos: list[:class:`huaweicloudsdkbss.v2.CouponSimpleInfo`]
         """
         self._coupon_infos = coupon_infos
 

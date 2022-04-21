@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ADDomainInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ADDomainInfo:
     }
 
     def __init__(self, domain_admin_account_name=None, domain_admin_pwd=None):
-        """ADDomainInfo - a model defined in huaweicloud sdk"""
+        """ADDomainInfo
+
+        The model defined in huaweicloud sdk
+
+        :param domain_admin_account_name: 域管理员账号名
+        :type domain_admin_account_name: str
+        :param domain_admin_pwd: 域管理员密码
+        :type domain_admin_pwd: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ADDomainInfo:
         域管理员账号名
 
         :param domain_admin_account_name: The domain_admin_account_name of this ADDomainInfo.
-        :type: str
+        :type domain_admin_account_name: str
         """
         self._domain_admin_account_name = domain_admin_account_name
 
@@ -83,7 +90,7 @@ class ADDomainInfo:
         域管理员密码
 
         :param domain_admin_pwd: The domain_admin_pwd of this ADDomainInfo.
-        :type: str
+        :type domain_admin_pwd: str
         """
         self._domain_admin_pwd = domain_admin_pwd
 

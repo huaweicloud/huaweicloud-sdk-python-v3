@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateTableRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateTableRequest:
     }
 
     def __init__(self, body=None):
-        """CreateTableRequest - a model defined in huaweicloud sdk"""
+        """CreateTableRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateTableRequest
+        :type body: :class:`huaweicloudsdkiotanalytics.v1.CreateTableRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateTableRequest:
 
 
         :return: The body of this CreateTableRequest.
-        :rtype: CreateTableRequestBody
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.CreateTableRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateTableRequest:
 
 
         :param body: The body of this CreateTableRequest.
-        :type: CreateTableRequestBody
+        :type body: :class:`huaweicloudsdkiotanalytics.v1.CreateTableRequestBody`
         """
         self._body = body
 

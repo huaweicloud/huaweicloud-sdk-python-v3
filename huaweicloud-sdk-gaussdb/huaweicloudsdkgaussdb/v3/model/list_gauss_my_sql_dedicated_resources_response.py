@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListGaussMySqlDedicatedResourcesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListGaussMySqlDedicatedResourcesResponse(SdkResponse):
     }
 
     def __init__(self, resources=None, total_count=None):
-        """ListGaussMySqlDedicatedResourcesResponse - a model defined in huaweicloud sdk"""
+        """ListGaussMySqlDedicatedResourcesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param resources: 专属资源池信息
+        :type resources: list[:class:`huaweicloudsdkgaussdb.v3.DedicatedResource`]
+        :param total_count: 专属资源池数量
+        :type total_count: int
+        """
         
         super(ListGaussMySqlDedicatedResourcesResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListGaussMySqlDedicatedResourcesResponse(SdkResponse):
         专属资源池信息
 
         :return: The resources of this ListGaussMySqlDedicatedResourcesResponse.
-        :rtype: list[DedicatedResource]
+        :rtype: list[:class:`huaweicloudsdkgaussdb.v3.DedicatedResource`]
         """
         return self._resources
 
@@ -63,7 +70,7 @@ class ListGaussMySqlDedicatedResourcesResponse(SdkResponse):
         专属资源池信息
 
         :param resources: The resources of this ListGaussMySqlDedicatedResourcesResponse.
-        :type: list[DedicatedResource]
+        :type resources: list[:class:`huaweicloudsdkgaussdb.v3.DedicatedResource`]
         """
         self._resources = resources
 
@@ -85,7 +92,7 @@ class ListGaussMySqlDedicatedResourcesResponse(SdkResponse):
         专属资源池数量
 
         :param total_count: The total_count of this ListGaussMySqlDedicatedResourcesResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 

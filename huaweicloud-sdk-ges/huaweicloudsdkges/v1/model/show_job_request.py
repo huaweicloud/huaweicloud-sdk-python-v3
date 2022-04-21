@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowJobRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowJobRequest:
     }
 
     def __init__(self, graph_id=None, job_id=None):
-        """ShowJobRequest - a model defined in huaweicloud sdk"""
+        """ShowJobRequest
+
+        The model defined in huaweicloud sdk
+
+        :param graph_id: 图ID。
+        :type graph_id: str
+        :param job_id: Job ID。
+        :type job_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ShowJobRequest:
         图ID。
 
         :param graph_id: The graph_id of this ShowJobRequest.
-        :type: str
+        :type graph_id: str
         """
         self._graph_id = graph_id
 
@@ -83,7 +90,7 @@ class ShowJobRequest:
         Job ID。
 
         :param job_id: The job_id of this ShowJobRequest.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 

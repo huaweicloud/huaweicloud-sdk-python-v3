@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListResourcesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListResourcesRequest:
     }
 
     def __init__(self, provider=None, type=None, region_id=None, ep_id=None, limit=None, marker=None):
-        """ListResourcesRequest - a model defined in huaweicloud sdk"""
+        """ListResourcesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param provider: 云服务英文简写
+        :type provider: str
+        :param type: 云服务资源类型名称
+        :type type: str
+        :param region_id: 区域ID
+        :type region_id: str
+        :param ep_id: 企业项目ID
+        :type ep_id: str
+        :param limit: 最大的返回数量
+        :type limit: int
+        :param marker: 分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
+        :type marker: str
+        """
         
         
 
@@ -81,7 +96,7 @@ class ListResourcesRequest:
         云服务英文简写
 
         :param provider: The provider of this ListResourcesRequest.
-        :type: str
+        :type provider: str
         """
         self._provider = provider
 
@@ -103,7 +118,7 @@ class ListResourcesRequest:
         云服务资源类型名称
 
         :param type: The type of this ListResourcesRequest.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -125,7 +140,7 @@ class ListResourcesRequest:
         区域ID
 
         :param region_id: The region_id of this ListResourcesRequest.
-        :type: str
+        :type region_id: str
         """
         self._region_id = region_id
 
@@ -147,7 +162,7 @@ class ListResourcesRequest:
         企业项目ID
 
         :param ep_id: The ep_id of this ListResourcesRequest.
-        :type: str
+        :type ep_id: str
         """
         self._ep_id = ep_id
 
@@ -169,7 +184,7 @@ class ListResourcesRequest:
         最大的返回数量
 
         :param limit: The limit of this ListResourcesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -191,7 +206,7 @@ class ListResourcesRequest:
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
         :param marker: The marker of this ListResourcesRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 

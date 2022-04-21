@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRomaAppRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ListRomaAppRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, favorite=None, auth_role=None, name=None, owner=None, user_name=None):
-        """ListRomaAppRequest - a model defined in huaweicloud sdk"""
+        """ListRomaAppRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param offset: 偏移量，大于等于0
+        :type offset: int
+        :param limit: 每页显示的条目数量
+        :type limit: int
+        :param favorite: 查询收藏的应用 - 未提供时，查询当前用户有权限的所有应用 - 为true时，获取收藏的应用 - 为false时，获取未被收藏的应用
+        :type favorite: bool
+        :param auth_role: 获取拥有指定权限应用
+        :type auth_role: str
+        :param name: 应用名称，模糊匹配
+        :type name: str
+        :param owner: 查询有权限访问的应用 - 未提供时，查询当前用户有权限的所有应用 - 为true时，查询当前用户创建的应用 - 为false时，查询非当前用户创建的有权限的应用，比如其它人共享的应用
+        :type owner: bool
+        :param user_name: 从当前调用者有权限的所有应用中过滤出指定用户名有权限的应用
+        :type user_name: str
+        """
         
         
 
@@ -92,7 +111,7 @@ class ListRomaAppRequest:
         实例ID
 
         :param instance_id: The instance_id of this ListRomaAppRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -114,7 +133,7 @@ class ListRomaAppRequest:
         偏移量，大于等于0
 
         :param offset: The offset of this ListRomaAppRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -136,7 +155,7 @@ class ListRomaAppRequest:
         每页显示的条目数量
 
         :param limit: The limit of this ListRomaAppRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -158,7 +177,7 @@ class ListRomaAppRequest:
         查询收藏的应用 - 未提供时，查询当前用户有权限的所有应用 - 为true时，获取收藏的应用 - 为false时，获取未被收藏的应用
 
         :param favorite: The favorite of this ListRomaAppRequest.
-        :type: bool
+        :type favorite: bool
         """
         self._favorite = favorite
 
@@ -180,7 +199,7 @@ class ListRomaAppRequest:
         获取拥有指定权限应用
 
         :param auth_role: The auth_role of this ListRomaAppRequest.
-        :type: str
+        :type auth_role: str
         """
         self._auth_role = auth_role
 
@@ -202,7 +221,7 @@ class ListRomaAppRequest:
         应用名称，模糊匹配
 
         :param name: The name of this ListRomaAppRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -224,7 +243,7 @@ class ListRomaAppRequest:
         查询有权限访问的应用 - 未提供时，查询当前用户有权限的所有应用 - 为true时，查询当前用户创建的应用 - 为false时，查询非当前用户创建的有权限的应用，比如其它人共享的应用
 
         :param owner: The owner of this ListRomaAppRequest.
-        :type: bool
+        :type owner: bool
         """
         self._owner = owner
 
@@ -246,7 +265,7 @@ class ListRomaAppRequest:
         从当前调用者有权限的所有应用中过滤出指定用户名有权限的应用
 
         :param user_name: The user_name of this ListRomaAppRequest.
-        :type: str
+        :type user_name: str
         """
         self._user_name = user_name
 

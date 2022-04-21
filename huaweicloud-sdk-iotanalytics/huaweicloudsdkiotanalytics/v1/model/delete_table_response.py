@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteTableResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteTableResponse(SdkResponse):
     }
 
     def __init__(self, table_id=None, table_name=None):
-        """DeleteTableResponse - a model defined in huaweicloud sdk"""
+        """DeleteTableResponse
+
+        The model defined in huaweicloud sdk
+
+        :param table_id: 被删除表ID
+        :type table_id: str
+        :param table_name: 被删除表名。
+        :type table_name: str
+        """
         
         super(DeleteTableResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class DeleteTableResponse(SdkResponse):
         被删除表ID
 
         :param table_id: The table_id of this DeleteTableResponse.
-        :type: str
+        :type table_id: str
         """
         self._table_id = table_id
 
@@ -85,7 +92,7 @@ class DeleteTableResponse(SdkResponse):
         被删除表名。
 
         :param table_name: The table_name of this DeleteTableResponse.
-        :type: str
+        :type table_name: str
         """
         self._table_name = table_name
 

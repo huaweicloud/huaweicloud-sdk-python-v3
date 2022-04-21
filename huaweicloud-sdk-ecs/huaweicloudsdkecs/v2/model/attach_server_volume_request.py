@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AttachServerVolumeRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AttachServerVolumeRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """AttachServerVolumeRequest - a model defined in huaweicloud sdk"""
+        """AttachServerVolumeRequest
+
+        The model defined in huaweicloud sdk
+
+        :param server_id: 云服务器ID。
+        :type server_id: str
+        :param body: Body of the AttachServerVolumeRequest
+        :type body: :class:`huaweicloudsdkecs.v2.AttachServerVolumeRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class AttachServerVolumeRequest:
         云服务器ID。
 
         :param server_id: The server_id of this AttachServerVolumeRequest.
-        :type: str
+        :type server_id: str
         """
         self._server_id = server_id
 
@@ -72,7 +79,7 @@ class AttachServerVolumeRequest:
 
 
         :return: The body of this AttachServerVolumeRequest.
-        :rtype: AttachServerVolumeRequestBody
+        :rtype: :class:`huaweicloudsdkecs.v2.AttachServerVolumeRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class AttachServerVolumeRequest:
 
 
         :param body: The body of this AttachServerVolumeRequest.
-        :type: AttachServerVolumeRequestBody
+        :type body: :class:`huaweicloudsdkecs.v2.AttachServerVolumeRequestBody`
         """
         self._body = body
 

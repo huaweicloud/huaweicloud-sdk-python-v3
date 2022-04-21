@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteGaussMySqlReadonlyNodeRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class DeleteGaussMySqlReadonlyNodeRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, node_id=None):
-        """DeleteGaussMySqlReadonlyNodeRequest - a model defined in huaweicloud sdk"""
+        """DeleteGaussMySqlReadonlyNodeRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言
+        :type x_language: str
+        :param instance_id: 实例ID，严格匹配UUID规则。
+        :type instance_id: str
+        :param node_id: 节点ID，严格匹配UUID规则。
+        :type node_id: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class DeleteGaussMySqlReadonlyNodeRequest:
         语言
 
         :param x_language: The x_language of this DeleteGaussMySqlReadonlyNodeRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -88,7 +97,7 @@ class DeleteGaussMySqlReadonlyNodeRequest:
         实例ID，严格匹配UUID规则。
 
         :param instance_id: The instance_id of this DeleteGaussMySqlReadonlyNodeRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -110,7 +119,7 @@ class DeleteGaussMySqlReadonlyNodeRequest:
         节点ID，严格匹配UUID规则。
 
         :param node_id: The node_id of this DeleteGaussMySqlReadonlyNodeRequest.
-        :type: str
+        :type node_id: str
         """
         self._node_id = node_id
 

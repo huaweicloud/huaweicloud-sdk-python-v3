@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPartnerAdjustRecordsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListPartnerAdjustRecordsResponse(SdkResponse):
     }
 
     def __init__(self, records=None, total_count=None):
-        """ListPartnerAdjustRecordsResponse - a model defined in huaweicloud sdk"""
+        """ListPartnerAdjustRecordsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param records: 调账记录列表。 具体请参见表2。
+        :type records: list[:class:`huaweicloudsdkbss.v2.AdjustRecordV3`]
+        :param total_count: 返回总条数。
+        :type total_count: int
+        """
         
         super(ListPartnerAdjustRecordsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListPartnerAdjustRecordsResponse(SdkResponse):
         调账记录列表。 具体请参见表2。
 
         :return: The records of this ListPartnerAdjustRecordsResponse.
-        :rtype: list[AdjustRecordV3]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.AdjustRecordV3`]
         """
         return self._records
 
@@ -63,7 +70,7 @@ class ListPartnerAdjustRecordsResponse(SdkResponse):
         调账记录列表。 具体请参见表2。
 
         :param records: The records of this ListPartnerAdjustRecordsResponse.
-        :type: list[AdjustRecordV3]
+        :type records: list[:class:`huaweicloudsdkbss.v2.AdjustRecordV3`]
         """
         self._records = records
 
@@ -85,7 +92,7 @@ class ListPartnerAdjustRecordsResponse(SdkResponse):
         返回总条数。
 
         :param total_count: The total_count of this ListPartnerAdjustRecordsResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 

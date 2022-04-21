@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowPublicationResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class ShowPublicationResponse(SdkResponse):
     }
 
     def __init__(self, id=None, last_updated_by=None, create_time=None, update_time=None, publish_name=None, publish_scope=None, start_time=None, end_time=None, publish_status=None, program_list=None, dept_list=None, device_list=None):
-        """ShowPublicationResponse - a model defined in huaweicloud sdk"""
+        """ShowPublicationResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 发布ID
+        :type id: str
+        :param last_updated_by: 更新者
+        :type last_updated_by: str
+        :param create_time: 创建时间
+        :type create_time: int
+        :param update_time: 更新时间
+        :type update_time: int
+        :param publish_name: 发布名称
+        :type publish_name: str
+        :param publish_scope: 发布范围
+        :type publish_scope: str
+        :param start_time: 开始时间
+        :type start_time: int
+        :param end_time: 结束时间
+        :type end_time: int
+        :param publish_status: 根据当前时间确定发布状态 - NOT_ONLINE-未上线 - PUBLISHING-发布中 - ALREADY_OFFLINE-已下线
+        :type publish_status: str
+        :param program_list: 发布节目ID列表
+        :type program_list: list[:class:`huaweicloudsdkmeeting.v1.ProgramResponseBase`]
+        :param dept_list: 发布部门列表
+        :type dept_list: list[:class:`huaweicloudsdkmeeting.v1.PublishDeptResponseDTO`]
+        :param device_list: 发布设备列表
+        :type device_list: list[:class:`huaweicloudsdkmeeting.v1.PublishDeviceResponseDTO`]
+        """
         
         super(ShowPublicationResponse, self).__init__()
 
@@ -113,7 +140,7 @@ class ShowPublicationResponse(SdkResponse):
         发布ID
 
         :param id: The id of this ShowPublicationResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -135,7 +162,7 @@ class ShowPublicationResponse(SdkResponse):
         更新者
 
         :param last_updated_by: The last_updated_by of this ShowPublicationResponse.
-        :type: str
+        :type last_updated_by: str
         """
         self._last_updated_by = last_updated_by
 
@@ -157,7 +184,7 @@ class ShowPublicationResponse(SdkResponse):
         创建时间
 
         :param create_time: The create_time of this ShowPublicationResponse.
-        :type: int
+        :type create_time: int
         """
         self._create_time = create_time
 
@@ -179,7 +206,7 @@ class ShowPublicationResponse(SdkResponse):
         更新时间
 
         :param update_time: The update_time of this ShowPublicationResponse.
-        :type: int
+        :type update_time: int
         """
         self._update_time = update_time
 
@@ -201,7 +228,7 @@ class ShowPublicationResponse(SdkResponse):
         发布名称
 
         :param publish_name: The publish_name of this ShowPublicationResponse.
-        :type: str
+        :type publish_name: str
         """
         self._publish_name = publish_name
 
@@ -223,7 +250,7 @@ class ShowPublicationResponse(SdkResponse):
         发布范围
 
         :param publish_scope: The publish_scope of this ShowPublicationResponse.
-        :type: str
+        :type publish_scope: str
         """
         self._publish_scope = publish_scope
 
@@ -245,7 +272,7 @@ class ShowPublicationResponse(SdkResponse):
         开始时间
 
         :param start_time: The start_time of this ShowPublicationResponse.
-        :type: int
+        :type start_time: int
         """
         self._start_time = start_time
 
@@ -267,7 +294,7 @@ class ShowPublicationResponse(SdkResponse):
         结束时间
 
         :param end_time: The end_time of this ShowPublicationResponse.
-        :type: int
+        :type end_time: int
         """
         self._end_time = end_time
 
@@ -289,7 +316,7 @@ class ShowPublicationResponse(SdkResponse):
         根据当前时间确定发布状态 - NOT_ONLINE-未上线 - PUBLISHING-发布中 - ALREADY_OFFLINE-已下线
 
         :param publish_status: The publish_status of this ShowPublicationResponse.
-        :type: str
+        :type publish_status: str
         """
         self._publish_status = publish_status
 
@@ -300,7 +327,7 @@ class ShowPublicationResponse(SdkResponse):
         发布节目ID列表
 
         :return: The program_list of this ShowPublicationResponse.
-        :rtype: list[ProgramResponseBase]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.ProgramResponseBase`]
         """
         return self._program_list
 
@@ -311,7 +338,7 @@ class ShowPublicationResponse(SdkResponse):
         发布节目ID列表
 
         :param program_list: The program_list of this ShowPublicationResponse.
-        :type: list[ProgramResponseBase]
+        :type program_list: list[:class:`huaweicloudsdkmeeting.v1.ProgramResponseBase`]
         """
         self._program_list = program_list
 
@@ -322,7 +349,7 @@ class ShowPublicationResponse(SdkResponse):
         发布部门列表
 
         :return: The dept_list of this ShowPublicationResponse.
-        :rtype: list[PublishDeptResponseDTO]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.PublishDeptResponseDTO`]
         """
         return self._dept_list
 
@@ -333,7 +360,7 @@ class ShowPublicationResponse(SdkResponse):
         发布部门列表
 
         :param dept_list: The dept_list of this ShowPublicationResponse.
-        :type: list[PublishDeptResponseDTO]
+        :type dept_list: list[:class:`huaweicloudsdkmeeting.v1.PublishDeptResponseDTO`]
         """
         self._dept_list = dept_list
 
@@ -344,7 +371,7 @@ class ShowPublicationResponse(SdkResponse):
         发布设备列表
 
         :return: The device_list of this ShowPublicationResponse.
-        :rtype: list[PublishDeviceResponseDTO]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.PublishDeviceResponseDTO`]
         """
         return self._device_list
 
@@ -355,7 +382,7 @@ class ShowPublicationResponse(SdkResponse):
         发布设备列表
 
         :param device_list: The device_list of this ShowPublicationResponse.
-        :type: list[PublishDeviceResponseDTO]
+        :type device_list: list[:class:`huaweicloudsdkmeeting.v1.PublishDeviceResponseDTO`]
         """
         self._device_list = device_list
 

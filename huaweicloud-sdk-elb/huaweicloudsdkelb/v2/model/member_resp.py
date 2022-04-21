@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MemberResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class MemberResp:
     }
 
     def __init__(self, id=None, project_id=None, tenant_id=None, name=None, admin_state_up=None, protocol_port=None, subnet_id=None, address=None, weight=None, operating_status=None):
-        """MemberResp - a model defined in huaweicloud sdk"""
+        """MemberResp
+
+        The model defined in huaweicloud sdk
+
+        :param id: 后端云服务器ID
+        :type id: str
+        :param project_id: 后端云服务器所在的项目ID。
+        :type project_id: str
+        :param tenant_id: 后端云服务器所在的项目ID。
+        :type tenant_id: str
+        :param name: 后端云服务器名称。
+        :type name: str
+        :param admin_state_up: 后端云服务器的管理状态；该字段虽然支持创建、更新，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。该字段虽然支持创建、更新，但实际取值决定于member对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
+        :type admin_state_up: bool
+        :param protocol_port: 后端端口和协议号
+        :type protocol_port: int
+        :param subnet_id: 后端云服务器所在的子网ID。该子网和后端云服务器关联的负载均衡器的子网必须在同一VPC下。只支持指定IPv4的子网ID。暂不支持IPv6。
+        :type subnet_id: str
+        :param address: 后端云服务器的对应的IP地址，这个IP必须在subnet_id字段的子网网段中。例如：192.168.3.11。只能指定为主网卡的IP。
+        :type address: str
+        :param weight: 后端云服务器的权重，请求按权重在同一后端云服务器组下的后端云服务器间分发。权重为0的后端不再接受新的请求。当后端云服务器所在的后端云服务器组的lb_algorithm的取值为SOURCE_IP时，该字段无效。
+        :type weight: int
+        :param operating_status: 后端云服务器的健康状态，取值：  ONLINE：健康检查在线，后端服务正常。 OFFLINE：健康检查离线，后端服务异常，负载均衡器不再向异常的后端发送流量。 NO_MONITOR：无检查检查。未创建检查检查或健康检查的admin_state_up字段为false。 
+        :type operating_status: str
+        """
         
         
 
@@ -93,7 +116,7 @@ class MemberResp:
         后端云服务器ID
 
         :param id: The id of this MemberResp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -115,7 +138,7 @@ class MemberResp:
         后端云服务器所在的项目ID。
 
         :param project_id: The project_id of this MemberResp.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -137,7 +160,7 @@ class MemberResp:
         后端云服务器所在的项目ID。
 
         :param tenant_id: The tenant_id of this MemberResp.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 
@@ -159,7 +182,7 @@ class MemberResp:
         后端云服务器名称。
 
         :param name: The name of this MemberResp.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -181,7 +204,7 @@ class MemberResp:
         后端云服务器的管理状态；该字段虽然支持创建、更新，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。该字段虽然支持创建、更新，但实际取值决定于member对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
 
         :param admin_state_up: The admin_state_up of this MemberResp.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 
@@ -203,7 +226,7 @@ class MemberResp:
         后端端口和协议号
 
         :param protocol_port: The protocol_port of this MemberResp.
-        :type: int
+        :type protocol_port: int
         """
         self._protocol_port = protocol_port
 
@@ -225,7 +248,7 @@ class MemberResp:
         后端云服务器所在的子网ID。该子网和后端云服务器关联的负载均衡器的子网必须在同一VPC下。只支持指定IPv4的子网ID。暂不支持IPv6。
 
         :param subnet_id: The subnet_id of this MemberResp.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -247,7 +270,7 @@ class MemberResp:
         后端云服务器的对应的IP地址，这个IP必须在subnet_id字段的子网网段中。例如：192.168.3.11。只能指定为主网卡的IP。
 
         :param address: The address of this MemberResp.
-        :type: str
+        :type address: str
         """
         self._address = address
 
@@ -269,7 +292,7 @@ class MemberResp:
         后端云服务器的权重，请求按权重在同一后端云服务器组下的后端云服务器间分发。权重为0的后端不再接受新的请求。当后端云服务器所在的后端云服务器组的lb_algorithm的取值为SOURCE_IP时，该字段无效。
 
         :param weight: The weight of this MemberResp.
-        :type: int
+        :type weight: int
         """
         self._weight = weight
 
@@ -291,7 +314,7 @@ class MemberResp:
         后端云服务器的健康状态，取值：  ONLINE：健康检查在线，后端服务正常。 OFFLINE：健康检查离线，后端服务异常，负载均衡器不再向异常的后端发送流量。 NO_MONITOR：无检查检查。未创建检查检查或健康检查的admin_state_up字段为false。 
 
         :param operating_status: The operating_status of this MemberResp.
-        :type: str
+        :type operating_status: str
         """
         self._operating_status = operating_status
 

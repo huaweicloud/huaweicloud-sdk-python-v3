@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRateOnPeriodDetailRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListRateOnPeriodDetailRequest:
     }
 
     def __init__(self, body=None):
-        """ListRateOnPeriodDetailRequest - a model defined in huaweicloud sdk"""
+        """ListRateOnPeriodDetailRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the ListRateOnPeriodDetailRequest
+        :type body: :class:`huaweicloudsdkbss.v2.RateOnPeriodReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class ListRateOnPeriodDetailRequest:
 
 
         :return: The body of this ListRateOnPeriodDetailRequest.
-        :rtype: RateOnPeriodReq
+        :rtype: :class:`huaweicloudsdkbss.v2.RateOnPeriodReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class ListRateOnPeriodDetailRequest:
 
 
         :param body: The body of this ListRateOnPeriodDetailRequest.
-        :type: RateOnPeriodReq
+        :type body: :class:`huaweicloudsdkbss.v2.RateOnPeriodReq`
         """
         self._body = body
 

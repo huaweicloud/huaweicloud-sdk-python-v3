@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApplyConfigurationResponseApplyResults:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ApplyConfigurationResponseApplyResults:
     }
 
     def __init__(self, instance_id=None, instance_name=None, restart_required=None, success=None):
-        """ApplyConfigurationResponseApplyResults - a model defined in huaweicloud sdk"""
+        """ApplyConfigurationResponseApplyResults
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param instance_name: 实例名称。
+        :type instance_name: str
+        :param restart_required: 实例是否需要重启。  - “true”需要重启。 - “false”不需要重启。
+        :type restart_required: bool
+        :param success: 参数模板是否应用成功。  - “true”表示参数模板应用成功。 - “false”表示参数模板应用失败。
+        :type success: bool
+        """
         
         
 
@@ -69,7 +80,7 @@ class ApplyConfigurationResponseApplyResults:
         实例ID。
 
         :param instance_id: The instance_id of this ApplyConfigurationResponseApplyResults.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -91,7 +102,7 @@ class ApplyConfigurationResponseApplyResults:
         实例名称。
 
         :param instance_name: The instance_name of this ApplyConfigurationResponseApplyResults.
-        :type: str
+        :type instance_name: str
         """
         self._instance_name = instance_name
 
@@ -113,7 +124,7 @@ class ApplyConfigurationResponseApplyResults:
         实例是否需要重启。  - “true”需要重启。 - “false”不需要重启。
 
         :param restart_required: The restart_required of this ApplyConfigurationResponseApplyResults.
-        :type: bool
+        :type restart_required: bool
         """
         self._restart_required = restart_required
 
@@ -135,7 +146,7 @@ class ApplyConfigurationResponseApplyResults:
         参数模板是否应用成功。  - “true”表示参数模板应用成功。 - “false”表示参数模板应用失败。
 
         :param success: The success of this ApplyConfigurationResponseApplyResults.
-        :type: bool
+        :type success: bool
         """
         self._success = success
 

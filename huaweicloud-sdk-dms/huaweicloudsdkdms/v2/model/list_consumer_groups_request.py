@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListConsumerGroupsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListConsumerGroupsRequest:
     }
 
     def __init__(self, queue_id=None, include_deadletter=None, include_messages_num=None, page_size=None, current_page=None):
-        """ListConsumerGroupsRequest - a model defined in huaweicloud sdk"""
+        """ListConsumerGroupsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param queue_id: 指定的队列ID
+        :type queue_id: str
+        :param include_deadletter: 是否包含死信信息。默认值为：false
+        :type include_deadletter: bool
+        :param include_messages_num: 是否查询消费组的详情，默认值为true。  配置为false时，查询的消费组列表不包含消费详情，接口响应速度快。
+        :type include_messages_num: bool
+        :param page_size: 设置每页显示的消费组数量。  page_size和current_page必须同时配置有效值，否则默认查询所有消费组。
+        :type page_size: int
+        :param current_page: 设置查询消费组的页码。  page_size和current_page必须同时配置有效值，否则默认查询所有消费组。
+        :type current_page: int
+        """
         
         
 
@@ -77,7 +90,7 @@ class ListConsumerGroupsRequest:
         指定的队列ID
 
         :param queue_id: The queue_id of this ListConsumerGroupsRequest.
-        :type: str
+        :type queue_id: str
         """
         self._queue_id = queue_id
 
@@ -99,7 +112,7 @@ class ListConsumerGroupsRequest:
         是否包含死信信息。默认值为：false
 
         :param include_deadletter: The include_deadletter of this ListConsumerGroupsRequest.
-        :type: bool
+        :type include_deadletter: bool
         """
         self._include_deadletter = include_deadletter
 
@@ -121,7 +134,7 @@ class ListConsumerGroupsRequest:
         是否查询消费组的详情，默认值为true。  配置为false时，查询的消费组列表不包含消费详情，接口响应速度快。
 
         :param include_messages_num: The include_messages_num of this ListConsumerGroupsRequest.
-        :type: bool
+        :type include_messages_num: bool
         """
         self._include_messages_num = include_messages_num
 
@@ -143,7 +156,7 @@ class ListConsumerGroupsRequest:
         设置每页显示的消费组数量。  page_size和current_page必须同时配置有效值，否则默认查询所有消费组。
 
         :param page_size: The page_size of this ListConsumerGroupsRequest.
-        :type: int
+        :type page_size: int
         """
         self._page_size = page_size
 
@@ -165,7 +178,7 @@ class ListConsumerGroupsRequest:
         设置查询消费组的页码。  page_size和current_page必须同时配置有效值，否则默认查询所有消费组。
 
         :param current_page: The current_page of this ListConsumerGroupsRequest.
-        :type: int
+        :type current_page: int
         """
         self._current_page = current_page
 

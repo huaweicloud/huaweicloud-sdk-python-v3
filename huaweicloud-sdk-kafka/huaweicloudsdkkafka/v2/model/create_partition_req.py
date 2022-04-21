@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreatePartitionReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreatePartitionReq:
     }
 
     def __init__(self, partition=None):
-        """CreatePartitionReq - a model defined in huaweicloud sdk"""
+        """CreatePartitionReq
+
+        The model defined in huaweicloud sdk
+
+        :param partition: 期望调整分区后的数量，必须大于当前分区数量，小于等于100。
+        :type partition: int
+        """
         
         
 
@@ -58,7 +63,7 @@ class CreatePartitionReq:
         期望调整分区后的数量，必须大于当前分区数量，小于等于100。
 
         :param partition: The partition of this CreatePartitionReq.
-        :type: int
+        :type partition: int
         """
         self._partition = partition
 

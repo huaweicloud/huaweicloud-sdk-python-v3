@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateYmlsReqEditModify:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateYmlsReqEditModify:
     }
 
     def __init__(self, elasticsearch_yml=None):
-        """UpdateYmlsReqEditModify - a model defined in huaweicloud sdk"""
+        """UpdateYmlsReqEditModify
+
+        The model defined in huaweicloud sdk
+
+        :param elasticsearch_yml: 参数配置列表。
+        :type elasticsearch_yml: object
+        """
         
         
 
@@ -57,7 +62,7 @@ class UpdateYmlsReqEditModify:
         参数配置列表。
 
         :param elasticsearch_yml: The elasticsearch_yml of this UpdateYmlsReqEditModify.
-        :type: object
+        :type elasticsearch_yml: object
         """
         self._elasticsearch_yml = elasticsearch_yml
 

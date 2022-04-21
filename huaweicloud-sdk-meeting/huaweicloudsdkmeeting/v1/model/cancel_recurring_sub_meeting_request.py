@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CancelRecurringSubMeetingRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class CancelRecurringSubMeetingRequest:
     }
 
     def __init__(self, x_authorization_type=None, user_uuid=None, x_site_id=None, conference_id=None, type=None, body=None):
-        """CancelRecurringSubMeetingRequest - a model defined in huaweicloud sdk"""
+        """CancelRecurringSubMeetingRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_authorization_type: 标识是否为第三方portal过来的请求
+        :type x_authorization_type: str
+        :param user_uuid: 用户的uuid（已在USG注册过的）
+        :type user_uuid: str
+        :param x_site_id: 用于区分到哪个HCSO站点鉴权。
+        :type x_site_id: str
+        :param conference_id: 会议标识
+        :type conference_id: str
+        :param type: 取消会议操作类型,1表示需要结束在线会议
+        :type type: int
+        :param body: Body of the CancelRecurringSubMeetingRequest
+        :type body: :class:`huaweicloudsdkmeeting.v1.RestCancelSingleRecordCycleConfListReqBody`
+        """
         
         
 
@@ -82,7 +97,7 @@ class CancelRecurringSubMeetingRequest:
         标识是否为第三方portal过来的请求
 
         :param x_authorization_type: The x_authorization_type of this CancelRecurringSubMeetingRequest.
-        :type: str
+        :type x_authorization_type: str
         """
         self._x_authorization_type = x_authorization_type
 
@@ -104,7 +119,7 @@ class CancelRecurringSubMeetingRequest:
         用户的uuid（已在USG注册过的）
 
         :param user_uuid: The user_uuid of this CancelRecurringSubMeetingRequest.
-        :type: str
+        :type user_uuid: str
         """
         self._user_uuid = user_uuid
 
@@ -126,7 +141,7 @@ class CancelRecurringSubMeetingRequest:
         用于区分到哪个HCSO站点鉴权。
 
         :param x_site_id: The x_site_id of this CancelRecurringSubMeetingRequest.
-        :type: str
+        :type x_site_id: str
         """
         self._x_site_id = x_site_id
 
@@ -148,7 +163,7 @@ class CancelRecurringSubMeetingRequest:
         会议标识
 
         :param conference_id: The conference_id of this CancelRecurringSubMeetingRequest.
-        :type: str
+        :type conference_id: str
         """
         self._conference_id = conference_id
 
@@ -170,7 +185,7 @@ class CancelRecurringSubMeetingRequest:
         取消会议操作类型,1表示需要结束在线会议
 
         :param type: The type of this CancelRecurringSubMeetingRequest.
-        :type: int
+        :type type: int
         """
         self._type = type
 
@@ -180,7 +195,7 @@ class CancelRecurringSubMeetingRequest:
 
 
         :return: The body of this CancelRecurringSubMeetingRequest.
-        :rtype: RestCancelSingleRecordCycleConfListReqBody
+        :rtype: :class:`huaweicloudsdkmeeting.v1.RestCancelSingleRecordCycleConfListReqBody`
         """
         return self._body
 
@@ -190,7 +205,7 @@ class CancelRecurringSubMeetingRequest:
 
 
         :param body: The body of this CancelRecurringSubMeetingRequest.
-        :type: RestCancelSingleRecordCycleConfListReqBody
+        :type body: :class:`huaweicloudsdkmeeting.v1.RestCancelSingleRecordCycleConfListReqBody`
         """
         self._body = body
 

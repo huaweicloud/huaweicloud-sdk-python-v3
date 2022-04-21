@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateComputingResourceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateComputingResourceRequest:
     }
 
     def __init__(self, body=None):
-        """CreateComputingResourceRequest - a model defined in huaweicloud sdk"""
+        """CreateComputingResourceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateComputingResourceRequest
+        :type body: :class:`huaweicloudsdkiotanalytics.v1.CreateComputingResourceRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateComputingResourceRequest:
 
 
         :return: The body of this CreateComputingResourceRequest.
-        :rtype: CreateComputingResourceRequestBody
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.CreateComputingResourceRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateComputingResourceRequest:
 
 
         :param body: The body of this CreateComputingResourceRequest.
-        :type: CreateComputingResourceRequestBody
+        :type body: :class:`huaweicloudsdkiotanalytics.v1.CreateComputingResourceRequestBody`
         """
         self._body = body
 

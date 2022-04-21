@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TagSelector:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class TagSelector:
     }
 
     def __init__(self, kind=None, pattern=None):
-        """TagSelector - a model defined in huaweicloud sdk"""
+        """TagSelector
+
+        The model defined in huaweicloud sdk
+
+        :param kind: 匹配规则，label、regexp
+        :type kind: str
+        :param pattern: kind是label时，设置为镜像版本,kind是regexp时，设置为正则表达式
+        :type pattern: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class TagSelector:
         匹配规则，label、regexp
 
         :param kind: The kind of this TagSelector.
-        :type: str
+        :type kind: str
         """
         self._kind = kind
 
@@ -83,7 +90,7 @@ class TagSelector:
         kind是label时，设置为镜像版本,kind是regexp时，设置为正则表达式
 
         :param pattern: The pattern of this TagSelector.
-        :type: str
+        :type pattern: str
         """
         self._pattern = pattern
 

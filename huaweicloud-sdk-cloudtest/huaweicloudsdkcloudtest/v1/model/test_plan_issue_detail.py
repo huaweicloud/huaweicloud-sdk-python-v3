@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TestPlanIssueDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class TestPlanIssueDetail:
     }
 
     def __init__(self, project_id=None, plan_id=None, workitem_id=None, parent_issue=None, start_date=None, end_date=None, name=None, region_id=None, owner=None, severity=None, status=None, tracker=None, iteration=None, module=None):
-        """TestPlanIssueDetail - a model defined in huaweicloud sdk"""
+        """TestPlanIssueDetail
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: DevCloud项目id，项目唯一标识，固定长度32位字符
+        :type project_id: str
+        :param plan_id: 测试计划id
+        :type plan_id: str
+        :param workitem_id: 工作项id
+        :type workitem_id: str
+        :param parent_issue: 父工作项
+        :type parent_issue: str
+        :param start_date: 预计开始日期
+        :type start_date: str
+        :param end_date: 预计结束日期
+        :type end_date: str
+        :param name: 工作项名称
+        :type name: str
+        :param region_id: region信息
+        :type region_id: str
+        :param owner: 
+        :type owner: :class:`huaweicloudsdkcloudtest.v1.NameAndId`
+        :param severity: 
+        :type severity: :class:`huaweicloudsdkcloudtest.v1.NameAndId`
+        :param status: 
+        :type status: :class:`huaweicloudsdkcloudtest.v1.NameAndId`
+        :param tracker: 
+        :type tracker: :class:`huaweicloudsdkcloudtest.v1.NameAndId`
+        :param iteration: 
+        :type iteration: :class:`huaweicloudsdkcloudtest.v1.NameAndId`
+        :param module: 
+        :type module: :class:`huaweicloudsdkcloudtest.v1.NameAndId`
+        """
         
         
 
@@ -123,7 +154,7 @@ class TestPlanIssueDetail:
         DevCloud项目id，项目唯一标识，固定长度32位字符
 
         :param project_id: The project_id of this TestPlanIssueDetail.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -145,7 +176,7 @@ class TestPlanIssueDetail:
         测试计划id
 
         :param plan_id: The plan_id of this TestPlanIssueDetail.
-        :type: str
+        :type plan_id: str
         """
         self._plan_id = plan_id
 
@@ -167,7 +198,7 @@ class TestPlanIssueDetail:
         工作项id
 
         :param workitem_id: The workitem_id of this TestPlanIssueDetail.
-        :type: str
+        :type workitem_id: str
         """
         self._workitem_id = workitem_id
 
@@ -189,7 +220,7 @@ class TestPlanIssueDetail:
         父工作项
 
         :param parent_issue: The parent_issue of this TestPlanIssueDetail.
-        :type: str
+        :type parent_issue: str
         """
         self._parent_issue = parent_issue
 
@@ -211,7 +242,7 @@ class TestPlanIssueDetail:
         预计开始日期
 
         :param start_date: The start_date of this TestPlanIssueDetail.
-        :type: str
+        :type start_date: str
         """
         self._start_date = start_date
 
@@ -233,7 +264,7 @@ class TestPlanIssueDetail:
         预计结束日期
 
         :param end_date: The end_date of this TestPlanIssueDetail.
-        :type: str
+        :type end_date: str
         """
         self._end_date = end_date
 
@@ -255,7 +286,7 @@ class TestPlanIssueDetail:
         工作项名称
 
         :param name: The name of this TestPlanIssueDetail.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -277,7 +308,7 @@ class TestPlanIssueDetail:
         region信息
 
         :param region_id: The region_id of this TestPlanIssueDetail.
-        :type: str
+        :type region_id: str
         """
         self._region_id = region_id
 
@@ -287,7 +318,7 @@ class TestPlanIssueDetail:
 
 
         :return: The owner of this TestPlanIssueDetail.
-        :rtype: NameAndId
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.NameAndId`
         """
         return self._owner
 
@@ -297,7 +328,7 @@ class TestPlanIssueDetail:
 
 
         :param owner: The owner of this TestPlanIssueDetail.
-        :type: NameAndId
+        :type owner: :class:`huaweicloudsdkcloudtest.v1.NameAndId`
         """
         self._owner = owner
 
@@ -307,7 +338,7 @@ class TestPlanIssueDetail:
 
 
         :return: The severity of this TestPlanIssueDetail.
-        :rtype: NameAndId
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.NameAndId`
         """
         return self._severity
 
@@ -317,7 +348,7 @@ class TestPlanIssueDetail:
 
 
         :param severity: The severity of this TestPlanIssueDetail.
-        :type: NameAndId
+        :type severity: :class:`huaweicloudsdkcloudtest.v1.NameAndId`
         """
         self._severity = severity
 
@@ -327,7 +358,7 @@ class TestPlanIssueDetail:
 
 
         :return: The status of this TestPlanIssueDetail.
-        :rtype: NameAndId
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.NameAndId`
         """
         return self._status
 
@@ -337,7 +368,7 @@ class TestPlanIssueDetail:
 
 
         :param status: The status of this TestPlanIssueDetail.
-        :type: NameAndId
+        :type status: :class:`huaweicloudsdkcloudtest.v1.NameAndId`
         """
         self._status = status
 
@@ -347,7 +378,7 @@ class TestPlanIssueDetail:
 
 
         :return: The tracker of this TestPlanIssueDetail.
-        :rtype: NameAndId
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.NameAndId`
         """
         return self._tracker
 
@@ -357,7 +388,7 @@ class TestPlanIssueDetail:
 
 
         :param tracker: The tracker of this TestPlanIssueDetail.
-        :type: NameAndId
+        :type tracker: :class:`huaweicloudsdkcloudtest.v1.NameAndId`
         """
         self._tracker = tracker
 
@@ -367,7 +398,7 @@ class TestPlanIssueDetail:
 
 
         :return: The iteration of this TestPlanIssueDetail.
-        :rtype: NameAndId
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.NameAndId`
         """
         return self._iteration
 
@@ -377,7 +408,7 @@ class TestPlanIssueDetail:
 
 
         :param iteration: The iteration of this TestPlanIssueDetail.
-        :type: NameAndId
+        :type iteration: :class:`huaweicloudsdkcloudtest.v1.NameAndId`
         """
         self._iteration = iteration
 
@@ -387,7 +418,7 @@ class TestPlanIssueDetail:
 
 
         :return: The module of this TestPlanIssueDetail.
-        :rtype: NameAndId
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.NameAndId`
         """
         return self._module
 
@@ -397,7 +428,7 @@ class TestPlanIssueDetail:
 
 
         :param module: The module of this TestPlanIssueDetail.
-        :type: NameAndId
+        :type module: :class:`huaweicloudsdkcloudtest.v1.NameAndId`
         """
         self._module = module
 

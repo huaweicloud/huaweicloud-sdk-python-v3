@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PostAddressInfoIntl:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class PostAddressInfoIntl:
     }
 
     def __init__(self, address=None, recipients=None, zip_code=None, mobile_phone=None):
-        """PostAddressInfoIntl - a model defined in huaweicloud sdk"""
+        """PostAddressInfoIntl
+
+        The model defined in huaweicloud sdk
+
+        :param address: 收件人地址。
+        :type address: str
+        :param recipients: 收件人。
+        :type recipients: str
+        :param zip_code: 收件所在地邮政编码。
+        :type zip_code: str
+        :param mobile_phone: 收件人手机号码。
+        :type mobile_phone: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class PostAddressInfoIntl:
         收件人地址。
 
         :param address: The address of this PostAddressInfoIntl.
-        :type: str
+        :type address: str
         """
         self._address = address
 
@@ -95,7 +106,7 @@ class PostAddressInfoIntl:
         收件人。
 
         :param recipients: The recipients of this PostAddressInfoIntl.
-        :type: str
+        :type recipients: str
         """
         self._recipients = recipients
 
@@ -117,7 +128,7 @@ class PostAddressInfoIntl:
         收件所在地邮政编码。
 
         :param zip_code: The zip_code of this PostAddressInfoIntl.
-        :type: str
+        :type zip_code: str
         """
         self._zip_code = zip_code
 
@@ -139,7 +150,7 @@ class PostAddressInfoIntl:
         收件人手机号码。
 
         :param mobile_phone: The mobile_phone of this PostAddressInfoIntl.
-        :type: str
+        :type mobile_phone: str
         """
         self._mobile_phone = mobile_phone
 

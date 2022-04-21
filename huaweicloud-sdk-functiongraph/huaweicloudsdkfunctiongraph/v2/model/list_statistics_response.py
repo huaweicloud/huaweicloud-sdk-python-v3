@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListStatisticsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListStatisticsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, gbs=None, statistics=None):
-        """ListStatisticsResponse - a model defined in huaweicloud sdk"""
+        """ListStatisticsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 月度调用次数
+        :type count: list[:class:`huaweicloudsdkfunctiongraph.v2.MonthUsed`]
+        :param gbs: 月度资源用量
+        :type gbs: list[:class:`huaweicloudsdkfunctiongraph.v2.MonthUsed`]
+        :param statistics: 
+        :type statistics: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionStatisticsResponseBody`
+        """
         
         super(ListStatisticsResponse, self).__init__()
 
@@ -57,7 +66,7 @@ class ListStatisticsResponse(SdkResponse):
         月度调用次数
 
         :return: The count of this ListStatisticsResponse.
-        :rtype: list[MonthUsed]
+        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.MonthUsed`]
         """
         return self._count
 
@@ -68,7 +77,7 @@ class ListStatisticsResponse(SdkResponse):
         月度调用次数
 
         :param count: The count of this ListStatisticsResponse.
-        :type: list[MonthUsed]
+        :type count: list[:class:`huaweicloudsdkfunctiongraph.v2.MonthUsed`]
         """
         self._count = count
 
@@ -79,7 +88,7 @@ class ListStatisticsResponse(SdkResponse):
         月度资源用量
 
         :return: The gbs of this ListStatisticsResponse.
-        :rtype: list[MonthUsed]
+        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.MonthUsed`]
         """
         return self._gbs
 
@@ -90,7 +99,7 @@ class ListStatisticsResponse(SdkResponse):
         月度资源用量
 
         :param gbs: The gbs of this ListStatisticsResponse.
-        :type: list[MonthUsed]
+        :type gbs: list[:class:`huaweicloudsdkfunctiongraph.v2.MonthUsed`]
         """
         self._gbs = gbs
 
@@ -100,7 +109,7 @@ class ListStatisticsResponse(SdkResponse):
 
 
         :return: The statistics of this ListStatisticsResponse.
-        :rtype: ListFunctionStatisticsResponseBody
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionStatisticsResponseBody`
         """
         return self._statistics
 
@@ -110,7 +119,7 @@ class ListStatisticsResponse(SdkResponse):
 
 
         :param statistics: The statistics of this ListStatisticsResponse.
-        :type: ListFunctionStatisticsResponseBody
+        :type statistics: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionStatisticsResponseBody`
         """
         self._statistics = statistics
 

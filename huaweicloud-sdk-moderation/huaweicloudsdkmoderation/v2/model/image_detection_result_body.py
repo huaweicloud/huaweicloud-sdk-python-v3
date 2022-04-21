@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ImageDetectionResultBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ImageDetectionResultBody:
     }
 
     def __init__(self, detail=None, suggestion=None, category_suggestions=None):
-        """ImageDetectionResultBody - a model defined in huaweicloud sdk"""
+        """ImageDetectionResultBody
+
+        The model defined in huaweicloud sdk
+
+        :param detail: 
+        :type detail: :class:`huaweicloudsdkmoderation.v2.ImageDetectionResultDetail`
+        :param suggestion: 检测结果是否通过。 - block：包含敏感信息，不通过 - pass：不包含敏感信息，通过 - review：需要人工复检 &gt; 当同时检测多个场景时，suggestion的值以最可能包含敏感信息的场景为准。即任一场景出现了block则总的suggestion为block，所有场景都pass时suggestion为pass，这两种情况之外则一定有场景需要review，此时suggestion为review。 
+        :type suggestion: str
+        :param category_suggestions: 具体每个场景的检测结果。  block：包含敏感信息，不通过  pass：不包含敏感信息，通过  review：需要人工复检 
+        :type category_suggestions: dict(str, str)
+        """
         
         
 
@@ -56,7 +65,7 @@ class ImageDetectionResultBody:
 
 
         :return: The detail of this ImageDetectionResultBody.
-        :rtype: ImageDetectionResultDetail
+        :rtype: :class:`huaweicloudsdkmoderation.v2.ImageDetectionResultDetail`
         """
         return self._detail
 
@@ -66,7 +75,7 @@ class ImageDetectionResultBody:
 
 
         :param detail: The detail of this ImageDetectionResultBody.
-        :type: ImageDetectionResultDetail
+        :type detail: :class:`huaweicloudsdkmoderation.v2.ImageDetectionResultDetail`
         """
         self._detail = detail
 
@@ -88,7 +97,7 @@ class ImageDetectionResultBody:
         检测结果是否通过。 - block：包含敏感信息，不通过 - pass：不包含敏感信息，通过 - review：需要人工复检 > 当同时检测多个场景时，suggestion的值以最可能包含敏感信息的场景为准。即任一场景出现了block则总的suggestion为block，所有场景都pass时suggestion为pass，这两种情况之外则一定有场景需要review，此时suggestion为review。 
 
         :param suggestion: The suggestion of this ImageDetectionResultBody.
-        :type: str
+        :type suggestion: str
         """
         self._suggestion = suggestion
 
@@ -110,7 +119,7 @@ class ImageDetectionResultBody:
         具体每个场景的检测结果。  block：包含敏感信息，不通过  pass：不包含敏感信息，通过  review：需要人工复检 
 
         :param category_suggestions: The category_suggestions of this ImageDetectionResultBody.
-        :type: dict(str, str)
+        :type category_suggestions: dict(str, str)
         """
         self._category_suggestions = category_suggestions
 

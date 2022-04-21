@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneCreateProtocolResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class KeystoneCreateProtocolResponse(SdkResponse):
     }
 
     def __init__(self, protocol=None):
-        """KeystoneCreateProtocolResponse - a model defined in huaweicloud sdk"""
+        """KeystoneCreateProtocolResponse
+
+        The model defined in huaweicloud sdk
+
+        :param protocol: 
+        :type protocol: :class:`huaweicloudsdkiam.v3.ProtocolResult`
+        """
         
         super(KeystoneCreateProtocolResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class KeystoneCreateProtocolResponse(SdkResponse):
 
 
         :return: The protocol of this KeystoneCreateProtocolResponse.
-        :rtype: ProtocolResult
+        :rtype: :class:`huaweicloudsdkiam.v3.ProtocolResult`
         """
         return self._protocol
 
@@ -56,7 +61,7 @@ class KeystoneCreateProtocolResponse(SdkResponse):
 
 
         :param protocol: The protocol of this KeystoneCreateProtocolResponse.
-        :type: ProtocolResult
+        :type protocol: :class:`huaweicloudsdkiam.v3.ProtocolResult`
         """
         self._protocol = protocol
 

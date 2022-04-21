@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LVMConfig:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class LVMConfig:
     }
 
     def __init__(self, lv_type=None, path=None):
-        """LVMConfig - a model defined in huaweicloud sdk"""
+        """LVMConfig
+
+        The model defined in huaweicloud sdk
+
+        :param lv_type: LVM写入模式：linear、striped。linear：线性模式；striped：条带模式，使用多块磁盘组成条带模式，能够提升磁盘性能。
+        :type lv_type: str
+        :param path: 磁盘挂载路径。仅在用户配置中生效。支持包含：数字、大小写字母、点、中划线、下划线的绝对路径。
+        :type path: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class LVMConfig:
         LVM写入模式：linear、striped。linear：线性模式；striped：条带模式，使用多块磁盘组成条带模式，能够提升磁盘性能。
 
         :param lv_type: The lv_type of this LVMConfig.
-        :type: str
+        :type lv_type: str
         """
         self._lv_type = lv_type
 
@@ -84,7 +91,7 @@ class LVMConfig:
         磁盘挂载路径。仅在用户配置中生效。支持包含：数字、大小写字母、点、中划线、下划线的绝对路径。
 
         :param path: The path of this LVMConfig.
-        :type: str
+        :type path: str
         """
         self._path = path
 

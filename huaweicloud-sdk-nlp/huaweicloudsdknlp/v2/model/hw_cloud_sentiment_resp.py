@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class HWCloudSentimentResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class HWCloudSentimentResp:
     }
 
     def __init__(self, label=None, confidence=None, content=None):
-        """HWCloudSentimentResp - a model defined in huaweicloud sdk"""
+        """HWCloudSentimentResp
+
+        The model defined in huaweicloud sdk
+
+        :param label: 该文本的分析结果标签，取值如下： 0 负向 1 正向
+        :type label: int
+        :param confidence: 标签label的置信度。小数点精确到（6）位。
+        :type confidence: float
+        :param content: 待分析文本
+        :type content: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class HWCloudSentimentResp:
         该文本的分析结果标签，取值如下： 0 负向 1 正向
 
         :param label: The label of this HWCloudSentimentResp.
-        :type: int
+        :type label: int
         """
         self._label = label
 
@@ -87,7 +96,7 @@ class HWCloudSentimentResp:
         标签label的置信度。小数点精确到（6）位。
 
         :param confidence: The confidence of this HWCloudSentimentResp.
-        :type: float
+        :type confidence: float
         """
         self._confidence = confidence
 
@@ -109,7 +118,7 @@ class HWCloudSentimentResp:
         待分析文本
 
         :param content: The content of this HWCloudSentimentResp.
-        :type: str
+        :type content: str
         """
         self._content = content
 

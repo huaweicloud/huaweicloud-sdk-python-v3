@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListBandwidthsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListBandwidthsResponse(SdkResponse):
     }
 
     def __init__(self, bandwidths=None, count=None):
-        """ListBandwidthsResponse - a model defined in huaweicloud sdk"""
+        """ListBandwidthsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param bandwidths: 带宽列表对象。
+        :type bandwidths: list[:class:`huaweicloudsdkiec.v1.Bandwidth`]
+        :param count: 带宽数量。
+        :type count: int
+        """
         
         super(ListBandwidthsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListBandwidthsResponse(SdkResponse):
         带宽列表对象。
 
         :return: The bandwidths of this ListBandwidthsResponse.
-        :rtype: list[Bandwidth]
+        :rtype: list[:class:`huaweicloudsdkiec.v1.Bandwidth`]
         """
         return self._bandwidths
 
@@ -63,7 +70,7 @@ class ListBandwidthsResponse(SdkResponse):
         带宽列表对象。
 
         :param bandwidths: The bandwidths of this ListBandwidthsResponse.
-        :type: list[Bandwidth]
+        :type bandwidths: list[:class:`huaweicloudsdkiec.v1.Bandwidth`]
         """
         self._bandwidths = bandwidths
 
@@ -85,7 +92,7 @@ class ListBandwidthsResponse(SdkResponse):
         带宽数量。
 
         :param count: The count of this ListBandwidthsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

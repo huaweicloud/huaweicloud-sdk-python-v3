@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateKeyDescriptionRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateKeyDescriptionRequestBody:
     }
 
     def __init__(self, key_id=None, key_description=None, sequence=None):
-        """UpdateKeyDescriptionRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateKeyDescriptionRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param key_id: 密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
+        :type key_id: str
+        :param key_description: 密钥描述，取值0到255字符。
+        :type key_description: str
+        :param sequence: 请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
+        :type sequence: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class UpdateKeyDescriptionRequestBody:
         密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
 
         :param key_id: The key_id of this UpdateKeyDescriptionRequestBody.
-        :type: str
+        :type key_id: str
         """
         self._key_id = key_id
 
@@ -88,7 +97,7 @@ class UpdateKeyDescriptionRequestBody:
         密钥描述，取值0到255字符。
 
         :param key_description: The key_description of this UpdateKeyDescriptionRequestBody.
-        :type: str
+        :type key_description: str
         """
         self._key_description = key_description
 
@@ -110,7 +119,7 @@ class UpdateKeyDescriptionRequestBody:
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
 
         :param sequence: The sequence of this UpdateKeyDescriptionRequestBody.
-        :type: str
+        :type sequence: str
         """
         self._sequence = sequence
 

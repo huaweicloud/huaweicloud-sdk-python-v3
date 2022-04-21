@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowRealnameAuthenticationReviewResultResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowRealnameAuthenticationReviewResultResponse(SdkResponse):
     }
 
     def __init__(self, review_result=None, opinion=None):
-        """ShowRealnameAuthenticationReviewResultResponse - a model defined in huaweicloud sdk"""
+        """ShowRealnameAuthenticationReviewResultResponse
+
+        The model defined in huaweicloud sdk
+
+        :param review_result: 实名认证审核结果，只有状态码为200并且已经提交过实名认证请求才返回： 0：审核中1：不通过2：通过
+        :type review_result: int
+        :param opinion: 审批意见，只有状态码为200并且审核不通过才返回。
+        :type opinion: str
+        """
         
         super(ShowRealnameAuthenticationReviewResultResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ShowRealnameAuthenticationReviewResultResponse(SdkResponse):
         实名认证审核结果，只有状态码为200并且已经提交过实名认证请求才返回： 0：审核中1：不通过2：通过
 
         :param review_result: The review_result of this ShowRealnameAuthenticationReviewResultResponse.
-        :type: int
+        :type review_result: int
         """
         self._review_result = review_result
 
@@ -85,7 +92,7 @@ class ShowRealnameAuthenticationReviewResultResponse(SdkResponse):
         审批意见，只有状态码为200并且审核不通过才返回。
 
         :param opinion: The opinion of this ShowRealnameAuthenticationReviewResultResponse.
-        :type: str
+        :type opinion: str
         """
         self._opinion = opinion
 

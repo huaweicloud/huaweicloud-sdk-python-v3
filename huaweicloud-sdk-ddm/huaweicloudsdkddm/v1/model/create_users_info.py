@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateUsersInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class CreateUsersInfo:
     }
 
     def __init__(self, name=None, password=None, base_authority=None, description=None, databases=None):
-        """CreateUsersInfo - a model defined in huaweicloud sdk"""
+        """CreateUsersInfo
+
+        The model defined in huaweicloud sdk
+
+        :param name: DDM实例帐号名称，命名要求如下。  - 长度为1-32个字符。 - 必须以字母开头。 - 可以包含字母，数字、下划线，不能包含其它特殊字符。
+        :type name: str
+        :param password: DDM实例帐号密码。
+        :type password: str
+        :param base_authority: DDM实例帐号的基础权限。  取值为：CREATE、DROP、ALTER、INDEX、INSERT、DELETE、UPDATE、SELECT
+        :type base_authority: list[str]
+        :param description: DDM实例帐号的描述，最大长度不能超过256。默认值为空。
+        :type description: str
+        :param databases: 关联的逻辑库的集合。 databases字段可以省略，即创建用户时可以不关联逻辑库。
+        :type databases: list[:class:`huaweicloudsdkddm.v1.CreateUsersDatabases`]
+        """
         
         
 
@@ -75,7 +88,7 @@ class CreateUsersInfo:
         DDM实例帐号名称，命名要求如下。  - 长度为1-32个字符。 - 必须以字母开头。 - 可以包含字母，数字、下划线，不能包含其它特殊字符。
 
         :param name: The name of this CreateUsersInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -97,7 +110,7 @@ class CreateUsersInfo:
         DDM实例帐号密码。
 
         :param password: The password of this CreateUsersInfo.
-        :type: str
+        :type password: str
         """
         self._password = password
 
@@ -119,7 +132,7 @@ class CreateUsersInfo:
         DDM实例帐号的基础权限。  取值为：CREATE、DROP、ALTER、INDEX、INSERT、DELETE、UPDATE、SELECT
 
         :param base_authority: The base_authority of this CreateUsersInfo.
-        :type: list[str]
+        :type base_authority: list[str]
         """
         self._base_authority = base_authority
 
@@ -141,7 +154,7 @@ class CreateUsersInfo:
         DDM实例帐号的描述，最大长度不能超过256。默认值为空。
 
         :param description: The description of this CreateUsersInfo.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -152,7 +165,7 @@ class CreateUsersInfo:
         关联的逻辑库的集合。 databases字段可以省略，即创建用户时可以不关联逻辑库。
 
         :return: The databases of this CreateUsersInfo.
-        :rtype: list[CreateUsersDatabases]
+        :rtype: list[:class:`huaweicloudsdkddm.v1.CreateUsersDatabases`]
         """
         return self._databases
 
@@ -163,7 +176,7 @@ class CreateUsersInfo:
         关联的逻辑库的集合。 databases字段可以省略，即创建用户时可以不关联逻辑库。
 
         :param databases: The databases of this CreateUsersInfo.
-        :type: list[CreateUsersDatabases]
+        :type databases: list[:class:`huaweicloudsdkddm.v1.CreateUsersDatabases`]
         """
         self._databases = databases
 

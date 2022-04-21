@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestSwitchModeReqBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RestSwitchModeReqBody:
     }
 
     def __init__(self, switch_mode=None, image_type=None):
-        """RestSwitchModeReqBody - a model defined in huaweicloud sdk"""
+        """RestSwitchModeReqBody
+
+        The model defined in huaweicloud sdk
+
+        :param switch_mode: 会议显示策略。 - Fixed: 固定广播与会者。 - VAS: 声控切换。
+        :type switch_mode: str
+        :param image_type: 画面类型。单画面设置只针对声控模式。 - 0: 单画面。 - 1: 多画面。
+        :type image_type: int
+        """
         
         
 
@@ -61,7 +68,7 @@ class RestSwitchModeReqBody:
         会议显示策略。 - Fixed: 固定广播与会者。 - VAS: 声控切换。
 
         :param switch_mode: The switch_mode of this RestSwitchModeReqBody.
-        :type: str
+        :type switch_mode: str
         """
         self._switch_mode = switch_mode
 
@@ -83,7 +90,7 @@ class RestSwitchModeReqBody:
         画面类型。单画面设置只针对声控模式。 - 0: 单画面。 - 1: 多画面。
 
         :param image_type: The image_type of this RestSwitchModeReqBody.
-        :type: int
+        :type image_type: int
         """
         self._image_type = image_type
 

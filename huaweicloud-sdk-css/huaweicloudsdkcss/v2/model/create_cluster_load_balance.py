@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateClusterLoadBalance:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateClusterLoadBalance:
     }
 
     def __init__(self, endpoint_with_dns_name=None, vpc_permisssions=None):
-        """CreateClusterLoadBalance - a model defined in huaweicloud sdk"""
+        """CreateClusterLoadBalance
+
+        The model defined in huaweicloud sdk
+
+        :param endpoint_with_dns_name: 是否开启内网域名。
+        :type endpoint_with_dns_name: bool
+        :param vpc_permisssions: 访问控制。
+        :type vpc_permisssions: list[str]
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateClusterLoadBalance:
         是否开启内网域名。
 
         :param endpoint_with_dns_name: The endpoint_with_dns_name of this CreateClusterLoadBalance.
-        :type: bool
+        :type endpoint_with_dns_name: bool
         """
         self._endpoint_with_dns_name = endpoint_with_dns_name
 
@@ -84,7 +91,7 @@ class CreateClusterLoadBalance:
         访问控制。
 
         :param vpc_permisssions: The vpc_permisssions of this CreateClusterLoadBalance.
-        :type: list[str]
+        :type vpc_permisssions: list[str]
         """
         self._vpc_permisssions = vpc_permisssions
 

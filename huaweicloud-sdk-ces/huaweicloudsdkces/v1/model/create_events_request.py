@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateEventsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateEventsRequest:
     }
 
     def __init__(self, body=None):
-        """CreateEventsRequest - a model defined in huaweicloud sdk"""
+        """CreateEventsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: 上报自定义事件。请求参数。
+        :type body: list[:class:`huaweicloudsdkces.v1.EventItem`]
+        """
         
         
 
@@ -47,7 +52,7 @@ class CreateEventsRequest:
         上报自定义事件。请求参数。
 
         :return: The body of this CreateEventsRequest.
-        :rtype: list[EventItem]
+        :rtype: list[:class:`huaweicloudsdkces.v1.EventItem`]
         """
         return self._body
 
@@ -58,7 +63,7 @@ class CreateEventsRequest:
         上报自定义事件。请求参数。
 
         :param body: The body of this CreateEventsRequest.
-        :type: list[EventItem]
+        :type body: list[:class:`huaweicloudsdkces.v1.EventItem`]
         """
         self._body = body
 

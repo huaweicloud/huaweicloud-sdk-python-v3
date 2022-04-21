@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRepoMembersResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListRepoMembersResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """ListRepoMembersResponse - a model defined in huaweicloud sdk"""
+        """ListRepoMembersResponse
+
+        The model defined in huaweicloud sdk
+
+        :param error: 
+        :type error: :class:`huaweicloudsdkcodehub.v3.Error`
+        :param result: 
+        :type result: :class:`huaweicloudsdkcodehub.v3.RepositoryMemberList`
+        :param status: 响应状态
+        :type status: str
+        """
         
         super(ListRepoMembersResponse, self).__init__()
 
@@ -56,7 +65,7 @@ class ListRepoMembersResponse(SdkResponse):
 
 
         :return: The error of this ListRepoMembersResponse.
-        :rtype: Error
+        :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
         """
         return self._error
 
@@ -66,7 +75,7 @@ class ListRepoMembersResponse(SdkResponse):
 
 
         :param error: The error of this ListRepoMembersResponse.
-        :type: Error
+        :type error: :class:`huaweicloudsdkcodehub.v3.Error`
         """
         self._error = error
 
@@ -76,7 +85,7 @@ class ListRepoMembersResponse(SdkResponse):
 
 
         :return: The result of this ListRepoMembersResponse.
-        :rtype: RepositoryMemberList
+        :rtype: :class:`huaweicloudsdkcodehub.v3.RepositoryMemberList`
         """
         return self._result
 
@@ -86,7 +95,7 @@ class ListRepoMembersResponse(SdkResponse):
 
 
         :param result: The result of this ListRepoMembersResponse.
-        :type: RepositoryMemberList
+        :type result: :class:`huaweicloudsdkcodehub.v3.RepositoryMemberList`
         """
         self._result = result
 
@@ -108,7 +117,7 @@ class ListRepoMembersResponse(SdkResponse):
         响应状态
 
         :param status: The status of this ListRepoMembersResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 

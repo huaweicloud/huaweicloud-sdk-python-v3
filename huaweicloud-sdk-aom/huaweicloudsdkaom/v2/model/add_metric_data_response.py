@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddMetricDataResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AddMetricDataResponse(SdkResponse):
     }
 
     def __init__(self, error_code=None, error_message=None):
-        """AddMetricDataResponse - a model defined in huaweicloud sdk"""
+        """AddMetricDataResponse
+
+        The model defined in huaweicloud sdk
+
+        :param error_code: 响应码。
+        :type error_code: str
+        :param error_message: 响应信息描述。
+        :type error_message: str
+        """
         
         super(AddMetricDataResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class AddMetricDataResponse(SdkResponse):
         响应码。
 
         :param error_code: The error_code of this AddMetricDataResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -85,7 +92,7 @@ class AddMetricDataResponse(SdkResponse):
         响应信息描述。
 
         :param error_message: The error_message of this AddMetricDataResponse.
-        :type: str
+        :type error_message: str
         """
         self._error_message = error_message
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PrePaidServerPublicip:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class PrePaidServerPublicip:
     }
 
     def __init__(self, id=None, eip=None, delete_on_termination=None):
-        """PrePaidServerPublicip - a model defined in huaweicloud sdk"""
+        """PrePaidServerPublicip
+
+        The model defined in huaweicloud sdk
+
+        :param id: 为待创建云服务器分配已有弹性IP时，分配的弹性IP的ID，UUID格式。  约束：只能分配状态（status）为DOWN的弹性IP。
+        :type id: str
+        :param eip: 
+        :type eip: :class:`huaweicloudsdkecs.v2.PrePaidServerEip`
+        :param delete_on_termination: 弹性公网IP随实例释放策略。  true：弹性公网IP随实例释放。 false：弹性公网IP不随实例释放。 默认值：false。
+        :type delete_on_termination: bool
+        """
         
         
 
@@ -68,7 +77,7 @@ class PrePaidServerPublicip:
         为待创建云服务器分配已有弹性IP时，分配的弹性IP的ID，UUID格式。  约束：只能分配状态（status）为DOWN的弹性IP。
 
         :param id: The id of this PrePaidServerPublicip.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -78,7 +87,7 @@ class PrePaidServerPublicip:
 
 
         :return: The eip of this PrePaidServerPublicip.
-        :rtype: PrePaidServerEip
+        :rtype: :class:`huaweicloudsdkecs.v2.PrePaidServerEip`
         """
         return self._eip
 
@@ -88,7 +97,7 @@ class PrePaidServerPublicip:
 
 
         :param eip: The eip of this PrePaidServerPublicip.
-        :type: PrePaidServerEip
+        :type eip: :class:`huaweicloudsdkecs.v2.PrePaidServerEip`
         """
         self._eip = eip
 
@@ -110,7 +119,7 @@ class PrePaidServerPublicip:
         弹性公网IP随实例释放策略。  true：弹性公网IP随实例释放。 false：弹性公网IP不随实例释放。 默认值：false。
 
         :param delete_on_termination: The delete_on_termination of this PrePaidServerPublicip.
-        :type: bool
+        :type delete_on_termination: bool
         """
         self._delete_on_termination = delete_on_termination
 

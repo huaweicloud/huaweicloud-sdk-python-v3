@@ -52,21 +52,17 @@ class CbhClient(Client):
         """获取CBH实例列表
 
         获取CBH实例列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListCbhInstanceRequest request
-        :return: ListCbhInstanceResponse
+        :param request: Request instance for ListCbhInstance
+        :type request: :class:`huaweicloudsdkcbh.v1.ListCbhInstanceRequest`
+        :rtype: :class:`huaweicloudsdkcbh.v1.ListCbhInstanceResponse`
         """
         return self.list_cbh_instance_with_http_info(request)
 
     def list_cbh_instance_with_http_info(self, request):
-        """获取CBH实例列表
-
-        获取CBH实例列表
-
-        :param ListCbhInstanceRequest request
-        :return: ListCbhInstanceResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -107,7 +103,6 @@ class CbhClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

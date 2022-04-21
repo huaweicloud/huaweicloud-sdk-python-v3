@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PayInfoBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class PayInfoBody:
     }
 
     def __init__(self, pay_model=None, period=None, is_auto_renew=None, is_auto_pay=None):
-        """PayInfoBody - a model defined in huaweicloud sdk"""
+        """PayInfoBody
+
+        The model defined in huaweicloud sdk
+
+        :param pay_model: 订购周期类型。 - 2: 包月。 - 3: 包年。
+        :type pay_model: int
+        :param period: 订购周期数。 - 若payModel为2，则有效值为1-9。 - 若payModel为3，则有效值为1-3。
+        :type period: int
+        :param is_auto_renew: 是否自动续订，为空时表示不自动续订。 - 1: 自动续订。 - 2：不自动续订（默认）。
+        :type is_auto_renew: int
+        :param is_auto_pay:  是否自动支付。下单订购后，是否自动从客户的华为云账户中支付，而不需要客户手动去进行支付。该参数适用于包周期集群。    - 1: 是（会自动选择折扣和优惠券进行优惠，然后自动从客户华为云账户中支付），自动支付失败后会生成订单成功(该订单应付金额是优惠后金额)、但订单状态为“待支付”，等待客户手动支付(手动支付时，客户还可以修改系统自动选择的折扣和优惠券)。   - 0: 否（需要客户手动去支付，客户可以选择折扣和优惠券）。默认值为“0”。
+        :type is_auto_pay: int
+        """
         
         
 
@@ -71,7 +82,7 @@ class PayInfoBody:
         订购周期类型。 - 2: 包月。 - 3: 包年。
 
         :param pay_model: The pay_model of this PayInfoBody.
-        :type: int
+        :type pay_model: int
         """
         self._pay_model = pay_model
 
@@ -93,7 +104,7 @@ class PayInfoBody:
         订购周期数。 - 若payModel为2，则有效值为1-9。 - 若payModel为3，则有效值为1-3。
 
         :param period: The period of this PayInfoBody.
-        :type: int
+        :type period: int
         """
         self._period = period
 
@@ -115,7 +126,7 @@ class PayInfoBody:
         是否自动续订，为空时表示不自动续订。 - 1: 自动续订。 - 2：不自动续订（默认）。
 
         :param is_auto_renew: The is_auto_renew of this PayInfoBody.
-        :type: int
+        :type is_auto_renew: int
         """
         self._is_auto_renew = is_auto_renew
 
@@ -137,7 +148,7 @@ class PayInfoBody:
          是否自动支付。下单订购后，是否自动从客户的华为云账户中支付，而不需要客户手动去进行支付。该参数适用于包周期集群。    - 1: 是（会自动选择折扣和优惠券进行优惠，然后自动从客户华为云账户中支付），自动支付失败后会生成订单成功(该订单应付金额是优惠后金额)、但订单状态为“待支付”，等待客户手动支付(手动支付时，客户还可以修改系统自动选择的折扣和优惠券)。   - 0: 否（需要客户手动去支付，客户可以选择折扣和优惠券）。默认值为“0”。
 
         :param is_auto_pay: The is_auto_pay of this PayInfoBody.
-        :type: int
+        :type is_auto_pay: int
         """
         self._is_auto_pay = is_auto_pay
 

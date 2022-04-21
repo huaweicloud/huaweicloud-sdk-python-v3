@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExpandInstanceNodesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ExpandInstanceNodesRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """ExpandInstanceNodesRequest - a model defined in huaweicloud sdk"""
+        """ExpandInstanceNodesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: DDM实例ID
+        :type instance_id: str
+        :param body: Body of the ExpandInstanceNodesRequest
+        :type body: :class:`huaweicloudsdkddm.v1.EnlargeRequest`
+        """
         
         
 
@@ -62,7 +69,7 @@ class ExpandInstanceNodesRequest:
         DDM实例ID
 
         :param instance_id: The instance_id of this ExpandInstanceNodesRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -72,7 +79,7 @@ class ExpandInstanceNodesRequest:
 
 
         :return: The body of this ExpandInstanceNodesRequest.
-        :rtype: EnlargeRequest
+        :rtype: :class:`huaweicloudsdkddm.v1.EnlargeRequest`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class ExpandInstanceNodesRequest:
 
 
         :param body: The body of this ExpandInstanceNodesRequest.
-        :type: EnlargeRequest
+        :type body: :class:`huaweicloudsdkddm.v1.EnlargeRequest`
         """
         self._body = body
 

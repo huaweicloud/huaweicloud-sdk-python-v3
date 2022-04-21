@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ThrottleApiBinding:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ThrottleApiBinding:
     }
 
     def __init__(self, publish_id=None, scope=None, strategy_id=None, apply_time=None, id=None):
-        """ThrottleApiBinding - a model defined in huaweicloud sdk"""
+        """ThrottleApiBinding
+
+        The model defined in huaweicloud sdk
+
+        :param publish_id: API的发布记录编号
+        :type publish_id: str
+        :param scope: 策略作用域，取值如下： - 1：整个API - 2： 单个用户 - 3：单个APP  目前只支持1
+        :type scope: int
+        :param strategy_id: 流控策略的ID
+        :type strategy_id: str
+        :param apply_time: 绑定时间
+        :type apply_time: datetime
+        :param id: 绑定关系的ID
+        :type id: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class ThrottleApiBinding:
         API的发布记录编号
 
         :param publish_id: The publish_id of this ThrottleApiBinding.
-        :type: str
+        :type publish_id: str
         """
         self._publish_id = publish_id
 
@@ -100,7 +113,7 @@ class ThrottleApiBinding:
         策略作用域，取值如下： - 1：整个API - 2： 单个用户 - 3：单个APP  目前只支持1
 
         :param scope: The scope of this ThrottleApiBinding.
-        :type: int
+        :type scope: int
         """
         self._scope = scope
 
@@ -122,7 +135,7 @@ class ThrottleApiBinding:
         流控策略的ID
 
         :param strategy_id: The strategy_id of this ThrottleApiBinding.
-        :type: str
+        :type strategy_id: str
         """
         self._strategy_id = strategy_id
 
@@ -144,7 +157,7 @@ class ThrottleApiBinding:
         绑定时间
 
         :param apply_time: The apply_time of this ThrottleApiBinding.
-        :type: datetime
+        :type apply_time: datetime
         """
         self._apply_time = apply_time
 
@@ -166,7 +179,7 @@ class ThrottleApiBinding:
         绑定关系的ID
 
         :param id: The id of this ThrottleApiBinding.
-        :type: str
+        :type id: str
         """
         self._id = id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RepositoryMemberList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RepositoryMemberList:
     }
 
     def __init__(self, total=None, users=None):
-        """RepositoryMemberList - a model defined in huaweicloud sdk"""
+        """RepositoryMemberList
+
+        The model defined in huaweicloud sdk
+
+        :param total: 仓库成员总数
+        :type total: int
+        :param users: 仓库成员列表
+        :type users: list[:class:`huaweicloudsdkcodehub.v3.RepositoryMember`]
+        """
         
         
 
@@ -63,7 +70,7 @@ class RepositoryMemberList:
         仓库成员总数
 
         :param total: The total of this RepositoryMemberList.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -74,7 +81,7 @@ class RepositoryMemberList:
         仓库成员列表
 
         :return: The users of this RepositoryMemberList.
-        :rtype: list[RepositoryMember]
+        :rtype: list[:class:`huaweicloudsdkcodehub.v3.RepositoryMember`]
         """
         return self._users
 
@@ -85,7 +92,7 @@ class RepositoryMemberList:
         仓库成员列表
 
         :param users: The users of this RepositoryMemberList.
-        :type: list[RepositoryMember]
+        :type users: list[:class:`huaweicloudsdkcodehub.v3.RepositoryMember`]
         """
         self._users = users
 

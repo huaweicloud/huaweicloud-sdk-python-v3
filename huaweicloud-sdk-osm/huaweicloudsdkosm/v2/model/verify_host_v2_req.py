@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VerifyHostV2Req:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class VerifyHostV2Req:
     }
 
     def __init__(self, port=None, account=None, password=None, group_id=None):
-        """VerifyHostV2Req - a model defined in huaweicloud sdk"""
+        """VerifyHostV2Req
+
+        The model defined in huaweicloud sdk
+
+        :param port: 主机端口
+        :type port: int
+        :param account: 主机账号
+        :type account: str
+        :param password: 主机密码
+        :type password: str
+        :param group_id: 组id
+        :type group_id: str
+        """
         
         
 
@@ -70,7 +81,7 @@ class VerifyHostV2Req:
         主机端口
 
         :param port: The port of this VerifyHostV2Req.
-        :type: int
+        :type port: int
         """
         self._port = port
 
@@ -92,7 +103,7 @@ class VerifyHostV2Req:
         主机账号
 
         :param account: The account of this VerifyHostV2Req.
-        :type: str
+        :type account: str
         """
         self._account = account
 
@@ -114,7 +125,7 @@ class VerifyHostV2Req:
         主机密码
 
         :param password: The password of this VerifyHostV2Req.
-        :type: str
+        :type password: str
         """
         self._password = password
 
@@ -136,7 +147,7 @@ class VerifyHostV2Req:
         组id
 
         :param group_id: The group_id of this VerifyHostV2Req.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Tag:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class Tag:
     }
 
     def __init__(self, should=None):
-        """Tag - a model defined in huaweicloud sdk"""
+        """Tag
+
+        The model defined in huaweicloud sdk
+
+        :param should: 必须要包含其中之一的答案标签id列表
+        :type should: list[str]
+        """
         
         
 
@@ -58,7 +63,7 @@ class Tag:
         必须要包含其中之一的答案标签id列表
 
         :param should: The should of this Tag.
-        :type: list[str]
+        :type should: list[str]
         """
         self._should = should
 

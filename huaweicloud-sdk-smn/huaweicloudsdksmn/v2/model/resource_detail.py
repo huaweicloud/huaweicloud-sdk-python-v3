@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResourceDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ResourceDetail:
     }
 
     def __init__(self, enterprise_project_id=None, detail_id=None, topic_urn=None, display_name=None):
-        """ResourceDetail - a model defined in huaweicloud sdk"""
+        """ResourceDetail
+
+        The model defined in huaweicloud sdk
+
+        :param enterprise_project_id: 企业项目ID
+        :type enterprise_project_id: str
+        :param detail_id: 详情ID
+        :type detail_id: str
+        :param topic_urn: topic唯一标识
+        :type topic_urn: str
+        :param display_name: 显示名
+        :type display_name: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class ResourceDetail:
         企业项目ID
 
         :param enterprise_project_id: The enterprise_project_id of this ResourceDetail.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -91,7 +102,7 @@ class ResourceDetail:
         详情ID
 
         :param detail_id: The detail_id of this ResourceDetail.
-        :type: str
+        :type detail_id: str
         """
         self._detail_id = detail_id
 
@@ -113,7 +124,7 @@ class ResourceDetail:
         topic唯一标识
 
         :param topic_urn: The topic_urn of this ResourceDetail.
-        :type: str
+        :type topic_urn: str
         """
         self._topic_urn = topic_urn
 
@@ -135,7 +146,7 @@ class ResourceDetail:
         显示名
 
         :param display_name: The display_name of this ResourceDetail.
-        :type: str
+        :type display_name: str
         """
         self._display_name = display_name
 

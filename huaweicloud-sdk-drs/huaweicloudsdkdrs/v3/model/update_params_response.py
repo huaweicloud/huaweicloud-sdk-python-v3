@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateParamsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UpdateParamsResponse(SdkResponse):
     }
 
     def __init__(self, success=None, should_restart=None, error_code=None, error_msg=None):
-        """UpdateParamsResponse - a model defined in huaweicloud sdk"""
+        """UpdateParamsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param success: 修改参数是否成功
+        :type success: bool
+        :param should_restart: 是否需要重启
+        :type should_restart: str
+        :param error_code: 错误码
+        :type error_code: str
+        :param error_msg: 错误信息
+        :type error_msg: str
+        """
         
         super(UpdateParamsResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class UpdateParamsResponse(SdkResponse):
         修改参数是否成功
 
         :param success: The success of this UpdateParamsResponse.
-        :type: bool
+        :type success: bool
         """
         self._success = success
 
@@ -95,7 +106,7 @@ class UpdateParamsResponse(SdkResponse):
         是否需要重启
 
         :param should_restart: The should_restart of this UpdateParamsResponse.
-        :type: str
+        :type should_restart: str
         """
         self._should_restart = should_restart
 
@@ -117,7 +128,7 @@ class UpdateParamsResponse(SdkResponse):
         错误码
 
         :param error_code: The error_code of this UpdateParamsResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -139,7 +150,7 @@ class UpdateParamsResponse(SdkResponse):
         错误信息
 
         :param error_msg: The error_msg of this UpdateParamsResponse.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 

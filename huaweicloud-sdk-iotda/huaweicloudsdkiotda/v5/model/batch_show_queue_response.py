@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchShowQueueResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchShowQueueResponse(SdkResponse):
     }
 
     def __init__(self, queues=None, page=None):
-        """BatchShowQueueResponse - a model defined in huaweicloud sdk"""
+        """BatchShowQueueResponse
+
+        The model defined in huaweicloud sdk
+
+        :param queues: 队列信息列表。
+        :type queues: list[:class:`huaweicloudsdkiotda.v5.QueryQueueBase`]
+        :param page: 
+        :type page: :class:`huaweicloudsdkiotda.v5.Page`
+        """
         
         super(BatchShowQueueResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class BatchShowQueueResponse(SdkResponse):
         队列信息列表。
 
         :return: The queues of this BatchShowQueueResponse.
-        :rtype: list[QueryQueueBase]
+        :rtype: list[:class:`huaweicloudsdkiotda.v5.QueryQueueBase`]
         """
         return self._queues
 
@@ -63,7 +70,7 @@ class BatchShowQueueResponse(SdkResponse):
         队列信息列表。
 
         :param queues: The queues of this BatchShowQueueResponse.
-        :type: list[QueryQueueBase]
+        :type queues: list[:class:`huaweicloudsdkiotda.v5.QueryQueueBase`]
         """
         self._queues = queues
 
@@ -73,7 +80,7 @@ class BatchShowQueueResponse(SdkResponse):
 
 
         :return: The page of this BatchShowQueueResponse.
-        :rtype: Page
+        :rtype: :class:`huaweicloudsdkiotda.v5.Page`
         """
         return self._page
 
@@ -83,7 +90,7 @@ class BatchShowQueueResponse(SdkResponse):
 
 
         :param page: The page of this BatchShowQueueResponse.
-        :type: Page
+        :type page: :class:`huaweicloudsdkiotda.v5.Page`
         """
         self._page = page
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDependenciesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListDependenciesRequest:
     }
 
     def __init__(self, dependency_type=None, runtime=None, name=None, marker=None, limit=None):
-        """ListDependenciesRequest - a model defined in huaweicloud sdk"""
+        """ListDependenciesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param dependency_type: 依赖包类型public：公开,private:私有，all：全部。缺省时查询全量。
+        :type dependency_type: str
+        :param runtime: 运行时语言 Java11、Nodejs14.18、Python3.9在type为v2时支持
+        :type runtime: str
+        :param name: 依赖包名称。
+        :type name: str
+        :param marker: 上一次查询依赖包的最后记录位置，默认为\&quot;0\&quot;。
+        :type marker: str
+        :param limit: 本次查询可获取的依赖包的最大数目，默认为\&quot;400\&quot;。
+        :type limit: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class ListDependenciesRequest:
         依赖包类型public：公开,private:私有，all：全部。缺省时查询全量。
 
         :param dependency_type: The dependency_type of this ListDependenciesRequest.
-        :type: str
+        :type dependency_type: str
         """
         self._dependency_type = dependency_type
 
@@ -100,7 +113,7 @@ class ListDependenciesRequest:
         运行时语言 Java11、Nodejs14.18、Python3.9在type为v2时支持
 
         :param runtime: The runtime of this ListDependenciesRequest.
-        :type: str
+        :type runtime: str
         """
         self._runtime = runtime
 
@@ -122,7 +135,7 @@ class ListDependenciesRequest:
         依赖包名称。
 
         :param name: The name of this ListDependenciesRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -144,7 +157,7 @@ class ListDependenciesRequest:
         上一次查询依赖包的最后记录位置，默认为\"0\"。
 
         :param marker: The marker of this ListDependenciesRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -166,7 +179,7 @@ class ListDependenciesRequest:
         本次查询可获取的依赖包的最大数目，默认为\"400\"。
 
         :param limit: The limit of this ListDependenciesRequest.
-        :type: str
+        :type limit: str
         """
         self._limit = limit
 

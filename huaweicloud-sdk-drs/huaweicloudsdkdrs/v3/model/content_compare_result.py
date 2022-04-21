@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ContentCompareResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ContentCompareResult:
     }
 
     def __init__(self, compare_task_id=None, content_compare_overview=None, content_compare_overview_count=None, content_compare_details=None, content_compare_diffs=None, error_code=None, error_msg=None):
-        """ContentCompareResult - a model defined in huaweicloud sdk"""
+        """ContentCompareResult
+
+        The model defined in huaweicloud sdk
+
+        :param compare_task_id: 内容对比的任务id。
+        :type compare_task_id: str
+        :param content_compare_overview: 内容对比结果概览。
+        :type content_compare_overview: list[:class:`huaweicloudsdkdrs.v3.ContentCompareResultOverview`]
+        :param content_compare_overview_count: 内容对比结果概览总数。
+        :type content_compare_overview_count: int
+        :param content_compare_details: 内容对比结果详情。
+        :type content_compare_details: list[:class:`huaweicloudsdkdrs.v3.ContentCompareResultDetails`]
+        :param content_compare_diffs: 内容对比结果差异。
+        :type content_compare_diffs: list[:class:`huaweicloudsdkdrs.v3.ContentCompareResultDiffs`]
+        :param error_code: 错误码。
+        :type error_code: str
+        :param error_msg: 错误信息。
+        :type error_msg: str
+        """
         
         
 
@@ -87,7 +104,7 @@ class ContentCompareResult:
         内容对比的任务id。
 
         :param compare_task_id: The compare_task_id of this ContentCompareResult.
-        :type: str
+        :type compare_task_id: str
         """
         self._compare_task_id = compare_task_id
 
@@ -98,7 +115,7 @@ class ContentCompareResult:
         内容对比结果概览。
 
         :return: The content_compare_overview of this ContentCompareResult.
-        :rtype: list[ContentCompareResultOverview]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.ContentCompareResultOverview`]
         """
         return self._content_compare_overview
 
@@ -109,7 +126,7 @@ class ContentCompareResult:
         内容对比结果概览。
 
         :param content_compare_overview: The content_compare_overview of this ContentCompareResult.
-        :type: list[ContentCompareResultOverview]
+        :type content_compare_overview: list[:class:`huaweicloudsdkdrs.v3.ContentCompareResultOverview`]
         """
         self._content_compare_overview = content_compare_overview
 
@@ -131,7 +148,7 @@ class ContentCompareResult:
         内容对比结果概览总数。
 
         :param content_compare_overview_count: The content_compare_overview_count of this ContentCompareResult.
-        :type: int
+        :type content_compare_overview_count: int
         """
         self._content_compare_overview_count = content_compare_overview_count
 
@@ -142,7 +159,7 @@ class ContentCompareResult:
         内容对比结果详情。
 
         :return: The content_compare_details of this ContentCompareResult.
-        :rtype: list[ContentCompareResultDetails]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.ContentCompareResultDetails`]
         """
         return self._content_compare_details
 
@@ -153,7 +170,7 @@ class ContentCompareResult:
         内容对比结果详情。
 
         :param content_compare_details: The content_compare_details of this ContentCompareResult.
-        :type: list[ContentCompareResultDetails]
+        :type content_compare_details: list[:class:`huaweicloudsdkdrs.v3.ContentCompareResultDetails`]
         """
         self._content_compare_details = content_compare_details
 
@@ -164,7 +181,7 @@ class ContentCompareResult:
         内容对比结果差异。
 
         :return: The content_compare_diffs of this ContentCompareResult.
-        :rtype: list[ContentCompareResultDiffs]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.ContentCompareResultDiffs`]
         """
         return self._content_compare_diffs
 
@@ -175,7 +192,7 @@ class ContentCompareResult:
         内容对比结果差异。
 
         :param content_compare_diffs: The content_compare_diffs of this ContentCompareResult.
-        :type: list[ContentCompareResultDiffs]
+        :type content_compare_diffs: list[:class:`huaweicloudsdkdrs.v3.ContentCompareResultDiffs`]
         """
         self._content_compare_diffs = content_compare_diffs
 
@@ -197,7 +214,7 @@ class ContentCompareResult:
         错误码。
 
         :param error_code: The error_code of this ContentCompareResult.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -219,7 +236,7 @@ class ContentCompareResult:
         错误信息。
 
         :param error_msg: The error_msg of this ContentCompareResult.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 

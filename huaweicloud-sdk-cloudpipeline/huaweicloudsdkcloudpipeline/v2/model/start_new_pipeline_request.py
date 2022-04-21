@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StartNewPipelineRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class StartNewPipelineRequest:
     }
 
     def __init__(self, x_language=None, pipeline_id=None, body=None):
-        """StartNewPipelineRequest - a model defined in huaweicloud sdk"""
+        """StartNewPipelineRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言类型 中文:zh-cn 英文:en-us，默认en-us
+        :type x_language: str
+        :param pipeline_id: 流水线ID
+        :type pipeline_id: str
+        :param body: Body of the StartNewPipelineRequest
+        :type body: :class:`huaweicloudsdkcloudpipeline.v2.StartPipelineParameters`
+        """
         
         
 
@@ -67,7 +76,7 @@ class StartNewPipelineRequest:
         语言类型 中文:zh-cn 英文:en-us，默认en-us
 
         :param x_language: The x_language of this StartNewPipelineRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -89,7 +98,7 @@ class StartNewPipelineRequest:
         流水线ID
 
         :param pipeline_id: The pipeline_id of this StartNewPipelineRequest.
-        :type: str
+        :type pipeline_id: str
         """
         self._pipeline_id = pipeline_id
 
@@ -99,7 +108,7 @@ class StartNewPipelineRequest:
 
 
         :return: The body of this StartNewPipelineRequest.
-        :rtype: StartPipelineParameters
+        :rtype: :class:`huaweicloudsdkcloudpipeline.v2.StartPipelineParameters`
         """
         return self._body
 
@@ -109,7 +118,7 @@ class StartNewPipelineRequest:
 
 
         :param body: The body of this StartNewPipelineRequest.
-        :type: StartPipelineParameters
+        :type body: :class:`huaweicloudsdkcloudpipeline.v2.StartPipelineParameters`
         """
         self._body = body
 

@@ -53,20 +53,13 @@ class ServiceStageClient(Client):
 
         此API通过应用ID修改应用信息。
 
-        :param ChangeApplicationRequest request
-        :return: ChangeApplicationResponse
+        :param request: Request instance for ChangeApplication
+        :type request: :class:`huaweicloudsdkservicestage.v2.ChangeApplicationRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.ChangeApplicationResponse`
         """
         return self.change_application_with_http_info(request)
 
     def change_application_with_http_info(self, request):
-        """修改应用信息
-
-        此API通过应用ID修改应用信息。
-
-        :param ChangeApplicationRequest request
-        :return: ChangeApplicationResponse
-        """
-
         all_params = ['application_id', 'application_modify']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -112,26 +105,18 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def change_application_configuration(self, request):
         """修改应用配置信息
 
         通过此API修改应用配置信息。
 
-        :param ChangeApplicationConfigurationRequest request
-        :return: ChangeApplicationConfigurationResponse
+        :param request: Request instance for ChangeApplicationConfiguration
+        :type request: :class:`huaweicloudsdkservicestage.v2.ChangeApplicationConfigurationRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.ChangeApplicationConfigurationResponse`
         """
         return self.change_application_configuration_with_http_info(request)
 
     def change_application_configuration_with_http_info(self, request):
-        """修改应用配置信息
-
-        通过此API修改应用配置信息。
-
-        :param ChangeApplicationConfigurationRequest request
-        :return: ChangeApplicationConfigurationResponse
-        """
-
         all_params = ['application_id', 'application_config_modify']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -177,26 +162,18 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def change_component(self, request):
         """根据组件ID修改组件信息
 
         此API通过组件ID修改组件信息。
 
-        :param ChangeComponentRequest request
-        :return: ChangeComponentResponse
+        :param request: Request instance for ChangeComponent
+        :type request: :class:`huaweicloudsdkservicestage.v2.ChangeComponentRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.ChangeComponentResponse`
         """
         return self.change_component_with_http_info(request)
 
     def change_component_with_http_info(self, request):
-        """根据组件ID修改组件信息
-
-        此API通过组件ID修改组件信息。
-
-        :param ChangeComponentRequest request
-        :return: ChangeComponentResponse
-        """
-
         all_params = ['application_id', 'component_id', 'component_modify']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -244,26 +221,18 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def change_environment(self, request):
         """修改环境信息
 
         此API通过环境ID修改环境信息。
 
-        :param ChangeEnvironmentRequest request
-        :return: ChangeEnvironmentResponse
+        :param request: Request instance for ChangeEnvironment
+        :type request: :class:`huaweicloudsdkservicestage.v2.ChangeEnvironmentRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.ChangeEnvironmentResponse`
         """
         return self.change_environment_with_http_info(request)
 
     def change_environment_with_http_info(self, request):
-        """修改环境信息
-
-        此API通过环境ID修改环境信息。
-
-        :param ChangeEnvironmentRequest request
-        :return: ChangeEnvironmentResponse
-        """
-
         all_params = ['environment_id', 'environment_modify']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -309,26 +278,18 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def change_instance(self, request):
         """修改应用组件实例
 
         通过此API修改应用组件实例。
 
-        :param ChangeInstanceRequest request
-        :return: ChangeInstanceResponse
+        :param request: Request instance for ChangeInstance
+        :type request: :class:`huaweicloudsdkservicestage.v2.ChangeInstanceRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.ChangeInstanceResponse`
         """
         return self.change_instance_with_http_info(request)
 
     def change_instance_with_http_info(self, request):
-        """修改应用组件实例
-
-        通过此API修改应用组件实例。
-
-        :param ChangeInstanceRequest request
-        :return: ChangeInstanceResponse
-        """
-
         all_params = ['application_id', 'component_id', 'instance_id', 'instance_modify']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -378,26 +339,18 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def change_resource_in_environment(self, request):
         """修改环境资源
 
         此API用来修改环境资源。
 
-        :param ChangeResourceInEnvironmentRequest request
-        :return: ChangeResourceInEnvironmentResponse
+        :param request: Request instance for ChangeResourceInEnvironment
+        :type request: :class:`huaweicloudsdkservicestage.v2.ChangeResourceInEnvironmentRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.ChangeResourceInEnvironmentResponse`
         """
         return self.change_resource_in_environment_with_http_info(request)
 
     def change_resource_in_environment_with_http_info(self, request):
-        """修改环境资源
-
-        此API用来修改环境资源。
-
-        :param ChangeResourceInEnvironmentRequest request
-        :return: ChangeResourceInEnvironmentResponse
-        """
-
         all_params = ['environment_id', 'environment_resource_modify']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -443,26 +396,20 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_application(self, request):
         """创建应用
 
-        应用是一个功能相对完备的业务系统，由一个或多个特性相关的组件组成。  此API用来创建应用。 
+        应用是一个功能相对完备的业务系统，由一个或多个特性相关的组件组成。
+        
+        此API用来创建应用。
 
-        :param CreateApplicationRequest request
-        :return: CreateApplicationResponse
+        :param request: Request instance for CreateApplication
+        :type request: :class:`huaweicloudsdkservicestage.v2.CreateApplicationRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.CreateApplicationResponse`
         """
         return self.create_application_with_http_info(request)
 
     def create_application_with_http_info(self, request):
-        """创建应用
-
-        应用是一个功能相对完备的业务系统，由一个或多个特性相关的组件组成。  此API用来创建应用。 
-
-        :param CreateApplicationRequest request
-        :return: CreateApplicationResponse
-        """
-
         all_params = ['application_create']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -506,26 +453,20 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_component(self, request):
         """应用中创建组件
 
-        应用组件是组成应用的某个业务特性实现，以代码或者软件包为载体，可独立部署运行。  此API用来在应用中创建组件。 
+        应用组件是组成应用的某个业务特性实现，以代码或者软件包为载体，可独立部署运行。
+        
+        此API用来在应用中创建组件。
 
-        :param CreateComponentRequest request
-        :return: CreateComponentResponse
+        :param request: Request instance for CreateComponent
+        :type request: :class:`huaweicloudsdkservicestage.v2.CreateComponentRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.CreateComponentResponse`
         """
         return self.create_component_with_http_info(request)
 
     def create_component_with_http_info(self, request):
-        """应用中创建组件
-
-        应用组件是组成应用的某个业务特性实现，以代码或者软件包为载体，可独立部署运行。  此API用来在应用中创建组件。 
-
-        :param CreateComponentRequest request
-        :return: CreateComponentResponse
-        """
-
         all_params = ['application_id', 'component_create']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -571,26 +512,20 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_environment(self, request):
         """创建环境
 
-        环境是用于应用部署和运行的计算、存储、网络等基础设施的集合。Servicestage把相同VPC下的CCE集群加上多个ELB、RDS、DCS实例组合为一个环境，如：开发环境，测试环境，预生产环境，生产环境。环境内网络互通，可以按环境维度来管理资源、部署服务，减少具体基础设施运维管理的复杂性。  此API用来创建环境。 
+        环境是用于应用部署和运行的计算、存储、网络等基础设施的集合。Servicestage把相同VPC下的CCE集群加上多个ELB、RDS、DCS实例组合为一个环境，如：开发环境，测试环境，预生产环境，生产环境。环境内网络互通，可以按环境维度来管理资源、部署服务，减少具体基础设施运维管理的复杂性。
+        
+        此API用来创建环境。
 
-        :param CreateEnvironmentRequest request
-        :return: CreateEnvironmentResponse
+        :param request: Request instance for CreateEnvironment
+        :type request: :class:`huaweicloudsdkservicestage.v2.CreateEnvironmentRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.CreateEnvironmentResponse`
         """
         return self.create_environment_with_http_info(request)
 
     def create_environment_with_http_info(self, request):
-        """创建环境
-
-        环境是用于应用部署和运行的计算、存储、网络等基础设施的集合。Servicestage把相同VPC下的CCE集群加上多个ELB、RDS、DCS实例组合为一个环境，如：开发环境，测试环境，预生产环境，生产环境。环境内网络互通，可以按环境维度来管理资源、部署服务，减少具体基础设施运维管理的复杂性。  此API用来创建环境。 
-
-        :param CreateEnvironmentRequest request
-        :return: CreateEnvironmentResponse
-        """
-
         all_params = ['environment_create']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -634,26 +569,18 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_instance(self, request):
         """创建组件实例
 
         此API用来创建应用组件实例。
 
-        :param CreateInstanceRequest request
-        :return: CreateInstanceResponse
+        :param request: Request instance for CreateInstance
+        :type request: :class:`huaweicloudsdkservicestage.v2.CreateInstanceRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.CreateInstanceResponse`
         """
         return self.create_instance_with_http_info(request)
 
     def create_instance_with_http_info(self, request):
-        """创建组件实例
-
-        此API用来创建应用组件实例。
-
-        :param CreateInstanceRequest request
-        :return: CreateInstanceResponse
-        """
-
         all_params = ['application_id', 'component_id', 'instance_create']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -701,26 +628,18 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_application(self, request):
         """根据应用ID删除应用
 
         此API通过应用ID删除应用。
 
-        :param DeleteApplicationRequest request
-        :return: DeleteApplicationResponse
+        :param request: Request instance for DeleteApplication
+        :type request: :class:`huaweicloudsdkservicestage.v2.DeleteApplicationRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.DeleteApplicationResponse`
         """
         return self.delete_application_with_http_info(request)
 
     def delete_application_with_http_info(self, request):
-        """根据应用ID删除应用
-
-        此API通过应用ID删除应用。
-
-        :param DeleteApplicationRequest request
-        :return: DeleteApplicationResponse
-        """
-
         all_params = ['application_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -764,26 +683,18 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_application_configuration(self, request):
         """删除应用配置
 
         通过此API删除应用配置信息。
 
-        :param DeleteApplicationConfigurationRequest request
-        :return: DeleteApplicationConfigurationResponse
+        :param request: Request instance for DeleteApplicationConfiguration
+        :type request: :class:`huaweicloudsdkservicestage.v2.DeleteApplicationConfigurationRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.DeleteApplicationConfigurationResponse`
         """
         return self.delete_application_configuration_with_http_info(request)
 
     def delete_application_configuration_with_http_info(self, request):
-        """删除应用配置
-
-        通过此API删除应用配置信息。
-
-        :param DeleteApplicationConfigurationRequest request
-        :return: DeleteApplicationConfigurationResponse
-        """
-
         all_params = ['application_id', 'environment_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -829,26 +740,18 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_component(self, request):
         """根据应用组件ID删除应用组件
 
         此API通过应用组件ID删除应用组件。
 
-        :param DeleteComponentRequest request
-        :return: DeleteComponentResponse
+        :param request: Request instance for DeleteComponent
+        :type request: :class:`huaweicloudsdkservicestage.v2.DeleteComponentRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.DeleteComponentResponse`
         """
         return self.delete_component_with_http_info(request)
 
     def delete_component_with_http_info(self, request):
-        """根据应用组件ID删除应用组件
-
-        此API通过应用组件ID删除应用组件。
-
-        :param DeleteComponentRequest request
-        :return: DeleteComponentResponse
-        """
-
         all_params = ['application_id', 'component_id', 'force']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -896,26 +799,18 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_environment(self, request):
         """根据环境ID删除环境
 
         此API通过环境ID删除环境。
 
-        :param DeleteEnvironmentRequest request
-        :return: DeleteEnvironmentResponse
+        :param request: Request instance for DeleteEnvironment
+        :type request: :class:`huaweicloudsdkservicestage.v2.DeleteEnvironmentRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.DeleteEnvironmentResponse`
         """
         return self.delete_environment_with_http_info(request)
 
     def delete_environment_with_http_info(self, request):
-        """根据环境ID删除环境
-
-        此API通过环境ID删除环境。
-
-        :param DeleteEnvironmentRequest request
-        :return: DeleteEnvironmentResponse
-        """
-
         all_params = ['environment_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -959,26 +854,18 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_instance(self, request):
         """删除应用组件实例
 
         通过此API删除应用组件实例。
 
-        :param DeleteInstanceRequest request
-        :return: DeleteInstanceResponse
+        :param request: Request instance for DeleteInstance
+        :type request: :class:`huaweicloudsdkservicestage.v2.DeleteInstanceRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.DeleteInstanceResponse`
         """
         return self.delete_instance_with_http_info(request)
 
     def delete_instance_with_http_info(self, request):
-        """删除应用组件实例
-
-        通过此API删除应用组件实例。
-
-        :param DeleteInstanceRequest request
-        :return: DeleteInstanceResponse
-        """
-
         all_params = ['application_id', 'component_id', 'instance_id', 'force']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1028,26 +915,18 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_applications(self, request):
         """获取所有应用
 
         通过此API可以获取所有已经创建的应用。
 
-        :param ListApplicationsRequest request
-        :return: ListApplicationsResponse
+        :param request: Request instance for ListApplications
+        :type request: :class:`huaweicloudsdkservicestage.v2.ListApplicationsRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.ListApplicationsResponse`
         """
         return self.list_applications_with_http_info(request)
 
     def list_applications_with_http_info(self, request):
-        """获取所有应用
-
-        通过此API可以获取所有已经创建的应用。
-
-        :param ListApplicationsRequest request
-        :return: ListApplicationsResponse
-        """
-
         all_params = ['limit', 'offset', 'order_by', 'order']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1097,26 +976,18 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_components(self, request):
         """获取应用所有组件
 
         通过此API获取应用下所有应用组件。
 
-        :param ListComponentsRequest request
-        :return: ListComponentsResponse
+        :param request: Request instance for ListComponents
+        :type request: :class:`huaweicloudsdkservicestage.v2.ListComponentsRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.ListComponentsResponse`
         """
         return self.list_components_with_http_info(request)
 
     def list_components_with_http_info(self, request):
-        """获取应用所有组件
-
-        通过此API获取应用下所有应用组件。
-
-        :param ListComponentsRequest request
-        :return: ListComponentsResponse
-        """
-
         all_params = ['application_id', 'limit', 'offset', 'order_by', 'order']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1168,26 +1039,18 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_environments(self, request):
         """获取所有环境
 
         此API用来获取所有已经创建环境。
 
-        :param ListEnvironmentsRequest request
-        :return: ListEnvironmentsResponse
+        :param request: Request instance for ListEnvironments
+        :type request: :class:`huaweicloudsdkservicestage.v2.ListEnvironmentsRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.ListEnvironmentsResponse`
         """
         return self.list_environments_with_http_info(request)
 
     def list_environments_with_http_info(self, request):
-        """获取所有环境
-
-        此API用来获取所有已经创建环境。
-
-        :param ListEnvironmentsRequest request
-        :return: ListEnvironmentsResponse
-        """
-
         all_params = ['limit', 'offset', 'order_by', 'order']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1237,26 +1100,18 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_instance_snapshots(self, request):
         """获取组件实例快照
 
         通过此API获取应用组件实例快照信息。
 
-        :param ListInstanceSnapshotsRequest request
-        :return: ListInstanceSnapshotsResponse
+        :param request: Request instance for ListInstanceSnapshots
+        :type request: :class:`huaweicloudsdkservicestage.v2.ListInstanceSnapshotsRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.ListInstanceSnapshotsResponse`
         """
         return self.list_instance_snapshots_with_http_info(request)
 
     def list_instance_snapshots_with_http_info(self, request):
-        """获取组件实例快照
-
-        通过此API获取应用组件实例快照信息。
-
-        :param ListInstanceSnapshotsRequest request
-        :return: ListInstanceSnapshotsResponse
-        """
-
         all_params = ['application_id', 'component_id', 'instance_id', 'limit', 'offset', 'snapshot_order_by', 'order']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1312,26 +1167,18 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_instances(self, request):
         """获取应用组件实例
 
         通过此API获取组件下的所有组件实例。
 
-        :param ListInstancesRequest request
-        :return: ListInstancesResponse
+        :param request: Request instance for ListInstances
+        :type request: :class:`huaweicloudsdkservicestage.v2.ListInstancesRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.ListInstancesResponse`
         """
         return self.list_instances_with_http_info(request)
 
     def list_instances_with_http_info(self, request):
-        """获取应用组件实例
-
-        通过此API获取组件下的所有组件实例。
-
-        :param ListInstancesRequest request
-        :return: ListInstancesResponse
-        """
-
         all_params = ['application_id', 'component_id', 'limit', 'offset', 'order_by', 'order']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1385,26 +1232,18 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_application_configuration(self, request):
         """获取应用配置
 
         通过此API获取应用配置信息。
 
-        :param ShowApplicationConfigurationRequest request
-        :return: ShowApplicationConfigurationResponse
+        :param request: Request instance for ShowApplicationConfiguration
+        :type request: :class:`huaweicloudsdkservicestage.v2.ShowApplicationConfigurationRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.ShowApplicationConfigurationResponse`
         """
         return self.show_application_configuration_with_http_info(request)
 
     def show_application_configuration_with_http_info(self, request):
-        """获取应用配置
-
-        通过此API获取应用配置信息。
-
-        :param ShowApplicationConfigurationRequest request
-        :return: ShowApplicationConfigurationResponse
-        """
-
         all_params = ['application_id', 'environment_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1450,26 +1289,18 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_application_detail(self, request):
         """根据应用ID获取应用详细信息
 
         此API通过应用ID获取应用详细信息。
 
-        :param ShowApplicationDetailRequest request
-        :return: ShowApplicationDetailResponse
+        :param request: Request instance for ShowApplicationDetail
+        :type request: :class:`huaweicloudsdkservicestage.v2.ShowApplicationDetailRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.ShowApplicationDetailResponse`
         """
         return self.show_application_detail_with_http_info(request)
 
     def show_application_detail_with_http_info(self, request):
-        """根据应用ID获取应用详细信息
-
-        此API通过应用ID获取应用详细信息。
-
-        :param ShowApplicationDetailRequest request
-        :return: ShowApplicationDetailResponse
-        """
-
         all_params = ['application_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1513,26 +1344,18 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_component_detail(self, request):
         """根据组件ID获取应用组件信息
 
         通过组件ID获取应用组件信息。
 
-        :param ShowComponentDetailRequest request
-        :return: ShowComponentDetailResponse
+        :param request: Request instance for ShowComponentDetail
+        :type request: :class:`huaweicloudsdkservicestage.v2.ShowComponentDetailRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.ShowComponentDetailResponse`
         """
         return self.show_component_detail_with_http_info(request)
 
     def show_component_detail_with_http_info(self, request):
-        """根据组件ID获取应用组件信息
-
-        通过组件ID获取应用组件信息。
-
-        :param ShowComponentDetailRequest request
-        :return: ShowComponentDetailResponse
-        """
-
         all_params = ['application_id', 'component_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1578,26 +1401,18 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_environment_detail(self, request):
         """根据环境ID获取环境详细信息
 
         此API通过环境ID获取环境详细信息。
 
-        :param ShowEnvironmentDetailRequest request
-        :return: ShowEnvironmentDetailResponse
+        :param request: Request instance for ShowEnvironmentDetail
+        :type request: :class:`huaweicloudsdkservicestage.v2.ShowEnvironmentDetailRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.ShowEnvironmentDetailResponse`
         """
         return self.show_environment_detail_with_http_info(request)
 
     def show_environment_detail_with_http_info(self, request):
-        """根据环境ID获取环境详细信息
-
-        此API通过环境ID获取环境详细信息。
-
-        :param ShowEnvironmentDetailRequest request
-        :return: ShowEnvironmentDetailResponse
-        """
-
         all_params = ['environment_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1641,26 +1456,18 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_instance_detail(self, request):
         """根据实例ID获取实例详细信息
 
         此API通过实例ID获取实例详细信息。
 
-        :param ShowInstanceDetailRequest request
-        :return: ShowInstanceDetailResponse
+        :param request: Request instance for ShowInstanceDetail
+        :type request: :class:`huaweicloudsdkservicestage.v2.ShowInstanceDetailRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.ShowInstanceDetailResponse`
         """
         return self.show_instance_detail_with_http_info(request)
 
     def show_instance_detail_with_http_info(self, request):
-        """根据实例ID获取实例详细信息
-
-        此API通过实例ID获取实例详细信息。
-
-        :param ShowInstanceDetailRequest request
-        :return: ShowInstanceDetailResponse
-        """
-
         all_params = ['application_id', 'component_id', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1708,26 +1515,18 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_job_detail(self, request):
         """获取部署任务详细信息
 
         通过此API获取部署任务详细信息。
 
-        :param ShowJobDetailRequest request
-        :return: ShowJobDetailResponse
+        :param request: Request instance for ShowJobDetail
+        :type request: :class:`huaweicloudsdkservicestage.v2.ShowJobDetailRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.ShowJobDetailResponse`
         """
         return self.show_job_detail_with_http_info(request)
 
     def show_job_detail_with_http_info(self, request):
-        """获取部署任务详细信息
-
-        通过此API获取部署任务详细信息。
-
-        :param ShowJobDetailRequest request
-        :return: ShowJobDetailResponse
-        """
-
         all_params = ['job_id', 'instance_id', 'limit', 'offset', 'desc']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1779,26 +1578,18 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_instance_action(self, request):
         """对组件实例的操作
 
         通过此API获取对组件实例的操作。
 
-        :param UpdateInstanceActionRequest request
-        :return: UpdateInstanceActionResponse
+        :param request: Request instance for UpdateInstanceAction
+        :type request: :class:`huaweicloudsdkservicestage.v2.UpdateInstanceActionRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.UpdateInstanceActionResponse`
         """
         return self.update_instance_action_with_http_info(request)
 
     def update_instance_action_with_http_info(self, request):
-        """对组件实例的操作
-
-        通过此API获取对组件实例的操作。
-
-        :param UpdateInstanceActionRequest request
-        :return: UpdateInstanceActionResponse
-        """
-
         all_params = ['application_id', 'component_id', 'instance_id', 'instance_action']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1848,26 +1639,18 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_file(self, request):
         """创建仓库文件
 
         在指定仓库项目下创建文件。
 
-        :param CreateFileRequest request
-        :return: CreateFileResponse
+        :param request: Request instance for CreateFile
+        :type request: :class:`huaweicloudsdkservicestage.v2.CreateFileRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.CreateFileResponse`
         """
         return self.create_file_with_http_info(request)
 
     def create_file_with_http_info(self, request):
-        """创建仓库文件
-
-        在指定仓库项目下创建文件。
-
-        :param CreateFileRequest request
-        :return: CreateFileResponse
-        """
-
         all_params = ['x_repo_auth', 'namespace', 'project', 'path', 'ref', 'file_create']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1921,26 +1704,18 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_hook(self, request):
         """创建项目hook
 
         创建指定项目的hook。
 
-        :param CreateHookRequest request
-        :return: CreateHookResponse
+        :param request: Request instance for CreateHook
+        :type request: :class:`huaweicloudsdkservicestage.v2.CreateHookRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.CreateHookResponse`
         """
         return self.create_hook_with_http_info(request)
 
     def create_hook_with_http_info(self, request):
-        """创建项目hook
-
-        创建指定项目的hook。
-
-        :param CreateHookRequest request
-        :return: CreateHookResponse
-        """
-
         all_params = ['x_repo_auth', 'namespace', 'project', 'hook_create']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1990,26 +1765,18 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_o_auth(self, request):
         """创建OAuth授权
 
         创建指定Git仓库类型的OAuth授权。
 
-        :param CreateOAuthRequest request
-        :return: CreateOAuthResponse
+        :param request: Request instance for CreateOAuth
+        :type request: :class:`huaweicloudsdkservicestage.v2.CreateOAuthRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.CreateOAuthResponse`
         """
         return self.create_o_auth_with_http_info(request)
 
     def create_o_auth_with_http_info(self, request):
-        """创建OAuth授权
-
-        创建指定Git仓库类型的OAuth授权。
-
-        :param CreateOAuthRequest request
-        :return: CreateOAuthResponse
-        """
-
         all_params = ['repo_type', 'tag', 'o_auth']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2057,26 +1824,18 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_password_auth(self, request):
         """创建口令授权
 
         创建指定Git仓库类型的口令授权。
 
-        :param CreatePasswordAuthRequest request
-        :return: CreatePasswordAuthResponse
+        :param request: Request instance for CreatePasswordAuth
+        :type request: :class:`huaweicloudsdkservicestage.v2.CreatePasswordAuthRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.CreatePasswordAuthResponse`
         """
         return self.create_password_auth_with_http_info(request)
 
     def create_password_auth_with_http_info(self, request):
-        """创建口令授权
-
-        创建指定Git仓库类型的口令授权。
-
-        :param CreatePasswordAuthRequest request
-        :return: CreatePasswordAuthResponse
-        """
-
         all_params = ['repo_type', 'access_password']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2122,26 +1881,18 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_personal_auth(self, request):
         """创建私人令牌授权
 
         创建指定Git仓库类型的私人令牌授权。
 
-        :param CreatePersonalAuthRequest request
-        :return: CreatePersonalAuthResponse
+        :param request: Request instance for CreatePersonalAuth
+        :type request: :class:`huaweicloudsdkservicestage.v2.CreatePersonalAuthRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.CreatePersonalAuthResponse`
         """
         return self.create_personal_auth_with_http_info(request)
 
     def create_personal_auth_with_http_info(self, request):
-        """创建私人令牌授权
-
-        创建指定Git仓库类型的私人令牌授权。
-
-        :param CreatePersonalAuthRequest request
-        :return: CreatePersonalAuthResponse
-        """
-
         all_params = ['repo_type', 'access_token']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2187,26 +1938,18 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_project(self, request):
         """创建软件仓库项目
 
         创建指定组织下的软件仓库项目。
 
-        :param CreateProjectRequest request
-        :return: CreateProjectResponse
+        :param request: Request instance for CreateProject
+        :type request: :class:`huaweicloudsdkservicestage.v2.CreateProjectRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.CreateProjectResponse`
         """
         return self.create_project_with_http_info(request)
 
     def create_project_with_http_info(self, request):
-        """创建软件仓库项目
-
-        创建指定组织下的软件仓库项目。
-
-        :param CreateProjectRequest request
-        :return: CreateProjectResponse
-        """
-
         all_params = ['x_repo_auth', 'namespace', 'project_create']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2254,26 +1997,18 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_tag(self, request):
         """创建项目tag标签
 
         创建指定项目的tag标签。
 
-        :param CreateTagRequest request
-        :return: CreateTagResponse
+        :param request: Request instance for CreateTag
+        :type request: :class:`huaweicloudsdkservicestage.v2.CreateTagRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.CreateTagResponse`
         """
         return self.create_tag_with_http_info(request)
 
     def create_tag_with_http_info(self, request):
-        """创建项目tag标签
-
-        创建指定项目的tag标签。
-
-        :param CreateTagRequest request
-        :return: CreateTagResponse
-        """
-
         all_params = ['x_repo_auth', 'namespace', 'project', 'ref', 'tag_create']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2325,26 +2060,18 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_authorize(self, request):
         """删除仓库授权
 
         通过名称删除仓库授权。
 
-        :param DeleteAuthorizeRequest request
-        :return: DeleteAuthorizeResponse
+        :param request: Request instance for DeleteAuthorize
+        :type request: :class:`huaweicloudsdkservicestage.v2.DeleteAuthorizeRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.DeleteAuthorizeResponse`
         """
         return self.delete_authorize_with_http_info(request)
 
     def delete_authorize_with_http_info(self, request):
-        """删除仓库授权
-
-        通过名称删除仓库授权。
-
-        :param DeleteAuthorizeRequest request
-        :return: DeleteAuthorizeResponse
-        """
-
         all_params = ['name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2388,26 +2115,18 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_file(self, request):
         """删除仓库文件
 
         删除指定项目仓库下的文件。
 
-        :param DeleteFileRequest request
-        :return: DeleteFileResponse
+        :param request: Request instance for DeleteFile
+        :type request: :class:`huaweicloudsdkservicestage.v2.DeleteFileRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.DeleteFileResponse`
         """
         return self.delete_file_with_http_info(request)
 
     def delete_file_with_http_info(self, request):
-        """删除仓库文件
-
-        删除指定项目仓库下的文件。
-
-        :param DeleteFileRequest request
-        :return: DeleteFileResponse
-        """
-
         all_params = ['x_repo_auth', 'namespace', 'project', 'path', 'ref', 'message', 'sha']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2463,26 +2182,18 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_hook(self, request):
         """删除项目hook
 
         删除指定项目的hook。
 
-        :param DeleteHookRequest request
-        :return: DeleteHookResponse
+        :param request: Request instance for DeleteHook
+        :type request: :class:`huaweicloudsdkservicestage.v2.DeleteHookRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.DeleteHookResponse`
         """
         return self.delete_hook_with_http_info(request)
 
     def delete_hook_with_http_info(self, request):
-        """删除项目hook
-
-        删除指定项目的hook。
-
-        :param DeleteHookRequest request
-        :return: DeleteHookResponse
-        """
-
         all_params = ['x_repo_auth', 'namespace', 'project', 'hook_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2532,26 +2243,18 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_tag(self, request):
         """删除项目tag标签
 
         删除指定项目的tag标签。
 
-        :param DeleteTagRequest request
-        :return: DeleteTagResponse
+        :param request: Request instance for DeleteTag
+        :type request: :class:`huaweicloudsdkservicestage.v2.DeleteTagRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.DeleteTagResponse`
         """
         return self.delete_tag_with_http_info(request)
 
     def delete_tag_with_http_info(self, request):
-        """删除项目tag标签
-
-        删除指定项目的tag标签。
-
-        :param DeleteTagRequest request
-        :return: DeleteTagResponse
-        """
-
         all_params = ['x_repo_auth', 'namespace', 'project', 'tag_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2601,26 +2304,18 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_authorizations(self, request):
         """获取仓库授权列表
 
         获取所有Git仓库授权信息。
 
-        :param ListAuthorizationsRequest request
-        :return: ListAuthorizationsResponse
+        :param request: Request instance for ListAuthorizations
+        :type request: :class:`huaweicloudsdkservicestage.v2.ListAuthorizationsRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.ListAuthorizationsResponse`
         """
         return self.list_authorizations_with_http_info(request)
 
     def list_authorizations_with_http_info(self, request):
-        """获取仓库授权列表
-
-        获取所有Git仓库授权信息。
-
-        :param ListAuthorizationsRequest request
-        :return: ListAuthorizationsResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2662,26 +2357,18 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_branches(self, request):
         """获取项目分支
 
         获取指定项目的所有分支列表。
 
-        :param ListBranchesRequest request
-        :return: ListBranchesResponse
+        :param request: Request instance for ListBranches
+        :type request: :class:`huaweicloudsdkservicestage.v2.ListBranchesRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.ListBranchesResponse`
         """
         return self.list_branches_with_http_info(request)
 
     def list_branches_with_http_info(self, request):
-        """获取项目分支
-
-        获取指定项目的所有分支列表。
-
-        :param ListBranchesRequest request
-        :return: ListBranchesResponse
-        """
-
         all_params = ['x_repo_auth', 'namespace', 'project']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2729,26 +2416,18 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_commits(self, request):
         """获取项目commit提交记录
 
         获取指定项目的最近10次commit提交记录。
 
-        :param ListCommitsRequest request
-        :return: ListCommitsResponse
+        :param request: Request instance for ListCommits
+        :type request: :class:`huaweicloudsdkservicestage.v2.ListCommitsRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.ListCommitsResponse`
         """
         return self.list_commits_with_http_info(request)
 
     def list_commits_with_http_info(self, request):
-        """获取项目commit提交记录
-
-        获取指定项目的最近10次commit提交记录。
-
-        :param ListCommitsRequest request
-        :return: ListCommitsResponse
-        """
-
         all_params = ['x_repo_auth', 'namespace', 'project', 'ref']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2798,26 +2477,18 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_hooks(self, request):
         """获取项目hooks
 
         获取指定项目的所有hooks
 
-        :param ListHooksRequest request
-        :return: ListHooksResponse
+        :param request: Request instance for ListHooks
+        :type request: :class:`huaweicloudsdkservicestage.v2.ListHooksRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.ListHooksResponse`
         """
         return self.list_hooks_with_http_info(request)
 
     def list_hooks_with_http_info(self, request):
-        """获取项目hooks
-
-        获取指定项目的所有hooks
-
-        :param ListHooksRequest request
-        :return: ListHooksResponse
-        """
-
         all_params = ['x_repo_auth', 'namespace', 'project']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2865,26 +2536,18 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_namespaces(self, request):
         """获取仓库的namespaces
 
         获取仓库的namespaces。
 
-        :param ListNamespacesRequest request
-        :return: ListNamespacesResponse
+        :param request: Request instance for ListNamespaces
+        :type request: :class:`huaweicloudsdkservicestage.v2.ListNamespacesRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.ListNamespacesResponse`
         """
         return self.list_namespaces_with_http_info(request)
 
     def list_namespaces_with_http_info(self, request):
-        """获取仓库的namespaces
-
-        获取仓库的namespaces。
-
-        :param ListNamespacesRequest request
-        :return: ListNamespacesResponse
-        """
-
         all_params = ['x_repo_auth']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2928,26 +2591,18 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_projects(self, request):
         """获取组织下所有项目
 
         获取指定组织下的所有项目。
 
-        :param ListProjectsRequest request
-        :return: ListProjectsResponse
+        :param request: Request instance for ListProjects
+        :type request: :class:`huaweicloudsdkservicestage.v2.ListProjectsRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.ListProjectsResponse`
         """
         return self.list_projects_with_http_info(request)
 
     def list_projects_with_http_info(self, request):
-        """获取组织下所有项目
-
-        获取指定组织下的所有项目。
-
-        :param ListProjectsRequest request
-        :return: ListProjectsResponse
-        """
-
         all_params = ['x_repo_auth', 'namespace']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2993,26 +2648,18 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_tags(self, request):
         """获取项目的所有tag标签
 
         获取指定项目的所有tag标签。
 
-        :param ListTagsRequest request
-        :return: ListTagsResponse
+        :param request: Request instance for ListTags
+        :type request: :class:`huaweicloudsdkservicestage.v2.ListTagsRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.ListTagsResponse`
         """
         return self.list_tags_with_http_info(request)
 
     def list_tags_with_http_info(self, request):
-        """获取项目的所有tag标签
-
-        获取指定项目的所有tag标签。
-
-        :param ListTagsRequest request
-        :return: ListTagsResponse
-        """
-
         all_params = ['x_repo_auth', 'namespace', 'project']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3060,26 +2707,18 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_trees(self, request):
         """获取仓库文件列表
 
         获取指定项目仓库的文件列表。
 
-        :param ListTreesRequest request
-        :return: ListTreesResponse
+        :param request: Request instance for ListTrees
+        :type request: :class:`huaweicloudsdkservicestage.v2.ListTreesRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.ListTreesResponse`
         """
         return self.list_trees_with_http_info(request)
 
     def list_trees_with_http_info(self, request):
-        """获取仓库文件列表
-
-        获取指定项目仓库的文件列表。
-
-        :param ListTreesRequest request
-        :return: ListTreesResponse
-        """
-
         all_params = ['x_repo_auth', 'namespace', 'project', 'ref']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3129,26 +2768,18 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_content(self, request):
         """获取仓库文件内容
 
         获取指定项目仓库下文件的内容。
 
-        :param ShowContentRequest request
-        :return: ShowContentResponse
+        :param request: Request instance for ShowContent
+        :type request: :class:`huaweicloudsdkservicestage.v2.ShowContentRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.ShowContentResponse`
         """
         return self.show_content_with_http_info(request)
 
     def show_content_with_http_info(self, request):
-        """获取仓库文件内容
-
-        获取指定项目仓库下文件的内容。
-
-        :param ShowContentRequest request
-        :return: ShowContentResponse
-        """
-
         all_params = ['x_repo_auth', 'namespace', 'project', 'path', 'ref']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3200,26 +2831,18 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_project_detail(self, request):
         """通过clone url 获取仓库信息
 
         通过指定的clone url 获取仓库信息。
 
-        :param ShowProjectDetailRequest request
-        :return: ShowProjectDetailResponse
+        :param request: Request instance for ShowProjectDetail
+        :type request: :class:`huaweicloudsdkservicestage.v2.ShowProjectDetailRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.ShowProjectDetailResponse`
         """
         return self.show_project_detail_with_http_info(request)
 
     def show_project_detail_with_http_info(self, request):
-        """通过clone url 获取仓库信息
-
-        通过指定的clone url 获取仓库信息。
-
-        :param ShowProjectDetailRequest request
-        :return: ShowProjectDetailResponse
-        """
-
         all_params = ['x_repo_auth', 'clone_url']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3265,26 +2888,18 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_redirect_url(self, request):
         """获取授权重定向URL
 
         获取指定Git仓库类型的授权重定向URL。
 
-        :param ShowRedirectUrlRequest request
-        :return: ShowRedirectUrlResponse
+        :param request: Request instance for ShowRedirectUrl
+        :type request: :class:`huaweicloudsdkservicestage.v2.ShowRedirectUrlRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.ShowRedirectUrlResponse`
         """
         return self.show_redirect_url_with_http_info(request)
 
     def show_redirect_url_with_http_info(self, request):
-        """获取授权重定向URL
-
-        获取指定Git仓库类型的授权重定向URL。
-
-        :param ShowRedirectUrlRequest request
-        :return: ShowRedirectUrlResponse
-        """
-
         all_params = ['repo_type', 'tag']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3330,26 +2945,18 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_file(self, request):
         """更新仓库文件内容
 
         更新指定项目仓库下的文件内容。
 
-        :param UpdateFileRequest request
-        :return: UpdateFileResponse
+        :param request: Request instance for UpdateFile
+        :type request: :class:`huaweicloudsdkservicestage.v2.UpdateFileRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.UpdateFileResponse`
         """
         return self.update_file_with_http_info(request)
 
     def update_file_with_http_info(self, request):
-        """更新仓库文件内容
-
-        更新指定项目仓库下的文件内容。
-
-        :param UpdateFileRequest request
-        :return: UpdateFileResponse
-        """
-
         all_params = ['x_repo_auth', 'namespace', 'project', 'path', 'ref', 'file_update']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3403,26 +3010,18 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_flavors(self, request):
         """获取所有支持的应用资源规格
 
         通过此API获取所用支持的应用资源规格。
 
-        :param ListFlavorsRequest request
-        :return: ListFlavorsResponse
+        :param request: Request instance for ListFlavors
+        :type request: :class:`huaweicloudsdkservicestage.v2.ListFlavorsRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.ListFlavorsResponse`
         """
         return self.list_flavors_with_http_info(request)
 
     def list_flavors_with_http_info(self, request):
-        """获取所有支持的应用资源规格
-
-        通过此API获取所用支持的应用资源规格。
-
-        :param ListFlavorsRequest request
-        :return: ListFlavorsResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3464,26 +3063,18 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_runtimes(self, request):
         """获取所有支持的应用组件运行时类型
 
         此API用来获取所有支持应用组件运行时类型。
 
-        :param ListRuntimesRequest request
-        :return: ListRuntimesResponse
+        :param request: Request instance for ListRuntimes
+        :type request: :class:`huaweicloudsdkservicestage.v2.ListRuntimesRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.ListRuntimesResponse`
         """
         return self.list_runtimes_with_http_info(request)
 
     def list_runtimes_with_http_info(self, request):
-        """获取所有支持的应用组件运行时类型
-
-        此API用来获取所有支持应用组件运行时类型。
-
-        :param ListRuntimesRequest request
-        :return: ListRuntimesResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3525,26 +3116,18 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_templates(self, request):
         """获取所有支持的应用组件模板
 
         此API用来获取所有内置应用组件模板。
 
-        :param ListTemplatesRequest request
-        :return: ListTemplatesResponse
+        :param request: Request instance for ListTemplates
+        :type request: :class:`huaweicloudsdkservicestage.v2.ListTemplatesRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.ListTemplatesResponse`
         """
         return self.list_templates_with_http_info(request)
 
     def list_templates_with_http_info(self, request):
-        """获取所有支持的应用组件模板
-
-        此API用来获取所有内置应用组件模板。
-
-        :param ListTemplatesRequest request
-        :return: ListTemplatesResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3585,7 +3168,6 @@ class ServiceStageClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

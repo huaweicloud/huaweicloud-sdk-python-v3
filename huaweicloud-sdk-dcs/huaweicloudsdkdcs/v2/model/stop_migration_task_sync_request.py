@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StopMigrationTaskSyncRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class StopMigrationTaskSyncRequest:
     }
 
     def __init__(self, task_id=None):
-        """StopMigrationTaskSyncRequest - a model defined in huaweicloud sdk"""
+        """StopMigrationTaskSyncRequest
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 任务ID
+        :type task_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class StopMigrationTaskSyncRequest:
         任务ID
 
         :param task_id: The task_id of this StopMigrationTaskSyncRequest.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 

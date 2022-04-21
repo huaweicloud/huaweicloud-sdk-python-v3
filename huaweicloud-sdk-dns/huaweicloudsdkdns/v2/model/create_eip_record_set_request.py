@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateEipRecordSetRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateEipRecordSetRequest:
     }
 
     def __init__(self, region=None, floatingip_id=None, body=None):
-        """CreateEipRecordSetRequest - a model defined in huaweicloud sdk"""
+        """CreateEipRecordSetRequest
+
+        The model defined in huaweicloud sdk
+
+        :param region: 租户的区域信息。
+        :type region: str
+        :param floatingip_id: 弹性IP的ID。
+        :type floatingip_id: str
+        :param body: Body of the CreateEipRecordSetRequest
+        :type body: :class:`huaweicloudsdkdns.v2.CreatePtrReq`
+        """
         
         
 
@@ -66,7 +75,7 @@ class CreateEipRecordSetRequest:
         租户的区域信息。
 
         :param region: The region of this CreateEipRecordSetRequest.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -88,7 +97,7 @@ class CreateEipRecordSetRequest:
         弹性IP的ID。
 
         :param floatingip_id: The floatingip_id of this CreateEipRecordSetRequest.
-        :type: str
+        :type floatingip_id: str
         """
         self._floatingip_id = floatingip_id
 
@@ -98,7 +107,7 @@ class CreateEipRecordSetRequest:
 
 
         :return: The body of this CreateEipRecordSetRequest.
-        :rtype: CreatePtrReq
+        :rtype: :class:`huaweicloudsdkdns.v2.CreatePtrReq`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class CreateEipRecordSetRequest:
 
 
         :param body: The body of this CreateEipRecordSetRequest.
-        :type: CreatePtrReq
+        :type body: :class:`huaweicloudsdkdns.v2.CreatePtrReq`
         """
         self._body = body
 

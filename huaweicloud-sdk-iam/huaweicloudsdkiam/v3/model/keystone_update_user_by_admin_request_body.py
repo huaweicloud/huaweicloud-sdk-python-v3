@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneUpdateUserByAdminRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class KeystoneUpdateUserByAdminRequestBody:
     }
 
     def __init__(self, user=None):
-        """KeystoneUpdateUserByAdminRequestBody - a model defined in huaweicloud sdk"""
+        """KeystoneUpdateUserByAdminRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param user: 
+        :type user: :class:`huaweicloudsdkiam.v3.KeystoneUpdateUserOption`
+        """
         
         
 
@@ -45,7 +50,7 @@ class KeystoneUpdateUserByAdminRequestBody:
 
 
         :return: The user of this KeystoneUpdateUserByAdminRequestBody.
-        :rtype: KeystoneUpdateUserOption
+        :rtype: :class:`huaweicloudsdkiam.v3.KeystoneUpdateUserOption`
         """
         return self._user
 
@@ -55,7 +60,7 @@ class KeystoneUpdateUserByAdminRequestBody:
 
 
         :param user: The user of this KeystoneUpdateUserByAdminRequestBody.
-        :type: KeystoneUpdateUserOption
+        :type user: :class:`huaweicloudsdkiam.v3.KeystoneUpdateUserOption`
         """
         self._user = user
 

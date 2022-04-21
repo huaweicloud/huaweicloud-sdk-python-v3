@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListResourceInstancesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListResourceInstancesRequest:
     }
 
     def __init__(self, resource_instances=None, body=None):
-        """ListResourceInstancesRequest - a model defined in huaweicloud sdk"""
+        """ListResourceInstancesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param resource_instances: 定值为resource_instances。
+        :type resource_instances: str
+        :param body: Body of the ListResourceInstancesRequest
+        :type body: :class:`huaweicloudsdkcsms.v1.ListResourceInstancesRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class ListResourceInstancesRequest:
         定值为resource_instances。
 
         :param resource_instances: The resource_instances of this ListResourceInstancesRequest.
-        :type: str
+        :type resource_instances: str
         """
         self._resource_instances = resource_instances
 
@@ -72,7 +79,7 @@ class ListResourceInstancesRequest:
 
 
         :return: The body of this ListResourceInstancesRequest.
-        :rtype: ListResourceInstancesRequestBody
+        :rtype: :class:`huaweicloudsdkcsms.v1.ListResourceInstancesRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class ListResourceInstancesRequest:
 
 
         :param body: The body of this ListResourceInstancesRequest.
-        :type: ListResourceInstancesRequestBody
+        :type body: :class:`huaweicloudsdkcsms.v1.ListResourceInstancesRequestBody`
         """
         self._body = body
 

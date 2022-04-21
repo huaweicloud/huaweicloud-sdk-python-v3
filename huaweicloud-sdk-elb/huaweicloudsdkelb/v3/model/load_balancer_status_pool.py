@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LoadBalancerStatusPool:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class LoadBalancerStatusPool:
     }
 
     def __init__(self, provisioning_status=None, name=None, healthmonitor=None, members=None, id=None, operating_status=None):
-        """LoadBalancerStatusPool - a model defined in huaweicloud sdk"""
+        """LoadBalancerStatusPool
+
+        The model defined in huaweicloud sdk
+
+        :param provisioning_status: 后端服务器组的配置状态。取值： - ACTIVE：使用中。
+        :type provisioning_status: str
+        :param name: 后端服务器组名。
+        :type name: str
+        :param healthmonitor: 
+        :type healthmonitor: :class:`huaweicloudsdkelb.v3.LoadBalancerStatusHealthMonitor`
+        :param members: 后端服务器状态信息。
+        :type members: list[:class:`huaweicloudsdkelb.v3.LoadBalancerStatusMember`]
+        :param id: 后端服务器组ID。
+        :type id: str
+        :param operating_status: 后端服务器组的操作状态。取值： - ONLINE：创建时默认状态，表后端服务器组正常。  - DEGRADED：该后端服务器组下存在member为的operating_status&#x3D;OFFLINE。  - DISABLED：负载均衡器或后端服务器组的admin_state_up&#x3D;false。 使用说明：  - DEGRADED和DISABLED仅在当前接口返回，查询后端服务器组详情等其他接口返回的operating_status字段不存在这两个状态值。
+        :type operating_status: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class LoadBalancerStatusPool:
         后端服务器组的配置状态。取值： - ACTIVE：使用中。
 
         :param provisioning_status: The provisioning_status of this LoadBalancerStatusPool.
-        :type: str
+        :type provisioning_status: str
         """
         self._provisioning_status = provisioning_status
 
@@ -105,7 +120,7 @@ class LoadBalancerStatusPool:
         后端服务器组名。
 
         :param name: The name of this LoadBalancerStatusPool.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -115,7 +130,7 @@ class LoadBalancerStatusPool:
 
 
         :return: The healthmonitor of this LoadBalancerStatusPool.
-        :rtype: LoadBalancerStatusHealthMonitor
+        :rtype: :class:`huaweicloudsdkelb.v3.LoadBalancerStatusHealthMonitor`
         """
         return self._healthmonitor
 
@@ -125,7 +140,7 @@ class LoadBalancerStatusPool:
 
 
         :param healthmonitor: The healthmonitor of this LoadBalancerStatusPool.
-        :type: LoadBalancerStatusHealthMonitor
+        :type healthmonitor: :class:`huaweicloudsdkelb.v3.LoadBalancerStatusHealthMonitor`
         """
         self._healthmonitor = healthmonitor
 
@@ -136,7 +151,7 @@ class LoadBalancerStatusPool:
         后端服务器状态信息。
 
         :return: The members of this LoadBalancerStatusPool.
-        :rtype: list[LoadBalancerStatusMember]
+        :rtype: list[:class:`huaweicloudsdkelb.v3.LoadBalancerStatusMember`]
         """
         return self._members
 
@@ -147,7 +162,7 @@ class LoadBalancerStatusPool:
         后端服务器状态信息。
 
         :param members: The members of this LoadBalancerStatusPool.
-        :type: list[LoadBalancerStatusMember]
+        :type members: list[:class:`huaweicloudsdkelb.v3.LoadBalancerStatusMember`]
         """
         self._members = members
 
@@ -169,7 +184,7 @@ class LoadBalancerStatusPool:
         后端服务器组ID。
 
         :param id: The id of this LoadBalancerStatusPool.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -191,7 +206,7 @@ class LoadBalancerStatusPool:
         后端服务器组的操作状态。取值： - ONLINE：创建时默认状态，表后端服务器组正常。  - DEGRADED：该后端服务器组下存在member为的operating_status=OFFLINE。  - DISABLED：负载均衡器或后端服务器组的admin_state_up=false。 使用说明：  - DEGRADED和DISABLED仅在当前接口返回，查询后端服务器组详情等其他接口返回的operating_status字段不存在这两个状态值。
 
         :param operating_status: The operating_status of this LoadBalancerStatusPool.
-        :type: str
+        :type operating_status: str
         """
         self._operating_status = operating_status
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateBindingDeviceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateBindingDeviceRequest:
     }
 
     def __init__(self, body=None):
-        """CreateBindingDeviceRequest - a model defined in huaweicloud sdk"""
+        """CreateBindingDeviceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateBindingDeviceRequest
+        :type body: :class:`huaweicloudsdkiam.v3.BindMfaDevice`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateBindingDeviceRequest:
 
 
         :return: The body of this CreateBindingDeviceRequest.
-        :rtype: BindMfaDevice
+        :rtype: :class:`huaweicloudsdkiam.v3.BindMfaDevice`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateBindingDeviceRequest:
 
 
         :param body: The body of this CreateBindingDeviceRequest.
-        :type: BindMfaDevice
+        :type body: :class:`huaweicloudsdkiam.v3.BindMfaDevice`
         """
         self._body = body
 

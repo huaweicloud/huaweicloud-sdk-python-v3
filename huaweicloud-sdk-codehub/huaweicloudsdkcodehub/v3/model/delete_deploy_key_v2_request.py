@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteDeployKeyV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteDeployKeyV2Request:
     }
 
     def __init__(self, key_id=None, repository_id=None):
-        """DeleteDeployKeyV2Request - a model defined in huaweicloud sdk"""
+        """DeleteDeployKeyV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param key_id: 部署密钥id
+        :type key_id: int
+        :param repository_id: 仓库主键id
+        :type repository_id: int
+        """
         
         
 
@@ -61,7 +68,7 @@ class DeleteDeployKeyV2Request:
         部署密钥id
 
         :param key_id: The key_id of this DeleteDeployKeyV2Request.
-        :type: int
+        :type key_id: int
         """
         self._key_id = key_id
 
@@ -83,7 +90,7 @@ class DeleteDeployKeyV2Request:
         仓库主键id
 
         :param repository_id: The repository_id of this DeleteDeployKeyV2Request.
-        :type: int
+        :type repository_id: int
         """
         self._repository_id = repository_id
 

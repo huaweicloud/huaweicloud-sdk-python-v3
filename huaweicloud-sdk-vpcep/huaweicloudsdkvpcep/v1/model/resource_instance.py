@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResourceInstance:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ResourceInstance:
     }
 
     def __init__(self, resource_id=None, tags=None, resource_name=None):
-        """ResourceInstance - a model defined in huaweicloud sdk"""
+        """ResourceInstance
+
+        The model defined in huaweicloud sdk
+
+        :param resource_id: 资源ID，Endpoint Service ID或Endpoint ID。
+        :type resource_id: str
+        :param tags: 标签列表。
+        :type tags: list[:class:`huaweicloudsdkvpcep.v1.TagList`]
+        :param resource_name: 资源名称，资源没有名称时，返回ID。
+        :type resource_name: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class ResourceInstance:
         资源ID，Endpoint Service ID或Endpoint ID。
 
         :param resource_id: The resource_id of this ResourceInstance.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -79,7 +88,7 @@ class ResourceInstance:
         标签列表。
 
         :return: The tags of this ResourceInstance.
-        :rtype: list[TagList]
+        :rtype: list[:class:`huaweicloudsdkvpcep.v1.TagList`]
         """
         return self._tags
 
@@ -90,7 +99,7 @@ class ResourceInstance:
         标签列表。
 
         :param tags: The tags of this ResourceInstance.
-        :type: list[TagList]
+        :type tags: list[:class:`huaweicloudsdkvpcep.v1.TagList`]
         """
         self._tags = tags
 
@@ -112,7 +121,7 @@ class ResourceInstance:
         资源名称，资源没有名称时，返回ID。
 
         :param resource_name: The resource_name of this ResourceInstance.
-        :type: str
+        :type resource_name: str
         """
         self._resource_name = resource_name
 

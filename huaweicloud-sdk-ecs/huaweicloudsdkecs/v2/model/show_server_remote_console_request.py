@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowServerRemoteConsoleRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowServerRemoteConsoleRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """ShowServerRemoteConsoleRequest - a model defined in huaweicloud sdk"""
+        """ShowServerRemoteConsoleRequest
+
+        The model defined in huaweicloud sdk
+
+        :param server_id: 云服务器ID。
+        :type server_id: str
+        :param body: Body of the ShowServerRemoteConsoleRequest
+        :type body: :class:`huaweicloudsdkecs.v2.ShowServerRemoteConsoleRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class ShowServerRemoteConsoleRequest:
         云服务器ID。
 
         :param server_id: The server_id of this ShowServerRemoteConsoleRequest.
-        :type: str
+        :type server_id: str
         """
         self._server_id = server_id
 
@@ -72,7 +79,7 @@ class ShowServerRemoteConsoleRequest:
 
 
         :return: The body of this ShowServerRemoteConsoleRequest.
-        :rtype: ShowServerRemoteConsoleRequestBody
+        :rtype: :class:`huaweicloudsdkecs.v2.ShowServerRemoteConsoleRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class ShowServerRemoteConsoleRequest:
 
 
         :param body: The body of this ShowServerRemoteConsoleRequest.
-        :type: ShowServerRemoteConsoleRequestBody
+        :type body: :class:`huaweicloudsdkecs.v2.ShowServerRemoteConsoleRequestBody`
         """
         self._body = body
 

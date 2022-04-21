@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSignatureKeysV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListSignatureKeysV2Response(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, signs=None):
-        """ListSignatureKeysV2Response - a model defined in huaweicloud sdk"""
+        """ListSignatureKeysV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param size: 本次返回的列表长度
+        :type size: int
+        :param total: 满足条件的记录数
+        :type total: int
+        :param signs: 本次查询到的签名密钥列表
+        :type signs: list[:class:`huaweicloudsdkapig.v2.SignatureWithBindNum`]
+        """
         
         super(ListSignatureKeysV2Response, self).__init__()
 
@@ -66,7 +75,7 @@ class ListSignatureKeysV2Response(SdkResponse):
         本次返回的列表长度
 
         :param size: The size of this ListSignatureKeysV2Response.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -88,7 +97,7 @@ class ListSignatureKeysV2Response(SdkResponse):
         满足条件的记录数
 
         :param total: The total of this ListSignatureKeysV2Response.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -99,7 +108,7 @@ class ListSignatureKeysV2Response(SdkResponse):
         本次查询到的签名密钥列表
 
         :return: The signs of this ListSignatureKeysV2Response.
-        :rtype: list[SignatureWithBindNum]
+        :rtype: list[:class:`huaweicloudsdkapig.v2.SignatureWithBindNum`]
         """
         return self._signs
 
@@ -110,7 +119,7 @@ class ListSignatureKeysV2Response(SdkResponse):
         本次查询到的签名密钥列表
 
         :param signs: The signs of this ListSignatureKeysV2Response.
-        :type: list[SignatureWithBindNum]
+        :type signs: list[:class:`huaweicloudsdkapig.v2.SignatureWithBindNum`]
         """
         self._signs = signs
 

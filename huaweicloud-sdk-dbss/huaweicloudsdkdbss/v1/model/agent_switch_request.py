@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AgentSwitchRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AgentSwitchRequest:
     }
 
     def __init__(self, agent_id=None, status=None):
-        """AgentSwitchRequest - a model defined in huaweicloud sdk"""
+        """AgentSwitchRequest
+
+        The model defined in huaweicloud sdk
+
+        :param agent_id: 审计agent的ID
+        :type agent_id: str
+        :param status: Agent开关状态 1：开启 0：关闭
+        :type status: int
+        """
         
         
 
@@ -61,7 +68,7 @@ class AgentSwitchRequest:
         审计agent的ID
 
         :param agent_id: The agent_id of this AgentSwitchRequest.
-        :type: str
+        :type agent_id: str
         """
         self._agent_id = agent_id
 
@@ -83,7 +90,7 @@ class AgentSwitchRequest:
         Agent开关状态 1：开启 0：关闭
 
         :param status: The status of this AgentSwitchRequest.
-        :type: int
+        :type status: int
         """
         self._status = status
 

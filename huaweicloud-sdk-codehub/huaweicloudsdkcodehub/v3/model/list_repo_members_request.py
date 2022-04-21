@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRepoMembersRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListRepoMembersRequest:
     }
 
     def __init__(self, page_index=None, page_size=None, repository_uuid=None, subject=None):
-        """ListRepoMembersRequest - a model defined in huaweicloud sdk"""
+        """ListRepoMembersRequest
+
+        The model defined in huaweicloud sdk
+
+        :param page_index: 第几页
+        :type page_index: int
+        :param page_size: 每页显示size
+        :type page_size: int
+        :param repository_uuid: 仓库uuid
+        :type repository_uuid: str
+        :param subject: 搜索关键字
+        :type subject: str
+        """
         
         
 
@@ -72,7 +83,7 @@ class ListRepoMembersRequest:
         第几页
 
         :param page_index: The page_index of this ListRepoMembersRequest.
-        :type: int
+        :type page_index: int
         """
         self._page_index = page_index
 
@@ -94,7 +105,7 @@ class ListRepoMembersRequest:
         每页显示size
 
         :param page_size: The page_size of this ListRepoMembersRequest.
-        :type: int
+        :type page_size: int
         """
         self._page_size = page_size
 
@@ -116,7 +127,7 @@ class ListRepoMembersRequest:
         仓库uuid
 
         :param repository_uuid: The repository_uuid of this ListRepoMembersRequest.
-        :type: str
+        :type repository_uuid: str
         """
         self._repository_uuid = repository_uuid
 
@@ -138,7 +149,7 @@ class ListRepoMembersRequest:
         搜索关键字
 
         :param subject: The subject of this ListRepoMembersRequest.
-        :type: str
+        :type subject: str
         """
         self._subject = subject
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PwdAuth:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class PwdAuth:
     }
 
     def __init__(self, identity=None, scope=None):
-        """PwdAuth - a model defined in huaweicloud sdk"""
+        """PwdAuth
+
+        The model defined in huaweicloud sdk
+
+        :param identity: 
+        :type identity: :class:`huaweicloudsdkiam.v3.PwdIdentity`
+        :param scope: 
+        :type scope: :class:`huaweicloudsdkiam.v3.AuthScope`
+        """
         
         
 
@@ -49,7 +56,7 @@ class PwdAuth:
 
 
         :return: The identity of this PwdAuth.
-        :rtype: PwdIdentity
+        :rtype: :class:`huaweicloudsdkiam.v3.PwdIdentity`
         """
         return self._identity
 
@@ -59,7 +66,7 @@ class PwdAuth:
 
 
         :param identity: The identity of this PwdAuth.
-        :type: PwdIdentity
+        :type identity: :class:`huaweicloudsdkiam.v3.PwdIdentity`
         """
         self._identity = identity
 
@@ -69,7 +76,7 @@ class PwdAuth:
 
 
         :return: The scope of this PwdAuth.
-        :rtype: AuthScope
+        :rtype: :class:`huaweicloudsdkiam.v3.AuthScope`
         """
         return self._scope
 
@@ -79,7 +86,7 @@ class PwdAuth:
 
 
         :param scope: The scope of this PwdAuth.
-        :type: AuthScope
+        :type scope: :class:`huaweicloudsdkiam.v3.AuthScope`
         """
         self._scope = scope
 

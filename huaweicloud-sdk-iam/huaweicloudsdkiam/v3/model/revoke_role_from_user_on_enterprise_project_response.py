@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RevokeRoleFromUserOnEnterpriseProjectResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class RevokeRoleFromUserOnEnterpriseProjectResponse(SdkResponse):
     }
 
     def __init__(self):
-        """RevokeRoleFromUserOnEnterpriseProjectResponse - a model defined in huaweicloud sdk"""
+        """RevokeRoleFromUserOnEnterpriseProjectResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(RevokeRoleFromUserOnEnterpriseProjectResponse, self).__init__()
         self.discriminator = None

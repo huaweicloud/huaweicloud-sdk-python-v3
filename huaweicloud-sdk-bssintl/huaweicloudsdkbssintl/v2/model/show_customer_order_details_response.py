@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowCustomerOrderDetailsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowCustomerOrderDetailsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, order_info=None, order_line_items=None):
-        """ShowCustomerOrderDetailsResponse - a model defined in huaweicloud sdk"""
+        """ShowCustomerOrderDetailsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total_count: 订单项个数。
+        :type total_count: int
+        :param order_info: 
+        :type order_info: :class:`huaweicloudsdkbssintl.v2.CustomerOrderV3`
+        :param order_line_items: 订单对应的订单项。 具体请参见表5。
+        :type order_line_items: list[:class:`huaweicloudsdkbssintl.v2.OrderLineItemEntityV2`]
+        """
         
         super(ShowCustomerOrderDetailsResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ShowCustomerOrderDetailsResponse(SdkResponse):
         订单项个数。
 
         :param total_count: The total_count of this ShowCustomerOrderDetailsResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 
@@ -78,7 +87,7 @@ class ShowCustomerOrderDetailsResponse(SdkResponse):
 
 
         :return: The order_info of this ShowCustomerOrderDetailsResponse.
-        :rtype: CustomerOrderV3
+        :rtype: :class:`huaweicloudsdkbssintl.v2.CustomerOrderV3`
         """
         return self._order_info
 
@@ -88,7 +97,7 @@ class ShowCustomerOrderDetailsResponse(SdkResponse):
 
 
         :param order_info: The order_info of this ShowCustomerOrderDetailsResponse.
-        :type: CustomerOrderV3
+        :type order_info: :class:`huaweicloudsdkbssintl.v2.CustomerOrderV3`
         """
         self._order_info = order_info
 
@@ -99,7 +108,7 @@ class ShowCustomerOrderDetailsResponse(SdkResponse):
         订单对应的订单项。 具体请参见表5。
 
         :return: The order_line_items of this ShowCustomerOrderDetailsResponse.
-        :rtype: list[OrderLineItemEntityV2]
+        :rtype: list[:class:`huaweicloudsdkbssintl.v2.OrderLineItemEntityV2`]
         """
         return self._order_line_items
 
@@ -110,7 +119,7 @@ class ShowCustomerOrderDetailsResponse(SdkResponse):
         订单对应的订单项。 具体请参见表5。
 
         :param order_line_items: The order_line_items of this ShowCustomerOrderDetailsResponse.
-        :type: list[OrderLineItemEntityV2]
+        :type order_line_items: list[:class:`huaweicloudsdkbssintl.v2.OrderLineItemEntityV2`]
         """
         self._order_line_items = order_line_items
 

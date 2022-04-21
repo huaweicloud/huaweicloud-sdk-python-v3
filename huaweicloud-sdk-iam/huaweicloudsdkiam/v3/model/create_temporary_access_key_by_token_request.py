@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateTemporaryAccessKeyByTokenRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateTemporaryAccessKeyByTokenRequest:
     }
 
     def __init__(self, body=None):
-        """CreateTemporaryAccessKeyByTokenRequest - a model defined in huaweicloud sdk"""
+        """CreateTemporaryAccessKeyByTokenRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateTemporaryAccessKeyByTokenRequest
+        :type body: :class:`huaweicloudsdkiam.v3.CreateTemporaryAccessKeyByTokenRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateTemporaryAccessKeyByTokenRequest:
 
 
         :return: The body of this CreateTemporaryAccessKeyByTokenRequest.
-        :rtype: CreateTemporaryAccessKeyByTokenRequestBody
+        :rtype: :class:`huaweicloudsdkiam.v3.CreateTemporaryAccessKeyByTokenRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateTemporaryAccessKeyByTokenRequest:
 
 
         :param body: The body of this CreateTemporaryAccessKeyByTokenRequest.
-        :type: CreateTemporaryAccessKeyByTokenRequestBody
+        :type body: :class:`huaweicloudsdkiam.v3.CreateTemporaryAccessKeyByTokenRequestBody`
         """
         self._body = body
 

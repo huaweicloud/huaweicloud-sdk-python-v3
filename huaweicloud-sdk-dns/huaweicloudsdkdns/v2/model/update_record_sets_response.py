@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateRecordSetsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -64,7 +63,47 @@ class UpdateRecordSetsResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, zone_id=None, zone_name=None, type=None, ttl=None, records=None, created_at=None, updated_at=None, status=None, default=None, project_id=None, links=None, line=None, weight=None, health_check_id=None, alias_target=None):
-        """UpdateRecordSetsResponse - a model defined in huaweicloud sdk"""
+        """UpdateRecordSetsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: Record Set的ID。
+        :type id: str
+        :param name: Record Set的名称。
+        :type name: str
+        :param description: Record Set的描述信息。
+        :type description: str
+        :param zone_id: 托管该记录的zone_id。
+        :type zone_id: str
+        :param zone_name: 托管该记录的zone_name。
+        :type zone_name: str
+        :param type: 记录类型。  取值范围：A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。
+        :type type: str
+        :param ttl: 解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
+        :type ttl: int
+        :param records: 域名解析后的值。
+        :type records: list[str]
+        :param created_at: 创建时间。
+        :type created_at: str
+        :param updated_at: 更新时间。
+        :type updated_at: str
+        :param status: 资源状态。
+        :type status: str
+        :param default: 标识是否由系统默认生成，系统默认生成的Record Set不能删除。
+        :type default: bool
+        :param project_id: 该Record Set所属的项目ID。
+        :type project_id: str
+        :param links: 
+        :type links: :class:`huaweicloudsdkdns.v2.PageLink`
+        :param line: 解析线路ID。
+        :type line: str
+        :param weight: 解析记录的权重。
+        :type weight: int
+        :param health_check_id: 健康检查ID。
+        :type health_check_id: str
+        :param alias_target: 
+        :type alias_target: :class:`huaweicloudsdkdns.v2.AliasTarget`
+        """
         
         super(UpdateRecordSetsResponse, self).__init__()
 
@@ -143,7 +182,7 @@ class UpdateRecordSetsResponse(SdkResponse):
         Record Set的ID。
 
         :param id: The id of this UpdateRecordSetsResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -165,7 +204,7 @@ class UpdateRecordSetsResponse(SdkResponse):
         Record Set的名称。
 
         :param name: The name of this UpdateRecordSetsResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -187,7 +226,7 @@ class UpdateRecordSetsResponse(SdkResponse):
         Record Set的描述信息。
 
         :param description: The description of this UpdateRecordSetsResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -209,7 +248,7 @@ class UpdateRecordSetsResponse(SdkResponse):
         托管该记录的zone_id。
 
         :param zone_id: The zone_id of this UpdateRecordSetsResponse.
-        :type: str
+        :type zone_id: str
         """
         self._zone_id = zone_id
 
@@ -231,7 +270,7 @@ class UpdateRecordSetsResponse(SdkResponse):
         托管该记录的zone_name。
 
         :param zone_name: The zone_name of this UpdateRecordSetsResponse.
-        :type: str
+        :type zone_name: str
         """
         self._zone_name = zone_name
 
@@ -253,7 +292,7 @@ class UpdateRecordSetsResponse(SdkResponse):
         记录类型。  取值范围：A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。
 
         :param type: The type of this UpdateRecordSetsResponse.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -275,7 +314,7 @@ class UpdateRecordSetsResponse(SdkResponse):
         解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
 
         :param ttl: The ttl of this UpdateRecordSetsResponse.
-        :type: int
+        :type ttl: int
         """
         self._ttl = ttl
 
@@ -297,7 +336,7 @@ class UpdateRecordSetsResponse(SdkResponse):
         域名解析后的值。
 
         :param records: The records of this UpdateRecordSetsResponse.
-        :type: list[str]
+        :type records: list[str]
         """
         self._records = records
 
@@ -319,7 +358,7 @@ class UpdateRecordSetsResponse(SdkResponse):
         创建时间。
 
         :param created_at: The created_at of this UpdateRecordSetsResponse.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -341,7 +380,7 @@ class UpdateRecordSetsResponse(SdkResponse):
         更新时间。
 
         :param updated_at: The updated_at of this UpdateRecordSetsResponse.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 
@@ -363,7 +402,7 @@ class UpdateRecordSetsResponse(SdkResponse):
         资源状态。
 
         :param status: The status of this UpdateRecordSetsResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -385,7 +424,7 @@ class UpdateRecordSetsResponse(SdkResponse):
         标识是否由系统默认生成，系统默认生成的Record Set不能删除。
 
         :param default: The default of this UpdateRecordSetsResponse.
-        :type: bool
+        :type default: bool
         """
         self._default = default
 
@@ -407,7 +446,7 @@ class UpdateRecordSetsResponse(SdkResponse):
         该Record Set所属的项目ID。
 
         :param project_id: The project_id of this UpdateRecordSetsResponse.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -417,7 +456,7 @@ class UpdateRecordSetsResponse(SdkResponse):
 
 
         :return: The links of this UpdateRecordSetsResponse.
-        :rtype: PageLink
+        :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
         """
         return self._links
 
@@ -427,7 +466,7 @@ class UpdateRecordSetsResponse(SdkResponse):
 
 
         :param links: The links of this UpdateRecordSetsResponse.
-        :type: PageLink
+        :type links: :class:`huaweicloudsdkdns.v2.PageLink`
         """
         self._links = links
 
@@ -449,7 +488,7 @@ class UpdateRecordSetsResponse(SdkResponse):
         解析线路ID。
 
         :param line: The line of this UpdateRecordSetsResponse.
-        :type: str
+        :type line: str
         """
         self._line = line
 
@@ -471,7 +510,7 @@ class UpdateRecordSetsResponse(SdkResponse):
         解析记录的权重。
 
         :param weight: The weight of this UpdateRecordSetsResponse.
-        :type: int
+        :type weight: int
         """
         self._weight = weight
 
@@ -493,7 +532,7 @@ class UpdateRecordSetsResponse(SdkResponse):
         健康检查ID。
 
         :param health_check_id: The health_check_id of this UpdateRecordSetsResponse.
-        :type: str
+        :type health_check_id: str
         """
         self._health_check_id = health_check_id
 
@@ -503,7 +542,7 @@ class UpdateRecordSetsResponse(SdkResponse):
 
 
         :return: The alias_target of this UpdateRecordSetsResponse.
-        :rtype: AliasTarget
+        :rtype: :class:`huaweicloudsdkdns.v2.AliasTarget`
         """
         return self._alias_target
 
@@ -513,7 +552,7 @@ class UpdateRecordSetsResponse(SdkResponse):
 
 
         :param alias_target: The alias_target of this UpdateRecordSetsResponse.
-        :type: AliasTarget
+        :type alias_target: :class:`huaweicloudsdkdns.v2.AliasTarget`
         """
         self._alias_target = alias_target
 

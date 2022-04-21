@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class App:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class App:
     }
 
     def __init__(self, app_name=None, app_id=None, state=None, scope=None, tenant_name=None, domain=None, create_time=None, authentication=None, callbacks=None, auto_record_mode=None):
-        """App - a model defined in huaweicloud sdk"""
+        """App
+
+        The model defined in huaweicloud sdk
+
+        :param app_name: app名称
+        :type app_name: str
+        :param app_id: 应用id
+        :type app_id: str
+        :param state: 
+        :type state: :class:`huaweicloudsdkcloudrtc.v2.AppState`
+        :param scope: RTC覆盖范围。  取值如下：    - DOMESTIC：国内范围。   - OVERSEA：海外范围。   - GLOBAL：全球范围。 
+        :type scope: str
+        :param tenant_name: 账号名
+        :type tenant_name: str
+        :param domain: 域名，App对应域名
+        :type domain: str
+        :param create_time: 创建时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
+        :type create_time: str
+        :param authentication: 
+        :type authentication: :class:`huaweicloudsdkcloudrtc.v2.AppAuth`
+        :param callbacks: 
+        :type callbacks: :class:`huaweicloudsdkcloudrtc.v2.AppCallbacks`
+        :param auto_record_mode: 
+        :type auto_record_mode: :class:`huaweicloudsdkcloudrtc.v2.AppAutoRecordMode`
+        """
         
         
 
@@ -103,7 +126,7 @@ class App:
         app名称
 
         :param app_name: The app_name of this App.
-        :type: str
+        :type app_name: str
         """
         self._app_name = app_name
 
@@ -125,7 +148,7 @@ class App:
         应用id
 
         :param app_id: The app_id of this App.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -135,7 +158,7 @@ class App:
 
 
         :return: The state of this App.
-        :rtype: AppState
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.AppState`
         """
         return self._state
 
@@ -145,7 +168,7 @@ class App:
 
 
         :param state: The state of this App.
-        :type: AppState
+        :type state: :class:`huaweicloudsdkcloudrtc.v2.AppState`
         """
         self._state = state
 
@@ -167,7 +190,7 @@ class App:
         RTC覆盖范围。  取值如下：    - DOMESTIC：国内范围。   - OVERSEA：海外范围。   - GLOBAL：全球范围。 
 
         :param scope: The scope of this App.
-        :type: str
+        :type scope: str
         """
         self._scope = scope
 
@@ -189,7 +212,7 @@ class App:
         账号名
 
         :param tenant_name: The tenant_name of this App.
-        :type: str
+        :type tenant_name: str
         """
         self._tenant_name = tenant_name
 
@@ -211,7 +234,7 @@ class App:
         域名，App对应域名
 
         :param domain: The domain of this App.
-        :type: str
+        :type domain: str
         """
         self._domain = domain
 
@@ -233,7 +256,7 @@ class App:
         创建时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
 
         :param create_time: The create_time of this App.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -243,7 +266,7 @@ class App:
 
 
         :return: The authentication of this App.
-        :rtype: AppAuth
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.AppAuth`
         """
         return self._authentication
 
@@ -253,7 +276,7 @@ class App:
 
 
         :param authentication: The authentication of this App.
-        :type: AppAuth
+        :type authentication: :class:`huaweicloudsdkcloudrtc.v2.AppAuth`
         """
         self._authentication = authentication
 
@@ -263,7 +286,7 @@ class App:
 
 
         :return: The callbacks of this App.
-        :rtype: AppCallbacks
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.AppCallbacks`
         """
         return self._callbacks
 
@@ -273,7 +296,7 @@ class App:
 
 
         :param callbacks: The callbacks of this App.
-        :type: AppCallbacks
+        :type callbacks: :class:`huaweicloudsdkcloudrtc.v2.AppCallbacks`
         """
         self._callbacks = callbacks
 
@@ -283,7 +306,7 @@ class App:
 
 
         :return: The auto_record_mode of this App.
-        :rtype: AppAutoRecordMode
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.AppAutoRecordMode`
         """
         return self._auto_record_mode
 
@@ -293,7 +316,7 @@ class App:
 
 
         :param auto_record_mode: The auto_record_mode of this App.
-        :type: AppAutoRecordMode
+        :type auto_record_mode: :class:`huaweicloudsdkcloudrtc.v2.AppAutoRecordMode`
         """
         self._auto_record_mode = auto_record_mode
 

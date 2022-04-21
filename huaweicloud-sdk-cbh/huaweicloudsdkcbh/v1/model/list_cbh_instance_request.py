@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCbhInstanceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class ListCbhInstanceRequest:
     }
 
     def __init__(self):
-        """ListCbhInstanceRequest - a model defined in huaweicloud sdk"""
+        """ListCbhInstanceRequest
+
+        The model defined in huaweicloud sdk
+
+        """
         
         
         self.discriminator = None

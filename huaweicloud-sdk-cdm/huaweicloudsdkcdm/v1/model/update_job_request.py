@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateJobRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateJobRequest:
     }
 
     def __init__(self, cluster_id=None, job_name=None, body=None):
-        """UpdateJobRequest - a model defined in huaweicloud sdk"""
+        """UpdateJobRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 集群ID
+        :type cluster_id: str
+        :param job_name: 作业名称。
+        :type job_name: str
+        :param body: Body of the UpdateJobRequest
+        :type body: :class:`huaweicloudsdkcdm.v1.CdmUpdateJobJsonReq`
+        """
         
         
 
@@ -66,7 +75,7 @@ class UpdateJobRequest:
         集群ID
 
         :param cluster_id: The cluster_id of this UpdateJobRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -88,7 +97,7 @@ class UpdateJobRequest:
         作业名称。
 
         :param job_name: The job_name of this UpdateJobRequest.
-        :type: str
+        :type job_name: str
         """
         self._job_name = job_name
 
@@ -98,7 +107,7 @@ class UpdateJobRequest:
 
 
         :return: The body of this UpdateJobRequest.
-        :rtype: CdmUpdateJobJsonReq
+        :rtype: :class:`huaweicloudsdkcdm.v1.CdmUpdateJobJsonReq`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class UpdateJobRequest:
 
 
         :param body: The body of this UpdateJobRequest.
-        :type: CdmUpdateJobJsonReq
+        :type body: :class:`huaweicloudsdkcdm.v1.CdmUpdateJobJsonReq`
         """
         self._body = body
 

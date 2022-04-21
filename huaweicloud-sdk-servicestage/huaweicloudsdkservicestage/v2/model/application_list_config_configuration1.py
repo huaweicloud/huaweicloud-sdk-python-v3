@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApplicationListConfigConfiguration1:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ApplicationListConfigConfiguration1:
     }
 
     def __init__(self, application_id=None, environment_id=None, configuration=None):
-        """ApplicationListConfigConfiguration1 - a model defined in huaweicloud sdk"""
+        """ApplicationListConfigConfiguration1
+
+        The model defined in huaweicloud sdk
+
+        :param application_id: 应用ID。
+        :type application_id: str
+        :param environment_id: 环境ID。
+        :type environment_id: str
+        :param configuration: 
+        :type configuration: :class:`huaweicloudsdkservicestage.v2.ApplicationListConfigConfiguration`
+        """
         
         
 
@@ -68,7 +77,7 @@ class ApplicationListConfigConfiguration1:
         应用ID。
 
         :param application_id: The application_id of this ApplicationListConfigConfiguration1.
-        :type: str
+        :type application_id: str
         """
         self._application_id = application_id
 
@@ -90,7 +99,7 @@ class ApplicationListConfigConfiguration1:
         环境ID。
 
         :param environment_id: The environment_id of this ApplicationListConfigConfiguration1.
-        :type: str
+        :type environment_id: str
         """
         self._environment_id = environment_id
 
@@ -100,7 +109,7 @@ class ApplicationListConfigConfiguration1:
 
 
         :return: The configuration of this ApplicationListConfigConfiguration1.
-        :rtype: ApplicationListConfigConfiguration
+        :rtype: :class:`huaweicloudsdkservicestage.v2.ApplicationListConfigConfiguration`
         """
         return self._configuration
 
@@ -110,7 +119,7 @@ class ApplicationListConfigConfiguration1:
 
 
         :param configuration: The configuration of this ApplicationListConfigConfiguration1.
-        :type: ApplicationListConfigConfiguration
+        :type configuration: :class:`huaweicloudsdkservicestage.v2.ApplicationListConfigConfiguration`
         """
         self._configuration = configuration
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LtsStructTemplateInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class LtsStructTemplateInfo:
     }
 
     def __init__(self, demo_fields=None, tag_fields=None, content=None, log_group_id=None, parse_type=None, log_stream_id=None, project_id=None, regex_rules=None, layers=None, tokenizer=None, log_format=None):
-        """LtsStructTemplateInfo - a model defined in huaweicloud sdk"""
+        """LtsStructTemplateInfo
+
+        The model defined in huaweicloud sdk
+
+        :param demo_fields: 结构化字段
+        :type demo_fields: list[:class:`huaweicloudsdklts.v2.StructFieldInfo`]
+        :param tag_fields: tag字段列表（使用tag字段解析时需要，其中系统模板不支持使用tag字段）。
+        :type tag_fields: list[:class:`huaweicloudsdklts.v2.TagField`]
+        :param content: 示例日志
+        :type content: str
+        :param log_group_id: 日志组ID
+        :type log_group_id: str
+        :param parse_type: 结构化方式
+        :type parse_type: str
+        :param log_stream_id: 日志流ID
+        :type log_stream_id: str
+        :param project_id: 项目ID
+        :type project_id: str
+        :param regex_rules: parse_type为custom_regex类型时必填，regex提取规则
+        :type regex_rules: str
+        :param layers: parse_type为json类型时必填，解析层数，目前固定是3
+        :type layers: int
+        :param tokenizer: parse_type为split类型时必填，分隔符，分词符号
+        :type tokenizer: str
+        :param log_format: parse_type为nginx类型时必填，nginx日志格式模板
+        :type log_format: str
+        """
         
         
 
@@ -90,7 +115,7 @@ class LtsStructTemplateInfo:
         结构化字段
 
         :return: The demo_fields of this LtsStructTemplateInfo.
-        :rtype: list[StructFieldInfo]
+        :rtype: list[:class:`huaweicloudsdklts.v2.StructFieldInfo`]
         """
         return self._demo_fields
 
@@ -101,7 +126,7 @@ class LtsStructTemplateInfo:
         结构化字段
 
         :param demo_fields: The demo_fields of this LtsStructTemplateInfo.
-        :type: list[StructFieldInfo]
+        :type demo_fields: list[:class:`huaweicloudsdklts.v2.StructFieldInfo`]
         """
         self._demo_fields = demo_fields
 
@@ -112,7 +137,7 @@ class LtsStructTemplateInfo:
         tag字段列表（使用tag字段解析时需要，其中系统模板不支持使用tag字段）。
 
         :return: The tag_fields of this LtsStructTemplateInfo.
-        :rtype: list[TagField]
+        :rtype: list[:class:`huaweicloudsdklts.v2.TagField`]
         """
         return self._tag_fields
 
@@ -123,7 +148,7 @@ class LtsStructTemplateInfo:
         tag字段列表（使用tag字段解析时需要，其中系统模板不支持使用tag字段）。
 
         :param tag_fields: The tag_fields of this LtsStructTemplateInfo.
-        :type: list[TagField]
+        :type tag_fields: list[:class:`huaweicloudsdklts.v2.TagField`]
         """
         self._tag_fields = tag_fields
 
@@ -145,7 +170,7 @@ class LtsStructTemplateInfo:
         示例日志
 
         :param content: The content of this LtsStructTemplateInfo.
-        :type: str
+        :type content: str
         """
         self._content = content
 
@@ -167,7 +192,7 @@ class LtsStructTemplateInfo:
         日志组ID
 
         :param log_group_id: The log_group_id of this LtsStructTemplateInfo.
-        :type: str
+        :type log_group_id: str
         """
         self._log_group_id = log_group_id
 
@@ -189,7 +214,7 @@ class LtsStructTemplateInfo:
         结构化方式
 
         :param parse_type: The parse_type of this LtsStructTemplateInfo.
-        :type: str
+        :type parse_type: str
         """
         self._parse_type = parse_type
 
@@ -211,7 +236,7 @@ class LtsStructTemplateInfo:
         日志流ID
 
         :param log_stream_id: The log_stream_id of this LtsStructTemplateInfo.
-        :type: str
+        :type log_stream_id: str
         """
         self._log_stream_id = log_stream_id
 
@@ -233,7 +258,7 @@ class LtsStructTemplateInfo:
         项目ID
 
         :param project_id: The project_id of this LtsStructTemplateInfo.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -255,7 +280,7 @@ class LtsStructTemplateInfo:
         parse_type为custom_regex类型时必填，regex提取规则
 
         :param regex_rules: The regex_rules of this LtsStructTemplateInfo.
-        :type: str
+        :type regex_rules: str
         """
         self._regex_rules = regex_rules
 
@@ -277,7 +302,7 @@ class LtsStructTemplateInfo:
         parse_type为json类型时必填，解析层数，目前固定是3
 
         :param layers: The layers of this LtsStructTemplateInfo.
-        :type: int
+        :type layers: int
         """
         self._layers = layers
 
@@ -299,7 +324,7 @@ class LtsStructTemplateInfo:
         parse_type为split类型时必填，分隔符，分词符号
 
         :param tokenizer: The tokenizer of this LtsStructTemplateInfo.
-        :type: str
+        :type tokenizer: str
         """
         self._tokenizer = tokenizer
 
@@ -321,7 +346,7 @@ class LtsStructTemplateInfo:
         parse_type为nginx类型时必填，nginx日志格式模板
 
         :param log_format: The log_format of this LtsStructTemplateInfo.
-        :type: str
+        :type log_format: str
         """
         self._log_format = log_format
 

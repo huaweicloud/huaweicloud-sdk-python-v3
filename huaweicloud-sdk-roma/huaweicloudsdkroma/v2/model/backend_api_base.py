@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BackendApiBase:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class BackendApiBase:
     }
 
     def __init__(self, authorizer_id=None, url_domain=None, req_protocol=None, remark=None, req_method=None, version=None, req_uri=None, timeout=None, enable_client_ssl=None, retry_count=None, id=None, status=None, register_time=None, update_time=None):
-        """BackendApiBase - a model defined in huaweicloud sdk"""
+        """BackendApiBase
+
+        The model defined in huaweicloud sdk
+
+        :param authorizer_id: 后端自定义认证对象的ID
+        :type authorizer_id: str
+        :param url_domain: 后端服务的地址。  由主机（IP或域名）和端口号组成，总长度不超过255。格式为主机:端口（如：apig.example.com:7443）。如果不写端口，则HTTPS默认端口号为443，HTTP默认端口号为80。  支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、下划线、中划线组成，且只能以英文开头
+        :type url_domain: str
+        :param req_protocol: 请求协议
+        :type req_protocol: str
+        :param remark: 描述。 &gt; 中文字符必须为UTF-8或者unicode编码。
+        :type remark: str
+        :param req_method: 请求方式
+        :type req_method: str
+        :param version: web后端版本，字符长度不超过16
+        :type version: str
+        :param req_uri: 请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。  支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。 &gt; 需要服从URI规范。
+        :type req_uri: str
+        :param timeout: ROMA Connect APIC请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000  单位：毫秒。
+        :type timeout: int
+        :param enable_client_ssl: 是否开启双向认证
+        :type enable_client_ssl: bool
+        :param retry_count: ROMA Connect APIC请求后端服务的重试次数，默认为-1，范围[-1,10]
+        :type retry_count: str
+        :param id: 编号
+        :type id: str
+        :param status: 后端状态   - 1： 有效
+        :type status: int
+        :param register_time: 注册时间
+        :type register_time: datetime
+        :param update_time: 修改时间
+        :type update_time: datetime
+        """
         
         
 
@@ -119,7 +150,7 @@ class BackendApiBase:
         后端自定义认证对象的ID
 
         :param authorizer_id: The authorizer_id of this BackendApiBase.
-        :type: str
+        :type authorizer_id: str
         """
         self._authorizer_id = authorizer_id
 
@@ -141,7 +172,7 @@ class BackendApiBase:
         后端服务的地址。  由主机（IP或域名）和端口号组成，总长度不超过255。格式为主机:端口（如：apig.example.com:7443）。如果不写端口，则HTTPS默认端口号为443，HTTP默认端口号为80。  支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、下划线、中划线组成，且只能以英文开头
 
         :param url_domain: The url_domain of this BackendApiBase.
-        :type: str
+        :type url_domain: str
         """
         self._url_domain = url_domain
 
@@ -163,7 +194,7 @@ class BackendApiBase:
         请求协议
 
         :param req_protocol: The req_protocol of this BackendApiBase.
-        :type: str
+        :type req_protocol: str
         """
         self._req_protocol = req_protocol
 
@@ -185,7 +216,7 @@ class BackendApiBase:
         描述。 > 中文字符必须为UTF-8或者unicode编码。
 
         :param remark: The remark of this BackendApiBase.
-        :type: str
+        :type remark: str
         """
         self._remark = remark
 
@@ -207,7 +238,7 @@ class BackendApiBase:
         请求方式
 
         :param req_method: The req_method of this BackendApiBase.
-        :type: str
+        :type req_method: str
         """
         self._req_method = req_method
 
@@ -229,7 +260,7 @@ class BackendApiBase:
         web后端版本，字符长度不超过16
 
         :param version: The version of this BackendApiBase.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -251,7 +282,7 @@ class BackendApiBase:
         请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。  支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。 > 需要服从URI规范。
 
         :param req_uri: The req_uri of this BackendApiBase.
-        :type: str
+        :type req_uri: str
         """
         self._req_uri = req_uri
 
@@ -273,7 +304,7 @@ class BackendApiBase:
         ROMA Connect APIC请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000  单位：毫秒。
 
         :param timeout: The timeout of this BackendApiBase.
-        :type: int
+        :type timeout: int
         """
         self._timeout = timeout
 
@@ -295,7 +326,7 @@ class BackendApiBase:
         是否开启双向认证
 
         :param enable_client_ssl: The enable_client_ssl of this BackendApiBase.
-        :type: bool
+        :type enable_client_ssl: bool
         """
         self._enable_client_ssl = enable_client_ssl
 
@@ -317,7 +348,7 @@ class BackendApiBase:
         ROMA Connect APIC请求后端服务的重试次数，默认为-1，范围[-1,10]
 
         :param retry_count: The retry_count of this BackendApiBase.
-        :type: str
+        :type retry_count: str
         """
         self._retry_count = retry_count
 
@@ -339,7 +370,7 @@ class BackendApiBase:
         编号
 
         :param id: The id of this BackendApiBase.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -361,7 +392,7 @@ class BackendApiBase:
         后端状态   - 1： 有效
 
         :param status: The status of this BackendApiBase.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -383,7 +414,7 @@ class BackendApiBase:
         注册时间
 
         :param register_time: The register_time of this BackendApiBase.
-        :type: datetime
+        :type register_time: datetime
         """
         self._register_time = register_time
 
@@ -405,7 +436,7 @@ class BackendApiBase:
         修改时间
 
         :param update_time: The update_time of this BackendApiBase.
-        :type: datetime
+        :type update_time: datetime
         """
         self._update_time = update_time
 

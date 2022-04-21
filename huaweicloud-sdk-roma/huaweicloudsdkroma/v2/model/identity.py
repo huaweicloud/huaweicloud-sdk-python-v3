@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Identity:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class Identity:
     }
 
     def __init__(self, name=None, location=None, validation=None):
-        """Identity - a model defined in huaweicloud sdk"""
+        """Identity
+
+        The model defined in huaweicloud sdk
+
+        :param name: 参数名称。  支持数字，英文，下划线，中划线，点，且只能以数字或英文开头。
+        :type name: str
+        :param location: 参数位置
+        :type location: str
+        :param validation: 参数校验表达式，默认为null，不做校验
+        :type validation: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class Identity:
         参数名称。  支持数字，英文，下划线，中划线，点，且只能以数字或英文开头。
 
         :param name: The name of this Identity.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -88,7 +97,7 @@ class Identity:
         参数位置
 
         :param location: The location of this Identity.
-        :type: str
+        :type location: str
         """
         self._location = location
 
@@ -110,7 +119,7 @@ class Identity:
         参数校验表达式，默认为null，不做校验
 
         :param validation: The validation of this Identity.
-        :type: str
+        :type validation: str
         """
         self._validation = validation
 

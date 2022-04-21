@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateRepoRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateRepoRequest:
     }
 
     def __init__(self, namespace=None, body=None):
-        """CreateRepoRequest - a model defined in huaweicloud sdk"""
+        """CreateRepoRequest
+
+        The model defined in huaweicloud sdk
+
+        :param namespace: 组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
+        :type namespace: str
+        :param body: Body of the CreateRepoRequest
+        :type body: :class:`huaweicloudsdkswr.v2.CreateRepoRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateRepoRequest:
         组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
 
         :param namespace: The namespace of this CreateRepoRequest.
-        :type: str
+        :type namespace: str
         """
         self._namespace = namespace
 
@@ -72,7 +79,7 @@ class CreateRepoRequest:
 
 
         :return: The body of this CreateRepoRequest.
-        :rtype: CreateRepoRequestBody
+        :rtype: :class:`huaweicloudsdkswr.v2.CreateRepoRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CreateRepoRequest:
 
 
         :param body: The body of this CreateRepoRequest.
-        :type: CreateRepoRequestBody
+        :type body: :class:`huaweicloudsdkswr.v2.CreateRepoRequestBody`
         """
         self._body = body
 

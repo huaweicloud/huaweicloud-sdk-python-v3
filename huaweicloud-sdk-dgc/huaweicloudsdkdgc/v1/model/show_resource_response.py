@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowResourceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ShowResourceResponse(SdkResponse):
     }
 
     def __init__(self, name=None, type=None, location=None, depend_files=None, desc=None, directory=None):
-        """ShowResourceResponse - a model defined in huaweicloud sdk"""
+        """ShowResourceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param name: 
+        :type name: str
+        :param type: 
+        :type type: str
+        :param location: 资源文件所在OBS路径
+        :type location: str
+        :param depend_files: 
+        :type depend_files: list[str]
+        :param desc: 
+        :type desc: str
+        :param directory: 资源所在目录
+        :type directory: str
+        """
         
         super(ShowResourceResponse, self).__init__()
 
@@ -81,7 +96,7 @@ class ShowResourceResponse(SdkResponse):
 
 
         :param name: The name of this ShowResourceResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -101,7 +116,7 @@ class ShowResourceResponse(SdkResponse):
 
 
         :param type: The type of this ShowResourceResponse.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -123,7 +138,7 @@ class ShowResourceResponse(SdkResponse):
         资源文件所在OBS路径
 
         :param location: The location of this ShowResourceResponse.
-        :type: str
+        :type location: str
         """
         self._location = location
 
@@ -143,7 +158,7 @@ class ShowResourceResponse(SdkResponse):
 
 
         :param depend_files: The depend_files of this ShowResourceResponse.
-        :type: list[str]
+        :type depend_files: list[str]
         """
         self._depend_files = depend_files
 
@@ -163,7 +178,7 @@ class ShowResourceResponse(SdkResponse):
 
 
         :param desc: The desc of this ShowResourceResponse.
-        :type: str
+        :type desc: str
         """
         self._desc = desc
 
@@ -185,7 +200,7 @@ class ShowResourceResponse(SdkResponse):
         资源所在目录
 
         :param directory: The directory of this ShowResourceResponse.
-        :type: str
+        :type directory: str
         """
         self._directory = directory
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RoleResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class RoleResult:
     }
 
     def __init__(self, domain_id=None, flag=None, description_cn=None, catalog=None, name=None, description=None, links=None, id=None, display_name=None, type=None, policy=None, updated_time=None, created_time=None):
-        """RoleResult - a model defined in huaweicloud sdk"""
+        """RoleResult
+
+        The model defined in huaweicloud sdk
+
+        :param domain_id: 权限所属账号ID。
+        :type domain_id: str
+        :param flag: 该参数值为fine_grained时，标识此权限为系统内置的策略。
+        :type flag: str
+        :param description_cn: 权限的中文描述信息。
+        :type description_cn: str
+        :param catalog: 权限所在目录。
+        :type catalog: str
+        :param name: 权限名。携带在用户的token中，云服务根据该名称来判断用户是否有权限访问。
+        :type name: str
+        :param description: 权限描述信息。
+        :type description: str
+        :param links: 
+        :type links: :class:`huaweicloudsdkiam.v3.Links`
+        :param id: 权限ID。
+        :type id: str
+        :param display_name: 权限展示名。
+        :type display_name: str
+        :param type: 权限的显示模式。 &gt; - AX表示在domain层显示。 &gt; - XA表示在project层显示。 &gt; - AA表示在domain和project层均显示。 &gt; - XX表示在domain和project层均不显示。 &gt; - 自定义策略的显示模式只能为AX或者XA，不能在domain层和project层都显示（AA），或者在domain层和project层都不显示（XX）。
+        :type type: str
+        :param policy: 
+        :type policy: :class:`huaweicloudsdkiam.v3.RolePolicy`
+        :param updated_time: 权限更新时间。
+        :type updated_time: str
+        :param created_time: 权限创建时间。
+        :type created_time: str
+        """
         
         
 
@@ -114,7 +143,7 @@ class RoleResult:
         权限所属账号ID。
 
         :param domain_id: The domain_id of this RoleResult.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -136,7 +165,7 @@ class RoleResult:
         该参数值为fine_grained时，标识此权限为系统内置的策略。
 
         :param flag: The flag of this RoleResult.
-        :type: str
+        :type flag: str
         """
         self._flag = flag
 
@@ -158,7 +187,7 @@ class RoleResult:
         权限的中文描述信息。
 
         :param description_cn: The description_cn of this RoleResult.
-        :type: str
+        :type description_cn: str
         """
         self._description_cn = description_cn
 
@@ -180,7 +209,7 @@ class RoleResult:
         权限所在目录。
 
         :param catalog: The catalog of this RoleResult.
-        :type: str
+        :type catalog: str
         """
         self._catalog = catalog
 
@@ -202,7 +231,7 @@ class RoleResult:
         权限名。携带在用户的token中，云服务根据该名称来判断用户是否有权限访问。
 
         :param name: The name of this RoleResult.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -224,7 +253,7 @@ class RoleResult:
         权限描述信息。
 
         :param description: The description of this RoleResult.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -234,7 +263,7 @@ class RoleResult:
 
 
         :return: The links of this RoleResult.
-        :rtype: Links
+        :rtype: :class:`huaweicloudsdkiam.v3.Links`
         """
         return self._links
 
@@ -244,7 +273,7 @@ class RoleResult:
 
 
         :param links: The links of this RoleResult.
-        :type: Links
+        :type links: :class:`huaweicloudsdkiam.v3.Links`
         """
         self._links = links
 
@@ -266,7 +295,7 @@ class RoleResult:
         权限ID。
 
         :param id: The id of this RoleResult.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -288,7 +317,7 @@ class RoleResult:
         权限展示名。
 
         :param display_name: The display_name of this RoleResult.
-        :type: str
+        :type display_name: str
         """
         self._display_name = display_name
 
@@ -310,7 +339,7 @@ class RoleResult:
         权限的显示模式。 > - AX表示在domain层显示。 > - XA表示在project层显示。 > - AA表示在domain和project层均显示。 > - XX表示在domain和project层均不显示。 > - 自定义策略的显示模式只能为AX或者XA，不能在domain层和project层都显示（AA），或者在domain层和project层都不显示（XX）。
 
         :param type: The type of this RoleResult.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -320,7 +349,7 @@ class RoleResult:
 
 
         :return: The policy of this RoleResult.
-        :rtype: RolePolicy
+        :rtype: :class:`huaweicloudsdkiam.v3.RolePolicy`
         """
         return self._policy
 
@@ -330,7 +359,7 @@ class RoleResult:
 
 
         :param policy: The policy of this RoleResult.
-        :type: RolePolicy
+        :type policy: :class:`huaweicloudsdkiam.v3.RolePolicy`
         """
         self._policy = policy
 
@@ -352,7 +381,7 @@ class RoleResult:
         权限更新时间。
 
         :param updated_time: The updated_time of this RoleResult.
-        :type: str
+        :type updated_time: str
         """
         self._updated_time = updated_time
 
@@ -374,7 +403,7 @@ class RoleResult:
         权限创建时间。
 
         :param created_time: The created_time of this RoleResult.
-        :type: str
+        :type created_time: str
         """
         self._created_time = created_time
 

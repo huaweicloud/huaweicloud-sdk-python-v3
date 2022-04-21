@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListProjectsV4ResponseBodyProjects:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ListProjectsV4ResponseBodyProjects:
     }
 
     def __init__(self, project_num_id=None, project_id=None, project_name=None, description=None, created_time=None, updated_time=None, project_type=None, creator=None):
-        """ListProjectsV4ResponseBodyProjects - a model defined in huaweicloud sdk"""
+        """ListProjectsV4ResponseBodyProjects
+
+        The model defined in huaweicloud sdk
+
+        :param project_num_id: 项目numId
+        :type project_num_id: int
+        :param project_id: 项目uuid
+        :type project_id: str
+        :param project_name: 项目名称
+        :type project_name: str
+        :param description: 项目描述
+        :type description: str
+        :param created_time: 项目创建时间
+        :type created_time: int
+        :param updated_time: 项目更新时间
+        :type updated_time: int
+        :param project_type: 项目类型
+        :type project_type: str
+        :param creator: 
+        :type creator: :class:`huaweicloudsdkprojectman.v4.ListProjectsV4ResponseBodyCreator`
+        """
         
         
 
@@ -93,7 +112,7 @@ class ListProjectsV4ResponseBodyProjects:
         项目numId
 
         :param project_num_id: The project_num_id of this ListProjectsV4ResponseBodyProjects.
-        :type: int
+        :type project_num_id: int
         """
         self._project_num_id = project_num_id
 
@@ -115,7 +134,7 @@ class ListProjectsV4ResponseBodyProjects:
         项目uuid
 
         :param project_id: The project_id of this ListProjectsV4ResponseBodyProjects.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -137,7 +156,7 @@ class ListProjectsV4ResponseBodyProjects:
         项目名称
 
         :param project_name: The project_name of this ListProjectsV4ResponseBodyProjects.
-        :type: str
+        :type project_name: str
         """
         self._project_name = project_name
 
@@ -159,7 +178,7 @@ class ListProjectsV4ResponseBodyProjects:
         项目描述
 
         :param description: The description of this ListProjectsV4ResponseBodyProjects.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -181,7 +200,7 @@ class ListProjectsV4ResponseBodyProjects:
         项目创建时间
 
         :param created_time: The created_time of this ListProjectsV4ResponseBodyProjects.
-        :type: int
+        :type created_time: int
         """
         self._created_time = created_time
 
@@ -203,7 +222,7 @@ class ListProjectsV4ResponseBodyProjects:
         项目更新时间
 
         :param updated_time: The updated_time of this ListProjectsV4ResponseBodyProjects.
-        :type: int
+        :type updated_time: int
         """
         self._updated_time = updated_time
 
@@ -225,7 +244,7 @@ class ListProjectsV4ResponseBodyProjects:
         项目类型
 
         :param project_type: The project_type of this ListProjectsV4ResponseBodyProjects.
-        :type: str
+        :type project_type: str
         """
         self._project_type = project_type
 
@@ -235,7 +254,7 @@ class ListProjectsV4ResponseBodyProjects:
 
 
         :return: The creator of this ListProjectsV4ResponseBodyProjects.
-        :rtype: ListProjectsV4ResponseBodyCreator
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ListProjectsV4ResponseBodyCreator`
         """
         return self._creator
 
@@ -245,7 +264,7 @@ class ListProjectsV4ResponseBodyProjects:
 
 
         :param creator: The creator of this ListProjectsV4ResponseBodyProjects.
-        :type: ListProjectsV4ResponseBodyCreator
+        :type creator: :class:`huaweicloudsdkprojectman.v4.ListProjectsV4ResponseBodyCreator`
         """
         self._creator = creator
 

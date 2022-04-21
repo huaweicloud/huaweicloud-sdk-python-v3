@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResetPasswordReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ResetPasswordReq:
     }
 
     def __init__(self, new_password=None):
-        """ResetPasswordReq - a model defined in huaweicloud sdk"""
+        """ResetPasswordReq
+
+        The model defined in huaweicloud sdk
+
+        :param new_password: 8-32个字符。 至少包含以下字符中的3种： - 大写字母 - 小写字母 - 数字 - 特殊字符&#x60;~!@#$%^&amp;*()-_&#x3D;+\\\\|[{}];:\\&#39;\\\&quot;,&lt;.&gt;/?  和空格，并且不能以-开头。
+        :type new_password: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class ResetPasswordReq:
         8-32个字符。 至少包含以下字符中的3种： - 大写字母 - 小写字母 - 数字 - 特殊字符`~!@#$%^&*()-_=+\\\\|[{}];:\\'\\\",<.>/?  和空格，并且不能以-开头。
 
         :param new_password: The new_password of this ResetPasswordReq.
-        :type: str
+        :type new_password: str
         """
         self._new_password = new_password
 

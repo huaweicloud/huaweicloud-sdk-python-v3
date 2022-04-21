@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowInformationAboutDatabaseProxyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowInformationAboutDatabaseProxyResponse(SdkResponse):
     }
 
     def __init__(self, proxy=None, master_instance=None, readonly_instances=None):
-        """ShowInformationAboutDatabaseProxyResponse - a model defined in huaweicloud sdk"""
+        """ShowInformationAboutDatabaseProxyResponse
+
+        The model defined in huaweicloud sdk
+
+        :param proxy: 
+        :type proxy: :class:`huaweicloudsdkrds.v3.Proxy`
+        :param master_instance: 
+        :type master_instance: :class:`huaweicloudsdkrds.v3.MasterInstance`
+        :param readonly_instances: 只读实例信息。
+        :type readonly_instances: list[:class:`huaweicloudsdkrds.v3.ReadonlyInstances`]
+        """
         
         super(ShowInformationAboutDatabaseProxyResponse, self).__init__()
 
@@ -56,7 +65,7 @@ class ShowInformationAboutDatabaseProxyResponse(SdkResponse):
 
 
         :return: The proxy of this ShowInformationAboutDatabaseProxyResponse.
-        :rtype: Proxy
+        :rtype: :class:`huaweicloudsdkrds.v3.Proxy`
         """
         return self._proxy
 
@@ -66,7 +75,7 @@ class ShowInformationAboutDatabaseProxyResponse(SdkResponse):
 
 
         :param proxy: The proxy of this ShowInformationAboutDatabaseProxyResponse.
-        :type: Proxy
+        :type proxy: :class:`huaweicloudsdkrds.v3.Proxy`
         """
         self._proxy = proxy
 
@@ -76,7 +85,7 @@ class ShowInformationAboutDatabaseProxyResponse(SdkResponse):
 
 
         :return: The master_instance of this ShowInformationAboutDatabaseProxyResponse.
-        :rtype: MasterInstance
+        :rtype: :class:`huaweicloudsdkrds.v3.MasterInstance`
         """
         return self._master_instance
 
@@ -86,7 +95,7 @@ class ShowInformationAboutDatabaseProxyResponse(SdkResponse):
 
 
         :param master_instance: The master_instance of this ShowInformationAboutDatabaseProxyResponse.
-        :type: MasterInstance
+        :type master_instance: :class:`huaweicloudsdkrds.v3.MasterInstance`
         """
         self._master_instance = master_instance
 
@@ -97,7 +106,7 @@ class ShowInformationAboutDatabaseProxyResponse(SdkResponse):
         只读实例信息。
 
         :return: The readonly_instances of this ShowInformationAboutDatabaseProxyResponse.
-        :rtype: list[ReadonlyInstances]
+        :rtype: list[:class:`huaweicloudsdkrds.v3.ReadonlyInstances`]
         """
         return self._readonly_instances
 
@@ -108,7 +117,7 @@ class ShowInformationAboutDatabaseProxyResponse(SdkResponse):
         只读实例信息。
 
         :param readonly_instances: The readonly_instances of this ShowInformationAboutDatabaseProxyResponse.
-        :type: list[ReadonlyInstances]
+        :type readonly_instances: list[:class:`huaweicloudsdkrds.v3.ReadonlyInstances`]
         """
         self._readonly_instances = readonly_instances
 

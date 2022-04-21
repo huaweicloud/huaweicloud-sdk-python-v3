@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowTemplateFileRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowTemplateFileRequest:
     }
 
     def __init__(self, x_language=None, template_id=None, file_path=None, type=None):
-        """ShowTemplateFileRequest - a model defined in huaweicloud sdk"""
+        """ShowTemplateFileRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言类型，缺省值为“zh-cn”。  枚举值： - zh-cn：中文 - en-us：英文 
+        :type x_language: str
+        :param template_id: 模板ID，通过查询模板列表接口可获取相应的模板ID。
+        :type template_id: str
+        :param file_path: 文件相对路径，基于当前根目录的相对文件路径，例如获取HELP.md文件内容，则文件相对路径为“template-resources/file/HELP.md”。
+        :type file_path: str
+        :param type: 读取文件来源，缺省值为“source-pachage”。  枚举值： - source-package: 源文件压缩包 - introduction: 说明文件 
+        :type type: str
+        """
         
         
 
@@ -71,7 +82,7 @@ class ShowTemplateFileRequest:
         语言类型，缺省值为“zh-cn”。  枚举值： - zh-cn：中文 - en-us：英文 
 
         :param x_language: The x_language of this ShowTemplateFileRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -93,7 +104,7 @@ class ShowTemplateFileRequest:
         模板ID，通过查询模板列表接口可获取相应的模板ID。
 
         :param template_id: The template_id of this ShowTemplateFileRequest.
-        :type: str
+        :type template_id: str
         """
         self._template_id = template_id
 
@@ -115,7 +126,7 @@ class ShowTemplateFileRequest:
         文件相对路径，基于当前根目录的相对文件路径，例如获取HELP.md文件内容，则文件相对路径为“template-resources/file/HELP.md”。
 
         :param file_path: The file_path of this ShowTemplateFileRequest.
-        :type: str
+        :type file_path: str
         """
         self._file_path = file_path
 
@@ -137,7 +148,7 @@ class ShowTemplateFileRequest:
         读取文件来源，缺省值为“source-pachage”。  枚举值： - source-package: 源文件压缩包 - introduction: 说明文件 
 
         :param type: The type of this ShowTemplateFileRequest.
-        :type: str
+        :type type: str
         """
         self._type = type
 

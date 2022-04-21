@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SetQuota:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class SetQuota:
     }
 
     def __init__(self, enterprise_project_id=None, instance_quota=None, vcpus_quota=None, ram_quota=None):
-        """SetQuota - a model defined in huaweicloud sdk"""
+        """SetQuota
+
+        The model defined in huaweicloud sdk
+
+        :param enterprise_project_id: 企业项目ID。
+        :type enterprise_project_id: str
+        :param instance_quota: 实例个数配额。取值范围0~1000。(如果已经存在实例，应该大于已经存在的实例个数)
+        :type instance_quota: int
+        :param vcpus_quota: CPU核数配额。取值范围0~3600000。(如果已经存在实例，应该大于已经占用的cpu个数)
+        :type vcpus_quota: int
+        :param ram_quota: 内存使用配额，单位为GB。取值范围0~19200000。(如果已经存在实例，应该大于已经占用的内存数)
+        :type ram_quota: int
+        """
         
         
 
@@ -69,7 +80,7 @@ class SetQuota:
         企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this SetQuota.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -91,7 +102,7 @@ class SetQuota:
         实例个数配额。取值范围0~1000。(如果已经存在实例，应该大于已经存在的实例个数)
 
         :param instance_quota: The instance_quota of this SetQuota.
-        :type: int
+        :type instance_quota: int
         """
         self._instance_quota = instance_quota
 
@@ -113,7 +124,7 @@ class SetQuota:
         CPU核数配额。取值范围0~3600000。(如果已经存在实例，应该大于已经占用的cpu个数)
 
         :param vcpus_quota: The vcpus_quota of this SetQuota.
-        :type: int
+        :type vcpus_quota: int
         """
         self._vcpus_quota = vcpus_quota
 
@@ -135,7 +146,7 @@ class SetQuota:
         内存使用配额，单位为GB。取值范围0~19200000。(如果已经存在实例，应该大于已经占用的内存数)
 
         :param ram_quota: The ram_quota of this SetQuota.
-        :type: int
+        :type ram_quota: int
         """
         self._ram_quota = ram_quota
 

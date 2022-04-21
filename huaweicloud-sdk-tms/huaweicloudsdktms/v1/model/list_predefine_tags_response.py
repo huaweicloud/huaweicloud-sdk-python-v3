@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPredefineTagsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListPredefineTagsResponse(SdkResponse):
     }
 
     def __init__(self, marker=None, total_count=None, tags=None):
-        """ListPredefineTagsResponse - a model defined in huaweicloud sdk"""
+        """ListPredefineTagsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param marker: 分页位置标识（索引）。
+        :type marker: str
+        :param total_count: 查询到的标签总数
+        :type total_count: int
+        :param tags: 查询到的标签列表
+        :type tags: list[:class:`huaweicloudsdktms.v1.PredefineTag`]
+        """
         
         super(ListPredefineTagsResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListPredefineTagsResponse(SdkResponse):
         分页位置标识（索引）。
 
         :param marker: The marker of this ListPredefineTagsResponse.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -90,7 +99,7 @@ class ListPredefineTagsResponse(SdkResponse):
         查询到的标签总数
 
         :param total_count: The total_count of this ListPredefineTagsResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 
@@ -101,7 +110,7 @@ class ListPredefineTagsResponse(SdkResponse):
         查询到的标签列表
 
         :return: The tags of this ListPredefineTagsResponse.
-        :rtype: list[PredefineTag]
+        :rtype: list[:class:`huaweicloudsdktms.v1.PredefineTag`]
         """
         return self._tags
 
@@ -112,7 +121,7 @@ class ListPredefineTagsResponse(SdkResponse):
         查询到的标签列表
 
         :param tags: The tags of this ListPredefineTagsResponse.
-        :type: list[PredefineTag]
+        :type tags: list[:class:`huaweicloudsdktms.v1.PredefineTag`]
         """
         self._tags = tags
 

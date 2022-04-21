@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MysqlExtendInstanceVolumeRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class MysqlExtendInstanceVolumeRequest:
     }
 
     def __init__(self, size=None, is_auto_pay=None):
-        """MysqlExtendInstanceVolumeRequest - a model defined in huaweicloud sdk"""
+        """MysqlExtendInstanceVolumeRequest
+
+        The model defined in huaweicloud sdk
+
+        :param size: 扩容后的容量，每次扩容最小容量为10GB，实例所选容量大小必须为10的整数倍
+        :type size: int
+        :param is_auto_pay: 表示是否自动从客户的账户中支付。  - true，为自动支付，默认该方式。 - false，为手动支付。
+        :type is_auto_pay: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class MysqlExtendInstanceVolumeRequest:
         扩容后的容量，每次扩容最小容量为10GB，实例所选容量大小必须为10的整数倍
 
         :param size: The size of this MysqlExtendInstanceVolumeRequest.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -84,7 +91,7 @@ class MysqlExtendInstanceVolumeRequest:
         表示是否自动从客户的账户中支付。  - true，为自动支付，默认该方式。 - false，为手动支付。
 
         :param is_auto_pay: The is_auto_pay of this MysqlExtendInstanceVolumeRequest.
-        :type: str
+        :type is_auto_pay: str
         """
         self._is_auto_pay = is_auto_pay
 

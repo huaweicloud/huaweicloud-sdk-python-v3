@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAppsV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListAppsV2Response(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, apps=None):
-        """ListAppsV2Response - a model defined in huaweicloud sdk"""
+        """ListAppsV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param size: 本次返回的列表长度
+        :type size: int
+        :param total: 满足条件的记录数
+        :type total: int
+        :param apps: APP列表
+        :type apps: list[:class:`huaweicloudsdkapig.v2.AppInfoWithBindNum`]
+        """
         
         super(ListAppsV2Response, self).__init__()
 
@@ -66,7 +75,7 @@ class ListAppsV2Response(SdkResponse):
         本次返回的列表长度
 
         :param size: The size of this ListAppsV2Response.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -88,7 +97,7 @@ class ListAppsV2Response(SdkResponse):
         满足条件的记录数
 
         :param total: The total of this ListAppsV2Response.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -99,7 +108,7 @@ class ListAppsV2Response(SdkResponse):
         APP列表
 
         :return: The apps of this ListAppsV2Response.
-        :rtype: list[AppInfoWithBindNum]
+        :rtype: list[:class:`huaweicloudsdkapig.v2.AppInfoWithBindNum`]
         """
         return self._apps
 
@@ -110,7 +119,7 @@ class ListAppsV2Response(SdkResponse):
         APP列表
 
         :param apps: The apps of this ListAppsV2Response.
-        :type: list[AppInfoWithBindNum]
+        :type apps: list[:class:`huaweicloudsdkapig.v2.AppInfoWithBindNum`]
         """
         self._apps = apps
 

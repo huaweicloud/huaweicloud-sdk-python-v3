@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryIndirectPartnersReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class QueryIndirectPartnersReq:
     }
 
     def __init__(self, account_name=None, associated_on_begin=None, associated_on_end=None, offset=None, limit=None, indirect_partner_id=None):
-        """QueryIndirectPartnersReq - a model defined in huaweicloud sdk"""
+        """QueryIndirectPartnersReq
+
+        The model defined in huaweicloud sdk
+
+        :param account_name: 精英服务商伙伴的账号名。
+        :type account_name: str
+        :param associated_on_begin: 精英服务商关联华为云伙伴能力中心的开始时间。 UTC时间（包括时区），比如2016-03-28T00:00:00Z
+        :type associated_on_begin: str
+        :param associated_on_end: 精英服务商关联华为云伙伴能力中心的结束时间。 UTC时间（包括时区），比如2016-03-28T00:00:00Z
+        :type associated_on_end: str
+        :param offset: 偏移量，从0开始。默认值为0。  说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset &#x3D; 1，则返回满足条件的第二个数据至最后一个数据。 例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
+        :type offset: int
+        :param limit: 每次查询的数量限制。默认值为10。
+        :type limit: int
+        :param indirect_partner_id: 精英服务商ID。获取方法请参见查询精英服务商列表。
+        :type indirect_partner_id: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class QueryIndirectPartnersReq:
         精英服务商伙伴的账号名。
 
         :param account_name: The account_name of this QueryIndirectPartnersReq.
-        :type: str
+        :type account_name: str
         """
         self._account_name = account_name
 
@@ -105,7 +120,7 @@ class QueryIndirectPartnersReq:
         精英服务商关联华为云伙伴能力中心的开始时间。 UTC时间（包括时区），比如2016-03-28T00:00:00Z
 
         :param associated_on_begin: The associated_on_begin of this QueryIndirectPartnersReq.
-        :type: str
+        :type associated_on_begin: str
         """
         self._associated_on_begin = associated_on_begin
 
@@ -127,7 +142,7 @@ class QueryIndirectPartnersReq:
         精英服务商关联华为云伙伴能力中心的结束时间。 UTC时间（包括时区），比如2016-03-28T00:00:00Z
 
         :param associated_on_end: The associated_on_end of this QueryIndirectPartnersReq.
-        :type: str
+        :type associated_on_end: str
         """
         self._associated_on_end = associated_on_end
 
@@ -149,7 +164,7 @@ class QueryIndirectPartnersReq:
         偏移量，从0开始。默认值为0。  说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。 例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
         :param offset: The offset of this QueryIndirectPartnersReq.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -171,7 +186,7 @@ class QueryIndirectPartnersReq:
         每次查询的数量限制。默认值为10。
 
         :param limit: The limit of this QueryIndirectPartnersReq.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -193,7 +208,7 @@ class QueryIndirectPartnersReq:
         精英服务商ID。获取方法请参见查询精英服务商列表。
 
         :param indirect_partner_id: The indirect_partner_id of this QueryIndirectPartnersReq.
-        :type: str
+        :type indirect_partner_id: str
         """
         self._indirect_partner_id = indirect_partner_id
 

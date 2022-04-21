@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddOrUpdateServiceDiscoveryRulesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class AddOrUpdateServiceDiscoveryRulesRequest:
     }
 
     def __init__(self, body=None):
-        """AddOrUpdateServiceDiscoveryRulesRequest - a model defined in huaweicloud sdk"""
+        """AddOrUpdateServiceDiscoveryRulesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the AddOrUpdateServiceDiscoveryRulesRequest
+        :type body: :class:`huaweicloudsdkaom.v2.AppRulesBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class AddOrUpdateServiceDiscoveryRulesRequest:
 
 
         :return: The body of this AddOrUpdateServiceDiscoveryRulesRequest.
-        :rtype: AppRulesBody
+        :rtype: :class:`huaweicloudsdkaom.v2.AppRulesBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class AddOrUpdateServiceDiscoveryRulesRequest:
 
 
         :param body: The body of this AddOrUpdateServiceDiscoveryRulesRequest.
-        :type: AppRulesBody
+        :type body: :class:`huaweicloudsdkaom.v2.AppRulesBody`
         """
         self._body = body
 

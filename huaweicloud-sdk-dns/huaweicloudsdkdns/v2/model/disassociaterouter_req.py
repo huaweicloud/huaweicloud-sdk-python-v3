@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DisassociaterouterReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DisassociaterouterReq:
     }
 
     def __init__(self, router=None):
-        """DisassociaterouterReq - a model defined in huaweicloud sdk"""
+        """DisassociaterouterReq
+
+        The model defined in huaweicloud sdk
+
+        :param router: 
+        :type router: :class:`huaweicloudsdkdns.v2.Router`
+        """
         
         
 
@@ -45,7 +50,7 @@ class DisassociaterouterReq:
 
 
         :return: The router of this DisassociaterouterReq.
-        :rtype: Router
+        :rtype: :class:`huaweicloudsdkdns.v2.Router`
         """
         return self._router
 
@@ -55,7 +60,7 @@ class DisassociaterouterReq:
 
 
         :param router: The router of this DisassociaterouterReq.
-        :type: Router
+        :type router: :class:`huaweicloudsdkdns.v2.Router`
         """
         self._router = router
 

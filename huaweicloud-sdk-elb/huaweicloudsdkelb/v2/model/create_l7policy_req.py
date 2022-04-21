@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateL7policyReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class CreateL7policyReq:
     }
 
     def __init__(self, name=None, action=None, tenant_id=None, admin_state_up=None, description=None, listener_id=None, redirect_pool_id=None, redirect_listener_id=None, redirect_url=None, position=None, rules=None):
-        """CreateL7policyReq - a model defined in huaweicloud sdk"""
+        """CreateL7policyReq
+
+        The model defined in huaweicloud sdk
+
+        :param name: 转发策略名称
+        :type name: str
+        :param action: 转发策略的转发动作；取值：REDIRECT_TO_POOL：转发到后端云服务器组；REDIRECT_TO_LISTENER：重定向到监听器
+        :type action: str
+        :param tenant_id: 转发策略所在的项目ID。
+        :type tenant_id: str
+        :param admin_state_up: 转发策略的管理状态；该字段为预留字段，暂未启用。默认为true。
+        :type admin_state_up: bool
+        :param description: 转发策略额描述信息
+        :type description: str
+        :param listener_id: 转发策略对应的监听器ID。当action为REDIRECT_TO_POOL时，只支持创建在PROTOCOL为HTTP或TERMINATED_HTTPS的listener上。 当action为REDIRECT_TO_LISTENER时，只支持创建在PROTOCOL为HTTP的listener上。
+        :type listener_id: str
+        :param redirect_pool_id: 转发到pool的ID。转发到pool的ID。当action为REDIRECT_TO_POOL时生效。当action为REDIRECT_TO_POOL时必选
+        :type redirect_pool_id: str
+        :param redirect_listener_id: 转发到的listener的ID，当action为REDIRECT_TO_LISTENER时生效。当action为REDIRECT_TO_LISTENER时必选
+        :type redirect_listener_id: str
+        :param redirect_url: 转发到的url。该字段未启用。
+        :type redirect_url: str
+        :param position: 转发策略的优先级，从1递增，最高100。该字段为预留字段，暂未启用。
+        :type position: int
+        :param rules: 指定L7rule的参数，可以在创建L7policy的同时创建L7rule
+        :type rules: list[:class:`huaweicloudsdkelb.v2.CreateL7ruleReqInPolicy`]
+        """
         
         
 
@@ -106,7 +131,7 @@ class CreateL7policyReq:
         转发策略名称
 
         :param name: The name of this CreateL7policyReq.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -128,7 +153,7 @@ class CreateL7policyReq:
         转发策略的转发动作；取值：REDIRECT_TO_POOL：转发到后端云服务器组；REDIRECT_TO_LISTENER：重定向到监听器
 
         :param action: The action of this CreateL7policyReq.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -150,7 +175,7 @@ class CreateL7policyReq:
         转发策略所在的项目ID。
 
         :param tenant_id: The tenant_id of this CreateL7policyReq.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 
@@ -172,7 +197,7 @@ class CreateL7policyReq:
         转发策略的管理状态；该字段为预留字段，暂未启用。默认为true。
 
         :param admin_state_up: The admin_state_up of this CreateL7policyReq.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 
@@ -194,7 +219,7 @@ class CreateL7policyReq:
         转发策略额描述信息
 
         :param description: The description of this CreateL7policyReq.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -216,7 +241,7 @@ class CreateL7policyReq:
         转发策略对应的监听器ID。当action为REDIRECT_TO_POOL时，只支持创建在PROTOCOL为HTTP或TERMINATED_HTTPS的listener上。 当action为REDIRECT_TO_LISTENER时，只支持创建在PROTOCOL为HTTP的listener上。
 
         :param listener_id: The listener_id of this CreateL7policyReq.
-        :type: str
+        :type listener_id: str
         """
         self._listener_id = listener_id
 
@@ -238,7 +263,7 @@ class CreateL7policyReq:
         转发到pool的ID。转发到pool的ID。当action为REDIRECT_TO_POOL时生效。当action为REDIRECT_TO_POOL时必选
 
         :param redirect_pool_id: The redirect_pool_id of this CreateL7policyReq.
-        :type: str
+        :type redirect_pool_id: str
         """
         self._redirect_pool_id = redirect_pool_id
 
@@ -260,7 +285,7 @@ class CreateL7policyReq:
         转发到的listener的ID，当action为REDIRECT_TO_LISTENER时生效。当action为REDIRECT_TO_LISTENER时必选
 
         :param redirect_listener_id: The redirect_listener_id of this CreateL7policyReq.
-        :type: str
+        :type redirect_listener_id: str
         """
         self._redirect_listener_id = redirect_listener_id
 
@@ -282,7 +307,7 @@ class CreateL7policyReq:
         转发到的url。该字段未启用。
 
         :param redirect_url: The redirect_url of this CreateL7policyReq.
-        :type: str
+        :type redirect_url: str
         """
         self._redirect_url = redirect_url
 
@@ -304,7 +329,7 @@ class CreateL7policyReq:
         转发策略的优先级，从1递增，最高100。该字段为预留字段，暂未启用。
 
         :param position: The position of this CreateL7policyReq.
-        :type: int
+        :type position: int
         """
         self._position = position
 
@@ -315,7 +340,7 @@ class CreateL7policyReq:
         指定L7rule的参数，可以在创建L7policy的同时创建L7rule
 
         :return: The rules of this CreateL7policyReq.
-        :rtype: list[CreateL7ruleReqInPolicy]
+        :rtype: list[:class:`huaweicloudsdkelb.v2.CreateL7ruleReqInPolicy`]
         """
         return self._rules
 
@@ -326,7 +351,7 @@ class CreateL7policyReq:
         指定L7rule的参数，可以在创建L7policy的同时创建L7rule
 
         :param rules: The rules of this CreateL7policyReq.
-        :type: list[CreateL7ruleReqInPolicy]
+        :type rules: list[:class:`huaweicloudsdkelb.v2.CreateL7ruleReqInPolicy`]
         """
         self._rules = rules
 

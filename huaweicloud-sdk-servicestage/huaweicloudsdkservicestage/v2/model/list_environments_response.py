@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListEnvironmentsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListEnvironmentsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, environments=None):
-        """ListEnvironmentsResponse - a model defined in huaweicloud sdk"""
+        """ListEnvironmentsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 环境总数。
+        :type count: int
+        :param environments: 环境列表。
+        :type environments: list[:class:`huaweicloudsdkservicestage.v2.Environment`]
+        """
         
         super(ListEnvironmentsResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListEnvironmentsResponse(SdkResponse):
         环境总数。
 
         :param count: The count of this ListEnvironmentsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -74,7 +81,7 @@ class ListEnvironmentsResponse(SdkResponse):
         环境列表。
 
         :return: The environments of this ListEnvironmentsResponse.
-        :rtype: list[Environment]
+        :rtype: list[:class:`huaweicloudsdkservicestage.v2.Environment`]
         """
         return self._environments
 
@@ -85,7 +92,7 @@ class ListEnvironmentsResponse(SdkResponse):
         环境列表。
 
         :param environments: The environments of this ListEnvironmentsResponse.
-        :type: list[Environment]
+        :type environments: list[:class:`huaweicloudsdkservicestage.v2.Environment`]
         """
         self._environments = environments
 

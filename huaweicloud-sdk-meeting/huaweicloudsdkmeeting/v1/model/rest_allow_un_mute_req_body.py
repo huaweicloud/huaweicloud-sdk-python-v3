@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestAllowUnMuteReqBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RestAllowUnMuteReqBody:
     }
 
     def __init__(self, allow_unmute_by_oneself=None):
-        """RestAllowUnMuteReqBody - a model defined in huaweicloud sdk"""
+        """RestAllowUnMuteReqBody
+
+        The model defined in huaweicloud sdk
+
+        :param allow_unmute_by_oneself: 是否允许自己解除静音（仅静音时有效），默认为允许。 - 0: 不允许。 - 1: 允许。
+        :type allow_unmute_by_oneself: int
+        """
         
         
 
@@ -57,7 +62,7 @@ class RestAllowUnMuteReqBody:
         是否允许自己解除静音（仅静音时有效），默认为允许。 - 0: 不允许。 - 1: 允许。
 
         :param allow_unmute_by_oneself: The allow_unmute_by_oneself of this RestAllowUnMuteReqBody.
-        :type: int
+        :type allow_unmute_by_oneself: int
         """
         self._allow_unmute_by_oneself = allow_unmute_by_oneself
 

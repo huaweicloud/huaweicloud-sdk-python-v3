@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowSecretResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowSecretResponse(SdkResponse):
     }
 
     def __init__(self, secret=None):
-        """ShowSecretResponse - a model defined in huaweicloud sdk"""
+        """ShowSecretResponse
+
+        The model defined in huaweicloud sdk
+
+        :param secret: 
+        :type secret: :class:`huaweicloudsdkief.v1.SecretDetailResp`
+        """
         
         super(ShowSecretResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class ShowSecretResponse(SdkResponse):
 
 
         :return: The secret of this ShowSecretResponse.
-        :rtype: SecretDetailResp
+        :rtype: :class:`huaweicloudsdkief.v1.SecretDetailResp`
         """
         return self._secret
 
@@ -56,7 +61,7 @@ class ShowSecretResponse(SdkResponse):
 
 
         :param secret: The secret of this ShowSecretResponse.
-        :type: SecretDetailResp
+        :type secret: :class:`huaweicloudsdkief.v1.SecretDetailResp`
         """
         self._secret = secret
 

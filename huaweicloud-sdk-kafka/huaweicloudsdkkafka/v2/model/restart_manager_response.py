@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestartManagerResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RestartManagerResponse(SdkResponse):
     }
 
     def __init__(self, result=None, instance_id=None):
-        """RestartManagerResponse - a model defined in huaweicloud sdk"""
+        """RestartManagerResponse
+
+        The model defined in huaweicloud sdk
+
+        :param result: 执行结果。
+        :type result: str
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        """
         
         super(RestartManagerResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class RestartManagerResponse(SdkResponse):
         执行结果。
 
         :param result: The result of this RestartManagerResponse.
-        :type: str
+        :type result: str
         """
         self._result = result
 
@@ -85,7 +92,7 @@ class RestartManagerResponse(SdkResponse):
         实例ID。
 
         :param instance_id: The instance_id of this RestartManagerResponse.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 

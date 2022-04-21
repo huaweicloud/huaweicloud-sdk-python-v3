@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDomainItemDetailsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ShowDomainItemDetailsRequest:
     }
 
     def __init__(self, enterprise_project_id=None, start_time=None, end_time=None, domain_name=None, service_area=None, stat_type=None):
-        """ShowDomainItemDetailsRequest - a model defined in huaweicloud sdk"""
+        """ShowDomainItemDetailsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param enterprise_project_id: 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子账号调用接口时，该参数必传。
+        :type enterprise_project_id: str
+        :param start_time: 查询起始时间戳，必须设为5分钟整时刻点
+        :type start_time: int
+        :param end_time: 查询结束时间戳，必须设为5分钟整时刻点
+        :type end_time: int
+        :param domain_name: 域名列表，多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com，all表示查询名下全部域名
+        :type domain_name: str
+        :param service_area: mainland_china(中国大陆)，outside_mainland_china(中国大陆境外)，默认为mainland_china。
+        :type service_area: str
+        :param stat_type: 网络资源消耗： - bw（带宽） - flux（流量） - bs_bw(回源带宽) - bs_flux（回源流量）  访问情况： - req_num（请求总数） - hit_num（请求命中次数） - bs_num(回源总数) - bs_fail_num(回源失败数) - hit_flux（命中流量）  HTTP状态码（组合指标）： - http_code_2xx(状态码汇总2xx) - http_code_3xx(状态码汇总3xx) - http_code_4xx(状态码汇总4xx) - http_code_5xx(状态码汇总5xx) - bs_http_code_2xx（回源状态码汇总2xx） - bs_http_code_3xx（回源状态码汇总3xx） - bs_http_code_4xx（回源状态码汇总4xx） - bs_http_code_5xx（回源状态码汇总5xx） - status_code_2xx（状态码详情2xx） - status_code_3xx（状态码详情3xx） - status_code_4xx（状态码详情4xx） - status_code_5xx（状态码详情5xx） - bs_status_code_2xx（回源状态码详情2xx） - bs_status_code_3xx（回源状态码详情3xx） - bs_status_code_4xx（回源状态码详情4xx） - bs_status_code_5xx（回源状态码详情5xx） - status_code和bs_status_code不能一起查询，否则数据会不准确，status_code不支持指定服务区域
+        :type stat_type: str
+        """
         
         
 
@@ -79,7 +94,7 @@ class ShowDomainItemDetailsRequest:
         当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子账号调用接口时，该参数必传。
 
         :param enterprise_project_id: The enterprise_project_id of this ShowDomainItemDetailsRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -101,7 +116,7 @@ class ShowDomainItemDetailsRequest:
         查询起始时间戳，必须设为5分钟整时刻点
 
         :param start_time: The start_time of this ShowDomainItemDetailsRequest.
-        :type: int
+        :type start_time: int
         """
         self._start_time = start_time
 
@@ -123,7 +138,7 @@ class ShowDomainItemDetailsRequest:
         查询结束时间戳，必须设为5分钟整时刻点
 
         :param end_time: The end_time of this ShowDomainItemDetailsRequest.
-        :type: int
+        :type end_time: int
         """
         self._end_time = end_time
 
@@ -145,7 +160,7 @@ class ShowDomainItemDetailsRequest:
         域名列表，多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com，all表示查询名下全部域名
 
         :param domain_name: The domain_name of this ShowDomainItemDetailsRequest.
-        :type: str
+        :type domain_name: str
         """
         self._domain_name = domain_name
 
@@ -167,7 +182,7 @@ class ShowDomainItemDetailsRequest:
         mainland_china(中国大陆)，outside_mainland_china(中国大陆境外)，默认为mainland_china。
 
         :param service_area: The service_area of this ShowDomainItemDetailsRequest.
-        :type: str
+        :type service_area: str
         """
         self._service_area = service_area
 
@@ -189,7 +204,7 @@ class ShowDomainItemDetailsRequest:
         网络资源消耗： - bw（带宽） - flux（流量） - bs_bw(回源带宽) - bs_flux（回源流量）  访问情况： - req_num（请求总数） - hit_num（请求命中次数） - bs_num(回源总数) - bs_fail_num(回源失败数) - hit_flux（命中流量）  HTTP状态码（组合指标）： - http_code_2xx(状态码汇总2xx) - http_code_3xx(状态码汇总3xx) - http_code_4xx(状态码汇总4xx) - http_code_5xx(状态码汇总5xx) - bs_http_code_2xx（回源状态码汇总2xx） - bs_http_code_3xx（回源状态码汇总3xx） - bs_http_code_4xx（回源状态码汇总4xx） - bs_http_code_5xx（回源状态码汇总5xx） - status_code_2xx（状态码详情2xx） - status_code_3xx（状态码详情3xx） - status_code_4xx（状态码详情4xx） - status_code_5xx（状态码详情5xx） - bs_status_code_2xx（回源状态码详情2xx） - bs_status_code_3xx（回源状态码详情3xx） - bs_status_code_4xx（回源状态码详情4xx） - bs_status_code_5xx（回源状态码详情5xx） - status_code和bs_status_code不能一起查询，否则数据会不准确，status_code不支持指定服务区域
 
         :param stat_type: The stat_type of this ShowDomainItemDetailsRequest.
-        :type: str
+        :type stat_type: str
         """
         self._stat_type = stat_type
 

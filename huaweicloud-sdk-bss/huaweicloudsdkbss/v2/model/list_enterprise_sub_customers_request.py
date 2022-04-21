@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListEnterpriseSubCustomersRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListEnterpriseSubCustomersRequest:
     }
 
     def __init__(self, sub_customer_account_name=None, sub_customer_display_name=None, fuzzy_query=None, offset=None, limit=None, org_id=None):
-        """ListEnterpriseSubCustomersRequest - a model defined in huaweicloud sdk"""
+        """ListEnterpriseSubCustomersRequest
+
+        The model defined in huaweicloud sdk
+
+        :param sub_customer_account_name: 企业子账号的账号名。根据fuzzy_query取值决定是否按模糊查询。
+        :type sub_customer_account_name: str
+        :param sub_customer_display_name: 企业子账号的显示名称。不限制特殊字符。根据fuzzy_query取值决定是否按模糊查询。
+        :type sub_customer_display_name: str
+        :param fuzzy_query: 企业子账号的显示名称、用户名是否按模糊查询。0：不按模糊查询1：按模糊查询默认值为0。
+        :type fuzzy_query: int
+        :param offset: 偏移量，从0开始，默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset &#x3D; 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
+        :type offset: int
+        :param limit: 每次查询记录数，默认值为10。
+        :type limit: int
+        :param org_id: 子账号归属的组织单元ID。
+        :type org_id: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class ListEnterpriseSubCustomersRequest:
         企业子账号的账号名。根据fuzzy_query取值决定是否按模糊查询。
 
         :param sub_customer_account_name: The sub_customer_account_name of this ListEnterpriseSubCustomersRequest.
-        :type: str
+        :type sub_customer_account_name: str
         """
         self._sub_customer_account_name = sub_customer_account_name
 
@@ -105,7 +120,7 @@ class ListEnterpriseSubCustomersRequest:
         企业子账号的显示名称。不限制特殊字符。根据fuzzy_query取值决定是否按模糊查询。
 
         :param sub_customer_display_name: The sub_customer_display_name of this ListEnterpriseSubCustomersRequest.
-        :type: str
+        :type sub_customer_display_name: str
         """
         self._sub_customer_display_name = sub_customer_display_name
 
@@ -127,7 +142,7 @@ class ListEnterpriseSubCustomersRequest:
         企业子账号的显示名称、用户名是否按模糊查询。0：不按模糊查询1：按模糊查询默认值为0。
 
         :param fuzzy_query: The fuzzy_query of this ListEnterpriseSubCustomersRequest.
-        :type: int
+        :type fuzzy_query: int
         """
         self._fuzzy_query = fuzzy_query
 
@@ -149,7 +164,7 @@ class ListEnterpriseSubCustomersRequest:
         偏移量，从0开始，默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
         :param offset: The offset of this ListEnterpriseSubCustomersRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -171,7 +186,7 @@ class ListEnterpriseSubCustomersRequest:
         每次查询记录数，默认值为10。
 
         :param limit: The limit of this ListEnterpriseSubCustomersRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -193,7 +208,7 @@ class ListEnterpriseSubCustomersRequest:
         子账号归属的组织单元ID。
 
         :param org_id: The org_id of this ListEnterpriseSubCustomersRequest.
-        :type: str
+        :type org_id: str
         """
         self._org_id = org_id
 

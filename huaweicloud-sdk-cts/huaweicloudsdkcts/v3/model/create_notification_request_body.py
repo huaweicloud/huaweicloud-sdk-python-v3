@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateNotificationRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class CreateNotificationRequestBody:
     }
 
     def __init__(self, notification_name=None, operation_type=None, operations=None, notify_user_list=None, topic_id=None):
-        """CreateNotificationRequestBody - a model defined in huaweicloud sdk"""
+        """CreateNotificationRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param notification_name: 标识关键操作名称。
+        :type notification_name: str
+        :param operation_type: 标识操作类型。 目前支持的操作类型有完整类型(complete)和自定义类型(customized)。 完整类型下，CTS发送通知的对象为已对接服务的所有事件，此时不用指定operations和notify_user_list字段。 自定义类型下，CTS发送通知的对象是在operations列表中指定的事件。
+        :type operation_type: str
+        :param operations: 操作事件列表。
+        :type operations: list[:class:`huaweicloudsdkcts.v3.Operations`]
+        :param notify_user_list: 通知用户列表，目前最多支持对10个用户组和50个用户发起的操作进行配置。
+        :type notify_user_list: list[:class:`huaweicloudsdkcts.v3.NotificationUsers`]
+        :param topic_id: 消息通知服务的topic_urn或者函数工作流的func_urn。 - 消息通知服务的topic_urn可以通过消息通知服务的查询主题列表API获取，示例：urn:smn:regionId:f96188c7ccaf4ffba0c9aa149ab2bd57:test_topic_v2。 - 函数工作流的func_urn可以通过函数工作流的获取函数列表API获取，示例：urn:fss:xxxxxxxxx:7aad83af3e8d42e99ac194e8419e2c9b:function:default:test。
+        :type topic_id: str
+        """
         
         
 
@@ -76,7 +89,7 @@ class CreateNotificationRequestBody:
         标识关键操作名称。
 
         :param notification_name: The notification_name of this CreateNotificationRequestBody.
-        :type: str
+        :type notification_name: str
         """
         self._notification_name = notification_name
 
@@ -98,7 +111,7 @@ class CreateNotificationRequestBody:
         标识操作类型。 目前支持的操作类型有完整类型(complete)和自定义类型(customized)。 完整类型下，CTS发送通知的对象为已对接服务的所有事件，此时不用指定operations和notify_user_list字段。 自定义类型下，CTS发送通知的对象是在operations列表中指定的事件。
 
         :param operation_type: The operation_type of this CreateNotificationRequestBody.
-        :type: str
+        :type operation_type: str
         """
         self._operation_type = operation_type
 
@@ -109,7 +122,7 @@ class CreateNotificationRequestBody:
         操作事件列表。
 
         :return: The operations of this CreateNotificationRequestBody.
-        :rtype: list[Operations]
+        :rtype: list[:class:`huaweicloudsdkcts.v3.Operations`]
         """
         return self._operations
 
@@ -120,7 +133,7 @@ class CreateNotificationRequestBody:
         操作事件列表。
 
         :param operations: The operations of this CreateNotificationRequestBody.
-        :type: list[Operations]
+        :type operations: list[:class:`huaweicloudsdkcts.v3.Operations`]
         """
         self._operations = operations
 
@@ -131,7 +144,7 @@ class CreateNotificationRequestBody:
         通知用户列表，目前最多支持对10个用户组和50个用户发起的操作进行配置。
 
         :return: The notify_user_list of this CreateNotificationRequestBody.
-        :rtype: list[NotificationUsers]
+        :rtype: list[:class:`huaweicloudsdkcts.v3.NotificationUsers`]
         """
         return self._notify_user_list
 
@@ -142,7 +155,7 @@ class CreateNotificationRequestBody:
         通知用户列表，目前最多支持对10个用户组和50个用户发起的操作进行配置。
 
         :param notify_user_list: The notify_user_list of this CreateNotificationRequestBody.
-        :type: list[NotificationUsers]
+        :type notify_user_list: list[:class:`huaweicloudsdkcts.v3.NotificationUsers`]
         """
         self._notify_user_list = notify_user_list
 
@@ -164,7 +177,7 @@ class CreateNotificationRequestBody:
         消息通知服务的topic_urn或者函数工作流的func_urn。 - 消息通知服务的topic_urn可以通过消息通知服务的查询主题列表API获取，示例：urn:smn:regionId:f96188c7ccaf4ffba0c9aa149ab2bd57:test_topic_v2。 - 函数工作流的func_urn可以通过函数工作流的获取函数列表API获取，示例：urn:fss:xxxxxxxxx:7aad83af3e8d42e99ac194e8419e2c9b:function:default:test。
 
         :param topic_id: The topic_id of this CreateNotificationRequestBody.
-        :type: str
+        :type topic_id: str
         """
         self._topic_id = topic_id
 

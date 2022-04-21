@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EsflavorsVersionsResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class EsflavorsVersionsResp:
     }
 
     def __init__(self, version=None, flavors=None):
-        """EsflavorsVersionsResp - a model defined in huaweicloud sdk"""
+        """EsflavorsVersionsResp
+
+        The model defined in huaweicloud sdk
+
+        :param version: 引擎版本，支持5.5.1、6.2.3、6.5.4、7.1.1、7.6.2、7.9.3。
+        :type version: str
+        :param flavors: 规格列表。
+        :type flavors: list[:class:`huaweicloudsdkcss.v1.EsflavorsVersionsFlavorsResp`]
+        """
         
         
 
@@ -63,7 +70,7 @@ class EsflavorsVersionsResp:
         引擎版本，支持5.5.1、6.2.3、6.5.4、7.1.1、7.6.2、7.9.3。
 
         :param version: The version of this EsflavorsVersionsResp.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -74,7 +81,7 @@ class EsflavorsVersionsResp:
         规格列表。
 
         :return: The flavors of this EsflavorsVersionsResp.
-        :rtype: list[EsflavorsVersionsFlavorsResp]
+        :rtype: list[:class:`huaweicloudsdkcss.v1.EsflavorsVersionsFlavorsResp`]
         """
         return self._flavors
 
@@ -85,7 +92,7 @@ class EsflavorsVersionsResp:
         规格列表。
 
         :param flavors: The flavors of this EsflavorsVersionsResp.
-        :type: list[EsflavorsVersionsFlavorsResp]
+        :type flavors: list[:class:`huaweicloudsdkcss.v1.EsflavorsVersionsFlavorsResp`]
         """
         self._flavors = flavors
 

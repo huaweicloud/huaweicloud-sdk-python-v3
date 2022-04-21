@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateMergeChannelsTaskResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateMergeChannelsTaskResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None):
-        """CreateMergeChannelsTaskResponse - a model defined in huaweicloud sdk"""
+        """CreateMergeChannelsTaskResponse
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 任务ID。 如果返回值为200 OK，为接受任务后产生的任务ID。 
+        :type task_id: str
+        """
         
         super(CreateMergeChannelsTaskResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class CreateMergeChannelsTaskResponse(SdkResponse):
         任务ID。 如果返回值为200 OK，为接受任务后产生的任务ID。 
 
         :param task_id: The task_id of this CreateMergeChannelsTaskResponse.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 

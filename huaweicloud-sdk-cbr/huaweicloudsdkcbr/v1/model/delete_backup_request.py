@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteBackupRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteBackupRequest:
     }
 
     def __init__(self, backup_id=None):
-        """DeleteBackupRequest - a model defined in huaweicloud sdk"""
+        """DeleteBackupRequest
+
+        The model defined in huaweicloud sdk
+
+        :param backup_id: 指定删除的备份ID
+        :type backup_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteBackupRequest:
         指定删除的备份ID
 
         :param backup_id: The backup_id of this DeleteBackupRequest.
-        :type: str
+        :type backup_id: str
         """
         self._backup_id = backup_id
 

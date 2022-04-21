@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PremiumWafServer:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class PremiumWafServer:
     }
 
     def __init__(self, front_protocol=None, back_protocol=None, address=None, port=None, type=None, vpc_id=None):
-        """PremiumWafServer - a model defined in huaweicloud sdk"""
+        """PremiumWafServer
+
+        The model defined in huaweicloud sdk
+
+        :param front_protocol: 对外协议
+        :type front_protocol: str
+        :param back_protocol: 源站协议
+        :type back_protocol: str
+        :param address: 源站地址
+        :type address: str
+        :param port: 源站端口
+        :type port: int
+        :param type: 源站地址为ipv4或ipv6
+        :type type: str
+        :param vpc_id: VPC id,通过以下步骤获取VPC id： \\n 1.找到独享引擎所在的虚拟私有云名称，VPC\\子网这一列就是VPC的名称：登录WAF的控制台-&gt;单击系统管理-&gt;独享引擎-&gt;VPC\\子网 \\n 2.登录虚拟私有云 VPC控制台-&gt;虚拟私有云-&gt;单击虚拟私有云的名称-&gt;基本信息的ID
+        :type vpc_id: str
+        """
         
         
 
@@ -77,7 +92,7 @@ class PremiumWafServer:
         对外协议
 
         :param front_protocol: The front_protocol of this PremiumWafServer.
-        :type: str
+        :type front_protocol: str
         """
         self._front_protocol = front_protocol
 
@@ -99,7 +114,7 @@ class PremiumWafServer:
         源站协议
 
         :param back_protocol: The back_protocol of this PremiumWafServer.
-        :type: str
+        :type back_protocol: str
         """
         self._back_protocol = back_protocol
 
@@ -121,7 +136,7 @@ class PremiumWafServer:
         源站地址
 
         :param address: The address of this PremiumWafServer.
-        :type: str
+        :type address: str
         """
         self._address = address
 
@@ -143,7 +158,7 @@ class PremiumWafServer:
         源站端口
 
         :param port: The port of this PremiumWafServer.
-        :type: int
+        :type port: int
         """
         self._port = port
 
@@ -165,7 +180,7 @@ class PremiumWafServer:
         源站地址为ipv4或ipv6
 
         :param type: The type of this PremiumWafServer.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -187,7 +202,7 @@ class PremiumWafServer:
         VPC id,通过以下步骤获取VPC id： \\n 1.找到独享引擎所在的虚拟私有云名称，VPC\\子网这一列就是VPC的名称：登录WAF的控制台->单击系统管理->独享引擎->VPC\\子网 \\n 2.登录虚拟私有云 VPC控制台->虚拟私有云->单击虚拟私有云的名称->基本信息的ID
 
         :param vpc_id: The vpc_id of this PremiumWafServer.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 

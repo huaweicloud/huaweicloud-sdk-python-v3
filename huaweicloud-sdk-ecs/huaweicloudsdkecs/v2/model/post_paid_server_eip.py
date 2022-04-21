@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PostPaidServerEip:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class PostPaidServerEip:
     }
 
     def __init__(self, iptype=None, bandwidth=None, extendparam=None):
-        """PostPaidServerEip - a model defined in huaweicloud sdk"""
+        """PostPaidServerEip
+
+        The model defined in huaweicloud sdk
+
+        :param iptype: 弹性IP地址类型。  详情请参见“[申请弹性公网IP](https://support.huaweicloud.com/api-eip/eip_api_0001.html)”章节的“publicip”字段说明。
+        :type iptype: str
+        :param bandwidth: 
+        :type bandwidth: :class:`huaweicloudsdkecs.v2.PostPaidServerEipBandwidth`
+        :param extendparam: 
+        :type extendparam: :class:`huaweicloudsdkecs.v2.PostPaidServerEipExtendParam`
+        """
         
         
 
@@ -66,7 +75,7 @@ class PostPaidServerEip:
         弹性IP地址类型。  详情请参见“[申请弹性公网IP](https://support.huaweicloud.com/api-eip/eip_api_0001.html)”章节的“publicip”字段说明。
 
         :param iptype: The iptype of this PostPaidServerEip.
-        :type: str
+        :type iptype: str
         """
         self._iptype = iptype
 
@@ -76,7 +85,7 @@ class PostPaidServerEip:
 
 
         :return: The bandwidth of this PostPaidServerEip.
-        :rtype: PostPaidServerEipBandwidth
+        :rtype: :class:`huaweicloudsdkecs.v2.PostPaidServerEipBandwidth`
         """
         return self._bandwidth
 
@@ -86,7 +95,7 @@ class PostPaidServerEip:
 
 
         :param bandwidth: The bandwidth of this PostPaidServerEip.
-        :type: PostPaidServerEipBandwidth
+        :type bandwidth: :class:`huaweicloudsdkecs.v2.PostPaidServerEipBandwidth`
         """
         self._bandwidth = bandwidth
 
@@ -96,7 +105,7 @@ class PostPaidServerEip:
 
 
         :return: The extendparam of this PostPaidServerEip.
-        :rtype: PostPaidServerEipExtendParam
+        :rtype: :class:`huaweicloudsdkecs.v2.PostPaidServerEipExtendParam`
         """
         return self._extendparam
 
@@ -106,7 +115,7 @@ class PostPaidServerEip:
 
 
         :param extendparam: The extendparam of this PostPaidServerEip.
-        :type: PostPaidServerEipExtendParam
+        :type extendparam: :class:`huaweicloudsdkecs.v2.PostPaidServerEipExtendParam`
         """
         self._extendparam = extendparam
 

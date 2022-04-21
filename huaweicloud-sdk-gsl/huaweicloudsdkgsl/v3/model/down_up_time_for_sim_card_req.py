@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DownUpTimeForSimCardReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DownUpTimeForSimCardReq:
     }
 
     def __init__(self, down_up_switch=None):
-        """DownUpTimeForSimCardReq - a model defined in huaweicloud sdk"""
+        """DownUpTimeForSimCardReq
+
+        The model defined in huaweicloud sdk
+
+        :param down_up_switch: 启用停用开关
+        :type down_up_switch: int
+        """
         
         
 
@@ -58,7 +63,7 @@ class DownUpTimeForSimCardReq:
         启用停用开关
 
         :param down_up_switch: The down_up_switch of this DownUpTimeForSimCardReq.
-        :type: int
+        :type down_up_switch: int
         """
         self._down_up_switch = down_up_switch
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDevicesInGroupRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ShowDevicesInGroupRequest:
     }
 
     def __init__(self, instance_id=None, group_id=None, limit=None, product_name=None, device_name=None, offset=None):
-        """ShowDevicesInGroupRequest - a model defined in huaweicloud sdk"""
+        """ShowDevicesInGroupRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param group_id: 设备分组ID
+        :type group_id: int
+        :param limit: 每页显示条目数量，最大数量999，超过999后只返回999
+        :type limit: int
+        :param product_name: 产品名称
+        :type product_name: str
+        :param device_name: 设备名称
+        :type device_name: str
+        :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0
+        :type offset: int
+        """
         
         
 
@@ -81,7 +96,7 @@ class ShowDevicesInGroupRequest:
         实例ID
 
         :param instance_id: The instance_id of this ShowDevicesInGroupRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -103,7 +118,7 @@ class ShowDevicesInGroupRequest:
         设备分组ID
 
         :param group_id: The group_id of this ShowDevicesInGroupRequest.
-        :type: int
+        :type group_id: int
         """
         self._group_id = group_id
 
@@ -125,7 +140,7 @@ class ShowDevicesInGroupRequest:
         每页显示条目数量，最大数量999，超过999后只返回999
 
         :param limit: The limit of this ShowDevicesInGroupRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -147,7 +162,7 @@ class ShowDevicesInGroupRequest:
         产品名称
 
         :param product_name: The product_name of this ShowDevicesInGroupRequest.
-        :type: str
+        :type product_name: str
         """
         self._product_name = product_name
 
@@ -169,7 +184,7 @@ class ShowDevicesInGroupRequest:
         设备名称
 
         :param device_name: The device_name of this ShowDevicesInGroupRequest.
-        :type: str
+        :type device_name: str
         """
         self._device_name = device_name
 
@@ -191,7 +206,7 @@ class ShowDevicesInGroupRequest:
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
         :param offset: The offset of this ShowDevicesInGroupRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 

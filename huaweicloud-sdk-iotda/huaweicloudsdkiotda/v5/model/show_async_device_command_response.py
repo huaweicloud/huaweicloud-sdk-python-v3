@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowAsyncDeviceCommandResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class ShowAsyncDeviceCommandResponse(SdkResponse):
     }
 
     def __init__(self, device_id=None, command_id=None, service_id=None, command_name=None, paras=None, expire_time=None, status=None, result=None, created_time=None, sent_time=None, delivered_time=None, send_strategy=None, response_time=None):
-        """ShowAsyncDeviceCommandResponse - a model defined in huaweicloud sdk"""
+        """ShowAsyncDeviceCommandResponse
+
+        The model defined in huaweicloud sdk
+
+        :param device_id: 设备ID，用于唯一标识一个设备，在注册设备时由物联网平台分配获得。
+        :type device_id: str
+        :param command_id: 设备命令ID，用于唯一标识一条命令，在下发设备命令时由物联网平台分配获得。
+        :type command_id: str
+        :param service_id: 设备命令所属的设备服务ID，在设备关联的产品模型中定义。
+        :type service_id: str
+        :param command_name: 设备命令名称，在设备关联的产品模型中定义。
+        :type command_name: str
+        :param paras: 设备执行的命令，Json格式，里面是一个个健值对，如果service_id不为空，每个健都是profile中命令的参数名（paraName）;如果service_id为空则由用户自定义命令格式。设备命令示例：{\&quot;value\&quot;:\&quot;1\&quot;}，具体格式需要应用和设备约定。 
+        :type paras: object
+        :param expire_time: 物联网平台缓存命令的时长， 单位秒。
+        :type expire_time: int
+        :param status: 下发命令的状态。 ·PENDING表示未下发,在物联网平台缓存着 ·EXPIRED表示命令已经过期，即缓存的时间超过设定的expire_time ·SENT表示命令正在下发 ·DELIVERED表示命令已送达设备 ·SUCCESSFUL表示命令已经成功执行 ·FAILED表示命令执行失败 ·TIMEOUT表示命令下发之后，没有收到设备确认或者响应结果一定时间后超时 
+        :type status: str
+        :param result: 设备命令执行的详细结果，由设备返回，Json格式。 
+        :type result: object
+        :param created_time: 命令的创建时间，\&quot;yyyyMMdd&#39;T&#39;HHmmss&#39;Z&#39;\&quot;格式的UTC字符串。
+        :type created_time: str
+        :param sent_time: 物联网平台发送命令的时间，如果命令是立即下发， 则该时间与命令创建时间一致， 如果是缓存命令， 则是命令实际下发的时间。\&quot;yyyyMMdd&#39;T&#39;HHmmss&#39;Z&#39;\&quot;格式的UTC字符串。
+        :type sent_time: str
+        :param delivered_time: 物联网平台将命令送达到设备的时间，\&quot;yyyyMMdd&#39;T&#39;HHmmss&#39;Z&#39;\&quot;格式的UTC字符串
+        :type delivered_time: str
+        :param send_strategy: 下发策略， immediately表示立即下发，delay表示缓存起来，等数据上报或者设备上线之后下发。
+        :type send_strategy: str
+        :param response_time: 设备响应命令的时间，\&quot;yyyyMMdd&#39;T&#39;HHmmss&#39;Z&#39;\&quot;格式的UTC字符串
+        :type response_time: str
+        """
         
         super(ShowAsyncDeviceCommandResponse, self).__init__()
 
@@ -118,7 +147,7 @@ class ShowAsyncDeviceCommandResponse(SdkResponse):
         设备ID，用于唯一标识一个设备，在注册设备时由物联网平台分配获得。
 
         :param device_id: The device_id of this ShowAsyncDeviceCommandResponse.
-        :type: str
+        :type device_id: str
         """
         self._device_id = device_id
 
@@ -140,7 +169,7 @@ class ShowAsyncDeviceCommandResponse(SdkResponse):
         设备命令ID，用于唯一标识一条命令，在下发设备命令时由物联网平台分配获得。
 
         :param command_id: The command_id of this ShowAsyncDeviceCommandResponse.
-        :type: str
+        :type command_id: str
         """
         self._command_id = command_id
 
@@ -162,7 +191,7 @@ class ShowAsyncDeviceCommandResponse(SdkResponse):
         设备命令所属的设备服务ID，在设备关联的产品模型中定义。
 
         :param service_id: The service_id of this ShowAsyncDeviceCommandResponse.
-        :type: str
+        :type service_id: str
         """
         self._service_id = service_id
 
@@ -184,7 +213,7 @@ class ShowAsyncDeviceCommandResponse(SdkResponse):
         设备命令名称，在设备关联的产品模型中定义。
 
         :param command_name: The command_name of this ShowAsyncDeviceCommandResponse.
-        :type: str
+        :type command_name: str
         """
         self._command_name = command_name
 
@@ -206,7 +235,7 @@ class ShowAsyncDeviceCommandResponse(SdkResponse):
         设备执行的命令，Json格式，里面是一个个健值对，如果service_id不为空，每个健都是profile中命令的参数名（paraName）;如果service_id为空则由用户自定义命令格式。设备命令示例：{\"value\":\"1\"}，具体格式需要应用和设备约定。 
 
         :param paras: The paras of this ShowAsyncDeviceCommandResponse.
-        :type: object
+        :type paras: object
         """
         self._paras = paras
 
@@ -228,7 +257,7 @@ class ShowAsyncDeviceCommandResponse(SdkResponse):
         物联网平台缓存命令的时长， 单位秒。
 
         :param expire_time: The expire_time of this ShowAsyncDeviceCommandResponse.
-        :type: int
+        :type expire_time: int
         """
         self._expire_time = expire_time
 
@@ -250,7 +279,7 @@ class ShowAsyncDeviceCommandResponse(SdkResponse):
         下发命令的状态。 ·PENDING表示未下发,在物联网平台缓存着 ·EXPIRED表示命令已经过期，即缓存的时间超过设定的expire_time ·SENT表示命令正在下发 ·DELIVERED表示命令已送达设备 ·SUCCESSFUL表示命令已经成功执行 ·FAILED表示命令执行失败 ·TIMEOUT表示命令下发之后，没有收到设备确认或者响应结果一定时间后超时 
 
         :param status: The status of this ShowAsyncDeviceCommandResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -272,7 +301,7 @@ class ShowAsyncDeviceCommandResponse(SdkResponse):
         设备命令执行的详细结果，由设备返回，Json格式。 
 
         :param result: The result of this ShowAsyncDeviceCommandResponse.
-        :type: object
+        :type result: object
         """
         self._result = result
 
@@ -294,7 +323,7 @@ class ShowAsyncDeviceCommandResponse(SdkResponse):
         命令的创建时间，\"yyyyMMdd'T'HHmmss'Z'\"格式的UTC字符串。
 
         :param created_time: The created_time of this ShowAsyncDeviceCommandResponse.
-        :type: str
+        :type created_time: str
         """
         self._created_time = created_time
 
@@ -316,7 +345,7 @@ class ShowAsyncDeviceCommandResponse(SdkResponse):
         物联网平台发送命令的时间，如果命令是立即下发， 则该时间与命令创建时间一致， 如果是缓存命令， 则是命令实际下发的时间。\"yyyyMMdd'T'HHmmss'Z'\"格式的UTC字符串。
 
         :param sent_time: The sent_time of this ShowAsyncDeviceCommandResponse.
-        :type: str
+        :type sent_time: str
         """
         self._sent_time = sent_time
 
@@ -338,7 +367,7 @@ class ShowAsyncDeviceCommandResponse(SdkResponse):
         物联网平台将命令送达到设备的时间，\"yyyyMMdd'T'HHmmss'Z'\"格式的UTC字符串
 
         :param delivered_time: The delivered_time of this ShowAsyncDeviceCommandResponse.
-        :type: str
+        :type delivered_time: str
         """
         self._delivered_time = delivered_time
 
@@ -360,7 +389,7 @@ class ShowAsyncDeviceCommandResponse(SdkResponse):
         下发策略， immediately表示立即下发，delay表示缓存起来，等数据上报或者设备上线之后下发。
 
         :param send_strategy: The send_strategy of this ShowAsyncDeviceCommandResponse.
-        :type: str
+        :type send_strategy: str
         """
         self._send_strategy = send_strategy
 
@@ -382,7 +411,7 @@ class ShowAsyncDeviceCommandResponse(SdkResponse):
         设备响应命令的时间，\"yyyyMMdd'T'HHmmss'Z'\"格式的UTC字符串
 
         :param response_time: The response_time of this ShowAsyncDeviceCommandResponse.
-        :type: str
+        :type response_time: str
         """
         self._response_time = response_time
 

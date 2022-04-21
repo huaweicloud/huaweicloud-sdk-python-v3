@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ThailandIdcardResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -68,7 +67,51 @@ class ThailandIdcardResult:
     }
 
     def __init__(self, side=None, id_number=None, name_th=None, first_name_en=None, last_name_en=None, date_of_birth_th=None, date_of_birth_en=None, religion_th=None, address_th=None, date_of_issue_th=None, date_of_issue_en=None, date_of_expiry_th=None, date_of_expiry_en=None, serial_number=None, card_number=None, laser_number=None, confidence=None, portrait_image=None, portrait_location=None, idcard_type=None):
-        """ThailandIdcardResult - a model defined in huaweicloud sdk"""
+        """ThailandIdcardResult
+
+        The model defined in huaweicloud sdk
+
+        :param side: 标示正面还是反面，取值为front或back。 
+        :type side: str
+        :param id_number: 身份证号。 
+        :type id_number: str
+        :param name_th: 泰文名字。 
+        :type name_th: str
+        :param first_name_en: 英文名字。 
+        :type first_name_en: str
+        :param last_name_en: 英文姓氏。 
+        :type last_name_en: str
+        :param date_of_birth_th: 泰文出生日期。 
+        :type date_of_birth_th: str
+        :param date_of_birth_en: 英文出生日期。 
+        :type date_of_birth_en: str
+        :param religion_th: 宗教。 
+        :type religion_th: str
+        :param address_th: 地址。 
+        :type address_th: str
+        :param date_of_issue_th: 泰文签发日期。 
+        :type date_of_issue_th: str
+        :param date_of_issue_en: 英文签发日期。 
+        :type date_of_issue_en: str
+        :param date_of_expiry_th: 泰文有效期。 
+        :type date_of_expiry_th: str
+        :param date_of_expiry_en: 英文有效期。 
+        :type date_of_expiry_en: str
+        :param serial_number: 序列号。 
+        :type serial_number: str
+        :param card_number: 身份证反面卡号。 
+        :type card_number: str
+        :param laser_number: 激光码。 
+        :type laser_number: str
+        :param confidence: 
+        :type confidence: :class:`huaweicloudsdkocr.v1.ThailandIdcardConfidence`
+        :param portrait_image: 头像的base64编码。 当输入参数“return_portrait_image”为“true”时，才返回该参数。 
+        :type portrait_image: str
+        :param portrait_location: 头像在原图上的位置。 当输入参数“return_portrait_location”为“true”时，才返回该参数。以列表形式显示，包含头像区域四个顶点的二维坐标（x,y），坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向 
+        :type portrait_location: list[list[int]]
+        :param idcard_type: 身份证的类型。取值如下所示： - normal：身份证原件 - copy：复印的身份证 当输入参数“return_idcard_type”为“true”时，才返回该参数。 
+        :type idcard_type: str
+        """
         
         
 
@@ -153,7 +196,7 @@ class ThailandIdcardResult:
         标示正面还是反面，取值为front或back。 
 
         :param side: The side of this ThailandIdcardResult.
-        :type: str
+        :type side: str
         """
         self._side = side
 
@@ -175,7 +218,7 @@ class ThailandIdcardResult:
         身份证号。 
 
         :param id_number: The id_number of this ThailandIdcardResult.
-        :type: str
+        :type id_number: str
         """
         self._id_number = id_number
 
@@ -197,7 +240,7 @@ class ThailandIdcardResult:
         泰文名字。 
 
         :param name_th: The name_th of this ThailandIdcardResult.
-        :type: str
+        :type name_th: str
         """
         self._name_th = name_th
 
@@ -219,7 +262,7 @@ class ThailandIdcardResult:
         英文名字。 
 
         :param first_name_en: The first_name_en of this ThailandIdcardResult.
-        :type: str
+        :type first_name_en: str
         """
         self._first_name_en = first_name_en
 
@@ -241,7 +284,7 @@ class ThailandIdcardResult:
         英文姓氏。 
 
         :param last_name_en: The last_name_en of this ThailandIdcardResult.
-        :type: str
+        :type last_name_en: str
         """
         self._last_name_en = last_name_en
 
@@ -263,7 +306,7 @@ class ThailandIdcardResult:
         泰文出生日期。 
 
         :param date_of_birth_th: The date_of_birth_th of this ThailandIdcardResult.
-        :type: str
+        :type date_of_birth_th: str
         """
         self._date_of_birth_th = date_of_birth_th
 
@@ -285,7 +328,7 @@ class ThailandIdcardResult:
         英文出生日期。 
 
         :param date_of_birth_en: The date_of_birth_en of this ThailandIdcardResult.
-        :type: str
+        :type date_of_birth_en: str
         """
         self._date_of_birth_en = date_of_birth_en
 
@@ -307,7 +350,7 @@ class ThailandIdcardResult:
         宗教。 
 
         :param religion_th: The religion_th of this ThailandIdcardResult.
-        :type: str
+        :type religion_th: str
         """
         self._religion_th = religion_th
 
@@ -329,7 +372,7 @@ class ThailandIdcardResult:
         地址。 
 
         :param address_th: The address_th of this ThailandIdcardResult.
-        :type: str
+        :type address_th: str
         """
         self._address_th = address_th
 
@@ -351,7 +394,7 @@ class ThailandIdcardResult:
         泰文签发日期。 
 
         :param date_of_issue_th: The date_of_issue_th of this ThailandIdcardResult.
-        :type: str
+        :type date_of_issue_th: str
         """
         self._date_of_issue_th = date_of_issue_th
 
@@ -373,7 +416,7 @@ class ThailandIdcardResult:
         英文签发日期。 
 
         :param date_of_issue_en: The date_of_issue_en of this ThailandIdcardResult.
-        :type: str
+        :type date_of_issue_en: str
         """
         self._date_of_issue_en = date_of_issue_en
 
@@ -395,7 +438,7 @@ class ThailandIdcardResult:
         泰文有效期。 
 
         :param date_of_expiry_th: The date_of_expiry_th of this ThailandIdcardResult.
-        :type: str
+        :type date_of_expiry_th: str
         """
         self._date_of_expiry_th = date_of_expiry_th
 
@@ -417,7 +460,7 @@ class ThailandIdcardResult:
         英文有效期。 
 
         :param date_of_expiry_en: The date_of_expiry_en of this ThailandIdcardResult.
-        :type: str
+        :type date_of_expiry_en: str
         """
         self._date_of_expiry_en = date_of_expiry_en
 
@@ -439,7 +482,7 @@ class ThailandIdcardResult:
         序列号。 
 
         :param serial_number: The serial_number of this ThailandIdcardResult.
-        :type: str
+        :type serial_number: str
         """
         self._serial_number = serial_number
 
@@ -461,7 +504,7 @@ class ThailandIdcardResult:
         身份证反面卡号。 
 
         :param card_number: The card_number of this ThailandIdcardResult.
-        :type: str
+        :type card_number: str
         """
         self._card_number = card_number
 
@@ -483,7 +526,7 @@ class ThailandIdcardResult:
         激光码。 
 
         :param laser_number: The laser_number of this ThailandIdcardResult.
-        :type: str
+        :type laser_number: str
         """
         self._laser_number = laser_number
 
@@ -493,7 +536,7 @@ class ThailandIdcardResult:
 
 
         :return: The confidence of this ThailandIdcardResult.
-        :rtype: ThailandIdcardConfidence
+        :rtype: :class:`huaweicloudsdkocr.v1.ThailandIdcardConfidence`
         """
         return self._confidence
 
@@ -503,7 +546,7 @@ class ThailandIdcardResult:
 
 
         :param confidence: The confidence of this ThailandIdcardResult.
-        :type: ThailandIdcardConfidence
+        :type confidence: :class:`huaweicloudsdkocr.v1.ThailandIdcardConfidence`
         """
         self._confidence = confidence
 
@@ -525,7 +568,7 @@ class ThailandIdcardResult:
         头像的base64编码。 当输入参数“return_portrait_image”为“true”时，才返回该参数。 
 
         :param portrait_image: The portrait_image of this ThailandIdcardResult.
-        :type: str
+        :type portrait_image: str
         """
         self._portrait_image = portrait_image
 
@@ -547,7 +590,7 @@ class ThailandIdcardResult:
         头像在原图上的位置。 当输入参数“return_portrait_location”为“true”时，才返回该参数。以列表形式显示，包含头像区域四个顶点的二维坐标（x,y），坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向 
 
         :param portrait_location: The portrait_location of this ThailandIdcardResult.
-        :type: list[list[int]]
+        :type portrait_location: list[list[int]]
         """
         self._portrait_location = portrait_location
 
@@ -569,7 +612,7 @@ class ThailandIdcardResult:
         身份证的类型。取值如下所示： - normal：身份证原件 - copy：复印的身份证 当输入参数“return_idcard_type”为“true”时，才返回该参数。 
 
         :param idcard_type: The idcard_type of this ThailandIdcardResult.
-        :type: str
+        :type idcard_type: str
         """
         self._idcard_type = idcard_type
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateNaRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateNaRequest:
     }
 
     def __init__(self, na_id=None, body=None):
-        """UpdateNaRequest - a model defined in huaweicloud sdk"""
+        """UpdateNaRequest
+
+        The model defined in huaweicloud sdk
+
+        :param na_id: 北向数据接收端点ID
+        :type na_id: str
+        :param body: Body of the UpdateNaRequest
+        :type body: :class:`huaweicloudsdkiotedge.v2.UpdateNaRequestDTO`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateNaRequest:
         北向数据接收端点ID
 
         :param na_id: The na_id of this UpdateNaRequest.
-        :type: str
+        :type na_id: str
         """
         self._na_id = na_id
 
@@ -72,7 +79,7 @@ class UpdateNaRequest:
 
 
         :return: The body of this UpdateNaRequest.
-        :rtype: UpdateNaRequestDTO
+        :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateNaRequestDTO`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateNaRequest:
 
 
         :param body: The body of this UpdateNaRequest.
-        :type: UpdateNaRequestDTO
+        :type body: :class:`huaweicloudsdkiotedge.v2.UpdateNaRequestDTO`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDetailsOfAclPolicyV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowDetailsOfAclPolicyV2Request:
     }
 
     def __init__(self, instance_id=None, acl_id=None):
-        """ShowDetailsOfAclPolicyV2Request - a model defined in huaweicloud sdk"""
+        """ShowDetailsOfAclPolicyV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param acl_id: ACL策略的编号
+        :type acl_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ShowDetailsOfAclPolicyV2Request:
         实例ID
 
         :param instance_id: The instance_id of this ShowDetailsOfAclPolicyV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -83,7 +90,7 @@ class ShowDetailsOfAclPolicyV2Request:
         ACL策略的编号
 
         :param acl_id: The acl_id of this ShowDetailsOfAclPolicyV2Request.
-        :type: str
+        :type acl_id: str
         """
         self._acl_id = acl_id
 

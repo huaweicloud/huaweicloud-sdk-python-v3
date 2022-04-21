@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdatePortOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UpdatePortOption:
     }
 
     def __init__(self, name=None, security_groups=None, allowed_address_pairs=None, extra_dhcp_opts=None):
-        """UpdatePortOption - a model defined in huaweicloud sdk"""
+        """UpdatePortOption
+
+        The model defined in huaweicloud sdk
+
+        :param name: 功能说明：端口名称 取值范围：0~255个字符，支持中文、英文、字母、_(下划线)、-（中划线）
+        :type name: str
+        :param security_groups: 安全组的ID列表
+        :type security_groups: list[str]
+        :param allowed_address_pairs: 功能说明：IP/Mac对列表 约束： - IP地址不允许为 “0.0.0.0”。 - 如果配置地址池较大（CIDR掩码小于24位），建议为该port配置一个单独的安全组。 - 为虚拟IP配置后端ECS场景，allowed_address_pairs中配置的IP地址，必须为ECS网卡已有的IP地址，否则可能会导致虚拟IP通信异常。
+        :type allowed_address_pairs: list[:class:`huaweicloudsdkvpc.v2.AllowedAddressPair`]
+        :param extra_dhcp_opts: 功能说明：DHCP的扩展Option(扩展属性)
+        :type extra_dhcp_opts: list[:class:`huaweicloudsdkvpc.v2.ExtraDhcpOpt`]
+        """
         
         
 
@@ -73,7 +84,7 @@ class UpdatePortOption:
         功能说明：端口名称 取值范围：0~255个字符，支持中文、英文、字母、_(下划线)、-（中划线）
 
         :param name: The name of this UpdatePortOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -95,7 +106,7 @@ class UpdatePortOption:
         安全组的ID列表
 
         :param security_groups: The security_groups of this UpdatePortOption.
-        :type: list[str]
+        :type security_groups: list[str]
         """
         self._security_groups = security_groups
 
@@ -106,7 +117,7 @@ class UpdatePortOption:
         功能说明：IP/Mac对列表 约束： - IP地址不允许为 “0.0.0.0”。 - 如果配置地址池较大（CIDR掩码小于24位），建议为该port配置一个单独的安全组。 - 为虚拟IP配置后端ECS场景，allowed_address_pairs中配置的IP地址，必须为ECS网卡已有的IP地址，否则可能会导致虚拟IP通信异常。
 
         :return: The allowed_address_pairs of this UpdatePortOption.
-        :rtype: list[AllowedAddressPair]
+        :rtype: list[:class:`huaweicloudsdkvpc.v2.AllowedAddressPair`]
         """
         return self._allowed_address_pairs
 
@@ -117,7 +128,7 @@ class UpdatePortOption:
         功能说明：IP/Mac对列表 约束： - IP地址不允许为 “0.0.0.0”。 - 如果配置地址池较大（CIDR掩码小于24位），建议为该port配置一个单独的安全组。 - 为虚拟IP配置后端ECS场景，allowed_address_pairs中配置的IP地址，必须为ECS网卡已有的IP地址，否则可能会导致虚拟IP通信异常。
 
         :param allowed_address_pairs: The allowed_address_pairs of this UpdatePortOption.
-        :type: list[AllowedAddressPair]
+        :type allowed_address_pairs: list[:class:`huaweicloudsdkvpc.v2.AllowedAddressPair`]
         """
         self._allowed_address_pairs = allowed_address_pairs
 
@@ -128,7 +139,7 @@ class UpdatePortOption:
         功能说明：DHCP的扩展Option(扩展属性)
 
         :return: The extra_dhcp_opts of this UpdatePortOption.
-        :rtype: list[ExtraDhcpOpt]
+        :rtype: list[:class:`huaweicloudsdkvpc.v2.ExtraDhcpOpt`]
         """
         return self._extra_dhcp_opts
 
@@ -139,7 +150,7 @@ class UpdatePortOption:
         功能说明：DHCP的扩展Option(扩展属性)
 
         :param extra_dhcp_opts: The extra_dhcp_opts of this UpdatePortOption.
-        :type: list[ExtraDhcpOpt]
+        :type extra_dhcp_opts: list[:class:`huaweicloudsdkvpc.v2.ExtraDhcpOpt`]
         """
         self._extra_dhcp_opts = extra_dhcp_opts
 

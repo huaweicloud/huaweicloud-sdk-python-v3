@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateAndDeletePrivilegeReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateAndDeletePrivilegeReq:
     }
 
     def __init__(self, operation=None, privilege=None):
-        """CreateAndDeletePrivilegeReq - a model defined in huaweicloud sdk"""
+        """CreateAndDeletePrivilegeReq
+
+        The model defined in huaweicloud sdk
+
+        :param operation: 执行的操作(create|delete)
+        :type operation: str
+        :param privilege: 权限标识
+        :type privilege: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateAndDeletePrivilegeReq:
         执行的操作(create|delete)
 
         :param operation: The operation of this CreateAndDeletePrivilegeReq.
-        :type: str
+        :type operation: str
         """
         self._operation = operation
 
@@ -84,7 +91,7 @@ class CreateAndDeletePrivilegeReq:
         权限标识
 
         :param privilege: The privilege of this CreateAndDeletePrivilegeReq.
-        :type: str
+        :type privilege: str
         """
         self._privilege = privilege
 

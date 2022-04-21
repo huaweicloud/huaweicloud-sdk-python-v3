@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateDataImageRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class CreateDataImageRequestBody:
     }
 
     def __init__(self, cmk_id=None, description=None, enterprise_project_id=None, image_tags=None, image_url=None, min_disk=None, name=None, os_type=None, tags=None):
-        """CreateDataImageRequestBody - a model defined in huaweicloud sdk"""
+        """CreateDataImageRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param cmk_id: 创建加密镜像的用户主密钥，具体取值请参考《密钥管理服务用户指南》获取。
+        :type cmk_id: str
+        :param description: 镜像描述信息。_description参数说明请参考镜像属性。支持字母、数字、中文等，不支持回车、&lt;、 &gt;，长度不能超过1024个字符。默认为空。
+        :type description: str
+        :param enterprise_project_id: 表示当前镜像所属的企业项目。取值为0或无该值，表示属于default企业项目；取值为UUID，表示属于该UUID对应的企业项目。
+        :type enterprise_project_id: str
+        :param image_tags: 新规范的镜像标签列表。默认为空。 tags和image_tags只能使用一个。
+        :type image_tags: list[:class:`huaweicloudsdkims.v2.ImageTag`]
+        :param image_url: OBS桶中外部镜像文件地址。格式为&lt;OBS桶名&gt;:&lt;OBS镜像文件名称&gt;。 此处的OBS桶和镜像文件的存储类别必须是OBS标准存储。
+        :type image_url: str
+        :param min_disk: 最小数据盘大小。取值范围40-2048GB。
+        :type min_disk: int
+        :param name: 镜像名称。
+        :type name: str
+        :param os_type: 操作系统类型。只能是Windows、Linux二者之一，默认Linux。
+        :type os_type: str
+        :param tags: 镜像标签列表。默认为空。 tags和image_tags只能使用一个。
+        :type tags: list[str]
+        """
         
         
 
@@ -95,7 +116,7 @@ class CreateDataImageRequestBody:
         创建加密镜像的用户主密钥，具体取值请参考《密钥管理服务用户指南》获取。
 
         :param cmk_id: The cmk_id of this CreateDataImageRequestBody.
-        :type: str
+        :type cmk_id: str
         """
         self._cmk_id = cmk_id
 
@@ -117,7 +138,7 @@ class CreateDataImageRequestBody:
         镜像描述信息。_description参数说明请参考镜像属性。支持字母、数字、中文等，不支持回车、<、 >，长度不能超过1024个字符。默认为空。
 
         :param description: The description of this CreateDataImageRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -139,7 +160,7 @@ class CreateDataImageRequestBody:
         表示当前镜像所属的企业项目。取值为0或无该值，表示属于default企业项目；取值为UUID，表示属于该UUID对应的企业项目。
 
         :param enterprise_project_id: The enterprise_project_id of this CreateDataImageRequestBody.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -150,7 +171,7 @@ class CreateDataImageRequestBody:
         新规范的镜像标签列表。默认为空。 tags和image_tags只能使用一个。
 
         :return: The image_tags of this CreateDataImageRequestBody.
-        :rtype: list[ImageTag]
+        :rtype: list[:class:`huaweicloudsdkims.v2.ImageTag`]
         """
         return self._image_tags
 
@@ -161,7 +182,7 @@ class CreateDataImageRequestBody:
         新规范的镜像标签列表。默认为空。 tags和image_tags只能使用一个。
 
         :param image_tags: The image_tags of this CreateDataImageRequestBody.
-        :type: list[ImageTag]
+        :type image_tags: list[:class:`huaweicloudsdkims.v2.ImageTag`]
         """
         self._image_tags = image_tags
 
@@ -183,7 +204,7 @@ class CreateDataImageRequestBody:
         OBS桶中外部镜像文件地址。格式为<OBS桶名>:<OBS镜像文件名称>。 此处的OBS桶和镜像文件的存储类别必须是OBS标准存储。
 
         :param image_url: The image_url of this CreateDataImageRequestBody.
-        :type: str
+        :type image_url: str
         """
         self._image_url = image_url
 
@@ -205,7 +226,7 @@ class CreateDataImageRequestBody:
         最小数据盘大小。取值范围40-2048GB。
 
         :param min_disk: The min_disk of this CreateDataImageRequestBody.
-        :type: int
+        :type min_disk: int
         """
         self._min_disk = min_disk
 
@@ -227,7 +248,7 @@ class CreateDataImageRequestBody:
         镜像名称。
 
         :param name: The name of this CreateDataImageRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -249,7 +270,7 @@ class CreateDataImageRequestBody:
         操作系统类型。只能是Windows、Linux二者之一，默认Linux。
 
         :param os_type: The os_type of this CreateDataImageRequestBody.
-        :type: str
+        :type os_type: str
         """
         self._os_type = os_type
 
@@ -271,7 +292,7 @@ class CreateDataImageRequestBody:
         镜像标签列表。默认为空。 tags和image_tags只能使用一个。
 
         :param tags: The tags of this CreateDataImageRequestBody.
-        :type: list[str]
+        :type tags: list[str]
         """
         self._tags = tags
 

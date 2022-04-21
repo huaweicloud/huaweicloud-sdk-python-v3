@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SwitchSslResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class SwitchSslResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, ssl_option=None):
-        """SwitchSslResponse - a model defined in huaweicloud sdk"""
+        """SwitchSslResponse
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 任务ID。
+        :type job_id: str
+        :param ssl_option: SSL开关状态。
+        :type ssl_option: str
+        """
         
         super(SwitchSslResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class SwitchSslResponse(SdkResponse):
         任务ID。
 
         :param job_id: The job_id of this SwitchSslResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -85,7 +92,7 @@ class SwitchSslResponse(SdkResponse):
         SSL开关状态。
 
         :param ssl_option: The ssl_option of this SwitchSslResponse.
-        :type: str
+        :type ssl_option: str
         """
         self._ssl_option = ssl_option
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BindingVifDetails:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BindingVifDetails:
     }
 
     def __init__(self, primary_interface=None):
-        """BindingVifDetails - a model defined in huaweicloud sdk"""
+        """BindingVifDetails
+
+        The model defined in huaweicloud sdk
+
+        :param primary_interface: 功能说明：取值为true，表示是虚拟机的主网卡。
+        :type primary_interface: bool
+        """
         
         
 
@@ -58,7 +63,7 @@ class BindingVifDetails:
         功能说明：取值为true，表示是虚拟机的主网卡。
 
         :param primary_interface: The primary_interface of this BindingVifDetails.
-        :type: bool
+        :type primary_interface: bool
         """
         self._primary_interface = primary_interface
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateAccessConfigResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class UpdateAccessConfigResponse(SdkResponse):
     }
 
     def __init__(self, access_config_id=None, access_config_name=None, access_config_type=None, create_time=None, access_config_detail=None, log_info=None, host_group_info=None, access_config_tag=None):
-        """UpdateAccessConfigResponse - a model defined in huaweicloud sdk"""
+        """UpdateAccessConfigResponse
+
+        The model defined in huaweicloud sdk
+
+        :param access_config_id: 日志接入ID
+        :type access_config_id: str
+        :param access_config_name: 日志接入名称
+        :type access_config_name: str
+        :param access_config_type: 日志接入类型。AGENT：主机接入
+        :type access_config_type: str
+        :param create_time: 创建时间
+        :type create_time: int
+        :param access_config_detail: 
+        :type access_config_detail: :class:`huaweicloudsdklts.v2.AccessConfigDeatil`
+        :param log_info: 
+        :type log_info: :class:`huaweicloudsdklts.v2.AccessConfigQueryLogInfo`
+        :param host_group_info: 
+        :type host_group_info: :class:`huaweicloudsdklts.v2.AccessConfigHostGroupIdList`
+        :param access_config_tag: 
+        :type access_config_tag: list[:class:`huaweicloudsdklts.v2.AccessConfigTag`]
+        """
         
         super(UpdateAccessConfigResponse, self).__init__()
 
@@ -93,7 +112,7 @@ class UpdateAccessConfigResponse(SdkResponse):
         日志接入ID
 
         :param access_config_id: The access_config_id of this UpdateAccessConfigResponse.
-        :type: str
+        :type access_config_id: str
         """
         self._access_config_id = access_config_id
 
@@ -115,7 +134,7 @@ class UpdateAccessConfigResponse(SdkResponse):
         日志接入名称
 
         :param access_config_name: The access_config_name of this UpdateAccessConfigResponse.
-        :type: str
+        :type access_config_name: str
         """
         self._access_config_name = access_config_name
 
@@ -137,7 +156,7 @@ class UpdateAccessConfigResponse(SdkResponse):
         日志接入类型。AGENT：主机接入
 
         :param access_config_type: The access_config_type of this UpdateAccessConfigResponse.
-        :type: str
+        :type access_config_type: str
         """
         self._access_config_type = access_config_type
 
@@ -159,7 +178,7 @@ class UpdateAccessConfigResponse(SdkResponse):
         创建时间
 
         :param create_time: The create_time of this UpdateAccessConfigResponse.
-        :type: int
+        :type create_time: int
         """
         self._create_time = create_time
 
@@ -169,7 +188,7 @@ class UpdateAccessConfigResponse(SdkResponse):
 
 
         :return: The access_config_detail of this UpdateAccessConfigResponse.
-        :rtype: AccessConfigDeatil
+        :rtype: :class:`huaweicloudsdklts.v2.AccessConfigDeatil`
         """
         return self._access_config_detail
 
@@ -179,7 +198,7 @@ class UpdateAccessConfigResponse(SdkResponse):
 
 
         :param access_config_detail: The access_config_detail of this UpdateAccessConfigResponse.
-        :type: AccessConfigDeatil
+        :type access_config_detail: :class:`huaweicloudsdklts.v2.AccessConfigDeatil`
         """
         self._access_config_detail = access_config_detail
 
@@ -189,7 +208,7 @@ class UpdateAccessConfigResponse(SdkResponse):
 
 
         :return: The log_info of this UpdateAccessConfigResponse.
-        :rtype: AccessConfigQueryLogInfo
+        :rtype: :class:`huaweicloudsdklts.v2.AccessConfigQueryLogInfo`
         """
         return self._log_info
 
@@ -199,7 +218,7 @@ class UpdateAccessConfigResponse(SdkResponse):
 
 
         :param log_info: The log_info of this UpdateAccessConfigResponse.
-        :type: AccessConfigQueryLogInfo
+        :type log_info: :class:`huaweicloudsdklts.v2.AccessConfigQueryLogInfo`
         """
         self._log_info = log_info
 
@@ -209,7 +228,7 @@ class UpdateAccessConfigResponse(SdkResponse):
 
 
         :return: The host_group_info of this UpdateAccessConfigResponse.
-        :rtype: AccessConfigHostGroupIdList
+        :rtype: :class:`huaweicloudsdklts.v2.AccessConfigHostGroupIdList`
         """
         return self._host_group_info
 
@@ -219,7 +238,7 @@ class UpdateAccessConfigResponse(SdkResponse):
 
 
         :param host_group_info: The host_group_info of this UpdateAccessConfigResponse.
-        :type: AccessConfigHostGroupIdList
+        :type host_group_info: :class:`huaweicloudsdklts.v2.AccessConfigHostGroupIdList`
         """
         self._host_group_info = host_group_info
 
@@ -229,7 +248,7 @@ class UpdateAccessConfigResponse(SdkResponse):
 
 
         :return: The access_config_tag of this UpdateAccessConfigResponse.
-        :rtype: list[AccessConfigTag]
+        :rtype: list[:class:`huaweicloudsdklts.v2.AccessConfigTag`]
         """
         return self._access_config_tag
 
@@ -239,7 +258,7 @@ class UpdateAccessConfigResponse(SdkResponse):
 
 
         :param access_config_tag: The access_config_tag of this UpdateAccessConfigResponse.
-        :type: list[AccessConfigTag]
+        :type access_config_tag: list[:class:`huaweicloudsdklts.v2.AccessConfigTag`]
         """
         self._access_config_tag = access_config_tag
 

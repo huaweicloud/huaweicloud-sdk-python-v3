@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowImageWatermarkWithImageByAddressRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowImageWatermarkWithImageByAddressRequestBody:
     }
 
     def __init__(self, region_id=None, src_file=None, image_watermark=None):
-        """ShowImageWatermarkWithImageByAddressRequestBody - a model defined in huaweicloud sdk"""
+        """ShowImageWatermarkWithImageByAddressRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param region_id: 项目所在region的id，如北京一为：cn-north-1。
+        :type region_id: str
+        :param src_file: 待提取图片暗水印的图片地址，当前只支持华为云OBS对象，格式为 **obs://bucket/object** ，其中bucket为和当前项目处于同一区域的OBS桶名称，object为对象全路径名。例如：**obs://hwbucket/hwinfo/hw.png**，其中obs://表示OBS存储，hwbucket为桶名，hwinfo/hw.png为对象全路径名。
+        :type src_file: str
+        :param image_watermark: 提取出来的水印图片存放地址，格式要求同src_file。
+        :type image_watermark: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class ShowImageWatermarkWithImageByAddressRequestBody:
         项目所在region的id，如北京一为：cn-north-1。
 
         :param region_id: The region_id of this ShowImageWatermarkWithImageByAddressRequestBody.
-        :type: str
+        :type region_id: str
         """
         self._region_id = region_id
 
@@ -87,7 +96,7 @@ class ShowImageWatermarkWithImageByAddressRequestBody:
         待提取图片暗水印的图片地址，当前只支持华为云OBS对象，格式为 **obs://bucket/object** ，其中bucket为和当前项目处于同一区域的OBS桶名称，object为对象全路径名。例如：**obs://hwbucket/hwinfo/hw.png**，其中obs://表示OBS存储，hwbucket为桶名，hwinfo/hw.png为对象全路径名。
 
         :param src_file: The src_file of this ShowImageWatermarkWithImageByAddressRequestBody.
-        :type: str
+        :type src_file: str
         """
         self._src_file = src_file
 
@@ -109,7 +118,7 @@ class ShowImageWatermarkWithImageByAddressRequestBody:
         提取出来的水印图片存放地址，格式要求同src_file。
 
         :param image_watermark: The image_watermark of this ShowImageWatermarkWithImageByAddressRequestBody.
-        :type: str
+        :type image_watermark: str
         """
         self._image_watermark = image_watermark
 

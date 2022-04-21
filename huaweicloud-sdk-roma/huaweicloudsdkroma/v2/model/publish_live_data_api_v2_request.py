@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PublishLiveDataApiV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class PublishLiveDataApiV2Request:
     }
 
     def __init__(self, instance_id=None, ld_api_id=None, body=None):
-        """PublishLiveDataApiV2Request - a model defined in huaweicloud sdk"""
+        """PublishLiveDataApiV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param ld_api_id: 后端API的编号
+        :type ld_api_id: str
+        :param body: Body of the PublishLiveDataApiV2Request
+        :type body: :class:`huaweicloudsdkroma.v2.LdApiDeploy`
+        """
         
         
 
@@ -66,7 +75,7 @@ class PublishLiveDataApiV2Request:
         实例ID
 
         :param instance_id: The instance_id of this PublishLiveDataApiV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -88,7 +97,7 @@ class PublishLiveDataApiV2Request:
         后端API的编号
 
         :param ld_api_id: The ld_api_id of this PublishLiveDataApiV2Request.
-        :type: str
+        :type ld_api_id: str
         """
         self._ld_api_id = ld_api_id
 
@@ -98,7 +107,7 @@ class PublishLiveDataApiV2Request:
 
 
         :return: The body of this PublishLiveDataApiV2Request.
-        :rtype: LdApiDeploy
+        :rtype: :class:`huaweicloudsdkroma.v2.LdApiDeploy`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class PublishLiveDataApiV2Request:
 
 
         :param body: The body of this PublishLiveDataApiV2Request.
-        :type: LdApiDeploy
+        :type body: :class:`huaweicloudsdkroma.v2.LdApiDeploy`
         """
         self._body = body
 

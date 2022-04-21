@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AssumeroleSessionuser:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class AssumeroleSessionuser:
     }
 
     def __init__(self, name=None):
-        """AssumeroleSessionuser - a model defined in huaweicloud sdk"""
+        """AssumeroleSessionuser
+
+        The model defined in huaweicloud sdk
+
+        :param name: 委托方对应的企业用户名。用户名需满足如下规则：长度5~32，只能包含大写字母、小写字母、数字（0-9）、特殊字符（\&quot;-\&quot;与\&quot;_\&quot;）且只能以字母开头。
+        :type name: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class AssumeroleSessionuser:
         委托方对应的企业用户名。用户名需满足如下规则：长度5~32，只能包含大写字母、小写字母、数字（0-9）、特殊字符（\"-\"与\"_\"）且只能以字母开头。
 
         :param name: The name of this AssumeroleSessionuser.
-        :type: str
+        :type name: str
         """
         self._name = name
 

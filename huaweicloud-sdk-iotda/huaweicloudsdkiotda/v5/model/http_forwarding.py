@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class HttpForwarding:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class HttpForwarding:
     }
 
     def __init__(self, url=None, cert_id=None, cn_name=None, sni_enable=None):
-        """HttpForwarding - a model defined in huaweicloud sdk"""
+        """HttpForwarding
+
+        The model defined in huaweicloud sdk
+
+        :param url: **参数说明**：用于接收满足规则条件数据的http服务器地址。
+        :type url: str
+        :param cert_id: **参数说明**：证书id，请参见[获取证书ID](https://support.huaweicloud.com/usermanual-iothub/iot_01_0001.html#section3)
+        :type cert_id: str
+        :param cn_name: **参数说明**：当sni_enable为true时，此字段需要填写，内容为将要请求的服务端证书的域名,举例:domain:8443;当sni_enbale为false时，此字段默认不填写。
+        :type cn_name: str
+        :param sni_enable: **参数说明**：需要https服务端和客户端都支持此功能，默认为false，设成true表明Https的客户端在发起请求时，需要携带cn_name；https服务端根据cn_name返回对应的证书；设为false可关闭此功能。
+        :type sni_enable: bool
+        """
         
         
 
@@ -72,7 +83,7 @@ class HttpForwarding:
         **参数说明**：用于接收满足规则条件数据的http服务器地址。
 
         :param url: The url of this HttpForwarding.
-        :type: str
+        :type url: str
         """
         self._url = url
 
@@ -94,7 +105,7 @@ class HttpForwarding:
         **参数说明**：证书id，请参见[获取证书ID](https://support.huaweicloud.com/usermanual-iothub/iot_01_0001.html#section3)
 
         :param cert_id: The cert_id of this HttpForwarding.
-        :type: str
+        :type cert_id: str
         """
         self._cert_id = cert_id
 
@@ -116,7 +127,7 @@ class HttpForwarding:
         **参数说明**：当sni_enable为true时，此字段需要填写，内容为将要请求的服务端证书的域名,举例:domain:8443;当sni_enbale为false时，此字段默认不填写。
 
         :param cn_name: The cn_name of this HttpForwarding.
-        :type: str
+        :type cn_name: str
         """
         self._cn_name = cn_name
 
@@ -138,7 +149,7 @@ class HttpForwarding:
         **参数说明**：需要https服务端和客户端都支持此功能，默认为false，设成true表明Https的客户端在发起请求时，需要携带cn_name；https服务端根据cn_name返回对应的证书；设为false可关闭此功能。
 
         :param sni_enable: The sni_enable of this HttpForwarding.
-        :type: bool
+        :type sni_enable: bool
         """
         self._sni_enable = sni_enable
 

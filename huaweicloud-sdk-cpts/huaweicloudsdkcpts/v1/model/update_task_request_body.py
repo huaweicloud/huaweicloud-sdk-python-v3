@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateTaskRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class UpdateTaskRequestBody:
     }
 
     def __init__(self, id=None, name=None, description=None, project_id=None, run_status=None, run_type=None, task_run_info=None, case_list=None, operate_mode=None, bench_concurrent=None, related_temp_running_data=None):
-        """UpdateTaskRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateTaskRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param id: id
+        :type id: int
+        :param name: name
+        :type name: str
+        :param description: description
+        :type description: str
+        :param project_id: project_id
+        :type project_id: int
+        :param run_status: run_status
+        :type run_status: int
+        :param run_type: run_type
+        :type run_type: int
+        :param task_run_info: 
+        :type task_run_info: :class:`huaweicloudsdkcpts.v1.TaskRunInfo`
+        :param case_list: case_list
+        :type case_list: list[:class:`huaweicloudsdkcpts.v1.CaseInfo`]
+        :param operate_mode: operate_mode
+        :type operate_mode: int
+        :param bench_concurrent: bench_concurrent
+        :type bench_concurrent: int
+        :param related_temp_running_data: related_temp_running_data
+        :type related_temp_running_data: list[:class:`huaweicloudsdkcpts.v1.RelatedTempRunningData`]
+        """
         
         
 
@@ -105,7 +130,7 @@ class UpdateTaskRequestBody:
         id
 
         :param id: The id of this UpdateTaskRequestBody.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -127,7 +152,7 @@ class UpdateTaskRequestBody:
         name
 
         :param name: The name of this UpdateTaskRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -149,7 +174,7 @@ class UpdateTaskRequestBody:
         description
 
         :param description: The description of this UpdateTaskRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -171,7 +196,7 @@ class UpdateTaskRequestBody:
         project_id
 
         :param project_id: The project_id of this UpdateTaskRequestBody.
-        :type: int
+        :type project_id: int
         """
         self._project_id = project_id
 
@@ -193,7 +218,7 @@ class UpdateTaskRequestBody:
         run_status
 
         :param run_status: The run_status of this UpdateTaskRequestBody.
-        :type: int
+        :type run_status: int
         """
         self._run_status = run_status
 
@@ -215,7 +240,7 @@ class UpdateTaskRequestBody:
         run_type
 
         :param run_type: The run_type of this UpdateTaskRequestBody.
-        :type: int
+        :type run_type: int
         """
         self._run_type = run_type
 
@@ -225,7 +250,7 @@ class UpdateTaskRequestBody:
 
 
         :return: The task_run_info of this UpdateTaskRequestBody.
-        :rtype: TaskRunInfo
+        :rtype: :class:`huaweicloudsdkcpts.v1.TaskRunInfo`
         """
         return self._task_run_info
 
@@ -235,7 +260,7 @@ class UpdateTaskRequestBody:
 
 
         :param task_run_info: The task_run_info of this UpdateTaskRequestBody.
-        :type: TaskRunInfo
+        :type task_run_info: :class:`huaweicloudsdkcpts.v1.TaskRunInfo`
         """
         self._task_run_info = task_run_info
 
@@ -246,7 +271,7 @@ class UpdateTaskRequestBody:
         case_list
 
         :return: The case_list of this UpdateTaskRequestBody.
-        :rtype: list[CaseInfo]
+        :rtype: list[:class:`huaweicloudsdkcpts.v1.CaseInfo`]
         """
         return self._case_list
 
@@ -257,7 +282,7 @@ class UpdateTaskRequestBody:
         case_list
 
         :param case_list: The case_list of this UpdateTaskRequestBody.
-        :type: list[CaseInfo]
+        :type case_list: list[:class:`huaweicloudsdkcpts.v1.CaseInfo`]
         """
         self._case_list = case_list
 
@@ -279,7 +304,7 @@ class UpdateTaskRequestBody:
         operate_mode
 
         :param operate_mode: The operate_mode of this UpdateTaskRequestBody.
-        :type: int
+        :type operate_mode: int
         """
         self._operate_mode = operate_mode
 
@@ -301,7 +326,7 @@ class UpdateTaskRequestBody:
         bench_concurrent
 
         :param bench_concurrent: The bench_concurrent of this UpdateTaskRequestBody.
-        :type: int
+        :type bench_concurrent: int
         """
         self._bench_concurrent = bench_concurrent
 
@@ -312,7 +337,7 @@ class UpdateTaskRequestBody:
         related_temp_running_data
 
         :return: The related_temp_running_data of this UpdateTaskRequestBody.
-        :rtype: list[RelatedTempRunningData]
+        :rtype: list[:class:`huaweicloudsdkcpts.v1.RelatedTempRunningData`]
         """
         return self._related_temp_running_data
 
@@ -323,7 +348,7 @@ class UpdateTaskRequestBody:
         related_temp_running_data
 
         :param related_temp_running_data: The related_temp_running_data of this UpdateTaskRequestBody.
-        :type: list[RelatedTempRunningData]
+        :type related_temp_running_data: list[:class:`huaweicloudsdkcpts.v1.RelatedTempRunningData`]
         """
         self._related_temp_running_data = related_temp_running_data
 

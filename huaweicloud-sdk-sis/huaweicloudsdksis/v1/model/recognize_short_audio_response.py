@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RecognizeShortAudioResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RecognizeShortAudioResponse(SdkResponse):
     }
 
     def __init__(self, trace_id=None, result=None):
-        """RecognizeShortAudioResponse - a model defined in huaweicloud sdk"""
+        """RecognizeShortAudioResponse
+
+        The model defined in huaweicloud sdk
+
+        :param trace_id: 服务内部的令牌，可用于在日志中追溯具体流程，调用失败无此字段。  在某些错误情况下可能没有此令牌字符串。
+        :type trace_id: str
+        :param result: 
+        :type result: :class:`huaweicloudsdksis.v1.Result`
+        """
         
         super(RecognizeShortAudioResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class RecognizeShortAudioResponse(SdkResponse):
         服务内部的令牌，可用于在日志中追溯具体流程，调用失败无此字段。  在某些错误情况下可能没有此令牌字符串。
 
         :param trace_id: The trace_id of this RecognizeShortAudioResponse.
-        :type: str
+        :type trace_id: str
         """
         self._trace_id = trace_id
 
@@ -73,7 +80,7 @@ class RecognizeShortAudioResponse(SdkResponse):
 
 
         :return: The result of this RecognizeShortAudioResponse.
-        :rtype: Result
+        :rtype: :class:`huaweicloudsdksis.v1.Result`
         """
         return self._result
 
@@ -83,7 +90,7 @@ class RecognizeShortAudioResponse(SdkResponse):
 
 
         :param result: The result of this RecognizeShortAudioResponse.
-        :type: Result
+        :type result: :class:`huaweicloudsdksis.v1.Result`
         """
         self._result = result
 

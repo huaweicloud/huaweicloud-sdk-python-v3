@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LineCompareResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class LineCompareResult:
     }
 
     def __init__(self, compare_task_id=None, line_compare_overview=None, line_compare_overview_count=None, line_compare_details=None, error_code=None, error_msg=None):
-        """LineCompareResult - a model defined in huaweicloud sdk"""
+        """LineCompareResult
+
+        The model defined in huaweicloud sdk
+
+        :param compare_task_id: 行对比任务的id。
+        :type compare_task_id: str
+        :param line_compare_overview: 行对比结果概览。
+        :type line_compare_overview: list[:class:`huaweicloudsdkdrs.v3.LineCompareResultOverview`]
+        :param line_compare_overview_count: 行对比结果概览总数。
+        :type line_compare_overview_count: int
+        :param line_compare_details: 行对比结果详情。
+        :type line_compare_details: list[:class:`huaweicloudsdkdrs.v3.LineCompareResultDetails`]
+        :param error_code: 错误码。
+        :type error_code: str
+        :param error_msg: 错误信息。
+        :type error_msg: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class LineCompareResult:
         行对比任务的id。
 
         :param compare_task_id: The compare_task_id of this LineCompareResult.
-        :type: str
+        :type compare_task_id: str
         """
         self._compare_task_id = compare_task_id
 
@@ -94,7 +109,7 @@ class LineCompareResult:
         行对比结果概览。
 
         :return: The line_compare_overview of this LineCompareResult.
-        :rtype: list[LineCompareResultOverview]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.LineCompareResultOverview`]
         """
         return self._line_compare_overview
 
@@ -105,7 +120,7 @@ class LineCompareResult:
         行对比结果概览。
 
         :param line_compare_overview: The line_compare_overview of this LineCompareResult.
-        :type: list[LineCompareResultOverview]
+        :type line_compare_overview: list[:class:`huaweicloudsdkdrs.v3.LineCompareResultOverview`]
         """
         self._line_compare_overview = line_compare_overview
 
@@ -127,7 +142,7 @@ class LineCompareResult:
         行对比结果概览总数。
 
         :param line_compare_overview_count: The line_compare_overview_count of this LineCompareResult.
-        :type: int
+        :type line_compare_overview_count: int
         """
         self._line_compare_overview_count = line_compare_overview_count
 
@@ -138,7 +153,7 @@ class LineCompareResult:
         行对比结果详情。
 
         :return: The line_compare_details of this LineCompareResult.
-        :rtype: list[LineCompareResultDetails]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.LineCompareResultDetails`]
         """
         return self._line_compare_details
 
@@ -149,7 +164,7 @@ class LineCompareResult:
         行对比结果详情。
 
         :param line_compare_details: The line_compare_details of this LineCompareResult.
-        :type: list[LineCompareResultDetails]
+        :type line_compare_details: list[:class:`huaweicloudsdkdrs.v3.LineCompareResultDetails`]
         """
         self._line_compare_details = line_compare_details
 
@@ -171,7 +186,7 @@ class LineCompareResult:
         错误码。
 
         :param error_code: The error_code of this LineCompareResult.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -193,7 +208,7 @@ class LineCompareResult:
         错误信息。
 
         :param error_msg: The error_msg of this LineCompareResult.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 

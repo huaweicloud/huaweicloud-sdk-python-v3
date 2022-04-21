@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestoreToExistingInstanceRequestBodySource:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -26,8 +25,7 @@ class RestoreToExistingInstanceRequestBodySource:
         'type': 'str',
         'backup_id': 'str',
         'restore_time': 'int',
-        'database_name': 'dict(str, str)',
-        'restore_all_database': 'bool'
+        'database_name': 'dict(str, str)'
     }
 
     attribute_map = {
@@ -35,12 +33,25 @@ class RestoreToExistingInstanceRequestBodySource:
         'type': 'type',
         'backup_id': 'backup_id',
         'restore_time': 'restore_time',
-        'database_name': 'database_name',
-        'restore_all_database': 'restore_all_database'
+        'database_name': 'database_name'
     }
 
-    def __init__(self, instance_id=None, type=None, backup_id=None, restore_time=None, database_name=None, restore_all_database=None):
-        """RestoreToExistingInstanceRequestBodySource - a model defined in huaweicloud sdk"""
+    def __init__(self, instance_id=None, type=None, backup_id=None, restore_time=None, database_name=None):
+        """RestoreToExistingInstanceRequestBodySource
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param type: 表示恢复方式，枚举值：  - “backup”，表示使用备份文件恢复，按照此方式恢复时，“type”字段为非必选，“backup_id”必选。 - “timestamp”，表示按时间点恢复，按照此方式恢复时，“type”字段必选，“restore_time”必选。
+        :type type: str
+        :param backup_id: 用于恢复的备份ID。当使用备份文件恢复时需要指定该参数。
+        :type backup_id: str
+        :param restore_time: 恢复数据的时间点，格式为UNIX时间戳，单位是毫秒，时区为UTC。
+        :type restore_time: int
+        :param database_name: 仅适用于SQL Server引擎，当有此参数时表示支持局部恢复和重命名恢复，恢复数据以局部恢复为主。不填写该字段时，默认恢复全部数据库。 - 新数据库名称不可与源实例或目标实例数据库名称重名，新数据库名称为空，默认按照原数据库名进行恢复。 - 新数据库名不能包含rdsadmin、master、msdb、tempdb、model或resource字段（不区分大小写）。 - 数据库名称长度在1~64个字符之间，包含字母、数字、下划线或中划线，不能包含其他特殊字符。
+        :type database_name: dict(str, str)
+        """
         
         
 
@@ -49,7 +60,6 @@ class RestoreToExistingInstanceRequestBodySource:
         self._backup_id = None
         self._restore_time = None
         self._database_name = None
-        self._restore_all_database = None
         self.discriminator = None
 
         self.instance_id = instance_id
@@ -61,8 +71,6 @@ class RestoreToExistingInstanceRequestBodySource:
             self.restore_time = restore_time
         if database_name is not None:
             self.database_name = database_name
-        if restore_all_database is not None:
-            self.restore_all_database = restore_all_database
 
     @property
     def instance_id(self):
@@ -82,7 +90,7 @@ class RestoreToExistingInstanceRequestBodySource:
         实例ID。
 
         :param instance_id: The instance_id of this RestoreToExistingInstanceRequestBodySource.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -104,7 +112,7 @@ class RestoreToExistingInstanceRequestBodySource:
         表示恢复方式，枚举值：  - “backup”，表示使用备份文件恢复，按照此方式恢复时，“type”字段为非必选，“backup_id”必选。 - “timestamp”，表示按时间点恢复，按照此方式恢复时，“type”字段必选，“restore_time”必选。
 
         :param type: The type of this RestoreToExistingInstanceRequestBodySource.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -126,7 +134,7 @@ class RestoreToExistingInstanceRequestBodySource:
         用于恢复的备份ID。当使用备份文件恢复时需要指定该参数。
 
         :param backup_id: The backup_id of this RestoreToExistingInstanceRequestBodySource.
-        :type: str
+        :type backup_id: str
         """
         self._backup_id = backup_id
 
@@ -148,7 +156,7 @@ class RestoreToExistingInstanceRequestBodySource:
         恢复数据的时间点，格式为UNIX时间戳，单位是毫秒，时区为UTC。
 
         :param restore_time: The restore_time of this RestoreToExistingInstanceRequestBodySource.
-        :type: int
+        :type restore_time: int
         """
         self._restore_time = restore_time
 
@@ -170,31 +178,9 @@ class RestoreToExistingInstanceRequestBodySource:
         仅适用于SQL Server引擎，当有此参数时表示支持局部恢复和重命名恢复，恢复数据以局部恢复为主。不填写该字段时，默认恢复全部数据库。 - 新数据库名称不可与源实例或目标实例数据库名称重名，新数据库名称为空，默认按照原数据库名进行恢复。 - 新数据库名不能包含rdsadmin、master、msdb、tempdb、model或resource字段（不区分大小写）。 - 数据库名称长度在1~64个字符之间，包含字母、数字、下划线或中划线，不能包含其他特殊字符。
 
         :param database_name: The database_name of this RestoreToExistingInstanceRequestBodySource.
-        :type: dict(str, str)
+        :type database_name: dict(str, str)
         """
         self._database_name = database_name
-
-    @property
-    def restore_all_database(self):
-        """Gets the restore_all_database of this RestoreToExistingInstanceRequestBodySource.
-
-        该字段仅适用于SQL Server引擎。是否恢复所有数据库，不填写该字段默认为false，不会恢复所有数据库到目标实例。 - 须知： 如果您想恢复所有数据库到已有实例，必须设置restore_all_database为true。
-
-        :return: The restore_all_database of this RestoreToExistingInstanceRequestBodySource.
-        :rtype: bool
-        """
-        return self._restore_all_database
-
-    @restore_all_database.setter
-    def restore_all_database(self, restore_all_database):
-        """Sets the restore_all_database of this RestoreToExistingInstanceRequestBodySource.
-
-        该字段仅适用于SQL Server引擎。是否恢复所有数据库，不填写该字段默认为false，不会恢复所有数据库到目标实例。 - 须知： 如果您想恢复所有数据库到已有实例，必须设置restore_all_database为true。
-
-        :param restore_all_database: The restore_all_database of this RestoreToExistingInstanceRequestBodySource.
-        :type: bool
-        """
-        self._restore_all_database = restore_all_database
 
     def to_dict(self):
         """Returns the model properties as a dict"""

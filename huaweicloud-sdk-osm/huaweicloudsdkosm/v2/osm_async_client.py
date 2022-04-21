@@ -52,21 +52,17 @@ class OsmAsyncClient(Client):
         """验证授权主机
 
         验证授权主机密码是否正确
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CheckHostsRequest request
-        :return: CheckHostsResponse
+        :param request: Request instance for CheckHosts
+        :type request: :class:`huaweicloudsdkosm.v2.CheckHostsRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.CheckHostsResponse`
         """
         return self.check_hosts_with_http_info(request)
 
     def check_hosts_with_http_info(self, request):
-        """验证授权主机
-
-        验证授权主机密码是否正确
-
-        :param CheckHostsRequest request
-        :return: CheckHostsResponse
-        """
-
         all_params = ['authorization_detail_id', 'x_site', 'x_language', 'x_time_zone', 'check_hosts_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -118,26 +114,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def check_need_verify_async(self, request):
         """是否需要验证
 
         是否需要验证
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CheckNeedVerifyRequest request
-        :return: CheckNeedVerifyResponse
+        :param request: Request instance for CheckNeedVerify
+        :type request: :class:`huaweicloudsdkosm.v2.CheckNeedVerifyRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.CheckNeedVerifyResponse`
         """
         return self.check_need_verify_with_http_info(request)
 
     def check_need_verify_with_http_info(self, request):
-        """是否需要验证
-
-        是否需要验证
-
-        :param CheckNeedVerifyRequest request
-        :return: CheckNeedVerifyResponse
-        """
-
         all_params = ['contact_value', 'contact_way', 'area_code', 'x_site', 'x_language', 'x_time_zone']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -191,26 +182,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def check_verify_codes_async(self, request):
         """验证联系方式
 
         验证联系方式
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CheckVerifyCodesRequest request
-        :return: CheckVerifyCodesResponse
+        :param request: Request instance for CheckVerifyCodes
+        :type request: :class:`huaweicloudsdkosm.v2.CheckVerifyCodesRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.CheckVerifyCodesResponse`
         """
         return self.check_verify_codes_with_http_info(request)
 
     def check_verify_codes_with_http_info(self, request):
-        """验证联系方式
-
-        验证联系方式
-
-        :param CheckVerifyCodesRequest request
-        :return: CheckVerifyCodesResponse
-        """
-
         all_params = ['x_site', 'x_language', 'x_time_zone', 'check_verify_codes_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -260,26 +246,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def confirm_authorizations_async(self, request):
         """租户确认授权
 
         租户确认授权
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ConfirmAuthorizationsRequest request
-        :return: ConfirmAuthorizationsResponse
+        :param request: Request instance for ConfirmAuthorizations
+        :type request: :class:`huaweicloudsdkosm.v2.ConfirmAuthorizationsRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ConfirmAuthorizationsResponse`
         """
         return self.confirm_authorizations_with_http_info(request)
 
     def confirm_authorizations_with_http_info(self, request):
-        """租户确认授权
-
-        租户确认授权
-
-        :param ConfirmAuthorizationsRequest request
-        :return: ConfirmAuthorizationsResponse
-        """
-
         all_params = ['authorization_id', 'x_site', 'x_language', 'x_time_zone', 'confirm_authorizations_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -331,26 +312,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_case_labels_async(self, request):
         """添加工单关联标签接口
 
         添加工单关联标签接口
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateCaseLabelsRequest request
-        :return: CreateCaseLabelsResponse
+        :param request: Request instance for CreateCaseLabels
+        :type request: :class:`huaweicloudsdkosm.v2.CreateCaseLabelsRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.CreateCaseLabelsResponse`
         """
         return self.create_case_labels_with_http_info(request)
 
     def create_case_labels_with_http_info(self, request):
-        """添加工单关联标签接口
-
-        添加工单关联标签接口
-
-        :param CreateCaseLabelsRequest request
-        :return: CreateCaseLabelsResponse
-        """
-
         all_params = ['case_id', 'label_ids', 'x_site', 'x_language', 'x_time_zone']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -403,26 +379,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_cases_async(self, request):
         """创建工单
 
         创建工单
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateCasesRequest request
-        :return: CreateCasesResponse
+        :param request: Request instance for CreateCases
+        :type request: :class:`huaweicloudsdkosm.v2.CreateCasesRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.CreateCasesResponse`
         """
         return self.create_cases_with_http_info(request)
 
     def create_cases_with_http_info(self, request):
-        """创建工单
-
-        创建工单
-
-        :param CreateCasesRequest request
-        :return: CreateCasesResponse
-        """
-
         all_params = ['x_site', 'x_language', 'x_time_zone', 'x_phone_verifiedid', 'x_email_verifiedid', 'create_cases_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -476,26 +447,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_labels_async(self, request):
         """创建标签
 
         创建标签
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateLabelsRequest request
-        :return: CreateLabelsResponse
+        :param request: Request instance for CreateLabels
+        :type request: :class:`huaweicloudsdkosm.v2.CreateLabelsRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.CreateLabelsResponse`
         """
         return self.create_labels_with_http_info(request)
 
     def create_labels_with_http_info(self, request):
-        """创建标签
-
-        创建标签
-
-        :param CreateLabelsRequest request
-        :return: CreateLabelsResponse
-        """
-
         all_params = ['create_labels_request_body', 'x_site', 'x_language', 'x_time_zone']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -545,26 +511,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_messages_async(self, request):
         """提交留言
 
         提交留言
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateMessagesRequest request
-        :return: CreateMessagesResponse
+        :param request: Request instance for CreateMessages
+        :type request: :class:`huaweicloudsdkosm.v2.CreateMessagesRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.CreateMessagesResponse`
         """
         return self.create_messages_with_http_info(request)
 
     def create_messages_with_http_info(self, request):
-        """提交留言
-
-        提交留言
-
-        :param CreateMessagesRequest request
-        :return: CreateMessagesResponse
-        """
-
         all_params = ['case_id', 'x_site', 'x_language', 'x_time_zone', 'create_messages_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -616,26 +577,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_privileges_async(self, request):
         """创建授权
 
         创建授权
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreatePrivilegesRequest request
-        :return: CreatePrivilegesResponse
+        :param request: Request instance for CreatePrivileges
+        :type request: :class:`huaweicloudsdkosm.v2.CreatePrivilegesRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.CreatePrivilegesResponse`
         """
         return self.create_privileges_with_http_info(request)
 
     def create_privileges_with_http_info(self, request):
-        """创建授权
-
-        创建授权
-
-        :param CreatePrivilegesRequest request
-        :return: CreatePrivilegesResponse
-        """
-
         all_params = ['x_site', 'x_language', 'x_time_zone', 'create_privileges_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -685,26 +641,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_relations_async(self, request):
         """创建关联
 
         创建关联，一个工单最多支持3个关联
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateRelationsRequest request
-        :return: CreateRelationsResponse
+        :param request: Request instance for CreateRelations
+        :type request: :class:`huaweicloudsdkosm.v2.CreateRelationsRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.CreateRelationsResponse`
         """
         return self.create_relations_with_http_info(request)
 
     def create_relations_with_http_info(self, request):
-        """创建关联
-
-        创建关联，一个工单最多支持3个关联
-
-        :param CreateRelationsRequest request
-        :return: CreateRelationsResponse
-        """
-
         all_params = ['case_id', 'create_relations_request_body', 'x_site', 'x_language', 'x_time_zone']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -756,26 +707,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_scores_async(self, request):
         """提交评分
 
         提交评分
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateScoresRequest request
-        :return: CreateScoresResponse
+        :param request: Request instance for CreateScores
+        :type request: :class:`huaweicloudsdkosm.v2.CreateScoresRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.CreateScoresResponse`
         """
         return self.create_scores_with_http_info(request)
 
     def create_scores_with_http_info(self, request):
-        """提交评分
-
-        提交评分
-
-        :param CreateScoresRequest request
-        :return: CreateScoresResponse
-        """
-
         all_params = ['case_id', 'x_site', 'x_language', 'x_time_zone', 'create_scores_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -827,26 +773,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_accessories_async(self, request):
         """删除附件
 
         删除附件
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteAccessoriesRequest request
-        :return: DeleteAccessoriesResponse
+        :param request: Request instance for DeleteAccessories
+        :type request: :class:`huaweicloudsdkosm.v2.DeleteAccessoriesRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.DeleteAccessoriesResponse`
         """
         return self.delete_accessories_with_http_info(request)
 
     def delete_accessories_with_http_info(self, request):
-        """删除附件
-
-        删除附件
-
-        :param DeleteAccessoriesRequest request
-        :return: DeleteAccessoriesResponse
-        """
-
         all_params = ['accessory_id', 'x_site', 'x_language', 'x_time_zone']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -896,26 +837,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_case_labels_async(self, request):
         """删除工单关联标签接口
 
         删除指定工单关联标签接口
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteCaseLabelsRequest request
-        :return: DeleteCaseLabelsResponse
+        :param request: Request instance for DeleteCaseLabels
+        :type request: :class:`huaweicloudsdkosm.v2.DeleteCaseLabelsRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.DeleteCaseLabelsResponse`
         """
         return self.delete_case_labels_with_http_info(request)
 
     def delete_case_labels_with_http_info(self, request):
-        """删除工单关联标签接口
-
-        删除指定工单关联标签接口
-
-        :param DeleteCaseLabelsRequest request
-        :return: DeleteCaseLabelsResponse
-        """
-
         all_params = ['case_id', 'label_ids', 'x_site', 'x_language', 'x_time_zone']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -968,26 +904,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_labels_async(self, request):
         """删除标签
 
         删除标签，同时会删除工单与标签关联关系
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteLabelsRequest request
-        :return: DeleteLabelsResponse
+        :param request: Request instance for DeleteLabels
+        :type request: :class:`huaweicloudsdkosm.v2.DeleteLabelsRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.DeleteLabelsResponse`
         """
         return self.delete_labels_with_http_info(request)
 
     def delete_labels_with_http_info(self, request):
-        """删除标签
-
-        删除标签，同时会删除工单与标签关联关系
-
-        :param DeleteLabelsRequest request
-        :return: DeleteLabelsResponse
-        """
-
         all_params = ['label_id', 'x_site', 'x_language', 'x_time_zone']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1037,26 +968,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_relation_async(self, request):
         """删除关联
 
         删除关联
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteRelationRequest request
-        :return: DeleteRelationResponse
+        :param request: Request instance for DeleteRelation
+        :type request: :class:`huaweicloudsdkosm.v2.DeleteRelationRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.DeleteRelationResponse`
         """
         return self.delete_relation_with_http_info(request)
 
     def delete_relation_with_http_info(self, request):
-        """删除关联
-
-        删除关联
-
-        :param DeleteRelationRequest request
-        :return: DeleteRelationResponse
-        """
-
         all_params = ['case_id', 'delete_relation_request_body', 'x_site', 'x_language', 'x_time_zone']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1108,26 +1034,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def download_accessories_async(self, request):
         """下载附件
 
         下载附件
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DownloadAccessoriesRequest request
-        :return: DownloadAccessoriesResponse
+        :param request: Request instance for DownloadAccessories
+        :type request: :class:`huaweicloudsdkosm.v2.DownloadAccessoriesRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.DownloadAccessoriesResponse`
         """
         return self.download_accessories_with_http_info(request)
 
     def download_accessories_with_http_info(self, request):
-        """下载附件
-
-        下载附件
-
-        :param DownloadAccessoriesRequest request
-        :return: DownloadAccessoriesResponse
-        """
-
         all_params = ['accessory_id', 'group_id', 'x_site', 'x_language', 'x_time_zone']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1179,26 +1100,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def download_cases_async(self, request):
         """工单导出
 
         工单导出
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DownloadCasesRequest request
-        :return: DownloadCasesResponse
+        :param request: Request instance for DownloadCases
+        :type request: :class:`huaweicloudsdkosm.v2.DownloadCasesRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.DownloadCasesResponse`
         """
         return self.download_cases_with_http_info(request)
 
     def download_cases_with_http_info(self, request):
-        """工单导出
-
-        工单导出
-
-        :param DownloadCasesRequest request
-        :return: DownloadCasesResponse
-        """
-
         all_params = ['language', 'timezone', 'incident_id', 'query_start_time', 'query_end_time', 'x_customer_name', 'search_key', 'status', 'customer_id', 'tenant_source_id_list', 'sub_customer_id', 'offset', 'limit', 'x_site', 'x_language', 'x_time_zone']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1273,26 +1189,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def download_images_async(self, request):
         """图片展示
 
         返回图片内容，用于页面直接展示
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DownloadImagesRequest request
-        :return: DownloadImagesResponse
+        :param request: Request instance for DownloadImages
+        :type request: :class:`huaweicloudsdkosm.v2.DownloadImagesRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.DownloadImagesResponse`
         """
         return self.download_images_with_http_info(request)
 
     def download_images_with_http_info(self, request):
-        """图片展示
-
-        返回图片内容，用于页面直接展示
-
-        :param DownloadImagesRequest request
-        :return: DownloadImagesResponse
-        """
-
         all_params = ['accessory_id', 'group_id', 'x_site', 'x_language', 'x_time_zone']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1344,26 +1255,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_agencies_async(self, request):
         """查询委托
 
         查询委托
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListAgenciesRequest request
-        :return: ListAgenciesResponse
+        :param request: Request instance for ListAgencies
+        :type request: :class:`huaweicloudsdkosm.v2.ListAgenciesRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ListAgenciesResponse`
         """
         return self.list_agencies_with_http_info(request)
 
     def list_agencies_with_http_info(self, request):
-        """查询委托
-
-        查询委托
-
-        :param ListAgenciesRequest request
-        :return: ListAgenciesResponse
-        """
-
         all_params = ['x_site', 'x_language', 'x_time_zone']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1411,26 +1317,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_area_codes_async(self, request):
         """查询国家码
 
         查询国家码，用于提交工单页面填写联系方式使用
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListAreaCodesRequest request
-        :return: ListAreaCodesResponse
+        :param request: Request instance for ListAreaCodes
+        :type request: :class:`huaweicloudsdkosm.v2.ListAreaCodesRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ListAreaCodesResponse`
         """
         return self.list_area_codes_with_http_info(request)
 
     def list_area_codes_with_http_info(self, request):
-        """查询国家码
-
-        查询国家码，用于提交工单页面填写联系方式使用
-
-        :param ListAreaCodesRequest request
-        :return: ListAreaCodesResponse
-        """
-
         all_params = ['x_site', 'x_language', 'x_time_zone']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1478,26 +1379,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_authorizations_async(self, request):
         """查看授权列表
 
         查询授权列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListAuthorizationsRequest request
-        :return: ListAuthorizationsResponse
+        :param request: Request instance for ListAuthorizations
+        :type request: :class:`huaweicloudsdkosm.v2.ListAuthorizationsRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ListAuthorizationsResponse`
         """
         return self.list_authorizations_with_http_info(request)
 
     def list_authorizations_with_http_info(self, request):
-        """查看授权列表
-
-        查询授权列表
-
-        :param ListAuthorizationsRequest request
-        :return: ListAuthorizationsResponse
-        """
-
         all_params = ['sub_customer_name', 'incident_id', 'status', 'simple_description', 'offset', 'limit', 'group_id', 'x_site', 'x_language', 'x_time_zone']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1559,26 +1455,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_case_categories_async(self, request):
         """查询工单类目列表
 
         查询工单类目列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListCaseCategoriesRequest request
-        :return: ListCaseCategoriesResponse
+        :param request: Request instance for ListCaseCategories
+        :type request: :class:`huaweicloudsdkosm.v2.ListCaseCategoriesRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ListCaseCategoriesResponse`
         """
         return self.list_case_categories_with_http_info(request)
 
     def list_case_categories_with_http_info(self, request):
-        """查询工单类目列表
-
-        查询工单类目列表
-
-        :param ListCaseCategoriesRequest request
-        :return: ListCaseCategoriesResponse
-        """
-
         all_params = ['x_site', 'x_language', 'x_time_zone']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1626,26 +1517,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_case_cc_emails_async(self, request):
         """查询工单抄送邮箱
 
         查询工单抄送邮箱
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListCaseCcEmailsRequest request
-        :return: ListCaseCcEmailsResponse
+        :param request: Request instance for ListCaseCcEmails
+        :type request: :class:`huaweicloudsdkosm.v2.ListCaseCcEmailsRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ListCaseCcEmailsResponse`
         """
         return self.list_case_cc_emails_with_http_info(request)
 
     def list_case_cc_emails_with_http_info(self, request):
-        """查询工单抄送邮箱
-
-        查询工单抄送邮箱
-
-        :param ListCaseCcEmailsRequest request
-        :return: ListCaseCcEmailsResponse
-        """
-
         all_params = ['x_site', 'x_language', 'x_time_zone']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1693,26 +1579,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_case_counts_async(self, request):
         """统计各状态工单数量
 
         统计各状态工单数量
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListCaseCountsRequest request
-        :return: ListCaseCountsResponse
+        :param request: Request instance for ListCaseCounts
+        :type request: :class:`huaweicloudsdkosm.v2.ListCaseCountsRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ListCaseCountsResponse`
         """
         return self.list_case_counts_with_http_info(request)
 
     def list_case_counts_with_http_info(self, request):
-        """统计各状态工单数量
-
-        统计各状态工单数量
-
-        :param ListCaseCountsRequest request
-        :return: ListCaseCountsResponse
-        """
-
         all_params = ['status', 'x_site', 'x_language', 'x_time_zone']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1762,26 +1643,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_case_labels_async(self, request):
         """查询工单关联标签接口
 
         查询工单关联标签接口
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListCaseLabelsRequest request
-        :return: ListCaseLabelsResponse
+        :param request: Request instance for ListCaseLabels
+        :type request: :class:`huaweicloudsdkosm.v2.ListCaseLabelsRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ListCaseLabelsResponse`
         """
         return self.list_case_labels_with_http_info(request)
 
     def list_case_labels_with_http_info(self, request):
-        """查询工单关联标签接口
-
-        查询工单关联标签接口
-
-        :param ListCaseLabelsRequest request
-        :return: ListCaseLabelsResponse
-        """
-
         all_params = ['case_id', 'x_site', 'x_language', 'x_time_zone']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1831,26 +1707,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_case_limits_async(self, request):
         """查询工单限制，比如抄送邮箱个数等
 
         查询工单限制，比如抄送邮箱个数等
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListCaseLimitsRequest request
-        :return: ListCaseLimitsResponse
+        :param request: Request instance for ListCaseLimits
+        :type request: :class:`huaweicloudsdkosm.v2.ListCaseLimitsRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ListCaseLimitsResponse`
         """
         return self.list_case_limits_with_http_info(request)
 
     def list_case_limits_with_http_info(self, request):
-        """查询工单限制，比如抄送邮箱个数等
-
-        查询工单限制，比如抄送邮箱个数等
-
-        :param ListCaseLimitsRequest request
-        :return: ListCaseLimitsResponse
-        """
-
         all_params = ['x_site', 'x_language', 'x_time_zone']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1898,26 +1769,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_case_operate_logs_async(self, request):
         """查询工单操作日志
 
         查询工单操作日志
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListCaseOperateLogsRequest request
-        :return: ListCaseOperateLogsResponse
+        :param request: Request instance for ListCaseOperateLogs
+        :type request: :class:`huaweicloudsdkosm.v2.ListCaseOperateLogsRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ListCaseOperateLogsResponse`
         """
         return self.list_case_operate_logs_with_http_info(request)
 
     def list_case_operate_logs_with_http_info(self, request):
-        """查询工单操作日志
-
-        查询工单操作日志
-
-        :param ListCaseOperateLogsRequest request
-        :return: ListCaseOperateLogsResponse
-        """
-
         all_params = ['case_id', 'group_id', 'offset', 'limit', 'x_site', 'x_language', 'x_time_zone']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1973,26 +1839,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_case_quotas_async(self, request):
         """查询工单配额
 
         查询工单配额
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListCaseQuotasRequest request
-        :return: ListCaseQuotasResponse
+        :param request: Request instance for ListCaseQuotas
+        :type request: :class:`huaweicloudsdkosm.v2.ListCaseQuotasRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ListCaseQuotasResponse`
         """
         return self.list_case_quotas_with_http_info(request)
 
     def list_case_quotas_with_http_info(self, request):
-        """查询工单配额
-
-        查询工单配额
-
-        :param ListCaseQuotasRequest request
-        :return: ListCaseQuotasResponse
-        """
-
         all_params = ['business_type_id', 'product_category_id', 'x_site', 'x_language', 'x_time_zone']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2044,26 +1905,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_case_templates_async(self, request):
         """查询问题类型对应模板
 
         查询问题类型对应模板
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListCaseTemplatesRequest request
-        :return: ListCaseTemplatesResponse
+        :param request: Request instance for ListCaseTemplates
+        :type request: :class:`huaweicloudsdkosm.v2.ListCaseTemplatesRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ListCaseTemplatesResponse`
         """
         return self.list_case_templates_with_http_info(request)
 
     def list_case_templates_with_http_info(self, request):
-        """查询问题类型对应模板
-
-        查询问题类型对应模板
-
-        :param ListCaseTemplatesRequest request
-        :return: ListCaseTemplatesResponse
-        """
-
         all_params = ['business_type_id', 'x_site', 'x_language', 'x_time_zone']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2113,26 +1969,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_cases_async(self, request):
         """查询工单列表接口
 
         查询工单列表接口
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListCasesRequest request
-        :return: ListCasesResponse
+        :param request: Request instance for ListCases
+        :type request: :class:`huaweicloudsdkosm.v2.ListCasesRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ListCasesResponse`
         """
         return self.list_cases_with_http_info(request)
 
     def list_cases_with_http_info(self, request):
-        """查询工单列表接口
-
-        查询工单列表接口
-
-        :param ListCasesRequest request
-        :return: ListCasesResponse
-        """
-
         all_params = ['search_key', 'label_id_list', 'app_key', 'incident_id', 'query_start_time', 'query_end_time', 'status', 'incident_status', 'x_customer_id', 'x_customer_name', 'group_id', 'offset', 'limit', 'x_site', 'x_language', 'x_time_zone']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2208,26 +2059,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_extends_params_async(self, request):
         """查询附加参数
 
         提单时，根据不同的产品或者问题类型，会存在不同的一些附加参数填写
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListExtendsParamsRequest request
-        :return: ListExtendsParamsResponse
+        :param request: Request instance for ListExtendsParams
+        :type request: :class:`huaweicloudsdkosm.v2.ListExtendsParamsRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ListExtendsParamsResponse`
         """
         return self.list_extends_params_with_http_info(request)
 
     def list_extends_params_with_http_info(self, request):
-        """查询附加参数
-
-        提单时，根据不同的产品或者问题类型，会存在不同的一些附加参数填写
-
-        :param ListExtendsParamsRequest request
-        :return: ListExtendsParamsResponse
-        """
-
         all_params = ['business_type_id', 'incident_sub_type_id', 'product_category_id', 'x_site', 'x_language', 'x_time_zone']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2281,26 +2127,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_has_verified_contacts_async(self, request):
         """查询已验证的列表
 
         查询已验证的列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListHasVerifiedContactsRequest request
-        :return: ListHasVerifiedContactsResponse
+        :param request: Request instance for ListHasVerifiedContacts
+        :type request: :class:`huaweicloudsdkosm.v2.ListHasVerifiedContactsRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ListHasVerifiedContactsResponse`
         """
         return self.list_has_verified_contacts_with_http_info(request)
 
     def list_has_verified_contacts_with_http_info(self, request):
-        """查询已验证的列表
-
-        查询已验证的列表
-
-        :param ListHasVerifiedContactsRequest request
-        :return: ListHasVerifiedContactsResponse
-        """
-
         all_params = ['contact_way', 'customer_id', 'sub_customer_id', 'expired_time', 'verified_id', 'contact_value', 'area_code', 'offset', 'limit', 'x_site', 'x_language', 'x_time_zone']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2366,26 +2207,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_history_operate_logs_async(self, request):
         """查询堡垒机历史操作记录
 
         查询堡垒机历史操作记录
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListHistoryOperateLogsRequest request
-        :return: ListHistoryOperateLogsResponse
+        :param request: Request instance for ListHistoryOperateLogs
+        :type request: :class:`huaweicloudsdkosm.v2.ListHistoryOperateLogsRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ListHistoryOperateLogsResponse`
         """
         return self.list_history_operate_logs_with_http_info(request)
 
     def list_history_operate_logs_with_http_info(self, request):
-        """查询堡垒机历史操作记录
-
-        查询堡垒机历史操作记录
-
-        :param ListHistoryOperateLogsRequest request
-        :return: ListHistoryOperateLogsResponse
-        """
-
         all_params = ['authorization_id', 'authorization_detail_id', 'session_id', 'group_id', 'sort', 'offset', 'limit', 'x_site', 'x_language', 'x_time_zone']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2447,26 +2283,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_history_sessions_async(self, request):
         """查询堡垒机历史会话列表
 
         查询堡垒机历史会话列
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListHistorySessionsRequest request
-        :return: ListHistorySessionsResponse
+        :param request: Request instance for ListHistorySessions
+        :type request: :class:`huaweicloudsdkosm.v2.ListHistorySessionsRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ListHistorySessionsResponse`
         """
         return self.list_history_sessions_with_http_info(request)
 
     def list_history_sessions_with_http_info(self, request):
-        """查询堡垒机历史会话列表
-
-        查询堡垒机历史会话列
-
-        :param ListHistorySessionsRequest request
-        :return: ListHistorySessionsResponse
-        """
-
         all_params = ['authorization_id', 'authorization_detail_id', 'group_id', 'offset', 'limit', 'x_site', 'x_language', 'x_time_zone']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2524,26 +2355,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_labels_async(self, request):
         """查询标签
 
         查询标签
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListLabelsRequest request
-        :return: ListLabelsResponse
+        :param request: Request instance for ListLabels
+        :type request: :class:`huaweicloudsdkosm.v2.ListLabelsRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ListLabelsResponse`
         """
         return self.list_labels_with_http_info(request)
 
     def list_labels_with_http_info(self, request):
-        """查询标签
-
-        查询标签
-
-        :param ListLabelsRequest request
-        :return: ListLabelsResponse
-        """
-
         all_params = ['offset', 'limit', 'name', 'label_id', 'x_site', 'x_language', 'x_time_zone']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2599,26 +2425,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_messages_async(self, request):
         """查询留言
 
         查询留言
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListMessagesRequest request
-        :return: ListMessagesResponse
+        :param request: Request instance for ListMessages
+        :type request: :class:`huaweicloudsdkosm.v2.ListMessagesRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ListMessagesResponse`
         """
         return self.list_messages_with_http_info(request)
 
     def list_messages_with_http_info(self, request):
-        """查询留言
-
-        查询留言
-
-        :param ListMessagesRequest request
-        :return: ListMessagesResponse
-        """
-
         all_params = ['case_id', 'group_id', 'offset', 'limit', 'x_site', 'x_language', 'x_time_zone']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2674,26 +2495,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_more_instant_messages_async(self, request):
         """查询更多留言
 
         查询更多留言
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListMoreInstantMessagesRequest request
-        :return: ListMoreInstantMessagesResponse
+        :param request: Request instance for ListMoreInstantMessages
+        :type request: :class:`huaweicloudsdkosm.v2.ListMoreInstantMessagesRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ListMoreInstantMessagesResponse`
         """
         return self.list_more_instant_messages_with_http_info(request)
 
     def list_more_instant_messages_with_http_info(self, request):
-        """查询更多留言
-
-        查询更多留言
-
-        :param ListMoreInstantMessagesRequest request
-        :return: ListMoreInstantMessagesResponse
-        """
-
         all_params = ['case_id', 'create_time', 'type', 'limit', 'group_id', 'x_site', 'x_language', 'x_time_zone']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2751,26 +2567,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_new_instant_messages_async(self, request):
         """轮询查询即时消息
 
         轮询查询即时消息接口
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListNewInstantMessagesRequest request
-        :return: ListNewInstantMessagesResponse
+        :param request: Request instance for ListNewInstantMessages
+        :type request: :class:`huaweicloudsdkosm.v2.ListNewInstantMessagesRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ListNewInstantMessagesResponse`
         """
         return self.list_new_instant_messages_with_http_info(request)
 
     def list_new_instant_messages_with_http_info(self, request):
-        """轮询查询即时消息
-
-        轮询查询即时消息接口
-
-        :param ListNewInstantMessagesRequest request
-        :return: ListNewInstantMessagesResponse
-        """
-
         all_params = ['case_ids', 'last_message_time_id', 'group_id', 'x_site', 'x_language', 'x_time_zone']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2825,26 +2636,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_privileges_async(self, request):
         """查询工单权限
 
         查询工单权限
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListPrivilegesRequest request
-        :return: ListPrivilegesResponse
+        :param request: Request instance for ListPrivileges
+        :type request: :class:`huaweicloudsdkosm.v2.ListPrivilegesRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ListPrivilegesResponse`
         """
         return self.list_privileges_with_http_info(request)
 
     def list_privileges_with_http_info(self, request):
-        """查询工单权限
-
-        查询工单权限
-
-        :param ListPrivilegesRequest request
-        :return: ListPrivilegesResponse
-        """
-
         all_params = ['privilege', 'x_site', 'x_language', 'x_time_zone']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2894,26 +2700,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_problem_types_async(self, request):
         """查询问题类型列表
 
         提交工单时，选择产品类型之后选择对应的问题列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListProblemTypesRequest request
-        :return: ListProblemTypesResponse
+        :param request: Request instance for ListProblemTypes
+        :type request: :class:`huaweicloudsdkosm.v2.ListProblemTypesRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ListProblemTypesResponse`
         """
         return self.list_problem_types_with_http_info(request)
 
     def list_problem_types_with_http_info(self, request):
-        """查询问题类型列表
-
-        提交工单时，选择产品类型之后选择对应的问题列表
-
-        :param ListProblemTypesRequest request
-        :return: ListProblemTypesResponse
-        """
-
         all_params = ['product_category_id', 'x_site', 'x_language', 'x_time_zone']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2963,26 +2764,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_product_categories_async(self, request):
         """查询产品类型列表
 
         查询产品类型列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListProductCategoriesRequest request
-        :return: ListProductCategoriesResponse
+        :param request: Request instance for ListProductCategories
+        :type request: :class:`huaweicloudsdkosm.v2.ListProductCategoriesRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ListProductCategoriesResponse`
         """
         return self.list_product_categories_with_http_info(request)
 
     def list_product_categories_with_http_info(self, request):
-        """查询产品类型列表
-
-        查询产品类型列表
-
-        :param ListProductCategoriesRequest request
-        :return: ListProductCategoriesResponse
-        """
-
         all_params = ['product_category_name', 'x_site', 'x_language', 'x_time_zone']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3032,26 +2828,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_regions_async(self, request):
         """查询区域列表
 
         查询区域列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListRegionsRequest request
-        :return: ListRegionsResponse
+        :param request: Request instance for ListRegions
+        :type request: :class:`huaweicloudsdkosm.v2.ListRegionsRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ListRegionsResponse`
         """
         return self.list_regions_with_http_info(request)
 
     def list_regions_with_http_info(self, request):
-        """查询区域列表
-
-        查询区域列表
-
-        :param ListRegionsRequest request
-        :return: ListRegionsResponse
-        """
-
         all_params = ['x_site', 'x_language', 'x_time_zone']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3099,26 +2890,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_relation_async(self, request):
         """查询关联工单
 
         查询工单的关联，返回关联工单的简要信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListRelationRequest request
-        :return: ListRelationResponse
+        :param request: Request instance for ListRelation
+        :type request: :class:`huaweicloudsdkosm.v2.ListRelationRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ListRelationResponse`
         """
         return self.list_relation_with_http_info(request)
 
     def list_relation_with_http_info(self, request):
-        """查询关联工单
-
-        查询工单的关联，返回关联工单的简要信息
-
-        :param ListRelationRequest request
-        :return: ListRelationResponse
-        """
-
         all_params = ['case_id', 'x_site', 'x_language', 'x_time_zone']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3168,26 +2954,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_satisfaction_dimensions_async(self, request):
         """工单满意度分类列表
 
         工单满意度分类列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListSatisfactionDimensionsRequest request
-        :return: ListSatisfactionDimensionsResponse
+        :param request: Request instance for ListSatisfactionDimensions
+        :type request: :class:`huaweicloudsdkosm.v2.ListSatisfactionDimensionsRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ListSatisfactionDimensionsResponse`
         """
         return self.list_satisfaction_dimensions_with_http_info(request)
 
     def list_satisfaction_dimensions_with_http_info(self, request):
-        """工单满意度分类列表
-
-        工单满意度分类列表
-
-        :param ListSatisfactionDimensionsRequest request
-        :return: ListSatisfactionDimensionsResponse
-        """
-
         all_params = ['x_site', 'x_language', 'x_time_zone']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3235,26 +3016,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_severities_async(self, request):
         """查询问题严重性列表
 
         查询问题严重性列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListSeveritiesRequest request
-        :return: ListSeveritiesResponse
+        :param request: Request instance for ListSeverities
+        :type request: :class:`huaweicloudsdkosm.v2.ListSeveritiesRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ListSeveritiesResponse`
         """
         return self.list_severities_with_http_info(request)
 
     def list_severities_with_http_info(self, request):
-        """查询问题严重性列表
-
-        查询问题严重性列表
-
-        :param ListSeveritiesRequest request
-        :return: ListSeveritiesResponse
-        """
-
         all_params = ['product_category_id', 'business_type_id', 'x_site', 'x_language', 'x_time_zone']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3306,26 +3082,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_sub_customers_async(self, request):
         """查询子用户信息
 
         查询子用户信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListSubCustomersRequest request
-        :return: ListSubCustomersResponse
+        :param request: Request instance for ListSubCustomers
+        :type request: :class:`huaweicloudsdkosm.v2.ListSubCustomersRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ListSubCustomersResponse`
         """
         return self.list_sub_customers_with_http_info(request)
 
     def list_sub_customers_with_http_info(self, request):
-        """查询子用户信息
-
-        查询子用户信息
-
-        :param ListSubCustomersRequest request
-        :return: ListSubCustomersResponse
-        """
-
         all_params = ['sub_customer_name', 'sub_customer_id', 'x_site', 'x_language', 'x_time_zone']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3377,26 +3148,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_transport_histories_async(self, request):
         """查询堡垒机文件传输记录
 
         查询堡垒机文件传输记录
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListTransportHistoriesRequest request
-        :return: ListTransportHistoriesResponse
+        :param request: Request instance for ListTransportHistories
+        :type request: :class:`huaweicloudsdkosm.v2.ListTransportHistoriesRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ListTransportHistoriesResponse`
         """
         return self.list_transport_histories_with_http_info(request)
 
     def list_transport_histories_with_http_info(self, request):
-        """查询堡垒机文件传输记录
-
-        查询堡垒机文件传输记录
-
-        :param ListTransportHistoriesRequest request
-        :return: ListTransportHistoriesResponse
-        """
-
         all_params = ['authorization_id', 'authorization_detail_id', 'session_id', 'group_id', 'sort', 'offset', 'limit', 'x_site', 'x_language', 'x_time_zone']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3458,26 +3224,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_unread_new_instant_messages_async(self, request):
         """查询未读消息
 
         查询未读消息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListUnreadNewInstantMessagesRequest request
-        :return: ListUnreadNewInstantMessagesResponse
+        :param request: Request instance for ListUnreadNewInstantMessages
+        :type request: :class:`huaweicloudsdkosm.v2.ListUnreadNewInstantMessagesRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ListUnreadNewInstantMessagesResponse`
         """
         return self.list_unread_new_instant_messages_with_http_info(request)
 
     def list_unread_new_instant_messages_with_http_info(self, request):
-        """查询未读消息
-
-        查询未读消息
-
-        :param ListUnreadNewInstantMessagesRequest request
-        :return: ListUnreadNewInstantMessagesResponse
-        """
-
         all_params = ['case_ids', 'group_id', 'x_site', 'x_language', 'x_time_zone']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3530,26 +3291,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def send_verify_codes_async(self, request):
         """获取验证码
 
         获取验证码
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param SendVerifyCodesRequest request
-        :return: SendVerifyCodesResponse
+        :param request: Request instance for SendVerifyCodes
+        :type request: :class:`huaweicloudsdkosm.v2.SendVerifyCodesRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.SendVerifyCodesResponse`
         """
         return self.send_verify_codes_with_http_info(request)
 
     def send_verify_codes_with_http_info(self, request):
-        """获取验证码
-
-        获取验证码
-
-        :param SendVerifyCodesRequest request
-        :return: SendVerifyCodesResponse
-        """
-
         all_params = ['contact_value', 'contact_way', 'area_code', 'x_site', 'x_language', 'x_time_zone']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3603,26 +3359,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_accessory_limits_async(self, request):
         """附件限制
 
         查询附件的一下限制，比如大小，数量，文件类型
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowAccessoryLimitsRequest request
-        :return: ShowAccessoryLimitsResponse
+        :param request: Request instance for ShowAccessoryLimits
+        :type request: :class:`huaweicloudsdkosm.v2.ShowAccessoryLimitsRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ShowAccessoryLimitsResponse`
         """
         return self.show_accessory_limits_with_http_info(request)
 
     def show_accessory_limits_with_http_info(self, request):
-        """附件限制
-
-        查询附件的一下限制，比如大小，数量，文件类型
-
-        :param ShowAccessoryLimitsRequest request
-        :return: ShowAccessoryLimitsResponse
-        """
-
         all_params = ['x_site', 'x_language', 'x_time_zone']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3670,26 +3421,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_authorization_detail_async(self, request):
         """查询授权详情
 
         查询授权详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowAuthorizationDetailRequest request
-        :return: ShowAuthorizationDetailResponse
+        :param request: Request instance for ShowAuthorizationDetail
+        :type request: :class:`huaweicloudsdkosm.v2.ShowAuthorizationDetailRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ShowAuthorizationDetailResponse`
         """
         return self.show_authorization_detail_with_http_info(request)
 
     def show_authorization_detail_with_http_info(self, request):
-        """查询授权详情
-
-        查询授权详情
-
-        :param ShowAuthorizationDetailRequest request
-        :return: ShowAuthorizationDetailResponse
-        """
-
         all_params = ['authorization_id', 'group_id', 'x_site', 'x_language', 'x_time_zone']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3741,26 +3487,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_case_detail_async(self, request):
         """查询工单详情
 
         查询工单详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowCaseDetailRequest request
-        :return: ShowCaseDetailResponse
+        :param request: Request instance for ShowCaseDetail
+        :type request: :class:`huaweicloudsdkosm.v2.ShowCaseDetailRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ShowCaseDetailResponse`
         """
         return self.show_case_detail_with_http_info(request)
 
     def show_case_detail_with_http_info(self, request):
-        """查询工单详情
-
-        查询工单详情
-
-        :param ShowCaseDetailRequest request
-        :return: ShowCaseDetailResponse
-        """
-
         all_params = ['case_id', 'group_id', 'x_site', 'x_language', 'x_time_zone']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3812,26 +3553,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_case_status_async(self, request):
         """查询某个工单状态
 
         查询某个工单状态
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowCaseStatusRequest request
-        :return: ShowCaseStatusResponse
+        :param request: Request instance for ShowCaseStatus
+        :type request: :class:`huaweicloudsdkosm.v2.ShowCaseStatusRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ShowCaseStatusResponse`
         """
         return self.show_case_status_with_http_info(request)
 
     def show_case_status_with_http_info(self, request):
-        """查询某个工单状态
-
-        查询某个工单状态
-
-        :param ShowCaseStatusRequest request
-        :return: ShowCaseStatusResponse
-        """
-
         all_params = ['case_id', 'x_site', 'x_language', 'x_time_zone']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3881,26 +3617,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_partners_cases_privilege_async(self, request):
         """查询伙伴工单权限
 
         查询伙伴工单权限
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowPartnersCasesPrivilegeRequest request
-        :return: ShowPartnersCasesPrivilegeResponse
+        :param request: Request instance for ShowPartnersCasesPrivilege
+        :type request: :class:`huaweicloudsdkosm.v2.ShowPartnersCasesPrivilegeRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ShowPartnersCasesPrivilegeResponse`
         """
         return self.show_partners_cases_privilege_with_http_info(request)
 
     def show_partners_cases_privilege_with_http_info(self, request):
-        """查询伙伴工单权限
-
-        查询伙伴工单权限
-
-        :param ShowPartnersCasesPrivilegeRequest request
-        :return: ShowPartnersCasesPrivilegeResponse
-        """
-
         all_params = ['x_site', 'x_language', 'x_time_zone']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3948,26 +3679,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_partners_service_info_async(self, request):
         """查询关联伙伴服务信息
 
         查询关联伙伴服务信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowPartnersServiceInfoRequest request
-        :return: ShowPartnersServiceInfoResponse
+        :param request: Request instance for ShowPartnersServiceInfo
+        :type request: :class:`huaweicloudsdkosm.v2.ShowPartnersServiceInfoRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ShowPartnersServiceInfoResponse`
         """
         return self.show_partners_service_info_with_http_info(request)
 
     def show_partners_service_info_with_http_info(self, request):
-        """查询关联伙伴服务信息
-
-        查询关联伙伴服务信息
-
-        :param ShowPartnersServiceInfoRequest request
-        :return: ShowPartnersServiceInfoResponse
-        """
-
         all_params = ['case_sub_type_id', 'product_id', 'x_site', 'x_language', 'x_time_zone']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4019,26 +3745,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_authorizations_async(self, request):
         """拒绝|撤销授权
 
         拒绝|撤销授权
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateAuthorizationsRequest request
-        :return: UpdateAuthorizationsResponse
+        :param request: Request instance for UpdateAuthorizations
+        :type request: :class:`huaweicloudsdkosm.v2.UpdateAuthorizationsRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.UpdateAuthorizationsResponse`
         """
         return self.update_authorizations_with_http_info(request)
 
     def update_authorizations_with_http_info(self, request):
-        """拒绝|撤销授权
-
-        拒绝|撤销授权
-
-        :param UpdateAuthorizationsRequest request
-        :return: UpdateAuthorizationsResponse
-        """
-
         all_params = ['authorization_id', 'action_id', 'x_site', 'x_language', 'x_time_zone', 'update_authorizations_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4092,26 +3813,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_cases_async(self, request):
         """工单操作
 
         工单操作
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateCasesRequest request
-        :return: UpdateCasesResponse
+        :param request: Request instance for UpdateCases
+        :type request: :class:`huaweicloudsdkosm.v2.UpdateCasesRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.UpdateCasesResponse`
         """
         return self.update_cases_with_http_info(request)
 
     def update_cases_with_http_info(self, request):
-        """工单操作
-
-        工单操作
-
-        :param UpdateCasesRequest request
-        :return: UpdateCasesResponse
-        """
-
         all_params = ['case_id', 'action_id', 'x_site', 'x_language', 'x_time_zone', 'update_cases_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4165,26 +3881,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_labels_async(self, request):
         """修改标签
 
         修改标签
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateLabelsRequest request
-        :return: UpdateLabelsResponse
+        :param request: Request instance for UpdateLabels
+        :type request: :class:`huaweicloudsdkosm.v2.UpdateLabelsRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.UpdateLabelsResponse`
         """
         return self.update_labels_with_http_info(request)
 
     def update_labels_with_http_info(self, request):
-        """修改标签
-
-        修改标签
-
-        :param UpdateLabelsRequest request
-        :return: UpdateLabelsResponse
-        """
-
         all_params = ['label_id', 'update_labels_request_body', 'x_site', 'x_language', 'x_time_zone']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4236,26 +3947,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_new_instant_messages_read_async(self, request):
         """设置消息已读
 
         设置消息已读
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateNewInstantMessagesReadRequest request
-        :return: UpdateNewInstantMessagesReadResponse
+        :param request: Request instance for UpdateNewInstantMessagesRead
+        :type request: :class:`huaweicloudsdkosm.v2.UpdateNewInstantMessagesReadRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.UpdateNewInstantMessagesReadResponse`
         """
         return self.update_new_instant_messages_read_with_http_info(request)
 
     def update_new_instant_messages_read_with_http_info(self, request):
-        """设置消息已读
-
-        设置消息已读
-
-        :param UpdateNewInstantMessagesReadRequest request
-        :return: UpdateNewInstantMessagesReadResponse
-        """
-
         all_params = ['case_id', 'x_site', 'x_language', 'x_time_zone', 'update_new_instant_messages_read_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4307,26 +4013,21 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def upload_json_accessories_async(self, request):
         """上传附件
 
         上传附件给SDK使用
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UploadJsonAccessoriesRequest request
-        :return: UploadJsonAccessoriesResponse
+        :param request: Request instance for UploadJsonAccessories
+        :type request: :class:`huaweicloudsdkosm.v2.UploadJsonAccessoriesRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.UploadJsonAccessoriesResponse`
         """
         return self.upload_json_accessories_with_http_info(request)
 
     def upload_json_accessories_with_http_info(self, request):
-        """上传附件
-
-        上传附件给SDK使用
-
-        :param UploadJsonAccessoriesRequest request
-        :return: UploadJsonAccessoriesResponse
-        """
-
         all_params = ['x_site', 'x_language', 'x_time_zone', 'upload_json_accessories_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4375,7 +4076,6 @@ class OsmAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

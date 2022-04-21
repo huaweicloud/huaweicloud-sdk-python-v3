@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListEngineProductsEntity:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class ListEngineProductsEntity:
     }
 
     def __init__(self, type=None, product_id=None, ecs_flavor_id=None, billing_code=None, arch_types=None, charging_mode=None, ios=None, support_features=None, properties=None):
-        """ListEngineProductsEntity - a model defined in huaweicloud sdk"""
+        """ListEngineProductsEntity
+
+        The model defined in huaweicloud sdk
+
+        :param type: 产品类型。当前产品类型有单机和集群。
+        :type type: str
+        :param product_id: 产品ID。
+        :type product_id: str
+        :param ecs_flavor_id: 底层资源类型。
+        :type ecs_flavor_id: str
+        :param billing_code: 账单计费类型。
+        :type billing_code: str
+        :param arch_types: CPU架构。
+        :type arch_types: list[str]
+        :param charging_mode: 计费模式。   - monthly：包年/包月类型。   - hourly：按需类型。
+        :type charging_mode: list[str]
+        :param ios: 支持的磁盘IO类型列表。
+        :type ios: list[:class:`huaweicloudsdkrabbitmq.v2.ListEngineIosEntity`]
+        :param support_features: 当前规格实例支持的功能特性列表。
+        :type support_features: list[object]
+        :param properties: 
+        :type properties: :class:`huaweicloudsdkrabbitmq.v2.ListEnginePropertiesEntity`
+        """
         
         
 
@@ -98,7 +119,7 @@ class ListEngineProductsEntity:
         产品类型。当前产品类型有单机和集群。
 
         :param type: The type of this ListEngineProductsEntity.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -120,7 +141,7 @@ class ListEngineProductsEntity:
         产品ID。
 
         :param product_id: The product_id of this ListEngineProductsEntity.
-        :type: str
+        :type product_id: str
         """
         self._product_id = product_id
 
@@ -142,7 +163,7 @@ class ListEngineProductsEntity:
         底层资源类型。
 
         :param ecs_flavor_id: The ecs_flavor_id of this ListEngineProductsEntity.
-        :type: str
+        :type ecs_flavor_id: str
         """
         self._ecs_flavor_id = ecs_flavor_id
 
@@ -164,7 +185,7 @@ class ListEngineProductsEntity:
         账单计费类型。
 
         :param billing_code: The billing_code of this ListEngineProductsEntity.
-        :type: str
+        :type billing_code: str
         """
         self._billing_code = billing_code
 
@@ -186,7 +207,7 @@ class ListEngineProductsEntity:
         CPU架构。
 
         :param arch_types: The arch_types of this ListEngineProductsEntity.
-        :type: list[str]
+        :type arch_types: list[str]
         """
         self._arch_types = arch_types
 
@@ -208,7 +229,7 @@ class ListEngineProductsEntity:
         计费模式。   - monthly：包年/包月类型。   - hourly：按需类型。
 
         :param charging_mode: The charging_mode of this ListEngineProductsEntity.
-        :type: list[str]
+        :type charging_mode: list[str]
         """
         self._charging_mode = charging_mode
 
@@ -219,7 +240,7 @@ class ListEngineProductsEntity:
         支持的磁盘IO类型列表。
 
         :return: The ios of this ListEngineProductsEntity.
-        :rtype: list[ListEngineIosEntity]
+        :rtype: list[:class:`huaweicloudsdkrabbitmq.v2.ListEngineIosEntity`]
         """
         return self._ios
 
@@ -230,7 +251,7 @@ class ListEngineProductsEntity:
         支持的磁盘IO类型列表。
 
         :param ios: The ios of this ListEngineProductsEntity.
-        :type: list[ListEngineIosEntity]
+        :type ios: list[:class:`huaweicloudsdkrabbitmq.v2.ListEngineIosEntity`]
         """
         self._ios = ios
 
@@ -252,7 +273,7 @@ class ListEngineProductsEntity:
         当前规格实例支持的功能特性列表。
 
         :param support_features: The support_features of this ListEngineProductsEntity.
-        :type: list[object]
+        :type support_features: list[object]
         """
         self._support_features = support_features
 
@@ -262,7 +283,7 @@ class ListEngineProductsEntity:
 
 
         :return: The properties of this ListEngineProductsEntity.
-        :rtype: ListEnginePropertiesEntity
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.ListEnginePropertiesEntity`
         """
         return self._properties
 
@@ -272,7 +293,7 @@ class ListEngineProductsEntity:
 
 
         :param properties: The properties of this ListEngineProductsEntity.
-        :type: ListEnginePropertiesEntity
+        :type properties: :class:`huaweicloudsdkrabbitmq.v2.ListEnginePropertiesEntity`
         """
         self._properties = properties
 

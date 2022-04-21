@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDomainTrafficDetailResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListDomainTrafficDetailResponse(SdkResponse):
     }
 
     def __init__(self, data_list=None, x_request_id=None):
-        """ListDomainTrafficDetailResponse - a model defined in huaweicloud sdk"""
+        """ListDomainTrafficDetailResponse
+
+        The model defined in huaweicloud sdk
+
+        :param data_list: 采样数据列表。
+        :type data_list: list[:class:`huaweicloudsdklive.v2.TrafficData`]
+        :param x_request_id: 
+        :type x_request_id: str
+        """
         
         super(ListDomainTrafficDetailResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListDomainTrafficDetailResponse(SdkResponse):
         采样数据列表。
 
         :return: The data_list of this ListDomainTrafficDetailResponse.
-        :rtype: list[TrafficData]
+        :rtype: list[:class:`huaweicloudsdklive.v2.TrafficData`]
         """
         return self._data_list
 
@@ -63,7 +70,7 @@ class ListDomainTrafficDetailResponse(SdkResponse):
         采样数据列表。
 
         :param data_list: The data_list of this ListDomainTrafficDetailResponse.
-        :type: list[TrafficData]
+        :type data_list: list[:class:`huaweicloudsdklive.v2.TrafficData`]
         """
         self._data_list = data_list
 
@@ -83,7 +90,7 @@ class ListDomainTrafficDetailResponse(SdkResponse):
 
 
         :param x_request_id: The x_request_id of this ListDomainTrafficDetailResponse.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 

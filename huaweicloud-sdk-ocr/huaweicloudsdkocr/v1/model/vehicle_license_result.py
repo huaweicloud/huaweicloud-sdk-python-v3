@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VehicleLicenseResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -72,7 +71,55 @@ class VehicleLicenseResult:
     }
 
     def __init__(self, number=None, vehicle_type=None, name=None, address=None, use_character=None, model=None, engine_no=None, vin=None, register_date=None, issue_date=None, issuing_authority=None, file_no=None, approved_passengers=None, gross_mass=None, unladen_mass=None, approved_load=None, dimension=None, traction_mass=None, remarks=None, inspection_record=None, code_number=None, text_location=None):
-        """VehicleLicenseResult - a model defined in huaweicloud sdk"""
+        """VehicleLicenseResult
+
+        The model defined in huaweicloud sdk
+
+        :param number: 号牌号码。 
+        :type number: str
+        :param vehicle_type: 车辆类型。 
+        :type vehicle_type: str
+        :param name: 所有人。 
+        :type name: str
+        :param address: 住址。 
+        :type address: str
+        :param use_character: 使用性质。 
+        :type use_character: str
+        :param model: 品牌型号。 
+        :type model: str
+        :param engine_no: 发动机号码。 
+        :type engine_no: str
+        :param vin: 车辆识别代号。 
+        :type vin: str
+        :param register_date: 注册日期。 
+        :type register_date: str
+        :param issue_date: 发证日期。 
+        :type issue_date: str
+        :param issuing_authority: 发证机关。 
+        :type issuing_authority: str
+        :param file_no: 档案编码。 
+        :type file_no: str
+        :param approved_passengers: 核定载人数。 
+        :type approved_passengers: str
+        :param gross_mass: 总质量。 
+        :type gross_mass: str
+        :param unladen_mass: 整备质量。 
+        :type unladen_mass: str
+        :param approved_load: 核定载质量。 
+        :type approved_load: str
+        :param dimension: 外廓尺寸。 
+        :type dimension: str
+        :param traction_mass: 准牵引总质量。 
+        :type traction_mass: str
+        :param remarks: 备注。 
+        :type remarks: str
+        :param inspection_record: 检验记录。 
+        :type inspection_record: str
+        :param code_number: 条码号。 
+        :type code_number: str
+        :param text_location: 文本框在原图位置。输出左上、右上、右下、左下四个点坐标。  当“return_text_location”设置为“true”时才返回。 
+        :type text_location: object
+        """
         
         
 
@@ -163,7 +210,7 @@ class VehicleLicenseResult:
         号牌号码。 
 
         :param number: The number of this VehicleLicenseResult.
-        :type: str
+        :type number: str
         """
         self._number = number
 
@@ -185,7 +232,7 @@ class VehicleLicenseResult:
         车辆类型。 
 
         :param vehicle_type: The vehicle_type of this VehicleLicenseResult.
-        :type: str
+        :type vehicle_type: str
         """
         self._vehicle_type = vehicle_type
 
@@ -207,7 +254,7 @@ class VehicleLicenseResult:
         所有人。 
 
         :param name: The name of this VehicleLicenseResult.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -229,7 +276,7 @@ class VehicleLicenseResult:
         住址。 
 
         :param address: The address of this VehicleLicenseResult.
-        :type: str
+        :type address: str
         """
         self._address = address
 
@@ -251,7 +298,7 @@ class VehicleLicenseResult:
         使用性质。 
 
         :param use_character: The use_character of this VehicleLicenseResult.
-        :type: str
+        :type use_character: str
         """
         self._use_character = use_character
 
@@ -273,7 +320,7 @@ class VehicleLicenseResult:
         品牌型号。 
 
         :param model: The model of this VehicleLicenseResult.
-        :type: str
+        :type model: str
         """
         self._model = model
 
@@ -295,7 +342,7 @@ class VehicleLicenseResult:
         发动机号码。 
 
         :param engine_no: The engine_no of this VehicleLicenseResult.
-        :type: str
+        :type engine_no: str
         """
         self._engine_no = engine_no
 
@@ -317,7 +364,7 @@ class VehicleLicenseResult:
         车辆识别代号。 
 
         :param vin: The vin of this VehicleLicenseResult.
-        :type: str
+        :type vin: str
         """
         self._vin = vin
 
@@ -339,7 +386,7 @@ class VehicleLicenseResult:
         注册日期。 
 
         :param register_date: The register_date of this VehicleLicenseResult.
-        :type: str
+        :type register_date: str
         """
         self._register_date = register_date
 
@@ -361,7 +408,7 @@ class VehicleLicenseResult:
         发证日期。 
 
         :param issue_date: The issue_date of this VehicleLicenseResult.
-        :type: str
+        :type issue_date: str
         """
         self._issue_date = issue_date
 
@@ -383,7 +430,7 @@ class VehicleLicenseResult:
         发证机关。 
 
         :param issuing_authority: The issuing_authority of this VehicleLicenseResult.
-        :type: str
+        :type issuing_authority: str
         """
         self._issuing_authority = issuing_authority
 
@@ -405,7 +452,7 @@ class VehicleLicenseResult:
         档案编码。 
 
         :param file_no: The file_no of this VehicleLicenseResult.
-        :type: str
+        :type file_no: str
         """
         self._file_no = file_no
 
@@ -427,7 +474,7 @@ class VehicleLicenseResult:
         核定载人数。 
 
         :param approved_passengers: The approved_passengers of this VehicleLicenseResult.
-        :type: str
+        :type approved_passengers: str
         """
         self._approved_passengers = approved_passengers
 
@@ -449,7 +496,7 @@ class VehicleLicenseResult:
         总质量。 
 
         :param gross_mass: The gross_mass of this VehicleLicenseResult.
-        :type: str
+        :type gross_mass: str
         """
         self._gross_mass = gross_mass
 
@@ -471,7 +518,7 @@ class VehicleLicenseResult:
         整备质量。 
 
         :param unladen_mass: The unladen_mass of this VehicleLicenseResult.
-        :type: str
+        :type unladen_mass: str
         """
         self._unladen_mass = unladen_mass
 
@@ -493,7 +540,7 @@ class VehicleLicenseResult:
         核定载质量。 
 
         :param approved_load: The approved_load of this VehicleLicenseResult.
-        :type: str
+        :type approved_load: str
         """
         self._approved_load = approved_load
 
@@ -515,7 +562,7 @@ class VehicleLicenseResult:
         外廓尺寸。 
 
         :param dimension: The dimension of this VehicleLicenseResult.
-        :type: str
+        :type dimension: str
         """
         self._dimension = dimension
 
@@ -537,7 +584,7 @@ class VehicleLicenseResult:
         准牵引总质量。 
 
         :param traction_mass: The traction_mass of this VehicleLicenseResult.
-        :type: str
+        :type traction_mass: str
         """
         self._traction_mass = traction_mass
 
@@ -559,7 +606,7 @@ class VehicleLicenseResult:
         备注。 
 
         :param remarks: The remarks of this VehicleLicenseResult.
-        :type: str
+        :type remarks: str
         """
         self._remarks = remarks
 
@@ -581,7 +628,7 @@ class VehicleLicenseResult:
         检验记录。 
 
         :param inspection_record: The inspection_record of this VehicleLicenseResult.
-        :type: str
+        :type inspection_record: str
         """
         self._inspection_record = inspection_record
 
@@ -603,7 +650,7 @@ class VehicleLicenseResult:
         条码号。 
 
         :param code_number: The code_number of this VehicleLicenseResult.
-        :type: str
+        :type code_number: str
         """
         self._code_number = code_number
 
@@ -625,7 +672,7 @@ class VehicleLicenseResult:
         文本框在原图位置。输出左上、右上、右下、左下四个点坐标。  当“return_text_location”设置为“true”时才返回。 
 
         :param text_location: The text_location of this VehicleLicenseResult.
-        :type: object
+        :type text_location: object
         """
         self._text_location = text_location
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class WebImageWordsBlockList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class WebImageWordsBlockList:
     }
 
     def __init__(self, words=None, confidence=None, location=None, extracted_data=None, contact_info=None, image_size=None, height=None, width=None, name=None, phone=None, province=None, city=None, district=None, detail_address=None):
-        """WebImageWordsBlockList - a model defined in huaweicloud sdk"""
+        """WebImageWordsBlockList
+
+        The model defined in huaweicloud sdk
+
+        :param words: 文字块识别结果。 
+        :type words: str
+        :param confidence: 相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。 
+        :type confidence: float
+        :param location: 文字块的区域位置信息，列表形式，包含文字区域四个顶点的二维坐标（x,y）;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
+        :type location: list[list[int]]
+        :param extracted_data: 提取出的结构化JSON结果，该字典内的key值与入参列表extract_type的值一致，目前仅支持联系人信息提取，亦即key值为\&quot;contact_info\&quot;的字段。 若入参extract_type为空列表或该字段缺失时，不进行提取，此字段为空。 
+        :type extracted_data: object
+        :param contact_info: 该字段表示提取的联系人信息，包括：姓名、联系电话、省市区以及详细地址。 若入参extract_type列表中无该字段，则此字段不存在。 
+        :type contact_info: object
+        :param image_size: 该字段表示返回图片宽高信息。 如入参extract_type列表中无该字段，则此字段不存在。 
+        :type image_size: object
+        :param height: 传入image_size时的返回，为图像高度。 
+        :type height: int
+        :param width: 传入image_size时的返回，为图像宽度。 
+        :type width: int
+        :param name: 传入contact_info时的返回，为姓名。 
+        :type name: str
+        :param phone: 传入contact_info时的返回，联系电话。 
+        :type phone: str
+        :param province: 传入contact_info时的返回，省。 
+        :type province: str
+        :param city: 传入contact_info时的返回，市。 
+        :type city: str
+        :param district: 传入contact_info时的返回，县区。 
+        :type district: str
+        :param detail_address: 传入contact_info时的返回，详细地址（不含省市区）。 
+        :type detail_address: str
+        """
         
         
 
@@ -123,7 +154,7 @@ class WebImageWordsBlockList:
         文字块识别结果。 
 
         :param words: The words of this WebImageWordsBlockList.
-        :type: str
+        :type words: str
         """
         self._words = words
 
@@ -145,7 +176,7 @@ class WebImageWordsBlockList:
         相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。 
 
         :param confidence: The confidence of this WebImageWordsBlockList.
-        :type: float
+        :type confidence: float
         """
         self._confidence = confidence
 
@@ -167,7 +198,7 @@ class WebImageWordsBlockList:
         文字块的区域位置信息，列表形式，包含文字区域四个顶点的二维坐标（x,y）;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
         :param location: The location of this WebImageWordsBlockList.
-        :type: list[list[int]]
+        :type location: list[list[int]]
         """
         self._location = location
 
@@ -189,7 +220,7 @@ class WebImageWordsBlockList:
         提取出的结构化JSON结果，该字典内的key值与入参列表extract_type的值一致，目前仅支持联系人信息提取，亦即key值为\"contact_info\"的字段。 若入参extract_type为空列表或该字段缺失时，不进行提取，此字段为空。 
 
         :param extracted_data: The extracted_data of this WebImageWordsBlockList.
-        :type: object
+        :type extracted_data: object
         """
         self._extracted_data = extracted_data
 
@@ -211,7 +242,7 @@ class WebImageWordsBlockList:
         该字段表示提取的联系人信息，包括：姓名、联系电话、省市区以及详细地址。 若入参extract_type列表中无该字段，则此字段不存在。 
 
         :param contact_info: The contact_info of this WebImageWordsBlockList.
-        :type: object
+        :type contact_info: object
         """
         self._contact_info = contact_info
 
@@ -233,7 +264,7 @@ class WebImageWordsBlockList:
         该字段表示返回图片宽高信息。 如入参extract_type列表中无该字段，则此字段不存在。 
 
         :param image_size: The image_size of this WebImageWordsBlockList.
-        :type: object
+        :type image_size: object
         """
         self._image_size = image_size
 
@@ -255,7 +286,7 @@ class WebImageWordsBlockList:
         传入image_size时的返回，为图像高度。 
 
         :param height: The height of this WebImageWordsBlockList.
-        :type: int
+        :type height: int
         """
         self._height = height
 
@@ -277,7 +308,7 @@ class WebImageWordsBlockList:
         传入image_size时的返回，为图像宽度。 
 
         :param width: The width of this WebImageWordsBlockList.
-        :type: int
+        :type width: int
         """
         self._width = width
 
@@ -299,7 +330,7 @@ class WebImageWordsBlockList:
         传入contact_info时的返回，为姓名。 
 
         :param name: The name of this WebImageWordsBlockList.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -321,7 +352,7 @@ class WebImageWordsBlockList:
         传入contact_info时的返回，联系电话。 
 
         :param phone: The phone of this WebImageWordsBlockList.
-        :type: str
+        :type phone: str
         """
         self._phone = phone
 
@@ -343,7 +374,7 @@ class WebImageWordsBlockList:
         传入contact_info时的返回，省。 
 
         :param province: The province of this WebImageWordsBlockList.
-        :type: str
+        :type province: str
         """
         self._province = province
 
@@ -365,7 +396,7 @@ class WebImageWordsBlockList:
         传入contact_info时的返回，市。 
 
         :param city: The city of this WebImageWordsBlockList.
-        :type: str
+        :type city: str
         """
         self._city = city
 
@@ -387,7 +418,7 @@ class WebImageWordsBlockList:
         传入contact_info时的返回，县区。 
 
         :param district: The district of this WebImageWordsBlockList.
-        :type: str
+        :type district: str
         """
         self._district = district
 
@@ -409,7 +440,7 @@ class WebImageWordsBlockList:
         传入contact_info时的返回，详细地址（不含省市区）。 
 
         :param detail_address: The detail_address of this WebImageWordsBlockList.
-        :type: str
+        :type detail_address: str
         """
         self._detail_address = detail_address
 

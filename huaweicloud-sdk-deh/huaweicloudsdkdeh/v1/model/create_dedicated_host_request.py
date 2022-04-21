@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateDedicatedHostRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateDedicatedHostRequest:
     }
 
     def __init__(self, body=None):
-        """CreateDedicatedHostRequest - a model defined in huaweicloud sdk"""
+        """CreateDedicatedHostRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateDedicatedHostRequest
+        :type body: :class:`huaweicloudsdkdeh.v1.ReqAllocateDeh`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateDedicatedHostRequest:
 
 
         :return: The body of this CreateDedicatedHostRequest.
-        :rtype: ReqAllocateDeh
+        :rtype: :class:`huaweicloudsdkdeh.v1.ReqAllocateDeh`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateDedicatedHostRequest:
 
 
         :param body: The body of this CreateDedicatedHostRequest.
-        :type: ReqAllocateDeh
+        :type body: :class:`huaweicloudsdkdeh.v1.ReqAllocateDeh`
         """
         self._body = body
 

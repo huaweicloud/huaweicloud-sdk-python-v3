@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShadowService:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShadowService:
     }
 
     def __init__(self, service_id=None, service_name=None, properties=None):
-        """ShadowService - a model defined in huaweicloud sdk"""
+        """ShadowService
+
+        The model defined in huaweicloud sdk
+
+        :param service_id: 服务ID
+        :type service_id: int
+        :param service_name: 服务名称
+        :type service_name: str
+        :param properties: 影子值
+        :type properties: list[:class:`huaweicloudsdkroma.v2.ShadowValue`]
+        """
         
         
 
@@ -68,7 +77,7 @@ class ShadowService:
         服务ID
 
         :param service_id: The service_id of this ShadowService.
-        :type: int
+        :type service_id: int
         """
         self._service_id = service_id
 
@@ -90,7 +99,7 @@ class ShadowService:
         服务名称
 
         :param service_name: The service_name of this ShadowService.
-        :type: str
+        :type service_name: str
         """
         self._service_name = service_name
 
@@ -101,7 +110,7 @@ class ShadowService:
         影子值
 
         :return: The properties of this ShadowService.
-        :rtype: list[ShadowValue]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.ShadowValue`]
         """
         return self._properties
 
@@ -112,7 +121,7 @@ class ShadowService:
         影子值
 
         :param properties: The properties of this ShadowService.
-        :type: list[ShadowValue]
+        :type properties: list[:class:`huaweicloudsdkroma.v2.ShadowValue`]
         """
         self._properties = properties
 

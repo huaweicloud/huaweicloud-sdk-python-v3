@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteHooksRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class DeleteHooksRequest:
     }
 
     def __init__(self, group_name=None, hook_id=None, repository_name=None):
-        """DeleteHooksRequest - a model defined in huaweicloud sdk"""
+        """DeleteHooksRequest
+
+        The model defined in huaweicloud sdk
+
+        :param group_name: 组名
+        :type group_name: str
+        :param hook_id: 通过id删除指定仓库的hook
+        :type hook_id: int
+        :param repository_name: 仓库名
+        :type repository_name: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class DeleteHooksRequest:
         组名
 
         :param group_name: The group_name of this DeleteHooksRequest.
-        :type: str
+        :type group_name: str
         """
         self._group_name = group_name
 
@@ -87,7 +96,7 @@ class DeleteHooksRequest:
         通过id删除指定仓库的hook
 
         :param hook_id: The hook_id of this DeleteHooksRequest.
-        :type: int
+        :type hook_id: int
         """
         self._hook_id = hook_id
 
@@ -109,7 +118,7 @@ class DeleteHooksRequest:
         仓库名
 
         :param repository_name: The repository_name of this DeleteHooksRequest.
-        :type: str
+        :type repository_name: str
         """
         self._repository_name = repository_name
 

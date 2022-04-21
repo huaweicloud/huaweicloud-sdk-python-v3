@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestInviteWithPwdReqBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class RestInviteWithPwdReqBody:
     }
 
     def __init__(self, call_num=None, org_id=None, conf_id=None, pwd=None, num_belongs_type=None, is_not_overlay_pid_name=None):
-        """RestInviteWithPwdReqBody - a model defined in huaweicloud sdk"""
+        """RestInviteWithPwdReqBody
+
+        The model defined in huaweicloud sdk
+
+        :param call_num: 被邀请的会议人号码。
+        :type call_num: str
+        :param org_id: 被邀请的会议人所属企业ID。
+        :type org_id: str
+        :param conf_id: 当前会议ID。
+        :type conf_id: str
+        :param pwd: 当前会议的密码。
+        :type pwd: str
+        :param num_belongs_type: 号码类型0是本局号码，1是中继号码。
+        :type num_belongs_type: int
+        :param is_not_overlay_pid_name: 是否不叠加会场名。
+        :type is_not_overlay_pid_name: bool
+        """
         
         
 
@@ -80,7 +95,7 @@ class RestInviteWithPwdReqBody:
         被邀请的会议人号码。
 
         :param call_num: The call_num of this RestInviteWithPwdReqBody.
-        :type: str
+        :type call_num: str
         """
         self._call_num = call_num
 
@@ -102,7 +117,7 @@ class RestInviteWithPwdReqBody:
         被邀请的会议人所属企业ID。
 
         :param org_id: The org_id of this RestInviteWithPwdReqBody.
-        :type: str
+        :type org_id: str
         """
         self._org_id = org_id
 
@@ -124,7 +139,7 @@ class RestInviteWithPwdReqBody:
         当前会议ID。
 
         :param conf_id: The conf_id of this RestInviteWithPwdReqBody.
-        :type: str
+        :type conf_id: str
         """
         self._conf_id = conf_id
 
@@ -146,7 +161,7 @@ class RestInviteWithPwdReqBody:
         当前会议的密码。
 
         :param pwd: The pwd of this RestInviteWithPwdReqBody.
-        :type: str
+        :type pwd: str
         """
         self._pwd = pwd
 
@@ -168,7 +183,7 @@ class RestInviteWithPwdReqBody:
         号码类型0是本局号码，1是中继号码。
 
         :param num_belongs_type: The num_belongs_type of this RestInviteWithPwdReqBody.
-        :type: int
+        :type num_belongs_type: int
         """
         self._num_belongs_type = num_belongs_type
 
@@ -190,7 +205,7 @@ class RestInviteWithPwdReqBody:
         是否不叠加会场名。
 
         :param is_not_overlay_pid_name: The is_not_overlay_pid_name of this RestInviteWithPwdReqBody.
-        :type: bool
+        :type is_not_overlay_pid_name: bool
         """
         self._is_not_overlay_pid_name = is_not_overlay_pid_name
 

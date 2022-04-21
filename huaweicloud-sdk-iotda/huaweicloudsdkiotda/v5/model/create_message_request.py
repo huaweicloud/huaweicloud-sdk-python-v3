@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateMessageRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateMessageRequest:
     }
 
     def __init__(self, device_id=None, instance_id=None, body=None):
-        """CreateMessageRequest - a model defined in huaweicloud sdk"""
+        """CreateMessageRequest
+
+        The model defined in huaweicloud sdk
+
+        :param device_id: **参数说明**：下发消息的设备ID，用于唯一标识一个设备，在注册设备时由物联网平台分配获得。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
+        :type device_id: str
+        :param instance_id: **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
+        :type instance_id: str
+        :param body: Body of the CreateMessageRequest
+        :type body: :class:`huaweicloudsdkiotda.v5.DeviceMessageRequest`
+        """
         
         
 
@@ -67,7 +76,7 @@ class CreateMessageRequest:
         **参数说明**：下发消息的设备ID，用于唯一标识一个设备，在注册设备时由物联网平台分配获得。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :param device_id: The device_id of this CreateMessageRequest.
-        :type: str
+        :type device_id: str
         """
         self._device_id = device_id
 
@@ -89,7 +98,7 @@ class CreateMessageRequest:
         **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
         :param instance_id: The instance_id of this CreateMessageRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -99,7 +108,7 @@ class CreateMessageRequest:
 
 
         :return: The body of this CreateMessageRequest.
-        :rtype: DeviceMessageRequest
+        :rtype: :class:`huaweicloudsdkiotda.v5.DeviceMessageRequest`
         """
         return self._body
 
@@ -109,7 +118,7 @@ class CreateMessageRequest:
 
 
         :param body: The body of this CreateMessageRequest.
-        :type: DeviceMessageRequest
+        :type body: :class:`huaweicloudsdkiotda.v5.DeviceMessageRequest`
         """
         self._body = body
 

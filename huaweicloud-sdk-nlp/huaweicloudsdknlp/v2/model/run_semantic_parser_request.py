@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunSemanticParserRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RunSemanticParserRequest:
     }
 
     def __init__(self, body=None):
-        """RunSemanticParserRequest - a model defined in huaweicloud sdk"""
+        """RunSemanticParserRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the RunSemanticParserRequest
+        :type body: :class:`huaweicloudsdknlp.v2.IntentReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class RunSemanticParserRequest:
 
 
         :return: The body of this RunSemanticParserRequest.
-        :rtype: IntentReq
+        :rtype: :class:`huaweicloudsdknlp.v2.IntentReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class RunSemanticParserRequest:
 
 
         :param body: The body of this RunSemanticParserRequest.
-        :type: IntentReq
+        :type body: :class:`huaweicloudsdknlp.v2.IntentReq`
         """
         self._body = body
 

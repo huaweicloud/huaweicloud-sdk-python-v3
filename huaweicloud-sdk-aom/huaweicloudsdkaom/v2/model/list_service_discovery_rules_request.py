@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListServiceDiscoveryRulesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListServiceDiscoveryRulesRequest:
     }
 
     def __init__(self, id=None):
-        """ListServiceDiscoveryRulesRequest - a model defined in huaweicloud sdk"""
+        """ListServiceDiscoveryRulesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param id: 具体的服务发现规则ID,可以精确匹配到一条服务发现规则。不传时返回project下所有服务发现规则的列表。
+        :type id: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class ListServiceDiscoveryRulesRequest:
         具体的服务发现规则ID,可以精确匹配到一条服务发现规则。不传时返回project下所有服务发现规则的列表。
 
         :param id: The id of this ListServiceDiscoveryRulesRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 

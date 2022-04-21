@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PipelineCreationResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class PipelineCreationResult:
     }
 
     def __init__(self, pipeline=None, task_id=None, status=None, failure_reason=None):
-        """PipelineCreationResult - a model defined in huaweicloud sdk"""
+        """PipelineCreationResult
+
+        The model defined in huaweicloud sdk
+
+        :param pipeline: 
+        :type pipeline: :class:`huaweicloudsdkdevstar.v1.PipelineBasic`
+        :param task_id: 任务id
+        :type task_id: str
+        :param status: 任务状态, success:成功,failed:失败,creating:创建中,cancel:取消,pending:等待创建
+        :type status: str
+        :param failure_reason: 失败原因
+        :type failure_reason: str
+        """
         
         
 
@@ -61,7 +72,7 @@ class PipelineCreationResult:
 
 
         :return: The pipeline of this PipelineCreationResult.
-        :rtype: PipelineBasic
+        :rtype: :class:`huaweicloudsdkdevstar.v1.PipelineBasic`
         """
         return self._pipeline
 
@@ -71,7 +82,7 @@ class PipelineCreationResult:
 
 
         :param pipeline: The pipeline of this PipelineCreationResult.
-        :type: PipelineBasic
+        :type pipeline: :class:`huaweicloudsdkdevstar.v1.PipelineBasic`
         """
         self._pipeline = pipeline
 
@@ -93,7 +104,7 @@ class PipelineCreationResult:
         任务id
 
         :param task_id: The task_id of this PipelineCreationResult.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -115,7 +126,7 @@ class PipelineCreationResult:
         任务状态, success:成功,failed:失败,creating:创建中,cancel:取消,pending:等待创建
 
         :param status: The status of this PipelineCreationResult.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -137,7 +148,7 @@ class PipelineCreationResult:
         失败原因
 
         :param failure_reason: The failure_reason of this PipelineCreationResult.
-        :type: str
+        :type failure_reason: str
         """
         self._failure_reason = failure_reason
 

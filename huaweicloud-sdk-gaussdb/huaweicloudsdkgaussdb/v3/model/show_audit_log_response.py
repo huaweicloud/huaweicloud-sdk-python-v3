@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowAuditLogResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowAuditLogResponse(SdkResponse):
     }
 
     def __init__(self, switch_status=None):
-        """ShowAuditLogResponse - a model defined in huaweicloud sdk"""
+        """ShowAuditLogResponse
+
+        The model defined in huaweicloud sdk
+
+        :param switch_status: 审计日志开关状态。取值：ON|OFF
+        :type switch_status: str
+        """
         
         super(ShowAuditLogResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class ShowAuditLogResponse(SdkResponse):
         审计日志开关状态。取值：ON|OFF
 
         :param switch_status: The switch_status of this ShowAuditLogResponse.
-        :type: str
+        :type switch_status: str
         """
         self._switch_status = switch_status
 

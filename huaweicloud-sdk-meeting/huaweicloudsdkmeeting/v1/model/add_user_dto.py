@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddUserDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -62,7 +61,45 @@ class AddUserDTO:
     }
 
     def __init__(self, name=None, english_name=None, account=None, third_account=None, phone=None, country=None, pwd=None, email=None, dept_code=None, signature=None, title=None, desc=None, status=None, function=None, send_notify=None, sort_level=None, hide_phone=None):
-        """AddUserDTO - a model defined in huaweicloud sdk"""
+        """AddUserDTO
+
+        The model defined in huaweicloud sdk
+
+        :param name: 企业用户姓名。 maxLength：64 minLength：1
+        :type name: str
+        :param english_name: 企业用户的英文姓名。 maxLength：64 minLength：0
+        :type english_name: str
+        :param account: 企业用户帐号，若携带则以携带为准，否则后台自动生成。账号整系统唯一 帐号只能包含大小写字母、数字、_、-、.、@符号，不能为纯数字和@后面带.号。 maxLength：64 minLength：0
+        :type account: str
+        :param third_account: 指定第三方账号开户
+        :type third_account: str
+        :param phone: 手机号，必须加上国家码。 例如中国大陆手机+86xxxxxxx。当填写手机号时 “country”参数必填。 手机号只允许输入纯数字。 说明：手机号或者邮箱至少填写一个 maxLength：32 minLength：0
+        :type phone: str
+        :param country: 若smsNumber为手机号,则需带上手机号所属的国家。 例如国家为中国大陆则country参数取值为chinaPR 国家和国家码的对应关系请参考：https://support.huaweicloud.com/api-meeting/meeting_21_0109.html 
+        :type country: str
+        :param pwd: 企业用户帐号的密码。若携带则以实际携带为准，否则后台默认生成，密码必须满足： 1、8-32位 2、不能和账号的正序和倒序一致 3、至少包含两种字符类型：小写字母、大写字母、数字、特殊字符（&#x60; ~ ! @ # $ % ^ &amp; * ( ) - _ &#x3D; + | [ { } ] ; : \&quot; ,’ &lt; . &gt; / ?）
+        :type pwd: str
+        :param email: 邮箱 maxLength：255 minLength：0
+        :type email: str
+        :param dept_code: 部门编号，若不携带则默认根部门 默认值：1 maxLength：32 minLength：0
+        :type dept_code: str
+        :param signature: 签名 maxLength：512 minLength：0
+        :type signature: str
+        :param title: 职位 maxLength：32 minLength：0
+        :type title: str
+        :param desc: 备注 maxLength：128 minLength：0
+        :type desc: str
+        :param status: 用户状态 * 0、正常 * 1、停用 默认值：0
+        :type status: int
+        :param function: 
+        :type function: :class:`huaweicloudsdkmeeting.v1.UserFunctionDTO`
+        :param send_notify: 是否发送邮件和短信通知， - 0 不发送 - 不填或者其他值就发送, 默认发送  约束 - 长度范围为0到32个字符
+        :type send_notify: str
+        :param sort_level: 通讯录排序等级，序号越低优先级越高。 默认值：10000 maximum：10000 minimum：1
+        :type sort_level: int
+        :param hide_phone: 是否隐藏手机号码 默认值：false 
+        :type hide_phone: bool
+        """
         
         
 
@@ -137,7 +174,7 @@ class AddUserDTO:
         企业用户姓名。 maxLength：64 minLength：1
 
         :param name: The name of this AddUserDTO.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -159,7 +196,7 @@ class AddUserDTO:
         企业用户的英文姓名。 maxLength：64 minLength：0
 
         :param english_name: The english_name of this AddUserDTO.
-        :type: str
+        :type english_name: str
         """
         self._english_name = english_name
 
@@ -181,7 +218,7 @@ class AddUserDTO:
         企业用户帐号，若携带则以携带为准，否则后台自动生成。账号整系统唯一 帐号只能包含大小写字母、数字、_、-、.、@符号，不能为纯数字和@后面带.号。 maxLength：64 minLength：0
 
         :param account: The account of this AddUserDTO.
-        :type: str
+        :type account: str
         """
         self._account = account
 
@@ -203,7 +240,7 @@ class AddUserDTO:
         指定第三方账号开户
 
         :param third_account: The third_account of this AddUserDTO.
-        :type: str
+        :type third_account: str
         """
         self._third_account = third_account
 
@@ -225,7 +262,7 @@ class AddUserDTO:
         手机号，必须加上国家码。 例如中国大陆手机+86xxxxxxx。当填写手机号时 “country”参数必填。 手机号只允许输入纯数字。 说明：手机号或者邮箱至少填写一个 maxLength：32 minLength：0
 
         :param phone: The phone of this AddUserDTO.
-        :type: str
+        :type phone: str
         """
         self._phone = phone
 
@@ -247,7 +284,7 @@ class AddUserDTO:
         若smsNumber为手机号,则需带上手机号所属的国家。 例如国家为中国大陆则country参数取值为chinaPR 国家和国家码的对应关系请参考：https://support.huaweicloud.com/api-meeting/meeting_21_0109.html 
 
         :param country: The country of this AddUserDTO.
-        :type: str
+        :type country: str
         """
         self._country = country
 
@@ -269,7 +306,7 @@ class AddUserDTO:
         企业用户帐号的密码。若携带则以实际携带为准，否则后台默认生成，密码必须满足： 1、8-32位 2、不能和账号的正序和倒序一致 3、至少包含两种字符类型：小写字母、大写字母、数字、特殊字符（` ~ ! @ # $ % ^ & * ( ) - _ = + | [ { } ] ; : \" ,’ < . > / ?）
 
         :param pwd: The pwd of this AddUserDTO.
-        :type: str
+        :type pwd: str
         """
         self._pwd = pwd
 
@@ -291,7 +328,7 @@ class AddUserDTO:
         邮箱 maxLength：255 minLength：0
 
         :param email: The email of this AddUserDTO.
-        :type: str
+        :type email: str
         """
         self._email = email
 
@@ -313,7 +350,7 @@ class AddUserDTO:
         部门编号，若不携带则默认根部门 默认值：1 maxLength：32 minLength：0
 
         :param dept_code: The dept_code of this AddUserDTO.
-        :type: str
+        :type dept_code: str
         """
         self._dept_code = dept_code
 
@@ -335,7 +372,7 @@ class AddUserDTO:
         签名 maxLength：512 minLength：0
 
         :param signature: The signature of this AddUserDTO.
-        :type: str
+        :type signature: str
         """
         self._signature = signature
 
@@ -357,7 +394,7 @@ class AddUserDTO:
         职位 maxLength：32 minLength：0
 
         :param title: The title of this AddUserDTO.
-        :type: str
+        :type title: str
         """
         self._title = title
 
@@ -379,7 +416,7 @@ class AddUserDTO:
         备注 maxLength：128 minLength：0
 
         :param desc: The desc of this AddUserDTO.
-        :type: str
+        :type desc: str
         """
         self._desc = desc
 
@@ -401,7 +438,7 @@ class AddUserDTO:
         用户状态 * 0、正常 * 1、停用 默认值：0
 
         :param status: The status of this AddUserDTO.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -411,7 +448,7 @@ class AddUserDTO:
 
 
         :return: The function of this AddUserDTO.
-        :rtype: UserFunctionDTO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.UserFunctionDTO`
         """
         return self._function
 
@@ -421,7 +458,7 @@ class AddUserDTO:
 
 
         :param function: The function of this AddUserDTO.
-        :type: UserFunctionDTO
+        :type function: :class:`huaweicloudsdkmeeting.v1.UserFunctionDTO`
         """
         self._function = function
 
@@ -443,7 +480,7 @@ class AddUserDTO:
         是否发送邮件和短信通知， - 0 不发送 - 不填或者其他值就发送, 默认发送  约束 - 长度范围为0到32个字符
 
         :param send_notify: The send_notify of this AddUserDTO.
-        :type: str
+        :type send_notify: str
         """
         self._send_notify = send_notify
 
@@ -465,7 +502,7 @@ class AddUserDTO:
         通讯录排序等级，序号越低优先级越高。 默认值：10000 maximum：10000 minimum：1
 
         :param sort_level: The sort_level of this AddUserDTO.
-        :type: int
+        :type sort_level: int
         """
         self._sort_level = sort_level
 
@@ -487,7 +524,7 @@ class AddUserDTO:
         是否隐藏手机号码 默认值：false 
 
         :param hide_phone: The hide_phone of this AddUserDTO.
-        :type: bool
+        :type hide_phone: bool
         """
         self._hide_phone = hide_phone
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ImageDetectionResultDetailFaceDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ImageDetectionResultDetailFaceDetail:
     }
 
     def __init__(self, h=None, w=None, x=None, y=None):
-        """ImageDetectionResultDetailFaceDetail - a model defined in huaweicloud sdk"""
+        """ImageDetectionResultDetailFaceDetail
+
+        The model defined in huaweicloud sdk
+
+        :param h: 人脸区域高度。
+        :type h: int
+        :param w: 人脸区域宽度。
+        :type w: int
+        :param x: 人脸区域左上角到y轴距离。
+        :type x: int
+        :param y: 人脸区域左上角到x轴距离。
+        :type y: int
+        """
         
         
 
@@ -73,7 +84,7 @@ class ImageDetectionResultDetailFaceDetail:
         人脸区域高度。
 
         :param h: The h of this ImageDetectionResultDetailFaceDetail.
-        :type: int
+        :type h: int
         """
         self._h = h
 
@@ -95,7 +106,7 @@ class ImageDetectionResultDetailFaceDetail:
         人脸区域宽度。
 
         :param w: The w of this ImageDetectionResultDetailFaceDetail.
-        :type: int
+        :type w: int
         """
         self._w = w
 
@@ -117,7 +128,7 @@ class ImageDetectionResultDetailFaceDetail:
         人脸区域左上角到y轴距离。
 
         :param x: The x of this ImageDetectionResultDetailFaceDetail.
-        :type: int
+        :type x: int
         """
         self._x = x
 
@@ -139,7 +150,7 @@ class ImageDetectionResultDetailFaceDetail:
         人脸区域左上角到x轴距离。
 
         :param y: The y of this ImageDetectionResultDetailFaceDetail.
-        :type: int
+        :type y: int
         """
         self._y = y
 

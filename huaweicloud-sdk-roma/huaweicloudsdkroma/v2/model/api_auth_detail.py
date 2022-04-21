@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApiAuthDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class ApiAuthDetail:
     }
 
     def __init__(self, auth_method=None, app_auth_type=None, user_name=None, password=None, app_key=None, app_secret=None, secret=None, alt_ip=None, access_token_url=None, client_id=None, client_secret=None, scope=None, authorization=None, grant_type=None):
-        """ApiAuthDetail - a model defined in huaweicloud sdk"""
+        """ApiAuthDetail
+
+        The model defined in huaweicloud sdk
+
+        :param auth_method: 访问API服务的认证方式 - none - basicauth - oauth2.0 - hmac - secret - md5 - apiGateway - keyTop - hikVision - huaweiNetworkManagement - liHe
+        :type auth_method: str
+        :param app_auth_type: 访问API服务的APP认证方式，认证方式为（apiGateway）时填写 - default - secret - jwt
+        :type app_auth_type: str
+        :param user_name: 访问API服务的用户名 - 认证方式为（lihe、huaweiNetworkManagement、basicauth）时填写
+        :type user_name: str
+        :param password: 访问API服务的密码 - 认证方式为（lihe、huaweiNetworkManagement、basicauth、secret、md5、hmac）时填写
+        :type password: str
+        :param app_key: 访问API服务的AppKey - 认证方式为（apiGateway、oauth2.0）时填写
+        :type app_key: str
+        :param app_secret: 访问API服务的AppSecret - 认证方式为（apiGateway、oauth2.0）时填写
+        :type app_secret: str
+        :param secret: 访问API服务的Secret - 认证方式为（KeyTop、HikVision、Secret、HMAC、MD5）时填写
+        :type secret: str
+        :param alt_ip: 访问API服务的备用IP - 认证方式为（HuaweiNetworkManagement）时填写
+        :type alt_ip: str
+        :param access_token_url: 访问API服务的AccessTokenUrl - 认证方式为（liHe、oauth2.0 huaweiNetworkManagement）时填写
+        :type access_token_url: str
+        :param client_id: 访问API服务的客户端标识 - 认证方式为Oauth2时填写
+        :type client_id: str
+        :param client_secret: 访问API服务的客户端密钥 - 认证方式为Oauth2时填写
+        :type client_secret: str
+        :param scope: 访问API服务的Scope - 认证方式为（LiHe、Oauth2）时填写
+        :type scope: str
+        :param authorization: 访问API服务的Authorization - 认证方式为（LiHe）时填写
+        :type authorization: str
+        :param grant_type: 访问API服务的授权类型 - 认证方式为（LiHe、Oauth2）时填写 - client_credentials （oauth2.0使用）
+        :type grant_type: str
+        """
         
         
 
@@ -123,7 +154,7 @@ class ApiAuthDetail:
         访问API服务的认证方式 - none - basicauth - oauth2.0 - hmac - secret - md5 - apiGateway - keyTop - hikVision - huaweiNetworkManagement - liHe
 
         :param auth_method: The auth_method of this ApiAuthDetail.
-        :type: str
+        :type auth_method: str
         """
         self._auth_method = auth_method
 
@@ -145,7 +176,7 @@ class ApiAuthDetail:
         访问API服务的APP认证方式，认证方式为（apiGateway）时填写 - default - secret - jwt
 
         :param app_auth_type: The app_auth_type of this ApiAuthDetail.
-        :type: str
+        :type app_auth_type: str
         """
         self._app_auth_type = app_auth_type
 
@@ -167,7 +198,7 @@ class ApiAuthDetail:
         访问API服务的用户名 - 认证方式为（lihe、huaweiNetworkManagement、basicauth）时填写
 
         :param user_name: The user_name of this ApiAuthDetail.
-        :type: str
+        :type user_name: str
         """
         self._user_name = user_name
 
@@ -189,7 +220,7 @@ class ApiAuthDetail:
         访问API服务的密码 - 认证方式为（lihe、huaweiNetworkManagement、basicauth、secret、md5、hmac）时填写
 
         :param password: The password of this ApiAuthDetail.
-        :type: str
+        :type password: str
         """
         self._password = password
 
@@ -211,7 +242,7 @@ class ApiAuthDetail:
         访问API服务的AppKey - 认证方式为（apiGateway、oauth2.0）时填写
 
         :param app_key: The app_key of this ApiAuthDetail.
-        :type: str
+        :type app_key: str
         """
         self._app_key = app_key
 
@@ -233,7 +264,7 @@ class ApiAuthDetail:
         访问API服务的AppSecret - 认证方式为（apiGateway、oauth2.0）时填写
 
         :param app_secret: The app_secret of this ApiAuthDetail.
-        :type: str
+        :type app_secret: str
         """
         self._app_secret = app_secret
 
@@ -255,7 +286,7 @@ class ApiAuthDetail:
         访问API服务的Secret - 认证方式为（KeyTop、HikVision、Secret、HMAC、MD5）时填写
 
         :param secret: The secret of this ApiAuthDetail.
-        :type: str
+        :type secret: str
         """
         self._secret = secret
 
@@ -277,7 +308,7 @@ class ApiAuthDetail:
         访问API服务的备用IP - 认证方式为（HuaweiNetworkManagement）时填写
 
         :param alt_ip: The alt_ip of this ApiAuthDetail.
-        :type: str
+        :type alt_ip: str
         """
         self._alt_ip = alt_ip
 
@@ -299,7 +330,7 @@ class ApiAuthDetail:
         访问API服务的AccessTokenUrl - 认证方式为（liHe、oauth2.0 huaweiNetworkManagement）时填写
 
         :param access_token_url: The access_token_url of this ApiAuthDetail.
-        :type: str
+        :type access_token_url: str
         """
         self._access_token_url = access_token_url
 
@@ -321,7 +352,7 @@ class ApiAuthDetail:
         访问API服务的客户端标识 - 认证方式为Oauth2时填写
 
         :param client_id: The client_id of this ApiAuthDetail.
-        :type: str
+        :type client_id: str
         """
         self._client_id = client_id
 
@@ -343,7 +374,7 @@ class ApiAuthDetail:
         访问API服务的客户端密钥 - 认证方式为Oauth2时填写
 
         :param client_secret: The client_secret of this ApiAuthDetail.
-        :type: str
+        :type client_secret: str
         """
         self._client_secret = client_secret
 
@@ -365,7 +396,7 @@ class ApiAuthDetail:
         访问API服务的Scope - 认证方式为（LiHe、Oauth2）时填写
 
         :param scope: The scope of this ApiAuthDetail.
-        :type: str
+        :type scope: str
         """
         self._scope = scope
 
@@ -387,7 +418,7 @@ class ApiAuthDetail:
         访问API服务的Authorization - 认证方式为（LiHe）时填写
 
         :param authorization: The authorization of this ApiAuthDetail.
-        :type: str
+        :type authorization: str
         """
         self._authorization = authorization
 
@@ -409,7 +440,7 @@ class ApiAuthDetail:
         访问API服务的授权类型 - 认证方式为（LiHe、Oauth2）时填写 - client_credentials （oauth2.0使用）
 
         :param grant_type: The grant_type of this ApiAuthDetail.
-        :type: str
+        :type grant_type: str
         """
         self._grant_type = grant_type
 

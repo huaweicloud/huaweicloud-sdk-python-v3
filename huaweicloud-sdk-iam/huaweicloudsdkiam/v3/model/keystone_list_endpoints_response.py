@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneListEndpointsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class KeystoneListEndpointsResponse(SdkResponse):
     }
 
     def __init__(self, links=None, endpoints=None):
-        """KeystoneListEndpointsResponse - a model defined in huaweicloud sdk"""
+        """KeystoneListEndpointsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param links: 
+        :type links: :class:`huaweicloudsdkiam.v3.Links`
+        :param endpoints: 终端节点信息列表。
+        :type endpoints: list[:class:`huaweicloudsdkiam.v3.Endpoint`]
+        """
         
         super(KeystoneListEndpointsResponse, self).__init__()
 
@@ -51,7 +58,7 @@ class KeystoneListEndpointsResponse(SdkResponse):
 
 
         :return: The links of this KeystoneListEndpointsResponse.
-        :rtype: Links
+        :rtype: :class:`huaweicloudsdkiam.v3.Links`
         """
         return self._links
 
@@ -61,7 +68,7 @@ class KeystoneListEndpointsResponse(SdkResponse):
 
 
         :param links: The links of this KeystoneListEndpointsResponse.
-        :type: Links
+        :type links: :class:`huaweicloudsdkiam.v3.Links`
         """
         self._links = links
 
@@ -72,7 +79,7 @@ class KeystoneListEndpointsResponse(SdkResponse):
         终端节点信息列表。
 
         :return: The endpoints of this KeystoneListEndpointsResponse.
-        :rtype: list[Endpoint]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.Endpoint`]
         """
         return self._endpoints
 
@@ -83,7 +90,7 @@ class KeystoneListEndpointsResponse(SdkResponse):
         终端节点信息列表。
 
         :param endpoints: The endpoints of this KeystoneListEndpointsResponse.
-        :type: list[Endpoint]
+        :type endpoints: list[:class:`huaweicloudsdkiam.v3.Endpoint`]
         """
         self._endpoints = endpoints
 

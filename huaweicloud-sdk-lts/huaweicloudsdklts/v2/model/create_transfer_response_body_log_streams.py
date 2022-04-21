@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateTransferResponseBodyLogStreams:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateTransferResponseBodyLogStreams:
     }
 
     def __init__(self, log_stream_id=None, log_stream_name=None):
-        """CreateTransferResponseBodyLogStreams - a model defined in huaweicloud sdk"""
+        """CreateTransferResponseBodyLogStreams
+
+        The model defined in huaweicloud sdk
+
+        :param log_stream_id: 日志流ID
+        :type log_stream_id: str
+        :param log_stream_name: 日志流名称
+        :type log_stream_name: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class CreateTransferResponseBodyLogStreams:
         日志流ID
 
         :param log_stream_id: The log_stream_id of this CreateTransferResponseBodyLogStreams.
-        :type: str
+        :type log_stream_id: str
         """
         self._log_stream_id = log_stream_id
 
@@ -83,7 +90,7 @@ class CreateTransferResponseBodyLogStreams:
         日志流名称
 
         :param log_stream_name: The log_stream_name of this CreateTransferResponseBodyLogStreams.
-        :type: str
+        :type log_stream_name: str
         """
         self._log_stream_name = log_stream_name
 

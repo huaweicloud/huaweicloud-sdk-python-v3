@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PartAttendee:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class PartAttendee:
     }
 
     def __init__(self, name=None, phone=None, phone2=None, phone3=None, type=None):
-        """PartAttendee - a model defined in huaweicloud sdk"""
+        """PartAttendee
+
+        The model defined in huaweicloud sdk
+
+        :param name: 与会者名称或昵称。长度限制为96个字符。
+        :type name: str
+        :param phone: 电话号码(可支持SIP、TEL号码格式)。最大不超过127个字符。 当type为telepresence时，且设备为三屏智真，则该字段填写中屏号码。
+        :type phone: str
+        :param phone2: 取值类型同参数phone。（预留字段） 当type为telepresence时，且设备为三屏智真，则该字段填写左屏号码。
+        :type phone2: str
+        :param phone3: 取值类型同参数phone。（预留字段） 当type为telepresence时，且设备为三屏智真，则该字段填写右屏号码。
+        :type phone3: str
+        :param type: 默认值由会议AS定义，号码类型枚举如下： - normal: 软终端。 - telepresence: 智真。单屏、三屏智真均属此类。（预留字段） - terminal: 会议室或硬终端。 - outside: 外部与会人。 - mobile: 用户手机号码。 - telephone: 用户固定电话。（预留字段） - ideahub: ideahub。
+        :type type: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class PartAttendee:
         与会者名称或昵称。长度限制为96个字符。
 
         :param name: The name of this PartAttendee.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -100,7 +113,7 @@ class PartAttendee:
         电话号码(可支持SIP、TEL号码格式)。最大不超过127个字符。 当type为telepresence时，且设备为三屏智真，则该字段填写中屏号码。
 
         :param phone: The phone of this PartAttendee.
-        :type: str
+        :type phone: str
         """
         self._phone = phone
 
@@ -122,7 +135,7 @@ class PartAttendee:
         取值类型同参数phone。（预留字段） 当type为telepresence时，且设备为三屏智真，则该字段填写左屏号码。
 
         :param phone2: The phone2 of this PartAttendee.
-        :type: str
+        :type phone2: str
         """
         self._phone2 = phone2
 
@@ -144,7 +157,7 @@ class PartAttendee:
         取值类型同参数phone。（预留字段） 当type为telepresence时，且设备为三屏智真，则该字段填写右屏号码。
 
         :param phone3: The phone3 of this PartAttendee.
-        :type: str
+        :type phone3: str
         """
         self._phone3 = phone3
 
@@ -166,7 +179,7 @@ class PartAttendee:
         默认值由会议AS定义，号码类型枚举如下： - normal: 软终端。 - telepresence: 智真。单屏、三屏智真均属此类。（预留字段） - terminal: 会议室或硬终端。 - outside: 外部与会人。 - mobile: 用户手机号码。 - telephone: 用户固定电话。（预留字段） - ideahub: ideahub。
 
         :param type: The type of this PartAttendee.
-        :type: str
+        :type type: str
         """
         self._type = type
 

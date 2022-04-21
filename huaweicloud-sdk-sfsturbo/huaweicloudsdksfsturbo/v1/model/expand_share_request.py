@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExpandShareRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ExpandShareRequest:
     }
 
     def __init__(self, share_id=None, body=None):
-        """ExpandShareRequest - a model defined in huaweicloud sdk"""
+        """ExpandShareRequest
+
+        The model defined in huaweicloud sdk
+
+        :param share_id: 文件系统ID
+        :type share_id: str
+        :param body: Body of the ExpandShareRequest
+        :type body: :class:`huaweicloudsdksfsturbo.v1.ExpandShareRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class ExpandShareRequest:
         文件系统ID
 
         :param share_id: The share_id of this ExpandShareRequest.
-        :type: str
+        :type share_id: str
         """
         self._share_id = share_id
 
@@ -72,7 +79,7 @@ class ExpandShareRequest:
 
 
         :return: The body of this ExpandShareRequest.
-        :rtype: ExpandShareRequestBody
+        :rtype: :class:`huaweicloudsdksfsturbo.v1.ExpandShareRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class ExpandShareRequest:
 
 
         :param body: The body of this ExpandShareRequest.
-        :type: ExpandShareRequestBody
+        :type body: :class:`huaweicloudsdksfsturbo.v1.ExpandShareRequestBody`
         """
         self._body = body
 

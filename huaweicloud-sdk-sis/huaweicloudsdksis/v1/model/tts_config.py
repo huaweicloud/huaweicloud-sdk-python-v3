@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TtsConfig:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class TtsConfig:
     }
 
     def __init__(self, audio_format=None, sample_rate=None, _property=None, speed=None, pitch=None, volume=None):
-        """TtsConfig - a model defined in huaweicloud sdk"""
+        """TtsConfig
+
+        The model defined in huaweicloud sdk
+
+        :param audio_format: 语音格式头：wav、mp3、pcm。 默认：wav
+        :type audio_format: str
+        :param sample_rate: 采样率：16000、8000 默认：8000
+        :type sample_rate: str
+        :param _property: 语音合成特征字符串，组成形式为{language}_{speaker}_{domain}，即“语种_人员标识_领域”。发音人分为普通发音人和精品发音人。  普通发音人每100字计一次调用，取值范围如下：   chinese_xiaoqi_common  小琪，标准女声发音人。  chinese_xiaoyu_common  小宇，标准男声发音人。  chinese_xiaoyan_common  小燕，温柔女声发音人。  chinese_xiaowang_common  小王，童声发音人。  chinese_xiaowen_common   小雯，柔美女声发音人。  chinese_xiaojing_common 小婧，俏皮女声发音人。  chinese_xiaosong_common  小宋，激昂男声发音人。  chinese_xiaoxia_common   小夏，热情女声发音人。  chinese_xiaodai_common   小呆，呆萌童声发音人。  chinese_xiaoqian_common  小倩，成熟女声发音人。  english_cameal_common    cameal，柔美女声英文发音人。   精品发音人每50字计一次调用，区域仅支持cn-north-4，cn-east-3，暂时不支持音高调节，取值范围如下：  chinese_huaxiaoxia_common  华小夏，热情女声发音人。  chinese_huaxiaogang_common  华晓刚，利落男声发音人。  chinese_huaxiaolu_common  华小璐，知性女声发音人。  chinese_huaxiaoshu_common  华小舒，舒缓女声发音人。  chinese_huaxiaowei_common  华小唯，嗲柔女声发音人。  chinese_huaxiaoliang_common  华小靓，嘹亮女声发音人。  chinese_huaxiaodong_common  华晓东，成熟男声发音人。  chinese_huaxiaoyan_common  华小颜，严厉女声发音人。  chinese_huaxiaoxuan_common  华小萱，台湾女声发音人。  chinese_huaxiaowen_common  华小雯，柔美女声发音人。  chinese_huaxiaoyang_common  华晓阳，朝气男声发音人。  chinese_huaxiaomin_common  华小闽，闽南女声发音人。  chinese_huanvxia_literature 华女侠，武侠女生发音人，只支持16k的采样率。  chinese_huaxiaoxuan_literature 华晓悬，悬疑男声发音人，只支持16k的采样率。  默认：chinese_xiaoyan_common
+        :type _property: str
+        :param speed: 语速。 取值范围：[-500,500]  默认值：0
+        :type speed: int
+        :param pitch: 音高。 取值范围： [-500,500]  默认值：0
+        :type pitch: int
+        :param volume: 音量。 取值范围：[0, 100]  默认值：50
+        :type volume: int
+        """
         
         
 
@@ -83,7 +98,7 @@ class TtsConfig:
         语音格式头：wav、mp3、pcm。 默认：wav
 
         :param audio_format: The audio_format of this TtsConfig.
-        :type: str
+        :type audio_format: str
         """
         self._audio_format = audio_format
 
@@ -105,7 +120,7 @@ class TtsConfig:
         采样率：16000、8000 默认：8000
 
         :param sample_rate: The sample_rate of this TtsConfig.
-        :type: str
+        :type sample_rate: str
         """
         self._sample_rate = sample_rate
 
@@ -127,7 +142,7 @@ class TtsConfig:
         语音合成特征字符串，组成形式为{language}_{speaker}_{domain}，即“语种_人员标识_领域”。发音人分为普通发音人和精品发音人。  普通发音人每100字计一次调用，取值范围如下：   chinese_xiaoqi_common  小琪，标准女声发音人。  chinese_xiaoyu_common  小宇，标准男声发音人。  chinese_xiaoyan_common  小燕，温柔女声发音人。  chinese_xiaowang_common  小王，童声发音人。  chinese_xiaowen_common   小雯，柔美女声发音人。  chinese_xiaojing_common 小婧，俏皮女声发音人。  chinese_xiaosong_common  小宋，激昂男声发音人。  chinese_xiaoxia_common   小夏，热情女声发音人。  chinese_xiaodai_common   小呆，呆萌童声发音人。  chinese_xiaoqian_common  小倩，成熟女声发音人。  english_cameal_common    cameal，柔美女声英文发音人。   精品发音人每50字计一次调用，区域仅支持cn-north-4，cn-east-3，暂时不支持音高调节，取值范围如下：  chinese_huaxiaoxia_common  华小夏，热情女声发音人。  chinese_huaxiaogang_common  华晓刚，利落男声发音人。  chinese_huaxiaolu_common  华小璐，知性女声发音人。  chinese_huaxiaoshu_common  华小舒，舒缓女声发音人。  chinese_huaxiaowei_common  华小唯，嗲柔女声发音人。  chinese_huaxiaoliang_common  华小靓，嘹亮女声发音人。  chinese_huaxiaodong_common  华晓东，成熟男声发音人。  chinese_huaxiaoyan_common  华小颜，严厉女声发音人。  chinese_huaxiaoxuan_common  华小萱，台湾女声发音人。  chinese_huaxiaowen_common  华小雯，柔美女声发音人。  chinese_huaxiaoyang_common  华晓阳，朝气男声发音人。  chinese_huaxiaomin_common  华小闽，闽南女声发音人。  chinese_huanvxia_literature 华女侠，武侠女生发音人，只支持16k的采样率。  chinese_huaxiaoxuan_literature 华晓悬，悬疑男声发音人，只支持16k的采样率。  默认：chinese_xiaoyan_common
 
         :param _property: The _property of this TtsConfig.
-        :type: str
+        :type _property: str
         """
         self.__property = _property
 
@@ -149,7 +164,7 @@ class TtsConfig:
         语速。 取值范围：[-500,500]  默认值：0
 
         :param speed: The speed of this TtsConfig.
-        :type: int
+        :type speed: int
         """
         self._speed = speed
 
@@ -171,7 +186,7 @@ class TtsConfig:
         音高。 取值范围： [-500,500]  默认值：0
 
         :param pitch: The pitch of this TtsConfig.
-        :type: int
+        :type pitch: int
         """
         self._pitch = pitch
 
@@ -193,7 +208,7 @@ class TtsConfig:
         音量。 取值范围：[0, 100]  默认值：50
 
         :param volume: The volume of this TtsConfig.
-        :type: int
+        :type volume: int
         """
         self._volume = volume
 

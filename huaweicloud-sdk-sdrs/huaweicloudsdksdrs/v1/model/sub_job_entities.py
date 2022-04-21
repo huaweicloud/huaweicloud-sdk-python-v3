@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SubJobEntities:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class SubJobEntities:
     }
 
     def __init__(self, replication_pair_id=None, volume_ids=None, server_group_id=None, protected_instance_id=None, native_server_id=None, nic_id=None):
-        """SubJobEntities - a model defined in huaweicloud sdk"""
+        """SubJobEntities
+
+        The model defined in huaweicloud sdk
+
+        :param replication_pair_id: 复制对ID
+        :type replication_pair_id: str
+        :param volume_ids: 组成复制对的云硬盘ID
+        :type volume_ids: str
+        :param server_group_id: 保护组ID
+        :type server_group_id: str
+        :param protected_instance_id: 保护实例ID
+        :type protected_instance_id: str
+        :param native_server_id: 容灾站点服务器ID
+        :type native_server_id: str
+        :param nic_id: 网卡ID
+        :type nic_id: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class SubJobEntities:
         复制对ID
 
         :param replication_pair_id: The replication_pair_id of this SubJobEntities.
-        :type: str
+        :type replication_pair_id: str
         """
         self._replication_pair_id = replication_pair_id
 
@@ -105,7 +120,7 @@ class SubJobEntities:
         组成复制对的云硬盘ID
 
         :param volume_ids: The volume_ids of this SubJobEntities.
-        :type: str
+        :type volume_ids: str
         """
         self._volume_ids = volume_ids
 
@@ -127,7 +142,7 @@ class SubJobEntities:
         保护组ID
 
         :param server_group_id: The server_group_id of this SubJobEntities.
-        :type: str
+        :type server_group_id: str
         """
         self._server_group_id = server_group_id
 
@@ -149,7 +164,7 @@ class SubJobEntities:
         保护实例ID
 
         :param protected_instance_id: The protected_instance_id of this SubJobEntities.
-        :type: str
+        :type protected_instance_id: str
         """
         self._protected_instance_id = protected_instance_id
 
@@ -171,7 +186,7 @@ class SubJobEntities:
         容灾站点服务器ID
 
         :param native_server_id: The native_server_id of this SubJobEntities.
-        :type: str
+        :type native_server_id: str
         """
         self._native_server_id = native_server_id
 
@@ -193,7 +208,7 @@ class SubJobEntities:
         网卡ID
 
         :param nic_id: The nic_id of this SubJobEntities.
-        :type: str
+        :type nic_id: str
         """
         self._nic_id = nic_id
 

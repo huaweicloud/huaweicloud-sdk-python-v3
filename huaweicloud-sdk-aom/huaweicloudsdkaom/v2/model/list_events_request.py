@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListEventsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListEventsRequest:
     }
 
     def __init__(self, type=None, body=None):
-        """ListEventsRequest - a model defined in huaweicloud sdk"""
+        """ListEventsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param type: 查询类型。type&#x3D;active_alert代表查询活动告警，type&#x3D;history_alert代表查询历史告警。不传或者传其他值则返回指定查询条件的所有信息。
+        :type type: str
+        :param body: Body of the ListEventsRequest
+        :type body: :class:`huaweicloudsdkaom.v2.EventQueryParam2`
+        """
         
         
 
@@ -63,7 +70,7 @@ class ListEventsRequest:
         查询类型。type=active_alert代表查询活动告警，type=history_alert代表查询历史告警。不传或者传其他值则返回指定查询条件的所有信息。
 
         :param type: The type of this ListEventsRequest.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -73,7 +80,7 @@ class ListEventsRequest:
 
 
         :return: The body of this ListEventsRequest.
-        :rtype: EventQueryParam2
+        :rtype: :class:`huaweicloudsdkaom.v2.EventQueryParam2`
         """
         return self._body
 
@@ -83,7 +90,7 @@ class ListEventsRequest:
 
 
         :param body: The body of this ListEventsRequest.
-        :type: EventQueryParam2
+        :type body: :class:`huaweicloudsdkaom.v2.EventQueryParam2`
         """
         self._body = body
 

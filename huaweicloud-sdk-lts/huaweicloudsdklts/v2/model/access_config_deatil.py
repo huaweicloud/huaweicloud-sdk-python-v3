@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AccessConfigDeatil:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class AccessConfigDeatil:
     }
 
     def __init__(self, paths=None, black_paths=None, format=None, windows_log_info=None):
-        """AccessConfigDeatil - a model defined in huaweicloud sdk"""
+        """AccessConfigDeatil
+
+        The model defined in huaweicloud sdk
+
+        :param paths: 采集路径。 1. 路径必须以/或者字母:\\\\开头 2. 不能包含特殊字符&lt;&gt; &#39; | \&quot; 且不能只输入/ 3. 第一级目录不支持通配符*：不能以/**   /*开头 4.**只能出现一次
+        :type paths: list[str]
+        :param black_paths: 采集路径黑名单。 1. 路径必须以/或者字母:\\\\开头 2. 不能包含特殊字符&lt;&gt; &#39; | \&quot; 且不能只输入/ 3. 第一级目录不支持通配符*：不能以/**   /*开头 4.**只能出现一次
+        :type black_paths: list[str]
+        :param format: 
+        :type format: :class:`huaweicloudsdklts.v2.AccessConfigFormat`
+        :param windows_log_info: 
+        :type windows_log_info: :class:`huaweicloudsdklts.v2.AccessConfigWindowsLogInfo`
+        """
         
         
 
@@ -73,7 +84,7 @@ class AccessConfigDeatil:
         采集路径。 1. 路径必须以/或者字母:\\\\开头 2. 不能包含特殊字符<> ' | \" 且不能只输入/ 3. 第一级目录不支持通配符*：不能以/**   /*开头 4.**只能出现一次
 
         :param paths: The paths of this AccessConfigDeatil.
-        :type: list[str]
+        :type paths: list[str]
         """
         self._paths = paths
 
@@ -95,7 +106,7 @@ class AccessConfigDeatil:
         采集路径黑名单。 1. 路径必须以/或者字母:\\\\开头 2. 不能包含特殊字符<> ' | \" 且不能只输入/ 3. 第一级目录不支持通配符*：不能以/**   /*开头 4.**只能出现一次
 
         :param black_paths: The black_paths of this AccessConfigDeatil.
-        :type: list[str]
+        :type black_paths: list[str]
         """
         self._black_paths = black_paths
 
@@ -105,7 +116,7 @@ class AccessConfigDeatil:
 
 
         :return: The format of this AccessConfigDeatil.
-        :rtype: AccessConfigFormat
+        :rtype: :class:`huaweicloudsdklts.v2.AccessConfigFormat`
         """
         return self._format
 
@@ -115,7 +126,7 @@ class AccessConfigDeatil:
 
 
         :param format: The format of this AccessConfigDeatil.
-        :type: AccessConfigFormat
+        :type format: :class:`huaweicloudsdklts.v2.AccessConfigFormat`
         """
         self._format = format
 
@@ -125,7 +136,7 @@ class AccessConfigDeatil:
 
 
         :return: The windows_log_info of this AccessConfigDeatil.
-        :rtype: AccessConfigWindowsLogInfo
+        :rtype: :class:`huaweicloudsdklts.v2.AccessConfigWindowsLogInfo`
         """
         return self._windows_log_info
 
@@ -135,7 +146,7 @@ class AccessConfigDeatil:
 
 
         :param windows_log_info: The windows_log_info of this AccessConfigDeatil.
-        :type: AccessConfigWindowsLogInfo
+        :type windows_log_info: :class:`huaweicloudsdklts.v2.AccessConfigWindowsLogInfo`
         """
         self._windows_log_info = windows_log_info
 

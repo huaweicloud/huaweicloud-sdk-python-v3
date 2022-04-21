@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ReviewDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ReviewDetail:
     }
 
     def __init__(self, confidence=None, label=None):
-        """ReviewDetail - a model defined in huaweicloud sdk"""
+        """ReviewDetail
+
+        The model defined in huaweicloud sdk
+
+        :param confidence: 置信度。  取值范围：[0,1]。
+        :type confidence: str
+        :param label: 每个检测结果的标签化说明。 - politics场景：label为对应的政治人物信息。 - terrorism场景： label为对应的暴恐元素（枪支、刀具、火灾等） 信息。 - porn场景：label为对应的涉黄元素（涉黄、性感等）信息。
+        :type label: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ReviewDetail:
         置信度。  取值范围：[0,1]。
 
         :param confidence: The confidence of this ReviewDetail.
-        :type: str
+        :type confidence: str
         """
         self._confidence = confidence
 
@@ -84,7 +91,7 @@ class ReviewDetail:
         每个检测结果的标签化说明。 - politics场景：label为对应的政治人物信息。 - terrorism场景： label为对应的暴恐元素（枪支、刀具、火灾等） 信息。 - porn场景：label为对应的涉黄元素（涉黄、性感等）信息。
 
         :param label: The label of this ReviewDetail.
-        :type: str
+        :type label: str
         """
         self._label = label
 

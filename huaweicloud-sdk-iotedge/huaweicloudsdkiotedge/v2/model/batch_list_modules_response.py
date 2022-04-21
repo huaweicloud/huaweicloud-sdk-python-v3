@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchListModulesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class BatchListModulesResponse(SdkResponse):
     }
 
     def __init__(self, count=None, page_info=None, modules=None):
-        """BatchListModulesResponse - a model defined in huaweicloud sdk"""
+        """BatchListModulesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 总记录数
+        :type count: int
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkiotedge.v2.PageInfoDTO`
+        :param modules: 每页记录数
+        :type modules: list[:class:`huaweicloudsdkiotedge.v2.EdgeModuleRespDTO`]
+        """
         
         super(BatchListModulesResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class BatchListModulesResponse(SdkResponse):
         总记录数
 
         :param count: The count of this BatchListModulesResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -78,7 +87,7 @@ class BatchListModulesResponse(SdkResponse):
 
 
         :return: The page_info of this BatchListModulesResponse.
-        :rtype: PageInfoDTO
+        :rtype: :class:`huaweicloudsdkiotedge.v2.PageInfoDTO`
         """
         return self._page_info
 
@@ -88,7 +97,7 @@ class BatchListModulesResponse(SdkResponse):
 
 
         :param page_info: The page_info of this BatchListModulesResponse.
-        :type: PageInfoDTO
+        :type page_info: :class:`huaweicloudsdkiotedge.v2.PageInfoDTO`
         """
         self._page_info = page_info
 
@@ -99,7 +108,7 @@ class BatchListModulesResponse(SdkResponse):
         每页记录数
 
         :return: The modules of this BatchListModulesResponse.
-        :rtype: list[EdgeModuleRespDTO]
+        :rtype: list[:class:`huaweicloudsdkiotedge.v2.EdgeModuleRespDTO`]
         """
         return self._modules
 
@@ -110,7 +119,7 @@ class BatchListModulesResponse(SdkResponse):
         每页记录数
 
         :param modules: The modules of this BatchListModulesResponse.
-        :type: list[EdgeModuleRespDTO]
+        :type modules: list[:class:`huaweicloudsdkiotedge.v2.EdgeModuleRespDTO`]
         """
         self._modules = modules
 

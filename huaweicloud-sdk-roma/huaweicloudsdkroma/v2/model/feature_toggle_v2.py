@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FeatureToggleV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class FeatureToggleV2:
     }
 
     def __init__(self, name=None, enable=None, config=None):
-        """FeatureToggleV2 - a model defined in huaweicloud sdk"""
+        """FeatureToggleV2
+
+        The model defined in huaweicloud sdk
+
+        :param name: 特性名称
+        :type name: str
+        :param enable: 是否开启特性
+        :type enable: bool
+        :param config: 特性参数配置
+        :type config: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class FeatureToggleV2:
         特性名称
 
         :param name: The name of this FeatureToggleV2.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -88,7 +97,7 @@ class FeatureToggleV2:
         是否开启特性
 
         :param enable: The enable of this FeatureToggleV2.
-        :type: bool
+        :type enable: bool
         """
         self._enable = enable
 
@@ -110,7 +119,7 @@ class FeatureToggleV2:
         特性参数配置
 
         :param config: The config of this FeatureToggleV2.
-        :type: str
+        :type config: str
         """
         self._config = config
 

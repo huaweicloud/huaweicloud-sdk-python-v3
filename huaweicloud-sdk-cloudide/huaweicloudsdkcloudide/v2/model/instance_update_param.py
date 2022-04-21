@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InstanceUpdateParam:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class InstanceUpdateParam:
     }
 
     def __init__(self, description=None, display_name=None, refresh_interval=None):
-        """InstanceUpdateParam - a model defined in huaweicloud sdk"""
+        """InstanceUpdateParam
+
+        The model defined in huaweicloud sdk
+
+        :param description: 描述
+        :type description: str
+        :param display_name: 实例名。 可以输入中文、数字、字母、下划线、点、破折号。长度介于3-100之间
+        :type display_name: str
+        :param refresh_interval: 自动休眠时长。 arm架构,自动休眠时长只能设置成30，60。x86架构可取值为30，60，240，1440和-1。除-1外，其它值的单位为“分钟”。实例无操作超过自动休眠时长后，将会被暂停（已保存的数据不会被删除）。-1表示实例不会自动停止
+        :type refresh_interval: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class InstanceUpdateParam:
         描述
 
         :param description: The description of this InstanceUpdateParam.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -88,7 +97,7 @@ class InstanceUpdateParam:
         实例名。 可以输入中文、数字、字母、下划线、点、破折号。长度介于3-100之间
 
         :param display_name: The display_name of this InstanceUpdateParam.
-        :type: str
+        :type display_name: str
         """
         self._display_name = display_name
 
@@ -110,7 +119,7 @@ class InstanceUpdateParam:
         自动休眠时长。 arm架构,自动休眠时长只能设置成30，60。x86架构可取值为30，60，240，1440和-1。除-1外，其它值的单位为“分钟”。实例无操作超过自动休眠时长后，将会被暂停（已保存的数据不会被删除）。-1表示实例不会自动停止
 
         :param refresh_interval: The refresh_interval of this InstanceUpdateParam.
-        :type: str
+        :type refresh_interval: str
         """
         self._refresh_interval = refresh_interval
 

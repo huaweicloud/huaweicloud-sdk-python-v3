@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteIpAddressGroupForceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class DeleteIpAddressGroupForceResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteIpAddressGroupForceResponse - a model defined in huaweicloud sdk"""
+        """DeleteIpAddressGroupForceResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(DeleteIpAddressGroupForceResponse, self).__init__()
         self.discriminator = None

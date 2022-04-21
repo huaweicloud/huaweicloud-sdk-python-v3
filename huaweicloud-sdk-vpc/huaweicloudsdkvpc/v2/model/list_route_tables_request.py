@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRouteTablesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListRouteTablesRequest:
     }
 
     def __init__(self, limit=None, marker=None, id=None, vpc_id=None, subnet_id=None):
-        """ListRouteTablesRequest - a model defined in huaweicloud sdk"""
+        """ListRouteTablesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 每页返回的个数
+        :type limit: int
+        :param marker: 分页查询起始的资源ID，为空时为查询第一页
+        :type marker: str
+        :param id: 路由表ID，可过滤对应ID的路由表
+        :type id: str
+        :param vpc_id: 虚拟私有云ID，可过滤对应虚拟私有云包含的路由表
+        :type vpc_id: str
+        :param subnet_id: 子网ID，可过滤对应子网关联的路由表
+        :type subnet_id: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class ListRouteTablesRequest:
         每页返回的个数
 
         :param limit: The limit of this ListRouteTablesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -100,7 +113,7 @@ class ListRouteTablesRequest:
         分页查询起始的资源ID，为空时为查询第一页
 
         :param marker: The marker of this ListRouteTablesRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -122,7 +135,7 @@ class ListRouteTablesRequest:
         路由表ID，可过滤对应ID的路由表
 
         :param id: The id of this ListRouteTablesRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -144,7 +157,7 @@ class ListRouteTablesRequest:
         虚拟私有云ID，可过滤对应虚拟私有云包含的路由表
 
         :param vpc_id: The vpc_id of this ListRouteTablesRequest.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -166,7 +179,7 @@ class ListRouteTablesRequest:
         子网ID，可过滤对应子网关联的路由表
 
         :param subnet_id: The subnet_id of this ListRouteTablesRequest.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 

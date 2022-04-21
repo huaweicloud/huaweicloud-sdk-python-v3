@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDomainQuotaRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowDomainQuotaRequest:
     }
 
     def __init__(self, domain_id=None):
-        """ShowDomainQuotaRequest - a model defined in huaweicloud sdk"""
+        """ShowDomainQuotaRequest
+
+        The model defined in huaweicloud sdk
+
+        :param domain_id: 租户ID。
+        :type domain_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowDomainQuotaRequest:
         租户ID。
 
         :param domain_id: The domain_id of this ShowDomainQuotaRequest.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 

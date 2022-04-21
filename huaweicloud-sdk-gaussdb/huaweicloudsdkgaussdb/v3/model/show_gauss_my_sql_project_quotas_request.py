@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowGaussMySqlProjectQuotasRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowGaussMySqlProjectQuotasRequest:
     }
 
     def __init__(self, x_language=None, type=None):
-        """ShowGaussMySqlProjectQuotasRequest - a model defined in huaweicloud sdk"""
+        """ShowGaussMySqlProjectQuotasRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言
+        :type x_language: str
+        :param type: &#39;功能说明：根据type过滤查询指定类型的配额&#39; 取值范围：instance
+        :type type: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class ShowGaussMySqlProjectQuotasRequest:
         语言
 
         :param x_language: The x_language of this ShowGaussMySqlProjectQuotasRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -85,7 +92,7 @@ class ShowGaussMySqlProjectQuotasRequest:
         '功能说明：根据type过滤查询指定类型的配额' 取值范围：instance
 
         :param type: The type of this ShowGaussMySqlProjectQuotasRequest.
-        :type: str
+        :type type: str
         """
         self._type = type
 

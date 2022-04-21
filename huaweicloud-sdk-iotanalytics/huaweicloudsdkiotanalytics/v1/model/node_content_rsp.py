@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NodeContentRsp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class NodeContentRsp:
     }
 
     def __init__(self, site_id=None, sqllist=None):
-        """NodeContentRsp - a model defined in huaweicloud sdk"""
+        """NodeContentRsp
+
+        The model defined in huaweicloud sdk
+
+        :param site_id: 节点实例ID
+        :type site_id: str
+        :param sqllist: SQL列表，将指定边缘平台节点的数字孪生模型实例数据转发到中心平台节点。
+        :type sqllist: list[str]
+        """
         
         
 
@@ -63,7 +70,7 @@ class NodeContentRsp:
         节点实例ID
 
         :param site_id: The site_id of this NodeContentRsp.
-        :type: str
+        :type site_id: str
         """
         self._site_id = site_id
 
@@ -85,7 +92,7 @@ class NodeContentRsp:
         SQL列表，将指定边缘平台节点的数字孪生模型实例数据转发到中心平台节点。
 
         :param sqllist: The sqllist of this NodeContentRsp.
-        :type: list[str]
+        :type sqllist: list[str]
         """
         self._sqllist = sqllist
 

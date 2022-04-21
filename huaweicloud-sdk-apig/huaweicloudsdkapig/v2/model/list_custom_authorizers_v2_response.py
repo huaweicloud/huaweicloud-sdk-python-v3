@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCustomAuthorizersV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListCustomAuthorizersV2Response(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, authorizer_list=None):
-        """ListCustomAuthorizersV2Response - a model defined in huaweicloud sdk"""
+        """ListCustomAuthorizersV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param size: 本次返回的列表长度
+        :type size: int
+        :param total: 满足条件的记录数
+        :type total: int
+        :param authorizer_list: 自定义认证列表
+        :type authorizer_list: list[:class:`huaweicloudsdkapig.v2.AuthorizerResp`]
+        """
         
         super(ListCustomAuthorizersV2Response, self).__init__()
 
@@ -66,7 +75,7 @@ class ListCustomAuthorizersV2Response(SdkResponse):
         本次返回的列表长度
 
         :param size: The size of this ListCustomAuthorizersV2Response.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -88,7 +97,7 @@ class ListCustomAuthorizersV2Response(SdkResponse):
         满足条件的记录数
 
         :param total: The total of this ListCustomAuthorizersV2Response.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -99,7 +108,7 @@ class ListCustomAuthorizersV2Response(SdkResponse):
         自定义认证列表
 
         :return: The authorizer_list of this ListCustomAuthorizersV2Response.
-        :rtype: list[AuthorizerResp]
+        :rtype: list[:class:`huaweicloudsdkapig.v2.AuthorizerResp`]
         """
         return self._authorizer_list
 
@@ -110,7 +119,7 @@ class ListCustomAuthorizersV2Response(SdkResponse):
         自定义认证列表
 
         :param authorizer_list: The authorizer_list of this ListCustomAuthorizersV2Response.
-        :type: list[AuthorizerResp]
+        :type authorizer_list: list[:class:`huaweicloudsdkapig.v2.AuthorizerResp`]
         """
         self._authorizer_list = authorizer_list
 

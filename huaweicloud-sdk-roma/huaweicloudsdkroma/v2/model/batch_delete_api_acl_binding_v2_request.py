@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchDeleteApiAclBindingV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class BatchDeleteApiAclBindingV2Request:
     }
 
     def __init__(self, instance_id=None, action=None, body=None):
-        """BatchDeleteApiAclBindingV2Request - a model defined in huaweicloud sdk"""
+        """BatchDeleteApiAclBindingV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param action: 必须为delete
+        :type action: str
+        :param body: Body of the BatchDeleteApiAclBindingV2Request
+        :type body: :class:`huaweicloudsdkroma.v2.AclBindingBatchDelete`
+        """
         
         
 
@@ -66,7 +75,7 @@ class BatchDeleteApiAclBindingV2Request:
         实例ID
 
         :param instance_id: The instance_id of this BatchDeleteApiAclBindingV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -88,7 +97,7 @@ class BatchDeleteApiAclBindingV2Request:
         必须为delete
 
         :param action: The action of this BatchDeleteApiAclBindingV2Request.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -98,7 +107,7 @@ class BatchDeleteApiAclBindingV2Request:
 
 
         :return: The body of this BatchDeleteApiAclBindingV2Request.
-        :rtype: AclBindingBatchDelete
+        :rtype: :class:`huaweicloudsdkroma.v2.AclBindingBatchDelete`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class BatchDeleteApiAclBindingV2Request:
 
 
         :param body: The body of this BatchDeleteApiAclBindingV2Request.
-        :type: AclBindingBatchDelete
+        :type body: :class:`huaweicloudsdkroma.v2.AclBindingBatchDelete`
         """
         self._body = body
 

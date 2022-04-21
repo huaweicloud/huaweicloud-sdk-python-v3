@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ModifyTargetParamsReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ModifyTargetParamsReq:
     }
 
     def __init__(self, group=None, params=None):
-        """ModifyTargetParamsReq - a model defined in huaweicloud sdk"""
+        """ModifyTargetParamsReq
+
+        The model defined in huaweicloud sdk
+
+        :param group: 参数分组
+        :type group: str
+        :param params: 修改的参数信息
+        :type params: list[:class:`huaweicloudsdkdrs.v3.ParamsReqBean`]
+        """
         
         
 
@@ -61,7 +68,7 @@ class ModifyTargetParamsReq:
         参数分组
 
         :param group: The group of this ModifyTargetParamsReq.
-        :type: str
+        :type group: str
         """
         self._group = group
 
@@ -72,7 +79,7 @@ class ModifyTargetParamsReq:
         修改的参数信息
 
         :return: The params of this ModifyTargetParamsReq.
-        :rtype: list[ParamsReqBean]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.ParamsReqBean`]
         """
         return self._params
 
@@ -83,7 +90,7 @@ class ModifyTargetParamsReq:
         修改的参数信息
 
         :param params: The params of this ModifyTargetParamsReq.
-        :type: list[ParamsReqBean]
+        :type params: list[:class:`huaweicloudsdkdrs.v3.ParamsReqBean`]
         """
         self._params = params
 

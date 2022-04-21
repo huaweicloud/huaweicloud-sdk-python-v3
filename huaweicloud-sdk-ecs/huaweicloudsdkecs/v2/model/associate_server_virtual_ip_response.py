@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AssociateServerVirtualIpResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class AssociateServerVirtualIpResponse(SdkResponse):
     }
 
     def __init__(self, port_id=None):
-        """AssociateServerVirtualIpResponse - a model defined in huaweicloud sdk"""
+        """AssociateServerVirtualIpResponse
+
+        The model defined in huaweicloud sdk
+
+        :param port_id: 云服务器网卡ID。
+        :type port_id: str
+        """
         
         super(AssociateServerVirtualIpResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class AssociateServerVirtualIpResponse(SdkResponse):
         云服务器网卡ID。
 
         :param port_id: The port_id of this AssociateServerVirtualIpResponse.
-        :type: str
+        :type port_id: str
         """
         self._port_id = port_id
 

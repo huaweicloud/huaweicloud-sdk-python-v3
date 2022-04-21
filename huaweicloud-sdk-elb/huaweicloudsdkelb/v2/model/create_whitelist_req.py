@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateWhitelistReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CreateWhitelistReq:
     }
 
     def __init__(self, tenant_id=None, listener_id=None, enable_whitelist=None, whitelist=None):
-        """CreateWhitelistReq - a model defined in huaweicloud sdk"""
+        """CreateWhitelistReq
+
+        The model defined in huaweicloud sdk
+
+        :param tenant_id: 白名单所在的项目ID
+        :type tenant_id: str
+        :param listener_id: 白名单关联的监听器ID
+        :type listener_id: str
+        :param enable_whitelist: 是否开启白名单访问控制开关。true：开启；false：关闭
+        :type enable_whitelist: bool
+        :param whitelist: 白名单IP列表。可以是ip，例如192.168.10.123。也可以是一个网段，例如192.168.10.1/24。不同的值之间用逗号分隔。 不传，默认为空。
+        :type whitelist: str
+        """
         
         
 
@@ -72,7 +83,7 @@ class CreateWhitelistReq:
         白名单所在的项目ID
 
         :param tenant_id: The tenant_id of this CreateWhitelistReq.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 
@@ -94,7 +105,7 @@ class CreateWhitelistReq:
         白名单关联的监听器ID
 
         :param listener_id: The listener_id of this CreateWhitelistReq.
-        :type: str
+        :type listener_id: str
         """
         self._listener_id = listener_id
 
@@ -116,7 +127,7 @@ class CreateWhitelistReq:
         是否开启白名单访问控制开关。true：开启；false：关闭
 
         :param enable_whitelist: The enable_whitelist of this CreateWhitelistReq.
-        :type: bool
+        :type enable_whitelist: bool
         """
         self._enable_whitelist = enable_whitelist
 
@@ -138,7 +149,7 @@ class CreateWhitelistReq:
         白名单IP列表。可以是ip，例如192.168.10.123。也可以是一个网段，例如192.168.10.1/24。不同的值之间用逗号分隔。 不传，默认为空。
 
         :param whitelist: The whitelist of this CreateWhitelistReq.
-        :type: str
+        :type whitelist: str
         """
         self._whitelist = whitelist
 

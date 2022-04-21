@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateRepoDomainsRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CreateRepoDomainsRequestBody:
     }
 
     def __init__(self, access_domain=None, permit=None, deadline=None, description=None):
-        """CreateRepoDomainsRequestBody - a model defined in huaweicloud sdk"""
+        """CreateRepoDomainsRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param access_domain: 共享租户名称
+        :type access_domain: str
+        :param permit: 当前只支持read权限
+        :type permit: str
+        :param deadline: 截止时间，UTC时间格式。永久有效为forever
+        :type deadline: str
+        :param description: 描述
+        :type description: str
+        """
         
         
 
@@ -70,7 +81,7 @@ class CreateRepoDomainsRequestBody:
         共享租户名称
 
         :param access_domain: The access_domain of this CreateRepoDomainsRequestBody.
-        :type: str
+        :type access_domain: str
         """
         self._access_domain = access_domain
 
@@ -92,7 +103,7 @@ class CreateRepoDomainsRequestBody:
         当前只支持read权限
 
         :param permit: The permit of this CreateRepoDomainsRequestBody.
-        :type: str
+        :type permit: str
         """
         self._permit = permit
 
@@ -114,7 +125,7 @@ class CreateRepoDomainsRequestBody:
         截止时间，UTC时间格式。永久有效为forever
 
         :param deadline: The deadline of this CreateRepoDomainsRequestBody.
-        :type: str
+        :type deadline: str
         """
         self._deadline = deadline
 
@@ -136,7 +147,7 @@ class CreateRepoDomainsRequestBody:
         描述
 
         :param description: The description of this CreateRepoDomainsRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 

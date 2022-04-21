@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListOnDemandResourceRatingsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListOnDemandResourceRatingsRequest:
     }
 
     def __init__(self, body=None):
-        """ListOnDemandResourceRatingsRequest - a model defined in huaweicloud sdk"""
+        """ListOnDemandResourceRatingsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the ListOnDemandResourceRatingsRequest
+        :type body: :class:`huaweicloudsdkbssintl.v2.RateOnDemandReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class ListOnDemandResourceRatingsRequest:
 
 
         :return: The body of this ListOnDemandResourceRatingsRequest.
-        :rtype: RateOnDemandReq
+        :rtype: :class:`huaweicloudsdkbssintl.v2.RateOnDemandReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class ListOnDemandResourceRatingsRequest:
 
 
         :param body: The body of this ListOnDemandResourceRatingsRequest.
-        :type: RateOnDemandReq
+        :type body: :class:`huaweicloudsdkbssintl.v2.RateOnDemandReq`
         """
         self._body = body
 

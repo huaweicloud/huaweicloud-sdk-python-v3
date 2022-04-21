@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ReclaimToPartnerAccountBalancesReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ReclaimToPartnerAccountBalancesReq:
     }
 
     def __init__(self, customer_id=None, amount=None, indirect_partner_id=None):
-        """ReclaimToPartnerAccountBalancesReq - a model defined in huaweicloud sdk"""
+        """ReclaimToPartnerAccountBalancesReq
+
+        The model defined in huaweicloud sdk
+
+        :param customer_id: 客户账号ID。您可以调用查询客户列表接口获取customer_id。
+        :type customer_id: str
+        :param amount: 回收的金额。 单位：元。取值大于0且精确到小数点后2位。
+        :type amount: float
+        :param indirect_partner_id: 精英服务商ID。获取方法请参见查询精英服务商列表。 华为云伙伴能力中心（一级经销商）回收精英服务商（二级经销商）的子客户账户余额时，需携带此参数；否则只能回收自己的子客户账户余额。
+        :type indirect_partner_id: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class ReclaimToPartnerAccountBalancesReq:
         客户账号ID。您可以调用查询客户列表接口获取customer_id。
 
         :param customer_id: The customer_id of this ReclaimToPartnerAccountBalancesReq.
-        :type: str
+        :type customer_id: str
         """
         self._customer_id = customer_id
 
@@ -88,7 +97,7 @@ class ReclaimToPartnerAccountBalancesReq:
         回收的金额。 单位：元。取值大于0且精确到小数点后2位。
 
         :param amount: The amount of this ReclaimToPartnerAccountBalancesReq.
-        :type: float
+        :type amount: float
         """
         self._amount = amount
 
@@ -110,7 +119,7 @@ class ReclaimToPartnerAccountBalancesReq:
         精英服务商ID。获取方法请参见查询精英服务商列表。 华为云伙伴能力中心（一级经销商）回收精英服务商（二级经销商）的子客户账户余额时，需携带此参数；否则只能回收自己的子客户账户余额。
 
         :param indirect_partner_id: The indirect_partner_id of this ReclaimToPartnerAccountBalancesReq.
-        :type: str
+        :type indirect_partner_id: str
         """
         self._indirect_partner_id = indirect_partner_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchFreezeDevicesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchFreezeDevicesRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """BatchFreezeDevicesRequest - a model defined in huaweicloud sdk"""
+        """BatchFreezeDevicesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param body: Body of the BatchFreezeDevicesRequest
+        :type body: :class:`huaweicloudsdkroma.v2.BatchFreezeDevicesRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class BatchFreezeDevicesRequest:
         实例ID
 
         :param instance_id: The instance_id of this BatchFreezeDevicesRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -72,7 +79,7 @@ class BatchFreezeDevicesRequest:
 
 
         :return: The body of this BatchFreezeDevicesRequest.
-        :rtype: BatchFreezeDevicesRequestBody
+        :rtype: :class:`huaweicloudsdkroma.v2.BatchFreezeDevicesRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class BatchFreezeDevicesRequest:
 
 
         :param body: The body of this BatchFreezeDevicesRequest.
-        :type: BatchFreezeDevicesRequestBody
+        :type body: :class:`huaweicloudsdkroma.v2.BatchFreezeDevicesRequestBody`
         """
         self._body = body
 

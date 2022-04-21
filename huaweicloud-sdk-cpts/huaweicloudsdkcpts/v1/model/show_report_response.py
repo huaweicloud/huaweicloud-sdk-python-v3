@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowReportResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowReportResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, extend=None, result=None):
-        """ShowReportResponse - a model defined in huaweicloud sdk"""
+        """ShowReportResponse
+
+        The model defined in huaweicloud sdk
+
+        :param code: code
+        :type code: str
+        :param message: message
+        :type message: str
+        :param extend: extend
+        :type extend: str
+        :param result: 
+        :type result: :class:`huaweicloudsdkcpts.v1.ReportInfo`
+        """
         
         super(ShowReportResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class ShowReportResponse(SdkResponse):
         code
 
         :param code: The code of this ShowReportResponse.
-        :type: str
+        :type code: str
         """
         self._code = code
 
@@ -95,7 +106,7 @@ class ShowReportResponse(SdkResponse):
         message
 
         :param message: The message of this ShowReportResponse.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -117,7 +128,7 @@ class ShowReportResponse(SdkResponse):
         extend
 
         :param extend: The extend of this ShowReportResponse.
-        :type: str
+        :type extend: str
         """
         self._extend = extend
 
@@ -127,7 +138,7 @@ class ShowReportResponse(SdkResponse):
 
 
         :return: The result of this ShowReportResponse.
-        :rtype: ReportInfo
+        :rtype: :class:`huaweicloudsdkcpts.v1.ReportInfo`
         """
         return self._result
 
@@ -137,7 +148,7 @@ class ShowReportResponse(SdkResponse):
 
 
         :param result: The result of this ShowReportResponse.
-        :type: ReportInfo
+        :type result: :class:`huaweicloudsdkcpts.v1.ReportInfo`
         """
         self._result = result
 

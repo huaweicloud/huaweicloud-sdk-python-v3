@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EdgeNodeAdded:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class EdgeNodeAdded:
     }
 
     def __init__(self, relation=None, comment=None, node_ids=None):
-        """EdgeNodeAdded - a model defined in huaweicloud sdk"""
+        """EdgeNodeAdded
+
+        The model defined in huaweicloud sdk
+
+        :param relation: 终端设备和节点关系的名称，只允许中文字符、英文字母、数字、下划线、中划线，最大长度64
+        :type relation: str
+        :param comment: 终端设备和节点关系的描述，最大长度64，不允许^ ~ # $ % &amp; * &lt; &gt; ( ) [ ] { } &#39; \&quot; \\
+        :type comment: str
+        :param node_ids: 节点ID列表，一个设备只可以被绑定于一个边缘节点。
+        :type node_ids: list[str]
+        """
         
         
 
@@ -67,7 +76,7 @@ class EdgeNodeAdded:
         终端设备和节点关系的名称，只允许中文字符、英文字母、数字、下划线、中划线，最大长度64
 
         :param relation: The relation of this EdgeNodeAdded.
-        :type: str
+        :type relation: str
         """
         self._relation = relation
 
@@ -89,7 +98,7 @@ class EdgeNodeAdded:
         终端设备和节点关系的描述，最大长度64，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
         :param comment: The comment of this EdgeNodeAdded.
-        :type: str
+        :type comment: str
         """
         self._comment = comment
 
@@ -111,7 +120,7 @@ class EdgeNodeAdded:
         节点ID列表，一个设备只可以被绑定于一个边缘节点。
 
         :param node_ids: The node_ids of this EdgeNodeAdded.
-        :type: list[str]
+        :type node_ids: list[str]
         """
         self._node_ids = node_ids
 

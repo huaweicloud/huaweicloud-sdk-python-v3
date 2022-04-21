@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PermissionHostDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class PermissionHostDetail:
     }
 
     def __init__(self, can_view=None, can_edit=None, can_delete=None, can_add_host=None, can_connection_test=None):
-        """PermissionHostDetail - a model defined in huaweicloud sdk"""
+        """PermissionHostDetail
+
+        The model defined in huaweicloud sdk
+
+        :param can_view: 是否有查看权限
+        :type can_view: bool
+        :param can_edit: 是否有编辑权限
+        :type can_edit: bool
+        :param can_delete: 是否有删除权限
+        :type can_delete: bool
+        :param can_add_host: 是否有添加主机权限
+        :type can_add_host: bool
+        :param can_connection_test: 是否测试主机连通性权限
+        :type can_connection_test: bool
+        """
         
         
 
@@ -78,7 +91,7 @@ class PermissionHostDetail:
         是否有查看权限
 
         :param can_view: The can_view of this PermissionHostDetail.
-        :type: bool
+        :type can_view: bool
         """
         self._can_view = can_view
 
@@ -100,7 +113,7 @@ class PermissionHostDetail:
         是否有编辑权限
 
         :param can_edit: The can_edit of this PermissionHostDetail.
-        :type: bool
+        :type can_edit: bool
         """
         self._can_edit = can_edit
 
@@ -122,7 +135,7 @@ class PermissionHostDetail:
         是否有删除权限
 
         :param can_delete: The can_delete of this PermissionHostDetail.
-        :type: bool
+        :type can_delete: bool
         """
         self._can_delete = can_delete
 
@@ -144,7 +157,7 @@ class PermissionHostDetail:
         是否有添加主机权限
 
         :param can_add_host: The can_add_host of this PermissionHostDetail.
-        :type: bool
+        :type can_add_host: bool
         """
         self._can_add_host = can_add_host
 
@@ -166,7 +179,7 @@ class PermissionHostDetail:
         是否测试主机连通性权限
 
         :param can_connection_test: The can_connection_test of this PermissionHostDetail.
-        :type: bool
+        :type can_connection_test: bool
         """
         self._can_connection_test = can_connection_test
 

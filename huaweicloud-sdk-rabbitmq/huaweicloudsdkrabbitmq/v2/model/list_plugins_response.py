@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPluginsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListPluginsResponse(SdkResponse):
     }
 
     def __init__(self, plugins=None):
-        """ListPluginsResponse - a model defined in huaweicloud sdk"""
+        """ListPluginsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param plugins: 插件信息列表。
+        :type plugins: list[:class:`huaweicloudsdkrabbitmq.v2.PluginEntity`]
+        """
         
         super(ListPluginsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListPluginsResponse(SdkResponse):
         插件信息列表。
 
         :return: The plugins of this ListPluginsResponse.
-        :rtype: list[PluginEntity]
+        :rtype: list[:class:`huaweicloudsdkrabbitmq.v2.PluginEntity`]
         """
         return self._plugins
 
@@ -58,7 +63,7 @@ class ListPluginsResponse(SdkResponse):
         插件信息列表。
 
         :param plugins: The plugins of this ListPluginsResponse.
-        :type: list[PluginEntity]
+        :type plugins: list[:class:`huaweicloudsdkrabbitmq.v2.PluginEntity`]
         """
         self._plugins = plugins
 

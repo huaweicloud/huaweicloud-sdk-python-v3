@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BssParamForCreateVolume:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class BssParamForCreateVolume:
     }
 
     def __init__(self, charging_mode=None, is_auto_pay=None, is_auto_renew=None, period_num=None, period_type=None):
-        """BssParamForCreateVolume - a model defined in huaweicloud sdk"""
+        """BssParamForCreateVolume
+
+        The model defined in huaweicloud sdk
+
+        :param charging_mode: 功能说明：计费模式。默认值为postPaid。 取值范围： * prePaid：包年包月 * postPaid：按需
+        :type charging_mode: str
+        :param is_auto_pay: 功能说明：是否立即支付。chargingMode为PrePaid时该参数会生效。默认值为false。 取值范围： * true：立即支付，从帐户余额中自动扣费 * false：不立即支付，创建订单暂不支付 
+        :type is_auto_pay: str
+        :param is_auto_renew: 功能说明：是否自动续订。chargingMode为prePaid时该参数会生效。默认值为false。 取值范围： * true：自动续订，自动续订周期与订购周期相同 * false：不自动续订 
+        :type is_auto_renew: str
+        :param period_num: 功能说明：订购周期数，chargingMode为prePaid时该参数会生效，并且该参数为为必选。 取值范围： * periodType为month时，为[1-9] * periodType为year时，为[1-1]
+        :type period_num: int
+        :param period_type: 功能说明：订购周期单位。chargingMode为prePaid时该参数会生效，并且该参数为必选。 取值范围： * month：月 * year：年
+        :type period_type: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class BssParamForCreateVolume:
         功能说明：计费模式。默认值为postPaid。 取值范围： * prePaid：包年包月 * postPaid：按需
 
         :param charging_mode: The charging_mode of this BssParamForCreateVolume.
-        :type: str
+        :type charging_mode: str
         """
         self._charging_mode = charging_mode
 
@@ -100,7 +113,7 @@ class BssParamForCreateVolume:
         功能说明：是否立即支付。chargingMode为PrePaid时该参数会生效。默认值为false。 取值范围： * true：立即支付，从帐户余额中自动扣费 * false：不立即支付，创建订单暂不支付 
 
         :param is_auto_pay: The is_auto_pay of this BssParamForCreateVolume.
-        :type: str
+        :type is_auto_pay: str
         """
         self._is_auto_pay = is_auto_pay
 
@@ -122,7 +135,7 @@ class BssParamForCreateVolume:
         功能说明：是否自动续订。chargingMode为prePaid时该参数会生效。默认值为false。 取值范围： * true：自动续订，自动续订周期与订购周期相同 * false：不自动续订 
 
         :param is_auto_renew: The is_auto_renew of this BssParamForCreateVolume.
-        :type: str
+        :type is_auto_renew: str
         """
         self._is_auto_renew = is_auto_renew
 
@@ -144,7 +157,7 @@ class BssParamForCreateVolume:
         功能说明：订购周期数，chargingMode为prePaid时该参数会生效，并且该参数为为必选。 取值范围： * periodType为month时，为[1-9] * periodType为year时，为[1-1]
 
         :param period_num: The period_num of this BssParamForCreateVolume.
-        :type: int
+        :type period_num: int
         """
         self._period_num = period_num
 
@@ -166,7 +179,7 @@ class BssParamForCreateVolume:
         功能说明：订购周期单位。chargingMode为prePaid时该参数会生效，并且该参数为必选。 取值范围： * month：月 * year：年
 
         :param period_type: The period_type of this BssParamForCreateVolume.
-        :type: str
+        :type period_type: str
         """
         self._period_type = period_type
 

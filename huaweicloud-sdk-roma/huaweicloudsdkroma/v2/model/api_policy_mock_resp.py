@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApiPolicyMockResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class ApiPolicyMockResp:
     }
 
     def __init__(self, id=None, name=None, conditions=None, backend_params=None, effect_mode=None, authorizer_id=None, result_content=None, status_code=None, header=None):
-        """ApiPolicyMockResp - a model defined in huaweicloud sdk"""
+        """ApiPolicyMockResp
+
+        The model defined in huaweicloud sdk
+
+        :param id: 编号
+        :type id: str
+        :param name: 策略后端名称。字符串由中文、英文字母、数字、下划线组成，且只能以中文或英文开头。
+        :type name: str
+        :param conditions: 策略条件列表
+        :type conditions: list[:class:`huaweicloudsdkroma.v2.ConditionResp`]
+        :param backend_params: 后端参数列表
+        :type backend_params: list[:class:`huaweicloudsdkroma.v2.BackendParam`]
+        :param effect_mode: 关联的策略组合模式： - ALL：满足全部条件 - ANY：满足任一条件
+        :type effect_mode: str
+        :param authorizer_id: 后端自定义认证对象的ID
+        :type authorizer_id: str
+        :param result_content: 返回结果
+        :type result_content: str
+        :param status_code: mock后端自定义状态码： \&quot;200\&quot;: \&quot;OK\&quot;, \&quot;201\&quot;: \&quot;Created\&quot;, \&quot;202\&quot;: \&quot;Accepted\&quot;, \&quot;203\&quot;: \&quot;NonAuthoritativeInformation\&quot;, \&quot;204\&quot;: \&quot;NoContent\&quot;, \&quot;205\&quot;: \&quot;ResetContent\&quot;, \&quot;206\&quot;: \&quot;PartialContent\&quot;, \&quot;300\&quot;: \&quot;MultipleChoices\&quot;, \&quot;301\&quot;: \&quot;MovedPermanently\&quot;, \&quot;302\&quot;: \&quot;Found\&quot;, \&quot;303\&quot;: \&quot;SeeOther\&quot;, \&quot;304\&quot;: \&quot;NotModified\&quot;, \&quot;305\&quot;: \&quot;UseProxy\&quot;, \&quot;306\&quot;: \&quot;Unused\&quot;, \&quot;307\&quot;: \&quot;TemporaryRedirect\&quot;, \&quot;400\&quot;: \&quot;BadRequest\&quot;, \&quot;401\&quot;: \&quot;Unauthorized\&quot;, \&quot;402\&quot;: \&quot;PaymentRequired\&quot;, \&quot;403\&quot;: \&quot;Forbidden\&quot;, \&quot;404\&quot;: \&quot;NotFound\&quot;, \&quot;405\&quot;: \&quot;MethodNotAllowed\&quot;, \&quot;406\&quot;: \&quot;NotAcceptable\&quot;, \&quot;407\&quot;: \&quot;ProxyAuthenticationRequired\&quot;, \&quot;408\&quot;: \&quot;RequestTimeout\&quot;, \&quot;409\&quot;: \&quot;Conflict\&quot;, \&quot;410\&quot;: \&quot;Gone\&quot;, \&quot;411\&quot;: \&quot;LengthRequired\&quot;, \&quot;412\&quot;: \&quot;PreconditionFailed\&quot;, \&quot;413\&quot;: \&quot;RequestEntityTooLarge\&quot;, \&quot;414\&quot;: \&quot;RequestURITooLong\&quot;, \&quot;415\&quot;: \&quot;UnsupportedMediaType\&quot;, \&quot;416\&quot;: \&quot;RequestedRangeNotSatisfiable\&quot;, \&quot;417\&quot;: \&quot;ExpectationFailed\&quot;, \&quot;450\&quot;: \&quot;ParameterRequried\&quot;, \&quot;451\&quot;: \&quot;MethodConnectException\&quot;, \&quot;500\&quot;: \&quot;InternalServerError\&quot;, \&quot;501\&quot;: \&quot;NotImplemented\&quot;, \&quot;502\&quot;: \&quot;BadGateway\&quot;, \&quot;503\&quot;: \&quot;ServiceUnavailable\&quot;, \&quot;504\&quot;: \&quot;GatewayTimeout\&quot;, \&quot;505\&quot;: \&quot;HTTPVersionNotSupported\&quot;,
+        :type status_code: int
+        :param header: mock后端自定义响应头header
+        :type header: list[:class:`huaweicloudsdkroma.v2.MockApiBaseInfoHeader`]
+        """
         
         
 
@@ -95,7 +116,7 @@ class ApiPolicyMockResp:
         编号
 
         :param id: The id of this ApiPolicyMockResp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -117,7 +138,7 @@ class ApiPolicyMockResp:
         策略后端名称。字符串由中文、英文字母、数字、下划线组成，且只能以中文或英文开头。
 
         :param name: The name of this ApiPolicyMockResp.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -128,7 +149,7 @@ class ApiPolicyMockResp:
         策略条件列表
 
         :return: The conditions of this ApiPolicyMockResp.
-        :rtype: list[ConditionResp]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.ConditionResp`]
         """
         return self._conditions
 
@@ -139,7 +160,7 @@ class ApiPolicyMockResp:
         策略条件列表
 
         :param conditions: The conditions of this ApiPolicyMockResp.
-        :type: list[ConditionResp]
+        :type conditions: list[:class:`huaweicloudsdkroma.v2.ConditionResp`]
         """
         self._conditions = conditions
 
@@ -150,7 +171,7 @@ class ApiPolicyMockResp:
         后端参数列表
 
         :return: The backend_params of this ApiPolicyMockResp.
-        :rtype: list[BackendParam]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.BackendParam`]
         """
         return self._backend_params
 
@@ -161,7 +182,7 @@ class ApiPolicyMockResp:
         后端参数列表
 
         :param backend_params: The backend_params of this ApiPolicyMockResp.
-        :type: list[BackendParam]
+        :type backend_params: list[:class:`huaweicloudsdkroma.v2.BackendParam`]
         """
         self._backend_params = backend_params
 
@@ -183,7 +204,7 @@ class ApiPolicyMockResp:
         关联的策略组合模式： - ALL：满足全部条件 - ANY：满足任一条件
 
         :param effect_mode: The effect_mode of this ApiPolicyMockResp.
-        :type: str
+        :type effect_mode: str
         """
         self._effect_mode = effect_mode
 
@@ -205,7 +226,7 @@ class ApiPolicyMockResp:
         后端自定义认证对象的ID
 
         :param authorizer_id: The authorizer_id of this ApiPolicyMockResp.
-        :type: str
+        :type authorizer_id: str
         """
         self._authorizer_id = authorizer_id
 
@@ -227,7 +248,7 @@ class ApiPolicyMockResp:
         返回结果
 
         :param result_content: The result_content of this ApiPolicyMockResp.
-        :type: str
+        :type result_content: str
         """
         self._result_content = result_content
 
@@ -249,7 +270,7 @@ class ApiPolicyMockResp:
         mock后端自定义状态码： \"200\": \"OK\", \"201\": \"Created\", \"202\": \"Accepted\", \"203\": \"NonAuthoritativeInformation\", \"204\": \"NoContent\", \"205\": \"ResetContent\", \"206\": \"PartialContent\", \"300\": \"MultipleChoices\", \"301\": \"MovedPermanently\", \"302\": \"Found\", \"303\": \"SeeOther\", \"304\": \"NotModified\", \"305\": \"UseProxy\", \"306\": \"Unused\", \"307\": \"TemporaryRedirect\", \"400\": \"BadRequest\", \"401\": \"Unauthorized\", \"402\": \"PaymentRequired\", \"403\": \"Forbidden\", \"404\": \"NotFound\", \"405\": \"MethodNotAllowed\", \"406\": \"NotAcceptable\", \"407\": \"ProxyAuthenticationRequired\", \"408\": \"RequestTimeout\", \"409\": \"Conflict\", \"410\": \"Gone\", \"411\": \"LengthRequired\", \"412\": \"PreconditionFailed\", \"413\": \"RequestEntityTooLarge\", \"414\": \"RequestURITooLong\", \"415\": \"UnsupportedMediaType\", \"416\": \"RequestedRangeNotSatisfiable\", \"417\": \"ExpectationFailed\", \"450\": \"ParameterRequried\", \"451\": \"MethodConnectException\", \"500\": \"InternalServerError\", \"501\": \"NotImplemented\", \"502\": \"BadGateway\", \"503\": \"ServiceUnavailable\", \"504\": \"GatewayTimeout\", \"505\": \"HTTPVersionNotSupported\",
 
         :param status_code: The status_code of this ApiPolicyMockResp.
-        :type: int
+        :type status_code: int
         """
         self._status_code = status_code
 
@@ -260,7 +281,7 @@ class ApiPolicyMockResp:
         mock后端自定义响应头header
 
         :return: The header of this ApiPolicyMockResp.
-        :rtype: list[MockApiBaseInfoHeader]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.MockApiBaseInfoHeader`]
         """
         return self._header
 
@@ -271,7 +292,7 @@ class ApiPolicyMockResp:
         mock后端自定义响应头header
 
         :param header: The header of this ApiPolicyMockResp.
-        :type: list[MockApiBaseInfoHeader]
+        :type header: list[:class:`huaweicloudsdkroma.v2.MockApiBaseInfoHeader`]
         """
         self._header = header
 

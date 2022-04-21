@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListScalingPoliciesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListScalingPoliciesRequest:
     }
 
     def __init__(self, scaling_group_id=None, scaling_policy_name=None, scaling_policy_type=None, scaling_policy_id=None, start_number=None, limit=None):
-        """ListScalingPoliciesRequest - a model defined in huaweicloud sdk"""
+        """ListScalingPoliciesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param scaling_group_id: 伸缩组ID。
+        :type scaling_group_id: str
+        :param scaling_policy_name: 伸缩策略名称。
+        :type scaling_policy_name: str
+        :param scaling_policy_type: 策略类型。
+        :type scaling_policy_type: str
+        :param scaling_policy_id: 伸缩策略ID。
+        :type scaling_policy_id: str
+        :param start_number: 查询的起始行号，默认为0。
+        :type start_number: int
+        :param limit: 查询记录数，默认20，最大100。
+        :type limit: int
+        """
         
         
 
@@ -82,7 +97,7 @@ class ListScalingPoliciesRequest:
         伸缩组ID。
 
         :param scaling_group_id: The scaling_group_id of this ListScalingPoliciesRequest.
-        :type: str
+        :type scaling_group_id: str
         """
         self._scaling_group_id = scaling_group_id
 
@@ -104,7 +119,7 @@ class ListScalingPoliciesRequest:
         伸缩策略名称。
 
         :param scaling_policy_name: The scaling_policy_name of this ListScalingPoliciesRequest.
-        :type: str
+        :type scaling_policy_name: str
         """
         self._scaling_policy_name = scaling_policy_name
 
@@ -126,7 +141,7 @@ class ListScalingPoliciesRequest:
         策略类型。
 
         :param scaling_policy_type: The scaling_policy_type of this ListScalingPoliciesRequest.
-        :type: str
+        :type scaling_policy_type: str
         """
         self._scaling_policy_type = scaling_policy_type
 
@@ -148,7 +163,7 @@ class ListScalingPoliciesRequest:
         伸缩策略ID。
 
         :param scaling_policy_id: The scaling_policy_id of this ListScalingPoliciesRequest.
-        :type: str
+        :type scaling_policy_id: str
         """
         self._scaling_policy_id = scaling_policy_id
 
@@ -170,7 +185,7 @@ class ListScalingPoliciesRequest:
         查询的起始行号，默认为0。
 
         :param start_number: The start_number of this ListScalingPoliciesRequest.
-        :type: int
+        :type start_number: int
         """
         self._start_number = start_number
 
@@ -192,7 +207,7 @@ class ListScalingPoliciesRequest:
         查询记录数，默认20，最大100。
 
         :param limit: The limit of this ListScalingPoliciesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

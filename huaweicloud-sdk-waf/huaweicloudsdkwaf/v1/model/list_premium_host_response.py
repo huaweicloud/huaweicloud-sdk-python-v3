@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPremiumHostResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListPremiumHostResponse(SdkResponse):
     }
 
     def __init__(self, total=None, items=None):
-        """ListPremiumHostResponse - a model defined in huaweicloud sdk"""
+        """ListPremiumHostResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 全部防护域名的数量
+        :type total: int
+        :param items: 详细的防护域名信息
+        :type items: list[:class:`huaweicloudsdkwaf.v1.SimplePremiumWafHost`]
+        """
         
         super(ListPremiumHostResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListPremiumHostResponse(SdkResponse):
         全部防护域名的数量
 
         :param total: The total of this ListPremiumHostResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -74,7 +81,7 @@ class ListPremiumHostResponse(SdkResponse):
         详细的防护域名信息
 
         :return: The items of this ListPremiumHostResponse.
-        :rtype: list[SimplePremiumWafHost]
+        :rtype: list[:class:`huaweicloudsdkwaf.v1.SimplePremiumWafHost`]
         """
         return self._items
 
@@ -85,7 +92,7 @@ class ListPremiumHostResponse(SdkResponse):
         详细的防护域名信息
 
         :param items: The items of this ListPremiumHostResponse.
-        :type: list[SimplePremiumWafHost]
+        :type items: list[:class:`huaweicloudsdkwaf.v1.SimplePremiumWafHost`]
         """
         self._items = items
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreatePrivateZoneRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreatePrivateZoneRequest:
     }
 
     def __init__(self, body=None):
-        """CreatePrivateZoneRequest - a model defined in huaweicloud sdk"""
+        """CreatePrivateZoneRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreatePrivateZoneRequest
+        :type body: :class:`huaweicloudsdkdns.v2.CreatePrivateZoneReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreatePrivateZoneRequest:
 
 
         :return: The body of this CreatePrivateZoneRequest.
-        :rtype: CreatePrivateZoneReq
+        :rtype: :class:`huaweicloudsdkdns.v2.CreatePrivateZoneReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreatePrivateZoneRequest:
 
 
         :param body: The body of this CreatePrivateZoneRequest.
-        :type: CreatePrivateZoneReq
+        :type body: :class:`huaweicloudsdkdns.v2.CreatePrivateZoneReq`
         """
         self._body = body
 

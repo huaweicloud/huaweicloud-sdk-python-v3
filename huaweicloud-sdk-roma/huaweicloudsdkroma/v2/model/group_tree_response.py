@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GroupTreeResponse:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class GroupTreeResponse:
     }
 
     def __init__(self, id=None, name=None, parent_id=None, children=None, app_id=None, permissions=None):
-        """GroupTreeResponse - a model defined in huaweicloud sdk"""
+        """GroupTreeResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 分组id
+        :type id: int
+        :param name: 分组名称
+        :type name: str
+        :param parent_id: 父分组id
+        :type parent_id: int
+        :param children: 子分组
+        :type children: list[:class:`huaweicloudsdkroma.v2.GroupTreeResponse`]
+        :param app_id: 应用id
+        :type app_id: str
+        :param permissions: 权限
+        :type permissions: list[str]
+        """
         
         
 
@@ -83,7 +98,7 @@ class GroupTreeResponse:
         分组id
 
         :param id: The id of this GroupTreeResponse.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -105,7 +120,7 @@ class GroupTreeResponse:
         分组名称
 
         :param name: The name of this GroupTreeResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -127,7 +142,7 @@ class GroupTreeResponse:
         父分组id
 
         :param parent_id: The parent_id of this GroupTreeResponse.
-        :type: int
+        :type parent_id: int
         """
         self._parent_id = parent_id
 
@@ -138,7 +153,7 @@ class GroupTreeResponse:
         子分组
 
         :return: The children of this GroupTreeResponse.
-        :rtype: list[GroupTreeResponse]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.GroupTreeResponse`]
         """
         return self._children
 
@@ -149,7 +164,7 @@ class GroupTreeResponse:
         子分组
 
         :param children: The children of this GroupTreeResponse.
-        :type: list[GroupTreeResponse]
+        :type children: list[:class:`huaweicloudsdkroma.v2.GroupTreeResponse`]
         """
         self._children = children
 
@@ -171,7 +186,7 @@ class GroupTreeResponse:
         应用id
 
         :param app_id: The app_id of this GroupTreeResponse.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -193,7 +208,7 @@ class GroupTreeResponse:
         权限
 
         :param permissions: The permissions of this GroupTreeResponse.
-        :type: list[str]
+        :type permissions: list[str]
         """
         self._permissions = permissions
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchRestartOrDeleteInstancesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchRestartOrDeleteInstancesRequest:
     }
 
     def __init__(self, body=None):
-        """BatchRestartOrDeleteInstancesRequest - a model defined in huaweicloud sdk"""
+        """BatchRestartOrDeleteInstancesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the BatchRestartOrDeleteInstancesRequest
+        :type body: :class:`huaweicloudsdkrabbitmq.v2.BatchRestartOrDeleteInstanceReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class BatchRestartOrDeleteInstancesRequest:
 
 
         :return: The body of this BatchRestartOrDeleteInstancesRequest.
-        :rtype: BatchRestartOrDeleteInstanceReq
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.BatchRestartOrDeleteInstanceReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class BatchRestartOrDeleteInstancesRequest:
 
 
         :param body: The body of this BatchRestartOrDeleteInstancesRequest.
-        :type: BatchRestartOrDeleteInstanceReq
+        :type body: :class:`huaweicloudsdkrabbitmq.v2.BatchRestartOrDeleteInstanceReq`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdatePortOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdatePortOption:
     }
 
     def __init__(self, allowed_address_pairs=None, security_groups=None):
-        """UpdatePortOption - a model defined in huaweicloud sdk"""
+        """UpdatePortOption
+
+        The model defined in huaweicloud sdk
+
+        :param allowed_address_pairs: IP/Mac对列表
+        :type allowed_address_pairs: list[:class:`huaweicloudsdkiec.v1.AllowedAddressPair`]
+        :param security_groups: 安全组列表
+        :type security_groups: list[str]
+        """
         
         
 
@@ -52,7 +59,7 @@ class UpdatePortOption:
         IP/Mac对列表
 
         :return: The allowed_address_pairs of this UpdatePortOption.
-        :rtype: list[AllowedAddressPair]
+        :rtype: list[:class:`huaweicloudsdkiec.v1.AllowedAddressPair`]
         """
         return self._allowed_address_pairs
 
@@ -63,7 +70,7 @@ class UpdatePortOption:
         IP/Mac对列表
 
         :param allowed_address_pairs: The allowed_address_pairs of this UpdatePortOption.
-        :type: list[AllowedAddressPair]
+        :type allowed_address_pairs: list[:class:`huaweicloudsdkiec.v1.AllowedAddressPair`]
         """
         self._allowed_address_pairs = allowed_address_pairs
 
@@ -85,7 +92,7 @@ class UpdatePortOption:
         安全组列表
 
         :param security_groups: The security_groups of this UpdatePortOption.
-        :type: list[str]
+        :type security_groups: list[str]
         """
         self._security_groups = security_groups
 

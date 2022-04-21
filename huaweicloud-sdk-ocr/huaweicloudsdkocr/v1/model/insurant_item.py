@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InsurantItem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class InsurantItem:
     }
 
     def __init__(self, insurant_name=None, insurant_sex=None, insurant_birthday=None, insurant_id_type=None, insurant_id_number=None):
-        """InsurantItem - a model defined in huaweicloud sdk"""
+        """InsurantItem
+
+        The model defined in huaweicloud sdk
+
+        :param insurant_name: 
+        :type insurant_name: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
+        :param insurant_sex: 
+        :type insurant_sex: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
+        :param insurant_birthday: 
+        :type insurant_birthday: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
+        :param insurant_id_type: 
+        :type insurant_id_type: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
+        :param insurant_id_number: 
+        :type insurant_id_number: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
+        """
         
         
 
@@ -66,7 +79,7 @@ class InsurantItem:
 
 
         :return: The insurant_name of this InsurantItem.
-        :rtype: InsurancePolicyDetail
+        :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
         return self._insurant_name
 
@@ -76,7 +89,7 @@ class InsurantItem:
 
 
         :param insurant_name: The insurant_name of this InsurantItem.
-        :type: InsurancePolicyDetail
+        :type insurant_name: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
         self._insurant_name = insurant_name
 
@@ -86,7 +99,7 @@ class InsurantItem:
 
 
         :return: The insurant_sex of this InsurantItem.
-        :rtype: InsurancePolicyDetail
+        :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
         return self._insurant_sex
 
@@ -96,7 +109,7 @@ class InsurantItem:
 
 
         :param insurant_sex: The insurant_sex of this InsurantItem.
-        :type: InsurancePolicyDetail
+        :type insurant_sex: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
         self._insurant_sex = insurant_sex
 
@@ -106,7 +119,7 @@ class InsurantItem:
 
 
         :return: The insurant_birthday of this InsurantItem.
-        :rtype: InsurancePolicyDetail
+        :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
         return self._insurant_birthday
 
@@ -116,7 +129,7 @@ class InsurantItem:
 
 
         :param insurant_birthday: The insurant_birthday of this InsurantItem.
-        :type: InsurancePolicyDetail
+        :type insurant_birthday: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
         self._insurant_birthday = insurant_birthday
 
@@ -126,7 +139,7 @@ class InsurantItem:
 
 
         :return: The insurant_id_type of this InsurantItem.
-        :rtype: InsurancePolicyDetail
+        :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
         return self._insurant_id_type
 
@@ -136,7 +149,7 @@ class InsurantItem:
 
 
         :param insurant_id_type: The insurant_id_type of this InsurantItem.
-        :type: InsurancePolicyDetail
+        :type insurant_id_type: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
         self._insurant_id_type = insurant_id_type
 
@@ -146,7 +159,7 @@ class InsurantItem:
 
 
         :return: The insurant_id_number of this InsurantItem.
-        :rtype: InsurancePolicyDetail
+        :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
         return self._insurant_id_number
 
@@ -156,7 +169,7 @@ class InsurantItem:
 
 
         :param insurant_id_number: The insurant_id_number of this InsurantItem.
-        :type: InsurancePolicyDetail
+        :type insurant_id_number: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
         self._insurant_id_number = insurant_id_number
 

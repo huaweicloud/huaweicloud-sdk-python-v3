@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateKeypairResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class CreateKeypairResponse(SdkResponse):
     }
 
     def __init__(self, name=None, public_key=None, private_key=None, user_id=None, fingerprint=None):
-        """CreateKeypairResponse - a model defined in huaweicloud sdk"""
+        """CreateKeypairResponse
+
+        The model defined in huaweicloud sdk
+
+        :param name: 密钥对名称。
+        :type name: str
+        :param public_key: 公钥。
+        :type public_key: str
+        :param private_key: 私钥。
+        :type private_key: str
+        :param user_id: 用户ID。
+        :type user_id: str
+        :param fingerprint: 指纹。
+        :type fingerprint: str
+        """
         
         super(CreateKeypairResponse, self).__init__()
 
@@ -78,7 +91,7 @@ class CreateKeypairResponse(SdkResponse):
         密钥对名称。
 
         :param name: The name of this CreateKeypairResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -100,7 +113,7 @@ class CreateKeypairResponse(SdkResponse):
         公钥。
 
         :param public_key: The public_key of this CreateKeypairResponse.
-        :type: str
+        :type public_key: str
         """
         self._public_key = public_key
 
@@ -122,7 +135,7 @@ class CreateKeypairResponse(SdkResponse):
         私钥。
 
         :param private_key: The private_key of this CreateKeypairResponse.
-        :type: str
+        :type private_key: str
         """
         self._private_key = private_key
 
@@ -144,7 +157,7 @@ class CreateKeypairResponse(SdkResponse):
         用户ID。
 
         :param user_id: The user_id of this CreateKeypairResponse.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -166,7 +179,7 @@ class CreateKeypairResponse(SdkResponse):
         指纹。
 
         :param fingerprint: The fingerprint of this CreateKeypairResponse.
-        :type: str
+        :type fingerprint: str
         """
         self._fingerprint = fingerprint
 

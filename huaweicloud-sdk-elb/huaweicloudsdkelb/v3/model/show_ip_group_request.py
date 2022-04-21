@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowIpGroupRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowIpGroupRequest:
     }
 
     def __init__(self, ipgroup_id=None):
-        """ShowIpGroupRequest - a model defined in huaweicloud sdk"""
+        """ShowIpGroupRequest
+
+        The model defined in huaweicloud sdk
+
+        :param ipgroup_id: IP地址组ID。
+        :type ipgroup_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowIpGroupRequest:
         IP地址组ID。
 
         :param ipgroup_id: The ipgroup_id of this ShowIpGroupRequest.
-        :type: str
+        :type ipgroup_id: str
         """
         self._ipgroup_id = ipgroup_id
 

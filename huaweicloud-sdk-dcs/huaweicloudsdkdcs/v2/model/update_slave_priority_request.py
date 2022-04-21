@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateSlavePriorityRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UpdateSlavePriorityRequest:
     }
 
     def __init__(self, instance_id=None, group_id=None, node_id=None, body=None):
-        """UpdateSlavePriorityRequest - a model defined in huaweicloud sdk"""
+        """UpdateSlavePriorityRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param group_id: 分片ID。
+        :type group_id: str
+        :param node_id: 节点ID。
+        :type node_id: str
+        :param body: Body of the UpdateSlavePriorityRequest
+        :type body: :class:`huaweicloudsdkdcs.v2.PriorityBody`
+        """
         
         
 
@@ -70,7 +81,7 @@ class UpdateSlavePriorityRequest:
         实例ID。
 
         :param instance_id: The instance_id of this UpdateSlavePriorityRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -92,7 +103,7 @@ class UpdateSlavePriorityRequest:
         分片ID。
 
         :param group_id: The group_id of this UpdateSlavePriorityRequest.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -114,7 +125,7 @@ class UpdateSlavePriorityRequest:
         节点ID。
 
         :param node_id: The node_id of this UpdateSlavePriorityRequest.
-        :type: str
+        :type node_id: str
         """
         self._node_id = node_id
 
@@ -124,7 +135,7 @@ class UpdateSlavePriorityRequest:
 
 
         :return: The body of this UpdateSlavePriorityRequest.
-        :rtype: PriorityBody
+        :rtype: :class:`huaweicloudsdkdcs.v2.PriorityBody`
         """
         return self._body
 
@@ -134,7 +145,7 @@ class UpdateSlavePriorityRequest:
 
 
         :param body: The body of this UpdateSlavePriorityRequest.
-        :type: PriorityBody
+        :type body: :class:`huaweicloudsdkdcs.v2.PriorityBody`
         """
         self._body = body
 

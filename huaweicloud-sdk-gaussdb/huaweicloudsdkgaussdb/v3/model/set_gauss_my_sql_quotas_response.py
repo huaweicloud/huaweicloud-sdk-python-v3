@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SetGaussMySqlQuotasResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class SetGaussMySqlQuotasResponse(SdkResponse):
     }
 
     def __init__(self, quota_list=None):
-        """SetGaussMySqlQuotasResponse - a model defined in huaweicloud sdk"""
+        """SetGaussMySqlQuotasResponse
+
+        The model defined in huaweicloud sdk
+
+        :param quota_list: 资源列表对象。
+        :type quota_list: list[:class:`huaweicloudsdkgaussdb.v3.SetQuota`]
+        """
         
         super(SetGaussMySqlQuotasResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class SetGaussMySqlQuotasResponse(SdkResponse):
         资源列表对象。
 
         :return: The quota_list of this SetGaussMySqlQuotasResponse.
-        :rtype: list[SetQuota]
+        :rtype: list[:class:`huaweicloudsdkgaussdb.v3.SetQuota`]
         """
         return self._quota_list
 
@@ -58,7 +63,7 @@ class SetGaussMySqlQuotasResponse(SdkResponse):
         资源列表对象。
 
         :param quota_list: The quota_list of this SetGaussMySqlQuotasResponse.
-        :type: list[SetQuota]
+        :type quota_list: list[:class:`huaweicloudsdkgaussdb.v3.SetQuota`]
         """
         self._quota_list = quota_list
 

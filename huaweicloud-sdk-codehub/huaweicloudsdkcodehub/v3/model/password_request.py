@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PasswordRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class PasswordRequest:
     }
 
     def __init__(self, pwd=None):
-        """PasswordRequest - a model defined in huaweicloud sdk"""
+        """PasswordRequest
+
+        The model defined in huaweicloud sdk
+
+        :param pwd: https密码
+        :type pwd: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class PasswordRequest:
         https密码
 
         :param pwd: The pwd of this PasswordRequest.
-        :type: str
+        :type pwd: str
         """
         self._pwd = pwd
 

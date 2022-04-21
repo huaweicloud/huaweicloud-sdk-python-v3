@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateIaConfigResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class UpdateIaConfigResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, value=None, description=None, version=None, state=None, create_time=None, update_time=None):
-        """UpdateIaConfigResponse - a model defined in huaweicloud sdk"""
+        """UpdateIaConfigResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 配置ID
+        :type id: str
+        :param name: 配置项名称
+        :type name: str
+        :param value: 配置项详情
+        :type value: str
+        :param description: 配置项描述
+        :type description: str
+        :param version: 版本号
+        :type version: int
+        :param state: 下发状态
+        :type state: str
+        :param create_time: 创建时间
+        :type create_time: str
+        :param update_time: 更新时间
+        :type update_time: str
+        """
         
         super(UpdateIaConfigResponse, self).__init__()
 
@@ -93,7 +112,7 @@ class UpdateIaConfigResponse(SdkResponse):
         配置ID
 
         :param id: The id of this UpdateIaConfigResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -115,7 +134,7 @@ class UpdateIaConfigResponse(SdkResponse):
         配置项名称
 
         :param name: The name of this UpdateIaConfigResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -137,7 +156,7 @@ class UpdateIaConfigResponse(SdkResponse):
         配置项详情
 
         :param value: The value of this UpdateIaConfigResponse.
-        :type: str
+        :type value: str
         """
         self._value = value
 
@@ -159,7 +178,7 @@ class UpdateIaConfigResponse(SdkResponse):
         配置项描述
 
         :param description: The description of this UpdateIaConfigResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -181,7 +200,7 @@ class UpdateIaConfigResponse(SdkResponse):
         版本号
 
         :param version: The version of this UpdateIaConfigResponse.
-        :type: int
+        :type version: int
         """
         self._version = version
 
@@ -203,7 +222,7 @@ class UpdateIaConfigResponse(SdkResponse):
         下发状态
 
         :param state: The state of this UpdateIaConfigResponse.
-        :type: str
+        :type state: str
         """
         self._state = state
 
@@ -225,7 +244,7 @@ class UpdateIaConfigResponse(SdkResponse):
         创建时间
 
         :param create_time: The create_time of this UpdateIaConfigResponse.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -247,7 +266,7 @@ class UpdateIaConfigResponse(SdkResponse):
         更新时间
 
         :param update_time: The update_time of this UpdateIaConfigResponse.
-        :type: str
+        :type update_time: str
         """
         self._update_time = update_time
 

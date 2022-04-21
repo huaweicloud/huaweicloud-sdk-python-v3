@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateRequestThrottlingPolicyV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateRequestThrottlingPolicyV2Request:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreateRequestThrottlingPolicyV2Request - a model defined in huaweicloud sdk"""
+        """CreateRequestThrottlingPolicyV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param body: Body of the CreateRequestThrottlingPolicyV2Request
+        :type body: :class:`huaweicloudsdkapig.v2.ThrottleBaseInfo`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateRequestThrottlingPolicyV2Request:
         实例ID
 
         :param instance_id: The instance_id of this CreateRequestThrottlingPolicyV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -72,7 +79,7 @@ class CreateRequestThrottlingPolicyV2Request:
 
 
         :return: The body of this CreateRequestThrottlingPolicyV2Request.
-        :rtype: ThrottleBaseInfo
+        :rtype: :class:`huaweicloudsdkapig.v2.ThrottleBaseInfo`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CreateRequestThrottlingPolicyV2Request:
 
 
         :param body: The body of this CreateRequestThrottlingPolicyV2Request.
-        :type: ThrottleBaseInfo
+        :type body: :class:`huaweicloudsdkapig.v2.ThrottleBaseInfo`
         """
         self._body = body
 

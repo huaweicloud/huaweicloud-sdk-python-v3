@@ -52,21 +52,17 @@ class VodAsyncClient(Client):
         """取消媒资转码任务
 
         取消媒资转码任务，只能取消排队中的转码任务。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CancelAssetTranscodeTaskRequest request
-        :return: CancelAssetTranscodeTaskResponse
+        :param request: Request instance for CancelAssetTranscodeTask
+        :type request: :class:`huaweicloudsdkvod.v1.CancelAssetTranscodeTaskRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.CancelAssetTranscodeTaskResponse`
         """
         return self.cancel_asset_transcode_task_with_http_info(request)
 
     def cancel_asset_transcode_task_with_http_info(self, request):
-        """取消媒资转码任务
-
-        取消媒资转码任务，只能取消排队中的转码任务。
-
-        :param CancelAssetTranscodeTaskRequest request
-        :return: CancelAssetTranscodeTaskResponse
-        """
-
         all_params = ['asset_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -110,26 +106,21 @@ class VodAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def cancel_extract_audio_task_async(self, request):
         """取消提取音频任务
 
         取消提取音频任务，只有排队中的提取音频任务才可以取消。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CancelExtractAudioTaskRequest request
-        :return: CancelExtractAudioTaskResponse
+        :param request: Request instance for CancelExtractAudioTask
+        :type request: :class:`huaweicloudsdkvod.v1.CancelExtractAudioTaskRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.CancelExtractAudioTaskResponse`
         """
         return self.cancel_extract_audio_task_with_http_info(request)
 
     def cancel_extract_audio_task_with_http_info(self, request):
-        """取消提取音频任务
-
-        取消提取音频任务，只有排队中的提取音频任务才可以取消。
-
-        :param CancelExtractAudioTaskRequest request
-        :return: CancelExtractAudioTaskResponse
-        """
-
         all_params = ['asset_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -173,26 +164,21 @@ class VodAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def check_md5_duplication_async(self, request):
         """上传检验
 
         校验媒资文件是否已存储于视频点播服务中。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CheckMd5DuplicationRequest request
-        :return: CheckMd5DuplicationResponse
+        :param request: Request instance for CheckMd5Duplication
+        :type request: :class:`huaweicloudsdkvod.v1.CheckMd5DuplicationRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.CheckMd5DuplicationResponse`
         """
         return self.check_md5_duplication_with_http_info(request)
 
     def check_md5_duplication_with_http_info(self, request):
-        """上传检验
-
-        校验媒资文件是否已存储于视频点播服务中。
-
-        :param CheckMd5DuplicationRequest request
-        :return: CheckMd5DuplicationResponse
-        """
-
         all_params = ['size', 'md5']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -238,26 +224,21 @@ class VodAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def confirm_asset_upload_async(self, request):
         """确认媒资上传
 
         媒资分段上传完成后，需要调用此接口通知点播服务媒资上传的状态，表示媒资上传创建完成。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ConfirmAssetUploadRequest request
-        :return: ConfirmAssetUploadResponse
+        :param request: Request instance for ConfirmAssetUpload
+        :type request: :class:`huaweicloudsdkvod.v1.ConfirmAssetUploadRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.ConfirmAssetUploadResponse`
         """
         return self.confirm_asset_upload_with_http_info(request)
 
     def confirm_asset_upload_with_http_info(self, request):
-        """确认媒资上传
-
-        媒资分段上传完成后，需要调用此接口通知点播服务媒资上传的状态，表示媒资上传创建完成。
-
-        :param ConfirmAssetUploadRequest request
-        :return: ConfirmAssetUploadResponse
-        """
-
         all_params = ['confirm_asset_upload_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -301,26 +282,21 @@ class VodAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def confirm_image_upload_async(self, request):
         """确认水印图片上传
 
         确认水印图片上传状态。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ConfirmImageUploadRequest request
-        :return: ConfirmImageUploadResponse
+        :param request: Request instance for ConfirmImageUpload
+        :type request: :class:`huaweicloudsdkvod.v1.ConfirmImageUploadRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.ConfirmImageUploadResponse`
         """
         return self.confirm_image_upload_with_http_info(request)
 
     def confirm_image_upload_with_http_info(self, request):
-        """确认水印图片上传
-
-        确认水印图片上传状态。
-
-        :param ConfirmImageUploadRequest request
-        :return: ConfirmImageUploadResponse
-        """
-
         all_params = ['confirm_image_upload_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -364,26 +340,25 @@ class VodAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_asset_by_file_upload_async(self, request):
         """创建媒资：上传方式
 
-        调用该接口创建媒资时，需要将对应的媒资文件上传到点播服务的OBS桶中。  若上传的单媒资文件大小小于20M，则可以直接用PUT方法对该接口返回的地址进行上传。具体使用方法请参考[示例1：媒资上传（20M以下）](https://support.huaweicloud.com/api-vod/vod_04_0195.html)。  若上传的单个媒资大小大于20M，则需要进行二进制流分割后上传，该接口的具体使用方法请参考[示例2：媒资分段上传（20M以上）](https://support.huaweicloud.com/api-vod/vod_04_0216.html)。
+        调用该接口创建媒资时，需要将对应的媒资文件上传到点播服务的OBS桶中。
+        
+        若上传的单媒资文件大小小于20M，则可以直接用PUT方法对该接口返回的地址进行上传。具体使用方法请参考[示例1：媒资上传（20M以下）](https://support.huaweicloud.com/api-vod/vod_04_0195.html)。
+        
+        若上传的单个媒资大小大于20M，则需要进行二进制流分割后上传，该接口的具体使用方法请参考[示例2：媒资分段上传（20M以上）](https://support.huaweicloud.com/api-vod/vod_04_0216.html)。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateAssetByFileUploadRequest request
-        :return: CreateAssetByFileUploadResponse
+        :param request: Request instance for CreateAssetByFileUpload
+        :type request: :class:`huaweicloudsdkvod.v1.CreateAssetByFileUploadRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.CreateAssetByFileUploadResponse`
         """
         return self.create_asset_by_file_upload_with_http_info(request)
 
     def create_asset_by_file_upload_with_http_info(self, request):
-        """创建媒资：上传方式
-
-        调用该接口创建媒资时，需要将对应的媒资文件上传到点播服务的OBS桶中。  若上传的单媒资文件大小小于20M，则可以直接用PUT方法对该接口返回的地址进行上传。具体使用方法请参考[示例1：媒资上传（20M以下）](https://support.huaweicloud.com/api-vod/vod_04_0195.html)。  若上传的单个媒资大小大于20M，则需要进行二进制流分割后上传，该接口的具体使用方法请参考[示例2：媒资分段上传（20M以上）](https://support.huaweicloud.com/api-vod/vod_04_0216.html)。
-
-        :param CreateAssetByFileUploadRequest request
-        :return: CreateAssetByFileUploadResponse
-        """
-
         all_params = ['create_asset_by_file_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -427,26 +402,21 @@ class VodAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_asset_category_async(self, request):
         """创建媒资分类
 
         创建媒资分类。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateAssetCategoryRequest request
-        :return: CreateAssetCategoryResponse
+        :param request: Request instance for CreateAssetCategory
+        :type request: :class:`huaweicloudsdkvod.v1.CreateAssetCategoryRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.CreateAssetCategoryResponse`
         """
         return self.create_asset_category_with_http_info(request)
 
     def create_asset_category_with_http_info(self, request):
-        """创建媒资分类
-
-        创建媒资分类。
-
-        :param CreateAssetCategoryRequest request
-        :return: CreateAssetCategoryResponse
-        """
-
         all_params = ['create_category_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -490,26 +460,21 @@ class VodAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_asset_process_task_async(self, request):
         """媒资处理
 
         实现视频转码、截图、加密等处理。既可以同时启动多种操作，也可以只启动一种操作。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateAssetProcessTaskRequest request
-        :return: CreateAssetProcessTaskResponse
+        :param request: Request instance for CreateAssetProcessTask
+        :type request: :class:`huaweicloudsdkvod.v1.CreateAssetProcessTaskRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.CreateAssetProcessTaskResponse`
         """
         return self.create_asset_process_task_with_http_info(request)
 
     def create_asset_process_task_with_http_info(self, request):
-        """媒资处理
-
-        实现视频转码、截图、加密等处理。既可以同时启动多种操作，也可以只启动一种操作。
-
-        :param CreateAssetProcessTaskRequest request
-        :return: CreateAssetProcessTaskResponse
-        """
-
         all_params = ['asset_process_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -553,26 +518,21 @@ class VodAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_asset_review_task_async(self, request):
         """创建审核媒资任务
 
         对上传的媒资进行审核。审核后，可以调用[查询媒资详细信息](https://support.huaweicloud.com/api-vod/vod_04_0202.html)接口查看审核结果。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateAssetReviewTaskRequest request
-        :return: CreateAssetReviewTaskResponse
+        :param request: Request instance for CreateAssetReviewTask
+        :type request: :class:`huaweicloudsdkvod.v1.CreateAssetReviewTaskRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.CreateAssetReviewTaskResponse`
         """
         return self.create_asset_review_task_with_http_info(request)
 
     def create_asset_review_task_with_http_info(self, request):
-        """创建审核媒资任务
-
-        对上传的媒资进行审核。审核后，可以调用[查询媒资详细信息](https://support.huaweicloud.com/api-vod/vod_04_0202.html)接口查看审核结果。
-
-        :param CreateAssetReviewTaskRequest request
-        :return: CreateAssetReviewTaskResponse
-        """
-
         all_params = ['asset_review_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -616,26 +576,21 @@ class VodAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_extract_audio_task_async(self, request):
         """音频提取
 
         用于从已有视频文件中提取音频。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateExtractAudioTaskRequest request
-        :return: CreateExtractAudioTaskResponse
+        :param request: Request instance for CreateExtractAudioTask
+        :type request: :class:`huaweicloudsdkvod.v1.CreateExtractAudioTaskRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.CreateExtractAudioTaskResponse`
         """
         return self.create_extract_audio_task_with_http_info(request)
 
     def create_extract_audio_task_with_http_info(self, request):
-        """音频提取
-
-        用于从已有视频文件中提取音频。
-
-        :param CreateExtractAudioTaskRequest request
-        :return: CreateExtractAudioTaskResponse
-        """
-
         all_params = ['extract_audio_task_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -679,26 +634,21 @@ class VodAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_preheating_asset_async(self, request):
         """CDN预热
 
         媒资发布后，可通过指定媒资ID或URL向CDN预热。用户初次请求时，将由CDN节点提供请求媒资，加快用户下载缓存时间，提高用户体验。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreatePreheatingAssetRequest request
-        :return: CreatePreheatingAssetResponse
+        :param request: Request instance for CreatePreheatingAsset
+        :type request: :class:`huaweicloudsdkvod.v1.CreatePreheatingAssetRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.CreatePreheatingAssetResponse`
         """
         return self.create_preheating_asset_with_http_info(request)
 
     def create_preheating_asset_with_http_info(self, request):
-        """CDN预热
-
-        媒资发布后，可通过指定媒资ID或URL向CDN预热。用户初次请求时，将由CDN节点提供请求媒资，加快用户下载缓存时间，提高用户体验。
-
-        :param CreatePreheatingAssetRequest request
-        :return: CreatePreheatingAssetResponse
-        """
-
         all_params = ['create_preheating_asset_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -742,26 +692,23 @@ class VodAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_take_over_task_async(self, request):
         """创建媒资：OBS托管方式
 
-        通过存量托管的方式，将已存储在OBS桶中的音视频文件同步到点播服务。  OBS托管方式分为增量托管和存量托管，增量托管暂只支持通过视频点播控制台配置，配置后，若OBS有新增音视频文件，则会自动同步到点播服务中，具体请参见[增量托管](https://support.huaweicloud.com/usermanual-vod/vod010032.html)。两个托管方式都需要先将对应的OBS桶授权给点播服务，具体请参见[桶授权](https://support.huaweicloud.com/usermanual-vod/vod010031.html)。
+        通过存量托管的方式，将已存储在OBS桶中的音视频文件同步到点播服务。
+        
+        OBS托管方式分为增量托管和存量托管，增量托管暂只支持通过视频点播控制台配置，配置后，若OBS有新增音视频文件，则会自动同步到点播服务中，具体请参见[增量托管](https://support.huaweicloud.com/usermanual-vod/vod010032.html)。两个托管方式都需要先将对应的OBS桶授权给点播服务，具体请参见[桶授权](https://support.huaweicloud.com/usermanual-vod/vod010031.html)。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateTakeOverTaskRequest request
-        :return: CreateTakeOverTaskResponse
+        :param request: Request instance for CreateTakeOverTask
+        :type request: :class:`huaweicloudsdkvod.v1.CreateTakeOverTaskRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.CreateTakeOverTaskResponse`
         """
         return self.create_take_over_task_with_http_info(request)
 
     def create_take_over_task_with_http_info(self, request):
-        """创建媒资：OBS托管方式
-
-        通过存量托管的方式，将已存储在OBS桶中的音视频文件同步到点播服务。  OBS托管方式分为增量托管和存量托管，增量托管暂只支持通过视频点播控制台配置，配置后，若OBS有新增音视频文件，则会自动同步到点播服务中，具体请参见[增量托管](https://support.huaweicloud.com/usermanual-vod/vod010032.html)。两个托管方式都需要先将对应的OBS桶授权给点播服务，具体请参见[桶授权](https://support.huaweicloud.com/usermanual-vod/vod010031.html)。
-
-        :param CreateTakeOverTaskRequest request
-        :return: CreateTakeOverTaskResponse
-        """
-
         all_params = ['create_take_over_task_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -805,26 +752,21 @@ class VodAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_template_group_async(self, request):
         """创建自定义转码模板组
 
         创建自定义转码模板组。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateTemplateGroupRequest request
-        :return: CreateTemplateGroupResponse
+        :param request: Request instance for CreateTemplateGroup
+        :type request: :class:`huaweicloudsdkvod.v1.CreateTemplateGroupRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.CreateTemplateGroupResponse`
         """
         return self.create_template_group_with_http_info(request)
 
     def create_template_group_with_http_info(self, request):
-        """创建自定义转码模板组
-
-        创建自定义转码模板组。
-
-        :param CreateTemplateGroupRequest request
-        :return: CreateTemplateGroupResponse
-        """
-
         all_params = ['trans_template_group']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -868,26 +810,21 @@ class VodAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_watermark_template_async(self, request):
         """创建水印模板
 
         创建水印模板。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateWatermarkTemplateRequest request
-        :return: CreateWatermarkTemplateResponse
+        :param request: Request instance for CreateWatermarkTemplate
+        :type request: :class:`huaweicloudsdkvod.v1.CreateWatermarkTemplateRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.CreateWatermarkTemplateResponse`
         """
         return self.create_watermark_template_with_http_info(request)
 
     def create_watermark_template_with_http_info(self, request):
-        """创建水印模板
-
-        创建水印模板。
-
-        :param CreateWatermarkTemplateRequest request
-        :return: CreateWatermarkTemplateResponse
-        """
-
         all_params = ['create_watermark_template_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -931,26 +868,21 @@ class VodAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_asset_category_async(self, request):
         """删除媒资分类
 
         删除媒资分类。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteAssetCategoryRequest request
-        :return: DeleteAssetCategoryResponse
+        :param request: Request instance for DeleteAssetCategory
+        :type request: :class:`huaweicloudsdkvod.v1.DeleteAssetCategoryRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.DeleteAssetCategoryResponse`
         """
         return self.delete_asset_category_with_http_info(request)
 
     def delete_asset_category_with_http_info(self, request):
-        """删除媒资分类
-
-        删除媒资分类。
-
-        :param DeleteAssetCategoryRequest request
-        :return: DeleteAssetCategoryResponse
-        """
-
         all_params = ['id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -994,26 +926,21 @@ class VodAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_assets_async(self, request):
         """删除媒资
 
         删除媒资。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteAssetsRequest request
-        :return: DeleteAssetsResponse
+        :param request: Request instance for DeleteAssets
+        :type request: :class:`huaweicloudsdkvod.v1.DeleteAssetsRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.DeleteAssetsResponse`
         """
         return self.delete_assets_with_http_info(request)
 
     def delete_assets_with_http_info(self, request):
-        """删除媒资
-
-        删除媒资。
-
-        :param DeleteAssetsRequest request
-        :return: DeleteAssetsResponse
-        """
-
         all_params = ['asset_id', 'delete_type']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1060,26 +987,21 @@ class VodAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_template_group_async(self, request):
         """删除自定义转码模板组
 
         删除自定义转码模板组。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteTemplateGroupRequest request
-        :return: DeleteTemplateGroupResponse
+        :param request: Request instance for DeleteTemplateGroup
+        :type request: :class:`huaweicloudsdkvod.v1.DeleteTemplateGroupRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.DeleteTemplateGroupResponse`
         """
         return self.delete_template_group_with_http_info(request)
 
     def delete_template_group_with_http_info(self, request):
-        """删除自定义转码模板组
-
-        删除自定义转码模板组。
-
-        :param DeleteTemplateGroupRequest request
-        :return: DeleteTemplateGroupResponse
-        """
-
         all_params = ['group_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1123,26 +1045,21 @@ class VodAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_watermark_template_async(self, request):
         """删除水印模板
 
-        删除水印模板 
+        删除水印模板
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteWatermarkTemplateRequest request
-        :return: DeleteWatermarkTemplateResponse
+        :param request: Request instance for DeleteWatermarkTemplate
+        :type request: :class:`huaweicloudsdkvod.v1.DeleteWatermarkTemplateRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.DeleteWatermarkTemplateResponse`
         """
         return self.delete_watermark_template_with_http_info(request)
 
     def delete_watermark_template_with_http_info(self, request):
-        """删除水印模板
-
-        删除水印模板 
-
-        :param DeleteWatermarkTemplateRequest request
-        :return: DeleteWatermarkTemplateResponse
-        """
-
         all_params = ['id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1186,26 +1103,21 @@ class VodAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_asset_category_async(self, request):
         """查询指定分类信息
 
         查询指定分类信息，及其子分类（即下一级分类）的列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListAssetCategoryRequest request
-        :return: ListAssetCategoryResponse
+        :param request: Request instance for ListAssetCategory
+        :type request: :class:`huaweicloudsdkvod.v1.ListAssetCategoryRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.ListAssetCategoryResponse`
         """
         return self.list_asset_category_with_http_info(request)
 
     def list_asset_category_with_http_info(self, request):
-        """查询指定分类信息
-
-        查询指定分类信息，及其子分类（即下一级分类）的列表。
-
-        :param ListAssetCategoryRequest request
-        :return: ListAssetCategoryResponse
-        """
-
         all_params = ['id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1249,26 +1161,21 @@ class VodAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_asset_list_async(self, request):
         """查询媒资列表
 
         查询媒资列表，列表中的每一条记录包含媒资的概要信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListAssetListRequest request
-        :return: ListAssetListResponse
+        :param request: Request instance for ListAssetList
+        :type request: :class:`huaweicloudsdkvod.v1.ListAssetListRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.ListAssetListResponse`
         """
         return self.list_asset_list_with_http_info(request)
 
     def list_asset_list_with_http_info(self, request):
-        """查询媒资列表
-
-        查询媒资列表，列表中的每一条记录包含媒资的概要信息。
-
-        :param ListAssetListRequest request
-        :return: ListAssetListResponse
-        """
-
         all_params = ['asset_id', 'status', 'start_time', 'end_time', 'category_id', 'tags', 'query_string', 'media_type', 'page', 'size', 'order']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1335,26 +1242,21 @@ class VodAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_domain_logs_async(self, request):
         """查询域名播放日志
 
         查询指定点播域名某段时间内在CDN的相关日志。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListDomainLogsRequest request
-        :return: ListDomainLogsResponse
+        :param request: Request instance for ListDomainLogs
+        :type request: :class:`huaweicloudsdkvod.v1.ListDomainLogsRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.ListDomainLogsResponse`
         """
         return self.list_domain_logs_with_http_info(request)
 
     def list_domain_logs_with_http_info(self, request):
-        """查询域名播放日志
-
-        查询指定点播域名某段时间内在CDN的相关日志。
-
-        :param ListDomainLogsRequest request
-        :return: ListDomainLogsResponse
-        """
-
         all_params = ['domain_name', 'query_date', 'page_size', 'page_number']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1404,26 +1306,21 @@ class VodAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_template_group_async(self, request):
         """查询转码模板组列表
 
         查询转码模板组列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListTemplateGroupRequest request
-        :return: ListTemplateGroupResponse
+        :param request: Request instance for ListTemplateGroup
+        :type request: :class:`huaweicloudsdkvod.v1.ListTemplateGroupRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.ListTemplateGroupResponse`
         """
         return self.list_template_group_with_http_info(request)
 
     def list_template_group_with_http_info(self, request):
-        """查询转码模板组列表
-
-        查询转码模板组列表。
-
-        :param ListTemplateGroupRequest request
-        :return: ListTemplateGroupResponse
-        """
-
         all_params = ['group_id', 'status', 'page', 'size']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1473,26 +1370,21 @@ class VodAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_top_statistics_async(self, request):
         """查询TopN媒资信息
 
         查询指定域名在指定日期播放次数排名Top 100的媒资统计数据。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListTopStatisticsRequest request
-        :return: ListTopStatisticsResponse
+        :param request: Request instance for ListTopStatistics
+        :type request: :class:`huaweicloudsdkvod.v1.ListTopStatisticsRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.ListTopStatisticsResponse`
         """
         return self.list_top_statistics_with_http_info(request)
 
     def list_top_statistics_with_http_info(self, request):
-        """查询TopN媒资信息
-
-        查询指定域名在指定日期播放次数排名Top 100的媒资统计数据。
-
-        :param ListTopStatisticsRequest request
-        :return: ListTopStatisticsResponse
-        """
-
         all_params = ['domain', 'date']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1538,26 +1430,21 @@ class VodAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_watermark_template_async(self, request):
         """查询水印列表
 
         查询水印模板
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListWatermarkTemplateRequest request
-        :return: ListWatermarkTemplateResponse
+        :param request: Request instance for ListWatermarkTemplate
+        :type request: :class:`huaweicloudsdkvod.v1.ListWatermarkTemplateRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.ListWatermarkTemplateResponse`
         """
         return self.list_watermark_template_with_http_info(request)
 
     def list_watermark_template_with_http_info(self, request):
-        """查询水印列表
-
-        查询水印模板
-
-        :param ListWatermarkTemplateRequest request
-        :return: ListWatermarkTemplateResponse
-        """
-
         all_params = ['id', 'page', 'size']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1606,26 +1493,21 @@ class VodAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def publish_asset_from_obs_async(self, request):
         """创建媒资：OBS转存方式
 
         若您在使用点播服务前，已经在OBS桶中存储了音视频文件，您可以使用该接口将存储在OBS桶中的音视频文件转存到点播服务中，使用点播服务的音视频管理功能。调用该接口前，您需要调用[桶授权](https://support.huaweicloud.com/api-vod/vod_04_0199.html)接口，将存储音视频文件的OBS桶授权给点播服务。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param PublishAssetFromObsRequest request
-        :return: PublishAssetFromObsResponse
+        :param request: Request instance for PublishAssetFromObs
+        :type request: :class:`huaweicloudsdkvod.v1.PublishAssetFromObsRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.PublishAssetFromObsResponse`
         """
         return self.publish_asset_from_obs_with_http_info(request)
 
     def publish_asset_from_obs_with_http_info(self, request):
-        """创建媒资：OBS转存方式
-
-        若您在使用点播服务前，已经在OBS桶中存储了音视频文件，您可以使用该接口将存储在OBS桶中的音视频文件转存到点播服务中，使用点播服务的音视频管理功能。调用该接口前，您需要调用[桶授权](https://support.huaweicloud.com/api-vod/vod_04_0199.html)接口，将存储音视频文件的OBS桶授权给点播服务。
-
-        :param PublishAssetFromObsRequest request
-        :return: PublishAssetFromObsResponse
-        """
-
         all_params = ['publish_asset_from_obs_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1669,26 +1551,21 @@ class VodAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def publish_assets_async(self, request):
         """媒资发布
 
         将媒资设置为发布状态。支持批量发布。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param PublishAssetsRequest request
-        :return: PublishAssetsResponse
+        :param request: Request instance for PublishAssets
+        :type request: :class:`huaweicloudsdkvod.v1.PublishAssetsRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.PublishAssetsResponse`
         """
         return self.publish_assets_with_http_info(request)
 
     def publish_assets_with_http_info(self, request):
-        """媒资发布
-
-        将媒资设置为发布状态。支持批量发布。
-
-        :param PublishAssetsRequest request
-        :return: PublishAssetsResponse
-        """
-
         all_params = ['publish_asset_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1732,26 +1609,21 @@ class VodAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_asset_cipher_async(self, request):
         """密钥查询
 
         终端播放HLS加密视频时，向租户管理系统请求密钥，租户管理系统先查询其本地有没有已缓存的密钥，没有时则调用此接口向VOD查询。该接口的具体使用场景请参见[通过HLS加密防止视频泄露](https://support.huaweicloud.com/bestpractice-vod/vod_10_0004.html)。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowAssetCipherRequest request
-        :return: ShowAssetCipherResponse
+        :param request: Request instance for ShowAssetCipher
+        :type request: :class:`huaweicloudsdkvod.v1.ShowAssetCipherRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.ShowAssetCipherResponse`
         """
         return self.show_asset_cipher_with_http_info(request)
 
     def show_asset_cipher_with_http_info(self, request):
-        """密钥查询
-
-        终端播放HLS加密视频时，向租户管理系统请求密钥，租户管理系统先查询其本地有没有已缓存的密钥，没有时则调用此接口向VOD查询。该接口的具体使用场景请参见[通过HLS加密防止视频泄露](https://support.huaweicloud.com/bestpractice-vod/vod_10_0004.html)。
-
-        :param ShowAssetCipherRequest request
-        :return: ShowAssetCipherResponse
-        """
-
         all_params = ['asset_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1795,26 +1667,21 @@ class VodAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_asset_detail_async(self, request):
         """查询指定媒资的详细信息
 
         查询指定媒资的详细信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowAssetDetailRequest request
-        :return: ShowAssetDetailResponse
+        :param request: Request instance for ShowAssetDetail
+        :type request: :class:`huaweicloudsdkvod.v1.ShowAssetDetailRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.ShowAssetDetailResponse`
         """
         return self.show_asset_detail_with_http_info(request)
 
     def show_asset_detail_with_http_info(self, request):
-        """查询指定媒资的详细信息
-
-        查询指定媒资的详细信息。
-
-        :param ShowAssetDetailRequest request
-        :return: ShowAssetDetailResponse
-        """
-
         all_params = ['asset_id', 'categories']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1861,26 +1728,21 @@ class VodAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_asset_meta_async(self, request):
         """查询媒资信息
 
         查询媒资信息，支持指定媒资ID、分类、状态、起止时间查询。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowAssetMetaRequest request
-        :return: ShowAssetMetaResponse
+        :param request: Request instance for ShowAssetMeta
+        :type request: :class:`huaweicloudsdkvod.v1.ShowAssetMetaRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.ShowAssetMetaResponse`
         """
         return self.show_asset_meta_with_http_info(request)
 
     def show_asset_meta_with_http_info(self, request):
-        """查询媒资信息
-
-        查询媒资信息，支持指定媒资ID、分类、状态、起止时间查询。
-
-        :param ShowAssetMetaRequest request
-        :return: ShowAssetMetaResponse
-        """
-
         all_params = ['asset_id', 'status', 'transcode_status', 'asset_status', 'start_time', 'end_time', 'category_id', 'tags', 'query_string', 'page', 'size']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1948,26 +1810,27 @@ class VodAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_asset_temp_authority_async(self, request):
         """获取分段上传授权
 
-        客户端请求创建媒资时，如果媒资文件超过20MB，需采用分段的方式向OBS上传，在每次与OBS交互前，客户端需通过此接口获取到授权方可与OBS交互。  该接口可以获取[初始化多段上传任务](https://support.huaweicloud.com/api-obs/obs_04_0098.html)、[上传段](https://support.huaweicloud.com/api-obs/obs_04_0099.html)、[合并段](https://support.huaweicloud.com/api-obs/obs_04_0102.html)、[列举已上传段](https://support.huaweicloud.com/api-obs/obs_04_0101.html)、[取消段合并](https://support.huaweicloud.com/api-obs/obs_04_0103.html)的带有临时授权的URL，用户需要根据OBS的接口文档配置相应请求的HTTP请求方法、请求头、请求体，然后请求对应的带有临时授权的URL。  视频分段上传方式和OBS的接口文档保持一致，包括HTTP请求方法、请求头、请求体等各种入参，此接口的作用是为用户生成带有鉴权信息的URL（鉴权信息即query_str），用来替换OBS接口中对应的URL，临时给用户开通向点播服务的桶上传文件的权限。  调用获取授权接口时需要传入bucket、object_key、http_verb，其中bucket和object_key是由[创建媒资：上传方式](https://support.huaweicloud.com/api-vod/vod_04_0196.html)接口中返回的响应体中的target字段获得的bucket和object，http_verb需要根据指定的操作选择。
+        客户端请求创建媒资时，如果媒资文件超过20MB，需采用分段的方式向OBS上传，在每次与OBS交互前，客户端需通过此接口获取到授权方可与OBS交互。
+        
+        该接口可以获取[初始化多段上传任务](https://support.huaweicloud.com/api-obs/obs_04_0098.html)、[上传段](https://support.huaweicloud.com/api-obs/obs_04_0099.html)、[合并段](https://support.huaweicloud.com/api-obs/obs_04_0102.html)、[列举已上传段](https://support.huaweicloud.com/api-obs/obs_04_0101.html)、[取消段合并](https://support.huaweicloud.com/api-obs/obs_04_0103.html)的带有临时授权的URL，用户需要根据OBS的接口文档配置相应请求的HTTP请求方法、请求头、请求体，然后请求对应的带有临时授权的URL。
+        
+        视频分段上传方式和OBS的接口文档保持一致，包括HTTP请求方法、请求头、请求体等各种入参，此接口的作用是为用户生成带有鉴权信息的URL（鉴权信息即query_str），用来替换OBS接口中对应的URL，临时给用户开通向点播服务的桶上传文件的权限。
+        
+        调用获取授权接口时需要传入bucket、object_key、http_verb，其中bucket和object_key是由[创建媒资：上传方式](https://support.huaweicloud.com/api-vod/vod_04_0196.html)接口中返回的响应体中的target字段获得的bucket和object，http_verb需要根据指定的操作选择。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowAssetTempAuthorityRequest request
-        :return: ShowAssetTempAuthorityResponse
+        :param request: Request instance for ShowAssetTempAuthority
+        :type request: :class:`huaweicloudsdkvod.v1.ShowAssetTempAuthorityRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.ShowAssetTempAuthorityResponse`
         """
         return self.show_asset_temp_authority_with_http_info(request)
 
     def show_asset_temp_authority_with_http_info(self, request):
-        """获取分段上传授权
-
-        客户端请求创建媒资时，如果媒资文件超过20MB，需采用分段的方式向OBS上传，在每次与OBS交互前，客户端需通过此接口获取到授权方可与OBS交互。  该接口可以获取[初始化多段上传任务](https://support.huaweicloud.com/api-obs/obs_04_0098.html)、[上传段](https://support.huaweicloud.com/api-obs/obs_04_0099.html)、[合并段](https://support.huaweicloud.com/api-obs/obs_04_0102.html)、[列举已上传段](https://support.huaweicloud.com/api-obs/obs_04_0101.html)、[取消段合并](https://support.huaweicloud.com/api-obs/obs_04_0103.html)的带有临时授权的URL，用户需要根据OBS的接口文档配置相应请求的HTTP请求方法、请求头、请求体，然后请求对应的带有临时授权的URL。  视频分段上传方式和OBS的接口文档保持一致，包括HTTP请求方法、请求头、请求体等各种入参，此接口的作用是为用户生成带有鉴权信息的URL（鉴权信息即query_str），用来替换OBS接口中对应的URL，临时给用户开通向点播服务的桶上传文件的权限。  调用获取授权接口时需要传入bucket、object_key、http_verb，其中bucket和object_key是由[创建媒资：上传方式](https://support.huaweicloud.com/api-vod/vod_04_0196.html)接口中返回的响应体中的target字段获得的bucket和object，http_verb需要根据指定的操作选择。
-
-        :param ShowAssetTempAuthorityRequest request
-        :return: ShowAssetTempAuthorityResponse
-        """
-
         all_params = ['http_verb', 'bucket', 'object_key', 'content_type', 'content_md5', 'upload_id', 'part_number']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2023,26 +1886,21 @@ class VodAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_cdn_statistics_async(self, request):
         """查询CDN统计信息
 
         查询CDN的统计数据，包括流量、峰值带宽、请求总数、请求命中率、流量命中率。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowCdnStatisticsRequest request
-        :return: ShowCdnStatisticsResponse
+        :param request: Request instance for ShowCdnStatistics
+        :type request: :class:`huaweicloudsdkvod.v1.ShowCdnStatisticsRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.ShowCdnStatisticsResponse`
         """
         return self.show_cdn_statistics_with_http_info(request)
 
     def show_cdn_statistics_with_http_info(self, request):
-        """查询CDN统计信息
-
-        查询CDN的统计数据，包括流量、峰值带宽、请求总数、请求命中率、流量命中率。
-
-        :param ShowCdnStatisticsRequest request
-        :return: ShowCdnStatisticsResponse
-        """
-
         all_params = ['stat_type', 'domain', 'start_time', 'end_time', 'interval']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2094,26 +1952,21 @@ class VodAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_preheating_asset_async(self, request):
         """查询CDN预热
 
         查询预热结果。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowPreheatingAssetRequest request
-        :return: ShowPreheatingAssetResponse
+        :param request: Request instance for ShowPreheatingAsset
+        :type request: :class:`huaweicloudsdkvod.v1.ShowPreheatingAssetRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.ShowPreheatingAssetResponse`
         """
         return self.show_preheating_asset_with_http_info(request)
 
     def show_preheating_asset_with_http_info(self, request):
-        """查询CDN预热
-
-        查询预热结果。
-
-        :param ShowPreheatingAssetRequest request
-        :return: ShowPreheatingAssetResponse
-        """
-
         all_params = ['task_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2157,26 +2010,21 @@ class VodAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_vod_statistics_async(self, request):
         """查询源站统计信息
 
         查询点播源站的统计数据，包括流量、存储空间、转码时长。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowVodStatisticsRequest request
-        :return: ShowVodStatisticsResponse
+        :param request: Request instance for ShowVodStatistics
+        :type request: :class:`huaweicloudsdkvod.v1.ShowVodStatisticsRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.ShowVodStatisticsResponse`
         """
         return self.show_vod_statistics_with_http_info(request)
 
     def show_vod_statistics_with_http_info(self, request):
-        """查询源站统计信息
-
-        查询点播源站的统计数据，包括流量、存储空间、转码时长。
-
-        :param ShowVodStatisticsRequest request
-        :return: ShowVodStatisticsResponse
-        """
-
         all_params = ['start_time', 'end_time', 'interval']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2224,26 +2072,21 @@ class VodAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def unpublish_assets_async(self, request):
         """媒资发布取消
 
         将媒资设置为未发布状态。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UnpublishAssetsRequest request
-        :return: UnpublishAssetsResponse
+        :param request: Request instance for UnpublishAssets
+        :type request: :class:`huaweicloudsdkvod.v1.UnpublishAssetsRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.UnpublishAssetsResponse`
         """
         return self.unpublish_assets_with_http_info(request)
 
     def unpublish_assets_with_http_info(self, request):
-        """媒资发布取消
-
-        将媒资设置为未发布状态。
-
-        :param UnpublishAssetsRequest request
-        :return: UnpublishAssetsResponse
-        """
-
         all_params = ['unpublish_asset_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2287,26 +2130,27 @@ class VodAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_asset_async(self, request):
         """视频更新
 
-        媒资创建后，单独上传封面、更新视频文件或更新已有封面。  如果是更新视频文件，更新完后要通过[确认媒资上传](https://support.huaweicloud.com/api-vod/vod_04_0198.html)接口通知点播服务。  如果是更新封面或单独上传封面，则不需通知。  更新视频可以使用分段上传，具体方式可以参考[示例2：媒资分段上传（20M以上）](https://support.huaweicloud.com/api-vod/vod_04_0216.html)。
+        媒资创建后，单独上传封面、更新视频文件或更新已有封面。
+        
+        如果是更新视频文件，更新完后要通过[确认媒资上传](https://support.huaweicloud.com/api-vod/vod_04_0198.html)接口通知点播服务。
+        
+        如果是更新封面或单独上传封面，则不需通知。
+        
+        更新视频可以使用分段上传，具体方式可以参考[示例2：媒资分段上传（20M以上）](https://support.huaweicloud.com/api-vod/vod_04_0216.html)。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateAssetRequest request
-        :return: UpdateAssetResponse
+        :param request: Request instance for UpdateAsset
+        :type request: :class:`huaweicloudsdkvod.v1.UpdateAssetRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.UpdateAssetResponse`
         """
         return self.update_asset_with_http_info(request)
 
     def update_asset_with_http_info(self, request):
-        """视频更新
-
-        媒资创建后，单独上传封面、更新视频文件或更新已有封面。  如果是更新视频文件，更新完后要通过[确认媒资上传](https://support.huaweicloud.com/api-vod/vod_04_0198.html)接口通知点播服务。  如果是更新封面或单独上传封面，则不需通知。  更新视频可以使用分段上传，具体方式可以参考[示例2：媒资分段上传（20M以上）](https://support.huaweicloud.com/api-vod/vod_04_0216.html)。
-
-        :param UpdateAssetRequest request
-        :return: UpdateAssetResponse
-        """
-
         all_params = ['upload_asset_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2350,26 +2194,21 @@ class VodAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_asset_category_async(self, request):
         """修改媒资分类
 
         修改媒资分类。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateAssetCategoryRequest request
-        :return: UpdateAssetCategoryResponse
+        :param request: Request instance for UpdateAssetCategory
+        :type request: :class:`huaweicloudsdkvod.v1.UpdateAssetCategoryRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.UpdateAssetCategoryResponse`
         """
         return self.update_asset_category_with_http_info(request)
 
     def update_asset_category_with_http_info(self, request):
-        """修改媒资分类
-
-        修改媒资分类。
-
-        :param UpdateAssetCategoryRequest request
-        :return: UpdateAssetCategoryResponse
-        """
-
         all_params = ['update_category_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2413,26 +2252,21 @@ class VodAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_asset_meta_async(self, request):
         """修改媒资属性
 
         修改媒资属性。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateAssetMetaRequest request
-        :return: UpdateAssetMetaResponse
+        :param request: Request instance for UpdateAssetMeta
+        :type request: :class:`huaweicloudsdkvod.v1.UpdateAssetMetaRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.UpdateAssetMetaResponse`
         """
         return self.update_asset_meta_with_http_info(request)
 
     def update_asset_meta_with_http_info(self, request):
-        """修改媒资属性
-
-        修改媒资属性。
-
-        :param UpdateAssetMetaRequest request
-        :return: UpdateAssetMetaResponse
-        """
-
         all_params = ['update_asset_meta_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2476,26 +2310,21 @@ class VodAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_bucket_authorized_async(self, request):
         """桶授权
 
         用户可以通过该接口将OBS桶授权给点播服务或取消点播服务的授权。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateBucketAuthorizedRequest request
-        :return: UpdateBucketAuthorizedResponse
+        :param request: Request instance for UpdateBucketAuthorized
+        :type request: :class:`huaweicloudsdkvod.v1.UpdateBucketAuthorizedRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.UpdateBucketAuthorizedResponse`
         """
         return self.update_bucket_authorized_with_http_info(request)
 
     def update_bucket_authorized_with_http_info(self, request):
-        """桶授权
-
-        用户可以通过该接口将OBS桶授权给点播服务或取消点播服务的授权。
-
-        :param UpdateBucketAuthorizedRequest request
-        :return: UpdateBucketAuthorizedResponse
-        """
-
         all_params = ['update_bucket_authorized_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2539,26 +2368,21 @@ class VodAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_cover_by_thumbnail_async(self, request):
         """设置封面
 
         将视频截图生成的某张图片设置成封面。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateCoverByThumbnailRequest request
-        :return: UpdateCoverByThumbnailResponse
+        :param request: Request instance for UpdateCoverByThumbnail
+        :type request: :class:`huaweicloudsdkvod.v1.UpdateCoverByThumbnailRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.UpdateCoverByThumbnailResponse`
         """
         return self.update_cover_by_thumbnail_with_http_info(request)
 
     def update_cover_by_thumbnail_with_http_info(self, request):
-        """设置封面
-
-        将视频截图生成的某张图片设置成封面。
-
-        :param UpdateCoverByThumbnailRequest request
-        :return: UpdateCoverByThumbnailResponse
-        """
-
         all_params = ['update_cover_by_thumbnail_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2602,26 +2426,21 @@ class VodAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_template_group_async(self, request):
         """修改自定义转码模板组
 
         修改自定义转码模板组。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateTemplateGroupRequest request
-        :return: UpdateTemplateGroupResponse
+        :param request: Request instance for UpdateTemplateGroup
+        :type request: :class:`huaweicloudsdkvod.v1.UpdateTemplateGroupRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.UpdateTemplateGroupResponse`
         """
         return self.update_template_group_with_http_info(request)
 
     def update_template_group_with_http_info(self, request):
-        """修改自定义转码模板组
-
-        修改自定义转码模板组。
-
-        :param UpdateTemplateGroupRequest request
-        :return: UpdateTemplateGroupResponse
-        """
-
         all_params = ['trans_template_group']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2665,26 +2484,21 @@ class VodAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_watermark_template_async(self, request):
         """修改水印模板
 
-        修改水印模板 
+        修改水印模板
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateWatermarkTemplateRequest request
-        :return: UpdateWatermarkTemplateResponse
+        :param request: Request instance for UpdateWatermarkTemplate
+        :type request: :class:`huaweicloudsdkvod.v1.UpdateWatermarkTemplateRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.UpdateWatermarkTemplateResponse`
         """
         return self.update_watermark_template_with_http_info(request)
 
     def update_watermark_template_with_http_info(self, request):
-        """修改水印模板
-
-        修改水印模板 
-
-        :param UpdateWatermarkTemplateRequest request
-        :return: UpdateWatermarkTemplateResponse
-        """
-
         all_params = ['update_watermark_template_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2728,26 +2542,21 @@ class VodAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def upload_meta_data_by_url_async(self, request):
         """创建媒资：URL拉取注入
 
         基于音视频源文件URL，将音视频文件离线拉取上传到点播服务。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UploadMetaDataByUrlRequest request
-        :return: UploadMetaDataByUrlResponse
+        :param request: Request instance for UploadMetaDataByUrl
+        :type request: :class:`huaweicloudsdkvod.v1.UploadMetaDataByUrlRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.UploadMetaDataByUrlResponse`
         """
         return self.upload_meta_data_by_url_with_http_info(request)
 
     def upload_meta_data_by_url_with_http_info(self, request):
-        """创建媒资：URL拉取注入
-
-        基于音视频源文件URL，将音视频文件离线拉取上传到点播服务。
-
-        :param UploadMetaDataByUrlRequest request
-        :return: UploadMetaDataByUrlResponse
-        """
-
         all_params = ['upload_meta_data_by_url_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2791,26 +2600,21 @@ class VodAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_take_over_task_async(self, request):
         """查询托管任务
 
         查询OBS存量托管任务列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListTakeOverTaskRequest request
-        :return: ListTakeOverTaskResponse
+        :param request: Request instance for ListTakeOverTask
+        :type request: :class:`huaweicloudsdkvod.v1.ListTakeOverTaskRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.ListTakeOverTaskResponse`
         """
         return self.list_take_over_task_with_http_info(request)
 
     def list_take_over_task_with_http_info(self, request):
-        """查询托管任务
-
-        查询OBS存量托管任务列表。
-
-        :param ListTakeOverTaskRequest request
-        :return: ListTakeOverTaskResponse
-        """
-
         all_params = ['status', 'task_id', 'page', 'size']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2860,26 +2664,21 @@ class VodAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_take_over_asset_details_async(self, request):
         """查询托管媒资详情
 
         查询OBS托管媒资的详细信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowTakeOverAssetDetailsRequest request
-        :return: ShowTakeOverAssetDetailsResponse
+        :param request: Request instance for ShowTakeOverAssetDetails
+        :type request: :class:`huaweicloudsdkvod.v1.ShowTakeOverAssetDetailsRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.ShowTakeOverAssetDetailsResponse`
         """
         return self.show_take_over_asset_details_with_http_info(request)
 
     def show_take_over_asset_details_with_http_info(self, request):
-        """查询托管媒资详情
-
-        查询OBS托管媒资的详细信息。
-
-        :param ShowTakeOverAssetDetailsRequest request
-        :return: ShowTakeOverAssetDetailsResponse
-        """
-
         all_params = ['source_bucket', 'source_object']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2925,26 +2724,21 @@ class VodAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_take_over_task_details_async(self, request):
         """查询托管任务详情
 
         查询OBS存量托管任务详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowTakeOverTaskDetailsRequest request
-        :return: ShowTakeOverTaskDetailsResponse
+        :param request: Request instance for ShowTakeOverTaskDetails
+        :type request: :class:`huaweicloudsdkvod.v1.ShowTakeOverTaskDetailsRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.ShowTakeOverTaskDetailsResponse`
         """
         return self.show_take_over_task_details_with_http_info(request)
 
     def show_take_over_task_details_with_http_info(self, request):
-        """查询托管任务详情
-
-        查询OBS存量托管任务详情。
-
-        :param ShowTakeOverTaskDetailsRequest request
-        :return: ShowTakeOverTaskDetailsResponse
-        """
-
         all_params = ['task_id', 'page', 'size']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2991,7 +2785,6 @@ class VodAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

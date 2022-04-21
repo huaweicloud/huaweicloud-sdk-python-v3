@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowNetworkInstanceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowNetworkInstanceResponse(SdkResponse):
     }
 
     def __init__(self, network_instance=None, request_id=None):
-        """ShowNetworkInstanceResponse - a model defined in huaweicloud sdk"""
+        """ShowNetworkInstanceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param network_instance: 
+        :type network_instance: :class:`huaweicloudsdkcc.v3.NetworkInstance`
+        :param request_id: 请求ID。
+        :type request_id: str
+        """
         
         super(ShowNetworkInstanceResponse, self).__init__()
 
@@ -51,7 +58,7 @@ class ShowNetworkInstanceResponse(SdkResponse):
 
 
         :return: The network_instance of this ShowNetworkInstanceResponse.
-        :rtype: NetworkInstance
+        :rtype: :class:`huaweicloudsdkcc.v3.NetworkInstance`
         """
         return self._network_instance
 
@@ -61,7 +68,7 @@ class ShowNetworkInstanceResponse(SdkResponse):
 
 
         :param network_instance: The network_instance of this ShowNetworkInstanceResponse.
-        :type: NetworkInstance
+        :type network_instance: :class:`huaweicloudsdkcc.v3.NetworkInstance`
         """
         self._network_instance = network_instance
 
@@ -83,7 +90,7 @@ class ShowNetworkInstanceResponse(SdkResponse):
         请求ID。
 
         :param request_id: The request_id of this ShowNetworkInstanceResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 

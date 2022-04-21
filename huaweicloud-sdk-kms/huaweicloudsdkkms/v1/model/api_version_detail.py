@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApiVersionDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ApiVersionDetail:
     }
 
     def __init__(self, id=None, links=None, version=None, status=None, updated=None, min_version=None):
-        """ApiVersionDetail - a model defined in huaweicloud sdk"""
+        """ApiVersionDetail
+
+        The model defined in huaweicloud sdk
+
+        :param id: 版本ID（版本号），如“v1.0”。
+        :type id: str
+        :param links: JSON对象，详情请参见links字段数据结构说明。
+        :type links: list[:class:`huaweicloudsdkkms.v1.ApiLink`]
+        :param version: 若该版本API支持微版本，则填支持的最大微版本号，如果不支持微版本，则返回空字符串。
+        :type version: str
+        :param status: 版本状态，包含如下3种：  - CURRENT：表示该版本为主推版本。  - SUPPORTED：表示为老版本，但是现在还继续支持。  - DEPRECATED：表示为废弃版本，存在后续删除的可能。
+        :type status: str
+        :param updated: 版本发布时间，要求用UTC时间表示。如v1.发布的时间2014-06-28T12:20:21Z。
+        :type updated: str
+        :param min_version: 若该版本API 支持微版本，则填支持的最小微版本号，如果不支持微版本，则返回空字符串。
+        :type min_version: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class ApiVersionDetail:
         版本ID（版本号），如“v1.0”。
 
         :param id: The id of this ApiVersionDetail.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -94,7 +109,7 @@ class ApiVersionDetail:
         JSON对象，详情请参见links字段数据结构说明。
 
         :return: The links of this ApiVersionDetail.
-        :rtype: list[ApiLink]
+        :rtype: list[:class:`huaweicloudsdkkms.v1.ApiLink`]
         """
         return self._links
 
@@ -105,7 +120,7 @@ class ApiVersionDetail:
         JSON对象，详情请参见links字段数据结构说明。
 
         :param links: The links of this ApiVersionDetail.
-        :type: list[ApiLink]
+        :type links: list[:class:`huaweicloudsdkkms.v1.ApiLink`]
         """
         self._links = links
 
@@ -127,7 +142,7 @@ class ApiVersionDetail:
         若该版本API支持微版本，则填支持的最大微版本号，如果不支持微版本，则返回空字符串。
 
         :param version: The version of this ApiVersionDetail.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -149,7 +164,7 @@ class ApiVersionDetail:
         版本状态，包含如下3种：  - CURRENT：表示该版本为主推版本。  - SUPPORTED：表示为老版本，但是现在还继续支持。  - DEPRECATED：表示为废弃版本，存在后续删除的可能。
 
         :param status: The status of this ApiVersionDetail.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -171,7 +186,7 @@ class ApiVersionDetail:
         版本发布时间，要求用UTC时间表示。如v1.发布的时间2014-06-28T12:20:21Z。
 
         :param updated: The updated of this ApiVersionDetail.
-        :type: str
+        :type updated: str
         """
         self._updated = updated
 
@@ -193,7 +208,7 @@ class ApiVersionDetail:
         若该版本API 支持微版本，则填支持的最小微版本号，如果不支持微版本，则返回空字符串。
 
         :param min_version: The min_version of this ApiVersionDetail.
-        :type: str
+        :type min_version: str
         """
         self._min_version = min_version
 

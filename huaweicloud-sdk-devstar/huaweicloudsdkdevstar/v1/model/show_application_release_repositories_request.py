@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowApplicationReleaseRepositoriesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ShowApplicationReleaseRepositoriesRequest:
     }
 
     def __init__(self, x_language=None, application_id=None, parent_id=None, keyword=None, limit=None, offset=None):
-        """ShowApplicationReleaseRepositoriesRequest - a model defined in huaweicloud sdk"""
+        """ShowApplicationReleaseRepositoriesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言类型 中文:zh-cn 英文:en-us
+        :type x_language: str
+        :param application_id: 应用id
+        :type application_id: str
+        :param parent_id: 父id,仅在仓库类型为ReleaseMan需要
+        :type parent_id: str
+        :param keyword: 搜索关键字,支持按名称搜索,默认null
+        :type keyword: str
+        :param limit: 每页显示的条目数量,默认10
+        :type limit: int
+        :param offset: 偏移量，表示从此偏移量开始查询,默认0
+        :type offset: int
+        """
         
         
 
@@ -82,7 +97,7 @@ class ShowApplicationReleaseRepositoriesRequest:
         语言类型 中文:zh-cn 英文:en-us
 
         :param x_language: The x_language of this ShowApplicationReleaseRepositoriesRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -104,7 +119,7 @@ class ShowApplicationReleaseRepositoriesRequest:
         应用id
 
         :param application_id: The application_id of this ShowApplicationReleaseRepositoriesRequest.
-        :type: str
+        :type application_id: str
         """
         self._application_id = application_id
 
@@ -126,7 +141,7 @@ class ShowApplicationReleaseRepositoriesRequest:
         父id,仅在仓库类型为ReleaseMan需要
 
         :param parent_id: The parent_id of this ShowApplicationReleaseRepositoriesRequest.
-        :type: str
+        :type parent_id: str
         """
         self._parent_id = parent_id
 
@@ -148,7 +163,7 @@ class ShowApplicationReleaseRepositoriesRequest:
         搜索关键字,支持按名称搜索,默认null
 
         :param keyword: The keyword of this ShowApplicationReleaseRepositoriesRequest.
-        :type: str
+        :type keyword: str
         """
         self._keyword = keyword
 
@@ -170,7 +185,7 @@ class ShowApplicationReleaseRepositoriesRequest:
         每页显示的条目数量,默认10
 
         :param limit: The limit of this ShowApplicationReleaseRepositoriesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -192,7 +207,7 @@ class ShowApplicationReleaseRepositoriesRequest:
         偏移量，表示从此偏移量开始查询,默认0
 
         :param offset: The offset of this ShowApplicationReleaseRepositoriesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 

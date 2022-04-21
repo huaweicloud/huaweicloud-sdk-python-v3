@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchCreateOrDeleteTagReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchCreateOrDeleteTagReq:
     }
 
     def __init__(self, action=None, tags=None):
-        """BatchCreateOrDeleteTagReq - a model defined in huaweicloud sdk"""
+        """BatchCreateOrDeleteTagReq
+
+        The model defined in huaweicloud sdk
+
+        :param action: 操作标识（仅支持小写）: - create（创建） - delete（删除） 
+        :type action: str
+        :param tags: 标签列表。
+        :type tags: list[:class:`huaweicloudsdkdms.v2.BatchCreateOrDeleteTagReqTags`]
+        """
         
         
 
@@ -63,7 +70,7 @@ class BatchCreateOrDeleteTagReq:
         操作标识（仅支持小写）: - create（创建） - delete（删除） 
 
         :param action: The action of this BatchCreateOrDeleteTagReq.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -74,7 +81,7 @@ class BatchCreateOrDeleteTagReq:
         标签列表。
 
         :return: The tags of this BatchCreateOrDeleteTagReq.
-        :rtype: list[BatchCreateOrDeleteTagReqTags]
+        :rtype: list[:class:`huaweicloudsdkdms.v2.BatchCreateOrDeleteTagReqTags`]
         """
         return self._tags
 
@@ -85,7 +92,7 @@ class BatchCreateOrDeleteTagReq:
         标签列表。
 
         :param tags: The tags of this BatchCreateOrDeleteTagReq.
-        :type: list[BatchCreateOrDeleteTagReqTags]
+        :type tags: list[:class:`huaweicloudsdkdms.v2.BatchCreateOrDeleteTagReqTags`]
         """
         self._tags = tags
 

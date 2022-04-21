@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MessageResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class MessageResult:
     }
 
     def __init__(self, status=None, created_time=None, finished_time=None):
-        """MessageResult - a model defined in huaweicloud sdk"""
+        """MessageResult
+
+        The model defined in huaweicloud sdk
+
+        :param status: 消息状态, PENDING，DELIVERED，FAILED和TIMEOUT。如果设备不在线，则平台缓存消息，并且返回PENDING，等设备数据上报之后再下发；如果设备在线，则消息直接进行下发，下发成功后接口返回DELIVERED，失败返回FAILED；如果消息在平台默认时间内（1天）还没有下发给设备，则平台会将消息设置为超时，状态为TIMEOUT。另外应用可以订阅消息的执行结果，平台会将消息结果推送给订阅的应用。
+        :type status: str
+        :param created_time: 消息的创建时间，\&quot;yyyyMMdd&#39;T&#39;HHmmss&#39;Z&#39;\&quot;格式的UTC字符串。
+        :type created_time: str
+        :param finished_time: 消息结束时间, \&quot;yyyyMMdd&#39;T&#39;HHmmss&#39;Z&#39;\&quot;格式的UTC字符串，包含消息转换到DELIVERED，FAILED和TIMEOUT状态的时间。
+        :type finished_time: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class MessageResult:
         消息状态, PENDING，DELIVERED，FAILED和TIMEOUT。如果设备不在线，则平台缓存消息，并且返回PENDING，等设备数据上报之后再下发；如果设备在线，则消息直接进行下发，下发成功后接口返回DELIVERED，失败返回FAILED；如果消息在平台默认时间内（1天）还没有下发给设备，则平台会将消息设置为超时，状态为TIMEOUT。另外应用可以订阅消息的执行结果，平台会将消息结果推送给订阅的应用。
 
         :param status: The status of this MessageResult.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -90,7 +99,7 @@ class MessageResult:
         消息的创建时间，\"yyyyMMdd'T'HHmmss'Z'\"格式的UTC字符串。
 
         :param created_time: The created_time of this MessageResult.
-        :type: str
+        :type created_time: str
         """
         self._created_time = created_time
 
@@ -112,7 +121,7 @@ class MessageResult:
         消息结束时间, \"yyyyMMdd'T'HHmmss'Z'\"格式的UTC字符串，包含消息转换到DELIVERED，FAILED和TIMEOUT状态的时间。
 
         :param finished_time: The finished_time of this MessageResult.
-        :type: str
+        :type finished_time: str
         """
         self._finished_time = finished_time
 

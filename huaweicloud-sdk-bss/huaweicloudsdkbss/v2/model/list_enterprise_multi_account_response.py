@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListEnterpriseMultiAccountResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListEnterpriseMultiAccountResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, amount_infos=None):
-        """ListEnterpriseMultiAccountResponse - a model defined in huaweicloud sdk"""
+        """ListEnterpriseMultiAccountResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total_count: 记录条数。
+        :type total_count: int
+        :param amount_infos: 可回收余额信息，如果是余额账户，只会有一条记录。 具体请参见表2。
+        :type amount_infos: list[:class:`huaweicloudsdkbss.v2.RetrieveAmountInfoV2`]
+        """
         
         super(ListEnterpriseMultiAccountResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListEnterpriseMultiAccountResponse(SdkResponse):
         记录条数。
 
         :param total_count: The total_count of this ListEnterpriseMultiAccountResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 
@@ -74,7 +81,7 @@ class ListEnterpriseMultiAccountResponse(SdkResponse):
         可回收余额信息，如果是余额账户，只会有一条记录。 具体请参见表2。
 
         :return: The amount_infos of this ListEnterpriseMultiAccountResponse.
-        :rtype: list[RetrieveAmountInfoV2]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.RetrieveAmountInfoV2`]
         """
         return self._amount_infos
 
@@ -85,7 +92,7 @@ class ListEnterpriseMultiAccountResponse(SdkResponse):
         可回收余额信息，如果是余额账户，只会有一条记录。 具体请参见表2。
 
         :param amount_infos: The amount_infos of this ListEnterpriseMultiAccountResponse.
-        :type: list[RetrieveAmountInfoV2]
+        :type amount_infos: list[:class:`huaweicloudsdkbss.v2.RetrieveAmountInfoV2`]
         """
         self._amount_infos = amount_infos
 

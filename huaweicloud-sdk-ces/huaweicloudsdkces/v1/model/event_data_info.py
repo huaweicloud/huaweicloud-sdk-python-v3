@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EventDataInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class EventDataInfo:
     }
 
     def __init__(self, type=None, timestamp=None, value=None):
-        """EventDataInfo - a model defined in huaweicloud sdk"""
+        """EventDataInfo
+
+        The model defined in huaweicloud sdk
+
+        :param type: 事件类型，例如instance_host_info。
+        :type type: str
+        :param timestamp: 事件上报时间。
+        :type timestamp: int
+        :param value: 主机配置信息。
+        :type value: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class EventDataInfo:
         事件类型，例如instance_host_info。
 
         :param type: The type of this EventDataInfo.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -87,7 +96,7 @@ class EventDataInfo:
         事件上报时间。
 
         :param timestamp: The timestamp of this EventDataInfo.
-        :type: int
+        :type timestamp: int
         """
         self._timestamp = timestamp
 
@@ -109,7 +118,7 @@ class EventDataInfo:
         主机配置信息。
 
         :param value: The value of this EventDataInfo.
-        :type: str
+        :type value: str
         """
         self._value = value
 

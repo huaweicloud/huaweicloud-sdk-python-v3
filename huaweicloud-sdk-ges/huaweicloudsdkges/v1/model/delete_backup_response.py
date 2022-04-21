@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteBackupResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteBackupResponse(SdkResponse):
     }
 
     def __init__(self, error_message=None, error_code=None):
-        """DeleteBackupResponse - a model defined in huaweicloud sdk"""
+        """DeleteBackupResponse
+
+        The model defined in huaweicloud sdk
+
+        :param error_message: 系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误信息。
+        :type error_message: str
+        :param error_code: 系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误码。
+        :type error_code: str
+        """
         
         super(DeleteBackupResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class DeleteBackupResponse(SdkResponse):
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误信息。
 
         :param error_message: The error_message of this DeleteBackupResponse.
-        :type: str
+        :type error_message: str
         """
         self._error_message = error_message
 
@@ -85,7 +92,7 @@ class DeleteBackupResponse(SdkResponse):
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误码。
 
         :param error_code: The error_code of this DeleteBackupResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 

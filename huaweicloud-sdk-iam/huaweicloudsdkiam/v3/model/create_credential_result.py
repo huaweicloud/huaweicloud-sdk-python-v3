@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateCredentialResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class CreateCredentialResult:
     }
 
     def __init__(self, create_time=None, access=None, secret=None, status=None, user_id=None, description=None):
-        """CreateCredentialResult - a model defined in huaweicloud sdk"""
+        """CreateCredentialResult
+
+        The model defined in huaweicloud sdk
+
+        :param create_time: 创建访问密钥时间。
+        :type create_time: str
+        :param access: 创建的AK。
+        :type access: str
+        :param secret: 创建的SK。
+        :type secret: str
+        :param status: 访问密钥状态。
+        :type status: str
+        :param user_id: IAM用户ID。
+        :type user_id: str
+        :param description: 访问密钥描述信息。
+        :type description: str
+        """
         
         
 
@@ -77,7 +92,7 @@ class CreateCredentialResult:
         创建访问密钥时间。
 
         :param create_time: The create_time of this CreateCredentialResult.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -99,7 +114,7 @@ class CreateCredentialResult:
         创建的AK。
 
         :param access: The access of this CreateCredentialResult.
-        :type: str
+        :type access: str
         """
         self._access = access
 
@@ -121,7 +136,7 @@ class CreateCredentialResult:
         创建的SK。
 
         :param secret: The secret of this CreateCredentialResult.
-        :type: str
+        :type secret: str
         """
         self._secret = secret
 
@@ -143,7 +158,7 @@ class CreateCredentialResult:
         访问密钥状态。
 
         :param status: The status of this CreateCredentialResult.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -165,7 +180,7 @@ class CreateCredentialResult:
         IAM用户ID。
 
         :param user_id: The user_id of this CreateCredentialResult.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -187,7 +202,7 @@ class CreateCredentialResult:
         访问密钥描述信息。
 
         :param description: The description of this CreateCredentialResult.
-        :type: str
+        :type description: str
         """
         self._description = description
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AssociateAppsForAppQuotaResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class AssociateAppsForAppQuotaResponse(SdkResponse):
     }
 
     def __init__(self, applies=None):
-        """AssociateAppsForAppQuotaResponse - a model defined in huaweicloud sdk"""
+        """AssociateAppsForAppQuotaResponse
+
+        The model defined in huaweicloud sdk
+
+        :param applies: 客户端应用与客户端配额绑定列表
+        :type applies: list[:class:`huaweicloudsdkroma.v2.AppQuotaAppBinding`]
+        """
         
         super(AssociateAppsForAppQuotaResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class AssociateAppsForAppQuotaResponse(SdkResponse):
         客户端应用与客户端配额绑定列表
 
         :return: The applies of this AssociateAppsForAppQuotaResponse.
-        :rtype: list[AppQuotaAppBinding]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.AppQuotaAppBinding`]
         """
         return self._applies
 
@@ -58,7 +63,7 @@ class AssociateAppsForAppQuotaResponse(SdkResponse):
         客户端应用与客户端配额绑定列表
 
         :param applies: The applies of this AssociateAppsForAppQuotaResponse.
-        :type: list[AppQuotaAppBinding]
+        :type applies: list[:class:`huaweicloudsdkroma.v2.AppQuotaAppBinding`]
         """
         self._applies = applies
 

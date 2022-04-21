@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateCommitResponseBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class CreateCommitResponseBody:
     }
 
     def __init__(self, id=None, short_id=None, title=None, author_name=None, author_email=None, committer_name=None, committer_email=None, created_at=None, message=None, parent_ids=None, committed_date=None, authored_date=None, stats=None):
-        """CreateCommitResponseBody - a model defined in huaweicloud sdk"""
+        """CreateCommitResponseBody
+
+        The model defined in huaweicloud sdk
+
+        :param id: 提交对应的SHA id
+        :type id: str
+        :param short_id: 提交对应的短SHA id
+        :type short_id: str
+        :param title: 提交标题
+        :type title: str
+        :param author_name: 作者
+        :type author_name: str
+        :param author_email: 作者邮箱
+        :type author_email: str
+        :param committer_name: 提交作者
+        :type committer_name: str
+        :param committer_email: 提交作者邮箱
+        :type committer_email: str
+        :param created_at: 创建时间
+        :type created_at: str
+        :param message: 提交信息
+        :type message: str
+        :param parent_ids: 父提交id
+        :type parent_ids: list[str]
+        :param committed_date: 提交时间
+        :type committed_date: datetime
+        :param authored_date: 作者提交时间
+        :type authored_date: datetime
+        :param stats: 
+        :type stats: :class:`huaweicloudsdkcodehub.v3.CreateCommitResponseBodyStats`
+        """
         
         
 
@@ -118,7 +147,7 @@ class CreateCommitResponseBody:
         提交对应的SHA id
 
         :param id: The id of this CreateCommitResponseBody.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -140,7 +169,7 @@ class CreateCommitResponseBody:
         提交对应的短SHA id
 
         :param short_id: The short_id of this CreateCommitResponseBody.
-        :type: str
+        :type short_id: str
         """
         self._short_id = short_id
 
@@ -162,7 +191,7 @@ class CreateCommitResponseBody:
         提交标题
 
         :param title: The title of this CreateCommitResponseBody.
-        :type: str
+        :type title: str
         """
         self._title = title
 
@@ -184,7 +213,7 @@ class CreateCommitResponseBody:
         作者
 
         :param author_name: The author_name of this CreateCommitResponseBody.
-        :type: str
+        :type author_name: str
         """
         self._author_name = author_name
 
@@ -206,7 +235,7 @@ class CreateCommitResponseBody:
         作者邮箱
 
         :param author_email: The author_email of this CreateCommitResponseBody.
-        :type: str
+        :type author_email: str
         """
         self._author_email = author_email
 
@@ -228,7 +257,7 @@ class CreateCommitResponseBody:
         提交作者
 
         :param committer_name: The committer_name of this CreateCommitResponseBody.
-        :type: str
+        :type committer_name: str
         """
         self._committer_name = committer_name
 
@@ -250,7 +279,7 @@ class CreateCommitResponseBody:
         提交作者邮箱
 
         :param committer_email: The committer_email of this CreateCommitResponseBody.
-        :type: str
+        :type committer_email: str
         """
         self._committer_email = committer_email
 
@@ -272,7 +301,7 @@ class CreateCommitResponseBody:
         创建时间
 
         :param created_at: The created_at of this CreateCommitResponseBody.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -294,7 +323,7 @@ class CreateCommitResponseBody:
         提交信息
 
         :param message: The message of this CreateCommitResponseBody.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -316,7 +345,7 @@ class CreateCommitResponseBody:
         父提交id
 
         :param parent_ids: The parent_ids of this CreateCommitResponseBody.
-        :type: list[str]
+        :type parent_ids: list[str]
         """
         self._parent_ids = parent_ids
 
@@ -338,7 +367,7 @@ class CreateCommitResponseBody:
         提交时间
 
         :param committed_date: The committed_date of this CreateCommitResponseBody.
-        :type: datetime
+        :type committed_date: datetime
         """
         self._committed_date = committed_date
 
@@ -360,7 +389,7 @@ class CreateCommitResponseBody:
         作者提交时间
 
         :param authored_date: The authored_date of this CreateCommitResponseBody.
-        :type: datetime
+        :type authored_date: datetime
         """
         self._authored_date = authored_date
 
@@ -370,7 +399,7 @@ class CreateCommitResponseBody:
 
 
         :return: The stats of this CreateCommitResponseBody.
-        :rtype: CreateCommitResponseBodyStats
+        :rtype: :class:`huaweicloudsdkcodehub.v3.CreateCommitResponseBodyStats`
         """
         return self._stats
 
@@ -380,7 +409,7 @@ class CreateCommitResponseBody:
 
 
         :param stats: The stats of this CreateCommitResponseBody.
-        :type: CreateCommitResponseBodyStats
+        :type stats: :class:`huaweicloudsdkcodehub.v3.CreateCommitResponseBodyStats`
         """
         self._stats = stats
 

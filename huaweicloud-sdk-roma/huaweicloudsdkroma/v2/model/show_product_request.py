@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowProductRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowProductRequest:
     }
 
     def __init__(self, instance_id=None, product_id=None):
-        """ShowProductRequest - a model defined in huaweicloud sdk"""
+        """ShowProductRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param product_id: 产品ID
+        :type product_id: int
+        """
         
         
 
@@ -61,7 +68,7 @@ class ShowProductRequest:
         实例ID
 
         :param instance_id: The instance_id of this ShowProductRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -83,7 +90,7 @@ class ShowProductRequest:
         产品ID
 
         :param product_id: The product_id of this ShowProductRequest.
-        :type: int
+        :type product_id: int
         """
         self._product_id = product_id
 

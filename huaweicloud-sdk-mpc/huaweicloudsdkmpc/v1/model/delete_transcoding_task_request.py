@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteTranscodingTaskRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteTranscodingTaskRequest:
     }
 
     def __init__(self, task_id=None):
-        """DeleteTranscodingTaskRequest - a model defined in huaweicloud sdk"""
+        """DeleteTranscodingTaskRequest
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 创建转码任务成功时返回的任务ID 
+        :type task_id: int
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteTranscodingTaskRequest:
         创建转码任务成功时返回的任务ID 
 
         :param task_id: The task_id of this DeleteTranscodingTaskRequest.
-        :type: int
+        :type task_id: int
         """
         self._task_id = task_id
 

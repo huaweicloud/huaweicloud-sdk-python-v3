@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CountTasksResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CountTasksResponse(SdkResponse):
     }
 
     def __init__(self, common_task_details=None, cdc_task_details=None):
-        """CountTasksResponse - a model defined in huaweicloud sdk"""
+        """CountTasksResponse
+
+        The model defined in huaweicloud sdk
+
+        :param common_task_details: 
+        :type common_task_details: :class:`huaweicloudsdkroma.v2.TaskStatisticDetails`
+        :param cdc_task_details: 
+        :type cdc_task_details: :class:`huaweicloudsdkroma.v2.TaskStatisticDetails`
+        """
         
         super(CountTasksResponse, self).__init__()
 
@@ -51,7 +58,7 @@ class CountTasksResponse(SdkResponse):
 
 
         :return: The common_task_details of this CountTasksResponse.
-        :rtype: TaskStatisticDetails
+        :rtype: :class:`huaweicloudsdkroma.v2.TaskStatisticDetails`
         """
         return self._common_task_details
 
@@ -61,7 +68,7 @@ class CountTasksResponse(SdkResponse):
 
 
         :param common_task_details: The common_task_details of this CountTasksResponse.
-        :type: TaskStatisticDetails
+        :type common_task_details: :class:`huaweicloudsdkroma.v2.TaskStatisticDetails`
         """
         self._common_task_details = common_task_details
 
@@ -71,7 +78,7 @@ class CountTasksResponse(SdkResponse):
 
 
         :return: The cdc_task_details of this CountTasksResponse.
-        :rtype: TaskStatisticDetails
+        :rtype: :class:`huaweicloudsdkroma.v2.TaskStatisticDetails`
         """
         return self._cdc_task_details
 
@@ -81,7 +88,7 @@ class CountTasksResponse(SdkResponse):
 
 
         :param cdc_task_details: The cdc_task_details of this CountTasksResponse.
-        :type: TaskStatisticDetails
+        :type cdc_task_details: :class:`huaweicloudsdkroma.v2.TaskStatisticDetails`
         """
         self._cdc_task_details = cdc_task_details
 

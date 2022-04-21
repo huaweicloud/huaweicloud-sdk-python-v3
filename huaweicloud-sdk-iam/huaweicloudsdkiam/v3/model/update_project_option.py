@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateProjectOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateProjectOption:
     }
 
     def __init__(self, status=None):
-        """UpdateProjectOption - a model defined in huaweicloud sdk"""
+        """UpdateProjectOption
+
+        The model defined in huaweicloud sdk
+
+        :param status: 项目的状态信息，参数的值为\&quot;suspended\&quot;或\&quot;normal\&quot;。 - status值为\&quot;suspended\&quot;时，会将项目设置为冻结状态。 - status值为\&quot;normal\&quot;时，会将项目设置为正常（解冻）状态。
+        :type status: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class UpdateProjectOption:
         项目的状态信息，参数的值为\"suspended\"或\"normal\"。 - status值为\"suspended\"时，会将项目设置为冻结状态。 - status值为\"normal\"时，会将项目设置为正常（解冻）状态。
 
         :param status: The status of this UpdateProjectOption.
-        :type: str
+        :type status: str
         """
         self._status = status
 

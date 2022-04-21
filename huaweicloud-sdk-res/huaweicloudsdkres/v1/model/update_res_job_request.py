@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateResJobRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class UpdateResJobRequest:
     }
 
     def __init__(self, content_type=None, job_id=None, resource_id=None, workspace_id=None, body=None):
-        """UpdateResJobRequest - a model defined in huaweicloud sdk"""
+        """UpdateResJobRequest
+
+        The model defined in huaweicloud sdk
+
+        :param content_type: 内容类型，取值为application/json
+        :type content_type: str
+        :param job_id: 作业id
+        :type job_id: str
+        :param resource_id: 资源id（数据源id或场景id）
+        :type resource_id: str
+        :param workspace_id: 工作空间id
+        :type workspace_id: str
+        :param body: Body of the UpdateResJobRequest
+        :type body: :class:`huaweicloudsdkres.v1.UpdateResJobRequestBody`
+        """
         
         
 
@@ -75,7 +88,7 @@ class UpdateResJobRequest:
         内容类型，取值为application/json
 
         :param content_type: The content_type of this UpdateResJobRequest.
-        :type: str
+        :type content_type: str
         """
         self._content_type = content_type
 
@@ -97,7 +110,7 @@ class UpdateResJobRequest:
         作业id
 
         :param job_id: The job_id of this UpdateResJobRequest.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -119,7 +132,7 @@ class UpdateResJobRequest:
         资源id（数据源id或场景id）
 
         :param resource_id: The resource_id of this UpdateResJobRequest.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -141,7 +154,7 @@ class UpdateResJobRequest:
         工作空间id
 
         :param workspace_id: The workspace_id of this UpdateResJobRequest.
-        :type: str
+        :type workspace_id: str
         """
         self._workspace_id = workspace_id
 
@@ -151,7 +164,7 @@ class UpdateResJobRequest:
 
 
         :return: The body of this UpdateResJobRequest.
-        :rtype: UpdateResJobRequestBody
+        :rtype: :class:`huaweicloudsdkres.v1.UpdateResJobRequestBody`
         """
         return self._body
 
@@ -161,7 +174,7 @@ class UpdateResJobRequest:
 
 
         :param body: The body of this UpdateResJobRequest.
-        :type: UpdateResJobRequestBody
+        :type body: :class:`huaweicloudsdkres.v1.UpdateResJobRequestBody`
         """
         self._body = body
 

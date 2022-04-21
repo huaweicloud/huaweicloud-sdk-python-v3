@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchCreateSubNetworkInterfaceOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class BatchCreateSubNetworkInterfaceOption:
     }
 
     def __init__(self, virsubnet_id=None, parent_id=None, security_groups=None, description=None, ipv6_enable=None, project_id=None):
-        """BatchCreateSubNetworkInterfaceOption - a model defined in huaweicloud sdk"""
+        """BatchCreateSubNetworkInterfaceOption
+
+        The model defined in huaweicloud sdk
+
+        :param virsubnet_id: 功能说明：虚拟子网ID 取值范围：标准UUID
+        :type virsubnet_id: str
+        :param parent_id: 功能说明：宿主网络接口的ID 取值范围：标注UUID 约束：必须是实际存在的端口ID
+        :type parent_id: str
+        :param security_groups: 功能说明：安全组的ID列表；例如：\&quot;security_groups\&quot;: [\&quot;a0608cbf-d047-4f54-8b28-cd7b59853fff\&quot;] 取值范围：默认值为系统默认安全组
+        :type security_groups: list[str]
+        :param description: 功能说明：辅助弹性网卡的描述信息 取值范围：0-255个字符，不能包含“&lt;”和“&gt;”
+        :type description: str
+        :param ipv6_enable: 功能说明：辅助弹性网卡是否启用ipv6地址 取值范围：true（开启)，false（关闭） 默认值：false
+        :type ipv6_enable: bool
+        :param project_id: 功能说明：辅助弹性网卡所属的项目ID 取值范围：标准UUID 约束：只有管理员有权限指定
+        :type project_id: str
+        """
         
         
 
@@ -81,7 +96,7 @@ class BatchCreateSubNetworkInterfaceOption:
         功能说明：虚拟子网ID 取值范围：标准UUID
 
         :param virsubnet_id: The virsubnet_id of this BatchCreateSubNetworkInterfaceOption.
-        :type: str
+        :type virsubnet_id: str
         """
         self._virsubnet_id = virsubnet_id
 
@@ -103,7 +118,7 @@ class BatchCreateSubNetworkInterfaceOption:
         功能说明：宿主网络接口的ID 取值范围：标注UUID 约束：必须是实际存在的端口ID
 
         :param parent_id: The parent_id of this BatchCreateSubNetworkInterfaceOption.
-        :type: str
+        :type parent_id: str
         """
         self._parent_id = parent_id
 
@@ -125,7 +140,7 @@ class BatchCreateSubNetworkInterfaceOption:
         功能说明：安全组的ID列表；例如：\"security_groups\": [\"a0608cbf-d047-4f54-8b28-cd7b59853fff\"] 取值范围：默认值为系统默认安全组
 
         :param security_groups: The security_groups of this BatchCreateSubNetworkInterfaceOption.
-        :type: list[str]
+        :type security_groups: list[str]
         """
         self._security_groups = security_groups
 
@@ -147,7 +162,7 @@ class BatchCreateSubNetworkInterfaceOption:
         功能说明：辅助弹性网卡的描述信息 取值范围：0-255个字符，不能包含“<”和“>”
 
         :param description: The description of this BatchCreateSubNetworkInterfaceOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -169,7 +184,7 @@ class BatchCreateSubNetworkInterfaceOption:
         功能说明：辅助弹性网卡是否启用ipv6地址 取值范围：true（开启)，false（关闭） 默认值：false
 
         :param ipv6_enable: The ipv6_enable of this BatchCreateSubNetworkInterfaceOption.
-        :type: bool
+        :type ipv6_enable: bool
         """
         self._ipv6_enable = ipv6_enable
 
@@ -191,7 +206,7 @@ class BatchCreateSubNetworkInterfaceOption:
         功能说明：辅助弹性网卡所属的项目ID 取值范围：标准UUID 约束：只有管理员有权限指定
 
         :param project_id: The project_id of this BatchCreateSubNetworkInterfaceOption.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 

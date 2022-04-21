@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListComputingResourcesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListComputingResourcesResponse(SdkResponse):
     }
 
     def __init__(self, count=None, computing_resources=None):
-        """ListComputingResourcesResponse - a model defined in huaweicloud sdk"""
+        """ListComputingResourcesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 计算资源总个数。
+        :type count: int
+        :param computing_resources: 计算资源列表。
+        :type computing_resources: list[:class:`huaweicloudsdkiotanalytics.v1.ComputingResource`]
+        """
         
         super(ListComputingResourcesResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListComputingResourcesResponse(SdkResponse):
         计算资源总个数。
 
         :param count: The count of this ListComputingResourcesResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -74,7 +81,7 @@ class ListComputingResourcesResponse(SdkResponse):
         计算资源列表。
 
         :return: The computing_resources of this ListComputingResourcesResponse.
-        :rtype: list[ComputingResource]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.ComputingResource`]
         """
         return self._computing_resources
 
@@ -85,7 +92,7 @@ class ListComputingResourcesResponse(SdkResponse):
         计算资源列表。
 
         :param computing_resources: The computing_resources of this ListComputingResourcesResponse.
-        :type: list[ComputingResource]
+        :type computing_resources: list[:class:`huaweicloudsdkiotanalytics.v1.ComputingResource`]
         """
         self._computing_resources = computing_resources
 

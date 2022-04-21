@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Key:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class Key:
     }
 
     def __init__(self, can_push=None, created_at=None, key=None, key_id=None, key_title=None):
-        """Key - a model defined in huaweicloud sdk"""
+        """Key
+
+        The model defined in huaweicloud sdk
+
+        :param can_push: 是否允许推送
+        :type can_push: bool
+        :param created_at: 部署密钥新建时间
+        :type created_at: str
+        :param key: 部署密钥
+        :type key: str
+        :param key_id: 部署密钥id
+        :type key_id: str
+        :param key_title: 部署密钥名称
+        :type key_title: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class Key:
         是否允许推送
 
         :param can_push: The can_push of this Key.
-        :type: bool
+        :type can_push: bool
         """
         self._can_push = can_push
 
@@ -100,7 +113,7 @@ class Key:
         部署密钥新建时间
 
         :param created_at: The created_at of this Key.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -122,7 +135,7 @@ class Key:
         部署密钥
 
         :param key: The key of this Key.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -144,7 +157,7 @@ class Key:
         部署密钥id
 
         :param key_id: The key_id of this Key.
-        :type: str
+        :type key_id: str
         """
         self._key_id = key_id
 
@@ -166,7 +179,7 @@ class Key:
         部署密钥名称
 
         :param key_title: The key_title of this Key.
-        :type: str
+        :type key_title: str
         """
         self._key_title = key_title
 

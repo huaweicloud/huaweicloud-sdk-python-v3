@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ComponentAmb:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ComponentAmb:
     }
 
     def __init__(self, component_id=None, component_name=None, component_version=None, component_desc=None):
-        """ComponentAmb - a model defined in huaweicloud sdk"""
+        """ComponentAmb
+
+        The model defined in huaweicloud sdk
+
+        :param component_id: 组件ID。
+        :type component_id: str
+        :param component_name: 组件名称。
+        :type component_name: str
+        :param component_version: 组件版本。
+        :type component_version: str
+        :param component_desc: 组件描述信息。
+        :type component_desc: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class ComponentAmb:
         组件ID。
 
         :param component_id: The component_id of this ComponentAmb.
-        :type: str
+        :type component_id: str
         """
         self._component_id = component_id
 
@@ -95,7 +106,7 @@ class ComponentAmb:
         组件名称。
 
         :param component_name: The component_name of this ComponentAmb.
-        :type: str
+        :type component_name: str
         """
         self._component_name = component_name
 
@@ -117,7 +128,7 @@ class ComponentAmb:
         组件版本。
 
         :param component_version: The component_version of this ComponentAmb.
-        :type: str
+        :type component_version: str
         """
         self._component_version = component_version
 
@@ -139,7 +150,7 @@ class ComponentAmb:
         组件描述信息。
 
         :param component_desc: The component_desc of this ComponentAmb.
-        :type: str
+        :type component_desc: str
         """
         self._component_desc = component_desc
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteAomMappingRulesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteAomMappingRulesResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """DeleteAomMappingRulesResponse - a model defined in huaweicloud sdk"""
+        """DeleteAomMappingRulesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param body: 
+        :type body: list[str]
+        """
         
         super(DeleteAomMappingRulesResponse, self).__init__()
 
@@ -56,7 +61,7 @@ class DeleteAomMappingRulesResponse(SdkResponse):
 
 
         :param body: The body of this DeleteAomMappingRulesResponse.
-        :type: list[str]
+        :type body: list[str]
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowCertificatesHttpsInfoRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ShowCertificatesHttpsInfoRequest:
     }
 
     def __init__(self, page_size=None, page_number=None, domain_name=None, user_domain_id=None, enterprise_project_id=None):
-        """ShowCertificatesHttpsInfoRequest - a model defined in huaweicloud sdk"""
+        """ShowCertificatesHttpsInfoRequest
+
+        The model defined in huaweicloud sdk
+
+        :param page_size: 每页的数量，取值范围1-10000，不设值时默认值为30。
+        :type page_size: int
+        :param page_number: 查询的页码。取值范围1-65535，不设值时默认值为1。
+        :type page_number: int
+        :param domain_name: 加速域名。
+        :type domain_name: str
+        :param user_domain_id: 域名所属用户的domain_id。
+        :type user_domain_id: str
+        :param enterprise_project_id: 企业项目ID。该参数仅对开启了企业项目功能的用户生效，不传表示查询default项目。\&quot;ALL\&quot;表示查询所有该用户已授权项目的资源。注意：当使用子账号调用接口时，该参数必传。
+        :type enterprise_project_id: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class ShowCertificatesHttpsInfoRequest:
         每页的数量，取值范围1-10000，不设值时默认值为30。
 
         :param page_size: The page_size of this ShowCertificatesHttpsInfoRequest.
-        :type: int
+        :type page_size: int
         """
         self._page_size = page_size
 
@@ -100,7 +113,7 @@ class ShowCertificatesHttpsInfoRequest:
         查询的页码。取值范围1-65535，不设值时默认值为1。
 
         :param page_number: The page_number of this ShowCertificatesHttpsInfoRequest.
-        :type: int
+        :type page_number: int
         """
         self._page_number = page_number
 
@@ -122,7 +135,7 @@ class ShowCertificatesHttpsInfoRequest:
         加速域名。
 
         :param domain_name: The domain_name of this ShowCertificatesHttpsInfoRequest.
-        :type: str
+        :type domain_name: str
         """
         self._domain_name = domain_name
 
@@ -144,7 +157,7 @@ class ShowCertificatesHttpsInfoRequest:
         域名所属用户的domain_id。
 
         :param user_domain_id: The user_domain_id of this ShowCertificatesHttpsInfoRequest.
-        :type: str
+        :type user_domain_id: str
         """
         self._user_domain_id = user_domain_id
 
@@ -166,7 +179,7 @@ class ShowCertificatesHttpsInfoRequest:
         企业项目ID。该参数仅对开启了企业项目功能的用户生效，不传表示查询default项目。\"ALL\"表示查询所有该用户已授权项目的资源。注意：当使用子账号调用接口时，该参数必传。
 
         :param enterprise_project_id: The enterprise_project_id of this ShowCertificatesHttpsInfoRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 

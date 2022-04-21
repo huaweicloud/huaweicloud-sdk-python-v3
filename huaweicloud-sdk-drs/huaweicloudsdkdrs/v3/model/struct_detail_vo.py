@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StructDetailVO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class StructDetailVO:
     }
 
     def __init__(self, progress=None, src_db=None, src_tb=None, dst_db=None, dst_tb=None):
-        """StructDetailVO - a model defined in huaweicloud sdk"""
+        """StructDetailVO
+
+        The model defined in huaweicloud sdk
+
+        :param progress: 进度
+        :type progress: int
+        :param src_db: 源数据库名称
+        :type src_db: str
+        :param src_tb: 源对象名称
+        :type src_tb: str
+        :param dst_db: 目标数据库名称
+        :type dst_db: str
+        :param dst_tb: 目标对象名称
+        :type dst_tb: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class StructDetailVO:
         进度
 
         :param progress: The progress of this StructDetailVO.
-        :type: int
+        :type progress: int
         """
         self._progress = progress
 
@@ -100,7 +113,7 @@ class StructDetailVO:
         源数据库名称
 
         :param src_db: The src_db of this StructDetailVO.
-        :type: str
+        :type src_db: str
         """
         self._src_db = src_db
 
@@ -122,7 +135,7 @@ class StructDetailVO:
         源对象名称
 
         :param src_tb: The src_tb of this StructDetailVO.
-        :type: str
+        :type src_tb: str
         """
         self._src_tb = src_tb
 
@@ -144,7 +157,7 @@ class StructDetailVO:
         目标数据库名称
 
         :param dst_db: The dst_db of this StructDetailVO.
-        :type: str
+        :type dst_db: str
         """
         self._dst_db = dst_db
 
@@ -166,7 +179,7 @@ class StructDetailVO:
         目标对象名称
 
         :param dst_tb: The dst_tb of this StructDetailVO.
-        :type: str
+        :type dst_tb: str
         """
         self._dst_tb = dst_tb
 

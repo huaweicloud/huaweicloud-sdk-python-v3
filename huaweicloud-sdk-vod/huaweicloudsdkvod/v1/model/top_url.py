@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TopUrl:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class TopUrl:
     }
 
     def __init__(self, value=None, asset_id=None, title=None, duration=None, size=None):
-        """TopUrl - a model defined in huaweicloud sdk"""
+        """TopUrl
+
+        The model defined in huaweicloud sdk
+
+        :param value: 总播放次数。
+        :type value: int
+        :param asset_id: 媒资ID。
+        :type asset_id: str
+        :param title: 媒资名称。
+        :type title: str
+        :param duration: 媒资时长。  单位：秒。
+        :type duration: int
+        :param size: 媒资原始大小。  单位：字节。
+        :type size: int
+        """
         
         
 
@@ -78,7 +91,7 @@ class TopUrl:
         总播放次数。
 
         :param value: The value of this TopUrl.
-        :type: int
+        :type value: int
         """
         self._value = value
 
@@ -100,7 +113,7 @@ class TopUrl:
         媒资ID。
 
         :param asset_id: The asset_id of this TopUrl.
-        :type: str
+        :type asset_id: str
         """
         self._asset_id = asset_id
 
@@ -122,7 +135,7 @@ class TopUrl:
         媒资名称。
 
         :param title: The title of this TopUrl.
-        :type: str
+        :type title: str
         """
         self._title = title
 
@@ -144,7 +157,7 @@ class TopUrl:
         媒资时长。  单位：秒。
 
         :param duration: The duration of this TopUrl.
-        :type: int
+        :type duration: int
         """
         self._duration = duration
 
@@ -166,7 +179,7 @@ class TopUrl:
         媒资原始大小。  单位：字节。
 
         :param size: The size of this TopUrl.
-        :type: int
+        :type size: int
         """
         self._size = size
 

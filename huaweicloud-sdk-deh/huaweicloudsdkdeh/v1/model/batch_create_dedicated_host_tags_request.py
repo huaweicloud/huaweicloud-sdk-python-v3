@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchCreateDedicatedHostTagsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchCreateDedicatedHostTagsRequest:
     }
 
     def __init__(self, dedicated_host_id=None, body=None):
-        """BatchCreateDedicatedHostTagsRequest - a model defined in huaweicloud sdk"""
+        """BatchCreateDedicatedHostTagsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param dedicated_host_id: 专属主机ID。  可以从专属主机控制台查询，或者通过调用查询专属主机列表API获取。
+        :type dedicated_host_id: str
+        :param body: Body of the BatchCreateDedicatedHostTagsRequest
+        :type body: :class:`huaweicloudsdkdeh.v1.ReqSetOrDeleteTags`
+        """
         
         
 
@@ -62,7 +69,7 @@ class BatchCreateDedicatedHostTagsRequest:
         专属主机ID。  可以从专属主机控制台查询，或者通过调用查询专属主机列表API获取。
 
         :param dedicated_host_id: The dedicated_host_id of this BatchCreateDedicatedHostTagsRequest.
-        :type: str
+        :type dedicated_host_id: str
         """
         self._dedicated_host_id = dedicated_host_id
 
@@ -72,7 +79,7 @@ class BatchCreateDedicatedHostTagsRequest:
 
 
         :return: The body of this BatchCreateDedicatedHostTagsRequest.
-        :rtype: ReqSetOrDeleteTags
+        :rtype: :class:`huaweicloudsdkdeh.v1.ReqSetOrDeleteTags`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class BatchCreateDedicatedHostTagsRequest:
 
 
         :param body: The body of this BatchCreateDedicatedHostTagsRequest.
-        :type: ReqSetOrDeleteTags
+        :type body: :class:`huaweicloudsdkdeh.v1.ReqSetOrDeleteTags`
         """
         self._body = body
 

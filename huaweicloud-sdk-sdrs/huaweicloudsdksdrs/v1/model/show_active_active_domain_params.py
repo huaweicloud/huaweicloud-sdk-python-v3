@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowActiveActiveDomainParams:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ShowActiveActiveDomainParams:
     }
 
     def __init__(self, id=None, name=None, description=None, sold_out=None, local_replication_cluster=None, remote_replication_cluster=None):
-        """ShowActiveActiveDomainParams - a model defined in huaweicloud sdk"""
+        """ShowActiveActiveDomainParams
+
+        The model defined in huaweicloud sdk
+
+        :param id: 双活域ID。
+        :type id: str
+        :param name: 双活域名称。
+        :type name: str
+        :param description: 双活域描述。
+        :type description: str
+        :param sold_out: 表示该双活域下的资源是否售罄。
+        :type sold_out: bool
+        :param local_replication_cluster: 
+        :type local_replication_cluster: :class:`huaweicloudsdksdrs.v1.ReplicationClusterParams`
+        :param remote_replication_cluster: 
+        :type remote_replication_cluster: :class:`huaweicloudsdksdrs.v1.ReplicationClusterParams`
+        """
         
         
 
@@ -77,7 +92,7 @@ class ShowActiveActiveDomainParams:
         双活域ID。
 
         :param id: The id of this ShowActiveActiveDomainParams.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -99,7 +114,7 @@ class ShowActiveActiveDomainParams:
         双活域名称。
 
         :param name: The name of this ShowActiveActiveDomainParams.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -121,7 +136,7 @@ class ShowActiveActiveDomainParams:
         双活域描述。
 
         :param description: The description of this ShowActiveActiveDomainParams.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -143,7 +158,7 @@ class ShowActiveActiveDomainParams:
         表示该双活域下的资源是否售罄。
 
         :param sold_out: The sold_out of this ShowActiveActiveDomainParams.
-        :type: bool
+        :type sold_out: bool
         """
         self._sold_out = sold_out
 
@@ -153,7 +168,7 @@ class ShowActiveActiveDomainParams:
 
 
         :return: The local_replication_cluster of this ShowActiveActiveDomainParams.
-        :rtype: ReplicationClusterParams
+        :rtype: :class:`huaweicloudsdksdrs.v1.ReplicationClusterParams`
         """
         return self._local_replication_cluster
 
@@ -163,7 +178,7 @@ class ShowActiveActiveDomainParams:
 
 
         :param local_replication_cluster: The local_replication_cluster of this ShowActiveActiveDomainParams.
-        :type: ReplicationClusterParams
+        :type local_replication_cluster: :class:`huaweicloudsdksdrs.v1.ReplicationClusterParams`
         """
         self._local_replication_cluster = local_replication_cluster
 
@@ -173,7 +188,7 @@ class ShowActiveActiveDomainParams:
 
 
         :return: The remote_replication_cluster of this ShowActiveActiveDomainParams.
-        :rtype: ReplicationClusterParams
+        :rtype: :class:`huaweicloudsdksdrs.v1.ReplicationClusterParams`
         """
         return self._remote_replication_cluster
 
@@ -183,7 +198,7 @@ class ShowActiveActiveDomainParams:
 
 
         :param remote_replication_cluster: The remote_replication_cluster of this ShowActiveActiveDomainParams.
-        :type: ReplicationClusterParams
+        :type remote_replication_cluster: :class:`huaweicloudsdksdrs.v1.ReplicationClusterParams`
         """
         self._remote_replication_cluster = remote_replication_cluster
 

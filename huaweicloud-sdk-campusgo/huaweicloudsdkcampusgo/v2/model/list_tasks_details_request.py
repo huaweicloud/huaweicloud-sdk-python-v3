@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTasksDetailsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class ListTasksDetailsRequest:
     }
 
     def __init__(self, service_name=None, service_version=None, state=None, name_like=None, id_like=None, created_since=None, created_until=None, order=None, offset=None, limit=None):
-        """ListTasksDetailsRequest - a model defined in huaweicloud sdk"""
+        """ListTasksDetailsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param service_name: 服务名称
+        :type service_name: str
+        :param service_version: 目标服务作业对应的服务版本号
+        :type service_version: str
+        :param state: 目标服务作业的状态，分别为PENDING（等待中），RECOVERING（恢复中），STARTING（启动中），UPGRADING（升级中），CREATE_FAILED（创建失败），START_FAILED（启动失败），RUNNING（运行中），STOPPING（停止中），STOPPED（已停止），ABNORMAL（异常），SUCCEEDED（运行成功），FAILED（运行失败），DELETING（删除中），FREEZING（冻结中），FROZEN（已冻结）
+        :type state: str
+        :param name_like: 目标服务作业的名称，支持模糊匹配
+        :type name_like: str
+        :param id_like: 目标服务作业的ID，支持模糊匹配
+        :type id_like: str
+        :param created_since: 目标服务作业的创建起始时间
+        :type created_since: int
+        :param created_until: 目标服务作业的创建截止时间
+        :type created_until: int
+        :param order: 展示服务作业时的排序字段和顺序，分别为name:ASC（按名称顺序排序），name:DESC（按名称倒序排序），created_at:ASC（按创建时间正序排序），created_at:DESC（按创建时间倒序排序），updated_at:ASC（按更新时间正序排序），updated_at:DESC（按更新时间倒序排序）
+        :type order: str
+        :param offset: 首个展示的服务作业的偏移量
+        :type offset: int
+        :param limit: 展示服务作业的数量
+        :type limit: int
+        """
         
         
 
@@ -102,7 +125,7 @@ class ListTasksDetailsRequest:
         服务名称
 
         :param service_name: The service_name of this ListTasksDetailsRequest.
-        :type: str
+        :type service_name: str
         """
         self._service_name = service_name
 
@@ -124,7 +147,7 @@ class ListTasksDetailsRequest:
         目标服务作业对应的服务版本号
 
         :param service_version: The service_version of this ListTasksDetailsRequest.
-        :type: str
+        :type service_version: str
         """
         self._service_version = service_version
 
@@ -146,7 +169,7 @@ class ListTasksDetailsRequest:
         目标服务作业的状态，分别为PENDING（等待中），RECOVERING（恢复中），STARTING（启动中），UPGRADING（升级中），CREATE_FAILED（创建失败），START_FAILED（启动失败），RUNNING（运行中），STOPPING（停止中），STOPPED（已停止），ABNORMAL（异常），SUCCEEDED（运行成功），FAILED（运行失败），DELETING（删除中），FREEZING（冻结中），FROZEN（已冻结）
 
         :param state: The state of this ListTasksDetailsRequest.
-        :type: str
+        :type state: str
         """
         self._state = state
 
@@ -168,7 +191,7 @@ class ListTasksDetailsRequest:
         目标服务作业的名称，支持模糊匹配
 
         :param name_like: The name_like of this ListTasksDetailsRequest.
-        :type: str
+        :type name_like: str
         """
         self._name_like = name_like
 
@@ -190,7 +213,7 @@ class ListTasksDetailsRequest:
         目标服务作业的ID，支持模糊匹配
 
         :param id_like: The id_like of this ListTasksDetailsRequest.
-        :type: str
+        :type id_like: str
         """
         self._id_like = id_like
 
@@ -212,7 +235,7 @@ class ListTasksDetailsRequest:
         目标服务作业的创建起始时间
 
         :param created_since: The created_since of this ListTasksDetailsRequest.
-        :type: int
+        :type created_since: int
         """
         self._created_since = created_since
 
@@ -234,7 +257,7 @@ class ListTasksDetailsRequest:
         目标服务作业的创建截止时间
 
         :param created_until: The created_until of this ListTasksDetailsRequest.
-        :type: int
+        :type created_until: int
         """
         self._created_until = created_until
 
@@ -256,7 +279,7 @@ class ListTasksDetailsRequest:
         展示服务作业时的排序字段和顺序，分别为name:ASC（按名称顺序排序），name:DESC（按名称倒序排序），created_at:ASC（按创建时间正序排序），created_at:DESC（按创建时间倒序排序），updated_at:ASC（按更新时间正序排序），updated_at:DESC（按更新时间倒序排序）
 
         :param order: The order of this ListTasksDetailsRequest.
-        :type: str
+        :type order: str
         """
         self._order = order
 
@@ -278,7 +301,7 @@ class ListTasksDetailsRequest:
         首个展示的服务作业的偏移量
 
         :param offset: The offset of this ListTasksDetailsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -300,7 +323,7 @@ class ListTasksDetailsRequest:
         展示服务作业的数量
 
         :param limit: The limit of this ListTasksDetailsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

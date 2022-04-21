@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteEndpointRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteEndpointRequest:
     }
 
     def __init__(self, vpc_endpoint_id=None):
-        """DeleteEndpointRequest - a model defined in huaweicloud sdk"""
+        """DeleteEndpointRequest
+
+        The model defined in huaweicloud sdk
+
+        :param vpc_endpoint_id: 终端节点的ID。
+        :type vpc_endpoint_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteEndpointRequest:
         终端节点的ID。
 
         :param vpc_endpoint_id: The vpc_endpoint_id of this DeleteEndpointRequest.
-        :type: str
+        :type vpc_endpoint_id: str
         """
         self._vpc_endpoint_id = vpc_endpoint_id
 

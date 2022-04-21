@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QosInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class QosInfo:
     }
 
     def __init__(self, type=None, send=None, receive=None, cpu=None):
-        """QosInfo - a model defined in huaweicloud sdk"""
+        """QosInfo
+
+        The model defined in huaweicloud sdk
+
+        :param type: Qos类型 - aduio：音频 - video：视频 - screen：屏幕共享 - cpu：cpu
+        :type type: str
+        :param send: 
+        :type send: :class:`huaweicloudsdkmeeting.v1.QosSendReceiveInfo`
+        :param receive: 
+        :type receive: :class:`huaweicloudsdkmeeting.v1.QosSendReceiveInfo`
+        :param cpu: 
+        :type cpu: :class:`huaweicloudsdkmeeting.v1.QosCpuInfo`
+        """
         
         
 
@@ -73,7 +84,7 @@ class QosInfo:
         Qos类型 - aduio：音频 - video：视频 - screen：屏幕共享 - cpu：cpu
 
         :param type: The type of this QosInfo.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -83,7 +94,7 @@ class QosInfo:
 
 
         :return: The send of this QosInfo.
-        :rtype: QosSendReceiveInfo
+        :rtype: :class:`huaweicloudsdkmeeting.v1.QosSendReceiveInfo`
         """
         return self._send
 
@@ -93,7 +104,7 @@ class QosInfo:
 
 
         :param send: The send of this QosInfo.
-        :type: QosSendReceiveInfo
+        :type send: :class:`huaweicloudsdkmeeting.v1.QosSendReceiveInfo`
         """
         self._send = send
 
@@ -103,7 +114,7 @@ class QosInfo:
 
 
         :return: The receive of this QosInfo.
-        :rtype: QosSendReceiveInfo
+        :rtype: :class:`huaweicloudsdkmeeting.v1.QosSendReceiveInfo`
         """
         return self._receive
 
@@ -113,7 +124,7 @@ class QosInfo:
 
 
         :param receive: The receive of this QosInfo.
-        :type: QosSendReceiveInfo
+        :type receive: :class:`huaweicloudsdkmeeting.v1.QosSendReceiveInfo`
         """
         self._receive = receive
 
@@ -123,7 +134,7 @@ class QosInfo:
 
 
         :return: The cpu of this QosInfo.
-        :rtype: QosCpuInfo
+        :rtype: :class:`huaweicloudsdkmeeting.v1.QosCpuInfo`
         """
         return self._cpu
 
@@ -133,7 +144,7 @@ class QosInfo:
 
 
         :param cpu: The cpu of this QosInfo.
-        :type: QosCpuInfo
+        :type cpu: :class:`huaweicloudsdkmeeting.v1.QosCpuInfo`
         """
         self._cpu = cpu
 

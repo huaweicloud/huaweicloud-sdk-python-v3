@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Flavor:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class Flavor:
     }
 
     def __init__(self, id=None, name=None, disk=None, ram=None, vcpus=None, os_extra_specs=None, os_flavor_access_is_public=None):
-        """Flavor - a model defined in huaweicloud sdk"""
+        """Flavor
+
+        The model defined in huaweicloud sdk
+
+        :param id: 边缘实例规格的ID。
+        :type id: str
+        :param name: 边缘实例规格的名称。
+        :type name: str
+        :param disk: 边缘实例规格对应要求系统盘大小。  当前未使用该参数，缺省值为0。
+        :type disk: str
+        :param ram: 边缘实例规格对应的内存大小，单位为MB。
+        :type ram: int
+        :param vcpus: 边缘实例规格对应的CPU核数。
+        :type vcpus: str
+        :param os_extra_specs: 
+        :type os_extra_specs: :class:`huaweicloudsdkiec.v1.OsExtraSpecs`
+        :param os_flavor_access_is_public: 扩展属性，flavor是否给所有租户使用。
+        :type os_flavor_access_is_public: bool
+        """
         
         
 
@@ -88,7 +105,7 @@ class Flavor:
         边缘实例规格的ID。
 
         :param id: The id of this Flavor.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -110,7 +127,7 @@ class Flavor:
         边缘实例规格的名称。
 
         :param name: The name of this Flavor.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -132,7 +149,7 @@ class Flavor:
         边缘实例规格对应要求系统盘大小。  当前未使用该参数，缺省值为0。
 
         :param disk: The disk of this Flavor.
-        :type: str
+        :type disk: str
         """
         self._disk = disk
 
@@ -154,7 +171,7 @@ class Flavor:
         边缘实例规格对应的内存大小，单位为MB。
 
         :param ram: The ram of this Flavor.
-        :type: int
+        :type ram: int
         """
         self._ram = ram
 
@@ -176,7 +193,7 @@ class Flavor:
         边缘实例规格对应的CPU核数。
 
         :param vcpus: The vcpus of this Flavor.
-        :type: str
+        :type vcpus: str
         """
         self._vcpus = vcpus
 
@@ -186,7 +203,7 @@ class Flavor:
 
 
         :return: The os_extra_specs of this Flavor.
-        :rtype: OsExtraSpecs
+        :rtype: :class:`huaweicloudsdkiec.v1.OsExtraSpecs`
         """
         return self._os_extra_specs
 
@@ -196,7 +213,7 @@ class Flavor:
 
 
         :param os_extra_specs: The os_extra_specs of this Flavor.
-        :type: OsExtraSpecs
+        :type os_extra_specs: :class:`huaweicloudsdkiec.v1.OsExtraSpecs`
         """
         self._os_extra_specs = os_extra_specs
 
@@ -218,7 +235,7 @@ class Flavor:
         扩展属性，flavor是否给所有租户使用。
 
         :param os_flavor_access_is_public: The os_flavor_access_is_public of this Flavor.
-        :type: bool
+        :type os_flavor_access_is_public: bool
         """
         self._os_flavor_access_is_public = os_flavor_access_is_public
 

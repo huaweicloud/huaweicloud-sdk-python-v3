@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowQosThresholdResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ShowQosThresholdResponse(SdkResponse):
     }
 
     def __init__(self, latency=None, jitter=None, packet_loss=None, client_cpu_max=None, system_cpu_max=None):
-        """ShowQosThresholdResponse - a model defined in huaweicloud sdk"""
+        """ShowQosThresholdResponse
+
+        The model defined in huaweicloud sdk
+
+        :param latency: 
+        :type latency: :class:`huaweicloudsdkmeeting.v1.ThresholdData`
+        :param jitter: 
+        :type jitter: :class:`huaweicloudsdkmeeting.v1.ThresholdData`
+        :param packet_loss: 
+        :type packet_loss: :class:`huaweicloudsdkmeeting.v1.PacketThresholdData`
+        :param client_cpu_max: 
+        :type client_cpu_max: :class:`huaweicloudsdkmeeting.v1.CPUThresholdData`
+        :param system_cpu_max: 
+        :type system_cpu_max: :class:`huaweicloudsdkmeeting.v1.CPUThresholdData`
+        """
         
         super(ShowQosThresholdResponse, self).__init__()
 
@@ -66,7 +79,7 @@ class ShowQosThresholdResponse(SdkResponse):
 
 
         :return: The latency of this ShowQosThresholdResponse.
-        :rtype: ThresholdData
+        :rtype: :class:`huaweicloudsdkmeeting.v1.ThresholdData`
         """
         return self._latency
 
@@ -76,7 +89,7 @@ class ShowQosThresholdResponse(SdkResponse):
 
 
         :param latency: The latency of this ShowQosThresholdResponse.
-        :type: ThresholdData
+        :type latency: :class:`huaweicloudsdkmeeting.v1.ThresholdData`
         """
         self._latency = latency
 
@@ -86,7 +99,7 @@ class ShowQosThresholdResponse(SdkResponse):
 
 
         :return: The jitter of this ShowQosThresholdResponse.
-        :rtype: ThresholdData
+        :rtype: :class:`huaweicloudsdkmeeting.v1.ThresholdData`
         """
         return self._jitter
 
@@ -96,7 +109,7 @@ class ShowQosThresholdResponse(SdkResponse):
 
 
         :param jitter: The jitter of this ShowQosThresholdResponse.
-        :type: ThresholdData
+        :type jitter: :class:`huaweicloudsdkmeeting.v1.ThresholdData`
         """
         self._jitter = jitter
 
@@ -106,7 +119,7 @@ class ShowQosThresholdResponse(SdkResponse):
 
 
         :return: The packet_loss of this ShowQosThresholdResponse.
-        :rtype: PacketThresholdData
+        :rtype: :class:`huaweicloudsdkmeeting.v1.PacketThresholdData`
         """
         return self._packet_loss
 
@@ -116,7 +129,7 @@ class ShowQosThresholdResponse(SdkResponse):
 
 
         :param packet_loss: The packet_loss of this ShowQosThresholdResponse.
-        :type: PacketThresholdData
+        :type packet_loss: :class:`huaweicloudsdkmeeting.v1.PacketThresholdData`
         """
         self._packet_loss = packet_loss
 
@@ -126,7 +139,7 @@ class ShowQosThresholdResponse(SdkResponse):
 
 
         :return: The client_cpu_max of this ShowQosThresholdResponse.
-        :rtype: CPUThresholdData
+        :rtype: :class:`huaweicloudsdkmeeting.v1.CPUThresholdData`
         """
         return self._client_cpu_max
 
@@ -136,7 +149,7 @@ class ShowQosThresholdResponse(SdkResponse):
 
 
         :param client_cpu_max: The client_cpu_max of this ShowQosThresholdResponse.
-        :type: CPUThresholdData
+        :type client_cpu_max: :class:`huaweicloudsdkmeeting.v1.CPUThresholdData`
         """
         self._client_cpu_max = client_cpu_max
 
@@ -146,7 +159,7 @@ class ShowQosThresholdResponse(SdkResponse):
 
 
         :return: The system_cpu_max of this ShowQosThresholdResponse.
-        :rtype: CPUThresholdData
+        :rtype: :class:`huaweicloudsdkmeeting.v1.CPUThresholdData`
         """
         return self._system_cpu_max
 
@@ -156,7 +169,7 @@ class ShowQosThresholdResponse(SdkResponse):
 
 
         :param system_cpu_max: The system_cpu_max of this ShowQosThresholdResponse.
-        :type: CPUThresholdData
+        :type system_cpu_max: :class:`huaweicloudsdkmeeting.v1.CPUThresholdData`
         """
         self._system_cpu_max = system_cpu_max
 

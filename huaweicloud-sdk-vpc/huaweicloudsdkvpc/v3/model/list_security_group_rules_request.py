@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSecurityGroupRulesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class ListSecurityGroupRulesRequest:
     }
 
     def __init__(self, limit=None, marker=None, id=None, security_group_id=None, protocol=None, description=None, remote_group_id=None, direction=None, action=None):
-        """ListSecurityGroupRulesRequest - a model defined in huaweicloud sdk"""
+        """ListSecurityGroupRulesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 功能说明：每页返回个数 取值范围：0-2000
+        :type limit: int
+        :param marker: 分页查询起始的资源ID，为空时查询第一页
+        :type marker: str
+        :param id: 功能说明：安全组规则ID，支持多个ID过滤
+        :type id: list[str]
+        :param security_group_id: 功能说明：安全组规则所属安全组ID，支持多个ID过滤
+        :type security_group_id: list[str]
+        :param protocol: 功能说明：安全组规则协议，支持多条过滤
+        :type protocol: list[str]
+        :param description: 功能说明：安全组规则的描述，支持多个描述同时过滤
+        :type description: list[str]
+        :param remote_group_id: 功能说明：远端安全组ID，支持多ID过滤
+        :type remote_group_id: list[str]
+        :param direction: 功能说明：安全组规则方向
+        :type direction: str
+        :param action: 功能说明：安全组规则生效策略
+        :type action: str
+        """
         
         
 
@@ -98,7 +119,7 @@ class ListSecurityGroupRulesRequest:
         功能说明：每页返回个数 取值范围：0-2000
 
         :param limit: The limit of this ListSecurityGroupRulesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -120,7 +141,7 @@ class ListSecurityGroupRulesRequest:
         分页查询起始的资源ID，为空时查询第一页
 
         :param marker: The marker of this ListSecurityGroupRulesRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -142,7 +163,7 @@ class ListSecurityGroupRulesRequest:
         功能说明：安全组规则ID，支持多个ID过滤
 
         :param id: The id of this ListSecurityGroupRulesRequest.
-        :type: list[str]
+        :type id: list[str]
         """
         self._id = id
 
@@ -164,7 +185,7 @@ class ListSecurityGroupRulesRequest:
         功能说明：安全组规则所属安全组ID，支持多个ID过滤
 
         :param security_group_id: The security_group_id of this ListSecurityGroupRulesRequest.
-        :type: list[str]
+        :type security_group_id: list[str]
         """
         self._security_group_id = security_group_id
 
@@ -186,7 +207,7 @@ class ListSecurityGroupRulesRequest:
         功能说明：安全组规则协议，支持多条过滤
 
         :param protocol: The protocol of this ListSecurityGroupRulesRequest.
-        :type: list[str]
+        :type protocol: list[str]
         """
         self._protocol = protocol
 
@@ -208,7 +229,7 @@ class ListSecurityGroupRulesRequest:
         功能说明：安全组规则的描述，支持多个描述同时过滤
 
         :param description: The description of this ListSecurityGroupRulesRequest.
-        :type: list[str]
+        :type description: list[str]
         """
         self._description = description
 
@@ -230,7 +251,7 @@ class ListSecurityGroupRulesRequest:
         功能说明：远端安全组ID，支持多ID过滤
 
         :param remote_group_id: The remote_group_id of this ListSecurityGroupRulesRequest.
-        :type: list[str]
+        :type remote_group_id: list[str]
         """
         self._remote_group_id = remote_group_id
 
@@ -252,7 +273,7 @@ class ListSecurityGroupRulesRequest:
         功能说明：安全组规则方向
 
         :param direction: The direction of this ListSecurityGroupRulesRequest.
-        :type: str
+        :type direction: str
         """
         self._direction = direction
 
@@ -274,7 +295,7 @@ class ListSecurityGroupRulesRequest:
         功能说明：安全组规则生效策略
 
         :param action: The action of this ListSecurityGroupRulesRequest.
-        :type: str
+        :type action: str
         """
         self._action = action
 

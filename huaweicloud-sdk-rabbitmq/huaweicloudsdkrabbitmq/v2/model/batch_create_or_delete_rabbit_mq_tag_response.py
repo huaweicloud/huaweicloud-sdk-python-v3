@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchCreateOrDeleteRabbitMqTagResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class BatchCreateOrDeleteRabbitMqTagResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchCreateOrDeleteRabbitMqTagResponse - a model defined in huaweicloud sdk"""
+        """BatchCreateOrDeleteRabbitMqTagResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(BatchCreateOrDeleteRabbitMqTagResponse, self).__init__()
         self.discriminator = None

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OperateAuditLogRequestV3Body:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class OperateAuditLogRequestV3Body:
     }
 
     def __init__(self, switch_status=None):
-        """OperateAuditLogRequestV3Body - a model defined in huaweicloud sdk"""
+        """OperateAuditLogRequestV3Body
+
+        The model defined in huaweicloud sdk
+
+        :param switch_status: 审计日志开关状态。取值：ON|OFF
+        :type switch_status: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class OperateAuditLogRequestV3Body:
         审计日志开关状态。取值：ON|OFF
 
         :param switch_status: The switch_status of this OperateAuditLogRequestV3Body.
-        :type: str
+        :type switch_status: str
         """
         self._switch_status = switch_status
 

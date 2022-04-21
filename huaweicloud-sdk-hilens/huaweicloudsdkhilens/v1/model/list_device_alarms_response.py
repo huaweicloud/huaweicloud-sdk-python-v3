@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDeviceAlarmsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListDeviceAlarmsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, data=None):
-        """ListDeviceAlarmsResponse - a model defined in huaweicloud sdk"""
+        """ListDeviceAlarmsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 满足条件的设备告警总数
+        :type total: int
+        :param data: 
+        :type data: list[:class:`huaweicloudsdkhilens.v1.GetDeviceAlarmArrayObject`]
+        """
         
         super(ListDeviceAlarmsResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListDeviceAlarmsResponse(SdkResponse):
         满足条件的设备告警总数
 
         :param total: The total of this ListDeviceAlarmsResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -73,7 +80,7 @@ class ListDeviceAlarmsResponse(SdkResponse):
 
 
         :return: The data of this ListDeviceAlarmsResponse.
-        :rtype: list[GetDeviceAlarmArrayObject]
+        :rtype: list[:class:`huaweicloudsdkhilens.v1.GetDeviceAlarmArrayObject`]
         """
         return self._data
 
@@ -83,7 +90,7 @@ class ListDeviceAlarmsResponse(SdkResponse):
 
 
         :param data: The data of this ListDeviceAlarmsResponse.
-        :type: list[GetDeviceAlarmArrayObject]
+        :type data: list[:class:`huaweicloudsdkhilens.v1.GetDeviceAlarmArrayObject`]
         """
         self._data = data
 

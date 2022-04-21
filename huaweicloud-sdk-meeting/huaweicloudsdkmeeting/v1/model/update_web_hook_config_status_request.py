@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateWebHookConfigStatusRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateWebHookConfigStatusRequest:
     }
 
     def __init__(self, id=None, status=None):
-        """UpdateWebHookConfigStatusRequest - a model defined in huaweicloud sdk"""
+        """UpdateWebHookConfigStatusRequest
+
+        The model defined in huaweicloud sdk
+
+        :param id: 订阅配置记录id
+        :type id: str
+        :param status: 连接状态： 0表示已启用 ；1表示未启动； 2表示已锁定
+        :type status: int
+        """
         
         
 
@@ -61,7 +68,7 @@ class UpdateWebHookConfigStatusRequest:
         订阅配置记录id
 
         :param id: The id of this UpdateWebHookConfigStatusRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -83,7 +90,7 @@ class UpdateWebHookConfigStatusRequest:
         连接状态： 0表示已启用 ；1表示未启动； 2表示已锁定
 
         :param status: The status of this UpdateWebHookConfigStatusRequest.
-        :type: int
+        :type status: int
         """
         self._status = status
 

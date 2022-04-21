@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ProductTemplatesCalculation:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ProductTemplatesCalculation:
     }
 
     def __init__(self, product_templates_numbers=None):
-        """ProductTemplatesCalculation - a model defined in huaweicloud sdk"""
+        """ProductTemplatesCalculation
+
+        The model defined in huaweicloud sdk
+
+        :param product_templates_numbers: 产品模板数量
+        :type product_templates_numbers: int
+        """
         
         
 
@@ -58,7 +63,7 @@ class ProductTemplatesCalculation:
         产品模板数量
 
         :param product_templates_numbers: The product_templates_numbers of this ProductTemplatesCalculation.
-        :type: int
+        :type product_templates_numbers: int
         """
         self._product_templates_numbers = product_templates_numbers
 

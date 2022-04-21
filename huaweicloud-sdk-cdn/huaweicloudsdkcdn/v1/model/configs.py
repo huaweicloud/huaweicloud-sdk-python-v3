@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Configs:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class Configs:
     }
 
     def __init__(self, origin_request_header=None, http_response_header=None, url_auth=None, https=None, sources=None, origin_protocol=None, force_redirect=None, compress=None):
-        """Configs - a model defined in huaweicloud sdk"""
+        """Configs
+
+        The model defined in huaweicloud sdk
+
+        :param origin_request_header: 回源请求头配置。
+        :type origin_request_header: list[:class:`huaweicloudsdkcdn.v1.OriginRequestHeader`]
+        :param http_response_header: http header配置。
+        :type http_response_header: list[:class:`huaweicloudsdkcdn.v1.HttpResponseHeader`]
+        :param url_auth: 
+        :type url_auth: :class:`huaweicloudsdkcdn.v1.UrlAuth`
+        :param https: 
+        :type https: :class:`huaweicloudsdkcdn.v1.HttpPutBody`
+        :param sources: 源站配置。
+        :type sources: list[:class:`huaweicloudsdkcdn.v1.SourcesConfig`]
+        :param origin_protocol: 回源协议（follow：协议跟随回源，http：HTTP回源(默认)，https：https回源）。
+        :type origin_protocol: str
+        :param force_redirect: 
+        :type force_redirect: :class:`huaweicloudsdkcdn.v1.ForceRedirectConfig`
+        :param compress: 
+        :type compress: :class:`huaweicloudsdkcdn.v1.Compress`
+        """
         
         
 
@@ -82,7 +101,7 @@ class Configs:
         回源请求头配置。
 
         :return: The origin_request_header of this Configs.
-        :rtype: list[OriginRequestHeader]
+        :rtype: list[:class:`huaweicloudsdkcdn.v1.OriginRequestHeader`]
         """
         return self._origin_request_header
 
@@ -93,7 +112,7 @@ class Configs:
         回源请求头配置。
 
         :param origin_request_header: The origin_request_header of this Configs.
-        :type: list[OriginRequestHeader]
+        :type origin_request_header: list[:class:`huaweicloudsdkcdn.v1.OriginRequestHeader`]
         """
         self._origin_request_header = origin_request_header
 
@@ -104,7 +123,7 @@ class Configs:
         http header配置。
 
         :return: The http_response_header of this Configs.
-        :rtype: list[HttpResponseHeader]
+        :rtype: list[:class:`huaweicloudsdkcdn.v1.HttpResponseHeader`]
         """
         return self._http_response_header
 
@@ -115,7 +134,7 @@ class Configs:
         http header配置。
 
         :param http_response_header: The http_response_header of this Configs.
-        :type: list[HttpResponseHeader]
+        :type http_response_header: list[:class:`huaweicloudsdkcdn.v1.HttpResponseHeader`]
         """
         self._http_response_header = http_response_header
 
@@ -125,7 +144,7 @@ class Configs:
 
 
         :return: The url_auth of this Configs.
-        :rtype: UrlAuth
+        :rtype: :class:`huaweicloudsdkcdn.v1.UrlAuth`
         """
         return self._url_auth
 
@@ -135,7 +154,7 @@ class Configs:
 
 
         :param url_auth: The url_auth of this Configs.
-        :type: UrlAuth
+        :type url_auth: :class:`huaweicloudsdkcdn.v1.UrlAuth`
         """
         self._url_auth = url_auth
 
@@ -145,7 +164,7 @@ class Configs:
 
 
         :return: The https of this Configs.
-        :rtype: HttpPutBody
+        :rtype: :class:`huaweicloudsdkcdn.v1.HttpPutBody`
         """
         return self._https
 
@@ -155,7 +174,7 @@ class Configs:
 
 
         :param https: The https of this Configs.
-        :type: HttpPutBody
+        :type https: :class:`huaweicloudsdkcdn.v1.HttpPutBody`
         """
         self._https = https
 
@@ -166,7 +185,7 @@ class Configs:
         源站配置。
 
         :return: The sources of this Configs.
-        :rtype: list[SourcesConfig]
+        :rtype: list[:class:`huaweicloudsdkcdn.v1.SourcesConfig`]
         """
         return self._sources
 
@@ -177,7 +196,7 @@ class Configs:
         源站配置。
 
         :param sources: The sources of this Configs.
-        :type: list[SourcesConfig]
+        :type sources: list[:class:`huaweicloudsdkcdn.v1.SourcesConfig`]
         """
         self._sources = sources
 
@@ -199,7 +218,7 @@ class Configs:
         回源协议（follow：协议跟随回源，http：HTTP回源(默认)，https：https回源）。
 
         :param origin_protocol: The origin_protocol of this Configs.
-        :type: str
+        :type origin_protocol: str
         """
         self._origin_protocol = origin_protocol
 
@@ -209,7 +228,7 @@ class Configs:
 
 
         :return: The force_redirect of this Configs.
-        :rtype: ForceRedirectConfig
+        :rtype: :class:`huaweicloudsdkcdn.v1.ForceRedirectConfig`
         """
         return self._force_redirect
 
@@ -219,7 +238,7 @@ class Configs:
 
 
         :param force_redirect: The force_redirect of this Configs.
-        :type: ForceRedirectConfig
+        :type force_redirect: :class:`huaweicloudsdkcdn.v1.ForceRedirectConfig`
         """
         self._force_redirect = force_redirect
 
@@ -229,7 +248,7 @@ class Configs:
 
 
         :return: The compress of this Configs.
-        :rtype: Compress
+        :rtype: :class:`huaweicloudsdkcdn.v1.Compress`
         """
         return self._compress
 
@@ -239,7 +258,7 @@ class Configs:
 
 
         :param compress: The compress of this Configs.
-        :type: Compress
+        :type compress: :class:`huaweicloudsdkcdn.v1.Compress`
         """
         self._compress = compress
 

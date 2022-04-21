@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TestPlanDetailCreator:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class TestPlanDetailCreator:
     }
 
     def __init__(self, id=None, nick_name=None, user_name=None):
-        """TestPlanDetailCreator - a model defined in huaweicloud sdk"""
+        """TestPlanDetailCreator
+
+        The model defined in huaweicloud sdk
+
+        :param id: 测试计划创建者id
+        :type id: str
+        :param nick_name: 测试计划创建者的昵称，当用户未设置昵称时不返回该字段
+        :type nick_name: str
+        :param user_name: 测试计划创建者的用户名称
+        :type user_name: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class TestPlanDetailCreator:
         测试计划创建者id
 
         :param id: The id of this TestPlanDetailCreator.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -90,7 +99,7 @@ class TestPlanDetailCreator:
         测试计划创建者的昵称，当用户未设置昵称时不返回该字段
 
         :param nick_name: The nick_name of this TestPlanDetailCreator.
-        :type: str
+        :type nick_name: str
         """
         self._nick_name = nick_name
 
@@ -112,7 +121,7 @@ class TestPlanDetailCreator:
         测试计划创建者的用户名称
 
         :param user_name: The user_name of this TestPlanDetailCreator.
-        :type: str
+        :type user_name: str
         """
         self._user_name = user_name
 

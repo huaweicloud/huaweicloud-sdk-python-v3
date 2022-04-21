@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExecuteTbSessionRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ExecuteTbSessionRequest:
     }
 
     def __init__(self, bot_id=None, session_id=None, body=None):
-        """ExecuteTbSessionRequest - a model defined in huaweicloud sdk"""
+        """ExecuteTbSessionRequest
+
+        The model defined in huaweicloud sdk
+
+        :param bot_id: 话务机器人ID
+        :type bot_id: str
+        :param session_id: 会话ID，在发起会话API的请求结果消息体response当中产生。
+        :type session_id: str
+        :param body: Body of the ExecuteTbSessionRequest
+        :type body: :class:`huaweicloudsdkcbs.v1.ExecuteTbSessionReq`
+        """
         
         
 
@@ -66,7 +75,7 @@ class ExecuteTbSessionRequest:
         话务机器人ID
 
         :param bot_id: The bot_id of this ExecuteTbSessionRequest.
-        :type: str
+        :type bot_id: str
         """
         self._bot_id = bot_id
 
@@ -88,7 +97,7 @@ class ExecuteTbSessionRequest:
         会话ID，在发起会话API的请求结果消息体response当中产生。
 
         :param session_id: The session_id of this ExecuteTbSessionRequest.
-        :type: str
+        :type session_id: str
         """
         self._session_id = session_id
 
@@ -98,7 +107,7 @@ class ExecuteTbSessionRequest:
 
 
         :return: The body of this ExecuteTbSessionRequest.
-        :rtype: ExecuteTbSessionReq
+        :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteTbSessionReq`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class ExecuteTbSessionRequest:
 
 
         :param body: The body of this ExecuteTbSessionRequest.
-        :type: ExecuteTbSessionReq
+        :type body: :class:`huaweicloudsdkcbs.v1.ExecuteTbSessionReq`
         """
         self._body = body
 

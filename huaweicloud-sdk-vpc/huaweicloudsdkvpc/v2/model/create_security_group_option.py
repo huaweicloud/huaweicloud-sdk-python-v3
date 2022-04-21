@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateSecurityGroupOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateSecurityGroupOption:
     }
 
     def __init__(self, name=None, vpc_id=None, enterprise_project_id=None):
-        """CreateSecurityGroupOption - a model defined in huaweicloud sdk"""
+        """CreateSecurityGroupOption
+
+        The model defined in huaweicloud sdk
+
+        :param name: 功能说明：安全组名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
+        :type name: str
+        :param vpc_id: 功能说明：安全组所在的vpc的资源标识
+        :type vpc_id: str
+        :param enterprise_project_id: 功能说明：企业项目ID。创建安全组时，给安全组绑定企业项目ID。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。 默认值：“0”
+        :type enterprise_project_id: str
+        """
         
         
 
@@ -67,7 +76,7 @@ class CreateSecurityGroupOption:
         功能说明：安全组名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
         :param name: The name of this CreateSecurityGroupOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -89,7 +98,7 @@ class CreateSecurityGroupOption:
         功能说明：安全组所在的vpc的资源标识
 
         :param vpc_id: The vpc_id of this CreateSecurityGroupOption.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -111,7 +120,7 @@ class CreateSecurityGroupOption:
         功能说明：企业项目ID。创建安全组时，给安全组绑定企业项目ID。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。 默认值：“0”
 
         :param enterprise_project_id: The enterprise_project_id of this CreateSecurityGroupOption.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 

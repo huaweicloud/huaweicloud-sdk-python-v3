@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchSetSpeedResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchSetSpeedResponse(SdkResponse):
     }
 
     def __init__(self, count=None, results=None):
-        """BatchSetSpeedResponse - a model defined in huaweicloud sdk"""
+        """BatchSetSpeedResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 总数
+        :type count: int
+        :param results: 批量修改任务返回列表
+        :type results: list[:class:`huaweicloudsdkdrs.v3.ModifyJobResp`]
+        """
         
         super(BatchSetSpeedResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class BatchSetSpeedResponse(SdkResponse):
         总数
 
         :param count: The count of this BatchSetSpeedResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -74,7 +81,7 @@ class BatchSetSpeedResponse(SdkResponse):
         批量修改任务返回列表
 
         :return: The results of this BatchSetSpeedResponse.
-        :rtype: list[ModifyJobResp]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.ModifyJobResp`]
         """
         return self._results
 
@@ -85,7 +92,7 @@ class BatchSetSpeedResponse(SdkResponse):
         批量修改任务返回列表
 
         :param results: The results of this BatchSetSpeedResponse.
-        :type: list[ModifyJobResp]
+        :type results: list[:class:`huaweicloudsdkdrs.v3.ModifyJobResp`]
         """
         self._results = results
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ReverseProtectionGroupRequestParams:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ReverseProtectionGroupRequestParams:
     }
 
     def __init__(self, priority_station=None):
-        """ReverseProtectionGroupRequestParams - a model defined in huaweicloud sdk"""
+        """ReverseProtectionGroupRequestParams
+
+        The model defined in huaweicloud sdk
+
+        :param priority_station: 切换方向。target：表示从创建保护组时指定的生产站点切换到创建保护组时指定的容灾站点。source：表示从创建保护组时指定的容灾站点切换到创建保护组时指定的生产站点。
+        :type priority_station: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ReverseProtectionGroupRequestParams:
         切换方向。target：表示从创建保护组时指定的生产站点切换到创建保护组时指定的容灾站点。source：表示从创建保护组时指定的容灾站点切换到创建保护组时指定的生产站点。
 
         :param priority_station: The priority_station of this ReverseProtectionGroupRequestParams.
-        :type: str
+        :type priority_station: str
         """
         self._priority_station = priority_station
 

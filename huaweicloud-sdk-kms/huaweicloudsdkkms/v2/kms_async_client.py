@@ -52,21 +52,17 @@ class KmsAsyncClient(Client):
         """批量添加删除密钥标签
 
         - 功能介绍：批量添加删除密钥标签。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchCreateKmsTagsRequest request
-        :return: BatchCreateKmsTagsResponse
+        :param request: Request instance for BatchCreateKmsTags
+        :type request: :class:`huaweicloudsdkkms.v2.BatchCreateKmsTagsRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.BatchCreateKmsTagsResponse`
         """
         return self.batch_create_kms_tags_with_http_info(request)
 
     def batch_create_kms_tags_with_http_info(self, request):
-        """批量添加删除密钥标签
-
-        - 功能介绍：批量添加删除密钥标签。
-
-        :param BatchCreateKmsTagsRequest request
-        :return: BatchCreateKmsTagsResponse
-        """
-
         all_params = ['key_id', 'batch_create_kms_tags_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -112,26 +108,23 @@ class KmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def cancel_grant_async(self, request):
         """撤销授权
 
-        - 功能介绍：撤销授权，授权用户撤销被授权用户操作密钥的权限。 - 说明：    - 创建密钥的用户才能撤销该密钥授权。
+        - 功能介绍：撤销授权，授权用户撤销被授权用户操作密钥的权限。
+        - 说明：
+           - 创建密钥的用户才能撤销该密钥授权。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CancelGrantRequest request
-        :return: CancelGrantResponse
+        :param request: Request instance for CancelGrant
+        :type request: :class:`huaweicloudsdkkms.v2.CancelGrantRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.CancelGrantResponse`
         """
         return self.cancel_grant_with_http_info(request)
 
     def cancel_grant_with_http_info(self, request):
-        """撤销授权
-
-        - 功能介绍：撤销授权，授权用户撤销被授权用户操作密钥的权限。 - 说明：    - 创建密钥的用户才能撤销该密钥授权。
-
-        :param CancelGrantRequest request
-        :return: CancelGrantResponse
-        """
-
         all_params = ['cancel_grant_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -175,26 +168,22 @@ class KmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def cancel_key_deletion_async(self, request):
         """取消计划删除密钥
 
-        - 功能介绍：取消计划删除密钥。 - 说明：密钥处于“计划删除”状态才能取消计划删除密钥。
+        - 功能介绍：取消计划删除密钥。
+        - 说明：密钥处于“计划删除”状态才能取消计划删除密钥。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CancelKeyDeletionRequest request
-        :return: CancelKeyDeletionResponse
+        :param request: Request instance for CancelKeyDeletion
+        :type request: :class:`huaweicloudsdkkms.v2.CancelKeyDeletionRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.CancelKeyDeletionResponse`
         """
         return self.cancel_key_deletion_with_http_info(request)
 
     def cancel_key_deletion_with_http_info(self, request):
-        """取消计划删除密钥
-
-        - 功能介绍：取消计划删除密钥。 - 说明：密钥处于“计划删除”状态才能取消计划删除密钥。
-
-        :param CancelKeyDeletionRequest request
-        :return: CancelKeyDeletionResponse
-        """
-
         all_params = ['cancel_key_deletion_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -238,26 +227,28 @@ class KmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def cancel_self_grant_async(self, request):
         """退役授权
 
-        - 功能介绍：退役授权，表示被授权用户不再具有授权密钥的操作权。   例如：用户A授权用户B可以操作密钥A/key，同时授权用户C可以撤销该授权，   那么用户A、B、C均可退役该授权，退役授权后，用户B不再可以使用A/key。 - 须知：      可执行退役授权的主体包括：    - 创建授权的用户；    - 授权中retiring_principal指向的用户；    - 当授权的操作列表中包含retire-grant时，grantee_principal指向的用户。
+        - 功能介绍：退役授权，表示被授权用户不再具有授权密钥的操作权。
+          例如：用户A授权用户B可以操作密钥A/key，同时授权用户C可以撤销该授权，
+          那么用户A、B、C均可退役该授权，退役授权后，用户B不再可以使用A/key。
+        - 须知：
+             可执行退役授权的主体包括：
+           - 创建授权的用户；
+           - 授权中retiring_principal指向的用户；
+           - 当授权的操作列表中包含retire-grant时，grantee_principal指向的用户。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CancelSelfGrantRequest request
-        :return: CancelSelfGrantResponse
+        :param request: Request instance for CancelSelfGrant
+        :type request: :class:`huaweicloudsdkkms.v2.CancelSelfGrantRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.CancelSelfGrantResponse`
         """
         return self.cancel_self_grant_with_http_info(request)
 
     def cancel_self_grant_with_http_info(self, request):
-        """退役授权
-
-        - 功能介绍：退役授权，表示被授权用户不再具有授权密钥的操作权。   例如：用户A授权用户B可以操作密钥A/key，同时授权用户C可以撤销该授权，   那么用户A、B、C均可退役该授权，退役授权后，用户B不再可以使用A/key。 - 须知：      可执行退役授权的主体包括：    - 创建授权的用户；    - 授权中retiring_principal指向的用户；    - 当授权的操作列表中包含retire-grant时，grantee_principal指向的用户。
-
-        :param CancelSelfGrantRequest request
-        :return: CancelSelfGrantResponse
-        """
-
         all_params = ['cancel_self_grant_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -301,26 +292,21 @@ class KmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_datakey_async(self, request):
         """创建数据密钥
 
         - 功能介绍：创建数据密钥，返回结果包含明文和密文。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateDatakeyRequest request
-        :return: CreateDatakeyResponse
+        :param request: Request instance for CreateDatakey
+        :type request: :class:`huaweicloudsdkkms.v2.CreateDatakeyRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.CreateDatakeyResponse`
         """
         return self.create_datakey_with_http_info(request)
 
     def create_datakey_with_http_info(self, request):
-        """创建数据密钥
-
-        - 功能介绍：创建数据密钥，返回结果包含明文和密文。
-
-        :param CreateDatakeyRequest request
-        :return: CreateDatakeyResponse
-        """
-
         all_params = ['create_datakey_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -364,26 +350,21 @@ class KmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_datakey_without_plaintext_async(self, request):
         """创建不含明文数据密钥
 
         - 功能介绍：创建数据密钥，返回结果只包含密文。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateDatakeyWithoutPlaintextRequest request
-        :return: CreateDatakeyWithoutPlaintextResponse
+        :param request: Request instance for CreateDatakeyWithoutPlaintext
+        :type request: :class:`huaweicloudsdkkms.v2.CreateDatakeyWithoutPlaintextRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.CreateDatakeyWithoutPlaintextResponse`
         """
         return self.create_datakey_without_plaintext_with_http_info(request)
 
     def create_datakey_without_plaintext_with_http_info(self, request):
-        """创建不含明文数据密钥
-
-        - 功能介绍：创建数据密钥，返回结果只包含密文。
-
-        :param CreateDatakeyWithoutPlaintextRequest request
-        :return: CreateDatakeyWithoutPlaintextResponse
-        """
-
         all_params = ['create_datakey_without_plaintext_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -427,26 +408,23 @@ class KmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_grant_async(self, request):
         """创建授权
 
-        - 功能介绍：创建授权，被授权用户可以对授权密钥进行操作。 - 说明：    - 服务默认主密钥（密钥别名后缀为“/default”）不可以授权。
+        - 功能介绍：创建授权，被授权用户可以对授权密钥进行操作。
+        - 说明：
+           - 服务默认主密钥（密钥别名后缀为“/default”）不可以授权。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateGrantRequest request
-        :return: CreateGrantResponse
+        :param request: Request instance for CreateGrant
+        :type request: :class:`huaweicloudsdkkms.v2.CreateGrantRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.CreateGrantResponse`
         """
         return self.create_grant_with_http_info(request)
 
     def create_grant_with_http_info(self, request):
-        """创建授权
-
-        - 功能介绍：创建授权，被授权用户可以对授权密钥进行操作。 - 说明：    - 服务默认主密钥（密钥别名后缀为“/default”）不可以授权。
-
-        :param CreateGrantRequest request
-        :return: CreateGrantResponse
-        """
-
         all_params = ['create_grant_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -490,26 +468,23 @@ class KmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_key_async(self, request):
         """创建密钥
 
-        创建用户主密钥，用户主密钥可以为对称密钥或非对称密钥。 - 对称密钥为长度为256位AES密钥或者128位SM4密钥，可用于小量数据的加密或者用于加密数据密钥。 - 非对称密钥可以为RSA密钥对或者ECC密钥对（包含SM2密钥对），可用于加解密数据、数字签名及验签。
+        创建用户主密钥，用户主密钥可以为对称密钥或非对称密钥。
+        - 对称密钥为长度为256位AES密钥或者128位SM4密钥，可用于小量数据的加密或者用于加密数据密钥。
+        - 非对称密钥可以为RSA密钥对或者ECC密钥对（包含SM2密钥对），可用于加解密数据、数字签名及验签。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateKeyRequest request
-        :return: CreateKeyResponse
+        :param request: Request instance for CreateKey
+        :type request: :class:`huaweicloudsdkkms.v2.CreateKeyRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.CreateKeyResponse`
         """
         return self.create_key_with_http_info(request)
 
     def create_key_with_http_info(self, request):
-        """创建密钥
-
-        创建用户主密钥，用户主密钥可以为对称密钥或非对称密钥。 - 对称密钥为长度为256位AES密钥或者128位SM4密钥，可用于小量数据的加密或者用于加密数据密钥。 - 非对称密钥可以为RSA密钥对或者ECC密钥对（包含SM2密钥对），可用于加解密数据、数字签名及验签。
-
-        :param CreateKeyRequest request
-        :return: CreateKeyResponse
-        """
-
         all_params = ['create_key_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -553,26 +528,21 @@ class KmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_kms_tag_async(self, request):
         """添加密钥标签
 
         - 功能介绍：添加密钥标签。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateKmsTagRequest request
-        :return: CreateKmsTagResponse
+        :param request: Request instance for CreateKmsTag
+        :type request: :class:`huaweicloudsdkkms.v2.CreateKmsTagRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.CreateKmsTagResponse`
         """
         return self.create_kms_tag_with_http_info(request)
 
     def create_kms_tag_with_http_info(self, request):
-        """添加密钥标签
-
-        - 功能介绍：添加密钥标签。
-
-        :param CreateKmsTagRequest request
-        :return: CreateKmsTagResponse
-        """
-
         all_params = ['key_id', 'create_kms_tag_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -618,26 +588,22 @@ class KmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_parameters_for_import_async(self, request):
         """获取密钥导入参数
 
-        - 功能介绍：获取导入密钥的必要参数，包括密钥导入令牌和密钥加密公钥。 - 说明：返回的公钥类型默认为RSA_2048。
+        - 功能介绍：获取导入密钥的必要参数，包括密钥导入令牌和密钥加密公钥。
+        - 说明：返回的公钥类型默认为RSA_2048。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateParametersForImportRequest request
-        :return: CreateParametersForImportResponse
+        :param request: Request instance for CreateParametersForImport
+        :type request: :class:`huaweicloudsdkkms.v2.CreateParametersForImportRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.CreateParametersForImportResponse`
         """
         return self.create_parameters_for_import_with_http_info(request)
 
     def create_parameters_for_import_with_http_info(self, request):
-        """获取密钥导入参数
-
-        - 功能介绍：获取导入密钥的必要参数，包括密钥导入令牌和密钥加密公钥。 - 说明：返回的公钥类型默认为RSA_2048。
-
-        :param CreateParametersForImportRequest request
-        :return: CreateParametersForImportResponse
-        """
-
         all_params = ['create_parameters_for_import_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -681,26 +647,22 @@ class KmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_random_async(self, request):
         """创建随机数
 
-        - 功能介绍：   生成8~8192bit范围内的随机数。
+        - 功能介绍：
+          生成8~8192bit范围内的随机数。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateRandomRequest request
-        :return: CreateRandomResponse
+        :param request: Request instance for CreateRandom
+        :type request: :class:`huaweicloudsdkkms.v2.CreateRandomRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.CreateRandomResponse`
         """
         return self.create_random_with_http_info(request)
 
     def create_random_with_http_info(self, request):
-        """创建随机数
-
-        - 功能介绍：   生成8~8192bit范围内的随机数。
-
-        :param CreateRandomRequest request
-        :return: CreateRandomResponse
-        """
-
         all_params = ['create_random_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -744,26 +706,21 @@ class KmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def decrypt_data_async(self, request):
         """解密数据
 
         - 功能介绍：解密数据。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DecryptDataRequest request
-        :return: DecryptDataResponse
+        :param request: Request instance for DecryptData
+        :type request: :class:`huaweicloudsdkkms.v2.DecryptDataRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.DecryptDataResponse`
         """
         return self.decrypt_data_with_http_info(request)
 
     def decrypt_data_with_http_info(self, request):
-        """解密数据
-
-        - 功能介绍：解密数据。
-
-        :param DecryptDataRequest request
-        :return: DecryptDataResponse
-        """
-
         all_params = ['decrypt_data_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -807,26 +764,21 @@ class KmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def decrypt_datakey_async(self, request):
         """解密数据密钥
 
         - 功能介绍：解密数据密钥，用指定的主密钥解密数据密钥。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DecryptDatakeyRequest request
-        :return: DecryptDatakeyResponse
+        :param request: Request instance for DecryptDatakey
+        :type request: :class:`huaweicloudsdkkms.v2.DecryptDatakeyRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.DecryptDatakeyResponse`
         """
         return self.decrypt_datakey_with_http_info(request)
 
     def decrypt_datakey_with_http_info(self, request):
-        """解密数据密钥
-
-        - 功能介绍：解密数据密钥，用指定的主密钥解密数据密钥。
-
-        :param DecryptDatakeyRequest request
-        :return: DecryptDatakeyResponse
-        """
-
         all_params = ['decrypt_datakey_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -870,26 +822,21 @@ class KmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_imported_key_material_async(self, request):
         """删除密钥材料
 
         - 功能介绍：删除密钥材料信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteImportedKeyMaterialRequest request
-        :return: DeleteImportedKeyMaterialResponse
+        :param request: Request instance for DeleteImportedKeyMaterial
+        :type request: :class:`huaweicloudsdkkms.v2.DeleteImportedKeyMaterialRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.DeleteImportedKeyMaterialResponse`
         """
         return self.delete_imported_key_material_with_http_info(request)
 
     def delete_imported_key_material_with_http_info(self, request):
-        """删除密钥材料
-
-        - 功能介绍：删除密钥材料信息。
-
-        :param DeleteImportedKeyMaterialRequest request
-        :return: DeleteImportedKeyMaterialResponse
-        """
-
         all_params = ['delete_imported_key_material_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -933,26 +880,21 @@ class KmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_key_async(self, request):
         """计划删除密钥
 
         - 功能介绍：计划多少天后删除密钥，可设置7天～1096天内删除密钥。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteKeyRequest request
-        :return: DeleteKeyResponse
+        :param request: Request instance for DeleteKey
+        :type request: :class:`huaweicloudsdkkms.v2.DeleteKeyRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.DeleteKeyResponse`
         """
         return self.delete_key_with_http_info(request)
 
     def delete_key_with_http_info(self, request):
-        """计划删除密钥
-
-        - 功能介绍：计划多少天后删除密钥，可设置7天～1096天内删除密钥。
-
-        :param DeleteKeyRequest request
-        :return: DeleteKeyResponse
-        """
-
         all_params = ['delete_key_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -996,26 +938,21 @@ class KmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_tag_async(self, request):
         """删除密钥标签
 
         - 功能介绍：删除密钥标签。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteTagRequest request
-        :return: DeleteTagResponse
+        :param request: Request instance for DeleteTag
+        :type request: :class:`huaweicloudsdkkms.v2.DeleteTagRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.DeleteTagResponse`
         """
         return self.delete_tag_with_http_info(request)
 
     def delete_tag_with_http_info(self, request):
-        """删除密钥标签
-
-        - 功能介绍：删除密钥标签。
-
-        :param DeleteTagRequest request
-        :return: DeleteTagResponse
-        """
-
         all_params = ['key_id', 'key']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1061,26 +998,22 @@ class KmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def disable_key_async(self, request):
         """禁用密钥
 
-        - 功能介绍：禁用密钥，密钥禁用后不可以使用。 - 说明：密钥为启用状态才能禁用密钥。
+        - 功能介绍：禁用密钥，密钥禁用后不可以使用。
+        - 说明：密钥为启用状态才能禁用密钥。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DisableKeyRequest request
-        :return: DisableKeyResponse
+        :param request: Request instance for DisableKey
+        :type request: :class:`huaweicloudsdkkms.v2.DisableKeyRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.DisableKeyResponse`
         """
         return self.disable_key_with_http_info(request)
 
     def disable_key_with_http_info(self, request):
-        """禁用密钥
-
-        - 功能介绍：禁用密钥，密钥禁用后不可以使用。 - 说明：密钥为启用状态才能禁用密钥。
-
-        :param DisableKeyRequest request
-        :return: DisableKeyResponse
-        """
-
         all_params = ['disable_key_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1124,26 +1057,21 @@ class KmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def disable_key_rotation_async(self, request):
         """关闭密钥轮换
 
         - 功能介绍：关闭用户主密钥轮换。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DisableKeyRotationRequest request
-        :return: DisableKeyRotationResponse
+        :param request: Request instance for DisableKeyRotation
+        :type request: :class:`huaweicloudsdkkms.v2.DisableKeyRotationRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.DisableKeyRotationResponse`
         """
         return self.disable_key_rotation_with_http_info(request)
 
     def disable_key_rotation_with_http_info(self, request):
-        """关闭密钥轮换
-
-        - 功能介绍：关闭用户主密钥轮换。
-
-        :param DisableKeyRotationRequest request
-        :return: DisableKeyRotationResponse
-        """
-
         all_params = ['disable_key_rotation_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1187,26 +1115,22 @@ class KmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def enable_key_async(self, request):
         """启用密钥
 
-        - 功能介绍：启用密钥，密钥启用后才可以使用。 - 说明：密钥为禁用状态才能启用密钥。
+        - 功能介绍：启用密钥，密钥启用后才可以使用。
+        - 说明：密钥为禁用状态才能启用密钥。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param EnableKeyRequest request
-        :return: EnableKeyResponse
+        :param request: Request instance for EnableKey
+        :type request: :class:`huaweicloudsdkkms.v2.EnableKeyRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.EnableKeyResponse`
         """
         return self.enable_key_with_http_info(request)
 
     def enable_key_with_http_info(self, request):
-        """启用密钥
-
-        - 功能介绍：启用密钥，密钥启用后才可以使用。 - 说明：密钥为禁用状态才能启用密钥。
-
-        :param EnableKeyRequest request
-        :return: EnableKeyResponse
-        """
-
         all_params = ['enable_key_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1250,26 +1174,24 @@ class KmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def enable_key_rotation_async(self, request):
         """开启密钥轮换
 
-        - 功能介绍：开启用户主密钥轮换。 - 说明：   - 开启密钥轮换后，默认轮换间隔时间为365天。   - 默认主密钥及外部导入密钥不支持轮换操作。
+        - 功能介绍：开启用户主密钥轮换。
+        - 说明：
+          - 开启密钥轮换后，默认轮换间隔时间为365天。
+          - 默认主密钥及外部导入密钥不支持轮换操作。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param EnableKeyRotationRequest request
-        :return: EnableKeyRotationResponse
+        :param request: Request instance for EnableKeyRotation
+        :type request: :class:`huaweicloudsdkkms.v2.EnableKeyRotationRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.EnableKeyRotationResponse`
         """
         return self.enable_key_rotation_with_http_info(request)
 
     def enable_key_rotation_with_http_info(self, request):
-        """开启密钥轮换
-
-        - 功能介绍：开启用户主密钥轮换。 - 说明：   - 开启密钥轮换后，默认轮换间隔时间为365天。   - 默认主密钥及外部导入密钥不支持轮换操作。
-
-        :param EnableKeyRotationRequest request
-        :return: EnableKeyRotationResponse
-        """
-
         all_params = ['enable_key_rotation_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1313,26 +1235,21 @@ class KmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def encrypt_data_async(self, request):
         """加密数据
 
         - 功能介绍：加密数据，用指定的用户主密钥加密数据。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param EncryptDataRequest request
-        :return: EncryptDataResponse
+        :param request: Request instance for EncryptData
+        :type request: :class:`huaweicloudsdkkms.v2.EncryptDataRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.EncryptDataResponse`
         """
         return self.encrypt_data_with_http_info(request)
 
     def encrypt_data_with_http_info(self, request):
-        """加密数据
-
-        - 功能介绍：加密数据，用指定的用户主密钥加密数据。
-
-        :param EncryptDataRequest request
-        :return: EncryptDataResponse
-        """
-
         all_params = ['encrypt_data_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1376,26 +1293,21 @@ class KmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def encrypt_datakey_async(self, request):
         """加密数据密钥
 
         - 功能介绍：加密数据密钥，用指定的主密钥加密数据密钥。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param EncryptDatakeyRequest request
-        :return: EncryptDatakeyResponse
+        :param request: Request instance for EncryptDatakey
+        :type request: :class:`huaweicloudsdkkms.v2.EncryptDatakeyRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.EncryptDatakeyResponse`
         """
         return self.encrypt_datakey_with_http_info(request)
 
     def encrypt_datakey_with_http_info(self, request):
-        """加密数据密钥
-
-        - 功能介绍：加密数据密钥，用指定的主密钥加密数据密钥。
-
-        :param EncryptDatakeyRequest request
-        :return: EncryptDatakeyResponse
-        """
-
         all_params = ['encrypt_datakey_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1439,26 +1351,21 @@ class KmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def import_key_material_async(self, request):
         """导入密钥材料
 
         - 功能介绍：导入密钥材料。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ImportKeyMaterialRequest request
-        :return: ImportKeyMaterialResponse
+        :param request: Request instance for ImportKeyMaterial
+        :type request: :class:`huaweicloudsdkkms.v2.ImportKeyMaterialRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.ImportKeyMaterialResponse`
         """
         return self.import_key_material_with_http_info(request)
 
     def import_key_material_with_http_info(self, request):
-        """导入密钥材料
-
-        - 功能介绍：导入密钥材料。
-
-        :param ImportKeyMaterialRequest request
-        :return: ImportKeyMaterialResponse
-        """
-
         all_params = ['import_key_material_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1502,26 +1409,21 @@ class KmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_grants_async(self, request):
         """查询授权列表
 
         - 功能介绍：查询密钥的授权列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListGrantsRequest request
-        :return: ListGrantsResponse
+        :param request: Request instance for ListGrants
+        :type request: :class:`huaweicloudsdkkms.v2.ListGrantsRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.ListGrantsResponse`
         """
         return self.list_grants_with_http_info(request)
 
     def list_grants_with_http_info(self, request):
-        """查询授权列表
-
-        - 功能介绍：查询密钥的授权列表。
-
-        :param ListGrantsRequest request
-        :return: ListGrantsResponse
-        """
-
         all_params = ['list_grants_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1565,26 +1467,21 @@ class KmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_key_detail_async(self, request):
         """查询密钥信息
 
         - 功能介绍：查询密钥详细信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListKeyDetailRequest request
-        :return: ListKeyDetailResponse
+        :param request: Request instance for ListKeyDetail
+        :type request: :class:`huaweicloudsdkkms.v2.ListKeyDetailRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.ListKeyDetailResponse`
         """
         return self.list_key_detail_with_http_info(request)
 
     def list_key_detail_with_http_info(self, request):
-        """查询密钥信息
-
-        - 功能介绍：查询密钥详细信息。
-
-        :param ListKeyDetailRequest request
-        :return: ListKeyDetailResponse
-        """
-
         all_params = ['list_key_detail_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1628,26 +1525,21 @@ class KmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_keys_async(self, request):
         """查询密钥列表
 
         - 功能介绍：查询用户所有密钥列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListKeysRequest request
-        :return: ListKeysResponse
+        :param request: Request instance for ListKeys
+        :type request: :class:`huaweicloudsdkkms.v2.ListKeysRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.ListKeysResponse`
         """
         return self.list_keys_with_http_info(request)
 
     def list_keys_with_http_info(self, request):
-        """查询密钥列表
-
-        - 功能介绍：查询用户所有密钥列表。
-
-        :param ListKeysRequest request
-        :return: ListKeysResponse
-        """
-
         all_params = ['list_keys_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1691,26 +1583,21 @@ class KmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_kms_by_tags_async(self, request):
         """查询密钥实例
 
         - 功能介绍：查询密钥实例。通过标签过滤，查询指定用户主密钥的详细信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListKmsByTagsRequest request
-        :return: ListKmsByTagsResponse
+        :param request: Request instance for ListKmsByTags
+        :type request: :class:`huaweicloudsdkkms.v2.ListKmsByTagsRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.ListKmsByTagsResponse`
         """
         return self.list_kms_by_tags_with_http_info(request)
 
     def list_kms_by_tags_with_http_info(self, request):
-        """查询密钥实例
-
-        - 功能介绍：查询密钥实例。通过标签过滤，查询指定用户主密钥的详细信息。
-
-        :param ListKmsByTagsRequest request
-        :return: ListKmsByTagsResponse
-        """
-
         all_params = ['resource_instances', 'list_kms_by_tags_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1756,26 +1643,21 @@ class KmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_kms_tags_async(self, request):
         """查询项目标签
 
         - 功能介绍：查询用户在指定项目下的所有标签集合。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListKmsTagsRequest request
-        :return: ListKmsTagsResponse
+        :param request: Request instance for ListKmsTags
+        :type request: :class:`huaweicloudsdkkms.v2.ListKmsTagsRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.ListKmsTagsResponse`
         """
         return self.list_kms_tags_with_http_info(request)
 
     def list_kms_tags_with_http_info(self, request):
-        """查询项目标签
-
-        - 功能介绍：查询用户在指定项目下的所有标签集合。
-
-        :param ListKmsTagsRequest request
-        :return: ListKmsTagsResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1817,26 +1699,21 @@ class KmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_retirable_grants_async(self, request):
         """查询可退役授权列表
 
         - 功能介绍：查询用户可以退役的授权列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListRetirableGrantsRequest request
-        :return: ListRetirableGrantsResponse
+        :param request: Request instance for ListRetirableGrants
+        :type request: :class:`huaweicloudsdkkms.v2.ListRetirableGrantsRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.ListRetirableGrantsResponse`
         """
         return self.list_retirable_grants_with_http_info(request)
 
     def list_retirable_grants_with_http_info(self, request):
-        """查询可退役授权列表
-
-        - 功能介绍：查询用户可以退役的授权列表。
-
-        :param ListRetirableGrantsRequest request
-        :return: ListRetirableGrantsResponse
-        """
-
         all_params = ['list_retirable_grants_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1880,26 +1757,21 @@ class KmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_key_rotation_status_async(self, request):
         """查询密钥轮换状态
 
         - 功能介绍：查询用户主密钥轮换状态。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowKeyRotationStatusRequest request
-        :return: ShowKeyRotationStatusResponse
+        :param request: Request instance for ShowKeyRotationStatus
+        :type request: :class:`huaweicloudsdkkms.v2.ShowKeyRotationStatusRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.ShowKeyRotationStatusResponse`
         """
         return self.show_key_rotation_status_with_http_info(request)
 
     def show_key_rotation_status_with_http_info(self, request):
-        """查询密钥轮换状态
-
-        - 功能介绍：查询用户主密钥轮换状态。
-
-        :param ShowKeyRotationStatusRequest request
-        :return: ShowKeyRotationStatusResponse
-        """
-
         all_params = ['show_key_rotation_status_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1943,26 +1815,21 @@ class KmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_kms_tags_async(self, request):
         """查询密钥标签
 
         - 功能介绍：查询密钥标签。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowKmsTagsRequest request
-        :return: ShowKmsTagsResponse
+        :param request: Request instance for ShowKmsTags
+        :type request: :class:`huaweicloudsdkkms.v2.ShowKmsTagsRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.ShowKmsTagsResponse`
         """
         return self.show_kms_tags_with_http_info(request)
 
     def show_kms_tags_with_http_info(self, request):
-        """查询密钥标签
-
-        - 功能介绍：查询密钥标签。
-
-        :param ShowKmsTagsRequest request
-        :return: ShowKmsTagsResponse
-        """
-
         all_params = ['key_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2006,26 +1873,21 @@ class KmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_public_key_async(self, request):
         """查询公钥信息
 
         - 查询用户指定非对称密钥的公钥信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowPublicKeyRequest request
-        :return: ShowPublicKeyResponse
+        :param request: Request instance for ShowPublicKey
+        :type request: :class:`huaweicloudsdkkms.v2.ShowPublicKeyRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.ShowPublicKeyResponse`
         """
         return self.show_public_key_with_http_info(request)
 
     def show_public_key_with_http_info(self, request):
-        """查询公钥信息
-
-        - 查询用户指定非对称密钥的公钥信息。
-
-        :param ShowPublicKeyRequest request
-        :return: ShowPublicKeyResponse
-        """
-
         all_params = ['show_public_key_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2069,26 +1931,21 @@ class KmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_user_instances_async(self, request):
         """查询实例数
 
         - 功能介绍：查询实例数，获取用户已经创建的用户主密钥数量。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowUserInstancesRequest request
-        :return: ShowUserInstancesResponse
+        :param request: Request instance for ShowUserInstances
+        :type request: :class:`huaweicloudsdkkms.v2.ShowUserInstancesRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.ShowUserInstancesResponse`
         """
         return self.show_user_instances_with_http_info(request)
 
     def show_user_instances_with_http_info(self, request):
-        """查询实例数
-
-        - 功能介绍：查询实例数，获取用户已经创建的用户主密钥数量。
-
-        :param ShowUserInstancesRequest request
-        :return: ShowUserInstancesResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2130,26 +1987,21 @@ class KmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_user_quotas_async(self, request):
         """查询配额
 
         - 功能介绍：查询配额，查询用户可以创建的用户主密钥配额总数及当前使用量信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowUserQuotasRequest request
-        :return: ShowUserQuotasResponse
+        :param request: Request instance for ShowUserQuotas
+        :type request: :class:`huaweicloudsdkkms.v2.ShowUserQuotasRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.ShowUserQuotasResponse`
         """
         return self.show_user_quotas_with_http_info(request)
 
     def show_user_quotas_with_http_info(self, request):
-        """查询配额
-
-        - 功能介绍：查询配额，查询用户可以创建的用户主密钥配额总数及当前使用量信息。
-
-        :param ShowUserQuotasRequest request
-        :return: ShowUserQuotasResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2191,26 +2043,21 @@ class KmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def sign_async(self, request):
         """签名数据
 
         - 功能介绍：使用非对称密钥的私钥对消息或消息摘要进行数字签名。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param SignRequest request
-        :return: SignResponse
+        :param request: Request instance for Sign
+        :type request: :class:`huaweicloudsdkkms.v2.SignRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.SignResponse`
         """
         return self.sign_with_http_info(request)
 
     def sign_with_http_info(self, request):
-        """签名数据
-
-        - 功能介绍：使用非对称密钥的私钥对消息或消息摘要进行数字签名。
-
-        :param SignRequest request
-        :return: SignResponse
-        """
-
         all_params = ['sign_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2254,26 +2101,24 @@ class KmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_key_alias_async(self, request):
         """修改密钥别名
 
-        - 功能介绍：修改用户主密钥别名。 - 说明：    - 服务默认主密钥（密钥别名后缀为“/default”）不可以修改。    - 密钥处于“计划删除”状态，密钥别名不可以修改。
+        - 功能介绍：修改用户主密钥别名。
+        - 说明：
+           - 服务默认主密钥（密钥别名后缀为“/default”）不可以修改。
+           - 密钥处于“计划删除”状态，密钥别名不可以修改。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateKeyAliasRequest request
-        :return: UpdateKeyAliasResponse
+        :param request: Request instance for UpdateKeyAlias
+        :type request: :class:`huaweicloudsdkkms.v2.UpdateKeyAliasRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.UpdateKeyAliasResponse`
         """
         return self.update_key_alias_with_http_info(request)
 
     def update_key_alias_with_http_info(self, request):
-        """修改密钥别名
-
-        - 功能介绍：修改用户主密钥别名。 - 说明：    - 服务默认主密钥（密钥别名后缀为“/default”）不可以修改。    - 密钥处于“计划删除”状态，密钥别名不可以修改。
-
-        :param UpdateKeyAliasRequest request
-        :return: UpdateKeyAliasResponse
-        """
-
         all_params = ['update_key_alias_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2317,26 +2162,24 @@ class KmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_key_description_async(self, request):
         """修改密钥描述
 
-        - 功能介绍：修改用户主密钥描述信息。 - 说明：    - 服务默认主密钥（密钥别名后缀为“/default”）不可以修改。    - 密钥处于“计划删除”状态，密钥描述不可以修改。
+        - 功能介绍：修改用户主密钥描述信息。
+        - 说明：
+           - 服务默认主密钥（密钥别名后缀为“/default”）不可以修改。
+           - 密钥处于“计划删除”状态，密钥描述不可以修改。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateKeyDescriptionRequest request
-        :return: UpdateKeyDescriptionResponse
+        :param request: Request instance for UpdateKeyDescription
+        :type request: :class:`huaweicloudsdkkms.v2.UpdateKeyDescriptionRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.UpdateKeyDescriptionResponse`
         """
         return self.update_key_description_with_http_info(request)
 
     def update_key_description_with_http_info(self, request):
-        """修改密钥描述
-
-        - 功能介绍：修改用户主密钥描述信息。 - 说明：    - 服务默认主密钥（密钥别名后缀为“/default”）不可以修改。    - 密钥处于“计划删除”状态，密钥描述不可以修改。
-
-        :param UpdateKeyDescriptionRequest request
-        :return: UpdateKeyDescriptionResponse
-        """
-
         all_params = ['update_key_description_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2380,26 +2223,21 @@ class KmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_key_rotation_interval_async(self, request):
         """修改密钥轮换周期
 
         - 功能介绍：修改用户主密钥轮换周期。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateKeyRotationIntervalRequest request
-        :return: UpdateKeyRotationIntervalResponse
+        :param request: Request instance for UpdateKeyRotationInterval
+        :type request: :class:`huaweicloudsdkkms.v2.UpdateKeyRotationIntervalRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.UpdateKeyRotationIntervalResponse`
         """
         return self.update_key_rotation_interval_with_http_info(request)
 
     def update_key_rotation_interval_with_http_info(self, request):
-        """修改密钥轮换周期
-
-        - 功能介绍：修改用户主密钥轮换周期。
-
-        :param UpdateKeyRotationIntervalRequest request
-        :return: UpdateKeyRotationIntervalResponse
-        """
-
         all_params = ['update_key_rotation_interval_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2443,26 +2281,21 @@ class KmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def validate_signature_async(self, request):
         """验证签名
 
         - 功能介绍：使用非对称密钥的私钥对消息或消息摘要进行签名验证。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ValidateSignatureRequest request
-        :return: ValidateSignatureResponse
+        :param request: Request instance for ValidateSignature
+        :type request: :class:`huaweicloudsdkkms.v2.ValidateSignatureRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.ValidateSignatureResponse`
         """
         return self.validate_signature_with_http_info(request)
 
     def validate_signature_with_http_info(self, request):
-        """验证签名
-
-        - 功能介绍：使用非对称密钥的私钥对消息或消息摘要进行签名验证。
-
-        :param ValidateSignatureRequest request
-        :return: ValidateSignatureResponse
-        """
-
         all_params = ['validate_signature_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2506,26 +2339,21 @@ class KmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_version_async(self, request):
         """查询指定版本信息
 
         - 功能介绍：查指定API版本信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowVersionRequest request
-        :return: ShowVersionResponse
+        :param request: Request instance for ShowVersion
+        :type request: :class:`huaweicloudsdkkms.v2.ShowVersionRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.ShowVersionResponse`
         """
         return self.show_version_with_http_info(request)
 
     def show_version_with_http_info(self, request):
-        """查询指定版本信息
-
-        - 功能介绍：查指定API版本信息。
-
-        :param ShowVersionRequest request
-        :return: ShowVersionResponse
-        """
-
         all_params = ['version_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2569,26 +2397,21 @@ class KmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_versions_async(self, request):
         """查询版本信息列表
 
         - 功能介绍：查询API版本信息列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowVersionsRequest request
-        :return: ShowVersionsResponse
+        :param request: Request instance for ShowVersions
+        :type request: :class:`huaweicloudsdkkms.v2.ShowVersionsRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.ShowVersionsResponse`
         """
         return self.show_versions_with_http_info(request)
 
     def show_versions_with_http_info(self, request):
-        """查询版本信息列表
-
-        - 功能介绍：查询API版本信息列表。
-
-        :param ShowVersionsRequest request
-        :return: ShowVersionsResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2629,7 +2452,6 @@ class KmsAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

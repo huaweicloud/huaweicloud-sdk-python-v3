@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CustomerConfig:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class CustomerConfig:
     }
 
     def __init__(self, failure_remind=None, cluster_name=None, service_provider=None, local_disk=None, ssl=None, create_from=None, resource_id=None, flavor_type=None, work_space_id=None, trial=None):
-        """CustomerConfig - a model defined in huaweicloud sdk"""
+        """CustomerConfig
+
+        The model defined in huaweicloud sdk
+
+        :param failure_remind: 失败提醒。
+        :type failure_remind: str
+        :param cluster_name: 集群类型。
+        :type cluster_name: str
+        :param service_provider: 服务提供
+        :type service_provider: str
+        :param local_disk: 是否本地磁盘。
+        :type local_disk: str
+        :param ssl: 是否使用ssl。
+        :type ssl: str
+        :param create_from: 创建来源
+        :type create_from: str
+        :param resource_id: 资源ID
+        :type resource_id: str
+        :param flavor_type: 规格类型
+        :type flavor_type: str
+        :param work_space_id: 工作空间ID
+        :type work_space_id: str
+        :param trial: 适用
+        :type trial: str
+        """
         
         
 
@@ -103,7 +126,7 @@ class CustomerConfig:
         失败提醒。
 
         :param failure_remind: The failure_remind of this CustomerConfig.
-        :type: str
+        :type failure_remind: str
         """
         self._failure_remind = failure_remind
 
@@ -125,7 +148,7 @@ class CustomerConfig:
         集群类型。
 
         :param cluster_name: The cluster_name of this CustomerConfig.
-        :type: str
+        :type cluster_name: str
         """
         self._cluster_name = cluster_name
 
@@ -147,7 +170,7 @@ class CustomerConfig:
         服务提供
 
         :param service_provider: The service_provider of this CustomerConfig.
-        :type: str
+        :type service_provider: str
         """
         self._service_provider = service_provider
 
@@ -169,7 +192,7 @@ class CustomerConfig:
         是否本地磁盘。
 
         :param local_disk: The local_disk of this CustomerConfig.
-        :type: str
+        :type local_disk: str
         """
         self._local_disk = local_disk
 
@@ -191,7 +214,7 @@ class CustomerConfig:
         是否使用ssl。
 
         :param ssl: The ssl of this CustomerConfig.
-        :type: str
+        :type ssl: str
         """
         self._ssl = ssl
 
@@ -213,7 +236,7 @@ class CustomerConfig:
         创建来源
 
         :param create_from: The create_from of this CustomerConfig.
-        :type: str
+        :type create_from: str
         """
         self._create_from = create_from
 
@@ -235,7 +258,7 @@ class CustomerConfig:
         资源ID
 
         :param resource_id: The resource_id of this CustomerConfig.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -257,7 +280,7 @@ class CustomerConfig:
         规格类型
 
         :param flavor_type: The flavor_type of this CustomerConfig.
-        :type: str
+        :type flavor_type: str
         """
         self._flavor_type = flavor_type
 
@@ -279,7 +302,7 @@ class CustomerConfig:
         工作空间ID
 
         :param work_space_id: The work_space_id of this CustomerConfig.
-        :type: str
+        :type work_space_id: str
         """
         self._work_space_id = work_space_id
 
@@ -301,7 +324,7 @@ class CustomerConfig:
         适用
 
         :param trial: The trial of this CustomerConfig.
-        :type: str
+        :type trial: str
         """
         self._trial = trial
 

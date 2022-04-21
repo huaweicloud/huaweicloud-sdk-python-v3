@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSystemSecurityPoliciesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListSystemSecurityPoliciesResponse(SdkResponse):
     }
 
     def __init__(self, system_security_policies=None, request_id=None):
-        """ListSystemSecurityPoliciesResponse - a model defined in huaweicloud sdk"""
+        """ListSystemSecurityPoliciesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param system_security_policies: 系统安全策略列表。
+        :type system_security_policies: list[:class:`huaweicloudsdkelb.v3.SystemSecurityPolicy`]
+        :param request_id: 请求ID。  注：自动生成 。
+        :type request_id: str
+        """
         
         super(ListSystemSecurityPoliciesResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListSystemSecurityPoliciesResponse(SdkResponse):
         系统安全策略列表。
 
         :return: The system_security_policies of this ListSystemSecurityPoliciesResponse.
-        :rtype: list[SystemSecurityPolicy]
+        :rtype: list[:class:`huaweicloudsdkelb.v3.SystemSecurityPolicy`]
         """
         return self._system_security_policies
 
@@ -63,7 +70,7 @@ class ListSystemSecurityPoliciesResponse(SdkResponse):
         系统安全策略列表。
 
         :param system_security_policies: The system_security_policies of this ListSystemSecurityPoliciesResponse.
-        :type: list[SystemSecurityPolicy]
+        :type system_security_policies: list[:class:`huaweicloudsdkelb.v3.SystemSecurityPolicy`]
         """
         self._system_security_policies = system_security_policies
 
@@ -85,7 +92,7 @@ class ListSystemSecurityPoliciesResponse(SdkResponse):
         请求ID。  注：自动生成 。
 
         :param request_id: The request_id of this ListSystemSecurityPoliciesResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 

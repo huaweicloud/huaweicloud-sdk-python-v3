@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TagQuota:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class TagQuota:
     }
 
     def __init__(self, quota_key=None, quota_limit=None, used=None, unit=None):
-        """TagQuota - a model defined in huaweicloud sdk"""
+        """TagQuota
+
+        The model defined in huaweicloud sdk
+
+        :param quota_key: 配额键
+        :type quota_key: str
+        :param quota_limit: 配额值
+        :type quota_limit: int
+        :param used: 已使用
+        :type used: int
+        :param unit: 单位
+        :type unit: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class TagQuota:
         配额键
 
         :param quota_key: The quota_key of this TagQuota.
-        :type: str
+        :type quota_key: str
         """
         self._quota_key = quota_key
 
@@ -91,7 +102,7 @@ class TagQuota:
         配额值
 
         :param quota_limit: The quota_limit of this TagQuota.
-        :type: int
+        :type quota_limit: int
         """
         self._quota_limit = quota_limit
 
@@ -113,7 +124,7 @@ class TagQuota:
         已使用
 
         :param used: The used of this TagQuota.
-        :type: int
+        :type used: int
         """
         self._used = used
 
@@ -135,7 +146,7 @@ class TagQuota:
         单位
 
         :param unit: The unit of this TagQuota.
-        :type: str
+        :type unit: str
         """
         self._unit = unit
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDeviceMessagesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListDeviceMessagesResponse(SdkResponse):
     }
 
     def __init__(self, device_id=None, messages=None):
-        """ListDeviceMessagesResponse - a model defined in huaweicloud sdk"""
+        """ListDeviceMessagesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param device_id: 设备ID，用于唯一标识一个设备，在注册设备时由物联网平台分配获得。
+        :type device_id: str
+        :param messages: 设备消息列表。
+        :type messages: list[:class:`huaweicloudsdkiotda.v5.DeviceMessage`]
+        """
         
         super(ListDeviceMessagesResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListDeviceMessagesResponse(SdkResponse):
         设备ID，用于唯一标识一个设备，在注册设备时由物联网平台分配获得。
 
         :param device_id: The device_id of this ListDeviceMessagesResponse.
-        :type: str
+        :type device_id: str
         """
         self._device_id = device_id
 
@@ -74,7 +81,7 @@ class ListDeviceMessagesResponse(SdkResponse):
         设备消息列表。
 
         :return: The messages of this ListDeviceMessagesResponse.
-        :rtype: list[DeviceMessage]
+        :rtype: list[:class:`huaweicloudsdkiotda.v5.DeviceMessage`]
         """
         return self._messages
 
@@ -85,7 +92,7 @@ class ListDeviceMessagesResponse(SdkResponse):
         设备消息列表。
 
         :param messages: The messages of this ListDeviceMessagesResponse.
-        :type: list[DeviceMessage]
+        :type messages: list[:class:`huaweicloudsdkiotda.v5.DeviceMessage`]
         """
         self._messages = messages
 

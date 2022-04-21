@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SearchUsersRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class SearchUsersRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, offset=None, limit=None, search_key=None, sort_field=None, is_asc=None, dept_code=None, enable_sub_dept=None, admin_type=None, enable_room=None, user_type=None, status=None, contains_un_active=None):
-        """SearchUsersRequest - a model defined in huaweicloud sdk"""
+        """SearchUsersRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        :type x_request_id: str
+        :param accept_language: 语言参数，默认为中文zh-CN, 英文为en-US
+        :type accept_language: str
+        :param offset: 查询偏移量,若超过最大数量，则返回最后一页
+        :type offset: int
+        :param limit: 查询数量 默认值：0 
+        :type limit: int
+        :param search_key: 搜索条件，支持姓名、手机、邮箱、账号、第三方账号模糊搜索。
+        :type search_key: str
+        :param sort_field: 排序字段名称  约束 - 长度范围为0到64个字符  支持的取值 - userType - adminType - ldapAccount - deptCode - status - sortLevel
+        :type sort_field: str
+        :param is_asc: 是否按升序排序
+        :type is_asc: bool
+        :param dept_code: 部门编码，不带则查询所有。
+        :type dept_code: str
+        :param enable_sub_dept: 是否查询子部门 默认值: true 
+        :type enable_sub_dept: bool
+        :param admin_type: 根据管理员类型查询 * 1：普通管理员； * 2：非管理员。 
+        :type admin_type: int
+        :param enable_room: 是否开启智能协同白板功能功能位，不带则搜索所有。
+        :type enable_room: bool
+        :param user_type: 用户类型 * 2：普通用户； * 12：智慧屏用户； * 13：ideaHub用户； * 若不携带，则默认查询普通用户。 
+        :type user_type: list[int]
+        :param status: 用户状态 * 0：正常； * 1：停用。不带则查询所有 
+        :type status: int
+        :param contains_un_active: 是否查询未激活的终端 默认值: false 
+        :type contains_un_active: bool
+        """
         
         
 
@@ -123,7 +154,7 @@ class SearchUsersRequest:
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
 
         :param x_request_id: The x_request_id of this SearchUsersRequest.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 
@@ -145,7 +176,7 @@ class SearchUsersRequest:
         语言参数，默认为中文zh-CN, 英文为en-US
 
         :param accept_language: The accept_language of this SearchUsersRequest.
-        :type: str
+        :type accept_language: str
         """
         self._accept_language = accept_language
 
@@ -167,7 +198,7 @@ class SearchUsersRequest:
         查询偏移量,若超过最大数量，则返回最后一页
 
         :param offset: The offset of this SearchUsersRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -189,7 +220,7 @@ class SearchUsersRequest:
         查询数量 默认值：0 
 
         :param limit: The limit of this SearchUsersRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -211,7 +242,7 @@ class SearchUsersRequest:
         搜索条件，支持姓名、手机、邮箱、账号、第三方账号模糊搜索。
 
         :param search_key: The search_key of this SearchUsersRequest.
-        :type: str
+        :type search_key: str
         """
         self._search_key = search_key
 
@@ -233,7 +264,7 @@ class SearchUsersRequest:
         排序字段名称  约束 - 长度范围为0到64个字符  支持的取值 - userType - adminType - ldapAccount - deptCode - status - sortLevel
 
         :param sort_field: The sort_field of this SearchUsersRequest.
-        :type: str
+        :type sort_field: str
         """
         self._sort_field = sort_field
 
@@ -255,7 +286,7 @@ class SearchUsersRequest:
         是否按升序排序
 
         :param is_asc: The is_asc of this SearchUsersRequest.
-        :type: bool
+        :type is_asc: bool
         """
         self._is_asc = is_asc
 
@@ -277,7 +308,7 @@ class SearchUsersRequest:
         部门编码，不带则查询所有。
 
         :param dept_code: The dept_code of this SearchUsersRequest.
-        :type: str
+        :type dept_code: str
         """
         self._dept_code = dept_code
 
@@ -299,7 +330,7 @@ class SearchUsersRequest:
         是否查询子部门 默认值: true 
 
         :param enable_sub_dept: The enable_sub_dept of this SearchUsersRequest.
-        :type: bool
+        :type enable_sub_dept: bool
         """
         self._enable_sub_dept = enable_sub_dept
 
@@ -321,7 +352,7 @@ class SearchUsersRequest:
         根据管理员类型查询 * 1：普通管理员； * 2：非管理员。 
 
         :param admin_type: The admin_type of this SearchUsersRequest.
-        :type: int
+        :type admin_type: int
         """
         self._admin_type = admin_type
 
@@ -343,7 +374,7 @@ class SearchUsersRequest:
         是否开启智能协同白板功能功能位，不带则搜索所有。
 
         :param enable_room: The enable_room of this SearchUsersRequest.
-        :type: bool
+        :type enable_room: bool
         """
         self._enable_room = enable_room
 
@@ -365,7 +396,7 @@ class SearchUsersRequest:
         用户类型 * 2：普通用户； * 12：智慧屏用户； * 13：ideaHub用户； * 若不携带，则默认查询普通用户。 
 
         :param user_type: The user_type of this SearchUsersRequest.
-        :type: list[int]
+        :type user_type: list[int]
         """
         self._user_type = user_type
 
@@ -387,7 +418,7 @@ class SearchUsersRequest:
         用户状态 * 0：正常； * 1：停用。不带则查询所有 
 
         :param status: The status of this SearchUsersRequest.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -409,7 +440,7 @@ class SearchUsersRequest:
         是否查询未激活的终端 默认值: false 
 
         :param contains_un_active: The contains_un_active of this SearchUsersRequest.
-        :type: bool
+        :type contains_un_active: bool
         """
         self._contains_un_active = contains_un_active
 

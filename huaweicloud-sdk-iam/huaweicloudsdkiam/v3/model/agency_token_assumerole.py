@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AgencyTokenAssumerole:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class AgencyTokenAssumerole:
     }
 
     def __init__(self, domain_id=None, domain_name=None, agency_name=None):
-        """AgencyTokenAssumerole - a model defined in huaweicloud sdk"""
+        """AgencyTokenAssumerole
+
+        The model defined in huaweicloud sdk
+
+        :param domain_id: 委托方A的账号ID。“domain_id”与“domain_name”至少填写一个。
+        :type domain_id: str
+        :param domain_name: 委托方A的账号名称。“domain_id”与“domain_name”至少填写一个。
+        :type domain_name: str
+        :param agency_name: 委托方A创建的委托的名称。
+        :type agency_name: str
+        """
         
         
 
@@ -67,7 +76,7 @@ class AgencyTokenAssumerole:
         委托方A的账号ID。“domain_id”与“domain_name”至少填写一个。
 
         :param domain_id: The domain_id of this AgencyTokenAssumerole.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -89,7 +98,7 @@ class AgencyTokenAssumerole:
         委托方A的账号名称。“domain_id”与“domain_name”至少填写一个。
 
         :param domain_name: The domain_name of this AgencyTokenAssumerole.
-        :type: str
+        :type domain_name: str
         """
         self._domain_name = domain_name
 
@@ -111,7 +120,7 @@ class AgencyTokenAssumerole:
         委托方A创建的委托的名称。
 
         :param agency_name: The agency_name of this AgencyTokenAssumerole.
-        :type: str
+        :type agency_name: str
         """
         self._agency_name = agency_name
 

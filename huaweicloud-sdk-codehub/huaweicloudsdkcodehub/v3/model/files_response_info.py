@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FilesResponseInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class FilesResponseInfo:
     }
 
     def __init__(self, file_name=None, file_path=None, size=None, encoding=None, ref=None, blob_id=None, file_type=None, content=None):
-        """FilesResponseInfo - a model defined in huaweicloud sdk"""
+        """FilesResponseInfo
+
+        The model defined in huaweicloud sdk
+
+        :param file_name: 文件名称
+        :type file_name: str
+        :param file_path: 文件路径
+        :type file_path: str
+        :param size: 文件大小
+        :type size: str
+        :param encoding: 编码类型
+        :type encoding: str
+        :param ref: 分支名称
+        :type ref: str
+        :param blob_id: 文件块id
+        :type blob_id: str
+        :param file_type: 文件类型
+        :type file_type: str
+        :param content: 文件内容
+        :type content: str
+        """
         
         
 
@@ -93,7 +112,7 @@ class FilesResponseInfo:
         文件名称
 
         :param file_name: The file_name of this FilesResponseInfo.
-        :type: str
+        :type file_name: str
         """
         self._file_name = file_name
 
@@ -115,7 +134,7 @@ class FilesResponseInfo:
         文件路径
 
         :param file_path: The file_path of this FilesResponseInfo.
-        :type: str
+        :type file_path: str
         """
         self._file_path = file_path
 
@@ -137,7 +156,7 @@ class FilesResponseInfo:
         文件大小
 
         :param size: The size of this FilesResponseInfo.
-        :type: str
+        :type size: str
         """
         self._size = size
 
@@ -159,7 +178,7 @@ class FilesResponseInfo:
         编码类型
 
         :param encoding: The encoding of this FilesResponseInfo.
-        :type: str
+        :type encoding: str
         """
         self._encoding = encoding
 
@@ -181,7 +200,7 @@ class FilesResponseInfo:
         分支名称
 
         :param ref: The ref of this FilesResponseInfo.
-        :type: str
+        :type ref: str
         """
         self._ref = ref
 
@@ -203,7 +222,7 @@ class FilesResponseInfo:
         文件块id
 
         :param blob_id: The blob_id of this FilesResponseInfo.
-        :type: str
+        :type blob_id: str
         """
         self._blob_id = blob_id
 
@@ -225,7 +244,7 @@ class FilesResponseInfo:
         文件类型
 
         :param file_type: The file_type of this FilesResponseInfo.
-        :type: str
+        :type file_type: str
         """
         self._file_type = file_type
 
@@ -247,7 +266,7 @@ class FilesResponseInfo:
         文件内容
 
         :param content: The content of this FilesResponseInfo.
-        :type: str
+        :type content: str
         """
         self._content = content
 

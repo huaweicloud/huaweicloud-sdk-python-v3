@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDomainItemLocationDetailsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowDomainItemLocationDetailsResponse(SdkResponse):
     }
 
     def __init__(self, domain_item_location_details=None):
-        """ShowDomainItemLocationDetailsResponse - a model defined in huaweicloud sdk"""
+        """ShowDomainItemLocationDetailsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param domain_item_location_details: 
+        :type domain_item_location_details: :class:`huaweicloudsdkcdn.v1.DomainItemLocationDetails`
+        """
         
         super(ShowDomainItemLocationDetailsResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class ShowDomainItemLocationDetailsResponse(SdkResponse):
 
 
         :return: The domain_item_location_details of this ShowDomainItemLocationDetailsResponse.
-        :rtype: DomainItemLocationDetails
+        :rtype: :class:`huaweicloudsdkcdn.v1.DomainItemLocationDetails`
         """
         return self._domain_item_location_details
 
@@ -56,7 +61,7 @@ class ShowDomainItemLocationDetailsResponse(SdkResponse):
 
 
         :param domain_item_location_details: The domain_item_location_details of this ShowDomainItemLocationDetailsResponse.
-        :type: DomainItemLocationDetails
+        :type domain_item_location_details: :class:`huaweicloudsdkcdn.v1.DomainItemLocationDetails`
         """
         self._domain_item_location_details = domain_item_location_details
 

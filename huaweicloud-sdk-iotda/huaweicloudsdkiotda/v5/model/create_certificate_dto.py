@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateCertificateDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateCertificateDTO:
     }
 
     def __init__(self, content=None, app_id=None):
-        """CreateCertificateDTO - a model defined in huaweicloud sdk"""
+        """CreateCertificateDTO
+
+        The model defined in huaweicloud sdk
+
+        :param content: **参数说明**：证书内容信息。
+        :type content: str
+        :param app_id: **参数说明**：资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，建议携带该参数指定创建的证书归属到哪个资源空间下，否则创建的证书将会归属到[默认资源空间](https://support.huaweicloud.com/usermanual-iothub/iot_01_0006.html#section0)下。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
+        :type app_id: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateCertificateDTO:
         **参数说明**：证书内容信息。
 
         :param content: The content of this CreateCertificateDTO.
-        :type: str
+        :type content: str
         """
         self._content = content
 
@@ -84,7 +91,7 @@ class CreateCertificateDTO:
         **参数说明**：资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，建议携带该参数指定创建的证书归属到哪个资源空间下，否则创建的证书将会归属到[默认资源空间](https://support.huaweicloud.com/usermanual-iothub/iot_01_0006.html#section0)下。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :param app_id: The app_id of this CreateCertificateDTO.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 

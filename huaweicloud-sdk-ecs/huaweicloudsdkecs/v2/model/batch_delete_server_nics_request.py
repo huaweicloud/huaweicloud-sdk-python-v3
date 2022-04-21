@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchDeleteServerNicsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchDeleteServerNicsRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """BatchDeleteServerNicsRequest - a model defined in huaweicloud sdk"""
+        """BatchDeleteServerNicsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param server_id: 云服务器ID。
+        :type server_id: str
+        :param body: Body of the BatchDeleteServerNicsRequest
+        :type body: :class:`huaweicloudsdkecs.v2.BatchDeleteServerNicsRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class BatchDeleteServerNicsRequest:
         云服务器ID。
 
         :param server_id: The server_id of this BatchDeleteServerNicsRequest.
-        :type: str
+        :type server_id: str
         """
         self._server_id = server_id
 
@@ -72,7 +79,7 @@ class BatchDeleteServerNicsRequest:
 
 
         :return: The body of this BatchDeleteServerNicsRequest.
-        :rtype: BatchDeleteServerNicsRequestBody
+        :rtype: :class:`huaweicloudsdkecs.v2.BatchDeleteServerNicsRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class BatchDeleteServerNicsRequest:
 
 
         :param body: The body of this BatchDeleteServerNicsRequest.
-        :type: BatchDeleteServerNicsRequestBody
+        :type body: :class:`huaweicloudsdkecs.v2.BatchDeleteServerNicsRequestBody`
         """
         self._body = body
 

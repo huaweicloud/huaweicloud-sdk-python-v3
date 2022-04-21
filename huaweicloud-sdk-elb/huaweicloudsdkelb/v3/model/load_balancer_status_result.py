@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LoadBalancerStatusResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class LoadBalancerStatusResult:
     }
 
     def __init__(self, loadbalancer=None):
-        """LoadBalancerStatusResult - a model defined in huaweicloud sdk"""
+        """LoadBalancerStatusResult
+
+        The model defined in huaweicloud sdk
+
+        :param loadbalancer: 
+        :type loadbalancer: :class:`huaweicloudsdkelb.v3.LoadBalancerStatus`
+        """
         
         
 
@@ -45,7 +50,7 @@ class LoadBalancerStatusResult:
 
 
         :return: The loadbalancer of this LoadBalancerStatusResult.
-        :rtype: LoadBalancerStatus
+        :rtype: :class:`huaweicloudsdkelb.v3.LoadBalancerStatus`
         """
         return self._loadbalancer
 
@@ -55,7 +60,7 @@ class LoadBalancerStatusResult:
 
 
         :param loadbalancer: The loadbalancer of this LoadBalancerStatusResult.
-        :type: LoadBalancerStatus
+        :type loadbalancer: :class:`huaweicloudsdkelb.v3.LoadBalancerStatus`
         """
         self._loadbalancer = loadbalancer
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExecuteTbQuestion:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ExecuteTbQuestion:
     }
 
     def __init__(self, question_id=None, audio_file_path=None, question=None, action=None):
-        """ExecuteTbQuestion - a model defined in huaweicloud sdk"""
+        """ExecuteTbQuestion
+
+        The model defined in huaweicloud sdk
+
+        :param question_id: 问题ID。
+        :type question_id: str
+        :param audio_file_path: 语音文件路径。
+        :type audio_file_path: str
+        :param question: 问题。
+        :type question: str
+        :param action: 0 继续， 1 直接中断， 2 播放结束音后中断。
+        :type action: int
+        """
         
         
 
@@ -70,7 +81,7 @@ class ExecuteTbQuestion:
         问题ID。
 
         :param question_id: The question_id of this ExecuteTbQuestion.
-        :type: str
+        :type question_id: str
         """
         self._question_id = question_id
 
@@ -92,7 +103,7 @@ class ExecuteTbQuestion:
         语音文件路径。
 
         :param audio_file_path: The audio_file_path of this ExecuteTbQuestion.
-        :type: str
+        :type audio_file_path: str
         """
         self._audio_file_path = audio_file_path
 
@@ -114,7 +125,7 @@ class ExecuteTbQuestion:
         问题。
 
         :param question: The question of this ExecuteTbQuestion.
-        :type: str
+        :type question: str
         """
         self._question = question
 
@@ -136,7 +147,7 @@ class ExecuteTbQuestion:
         0 继续， 1 直接中断， 2 播放结束音后中断。
 
         :param action: The action of this ExecuteTbQuestion.
-        :type: int
+        :type action: int
         """
         self._action = action
 

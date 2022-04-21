@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPartnerBalancesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListPartnerBalancesResponse(SdkResponse):
     }
 
     def __init__(self, account_balances=None):
-        """ListPartnerBalancesResponse - a model defined in huaweicloud sdk"""
+        """ListPartnerBalancesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param account_balances: 账户余额列表。 具体请参见表2
+        :type account_balances: list[:class:`huaweicloudsdkbss.v2.AccountBalanceV2`]
+        """
         
         super(ListPartnerBalancesResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListPartnerBalancesResponse(SdkResponse):
         账户余额列表。 具体请参见表2
 
         :return: The account_balances of this ListPartnerBalancesResponse.
-        :rtype: list[AccountBalanceV2]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.AccountBalanceV2`]
         """
         return self._account_balances
 
@@ -58,7 +63,7 @@ class ListPartnerBalancesResponse(SdkResponse):
         账户余额列表。 具体请参见表2
 
         :param account_balances: The account_balances of this ListPartnerBalancesResponse.
-        :type: list[AccountBalanceV2]
+        :type account_balances: list[:class:`huaweicloudsdkbss.v2.AccountBalanceV2`]
         """
         self._account_balances = account_balances
 

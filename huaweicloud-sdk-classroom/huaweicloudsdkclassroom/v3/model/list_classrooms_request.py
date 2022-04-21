@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListClassroomsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListClassroomsRequest:
     }
 
     def __init__(self, offset=None, limit=None, query_type=None):
-        """ListClassroomsRequest - a model defined in huaweicloud sdk"""
+        """ListClassroomsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param offset: 信息记录的起始编号
+        :type offset: int
+        :param limit: 每页包含的信息记录数
+        :type limit: int
+        :param query_type: 查询的课堂类别，默认查询所有的课堂。 取值范围： create：只查询当前用户创建的课堂。 attend：只查询当前用户加入的课堂。 all：查询当前用户所有的课堂。
+        :type query_type: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class ListClassroomsRequest:
         信息记录的起始编号
 
         :param offset: The offset of this ListClassroomsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -90,7 +99,7 @@ class ListClassroomsRequest:
         每页包含的信息记录数
 
         :param limit: The limit of this ListClassroomsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -112,7 +121,7 @@ class ListClassroomsRequest:
         查询的课堂类别，默认查询所有的课堂。 取值范围： create：只查询当前用户创建的课堂。 attend：只查询当前用户加入的课堂。 all：查询当前用户所有的课堂。
 
         :param query_type: The query_type of this ListClassroomsRequest.
-        :type: str
+        :type query_type: str
         """
         self._query_type = query_type
 

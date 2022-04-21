@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowResSceneRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowResSceneRequest:
     }
 
     def __init__(self, content_type=None, workspace_id=None, scene_id=None):
-        """ShowResSceneRequest - a model defined in huaweicloud sdk"""
+        """ShowResSceneRequest
+
+        The model defined in huaweicloud sdk
+
+        :param content_type: 内容类型，取值为application/json。
+        :type content_type: str
+        :param workspace_id: 工作空间id。
+        :type workspace_id: str
+        :param scene_id: 场景id。
+        :type scene_id: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class ShowResSceneRequest:
         内容类型，取值为application/json。
 
         :param content_type: The content_type of this ShowResSceneRequest.
-        :type: str
+        :type content_type: str
         """
         self._content_type = content_type
 
@@ -87,7 +96,7 @@ class ShowResSceneRequest:
         工作空间id。
 
         :param workspace_id: The workspace_id of this ShowResSceneRequest.
-        :type: str
+        :type workspace_id: str
         """
         self._workspace_id = workspace_id
 
@@ -109,7 +118,7 @@ class ShowResSceneRequest:
         场景id。
 
         :param scene_id: The scene_id of this ShowResSceneRequest.
-        :type: str
+        :type scene_id: str
         """
         self._scene_id = scene_id
 

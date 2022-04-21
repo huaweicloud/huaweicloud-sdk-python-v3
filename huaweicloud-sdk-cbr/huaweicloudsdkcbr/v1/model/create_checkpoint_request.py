@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateCheckpointRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateCheckpointRequest:
     }
 
     def __init__(self, body=None):
-        """CreateCheckpointRequest - a model defined in huaweicloud sdk"""
+        """CreateCheckpointRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateCheckpointRequest
+        :type body: :class:`huaweicloudsdkcbr.v1.VaultBackupReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateCheckpointRequest:
 
 
         :return: The body of this CreateCheckpointRequest.
-        :rtype: VaultBackupReq
+        :rtype: :class:`huaweicloudsdkcbr.v1.VaultBackupReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateCheckpointRequest:
 
 
         :param body: The body of this CreateCheckpointRequest.
-        :type: VaultBackupReq
+        :type body: :class:`huaweicloudsdkcbr.v1.VaultBackupReq`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EdgemgrDevicesUpdate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class EdgemgrDevicesUpdate:
     }
 
     def __init__(self, device=None):
-        """EdgemgrDevicesUpdate - a model defined in huaweicloud sdk"""
+        """EdgemgrDevicesUpdate
+
+        The model defined in huaweicloud sdk
+
+        :param device: 
+        :type device: :class:`huaweicloudsdkief.v1.EdgemgrDevicesPara`
+        """
         
         
 
@@ -45,7 +50,7 @@ class EdgemgrDevicesUpdate:
 
 
         :return: The device of this EdgemgrDevicesUpdate.
-        :rtype: EdgemgrDevicesPara
+        :rtype: :class:`huaweicloudsdkief.v1.EdgemgrDevicesPara`
         """
         return self._device
 
@@ -55,7 +60,7 @@ class EdgemgrDevicesUpdate:
 
 
         :param device: The device of this EdgemgrDevicesUpdate.
-        :type: EdgemgrDevicesPara
+        :type device: :class:`huaweicloudsdkief.v1.EdgemgrDevicesPara`
         """
         self._device = device
 

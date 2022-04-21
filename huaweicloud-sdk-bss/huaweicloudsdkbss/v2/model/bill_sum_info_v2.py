@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BillSumInfoV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class BillSumInfoV2:
     }
 
     def __init__(self, customer_id=None, cloud_service_type=None, cloud_service_type_name=None, bill_type=None, charge_mode=None, amount=None, debt_amount=None, adjustment_amount=None, discount_amount=None, measure_id=None, account_details=None, resource_type_code=None, resource_type_name=None):
-        """BillSumInfoV2 - a model defined in huaweicloud sdk"""
+        """BillSumInfoV2
+
+        The model defined in huaweicloud sdk
+
+        :param customer_id: 客户账号ID。
+        :type customer_id: str
+        :param cloud_service_type: 云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
+        :type cloud_service_type: str
+        :param cloud_service_type_name: 云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
+        :type cloud_service_type_name: str
+        :param bill_type: 账单类型。 0：正常1：退订2：华为核销
+        :type bill_type: str
+        :param charge_mode: 计费模式。 1：包年/包月3: 按需
+        :type charge_mode: str
+        :param amount: 金额。 对于billType&#x3D;1或者2的账单，该金额为负值。
+        :type amount: float
+        :param debt_amount: 欠费金额，指从客户账户扣费的时候，客户账户金额不足，欠费的金额，华为核销或者退订的时候没有该字段。
+        :type debt_amount: float
+        :param adjustment_amount: 核销欠款，华为核销或者退订的时候没有该字段。
+        :type adjustment_amount: float
+        :param discount_amount: 折扣金额，华为核销或者退订的时候没有该字段。
+        :type discount_amount: float
+        :param measure_id: 金额单位。 1：元
+        :type measure_id: int
+        :param account_details: 按不同账户消费类型和付费方式区分的支付总金额。 具体请参见表3。
+        :type account_details: list[:class:`huaweicloudsdkbss.v2.BalanceTypeDeductSumV2`]
+        :param resource_type_code: 资源类型编码，例如ECS的VM为“hws.resource.type.vm”。
+        :type resource_type_code: str
+        :param resource_type_name: 资源类型名称。例如ECS的资源类型名称为“云主机”。
+        :type resource_type_name: str
+        """
         
         
 
@@ -118,7 +147,7 @@ class BillSumInfoV2:
         客户账号ID。
 
         :param customer_id: The customer_id of this BillSumInfoV2.
-        :type: str
+        :type customer_id: str
         """
         self._customer_id = customer_id
 
@@ -140,7 +169,7 @@ class BillSumInfoV2:
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
         :param cloud_service_type: The cloud_service_type of this BillSumInfoV2.
-        :type: str
+        :type cloud_service_type: str
         """
         self._cloud_service_type = cloud_service_type
 
@@ -162,7 +191,7 @@ class BillSumInfoV2:
         云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
 
         :param cloud_service_type_name: The cloud_service_type_name of this BillSumInfoV2.
-        :type: str
+        :type cloud_service_type_name: str
         """
         self._cloud_service_type_name = cloud_service_type_name
 
@@ -184,7 +213,7 @@ class BillSumInfoV2:
         账单类型。 0：正常1：退订2：华为核销
 
         :param bill_type: The bill_type of this BillSumInfoV2.
-        :type: str
+        :type bill_type: str
         """
         self._bill_type = bill_type
 
@@ -206,7 +235,7 @@ class BillSumInfoV2:
         计费模式。 1：包年/包月3: 按需
 
         :param charge_mode: The charge_mode of this BillSumInfoV2.
-        :type: str
+        :type charge_mode: str
         """
         self._charge_mode = charge_mode
 
@@ -228,7 +257,7 @@ class BillSumInfoV2:
         金额。 对于billType=1或者2的账单，该金额为负值。
 
         :param amount: The amount of this BillSumInfoV2.
-        :type: float
+        :type amount: float
         """
         self._amount = amount
 
@@ -250,7 +279,7 @@ class BillSumInfoV2:
         欠费金额，指从客户账户扣费的时候，客户账户金额不足，欠费的金额，华为核销或者退订的时候没有该字段。
 
         :param debt_amount: The debt_amount of this BillSumInfoV2.
-        :type: float
+        :type debt_amount: float
         """
         self._debt_amount = debt_amount
 
@@ -272,7 +301,7 @@ class BillSumInfoV2:
         核销欠款，华为核销或者退订的时候没有该字段。
 
         :param adjustment_amount: The adjustment_amount of this BillSumInfoV2.
-        :type: float
+        :type adjustment_amount: float
         """
         self._adjustment_amount = adjustment_amount
 
@@ -294,7 +323,7 @@ class BillSumInfoV2:
         折扣金额，华为核销或者退订的时候没有该字段。
 
         :param discount_amount: The discount_amount of this BillSumInfoV2.
-        :type: float
+        :type discount_amount: float
         """
         self._discount_amount = discount_amount
 
@@ -316,7 +345,7 @@ class BillSumInfoV2:
         金额单位。 1：元
 
         :param measure_id: The measure_id of this BillSumInfoV2.
-        :type: int
+        :type measure_id: int
         """
         self._measure_id = measure_id
 
@@ -327,7 +356,7 @@ class BillSumInfoV2:
         按不同账户消费类型和付费方式区分的支付总金额。 具体请参见表3。
 
         :return: The account_details of this BillSumInfoV2.
-        :rtype: list[BalanceTypeDeductSumV2]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.BalanceTypeDeductSumV2`]
         """
         return self._account_details
 
@@ -338,7 +367,7 @@ class BillSumInfoV2:
         按不同账户消费类型和付费方式区分的支付总金额。 具体请参见表3。
 
         :param account_details: The account_details of this BillSumInfoV2.
-        :type: list[BalanceTypeDeductSumV2]
+        :type account_details: list[:class:`huaweicloudsdkbss.v2.BalanceTypeDeductSumV2`]
         """
         self._account_details = account_details
 
@@ -360,7 +389,7 @@ class BillSumInfoV2:
         资源类型编码，例如ECS的VM为“hws.resource.type.vm”。
 
         :param resource_type_code: The resource_type_code of this BillSumInfoV2.
-        :type: str
+        :type resource_type_code: str
         """
         self._resource_type_code = resource_type_code
 
@@ -382,7 +411,7 @@ class BillSumInfoV2:
         资源类型名称。例如ECS的资源类型名称为“云主机”。
 
         :param resource_type_name: The resource_type_name of this BillSumInfoV2.
-        :type: str
+        :type resource_type_name: str
         """
         self._resource_type_name = resource_type_name
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSecretsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListSecretsRequest:
     }
 
     def __init__(self, ief_instance_id=None, name=None, limit=None, offset=None, sort=None):
-        """ListSecretsRequest - a model defined in huaweicloud sdk"""
+        """ListSecretsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param ief_instance_id: 铂金版实例ID，专业版实例为空值
+        :type ief_instance_id: str
+        :param name: 密钥名称，模糊匹配
+        :type name: str
+        :param limit: 每页显示的条目数量，取值范围1~1000，默认值为1000。
+        :type limit: str
+        :param offset: 查询的起始位置，取值范围为非负整数，默认为0
+        :type offset: str
+        :param sort: 排序方式，可根据名称、创建时间、更新时间排序 枚举值： - name - created_at - updated_at 默认升序，如sort&#x3D;name，降序：sort&#x3D;name%3Adesc
+        :type sort: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class ListSecretsRequest:
         铂金版实例ID，专业版实例为空值
 
         :param ief_instance_id: The ief_instance_id of this ListSecretsRequest.
-        :type: str
+        :type ief_instance_id: str
         """
         self._ief_instance_id = ief_instance_id
 
@@ -100,7 +113,7 @@ class ListSecretsRequest:
         密钥名称，模糊匹配
 
         :param name: The name of this ListSecretsRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -122,7 +135,7 @@ class ListSecretsRequest:
         每页显示的条目数量，取值范围1~1000，默认值为1000。
 
         :param limit: The limit of this ListSecretsRequest.
-        :type: str
+        :type limit: str
         """
         self._limit = limit
 
@@ -144,7 +157,7 @@ class ListSecretsRequest:
         查询的起始位置，取值范围为非负整数，默认为0
 
         :param offset: The offset of this ListSecretsRequest.
-        :type: str
+        :type offset: str
         """
         self._offset = offset
 
@@ -166,7 +179,7 @@ class ListSecretsRequest:
         排序方式，可根据名称、创建时间、更新时间排序 枚举值： - name - created_at - updated_at 默认升序，如sort=name，降序：sort=name%3Adesc
 
         :param sort: The sort of this ListSecretsRequest.
-        :type: str
+        :type sort: str
         """
         self._sort = sort
 

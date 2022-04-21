@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPremiumHostRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListPremiumHostRequest:
     }
 
     def __init__(self, enterprise_project_id=None, page=None, pagesize=None, hostname=None, policyname=None, protect_status=None):
-        """ListPremiumHostRequest - a model defined in huaweicloud sdk"""
+        """ListPremiumHostRequest
+
+        The model defined in huaweicloud sdk
+
+        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        :type enterprise_project_id: str
+        :param page: 分页查询时，返回第几页数据。范围0-100000，默认值为1，表示返回第1页数据。
+        :type page: str
+        :param pagesize: 分页查询时，每页包含多少条结果。范围1-100，默认值为10，表示每页包含10条结果。
+        :type pagesize: str
+        :param hostname: 域名
+        :type hostname: str
+        :param policyname: 策略名称
+        :type policyname: str
+        :param protect_status: 域名防护状态：  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
+        :type protect_status: int
+        """
         
         
 
@@ -83,7 +98,7 @@ class ListPremiumHostRequest:
         您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this ListPremiumHostRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -105,7 +120,7 @@ class ListPremiumHostRequest:
         分页查询时，返回第几页数据。范围0-100000，默认值为1，表示返回第1页数据。
 
         :param page: The page of this ListPremiumHostRequest.
-        :type: str
+        :type page: str
         """
         self._page = page
 
@@ -127,7 +142,7 @@ class ListPremiumHostRequest:
         分页查询时，每页包含多少条结果。范围1-100，默认值为10，表示每页包含10条结果。
 
         :param pagesize: The pagesize of this ListPremiumHostRequest.
-        :type: str
+        :type pagesize: str
         """
         self._pagesize = pagesize
 
@@ -149,7 +164,7 @@ class ListPremiumHostRequest:
         域名
 
         :param hostname: The hostname of this ListPremiumHostRequest.
-        :type: str
+        :type hostname: str
         """
         self._hostname = hostname
 
@@ -171,7 +186,7 @@ class ListPremiumHostRequest:
         策略名称
 
         :param policyname: The policyname of this ListPremiumHostRequest.
-        :type: str
+        :type policyname: str
         """
         self._policyname = policyname
 
@@ -193,7 +208,7 @@ class ListPremiumHostRequest:
         域名防护状态：  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
 
         :param protect_status: The protect_status of this ListPremiumHostRequest.
-        :type: int
+        :type protect_status: int
         """
         self._protect_status = protect_status
 

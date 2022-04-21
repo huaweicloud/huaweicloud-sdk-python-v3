@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AgencyTokenResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class AgencyTokenResult:
     }
 
     def __init__(self, methods=None, expires_at=None, issued_at=None, assumed_by=None, catalog=None, domain=None, project=None, roles=None, user=None):
-        """AgencyTokenResult - a model defined in huaweicloud sdk"""
+        """AgencyTokenResult
+
+        The model defined in huaweicloud sdk
+
+        :param methods: 获取token的方式。
+        :type methods: list[str]
+        :param expires_at: token到期时间。
+        :type expires_at: str
+        :param issued_at: token下发时间。
+        :type issued_at: str
+        :param assumed_by: 
+        :type assumed_by: :class:`huaweicloudsdkiam.v3.AgencyAssumedby`
+        :param catalog: 服务目录信息。
+        :type catalog: list[:class:`huaweicloudsdkiam.v3.TokenCatalog`]
+        :param domain: 
+        :type domain: :class:`huaweicloudsdkiam.v3.AgencyTokenDomain`
+        :param project: 
+        :type project: :class:`huaweicloudsdkiam.v3.AgencyTokenProject`
+        :param roles: 委托token的权限信息。
+        :type roles: list[:class:`huaweicloudsdkiam.v3.TokenRole`]
+        :param user: 
+        :type user: :class:`huaweicloudsdkiam.v3.AgencyTokenUser`
+        """
         
         
 
@@ -92,7 +113,7 @@ class AgencyTokenResult:
         获取token的方式。
 
         :param methods: The methods of this AgencyTokenResult.
-        :type: list[str]
+        :type methods: list[str]
         """
         self._methods = methods
 
@@ -114,7 +135,7 @@ class AgencyTokenResult:
         token到期时间。
 
         :param expires_at: The expires_at of this AgencyTokenResult.
-        :type: str
+        :type expires_at: str
         """
         self._expires_at = expires_at
 
@@ -136,7 +157,7 @@ class AgencyTokenResult:
         token下发时间。
 
         :param issued_at: The issued_at of this AgencyTokenResult.
-        :type: str
+        :type issued_at: str
         """
         self._issued_at = issued_at
 
@@ -146,7 +167,7 @@ class AgencyTokenResult:
 
 
         :return: The assumed_by of this AgencyTokenResult.
-        :rtype: AgencyAssumedby
+        :rtype: :class:`huaweicloudsdkiam.v3.AgencyAssumedby`
         """
         return self._assumed_by
 
@@ -156,7 +177,7 @@ class AgencyTokenResult:
 
 
         :param assumed_by: The assumed_by of this AgencyTokenResult.
-        :type: AgencyAssumedby
+        :type assumed_by: :class:`huaweicloudsdkiam.v3.AgencyAssumedby`
         """
         self._assumed_by = assumed_by
 
@@ -167,7 +188,7 @@ class AgencyTokenResult:
         服务目录信息。
 
         :return: The catalog of this AgencyTokenResult.
-        :rtype: list[TokenCatalog]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.TokenCatalog`]
         """
         return self._catalog
 
@@ -178,7 +199,7 @@ class AgencyTokenResult:
         服务目录信息。
 
         :param catalog: The catalog of this AgencyTokenResult.
-        :type: list[TokenCatalog]
+        :type catalog: list[:class:`huaweicloudsdkiam.v3.TokenCatalog`]
         """
         self._catalog = catalog
 
@@ -188,7 +209,7 @@ class AgencyTokenResult:
 
 
         :return: The domain of this AgencyTokenResult.
-        :rtype: AgencyTokenDomain
+        :rtype: :class:`huaweicloudsdkiam.v3.AgencyTokenDomain`
         """
         return self._domain
 
@@ -198,7 +219,7 @@ class AgencyTokenResult:
 
 
         :param domain: The domain of this AgencyTokenResult.
-        :type: AgencyTokenDomain
+        :type domain: :class:`huaweicloudsdkiam.v3.AgencyTokenDomain`
         """
         self._domain = domain
 
@@ -208,7 +229,7 @@ class AgencyTokenResult:
 
 
         :return: The project of this AgencyTokenResult.
-        :rtype: AgencyTokenProject
+        :rtype: :class:`huaweicloudsdkiam.v3.AgencyTokenProject`
         """
         return self._project
 
@@ -218,7 +239,7 @@ class AgencyTokenResult:
 
 
         :param project: The project of this AgencyTokenResult.
-        :type: AgencyTokenProject
+        :type project: :class:`huaweicloudsdkiam.v3.AgencyTokenProject`
         """
         self._project = project
 
@@ -229,7 +250,7 @@ class AgencyTokenResult:
         委托token的权限信息。
 
         :return: The roles of this AgencyTokenResult.
-        :rtype: list[TokenRole]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.TokenRole`]
         """
         return self._roles
 
@@ -240,7 +261,7 @@ class AgencyTokenResult:
         委托token的权限信息。
 
         :param roles: The roles of this AgencyTokenResult.
-        :type: list[TokenRole]
+        :type roles: list[:class:`huaweicloudsdkiam.v3.TokenRole`]
         """
         self._roles = roles
 
@@ -250,7 +271,7 @@ class AgencyTokenResult:
 
 
         :return: The user of this AgencyTokenResult.
-        :rtype: AgencyTokenUser
+        :rtype: :class:`huaweicloudsdkiam.v3.AgencyTokenUser`
         """
         return self._user
 
@@ -260,7 +281,7 @@ class AgencyTokenResult:
 
 
         :param user: The user of this AgencyTokenResult.
-        :type: AgencyTokenUser
+        :type user: :class:`huaweicloudsdkiam.v3.AgencyTokenUser`
         """
         self._user = user
 

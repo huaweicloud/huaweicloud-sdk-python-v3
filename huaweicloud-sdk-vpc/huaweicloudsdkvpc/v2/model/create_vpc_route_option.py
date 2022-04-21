@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateVpcRouteOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CreateVpcRouteOption:
     }
 
     def __init__(self, destination=None, nexthop=None, type=None, vpc_id=None):
-        """CreateVpcRouteOption - a model defined in huaweicloud sdk"""
+        """CreateVpcRouteOption
+
+        The model defined in huaweicloud sdk
+
+        :param destination: 路由目的地址CIDR，如192.168.200.0/24。
+        :type destination: str
+        :param nexthop: 功能说明：路由下一跳  取值范围：如果type为peering类型，则nexthop为peering的ID
+        :type nexthop: str
+        :param type: 功能说明：路由类型  取值范围：peering
+        :type type: str
+        :param vpc_id: 请求添加路由的VPC ID
+        :type vpc_id: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class CreateVpcRouteOption:
         路由目的地址CIDR，如192.168.200.0/24。
 
         :param destination: The destination of this CreateVpcRouteOption.
-        :type: str
+        :type destination: str
         """
         self._destination = destination
 
@@ -91,7 +102,7 @@ class CreateVpcRouteOption:
         功能说明：路由下一跳  取值范围：如果type为peering类型，则nexthop为peering的ID
 
         :param nexthop: The nexthop of this CreateVpcRouteOption.
-        :type: str
+        :type nexthop: str
         """
         self._nexthop = nexthop
 
@@ -113,7 +124,7 @@ class CreateVpcRouteOption:
         功能说明：路由类型  取值范围：peering
 
         :param type: The type of this CreateVpcRouteOption.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -135,7 +146,7 @@ class CreateVpcRouteOption:
         请求添加路由的VPC ID
 
         :param vpc_id: The vpc_id of this CreateVpcRouteOption.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 

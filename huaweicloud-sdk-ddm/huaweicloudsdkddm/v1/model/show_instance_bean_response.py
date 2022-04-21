@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowInstanceBeanResponse:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -68,7 +67,51 @@ class ShowInstanceBeanResponse:
     }
 
     def __init__(self, id=None, status=None, name=None, created=None, updated=None, available_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, node_count=None, access_ip=None, access_port=None, core_count=None, ram_capacity=None, error_msg=None, node_status=None, enterprise_project_id=None, project_id=None, engine_version=None, order_id=None):
-        """ShowInstanceBeanResponse - a model defined in huaweicloud sdk"""
+        """ShowInstanceBeanResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: DDM实例ID。
+        :type id: str
+        :param status: DDM实例状态。
+        :type status: str
+        :param name: 创建的实例名称。
+        :type name: str
+        :param created: 创建时间，格式为yyyy-mm-dd Thh:mm:ssZ。  其中，T指定某个时间的开始；Z指示 UTC 时间。
+        :type created: str
+        :param updated: 更新时间，格式与“created”完全相同。
+        :type updated: str
+        :param available_zone: 可用区名称
+        :type available_zone: str
+        :param vpc_id: 虚拟私有云的ID。
+        :type vpc_id: str
+        :param subnet_id: 子网ID。
+        :type subnet_id: str
+        :param security_group_id: 安全组ID。
+        :type security_group_id: str
+        :param node_count: 节点数量。
+        :type node_count: int
+        :param access_ip: DDM实例访问地址。
+        :type access_ip: str
+        :param access_port: DDM实例访问端口。
+        :type access_port: str
+        :param core_count: cpu个数。
+        :type core_count: str
+        :param ram_capacity: 内存大小，单位为G。
+        :type ram_capacity: str
+        :param error_msg: 响应信息，若无异常信息则不返回该参数 
+        :type error_msg: str
+        :param node_status: 节点状态。
+        :type node_status: str
+        :param enterprise_project_id: 企业项目ID。
+        :type enterprise_project_id: str
+        :param project_id: 租户在某一region下的project ID。
+        :type project_id: str
+        :param engine_version: 引擎版本号（Core实例版本号）。
+        :type engine_version: str
+        :param order_id: 包周期的实例，有订单id。
+        :type order_id: str
+        """
         
         
 
@@ -135,7 +178,7 @@ class ShowInstanceBeanResponse:
         DDM实例ID。
 
         :param id: The id of this ShowInstanceBeanResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -157,7 +200,7 @@ class ShowInstanceBeanResponse:
         DDM实例状态。
 
         :param status: The status of this ShowInstanceBeanResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -179,7 +222,7 @@ class ShowInstanceBeanResponse:
         创建的实例名称。
 
         :param name: The name of this ShowInstanceBeanResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -201,7 +244,7 @@ class ShowInstanceBeanResponse:
         创建时间，格式为yyyy-mm-dd Thh:mm:ssZ。  其中，T指定某个时间的开始；Z指示 UTC 时间。
 
         :param created: The created of this ShowInstanceBeanResponse.
-        :type: str
+        :type created: str
         """
         self._created = created
 
@@ -223,7 +266,7 @@ class ShowInstanceBeanResponse:
         更新时间，格式与“created”完全相同。
 
         :param updated: The updated of this ShowInstanceBeanResponse.
-        :type: str
+        :type updated: str
         """
         self._updated = updated
 
@@ -245,7 +288,7 @@ class ShowInstanceBeanResponse:
         可用区名称
 
         :param available_zone: The available_zone of this ShowInstanceBeanResponse.
-        :type: str
+        :type available_zone: str
         """
         self._available_zone = available_zone
 
@@ -267,7 +310,7 @@ class ShowInstanceBeanResponse:
         虚拟私有云的ID。
 
         :param vpc_id: The vpc_id of this ShowInstanceBeanResponse.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -289,7 +332,7 @@ class ShowInstanceBeanResponse:
         子网ID。
 
         :param subnet_id: The subnet_id of this ShowInstanceBeanResponse.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -311,7 +354,7 @@ class ShowInstanceBeanResponse:
         安全组ID。
 
         :param security_group_id: The security_group_id of this ShowInstanceBeanResponse.
-        :type: str
+        :type security_group_id: str
         """
         self._security_group_id = security_group_id
 
@@ -333,7 +376,7 @@ class ShowInstanceBeanResponse:
         节点数量。
 
         :param node_count: The node_count of this ShowInstanceBeanResponse.
-        :type: int
+        :type node_count: int
         """
         self._node_count = node_count
 
@@ -355,7 +398,7 @@ class ShowInstanceBeanResponse:
         DDM实例访问地址。
 
         :param access_ip: The access_ip of this ShowInstanceBeanResponse.
-        :type: str
+        :type access_ip: str
         """
         self._access_ip = access_ip
 
@@ -377,7 +420,7 @@ class ShowInstanceBeanResponse:
         DDM实例访问端口。
 
         :param access_port: The access_port of this ShowInstanceBeanResponse.
-        :type: str
+        :type access_port: str
         """
         self._access_port = access_port
 
@@ -399,7 +442,7 @@ class ShowInstanceBeanResponse:
         cpu个数。
 
         :param core_count: The core_count of this ShowInstanceBeanResponse.
-        :type: str
+        :type core_count: str
         """
         self._core_count = core_count
 
@@ -421,7 +464,7 @@ class ShowInstanceBeanResponse:
         内存大小，单位为G。
 
         :param ram_capacity: The ram_capacity of this ShowInstanceBeanResponse.
-        :type: str
+        :type ram_capacity: str
         """
         self._ram_capacity = ram_capacity
 
@@ -443,7 +486,7 @@ class ShowInstanceBeanResponse:
         响应信息，若无异常信息则不返回该参数 
 
         :param error_msg: The error_msg of this ShowInstanceBeanResponse.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 
@@ -465,7 +508,7 @@ class ShowInstanceBeanResponse:
         节点状态。
 
         :param node_status: The node_status of this ShowInstanceBeanResponse.
-        :type: str
+        :type node_status: str
         """
         self._node_status = node_status
 
@@ -487,7 +530,7 @@ class ShowInstanceBeanResponse:
         企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this ShowInstanceBeanResponse.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -509,7 +552,7 @@ class ShowInstanceBeanResponse:
         租户在某一region下的project ID。
 
         :param project_id: The project_id of this ShowInstanceBeanResponse.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -531,7 +574,7 @@ class ShowInstanceBeanResponse:
         引擎版本号（Core实例版本号）。
 
         :param engine_version: The engine_version of this ShowInstanceBeanResponse.
-        :type: str
+        :type engine_version: str
         """
         self._engine_version = engine_version
 
@@ -553,7 +596,7 @@ class ShowInstanceBeanResponse:
         包周期的实例，有订单id。
 
         :param order_id: The order_id of this ShowInstanceBeanResponse.
-        :type: str
+        :type order_id: str
         """
         self._order_id = order_id
 

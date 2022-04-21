@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDailyReportResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListDailyReportResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ListDailyReportResponse - a model defined in huaweicloud sdk"""
+        """ListDailyReportResponse
+
+        The model defined in huaweicloud sdk
+
+        :param data: 24小时内的流量数据
+        :type data: list[:class:`huaweicloudsdkantiddos.v1.DailyData`]
+        """
         
         super(ListDailyReportResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListDailyReportResponse(SdkResponse):
         24小时内的流量数据
 
         :return: The data of this ListDailyReportResponse.
-        :rtype: list[DailyData]
+        :rtype: list[:class:`huaweicloudsdkantiddos.v1.DailyData`]
         """
         return self._data
 
@@ -58,7 +63,7 @@ class ListDailyReportResponse(SdkResponse):
         24小时内的流量数据
 
         :param data: The data of this ListDailyReportResponse.
-        :type: list[DailyData]
+        :type data: list[:class:`huaweicloudsdkantiddos.v1.DailyData`]
         """
         self._data = data
 

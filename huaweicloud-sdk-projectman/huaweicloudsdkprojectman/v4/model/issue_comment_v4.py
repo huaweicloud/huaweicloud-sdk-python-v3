@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IssueCommentV4:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class IssueCommentV4:
     }
 
     def __init__(self, comment=None, id=None, created_time=None, user=None):
-        """IssueCommentV4 - a model defined in huaweicloud sdk"""
+        """IssueCommentV4
+
+        The model defined in huaweicloud sdk
+
+        :param comment: 评论内容
+        :type comment: str
+        :param id: 评论id
+        :type id: int
+        :param created_time: 评论时间
+        :type created_time: str
+        :param user: 
+        :type user: :class:`huaweicloudsdkprojectman.v4.CommentUserV4`
+        """
         
         
 
@@ -73,7 +84,7 @@ class IssueCommentV4:
         评论内容
 
         :param comment: The comment of this IssueCommentV4.
-        :type: str
+        :type comment: str
         """
         self._comment = comment
 
@@ -95,7 +106,7 @@ class IssueCommentV4:
         评论id
 
         :param id: The id of this IssueCommentV4.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -117,7 +128,7 @@ class IssueCommentV4:
         评论时间
 
         :param created_time: The created_time of this IssueCommentV4.
-        :type: str
+        :type created_time: str
         """
         self._created_time = created_time
 
@@ -127,7 +138,7 @@ class IssueCommentV4:
 
 
         :return: The user of this IssueCommentV4.
-        :rtype: CommentUserV4
+        :rtype: :class:`huaweicloudsdkprojectman.v4.CommentUserV4`
         """
         return self._user
 
@@ -137,7 +148,7 @@ class IssueCommentV4:
 
 
         :param user: The user of this IssueCommentV4.
-        :type: CommentUserV4
+        :type user: :class:`huaweicloudsdkprojectman.v4.CommentUserV4`
         """
         self._user = user
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RecordRuleRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class RecordRuleRequest:
     }
 
     def __init__(self, publish_domain=None, app=None, stream=None, record_type=None, default_record_config=None):
-        """RecordRuleRequest - a model defined in huaweicloud sdk"""
+        """RecordRuleRequest
+
+        The model defined in huaweicloud sdk
+
+        :param publish_domain: 直播推流域名
+        :type publish_domain: str
+        :param app: 应用名，如需匹配任意应用则填写*。录制规则匹配的时候，优先精确app匹配，如果匹配不到，则匹配*
+        :type app: str
+        :param stream: 录制的流名，如需匹配任流名则填写*。录制规则匹配的时候，优先精确stream匹配，如果匹配不到，则匹配*
+        :type stream: str
+        :param record_type: 录制类型，包括：CONTINUOUS_RECORD，COMMAND_RECORD，PLAN_RECORD，ON_DEMAND_RECORD。默认CONTINUOUS_RECORD。 - CONTINUOUS_RECORD：持续录制，在该规则类型配置后，只要有流到推送到录制系统，就触发录制。 - COMMAND_RECORD：命令录制，在该规则类型配置后，在流推送到录制系统后，租户需要通过命令控制该流的录制开始和结束。 - PLAN_RECORD：计划录制，在该规则类型配置后，推的流如果在计划录制的时间区间则触发录制。 - ON_DEMAND_RECORD：按需录制，在该规则类型配置后，录制系统收到推流后，需要调用租户提供的接口查询录制规则，并根据规则录制。 
+        :type record_type: str
+        :param default_record_config: 
+        :type default_record_config: :class:`huaweicloudsdklive.v1.DefaultRecordConfig`
+        """
         
         
 
@@ -74,7 +87,7 @@ class RecordRuleRequest:
         直播推流域名
 
         :param publish_domain: The publish_domain of this RecordRuleRequest.
-        :type: str
+        :type publish_domain: str
         """
         self._publish_domain = publish_domain
 
@@ -96,7 +109,7 @@ class RecordRuleRequest:
         应用名，如需匹配任意应用则填写*。录制规则匹配的时候，优先精确app匹配，如果匹配不到，则匹配*
 
         :param app: The app of this RecordRuleRequest.
-        :type: str
+        :type app: str
         """
         self._app = app
 
@@ -118,7 +131,7 @@ class RecordRuleRequest:
         录制的流名，如需匹配任流名则填写*。录制规则匹配的时候，优先精确stream匹配，如果匹配不到，则匹配*
 
         :param stream: The stream of this RecordRuleRequest.
-        :type: str
+        :type stream: str
         """
         self._stream = stream
 
@@ -140,7 +153,7 @@ class RecordRuleRequest:
         录制类型，包括：CONTINUOUS_RECORD，COMMAND_RECORD，PLAN_RECORD，ON_DEMAND_RECORD。默认CONTINUOUS_RECORD。 - CONTINUOUS_RECORD：持续录制，在该规则类型配置后，只要有流到推送到录制系统，就触发录制。 - COMMAND_RECORD：命令录制，在该规则类型配置后，在流推送到录制系统后，租户需要通过命令控制该流的录制开始和结束。 - PLAN_RECORD：计划录制，在该规则类型配置后，推的流如果在计划录制的时间区间则触发录制。 - ON_DEMAND_RECORD：按需录制，在该规则类型配置后，录制系统收到推流后，需要调用租户提供的接口查询录制规则，并根据规则录制。 
 
         :param record_type: The record_type of this RecordRuleRequest.
-        :type: str
+        :type record_type: str
         """
         self._record_type = record_type
 
@@ -150,7 +163,7 @@ class RecordRuleRequest:
 
 
         :return: The default_record_config of this RecordRuleRequest.
-        :rtype: DefaultRecordConfig
+        :rtype: :class:`huaweicloudsdklive.v1.DefaultRecordConfig`
         """
         return self._default_record_config
 
@@ -160,7 +173,7 @@ class RecordRuleRequest:
 
 
         :param default_record_config: The default_record_config of this RecordRuleRequest.
-        :type: DefaultRecordConfig
+        :type default_record_config: :class:`huaweicloudsdklive.v1.DefaultRecordConfig`
         """
         self._default_record_config = default_record_config
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteEdgeNodeRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteEdgeNodeRequest:
     }
 
     def __init__(self, edge_node_id=None, delete_external_node=None):
-        """DeleteEdgeNodeRequest - a model defined in huaweicloud sdk"""
+        """DeleteEdgeNodeRequest
+
+        The model defined in huaweicloud sdk
+
+        :param edge_node_id: 边缘节点ID
+        :type edge_node_id: str
+        :param delete_external_node: 是否同时删除外部节点（仅对高级版有效），默认为false不删除IEF侧的边缘节点
+        :type delete_external_node: bool
+        """
         
         
 
@@ -62,7 +69,7 @@ class DeleteEdgeNodeRequest:
         边缘节点ID
 
         :param edge_node_id: The edge_node_id of this DeleteEdgeNodeRequest.
-        :type: str
+        :type edge_node_id: str
         """
         self._edge_node_id = edge_node_id
 
@@ -84,7 +91,7 @@ class DeleteEdgeNodeRequest:
         是否同时删除外部节点（仅对高级版有效），默认为false不删除IEF侧的边缘节点
 
         :param delete_external_node: The delete_external_node of this DeleteEdgeNodeRequest.
-        :type: bool
+        :type delete_external_node: bool
         """
         self._delete_external_node = delete_external_node
 

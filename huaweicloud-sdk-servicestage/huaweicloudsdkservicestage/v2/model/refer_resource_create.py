@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ReferResourceCreate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ReferResourceCreate:
     }
 
     def __init__(self, id=None, type=None, refer_alias=None, parameters=None):
-        """ReferResourceCreate - a model defined in huaweicloud sdk"""
+        """ReferResourceCreate
+
+        The model defined in huaweicloud sdk
+
+        :param id: 资源ID。
+        :type id: str
+        :param type: 
+        :type type: :class:`huaweicloudsdkservicestage.v2.ResourceType`
+        :param refer_alias: 应用别名，dcs时才提供，支持“distributed_session”、“distributed_cache”、“distributed_session, distributed_cache”，  默认值是“distributed_session, distributed_cache”。 
+        :type refer_alias: str
+        :param parameters: 引用资源参数。
+        :type parameters: object
+        """
         
         
 
@@ -71,7 +82,7 @@ class ReferResourceCreate:
         资源ID。
 
         :param id: The id of this ReferResourceCreate.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -81,7 +92,7 @@ class ReferResourceCreate:
 
 
         :return: The type of this ReferResourceCreate.
-        :rtype: ResourceType
+        :rtype: :class:`huaweicloudsdkservicestage.v2.ResourceType`
         """
         return self._type
 
@@ -91,7 +102,7 @@ class ReferResourceCreate:
 
 
         :param type: The type of this ReferResourceCreate.
-        :type: ResourceType
+        :type type: :class:`huaweicloudsdkservicestage.v2.ResourceType`
         """
         self._type = type
 
@@ -113,7 +124,7 @@ class ReferResourceCreate:
         应用别名，dcs时才提供，支持“distributed_session”、“distributed_cache”、“distributed_session, distributed_cache”，  默认值是“distributed_session, distributed_cache”。 
 
         :param refer_alias: The refer_alias of this ReferResourceCreate.
-        :type: str
+        :type refer_alias: str
         """
         self._refer_alias = refer_alias
 
@@ -135,7 +146,7 @@ class ReferResourceCreate:
         引用资源参数。
 
         :param parameters: The parameters of this ReferResourceCreate.
-        :type: object
+        :type parameters: object
         """
         self._parameters = parameters
 

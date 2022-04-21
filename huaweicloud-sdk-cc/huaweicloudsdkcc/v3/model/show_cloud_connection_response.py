@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowCloudConnectionResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowCloudConnectionResponse(SdkResponse):
     }
 
     def __init__(self, cloud_connection=None, request_id=None):
-        """ShowCloudConnectionResponse - a model defined in huaweicloud sdk"""
+        """ShowCloudConnectionResponse
+
+        The model defined in huaweicloud sdk
+
+        :param cloud_connection: 
+        :type cloud_connection: :class:`huaweicloudsdkcc.v3.CloudConnection`
+        :param request_id: 请求ID。
+        :type request_id: str
+        """
         
         super(ShowCloudConnectionResponse, self).__init__()
 
@@ -51,7 +58,7 @@ class ShowCloudConnectionResponse(SdkResponse):
 
 
         :return: The cloud_connection of this ShowCloudConnectionResponse.
-        :rtype: CloudConnection
+        :rtype: :class:`huaweicloudsdkcc.v3.CloudConnection`
         """
         return self._cloud_connection
 
@@ -61,7 +68,7 @@ class ShowCloudConnectionResponse(SdkResponse):
 
 
         :param cloud_connection: The cloud_connection of this ShowCloudConnectionResponse.
-        :type: CloudConnection
+        :type cloud_connection: :class:`huaweicloudsdkcc.v3.CloudConnection`
         """
         self._cloud_connection = cloud_connection
 
@@ -83,7 +90,7 @@ class ShowCloudConnectionResponse(SdkResponse):
         请求ID。
 
         :param request_id: The request_id of this ShowCloudConnectionResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 

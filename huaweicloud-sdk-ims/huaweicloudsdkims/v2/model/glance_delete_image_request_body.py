@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GlanceDeleteImageRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class GlanceDeleteImageRequestBody:
     }
 
     def __init__(self, delete_backup=None):
-        """GlanceDeleteImageRequestBody - a model defined in huaweicloud sdk"""
+        """GlanceDeleteImageRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param delete_backup: 取值为：true和false true：表示删除整机镜像时，同时删除其关联的云服务器备份。 false：表示只删除整机镜像，不删除其关联的云服务器备份。
+        :type delete_backup: bool
+        """
         
         
 
@@ -58,7 +63,7 @@ class GlanceDeleteImageRequestBody:
         取值为：true和false true：表示删除整机镜像时，同时删除其关联的云服务器备份。 false：表示只删除整机镜像，不删除其关联的云服务器备份。
 
         :param delete_backup: The delete_backup of this GlanceDeleteImageRequestBody.
-        :type: bool
+        :type delete_backup: bool
         """
         self._delete_backup = delete_backup
 

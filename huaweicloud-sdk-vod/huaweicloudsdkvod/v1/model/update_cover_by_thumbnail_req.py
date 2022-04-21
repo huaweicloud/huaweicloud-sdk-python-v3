@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateCoverByThumbnailReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateCoverByThumbnailReq:
     }
 
     def __init__(self, thumbnail_url=None):
-        """UpdateCoverByThumbnailReq - a model defined in huaweicloud sdk"""
+        """UpdateCoverByThumbnailReq
+
+        The model defined in huaweicloud sdk
+
+        :param thumbnail_url: 截图文件的URL。  需要根据媒资ID调用[查询媒资详细信息](https://support.huaweicloud.com/api-vod/vod_04_0202.html)接口获取媒资的截图文件URL。
+        :type thumbnail_url: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class UpdateCoverByThumbnailReq:
         截图文件的URL。  需要根据媒资ID调用[查询媒资详细信息](https://support.huaweicloud.com/api-vod/vod_04_0202.html)接口获取媒资的截图文件URL。
 
         :param thumbnail_url: The thumbnail_url of this UpdateCoverByThumbnailReq.
-        :type: str
+        :type thumbnail_url: str
         """
         self._thumbnail_url = thumbnail_url
 

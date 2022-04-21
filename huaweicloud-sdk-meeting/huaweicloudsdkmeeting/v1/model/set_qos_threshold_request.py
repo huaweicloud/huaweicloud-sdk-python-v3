@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SetQosThresholdRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class SetQosThresholdRequest:
     }
 
     def __init__(self, threshold_type=None, body=None):
-        """SetQosThresholdRequest - a model defined in huaweicloud sdk"""
+        """SetQosThresholdRequest
+
+        The model defined in huaweicloud sdk
+
+        :param threshold_type: 阈值类型： * AUDIO：音频相关阈值。 * VIDEO：视频相关阈值。 * SCREEN：屏幕共享相关阈值。 * CPU：CPU相关阈值。
+        :type threshold_type: str
+        :param body: Body of the SetQosThresholdRequest
+        :type body: :class:`huaweicloudsdkmeeting.v1.SetQosThresholdReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class SetQosThresholdRequest:
         阈值类型： * AUDIO：音频相关阈值。 * VIDEO：视频相关阈值。 * SCREEN：屏幕共享相关阈值。 * CPU：CPU相关阈值。
 
         :param threshold_type: The threshold_type of this SetQosThresholdRequest.
-        :type: str
+        :type threshold_type: str
         """
         self._threshold_type = threshold_type
 
@@ -72,7 +79,7 @@ class SetQosThresholdRequest:
 
 
         :return: The body of this SetQosThresholdRequest.
-        :rtype: SetQosThresholdReq
+        :rtype: :class:`huaweicloudsdkmeeting.v1.SetQosThresholdReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class SetQosThresholdRequest:
 
 
         :param body: The body of this SetQosThresholdRequest.
-        :type: SetQosThresholdReq
+        :type body: :class:`huaweicloudsdkmeeting.v1.SetQosThresholdReq`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowAssetMetaRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class ShowAssetMetaRequest:
     }
 
     def __init__(self, asset_id=None, status=None, transcode_status=None, asset_status=None, start_time=None, end_time=None, category_id=None, tags=None, query_string=None, page=None, size=None):
-        """ShowAssetMetaRequest - a model defined in huaweicloud sdk"""
+        """ShowAssetMetaRequest
+
+        The model defined in huaweicloud sdk
+
+        :param asset_id: 媒资id，最多同时查询10个媒资。
+        :type asset_id: list[str]
+        :param status: 媒资状态。  取值如下： - UNCREATED：未创建（媒资ID不存在 ） - DELETED：已删除 - CANCELLED：上传取消 - SERVER_ERROR：上传失败（点播服务端故障） - UPLOAD_FAILED：上传失败（向OBS上传失败） - CREATING：创建中 - PUBLISHED：已发布 - TRANSCODING：待发布（转码中） - TRANSCODE_FAILED：待发布（转码失败） - TRANSCODE_SUCCEED：待发布（转码成功） - CREATED：待发布（未转码）
+        :type status: list[str]
+        :param transcode_status: 转码状态  取值如下： - TRANSCODING：转码中 - TRANSCODE_FAILED：转码失败 - TRANSCODE_SUCCEED：转码成功 - UN_TRANSCODE：未转码 - WAITING_TRANSCODE：等待转码
+        :type transcode_status: list[str]
+        :param asset_status: 媒资状态。  取值如下： - PUBLISHED：已发布 - CREATED：未发布
+        :type asset_status: list[str]
+        :param start_time: 起始时间，查询指定“**asset_id**”时，该参数无效。  格式为yyyymmddhhmmss。必须是与时区无关的UTC时间。
+        :type start_time: str
+        :param end_time: 结束时间，查询指定“**asset_id**”时，该参数无效。  格式为yyyymmddhhmmss。必须是与时区无关的UTC时间。
+        :type end_time: str
+        :param category_id: 分类ID。
+        :type category_id: int
+        :param tags: 媒资标签。  单个标签不超过16个字节，最多不超过16个标签。  多个用逗号分隔，UTF8编码。
+        :type tags: str
+        :param query_string: 在媒资标题、描述中模糊查询的字符串。
+        :type query_string: str
+        :param page: 分页编号，查询指定“asset_id”时，该参数无效。  默认值：0。
+        :type page: int
+        :param size: 每页记录数，查询指定“**asset_id**”时，该参数无效。  取值范围：[1,100]。  默认值：10。
+        :type size: int
+        """
         
         
 
@@ -108,7 +133,7 @@ class ShowAssetMetaRequest:
         媒资id，最多同时查询10个媒资。
 
         :param asset_id: The asset_id of this ShowAssetMetaRequest.
-        :type: list[str]
+        :type asset_id: list[str]
         """
         self._asset_id = asset_id
 
@@ -130,7 +155,7 @@ class ShowAssetMetaRequest:
         媒资状态。  取值如下： - UNCREATED：未创建（媒资ID不存在 ） - DELETED：已删除 - CANCELLED：上传取消 - SERVER_ERROR：上传失败（点播服务端故障） - UPLOAD_FAILED：上传失败（向OBS上传失败） - CREATING：创建中 - PUBLISHED：已发布 - TRANSCODING：待发布（转码中） - TRANSCODE_FAILED：待发布（转码失败） - TRANSCODE_SUCCEED：待发布（转码成功） - CREATED：待发布（未转码）
 
         :param status: The status of this ShowAssetMetaRequest.
-        :type: list[str]
+        :type status: list[str]
         """
         self._status = status
 
@@ -152,7 +177,7 @@ class ShowAssetMetaRequest:
         转码状态  取值如下： - TRANSCODING：转码中 - TRANSCODE_FAILED：转码失败 - TRANSCODE_SUCCEED：转码成功 - UN_TRANSCODE：未转码 - WAITING_TRANSCODE：等待转码
 
         :param transcode_status: The transcode_status of this ShowAssetMetaRequest.
-        :type: list[str]
+        :type transcode_status: list[str]
         """
         self._transcode_status = transcode_status
 
@@ -174,7 +199,7 @@ class ShowAssetMetaRequest:
         媒资状态。  取值如下： - PUBLISHED：已发布 - CREATED：未发布
 
         :param asset_status: The asset_status of this ShowAssetMetaRequest.
-        :type: list[str]
+        :type asset_status: list[str]
         """
         self._asset_status = asset_status
 
@@ -196,7 +221,7 @@ class ShowAssetMetaRequest:
         起始时间，查询指定“**asset_id**”时，该参数无效。  格式为yyyymmddhhmmss。必须是与时区无关的UTC时间。
 
         :param start_time: The start_time of this ShowAssetMetaRequest.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -218,7 +243,7 @@ class ShowAssetMetaRequest:
         结束时间，查询指定“**asset_id**”时，该参数无效。  格式为yyyymmddhhmmss。必须是与时区无关的UTC时间。
 
         :param end_time: The end_time of this ShowAssetMetaRequest.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -240,7 +265,7 @@ class ShowAssetMetaRequest:
         分类ID。
 
         :param category_id: The category_id of this ShowAssetMetaRequest.
-        :type: int
+        :type category_id: int
         """
         self._category_id = category_id
 
@@ -262,7 +287,7 @@ class ShowAssetMetaRequest:
         媒资标签。  单个标签不超过16个字节，最多不超过16个标签。  多个用逗号分隔，UTF8编码。
 
         :param tags: The tags of this ShowAssetMetaRequest.
-        :type: str
+        :type tags: str
         """
         self._tags = tags
 
@@ -284,7 +309,7 @@ class ShowAssetMetaRequest:
         在媒资标题、描述中模糊查询的字符串。
 
         :param query_string: The query_string of this ShowAssetMetaRequest.
-        :type: str
+        :type query_string: str
         """
         self._query_string = query_string
 
@@ -306,7 +331,7 @@ class ShowAssetMetaRequest:
         分页编号，查询指定“asset_id”时，该参数无效。  默认值：0。
 
         :param page: The page of this ShowAssetMetaRequest.
-        :type: int
+        :type page: int
         """
         self._page = page
 
@@ -328,7 +353,7 @@ class ShowAssetMetaRequest:
         每页记录数，查询指定“**asset_id**”时，该参数无效。  取值范围：[1,100]。  默认值：10。
 
         :param size: The size of this ShowAssetMetaRequest.
-        :type: int
+        :type size: int
         """
         self._size = size
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAppQuantitiesV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListAppQuantitiesV2Response(SdkResponse):
     }
 
     def __init__(self, authed_nums=None, unauthed_nums=None):
-        """ListAppQuantitiesV2Response - a model defined in huaweicloud sdk"""
+        """ListAppQuantitiesV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param authed_nums: 已进行API访问授权的APP个数
+        :type authed_nums: int
+        :param unauthed_nums: 未进行API访问授权的APP个数
+        :type unauthed_nums: int
+        """
         
         super(ListAppQuantitiesV2Response, self).__init__()
 
@@ -63,7 +70,7 @@ class ListAppQuantitiesV2Response(SdkResponse):
         已进行API访问授权的APP个数
 
         :param authed_nums: The authed_nums of this ListAppQuantitiesV2Response.
-        :type: int
+        :type authed_nums: int
         """
         self._authed_nums = authed_nums
 
@@ -85,7 +92,7 @@ class ListAppQuantitiesV2Response(SdkResponse):
         未进行API访问授权的APP个数
 
         :param unauthed_nums: The unauthed_nums of this ListAppQuantitiesV2Response.
-        :type: int
+        :type unauthed_nums: int
         """
         self._unauthed_nums = unauthed_nums
 

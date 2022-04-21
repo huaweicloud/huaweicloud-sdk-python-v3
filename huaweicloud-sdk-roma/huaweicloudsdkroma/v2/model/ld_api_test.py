@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LdApiTest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class LdApiTest:
     }
 
     def __init__(self, parameters=None):
-        """LdApiTest - a model defined in huaweicloud sdk"""
+        """LdApiTest
+
+        The model defined in huaweicloud sdk
+
+        :param parameters: 后端API请求参数
+        :type parameters: list[:class:`huaweicloudsdkroma.v2.LdApiParameter`]
+        """
         
         
 
@@ -47,7 +52,7 @@ class LdApiTest:
         后端API请求参数
 
         :return: The parameters of this LdApiTest.
-        :rtype: list[LdApiParameter]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.LdApiParameter`]
         """
         return self._parameters
 
@@ -58,7 +63,7 @@ class LdApiTest:
         后端API请求参数
 
         :param parameters: The parameters of this LdApiTest.
-        :type: list[LdApiParameter]
+        :type parameters: list[:class:`huaweicloudsdkroma.v2.LdApiParameter`]
         """
         self._parameters = parameters
 

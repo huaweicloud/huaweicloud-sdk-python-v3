@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryDeviceSimplifyDto:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class QueryDeviceSimplifyDto:
     }
 
     def __init__(self, device_id=None, node_id=None, gateway_id=None, device_name=None, protocol_type=None, product_name=None, product_id=None):
-        """QueryDeviceSimplifyDto - a model defined in huaweicloud sdk"""
+        """QueryDeviceSimplifyDto
+
+        The model defined in huaweicloud sdk
+
+        :param device_id: 设备id
+        :type device_id: str
+        :param node_id: 设备识别码
+        :type node_id: str
+        :param gateway_id: 父设备id
+        :type gateway_id: str
+        :param device_name: 设备名称
+        :type device_name: str
+        :param protocol_type: 设备协议类型
+        :type protocol_type: str
+        :param product_name: 产品名称
+        :type product_name: str
+        :param product_id: 产品ID
+        :type product_id: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class QueryDeviceSimplifyDto:
         设备id
 
         :param device_id: The device_id of this QueryDeviceSimplifyDto.
-        :type: str
+        :type device_id: str
         """
         self._device_id = device_id
 
@@ -110,7 +127,7 @@ class QueryDeviceSimplifyDto:
         设备识别码
 
         :param node_id: The node_id of this QueryDeviceSimplifyDto.
-        :type: str
+        :type node_id: str
         """
         self._node_id = node_id
 
@@ -132,7 +149,7 @@ class QueryDeviceSimplifyDto:
         父设备id
 
         :param gateway_id: The gateway_id of this QueryDeviceSimplifyDto.
-        :type: str
+        :type gateway_id: str
         """
         self._gateway_id = gateway_id
 
@@ -154,7 +171,7 @@ class QueryDeviceSimplifyDto:
         设备名称
 
         :param device_name: The device_name of this QueryDeviceSimplifyDto.
-        :type: str
+        :type device_name: str
         """
         self._device_name = device_name
 
@@ -176,7 +193,7 @@ class QueryDeviceSimplifyDto:
         设备协议类型
 
         :param protocol_type: The protocol_type of this QueryDeviceSimplifyDto.
-        :type: str
+        :type protocol_type: str
         """
         self._protocol_type = protocol_type
 
@@ -198,7 +215,7 @@ class QueryDeviceSimplifyDto:
         产品名称
 
         :param product_name: The product_name of this QueryDeviceSimplifyDto.
-        :type: str
+        :type product_name: str
         """
         self._product_name = product_name
 
@@ -220,7 +237,7 @@ class QueryDeviceSimplifyDto:
         产品ID
 
         :param product_id: The product_id of this QueryDeviceSimplifyDto.
-        :type: str
+        :type product_id: str
         """
         self._product_id = product_id
 

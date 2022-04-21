@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CheckRepositoryDuplicateNameRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CheckRepositoryDuplicateNameRequest:
     }
 
     def __init__(self, x_language=None, project_id=None, name=None, region_id=None):
-        """CheckRepositoryDuplicateNameRequest - a model defined in huaweicloud sdk"""
+        """CheckRepositoryDuplicateNameRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言类型 中文:zh-cn 英文:en-us
+        :type x_language: str
+        :param project_id: 项目id
+        :type project_id: str
+        :param name: 仓库名称
+        :type name: str
+        :param region_id: 区域id
+        :type region_id: str
+        """
         
         
 
@@ -70,7 +81,7 @@ class CheckRepositoryDuplicateNameRequest:
         语言类型 中文:zh-cn 英文:en-us
 
         :param x_language: The x_language of this CheckRepositoryDuplicateNameRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -92,7 +103,7 @@ class CheckRepositoryDuplicateNameRequest:
         项目id
 
         :param project_id: The project_id of this CheckRepositoryDuplicateNameRequest.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -114,7 +125,7 @@ class CheckRepositoryDuplicateNameRequest:
         仓库名称
 
         :param name: The name of this CheckRepositoryDuplicateNameRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -136,7 +147,7 @@ class CheckRepositoryDuplicateNameRequest:
         区域id
 
         :param region_id: The region_id of this CheckRepositoryDuplicateNameRequest.
-        :type: str
+        :type region_id: str
         """
         self._region_id = region_id
 

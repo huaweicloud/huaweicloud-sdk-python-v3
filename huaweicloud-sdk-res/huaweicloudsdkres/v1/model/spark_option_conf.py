@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SparkOptionConf:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class SparkOptionConf:
     }
 
     def __init__(self, name=None, value=None):
-        """SparkOptionConf - a model defined in huaweicloud sdk"""
+        """SparkOptionConf
+
+        The model defined in huaweicloud sdk
+
+        :param name: 参数名称
+        :type name: str
+        :param value: 参数值
+        :type value: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class SparkOptionConf:
         参数名称
 
         :param name: The name of this SparkOptionConf.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -85,7 +92,7 @@ class SparkOptionConf:
         参数值
 
         :param value: The value of this SparkOptionConf.
-        :type: str
+        :type value: str
         """
         self._value = value
 

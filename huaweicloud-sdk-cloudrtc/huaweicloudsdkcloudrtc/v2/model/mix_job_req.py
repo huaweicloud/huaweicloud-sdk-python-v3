@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MixJobReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class MixJobReq:
     }
 
     def __init__(self, mix_param=None, publish_param=None, record_param=None):
-        """MixJobReq - a model defined in huaweicloud sdk"""
+        """MixJobReq
+
+        The model defined in huaweicloud sdk
+
+        :param mix_param: 
+        :type mix_param: :class:`huaweicloudsdkcloudrtc.v2.MixParam`
+        :param publish_param: 
+        :type publish_param: :class:`huaweicloudsdkcloudrtc.v2.PublishParam`
+        :param record_param: 
+        :type record_param: :class:`huaweicloudsdkcloudrtc.v2.RecordParam`
+        """
         
         
 
@@ -55,7 +64,7 @@ class MixJobReq:
 
 
         :return: The mix_param of this MixJobReq.
-        :rtype: MixParam
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.MixParam`
         """
         return self._mix_param
 
@@ -65,7 +74,7 @@ class MixJobReq:
 
 
         :param mix_param: The mix_param of this MixJobReq.
-        :type: MixParam
+        :type mix_param: :class:`huaweicloudsdkcloudrtc.v2.MixParam`
         """
         self._mix_param = mix_param
 
@@ -75,7 +84,7 @@ class MixJobReq:
 
 
         :return: The publish_param of this MixJobReq.
-        :rtype: PublishParam
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.PublishParam`
         """
         return self._publish_param
 
@@ -85,7 +94,7 @@ class MixJobReq:
 
 
         :param publish_param: The publish_param of this MixJobReq.
-        :type: PublishParam
+        :type publish_param: :class:`huaweicloudsdkcloudrtc.v2.PublishParam`
         """
         self._publish_param = publish_param
 
@@ -95,7 +104,7 @@ class MixJobReq:
 
 
         :return: The record_param of this MixJobReq.
-        :rtype: RecordParam
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.RecordParam`
         """
         return self._record_param
 
@@ -105,7 +114,7 @@ class MixJobReq:
 
 
         :param record_param: The record_param of this MixJobReq.
-        :type: RecordParam
+        :type record_param: :class:`huaweicloudsdkcloudrtc.v2.RecordParam`
         """
         self._record_param = record_param
 

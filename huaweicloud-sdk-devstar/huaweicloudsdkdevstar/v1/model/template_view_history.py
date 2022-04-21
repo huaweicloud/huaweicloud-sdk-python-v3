@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TemplateViewHistory:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class TemplateViewHistory:
     }
 
     def __init__(self, template_id=None, template_title=None):
-        """TemplateViewHistory - a model defined in huaweicloud sdk"""
+        """TemplateViewHistory
+
+        The model defined in huaweicloud sdk
+
+        :param template_id: 模板的id。
+        :type template_id: str
+        :param template_title: 模板的名称。
+        :type template_title: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class TemplateViewHistory:
         模板的id。
 
         :param template_id: The template_id of this TemplateViewHistory.
-        :type: str
+        :type template_id: str
         """
         self._template_id = template_id
 
@@ -83,7 +90,7 @@ class TemplateViewHistory:
         模板的名称。
 
         :param template_title: The template_title of this TemplateViewHistory.
-        :type: str
+        :type template_title: str
         """
         self._template_title = template_title
 

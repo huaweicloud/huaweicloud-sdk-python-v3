@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunEntityLinkingRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RunEntityLinkingRequest:
     }
 
     def __init__(self, body=None):
-        """RunEntityLinkingRequest - a model defined in huaweicloud sdk"""
+        """RunEntityLinkingRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the RunEntityLinkingRequest
+        :type body: :class:`huaweicloudsdknlp.v2.PostEntityLinkingRequest`
+        """
         
         
 
@@ -46,7 +51,7 @@ class RunEntityLinkingRequest:
 
 
         :return: The body of this RunEntityLinkingRequest.
-        :rtype: PostEntityLinkingRequest
+        :rtype: :class:`huaweicloudsdknlp.v2.PostEntityLinkingRequest`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class RunEntityLinkingRequest:
 
 
         :param body: The body of this RunEntityLinkingRequest.
-        :type: PostEntityLinkingRequest
+        :type body: :class:`huaweicloudsdknlp.v2.PostEntityLinkingRequest`
         """
         self._body = body
 

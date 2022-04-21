@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateLifyCycleHookRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateLifyCycleHookRequest:
     }
 
     def __init__(self, scaling_group_id=None, body=None):
-        """CreateLifyCycleHookRequest - a model defined in huaweicloud sdk"""
+        """CreateLifyCycleHookRequest
+
+        The model defined in huaweicloud sdk
+
+        :param scaling_group_id: 伸缩组标识。
+        :type scaling_group_id: str
+        :param body: Body of the CreateLifyCycleHookRequest
+        :type body: :class:`huaweicloudsdkas.v1.CreateLifeCycleHookOption`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateLifyCycleHookRequest:
         伸缩组标识。
 
         :param scaling_group_id: The scaling_group_id of this CreateLifyCycleHookRequest.
-        :type: str
+        :type scaling_group_id: str
         """
         self._scaling_group_id = scaling_group_id
 
@@ -72,7 +79,7 @@ class CreateLifyCycleHookRequest:
 
 
         :return: The body of this CreateLifyCycleHookRequest.
-        :rtype: CreateLifeCycleHookOption
+        :rtype: :class:`huaweicloudsdkas.v1.CreateLifeCycleHookOption`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CreateLifyCycleHookRequest:
 
 
         :param body: The body of this CreateLifyCycleHookRequest.
-        :type: CreateLifeCycleHookOption
+        :type body: :class:`huaweicloudsdkas.v1.CreateLifeCycleHookOption`
         """
         self._body = body
 

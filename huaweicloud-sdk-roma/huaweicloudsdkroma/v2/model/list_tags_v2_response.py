@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTagsV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListTagsV2Response(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, tags=None):
-        """ListTagsV2Response - a model defined in huaweicloud sdk"""
+        """ListTagsV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param size: 本次返回的列表长度
+        :type size: int
+        :param total: 满足条件的记录数
+        :type total: int
+        :param tags: 标签列表
+        :type tags: list[str]
+        """
         
         super(ListTagsV2Response, self).__init__()
 
@@ -66,7 +75,7 @@ class ListTagsV2Response(SdkResponse):
         本次返回的列表长度
 
         :param size: The size of this ListTagsV2Response.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -88,7 +97,7 @@ class ListTagsV2Response(SdkResponse):
         满足条件的记录数
 
         :param total: The total of this ListTagsV2Response.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -110,7 +119,7 @@ class ListTagsV2Response(SdkResponse):
         标签列表
 
         :param tags: The tags of this ListTagsV2Response.
-        :type: list[str]
+        :type tags: list[str]
         """
         self._tags = tags
 

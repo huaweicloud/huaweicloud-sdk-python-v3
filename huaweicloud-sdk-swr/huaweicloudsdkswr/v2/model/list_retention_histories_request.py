@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRetentionHistoriesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListRetentionHistoriesRequest:
     }
 
     def __init__(self, namespace=None, repository=None, offset=None, limit=None):
-        """ListRetentionHistoriesRequest - a model defined in huaweicloud sdk"""
+        """ListRetentionHistoriesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param namespace: 组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
+        :type namespace: str
+        :param repository: 镜像仓库名称
+        :type repository: str
+        :param offset: 起始索引。**注意：offset和limit参数需要配套使用** 
+        :type offset: str
+        :param limit: 返回条数。**注意：offset和limit参数需要配套使用** 
+        :type limit: str
+        """
         
         
 
@@ -71,7 +82,7 @@ class ListRetentionHistoriesRequest:
         组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
 
         :param namespace: The namespace of this ListRetentionHistoriesRequest.
-        :type: str
+        :type namespace: str
         """
         self._namespace = namespace
 
@@ -93,7 +104,7 @@ class ListRetentionHistoriesRequest:
         镜像仓库名称
 
         :param repository: The repository of this ListRetentionHistoriesRequest.
-        :type: str
+        :type repository: str
         """
         self._repository = repository
 
@@ -115,7 +126,7 @@ class ListRetentionHistoriesRequest:
         起始索引。**注意：offset和limit参数需要配套使用** 
 
         :param offset: The offset of this ListRetentionHistoriesRequest.
-        :type: str
+        :type offset: str
         """
         self._offset = offset
 
@@ -137,7 +148,7 @@ class ListRetentionHistoriesRequest:
         返回条数。**注意：offset和limit参数需要配套使用** 
 
         :param limit: The limit of this ListRetentionHistoriesRequest.
-        :type: str
+        :type limit: str
         """
         self._limit = limit
 

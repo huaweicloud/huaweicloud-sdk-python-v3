@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchCreateAndDeleteVaultTagsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchCreateAndDeleteVaultTagsRequest:
     }
 
     def __init__(self, vault_id=None, body=None):
-        """BatchCreateAndDeleteVaultTagsRequest - a model defined in huaweicloud sdk"""
+        """BatchCreateAndDeleteVaultTagsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param vault_id: 资源id
+        :type vault_id: str
+        :param body: Body of the BatchCreateAndDeleteVaultTagsRequest
+        :type body: :class:`huaweicloudsdkcbr.v1.BulkCreateAndDeleteVaultTagsReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class BatchCreateAndDeleteVaultTagsRequest:
         资源id
 
         :param vault_id: The vault_id of this BatchCreateAndDeleteVaultTagsRequest.
-        :type: str
+        :type vault_id: str
         """
         self._vault_id = vault_id
 
@@ -72,7 +79,7 @@ class BatchCreateAndDeleteVaultTagsRequest:
 
 
         :return: The body of this BatchCreateAndDeleteVaultTagsRequest.
-        :rtype: BulkCreateAndDeleteVaultTagsReq
+        :rtype: :class:`huaweicloudsdkcbr.v1.BulkCreateAndDeleteVaultTagsReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class BatchCreateAndDeleteVaultTagsRequest:
 
 
         :param body: The body of this BatchCreateAndDeleteVaultTagsRequest.
-        :type: BulkCreateAndDeleteVaultTagsReq
+        :type body: :class:`huaweicloudsdkcbr.v1.BulkCreateAndDeleteVaultTagsReq`
         """
         self._body = body
 

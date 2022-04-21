@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VaultCreateResource:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -66,7 +65,49 @@ class VaultCreateResource:
     }
 
     def __init__(self, billing=None, description=None, id=None, name=None, project_id=None, provider_id=None, resources=None, tags=None, enterprise_project_id=None, auto_bind=None, bind_rules=None, user_id=None, created_at=None, auto_expand=None, smn_notify=None, threshold=None, err_text=None, ret_code=None, orders=None):
-        """VaultCreateResource - a model defined in huaweicloud sdk"""
+        """VaultCreateResource
+
+        The model defined in huaweicloud sdk
+
+        :param billing: 
+        :type billing: :class:`huaweicloudsdkcbr.v1.Billing`
+        :param description: 存储库自定义描述信息。
+        :type description: str
+        :param id: 存储库ID
+        :type id: str
+        :param name: 存储库名称
+        :type name: str
+        :param project_id: 项目ID
+        :type project_id: str
+        :param provider_id: 存储库资源类型id
+        :type provider_id: str
+        :param resources: 存储库资源
+        :type resources: list[:class:`huaweicloudsdkcbr.v1.ResourceResp`]
+        :param tags: 存储库标签
+        :type tags: list[:class:`huaweicloudsdkcbr.v1.Tag`]
+        :param enterprise_project_id: 企业项目id，默认为‘0’。
+        :type enterprise_project_id: str
+        :param auto_bind: 是否自动绑定，默认为false，不支持。
+        :type auto_bind: bool
+        :param bind_rules: 
+        :type bind_rules: :class:`huaweicloudsdkcbr.v1.VaultBindRules`
+        :param user_id: 用户id
+        :type user_id: str
+        :param created_at: 创建时间,例如:\&quot;2020-02-05T10:38:34.209782\&quot;
+        :type created_at: str
+        :param auto_expand: 是否开启存储库自动扩容能力（只支持按需存储库）
+        :type auto_expand: bool
+        :param smn_notify: 存储库smn消息通知开关
+        :type smn_notify: bool
+        :param threshold: 存储库容量阈值，已用容量占总容量达到此百分比即发送相关通知
+        :type threshold: int
+        :param err_text: 包周期创建错误信息
+        :type err_text: str
+        :param ret_code: 包周期订购结果
+        :type ret_code: str
+        :param orders: 包周期创建订单信息
+        :type orders: list[:class:`huaweicloudsdkcbr.v1.CbcOrderResult`]
+        """
         
         
 
@@ -130,7 +171,7 @@ class VaultCreateResource:
 
 
         :return: The billing of this VaultCreateResource.
-        :rtype: Billing
+        :rtype: :class:`huaweicloudsdkcbr.v1.Billing`
         """
         return self._billing
 
@@ -140,7 +181,7 @@ class VaultCreateResource:
 
 
         :param billing: The billing of this VaultCreateResource.
-        :type: Billing
+        :type billing: :class:`huaweicloudsdkcbr.v1.Billing`
         """
         self._billing = billing
 
@@ -162,7 +203,7 @@ class VaultCreateResource:
         存储库自定义描述信息。
 
         :param description: The description of this VaultCreateResource.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -184,7 +225,7 @@ class VaultCreateResource:
         存储库ID
 
         :param id: The id of this VaultCreateResource.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -206,7 +247,7 @@ class VaultCreateResource:
         存储库名称
 
         :param name: The name of this VaultCreateResource.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -228,7 +269,7 @@ class VaultCreateResource:
         项目ID
 
         :param project_id: The project_id of this VaultCreateResource.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -250,7 +291,7 @@ class VaultCreateResource:
         存储库资源类型id
 
         :param provider_id: The provider_id of this VaultCreateResource.
-        :type: str
+        :type provider_id: str
         """
         self._provider_id = provider_id
 
@@ -261,7 +302,7 @@ class VaultCreateResource:
         存储库资源
 
         :return: The resources of this VaultCreateResource.
-        :rtype: list[ResourceResp]
+        :rtype: list[:class:`huaweicloudsdkcbr.v1.ResourceResp`]
         """
         return self._resources
 
@@ -272,7 +313,7 @@ class VaultCreateResource:
         存储库资源
 
         :param resources: The resources of this VaultCreateResource.
-        :type: list[ResourceResp]
+        :type resources: list[:class:`huaweicloudsdkcbr.v1.ResourceResp`]
         """
         self._resources = resources
 
@@ -283,7 +324,7 @@ class VaultCreateResource:
         存储库标签
 
         :return: The tags of this VaultCreateResource.
-        :rtype: list[Tag]
+        :rtype: list[:class:`huaweicloudsdkcbr.v1.Tag`]
         """
         return self._tags
 
@@ -294,7 +335,7 @@ class VaultCreateResource:
         存储库标签
 
         :param tags: The tags of this VaultCreateResource.
-        :type: list[Tag]
+        :type tags: list[:class:`huaweicloudsdkcbr.v1.Tag`]
         """
         self._tags = tags
 
@@ -316,7 +357,7 @@ class VaultCreateResource:
         企业项目id，默认为‘0’。
 
         :param enterprise_project_id: The enterprise_project_id of this VaultCreateResource.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -338,7 +379,7 @@ class VaultCreateResource:
         是否自动绑定，默认为false，不支持。
 
         :param auto_bind: The auto_bind of this VaultCreateResource.
-        :type: bool
+        :type auto_bind: bool
         """
         self._auto_bind = auto_bind
 
@@ -348,7 +389,7 @@ class VaultCreateResource:
 
 
         :return: The bind_rules of this VaultCreateResource.
-        :rtype: VaultBindRules
+        :rtype: :class:`huaweicloudsdkcbr.v1.VaultBindRules`
         """
         return self._bind_rules
 
@@ -358,7 +399,7 @@ class VaultCreateResource:
 
 
         :param bind_rules: The bind_rules of this VaultCreateResource.
-        :type: VaultBindRules
+        :type bind_rules: :class:`huaweicloudsdkcbr.v1.VaultBindRules`
         """
         self._bind_rules = bind_rules
 
@@ -380,7 +421,7 @@ class VaultCreateResource:
         用户id
 
         :param user_id: The user_id of this VaultCreateResource.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -402,7 +443,7 @@ class VaultCreateResource:
         创建时间,例如:\"2020-02-05T10:38:34.209782\"
 
         :param created_at: The created_at of this VaultCreateResource.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -424,7 +465,7 @@ class VaultCreateResource:
         是否开启存储库自动扩容能力（只支持按需存储库）
 
         :param auto_expand: The auto_expand of this VaultCreateResource.
-        :type: bool
+        :type auto_expand: bool
         """
         self._auto_expand = auto_expand
 
@@ -446,7 +487,7 @@ class VaultCreateResource:
         存储库smn消息通知开关
 
         :param smn_notify: The smn_notify of this VaultCreateResource.
-        :type: bool
+        :type smn_notify: bool
         """
         self._smn_notify = smn_notify
 
@@ -468,7 +509,7 @@ class VaultCreateResource:
         存储库容量阈值，已用容量占总容量达到此百分比即发送相关通知
 
         :param threshold: The threshold of this VaultCreateResource.
-        :type: int
+        :type threshold: int
         """
         self._threshold = threshold
 
@@ -490,7 +531,7 @@ class VaultCreateResource:
         包周期创建错误信息
 
         :param err_text: The err_text of this VaultCreateResource.
-        :type: str
+        :type err_text: str
         """
         self._err_text = err_text
 
@@ -512,7 +553,7 @@ class VaultCreateResource:
         包周期订购结果
 
         :param ret_code: The ret_code of this VaultCreateResource.
-        :type: str
+        :type ret_code: str
         """
         self._ret_code = ret_code
 
@@ -523,7 +564,7 @@ class VaultCreateResource:
         包周期创建订单信息
 
         :return: The orders of this VaultCreateResource.
-        :rtype: list[CbcOrderResult]
+        :rtype: list[:class:`huaweicloudsdkcbr.v1.CbcOrderResult`]
         """
         return self._orders
 
@@ -534,7 +575,7 @@ class VaultCreateResource:
         包周期创建订单信息
 
         :param orders: The orders of this VaultCreateResource.
-        :type: list[CbcOrderResult]
+        :type orders: list[:class:`huaweicloudsdkcbr.v1.CbcOrderResult`]
         """
         self._orders = orders
 

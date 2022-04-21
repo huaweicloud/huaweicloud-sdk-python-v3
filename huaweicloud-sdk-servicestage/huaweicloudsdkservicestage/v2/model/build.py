@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Build:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class Build:
     }
 
     def __init__(self, parameters=None):
-        """Build - a model defined in huaweicloud sdk"""
+        """Build
+
+        The model defined in huaweicloud sdk
+
+        :param parameters: 
+        :type parameters: :class:`huaweicloudsdkservicestage.v2.BuildInfoParameters`
+        """
         
         
 
@@ -46,7 +51,7 @@ class Build:
 
 
         :return: The parameters of this Build.
-        :rtype: BuildInfoParameters
+        :rtype: :class:`huaweicloudsdkservicestage.v2.BuildInfoParameters`
         """
         return self._parameters
 
@@ -56,7 +61,7 @@ class Build:
 
 
         :param parameters: The parameters of this Build.
-        :type: BuildInfoParameters
+        :type parameters: :class:`huaweicloudsdkservicestage.v2.BuildInfoParameters`
         """
         self._parameters = parameters
 

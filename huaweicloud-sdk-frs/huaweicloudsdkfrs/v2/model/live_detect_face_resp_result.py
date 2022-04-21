@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LiveDetectFaceRespResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class LiveDetectFaceRespResult:
     }
 
     def __init__(self, alive=None, confidence=None, picture=None):
-        """LiveDetectFaceRespResult - a model defined in huaweicloud sdk"""
+        """LiveDetectFaceRespResult
+
+        The model defined in huaweicloud sdk
+
+        :param alive: 是否是活体。
+        :type alive: bool
+        :param confidence: 置信度，取值范围0～1。
+        :type confidence: float
+        :param picture: 检测出最大人脸的图片base64字符串。
+        :type picture: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class LiveDetectFaceRespResult:
         是否是活体。
 
         :param alive: The alive of this LiveDetectFaceRespResult.
-        :type: bool
+        :type alive: bool
         """
         self._alive = alive
 
@@ -90,7 +99,7 @@ class LiveDetectFaceRespResult:
         置信度，取值范围0～1。
 
         :param confidence: The confidence of this LiveDetectFaceRespResult.
-        :type: float
+        :type confidence: float
         """
         self._confidence = confidence
 
@@ -112,7 +121,7 @@ class LiveDetectFaceRespResult:
         检测出最大人脸的图片base64字符串。
 
         :param picture: The picture of this LiveDetectFaceRespResult.
-        :type: str
+        :type picture: str
         """
         self._picture = picture
 

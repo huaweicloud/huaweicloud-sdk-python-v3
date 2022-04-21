@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TaskMonitorInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -68,7 +67,51 @@ class TaskMonitorInfo:
     }
 
     def __init__(self, task_id=None, task_name=None, task_type=None, status=None, last_execute_time=None, use_quartz_cron=None, cron=None, period=None, dispatch_interval=None, position=None, execute_status=None, source_app_id=None, source_app_name=None, source_instance_id=None, target_app_id=None, target_app_name=None, target_instance_id=None, ext_type=None, enterprise_project_id=None, task_tag=None):
-        """TaskMonitorInfo - a model defined in huaweicloud sdk"""
+        """TaskMonitorInfo
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 任务ID
+        :type task_id: str
+        :param task_name: 任务名称
+        :type task_name: str
+        :param task_type: 任务类型, 只允许两种类型:TIMING-定时任务, REALTIME-实时任务
+        :type task_type: str
+        :param status: 任务状态, 只允许两种类型:0-停止, 1-运行中
+        :type status: int
+        :param last_execute_time: 任务最近一次执行时间，格式timestamp(ms)，使用UTC时区
+        :type last_execute_time: int
+        :param use_quartz_cron: 任务是否使用Quartz表达式，只有定时任务才有该属性
+        :type use_quartz_cron: bool
+        :param cron: CRON表达式，只有定时任务且use_quartz_cron为true时才有该属性
+        :type cron: str
+        :param period: 调度周期的单位，如天，小时等，只有定时任务且use_quartz_cron为false时才有该属性，当前仅允许如下类型：MIN-分钟, HOUR-小时, DAY-天, WEEK-周, MON-月
+        :type period: str
+        :param dispatch_interval: 调度周期，和period字段一起可以确定每隔多长时间调度一次，只有定时任务且use_quartz_cron为false时才有该属性
+        :type dispatch_interval: int
+        :param position: 标识最近一次任务执行到哪一个阶段，允许如下值：ADAPTER-任务处于初始化阶段, READER-任务正在执行Reader读操作, WRITER-任务正在执行Writer写操作
+        :type position: str
+        :param execute_status: 任务最近一次执行状态，允许如下值：UNSTARTED-未启动, WAITING-等待调度中, RUNNING-执行中, SUCCESS-执行成功, CANCELLED-任务取消, ERROR-执行异常
+        :type execute_status: str
+        :param source_app_id: 任务源端数据源所属应用ID
+        :type source_app_id: str
+        :param source_app_name: 任务源端数据源所属应用名称
+        :type source_app_name: str
+        :param source_instance_id: 任务源端数据源所属实例ID
+        :type source_instance_id: str
+        :param target_app_id: 任务目标端数据源所属应用ID
+        :type target_app_id: str
+        :param target_app_name: 任务目标端数据源所属应用名称
+        :type target_app_name: str
+        :param target_instance_id: 任务目标端数据源所属实例ID
+        :type target_instance_id: str
+        :param ext_type: 任务扩展类型，当前如果是CDC组合任务，该字段为CDC，否则为null
+        :type ext_type: str
+        :param enterprise_project_id: 任务所属企业项目ID，默认为0
+        :type enterprise_project_id: str
+        :param task_tag: 任务标签
+        :type task_tag: str
+        """
         
         
 
@@ -153,7 +196,7 @@ class TaskMonitorInfo:
         任务ID
 
         :param task_id: The task_id of this TaskMonitorInfo.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -175,7 +218,7 @@ class TaskMonitorInfo:
         任务名称
 
         :param task_name: The task_name of this TaskMonitorInfo.
-        :type: str
+        :type task_name: str
         """
         self._task_name = task_name
 
@@ -197,7 +240,7 @@ class TaskMonitorInfo:
         任务类型, 只允许两种类型:TIMING-定时任务, REALTIME-实时任务
 
         :param task_type: The task_type of this TaskMonitorInfo.
-        :type: str
+        :type task_type: str
         """
         self._task_type = task_type
 
@@ -219,7 +262,7 @@ class TaskMonitorInfo:
         任务状态, 只允许两种类型:0-停止, 1-运行中
 
         :param status: The status of this TaskMonitorInfo.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -241,7 +284,7 @@ class TaskMonitorInfo:
         任务最近一次执行时间，格式timestamp(ms)，使用UTC时区
 
         :param last_execute_time: The last_execute_time of this TaskMonitorInfo.
-        :type: int
+        :type last_execute_time: int
         """
         self._last_execute_time = last_execute_time
 
@@ -263,7 +306,7 @@ class TaskMonitorInfo:
         任务是否使用Quartz表达式，只有定时任务才有该属性
 
         :param use_quartz_cron: The use_quartz_cron of this TaskMonitorInfo.
-        :type: bool
+        :type use_quartz_cron: bool
         """
         self._use_quartz_cron = use_quartz_cron
 
@@ -285,7 +328,7 @@ class TaskMonitorInfo:
         CRON表达式，只有定时任务且use_quartz_cron为true时才有该属性
 
         :param cron: The cron of this TaskMonitorInfo.
-        :type: str
+        :type cron: str
         """
         self._cron = cron
 
@@ -307,7 +350,7 @@ class TaskMonitorInfo:
         调度周期的单位，如天，小时等，只有定时任务且use_quartz_cron为false时才有该属性，当前仅允许如下类型：MIN-分钟, HOUR-小时, DAY-天, WEEK-周, MON-月
 
         :param period: The period of this TaskMonitorInfo.
-        :type: str
+        :type period: str
         """
         self._period = period
 
@@ -329,7 +372,7 @@ class TaskMonitorInfo:
         调度周期，和period字段一起可以确定每隔多长时间调度一次，只有定时任务且use_quartz_cron为false时才有该属性
 
         :param dispatch_interval: The dispatch_interval of this TaskMonitorInfo.
-        :type: int
+        :type dispatch_interval: int
         """
         self._dispatch_interval = dispatch_interval
 
@@ -351,7 +394,7 @@ class TaskMonitorInfo:
         标识最近一次任务执行到哪一个阶段，允许如下值：ADAPTER-任务处于初始化阶段, READER-任务正在执行Reader读操作, WRITER-任务正在执行Writer写操作
 
         :param position: The position of this TaskMonitorInfo.
-        :type: str
+        :type position: str
         """
         self._position = position
 
@@ -373,7 +416,7 @@ class TaskMonitorInfo:
         任务最近一次执行状态，允许如下值：UNSTARTED-未启动, WAITING-等待调度中, RUNNING-执行中, SUCCESS-执行成功, CANCELLED-任务取消, ERROR-执行异常
 
         :param execute_status: The execute_status of this TaskMonitorInfo.
-        :type: str
+        :type execute_status: str
         """
         self._execute_status = execute_status
 
@@ -395,7 +438,7 @@ class TaskMonitorInfo:
         任务源端数据源所属应用ID
 
         :param source_app_id: The source_app_id of this TaskMonitorInfo.
-        :type: str
+        :type source_app_id: str
         """
         self._source_app_id = source_app_id
 
@@ -417,7 +460,7 @@ class TaskMonitorInfo:
         任务源端数据源所属应用名称
 
         :param source_app_name: The source_app_name of this TaskMonitorInfo.
-        :type: str
+        :type source_app_name: str
         """
         self._source_app_name = source_app_name
 
@@ -439,7 +482,7 @@ class TaskMonitorInfo:
         任务源端数据源所属实例ID
 
         :param source_instance_id: The source_instance_id of this TaskMonitorInfo.
-        :type: str
+        :type source_instance_id: str
         """
         self._source_instance_id = source_instance_id
 
@@ -461,7 +504,7 @@ class TaskMonitorInfo:
         任务目标端数据源所属应用ID
 
         :param target_app_id: The target_app_id of this TaskMonitorInfo.
-        :type: str
+        :type target_app_id: str
         """
         self._target_app_id = target_app_id
 
@@ -483,7 +526,7 @@ class TaskMonitorInfo:
         任务目标端数据源所属应用名称
 
         :param target_app_name: The target_app_name of this TaskMonitorInfo.
-        :type: str
+        :type target_app_name: str
         """
         self._target_app_name = target_app_name
 
@@ -505,7 +548,7 @@ class TaskMonitorInfo:
         任务目标端数据源所属实例ID
 
         :param target_instance_id: The target_instance_id of this TaskMonitorInfo.
-        :type: str
+        :type target_instance_id: str
         """
         self._target_instance_id = target_instance_id
 
@@ -527,7 +570,7 @@ class TaskMonitorInfo:
         任务扩展类型，当前如果是CDC组合任务，该字段为CDC，否则为null
 
         :param ext_type: The ext_type of this TaskMonitorInfo.
-        :type: str
+        :type ext_type: str
         """
         self._ext_type = ext_type
 
@@ -549,7 +592,7 @@ class TaskMonitorInfo:
         任务所属企业项目ID，默认为0
 
         :param enterprise_project_id: The enterprise_project_id of this TaskMonitorInfo.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -571,7 +614,7 @@ class TaskMonitorInfo:
         任务标签
 
         :param task_tag: The task_tag of this TaskMonitorInfo.
-        :type: str
+        :type task_tag: str
         """
         self._task_tag = task_tag
 

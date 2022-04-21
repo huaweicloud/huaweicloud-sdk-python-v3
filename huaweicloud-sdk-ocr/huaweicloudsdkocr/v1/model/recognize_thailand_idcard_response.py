@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RecognizeThailandIdcardResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RecognizeThailandIdcardResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """RecognizeThailandIdcardResponse - a model defined in huaweicloud sdk"""
+        """RecognizeThailandIdcardResponse
+
+        The model defined in huaweicloud sdk
+
+        :param result: 
+        :type result: :class:`huaweicloudsdkocr.v1.ThailandIdcardResult`
+        """
         
         super(RecognizeThailandIdcardResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class RecognizeThailandIdcardResponse(SdkResponse):
 
 
         :return: The result of this RecognizeThailandIdcardResponse.
-        :rtype: ThailandIdcardResult
+        :rtype: :class:`huaweicloudsdkocr.v1.ThailandIdcardResult`
         """
         return self._result
 
@@ -56,7 +61,7 @@ class RecognizeThailandIdcardResponse(SdkResponse):
 
 
         :param result: The result of this RecognizeThailandIdcardResponse.
-        :type: ThailandIdcardResult
+        :type result: :class:`huaweicloudsdkocr.v1.ThailandIdcardResult`
         """
         self._result = result
 

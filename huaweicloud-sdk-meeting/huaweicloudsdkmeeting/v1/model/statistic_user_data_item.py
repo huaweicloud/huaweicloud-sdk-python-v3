@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StatisticUserDataItem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class StatisticUserDataItem:
     }
 
     def __init__(self, time=None, user_login_count=None, user_pc_login_count=None, user_mobile_login_count=None, user_activated_count=None, user_login_devices_name=None, user_login_devices_count=None):
-        """StatisticUserDataItem - a model defined in huaweicloud sdk"""
+        """StatisticUserDataItem
+
+        The model defined in huaweicloud sdk
+
+        :param time: 日期/月份。
+        :type time: str
+        :param user_login_count: 登录用户数。 category &#x3D; user_login_info时有效。
+        :type user_login_count: str
+        :param user_pc_login_count: PC端登录用户数。 category &#x3D; user_login_info时有效。
+        :type user_pc_login_count: str
+        :param user_mobile_login_count: 移动端登录用户数。 category &#x3D; user_login_info时有效。
+        :type user_mobile_login_count: str
+        :param user_activated_count: 激活用户数。 category &#x3D; user_activate_info时有效。
+        :type user_activated_count: str
+        :param user_login_devices_name: 用户登录设备名称。 category &#x3D; user_login_device_info时有效。
+        :type user_login_devices_name: str
+        :param user_login_devices_count: 用户登录设备数。 category &#x3D; user_login_device_info时有效。
+        :type user_login_devices_count: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class StatisticUserDataItem:
         日期/月份。
 
         :param time: The time of this StatisticUserDataItem.
-        :type: str
+        :type time: str
         """
         self._time = time
 
@@ -110,7 +127,7 @@ class StatisticUserDataItem:
         登录用户数。 category = user_login_info时有效。
 
         :param user_login_count: The user_login_count of this StatisticUserDataItem.
-        :type: str
+        :type user_login_count: str
         """
         self._user_login_count = user_login_count
 
@@ -132,7 +149,7 @@ class StatisticUserDataItem:
         PC端登录用户数。 category = user_login_info时有效。
 
         :param user_pc_login_count: The user_pc_login_count of this StatisticUserDataItem.
-        :type: str
+        :type user_pc_login_count: str
         """
         self._user_pc_login_count = user_pc_login_count
 
@@ -154,7 +171,7 @@ class StatisticUserDataItem:
         移动端登录用户数。 category = user_login_info时有效。
 
         :param user_mobile_login_count: The user_mobile_login_count of this StatisticUserDataItem.
-        :type: str
+        :type user_mobile_login_count: str
         """
         self._user_mobile_login_count = user_mobile_login_count
 
@@ -176,7 +193,7 @@ class StatisticUserDataItem:
         激活用户数。 category = user_activate_info时有效。
 
         :param user_activated_count: The user_activated_count of this StatisticUserDataItem.
-        :type: str
+        :type user_activated_count: str
         """
         self._user_activated_count = user_activated_count
 
@@ -198,7 +215,7 @@ class StatisticUserDataItem:
         用户登录设备名称。 category = user_login_device_info时有效。
 
         :param user_login_devices_name: The user_login_devices_name of this StatisticUserDataItem.
-        :type: str
+        :type user_login_devices_name: str
         """
         self._user_login_devices_name = user_login_devices_name
 
@@ -220,7 +237,7 @@ class StatisticUserDataItem:
         用户登录设备数。 category = user_login_device_info时有效。
 
         :param user_login_devices_count: The user_login_devices_count of this StatisticUserDataItem.
-        :type: str
+        :type user_login_devices_count: str
         """
         self._user_login_devices_count = user_login_devices_count
 

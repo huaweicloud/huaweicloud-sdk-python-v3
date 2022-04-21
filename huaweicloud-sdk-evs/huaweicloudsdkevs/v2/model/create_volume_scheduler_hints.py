@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateVolumeSchedulerHints:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateVolumeSchedulerHints:
     }
 
     def __init__(self, dedicated_storage_id=None):
-        """CreateVolumeSchedulerHints - a model defined in huaweicloud sdk"""
+        """CreateVolumeSchedulerHints
+
+        The model defined in huaweicloud sdk
+
+        :param dedicated_storage_id: 指定专属存储池ID，表示将云硬盘创建在该ID对应的存储池中。
+        :type dedicated_storage_id: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class CreateVolumeSchedulerHints:
         指定专属存储池ID，表示将云硬盘创建在该ID对应的存储池中。
 
         :param dedicated_storage_id: The dedicated_storage_id of this CreateVolumeSchedulerHints.
-        :type: str
+        :type dedicated_storage_id: str
         """
         self._dedicated_storage_id = dedicated_storage_id
 

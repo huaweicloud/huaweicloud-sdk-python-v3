@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryLtsStructLogParams:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class QueryLtsStructLogParams:
     }
 
     def __init__(self, start_time=None, end_time=None, sql_expression=None, original_content=None):
-        """QueryLtsStructLogParams - a model defined in huaweicloud sdk"""
+        """QueryLtsStructLogParams
+
+        The model defined in huaweicloud sdk
+
+        :param start_time: 搜索起始时间（UTC时间，毫秒级）。
+        :type start_time: str
+        :param end_time: 搜索结束时间（UTC时间，毫秒级）。
+        :type end_time: str
+        :param sql_expression: 支持SQL语句搜索， 目前支持\&quot;GROUP BY\&quot;, \&quot;LIKE\&quot;和\&quot;WHERE\&quot;。
+        :type sql_expression: str
+        :param original_content: 返回内容中是否包含原始日志， 默认为false。
+        :type original_content: bool
+        """
         
         
 
@@ -71,7 +82,7 @@ class QueryLtsStructLogParams:
         搜索起始时间（UTC时间，毫秒级）。
 
         :param start_time: The start_time of this QueryLtsStructLogParams.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -93,7 +104,7 @@ class QueryLtsStructLogParams:
         搜索结束时间（UTC时间，毫秒级）。
 
         :param end_time: The end_time of this QueryLtsStructLogParams.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -115,7 +126,7 @@ class QueryLtsStructLogParams:
         支持SQL语句搜索， 目前支持\"GROUP BY\", \"LIKE\"和\"WHERE\"。
 
         :param sql_expression: The sql_expression of this QueryLtsStructLogParams.
-        :type: str
+        :type sql_expression: str
         """
         self._sql_expression = sql_expression
 
@@ -137,7 +148,7 @@ class QueryLtsStructLogParams:
         返回内容中是否包含原始日志， 默认为false。
 
         :param original_content: The original_content of this QueryLtsStructLogParams.
-        :type: bool
+        :type original_content: bool
         """
         self._original_content = original_content
 

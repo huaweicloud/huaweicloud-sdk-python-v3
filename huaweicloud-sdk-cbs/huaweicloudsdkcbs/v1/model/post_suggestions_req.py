@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PostSuggestionsReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class PostSuggestionsReq:
     }
 
     def __init__(self, question=None, top=None):
-        """PostSuggestionsReq - a model defined in huaweicloud sdk"""
+        """PostSuggestionsReq
+
+        The model defined in huaweicloud sdk
+
+        :param question: 用户输入的问题，长度为1~512。
+        :type question: str
+        :param top: 最多提示条数，默认为5，取值范围[1,10]。
+        :type top: int
+        """
         
         
 
@@ -62,7 +69,7 @@ class PostSuggestionsReq:
         用户输入的问题，长度为1~512。
 
         :param question: The question of this PostSuggestionsReq.
-        :type: str
+        :type question: str
         """
         self._question = question
 
@@ -84,7 +91,7 @@ class PostSuggestionsReq:
         最多提示条数，默认为5，取值范围[1,10]。
 
         :param top: The top of this PostSuggestionsReq.
-        :type: int
+        :type top: int
         """
         self._top = top
 

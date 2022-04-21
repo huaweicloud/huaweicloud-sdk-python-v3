@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CPUThresholdData:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CPUThresholdData:
     }
 
     def __init__(self, cpu=None, cpu_default=None):
-        """CPUThresholdData - a model defined in huaweicloud sdk"""
+        """CPUThresholdData
+
+        The model defined in huaweicloud sdk
+
+        :param cpu: 自定义的cpu阈值，单位为百分比(%)
+        :type cpu: int
+        :param cpu_default: cpu阈值默认值，单位为百分比(%)
+        :type cpu_default: int
+        """
         
         
 
@@ -63,7 +70,7 @@ class CPUThresholdData:
         自定义的cpu阈值，单位为百分比(%)
 
         :param cpu: The cpu of this CPUThresholdData.
-        :type: int
+        :type cpu: int
         """
         self._cpu = cpu
 
@@ -85,7 +92,7 @@ class CPUThresholdData:
         cpu阈值默认值，单位为百分比(%)
 
         :param cpu_default: The cpu_default of this CPUThresholdData.
-        :type: int
+        :type cpu_default: int
         """
         self._cpu_default = cpu_default
 

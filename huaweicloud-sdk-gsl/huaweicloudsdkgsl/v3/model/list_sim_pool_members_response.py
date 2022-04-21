@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSimPoolMembersResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListSimPoolMembersResponse(SdkResponse):
     }
 
     def __init__(self, limit=None, offset=None, count=None, pool_members=None):
-        """ListSimPoolMembersResponse - a model defined in huaweicloud sdk"""
+        """ListSimPoolMembersResponse
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 每页记录数
+        :type limit: int
+        :param offset: 页码
+        :type offset: int
+        :param count: 当前流量池的成员总数
+        :type count: int
+        :param pool_members: 查询出来的流量池成员记录列表
+        :type pool_members: list[:class:`huaweicloudsdkgsl.v3.PoolMemVO`]
+        """
         
         super(ListSimPoolMembersResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class ListSimPoolMembersResponse(SdkResponse):
         每页记录数
 
         :param limit: The limit of this ListSimPoolMembersResponse.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -95,7 +106,7 @@ class ListSimPoolMembersResponse(SdkResponse):
         页码
 
         :param offset: The offset of this ListSimPoolMembersResponse.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -117,7 +128,7 @@ class ListSimPoolMembersResponse(SdkResponse):
         当前流量池的成员总数
 
         :param count: The count of this ListSimPoolMembersResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -128,7 +139,7 @@ class ListSimPoolMembersResponse(SdkResponse):
         查询出来的流量池成员记录列表
 
         :return: The pool_members of this ListSimPoolMembersResponse.
-        :rtype: list[PoolMemVO]
+        :rtype: list[:class:`huaweicloudsdkgsl.v3.PoolMemVO`]
         """
         return self._pool_members
 
@@ -139,7 +150,7 @@ class ListSimPoolMembersResponse(SdkResponse):
         查询出来的流量池成员记录列表
 
         :param pool_members: The pool_members of this ListSimPoolMembersResponse.
-        :type: list[PoolMemVO]
+        :type pool_members: list[:class:`huaweicloudsdkgsl.v3.PoolMemVO`]
         """
         self._pool_members = pool_members
 

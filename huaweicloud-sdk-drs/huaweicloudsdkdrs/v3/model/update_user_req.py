@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateUserReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class UpdateUserReq:
     }
 
     def __init__(self, job_id=None, password=None, list=None, user_roles=None, is_set_password=None, is_migrate_user=None, is_sync_object_privilege=None):
-        """UpdateUserReq - a model defined in huaweicloud sdk"""
+        """UpdateUserReq
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 任务ID
+        :type job_id: str
+        :param password: 全局密码。
+        :type password: str
+        :param list: 用户迁移信息，迁移用户时必填
+        :type list: list[:class:`huaweicloudsdkdrs.v3.UserAccountVO`]
+        :param user_roles: 角色迁移信息，迁移用户时必填
+        :type user_roles: list[:class:`huaweicloudsdkdrs.v3.UserRoleVO`]
+        :param is_set_password: 是否设置密码
+        :type is_set_password: bool
+        :param is_migrate_user: 是否迁移用户
+        :type is_migrate_user: bool
+        :param is_sync_object_privilege: 是否同步权限，不填默认为false，PG同步使用。
+        :type is_sync_object_privilege: bool
+        """
         
         
 
@@ -85,7 +102,7 @@ class UpdateUserReq:
         任务ID
 
         :param job_id: The job_id of this UpdateUserReq.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -107,7 +124,7 @@ class UpdateUserReq:
         全局密码。
 
         :param password: The password of this UpdateUserReq.
-        :type: str
+        :type password: str
         """
         self._password = password
 
@@ -118,7 +135,7 @@ class UpdateUserReq:
         用户迁移信息，迁移用户时必填
 
         :return: The list of this UpdateUserReq.
-        :rtype: list[UserAccountVO]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.UserAccountVO`]
         """
         return self._list
 
@@ -129,7 +146,7 @@ class UpdateUserReq:
         用户迁移信息，迁移用户时必填
 
         :param list: The list of this UpdateUserReq.
-        :type: list[UserAccountVO]
+        :type list: list[:class:`huaweicloudsdkdrs.v3.UserAccountVO`]
         """
         self._list = list
 
@@ -140,7 +157,7 @@ class UpdateUserReq:
         角色迁移信息，迁移用户时必填
 
         :return: The user_roles of this UpdateUserReq.
-        :rtype: list[UserRoleVO]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.UserRoleVO`]
         """
         return self._user_roles
 
@@ -151,7 +168,7 @@ class UpdateUserReq:
         角色迁移信息，迁移用户时必填
 
         :param user_roles: The user_roles of this UpdateUserReq.
-        :type: list[UserRoleVO]
+        :type user_roles: list[:class:`huaweicloudsdkdrs.v3.UserRoleVO`]
         """
         self._user_roles = user_roles
 
@@ -173,7 +190,7 @@ class UpdateUserReq:
         是否设置密码
 
         :param is_set_password: The is_set_password of this UpdateUserReq.
-        :type: bool
+        :type is_set_password: bool
         """
         self._is_set_password = is_set_password
 
@@ -195,7 +212,7 @@ class UpdateUserReq:
         是否迁移用户
 
         :param is_migrate_user: The is_migrate_user of this UpdateUserReq.
-        :type: bool
+        :type is_migrate_user: bool
         """
         self._is_migrate_user = is_migrate_user
 
@@ -217,7 +234,7 @@ class UpdateUserReq:
         是否同步权限，不填默认为false，PG同步使用。
 
         :param is_sync_object_privilege: The is_sync_object_privilege of this UpdateUserReq.
-        :type: bool
+        :type is_sync_object_privilege: bool
         """
         self._is_sync_object_privilege = is_sync_object_privilege
 

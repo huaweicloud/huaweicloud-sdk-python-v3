@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListenersInStatusResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListenersInStatusResp:
     }
 
     def __init__(self, id=None, name=None, pools=None, l7policies=None, operating_status=None, provisioning_status=None):
-        """ListenersInStatusResp - a model defined in huaweicloud sdk"""
+        """ListenersInStatusResp
+
+        The model defined in huaweicloud sdk
+
+        :param id: 监听器ID
+        :type id: str
+        :param name: 监听器名称
+        :type name: str
+        :param pools: 监听器关联的后端云服务器组列表
+        :type pools: list[:class:`huaweicloudsdkelb.v2.PoolsInStatusResp`]
+        :param l7policies: 监听器关联的转发策略列表
+        :type l7policies: list[:class:`huaweicloudsdkelb.v2.L7policiesInStatusResp`]
+        :param operating_status: 监听器的操作状态；该字段为预留字段，暂未启用。默认为ONLINE。
+        :type operating_status: str
+        :param provisioning_status: 监听器的配置状态；该字段为预留字段，暂未启用。默认为ACTIVE。
+        :type provisioning_status: str
+        """
         
         
 
@@ -77,7 +92,7 @@ class ListenersInStatusResp:
         监听器ID
 
         :param id: The id of this ListenersInStatusResp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -99,7 +114,7 @@ class ListenersInStatusResp:
         监听器名称
 
         :param name: The name of this ListenersInStatusResp.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -110,7 +125,7 @@ class ListenersInStatusResp:
         监听器关联的后端云服务器组列表
 
         :return: The pools of this ListenersInStatusResp.
-        :rtype: list[PoolsInStatusResp]
+        :rtype: list[:class:`huaweicloudsdkelb.v2.PoolsInStatusResp`]
         """
         return self._pools
 
@@ -121,7 +136,7 @@ class ListenersInStatusResp:
         监听器关联的后端云服务器组列表
 
         :param pools: The pools of this ListenersInStatusResp.
-        :type: list[PoolsInStatusResp]
+        :type pools: list[:class:`huaweicloudsdkelb.v2.PoolsInStatusResp`]
         """
         self._pools = pools
 
@@ -132,7 +147,7 @@ class ListenersInStatusResp:
         监听器关联的转发策略列表
 
         :return: The l7policies of this ListenersInStatusResp.
-        :rtype: list[L7policiesInStatusResp]
+        :rtype: list[:class:`huaweicloudsdkelb.v2.L7policiesInStatusResp`]
         """
         return self._l7policies
 
@@ -143,7 +158,7 @@ class ListenersInStatusResp:
         监听器关联的转发策略列表
 
         :param l7policies: The l7policies of this ListenersInStatusResp.
-        :type: list[L7policiesInStatusResp]
+        :type l7policies: list[:class:`huaweicloudsdkelb.v2.L7policiesInStatusResp`]
         """
         self._l7policies = l7policies
 
@@ -165,7 +180,7 @@ class ListenersInStatusResp:
         监听器的操作状态；该字段为预留字段，暂未启用。默认为ONLINE。
 
         :param operating_status: The operating_status of this ListenersInStatusResp.
-        :type: str
+        :type operating_status: str
         """
         self._operating_status = operating_status
 
@@ -187,7 +202,7 @@ class ListenersInStatusResp:
         监听器的配置状态；该字段为预留字段，暂未启用。默认为ACTIVE。
 
         :param provisioning_status: The provisioning_status of this ListenersInStatusResp.
-        :type: str
+        :type provisioning_status: str
         """
         self._provisioning_status = provisioning_status
 

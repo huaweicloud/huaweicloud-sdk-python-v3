@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDesireds:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateDesireds:
     }
 
     def __init__(self, shadow=None):
-        """UpdateDesireds - a model defined in huaweicloud sdk"""
+        """UpdateDesireds
+
+        The model defined in huaweicloud sdk
+
+        :param shadow: **参数说明**：设备影子期望值构体。
+        :type shadow: list[:class:`huaweicloudsdkiotda.v5.UpdateDesired`]
+        """
         
         
 
@@ -47,7 +52,7 @@ class UpdateDesireds:
         **参数说明**：设备影子期望值构体。
 
         :return: The shadow of this UpdateDesireds.
-        :rtype: list[UpdateDesired]
+        :rtype: list[:class:`huaweicloudsdkiotda.v5.UpdateDesired`]
         """
         return self._shadow
 
@@ -58,7 +63,7 @@ class UpdateDesireds:
         **参数说明**：设备影子期望值构体。
 
         :param shadow: The shadow of this UpdateDesireds.
-        :type: list[UpdateDesired]
+        :type shadow: list[:class:`huaweicloudsdkiotda.v5.UpdateDesired`]
         """
         self._shadow = shadow
 

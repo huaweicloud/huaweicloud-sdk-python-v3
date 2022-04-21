@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class JobExeResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -94,7 +93,77 @@ class JobExeResult:
     }
 
     def __init__(self, id=None, create_at=None, update_at=None, tenant_id=None, job_id=None, job_name=None, start_time=None, end_time=None, cluster_id=None, group_id=None, jar_path=None, input=None, output=None, job_log=None, job_type=None, file_action=None, arguments=None, hql=None, job_state=None, job_final_status=None, hive_script_path=None, create_by=None, finished_step=None, job_main_id=None, job_step_id=None, postpone_at=None, step_name=None, step_num=None, task_num=None, update_by=None, spend_time=None, step_seq=None, progress=None):
-        """JobExeResult - a model defined in huaweicloud sdk"""
+        """JobExeResult
+
+        The model defined in huaweicloud sdk
+
+        :param id: 作业ID。
+        :type id: str
+        :param create_at: 作业创建时间，十三位时间戳。
+        :type create_at: int
+        :param update_at: 作业更新时间，十三位时间戳。  
+        :type update_at: int
+        :param tenant_id: 项目编号。获取方法，请参见[获取项目ID](https://support.huaweicloud.com/api-mrs/mrs_02_0011.html)。
+        :type tenant_id: str
+        :param job_id: 作业ID。
+        :type job_id: str
+        :param job_name: 作业名称。
+        :type job_name: str
+        :param start_time: 作业执行开始时间，十三位时间戳。
+        :type start_time: int
+        :param end_time: 作业执行结束时间，十三位时间戳。
+        :type end_time: int
+        :param cluster_id: 作业所属集群ID。
+        :type cluster_id: str
+        :param group_id: 作业执行组ID
+        :type group_id: str
+        :param jar_path: 执行程序jar包或sql文件地址。
+        :type jar_path: str
+        :param input: 数据输入地址。
+        :type input: str
+        :param output: 数据输出地址。
+        :type output: str
+        :param job_log: 作业日志存储地址
+        :type job_log: str
+        :param job_type: 作业类型码。  - 1：MapReduce - 2：Spark - 3：Hive Script - 4：HiveSQL（当前不支持） - 5：DistCp - 6：Spark Script - 7：Spark SQL（该接口当前不支持）
+        :type job_type: int
+        :param file_action: 导入导出数据。
+        :type file_action: str
+        :param arguments: 程序执行的关键参数，该参数由用户程序内的函数指定，MRS只负责参数的传入。该参数可为空。
+        :type arguments: str
+        :param hql: HQL脚本语句。
+        :type hql: str
+        :param job_state: 作业状态编码：  - -1：Terminated表示已终止的作业状态 - 2：Running表示运行中的作业状态 - 3：Completed表示已完成的作业状态 - 4：Abnormal表示异常的作业状态
+        :type job_state: int
+        :param job_final_status: 作业最终状态码。  - 0：未完成 - 1：执行错误，终止执行 - 2：执行完成并且成功 - 3：已取消
+        :type job_final_status: int
+        :param hive_script_path: Hive脚本地址。
+        :type hive_script_path: str
+        :param create_by: 创建作业的用户ID。
+        :type create_by: str
+        :param finished_step: 当前已完成的步骤数。
+        :type finished_step: int
+        :param job_main_id: 作业主ID。
+        :type job_main_id: str
+        :param job_step_id: 作业步骤ID。
+        :type job_step_id: str
+        :param postpone_at: 延迟时间，十三位时间戳。
+        :type postpone_at: int
+        :param step_name: 作业步骤名。
+        :type step_name: str
+        :param step_num: 步骤数量。
+        :type step_num: int
+        :param task_num: 任务数量。
+        :type task_num: int
+        :param update_by: 更新作业的用户ID。
+        :type update_by: str
+        :param spend_time: 作业执行持续时间，单位：秒。
+        :type spend_time: float
+        :param step_seq: 步骤序列号。
+        :type step_seq: int
+        :param progress: 作业执行进度。
+        :type progress: str
+        """
         
         
 
@@ -186,7 +255,7 @@ class JobExeResult:
         作业ID。
 
         :param id: The id of this JobExeResult.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -208,7 +277,7 @@ class JobExeResult:
         作业创建时间，十三位时间戳。
 
         :param create_at: The create_at of this JobExeResult.
-        :type: int
+        :type create_at: int
         """
         self._create_at = create_at
 
@@ -230,7 +299,7 @@ class JobExeResult:
         作业更新时间，十三位时间戳。  
 
         :param update_at: The update_at of this JobExeResult.
-        :type: int
+        :type update_at: int
         """
         self._update_at = update_at
 
@@ -252,7 +321,7 @@ class JobExeResult:
         项目编号。获取方法，请参见[获取项目ID](https://support.huaweicloud.com/api-mrs/mrs_02_0011.html)。
 
         :param tenant_id: The tenant_id of this JobExeResult.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 
@@ -274,7 +343,7 @@ class JobExeResult:
         作业ID。
 
         :param job_id: The job_id of this JobExeResult.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -296,7 +365,7 @@ class JobExeResult:
         作业名称。
 
         :param job_name: The job_name of this JobExeResult.
-        :type: str
+        :type job_name: str
         """
         self._job_name = job_name
 
@@ -318,7 +387,7 @@ class JobExeResult:
         作业执行开始时间，十三位时间戳。
 
         :param start_time: The start_time of this JobExeResult.
-        :type: int
+        :type start_time: int
         """
         self._start_time = start_time
 
@@ -340,7 +409,7 @@ class JobExeResult:
         作业执行结束时间，十三位时间戳。
 
         :param end_time: The end_time of this JobExeResult.
-        :type: int
+        :type end_time: int
         """
         self._end_time = end_time
 
@@ -362,7 +431,7 @@ class JobExeResult:
         作业所属集群ID。
 
         :param cluster_id: The cluster_id of this JobExeResult.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -384,7 +453,7 @@ class JobExeResult:
         作业执行组ID
 
         :param group_id: The group_id of this JobExeResult.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -406,7 +475,7 @@ class JobExeResult:
         执行程序jar包或sql文件地址。
 
         :param jar_path: The jar_path of this JobExeResult.
-        :type: str
+        :type jar_path: str
         """
         self._jar_path = jar_path
 
@@ -428,7 +497,7 @@ class JobExeResult:
         数据输入地址。
 
         :param input: The input of this JobExeResult.
-        :type: str
+        :type input: str
         """
         self._input = input
 
@@ -450,7 +519,7 @@ class JobExeResult:
         数据输出地址。
 
         :param output: The output of this JobExeResult.
-        :type: str
+        :type output: str
         """
         self._output = output
 
@@ -472,7 +541,7 @@ class JobExeResult:
         作业日志存储地址
 
         :param job_log: The job_log of this JobExeResult.
-        :type: str
+        :type job_log: str
         """
         self._job_log = job_log
 
@@ -494,7 +563,7 @@ class JobExeResult:
         作业类型码。  - 1：MapReduce - 2：Spark - 3：Hive Script - 4：HiveSQL（当前不支持） - 5：DistCp - 6：Spark Script - 7：Spark SQL（该接口当前不支持）
 
         :param job_type: The job_type of this JobExeResult.
-        :type: int
+        :type job_type: int
         """
         self._job_type = job_type
 
@@ -516,7 +585,7 @@ class JobExeResult:
         导入导出数据。
 
         :param file_action: The file_action of this JobExeResult.
-        :type: str
+        :type file_action: str
         """
         self._file_action = file_action
 
@@ -538,7 +607,7 @@ class JobExeResult:
         程序执行的关键参数，该参数由用户程序内的函数指定，MRS只负责参数的传入。该参数可为空。
 
         :param arguments: The arguments of this JobExeResult.
-        :type: str
+        :type arguments: str
         """
         self._arguments = arguments
 
@@ -560,7 +629,7 @@ class JobExeResult:
         HQL脚本语句。
 
         :param hql: The hql of this JobExeResult.
-        :type: str
+        :type hql: str
         """
         self._hql = hql
 
@@ -582,7 +651,7 @@ class JobExeResult:
         作业状态编码：  - -1：Terminated表示已终止的作业状态 - 2：Running表示运行中的作业状态 - 3：Completed表示已完成的作业状态 - 4：Abnormal表示异常的作业状态
 
         :param job_state: The job_state of this JobExeResult.
-        :type: int
+        :type job_state: int
         """
         self._job_state = job_state
 
@@ -604,7 +673,7 @@ class JobExeResult:
         作业最终状态码。  - 0：未完成 - 1：执行错误，终止执行 - 2：执行完成并且成功 - 3：已取消
 
         :param job_final_status: The job_final_status of this JobExeResult.
-        :type: int
+        :type job_final_status: int
         """
         self._job_final_status = job_final_status
 
@@ -626,7 +695,7 @@ class JobExeResult:
         Hive脚本地址。
 
         :param hive_script_path: The hive_script_path of this JobExeResult.
-        :type: str
+        :type hive_script_path: str
         """
         self._hive_script_path = hive_script_path
 
@@ -648,7 +717,7 @@ class JobExeResult:
         创建作业的用户ID。
 
         :param create_by: The create_by of this JobExeResult.
-        :type: str
+        :type create_by: str
         """
         self._create_by = create_by
 
@@ -670,7 +739,7 @@ class JobExeResult:
         当前已完成的步骤数。
 
         :param finished_step: The finished_step of this JobExeResult.
-        :type: int
+        :type finished_step: int
         """
         self._finished_step = finished_step
 
@@ -692,7 +761,7 @@ class JobExeResult:
         作业主ID。
 
         :param job_main_id: The job_main_id of this JobExeResult.
-        :type: str
+        :type job_main_id: str
         """
         self._job_main_id = job_main_id
 
@@ -714,7 +783,7 @@ class JobExeResult:
         作业步骤ID。
 
         :param job_step_id: The job_step_id of this JobExeResult.
-        :type: str
+        :type job_step_id: str
         """
         self._job_step_id = job_step_id
 
@@ -736,7 +805,7 @@ class JobExeResult:
         延迟时间，十三位时间戳。
 
         :param postpone_at: The postpone_at of this JobExeResult.
-        :type: int
+        :type postpone_at: int
         """
         self._postpone_at = postpone_at
 
@@ -758,7 +827,7 @@ class JobExeResult:
         作业步骤名。
 
         :param step_name: The step_name of this JobExeResult.
-        :type: str
+        :type step_name: str
         """
         self._step_name = step_name
 
@@ -780,7 +849,7 @@ class JobExeResult:
         步骤数量。
 
         :param step_num: The step_num of this JobExeResult.
-        :type: int
+        :type step_num: int
         """
         self._step_num = step_num
 
@@ -802,7 +871,7 @@ class JobExeResult:
         任务数量。
 
         :param task_num: The task_num of this JobExeResult.
-        :type: int
+        :type task_num: int
         """
         self._task_num = task_num
 
@@ -824,7 +893,7 @@ class JobExeResult:
         更新作业的用户ID。
 
         :param update_by: The update_by of this JobExeResult.
-        :type: str
+        :type update_by: str
         """
         self._update_by = update_by
 
@@ -846,7 +915,7 @@ class JobExeResult:
         作业执行持续时间，单位：秒。
 
         :param spend_time: The spend_time of this JobExeResult.
-        :type: float
+        :type spend_time: float
         """
         self._spend_time = spend_time
 
@@ -868,7 +937,7 @@ class JobExeResult:
         步骤序列号。
 
         :param step_seq: The step_seq of this JobExeResult.
-        :type: int
+        :type step_seq: int
         """
         self._step_seq = step_seq
 
@@ -890,7 +959,7 @@ class JobExeResult:
         作业执行进度。
 
         :param progress: The progress of this JobExeResult.
-        :type: str
+        :type progress: str
         """
         self._progress = progress
 

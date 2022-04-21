@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RtcHistoryScaleTimeValue:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class RtcHistoryScaleTimeValue:
     }
 
     def __init__(self, date=None, user_count=None, session_count=None, room_count=None, max_online_user_count=None, max_online_room_count=None, communication_duration=None, video_communication_duration=None, audio_communication_duration=None):
-        """RtcHistoryScaleTimeValue - a model defined in huaweicloud sdk"""
+        """RtcHistoryScaleTimeValue
+
+        The model defined in huaweicloud sdk
+
+        :param date: 采样时间。日期格式按照ISO8601表示法，并使用UTC时间。格式为YYYY-MM-DD
+        :type date: str
+        :param user_count: 通话人数，指总的uid个数
+        :type user_count: int
+        :param session_count: 通话人次，指总的session个数
+        :type session_count: int
+        :param room_count: 房间数
+        :type room_count: int
+        :param max_online_user_count: 最大同时在线人数
+        :type max_online_user_count: int
+        :param max_online_room_count: 最大同时在线房间数
+        :type max_online_room_count: int
+        :param communication_duration: 音视频通话总时长，单位秒
+        :type communication_duration: int
+        :param video_communication_duration: 视频通话总时长，单位秒
+        :type video_communication_duration: int
+        :param audio_communication_duration: 音频通话总时长，单位秒
+        :type audio_communication_duration: int
+        """
         
         
 
@@ -98,7 +119,7 @@ class RtcHistoryScaleTimeValue:
         采样时间。日期格式按照ISO8601表示法，并使用UTC时间。格式为YYYY-MM-DD
 
         :param date: The date of this RtcHistoryScaleTimeValue.
-        :type: str
+        :type date: str
         """
         self._date = date
 
@@ -120,7 +141,7 @@ class RtcHistoryScaleTimeValue:
         通话人数，指总的uid个数
 
         :param user_count: The user_count of this RtcHistoryScaleTimeValue.
-        :type: int
+        :type user_count: int
         """
         self._user_count = user_count
 
@@ -142,7 +163,7 @@ class RtcHistoryScaleTimeValue:
         通话人次，指总的session个数
 
         :param session_count: The session_count of this RtcHistoryScaleTimeValue.
-        :type: int
+        :type session_count: int
         """
         self._session_count = session_count
 
@@ -164,7 +185,7 @@ class RtcHistoryScaleTimeValue:
         房间数
 
         :param room_count: The room_count of this RtcHistoryScaleTimeValue.
-        :type: int
+        :type room_count: int
         """
         self._room_count = room_count
 
@@ -186,7 +207,7 @@ class RtcHistoryScaleTimeValue:
         最大同时在线人数
 
         :param max_online_user_count: The max_online_user_count of this RtcHistoryScaleTimeValue.
-        :type: int
+        :type max_online_user_count: int
         """
         self._max_online_user_count = max_online_user_count
 
@@ -208,7 +229,7 @@ class RtcHistoryScaleTimeValue:
         最大同时在线房间数
 
         :param max_online_room_count: The max_online_room_count of this RtcHistoryScaleTimeValue.
-        :type: int
+        :type max_online_room_count: int
         """
         self._max_online_room_count = max_online_room_count
 
@@ -230,7 +251,7 @@ class RtcHistoryScaleTimeValue:
         音视频通话总时长，单位秒
 
         :param communication_duration: The communication_duration of this RtcHistoryScaleTimeValue.
-        :type: int
+        :type communication_duration: int
         """
         self._communication_duration = communication_duration
 
@@ -252,7 +273,7 @@ class RtcHistoryScaleTimeValue:
         视频通话总时长，单位秒
 
         :param video_communication_duration: The video_communication_duration of this RtcHistoryScaleTimeValue.
-        :type: int
+        :type video_communication_duration: int
         """
         self._video_communication_duration = video_communication_duration
 
@@ -274,7 +295,7 @@ class RtcHistoryScaleTimeValue:
         音频通话总时长，单位秒
 
         :param audio_communication_duration: The audio_communication_duration of this RtcHistoryScaleTimeValue.
-        :type: int
+        :type audio_communication_duration: int
         """
         self._audio_communication_duration = audio_communication_duration
 

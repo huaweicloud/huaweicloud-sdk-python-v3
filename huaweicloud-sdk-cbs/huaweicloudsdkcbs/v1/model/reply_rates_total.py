@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ReplyRatesTotal:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class ReplyRatesTotal:
     }
 
     def __init__(self, question_count=None, direct_count=None, recommend_count=None, notmatch_count=None, direct_rate=None, recommend_rate=None, notmatch_rate=None, dialog_count=None, dialog_rate=None, invalid_count=None, invalid_rate=None, chat_count=None, chat_rate=None):
-        """ReplyRatesTotal - a model defined in huaweicloud sdk"""
+        """ReplyRatesTotal
+
+        The model defined in huaweicloud sdk
+
+        :param question_count: 用户提问总数。
+        :type question_count: int
+        :param direct_count: 直接回答个数。
+        :type direct_count: int
+        :param recommend_count: 推荐回答个数。
+        :type recommend_count: int
+        :param notmatch_count: 未匹配个数。
+        :type notmatch_count: int
+        :param direct_rate: 直接回答比率，保留小数点后三位。
+        :type direct_rate: float
+        :param recommend_rate: 推荐回答比率，保留小数点后三位。
+        :type recommend_rate: float
+        :param notmatch_rate: 未匹配比率，保留小数点后三位。
+        :type notmatch_rate: float
+        :param dialog_count: 多轮对话次数。
+        :type dialog_count: int
+        :param dialog_rate: 多轮对话比例。
+        :type dialog_rate: float
+        :param invalid_count: 无效问题次数。
+        :type invalid_count: int
+        :param invalid_rate: 无效问题比例。
+        :type invalid_rate: float
+        :param chat_count: 闲聊匹配次数。
+        :type chat_count: int
+        :param chat_rate: 闲聊比例。
+        :type chat_rate: float
+        """
         
         
 
@@ -105,7 +134,7 @@ class ReplyRatesTotal:
         用户提问总数。
 
         :param question_count: The question_count of this ReplyRatesTotal.
-        :type: int
+        :type question_count: int
         """
         self._question_count = question_count
 
@@ -127,7 +156,7 @@ class ReplyRatesTotal:
         直接回答个数。
 
         :param direct_count: The direct_count of this ReplyRatesTotal.
-        :type: int
+        :type direct_count: int
         """
         self._direct_count = direct_count
 
@@ -149,7 +178,7 @@ class ReplyRatesTotal:
         推荐回答个数。
 
         :param recommend_count: The recommend_count of this ReplyRatesTotal.
-        :type: int
+        :type recommend_count: int
         """
         self._recommend_count = recommend_count
 
@@ -171,7 +200,7 @@ class ReplyRatesTotal:
         未匹配个数。
 
         :param notmatch_count: The notmatch_count of this ReplyRatesTotal.
-        :type: int
+        :type notmatch_count: int
         """
         self._notmatch_count = notmatch_count
 
@@ -193,7 +222,7 @@ class ReplyRatesTotal:
         直接回答比率，保留小数点后三位。
 
         :param direct_rate: The direct_rate of this ReplyRatesTotal.
-        :type: float
+        :type direct_rate: float
         """
         self._direct_rate = direct_rate
 
@@ -215,7 +244,7 @@ class ReplyRatesTotal:
         推荐回答比率，保留小数点后三位。
 
         :param recommend_rate: The recommend_rate of this ReplyRatesTotal.
-        :type: float
+        :type recommend_rate: float
         """
         self._recommend_rate = recommend_rate
 
@@ -237,7 +266,7 @@ class ReplyRatesTotal:
         未匹配比率，保留小数点后三位。
 
         :param notmatch_rate: The notmatch_rate of this ReplyRatesTotal.
-        :type: float
+        :type notmatch_rate: float
         """
         self._notmatch_rate = notmatch_rate
 
@@ -259,7 +288,7 @@ class ReplyRatesTotal:
         多轮对话次数。
 
         :param dialog_count: The dialog_count of this ReplyRatesTotal.
-        :type: int
+        :type dialog_count: int
         """
         self._dialog_count = dialog_count
 
@@ -281,7 +310,7 @@ class ReplyRatesTotal:
         多轮对话比例。
 
         :param dialog_rate: The dialog_rate of this ReplyRatesTotal.
-        :type: float
+        :type dialog_rate: float
         """
         self._dialog_rate = dialog_rate
 
@@ -303,7 +332,7 @@ class ReplyRatesTotal:
         无效问题次数。
 
         :param invalid_count: The invalid_count of this ReplyRatesTotal.
-        :type: int
+        :type invalid_count: int
         """
         self._invalid_count = invalid_count
 
@@ -325,7 +354,7 @@ class ReplyRatesTotal:
         无效问题比例。
 
         :param invalid_rate: The invalid_rate of this ReplyRatesTotal.
-        :type: float
+        :type invalid_rate: float
         """
         self._invalid_rate = invalid_rate
 
@@ -347,7 +376,7 @@ class ReplyRatesTotal:
         闲聊匹配次数。
 
         :param chat_count: The chat_count of this ReplyRatesTotal.
-        :type: int
+        :type chat_count: int
         """
         self._chat_count = chat_count
 
@@ -369,7 +398,7 @@ class ReplyRatesTotal:
         闲聊比例。
 
         :param chat_rate: The chat_rate of this ReplyRatesTotal.
-        :type: float
+        :type chat_rate: float
         """
         self._chat_rate = chat_rate
 

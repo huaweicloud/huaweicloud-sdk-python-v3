@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateValueListResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class CreateValueListResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, type=None, description=None, timestamp=None, values=None):
-        """CreateValueListResponse - a model defined in huaweicloud sdk"""
+        """CreateValueListResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 引用表id
+        :type id: str
+        :param name: 引用表名称
+        :type name: str
+        :param type: 引用表类型
+        :type type: str
+        :param description: 引用表描述
+        :type description: str
+        :param timestamp: 引用表时间戳
+        :type timestamp: int
+        :param values: 引用表的值
+        :type values: list[str]
+        """
         
         super(CreateValueListResponse, self).__init__()
 
@@ -83,7 +98,7 @@ class CreateValueListResponse(SdkResponse):
         引用表id
 
         :param id: The id of this CreateValueListResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -105,7 +120,7 @@ class CreateValueListResponse(SdkResponse):
         引用表名称
 
         :param name: The name of this CreateValueListResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -127,7 +142,7 @@ class CreateValueListResponse(SdkResponse):
         引用表类型
 
         :param type: The type of this CreateValueListResponse.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -149,7 +164,7 @@ class CreateValueListResponse(SdkResponse):
         引用表描述
 
         :param description: The description of this CreateValueListResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -171,7 +186,7 @@ class CreateValueListResponse(SdkResponse):
         引用表时间戳
 
         :param timestamp: The timestamp of this CreateValueListResponse.
-        :type: int
+        :type timestamp: int
         """
         self._timestamp = timestamp
 
@@ -193,7 +208,7 @@ class CreateValueListResponse(SdkResponse):
         引用表的值
 
         :param values: The values of this CreateValueListResponse.
-        :type: list[str]
+        :type values: list[str]
         """
         self._values = values
 

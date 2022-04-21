@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateGaussMySqlBackupPolicyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateGaussMySqlBackupPolicyResponse(SdkResponse):
     }
 
     def __init__(self, status=None, instance_id=None, instance_name=None):
-        """UpdateGaussMySqlBackupPolicyResponse - a model defined in huaweicloud sdk"""
+        """UpdateGaussMySqlBackupPolicyResponse
+
+        The model defined in huaweicloud sdk
+
+        :param status: 状态信息
+        :type status: str
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param instance_name: 实例名称
+        :type instance_name: str
+        """
         
         super(UpdateGaussMySqlBackupPolicyResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class UpdateGaussMySqlBackupPolicyResponse(SdkResponse):
         状态信息
 
         :param status: The status of this UpdateGaussMySqlBackupPolicyResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -90,7 +99,7 @@ class UpdateGaussMySqlBackupPolicyResponse(SdkResponse):
         实例ID
 
         :param instance_id: The instance_id of this UpdateGaussMySqlBackupPolicyResponse.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -112,7 +121,7 @@ class UpdateGaussMySqlBackupPolicyResponse(SdkResponse):
         实例名称
 
         :param instance_name: The instance_name of this UpdateGaussMySqlBackupPolicyResponse.
-        :type: str
+        :type instance_name: str
         """
         self._instance_name = instance_name
 

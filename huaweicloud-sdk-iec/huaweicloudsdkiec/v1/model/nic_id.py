@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NicId:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class NicId:
     }
 
     def __init__(self, id=None):
-        """NicId - a model defined in huaweicloud sdk"""
+        """NicId
+
+        The model defined in huaweicloud sdk
+
+        :param id: 网卡ID。
+        :type id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class NicId:
         网卡ID。
 
         :param id: The id of this NicId.
-        :type: str
+        :type id: str
         """
         self._id = id
 

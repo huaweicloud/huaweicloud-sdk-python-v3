@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SlowLog:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class SlowLog:
     }
 
     def __init__(self, sql=None, database=None, client=None, user=None, execute_at=None, query_time=None, lock_time=None, rows_examined=None, rows_sent=None):
-        """SlowLog - a model defined in huaweicloud sdk"""
+        """SlowLog
+
+        The model defined in huaweicloud sdk
+
+        :param sql: SQL语句。
+        :type sql: str
+        :param database: 数据库名。
+        :type database: str
+        :param client: 客户端。
+        :type client: str
+        :param user: 用户。
+        :type user: str
+        :param execute_at: 执行开始时间（Unix timestamp），单位：毫秒。
+        :type execute_at: int
+        :param query_time: 执行耗时（秒）。
+        :type query_time: float
+        :param lock_time: 锁等待耗时（秒）。
+        :type lock_time: float
+        :param rows_examined: 扫描行数。
+        :type rows_examined: int
+        :param rows_sent: 返回行数。
+        :type rows_sent: int
+        """
         
         
 
@@ -89,7 +110,7 @@ class SlowLog:
         SQL语句。
 
         :param sql: The sql of this SlowLog.
-        :type: str
+        :type sql: str
         """
         self._sql = sql
 
@@ -111,7 +132,7 @@ class SlowLog:
         数据库名。
 
         :param database: The database of this SlowLog.
-        :type: str
+        :type database: str
         """
         self._database = database
 
@@ -133,7 +154,7 @@ class SlowLog:
         客户端。
 
         :param client: The client of this SlowLog.
-        :type: str
+        :type client: str
         """
         self._client = client
 
@@ -155,7 +176,7 @@ class SlowLog:
         用户。
 
         :param user: The user of this SlowLog.
-        :type: str
+        :type user: str
         """
         self._user = user
 
@@ -177,7 +198,7 @@ class SlowLog:
         执行开始时间（Unix timestamp），单位：毫秒。
 
         :param execute_at: The execute_at of this SlowLog.
-        :type: int
+        :type execute_at: int
         """
         self._execute_at = execute_at
 
@@ -199,7 +220,7 @@ class SlowLog:
         执行耗时（秒）。
 
         :param query_time: The query_time of this SlowLog.
-        :type: float
+        :type query_time: float
         """
         self._query_time = query_time
 
@@ -221,7 +242,7 @@ class SlowLog:
         锁等待耗时（秒）。
 
         :param lock_time: The lock_time of this SlowLog.
-        :type: float
+        :type lock_time: float
         """
         self._lock_time = lock_time
 
@@ -243,7 +264,7 @@ class SlowLog:
         扫描行数。
 
         :param rows_examined: The rows_examined of this SlowLog.
-        :type: int
+        :type rows_examined: int
         """
         self._rows_examined = rows_examined
 
@@ -265,7 +286,7 @@ class SlowLog:
         返回行数。
 
         :param rows_sent: The rows_sent of this SlowLog.
-        :type: int
+        :type rows_sent: int
         """
         self._rows_sent = rows_sent
 

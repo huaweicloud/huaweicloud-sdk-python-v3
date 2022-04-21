@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FailoverStrategyRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class FailoverStrategyRequest:
     }
 
     def __init__(self, repair_strategy=None):
-        """FailoverStrategyRequest - a model defined in huaweicloud sdk"""
+        """FailoverStrategyRequest
+
+        The model defined in huaweicloud sdk
+
+        :param repair_strategy: 可用性策略，可选择如下方式： - reliability：可靠性优先，数据库应该尽可能保障数据的可靠性，即数据丢失量最少。对于数据一致性要求较高的业务，建议选择该策略。 - availability：可用性优先，数据库应该可快恢复服务，即可用时间最长。对于数据库在线时间要求较高的业务，建议选择该策略。
+        :type repair_strategy: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class FailoverStrategyRequest:
         可用性策略，可选择如下方式： - reliability：可靠性优先，数据库应该尽可能保障数据的可靠性，即数据丢失量最少。对于数据一致性要求较高的业务，建议选择该策略。 - availability：可用性优先，数据库应该可快恢复服务，即可用时间最长。对于数据库在线时间要求较高的业务，建议选择该策略。
 
         :param repair_strategy: The repair_strategy of this FailoverStrategyRequest.
-        :type: str
+        :type repair_strategy: str
         """
         self._repair_strategy = repair_strategy
 

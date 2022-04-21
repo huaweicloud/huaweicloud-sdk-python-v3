@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListMonitorInfosResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListMonitorInfosResponse(SdkResponse):
     }
 
     def __init__(self, total=None, size=None, entities=None):
-        """ListMonitorInfosResponse - a model defined in huaweicloud sdk"""
+        """ListMonitorInfosResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 总数
+        :type total: int
+        :param size: 当前页监控信息数量
+        :type size: int
+        :param entities: 任务监控信息当前页元素
+        :type entities: list[:class:`huaweicloudsdkroma.v2.TaskMonitorInfo`]
+        """
         
         super(ListMonitorInfosResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListMonitorInfosResponse(SdkResponse):
         总数
 
         :param total: The total of this ListMonitorInfosResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -90,7 +99,7 @@ class ListMonitorInfosResponse(SdkResponse):
         当前页监控信息数量
 
         :param size: The size of this ListMonitorInfosResponse.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -101,7 +110,7 @@ class ListMonitorInfosResponse(SdkResponse):
         任务监控信息当前页元素
 
         :return: The entities of this ListMonitorInfosResponse.
-        :rtype: list[TaskMonitorInfo]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.TaskMonitorInfo`]
         """
         return self._entities
 
@@ -112,7 +121,7 @@ class ListMonitorInfosResponse(SdkResponse):
         任务监控信息当前页元素
 
         :param entities: The entities of this ListMonitorInfosResponse.
-        :type: list[TaskMonitorInfo]
+        :type entities: list[:class:`huaweicloudsdkroma.v2.TaskMonitorInfo`]
         """
         self._entities = entities
 

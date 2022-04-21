@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteApplicationEndpointRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteApplicationEndpointRequest:
     }
 
     def __init__(self, endpoint_urn=None):
-        """DeleteApplicationEndpointRequest - a model defined in huaweicloud sdk"""
+        """DeleteApplicationEndpointRequest
+
+        The model defined in huaweicloud sdk
+
+        :param endpoint_urn: Endpoint的唯一资源标识，可通过[查询Application的Endpoint列表](https://support.huaweicloud.com/api-smn/ListApplicationEndpoints.html)获取该标识。
+        :type endpoint_urn: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteApplicationEndpointRequest:
         Endpoint的唯一资源标识，可通过[查询Application的Endpoint列表](https://support.huaweicloud.com/api-smn/ListApplicationEndpoints.html)获取该标识。
 
         :param endpoint_urn: The endpoint_urn of this DeleteApplicationEndpointRequest.
-        :type: str
+        :type endpoint_urn: str
         """
         self._endpoint_urn = endpoint_urn
 

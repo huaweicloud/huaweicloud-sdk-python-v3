@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SetDefaulTemplateRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class SetDefaulTemplateRequest:
     }
 
     def __init__(self, project_id=None, ruleset_id=None, language=None):
-        """SetDefaulTemplateRequest - a model defined in huaweicloud sdk"""
+        """SetDefaulTemplateRequest
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: 项目ID
+        :type project_id: str
+        :param ruleset_id: 规则集ID
+        :type ruleset_id: str
+        :param language: 规则集语言
+        :type language: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class SetDefaulTemplateRequest:
         项目ID
 
         :param project_id: The project_id of this SetDefaulTemplateRequest.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -87,7 +96,7 @@ class SetDefaulTemplateRequest:
         规则集ID
 
         :param ruleset_id: The ruleset_id of this SetDefaulTemplateRequest.
-        :type: str
+        :type ruleset_id: str
         """
         self._ruleset_id = ruleset_id
 
@@ -109,7 +118,7 @@ class SetDefaulTemplateRequest:
         规则集语言
 
         :param language: The language of this SetDefaulTemplateRequest.
-        :type: str
+        :type language: str
         """
         self._language = language
 

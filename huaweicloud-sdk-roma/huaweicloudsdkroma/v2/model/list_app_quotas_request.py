@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAppQuotasRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListAppQuotasRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, name=None):
-        """ListAppQuotasRequest - a model defined in huaweicloud sdk"""
+        """ListAppQuotasRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param offset: 偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
+        :type offset: int
+        :param limit: 每页显示的条目数量
+        :type limit: int
+        :param name: 客户端配额名称
+        :type name: str
+        """
         
         
 
@@ -72,7 +83,7 @@ class ListAppQuotasRequest:
         实例ID
 
         :param instance_id: The instance_id of this ListAppQuotasRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -94,7 +105,7 @@ class ListAppQuotasRequest:
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
         :param offset: The offset of this ListAppQuotasRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -116,7 +127,7 @@ class ListAppQuotasRequest:
         每页显示的条目数量
 
         :param limit: The limit of this ListAppQuotasRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -138,7 +149,7 @@ class ListAppQuotasRequest:
         客户端配额名称
 
         :param name: The name of this ListAppQuotasRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateDnsNameRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateDnsNameRequestBody:
     }
 
     def __init__(self, dns_type=None):
-        """CreateDnsNameRequestBody - a model defined in huaweicloud sdk"""
+        """CreateDnsNameRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param dns_type: 域名类型，当前只支持private
+        :type dns_type: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class CreateDnsNameRequestBody:
         域名类型，当前只支持private
 
         :param dns_type: The dns_type of this CreateDnsNameRequestBody.
-        :type: str
+        :type dns_type: str
         """
         self._dns_type = dns_type
 

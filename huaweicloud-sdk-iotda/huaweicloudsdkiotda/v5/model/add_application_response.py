@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddApplicationResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class AddApplicationResponse(SdkResponse):
     }
 
     def __init__(self, app_id=None, app_name=None, create_time=None, default_app=None):
-        """AddApplicationResponse - a model defined in huaweicloud sdk"""
+        """AddApplicationResponse
+
+        The model defined in huaweicloud sdk
+
+        :param app_id: 资源空间ID，唯一标识一个资源空间，由物联网平台在创建资源空间时分配。资源空间对应的是物联网平台原有的应用，在物联网平台的含义与应用一致，只是变更了名称。
+        :type app_id: str
+        :param app_name: 资源空间名称。
+        :type app_name: str
+        :param create_time: 资源空间创建时间，格式：yyyyMMdd&#39;T&#39;HHmmss&#39;Z&#39;，如20151212T121212Z。
+        :type create_time: str
+        :param default_app: 是否为默认资源空间
+        :type default_app: bool
+        """
         
         super(AddApplicationResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class AddApplicationResponse(SdkResponse):
         资源空间ID，唯一标识一个资源空间，由物联网平台在创建资源空间时分配。资源空间对应的是物联网平台原有的应用，在物联网平台的含义与应用一致，只是变更了名称。
 
         :param app_id: The app_id of this AddApplicationResponse.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -95,7 +106,7 @@ class AddApplicationResponse(SdkResponse):
         资源空间名称。
 
         :param app_name: The app_name of this AddApplicationResponse.
-        :type: str
+        :type app_name: str
         """
         self._app_name = app_name
 
@@ -117,7 +128,7 @@ class AddApplicationResponse(SdkResponse):
         资源空间创建时间，格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
         :param create_time: The create_time of this AddApplicationResponse.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -139,7 +150,7 @@ class AddApplicationResponse(SdkResponse):
         是否为默认资源空间
 
         :param default_app: The default_app of this AddApplicationResponse.
-        :type: bool
+        :type default_app: bool
         """
         self._default_app = default_app
 

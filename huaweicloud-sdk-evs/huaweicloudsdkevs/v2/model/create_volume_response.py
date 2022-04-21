@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateVolumeResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateVolumeResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, order_id=None, volume_ids=None):
-        """CreateVolumeResponse - a model defined in huaweicloud sdk"""
+        """CreateVolumeResponse
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 任务ID，云硬盘为按需计费时返回该参数。 &gt; 说明： &gt;  &gt; 如果需要查询job的状态，请参考：\&quot;[查询job的状态](https://support.huaweicloud.com/api-evs/evs_04_0054.html)\&quot;。
+        :type job_id: str
+        :param order_id: 订单ID，云硬盘为包周期计费时返回该参数。 &gt; 说明： &gt; 直接在包周期云服务器上新增云硬盘，系统会自动将云硬盘挂载到包周期云服务器上。该情形下也会返回该参数。  &gt; - 如果您需要支付订单，请参考：\&quot;[支付包周期产品订单](https://support.huaweicloud.com/api-oce/zh-cn_topic_0075746561.html)\&quot;。
+        :type order_id: str
+        :param volume_ids: 待创建的云硬盘ID列表，在请求体的metadata字段中指定create_for_volume_id为true时才返回该参数。
+        :type volume_ids: list[str]
+        """
         
         super(CreateVolumeResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class CreateVolumeResponse(SdkResponse):
         任务ID，云硬盘为按需计费时返回该参数。 > 说明： >  > 如果需要查询job的状态，请参考：\"[查询job的状态](https://support.huaweicloud.com/api-evs/evs_04_0054.html)\"。
 
         :param job_id: The job_id of this CreateVolumeResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -90,7 +99,7 @@ class CreateVolumeResponse(SdkResponse):
         订单ID，云硬盘为包周期计费时返回该参数。 > 说明： > 直接在包周期云服务器上新增云硬盘，系统会自动将云硬盘挂载到包周期云服务器上。该情形下也会返回该参数。  > - 如果您需要支付订单，请参考：\"[支付包周期产品订单](https://support.huaweicloud.com/api-oce/zh-cn_topic_0075746561.html)\"。
 
         :param order_id: The order_id of this CreateVolumeResponse.
-        :type: str
+        :type order_id: str
         """
         self._order_id = order_id
 
@@ -112,7 +121,7 @@ class CreateVolumeResponse(SdkResponse):
         待创建的云硬盘ID列表，在请求体的metadata字段中指定create_for_volume_id为true时才返回该参数。
 
         :param volume_ids: The volume_ids of this CreateVolumeResponse.
-        :type: list[str]
+        :type volume_ids: list[str]
         """
         self._volume_ids = volume_ids
 

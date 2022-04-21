@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AomMappingfilesInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AomMappingfilesInfo:
     }
 
     def __init__(self, file_name=None, log_stream_info=None):
-        """AomMappingfilesInfo - a model defined in huaweicloud sdk"""
+        """AomMappingfilesInfo
+
+        The model defined in huaweicloud sdk
+
+        :param file_name: 路径名
+        :type file_name: str
+        :param log_stream_info: 
+        :type log_stream_info: :class:`huaweicloudsdklts.v2.AomMappingLogStreamInfo`
+        """
         
         
 
@@ -61,7 +68,7 @@ class AomMappingfilesInfo:
         路径名
 
         :param file_name: The file_name of this AomMappingfilesInfo.
-        :type: str
+        :type file_name: str
         """
         self._file_name = file_name
 
@@ -71,7 +78,7 @@ class AomMappingfilesInfo:
 
 
         :return: The log_stream_info of this AomMappingfilesInfo.
-        :rtype: AomMappingLogStreamInfo
+        :rtype: :class:`huaweicloudsdklts.v2.AomMappingLogStreamInfo`
         """
         return self._log_stream_info
 
@@ -81,7 +88,7 @@ class AomMappingfilesInfo:
 
 
         :param log_stream_info: The log_stream_info of this AomMappingfilesInfo.
-        :type: AomMappingLogStreamInfo
+        :type log_stream_info: :class:`huaweicloudsdklts.v2.AomMappingLogStreamInfo`
         """
         self._log_stream_info = log_stream_info
 

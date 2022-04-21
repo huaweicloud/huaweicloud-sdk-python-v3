@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Success:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class Success:
     }
 
     def __init__(self, path=None, method=None, action=None, id=None):
-        """Success - a model defined in huaweicloud sdk"""
+        """Success
+
+        The model defined in huaweicloud sdk
+
+        :param path: API请求路径
+        :type path: str
+        :param method: API请求方法
+        :type method: str
+        :param action: 导入行为： - update：表示更新API - create：表示新建API
+        :type action: str
+        :param id: 导入成功的API编号
+        :type id: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class Success:
         API请求路径
 
         :param path: The path of this Success.
-        :type: str
+        :type path: str
         """
         self._path = path
 
@@ -95,7 +106,7 @@ class Success:
         API请求方法
 
         :param method: The method of this Success.
-        :type: str
+        :type method: str
         """
         self._method = method
 
@@ -117,7 +128,7 @@ class Success:
         导入行为： - update：表示更新API - create：表示新建API
 
         :param action: The action of this Success.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -139,7 +150,7 @@ class Success:
         导入成功的API编号
 
         :param id: The id of this Success.
-        :type: str
+        :type id: str
         """
         self._id = id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateHostRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class CreateHostRequestBody:
     }
 
     def __init__(self, hostname=None, policyid=None, server=None, certificateid=None, certificatename=None, proxy=None, description=None):
-        """CreateHostRequestBody - a model defined in huaweicloud sdk"""
+        """CreateHostRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param hostname: 域名（域名只能由字母、数字、-、_和.组成，长度不能超过64个字符，如www.domain.com）
+        :type hostname: str
+        :param policyid: 防护域名初始绑定的策略ID,可以通过策略名称调用查询防护策略列表（ListPolicy）接口查询到对应的策略id
+        :type policyid: str
+        :param server: 源站信息
+        :type server: list[:class:`huaweicloudsdkwaf.v1.CloudWafServer`]
+        :param certificateid: 证书id，通过查询证书列表接口（ListCertificates）接口获取证书id   - 对外协议为HTTP时不需要填写   - 对外协议HTTPS时为必填参数
+        :type certificateid: str
+        :param certificatename: 证书名   - 对外协议为HTTP时不需要填写   - 对外协议HTTPS时为必填参数
+        :type certificatename: str
+        :param proxy: 是否使用代理
+        :type proxy: bool
+        :param description: 域名描述
+        :type description: str
+        """
         
         
 
@@ -85,7 +102,7 @@ class CreateHostRequestBody:
         域名（域名只能由字母、数字、-、_和.组成，长度不能超过64个字符，如www.domain.com）
 
         :param hostname: The hostname of this CreateHostRequestBody.
-        :type: str
+        :type hostname: str
         """
         self._hostname = hostname
 
@@ -107,7 +124,7 @@ class CreateHostRequestBody:
         防护域名初始绑定的策略ID,可以通过策略名称调用查询防护策略列表（ListPolicy）接口查询到对应的策略id
 
         :param policyid: The policyid of this CreateHostRequestBody.
-        :type: str
+        :type policyid: str
         """
         self._policyid = policyid
 
@@ -118,7 +135,7 @@ class CreateHostRequestBody:
         源站信息
 
         :return: The server of this CreateHostRequestBody.
-        :rtype: list[CloudWafServer]
+        :rtype: list[:class:`huaweicloudsdkwaf.v1.CloudWafServer`]
         """
         return self._server
 
@@ -129,7 +146,7 @@ class CreateHostRequestBody:
         源站信息
 
         :param server: The server of this CreateHostRequestBody.
-        :type: list[CloudWafServer]
+        :type server: list[:class:`huaweicloudsdkwaf.v1.CloudWafServer`]
         """
         self._server = server
 
@@ -151,7 +168,7 @@ class CreateHostRequestBody:
         证书id，通过查询证书列表接口（ListCertificates）接口获取证书id   - 对外协议为HTTP时不需要填写   - 对外协议HTTPS时为必填参数
 
         :param certificateid: The certificateid of this CreateHostRequestBody.
-        :type: str
+        :type certificateid: str
         """
         self._certificateid = certificateid
 
@@ -173,7 +190,7 @@ class CreateHostRequestBody:
         证书名   - 对外协议为HTTP时不需要填写   - 对外协议HTTPS时为必填参数
 
         :param certificatename: The certificatename of this CreateHostRequestBody.
-        :type: str
+        :type certificatename: str
         """
         self._certificatename = certificatename
 
@@ -195,7 +212,7 @@ class CreateHostRequestBody:
         是否使用代理
 
         :param proxy: The proxy of this CreateHostRequestBody.
-        :type: bool
+        :type proxy: bool
         """
         self._proxy = proxy
 
@@ -217,7 +234,7 @@ class CreateHostRequestBody:
         域名描述
 
         :param description: The description of this CreateHostRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 

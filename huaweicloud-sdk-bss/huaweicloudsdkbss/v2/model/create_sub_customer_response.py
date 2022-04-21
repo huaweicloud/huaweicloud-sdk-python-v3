@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateSubCustomerResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateSubCustomerResponse(SdkResponse):
     }
 
     def __init__(self, domain_id=None, domain_name=None):
-        """CreateSubCustomerResponse - a model defined in huaweicloud sdk"""
+        """CreateSubCustomerResponse
+
+        The model defined in huaweicloud sdk
+
+        :param domain_id: 客户ID。 只有成功或者错误码在CBC.99000050时才会返回。
+        :type domain_id: str
+        :param domain_name: 客户的华为云账号名。 若请求参数中传递了此参数值，此处返回的响应值与请求参数中取值一致。若请求参数中未传递此参数值，此处返回的响应值为系统随机生成的32位字符串。 只有成功时或者错误码在CBC.99000050时才会返回。
+        :type domain_name: str
+        """
         
         super(CreateSubCustomerResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class CreateSubCustomerResponse(SdkResponse):
         客户ID。 只有成功或者错误码在CBC.99000050时才会返回。
 
         :param domain_id: The domain_id of this CreateSubCustomerResponse.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -85,7 +92,7 @@ class CreateSubCustomerResponse(SdkResponse):
         客户的华为云账号名。 若请求参数中传递了此参数值，此处返回的响应值与请求参数中取值一致。若请求参数中未传递此参数值，此处返回的响应值为系统随机生成的32位字符串。 只有成功时或者错误码在CBC.99000050时才会返回。
 
         :param domain_name: The domain_name of this CreateSubCustomerResponse.
-        :type: str
+        :type domain_name: str
         """
         self._domain_name = domain_name
 

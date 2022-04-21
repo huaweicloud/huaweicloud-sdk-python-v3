@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NodeIps:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class NodeIps:
     }
 
     def __init__(self, livedata=None, shubao=None):
-        """NodeIps - a model defined in huaweicloud sdk"""
+        """NodeIps
+
+        The model defined in huaweicloud sdk
+
+        :param livedata: 自定义后端服务livedta组件节点ip列表
+        :type livedata: list[str]
+        :param shubao: API网关shubao组件节点ip列表
+        :type shubao: list[str]
+        """
         
         
 
@@ -63,7 +70,7 @@ class NodeIps:
         自定义后端服务livedta组件节点ip列表
 
         :param livedata: The livedata of this NodeIps.
-        :type: list[str]
+        :type livedata: list[str]
         """
         self._livedata = livedata
 
@@ -85,7 +92,7 @@ class NodeIps:
         API网关shubao组件节点ip列表
 
         :param shubao: The shubao of this NodeIps.
-        :type: list[str]
+        :type shubao: list[str]
         """
         self._shubao = shubao
 

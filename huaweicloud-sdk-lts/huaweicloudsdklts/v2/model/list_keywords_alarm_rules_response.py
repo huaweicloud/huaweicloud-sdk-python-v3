@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListKeywordsAlarmRulesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListKeywordsAlarmRulesResponse(SdkResponse):
     }
 
     def __init__(self, keywords_alarm_rules=None):
-        """ListKeywordsAlarmRulesResponse - a model defined in huaweicloud sdk"""
+        """ListKeywordsAlarmRulesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param keywords_alarm_rules: 项目id
+        :type keywords_alarm_rules: list[:class:`huaweicloudsdklts.v2.KeywordsAlarmRuleRespList`]
+        """
         
         super(ListKeywordsAlarmRulesResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListKeywordsAlarmRulesResponse(SdkResponse):
         项目id
 
         :return: The keywords_alarm_rules of this ListKeywordsAlarmRulesResponse.
-        :rtype: list[KeywordsAlarmRuleRespList]
+        :rtype: list[:class:`huaweicloudsdklts.v2.KeywordsAlarmRuleRespList`]
         """
         return self._keywords_alarm_rules
 
@@ -58,7 +63,7 @@ class ListKeywordsAlarmRulesResponse(SdkResponse):
         项目id
 
         :param keywords_alarm_rules: The keywords_alarm_rules of this ListKeywordsAlarmRulesResponse.
-        :type: list[KeywordsAlarmRuleRespList]
+        :type keywords_alarm_rules: list[:class:`huaweicloudsdklts.v2.KeywordsAlarmRuleRespList`]
         """
         self._keywords_alarm_rules = keywords_alarm_rules
 

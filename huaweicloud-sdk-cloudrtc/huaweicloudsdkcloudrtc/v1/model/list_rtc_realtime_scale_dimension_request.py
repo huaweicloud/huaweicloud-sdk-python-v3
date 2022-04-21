@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRtcRealtimeScaleDimensionRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class ListRtcRealtimeScaleDimensionRequest:
     }
 
     def __init__(self, authorization=None, x_sdk_date=None, x_project_id=None, project_id=None, app=None, room_id=None, metric=None, dimension=None, time=None):
-        """ListRtcRealtimeScaleDimensionRequest - a model defined in huaweicloud sdk"""
+        """ListRtcRealtimeScaleDimensionRequest
+
+        The model defined in huaweicloud sdk
+
+        :param authorization: 使用AK/SK方式认证时必选，携带的鉴权信息。 
+        :type authorization: str
+        :param x_sdk_date: 使用AK/SK方式认证时必选，请求的发生时间。 
+        :type x_sdk_date: str
+        :param x_project_id: 使用AK/SK方式认证时必选，携带项目ID信息，与路径参数中的项目ID相同。 
+        :type x_project_id: str
+        :param project_id: 项目ID，获取方法请参考[获取项目ID](rtc_07_0015.xml)。 
+        :type project_id: str
+        :param app: 应用标识 
+        :type app: str
+        :param room_id: 房间ID 
+        :type room_id: str
+        :param metric: 查询的数据类型  OnlineUsers:在线用户数 
+        :type metric: str
+        :param dimension: 维度类型: region:省份 access_net:网络类型 platform:系统平台 sdk:SDK版本 
+        :type dimension: str
+        :param time: 查询时刻。UTC时间，格式：YYYY-MM-DDThh:mm:ssZ 
+        :type time: str
+        """
         
         
 
@@ -93,7 +114,7 @@ class ListRtcRealtimeScaleDimensionRequest:
         使用AK/SK方式认证时必选，携带的鉴权信息。 
 
         :param authorization: The authorization of this ListRtcRealtimeScaleDimensionRequest.
-        :type: str
+        :type authorization: str
         """
         self._authorization = authorization
 
@@ -115,7 +136,7 @@ class ListRtcRealtimeScaleDimensionRequest:
         使用AK/SK方式认证时必选，请求的发生时间。 
 
         :param x_sdk_date: The x_sdk_date of this ListRtcRealtimeScaleDimensionRequest.
-        :type: str
+        :type x_sdk_date: str
         """
         self._x_sdk_date = x_sdk_date
 
@@ -137,7 +158,7 @@ class ListRtcRealtimeScaleDimensionRequest:
         使用AK/SK方式认证时必选，携带项目ID信息，与路径参数中的项目ID相同。 
 
         :param x_project_id: The x_project_id of this ListRtcRealtimeScaleDimensionRequest.
-        :type: str
+        :type x_project_id: str
         """
         self._x_project_id = x_project_id
 
@@ -159,7 +180,7 @@ class ListRtcRealtimeScaleDimensionRequest:
         项目ID，获取方法请参考[获取项目ID](rtc_07_0015.xml)。 
 
         :param project_id: The project_id of this ListRtcRealtimeScaleDimensionRequest.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -181,7 +202,7 @@ class ListRtcRealtimeScaleDimensionRequest:
         应用标识 
 
         :param app: The app of this ListRtcRealtimeScaleDimensionRequest.
-        :type: str
+        :type app: str
         """
         self._app = app
 
@@ -203,7 +224,7 @@ class ListRtcRealtimeScaleDimensionRequest:
         房间ID 
 
         :param room_id: The room_id of this ListRtcRealtimeScaleDimensionRequest.
-        :type: str
+        :type room_id: str
         """
         self._room_id = room_id
 
@@ -225,7 +246,7 @@ class ListRtcRealtimeScaleDimensionRequest:
         查询的数据类型  OnlineUsers:在线用户数 
 
         :param metric: The metric of this ListRtcRealtimeScaleDimensionRequest.
-        :type: str
+        :type metric: str
         """
         self._metric = metric
 
@@ -247,7 +268,7 @@ class ListRtcRealtimeScaleDimensionRequest:
         维度类型: region:省份 access_net:网络类型 platform:系统平台 sdk:SDK版本 
 
         :param dimension: The dimension of this ListRtcRealtimeScaleDimensionRequest.
-        :type: str
+        :type dimension: str
         """
         self._dimension = dimension
 
@@ -269,7 +290,7 @@ class ListRtcRealtimeScaleDimensionRequest:
         查询时刻。UTC时间，格式：YYYY-MM-DDThh:mm:ssZ 
 
         :param time: The time of this ListRtcRealtimeScaleDimensionRequest.
-        :type: str
+        :type time: str
         """
         self._time = time
 

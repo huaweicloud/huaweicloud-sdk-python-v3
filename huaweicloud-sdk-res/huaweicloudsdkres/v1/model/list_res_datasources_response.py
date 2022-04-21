@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListResDatasourcesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListResDatasourcesResponse(SdkResponse):
     }
 
     def __init__(self, datasources=None, is_success=None, message=None, error_code=None):
-        """ListResDatasourcesResponse - a model defined in huaweicloud sdk"""
+        """ListResDatasourcesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param datasources: 数据源详情列表。
+        :type datasources: list[:class:`huaweicloudsdkres.v1.Datasources`]
+        :param is_success: 是否成功。
+        :type is_success: bool
+        :param message: 返回消息（请求成功时，不返回此字段）。
+        :type message: str
+        :param error_code: 错误码（请求成功时，不返回此字段）。
+        :type error_code: str
+        """
         
         super(ListResDatasourcesResponse, self).__init__()
 
@@ -62,7 +73,7 @@ class ListResDatasourcesResponse(SdkResponse):
         数据源详情列表。
 
         :return: The datasources of this ListResDatasourcesResponse.
-        :rtype: list[Datasources]
+        :rtype: list[:class:`huaweicloudsdkres.v1.Datasources`]
         """
         return self._datasources
 
@@ -73,7 +84,7 @@ class ListResDatasourcesResponse(SdkResponse):
         数据源详情列表。
 
         :param datasources: The datasources of this ListResDatasourcesResponse.
-        :type: list[Datasources]
+        :type datasources: list[:class:`huaweicloudsdkres.v1.Datasources`]
         """
         self._datasources = datasources
 
@@ -95,7 +106,7 @@ class ListResDatasourcesResponse(SdkResponse):
         是否成功。
 
         :param is_success: The is_success of this ListResDatasourcesResponse.
-        :type: bool
+        :type is_success: bool
         """
         self._is_success = is_success
 
@@ -117,7 +128,7 @@ class ListResDatasourcesResponse(SdkResponse):
         返回消息（请求成功时，不返回此字段）。
 
         :param message: The message of this ListResDatasourcesResponse.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -139,7 +150,7 @@ class ListResDatasourcesResponse(SdkResponse):
         错误码（请求成功时，不返回此字段）。
 
         :param error_code: The error_code of this ListResDatasourcesResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AssociateKeypairRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AssociateKeypairRequestBody:
     }
 
     def __init__(self, keypair_name=None, server=None):
-        """AssociateKeypairRequestBody - a model defined in huaweicloud sdk"""
+        """AssociateKeypairRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param keypair_name: SSH密钥对的名称
+        :type keypair_name: str
+        :param server: 
+        :type server: :class:`huaweicloudsdkkps.v3.EcsServerInfo`
+        """
         
         
 
@@ -61,7 +68,7 @@ class AssociateKeypairRequestBody:
         SSH密钥对的名称
 
         :param keypair_name: The keypair_name of this AssociateKeypairRequestBody.
-        :type: str
+        :type keypair_name: str
         """
         self._keypair_name = keypair_name
 
@@ -71,7 +78,7 @@ class AssociateKeypairRequestBody:
 
 
         :return: The server of this AssociateKeypairRequestBody.
-        :rtype: EcsServerInfo
+        :rtype: :class:`huaweicloudsdkkps.v3.EcsServerInfo`
         """
         return self._server
 
@@ -81,7 +88,7 @@ class AssociateKeypairRequestBody:
 
 
         :param server: The server of this AssociateKeypairRequestBody.
-        :type: EcsServerInfo
+        :type server: :class:`huaweicloudsdkkps.v3.EcsServerInfo`
         """
         self._server = server
 

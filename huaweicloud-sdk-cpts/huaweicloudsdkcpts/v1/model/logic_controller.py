@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LogicController:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class LogicController:
     }
 
     def __init__(self, for_loop_params=None, condition=None):
-        """LogicController - a model defined in huaweicloud sdk"""
+        """LogicController
+
+        The model defined in huaweicloud sdk
+
+        :param for_loop_params: for_loop_params
+        :type for_loop_params: str
+        :param condition: condition
+        :type condition: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class LogicController:
         for_loop_params
 
         :param for_loop_params: The for_loop_params of this LogicController.
-        :type: str
+        :type for_loop_params: str
         """
         self._for_loop_params = for_loop_params
 
@@ -85,7 +92,7 @@ class LogicController:
         condition
 
         :param condition: The condition of this LogicController.
-        :type: str
+        :type condition: str
         """
         self._condition = condition
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdatePasswordRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdatePasswordRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """UpdatePasswordRequest - a model defined in huaweicloud sdk"""
+        """UpdatePasswordRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param body: Body of the UpdatePasswordRequest
+        :type body: :class:`huaweicloudsdkdcs.v2.ModifyInstancePasswordBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdatePasswordRequest:
         实例ID。
 
         :param instance_id: The instance_id of this UpdatePasswordRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -72,7 +79,7 @@ class UpdatePasswordRequest:
 
 
         :return: The body of this UpdatePasswordRequest.
-        :rtype: ModifyInstancePasswordBody
+        :rtype: :class:`huaweicloudsdkdcs.v2.ModifyInstancePasswordBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdatePasswordRequest:
 
 
         :param body: The body of this UpdatePasswordRequest.
-        :type: ModifyInstancePasswordBody
+        :type body: :class:`huaweicloudsdkdcs.v2.ModifyInstancePasswordBody`
         """
         self._body = body
 

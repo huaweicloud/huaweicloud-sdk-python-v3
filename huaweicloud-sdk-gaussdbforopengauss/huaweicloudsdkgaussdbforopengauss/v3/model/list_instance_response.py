@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListInstanceResponse:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -88,7 +87,71 @@ class ListInstanceResponse:
     }
 
     def __init__(self, id=None, name=None, status=None, private_ips=None, public_ips=None, port=None, type=None, ha=None, replica_num=None, region=None, datastore=None, created=None, updated=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, flavor_ref=None, flavor_info=None, volume=None, switch_strategy=None, backup_strategy=None, maintenance_window=None, nodes=None, enterprise_project_id=None, instance_mode=None, disk_encryption_id=None, charge_info=None, time_zone=None, tags=None):
-        """ListInstanceResponse - a model defined in huaweicloud sdk"""
+        """ListInstanceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 实例ID。
+        :type id: str
+        :param name: 创建的实例名称。
+        :type name: str
+        :param status: 实例状态。  取值：  值为“BUILD”，表示实例正在创建。  值为“ACTIVE”，表示实例正常。  值为“FAILED”，表示实例异常。  值为“FROZEN”，表示实例冻结。  值为“EXPANDING”，表示实例正在扩容CN或DN。  值为“REBOOTING”，表示实例正在重启。  值为“UPGRADING”，表示实例正在升级。  值为“RESTORING”，表示实例正在恢复。  值为“BACKING UP”，表示实例正在进行备份。  值为“REDUCING REPLICATION”，表示实例正在降副本。  值为“STORAGE FULL”，表示实例磁盘空间满。
+        :type status: str
+        :param private_ips: 实例内网IP地址列表。分布式CN所在的弹性云服务器创建成功后该值存在，主备版DN所在的弹性云服务器创建成功后该值存在，其他情况下为空字符串。
+        :type private_ips: list[str]
+        :param public_ips: 实例外网IP地址列表。绑定弹性公网IP后，该值不为空。
+        :type public_ips: list[str]
+        :param port: 数据库端口号。GaussDB(for openGauss)数据库端口设置范围为1024~39998（其中2378,2379,2380,4999,5000,5999,6000,6001,8097,8098,20049,20050,21731,21732被系统占用不可设置）。  当不传该参数时，默认端口如下：8000。
+        :type port: int
+        :param type: 实例类型，取值为 \&quot;enterprise\&quot;，对应于分布式实例（企业版）。取值为\&quot;Ha\&quot;，对应于主备版实例。
+        :type type: str
+        :param ha: 
+        :type ha: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListHa`
+        :param replica_num: 实例副本数。
+        :type replica_num: int
+        :param region: 实例所在区域。
+        :type region: str
+        :param datastore: 
+        :type datastore: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListDatastore`
+        :param created: 创建时间，格式为“yyyy-mm-dd hh:mm:ss timezone”。  其中timezone是指时区。  说明：创建时该值为实例下发创建的时间，创建完成后，该值为创建完成时间。
+        :type created: str
+        :param updated: 更新时间，格式与“created”字段对应格式完全相同。  说明：创建时返回值为空，数据库实例创建成功后该值不为空。
+        :type updated: str
+        :param db_user_name: 默认用户名。
+        :type db_user_name: str
+        :param vpc_id: 虚拟私有云ID。
+        :type vpc_id: str
+        :param subnet_id: 子网的网络ID信息。
+        :type subnet_id: str
+        :param security_group_id: 安全组ID。
+        :type security_group_id: str
+        :param flavor_ref: 规格码。参考[表1](https://support.huaweicloud.com/api-opengauss/opengauss_api_0037.html#opengauss_api_0037__ted9b9d433c8a4c52884e199e17f94479)中GaussDB(for openGauss)的“规格编码”列内容获取。
+        :type flavor_ref: str
+        :param flavor_info: 
+        :type flavor_info: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListFlavorInfo`
+        :param volume: 
+        :type volume: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListVolume`
+        :param switch_strategy: 数据库切换策略。取值为“reliability”或“availability”，分别对应于可靠性优先和可用性优先。 若创建时没有选择切换策略，则不予显示。
+        :type switch_strategy: str
+        :param backup_strategy: 
+        :type backup_strategy: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussBackupStrategyForListResponse`
+        :param maintenance_window: 可维护时间窗，为UTC时间。
+        :type maintenance_window: str
+        :param nodes: 实例节点信息。
+        :type nodes: list[object]
+        :param enterprise_project_id: 企业项目标签ID。非企业项目账号的实例，企业项目默认0。
+        :type enterprise_project_id: str
+        :param instance_mode: basic为基础版 ，enterprise为企业版。
+        :type instance_mode: str
+        :param disk_encryption_id: 磁盘加密密钥ID。只有创建磁盘加密实例才会显示该参数。
+        :type disk_encryption_id: str
+        :param charge_info: 
+        :type charge_info: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussChargeInfoListResponse`
+        :param time_zone: 时区。
+        :type time_zone: str
+        :param tags: 标签列表，没有标签不返回该参数。
+        :type tags: list[object]
+        """
         
         
 
@@ -174,7 +237,7 @@ class ListInstanceResponse:
         实例ID。
 
         :param id: The id of this ListInstanceResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -196,7 +259,7 @@ class ListInstanceResponse:
         创建的实例名称。
 
         :param name: The name of this ListInstanceResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -218,7 +281,7 @@ class ListInstanceResponse:
         实例状态。  取值：  值为“BUILD”，表示实例正在创建。  值为“ACTIVE”，表示实例正常。  值为“FAILED”，表示实例异常。  值为“FROZEN”，表示实例冻结。  值为“EXPANDING”，表示实例正在扩容CN或DN。  值为“REBOOTING”，表示实例正在重启。  值为“UPGRADING”，表示实例正在升级。  值为“RESTORING”，表示实例正在恢复。  值为“BACKING UP”，表示实例正在进行备份。  值为“REDUCING REPLICATION”，表示实例正在降副本。  值为“STORAGE FULL”，表示实例磁盘空间满。
 
         :param status: The status of this ListInstanceResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -240,7 +303,7 @@ class ListInstanceResponse:
         实例内网IP地址列表。分布式CN所在的弹性云服务器创建成功后该值存在，主备版DN所在的弹性云服务器创建成功后该值存在，其他情况下为空字符串。
 
         :param private_ips: The private_ips of this ListInstanceResponse.
-        :type: list[str]
+        :type private_ips: list[str]
         """
         self._private_ips = private_ips
 
@@ -262,7 +325,7 @@ class ListInstanceResponse:
         实例外网IP地址列表。绑定弹性公网IP后，该值不为空。
 
         :param public_ips: The public_ips of this ListInstanceResponse.
-        :type: list[str]
+        :type public_ips: list[str]
         """
         self._public_ips = public_ips
 
@@ -284,7 +347,7 @@ class ListInstanceResponse:
         数据库端口号。GaussDB(for openGauss)数据库端口设置范围为1024~39998（其中2378,2379,2380,4999,5000,5999,6000,6001,8097,8098,20049,20050,21731,21732被系统占用不可设置）。  当不传该参数时，默认端口如下：8000。
 
         :param port: The port of this ListInstanceResponse.
-        :type: int
+        :type port: int
         """
         self._port = port
 
@@ -306,7 +369,7 @@ class ListInstanceResponse:
         实例类型，取值为 \"enterprise\"，对应于分布式实例（企业版）。取值为\"Ha\"，对应于主备版实例。
 
         :param type: The type of this ListInstanceResponse.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -316,7 +379,7 @@ class ListInstanceResponse:
 
 
         :return: The ha of this ListInstanceResponse.
-        :rtype: ListHa
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListHa`
         """
         return self._ha
 
@@ -326,7 +389,7 @@ class ListInstanceResponse:
 
 
         :param ha: The ha of this ListInstanceResponse.
-        :type: ListHa
+        :type ha: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListHa`
         """
         self._ha = ha
 
@@ -348,7 +411,7 @@ class ListInstanceResponse:
         实例副本数。
 
         :param replica_num: The replica_num of this ListInstanceResponse.
-        :type: int
+        :type replica_num: int
         """
         self._replica_num = replica_num
 
@@ -370,7 +433,7 @@ class ListInstanceResponse:
         实例所在区域。
 
         :param region: The region of this ListInstanceResponse.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -380,7 +443,7 @@ class ListInstanceResponse:
 
 
         :return: The datastore of this ListInstanceResponse.
-        :rtype: ListDatastore
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListDatastore`
         """
         return self._datastore
 
@@ -390,7 +453,7 @@ class ListInstanceResponse:
 
 
         :param datastore: The datastore of this ListInstanceResponse.
-        :type: ListDatastore
+        :type datastore: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListDatastore`
         """
         self._datastore = datastore
 
@@ -412,7 +475,7 @@ class ListInstanceResponse:
         创建时间，格式为“yyyy-mm-dd hh:mm:ss timezone”。  其中timezone是指时区。  说明：创建时该值为实例下发创建的时间，创建完成后，该值为创建完成时间。
 
         :param created: The created of this ListInstanceResponse.
-        :type: str
+        :type created: str
         """
         self._created = created
 
@@ -434,7 +497,7 @@ class ListInstanceResponse:
         更新时间，格式与“created”字段对应格式完全相同。  说明：创建时返回值为空，数据库实例创建成功后该值不为空。
 
         :param updated: The updated of this ListInstanceResponse.
-        :type: str
+        :type updated: str
         """
         self._updated = updated
 
@@ -456,7 +519,7 @@ class ListInstanceResponse:
         默认用户名。
 
         :param db_user_name: The db_user_name of this ListInstanceResponse.
-        :type: str
+        :type db_user_name: str
         """
         self._db_user_name = db_user_name
 
@@ -478,7 +541,7 @@ class ListInstanceResponse:
         虚拟私有云ID。
 
         :param vpc_id: The vpc_id of this ListInstanceResponse.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -500,7 +563,7 @@ class ListInstanceResponse:
         子网的网络ID信息。
 
         :param subnet_id: The subnet_id of this ListInstanceResponse.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -522,7 +585,7 @@ class ListInstanceResponse:
         安全组ID。
 
         :param security_group_id: The security_group_id of this ListInstanceResponse.
-        :type: str
+        :type security_group_id: str
         """
         self._security_group_id = security_group_id
 
@@ -544,7 +607,7 @@ class ListInstanceResponse:
         规格码。参考[表1](https://support.huaweicloud.com/api-opengauss/opengauss_api_0037.html#opengauss_api_0037__ted9b9d433c8a4c52884e199e17f94479)中GaussDB(for openGauss)的“规格编码”列内容获取。
 
         :param flavor_ref: The flavor_ref of this ListInstanceResponse.
-        :type: str
+        :type flavor_ref: str
         """
         self._flavor_ref = flavor_ref
 
@@ -554,7 +617,7 @@ class ListInstanceResponse:
 
 
         :return: The flavor_info of this ListInstanceResponse.
-        :rtype: ListFlavorInfo
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListFlavorInfo`
         """
         return self._flavor_info
 
@@ -564,7 +627,7 @@ class ListInstanceResponse:
 
 
         :param flavor_info: The flavor_info of this ListInstanceResponse.
-        :type: ListFlavorInfo
+        :type flavor_info: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListFlavorInfo`
         """
         self._flavor_info = flavor_info
 
@@ -574,7 +637,7 @@ class ListInstanceResponse:
 
 
         :return: The volume of this ListInstanceResponse.
-        :rtype: ListVolume
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListVolume`
         """
         return self._volume
 
@@ -584,7 +647,7 @@ class ListInstanceResponse:
 
 
         :param volume: The volume of this ListInstanceResponse.
-        :type: ListVolume
+        :type volume: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListVolume`
         """
         self._volume = volume
 
@@ -606,7 +669,7 @@ class ListInstanceResponse:
         数据库切换策略。取值为“reliability”或“availability”，分别对应于可靠性优先和可用性优先。 若创建时没有选择切换策略，则不予显示。
 
         :param switch_strategy: The switch_strategy of this ListInstanceResponse.
-        :type: str
+        :type switch_strategy: str
         """
         self._switch_strategy = switch_strategy
 
@@ -616,7 +679,7 @@ class ListInstanceResponse:
 
 
         :return: The backup_strategy of this ListInstanceResponse.
-        :rtype: OpenGaussBackupStrategyForListResponse
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussBackupStrategyForListResponse`
         """
         return self._backup_strategy
 
@@ -626,7 +689,7 @@ class ListInstanceResponse:
 
 
         :param backup_strategy: The backup_strategy of this ListInstanceResponse.
-        :type: OpenGaussBackupStrategyForListResponse
+        :type backup_strategy: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussBackupStrategyForListResponse`
         """
         self._backup_strategy = backup_strategy
 
@@ -648,7 +711,7 @@ class ListInstanceResponse:
         可维护时间窗，为UTC时间。
 
         :param maintenance_window: The maintenance_window of this ListInstanceResponse.
-        :type: str
+        :type maintenance_window: str
         """
         self._maintenance_window = maintenance_window
 
@@ -670,7 +733,7 @@ class ListInstanceResponse:
         实例节点信息。
 
         :param nodes: The nodes of this ListInstanceResponse.
-        :type: list[object]
+        :type nodes: list[object]
         """
         self._nodes = nodes
 
@@ -692,7 +755,7 @@ class ListInstanceResponse:
         企业项目标签ID。非企业项目账号的实例，企业项目默认0。
 
         :param enterprise_project_id: The enterprise_project_id of this ListInstanceResponse.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -714,7 +777,7 @@ class ListInstanceResponse:
         basic为基础版 ，enterprise为企业版。
 
         :param instance_mode: The instance_mode of this ListInstanceResponse.
-        :type: str
+        :type instance_mode: str
         """
         self._instance_mode = instance_mode
 
@@ -736,7 +799,7 @@ class ListInstanceResponse:
         磁盘加密密钥ID。只有创建磁盘加密实例才会显示该参数。
 
         :param disk_encryption_id: The disk_encryption_id of this ListInstanceResponse.
-        :type: str
+        :type disk_encryption_id: str
         """
         self._disk_encryption_id = disk_encryption_id
 
@@ -746,7 +809,7 @@ class ListInstanceResponse:
 
 
         :return: The charge_info of this ListInstanceResponse.
-        :rtype: OpenGaussChargeInfoListResponse
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussChargeInfoListResponse`
         """
         return self._charge_info
 
@@ -756,7 +819,7 @@ class ListInstanceResponse:
 
 
         :param charge_info: The charge_info of this ListInstanceResponse.
-        :type: OpenGaussChargeInfoListResponse
+        :type charge_info: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussChargeInfoListResponse`
         """
         self._charge_info = charge_info
 
@@ -778,7 +841,7 @@ class ListInstanceResponse:
         时区。
 
         :param time_zone: The time_zone of this ListInstanceResponse.
-        :type: str
+        :type time_zone: str
         """
         self._time_zone = time_zone
 
@@ -800,7 +863,7 @@ class ListInstanceResponse:
         标签列表，没有标签不返回该参数。
 
         :param tags: The tags of this ListInstanceResponse.
-        :type: list[object]
+        :type tags: list[object]
         """
         self._tags = tags
 

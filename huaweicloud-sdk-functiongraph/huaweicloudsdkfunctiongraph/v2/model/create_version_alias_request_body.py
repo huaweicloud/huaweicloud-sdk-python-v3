@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateVersionAliasRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CreateVersionAliasRequestBody:
     }
 
     def __init__(self, name=None, version=None, description=None, additional_version_weights=None):
-        """CreateVersionAliasRequestBody - a model defined in huaweicloud sdk"""
+        """CreateVersionAliasRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param name: 要获取的别名名称。
+        :type name: str
+        :param version: 别名对应的版本名称。
+        :type version: str
+        :param description: 别名描述信息。
+        :type description: str
+        :param additional_version_weights: 灰度版本信息
+        :type additional_version_weights: dict(str, int)
+        """
         
         
 
@@ -71,7 +82,7 @@ class CreateVersionAliasRequestBody:
         要获取的别名名称。
 
         :param name: The name of this CreateVersionAliasRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -93,7 +104,7 @@ class CreateVersionAliasRequestBody:
         别名对应的版本名称。
 
         :param version: The version of this CreateVersionAliasRequestBody.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -115,7 +126,7 @@ class CreateVersionAliasRequestBody:
         别名描述信息。
 
         :param description: The description of this CreateVersionAliasRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -137,7 +148,7 @@ class CreateVersionAliasRequestBody:
         灰度版本信息
 
         :param additional_version_weights: The additional_version_weights of this CreateVersionAliasRequestBody.
-        :type: dict(str, int)
+        :type additional_version_weights: dict(str, int)
         """
         self._additional_version_weights = additional_version_weights
 

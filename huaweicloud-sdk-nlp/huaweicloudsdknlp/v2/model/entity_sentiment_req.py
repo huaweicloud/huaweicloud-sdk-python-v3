@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EntitySentimentReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class EntitySentimentReq:
     }
 
     def __init__(self, content=None, entity=None, type=None):
-        """EntitySentimentReq - a model defined in huaweicloud sdk"""
+        """EntitySentimentReq
+
+        The model defined in huaweicloud sdk
+
+        :param content: 请求文本。文本编码要求为utf-8，仅支持中文实体情感分析。 限定content+entity长度为512以内，长度超过512时，只检测前512个字符。 
+        :type content: str
+        :param entity: 请求实体。文本编码要求为utf-8.仅支持中文实体情感分析。 限定content+entity长度为512以内，长度超过512时，只检测前512个字符。
+        :type entity: str
+        :param type: 取值如下： 3 金融领域
+        :type type: int
+        """
         
         
 
@@ -65,7 +74,7 @@ class EntitySentimentReq:
         请求文本。文本编码要求为utf-8，仅支持中文实体情感分析。 限定content+entity长度为512以内，长度超过512时，只检测前512个字符。 
 
         :param content: The content of this EntitySentimentReq.
-        :type: str
+        :type content: str
         """
         self._content = content
 
@@ -87,7 +96,7 @@ class EntitySentimentReq:
         请求实体。文本编码要求为utf-8.仅支持中文实体情感分析。 限定content+entity长度为512以内，长度超过512时，只检测前512个字符。
 
         :param entity: The entity of this EntitySentimentReq.
-        :type: str
+        :type entity: str
         """
         self._entity = entity
 
@@ -109,7 +118,7 @@ class EntitySentimentReq:
         取值如下： 3 金融领域
 
         :param type: The type of this EntitySentimentReq.
-        :type: int
+        :type type: int
         """
         self._type = type
 

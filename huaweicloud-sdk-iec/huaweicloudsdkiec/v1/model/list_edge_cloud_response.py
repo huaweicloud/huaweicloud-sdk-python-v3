@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListEdgeCloudResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListEdgeCloudResponse(SdkResponse):
     }
 
     def __init__(self, count=None, edgeclouds=None):
-        """ListEdgeCloudResponse - a model defined in huaweicloud sdk"""
+        """ListEdgeCloudResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 边缘业务数量。
+        :type count: int
+        :param edgeclouds: 边缘业务列表。
+        :type edgeclouds: list[:class:`huaweicloudsdkiec.v1.EdgeCloud`]
+        """
         
         super(ListEdgeCloudResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListEdgeCloudResponse(SdkResponse):
         边缘业务数量。
 
         :param count: The count of this ListEdgeCloudResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -74,7 +81,7 @@ class ListEdgeCloudResponse(SdkResponse):
         边缘业务列表。
 
         :return: The edgeclouds of this ListEdgeCloudResponse.
-        :rtype: list[EdgeCloud]
+        :rtype: list[:class:`huaweicloudsdkiec.v1.EdgeCloud`]
         """
         return self._edgeclouds
 
@@ -85,7 +92,7 @@ class ListEdgeCloudResponse(SdkResponse):
         边缘业务列表。
 
         :param edgeclouds: The edgeclouds of this ListEdgeCloudResponse.
-        :type: list[EdgeCloud]
+        :type edgeclouds: list[:class:`huaweicloudsdkiec.v1.EdgeCloud`]
         """
         self._edgeclouds = edgeclouds
 

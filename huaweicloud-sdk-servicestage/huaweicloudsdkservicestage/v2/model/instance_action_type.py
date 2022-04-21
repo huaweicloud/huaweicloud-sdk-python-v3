@@ -12,13 +12,11 @@ class InstanceActionType:
     """
     allowed enum values
     """
-
     START = "start"
     STOP = "stop"
     RESTART = "restart"
     SCALE = "scale"
     ROLLBACK = "rollback"
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +34,11 @@ class InstanceActionType:
     }
 
     def __init__(self):
-        """InstanceActionType - a model defined in huaweicloud sdk"""
+        """InstanceActionType
+
+        The model defined in huaweicloud sdk
+
+        """
         
         
         self.discriminator = None

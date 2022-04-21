@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BriefTaskRespBean:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -58,7 +57,41 @@ class BriefTaskRespBean:
     }
 
     def __init__(self, task_id=None, task_name=None, task_type=None, status=None, created_date=None, version=None, last_modified_time=None, execute_status=None, source_app_id=None, target_app_id=None, source_instance_id=None, target_instance_id=None, ext_type=None, enterprise_project_id=None, task_tag=None):
-        """BriefTaskRespBean - a model defined in huaweicloud sdk"""
+        """BriefTaskRespBean
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 任务ID
+        :type task_id: str
+        :param task_name: 任务名称
+        :type task_name: str
+        :param task_type: 任务类型 - REALTIME (实时) - TIMING (定时)
+        :type task_type: str
+        :param status: 任务状态 - 0 (停止/未启动) - 1 (运行中)
+        :type status: int
+        :param created_date: 创建时间
+        :type created_date: date
+        :param version: 任务的版本
+        :type version: str
+        :param last_modified_time: 上次修改时间
+        :type last_modified_time: int
+        :param execute_status: 任务执行状态  - UNSTARTED (未启动)  - WAITING (等待执行)  - RUNNING (执行中)  - SUCCESS (执行成功)  - CANCELLED (任务取消)  - ERROR (执行异常)
+        :type execute_status: str
+        :param source_app_id: 源端数据源所属应用ID
+        :type source_app_id: str
+        :param target_app_id: 目标端数据源所属应用ID
+        :type target_app_id: str
+        :param source_instance_id: 源端实例ID
+        :type source_instance_id: str
+        :param target_instance_id: 目标端实例ID
+        :type target_instance_id: str
+        :param ext_type: 组合任务类型, 可为空
+        :type ext_type: str
+        :param enterprise_project_id: 企业项目id
+        :type enterprise_project_id: str
+        :param task_tag: 任务标签
+        :type task_tag: str
+        """
         
         
 
@@ -128,7 +161,7 @@ class BriefTaskRespBean:
         任务ID
 
         :param task_id: The task_id of this BriefTaskRespBean.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -150,7 +183,7 @@ class BriefTaskRespBean:
         任务名称
 
         :param task_name: The task_name of this BriefTaskRespBean.
-        :type: str
+        :type task_name: str
         """
         self._task_name = task_name
 
@@ -172,7 +205,7 @@ class BriefTaskRespBean:
         任务类型 - REALTIME (实时) - TIMING (定时)
 
         :param task_type: The task_type of this BriefTaskRespBean.
-        :type: str
+        :type task_type: str
         """
         self._task_type = task_type
 
@@ -194,7 +227,7 @@ class BriefTaskRespBean:
         任务状态 - 0 (停止/未启动) - 1 (运行中)
 
         :param status: The status of this BriefTaskRespBean.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -216,7 +249,7 @@ class BriefTaskRespBean:
         创建时间
 
         :param created_date: The created_date of this BriefTaskRespBean.
-        :type: date
+        :type created_date: date
         """
         self._created_date = created_date
 
@@ -238,7 +271,7 @@ class BriefTaskRespBean:
         任务的版本
 
         :param version: The version of this BriefTaskRespBean.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -260,7 +293,7 @@ class BriefTaskRespBean:
         上次修改时间
 
         :param last_modified_time: The last_modified_time of this BriefTaskRespBean.
-        :type: int
+        :type last_modified_time: int
         """
         self._last_modified_time = last_modified_time
 
@@ -282,7 +315,7 @@ class BriefTaskRespBean:
         任务执行状态  - UNSTARTED (未启动)  - WAITING (等待执行)  - RUNNING (执行中)  - SUCCESS (执行成功)  - CANCELLED (任务取消)  - ERROR (执行异常)
 
         :param execute_status: The execute_status of this BriefTaskRespBean.
-        :type: str
+        :type execute_status: str
         """
         self._execute_status = execute_status
 
@@ -304,7 +337,7 @@ class BriefTaskRespBean:
         源端数据源所属应用ID
 
         :param source_app_id: The source_app_id of this BriefTaskRespBean.
-        :type: str
+        :type source_app_id: str
         """
         self._source_app_id = source_app_id
 
@@ -326,7 +359,7 @@ class BriefTaskRespBean:
         目标端数据源所属应用ID
 
         :param target_app_id: The target_app_id of this BriefTaskRespBean.
-        :type: str
+        :type target_app_id: str
         """
         self._target_app_id = target_app_id
 
@@ -348,7 +381,7 @@ class BriefTaskRespBean:
         源端实例ID
 
         :param source_instance_id: The source_instance_id of this BriefTaskRespBean.
-        :type: str
+        :type source_instance_id: str
         """
         self._source_instance_id = source_instance_id
 
@@ -370,7 +403,7 @@ class BriefTaskRespBean:
         目标端实例ID
 
         :param target_instance_id: The target_instance_id of this BriefTaskRespBean.
-        :type: str
+        :type target_instance_id: str
         """
         self._target_instance_id = target_instance_id
 
@@ -392,7 +425,7 @@ class BriefTaskRespBean:
         组合任务类型, 可为空
 
         :param ext_type: The ext_type of this BriefTaskRespBean.
-        :type: str
+        :type ext_type: str
         """
         self._ext_type = ext_type
 
@@ -414,7 +447,7 @@ class BriefTaskRespBean:
         企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this BriefTaskRespBean.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -436,7 +469,7 @@ class BriefTaskRespBean:
         任务标签
 
         :param task_tag: The task_tag of this BriefTaskRespBean.
-        :type: str
+        :type task_tag: str
         """
         self._task_tag = task_tag
 

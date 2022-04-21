@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateMessageTemplateRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateMessageTemplateRequestBody:
     }
 
     def __init__(self, content=None):
-        """UpdateMessageTemplateRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateMessageTemplateRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param content: 模板内容。
+        :type content: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class UpdateMessageTemplateRequestBody:
         模板内容。
 
         :param content: The content of this UpdateMessageTemplateRequestBody.
-        :type: str
+        :type content: str
         """
         self._content = content
 

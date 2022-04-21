@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateBatchTaskResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class CreateBatchTaskResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None, task_name=None, task_type=None, targets=None, targets_filter=None, document=None, task_policy=None, status=None, status_desc=None, task_progress=None, create_time=None):
-        """CreateBatchTaskResponse - a model defined in huaweicloud sdk"""
+        """CreateBatchTaskResponse
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 批量任务ID，创建批量任务时由物联网平台分配获得。
+        :type task_id: str
+        :param task_name: 批量任务名称。
+        :type task_name: str
+        :param task_type: 批量任务类型，取值范围：firmwareUpgrade，softwareUpgrade，createDevices，deleteDevices，freezeDevices，unfreezeDevices，createCommands，createAsyncCommands，createMessages，updateDeviceShadows。 - softwareUpgrade: 软件升级任务 - firmwareUpgrade: 固件升级任务 - createDevices: 批量创建设备任务 - deleteDevices: 批量删除设备任务 - freezeDevices: 批量冻结设备任务 - unfreezeDevices: 批量解冻设备任务 - createCommands: 批量创建同步命令任务 - createAsyncCommands: 批量创建异步命令任务 - createMessages: 批量创建消息任务 - updateDeviceShadows: 批量配置设备影子任务 
+        :type task_type: str
+        :param targets: 执行批量任务的目标，当task_type为firmwareUpgrade，softwareUpgrade，deleteDevices，freezeDevices，unfreezeDevices，createCommands，createAsyncCommands，createMessages，updateDeviceShadows，此处填写device_id列表。
+        :type targets: list[str]
+        :param targets_filter: 任务目标筛选参数。Json格式，里面是一个个键值对，（K,V）格式标识筛选targets需要的参数，目前支持的K有group_ids（V填写group_id数组，eg:[\&quot;e495cf17-ff79-4294-8f64-4d367919d665\&quot;]，任务则会筛选出来符合该群组条件的设备作为目标）
+        :type targets_filter: dict(str, object)
+        :param document: 执行任务数据文档，Json格式。(当task_type为softwareUpgrade|firmwareUpgrade，也就是软固件升级任务时，Json里面是(K,V)键值对，需要填写key为package_id，value为在平台上传的软固件附件id，id由portal软件库包管理上传并查询获得。当task_type为createCommands，也就是批量创建同步命令任务时，Json里面是命令相关参数，eg：{\&quot;service_id\&quot;:\&quot;water\&quot;,\&quot;command_name\&quot;:\&quot;ON_OFF\&quot;,\&quot;paras\&quot;:{\&quot;value\&quot;:\&quot;ON\&quot;}}，参考[设备同步命令](https://support.huaweicloud.com/api-iothub/iot_06_v5_0038.html))。当task_type为createAsyncCommands，也就是批量创建异步命令任务时，Json里面是命令相关参数，eg：{\&quot;service_id\&quot;:\&quot;water\&quot;,\&quot;command_name\&quot;:\&quot;ON_OFF\&quot;,\&quot;paras\&quot;:{\&quot;value\&quot;:\&quot;ON\&quot;},\&quot;expire_time\&quot;:0,\&quot;send_strategy\&quot;:\&quot;immediately\&quot;}，参考[设备异步命令](https://support.huaweicloud.com/api-iothub/iot_06_v5_0040.html))。当task_type为updateDeviceShadows，也就是批量配置设备影子任务时，Json里面是命令相关参数，eg：{\&quot;shadow\&quot;: [{\&quot;service_id\&quot;: \&quot;WaterMeter\&quot;,\&quot;desired\&quot;: {\&quot;temperature\&quot;: \&quot;60\&quot;}}]}，参考[配置设备影子预期数据](https://support.huaweicloud.com/api-iothub/iot_06_v5_0072.html))。
+        :type document: object
+        :param task_policy: 
+        :type task_policy: :class:`huaweicloudsdkiotda.v5.TaskPolicy`
+        :param status: 批量任务的状态，可选参数，取值范围：Success|Fail|Processing|PartialSuccess|Stopped|Waitting|Initializing。 - Initializing: 初始化中。 - Waitting: 等待中。 - Processing: 执行中。 - Success: 成功。 - Fail: 失败。 - PartialSuccess: 部分成功。 - Stopped: 停止。 
+        :type status: str
+        :param status_desc: 批量任务状态描述(包含主任务失败错误信息)
+        :type status_desc: str
+        :param task_progress: 
+        :type task_progress: :class:`huaweicloudsdkiotda.v5.TaskProgress`
+        :param create_time: 批量任务的创建时间。格式：yyyyMMdd&#39;T&#39;HHmmss&#39;Z&#39;，如20151212T121212Z。
+        :type create_time: str
+        """
         
         super(CreateBatchTaskResponse, self).__init__()
 
@@ -108,7 +133,7 @@ class CreateBatchTaskResponse(SdkResponse):
         批量任务ID，创建批量任务时由物联网平台分配获得。
 
         :param task_id: The task_id of this CreateBatchTaskResponse.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -130,7 +155,7 @@ class CreateBatchTaskResponse(SdkResponse):
         批量任务名称。
 
         :param task_name: The task_name of this CreateBatchTaskResponse.
-        :type: str
+        :type task_name: str
         """
         self._task_name = task_name
 
@@ -152,7 +177,7 @@ class CreateBatchTaskResponse(SdkResponse):
         批量任务类型，取值范围：firmwareUpgrade，softwareUpgrade，createDevices，deleteDevices，freezeDevices，unfreezeDevices，createCommands，createAsyncCommands，createMessages，updateDeviceShadows。 - softwareUpgrade: 软件升级任务 - firmwareUpgrade: 固件升级任务 - createDevices: 批量创建设备任务 - deleteDevices: 批量删除设备任务 - freezeDevices: 批量冻结设备任务 - unfreezeDevices: 批量解冻设备任务 - createCommands: 批量创建同步命令任务 - createAsyncCommands: 批量创建异步命令任务 - createMessages: 批量创建消息任务 - updateDeviceShadows: 批量配置设备影子任务 
 
         :param task_type: The task_type of this CreateBatchTaskResponse.
-        :type: str
+        :type task_type: str
         """
         self._task_type = task_type
 
@@ -174,7 +199,7 @@ class CreateBatchTaskResponse(SdkResponse):
         执行批量任务的目标，当task_type为firmwareUpgrade，softwareUpgrade，deleteDevices，freezeDevices，unfreezeDevices，createCommands，createAsyncCommands，createMessages，updateDeviceShadows，此处填写device_id列表。
 
         :param targets: The targets of this CreateBatchTaskResponse.
-        :type: list[str]
+        :type targets: list[str]
         """
         self._targets = targets
 
@@ -196,7 +221,7 @@ class CreateBatchTaskResponse(SdkResponse):
         任务目标筛选参数。Json格式，里面是一个个键值对，（K,V）格式标识筛选targets需要的参数，目前支持的K有group_ids（V填写group_id数组，eg:[\"e495cf17-ff79-4294-8f64-4d367919d665\"]，任务则会筛选出来符合该群组条件的设备作为目标）
 
         :param targets_filter: The targets_filter of this CreateBatchTaskResponse.
-        :type: dict(str, object)
+        :type targets_filter: dict(str, object)
         """
         self._targets_filter = targets_filter
 
@@ -218,7 +243,7 @@ class CreateBatchTaskResponse(SdkResponse):
         执行任务数据文档，Json格式。(当task_type为softwareUpgrade|firmwareUpgrade，也就是软固件升级任务时，Json里面是(K,V)键值对，需要填写key为package_id，value为在平台上传的软固件附件id，id由portal软件库包管理上传并查询获得。当task_type为createCommands，也就是批量创建同步命令任务时，Json里面是命令相关参数，eg：{\"service_id\":\"water\",\"command_name\":\"ON_OFF\",\"paras\":{\"value\":\"ON\"}}，参考[设备同步命令](https://support.huaweicloud.com/api-iothub/iot_06_v5_0038.html))。当task_type为createAsyncCommands，也就是批量创建异步命令任务时，Json里面是命令相关参数，eg：{\"service_id\":\"water\",\"command_name\":\"ON_OFF\",\"paras\":{\"value\":\"ON\"},\"expire_time\":0,\"send_strategy\":\"immediately\"}，参考[设备异步命令](https://support.huaweicloud.com/api-iothub/iot_06_v5_0040.html))。当task_type为updateDeviceShadows，也就是批量配置设备影子任务时，Json里面是命令相关参数，eg：{\"shadow\": [{\"service_id\": \"WaterMeter\",\"desired\": {\"temperature\": \"60\"}}]}，参考[配置设备影子预期数据](https://support.huaweicloud.com/api-iothub/iot_06_v5_0072.html))。
 
         :param document: The document of this CreateBatchTaskResponse.
-        :type: object
+        :type document: object
         """
         self._document = document
 
@@ -228,7 +253,7 @@ class CreateBatchTaskResponse(SdkResponse):
 
 
         :return: The task_policy of this CreateBatchTaskResponse.
-        :rtype: TaskPolicy
+        :rtype: :class:`huaweicloudsdkiotda.v5.TaskPolicy`
         """
         return self._task_policy
 
@@ -238,7 +263,7 @@ class CreateBatchTaskResponse(SdkResponse):
 
 
         :param task_policy: The task_policy of this CreateBatchTaskResponse.
-        :type: TaskPolicy
+        :type task_policy: :class:`huaweicloudsdkiotda.v5.TaskPolicy`
         """
         self._task_policy = task_policy
 
@@ -260,7 +285,7 @@ class CreateBatchTaskResponse(SdkResponse):
         批量任务的状态，可选参数，取值范围：Success|Fail|Processing|PartialSuccess|Stopped|Waitting|Initializing。 - Initializing: 初始化中。 - Waitting: 等待中。 - Processing: 执行中。 - Success: 成功。 - Fail: 失败。 - PartialSuccess: 部分成功。 - Stopped: 停止。 
 
         :param status: The status of this CreateBatchTaskResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -282,7 +307,7 @@ class CreateBatchTaskResponse(SdkResponse):
         批量任务状态描述(包含主任务失败错误信息)
 
         :param status_desc: The status_desc of this CreateBatchTaskResponse.
-        :type: str
+        :type status_desc: str
         """
         self._status_desc = status_desc
 
@@ -292,7 +317,7 @@ class CreateBatchTaskResponse(SdkResponse):
 
 
         :return: The task_progress of this CreateBatchTaskResponse.
-        :rtype: TaskProgress
+        :rtype: :class:`huaweicloudsdkiotda.v5.TaskProgress`
         """
         return self._task_progress
 
@@ -302,7 +327,7 @@ class CreateBatchTaskResponse(SdkResponse):
 
 
         :param task_progress: The task_progress of this CreateBatchTaskResponse.
-        :type: TaskProgress
+        :type task_progress: :class:`huaweicloudsdkiotda.v5.TaskProgress`
         """
         self._task_progress = task_progress
 
@@ -324,7 +349,7 @@ class CreateBatchTaskResponse(SdkResponse):
         批量任务的创建时间。格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
         :param create_time: The create_time of this CreateBatchTaskResponse.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 

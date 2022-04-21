@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateProgramRequestDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateProgramRequestDTO:
     }
 
     def __init__(self, program_name=None, program_item_list=None):
-        """CreateProgramRequestDTO - a model defined in huaweicloud sdk"""
+        """CreateProgramRequestDTO
+
+        The model defined in huaweicloud sdk
+
+        :param program_name: 节目名称
+        :type program_name: str
+        :param program_item_list: 节目素材列表
+        :type program_item_list: list[:class:`huaweicloudsdkmeeting.v1.ProgramItemRequestBase`]
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateProgramRequestDTO:
         节目名称
 
         :param program_name: The program_name of this CreateProgramRequestDTO.
-        :type: str
+        :type program_name: str
         """
         self._program_name = program_name
 
@@ -73,7 +80,7 @@ class CreateProgramRequestDTO:
         节目素材列表
 
         :return: The program_item_list of this CreateProgramRequestDTO.
-        :rtype: list[ProgramItemRequestBase]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.ProgramItemRequestBase`]
         """
         return self._program_item_list
 
@@ -84,7 +91,7 @@ class CreateProgramRequestDTO:
         节目素材列表
 
         :param program_item_list: The program_item_list of this CreateProgramRequestDTO.
-        :type: list[ProgramItemRequestBase]
+        :type program_item_list: list[:class:`huaweicloudsdkmeeting.v1.ProgramItemRequestBase`]
         """
         self._program_item_list = program_item_list
 

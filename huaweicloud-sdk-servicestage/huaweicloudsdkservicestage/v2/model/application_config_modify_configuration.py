@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApplicationConfigModifyConfiguration:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ApplicationConfigModifyConfiguration:
     }
 
     def __init__(self, env=None):
-        """ApplicationConfigModifyConfiguration - a model defined in huaweicloud sdk"""
+        """ApplicationConfigModifyConfiguration
+
+        The model defined in huaweicloud sdk
+
+        :param env: 应用环境变量。
+        :type env: list[:class:`huaweicloudsdkservicestage.v2.ApplicationConfigModifyConfigurationEnv`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class ApplicationConfigModifyConfiguration:
         应用环境变量。
 
         :return: The env of this ApplicationConfigModifyConfiguration.
-        :rtype: list[ApplicationConfigModifyConfigurationEnv]
+        :rtype: list[:class:`huaweicloudsdkservicestage.v2.ApplicationConfigModifyConfigurationEnv`]
         """
         return self._env
 
@@ -57,7 +62,7 @@ class ApplicationConfigModifyConfiguration:
         应用环境变量。
 
         :param env: The env of this ApplicationConfigModifyConfiguration.
-        :type: list[ApplicationConfigModifyConfigurationEnv]
+        :type env: list[:class:`huaweicloudsdkservicestage.v2.ApplicationConfigModifyConfigurationEnv`]
         """
         self._env = env
 

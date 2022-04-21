@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class JobValidationResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class JobValidationResult:
     }
 
     def __init__(self, message=None, status=None):
-        """JobValidationResult - a model defined in huaweicloud sdk"""
+        """JobValidationResult
+
+        The model defined in huaweicloud sdk
+
+        :param message: 错误描述
+        :type message: str
+        :param status: ERROR,WARNING
+        :type status: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class JobValidationResult:
         错误描述
 
         :param message: The message of this JobValidationResult.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -85,7 +92,7 @@ class JobValidationResult:
         ERROR,WARNING
 
         :param status: The status of this JobValidationResult.
-        :type: str
+        :type status: str
         """
         self._status = status
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateCustomAuthorizerV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateCustomAuthorizerV2Request:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreateCustomAuthorizerV2Request - a model defined in huaweicloud sdk"""
+        """CreateCustomAuthorizerV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param body: Body of the CreateCustomAuthorizerV2Request
+        :type body: :class:`huaweicloudsdkroma.v2.AuthorizerCreate`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateCustomAuthorizerV2Request:
         实例ID
 
         :param instance_id: The instance_id of this CreateCustomAuthorizerV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -72,7 +79,7 @@ class CreateCustomAuthorizerV2Request:
 
 
         :return: The body of this CreateCustomAuthorizerV2Request.
-        :rtype: AuthorizerCreate
+        :rtype: :class:`huaweicloudsdkroma.v2.AuthorizerCreate`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CreateCustomAuthorizerV2Request:
 
 
         :param body: The body of this CreateCustomAuthorizerV2Request.
-        :type: AuthorizerCreate
+        :type body: :class:`huaweicloudsdkroma.v2.AuthorizerCreate`
         """
         self._body = body
 

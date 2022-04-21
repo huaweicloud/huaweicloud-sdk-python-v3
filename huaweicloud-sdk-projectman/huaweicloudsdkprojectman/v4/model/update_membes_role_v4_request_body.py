@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateMembesRoleV4RequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateMembesRoleV4RequestBody:
     }
 
     def __init__(self, role_id=None, user_ids=None):
-        """UpdateMembesRoleV4RequestBody - a model defined in huaweicloud sdk"""
+        """UpdateMembesRoleV4RequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param role_id: 成员角色, -1 项目创建者, 3 项目经理, 4 开发人员, 5 测试经理, 6 测试人员, 7 参与者, 8 浏览者, 9 运维经理
+        :type role_id: int
+        :param user_ids: 用户id
+        :type user_ids: list[str]
+        """
         
         
 
@@ -61,7 +68,7 @@ class UpdateMembesRoleV4RequestBody:
         成员角色, -1 项目创建者, 3 项目经理, 4 开发人员, 5 测试经理, 6 测试人员, 7 参与者, 8 浏览者, 9 运维经理
 
         :param role_id: The role_id of this UpdateMembesRoleV4RequestBody.
-        :type: int
+        :type role_id: int
         """
         self._role_id = role_id
 
@@ -83,7 +90,7 @@ class UpdateMembesRoleV4RequestBody:
         用户id
 
         :param user_ids: The user_ids of this UpdateMembesRoleV4RequestBody.
-        :type: list[str]
+        :type user_ids: list[str]
         """
         self._user_ids = user_ids
 

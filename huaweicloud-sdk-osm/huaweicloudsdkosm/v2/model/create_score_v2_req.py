@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateScoreV2Req:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateScoreV2Req:
     }
 
     def __init__(self, judgement=None, incident_satisfaction_list=None, group_id=None):
-        """CreateScoreV2Req - a model defined in huaweicloud sdk"""
+        """CreateScoreV2Req
+
+        The model defined in huaweicloud sdk
+
+        :param judgement: 评价内容
+        :type judgement: str
+        :param incident_satisfaction_list: 满意度列表
+        :type incident_satisfaction_list: list[:class:`huaweicloudsdkosm.v2.IncidentSatisfactionV2Do`]
+        :param group_id: 组id
+        :type group_id: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class CreateScoreV2Req:
         评价内容
 
         :param judgement: The judgement of this CreateScoreV2Req.
-        :type: str
+        :type judgement: str
         """
         self._judgement = judgement
 
@@ -77,7 +86,7 @@ class CreateScoreV2Req:
         满意度列表
 
         :return: The incident_satisfaction_list of this CreateScoreV2Req.
-        :rtype: list[IncidentSatisfactionV2Do]
+        :rtype: list[:class:`huaweicloudsdkosm.v2.IncidentSatisfactionV2Do`]
         """
         return self._incident_satisfaction_list
 
@@ -88,7 +97,7 @@ class CreateScoreV2Req:
         满意度列表
 
         :param incident_satisfaction_list: The incident_satisfaction_list of this CreateScoreV2Req.
-        :type: list[IncidentSatisfactionV2Do]
+        :type incident_satisfaction_list: list[:class:`huaweicloudsdkosm.v2.IncidentSatisfactionV2Do`]
         """
         self._incident_satisfaction_list = incident_satisfaction_list
 
@@ -110,7 +119,7 @@ class CreateScoreV2Req:
         组id
 
         :param group_id: The group_id of this CreateScoreV2Req.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 

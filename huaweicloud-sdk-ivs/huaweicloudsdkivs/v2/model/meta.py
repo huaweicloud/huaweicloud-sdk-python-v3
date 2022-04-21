@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Meta:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class Meta:
     }
 
     def __init__(self, uuid=None):
-        """Meta - a model defined in huaweicloud sdk"""
+        """Meta
+
+        The model defined in huaweicloud sdk
+
+        :param uuid: 唯一标识此次请求的ID，用户自定义，不超过64位。
+        :type uuid: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class Meta:
         唯一标识此次请求的ID，用户自定义，不超过64位。
 
         :param uuid: The uuid of this Meta.
-        :type: str
+        :type uuid: str
         """
         self._uuid = uuid
 

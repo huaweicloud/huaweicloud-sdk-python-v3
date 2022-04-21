@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateDisasterRecoveryDrillRequestParams:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateDisasterRecoveryDrillRequestParams:
     }
 
     def __init__(self, server_group_id=None, drill_vpc_id=None, name=None):
-        """CreateDisasterRecoveryDrillRequestParams - a model defined in huaweicloud sdk"""
+        """CreateDisasterRecoveryDrillRequestParams
+
+        The model defined in huaweicloud sdk
+
+        :param server_group_id: 保护组的ID。
+        :type server_group_id: str
+        :param drill_vpc_id: 演练虚拟私有云ID，不指定时系统会自动创建演练VPC。
+        :type drill_vpc_id: str
+        :param name: 指定容灾演练的名称，最大支持长度为64个字节。只包含中文字符、英文字母（a～ｚ、Ａ～Ｚ）、数字（０~９）、小数点（．）、下划线（_）、中划线（-）。
+        :type name: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class CreateDisasterRecoveryDrillRequestParams:
         保护组的ID。
 
         :param server_group_id: The server_group_id of this CreateDisasterRecoveryDrillRequestParams.
-        :type: str
+        :type server_group_id: str
         """
         self._server_group_id = server_group_id
 
@@ -88,7 +97,7 @@ class CreateDisasterRecoveryDrillRequestParams:
         演练虚拟私有云ID，不指定时系统会自动创建演练VPC。
 
         :param drill_vpc_id: The drill_vpc_id of this CreateDisasterRecoveryDrillRequestParams.
-        :type: str
+        :type drill_vpc_id: str
         """
         self._drill_vpc_id = drill_vpc_id
 
@@ -110,7 +119,7 @@ class CreateDisasterRecoveryDrillRequestParams:
         指定容灾演练的名称，最大支持长度为64个字节。只包含中文字符、英文字母（a～ｚ、Ａ～Ｚ）、数字（０~９）、小数点（．）、下划线（_）、中划线（-）。
 
         :param name: The name of this CreateDisasterRecoveryDrillRequestParams.
-        :type: str
+        :type name: str
         """
         self._name = name
 

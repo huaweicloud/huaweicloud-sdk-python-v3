@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRelatedRoutetablesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListRelatedRoutetablesResponse(SdkResponse):
     }
 
     def __init__(self, routetable=None):
-        """ListRelatedRoutetablesResponse - a model defined in huaweicloud sdk"""
+        """ListRelatedRoutetablesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param routetable: 
+        :type routetable: :class:`huaweicloudsdkiec.v1.Routetable`
+        """
         
         super(ListRelatedRoutetablesResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class ListRelatedRoutetablesResponse(SdkResponse):
 
 
         :return: The routetable of this ListRelatedRoutetablesResponse.
-        :rtype: Routetable
+        :rtype: :class:`huaweicloudsdkiec.v1.Routetable`
         """
         return self._routetable
 
@@ -56,7 +61,7 @@ class ListRelatedRoutetablesResponse(SdkResponse):
 
 
         :param routetable: The routetable of this ListRelatedRoutetablesResponse.
-        :type: Routetable
+        :type routetable: :class:`huaweicloudsdkiec.v1.Routetable`
         """
         self._routetable = routetable
 

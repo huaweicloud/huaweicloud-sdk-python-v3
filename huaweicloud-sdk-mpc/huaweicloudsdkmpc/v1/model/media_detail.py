@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MediaDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class MediaDetail:
     }
 
     def __init__(self, features=None, origin_para=None, output_video_paras=None, output_thumbnail_para=None, output_watermark_paras=None):
-        """MediaDetail - a model defined in huaweicloud sdk"""
+        """MediaDetail
+
+        The model defined in huaweicloud sdk
+
+        :param features: 任务名称
+        :type features: list[str]
+        :param origin_para: 
+        :type origin_para: :class:`huaweicloudsdkmpc.v1.OriginPara`
+        :param output_video_paras: 多路输出片源信息
+        :type output_video_paras: list[:class:`huaweicloudsdkmpc.v1.OutputVideoPara`]
+        :param output_thumbnail_para: 
+        :type output_thumbnail_para: :class:`huaweicloudsdkmpc.v1.OutputThumbnailPara`
+        :param output_watermark_paras: 
+        :type output_watermark_paras: :class:`huaweicloudsdkmpc.v1.OutputWatermarkPara`
+        """
         
         
 
@@ -78,7 +91,7 @@ class MediaDetail:
         任务名称
 
         :param features: The features of this MediaDetail.
-        :type: list[str]
+        :type features: list[str]
         """
         self._features = features
 
@@ -88,7 +101,7 @@ class MediaDetail:
 
 
         :return: The origin_para of this MediaDetail.
-        :rtype: OriginPara
+        :rtype: :class:`huaweicloudsdkmpc.v1.OriginPara`
         """
         return self._origin_para
 
@@ -98,7 +111,7 @@ class MediaDetail:
 
 
         :param origin_para: The origin_para of this MediaDetail.
-        :type: OriginPara
+        :type origin_para: :class:`huaweicloudsdkmpc.v1.OriginPara`
         """
         self._origin_para = origin_para
 
@@ -109,7 +122,7 @@ class MediaDetail:
         多路输出片源信息
 
         :return: The output_video_paras of this MediaDetail.
-        :rtype: list[OutputVideoPara]
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.OutputVideoPara`]
         """
         return self._output_video_paras
 
@@ -120,7 +133,7 @@ class MediaDetail:
         多路输出片源信息
 
         :param output_video_paras: The output_video_paras of this MediaDetail.
-        :type: list[OutputVideoPara]
+        :type output_video_paras: list[:class:`huaweicloudsdkmpc.v1.OutputVideoPara`]
         """
         self._output_video_paras = output_video_paras
 
@@ -130,7 +143,7 @@ class MediaDetail:
 
 
         :return: The output_thumbnail_para of this MediaDetail.
-        :rtype: OutputThumbnailPara
+        :rtype: :class:`huaweicloudsdkmpc.v1.OutputThumbnailPara`
         """
         return self._output_thumbnail_para
 
@@ -140,7 +153,7 @@ class MediaDetail:
 
 
         :param output_thumbnail_para: The output_thumbnail_para of this MediaDetail.
-        :type: OutputThumbnailPara
+        :type output_thumbnail_para: :class:`huaweicloudsdkmpc.v1.OutputThumbnailPara`
         """
         self._output_thumbnail_para = output_thumbnail_para
 
@@ -150,7 +163,7 @@ class MediaDetail:
 
 
         :return: The output_watermark_paras of this MediaDetail.
-        :rtype: OutputWatermarkPara
+        :rtype: :class:`huaweicloudsdkmpc.v1.OutputWatermarkPara`
         """
         return self._output_watermark_paras
 
@@ -160,7 +173,7 @@ class MediaDetail:
 
 
         :param output_watermark_paras: The output_watermark_paras of this MediaDetail.
-        :type: OutputWatermarkPara
+        :type output_watermark_paras: :class:`huaweicloudsdkmpc.v1.OutputWatermarkPara`
         """
         self._output_watermark_paras = output_watermark_paras
 

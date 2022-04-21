@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ScriptInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ScriptInfo:
     }
 
     def __init__(self, name=None, type=None, directory=None, content=None, connection_name=None, database=None, queue_name=None, configuration=None):
-        """ScriptInfo - a model defined in huaweicloud sdk"""
+        """ScriptInfo
+
+        The model defined in huaweicloud sdk
+
+        :param name: 
+        :type name: str
+        :param type: 脚本类型
+        :type type: str
+        :param directory: 脚本关联的目录
+        :type directory: str
+        :param content: 脚本内容
+        :type content: str
+        :param connection_name: 脚本关联的连接名称
+        :type connection_name: str
+        :param database: 脚本执行所在的数据库
+        :type database: str
+        :param queue_name: 脚本关联的DLI队列名称
+        :type queue_name: str
+        :param configuration: 脚本的配置项参数
+        :type configuration: str
+        """
         
         
 
@@ -91,7 +110,7 @@ class ScriptInfo:
 
 
         :param name: The name of this ScriptInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -113,7 +132,7 @@ class ScriptInfo:
         脚本类型
 
         :param type: The type of this ScriptInfo.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -135,7 +154,7 @@ class ScriptInfo:
         脚本关联的目录
 
         :param directory: The directory of this ScriptInfo.
-        :type: str
+        :type directory: str
         """
         self._directory = directory
 
@@ -157,7 +176,7 @@ class ScriptInfo:
         脚本内容
 
         :param content: The content of this ScriptInfo.
-        :type: str
+        :type content: str
         """
         self._content = content
 
@@ -179,7 +198,7 @@ class ScriptInfo:
         脚本关联的连接名称
 
         :param connection_name: The connection_name of this ScriptInfo.
-        :type: str
+        :type connection_name: str
         """
         self._connection_name = connection_name
 
@@ -201,7 +220,7 @@ class ScriptInfo:
         脚本执行所在的数据库
 
         :param database: The database of this ScriptInfo.
-        :type: str
+        :type database: str
         """
         self._database = database
 
@@ -223,7 +242,7 @@ class ScriptInfo:
         脚本关联的DLI队列名称
 
         :param queue_name: The queue_name of this ScriptInfo.
-        :type: str
+        :type queue_name: str
         """
         self._queue_name = queue_name
 
@@ -245,7 +264,7 @@ class ScriptInfo:
         脚本的配置项参数
 
         :param configuration: The configuration of this ScriptInfo.
-        :type: str
+        :type configuration: str
         """
         self._configuration = configuration
 

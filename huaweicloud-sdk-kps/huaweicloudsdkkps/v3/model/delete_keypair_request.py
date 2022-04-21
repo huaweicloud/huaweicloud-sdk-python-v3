@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteKeypairRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteKeypairRequest:
     }
 
     def __init__(self, keypair_name=None):
-        """DeleteKeypairRequest - a model defined in huaweicloud sdk"""
+        """DeleteKeypairRequest
+
+        The model defined in huaweicloud sdk
+
+        :param keypair_name: 密钥对名称
+        :type keypair_name: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteKeypairRequest:
         密钥对名称
 
         :param keypair_name: The keypair_name of this DeleteKeypairRequest.
-        :type: str
+        :type keypair_name: str
         """
         self._keypair_name = keypair_name
 

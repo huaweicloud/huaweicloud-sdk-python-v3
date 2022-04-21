@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPrivateipsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListPrivateipsRequest:
     }
 
     def __init__(self, subnet_id=None, limit=None, marker=None):
-        """ListPrivateipsRequest - a model defined in huaweicloud sdk"""
+        """ListPrivateipsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param subnet_id: 私有IP所在子网的唯一标识
+        :type subnet_id: str
+        :param limit: 每页返回的个数
+        :type limit: int
+        :param marker: 分页查询起始的资源id，为空时查询第一页
+        :type marker: str
+        """
         
         
 
@@ -67,7 +76,7 @@ class ListPrivateipsRequest:
         私有IP所在子网的唯一标识
 
         :param subnet_id: The subnet_id of this ListPrivateipsRequest.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -89,7 +98,7 @@ class ListPrivateipsRequest:
         每页返回的个数
 
         :param limit: The limit of this ListPrivateipsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -111,7 +120,7 @@ class ListPrivateipsRequest:
         分页查询起始的资源id，为空时查询第一页
 
         :param marker: The marker of this ListPrivateipsRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 

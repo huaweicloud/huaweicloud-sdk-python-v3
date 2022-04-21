@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Params:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class Params:
     }
 
     def __init__(self, compare_result=None, data_type=None, group=None, key=None, need_restart=None, source_value=None, target_value=None, value_range=None, error_code=None, error_message=None):
-        """Params - a model defined in huaweicloud sdk"""
+        """Params
+
+        The model defined in huaweicloud sdk
+
+        :param compare_result: 参数对比结果
+        :type compare_result: str
+        :param data_type: 参数类型
+        :type data_type: str
+        :param group: 分组
+        :type group: str
+        :param key: 参数名
+        :type key: str
+        :param need_restart: 是否需要重启
+        :type need_restart: str
+        :param source_value: 源数据库参数值
+        :type source_value: str
+        :param target_value: 目标数据库参数值
+        :type target_value: str
+        :param value_range: 参数范围
+        :type value_range: str
+        :param error_code: 错误码
+        :type error_code: str
+        :param error_message: 错误信息
+        :type error_message: str
+        """
         
         
 
@@ -103,7 +126,7 @@ class Params:
         参数对比结果
 
         :param compare_result: The compare_result of this Params.
-        :type: str
+        :type compare_result: str
         """
         self._compare_result = compare_result
 
@@ -125,7 +148,7 @@ class Params:
         参数类型
 
         :param data_type: The data_type of this Params.
-        :type: str
+        :type data_type: str
         """
         self._data_type = data_type
 
@@ -147,7 +170,7 @@ class Params:
         分组
 
         :param group: The group of this Params.
-        :type: str
+        :type group: str
         """
         self._group = group
 
@@ -169,7 +192,7 @@ class Params:
         参数名
 
         :param key: The key of this Params.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -191,7 +214,7 @@ class Params:
         是否需要重启
 
         :param need_restart: The need_restart of this Params.
-        :type: str
+        :type need_restart: str
         """
         self._need_restart = need_restart
 
@@ -213,7 +236,7 @@ class Params:
         源数据库参数值
 
         :param source_value: The source_value of this Params.
-        :type: str
+        :type source_value: str
         """
         self._source_value = source_value
 
@@ -235,7 +258,7 @@ class Params:
         目标数据库参数值
 
         :param target_value: The target_value of this Params.
-        :type: str
+        :type target_value: str
         """
         self._target_value = target_value
 
@@ -257,7 +280,7 @@ class Params:
         参数范围
 
         :param value_range: The value_range of this Params.
-        :type: str
+        :type value_range: str
         """
         self._value_range = value_range
 
@@ -279,7 +302,7 @@ class Params:
         错误码
 
         :param error_code: The error_code of this Params.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -301,7 +324,7 @@ class Params:
         错误信息
 
         :param error_message: The error_message of this Params.
-        :type: str
+        :type error_message: str
         """
         self._error_message = error_message
 

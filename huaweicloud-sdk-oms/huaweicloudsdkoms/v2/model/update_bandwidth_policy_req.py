@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateBandwidthPolicyReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateBandwidthPolicyReq:
     }
 
     def __init__(self, bandwidth_policy=None):
-        """UpdateBandwidthPolicyReq - a model defined in huaweicloud sdk"""
+        """UpdateBandwidthPolicyReq
+
+        The model defined in huaweicloud sdk
+
+        :param bandwidth_policy: 配置流量控制策略。数组中一个元素对应一个时段的最大带宽，最多允许5个时段，且时段不能重叠。
+        :type bandwidth_policy: list[:class:`huaweicloudsdkoms.v2.BandwidthPolicyDto`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class UpdateBandwidthPolicyReq:
         配置流量控制策略。数组中一个元素对应一个时段的最大带宽，最多允许5个时段，且时段不能重叠。
 
         :return: The bandwidth_policy of this UpdateBandwidthPolicyReq.
-        :rtype: list[BandwidthPolicyDto]
+        :rtype: list[:class:`huaweicloudsdkoms.v2.BandwidthPolicyDto`]
         """
         return self._bandwidth_policy
 
@@ -57,7 +62,7 @@ class UpdateBandwidthPolicyReq:
         配置流量控制策略。数组中一个元素对应一个时段的最大带宽，最多允许5个时段，且时段不能重叠。
 
         :param bandwidth_policy: The bandwidth_policy of this UpdateBandwidthPolicyReq.
-        :type: list[BandwidthPolicyDto]
+        :type bandwidth_policy: list[:class:`huaweicloudsdkoms.v2.BandwidthPolicyDto`]
         """
         self._bandwidth_policy = bandwidth_policy
 

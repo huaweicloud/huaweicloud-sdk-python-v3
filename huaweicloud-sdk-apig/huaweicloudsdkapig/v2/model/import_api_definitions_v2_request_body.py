@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ImportApiDefinitionsV2RequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ImportApiDefinitionsV2RequestBody:
     }
 
     def __init__(self, is_create_group=None, group_id=None, extend_mode=None, simple_mode=None, mock_mode=None, api_mode=None, file_name=None):
-        """ImportApiDefinitionsV2RequestBody - a model defined in huaweicloud sdk"""
+        """ImportApiDefinitionsV2RequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param is_create_group: 是否创建新分组
+        :type is_create_group: bool
+        :param group_id: API分组编号，当is_create_group&#x3D;false时为必填
+        :type group_id: str
+        :param extend_mode: 扩展信息导入模式 - merge：当扩展信息定义冲突时，merge保留原有扩展信息 - override：当扩展信息定义冲突时，override会覆盖原有扩展信息
+        :type extend_mode: str
+        :param simple_mode: 是否开启简易导入模式
+        :type simple_mode: bool
+        :param mock_mode: 是否开启Mock后端
+        :type mock_mode: bool
+        :param api_mode: 导入模式 - merge：当API信息定义冲突时，merge保留原有API信息 - override：当API信息定义冲突时，override会覆盖原有API信息
+        :type api_mode: str
+        :param file_name: 导入Api的请求体，json或yaml格式的文件
+        :type file_name: :class:`huaweicloudsdkcore.http.formdata.FormFile`
+        """
         
         
 
@@ -87,7 +104,7 @@ class ImportApiDefinitionsV2RequestBody:
         是否创建新分组
 
         :param is_create_group: The is_create_group of this ImportApiDefinitionsV2RequestBody.
-        :type: bool
+        :type is_create_group: bool
         """
         self._is_create_group = is_create_group
 
@@ -109,7 +126,7 @@ class ImportApiDefinitionsV2RequestBody:
         API分组编号，当is_create_group=false时为必填
 
         :param group_id: The group_id of this ImportApiDefinitionsV2RequestBody.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -131,7 +148,7 @@ class ImportApiDefinitionsV2RequestBody:
         扩展信息导入模式 - merge：当扩展信息定义冲突时，merge保留原有扩展信息 - override：当扩展信息定义冲突时，override会覆盖原有扩展信息
 
         :param extend_mode: The extend_mode of this ImportApiDefinitionsV2RequestBody.
-        :type: str
+        :type extend_mode: str
         """
         self._extend_mode = extend_mode
 
@@ -153,7 +170,7 @@ class ImportApiDefinitionsV2RequestBody:
         是否开启简易导入模式
 
         :param simple_mode: The simple_mode of this ImportApiDefinitionsV2RequestBody.
-        :type: bool
+        :type simple_mode: bool
         """
         self._simple_mode = simple_mode
 
@@ -175,7 +192,7 @@ class ImportApiDefinitionsV2RequestBody:
         是否开启Mock后端
 
         :param mock_mode: The mock_mode of this ImportApiDefinitionsV2RequestBody.
-        :type: bool
+        :type mock_mode: bool
         """
         self._mock_mode = mock_mode
 
@@ -197,7 +214,7 @@ class ImportApiDefinitionsV2RequestBody:
         导入模式 - merge：当API信息定义冲突时，merge保留原有API信息 - override：当API信息定义冲突时，override会覆盖原有API信息
 
         :param api_mode: The api_mode of this ImportApiDefinitionsV2RequestBody.
-        :type: str
+        :type api_mode: str
         """
         self._api_mode = api_mode
 
@@ -208,7 +225,7 @@ class ImportApiDefinitionsV2RequestBody:
         导入Api的请求体，json或yaml格式的文件
 
         :return: The file_name of this ImportApiDefinitionsV2RequestBody.
-        :rtype: file
+        :rtype: :class:`huaweicloudsdkcore.http.formdata.FormFile`
         """
         return self._file_name
 
@@ -219,7 +236,7 @@ class ImportApiDefinitionsV2RequestBody:
         导入Api的请求体，json或yaml格式的文件
 
         :param file_name: The file_name of this ImportApiDefinitionsV2RequestBody.
-        :type: file
+        :type file_name: :class:`huaweicloudsdkcore.http.formdata.FormFile`
         """
         self._file_name = file_name
 

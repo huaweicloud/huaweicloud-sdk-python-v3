@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NovaShowKeypairRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class NovaShowKeypairRequest:
     }
 
     def __init__(self, keypair_name=None, open_stack_api_version=None):
-        """NovaShowKeypairRequest - a model defined in huaweicloud sdk"""
+        """NovaShowKeypairRequest
+
+        The model defined in huaweicloud sdk
+
+        :param keypair_name: 密钥名称信息。
+        :type keypair_name: str
+        :param open_stack_api_version: 微版本头
+        :type open_stack_api_version: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class NovaShowKeypairRequest:
         密钥名称信息。
 
         :param keypair_name: The keypair_name of this NovaShowKeypairRequest.
-        :type: str
+        :type keypair_name: str
         """
         self._keypair_name = keypair_name
 
@@ -84,7 +91,7 @@ class NovaShowKeypairRequest:
         微版本头
 
         :param open_stack_api_version: The open_stack_api_version of this NovaShowKeypairRequest.
-        :type: str
+        :type open_stack_api_version: str
         """
         self._open_stack_api_version = open_stack_api_version
 

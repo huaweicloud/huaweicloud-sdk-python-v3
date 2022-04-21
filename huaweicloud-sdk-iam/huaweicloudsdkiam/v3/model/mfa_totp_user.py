@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MfaTotpUser:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class MfaTotpUser:
     }
 
     def __init__(self, id=None, passcode=None):
-        """MfaTotpUser - a model defined in huaweicloud sdk"""
+        """MfaTotpUser
+
+        The model defined in huaweicloud sdk
+
+        :param id: 已开启虚拟MFA方式的登录保护的IAM用户ID。
+        :type id: str
+        :param passcode: 虚拟MFA验证码，在MFA应用程序中获取动态验证码，获取方法请参见：[如何获取虚拟MFA验证码](https://support.huaweicloud.com/iam_faq/iam_01_0001.html)。
+        :type passcode: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class MfaTotpUser:
         已开启虚拟MFA方式的登录保护的IAM用户ID。
 
         :param id: The id of this MfaTotpUser.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -83,7 +90,7 @@ class MfaTotpUser:
         虚拟MFA验证码，在MFA应用程序中获取动态验证码，获取方法请参见：[如何获取虚拟MFA验证码](https://support.huaweicloud.com/iam_faq/iam_01_0001.html)。
 
         :param passcode: The passcode of this MfaTotpUser.
-        :type: str
+        :type passcode: str
         """
         self._passcode = passcode
 

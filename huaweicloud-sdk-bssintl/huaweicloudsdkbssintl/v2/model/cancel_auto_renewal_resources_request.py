@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CancelAutoRenewalResourcesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CancelAutoRenewalResourcesRequest:
     }
 
     def __init__(self, resource_id=None):
-        """CancelAutoRenewalResourcesRequest - a model defined in huaweicloud sdk"""
+        """CancelAutoRenewalResourcesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param resource_id: 资源实例ID。您可以调用“查询客户包年/包月资源列表”接口获取资源ID。在取消弹性云服务器自动续费的时候，能够自动将其挂载的硬盘一并取消自动续费。
+        :type resource_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class CancelAutoRenewalResourcesRequest:
         资源实例ID。您可以调用“查询客户包年/包月资源列表”接口获取资源ID。在取消弹性云服务器自动续费的时候，能够自动将其挂载的硬盘一并取消自动续费。
 
         :param resource_id: The resource_id of this CancelAutoRenewalResourcesRequest.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 

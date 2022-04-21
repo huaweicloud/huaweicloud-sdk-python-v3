@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SupportAzsInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class SupportAzsInfo:
     }
 
     def __init__(self, code=None, name=None, favored=None):
-        """SupportAzsInfo - a model defined in huaweicloud sdk"""
+        """SupportAzsInfo
+
+        The model defined in huaweicloud sdk
+
+        :param code: 可用区编码。
+        :type code: str
+        :param name: 可用区名称。
+        :type name: str
+        :param favored: 是否支持。
+        :type favored: bool
+        """
         
         
 
@@ -68,7 +77,7 @@ class SupportAzsInfo:
         可用区编码。
 
         :param code: The code of this SupportAzsInfo.
-        :type: str
+        :type code: str
         """
         self._code = code
 
@@ -90,7 +99,7 @@ class SupportAzsInfo:
         可用区名称。
 
         :param name: The name of this SupportAzsInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -112,7 +121,7 @@ class SupportAzsInfo:
         是否支持。
 
         :param favored: The favored of this SupportAzsInfo.
-        :type: bool
+        :type favored: bool
         """
         self._favored = favored
 

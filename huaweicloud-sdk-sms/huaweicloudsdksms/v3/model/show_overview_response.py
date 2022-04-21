@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowOverviewResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowOverviewResponse(SdkResponse):
     }
 
     def __init__(self, waiting=None, replicating=None, syncing=None, other=None):
-        """ShowOverviewResponse - a model defined in huaweicloud sdk"""
+        """ShowOverviewResponse
+
+        The model defined in huaweicloud sdk
+
+        :param waiting: 等待中
+        :type waiting: int
+        :param replicating: 复制中
+        :type replicating: int
+        :param syncing: 同步中
+        :type syncing: int
+        :param other: 其它
+        :type other: int
+        """
         
         super(ShowOverviewResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class ShowOverviewResponse(SdkResponse):
         等待中
 
         :param waiting: The waiting of this ShowOverviewResponse.
-        :type: int
+        :type waiting: int
         """
         self._waiting = waiting
 
@@ -95,7 +106,7 @@ class ShowOverviewResponse(SdkResponse):
         复制中
 
         :param replicating: The replicating of this ShowOverviewResponse.
-        :type: int
+        :type replicating: int
         """
         self._replicating = replicating
 
@@ -117,7 +128,7 @@ class ShowOverviewResponse(SdkResponse):
         同步中
 
         :param syncing: The syncing of this ShowOverviewResponse.
-        :type: int
+        :type syncing: int
         """
         self._syncing = syncing
 
@@ -139,7 +150,7 @@ class ShowOverviewResponse(SdkResponse):
         其它
 
         :param other: The other of this ShowOverviewResponse.
-        :type: int
+        :type other: int
         """
         self._other = other
 

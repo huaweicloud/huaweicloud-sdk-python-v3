@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CertificateResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class CertificateResp:
     }
 
     def __init__(self, id=None, tenant_id=None, admin_state_up=None, name=None, description=None, type=None, domain=None, private_key=None, certificate=None, expire_time=None, create_time=None, update_time=None):
-        """CertificateResp - a model defined in huaweicloud sdk"""
+        """CertificateResp
+
+        The model defined in huaweicloud sdk
+
+        :param id: SSL证书id
+        :type id: str
+        :param tenant_id: SSL证书所在的项目ID
+        :type tenant_id: str
+        :param admin_state_up: SSL证书的管理状态；暂不支持
+        :type admin_state_up: bool
+        :param name: SSL证书的名称。
+        :type name: str
+        :param description: SSL证书的描述。
+        :type description: str
+        :param type: SSL证书的类型。分为服务器证书(server)和CA证书(client)。
+        :type type: str
+        :param domain: 服务器证书所签域名。该字段仅type为server时有效。
+        :type domain: str
+        :param private_key: 服务器证书的私钥。仅type为server时有效。type为server时必选。
+        :type private_key: str
+        :param certificate: 当type为server时，表示服务器证书的公钥；当type为client时，表示用于认证客户端证书的CA证书。
+        :type certificate: str
+        :param expire_time: SSL证书的过期时间。 UTC时间，格式为：yyyy-MM-dd HH:mm:ss ，如2020-05-28 08:30:09
+        :type expire_time: str
+        :param create_time: SSL证书的创建时间。 UTC时间，格式为：yyyy-MM-dd HH:mm:ss ，如2020-05-28 08:30:09
+        :type create_time: str
+        :param update_time: SSL证书的更新时间。 UTC时间，格式为：yyyy-MM-dd HH:mm:ss ，如2020-05-28 08:30:09
+        :type update_time: str
+        """
         
         
 
@@ -101,7 +128,7 @@ class CertificateResp:
         SSL证书id
 
         :param id: The id of this CertificateResp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -123,7 +150,7 @@ class CertificateResp:
         SSL证书所在的项目ID
 
         :param tenant_id: The tenant_id of this CertificateResp.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 
@@ -145,7 +172,7 @@ class CertificateResp:
         SSL证书的管理状态；暂不支持
 
         :param admin_state_up: The admin_state_up of this CertificateResp.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 
@@ -167,7 +194,7 @@ class CertificateResp:
         SSL证书的名称。
 
         :param name: The name of this CertificateResp.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -189,7 +216,7 @@ class CertificateResp:
         SSL证书的描述。
 
         :param description: The description of this CertificateResp.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -211,7 +238,7 @@ class CertificateResp:
         SSL证书的类型。分为服务器证书(server)和CA证书(client)。
 
         :param type: The type of this CertificateResp.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -233,7 +260,7 @@ class CertificateResp:
         服务器证书所签域名。该字段仅type为server时有效。
 
         :param domain: The domain of this CertificateResp.
-        :type: str
+        :type domain: str
         """
         self._domain = domain
 
@@ -255,7 +282,7 @@ class CertificateResp:
         服务器证书的私钥。仅type为server时有效。type为server时必选。
 
         :param private_key: The private_key of this CertificateResp.
-        :type: str
+        :type private_key: str
         """
         self._private_key = private_key
 
@@ -277,7 +304,7 @@ class CertificateResp:
         当type为server时，表示服务器证书的公钥；当type为client时，表示用于认证客户端证书的CA证书。
 
         :param certificate: The certificate of this CertificateResp.
-        :type: str
+        :type certificate: str
         """
         self._certificate = certificate
 
@@ -299,7 +326,7 @@ class CertificateResp:
         SSL证书的过期时间。 UTC时间，格式为：yyyy-MM-dd HH:mm:ss ，如2020-05-28 08:30:09
 
         :param expire_time: The expire_time of this CertificateResp.
-        :type: str
+        :type expire_time: str
         """
         self._expire_time = expire_time
 
@@ -321,7 +348,7 @@ class CertificateResp:
         SSL证书的创建时间。 UTC时间，格式为：yyyy-MM-dd HH:mm:ss ，如2020-05-28 08:30:09
 
         :param create_time: The create_time of this CertificateResp.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -343,7 +370,7 @@ class CertificateResp:
         SSL证书的更新时间。 UTC时间，格式为：yyyy-MM-dd HH:mm:ss ，如2020-05-28 08:30:09
 
         :param update_time: The update_time of this CertificateResp.
-        :type: str
+        :type update_time: str
         """
         self._update_time = update_time
 

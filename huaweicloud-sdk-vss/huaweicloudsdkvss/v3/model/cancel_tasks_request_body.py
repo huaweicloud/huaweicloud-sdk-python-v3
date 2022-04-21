@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CancelTasksRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CancelTasksRequestBody:
     }
 
     def __init__(self, task_id=None, action=None):
-        """CancelTasksRequestBody - a model defined in huaweicloud sdk"""
+        """CancelTasksRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 任务ID
+        :type task_id: str
+        :param action: 对扫描任务的操作:   * cancel - 取消扫描任务   * restart - 重启扫描任务 
+        :type action: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class CancelTasksRequestBody:
         任务ID
 
         :param task_id: The task_id of this CancelTasksRequestBody.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -83,7 +90,7 @@ class CancelTasksRequestBody:
         对扫描任务的操作:   * cancel - 取消扫描任务   * restart - 重启扫描任务 
 
         :param action: The action of this CancelTasksRequestBody.
-        :type: str
+        :type action: str
         """
         self._action = action
 

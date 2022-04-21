@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RollingRestartRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RollingRestartRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """RollingRestartRequest - a model defined in huaweicloud sdk"""
+        """RollingRestartRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 指定待查询的集群ID。
+        :type cluster_id: str
+        :param body: Body of the RollingRestartRequest
+        :type body: :class:`huaweicloudsdkcss.v2.RollingRestartReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class RollingRestartRequest:
         指定待查询的集群ID。
 
         :param cluster_id: The cluster_id of this RollingRestartRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -72,7 +79,7 @@ class RollingRestartRequest:
 
 
         :return: The body of this RollingRestartRequest.
-        :rtype: RollingRestartReq
+        :rtype: :class:`huaweicloudsdkcss.v2.RollingRestartReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class RollingRestartRequest:
 
 
         :param body: The body of this RollingRestartRequest.
-        :type: RollingRestartReq
+        :type body: :class:`huaweicloudsdkcss.v2.RollingRestartReq`
         """
         self._body = body
 

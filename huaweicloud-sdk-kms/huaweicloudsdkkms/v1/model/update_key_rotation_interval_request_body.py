@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateKeyRotationIntervalRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateKeyRotationIntervalRequestBody:
     }
 
     def __init__(self, key_id=None, rotation_interval=None, sequence=None):
-        """UpdateKeyRotationIntervalRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateKeyRotationIntervalRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param key_id: 密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
+        :type key_id: str
+        :param rotation_interval: 轮换周期，取值范围为30~365的整数。 周期范围设置根据密钥使用频率进行，若密钥使用频率高，建议设置为短周期；反之，则设置为长周期。
+        :type rotation_interval: int
+        :param sequence: 请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
+        :type sequence: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class UpdateKeyRotationIntervalRequestBody:
         密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
 
         :param key_id: The key_id of this UpdateKeyRotationIntervalRequestBody.
-        :type: str
+        :type key_id: str
         """
         self._key_id = key_id
 
@@ -90,7 +99,7 @@ class UpdateKeyRotationIntervalRequestBody:
         轮换周期，取值范围为30~365的整数。 周期范围设置根据密钥使用频率进行，若密钥使用频率高，建议设置为短周期；反之，则设置为长周期。
 
         :param rotation_interval: The rotation_interval of this UpdateKeyRotationIntervalRequestBody.
-        :type: int
+        :type rotation_interval: int
         """
         self._rotation_interval = rotation_interval
 
@@ -112,7 +121,7 @@ class UpdateKeyRotationIntervalRequestBody:
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
 
         :param sequence: The sequence of this UpdateKeyRotationIntervalRequestBody.
-        :type: str
+        :type sequence: str
         """
         self._sequence = sequence
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ReplicationClusterParams:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ReplicationClusterParams:
     }
 
     def __init__(self, availability_zone=None):
-        """ReplicationClusterParams - a model defined in huaweicloud sdk"""
+        """ReplicationClusterParams
+
+        The model defined in huaweicloud sdk
+
+        :param availability_zone: 可用区名称。
+        :type availability_zone: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ReplicationClusterParams:
         可用区名称。
 
         :param availability_zone: The availability_zone of this ReplicationClusterParams.
-        :type: str
+        :type availability_zone: str
         """
         self._availability_zone = availability_zone
 

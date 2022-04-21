@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FreezeSubCustomersReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class FreezeSubCustomersReq:
     }
 
     def __init__(self, customer_ids=None, reason=None):
-        """FreezeSubCustomersReq - a model defined in huaweicloud sdk"""
+        """FreezeSubCustomersReq
+
+        The model defined in huaweicloud sdk
+
+        :param customer_ids: 需要冻结的客户账号ID列表。 您可以调用查询客户列表接口获取customer_id。
+        :type customer_ids: list[str]
+        :param reason: 冻结原因。
+        :type reason: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class FreezeSubCustomersReq:
         需要冻结的客户账号ID列表。 您可以调用查询客户列表接口获取customer_id。
 
         :param customer_ids: The customer_ids of this FreezeSubCustomersReq.
-        :type: list[str]
+        :type customer_ids: list[str]
         """
         self._customer_ids = customer_ids
 
@@ -83,7 +90,7 @@ class FreezeSubCustomersReq:
         冻结原因。
 
         :param reason: The reason of this FreezeSubCustomersReq.
-        :type: str
+        :type reason: str
         """
         self._reason = reason
 

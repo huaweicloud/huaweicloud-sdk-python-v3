@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateTemplateViewHistoriesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateTemplateViewHistoriesResponse(SdkResponse):
     }
 
     def __init__(self, templates=None, count=None):
-        """CreateTemplateViewHistoriesResponse - a model defined in huaweicloud sdk"""
+        """CreateTemplateViewHistoriesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param templates: 我浏览的模板。
+        :type templates: list[:class:`huaweicloudsdkdevstar.v1.TemplateViewHistory`]
+        :param count: 我浏览的模板数量。
+        :type count: int
+        """
         
         super(CreateTemplateViewHistoriesResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class CreateTemplateViewHistoriesResponse(SdkResponse):
         我浏览的模板。
 
         :return: The templates of this CreateTemplateViewHistoriesResponse.
-        :rtype: list[TemplateViewHistory]
+        :rtype: list[:class:`huaweicloudsdkdevstar.v1.TemplateViewHistory`]
         """
         return self._templates
 
@@ -63,7 +70,7 @@ class CreateTemplateViewHistoriesResponse(SdkResponse):
         我浏览的模板。
 
         :param templates: The templates of this CreateTemplateViewHistoriesResponse.
-        :type: list[TemplateViewHistory]
+        :type templates: list[:class:`huaweicloudsdkdevstar.v1.TemplateViewHistory`]
         """
         self._templates = templates
 
@@ -85,7 +92,7 @@ class CreateTemplateViewHistoriesResponse(SdkResponse):
         我浏览的模板数量。
 
         :param count: The count of this CreateTemplateViewHistoriesResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

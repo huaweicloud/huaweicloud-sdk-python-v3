@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddUserToAppResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class AddUserToAppResponse(SdkResponse):
     }
 
     def __init__(self, total=None, id=None, users=None):
-        """AddUserToAppResponse - a model defined in huaweicloud sdk"""
+        """AddUserToAppResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 应用的总成员数量
+        :type total: int
+        :param id: 应用ID
+        :type id: str
+        :param users: 用户成员列表
+        :type users: list[:class:`huaweicloudsdkroma.v2.AppUsersUsers`]
+        """
         
         super(AddUserToAppResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class AddUserToAppResponse(SdkResponse):
         应用的总成员数量
 
         :param total: The total of this AddUserToAppResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -90,7 +99,7 @@ class AddUserToAppResponse(SdkResponse):
         应用ID
 
         :param id: The id of this AddUserToAppResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -101,7 +110,7 @@ class AddUserToAppResponse(SdkResponse):
         用户成员列表
 
         :return: The users of this AddUserToAppResponse.
-        :rtype: list[AppUsersUsers]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.AppUsersUsers`]
         """
         return self._users
 
@@ -112,7 +121,7 @@ class AddUserToAppResponse(SdkResponse):
         用户成员列表
 
         :param users: The users of this AddUserToAppResponse.
-        :type: list[AppUsersUsers]
+        :type users: list[:class:`huaweicloudsdkroma.v2.AppUsersUsers`]
         """
         self._users = users
 

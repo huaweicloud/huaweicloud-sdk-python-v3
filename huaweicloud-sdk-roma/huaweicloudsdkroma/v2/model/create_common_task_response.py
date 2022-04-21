@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateCommonTaskResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateCommonTaskResponse(SdkResponse):
     }
 
     def __init__(self, task=None, task_detail=None):
-        """CreateCommonTaskResponse - a model defined in huaweicloud sdk"""
+        """CreateCommonTaskResponse
+
+        The model defined in huaweicloud sdk
+
+        :param task: 
+        :type task: :class:`huaweicloudsdkroma.v2.TaskBasicRsp`
+        :param task_detail: 参数类型为string，参数结构参照附录中“数据集成参数说明&gt;RawFormDataResponse”章节
+        :type task_detail: str
+        """
         
         super(CreateCommonTaskResponse, self).__init__()
 
@@ -51,7 +58,7 @@ class CreateCommonTaskResponse(SdkResponse):
 
 
         :return: The task of this CreateCommonTaskResponse.
-        :rtype: TaskBasicRsp
+        :rtype: :class:`huaweicloudsdkroma.v2.TaskBasicRsp`
         """
         return self._task
 
@@ -61,7 +68,7 @@ class CreateCommonTaskResponse(SdkResponse):
 
 
         :param task: The task of this CreateCommonTaskResponse.
-        :type: TaskBasicRsp
+        :type task: :class:`huaweicloudsdkroma.v2.TaskBasicRsp`
         """
         self._task = task
 
@@ -83,7 +90,7 @@ class CreateCommonTaskResponse(SdkResponse):
         参数类型为string，参数结构参照附录中“数据集成参数说明>RawFormDataResponse”章节
 
         :param task_detail: The task_detail of this CreateCommonTaskResponse.
-        :type: str
+        :type task_detail: str
         """
         self._task_detail = task_detail
 

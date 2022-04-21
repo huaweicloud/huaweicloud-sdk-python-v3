@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TotalMetaData:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class TotalMetaData:
     }
 
     def __init__(self, total=None):
-        """TotalMetaData - a model defined in huaweicloud sdk"""
+        """TotalMetaData
+
+        The model defined in huaweicloud sdk
+
+        :param total: 总条数。
+        :type total: int
+        """
         
         
 
@@ -58,7 +63,7 @@ class TotalMetaData:
         总条数。
 
         :param total: The total of this TotalMetaData.
-        :type: int
+        :type total: int
         """
         self._total = total
 

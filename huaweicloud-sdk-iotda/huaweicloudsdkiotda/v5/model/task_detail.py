@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TaskDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class TaskDetail:
     }
 
     def __init__(self, target=None, status=None, output=None, error=None):
-        """TaskDetail - a model defined in huaweicloud sdk"""
+        """TaskDetail
+
+        The model defined in huaweicloud sdk
+
+        :param target: 执行批量任务的目标。
+        :type target: str
+        :param status: 子任务的执行状态，结果范围：Processing，Success，Fail，Waitting，FailWaitRetry，Stopped。 - Waitting: 等待执行。 - Processing: 执行中。 - Success: 成功。 - Fail: 失败。 - FailWaitRetry: 失败重试。 - Stopped: 已停止。 
+        :type status: str
+        :param output: 子任务执行的输出信息。
+        :type output: str
+        :param error: 
+        :type error: :class:`huaweicloudsdkiotda.v5.ErrorInfo`
+        """
         
         
 
@@ -73,7 +84,7 @@ class TaskDetail:
         执行批量任务的目标。
 
         :param target: The target of this TaskDetail.
-        :type: str
+        :type target: str
         """
         self._target = target
 
@@ -95,7 +106,7 @@ class TaskDetail:
         子任务的执行状态，结果范围：Processing，Success，Fail，Waitting，FailWaitRetry，Stopped。 - Waitting: 等待执行。 - Processing: 执行中。 - Success: 成功。 - Fail: 失败。 - FailWaitRetry: 失败重试。 - Stopped: 已停止。 
 
         :param status: The status of this TaskDetail.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -117,7 +128,7 @@ class TaskDetail:
         子任务执行的输出信息。
 
         :param output: The output of this TaskDetail.
-        :type: str
+        :type output: str
         """
         self._output = output
 
@@ -127,7 +138,7 @@ class TaskDetail:
 
 
         :return: The error of this TaskDetail.
-        :rtype: ErrorInfo
+        :rtype: :class:`huaweicloudsdkiotda.v5.ErrorInfo`
         """
         return self._error
 
@@ -137,7 +148,7 @@ class TaskDetail:
 
 
         :param error: The error of this TaskDetail.
-        :type: ErrorInfo
+        :type error: :class:`huaweicloudsdkiotda.v5.ErrorInfo`
         """
         self._error = error
 

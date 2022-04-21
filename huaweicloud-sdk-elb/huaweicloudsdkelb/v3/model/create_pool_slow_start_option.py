@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreatePoolSlowStartOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreatePoolSlowStartOption:
     }
 
     def __init__(self, enable=None, duration=None):
-        """CreatePoolSlowStartOption - a model defined in huaweicloud sdk"""
+        """CreatePoolSlowStartOption
+
+        The model defined in huaweicloud sdk
+
+        :param enable: 慢启动的开关，取值： - true：开启。 - false：关闭，默认值。 
+        :type enable: bool
+        :param duration: 慢启动的持续时间，单位：s。默认：30； 取值范围：30~1200
+        :type duration: int
+        """
         
         
 
@@ -63,7 +70,7 @@ class CreatePoolSlowStartOption:
         慢启动的开关，取值： - true：开启。 - false：关闭，默认值。 
 
         :param enable: The enable of this CreatePoolSlowStartOption.
-        :type: bool
+        :type enable: bool
         """
         self._enable = enable
 
@@ -85,7 +92,7 @@ class CreatePoolSlowStartOption:
         慢启动的持续时间，单位：s。默认：30； 取值范围：30~1200
 
         :param duration: The duration of this CreatePoolSlowStartOption.
-        :type: int
+        :type duration: int
         """
         self._duration = duration
 

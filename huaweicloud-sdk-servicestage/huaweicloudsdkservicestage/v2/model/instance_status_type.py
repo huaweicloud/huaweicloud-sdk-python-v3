@@ -12,7 +12,6 @@ class InstanceStatusType:
     """
     allowed enum values
     """
-
     INITIALIZING = "INITIALIZING"
     UPGRADING = "UPGRADING"
     FAILED = "FAILED"
@@ -28,7 +27,6 @@ class InstanceStatusType:
     PENDING = "PENDING"
     UNKNOWN = "UNKNOWN"
     PARTIALLY_FAILED = "PARTIALLY_FAILED"
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +44,11 @@ class InstanceStatusType:
     }
 
     def __init__(self):
-        """InstanceStatusType - a model defined in huaweicloud sdk"""
+        """InstanceStatusType
+
+        The model defined in huaweicloud sdk
+
+        """
         
         
         self.discriminator = None

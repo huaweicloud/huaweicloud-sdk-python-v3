@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListBackupsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListBackupsResponse(SdkResponse):
     }
 
     def __init__(self, error_message=None, error_code=None, backup_count=None, backup_list=None):
-        """ListBackupsResponse - a model defined in huaweicloud sdk"""
+        """ListBackupsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param error_message: 系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误信息。
+        :type error_message: str
+        :param error_code: 系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误码。
+        :type error_code: str
+        :param backup_count: 备份总个数。请求失败时，字段为空。
+        :type backup_count: int
+        :param backup_list: 当前Project ID下的所有图的备份列表。请求失败时，字段为空。
+        :type backup_list: list[:class:`huaweicloudsdkges.v1.Backup`]
+        """
         
         super(ListBackupsResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class ListBackupsResponse(SdkResponse):
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误信息。
 
         :param error_message: The error_message of this ListBackupsResponse.
-        :type: str
+        :type error_message: str
         """
         self._error_message = error_message
 
@@ -95,7 +106,7 @@ class ListBackupsResponse(SdkResponse):
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误码。
 
         :param error_code: The error_code of this ListBackupsResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -117,7 +128,7 @@ class ListBackupsResponse(SdkResponse):
         备份总个数。请求失败时，字段为空。
 
         :param backup_count: The backup_count of this ListBackupsResponse.
-        :type: int
+        :type backup_count: int
         """
         self._backup_count = backup_count
 
@@ -128,7 +139,7 @@ class ListBackupsResponse(SdkResponse):
         当前Project ID下的所有图的备份列表。请求失败时，字段为空。
 
         :return: The backup_list of this ListBackupsResponse.
-        :rtype: list[Backup]
+        :rtype: list[:class:`huaweicloudsdkges.v1.Backup`]
         """
         return self._backup_list
 
@@ -139,7 +150,7 @@ class ListBackupsResponse(SdkResponse):
         当前Project ID下的所有图的备份列表。请求失败时，字段为空。
 
         :param backup_list: The backup_list of this ListBackupsResponse.
-        :type: list[Backup]
+        :type backup_list: list[:class:`huaweicloudsdkges.v1.Backup`]
         """
         self._backup_list = backup_list
 

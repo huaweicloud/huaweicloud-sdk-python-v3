@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LoadBalancerStatusMember:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class LoadBalancerStatusMember:
     }
 
     def __init__(self, provisioning_status=None, address=None, protocol_port=None, id=None, operating_status=None):
-        """LoadBalancerStatusMember - a model defined in huaweicloud sdk"""
+        """LoadBalancerStatusMember
+
+        The model defined in huaweicloud sdk
+
+        :param provisioning_status: 后端服务器配置状态。取值：ACTIVE表示使用中。
+        :type provisioning_status: str
+        :param address: 后端服务器的IP地址。
+        :type address: str
+        :param protocol_port: 后端服务器的端口号。取值范围[1, 65535]。
+        :type protocol_port: int
+        :param id: 后端服务器ID。
+        :type id: str
+        :param operating_status: 后端服务器的操作状态。取值：  - ONLINE：后端服务器正常运行。  - NO_MONITOR：后端服务器健康检查未开启。  - DISABLED：后端服务器不可用。所属负载均衡器或后端服务器组或该后端服务器的admin_state_up&#x3D;false时，会出现该状态。注意该状态仅在当前接口中返回。  - OFFLINE：关联ECS已下线。
+        :type operating_status: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class LoadBalancerStatusMember:
         后端服务器配置状态。取值：ACTIVE表示使用中。
 
         :param provisioning_status: The provisioning_status of this LoadBalancerStatusMember.
-        :type: str
+        :type provisioning_status: str
         """
         self._provisioning_status = provisioning_status
 
@@ -100,7 +113,7 @@ class LoadBalancerStatusMember:
         后端服务器的IP地址。
 
         :param address: The address of this LoadBalancerStatusMember.
-        :type: str
+        :type address: str
         """
         self._address = address
 
@@ -122,7 +135,7 @@ class LoadBalancerStatusMember:
         后端服务器的端口号。取值范围[1, 65535]。
 
         :param protocol_port: The protocol_port of this LoadBalancerStatusMember.
-        :type: int
+        :type protocol_port: int
         """
         self._protocol_port = protocol_port
 
@@ -144,7 +157,7 @@ class LoadBalancerStatusMember:
         后端服务器ID。
 
         :param id: The id of this LoadBalancerStatusMember.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -166,7 +179,7 @@ class LoadBalancerStatusMember:
         后端服务器的操作状态。取值：  - ONLINE：后端服务器正常运行。  - NO_MONITOR：后端服务器健康检查未开启。  - DISABLED：后端服务器不可用。所属负载均衡器或后端服务器组或该后端服务器的admin_state_up=false时，会出现该状态。注意该状态仅在当前接口中返回。  - OFFLINE：关联ECS已下线。
 
         :param operating_status: The operating_status of this LoadBalancerStatusMember.
-        :type: str
+        :type operating_status: str
         """
         self._operating_status = operating_status
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueueInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class QueueInfo:
     }
 
     def __init__(self, queue_name=None):
-        """QueueInfo - a model defined in huaweicloud sdk"""
+        """QueueInfo
+
+        The model defined in huaweicloud sdk
+
+        :param queue_name: **参数说明**：队列名称，同一租户不允许重复。 **取值范围**：长度不低于8不超过128，只允许字母、数字、下划线（_）、连接符（-）、间隔号（.）、冒号（:）的组合。
+        :type queue_name: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class QueueInfo:
         **参数说明**：队列名称，同一租户不允许重复。 **取值范围**：长度不低于8不超过128，只允许字母、数字、下划线（_）、连接符（-）、间隔号（.）、冒号（:）的组合。
 
         :param queue_name: The queue_name of this QueueInfo.
-        :type: str
+        :type queue_name: str
         """
         self._queue_name = queue_name
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ReinstallExtendParam:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ReinstallExtendParam:
     }
 
     def __init__(self, alpha_cce_node_image_id=None):
-        """ReinstallExtendParam - a model defined in huaweicloud sdk"""
+        """ReinstallExtendParam
+
+        The model defined in huaweicloud sdk
+
+        :param alpha_cce_node_image_id: 指定待切换目标操作系统所使用的用户镜像ID，已废弃。 指定此参数等价于指定ReinstallVolumeSpec中imageID，原取值将被覆盖。 
+        :type alpha_cce_node_image_id: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class ReinstallExtendParam:
         指定待切换目标操作系统所使用的用户镜像ID，已废弃。 指定此参数等价于指定ReinstallVolumeSpec中imageID，原取值将被覆盖。 
 
         :param alpha_cce_node_image_id: The alpha_cce_node_image_id of this ReinstallExtendParam.
-        :type: str
+        :type alpha_cce_node_image_id: str
         """
         self._alpha_cce_node_image_id = alpha_cce_node_image_id
 

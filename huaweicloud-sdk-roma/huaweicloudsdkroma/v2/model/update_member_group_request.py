@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateMemberGroupRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UpdateMemberGroupRequest:
     }
 
     def __init__(self, instance_id=None, vpc_channel_id=None, member_group_id=None, body=None):
-        """UpdateMemberGroupRequest - a model defined in huaweicloud sdk"""
+        """UpdateMemberGroupRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param vpc_channel_id: VPC通道的编号
+        :type vpc_channel_id: str
+        :param member_group_id: VPC通道后端服务器组编号
+        :type member_group_id: str
+        :param body: Body of the UpdateMemberGroupRequest
+        :type body: :class:`huaweicloudsdkroma.v2.MemberGroupCreate`
+        """
         
         
 
@@ -70,7 +81,7 @@ class UpdateMemberGroupRequest:
         实例ID
 
         :param instance_id: The instance_id of this UpdateMemberGroupRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -92,7 +103,7 @@ class UpdateMemberGroupRequest:
         VPC通道的编号
 
         :param vpc_channel_id: The vpc_channel_id of this UpdateMemberGroupRequest.
-        :type: str
+        :type vpc_channel_id: str
         """
         self._vpc_channel_id = vpc_channel_id
 
@@ -114,7 +125,7 @@ class UpdateMemberGroupRequest:
         VPC通道后端服务器组编号
 
         :param member_group_id: The member_group_id of this UpdateMemberGroupRequest.
-        :type: str
+        :type member_group_id: str
         """
         self._member_group_id = member_group_id
 
@@ -124,7 +135,7 @@ class UpdateMemberGroupRequest:
 
 
         :return: The body of this UpdateMemberGroupRequest.
-        :rtype: MemberGroupCreate
+        :rtype: :class:`huaweicloudsdkroma.v2.MemberGroupCreate`
         """
         return self._body
 
@@ -134,7 +145,7 @@ class UpdateMemberGroupRequest:
 
 
         :param body: The body of this UpdateMemberGroupRequest.
-        :type: MemberGroupCreate
+        :type body: :class:`huaweicloudsdkroma.v2.MemberGroupCreate`
         """
         self._body = body
 

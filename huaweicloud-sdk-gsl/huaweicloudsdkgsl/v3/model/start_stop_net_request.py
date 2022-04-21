@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StartStopNetRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class StartStopNetRequest:
     }
 
     def __init__(self, sim_card_id=None, body=None):
-        """StartStopNetRequest - a model defined in huaweicloud sdk"""
+        """StartStopNetRequest
+
+        The model defined in huaweicloud sdk
+
+        :param sim_card_id: SIM卡标识，可通过[查询SIM卡列表接口](https://support.huaweicloud.com/api-ocgsl/gsl_07_0008.html)获取
+        :type sim_card_id: int
+        :param body: Body of the StartStopNetRequest
+        :type body: :class:`huaweicloudsdkgsl.v3.CutNetReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class StartStopNetRequest:
         SIM卡标识，可通过[查询SIM卡列表接口](https://support.huaweicloud.com/api-ocgsl/gsl_07_0008.html)获取
 
         :param sim_card_id: The sim_card_id of this StartStopNetRequest.
-        :type: int
+        :type sim_card_id: int
         """
         self._sim_card_id = sim_card_id
 
@@ -72,7 +79,7 @@ class StartStopNetRequest:
 
 
         :return: The body of this StartStopNetRequest.
-        :rtype: CutNetReq
+        :rtype: :class:`huaweicloudsdkgsl.v3.CutNetReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class StartStopNetRequest:
 
 
         :param body: The body of this StartStopNetRequest.
-        :type: CutNetReq
+        :type body: :class:`huaweicloudsdkgsl.v3.CutNetReq`
         """
         self._body = body
 

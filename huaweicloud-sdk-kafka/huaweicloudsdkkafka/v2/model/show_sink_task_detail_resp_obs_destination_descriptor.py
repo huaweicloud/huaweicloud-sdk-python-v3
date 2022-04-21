@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowSinkTaskDetailRespObsDestinationDescriptor:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ShowSinkTaskDetailRespObsDestinationDescriptor:
     }
 
     def __init__(self, consumer_strategy=None, destination_file_type=None, obs_bucket_name=None, obs_path=None, partition_format=None, record_delimiter=None, deliver_time_interval=None, obs_part_size=None):
-        """ShowSinkTaskDetailRespObsDestinationDescriptor - a model defined in huaweicloud sdk"""
+        """ShowSinkTaskDetailRespObsDestinationDescriptor
+
+        The model defined in huaweicloud sdk
+
+        :param consumer_strategy: 消费启动策略：  - latest：从Topic最后端开始消费。  - earliest: 从Topic最前端消息开始消费。  默认是latest。 
+        :type consumer_strategy: str
+        :param destination_file_type: 转储文件格式。目前只支持text格式。 
+        :type destination_file_type: str
+        :param obs_bucket_name: 存储该通道数据的OBS桶名称。 
+        :type obs_bucket_name: str
+        :param obs_path: 存储在obs的路径。 
+        :type obs_path: str
+        :param partition_format: 将转储文件的生成时间使用“yyyy/MM/dd/HH/mm”格式生成分区字符串，用来定义写到OBS的Object文件所在的目录层次结构。   - N/A：置空，不使用日期时间目录。   - yyyy：年   - yyyy/MM：年/月   - yyyy/MM/dd：年/月/日   - yyyy/MM/dd/HH：年/月/日/时   - yyyy/MM/dd/HH/mm：年/月/日/时/分，例如：2017/11/10/14/49，目录结构就是“2017 &gt; 11 &gt; 10 &gt; 14 &gt; 49”，“2017”表示最外层文件夹。  默认值：空 &gt; 数据转储成功后，存储的目录结构为“obs_bucket_path/file_prefix/partition_format”。默认时间是GMT+8 时间 
+        :type partition_format: str
+        :param record_delimiter: 转储文件的记录分隔符，用于分隔写入转储文件的用户数据。 取值范围：   - 逗号“,”   - 分号“;”   - 竖线“|”   - 换行符“\\n”   - NULL  默认值：换行符“\\n”。 
+        :type record_delimiter: str
+        :param deliver_time_interval: 根据用户配置的时间，周期性的将数据导入OBS，若某个时间段内无数据，则此时间段不会生成打包文件。 取值范围：30～900 缺省值：300 单位：秒。 &gt; 使用OBS通道转储流式数据时该参数为必选配置。 
+        :type deliver_time_interval: int
+        :param obs_part_size: 每个传输文件多大后就开始上传，单位为byte。 默认值5242880。 
+        :type obs_part_size: int
+        """
         
         
 
@@ -93,7 +112,7 @@ class ShowSinkTaskDetailRespObsDestinationDescriptor:
         消费启动策略：  - latest：从Topic最后端开始消费。  - earliest: 从Topic最前端消息开始消费。  默认是latest。 
 
         :param consumer_strategy: The consumer_strategy of this ShowSinkTaskDetailRespObsDestinationDescriptor.
-        :type: str
+        :type consumer_strategy: str
         """
         self._consumer_strategy = consumer_strategy
 
@@ -115,7 +134,7 @@ class ShowSinkTaskDetailRespObsDestinationDescriptor:
         转储文件格式。目前只支持text格式。 
 
         :param destination_file_type: The destination_file_type of this ShowSinkTaskDetailRespObsDestinationDescriptor.
-        :type: str
+        :type destination_file_type: str
         """
         self._destination_file_type = destination_file_type
 
@@ -137,7 +156,7 @@ class ShowSinkTaskDetailRespObsDestinationDescriptor:
         存储该通道数据的OBS桶名称。 
 
         :param obs_bucket_name: The obs_bucket_name of this ShowSinkTaskDetailRespObsDestinationDescriptor.
-        :type: str
+        :type obs_bucket_name: str
         """
         self._obs_bucket_name = obs_bucket_name
 
@@ -159,7 +178,7 @@ class ShowSinkTaskDetailRespObsDestinationDescriptor:
         存储在obs的路径。 
 
         :param obs_path: The obs_path of this ShowSinkTaskDetailRespObsDestinationDescriptor.
-        :type: str
+        :type obs_path: str
         """
         self._obs_path = obs_path
 
@@ -181,7 +200,7 @@ class ShowSinkTaskDetailRespObsDestinationDescriptor:
         将转储文件的生成时间使用“yyyy/MM/dd/HH/mm”格式生成分区字符串，用来定义写到OBS的Object文件所在的目录层次结构。   - N/A：置空，不使用日期时间目录。   - yyyy：年   - yyyy/MM：年/月   - yyyy/MM/dd：年/月/日   - yyyy/MM/dd/HH：年/月/日/时   - yyyy/MM/dd/HH/mm：年/月/日/时/分，例如：2017/11/10/14/49，目录结构就是“2017 > 11 > 10 > 14 > 49”，“2017”表示最外层文件夹。  默认值：空 > 数据转储成功后，存储的目录结构为“obs_bucket_path/file_prefix/partition_format”。默认时间是GMT+8 时间 
 
         :param partition_format: The partition_format of this ShowSinkTaskDetailRespObsDestinationDescriptor.
-        :type: str
+        :type partition_format: str
         """
         self._partition_format = partition_format
 
@@ -203,7 +222,7 @@ class ShowSinkTaskDetailRespObsDestinationDescriptor:
         转储文件的记录分隔符，用于分隔写入转储文件的用户数据。 取值范围：   - 逗号“,”   - 分号“;”   - 竖线“|”   - 换行符“\\n”   - NULL  默认值：换行符“\\n”。 
 
         :param record_delimiter: The record_delimiter of this ShowSinkTaskDetailRespObsDestinationDescriptor.
-        :type: str
+        :type record_delimiter: str
         """
         self._record_delimiter = record_delimiter
 
@@ -225,7 +244,7 @@ class ShowSinkTaskDetailRespObsDestinationDescriptor:
         根据用户配置的时间，周期性的将数据导入OBS，若某个时间段内无数据，则此时间段不会生成打包文件。 取值范围：30～900 缺省值：300 单位：秒。 > 使用OBS通道转储流式数据时该参数为必选配置。 
 
         :param deliver_time_interval: The deliver_time_interval of this ShowSinkTaskDetailRespObsDestinationDescriptor.
-        :type: int
+        :type deliver_time_interval: int
         """
         self._deliver_time_interval = deliver_time_interval
 
@@ -247,7 +266,7 @@ class ShowSinkTaskDetailRespObsDestinationDescriptor:
         每个传输文件多大后就开始上传，单位为byte。 默认值5242880。 
 
         :param obs_part_size: The obs_part_size of this ShowSinkTaskDetailRespObsDestinationDescriptor.
-        :type: int
+        :type obs_part_size: int
         """
         self._obs_part_size = obs_part_size
 

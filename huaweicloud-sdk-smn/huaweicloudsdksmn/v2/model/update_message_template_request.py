@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateMessageTemplateRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateMessageTemplateRequest:
     }
 
     def __init__(self, message_template_id=None, body=None):
-        """UpdateMessageTemplateRequest - a model defined in huaweicloud sdk"""
+        """UpdateMessageTemplateRequest
+
+        The model defined in huaweicloud sdk
+
+        :param message_template_id: 模板唯一的资源标识，可通过查询[消息模板列表](https://support.huaweicloud.com/api-smn/ListMessageTemplates.html)获取该标识。
+        :type message_template_id: str
+        :param body: Body of the UpdateMessageTemplateRequest
+        :type body: :class:`huaweicloudsdksmn.v2.UpdateMessageTemplateRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateMessageTemplateRequest:
         模板唯一的资源标识，可通过查询[消息模板列表](https://support.huaweicloud.com/api-smn/ListMessageTemplates.html)获取该标识。
 
         :param message_template_id: The message_template_id of this UpdateMessageTemplateRequest.
-        :type: str
+        :type message_template_id: str
         """
         self._message_template_id = message_template_id
 
@@ -72,7 +79,7 @@ class UpdateMessageTemplateRequest:
 
 
         :return: The body of this UpdateMessageTemplateRequest.
-        :rtype: UpdateMessageTemplateRequestBody
+        :rtype: :class:`huaweicloudsdksmn.v2.UpdateMessageTemplateRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateMessageTemplateRequest:
 
 
         :param body: The body of this UpdateMessageTemplateRequest.
-        :type: UpdateMessageTemplateRequestBody
+        :type body: :class:`huaweicloudsdksmn.v2.UpdateMessageTemplateRequestBody`
         """
         self._body = body
 

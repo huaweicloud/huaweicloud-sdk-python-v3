@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StartPublicWhitelistRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class StartPublicWhitelistRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """StartPublicWhitelistRequest - a model defined in huaweicloud sdk"""
+        """StartPublicWhitelistRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 指定查询集群ID。
+        :type cluster_id: str
+        :param body: Body of the StartPublicWhitelistRequest
+        :type body: :class:`huaweicloudsdkcss.v1.StartPublicWhitelistReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class StartPublicWhitelistRequest:
         指定查询集群ID。
 
         :param cluster_id: The cluster_id of this StartPublicWhitelistRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -72,7 +79,7 @@ class StartPublicWhitelistRequest:
 
 
         :return: The body of this StartPublicWhitelistRequest.
-        :rtype: StartPublicWhitelistReq
+        :rtype: :class:`huaweicloudsdkcss.v1.StartPublicWhitelistReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class StartPublicWhitelistRequest:
 
 
         :param body: The body of this StartPublicWhitelistRequest.
-        :type: StartPublicWhitelistReq
+        :type body: :class:`huaweicloudsdkcss.v1.StartPublicWhitelistReq`
         """
         self._body = body
 

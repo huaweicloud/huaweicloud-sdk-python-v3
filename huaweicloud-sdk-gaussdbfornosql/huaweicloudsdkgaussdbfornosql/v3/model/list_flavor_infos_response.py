@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListFlavorInfosResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListFlavorInfosResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, flavors=None):
-        """ListFlavorInfosResponse - a model defined in huaweicloud sdk"""
+        """ListFlavorInfosResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total_count: 总记录数。
+        :type total_count: int
+        :param flavors: 实例规格信息列表。
+        :type flavors: list[:class:`huaweicloudsdkgaussdbfornosql.v3.ListFlavorsResult`]
+        """
         
         super(ListFlavorInfosResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListFlavorInfosResponse(SdkResponse):
         总记录数。
 
         :param total_count: The total_count of this ListFlavorInfosResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 
@@ -74,7 +81,7 @@ class ListFlavorInfosResponse(SdkResponse):
         实例规格信息列表。
 
         :return: The flavors of this ListFlavorInfosResponse.
-        :rtype: list[ListFlavorsResult]
+        :rtype: list[:class:`huaweicloudsdkgaussdbfornosql.v3.ListFlavorsResult`]
         """
         return self._flavors
 
@@ -85,7 +92,7 @@ class ListFlavorInfosResponse(SdkResponse):
         实例规格信息列表。
 
         :param flavors: The flavors of this ListFlavorInfosResponse.
-        :type: list[ListFlavorsResult]
+        :type flavors: list[:class:`huaweicloudsdkgaussdbfornosql.v3.ListFlavorsResult`]
         """
         self._flavors = flavors
 

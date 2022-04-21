@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowGaussMySqlJobInfoRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowGaussMySqlJobInfoRequest:
     }
 
     def __init__(self, x_language=None, id=None):
-        """ShowGaussMySqlJobInfoRequest - a model defined in huaweicloud sdk"""
+        """ShowGaussMySqlJobInfoRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言
+        :type x_language: str
+        :param id: 任务ID。
+        :type id: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ShowGaussMySqlJobInfoRequest:
         语言
 
         :param x_language: The x_language of this ShowGaussMySqlJobInfoRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -84,7 +91,7 @@ class ShowGaussMySqlJobInfoRequest:
         任务ID。
 
         :param id: The id of this ShowGaussMySqlJobInfoRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 

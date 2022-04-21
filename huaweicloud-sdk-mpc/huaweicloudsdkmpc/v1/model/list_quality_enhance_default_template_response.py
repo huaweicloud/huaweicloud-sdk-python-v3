@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListQualityEnhanceDefaultTemplateResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListQualityEnhanceDefaultTemplateResponse(SdkResponse):
     }
 
     def __init__(self, task_array=None, total=None):
-        """ListQualityEnhanceDefaultTemplateResponse - a model defined in huaweicloud sdk"""
+        """ListQualityEnhanceDefaultTemplateResponse
+
+        The model defined in huaweicloud sdk
+
+        :param task_array: 任务列表
+        :type task_array: list[:class:`huaweicloudsdkmpc.v1.QualityEnhanceTemplateInfo`]
+        :param total: 查询结果数量
+        :type total: int
+        """
         
         super(ListQualityEnhanceDefaultTemplateResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListQualityEnhanceDefaultTemplateResponse(SdkResponse):
         任务列表
 
         :return: The task_array of this ListQualityEnhanceDefaultTemplateResponse.
-        :rtype: list[QualityEnhanceTemplateInfo]
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.QualityEnhanceTemplateInfo`]
         """
         return self._task_array
 
@@ -63,7 +70,7 @@ class ListQualityEnhanceDefaultTemplateResponse(SdkResponse):
         任务列表
 
         :param task_array: The task_array of this ListQualityEnhanceDefaultTemplateResponse.
-        :type: list[QualityEnhanceTemplateInfo]
+        :type task_array: list[:class:`huaweicloudsdkmpc.v1.QualityEnhanceTemplateInfo`]
         """
         self._task_array = task_array
 
@@ -85,7 +92,7 @@ class ListQualityEnhanceDefaultTemplateResponse(SdkResponse):
         查询结果数量
 
         :param total: The total of this ListQualityEnhanceDefaultTemplateResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 

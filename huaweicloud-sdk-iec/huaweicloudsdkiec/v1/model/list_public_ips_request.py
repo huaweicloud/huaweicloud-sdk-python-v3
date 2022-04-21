@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPublicIpsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListPublicIpsRequest:
     }
 
     def __init__(self, limit=None, offset=None, site_id=None, port_id=None):
-        """ListPublicIpsRequest - a model defined in huaweicloud sdk"""
+        """ListPublicIpsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 查询返回弹性IP列表数量。取值范围：0~1000。
+        :type limit: int
+        :param offset: 查询的偏移量。
+        :type offset: int
+        :param site_id: 站点ID。
+        :type site_id: str
+        :param port_id: 端口ID
+        :type port_id: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class ListPublicIpsRequest:
         查询返回弹性IP列表数量。取值范围：0~1000。
 
         :param limit: The limit of this ListPublicIpsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -95,7 +106,7 @@ class ListPublicIpsRequest:
         查询的偏移量。
 
         :param offset: The offset of this ListPublicIpsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -117,7 +128,7 @@ class ListPublicIpsRequest:
         站点ID。
 
         :param site_id: The site_id of this ListPublicIpsRequest.
-        :type: str
+        :type site_id: str
         """
         self._site_id = site_id
 
@@ -139,7 +150,7 @@ class ListPublicIpsRequest:
         端口ID
 
         :param port_id: The port_id of this ListPublicIpsRequest.
-        :type: str
+        :type port_id: str
         """
         self._port_id = port_id
 

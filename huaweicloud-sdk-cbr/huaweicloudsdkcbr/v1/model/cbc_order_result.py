@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CbcOrderResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CbcOrderResult:
     }
 
     def __init__(self, cloud_service_id=None, order_id=None, subscribe_result=None, resource_id=None):
-        """CbcOrderResult - a model defined in huaweicloud sdk"""
+        """CbcOrderResult
+
+        The model defined in huaweicloud sdk
+
+        :param cloud_service_id: 云服务ID
+        :type cloud_service_id: str
+        :param order_id: 订单ID
+        :type order_id: str
+        :param subscribe_result: 订购结果，1：成功；0：失败
+        :type subscribe_result: int
+        :param resource_id: 包周期资源预生成资源id。
+        :type resource_id: str
+        """
         
         
 
@@ -71,7 +82,7 @@ class CbcOrderResult:
         云服务ID
 
         :param cloud_service_id: The cloud_service_id of this CbcOrderResult.
-        :type: str
+        :type cloud_service_id: str
         """
         self._cloud_service_id = cloud_service_id
 
@@ -93,7 +104,7 @@ class CbcOrderResult:
         订单ID
 
         :param order_id: The order_id of this CbcOrderResult.
-        :type: str
+        :type order_id: str
         """
         self._order_id = order_id
 
@@ -115,7 +126,7 @@ class CbcOrderResult:
         订购结果，1：成功；0：失败
 
         :param subscribe_result: The subscribe_result of this CbcOrderResult.
-        :type: int
+        :type subscribe_result: int
         """
         self._subscribe_result = subscribe_result
 
@@ -137,7 +148,7 @@ class CbcOrderResult:
         包周期资源预生成资源id。
 
         :param resource_id: The resource_id of this CbcOrderResult.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 

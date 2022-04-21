@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowServerBlockDeviceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowServerBlockDeviceRequest:
     }
 
     def __init__(self, server_id=None, volume_id=None):
-        """ShowServerBlockDeviceRequest - a model defined in huaweicloud sdk"""
+        """ShowServerBlockDeviceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param server_id: 云服务器ID。
+        :type server_id: str
+        :param volume_id: 云硬盘ID，UUID格式。
+        :type volume_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ShowServerBlockDeviceRequest:
         云服务器ID。
 
         :param server_id: The server_id of this ShowServerBlockDeviceRequest.
-        :type: str
+        :type server_id: str
         """
         self._server_id = server_id
 
@@ -83,7 +90,7 @@ class ShowServerBlockDeviceRequest:
         云硬盘ID，UUID格式。
 
         :param volume_id: The volume_id of this ShowServerBlockDeviceRequest.
-        :type: str
+        :type volume_id: str
         """
         self._volume_id = volume_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NovaDeleteKeypairResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class NovaDeleteKeypairResponse(SdkResponse):
     }
 
     def __init__(self):
-        """NovaDeleteKeypairResponse - a model defined in huaweicloud sdk"""
+        """NovaDeleteKeypairResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(NovaDeleteKeypairResponse, self).__init__()
         self.discriminator = None

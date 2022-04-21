@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class JobEntities:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class JobEntities:
     }
 
     def __init__(self, replication_pair_id=None, volume_ids=None, server_group_id=None, protected_instance_id=None, native_server_id=None, nic_id=None, sub_jobs=None):
-        """JobEntities - a model defined in huaweicloud sdk"""
+        """JobEntities
+
+        The model defined in huaweicloud sdk
+
+        :param replication_pair_id: 复制对ID
+        :type replication_pair_id: str
+        :param volume_ids: 组成复制对的云硬盘ID
+        :type volume_ids: str
+        :param server_group_id: 保护组ID
+        :type server_group_id: str
+        :param protected_instance_id: 保护实例ID
+        :type protected_instance_id: str
+        :param native_server_id: 容灾站点服务器ID
+        :type native_server_id: str
+        :param nic_id: 网卡ID
+        :type nic_id: str
+        :param sub_jobs: 子Job信息
+        :type sub_jobs: list[:class:`huaweicloudsdksdrs.v1.SubJobParams`]
+        """
         
         
 
@@ -88,7 +105,7 @@ class JobEntities:
         复制对ID
 
         :param replication_pair_id: The replication_pair_id of this JobEntities.
-        :type: str
+        :type replication_pair_id: str
         """
         self._replication_pair_id = replication_pair_id
 
@@ -110,7 +127,7 @@ class JobEntities:
         组成复制对的云硬盘ID
 
         :param volume_ids: The volume_ids of this JobEntities.
-        :type: str
+        :type volume_ids: str
         """
         self._volume_ids = volume_ids
 
@@ -132,7 +149,7 @@ class JobEntities:
         保护组ID
 
         :param server_group_id: The server_group_id of this JobEntities.
-        :type: str
+        :type server_group_id: str
         """
         self._server_group_id = server_group_id
 
@@ -154,7 +171,7 @@ class JobEntities:
         保护实例ID
 
         :param protected_instance_id: The protected_instance_id of this JobEntities.
-        :type: str
+        :type protected_instance_id: str
         """
         self._protected_instance_id = protected_instance_id
 
@@ -176,7 +193,7 @@ class JobEntities:
         容灾站点服务器ID
 
         :param native_server_id: The native_server_id of this JobEntities.
-        :type: str
+        :type native_server_id: str
         """
         self._native_server_id = native_server_id
 
@@ -198,7 +215,7 @@ class JobEntities:
         网卡ID
 
         :param nic_id: The nic_id of this JobEntities.
-        :type: str
+        :type nic_id: str
         """
         self._nic_id = nic_id
 
@@ -209,7 +226,7 @@ class JobEntities:
         子Job信息
 
         :return: The sub_jobs of this JobEntities.
-        :rtype: list[SubJobParams]
+        :rtype: list[:class:`huaweicloudsdksdrs.v1.SubJobParams`]
         """
         return self._sub_jobs
 
@@ -220,7 +237,7 @@ class JobEntities:
         子Job信息
 
         :param sub_jobs: The sub_jobs of this JobEntities.
-        :type: list[SubJobParams]
+        :type sub_jobs: list[:class:`huaweicloudsdksdrs.v1.SubJobParams`]
         """
         self._sub_jobs = sub_jobs
 

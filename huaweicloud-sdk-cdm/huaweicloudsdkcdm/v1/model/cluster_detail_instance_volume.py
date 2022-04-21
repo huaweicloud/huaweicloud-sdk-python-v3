@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ClusterDetailInstanceVolume:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ClusterDetailInstanceVolume:
     }
 
     def __init__(self, type=None, size=None):
-        """ClusterDetailInstanceVolume - a model defined in huaweicloud sdk"""
+        """ClusterDetailInstanceVolume
+
+        The model defined in huaweicloud sdk
+
+        :param type: 节点的磁盘类型，只支持本地磁盘
+        :type type: str
+        :param size: 节点磁盘大小，单位G。
+        :type size: int
+        """
         
         
 
@@ -63,7 +70,7 @@ class ClusterDetailInstanceVolume:
         节点的磁盘类型，只支持本地磁盘
 
         :param type: The type of this ClusterDetailInstanceVolume.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -85,7 +92,7 @@ class ClusterDetailInstanceVolume:
         节点磁盘大小，单位G。
 
         :param size: The size of this ClusterDetailInstanceVolume.
-        :type: int
+        :type size: int
         """
         self._size = size
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchSpecialTestConnectionReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchSpecialTestConnectionReq:
     }
 
     def __init__(self, jobs=None):
-        """BatchSpecialTestConnectionReq - a model defined in huaweicloud sdk"""
+        """BatchSpecialTestConnectionReq
+
+        The model defined in huaweicloud sdk
+
+        :param jobs: 集群批量测试连接任务请求列表
+        :type jobs: list[:class:`huaweicloudsdkdrs.v3.BatchJobActionReq`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class BatchSpecialTestConnectionReq:
         集群批量测试连接任务请求列表
 
         :return: The jobs of this BatchSpecialTestConnectionReq.
-        :rtype: list[BatchJobActionReq]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.BatchJobActionReq`]
         """
         return self._jobs
 
@@ -57,7 +62,7 @@ class BatchSpecialTestConnectionReq:
         集群批量测试连接任务请求列表
 
         :param jobs: The jobs of this BatchSpecialTestConnectionReq.
-        :type: list[BatchJobActionReq]
+        :type jobs: list[:class:`huaweicloudsdkdrs.v3.BatchJobActionReq`]
         """
         self._jobs = jobs
 

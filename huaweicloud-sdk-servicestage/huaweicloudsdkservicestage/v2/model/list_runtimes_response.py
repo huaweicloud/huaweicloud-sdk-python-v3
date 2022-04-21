@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRuntimesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListRuntimesResponse(SdkResponse):
     }
 
     def __init__(self, runtimes=None):
-        """ListRuntimesResponse - a model defined in huaweicloud sdk"""
+        """ListRuntimesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param runtimes: 运行时列表。
+        :type runtimes: list[:class:`huaweicloudsdkservicestage.v2.RuntimeTypeView`]
+        """
         
         super(ListRuntimesResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListRuntimesResponse(SdkResponse):
         运行时列表。
 
         :return: The runtimes of this ListRuntimesResponse.
-        :rtype: list[RuntimeTypeView]
+        :rtype: list[:class:`huaweicloudsdkservicestage.v2.RuntimeTypeView`]
         """
         return self._runtimes
 
@@ -58,7 +63,7 @@ class ListRuntimesResponse(SdkResponse):
         运行时列表。
 
         :param runtimes: The runtimes of this ListRuntimesResponse.
-        :type: list[RuntimeTypeView]
+        :type runtimes: list[:class:`huaweicloudsdkservicestage.v2.RuntimeTypeView`]
         """
         self._runtimes = runtimes
 

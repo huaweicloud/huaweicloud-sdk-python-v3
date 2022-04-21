@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CheckpointReplicateParam:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class CheckpointReplicateParam:
     }
 
     def __init__(self, auto_trigger=None, destination_project_id=None, destination_region=None, destination_vault_id=None, enable_acceleration=None, vault_id=None):
-        """CheckpointReplicateParam - a model defined in huaweicloud sdk"""
+        """CheckpointReplicateParam
+
+        The model defined in huaweicloud sdk
+
+        :param auto_trigger: 本次复制是否自动触发，默认为false，代表手动触发
+        :type auto_trigger: bool
+        :param destination_project_id: 复制的目标项目ID
+        :type destination_project_id: str
+        :param destination_region: 复制的目标区域id
+        :type destination_region: str
+        :param destination_vault_id: 目标区域存储库ID
+        :type destination_vault_id: str
+        :param enable_acceleration: 跨区域复制时，是否启用加速从而缩短复制的时间，如果不指定，默认不启用加速，如果启用加速，会额外收取加速的费用。
+        :type enable_acceleration: bool
+        :param vault_id: 存储库ID: uuid
+        :type vault_id: str
+        """
         
         
 
@@ -79,7 +94,7 @@ class CheckpointReplicateParam:
         本次复制是否自动触发，默认为false，代表手动触发
 
         :param auto_trigger: The auto_trigger of this CheckpointReplicateParam.
-        :type: bool
+        :type auto_trigger: bool
         """
         self._auto_trigger = auto_trigger
 
@@ -101,7 +116,7 @@ class CheckpointReplicateParam:
         复制的目标项目ID
 
         :param destination_project_id: The destination_project_id of this CheckpointReplicateParam.
-        :type: str
+        :type destination_project_id: str
         """
         self._destination_project_id = destination_project_id
 
@@ -123,7 +138,7 @@ class CheckpointReplicateParam:
         复制的目标区域id
 
         :param destination_region: The destination_region of this CheckpointReplicateParam.
-        :type: str
+        :type destination_region: str
         """
         self._destination_region = destination_region
 
@@ -145,7 +160,7 @@ class CheckpointReplicateParam:
         目标区域存储库ID
 
         :param destination_vault_id: The destination_vault_id of this CheckpointReplicateParam.
-        :type: str
+        :type destination_vault_id: str
         """
         self._destination_vault_id = destination_vault_id
 
@@ -167,7 +182,7 @@ class CheckpointReplicateParam:
         跨区域复制时，是否启用加速从而缩短复制的时间，如果不指定，默认不启用加速，如果启用加速，会额外收取加速的费用。
 
         :param enable_acceleration: The enable_acceleration of this CheckpointReplicateParam.
-        :type: bool
+        :type enable_acceleration: bool
         """
         self._enable_acceleration = enable_acceleration
 
@@ -189,7 +204,7 @@ class CheckpointReplicateParam:
         存储库ID: uuid
 
         :param vault_id: The vault_id of this CheckpointReplicateParam.
-        :type: str
+        :type vault_id: str
         """
         self._vault_id = vault_id
 

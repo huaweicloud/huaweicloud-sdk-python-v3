@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateAlertConfigResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateAlertConfigResponse(SdkResponse):
     }
 
     def __init__(self, error_code=None, error_msg=None):
-        """UpdateAlertConfigResponse - a model defined in huaweicloud sdk"""
+        """UpdateAlertConfigResponse
+
+        The model defined in huaweicloud sdk
+
+        :param error_code: 内部错误码
+        :type error_code: str
+        :param error_msg: 内部错误描述
+        :type error_msg: str
+        """
         
         super(UpdateAlertConfigResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class UpdateAlertConfigResponse(SdkResponse):
         内部错误码
 
         :param error_code: The error_code of this UpdateAlertConfigResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -85,7 +92,7 @@ class UpdateAlertConfigResponse(SdkResponse):
         内部错误描述
 
         :param error_msg: The error_msg of this UpdateAlertConfigResponse.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 

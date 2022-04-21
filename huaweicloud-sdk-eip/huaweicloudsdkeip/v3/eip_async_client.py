@@ -52,21 +52,17 @@ class EipAsyncClient(Client):
         """查询公共池列表
 
         查询公共池列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListCommonPoolsRequest request
-        :return: ListCommonPoolsResponse
+        :param request: Request instance for ListCommonPools
+        :type request: :class:`huaweicloudsdkeip.v3.ListCommonPoolsRequest`
+        :rtype: :class:`huaweicloudsdkeip.v3.ListCommonPoolsResponse`
         """
         return self.list_common_pools_with_http_info(request)
 
     def list_common_pools_with_http_info(self, request):
-        """查询公共池列表
-
-        查询公共池列表
-
-        :param ListCommonPoolsRequest request
-        :return: ListCommonPoolsResponse
-        """
-
         all_params = ['fields', 'name', 'public_border_group']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -114,26 +110,21 @@ class EipAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_public_border_groups_async(self, request):
         """查询公共池分组列表
 
         查询公共池分组列表，包含名称和位置信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListPublicBorderGroupsRequest request
-        :return: ListPublicBorderGroupsResponse
+        :param request: Request instance for ListPublicBorderGroups
+        :type request: :class:`huaweicloudsdkeip.v3.ListPublicBorderGroupsRequest`
+        :rtype: :class:`huaweicloudsdkeip.v3.ListPublicBorderGroupsResponse`
         """
         return self.list_public_border_groups_with_http_info(request)
 
     def list_public_border_groups_with_http_info(self, request):
-        """查询公共池分组列表
-
-        查询公共池分组列表，包含名称和位置信息
-
-        :param ListPublicBorderGroupsRequest request
-        :return: ListPublicBorderGroupsResponse
-        """
-
         all_params = ['fields']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -177,26 +168,21 @@ class EipAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_share_bandwidth_types_async(self, request):
         """查询指定租户下的共享带宽类型列表
 
         查询指定租户下的共享带宽类型列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListShareBandwidthTypesRequest request
-        :return: ListShareBandwidthTypesResponse
+        :param request: Request instance for ListShareBandwidthTypes
+        :type request: :class:`huaweicloudsdkeip.v3.ListShareBandwidthTypesRequest`
+        :rtype: :class:`huaweicloudsdkeip.v3.ListShareBandwidthTypesResponse`
         """
         return self.list_share_bandwidth_types_with_http_info(request)
 
     def list_share_bandwidth_types_with_http_info(self, request):
-        """查询指定租户下的共享带宽类型列表
-
-        查询指定租户下的共享带宽类型列表
-
-        :param ListShareBandwidthTypesRequest request
-        :return: ListShareBandwidthTypesResponse
-        """
-
         all_params = ['fields', 'id', 'bandwidth_type', 'name_en', 'name_zh', 'public_border_group', 'sort_key', 'sort_dir', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -256,26 +242,21 @@ class EipAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def associate_publicips_async(self, request):
         """绑定弹性公网IP
 
         绑定弹性公网IP
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param AssociatePublicipsRequest request
-        :return: AssociatePublicipsResponse
+        :param request: Request instance for AssociatePublicips
+        :type request: :class:`huaweicloudsdkeip.v3.AssociatePublicipsRequest`
+        :rtype: :class:`huaweicloudsdkeip.v3.AssociatePublicipsResponse`
         """
         return self.associate_publicips_with_http_info(request)
 
     def associate_publicips_with_http_info(self, request):
-        """绑定弹性公网IP
-
-        绑定弹性公网IP
-
-        :param AssociatePublicipsRequest request
-        :return: AssociatePublicipsResponse
-        """
-
         all_params = ['publicip_id', 'associate_publicips_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -321,26 +302,21 @@ class EipAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def disassociate_publicips_async(self, request):
         """解绑弹性公网IP
 
         解绑弹性公网IP
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DisassociatePublicipsRequest request
-        :return: DisassociatePublicipsResponse
+        :param request: Request instance for DisassociatePublicips
+        :type request: :class:`huaweicloudsdkeip.v3.DisassociatePublicipsRequest`
+        :rtype: :class:`huaweicloudsdkeip.v3.DisassociatePublicipsResponse`
         """
         return self.disassociate_publicips_with_http_info(request)
 
     def disassociate_publicips_with_http_info(self, request):
-        """解绑弹性公网IP
-
-        解绑弹性公网IP
-
-        :param DisassociatePublicipsRequest request
-        :return: DisassociatePublicipsResponse
-        """
-
         all_params = ['publicip_id', 'disassociate_publicips_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -386,26 +362,21 @@ class EipAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_publicip_pool_async(self, request):
         """查询公网IP池列表
 
         全量查询公网IP池列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListPublicipPoolRequest request
-        :return: ListPublicipPoolResponse
+        :param request: Request instance for ListPublicipPool
+        :type request: :class:`huaweicloudsdkeip.v3.ListPublicipPoolRequest`
+        :rtype: :class:`huaweicloudsdkeip.v3.ListPublicipPoolResponse`
         """
         return self.list_publicip_pool_with_http_info(request)
 
     def list_publicip_pool_with_http_info(self, request):
-        """查询公网IP池列表
-
-        全量查询公网IP池列表
-
-        :param ListPublicipPoolRequest request
-        :return: ListPublicipPoolResponse
-        """
-
         all_params = ['marker', 'limit', 'fields', 'sort_key', 'sort_dir', 'id', 'name', 'size', 'status', 'type', 'description', 'public_border_group']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -471,26 +442,21 @@ class EipAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_publicips_async(self, request):
         """全量查询弹性公网IP列表
 
         查询弹性公网IP列表信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListPublicipsRequest request
-        :return: ListPublicipsResponse
+        :param request: Request instance for ListPublicips
+        :type request: :class:`huaweicloudsdkeip.v3.ListPublicipsRequest`
+        :rtype: :class:`huaweicloudsdkeip.v3.ListPublicipsResponse`
         """
         return self.list_publicips_with_http_info(request)
 
     def list_publicips_with_http_info(self, request):
-        """全量查询弹性公网IP列表
-
-        查询弹性公网IP列表信息
-
-        :param ListPublicipsRequest request
-        :return: ListPublicipsResponse
-        """
-
         all_params = ['marker', 'offset', 'limit', 'fields', 'sort_key', 'sort_dir', 'id', 'ip_version', 'public_ip_address', 'public_ip_address_like', 'public_ipv6_address', 'public_ipv6_address_like', 'type', 'network_type', 'publicip_pool_name', 'status', 'alias_like', 'alias', 'description', 'vnic_private_ip_address', 'vnic_private_ip_address_like', 'vnic_device_id', 'vnic_device_owner', 'vnic_vpc_id', 'vnic_port_id', 'vnic_device_owner_prefixlike', 'vnic_instance_type', 'vnic_instance_id', 'bandwidth_id', 'bandwidth_name', 'bandwidth_name_like', 'bandwidth_size', 'bandwidth_share_type', 'bandwidth_charge_mode', 'billing_info', 'billing_mode', 'associate_instance_type', 'associate_instance_id', 'enterprise_project_id', 'public_border_group', 'allow_share_bandwidth_type_any']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -644,26 +610,21 @@ class EipAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_publicip_async(self, request):
         """查询弹性公网IP详情
 
         查询弹性公网IP详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowPublicipRequest request
-        :return: ShowPublicipResponse
+        :param request: Request instance for ShowPublicip
+        :type request: :class:`huaweicloudsdkeip.v3.ShowPublicipRequest`
+        :rtype: :class:`huaweicloudsdkeip.v3.ShowPublicipResponse`
         """
         return self.show_publicip_with_http_info(request)
 
     def show_publicip_with_http_info(self, request):
-        """查询弹性公网IP详情
-
-        查询弹性公网IP详情
-
-        :param ShowPublicipRequest request
-        :return: ShowPublicipResponse
-        """
-
         all_params = ['publicip_id', 'fields']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -710,26 +671,21 @@ class EipAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_publicip_pool_async(self, request):
         """查询公网IP池详情
 
         查询公网IP池详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowPublicipPoolRequest request
-        :return: ShowPublicipPoolResponse
+        :param request: Request instance for ShowPublicipPool
+        :type request: :class:`huaweicloudsdkeip.v3.ShowPublicipPoolRequest`
+        :rtype: :class:`huaweicloudsdkeip.v3.ShowPublicipPoolResponse`
         """
         return self.show_publicip_pool_with_http_info(request)
 
     def show_publicip_pool_with_http_info(self, request):
-        """查询公网IP池详情
-
-        查询公网IP池详情
-
-        :param ShowPublicipPoolRequest request
-        :return: ShowPublicipPoolResponse
-        """
-
         all_params = ['publicip_pool_id', 'fields']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -774,7 +730,6 @@ class EipAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateCustomLineRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateCustomLineRequest:
     }
 
     def __init__(self, body=None):
-        """CreateCustomLineRequest - a model defined in huaweicloud sdk"""
+        """CreateCustomLineRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateCustomLineRequest
+        :type body: :class:`huaweicloudsdkdns.v2.CreateCustomLines`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateCustomLineRequest:
 
 
         :return: The body of this CreateCustomLineRequest.
-        :rtype: CreateCustomLines
+        :rtype: :class:`huaweicloudsdkdns.v2.CreateCustomLines`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateCustomLineRequest:
 
 
         :param body: The body of this CreateCustomLineRequest.
-        :type: CreateCustomLines
+        :type body: :class:`huaweicloudsdkdns.v2.CreateCustomLines`
         """
         self._body = body
 

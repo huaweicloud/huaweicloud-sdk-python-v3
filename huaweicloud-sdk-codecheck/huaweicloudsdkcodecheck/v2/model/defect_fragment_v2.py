@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DefectFragmentV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class DefectFragmentV2:
     }
 
     def __init__(self, line_num=None, line_content=None, start_offset=None, end_offset=None):
-        """DefectFragmentV2 - a model defined in huaweicloud sdk"""
+        """DefectFragmentV2
+
+        The model defined in huaweicloud sdk
+
+        :param line_num: 行号
+        :type line_num: str
+        :param line_content: 该行代码内容
+        :type line_content: str
+        :param start_offset: 缺陷开始列号
+        :type start_offset: int
+        :param end_offset: 缺陷结束列号
+        :type end_offset: int
+        """
         
         
 
@@ -73,7 +84,7 @@ class DefectFragmentV2:
         行号
 
         :param line_num: The line_num of this DefectFragmentV2.
-        :type: str
+        :type line_num: str
         """
         self._line_num = line_num
 
@@ -95,7 +106,7 @@ class DefectFragmentV2:
         该行代码内容
 
         :param line_content: The line_content of this DefectFragmentV2.
-        :type: str
+        :type line_content: str
         """
         self._line_content = line_content
 
@@ -117,7 +128,7 @@ class DefectFragmentV2:
         缺陷开始列号
 
         :param start_offset: The start_offset of this DefectFragmentV2.
-        :type: int
+        :type start_offset: int
         """
         self._start_offset = start_offset
 
@@ -139,7 +150,7 @@ class DefectFragmentV2:
         缺陷结束列号
 
         :param end_offset: The end_offset of this DefectFragmentV2.
-        :type: int
+        :type end_offset: int
         """
         self._end_offset = end_offset
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteHostGroupResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteHostGroupResponse(SdkResponse):
     }
 
     def __init__(self, result=None, total=None):
-        """DeleteHostGroupResponse - a model defined in huaweicloud sdk"""
+        """DeleteHostGroupResponse
+
+        The model defined in huaweicloud sdk
+
+        :param result: 主机组详细信息
+        :type result: list[:class:`huaweicloudsdklts.v2.GetHostGroupInfo`]
+        :param total: 删除主机组数量
+        :type total: int
+        """
         
         super(DeleteHostGroupResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class DeleteHostGroupResponse(SdkResponse):
         主机组详细信息
 
         :return: The result of this DeleteHostGroupResponse.
-        :rtype: list[GetHostGroupInfo]
+        :rtype: list[:class:`huaweicloudsdklts.v2.GetHostGroupInfo`]
         """
         return self._result
 
@@ -63,7 +70,7 @@ class DeleteHostGroupResponse(SdkResponse):
         主机组详细信息
 
         :param result: The result of this DeleteHostGroupResponse.
-        :type: list[GetHostGroupInfo]
+        :type result: list[:class:`huaweicloudsdklts.v2.GetHostGroupInfo`]
         """
         self._result = result
 
@@ -85,7 +92,7 @@ class DeleteHostGroupResponse(SdkResponse):
         删除主机组数量
 
         :param total: The total of this DeleteHostGroupResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 

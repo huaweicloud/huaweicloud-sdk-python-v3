@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Ignore:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Ignore:
     }
 
     def __init__(self, method=None, path=None):
-        """Ignore - a model defined in huaweicloud sdk"""
+        """Ignore
+
+        The model defined in huaweicloud sdk
+
+        :param method: API请求方法
+        :type method: str
+        :param path: API请求路径
+        :type path: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class Ignore:
         API请求方法
 
         :param method: The method of this Ignore.
-        :type: str
+        :type method: str
         """
         self._method = method
 
@@ -85,7 +92,7 @@ class Ignore:
         API请求路径
 
         :param path: The path of this Ignore.
-        :type: str
+        :type path: str
         """
         self._path = path
 

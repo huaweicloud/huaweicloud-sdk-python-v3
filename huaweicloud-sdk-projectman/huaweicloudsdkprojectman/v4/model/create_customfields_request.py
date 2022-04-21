@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateCustomfieldsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateCustomfieldsRequest:
     }
 
     def __init__(self, project_id=None, body=None):
-        """CreateCustomfieldsRequest - a model defined in huaweicloud sdk"""
+        """CreateCustomfieldsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: devcloud的项目ID
+        :type project_id: str
+        :param body: Body of the CreateCustomfieldsRequest
+        :type body: :class:`huaweicloudsdkprojectman.v4.CreateCustomfieldV1Req`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateCustomfieldsRequest:
         devcloud的项目ID
 
         :param project_id: The project_id of this CreateCustomfieldsRequest.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -72,7 +79,7 @@ class CreateCustomfieldsRequest:
 
 
         :return: The body of this CreateCustomfieldsRequest.
-        :rtype: CreateCustomfieldV1Req
+        :rtype: :class:`huaweicloudsdkprojectman.v4.CreateCustomfieldV1Req`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CreateCustomfieldsRequest:
 
 
         :param body: The body of this CreateCustomfieldsRequest.
-        :type: CreateCustomfieldV1Req
+        :type body: :class:`huaweicloudsdkprojectman.v4.CreateCustomfieldV1Req`
         """
         self._body = body
 

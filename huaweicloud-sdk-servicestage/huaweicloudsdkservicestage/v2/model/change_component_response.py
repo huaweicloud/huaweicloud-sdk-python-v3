@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ChangeComponentResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class ChangeComponentResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, status=None, runtime=None, category=None, sub_category=None, description=None, project_id=None, application_id=None, source=None, build=None, pipeline_ids=None, create_time=None, update_time=None):
-        """ChangeComponentResponse - a model defined in huaweicloud sdk"""
+        """ChangeComponentResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 应用组件ID。
+        :type id: str
+        :param name: 应用组件名称
+        :type name: str
+        :param status: 取值0或1。  0：表示正常状态。  1：表示正在删除。 
+        :type status: int
+        :param runtime: 
+        :type runtime: :class:`huaweicloudsdkservicestage.v2.RuntimeType`
+        :param category: 
+        :type category: :class:`huaweicloudsdkservicestage.v2.ComponentCategory`
+        :param sub_category: 
+        :type sub_category: :class:`huaweicloudsdkservicestage.v2.ComponentSubCategory`
+        :param description: 描述。
+        :type description: str
+        :param project_id: 项目ID。
+        :type project_id: str
+        :param application_id: 应用ID。
+        :type application_id: str
+        :param source: 
+        :type source: :class:`huaweicloudsdkservicestage.v2.SourceObject`
+        :param build: 
+        :type build: :class:`huaweicloudsdkservicestage.v2.BuildInfo`
+        :param pipeline_ids: 流水线Id列表，最多10个。
+        :type pipeline_ids: list[str]
+        :param create_time: 创建时间。
+        :type create_time: int
+        :param update_time: 修改时间。
+        :type update_time: int
+        """
         
         super(ChangeComponentResponse, self).__init__()
 
@@ -123,7 +154,7 @@ class ChangeComponentResponse(SdkResponse):
         应用组件ID。
 
         :param id: The id of this ChangeComponentResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -145,7 +176,7 @@ class ChangeComponentResponse(SdkResponse):
         应用组件名称
 
         :param name: The name of this ChangeComponentResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -167,7 +198,7 @@ class ChangeComponentResponse(SdkResponse):
         取值0或1。  0：表示正常状态。  1：表示正在删除。 
 
         :param status: The status of this ChangeComponentResponse.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -177,7 +208,7 @@ class ChangeComponentResponse(SdkResponse):
 
 
         :return: The runtime of this ChangeComponentResponse.
-        :rtype: RuntimeType
+        :rtype: :class:`huaweicloudsdkservicestage.v2.RuntimeType`
         """
         return self._runtime
 
@@ -187,7 +218,7 @@ class ChangeComponentResponse(SdkResponse):
 
 
         :param runtime: The runtime of this ChangeComponentResponse.
-        :type: RuntimeType
+        :type runtime: :class:`huaweicloudsdkservicestage.v2.RuntimeType`
         """
         self._runtime = runtime
 
@@ -197,7 +228,7 @@ class ChangeComponentResponse(SdkResponse):
 
 
         :return: The category of this ChangeComponentResponse.
-        :rtype: ComponentCategory
+        :rtype: :class:`huaweicloudsdkservicestage.v2.ComponentCategory`
         """
         return self._category
 
@@ -207,7 +238,7 @@ class ChangeComponentResponse(SdkResponse):
 
 
         :param category: The category of this ChangeComponentResponse.
-        :type: ComponentCategory
+        :type category: :class:`huaweicloudsdkservicestage.v2.ComponentCategory`
         """
         self._category = category
 
@@ -217,7 +248,7 @@ class ChangeComponentResponse(SdkResponse):
 
 
         :return: The sub_category of this ChangeComponentResponse.
-        :rtype: ComponentSubCategory
+        :rtype: :class:`huaweicloudsdkservicestage.v2.ComponentSubCategory`
         """
         return self._sub_category
 
@@ -227,7 +258,7 @@ class ChangeComponentResponse(SdkResponse):
 
 
         :param sub_category: The sub_category of this ChangeComponentResponse.
-        :type: ComponentSubCategory
+        :type sub_category: :class:`huaweicloudsdkservicestage.v2.ComponentSubCategory`
         """
         self._sub_category = sub_category
 
@@ -249,7 +280,7 @@ class ChangeComponentResponse(SdkResponse):
         描述。
 
         :param description: The description of this ChangeComponentResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -271,7 +302,7 @@ class ChangeComponentResponse(SdkResponse):
         项目ID。
 
         :param project_id: The project_id of this ChangeComponentResponse.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -293,7 +324,7 @@ class ChangeComponentResponse(SdkResponse):
         应用ID。
 
         :param application_id: The application_id of this ChangeComponentResponse.
-        :type: str
+        :type application_id: str
         """
         self._application_id = application_id
 
@@ -303,7 +334,7 @@ class ChangeComponentResponse(SdkResponse):
 
 
         :return: The source of this ChangeComponentResponse.
-        :rtype: SourceObject
+        :rtype: :class:`huaweicloudsdkservicestage.v2.SourceObject`
         """
         return self._source
 
@@ -313,7 +344,7 @@ class ChangeComponentResponse(SdkResponse):
 
 
         :param source: The source of this ChangeComponentResponse.
-        :type: SourceObject
+        :type source: :class:`huaweicloudsdkservicestage.v2.SourceObject`
         """
         self._source = source
 
@@ -323,7 +354,7 @@ class ChangeComponentResponse(SdkResponse):
 
 
         :return: The build of this ChangeComponentResponse.
-        :rtype: BuildInfo
+        :rtype: :class:`huaweicloudsdkservicestage.v2.BuildInfo`
         """
         return self._build
 
@@ -333,7 +364,7 @@ class ChangeComponentResponse(SdkResponse):
 
 
         :param build: The build of this ChangeComponentResponse.
-        :type: BuildInfo
+        :type build: :class:`huaweicloudsdkservicestage.v2.BuildInfo`
         """
         self._build = build
 
@@ -355,7 +386,7 @@ class ChangeComponentResponse(SdkResponse):
         流水线Id列表，最多10个。
 
         :param pipeline_ids: The pipeline_ids of this ChangeComponentResponse.
-        :type: list[str]
+        :type pipeline_ids: list[str]
         """
         self._pipeline_ids = pipeline_ids
 
@@ -377,7 +408,7 @@ class ChangeComponentResponse(SdkResponse):
         创建时间。
 
         :param create_time: The create_time of this ChangeComponentResponse.
-        :type: int
+        :type create_time: int
         """
         self._create_time = create_time
 
@@ -399,7 +430,7 @@ class ChangeComponentResponse(SdkResponse):
         修改时间。
 
         :param update_time: The update_time of this ChangeComponentResponse.
-        :type: int
+        :type update_time: int
         """
         self._update_time = update_time
 

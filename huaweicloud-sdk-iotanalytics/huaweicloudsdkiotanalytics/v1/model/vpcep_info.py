@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VpcepInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class VpcepInfo:
     }
 
     def __init__(self, kafka_broker_ip=None, vpcep_service_id=None, vpcep_service_name=None, vpcep_client_port=None):
-        """VpcepInfo - a model defined in huaweicloud sdk"""
+        """VpcepInfo
+
+        The model defined in huaweicloud sdk
+
+        :param kafka_broker_ip: Kafka的Broker ip
+        :type kafka_broker_ip: str
+        :param vpcep_service_id: Kafka的VPCEP的service id
+        :type vpcep_service_id: str
+        :param vpcep_service_name: Kafka的VPCEP的service name
+        :type vpcep_service_name: str
+        :param vpcep_client_port: Kafka的VPCEP的client port
+        :type vpcep_client_port: int
+        """
         
         
 
@@ -69,7 +80,7 @@ class VpcepInfo:
         Kafka的Broker ip
 
         :param kafka_broker_ip: The kafka_broker_ip of this VpcepInfo.
-        :type: str
+        :type kafka_broker_ip: str
         """
         self._kafka_broker_ip = kafka_broker_ip
 
@@ -91,7 +102,7 @@ class VpcepInfo:
         Kafka的VPCEP的service id
 
         :param vpcep_service_id: The vpcep_service_id of this VpcepInfo.
-        :type: str
+        :type vpcep_service_id: str
         """
         self._vpcep_service_id = vpcep_service_id
 
@@ -113,7 +124,7 @@ class VpcepInfo:
         Kafka的VPCEP的service name
 
         :param vpcep_service_name: The vpcep_service_name of this VpcepInfo.
-        :type: str
+        :type vpcep_service_name: str
         """
         self._vpcep_service_name = vpcep_service_name
 
@@ -135,7 +146,7 @@ class VpcepInfo:
         Kafka的VPCEP的client port
 
         :param vpcep_client_port: The vpcep_client_port of this VpcepInfo.
-        :type: int
+        :type vpcep_client_port: int
         """
         self._vpcep_client_port = vpcep_client_port
 

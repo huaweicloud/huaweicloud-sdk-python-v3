@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowCaseDetailResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowCaseDetailResponse(SdkResponse):
     }
 
     def __init__(self, incident_detail_info=None):
-        """ShowCaseDetailResponse - a model defined in huaweicloud sdk"""
+        """ShowCaseDetailResponse
+
+        The model defined in huaweicloud sdk
+
+        :param incident_detail_info: 
+        :type incident_detail_info: :class:`huaweicloudsdkosm.v2.IncidentDetailInfoV2`
+        """
         
         super(ShowCaseDetailResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class ShowCaseDetailResponse(SdkResponse):
 
 
         :return: The incident_detail_info of this ShowCaseDetailResponse.
-        :rtype: IncidentDetailInfoV2
+        :rtype: :class:`huaweicloudsdkosm.v2.IncidentDetailInfoV2`
         """
         return self._incident_detail_info
 
@@ -56,7 +61,7 @@ class ShowCaseDetailResponse(SdkResponse):
 
 
         :param incident_detail_info: The incident_detail_info of this ShowCaseDetailResponse.
-        :type: IncidentDetailInfoV2
+        :type incident_detail_info: :class:`huaweicloudsdkosm.v2.IncidentDetailInfoV2`
         """
         self._incident_detail_info = incident_detail_info
 

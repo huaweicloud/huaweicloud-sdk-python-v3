@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Content:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -160,7 +159,143 @@ class Content:
     }
 
     def __init__(self, gauss100_version=None, host=None, port=None, database_name=None, redis_database=None, user_name=None, password=None, mode=None, cdc_mode=None, multi_oracle_address=None, oracle_service_name=None, ftp_connect_mode=None, ftp_protocol=None, address=None, ak=None, sk=None, bucket_name=None, https=None, url=None, api_method=None, auth_method=None, api_auth_detail=None, broker=None, ssl_enable=None, ssl_username=None, ssl_password=None, mongodb_auth_source=None, mongodb_cluster_enable=None, mongodb_replica_set=None, encoding=None, mysql_timeout=None, trust_store_password=None, trust_store=None, trust_store_file_type=None, ssl_auth_method=None, key_store=None, key_store_file_type=None, key_store_password=None, key_store_key_password=None, dis_tunnel_name=None, dis_data_type=None, dis_setting_type=None, dis_endpoint=None, dis_region=None, dis_source_project_id=None, hl7_position=None, hl7_whitelist_enable=None, hl7_whitelist=None, ldap_security_auth_type=None, rabbitmq_virtual_host=None, rabbitmq_ssl_protocol=None, sap_client=None, sap_sysnr=None, snmp_network_protocol=None, snmp_version=None, snmp_community=None, ibmmq_ccs_id=None, ibmmq_queue_manager=None, ibmmq_channel=None, ibmmq_cipher_suite=None, hdfs_path=None, principal_name=None, config_file_name=None, config_file_content=None, connection_instance_id=None, connector_params=None):
-        """Content - a model defined in huaweicloud sdk"""
+        """Content
+
+        The model defined in huaweicloud sdk
+
+        :param gauss100_version: gauss100的版本号 - V100R003C20 - V300R001C00
+        :type gauss100_version: str
+        :param host: 主机IP地址 - 数据源为DWS、HANA、RABBITMQ、SAP、SNMP、IBMMQ类型时需要配置。 - 数据源为MYSQL、ORACLE、SQLSERVER、DB2、GAUSS200、GAUSS100、TAURUS、ARTEMISMQ、POSTGRESQL、HIVE类型且mode为default时需要配置。 - 数据源为HL7类型且作为目标端（position为target）时需要配置。 - 初始值为空，配置任务启动后生成host
+        :type host: str
+        :param port: 端口，端口号为0到65535 - 数据源为DWS、HANA、RABBITMQ、SAP、SNMP、IBMMQ，obs类型时需要配置， - 数据源为MYSQL、ORACLE、SQLSERVER、DB2、GAUSS200、GAUSS100、TAURUS、ARTEMISMQ、POSTGRESQL、HIVE类型且mode为default时需要配置， - 数据源为HL7类型且作为目标端（position为target）时需要配置
+        :type port: str
+        :param database_name: 数据库名称 - 数据源为DWS、HANA、RABBITMQ、SAP、SNMP、IBMMQ，obs类型时需要配置， - 数据源为MYSQL、SQLSERVER、DB2、GAUSS200、GAUSS100、TAURUS、ARTEMISMQ、POSTGRESQL、HIVE类型且mode为default时需要配置， - 数据源为ORACLE类型且mode为（default、multiAddress）时需要配置
+        :type database_name: str
+        :param redis_database: REDIS数据源类型配置，数据库编号, 纯数字编码
+        :type redis_database: str
+        :param user_name: 访问服务的用户名 - 数据源为MYSQL、DWS、FTP、ORACLE、MONGODB、HANA、SQLSERVER、DB2、GAUSS200、GAUSS100、TAURUS、ACTIVEMQ、ARTEMISMQ、POSTGRESQL、RABBITMQ、SAP、IBMMQ、HIVE类型时需要配置 - 数据源为WEBSOCKET类型，认证方式（basicauth）时需要配置 - 数据源为LDAP，安全认证类型（security_auth_type）为simple时需要配置
+        :type user_name: str
+        :param password: 访问服务的密码 - 数据源为MYSQL、DWS、FTP、ORACLE、MONGODB、HANA、SQLSERVER、DB2、GAUSS200、GAUSS100、TAURUS、ACTIVEMQ、ARTEMISMQ、POSTGRESQL、RABBITMQ、SAP、IBMMQ、HIVE类型时需要配置 - 数据源为WEBSOCKET，且认证方式（basicauth）时需要配置 - 数据源为LDAP，且安全认证类型（security_auth_type）为simple时需要配置
+        :type password: str
+        :param mode: 数据源连接模式 - 数据源为DWS、MONGODB、REDIS、HANA时配置默认， - 数据源为MYSQL、SQLSERVER、DB2、GAUSS200、GAUSS100、TAURUS、POSTGRESQL、HIVE时配置（default,professional）， - 数据源为ORACLE时配置专有的模式multiAddress - default (默认模式) - professional (专业模式) - multiAddress (多地址)
+        :type mode: str
+        :param cdc_mode: cdc模式，只有组合任务使用
+        :type cdc_mode: str
+        :param multi_oracle_address: ORACLE集群地址，当mode为multiAddress时需要配置
+        :type multi_oracle_address: list[:class:`huaweicloudsdkroma.v2.MultiOracleAddress`]
+        :param oracle_service_name: ORACLE集群服务名
+        :type oracle_service_name: str
+        :param ftp_connect_mode: 访问FTP服务的连接模式 - active (主动模式) - passive (被动模式)
+        :type ftp_connect_mode: str
+        :param ftp_protocol: 访问FTP服务协议类型 - sftp - ftp
+        :type ftp_protocol: str
+        :param address: 地址 - OBS (obs远端地址，obs数据源使用) - MONGODB (MONGODB数据源类型主机IP地址，多个IP:PORT, 使用\&quot;,\&quot;隔开) - REDIS (redis服务地址，多个IP:PORT, 使用\&quot;,\&quot;隔开)
+        :type address: str
+        :param ak: Access Key ID - 数据源为OBS，DIS类型时需要配置
+        :type ak: str
+        :param sk: Secret Access Key - 数据源为OBS，DIS类型时需要配置
+        :type sk: str
+        :param bucket_name: 桶名称，数据源为OBS时需要配置
+        :type bucket_name: str
+        :param https: 是否使用https, 数据源为OBS时需要配置，一般默认使用
+        :type https: bool
+        :param url: 连接字符串，访问url - 数据源为API、LDAP、WEBSOCKE类型时需要配置， - 数据源为MYSQL、ORACLE、DB2、GAUSS200、GAUSS100、TAURUS、POSTGRESQL，且mode配置为professional专业时需要配置
+        :type url: str
+        :param api_method: 访问API请求方式 - POST - PUT - DELETE - PATCH - GET
+        :type api_method: str
+        :param auth_method: 访问WEBSOCKET服务的认证方式 - none - basicauth
+        :type auth_method: str
+        :param api_auth_detail: 
+        :type api_auth_detail: :class:`huaweicloudsdkroma.v2.ApiAuthDetail`
+        :param broker: KAFKA、ACTIVEMQ的服务器地址，多个IP:PORT, 使用\&quot;,\&quot;分隔
+        :type broker: str
+        :param ssl_enable: 是否开启SSL认证 - 数据源为KAFKA时需要配置，连接MQS内网地址时，若MQS同时开启了SSL与VPC内网明文访问，请选择“否” - 数据源为ARTEMISMQ、ACTIVEMQ、RABBITMQ、IBMMQ时需要配置， - 数据源为HL7时且作为源端时需要配置
+        :type ssl_enable: bool
+        :param ssl_username: SSL用户名/应用Key - 数据源为KAFKA且开启SSL认证时需要配置
+        :type ssl_username: str
+        :param ssl_password: SSL密码/应用Secret - 数据源为KAFKA且开启SSL认证时需要配置
+        :type ssl_password: str
+        :param mongodb_auth_source: MONGODB认证源
+        :type mongodb_auth_source: str
+        :param mongodb_cluster_enable: MONGODB集群模式 - true (集群模式) - false （非集群模式）
+        :type mongodb_cluster_enable: bool
+        :param mongodb_replica_set: MONGODB副本集 当MONGODB为非集群模式时配置
+        :type mongodb_replica_set: str
+        :param encoding: 编码格式 - 数据源为GAUSS200、GAUSS100、POSTGRESQL类型时配置\&quot;big5\&quot;， - 数据源为MYSQL、TAURUS类型且mode为default时配置
+        :type encoding: str
+        :param mysql_timeout: MYSQL连接超时时间（秒）
+        :type mysql_timeout: int
+        :param trust_store_password: 公钥库密码 - 数据源类型为ACTIVEMQ、ARTEMISMQ、RABBITMQ、IBMMQ且开启SSL认证时需要配置 - 数据源类为HL7且HL7为目标端（position为target）时，并且开启SSL认证时需要配置
+        :type trust_store_password: str
+        :param trust_store: - 数据源类型为ACTIVEMQ、ARTEMISMQ、RABBITMQ、IBMMQ且开启SSL认证时需要配置，公钥库密码 - 数据源类型为HL7且为目标端（position为target），并且开启SSL认证时需要配置，公钥库密码
+        :type trust_store: str
+        :param trust_store_file_type: - 数据源类型为ACTIVEMQ、ARTEMISMQ、RABBITMQ、IBMMQ且开启SSL认证时需要配置，公钥库密码 - 数据源类型为HL7且为目标端（position为target），并且开启SSL认证时需要配置，公钥库密码
+        :type trust_store_file_type: str
+        :param ssl_auth_method: 数据源类型为ACTIVEMQ、ARTEMISMQ且开启SSL认证时需要配置 - one-way (单向认证) - two-way (双向认证)
+        :type ssl_auth_method: str
+        :param key_store: 私钥库文件内容， - 数据源类型为ACTIVEMQ、ARTEMISMQ，开启SSL认证并且认证方式是two-way时需要配置 - 数据源类型HL7且为源端（position为source），并且开启SSL认证时需要配置
+        :type key_store: str
+        :param key_store_file_type: 私钥库文件类型 - 数据源类型为ACTIVEMQ、ARTEMISMQ，开启SSL认证并且认证方式是two-way时需要配置
+        :type key_store_file_type: str
+        :param key_store_password: 私钥库密码 - 数据源类型为ACTIVEMQ、ARTEMISMQ，开启SSL认证并且认证方式是two-way时需要配置 - 数据源为HL7类型，为源端（position为source）并且开启SSL认证时需要配置
+        :type key_store_password: str
+        :param key_store_key_password: 私钥库私钥密码 - 数据源类型为ACTIVEMQ、ARTEMISMQ，开启SSL认证并且认证方式是two-way时需要配置 - 数据源为HL7类型，为源端（position为source）并且开启SSL认证时需要配置
+        :type key_store_key_password: str
+        :param dis_tunnel_name: DIS通道名称
+        :type dis_tunnel_name: str
+        :param dis_data_type: DIS数据类别 - JSON
+        :type dis_data_type: str
+        :param dis_setting_type: DIS配置类别 - senior (高级) - basic (基础)
+        :type dis_setting_type: str
+        :param dis_endpoint: DIS Endpoint，当setting_type为senior时填写
+        :type dis_endpoint: str
+        :param dis_region: DIS Region，当setting_type为senior时填写
+        :type dis_region: str
+        :param dis_source_project_id: DIS源端项目id，当setting_type为senior时填写
+        :type dis_source_project_id: str
+        :param hl7_position: HL7数据源方向 - source (源端) - target (目标端)
+        :type hl7_position: str
+        :param hl7_whitelist_enable: HL7是否开启白名单设置
+        :type hl7_whitelist_enable: bool
+        :param hl7_whitelist: HL7白名单 - 允许同步数据到源端HL7的服务器地址，当HL7为源端（position为source）并且开启白名单设置(open_whitelist为true)时填写
+        :type hl7_whitelist: str
+        :param ldap_security_auth_type: LDAP安全认证类型
+        :type ldap_security_auth_type: str
+        :param rabbitmq_virtual_host: RABBITMQ虚拟主机
+        :type rabbitmq_virtual_host: str
+        :param rabbitmq_ssl_protocol: RABBITMQ SSL认证协议 - TLS
+        :type rabbitmq_ssl_protocol: str
+        :param sap_client: SAP客户端号
+        :type sap_client: str
+        :param sap_sysnr: SAP实例编号
+        :type sap_sysnr: str
+        :param snmp_network_protocol: SNMP网络协议 - udp - tcp
+        :type snmp_network_protocol: str
+        :param snmp_version: SNMP版本号
+        :type snmp_version: int
+        :param snmp_community: SNMP团体名，用于访问SNMP管理代理的身份认证，相当于访问密码
+        :type snmp_community: str
+        :param ibmmq_ccs_id: IBMMQ字符集标识
+        :type ibmmq_ccs_id: str
+        :param ibmmq_queue_manager: IBMMQ队列管理器
+        :type ibmmq_queue_manager: str
+        :param ibmmq_channel: IBMMQ通道名称
+        :type ibmmq_channel: str
+        :param ibmmq_cipher_suite: IBMMQ密钥算法套件
+        :type ibmmq_cipher_suite: str
+        :param hdfs_path: HDFS URL - 数据源为MRSHIVE、MRSHDFS、FIHDFS、FIHIVE类型时配置 - fihadfs (/fdi/autotest)
+        :type hdfs_path: str
+        :param principal_name: 机机交互用户名 - 数据源为MRSHIVE、MRSHDFS、MRSHBASE、MRSKAFKA、FIHDFS、FIHIVE、FIKAFKA类型时配置
+        :type principal_name: str
+        :param config_file_name: - 用户认证文件，文件获取方式参考《ROMA Connect API参考》的“附录&gt;获取数据源配置文件”章节 - 将获取到的文件打包成zip文件，文件名配置在config_file_name中，内容以BASE64编码形式放到config_file_content。 - 数据源为MRSHIVE、MRSHDFS、MRSHBASE、MRSKAFKA、FIHDFS、FIHIVE、FIKAFKA类型时配置
+        :type config_file_name: str
+        :param config_file_content: - 用户认证文件内容，config_file_name对应的文件内容BASE64编码 - 数据源为MRSHIVE、MRSHDFS、MRSHBASE、MRSKAFKA、FIHDFS、FIHIVE、FIKAFKA类型时配置
+        :type config_file_content: str
+        :param connection_instance_id: 连接器实例ID，连接器发布后对应的实例ID
+        :type connection_instance_id: str
+        :param connector_params: 连接器对应的数据源参数，值按实际填写
+        :type connector_params: object
+        """
         
         
 
@@ -383,7 +518,7 @@ class Content:
         gauss100的版本号 - V100R003C20 - V300R001C00
 
         :param gauss100_version: The gauss100_version of this Content.
-        :type: str
+        :type gauss100_version: str
         """
         self._gauss100_version = gauss100_version
 
@@ -405,7 +540,7 @@ class Content:
         主机IP地址 - 数据源为DWS、HANA、RABBITMQ、SAP、SNMP、IBMMQ类型时需要配置。 - 数据源为MYSQL、ORACLE、SQLSERVER、DB2、GAUSS200、GAUSS100、TAURUS、ARTEMISMQ、POSTGRESQL、HIVE类型且mode为default时需要配置。 - 数据源为HL7类型且作为目标端（position为target）时需要配置。 - 初始值为空，配置任务启动后生成host
 
         :param host: The host of this Content.
-        :type: str
+        :type host: str
         """
         self._host = host
 
@@ -427,7 +562,7 @@ class Content:
         端口，端口号为0到65535 - 数据源为DWS、HANA、RABBITMQ、SAP、SNMP、IBMMQ，obs类型时需要配置， - 数据源为MYSQL、ORACLE、SQLSERVER、DB2、GAUSS200、GAUSS100、TAURUS、ARTEMISMQ、POSTGRESQL、HIVE类型且mode为default时需要配置， - 数据源为HL7类型且作为目标端（position为target）时需要配置
 
         :param port: The port of this Content.
-        :type: str
+        :type port: str
         """
         self._port = port
 
@@ -449,7 +584,7 @@ class Content:
         数据库名称 - 数据源为DWS、HANA、RABBITMQ、SAP、SNMP、IBMMQ，obs类型时需要配置， - 数据源为MYSQL、SQLSERVER、DB2、GAUSS200、GAUSS100、TAURUS、ARTEMISMQ、POSTGRESQL、HIVE类型且mode为default时需要配置， - 数据源为ORACLE类型且mode为（default、multiAddress）时需要配置
 
         :param database_name: The database_name of this Content.
-        :type: str
+        :type database_name: str
         """
         self._database_name = database_name
 
@@ -471,7 +606,7 @@ class Content:
         REDIS数据源类型配置，数据库编号, 纯数字编码
 
         :param redis_database: The redis_database of this Content.
-        :type: str
+        :type redis_database: str
         """
         self._redis_database = redis_database
 
@@ -493,7 +628,7 @@ class Content:
         访问服务的用户名 - 数据源为MYSQL、DWS、FTP、ORACLE、MONGODB、HANA、SQLSERVER、DB2、GAUSS200、GAUSS100、TAURUS、ACTIVEMQ、ARTEMISMQ、POSTGRESQL、RABBITMQ、SAP、IBMMQ、HIVE类型时需要配置 - 数据源为WEBSOCKET类型，认证方式（basicauth）时需要配置 - 数据源为LDAP，安全认证类型（security_auth_type）为simple时需要配置
 
         :param user_name: The user_name of this Content.
-        :type: str
+        :type user_name: str
         """
         self._user_name = user_name
 
@@ -515,7 +650,7 @@ class Content:
         访问服务的密码 - 数据源为MYSQL、DWS、FTP、ORACLE、MONGODB、HANA、SQLSERVER、DB2、GAUSS200、GAUSS100、TAURUS、ACTIVEMQ、ARTEMISMQ、POSTGRESQL、RABBITMQ、SAP、IBMMQ、HIVE类型时需要配置 - 数据源为WEBSOCKET，且认证方式（basicauth）时需要配置 - 数据源为LDAP，且安全认证类型（security_auth_type）为simple时需要配置
 
         :param password: The password of this Content.
-        :type: str
+        :type password: str
         """
         self._password = password
 
@@ -537,7 +672,7 @@ class Content:
         数据源连接模式 - 数据源为DWS、MONGODB、REDIS、HANA时配置默认， - 数据源为MYSQL、SQLSERVER、DB2、GAUSS200、GAUSS100、TAURUS、POSTGRESQL、HIVE时配置（default,professional）， - 数据源为ORACLE时配置专有的模式multiAddress - default (默认模式) - professional (专业模式) - multiAddress (多地址)
 
         :param mode: The mode of this Content.
-        :type: str
+        :type mode: str
         """
         self._mode = mode
 
@@ -559,7 +694,7 @@ class Content:
         cdc模式，只有组合任务使用
 
         :param cdc_mode: The cdc_mode of this Content.
-        :type: str
+        :type cdc_mode: str
         """
         self._cdc_mode = cdc_mode
 
@@ -570,7 +705,7 @@ class Content:
         ORACLE集群地址，当mode为multiAddress时需要配置
 
         :return: The multi_oracle_address of this Content.
-        :rtype: list[MultiOracleAddress]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.MultiOracleAddress`]
         """
         return self._multi_oracle_address
 
@@ -581,7 +716,7 @@ class Content:
         ORACLE集群地址，当mode为multiAddress时需要配置
 
         :param multi_oracle_address: The multi_oracle_address of this Content.
-        :type: list[MultiOracleAddress]
+        :type multi_oracle_address: list[:class:`huaweicloudsdkroma.v2.MultiOracleAddress`]
         """
         self._multi_oracle_address = multi_oracle_address
 
@@ -603,7 +738,7 @@ class Content:
         ORACLE集群服务名
 
         :param oracle_service_name: The oracle_service_name of this Content.
-        :type: str
+        :type oracle_service_name: str
         """
         self._oracle_service_name = oracle_service_name
 
@@ -625,7 +760,7 @@ class Content:
         访问FTP服务的连接模式 - active (主动模式) - passive (被动模式)
 
         :param ftp_connect_mode: The ftp_connect_mode of this Content.
-        :type: str
+        :type ftp_connect_mode: str
         """
         self._ftp_connect_mode = ftp_connect_mode
 
@@ -647,7 +782,7 @@ class Content:
         访问FTP服务协议类型 - sftp - ftp
 
         :param ftp_protocol: The ftp_protocol of this Content.
-        :type: str
+        :type ftp_protocol: str
         """
         self._ftp_protocol = ftp_protocol
 
@@ -669,7 +804,7 @@ class Content:
         地址 - OBS (obs远端地址，obs数据源使用) - MONGODB (MONGODB数据源类型主机IP地址，多个IP:PORT, 使用\",\"隔开) - REDIS (redis服务地址，多个IP:PORT, 使用\",\"隔开)
 
         :param address: The address of this Content.
-        :type: str
+        :type address: str
         """
         self._address = address
 
@@ -691,7 +826,7 @@ class Content:
         Access Key ID - 数据源为OBS，DIS类型时需要配置
 
         :param ak: The ak of this Content.
-        :type: str
+        :type ak: str
         """
         self._ak = ak
 
@@ -713,7 +848,7 @@ class Content:
         Secret Access Key - 数据源为OBS，DIS类型时需要配置
 
         :param sk: The sk of this Content.
-        :type: str
+        :type sk: str
         """
         self._sk = sk
 
@@ -735,7 +870,7 @@ class Content:
         桶名称，数据源为OBS时需要配置
 
         :param bucket_name: The bucket_name of this Content.
-        :type: str
+        :type bucket_name: str
         """
         self._bucket_name = bucket_name
 
@@ -757,7 +892,7 @@ class Content:
         是否使用https, 数据源为OBS时需要配置，一般默认使用
 
         :param https: The https of this Content.
-        :type: bool
+        :type https: bool
         """
         self._https = https
 
@@ -779,7 +914,7 @@ class Content:
         连接字符串，访问url - 数据源为API、LDAP、WEBSOCKE类型时需要配置， - 数据源为MYSQL、ORACLE、DB2、GAUSS200、GAUSS100、TAURUS、POSTGRESQL，且mode配置为professional专业时需要配置
 
         :param url: The url of this Content.
-        :type: str
+        :type url: str
         """
         self._url = url
 
@@ -801,7 +936,7 @@ class Content:
         访问API请求方式 - POST - PUT - DELETE - PATCH - GET
 
         :param api_method: The api_method of this Content.
-        :type: str
+        :type api_method: str
         """
         self._api_method = api_method
 
@@ -823,7 +958,7 @@ class Content:
         访问WEBSOCKET服务的认证方式 - none - basicauth
 
         :param auth_method: The auth_method of this Content.
-        :type: str
+        :type auth_method: str
         """
         self._auth_method = auth_method
 
@@ -833,7 +968,7 @@ class Content:
 
 
         :return: The api_auth_detail of this Content.
-        :rtype: ApiAuthDetail
+        :rtype: :class:`huaweicloudsdkroma.v2.ApiAuthDetail`
         """
         return self._api_auth_detail
 
@@ -843,7 +978,7 @@ class Content:
 
 
         :param api_auth_detail: The api_auth_detail of this Content.
-        :type: ApiAuthDetail
+        :type api_auth_detail: :class:`huaweicloudsdkroma.v2.ApiAuthDetail`
         """
         self._api_auth_detail = api_auth_detail
 
@@ -865,7 +1000,7 @@ class Content:
         KAFKA、ACTIVEMQ的服务器地址，多个IP:PORT, 使用\",\"分隔
 
         :param broker: The broker of this Content.
-        :type: str
+        :type broker: str
         """
         self._broker = broker
 
@@ -887,7 +1022,7 @@ class Content:
         是否开启SSL认证 - 数据源为KAFKA时需要配置，连接MQS内网地址时，若MQS同时开启了SSL与VPC内网明文访问，请选择“否” - 数据源为ARTEMISMQ、ACTIVEMQ、RABBITMQ、IBMMQ时需要配置， - 数据源为HL7时且作为源端时需要配置
 
         :param ssl_enable: The ssl_enable of this Content.
-        :type: bool
+        :type ssl_enable: bool
         """
         self._ssl_enable = ssl_enable
 
@@ -909,7 +1044,7 @@ class Content:
         SSL用户名/应用Key - 数据源为KAFKA且开启SSL认证时需要配置
 
         :param ssl_username: The ssl_username of this Content.
-        :type: str
+        :type ssl_username: str
         """
         self._ssl_username = ssl_username
 
@@ -931,7 +1066,7 @@ class Content:
         SSL密码/应用Secret - 数据源为KAFKA且开启SSL认证时需要配置
 
         :param ssl_password: The ssl_password of this Content.
-        :type: str
+        :type ssl_password: str
         """
         self._ssl_password = ssl_password
 
@@ -953,7 +1088,7 @@ class Content:
         MONGODB认证源
 
         :param mongodb_auth_source: The mongodb_auth_source of this Content.
-        :type: str
+        :type mongodb_auth_source: str
         """
         self._mongodb_auth_source = mongodb_auth_source
 
@@ -975,7 +1110,7 @@ class Content:
         MONGODB集群模式 - true (集群模式) - false （非集群模式）
 
         :param mongodb_cluster_enable: The mongodb_cluster_enable of this Content.
-        :type: bool
+        :type mongodb_cluster_enable: bool
         """
         self._mongodb_cluster_enable = mongodb_cluster_enable
 
@@ -997,7 +1132,7 @@ class Content:
         MONGODB副本集 当MONGODB为非集群模式时配置
 
         :param mongodb_replica_set: The mongodb_replica_set of this Content.
-        :type: str
+        :type mongodb_replica_set: str
         """
         self._mongodb_replica_set = mongodb_replica_set
 
@@ -1019,7 +1154,7 @@ class Content:
         编码格式 - 数据源为GAUSS200、GAUSS100、POSTGRESQL类型时配置\"big5\"， - 数据源为MYSQL、TAURUS类型且mode为default时配置
 
         :param encoding: The encoding of this Content.
-        :type: str
+        :type encoding: str
         """
         self._encoding = encoding
 
@@ -1041,7 +1176,7 @@ class Content:
         MYSQL连接超时时间（秒）
 
         :param mysql_timeout: The mysql_timeout of this Content.
-        :type: int
+        :type mysql_timeout: int
         """
         self._mysql_timeout = mysql_timeout
 
@@ -1063,7 +1198,7 @@ class Content:
         公钥库密码 - 数据源类型为ACTIVEMQ、ARTEMISMQ、RABBITMQ、IBMMQ且开启SSL认证时需要配置 - 数据源类为HL7且HL7为目标端（position为target）时，并且开启SSL认证时需要配置
 
         :param trust_store_password: The trust_store_password of this Content.
-        :type: str
+        :type trust_store_password: str
         """
         self._trust_store_password = trust_store_password
 
@@ -1085,7 +1220,7 @@ class Content:
         - 数据源类型为ACTIVEMQ、ARTEMISMQ、RABBITMQ、IBMMQ且开启SSL认证时需要配置，公钥库密码 - 数据源类型为HL7且为目标端（position为target），并且开启SSL认证时需要配置，公钥库密码
 
         :param trust_store: The trust_store of this Content.
-        :type: str
+        :type trust_store: str
         """
         self._trust_store = trust_store
 
@@ -1107,7 +1242,7 @@ class Content:
         - 数据源类型为ACTIVEMQ、ARTEMISMQ、RABBITMQ、IBMMQ且开启SSL认证时需要配置，公钥库密码 - 数据源类型为HL7且为目标端（position为target），并且开启SSL认证时需要配置，公钥库密码
 
         :param trust_store_file_type: The trust_store_file_type of this Content.
-        :type: str
+        :type trust_store_file_type: str
         """
         self._trust_store_file_type = trust_store_file_type
 
@@ -1129,7 +1264,7 @@ class Content:
         数据源类型为ACTIVEMQ、ARTEMISMQ且开启SSL认证时需要配置 - one-way (单向认证) - two-way (双向认证)
 
         :param ssl_auth_method: The ssl_auth_method of this Content.
-        :type: str
+        :type ssl_auth_method: str
         """
         self._ssl_auth_method = ssl_auth_method
 
@@ -1151,7 +1286,7 @@ class Content:
         私钥库文件内容， - 数据源类型为ACTIVEMQ、ARTEMISMQ，开启SSL认证并且认证方式是two-way时需要配置 - 数据源类型HL7且为源端（position为source），并且开启SSL认证时需要配置
 
         :param key_store: The key_store of this Content.
-        :type: str
+        :type key_store: str
         """
         self._key_store = key_store
 
@@ -1173,7 +1308,7 @@ class Content:
         私钥库文件类型 - 数据源类型为ACTIVEMQ、ARTEMISMQ，开启SSL认证并且认证方式是two-way时需要配置
 
         :param key_store_file_type: The key_store_file_type of this Content.
-        :type: str
+        :type key_store_file_type: str
         """
         self._key_store_file_type = key_store_file_type
 
@@ -1195,7 +1330,7 @@ class Content:
         私钥库密码 - 数据源类型为ACTIVEMQ、ARTEMISMQ，开启SSL认证并且认证方式是two-way时需要配置 - 数据源为HL7类型，为源端（position为source）并且开启SSL认证时需要配置
 
         :param key_store_password: The key_store_password of this Content.
-        :type: str
+        :type key_store_password: str
         """
         self._key_store_password = key_store_password
 
@@ -1217,7 +1352,7 @@ class Content:
         私钥库私钥密码 - 数据源类型为ACTIVEMQ、ARTEMISMQ，开启SSL认证并且认证方式是two-way时需要配置 - 数据源为HL7类型，为源端（position为source）并且开启SSL认证时需要配置
 
         :param key_store_key_password: The key_store_key_password of this Content.
-        :type: str
+        :type key_store_key_password: str
         """
         self._key_store_key_password = key_store_key_password
 
@@ -1239,7 +1374,7 @@ class Content:
         DIS通道名称
 
         :param dis_tunnel_name: The dis_tunnel_name of this Content.
-        :type: str
+        :type dis_tunnel_name: str
         """
         self._dis_tunnel_name = dis_tunnel_name
 
@@ -1261,7 +1396,7 @@ class Content:
         DIS数据类别 - JSON
 
         :param dis_data_type: The dis_data_type of this Content.
-        :type: str
+        :type dis_data_type: str
         """
         self._dis_data_type = dis_data_type
 
@@ -1283,7 +1418,7 @@ class Content:
         DIS配置类别 - senior (高级) - basic (基础)
 
         :param dis_setting_type: The dis_setting_type of this Content.
-        :type: str
+        :type dis_setting_type: str
         """
         self._dis_setting_type = dis_setting_type
 
@@ -1305,7 +1440,7 @@ class Content:
         DIS Endpoint，当setting_type为senior时填写
 
         :param dis_endpoint: The dis_endpoint of this Content.
-        :type: str
+        :type dis_endpoint: str
         """
         self._dis_endpoint = dis_endpoint
 
@@ -1327,7 +1462,7 @@ class Content:
         DIS Region，当setting_type为senior时填写
 
         :param dis_region: The dis_region of this Content.
-        :type: str
+        :type dis_region: str
         """
         self._dis_region = dis_region
 
@@ -1349,7 +1484,7 @@ class Content:
         DIS源端项目id，当setting_type为senior时填写
 
         :param dis_source_project_id: The dis_source_project_id of this Content.
-        :type: str
+        :type dis_source_project_id: str
         """
         self._dis_source_project_id = dis_source_project_id
 
@@ -1371,7 +1506,7 @@ class Content:
         HL7数据源方向 - source (源端) - target (目标端)
 
         :param hl7_position: The hl7_position of this Content.
-        :type: str
+        :type hl7_position: str
         """
         self._hl7_position = hl7_position
 
@@ -1393,7 +1528,7 @@ class Content:
         HL7是否开启白名单设置
 
         :param hl7_whitelist_enable: The hl7_whitelist_enable of this Content.
-        :type: bool
+        :type hl7_whitelist_enable: bool
         """
         self._hl7_whitelist_enable = hl7_whitelist_enable
 
@@ -1415,7 +1550,7 @@ class Content:
         HL7白名单 - 允许同步数据到源端HL7的服务器地址，当HL7为源端（position为source）并且开启白名单设置(open_whitelist为true)时填写
 
         :param hl7_whitelist: The hl7_whitelist of this Content.
-        :type: str
+        :type hl7_whitelist: str
         """
         self._hl7_whitelist = hl7_whitelist
 
@@ -1437,7 +1572,7 @@ class Content:
         LDAP安全认证类型
 
         :param ldap_security_auth_type: The ldap_security_auth_type of this Content.
-        :type: str
+        :type ldap_security_auth_type: str
         """
         self._ldap_security_auth_type = ldap_security_auth_type
 
@@ -1459,7 +1594,7 @@ class Content:
         RABBITMQ虚拟主机
 
         :param rabbitmq_virtual_host: The rabbitmq_virtual_host of this Content.
-        :type: str
+        :type rabbitmq_virtual_host: str
         """
         self._rabbitmq_virtual_host = rabbitmq_virtual_host
 
@@ -1481,7 +1616,7 @@ class Content:
         RABBITMQ SSL认证协议 - TLS
 
         :param rabbitmq_ssl_protocol: The rabbitmq_ssl_protocol of this Content.
-        :type: str
+        :type rabbitmq_ssl_protocol: str
         """
         self._rabbitmq_ssl_protocol = rabbitmq_ssl_protocol
 
@@ -1503,7 +1638,7 @@ class Content:
         SAP客户端号
 
         :param sap_client: The sap_client of this Content.
-        :type: str
+        :type sap_client: str
         """
         self._sap_client = sap_client
 
@@ -1525,7 +1660,7 @@ class Content:
         SAP实例编号
 
         :param sap_sysnr: The sap_sysnr of this Content.
-        :type: str
+        :type sap_sysnr: str
         """
         self._sap_sysnr = sap_sysnr
 
@@ -1547,7 +1682,7 @@ class Content:
         SNMP网络协议 - udp - tcp
 
         :param snmp_network_protocol: The snmp_network_protocol of this Content.
-        :type: str
+        :type snmp_network_protocol: str
         """
         self._snmp_network_protocol = snmp_network_protocol
 
@@ -1569,7 +1704,7 @@ class Content:
         SNMP版本号
 
         :param snmp_version: The snmp_version of this Content.
-        :type: int
+        :type snmp_version: int
         """
         self._snmp_version = snmp_version
 
@@ -1591,7 +1726,7 @@ class Content:
         SNMP团体名，用于访问SNMP管理代理的身份认证，相当于访问密码
 
         :param snmp_community: The snmp_community of this Content.
-        :type: str
+        :type snmp_community: str
         """
         self._snmp_community = snmp_community
 
@@ -1613,7 +1748,7 @@ class Content:
         IBMMQ字符集标识
 
         :param ibmmq_ccs_id: The ibmmq_ccs_id of this Content.
-        :type: str
+        :type ibmmq_ccs_id: str
         """
         self._ibmmq_ccs_id = ibmmq_ccs_id
 
@@ -1635,7 +1770,7 @@ class Content:
         IBMMQ队列管理器
 
         :param ibmmq_queue_manager: The ibmmq_queue_manager of this Content.
-        :type: str
+        :type ibmmq_queue_manager: str
         """
         self._ibmmq_queue_manager = ibmmq_queue_manager
 
@@ -1657,7 +1792,7 @@ class Content:
         IBMMQ通道名称
 
         :param ibmmq_channel: The ibmmq_channel of this Content.
-        :type: str
+        :type ibmmq_channel: str
         """
         self._ibmmq_channel = ibmmq_channel
 
@@ -1679,7 +1814,7 @@ class Content:
         IBMMQ密钥算法套件
 
         :param ibmmq_cipher_suite: The ibmmq_cipher_suite of this Content.
-        :type: str
+        :type ibmmq_cipher_suite: str
         """
         self._ibmmq_cipher_suite = ibmmq_cipher_suite
 
@@ -1701,7 +1836,7 @@ class Content:
         HDFS URL - 数据源为MRSHIVE、MRSHDFS、FIHDFS、FIHIVE类型时配置 - fihadfs (/fdi/autotest)
 
         :param hdfs_path: The hdfs_path of this Content.
-        :type: str
+        :type hdfs_path: str
         """
         self._hdfs_path = hdfs_path
 
@@ -1723,7 +1858,7 @@ class Content:
         机机交互用户名 - 数据源为MRSHIVE、MRSHDFS、MRSHBASE、MRSKAFKA、FIHDFS、FIHIVE、FIKAFKA类型时配置
 
         :param principal_name: The principal_name of this Content.
-        :type: str
+        :type principal_name: str
         """
         self._principal_name = principal_name
 
@@ -1745,7 +1880,7 @@ class Content:
         - 用户认证文件，文件获取方式参考《ROMA Connect API参考》的“附录>获取数据源配置文件”章节 - 将获取到的文件打包成zip文件，文件名配置在config_file_name中，内容以BASE64编码形式放到config_file_content。 - 数据源为MRSHIVE、MRSHDFS、MRSHBASE、MRSKAFKA、FIHDFS、FIHIVE、FIKAFKA类型时配置
 
         :param config_file_name: The config_file_name of this Content.
-        :type: str
+        :type config_file_name: str
         """
         self._config_file_name = config_file_name
 
@@ -1767,7 +1902,7 @@ class Content:
         - 用户认证文件内容，config_file_name对应的文件内容BASE64编码 - 数据源为MRSHIVE、MRSHDFS、MRSHBASE、MRSKAFKA、FIHDFS、FIHIVE、FIKAFKA类型时配置
 
         :param config_file_content: The config_file_content of this Content.
-        :type: str
+        :type config_file_content: str
         """
         self._config_file_content = config_file_content
 
@@ -1789,7 +1924,7 @@ class Content:
         连接器实例ID，连接器发布后对应的实例ID
 
         :param connection_instance_id: The connection_instance_id of this Content.
-        :type: str
+        :type connection_instance_id: str
         """
         self._connection_instance_id = connection_instance_id
 
@@ -1811,7 +1946,7 @@ class Content:
         连接器对应的数据源参数，值按实际填写
 
         :param connector_params: The connector_params of this Content.
-        :type: object
+        :type connector_params: object
         """
         self._connector_params = connector_params
 

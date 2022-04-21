@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExtendDDoSSet:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ExtendDDoSSet:
     }
 
     def __init__(self, set_id=None, new_connection_limited=None, total_connection_limited=None, http_packet_per_second=None, traffic_per_second=None, packet_per_second=None):
-        """ExtendDDoSSet - a model defined in huaweicloud sdk"""
+        """ExtendDDoSSet
+
+        The model defined in huaweicloud sdk
+
+        :param set_id: 配置分段ID
+        :type set_id: int
+        :param new_connection_limited: 单一源IP新建连接个数
+        :type new_connection_limited: int
+        :param total_connection_limited: 单一源IP连接数总个数
+        :type total_connection_limited: int
+        :param http_packet_per_second: 每秒HTTP请求数（个/s）阈值
+        :type http_packet_per_second: int
+        :param traffic_per_second: 每秒流量（Mbit/s）阈值
+        :type traffic_per_second: int
+        :param packet_per_second: 每秒报文数（个/s）阈值
+        :type packet_per_second: int
+        """
         
         
 
@@ -77,7 +92,7 @@ class ExtendDDoSSet:
         配置分段ID
 
         :param set_id: The set_id of this ExtendDDoSSet.
-        :type: int
+        :type set_id: int
         """
         self._set_id = set_id
 
@@ -99,7 +114,7 @@ class ExtendDDoSSet:
         单一源IP新建连接个数
 
         :param new_connection_limited: The new_connection_limited of this ExtendDDoSSet.
-        :type: int
+        :type new_connection_limited: int
         """
         self._new_connection_limited = new_connection_limited
 
@@ -121,7 +136,7 @@ class ExtendDDoSSet:
         单一源IP连接数总个数
 
         :param total_connection_limited: The total_connection_limited of this ExtendDDoSSet.
-        :type: int
+        :type total_connection_limited: int
         """
         self._total_connection_limited = total_connection_limited
 
@@ -143,7 +158,7 @@ class ExtendDDoSSet:
         每秒HTTP请求数（个/s）阈值
 
         :param http_packet_per_second: The http_packet_per_second of this ExtendDDoSSet.
-        :type: int
+        :type http_packet_per_second: int
         """
         self._http_packet_per_second = http_packet_per_second
 
@@ -165,7 +180,7 @@ class ExtendDDoSSet:
         每秒流量（Mbit/s）阈值
 
         :param traffic_per_second: The traffic_per_second of this ExtendDDoSSet.
-        :type: int
+        :type traffic_per_second: int
         """
         self._traffic_per_second = traffic_per_second
 
@@ -187,7 +202,7 @@ class ExtendDDoSSet:
         每秒报文数（个/s）阈值
 
         :param packet_per_second: The packet_per_second of this ExtendDDoSSet.
-        :type: int
+        :type packet_per_second: int
         """
         self._packet_per_second = packet_per_second
 

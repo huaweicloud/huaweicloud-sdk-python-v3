@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateSubnetRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateSubnetRequestBody:
     }
 
     def __init__(self, subnet=None):
-        """UpdateSubnetRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateSubnetRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param subnet: 
+        :type subnet: :class:`huaweicloudsdkiec.v1.UpdateSubnetOption`
+        """
         
         
 
@@ -46,7 +51,7 @@ class UpdateSubnetRequestBody:
 
 
         :return: The subnet of this UpdateSubnetRequestBody.
-        :rtype: UpdateSubnetOption
+        :rtype: :class:`huaweicloudsdkiec.v1.UpdateSubnetOption`
         """
         return self._subnet
 
@@ -56,7 +61,7 @@ class UpdateSubnetRequestBody:
 
 
         :param subnet: The subnet of this UpdateSubnetRequestBody.
-        :type: UpdateSubnetOption
+        :type subnet: :class:`huaweicloudsdkiec.v1.UpdateSubnetOption`
         """
         self._subnet = subnet
 

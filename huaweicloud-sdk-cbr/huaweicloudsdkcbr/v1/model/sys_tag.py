@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SysTag:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class SysTag:
     }
 
     def __init__(self, key=None, value=None):
-        """SysTag - a model defined in huaweicloud sdk"""
+        """SysTag
+
+        The model defined in huaweicloud sdk
+
+        :param key: 键。  系统标签的key，从白名单中取，不能随意定义。 目前仅支持 _sys_enterprise_project_id字段，对应 的value为企业项目ID。
+        :type key: str
+        :param value: 值。  目前仅会用到企业项目ID，其中默认的企业项目ID为“0”。
+        :type value: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class SysTag:
         键。  系统标签的key，从白名单中取，不能随意定义。 目前仅支持 _sys_enterprise_project_id字段，对应 的value为企业项目ID。
 
         :param key: The key of this SysTag.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -83,7 +90,7 @@ class SysTag:
         值。  目前仅会用到企业项目ID，其中默认的企业项目ID为“0”。
 
         :param value: The value of this SysTag.
-        :type: str
+        :type value: str
         """
         self._value = value
 

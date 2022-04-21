@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchStartInstanceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchStartInstanceRequest:
     }
 
     def __init__(self, body=None):
-        """BatchStartInstanceRequest - a model defined in huaweicloud sdk"""
+        """BatchStartInstanceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the BatchStartInstanceRequest
+        :type body: :class:`huaweicloudsdkiec.v1.BatchStartInstanceRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class BatchStartInstanceRequest:
 
 
         :return: The body of this BatchStartInstanceRequest.
-        :rtype: BatchStartInstanceRequestBody
+        :rtype: :class:`huaweicloudsdkiec.v1.BatchStartInstanceRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class BatchStartInstanceRequest:
 
 
         :param body: The body of this BatchStartInstanceRequest.
-        :type: BatchStartInstanceRequestBody
+        :type body: :class:`huaweicloudsdkiec.v1.BatchStartInstanceRequestBody`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TranscriberResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class TranscriberResult:
     }
 
     def __init__(self, text=None, analysis_info=None, word_info=None):
-        """TranscriberResult - a model defined in huaweicloud sdk"""
+        """TranscriberResult
+
+        The model defined in huaweicloud sdk
+
+        :param text: 识别结果文本。
+        :type text: str
+        :param analysis_info: 
+        :type analysis_info: :class:`huaweicloudsdksis.v1.AnalysisInfoResult`
+        :param word_info: 分词输出列表
+        :type word_info: list[:class:`huaweicloudsdksis.v1.WordInfo`]
+        """
         
         
 
@@ -67,7 +76,7 @@ class TranscriberResult:
         识别结果文本。
 
         :param text: The text of this TranscriberResult.
-        :type: str
+        :type text: str
         """
         self._text = text
 
@@ -77,7 +86,7 @@ class TranscriberResult:
 
 
         :return: The analysis_info of this TranscriberResult.
-        :rtype: AnalysisInfoResult
+        :rtype: :class:`huaweicloudsdksis.v1.AnalysisInfoResult`
         """
         return self._analysis_info
 
@@ -87,7 +96,7 @@ class TranscriberResult:
 
 
         :param analysis_info: The analysis_info of this TranscriberResult.
-        :type: AnalysisInfoResult
+        :type analysis_info: :class:`huaweicloudsdksis.v1.AnalysisInfoResult`
         """
         self._analysis_info = analysis_info
 
@@ -98,7 +107,7 @@ class TranscriberResult:
         分词输出列表
 
         :return: The word_info of this TranscriberResult.
-        :rtype: list[WordInfo]
+        :rtype: list[:class:`huaweicloudsdksis.v1.WordInfo`]
         """
         return self._word_info
 
@@ -109,7 +118,7 @@ class TranscriberResult:
         分词输出列表
 
         :param word_info: The word_info of this TranscriberResult.
-        :type: list[WordInfo]
+        :type word_info: list[:class:`huaweicloudsdksis.v1.WordInfo`]
         """
         self._word_info = word_info
 

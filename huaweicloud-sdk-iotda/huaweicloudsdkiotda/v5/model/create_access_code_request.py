@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateAccessCodeRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateAccessCodeRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreateAccessCodeRequest - a model defined in huaweicloud sdk"""
+        """CreateAccessCodeRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
+        :type instance_id: str
+        :param body: Body of the CreateAccessCodeRequest
+        :type body: :class:`huaweicloudsdkiotda.v5.CreateAccessCodeRequestBody`
+        """
         
         
 
@@ -63,7 +70,7 @@ class CreateAccessCodeRequest:
         **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
         :param instance_id: The instance_id of this CreateAccessCodeRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -73,7 +80,7 @@ class CreateAccessCodeRequest:
 
 
         :return: The body of this CreateAccessCodeRequest.
-        :rtype: CreateAccessCodeRequestBody
+        :rtype: :class:`huaweicloudsdkiotda.v5.CreateAccessCodeRequestBody`
         """
         return self._body
 
@@ -83,7 +90,7 @@ class CreateAccessCodeRequest:
 
 
         :param body: The body of this CreateAccessCodeRequest.
-        :type: CreateAccessCodeRequestBody
+        :type body: :class:`huaweicloudsdkiotda.v5.CreateAccessCodeRequestBody`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListGeoipRuleResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListGeoipRuleResponse(SdkResponse):
     }
 
     def __init__(self, total=None, items=None):
-        """ListGeoipRuleResponse - a model defined in huaweicloud sdk"""
+        """ListGeoipRuleResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 该策略下地理位置封禁数量
+        :type total: int
+        :param items: 地理位置封禁列表
+        :type items: list[:class:`huaweicloudsdkwaf.v1.GeOIpItem`]
+        """
         
         super(ListGeoipRuleResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListGeoipRuleResponse(SdkResponse):
         该策略下地理位置封禁数量
 
         :param total: The total of this ListGeoipRuleResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -74,7 +81,7 @@ class ListGeoipRuleResponse(SdkResponse):
         地理位置封禁列表
 
         :return: The items of this ListGeoipRuleResponse.
-        :rtype: list[GeOIpItem]
+        :rtype: list[:class:`huaweicloudsdkwaf.v1.GeOIpItem`]
         """
         return self._items
 
@@ -85,7 +92,7 @@ class ListGeoipRuleResponse(SdkResponse):
         地理位置封禁列表
 
         :param items: The items of this ListGeoipRuleResponse.
-        :type: list[GeOIpItem]
+        :type items: list[:class:`huaweicloudsdkwaf.v1.GeOIpItem`]
         """
         self._items = items
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryError:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class QueryError:
     }
 
     def __init__(self, error_code=None, error_message=None):
-        """QueryError - a model defined in huaweicloud sdk"""
+        """QueryError
+
+        The model defined in huaweicloud sdk
+
+        :param error_code: 错误编码。
+        :type error_code: str
+        :param error_message: 错误信息。
+        :type error_message: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class QueryError:
         错误编码。
 
         :param error_code: The error_code of this QueryError.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -85,7 +92,7 @@ class QueryError:
         错误信息。
 
         :param error_message: The error_message of this QueryError.
-        :type: str
+        :type error_message: str
         """
         self._error_message = error_message
 

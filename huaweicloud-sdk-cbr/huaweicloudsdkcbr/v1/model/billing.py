@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Billing:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -58,7 +57,41 @@ class Billing:
     }
 
     def __init__(self, allocated=None, charging_mode=None, cloud_type=None, consistent_level=None, object_type=None, order_id=None, product_id=None, protect_type=None, size=None, spec_code=None, status=None, storage_unit=None, used=None, frozen_scene=None, is_multi_az=None):
-        """Billing - a model defined in huaweicloud sdk"""
+        """Billing
+
+        The model defined in huaweicloud sdk
+
+        :param allocated: 已分配容量，单位GB
+        :type allocated: int
+        :param charging_mode: 创建模式
+        :type charging_mode: str
+        :param cloud_type: 云平台
+        :type cloud_type: str
+        :param consistent_level: 崩溃一致性（crash_consistent）或应用一致性（app_consistent）
+        :type consistent_level: str
+        :param object_type: 对象类型
+        :type object_type: str
+        :param order_id: 订单ID
+        :type order_id: str
+        :param product_id: 产品ID
+        :type product_id: str
+        :param protect_type: 保护类型
+        :type protect_type: str
+        :param size: 容量，单位GB
+        :type size: int
+        :param spec_code: 规格编码: 云服务备份存储库:vault.backup.server.normal;云硬盘备份存储库:vault.backup.volume.normal;文件备份存储库:vault.backup.turbo.normal;数据库备份存储库:vault.backup.database.normal;混合云备份存储库:vault.hybrid.server.normal;复制备份存储库:vault.replication.server.normal
+        :type spec_code: str
+        :param status: 存储库状态
+        :type status: str
+        :param storage_unit: 存储库桶名
+        :type storage_unit: str
+        :param used: 已使用容量，单位MB
+        :type used: int
+        :param frozen_scene: 冻结场景
+        :type frozen_scene: str
+        :param is_multi_az: 存储库多az属性
+        :type is_multi_az: bool
+        """
         
         
 
@@ -120,7 +153,7 @@ class Billing:
         已分配容量，单位GB
 
         :param allocated: The allocated of this Billing.
-        :type: int
+        :type allocated: int
         """
         self._allocated = allocated
 
@@ -142,7 +175,7 @@ class Billing:
         创建模式
 
         :param charging_mode: The charging_mode of this Billing.
-        :type: str
+        :type charging_mode: str
         """
         self._charging_mode = charging_mode
 
@@ -164,7 +197,7 @@ class Billing:
         云平台
 
         :param cloud_type: The cloud_type of this Billing.
-        :type: str
+        :type cloud_type: str
         """
         self._cloud_type = cloud_type
 
@@ -186,7 +219,7 @@ class Billing:
         崩溃一致性（crash_consistent）或应用一致性（app_consistent）
 
         :param consistent_level: The consistent_level of this Billing.
-        :type: str
+        :type consistent_level: str
         """
         self._consistent_level = consistent_level
 
@@ -208,7 +241,7 @@ class Billing:
         对象类型
 
         :param object_type: The object_type of this Billing.
-        :type: str
+        :type object_type: str
         """
         self._object_type = object_type
 
@@ -230,7 +263,7 @@ class Billing:
         订单ID
 
         :param order_id: The order_id of this Billing.
-        :type: str
+        :type order_id: str
         """
         self._order_id = order_id
 
@@ -252,7 +285,7 @@ class Billing:
         产品ID
 
         :param product_id: The product_id of this Billing.
-        :type: str
+        :type product_id: str
         """
         self._product_id = product_id
 
@@ -274,7 +307,7 @@ class Billing:
         保护类型
 
         :param protect_type: The protect_type of this Billing.
-        :type: str
+        :type protect_type: str
         """
         self._protect_type = protect_type
 
@@ -296,7 +329,7 @@ class Billing:
         容量，单位GB
 
         :param size: The size of this Billing.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -318,7 +351,7 @@ class Billing:
         规格编码: 云服务备份存储库:vault.backup.server.normal;云硬盘备份存储库:vault.backup.volume.normal;文件备份存储库:vault.backup.turbo.normal;数据库备份存储库:vault.backup.database.normal;混合云备份存储库:vault.hybrid.server.normal;复制备份存储库:vault.replication.server.normal
 
         :param spec_code: The spec_code of this Billing.
-        :type: str
+        :type spec_code: str
         """
         self._spec_code = spec_code
 
@@ -340,7 +373,7 @@ class Billing:
         存储库状态
 
         :param status: The status of this Billing.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -362,7 +395,7 @@ class Billing:
         存储库桶名
 
         :param storage_unit: The storage_unit of this Billing.
-        :type: str
+        :type storage_unit: str
         """
         self._storage_unit = storage_unit
 
@@ -384,7 +417,7 @@ class Billing:
         已使用容量，单位MB
 
         :param used: The used of this Billing.
-        :type: int
+        :type used: int
         """
         self._used = used
 
@@ -406,7 +439,7 @@ class Billing:
         冻结场景
 
         :param frozen_scene: The frozen_scene of this Billing.
-        :type: str
+        :type frozen_scene: str
         """
         self._frozen_scene = frozen_scene
 
@@ -428,7 +461,7 @@ class Billing:
         存储库多az属性
 
         :param is_multi_az: The is_multi_az of this Billing.
-        :type: bool
+        :type is_multi_az: bool
         """
         self._is_multi_az = is_multi_az
 

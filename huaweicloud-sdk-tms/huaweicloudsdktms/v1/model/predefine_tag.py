@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PredefineTag:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class PredefineTag:
     }
 
     def __init__(self, key=None, value=None, update_time=None):
-        """PredefineTag - a model defined in huaweicloud sdk"""
+        """PredefineTag
+
+        The model defined in huaweicloud sdk
+
+        :param key:   键。 最大长度36个字符。 字符集：A-Z，a-z ， 0-9，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
+        :type key: str
+        :param value: 值。 每个值最大长度43个字符，可以为空字符串。 字符集：A-Z，a-z ， 0-9，‘.’，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
+        :type value: str
+        :param update_time: 更新时间，采用UTC时间表示。2016-12-09T00:00:00Z
+        :type update_time: datetime
+        """
         
         
 
@@ -65,7 +74,7 @@ class PredefineTag:
           键。 最大长度36个字符。 字符集：A-Z，a-z ， 0-9，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
 
         :param key: The key of this PredefineTag.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -87,7 +96,7 @@ class PredefineTag:
         值。 每个值最大长度43个字符，可以为空字符串。 字符集：A-Z，a-z ， 0-9，‘.’，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
 
         :param value: The value of this PredefineTag.
-        :type: str
+        :type value: str
         """
         self._value = value
 
@@ -109,7 +118,7 @@ class PredefineTag:
         更新时间，采用UTC时间表示。2016-12-09T00:00:00Z
 
         :param update_time: The update_time of this PredefineTag.
-        :type: datetime
+        :type update_time: datetime
         """
         self._update_time = update_time
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListFeaturesV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListFeaturesV2Response(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, features=None):
-        """ListFeaturesV2Response - a model defined in huaweicloud sdk"""
+        """ListFeaturesV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param size: 本次返回的列表长度
+        :type size: int
+        :param total: 满足条件的记录数
+        :type total: int
+        :param features: 实例特性列表
+        :type features: list[:class:`huaweicloudsdkroma.v2.FeatureInfoV2`]
+        """
         
         super(ListFeaturesV2Response, self).__init__()
 
@@ -66,7 +75,7 @@ class ListFeaturesV2Response(SdkResponse):
         本次返回的列表长度
 
         :param size: The size of this ListFeaturesV2Response.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -88,7 +97,7 @@ class ListFeaturesV2Response(SdkResponse):
         满足条件的记录数
 
         :param total: The total of this ListFeaturesV2Response.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -99,7 +108,7 @@ class ListFeaturesV2Response(SdkResponse):
         实例特性列表
 
         :return: The features of this ListFeaturesV2Response.
-        :rtype: list[FeatureInfoV2]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.FeatureInfoV2`]
         """
         return self._features
 
@@ -110,7 +119,7 @@ class ListFeaturesV2Response(SdkResponse):
         实例特性列表
 
         :param features: The features of this ListFeaturesV2Response.
-        :type: list[FeatureInfoV2]
+        :type features: list[:class:`huaweicloudsdkroma.v2.FeatureInfoV2`]
         """
         self._features = features
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ContainerConfigsDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ContainerConfigsDTO:
     }
 
     def __init__(self, privileged=None, host_network=None, restart_policy=None, container_port_list=None):
-        """ContainerConfigsDTO - a model defined in huaweicloud sdk"""
+        """ContainerConfigsDTO
+
+        The model defined in huaweicloud sdk
+
+        :param privileged: 开启容器特权模式
+        :type privileged: bool
+        :param host_network: 是否使用主机网络模式
+        :type host_network: bool
+        :param restart_policy: 重启策略，容器执行健康检查后失败后的策略
+        :type restart_policy: str
+        :param container_port_list: 容器端口映射值
+        :type container_port_list: list[:class:`huaweicloudsdkiotedge.v2.ContainerPortDTO`]
+        """
         
         
 
@@ -72,7 +83,7 @@ class ContainerConfigsDTO:
         开启容器特权模式
 
         :param privileged: The privileged of this ContainerConfigsDTO.
-        :type: bool
+        :type privileged: bool
         """
         self._privileged = privileged
 
@@ -94,7 +105,7 @@ class ContainerConfigsDTO:
         是否使用主机网络模式
 
         :param host_network: The host_network of this ContainerConfigsDTO.
-        :type: bool
+        :type host_network: bool
         """
         self._host_network = host_network
 
@@ -116,7 +127,7 @@ class ContainerConfigsDTO:
         重启策略，容器执行健康检查后失败后的策略
 
         :param restart_policy: The restart_policy of this ContainerConfigsDTO.
-        :type: str
+        :type restart_policy: str
         """
         self._restart_policy = restart_policy
 
@@ -127,7 +138,7 @@ class ContainerConfigsDTO:
         容器端口映射值
 
         :return: The container_port_list of this ContainerConfigsDTO.
-        :rtype: list[ContainerPortDTO]
+        :rtype: list[:class:`huaweicloudsdkiotedge.v2.ContainerPortDTO`]
         """
         return self._container_port_list
 
@@ -138,7 +149,7 @@ class ContainerConfigsDTO:
         容器端口映射值
 
         :param container_port_list: The container_port_list of this ContainerConfigsDTO.
-        :type: list[ContainerPortDTO]
+        :type container_port_list: list[:class:`huaweicloudsdkiotedge.v2.ContainerPortDTO`]
         """
         self._container_port_list = container_port_list
 

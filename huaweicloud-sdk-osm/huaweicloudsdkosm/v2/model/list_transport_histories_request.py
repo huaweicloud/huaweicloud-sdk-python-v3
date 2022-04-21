@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTransportHistoriesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class ListTransportHistoriesRequest:
     }
 
     def __init__(self, authorization_id=None, authorization_detail_id=None, group_id=None, session_id=None, sort=None, offset=None, limit=None, x_site=None, x_language=None, x_time_zone=None):
-        """ListTransportHistoriesRequest - a model defined in huaweicloud sdk"""
+        """ListTransportHistoriesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param authorization_id: 授权id
+        :type authorization_id: int
+        :param authorization_detail_id: 授权详情id
+        :type authorization_detail_id: int
+        :param group_id: 组id
+        :type group_id: str
+        :param session_id: 会话id
+        :type session_id: int
+        :param sort: 1：按操作时间升序； 0：按操作时间降序；默认0
+        :type sort: int
+        :param offset: 查询偏移量
+        :type offset: int
+        :param limit: 查询限制条数
+        :type limit: int
+        :param x_site: 对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
+        :type x_site: int
+        :param x_language: 语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
+        :type x_language: str
+        :param x_time_zone: 环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
+        :type x_time_zone: str
+        """
         
         
 
@@ -100,7 +123,7 @@ class ListTransportHistoriesRequest:
         授权id
 
         :param authorization_id: The authorization_id of this ListTransportHistoriesRequest.
-        :type: int
+        :type authorization_id: int
         """
         self._authorization_id = authorization_id
 
@@ -122,7 +145,7 @@ class ListTransportHistoriesRequest:
         授权详情id
 
         :param authorization_detail_id: The authorization_detail_id of this ListTransportHistoriesRequest.
-        :type: int
+        :type authorization_detail_id: int
         """
         self._authorization_detail_id = authorization_detail_id
 
@@ -144,7 +167,7 @@ class ListTransportHistoriesRequest:
         组id
 
         :param group_id: The group_id of this ListTransportHistoriesRequest.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -166,7 +189,7 @@ class ListTransportHistoriesRequest:
         会话id
 
         :param session_id: The session_id of this ListTransportHistoriesRequest.
-        :type: int
+        :type session_id: int
         """
         self._session_id = session_id
 
@@ -188,7 +211,7 @@ class ListTransportHistoriesRequest:
         1：按操作时间升序； 0：按操作时间降序；默认0
 
         :param sort: The sort of this ListTransportHistoriesRequest.
-        :type: int
+        :type sort: int
         """
         self._sort = sort
 
@@ -210,7 +233,7 @@ class ListTransportHistoriesRequest:
         查询偏移量
 
         :param offset: The offset of this ListTransportHistoriesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -232,7 +255,7 @@ class ListTransportHistoriesRequest:
         查询限制条数
 
         :param limit: The limit of this ListTransportHistoriesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -254,7 +277,7 @@ class ListTransportHistoriesRequest:
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
         :param x_site: The x_site of this ListTransportHistoriesRequest.
-        :type: int
+        :type x_site: int
         """
         self._x_site = x_site
 
@@ -276,7 +299,7 @@ class ListTransportHistoriesRequest:
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
         :param x_language: The x_language of this ListTransportHistoriesRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -298,7 +321,7 @@ class ListTransportHistoriesRequest:
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 
         :param x_time_zone: The x_time_zone of this ListTransportHistoriesRequest.
-        :type: str
+        :type x_time_zone: str
         """
         self._x_time_zone = x_time_zone
 

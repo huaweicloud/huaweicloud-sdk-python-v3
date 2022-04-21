@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListProjectMembersV4Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListProjectMembersV4Response(SdkResponse):
     }
 
     def __init__(self, members=None, total=None):
-        """ListProjectMembersV4Response - a model defined in huaweicloud sdk"""
+        """ListProjectMembersV4Response
+
+        The model defined in huaweicloud sdk
+
+        :param members: 项目成员列表
+        :type members: list[:class:`huaweicloudsdkprojectman.v4.MemberListV4Members`]
+        :param total: 总数
+        :type total: int
+        """
         
         super(ListProjectMembersV4Response, self).__init__()
 
@@ -52,7 +59,7 @@ class ListProjectMembersV4Response(SdkResponse):
         项目成员列表
 
         :return: The members of this ListProjectMembersV4Response.
-        :rtype: list[MemberListV4Members]
+        :rtype: list[:class:`huaweicloudsdkprojectman.v4.MemberListV4Members`]
         """
         return self._members
 
@@ -63,7 +70,7 @@ class ListProjectMembersV4Response(SdkResponse):
         项目成员列表
 
         :param members: The members of this ListProjectMembersV4Response.
-        :type: list[MemberListV4Members]
+        :type members: list[:class:`huaweicloudsdkprojectman.v4.MemberListV4Members`]
         """
         self._members = members
 
@@ -85,7 +92,7 @@ class ListProjectMembersV4Response(SdkResponse):
         总数
 
         :param total: The total of this ListProjectMembersV4Response.
-        :type: int
+        :type total: int
         """
         self._total = total
 

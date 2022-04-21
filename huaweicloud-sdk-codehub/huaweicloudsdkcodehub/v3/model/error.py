@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Error:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Error:
     }
 
     def __init__(self, code=None, message=None):
-        """Error - a model defined in huaweicloud sdk"""
+        """Error
+
+        The model defined in huaweicloud sdk
+
+        :param code: 错误码
+        :type code: str
+        :param message: 错误信息
+        :type message: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class Error:
         错误码
 
         :param code: The code of this Error.
-        :type: str
+        :type code: str
         """
         self._code = code
 
@@ -85,7 +92,7 @@ class Error:
         错误信息
 
         :param message: The message of this Error.
-        :type: str
+        :type message: str
         """
         self._message = message
 

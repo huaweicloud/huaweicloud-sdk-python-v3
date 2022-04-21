@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MysqlProxyNodes:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class MysqlProxyNodes:
     }
 
     def __init__(self, id=None, status=None, name=None, role=None, az_code=None, frozen_flag=None):
-        """MysqlProxyNodes - a model defined in huaweicloud sdk"""
+        """MysqlProxyNodes
+
+        The model defined in huaweicloud sdk
+
+        :param id: Proxy节点id。
+        :type id: str
+        :param status: Proxy节点状态。 取值范围：normal、abnormal、creating和deleted。
+        :type status: str
+        :param name: Proxy节点名称。
+        :type name: str
+        :param role: Proxy节点角色：master和slave。
+        :type role: str
+        :param az_code: 可用区。
+        :type az_code: str
+        :param frozen_flag: Proxy节点是否被冻结：0-未冻结；1-冻结；2-冻结删除。
+        :type frozen_flag: int
+        """
         
         
 
@@ -83,7 +98,7 @@ class MysqlProxyNodes:
         Proxy节点id。
 
         :param id: The id of this MysqlProxyNodes.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -105,7 +120,7 @@ class MysqlProxyNodes:
         Proxy节点状态。 取值范围：normal、abnormal、creating和deleted。
 
         :param status: The status of this MysqlProxyNodes.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -127,7 +142,7 @@ class MysqlProxyNodes:
         Proxy节点名称。
 
         :param name: The name of this MysqlProxyNodes.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -149,7 +164,7 @@ class MysqlProxyNodes:
         Proxy节点角色：master和slave。
 
         :param role: The role of this MysqlProxyNodes.
-        :type: str
+        :type role: str
         """
         self._role = role
 
@@ -171,7 +186,7 @@ class MysqlProxyNodes:
         可用区。
 
         :param az_code: The az_code of this MysqlProxyNodes.
-        :type: str
+        :type az_code: str
         """
         self._az_code = az_code
 
@@ -193,7 +208,7 @@ class MysqlProxyNodes:
         Proxy节点是否被冻结：0-未冻结；1-冻结；2-冻结删除。
 
         :param frozen_flag: The frozen_flag of this MysqlProxyNodes.
-        :type: int
+        :type frozen_flag: int
         """
         self._frozen_flag = frozen_flag
 

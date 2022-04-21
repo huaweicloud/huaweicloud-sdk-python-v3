@@ -19,15 +19,18 @@
 """
 
 import os
-import platform
 from mimetypes import MimeTypes
 
 
 class FormFile(object):
-
     TYPE = "file"
 
     def __init__(self, f):
+        """This class is used for the formdata.
+
+        :param f: An opened file, for example, f = open("demo.txt", "r")
+        :type f: stream
+        """
         self._file = f
 
     def close(self):

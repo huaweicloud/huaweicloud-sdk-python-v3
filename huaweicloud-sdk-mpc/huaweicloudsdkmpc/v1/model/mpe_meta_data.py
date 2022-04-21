@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MpeMetaData:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class MpeMetaData:
     }
 
     def __init__(self, pack_type=None, duration=None, video_size=None, width=None, height=None, bit_rate=None, audio_bit_rate=None, frame_rate=None, codec_name=None, audio_codec_name=None, channels=None, sample=None, is_audio=None):
-        """MpeMetaData - a model defined in huaweicloud sdk"""
+        """MpeMetaData
+
+        The model defined in huaweicloud sdk
+
+        :param pack_type: 封装类型。
+        :type pack_type: str
+        :param duration: 视频时长。
+        :type duration: float
+        :param video_size: 视频大小。
+        :type video_size: int
+        :param width: 视频宽度。
+        :type width: int
+        :param height: 视频高度。
+        :type height: int
+        :param bit_rate: 码率。
+        :type bit_rate: int
+        :param audio_bit_rate: 音频码率。
+        :type audio_bit_rate: int
+        :param frame_rate: 帧率。  取值范围：0或[5,60]，0表示自适应。  单位：帧每秒。  &gt; 若设置的帧率不在取值范围内，则自动调整为0，若设置的帧率高于片源帧率，则自动调整为片源帧率。 
+        :type frame_rate: int
+        :param codec_name: 编码类型名称。
+        :type codec_name: str
+        :param audio_codec_name: 音频编码类型。
+        :type audio_codec_name: str
+        :param channels: 声道数。
+        :type channels: int
+        :param sample: 采样率。
+        :type sample: int
+        :param is_audio: 是否音频。
+        :type is_audio: bool
+        """
         
         
 
@@ -118,7 +147,7 @@ class MpeMetaData:
         封装类型。
 
         :param pack_type: The pack_type of this MpeMetaData.
-        :type: str
+        :type pack_type: str
         """
         self._pack_type = pack_type
 
@@ -140,7 +169,7 @@ class MpeMetaData:
         视频时长。
 
         :param duration: The duration of this MpeMetaData.
-        :type: float
+        :type duration: float
         """
         self._duration = duration
 
@@ -162,7 +191,7 @@ class MpeMetaData:
         视频大小。
 
         :param video_size: The video_size of this MpeMetaData.
-        :type: int
+        :type video_size: int
         """
         self._video_size = video_size
 
@@ -184,7 +213,7 @@ class MpeMetaData:
         视频宽度。
 
         :param width: The width of this MpeMetaData.
-        :type: int
+        :type width: int
         """
         self._width = width
 
@@ -206,7 +235,7 @@ class MpeMetaData:
         视频高度。
 
         :param height: The height of this MpeMetaData.
-        :type: int
+        :type height: int
         """
         self._height = height
 
@@ -228,7 +257,7 @@ class MpeMetaData:
         码率。
 
         :param bit_rate: The bit_rate of this MpeMetaData.
-        :type: int
+        :type bit_rate: int
         """
         self._bit_rate = bit_rate
 
@@ -250,7 +279,7 @@ class MpeMetaData:
         音频码率。
 
         :param audio_bit_rate: The audio_bit_rate of this MpeMetaData.
-        :type: int
+        :type audio_bit_rate: int
         """
         self._audio_bit_rate = audio_bit_rate
 
@@ -272,7 +301,7 @@ class MpeMetaData:
         帧率。  取值范围：0或[5,60]，0表示自适应。  单位：帧每秒。  > 若设置的帧率不在取值范围内，则自动调整为0，若设置的帧率高于片源帧率，则自动调整为片源帧率。 
 
         :param frame_rate: The frame_rate of this MpeMetaData.
-        :type: int
+        :type frame_rate: int
         """
         self._frame_rate = frame_rate
 
@@ -294,7 +323,7 @@ class MpeMetaData:
         编码类型名称。
 
         :param codec_name: The codec_name of this MpeMetaData.
-        :type: str
+        :type codec_name: str
         """
         self._codec_name = codec_name
 
@@ -316,7 +345,7 @@ class MpeMetaData:
         音频编码类型。
 
         :param audio_codec_name: The audio_codec_name of this MpeMetaData.
-        :type: str
+        :type audio_codec_name: str
         """
         self._audio_codec_name = audio_codec_name
 
@@ -338,7 +367,7 @@ class MpeMetaData:
         声道数。
 
         :param channels: The channels of this MpeMetaData.
-        :type: int
+        :type channels: int
         """
         self._channels = channels
 
@@ -360,7 +389,7 @@ class MpeMetaData:
         采样率。
 
         :param sample: The sample of this MpeMetaData.
-        :type: int
+        :type sample: int
         """
         self._sample = sample
 
@@ -382,7 +411,7 @@ class MpeMetaData:
         是否音频。
 
         :param is_audio: The is_audio of this MpeMetaData.
-        :type: bool
+        :type is_audio: bool
         """
         self._is_audio = is_audio
 

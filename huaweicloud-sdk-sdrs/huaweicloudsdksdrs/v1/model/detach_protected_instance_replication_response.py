@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DetachProtectedInstanceReplicationResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DetachProtectedInstanceReplicationResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """DetachProtectedInstanceReplicationResponse - a model defined in huaweicloud sdk"""
+        """DetachProtectedInstanceReplicationResponse
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 成功返回jobId信息
+        :type job_id: str
+        """
         
         super(DetachProtectedInstanceReplicationResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class DetachProtectedInstanceReplicationResponse(SdkResponse):
         成功返回jobId信息
 
         :param job_id: The job_id of this DetachProtectedInstanceReplicationResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 

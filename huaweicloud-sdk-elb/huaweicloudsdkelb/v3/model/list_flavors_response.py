@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListFlavorsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListFlavorsResponse(SdkResponse):
     }
 
     def __init__(self, flavors=None, page_info=None, request_id=None):
-        """ListFlavorsResponse - a model defined in huaweicloud sdk"""
+        """ListFlavorsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param flavors: 规格列表。
+        :type flavors: list[:class:`huaweicloudsdkelb.v3.Flavor`]
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`
+        :param request_id: 请求ID。  注：自动生成 。
+        :type request_id: str
+        """
         
         super(ListFlavorsResponse, self).__init__()
 
@@ -57,7 +66,7 @@ class ListFlavorsResponse(SdkResponse):
         规格列表。
 
         :return: The flavors of this ListFlavorsResponse.
-        :rtype: list[Flavor]
+        :rtype: list[:class:`huaweicloudsdkelb.v3.Flavor`]
         """
         return self._flavors
 
@@ -68,7 +77,7 @@ class ListFlavorsResponse(SdkResponse):
         规格列表。
 
         :param flavors: The flavors of this ListFlavorsResponse.
-        :type: list[Flavor]
+        :type flavors: list[:class:`huaweicloudsdkelb.v3.Flavor`]
         """
         self._flavors = flavors
 
@@ -78,7 +87,7 @@ class ListFlavorsResponse(SdkResponse):
 
 
         :return: The page_info of this ListFlavorsResponse.
-        :rtype: PageInfo
+        :rtype: :class:`huaweicloudsdkelb.v3.PageInfo`
         """
         return self._page_info
 
@@ -88,7 +97,7 @@ class ListFlavorsResponse(SdkResponse):
 
 
         :param page_info: The page_info of this ListFlavorsResponse.
-        :type: PageInfo
+        :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`
         """
         self._page_info = page_info
 
@@ -110,7 +119,7 @@ class ListFlavorsResponse(SdkResponse):
         请求ID。  注：自动生成 。
 
         :param request_id: The request_id of this ListFlavorsResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 

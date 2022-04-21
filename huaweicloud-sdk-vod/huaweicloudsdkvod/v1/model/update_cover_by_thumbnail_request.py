@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateCoverByThumbnailRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateCoverByThumbnailRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateCoverByThumbnailRequest - a model defined in huaweicloud sdk"""
+        """UpdateCoverByThumbnailRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the UpdateCoverByThumbnailRequest
+        :type body: :class:`huaweicloudsdkvod.v1.UpdateCoverByThumbnailReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class UpdateCoverByThumbnailRequest:
 
 
         :return: The body of this UpdateCoverByThumbnailRequest.
-        :rtype: UpdateCoverByThumbnailReq
+        :rtype: :class:`huaweicloudsdkvod.v1.UpdateCoverByThumbnailReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class UpdateCoverByThumbnailRequest:
 
 
         :param body: The body of this UpdateCoverByThumbnailRequest.
-        :type: UpdateCoverByThumbnailReq
+        :type body: :class:`huaweicloudsdkvod.v1.UpdateCoverByThumbnailReq`
         """
         self._body = body
 

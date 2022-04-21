@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ConcatInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ConcatInfo:
     }
 
     def __init__(self, inputs=None):
-        """ConcatInfo - a model defined in huaweicloud sdk"""
+        """ConcatInfo
+
+        The model defined in huaweicloud sdk
+
+        :param inputs: 拼接任务输入源地址。
+        :type inputs: list[:class:`huaweicloudsdkmpc.v1.ObsObjInfo`]
+        """
         
         
 
@@ -47,7 +52,7 @@ class ConcatInfo:
         拼接任务输入源地址。
 
         :return: The inputs of this ConcatInfo.
-        :rtype: list[ObsObjInfo]
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.ObsObjInfo`]
         """
         return self._inputs
 
@@ -58,7 +63,7 @@ class ConcatInfo:
         拼接任务输入源地址。
 
         :param inputs: The inputs of this ConcatInfo.
-        :type: list[ObsObjInfo]
+        :type inputs: list[:class:`huaweicloudsdkmpc.v1.ObsObjInfo`]
         """
         self._inputs = inputs
 

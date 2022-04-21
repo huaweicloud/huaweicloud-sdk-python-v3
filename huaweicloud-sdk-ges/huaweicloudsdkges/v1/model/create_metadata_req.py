@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateMetadataReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class CreateMetadataReq:
     }
 
     def __init__(self, metadata_path=None, name=None, description=None, is_overwrite=None, ges_metadata=None):
-        """CreateMetadataReq - a model defined in huaweicloud sdk"""
+        """CreateMetadataReq
+
+        The model defined in huaweicloud sdk
+
+        :param metadata_path: 元数据存储地址。
+        :type metadata_path: str
+        :param name: 元数据的名字，限制为1-64个字符，且只能包含字母，数字或下划线。
+        :type name: str
+        :param description: 对元数据的描述。
+        :type description: str
+        :param is_overwrite: 是否覆盖文件。
+        :type is_overwrite: bool
+        :param ges_metadata: 存储metadata的消息信息的对象。
+        :type ges_metadata: object
+        """
         
         
 
@@ -73,7 +86,7 @@ class CreateMetadataReq:
         元数据存储地址。
 
         :param metadata_path: The metadata_path of this CreateMetadataReq.
-        :type: str
+        :type metadata_path: str
         """
         self._metadata_path = metadata_path
 
@@ -95,7 +108,7 @@ class CreateMetadataReq:
         元数据的名字，限制为1-64个字符，且只能包含字母，数字或下划线。
 
         :param name: The name of this CreateMetadataReq.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -117,7 +130,7 @@ class CreateMetadataReq:
         对元数据的描述。
 
         :param description: The description of this CreateMetadataReq.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -139,7 +152,7 @@ class CreateMetadataReq:
         是否覆盖文件。
 
         :param is_overwrite: The is_overwrite of this CreateMetadataReq.
-        :type: bool
+        :type is_overwrite: bool
         """
         self._is_overwrite = is_overwrite
 
@@ -161,7 +174,7 @@ class CreateMetadataReq:
         存储metadata的消息信息的对象。
 
         :param ges_metadata: The ges_metadata of this CreateMetadataReq.
-        :type: object
+        :type ges_metadata: object
         """
         self._ges_metadata = ges_metadata
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateFunctionAsyncInvokeConfigRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateFunctionAsyncInvokeConfigRequestBody:
     }
 
     def __init__(self, max_async_event_age_in_seconds=None, max_async_retry_attempts=None, destination_config=None):
-        """UpdateFunctionAsyncInvokeConfigRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateFunctionAsyncInvokeConfigRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param max_async_event_age_in_seconds: 消息最大存活时长，取值范围[1，86400]，单位：秒，默认值为3600。
+        :type max_async_event_age_in_seconds: int
+        :param max_async_retry_attempts: 异步调用失败后的最大重试次数，默认值为1。取值范围[0，3]。
+        :type max_async_retry_attempts: int
+        :param destination_config: 
+        :type destination_config: :class:`huaweicloudsdkfunctiongraph.v2.FuncAsyncDestinationConfig`
+        """
         
         
 
@@ -68,7 +77,7 @@ class UpdateFunctionAsyncInvokeConfigRequestBody:
         消息最大存活时长，取值范围[1，86400]，单位：秒，默认值为3600。
 
         :param max_async_event_age_in_seconds: The max_async_event_age_in_seconds of this UpdateFunctionAsyncInvokeConfigRequestBody.
-        :type: int
+        :type max_async_event_age_in_seconds: int
         """
         self._max_async_event_age_in_seconds = max_async_event_age_in_seconds
 
@@ -90,7 +99,7 @@ class UpdateFunctionAsyncInvokeConfigRequestBody:
         异步调用失败后的最大重试次数，默认值为1。取值范围[0，3]。
 
         :param max_async_retry_attempts: The max_async_retry_attempts of this UpdateFunctionAsyncInvokeConfigRequestBody.
-        :type: int
+        :type max_async_retry_attempts: int
         """
         self._max_async_retry_attempts = max_async_retry_attempts
 
@@ -100,7 +109,7 @@ class UpdateFunctionAsyncInvokeConfigRequestBody:
 
 
         :return: The destination_config of this UpdateFunctionAsyncInvokeConfigRequestBody.
-        :rtype: FuncAsyncDestinationConfig
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.FuncAsyncDestinationConfig`
         """
         return self._destination_config
 
@@ -110,7 +119,7 @@ class UpdateFunctionAsyncInvokeConfigRequestBody:
 
 
         :param destination_config: The destination_config of this UpdateFunctionAsyncInvokeConfigRequestBody.
-        :type: FuncAsyncDestinationConfig
+        :type destination_config: :class:`huaweicloudsdkfunctiongraph.v2.FuncAsyncDestinationConfig`
         """
         self._destination_config = destination_config
 

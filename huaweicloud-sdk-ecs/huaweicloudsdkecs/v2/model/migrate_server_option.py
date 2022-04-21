@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MigrateServerOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class MigrateServerOption:
     }
 
     def __init__(self, dedicated_host_id=None):
-        """MigrateServerOption - a model defined in huaweicloud sdk"""
+        """MigrateServerOption
+
+        The model defined in huaweicloud sdk
+
+        :param dedicated_host_id: 专属主机ID。 当弹性云服务器从公共资源池迁移至专属主机上，或者弹性云服务器在专属主机之间迁移时，该字段生效。
+        :type dedicated_host_id: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class MigrateServerOption:
         专属主机ID。 当弹性云服务器从公共资源池迁移至专属主机上，或者弹性云服务器在专属主机之间迁移时，该字段生效。
 
         :param dedicated_host_id: The dedicated_host_id of this MigrateServerOption.
-        :type: str
+        :type dedicated_host_id: str
         """
         self._dedicated_host_id = dedicated_host_id
 

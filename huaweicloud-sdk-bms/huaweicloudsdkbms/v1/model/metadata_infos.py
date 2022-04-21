@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MetadataInfos:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class MetadataInfos:
     }
 
     def __init__(self, key=None):
-        """MetadataInfos - a model defined in huaweicloud sdk"""
+        """MetadataInfos
+
+        The model defined in huaweicloud sdk
+
+        :param key: metadata键、值。键、值长度均不大于255字节。
+        :type key: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class MetadataInfos:
         metadata键、值。键、值长度均不大于255字节。
 
         :param key: The key of this MetadataInfos.
-        :type: str
+        :type key: str
         """
         self._key = key
 

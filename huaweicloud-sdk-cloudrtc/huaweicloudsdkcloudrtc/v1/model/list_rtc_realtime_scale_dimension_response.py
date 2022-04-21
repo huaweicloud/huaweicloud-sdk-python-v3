@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRtcRealtimeScaleDimensionResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListRtcRealtimeScaleDimensionResponse(SdkResponse):
     }
 
     def __init__(self, dimensions=None, x_request_id=None):
-        """ListRtcRealtimeScaleDimensionResponse - a model defined in huaweicloud sdk"""
+        """ListRtcRealtimeScaleDimensionResponse
+
+        The model defined in huaweicloud sdk
+
+        :param dimensions: 维度分布信息
+        :type dimensions: list[:class:`huaweicloudsdkcloudrtc.v1.RealtimeScaleDimensionValue`]
+        :param x_request_id: 
+        :type x_request_id: str
+        """
         
         super(ListRtcRealtimeScaleDimensionResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListRtcRealtimeScaleDimensionResponse(SdkResponse):
         维度分布信息
 
         :return: The dimensions of this ListRtcRealtimeScaleDimensionResponse.
-        :rtype: list[RealtimeScaleDimensionValue]
+        :rtype: list[:class:`huaweicloudsdkcloudrtc.v1.RealtimeScaleDimensionValue`]
         """
         return self._dimensions
 
@@ -63,7 +70,7 @@ class ListRtcRealtimeScaleDimensionResponse(SdkResponse):
         维度分布信息
 
         :param dimensions: The dimensions of this ListRtcRealtimeScaleDimensionResponse.
-        :type: list[RealtimeScaleDimensionValue]
+        :type dimensions: list[:class:`huaweicloudsdkcloudrtc.v1.RealtimeScaleDimensionValue`]
         """
         self._dimensions = dimensions
 
@@ -83,7 +90,7 @@ class ListRtcRealtimeScaleDimensionResponse(SdkResponse):
 
 
         :param x_request_id: The x_request_id of this ListRtcRealtimeScaleDimensionResponse.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 

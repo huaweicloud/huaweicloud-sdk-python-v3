@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EncryptDatakeyRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class EncryptDatakeyRequestBody:
     }
 
     def __init__(self, key_id=None, plain_text=None, datakey_plain_length=None, sequence=None):
-        """EncryptDatakeyRequestBody - a model defined in huaweicloud sdk"""
+        """EncryptDatakeyRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param key_id: 密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
+        :type key_id: str
+        :param plain_text: CMK为AES时，DEK明文和DEK明文的SHA256（32字节）；CMK为SM4时，DEK明文和DEK明文的SM3（32字节），均为16进制字符串表示。
+        :type plain_text: str
+        :param datakey_plain_length: DEK明文字节长度，取值范围为1~1024。 DEK明文字节长度，取值为“64”。
+        :type datakey_plain_length: str
+        :param sequence: 请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
+        :type sequence: str
+        """
         
         
 
@@ -70,7 +81,7 @@ class EncryptDatakeyRequestBody:
         密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
 
         :param key_id: The key_id of this EncryptDatakeyRequestBody.
-        :type: str
+        :type key_id: str
         """
         self._key_id = key_id
 
@@ -92,7 +103,7 @@ class EncryptDatakeyRequestBody:
         CMK为AES时，DEK明文和DEK明文的SHA256（32字节）；CMK为SM4时，DEK明文和DEK明文的SM3（32字节），均为16进制字符串表示。
 
         :param plain_text: The plain_text of this EncryptDatakeyRequestBody.
-        :type: str
+        :type plain_text: str
         """
         self._plain_text = plain_text
 
@@ -114,7 +125,7 @@ class EncryptDatakeyRequestBody:
         DEK明文字节长度，取值范围为1~1024。 DEK明文字节长度，取值为“64”。
 
         :param datakey_plain_length: The datakey_plain_length of this EncryptDatakeyRequestBody.
-        :type: str
+        :type datakey_plain_length: str
         """
         self._datakey_plain_length = datakey_plain_length
 
@@ -136,7 +147,7 @@ class EncryptDatakeyRequestBody:
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
 
         :param sequence: The sequence of this EncryptDatakeyRequestBody.
-        :type: str
+        :type sequence: str
         """
         self._sequence = sequence
 

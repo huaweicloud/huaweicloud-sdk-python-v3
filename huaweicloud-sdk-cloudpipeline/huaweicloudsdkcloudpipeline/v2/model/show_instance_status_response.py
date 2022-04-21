@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowInstanceStatusResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ShowInstanceStatusResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None, task_status=None, pipeline_id=None, pipeline_name=None, pipeline_url=None):
-        """ShowInstanceStatusResponse - a model defined in huaweicloud sdk"""
+        """ShowInstanceStatusResponse
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 实例ID
+        :type task_id: str
+        :param task_status: 实例创建状态，取值和含义:initializing：初始化中；processing：处理中；finished：已完成；succeeded：成功
+        :type task_status: str
+        :param pipeline_id: 流水线ID
+        :type pipeline_id: str
+        :param pipeline_name: 流水线名字
+        :type pipeline_name: str
+        :param pipeline_url: 流水线详情页面url
+        :type pipeline_url: str
+        """
         
         super(ShowInstanceStatusResponse, self).__init__()
 
@@ -78,7 +91,7 @@ class ShowInstanceStatusResponse(SdkResponse):
         实例ID
 
         :param task_id: The task_id of this ShowInstanceStatusResponse.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -86,7 +99,7 @@ class ShowInstanceStatusResponse(SdkResponse):
     def task_status(self):
         """Gets the task_status of this ShowInstanceStatusResponse.
 
-        实例创建状态
+        实例创建状态，取值和含义:initializing：初始化中；processing：处理中；finished：已完成；succeeded：成功
 
         :return: The task_status of this ShowInstanceStatusResponse.
         :rtype: str
@@ -97,10 +110,10 @@ class ShowInstanceStatusResponse(SdkResponse):
     def task_status(self, task_status):
         """Sets the task_status of this ShowInstanceStatusResponse.
 
-        实例创建状态
+        实例创建状态，取值和含义:initializing：初始化中；processing：处理中；finished：已完成；succeeded：成功
 
         :param task_status: The task_status of this ShowInstanceStatusResponse.
-        :type: str
+        :type task_status: str
         """
         self._task_status = task_status
 
@@ -122,7 +135,7 @@ class ShowInstanceStatusResponse(SdkResponse):
         流水线ID
 
         :param pipeline_id: The pipeline_id of this ShowInstanceStatusResponse.
-        :type: str
+        :type pipeline_id: str
         """
         self._pipeline_id = pipeline_id
 
@@ -144,7 +157,7 @@ class ShowInstanceStatusResponse(SdkResponse):
         流水线名字
 
         :param pipeline_name: The pipeline_name of this ShowInstanceStatusResponse.
-        :type: str
+        :type pipeline_name: str
         """
         self._pipeline_name = pipeline_name
 
@@ -166,7 +179,7 @@ class ShowInstanceStatusResponse(SdkResponse):
         流水线详情页面url
 
         :param pipeline_url: The pipeline_url of this ShowInstanceStatusResponse.
-        :type: str
+        :type pipeline_url: str
         """
         self._pipeline_url = pipeline_url
 

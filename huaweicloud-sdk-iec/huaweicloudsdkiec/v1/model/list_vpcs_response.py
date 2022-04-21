@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListVpcsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListVpcsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, vpcs=None):
-        """ListVpcsResponse - a model defined in huaweicloud sdk"""
+        """ListVpcsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 虚拟私有云的总数。
+        :type count: int
+        :param vpcs: 虚拟私有云数组对象。
+        :type vpcs: list[:class:`huaweicloudsdkiec.v1.Vpc`]
+        """
         
         super(ListVpcsResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListVpcsResponse(SdkResponse):
         虚拟私有云的总数。
 
         :param count: The count of this ListVpcsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -74,7 +81,7 @@ class ListVpcsResponse(SdkResponse):
         虚拟私有云数组对象。
 
         :return: The vpcs of this ListVpcsResponse.
-        :rtype: list[Vpc]
+        :rtype: list[:class:`huaweicloudsdkiec.v1.Vpc`]
         """
         return self._vpcs
 
@@ -85,7 +92,7 @@ class ListVpcsResponse(SdkResponse):
         虚拟私有云数组对象。
 
         :param vpcs: The vpcs of this ListVpcsResponse.
-        :type: list[Vpc]
+        :type vpcs: list[:class:`huaweicloudsdkiec.v1.Vpc`]
         """
         self._vpcs = vpcs
 

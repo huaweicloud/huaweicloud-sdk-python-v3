@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TransferEnterpriseMultiAccountReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class TransferEnterpriseMultiAccountReq:
     }
 
     def __init__(self, customer_id=None, amount=None, trans_id=None, balance_type=None, expire_time=None):
-        """TransferEnterpriseMultiAccountReq - a model defined in huaweicloud sdk"""
+        """TransferEnterpriseMultiAccountReq
+
+        The model defined in huaweicloud sdk
+
+        :param customer_id: 企业子账号的客户ID。您可以调用查询企业子账号列表接口，获取响应参数“id”的返回值。
+        :type customer_id: str
+        :param amount: 现金账户总划拨金额。 单位：元。取值大于0且精确到小数点后2位。
+        :type amount: str
+        :param trans_id: 交易序列号，用于防止重复提交。 如果接口调用方不传此参数的值，则系统自动生成。如果接口调用方传入此参数的值，请采用UUID保证全局唯一。
+        :type trans_id: str
+        :param balance_type: 账户类型： BALANCE_TYPE_DEBIT：余额账户（默认）BALANCE_TYPE_CREDIT：信用账户
+        :type balance_type: str
+        :param expire_time: 账户到期时间，UTC时间，格式为：2016-03-28T14:45:38Z。 只对信用账户有效，用于限制针对有效期到期时间等于该时间的信用账户余额进行拨款，精确到秒。如果查询信用账户可拨款余额的查询结果没有失效时间，表示永久有效，对于这种账本拨款的情况无需填写。
+        :type expire_time: str
+        """
         
         
 
@@ -76,7 +89,7 @@ class TransferEnterpriseMultiAccountReq:
         企业子账号的客户ID。您可以调用查询企业子账号列表接口，获取响应参数“id”的返回值。
 
         :param customer_id: The customer_id of this TransferEnterpriseMultiAccountReq.
-        :type: str
+        :type customer_id: str
         """
         self._customer_id = customer_id
 
@@ -98,7 +111,7 @@ class TransferEnterpriseMultiAccountReq:
         现金账户总划拨金额。 单位：元。取值大于0且精确到小数点后2位。
 
         :param amount: The amount of this TransferEnterpriseMultiAccountReq.
-        :type: str
+        :type amount: str
         """
         self._amount = amount
 
@@ -120,7 +133,7 @@ class TransferEnterpriseMultiAccountReq:
         交易序列号，用于防止重复提交。 如果接口调用方不传此参数的值，则系统自动生成。如果接口调用方传入此参数的值，请采用UUID保证全局唯一。
 
         :param trans_id: The trans_id of this TransferEnterpriseMultiAccountReq.
-        :type: str
+        :type trans_id: str
         """
         self._trans_id = trans_id
 
@@ -142,7 +155,7 @@ class TransferEnterpriseMultiAccountReq:
         账户类型： BALANCE_TYPE_DEBIT：余额账户（默认）BALANCE_TYPE_CREDIT：信用账户
 
         :param balance_type: The balance_type of this TransferEnterpriseMultiAccountReq.
-        :type: str
+        :type balance_type: str
         """
         self._balance_type = balance_type
 
@@ -164,7 +177,7 @@ class TransferEnterpriseMultiAccountReq:
         账户到期时间，UTC时间，格式为：2016-03-28T14:45:38Z。 只对信用账户有效，用于限制针对有效期到期时间等于该时间的信用账户余额进行拨款，精确到秒。如果查询信用账户可拨款余额的查询结果没有失效时间，表示永久有效，对于这种账本拨款的情况无需填写。
 
         :param expire_time: The expire_time of this TransferEnterpriseMultiAccountReq.
-        :type: str
+        :type expire_time: str
         """
         self._expire_time = expire_time
 

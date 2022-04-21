@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDomainResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowDomainResponse(SdkResponse):
     }
 
     def __init__(self, total=None, domain_info=None):
-        """ShowDomainResponse - a model defined in huaweicloud sdk"""
+        """ShowDomainResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 查询结果的总数量
+        :type total: float
+        :param domain_info: 直播域名列表
+        :type domain_info: list[:class:`huaweicloudsdklive.v1.DecoupledLiveDomainInfo`]
+        """
         
         super(ShowDomainResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ShowDomainResponse(SdkResponse):
         查询结果的总数量
 
         :param total: The total of this ShowDomainResponse.
-        :type: float
+        :type total: float
         """
         self._total = total
 
@@ -74,7 +81,7 @@ class ShowDomainResponse(SdkResponse):
         直播域名列表
 
         :return: The domain_info of this ShowDomainResponse.
-        :rtype: list[DecoupledLiveDomainInfo]
+        :rtype: list[:class:`huaweicloudsdklive.v1.DecoupledLiveDomainInfo`]
         """
         return self._domain_info
 
@@ -85,7 +92,7 @@ class ShowDomainResponse(SdkResponse):
         直播域名列表
 
         :param domain_info: The domain_info of this ShowDomainResponse.
-        :type: list[DecoupledLiveDomainInfo]
+        :type domain_info: list[:class:`huaweicloudsdklive.v1.DecoupledLiveDomainInfo`]
         """
         self._domain_info = domain_info
 

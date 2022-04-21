@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateCaseRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateCaseRequestBody:
     }
 
     def __init__(self, contents=None, for_loop_params=None):
-        """UpdateCaseRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateCaseRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param contents: contents
+        :type contents: list[:class:`huaweicloudsdkcpts.v1.CaseInfo`]
+        :param for_loop_params: for_loop_params
+        :type for_loop_params: list[object]
+        """
         
         
 
@@ -52,7 +59,7 @@ class UpdateCaseRequestBody:
         contents
 
         :return: The contents of this UpdateCaseRequestBody.
-        :rtype: list[CaseInfo]
+        :rtype: list[:class:`huaweicloudsdkcpts.v1.CaseInfo`]
         """
         return self._contents
 
@@ -63,7 +70,7 @@ class UpdateCaseRequestBody:
         contents
 
         :param contents: The contents of this UpdateCaseRequestBody.
-        :type: list[CaseInfo]
+        :type contents: list[:class:`huaweicloudsdkcpts.v1.CaseInfo`]
         """
         self._contents = contents
 
@@ -85,7 +92,7 @@ class UpdateCaseRequestBody:
         for_loop_params
 
         :param for_loop_params: The for_loop_params of this UpdateCaseRequestBody.
-        :type: list[object]
+        :type for_loop_params: list[object]
         """
         self._for_loop_params = for_loop_params
 

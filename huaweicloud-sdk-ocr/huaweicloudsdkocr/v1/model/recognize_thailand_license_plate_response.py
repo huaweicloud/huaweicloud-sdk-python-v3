@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RecognizeThailandLicensePlateResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RecognizeThailandLicensePlateResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """RecognizeThailandLicensePlateResponse - a model defined in huaweicloud sdk"""
+        """RecognizeThailandLicensePlateResponse
+
+        The model defined in huaweicloud sdk
+
+        :param result: 调用成功时表示调用结果。 调用失败时无此字段 
+        :type result: list[:class:`huaweicloudsdkocr.v1.ThailandLicensePlateItem`]
+        """
         
         super(RecognizeThailandLicensePlateResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class RecognizeThailandLicensePlateResponse(SdkResponse):
         调用成功时表示调用结果。 调用失败时无此字段 
 
         :return: The result of this RecognizeThailandLicensePlateResponse.
-        :rtype: list[ThailandLicensePlateItem]
+        :rtype: list[:class:`huaweicloudsdkocr.v1.ThailandLicensePlateItem`]
         """
         return self._result
 
@@ -58,7 +63,7 @@ class RecognizeThailandLicensePlateResponse(SdkResponse):
         调用成功时表示调用结果。 调用失败时无此字段 
 
         :param result: The result of this RecognizeThailandLicensePlateResponse.
-        :type: list[ThailandLicensePlateItem]
+        :type result: list[:class:`huaweicloudsdkocr.v1.ThailandLicensePlateItem`]
         """
         self._result = result
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MigrateFollowerResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class MigrateFollowerResponse(SdkResponse):
     }
 
     def __init__(self, workflow_id=None):
-        """MigrateFollowerResponse - a model defined in huaweicloud sdk"""
+        """MigrateFollowerResponse
+
+        The model defined in huaweicloud sdk
+
+        :param workflow_id: 任务ID
+        :type workflow_id: str
+        """
         
         super(MigrateFollowerResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class MigrateFollowerResponse(SdkResponse):
         任务ID
 
         :param workflow_id: The workflow_id of this MigrateFollowerResponse.
-        :type: str
+        :type workflow_id: str
         """
         self._workflow_id = workflow_id
 

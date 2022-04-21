@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QosDataElement:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class QosDataElement:
     }
 
     def __init__(self, time=None, value=None, alarm=None, threshold=None):
-        """QosDataElement - a model defined in huaweicloud sdk"""
+        """QosDataElement
+
+        The model defined in huaweicloud sdk
+
+        :param time: QoS时间点, UTC时间，格式：yyyy-MM-ddTHH:mm:ss.SSSZ。
+        :type time: str
+        :param value: QoS值。
+        :type value: int
+        :param alarm: 该时间点是否有阈值告警. true: 阈值告警 false: 无阈值告警。
+        :type alarm: bool
+        :param threshold: 该时间点的阈值。
+        :type threshold: int
+        """
         
         
 
@@ -73,7 +84,7 @@ class QosDataElement:
         QoS时间点, UTC时间，格式：yyyy-MM-ddTHH:mm:ss.SSSZ。
 
         :param time: The time of this QosDataElement.
-        :type: str
+        :type time: str
         """
         self._time = time
 
@@ -95,7 +106,7 @@ class QosDataElement:
         QoS值。
 
         :param value: The value of this QosDataElement.
-        :type: int
+        :type value: int
         """
         self._value = value
 
@@ -117,7 +128,7 @@ class QosDataElement:
         该时间点是否有阈值告警. true: 阈值告警 false: 无阈值告警。
 
         :param alarm: The alarm of this QosDataElement.
-        :type: bool
+        :type alarm: bool
         """
         self._alarm = alarm
 
@@ -139,7 +150,7 @@ class QosDataElement:
         该时间点的阈值。
 
         :param threshold: The threshold of this QosDataElement.
-        :type: int
+        :type threshold: int
         """
         self._threshold = threshold
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListIncentiveDiscountPoliciesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListIncentiveDiscountPoliciesResponse(SdkResponse):
     }
 
     def __init__(self, policies=None, total_count=None):
-        """ListIncentiveDiscountPoliciesResponse - a model defined in huaweicloud sdk"""
+        """ListIncentiveDiscountPoliciesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param policies: 产品折扣和激励策略信息列表。 具体请参见表2。
+        :type policies: list[:class:`huaweicloudsdkbss.v2.IncentiveAndDiscountPolicy`]
+        :param total_count: 查询总条数。
+        :type total_count: int
+        """
         
         super(ListIncentiveDiscountPoliciesResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListIncentiveDiscountPoliciesResponse(SdkResponse):
         产品折扣和激励策略信息列表。 具体请参见表2。
 
         :return: The policies of this ListIncentiveDiscountPoliciesResponse.
-        :rtype: list[IncentiveAndDiscountPolicy]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.IncentiveAndDiscountPolicy`]
         """
         return self._policies
 
@@ -63,7 +70,7 @@ class ListIncentiveDiscountPoliciesResponse(SdkResponse):
         产品折扣和激励策略信息列表。 具体请参见表2。
 
         :param policies: The policies of this ListIncentiveDiscountPoliciesResponse.
-        :type: list[IncentiveAndDiscountPolicy]
+        :type policies: list[:class:`huaweicloudsdkbss.v2.IncentiveAndDiscountPolicy`]
         """
         self._policies = policies
 
@@ -85,7 +92,7 @@ class ListIncentiveDiscountPoliciesResponse(SdkResponse):
         查询总条数。
 
         :param total_count: The total_count of this ListIncentiveDiscountPoliciesResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 

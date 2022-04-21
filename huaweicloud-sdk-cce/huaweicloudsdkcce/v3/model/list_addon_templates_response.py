@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAddonTemplatesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListAddonTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, kind=None, api_version=None, items=None):
-        """ListAddonTemplatesResponse - a model defined in huaweicloud sdk"""
+        """ListAddonTemplatesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param kind: API类型，固定值“Addon”，该值不可修改。
+        :type kind: str
+        :param api_version: API版本，固定值“v3”，该值不可修改。
+        :type api_version: str
+        :param items: 插件模板列表
+        :type items: list[:class:`huaweicloudsdkcce.v3.AddonTemplate`]
+        """
         
         super(ListAddonTemplatesResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListAddonTemplatesResponse(SdkResponse):
         API类型，固定值“Addon”，该值不可修改。
 
         :param kind: The kind of this ListAddonTemplatesResponse.
-        :type: str
+        :type kind: str
         """
         self._kind = kind
 
@@ -90,7 +99,7 @@ class ListAddonTemplatesResponse(SdkResponse):
         API版本，固定值“v3”，该值不可修改。
 
         :param api_version: The api_version of this ListAddonTemplatesResponse.
-        :type: str
+        :type api_version: str
         """
         self._api_version = api_version
 
@@ -101,7 +110,7 @@ class ListAddonTemplatesResponse(SdkResponse):
         插件模板列表
 
         :return: The items of this ListAddonTemplatesResponse.
-        :rtype: list[AddonTemplate]
+        :rtype: list[:class:`huaweicloudsdkcce.v3.AddonTemplate`]
         """
         return self._items
 
@@ -112,7 +121,7 @@ class ListAddonTemplatesResponse(SdkResponse):
         插件模板列表
 
         :param items: The items of this ListAddonTemplatesResponse.
-        :type: list[AddonTemplate]
+        :type items: list[:class:`huaweicloudsdkcce.v3.AddonTemplate`]
         """
         self._items = items
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NovaLink:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class NovaLink:
     }
 
     def __init__(self, href=None, rel=None):
-        """NovaLink - a model defined in huaweicloud sdk"""
+        """NovaLink
+
+        The model defined in huaweicloud sdk
+
+        :param href: 相应资源的链接。
+        :type href: str
+        :param rel: 有三种取值。self：自助链接包含版本链接的资源。立即链接后使用这些链接。bookmark：书签链接提供了一个永久资源的永久链接，该链接适合于长期存储。alternate：备用链接可以包含资源的替换表示形式。例如，OpenStack计算映像可能在OpenStack映像服务中有一个替代表示。
+        :type rel: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class NovaLink:
         相应资源的链接。
 
         :param href: The href of this NovaLink.
-        :type: str
+        :type href: str
         """
         self._href = href
 
@@ -83,7 +90,7 @@ class NovaLink:
         有三种取值。self：自助链接包含版本链接的资源。立即链接后使用这些链接。bookmark：书签链接提供了一个永久资源的永久链接，该链接适合于长期存储。alternate：备用链接可以包含资源的替换表示形式。例如，OpenStack计算映像可能在OpenStack映像服务中有一个替代表示。
 
         :param rel: The rel of this NovaLink.
-        :type: str
+        :type rel: str
         """
         self._rel = rel
 

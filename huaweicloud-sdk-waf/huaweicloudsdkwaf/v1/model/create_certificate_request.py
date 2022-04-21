@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateCertificateRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateCertificateRequest:
     }
 
     def __init__(self, enterprise_project_id=None, body=None):
-        """CreateCertificateRequest - a model defined in huaweicloud sdk"""
+        """CreateCertificateRequest
+
+        The model defined in huaweicloud sdk
+
+        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        :type enterprise_project_id: str
+        :param body: Body of the CreateCertificateRequest
+        :type body: :class:`huaweicloudsdkwaf.v1.CreateCertificateRequestBody`
+        """
         
         
 
@@ -63,7 +70,7 @@ class CreateCertificateRequest:
         您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this CreateCertificateRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -73,7 +80,7 @@ class CreateCertificateRequest:
 
 
         :return: The body of this CreateCertificateRequest.
-        :rtype: CreateCertificateRequestBody
+        :rtype: :class:`huaweicloudsdkwaf.v1.CreateCertificateRequestBody`
         """
         return self._body
 
@@ -83,7 +90,7 @@ class CreateCertificateRequest:
 
 
         :param body: The body of this CreateCertificateRequest.
-        :type: CreateCertificateRequestBody
+        :type body: :class:`huaweicloudsdkwaf.v1.CreateCertificateRequestBody`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAssetsNewRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListAssetsNewRequest:
     }
 
     def __init__(self, limit=None, offset=None, filter=None, type=None):
-        """ListAssetsNewRequest - a model defined in huaweicloud sdk"""
+        """ListAssetsNewRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 每页记录数
+        :type limit: int
+        :param offset: 页码
+        :type offset: int
+        :param filter: 查询过滤器 示例： {\&quot;key\&quot;:\&quot;xxx\&quot;} {\&quot;key1\&quot;:\&quot;xxx\&quot;,\&quot;key2\&quot;:\&quot;xxx\&quot;} {\&quot;key\&quot;:{\&quot;eq|like\&quot;:\&quot;xxx\&quot;}} {\&quot;key\&quot;:{\&quot;in\&quot;:[\&quot;xxx\&quot;,\&quot;xxx\&quot;]}} {\&quot;or\&quot;:{\&quot;key1\&quot;:\&quot;xxx\&quot;,\&quot;key2\&quot;:{\&quot;eq|like\&quot;:\&quot;xxx\&quot;},\&quot;key3\&quot;:{\&quot;in\&quot;:[\&quot;xxx\&quot;,\&quot;xxx\&quot;]}}} {\&quot;and\&quot;:{\&quot;key1\&quot;:\&quot;xxx\&quot;,\&quot;key2\&quot;:{\&quot;eq|like\&quot;:\&quot;xxx\&quot;},\&quot;key3\&quot;:{\&quot;in\&quot;:[\&quot;xxx\&quot;,\&quot;xxx\&quot;]}}} 支持的key： asset_model_id，asset_id，parent，name，display_name，root，state，job_id 注意： job_id只在RELEASE态下生效，只支持contain过滤 {\&quot;job_id\&quot;:{\&quot;contain\&quot;:\&quot;xxx\&quot;}}
+        :type filter: str
+        :param type: SKETCH：草稿态；RELEASE：发布态
+        :type type: str
+        """
         
         
 
@@ -72,7 +83,7 @@ class ListAssetsNewRequest:
         每页记录数
 
         :param limit: The limit of this ListAssetsNewRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -94,7 +105,7 @@ class ListAssetsNewRequest:
         页码
 
         :param offset: The offset of this ListAssetsNewRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -116,7 +127,7 @@ class ListAssetsNewRequest:
         查询过滤器 示例： {\"key\":\"xxx\"} {\"key1\":\"xxx\",\"key2\":\"xxx\"} {\"key\":{\"eq|like\":\"xxx\"}} {\"key\":{\"in\":[\"xxx\",\"xxx\"]}} {\"or\":{\"key1\":\"xxx\",\"key2\":{\"eq|like\":\"xxx\"},\"key3\":{\"in\":[\"xxx\",\"xxx\"]}}} {\"and\":{\"key1\":\"xxx\",\"key2\":{\"eq|like\":\"xxx\"},\"key3\":{\"in\":[\"xxx\",\"xxx\"]}}} 支持的key： asset_model_id，asset_id，parent，name，display_name，root，state，job_id 注意： job_id只在RELEASE态下生效，只支持contain过滤 {\"job_id\":{\"contain\":\"xxx\"}}
 
         :param filter: The filter of this ListAssetsNewRequest.
-        :type: str
+        :type filter: str
         """
         self._filter = filter
 
@@ -138,7 +149,7 @@ class ListAssetsNewRequest:
         SKETCH：草稿态；RELEASE：发布态
 
         :param type: The type of this ListAssetsNewRequest.
-        :type: str
+        :type type: str
         """
         self._type = type
 

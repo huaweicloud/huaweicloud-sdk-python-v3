@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class L7policiesInStatusResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class L7policiesInStatusResp:
     }
 
     def __init__(self, id=None, name=None, rules=None, action=None, provisioning_status=None):
-        """L7policiesInStatusResp - a model defined in huaweicloud sdk"""
+        """L7policiesInStatusResp
+
+        The model defined in huaweicloud sdk
+
+        :param id: 转发策略ID
+        :type id: str
+        :param name: 转发策略名称
+        :type name: str
+        :param rules: 转发策略关联的转发规则列表
+        :type rules: list[:class:`huaweicloudsdkelb.v2.L7rulesInStatusResp`]
+        :param action: 转发策略的转发动作；取值：REDIRECT_TO_POOL：转发到后端云服务器组；REDIRECT_TO_LISTENER：重定向到监听器
+        :type action: str
+        :param provisioning_status: 健康检查的配置状态；该字段为预留字段，暂未启用。默认为ACTIVE。
+        :type provisioning_status: str
+        """
         
         
 
@@ -73,7 +86,7 @@ class L7policiesInStatusResp:
         转发策略ID
 
         :param id: The id of this L7policiesInStatusResp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -95,7 +108,7 @@ class L7policiesInStatusResp:
         转发策略名称
 
         :param name: The name of this L7policiesInStatusResp.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -106,7 +119,7 @@ class L7policiesInStatusResp:
         转发策略关联的转发规则列表
 
         :return: The rules of this L7policiesInStatusResp.
-        :rtype: list[L7rulesInStatusResp]
+        :rtype: list[:class:`huaweicloudsdkelb.v2.L7rulesInStatusResp`]
         """
         return self._rules
 
@@ -117,7 +130,7 @@ class L7policiesInStatusResp:
         转发策略关联的转发规则列表
 
         :param rules: The rules of this L7policiesInStatusResp.
-        :type: list[L7rulesInStatusResp]
+        :type rules: list[:class:`huaweicloudsdkelb.v2.L7rulesInStatusResp`]
         """
         self._rules = rules
 
@@ -139,7 +152,7 @@ class L7policiesInStatusResp:
         转发策略的转发动作；取值：REDIRECT_TO_POOL：转发到后端云服务器组；REDIRECT_TO_LISTENER：重定向到监听器
 
         :param action: The action of this L7policiesInStatusResp.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -161,7 +174,7 @@ class L7policiesInStatusResp:
         健康检查的配置状态；该字段为预留字段，暂未启用。默认为ACTIVE。
 
         :param provisioning_status: The provisioning_status of this L7policiesInStatusResp.
-        :type: str
+        :type provisioning_status: str
         """
         self._provisioning_status = provisioning_status
 

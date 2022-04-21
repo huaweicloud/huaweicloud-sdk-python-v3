@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CdmStopClusterReqStop:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CdmStopClusterReqStop:
     }
 
     def __init__(self, stop_mode=None, delay_time=None):
-        """CdmStopClusterReqStop - a model defined in huaweicloud sdk"""
+        """CdmStopClusterReqStop
+
+        The model defined in huaweicloud sdk
+
+        :param stop_mode: 关机类型： - IMMEDIATELY：立即关机。 - GRACEFULLY：优雅关机。
+        :type stop_mode: str
+        :param delay_time: 关机时延，仅在stopMode为“GRACEFULLY”生效，单位：秒。该值为-1时，表示等待所有作业完成，并停止接受新作业。该值为大于0的任意值表示等待该时长后关机，并停止接受新作业。
+        :type delay_time: int
+        """
         
         
 
@@ -62,7 +69,7 @@ class CdmStopClusterReqStop:
         关机类型： - IMMEDIATELY：立即关机。 - GRACEFULLY：优雅关机。
 
         :param stop_mode: The stop_mode of this CdmStopClusterReqStop.
-        :type: str
+        :type stop_mode: str
         """
         self._stop_mode = stop_mode
 
@@ -84,7 +91,7 @@ class CdmStopClusterReqStop:
         关机时延，仅在stopMode为“GRACEFULLY”生效，单位：秒。该值为-1时，表示等待所有作业完成，并停止接受新作业。该值为大于0的任意值表示等待该时长后关机，并停止接受新作业。
 
         :param delay_time: The delay_time of this CdmStopClusterReqStop.
-        :type: int
+        :type delay_time: int
         """
         self._delay_time = delay_time
 

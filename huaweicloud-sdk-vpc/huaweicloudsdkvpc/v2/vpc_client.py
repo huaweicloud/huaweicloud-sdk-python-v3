@@ -52,21 +52,17 @@ class VpcClient(Client):
         """接受对等连接请求
 
         租户A名下的VPC申请和租户B的VPC建立对等连接，需要等待租户B接受该请求。此接口用于租户接受其他租户发起的对等连接请求。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param AcceptVpcPeeringRequest request
-        :return: AcceptVpcPeeringResponse
+        :param request: Request instance for AcceptVpcPeering
+        :type request: :class:`huaweicloudsdkvpc.v2.AcceptVpcPeeringRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.AcceptVpcPeeringResponse`
         """
         return self.accept_vpc_peering_with_http_info(request)
 
     def accept_vpc_peering_with_http_info(self, request):
-        """接受对等连接请求
-
-        租户A名下的VPC申请和租户B的VPC建立对等连接，需要等待租户B接受该请求。此接口用于租户接受其他租户发起的对等连接请求。
-
-        :param AcceptVpcPeeringRequest request
-        :return: AcceptVpcPeeringResponse
-        """
-
         all_params = ['peering_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -110,26 +106,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def associate_route_table(self, request):
         """子网关联路由表
 
         路由表关联子网。子网关联路由表A后，再关联B，不需要先跟路由表A解关联再关联路由表B
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param AssociateRouteTableRequest request
-        :return: AssociateRouteTableResponse
+        :param request: Request instance for AssociateRouteTable
+        :type request: :class:`huaweicloudsdkvpc.v2.AssociateRouteTableRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.AssociateRouteTableResponse`
         """
         return self.associate_route_table_with_http_info(request)
 
     def associate_route_table_with_http_info(self, request):
-        """子网关联路由表
-
-        路由表关联子网。子网关联路由表A后，再关联B，不需要先跟路由表A解关联再关联路由表B
-
-        :param AssociateRouteTableRequest request
-        :return: AssociateRouteTableResponse
-        """
-
         all_params = ['routetable_id', 'routetable_associate']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -175,26 +166,22 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_create_subnet_tags(self, request):
         """批量创建子网资源标签
 
-        为指定的子网资源实例批量添加标签。 此接口为幂等接口：创建时如果请求体中存在重复key则报错。创建时，不允许设置重复key数据，如果数据库已存在该key，就覆盖value的值。
+        为指定的子网资源实例批量添加标签。
+        此接口为幂等接口：创建时如果请求体中存在重复key则报错。创建时，不允许设置重复key数据，如果数据库已存在该key，就覆盖value的值。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchCreateSubnetTagsRequest request
-        :return: BatchCreateSubnetTagsResponse
+        :param request: Request instance for BatchCreateSubnetTags
+        :type request: :class:`huaweicloudsdkvpc.v2.BatchCreateSubnetTagsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.BatchCreateSubnetTagsResponse`
         """
         return self.batch_create_subnet_tags_with_http_info(request)
 
     def batch_create_subnet_tags_with_http_info(self, request):
-        """批量创建子网资源标签
-
-        为指定的子网资源实例批量添加标签。 此接口为幂等接口：创建时如果请求体中存在重复key则报错。创建时，不允许设置重复key数据，如果数据库已存在该key，就覆盖value的值。
-
-        :param BatchCreateSubnetTagsRequest request
-        :return: BatchCreateSubnetTagsResponse
-        """
-
         all_params = ['subnet_id', 'batch_create_subnet_tags_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -240,26 +227,22 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_delete_subnet_tags(self, request):
         """批量删除子网资源标签
 
-        为指定的子网资源实例批量删除标签 此接口为幂等接口：删除时，如果删除的标签不存在，默认处理成功；删除时不对标签字符集范围做校验。删除时tags结构体不能缺失，key不能为空，或者空字符串。
+        为指定的子网资源实例批量删除标签
+        此接口为幂等接口：删除时，如果删除的标签不存在，默认处理成功；删除时不对标签字符集范围做校验。删除时tags结构体不能缺失，key不能为空，或者空字符串。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchDeleteSubnetTagsRequest request
-        :return: BatchDeleteSubnetTagsResponse
+        :param request: Request instance for BatchDeleteSubnetTags
+        :type request: :class:`huaweicloudsdkvpc.v2.BatchDeleteSubnetTagsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.BatchDeleteSubnetTagsResponse`
         """
         return self.batch_delete_subnet_tags_with_http_info(request)
 
     def batch_delete_subnet_tags_with_http_info(self, request):
-        """批量删除子网资源标签
-
-        为指定的子网资源实例批量删除标签 此接口为幂等接口：删除时，如果删除的标签不存在，默认处理成功；删除时不对标签字符集范围做校验。删除时tags结构体不能缺失，key不能为空，或者空字符串。
-
-        :param BatchDeleteSubnetTagsRequest request
-        :return: BatchDeleteSubnetTagsResponse
-        """
-
         all_params = ['subnet_id', 'batch_delete_subnet_tags_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -305,26 +288,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_port(self, request):
         """创建端口
 
         创建端口。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreatePortRequest request
-        :return: CreatePortResponse
+        :param request: Request instance for CreatePort
+        :type request: :class:`huaweicloudsdkvpc.v2.CreatePortRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.CreatePortResponse`
         """
         return self.create_port_with_http_info(request)
 
     def create_port_with_http_info(self, request):
-        """创建端口
-
-        创建端口。
-
-        :param CreatePortRequest request
-        :return: CreatePortResponse
-        """
-
         all_params = ['port']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -368,26 +346,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_route_table(self, request):
         """创建路由表
 
         创建路由表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateRouteTableRequest request
-        :return: CreateRouteTableResponse
+        :param request: Request instance for CreateRouteTable
+        :type request: :class:`huaweicloudsdkvpc.v2.CreateRouteTableRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.CreateRouteTableResponse`
         """
         return self.create_route_table_with_http_info(request)
 
     def create_route_table_with_http_info(self, request):
-        """创建路由表
-
-        创建路由表
-
-        :param CreateRouteTableRequest request
-        :return: CreateRouteTableResponse
-        """
-
         all_params = ['routetable']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -431,26 +404,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_security_group(self, request):
         """创建安全组
 
         创建安全组。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateSecurityGroupRequest request
-        :return: CreateSecurityGroupResponse
+        :param request: Request instance for CreateSecurityGroup
+        :type request: :class:`huaweicloudsdkvpc.v2.CreateSecurityGroupRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.CreateSecurityGroupResponse`
         """
         return self.create_security_group_with_http_info(request)
 
     def create_security_group_with_http_info(self, request):
-        """创建安全组
-
-        创建安全组。
-
-        :param CreateSecurityGroupRequest request
-        :return: CreateSecurityGroupResponse
-        """
-
         all_params = ['security_group']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -494,26 +462,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_security_group_rule(self, request):
         """创建安全组规则
 
         创建安全组规则。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateSecurityGroupRuleRequest request
-        :return: CreateSecurityGroupRuleResponse
+        :param request: Request instance for CreateSecurityGroupRule
+        :type request: :class:`huaweicloudsdkvpc.v2.CreateSecurityGroupRuleRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.CreateSecurityGroupRuleResponse`
         """
         return self.create_security_group_rule_with_http_info(request)
 
     def create_security_group_rule_with_http_info(self, request):
-        """创建安全组规则
-
-        创建安全组规则。
-
-        :param CreateSecurityGroupRuleRequest request
-        :return: CreateSecurityGroupRuleResponse
-        """
-
         all_params = ['security_group_rule']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -557,26 +520,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_subnet(self, request):
         """创建子网
 
         创建子网。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateSubnetRequest request
-        :return: CreateSubnetResponse
+        :param request: Request instance for CreateSubnet
+        :type request: :class:`huaweicloudsdkvpc.v2.CreateSubnetRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.CreateSubnetResponse`
         """
         return self.create_subnet_with_http_info(request)
 
     def create_subnet_with_http_info(self, request):
-        """创建子网
-
-        创建子网。
-
-        :param CreateSubnetRequest request
-        :return: CreateSubnetResponse
-        """
-
         all_params = ['subnet']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -620,26 +578,22 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_subnet_tag(self, request):
         """创建子网资源标签
 
-        给指定子网资源实例增加标签信息。 此接口为幂等接口：创建时，如果创建的标签已经存在（key相同），则覆盖。
+        给指定子网资源实例增加标签信息。
+        此接口为幂等接口：创建时，如果创建的标签已经存在（key相同），则覆盖。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateSubnetTagRequest request
-        :return: CreateSubnetTagResponse
+        :param request: Request instance for CreateSubnetTag
+        :type request: :class:`huaweicloudsdkvpc.v2.CreateSubnetTagRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.CreateSubnetTagResponse`
         """
         return self.create_subnet_tag_with_http_info(request)
 
     def create_subnet_tag_with_http_info(self, request):
-        """创建子网资源标签
-
-        给指定子网资源实例增加标签信息。 此接口为幂等接口：创建时，如果创建的标签已经存在（key相同），则覆盖。
-
-        :param CreateSubnetTagRequest request
-        :return: CreateSubnetTagResponse
-        """
-
         all_params = ['subnet_id', 'create_subnet_tag_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -685,26 +639,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_vpc_peering(self, request):
         """创建对等连接
 
         创建对等连接。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateVpcPeeringRequest request
-        :return: CreateVpcPeeringResponse
+        :param request: Request instance for CreateVpcPeering
+        :type request: :class:`huaweicloudsdkvpc.v2.CreateVpcPeeringRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.CreateVpcPeeringResponse`
         """
         return self.create_vpc_peering_with_http_info(request)
 
     def create_vpc_peering_with_http_info(self, request):
-        """创建对等连接
-
-        创建对等连接。
-
-        :param CreateVpcPeeringRequest request
-        :return: CreateVpcPeeringResponse
-        """
-
         all_params = ['peering']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -748,26 +697,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_port(self, request):
         """删除端口
 
         删除端口。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeletePortRequest request
-        :return: DeletePortResponse
+        :param request: Request instance for DeletePort
+        :type request: :class:`huaweicloudsdkvpc.v2.DeletePortRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.DeletePortResponse`
         """
         return self.delete_port_with_http_info(request)
 
     def delete_port_with_http_info(self, request):
-        """删除端口
-
-        删除端口。
-
-        :param DeletePortRequest request
-        :return: DeletePortResponse
-        """
-
         all_params = ['port_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -811,26 +755,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_route_table(self, request):
         """删除路由表
 
         删除路由表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteRouteTableRequest request
-        :return: DeleteRouteTableResponse
+        :param request: Request instance for DeleteRouteTable
+        :type request: :class:`huaweicloudsdkvpc.v2.DeleteRouteTableRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.DeleteRouteTableResponse`
         """
         return self.delete_route_table_with_http_info(request)
 
     def delete_route_table_with_http_info(self, request):
-        """删除路由表
-
-        删除路由表
-
-        :param DeleteRouteTableRequest request
-        :return: DeleteRouteTableResponse
-        """
-
         all_params = ['routetable_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -874,26 +813,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_security_group(self, request):
         """删除安全组
 
         删除安全组。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteSecurityGroupRequest request
-        :return: DeleteSecurityGroupResponse
+        :param request: Request instance for DeleteSecurityGroup
+        :type request: :class:`huaweicloudsdkvpc.v2.DeleteSecurityGroupRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.DeleteSecurityGroupResponse`
         """
         return self.delete_security_group_with_http_info(request)
 
     def delete_security_group_with_http_info(self, request):
-        """删除安全组
-
-        删除安全组。
-
-        :param DeleteSecurityGroupRequest request
-        :return: DeleteSecurityGroupResponse
-        """
-
         all_params = ['security_group_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -937,26 +871,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_security_group_rule(self, request):
         """删除安全组规则
 
         删除安全组规则。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteSecurityGroupRuleRequest request
-        :return: DeleteSecurityGroupRuleResponse
+        :param request: Request instance for DeleteSecurityGroupRule
+        :type request: :class:`huaweicloudsdkvpc.v2.DeleteSecurityGroupRuleRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.DeleteSecurityGroupRuleResponse`
         """
         return self.delete_security_group_rule_with_http_info(request)
 
     def delete_security_group_rule_with_http_info(self, request):
-        """删除安全组规则
-
-        删除安全组规则。
-
-        :param DeleteSecurityGroupRuleRequest request
-        :return: DeleteSecurityGroupRuleResponse
-        """
-
         all_params = ['security_group_rule_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1000,26 +929,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_subnet(self, request):
         """删除子网
 
         删除子网
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteSubnetRequest request
-        :return: DeleteSubnetResponse
+        :param request: Request instance for DeleteSubnet
+        :type request: :class:`huaweicloudsdkvpc.v2.DeleteSubnetRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.DeleteSubnetResponse`
         """
         return self.delete_subnet_with_http_info(request)
 
     def delete_subnet_with_http_info(self, request):
-        """删除子网
-
-        删除子网
-
-        :param DeleteSubnetRequest request
-        :return: DeleteSubnetResponse
-        """
-
         all_params = ['vpc_id', 'subnet_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1065,26 +989,22 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_subnet_tag(self, request):
         """删除子网资源标签
 
-        删除指定子网资源实例的标签信息。 该接口为幂等接口：删除的key不存在报404，Key不能为空或者空字符串
+        删除指定子网资源实例的标签信息。
+        该接口为幂等接口：删除的key不存在报404，Key不能为空或者空字符串
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteSubnetTagRequest request
-        :return: DeleteSubnetTagResponse
+        :param request: Request instance for DeleteSubnetTag
+        :type request: :class:`huaweicloudsdkvpc.v2.DeleteSubnetTagRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.DeleteSubnetTagResponse`
         """
         return self.delete_subnet_tag_with_http_info(request)
 
     def delete_subnet_tag_with_http_info(self, request):
-        """删除子网资源标签
-
-        删除指定子网资源实例的标签信息。 该接口为幂等接口：删除的key不存在报404，Key不能为空或者空字符串
-
-        :param DeleteSubnetTagRequest request
-        :return: DeleteSubnetTagResponse
-        """
-
         all_params = ['subnet_id', 'key']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1130,26 +1050,22 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_vpc_peering(self, request):
         """删除对等连接
 
-        删除对等连接。 可以在在本端或对端任何一端删除对等连接。
+        删除对等连接。
+        可以在在本端或对端任何一端删除对等连接。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteVpcPeeringRequest request
-        :return: DeleteVpcPeeringResponse
+        :param request: Request instance for DeleteVpcPeering
+        :type request: :class:`huaweicloudsdkvpc.v2.DeleteVpcPeeringRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.DeleteVpcPeeringResponse`
         """
         return self.delete_vpc_peering_with_http_info(request)
 
     def delete_vpc_peering_with_http_info(self, request):
-        """删除对等连接
-
-        删除对等连接。 可以在在本端或对端任何一端删除对等连接。
-
-        :param DeleteVpcPeeringRequest request
-        :return: DeleteVpcPeeringResponse
-        """
-
         all_params = ['peering_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1193,26 +1109,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def disassociate_route_table(self, request):
         """子网解关联路由表
 
         子网解关联路由表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DisassociateRouteTableRequest request
-        :return: DisassociateRouteTableResponse
+        :param request: Request instance for DisassociateRouteTable
+        :type request: :class:`huaweicloudsdkvpc.v2.DisassociateRouteTableRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.DisassociateRouteTableResponse`
         """
         return self.disassociate_route_table_with_http_info(request)
 
     def disassociate_route_table_with_http_info(self, request):
-        """子网解关联路由表
-
-        子网解关联路由表
-
-        :param DisassociateRouteTableRequest request
-        :return: DisassociateRouteTableResponse
-        """
-
         all_params = ['routetable_id', 'routetable_associate']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1258,26 +1169,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_ports(self, request):
         """查询端口列表
 
         查询提交请求的租户的所有端口，单次查询最多返回2000条数据。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListPortsRequest request
-        :return: ListPortsResponse
+        :param request: Request instance for ListPorts
+        :type request: :class:`huaweicloudsdkvpc.v2.ListPortsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.ListPortsResponse`
         """
         return self.list_ports_with_http_info(request)
 
     def list_ports_with_http_info(self, request):
-        """查询端口列表
-
-        查询提交请求的租户的所有端口，单次查询最多返回2000条数据。
-
-        :param ListPortsRequest request
-        :return: ListPortsResponse
-        """
-
         all_params = ['name', 'id', 'limit', 'admin_state_up', 'network_id', 'mac_address', 'device_id', 'device_owner', 'status', 'marker', 'fixed_ips', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1343,26 +1249,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_route_tables(self, request):
         """查询路由表列表
 
         查询提交请求的帐户的所有路由表列表，并根据过滤条件进行过滤
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListRouteTablesRequest request
-        :return: ListRouteTablesResponse
+        :param request: Request instance for ListRouteTables
+        :type request: :class:`huaweicloudsdkvpc.v2.ListRouteTablesRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.ListRouteTablesResponse`
         """
         return self.list_route_tables_with_http_info(request)
 
     def list_route_tables_with_http_info(self, request):
-        """查询路由表列表
-
-        查询提交请求的帐户的所有路由表列表，并根据过滤条件进行过滤
-
-        :param ListRouteTablesRequest request
-        :return: ListRouteTablesResponse
-        """
-
         all_params = ['limit', 'marker', 'id', 'vpc_id', 'subnet_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1414,26 +1315,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_security_group_rules(self, request):
         """查询安全组规则列表
 
         查询安全组规则列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListSecurityGroupRulesRequest request
-        :return: ListSecurityGroupRulesResponse
+        :param request: Request instance for ListSecurityGroupRules
+        :type request: :class:`huaweicloudsdkvpc.v2.ListSecurityGroupRulesRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.ListSecurityGroupRulesResponse`
         """
         return self.list_security_group_rules_with_http_info(request)
 
     def list_security_group_rules_with_http_info(self, request):
-        """查询安全组规则列表
-
-        查询安全组规则列表。
-
-        :param ListSecurityGroupRulesRequest request
-        :return: ListSecurityGroupRulesResponse
-        """
-
         all_params = ['marker', 'limit', 'security_group_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1481,26 +1377,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_security_groups(self, request):
         """查询安全组列表
 
         查询安全组列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListSecurityGroupsRequest request
-        :return: ListSecurityGroupsResponse
+        :param request: Request instance for ListSecurityGroups
+        :type request: :class:`huaweicloudsdkvpc.v2.ListSecurityGroupsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.ListSecurityGroupsResponse`
         """
         return self.list_security_groups_with_http_info(request)
 
     def list_security_groups_with_http_info(self, request):
-        """查询安全组列表
-
-        查询安全组列表
-
-        :param ListSecurityGroupsRequest request
-        :return: ListSecurityGroupsResponse
-        """
-
         all_params = ['limit', 'marker', 'vpc_id', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1550,26 +1441,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_subnet_tags(self, request):
         """查询子网项目标签
 
         查询租户在指定区域和实例类型的所有标签集合
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListSubnetTagsRequest request
-        :return: ListSubnetTagsResponse
+        :param request: Request instance for ListSubnetTags
+        :type request: :class:`huaweicloudsdkvpc.v2.ListSubnetTagsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.ListSubnetTagsResponse`
         """
         return self.list_subnet_tags_with_http_info(request)
 
     def list_subnet_tags_with_http_info(self, request):
-        """查询子网项目标签
-
-        查询租户在指定区域和实例类型的所有标签集合
-
-        :param ListSubnetTagsRequest request
-        :return: ListSubnetTagsResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1611,26 +1497,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_subnets(self, request):
         """查询子网列表
 
         查询子网列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListSubnetsRequest request
-        :return: ListSubnetsResponse
+        :param request: Request instance for ListSubnets
+        :type request: :class:`huaweicloudsdkvpc.v2.ListSubnetsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.ListSubnetsResponse`
         """
         return self.list_subnets_with_http_info(request)
 
     def list_subnets_with_http_info(self, request):
-        """查询子网列表
-
-        查询子网列表
-
-        :param ListSubnetsRequest request
-        :return: ListSubnetsResponse
-        """
-
         all_params = ['limit', 'marker', 'vpc_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1678,26 +1559,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_subnets_by_tags(self, request):
         """查询子网资源实例
 
         使用标签过滤实例
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListSubnetsByTagsRequest request
-        :return: ListSubnetsByTagsResponse
+        :param request: Request instance for ListSubnetsByTags
+        :type request: :class:`huaweicloudsdkvpc.v2.ListSubnetsByTagsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.ListSubnetsByTagsResponse`
         """
         return self.list_subnets_by_tags_with_http_info(request)
 
     def list_subnets_by_tags_with_http_info(self, request):
-        """查询子网资源实例
-
-        使用标签过滤实例
-
-        :param ListSubnetsByTagsRequest request
-        :return: ListSubnetsByTagsResponse
-        """
-
         all_params = ['list_subnets_by_tags_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1741,26 +1617,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_vpc_peerings(self, request):
         """查询对等连接列表
 
         查询提交请求的租户的所有对等连接。根据过滤条件进行过滤。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListVpcPeeringsRequest request
-        :return: ListVpcPeeringsResponse
+        :param request: Request instance for ListVpcPeerings
+        :type request: :class:`huaweicloudsdkvpc.v2.ListVpcPeeringsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.ListVpcPeeringsResponse`
         """
         return self.list_vpc_peerings_with_http_info(request)
 
     def list_vpc_peerings_with_http_info(self, request):
-        """查询对等连接列表
-
-        查询提交请求的租户的所有对等连接。根据过滤条件进行过滤。
-
-        :param ListVpcPeeringsRequest request
-        :return: ListVpcPeeringsResponse
-        """
-
         all_params = ['limit', 'marker', 'id', 'name', 'status', 'tenant_id', 'vpc_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1816,26 +1687,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def reject_vpc_peering(self, request):
         """拒绝对等连接请求
 
         租户A名下的VPC申请和租户B的VPC建立对等连接，需要等待租户B接受该请求。此接口用于租户拒绝其他租户发起的对等连接请求。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param RejectVpcPeeringRequest request
-        :return: RejectVpcPeeringResponse
+        :param request: Request instance for RejectVpcPeering
+        :type request: :class:`huaweicloudsdkvpc.v2.RejectVpcPeeringRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.RejectVpcPeeringResponse`
         """
         return self.reject_vpc_peering_with_http_info(request)
 
     def reject_vpc_peering_with_http_info(self, request):
-        """拒绝对等连接请求
-
-        租户A名下的VPC申请和租户B的VPC建立对等连接，需要等待租户B接受该请求。此接口用于租户拒绝其他租户发起的对等连接请求。
-
-        :param RejectVpcPeeringRequest request
-        :return: RejectVpcPeeringResponse
-        """
-
         all_params = ['peering_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1879,26 +1745,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_port(self, request):
         """查询端口
 
         查询单个端口详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowPortRequest request
-        :return: ShowPortResponse
+        :param request: Request instance for ShowPort
+        :type request: :class:`huaweicloudsdkvpc.v2.ShowPortRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.ShowPortResponse`
         """
         return self.show_port_with_http_info(request)
 
     def show_port_with_http_info(self, request):
-        """查询端口
-
-        查询单个端口详情。
-
-        :param ShowPortRequest request
-        :return: ShowPortResponse
-        """
-
         all_params = ['port_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1942,26 +1803,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_quota(self, request):
         """查询配额
 
         查询单租户在VPC服务下的网络资源配额，包括vpc配额、子网配额、安全组配额、安全组规则配额、弹性公网IP配额，vpn配额等。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowQuotaRequest request
-        :return: ShowQuotaResponse
+        :param request: Request instance for ShowQuota
+        :type request: :class:`huaweicloudsdkvpc.v2.ShowQuotaRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.ShowQuotaResponse`
         """
         return self.show_quota_with_http_info(request)
 
     def show_quota_with_http_info(self, request):
-        """查询配额
-
-        查询单租户在VPC服务下的网络资源配额，包括vpc配额、子网配额、安全组配额、安全组规则配额、弹性公网IP配额，vpn配额等。
-
-        :param ShowQuotaRequest request
-        :return: ShowQuotaResponse
-        """
-
         all_params = ['type']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2005,26 +1861,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_route_table(self, request):
         """查询路由表
 
         查询路由表详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowRouteTableRequest request
-        :return: ShowRouteTableResponse
+        :param request: Request instance for ShowRouteTable
+        :type request: :class:`huaweicloudsdkvpc.v2.ShowRouteTableRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.ShowRouteTableResponse`
         """
         return self.show_route_table_with_http_info(request)
 
     def show_route_table_with_http_info(self, request):
-        """查询路由表
-
-        查询路由表详情
-
-        :param ShowRouteTableRequest request
-        :return: ShowRouteTableResponse
-        """
-
         all_params = ['routetable_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2068,26 +1919,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_security_group(self, request):
         """查询安全组
 
         查询单个安全组详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowSecurityGroupRequest request
-        :return: ShowSecurityGroupResponse
+        :param request: Request instance for ShowSecurityGroup
+        :type request: :class:`huaweicloudsdkvpc.v2.ShowSecurityGroupRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.ShowSecurityGroupResponse`
         """
         return self.show_security_group_with_http_info(request)
 
     def show_security_group_with_http_info(self, request):
-        """查询安全组
-
-        查询单个安全组详情。
-
-        :param ShowSecurityGroupRequest request
-        :return: ShowSecurityGroupResponse
-        """
-
         all_params = ['security_group_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2131,26 +1977,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_security_group_rule(self, request):
         """查询安全组规则
 
         查询单个安全组规则详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowSecurityGroupRuleRequest request
-        :return: ShowSecurityGroupRuleResponse
+        :param request: Request instance for ShowSecurityGroupRule
+        :type request: :class:`huaweicloudsdkvpc.v2.ShowSecurityGroupRuleRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.ShowSecurityGroupRuleResponse`
         """
         return self.show_security_group_rule_with_http_info(request)
 
     def show_security_group_rule_with_http_info(self, request):
-        """查询安全组规则
-
-        查询单个安全组规则详情
-
-        :param ShowSecurityGroupRuleRequest request
-        :return: ShowSecurityGroupRuleResponse
-        """
-
         all_params = ['security_group_rule_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2194,26 +2035,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_subnet(self, request):
         """查询子网
 
         查询子网详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowSubnetRequest request
-        :return: ShowSubnetResponse
+        :param request: Request instance for ShowSubnet
+        :type request: :class:`huaweicloudsdkvpc.v2.ShowSubnetRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.ShowSubnetResponse`
         """
         return self.show_subnet_with_http_info(request)
 
     def show_subnet_with_http_info(self, request):
-        """查询子网
-
-        查询子网详情。
-
-        :param ShowSubnetRequest request
-        :return: ShowSubnetResponse
-        """
-
         all_params = ['subnet_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2257,26 +2093,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_subnet_tags(self, request):
         """查询子网资源标签
 
         查询指定子网实例的标签信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowSubnetTagsRequest request
-        :return: ShowSubnetTagsResponse
+        :param request: Request instance for ShowSubnetTags
+        :type request: :class:`huaweicloudsdkvpc.v2.ShowSubnetTagsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.ShowSubnetTagsResponse`
         """
         return self.show_subnet_tags_with_http_info(request)
 
     def show_subnet_tags_with_http_info(self, request):
-        """查询子网资源标签
-
-        查询指定子网实例的标签信息。
-
-        :param ShowSubnetTagsRequest request
-        :return: ShowSubnetTagsResponse
-        """
-
         all_params = ['subnet_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2320,26 +2151,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_vpc_peering(self, request):
         """查询对等连接
 
         查询对等连接详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowVpcPeeringRequest request
-        :return: ShowVpcPeeringResponse
+        :param request: Request instance for ShowVpcPeering
+        :type request: :class:`huaweicloudsdkvpc.v2.ShowVpcPeeringRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.ShowVpcPeeringResponse`
         """
         return self.show_vpc_peering_with_http_info(request)
 
     def show_vpc_peering_with_http_info(self, request):
-        """查询对等连接
-
-        查询对等连接详情。
-
-        :param ShowVpcPeeringRequest request
-        :return: ShowVpcPeeringResponse
-        """
-
         all_params = ['peering_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2383,26 +2209,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_port(self, request):
         """更新端口
 
         更新端口。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdatePortRequest request
-        :return: UpdatePortResponse
+        :param request: Request instance for UpdatePort
+        :type request: :class:`huaweicloudsdkvpc.v2.UpdatePortRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.UpdatePortResponse`
         """
         return self.update_port_with_http_info(request)
 
     def update_port_with_http_info(self, request):
-        """更新端口
-
-        更新端口。
-
-        :param UpdatePortRequest request
-        :return: UpdatePortResponse
-        """
-
         all_params = ['port_id', 'port']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2448,26 +2269,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_route_table(self, request):
         """更新路由表
 
         更新路由表，包括可以更新路由表的名称，描述，以及新增、更新、删除路由条目
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateRouteTableRequest request
-        :return: UpdateRouteTableResponse
+        :param request: Request instance for UpdateRouteTable
+        :type request: :class:`huaweicloudsdkvpc.v2.UpdateRouteTableRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.UpdateRouteTableResponse`
         """
         return self.update_route_table_with_http_info(request)
 
     def update_route_table_with_http_info(self, request):
-        """更新路由表
-
-        更新路由表，包括可以更新路由表的名称，描述，以及新增、更新、删除路由条目
-
-        :param UpdateRouteTableRequest request
-        :return: UpdateRouteTableResponse
-        """
-
         all_params = ['routetable_id', 'routetable']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2513,26 +2329,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_subnet(self, request):
         """更新子网
 
         更新子网。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateSubnetRequest request
-        :return: UpdateSubnetResponse
+        :param request: Request instance for UpdateSubnet
+        :type request: :class:`huaweicloudsdkvpc.v2.UpdateSubnetRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.UpdateSubnetResponse`
         """
         return self.update_subnet_with_http_info(request)
 
     def update_subnet_with_http_info(self, request):
-        """更新子网
-
-        更新子网。
-
-        :param UpdateSubnetRequest request
-        :return: UpdateSubnetResponse
-        """
-
         all_params = ['vpc_id', 'subnet_id', 'subnet']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2580,26 +2391,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_vpc_peering(self, request):
         """更新对等连接
 
         更新对等连接。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateVpcPeeringRequest request
-        :return: UpdateVpcPeeringResponse
+        :param request: Request instance for UpdateVpcPeering
+        :type request: :class:`huaweicloudsdkvpc.v2.UpdateVpcPeeringRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.UpdateVpcPeeringResponse`
         """
         return self.update_vpc_peering_with_http_info(request)
 
     def update_vpc_peering_with_http_info(self, request):
-        """更新对等连接
-
-        更新对等连接。
-
-        :param UpdateVpcPeeringRequest request
-        :return: UpdateVpcPeeringResponse
-        """
-
         all_params = ['peering_id', 'peering']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2645,26 +2451,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_privateip(self, request):
         """申请私有IP
 
         申请私有IP。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreatePrivateipRequest request
-        :return: CreatePrivateipResponse
+        :param request: Request instance for CreatePrivateip
+        :type request: :class:`huaweicloudsdkvpc.v2.CreatePrivateipRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.CreatePrivateipResponse`
         """
         return self.create_privateip_with_http_info(request)
 
     def create_privateip_with_http_info(self, request):
-        """申请私有IP
-
-        申请私有IP。
-
-        :param CreatePrivateipRequest request
-        :return: CreatePrivateipResponse
-        """
-
         all_params = ['privateips']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2708,26 +2509,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_privateip(self, request):
         """删除私有IP
 
         删除私有IP。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeletePrivateipRequest request
-        :return: DeletePrivateipResponse
+        :param request: Request instance for DeletePrivateip
+        :type request: :class:`huaweicloudsdkvpc.v2.DeletePrivateipRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.DeletePrivateipResponse`
         """
         return self.delete_privateip_with_http_info(request)
 
     def delete_privateip_with_http_info(self, request):
-        """删除私有IP
-
-        删除私有IP。
-
-        :param DeletePrivateipRequest request
-        :return: DeletePrivateipResponse
-        """
-
         all_params = ['privateip_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2771,26 +2567,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_privateips(self, request):
         """查询私有IP列表
 
         查询指定子网下的私有IP列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListPrivateipsRequest request
-        :return: ListPrivateipsResponse
+        :param request: Request instance for ListPrivateips
+        :type request: :class:`huaweicloudsdkvpc.v2.ListPrivateipsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.ListPrivateipsResponse`
         """
         return self.list_privateips_with_http_info(request)
 
     def list_privateips_with_http_info(self, request):
-        """查询私有IP列表
-
-        查询指定子网下的私有IP列表。
-
-        :param ListPrivateipsRequest request
-        :return: ListPrivateipsResponse
-        """
-
         all_params = ['subnet_id', 'limit', 'marker']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2838,26 +2629,28 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_network_ip_availabilities(self, request):
         """查询网络IP使用情况
 
-        显示一个指定网络中的IPv4地址使用情况。 包括此网络中的IP总数以及已用IP总数，以及网络下每一个子网的IP地址总数和可用IP地址总数。  > 须知  - 系统预留地址指的是子网的第1个以及最后4个地址，一般用于网关、DHCP等服务。 - 这里以及下文描述的IP地址总数、已用IP地址总数不包含系统预留地址。 - 在分配IP时，用户可以指定系统预留的IP地址。但是不论IP是如何分配的，只要是处于系统预留IP地址段的IP均不会被统计到已用IP地址数目和IP地址总数中。
+        显示一个指定网络中的IPv4地址使用情况。
+        包括此网络中的IP总数以及已用IP总数，以及网络下每一个子网的IP地址总数和可用IP地址总数。
+        
+        &gt; 须知
+        
+        - 系统预留地址指的是子网的第1个以及最后4个地址，一般用于网关、DHCP等服务。
+        - 这里以及下文描述的IP地址总数、已用IP地址总数不包含系统预留地址。
+        - 在分配IP时，用户可以指定系统预留的IP地址。但是不论IP是如何分配的，只要是处于系统预留IP地址段的IP均不会被统计到已用IP地址数目和IP地址总数中。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowNetworkIpAvailabilitiesRequest request
-        :return: ShowNetworkIpAvailabilitiesResponse
+        :param request: Request instance for ShowNetworkIpAvailabilities
+        :type request: :class:`huaweicloudsdkvpc.v2.ShowNetworkIpAvailabilitiesRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.ShowNetworkIpAvailabilitiesResponse`
         """
         return self.show_network_ip_availabilities_with_http_info(request)
 
     def show_network_ip_availabilities_with_http_info(self, request):
-        """查询网络IP使用情况
-
-        显示一个指定网络中的IPv4地址使用情况。 包括此网络中的IP总数以及已用IP总数，以及网络下每一个子网的IP地址总数和可用IP地址总数。  > 须知  - 系统预留地址指的是子网的第1个以及最后4个地址，一般用于网关、DHCP等服务。 - 这里以及下文描述的IP地址总数、已用IP地址总数不包含系统预留地址。 - 在分配IP时，用户可以指定系统预留的IP地址。但是不论IP是如何分配的，只要是处于系统预留IP地址段的IP均不会被统计到已用IP地址数目和IP地址总数中。
-
-        :param ShowNetworkIpAvailabilitiesRequest request
-        :return: ShowNetworkIpAvailabilitiesResponse
-        """
-
         all_params = ['network_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2901,26 +2694,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_privateip(self, request):
         """查询私有IP
 
         指定ID查询私有IP。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowPrivateipRequest request
-        :return: ShowPrivateipResponse
+        :param request: Request instance for ShowPrivateip
+        :type request: :class:`huaweicloudsdkvpc.v2.ShowPrivateipRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.ShowPrivateipResponse`
         """
         return self.show_privateip_with_http_info(request)
 
     def show_privateip_with_http_info(self, request):
-        """查询私有IP
-
-        指定ID查询私有IP。
-
-        :param ShowPrivateipRequest request
-        :return: ShowPrivateipResponse
-        """
-
         all_params = ['privateip_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2964,26 +2752,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def neutron_create_security_group(self, request):
         """创建安全组
 
         创建安全组
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param NeutronCreateSecurityGroupRequest request
-        :return: NeutronCreateSecurityGroupResponse
+        :param request: Request instance for NeutronCreateSecurityGroup
+        :type request: :class:`huaweicloudsdkvpc.v2.NeutronCreateSecurityGroupRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.NeutronCreateSecurityGroupResponse`
         """
         return self.neutron_create_security_group_with_http_info(request)
 
     def neutron_create_security_group_with_http_info(self, request):
-        """创建安全组
-
-        创建安全组
-
-        :param NeutronCreateSecurityGroupRequest request
-        :return: NeutronCreateSecurityGroupResponse
-        """
-
         all_params = ['security_group']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3027,26 +2810,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def neutron_create_security_group_rule(self, request):
         """创建安全组规则
 
         创建安全组规则
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param NeutronCreateSecurityGroupRuleRequest request
-        :return: NeutronCreateSecurityGroupRuleResponse
+        :param request: Request instance for NeutronCreateSecurityGroupRule
+        :type request: :class:`huaweicloudsdkvpc.v2.NeutronCreateSecurityGroupRuleRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.NeutronCreateSecurityGroupRuleResponse`
         """
         return self.neutron_create_security_group_rule_with_http_info(request)
 
     def neutron_create_security_group_rule_with_http_info(self, request):
-        """创建安全组规则
-
-        创建安全组规则
-
-        :param NeutronCreateSecurityGroupRuleRequest request
-        :return: NeutronCreateSecurityGroupRuleResponse
-        """
-
         all_params = ['security_group_rule']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3090,26 +2868,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def neutron_delete_security_group(self, request):
         """删除安全组
 
         删除安全组
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param NeutronDeleteSecurityGroupRequest request
-        :return: NeutronDeleteSecurityGroupResponse
+        :param request: Request instance for NeutronDeleteSecurityGroup
+        :type request: :class:`huaweicloudsdkvpc.v2.NeutronDeleteSecurityGroupRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.NeutronDeleteSecurityGroupResponse`
         """
         return self.neutron_delete_security_group_with_http_info(request)
 
     def neutron_delete_security_group_with_http_info(self, request):
-        """删除安全组
-
-        删除安全组
-
-        :param NeutronDeleteSecurityGroupRequest request
-        :return: NeutronDeleteSecurityGroupResponse
-        """
-
         all_params = ['security_group_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3153,26 +2926,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def neutron_delete_security_group_rule(self, request):
         """删除安全组规则
 
         删除安全组规则
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param NeutronDeleteSecurityGroupRuleRequest request
-        :return: NeutronDeleteSecurityGroupRuleResponse
+        :param request: Request instance for NeutronDeleteSecurityGroupRule
+        :type request: :class:`huaweicloudsdkvpc.v2.NeutronDeleteSecurityGroupRuleRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.NeutronDeleteSecurityGroupRuleResponse`
         """
         return self.neutron_delete_security_group_rule_with_http_info(request)
 
     def neutron_delete_security_group_rule_with_http_info(self, request):
-        """删除安全组规则
-
-        删除安全组规则
-
-        :param NeutronDeleteSecurityGroupRuleRequest request
-        :return: NeutronDeleteSecurityGroupRuleResponse
-        """
-
         all_params = ['security_group_rule_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3216,26 +2984,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def neutron_list_security_group_rules(self, request):
         """查询安全组规则列表
 
         查询提交请求的租户有权限查看的所有安全组规则。单次查询最多返回2000条数据，超过2000后会返回分页标记。分页查询请参考分页查询
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param NeutronListSecurityGroupRulesRequest request
-        :return: NeutronListSecurityGroupRulesResponse
+        :param request: Request instance for NeutronListSecurityGroupRules
+        :type request: :class:`huaweicloudsdkvpc.v2.NeutronListSecurityGroupRulesRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.NeutronListSecurityGroupRulesResponse`
         """
         return self.neutron_list_security_group_rules_with_http_info(request)
 
     def neutron_list_security_group_rules_with_http_info(self, request):
-        """查询安全组规则列表
-
-        查询提交请求的租户有权限查看的所有安全组规则。单次查询最多返回2000条数据，超过2000后会返回分页标记。分页查询请参考分页查询
-
-        :param NeutronListSecurityGroupRulesRequest request
-        :return: NeutronListSecurityGroupRulesResponse
-        """
-
         all_params = ['limit', 'marker', 'id', 'direction', 'protocol', 'ethertype', 'description', 'remote_ip_prefix', 'remote_group_id', 'security_group_id', 'port_range_max', 'port_range_min', 'tenant_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3303,26 +3066,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def neutron_list_security_groups(self, request):
         """查询安全组列表
 
         查询提交请求租户的所有安全组，单次查询最多返回2000条数据，超过2000后会返回分页标记。分页查询请参考分页查询 。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param NeutronListSecurityGroupsRequest request
-        :return: NeutronListSecurityGroupsResponse
+        :param request: Request instance for NeutronListSecurityGroups
+        :type request: :class:`huaweicloudsdkvpc.v2.NeutronListSecurityGroupsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.NeutronListSecurityGroupsResponse`
         """
         return self.neutron_list_security_groups_with_http_info(request)
 
     def neutron_list_security_groups_with_http_info(self, request):
-        """查询安全组列表
-
-        查询提交请求租户的所有安全组，单次查询最多返回2000条数据，超过2000后会返回分页标记。分页查询请参考分页查询 。
-
-        :param NeutronListSecurityGroupsRequest request
-        :return: NeutronListSecurityGroupsResponse
-        """
-
         all_params = ['limit', 'marker', 'id', 'name', 'description', 'tenant_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3376,26 +3134,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def neutron_show_security_group(self, request):
         """查询安全组
 
         查询安全组详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param NeutronShowSecurityGroupRequest request
-        :return: NeutronShowSecurityGroupResponse
+        :param request: Request instance for NeutronShowSecurityGroup
+        :type request: :class:`huaweicloudsdkvpc.v2.NeutronShowSecurityGroupRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.NeutronShowSecurityGroupResponse`
         """
         return self.neutron_show_security_group_with_http_info(request)
 
     def neutron_show_security_group_with_http_info(self, request):
-        """查询安全组
-
-        查询安全组详情
-
-        :param NeutronShowSecurityGroupRequest request
-        :return: NeutronShowSecurityGroupResponse
-        """
-
         all_params = ['security_group_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3439,26 +3192,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def neutron_show_security_group_rule(self, request):
         """查询安全组规则
 
         查询安全组规则详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param NeutronShowSecurityGroupRuleRequest request
-        :return: NeutronShowSecurityGroupRuleResponse
+        :param request: Request instance for NeutronShowSecurityGroupRule
+        :type request: :class:`huaweicloudsdkvpc.v2.NeutronShowSecurityGroupRuleRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.NeutronShowSecurityGroupRuleResponse`
         """
         return self.neutron_show_security_group_rule_with_http_info(request)
 
     def neutron_show_security_group_rule_with_http_info(self, request):
-        """查询安全组规则
-
-        查询安全组规则详情。
-
-        :param NeutronShowSecurityGroupRuleRequest request
-        :return: NeutronShowSecurityGroupRuleResponse
-        """
-
         all_params = ['security_group_rule_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3502,26 +3250,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def neutron_update_security_group(self, request):
         """更新安全组
 
         更新安全组
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param NeutronUpdateSecurityGroupRequest request
-        :return: NeutronUpdateSecurityGroupResponse
+        :param request: Request instance for NeutronUpdateSecurityGroup
+        :type request: :class:`huaweicloudsdkvpc.v2.NeutronUpdateSecurityGroupRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.NeutronUpdateSecurityGroupResponse`
         """
         return self.neutron_update_security_group_with_http_info(request)
 
     def neutron_update_security_group_with_http_info(self, request):
-        """更新安全组
-
-        更新安全组
-
-        :param NeutronUpdateSecurityGroupRequest request
-        :return: NeutronUpdateSecurityGroupResponse
-        """
-
         all_params = ['security_group_id', 'security_group']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3567,26 +3310,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def neutron_add_firewall_rule(self, request):
         """插入网络ACL规则
 
         插入一条网络ACL规则到某一网络ACL策略中。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param NeutronAddFirewallRuleRequest request
-        :return: NeutronAddFirewallRuleResponse
+        :param request: Request instance for NeutronAddFirewallRule
+        :type request: :class:`huaweicloudsdkvpc.v2.NeutronAddFirewallRuleRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.NeutronAddFirewallRuleResponse`
         """
         return self.neutron_add_firewall_rule_with_http_info(request)
 
     def neutron_add_firewall_rule_with_http_info(self, request):
-        """插入网络ACL规则
-
-        插入一条网络ACL规则到某一网络ACL策略中。
-
-        :param NeutronAddFirewallRuleRequest request
-        :return: NeutronAddFirewallRuleResponse
-        """
-
         all_params = ['firewall_policy_id', 'insert_firewall_rule']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3632,26 +3370,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def neutron_create_firewall_group(self, request):
         """创建网络ACL组
 
         创建网络ACL组
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param NeutronCreateFirewallGroupRequest request
-        :return: NeutronCreateFirewallGroupResponse
+        :param request: Request instance for NeutronCreateFirewallGroup
+        :type request: :class:`huaweicloudsdkvpc.v2.NeutronCreateFirewallGroupRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.NeutronCreateFirewallGroupResponse`
         """
         return self.neutron_create_firewall_group_with_http_info(request)
 
     def neutron_create_firewall_group_with_http_info(self, request):
-        """创建网络ACL组
-
-        创建网络ACL组
-
-        :param NeutronCreateFirewallGroupRequest request
-        :return: NeutronCreateFirewallGroupResponse
-        """
-
         all_params = ['firewall_group']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3695,26 +3428,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def neutron_create_firewall_policy(self, request):
         """创建网络ACL策略
 
         创建网络ACL策略。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param NeutronCreateFirewallPolicyRequest request
-        :return: NeutronCreateFirewallPolicyResponse
+        :param request: Request instance for NeutronCreateFirewallPolicy
+        :type request: :class:`huaweicloudsdkvpc.v2.NeutronCreateFirewallPolicyRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.NeutronCreateFirewallPolicyResponse`
         """
         return self.neutron_create_firewall_policy_with_http_info(request)
 
     def neutron_create_firewall_policy_with_http_info(self, request):
-        """创建网络ACL策略
-
-        创建网络ACL策略。
-
-        :param NeutronCreateFirewallPolicyRequest request
-        :return: NeutronCreateFirewallPolicyResponse
-        """
-
         all_params = ['firewall_policy']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3758,26 +3486,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def neutron_create_firewall_rule(self, request):
         """创建网络ACL规则
 
         创建网络ACL规则。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param NeutronCreateFirewallRuleRequest request
-        :return: NeutronCreateFirewallRuleResponse
+        :param request: Request instance for NeutronCreateFirewallRule
+        :type request: :class:`huaweicloudsdkvpc.v2.NeutronCreateFirewallRuleRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.NeutronCreateFirewallRuleResponse`
         """
         return self.neutron_create_firewall_rule_with_http_info(request)
 
     def neutron_create_firewall_rule_with_http_info(self, request):
-        """创建网络ACL规则
-
-        创建网络ACL规则。
-
-        :param NeutronCreateFirewallRuleRequest request
-        :return: NeutronCreateFirewallRuleResponse
-        """
-
         all_params = ['firewall_rule']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3821,26 +3544,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def neutron_delete_firewall_group(self, request):
         """删除网络ACL组
 
         删除网络ACL组
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param NeutronDeleteFirewallGroupRequest request
-        :return: NeutronDeleteFirewallGroupResponse
+        :param request: Request instance for NeutronDeleteFirewallGroup
+        :type request: :class:`huaweicloudsdkvpc.v2.NeutronDeleteFirewallGroupRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.NeutronDeleteFirewallGroupResponse`
         """
         return self.neutron_delete_firewall_group_with_http_info(request)
 
     def neutron_delete_firewall_group_with_http_info(self, request):
-        """删除网络ACL组
-
-        删除网络ACL组
-
-        :param NeutronDeleteFirewallGroupRequest request
-        :return: NeutronDeleteFirewallGroupResponse
-        """
-
         all_params = ['firewall_group_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3884,26 +3602,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def neutron_delete_firewall_policy(self, request):
         """删除网络ACL策略
 
         删除网络ACL策略。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param NeutronDeleteFirewallPolicyRequest request
-        :return: NeutronDeleteFirewallPolicyResponse
+        :param request: Request instance for NeutronDeleteFirewallPolicy
+        :type request: :class:`huaweicloudsdkvpc.v2.NeutronDeleteFirewallPolicyRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.NeutronDeleteFirewallPolicyResponse`
         """
         return self.neutron_delete_firewall_policy_with_http_info(request)
 
     def neutron_delete_firewall_policy_with_http_info(self, request):
-        """删除网络ACL策略
-
-        删除网络ACL策略。
-
-        :param NeutronDeleteFirewallPolicyRequest request
-        :return: NeutronDeleteFirewallPolicyResponse
-        """
-
         all_params = ['firewall_policy_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3947,26 +3660,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def neutron_delete_firewall_rule(self, request):
         """删除网络ACL规则
 
         删除网络ACL规则。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param NeutronDeleteFirewallRuleRequest request
-        :return: NeutronDeleteFirewallRuleResponse
+        :param request: Request instance for NeutronDeleteFirewallRule
+        :type request: :class:`huaweicloudsdkvpc.v2.NeutronDeleteFirewallRuleRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.NeutronDeleteFirewallRuleResponse`
         """
         return self.neutron_delete_firewall_rule_with_http_info(request)
 
     def neutron_delete_firewall_rule_with_http_info(self, request):
-        """删除网络ACL规则
-
-        删除网络ACL规则。
-
-        :param NeutronDeleteFirewallRuleRequest request
-        :return: NeutronDeleteFirewallRuleResponse
-        """
-
         all_params = ['firewall_rule_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4010,26 +3718,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def neutron_list_firewall_groups(self, request):
         """查询所有网络ACL组
 
         查询提交请求的租户有权限操作的所有网络ACL组信息。单次查询最多返回2000条数据，超过2000后会返回分页标记。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param NeutronListFirewallGroupsRequest request
-        :return: NeutronListFirewallGroupsResponse
+        :param request: Request instance for NeutronListFirewallGroups
+        :type request: :class:`huaweicloudsdkvpc.v2.NeutronListFirewallGroupsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.NeutronListFirewallGroupsResponse`
         """
         return self.neutron_list_firewall_groups_with_http_info(request)
 
     def neutron_list_firewall_groups_with_http_info(self, request):
-        """查询所有网络ACL组
-
-        查询提交请求的租户有权限操作的所有网络ACL组信息。单次查询最多返回2000条数据，超过2000后会返回分页标记。
-
-        :param NeutronListFirewallGroupsRequest request
-        :return: NeutronListFirewallGroupsResponse
-        """
-
         all_params = ['marker', 'limit', 'id', 'name', 'description', 'ingress_firewall_policy_id', 'egress_firewall_policy_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4088,26 +3791,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def neutron_list_firewall_policies(self, request):
         """查询所有网络ACL策略
 
         查询提交请求的租户有权限操作的所有网络ACL策略信息。单次查询最多返回2000条数据，超过2000后会返回分页标记。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param NeutronListFirewallPoliciesRequest request
-        :return: NeutronListFirewallPoliciesResponse
+        :param request: Request instance for NeutronListFirewallPolicies
+        :type request: :class:`huaweicloudsdkvpc.v2.NeutronListFirewallPoliciesRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.NeutronListFirewallPoliciesResponse`
         """
         return self.neutron_list_firewall_policies_with_http_info(request)
 
     def neutron_list_firewall_policies_with_http_info(self, request):
-        """查询所有网络ACL策略
-
-        查询提交请求的租户有权限操作的所有网络ACL策略信息。单次查询最多返回2000条数据，超过2000后会返回分页标记。
-
-        :param NeutronListFirewallPoliciesRequest request
-        :return: NeutronListFirewallPoliciesResponse
-        """
-
         all_params = ['limit', 'marker', 'id', 'name', 'description', 'tenant_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4164,26 +3862,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def neutron_list_firewall_rules(self, request):
         """查询所有网络ACL规则
 
         查询提交请求的租户有权限操作的所有网络ACL规则信息。单次查询最多返回2000条数据，超过2000后会返回分页标记。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param NeutronListFirewallRulesRequest request
-        :return: NeutronListFirewallRulesResponse
+        :param request: Request instance for NeutronListFirewallRules
+        :type request: :class:`huaweicloudsdkvpc.v2.NeutronListFirewallRulesRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.NeutronListFirewallRulesResponse`
         """
         return self.neutron_list_firewall_rules_with_http_info(request)
 
     def neutron_list_firewall_rules_with_http_info(self, request):
-        """查询所有网络ACL规则
-
-        查询提交请求的租户有权限操作的所有网络ACL规则信息。单次查询最多返回2000条数据，超过2000后会返回分页标记。
-
-        :param NeutronListFirewallRulesRequest request
-        :return: NeutronListFirewallRulesResponse
-        """
-
         all_params = ['marker', 'limit', 'id', 'name', 'description', 'action', 'tenant_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4242,26 +3935,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def neutron_remove_firewall_rule(self, request):
         """移除网络ACL规则
 
         从某一网络ACL策略中移除一条网络ACL规则。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param NeutronRemoveFirewallRuleRequest request
-        :return: NeutronRemoveFirewallRuleResponse
+        :param request: Request instance for NeutronRemoveFirewallRule
+        :type request: :class:`huaweicloudsdkvpc.v2.NeutronRemoveFirewallRuleRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.NeutronRemoveFirewallRuleResponse`
         """
         return self.neutron_remove_firewall_rule_with_http_info(request)
 
     def neutron_remove_firewall_rule_with_http_info(self, request):
-        """移除网络ACL规则
-
-        从某一网络ACL策略中移除一条网络ACL规则。
-
-        :param NeutronRemoveFirewallRuleRequest request
-        :return: NeutronRemoveFirewallRuleResponse
-        """
-
         all_params = ['firewall_policy_id', 'remove_firewall_rule']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4307,26 +3995,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def neutron_show_firewall_group(self, request):
         """查询特定网络ACL组详情
 
         查询特定网络ACL组详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param NeutronShowFirewallGroupRequest request
-        :return: NeutronShowFirewallGroupResponse
+        :param request: Request instance for NeutronShowFirewallGroup
+        :type request: :class:`huaweicloudsdkvpc.v2.NeutronShowFirewallGroupRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.NeutronShowFirewallGroupResponse`
         """
         return self.neutron_show_firewall_group_with_http_info(request)
 
     def neutron_show_firewall_group_with_http_info(self, request):
-        """查询特定网络ACL组详情
-
-        查询特定网络ACL组详情。
-
-        :param NeutronShowFirewallGroupRequest request
-        :return: NeutronShowFirewallGroupResponse
-        """
-
         all_params = ['firewall_group_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4370,26 +4053,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def neutron_show_firewall_policy(self, request):
         """查询特定网络ACL策略详情
 
         查询特定网络ACL策略详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param NeutronShowFirewallPolicyRequest request
-        :return: NeutronShowFirewallPolicyResponse
+        :param request: Request instance for NeutronShowFirewallPolicy
+        :type request: :class:`huaweicloudsdkvpc.v2.NeutronShowFirewallPolicyRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.NeutronShowFirewallPolicyResponse`
         """
         return self.neutron_show_firewall_policy_with_http_info(request)
 
     def neutron_show_firewall_policy_with_http_info(self, request):
-        """查询特定网络ACL策略详情
-
-        查询特定网络ACL策略详情。
-
-        :param NeutronShowFirewallPolicyRequest request
-        :return: NeutronShowFirewallPolicyResponse
-        """
-
         all_params = ['firewall_policy_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4433,26 +4111,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def neutron_show_firewall_rule(self, request):
         """查询特定网络ACL规则
 
         查询特定网络ACL规则。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param NeutronShowFirewallRuleRequest request
-        :return: NeutronShowFirewallRuleResponse
+        :param request: Request instance for NeutronShowFirewallRule
+        :type request: :class:`huaweicloudsdkvpc.v2.NeutronShowFirewallRuleRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.NeutronShowFirewallRuleResponse`
         """
         return self.neutron_show_firewall_rule_with_http_info(request)
 
     def neutron_show_firewall_rule_with_http_info(self, request):
-        """查询特定网络ACL规则
-
-        查询特定网络ACL规则。
-
-        :param NeutronShowFirewallRuleRequest request
-        :return: NeutronShowFirewallRuleResponse
-        """
-
         all_params = ['firewall_rule_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4496,26 +4169,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def neutron_update_firewall_group(self, request):
         """更新网络ACL组
 
         更新网络ACL组。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param NeutronUpdateFirewallGroupRequest request
-        :return: NeutronUpdateFirewallGroupResponse
+        :param request: Request instance for NeutronUpdateFirewallGroup
+        :type request: :class:`huaweicloudsdkvpc.v2.NeutronUpdateFirewallGroupRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.NeutronUpdateFirewallGroupResponse`
         """
         return self.neutron_update_firewall_group_with_http_info(request)
 
     def neutron_update_firewall_group_with_http_info(self, request):
-        """更新网络ACL组
-
-        更新网络ACL组。
-
-        :param NeutronUpdateFirewallGroupRequest request
-        :return: NeutronUpdateFirewallGroupResponse
-        """
-
         all_params = ['firewall_group_id', 'firewall_group']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4561,26 +4229,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def neutron_update_firewall_policy(self, request):
         """更新网络ACL策略
 
         更新网络ACL策略。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param NeutronUpdateFirewallPolicyRequest request
-        :return: NeutronUpdateFirewallPolicyResponse
+        :param request: Request instance for NeutronUpdateFirewallPolicy
+        :type request: :class:`huaweicloudsdkvpc.v2.NeutronUpdateFirewallPolicyRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.NeutronUpdateFirewallPolicyResponse`
         """
         return self.neutron_update_firewall_policy_with_http_info(request)
 
     def neutron_update_firewall_policy_with_http_info(self, request):
-        """更新网络ACL策略
-
-        更新网络ACL策略。
-
-        :param NeutronUpdateFirewallPolicyRequest request
-        :return: NeutronUpdateFirewallPolicyResponse
-        """
-
         all_params = ['firewall_policy_id', 'firewall_policy']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4626,26 +4289,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def neutron_update_firewall_rule(self, request):
         """更新网络ACL规则
 
         更新网络ACL规则。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param NeutronUpdateFirewallRuleRequest request
-        :return: NeutronUpdateFirewallRuleResponse
+        :param request: Request instance for NeutronUpdateFirewallRule
+        :type request: :class:`huaweicloudsdkvpc.v2.NeutronUpdateFirewallRuleRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.NeutronUpdateFirewallRuleResponse`
         """
         return self.neutron_update_firewall_rule_with_http_info(request)
 
     def neutron_update_firewall_rule_with_http_info(self, request):
-        """更新网络ACL规则
-
-        更新网络ACL规则。
-
-        :param NeutronUpdateFirewallRuleRequest request
-        :return: NeutronUpdateFirewallRuleResponse
-        """
-
         all_params = ['firewall_rule_id', 'firewall_rule']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4691,26 +4349,22 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_create_vpc_tags(self, request):
         """批量创建VPC资源标签
 
-        为指定的VPC资源实例批量添加标签。 此接口为幂等接口：创建时如果请求体中存在重复key则报错。创建时，不允许设置重复key数据，如果数据库已存在该key，就覆盖value的值。
+        为指定的VPC资源实例批量添加标签。
+        此接口为幂等接口：创建时如果请求体中存在重复key则报错。创建时，不允许设置重复key数据，如果数据库已存在该key，就覆盖value的值。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchCreateVpcTagsRequest request
-        :return: BatchCreateVpcTagsResponse
+        :param request: Request instance for BatchCreateVpcTags
+        :type request: :class:`huaweicloudsdkvpc.v2.BatchCreateVpcTagsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.BatchCreateVpcTagsResponse`
         """
         return self.batch_create_vpc_tags_with_http_info(request)
 
     def batch_create_vpc_tags_with_http_info(self, request):
-        """批量创建VPC资源标签
-
-        为指定的VPC资源实例批量添加标签。 此接口为幂等接口：创建时如果请求体中存在重复key则报错。创建时，不允许设置重复key数据，如果数据库已存在该key，就覆盖value的值。
-
-        :param BatchCreateVpcTagsRequest request
-        :return: BatchCreateVpcTagsResponse
-        """
-
         all_params = ['vpc_id', 'batch_create_vpc_tags_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4756,26 +4410,22 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_delete_vpc_tags(self, request):
         """批量删除VPC资源标签
 
-        为指定的VPC资源实例批量删除标签。 此接口为幂等接口：删除时，如果删除的标签不存在，默认处理成功；删除时不对标签字符集范围做校验。删除时tags结构体不能缺失，key不能为空，或者空字符串。
+        为指定的VPC资源实例批量删除标签。
+        此接口为幂等接口：删除时，如果删除的标签不存在，默认处理成功；删除时不对标签字符集范围做校验。删除时tags结构体不能缺失，key不能为空，或者空字符串。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchDeleteVpcTagsRequest request
-        :return: BatchDeleteVpcTagsResponse
+        :param request: Request instance for BatchDeleteVpcTags
+        :type request: :class:`huaweicloudsdkvpc.v2.BatchDeleteVpcTagsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.BatchDeleteVpcTagsResponse`
         """
         return self.batch_delete_vpc_tags_with_http_info(request)
 
     def batch_delete_vpc_tags_with_http_info(self, request):
-        """批量删除VPC资源标签
-
-        为指定的VPC资源实例批量删除标签。 此接口为幂等接口：删除时，如果删除的标签不存在，默认处理成功；删除时不对标签字符集范围做校验。删除时tags结构体不能缺失，key不能为空，或者空字符串。
-
-        :param BatchDeleteVpcTagsRequest request
-        :return: BatchDeleteVpcTagsResponse
-        """
-
         all_params = ['vpc_id', 'batch_delete_vpc_tags_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4821,26 +4471,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_vpc(self, request):
         """创建VPC
 
         创建虚拟私有云。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateVpcRequest request
-        :return: CreateVpcResponse
+        :param request: Request instance for CreateVpc
+        :type request: :class:`huaweicloudsdkvpc.v2.CreateVpcRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.CreateVpcResponse`
         """
         return self.create_vpc_with_http_info(request)
 
     def create_vpc_with_http_info(self, request):
-        """创建VPC
-
-        创建虚拟私有云。
-
-        :param CreateVpcRequest request
-        :return: CreateVpcResponse
-        """
-
         all_params = ['vpc']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4884,26 +4529,22 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_vpc_resource_tag(self, request):
         """创建VPC资源标签
 
-        给指定VPC资源实例增加标签信息 此接口为幂等接口：创建时，如果创建的标签已经存在（key相同），则覆盖。
+        给指定VPC资源实例增加标签信息
+        此接口为幂等接口：创建时，如果创建的标签已经存在（key相同），则覆盖。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateVpcResourceTagRequest request
-        :return: CreateVpcResourceTagResponse
+        :param request: Request instance for CreateVpcResourceTag
+        :type request: :class:`huaweicloudsdkvpc.v2.CreateVpcResourceTagRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.CreateVpcResourceTagResponse`
         """
         return self.create_vpc_resource_tag_with_http_info(request)
 
     def create_vpc_resource_tag_with_http_info(self, request):
-        """创建VPC资源标签
-
-        给指定VPC资源实例增加标签信息 此接口为幂等接口：创建时，如果创建的标签已经存在（key相同），则覆盖。
-
-        :param CreateVpcResourceTagRequest request
-        :return: CreateVpcResourceTagResponse
-        """
-
         all_params = ['vpc_id', 'create_vpc_resource_tag_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4949,26 +4590,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_vpc_route(self, request):
         """创建VPC路由
 
         创建路由
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateVpcRouteRequest request
-        :return: CreateVpcRouteResponse
+        :param request: Request instance for CreateVpcRoute
+        :type request: :class:`huaweicloudsdkvpc.v2.CreateVpcRouteRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.CreateVpcRouteResponse`
         """
         return self.create_vpc_route_with_http_info(request)
 
     def create_vpc_route_with_http_info(self, request):
-        """创建VPC路由
-
-        创建路由
-
-        :param CreateVpcRouteRequest request
-        :return: CreateVpcRouteResponse
-        """
-
         all_params = ['route']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -5012,26 +4648,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_vpc(self, request):
         """删除VPC
 
         删除虚拟私有云。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteVpcRequest request
-        :return: DeleteVpcResponse
+        :param request: Request instance for DeleteVpc
+        :type request: :class:`huaweicloudsdkvpc.v2.DeleteVpcRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.DeleteVpcResponse`
         """
         return self.delete_vpc_with_http_info(request)
 
     def delete_vpc_with_http_info(self, request):
-        """删除VPC
-
-        删除虚拟私有云。
-
-        :param DeleteVpcRequest request
-        :return: DeleteVpcResponse
-        """
-
         all_params = ['vpc_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -5075,26 +4706,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_vpc_route(self, request):
         """删除VPC路由
 
         删除路由
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteVpcRouteRequest request
-        :return: DeleteVpcRouteResponse
+        :param request: Request instance for DeleteVpcRoute
+        :type request: :class:`huaweicloudsdkvpc.v2.DeleteVpcRouteRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.DeleteVpcRouteResponse`
         """
         return self.delete_vpc_route_with_http_info(request)
 
     def delete_vpc_route_with_http_info(self, request):
-        """删除VPC路由
-
-        删除路由
-
-        :param DeleteVpcRouteRequest request
-        :return: DeleteVpcRouteResponse
-        """
-
         all_params = ['route_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -5138,26 +4764,22 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_vpc_tag(self, request):
         """删除VPC资源标签
 
-        删除指定VPC资源实例的标签信息 该接口为幂等接口：删除的key不存在报404，Key不能为空或者空字符串
+        删除指定VPC资源实例的标签信息
+        该接口为幂等接口：删除的key不存在报404，Key不能为空或者空字符串
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteVpcTagRequest request
-        :return: DeleteVpcTagResponse
+        :param request: Request instance for DeleteVpcTag
+        :type request: :class:`huaweicloudsdkvpc.v2.DeleteVpcTagRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.DeleteVpcTagResponse`
         """
         return self.delete_vpc_tag_with_http_info(request)
 
     def delete_vpc_tag_with_http_info(self, request):
-        """删除VPC资源标签
-
-        删除指定VPC资源实例的标签信息 该接口为幂等接口：删除的key不存在报404，Key不能为空或者空字符串
-
-        :param DeleteVpcTagRequest request
-        :return: DeleteVpcTagResponse
-        """
-
         all_params = ['vpc_id', 'key']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -5203,26 +4825,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_vpc_routes(self, request):
         """查询VPC路由列表
 
         查询提交请求的租户的所有路由列表，并根据过滤条件进行过滤。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListVpcRoutesRequest request
-        :return: ListVpcRoutesResponse
+        :param request: Request instance for ListVpcRoutes
+        :type request: :class:`huaweicloudsdkvpc.v2.ListVpcRoutesRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.ListVpcRoutesResponse`
         """
         return self.list_vpc_routes_with_http_info(request)
 
     def list_vpc_routes_with_http_info(self, request):
-        """查询VPC路由列表
-
-        查询提交请求的租户的所有路由列表，并根据过滤条件进行过滤。
-
-        :param ListVpcRoutesRequest request
-        :return: ListVpcRoutesResponse
-        """
-
         all_params = ['limit', 'marker', 'id', 'type', 'vpc_id', 'destination', 'tenant_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -5278,26 +4895,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_vpc_tags(self, request):
         """查询VPC项目标签
 
         查询租户在指定区域和实例类型的所有标签集合
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListVpcTagsRequest request
-        :return: ListVpcTagsResponse
+        :param request: Request instance for ListVpcTags
+        :type request: :class:`huaweicloudsdkvpc.v2.ListVpcTagsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.ListVpcTagsResponse`
         """
         return self.list_vpc_tags_with_http_info(request)
 
     def list_vpc_tags_with_http_info(self, request):
-        """查询VPC项目标签
-
-        查询租户在指定区域和实例类型的所有标签集合
-
-        :param ListVpcTagsRequest request
-        :return: ListVpcTagsResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -5339,26 +4951,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_vpcs(self, request):
         """查询VPC列表
 
         查询虚拟私有云列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListVpcsRequest request
-        :return: ListVpcsResponse
+        :param request: Request instance for ListVpcs
+        :type request: :class:`huaweicloudsdkvpc.v2.ListVpcsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.ListVpcsResponse`
         """
         return self.list_vpcs_with_http_info(request)
 
     def list_vpcs_with_http_info(self, request):
-        """查询VPC列表
-
-        查询虚拟私有云列表。
-
-        :param ListVpcsRequest request
-        :return: ListVpcsResponse
-        """
-
         all_params = ['limit', 'marker', 'id', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -5408,26 +5015,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_vpcs_by_tags(self, request):
         """查询VPC资源实例
 
         使用标签过滤实例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListVpcsByTagsRequest request
-        :return: ListVpcsByTagsResponse
+        :param request: Request instance for ListVpcsByTags
+        :type request: :class:`huaweicloudsdkvpc.v2.ListVpcsByTagsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.ListVpcsByTagsResponse`
         """
         return self.list_vpcs_by_tags_with_http_info(request)
 
     def list_vpcs_by_tags_with_http_info(self, request):
-        """查询VPC资源实例
-
-        使用标签过滤实例。
-
-        :param ListVpcsByTagsRequest request
-        :return: ListVpcsByTagsResponse
-        """
-
         all_params = ['list_vpcs_by_tags_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -5471,26 +5073,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_vpc(self, request):
         """查询VPC
 
         查询虚拟私有云。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowVpcRequest request
-        :return: ShowVpcResponse
+        :param request: Request instance for ShowVpc
+        :type request: :class:`huaweicloudsdkvpc.v2.ShowVpcRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.ShowVpcResponse`
         """
         return self.show_vpc_with_http_info(request)
 
     def show_vpc_with_http_info(self, request):
-        """查询VPC
-
-        查询虚拟私有云。
-
-        :param ShowVpcRequest request
-        :return: ShowVpcResponse
-        """
-
         all_params = ['vpc_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -5534,26 +5131,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_vpc_route(self, request):
         """查询VPC路由
 
         查询路由详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowVpcRouteRequest request
-        :return: ShowVpcRouteResponse
+        :param request: Request instance for ShowVpcRoute
+        :type request: :class:`huaweicloudsdkvpc.v2.ShowVpcRouteRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.ShowVpcRouteResponse`
         """
         return self.show_vpc_route_with_http_info(request)
 
     def show_vpc_route_with_http_info(self, request):
-        """查询VPC路由
-
-        查询路由详情
-
-        :param ShowVpcRouteRequest request
-        :return: ShowVpcRouteResponse
-        """
-
         all_params = ['route_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -5597,26 +5189,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_vpc_tags(self, request):
         """查询VPC资源标签
 
         查询指定VPC实例的标签信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowVpcTagsRequest request
-        :return: ShowVpcTagsResponse
+        :param request: Request instance for ShowVpcTags
+        :type request: :class:`huaweicloudsdkvpc.v2.ShowVpcTagsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.ShowVpcTagsResponse`
         """
         return self.show_vpc_tags_with_http_info(request)
 
     def show_vpc_tags_with_http_info(self, request):
-        """查询VPC资源标签
-
-        查询指定VPC实例的标签信息
-
-        :param ShowVpcTagsRequest request
-        :return: ShowVpcTagsResponse
-        """
-
         all_params = ['vpc_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -5660,26 +5247,21 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_vpc(self, request):
         """更新VPC
 
         更新虚拟私有云。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateVpcRequest request
-        :return: UpdateVpcResponse
+        :param request: Request instance for UpdateVpc
+        :type request: :class:`huaweicloudsdkvpc.v2.UpdateVpcRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.UpdateVpcResponse`
         """
         return self.update_vpc_with_http_info(request)
 
     def update_vpc_with_http_info(self, request):
-        """更新VPC
-
-        更新虚拟私有云。
-
-        :param UpdateVpcRequest request
-        :return: UpdateVpcResponse
-        """
-
         all_params = ['vpc_id', 'vpc']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -5724,7 +5306,6 @@ class VpcClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

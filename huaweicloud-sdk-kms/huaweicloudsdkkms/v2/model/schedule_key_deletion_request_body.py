@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ScheduleKeyDeletionRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ScheduleKeyDeletionRequestBody:
     }
 
     def __init__(self, key_id=None, pending_days=None, sequence=None):
-        """ScheduleKeyDeletionRequestBody - a model defined in huaweicloud sdk"""
+        """ScheduleKeyDeletionRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param key_id: 密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
+        :type key_id: str
+        :param pending_days: 计划多少天后删除密钥，取值为7到1096。
+        :type pending_days: str
+        :param sequence: 请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
+        :type sequence: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class ScheduleKeyDeletionRequestBody:
         密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
 
         :param key_id: The key_id of this ScheduleKeyDeletionRequestBody.
-        :type: str
+        :type key_id: str
         """
         self._key_id = key_id
 
@@ -88,7 +97,7 @@ class ScheduleKeyDeletionRequestBody:
         计划多少天后删除密钥，取值为7到1096。
 
         :param pending_days: The pending_days of this ScheduleKeyDeletionRequestBody.
-        :type: str
+        :type pending_days: str
         """
         self._pending_days = pending_days
 
@@ -110,7 +119,7 @@ class ScheduleKeyDeletionRequestBody:
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
 
         :param sequence: The sequence of this ScheduleKeyDeletionRequestBody.
-        :type: str
+        :type sequence: str
         """
         self._sequence = sequence
 

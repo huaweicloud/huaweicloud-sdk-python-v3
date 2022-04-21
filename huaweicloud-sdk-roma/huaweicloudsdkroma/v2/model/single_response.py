@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SingleResponse:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class SingleResponse:
     }
 
     def __init__(self, id=None, ret_status=None):
-        """SingleResponse - a model defined in huaweicloud sdk"""
+        """SingleResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 操作的ID
+        :type id: str
+        :param ret_status: 操作结果 枚举值successful-成功 error-失败
+        :type ret_status: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class SingleResponse:
         操作的ID
 
         :param id: The id of this SingleResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -85,7 +92,7 @@ class SingleResponse:
         操作结果 枚举值successful-成功 error-失败
 
         :param ret_status: The ret_status of this SingleResponse.
-        :type: str
+        :type ret_status: str
         """
         self._ret_status = ret_status
 

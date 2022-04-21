@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteVpcPeeringRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteVpcPeeringRequest:
     }
 
     def __init__(self, peering_id=None):
-        """DeleteVpcPeeringRequest - a model defined in huaweicloud sdk"""
+        """DeleteVpcPeeringRequest
+
+        The model defined in huaweicloud sdk
+
+        :param peering_id: 对等连接ID
+        :type peering_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteVpcPeeringRequest:
         对等连接ID
 
         :param peering_id: The peering_id of this DeleteVpcPeeringRequest.
-        :type: str
+        :type peering_id: str
         """
         self._peering_id = peering_id
 

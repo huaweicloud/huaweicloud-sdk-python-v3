@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateValueListRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UpdateValueListRequestBody:
     }
 
     def __init__(self, name=None, type=None, values=None, description=None):
-        """UpdateValueListRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateValueListRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param name: 引用表名称，2-32位字符串组成
+        :type name: str
+        :param type: 引用表类型，参见枚举列表
+        :type type: str
+        :param values: 引用表的值
+        :type values: list[str]
+        :param description: 引用表描述，最长128字符
+        :type description: str
+        """
         
         
 
@@ -71,7 +82,7 @@ class UpdateValueListRequestBody:
         引用表名称，2-32位字符串组成
 
         :param name: The name of this UpdateValueListRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -93,7 +104,7 @@ class UpdateValueListRequestBody:
         引用表类型，参见枚举列表
 
         :param type: The type of this UpdateValueListRequestBody.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -115,7 +126,7 @@ class UpdateValueListRequestBody:
         引用表的值
 
         :param values: The values of this UpdateValueListRequestBody.
-        :type: list[str]
+        :type values: list[str]
         """
         self._values = values
 
@@ -137,7 +148,7 @@ class UpdateValueListRequestBody:
         引用表描述，最长128字符
 
         :param description: The description of this UpdateValueListRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 

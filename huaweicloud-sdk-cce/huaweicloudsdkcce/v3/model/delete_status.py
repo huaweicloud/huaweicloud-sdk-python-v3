@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteStatus:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class DeleteStatus:
     }
 
     def __init__(self, previous_total=None, current_total=None, updated=None, added=None, deleted=None):
-        """DeleteStatus - a model defined in huaweicloud sdk"""
+        """DeleteStatus
+
+        The model defined in huaweicloud sdk
+
+        :param previous_total: 集群删除时已经存在的集群资源记录总数
+        :type previous_total: int
+        :param current_total: 基于当前集群资源记录信息，生成实际最新资源记录总数
+        :type current_total: int
+        :param updated: 集群删除时更新的资源记录总数
+        :type updated: int
+        :param added: 集群删除时更新的资源记录总数
+        :type added: int
+        :param deleted: 集群删除时删除的资源记录总数
+        :type deleted: int
+        """
         
         
 
@@ -78,7 +91,7 @@ class DeleteStatus:
         集群删除时已经存在的集群资源记录总数
 
         :param previous_total: The previous_total of this DeleteStatus.
-        :type: int
+        :type previous_total: int
         """
         self._previous_total = previous_total
 
@@ -100,7 +113,7 @@ class DeleteStatus:
         基于当前集群资源记录信息，生成实际最新资源记录总数
 
         :param current_total: The current_total of this DeleteStatus.
-        :type: int
+        :type current_total: int
         """
         self._current_total = current_total
 
@@ -122,7 +135,7 @@ class DeleteStatus:
         集群删除时更新的资源记录总数
 
         :param updated: The updated of this DeleteStatus.
-        :type: int
+        :type updated: int
         """
         self._updated = updated
 
@@ -144,7 +157,7 @@ class DeleteStatus:
         集群删除时更新的资源记录总数
 
         :param added: The added of this DeleteStatus.
-        :type: int
+        :type added: int
         """
         self._added = added
 
@@ -166,7 +179,7 @@ class DeleteStatus:
         集群删除时删除的资源记录总数
 
         :param deleted: The deleted of this DeleteStatus.
-        :type: int
+        :type deleted: int
         """
         self._deleted = deleted
 

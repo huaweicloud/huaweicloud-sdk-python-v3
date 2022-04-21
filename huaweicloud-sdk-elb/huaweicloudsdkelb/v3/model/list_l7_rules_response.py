@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListL7RulesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListL7RulesResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, page_info=None, rules=None):
-        """ListL7RulesResponse - a model defined in huaweicloud sdk"""
+        """ListL7RulesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param request_id: 请求ID。  注：自动生成 。
+        :type request_id: str
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`
+        :param rules: 规则对象列表。
+        :type rules: list[:class:`huaweicloudsdkelb.v3.L7Rule`]
+        """
         
         super(ListL7RulesResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListL7RulesResponse(SdkResponse):
         请求ID。  注：自动生成 。
 
         :param request_id: The request_id of this ListL7RulesResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 
@@ -78,7 +87,7 @@ class ListL7RulesResponse(SdkResponse):
 
 
         :return: The page_info of this ListL7RulesResponse.
-        :rtype: PageInfo
+        :rtype: :class:`huaweicloudsdkelb.v3.PageInfo`
         """
         return self._page_info
 
@@ -88,7 +97,7 @@ class ListL7RulesResponse(SdkResponse):
 
 
         :param page_info: The page_info of this ListL7RulesResponse.
-        :type: PageInfo
+        :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`
         """
         self._page_info = page_info
 
@@ -99,7 +108,7 @@ class ListL7RulesResponse(SdkResponse):
         规则对象列表。
 
         :return: The rules of this ListL7RulesResponse.
-        :rtype: list[L7Rule]
+        :rtype: list[:class:`huaweicloudsdkelb.v3.L7Rule`]
         """
         return self._rules
 
@@ -110,7 +119,7 @@ class ListL7RulesResponse(SdkResponse):
         规则对象列表。
 
         :param rules: The rules of this ListL7RulesResponse.
-        :type: list[L7Rule]
+        :type rules: list[:class:`huaweicloudsdkelb.v3.L7Rule`]
         """
         self._rules = rules
 

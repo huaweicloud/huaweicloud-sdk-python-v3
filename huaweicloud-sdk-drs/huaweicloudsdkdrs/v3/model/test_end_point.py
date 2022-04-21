@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TestEndPoint:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -68,7 +67,51 @@ class TestEndPoint:
     }
 
     def __init__(self, id=None, net_type=None, db_type=None, ip=None, db_port=None, inst_id=None, db_user=None, db_password=None, ssl_link=None, ssl_cert_key=None, ssl_cert_name=None, ssl_cert_check_sum=None, ssl_cert_password=None, vpc_id=None, subnet_id=None, end_point_type=None, region=None, project_id=None, db_name=None, kafka_security_config=None):
-        """TestEndPoint - a model defined in huaweicloud sdk"""
+        """TestEndPoint
+
+        The model defined in huaweicloud sdk
+
+        :param id: 任务ID
+        :type id: str
+        :param net_type: 网络类型
+        :type net_type: str
+        :param db_type: 数据库类型
+        :type db_type: str
+        :param ip: 数据库IP
+        :type ip: str
+        :param db_port: 数据库端口，Mongo、DDS必填为0。
+        :type db_port: int
+        :param inst_id: RDS实例id，RDS实例必填。
+        :type inst_id: str
+        :param db_user: 数据库帐号。
+        :type db_user: str
+        :param db_password: 数据库密码。
+        :type db_password: str
+        :param ssl_link: 是否SSL安全连接。
+        :type ssl_link: bool
+        :param ssl_cert_key: SSL证书内容，base64加密后的值，源库安全连接必选。
+        :type ssl_cert_key: str
+        :param ssl_cert_name: SSL证书名字，源库安全连接必选。
+        :type ssl_cert_name: str
+        :param ssl_cert_check_sum: SSL证书内容checksum值，证书经过sha256加密后的值，后端校验，源库安全连接必选。
+        :type ssl_cert_check_sum: str
+        :param ssl_cert_password: SSL证书密码，证书文件后缀为.p12，需要密码。
+        :type ssl_cert_password: str
+        :param vpc_id: vpcid，数据库为RDS时必选。
+        :type vpc_id: str
+        :param subnet_id: subnetid，数据库为RDS必选。
+        :type subnet_id: str
+        :param end_point_type: 源库：so,目标库：ta
+        :type end_point_type: str
+        :param region: rds实例region，数据库为RDS时必填。
+        :type region: str
+        :param project_id: 用户所处region的projectId。
+        :type project_id: str
+        :param db_name: 数据库用户名，DDS的账号认证数据库，Oracle的serviceName。
+        :type db_name: str
+        :param kafka_security_config: 
+        :type kafka_security_config: :class:`huaweicloudsdkdrs.v3.KafkaSecurity`
+        """
         
         
 
@@ -146,7 +189,7 @@ class TestEndPoint:
         任务ID
 
         :param id: The id of this TestEndPoint.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -168,7 +211,7 @@ class TestEndPoint:
         网络类型
 
         :param net_type: The net_type of this TestEndPoint.
-        :type: str
+        :type net_type: str
         """
         self._net_type = net_type
 
@@ -190,7 +233,7 @@ class TestEndPoint:
         数据库类型
 
         :param db_type: The db_type of this TestEndPoint.
-        :type: str
+        :type db_type: str
         """
         self._db_type = db_type
 
@@ -212,7 +255,7 @@ class TestEndPoint:
         数据库IP
 
         :param ip: The ip of this TestEndPoint.
-        :type: str
+        :type ip: str
         """
         self._ip = ip
 
@@ -234,7 +277,7 @@ class TestEndPoint:
         数据库端口，Mongo、DDS必填为0。
 
         :param db_port: The db_port of this TestEndPoint.
-        :type: int
+        :type db_port: int
         """
         self._db_port = db_port
 
@@ -256,7 +299,7 @@ class TestEndPoint:
         RDS实例id，RDS实例必填。
 
         :param inst_id: The inst_id of this TestEndPoint.
-        :type: str
+        :type inst_id: str
         """
         self._inst_id = inst_id
 
@@ -278,7 +321,7 @@ class TestEndPoint:
         数据库帐号。
 
         :param db_user: The db_user of this TestEndPoint.
-        :type: str
+        :type db_user: str
         """
         self._db_user = db_user
 
@@ -300,7 +343,7 @@ class TestEndPoint:
         数据库密码。
 
         :param db_password: The db_password of this TestEndPoint.
-        :type: str
+        :type db_password: str
         """
         self._db_password = db_password
 
@@ -322,7 +365,7 @@ class TestEndPoint:
         是否SSL安全连接。
 
         :param ssl_link: The ssl_link of this TestEndPoint.
-        :type: bool
+        :type ssl_link: bool
         """
         self._ssl_link = ssl_link
 
@@ -344,7 +387,7 @@ class TestEndPoint:
         SSL证书内容，base64加密后的值，源库安全连接必选。
 
         :param ssl_cert_key: The ssl_cert_key of this TestEndPoint.
-        :type: str
+        :type ssl_cert_key: str
         """
         self._ssl_cert_key = ssl_cert_key
 
@@ -366,7 +409,7 @@ class TestEndPoint:
         SSL证书名字，源库安全连接必选。
 
         :param ssl_cert_name: The ssl_cert_name of this TestEndPoint.
-        :type: str
+        :type ssl_cert_name: str
         """
         self._ssl_cert_name = ssl_cert_name
 
@@ -388,7 +431,7 @@ class TestEndPoint:
         SSL证书内容checksum值，证书经过sha256加密后的值，后端校验，源库安全连接必选。
 
         :param ssl_cert_check_sum: The ssl_cert_check_sum of this TestEndPoint.
-        :type: str
+        :type ssl_cert_check_sum: str
         """
         self._ssl_cert_check_sum = ssl_cert_check_sum
 
@@ -410,7 +453,7 @@ class TestEndPoint:
         SSL证书密码，证书文件后缀为.p12，需要密码。
 
         :param ssl_cert_password: The ssl_cert_password of this TestEndPoint.
-        :type: str
+        :type ssl_cert_password: str
         """
         self._ssl_cert_password = ssl_cert_password
 
@@ -432,7 +475,7 @@ class TestEndPoint:
         vpcid，数据库为RDS时必选。
 
         :param vpc_id: The vpc_id of this TestEndPoint.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -454,7 +497,7 @@ class TestEndPoint:
         subnetid，数据库为RDS必选。
 
         :param subnet_id: The subnet_id of this TestEndPoint.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -476,7 +519,7 @@ class TestEndPoint:
         源库：so,目标库：ta
 
         :param end_point_type: The end_point_type of this TestEndPoint.
-        :type: str
+        :type end_point_type: str
         """
         self._end_point_type = end_point_type
 
@@ -498,7 +541,7 @@ class TestEndPoint:
         rds实例region，数据库为RDS时必填。
 
         :param region: The region of this TestEndPoint.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -520,7 +563,7 @@ class TestEndPoint:
         用户所处region的projectId。
 
         :param project_id: The project_id of this TestEndPoint.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -542,7 +585,7 @@ class TestEndPoint:
         数据库用户名，DDS的账号认证数据库，Oracle的serviceName。
 
         :param db_name: The db_name of this TestEndPoint.
-        :type: str
+        :type db_name: str
         """
         self._db_name = db_name
 
@@ -552,7 +595,7 @@ class TestEndPoint:
 
 
         :return: The kafka_security_config of this TestEndPoint.
-        :rtype: KafkaSecurity
+        :rtype: :class:`huaweicloudsdkdrs.v3.KafkaSecurity`
         """
         return self._kafka_security_config
 
@@ -562,7 +605,7 @@ class TestEndPoint:
 
 
         :param kafka_security_config: The kafka_security_config of this TestEndPoint.
-        :type: KafkaSecurity
+        :type kafka_security_config: :class:`huaweicloudsdkdrs.v3.KafkaSecurity`
         """
         self._kafka_security_config = kafka_security_config
 

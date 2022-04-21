@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListenerResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -68,7 +67,51 @@ class ListenerResp:
     }
 
     def __init__(self, id=None, tenant_id=None, name=None, description=None, admin_state_up=None, loadbalancers=None, connection_limit=None, http2_enable=None, protocol=None, protocol_port=None, default_pool_id=None, default_tls_container_ref=None, client_ca_tls_container_ref=None, sni_container_refs=None, tags=None, created_at=None, updated_at=None, insert_headers=None, project_id=None, tls_ciphers_policy=None):
-        """ListenerResp - a model defined in huaweicloud sdk"""
+        """ListenerResp
+
+        The model defined in huaweicloud sdk
+
+        :param id: 监听器ID
+        :type id: str
+        :param tenant_id: 监听器所在的项目ID。
+        :type tenant_id: str
+        :param name: 监听器名称。
+        :type name: str
+        :param description: 监听器的描述信息
+        :type description: str
+        :param admin_state_up: 监听器的管理状态。只支持设定为true，该字段的值无实际意义。
+        :type admin_state_up: bool
+        :param loadbalancers: 监听器绑定的负载均衡器ID的列表。
+        :type loadbalancers: list[:class:`huaweicloudsdkelb.v2.ResourceList`]
+        :param connection_limit: 监听器的最大连接数。该字段为预留字段，暂未启用。默认为-1。
+        :type connection_limit: int
+        :param http2_enable: HTTP2功能的开启状态。该字段只有当监听器的协议是TERMINATED_HTTPS时生效。
+        :type http2_enable: bool
+        :param protocol: 监听器的监听协议
+        :type protocol: str
+        :param protocol_port: 监听器的监听端口。
+        :type protocol_port: int
+        :param default_pool_id: 监听器的默认后端云服务器组ID。当请求没有匹配的转发策略时，转发到默认后端云服务器上处理。
+        :type default_pool_id: str
+        :param default_tls_container_ref: 监听器使用的服务器证书ID。
+        :type default_tls_container_ref: str
+        :param client_ca_tls_container_ref: 监听器使用的CA证书ID。
+        :type client_ca_tls_container_ref: str
+        :param sni_container_refs: 监听器使用的SNI证书（带域名的服务器证书）ID的列表。
+        :type sni_container_refs: list[str]
+        :param tags: 监听器的标签。
+        :type tags: list[str]
+        :param created_at: 监听器的创建时间。
+        :type created_at: str
+        :param updated_at: 监听器的更新时间。
+        :type updated_at: str
+        :param insert_headers: 
+        :type insert_headers: :class:`huaweicloudsdkelb.v2.InsertHeader`
+        :param project_id: 监听器所在的项目ID。
+        :type project_id: str
+        :param tls_ciphers_policy: 监听器使用的安全策略，仅对TERMINATED_HTTPS协议类型的监听器有效，且默认值为tls-1-0。  取值包括：tls-1-0, tls-1-1, tls-1-2, tls-1-2-strict多种安全策略
+        :type tls_ciphers_policy: str
+        """
         
         
 
@@ -133,7 +176,7 @@ class ListenerResp:
         监听器ID
 
         :param id: The id of this ListenerResp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -155,7 +198,7 @@ class ListenerResp:
         监听器所在的项目ID。
 
         :param tenant_id: The tenant_id of this ListenerResp.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 
@@ -177,7 +220,7 @@ class ListenerResp:
         监听器名称。
 
         :param name: The name of this ListenerResp.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -199,7 +242,7 @@ class ListenerResp:
         监听器的描述信息
 
         :param description: The description of this ListenerResp.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -221,7 +264,7 @@ class ListenerResp:
         监听器的管理状态。只支持设定为true，该字段的值无实际意义。
 
         :param admin_state_up: The admin_state_up of this ListenerResp.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 
@@ -232,7 +275,7 @@ class ListenerResp:
         监听器绑定的负载均衡器ID的列表。
 
         :return: The loadbalancers of this ListenerResp.
-        :rtype: list[ResourceList]
+        :rtype: list[:class:`huaweicloudsdkelb.v2.ResourceList`]
         """
         return self._loadbalancers
 
@@ -243,7 +286,7 @@ class ListenerResp:
         监听器绑定的负载均衡器ID的列表。
 
         :param loadbalancers: The loadbalancers of this ListenerResp.
-        :type: list[ResourceList]
+        :type loadbalancers: list[:class:`huaweicloudsdkelb.v2.ResourceList`]
         """
         self._loadbalancers = loadbalancers
 
@@ -265,7 +308,7 @@ class ListenerResp:
         监听器的最大连接数。该字段为预留字段，暂未启用。默认为-1。
 
         :param connection_limit: The connection_limit of this ListenerResp.
-        :type: int
+        :type connection_limit: int
         """
         self._connection_limit = connection_limit
 
@@ -287,7 +330,7 @@ class ListenerResp:
         HTTP2功能的开启状态。该字段只有当监听器的协议是TERMINATED_HTTPS时生效。
 
         :param http2_enable: The http2_enable of this ListenerResp.
-        :type: bool
+        :type http2_enable: bool
         """
         self._http2_enable = http2_enable
 
@@ -309,7 +352,7 @@ class ListenerResp:
         监听器的监听协议
 
         :param protocol: The protocol of this ListenerResp.
-        :type: str
+        :type protocol: str
         """
         self._protocol = protocol
 
@@ -331,7 +374,7 @@ class ListenerResp:
         监听器的监听端口。
 
         :param protocol_port: The protocol_port of this ListenerResp.
-        :type: int
+        :type protocol_port: int
         """
         self._protocol_port = protocol_port
 
@@ -353,7 +396,7 @@ class ListenerResp:
         监听器的默认后端云服务器组ID。当请求没有匹配的转发策略时，转发到默认后端云服务器上处理。
 
         :param default_pool_id: The default_pool_id of this ListenerResp.
-        :type: str
+        :type default_pool_id: str
         """
         self._default_pool_id = default_pool_id
 
@@ -375,7 +418,7 @@ class ListenerResp:
         监听器使用的服务器证书ID。
 
         :param default_tls_container_ref: The default_tls_container_ref of this ListenerResp.
-        :type: str
+        :type default_tls_container_ref: str
         """
         self._default_tls_container_ref = default_tls_container_ref
 
@@ -397,7 +440,7 @@ class ListenerResp:
         监听器使用的CA证书ID。
 
         :param client_ca_tls_container_ref: The client_ca_tls_container_ref of this ListenerResp.
-        :type: str
+        :type client_ca_tls_container_ref: str
         """
         self._client_ca_tls_container_ref = client_ca_tls_container_ref
 
@@ -419,7 +462,7 @@ class ListenerResp:
         监听器使用的SNI证书（带域名的服务器证书）ID的列表。
 
         :param sni_container_refs: The sni_container_refs of this ListenerResp.
-        :type: list[str]
+        :type sni_container_refs: list[str]
         """
         self._sni_container_refs = sni_container_refs
 
@@ -441,7 +484,7 @@ class ListenerResp:
         监听器的标签。
 
         :param tags: The tags of this ListenerResp.
-        :type: list[str]
+        :type tags: list[str]
         """
         self._tags = tags
 
@@ -463,7 +506,7 @@ class ListenerResp:
         监听器的创建时间。
 
         :param created_at: The created_at of this ListenerResp.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -485,7 +528,7 @@ class ListenerResp:
         监听器的更新时间。
 
         :param updated_at: The updated_at of this ListenerResp.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 
@@ -495,7 +538,7 @@ class ListenerResp:
 
 
         :return: The insert_headers of this ListenerResp.
-        :rtype: InsertHeader
+        :rtype: :class:`huaweicloudsdkelb.v2.InsertHeader`
         """
         return self._insert_headers
 
@@ -505,7 +548,7 @@ class ListenerResp:
 
 
         :param insert_headers: The insert_headers of this ListenerResp.
-        :type: InsertHeader
+        :type insert_headers: :class:`huaweicloudsdkelb.v2.InsertHeader`
         """
         self._insert_headers = insert_headers
 
@@ -527,7 +570,7 @@ class ListenerResp:
         监听器所在的项目ID。
 
         :param project_id: The project_id of this ListenerResp.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -549,7 +592,7 @@ class ListenerResp:
         监听器使用的安全策略，仅对TERMINATED_HTTPS协议类型的监听器有效，且默认值为tls-1-0。  取值包括：tls-1-0, tls-1-1, tls-1-2, tls-1-2-strict多种安全策略
 
         :param tls_ciphers_policy: The tls_ciphers_policy of this ListenerResp.
-        :type: str
+        :type tls_ciphers_policy: str
         """
         self._tls_ciphers_policy = tls_ciphers_policy
 

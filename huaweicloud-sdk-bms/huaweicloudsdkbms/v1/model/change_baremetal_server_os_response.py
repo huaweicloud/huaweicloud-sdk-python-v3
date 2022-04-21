@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ChangeBaremetalServerOsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ChangeBaremetalServerOsResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """ChangeBaremetalServerOsResponse - a model defined in huaweicloud sdk"""
+        """ChangeBaremetalServerOsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 提交任务成功后返回的任务ID，用户可以使用该ID对任务执行情况进行查询
+        :type job_id: str
+        """
         
         super(ChangeBaremetalServerOsResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class ChangeBaremetalServerOsResponse(SdkResponse):
         提交任务成功后返回的任务ID，用户可以使用该ID对任务执行情况进行查询
 
         :param job_id: The job_id of this ChangeBaremetalServerOsResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 

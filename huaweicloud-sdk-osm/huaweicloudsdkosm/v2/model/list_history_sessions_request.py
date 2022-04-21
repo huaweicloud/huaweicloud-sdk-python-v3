@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListHistorySessionsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ListHistorySessionsRequest:
     }
 
     def __init__(self, authorization_id=None, authorization_detail_id=None, group_id=None, offset=None, limit=None, x_site=None, x_language=None, x_time_zone=None):
-        """ListHistorySessionsRequest - a model defined in huaweicloud sdk"""
+        """ListHistorySessionsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param authorization_id: 授权id
+        :type authorization_id: int
+        :param authorization_detail_id: 授权详情id
+        :type authorization_detail_id: int
+        :param group_id: 组id
+        :type group_id: str
+        :param offset: 查询偏移量
+        :type offset: int
+        :param limit: 查询限制条数
+        :type limit: int
+        :param x_site: 对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
+        :type x_site: int
+        :param x_language: 语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
+        :type x_language: str
+        :param x_time_zone: 环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
+        :type x_time_zone: str
+        """
         
         
 
@@ -91,7 +110,7 @@ class ListHistorySessionsRequest:
         授权id
 
         :param authorization_id: The authorization_id of this ListHistorySessionsRequest.
-        :type: int
+        :type authorization_id: int
         """
         self._authorization_id = authorization_id
 
@@ -113,7 +132,7 @@ class ListHistorySessionsRequest:
         授权详情id
 
         :param authorization_detail_id: The authorization_detail_id of this ListHistorySessionsRequest.
-        :type: int
+        :type authorization_detail_id: int
         """
         self._authorization_detail_id = authorization_detail_id
 
@@ -135,7 +154,7 @@ class ListHistorySessionsRequest:
         组id
 
         :param group_id: The group_id of this ListHistorySessionsRequest.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -157,7 +176,7 @@ class ListHistorySessionsRequest:
         查询偏移量
 
         :param offset: The offset of this ListHistorySessionsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -179,7 +198,7 @@ class ListHistorySessionsRequest:
         查询限制条数
 
         :param limit: The limit of this ListHistorySessionsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -201,7 +220,7 @@ class ListHistorySessionsRequest:
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
         :param x_site: The x_site of this ListHistorySessionsRequest.
-        :type: int
+        :type x_site: int
         """
         self._x_site = x_site
 
@@ -223,7 +242,7 @@ class ListHistorySessionsRequest:
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
         :param x_language: The x_language of this ListHistorySessionsRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -245,7 +264,7 @@ class ListHistorySessionsRequest:
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 
         :param x_time_zone: The x_time_zone of this ListHistorySessionsRequest.
-        :type: str
+        :type x_time_zone: str
         """
         self._x_time_zone = x_time_zone
 

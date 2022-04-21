@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GeneralTableResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class GeneralTableResult:
     }
 
     def __init__(self, words_region_count=None, words_region_list=None, excel=None):
-        """GeneralTableResult - a model defined in huaweicloud sdk"""
+        """GeneralTableResult
+
+        The model defined in huaweicloud sdk
+
+        :param words_region_count: 文字区域数目。          
+        :type words_region_count: int
+        :param words_region_list: 文字区域识别结果列表，输出顺序从左到右，先上后下。 
+        :type words_region_list: list[:class:`huaweicloudsdkocr.v1.WordsRegionList`]
+        :param excel: 表格图像转换为excel的base64编码，图像中的文字和表格按位置写入excel。对返回的excel编码可用base64.b64decode解码并保存为.xlsx文件。 
+        :type excel: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class GeneralTableResult:
         文字区域数目。          
 
         :param words_region_count: The words_region_count of this GeneralTableResult.
-        :type: int
+        :type words_region_count: int
         """
         self._words_region_count = words_region_count
 
@@ -77,7 +86,7 @@ class GeneralTableResult:
         文字区域识别结果列表，输出顺序从左到右，先上后下。 
 
         :return: The words_region_list of this GeneralTableResult.
-        :rtype: list[WordsRegionList]
+        :rtype: list[:class:`huaweicloudsdkocr.v1.WordsRegionList`]
         """
         return self._words_region_list
 
@@ -88,7 +97,7 @@ class GeneralTableResult:
         文字区域识别结果列表，输出顺序从左到右，先上后下。 
 
         :param words_region_list: The words_region_list of this GeneralTableResult.
-        :type: list[WordsRegionList]
+        :type words_region_list: list[:class:`huaweicloudsdkocr.v1.WordsRegionList`]
         """
         self._words_region_list = words_region_list
 
@@ -110,7 +119,7 @@ class GeneralTableResult:
         表格图像转换为excel的base64编码，图像中的文字和表格按位置写入excel。对返回的excel编码可用base64.b64decode解码并保存为.xlsx文件。 
 
         :param excel: The excel of this GeneralTableResult.
-        :type: str
+        :type excel: str
         """
         self._excel = excel
 

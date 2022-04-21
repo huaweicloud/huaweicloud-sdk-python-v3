@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TestPlanDetailOwner:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class TestPlanDetailOwner:
     }
 
     def __init__(self, id=None, name=None, nick_name=None, user_name=None):
-        """TestPlanDetailOwner - a model defined in huaweicloud sdk"""
+        """TestPlanDetailOwner
+
+        The model defined in huaweicloud sdk
+
+        :param id: 测试计划处理者id
+        :type id: str
+        :param name: 测试计划处理者名称，优先返回nickName，不存在则返回userName
+        :type name: str
+        :param nick_name: 测试计划处理者的昵称，当用户未设置昵称时不返回该字段
+        :type nick_name: str
+        :param user_name: 测试计划处理者的用户名称
+        :type user_name: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class TestPlanDetailOwner:
         测试计划处理者id
 
         :param id: The id of this TestPlanDetailOwner.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -95,7 +106,7 @@ class TestPlanDetailOwner:
         测试计划处理者名称，优先返回nickName，不存在则返回userName
 
         :param name: The name of this TestPlanDetailOwner.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -117,7 +128,7 @@ class TestPlanDetailOwner:
         测试计划处理者的昵称，当用户未设置昵称时不返回该字段
 
         :param nick_name: The nick_name of this TestPlanDetailOwner.
-        :type: str
+        :type nick_name: str
         """
         self._nick_name = nick_name
 
@@ -139,7 +150,7 @@ class TestPlanDetailOwner:
         测试计划处理者的用户名称
 
         :param user_name: The user_name of this TestPlanDetailOwner.
-        :type: str
+        :type user_name: str
         """
         self._user_name = user_name
 

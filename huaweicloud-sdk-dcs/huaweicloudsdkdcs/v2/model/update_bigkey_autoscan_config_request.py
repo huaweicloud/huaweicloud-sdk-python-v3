@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateBigkeyAutoscanConfigRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateBigkeyAutoscanConfigRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """UpdateBigkeyAutoscanConfigRequest - a model defined in huaweicloud sdk"""
+        """UpdateBigkeyAutoscanConfigRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param body: Body of the UpdateBigkeyAutoscanConfigRequest
+        :type body: :class:`huaweicloudsdkdcs.v2.AutoscanConfigRequest`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateBigkeyAutoscanConfigRequest:
         实例ID。
 
         :param instance_id: The instance_id of this UpdateBigkeyAutoscanConfigRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -72,7 +79,7 @@ class UpdateBigkeyAutoscanConfigRequest:
 
 
         :return: The body of this UpdateBigkeyAutoscanConfigRequest.
-        :rtype: AutoscanConfigRequest
+        :rtype: :class:`huaweicloudsdkdcs.v2.AutoscanConfigRequest`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateBigkeyAutoscanConfigRequest:
 
 
         :param body: The body of this UpdateBigkeyAutoscanConfigRequest.
-        :type: AutoscanConfigRequest
+        :type body: :class:`huaweicloudsdkdcs.v2.AutoscanConfigRequest`
         """
         self._body = body
 

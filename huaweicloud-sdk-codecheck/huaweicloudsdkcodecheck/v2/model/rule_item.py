@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RuleItem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class RuleItem:
     }
 
     def __init__(self, rule_id=None, rule_language=None, rule_name=None, rule_severity=None, rule_tages=None, checked=None, rule_config_list=None):
-        """RuleItem - a model defined in huaweicloud sdk"""
+        """RuleItem
+
+        The model defined in huaweicloud sdk
+
+        :param rule_id: 规则id
+        :type rule_id: str
+        :param rule_language: 规则所属语言
+        :type rule_language: str
+        :param rule_name: 规则名称
+        :type rule_name: str
+        :param rule_severity: 规则问题级别
+        :type rule_severity: str
+        :param rule_tages: 规则标签
+        :type rule_tages: str
+        :param checked: 规则状态0：未启用，1：已启用
+        :type checked: str
+        :param rule_config_list: 规则配置参数阈值相关信息
+        :type rule_config_list: list[:class:`huaweicloudsdkcodecheck.v2.RuleConfig`]
+        """
         
         
 
@@ -88,7 +105,7 @@ class RuleItem:
         规则id
 
         :param rule_id: The rule_id of this RuleItem.
-        :type: str
+        :type rule_id: str
         """
         self._rule_id = rule_id
 
@@ -110,7 +127,7 @@ class RuleItem:
         规则所属语言
 
         :param rule_language: The rule_language of this RuleItem.
-        :type: str
+        :type rule_language: str
         """
         self._rule_language = rule_language
 
@@ -132,7 +149,7 @@ class RuleItem:
         规则名称
 
         :param rule_name: The rule_name of this RuleItem.
-        :type: str
+        :type rule_name: str
         """
         self._rule_name = rule_name
 
@@ -154,7 +171,7 @@ class RuleItem:
         规则问题级别
 
         :param rule_severity: The rule_severity of this RuleItem.
-        :type: str
+        :type rule_severity: str
         """
         self._rule_severity = rule_severity
 
@@ -176,7 +193,7 @@ class RuleItem:
         规则标签
 
         :param rule_tages: The rule_tages of this RuleItem.
-        :type: str
+        :type rule_tages: str
         """
         self._rule_tages = rule_tages
 
@@ -198,7 +215,7 @@ class RuleItem:
         规则状态0：未启用，1：已启用
 
         :param checked: The checked of this RuleItem.
-        :type: str
+        :type checked: str
         """
         self._checked = checked
 
@@ -209,7 +226,7 @@ class RuleItem:
         规则配置参数阈值相关信息
 
         :return: The rule_config_list of this RuleItem.
-        :rtype: list[RuleConfig]
+        :rtype: list[:class:`huaweicloudsdkcodecheck.v2.RuleConfig`]
         """
         return self._rule_config_list
 
@@ -220,7 +237,7 @@ class RuleItem:
         规则配置参数阈值相关信息
 
         :param rule_config_list: The rule_config_list of this RuleItem.
-        :type: list[RuleConfig]
+        :type rule_config_list: list[:class:`huaweicloudsdkcodecheck.v2.RuleConfig`]
         """
         self._rule_config_list = rule_config_list
 

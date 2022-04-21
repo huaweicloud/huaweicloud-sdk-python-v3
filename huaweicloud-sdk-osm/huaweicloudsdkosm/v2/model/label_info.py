@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LabelInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class LabelInfo:
     }
 
     def __init__(self, label_id=None, name=None, color=None):
-        """LabelInfo - a model defined in huaweicloud sdk"""
+        """LabelInfo
+
+        The model defined in huaweicloud sdk
+
+        :param label_id: 标签id
+        :type label_id: int
+        :param name: 标签描述
+        :type name: str
+        :param color: 颜色id
+        :type color: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class LabelInfo:
         标签id
 
         :param label_id: The label_id of this LabelInfo.
-        :type: int
+        :type label_id: int
         """
         self._label_id = label_id
 
@@ -90,7 +99,7 @@ class LabelInfo:
         标签描述
 
         :param name: The name of this LabelInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -112,7 +121,7 @@ class LabelInfo:
         颜色id
 
         :param color: The color of this LabelInfo.
-        :type: str
+        :type color: str
         """
         self._color = color
 

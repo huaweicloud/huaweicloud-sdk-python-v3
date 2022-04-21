@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EnvExecutionBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class EnvExecutionBody:
     }
 
     def __init__(self, params=None, record_id=None):
-        """EnvExecutionBody - a model defined in huaweicloud sdk"""
+        """EnvExecutionBody
+
+        The model defined in huaweicloud sdk
+
+        :param params: 部署任务执行时传递的参数
+        :type params: list[:class:`huaweicloudsdkclouddeploy.v2.DynamicConfigInfo`]
+        :param record_id: 部署任务的执行id，可通过record_id回滚至之前的部署状态。选中部署历史执行记录，在URL中获取。
+        :type record_id: str
+        """
         
         
 
@@ -51,7 +58,7 @@ class EnvExecutionBody:
         部署任务执行时传递的参数
 
         :return: The params of this EnvExecutionBody.
-        :rtype: list[DynamicConfigInfo]
+        :rtype: list[:class:`huaweicloudsdkclouddeploy.v2.DynamicConfigInfo`]
         """
         return self._params
 
@@ -62,7 +69,7 @@ class EnvExecutionBody:
         部署任务执行时传递的参数
 
         :param params: The params of this EnvExecutionBody.
-        :type: list[DynamicConfigInfo]
+        :type params: list[:class:`huaweicloudsdkclouddeploy.v2.DynamicConfigInfo`]
         """
         self._params = params
 
@@ -84,7 +91,7 @@ class EnvExecutionBody:
         部署任务的执行id，可通过record_id回滚至之前的部署状态。选中部署历史执行记录，在URL中获取。
 
         :param record_id: The record_id of this EnvExecutionBody.
-        :type: str
+        :type record_id: str
         """
         self._record_id = record_id
 

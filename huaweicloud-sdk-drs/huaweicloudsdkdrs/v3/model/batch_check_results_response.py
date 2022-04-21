@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchCheckResultsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchCheckResultsResponse(SdkResponse):
     }
 
     def __init__(self, results=None, count=None):
-        """BatchCheckResultsResponse - a model defined in huaweicloud sdk"""
+        """BatchCheckResultsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param results: 批量查询预检查结果响应体集合。
+        :type results: list[:class:`huaweicloudsdkdrs.v3.QueryPreCheckResp`]
+        :param count: 总记录数。
+        :type count: int
+        """
         
         super(BatchCheckResultsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class BatchCheckResultsResponse(SdkResponse):
         批量查询预检查结果响应体集合。
 
         :return: The results of this BatchCheckResultsResponse.
-        :rtype: list[QueryPreCheckResp]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.QueryPreCheckResp`]
         """
         return self._results
 
@@ -63,7 +70,7 @@ class BatchCheckResultsResponse(SdkResponse):
         批量查询预检查结果响应体集合。
 
         :param results: The results of this BatchCheckResultsResponse.
-        :type: list[QueryPreCheckResp]
+        :type results: list[:class:`huaweicloudsdkdrs.v3.QueryPreCheckResp`]
         """
         self._results = results
 
@@ -85,7 +92,7 @@ class BatchCheckResultsResponse(SdkResponse):
         总记录数。
 
         :param count: The count of this BatchCheckResultsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

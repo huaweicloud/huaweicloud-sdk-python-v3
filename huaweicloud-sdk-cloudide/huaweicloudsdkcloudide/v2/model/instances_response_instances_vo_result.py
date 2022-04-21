@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InstancesResponseInstancesVOResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class InstancesResponseInstancesVOResult:
     }
 
     def __init__(self, link=None, arch=None, id=None, private=None):
-        """InstancesResponseInstancesVOResult - a model defined in huaweicloud sdk"""
+        """InstancesResponseInstancesVOResult
+
+        The model defined in huaweicloud sdk
+
+        :param link: 链接
+        :type link: str
+        :param arch: cpu架构 x86|arm
+        :type arch: str
+        :param id: 实例id
+        :type id: str
+        :param private: 是否私有平台
+        :type private: bool
+        """
         
         
 
@@ -73,7 +84,7 @@ class InstancesResponseInstancesVOResult:
         链接
 
         :param link: The link of this InstancesResponseInstancesVOResult.
-        :type: str
+        :type link: str
         """
         self._link = link
 
@@ -95,7 +106,7 @@ class InstancesResponseInstancesVOResult:
         cpu架构 x86|arm
 
         :param arch: The arch of this InstancesResponseInstancesVOResult.
-        :type: str
+        :type arch: str
         """
         self._arch = arch
 
@@ -117,7 +128,7 @@ class InstancesResponseInstancesVOResult:
         实例id
 
         :param id: The id of this InstancesResponseInstancesVOResult.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -139,7 +150,7 @@ class InstancesResponseInstancesVOResult:
         是否私有平台
 
         :param private: The private of this InstancesResponseInstancesVOResult.
-        :type: bool
+        :type private: bool
         """
         self._private = private
 

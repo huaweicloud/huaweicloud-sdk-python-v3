@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ReqListDehByTags:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ReqListDehByTags:
     }
 
     def __init__(self, tags=None, not_tags=None, limit=None, offset=None, action=None, tags_any=None, not_tags_any=None, matches=None):
-        """ReqListDehByTags - a model defined in huaweicloud sdk"""
+        """ReqListDehByTags
+
+        The model defined in huaweicloud sdk
+
+        :param tags: 查询包含所有指定标签的专属主机结构体不能缺失。 1.最多包含10个key，每个key下面的value最多10个。 2.结构体不能缺失。 3.key不能为空或者空字符串。 4.key不能重复。 5.同一个key中value不能重复。
+        :type tags: list[:class:`huaweicloudsdkdeh.v1.Tag`]
+        :param not_tags: 查询不包含所有指定标签的专属主机。 1.最多包含10个key，每个key下面的value最多10个。 2.结构体不能缺失。 3.key不能为空或者空字符串。 4.key不能重复。 5.同一个key中value不能重复。
+        :type not_tags: list[:class:`huaweicloudsdkdeh.v1.Tag`]
+        :param limit: 查询返回的专属主机数量限制，最多为1000，不能为负数。 1.如果action的值为count，此参数无效。 2.如果action的值为filter，limit默认为1000。
+        :type limit: int
+        :param offset: 索引位置，从offset指定的下一条数据开始查询。必须为数字，不能为负数。 查询第一页数据时，不需要传入此参数。查询后续页码数据时，将查询前一页数据时响应体中的值带入此参数。 1.如果action的值为count，此参数无效。 2.如果action的值为filter，offset默认为0。
+        :type offset: int
+        :param action: 操作标识，包括filter和count两种。 1.filter：表示按标签过滤专属主机，返回符合条件的专属主机列表。此时，为分页查询。 2.count：表示按标签搜索专属主机，返回符合条件的专属主机个数。
+        :type action: str
+        :param tags_any: 包含任意标签。 1.最多包含10个key，每个key下面的value最多10个，每个key对应的value可以为空数组但结构体不能缺失。 2.key不能重复，同一个key中value不能重复。 3.结果返回包含标签的资源列表，key之间是“或”的关系，key-value结构中value是“或”的关系。 4.无过滤条件时返回全量数据。
+        :type tags_any: list[:class:`huaweicloudsdkdeh.v1.Tag`]
+        :param not_tags_any: 不包含任意标签。 1.最多包含10个key，每个key下面的value最多10个，每个key对应的value可以为空数组但结构体不能缺失。 2.key不能重复，同一个key中value不能重复。 3.结果返回不包含标签的资源列表，key之间是“或”的关系，key-value结构中value是或的关系。 4.无过滤条件时返回全量数据。
+        :type not_tags_any: list[:class:`huaweicloudsdkdeh.v1.Tag`]
+        :param matches: 搜索字段，用于按条件搜索专属主机。  当前仅支持按resource_name进行搜索。
+        :type matches: list[:class:`huaweicloudsdkdeh.v1.Match`]
+        """
         
         
 
@@ -81,7 +100,7 @@ class ReqListDehByTags:
         查询包含所有指定标签的专属主机结构体不能缺失。 1.最多包含10个key，每个key下面的value最多10个。 2.结构体不能缺失。 3.key不能为空或者空字符串。 4.key不能重复。 5.同一个key中value不能重复。
 
         :return: The tags of this ReqListDehByTags.
-        :rtype: list[Tag]
+        :rtype: list[:class:`huaweicloudsdkdeh.v1.Tag`]
         """
         return self._tags
 
@@ -92,7 +111,7 @@ class ReqListDehByTags:
         查询包含所有指定标签的专属主机结构体不能缺失。 1.最多包含10个key，每个key下面的value最多10个。 2.结构体不能缺失。 3.key不能为空或者空字符串。 4.key不能重复。 5.同一个key中value不能重复。
 
         :param tags: The tags of this ReqListDehByTags.
-        :type: list[Tag]
+        :type tags: list[:class:`huaweicloudsdkdeh.v1.Tag`]
         """
         self._tags = tags
 
@@ -103,7 +122,7 @@ class ReqListDehByTags:
         查询不包含所有指定标签的专属主机。 1.最多包含10个key，每个key下面的value最多10个。 2.结构体不能缺失。 3.key不能为空或者空字符串。 4.key不能重复。 5.同一个key中value不能重复。
 
         :return: The not_tags of this ReqListDehByTags.
-        :rtype: list[Tag]
+        :rtype: list[:class:`huaweicloudsdkdeh.v1.Tag`]
         """
         return self._not_tags
 
@@ -114,7 +133,7 @@ class ReqListDehByTags:
         查询不包含所有指定标签的专属主机。 1.最多包含10个key，每个key下面的value最多10个。 2.结构体不能缺失。 3.key不能为空或者空字符串。 4.key不能重复。 5.同一个key中value不能重复。
 
         :param not_tags: The not_tags of this ReqListDehByTags.
-        :type: list[Tag]
+        :type not_tags: list[:class:`huaweicloudsdkdeh.v1.Tag`]
         """
         self._not_tags = not_tags
 
@@ -136,7 +155,7 @@ class ReqListDehByTags:
         查询返回的专属主机数量限制，最多为1000，不能为负数。 1.如果action的值为count，此参数无效。 2.如果action的值为filter，limit默认为1000。
 
         :param limit: The limit of this ReqListDehByTags.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -158,7 +177,7 @@ class ReqListDehByTags:
         索引位置，从offset指定的下一条数据开始查询。必须为数字，不能为负数。 查询第一页数据时，不需要传入此参数。查询后续页码数据时，将查询前一页数据时响应体中的值带入此参数。 1.如果action的值为count，此参数无效。 2.如果action的值为filter，offset默认为0。
 
         :param offset: The offset of this ReqListDehByTags.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -180,7 +199,7 @@ class ReqListDehByTags:
         操作标识，包括filter和count两种。 1.filter：表示按标签过滤专属主机，返回符合条件的专属主机列表。此时，为分页查询。 2.count：表示按标签搜索专属主机，返回符合条件的专属主机个数。
 
         :param action: The action of this ReqListDehByTags.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -191,7 +210,7 @@ class ReqListDehByTags:
         包含任意标签。 1.最多包含10个key，每个key下面的value最多10个，每个key对应的value可以为空数组但结构体不能缺失。 2.key不能重复，同一个key中value不能重复。 3.结果返回包含标签的资源列表，key之间是“或”的关系，key-value结构中value是“或”的关系。 4.无过滤条件时返回全量数据。
 
         :return: The tags_any of this ReqListDehByTags.
-        :rtype: list[Tag]
+        :rtype: list[:class:`huaweicloudsdkdeh.v1.Tag`]
         """
         return self._tags_any
 
@@ -202,7 +221,7 @@ class ReqListDehByTags:
         包含任意标签。 1.最多包含10个key，每个key下面的value最多10个，每个key对应的value可以为空数组但结构体不能缺失。 2.key不能重复，同一个key中value不能重复。 3.结果返回包含标签的资源列表，key之间是“或”的关系，key-value结构中value是“或”的关系。 4.无过滤条件时返回全量数据。
 
         :param tags_any: The tags_any of this ReqListDehByTags.
-        :type: list[Tag]
+        :type tags_any: list[:class:`huaweicloudsdkdeh.v1.Tag`]
         """
         self._tags_any = tags_any
 
@@ -213,7 +232,7 @@ class ReqListDehByTags:
         不包含任意标签。 1.最多包含10个key，每个key下面的value最多10个，每个key对应的value可以为空数组但结构体不能缺失。 2.key不能重复，同一个key中value不能重复。 3.结果返回不包含标签的资源列表，key之间是“或”的关系，key-value结构中value是或的关系。 4.无过滤条件时返回全量数据。
 
         :return: The not_tags_any of this ReqListDehByTags.
-        :rtype: list[Tag]
+        :rtype: list[:class:`huaweicloudsdkdeh.v1.Tag`]
         """
         return self._not_tags_any
 
@@ -224,7 +243,7 @@ class ReqListDehByTags:
         不包含任意标签。 1.最多包含10个key，每个key下面的value最多10个，每个key对应的value可以为空数组但结构体不能缺失。 2.key不能重复，同一个key中value不能重复。 3.结果返回不包含标签的资源列表，key之间是“或”的关系，key-value结构中value是或的关系。 4.无过滤条件时返回全量数据。
 
         :param not_tags_any: The not_tags_any of this ReqListDehByTags.
-        :type: list[Tag]
+        :type not_tags_any: list[:class:`huaweicloudsdkdeh.v1.Tag`]
         """
         self._not_tags_any = not_tags_any
 
@@ -235,7 +254,7 @@ class ReqListDehByTags:
         搜索字段，用于按条件搜索专属主机。  当前仅支持按resource_name进行搜索。
 
         :return: The matches of this ReqListDehByTags.
-        :rtype: list[Match]
+        :rtype: list[:class:`huaweicloudsdkdeh.v1.Match`]
         """
         return self._matches
 
@@ -246,7 +265,7 @@ class ReqListDehByTags:
         搜索字段，用于按条件搜索专属主机。  当前仅支持按resource_name进行搜索。
 
         :param matches: The matches of this ReqListDehByTags.
-        :type: list[Match]
+        :type matches: list[:class:`huaweicloudsdkdeh.v1.Match`]
         """
         self._matches = matches
 

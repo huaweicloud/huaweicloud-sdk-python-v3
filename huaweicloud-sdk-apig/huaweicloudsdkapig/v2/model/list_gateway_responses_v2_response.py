@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListGatewayResponsesV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListGatewayResponsesV2Response(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, responses=None):
-        """ListGatewayResponsesV2Response - a model defined in huaweicloud sdk"""
+        """ListGatewayResponsesV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param size: 本次返回的列表长度
+        :type size: int
+        :param total: 满足条件的记录数
+        :type total: int
+        :param responses: 响应列表
+        :type responses: list[:class:`huaweicloudsdkapig.v2.ResponseInfoResp`]
+        """
         
         super(ListGatewayResponsesV2Response, self).__init__()
 
@@ -66,7 +75,7 @@ class ListGatewayResponsesV2Response(SdkResponse):
         本次返回的列表长度
 
         :param size: The size of this ListGatewayResponsesV2Response.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -88,7 +97,7 @@ class ListGatewayResponsesV2Response(SdkResponse):
         满足条件的记录数
 
         :param total: The total of this ListGatewayResponsesV2Response.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -99,7 +108,7 @@ class ListGatewayResponsesV2Response(SdkResponse):
         响应列表
 
         :return: The responses of this ListGatewayResponsesV2Response.
-        :rtype: list[ResponseInfoResp]
+        :rtype: list[:class:`huaweicloudsdkapig.v2.ResponseInfoResp`]
         """
         return self._responses
 
@@ -110,7 +119,7 @@ class ListGatewayResponsesV2Response(SdkResponse):
         响应列表
 
         :param responses: The responses of this ListGatewayResponsesV2Response.
-        :type: list[ResponseInfoResp]
+        :type responses: list[:class:`huaweicloudsdkapig.v2.ResponseInfoResp`]
         """
         self._responses = responses
 

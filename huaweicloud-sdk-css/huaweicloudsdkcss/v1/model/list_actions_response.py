@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListActionsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListActionsResponse(SdkResponse):
     }
 
     def __init__(self, actions=None):
-        """ListActionsResponse - a model defined in huaweicloud sdk"""
+        """ListActionsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param actions: 操作记录列表。
+        :type actions: list[:class:`huaweicloudsdkcss.v1.Actions`]
+        """
         
         super(ListActionsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListActionsResponse(SdkResponse):
         操作记录列表。
 
         :return: The actions of this ListActionsResponse.
-        :rtype: list[Actions]
+        :rtype: list[:class:`huaweicloudsdkcss.v1.Actions`]
         """
         return self._actions
 
@@ -58,7 +63,7 @@ class ListActionsResponse(SdkResponse):
         操作记录列表。
 
         :param actions: The actions of this ListActionsResponse.
-        :type: list[Actions]
+        :type actions: list[:class:`huaweicloudsdkcss.v1.Actions`]
         """
         self._actions = actions
 

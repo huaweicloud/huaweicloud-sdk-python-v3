@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunSummaryResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class RunSummaryResponse(SdkResponse):
     }
 
     def __init__(self, summary=None, error_code=None, error_msg=None):
-        """RunSummaryResponse - a model defined in huaweicloud sdk"""
+        """RunSummaryResponse
+
+        The model defined in huaweicloud sdk
+
+        :param summary: 根据文本请求体，返回摘要结果。调用失败时无此字段。
+        :type summary: str
+        :param error_code: 调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
+        :type error_code: str
+        :param error_msg: 调用失败时的错误信息。调用成功时无此字段。
+        :type error_msg: str
+        """
         
         super(RunSummaryResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class RunSummaryResponse(SdkResponse):
         根据文本请求体，返回摘要结果。调用失败时无此字段。
 
         :param summary: The summary of this RunSummaryResponse.
-        :type: str
+        :type summary: str
         """
         self._summary = summary
 
@@ -90,7 +99,7 @@ class RunSummaryResponse(SdkResponse):
         调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
 
         :param error_code: The error_code of this RunSummaryResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -112,7 +121,7 @@ class RunSummaryResponse(SdkResponse):
         调用失败时的错误信息。调用成功时无此字段。
 
         :param error_msg: The error_msg of this RunSummaryResponse.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 

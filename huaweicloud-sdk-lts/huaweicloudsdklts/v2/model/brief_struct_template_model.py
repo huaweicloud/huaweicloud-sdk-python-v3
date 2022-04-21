@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BriefStructTemplateModel:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class BriefStructTemplateModel:
     }
 
     def __init__(self, create_time=None, id=None, template_name=None, template_type=None, project_id=None):
-        """BriefStructTemplateModel - a model defined in huaweicloud sdk"""
+        """BriefStructTemplateModel
+
+        The model defined in huaweicloud sdk
+
+        :param create_time: 模板创建/更新时间
+        :type create_time: int
+        :param id: 模板id
+        :type id: str
+        :param template_name: 模板名称
+        :type template_name: str
+        :param template_type: 结构化类型，当前支持regex,json,split,nginx
+        :type template_type: str
+        :param project_id: 项目ID，获取方式请参见：获取账号ID、项目ID、日志组ID、日志流ID（https://support.huaweicloud.com/api-lts/lts_api_0006.html）。
+        :type project_id: str
+        """
         
         
 
@@ -73,7 +86,7 @@ class BriefStructTemplateModel:
         模板创建/更新时间
 
         :param create_time: The create_time of this BriefStructTemplateModel.
-        :type: int
+        :type create_time: int
         """
         self._create_time = create_time
 
@@ -95,7 +108,7 @@ class BriefStructTemplateModel:
         模板id
 
         :param id: The id of this BriefStructTemplateModel.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -117,7 +130,7 @@ class BriefStructTemplateModel:
         模板名称
 
         :param template_name: The template_name of this BriefStructTemplateModel.
-        :type: str
+        :type template_name: str
         """
         self._template_name = template_name
 
@@ -139,7 +152,7 @@ class BriefStructTemplateModel:
         结构化类型，当前支持regex,json,split,nginx
 
         :param template_type: The template_type of this BriefStructTemplateModel.
-        :type: str
+        :type template_type: str
         """
         self._template_type = template_type
 
@@ -161,7 +174,7 @@ class BriefStructTemplateModel:
         项目ID，获取方式请参见：获取账号ID、项目ID、日志组ID、日志流ID（https://support.huaweicloud.com/api-lts/lts_api_0006.html）。
 
         :param project_id: The project_id of this BriefStructTemplateModel.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 

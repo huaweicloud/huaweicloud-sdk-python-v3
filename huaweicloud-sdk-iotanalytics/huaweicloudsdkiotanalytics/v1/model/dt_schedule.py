@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DTSchedule:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DTSchedule:
     }
 
     def __init__(self, period=None):
-        """DTSchedule - a model defined in huaweicloud sdk"""
+        """DTSchedule
+
+        The model defined in huaweicloud sdk
+
+        :param period: 调度周期，正则： \&quot;1m|5m|15m|1h\&quot;，表示从每小时第0分0秒开始，每1m、5m、15m、1h调度
+        :type period: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class DTSchedule:
         调度周期，正则： \"1m|5m|15m|1h\"，表示从每小时第0分0秒开始，每1m、5m、15m、1h调度
 
         :param period: The period of this DTSchedule.
-        :type: str
+        :type period: str
         """
         self._period = period
 

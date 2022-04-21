@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SimPricePlanVO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -72,7 +71,55 @@ class SimPricePlanVO:
     }
 
     def __init__(self, id=None, account_id=None, sim_card_id=None, status=None, price_plan_id=None, cid=None, order_id=None, create_time=None, active_time=None, stop_time=None, flow_total=None, flow_used=None, flow_left=None, using=None, price_plan_name=None, description=None, package_type=None, effect_type=None, silent_period_day=None, silent_period_unit=None, auto_renew=None, location_desc=None):
-        """SimPricePlanVO - a model defined in huaweicloud sdk"""
+        """SimPricePlanVO
+
+        The model defined in huaweicloud sdk
+
+        :param id: 套餐实例id
+        :type id: int
+        :param account_id: 账户id
+        :type account_id: str
+        :param sim_card_id: sim卡id
+        :type sim_card_id: int
+        :param status: 套餐状态:0 已删除 1 可激活 2 在用 3. 使用完 4. 可激活 5 已停用 6. 启用失败
+        :type status: int
+        :param price_plan_id: 套餐id
+        :type price_plan_id: str
+        :param cid: 容器ID:不同类型卡含义如下 iccid(实体卡)，eid（eSIM）cid（vSIM)
+        :type cid: str
+        :param order_id: 订单id
+        :type order_id: str
+        :param create_time: 创建时间 例如2020-08-24T07:57:56.000Z
+        :type create_time: datetime
+        :param active_time: 激活时间 例如2020-10-31T16:00:00.000Z
+        :type active_time: datetime
+        :param stop_time: 停用时间 2021-10-31T16:00:00.000Z
+        :type stop_time: datetime
+        :param flow_total: 总流量(MB)
+        :type flow_total: float
+        :param flow_used: 已使用流量(MB)
+        :type flow_used: float
+        :param flow_left: 剩余流量(MB)
+        :type flow_left: float
+        :param using: 是否使用中(0：否 1：是)
+        :type using: str
+        :param price_plan_name: 套餐名
+        :type price_plan_name: str
+        :param description: 描述
+        :type description: str
+        :param package_type: 套餐类型: 0.非自动续费 1.自动续费
+        :type package_type: int
+        :param effect_type: 生效类型: 1.订购后激活使用时生效 2.订购即时生效 3.订购下个月开始生效 
+        :type effect_type: int
+        :param silent_period_day: 沉默期
+        :type silent_period_day: int
+        :param silent_period_unit: 沉默期单位: 1.年 2.月 3.日 
+        :type silent_period_unit: int
+        :param auto_renew: 自动续订: 0.不自动续订 1.继续续订
+        :type auto_renew: int
+        :param location_desc: 位置信息:1.  中国 2.  欧洲 3.  大洋洲 4.  非洲5.  亚太
+        :type location_desc: str
+        """
         
         
 
@@ -163,7 +210,7 @@ class SimPricePlanVO:
         套餐实例id
 
         :param id: The id of this SimPricePlanVO.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -185,7 +232,7 @@ class SimPricePlanVO:
         账户id
 
         :param account_id: The account_id of this SimPricePlanVO.
-        :type: str
+        :type account_id: str
         """
         self._account_id = account_id
 
@@ -207,7 +254,7 @@ class SimPricePlanVO:
         sim卡id
 
         :param sim_card_id: The sim_card_id of this SimPricePlanVO.
-        :type: int
+        :type sim_card_id: int
         """
         self._sim_card_id = sim_card_id
 
@@ -229,7 +276,7 @@ class SimPricePlanVO:
         套餐状态:0 已删除 1 可激活 2 在用 3. 使用完 4. 可激活 5 已停用 6. 启用失败
 
         :param status: The status of this SimPricePlanVO.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -251,7 +298,7 @@ class SimPricePlanVO:
         套餐id
 
         :param price_plan_id: The price_plan_id of this SimPricePlanVO.
-        :type: str
+        :type price_plan_id: str
         """
         self._price_plan_id = price_plan_id
 
@@ -273,7 +320,7 @@ class SimPricePlanVO:
         容器ID:不同类型卡含义如下 iccid(实体卡)，eid（eSIM）cid（vSIM)
 
         :param cid: The cid of this SimPricePlanVO.
-        :type: str
+        :type cid: str
         """
         self._cid = cid
 
@@ -295,7 +342,7 @@ class SimPricePlanVO:
         订单id
 
         :param order_id: The order_id of this SimPricePlanVO.
-        :type: str
+        :type order_id: str
         """
         self._order_id = order_id
 
@@ -317,7 +364,7 @@ class SimPricePlanVO:
         创建时间 例如2020-08-24T07:57:56.000Z
 
         :param create_time: The create_time of this SimPricePlanVO.
-        :type: datetime
+        :type create_time: datetime
         """
         self._create_time = create_time
 
@@ -339,7 +386,7 @@ class SimPricePlanVO:
         激活时间 例如2020-10-31T16:00:00.000Z
 
         :param active_time: The active_time of this SimPricePlanVO.
-        :type: datetime
+        :type active_time: datetime
         """
         self._active_time = active_time
 
@@ -361,7 +408,7 @@ class SimPricePlanVO:
         停用时间 2021-10-31T16:00:00.000Z
 
         :param stop_time: The stop_time of this SimPricePlanVO.
-        :type: datetime
+        :type stop_time: datetime
         """
         self._stop_time = stop_time
 
@@ -383,7 +430,7 @@ class SimPricePlanVO:
         总流量(MB)
 
         :param flow_total: The flow_total of this SimPricePlanVO.
-        :type: float
+        :type flow_total: float
         """
         self._flow_total = flow_total
 
@@ -405,7 +452,7 @@ class SimPricePlanVO:
         已使用流量(MB)
 
         :param flow_used: The flow_used of this SimPricePlanVO.
-        :type: float
+        :type flow_used: float
         """
         self._flow_used = flow_used
 
@@ -427,7 +474,7 @@ class SimPricePlanVO:
         剩余流量(MB)
 
         :param flow_left: The flow_left of this SimPricePlanVO.
-        :type: float
+        :type flow_left: float
         """
         self._flow_left = flow_left
 
@@ -449,7 +496,7 @@ class SimPricePlanVO:
         是否使用中(0：否 1：是)
 
         :param using: The using of this SimPricePlanVO.
-        :type: str
+        :type using: str
         """
         self._using = using
 
@@ -471,7 +518,7 @@ class SimPricePlanVO:
         套餐名
 
         :param price_plan_name: The price_plan_name of this SimPricePlanVO.
-        :type: str
+        :type price_plan_name: str
         """
         self._price_plan_name = price_plan_name
 
@@ -493,7 +540,7 @@ class SimPricePlanVO:
         描述
 
         :param description: The description of this SimPricePlanVO.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -515,7 +562,7 @@ class SimPricePlanVO:
         套餐类型: 0.非自动续费 1.自动续费
 
         :param package_type: The package_type of this SimPricePlanVO.
-        :type: int
+        :type package_type: int
         """
         self._package_type = package_type
 
@@ -537,7 +584,7 @@ class SimPricePlanVO:
         生效类型: 1.订购后激活使用时生效 2.订购即时生效 3.订购下个月开始生效 
 
         :param effect_type: The effect_type of this SimPricePlanVO.
-        :type: int
+        :type effect_type: int
         """
         self._effect_type = effect_type
 
@@ -559,7 +606,7 @@ class SimPricePlanVO:
         沉默期
 
         :param silent_period_day: The silent_period_day of this SimPricePlanVO.
-        :type: int
+        :type silent_period_day: int
         """
         self._silent_period_day = silent_period_day
 
@@ -581,7 +628,7 @@ class SimPricePlanVO:
         沉默期单位: 1.年 2.月 3.日 
 
         :param silent_period_unit: The silent_period_unit of this SimPricePlanVO.
-        :type: int
+        :type silent_period_unit: int
         """
         self._silent_period_unit = silent_period_unit
 
@@ -603,7 +650,7 @@ class SimPricePlanVO:
         自动续订: 0.不自动续订 1.继续续订
 
         :param auto_renew: The auto_renew of this SimPricePlanVO.
-        :type: int
+        :type auto_renew: int
         """
         self._auto_renew = auto_renew
 
@@ -625,7 +672,7 @@ class SimPricePlanVO:
         位置信息:1.  中国 2.  欧洲 3.  大洋洲 4.  非洲5.  亚太
 
         :param location_desc: The location_desc of this SimPricePlanVO.
-        :type: str
+        :type location_desc: str
         """
         self._location_desc = location_desc
 

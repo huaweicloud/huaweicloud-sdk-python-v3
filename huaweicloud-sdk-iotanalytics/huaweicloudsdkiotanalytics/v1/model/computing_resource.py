@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ComputingResource:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class ComputingResource:
     }
 
     def __init__(self, computing_resource_id=None, computing_resource_name=None, description=None, owner=None, created_time=None, computing_resource_type=None, cu_count=None, charging_mode=None, resource_mode=None):
-        """ComputingResource - a model defined in huaweicloud sdk"""
+        """ComputingResource
+
+        The model defined in huaweicloud sdk
+
+        :param computing_resource_id: 计算资源ID。
+        :type computing_resource_id: str
+        :param computing_resource_name: 计算资源名称。
+        :type computing_resource_name: str
+        :param description: 计算资源描述信息。
+        :type description: str
+        :param owner: 创建计算资源的用户。
+        :type owner: str
+        :param created_time: 创建计算资源的时间。时间格式为ISO日期时间格式yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;
+        :type created_time: str
+        :param computing_resource_type: 计算资源的类型,。目前支持：sql
+        :type computing_resource_type: str
+        :param cu_count: 与该计算资源绑定的计算单元数。设置值当前只支持16，64，256。
+        :type cu_count: int
+        :param charging_mode: 计算资源的收费模式。“1”表示按照CU时收费。“2”表示按照包年包月收费。
+        :type charging_mode: int
+        :param resource_mode: 计算资源类型。0：共享资源 1：专属资源
+        :type resource_mode: int
+        """
         
         
 
@@ -98,7 +119,7 @@ class ComputingResource:
         计算资源ID。
 
         :param computing_resource_id: The computing_resource_id of this ComputingResource.
-        :type: str
+        :type computing_resource_id: str
         """
         self._computing_resource_id = computing_resource_id
 
@@ -120,7 +141,7 @@ class ComputingResource:
         计算资源名称。
 
         :param computing_resource_name: The computing_resource_name of this ComputingResource.
-        :type: str
+        :type computing_resource_name: str
         """
         self._computing_resource_name = computing_resource_name
 
@@ -142,7 +163,7 @@ class ComputingResource:
         计算资源描述信息。
 
         :param description: The description of this ComputingResource.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -164,7 +185,7 @@ class ComputingResource:
         创建计算资源的用户。
 
         :param owner: The owner of this ComputingResource.
-        :type: str
+        :type owner: str
         """
         self._owner = owner
 
@@ -186,7 +207,7 @@ class ComputingResource:
         创建计算资源的时间。时间格式为ISO日期时间格式yyyy-MM-dd'T'HH:mm:ss'Z'
 
         :param created_time: The created_time of this ComputingResource.
-        :type: str
+        :type created_time: str
         """
         self._created_time = created_time
 
@@ -208,7 +229,7 @@ class ComputingResource:
         计算资源的类型,。目前支持：sql
 
         :param computing_resource_type: The computing_resource_type of this ComputingResource.
-        :type: str
+        :type computing_resource_type: str
         """
         self._computing_resource_type = computing_resource_type
 
@@ -230,7 +251,7 @@ class ComputingResource:
         与该计算资源绑定的计算单元数。设置值当前只支持16，64，256。
 
         :param cu_count: The cu_count of this ComputingResource.
-        :type: int
+        :type cu_count: int
         """
         self._cu_count = cu_count
 
@@ -252,7 +273,7 @@ class ComputingResource:
         计算资源的收费模式。“1”表示按照CU时收费。“2”表示按照包年包月收费。
 
         :param charging_mode: The charging_mode of this ComputingResource.
-        :type: int
+        :type charging_mode: int
         """
         self._charging_mode = charging_mode
 
@@ -274,7 +295,7 @@ class ComputingResource:
         计算资源类型。0：共享资源 1：专属资源
 
         :param resource_mode: The resource_mode of this ComputingResource.
-        :type: int
+        :type resource_mode: int
         """
         self._resource_mode = resource_mode
 

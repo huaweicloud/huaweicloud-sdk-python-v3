@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AllowAddressNetmasksOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AllowAddressNetmasksOption:
     }
 
     def __init__(self, address_netmask=None, description=None):
-        """AllowAddressNetmasksOption - a model defined in huaweicloud sdk"""
+        """AllowAddressNetmasksOption
+
+        The model defined in huaweicloud sdk
+
+        :param address_netmask: IP地址或网段,例如:192.168.0.1/24。
+        :type address_netmask: str
+        :param description: 描述信息。
+        :type description: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class AllowAddressNetmasksOption:
         IP地址或网段,例如:192.168.0.1/24。
 
         :param address_netmask: The address_netmask of this AllowAddressNetmasksOption.
-        :type: str
+        :type address_netmask: str
         """
         self._address_netmask = address_netmask
 
@@ -84,7 +91,7 @@ class AllowAddressNetmasksOption:
         描述信息。
 
         :param description: The description of this AllowAddressNetmasksOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 

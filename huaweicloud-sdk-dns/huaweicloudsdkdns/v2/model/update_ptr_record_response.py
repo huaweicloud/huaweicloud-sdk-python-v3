@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdatePtrRecordResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class UpdatePtrRecordResponse(SdkResponse):
     }
 
     def __init__(self, id=None, ptrdname=None, description=None, ttl=None, address=None, status=None, action=None, links=None):
-        """UpdatePtrRecordResponse - a model defined in huaweicloud sdk"""
+        """UpdatePtrRecordResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: PTR记录的ID，格式形如{region}:{floatingip_id}。
+        :type id: str
+        :param ptrdname: PTR记录对应的域名。
+        :type ptrdname: str
+        :param description: 对PTR记录的描述。
+        :type description: str
+        :param ttl: PTR记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
+        :type ttl: int
+        :param address: 弹性IP的IP地址。
+        :type address: str
+        :param status: 资源状态。
+        :type status: str
+        :param action: 对该资源的当前操作。  取值范围：  CREATE：表示创建 UPDATE：表示更新 DELETE：表示删除 NONE：表示无操作
+        :type action: str
+        :param links: 
+        :type links: :class:`huaweicloudsdkdns.v2.PageLink`
+        """
         
         super(UpdatePtrRecordResponse, self).__init__()
 
@@ -93,7 +112,7 @@ class UpdatePtrRecordResponse(SdkResponse):
         PTR记录的ID，格式形如{region}:{floatingip_id}。
 
         :param id: The id of this UpdatePtrRecordResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -115,7 +134,7 @@ class UpdatePtrRecordResponse(SdkResponse):
         PTR记录对应的域名。
 
         :param ptrdname: The ptrdname of this UpdatePtrRecordResponse.
-        :type: str
+        :type ptrdname: str
         """
         self._ptrdname = ptrdname
 
@@ -137,7 +156,7 @@ class UpdatePtrRecordResponse(SdkResponse):
         对PTR记录的描述。
 
         :param description: The description of this UpdatePtrRecordResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -159,7 +178,7 @@ class UpdatePtrRecordResponse(SdkResponse):
         PTR记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
 
         :param ttl: The ttl of this UpdatePtrRecordResponse.
-        :type: int
+        :type ttl: int
         """
         self._ttl = ttl
 
@@ -181,7 +200,7 @@ class UpdatePtrRecordResponse(SdkResponse):
         弹性IP的IP地址。
 
         :param address: The address of this UpdatePtrRecordResponse.
-        :type: str
+        :type address: str
         """
         self._address = address
 
@@ -203,7 +222,7 @@ class UpdatePtrRecordResponse(SdkResponse):
         资源状态。
 
         :param status: The status of this UpdatePtrRecordResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -225,7 +244,7 @@ class UpdatePtrRecordResponse(SdkResponse):
         对该资源的当前操作。  取值范围：  CREATE：表示创建 UPDATE：表示更新 DELETE：表示删除 NONE：表示无操作
 
         :param action: The action of this UpdatePtrRecordResponse.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -235,7 +254,7 @@ class UpdatePtrRecordResponse(SdkResponse):
 
 
         :return: The links of this UpdatePtrRecordResponse.
-        :rtype: PageLink
+        :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
         """
         return self._links
 
@@ -245,7 +264,7 @@ class UpdatePtrRecordResponse(SdkResponse):
 
 
         :param links: The links of this UpdatePtrRecordResponse.
-        :type: PageLink
+        :type links: :class:`huaweicloudsdkdns.v2.PageLink`
         """
         self._links = links
 

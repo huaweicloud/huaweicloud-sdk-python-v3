@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowListenerTagsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowListenerTagsResponse(SdkResponse):
     }
 
     def __init__(self, tags=None):
-        """ShowListenerTagsResponse - a model defined in huaweicloud sdk"""
+        """ShowListenerTagsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param tags: 标签列表
+        :type tags: list[:class:`huaweicloudsdkelb.v2.ResourceTag`]
+        """
         
         super(ShowListenerTagsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ShowListenerTagsResponse(SdkResponse):
         标签列表
 
         :return: The tags of this ShowListenerTagsResponse.
-        :rtype: list[ResourceTag]
+        :rtype: list[:class:`huaweicloudsdkelb.v2.ResourceTag`]
         """
         return self._tags
 
@@ -58,7 +63,7 @@ class ShowListenerTagsResponse(SdkResponse):
         标签列表
 
         :param tags: The tags of this ShowListenerTagsResponse.
-        :type: list[ResourceTag]
+        :type tags: list[:class:`huaweicloudsdkelb.v2.ResourceTag`]
         """
         self._tags = tags
 

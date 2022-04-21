@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class HandleNotificationRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class HandleNotificationRequest:
     }
 
     def __init__(self, body=None):
-        """HandleNotificationRequest - a model defined in huaweicloud sdk"""
+        """HandleNotificationRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the HandleNotificationRequest
+        :type body: :class:`huaweicloudsdkbcs.v2.HandleNotificationRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class HandleNotificationRequest:
 
 
         :return: The body of this HandleNotificationRequest.
-        :rtype: HandleNotificationRequestBody
+        :rtype: :class:`huaweicloudsdkbcs.v2.HandleNotificationRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class HandleNotificationRequest:
 
 
         :param body: The body of this HandleNotificationRequest.
-        :type: HandleNotificationRequestBody
+        :type body: :class:`huaweicloudsdkbcs.v2.HandleNotificationRequestBody`
         """
         self._body = body
 

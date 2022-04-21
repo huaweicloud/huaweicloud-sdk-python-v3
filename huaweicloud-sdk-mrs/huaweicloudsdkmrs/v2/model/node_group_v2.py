@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NodeGroupV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class NodeGroupV2:
     }
 
     def __init__(self, group_name=None, node_num=None, node_size=None, root_volume=None, data_volume=None, data_volume_count=None, charge_info=None, auto_scaling_policy=None, assigned_roles=None):
-        """NodeGroupV2 - a model defined in huaweicloud sdk"""
+        """NodeGroupV2
+
+        The model defined in huaweicloud sdk
+
+        :param group_name: 节点组名称，最大长度64，支持大小写英文、数字以及“_”。节点组配置原则如下： - master_node_default_group：Master节点组，所有集群类型均需包含该节点组。 - core_node_analysis_group：分析Core节点组，分析集群、混合集群均需包含该节点组。 - core_node_streaming_group：流式Core节点组，流式集群和混合集群均需包含该节点组。 - task_node_analysis_group：分析Task节点组，分析集群和混合集群可根据需要选择该节点组。 - task_node_streaming_group：流式Task节点组，流式集群、混合集群可根据需要选择该节点组。 - node_group{x}：自定义集群节点组，可根据需要添加多个，最多支持添加9个该节点组。
+        :type group_name: str
+        :param node_num: 节点数量，取值范围0～500，Core与Task节点总数最大为500个。
+        :type node_num: int
+        :param node_size: 节点的实例规格。例如：c3.4xlarge.2.linux.bigdata。实例规格详细说明请参见[MRS所使用的弹性云服务器规格](https://support.huaweicloud.com/api-mrs/mrs_01_9006.html)和[MRS所使用的裸金属服务器规格](https://support.huaweicloud.com/api-mrs/mrs_01_9001.html)。 该参数建议从MRS控制台的集群创建页面获取对应区域对应版本所支持的规格。
+        :type node_size: str
+        :param root_volume: 
+        :type root_volume: :class:`huaweicloudsdkmrs.v2.Volume`
+        :param data_volume: 
+        :type data_volume: :class:`huaweicloudsdkmrs.v2.Volume`
+        :param data_volume_count: 节点数据磁盘存储数目，取值范围：0～10。
+        :type data_volume_count: int
+        :param charge_info: 
+        :type charge_info: :class:`huaweicloudsdkmrs.v2.ChargeInfo`
+        :param auto_scaling_policy: 
+        :type auto_scaling_policy: :class:`huaweicloudsdkmrs.v2.AutoScalingPolicy`
+        :param assigned_roles: 当集群类型为CUSTOM时，该参数必选。可以指定节点组中部署的角色，该参数是一个字符串数组，每个字符串表示一个角色表达式。 角色表达式定义： - 当该角色在节点组所有节点部署时： {role name}，如“DataNode”。 - 当该角色在节点组指定下标节点部署时：{role name}:{index1},{index2}…,{indexN}，如“NameNode:1,2”，下标从1开始计数。  - 部分角色支持多实例部署（即在一个节点部署多个同角色的实例）：{role name}[{instance count}]，如“EsNode[9]”  可选的角色请参考[MRS支持的角色与组件对应表](https://support.huaweicloud.com/api-mrs/mrs_02_0106.html)。
+        :type assigned_roles: list[str]
+        """
         
         
 
@@ -95,7 +116,7 @@ class NodeGroupV2:
         节点组名称，最大长度64，支持大小写英文、数字以及“_”。节点组配置原则如下： - master_node_default_group：Master节点组，所有集群类型均需包含该节点组。 - core_node_analysis_group：分析Core节点组，分析集群、混合集群均需包含该节点组。 - core_node_streaming_group：流式Core节点组，流式集群和混合集群均需包含该节点组。 - task_node_analysis_group：分析Task节点组，分析集群和混合集群可根据需要选择该节点组。 - task_node_streaming_group：流式Task节点组，流式集群、混合集群可根据需要选择该节点组。 - node_group{x}：自定义集群节点组，可根据需要添加多个，最多支持添加9个该节点组。
 
         :param group_name: The group_name of this NodeGroupV2.
-        :type: str
+        :type group_name: str
         """
         self._group_name = group_name
 
@@ -117,7 +138,7 @@ class NodeGroupV2:
         节点数量，取值范围0～500，Core与Task节点总数最大为500个。
 
         :param node_num: The node_num of this NodeGroupV2.
-        :type: int
+        :type node_num: int
         """
         self._node_num = node_num
 
@@ -139,7 +160,7 @@ class NodeGroupV2:
         节点的实例规格。例如：c3.4xlarge.2.linux.bigdata。实例规格详细说明请参见[MRS所使用的弹性云服务器规格](https://support.huaweicloud.com/api-mrs/mrs_01_9006.html)和[MRS所使用的裸金属服务器规格](https://support.huaweicloud.com/api-mrs/mrs_01_9001.html)。 该参数建议从MRS控制台的集群创建页面获取对应区域对应版本所支持的规格。
 
         :param node_size: The node_size of this NodeGroupV2.
-        :type: str
+        :type node_size: str
         """
         self._node_size = node_size
 
@@ -149,7 +170,7 @@ class NodeGroupV2:
 
 
         :return: The root_volume of this NodeGroupV2.
-        :rtype: Volume
+        :rtype: :class:`huaweicloudsdkmrs.v2.Volume`
         """
         return self._root_volume
 
@@ -159,7 +180,7 @@ class NodeGroupV2:
 
 
         :param root_volume: The root_volume of this NodeGroupV2.
-        :type: Volume
+        :type root_volume: :class:`huaweicloudsdkmrs.v2.Volume`
         """
         self._root_volume = root_volume
 
@@ -169,7 +190,7 @@ class NodeGroupV2:
 
 
         :return: The data_volume of this NodeGroupV2.
-        :rtype: Volume
+        :rtype: :class:`huaweicloudsdkmrs.v2.Volume`
         """
         return self._data_volume
 
@@ -179,7 +200,7 @@ class NodeGroupV2:
 
 
         :param data_volume: The data_volume of this NodeGroupV2.
-        :type: Volume
+        :type data_volume: :class:`huaweicloudsdkmrs.v2.Volume`
         """
         self._data_volume = data_volume
 
@@ -201,7 +222,7 @@ class NodeGroupV2:
         节点数据磁盘存储数目，取值范围：0～10。
 
         :param data_volume_count: The data_volume_count of this NodeGroupV2.
-        :type: int
+        :type data_volume_count: int
         """
         self._data_volume_count = data_volume_count
 
@@ -211,7 +232,7 @@ class NodeGroupV2:
 
 
         :return: The charge_info of this NodeGroupV2.
-        :rtype: ChargeInfo
+        :rtype: :class:`huaweicloudsdkmrs.v2.ChargeInfo`
         """
         return self._charge_info
 
@@ -221,7 +242,7 @@ class NodeGroupV2:
 
 
         :param charge_info: The charge_info of this NodeGroupV2.
-        :type: ChargeInfo
+        :type charge_info: :class:`huaweicloudsdkmrs.v2.ChargeInfo`
         """
         self._charge_info = charge_info
 
@@ -231,7 +252,7 @@ class NodeGroupV2:
 
 
         :return: The auto_scaling_policy of this NodeGroupV2.
-        :rtype: AutoScalingPolicy
+        :rtype: :class:`huaweicloudsdkmrs.v2.AutoScalingPolicy`
         """
         return self._auto_scaling_policy
 
@@ -241,7 +262,7 @@ class NodeGroupV2:
 
 
         :param auto_scaling_policy: The auto_scaling_policy of this NodeGroupV2.
-        :type: AutoScalingPolicy
+        :type auto_scaling_policy: :class:`huaweicloudsdkmrs.v2.AutoScalingPolicy`
         """
         self._auto_scaling_policy = auto_scaling_policy
 
@@ -263,7 +284,7 @@ class NodeGroupV2:
         当集群类型为CUSTOM时，该参数必选。可以指定节点组中部署的角色，该参数是一个字符串数组，每个字符串表示一个角色表达式。 角色表达式定义： - 当该角色在节点组所有节点部署时： {role name}，如“DataNode”。 - 当该角色在节点组指定下标节点部署时：{role name}:{index1},{index2}…,{indexN}，如“NameNode:1,2”，下标从1开始计数。  - 部分角色支持多实例部署（即在一个节点部署多个同角色的实例）：{role name}[{instance count}]，如“EsNode[9]”  可选的角色请参考[MRS支持的角色与组件对应表](https://support.huaweicloud.com/api-mrs/mrs_02_0106.html)。
 
         :param assigned_roles: The assigned_roles of this NodeGroupV2.
-        :type: list[str]
+        :type assigned_roles: list[str]
         """
         self._assigned_roles = assigned_roles
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateEnvironmentRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateEnvironmentRequest:
     }
 
     def __init__(self, body=None):
-        """CreateEnvironmentRequest - a model defined in huaweicloud sdk"""
+        """CreateEnvironmentRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateEnvironmentRequest
+        :type body: :class:`huaweicloudsdkservicestage.v2.EnvironmentCreate`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateEnvironmentRequest:
 
 
         :return: The body of this CreateEnvironmentRequest.
-        :rtype: EnvironmentCreate
+        :rtype: :class:`huaweicloudsdkservicestage.v2.EnvironmentCreate`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateEnvironmentRequest:
 
 
         :param body: The body of this CreateEnvironmentRequest.
-        :type: EnvironmentCreate
+        :type body: :class:`huaweicloudsdkservicestage.v2.EnvironmentCreate`
         """
         self._body = body
 

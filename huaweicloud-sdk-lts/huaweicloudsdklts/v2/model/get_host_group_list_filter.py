@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GetHostGroupListFilter:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class GetHostGroupListFilter:
     }
 
     def __init__(self, host_group_type=None, host_group_name_list=None, host_name_list=None, host_group_tag=None):
-        """GetHostGroupListFilter - a model defined in huaweicloud sdk"""
+        """GetHostGroupListFilter
+
+        The model defined in huaweicloud sdk
+
+        :param host_group_type: 主机组类型。windows：windows类型，linux：linux类型
+        :type host_group_type: str
+        :param host_group_name_list: 主机组名称列表。
+        :type host_group_name_list: list[str]
+        :param host_name_list: 主机名称列表。
+        :type host_name_list: list[str]
+        :param host_group_tag: 
+        :type host_group_tag: :class:`huaweicloudsdklts.v2.GetHostGroupListTag`
+        """
         
         
 
@@ -73,7 +84,7 @@ class GetHostGroupListFilter:
         主机组类型。windows：windows类型，linux：linux类型
 
         :param host_group_type: The host_group_type of this GetHostGroupListFilter.
-        :type: str
+        :type host_group_type: str
         """
         self._host_group_type = host_group_type
 
@@ -95,7 +106,7 @@ class GetHostGroupListFilter:
         主机组名称列表。
 
         :param host_group_name_list: The host_group_name_list of this GetHostGroupListFilter.
-        :type: list[str]
+        :type host_group_name_list: list[str]
         """
         self._host_group_name_list = host_group_name_list
 
@@ -117,7 +128,7 @@ class GetHostGroupListFilter:
         主机名称列表。
 
         :param host_name_list: The host_name_list of this GetHostGroupListFilter.
-        :type: list[str]
+        :type host_name_list: list[str]
         """
         self._host_name_list = host_name_list
 
@@ -127,7 +138,7 @@ class GetHostGroupListFilter:
 
 
         :return: The host_group_tag of this GetHostGroupListFilter.
-        :rtype: GetHostGroupListTag
+        :rtype: :class:`huaweicloudsdklts.v2.GetHostGroupListTag`
         """
         return self._host_group_tag
 
@@ -137,7 +148,7 @@ class GetHostGroupListFilter:
 
 
         :param host_group_tag: The host_group_tag of this GetHostGroupListFilter.
-        :type: GetHostGroupListTag
+        :type host_group_tag: :class:`huaweicloudsdklts.v2.GetHostGroupListTag`
         """
         self._host_group_tag = host_group_tag
 

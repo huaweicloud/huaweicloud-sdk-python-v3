@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteSpecialThrottlingConfigurationV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class DeleteSpecialThrottlingConfigurationV2Request:
     }
 
     def __init__(self, instance_id=None, throttle_id=None, strategy_id=None):
-        """DeleteSpecialThrottlingConfigurationV2Request - a model defined in huaweicloud sdk"""
+        """DeleteSpecialThrottlingConfigurationV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param throttle_id: 流控策略的编号
+        :type throttle_id: str
+        :param strategy_id: 特殊配置的编号
+        :type strategy_id: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class DeleteSpecialThrottlingConfigurationV2Request:
         实例ID
 
         :param instance_id: The instance_id of this DeleteSpecialThrottlingConfigurationV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -87,7 +96,7 @@ class DeleteSpecialThrottlingConfigurationV2Request:
         流控策略的编号
 
         :param throttle_id: The throttle_id of this DeleteSpecialThrottlingConfigurationV2Request.
-        :type: str
+        :type throttle_id: str
         """
         self._throttle_id = throttle_id
 
@@ -109,7 +118,7 @@ class DeleteSpecialThrottlingConfigurationV2Request:
         特殊配置的编号
 
         :param strategy_id: The strategy_id of this DeleteSpecialThrottlingConfigurationV2Request.
-        :type: str
+        :type strategy_id: str
         """
         self._strategy_id = strategy_id
 

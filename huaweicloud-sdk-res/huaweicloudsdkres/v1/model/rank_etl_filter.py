@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RankETLFilter:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class RankETLFilter:
     }
 
     def __init__(self, filter_type=None, time_type=None, is_monday_first=None):
-        """RankETLFilter - a model defined in huaweicloud sdk"""
+        """RankETLFilter
+
+        The model defined in huaweicloud sdk
+
+        :param filter_type: 行为去重方式： - abs_weight，权重绝对值 - date，日期
+        :type filter_type: str
+        :param time_type: 时间类型： - day，天 - week，周 - month，月 
+        :type time_type: str
+        :param is_monday_first: 周一是否是第一天。
+        :type is_monday_first: bool
+        """
         
         
 
@@ -66,7 +75,7 @@ class RankETLFilter:
         行为去重方式： - abs_weight，权重绝对值 - date，日期
 
         :param filter_type: The filter_type of this RankETLFilter.
-        :type: str
+        :type filter_type: str
         """
         self._filter_type = filter_type
 
@@ -88,7 +97,7 @@ class RankETLFilter:
         时间类型： - day，天 - week，周 - month，月 
 
         :param time_type: The time_type of this RankETLFilter.
-        :type: str
+        :type time_type: str
         """
         self._time_type = time_type
 
@@ -110,7 +119,7 @@ class RankETLFilter:
         周一是否是第一天。
 
         :param is_monday_first: The is_monday_first of this RankETLFilter.
-        :type: bool
+        :type is_monday_first: bool
         """
         self._is_monday_first = is_monday_first
 

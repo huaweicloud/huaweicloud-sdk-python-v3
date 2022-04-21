@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PreferredSchedulingTerm:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class PreferredSchedulingTerm:
     }
 
     def __init__(self, preference=None, weight=None):
-        """PreferredSchedulingTerm - a model defined in huaweicloud sdk"""
+        """PreferredSchedulingTerm
+
+        The model defined in huaweicloud sdk
+
+        :param preference: 
+        :type preference: :class:`huaweicloudsdkief.v1.PreferredSchedulingTermPreference`
+        :param weight: 权重，范围为1-100
+        :type weight: int
+        """
         
         
 
@@ -51,7 +58,7 @@ class PreferredSchedulingTerm:
 
 
         :return: The preference of this PreferredSchedulingTerm.
-        :rtype: PreferredSchedulingTermPreference
+        :rtype: :class:`huaweicloudsdkief.v1.PreferredSchedulingTermPreference`
         """
         return self._preference
 
@@ -61,7 +68,7 @@ class PreferredSchedulingTerm:
 
 
         :param preference: The preference of this PreferredSchedulingTerm.
-        :type: PreferredSchedulingTermPreference
+        :type preference: :class:`huaweicloudsdkief.v1.PreferredSchedulingTermPreference`
         """
         self._preference = preference
 
@@ -83,7 +90,7 @@ class PreferredSchedulingTerm:
         权重，范围为1-100
 
         :param weight: The weight of this PreferredSchedulingTerm.
-        :type: int
+        :type weight: int
         """
         self._weight = weight
 

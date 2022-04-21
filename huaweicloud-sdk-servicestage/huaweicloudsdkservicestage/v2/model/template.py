@@ -12,11 +12,9 @@ class Template:
     """
     allowed enum values
     """
-
     MAGENTO = "magento"
     MBAAS = "mbaas"
     WORDPRESS = "wordpress"
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +32,11 @@ class Template:
     }
 
     def __init__(self):
-        """Template - a model defined in huaweicloud sdk"""
+        """Template
+
+        The model defined in huaweicloud sdk
+
+        """
         
         
         self.discriminator = None

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VersionUpdate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class VersionUpdate:
     }
 
     def __init__(self, envs=None, volumes=None, configs=None, resources=None, command=None, args=None, liveness_probe=None, readiness_probe=None, npu_type=None):
-        """VersionUpdate - a model defined in huaweicloud sdk"""
+        """VersionUpdate
+
+        The model defined in huaweicloud sdk
+
+        :param envs: 环境变量
+        :type envs: list[:class:`huaweicloudsdkief.v1.Env`]
+        :param volumes: 卷配置
+        :type volumes: list[:class:`huaweicloudsdkief.v1.Volumes`]
+        :param configs: 
+        :type configs: :class:`huaweicloudsdkief.v1.VersionUpdateConfigs`
+        :param resources: 
+        :type resources: :class:`huaweicloudsdkief.v1.VersionDetailResources`
+        :param command: 启动命令
+        :type command: list[str]
+        :param args: 参数
+        :type args: list[str]
+        :param liveness_probe: 工作负载存活探针
+        :type liveness_probe: str
+        :param readiness_probe: 工作负载业务探针
+        :type readiness_probe: str
+        :param npu_type: npu类型，支持D310类型和D910类型。 - D310表示D310类型。 - D910表示D910类型。 - 不填表示为D310类型。
+        :type npu_type: str
+        """
         
         
 
@@ -87,7 +108,7 @@ class VersionUpdate:
         环境变量
 
         :return: The envs of this VersionUpdate.
-        :rtype: list[Env]
+        :rtype: list[:class:`huaweicloudsdkief.v1.Env`]
         """
         return self._envs
 
@@ -98,7 +119,7 @@ class VersionUpdate:
         环境变量
 
         :param envs: The envs of this VersionUpdate.
-        :type: list[Env]
+        :type envs: list[:class:`huaweicloudsdkief.v1.Env`]
         """
         self._envs = envs
 
@@ -109,7 +130,7 @@ class VersionUpdate:
         卷配置
 
         :return: The volumes of this VersionUpdate.
-        :rtype: list[Volumes]
+        :rtype: list[:class:`huaweicloudsdkief.v1.Volumes`]
         """
         return self._volumes
 
@@ -120,7 +141,7 @@ class VersionUpdate:
         卷配置
 
         :param volumes: The volumes of this VersionUpdate.
-        :type: list[Volumes]
+        :type volumes: list[:class:`huaweicloudsdkief.v1.Volumes`]
         """
         self._volumes = volumes
 
@@ -130,7 +151,7 @@ class VersionUpdate:
 
 
         :return: The configs of this VersionUpdate.
-        :rtype: VersionUpdateConfigs
+        :rtype: :class:`huaweicloudsdkief.v1.VersionUpdateConfigs`
         """
         return self._configs
 
@@ -140,7 +161,7 @@ class VersionUpdate:
 
 
         :param configs: The configs of this VersionUpdate.
-        :type: VersionUpdateConfigs
+        :type configs: :class:`huaweicloudsdkief.v1.VersionUpdateConfigs`
         """
         self._configs = configs
 
@@ -150,7 +171,7 @@ class VersionUpdate:
 
 
         :return: The resources of this VersionUpdate.
-        :rtype: VersionDetailResources
+        :rtype: :class:`huaweicloudsdkief.v1.VersionDetailResources`
         """
         return self._resources
 
@@ -160,7 +181,7 @@ class VersionUpdate:
 
 
         :param resources: The resources of this VersionUpdate.
-        :type: VersionDetailResources
+        :type resources: :class:`huaweicloudsdkief.v1.VersionDetailResources`
         """
         self._resources = resources
 
@@ -182,7 +203,7 @@ class VersionUpdate:
         启动命令
 
         :param command: The command of this VersionUpdate.
-        :type: list[str]
+        :type command: list[str]
         """
         self._command = command
 
@@ -204,7 +225,7 @@ class VersionUpdate:
         参数
 
         :param args: The args of this VersionUpdate.
-        :type: list[str]
+        :type args: list[str]
         """
         self._args = args
 
@@ -226,7 +247,7 @@ class VersionUpdate:
         工作负载存活探针
 
         :param liveness_probe: The liveness_probe of this VersionUpdate.
-        :type: str
+        :type liveness_probe: str
         """
         self._liveness_probe = liveness_probe
 
@@ -248,7 +269,7 @@ class VersionUpdate:
         工作负载业务探针
 
         :param readiness_probe: The readiness_probe of this VersionUpdate.
-        :type: str
+        :type readiness_probe: str
         """
         self._readiness_probe = readiness_probe
 
@@ -270,7 +291,7 @@ class VersionUpdate:
         npu类型，支持D310类型和D910类型。 - D310表示D310类型。 - D910表示D910类型。 - 不填表示为D310类型。
 
         :param npu_type: The npu_type of this VersionUpdate.
-        :type: str
+        :type npu_type: str
         """
         self._npu_type = npu_type
 

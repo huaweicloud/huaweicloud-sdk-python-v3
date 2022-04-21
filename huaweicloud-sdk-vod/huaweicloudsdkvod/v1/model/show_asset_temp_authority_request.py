@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowAssetTempAuthorityRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ShowAssetTempAuthorityRequest:
     }
 
     def __init__(self, http_verb=None, bucket=None, object_key=None, content_type=None, content_md5=None, upload_id=None, part_number=None):
-        """ShowAssetTempAuthorityRequest - a model defined in huaweicloud sdk"""
+        """ShowAssetTempAuthorityRequest
+
+        The model defined in huaweicloud sdk
+
+        :param http_verb: 分段上传时调用OBS接口的HTTP方法，具体操作需要的HTTP方法请参考OBS的接口文档。  - 初始化上传任务：POST - 上传段：PUT - 合并段：POST - 取消段：DELETE - 列举已上传段：GET
+        :type http_verb: str
+        :param bucket: 桶名。  调用[创建媒资：上传方式](https://support.huaweicloud.com/api-vod/vod_04_0196.html)接口中返回的响应体中的target字段获得的bucket值。
+        :type bucket: str
+        :param object_key: 对象名。  调用[创建媒资：上传方式](https://support.huaweicloud.com/api-vod/vod_04_0196.html)接口中返回的响应体中的target字段获得的object值。
+        :type object_key: str
+        :param content_type: 文件类型对应的content-type，如MP4对应video/mp4。
+        :type content_type: str
+        :param content_md5: 上传段时每段的MD5。
+        :type content_md5: str
+        :param upload_id: 每一个上传任务的id，是OBS进行初始段后OBS返回的。
+        :type upload_id: str
+        :param part_number: 上传段时每一段的id。  取值范围：[1,10000]。
+        :type part_number: int
+        """
         
         
 
@@ -85,7 +102,7 @@ class ShowAssetTempAuthorityRequest:
         分段上传时调用OBS接口的HTTP方法，具体操作需要的HTTP方法请参考OBS的接口文档。  - 初始化上传任务：POST - 上传段：PUT - 合并段：POST - 取消段：DELETE - 列举已上传段：GET
 
         :param http_verb: The http_verb of this ShowAssetTempAuthorityRequest.
-        :type: str
+        :type http_verb: str
         """
         self._http_verb = http_verb
 
@@ -107,7 +124,7 @@ class ShowAssetTempAuthorityRequest:
         桶名。  调用[创建媒资：上传方式](https://support.huaweicloud.com/api-vod/vod_04_0196.html)接口中返回的响应体中的target字段获得的bucket值。
 
         :param bucket: The bucket of this ShowAssetTempAuthorityRequest.
-        :type: str
+        :type bucket: str
         """
         self._bucket = bucket
 
@@ -129,7 +146,7 @@ class ShowAssetTempAuthorityRequest:
         对象名。  调用[创建媒资：上传方式](https://support.huaweicloud.com/api-vod/vod_04_0196.html)接口中返回的响应体中的target字段获得的object值。
 
         :param object_key: The object_key of this ShowAssetTempAuthorityRequest.
-        :type: str
+        :type object_key: str
         """
         self._object_key = object_key
 
@@ -151,7 +168,7 @@ class ShowAssetTempAuthorityRequest:
         文件类型对应的content-type，如MP4对应video/mp4。
 
         :param content_type: The content_type of this ShowAssetTempAuthorityRequest.
-        :type: str
+        :type content_type: str
         """
         self._content_type = content_type
 
@@ -173,7 +190,7 @@ class ShowAssetTempAuthorityRequest:
         上传段时每段的MD5。
 
         :param content_md5: The content_md5 of this ShowAssetTempAuthorityRequest.
-        :type: str
+        :type content_md5: str
         """
         self._content_md5 = content_md5
 
@@ -195,7 +212,7 @@ class ShowAssetTempAuthorityRequest:
         每一个上传任务的id，是OBS进行初始段后OBS返回的。
 
         :param upload_id: The upload_id of this ShowAssetTempAuthorityRequest.
-        :type: str
+        :type upload_id: str
         """
         self._upload_id = upload_id
 
@@ -217,7 +234,7 @@ class ShowAssetTempAuthorityRequest:
         上传段时每一段的id。  取值范围：[1,10000]。
 
         :param part_number: The part_number of this ShowAssetTempAuthorityRequest.
-        :type: int
+        :type part_number: int
         """
         self._part_number = part_number
 

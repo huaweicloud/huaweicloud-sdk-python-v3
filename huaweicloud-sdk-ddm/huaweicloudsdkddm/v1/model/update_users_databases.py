@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateUsersDatabases:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateUsersDatabases:
     }
 
     def __init__(self, name=None):
-        """UpdateUsersDatabases - a model defined in huaweicloud sdk"""
+        """UpdateUsersDatabases
+
+        The model defined in huaweicloud sdk
+
+        :param name: 逻辑库名称，不区分大小写，databases和name字段必须同时缺失或者同时存在。  默认值为空
+        :type name: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class UpdateUsersDatabases:
         逻辑库名称，不区分大小写，databases和name字段必须同时缺失或者同时存在。  默认值为空
 
         :param name: The name of this UpdateUsersDatabases.
-        :type: str
+        :type name: str
         """
         self._name = name
 

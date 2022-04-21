@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateInstanceAutoCreateTopicReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateInstanceAutoCreateTopicReq:
     }
 
     def __init__(self, enable_auto_topic=None):
-        """UpdateInstanceAutoCreateTopicReq - a model defined in huaweicloud sdk"""
+        """UpdateInstanceAutoCreateTopicReq
+
+        The model defined in huaweicloud sdk
+
+        :param enable_auto_topic: 是否开启自动创建topic功能。
+        :type enable_auto_topic: bool
+        """
         
         
 
@@ -57,7 +62,7 @@ class UpdateInstanceAutoCreateTopicReq:
         是否开启自动创建topic功能。
 
         :param enable_auto_topic: The enable_auto_topic of this UpdateInstanceAutoCreateTopicReq.
-        :type: bool
+        :type enable_auto_topic: bool
         """
         self._enable_auto_topic = enable_auto_topic
 

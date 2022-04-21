@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ImportCertificateAuthorityCertificateRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ImportCertificateAuthorityCertificateRequestBody:
     }
 
     def __init__(self, certificate=None, certificate_chain=None):
-        """ImportCertificateAuthorityCertificateRequestBody - a model defined in huaweicloud sdk"""
+        """ImportCertificateAuthorityCertificateRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param certificate: 证书内容。
+        :type certificate: str
+        :param certificate_chain: 证书链内容。
+        :type certificate_chain: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ImportCertificateAuthorityCertificateRequestBody:
         证书内容。
 
         :param certificate: The certificate of this ImportCertificateAuthorityCertificateRequestBody.
-        :type: str
+        :type certificate: str
         """
         self._certificate = certificate
 
@@ -84,7 +91,7 @@ class ImportCertificateAuthorityCertificateRequestBody:
         证书链内容。
 
         :param certificate_chain: The certificate_chain of this ImportCertificateAuthorityCertificateRequestBody.
-        :type: str
+        :type certificate_chain: str
         """
         self._certificate_chain = certificate_chain
 

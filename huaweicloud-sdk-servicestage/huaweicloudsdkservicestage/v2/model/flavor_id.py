@@ -12,14 +12,12 @@ class FlavorId:
     """
     allowed enum values
     """
-
     MICRO_5G_0_5C_1G = "MICRO-5G:0.5C:1G"
     SMALL_10G_1_0C_2G = "SMALL-10G:1.0C:2G"
     STANDARD_30G_2_0C_4G = "STANDARD-30G:2.0C:4G"
     LARGE_50G_4_0C_8G = "LARGE-50G:4.0C:8G"
     XLARGE_100G_4_0C_16G = "XLARGE-100G:4.0C:16G"
     CUSTOM_XG_X_X_X_X = "CUSTOM-XG:X-X:X-X"
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -37,7 +35,11 @@ class FlavorId:
     }
 
     def __init__(self):
-        """FlavorId - a model defined in huaweicloud sdk"""
+        """FlavorId
+
+        The model defined in huaweicloud sdk
+
+        """
         
         
         self.discriminator = None

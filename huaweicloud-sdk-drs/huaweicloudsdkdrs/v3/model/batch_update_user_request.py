@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchUpdateUserRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchUpdateUserRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """BatchUpdateUserRequest - a model defined in huaweicloud sdk"""
+        """BatchUpdateUserRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 请求语言类型
+        :type x_language: str
+        :param body: Body of the BatchUpdateUserRequest
+        :type body: :class:`huaweicloudsdkdrs.v3.BatchUpdateSrcUserReq`
+        """
         
         
 
@@ -63,7 +70,7 @@ class BatchUpdateUserRequest:
         请求语言类型
 
         :param x_language: The x_language of this BatchUpdateUserRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -73,7 +80,7 @@ class BatchUpdateUserRequest:
 
 
         :return: The body of this BatchUpdateUserRequest.
-        :rtype: BatchUpdateSrcUserReq
+        :rtype: :class:`huaweicloudsdkdrs.v3.BatchUpdateSrcUserReq`
         """
         return self._body
 
@@ -83,7 +90,7 @@ class BatchUpdateUserRequest:
 
 
         :param body: The body of this BatchUpdateUserRequest.
-        :type: BatchUpdateSrcUserReq
+        :type body: :class:`huaweicloudsdkdrs.v3.BatchUpdateSrcUserReq`
         """
         self._body = body
 

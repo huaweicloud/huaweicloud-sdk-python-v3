@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowCloudConnectionRoutesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowCloudConnectionRoutesRequest:
     }
 
     def __init__(self, id=None):
-        """ShowCloudConnectionRoutesRequest - a model defined in huaweicloud sdk"""
+        """ShowCloudConnectionRoutesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param id: 云连接路由实例ID。
+        :type id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowCloudConnectionRoutesRequest:
         云连接路由实例ID。
 
         :param id: The id of this ShowCloudConnectionRoutesRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 

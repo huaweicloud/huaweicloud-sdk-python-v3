@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowLoadbalancersStatusResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowLoadbalancersStatusResponse(SdkResponse):
     }
 
     def __init__(self, statuses=None):
-        """ShowLoadbalancersStatusResponse - a model defined in huaweicloud sdk"""
+        """ShowLoadbalancersStatusResponse
+
+        The model defined in huaweicloud sdk
+
+        :param statuses: 
+        :type statuses: :class:`huaweicloudsdkelb.v2.StatusResp`
+        """
         
         super(ShowLoadbalancersStatusResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class ShowLoadbalancersStatusResponse(SdkResponse):
 
 
         :return: The statuses of this ShowLoadbalancersStatusResponse.
-        :rtype: StatusResp
+        :rtype: :class:`huaweicloudsdkelb.v2.StatusResp`
         """
         return self._statuses
 
@@ -56,7 +61,7 @@ class ShowLoadbalancersStatusResponse(SdkResponse):
 
 
         :param statuses: The statuses of this ShowLoadbalancersStatusResponse.
-        :type: StatusResp
+        :type statuses: :class:`huaweicloudsdkelb.v2.StatusResp`
         """
         self._statuses = statuses
 

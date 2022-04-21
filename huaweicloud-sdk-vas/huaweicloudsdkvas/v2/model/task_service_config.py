@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TaskServiceConfig:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class TaskServiceConfig:
     }
 
     def __init__(self, common=None):
-        """TaskServiceConfig - a model defined in huaweicloud sdk"""
+        """TaskServiceConfig
+
+        The model defined in huaweicloud sdk
+
+        :param common: 作业运行时指定的具体的算法配置项，部分服务需填且必填。整体呈json格式，具体配置项参见相应算法服务的说明。
+        :type common: object
+        """
         
         
 
@@ -58,7 +63,7 @@ class TaskServiceConfig:
         作业运行时指定的具体的算法配置项，部分服务需填且必填。整体呈json格式，具体配置项参见相应算法服务的说明。
 
         :param common: The common of this TaskServiceConfig.
-        :type: object
+        :type common: object
         """
         self._common = common
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EntityMetricList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class EntityMetricList:
     }
 
     def __init__(self, dimensions=None, values=None):
-        """EntityMetricList - a model defined in huaweicloud sdk"""
+        """EntityMetricList
+
+        The model defined in huaweicloud sdk
+
+        :param dimensions: 指标对象列表。
+        :type dimensions: list[:class:`huaweicloudsdkbcs.v2.Dimension`]
+        :param values: 监控数据列表项目。
+        :type values: list[:class:`huaweicloudsdkbcs.v2.EntityMetricListItem`]
+        """
         
         
 
@@ -52,7 +59,7 @@ class EntityMetricList:
         指标对象列表。
 
         :return: The dimensions of this EntityMetricList.
-        :rtype: list[Dimension]
+        :rtype: list[:class:`huaweicloudsdkbcs.v2.Dimension`]
         """
         return self._dimensions
 
@@ -63,7 +70,7 @@ class EntityMetricList:
         指标对象列表。
 
         :param dimensions: The dimensions of this EntityMetricList.
-        :type: list[Dimension]
+        :type dimensions: list[:class:`huaweicloudsdkbcs.v2.Dimension`]
         """
         self._dimensions = dimensions
 
@@ -74,7 +81,7 @@ class EntityMetricList:
         监控数据列表项目。
 
         :return: The values of this EntityMetricList.
-        :rtype: list[EntityMetricListItem]
+        :rtype: list[:class:`huaweicloudsdkbcs.v2.EntityMetricListItem`]
         """
         return self._values
 
@@ -85,7 +92,7 @@ class EntityMetricList:
         监控数据列表项目。
 
         :param values: The values of this EntityMetricList.
-        :type: list[EntityMetricListItem]
+        :type values: list[:class:`huaweicloudsdkbcs.v2.EntityMetricListItem`]
         """
         self._values = values
 

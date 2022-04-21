@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateAomMappingRulesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UpdateAomMappingRulesResponse(SdkResponse):
     }
 
     def __init__(self, project_id=None, rule_name=None, rule_id=None, rule_info=None):
-        """UpdateAomMappingRulesResponse - a model defined in huaweicloud sdk"""
+        """UpdateAomMappingRulesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: 项目id
+        :type project_id: str
+        :param rule_name: 接入规则名称
+        :type rule_name: str
+        :param rule_id: 接入规则id
+        :type rule_id: str
+        :param rule_info: 
+        :type rule_info: :class:`huaweicloudsdklts.v2.AomMappingRuleInfo`
+        """
         
         super(UpdateAomMappingRulesResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class UpdateAomMappingRulesResponse(SdkResponse):
         项目id
 
         :param project_id: The project_id of this UpdateAomMappingRulesResponse.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -95,7 +106,7 @@ class UpdateAomMappingRulesResponse(SdkResponse):
         接入规则名称
 
         :param rule_name: The rule_name of this UpdateAomMappingRulesResponse.
-        :type: str
+        :type rule_name: str
         """
         self._rule_name = rule_name
 
@@ -117,7 +128,7 @@ class UpdateAomMappingRulesResponse(SdkResponse):
         接入规则id
 
         :param rule_id: The rule_id of this UpdateAomMappingRulesResponse.
-        :type: str
+        :type rule_id: str
         """
         self._rule_id = rule_id
 
@@ -127,7 +138,7 @@ class UpdateAomMappingRulesResponse(SdkResponse):
 
 
         :return: The rule_info of this UpdateAomMappingRulesResponse.
-        :rtype: AomMappingRuleInfo
+        :rtype: :class:`huaweicloudsdklts.v2.AomMappingRuleInfo`
         """
         return self._rule_info
 
@@ -137,7 +148,7 @@ class UpdateAomMappingRulesResponse(SdkResponse):
 
 
         :param rule_info: The rule_info of this UpdateAomMappingRulesResponse.
-        :type: AomMappingRuleInfo
+        :type rule_info: :class:`huaweicloudsdklts.v2.AomMappingRuleInfo`
         """
         self._rule_info = rule_info
 

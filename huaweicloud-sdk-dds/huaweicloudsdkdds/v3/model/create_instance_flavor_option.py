@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateInstanceFlavorOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class CreateInstanceFlavorOption:
     }
 
     def __init__(self, type=None, num=None, storage=None, size=None, spec_code=None):
-        """CreateInstanceFlavorOption - a model defined in huaweicloud sdk"""
+        """CreateInstanceFlavorOption
+
+        The model defined in huaweicloud sdk
+
+        :param type: 节点类型。 取值：   - 集群实例包含mongos、shard和config节点，各节点下该参数取值分别为“mongos”、“shard”和“config”。   - 副本集实例下该参数取值为“replica”。   - 单节点实例下该参数取值为“single”。
+        :type type: str
+        :param num: 节点数量。 取值：   - 集群实例下“mongos”类型的节点数量可取2~16。   - 集群实例下“shard”类型的组数量可取2~16。   - “shard”类型的组数量可取2~16。   - “config”类型的组数量只能取1。   - “replica”类型的组数量只能取1。   - “single”类型的节点数量只能取1。
+        :type num: str
+        :param storage: 磁盘类型。 取值：ULTRAHIGH，表示SSD。   - 对于集群实例的shard和config节点、副本集、以及单节点实例，该参数有效。mongos节点不涉及选择磁盘，该参数无意义。
+        :type storage: str
+        :param size: 磁盘大小。 取值：必须为10的整数倍。单位为GB。   - 对于集群实例，shard组可取10GB~2000GB，config组仅可取20GB。mongos节点不涉及选择磁盘，该参数无意义。   - 对于副本集实例，可取10GB~2000GB。   - 对于单节点实例，可取10GB~1000GB。
+        :type size: str
+        :param spec_code: 资源规格编码
+        :type spec_code: str
+        """
         
         
 
@@ -75,7 +88,7 @@ class CreateInstanceFlavorOption:
         节点类型。 取值：   - 集群实例包含mongos、shard和config节点，各节点下该参数取值分别为“mongos”、“shard”和“config”。   - 副本集实例下该参数取值为“replica”。   - 单节点实例下该参数取值为“single”。
 
         :param type: The type of this CreateInstanceFlavorOption.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -97,7 +110,7 @@ class CreateInstanceFlavorOption:
         节点数量。 取值：   - 集群实例下“mongos”类型的节点数量可取2~16。   - 集群实例下“shard”类型的组数量可取2~16。   - “shard”类型的组数量可取2~16。   - “config”类型的组数量只能取1。   - “replica”类型的组数量只能取1。   - “single”类型的节点数量只能取1。
 
         :param num: The num of this CreateInstanceFlavorOption.
-        :type: str
+        :type num: str
         """
         self._num = num
 
@@ -119,7 +132,7 @@ class CreateInstanceFlavorOption:
         磁盘类型。 取值：ULTRAHIGH，表示SSD。   - 对于集群实例的shard和config节点、副本集、以及单节点实例，该参数有效。mongos节点不涉及选择磁盘，该参数无意义。
 
         :param storage: The storage of this CreateInstanceFlavorOption.
-        :type: str
+        :type storage: str
         """
         self._storage = storage
 
@@ -141,7 +154,7 @@ class CreateInstanceFlavorOption:
         磁盘大小。 取值：必须为10的整数倍。单位为GB。   - 对于集群实例，shard组可取10GB~2000GB，config组仅可取20GB。mongos节点不涉及选择磁盘，该参数无意义。   - 对于副本集实例，可取10GB~2000GB。   - 对于单节点实例，可取10GB~1000GB。
 
         :param size: The size of this CreateInstanceFlavorOption.
-        :type: str
+        :type size: str
         """
         self._size = size
 
@@ -163,7 +176,7 @@ class CreateInstanceFlavorOption:
         资源规格编码
 
         :param spec_code: The spec_code of this CreateInstanceFlavorOption.
-        :type: str
+        :type spec_code: str
         """
         self._spec_code = spec_code
 

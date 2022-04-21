@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SimDeviceVO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -104,7 +103,87 @@ class SimDeviceVO:
     }
 
     def __init__(self, sim_card_id=None, account_id=None, cid=None, sim_pool_id=None, imei=None, sim_status=None, device_status=None, device_model=None, act_date=None, device_status_date=None, node_id=None, iccid=None, network_type=None, dbm=None, signal_level=None, sim_type=None, tag_names=None, order_id=None, expire_time=None, price_plan_name=None, sim_price_plan_id=None, flow_left=None, flow_used=None, operator_status=None, msisdn=None, imsi=None, customer_attribute1=None, customer_attribute2=None, customer_attribute3=None, customer_attribute4=None, customer_attribute5=None, customer_attribute6=None, real_named=None, cut_net_flag=None, exceed_cut_net_flag=None, exceed_cut_net_quota=None, imei_bind_remain_times=None, speed_value=None):
-        """SimDeviceVO - a model defined in huaweicloud sdk"""
+        """SimDeviceVO
+
+        The model defined in huaweicloud sdk
+
+        :param sim_card_id: sim卡id
+        :type sim_card_id: int
+        :param account_id: 账户id
+        :type account_id: str
+        :param cid: 容器ID:不同类型卡含义如下 iccid(实体卡)，eid（eSIM）cid（vSIM)
+        :type cid: str
+        :param sim_pool_id: 流量池ID
+        :type sim_pool_id: int
+        :param imei: 设备IMEI
+        :type imei: str
+        :param sim_status: sim卡状态：  10.可测试  11.未激活  13.可激活  14.已停用  20.在用  30.已拆机
+        :type sim_status: int
+        :param device_status: 设备状态
+        :type device_status: int
+        :param device_model: 设备模组
+        :type device_model: str
+        :param act_date: 激活日期 例如2020-01-31T16:00:00.000Z
+        :type act_date: datetime
+        :param device_status_date: 设备状态变更时间 例如2020-01-31T16:00:00.000Z
+        :type device_status_date: datetime
+        :param node_id: 设备标识
+        :type node_id: str
+        :param iccid: 码号iccid
+        :type iccid: str
+        :param network_type: 网络类型
+        :type network_type: str
+        :param dbm: 信号强度
+        :type dbm: str
+        :param signal_level: 信号等级:1.差  2.良  3.良 4.优（该参数只有eSIM,vSIM返回，实体卡不返回）
+        :type signal_level: str
+        :param sim_type: sim卡类型 1.vSIM  2.eSIM  3.实体卡
+        :type sim_type: int
+        :param tag_names: 标签名
+        :type tag_names: str
+        :param order_id: 批次号
+        :type order_id: int
+        :param expire_time: 到期时间 例如2021-06-30T00:00:00.000Z
+        :type expire_time: datetime
+        :param price_plan_name: 在用套餐名
+        :type price_plan_name: str
+        :param sim_price_plan_id: 套餐订购实例ID
+        :type sim_price_plan_id: int
+        :param flow_left: 剩余流量(单位M)，数据默认截止到昨日24点。
+        :type flow_left: float
+        :param flow_used: 已用流量(单位M)，数据默认截止到昨日24点。
+        :type flow_used: float
+        :param operator_status: 运营商状态 -1.正常（非停机状态） 1.停机（超流量停机） 2.停机（超流量阈值停机） 3.停机（流量池停机） 4.停机（套餐到期停机） 5.停机（主动停机） 6.停机（违规停机）
+        :type operator_status: int
+        :param msisdn: MSISDN
+        :type msisdn: str
+        :param imsi: IMSI
+        :type imsi: str
+        :param customer_attribute1: 自定义属性一
+        :type customer_attribute1: str
+        :param customer_attribute2: 自定义属性二
+        :type customer_attribute2: str
+        :param customer_attribute3: 自定义属性三
+        :type customer_attribute3: str
+        :param customer_attribute4: 自定义属性四
+        :type customer_attribute4: str
+        :param customer_attribute5: 自定义属性五
+        :type customer_attribute5: str
+        :param customer_attribute6: 自定义属性六
+        :type customer_attribute6: str
+        :param real_named: 是否已实名认证: true表示是，false表示否，系统SIM卡实名认证状态非实时。
+        :type real_named: bool
+        :param cut_net_flag: 是否单独断网 true:断网，false:未断网 （当前仅电信卡支持）
+        :type cut_net_flag: bool
+        :param exceed_cut_net_flag: 是否达量断网 true:达量断网，false:未达量断网 （当前仅电信卡支持）
+        :type exceed_cut_net_flag: bool
+        :param exceed_cut_net_quota: 达量断网阈值（单位MB 当前仅电信卡支持）
+        :type exceed_cut_net_quota: int
+        :param imei_bind_remain_times: 本月机卡绑定剩余次数（当前仅电信卡支持）
+        :type imei_bind_remain_times: int
+        :param speed_value: 网络限制速率（单位Kbps,当前电信联通卡支持）
+        :type speed_value: int
+        """
         
         
 
@@ -243,7 +322,7 @@ class SimDeviceVO:
         sim卡id
 
         :param sim_card_id: The sim_card_id of this SimDeviceVO.
-        :type: int
+        :type sim_card_id: int
         """
         self._sim_card_id = sim_card_id
 
@@ -265,7 +344,7 @@ class SimDeviceVO:
         账户id
 
         :param account_id: The account_id of this SimDeviceVO.
-        :type: str
+        :type account_id: str
         """
         self._account_id = account_id
 
@@ -287,7 +366,7 @@ class SimDeviceVO:
         容器ID:不同类型卡含义如下 iccid(实体卡)，eid（eSIM）cid（vSIM)
 
         :param cid: The cid of this SimDeviceVO.
-        :type: str
+        :type cid: str
         """
         self._cid = cid
 
@@ -309,7 +388,7 @@ class SimDeviceVO:
         流量池ID
 
         :param sim_pool_id: The sim_pool_id of this SimDeviceVO.
-        :type: int
+        :type sim_pool_id: int
         """
         self._sim_pool_id = sim_pool_id
 
@@ -331,7 +410,7 @@ class SimDeviceVO:
         设备IMEI
 
         :param imei: The imei of this SimDeviceVO.
-        :type: str
+        :type imei: str
         """
         self._imei = imei
 
@@ -353,7 +432,7 @@ class SimDeviceVO:
         sim卡状态：  10.可测试  11.未激活  13.可激活  14.已停用  20.在用  30.已拆机
 
         :param sim_status: The sim_status of this SimDeviceVO.
-        :type: int
+        :type sim_status: int
         """
         self._sim_status = sim_status
 
@@ -375,7 +454,7 @@ class SimDeviceVO:
         设备状态
 
         :param device_status: The device_status of this SimDeviceVO.
-        :type: int
+        :type device_status: int
         """
         self._device_status = device_status
 
@@ -397,7 +476,7 @@ class SimDeviceVO:
         设备模组
 
         :param device_model: The device_model of this SimDeviceVO.
-        :type: str
+        :type device_model: str
         """
         self._device_model = device_model
 
@@ -419,7 +498,7 @@ class SimDeviceVO:
         激活日期 例如2020-01-31T16:00:00.000Z
 
         :param act_date: The act_date of this SimDeviceVO.
-        :type: datetime
+        :type act_date: datetime
         """
         self._act_date = act_date
 
@@ -441,7 +520,7 @@ class SimDeviceVO:
         设备状态变更时间 例如2020-01-31T16:00:00.000Z
 
         :param device_status_date: The device_status_date of this SimDeviceVO.
-        :type: datetime
+        :type device_status_date: datetime
         """
         self._device_status_date = device_status_date
 
@@ -463,7 +542,7 @@ class SimDeviceVO:
         设备标识
 
         :param node_id: The node_id of this SimDeviceVO.
-        :type: str
+        :type node_id: str
         """
         self._node_id = node_id
 
@@ -485,7 +564,7 @@ class SimDeviceVO:
         码号iccid
 
         :param iccid: The iccid of this SimDeviceVO.
-        :type: str
+        :type iccid: str
         """
         self._iccid = iccid
 
@@ -507,7 +586,7 @@ class SimDeviceVO:
         网络类型
 
         :param network_type: The network_type of this SimDeviceVO.
-        :type: str
+        :type network_type: str
         """
         self._network_type = network_type
 
@@ -529,7 +608,7 @@ class SimDeviceVO:
         信号强度
 
         :param dbm: The dbm of this SimDeviceVO.
-        :type: str
+        :type dbm: str
         """
         self._dbm = dbm
 
@@ -551,7 +630,7 @@ class SimDeviceVO:
         信号等级:1.差  2.良  3.良 4.优（该参数只有eSIM,vSIM返回，实体卡不返回）
 
         :param signal_level: The signal_level of this SimDeviceVO.
-        :type: str
+        :type signal_level: str
         """
         self._signal_level = signal_level
 
@@ -573,7 +652,7 @@ class SimDeviceVO:
         sim卡类型 1.vSIM  2.eSIM  3.实体卡
 
         :param sim_type: The sim_type of this SimDeviceVO.
-        :type: int
+        :type sim_type: int
         """
         self._sim_type = sim_type
 
@@ -595,7 +674,7 @@ class SimDeviceVO:
         标签名
 
         :param tag_names: The tag_names of this SimDeviceVO.
-        :type: str
+        :type tag_names: str
         """
         self._tag_names = tag_names
 
@@ -617,7 +696,7 @@ class SimDeviceVO:
         批次号
 
         :param order_id: The order_id of this SimDeviceVO.
-        :type: int
+        :type order_id: int
         """
         self._order_id = order_id
 
@@ -639,7 +718,7 @@ class SimDeviceVO:
         到期时间 例如2021-06-30T00:00:00.000Z
 
         :param expire_time: The expire_time of this SimDeviceVO.
-        :type: datetime
+        :type expire_time: datetime
         """
         self._expire_time = expire_time
 
@@ -661,7 +740,7 @@ class SimDeviceVO:
         在用套餐名
 
         :param price_plan_name: The price_plan_name of this SimDeviceVO.
-        :type: str
+        :type price_plan_name: str
         """
         self._price_plan_name = price_plan_name
 
@@ -683,7 +762,7 @@ class SimDeviceVO:
         套餐订购实例ID
 
         :param sim_price_plan_id: The sim_price_plan_id of this SimDeviceVO.
-        :type: int
+        :type sim_price_plan_id: int
         """
         self._sim_price_plan_id = sim_price_plan_id
 
@@ -705,7 +784,7 @@ class SimDeviceVO:
         剩余流量(单位M)，数据默认截止到昨日24点。
 
         :param flow_left: The flow_left of this SimDeviceVO.
-        :type: float
+        :type flow_left: float
         """
         self._flow_left = flow_left
 
@@ -727,7 +806,7 @@ class SimDeviceVO:
         已用流量(单位M)，数据默认截止到昨日24点。
 
         :param flow_used: The flow_used of this SimDeviceVO.
-        :type: float
+        :type flow_used: float
         """
         self._flow_used = flow_used
 
@@ -749,7 +828,7 @@ class SimDeviceVO:
         运营商状态 -1.正常（非停机状态） 1.停机（超流量停机） 2.停机（超流量阈值停机） 3.停机（流量池停机） 4.停机（套餐到期停机） 5.停机（主动停机） 6.停机（违规停机）
 
         :param operator_status: The operator_status of this SimDeviceVO.
-        :type: int
+        :type operator_status: int
         """
         self._operator_status = operator_status
 
@@ -771,7 +850,7 @@ class SimDeviceVO:
         MSISDN
 
         :param msisdn: The msisdn of this SimDeviceVO.
-        :type: str
+        :type msisdn: str
         """
         self._msisdn = msisdn
 
@@ -793,7 +872,7 @@ class SimDeviceVO:
         IMSI
 
         :param imsi: The imsi of this SimDeviceVO.
-        :type: str
+        :type imsi: str
         """
         self._imsi = imsi
 
@@ -815,7 +894,7 @@ class SimDeviceVO:
         自定义属性一
 
         :param customer_attribute1: The customer_attribute1 of this SimDeviceVO.
-        :type: str
+        :type customer_attribute1: str
         """
         self._customer_attribute1 = customer_attribute1
 
@@ -837,7 +916,7 @@ class SimDeviceVO:
         自定义属性二
 
         :param customer_attribute2: The customer_attribute2 of this SimDeviceVO.
-        :type: str
+        :type customer_attribute2: str
         """
         self._customer_attribute2 = customer_attribute2
 
@@ -859,7 +938,7 @@ class SimDeviceVO:
         自定义属性三
 
         :param customer_attribute3: The customer_attribute3 of this SimDeviceVO.
-        :type: str
+        :type customer_attribute3: str
         """
         self._customer_attribute3 = customer_attribute3
 
@@ -881,7 +960,7 @@ class SimDeviceVO:
         自定义属性四
 
         :param customer_attribute4: The customer_attribute4 of this SimDeviceVO.
-        :type: str
+        :type customer_attribute4: str
         """
         self._customer_attribute4 = customer_attribute4
 
@@ -903,7 +982,7 @@ class SimDeviceVO:
         自定义属性五
 
         :param customer_attribute5: The customer_attribute5 of this SimDeviceVO.
-        :type: str
+        :type customer_attribute5: str
         """
         self._customer_attribute5 = customer_attribute5
 
@@ -925,7 +1004,7 @@ class SimDeviceVO:
         自定义属性六
 
         :param customer_attribute6: The customer_attribute6 of this SimDeviceVO.
-        :type: str
+        :type customer_attribute6: str
         """
         self._customer_attribute6 = customer_attribute6
 
@@ -947,7 +1026,7 @@ class SimDeviceVO:
         是否已实名认证: true表示是，false表示否，系统SIM卡实名认证状态非实时。
 
         :param real_named: The real_named of this SimDeviceVO.
-        :type: bool
+        :type real_named: bool
         """
         self._real_named = real_named
 
@@ -969,7 +1048,7 @@ class SimDeviceVO:
         是否单独断网 true:断网，false:未断网 （当前仅电信卡支持）
 
         :param cut_net_flag: The cut_net_flag of this SimDeviceVO.
-        :type: bool
+        :type cut_net_flag: bool
         """
         self._cut_net_flag = cut_net_flag
 
@@ -991,7 +1070,7 @@ class SimDeviceVO:
         是否达量断网 true:达量断网，false:未达量断网 （当前仅电信卡支持）
 
         :param exceed_cut_net_flag: The exceed_cut_net_flag of this SimDeviceVO.
-        :type: bool
+        :type exceed_cut_net_flag: bool
         """
         self._exceed_cut_net_flag = exceed_cut_net_flag
 
@@ -1013,7 +1092,7 @@ class SimDeviceVO:
         达量断网阈值（单位MB 当前仅电信卡支持）
 
         :param exceed_cut_net_quota: The exceed_cut_net_quota of this SimDeviceVO.
-        :type: int
+        :type exceed_cut_net_quota: int
         """
         self._exceed_cut_net_quota = exceed_cut_net_quota
 
@@ -1035,7 +1114,7 @@ class SimDeviceVO:
         本月机卡绑定剩余次数（当前仅电信卡支持）
 
         :param imei_bind_remain_times: The imei_bind_remain_times of this SimDeviceVO.
-        :type: int
+        :type imei_bind_remain_times: int
         """
         self._imei_bind_remain_times = imei_bind_remain_times
 
@@ -1057,7 +1136,7 @@ class SimDeviceVO:
         网络限制速率（单位Kbps,当前电信联通卡支持）
 
         :param speed_value: The speed_value of this SimDeviceVO.
-        :type: int
+        :type speed_value: int
         """
         self._speed_value = speed_value
 

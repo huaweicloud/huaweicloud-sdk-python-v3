@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteWatermarkTemplateRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteWatermarkTemplateRequest:
     }
 
     def __init__(self, id=None):
-        """DeleteWatermarkTemplateRequest - a model defined in huaweicloud sdk"""
+        """DeleteWatermarkTemplateRequest
+
+        The model defined in huaweicloud sdk
+
+        :param id: 水印模板配置id 
+        :type id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteWatermarkTemplateRequest:
         水印模板配置id 
 
         :param id: The id of this DeleteWatermarkTemplateRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 

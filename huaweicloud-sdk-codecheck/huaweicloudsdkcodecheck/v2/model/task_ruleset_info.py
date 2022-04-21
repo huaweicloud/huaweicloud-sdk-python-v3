@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TaskRulesetInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class TaskRulesetInfo:
     }
 
     def __init__(self, template_id=None, language=None, template_name=None, type=None, status=None):
-        """TaskRulesetInfo - a model defined in huaweicloud sdk"""
+        """TaskRulesetInfo
+
+        The model defined in huaweicloud sdk
+
+        :param template_id: 规则集id
+        :type template_id: str
+        :param language: 规则集语言
+        :type language: str
+        :param template_name: 规则集名称
+        :type template_name: str
+        :param type: 规则集状态optional：可选，selected：已选
+        :type type: str
+        :param status: 规则集属性0 是默认用户规则集,1 是系统默认规则集
+        :type status: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class TaskRulesetInfo:
         规则集id
 
         :param template_id: The template_id of this TaskRulesetInfo.
-        :type: str
+        :type template_id: str
         """
         self._template_id = template_id
 
@@ -100,7 +113,7 @@ class TaskRulesetInfo:
         规则集语言
 
         :param language: The language of this TaskRulesetInfo.
-        :type: str
+        :type language: str
         """
         self._language = language
 
@@ -122,7 +135,7 @@ class TaskRulesetInfo:
         规则集名称
 
         :param template_name: The template_name of this TaskRulesetInfo.
-        :type: str
+        :type template_name: str
         """
         self._template_name = template_name
 
@@ -144,7 +157,7 @@ class TaskRulesetInfo:
         规则集状态optional：可选，selected：已选
 
         :param type: The type of this TaskRulesetInfo.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -166,7 +179,7 @@ class TaskRulesetInfo:
         规则集属性0 是默认用户规则集,1 是系统默认规则集
 
         :param status: The status of this TaskRulesetInfo.
-        :type: str
+        :type status: str
         """
         self._status = status
 

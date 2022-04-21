@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GenRandomRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class GenRandomRequestBody:
     }
 
     def __init__(self, random_data_length=None, sequence=None):
-        """GenRandomRequestBody - a model defined in huaweicloud sdk"""
+        """GenRandomRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param random_data_length: 随机数的bit位长度。 取值为8的倍数，取值范围为8~8192。 随机数的bit位长度，取值为“512”。
+        :type random_data_length: str
+        :param sequence: 请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
+        :type sequence: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class GenRandomRequestBody:
         随机数的bit位长度。 取值为8的倍数，取值范围为8~8192。 随机数的bit位长度，取值为“512”。
 
         :param random_data_length: The random_data_length of this GenRandomRequestBody.
-        :type: str
+        :type random_data_length: str
         """
         self._random_data_length = random_data_length
 
@@ -85,7 +92,7 @@ class GenRandomRequestBody:
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
 
         :param sequence: The sequence of this GenRandomRequestBody.
-        :type: str
+        :type sequence: str
         """
         self._sequence = sequence
 

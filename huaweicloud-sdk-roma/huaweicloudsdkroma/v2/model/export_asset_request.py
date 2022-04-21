@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExportAssetRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ExportAssetRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """ExportAssetRequest - a model defined in huaweicloud sdk"""
+        """ExportAssetRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param body: Body of the ExportAssetRequest
+        :type body: :class:`huaweicloudsdkroma.v2.AssetExportRequest`
+        """
         
         
 
@@ -62,7 +69,7 @@ class ExportAssetRequest:
         实例ID
 
         :param instance_id: The instance_id of this ExportAssetRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -72,7 +79,7 @@ class ExportAssetRequest:
 
 
         :return: The body of this ExportAssetRequest.
-        :rtype: AssetExportRequest
+        :rtype: :class:`huaweicloudsdkroma.v2.AssetExportRequest`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class ExportAssetRequest:
 
 
         :param body: The body of this ExportAssetRequest.
-        :type: AssetExportRequest
+        :type body: :class:`huaweicloudsdkroma.v2.AssetExportRequest`
         """
         self._body = body
 

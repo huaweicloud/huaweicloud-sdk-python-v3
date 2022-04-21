@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListStatisticsOfRunningInstancesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListStatisticsOfRunningInstancesResponse(SdkResponse):
     }
 
     def __init__(self, statistics=None):
-        """ListStatisticsOfRunningInstancesResponse - a model defined in huaweicloud sdk"""
+        """ListStatisticsOfRunningInstancesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param statistics: 该租户下处于“运行中”状态的实例的统计信息。
+        :type statistics: list[:class:`huaweicloudsdkdcs.v2.InstanceStatistic`]
+        """
         
         super(ListStatisticsOfRunningInstancesResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListStatisticsOfRunningInstancesResponse(SdkResponse):
         该租户下处于“运行中”状态的实例的统计信息。
 
         :return: The statistics of this ListStatisticsOfRunningInstancesResponse.
-        :rtype: list[InstanceStatistic]
+        :rtype: list[:class:`huaweicloudsdkdcs.v2.InstanceStatistic`]
         """
         return self._statistics
 
@@ -58,7 +63,7 @@ class ListStatisticsOfRunningInstancesResponse(SdkResponse):
         该租户下处于“运行中”状态的实例的统计信息。
 
         :param statistics: The statistics of this ListStatisticsOfRunningInstancesResponse.
-        :type: list[InstanceStatistic]
+        :type statistics: list[:class:`huaweicloudsdkdcs.v2.InstanceStatistic`]
         """
         self._statistics = statistics
 

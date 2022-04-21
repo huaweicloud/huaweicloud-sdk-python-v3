@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateTopicAttributeRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateTopicAttributeRequest:
     }
 
     def __init__(self, topic_urn=None, name=None, body=None):
-        """UpdateTopicAttributeRequest - a model defined in huaweicloud sdk"""
+        """UpdateTopicAttributeRequest
+
+        The model defined in huaweicloud sdk
+
+        :param topic_urn: Topic的唯一的资源标识，可通过[查询主题列表](https://support.huaweicloud.com/api-smn/smn_api_51004.html)获取该标识。
+        :type topic_urn: str
+        :param name: 主题策略名称。  只支持特定的策略名称，请参见[Topic属性表](https://support.huaweicloud.com/intl/zh-cn/api-smn/smn_api_a1000.html)。
+        :type name: str
+        :param body: Body of the UpdateTopicAttributeRequest
+        :type body: :class:`huaweicloudsdksmn.v2.UpdateTopicAttributeRequestBody`
+        """
         
         
 
@@ -66,7 +75,7 @@ class UpdateTopicAttributeRequest:
         Topic的唯一的资源标识，可通过[查询主题列表](https://support.huaweicloud.com/api-smn/smn_api_51004.html)获取该标识。
 
         :param topic_urn: The topic_urn of this UpdateTopicAttributeRequest.
-        :type: str
+        :type topic_urn: str
         """
         self._topic_urn = topic_urn
 
@@ -88,7 +97,7 @@ class UpdateTopicAttributeRequest:
         主题策略名称。  只支持特定的策略名称，请参见[Topic属性表](https://support.huaweicloud.com/intl/zh-cn/api-smn/smn_api_a1000.html)。
 
         :param name: The name of this UpdateTopicAttributeRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -98,7 +107,7 @@ class UpdateTopicAttributeRequest:
 
 
         :return: The body of this UpdateTopicAttributeRequest.
-        :rtype: UpdateTopicAttributeRequestBody
+        :rtype: :class:`huaweicloudsdksmn.v2.UpdateTopicAttributeRequestBody`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class UpdateTopicAttributeRequest:
 
 
         :param body: The body of this UpdateTopicAttributeRequest.
-        :type: UpdateTopicAttributeRequestBody
+        :type body: :class:`huaweicloudsdksmn.v2.UpdateTopicAttributeRequestBody`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowGaussMySqlProjectQuotasResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowGaussMySqlProjectQuotasResponse(SdkResponse):
     }
 
     def __init__(self, quotas=None):
-        """ShowGaussMySqlProjectQuotasResponse - a model defined in huaweicloud sdk"""
+        """ShowGaussMySqlProjectQuotasResponse
+
+        The model defined in huaweicloud sdk
+
+        :param quotas: 
+        :type quotas: :class:`huaweicloudsdkgaussdb.v3.ProjectQuotas`
+        """
         
         super(ShowGaussMySqlProjectQuotasResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class ShowGaussMySqlProjectQuotasResponse(SdkResponse):
 
 
         :return: The quotas of this ShowGaussMySqlProjectQuotasResponse.
-        :rtype: ProjectQuotas
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ProjectQuotas`
         """
         return self._quotas
 
@@ -56,7 +61,7 @@ class ShowGaussMySqlProjectQuotasResponse(SdkResponse):
 
 
         :param quotas: The quotas of this ShowGaussMySqlProjectQuotasResponse.
-        :type: ProjectQuotas
+        :type quotas: :class:`huaweicloudsdkgaussdb.v3.ProjectQuotas`
         """
         self._quotas = quotas
 

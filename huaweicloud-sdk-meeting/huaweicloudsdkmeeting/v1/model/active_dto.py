@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ActiveDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ActiveDTO:
     }
 
     def __init__(self, sms_number=None, country=None, email_addr=None):
-        """ActiveDTO - a model defined in huaweicloud sdk"""
+        """ActiveDTO
+
+        The model defined in huaweicloud sdk
+
+        :param sms_number: 手机号，如果为手机号，必须加上国家码。 例如中国大陆手机+86xxxxxxxxxxx，当填写手机号时 “country”参数必填。 maxLength：32 minLength：0
+        :type sms_number: str
+        :param country: 若smsNumber为手机号,则需带上手机号所属的国家。 例如国家为中国大陆则country参数取值为chinaPR 国家和国家码的对应关系请参考：https://support.huaweicloud.com/api-meeting/meeting_21_0109.html 
+        :type country: str
+        :param email_addr: 邮件地址。 maxLength：255 minLength：0
+        :type email_addr: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class ActiveDTO:
         手机号，如果为手机号，必须加上国家码。 例如中国大陆手机+86xxxxxxxxxxx，当填写手机号时 “country”参数必填。 maxLength：32 minLength：0
 
         :param sms_number: The sms_number of this ActiveDTO.
-        :type: str
+        :type sms_number: str
         """
         self._sms_number = sms_number
 
@@ -90,7 +99,7 @@ class ActiveDTO:
         若smsNumber为手机号,则需带上手机号所属的国家。 例如国家为中国大陆则country参数取值为chinaPR 国家和国家码的对应关系请参考：https://support.huaweicloud.com/api-meeting/meeting_21_0109.html 
 
         :param country: The country of this ActiveDTO.
-        :type: str
+        :type country: str
         """
         self._country = country
 
@@ -112,7 +121,7 @@ class ActiveDTO:
         邮件地址。 maxLength：255 minLength：0
 
         :param email_addr: The email_addr of this ActiveDTO.
-        :type: str
+        :type email_addr: str
         """
         self._email_addr = email_addr
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowRecordRuleRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ShowRecordRuleRequest:
     }
 
     def __init__(self, content_type=None, authorization=None, x_sdk_date=None, x_project_id=None, app_id=None, rule_id=None):
-        """ShowRecordRuleRequest - a model defined in huaweicloud sdk"""
+        """ShowRecordRuleRequest
+
+        The model defined in huaweicloud sdk
+
+        :param content_type: 内容类型。
+        :type content_type: str
+        :param authorization: 使用AK/SK方式认证时必选，携带的鉴权信息。
+        :type authorization: str
+        :param x_sdk_date: 使用AK/SK方式认证时必选，请求的发生时间。
+        :type x_sdk_date: str
+        :param x_project_id: 使用AK/SK方式认证时必选，携带项目ID信息。
+        :type x_project_id: str
+        :param app_id: 应用id
+        :type app_id: str
+        :param rule_id: 规则id
+        :type rule_id: str
+        """
         
         
 
@@ -80,7 +95,7 @@ class ShowRecordRuleRequest:
         内容类型。
 
         :param content_type: The content_type of this ShowRecordRuleRequest.
-        :type: str
+        :type content_type: str
         """
         self._content_type = content_type
 
@@ -102,7 +117,7 @@ class ShowRecordRuleRequest:
         使用AK/SK方式认证时必选，携带的鉴权信息。
 
         :param authorization: The authorization of this ShowRecordRuleRequest.
-        :type: str
+        :type authorization: str
         """
         self._authorization = authorization
 
@@ -124,7 +139,7 @@ class ShowRecordRuleRequest:
         使用AK/SK方式认证时必选，请求的发生时间。
 
         :param x_sdk_date: The x_sdk_date of this ShowRecordRuleRequest.
-        :type: str
+        :type x_sdk_date: str
         """
         self._x_sdk_date = x_sdk_date
 
@@ -146,7 +161,7 @@ class ShowRecordRuleRequest:
         使用AK/SK方式认证时必选，携带项目ID信息。
 
         :param x_project_id: The x_project_id of this ShowRecordRuleRequest.
-        :type: str
+        :type x_project_id: str
         """
         self._x_project_id = x_project_id
 
@@ -168,7 +183,7 @@ class ShowRecordRuleRequest:
         应用id
 
         :param app_id: The app_id of this ShowRecordRuleRequest.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -190,7 +205,7 @@ class ShowRecordRuleRequest:
         规则id
 
         :param rule_id: The rule_id of this ShowRecordRuleRequest.
-        :type: str
+        :type rule_id: str
         """
         self._rule_id = rule_id
 

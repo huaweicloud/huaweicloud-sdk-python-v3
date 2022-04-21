@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunImageBatchModerationRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RunImageBatchModerationRequest:
     }
 
     def __init__(self, body=None):
-        """RunImageBatchModerationRequest - a model defined in huaweicloud sdk"""
+        """RunImageBatchModerationRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the RunImageBatchModerationRequest
+        :type body: :class:`huaweicloudsdkmoderation.v2.ImageBatchModerationReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class RunImageBatchModerationRequest:
 
 
         :return: The body of this RunImageBatchModerationRequest.
-        :rtype: ImageBatchModerationReq
+        :rtype: :class:`huaweicloudsdkmoderation.v2.ImageBatchModerationReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class RunImageBatchModerationRequest:
 
 
         :param body: The body of this RunImageBatchModerationRequest.
-        :type: ImageBatchModerationReq
+        :type body: :class:`huaweicloudsdkmoderation.v2.ImageBatchModerationReq`
         """
         self._body = body
 

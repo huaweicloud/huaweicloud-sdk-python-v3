@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowClassroomDetailResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -62,7 +61,45 @@ class ShowClassroomDetailResponse(SdkResponse):
     }
 
     def __init__(self, name=None, description=None, announcement=None, announcement_time=None, create_time=None, update_time=None, teacher=None, credit=None, start_time=None, end_time=None, role=None, school=None, content_count=None, courseware_count=None, job_count=None, member_count=None, status=None):
-        """ShowClassroomDetailResponse - a model defined in huaweicloud sdk"""
+        """ShowClassroomDetailResponse
+
+        The model defined in huaweicloud sdk
+
+        :param name: 课堂名称
+        :type name: str
+        :param description: 课堂描述
+        :type description: str
+        :param announcement: 课堂公告
+        :type announcement: str
+        :param announcement_time: 课堂公告创建时间，日期格式：yyyy-MM-dd
+        :type announcement_time: str
+        :param create_time: 课堂创建时间，日期格式：yyyy-MM-dd HH:mm:ss
+        :type create_time: str
+        :param update_time: 课堂最新更新时间，日期格式：yyyy-MM-dd HH:mm:ss
+        :type update_time: str
+        :param teacher: 当前课堂的授课人
+        :type teacher: str
+        :param credit: 课堂学分
+        :type credit: float
+        :param start_time: 课堂开始时间，日期格式：yyyy-MM-dd HH:mm:ss
+        :type start_time: str
+        :param end_time: 课堂结束时间，日期格式：yyyy-MM-dd HH:mm:ss
+        :type end_time: str
+        :param role: 当前用户在课堂下角色，取值范围：teacher：老师，student：学生
+        :type role: str
+        :param school: 授课学校
+        :type school: str
+        :param content_count: 课堂下目录数量
+        :type content_count: int
+        :param courseware_count: 课堂下课件数量
+        :type courseware_count: int
+        :param job_count: 课堂下作业数量
+        :type job_count: int
+        :param member_count: 课堂下成员数量
+        :type member_count: int
+        :param status: 课堂当前的状态，normal：课堂处于正常状态，archive：课堂已归档
+        :type status: str
+        """
         
         super(ShowClassroomDetailResponse, self).__init__()
 
@@ -138,7 +175,7 @@ class ShowClassroomDetailResponse(SdkResponse):
         课堂名称
 
         :param name: The name of this ShowClassroomDetailResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -160,7 +197,7 @@ class ShowClassroomDetailResponse(SdkResponse):
         课堂描述
 
         :param description: The description of this ShowClassroomDetailResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -182,7 +219,7 @@ class ShowClassroomDetailResponse(SdkResponse):
         课堂公告
 
         :param announcement: The announcement of this ShowClassroomDetailResponse.
-        :type: str
+        :type announcement: str
         """
         self._announcement = announcement
 
@@ -204,7 +241,7 @@ class ShowClassroomDetailResponse(SdkResponse):
         课堂公告创建时间，日期格式：yyyy-MM-dd
 
         :param announcement_time: The announcement_time of this ShowClassroomDetailResponse.
-        :type: str
+        :type announcement_time: str
         """
         self._announcement_time = announcement_time
 
@@ -226,7 +263,7 @@ class ShowClassroomDetailResponse(SdkResponse):
         课堂创建时间，日期格式：yyyy-MM-dd HH:mm:ss
 
         :param create_time: The create_time of this ShowClassroomDetailResponse.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -248,7 +285,7 @@ class ShowClassroomDetailResponse(SdkResponse):
         课堂最新更新时间，日期格式：yyyy-MM-dd HH:mm:ss
 
         :param update_time: The update_time of this ShowClassroomDetailResponse.
-        :type: str
+        :type update_time: str
         """
         self._update_time = update_time
 
@@ -270,7 +307,7 @@ class ShowClassroomDetailResponse(SdkResponse):
         当前课堂的授课人
 
         :param teacher: The teacher of this ShowClassroomDetailResponse.
-        :type: str
+        :type teacher: str
         """
         self._teacher = teacher
 
@@ -292,7 +329,7 @@ class ShowClassroomDetailResponse(SdkResponse):
         课堂学分
 
         :param credit: The credit of this ShowClassroomDetailResponse.
-        :type: float
+        :type credit: float
         """
         self._credit = credit
 
@@ -314,7 +351,7 @@ class ShowClassroomDetailResponse(SdkResponse):
         课堂开始时间，日期格式：yyyy-MM-dd HH:mm:ss
 
         :param start_time: The start_time of this ShowClassroomDetailResponse.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -336,7 +373,7 @@ class ShowClassroomDetailResponse(SdkResponse):
         课堂结束时间，日期格式：yyyy-MM-dd HH:mm:ss
 
         :param end_time: The end_time of this ShowClassroomDetailResponse.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -358,7 +395,7 @@ class ShowClassroomDetailResponse(SdkResponse):
         当前用户在课堂下角色，取值范围：teacher：老师，student：学生
 
         :param role: The role of this ShowClassroomDetailResponse.
-        :type: str
+        :type role: str
         """
         self._role = role
 
@@ -380,7 +417,7 @@ class ShowClassroomDetailResponse(SdkResponse):
         授课学校
 
         :param school: The school of this ShowClassroomDetailResponse.
-        :type: str
+        :type school: str
         """
         self._school = school
 
@@ -402,7 +439,7 @@ class ShowClassroomDetailResponse(SdkResponse):
         课堂下目录数量
 
         :param content_count: The content_count of this ShowClassroomDetailResponse.
-        :type: int
+        :type content_count: int
         """
         self._content_count = content_count
 
@@ -424,7 +461,7 @@ class ShowClassroomDetailResponse(SdkResponse):
         课堂下课件数量
 
         :param courseware_count: The courseware_count of this ShowClassroomDetailResponse.
-        :type: int
+        :type courseware_count: int
         """
         self._courseware_count = courseware_count
 
@@ -446,7 +483,7 @@ class ShowClassroomDetailResponse(SdkResponse):
         课堂下作业数量
 
         :param job_count: The job_count of this ShowClassroomDetailResponse.
-        :type: int
+        :type job_count: int
         """
         self._job_count = job_count
 
@@ -468,7 +505,7 @@ class ShowClassroomDetailResponse(SdkResponse):
         课堂下成员数量
 
         :param member_count: The member_count of this ShowClassroomDetailResponse.
-        :type: int
+        :type member_count: int
         """
         self._member_count = member_count
 
@@ -490,7 +527,7 @@ class ShowClassroomDetailResponse(SdkResponse):
         课堂当前的状态，normal：课堂处于正常状态，archive：课堂已归档
 
         :param status: The status of this ShowClassroomDetailResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 

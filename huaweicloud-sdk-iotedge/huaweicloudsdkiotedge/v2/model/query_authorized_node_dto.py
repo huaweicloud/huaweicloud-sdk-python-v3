@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryAuthorizedNodeDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class QueryAuthorizedNodeDTO:
     }
 
     def __init__(self, node_id=None, authorized_time=None):
-        """QueryAuthorizedNodeDTO - a model defined in huaweicloud sdk"""
+        """QueryAuthorizedNodeDTO
+
+        The model defined in huaweicloud sdk
+
+        :param node_id: 边缘节点ID
+        :type node_id: str
+        :param authorized_time: 授权时间
+        :type authorized_time: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class QueryAuthorizedNodeDTO:
         边缘节点ID
 
         :param node_id: The node_id of this QueryAuthorizedNodeDTO.
-        :type: str
+        :type node_id: str
         """
         self._node_id = node_id
 
@@ -85,7 +92,7 @@ class QueryAuthorizedNodeDTO:
         授权时间
 
         :param authorized_time: The authorized_time of this QueryAuthorizedNodeDTO.
-        :type: str
+        :type authorized_time: str
         """
         self._authorized_time = authorized_time
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchListProgressesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchListProgressesRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """BatchListProgressesRequest - a model defined in huaweicloud sdk"""
+        """BatchListProgressesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 请求语言类型
+        :type x_language: str
+        :param body: Body of the BatchListProgressesRequest
+        :type body: :class:`huaweicloudsdkdrs.v3.BatchQueryProgressReq`
+        """
         
         
 
@@ -63,7 +70,7 @@ class BatchListProgressesRequest:
         请求语言类型
 
         :param x_language: The x_language of this BatchListProgressesRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -73,7 +80,7 @@ class BatchListProgressesRequest:
 
 
         :return: The body of this BatchListProgressesRequest.
-        :rtype: BatchQueryProgressReq
+        :rtype: :class:`huaweicloudsdkdrs.v3.BatchQueryProgressReq`
         """
         return self._body
 
@@ -83,7 +90,7 @@ class BatchListProgressesRequest:
 
 
         :param body: The body of this BatchListProgressesRequest.
-        :type: BatchQueryProgressReq
+        :type body: :class:`huaweicloudsdkdrs.v3.BatchQueryProgressReq`
         """
         self._body = body
 

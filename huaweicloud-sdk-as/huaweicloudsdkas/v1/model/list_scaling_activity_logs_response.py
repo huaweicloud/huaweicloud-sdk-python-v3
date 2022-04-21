@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListScalingActivityLogsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListScalingActivityLogsResponse(SdkResponse):
     }
 
     def __init__(self, total_number=None, start_number=None, limit=None, scaling_activity_log=None):
-        """ListScalingActivityLogsResponse - a model defined in huaweicloud sdk"""
+        """ListScalingActivityLogsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total_number: 总记录数。
+        :type total_number: int
+        :param start_number: 查询的其实行号。
+        :type start_number: int
+        :param limit: 查询记录数。
+        :type limit: int
+        :param scaling_activity_log: 伸缩活动日志列表。
+        :type scaling_activity_log: list[:class:`huaweicloudsdkas.v1.ScalingActivityLogList`]
+        """
         
         super(ListScalingActivityLogsResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class ListScalingActivityLogsResponse(SdkResponse):
         总记录数。
 
         :param total_number: The total_number of this ListScalingActivityLogsResponse.
-        :type: int
+        :type total_number: int
         """
         self._total_number = total_number
 
@@ -95,7 +106,7 @@ class ListScalingActivityLogsResponse(SdkResponse):
         查询的其实行号。
 
         :param start_number: The start_number of this ListScalingActivityLogsResponse.
-        :type: int
+        :type start_number: int
         """
         self._start_number = start_number
 
@@ -117,7 +128,7 @@ class ListScalingActivityLogsResponse(SdkResponse):
         查询记录数。
 
         :param limit: The limit of this ListScalingActivityLogsResponse.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -128,7 +139,7 @@ class ListScalingActivityLogsResponse(SdkResponse):
         伸缩活动日志列表。
 
         :return: The scaling_activity_log of this ListScalingActivityLogsResponse.
-        :rtype: list[ScalingActivityLogList]
+        :rtype: list[:class:`huaweicloudsdkas.v1.ScalingActivityLogList`]
         """
         return self._scaling_activity_log
 
@@ -139,7 +150,7 @@ class ListScalingActivityLogsResponse(SdkResponse):
         伸缩活动日志列表。
 
         :param scaling_activity_log: The scaling_activity_log of this ListScalingActivityLogsResponse.
-        :type: list[ScalingActivityLogList]
+        :type scaling_activity_log: list[:class:`huaweicloudsdkas.v1.ScalingActivityLogList`]
         """
         self._scaling_activity_log = scaling_activity_log
 

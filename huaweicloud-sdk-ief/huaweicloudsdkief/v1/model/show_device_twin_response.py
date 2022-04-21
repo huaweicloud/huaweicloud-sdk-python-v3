@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDeviceTwinResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowDeviceTwinResponse(SdkResponse):
     }
 
     def __init__(self, property_visitors=None, twin=None, access_protocol=None):
-        """ShowDeviceTwinResponse - a model defined in huaweicloud sdk"""
+        """ShowDeviceTwinResponse
+
+        The model defined in huaweicloud sdk
+
+        :param property_visitors: 
+        :type property_visitors: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitors`
+        :param twin: 
+        :type twin: :class:`huaweicloudsdkief.v1.ValueInTwinResponse`
+        :param access_protocol: 访问协议，有如下选项： - userdefine：自定义协议 - modbus：modbus协议 - opc-ua：opc-ua协议
+        :type access_protocol: str
+        """
         
         super(ShowDeviceTwinResponse, self).__init__()
 
@@ -56,7 +65,7 @@ class ShowDeviceTwinResponse(SdkResponse):
 
 
         :return: The property_visitors of this ShowDeviceTwinResponse.
-        :rtype: ValueInPropertyVisitors
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitors`
         """
         return self._property_visitors
 
@@ -66,7 +75,7 @@ class ShowDeviceTwinResponse(SdkResponse):
 
 
         :param property_visitors: The property_visitors of this ShowDeviceTwinResponse.
-        :type: ValueInPropertyVisitors
+        :type property_visitors: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitors`
         """
         self._property_visitors = property_visitors
 
@@ -76,7 +85,7 @@ class ShowDeviceTwinResponse(SdkResponse):
 
 
         :return: The twin of this ShowDeviceTwinResponse.
-        :rtype: ValueInTwinResponse
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInTwinResponse`
         """
         return self._twin
 
@@ -86,7 +95,7 @@ class ShowDeviceTwinResponse(SdkResponse):
 
 
         :param twin: The twin of this ShowDeviceTwinResponse.
-        :type: ValueInTwinResponse
+        :type twin: :class:`huaweicloudsdkief.v1.ValueInTwinResponse`
         """
         self._twin = twin
 
@@ -108,7 +117,7 @@ class ShowDeviceTwinResponse(SdkResponse):
         访问协议，有如下选项： - userdefine：自定义协议 - modbus：modbus协议 - opc-ua：opc-ua协议
 
         :param access_protocol: The access_protocol of this ShowDeviceTwinResponse.
-        :type: str
+        :type access_protocol: str
         """
         self._access_protocol = access_protocol
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GetMetricsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class GetMetricsRequest:
     }
 
     def __init__(self, type=None, transform=None, aggregate=None):
-        """GetMetricsRequest - a model defined in huaweicloud sdk"""
+        """GetMetricsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param type: 查询类型
+        :type type: str
+        :param transform: 
+        :type transform: :class:`huaweicloudsdkiotanalytics.v1.TransformMetrics`
+        :param aggregate: 
+        :type aggregate: :class:`huaweicloudsdkiotanalytics.v1.AggregateMetrics`
+        """
         
         
 
@@ -67,7 +76,7 @@ class GetMetricsRequest:
         查询类型
 
         :param type: The type of this GetMetricsRequest.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -77,7 +86,7 @@ class GetMetricsRequest:
 
 
         :return: The transform of this GetMetricsRequest.
-        :rtype: TransformMetrics
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.TransformMetrics`
         """
         return self._transform
 
@@ -87,7 +96,7 @@ class GetMetricsRequest:
 
 
         :param transform: The transform of this GetMetricsRequest.
-        :type: TransformMetrics
+        :type transform: :class:`huaweicloudsdkiotanalytics.v1.TransformMetrics`
         """
         self._transform = transform
 
@@ -97,7 +106,7 @@ class GetMetricsRequest:
 
 
         :return: The aggregate of this GetMetricsRequest.
-        :rtype: AggregateMetrics
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.AggregateMetrics`
         """
         return self._aggregate
 
@@ -107,7 +116,7 @@ class GetMetricsRequest:
 
 
         :param aggregate: The aggregate of this GetMetricsRequest.
-        :type: AggregateMetrics
+        :type aggregate: :class:`huaweicloudsdkiotanalytics.v1.AggregateMetrics`
         """
         self._aggregate = aggregate
 

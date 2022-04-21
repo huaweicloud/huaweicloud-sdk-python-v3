@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LiveDetectFaceBase64Req:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class LiveDetectFaceBase64Req:
     }
 
     def __init__(self, image_base64=None):
-        """LiveDetectFaceBase64Req - a model defined in huaweicloud sdk"""
+        """LiveDetectFaceBase64Req
+
+        The model defined in huaweicloud sdk
+
+        :param image_base64: 图像数据，Base64编码，要求： • Base64编码后大小不超过8MB。 • 图片编码格式： JPG、PNG、JPEG、BMP格式的图片。
+        :type image_base64: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class LiveDetectFaceBase64Req:
         图像数据，Base64编码，要求： • Base64编码后大小不超过8MB。 • 图片编码格式： JPG、PNG、JPEG、BMP格式的图片。
 
         :param image_base64: The image_base64 of this LiveDetectFaceBase64Req.
-        :type: str
+        :type image_base64: str
         """
         self._image_base64 = image_base64
 

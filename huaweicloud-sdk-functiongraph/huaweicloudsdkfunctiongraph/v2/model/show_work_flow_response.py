@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowWorkFlowResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ShowWorkFlowResponse(SdkResponse):
     }
 
     def __init__(self, id=None, workflow_urn=None, created_time=None, updated_time=None, created_by=None, definition=None):
-        """ShowWorkFlowResponse - a model defined in huaweicloud sdk"""
+        """ShowWorkFlowResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 唯一标识ID，流程定义ID
+        :type id: str
+        :param workflow_urn: 唯一标识ID，流程URN
+        :type workflow_urn: str
+        :param created_time: 流程创建时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
+        :type created_time: str
+        :param updated_time: 流程修改时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
+        :type updated_time: str
+        :param created_by: 流程创建者
+        :type created_by: str
+        :param definition: 
+        :type definition: :class:`huaweicloudsdkfunctiongraph.v2.CreateWorkflowRequestBody`
+        """
         
         super(ShowWorkFlowResponse, self).__init__()
 
@@ -83,7 +98,7 @@ class ShowWorkFlowResponse(SdkResponse):
         唯一标识ID，流程定义ID
 
         :param id: The id of this ShowWorkFlowResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -105,7 +120,7 @@ class ShowWorkFlowResponse(SdkResponse):
         唯一标识ID，流程URN
 
         :param workflow_urn: The workflow_urn of this ShowWorkFlowResponse.
-        :type: str
+        :type workflow_urn: str
         """
         self._workflow_urn = workflow_urn
 
@@ -127,7 +142,7 @@ class ShowWorkFlowResponse(SdkResponse):
         流程创建时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
 
         :param created_time: The created_time of this ShowWorkFlowResponse.
-        :type: str
+        :type created_time: str
         """
         self._created_time = created_time
 
@@ -149,7 +164,7 @@ class ShowWorkFlowResponse(SdkResponse):
         流程修改时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
 
         :param updated_time: The updated_time of this ShowWorkFlowResponse.
-        :type: str
+        :type updated_time: str
         """
         self._updated_time = updated_time
 
@@ -171,7 +186,7 @@ class ShowWorkFlowResponse(SdkResponse):
         流程创建者
 
         :param created_by: The created_by of this ShowWorkFlowResponse.
-        :type: str
+        :type created_by: str
         """
         self._created_by = created_by
 
@@ -181,7 +196,7 @@ class ShowWorkFlowResponse(SdkResponse):
 
 
         :return: The definition of this ShowWorkFlowResponse.
-        :rtype: CreateWorkflowRequestBody
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CreateWorkflowRequestBody`
         """
         return self._definition
 
@@ -191,7 +206,7 @@ class ShowWorkFlowResponse(SdkResponse):
 
 
         :param definition: The definition of this ShowWorkFlowResponse.
-        :type: CreateWorkflowRequestBody
+        :type definition: :class:`huaweicloudsdkfunctiongraph.v2.CreateWorkflowRequestBody`
         """
         self._definition = definition
 

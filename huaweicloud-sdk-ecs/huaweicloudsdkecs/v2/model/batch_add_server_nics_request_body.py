@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchAddServerNicsRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchAddServerNicsRequestBody:
     }
 
     def __init__(self, nics=None):
-        """BatchAddServerNicsRequestBody - a model defined in huaweicloud sdk"""
+        """BatchAddServerNicsRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param nics: 需要添加的网卡参数列表。
+        :type nics: list[:class:`huaweicloudsdkecs.v2.BatchAddServerNicOption`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class BatchAddServerNicsRequestBody:
         需要添加的网卡参数列表。
 
         :return: The nics of this BatchAddServerNicsRequestBody.
-        :rtype: list[BatchAddServerNicOption]
+        :rtype: list[:class:`huaweicloudsdkecs.v2.BatchAddServerNicOption`]
         """
         return self._nics
 
@@ -57,7 +62,7 @@ class BatchAddServerNicsRequestBody:
         需要添加的网卡参数列表。
 
         :param nics: The nics of this BatchAddServerNicsRequestBody.
-        :type: list[BatchAddServerNicOption]
+        :type nics: list[:class:`huaweicloudsdkecs.v2.BatchAddServerNicOption`]
         """
         self._nics = nics
 

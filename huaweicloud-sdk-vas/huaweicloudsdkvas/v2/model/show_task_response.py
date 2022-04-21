@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowTaskResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -70,7 +69,53 @@ class ShowTaskResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, creator=None, project_id=None, description=None, service_name=None, service_version=None, service_title=None, edge_pool_id=None, resource_order_id=None, created_at=None, updated_at=None, state=None, status=None, error=None, timing_status=None, timing=None, input=None, output=None, service_config=None, hosting_result=None):
-        """ShowTaskResponse - a model defined in huaweicloud sdk"""
+        """ShowTaskResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 作业ID
+        :type id: str
+        :param name: 作业的名称
+        :type name: str
+        :param creator: 作业创建者的用户名
+        :type creator: str
+        :param project_id: 作业创建者的项目ID
+        :type project_id: str
+        :param description: 作业的描述
+        :type description: str
+        :param service_name: 作业对应服务的名称
+        :type service_name: str
+        :param service_version: 作业对应服务的版本号
+        :type service_version: str
+        :param service_title: 
+        :type service_title: :class:`huaweicloudsdkvas.v2.TaskDetailsServiceTitle`
+        :param edge_pool_id: 仅边缘作业会出现，作业运行所在的边缘运行池ID
+        :type edge_pool_id: str
+        :param resource_order_id: 作业指定的算法能力包包周期订单ID
+        :type resource_order_id: str
+        :param created_at: 作业创建的时间
+        :type created_at: datetime
+        :param updated_at: 作业最近一次状态更新的时间
+        :type updated_at: datetime
+        :param state: 作业当前的状态，分别为PENDING（等待中），RECOVERING（恢复中），STARTING（启动中），UPGRADING（升级中），CREATE_FAILED（创建失败），START_FAILED（启动失败），RUNNING（运行中），STOPPING（停止中），STOPPED（已停止），ABNORMAL（异常），SUCCEEDED（运行成功），FAILED（运行失败），DELETING（删除中），FREEZING（冻结中），FROZEN（已冻结）
+        :type state: str
+        :param status: 作业状态的详情信息，仅部分状态会有详情信息
+        :type status: str
+        :param error: 
+        :type error: :class:`huaweicloudsdkvas.v2.TaskDetailsError`
+        :param timing_status: 计划任务的状态，分别为ACTIVATED（激活），INACTIVATED（未激活）
+        :type timing_status: str
+        :param timing: 
+        :type timing: :class:`huaweicloudsdkvas.v2.TaskTiming`
+        :param input: 
+        :type input: :class:`huaweicloudsdkvas.v2.TaskInput`
+        :param output: 
+        :type output: :class:`huaweicloudsdkvas.v2.TaskOutputForDisplay`
+        :param service_config: 
+        :type service_config: :class:`huaweicloudsdkvas.v2.TaskServiceConfig`
+        :param hosting_result: 
+        :type hosting_result: :class:`huaweicloudsdkvas.v2.TaskHostingResultHostingResult`
+        """
         
         super(ShowTaskResponse, self).__init__()
 
@@ -146,7 +191,7 @@ class ShowTaskResponse(SdkResponse):
         作业ID
 
         :param id: The id of this ShowTaskResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -168,7 +213,7 @@ class ShowTaskResponse(SdkResponse):
         作业的名称
 
         :param name: The name of this ShowTaskResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -190,7 +235,7 @@ class ShowTaskResponse(SdkResponse):
         作业创建者的用户名
 
         :param creator: The creator of this ShowTaskResponse.
-        :type: str
+        :type creator: str
         """
         self._creator = creator
 
@@ -212,7 +257,7 @@ class ShowTaskResponse(SdkResponse):
         作业创建者的项目ID
 
         :param project_id: The project_id of this ShowTaskResponse.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -234,7 +279,7 @@ class ShowTaskResponse(SdkResponse):
         作业的描述
 
         :param description: The description of this ShowTaskResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -256,7 +301,7 @@ class ShowTaskResponse(SdkResponse):
         作业对应服务的名称
 
         :param service_name: The service_name of this ShowTaskResponse.
-        :type: str
+        :type service_name: str
         """
         self._service_name = service_name
 
@@ -278,7 +323,7 @@ class ShowTaskResponse(SdkResponse):
         作业对应服务的版本号
 
         :param service_version: The service_version of this ShowTaskResponse.
-        :type: str
+        :type service_version: str
         """
         self._service_version = service_version
 
@@ -288,7 +333,7 @@ class ShowTaskResponse(SdkResponse):
 
 
         :return: The service_title of this ShowTaskResponse.
-        :rtype: TaskDetailsServiceTitle
+        :rtype: :class:`huaweicloudsdkvas.v2.TaskDetailsServiceTitle`
         """
         return self._service_title
 
@@ -298,7 +343,7 @@ class ShowTaskResponse(SdkResponse):
 
 
         :param service_title: The service_title of this ShowTaskResponse.
-        :type: TaskDetailsServiceTitle
+        :type service_title: :class:`huaweicloudsdkvas.v2.TaskDetailsServiceTitle`
         """
         self._service_title = service_title
 
@@ -320,7 +365,7 @@ class ShowTaskResponse(SdkResponse):
         仅边缘作业会出现，作业运行所在的边缘运行池ID
 
         :param edge_pool_id: The edge_pool_id of this ShowTaskResponse.
-        :type: str
+        :type edge_pool_id: str
         """
         self._edge_pool_id = edge_pool_id
 
@@ -342,7 +387,7 @@ class ShowTaskResponse(SdkResponse):
         作业指定的算法能力包包周期订单ID
 
         :param resource_order_id: The resource_order_id of this ShowTaskResponse.
-        :type: str
+        :type resource_order_id: str
         """
         self._resource_order_id = resource_order_id
 
@@ -364,7 +409,7 @@ class ShowTaskResponse(SdkResponse):
         作业创建的时间
 
         :param created_at: The created_at of this ShowTaskResponse.
-        :type: datetime
+        :type created_at: datetime
         """
         self._created_at = created_at
 
@@ -386,7 +431,7 @@ class ShowTaskResponse(SdkResponse):
         作业最近一次状态更新的时间
 
         :param updated_at: The updated_at of this ShowTaskResponse.
-        :type: datetime
+        :type updated_at: datetime
         """
         self._updated_at = updated_at
 
@@ -408,7 +453,7 @@ class ShowTaskResponse(SdkResponse):
         作业当前的状态，分别为PENDING（等待中），RECOVERING（恢复中），STARTING（启动中），UPGRADING（升级中），CREATE_FAILED（创建失败），START_FAILED（启动失败），RUNNING（运行中），STOPPING（停止中），STOPPED（已停止），ABNORMAL（异常），SUCCEEDED（运行成功），FAILED（运行失败），DELETING（删除中），FREEZING（冻结中），FROZEN（已冻结）
 
         :param state: The state of this ShowTaskResponse.
-        :type: str
+        :type state: str
         """
         self._state = state
 
@@ -430,7 +475,7 @@ class ShowTaskResponse(SdkResponse):
         作业状态的详情信息，仅部分状态会有详情信息
 
         :param status: The status of this ShowTaskResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -440,7 +485,7 @@ class ShowTaskResponse(SdkResponse):
 
 
         :return: The error of this ShowTaskResponse.
-        :rtype: TaskDetailsError
+        :rtype: :class:`huaweicloudsdkvas.v2.TaskDetailsError`
         """
         return self._error
 
@@ -450,7 +495,7 @@ class ShowTaskResponse(SdkResponse):
 
 
         :param error: The error of this ShowTaskResponse.
-        :type: TaskDetailsError
+        :type error: :class:`huaweicloudsdkvas.v2.TaskDetailsError`
         """
         self._error = error
 
@@ -472,7 +517,7 @@ class ShowTaskResponse(SdkResponse):
         计划任务的状态，分别为ACTIVATED（激活），INACTIVATED（未激活）
 
         :param timing_status: The timing_status of this ShowTaskResponse.
-        :type: str
+        :type timing_status: str
         """
         self._timing_status = timing_status
 
@@ -482,7 +527,7 @@ class ShowTaskResponse(SdkResponse):
 
 
         :return: The timing of this ShowTaskResponse.
-        :rtype: TaskTiming
+        :rtype: :class:`huaweicloudsdkvas.v2.TaskTiming`
         """
         return self._timing
 
@@ -492,7 +537,7 @@ class ShowTaskResponse(SdkResponse):
 
 
         :param timing: The timing of this ShowTaskResponse.
-        :type: TaskTiming
+        :type timing: :class:`huaweicloudsdkvas.v2.TaskTiming`
         """
         self._timing = timing
 
@@ -502,7 +547,7 @@ class ShowTaskResponse(SdkResponse):
 
 
         :return: The input of this ShowTaskResponse.
-        :rtype: TaskInput
+        :rtype: :class:`huaweicloudsdkvas.v2.TaskInput`
         """
         return self._input
 
@@ -512,7 +557,7 @@ class ShowTaskResponse(SdkResponse):
 
 
         :param input: The input of this ShowTaskResponse.
-        :type: TaskInput
+        :type input: :class:`huaweicloudsdkvas.v2.TaskInput`
         """
         self._input = input
 
@@ -522,7 +567,7 @@ class ShowTaskResponse(SdkResponse):
 
 
         :return: The output of this ShowTaskResponse.
-        :rtype: TaskOutputForDisplay
+        :rtype: :class:`huaweicloudsdkvas.v2.TaskOutputForDisplay`
         """
         return self._output
 
@@ -532,7 +577,7 @@ class ShowTaskResponse(SdkResponse):
 
 
         :param output: The output of this ShowTaskResponse.
-        :type: TaskOutputForDisplay
+        :type output: :class:`huaweicloudsdkvas.v2.TaskOutputForDisplay`
         """
         self._output = output
 
@@ -542,7 +587,7 @@ class ShowTaskResponse(SdkResponse):
 
 
         :return: The service_config of this ShowTaskResponse.
-        :rtype: TaskServiceConfig
+        :rtype: :class:`huaweicloudsdkvas.v2.TaskServiceConfig`
         """
         return self._service_config
 
@@ -552,7 +597,7 @@ class ShowTaskResponse(SdkResponse):
 
 
         :param service_config: The service_config of this ShowTaskResponse.
-        :type: TaskServiceConfig
+        :type service_config: :class:`huaweicloudsdkvas.v2.TaskServiceConfig`
         """
         self._service_config = service_config
 
@@ -562,7 +607,7 @@ class ShowTaskResponse(SdkResponse):
 
 
         :return: The hosting_result of this ShowTaskResponse.
-        :rtype: TaskHostingResultHostingResult
+        :rtype: :class:`huaweicloudsdkvas.v2.TaskHostingResultHostingResult`
         """
         return self._hosting_result
 
@@ -572,7 +617,7 @@ class ShowTaskResponse(SdkResponse):
 
 
         :param hosting_result: The hosting_result of this ShowTaskResponse.
-        :type: TaskHostingResultHostingResult
+        :type hosting_result: :class:`huaweicloudsdkvas.v2.TaskHostingResultHostingResult`
         """
         self._hosting_result = hosting_result
 

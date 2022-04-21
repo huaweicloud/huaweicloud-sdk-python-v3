@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateVpcPeeringRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateVpcPeeringRequestBody:
     }
 
     def __init__(self, peering=None):
-        """CreateVpcPeeringRequestBody - a model defined in huaweicloud sdk"""
+        """CreateVpcPeeringRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param peering: 
+        :type peering: :class:`huaweicloudsdkvpc.v2.CreateVpcPeeringOption`
+        """
         
         
 
@@ -45,7 +50,7 @@ class CreateVpcPeeringRequestBody:
 
 
         :return: The peering of this CreateVpcPeeringRequestBody.
-        :rtype: CreateVpcPeeringOption
+        :rtype: :class:`huaweicloudsdkvpc.v2.CreateVpcPeeringOption`
         """
         return self._peering
 
@@ -55,7 +60,7 @@ class CreateVpcPeeringRequestBody:
 
 
         :param peering: The peering of this CreateVpcPeeringRequestBody.
-        :type: CreateVpcPeeringOption
+        :type peering: :class:`huaweicloudsdkvpc.v2.CreateVpcPeeringOption`
         """
         self._peering = peering
 

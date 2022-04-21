@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowCeshierarchyRespQueues1:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowCeshierarchyRespQueues1:
     }
 
     def __init__(self, name=None, partitions=None):
-        """ShowCeshierarchyRespQueues1 - a model defined in huaweicloud sdk"""
+        """ShowCeshierarchyRespQueues1
+
+        The model defined in huaweicloud sdk
+
+        :param name: topic名称。
+        :type name: str
+        :param partitions: 分区信息。
+        :type partitions: list[:class:`huaweicloudsdkkafka.v2.ShowCeshierarchyRespPartitions`]
+        """
         
         
 
@@ -63,7 +70,7 @@ class ShowCeshierarchyRespQueues1:
         topic名称。
 
         :param name: The name of this ShowCeshierarchyRespQueues1.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -74,7 +81,7 @@ class ShowCeshierarchyRespQueues1:
         分区信息。
 
         :return: The partitions of this ShowCeshierarchyRespQueues1.
-        :rtype: list[ShowCeshierarchyRespPartitions]
+        :rtype: list[:class:`huaweicloudsdkkafka.v2.ShowCeshierarchyRespPartitions`]
         """
         return self._partitions
 
@@ -85,7 +92,7 @@ class ShowCeshierarchyRespQueues1:
         分区信息。
 
         :param partitions: The partitions of this ShowCeshierarchyRespQueues1.
-        :type: list[ShowCeshierarchyRespPartitions]
+        :type partitions: list[:class:`huaweicloudsdkkafka.v2.ShowCeshierarchyRespPartitions`]
         """
         self._partitions = partitions
 

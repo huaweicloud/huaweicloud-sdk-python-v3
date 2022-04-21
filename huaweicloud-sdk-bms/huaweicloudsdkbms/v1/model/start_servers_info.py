@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StartServersInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class StartServersInfo:
     }
 
     def __init__(self, servers=None):
-        """StartServersInfo - a model defined in huaweicloud sdk"""
+        """StartServersInfo
+
+        The model defined in huaweicloud sdk
+
+        :param servers: 裸金属服务器ID列表，详情请参见表3 servers字段数据结构说明
+        :type servers: list[:class:`huaweicloudsdkbms.v1.ServersList`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class StartServersInfo:
         裸金属服务器ID列表，详情请参见表3 servers字段数据结构说明
 
         :return: The servers of this StartServersInfo.
-        :rtype: list[ServersList]
+        :rtype: list[:class:`huaweicloudsdkbms.v1.ServersList`]
         """
         return self._servers
 
@@ -57,7 +62,7 @@ class StartServersInfo:
         裸金属服务器ID列表，详情请参见表3 servers字段数据结构说明
 
         :param servers: The servers of this StartServersInfo.
-        :type: list[ServersList]
+        :type servers: list[:class:`huaweicloudsdkbms.v1.ServersList`]
         """
         self._servers = servers
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchQueryRpoAndRtoReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchQueryRpoAndRtoReq:
     }
 
     def __init__(self, jobs=None):
-        """BatchQueryRpoAndRtoReq - a model defined in huaweicloud sdk"""
+        """BatchQueryRpoAndRtoReq
+
+        The model defined in huaweicloud sdk
+
+        :param jobs: 批量查询RPO和RTO的任务详情ID请求列表
+        :type jobs: list[str]
+        """
         
         
 
@@ -57,7 +62,7 @@ class BatchQueryRpoAndRtoReq:
         批量查询RPO和RTO的任务详情ID请求列表
 
         :param jobs: The jobs of this BatchQueryRpoAndRtoReq.
-        :type: list[str]
+        :type jobs: list[str]
         """
         self._jobs = jobs
 

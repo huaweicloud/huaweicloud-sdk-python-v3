@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListOffSiteBackupsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ListOffSiteBackupsRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, backup_id=None, backup_type=None, offset=None, limit=None, begin_time=None, end_time=None):
-        """ListOffSiteBackupsRequest - a model defined in huaweicloud sdk"""
+        """ListOffSiteBackupsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言
+        :type x_language: str
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param backup_id: 备份ID。
+        :type backup_id: str
+        :param backup_type: 备份类型，取值： - “auto”: 自动全量备份。SQL Server仅支持查询备份类型为“auto”的备份列表 - “incremental”: 自动增量备份
+        :type backup_type: str
+        :param offset: 索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
+        :type offset: int
+        :param limit: 查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
+        :type limit: int
+        :param begin_time: 查询开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。与end_time必须同时使用。
+        :type begin_time: str
+        :param end_time: 查询结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”，且大于查询开始时间。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。与begin_time必须同时使用。
+        :type end_time: str
+        """
         
         
 
@@ -92,7 +111,7 @@ class ListOffSiteBackupsRequest:
         语言
 
         :param x_language: The x_language of this ListOffSiteBackupsRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -114,7 +133,7 @@ class ListOffSiteBackupsRequest:
         实例ID。
 
         :param instance_id: The instance_id of this ListOffSiteBackupsRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -136,7 +155,7 @@ class ListOffSiteBackupsRequest:
         备份ID。
 
         :param backup_id: The backup_id of this ListOffSiteBackupsRequest.
-        :type: str
+        :type backup_id: str
         """
         self._backup_id = backup_id
 
@@ -158,7 +177,7 @@ class ListOffSiteBackupsRequest:
         备份类型，取值： - “auto”: 自动全量备份。SQL Server仅支持查询备份类型为“auto”的备份列表 - “incremental”: 自动增量备份
 
         :param backup_type: The backup_type of this ListOffSiteBackupsRequest.
-        :type: str
+        :type backup_type: str
         """
         self._backup_type = backup_type
 
@@ -180,7 +199,7 @@ class ListOffSiteBackupsRequest:
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
         :param offset: The offset of this ListOffSiteBackupsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -202,7 +221,7 @@ class ListOffSiteBackupsRequest:
         查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
 
         :param limit: The limit of this ListOffSiteBackupsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -224,7 +243,7 @@ class ListOffSiteBackupsRequest:
         查询开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。与end_time必须同时使用。
 
         :param begin_time: The begin_time of this ListOffSiteBackupsRequest.
-        :type: str
+        :type begin_time: str
         """
         self._begin_time = begin_time
 
@@ -246,7 +265,7 @@ class ListOffSiteBackupsRequest:
         查询结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”，且大于查询开始时间。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。与begin_time必须同时使用。
 
         :param end_time: The end_time of this ListOffSiteBackupsRequest.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 

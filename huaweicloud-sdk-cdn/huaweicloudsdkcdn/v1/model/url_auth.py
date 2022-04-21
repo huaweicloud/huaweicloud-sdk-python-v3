@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UrlAuth:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class UrlAuth:
     }
 
     def __init__(self, status=None, type=None, key=None, time_format=None, expire_time=None):
-        """UrlAuth - a model defined in huaweicloud sdk"""
+        """UrlAuth
+
+        The model defined in huaweicloud sdk
+
+        :param status: A/B/C类防盗链开关（on：开启，off：关闭）。
+        :type status: str
+        :param type: 鉴权方式 type_a：鉴权方式A type_b：鉴权方式B type_c1：鉴权方式C1 type_c2：鉴权方式C2
+        :type type: str
+        :param key: 鉴权密钥由6 - 32位大小写字母、数字构成。
+        :type key: str
+        :param time_format: 时间格式 dec：十进制 hex：十六进制 鉴权方式A：只支持十进制 鉴权方式B：只支持十进制 鉴权方式C1：只支持十六进制鉴权方式 鉴权方式C2：支持十进制/十六进制
+        :type time_format: str
+        :param expire_time: 过期时间：范围：0-31536000单位为秒。
+        :type expire_time: int
+        """
         
         
 
@@ -77,7 +90,7 @@ class UrlAuth:
         A/B/C类防盗链开关（on：开启，off：关闭）。
 
         :param status: The status of this UrlAuth.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -99,7 +112,7 @@ class UrlAuth:
         鉴权方式 type_a：鉴权方式A type_b：鉴权方式B type_c1：鉴权方式C1 type_c2：鉴权方式C2
 
         :param type: The type of this UrlAuth.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -121,7 +134,7 @@ class UrlAuth:
         鉴权密钥由6 - 32位大小写字母、数字构成。
 
         :param key: The key of this UrlAuth.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -143,7 +156,7 @@ class UrlAuth:
         时间格式 dec：十进制 hex：十六进制 鉴权方式A：只支持十进制 鉴权方式B：只支持十进制 鉴权方式C1：只支持十六进制鉴权方式 鉴权方式C2：支持十进制/十六进制
 
         :param time_format: The time_format of this UrlAuth.
-        :type: str
+        :type time_format: str
         """
         self._time_format = time_format
 
@@ -165,7 +178,7 @@ class UrlAuth:
         过期时间：范围：0-31536000单位为秒。
 
         :param expire_time: The expire_time of this UrlAuth.
-        :type: int
+        :type expire_time: int
         """
         self._expire_time = expire_time
 

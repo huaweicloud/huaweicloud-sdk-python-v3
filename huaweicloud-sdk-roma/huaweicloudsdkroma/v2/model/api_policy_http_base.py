@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApiPolicyHttpBase:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ApiPolicyHttpBase:
     }
 
     def __init__(self, url_domain=None, req_protocol=None, req_method=None, req_uri=None, timeout=None, enable_client_ssl=None, retry_count=None):
-        """ApiPolicyHttpBase - a model defined in huaweicloud sdk"""
+        """ApiPolicyHttpBase
+
+        The model defined in huaweicloud sdk
+
+        :param url_domain: 策略后端的Endpoint。 由域名（或IP地址）和端口号组成，总长度不超过255。格式为域名:端口（如：apig.example.com:7443）。如果不写端口，则HTTPS默认端口号为443， HTTP默认端口号为80。 支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、“_”、“-”组成，且只能以英文开头。 
+        :type url_domain: str
+        :param req_protocol: 请求协议：HTTP、HTTPS
+        :type req_protocol: str
+        :param req_method: 请求方式：GET、POST、PUT、DELETE、HEAD、PATCH、OPTIONS、ANY
+        :type req_method: str
+        :param req_uri: 请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。  支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。 &gt; 需要服从URI规范。
+        :type req_uri: str
+        :param timeout: ROMA Connect APIC请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000  单位：毫秒。
+        :type timeout: int
+        :param enable_client_ssl: 是否开启双向认证
+        :type enable_client_ssl: bool
+        :param retry_count: ROMA Connect APIC请求后端服务的重试次数，默认为-1，范围[-1,10]
+        :type retry_count: str
+        """
         
         
 
@@ -85,7 +102,7 @@ class ApiPolicyHttpBase:
         策略后端的Endpoint。 由域名（或IP地址）和端口号组成，总长度不超过255。格式为域名:端口（如：apig.example.com:7443）。如果不写端口，则HTTPS默认端口号为443， HTTP默认端口号为80。 支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、“_”、“-”组成，且只能以英文开头。 
 
         :param url_domain: The url_domain of this ApiPolicyHttpBase.
-        :type: str
+        :type url_domain: str
         """
         self._url_domain = url_domain
 
@@ -107,7 +124,7 @@ class ApiPolicyHttpBase:
         请求协议：HTTP、HTTPS
 
         :param req_protocol: The req_protocol of this ApiPolicyHttpBase.
-        :type: str
+        :type req_protocol: str
         """
         self._req_protocol = req_protocol
 
@@ -129,7 +146,7 @@ class ApiPolicyHttpBase:
         请求方式：GET、POST、PUT、DELETE、HEAD、PATCH、OPTIONS、ANY
 
         :param req_method: The req_method of this ApiPolicyHttpBase.
-        :type: str
+        :type req_method: str
         """
         self._req_method = req_method
 
@@ -151,7 +168,7 @@ class ApiPolicyHttpBase:
         请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。  支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。 > 需要服从URI规范。
 
         :param req_uri: The req_uri of this ApiPolicyHttpBase.
-        :type: str
+        :type req_uri: str
         """
         self._req_uri = req_uri
 
@@ -173,7 +190,7 @@ class ApiPolicyHttpBase:
         ROMA Connect APIC请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000  单位：毫秒。
 
         :param timeout: The timeout of this ApiPolicyHttpBase.
-        :type: int
+        :type timeout: int
         """
         self._timeout = timeout
 
@@ -195,7 +212,7 @@ class ApiPolicyHttpBase:
         是否开启双向认证
 
         :param enable_client_ssl: The enable_client_ssl of this ApiPolicyHttpBase.
-        :type: bool
+        :type enable_client_ssl: bool
         """
         self._enable_client_ssl = enable_client_ssl
 
@@ -217,7 +234,7 @@ class ApiPolicyHttpBase:
         ROMA Connect APIC请求后端服务的重试次数，默认为-1，范围[-1,10]
 
         :param retry_count: The retry_count of this ApiPolicyHttpBase.
-        :type: str
+        :type retry_count: str
         """
         self._retry_count = retry_count
 

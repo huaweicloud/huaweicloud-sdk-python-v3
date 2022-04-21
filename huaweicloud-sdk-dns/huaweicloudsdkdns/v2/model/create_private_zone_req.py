@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreatePrivateZoneReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class CreatePrivateZoneReq:
     }
 
     def __init__(self, name=None, description=None, zone_type=None, email=None, ttl=None, router=None, tags=None, enterprise_project_id=None):
-        """CreatePrivateZoneReq - a model defined in huaweicloud sdk"""
+        """CreatePrivateZoneReq
+
+        The model defined in huaweicloud sdk
+
+        :param name: 待创建的域名。
+        :type name: str
+        :param description: 域名的描述信息。
+        :type description: str
+        :param zone_type: 域名类型。取值：private。
+        :type zone_type: str
+        :param email: 管理该zone的管理员邮箱。
+        :type email: str
+        :param ttl: 用于填写默认生成的SOA记录中有效缓存时间，以秒为单位。
+        :type ttl: int
+        :param router: 
+        :type router: :class:`huaweicloudsdkdns.v2.Router`
+        :param tags: 资源标签。
+        :type tags: list[:class:`huaweicloudsdkdns.v2.Tag`]
+        :param enterprise_project_id: 域名关联的企业项目ID，长度不超过36个字符。  默认值为0。
+        :type enterprise_project_id: str
+        """
         
         
 
@@ -90,7 +109,7 @@ class CreatePrivateZoneReq:
         待创建的域名。
 
         :param name: The name of this CreatePrivateZoneReq.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -112,7 +131,7 @@ class CreatePrivateZoneReq:
         域名的描述信息。
 
         :param description: The description of this CreatePrivateZoneReq.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -134,7 +153,7 @@ class CreatePrivateZoneReq:
         域名类型。取值：private。
 
         :param zone_type: The zone_type of this CreatePrivateZoneReq.
-        :type: str
+        :type zone_type: str
         """
         self._zone_type = zone_type
 
@@ -156,7 +175,7 @@ class CreatePrivateZoneReq:
         管理该zone的管理员邮箱。
 
         :param email: The email of this CreatePrivateZoneReq.
-        :type: str
+        :type email: str
         """
         self._email = email
 
@@ -178,7 +197,7 @@ class CreatePrivateZoneReq:
         用于填写默认生成的SOA记录中有效缓存时间，以秒为单位。
 
         :param ttl: The ttl of this CreatePrivateZoneReq.
-        :type: int
+        :type ttl: int
         """
         self._ttl = ttl
 
@@ -188,7 +207,7 @@ class CreatePrivateZoneReq:
 
 
         :return: The router of this CreatePrivateZoneReq.
-        :rtype: Router
+        :rtype: :class:`huaweicloudsdkdns.v2.Router`
         """
         return self._router
 
@@ -198,7 +217,7 @@ class CreatePrivateZoneReq:
 
 
         :param router: The router of this CreatePrivateZoneReq.
-        :type: Router
+        :type router: :class:`huaweicloudsdkdns.v2.Router`
         """
         self._router = router
 
@@ -209,7 +228,7 @@ class CreatePrivateZoneReq:
         资源标签。
 
         :return: The tags of this CreatePrivateZoneReq.
-        :rtype: list[Tag]
+        :rtype: list[:class:`huaweicloudsdkdns.v2.Tag`]
         """
         return self._tags
 
@@ -220,7 +239,7 @@ class CreatePrivateZoneReq:
         资源标签。
 
         :param tags: The tags of this CreatePrivateZoneReq.
-        :type: list[Tag]
+        :type tags: list[:class:`huaweicloudsdkdns.v2.Tag`]
         """
         self._tags = tags
 
@@ -242,7 +261,7 @@ class CreatePrivateZoneReq:
         域名关联的企业项目ID，长度不超过36个字符。  默认值为0。
 
         :param enterprise_project_id: The enterprise_project_id of this CreatePrivateZoneReq.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSubCustomerCouponsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListSubCustomerCouponsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, user_coupons=None):
-        """ListSubCustomerCouponsResponse - a model defined in huaweicloud sdk"""
+        """ListSubCustomerCouponsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 符合查询条件的总条数。
+        :type count: int
+        :param user_coupons: 优惠券记录。 具体请参见表2。
+        :type user_coupons: list[:class:`huaweicloudsdkbss.v2.IQueryUserCouponsResultV2`]
+        """
         
         super(ListSubCustomerCouponsResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListSubCustomerCouponsResponse(SdkResponse):
         符合查询条件的总条数。
 
         :param count: The count of this ListSubCustomerCouponsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -74,7 +81,7 @@ class ListSubCustomerCouponsResponse(SdkResponse):
         优惠券记录。 具体请参见表2。
 
         :return: The user_coupons of this ListSubCustomerCouponsResponse.
-        :rtype: list[IQueryUserCouponsResultV2]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.IQueryUserCouponsResultV2`]
         """
         return self._user_coupons
 
@@ -85,7 +92,7 @@ class ListSubCustomerCouponsResponse(SdkResponse):
         优惠券记录。 具体请参见表2。
 
         :param user_coupons: The user_coupons of this ListSubCustomerCouponsResponse.
-        :type: list[IQueryUserCouponsResultV2]
+        :type user_coupons: list[:class:`huaweicloudsdkbss.v2.IQueryUserCouponsResultV2`]
         """
         self._user_coupons = user_coupons
 

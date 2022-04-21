@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowCustomerAccountBalancesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowCustomerAccountBalancesResponse(SdkResponse):
     }
 
     def __init__(self, account_balances=None, debt_amount=None, measure_id=None, currency=None):
-        """ShowCustomerAccountBalancesResponse - a model defined in huaweicloud sdk"""
+        """ShowCustomerAccountBalancesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param account_balances: 账户余额列表。 具体请参见表1。
+        :type account_balances: list[:class:`huaweicloudsdkbssintl.v2.AccountBalanceV3`]
+        :param debt_amount: 欠款总金额。
+        :type debt_amount: float
+        :param measure_id: 度量单位。 1：元
+        :type measure_id: int
+        :param currency: 币种。 USD：美元。
+        :type currency: str
+        """
         
         super(ShowCustomerAccountBalancesResponse, self).__init__()
 
@@ -62,7 +73,7 @@ class ShowCustomerAccountBalancesResponse(SdkResponse):
         账户余额列表。 具体请参见表1。
 
         :return: The account_balances of this ShowCustomerAccountBalancesResponse.
-        :rtype: list[AccountBalanceV3]
+        :rtype: list[:class:`huaweicloudsdkbssintl.v2.AccountBalanceV3`]
         """
         return self._account_balances
 
@@ -73,7 +84,7 @@ class ShowCustomerAccountBalancesResponse(SdkResponse):
         账户余额列表。 具体请参见表1。
 
         :param account_balances: The account_balances of this ShowCustomerAccountBalancesResponse.
-        :type: list[AccountBalanceV3]
+        :type account_balances: list[:class:`huaweicloudsdkbssintl.v2.AccountBalanceV3`]
         """
         self._account_balances = account_balances
 
@@ -95,7 +106,7 @@ class ShowCustomerAccountBalancesResponse(SdkResponse):
         欠款总金额。
 
         :param debt_amount: The debt_amount of this ShowCustomerAccountBalancesResponse.
-        :type: float
+        :type debt_amount: float
         """
         self._debt_amount = debt_amount
 
@@ -117,7 +128,7 @@ class ShowCustomerAccountBalancesResponse(SdkResponse):
         度量单位。 1：元
 
         :param measure_id: The measure_id of this ShowCustomerAccountBalancesResponse.
-        :type: int
+        :type measure_id: int
         """
         self._measure_id = measure_id
 
@@ -139,7 +150,7 @@ class ShowCustomerAccountBalancesResponse(SdkResponse):
         币种。 USD：美元。
 
         :param currency: The currency of this ShowCustomerAccountBalancesResponse.
-        :type: str
+        :type currency: str
         """
         self._currency = currency
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteDeploymentRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteDeploymentRequest:
     }
 
     def __init__(self, deployment_id=None):
-        """DeleteDeploymentRequest - a model defined in huaweicloud sdk"""
+        """DeleteDeploymentRequest
+
+        The model defined in huaweicloud sdk
+
+        :param deployment_id: 部署计划ID。
+        :type deployment_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteDeploymentRequest:
         部署计划ID。
 
         :param deployment_id: The deployment_id of this DeleteDeploymentRequest.
-        :type: str
+        :type deployment_id: str
         """
         self._deployment_id = deployment_id
 

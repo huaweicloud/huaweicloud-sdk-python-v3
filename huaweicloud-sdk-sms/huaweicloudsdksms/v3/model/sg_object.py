@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SgObject:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class SgObject:
     }
 
     def __init__(self, id=None, name=None):
-        """SgObject - a model defined in huaweicloud sdk"""
+        """SgObject
+
+        The model defined in huaweicloud sdk
+
+        :param id: 安全组ID
+        :type id: str
+        :param name: 安全组名称
+        :type name: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class SgObject:
         安全组ID
 
         :param id: The id of this SgObject.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -83,7 +90,7 @@ class SgObject:
         安全组名称
 
         :param name: The name of this SgObject.
-        :type: str
+        :type name: str
         """
         self._name = name
 

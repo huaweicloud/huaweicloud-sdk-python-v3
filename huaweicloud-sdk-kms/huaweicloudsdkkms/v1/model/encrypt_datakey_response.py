@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EncryptDatakeyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class EncryptDatakeyResponse(SdkResponse):
     }
 
     def __init__(self, key_id=None, cipher_text=None, datakey_length=None):
-        """EncryptDatakeyResponse - a model defined in huaweicloud sdk"""
+        """EncryptDatakeyResponse
+
+        The model defined in huaweicloud sdk
+
+        :param key_id: 密钥ID
+        :type key_id: str
+        :param cipher_text: DEK密文16进制，两位表示1byte。
+        :type cipher_text: str
+        :param datakey_length: DEK字节长度。
+        :type datakey_length: str
+        """
         
         super(EncryptDatakeyResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class EncryptDatakeyResponse(SdkResponse):
         密钥ID
 
         :param key_id: The key_id of this EncryptDatakeyResponse.
-        :type: str
+        :type key_id: str
         """
         self._key_id = key_id
 
@@ -90,7 +99,7 @@ class EncryptDatakeyResponse(SdkResponse):
         DEK密文16进制，两位表示1byte。
 
         :param cipher_text: The cipher_text of this EncryptDatakeyResponse.
-        :type: str
+        :type cipher_text: str
         """
         self._cipher_text = cipher_text
 
@@ -112,7 +121,7 @@ class EncryptDatakeyResponse(SdkResponse):
         DEK字节长度。
 
         :param datakey_length: The datakey_length of this EncryptDatakeyResponse.
-        :type: str
+        :type datakey_length: str
         """
         self._datakey_length = datakey_length
 

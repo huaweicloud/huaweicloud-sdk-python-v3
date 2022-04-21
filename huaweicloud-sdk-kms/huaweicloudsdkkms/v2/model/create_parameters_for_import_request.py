@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateParametersForImportRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateParametersForImportRequest:
     }
 
     def __init__(self, body=None):
-        """CreateParametersForImportRequest - a model defined in huaweicloud sdk"""
+        """CreateParametersForImportRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateParametersForImportRequest
+        :type body: :class:`huaweicloudsdkkms.v2.GetParametersForImportRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateParametersForImportRequest:
 
 
         :return: The body of this CreateParametersForImportRequest.
-        :rtype: GetParametersForImportRequestBody
+        :rtype: :class:`huaweicloudsdkkms.v2.GetParametersForImportRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateParametersForImportRequest:
 
 
         :param body: The body of this CreateParametersForImportRequest.
-        :type: GetParametersForImportRequestBody
+        :type body: :class:`huaweicloudsdkkms.v2.GetParametersForImportRequestBody`
         """
         self._body = body
 

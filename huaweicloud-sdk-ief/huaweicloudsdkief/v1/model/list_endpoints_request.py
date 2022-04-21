@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListEndpointsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListEndpointsRequest:
     }
 
     def __init__(self, ief_instance_id=None, name=None, type=None, is_shared=None, limit=None, offset=None):
-        """ListEndpointsRequest - a model defined in huaweicloud sdk"""
+        """ListEndpointsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param ief_instance_id: 铂金版实例ID，专业版实例为空值
+        :type ief_instance_id: str
+        :param name: 端点名称
+        :type name: str
+        :param type: 端点类型 枚举值： - dis - servicebus - apigw
+        :type type: str
+        :param is_shared: 端点是否共享
+        :type is_shared: str
+        :param limit: 查询返回记录的数量限制
+        :type limit: int
+        :param offset: 偏移量，表示查询该偏移量后面的记录
+        :type offset: int
+        """
         
         
 
@@ -83,7 +98,7 @@ class ListEndpointsRequest:
         铂金版实例ID，专业版实例为空值
 
         :param ief_instance_id: The ief_instance_id of this ListEndpointsRequest.
-        :type: str
+        :type ief_instance_id: str
         """
         self._ief_instance_id = ief_instance_id
 
@@ -105,7 +120,7 @@ class ListEndpointsRequest:
         端点名称
 
         :param name: The name of this ListEndpointsRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -127,7 +142,7 @@ class ListEndpointsRequest:
         端点类型 枚举值： - dis - servicebus - apigw
 
         :param type: The type of this ListEndpointsRequest.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -149,7 +164,7 @@ class ListEndpointsRequest:
         端点是否共享
 
         :param is_shared: The is_shared of this ListEndpointsRequest.
-        :type: str
+        :type is_shared: str
         """
         self._is_shared = is_shared
 
@@ -171,7 +186,7 @@ class ListEndpointsRequest:
         查询返回记录的数量限制
 
         :param limit: The limit of this ListEndpointsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -193,7 +208,7 @@ class ListEndpointsRequest:
         偏移量，表示查询该偏移量后面的记录
 
         :param offset: The offset of this ListEndpointsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 

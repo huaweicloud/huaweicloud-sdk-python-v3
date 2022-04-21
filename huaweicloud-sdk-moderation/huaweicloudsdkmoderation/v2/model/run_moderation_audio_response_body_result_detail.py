@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunModerationAudioResponseBodyResultDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RunModerationAudioResponseBodyResultDetail:
     }
 
     def __init__(self, text=None, audio=None):
-        """RunModerationAudioResponseBodyResultDetail - a model defined in huaweicloud sdk"""
+        """RunModerationAudioResponseBodyResultDetail
+
+        The model defined in huaweicloud sdk
+
+        :param text: 返回的语音转文本后审核结果详细信息： ● politics：涉政敏感词列表。 ● porn：涉黄敏感词列表。 ● ad：广告敏感词列表。 ● abuse：辱骂敏感词列表。 ● contraband：违禁品敏感词列表 
+        :type text: object
+        :param audio: 
+        :type audio: :class:`huaweicloudsdkmoderation.v2.RunModerationAudioResponseBodyResultDetailAudio`
+        """
         
         
 
@@ -63,7 +70,7 @@ class RunModerationAudioResponseBodyResultDetail:
         返回的语音转文本后审核结果详细信息： ● politics：涉政敏感词列表。 ● porn：涉黄敏感词列表。 ● ad：广告敏感词列表。 ● abuse：辱骂敏感词列表。 ● contraband：违禁品敏感词列表 
 
         :param text: The text of this RunModerationAudioResponseBodyResultDetail.
-        :type: object
+        :type text: object
         """
         self._text = text
 
@@ -73,7 +80,7 @@ class RunModerationAudioResponseBodyResultDetail:
 
 
         :return: The audio of this RunModerationAudioResponseBodyResultDetail.
-        :rtype: RunModerationAudioResponseBodyResultDetailAudio
+        :rtype: :class:`huaweicloudsdkmoderation.v2.RunModerationAudioResponseBodyResultDetailAudio`
         """
         return self._audio
 
@@ -83,7 +90,7 @@ class RunModerationAudioResponseBodyResultDetail:
 
 
         :param audio: The audio of this RunModerationAudioResponseBodyResultDetail.
-        :type: RunModerationAudioResponseBodyResultDetailAudio
+        :type audio: :class:`huaweicloudsdkmoderation.v2.RunModerationAudioResponseBodyResultDetailAudio`
         """
         self._audio = audio
 

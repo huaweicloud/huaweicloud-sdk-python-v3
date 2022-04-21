@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAssetModelsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListAssetModelsRequest:
     }
 
     def __init__(self, filter=None, limit=None, offset=None):
-        """ListAssetModelsRequest - a model defined in huaweicloud sdk"""
+        """ListAssetModelsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param filter: 过滤条件 示例： {\&quot;key\&quot;:\&quot;xxx\&quot;} {\&quot;key1\&quot;:\&quot;xxx\&quot;,\&quot;key2\&quot;:\&quot;xxx\&quot;} {\&quot;key\&quot;:{\&quot;eq|like\&quot;:\&quot;xxx\&quot;}} {\&quot;key\&quot;:{\&quot;in\&quot;:[\&quot;xxx\&quot;,\&quot;xxx\&quot;]}} {\&quot;or\&quot;:{\&quot;key1\&quot;:\&quot;xxx\&quot;,\&quot;key2\&quot;:{\&quot;eq|like\&quot;:\&quot;xxx\&quot;},\&quot;key3\&quot;:{\&quot;in\&quot;:[\&quot;xxx\&quot;,\&quot;xxx\&quot;]}}} {\&quot;and\&quot;:{\&quot;key1\&quot;:\&quot;xxx\&quot;,\&quot;key2\&quot;:{\&quot;eq|like\&quot;:\&quot;xxx\&quot;},\&quot;key3\&quot;:{\&quot;in\&quot;:[\&quot;xxx\&quot;,\&quot;xxx\&quot;]}}} 支持的key： asset_model_id，name，display_name，job_id 注意： job_id只支持contain过滤 {\&quot;job_id\&quot;:{\&quot;contain\&quot;:\&quot;xxx\&quot;}}
+        :type filter: str
+        :param limit: 每页记录数
+        :type limit: int
+        :param offset: 页码
+        :type offset: int
+        """
         
         
 
@@ -68,7 +77,7 @@ class ListAssetModelsRequest:
         过滤条件 示例： {\"key\":\"xxx\"} {\"key1\":\"xxx\",\"key2\":\"xxx\"} {\"key\":{\"eq|like\":\"xxx\"}} {\"key\":{\"in\":[\"xxx\",\"xxx\"]}} {\"or\":{\"key1\":\"xxx\",\"key2\":{\"eq|like\":\"xxx\"},\"key3\":{\"in\":[\"xxx\",\"xxx\"]}}} {\"and\":{\"key1\":\"xxx\",\"key2\":{\"eq|like\":\"xxx\"},\"key3\":{\"in\":[\"xxx\",\"xxx\"]}}} 支持的key： asset_model_id，name，display_name，job_id 注意： job_id只支持contain过滤 {\"job_id\":{\"contain\":\"xxx\"}}
 
         :param filter: The filter of this ListAssetModelsRequest.
-        :type: str
+        :type filter: str
         """
         self._filter = filter
 
@@ -90,7 +99,7 @@ class ListAssetModelsRequest:
         每页记录数
 
         :param limit: The limit of this ListAssetModelsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -112,7 +121,7 @@ class ListAssetModelsRequest:
         页码
 
         :param offset: The offset of this ListAssetModelsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 

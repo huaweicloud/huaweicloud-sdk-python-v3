@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StartDatabaseProxyRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class StartDatabaseProxyRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """StartDatabaseProxyRequest - a model defined in huaweicloud sdk"""
+        """StartDatabaseProxyRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言
+        :type x_language: str
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param body: Body of the StartDatabaseProxyRequest
+        :type body: :class:`huaweicloudsdkrds.v3.OpenProxyRequest`
+        """
         
         
 
@@ -67,7 +76,7 @@ class StartDatabaseProxyRequest:
         语言
 
         :param x_language: The x_language of this StartDatabaseProxyRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -89,7 +98,7 @@ class StartDatabaseProxyRequest:
         实例ID。
 
         :param instance_id: The instance_id of this StartDatabaseProxyRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -99,7 +108,7 @@ class StartDatabaseProxyRequest:
 
 
         :return: The body of this StartDatabaseProxyRequest.
-        :rtype: OpenProxyRequest
+        :rtype: :class:`huaweicloudsdkrds.v3.OpenProxyRequest`
         """
         return self._body
 
@@ -109,7 +118,7 @@ class StartDatabaseProxyRequest:
 
 
         :param body: The body of this StartDatabaseProxyRequest.
-        :type: OpenProxyRequest
+        :type body: :class:`huaweicloudsdkrds.v3.OpenProxyRequest`
         """
         self._body = body
 

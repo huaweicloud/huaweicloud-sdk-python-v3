@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateResourceGroupRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateResourceGroupRequestBody:
     }
 
     def __init__(self, group_name=None, resources=None):
-        """CreateResourceGroupRequestBody - a model defined in huaweicloud sdk"""
+        """CreateResourceGroupRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param group_name: 资源分组的名称；长度为1-128，只能包含0-9/a-z/A-Z/_/-或汉字；如：ResourceGroup-Test01。
+        :type group_name: str
+        :param resources: 创建的资源分组选择一个或者多个资源。
+        :type resources: list[:class:`huaweicloudsdkces.v1.CreateResourceGroup`]
+        """
         
         
 
@@ -61,7 +68,7 @@ class CreateResourceGroupRequestBody:
         资源分组的名称；长度为1-128，只能包含0-9/a-z/A-Z/_/-或汉字；如：ResourceGroup-Test01。
 
         :param group_name: The group_name of this CreateResourceGroupRequestBody.
-        :type: str
+        :type group_name: str
         """
         self._group_name = group_name
 
@@ -72,7 +79,7 @@ class CreateResourceGroupRequestBody:
         创建的资源分组选择一个或者多个资源。
 
         :return: The resources of this CreateResourceGroupRequestBody.
-        :rtype: list[CreateResourceGroup]
+        :rtype: list[:class:`huaweicloudsdkces.v1.CreateResourceGroup`]
         """
         return self._resources
 
@@ -83,7 +90,7 @@ class CreateResourceGroupRequestBody:
         创建的资源分组选择一个或者多个资源。
 
         :param resources: The resources of this CreateResourceGroupRequestBody.
-        :type: list[CreateResourceGroup]
+        :type resources: list[:class:`huaweicloudsdkces.v1.CreateResourceGroup`]
         """
         self._resources = resources
 

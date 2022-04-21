@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListMetadatasResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListMetadatasResponse(SdkResponse):
     }
 
     def __init__(self, error_message=None, error_code=None, schema_count=None, schema_list=None):
-        """ListMetadatasResponse - a model defined in huaweicloud sdk"""
+        """ListMetadatasResponse
+
+        The model defined in huaweicloud sdk
+
+        :param error_message: 系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误信息。
+        :type error_message: str
+        :param error_code: 系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误码。
+        :type error_code: str
+        :param schema_count: 元数据返回个数。请求失败时，字段为空。
+        :type schema_count: int
+        :param schema_list: 当前projectId下的所有元数据列表。请求失败时，字段为空。
+        :type schema_list: list[:class:`huaweicloudsdkges.v1.Metadata`]
+        """
         
         super(ListMetadatasResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class ListMetadatasResponse(SdkResponse):
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误信息。
 
         :param error_message: The error_message of this ListMetadatasResponse.
-        :type: str
+        :type error_message: str
         """
         self._error_message = error_message
 
@@ -95,7 +106,7 @@ class ListMetadatasResponse(SdkResponse):
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误码。
 
         :param error_code: The error_code of this ListMetadatasResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -117,7 +128,7 @@ class ListMetadatasResponse(SdkResponse):
         元数据返回个数。请求失败时，字段为空。
 
         :param schema_count: The schema_count of this ListMetadatasResponse.
-        :type: int
+        :type schema_count: int
         """
         self._schema_count = schema_count
 
@@ -128,7 +139,7 @@ class ListMetadatasResponse(SdkResponse):
         当前projectId下的所有元数据列表。请求失败时，字段为空。
 
         :return: The schema_list of this ListMetadatasResponse.
-        :rtype: list[Metadata]
+        :rtype: list[:class:`huaweicloudsdkges.v1.Metadata`]
         """
         return self._schema_list
 
@@ -139,7 +150,7 @@ class ListMetadatasResponse(SdkResponse):
         当前projectId下的所有元数据列表。请求失败时，字段为空。
 
         :param schema_list: The schema_list of this ListMetadatasResponse.
-        :type: list[Metadata]
+        :type schema_list: list[:class:`huaweicloudsdkges.v1.Metadata`]
         """
         self._schema_list = schema_list
 

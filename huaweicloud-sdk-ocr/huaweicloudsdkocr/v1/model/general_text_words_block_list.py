@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GeneralTextWordsBlockList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class GeneralTextWordsBlockList:
     }
 
     def __init__(self, words=None, location=None):
-        """GeneralTextWordsBlockList - a model defined in huaweicloud sdk"""
+        """GeneralTextWordsBlockList
+
+        The model defined in huaweicloud sdk
+
+        :param words: 文字块识别结果。 
+        :type words: str
+        :param location: 文字块的区域位置信息，列表形式，包含文字区域四个顶点的二维坐标（x,y）;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
+        :type location: list[list[int]]
+        """
         
         
 
@@ -61,7 +68,7 @@ class GeneralTextWordsBlockList:
         文字块识别结果。 
 
         :param words: The words of this GeneralTextWordsBlockList.
-        :type: str
+        :type words: str
         """
         self._words = words
 
@@ -83,7 +90,7 @@ class GeneralTextWordsBlockList:
         文字块的区域位置信息，列表形式，包含文字区域四个顶点的二维坐标（x,y）;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
         :param location: The location of this GeneralTextWordsBlockList.
-        :type: list[list[int]]
+        :type location: list[list[int]]
         """
         self._location = location
 

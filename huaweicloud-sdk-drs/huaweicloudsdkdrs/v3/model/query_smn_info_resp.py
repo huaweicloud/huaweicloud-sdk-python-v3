@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QuerySmnInfoResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class QuerySmnInfoResp:
     }
 
     def __init__(self, subscriptions=None, topic_name=None, delay_time=None, rto_delay=None, rpo_delay=None, alarm_to_user=None):
-        """QuerySmnInfoResp - a model defined in huaweicloud sdk"""
+        """QuerySmnInfoResp
+
+        The model defined in huaweicloud sdk
+
+        :param subscriptions: SMN信息
+        :type subscriptions: list[:class:`huaweicloudsdkdrs.v3.SubscriptionInfo`]
+        :param topic_name: 主题名称
+        :type topic_name: str
+        :param delay_time: 订阅延迟时间
+        :type delay_time: int
+        :param rto_delay: rto延迟时间
+        :type rto_delay: int
+        :param rpo_delay: rpo延迟时间
+        :type rpo_delay: int
+        :param alarm_to_user: 异常告警是否通知用户
+        :type alarm_to_user: bool
+        """
         
         
 
@@ -72,7 +87,7 @@ class QuerySmnInfoResp:
         SMN信息
 
         :return: The subscriptions of this QuerySmnInfoResp.
-        :rtype: list[SubscriptionInfo]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.SubscriptionInfo`]
         """
         return self._subscriptions
 
@@ -83,7 +98,7 @@ class QuerySmnInfoResp:
         SMN信息
 
         :param subscriptions: The subscriptions of this QuerySmnInfoResp.
-        :type: list[SubscriptionInfo]
+        :type subscriptions: list[:class:`huaweicloudsdkdrs.v3.SubscriptionInfo`]
         """
         self._subscriptions = subscriptions
 
@@ -105,7 +120,7 @@ class QuerySmnInfoResp:
         主题名称
 
         :param topic_name: The topic_name of this QuerySmnInfoResp.
-        :type: str
+        :type topic_name: str
         """
         self._topic_name = topic_name
 
@@ -127,7 +142,7 @@ class QuerySmnInfoResp:
         订阅延迟时间
 
         :param delay_time: The delay_time of this QuerySmnInfoResp.
-        :type: int
+        :type delay_time: int
         """
         self._delay_time = delay_time
 
@@ -149,7 +164,7 @@ class QuerySmnInfoResp:
         rto延迟时间
 
         :param rto_delay: The rto_delay of this QuerySmnInfoResp.
-        :type: int
+        :type rto_delay: int
         """
         self._rto_delay = rto_delay
 
@@ -171,7 +186,7 @@ class QuerySmnInfoResp:
         rpo延迟时间
 
         :param rpo_delay: The rpo_delay of this QuerySmnInfoResp.
-        :type: int
+        :type rpo_delay: int
         """
         self._rpo_delay = rpo_delay
 
@@ -193,7 +208,7 @@ class QuerySmnInfoResp:
         异常告警是否通知用户
 
         :param alarm_to_user: The alarm_to_user of this QuerySmnInfoResp.
-        :type: bool
+        :type alarm_to_user: bool
         """
         self._alarm_to_user = alarm_to_user
 

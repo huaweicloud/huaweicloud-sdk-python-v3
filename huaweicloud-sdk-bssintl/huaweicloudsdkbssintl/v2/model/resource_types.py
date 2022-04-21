@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResourceTypes:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ResourceTypes:
     }
 
     def __init__(self, resource_type_code=None, resource_type_name=None, resource_type_desc=None, service_type_code=None):
-        """ResourceTypes - a model defined in huaweicloud sdk"""
+        """ResourceTypes
+
+        The model defined in huaweicloud sdk
+
+        :param resource_type_code: 资源类型的编码。例如ECS的VM为“hws.resource.type.vm”。
+        :type resource_type_code: str
+        :param resource_type_name: 资源类型的名称。
+        :type resource_type_name: str
+        :param resource_type_desc: 资源类型的描述。
+        :type resource_type_desc: str
+        :param service_type_code: 资源类型归属的服务类型编码。例如：hws.service.type.offline。
+        :type service_type_code: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class ResourceTypes:
         资源类型的编码。例如ECS的VM为“hws.resource.type.vm”。
 
         :param resource_type_code: The resource_type_code of this ResourceTypes.
-        :type: str
+        :type resource_type_code: str
         """
         self._resource_type_code = resource_type_code
 
@@ -95,7 +106,7 @@ class ResourceTypes:
         资源类型的名称。
 
         :param resource_type_name: The resource_type_name of this ResourceTypes.
-        :type: str
+        :type resource_type_name: str
         """
         self._resource_type_name = resource_type_name
 
@@ -117,7 +128,7 @@ class ResourceTypes:
         资源类型的描述。
 
         :param resource_type_desc: The resource_type_desc of this ResourceTypes.
-        :type: str
+        :type resource_type_desc: str
         """
         self._resource_type_desc = resource_type_desc
 
@@ -139,7 +150,7 @@ class ResourceTypes:
         资源类型归属的服务类型编码。例如：hws.service.type.offline。
 
         :param service_type_code: The service_type_code of this ResourceTypes.
-        :type: str
+        :type service_type_code: str
         """
         self._service_type_code = service_type_code
 

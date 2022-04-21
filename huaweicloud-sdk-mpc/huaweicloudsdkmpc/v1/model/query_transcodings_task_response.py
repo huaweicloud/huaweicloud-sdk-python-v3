@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryTranscodingsTaskResponse:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -62,7 +61,45 @@ class QueryTranscodingsTaskResponse:
     }
 
     def __init__(self, task_id=None, status=None, create_time=None, end_time=None, trans_template_id=None, input=None, output=None, output_file_name=None, user_data=None, error_code=None, description=None, tips=None, transcode_detail=None, thumbnail_output=None, thumbnail_outputname=None, pic_info=None, av_parameters=None):
-        """QueryTranscodingsTaskResponse - a model defined in huaweicloud sdk"""
+        """QueryTranscodingsTaskResponse
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 任务ID。
+        :type task_id: str
+        :param status: 任务执行状态。 
+        :type status: str
+        :param create_time: 转码任务启动时间 
+        :type create_time: str
+        :param end_time: 转码任务结束时间 
+        :type end_time: str
+        :param trans_template_id: 转码任务对应的转码模板ID 
+        :type trans_template_id: list[int]
+        :param input: 
+        :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        :param output: 
+        :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        :param output_file_name: 转码生成的文件名，数组类型，可能包含多个，包含截图文件名。 
+        :type output_file_name: list[str]
+        :param user_data: 用户自定义数据。 
+        :type user_data: str
+        :param error_code: 转码任务的返回码。 
+        :type error_code: str
+        :param description: 转码任务描述，当转码出现异常时，此字段为异常的原因。 
+        :type description: str
+        :param tips: 转码成功，但音频采样率过低时的提示。 
+        :type tips: str
+        :param transcode_detail: 
+        :type transcode_detail: :class:`huaweicloudsdkmpc.v1.TranscodeDetail`
+        :param thumbnail_output: 
+        :type thumbnail_output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        :param thumbnail_outputname: 截图压缩包名。 
+        :type thumbnail_outputname: str
+        :param pic_info: 截图文件信息。 
+        :type pic_info: list[:class:`huaweicloudsdkmpc.v1.PicInfo`]
+        :param av_parameters: 转码参数。  若同时设置“trans_template_id”和此参数，则优先使用此参数进行转码。 
+        :type av_parameters: list[:class:`huaweicloudsdkmpc.v1.AvParameters`]
+        """
         
         
 
@@ -138,7 +175,7 @@ class QueryTranscodingsTaskResponse:
         任务ID。
 
         :param task_id: The task_id of this QueryTranscodingsTaskResponse.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -160,7 +197,7 @@ class QueryTranscodingsTaskResponse:
         任务执行状态。 
 
         :param status: The status of this QueryTranscodingsTaskResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -182,7 +219,7 @@ class QueryTranscodingsTaskResponse:
         转码任务启动时间 
 
         :param create_time: The create_time of this QueryTranscodingsTaskResponse.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -204,7 +241,7 @@ class QueryTranscodingsTaskResponse:
         转码任务结束时间 
 
         :param end_time: The end_time of this QueryTranscodingsTaskResponse.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -226,7 +263,7 @@ class QueryTranscodingsTaskResponse:
         转码任务对应的转码模板ID 
 
         :param trans_template_id: The trans_template_id of this QueryTranscodingsTaskResponse.
-        :type: list[int]
+        :type trans_template_id: list[int]
         """
         self._trans_template_id = trans_template_id
 
@@ -236,7 +273,7 @@ class QueryTranscodingsTaskResponse:
 
 
         :return: The input of this QueryTranscodingsTaskResponse.
-        :rtype: ObsObjInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         return self._input
 
@@ -246,7 +283,7 @@ class QueryTranscodingsTaskResponse:
 
 
         :param input: The input of this QueryTranscodingsTaskResponse.
-        :type: ObsObjInfo
+        :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         self._input = input
 
@@ -256,7 +293,7 @@ class QueryTranscodingsTaskResponse:
 
 
         :return: The output of this QueryTranscodingsTaskResponse.
-        :rtype: ObsObjInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         return self._output
 
@@ -266,7 +303,7 @@ class QueryTranscodingsTaskResponse:
 
 
         :param output: The output of this QueryTranscodingsTaskResponse.
-        :type: ObsObjInfo
+        :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         self._output = output
 
@@ -288,7 +325,7 @@ class QueryTranscodingsTaskResponse:
         转码生成的文件名，数组类型，可能包含多个，包含截图文件名。 
 
         :param output_file_name: The output_file_name of this QueryTranscodingsTaskResponse.
-        :type: list[str]
+        :type output_file_name: list[str]
         """
         self._output_file_name = output_file_name
 
@@ -310,7 +347,7 @@ class QueryTranscodingsTaskResponse:
         用户自定义数据。 
 
         :param user_data: The user_data of this QueryTranscodingsTaskResponse.
-        :type: str
+        :type user_data: str
         """
         self._user_data = user_data
 
@@ -332,7 +369,7 @@ class QueryTranscodingsTaskResponse:
         转码任务的返回码。 
 
         :param error_code: The error_code of this QueryTranscodingsTaskResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -354,7 +391,7 @@ class QueryTranscodingsTaskResponse:
         转码任务描述，当转码出现异常时，此字段为异常的原因。 
 
         :param description: The description of this QueryTranscodingsTaskResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -376,7 +413,7 @@ class QueryTranscodingsTaskResponse:
         转码成功，但音频采样率过低时的提示。 
 
         :param tips: The tips of this QueryTranscodingsTaskResponse.
-        :type: str
+        :type tips: str
         """
         self._tips = tips
 
@@ -386,7 +423,7 @@ class QueryTranscodingsTaskResponse:
 
 
         :return: The transcode_detail of this QueryTranscodingsTaskResponse.
-        :rtype: TranscodeDetail
+        :rtype: :class:`huaweicloudsdkmpc.v1.TranscodeDetail`
         """
         return self._transcode_detail
 
@@ -396,7 +433,7 @@ class QueryTranscodingsTaskResponse:
 
 
         :param transcode_detail: The transcode_detail of this QueryTranscodingsTaskResponse.
-        :type: TranscodeDetail
+        :type transcode_detail: :class:`huaweicloudsdkmpc.v1.TranscodeDetail`
         """
         self._transcode_detail = transcode_detail
 
@@ -406,7 +443,7 @@ class QueryTranscodingsTaskResponse:
 
 
         :return: The thumbnail_output of this QueryTranscodingsTaskResponse.
-        :rtype: ObsObjInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         return self._thumbnail_output
 
@@ -416,7 +453,7 @@ class QueryTranscodingsTaskResponse:
 
 
         :param thumbnail_output: The thumbnail_output of this QueryTranscodingsTaskResponse.
-        :type: ObsObjInfo
+        :type thumbnail_output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         self._thumbnail_output = thumbnail_output
 
@@ -438,7 +475,7 @@ class QueryTranscodingsTaskResponse:
         截图压缩包名。 
 
         :param thumbnail_outputname: The thumbnail_outputname of this QueryTranscodingsTaskResponse.
-        :type: str
+        :type thumbnail_outputname: str
         """
         self._thumbnail_outputname = thumbnail_outputname
 
@@ -449,7 +486,7 @@ class QueryTranscodingsTaskResponse:
         截图文件信息。 
 
         :return: The pic_info of this QueryTranscodingsTaskResponse.
-        :rtype: list[PicInfo]
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.PicInfo`]
         """
         return self._pic_info
 
@@ -460,7 +497,7 @@ class QueryTranscodingsTaskResponse:
         截图文件信息。 
 
         :param pic_info: The pic_info of this QueryTranscodingsTaskResponse.
-        :type: list[PicInfo]
+        :type pic_info: list[:class:`huaweicloudsdkmpc.v1.PicInfo`]
         """
         self._pic_info = pic_info
 
@@ -471,7 +508,7 @@ class QueryTranscodingsTaskResponse:
         转码参数。  若同时设置“trans_template_id”和此参数，则优先使用此参数进行转码。 
 
         :return: The av_parameters of this QueryTranscodingsTaskResponse.
-        :rtype: list[AvParameters]
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.AvParameters`]
         """
         return self._av_parameters
 
@@ -482,7 +519,7 @@ class QueryTranscodingsTaskResponse:
         转码参数。  若同时设置“trans_template_id”和此参数，则优先使用此参数进行转码。 
 
         :param av_parameters: The av_parameters of this QueryTranscodingsTaskResponse.
-        :type: list[AvParameters]
+        :type av_parameters: list[:class:`huaweicloudsdkmpc.v1.AvParameters`]
         """
         self._av_parameters = av_parameters
 

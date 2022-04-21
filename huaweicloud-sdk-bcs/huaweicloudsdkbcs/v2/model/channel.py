@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Channel:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class Channel:
     }
 
     def __init__(self, name=None, description=None, create_time=None, consensus=None, peers=None, consensus_nodes=None):
-        """Channel - a model defined in huaweicloud sdk"""
+        """Channel
+
+        The model defined in huaweicloud sdk
+
+        :param name: 通道名
+        :type name: str
+        :param description: 通道细节描述
+        :type description: str
+        :param create_time: 通道创建时间
+        :type create_time: str
+        :param consensus: 共识策略
+        :type consensus: str
+        :param peers: key:组织名，value:节点名称列表
+        :type peers: dict(str, list[str])
+        :param consensus_nodes: key:组织名，value:节点名称列表
+        :type consensus_nodes: dict(str, list[str])
+        """
         
         
 
@@ -83,7 +98,7 @@ class Channel:
         通道名
 
         :param name: The name of this Channel.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -105,7 +120,7 @@ class Channel:
         通道细节描述
 
         :param description: The description of this Channel.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -127,7 +142,7 @@ class Channel:
         通道创建时间
 
         :param create_time: The create_time of this Channel.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -149,7 +164,7 @@ class Channel:
         共识策略
 
         :param consensus: The consensus of this Channel.
-        :type: str
+        :type consensus: str
         """
         self._consensus = consensus
 
@@ -171,7 +186,7 @@ class Channel:
         key:组织名，value:节点名称列表
 
         :param peers: The peers of this Channel.
-        :type: dict(str, list[str])
+        :type peers: dict(str, list[str])
         """
         self._peers = peers
 
@@ -193,7 +208,7 @@ class Channel:
         key:组织名，value:节点名称列表
 
         :param consensus_nodes: The consensus_nodes of this Channel.
-        :type: dict(str, list[str])
+        :type consensus_nodes: dict(str, list[str])
         """
         self._consensus_nodes = consensus_nodes
 

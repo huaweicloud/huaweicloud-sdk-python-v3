@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TaskSettingsTaskConfig:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class TaskSettingsTaskConfig:
     }
 
     def __init__(self, scan_mode=None, port_scan=None, weak_pwd_scan=None, cve_check=None, text_check=None, picture_check=None, malicious_code=None, malicious_link=None):
-        """TaskSettingsTaskConfig - a model defined in huaweicloud sdk"""
+        """TaskSettingsTaskConfig
+
+        The model defined in huaweicloud sdk
+
+        :param scan_mode: 扫描模式:   * fast - 快速扫描   * normal - 标准扫描   * deep - 深度扫描 
+        :type scan_mode: str
+        :param port_scan: 是否进行端口扫描
+        :type port_scan: bool
+        :param weak_pwd_scan: 是否进行弱密码扫描
+        :type weak_pwd_scan: bool
+        :param cve_check: 是否进行CVE漏洞扫描
+        :type cve_check: bool
+        :param text_check: 是否进行网站内容合规文字检测
+        :type text_check: bool
+        :param picture_check: 是否进行网站内容合规图片检测
+        :type picture_check: bool
+        :param malicious_code: 是否进行网站挂马检测
+        :type malicious_code: bool
+        :param malicious_link: 是否进行链接健康检测（死链、暗链、恶意外链）
+        :type malicious_link: bool
+        """
         
         
 
@@ -93,7 +112,7 @@ class TaskSettingsTaskConfig:
         扫描模式:   * fast - 快速扫描   * normal - 标准扫描   * deep - 深度扫描 
 
         :param scan_mode: The scan_mode of this TaskSettingsTaskConfig.
-        :type: str
+        :type scan_mode: str
         """
         self._scan_mode = scan_mode
 
@@ -115,7 +134,7 @@ class TaskSettingsTaskConfig:
         是否进行端口扫描
 
         :param port_scan: The port_scan of this TaskSettingsTaskConfig.
-        :type: bool
+        :type port_scan: bool
         """
         self._port_scan = port_scan
 
@@ -137,7 +156,7 @@ class TaskSettingsTaskConfig:
         是否进行弱密码扫描
 
         :param weak_pwd_scan: The weak_pwd_scan of this TaskSettingsTaskConfig.
-        :type: bool
+        :type weak_pwd_scan: bool
         """
         self._weak_pwd_scan = weak_pwd_scan
 
@@ -159,7 +178,7 @@ class TaskSettingsTaskConfig:
         是否进行CVE漏洞扫描
 
         :param cve_check: The cve_check of this TaskSettingsTaskConfig.
-        :type: bool
+        :type cve_check: bool
         """
         self._cve_check = cve_check
 
@@ -181,7 +200,7 @@ class TaskSettingsTaskConfig:
         是否进行网站内容合规文字检测
 
         :param text_check: The text_check of this TaskSettingsTaskConfig.
-        :type: bool
+        :type text_check: bool
         """
         self._text_check = text_check
 
@@ -203,7 +222,7 @@ class TaskSettingsTaskConfig:
         是否进行网站内容合规图片检测
 
         :param picture_check: The picture_check of this TaskSettingsTaskConfig.
-        :type: bool
+        :type picture_check: bool
         """
         self._picture_check = picture_check
 
@@ -225,7 +244,7 @@ class TaskSettingsTaskConfig:
         是否进行网站挂马检测
 
         :param malicious_code: The malicious_code of this TaskSettingsTaskConfig.
-        :type: bool
+        :type malicious_code: bool
         """
         self._malicious_code = malicious_code
 
@@ -247,7 +266,7 @@ class TaskSettingsTaskConfig:
         是否进行链接健康检测（死链、暗链、恶意外链）
 
         :param malicious_link: The malicious_link of this TaskSettingsTaskConfig.
-        :type: bool
+        :type malicious_link: bool
         """
         self._malicious_link = malicious_link
 

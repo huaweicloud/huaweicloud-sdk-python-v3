@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PauseScalingGroupOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class PauseScalingGroupOption:
     }
 
     def __init__(self, action=None):
-        """PauseScalingGroupOption - a model defined in huaweicloud sdk"""
+        """PauseScalingGroupOption
+
+        The model defined in huaweicloud sdk
+
+        :param action: 启用或停止伸缩组操作的标识。启用：resume 停止：pause
+        :type action: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class PauseScalingGroupOption:
         启用或停止伸缩组操作的标识。启用：resume 停止：pause
 
         :param action: The action of this PauseScalingGroupOption.
-        :type: str
+        :type action: str
         """
         self._action = action
 

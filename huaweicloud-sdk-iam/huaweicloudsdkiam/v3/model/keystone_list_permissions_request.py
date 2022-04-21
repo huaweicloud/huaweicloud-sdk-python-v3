@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneListPermissionsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class KeystoneListPermissionsRequest:
     }
 
     def __init__(self, name=None, domain_id=None, page=None, per_page=None, permission_type=None, display_name=None, type=None, catalog=None):
-        """KeystoneListPermissionsRequest - a model defined in huaweicloud sdk"""
+        """KeystoneListPermissionsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param name: 系统内部呈现的权限名称。如云目录服务CCS普通用户权限CCS User的name为ccs_user。 建议您传参display_name，不传name参数。
+        :type name: str
+        :param domain_id: 账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。 &gt; - 如果填写此参数，则返回账号下所有自定义策略。 &gt; - 如果不填写此参数，则返回所有系统权限（包含系统策略和系统角色）。
+        :type domain_id: str
+        :param page: 分页查询时数据的页数，查询值最小为1。需要与per_page同时存在。传入domain_id参数查询自定义策略时，可配套使用。
+        :type page: int
+        :param per_page: 分页查询时每页的数据个数，取值范围为[1,300]，默认值为300。需要与page同时存在。不传page和per_page参数时，每页最多返回300个权限。
+        :type per_page: int
+        :param permission_type: 区分系统权限类型的参数。当domain_id参数为空时生效。 &gt; - policy：返回系统策略。 &gt; - role：返回系统角色。
+        :type permission_type: str
+        :param display_name: 过滤权限名称。如传参为Administrator，则返回满足条件的所有管理员权限。
+        :type display_name: str
+        :param type: 过滤权限的显示模式。取值范围：domain,project,all。type为domain时，返回type&#x3D;AA或AX的权限；type为project时，返回type&#x3D;AA或XA的权限；type为all时返回type为AA、AX、XA的权限。 &gt; - AX表示在domain层显示。 &gt; - XA表示在project层显示。 &gt; - AA表示在domain和project层均显示。 &gt; - XX表示在domain和project层均不显示。
+        :type type: str
+        :param catalog: 权限所在目录。catalog值精确匹配策略的catalog字段(可以过滤服务的策略、或者自定义策略)。
+        :type catalog: str
+        """
         
         
 
@@ -93,7 +112,7 @@ class KeystoneListPermissionsRequest:
         系统内部呈现的权限名称。如云目录服务CCS普通用户权限CCS User的name为ccs_user。 建议您传参display_name，不传name参数。
 
         :param name: The name of this KeystoneListPermissionsRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -115,7 +134,7 @@ class KeystoneListPermissionsRequest:
         账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。 > - 如果填写此参数，则返回账号下所有自定义策略。 > - 如果不填写此参数，则返回所有系统权限（包含系统策略和系统角色）。
 
         :param domain_id: The domain_id of this KeystoneListPermissionsRequest.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -137,7 +156,7 @@ class KeystoneListPermissionsRequest:
         分页查询时数据的页数，查询值最小为1。需要与per_page同时存在。传入domain_id参数查询自定义策略时，可配套使用。
 
         :param page: The page of this KeystoneListPermissionsRequest.
-        :type: int
+        :type page: int
         """
         self._page = page
 
@@ -159,7 +178,7 @@ class KeystoneListPermissionsRequest:
         分页查询时每页的数据个数，取值范围为[1,300]，默认值为300。需要与page同时存在。不传page和per_page参数时，每页最多返回300个权限。
 
         :param per_page: The per_page of this KeystoneListPermissionsRequest.
-        :type: int
+        :type per_page: int
         """
         self._per_page = per_page
 
@@ -181,7 +200,7 @@ class KeystoneListPermissionsRequest:
         区分系统权限类型的参数。当domain_id参数为空时生效。 > - policy：返回系统策略。 > - role：返回系统角色。
 
         :param permission_type: The permission_type of this KeystoneListPermissionsRequest.
-        :type: str
+        :type permission_type: str
         """
         self._permission_type = permission_type
 
@@ -203,7 +222,7 @@ class KeystoneListPermissionsRequest:
         过滤权限名称。如传参为Administrator，则返回满足条件的所有管理员权限。
 
         :param display_name: The display_name of this KeystoneListPermissionsRequest.
-        :type: str
+        :type display_name: str
         """
         self._display_name = display_name
 
@@ -225,7 +244,7 @@ class KeystoneListPermissionsRequest:
         过滤权限的显示模式。取值范围：domain,project,all。type为domain时，返回type=AA或AX的权限；type为project时，返回type=AA或XA的权限；type为all时返回type为AA、AX、XA的权限。 > - AX表示在domain层显示。 > - XA表示在project层显示。 > - AA表示在domain和project层均显示。 > - XX表示在domain和project层均不显示。
 
         :param type: The type of this KeystoneListPermissionsRequest.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -247,7 +266,7 @@ class KeystoneListPermissionsRequest:
         权限所在目录。catalog值精确匹配策略的catalog字段(可以过滤服务的策略、或者自定义策略)。
 
         :param catalog: The catalog of this KeystoneListPermissionsRequest.
-        :type: str
+        :type catalog: str
         """
         self._catalog = catalog
 

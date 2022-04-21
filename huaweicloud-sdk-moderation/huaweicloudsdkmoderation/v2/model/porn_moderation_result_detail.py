@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PornModerationResultDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class PornModerationResultDetail:
     }
 
     def __init__(self, confidence=None, label=None):
-        """PornModerationResultDetail - a model defined in huaweicloud sdk"""
+        """PornModerationResultDetail
+
+        The model defined in huaweicloud sdk
+
+        :param confidence: 置信度，取值范围 0-1。
+        :type confidence: float
+        :param label: 当前支持label列表如下： - normal：正常 - porn：色情 
+        :type label: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class PornModerationResultDetail:
         置信度，取值范围 0-1。
 
         :param confidence: The confidence of this PornModerationResultDetail.
-        :type: float
+        :type confidence: float
         """
         self._confidence = confidence
 
@@ -85,7 +92,7 @@ class PornModerationResultDetail:
         当前支持label列表如下： - normal：正常 - porn：色情 
 
         :param label: The label of this PornModerationResultDetail.
-        :type: str
+        :type label: str
         """
         self._label = label
 

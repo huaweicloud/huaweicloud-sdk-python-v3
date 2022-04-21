@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListEnginesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListEnginesRequest:
     }
 
     def __init__(self, offset=None, limit=None):
-        """ListEnginesRequest - a model defined in huaweicloud sdk"""
+        """ListEnginesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param offset: 分页参数：起始值 [大于等于0] 。默认值是0。
+        :type offset: int
+        :param limit: 分页参数：每页多少条 [大于0且小于等于128]。默认值是128。
+        :type limit: int
+        """
         
         
 
@@ -63,7 +70,7 @@ class ListEnginesRequest:
         分页参数：起始值 [大于等于0] 。默认值是0。
 
         :param offset: The offset of this ListEnginesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -85,7 +92,7 @@ class ListEnginesRequest:
         分页参数：每页多少条 [大于0且小于等于128]。默认值是128。
 
         :param limit: The limit of this ListEnginesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

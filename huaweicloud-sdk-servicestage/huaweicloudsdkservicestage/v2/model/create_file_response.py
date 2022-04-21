@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateFileResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateFileResponse(SdkResponse):
     }
 
     def __init__(self, path=None):
-        """CreateFileResponse - a model defined in huaweicloud sdk"""
+        """CreateFileResponse
+
+        The model defined in huaweicloud sdk
+
+        :param path: 文件路径。
+        :type path: str
+        """
         
         super(CreateFileResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class CreateFileResponse(SdkResponse):
         文件路径。
 
         :param path: The path of this CreateFileResponse.
-        :type: str
+        :type path: str
         """
         self._path = path
 

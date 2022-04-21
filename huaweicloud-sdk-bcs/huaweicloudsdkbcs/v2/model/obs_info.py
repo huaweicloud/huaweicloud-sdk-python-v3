@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OBSInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class OBSInfo:
     }
 
     def __init__(self, name=None, addr=None):
-        """OBSInfo - a model defined in huaweicloud sdk"""
+        """OBSInfo
+
+        The model defined in huaweicloud sdk
+
+        :param name: OBS桶名称
+        :type name: str
+        :param addr: OBS桶地址
+        :type addr: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class OBSInfo:
         OBS桶名称
 
         :param name: The name of this OBSInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -85,7 +92,7 @@ class OBSInfo:
         OBS桶地址
 
         :param addr: The addr of this OBSInfo.
-        :type: str
+        :type addr: str
         """
         self._addr = addr
 

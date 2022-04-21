@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DetectExtentionByIdCardImageResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DetectExtentionByIdCardImageResponse(SdkResponse):
     }
 
     def __init__(self, meta=None, result=None):
-        """DetectExtentionByIdCardImageResponse - a model defined in huaweicloud sdk"""
+        """DetectExtentionByIdCardImageResponse
+
+        The model defined in huaweicloud sdk
+
+        :param meta: 
+        :type meta: :class:`huaweicloudsdkivs.v2.Meta`
+        :param result: 
+        :type result: :class:`huaweicloudsdkivs.v2.IvsExtentionByIdCardImageResponseBodyResult`
+        """
         
         super(DetectExtentionByIdCardImageResponse, self).__init__()
 
@@ -51,7 +58,7 @@ class DetectExtentionByIdCardImageResponse(SdkResponse):
 
 
         :return: The meta of this DetectExtentionByIdCardImageResponse.
-        :rtype: Meta
+        :rtype: :class:`huaweicloudsdkivs.v2.Meta`
         """
         return self._meta
 
@@ -61,7 +68,7 @@ class DetectExtentionByIdCardImageResponse(SdkResponse):
 
 
         :param meta: The meta of this DetectExtentionByIdCardImageResponse.
-        :type: Meta
+        :type meta: :class:`huaweicloudsdkivs.v2.Meta`
         """
         self._meta = meta
 
@@ -71,7 +78,7 @@ class DetectExtentionByIdCardImageResponse(SdkResponse):
 
 
         :return: The result of this DetectExtentionByIdCardImageResponse.
-        :rtype: IvsExtentionByIdCardImageResponseBodyResult
+        :rtype: :class:`huaweicloudsdkivs.v2.IvsExtentionByIdCardImageResponseBodyResult`
         """
         return self._result
 
@@ -81,7 +88,7 @@ class DetectExtentionByIdCardImageResponse(SdkResponse):
 
 
         :param result: The result of this DetectExtentionByIdCardImageResponse.
-        :type: IvsExtentionByIdCardImageResponseBodyResult
+        :type result: :class:`huaweicloudsdkivs.v2.IvsExtentionByIdCardImageResponseBodyResult`
         """
         self._result = result
 

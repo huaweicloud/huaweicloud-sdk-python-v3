@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ProtectedInstanceAddNicRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ProtectedInstanceAddNicRequestBody:
     }
 
     def __init__(self, subnet_id=None, security_groups=None, ip_address=None):
-        """ProtectedInstanceAddNicRequestBody - a model defined in huaweicloud sdk"""
+        """ProtectedInstanceAddNicRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param subnet_id: 添加网卡的子网ID。该参数是子网的network_id，和neutron_network_id的值保持一致。
+        :type subnet_id: str
+        :param security_groups: 添加网卡的安全组信息。默认为Sys-default安全组。
+        :type security_groups: list[:class:`huaweicloudsdksdrs.v1.SecurityGroupsParams`]
+        :param ip_address: IP地址，若无该参数表示自动分配IP地址。
+        :type ip_address: str
+        """
         
         
 
@@ -67,7 +76,7 @@ class ProtectedInstanceAddNicRequestBody:
         添加网卡的子网ID。该参数是子网的network_id，和neutron_network_id的值保持一致。
 
         :param subnet_id: The subnet_id of this ProtectedInstanceAddNicRequestBody.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -78,7 +87,7 @@ class ProtectedInstanceAddNicRequestBody:
         添加网卡的安全组信息。默认为Sys-default安全组。
 
         :return: The security_groups of this ProtectedInstanceAddNicRequestBody.
-        :rtype: list[SecurityGroupsParams]
+        :rtype: list[:class:`huaweicloudsdksdrs.v1.SecurityGroupsParams`]
         """
         return self._security_groups
 
@@ -89,7 +98,7 @@ class ProtectedInstanceAddNicRequestBody:
         添加网卡的安全组信息。默认为Sys-default安全组。
 
         :param security_groups: The security_groups of this ProtectedInstanceAddNicRequestBody.
-        :type: list[SecurityGroupsParams]
+        :type security_groups: list[:class:`huaweicloudsdksdrs.v1.SecurityGroupsParams`]
         """
         self._security_groups = security_groups
 
@@ -111,7 +120,7 @@ class ProtectedInstanceAddNicRequestBody:
         IP地址，若无该参数表示自动分配IP地址。
 
         :param ip_address: The ip_address of this ProtectedInstanceAddNicRequestBody.
-        :type: str
+        :type ip_address: str
         """
         self._ip_address = ip_address
 

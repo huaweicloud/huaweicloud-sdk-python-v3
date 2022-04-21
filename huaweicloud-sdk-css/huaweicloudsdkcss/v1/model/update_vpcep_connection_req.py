@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateVpcepConnectionReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateVpcepConnectionReq:
     }
 
     def __init__(self, action=None, endpoint_id_list=None):
-        """UpdateVpcepConnectionReq - a model defined in huaweicloud sdk"""
+        """UpdateVpcepConnectionReq
+
+        The model defined in huaweicloud sdk
+
+        :param action: 期望的操作行为。
+        :type action: str
+        :param endpoint_id_list: 终端节点ID列表（用户ID）。
+        :type endpoint_id_list: list[str]
+        """
         
         
 
@@ -61,7 +68,7 @@ class UpdateVpcepConnectionReq:
         期望的操作行为。
 
         :param action: The action of this UpdateVpcepConnectionReq.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -83,7 +90,7 @@ class UpdateVpcepConnectionReq:
         终端节点ID列表（用户ID）。
 
         :param endpoint_id_list: The endpoint_id_list of this UpdateVpcepConnectionReq.
-        :type: list[str]
+        :type endpoint_id_list: list[str]
         """
         self._endpoint_id_list = endpoint_id_list
 

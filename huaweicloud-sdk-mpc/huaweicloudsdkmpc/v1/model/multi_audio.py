@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MultiAudio:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class MultiAudio:
     }
 
     def __init__(self, tracks_info=None, audio_files=None, default_language=None):
-        """MultiAudio - a model defined in huaweicloud sdk"""
+        """MultiAudio
+
+        The model defined in huaweicloud sdk
+
+        :param tracks_info: 音轨信息
+        :type tracks_info: list[:class:`huaweicloudsdkmpc.v1.TracksInfo`]
+        :param audio_files: 音频文件
+        :type audio_files: list[:class:`huaweicloudsdkmpc.v1.AudioFile`]
+        :param default_language: 默认语言
+        :type default_language: str
+        """
         
         
 
@@ -57,7 +66,7 @@ class MultiAudio:
         音轨信息
 
         :return: The tracks_info of this MultiAudio.
-        :rtype: list[TracksInfo]
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.TracksInfo`]
         """
         return self._tracks_info
 
@@ -68,7 +77,7 @@ class MultiAudio:
         音轨信息
 
         :param tracks_info: The tracks_info of this MultiAudio.
-        :type: list[TracksInfo]
+        :type tracks_info: list[:class:`huaweicloudsdkmpc.v1.TracksInfo`]
         """
         self._tracks_info = tracks_info
 
@@ -79,7 +88,7 @@ class MultiAudio:
         音频文件
 
         :return: The audio_files of this MultiAudio.
-        :rtype: list[AudioFile]
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.AudioFile`]
         """
         return self._audio_files
 
@@ -90,7 +99,7 @@ class MultiAudio:
         音频文件
 
         :param audio_files: The audio_files of this MultiAudio.
-        :type: list[AudioFile]
+        :type audio_files: list[:class:`huaweicloudsdkmpc.v1.AudioFile`]
         """
         self._audio_files = audio_files
 
@@ -112,7 +121,7 @@ class MultiAudio:
         默认语言
 
         :param default_language: The default_language of this MultiAudio.
-        :type: str
+        :type default_language: str
         """
         self._default_language = default_language
 

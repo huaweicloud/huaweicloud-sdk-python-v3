@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowStructTemplateclusterInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowStructTemplateclusterInfo:
     }
 
     def __init__(self, cluster_name=None, kafka_bootstrap_servers=None, kafka_ssl_enable=None):
-        """ShowStructTemplateclusterInfo - a model defined in huaweicloud sdk"""
+        """ShowStructTemplateclusterInfo
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_name: 测试
+        :type cluster_name: str
+        :param kafka_bootstrap_servers: 测试
+        :type kafka_bootstrap_servers: str
+        :param kafka_ssl_enable: 测试
+        :type kafka_ssl_enable: bool
+        """
         
         
 
@@ -68,7 +77,7 @@ class ShowStructTemplateclusterInfo:
         测试
 
         :param cluster_name: The cluster_name of this ShowStructTemplateclusterInfo.
-        :type: str
+        :type cluster_name: str
         """
         self._cluster_name = cluster_name
 
@@ -90,7 +99,7 @@ class ShowStructTemplateclusterInfo:
         测试
 
         :param kafka_bootstrap_servers: The kafka_bootstrap_servers of this ShowStructTemplateclusterInfo.
-        :type: str
+        :type kafka_bootstrap_servers: str
         """
         self._kafka_bootstrap_servers = kafka_bootstrap_servers
 
@@ -112,7 +121,7 @@ class ShowStructTemplateclusterInfo:
         测试
 
         :param kafka_ssl_enable: The kafka_ssl_enable of this ShowStructTemplateclusterInfo.
-        :type: bool
+        :type kafka_ssl_enable: bool
         """
         self._kafka_ssl_enable = kafka_ssl_enable
 

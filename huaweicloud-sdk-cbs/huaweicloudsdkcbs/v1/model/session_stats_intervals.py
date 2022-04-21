@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SessionStatsIntervals:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class SessionStatsIntervals:
     }
 
     def __init__(self, start=None, session_count=None, user_count=None, avg_request_count=None, avg_session_time=None):
-        """SessionStatsIntervals - a model defined in huaweicloud sdk"""
+        """SessionStatsIntervals
+
+        The model defined in huaweicloud sdk
+
+        :param start: 间隔周期开始时间。
+        :type start: str
+        :param session_count: 间隔周期会话总数。
+        :type session_count: int
+        :param user_count: 间隔周期独立用户个数。
+        :type user_count: int
+        :param avg_request_count: 间隔周期平均会话轮数，保留小数点后三位。
+        :type avg_request_count: float
+        :param avg_session_time: 间隔周期平均会话时长，保留小数点后三位。
+        :type avg_session_time: float
+        """
         
         
 
@@ -73,7 +86,7 @@ class SessionStatsIntervals:
         间隔周期开始时间。
 
         :param start: The start of this SessionStatsIntervals.
-        :type: str
+        :type start: str
         """
         self._start = start
 
@@ -95,7 +108,7 @@ class SessionStatsIntervals:
         间隔周期会话总数。
 
         :param session_count: The session_count of this SessionStatsIntervals.
-        :type: int
+        :type session_count: int
         """
         self._session_count = session_count
 
@@ -117,7 +130,7 @@ class SessionStatsIntervals:
         间隔周期独立用户个数。
 
         :param user_count: The user_count of this SessionStatsIntervals.
-        :type: int
+        :type user_count: int
         """
         self._user_count = user_count
 
@@ -139,7 +152,7 @@ class SessionStatsIntervals:
         间隔周期平均会话轮数，保留小数点后三位。
 
         :param avg_request_count: The avg_request_count of this SessionStatsIntervals.
-        :type: float
+        :type avg_request_count: float
         """
         self._avg_request_count = avg_request_count
 
@@ -161,7 +174,7 @@ class SessionStatsIntervals:
         间隔周期平均会话时长，保留小数点后三位。
 
         :param avg_session_time: The avg_session_time of this SessionStatsIntervals.
-        :type: float
+        :type avg_session_time: float
         """
         self._avg_session_time = avg_session_time
 

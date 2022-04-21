@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TempContentInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class TempContentInfo:
     }
 
     def __init__(self, content_id=None, content=None, index=None, data=None, data_type=None):
-        """TempContentInfo - a model defined in huaweicloud sdk"""
+        """TempContentInfo
+
+        The model defined in huaweicloud sdk
+
+        :param content_id: content_id
+        :type content_id: int
+        :param content: content
+        :type content: list[:class:`huaweicloudsdkcpts.v1.Content`]
+        :param index: index
+        :type index: int
+        :param data: data
+        :type data: str
+        :param data_type: data_type
+        :type data_type: int
+        """
         
         
 
@@ -78,7 +91,7 @@ class TempContentInfo:
         content_id
 
         :param content_id: The content_id of this TempContentInfo.
-        :type: int
+        :type content_id: int
         """
         self._content_id = content_id
 
@@ -89,7 +102,7 @@ class TempContentInfo:
         content
 
         :return: The content of this TempContentInfo.
-        :rtype: list[Content]
+        :rtype: list[:class:`huaweicloudsdkcpts.v1.Content`]
         """
         return self._content
 
@@ -100,7 +113,7 @@ class TempContentInfo:
         content
 
         :param content: The content of this TempContentInfo.
-        :type: list[Content]
+        :type content: list[:class:`huaweicloudsdkcpts.v1.Content`]
         """
         self._content = content
 
@@ -122,7 +135,7 @@ class TempContentInfo:
         index
 
         :param index: The index of this TempContentInfo.
-        :type: int
+        :type index: int
         """
         self._index = index
 
@@ -144,7 +157,7 @@ class TempContentInfo:
         data
 
         :param data: The data of this TempContentInfo.
-        :type: str
+        :type data: str
         """
         self._data = data
 
@@ -166,7 +179,7 @@ class TempContentInfo:
         data_type
 
         :param data_type: The data_type of this TempContentInfo.
-        :type: int
+        :type data_type: int
         """
         self._data_type = data_type
 

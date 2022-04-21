@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ServerNicSecurityGroup:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ServerNicSecurityGroup:
     }
 
     def __init__(self, id=None):
-        """ServerNicSecurityGroup - a model defined in huaweicloud sdk"""
+        """ServerNicSecurityGroup
+
+        The model defined in huaweicloud sdk
+
+        :param id: 安全组ID。
+        :type id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ServerNicSecurityGroup:
         安全组ID。
 
         :param id: The id of this ServerNicSecurityGroup.
-        :type: str
+        :type id: str
         """
         self._id = id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListExtendsParamsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListExtendsParamsRequest:
     }
 
     def __init__(self, business_type_id=None, incident_sub_type_id=None, product_category_id=None, x_site=None, x_language=None, x_time_zone=None):
-        """ListExtendsParamsRequest - a model defined in huaweicloud sdk"""
+        """ListExtendsParamsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param business_type_id: 业务类型id
+        :type business_type_id: str
+        :param incident_sub_type_id: 工单子类型id
+        :type incident_sub_type_id: str
+        :param product_category_id: 产品类型id
+        :type product_category_id: str
+        :param x_site: 对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
+        :type x_site: int
+        :param x_language: 语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
+        :type x_language: str
+        :param x_time_zone: 环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
+        :type x_time_zone: str
+        """
         
         
 
@@ -82,7 +97,7 @@ class ListExtendsParamsRequest:
         业务类型id
 
         :param business_type_id: The business_type_id of this ListExtendsParamsRequest.
-        :type: str
+        :type business_type_id: str
         """
         self._business_type_id = business_type_id
 
@@ -104,7 +119,7 @@ class ListExtendsParamsRequest:
         工单子类型id
 
         :param incident_sub_type_id: The incident_sub_type_id of this ListExtendsParamsRequest.
-        :type: str
+        :type incident_sub_type_id: str
         """
         self._incident_sub_type_id = incident_sub_type_id
 
@@ -126,7 +141,7 @@ class ListExtendsParamsRequest:
         产品类型id
 
         :param product_category_id: The product_category_id of this ListExtendsParamsRequest.
-        :type: str
+        :type product_category_id: str
         """
         self._product_category_id = product_category_id
 
@@ -148,7 +163,7 @@ class ListExtendsParamsRequest:
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
         :param x_site: The x_site of this ListExtendsParamsRequest.
-        :type: int
+        :type x_site: int
         """
         self._x_site = x_site
 
@@ -170,7 +185,7 @@ class ListExtendsParamsRequest:
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
         :param x_language: The x_language of this ListExtendsParamsRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -192,7 +207,7 @@ class ListExtendsParamsRequest:
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 
         :param x_time_zone: The x_time_zone of this ListExtendsParamsRequest.
-        :type: str
+        :type x_time_zone: str
         """
         self._x_time_zone = x_time_zone
 

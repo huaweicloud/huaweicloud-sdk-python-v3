@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAuditlogsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListAuditlogsRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, start_time=None, end_time=None, offset=None, limit=None):
-        """ListAuditlogsRequest - a model defined in huaweicloud sdk"""
+        """ListAuditlogsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言
+        :type x_language: str
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param start_time: 查询开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        :type start_time: str
+        :param end_time: 查询结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”，且大于查询开始时间，时间跨度不超过30天。  其中，T指某个时间的开始，Z指时区偏移量，例如北京时间偏移显示为+0800。
+        :type end_time: str
+        :param offset: 索引位置，偏移量。  从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
+        :type offset: int
+        :param limit: 查询记录数。取值范围[1, 50]。
+        :type limit: int
+        """
         
         
 
@@ -78,7 +93,7 @@ class ListAuditlogsRequest:
         语言
 
         :param x_language: The x_language of this ListAuditlogsRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -100,7 +115,7 @@ class ListAuditlogsRequest:
         实例ID。
 
         :param instance_id: The instance_id of this ListAuditlogsRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -122,7 +137,7 @@ class ListAuditlogsRequest:
         查询开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
         :param start_time: The start_time of this ListAuditlogsRequest.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -144,7 +159,7 @@ class ListAuditlogsRequest:
         查询结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”，且大于查询开始时间，时间跨度不超过30天。  其中，T指某个时间的开始，Z指时区偏移量，例如北京时间偏移显示为+0800。
 
         :param end_time: The end_time of this ListAuditlogsRequest.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -166,7 +181,7 @@ class ListAuditlogsRequest:
         索引位置，偏移量。  从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
         :param offset: The offset of this ListAuditlogsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -188,7 +203,7 @@ class ListAuditlogsRequest:
         查询记录数。取值范围[1, 50]。
 
         :param limit: The limit of this ListAuditlogsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

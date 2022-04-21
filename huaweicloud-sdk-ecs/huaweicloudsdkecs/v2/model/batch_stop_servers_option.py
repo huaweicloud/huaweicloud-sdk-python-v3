@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchStopServersOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchStopServersOption:
     }
 
     def __init__(self, servers=None, type=None):
-        """BatchStopServersOption - a model defined in huaweicloud sdk"""
+        """BatchStopServersOption
+
+        The model defined in huaweicloud sdk
+
+        :param servers: 标记为启动云服务器操作。
+        :type servers: list[:class:`huaweicloudsdkecs.v2.ServerId`]
+        :param type: 关机类型，默认为SOFT：  - SOFT：普通关机（默认）。 - HARD：强制关机。
+        :type type: str
+        """
         
         
 
@@ -51,7 +58,7 @@ class BatchStopServersOption:
         标记为启动云服务器操作。
 
         :return: The servers of this BatchStopServersOption.
-        :rtype: list[ServerId]
+        :rtype: list[:class:`huaweicloudsdkecs.v2.ServerId`]
         """
         return self._servers
 
@@ -62,7 +69,7 @@ class BatchStopServersOption:
         标记为启动云服务器操作。
 
         :param servers: The servers of this BatchStopServersOption.
-        :type: list[ServerId]
+        :type servers: list[:class:`huaweicloudsdkecs.v2.ServerId`]
         """
         self._servers = servers
 
@@ -84,7 +91,7 @@ class BatchStopServersOption:
         关机类型，默认为SOFT：  - SOFT：普通关机（默认）。 - HARD：强制关机。
 
         :param type: The type of this BatchStopServersOption.
-        :type: str
+        :type type: str
         """
         self._type = type
 

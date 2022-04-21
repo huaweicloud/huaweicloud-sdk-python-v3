@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateTempRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class UpdateTempRequestBody:
     }
 
     def __init__(self, id=None, project_id=None, name=None, temp_type=None, description=None, for_loop_params=None, enable_pre=None, contents=None):
-        """UpdateTempRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateTempRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param id: id
+        :type id: int
+        :param project_id: project_id
+        :type project_id: int
+        :param name: name
+        :type name: str
+        :param temp_type: temp_type
+        :type temp_type: int
+        :param description: description
+        :type description: str
+        :param for_loop_params: for_loop_params
+        :type for_loop_params: list[object]
+        :param enable_pre: enable_pre
+        :type enable_pre: bool
+        :param contents: contents
+        :type contents: list[:class:`huaweicloudsdkcpts.v1.TempContentInfo`]
+        """
         
         
 
@@ -90,7 +109,7 @@ class UpdateTempRequestBody:
         id
 
         :param id: The id of this UpdateTempRequestBody.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -112,7 +131,7 @@ class UpdateTempRequestBody:
         project_id
 
         :param project_id: The project_id of this UpdateTempRequestBody.
-        :type: int
+        :type project_id: int
         """
         self._project_id = project_id
 
@@ -134,7 +153,7 @@ class UpdateTempRequestBody:
         name
 
         :param name: The name of this UpdateTempRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -156,7 +175,7 @@ class UpdateTempRequestBody:
         temp_type
 
         :param temp_type: The temp_type of this UpdateTempRequestBody.
-        :type: int
+        :type temp_type: int
         """
         self._temp_type = temp_type
 
@@ -178,7 +197,7 @@ class UpdateTempRequestBody:
         description
 
         :param description: The description of this UpdateTempRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -200,7 +219,7 @@ class UpdateTempRequestBody:
         for_loop_params
 
         :param for_loop_params: The for_loop_params of this UpdateTempRequestBody.
-        :type: list[object]
+        :type for_loop_params: list[object]
         """
         self._for_loop_params = for_loop_params
 
@@ -222,7 +241,7 @@ class UpdateTempRequestBody:
         enable_pre
 
         :param enable_pre: The enable_pre of this UpdateTempRequestBody.
-        :type: bool
+        :type enable_pre: bool
         """
         self._enable_pre = enable_pre
 
@@ -233,7 +252,7 @@ class UpdateTempRequestBody:
         contents
 
         :return: The contents of this UpdateTempRequestBody.
-        :rtype: list[TempContentInfo]
+        :rtype: list[:class:`huaweicloudsdkcpts.v1.TempContentInfo`]
         """
         return self._contents
 
@@ -244,7 +263,7 @@ class UpdateTempRequestBody:
         contents
 
         :param contents: The contents of this UpdateTempRequestBody.
-        :type: list[TempContentInfo]
+        :type contents: list[:class:`huaweicloudsdkcpts.v1.TempContentInfo`]
         """
         self._contents = contents
 

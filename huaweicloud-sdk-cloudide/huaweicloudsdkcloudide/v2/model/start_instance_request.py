@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StartInstanceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class StartInstanceRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """StartInstanceRequest - a model defined in huaweicloud sdk"""
+        """StartInstanceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例id
+        :type instance_id: str
+        :param body: Body of the StartInstanceRequest
+        :type body: :class:`huaweicloudsdkcloudide.v2.StartInstanceParam`
+        """
         
         
 
@@ -62,7 +69,7 @@ class StartInstanceRequest:
         实例id
 
         :param instance_id: The instance_id of this StartInstanceRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -72,7 +79,7 @@ class StartInstanceRequest:
 
 
         :return: The body of this StartInstanceRequest.
-        :rtype: StartInstanceParam
+        :rtype: :class:`huaweicloudsdkcloudide.v2.StartInstanceParam`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class StartInstanceRequest:
 
 
         :param body: The body of this StartInstanceRequest.
-        :type: StartInstanceParam
+        :type body: :class:`huaweicloudsdkcloudide.v2.StartInstanceParam`
         """
         self._body = body
 

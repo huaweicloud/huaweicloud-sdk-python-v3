@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Job:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class Job:
     }
 
     def __init__(self, job_id=None, status=None, job_type=None, job_name=None, related_graph=None, begin_time=None, end_time=None, job_detail=None, fail_reason=None, job_progress=None):
-        """Job - a model defined in huaweicloud sdk"""
+        """Job
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 任务ID。
+        :type job_id: str
+        :param status: 任务状态。  - pending:等待中 - running:运行中 - success:成功 - failed:失败
+        :type status: str
+        :param job_type: 任务类型。
+        :type job_type: str
+        :param job_name: 任务名称。
+        :type job_name: str
+        :param related_graph: 关联图名称。
+        :type related_graph: str
+        :param begin_time: 任务开始时间，格式为UTC,\&quot;yyyy-MM-dd&#39;T&#39;HH:mm:ss\&quot;
+        :type begin_time: str
+        :param end_time: 任务结束时间，格式为UTC,\&quot;yyyy-MM-dd&#39;T&#39;HH:mm:ss\&quot;
+        :type end_time: str
+        :param job_detail: 
+        :type job_detail: :class:`huaweicloudsdkges.v1.JobDetail`
+        :param fail_reason: 任务失败原因
+        :type fail_reason: str
+        :param job_progress: 任务执行进度，预留字段，暂未使用。
+        :type job_progress: float
+        """
         
         
 
@@ -98,7 +121,7 @@ class Job:
         任务ID。
 
         :param job_id: The job_id of this Job.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -120,7 +143,7 @@ class Job:
         任务状态。  - pending:等待中 - running:运行中 - success:成功 - failed:失败
 
         :param status: The status of this Job.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -142,7 +165,7 @@ class Job:
         任务类型。
 
         :param job_type: The job_type of this Job.
-        :type: str
+        :type job_type: str
         """
         self._job_type = job_type
 
@@ -164,7 +187,7 @@ class Job:
         任务名称。
 
         :param job_name: The job_name of this Job.
-        :type: str
+        :type job_name: str
         """
         self._job_name = job_name
 
@@ -186,7 +209,7 @@ class Job:
         关联图名称。
 
         :param related_graph: The related_graph of this Job.
-        :type: str
+        :type related_graph: str
         """
         self._related_graph = related_graph
 
@@ -208,7 +231,7 @@ class Job:
         任务开始时间，格式为UTC,\"yyyy-MM-dd'T'HH:mm:ss\"
 
         :param begin_time: The begin_time of this Job.
-        :type: str
+        :type begin_time: str
         """
         self._begin_time = begin_time
 
@@ -230,7 +253,7 @@ class Job:
         任务结束时间，格式为UTC,\"yyyy-MM-dd'T'HH:mm:ss\"
 
         :param end_time: The end_time of this Job.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -240,7 +263,7 @@ class Job:
 
 
         :return: The job_detail of this Job.
-        :rtype: JobDetail
+        :rtype: :class:`huaweicloudsdkges.v1.JobDetail`
         """
         return self._job_detail
 
@@ -250,7 +273,7 @@ class Job:
 
 
         :param job_detail: The job_detail of this Job.
-        :type: JobDetail
+        :type job_detail: :class:`huaweicloudsdkges.v1.JobDetail`
         """
         self._job_detail = job_detail
 
@@ -272,7 +295,7 @@ class Job:
         任务失败原因
 
         :param fail_reason: The fail_reason of this Job.
-        :type: str
+        :type fail_reason: str
         """
         self._fail_reason = fail_reason
 
@@ -294,7 +317,7 @@ class Job:
         任务执行进度，预留字段，暂未使用。
 
         :param job_progress: The job_progress of this Job.
-        :type: float
+        :type job_progress: float
         """
         self._job_progress = job_progress
 

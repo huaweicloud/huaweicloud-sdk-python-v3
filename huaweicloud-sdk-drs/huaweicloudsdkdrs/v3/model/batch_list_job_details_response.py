@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchListJobDetailsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchListJobDetailsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, results=None):
-        """BatchListJobDetailsResponse - a model defined in huaweicloud sdk"""
+        """BatchListJobDetailsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 任务数量
+        :type count: int
+        :param results: 任务详细信息
+        :type results: list[:class:`huaweicloudsdkdrs.v3.QueryJobResp`]
+        """
         
         super(BatchListJobDetailsResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class BatchListJobDetailsResponse(SdkResponse):
         任务数量
 
         :param count: The count of this BatchListJobDetailsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -74,7 +81,7 @@ class BatchListJobDetailsResponse(SdkResponse):
         任务详细信息
 
         :return: The results of this BatchListJobDetailsResponse.
-        :rtype: list[QueryJobResp]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.QueryJobResp`]
         """
         return self._results
 
@@ -85,7 +92,7 @@ class BatchListJobDetailsResponse(SdkResponse):
         任务详细信息
 
         :param results: The results of this BatchListJobDetailsResponse.
-        :type: list[QueryJobResp]
+        :type results: list[:class:`huaweicloudsdkdrs.v3.QueryJobResp`]
         """
         self._results = results
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DetachProtectedInstanceReplicationRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DetachProtectedInstanceReplicationRequest:
     }
 
     def __init__(self, protected_instance_id=None, replication_id=None):
-        """DetachProtectedInstanceReplicationRequest - a model defined in huaweicloud sdk"""
+        """DetachProtectedInstanceReplicationRequest
+
+        The model defined in huaweicloud sdk
+
+        :param protected_instance_id: 保护实例的ID。
+        :type protected_instance_id: str
+        :param replication_id: 复制对的ID。
+        :type replication_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class DetachProtectedInstanceReplicationRequest:
         保护实例的ID。
 
         :param protected_instance_id: The protected_instance_id of this DetachProtectedInstanceReplicationRequest.
-        :type: str
+        :type protected_instance_id: str
         """
         self._protected_instance_id = protected_instance_id
 
@@ -83,7 +90,7 @@ class DetachProtectedInstanceReplicationRequest:
         复制对的ID。
 
         :param replication_id: The replication_id of this DetachProtectedInstanceReplicationRequest.
-        :type: str
+        :type replication_id: str
         """
         self._replication_id = replication_id
 

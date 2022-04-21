@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTemplatesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, total=None, page_number=None, page_size=None, content=None):
-        """ListTemplatesResponse - a model defined in huaweicloud sdk"""
+        """ListTemplatesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 总数
+        :type total: int
+        :param page_number: 页码数
+        :type page_number: int
+        :param page_size: 每页显示数
+        :type page_size: int
+        :param content: 模板数据,list类型数据
+        :type content: list[:class:`huaweicloudsdkcloudpipeline.v2.TemplateView`]
+        """
         
         super(ListTemplatesResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class ListTemplatesResponse(SdkResponse):
         总数
 
         :param total: The total of this ListTemplatesResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -95,7 +106,7 @@ class ListTemplatesResponse(SdkResponse):
         页码数
 
         :param page_number: The page_number of this ListTemplatesResponse.
-        :type: int
+        :type page_number: int
         """
         self._page_number = page_number
 
@@ -117,7 +128,7 @@ class ListTemplatesResponse(SdkResponse):
         每页显示数
 
         :param page_size: The page_size of this ListTemplatesResponse.
-        :type: int
+        :type page_size: int
         """
         self._page_size = page_size
 
@@ -128,7 +139,7 @@ class ListTemplatesResponse(SdkResponse):
         模板数据,list类型数据
 
         :return: The content of this ListTemplatesResponse.
-        :rtype: list[TemplateView]
+        :rtype: list[:class:`huaweicloudsdkcloudpipeline.v2.TemplateView`]
         """
         return self._content
 
@@ -139,7 +150,7 @@ class ListTemplatesResponse(SdkResponse):
         模板数据,list类型数据
 
         :param content: The content of this ListTemplatesResponse.
-        :type: list[TemplateView]
+        :type content: list[:class:`huaweicloudsdkcloudpipeline.v2.TemplateView`]
         """
         self._content = content
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateBucketAuthorizedReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateBucketAuthorizedReq:
     }
 
     def __init__(self, bucket=None, operation=None):
-        """UpdateBucketAuthorizedReq - a model defined in huaweicloud sdk"""
+        """UpdateBucketAuthorizedReq
+
+        The model defined in huaweicloud sdk
+
+        :param bucket: OBS桶名称。
+        :type bucket: str
+        :param operation: 是否进行桶授权。  取值如下： - 0：取消授权。 - 1：授权。
+        :type operation: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class UpdateBucketAuthorizedReq:
         OBS桶名称。
 
         :param bucket: The bucket of this UpdateBucketAuthorizedReq.
-        :type: str
+        :type bucket: str
         """
         self._bucket = bucket
 
@@ -83,7 +90,7 @@ class UpdateBucketAuthorizedReq:
         是否进行桶授权。  取值如下： - 0：取消授权。 - 1：授权。
 
         :param operation: The operation of this UpdateBucketAuthorizedReq.
-        :type: str
+        :type operation: str
         """
         self._operation = operation
 

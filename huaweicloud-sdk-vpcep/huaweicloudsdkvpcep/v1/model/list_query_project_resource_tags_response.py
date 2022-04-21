@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListQueryProjectResourceTagsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListQueryProjectResourceTagsResponse(SdkResponse):
     }
 
     def __init__(self, tags=None):
-        """ListQueryProjectResourceTagsResponse - a model defined in huaweicloud sdk"""
+        """ListQueryProjectResourceTagsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param tags: 包含标签，最多包含10个key，每 个key下面的value最多10个，每 个key对应的value可以为空数组但 结构体不能缺失。Key不能重复， 同一个key中values不能重复。结 果返回包含所有标签的资源列表， key之间是与的关系，key-value结 构中value是或的关系。无tag过滤 条件时返回全量数据。
+        :type tags: list[:class:`huaweicloudsdkvpcep.v1.TagValuesList`]
+        """
         
         super(ListQueryProjectResourceTagsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListQueryProjectResourceTagsResponse(SdkResponse):
         包含标签，最多包含10个key，每 个key下面的value最多10个，每 个key对应的value可以为空数组但 结构体不能缺失。Key不能重复， 同一个key中values不能重复。结 果返回包含所有标签的资源列表， key之间是与的关系，key-value结 构中value是或的关系。无tag过滤 条件时返回全量数据。
 
         :return: The tags of this ListQueryProjectResourceTagsResponse.
-        :rtype: list[TagValuesList]
+        :rtype: list[:class:`huaweicloudsdkvpcep.v1.TagValuesList`]
         """
         return self._tags
 
@@ -58,7 +63,7 @@ class ListQueryProjectResourceTagsResponse(SdkResponse):
         包含标签，最多包含10个key，每 个key下面的value最多10个，每 个key对应的value可以为空数组但 结构体不能缺失。Key不能重复， 同一个key中values不能重复。结 果返回包含所有标签的资源列表， key之间是与的关系，key-value结 构中value是或的关系。无tag过滤 条件时返回全量数据。
 
         :param tags: The tags of this ListQueryProjectResourceTagsResponse.
-        :type: list[TagValuesList]
+        :type tags: list[:class:`huaweicloudsdkvpcep.v1.TagValuesList`]
         """
         self._tags = tags
 

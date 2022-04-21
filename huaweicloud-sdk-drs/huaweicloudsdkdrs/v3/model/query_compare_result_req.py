@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryCompareResultReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class QueryCompareResultReq:
     }
 
     def __init__(self, job_id=None, object_level_compare_id=None, line_compare_id=None, content_compare_id=None, current_page=None, per_page=None):
-        """QueryCompareResultReq - a model defined in huaweicloud sdk"""
+        """QueryCompareResultReq
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 任务id。
+        :type job_id: str
+        :param object_level_compare_id: 请求查询结果的对象级对比任务id。
+        :type object_level_compare_id: str
+        :param line_compare_id: 请求查询结果的行对比任务id。
+        :type line_compare_id: str
+        :param content_compare_id: 请求查询结果的内容对比任务id。
+        :type content_compare_id: str
+        :param current_page: 分页查询的当前页码，对查询对比任务的结果生效。
+        :type current_page: int
+        :param per_page: 分页查询的每页个数，对查询对比任务的结果生效。
+        :type per_page: int
+        """
         
         
 
@@ -80,7 +95,7 @@ class QueryCompareResultReq:
         任务id。
 
         :param job_id: The job_id of this QueryCompareResultReq.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -102,7 +117,7 @@ class QueryCompareResultReq:
         请求查询结果的对象级对比任务id。
 
         :param object_level_compare_id: The object_level_compare_id of this QueryCompareResultReq.
-        :type: str
+        :type object_level_compare_id: str
         """
         self._object_level_compare_id = object_level_compare_id
 
@@ -124,7 +139,7 @@ class QueryCompareResultReq:
         请求查询结果的行对比任务id。
 
         :param line_compare_id: The line_compare_id of this QueryCompareResultReq.
-        :type: str
+        :type line_compare_id: str
         """
         self._line_compare_id = line_compare_id
 
@@ -146,7 +161,7 @@ class QueryCompareResultReq:
         请求查询结果的内容对比任务id。
 
         :param content_compare_id: The content_compare_id of this QueryCompareResultReq.
-        :type: str
+        :type content_compare_id: str
         """
         self._content_compare_id = content_compare_id
 
@@ -168,7 +183,7 @@ class QueryCompareResultReq:
         分页查询的当前页码，对查询对比任务的结果生效。
 
         :param current_page: The current_page of this QueryCompareResultReq.
-        :type: int
+        :type current_page: int
         """
         self._current_page = current_page
 
@@ -190,7 +205,7 @@ class QueryCompareResultReq:
         分页查询的每页个数，对查询对比任务的结果生效。
 
         :param per_page: The per_page of this QueryCompareResultReq.
-        :type: int
+        :type per_page: int
         """
         self._per_page = per_page
 

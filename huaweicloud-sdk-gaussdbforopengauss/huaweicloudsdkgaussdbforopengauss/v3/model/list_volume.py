@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListVolume:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListVolume:
     }
 
     def __init__(self, type=None, size=None):
-        """ListVolume - a model defined in huaweicloud sdk"""
+        """ListVolume
+
+        The model defined in huaweicloud sdk
+
+        :param type: 磁盘类型。
+        :type type: str
+        :param size: 磁盘大小。
+        :type size: int
+        """
         
         
 
@@ -61,7 +68,7 @@ class ListVolume:
         磁盘类型。
 
         :param type: The type of this ListVolume.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -83,7 +90,7 @@ class ListVolume:
         磁盘大小。
 
         :param size: The size of this ListVolume.
-        :type: int
+        :type size: int
         """
         self._size = size
 

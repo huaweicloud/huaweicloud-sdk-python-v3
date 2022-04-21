@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDeviceMessageRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowDeviceMessageRequest:
     }
 
     def __init__(self, device_id=None, instance_id=None, message_id=None):
-        """ShowDeviceMessageRequest - a model defined in huaweicloud sdk"""
+        """ShowDeviceMessageRequest
+
+        The model defined in huaweicloud sdk
+
+        :param device_id: **参数说明**：下发消息的设备ID，用于唯一标识一个设备，在注册设备时由物联网平台分配获得。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
+        :type device_id: str
+        :param instance_id: **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
+        :type instance_id: str
+        :param message_id: **参数说明**：下发消息的消息ID，用于唯一标识一个消息，在消息下发时由物联网平台分配获得。 **取值范围**：长度不超过100，只允许字母、数字、下划线（_）、连接符（-）的组合。
+        :type message_id: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class ShowDeviceMessageRequest:
         **参数说明**：下发消息的设备ID，用于唯一标识一个设备，在注册设备时由物联网平台分配获得。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :param device_id: The device_id of this ShowDeviceMessageRequest.
-        :type: str
+        :type device_id: str
         """
         self._device_id = device_id
 
@@ -88,7 +97,7 @@ class ShowDeviceMessageRequest:
         **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
         :param instance_id: The instance_id of this ShowDeviceMessageRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -110,7 +119,7 @@ class ShowDeviceMessageRequest:
         **参数说明**：下发消息的消息ID，用于唯一标识一个消息，在消息下发时由物联网平台分配获得。 **取值范围**：长度不超过100，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :param message_id: The message_id of this ShowDeviceMessageRequest.
-        :type: str
+        :type message_id: str
         """
         self._message_id = message_id
 

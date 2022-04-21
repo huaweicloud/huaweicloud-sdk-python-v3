@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateApiGroupV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateApiGroupV2Request:
     }
 
     def __init__(self, instance_id=None, group_id=None, body=None):
-        """UpdateApiGroupV2Request - a model defined in huaweicloud sdk"""
+        """UpdateApiGroupV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param group_id: 分组的编号
+        :type group_id: str
+        :param body: Body of the UpdateApiGroupV2Request
+        :type body: :class:`huaweicloudsdkroma.v2.ApiGroupBase`
+        """
         
         
 
@@ -66,7 +75,7 @@ class UpdateApiGroupV2Request:
         实例ID
 
         :param instance_id: The instance_id of this UpdateApiGroupV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -88,7 +97,7 @@ class UpdateApiGroupV2Request:
         分组的编号
 
         :param group_id: The group_id of this UpdateApiGroupV2Request.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -98,7 +107,7 @@ class UpdateApiGroupV2Request:
 
 
         :return: The body of this UpdateApiGroupV2Request.
-        :rtype: ApiGroupBase
+        :rtype: :class:`huaweicloudsdkroma.v2.ApiGroupBase`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class UpdateApiGroupV2Request:
 
 
         :param body: The body of this UpdateApiGroupV2Request.
-        :type: ApiGroupBase
+        :type body: :class:`huaweicloudsdkroma.v2.ApiGroupBase`
         """
         self._body = body
 

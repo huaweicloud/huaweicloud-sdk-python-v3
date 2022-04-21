@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListOpRecordResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListOpRecordResponse(SdkResponse):
     }
 
     def __init__(self, count=None, operation_records=None):
-        """ListOpRecordResponse - a model defined in huaweicloud sdk"""
+        """ListOpRecordResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 操作记录总数
+        :type count: int
+        :param operation_records: 操作记录列表
+        :type operation_records: list[:class:`huaweicloudsdkbcs.v2.RecordDetailInfo`]
+        """
         
         super(ListOpRecordResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListOpRecordResponse(SdkResponse):
         操作记录总数
 
         :param count: The count of this ListOpRecordResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -74,7 +81,7 @@ class ListOpRecordResponse(SdkResponse):
         操作记录列表
 
         :return: The operation_records of this ListOpRecordResponse.
-        :rtype: list[RecordDetailInfo]
+        :rtype: list[:class:`huaweicloudsdkbcs.v2.RecordDetailInfo`]
         """
         return self._operation_records
 
@@ -85,7 +92,7 @@ class ListOpRecordResponse(SdkResponse):
         操作记录列表
 
         :param operation_records: The operation_records of this ListOpRecordResponse.
-        :type: list[RecordDetailInfo]
+        :type operation_records: list[:class:`huaweicloudsdkbcs.v2.RecordDetailInfo`]
         """
         self._operation_records = operation_records
 

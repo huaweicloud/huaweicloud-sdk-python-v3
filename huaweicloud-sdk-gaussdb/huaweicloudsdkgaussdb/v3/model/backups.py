@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Backups:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class Backups:
     }
 
     def __init__(self, id=None, name=None, begin_time=None, end_time=None, status=None, take_up_time=None, type=None, size=None, datastore=None, instance_id=None, backup_level=None, description=None):
-        """Backups - a model defined in huaweicloud sdk"""
+        """Backups
+
+        The model defined in huaweicloud sdk
+
+        :param id: 备份ID。
+        :type id: str
+        :param name: 备份名称。
+        :type name: str
+        :param begin_time: 备份开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        :type begin_time: str
+        :param end_time: 备份结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        :type end_time: str
+        :param status: 备份状态
+        :type status: str
+        :param take_up_time: 备份花费时间(单位：minutes)
+        :type take_up_time: int
+        :param type: 备份类型
+        :type type: str
+        :param size: 备份大小，(单位：MB)
+        :type size: int
+        :param datastore: 
+        :type datastore: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastore`
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param backup_level: 备份级别。当开启一级备份开关时，返回该参数。
+        :type backup_level: str
+        :param description: 备份文件描述信息
+        :type description: str
+        """
         
         
 
@@ -113,7 +140,7 @@ class Backups:
         备份ID。
 
         :param id: The id of this Backups.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -135,7 +162,7 @@ class Backups:
         备份名称。
 
         :param name: The name of this Backups.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -157,7 +184,7 @@ class Backups:
         备份开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
         :param begin_time: The begin_time of this Backups.
-        :type: str
+        :type begin_time: str
         """
         self._begin_time = begin_time
 
@@ -179,7 +206,7 @@ class Backups:
         备份结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
         :param end_time: The end_time of this Backups.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -201,7 +228,7 @@ class Backups:
         备份状态
 
         :param status: The status of this Backups.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -223,7 +250,7 @@ class Backups:
         备份花费时间(单位：minutes)
 
         :param take_up_time: The take_up_time of this Backups.
-        :type: int
+        :type take_up_time: int
         """
         self._take_up_time = take_up_time
 
@@ -245,7 +272,7 @@ class Backups:
         备份类型
 
         :param type: The type of this Backups.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -267,7 +294,7 @@ class Backups:
         备份大小，(单位：MB)
 
         :param size: The size of this Backups.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -277,7 +304,7 @@ class Backups:
 
 
         :return: The datastore of this Backups.
-        :rtype: MysqlDatastore
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastore`
         """
         return self._datastore
 
@@ -287,7 +314,7 @@ class Backups:
 
 
         :param datastore: The datastore of this Backups.
-        :type: MysqlDatastore
+        :type datastore: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastore`
         """
         self._datastore = datastore
 
@@ -309,7 +336,7 @@ class Backups:
         实例ID。
 
         :param instance_id: The instance_id of this Backups.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -331,7 +358,7 @@ class Backups:
         备份级别。当开启一级备份开关时，返回该参数。
 
         :param backup_level: The backup_level of this Backups.
-        :type: str
+        :type backup_level: str
         """
         self._backup_level = backup_level
 
@@ -353,7 +380,7 @@ class Backups:
         备份文件描述信息
 
         :param description: The description of this Backups.
-        :type: str
+        :type description: str
         """
         self._description = description
 

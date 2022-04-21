@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListResScenesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListResScenesRequest:
     }
 
     def __init__(self, content_type=None, workspace_id=None, category=None):
-        """ListResScenesRequest - a model defined in huaweicloud sdk"""
+        """ListResScenesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param content_type: 内容类型，取值为application/json。
+        :type content_type: str
+        :param workspace_id: 工作空间id。
+        :type workspace_id: str
+        :param category: 场景类型： - customize，自定义推荐 - intelligent，智能场景
+        :type category: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class ListResScenesRequest:
         内容类型，取值为application/json。
 
         :param content_type: The content_type of this ListResScenesRequest.
-        :type: str
+        :type content_type: str
         """
         self._content_type = content_type
 
@@ -87,7 +96,7 @@ class ListResScenesRequest:
         工作空间id。
 
         :param workspace_id: The workspace_id of this ListResScenesRequest.
-        :type: str
+        :type workspace_id: str
         """
         self._workspace_id = workspace_id
 
@@ -109,7 +118,7 @@ class ListResScenesRequest:
         场景类型： - customize，自定义推荐 - intelligent，智能场景
 
         :param category: The category of this ListResScenesRequest.
-        :type: str
+        :type category: str
         """
         self._category = category
 

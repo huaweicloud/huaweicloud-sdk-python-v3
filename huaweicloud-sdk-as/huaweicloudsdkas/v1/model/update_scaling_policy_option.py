@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateScalingPolicyOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class UpdateScalingPolicyOption:
     }
 
     def __init__(self, scaling_policy_name=None, scaling_policy_type=None, alarm_id=None, scheduled_policy=None, scaling_policy_action=None, cool_down_time=None):
-        """UpdateScalingPolicyOption - a model defined in huaweicloud sdk"""
+        """UpdateScalingPolicyOption
+
+        The model defined in huaweicloud sdk
+
+        :param scaling_policy_name: 策略名称(1-64字符)，可以用中文、字母、数字、下划线、中划线的组合。
+        :type scaling_policy_name: str
+        :param scaling_policy_type: 策略类型。告警策略：ALARM（与alarm_id对应）；定时策略：SCHEDULED（与scheduled_policy对应）；周期策略：RECURRENCE（与scheduled_policy对应）
+        :type scaling_policy_type: str
+        :param alarm_id: 告警ID，即告警规则的ID，当scaling_policy_type为ALARM时该项必选，此时scheduled_policy不生效。创建告警策略成功后，会自动为该告警ID对应的告警规则的alarm_actions字段增加类型为autoscaling的告警触发动作。告警ID通过查询云监控告警规则列表获取，详见《云监控API参考》的“查询告警规则列表”。
+        :type alarm_id: str
+        :param scheduled_policy: 
+        :type scheduled_policy: :class:`huaweicloudsdkas.v1.ScheduledPolicy`
+        :param scaling_policy_action: 
+        :type scaling_policy_action: :class:`huaweicloudsdkas.v1.ScalingPolicyActionV1`
+        :param cool_down_time: 冷却时间，取值范围0-86400，默认为900，单位是秒。
+        :type cool_down_time: int
+        """
         
         
 
@@ -83,7 +98,7 @@ class UpdateScalingPolicyOption:
         策略名称(1-64字符)，可以用中文、字母、数字、下划线、中划线的组合。
 
         :param scaling_policy_name: The scaling_policy_name of this UpdateScalingPolicyOption.
-        :type: str
+        :type scaling_policy_name: str
         """
         self._scaling_policy_name = scaling_policy_name
 
@@ -105,7 +120,7 @@ class UpdateScalingPolicyOption:
         策略类型。告警策略：ALARM（与alarm_id对应）；定时策略：SCHEDULED（与scheduled_policy对应）；周期策略：RECURRENCE（与scheduled_policy对应）
 
         :param scaling_policy_type: The scaling_policy_type of this UpdateScalingPolicyOption.
-        :type: str
+        :type scaling_policy_type: str
         """
         self._scaling_policy_type = scaling_policy_type
 
@@ -127,7 +142,7 @@ class UpdateScalingPolicyOption:
         告警ID，即告警规则的ID，当scaling_policy_type为ALARM时该项必选，此时scheduled_policy不生效。创建告警策略成功后，会自动为该告警ID对应的告警规则的alarm_actions字段增加类型为autoscaling的告警触发动作。告警ID通过查询云监控告警规则列表获取，详见《云监控API参考》的“查询告警规则列表”。
 
         :param alarm_id: The alarm_id of this UpdateScalingPolicyOption.
-        :type: str
+        :type alarm_id: str
         """
         self._alarm_id = alarm_id
 
@@ -137,7 +152,7 @@ class UpdateScalingPolicyOption:
 
 
         :return: The scheduled_policy of this UpdateScalingPolicyOption.
-        :rtype: ScheduledPolicy
+        :rtype: :class:`huaweicloudsdkas.v1.ScheduledPolicy`
         """
         return self._scheduled_policy
 
@@ -147,7 +162,7 @@ class UpdateScalingPolicyOption:
 
 
         :param scheduled_policy: The scheduled_policy of this UpdateScalingPolicyOption.
-        :type: ScheduledPolicy
+        :type scheduled_policy: :class:`huaweicloudsdkas.v1.ScheduledPolicy`
         """
         self._scheduled_policy = scheduled_policy
 
@@ -157,7 +172,7 @@ class UpdateScalingPolicyOption:
 
 
         :return: The scaling_policy_action of this UpdateScalingPolicyOption.
-        :rtype: ScalingPolicyActionV1
+        :rtype: :class:`huaweicloudsdkas.v1.ScalingPolicyActionV1`
         """
         return self._scaling_policy_action
 
@@ -167,7 +182,7 @@ class UpdateScalingPolicyOption:
 
 
         :param scaling_policy_action: The scaling_policy_action of this UpdateScalingPolicyOption.
-        :type: ScalingPolicyActionV1
+        :type scaling_policy_action: :class:`huaweicloudsdkas.v1.ScalingPolicyActionV1`
         """
         self._scaling_policy_action = scaling_policy_action
 
@@ -189,7 +204,7 @@ class UpdateScalingPolicyOption:
         冷却时间，取值范围0-86400，默认为900，单位是秒。
 
         :param cool_down_time: The cool_down_time of this UpdateScalingPolicyOption.
-        :type: int
+        :type cool_down_time: int
         """
         self._cool_down_time = cool_down_time
 

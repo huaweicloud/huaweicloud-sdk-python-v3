@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowVpcRouteRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowVpcRouteRequest:
     }
 
     def __init__(self, route_id=None):
-        """ShowVpcRouteRequest - a model defined in huaweicloud sdk"""
+        """ShowVpcRouteRequest
+
+        The model defined in huaweicloud sdk
+
+        :param route_id: 路由ID
+        :type route_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowVpcRouteRequest:
         路由ID
 
         :param route_id: The route_id of this ShowVpcRouteRequest.
-        :type: str
+        :type route_id: str
         """
         self._route_id = route_id
 

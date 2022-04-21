@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneCreateScopedTokenResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class KeystoneCreateScopedTokenResponse(SdkResponse):
     }
 
     def __init__(self, token=None, x_subject_token=None):
-        """KeystoneCreateScopedTokenResponse - a model defined in huaweicloud sdk"""
+        """KeystoneCreateScopedTokenResponse
+
+        The model defined in huaweicloud sdk
+
+        :param token: 
+        :type token: :class:`huaweicloudsdkiam.v3.ScopeTokenResult`
+        :param x_subject_token: 
+        :type x_subject_token: str
+        """
         
         super(KeystoneCreateScopedTokenResponse, self).__init__()
 
@@ -51,7 +58,7 @@ class KeystoneCreateScopedTokenResponse(SdkResponse):
 
 
         :return: The token of this KeystoneCreateScopedTokenResponse.
-        :rtype: ScopeTokenResult
+        :rtype: :class:`huaweicloudsdkiam.v3.ScopeTokenResult`
         """
         return self._token
 
@@ -61,7 +68,7 @@ class KeystoneCreateScopedTokenResponse(SdkResponse):
 
 
         :param token: The token of this KeystoneCreateScopedTokenResponse.
-        :type: ScopeTokenResult
+        :type token: :class:`huaweicloudsdkiam.v3.ScopeTokenResult`
         """
         self._token = token
 
@@ -81,7 +88,7 @@ class KeystoneCreateScopedTokenResponse(SdkResponse):
 
 
         :param x_subject_token: The x_subject_token of this KeystoneCreateScopedTokenResponse.
-        :type: str
+        :type x_subject_token: str
         """
         self._x_subject_token = x_subject_token
 

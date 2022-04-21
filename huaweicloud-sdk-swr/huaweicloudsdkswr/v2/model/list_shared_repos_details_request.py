@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSharedReposDetailsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListSharedReposDetailsRequest:
     }
 
     def __init__(self, filter=None):
-        """ListSharedReposDetailsRequest - a model defined in huaweicloud sdk"""
+        """ListSharedReposDetailsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param filter: 应填写 center::{center}|limit::{limit}|offset::{offset}|order_column::{order_column}|order_type::{order_type} ,其中{limit}为返回条数,{offset}为起始索引, {order_column}为按列排序，可设置为name、updated_time、tag_count,{order_type}为排序类型，可设置为desc（降序）、asc（升序）
+        :type filter: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class ListSharedReposDetailsRequest:
         应填写 center::{center}|limit::{limit}|offset::{offset}|order_column::{order_column}|order_type::{order_type} ,其中{limit}为返回条数,{offset}为起始索引, {order_column}为按列排序，可设置为name、updated_time、tag_count,{order_type}为排序类型，可设置为desc（降序）、asc（升序）
 
         :param filter: The filter of this ListSharedReposDetailsRequest.
-        :type: str
+        :type filter: str
         """
         self._filter = filter
 

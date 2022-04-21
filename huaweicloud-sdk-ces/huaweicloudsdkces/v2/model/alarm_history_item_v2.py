@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AlarmHistoryItemV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -58,7 +57,41 @@ class AlarmHistoryItemV2:
     }
 
     def __init__(self, record_id=None, alarm_id=None, name=None, status=None, level=None, type=None, action_enabled=None, begin_time=None, end_time=None, metric=None, condition=None, additional_info=None, alarm_actions=None, ok_actions=None, data_points=None):
-        """AlarmHistoryItemV2 - a model defined in huaweicloud sdk"""
+        """AlarmHistoryItemV2
+
+        The model defined in huaweicloud sdk
+
+        :param record_id: 告警历史ID
+        :type record_id: str
+        :param alarm_id: 告警规则的ID，如：al1603131199286dzxpqK3Ez。
+        :type alarm_id: str
+        :param name: 告警规则的名称，如：alarm-test01。
+        :type name: str
+        :param status: 告警历史的状态，取值为ok，alarm，insufficient_data； ok为正常，alarm为告警，insufficient_data数据不足。
+        :type status: str
+        :param level: 告警历史的告警级别，值为1,2,3,4；1为紧急，2为重要，3为次要，4为提示。
+        :type level: int
+        :param type: 告警类型； 仅针对事件告警的参数，枚举类型：值为EVENT.SYS或者EVENT.CUSTOM
+        :type type: str
+        :param action_enabled: 是否发送通知，值为true或者false。
+        :type action_enabled: bool
+        :param begin_time: 产生时间,UTC时间
+        :type begin_time: datetime
+        :param end_time: 结束时间，UTC时间
+        :type end_time: datetime
+        :param metric: 
+        :type metric: :class:`huaweicloudsdkces.v2.Metric`
+        :param condition: 
+        :type condition: :class:`huaweicloudsdkces.v2.AlarmCondition`
+        :param additional_info: 
+        :type additional_info: :class:`huaweicloudsdkces.v2.AdditionalInfo`
+        :param alarm_actions: 告警触发的动作。  结构如下：  {  \&quot;type\&quot;: \&quot;notification\&quot;, \&quot;notificationList\&quot;: [\&quot;urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\&quot;]  }  type取值： notification：通知。 autoscaling：弹性伸缩。 notificationList：告警状态发生变化时，被通知对象的列表。
+        :type alarm_actions: list[:class:`huaweicloudsdkces.v2.SMNAction`]
+        :param ok_actions: 告警恢复触发的动作。  结构如下：  {  \&quot;type\&quot;: \&quot;notification\&quot;, \&quot;notificationList\&quot;: [\&quot;urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\&quot;]  } type取值：  notification：通知。  notificationList：告警状态发生变化时，被通知对象的列表。
+        :type ok_actions: list[:class:`huaweicloudsdkces.v2.SMNAction`]
+        :param data_points: 计算出该条告警历史的资源监控数据上报时间和监控数值。
+        :type data_points: list[object]
+        """
         
         
 
@@ -128,7 +161,7 @@ class AlarmHistoryItemV2:
         告警历史ID
 
         :param record_id: The record_id of this AlarmHistoryItemV2.
-        :type: str
+        :type record_id: str
         """
         self._record_id = record_id
 
@@ -150,7 +183,7 @@ class AlarmHistoryItemV2:
         告警规则的ID，如：al1603131199286dzxpqK3Ez。
 
         :param alarm_id: The alarm_id of this AlarmHistoryItemV2.
-        :type: str
+        :type alarm_id: str
         """
         self._alarm_id = alarm_id
 
@@ -172,7 +205,7 @@ class AlarmHistoryItemV2:
         告警规则的名称，如：alarm-test01。
 
         :param name: The name of this AlarmHistoryItemV2.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -194,7 +227,7 @@ class AlarmHistoryItemV2:
         告警历史的状态，取值为ok，alarm，insufficient_data； ok为正常，alarm为告警，insufficient_data数据不足。
 
         :param status: The status of this AlarmHistoryItemV2.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -216,7 +249,7 @@ class AlarmHistoryItemV2:
         告警历史的告警级别，值为1,2,3,4；1为紧急，2为重要，3为次要，4为提示。
 
         :param level: The level of this AlarmHistoryItemV2.
-        :type: int
+        :type level: int
         """
         self._level = level
 
@@ -238,7 +271,7 @@ class AlarmHistoryItemV2:
         告警类型； 仅针对事件告警的参数，枚举类型：值为EVENT.SYS或者EVENT.CUSTOM
 
         :param type: The type of this AlarmHistoryItemV2.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -260,7 +293,7 @@ class AlarmHistoryItemV2:
         是否发送通知，值为true或者false。
 
         :param action_enabled: The action_enabled of this AlarmHistoryItemV2.
-        :type: bool
+        :type action_enabled: bool
         """
         self._action_enabled = action_enabled
 
@@ -282,7 +315,7 @@ class AlarmHistoryItemV2:
         产生时间,UTC时间
 
         :param begin_time: The begin_time of this AlarmHistoryItemV2.
-        :type: datetime
+        :type begin_time: datetime
         """
         self._begin_time = begin_time
 
@@ -304,7 +337,7 @@ class AlarmHistoryItemV2:
         结束时间，UTC时间
 
         :param end_time: The end_time of this AlarmHistoryItemV2.
-        :type: datetime
+        :type end_time: datetime
         """
         self._end_time = end_time
 
@@ -314,7 +347,7 @@ class AlarmHistoryItemV2:
 
 
         :return: The metric of this AlarmHistoryItemV2.
-        :rtype: Metric
+        :rtype: :class:`huaweicloudsdkces.v2.Metric`
         """
         return self._metric
 
@@ -324,7 +357,7 @@ class AlarmHistoryItemV2:
 
 
         :param metric: The metric of this AlarmHistoryItemV2.
-        :type: Metric
+        :type metric: :class:`huaweicloudsdkces.v2.Metric`
         """
         self._metric = metric
 
@@ -334,7 +367,7 @@ class AlarmHistoryItemV2:
 
 
         :return: The condition of this AlarmHistoryItemV2.
-        :rtype: AlarmCondition
+        :rtype: :class:`huaweicloudsdkces.v2.AlarmCondition`
         """
         return self._condition
 
@@ -344,7 +377,7 @@ class AlarmHistoryItemV2:
 
 
         :param condition: The condition of this AlarmHistoryItemV2.
-        :type: AlarmCondition
+        :type condition: :class:`huaweicloudsdkces.v2.AlarmCondition`
         """
         self._condition = condition
 
@@ -354,7 +387,7 @@ class AlarmHistoryItemV2:
 
 
         :return: The additional_info of this AlarmHistoryItemV2.
-        :rtype: AdditionalInfo
+        :rtype: :class:`huaweicloudsdkces.v2.AdditionalInfo`
         """
         return self._additional_info
 
@@ -364,7 +397,7 @@ class AlarmHistoryItemV2:
 
 
         :param additional_info: The additional_info of this AlarmHistoryItemV2.
-        :type: AdditionalInfo
+        :type additional_info: :class:`huaweicloudsdkces.v2.AdditionalInfo`
         """
         self._additional_info = additional_info
 
@@ -375,7 +408,7 @@ class AlarmHistoryItemV2:
         告警触发的动作。  结构如下：  {  \"type\": \"notification\", \"notificationList\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"]  }  type取值： notification：通知。 autoscaling：弹性伸缩。 notificationList：告警状态发生变化时，被通知对象的列表。
 
         :return: The alarm_actions of this AlarmHistoryItemV2.
-        :rtype: list[SMNAction]
+        :rtype: list[:class:`huaweicloudsdkces.v2.SMNAction`]
         """
         return self._alarm_actions
 
@@ -386,7 +419,7 @@ class AlarmHistoryItemV2:
         告警触发的动作。  结构如下：  {  \"type\": \"notification\", \"notificationList\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"]  }  type取值： notification：通知。 autoscaling：弹性伸缩。 notificationList：告警状态发生变化时，被通知对象的列表。
 
         :param alarm_actions: The alarm_actions of this AlarmHistoryItemV2.
-        :type: list[SMNAction]
+        :type alarm_actions: list[:class:`huaweicloudsdkces.v2.SMNAction`]
         """
         self._alarm_actions = alarm_actions
 
@@ -397,7 +430,7 @@ class AlarmHistoryItemV2:
         告警恢复触发的动作。  结构如下：  {  \"type\": \"notification\", \"notificationList\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"]  } type取值：  notification：通知。  notificationList：告警状态发生变化时，被通知对象的列表。
 
         :return: The ok_actions of this AlarmHistoryItemV2.
-        :rtype: list[SMNAction]
+        :rtype: list[:class:`huaweicloudsdkces.v2.SMNAction`]
         """
         return self._ok_actions
 
@@ -408,7 +441,7 @@ class AlarmHistoryItemV2:
         告警恢复触发的动作。  结构如下：  {  \"type\": \"notification\", \"notificationList\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"]  } type取值：  notification：通知。  notificationList：告警状态发生变化时，被通知对象的列表。
 
         :param ok_actions: The ok_actions of this AlarmHistoryItemV2.
-        :type: list[SMNAction]
+        :type ok_actions: list[:class:`huaweicloudsdkces.v2.SMNAction`]
         """
         self._ok_actions = ok_actions
 
@@ -430,7 +463,7 @@ class AlarmHistoryItemV2:
         计算出该条告警历史的资源监控数据上报时间和监控数值。
 
         :param data_points: The data_points of this AlarmHistoryItemV2.
-        :type: list[object]
+        :type data_points: list[object]
         """
         self._data_points = data_points
 

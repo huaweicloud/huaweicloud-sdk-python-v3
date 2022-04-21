@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class HistoryRunInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class HistoryRunInfo:
     }
 
     def __init__(self, name=None, run_id=None, run_type=None, start_time=None, continue_time=None, temp_names=None):
-        """HistoryRunInfo - a model defined in huaweicloud sdk"""
+        """HistoryRunInfo
+
+        The model defined in huaweicloud sdk
+
+        :param name: name
+        :type name: str
+        :param run_id: run_id
+        :type run_id: float
+        :param run_type: run_type
+        :type run_type: float
+        :param start_time: start_time
+        :type start_time: str
+        :param continue_time: continue_time
+        :type continue_time: float
+        :param temp_names: temp_names
+        :type temp_names: list[:class:`huaweicloudsdkcpts.v1.TempName`]
+        """
         
         
 
@@ -83,7 +98,7 @@ class HistoryRunInfo:
         name
 
         :param name: The name of this HistoryRunInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -105,7 +120,7 @@ class HistoryRunInfo:
         run_id
 
         :param run_id: The run_id of this HistoryRunInfo.
-        :type: float
+        :type run_id: float
         """
         self._run_id = run_id
 
@@ -127,7 +142,7 @@ class HistoryRunInfo:
         run_type
 
         :param run_type: The run_type of this HistoryRunInfo.
-        :type: float
+        :type run_type: float
         """
         self._run_type = run_type
 
@@ -149,7 +164,7 @@ class HistoryRunInfo:
         start_time
 
         :param start_time: The start_time of this HistoryRunInfo.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -171,7 +186,7 @@ class HistoryRunInfo:
         continue_time
 
         :param continue_time: The continue_time of this HistoryRunInfo.
-        :type: float
+        :type continue_time: float
         """
         self._continue_time = continue_time
 
@@ -182,7 +197,7 @@ class HistoryRunInfo:
         temp_names
 
         :return: The temp_names of this HistoryRunInfo.
-        :rtype: list[TempName]
+        :rtype: list[:class:`huaweicloudsdkcpts.v1.TempName`]
         """
         return self._temp_names
 
@@ -193,7 +208,7 @@ class HistoryRunInfo:
         temp_names
 
         :param temp_names: The temp_names of this HistoryRunInfo.
-        :type: list[TempName]
+        :type temp_names: list[:class:`huaweicloudsdkcpts.v1.TempName`]
         """
         self._temp_names = temp_names
 

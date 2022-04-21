@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateFaceSetRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateFaceSetRequest:
     }
 
     def __init__(self, body=None):
-        """CreateFaceSetRequest - a model defined in huaweicloud sdk"""
+        """CreateFaceSetRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateFaceSetRequest
+        :type body: :class:`huaweicloudsdkfrs.v2.CreateFaceSetReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateFaceSetRequest:
 
 
         :return: The body of this CreateFaceSetRequest.
-        :rtype: CreateFaceSetReq
+        :rtype: :class:`huaweicloudsdkfrs.v2.CreateFaceSetReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateFaceSetRequest:
 
 
         :param body: The body of this CreateFaceSetRequest.
-        :type: CreateFaceSetReq
+        :type body: :class:`huaweicloudsdkfrs.v2.CreateFaceSetReq`
         """
         self._body = body
 

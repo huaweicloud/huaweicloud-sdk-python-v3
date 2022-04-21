@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GeneralTableWordsBlockList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class GeneralTableWordsBlockList:
     }
 
     def __init__(self, words=None, confidence=None, location=None, words_list=None, rows=None, columns=None, cell_location=None):
-        """GeneralTableWordsBlockList - a model defined in huaweicloud sdk"""
+        """GeneralTableWordsBlockList
+
+        The model defined in huaweicloud sdk
+
+        :param words: 文字块识别结果。 
+        :type words: str
+        :param confidence: 字段的平均置信度，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。置信度由算法给出，不直接等价于对应字段的准确率。 
+        :type confidence: float
+        :param location: 文字块位置信息，列表形式，分别表示文字块4个顶点的x, y坐标;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
+        :type location: list[list[int]]
+        :param words_list: 单元格内文字段列表。输出顺序从左到右，从上到下。仅当入参\&quot;return_text_location\&quot;为true时存在。 
+        :type words_list: list[:class:`huaweicloudsdkocr.v1.WordsListIem`]
+        :param rows: 文字块占用的行信息，编号从0开始，列表形式，数据类型为Integer。仅在表格区域内有效，即type字段为\&quot;table\&quot;时该字段有效。 
+        :type rows: list[int]
+        :param columns: 文字块占用的列信息，编号从0开始，列表形式，数据类型为Integer。仅在表格区域内有效，即type字段为\&quot;table\&quot;时该字段有效。 
+        :type columns: list[int]
+        :param cell_location: 单元格位置信息，列表形式，分别表示单元格4个顶点的x, y坐标;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
+        :type cell_location: list[list[int]]
+        """
         
         
 
@@ -88,7 +105,7 @@ class GeneralTableWordsBlockList:
         文字块识别结果。 
 
         :param words: The words of this GeneralTableWordsBlockList.
-        :type: str
+        :type words: str
         """
         self._words = words
 
@@ -110,7 +127,7 @@ class GeneralTableWordsBlockList:
         字段的平均置信度，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。置信度由算法给出，不直接等价于对应字段的准确率。 
 
         :param confidence: The confidence of this GeneralTableWordsBlockList.
-        :type: float
+        :type confidence: float
         """
         self._confidence = confidence
 
@@ -132,7 +149,7 @@ class GeneralTableWordsBlockList:
         文字块位置信息，列表形式，分别表示文字块4个顶点的x, y坐标;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
         :param location: The location of this GeneralTableWordsBlockList.
-        :type: list[list[int]]
+        :type location: list[list[int]]
         """
         self._location = location
 
@@ -143,7 +160,7 @@ class GeneralTableWordsBlockList:
         单元格内文字段列表。输出顺序从左到右，从上到下。仅当入参\"return_text_location\"为true时存在。 
 
         :return: The words_list of this GeneralTableWordsBlockList.
-        :rtype: list[WordsListIem]
+        :rtype: list[:class:`huaweicloudsdkocr.v1.WordsListIem`]
         """
         return self._words_list
 
@@ -154,7 +171,7 @@ class GeneralTableWordsBlockList:
         单元格内文字段列表。输出顺序从左到右，从上到下。仅当入参\"return_text_location\"为true时存在。 
 
         :param words_list: The words_list of this GeneralTableWordsBlockList.
-        :type: list[WordsListIem]
+        :type words_list: list[:class:`huaweicloudsdkocr.v1.WordsListIem`]
         """
         self._words_list = words_list
 
@@ -176,7 +193,7 @@ class GeneralTableWordsBlockList:
         文字块占用的行信息，编号从0开始，列表形式，数据类型为Integer。仅在表格区域内有效，即type字段为\"table\"时该字段有效。 
 
         :param rows: The rows of this GeneralTableWordsBlockList.
-        :type: list[int]
+        :type rows: list[int]
         """
         self._rows = rows
 
@@ -198,7 +215,7 @@ class GeneralTableWordsBlockList:
         文字块占用的列信息，编号从0开始，列表形式，数据类型为Integer。仅在表格区域内有效，即type字段为\"table\"时该字段有效。 
 
         :param columns: The columns of this GeneralTableWordsBlockList.
-        :type: list[int]
+        :type columns: list[int]
         """
         self._columns = columns
 
@@ -220,7 +237,7 @@ class GeneralTableWordsBlockList:
         单元格位置信息，列表形式，分别表示单元格4个顶点的x, y坐标;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
         :param cell_location: The cell_location of this GeneralTableWordsBlockList.
-        :type: list[list[int]]
+        :type cell_location: list[list[int]]
         """
         self._cell_location = cell_location
 

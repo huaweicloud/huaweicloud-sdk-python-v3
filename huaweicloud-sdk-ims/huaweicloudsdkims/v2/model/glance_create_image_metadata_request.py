@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GlanceCreateImageMetadataRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class GlanceCreateImageMetadataRequest:
     }
 
     def __init__(self, body=None):
-        """GlanceCreateImageMetadataRequest - a model defined in huaweicloud sdk"""
+        """GlanceCreateImageMetadataRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the GlanceCreateImageMetadataRequest
+        :type body: :class:`huaweicloudsdkims.v2.GlanceCreateImageMetadataRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class GlanceCreateImageMetadataRequest:
 
 
         :return: The body of this GlanceCreateImageMetadataRequest.
-        :rtype: GlanceCreateImageMetadataRequestBody
+        :rtype: :class:`huaweicloudsdkims.v2.GlanceCreateImageMetadataRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class GlanceCreateImageMetadataRequest:
 
 
         :param body: The body of this GlanceCreateImageMetadataRequest.
-        :type: GlanceCreateImageMetadataRequestBody
+        :type body: :class:`huaweicloudsdkims.v2.GlanceCreateImageMetadataRequestBody`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SimCardsFlowVO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class SimCardsFlowVO:
     }
 
     def __init__(self, id=None, account_id=None, sim_card_id=None, price_plan_id=None, price_plan_name=None, iccid=None, flow_total=None, flow_used=None, flow_left=None):
-        """SimCardsFlowVO - a model defined in huaweicloud sdk"""
+        """SimCardsFlowVO
+
+        The model defined in huaweicloud sdk
+
+        :param id: 套餐实例ID
+        :type id: int
+        :param account_id: 账户ID
+        :type account_id: str
+        :param sim_card_id: sim卡ID
+        :type sim_card_id: int
+        :param price_plan_id: 套餐ID
+        :type price_plan_id: str
+        :param price_plan_name: 套餐名称
+        :type price_plan_name: str
+        :param iccid: ICCID
+        :type iccid: str
+        :param flow_total: 总流量(MB),两位小数
+        :type flow_total: float
+        :param flow_used: 已使用流量(MB),两位小数
+        :type flow_used: float
+        :param flow_left: 剩余流量(MB),两位小数
+        :type flow_left: float
+        """
         
         
 
@@ -98,7 +119,7 @@ class SimCardsFlowVO:
         套餐实例ID
 
         :param id: The id of this SimCardsFlowVO.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -120,7 +141,7 @@ class SimCardsFlowVO:
         账户ID
 
         :param account_id: The account_id of this SimCardsFlowVO.
-        :type: str
+        :type account_id: str
         """
         self._account_id = account_id
 
@@ -142,7 +163,7 @@ class SimCardsFlowVO:
         sim卡ID
 
         :param sim_card_id: The sim_card_id of this SimCardsFlowVO.
-        :type: int
+        :type sim_card_id: int
         """
         self._sim_card_id = sim_card_id
 
@@ -164,7 +185,7 @@ class SimCardsFlowVO:
         套餐ID
 
         :param price_plan_id: The price_plan_id of this SimCardsFlowVO.
-        :type: str
+        :type price_plan_id: str
         """
         self._price_plan_id = price_plan_id
 
@@ -186,7 +207,7 @@ class SimCardsFlowVO:
         套餐名称
 
         :param price_plan_name: The price_plan_name of this SimCardsFlowVO.
-        :type: str
+        :type price_plan_name: str
         """
         self._price_plan_name = price_plan_name
 
@@ -208,7 +229,7 @@ class SimCardsFlowVO:
         ICCID
 
         :param iccid: The iccid of this SimCardsFlowVO.
-        :type: str
+        :type iccid: str
         """
         self._iccid = iccid
 
@@ -230,7 +251,7 @@ class SimCardsFlowVO:
         总流量(MB),两位小数
 
         :param flow_total: The flow_total of this SimCardsFlowVO.
-        :type: float
+        :type flow_total: float
         """
         self._flow_total = flow_total
 
@@ -252,7 +273,7 @@ class SimCardsFlowVO:
         已使用流量(MB),两位小数
 
         :param flow_used: The flow_used of this SimCardsFlowVO.
-        :type: float
+        :type flow_used: float
         """
         self._flow_used = flow_used
 
@@ -274,7 +295,7 @@ class SimCardsFlowVO:
         剩余流量(MB),两位小数
 
         :param flow_left: The flow_left of this SimCardsFlowVO.
-        :type: float
+        :type flow_left: float
         """
         self._flow_left = flow_left
 

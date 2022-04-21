@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResizeInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -22,82 +21,50 @@ class ResizeInfo:
     sensitive_list = []
 
     openapi_types = {
-        'resize_status': 'str',
-        'start_time': 'str',
         'target_node_num': 'int',
-        'origin_node_num': 'int'
+        'origin_node_num': 'int',
+        'resize_status': 'str',
+        'start_time': 'str'
     }
 
     attribute_map = {
-        'resize_status': 'resize_status',
-        'start_time': 'start_time',
         'target_node_num': 'target_node_num',
-        'origin_node_num': 'origin_node_num'
+        'origin_node_num': 'origin_node_num',
+        'resize_status': 'resize_status',
+        'start_time': 'start_time'
     }
 
-    def __init__(self, resize_status=None, start_time=None, target_node_num=None, origin_node_num=None):
-        """ResizeInfo - a model defined in huaweicloud sdk"""
+    def __init__(self, target_node_num=None, origin_node_num=None, resize_status=None, start_time=None):
+        """ResizeInfo
+
+        The model defined in huaweicloud sdk
+
+        :param target_node_num: 扩容后的节点数量
+        :type target_node_num: int
+        :param origin_node_num: 扩容前的节点数量
+        :type origin_node_num: int
+        :param resize_status: 扩容状态，取值如下：  - GROWING：扩容中 - RESIZE_FAILURE：扩容失败
+        :type resize_status: str
+        :param start_time: 扩容开始时间，格式为ISO8601：YYYY-MM-DDThh:mm:ss
+        :type start_time: str
+        """
         
         
 
-        self._resize_status = None
-        self._start_time = None
         self._target_node_num = None
         self._origin_node_num = None
+        self._resize_status = None
+        self._start_time = None
         self.discriminator = None
 
-        if resize_status is not None:
-            self.resize_status = resize_status
-        if start_time is not None:
-            self.start_time = start_time
         if target_node_num is not None:
             self.target_node_num = target_node_num
         if origin_node_num is not None:
             self.origin_node_num = origin_node_num
-
-    @property
-    def resize_status(self):
-        """Gets the resize_status of this ResizeInfo.
-
-        扩容状态，取值如下：  GROWING：扩容中  RESIZE_FAILURE：扩容失败
-
-        :return: The resize_status of this ResizeInfo.
-        :rtype: str
-        """
-        return self._resize_status
-
-    @resize_status.setter
-    def resize_status(self, resize_status):
-        """Sets the resize_status of this ResizeInfo.
-
-        扩容状态，取值如下：  GROWING：扩容中  RESIZE_FAILURE：扩容失败
-
-        :param resize_status: The resize_status of this ResizeInfo.
-        :type: str
-        """
-        self._resize_status = resize_status
-
-    @property
-    def start_time(self):
-        """Gets the start_time of this ResizeInfo.
-
-        扩容开始时间，格式为ISO8601：YYYY-MM-DDThh:mm:ss
-
-        :return: The start_time of this ResizeInfo.
-        :rtype: str
-        """
-        return self._start_time
-
-    @start_time.setter
-    def start_time(self, start_time):
-        """Sets the start_time of this ResizeInfo.
-
-        扩容开始时间，格式为ISO8601：YYYY-MM-DDThh:mm:ss
-
-        :param start_time: The start_time of this ResizeInfo.
-        :type: str
-        """
-        self._start_time = start_time
+        if resize_status is not None:
+            self.resize_status = resize_status
+        if start_time is not None:
+            self.start_time = start_time
 
     @property
     def target_node_num(self):
@@ -117,7 +84,7 @@ class ResizeInfo:
         扩容后的节点数量
 
         :param target_node_num: The target_node_num of this ResizeInfo.
-        :type: int
+        :type target_node_num: int
         """
         self._target_node_num = target_node_num
 
@@ -139,9 +106,53 @@ class ResizeInfo:
         扩容前的节点数量
 
         :param origin_node_num: The origin_node_num of this ResizeInfo.
-        :type: int
+        :type origin_node_num: int
         """
         self._origin_node_num = origin_node_num
+
+    @property
+    def resize_status(self):
+        """Gets the resize_status of this ResizeInfo.
+
+        扩容状态，取值如下：  - GROWING：扩容中 - RESIZE_FAILURE：扩容失败
+
+        :return: The resize_status of this ResizeInfo.
+        :rtype: str
+        """
+        return self._resize_status
+
+    @resize_status.setter
+    def resize_status(self, resize_status):
+        """Sets the resize_status of this ResizeInfo.
+
+        扩容状态，取值如下：  - GROWING：扩容中 - RESIZE_FAILURE：扩容失败
+
+        :param resize_status: The resize_status of this ResizeInfo.
+        :type resize_status: str
+        """
+        self._resize_status = resize_status
+
+    @property
+    def start_time(self):
+        """Gets the start_time of this ResizeInfo.
+
+        扩容开始时间，格式为ISO8601：YYYY-MM-DDThh:mm:ss
+
+        :return: The start_time of this ResizeInfo.
+        :rtype: str
+        """
+        return self._start_time
+
+    @start_time.setter
+    def start_time(self, start_time):
+        """Sets the start_time of this ResizeInfo.
+
+        扩容开始时间，格式为ISO8601：YYYY-MM-DDThh:mm:ss
+
+        :param start_time: The start_time of this ResizeInfo.
+        :type start_time: str
+        """
+        self._start_time = start_time
 
     def to_dict(self):
         """Returns the model properties as a dict"""

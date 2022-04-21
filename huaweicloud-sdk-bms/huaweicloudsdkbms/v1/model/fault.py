@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Fault:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class Fault:
     }
 
     def __init__(self, message=None, code=None, details=None, created=None):
-        """Fault - a model defined in huaweicloud sdk"""
+        """Fault
+
+        The model defined in huaweicloud sdk
+
+        :param message: 故障信息
+        :type message: str
+        :param code: 故障code
+        :type code: int
+        :param details: 故障详情
+        :type details: str
+        :param created: 故障时间。时间戳格式为ISO 8601：YYYY-MM-DDTHH:MM:SSZ，例如：2019-05-22T03:30:52Z
+        :type created: datetime
+        """
         
         
 
@@ -73,7 +84,7 @@ class Fault:
         故障信息
 
         :param message: The message of this Fault.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -95,7 +106,7 @@ class Fault:
         故障code
 
         :param code: The code of this Fault.
-        :type: int
+        :type code: int
         """
         self._code = code
 
@@ -117,7 +128,7 @@ class Fault:
         故障详情
 
         :param details: The details of this Fault.
-        :type: str
+        :type details: str
         """
         self._details = details
 
@@ -139,7 +150,7 @@ class Fault:
         故障时间。时间戳格式为ISO 8601：YYYY-MM-DDTHH:MM:SSZ，例如：2019-05-22T03:30:52Z
 
         :param created: The created of this Fault.
-        :type: datetime
+        :type created: datetime
         """
         self._created = created
 

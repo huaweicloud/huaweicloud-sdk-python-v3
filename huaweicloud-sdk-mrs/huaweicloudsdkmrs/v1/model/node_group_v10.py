@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NodeGroupV10:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -64,7 +63,47 @@ class NodeGroupV10:
     }
 
     def __init__(self, group_name=None, node_num=None, node_size=None, node_spec_id=None, vm_product_id=None, vm_spec_code=None, node_product_id=None, root_volume_size=None, root_volume_product_id=None, root_volume_type=None, root_volume_resource_spec_code=None, root_volume_resource_type=None, data_volume_type=None, data_volume_count=None, data_volume_size=None, data_volume_product_id=None, data_volume_resource_spec_code=None, data_volume_resource_type=None):
-        """NodeGroupV10 - a model defined in huaweicloud sdk"""
+        """NodeGroupV10
+
+        The model defined in huaweicloud sdk
+
+        :param group_name: 节点组名。
+        :type group_name: str
+        :param node_num: 节点数量，取值范围0～500，Master节点和Core节点数量至少为1，Core与Task节点总数最大为500个。
+        :type node_num: int
+        :param node_size: 节点的实例规格。
+        :type node_size: str
+        :param node_spec_id: 节点实例规格ID。
+        :type node_spec_id: str
+        :param vm_product_id: 节点虚拟机产品ID。
+        :type vm_product_id: str
+        :param vm_spec_code: 节点虚拟机产品规格。
+        :type vm_spec_code: str
+        :param node_product_id: 节点实例产品ID。
+        :type node_product_id: str
+        :param root_volume_size: 节点系统盘大小，不可配置，默认为40GB。
+        :type root_volume_size: int
+        :param root_volume_product_id: 节点系统盘的产品ID。
+        :type root_volume_product_id: str
+        :param root_volume_type: 节点系统盘的类型。
+        :type root_volume_type: str
+        :param root_volume_resource_spec_code: 节点系统盘产品规格。
+        :type root_volume_resource_spec_code: str
+        :param root_volume_resource_type: 节点系统盘产品类型。
+        :type root_volume_resource_type: str
+        :param data_volume_type: 节点数据磁盘存储类别，目前支持SATA、SAS和SSD。  - SATA：普通IO - SAS：高IO - SSD：超高IO
+        :type data_volume_type: str
+        :param data_volume_count: 节点数据磁盘存储数目。
+        :type data_volume_count: int
+        :param data_volume_size: 节点数据磁盘存储大小。
+        :type data_volume_size: int
+        :param data_volume_product_id: 节点数据磁盘的产品ID。
+        :type data_volume_product_id: str
+        :param data_volume_resource_spec_code: 节点数据磁盘的产品规格。
+        :type data_volume_resource_spec_code: str
+        :param data_volume_resource_type: 节点数据磁盘的产品类型。
+        :type data_volume_resource_type: str
+        """
         
         
 
@@ -143,7 +182,7 @@ class NodeGroupV10:
         节点组名。
 
         :param group_name: The group_name of this NodeGroupV10.
-        :type: str
+        :type group_name: str
         """
         self._group_name = group_name
 
@@ -165,7 +204,7 @@ class NodeGroupV10:
         节点数量，取值范围0～500，Master节点和Core节点数量至少为1，Core与Task节点总数最大为500个。
 
         :param node_num: The node_num of this NodeGroupV10.
-        :type: int
+        :type node_num: int
         """
         self._node_num = node_num
 
@@ -187,7 +226,7 @@ class NodeGroupV10:
         节点的实例规格。
 
         :param node_size: The node_size of this NodeGroupV10.
-        :type: str
+        :type node_size: str
         """
         self._node_size = node_size
 
@@ -209,7 +248,7 @@ class NodeGroupV10:
         节点实例规格ID。
 
         :param node_spec_id: The node_spec_id of this NodeGroupV10.
-        :type: str
+        :type node_spec_id: str
         """
         self._node_spec_id = node_spec_id
 
@@ -231,7 +270,7 @@ class NodeGroupV10:
         节点虚拟机产品ID。
 
         :param vm_product_id: The vm_product_id of this NodeGroupV10.
-        :type: str
+        :type vm_product_id: str
         """
         self._vm_product_id = vm_product_id
 
@@ -253,7 +292,7 @@ class NodeGroupV10:
         节点虚拟机产品规格。
 
         :param vm_spec_code: The vm_spec_code of this NodeGroupV10.
-        :type: str
+        :type vm_spec_code: str
         """
         self._vm_spec_code = vm_spec_code
 
@@ -275,7 +314,7 @@ class NodeGroupV10:
         节点实例产品ID。
 
         :param node_product_id: The node_product_id of this NodeGroupV10.
-        :type: str
+        :type node_product_id: str
         """
         self._node_product_id = node_product_id
 
@@ -297,7 +336,7 @@ class NodeGroupV10:
         节点系统盘大小，不可配置，默认为40GB。
 
         :param root_volume_size: The root_volume_size of this NodeGroupV10.
-        :type: int
+        :type root_volume_size: int
         """
         self._root_volume_size = root_volume_size
 
@@ -319,7 +358,7 @@ class NodeGroupV10:
         节点系统盘的产品ID。
 
         :param root_volume_product_id: The root_volume_product_id of this NodeGroupV10.
-        :type: str
+        :type root_volume_product_id: str
         """
         self._root_volume_product_id = root_volume_product_id
 
@@ -341,7 +380,7 @@ class NodeGroupV10:
         节点系统盘的类型。
 
         :param root_volume_type: The root_volume_type of this NodeGroupV10.
-        :type: str
+        :type root_volume_type: str
         """
         self._root_volume_type = root_volume_type
 
@@ -363,7 +402,7 @@ class NodeGroupV10:
         节点系统盘产品规格。
 
         :param root_volume_resource_spec_code: The root_volume_resource_spec_code of this NodeGroupV10.
-        :type: str
+        :type root_volume_resource_spec_code: str
         """
         self._root_volume_resource_spec_code = root_volume_resource_spec_code
 
@@ -385,7 +424,7 @@ class NodeGroupV10:
         节点系统盘产品类型。
 
         :param root_volume_resource_type: The root_volume_resource_type of this NodeGroupV10.
-        :type: str
+        :type root_volume_resource_type: str
         """
         self._root_volume_resource_type = root_volume_resource_type
 
@@ -407,7 +446,7 @@ class NodeGroupV10:
         节点数据磁盘存储类别，目前支持SATA、SAS和SSD。  - SATA：普通IO - SAS：高IO - SSD：超高IO
 
         :param data_volume_type: The data_volume_type of this NodeGroupV10.
-        :type: str
+        :type data_volume_type: str
         """
         self._data_volume_type = data_volume_type
 
@@ -429,7 +468,7 @@ class NodeGroupV10:
         节点数据磁盘存储数目。
 
         :param data_volume_count: The data_volume_count of this NodeGroupV10.
-        :type: int
+        :type data_volume_count: int
         """
         self._data_volume_count = data_volume_count
 
@@ -451,7 +490,7 @@ class NodeGroupV10:
         节点数据磁盘存储大小。
 
         :param data_volume_size: The data_volume_size of this NodeGroupV10.
-        :type: int
+        :type data_volume_size: int
         """
         self._data_volume_size = data_volume_size
 
@@ -473,7 +512,7 @@ class NodeGroupV10:
         节点数据磁盘的产品ID。
 
         :param data_volume_product_id: The data_volume_product_id of this NodeGroupV10.
-        :type: str
+        :type data_volume_product_id: str
         """
         self._data_volume_product_id = data_volume_product_id
 
@@ -495,7 +534,7 @@ class NodeGroupV10:
         节点数据磁盘的产品规格。
 
         :param data_volume_resource_spec_code: The data_volume_resource_spec_code of this NodeGroupV10.
-        :type: str
+        :type data_volume_resource_spec_code: str
         """
         self._data_volume_resource_spec_code = data_volume_resource_spec_code
 
@@ -517,7 +556,7 @@ class NodeGroupV10:
         节点数据磁盘的产品类型。
 
         :param data_volume_resource_type: The data_volume_resource_type of this NodeGroupV10.
-        :type: str
+        :type data_volume_resource_type: str
         """
         self._data_volume_resource_type = data_volume_resource_type
 

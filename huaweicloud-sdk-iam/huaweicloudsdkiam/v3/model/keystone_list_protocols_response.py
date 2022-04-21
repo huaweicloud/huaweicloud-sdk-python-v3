@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneListProtocolsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class KeystoneListProtocolsResponse(SdkResponse):
     }
 
     def __init__(self, links=None, protocols=None):
-        """KeystoneListProtocolsResponse - a model defined in huaweicloud sdk"""
+        """KeystoneListProtocolsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param links: 
+        :type links: :class:`huaweicloudsdkiam.v3.Links`
+        :param protocols: 协议信息列表。
+        :type protocols: list[:class:`huaweicloudsdkiam.v3.ProtocolResult`]
+        """
         
         super(KeystoneListProtocolsResponse, self).__init__()
 
@@ -51,7 +58,7 @@ class KeystoneListProtocolsResponse(SdkResponse):
 
 
         :return: The links of this KeystoneListProtocolsResponse.
-        :rtype: Links
+        :rtype: :class:`huaweicloudsdkiam.v3.Links`
         """
         return self._links
 
@@ -61,7 +68,7 @@ class KeystoneListProtocolsResponse(SdkResponse):
 
 
         :param links: The links of this KeystoneListProtocolsResponse.
-        :type: Links
+        :type links: :class:`huaweicloudsdkiam.v3.Links`
         """
         self._links = links
 
@@ -72,7 +79,7 @@ class KeystoneListProtocolsResponse(SdkResponse):
         协议信息列表。
 
         :return: The protocols of this KeystoneListProtocolsResponse.
-        :rtype: list[ProtocolResult]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.ProtocolResult`]
         """
         return self._protocols
 
@@ -83,7 +90,7 @@ class KeystoneListProtocolsResponse(SdkResponse):
         协议信息列表。
 
         :param protocols: The protocols of this KeystoneListProtocolsResponse.
-        :type: list[ProtocolResult]
+        :type protocols: list[:class:`huaweicloudsdkiam.v3.ProtocolResult`]
         """
         self._protocols = protocols
 

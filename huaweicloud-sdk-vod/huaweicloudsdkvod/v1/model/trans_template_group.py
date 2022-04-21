@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TransTemplateGroup:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class TransTemplateGroup:
     }
 
     def __init__(self, name=None, status=None, type=None, auto_encrypt=None, quality_info_list=None, common=None, watermark_template_ids=None, description=None):
-        """TransTemplateGroup - a model defined in huaweicloud sdk"""
+        """TransTemplateGroup
+
+        The model defined in huaweicloud sdk
+
+        :param name: 模板组名称。
+        :type name: str
+        :param status: 是否设置默认。
+        :type status: str
+        :param type: 模板组类型。
+        :type type: str
+        :param auto_encrypt: 是否自动加密。  取值如下： - 0：表示不加密。 - 1：表示需要加密。  默认值：0。  加密与转码必须要一起进行，当需要加密时，转码参数不能为空，且转码输出格式必须要为HLS。
+        :type auto_encrypt: int
+        :param quality_info_list: 画质配置信息列表。
+        :type quality_info_list: list[:class:`huaweicloudsdkvod.v1.QualityInfo`]
+        :param common: 
+        :type common: :class:`huaweicloudsdkvod.v1.Common`
+        :param watermark_template_ids: 绑定的水印模板组ID数组。
+        :type watermark_template_ids: list[str]
+        :param description: 模板介绍。
+        :type description: str
+        """
         
         
 
@@ -91,7 +110,7 @@ class TransTemplateGroup:
         模板组名称。
 
         :param name: The name of this TransTemplateGroup.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -113,7 +132,7 @@ class TransTemplateGroup:
         是否设置默认。
 
         :param status: The status of this TransTemplateGroup.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -135,7 +154,7 @@ class TransTemplateGroup:
         模板组类型。
 
         :param type: The type of this TransTemplateGroup.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -157,7 +176,7 @@ class TransTemplateGroup:
         是否自动加密。  取值如下： - 0：表示不加密。 - 1：表示需要加密。  默认值：0。  加密与转码必须要一起进行，当需要加密时，转码参数不能为空，且转码输出格式必须要为HLS。
 
         :param auto_encrypt: The auto_encrypt of this TransTemplateGroup.
-        :type: int
+        :type auto_encrypt: int
         """
         self._auto_encrypt = auto_encrypt
 
@@ -168,7 +187,7 @@ class TransTemplateGroup:
         画质配置信息列表。
 
         :return: The quality_info_list of this TransTemplateGroup.
-        :rtype: list[QualityInfo]
+        :rtype: list[:class:`huaweicloudsdkvod.v1.QualityInfo`]
         """
         return self._quality_info_list
 
@@ -179,7 +198,7 @@ class TransTemplateGroup:
         画质配置信息列表。
 
         :param quality_info_list: The quality_info_list of this TransTemplateGroup.
-        :type: list[QualityInfo]
+        :type quality_info_list: list[:class:`huaweicloudsdkvod.v1.QualityInfo`]
         """
         self._quality_info_list = quality_info_list
 
@@ -189,7 +208,7 @@ class TransTemplateGroup:
 
 
         :return: The common of this TransTemplateGroup.
-        :rtype: Common
+        :rtype: :class:`huaweicloudsdkvod.v1.Common`
         """
         return self._common
 
@@ -199,7 +218,7 @@ class TransTemplateGroup:
 
 
         :param common: The common of this TransTemplateGroup.
-        :type: Common
+        :type common: :class:`huaweicloudsdkvod.v1.Common`
         """
         self._common = common
 
@@ -221,7 +240,7 @@ class TransTemplateGroup:
         绑定的水印模板组ID数组。
 
         :param watermark_template_ids: The watermark_template_ids of this TransTemplateGroup.
-        :type: list[str]
+        :type watermark_template_ids: list[str]
         """
         self._watermark_template_ids = watermark_template_ids
 
@@ -243,7 +262,7 @@ class TransTemplateGroup:
         模板介绍。
 
         :param description: The description of this TransTemplateGroup.
-        :type: str
+        :type description: str
         """
         self._description = description
 

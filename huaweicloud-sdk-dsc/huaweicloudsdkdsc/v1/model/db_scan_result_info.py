@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DbScanResultInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class DbScanResultInfo:
     }
 
     def __init__(self, task_id=None, db_name=None, table_id=None, table_name=None, risk_level=None, sensitive_data_type=None, match_info=None):
-        """DbScanResultInfo - a model defined in huaweicloud sdk"""
+        """DbScanResultInfo
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 任务ID
+        :type task_id: str
+        :param db_name: 数据库名称
+        :type db_name: str
+        :param table_id: 表ID
+        :type table_id: str
+        :param table_name: 表名称
+        :type table_name: str
+        :param risk_level: 风险等级
+        :type risk_level: int
+        :param sensitive_data_type: 匹配到的规则
+        :type sensitive_data_type: list[str]
+        :param match_info: 表中各列匹配到的规则
+        :type match_info: list[:class:`huaweicloudsdkdsc.v1.DbMatchInfo`]
+        """
         
         
 
@@ -88,7 +105,7 @@ class DbScanResultInfo:
         任务ID
 
         :param task_id: The task_id of this DbScanResultInfo.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -110,7 +127,7 @@ class DbScanResultInfo:
         数据库名称
 
         :param db_name: The db_name of this DbScanResultInfo.
-        :type: str
+        :type db_name: str
         """
         self._db_name = db_name
 
@@ -132,7 +149,7 @@ class DbScanResultInfo:
         表ID
 
         :param table_id: The table_id of this DbScanResultInfo.
-        :type: str
+        :type table_id: str
         """
         self._table_id = table_id
 
@@ -154,7 +171,7 @@ class DbScanResultInfo:
         表名称
 
         :param table_name: The table_name of this DbScanResultInfo.
-        :type: str
+        :type table_name: str
         """
         self._table_name = table_name
 
@@ -176,7 +193,7 @@ class DbScanResultInfo:
         风险等级
 
         :param risk_level: The risk_level of this DbScanResultInfo.
-        :type: int
+        :type risk_level: int
         """
         self._risk_level = risk_level
 
@@ -198,7 +215,7 @@ class DbScanResultInfo:
         匹配到的规则
 
         :param sensitive_data_type: The sensitive_data_type of this DbScanResultInfo.
-        :type: list[str]
+        :type sensitive_data_type: list[str]
         """
         self._sensitive_data_type = sensitive_data_type
 
@@ -209,7 +226,7 @@ class DbScanResultInfo:
         表中各列匹配到的规则
 
         :return: The match_info of this DbScanResultInfo.
-        :rtype: list[DbMatchInfo]
+        :rtype: list[:class:`huaweicloudsdkdsc.v1.DbMatchInfo`]
         """
         return self._match_info
 
@@ -220,7 +237,7 @@ class DbScanResultInfo:
         表中各列匹配到的规则
 
         :param match_info: The match_info of this DbScanResultInfo.
-        :type: list[DbMatchInfo]
+        :type match_info: list[:class:`huaweicloudsdkdsc.v1.DbMatchInfo`]
         """
         self._match_info = match_info
 

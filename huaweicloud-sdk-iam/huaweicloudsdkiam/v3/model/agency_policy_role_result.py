@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AgencyPolicyRoleResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class AgencyPolicyRoleResult:
     }
 
     def __init__(self, catalog=None, display_name=None, description=None, links=None, policy=None, description_cn=None, domain_id=None, type=None, id=None, name=None, updated_time=None, created_time=None, references=None):
-        """AgencyPolicyRoleResult - a model defined in huaweicloud sdk"""
+        """AgencyPolicyRoleResult
+
+        The model defined in huaweicloud sdk
+
+        :param catalog: 自定义策略所在目录。
+        :type catalog: str
+        :param display_name: 自定义策略展示名。
+        :type display_name: str
+        :param description: 自定义策略的描述信息。
+        :type description: str
+        :param links: 
+        :type links: :class:`huaweicloudsdkiam.v3.LinksSelf`
+        :param policy: 
+        :type policy: :class:`huaweicloudsdkiam.v3.AgencyPolicy`
+        :param description_cn: 自定义策略的中文描述信息。
+        :type description_cn: str
+        :param domain_id: 自定义策略所属账号ID。
+        :type domain_id: str
+        :param type: 自定义策略的显示模式。 &gt; - AX表示在domain层显示。 &gt; - XA表示在project层显示。 &gt; - 自定义策略的显示模式只能为AX或者XA，不能在domain层和project层都显示（AA），或者在domain层和project层都不显示（XX）。
+        :type type: str
+        :param id: 自定义策略ID。
+        :type id: str
+        :param name: 自定义策略名。
+        :type name: str
+        :param updated_time: 自定义策略更新时间。
+        :type updated_time: str
+        :param created_time: 自定义策略创建时间。
+        :type created_time: str
+        :param references: 自定义策略的引用次数。
+        :type references: str
+        """
         
         
 
@@ -109,7 +138,7 @@ class AgencyPolicyRoleResult:
         自定义策略所在目录。
 
         :param catalog: The catalog of this AgencyPolicyRoleResult.
-        :type: str
+        :type catalog: str
         """
         self._catalog = catalog
 
@@ -131,7 +160,7 @@ class AgencyPolicyRoleResult:
         自定义策略展示名。
 
         :param display_name: The display_name of this AgencyPolicyRoleResult.
-        :type: str
+        :type display_name: str
         """
         self._display_name = display_name
 
@@ -153,7 +182,7 @@ class AgencyPolicyRoleResult:
         自定义策略的描述信息。
 
         :param description: The description of this AgencyPolicyRoleResult.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -163,7 +192,7 @@ class AgencyPolicyRoleResult:
 
 
         :return: The links of this AgencyPolicyRoleResult.
-        :rtype: LinksSelf
+        :rtype: :class:`huaweicloudsdkiam.v3.LinksSelf`
         """
         return self._links
 
@@ -173,7 +202,7 @@ class AgencyPolicyRoleResult:
 
 
         :param links: The links of this AgencyPolicyRoleResult.
-        :type: LinksSelf
+        :type links: :class:`huaweicloudsdkiam.v3.LinksSelf`
         """
         self._links = links
 
@@ -183,7 +212,7 @@ class AgencyPolicyRoleResult:
 
 
         :return: The policy of this AgencyPolicyRoleResult.
-        :rtype: AgencyPolicy
+        :rtype: :class:`huaweicloudsdkiam.v3.AgencyPolicy`
         """
         return self._policy
 
@@ -193,7 +222,7 @@ class AgencyPolicyRoleResult:
 
 
         :param policy: The policy of this AgencyPolicyRoleResult.
-        :type: AgencyPolicy
+        :type policy: :class:`huaweicloudsdkiam.v3.AgencyPolicy`
         """
         self._policy = policy
 
@@ -215,7 +244,7 @@ class AgencyPolicyRoleResult:
         自定义策略的中文描述信息。
 
         :param description_cn: The description_cn of this AgencyPolicyRoleResult.
-        :type: str
+        :type description_cn: str
         """
         self._description_cn = description_cn
 
@@ -237,7 +266,7 @@ class AgencyPolicyRoleResult:
         自定义策略所属账号ID。
 
         :param domain_id: The domain_id of this AgencyPolicyRoleResult.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -259,7 +288,7 @@ class AgencyPolicyRoleResult:
         自定义策略的显示模式。 > - AX表示在domain层显示。 > - XA表示在project层显示。 > - 自定义策略的显示模式只能为AX或者XA，不能在domain层和project层都显示（AA），或者在domain层和project层都不显示（XX）。
 
         :param type: The type of this AgencyPolicyRoleResult.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -281,7 +310,7 @@ class AgencyPolicyRoleResult:
         自定义策略ID。
 
         :param id: The id of this AgencyPolicyRoleResult.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -303,7 +332,7 @@ class AgencyPolicyRoleResult:
         自定义策略名。
 
         :param name: The name of this AgencyPolicyRoleResult.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -325,7 +354,7 @@ class AgencyPolicyRoleResult:
         自定义策略更新时间。
 
         :param updated_time: The updated_time of this AgencyPolicyRoleResult.
-        :type: str
+        :type updated_time: str
         """
         self._updated_time = updated_time
 
@@ -347,7 +376,7 @@ class AgencyPolicyRoleResult:
         自定义策略创建时间。
 
         :param created_time: The created_time of this AgencyPolicyRoleResult.
-        :type: str
+        :type created_time: str
         """
         self._created_time = created_time
 
@@ -369,7 +398,7 @@ class AgencyPolicyRoleResult:
         自定义策略的引用次数。
 
         :param references: The references of this AgencyPolicyRoleResult.
-        :type: str
+        :type references: str
         """
         self._references = references
 

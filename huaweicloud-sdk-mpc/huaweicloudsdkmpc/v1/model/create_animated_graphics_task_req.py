@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateAnimatedGraphicsTaskReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CreateAnimatedGraphicsTaskReq:
     }
 
     def __init__(self, input=None, output=None, user_data=None, output_param=None):
-        """CreateAnimatedGraphicsTaskReq - a model defined in huaweicloud sdk"""
+        """CreateAnimatedGraphicsTaskReq
+
+        The model defined in huaweicloud sdk
+
+        :param input: 
+        :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        :param output: 
+        :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        :param user_data: 用户自定义数据。 
+        :type user_data: str
+        :param output_param: 
+        :type output_param: :class:`huaweicloudsdkmpc.v1.AnimatedGraphicsOutputParam`
+        """
         
         
 
@@ -61,7 +72,7 @@ class CreateAnimatedGraphicsTaskReq:
 
 
         :return: The input of this CreateAnimatedGraphicsTaskReq.
-        :rtype: ObsObjInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         return self._input
 
@@ -71,7 +82,7 @@ class CreateAnimatedGraphicsTaskReq:
 
 
         :param input: The input of this CreateAnimatedGraphicsTaskReq.
-        :type: ObsObjInfo
+        :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         self._input = input
 
@@ -81,7 +92,7 @@ class CreateAnimatedGraphicsTaskReq:
 
 
         :return: The output of this CreateAnimatedGraphicsTaskReq.
-        :rtype: ObsObjInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         return self._output
 
@@ -91,7 +102,7 @@ class CreateAnimatedGraphicsTaskReq:
 
 
         :param output: The output of this CreateAnimatedGraphicsTaskReq.
-        :type: ObsObjInfo
+        :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         self._output = output
 
@@ -113,7 +124,7 @@ class CreateAnimatedGraphicsTaskReq:
         用户自定义数据。 
 
         :param user_data: The user_data of this CreateAnimatedGraphicsTaskReq.
-        :type: str
+        :type user_data: str
         """
         self._user_data = user_data
 
@@ -123,7 +134,7 @@ class CreateAnimatedGraphicsTaskReq:
 
 
         :return: The output_param of this CreateAnimatedGraphicsTaskReq.
-        :rtype: AnimatedGraphicsOutputParam
+        :rtype: :class:`huaweicloudsdkmpc.v1.AnimatedGraphicsOutputParam`
         """
         return self._output_param
 
@@ -133,7 +144,7 @@ class CreateAnimatedGraphicsTaskReq:
 
 
         :param output_param: The output_param of this CreateAnimatedGraphicsTaskReq.
-        :type: AnimatedGraphicsOutputParam
+        :type output_param: :class:`huaweicloudsdkmpc.v1.AnimatedGraphicsOutputParam`
         """
         self._output_param = output_param
 

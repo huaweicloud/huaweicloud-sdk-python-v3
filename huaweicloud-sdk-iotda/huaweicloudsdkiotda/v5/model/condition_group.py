@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ConditionGroup:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ConditionGroup:
     }
 
     def __init__(self, conditions=None, logic=None, time_range=None):
-        """ConditionGroup - a model defined in huaweicloud sdk"""
+        """ConditionGroup
+
+        The model defined in huaweicloud sdk
+
+        :param conditions: **参数说明**：规则的条件列表，单个规则最多支持设置10个条件。
+        :type conditions: list[:class:`huaweicloudsdkiotda.v5.RuleCondition`]
+        :param logic: **参数说明**：规则条件列表中多个条件之间的逻辑关系，默认值：and。 **取值范围**： - and：逻辑且。 - or：逻辑或。
+        :type logic: str
+        :param time_range: 
+        :type time_range: :class:`huaweicloudsdkiotda.v5.TimeRange`
+        """
         
         
 
@@ -57,7 +66,7 @@ class ConditionGroup:
         **参数说明**：规则的条件列表，单个规则最多支持设置10个条件。
 
         :return: The conditions of this ConditionGroup.
-        :rtype: list[RuleCondition]
+        :rtype: list[:class:`huaweicloudsdkiotda.v5.RuleCondition`]
         """
         return self._conditions
 
@@ -68,7 +77,7 @@ class ConditionGroup:
         **参数说明**：规则的条件列表，单个规则最多支持设置10个条件。
 
         :param conditions: The conditions of this ConditionGroup.
-        :type: list[RuleCondition]
+        :type conditions: list[:class:`huaweicloudsdkiotda.v5.RuleCondition`]
         """
         self._conditions = conditions
 
@@ -90,7 +99,7 @@ class ConditionGroup:
         **参数说明**：规则条件列表中多个条件之间的逻辑关系，默认值：and。 **取值范围**： - and：逻辑且。 - or：逻辑或。
 
         :param logic: The logic of this ConditionGroup.
-        :type: str
+        :type logic: str
         """
         self._logic = logic
 
@@ -100,7 +109,7 @@ class ConditionGroup:
 
 
         :return: The time_range of this ConditionGroup.
-        :rtype: TimeRange
+        :rtype: :class:`huaweicloudsdkiotda.v5.TimeRange`
         """
         return self._time_range
 
@@ -110,7 +119,7 @@ class ConditionGroup:
 
 
         :param time_range: The time_range of this ConditionGroup.
-        :type: TimeRange
+        :type time_range: :class:`huaweicloudsdkiotda.v5.TimeRange`
         """
         self._time_range = time_range
 

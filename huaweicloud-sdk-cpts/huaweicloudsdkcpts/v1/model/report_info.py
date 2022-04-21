@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ReportInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ReportInfo:
     }
 
     def __init__(self, brokens=None, details=None, outline=None, rtproportion=None, task_info=None):
-        """ReportInfo - a model defined in huaweicloud sdk"""
+        """ReportInfo
+
+        The model defined in huaweicloud sdk
+
+        :param brokens: 
+        :type brokens: :class:`huaweicloudsdkcpts.v1.ReportbrokensInfo`
+        :param details: 
+        :type details: :class:`huaweicloudsdkcpts.v1.ReportdetailsInfo`
+        :param outline: 
+        :type outline: :class:`huaweicloudsdkcpts.v1.ReportoutlineInfo`
+        :param rtproportion: 响应时间分布
+        :type rtproportion: str
+        :param task_info: 
+        :type task_info: :class:`huaweicloudsdkcpts.v1.ReportTaskInfo`
+        """
         
         
 
@@ -66,7 +79,7 @@ class ReportInfo:
 
 
         :return: The brokens of this ReportInfo.
-        :rtype: ReportbrokensInfo
+        :rtype: :class:`huaweicloudsdkcpts.v1.ReportbrokensInfo`
         """
         return self._brokens
 
@@ -76,7 +89,7 @@ class ReportInfo:
 
 
         :param brokens: The brokens of this ReportInfo.
-        :type: ReportbrokensInfo
+        :type brokens: :class:`huaweicloudsdkcpts.v1.ReportbrokensInfo`
         """
         self._brokens = brokens
 
@@ -86,7 +99,7 @@ class ReportInfo:
 
 
         :return: The details of this ReportInfo.
-        :rtype: ReportdetailsInfo
+        :rtype: :class:`huaweicloudsdkcpts.v1.ReportdetailsInfo`
         """
         return self._details
 
@@ -96,7 +109,7 @@ class ReportInfo:
 
 
         :param details: The details of this ReportInfo.
-        :type: ReportdetailsInfo
+        :type details: :class:`huaweicloudsdkcpts.v1.ReportdetailsInfo`
         """
         self._details = details
 
@@ -106,7 +119,7 @@ class ReportInfo:
 
 
         :return: The outline of this ReportInfo.
-        :rtype: ReportoutlineInfo
+        :rtype: :class:`huaweicloudsdkcpts.v1.ReportoutlineInfo`
         """
         return self._outline
 
@@ -116,7 +129,7 @@ class ReportInfo:
 
 
         :param outline: The outline of this ReportInfo.
-        :type: ReportoutlineInfo
+        :type outline: :class:`huaweicloudsdkcpts.v1.ReportoutlineInfo`
         """
         self._outline = outline
 
@@ -138,7 +151,7 @@ class ReportInfo:
         响应时间分布
 
         :param rtproportion: The rtproportion of this ReportInfo.
-        :type: str
+        :type rtproportion: str
         """
         self._rtproportion = rtproportion
 
@@ -148,7 +161,7 @@ class ReportInfo:
 
 
         :return: The task_info of this ReportInfo.
-        :rtype: ReportTaskInfo
+        :rtype: :class:`huaweicloudsdkcpts.v1.ReportTaskInfo`
         """
         return self._task_info
 
@@ -158,7 +171,7 @@ class ReportInfo:
 
 
         :param task_info: The task_info of this ReportInfo.
-        :type: ReportTaskInfo
+        :type task_info: :class:`huaweicloudsdkcpts.v1.ReportTaskInfo`
         """
         self._task_info = task_info
 

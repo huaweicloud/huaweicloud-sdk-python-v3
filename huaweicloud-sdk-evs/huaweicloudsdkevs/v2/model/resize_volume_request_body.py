@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResizeVolumeRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ResizeVolumeRequestBody:
     }
 
     def __init__(self, bss_param=None, os_extend=None):
-        """ResizeVolumeRequestBody - a model defined in huaweicloud sdk"""
+        """ResizeVolumeRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param bss_param: 
+        :type bss_param: :class:`huaweicloudsdkevs.v2.BssParamForResizeVolume`
+        :param os_extend: 
+        :type os_extend: :class:`huaweicloudsdkevs.v2.OsExtend`
+        """
         
         
 
@@ -50,7 +57,7 @@ class ResizeVolumeRequestBody:
 
 
         :return: The bss_param of this ResizeVolumeRequestBody.
-        :rtype: BssParamForResizeVolume
+        :rtype: :class:`huaweicloudsdkevs.v2.BssParamForResizeVolume`
         """
         return self._bss_param
 
@@ -60,7 +67,7 @@ class ResizeVolumeRequestBody:
 
 
         :param bss_param: The bss_param of this ResizeVolumeRequestBody.
-        :type: BssParamForResizeVolume
+        :type bss_param: :class:`huaweicloudsdkevs.v2.BssParamForResizeVolume`
         """
         self._bss_param = bss_param
 
@@ -70,7 +77,7 @@ class ResizeVolumeRequestBody:
 
 
         :return: The os_extend of this ResizeVolumeRequestBody.
-        :rtype: OsExtend
+        :rtype: :class:`huaweicloudsdkevs.v2.OsExtend`
         """
         return self._os_extend
 
@@ -80,7 +87,7 @@ class ResizeVolumeRequestBody:
 
 
         :param os_extend: The os_extend of this ResizeVolumeRequestBody.
-        :type: OsExtend
+        :type os_extend: :class:`huaweicloudsdkevs.v2.OsExtend`
         """
         self._os_extend = os_extend
 

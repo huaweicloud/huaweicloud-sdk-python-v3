@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTransportHistoriesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListTransportHistoriesResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, file_ops_list=None):
-        """ListTransportHistoriesResponse - a model defined in huaweicloud sdk"""
+        """ListTransportHistoriesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total_count: 总数
+        :type total_count: int
+        :param file_ops_list: 文件记录列表
+        :type file_ops_list: list[:class:`huaweicloudsdkosm.v2.FileOperateLog`]
+        """
         
         super(ListTransportHistoriesResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListTransportHistoriesResponse(SdkResponse):
         总数
 
         :param total_count: The total_count of this ListTransportHistoriesResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 
@@ -74,7 +81,7 @@ class ListTransportHistoriesResponse(SdkResponse):
         文件记录列表
 
         :return: The file_ops_list of this ListTransportHistoriesResponse.
-        :rtype: list[FileOperateLog]
+        :rtype: list[:class:`huaweicloudsdkosm.v2.FileOperateLog`]
         """
         return self._file_ops_list
 
@@ -85,7 +92,7 @@ class ListTransportHistoriesResponse(SdkResponse):
         文件记录列表
 
         :param file_ops_list: The file_ops_list of this ListTransportHistoriesResponse.
-        :type: list[FileOperateLog]
+        :type file_ops_list: list[:class:`huaweicloudsdkosm.v2.FileOperateLog`]
         """
         self._file_ops_list = file_ops_list
 

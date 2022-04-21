@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowGaussMySqlEngineVersionResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowGaussMySqlEngineVersionResponse(SdkResponse):
     }
 
     def __init__(self, datastores=None):
-        """ShowGaussMySqlEngineVersionResponse - a model defined in huaweicloud sdk"""
+        """ShowGaussMySqlEngineVersionResponse
+
+        The model defined in huaweicloud sdk
+
+        :param datastores: 数据库版本信息列表
+        :type datastores: list[:class:`huaweicloudsdkgaussdb.v3.MysqlEngineVersionInfo`]
+        """
         
         super(ShowGaussMySqlEngineVersionResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ShowGaussMySqlEngineVersionResponse(SdkResponse):
         数据库版本信息列表
 
         :return: The datastores of this ShowGaussMySqlEngineVersionResponse.
-        :rtype: list[MysqlEngineVersionInfo]
+        :rtype: list[:class:`huaweicloudsdkgaussdb.v3.MysqlEngineVersionInfo`]
         """
         return self._datastores
 
@@ -58,7 +63,7 @@ class ShowGaussMySqlEngineVersionResponse(SdkResponse):
         数据库版本信息列表
 
         :param datastores: The datastores of this ShowGaussMySqlEngineVersionResponse.
-        :type: list[MysqlEngineVersionInfo]
+        :type datastores: list[:class:`huaweicloudsdkgaussdb.v3.MysqlEngineVersionInfo`]
         """
         self._datastores = datastores
 

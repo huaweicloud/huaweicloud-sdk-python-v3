@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CommentUserV4:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CommentUserV4:
     }
 
     def __init__(self, user_num_id=None, user_name=None, nick_name=None):
-        """CommentUserV4 - a model defined in huaweicloud sdk"""
+        """CommentUserV4
+
+        The model defined in huaweicloud sdk
+
+        :param user_num_id: 发表评论用户id
+        :type user_num_id: int
+        :param user_name: 发表评论用户名称
+        :type user_name: str
+        :param nick_name: 发表评论用户昵称
+        :type nick_name: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class CommentUserV4:
         发表评论用户id
 
         :param user_num_id: The user_num_id of this CommentUserV4.
-        :type: int
+        :type user_num_id: int
         """
         self._user_num_id = user_num_id
 
@@ -90,7 +99,7 @@ class CommentUserV4:
         发表评论用户名称
 
         :param user_name: The user_name of this CommentUserV4.
-        :type: str
+        :type user_name: str
         """
         self._user_name = user_name
 
@@ -112,7 +121,7 @@ class CommentUserV4:
         发表评论用户昵称
 
         :param nick_name: The nick_name of this CommentUserV4.
-        :type: str
+        :type nick_name: str
         """
         self._nick_name = nick_name
 

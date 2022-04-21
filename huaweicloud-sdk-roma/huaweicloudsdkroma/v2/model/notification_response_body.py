@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NotificationResponseBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class NotificationResponseBody:
     }
 
     def __init__(self, notification_id=None, type=None, status=None, topic=None, instance_id=None, app_id=None):
-        """NotificationResponseBody - a model defined in huaweicloud sdk"""
+        """NotificationResponseBody
+
+        The model defined in huaweicloud sdk
+
+        :param notification_id: 订阅ID
+        :type notification_id: int
+        :param type: 订阅类型, 0:设备上线通知类型, 1:设备下线通知类型, 2:设备添加通知类型, 3:设备删除通知类型, 4:设备变更通知类型
+        :type type: int
+        :param status: 订阅管理状态，0：启用，1：停用
+        :type status: int
+        :param topic: 订阅的topic名称
+        :type topic: str
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param app_id: 应用ID
+        :type app_id: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class NotificationResponseBody:
         订阅ID
 
         :param notification_id: The notification_id of this NotificationResponseBody.
-        :type: int
+        :type notification_id: int
         """
         self._notification_id = notification_id
 
@@ -105,7 +120,7 @@ class NotificationResponseBody:
         订阅类型, 0:设备上线通知类型, 1:设备下线通知类型, 2:设备添加通知类型, 3:设备删除通知类型, 4:设备变更通知类型
 
         :param type: The type of this NotificationResponseBody.
-        :type: int
+        :type type: int
         """
         self._type = type
 
@@ -127,7 +142,7 @@ class NotificationResponseBody:
         订阅管理状态，0：启用，1：停用
 
         :param status: The status of this NotificationResponseBody.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -149,7 +164,7 @@ class NotificationResponseBody:
         订阅的topic名称
 
         :param topic: The topic of this NotificationResponseBody.
-        :type: str
+        :type topic: str
         """
         self._topic = topic
 
@@ -171,7 +186,7 @@ class NotificationResponseBody:
         实例ID
 
         :param instance_id: The instance_id of this NotificationResponseBody.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -193,7 +208,7 @@ class NotificationResponseBody:
         应用ID
 
         :param app_id: The app_id of this NotificationResponseBody.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AgencyResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class AgencyResult:
     }
 
     def __init__(self, create_time=None, description=None, domain_id=None, duration=None, expire_time=None, id=None, name=None, trust_domain_id=None, trust_domain_name=None):
-        """AgencyResult - a model defined in huaweicloud sdk"""
+        """AgencyResult
+
+        The model defined in huaweicloud sdk
+
+        :param create_time: 委托创建时间。
+        :type create_time: str
+        :param description: 委托描述信息。
+        :type description: str
+        :param domain_id: 委托方账号ID。
+        :type domain_id: str
+        :param duration: 委托的期限。取值为\&quot;FOREVER\&quot;或“null”表示委托的期限为永久，取值为\&quot;ONEDAY\&quot;表示委托的期限为一天。
+        :type duration: str
+        :param expire_time: 委托过期时间。“null”表示不过期。
+        :type expire_time: str
+        :param id: 委托ID。
+        :type id: str
+        :param name: 委托名。
+        :type name: str
+        :param trust_domain_id: 被委托方账号ID。
+        :type trust_domain_id: str
+        :param trust_domain_name: 被委托方账号名。
+        :type trust_domain_name: str
+        """
         
         
 
@@ -92,7 +113,7 @@ class AgencyResult:
         委托创建时间。
 
         :param create_time: The create_time of this AgencyResult.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -114,7 +135,7 @@ class AgencyResult:
         委托描述信息。
 
         :param description: The description of this AgencyResult.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -136,7 +157,7 @@ class AgencyResult:
         委托方账号ID。
 
         :param domain_id: The domain_id of this AgencyResult.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -158,7 +179,7 @@ class AgencyResult:
         委托的期限。取值为\"FOREVER\"或“null”表示委托的期限为永久，取值为\"ONEDAY\"表示委托的期限为一天。
 
         :param duration: The duration of this AgencyResult.
-        :type: str
+        :type duration: str
         """
         self._duration = duration
 
@@ -180,7 +201,7 @@ class AgencyResult:
         委托过期时间。“null”表示不过期。
 
         :param expire_time: The expire_time of this AgencyResult.
-        :type: str
+        :type expire_time: str
         """
         self._expire_time = expire_time
 
@@ -202,7 +223,7 @@ class AgencyResult:
         委托ID。
 
         :param id: The id of this AgencyResult.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -224,7 +245,7 @@ class AgencyResult:
         委托名。
 
         :param name: The name of this AgencyResult.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -246,7 +267,7 @@ class AgencyResult:
         被委托方账号ID。
 
         :param trust_domain_id: The trust_domain_id of this AgencyResult.
-        :type: str
+        :type trust_domain_id: str
         """
         self._trust_domain_id = trust_domain_id
 
@@ -268,7 +289,7 @@ class AgencyResult:
         被委托方账号名。
 
         :param trust_domain_name: The trust_domain_name of this AgencyResult.
-        :type: str
+        :type trust_domain_name: str
         """
         self._trust_domain_name = trust_domain_name
 

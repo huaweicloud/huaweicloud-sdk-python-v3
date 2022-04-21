@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAvailableZonesRespAvailableZones:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class ListAvailableZonesRespAvailableZones:
     }
 
     def __init__(self, sold_out=None, id=None, code=None, name=None, port=None, resource_availability=None, default_az=None, remain_time=None, ipv6_enable=None):
-        """ListAvailableZonesRespAvailableZones - a model defined in huaweicloud sdk"""
+        """ListAvailableZonesRespAvailableZones
+
+        The model defined in huaweicloud sdk
+
+        :param sold_out: 是否售罄。
+        :type sold_out: bool
+        :param id: 可用区ID。
+        :type id: str
+        :param code: 可用区编码。
+        :type code: str
+        :param name: 可用区名称。
+        :type name: str
+        :param port: 可用区端口号。
+        :type port: str
+        :param resource_availability: 分区上是否还有可用资源。
+        :type resource_availability: str
+        :param default_az: 是否为默认可用区。
+        :type default_az: bool
+        :param remain_time: 剩余时间。
+        :type remain_time: int
+        :param ipv6_enable: 是否支持IPv6。
+        :type ipv6_enable: bool
+        """
         
         
 
@@ -98,7 +119,7 @@ class ListAvailableZonesRespAvailableZones:
         是否售罄。
 
         :param sold_out: The sold_out of this ListAvailableZonesRespAvailableZones.
-        :type: bool
+        :type sold_out: bool
         """
         self._sold_out = sold_out
 
@@ -120,7 +141,7 @@ class ListAvailableZonesRespAvailableZones:
         可用区ID。
 
         :param id: The id of this ListAvailableZonesRespAvailableZones.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -142,7 +163,7 @@ class ListAvailableZonesRespAvailableZones:
         可用区编码。
 
         :param code: The code of this ListAvailableZonesRespAvailableZones.
-        :type: str
+        :type code: str
         """
         self._code = code
 
@@ -164,7 +185,7 @@ class ListAvailableZonesRespAvailableZones:
         可用区名称。
 
         :param name: The name of this ListAvailableZonesRespAvailableZones.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -186,7 +207,7 @@ class ListAvailableZonesRespAvailableZones:
         可用区端口号。
 
         :param port: The port of this ListAvailableZonesRespAvailableZones.
-        :type: str
+        :type port: str
         """
         self._port = port
 
@@ -208,7 +229,7 @@ class ListAvailableZonesRespAvailableZones:
         分区上是否还有可用资源。
 
         :param resource_availability: The resource_availability of this ListAvailableZonesRespAvailableZones.
-        :type: str
+        :type resource_availability: str
         """
         self._resource_availability = resource_availability
 
@@ -230,7 +251,7 @@ class ListAvailableZonesRespAvailableZones:
         是否为默认可用区。
 
         :param default_az: The default_az of this ListAvailableZonesRespAvailableZones.
-        :type: bool
+        :type default_az: bool
         """
         self._default_az = default_az
 
@@ -252,7 +273,7 @@ class ListAvailableZonesRespAvailableZones:
         剩余时间。
 
         :param remain_time: The remain_time of this ListAvailableZonesRespAvailableZones.
-        :type: int
+        :type remain_time: int
         """
         self._remain_time = remain_time
 
@@ -274,7 +295,7 @@ class ListAvailableZonesRespAvailableZones:
         是否支持IPv6。
 
         :param ipv6_enable: The ipv6_enable of this ListAvailableZonesRespAvailableZones.
-        :type: bool
+        :type ipv6_enable: bool
         """
         self._ipv6_enable = ipv6_enable
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunCheckTaskJobsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class RunCheckTaskJobsRequest:
     }
 
     def __init__(self, status=None, offset=None, limit=None):
-        """RunCheckTaskJobsRequest - a model defined in huaweicloud sdk"""
+        """RunCheckTaskJobsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param status: 图像内容审核任务处理状态如下：  - created 已创建  - running 正在处理  - finish 已完成  - failed 处理失败 
+        :type status: str
+        :param offset: 偏移量， 默认为0。
+        :type offset: int
+        :param limit: 指定每一页返回的最大条目数，默认为符合查询条件的总任务数量。
+        :type limit: int
+        """
         
         
 
@@ -68,7 +77,7 @@ class RunCheckTaskJobsRequest:
         图像内容审核任务处理状态如下：  - created 已创建  - running 正在处理  - finish 已完成  - failed 处理失败 
 
         :param status: The status of this RunCheckTaskJobsRequest.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -90,7 +99,7 @@ class RunCheckTaskJobsRequest:
         偏移量， 默认为0。
 
         :param offset: The offset of this RunCheckTaskJobsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -112,7 +121,7 @@ class RunCheckTaskJobsRequest:
         指定每一页返回的最大条目数，默认为符合查询条件的总任务数量。
 
         :param limit: The limit of this RunCheckTaskJobsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTag:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListTag:
     }
 
     def __init__(self, key=None, values=None):
-        """ListTag - a model defined in huaweicloud sdk"""
+        """ListTag
+
+        The model defined in huaweicloud sdk
+
+        :param key: 功能说明：标签键 约束：key不能为空
+        :type key: str
+        :param values: 功能描述：标签值列表。 如果values为空列表，则表示any_value。value之间为或的关系。
+        :type values: list[str]
+        """
         
         
 
@@ -61,7 +68,7 @@ class ListTag:
         功能说明：标签键 约束：key不能为空
 
         :param key: The key of this ListTag.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -83,7 +90,7 @@ class ListTag:
         功能描述：标签值列表。 如果values为空列表，则表示any_value。value之间为或的关系。
 
         :param values: The values of this ListTag.
-        :type: list[str]
+        :type values: list[str]
         """
         self._values = values
 

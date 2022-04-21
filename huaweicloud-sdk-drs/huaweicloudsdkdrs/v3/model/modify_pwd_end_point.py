@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ModifyPwdEndPoint:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ModifyPwdEndPoint:
     }
 
     def __init__(self, db_password=None, end_point_type=None, job_id=None, kerberos=None):
-        """ModifyPwdEndPoint - a model defined in huaweicloud sdk"""
+        """ModifyPwdEndPoint
+
+        The model defined in huaweicloud sdk
+
+        :param db_password: 数据库密码
+        :type db_password: str
+        :param end_point_type: 类型，so：源库；ta：目标库。
+        :type end_point_type: str
+        :param job_id: 任务id
+        :type job_id: str
+        :param kerberos: 
+        :type kerberos: :class:`huaweicloudsdkdrs.v3.KerberosVO`
+        """
         
         
 
@@ -70,7 +81,7 @@ class ModifyPwdEndPoint:
         数据库密码
 
         :param db_password: The db_password of this ModifyPwdEndPoint.
-        :type: str
+        :type db_password: str
         """
         self._db_password = db_password
 
@@ -92,7 +103,7 @@ class ModifyPwdEndPoint:
         类型，so：源库；ta：目标库。
 
         :param end_point_type: The end_point_type of this ModifyPwdEndPoint.
-        :type: str
+        :type end_point_type: str
         """
         self._end_point_type = end_point_type
 
@@ -114,7 +125,7 @@ class ModifyPwdEndPoint:
         任务id
 
         :param job_id: The job_id of this ModifyPwdEndPoint.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -124,7 +135,7 @@ class ModifyPwdEndPoint:
 
 
         :return: The kerberos of this ModifyPwdEndPoint.
-        :rtype: KerberosVO
+        :rtype: :class:`huaweicloudsdkdrs.v3.KerberosVO`
         """
         return self._kerberos
 
@@ -134,7 +145,7 @@ class ModifyPwdEndPoint:
 
 
         :param kerberos: The kerberos of this ModifyPwdEndPoint.
-        :type: KerberosVO
+        :type kerberos: :class:`huaweicloudsdkdrs.v3.KerberosVO`
         """
         self._kerberos = kerberos
 

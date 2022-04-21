@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCaseCategoriesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListCaseCategoriesResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, incident_sub_type_list=None):
-        """ListCaseCategoriesResponse - a model defined in huaweicloud sdk"""
+        """ListCaseCategoriesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total_count: 总数
+        :type total_count: int
+        :param incident_sub_type_list: 工单子类型列表
+        :type incident_sub_type_list: list[:class:`huaweicloudsdkosm.v2.IncidentSubTypeV2Do`]
+        """
         
         super(ListCaseCategoriesResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListCaseCategoriesResponse(SdkResponse):
         总数
 
         :param total_count: The total_count of this ListCaseCategoriesResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 
@@ -74,7 +81,7 @@ class ListCaseCategoriesResponse(SdkResponse):
         工单子类型列表
 
         :return: The incident_sub_type_list of this ListCaseCategoriesResponse.
-        :rtype: list[IncidentSubTypeV2Do]
+        :rtype: list[:class:`huaweicloudsdkosm.v2.IncidentSubTypeV2Do`]
         """
         return self._incident_sub_type_list
 
@@ -85,7 +92,7 @@ class ListCaseCategoriesResponse(SdkResponse):
         工单子类型列表
 
         :param incident_sub_type_list: The incident_sub_type_list of this ListCaseCategoriesResponse.
-        :type: list[IncidentSubTypeV2Do]
+        :type incident_sub_type_list: list[:class:`huaweicloudsdkosm.v2.IncidentSubTypeV2Do`]
         """
         self._incident_sub_type_list = incident_sub_type_list
 

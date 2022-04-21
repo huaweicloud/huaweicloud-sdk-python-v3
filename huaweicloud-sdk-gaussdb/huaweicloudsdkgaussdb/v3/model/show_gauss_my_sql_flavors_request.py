@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowGaussMySqlFlavorsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ShowGaussMySqlFlavorsRequest:
     }
 
     def __init__(self, x_language=None, database_name=None, version_name=None, availability_zone_mode=None, spec_code=None):
-        """ShowGaussMySqlFlavorsRequest - a model defined in huaweicloud sdk"""
+        """ShowGaussMySqlFlavorsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言。
+        :type x_language: str
+        :param database_name: 数据库引擎名称。
+        :type database_name: str
+        :param version_name: 数据库版本号，目前仅支持兼容MySQL 8.0。
+        :type version_name: str
+        :param availability_zone_mode: 规格的可用区模式，现在仅支持\&quot;single\&quot;、\&quot;multi\&quot;，不区分大小写。
+        :type availability_zone_mode: str
+        :param spec_code: 规格编码。
+        :type spec_code: str
+        """
         
         
 
@@ -76,7 +89,7 @@ class ShowGaussMySqlFlavorsRequest:
         语言。
 
         :param x_language: The x_language of this ShowGaussMySqlFlavorsRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -98,7 +111,7 @@ class ShowGaussMySqlFlavorsRequest:
         数据库引擎名称。
 
         :param database_name: The database_name of this ShowGaussMySqlFlavorsRequest.
-        :type: str
+        :type database_name: str
         """
         self._database_name = database_name
 
@@ -120,7 +133,7 @@ class ShowGaussMySqlFlavorsRequest:
         数据库版本号，目前仅支持兼容MySQL 8.0。
 
         :param version_name: The version_name of this ShowGaussMySqlFlavorsRequest.
-        :type: str
+        :type version_name: str
         """
         self._version_name = version_name
 
@@ -142,7 +155,7 @@ class ShowGaussMySqlFlavorsRequest:
         规格的可用区模式，现在仅支持\"single\"、\"multi\"，不区分大小写。
 
         :param availability_zone_mode: The availability_zone_mode of this ShowGaussMySqlFlavorsRequest.
-        :type: str
+        :type availability_zone_mode: str
         """
         self._availability_zone_mode = availability_zone_mode
 
@@ -164,7 +177,7 @@ class ShowGaussMySqlFlavorsRequest:
         规格编码。
 
         :param spec_code: The spec_code of this ShowGaussMySqlFlavorsRequest.
-        :type: str
+        :type spec_code: str
         """
         self._spec_code = spec_code
 

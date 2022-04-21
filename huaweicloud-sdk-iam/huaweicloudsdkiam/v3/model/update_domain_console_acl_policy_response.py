@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDomainConsoleAclPolicyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateDomainConsoleAclPolicyResponse(SdkResponse):
     }
 
     def __init__(self, console_acl_policy=None):
-        """UpdateDomainConsoleAclPolicyResponse - a model defined in huaweicloud sdk"""
+        """UpdateDomainConsoleAclPolicyResponse
+
+        The model defined in huaweicloud sdk
+
+        :param console_acl_policy: 
+        :type console_acl_policy: :class:`huaweicloudsdkiam.v3.AclPolicyResult`
+        """
         
         super(UpdateDomainConsoleAclPolicyResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class UpdateDomainConsoleAclPolicyResponse(SdkResponse):
 
 
         :return: The console_acl_policy of this UpdateDomainConsoleAclPolicyResponse.
-        :rtype: AclPolicyResult
+        :rtype: :class:`huaweicloudsdkiam.v3.AclPolicyResult`
         """
         return self._console_acl_policy
 
@@ -56,7 +61,7 @@ class UpdateDomainConsoleAclPolicyResponse(SdkResponse):
 
 
         :param console_acl_policy: The console_acl_policy of this UpdateDomainConsoleAclPolicyResponse.
-        :type: AclPolicyResult
+        :type console_acl_policy: :class:`huaweicloudsdkiam.v3.AclPolicyResult`
         """
         self._console_acl_policy = console_acl_policy
 

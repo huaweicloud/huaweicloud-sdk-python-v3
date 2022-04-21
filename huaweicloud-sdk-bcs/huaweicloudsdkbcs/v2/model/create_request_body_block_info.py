@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateRequestBodyBlockInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateRequestBodyBlockInfo:
     }
 
     def __init__(self, batch_timeout=None, max_message_count=None, preferred_maxbytes=None):
-        """CreateRequestBodyBlockInfo - a model defined in huaweicloud sdk"""
+        """CreateRequestBodyBlockInfo
+
+        The model defined in huaweicloud sdk
+
+        :param batch_timeout: 区块产生时间（单位：秒），默认2秒
+        :type batch_timeout: int
+        :param max_message_count: 区块包含交易数量，默认500
+        :type max_message_count: int
+        :param preferred_maxbytes: 区块容量（单位：MB），默认2MB
+        :type preferred_maxbytes: int
+        """
         
         
 
@@ -68,7 +77,7 @@ class CreateRequestBodyBlockInfo:
         区块产生时间（单位：秒），默认2秒
 
         :param batch_timeout: The batch_timeout of this CreateRequestBodyBlockInfo.
-        :type: int
+        :type batch_timeout: int
         """
         self._batch_timeout = batch_timeout
 
@@ -90,7 +99,7 @@ class CreateRequestBodyBlockInfo:
         区块包含交易数量，默认500
 
         :param max_message_count: The max_message_count of this CreateRequestBodyBlockInfo.
-        :type: int
+        :type max_message_count: int
         """
         self._max_message_count = max_message_count
 
@@ -112,7 +121,7 @@ class CreateRequestBodyBlockInfo:
         区块容量（单位：MB），默认2MB
 
         :param preferred_maxbytes: The preferred_maxbytes of this CreateRequestBodyBlockInfo.
-        :type: int
+        :type preferred_maxbytes: int
         """
         self._preferred_maxbytes = preferred_maxbytes
 

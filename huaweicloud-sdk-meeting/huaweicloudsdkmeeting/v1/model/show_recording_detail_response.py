@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowRecordingDetailResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class ShowRecordingDetailResponse(SdkResponse):
     }
 
     def __init__(self, conf_uuid=None, conf_id=None, url=None, rcd_time=None, rcd_size=None, subject=None, scheduser_name=None, start_time=None, is_decode_finish=None, decode_end_time=None, available=None):
-        """ShowRecordingDetailResponse - a model defined in huaweicloud sdk"""
+        """ShowRecordingDetailResponse
+
+        The model defined in huaweicloud sdk
+
+        :param conf_uuid: 会议UUID。
+        :type conf_uuid: str
+        :param conf_id: 会议ID。
+        :type conf_id: str
+        :param url: 点播地址。
+        :type url: list[str]
+        :param rcd_time: 录制时长（单位秒）。
+        :type rcd_time: int
+        :param rcd_size: 录制文件大小（MB）。
+        :type rcd_size: int
+        :param subject: 会议主题。
+        :type subject: str
+        :param scheduser_name: 会议预订者。
+        :type scheduser_name: str
+        :param start_time: 会议开始时间。
+        :type start_time: str
+        :param is_decode_finish: 录制文件是否转码完成。
+        :type is_decode_finish: bool
+        :param decode_end_time: 录制文件预计转码完成时间。
+        :type decode_end_time: int
+        :param available: 录播文件是否可观看。
+        :type available: bool
+        """
         
         super(ShowRecordingDetailResponse, self).__init__()
 
@@ -108,7 +133,7 @@ class ShowRecordingDetailResponse(SdkResponse):
         会议UUID。
 
         :param conf_uuid: The conf_uuid of this ShowRecordingDetailResponse.
-        :type: str
+        :type conf_uuid: str
         """
         self._conf_uuid = conf_uuid
 
@@ -130,7 +155,7 @@ class ShowRecordingDetailResponse(SdkResponse):
         会议ID。
 
         :param conf_id: The conf_id of this ShowRecordingDetailResponse.
-        :type: str
+        :type conf_id: str
         """
         self._conf_id = conf_id
 
@@ -152,7 +177,7 @@ class ShowRecordingDetailResponse(SdkResponse):
         点播地址。
 
         :param url: The url of this ShowRecordingDetailResponse.
-        :type: list[str]
+        :type url: list[str]
         """
         self._url = url
 
@@ -174,7 +199,7 @@ class ShowRecordingDetailResponse(SdkResponse):
         录制时长（单位秒）。
 
         :param rcd_time: The rcd_time of this ShowRecordingDetailResponse.
-        :type: int
+        :type rcd_time: int
         """
         self._rcd_time = rcd_time
 
@@ -196,7 +221,7 @@ class ShowRecordingDetailResponse(SdkResponse):
         录制文件大小（MB）。
 
         :param rcd_size: The rcd_size of this ShowRecordingDetailResponse.
-        :type: int
+        :type rcd_size: int
         """
         self._rcd_size = rcd_size
 
@@ -218,7 +243,7 @@ class ShowRecordingDetailResponse(SdkResponse):
         会议主题。
 
         :param subject: The subject of this ShowRecordingDetailResponse.
-        :type: str
+        :type subject: str
         """
         self._subject = subject
 
@@ -240,7 +265,7 @@ class ShowRecordingDetailResponse(SdkResponse):
         会议预订者。
 
         :param scheduser_name: The scheduser_name of this ShowRecordingDetailResponse.
-        :type: str
+        :type scheduser_name: str
         """
         self._scheduser_name = scheduser_name
 
@@ -262,7 +287,7 @@ class ShowRecordingDetailResponse(SdkResponse):
         会议开始时间。
 
         :param start_time: The start_time of this ShowRecordingDetailResponse.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -284,7 +309,7 @@ class ShowRecordingDetailResponse(SdkResponse):
         录制文件是否转码完成。
 
         :param is_decode_finish: The is_decode_finish of this ShowRecordingDetailResponse.
-        :type: bool
+        :type is_decode_finish: bool
         """
         self._is_decode_finish = is_decode_finish
 
@@ -306,7 +331,7 @@ class ShowRecordingDetailResponse(SdkResponse):
         录制文件预计转码完成时间。
 
         :param decode_end_time: The decode_end_time of this ShowRecordingDetailResponse.
-        :type: int
+        :type decode_end_time: int
         """
         self._decode_end_time = decode_end_time
 
@@ -328,7 +353,7 @@ class ShowRecordingDetailResponse(SdkResponse):
         录播文件是否可观看。
 
         :param available: The available of this ShowRecordingDetailResponse.
-        :type: bool
+        :type available: bool
         """
         self._available = available
 

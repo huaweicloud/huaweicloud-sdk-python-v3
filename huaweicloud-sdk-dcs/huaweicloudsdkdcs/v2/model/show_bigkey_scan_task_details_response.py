@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowBigkeyScanTaskDetailsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class ShowBigkeyScanTaskDetailsResponse(SdkResponse):
     }
 
     def __init__(self, id=None, instance_id=None, status=None, scan_type=None, created_at=None, started_at=None, finished_at=None, num=None, keys=None):
-        """ShowBigkeyScanTaskDetailsResponse - a model defined in huaweicloud sdk"""
+        """ShowBigkeyScanTaskDetailsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 大key分析记录ID
+        :type id: str
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param status: 分析任务状态
+        :type status: str
+        :param scan_type: 分析方式
+        :type scan_type: str
+        :param created_at: 分析任务创建时间,格式为：\&quot;2020-06-15T02:21:18.669Z\&quot;
+        :type created_at: str
+        :param started_at: 分析任务开始时间,格式为：\&quot;2020-06-15T02:21:18.669Z\&quot;
+        :type started_at: str
+        :param finished_at: 分析任务结束时间,格式为：\&quot;2020-06-15T02:21:18.669Z\&quot;
+        :type finished_at: str
+        :param num: 大key的数量
+        :type num: int
+        :param keys: 大key记录
+        :type keys: list[:class:`huaweicloudsdkdcs.v2.BigkeysBody`]
+        """
         
         super(ShowBigkeyScanTaskDetailsResponse, self).__init__()
 
@@ -98,7 +119,7 @@ class ShowBigkeyScanTaskDetailsResponse(SdkResponse):
         大key分析记录ID
 
         :param id: The id of this ShowBigkeyScanTaskDetailsResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -120,7 +141,7 @@ class ShowBigkeyScanTaskDetailsResponse(SdkResponse):
         实例ID
 
         :param instance_id: The instance_id of this ShowBigkeyScanTaskDetailsResponse.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -142,7 +163,7 @@ class ShowBigkeyScanTaskDetailsResponse(SdkResponse):
         分析任务状态
 
         :param status: The status of this ShowBigkeyScanTaskDetailsResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -164,7 +185,7 @@ class ShowBigkeyScanTaskDetailsResponse(SdkResponse):
         分析方式
 
         :param scan_type: The scan_type of this ShowBigkeyScanTaskDetailsResponse.
-        :type: str
+        :type scan_type: str
         """
         self._scan_type = scan_type
 
@@ -186,7 +207,7 @@ class ShowBigkeyScanTaskDetailsResponse(SdkResponse):
         分析任务创建时间,格式为：\"2020-06-15T02:21:18.669Z\"
 
         :param created_at: The created_at of this ShowBigkeyScanTaskDetailsResponse.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -208,7 +229,7 @@ class ShowBigkeyScanTaskDetailsResponse(SdkResponse):
         分析任务开始时间,格式为：\"2020-06-15T02:21:18.669Z\"
 
         :param started_at: The started_at of this ShowBigkeyScanTaskDetailsResponse.
-        :type: str
+        :type started_at: str
         """
         self._started_at = started_at
 
@@ -230,7 +251,7 @@ class ShowBigkeyScanTaskDetailsResponse(SdkResponse):
         分析任务结束时间,格式为：\"2020-06-15T02:21:18.669Z\"
 
         :param finished_at: The finished_at of this ShowBigkeyScanTaskDetailsResponse.
-        :type: str
+        :type finished_at: str
         """
         self._finished_at = finished_at
 
@@ -252,7 +273,7 @@ class ShowBigkeyScanTaskDetailsResponse(SdkResponse):
         大key的数量
 
         :param num: The num of this ShowBigkeyScanTaskDetailsResponse.
-        :type: int
+        :type num: int
         """
         self._num = num
 
@@ -263,7 +284,7 @@ class ShowBigkeyScanTaskDetailsResponse(SdkResponse):
         大key记录
 
         :return: The keys of this ShowBigkeyScanTaskDetailsResponse.
-        :rtype: list[BigkeysBody]
+        :rtype: list[:class:`huaweicloudsdkdcs.v2.BigkeysBody`]
         """
         return self._keys
 
@@ -274,7 +295,7 @@ class ShowBigkeyScanTaskDetailsResponse(SdkResponse):
         大key记录
 
         :param keys: The keys of this ShowBigkeyScanTaskDetailsResponse.
-        :type: list[BigkeysBody]
+        :type keys: list[:class:`huaweicloudsdkdcs.v2.BigkeysBody`]
         """
         self._keys = keys
 

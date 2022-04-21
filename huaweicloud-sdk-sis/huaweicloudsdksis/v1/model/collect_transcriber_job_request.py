@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CollectTranscriberJobRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CollectTranscriberJobRequest:
     }
 
     def __init__(self, job_id=None):
-        """CollectTranscriberJobRequest - a model defined in huaweicloud sdk"""
+        """CollectTranscriberJobRequest
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 录音文件识别任务标识符。
+        :type job_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class CollectTranscriberJobRequest:
         录音文件识别任务标识符。
 
         :param job_id: The job_id of this CollectTranscriberJobRequest.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 

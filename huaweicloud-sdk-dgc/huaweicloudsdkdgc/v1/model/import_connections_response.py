@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ImportConnectionsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ImportConnectionsResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None):
-        """ImportConnectionsResponse - a model defined in huaweicloud sdk"""
+        """ImportConnectionsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 任务id
+        :type task_id: str
+        """
         
         super(ImportConnectionsResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class ImportConnectionsResponse(SdkResponse):
         任务id
 
         :param task_id: The task_id of this ImportConnectionsResponse.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 

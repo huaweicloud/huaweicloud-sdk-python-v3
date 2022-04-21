@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateRuleActionRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateRuleActionRequest:
     }
 
     def __init__(self, instance_id=None, action_id=None, body=None):
-        """UpdateRuleActionRequest - a model defined in huaweicloud sdk"""
+        """UpdateRuleActionRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
+        :type instance_id: str
+        :param action_id: **参数说明**：规则动作ID。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
+        :type action_id: str
+        :param body: Body of the UpdateRuleActionRequest
+        :type body: :class:`huaweicloudsdkiotda.v5.UpdateActionReq`
+        """
         
         
 
@@ -67,7 +76,7 @@ class UpdateRuleActionRequest:
         **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
         :param instance_id: The instance_id of this UpdateRuleActionRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -89,7 +98,7 @@ class UpdateRuleActionRequest:
         **参数说明**：规则动作ID。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :param action_id: The action_id of this UpdateRuleActionRequest.
-        :type: str
+        :type action_id: str
         """
         self._action_id = action_id
 
@@ -99,7 +108,7 @@ class UpdateRuleActionRequest:
 
 
         :return: The body of this UpdateRuleActionRequest.
-        :rtype: UpdateActionReq
+        :rtype: :class:`huaweicloudsdkiotda.v5.UpdateActionReq`
         """
         return self._body
 
@@ -109,7 +118,7 @@ class UpdateRuleActionRequest:
 
 
         :param body: The body of this UpdateRuleActionRequest.
-        :type: UpdateActionReq
+        :type body: :class:`huaweicloudsdkiotda.v5.UpdateActionReq`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateInstanceParamRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateInstanceParamRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, body=None):
-        """UpdateInstanceParamRequest - a model defined in huaweicloud sdk"""
+        """UpdateInstanceParamRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: DDM实例ID
+        :type instance_id: str
+        :param x_language: 语种，默认中文。中文:zh-cn;英文:en-us
+        :type x_language: str
+        :param body: Body of the UpdateInstanceParamRequest
+        :type body: :class:`huaweicloudsdkddm.v1.UpdateParametersReq`
+        """
         
         
 
@@ -67,7 +76,7 @@ class UpdateInstanceParamRequest:
         DDM实例ID
 
         :param instance_id: The instance_id of this UpdateInstanceParamRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -89,7 +98,7 @@ class UpdateInstanceParamRequest:
         语种，默认中文。中文:zh-cn;英文:en-us
 
         :param x_language: The x_language of this UpdateInstanceParamRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -99,7 +108,7 @@ class UpdateInstanceParamRequest:
 
 
         :return: The body of this UpdateInstanceParamRequest.
-        :rtype: UpdateParametersReq
+        :rtype: :class:`huaweicloudsdkddm.v1.UpdateParametersReq`
         """
         return self._body
 
@@ -109,7 +118,7 @@ class UpdateInstanceParamRequest:
 
 
         :param body: The body of this UpdateInstanceParamRequest.
-        :type: UpdateParametersReq
+        :type body: :class:`huaweicloudsdkddm.v1.UpdateParametersReq`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowListPeriodHistoryResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowListPeriodHistoryResponse(SdkResponse):
     }
 
     def __init__(self, total=None, history_records=None):
-        """ShowListPeriodHistoryResponse - a model defined in huaweicloud sdk"""
+        """ShowListPeriodHistoryResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 记录总数
+        :type total: int
+        :param history_records: 构建历史列表
+        :type history_records: list[:class:`huaweicloudsdkcloudbuild.v3.HistoryRecord1`]
+        """
         
         super(ShowListPeriodHistoryResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ShowListPeriodHistoryResponse(SdkResponse):
         记录总数
 
         :param total: The total of this ShowListPeriodHistoryResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -74,7 +81,7 @@ class ShowListPeriodHistoryResponse(SdkResponse):
         构建历史列表
 
         :return: The history_records of this ShowListPeriodHistoryResponse.
-        :rtype: list[HistoryRecord1]
+        :rtype: list[:class:`huaweicloudsdkcloudbuild.v3.HistoryRecord1`]
         """
         return self._history_records
 
@@ -85,7 +92,7 @@ class ShowListPeriodHistoryResponse(SdkResponse):
         构建历史列表
 
         :param history_records: The history_records of this ShowListPeriodHistoryResponse.
-        :type: list[HistoryRecord1]
+        :type history_records: list[:class:`huaweicloudsdkcloudbuild.v3.HistoryRecord1`]
         """
         self._history_records = history_records
 

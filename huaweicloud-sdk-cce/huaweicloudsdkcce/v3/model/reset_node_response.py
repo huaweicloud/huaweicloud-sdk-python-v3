@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResetNodeResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ResetNodeResponse(SdkResponse):
     }
 
     def __init__(self, jobid=None):
-        """ResetNodeResponse - a model defined in huaweicloud sdk"""
+        """ResetNodeResponse
+
+        The model defined in huaweicloud sdk
+
+        :param jobid: 提交任务成功后返回的任务ID，用户可以使用该ID对任务执行情况进行查询。
+        :type jobid: str
+        """
         
         super(ResetNodeResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class ResetNodeResponse(SdkResponse):
         提交任务成功后返回的任务ID，用户可以使用该ID对任务执行情况进行查询。
 
         :param jobid: The jobid of this ResetNodeResponse.
-        :type: str
+        :type jobid: str
         """
         self._jobid = jobid
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowProductConfigRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowProductConfigRequest:
     }
 
     def __init__(self, protocol_type=None):
-        """ShowProductConfigRequest - a model defined in huaweicloud sdk"""
+        """ShowProductConfigRequest
+
+        The model defined in huaweicloud sdk
+
+        :param protocol_type: 协议类型
+        :type protocol_type: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowProductConfigRequest:
         协议类型
 
         :param protocol_type: The protocol_type of this ShowProductConfigRequest.
-        :type: str
+        :type protocol_type: str
         """
         self._protocol_type = protocol_type
 

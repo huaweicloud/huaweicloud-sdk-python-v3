@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DiagnosisReportInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class DiagnosisReportInfo:
     }
 
     def __init__(self, report_id=None, status=None, begin_time=None, end_time=None, created_at=None, node_num=None, abnormal_item_sum=None, failed_item_sum=None):
-        """DiagnosisReportInfo - a model defined in huaweicloud sdk"""
+        """DiagnosisReportInfo
+
+        The model defined in huaweicloud sdk
+
+        :param report_id: 诊断报告ID
+        :type report_id: str
+        :param status: 诊断任务状态
+        :type status: str
+        :param begin_time: 诊断时间段的开始时间。格式为：2017-03-31T12:24:46.297Z
+        :type begin_time: str
+        :param end_time: 诊断时间段的结束时间。格式为：2017-03-31T12:24:46.297Z
+        :type end_time: str
+        :param created_at: 诊断报告创建时间
+        :type created_at: str
+        :param node_num: 参与诊断的节点个数
+        :type node_num: int
+        :param abnormal_item_sum: 诊断结果为异常的诊断项总数
+        :type abnormal_item_sum: int
+        :param failed_item_sum: 诊断失败的诊断项总数
+        :type failed_item_sum: int
+        """
         
         
 
@@ -85,7 +104,7 @@ class DiagnosisReportInfo:
         诊断报告ID
 
         :param report_id: The report_id of this DiagnosisReportInfo.
-        :type: str
+        :type report_id: str
         """
         self._report_id = report_id
 
@@ -107,7 +126,7 @@ class DiagnosisReportInfo:
         诊断任务状态
 
         :param status: The status of this DiagnosisReportInfo.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -129,7 +148,7 @@ class DiagnosisReportInfo:
         诊断时间段的开始时间。格式为：2017-03-31T12:24:46.297Z
 
         :param begin_time: The begin_time of this DiagnosisReportInfo.
-        :type: str
+        :type begin_time: str
         """
         self._begin_time = begin_time
 
@@ -151,7 +170,7 @@ class DiagnosisReportInfo:
         诊断时间段的结束时间。格式为：2017-03-31T12:24:46.297Z
 
         :param end_time: The end_time of this DiagnosisReportInfo.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -173,7 +192,7 @@ class DiagnosisReportInfo:
         诊断报告创建时间
 
         :param created_at: The created_at of this DiagnosisReportInfo.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -195,7 +214,7 @@ class DiagnosisReportInfo:
         参与诊断的节点个数
 
         :param node_num: The node_num of this DiagnosisReportInfo.
-        :type: int
+        :type node_num: int
         """
         self._node_num = node_num
 
@@ -217,7 +236,7 @@ class DiagnosisReportInfo:
         诊断结果为异常的诊断项总数
 
         :param abnormal_item_sum: The abnormal_item_sum of this DiagnosisReportInfo.
-        :type: int
+        :type abnormal_item_sum: int
         """
         self._abnormal_item_sum = abnormal_item_sum
 
@@ -239,7 +258,7 @@ class DiagnosisReportInfo:
         诊断失败的诊断项总数
 
         :param failed_item_sum: The failed_item_sum of this DiagnosisReportInfo.
-        :type: int
+        :type failed_item_sum: int
         """
         self._failed_item_sum = failed_item_sum
 

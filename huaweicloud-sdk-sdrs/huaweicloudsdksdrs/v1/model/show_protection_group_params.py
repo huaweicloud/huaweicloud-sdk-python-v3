@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowProtectionGroupParams:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -78,7 +77,61 @@ class ShowProtectionGroupParams:
     }
 
     def __init__(self, id=None, name=None, description=None, status=None, progress=None, source_availability_zone=None, target_availability_zone=None, domain_id=None, domain_name=None, priority_station=None, protected_instance_num=None, replication_num=None, disaster_recovery_drill_num=None, protected_status=None, replication_status=None, health_status=None, source_vpc_id=None, target_vpc_id=None, test_vpc_id=None, dr_type=None, created_at=None, updated_at=None, protection_type=None, replication_model=None, server_type=None):
-        """ShowProtectionGroupParams - a model defined in huaweicloud sdk"""
+        """ShowProtectionGroupParams
+
+        The model defined in huaweicloud sdk
+
+        :param id: 保护组的ID。
+        :type id: str
+        :param name: 保护组的名称。
+        :type name: str
+        :param description: 保护组的描述。
+        :type description: str
+        :param status: 保护组的状态。
+        :type status: str
+        :param progress: 保护组的同步进度。单位：百分比（%）。
+        :type progress: int
+        :param source_availability_zone: 保护组创建时的生产站点可用区名称。注意：保护组切换、故障切换后，该值不变。
+        :type source_availability_zone: str
+        :param target_availability_zone: 保护组创建时的容灾站点可用区名称。注意：保护组切换、故障切换后，该值不变。
+        :type target_availability_zone: str
+        :param domain_id: 双活域ID。
+        :type domain_id: str
+        :param domain_name: 双活域名称。
+        :type domain_name: str
+        :param priority_station: 用于标识保护组的当前生产站点。 source：表示当前生产站点可用区为source_availability_zone的值。 target：表示当前生产站点可用区为target_availability_zone的值。
+        :type priority_station: str
+        :param protected_instance_num: 该保护组中保护实例的个数。
+        :type protected_instance_num: int
+        :param replication_num: 该保护组中复制对的个数。
+        :type replication_num: int
+        :param disaster_recovery_drill_num: 该保护组中容灾演练的个数。
+        :type disaster_recovery_drill_num: int
+        :param protected_status: 保护状态。started：表示该保护组开始保护。stopped：表示该保护组停止保护。 说明:系统近期进行了升级，对于升级后创建的保护组，该字段值为null，无实际意义。
+        :type protected_status: str
+        :param replication_status: 数据同步状态。 active：表示数据已同步完成。 inactive：表示数据未同步。 copying：表示数据正在同步。 active-stopped：表示数据已停止同步。  说明:系统近期进行了升级，对于升级后创建的保护组，该字段值为null，无实际意义。
+        :type replication_status: str
+        :param health_status: 健康状态。 normal：表示该保护组处于正常状态。 abnormal：表示该保护组处于非正常状态。  说明:系统近期进行了升级，对于升级后创建的保护组，该字段值为null，无实际意义。
+        :type health_status: str
+        :param source_vpc_id: 生产站点虚拟私有云ID。
+        :type source_vpc_id: str
+        :param target_vpc_id: 容灾站点虚拟私有云ID。
+        :type target_vpc_id: str
+        :param test_vpc_id: 容灾演练虚拟私有云ID。（该参数暂未使用）
+        :type test_vpc_id: str
+        :param dr_type: 部署模式。默认值为“migration”，migration表示VPC内迁移。
+        :type dr_type: str
+        :param created_at: 创建时间。默认格式为：\&quot;yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSSZ\&quot;，例：\&quot;2019-04-01T12:00:00.000Z\&quot;。
+        :type created_at: str
+        :param updated_at: 更新时间。默认格式为：\&quot;yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSSZ\&quot;，例：\&quot;2019-04-01T12:00:00.000Z\&quot;。
+        :type updated_at: str
+        :param protection_type: 保护模式。 replication-pair：表示以复制对为单位进行数据同步。 null：表示将保护组中的所有复制对作为一个整体进行数据同步。  说明:当保护组中的所有复制对作为一个整体进行数据同步时，如果数据同步失败，保护组中的所有复制对都会受到影响。因此，SDRS服务对系统做了优化升级： 对于升级后创建的资源，默认以复制对为单位进行数据同步，返回值为replication-pair； 对于已有资源，仍以一个整体进行数据同步，返回值为null。
+        :type protection_type: str
+        :param replication_model: 复制类型。 说明:预留参数，暂未启用。
+        :type replication_model: str
+        :param server_type: 管理的服务器类型 ECS：表示管理的服务器类型为云服务器。
+        :type server_type: str
+        """
         
         
 
@@ -153,7 +206,7 @@ class ShowProtectionGroupParams:
         保护组的ID。
 
         :param id: The id of this ShowProtectionGroupParams.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -175,7 +228,7 @@ class ShowProtectionGroupParams:
         保护组的名称。
 
         :param name: The name of this ShowProtectionGroupParams.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -197,7 +250,7 @@ class ShowProtectionGroupParams:
         保护组的描述。
 
         :param description: The description of this ShowProtectionGroupParams.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -219,7 +272,7 @@ class ShowProtectionGroupParams:
         保护组的状态。
 
         :param status: The status of this ShowProtectionGroupParams.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -241,7 +294,7 @@ class ShowProtectionGroupParams:
         保护组的同步进度。单位：百分比（%）。
 
         :param progress: The progress of this ShowProtectionGroupParams.
-        :type: int
+        :type progress: int
         """
         self._progress = progress
 
@@ -263,7 +316,7 @@ class ShowProtectionGroupParams:
         保护组创建时的生产站点可用区名称。注意：保护组切换、故障切换后，该值不变。
 
         :param source_availability_zone: The source_availability_zone of this ShowProtectionGroupParams.
-        :type: str
+        :type source_availability_zone: str
         """
         self._source_availability_zone = source_availability_zone
 
@@ -285,7 +338,7 @@ class ShowProtectionGroupParams:
         保护组创建时的容灾站点可用区名称。注意：保护组切换、故障切换后，该值不变。
 
         :param target_availability_zone: The target_availability_zone of this ShowProtectionGroupParams.
-        :type: str
+        :type target_availability_zone: str
         """
         self._target_availability_zone = target_availability_zone
 
@@ -307,7 +360,7 @@ class ShowProtectionGroupParams:
         双活域ID。
 
         :param domain_id: The domain_id of this ShowProtectionGroupParams.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -329,7 +382,7 @@ class ShowProtectionGroupParams:
         双活域名称。
 
         :param domain_name: The domain_name of this ShowProtectionGroupParams.
-        :type: str
+        :type domain_name: str
         """
         self._domain_name = domain_name
 
@@ -351,7 +404,7 @@ class ShowProtectionGroupParams:
         用于标识保护组的当前生产站点。 source：表示当前生产站点可用区为source_availability_zone的值。 target：表示当前生产站点可用区为target_availability_zone的值。
 
         :param priority_station: The priority_station of this ShowProtectionGroupParams.
-        :type: str
+        :type priority_station: str
         """
         self._priority_station = priority_station
 
@@ -373,7 +426,7 @@ class ShowProtectionGroupParams:
         该保护组中保护实例的个数。
 
         :param protected_instance_num: The protected_instance_num of this ShowProtectionGroupParams.
-        :type: int
+        :type protected_instance_num: int
         """
         self._protected_instance_num = protected_instance_num
 
@@ -395,7 +448,7 @@ class ShowProtectionGroupParams:
         该保护组中复制对的个数。
 
         :param replication_num: The replication_num of this ShowProtectionGroupParams.
-        :type: int
+        :type replication_num: int
         """
         self._replication_num = replication_num
 
@@ -417,7 +470,7 @@ class ShowProtectionGroupParams:
         该保护组中容灾演练的个数。
 
         :param disaster_recovery_drill_num: The disaster_recovery_drill_num of this ShowProtectionGroupParams.
-        :type: int
+        :type disaster_recovery_drill_num: int
         """
         self._disaster_recovery_drill_num = disaster_recovery_drill_num
 
@@ -439,7 +492,7 @@ class ShowProtectionGroupParams:
         保护状态。started：表示该保护组开始保护。stopped：表示该保护组停止保护。 说明:系统近期进行了升级，对于升级后创建的保护组，该字段值为null，无实际意义。
 
         :param protected_status: The protected_status of this ShowProtectionGroupParams.
-        :type: str
+        :type protected_status: str
         """
         self._protected_status = protected_status
 
@@ -461,7 +514,7 @@ class ShowProtectionGroupParams:
         数据同步状态。 active：表示数据已同步完成。 inactive：表示数据未同步。 copying：表示数据正在同步。 active-stopped：表示数据已停止同步。  说明:系统近期进行了升级，对于升级后创建的保护组，该字段值为null，无实际意义。
 
         :param replication_status: The replication_status of this ShowProtectionGroupParams.
-        :type: str
+        :type replication_status: str
         """
         self._replication_status = replication_status
 
@@ -483,7 +536,7 @@ class ShowProtectionGroupParams:
         健康状态。 normal：表示该保护组处于正常状态。 abnormal：表示该保护组处于非正常状态。  说明:系统近期进行了升级，对于升级后创建的保护组，该字段值为null，无实际意义。
 
         :param health_status: The health_status of this ShowProtectionGroupParams.
-        :type: str
+        :type health_status: str
         """
         self._health_status = health_status
 
@@ -505,7 +558,7 @@ class ShowProtectionGroupParams:
         生产站点虚拟私有云ID。
 
         :param source_vpc_id: The source_vpc_id of this ShowProtectionGroupParams.
-        :type: str
+        :type source_vpc_id: str
         """
         self._source_vpc_id = source_vpc_id
 
@@ -527,7 +580,7 @@ class ShowProtectionGroupParams:
         容灾站点虚拟私有云ID。
 
         :param target_vpc_id: The target_vpc_id of this ShowProtectionGroupParams.
-        :type: str
+        :type target_vpc_id: str
         """
         self._target_vpc_id = target_vpc_id
 
@@ -549,7 +602,7 @@ class ShowProtectionGroupParams:
         容灾演练虚拟私有云ID。（该参数暂未使用）
 
         :param test_vpc_id: The test_vpc_id of this ShowProtectionGroupParams.
-        :type: str
+        :type test_vpc_id: str
         """
         self._test_vpc_id = test_vpc_id
 
@@ -571,7 +624,7 @@ class ShowProtectionGroupParams:
         部署模式。默认值为“migration”，migration表示VPC内迁移。
 
         :param dr_type: The dr_type of this ShowProtectionGroupParams.
-        :type: str
+        :type dr_type: str
         """
         self._dr_type = dr_type
 
@@ -593,7 +646,7 @@ class ShowProtectionGroupParams:
         创建时间。默认格式为：\"yyyy-MM-dd'T'HH:mm:ss.SSSZ\"，例：\"2019-04-01T12:00:00.000Z\"。
 
         :param created_at: The created_at of this ShowProtectionGroupParams.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -615,7 +668,7 @@ class ShowProtectionGroupParams:
         更新时间。默认格式为：\"yyyy-MM-dd'T'HH:mm:ss.SSSZ\"，例：\"2019-04-01T12:00:00.000Z\"。
 
         :param updated_at: The updated_at of this ShowProtectionGroupParams.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 
@@ -637,7 +690,7 @@ class ShowProtectionGroupParams:
         保护模式。 replication-pair：表示以复制对为单位进行数据同步。 null：表示将保护组中的所有复制对作为一个整体进行数据同步。  说明:当保护组中的所有复制对作为一个整体进行数据同步时，如果数据同步失败，保护组中的所有复制对都会受到影响。因此，SDRS服务对系统做了优化升级： 对于升级后创建的资源，默认以复制对为单位进行数据同步，返回值为replication-pair； 对于已有资源，仍以一个整体进行数据同步，返回值为null。
 
         :param protection_type: The protection_type of this ShowProtectionGroupParams.
-        :type: str
+        :type protection_type: str
         """
         self._protection_type = protection_type
 
@@ -659,7 +712,7 @@ class ShowProtectionGroupParams:
         复制类型。 说明:预留参数，暂未启用。
 
         :param replication_model: The replication_model of this ShowProtectionGroupParams.
-        :type: str
+        :type replication_model: str
         """
         self._replication_model = replication_model
 
@@ -681,7 +734,7 @@ class ShowProtectionGroupParams:
         管理的服务器类型 ECS：表示管理的服务器类型为云服务器。
 
         :param server_type: The server_type of this ShowProtectionGroupParams.
-        :type: str
+        :type server_type: str
         """
         self._server_type = server_type
 

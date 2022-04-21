@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RecognizeVinRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RecognizeVinRequest:
     }
 
     def __init__(self, body=None):
-        """RecognizeVinRequest - a model defined in huaweicloud sdk"""
+        """RecognizeVinRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the RecognizeVinRequest
+        :type body: :class:`huaweicloudsdkocr.v1.VinRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class RecognizeVinRequest:
 
 
         :return: The body of this RecognizeVinRequest.
-        :rtype: VinRequestBody
+        :rtype: :class:`huaweicloudsdkocr.v1.VinRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class RecognizeVinRequest:
 
 
         :param body: The body of this RecognizeVinRequest.
-        :type: VinRequestBody
+        :type body: :class:`huaweicloudsdkocr.v1.VinRequestBody`
         """
         self._body = body
 

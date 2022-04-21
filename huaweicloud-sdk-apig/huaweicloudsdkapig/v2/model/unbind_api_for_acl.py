@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UnbindApiForAcl:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class UnbindApiForAcl:
     }
 
     def __init__(self, id=None, name=None, group_id=None, group_name=None, type=None, remark=None, run_env_name=None, run_env_id=None, publish_id=None, acl_name=None):
-        """UnbindApiForAcl - a model defined in huaweicloud sdk"""
+        """UnbindApiForAcl
+
+        The model defined in huaweicloud sdk
+
+        :param id: API的ID
+        :type id: str
+        :param name: API名称
+        :type name: str
+        :param group_id: API所属分组的编号
+        :type group_id: str
+        :param group_name: API所属分组的名称
+        :type group_name: str
+        :param type: API开放状态
+        :type type: int
+        :param remark: API描述
+        :type remark: str
+        :param run_env_name: 发布的环境名
+        :type run_env_name: str
+        :param run_env_id: 发布的环境id
+        :type run_env_id: str
+        :param publish_id: API发布记录编号
+        :type publish_id: str
+        :param acl_name: 绑定的其他同类型的ACL策略名称
+        :type acl_name: str
+        """
         
         
 
@@ -103,7 +126,7 @@ class UnbindApiForAcl:
         API的ID
 
         :param id: The id of this UnbindApiForAcl.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -125,7 +148,7 @@ class UnbindApiForAcl:
         API名称
 
         :param name: The name of this UnbindApiForAcl.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -147,7 +170,7 @@ class UnbindApiForAcl:
         API所属分组的编号
 
         :param group_id: The group_id of this UnbindApiForAcl.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -169,7 +192,7 @@ class UnbindApiForAcl:
         API所属分组的名称
 
         :param group_name: The group_name of this UnbindApiForAcl.
-        :type: str
+        :type group_name: str
         """
         self._group_name = group_name
 
@@ -191,7 +214,7 @@ class UnbindApiForAcl:
         API开放状态
 
         :param type: The type of this UnbindApiForAcl.
-        :type: int
+        :type type: int
         """
         self._type = type
 
@@ -213,7 +236,7 @@ class UnbindApiForAcl:
         API描述
 
         :param remark: The remark of this UnbindApiForAcl.
-        :type: str
+        :type remark: str
         """
         self._remark = remark
 
@@ -235,7 +258,7 @@ class UnbindApiForAcl:
         发布的环境名
 
         :param run_env_name: The run_env_name of this UnbindApiForAcl.
-        :type: str
+        :type run_env_name: str
         """
         self._run_env_name = run_env_name
 
@@ -257,7 +280,7 @@ class UnbindApiForAcl:
         发布的环境id
 
         :param run_env_id: The run_env_id of this UnbindApiForAcl.
-        :type: str
+        :type run_env_id: str
         """
         self._run_env_id = run_env_id
 
@@ -279,7 +302,7 @@ class UnbindApiForAcl:
         API发布记录编号
 
         :param publish_id: The publish_id of this UnbindApiForAcl.
-        :type: str
+        :type publish_id: str
         """
         self._publish_id = publish_id
 
@@ -301,7 +324,7 @@ class UnbindApiForAcl:
         绑定的其他同类型的ACL策略名称
 
         :param acl_name: The acl_name of this UnbindApiForAcl.
-        :type: str
+        :type acl_name: str
         """
         self._acl_name = acl_name
 

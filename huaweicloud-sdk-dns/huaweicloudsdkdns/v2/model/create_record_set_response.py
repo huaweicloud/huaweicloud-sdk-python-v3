@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateRecordSetResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class CreateRecordSetResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, zone_id=None, zone_name=None, type=None, ttl=None, records=None, create_at=None, update_at=None, status=None, default=None, project_id=None, links=None):
-        """CreateRecordSetResponse - a model defined in huaweicloud sdk"""
+        """CreateRecordSetResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 
+        :type id: str
+        :param name: 
+        :type name: str
+        :param description: 
+        :type description: str
+        :param zone_id: 
+        :type zone_id: str
+        :param zone_name: 
+        :type zone_name: str
+        :param type: 
+        :type type: str
+        :param ttl: 
+        :type ttl: int
+        :param records: 
+        :type records: list[str]
+        :param create_at: 
+        :type create_at: str
+        :param update_at: 
+        :type update_at: str
+        :param status: 
+        :type status: str
+        :param default: 
+        :type default: bool
+        :param project_id: 
+        :type project_id: str
+        :param links: 
+        :type links: :class:`huaweicloudsdkdns.v2.PageLink`
+        """
         
         super(CreateRecordSetResponse, self).__init__()
 
@@ -121,7 +152,7 @@ class CreateRecordSetResponse(SdkResponse):
 
 
         :param id: The id of this CreateRecordSetResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -141,7 +172,7 @@ class CreateRecordSetResponse(SdkResponse):
 
 
         :param name: The name of this CreateRecordSetResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -161,7 +192,7 @@ class CreateRecordSetResponse(SdkResponse):
 
 
         :param description: The description of this CreateRecordSetResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -181,7 +212,7 @@ class CreateRecordSetResponse(SdkResponse):
 
 
         :param zone_id: The zone_id of this CreateRecordSetResponse.
-        :type: str
+        :type zone_id: str
         """
         self._zone_id = zone_id
 
@@ -201,7 +232,7 @@ class CreateRecordSetResponse(SdkResponse):
 
 
         :param zone_name: The zone_name of this CreateRecordSetResponse.
-        :type: str
+        :type zone_name: str
         """
         self._zone_name = zone_name
 
@@ -221,7 +252,7 @@ class CreateRecordSetResponse(SdkResponse):
 
 
         :param type: The type of this CreateRecordSetResponse.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -241,7 +272,7 @@ class CreateRecordSetResponse(SdkResponse):
 
 
         :param ttl: The ttl of this CreateRecordSetResponse.
-        :type: int
+        :type ttl: int
         """
         self._ttl = ttl
 
@@ -261,7 +292,7 @@ class CreateRecordSetResponse(SdkResponse):
 
 
         :param records: The records of this CreateRecordSetResponse.
-        :type: list[str]
+        :type records: list[str]
         """
         self._records = records
 
@@ -281,7 +312,7 @@ class CreateRecordSetResponse(SdkResponse):
 
 
         :param create_at: The create_at of this CreateRecordSetResponse.
-        :type: str
+        :type create_at: str
         """
         self._create_at = create_at
 
@@ -301,7 +332,7 @@ class CreateRecordSetResponse(SdkResponse):
 
 
         :param update_at: The update_at of this CreateRecordSetResponse.
-        :type: str
+        :type update_at: str
         """
         self._update_at = update_at
 
@@ -321,7 +352,7 @@ class CreateRecordSetResponse(SdkResponse):
 
 
         :param status: The status of this CreateRecordSetResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -341,7 +372,7 @@ class CreateRecordSetResponse(SdkResponse):
 
 
         :param default: The default of this CreateRecordSetResponse.
-        :type: bool
+        :type default: bool
         """
         self._default = default
 
@@ -361,7 +392,7 @@ class CreateRecordSetResponse(SdkResponse):
 
 
         :param project_id: The project_id of this CreateRecordSetResponse.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -371,7 +402,7 @@ class CreateRecordSetResponse(SdkResponse):
 
 
         :return: The links of this CreateRecordSetResponse.
-        :rtype: PageLink
+        :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
         """
         return self._links
 
@@ -381,7 +412,7 @@ class CreateRecordSetResponse(SdkResponse):
 
 
         :param links: The links of this CreateRecordSetResponse.
-        :type: PageLink
+        :type links: :class:`huaweicloudsdkdns.v2.PageLink`
         """
         self._links = links
 

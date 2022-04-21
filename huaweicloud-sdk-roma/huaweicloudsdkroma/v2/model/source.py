@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Source:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class Source:
     }
 
     def __init__(self, source_id=None, product_id=None, device_id=None, topic=None, device_name=None, product_name=None, is_base64=None, contain_device_info=None):
-        """Source - a model defined in huaweicloud sdk"""
+        """Source
+
+        The model defined in huaweicloud sdk
+
+        :param source_id: 源数据源ID
+        :type source_id: int
+        :param product_id: 产品ID
+        :type product_id: int
+        :param device_id: 设备ID，不填为全部设备
+        :type device_id: int
+        :param topic: 主题，当设备ID为空时为产品级主题，设备ID不为空时为设备级主题
+        :type topic: str
+        :param device_name: 设备名称
+        :type device_name: str
+        :param product_name: 产品名称
+        :type product_name: str
+        :param is_base64: 是否payload使用base64，0-是 1-否
+        :type is_base64: int
+        :param contain_device_info: 是否包含设备信息，0-是，1-否
+        :type contain_device_info: int
+        """
         
         
 
@@ -93,7 +112,7 @@ class Source:
         源数据源ID
 
         :param source_id: The source_id of this Source.
-        :type: int
+        :type source_id: int
         """
         self._source_id = source_id
 
@@ -115,7 +134,7 @@ class Source:
         产品ID
 
         :param product_id: The product_id of this Source.
-        :type: int
+        :type product_id: int
         """
         self._product_id = product_id
 
@@ -137,7 +156,7 @@ class Source:
         设备ID，不填为全部设备
 
         :param device_id: The device_id of this Source.
-        :type: int
+        :type device_id: int
         """
         self._device_id = device_id
 
@@ -159,7 +178,7 @@ class Source:
         主题，当设备ID为空时为产品级主题，设备ID不为空时为设备级主题
 
         :param topic: The topic of this Source.
-        :type: str
+        :type topic: str
         """
         self._topic = topic
 
@@ -181,7 +200,7 @@ class Source:
         设备名称
 
         :param device_name: The device_name of this Source.
-        :type: str
+        :type device_name: str
         """
         self._device_name = device_name
 
@@ -203,7 +222,7 @@ class Source:
         产品名称
 
         :param product_name: The product_name of this Source.
-        :type: str
+        :type product_name: str
         """
         self._product_name = product_name
 
@@ -225,7 +244,7 @@ class Source:
         是否payload使用base64，0-是 1-否
 
         :param is_base64: The is_base64 of this Source.
-        :type: int
+        :type is_base64: int
         """
         self._is_base64 = is_base64
 
@@ -247,7 +266,7 @@ class Source:
         是否包含设备信息，0-是，1-否
 
         :param contain_device_info: The contain_device_info of this Source.
-        :type: int
+        :type contain_device_info: int
         """
         self._contain_device_info = contain_device_info
 

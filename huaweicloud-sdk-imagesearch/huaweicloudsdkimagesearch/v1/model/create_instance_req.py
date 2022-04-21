@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateInstanceReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class CreateInstanceReq:
     }
 
     def __init__(self, name=None, model=None, description=None, level=None, tags=None):
-        """CreateInstanceReq - a model defined in huaweicloud sdk"""
+        """CreateInstanceReq
+
+        The model defined in huaweicloud sdk
+
+        :param name: 实例名称。  - 仅支持小写字母（a-z）、数字，横杠和下划线。  - 以字母开头，长度在16位以内。 
+        :type name: str
+        :param model: 模型名称，支持如下模型名称：  - common-search，通用图片搜索，适用于图片库中搜索相似内容或类别的图片。  - image-recommend，版权图片推荐，适用于版权摄影图片库中查找并推荐相同或相似版权图片。  - image-copyright，图片版权，适用于从海量图片库中快速识别侵权盗用图片。 
+        :type model: str
+        :param description: 描述。
+        :type description: str
+        :param level: 规格，即实例的图片数量规格。默认为30000000（单位：张），当前仅支持默认规格。
+        :type level: int
+        :param tags: 图片自定义标签，每个实例最多支持10个标签，自定义标签不支持英文字母大写。
+        :type tags: list[str]
+        """
         
         
 
@@ -76,7 +89,7 @@ class CreateInstanceReq:
         实例名称。  - 仅支持小写字母（a-z）、数字，横杠和下划线。  - 以字母开头，长度在16位以内。 
 
         :param name: The name of this CreateInstanceReq.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -98,7 +111,7 @@ class CreateInstanceReq:
         模型名称，支持如下模型名称：  - common-search，通用图片搜索，适用于图片库中搜索相似内容或类别的图片。  - image-recommend，版权图片推荐，适用于版权摄影图片库中查找并推荐相同或相似版权图片。  - image-copyright，图片版权，适用于从海量图片库中快速识别侵权盗用图片。 
 
         :param model: The model of this CreateInstanceReq.
-        :type: str
+        :type model: str
         """
         self._model = model
 
@@ -120,7 +133,7 @@ class CreateInstanceReq:
         描述。
 
         :param description: The description of this CreateInstanceReq.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -142,7 +155,7 @@ class CreateInstanceReq:
         规格，即实例的图片数量规格。默认为30000000（单位：张），当前仅支持默认规格。
 
         :param level: The level of this CreateInstanceReq.
-        :type: int
+        :type level: int
         """
         self._level = level
 
@@ -164,7 +177,7 @@ class CreateInstanceReq:
         图片自定义标签，每个实例最多支持10个标签，自定义标签不支持英文字母大写。
 
         :param tags: The tags of this CreateInstanceReq.
-        :type: list[str]
+        :type tags: list[str]
         """
         self._tags = tags
 

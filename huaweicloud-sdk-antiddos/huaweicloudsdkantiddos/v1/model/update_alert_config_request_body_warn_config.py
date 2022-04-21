@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateAlertConfigRequestBodyWarnConfig:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class UpdateAlertConfigRequestBodyWarnConfig:
     }
 
     def __init__(self, anti_d_do_s=None, back_doors=None, bruce_force=None, high_privilege=None, remote_login=None, send_frequency=None, waf=None, weak_password=None):
-        """UpdateAlertConfigRequestBodyWarnConfig - a model defined in huaweicloud sdk"""
+        """UpdateAlertConfigRequestBodyWarnConfig
+
+        The model defined in huaweicloud sdk
+
+        :param anti_d_do_s: DDoS攻击
+        :type anti_d_do_s: bool
+        :param back_doors: 网页后门
+        :type back_doors: bool
+        :param bruce_force: 暴力破解（系统登录，FTP，DB）
+        :type bruce_force: bool
+        :param high_privilege: 数据库进程权限过高
+        :type high_privilege: bool
+        :param remote_login: 异地登录提醒
+        :type remote_login: bool
+        :param send_frequency: 取值范围： - 0：表示每天一次 - 1：表示半小时一次  对于HID必选。
+        :type send_frequency: int
+        :param waf: 保留字段
+        :type waf: bool
+        :param weak_password: 弱口令（系统，数据库）
+        :type weak_password: bool
+        """
         
         
 
@@ -92,7 +111,7 @@ class UpdateAlertConfigRequestBodyWarnConfig:
         DDoS攻击
 
         :param anti_d_do_s: The anti_d_do_s of this UpdateAlertConfigRequestBodyWarnConfig.
-        :type: bool
+        :type anti_d_do_s: bool
         """
         self._anti_d_do_s = anti_d_do_s
 
@@ -114,7 +133,7 @@ class UpdateAlertConfigRequestBodyWarnConfig:
         网页后门
 
         :param back_doors: The back_doors of this UpdateAlertConfigRequestBodyWarnConfig.
-        :type: bool
+        :type back_doors: bool
         """
         self._back_doors = back_doors
 
@@ -136,7 +155,7 @@ class UpdateAlertConfigRequestBodyWarnConfig:
         暴力破解（系统登录，FTP，DB）
 
         :param bruce_force: The bruce_force of this UpdateAlertConfigRequestBodyWarnConfig.
-        :type: bool
+        :type bruce_force: bool
         """
         self._bruce_force = bruce_force
 
@@ -158,7 +177,7 @@ class UpdateAlertConfigRequestBodyWarnConfig:
         数据库进程权限过高
 
         :param high_privilege: The high_privilege of this UpdateAlertConfigRequestBodyWarnConfig.
-        :type: bool
+        :type high_privilege: bool
         """
         self._high_privilege = high_privilege
 
@@ -180,7 +199,7 @@ class UpdateAlertConfigRequestBodyWarnConfig:
         异地登录提醒
 
         :param remote_login: The remote_login of this UpdateAlertConfigRequestBodyWarnConfig.
-        :type: bool
+        :type remote_login: bool
         """
         self._remote_login = remote_login
 
@@ -202,7 +221,7 @@ class UpdateAlertConfigRequestBodyWarnConfig:
         取值范围： - 0：表示每天一次 - 1：表示半小时一次  对于HID必选。
 
         :param send_frequency: The send_frequency of this UpdateAlertConfigRequestBodyWarnConfig.
-        :type: int
+        :type send_frequency: int
         """
         self._send_frequency = send_frequency
 
@@ -224,7 +243,7 @@ class UpdateAlertConfigRequestBodyWarnConfig:
         保留字段
 
         :param waf: The waf of this UpdateAlertConfigRequestBodyWarnConfig.
-        :type: bool
+        :type waf: bool
         """
         self._waf = waf
 
@@ -246,7 +265,7 @@ class UpdateAlertConfigRequestBodyWarnConfig:
         弱口令（系统，数据库）
 
         :param weak_password: The weak_password of this UpdateAlertConfigRequestBodyWarnConfig.
-        :type: bool
+        :type weak_password: bool
         """
         self._weak_password = weak_password
 

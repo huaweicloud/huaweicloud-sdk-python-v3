@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSubscriptionsByTopicResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListSubscriptionsByTopicResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, subscription_count=None, subscriptions=None):
-        """ListSubscriptionsByTopicResponse - a model defined in huaweicloud sdk"""
+        """ListSubscriptionsByTopicResponse
+
+        The model defined in huaweicloud sdk
+
+        :param request_id: 请求的唯一标识ID。
+        :type request_id: str
+        :param subscription_count: 订阅者个数。
+        :type subscription_count: int
+        :param subscriptions: Subscription结构体。
+        :type subscriptions: list[:class:`huaweicloudsdksmn.v2.ListSubscriptionsItem`]
+        """
         
         super(ListSubscriptionsByTopicResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListSubscriptionsByTopicResponse(SdkResponse):
         请求的唯一标识ID。
 
         :param request_id: The request_id of this ListSubscriptionsByTopicResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 
@@ -90,7 +99,7 @@ class ListSubscriptionsByTopicResponse(SdkResponse):
         订阅者个数。
 
         :param subscription_count: The subscription_count of this ListSubscriptionsByTopicResponse.
-        :type: int
+        :type subscription_count: int
         """
         self._subscription_count = subscription_count
 
@@ -101,7 +110,7 @@ class ListSubscriptionsByTopicResponse(SdkResponse):
         Subscription结构体。
 
         :return: The subscriptions of this ListSubscriptionsByTopicResponse.
-        :rtype: list[ListSubscriptionsItem]
+        :rtype: list[:class:`huaweicloudsdksmn.v2.ListSubscriptionsItem`]
         """
         return self._subscriptions
 
@@ -112,7 +121,7 @@ class ListSubscriptionsByTopicResponse(SdkResponse):
         Subscription结构体。
 
         :param subscriptions: The subscriptions of this ListSubscriptionsByTopicResponse.
-        :type: list[ListSubscriptionsItem]
+        :type subscriptions: list[:class:`huaweicloudsdksmn.v2.ListSubscriptionsItem`]
         """
         self._subscriptions = subscriptions
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class HistoryStreamInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class HistoryStreamInfo:
     }
 
     def __init__(self, domain=None, app=None, stream=None, type=None, video_codec=None, audio_codec=None, client_ip=None, start_time=None, end_time=None):
-        """HistoryStreamInfo - a model defined in huaweicloud sdk"""
+        """HistoryStreamInfo
+
+        The model defined in huaweicloud sdk
+
+        :param domain: 推流域名。  - type为0表主播推流域名。  - type为1表示第三方推流域名 
+        :type domain: str
+        :param app: 应用名称。
+        :type app: str
+        :param stream: 流名。
+        :type stream: str
+        :param type: 推流类型，取值如下：  - 0：表示主播推流  - 1：表示第三方推流 
+        :type type: int
+        :param video_codec: 视频编码格式。
+        :type video_codec: str
+        :param audio_codec: 音频编码格式。
+        :type audio_codec: str
+        :param client_ip: 主播ip。
+        :type client_ip: str
+        :param start_time: 采样开始时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。
+        :type start_time: str
+        :param end_time: 采样结束时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。
+        :type end_time: str
+        """
         
         
 
@@ -98,7 +119,7 @@ class HistoryStreamInfo:
         推流域名。  - type为0表主播推流域名。  - type为1表示第三方推流域名 
 
         :param domain: The domain of this HistoryStreamInfo.
-        :type: str
+        :type domain: str
         """
         self._domain = domain
 
@@ -120,7 +141,7 @@ class HistoryStreamInfo:
         应用名称。
 
         :param app: The app of this HistoryStreamInfo.
-        :type: str
+        :type app: str
         """
         self._app = app
 
@@ -142,7 +163,7 @@ class HistoryStreamInfo:
         流名。
 
         :param stream: The stream of this HistoryStreamInfo.
-        :type: str
+        :type stream: str
         """
         self._stream = stream
 
@@ -164,7 +185,7 @@ class HistoryStreamInfo:
         推流类型，取值如下：  - 0：表示主播推流  - 1：表示第三方推流 
 
         :param type: The type of this HistoryStreamInfo.
-        :type: int
+        :type type: int
         """
         self._type = type
 
@@ -186,7 +207,7 @@ class HistoryStreamInfo:
         视频编码格式。
 
         :param video_codec: The video_codec of this HistoryStreamInfo.
-        :type: str
+        :type video_codec: str
         """
         self._video_codec = video_codec
 
@@ -208,7 +229,7 @@ class HistoryStreamInfo:
         音频编码格式。
 
         :param audio_codec: The audio_codec of this HistoryStreamInfo.
-        :type: str
+        :type audio_codec: str
         """
         self._audio_codec = audio_codec
 
@@ -230,7 +251,7 @@ class HistoryStreamInfo:
         主播ip。
 
         :param client_ip: The client_ip of this HistoryStreamInfo.
-        :type: str
+        :type client_ip: str
         """
         self._client_ip = client_ip
 
@@ -252,7 +273,7 @@ class HistoryStreamInfo:
         采样开始时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。
 
         :param start_time: The start_time of this HistoryStreamInfo.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -274,7 +295,7 @@ class HistoryStreamInfo:
         采样结束时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。
 
         :param end_time: The end_time of this HistoryStreamInfo.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 

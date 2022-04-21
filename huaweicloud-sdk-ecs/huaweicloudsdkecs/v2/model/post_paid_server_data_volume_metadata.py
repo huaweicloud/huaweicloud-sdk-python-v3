@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PostPaidServerDataVolumeMetadata:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class PostPaidServerDataVolumeMetadata:
     }
 
     def __init__(self, system__encrypted=None, system__cmkid=None):
-        """PostPaidServerDataVolumeMetadata - a model defined in huaweicloud sdk"""
+        """PostPaidServerDataVolumeMetadata
+
+        The model defined in huaweicloud sdk
+
+        :param system__encrypted: metadata中的表示加密功能的字段，0代表不加密，1代表加密。  该字段不存在时，云硬盘默认为不加密。
+        :type system__encrypted: str
+        :param system__cmkid: metadata中的加密cmkid字段，与__system__encrypted配合表示需要加密，cmkid长度固定为36个字节。  &gt; 说明：  - 请参考[查询密钥列表](https://support.huaweicloud.com/api-dew/ListKeys.html)，通过HTTPS请求获取密钥ID。
+        :type system__cmkid: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class PostPaidServerDataVolumeMetadata:
         metadata中的表示加密功能的字段，0代表不加密，1代表加密。  该字段不存在时，云硬盘默认为不加密。
 
         :param system__encrypted: The system__encrypted of this PostPaidServerDataVolumeMetadata.
-        :type: str
+        :type system__encrypted: str
         """
         self._system__encrypted = system__encrypted
 
@@ -85,7 +92,7 @@ class PostPaidServerDataVolumeMetadata:
         metadata中的加密cmkid字段，与__system__encrypted配合表示需要加密，cmkid长度固定为36个字节。  > 说明：  - 请参考[查询密钥列表](https://support.huaweicloud.com/api-dew/ListKeys.html)，通过HTTPS请求获取密钥ID。
 
         :param system__cmkid: The system__cmkid of this PostPaidServerDataVolumeMetadata.
-        :type: str
+        :type system__cmkid: str
         """
         self._system__cmkid = system__cmkid
 

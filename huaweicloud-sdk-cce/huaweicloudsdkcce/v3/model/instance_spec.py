@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InstanceSpec:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class InstanceSpec:
     }
 
     def __init__(self, cluster_id=None, version=None, addon_template_name=None, addon_template_type=None, addon_template_logo=None, addon_template_labels=None, description=None, values=None):
-        """InstanceSpec - a model defined in huaweicloud sdk"""
+        """InstanceSpec
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 集群id
+        :type cluster_id: str
+        :param version: 插件模板版本号，如1.0.0
+        :type version: str
+        :param addon_template_name: 插件模板名称，如coredns
+        :type addon_template_name: str
+        :param addon_template_type: 插件模板类型
+        :type addon_template_type: str
+        :param addon_template_logo: 插件模板logo图片的地址
+        :type addon_template_logo: str
+        :param addon_template_labels: 插件模板所属类型
+        :type addon_template_labels: list[str]
+        :param description: 插件模板描述
+        :type description: str
+        :param values: 插件模板安装参数（各插件不同），请根据具体插件模板信息填写安装参数。
+        :type values: dict(str, object)
+        """
         
         
 
@@ -87,7 +106,7 @@ class InstanceSpec:
         集群id
 
         :param cluster_id: The cluster_id of this InstanceSpec.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -109,7 +128,7 @@ class InstanceSpec:
         插件模板版本号，如1.0.0
 
         :param version: The version of this InstanceSpec.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -131,7 +150,7 @@ class InstanceSpec:
         插件模板名称，如coredns
 
         :param addon_template_name: The addon_template_name of this InstanceSpec.
-        :type: str
+        :type addon_template_name: str
         """
         self._addon_template_name = addon_template_name
 
@@ -153,7 +172,7 @@ class InstanceSpec:
         插件模板类型
 
         :param addon_template_type: The addon_template_type of this InstanceSpec.
-        :type: str
+        :type addon_template_type: str
         """
         self._addon_template_type = addon_template_type
 
@@ -175,7 +194,7 @@ class InstanceSpec:
         插件模板logo图片的地址
 
         :param addon_template_logo: The addon_template_logo of this InstanceSpec.
-        :type: str
+        :type addon_template_logo: str
         """
         self._addon_template_logo = addon_template_logo
 
@@ -197,7 +216,7 @@ class InstanceSpec:
         插件模板所属类型
 
         :param addon_template_labels: The addon_template_labels of this InstanceSpec.
-        :type: list[str]
+        :type addon_template_labels: list[str]
         """
         self._addon_template_labels = addon_template_labels
 
@@ -219,7 +238,7 @@ class InstanceSpec:
         插件模板描述
 
         :param description: The description of this InstanceSpec.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -241,7 +260,7 @@ class InstanceSpec:
         插件模板安装参数（各插件不同），请根据具体插件模板信息填写安装参数。
 
         :param values: The values of this InstanceSpec.
-        :type: dict(str, object)
+        :type values: dict(str, object)
         """
         self._values = values
 

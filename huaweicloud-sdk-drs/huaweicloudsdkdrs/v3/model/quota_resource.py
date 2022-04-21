@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QuotaResource:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class QuotaResource:
     }
 
     def __init__(self, type=None, min=None, max=None, quota=None, used=None):
-        """QuotaResource - a model defined in huaweicloud sdk"""
+        """QuotaResource
+
+        The model defined in huaweicloud sdk
+
+        :param type: 配额类型信息
+        :type type: str
+        :param min: 配额最小取值
+        :type min: int
+        :param max: 配额最大取值
+        :type max: int
+        :param quota: 用户配额的实际值
+        :type quota: int
+        :param used: 已使用的配额值
+        :type used: int
+        """
         
         
 
@@ -78,7 +91,7 @@ class QuotaResource:
         配额类型信息
 
         :param type: The type of this QuotaResource.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -100,7 +113,7 @@ class QuotaResource:
         配额最小取值
 
         :param min: The min of this QuotaResource.
-        :type: int
+        :type min: int
         """
         self._min = min
 
@@ -122,7 +135,7 @@ class QuotaResource:
         配额最大取值
 
         :param max: The max of this QuotaResource.
-        :type: int
+        :type max: int
         """
         self._max = max
 
@@ -144,7 +157,7 @@ class QuotaResource:
         用户配额的实际值
 
         :param quota: The quota of this QuotaResource.
-        :type: int
+        :type quota: int
         """
         self._quota = quota
 
@@ -166,7 +179,7 @@ class QuotaResource:
         已使用的配额值
 
         :param used: The used of this QuotaResource.
-        :type: int
+        :type used: int
         """
         self._used = used
 

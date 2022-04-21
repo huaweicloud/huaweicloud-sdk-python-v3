@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LiveDetectUrlReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class LiveDetectUrlReq:
     }
 
     def __init__(self, action_time=None, video_url=None, actions=None):
-        """LiveDetectUrlReq - a model defined in huaweicloud sdk"""
+        """LiveDetectUrlReq
+
+        The model defined in huaweicloud sdk
+
+        :param action_time: 该参数为动作时间数组拼接的字符串，数组的长度和actions的数量一致，每一项代表了对应次序动作的起始时间和结束时间，单位为距视频开始的毫秒数。
+        :type action_time: str
+        :param video_url: 视频的URL路径，目前仅支持华为云上OBS的URL，且人脸识别服务有权限读取该OBS桶的数据。 开通读取权限的操作请参见[服务授权](https://support.huaweicloud.com/api-face/face_02_0006.html)。视频要求： • 视频Base64编码后大小不超过8MB。 • 限制视频时长1～15秒。 • 建议帧率10fps～30fps。 • 封装格式：mp4、avi、flv、webm、asf、mov。 • 视频编码格式： h261、h263、h264、hevc、vc1、vp8、vp9、wmv3。
+        :type video_url: str
+        :param actions: 动作代码顺序列表，英文逗号（,）分隔。建议单动作，目前支持的动作有： • 1：左摇头 • 2：右摇头 • 3：点头 • 4：嘴部动作
+        :type actions: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class LiveDetectUrlReq:
         该参数为动作时间数组拼接的字符串，数组的长度和actions的数量一致，每一项代表了对应次序动作的起始时间和结束时间，单位为距视频开始的毫秒数。
 
         :param action_time: The action_time of this LiveDetectUrlReq.
-        :type: str
+        :type action_time: str
         """
         self._action_time = action_time
 
@@ -88,7 +97,7 @@ class LiveDetectUrlReq:
         视频的URL路径，目前仅支持华为云上OBS的URL，且人脸识别服务有权限读取该OBS桶的数据。 开通读取权限的操作请参见[服务授权](https://support.huaweicloud.com/api-face/face_02_0006.html)。视频要求： • 视频Base64编码后大小不超过8MB。 • 限制视频时长1～15秒。 • 建议帧率10fps～30fps。 • 封装格式：mp4、avi、flv、webm、asf、mov。 • 视频编码格式： h261、h263、h264、hevc、vc1、vp8、vp9、wmv3。
 
         :param video_url: The video_url of this LiveDetectUrlReq.
-        :type: str
+        :type video_url: str
         """
         self._video_url = video_url
 
@@ -110,7 +119,7 @@ class LiveDetectUrlReq:
         动作代码顺序列表，英文逗号（,）分隔。建议单动作，目前支持的动作有： • 1：左摇头 • 2：右摇头 • 3：点头 • 4：嘴部动作
 
         :param actions: The actions of this LiveDetectUrlReq.
-        :type: str
+        :type actions: str
         """
         self._actions = actions
 

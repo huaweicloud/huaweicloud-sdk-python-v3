@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateBindPublicResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateBindPublicResponse(SdkResponse):
     }
 
     def __init__(self, action=None):
-        """CreateBindPublicResponse - a model defined in huaweicloud sdk"""
+        """CreateBindPublicResponse
+
+        The model defined in huaweicloud sdk
+
+        :param action: 操作行为。
+        :type action: str
+        """
         
         super(CreateBindPublicResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class CreateBindPublicResponse(SdkResponse):
         操作行为。
 
         :param action: The action of this CreateBindPublicResponse.
-        :type: str
+        :type action: str
         """
         self._action = action
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SfsInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class SfsInfo:
     }
 
     def __init__(self, pvc_name=None, name=None, addr=None, type=None):
-        """SfsInfo - a model defined in huaweicloud sdk"""
+        """SfsInfo
+
+        The model defined in huaweicloud sdk
+
+        :param pvc_name: BCS服务下的SFS文件系统名称
+        :type pvc_name: str
+        :param name: BCS服务网络存储名称
+        :type name: str
+        :param addr: BCS服务网络存储地址
+        :type addr: str
+        :param type: BCS服务网络存储类型
+        :type type: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class SfsInfo:
         BCS服务下的SFS文件系统名称
 
         :param pvc_name: The pvc_name of this SfsInfo.
-        :type: str
+        :type pvc_name: str
         """
         self._pvc_name = pvc_name
 
@@ -95,7 +106,7 @@ class SfsInfo:
         BCS服务网络存储名称
 
         :param name: The name of this SfsInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -117,7 +128,7 @@ class SfsInfo:
         BCS服务网络存储地址
 
         :param addr: The addr of this SfsInfo.
-        :type: str
+        :type addr: str
         """
         self._addr = addr
 
@@ -139,7 +150,7 @@ class SfsInfo:
         BCS服务网络存储类型
 
         :param type: The type of this SfsInfo.
-        :type: str
+        :type type: str
         """
         self._type = type
 

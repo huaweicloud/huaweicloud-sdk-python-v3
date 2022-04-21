@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListProjectIterationsV4Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListProjectIterationsV4Request:
     }
 
     def __init__(self, project_id=None, updated_time_interval=None, include_deleted=None):
-        """ListProjectIterationsV4Request - a model defined in huaweicloud sdk"""
+        """ListProjectIterationsV4Request
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: devcloud的项目id
+        :type project_id: str
+        :param updated_time_interval: 更新迭代的时间(查询的起始时间,查询的结束时间)
+        :type updated_time_interval: str
+        :param include_deleted: 是否包含被删除的迭代,默认false不包含被删除的迭代
+        :type include_deleted: bool
+        """
         
         
 
@@ -67,7 +76,7 @@ class ListProjectIterationsV4Request:
         devcloud的项目id
 
         :param project_id: The project_id of this ListProjectIterationsV4Request.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -89,7 +98,7 @@ class ListProjectIterationsV4Request:
         更新迭代的时间(查询的起始时间,查询的结束时间)
 
         :param updated_time_interval: The updated_time_interval of this ListProjectIterationsV4Request.
-        :type: str
+        :type updated_time_interval: str
         """
         self._updated_time_interval = updated_time_interval
 
@@ -111,7 +120,7 @@ class ListProjectIterationsV4Request:
         是否包含被删除的迭代,默认false不包含被删除的迭代
 
         :param include_deleted: The include_deleted of this ListProjectIterationsV4Request.
-        :type: bool
+        :type include_deleted: bool
         """
         self._include_deleted = include_deleted
 

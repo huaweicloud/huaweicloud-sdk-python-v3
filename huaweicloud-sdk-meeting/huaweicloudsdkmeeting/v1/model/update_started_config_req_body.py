@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateStartedConfigReqBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateStartedConfigReqBody:
     }
 
     def __init__(self, lock_sharing=None, call_in_restriction=None):
-        """UpdateStartedConfigReqBody - a model defined in huaweicloud sdk"""
+        """UpdateStartedConfigReqBody
+
+        The model defined in huaweicloud sdk
+
+        :param lock_sharing: 锁定共享标志位 0:不锁定  1:锁定
+        :type lock_sharing: int
+        :param call_in_restriction: 允许呼入的范围 0：所有用户  2：企业内用户  3：被邀请用户
+        :type call_in_restriction: int
+        """
         
         
 
@@ -63,7 +70,7 @@ class UpdateStartedConfigReqBody:
         锁定共享标志位 0:不锁定  1:锁定
 
         :param lock_sharing: The lock_sharing of this UpdateStartedConfigReqBody.
-        :type: int
+        :type lock_sharing: int
         """
         self._lock_sharing = lock_sharing
 
@@ -85,7 +92,7 @@ class UpdateStartedConfigReqBody:
         允许呼入的范围 0：所有用户  2：企业内用户  3：被邀请用户
 
         :param call_in_restriction: The call_in_restriction of this UpdateStartedConfigReqBody.
-        :type: int
+        :type call_in_restriction: int
         """
         self._call_in_restriction = call_in_restriction
 

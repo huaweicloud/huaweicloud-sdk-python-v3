@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDocWatermarkRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowDocWatermarkRequestBody:
     }
 
     def __init__(self, doc_type=None, file_password=None, file=None):
-        """ShowDocWatermarkRequestBody - a model defined in huaweicloud sdk"""
+        """ShowDocWatermarkRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param doc_type: 待提取水印的文档类型
+        :type doc_type: str
+        :param file_password: 解密文件的密码， 最大支持长度256。如果Office文档有读密码或域控的权限密码，请输入读密码，或者有读权限的域控密码。
+        :type file_password: str
+        :param file: 上传要提取水印的文档
+        :type file: :class:`huaweicloudsdkcore.http.formdata.FormFile`
+        """
         
         
 
@@ -66,7 +75,7 @@ class ShowDocWatermarkRequestBody:
         待提取水印的文档类型
 
         :param doc_type: The doc_type of this ShowDocWatermarkRequestBody.
-        :type: str
+        :type doc_type: str
         """
         self._doc_type = doc_type
 
@@ -88,7 +97,7 @@ class ShowDocWatermarkRequestBody:
         解密文件的密码， 最大支持长度256。如果Office文档有读密码或域控的权限密码，请输入读密码，或者有读权限的域控密码。
 
         :param file_password: The file_password of this ShowDocWatermarkRequestBody.
-        :type: str
+        :type file_password: str
         """
         self._file_password = file_password
 
@@ -99,7 +108,7 @@ class ShowDocWatermarkRequestBody:
         上传要提取水印的文档
 
         :return: The file of this ShowDocWatermarkRequestBody.
-        :rtype: file
+        :rtype: :class:`huaweicloudsdkcore.http.formdata.FormFile`
         """
         return self._file
 
@@ -110,7 +119,7 @@ class ShowDocWatermarkRequestBody:
         上传要提取水印的文档
 
         :param file: The file of this ShowDocWatermarkRequestBody.
-        :type: file
+        :type file: :class:`huaweicloudsdkcore.http.formdata.FormFile`
         """
         self._file = file
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRpoStatisticsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListRpoStatisticsResponse(SdkResponse):
     }
 
     def __init__(self, resource_rpo_statistics=None, count=None):
-        """ListRpoStatisticsResponse - a model defined in huaweicloud sdk"""
+        """ListRpoStatisticsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param resource_rpo_statistics: 资源的RPO超标趋势记录列表。
+        :type resource_rpo_statistics: list[:class:`huaweicloudsdksdrs.v1.RpoStattisticsParams`]
+        :param count: 列表中包含的资源的RPO超标趋势记录个数。
+        :type count: int
+        """
         
         super(ListRpoStatisticsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListRpoStatisticsResponse(SdkResponse):
         资源的RPO超标趋势记录列表。
 
         :return: The resource_rpo_statistics of this ListRpoStatisticsResponse.
-        :rtype: list[RpoStattisticsParams]
+        :rtype: list[:class:`huaweicloudsdksdrs.v1.RpoStattisticsParams`]
         """
         return self._resource_rpo_statistics
 
@@ -63,7 +70,7 @@ class ListRpoStatisticsResponse(SdkResponse):
         资源的RPO超标趋势记录列表。
 
         :param resource_rpo_statistics: The resource_rpo_statistics of this ListRpoStatisticsResponse.
-        :type: list[RpoStattisticsParams]
+        :type resource_rpo_statistics: list[:class:`huaweicloudsdksdrs.v1.RpoStattisticsParams`]
         """
         self._resource_rpo_statistics = resource_rpo_statistics
 
@@ -85,7 +92,7 @@ class ListRpoStatisticsResponse(SdkResponse):
         列表中包含的资源的RPO超标趋势记录个数。
 
         :param count: The count of this ListRpoStatisticsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

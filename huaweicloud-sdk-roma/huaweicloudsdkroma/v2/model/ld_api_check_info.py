@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LdApiCheckInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class LdApiCheckInfo:
     }
 
     def __init__(self, type=None, ld_api_name=None, ld_api_method=None, ld_api_path=None, roma_app_id=None):
-        """LdApiCheckInfo - a model defined in huaweicloud sdk"""
+        """LdApiCheckInfo
+
+        The model defined in huaweicloud sdk
+
+        :param type: 校验类型：   - path：路径类型   - name：名称类型
+        :type type: str
+        :param ld_api_name: 自定义后端API名称。  type &#x3D; name时必填
+        :type ld_api_name: str
+        :param ld_api_method: 自定义后端API请求方式。  type &#x3D; path时必填
+        :type ld_api_method: str
+        :param ld_api_path: 自定义后端API的访问地址。  type &#x3D; path时必填
+        :type ld_api_path: str
+        :param roma_app_id: 集成应用ID。  校验应用下后端API定义是否重复时必填
+        :type roma_app_id: str
+        """
         
         
 
@@ -77,7 +90,7 @@ class LdApiCheckInfo:
         校验类型：   - path：路径类型   - name：名称类型
 
         :param type: The type of this LdApiCheckInfo.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -99,7 +112,7 @@ class LdApiCheckInfo:
         自定义后端API名称。  type = name时必填
 
         :param ld_api_name: The ld_api_name of this LdApiCheckInfo.
-        :type: str
+        :type ld_api_name: str
         """
         self._ld_api_name = ld_api_name
 
@@ -121,7 +134,7 @@ class LdApiCheckInfo:
         自定义后端API请求方式。  type = path时必填
 
         :param ld_api_method: The ld_api_method of this LdApiCheckInfo.
-        :type: str
+        :type ld_api_method: str
         """
         self._ld_api_method = ld_api_method
 
@@ -143,7 +156,7 @@ class LdApiCheckInfo:
         自定义后端API的访问地址。  type = path时必填
 
         :param ld_api_path: The ld_api_path of this LdApiCheckInfo.
-        :type: str
+        :type ld_api_path: str
         """
         self._ld_api_path = ld_api_path
 
@@ -165,7 +178,7 @@ class LdApiCheckInfo:
         集成应用ID。  校验应用下后端API定义是否重复时必填
 
         :param roma_app_id: The roma_app_id of this LdApiCheckInfo.
-        :type: str
+        :type roma_app_id: str
         """
         self._roma_app_id = roma_app_id
 

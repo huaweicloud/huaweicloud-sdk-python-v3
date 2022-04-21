@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TrackerSMNChannelConfigBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class TrackerSMNChannelConfigBody:
     }
 
     def __init__(self, region_id=None, project_id=None, topic_urn=None):
-        """TrackerSMNChannelConfigBody - a model defined in huaweicloud sdk"""
+        """TrackerSMNChannelConfigBody
+
+        The model defined in huaweicloud sdk
+
+        :param region_id: region id
+        :type region_id: str
+        :param project_id: project id
+        :type project_id: str
+        :param topic_urn: SMN 主题urn
+        :type topic_urn: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class TrackerSMNChannelConfigBody:
         region id
 
         :param region_id: The region_id of this TrackerSMNChannelConfigBody.
-        :type: str
+        :type region_id: str
         """
         self._region_id = region_id
 
@@ -87,7 +96,7 @@ class TrackerSMNChannelConfigBody:
         project id
 
         :param project_id: The project_id of this TrackerSMNChannelConfigBody.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -109,7 +118,7 @@ class TrackerSMNChannelConfigBody:
         SMN 主题urn
 
         :param topic_urn: The topic_urn of this TrackerSMNChannelConfigBody.
-        :type: str
+        :type topic_urn: str
         """
         self._topic_urn = topic_urn
 

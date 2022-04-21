@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestoreExistingInstanceRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -22,7 +21,7 @@ class RestoreExistingInstanceRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'source': 'RestoreToExistingInstanceRequestBodySource',
+        'source': 'RestoreExistingInstanceRequestBodySource',
         'target': 'RestoreToExistingInstanceRequestBodyTarget'
     }
 
@@ -32,7 +31,15 @@ class RestoreExistingInstanceRequestBody:
     }
 
     def __init__(self, source=None, target=None):
-        """RestoreExistingInstanceRequestBody - a model defined in huaweicloud sdk"""
+        """RestoreExistingInstanceRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param source: 
+        :type source: :class:`huaweicloudsdkrds.v3.RestoreExistingInstanceRequestBodySource`
+        :param target: 
+        :type target: :class:`huaweicloudsdkrds.v3.RestoreToExistingInstanceRequestBodyTarget`
+        """
         
         
 
@@ -49,7 +56,7 @@ class RestoreExistingInstanceRequestBody:
 
 
         :return: The source of this RestoreExistingInstanceRequestBody.
-        :rtype: RestoreToExistingInstanceRequestBodySource
+        :rtype: :class:`huaweicloudsdkrds.v3.RestoreExistingInstanceRequestBodySource`
         """
         return self._source
 
@@ -59,7 +66,7 @@ class RestoreExistingInstanceRequestBody:
 
 
         :param source: The source of this RestoreExistingInstanceRequestBody.
-        :type: RestoreToExistingInstanceRequestBodySource
+        :type source: :class:`huaweicloudsdkrds.v3.RestoreExistingInstanceRequestBodySource`
         """
         self._source = source
 
@@ -69,7 +76,7 @@ class RestoreExistingInstanceRequestBody:
 
 
         :return: The target of this RestoreExistingInstanceRequestBody.
-        :rtype: RestoreToExistingInstanceRequestBodyTarget
+        :rtype: :class:`huaweicloudsdkrds.v3.RestoreToExistingInstanceRequestBodyTarget`
         """
         return self._target
 
@@ -79,7 +86,7 @@ class RestoreExistingInstanceRequestBody:
 
 
         :param target: The target of this RestoreExistingInstanceRequestBody.
-        :type: RestoreToExistingInstanceRequestBodyTarget
+        :type target: :class:`huaweicloudsdkrds.v3.RestoreToExistingInstanceRequestBodyTarget`
         """
         self._target = target
 

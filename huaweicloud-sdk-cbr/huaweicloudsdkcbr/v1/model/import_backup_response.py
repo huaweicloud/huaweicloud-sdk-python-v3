@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ImportBackupResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ImportBackupResponse(SdkResponse):
     }
 
     def __init__(self, sync=None):
-        """ImportBackupResponse - a model defined in huaweicloud sdk"""
+        """ImportBackupResponse
+
+        The model defined in huaweicloud sdk
+
+        :param sync: 同步备份副本接口的返回信息
+        :type sync: list[:class:`huaweicloudsdkcbr.v1.BackupSyncRespBody`]
+        """
         
         super(ImportBackupResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ImportBackupResponse(SdkResponse):
         同步备份副本接口的返回信息
 
         :return: The sync of this ImportBackupResponse.
-        :rtype: list[BackupSyncRespBody]
+        :rtype: list[:class:`huaweicloudsdkcbr.v1.BackupSyncRespBody`]
         """
         return self._sync
 
@@ -58,7 +63,7 @@ class ImportBackupResponse(SdkResponse):
         同步备份副本接口的返回信息
 
         :param sync: The sync of this ImportBackupResponse.
-        :type: list[BackupSyncRespBody]
+        :type sync: list[:class:`huaweicloudsdkcbr.v1.BackupSyncRespBody`]
         """
         self._sync = sync
 

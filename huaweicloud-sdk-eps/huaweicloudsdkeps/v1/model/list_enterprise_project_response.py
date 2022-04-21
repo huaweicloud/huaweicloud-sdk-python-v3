@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListEnterpriseProjectResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListEnterpriseProjectResponse(SdkResponse):
     }
 
     def __init__(self, enterprise_projects=None, total_count=None):
-        """ListEnterpriseProjectResponse - a model defined in huaweicloud sdk"""
+        """ListEnterpriseProjectResponse
+
+        The model defined in huaweicloud sdk
+
+        :param enterprise_projects: 企业项目列表
+        :type enterprise_projects: list[:class:`huaweicloudsdkeps.v1.EpDetail`]
+        :param total_count: 企业项目总数
+        :type total_count: int
+        """
         
         super(ListEnterpriseProjectResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListEnterpriseProjectResponse(SdkResponse):
         企业项目列表
 
         :return: The enterprise_projects of this ListEnterpriseProjectResponse.
-        :rtype: list[EpDetail]
+        :rtype: list[:class:`huaweicloudsdkeps.v1.EpDetail`]
         """
         return self._enterprise_projects
 
@@ -63,7 +70,7 @@ class ListEnterpriseProjectResponse(SdkResponse):
         企业项目列表
 
         :param enterprise_projects: The enterprise_projects of this ListEnterpriseProjectResponse.
-        :type: list[EpDetail]
+        :type enterprise_projects: list[:class:`huaweicloudsdkeps.v1.EpDetail`]
         """
         self._enterprise_projects = enterprise_projects
 
@@ -85,7 +92,7 @@ class ListEnterpriseProjectResponse(SdkResponse):
         企业项目总数
 
         :param total_count: The total_count of this ListEnterpriseProjectResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 

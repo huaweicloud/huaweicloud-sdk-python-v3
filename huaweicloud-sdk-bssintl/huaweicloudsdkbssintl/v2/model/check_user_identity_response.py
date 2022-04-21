@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CheckUserIdentityResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CheckUserIdentityResponse(SdkResponse):
     }
 
     def __init__(self, error_code=None, error_msg=None, check_result=None):
-        """CheckUserIdentityResponse - a model defined in huaweicloud sdk"""
+        """CheckUserIdentityResponse
+
+        The model defined in huaweicloud sdk
+
+        :param error_code: 状态码。具体请参考状态码。只有失败才会返回这个参数。
+        :type error_code: str
+        :param error_msg: 错误描述信息。只有失败才会返回这个参数。
+        :type error_msg: str
+        :param check_result: available：该登录名称/手机号/邮箱有效。used_by_user：该登录名称/手机号/邮箱已被占用。
+        :type check_result: str
+        """
         
         super(CheckUserIdentityResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class CheckUserIdentityResponse(SdkResponse):
         状态码。具体请参考状态码。只有失败才会返回这个参数。
 
         :param error_code: The error_code of this CheckUserIdentityResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -90,7 +99,7 @@ class CheckUserIdentityResponse(SdkResponse):
         错误描述信息。只有失败才会返回这个参数。
 
         :param error_msg: The error_msg of this CheckUserIdentityResponse.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 
@@ -112,7 +121,7 @@ class CheckUserIdentityResponse(SdkResponse):
         available：该登录名称/手机号/邮箱有效。used_by_user：该登录名称/手机号/邮箱已被占用。
 
         :param check_result: The check_result of this CheckUserIdentityResponse.
-        :type: str
+        :type check_result: str
         """
         self._check_result = check_result
 

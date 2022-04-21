@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class JobBatchDelete:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class JobBatchDelete:
     }
 
     def __init__(self, job_id_list=None):
-        """JobBatchDelete - a model defined in huaweicloud sdk"""
+        """JobBatchDelete
+
+        The model defined in huaweicloud sdk
+
+        :param job_id_list: 作业ID列表。获取方法，请参见[获取作业ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
+        :type job_id_list: list[str]
+        """
         
         
 
@@ -58,7 +63,7 @@ class JobBatchDelete:
         作业ID列表。获取方法，请参见[获取作业ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
 
         :param job_id_list: The job_id_list of this JobBatchDelete.
-        :type: list[str]
+        :type job_id_list: list[str]
         """
         self._job_id_list = job_id_list
 

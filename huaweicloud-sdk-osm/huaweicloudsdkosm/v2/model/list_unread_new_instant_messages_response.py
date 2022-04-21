@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListUnreadNewInstantMessagesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListUnreadNewInstantMessagesResponse(SdkResponse):
     }
 
     def __init__(self, imunread=None):
-        """ListUnreadNewInstantMessagesResponse - a model defined in huaweicloud sdk"""
+        """ListUnreadNewInstantMessagesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param imunread: 未读消息列表
+        :type imunread: list[:class:`huaweicloudsdkosm.v2.ImUnreadV2`]
+        """
         
         super(ListUnreadNewInstantMessagesResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListUnreadNewInstantMessagesResponse(SdkResponse):
         未读消息列表
 
         :return: The imunread of this ListUnreadNewInstantMessagesResponse.
-        :rtype: list[ImUnreadV2]
+        :rtype: list[:class:`huaweicloudsdkosm.v2.ImUnreadV2`]
         """
         return self._imunread
 
@@ -58,7 +63,7 @@ class ListUnreadNewInstantMessagesResponse(SdkResponse):
         未读消息列表
 
         :param imunread: The imunread of this ListUnreadNewInstantMessagesResponse.
-        :type: list[ImUnreadV2]
+        :type imunread: list[:class:`huaweicloudsdkosm.v2.ImUnreadV2`]
         """
         self._imunread = imunread
 

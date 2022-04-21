@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowCertificateResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class ShowCertificateResponse(SdkResponse):
     }
 
     def __init__(self, certificate_id=None, status=None, issuer_id=None, issuer_name=None, key_algorithm=None, signature_algorithm=None, freeze_flag=None, gen_mode=None, serial_number=None, create_time=None, delete_time=None, not_before=None, not_after=None, distinguished_name=None):
-        """ShowCertificateResponse - a model defined in huaweicloud sdk"""
+        """ShowCertificateResponse
+
+        The model defined in huaweicloud sdk
+
+        :param certificate_id: 私有证书ID。
+        :type certificate_id: str
+        :param status: 证书状态：   - **ISSUED** : 已签发；   - **EXPIRED** : 已过期；   - **REVOKED** : 已吊销。
+        :type status: str
+        :param issuer_id: 父CA证书ID。
+        :type issuer_id: str
+        :param issuer_name: 父CA证书名称。
+        :type issuer_name: str
+        :param key_algorithm: 密钥算法。
+        :type key_algorithm: str
+        :param signature_algorithm: 签名算法。
+        :type signature_algorithm: str
+        :param freeze_flag: 冻结标识:   - **0** : 非冻结状态；   - **其它值** : 冻结状态，当前预留。
+        :type freeze_flag: int
+        :param gen_mode: 证书生成方式：  - **GENERATE** : PCA系统生成；  - **IMPORT** : 外部导入；  - **CSR** : 外部提供CSR，内部CA进行签发，即私钥不在PCA进行托管。
+        :type gen_mode: str
+        :param serial_number: 序列号。
+        :type serial_number: str
+        :param create_time: 证书创建时间，格式为时间戳（毫秒级）。
+        :type create_time: int
+        :param delete_time: 证书删除时间，格式为时间戳（毫秒级）。
+        :type delete_time: int
+        :param not_before: 证书创建时间，格式为时间戳（毫秒级）。
+        :type not_before: int
+        :param not_after: 证书到期时间，格式为时间戳（毫秒级）。
+        :type not_after: int
+        :param distinguished_name: 
+        :type distinguished_name: :class:`huaweicloudsdkccm.v1.DistinguishedName`
+        """
         
         super(ShowCertificateResponse, self).__init__()
 
@@ -123,7 +154,7 @@ class ShowCertificateResponse(SdkResponse):
         私有证书ID。
 
         :param certificate_id: The certificate_id of this ShowCertificateResponse.
-        :type: str
+        :type certificate_id: str
         """
         self._certificate_id = certificate_id
 
@@ -145,7 +176,7 @@ class ShowCertificateResponse(SdkResponse):
         证书状态：   - **ISSUED** : 已签发；   - **EXPIRED** : 已过期；   - **REVOKED** : 已吊销。
 
         :param status: The status of this ShowCertificateResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -167,7 +198,7 @@ class ShowCertificateResponse(SdkResponse):
         父CA证书ID。
 
         :param issuer_id: The issuer_id of this ShowCertificateResponse.
-        :type: str
+        :type issuer_id: str
         """
         self._issuer_id = issuer_id
 
@@ -189,7 +220,7 @@ class ShowCertificateResponse(SdkResponse):
         父CA证书名称。
 
         :param issuer_name: The issuer_name of this ShowCertificateResponse.
-        :type: str
+        :type issuer_name: str
         """
         self._issuer_name = issuer_name
 
@@ -211,7 +242,7 @@ class ShowCertificateResponse(SdkResponse):
         密钥算法。
 
         :param key_algorithm: The key_algorithm of this ShowCertificateResponse.
-        :type: str
+        :type key_algorithm: str
         """
         self._key_algorithm = key_algorithm
 
@@ -233,7 +264,7 @@ class ShowCertificateResponse(SdkResponse):
         签名算法。
 
         :param signature_algorithm: The signature_algorithm of this ShowCertificateResponse.
-        :type: str
+        :type signature_algorithm: str
         """
         self._signature_algorithm = signature_algorithm
 
@@ -255,7 +286,7 @@ class ShowCertificateResponse(SdkResponse):
         冻结标识:   - **0** : 非冻结状态；   - **其它值** : 冻结状态，当前预留。
 
         :param freeze_flag: The freeze_flag of this ShowCertificateResponse.
-        :type: int
+        :type freeze_flag: int
         """
         self._freeze_flag = freeze_flag
 
@@ -277,7 +308,7 @@ class ShowCertificateResponse(SdkResponse):
         证书生成方式：  - **GENERATE** : PCA系统生成；  - **IMPORT** : 外部导入；  - **CSR** : 外部提供CSR，内部CA进行签发，即私钥不在PCA进行托管。
 
         :param gen_mode: The gen_mode of this ShowCertificateResponse.
-        :type: str
+        :type gen_mode: str
         """
         self._gen_mode = gen_mode
 
@@ -299,7 +330,7 @@ class ShowCertificateResponse(SdkResponse):
         序列号。
 
         :param serial_number: The serial_number of this ShowCertificateResponse.
-        :type: str
+        :type serial_number: str
         """
         self._serial_number = serial_number
 
@@ -321,7 +352,7 @@ class ShowCertificateResponse(SdkResponse):
         证书创建时间，格式为时间戳（毫秒级）。
 
         :param create_time: The create_time of this ShowCertificateResponse.
-        :type: int
+        :type create_time: int
         """
         self._create_time = create_time
 
@@ -343,7 +374,7 @@ class ShowCertificateResponse(SdkResponse):
         证书删除时间，格式为时间戳（毫秒级）。
 
         :param delete_time: The delete_time of this ShowCertificateResponse.
-        :type: int
+        :type delete_time: int
         """
         self._delete_time = delete_time
 
@@ -365,7 +396,7 @@ class ShowCertificateResponse(SdkResponse):
         证书创建时间，格式为时间戳（毫秒级）。
 
         :param not_before: The not_before of this ShowCertificateResponse.
-        :type: int
+        :type not_before: int
         """
         self._not_before = not_before
 
@@ -387,7 +418,7 @@ class ShowCertificateResponse(SdkResponse):
         证书到期时间，格式为时间戳（毫秒级）。
 
         :param not_after: The not_after of this ShowCertificateResponse.
-        :type: int
+        :type not_after: int
         """
         self._not_after = not_after
 
@@ -397,7 +428,7 @@ class ShowCertificateResponse(SdkResponse):
 
 
         :return: The distinguished_name of this ShowCertificateResponse.
-        :rtype: DistinguishedName
+        :rtype: :class:`huaweicloudsdkccm.v1.DistinguishedName`
         """
         return self._distinguished_name
 
@@ -407,7 +438,7 @@ class ShowCertificateResponse(SdkResponse):
 
 
         :param distinguished_name: The distinguished_name of this ShowCertificateResponse.
-        :type: DistinguishedName
+        :type distinguished_name: :class:`huaweicloudsdkccm.v1.DistinguishedName`
         """
         self._distinguished_name = distinguished_name
 

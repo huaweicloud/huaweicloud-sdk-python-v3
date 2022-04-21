@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TaskBasicRsp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -64,7 +63,47 @@ class TaskBasicRsp:
     }
 
     def __init__(self, task_id=None, task_name=None, task_type=None, status=None, project_id=None, source_datasource_id=None, target_datasource_id=None, source_datasource_name=None, target_datasource_name=None, source_app_id=None, target_app_id=None, source_app_name=None, target_app_name=None, created_date=None, last_modified_date=None, description=None, task_tag=None, created_by=None):
-        """TaskBasicRsp - a model defined in huaweicloud sdk"""
+        """TaskBasicRsp
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 任务ID, 可为空
+        :type task_id: str
+        :param task_name: 任务名称，只能以字母、数字为开头，包含字母、数字和 . _ -  3~100个字符
+        :type task_name: str
+        :param task_type: 任务类型 - realtime (实时) - timing (定时)
+        :type task_type: str
+        :param status: 任务状态, - stop (0停止\\未启动) - running (1运行中)
+        :type status: str
+        :param project_id: 项目ID
+        :type project_id: str
+        :param source_datasource_id: 源端数据源ID
+        :type source_datasource_id: str
+        :param target_datasource_id: 目标端数据源ID
+        :type target_datasource_id: str
+        :param source_datasource_name: 源端数据源的名称
+        :type source_datasource_name: str
+        :param target_datasource_name: 目标端数据源的名称
+        :type target_datasource_name: str
+        :param source_app_id: 源端数据源所属集成应用ID
+        :type source_app_id: str
+        :param target_app_id: 目标端数据源所属集成应用ID
+        :type target_app_id: str
+        :param source_app_name: 源端数据源所属集成应用名称
+        :type source_app_name: str
+        :param target_app_name: 目标端数据源所属集成应用名称
+        :type target_app_name: str
+        :param created_date: 创建时间
+        :type created_date: int
+        :param last_modified_date: 最近一次的修改时间
+        :type last_modified_date: int
+        :param description: 描述信息
+        :type description: str
+        :param task_tag: 任务标签,只能包含字母、数字、中划线、下划线
+        :type task_tag: str
+        :param created_by: 任务的创建者
+        :type created_by: str
+        """
         
         
 
@@ -143,7 +182,7 @@ class TaskBasicRsp:
         任务ID, 可为空
 
         :param task_id: The task_id of this TaskBasicRsp.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -165,7 +204,7 @@ class TaskBasicRsp:
         任务名称，只能以字母、数字为开头，包含字母、数字和 . _ -  3~100个字符
 
         :param task_name: The task_name of this TaskBasicRsp.
-        :type: str
+        :type task_name: str
         """
         self._task_name = task_name
 
@@ -187,7 +226,7 @@ class TaskBasicRsp:
         任务类型 - realtime (实时) - timing (定时)
 
         :param task_type: The task_type of this TaskBasicRsp.
-        :type: str
+        :type task_type: str
         """
         self._task_type = task_type
 
@@ -209,7 +248,7 @@ class TaskBasicRsp:
         任务状态, - stop (0停止\\未启动) - running (1运行中)
 
         :param status: The status of this TaskBasicRsp.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -231,7 +270,7 @@ class TaskBasicRsp:
         项目ID
 
         :param project_id: The project_id of this TaskBasicRsp.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -253,7 +292,7 @@ class TaskBasicRsp:
         源端数据源ID
 
         :param source_datasource_id: The source_datasource_id of this TaskBasicRsp.
-        :type: str
+        :type source_datasource_id: str
         """
         self._source_datasource_id = source_datasource_id
 
@@ -275,7 +314,7 @@ class TaskBasicRsp:
         目标端数据源ID
 
         :param target_datasource_id: The target_datasource_id of this TaskBasicRsp.
-        :type: str
+        :type target_datasource_id: str
         """
         self._target_datasource_id = target_datasource_id
 
@@ -297,7 +336,7 @@ class TaskBasicRsp:
         源端数据源的名称
 
         :param source_datasource_name: The source_datasource_name of this TaskBasicRsp.
-        :type: str
+        :type source_datasource_name: str
         """
         self._source_datasource_name = source_datasource_name
 
@@ -319,7 +358,7 @@ class TaskBasicRsp:
         目标端数据源的名称
 
         :param target_datasource_name: The target_datasource_name of this TaskBasicRsp.
-        :type: str
+        :type target_datasource_name: str
         """
         self._target_datasource_name = target_datasource_name
 
@@ -341,7 +380,7 @@ class TaskBasicRsp:
         源端数据源所属集成应用ID
 
         :param source_app_id: The source_app_id of this TaskBasicRsp.
-        :type: str
+        :type source_app_id: str
         """
         self._source_app_id = source_app_id
 
@@ -363,7 +402,7 @@ class TaskBasicRsp:
         目标端数据源所属集成应用ID
 
         :param target_app_id: The target_app_id of this TaskBasicRsp.
-        :type: str
+        :type target_app_id: str
         """
         self._target_app_id = target_app_id
 
@@ -385,7 +424,7 @@ class TaskBasicRsp:
         源端数据源所属集成应用名称
 
         :param source_app_name: The source_app_name of this TaskBasicRsp.
-        :type: str
+        :type source_app_name: str
         """
         self._source_app_name = source_app_name
 
@@ -407,7 +446,7 @@ class TaskBasicRsp:
         目标端数据源所属集成应用名称
 
         :param target_app_name: The target_app_name of this TaskBasicRsp.
-        :type: str
+        :type target_app_name: str
         """
         self._target_app_name = target_app_name
 
@@ -429,7 +468,7 @@ class TaskBasicRsp:
         创建时间
 
         :param created_date: The created_date of this TaskBasicRsp.
-        :type: int
+        :type created_date: int
         """
         self._created_date = created_date
 
@@ -451,7 +490,7 @@ class TaskBasicRsp:
         最近一次的修改时间
 
         :param last_modified_date: The last_modified_date of this TaskBasicRsp.
-        :type: int
+        :type last_modified_date: int
         """
         self._last_modified_date = last_modified_date
 
@@ -473,7 +512,7 @@ class TaskBasicRsp:
         描述信息
 
         :param description: The description of this TaskBasicRsp.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -495,7 +534,7 @@ class TaskBasicRsp:
         任务标签,只能包含字母、数字、中划线、下划线
 
         :param task_tag: The task_tag of this TaskBasicRsp.
-        :type: str
+        :type task_tag: str
         """
         self._task_tag = task_tag
 
@@ -517,7 +556,7 @@ class TaskBasicRsp:
         任务的创建者
 
         :param created_by: The created_by of this TaskBasicRsp.
-        :type: str
+        :type created_by: str
         """
         self._created_by = created_by
 

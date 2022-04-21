@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListInstancesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListInstancesResponse(SdkResponse):
     }
 
     def __init__(self, instances=None, instance_num=None, page_no=None, page_size=None, total_record=None, total_page=None):
-        """ListInstancesResponse - a model defined in huaweicloud sdk"""
+        """ListInstancesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param instances: DDM实例的信息。
+        :type instances: list[:class:`huaweicloudsdkddm.v1.ShowInstanceBeanResponse`]
+        :param instance_num: 租户下的DDM实例个数
+        :type instance_num: int
+        :param page_no: 当前页码
+        :type page_no: int
+        :param page_size: 当前页码的数据条数
+        :type page_size: int
+        :param total_record: 总条数
+        :type total_record: int
+        :param total_page: 总页数
+        :type total_page: int
+        """
         
         super(ListInstancesResponse, self).__init__()
 
@@ -72,7 +87,7 @@ class ListInstancesResponse(SdkResponse):
         DDM实例的信息。
 
         :return: The instances of this ListInstancesResponse.
-        :rtype: list[ShowInstanceBeanResponse]
+        :rtype: list[:class:`huaweicloudsdkddm.v1.ShowInstanceBeanResponse`]
         """
         return self._instances
 
@@ -83,7 +98,7 @@ class ListInstancesResponse(SdkResponse):
         DDM实例的信息。
 
         :param instances: The instances of this ListInstancesResponse.
-        :type: list[ShowInstanceBeanResponse]
+        :type instances: list[:class:`huaweicloudsdkddm.v1.ShowInstanceBeanResponse`]
         """
         self._instances = instances
 
@@ -105,7 +120,7 @@ class ListInstancesResponse(SdkResponse):
         租户下的DDM实例个数
 
         :param instance_num: The instance_num of this ListInstancesResponse.
-        :type: int
+        :type instance_num: int
         """
         self._instance_num = instance_num
 
@@ -127,7 +142,7 @@ class ListInstancesResponse(SdkResponse):
         当前页码
 
         :param page_no: The page_no of this ListInstancesResponse.
-        :type: int
+        :type page_no: int
         """
         self._page_no = page_no
 
@@ -149,7 +164,7 @@ class ListInstancesResponse(SdkResponse):
         当前页码的数据条数
 
         :param page_size: The page_size of this ListInstancesResponse.
-        :type: int
+        :type page_size: int
         """
         self._page_size = page_size
 
@@ -171,7 +186,7 @@ class ListInstancesResponse(SdkResponse):
         总条数
 
         :param total_record: The total_record of this ListInstancesResponse.
-        :type: int
+        :type total_record: int
         """
         self._total_record = total_record
 
@@ -193,7 +208,7 @@ class ListInstancesResponse(SdkResponse):
         总页数
 
         :param total_page: The total_page of this ListInstancesResponse.
-        :type: int
+        :type total_page: int
         """
         self._total_page = total_page
 

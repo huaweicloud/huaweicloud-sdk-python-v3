@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryBodyParam:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class QueryBodyParam:
     }
 
     def __init__(self, category=None, end_time=None, hide_syslog=None, key_word=None, line_num=None, page_size_size=None, search_key=None, start_time=None, type=None, is_desc=None):
-        """QueryBodyParam - a model defined in huaweicloud sdk"""
+        """QueryBodyParam
+
+        The model defined in huaweicloud sdk
+
+        :param category: 取值范围 app_log,node _log,custom_log 日志类型字段:app_log:应用日志 node_log:主机日志 custom_log:自定义配置路径日志。
+        :type category: str
+        :param end_time: 搜索结束时间(UTC时间，毫秒级)。
+        :type end_time: int
+        :param hide_syslog: 取值范围 0、1 。搜索时是否隐藏系统日志，默认0为隐藏1为显示。
+        :type hide_syslog: int
+        :param key_word: 1.支持关键词精确搜索。关键词指相邻两个分词符之间的单词。 2.支持关键词模糊匹配搜索，例如输入“RROR”或“ERRO?”或“*ROR*”或“ERR*”或“ER*OR”。 3.支持短语精确搜索，例如输入“Start to refresh alm Statistic”。 4.支持关键词的“与”、“或”组合搜索。格式为“query&amp;&amp;logs”或“query||logs”。 说明： 当前默认分词符有  , &#39;\&quot;;&#x3D;()[]{}@&amp;&lt;&gt;/:\\n\\t\\r
+        :type key_word: str
+        :param line_num: 日志单行序列号第一次查询时不需要此参数，后续分页查询时需要使用可从上次查询的返回信息中获取.
+        :type line_num: str
+        :param page_size_size: 表示每次查询的日志条数不填时默认为5000，建议您设置为100。 第一次查询时使用pageSize 后续分页查询时使用size。
+        :type page_size_size: str
+        :param search_key: 
+        :type search_key: :class:`huaweicloudsdkaom.v2.SearchKey`
+        :param start_time: 搜索起始时间(UTC时间，毫秒级)。
+        :type start_time: int
+        :param type: 表示此次查询为分页查询，第一次查询时不需要此参数，后续分页查询时需要使用。
+        :type type: str
+        :param is_desc: 标识按照lineNum升序查询还是降序查询。  true：降序（lineNum由大到小：时间从新到老）。  false：升序（lineNum由小到大：即时间从老到新）。
+        :type is_desc: bool
+        """
         
         
 
@@ -99,7 +122,7 @@ class QueryBodyParam:
         取值范围 app_log,node _log,custom_log 日志类型字段:app_log:应用日志 node_log:主机日志 custom_log:自定义配置路径日志。
 
         :param category: The category of this QueryBodyParam.
-        :type: str
+        :type category: str
         """
         self._category = category
 
@@ -121,7 +144,7 @@ class QueryBodyParam:
         搜索结束时间(UTC时间，毫秒级)。
 
         :param end_time: The end_time of this QueryBodyParam.
-        :type: int
+        :type end_time: int
         """
         self._end_time = end_time
 
@@ -143,7 +166,7 @@ class QueryBodyParam:
         取值范围 0、1 。搜索时是否隐藏系统日志，默认0为隐藏1为显示。
 
         :param hide_syslog: The hide_syslog of this QueryBodyParam.
-        :type: int
+        :type hide_syslog: int
         """
         self._hide_syslog = hide_syslog
 
@@ -165,7 +188,7 @@ class QueryBodyParam:
         1.支持关键词精确搜索。关键词指相邻两个分词符之间的单词。 2.支持关键词模糊匹配搜索，例如输入“RROR”或“ERRO?”或“*ROR*”或“ERR*”或“ER*OR”。 3.支持短语精确搜索，例如输入“Start to refresh alm Statistic”。 4.支持关键词的“与”、“或”组合搜索。格式为“query&&logs”或“query||logs”。 说明： 当前默认分词符有  , '\";=()[]{}@&<>/:\\n\\t\\r
 
         :param key_word: The key_word of this QueryBodyParam.
-        :type: str
+        :type key_word: str
         """
         self._key_word = key_word
 
@@ -187,7 +210,7 @@ class QueryBodyParam:
         日志单行序列号第一次查询时不需要此参数，后续分页查询时需要使用可从上次查询的返回信息中获取.
 
         :param line_num: The line_num of this QueryBodyParam.
-        :type: str
+        :type line_num: str
         """
         self._line_num = line_num
 
@@ -209,7 +232,7 @@ class QueryBodyParam:
         表示每次查询的日志条数不填时默认为5000，建议您设置为100。 第一次查询时使用pageSize 后续分页查询时使用size。
 
         :param page_size_size: The page_size_size of this QueryBodyParam.
-        :type: str
+        :type page_size_size: str
         """
         self._page_size_size = page_size_size
 
@@ -219,7 +242,7 @@ class QueryBodyParam:
 
 
         :return: The search_key of this QueryBodyParam.
-        :rtype: SearchKey
+        :rtype: :class:`huaweicloudsdkaom.v2.SearchKey`
         """
         return self._search_key
 
@@ -229,7 +252,7 @@ class QueryBodyParam:
 
 
         :param search_key: The search_key of this QueryBodyParam.
-        :type: SearchKey
+        :type search_key: :class:`huaweicloudsdkaom.v2.SearchKey`
         """
         self._search_key = search_key
 
@@ -251,7 +274,7 @@ class QueryBodyParam:
         搜索起始时间(UTC时间，毫秒级)。
 
         :param start_time: The start_time of this QueryBodyParam.
-        :type: int
+        :type start_time: int
         """
         self._start_time = start_time
 
@@ -273,7 +296,7 @@ class QueryBodyParam:
         表示此次查询为分页查询，第一次查询时不需要此参数，后续分页查询时需要使用。
 
         :param type: The type of this QueryBodyParam.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -295,7 +318,7 @@ class QueryBodyParam:
         标识按照lineNum升序查询还是降序查询。  true：降序（lineNum由大到小：时间从新到老）。  false：升序（lineNum由小到大：即时间从老到新）。
 
         :param is_desc: The is_desc of this QueryBodyParam.
-        :type: bool
+        :type is_desc: bool
         """
         self._is_desc = is_desc
 

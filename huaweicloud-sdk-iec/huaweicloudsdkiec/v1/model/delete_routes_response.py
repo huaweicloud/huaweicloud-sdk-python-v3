@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteRoutesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteRoutesResponse(SdkResponse):
     }
 
     def __init__(self, routes=None):
-        """DeleteRoutesResponse - a model defined in huaweicloud sdk"""
+        """DeleteRoutesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param routes: 路由列表
+        :type routes: list[:class:`huaweicloudsdkiec.v1.Route`]
+        """
         
         super(DeleteRoutesResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class DeleteRoutesResponse(SdkResponse):
         路由列表
 
         :return: The routes of this DeleteRoutesResponse.
-        :rtype: list[Route]
+        :rtype: list[:class:`huaweicloudsdkiec.v1.Route`]
         """
         return self._routes
 
@@ -58,7 +63,7 @@ class DeleteRoutesResponse(SdkResponse):
         路由列表
 
         :param routes: The routes of this DeleteRoutesResponse.
-        :type: list[Route]
+        :type routes: list[:class:`huaweicloudsdkiec.v1.Route`]
         """
         self._routes = routes
 

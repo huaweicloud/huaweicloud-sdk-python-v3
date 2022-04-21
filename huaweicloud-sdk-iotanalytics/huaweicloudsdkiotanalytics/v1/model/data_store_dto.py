@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DataStoreDto:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class DataStoreDto:
     }
 
     def __init__(self, data_store_id=None, data_store_group_id=None, product_id=None):
-        """DataStoreDto - a model defined in huaweicloud sdk"""
+        """DataStoreDto
+
+        The model defined in huaweicloud sdk
+
+        :param data_store_id: 存储ID
+        :type data_store_id: str
+        :param data_store_group_id: 存储组ID
+        :type data_store_group_id: str
+        :param product_id: 产品ID
+        :type product_id: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class DataStoreDto:
         存储ID
 
         :param data_store_id: The data_store_id of this DataStoreDto.
-        :type: str
+        :type data_store_id: str
         """
         self._data_store_id = data_store_id
 
@@ -90,7 +99,7 @@ class DataStoreDto:
         存储组ID
 
         :param data_store_group_id: The data_store_group_id of this DataStoreDto.
-        :type: str
+        :type data_store_group_id: str
         """
         self._data_store_group_id = data_store_group_id
 
@@ -112,7 +121,7 @@ class DataStoreDto:
         产品ID
 
         :param product_id: The product_id of this DataStoreDto.
-        :type: str
+        :type product_id: str
         """
         self._product_id = product_id
 

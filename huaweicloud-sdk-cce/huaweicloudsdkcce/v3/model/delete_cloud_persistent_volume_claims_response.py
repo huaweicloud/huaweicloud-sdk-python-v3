@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteCloudPersistentVolumeClaimsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class DeleteCloudPersistentVolumeClaimsResponse(SdkResponse):
     }
 
     def __init__(self, api_version=None, kind=None, metadata=None, spec=None, status=None):
-        """DeleteCloudPersistentVolumeClaimsResponse - a model defined in huaweicloud sdk"""
+        """DeleteCloudPersistentVolumeClaimsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param api_version: API版本，固定值**v1**
+        :type api_version: str
+        :param kind: API类型，固定值**PersistentVolumeClaim**
+        :type kind: str
+        :param metadata: 
+        :type metadata: :class:`huaweicloudsdkcce.v3.PersistentVolumeClaimMetadata`
+        :param spec: 
+        :type spec: :class:`huaweicloudsdkcce.v3.PersistentVolumeClaimSpec`
+        :param status: 
+        :type status: :class:`huaweicloudsdkcce.v3.PersistentVolumeClaimStatus`
+        """
         
         super(DeleteCloudPersistentVolumeClaimsResponse, self).__init__()
 
@@ -78,7 +91,7 @@ class DeleteCloudPersistentVolumeClaimsResponse(SdkResponse):
         API版本，固定值**v1**
 
         :param api_version: The api_version of this DeleteCloudPersistentVolumeClaimsResponse.
-        :type: str
+        :type api_version: str
         """
         self._api_version = api_version
 
@@ -100,7 +113,7 @@ class DeleteCloudPersistentVolumeClaimsResponse(SdkResponse):
         API类型，固定值**PersistentVolumeClaim**
 
         :param kind: The kind of this DeleteCloudPersistentVolumeClaimsResponse.
-        :type: str
+        :type kind: str
         """
         self._kind = kind
 
@@ -110,7 +123,7 @@ class DeleteCloudPersistentVolumeClaimsResponse(SdkResponse):
 
 
         :return: The metadata of this DeleteCloudPersistentVolumeClaimsResponse.
-        :rtype: PersistentVolumeClaimMetadata
+        :rtype: :class:`huaweicloudsdkcce.v3.PersistentVolumeClaimMetadata`
         """
         return self._metadata
 
@@ -120,7 +133,7 @@ class DeleteCloudPersistentVolumeClaimsResponse(SdkResponse):
 
 
         :param metadata: The metadata of this DeleteCloudPersistentVolumeClaimsResponse.
-        :type: PersistentVolumeClaimMetadata
+        :type metadata: :class:`huaweicloudsdkcce.v3.PersistentVolumeClaimMetadata`
         """
         self._metadata = metadata
 
@@ -130,7 +143,7 @@ class DeleteCloudPersistentVolumeClaimsResponse(SdkResponse):
 
 
         :return: The spec of this DeleteCloudPersistentVolumeClaimsResponse.
-        :rtype: PersistentVolumeClaimSpec
+        :rtype: :class:`huaweicloudsdkcce.v3.PersistentVolumeClaimSpec`
         """
         return self._spec
 
@@ -140,7 +153,7 @@ class DeleteCloudPersistentVolumeClaimsResponse(SdkResponse):
 
 
         :param spec: The spec of this DeleteCloudPersistentVolumeClaimsResponse.
-        :type: PersistentVolumeClaimSpec
+        :type spec: :class:`huaweicloudsdkcce.v3.PersistentVolumeClaimSpec`
         """
         self._spec = spec
 
@@ -150,7 +163,7 @@ class DeleteCloudPersistentVolumeClaimsResponse(SdkResponse):
 
 
         :return: The status of this DeleteCloudPersistentVolumeClaimsResponse.
-        :rtype: PersistentVolumeClaimStatus
+        :rtype: :class:`huaweicloudsdkcce.v3.PersistentVolumeClaimStatus`
         """
         return self._status
 
@@ -160,7 +173,7 @@ class DeleteCloudPersistentVolumeClaimsResponse(SdkResponse):
 
 
         :param status: The status of this DeleteCloudPersistentVolumeClaimsResponse.
-        :type: PersistentVolumeClaimStatus
+        :type status: :class:`huaweicloudsdkcce.v3.PersistentVolumeClaimStatus`
         """
         self._status = status
 

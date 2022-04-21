@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PostTranscriberJobs:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class PostTranscriberJobs:
     }
 
     def __init__(self, config=None, data_url=None):
-        """PostTranscriberJobs - a model defined in huaweicloud sdk"""
+        """PostTranscriberJobs
+
+        The model defined in huaweicloud sdk
+
+        :param config: 
+        :type config: :class:`huaweicloudsdksis.v1.TranscriberConfig`
+        :param data_url: 存放在OBS的音频文件路径。OBS的region要和请求服务的region保持一致，region不一致则OBS不可用，即使obs是公开访问权限。
+        :type data_url: str
+        """
         
         
 
@@ -49,7 +56,7 @@ class PostTranscriberJobs:
 
 
         :return: The config of this PostTranscriberJobs.
-        :rtype: TranscriberConfig
+        :rtype: :class:`huaweicloudsdksis.v1.TranscriberConfig`
         """
         return self._config
 
@@ -59,7 +66,7 @@ class PostTranscriberJobs:
 
 
         :param config: The config of this PostTranscriberJobs.
-        :type: TranscriberConfig
+        :type config: :class:`huaweicloudsdksis.v1.TranscriberConfig`
         """
         self._config = config
 
@@ -81,7 +88,7 @@ class PostTranscriberJobs:
         存放在OBS的音频文件路径。OBS的region要和请求服务的region保持一致，region不一致则OBS不可用，即使obs是公开访问权限。
 
         :param data_url: The data_url of this PostTranscriberJobs.
-        :type: str
+        :type data_url: str
         """
         self._data_url = data_url
 

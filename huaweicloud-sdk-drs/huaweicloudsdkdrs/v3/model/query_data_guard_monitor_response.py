@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryDataGuardMonitorResponse:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -66,7 +65,49 @@ class QueryDataGuardMonitorResponse:
     }
 
     def __init__(self, bandwidth=None, cpu_used_percent=None, dst_delay=None, dst_io=None, dst_normal=None, dst_offset=None, dst_rps=None, mem_used_in_mb=None, node_mem_in_mb=None, node_offset=None, node_volume_in_gb=None, sr_delay=None, sr_offset=None, src_io=None, src_normal=None, src_rps=None, trans_in_mb=None, trans_lines=None, volume_used_in_gb=None):
-        """QueryDataGuardMonitorResponse - a model defined in huaweicloud sdk"""
+        """QueryDataGuardMonitorResponse
+
+        The model defined in huaweicloud sdk
+
+        :param bandwidth: 带宽。
+        :type bandwidth: str
+        :param cpu_used_percent: cpu百分比。
+        :type cpu_used_percent: str
+        :param dst_delay: 目标库时延。
+        :type dst_delay: int
+        :param dst_io: 目标io。
+        :type dst_io: str
+        :param dst_normal: 目标库连接状态。
+        :type dst_normal: bool
+        :param dst_offset: 目标库offSet位点。
+        :type dst_offset: str
+        :param dst_rps: 目标rps。
+        :type dst_rps: str
+        :param mem_used_in_mb: 内存使用。
+        :type mem_used_in_mb: str
+        :param node_mem_in_mb: node内存总大小。
+        :type node_mem_in_mb: int
+        :param node_offset: 迁移实例offSet位点。
+        :type node_offset: str
+        :param node_volume_in_gb: node磁盘总大小。
+        :type node_volume_in_gb: int
+        :param sr_delay: 源库时延。
+        :type sr_delay: int
+        :param sr_offset: 源库offSet位点。
+        :type sr_offset: str
+        :param src_io: 源io。
+        :type src_io: str
+        :param src_normal: 源库连接状态。
+        :type src_normal: bool
+        :param src_rps: 源rps。
+        :type src_rps: str
+        :param trans_in_mb: 迁移数据量。
+        :type trans_in_mb: str
+        :param trans_lines: 迁移数据行数。
+        :type trans_lines: str
+        :param volume_used_in_gb: 磁盘使用。
+        :type volume_used_in_gb: str
+        """
         
         
 
@@ -148,7 +189,7 @@ class QueryDataGuardMonitorResponse:
         带宽。
 
         :param bandwidth: The bandwidth of this QueryDataGuardMonitorResponse.
-        :type: str
+        :type bandwidth: str
         """
         self._bandwidth = bandwidth
 
@@ -170,7 +211,7 @@ class QueryDataGuardMonitorResponse:
         cpu百分比。
 
         :param cpu_used_percent: The cpu_used_percent of this QueryDataGuardMonitorResponse.
-        :type: str
+        :type cpu_used_percent: str
         """
         self._cpu_used_percent = cpu_used_percent
 
@@ -192,7 +233,7 @@ class QueryDataGuardMonitorResponse:
         目标库时延。
 
         :param dst_delay: The dst_delay of this QueryDataGuardMonitorResponse.
-        :type: int
+        :type dst_delay: int
         """
         self._dst_delay = dst_delay
 
@@ -214,7 +255,7 @@ class QueryDataGuardMonitorResponse:
         目标io。
 
         :param dst_io: The dst_io of this QueryDataGuardMonitorResponse.
-        :type: str
+        :type dst_io: str
         """
         self._dst_io = dst_io
 
@@ -236,7 +277,7 @@ class QueryDataGuardMonitorResponse:
         目标库连接状态。
 
         :param dst_normal: The dst_normal of this QueryDataGuardMonitorResponse.
-        :type: bool
+        :type dst_normal: bool
         """
         self._dst_normal = dst_normal
 
@@ -258,7 +299,7 @@ class QueryDataGuardMonitorResponse:
         目标库offSet位点。
 
         :param dst_offset: The dst_offset of this QueryDataGuardMonitorResponse.
-        :type: str
+        :type dst_offset: str
         """
         self._dst_offset = dst_offset
 
@@ -280,7 +321,7 @@ class QueryDataGuardMonitorResponse:
         目标rps。
 
         :param dst_rps: The dst_rps of this QueryDataGuardMonitorResponse.
-        :type: str
+        :type dst_rps: str
         """
         self._dst_rps = dst_rps
 
@@ -302,7 +343,7 @@ class QueryDataGuardMonitorResponse:
         内存使用。
 
         :param mem_used_in_mb: The mem_used_in_mb of this QueryDataGuardMonitorResponse.
-        :type: str
+        :type mem_used_in_mb: str
         """
         self._mem_used_in_mb = mem_used_in_mb
 
@@ -324,7 +365,7 @@ class QueryDataGuardMonitorResponse:
         node内存总大小。
 
         :param node_mem_in_mb: The node_mem_in_mb of this QueryDataGuardMonitorResponse.
-        :type: int
+        :type node_mem_in_mb: int
         """
         self._node_mem_in_mb = node_mem_in_mb
 
@@ -346,7 +387,7 @@ class QueryDataGuardMonitorResponse:
         迁移实例offSet位点。
 
         :param node_offset: The node_offset of this QueryDataGuardMonitorResponse.
-        :type: str
+        :type node_offset: str
         """
         self._node_offset = node_offset
 
@@ -368,7 +409,7 @@ class QueryDataGuardMonitorResponse:
         node磁盘总大小。
 
         :param node_volume_in_gb: The node_volume_in_gb of this QueryDataGuardMonitorResponse.
-        :type: int
+        :type node_volume_in_gb: int
         """
         self._node_volume_in_gb = node_volume_in_gb
 
@@ -390,7 +431,7 @@ class QueryDataGuardMonitorResponse:
         源库时延。
 
         :param sr_delay: The sr_delay of this QueryDataGuardMonitorResponse.
-        :type: int
+        :type sr_delay: int
         """
         self._sr_delay = sr_delay
 
@@ -412,7 +453,7 @@ class QueryDataGuardMonitorResponse:
         源库offSet位点。
 
         :param sr_offset: The sr_offset of this QueryDataGuardMonitorResponse.
-        :type: str
+        :type sr_offset: str
         """
         self._sr_offset = sr_offset
 
@@ -434,7 +475,7 @@ class QueryDataGuardMonitorResponse:
         源io。
 
         :param src_io: The src_io of this QueryDataGuardMonitorResponse.
-        :type: str
+        :type src_io: str
         """
         self._src_io = src_io
 
@@ -456,7 +497,7 @@ class QueryDataGuardMonitorResponse:
         源库连接状态。
 
         :param src_normal: The src_normal of this QueryDataGuardMonitorResponse.
-        :type: bool
+        :type src_normal: bool
         """
         self._src_normal = src_normal
 
@@ -478,7 +519,7 @@ class QueryDataGuardMonitorResponse:
         源rps。
 
         :param src_rps: The src_rps of this QueryDataGuardMonitorResponse.
-        :type: str
+        :type src_rps: str
         """
         self._src_rps = src_rps
 
@@ -500,7 +541,7 @@ class QueryDataGuardMonitorResponse:
         迁移数据量。
 
         :param trans_in_mb: The trans_in_mb of this QueryDataGuardMonitorResponse.
-        :type: str
+        :type trans_in_mb: str
         """
         self._trans_in_mb = trans_in_mb
 
@@ -522,7 +563,7 @@ class QueryDataGuardMonitorResponse:
         迁移数据行数。
 
         :param trans_lines: The trans_lines of this QueryDataGuardMonitorResponse.
-        :type: str
+        :type trans_lines: str
         """
         self._trans_lines = trans_lines
 
@@ -544,7 +585,7 @@ class QueryDataGuardMonitorResponse:
         磁盘使用。
 
         :param volume_used_in_gb: The volume_used_in_gb of this QueryDataGuardMonitorResponse.
-        :type: str
+        :type volume_used_in_gb: str
         """
         self._volume_used_in_gb = volume_used_in_gb
 

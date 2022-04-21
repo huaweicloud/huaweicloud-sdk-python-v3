@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchValidateClustersConnectionsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchValidateClustersConnectionsResponse(SdkResponse):
     }
 
     def __init__(self, results=None, count=None):
-        """BatchValidateClustersConnectionsResponse - a model defined in huaweicloud sdk"""
+        """BatchValidateClustersConnectionsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param results: 批量测试连接响应体集合。
+        :type results: list[:class:`huaweicloudsdkdrs.v3.CheckJobResp`]
+        :param count: 总记录数。
+        :type count: int
+        """
         
         super(BatchValidateClustersConnectionsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class BatchValidateClustersConnectionsResponse(SdkResponse):
         批量测试连接响应体集合。
 
         :return: The results of this BatchValidateClustersConnectionsResponse.
-        :rtype: list[CheckJobResp]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.CheckJobResp`]
         """
         return self._results
 
@@ -63,7 +70,7 @@ class BatchValidateClustersConnectionsResponse(SdkResponse):
         批量测试连接响应体集合。
 
         :param results: The results of this BatchValidateClustersConnectionsResponse.
-        :type: list[CheckJobResp]
+        :type results: list[:class:`huaweicloudsdkdrs.v3.CheckJobResp`]
         """
         self._results = results
 
@@ -85,7 +92,7 @@ class BatchValidateClustersConnectionsResponse(SdkResponse):
         总记录数。
 
         :param count: The count of this BatchValidateClustersConnectionsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

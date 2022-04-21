@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PublishAppMessageRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class PublishAppMessageRequest:
     }
 
     def __init__(self, endpoint_urn=None, body=None):
-        """PublishAppMessageRequest - a model defined in huaweicloud sdk"""
+        """PublishAppMessageRequest
+
+        The model defined in huaweicloud sdk
+
+        :param endpoint_urn: Endpoint的唯一资源标识，可通过[查询Application的Endpoint列表](https://support.huaweicloud.com/api-smn/ListApplicationEndpoints.html)获取该标识
+        :type endpoint_urn: str
+        :param body: Body of the PublishAppMessageRequest
+        :type body: :class:`huaweicloudsdksmn.v2.PublishAppMessageRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class PublishAppMessageRequest:
         Endpoint的唯一资源标识，可通过[查询Application的Endpoint列表](https://support.huaweicloud.com/api-smn/ListApplicationEndpoints.html)获取该标识
 
         :param endpoint_urn: The endpoint_urn of this PublishAppMessageRequest.
-        :type: str
+        :type endpoint_urn: str
         """
         self._endpoint_urn = endpoint_urn
 
@@ -72,7 +79,7 @@ class PublishAppMessageRequest:
 
 
         :return: The body of this PublishAppMessageRequest.
-        :rtype: PublishAppMessageRequestBody
+        :rtype: :class:`huaweicloudsdksmn.v2.PublishAppMessageRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class PublishAppMessageRequest:
 
 
         :param body: The body of this PublishAppMessageRequest.
-        :type: PublishAppMessageRequestBody
+        :type body: :class:`huaweicloudsdksmn.v2.PublishAppMessageRequestBody`
         """
         self._body = body
 

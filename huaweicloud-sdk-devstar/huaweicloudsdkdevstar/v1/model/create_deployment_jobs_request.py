@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateDeploymentJobsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CreateDeploymentJobsRequest:
     }
 
     def __init__(self, x_language=None, application_id=None, environment_tag=None, body=None):
-        """CreateDeploymentJobsRequest - a model defined in huaweicloud sdk"""
+        """CreateDeploymentJobsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言类型 中文:zh-cn 英文:en-us
+        :type x_language: str
+        :param application_id: 应用id
+        :type application_id: str
+        :param environment_tag: 环境标识，从 [应用详情接口](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product&#x3D;DevStar&amp;api&#x3D;ShowApplication) 返回报文中的环境信息获取。
+        :type environment_tag: str
+        :param body: Body of the CreateDeploymentJobsRequest
+        :type body: :class:`huaweicloudsdkdevstar.v1.CreateDeploymentJobsParams`
+        """
         
         
 
@@ -71,7 +82,7 @@ class CreateDeploymentJobsRequest:
         语言类型 中文:zh-cn 英文:en-us
 
         :param x_language: The x_language of this CreateDeploymentJobsRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -93,7 +104,7 @@ class CreateDeploymentJobsRequest:
         应用id
 
         :param application_id: The application_id of this CreateDeploymentJobsRequest.
-        :type: str
+        :type application_id: str
         """
         self._application_id = application_id
 
@@ -115,7 +126,7 @@ class CreateDeploymentJobsRequest:
         环境标识，从 [应用详情接口](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=DevStar&api=ShowApplication) 返回报文中的环境信息获取。
 
         :param environment_tag: The environment_tag of this CreateDeploymentJobsRequest.
-        :type: str
+        :type environment_tag: str
         """
         self._environment_tag = environment_tag
 
@@ -125,7 +136,7 @@ class CreateDeploymentJobsRequest:
 
 
         :return: The body of this CreateDeploymentJobsRequest.
-        :rtype: CreateDeploymentJobsParams
+        :rtype: :class:`huaweicloudsdkdevstar.v1.CreateDeploymentJobsParams`
         """
         return self._body
 
@@ -135,7 +146,7 @@ class CreateDeploymentJobsRequest:
 
 
         :param body: The body of this CreateDeploymentJobsRequest.
-        :type: CreateDeploymentJobsParams
+        :type body: :class:`huaweicloudsdkdevstar.v1.CreateDeploymentJobsParams`
         """
         self._body = body
 

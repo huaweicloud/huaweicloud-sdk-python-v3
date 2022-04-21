@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StatisticsTimelineItem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class StatisticsTimelineItem:
     }
 
     def __init__(self, key=None, timeline=None):
-        """StatisticsTimelineItem - a model defined in huaweicloud sdk"""
+        """StatisticsTimelineItem
+
+        The model defined in huaweicloud sdk
+
+        :param key: 键值
+        :type key: str
+        :param timeline: 对应键值的时间线
+        :type timeline: list[:class:`huaweicloudsdkwaf.v1.TimeLineItem`]
+        """
         
         
 
@@ -63,7 +70,7 @@ class StatisticsTimelineItem:
         键值
 
         :param key: The key of this StatisticsTimelineItem.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -74,7 +81,7 @@ class StatisticsTimelineItem:
         对应键值的时间线
 
         :return: The timeline of this StatisticsTimelineItem.
-        :rtype: list[TimeLineItem]
+        :rtype: list[:class:`huaweicloudsdkwaf.v1.TimeLineItem`]
         """
         return self._timeline
 
@@ -85,7 +92,7 @@ class StatisticsTimelineItem:
         对应键值的时间线
 
         :param timeline: The timeline of this StatisticsTimelineItem.
-        :type: list[TimeLineItem]
+        :type timeline: list[:class:`huaweicloudsdkwaf.v1.TimeLineItem`]
         """
         self._timeline = timeline
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CollectHotQuestionsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class CollectHotQuestionsRequest:
     }
 
     def __init__(self, qabot_id=None, start_time=None, end_time=None, top=None, domain=None, domain_id=None, exclude=None):
-        """CollectHotQuestionsRequest - a model defined in huaweicloud sdk"""
+        """CollectHotQuestionsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param qabot_id: qabot编号，UUID格式。
+        :type qabot_id: str
+        :param start_time: 查询的起始时间，long，UTC时间，默认值为0。
+        :type start_time: str
+        :param end_time: 查询的结束时间，long，UTC时间，默认值为当前时间的毫秒数。
+        :type end_time: str
+        :param top: 热点问题最多显示的个数，默认值为10，取值范围1-20。
+        :type top: str
+        :param domain: 热点问题所属的领域。如果指定领域为非空字符串则从指定领域中查询热点问题，否则从所有标准问题中查询热点问题。
+        :type domain: str
+        :param domain_id: 统计的目标问题类别id。
+        :type domain_id: str
+        :param exclude: true:根据问答对信息展示热点问题（如：热点问题对应的问答对“你好”发生了修改，变成了 “你好啊”，此时热点问题也将返回 “你好啊”；但是如果这个问题对被删除，则“你好”不会被展示在热点问中） false: 不根据问答对信息展示热点问题。
+        :type exclude: bool
+        """
         
         
 
@@ -87,7 +104,7 @@ class CollectHotQuestionsRequest:
         qabot编号，UUID格式。
 
         :param qabot_id: The qabot_id of this CollectHotQuestionsRequest.
-        :type: str
+        :type qabot_id: str
         """
         self._qabot_id = qabot_id
 
@@ -109,7 +126,7 @@ class CollectHotQuestionsRequest:
         查询的起始时间，long，UTC时间，默认值为0。
 
         :param start_time: The start_time of this CollectHotQuestionsRequest.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -131,7 +148,7 @@ class CollectHotQuestionsRequest:
         查询的结束时间，long，UTC时间，默认值为当前时间的毫秒数。
 
         :param end_time: The end_time of this CollectHotQuestionsRequest.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -153,7 +170,7 @@ class CollectHotQuestionsRequest:
         热点问题最多显示的个数，默认值为10，取值范围1-20。
 
         :param top: The top of this CollectHotQuestionsRequest.
-        :type: str
+        :type top: str
         """
         self._top = top
 
@@ -175,7 +192,7 @@ class CollectHotQuestionsRequest:
         热点问题所属的领域。如果指定领域为非空字符串则从指定领域中查询热点问题，否则从所有标准问题中查询热点问题。
 
         :param domain: The domain of this CollectHotQuestionsRequest.
-        :type: str
+        :type domain: str
         """
         self._domain = domain
 
@@ -197,7 +214,7 @@ class CollectHotQuestionsRequest:
         统计的目标问题类别id。
 
         :param domain_id: The domain_id of this CollectHotQuestionsRequest.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -219,7 +236,7 @@ class CollectHotQuestionsRequest:
         true:根据问答对信息展示热点问题（如：热点问题对应的问答对“你好”发生了修改，变成了 “你好啊”，此时热点问题也将返回 “你好啊”；但是如果这个问题对被删除，则“你好”不会被展示在热点问中） false: 不根据问答对信息展示热点问题。
 
         :param exclude: The exclude of this CollectHotQuestionsRequest.
-        :type: bool
+        :type exclude: bool
         """
         self._exclude = exclude
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GetProjectInfoV4ResultProject:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class GetProjectInfoV4ResultProject:
     }
 
     def __init__(self, project_num_id=None, project_id=None, name=None, created_on=None, updated_on=None, project_type=None, archive=None, enterprise_id=None, project_code=None, creator=None):
-        """GetProjectInfoV4ResultProject - a model defined in huaweicloud sdk"""
+        """GetProjectInfoV4ResultProject
+
+        The model defined in huaweicloud sdk
+
+        :param project_num_id: 项目numId
+        :type project_num_id: int
+        :param project_id: 项目uuid
+        :type project_id: str
+        :param name: 项目名称
+        :type name: str
+        :param created_on: 项目创建时间
+        :type created_on: int
+        :param updated_on: 项目更新时间
+        :type updated_on: int
+        :param project_type: 项目类型
+        :type project_type: str
+        :param archive: 是否归档
+        :type archive: int
+        :param enterprise_id: 企业项目id
+        :type enterprise_id: str
+        :param project_code: 项目代号
+        :type project_code: str
+        :param creator: 
+        :type creator: :class:`huaweicloudsdkprojectman.v4.GetProjectInfoV4ResultProjectCreator`
+        """
         
         
 
@@ -103,7 +126,7 @@ class GetProjectInfoV4ResultProject:
         项目numId
 
         :param project_num_id: The project_num_id of this GetProjectInfoV4ResultProject.
-        :type: int
+        :type project_num_id: int
         """
         self._project_num_id = project_num_id
 
@@ -125,7 +148,7 @@ class GetProjectInfoV4ResultProject:
         项目uuid
 
         :param project_id: The project_id of this GetProjectInfoV4ResultProject.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -147,7 +170,7 @@ class GetProjectInfoV4ResultProject:
         项目名称
 
         :param name: The name of this GetProjectInfoV4ResultProject.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -169,7 +192,7 @@ class GetProjectInfoV4ResultProject:
         项目创建时间
 
         :param created_on: The created_on of this GetProjectInfoV4ResultProject.
-        :type: int
+        :type created_on: int
         """
         self._created_on = created_on
 
@@ -191,7 +214,7 @@ class GetProjectInfoV4ResultProject:
         项目更新时间
 
         :param updated_on: The updated_on of this GetProjectInfoV4ResultProject.
-        :type: int
+        :type updated_on: int
         """
         self._updated_on = updated_on
 
@@ -213,7 +236,7 @@ class GetProjectInfoV4ResultProject:
         项目类型
 
         :param project_type: The project_type of this GetProjectInfoV4ResultProject.
-        :type: str
+        :type project_type: str
         """
         self._project_type = project_type
 
@@ -235,7 +258,7 @@ class GetProjectInfoV4ResultProject:
         是否归档
 
         :param archive: The archive of this GetProjectInfoV4ResultProject.
-        :type: int
+        :type archive: int
         """
         self._archive = archive
 
@@ -257,7 +280,7 @@ class GetProjectInfoV4ResultProject:
         企业项目id
 
         :param enterprise_id: The enterprise_id of this GetProjectInfoV4ResultProject.
-        :type: str
+        :type enterprise_id: str
         """
         self._enterprise_id = enterprise_id
 
@@ -279,7 +302,7 @@ class GetProjectInfoV4ResultProject:
         项目代号
 
         :param project_code: The project_code of this GetProjectInfoV4ResultProject.
-        :type: str
+        :type project_code: str
         """
         self._project_code = project_code
 
@@ -289,7 +312,7 @@ class GetProjectInfoV4ResultProject:
 
 
         :return: The creator of this GetProjectInfoV4ResultProject.
-        :rtype: GetProjectInfoV4ResultProjectCreator
+        :rtype: :class:`huaweicloudsdkprojectman.v4.GetProjectInfoV4ResultProjectCreator`
         """
         return self._creator
 
@@ -299,7 +322,7 @@ class GetProjectInfoV4ResultProject:
 
 
         :param creator: The creator of this GetProjectInfoV4ResultProject.
-        :type: GetProjectInfoV4ResultProjectCreator
+        :type creator: :class:`huaweicloudsdkprojectman.v4.GetProjectInfoV4ResultProjectCreator`
         """
         self._creator = creator
 

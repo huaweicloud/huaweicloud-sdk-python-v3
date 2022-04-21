@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AuthScopeDomain:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AuthScopeDomain:
     }
 
     def __init__(self, id=None, name=None):
-        """AuthScopeDomain - a model defined in huaweicloud sdk"""
+        """AuthScopeDomain
+
+        The model defined in huaweicloud sdk
+
+        :param id: IAM用户所属账号ID，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
+        :type id: str
+        :param name: IAM用户所属账号名称，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
+        :type name: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class AuthScopeDomain:
         IAM用户所属账号ID，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param id: The id of this AuthScopeDomain.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -85,7 +92,7 @@ class AuthScopeDomain:
         IAM用户所属账号名称，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param name: The name of this AuthScopeDomain.
-        :type: str
+        :type name: str
         """
         self._name = name
 

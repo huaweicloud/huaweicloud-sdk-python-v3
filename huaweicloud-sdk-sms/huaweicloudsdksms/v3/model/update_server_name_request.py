@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateServerNameRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateServerNameRequest:
     }
 
     def __init__(self, source_id=None, body=None):
-        """UpdateServerNameRequest - a model defined in huaweicloud sdk"""
+        """UpdateServerNameRequest
+
+        The model defined in huaweicloud sdk
+
+        :param source_id: 源端服务器在主机迁移服务中的id
+        :type source_id: str
+        :param body: Body of the UpdateServerNameRequest
+        :type body: :class:`huaweicloudsdksms.v3.PutSourceServerBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateServerNameRequest:
         源端服务器在主机迁移服务中的id
 
         :param source_id: The source_id of this UpdateServerNameRequest.
-        :type: str
+        :type source_id: str
         """
         self._source_id = source_id
 
@@ -72,7 +79,7 @@ class UpdateServerNameRequest:
 
 
         :return: The body of this UpdateServerNameRequest.
-        :rtype: PutSourceServerBody
+        :rtype: :class:`huaweicloudsdksms.v3.PutSourceServerBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateServerNameRequest:
 
 
         :param body: The body of this UpdateServerNameRequest.
-        :type: PutSourceServerBody
+        :type body: :class:`huaweicloudsdksms.v3.PutSourceServerBody`
         """
         self._body = body
 

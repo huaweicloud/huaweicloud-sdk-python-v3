@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunSegmentRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RunSegmentRequest:
     }
 
     def __init__(self, body=None):
-        """RunSegmentRequest - a model defined in huaweicloud sdk"""
+        """RunSegmentRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the RunSegmentRequest
+        :type body: :class:`huaweicloudsdknlp.v2.SegmentRequest`
+        """
         
         
 
@@ -46,7 +51,7 @@ class RunSegmentRequest:
 
 
         :return: The body of this RunSegmentRequest.
-        :rtype: SegmentRequest
+        :rtype: :class:`huaweicloudsdknlp.v2.SegmentRequest`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class RunSegmentRequest:
 
 
         :param body: The body of this RunSegmentRequest.
-        :type: SegmentRequest
+        :type body: :class:`huaweicloudsdknlp.v2.SegmentRequest`
         """
         self._body = body
 

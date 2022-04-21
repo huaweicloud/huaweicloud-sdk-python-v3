@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchUpdateChildNickNamesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchUpdateChildNickNamesRequest:
     }
 
     def __init__(self, body=None):
-        """BatchUpdateChildNickNamesRequest - a model defined in huaweicloud sdk"""
+        """BatchUpdateChildNickNamesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the BatchUpdateChildNickNamesRequest
+        :type body: :class:`huaweicloudsdkprojectman.v4.BatchUpdateChildUserNickNamesRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class BatchUpdateChildNickNamesRequest:
 
 
         :return: The body of this BatchUpdateChildNickNamesRequest.
-        :rtype: BatchUpdateChildUserNickNamesRequestBody
+        :rtype: :class:`huaweicloudsdkprojectman.v4.BatchUpdateChildUserNickNamesRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class BatchUpdateChildNickNamesRequest:
 
 
         :param body: The body of this BatchUpdateChildNickNamesRequest.
-        :type: BatchUpdateChildUserNickNamesRequestBody
+        :type body: :class:`huaweicloudsdkprojectman.v4.BatchUpdateChildUserNickNamesRequestBody`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Nic:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Nic:
     }
 
     def __init__(self, eth=None, ip=None):
-        """Nic - a model defined in huaweicloud sdk"""
+        """Nic
+
+        The model defined in huaweicloud sdk
+
+        :param eth: 网卡信息，如eth0,eth1
+        :type eth: str
+        :param ip: 网卡ip
+        :type ip: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class Nic:
         网卡信息，如eth0,eth1
 
         :param eth: The eth of this Nic.
-        :type: str
+        :type eth: str
         """
         self._eth = eth
 
@@ -85,7 +92,7 @@ class Nic:
         网卡ip
 
         :param ip: The ip of this Nic.
-        :type: str
+        :type ip: str
         """
         self._ip = ip
 

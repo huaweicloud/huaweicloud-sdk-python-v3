@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ReadonlyInstances:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ReadonlyInstances:
     }
 
     def __init__(self, id=None, status=None, name=None, weight=None, available_zones=None, cpu_num=None):
-        """ReadonlyInstances - a model defined in huaweicloud sdk"""
+        """ReadonlyInstances
+
+        The model defined in huaweicloud sdk
+
+        :param id: 只读实例ID。
+        :type id: str
+        :param status: 只读实例状态。
+        :type status: str
+        :param name: 只读实例名称。
+        :type name: str
+        :param weight: 只读实例读写分离权重。
+        :type weight: int
+        :param available_zones: 可用区信息。
+        :type available_zones: list[:class:`huaweicloudsdkrds.v3.AvailableZone`]
+        :param cpu_num: 只读实例CPU个数。
+        :type cpu_num: int
+        """
         
         
 
@@ -77,7 +92,7 @@ class ReadonlyInstances:
         只读实例ID。
 
         :param id: The id of this ReadonlyInstances.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -99,7 +114,7 @@ class ReadonlyInstances:
         只读实例状态。
 
         :param status: The status of this ReadonlyInstances.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -121,7 +136,7 @@ class ReadonlyInstances:
         只读实例名称。
 
         :param name: The name of this ReadonlyInstances.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -143,7 +158,7 @@ class ReadonlyInstances:
         只读实例读写分离权重。
 
         :param weight: The weight of this ReadonlyInstances.
-        :type: int
+        :type weight: int
         """
         self._weight = weight
 
@@ -154,7 +169,7 @@ class ReadonlyInstances:
         可用区信息。
 
         :return: The available_zones of this ReadonlyInstances.
-        :rtype: list[AvailableZone]
+        :rtype: list[:class:`huaweicloudsdkrds.v3.AvailableZone`]
         """
         return self._available_zones
 
@@ -165,7 +180,7 @@ class ReadonlyInstances:
         可用区信息。
 
         :param available_zones: The available_zones of this ReadonlyInstances.
-        :type: list[AvailableZone]
+        :type available_zones: list[:class:`huaweicloudsdkrds.v3.AvailableZone`]
         """
         self._available_zones = available_zones
 
@@ -187,7 +202,7 @@ class ReadonlyInstances:
         只读实例CPU个数。
 
         :param cpu_num: The cpu_num of this ReadonlyInstances.
-        :type: int
+        :type cpu_num: int
         """
         self._cpu_num = cpu_num
 

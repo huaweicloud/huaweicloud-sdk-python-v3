@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateConsumerGroupRespGroups:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateConsumerGroupRespGroups:
     }
 
     def __init__(self, id=None, name=None):
-        """CreateConsumerGroupRespGroups - a model defined in huaweicloud sdk"""
+        """CreateConsumerGroupRespGroups
+
+        The model defined in huaweicloud sdk
+
+        :param id: 消费组的ID。
+        :type id: str
+        :param name: 消费组的名称。
+        :type name: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class CreateConsumerGroupRespGroups:
         消费组的ID。
 
         :param id: The id of this CreateConsumerGroupRespGroups.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -85,7 +92,7 @@ class CreateConsumerGroupRespGroups:
         消费组的名称。
 
         :param name: The name of this CreateConsumerGroupRespGroups.
-        :type: str
+        :type name: str
         """
         self._name = name
 

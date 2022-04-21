@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowOrgResRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class ShowOrgResRequest:
     }
 
     def __init__(self):
-        """ShowOrgResRequest - a model defined in huaweicloud sdk"""
+        """ShowOrgResRequest
+
+        The model defined in huaweicloud sdk
+
+        """
         
         
         self.discriminator = None

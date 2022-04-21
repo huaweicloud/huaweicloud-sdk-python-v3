@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestoreInstanceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RestoreInstanceResponse(SdkResponse):
     }
 
     def __init__(self, restore_id=None):
-        """RestoreInstanceResponse - a model defined in huaweicloud sdk"""
+        """RestoreInstanceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param restore_id: 恢复记录ID。
+        :type restore_id: str
+        """
         
         super(RestoreInstanceResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class RestoreInstanceResponse(SdkResponse):
         恢复记录ID。
 
         :param restore_id: The restore_id of this RestoreInstanceResponse.
-        :type: str
+        :type restore_id: str
         """
         self._restore_id = restore_id
 

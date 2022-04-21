@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreatePostPaidServersResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreatePostPaidServersResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, server_ids=None):
-        """CreatePostPaidServersResponse - a model defined in huaweicloud sdk"""
+        """CreatePostPaidServersResponse
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 提交任务成功后返回的任务ID，用户可以使用该ID对任务执行情况进行查询。
+        :type job_id: str
+        :param server_ids: 云服务器ID列表。
+        :type server_ids: list[str]
+        """
         
         super(CreatePostPaidServersResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class CreatePostPaidServersResponse(SdkResponse):
         提交任务成功后返回的任务ID，用户可以使用该ID对任务执行情况进行查询。
 
         :param job_id: The job_id of this CreatePostPaidServersResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -85,7 +92,7 @@ class CreatePostPaidServersResponse(SdkResponse):
         云服务器ID列表。
 
         :param server_ids: The server_ids of this CreatePostPaidServersResponse.
-        :type: list[str]
+        :type server_ids: list[str]
         """
         self._server_ids = server_ids
 

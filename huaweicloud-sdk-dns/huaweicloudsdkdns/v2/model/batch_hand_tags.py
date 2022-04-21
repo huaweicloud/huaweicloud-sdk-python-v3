@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchHandTags:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchHandTags:
     }
 
     def __init__(self, tags=None, action=None):
-        """BatchHandTags - a model defined in huaweicloud sdk"""
+        """BatchHandTags
+
+        The model defined in huaweicloud sdk
+
+        :param tags: 标签列表。删除时tags结构体不能缺失。
+        :type tags: list[:class:`huaweicloudsdkdns.v2.Tag`]
+        :param action: 操作标识（区分大小写）：create（创建）、delete（删除）。
+        :type action: str
+        """
         
         
 
@@ -50,7 +57,7 @@ class BatchHandTags:
         标签列表。删除时tags结构体不能缺失。
 
         :return: The tags of this BatchHandTags.
-        :rtype: list[Tag]
+        :rtype: list[:class:`huaweicloudsdkdns.v2.Tag`]
         """
         return self._tags
 
@@ -61,7 +68,7 @@ class BatchHandTags:
         标签列表。删除时tags结构体不能缺失。
 
         :param tags: The tags of this BatchHandTags.
-        :type: list[Tag]
+        :type tags: list[:class:`huaweicloudsdkdns.v2.Tag`]
         """
         self._tags = tags
 
@@ -83,7 +90,7 @@ class BatchHandTags:
         操作标识（区分大小写）：create（创建）、delete（删除）。
 
         :param action: The action of this BatchHandTags.
-        :type: str
+        :type action: str
         """
         self._action = action
 

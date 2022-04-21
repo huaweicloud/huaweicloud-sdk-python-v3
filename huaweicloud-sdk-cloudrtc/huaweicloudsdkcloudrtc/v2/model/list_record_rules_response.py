@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRecordRulesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListRecordRulesResponse(SdkResponse):
     }
 
     def __init__(self, rules=None, x_request_id=None):
-        """ListRecordRulesResponse - a model defined in huaweicloud sdk"""
+        """ListRecordRulesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param rules: 录制规则列表
+        :type rules: list[:class:`huaweicloudsdkcloudrtc.v2.RecordRule`]
+        :param x_request_id: 
+        :type x_request_id: str
+        """
         
         super(ListRecordRulesResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListRecordRulesResponse(SdkResponse):
         录制规则列表
 
         :return: The rules of this ListRecordRulesResponse.
-        :rtype: list[RecordRule]
+        :rtype: list[:class:`huaweicloudsdkcloudrtc.v2.RecordRule`]
         """
         return self._rules
 
@@ -63,7 +70,7 @@ class ListRecordRulesResponse(SdkResponse):
         录制规则列表
 
         :param rules: The rules of this ListRecordRulesResponse.
-        :type: list[RecordRule]
+        :type rules: list[:class:`huaweicloudsdkcloudrtc.v2.RecordRule`]
         """
         self._rules = rules
 
@@ -83,7 +90,7 @@ class ListRecordRulesResponse(SdkResponse):
 
 
         :param x_request_id: The x_request_id of this ListRecordRulesResponse.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 

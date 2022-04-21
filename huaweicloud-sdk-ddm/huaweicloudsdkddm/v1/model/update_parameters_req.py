@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateParametersReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateParametersReq:
     }
 
     def __init__(self, values=None):
-        """UpdateParametersReq - a model defined in huaweicloud sdk"""
+        """UpdateParametersReq
+
+        The model defined in huaweicloud sdk
+
+        :param values: 
+        :type values: :class:`huaweicloudsdkddm.v1.UpdateParametersReqValues`
+        """
         
         
 
@@ -45,7 +50,7 @@ class UpdateParametersReq:
 
 
         :return: The values of this UpdateParametersReq.
-        :rtype: UpdateParametersReqValues
+        :rtype: :class:`huaweicloudsdkddm.v1.UpdateParametersReqValues`
         """
         return self._values
 
@@ -55,7 +60,7 @@ class UpdateParametersReq:
 
 
         :param values: The values of this UpdateParametersReq.
-        :type: UpdateParametersReqValues
+        :type values: :class:`huaweicloudsdkddm.v1.UpdateParametersReqValues`
         """
         self._values = values
 

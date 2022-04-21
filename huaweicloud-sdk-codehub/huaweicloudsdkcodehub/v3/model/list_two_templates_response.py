@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTwoTemplatesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListTwoTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """ListTwoTemplatesResponse - a model defined in huaweicloud sdk"""
+        """ListTwoTemplatesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param error: 
+        :type error: :class:`huaweicloudsdkcodehub.v3.Error`
+        :param result: 
+        :type result: :class:`huaweicloudsdkcodehub.v3.TemplateRepositoryList`
+        :param status: 响应状态
+        :type status: str
+        """
         
         super(ListTwoTemplatesResponse, self).__init__()
 
@@ -56,7 +65,7 @@ class ListTwoTemplatesResponse(SdkResponse):
 
 
         :return: The error of this ListTwoTemplatesResponse.
-        :rtype: Error
+        :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
         """
         return self._error
 
@@ -66,7 +75,7 @@ class ListTwoTemplatesResponse(SdkResponse):
 
 
         :param error: The error of this ListTwoTemplatesResponse.
-        :type: Error
+        :type error: :class:`huaweicloudsdkcodehub.v3.Error`
         """
         self._error = error
 
@@ -76,7 +85,7 @@ class ListTwoTemplatesResponse(SdkResponse):
 
 
         :return: The result of this ListTwoTemplatesResponse.
-        :rtype: TemplateRepositoryList
+        :rtype: :class:`huaweicloudsdkcodehub.v3.TemplateRepositoryList`
         """
         return self._result
 
@@ -86,7 +95,7 @@ class ListTwoTemplatesResponse(SdkResponse):
 
 
         :param result: The result of this ListTwoTemplatesResponse.
-        :type: TemplateRepositoryList
+        :type result: :class:`huaweicloudsdkcodehub.v3.TemplateRepositoryList`
         """
         self._result = result
 
@@ -108,7 +117,7 @@ class ListTwoTemplatesResponse(SdkResponse):
         响应状态
 
         :param status: The status of this ListTwoTemplatesResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 

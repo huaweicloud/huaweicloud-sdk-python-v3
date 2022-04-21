@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateResDatasourceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateResDatasourceResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, error_code=None):
-        """UpdateResDatasourceResponse - a model defined in huaweicloud sdk"""
+        """UpdateResDatasourceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param is_success: 是否成功。
+        :type is_success: bool
+        :param message: 返回消息。
+        :type message: str
+        :param error_code: 错误码（请求成功时，不返回此字段）。
+        :type error_code: str
+        """
         
         super(UpdateResDatasourceResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class UpdateResDatasourceResponse(SdkResponse):
         是否成功。
 
         :param is_success: The is_success of this UpdateResDatasourceResponse.
-        :type: bool
+        :type is_success: bool
         """
         self._is_success = is_success
 
@@ -90,7 +99,7 @@ class UpdateResDatasourceResponse(SdkResponse):
         返回消息。
 
         :param message: The message of this UpdateResDatasourceResponse.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -112,7 +121,7 @@ class UpdateResDatasourceResponse(SdkResponse):
         错误码（请求成功时，不返回此字段）。
 
         :param error_code: The error_code of this UpdateResDatasourceResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 

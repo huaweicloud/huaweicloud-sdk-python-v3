@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ScalingPolicyActionV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ScalingPolicyActionV2:
     }
 
     def __init__(self, operation=None, size=None, percentage=None, limits=None):
-        """ScalingPolicyActionV2 - a model defined in huaweicloud sdk"""
+        """ScalingPolicyActionV2
+
+        The model defined in huaweicloud sdk
+
+        :param operation: 操作选项，默认为ADD。 当scaling_resource_type为SCALING_GROUP，支持如下操作： - ADD：增加 - REMOVE/REDUCE：减少 - SET：设置为 当scaling_resource_type为BANDWIDTH，支持如下操作： - ADD：增加 - REDUCE：减少 - SET：设置为
+        :type operation: str
+        :param size: 操作大小，取值范围为0到300的整数，默认为1。当scaling_resource_type为SCALING_GROUP时，size为实例个数,取值范围为0-300的整数，默认为1。当scaling_resource_type为BANDWIDTH时，size表示带宽大小，单位为Mbit/s，取值范围为1到300的整数，默认为1。当scaling_resource_type为SCALING_GROUP时，size和percentage参数只能选其中一个进行配置。
+        :type size: int
+        :param percentage: 操作百分比，取值为0到20000的整数。当scaling_resource_type为SCALING_GROUP时，size和instance_percentage参数均无配置，则size默认为1。当scaling_resource_type为BANDWIDTH时，不支持配置instance_percentage参数。
+        :type percentage: int
+        :param limits: 操作限制。当scaling_resource_type为BANDWIDTH，且operation不为SET时，limits参数生效，单位为Mbit/s。此时，当operation为ADD时，limits表示带宽可调整的上限；当operation为REDUCE时，limits表示带宽可调整的下限。
+        :type limits: int
+        """
         
         
 
@@ -73,7 +84,7 @@ class ScalingPolicyActionV2:
         操作选项，默认为ADD。 当scaling_resource_type为SCALING_GROUP，支持如下操作： - ADD：增加 - REMOVE/REDUCE：减少 - SET：设置为 当scaling_resource_type为BANDWIDTH，支持如下操作： - ADD：增加 - REDUCE：减少 - SET：设置为
 
         :param operation: The operation of this ScalingPolicyActionV2.
-        :type: str
+        :type operation: str
         """
         self._operation = operation
 
@@ -95,7 +106,7 @@ class ScalingPolicyActionV2:
         操作大小，取值范围为0到300的整数，默认为1。当scaling_resource_type为SCALING_GROUP时，size为实例个数,取值范围为0-300的整数，默认为1。当scaling_resource_type为BANDWIDTH时，size表示带宽大小，单位为Mbit/s，取值范围为1到300的整数，默认为1。当scaling_resource_type为SCALING_GROUP时，size和percentage参数只能选其中一个进行配置。
 
         :param size: The size of this ScalingPolicyActionV2.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -117,7 +128,7 @@ class ScalingPolicyActionV2:
         操作百分比，取值为0到20000的整数。当scaling_resource_type为SCALING_GROUP时，size和instance_percentage参数均无配置，则size默认为1。当scaling_resource_type为BANDWIDTH时，不支持配置instance_percentage参数。
 
         :param percentage: The percentage of this ScalingPolicyActionV2.
-        :type: int
+        :type percentage: int
         """
         self._percentage = percentage
 
@@ -139,7 +150,7 @@ class ScalingPolicyActionV2:
         操作限制。当scaling_resource_type为BANDWIDTH，且operation不为SET时，limits参数生效，单位为Mbit/s。此时，当operation为ADD时，limits表示带宽可调整的上限；当operation为REDUCE时，limits表示带宽可调整的下限。
 
         :param limits: The limits of this ScalingPolicyActionV2.
-        :type: int
+        :type limits: int
         """
         self._limits = limits
 

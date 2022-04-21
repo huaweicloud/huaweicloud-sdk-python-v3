@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RevokeRoleFromGroupOnEnterpriseProjectRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class RevokeRoleFromGroupOnEnterpriseProjectRequest:
     }
 
     def __init__(self, enterprise_project_id=None, group_id=None, role_id=None):
-        """RevokeRoleFromGroupOnEnterpriseProjectRequest - a model defined in huaweicloud sdk"""
+        """RevokeRoleFromGroupOnEnterpriseProjectRequest
+
+        The model defined in huaweicloud sdk
+
+        :param enterprise_project_id: 企业项目ID。
+        :type enterprise_project_id: str
+        :param group_id: 用户组ID。
+        :type group_id: str
+        :param role_id: 权限ID。
+        :type role_id: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class RevokeRoleFromGroupOnEnterpriseProjectRequest:
         企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this RevokeRoleFromGroupOnEnterpriseProjectRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -87,7 +96,7 @@ class RevokeRoleFromGroupOnEnterpriseProjectRequest:
         用户组ID。
 
         :param group_id: The group_id of this RevokeRoleFromGroupOnEnterpriseProjectRequest.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -109,7 +118,7 @@ class RevokeRoleFromGroupOnEnterpriseProjectRequest:
         权限ID。
 
         :param role_id: The role_id of this RevokeRoleFromGroupOnEnterpriseProjectRequest.
-        :type: str
+        :type role_id: str
         """
         self._role_id = role_id
 

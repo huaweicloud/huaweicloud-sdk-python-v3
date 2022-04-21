@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListBranchesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListBranchesResponse(SdkResponse):
     }
 
     def __init__(self, branches=None):
-        """ListBranchesResponse - a model defined in huaweicloud sdk"""
+        """ListBranchesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param branches: 项目分支列表。
+        :type branches: list[str]
+        """
         
         super(ListBranchesResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class ListBranchesResponse(SdkResponse):
         项目分支列表。
 
         :param branches: The branches of this ListBranchesResponse.
-        :type: list[str]
+        :type branches: list[str]
         """
         self._branches = branches
 

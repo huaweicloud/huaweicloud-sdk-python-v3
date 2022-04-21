@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowMqsInstanceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -174,7 +173,157 @@ class ShowMqsInstanceResponse(SdkResponse):
     }
 
     def __init__(self, name=None, description=None, engine=None, engine_version=None, specification=None, storage_space=None, partition_num=None, used_storage_space=None, connect_address=None, port=None, status=None, instance_id=None, resource_spec_code=None, charging_mode=None, vpc_id=None, vpc_name=None, created_at=None, user_id=None, user_name=None, order_id=None, maintain_begin=None, maintain_end=None, enable_publicip=None, management_connect_address=None, ssl_enable=None, enterprise_project_id=None, is_logical_volume=None, extend_times=None, enable_auto_topic=None, type=None, product_id=None, security_group_id=None, security_group_name=None, subnet_id=None, subnet_name=None, subnet_cidr=None, available_zones=None, total_storage_space=None, public_connect_address=None, storage_resource_id=None, storage_spec_code=None, service_type=None, storage_type=None, retention_policy=None, kafka_public_status=None, public_bandwidth=None, kafka_manager_user=None, enable_log_collection=None, cross_vpc_info=None, ipv6_enable=None, ipv6_connect_addresses=None, connector_enable=None, connector_id=None, mqs_connector_enable=None, mqs_connector_address=None, plugin_enable=None, rest_enable=None, rest_connect_address=None, message_query_inst_enable=None, vpc_client_plain=None, support_features=None, trace_enable=None, pod_connect_address=None, disk_encrypted=None, kafka_private_connect_address=None, ces_version=None, node_num=None, publicip_address=None, listeners=None, public_access_enabled=None, public_boundwidth=None, access_user=None, agent_enable=None):
-        """ShowMqsInstanceResponse - a model defined in huaweicloud sdk"""
+        """ShowMqsInstanceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param name: 实例名称。
+        :type name: str
+        :param description: 描述信息。
+        :type description: str
+        :param engine: 引擎。
+        :type engine: str
+        :param engine_version: 版本。
+        :type engine_version: str
+        :param specification: 实例规格。
+        :type specification: str
+        :param storage_space: 消息存储空间，单位：GB。
+        :type storage_space: int
+        :param partition_num: 最大分区数。不同规格的ROMA Connect实例的最大分区数不相同。
+        :type partition_num: str
+        :param used_storage_space: 已使用的消息存储空间，单位：GB。
+        :type used_storage_space: int
+        :param connect_address: 实例连接IP地址。
+        :type connect_address: str
+        :param port: 实例连接端口。
+        :type port: int
+        :param status: 实例的状态。   - CREATING: 申请实例后，在实例状态进入运行中之前的状态。   - RUNNING: 实例正常运行状态。在这个状态的实例可以运行您的业务。
+        :type status: str
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param resource_spec_code: 资源规格标识。  - dms.instance.kafka.cluster.c3.mini：Kafka实例的基准带宽为100MByte/秒。  - dms.instance.kafka.cluster.c3.small.2：Kafka实例的基准带宽为300MByte/秒。  - dms.instance.kafka.cluster.c3.middle.2：Kafka实例的基准带宽为600MByte/秒。  - dms.instance.kafka.cluster.c3.high.2：Kafka实例的基准带宽为1200MByte/秒。
+        :type resource_spec_code: str
+        :param charging_mode: 付费模式，1表示按需计费，0表示包周期计费。
+        :type charging_mode: int
+        :param vpc_id: VPC ID。
+        :type vpc_id: str
+        :param vpc_name: VPC的名称。
+        :type vpc_name: str
+        :param created_at: 完成创建时间。  格式为时间戳，指从格林威治时间 1970年01月01日00时00分00秒起至指定时间的偏差总毫秒数。
+        :type created_at: str
+        :param user_id: 用户ID。
+        :type user_id: str
+        :param user_name: 用户名。
+        :type user_name: str
+        :param order_id: 订单ID，只有在包周期计费时才会有order_id值，其他计费方式order_id值为空。
+        :type order_id: str
+        :param maintain_begin: 维护时间窗开始时间，格式为HH:mm:ss。
+        :type maintain_begin: str
+        :param maintain_end: 维护时间窗结束时间，格式为HH:mm:ss。
+        :type maintain_end: str
+        :param enable_publicip: 实例是否开启公网访问功能。  - true：开启  - false：未开启 
+        :type enable_publicip: bool
+        :param management_connect_address: Kafka实例的KafkaManager连接地址。
+        :type management_connect_address: str
+        :param ssl_enable: 是否开启安全认证。 - true：开启 - false：未开启
+        :type ssl_enable: bool
+        :param enterprise_project_id: 企业项目ID。
+        :type enterprise_project_id: str
+        :param is_logical_volume: 实例扩容时用于区分老实例与新实例。  - true：新创建的实例，允许磁盘动态扩容不需要重启。  - false：老实例
+        :type is_logical_volume: bool
+        :param extend_times: 实例扩容磁盘次数，如果超过20次则无法扩容磁盘。
+        :type extend_times: int
+        :param enable_auto_topic: 是否打开kafka自动创建topic功能。  - true：开启  - false：关闭
+        :type enable_auto_topic: bool
+        :param type: 实例类型：集群，cluster。
+        :type type: str
+        :param product_id: 产品标识。
+        :type product_id: str
+        :param security_group_id: 安全组ID。
+        :type security_group_id: str
+        :param security_group_name: 租户安全组名称。
+        :type security_group_name: str
+        :param subnet_id: 子网ID。
+        :type subnet_id: str
+        :param subnet_name: 子网名称。
+        :type subnet_name: str
+        :param subnet_cidr: 子网网段。
+        :type subnet_cidr: str
+        :param available_zones: 实例节点所在的可用区，返回“可用区ID”。
+        :type available_zones: list[str]
+        :param total_storage_space: 总共消息存储空间，单位：GB。
+        :type total_storage_space: int
+        :param public_connect_address: 实例公网连接IP地址。当实例开启了公网访问，实例才包含该参数。
+        :type public_connect_address: str
+        :param storage_resource_id: 存储资源ID。
+        :type storage_resource_id: str
+        :param storage_spec_code: IO规格。
+        :type storage_spec_code: str
+        :param service_type: 服务类型。
+        :type service_type: str
+        :param storage_type: 存储类型。
+        :type storage_type: str
+        :param retention_policy: 消息老化策略。
+        :type retention_policy: str
+        :param kafka_public_status: Kafka公网开启状态。
+        :type kafka_public_status: str
+        :param public_bandwidth: 公网带宽。
+        :type public_bandwidth: int
+        :param kafka_manager_user: 登录Kafka Manager的用户名。
+        :type kafka_manager_user: str
+        :param enable_log_collection: 是否开启消息收集功能。
+        :type enable_log_collection: bool
+        :param cross_vpc_info: 跨VPC访问信息。
+        :type cross_vpc_info: str
+        :param ipv6_enable: 是否开启ipv6。
+        :type ipv6_enable: bool
+        :param ipv6_connect_addresses: IPv6的连接地址。
+        :type ipv6_connect_addresses: list[str]
+        :param connector_enable: 是否开启转储。
+        :type connector_enable: bool
+        :param connector_id: 转储任务ID。
+        :type connector_id: str
+        :param mqs_connector_enable: 是否开启MQS connector。
+        :type mqs_connector_enable: bool
+        :param mqs_connector_address: MQS connector地址。
+        :type mqs_connector_address: str
+        :param plugin_enable: 是否开启插件功能。
+        :type plugin_enable: bool
+        :param rest_enable: 是否开启Kafka rest功能。
+        :type rest_enable: bool
+        :param rest_connect_address: Kafka rest地址。
+        :type rest_connect_address: str
+        :param message_query_inst_enable: 是否开启消息查询功能。
+        :type message_query_inst_enable: bool
+        :param vpc_client_plain: 是否开启VPC明文访问。
+        :type vpc_client_plain: bool
+        :param support_features: Kafka实例支持的特性功能。
+        :type support_features: str
+        :param trace_enable: 是否开启消息轨迹功能。
+        :type trace_enable: bool
+        :param pod_connect_address: 租户侧连接地址。
+        :type pod_connect_address: str
+        :param disk_encrypted: 是否开启磁盘加密。
+        :type disk_encrypted: bool
+        :param kafka_private_connect_address: Kafka实例私有连接地址。
+        :type kafka_private_connect_address: str
+        :param ces_version: 云监控版本。
+        :type ces_version: str
+        :param node_num: 节点数量。
+        :type node_num: int
+        :param publicip_address: 公网连接地址。
+        :type publicip_address: str
+        :param listeners: 监听信息。
+        :type listeners: object
+        :param public_access_enabled: 是否开启公网访问。用于区分何时开启的公网访问。
+        :type public_access_enabled: str
+        :param public_boundwidth: 公网访问带宽。
+        :type public_boundwidth: int
+        :param access_user: 认证用户名。
+        :type access_user: str
+        :param agent_enable: 是否开启代理。
+        :type agent_enable: bool
+        """
         
         super(ShowMqsInstanceResponse, self).__init__()
 
@@ -418,7 +567,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         实例名称。
 
         :param name: The name of this ShowMqsInstanceResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -440,7 +589,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         描述信息。
 
         :param description: The description of this ShowMqsInstanceResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -462,7 +611,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         引擎。
 
         :param engine: The engine of this ShowMqsInstanceResponse.
-        :type: str
+        :type engine: str
         """
         self._engine = engine
 
@@ -484,7 +633,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         版本。
 
         :param engine_version: The engine_version of this ShowMqsInstanceResponse.
-        :type: str
+        :type engine_version: str
         """
         self._engine_version = engine_version
 
@@ -506,7 +655,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         实例规格。
 
         :param specification: The specification of this ShowMqsInstanceResponse.
-        :type: str
+        :type specification: str
         """
         self._specification = specification
 
@@ -528,7 +677,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         消息存储空间，单位：GB。
 
         :param storage_space: The storage_space of this ShowMqsInstanceResponse.
-        :type: int
+        :type storage_space: int
         """
         self._storage_space = storage_space
 
@@ -550,7 +699,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         最大分区数。不同规格的ROMA Connect实例的最大分区数不相同。
 
         :param partition_num: The partition_num of this ShowMqsInstanceResponse.
-        :type: str
+        :type partition_num: str
         """
         self._partition_num = partition_num
 
@@ -572,7 +721,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         已使用的消息存储空间，单位：GB。
 
         :param used_storage_space: The used_storage_space of this ShowMqsInstanceResponse.
-        :type: int
+        :type used_storage_space: int
         """
         self._used_storage_space = used_storage_space
 
@@ -594,7 +743,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         实例连接IP地址。
 
         :param connect_address: The connect_address of this ShowMqsInstanceResponse.
-        :type: str
+        :type connect_address: str
         """
         self._connect_address = connect_address
 
@@ -616,7 +765,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         实例连接端口。
 
         :param port: The port of this ShowMqsInstanceResponse.
-        :type: int
+        :type port: int
         """
         self._port = port
 
@@ -638,7 +787,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         实例的状态。   - CREATING: 申请实例后，在实例状态进入运行中之前的状态。   - RUNNING: 实例正常运行状态。在这个状态的实例可以运行您的业务。
 
         :param status: The status of this ShowMqsInstanceResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -660,7 +809,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         实例ID。
 
         :param instance_id: The instance_id of this ShowMqsInstanceResponse.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -682,7 +831,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         资源规格标识。  - dms.instance.kafka.cluster.c3.mini：Kafka实例的基准带宽为100MByte/秒。  - dms.instance.kafka.cluster.c3.small.2：Kafka实例的基准带宽为300MByte/秒。  - dms.instance.kafka.cluster.c3.middle.2：Kafka实例的基准带宽为600MByte/秒。  - dms.instance.kafka.cluster.c3.high.2：Kafka实例的基准带宽为1200MByte/秒。
 
         :param resource_spec_code: The resource_spec_code of this ShowMqsInstanceResponse.
-        :type: str
+        :type resource_spec_code: str
         """
         self._resource_spec_code = resource_spec_code
 
@@ -704,7 +853,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         付费模式，1表示按需计费，0表示包周期计费。
 
         :param charging_mode: The charging_mode of this ShowMqsInstanceResponse.
-        :type: int
+        :type charging_mode: int
         """
         self._charging_mode = charging_mode
 
@@ -726,7 +875,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         VPC ID。
 
         :param vpc_id: The vpc_id of this ShowMqsInstanceResponse.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -748,7 +897,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         VPC的名称。
 
         :param vpc_name: The vpc_name of this ShowMqsInstanceResponse.
-        :type: str
+        :type vpc_name: str
         """
         self._vpc_name = vpc_name
 
@@ -770,7 +919,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         完成创建时间。  格式为时间戳，指从格林威治时间 1970年01月01日00时00分00秒起至指定时间的偏差总毫秒数。
 
         :param created_at: The created_at of this ShowMqsInstanceResponse.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -792,7 +941,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         用户ID。
 
         :param user_id: The user_id of this ShowMqsInstanceResponse.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -814,7 +963,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         用户名。
 
         :param user_name: The user_name of this ShowMqsInstanceResponse.
-        :type: str
+        :type user_name: str
         """
         self._user_name = user_name
 
@@ -836,7 +985,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         订单ID，只有在包周期计费时才会有order_id值，其他计费方式order_id值为空。
 
         :param order_id: The order_id of this ShowMqsInstanceResponse.
-        :type: str
+        :type order_id: str
         """
         self._order_id = order_id
 
@@ -858,7 +1007,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         维护时间窗开始时间，格式为HH:mm:ss。
 
         :param maintain_begin: The maintain_begin of this ShowMqsInstanceResponse.
-        :type: str
+        :type maintain_begin: str
         """
         self._maintain_begin = maintain_begin
 
@@ -880,7 +1029,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         维护时间窗结束时间，格式为HH:mm:ss。
 
         :param maintain_end: The maintain_end of this ShowMqsInstanceResponse.
-        :type: str
+        :type maintain_end: str
         """
         self._maintain_end = maintain_end
 
@@ -902,7 +1051,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         实例是否开启公网访问功能。  - true：开启  - false：未开启 
 
         :param enable_publicip: The enable_publicip of this ShowMqsInstanceResponse.
-        :type: bool
+        :type enable_publicip: bool
         """
         self._enable_publicip = enable_publicip
 
@@ -924,7 +1073,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         Kafka实例的KafkaManager连接地址。
 
         :param management_connect_address: The management_connect_address of this ShowMqsInstanceResponse.
-        :type: str
+        :type management_connect_address: str
         """
         self._management_connect_address = management_connect_address
 
@@ -946,7 +1095,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         是否开启安全认证。 - true：开启 - false：未开启
 
         :param ssl_enable: The ssl_enable of this ShowMqsInstanceResponse.
-        :type: bool
+        :type ssl_enable: bool
         """
         self._ssl_enable = ssl_enable
 
@@ -968,7 +1117,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this ShowMqsInstanceResponse.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -990,7 +1139,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         实例扩容时用于区分老实例与新实例。  - true：新创建的实例，允许磁盘动态扩容不需要重启。  - false：老实例
 
         :param is_logical_volume: The is_logical_volume of this ShowMqsInstanceResponse.
-        :type: bool
+        :type is_logical_volume: bool
         """
         self._is_logical_volume = is_logical_volume
 
@@ -1012,7 +1161,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         实例扩容磁盘次数，如果超过20次则无法扩容磁盘。
 
         :param extend_times: The extend_times of this ShowMqsInstanceResponse.
-        :type: int
+        :type extend_times: int
         """
         self._extend_times = extend_times
 
@@ -1034,7 +1183,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         是否打开kafka自动创建topic功能。  - true：开启  - false：关闭
 
         :param enable_auto_topic: The enable_auto_topic of this ShowMqsInstanceResponse.
-        :type: bool
+        :type enable_auto_topic: bool
         """
         self._enable_auto_topic = enable_auto_topic
 
@@ -1056,7 +1205,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         实例类型：集群，cluster。
 
         :param type: The type of this ShowMqsInstanceResponse.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -1078,7 +1227,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         产品标识。
 
         :param product_id: The product_id of this ShowMqsInstanceResponse.
-        :type: str
+        :type product_id: str
         """
         self._product_id = product_id
 
@@ -1100,7 +1249,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         安全组ID。
 
         :param security_group_id: The security_group_id of this ShowMqsInstanceResponse.
-        :type: str
+        :type security_group_id: str
         """
         self._security_group_id = security_group_id
 
@@ -1122,7 +1271,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         租户安全组名称。
 
         :param security_group_name: The security_group_name of this ShowMqsInstanceResponse.
-        :type: str
+        :type security_group_name: str
         """
         self._security_group_name = security_group_name
 
@@ -1144,7 +1293,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         子网ID。
 
         :param subnet_id: The subnet_id of this ShowMqsInstanceResponse.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -1166,7 +1315,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         子网名称。
 
         :param subnet_name: The subnet_name of this ShowMqsInstanceResponse.
-        :type: str
+        :type subnet_name: str
         """
         self._subnet_name = subnet_name
 
@@ -1188,7 +1337,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         子网网段。
 
         :param subnet_cidr: The subnet_cidr of this ShowMqsInstanceResponse.
-        :type: str
+        :type subnet_cidr: str
         """
         self._subnet_cidr = subnet_cidr
 
@@ -1210,7 +1359,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         实例节点所在的可用区，返回“可用区ID”。
 
         :param available_zones: The available_zones of this ShowMqsInstanceResponse.
-        :type: list[str]
+        :type available_zones: list[str]
         """
         self._available_zones = available_zones
 
@@ -1232,7 +1381,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         总共消息存储空间，单位：GB。
 
         :param total_storage_space: The total_storage_space of this ShowMqsInstanceResponse.
-        :type: int
+        :type total_storage_space: int
         """
         self._total_storage_space = total_storage_space
 
@@ -1254,7 +1403,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         实例公网连接IP地址。当实例开启了公网访问，实例才包含该参数。
 
         :param public_connect_address: The public_connect_address of this ShowMqsInstanceResponse.
-        :type: str
+        :type public_connect_address: str
         """
         self._public_connect_address = public_connect_address
 
@@ -1276,7 +1425,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         存储资源ID。
 
         :param storage_resource_id: The storage_resource_id of this ShowMqsInstanceResponse.
-        :type: str
+        :type storage_resource_id: str
         """
         self._storage_resource_id = storage_resource_id
 
@@ -1298,7 +1447,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         IO规格。
 
         :param storage_spec_code: The storage_spec_code of this ShowMqsInstanceResponse.
-        :type: str
+        :type storage_spec_code: str
         """
         self._storage_spec_code = storage_spec_code
 
@@ -1320,7 +1469,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         服务类型。
 
         :param service_type: The service_type of this ShowMqsInstanceResponse.
-        :type: str
+        :type service_type: str
         """
         self._service_type = service_type
 
@@ -1342,7 +1491,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         存储类型。
 
         :param storage_type: The storage_type of this ShowMqsInstanceResponse.
-        :type: str
+        :type storage_type: str
         """
         self._storage_type = storage_type
 
@@ -1364,7 +1513,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         消息老化策略。
 
         :param retention_policy: The retention_policy of this ShowMqsInstanceResponse.
-        :type: str
+        :type retention_policy: str
         """
         self._retention_policy = retention_policy
 
@@ -1386,7 +1535,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         Kafka公网开启状态。
 
         :param kafka_public_status: The kafka_public_status of this ShowMqsInstanceResponse.
-        :type: str
+        :type kafka_public_status: str
         """
         self._kafka_public_status = kafka_public_status
 
@@ -1408,7 +1557,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         公网带宽。
 
         :param public_bandwidth: The public_bandwidth of this ShowMqsInstanceResponse.
-        :type: int
+        :type public_bandwidth: int
         """
         self._public_bandwidth = public_bandwidth
 
@@ -1430,7 +1579,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         登录Kafka Manager的用户名。
 
         :param kafka_manager_user: The kafka_manager_user of this ShowMqsInstanceResponse.
-        :type: str
+        :type kafka_manager_user: str
         """
         self._kafka_manager_user = kafka_manager_user
 
@@ -1452,7 +1601,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         是否开启消息收集功能。
 
         :param enable_log_collection: The enable_log_collection of this ShowMqsInstanceResponse.
-        :type: bool
+        :type enable_log_collection: bool
         """
         self._enable_log_collection = enable_log_collection
 
@@ -1474,7 +1623,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         跨VPC访问信息。
 
         :param cross_vpc_info: The cross_vpc_info of this ShowMqsInstanceResponse.
-        :type: str
+        :type cross_vpc_info: str
         """
         self._cross_vpc_info = cross_vpc_info
 
@@ -1496,7 +1645,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         是否开启ipv6。
 
         :param ipv6_enable: The ipv6_enable of this ShowMqsInstanceResponse.
-        :type: bool
+        :type ipv6_enable: bool
         """
         self._ipv6_enable = ipv6_enable
 
@@ -1518,7 +1667,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         IPv6的连接地址。
 
         :param ipv6_connect_addresses: The ipv6_connect_addresses of this ShowMqsInstanceResponse.
-        :type: list[str]
+        :type ipv6_connect_addresses: list[str]
         """
         self._ipv6_connect_addresses = ipv6_connect_addresses
 
@@ -1540,7 +1689,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         是否开启转储。
 
         :param connector_enable: The connector_enable of this ShowMqsInstanceResponse.
-        :type: bool
+        :type connector_enable: bool
         """
         self._connector_enable = connector_enable
 
@@ -1562,7 +1711,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         转储任务ID。
 
         :param connector_id: The connector_id of this ShowMqsInstanceResponse.
-        :type: str
+        :type connector_id: str
         """
         self._connector_id = connector_id
 
@@ -1584,7 +1733,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         是否开启MQS connector。
 
         :param mqs_connector_enable: The mqs_connector_enable of this ShowMqsInstanceResponse.
-        :type: bool
+        :type mqs_connector_enable: bool
         """
         self._mqs_connector_enable = mqs_connector_enable
 
@@ -1606,7 +1755,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         MQS connector地址。
 
         :param mqs_connector_address: The mqs_connector_address of this ShowMqsInstanceResponse.
-        :type: str
+        :type mqs_connector_address: str
         """
         self._mqs_connector_address = mqs_connector_address
 
@@ -1628,7 +1777,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         是否开启插件功能。
 
         :param plugin_enable: The plugin_enable of this ShowMqsInstanceResponse.
-        :type: bool
+        :type plugin_enable: bool
         """
         self._plugin_enable = plugin_enable
 
@@ -1650,7 +1799,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         是否开启Kafka rest功能。
 
         :param rest_enable: The rest_enable of this ShowMqsInstanceResponse.
-        :type: bool
+        :type rest_enable: bool
         """
         self._rest_enable = rest_enable
 
@@ -1672,7 +1821,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         Kafka rest地址。
 
         :param rest_connect_address: The rest_connect_address of this ShowMqsInstanceResponse.
-        :type: str
+        :type rest_connect_address: str
         """
         self._rest_connect_address = rest_connect_address
 
@@ -1694,7 +1843,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         是否开启消息查询功能。
 
         :param message_query_inst_enable: The message_query_inst_enable of this ShowMqsInstanceResponse.
-        :type: bool
+        :type message_query_inst_enable: bool
         """
         self._message_query_inst_enable = message_query_inst_enable
 
@@ -1716,7 +1865,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         是否开启VPC明文访问。
 
         :param vpc_client_plain: The vpc_client_plain of this ShowMqsInstanceResponse.
-        :type: bool
+        :type vpc_client_plain: bool
         """
         self._vpc_client_plain = vpc_client_plain
 
@@ -1738,7 +1887,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         Kafka实例支持的特性功能。
 
         :param support_features: The support_features of this ShowMqsInstanceResponse.
-        :type: str
+        :type support_features: str
         """
         self._support_features = support_features
 
@@ -1760,7 +1909,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         是否开启消息轨迹功能。
 
         :param trace_enable: The trace_enable of this ShowMqsInstanceResponse.
-        :type: bool
+        :type trace_enable: bool
         """
         self._trace_enable = trace_enable
 
@@ -1782,7 +1931,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         租户侧连接地址。
 
         :param pod_connect_address: The pod_connect_address of this ShowMqsInstanceResponse.
-        :type: str
+        :type pod_connect_address: str
         """
         self._pod_connect_address = pod_connect_address
 
@@ -1804,7 +1953,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         是否开启磁盘加密。
 
         :param disk_encrypted: The disk_encrypted of this ShowMqsInstanceResponse.
-        :type: bool
+        :type disk_encrypted: bool
         """
         self._disk_encrypted = disk_encrypted
 
@@ -1826,7 +1975,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         Kafka实例私有连接地址。
 
         :param kafka_private_connect_address: The kafka_private_connect_address of this ShowMqsInstanceResponse.
-        :type: str
+        :type kafka_private_connect_address: str
         """
         self._kafka_private_connect_address = kafka_private_connect_address
 
@@ -1848,7 +1997,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         云监控版本。
 
         :param ces_version: The ces_version of this ShowMqsInstanceResponse.
-        :type: str
+        :type ces_version: str
         """
         self._ces_version = ces_version
 
@@ -1870,7 +2019,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         节点数量。
 
         :param node_num: The node_num of this ShowMqsInstanceResponse.
-        :type: int
+        :type node_num: int
         """
         self._node_num = node_num
 
@@ -1892,7 +2041,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         公网连接地址。
 
         :param publicip_address: The publicip_address of this ShowMqsInstanceResponse.
-        :type: str
+        :type publicip_address: str
         """
         self._publicip_address = publicip_address
 
@@ -1914,7 +2063,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         监听信息。
 
         :param listeners: The listeners of this ShowMqsInstanceResponse.
-        :type: object
+        :type listeners: object
         """
         self._listeners = listeners
 
@@ -1936,7 +2085,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         是否开启公网访问。用于区分何时开启的公网访问。
 
         :param public_access_enabled: The public_access_enabled of this ShowMqsInstanceResponse.
-        :type: str
+        :type public_access_enabled: str
         """
         self._public_access_enabled = public_access_enabled
 
@@ -1958,7 +2107,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         公网访问带宽。
 
         :param public_boundwidth: The public_boundwidth of this ShowMqsInstanceResponse.
-        :type: int
+        :type public_boundwidth: int
         """
         self._public_boundwidth = public_boundwidth
 
@@ -1980,7 +2129,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         认证用户名。
 
         :param access_user: The access_user of this ShowMqsInstanceResponse.
-        :type: str
+        :type access_user: str
         """
         self._access_user = access_user
 
@@ -2002,7 +2151,7 @@ class ShowMqsInstanceResponse(SdkResponse):
         是否开启代理。
 
         :param agent_enable: The agent_enable of this ShowMqsInstanceResponse.
-        :type: bool
+        :type agent_enable: bool
         """
         self._agent_enable = agent_enable
 

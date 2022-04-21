@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class WhiteBlackIpResponseBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class WhiteBlackIpResponseBody:
     }
 
     def __init__(self, id=None, policyid=None, timestamp=None, description=None, status=None, addr=None, white=None):
-        """WhiteBlackIpResponseBody - a model defined in huaweicloud sdk"""
+        """WhiteBlackIpResponseBody
+
+        The model defined in huaweicloud sdk
+
+        :param id: 规则id
+        :type id: str
+        :param policyid: 策略id
+        :type policyid: str
+        :param timestamp: 创建规则的时间戳
+        :type timestamp: int
+        :param description: 规则描述
+        :type description: str
+        :param status: 规则状态，0：关闭，1：开启
+        :type status: int
+        :param addr: 黑白名单
+        :type addr: str
+        :param white: 防护动作：  - 0拦截  - 1放行  - 2仅记录
+        :type white: int
+        """
         
         
 
@@ -88,7 +105,7 @@ class WhiteBlackIpResponseBody:
         规则id
 
         :param id: The id of this WhiteBlackIpResponseBody.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -110,7 +127,7 @@ class WhiteBlackIpResponseBody:
         策略id
 
         :param policyid: The policyid of this WhiteBlackIpResponseBody.
-        :type: str
+        :type policyid: str
         """
         self._policyid = policyid
 
@@ -132,7 +149,7 @@ class WhiteBlackIpResponseBody:
         创建规则的时间戳
 
         :param timestamp: The timestamp of this WhiteBlackIpResponseBody.
-        :type: int
+        :type timestamp: int
         """
         self._timestamp = timestamp
 
@@ -154,7 +171,7 @@ class WhiteBlackIpResponseBody:
         规则描述
 
         :param description: The description of this WhiteBlackIpResponseBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -176,7 +193,7 @@ class WhiteBlackIpResponseBody:
         规则状态，0：关闭，1：开启
 
         :param status: The status of this WhiteBlackIpResponseBody.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -198,7 +215,7 @@ class WhiteBlackIpResponseBody:
         黑白名单
 
         :param addr: The addr of this WhiteBlackIpResponseBody.
-        :type: str
+        :type addr: str
         """
         self._addr = addr
 
@@ -220,7 +237,7 @@ class WhiteBlackIpResponseBody:
         防护动作：  - 0拦截  - 1放行  - 2仅记录
 
         :param white: The white of this WhiteBlackIpResponseBody.
-        :type: int
+        :type white: int
         """
         self._white = white
 

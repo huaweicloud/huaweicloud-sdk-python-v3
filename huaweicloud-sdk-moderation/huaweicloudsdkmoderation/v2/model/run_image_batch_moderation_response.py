@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunImageBatchModerationResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RunImageBatchModerationResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """RunImageBatchModerationResponse - a model defined in huaweicloud sdk"""
+        """RunImageBatchModerationResponse
+
+        The model defined in huaweicloud sdk
+
+        :param result: 调用成功时表示调用结果。 调用失败时无此字段。 
+        :type result: list[:class:`huaweicloudsdkmoderation.v2.ImageBatchModerationResultBody`]
+        """
         
         super(RunImageBatchModerationResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class RunImageBatchModerationResponse(SdkResponse):
         调用成功时表示调用结果。 调用失败时无此字段。 
 
         :return: The result of this RunImageBatchModerationResponse.
-        :rtype: list[ImageBatchModerationResultBody]
+        :rtype: list[:class:`huaweicloudsdkmoderation.v2.ImageBatchModerationResultBody`]
         """
         return self._result
 
@@ -58,7 +63,7 @@ class RunImageBatchModerationResponse(SdkResponse):
         调用成功时表示调用结果。 调用失败时无此字段。 
 
         :param result: The result of this RunImageBatchModerationResponse.
-        :type: list[ImageBatchModerationResultBody]
+        :type result: list[:class:`huaweicloudsdkmoderation.v2.ImageBatchModerationResultBody`]
         """
         self._result = result
 

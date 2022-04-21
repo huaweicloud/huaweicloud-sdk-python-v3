@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Action:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class Action:
     }
 
     def __init__(self, function_ref=None):
-        """Action - a model defined in huaweicloud sdk"""
+        """Action
+
+        The model defined in huaweicloud sdk
+
+        :param function_ref: 
+        :type function_ref: :class:`huaweicloudsdkfunctiongraph.v2.FunctionRef`
+        """
         
         
 
@@ -46,7 +51,7 @@ class Action:
 
 
         :return: The function_ref of this Action.
-        :rtype: FunctionRef
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.FunctionRef`
         """
         return self._function_ref
 
@@ -56,7 +61,7 @@ class Action:
 
 
         :param function_ref: The function_ref of this Action.
-        :type: FunctionRef
+        :type function_ref: :class:`huaweicloudsdkfunctiongraph.v2.FunctionRef`
         """
         self._function_ref = function_ref
 

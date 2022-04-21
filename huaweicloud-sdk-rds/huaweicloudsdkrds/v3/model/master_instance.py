@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MasterInstance:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class MasterInstance:
     }
 
     def __init__(self, id=None, status=None, name=None, weight=None, available_zones=None, cpu_num=None):
-        """MasterInstance - a model defined in huaweicloud sdk"""
+        """MasterInstance
+
+        The model defined in huaweicloud sdk
+
+        :param id: 主实例ID。
+        :type id: str
+        :param status: 主实例状态。
+        :type status: str
+        :param name: 主实例名称。
+        :type name: str
+        :param weight: 主实例读写分离权重。
+        :type weight: int
+        :param available_zones: 可用区信息。
+        :type available_zones: list[:class:`huaweicloudsdkrds.v3.AvailableZone`]
+        :param cpu_num: 主实例CPU个数。
+        :type cpu_num: int
+        """
         
         
 
@@ -77,7 +92,7 @@ class MasterInstance:
         主实例ID。
 
         :param id: The id of this MasterInstance.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -99,7 +114,7 @@ class MasterInstance:
         主实例状态。
 
         :param status: The status of this MasterInstance.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -121,7 +136,7 @@ class MasterInstance:
         主实例名称。
 
         :param name: The name of this MasterInstance.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -143,7 +158,7 @@ class MasterInstance:
         主实例读写分离权重。
 
         :param weight: The weight of this MasterInstance.
-        :type: int
+        :type weight: int
         """
         self._weight = weight
 
@@ -154,7 +169,7 @@ class MasterInstance:
         可用区信息。
 
         :return: The available_zones of this MasterInstance.
-        :rtype: list[AvailableZone]
+        :rtype: list[:class:`huaweicloudsdkrds.v3.AvailableZone`]
         """
         return self._available_zones
 
@@ -165,7 +180,7 @@ class MasterInstance:
         可用区信息。
 
         :param available_zones: The available_zones of this MasterInstance.
-        :type: list[AvailableZone]
+        :type available_zones: list[:class:`huaweicloudsdkrds.v3.AvailableZone`]
         """
         self._available_zones = available_zones
 
@@ -187,7 +202,7 @@ class MasterInstance:
         主实例CPU个数。
 
         :param cpu_num: The cpu_num of this MasterInstance.
-        :type: int
+        :type cpu_num: int
         """
         self._cpu_num = cpu_num
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchDeleteInstanceTopicRespTopics:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchDeleteInstanceTopicRespTopics:
     }
 
     def __init__(self, id=None, success=None):
-        """BatchDeleteInstanceTopicRespTopics - a model defined in huaweicloud sdk"""
+        """BatchDeleteInstanceTopicRespTopics
+
+        The model defined in huaweicloud sdk
+
+        :param id: Topic名称。
+        :type id: str
+        :param success: 是否删除成功。
+        :type success: bool
+        """
         
         
 
@@ -63,7 +70,7 @@ class BatchDeleteInstanceTopicRespTopics:
         Topic名称。
 
         :param id: The id of this BatchDeleteInstanceTopicRespTopics.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -85,7 +92,7 @@ class BatchDeleteInstanceTopicRespTopics:
         是否删除成功。
 
         :param success: The success of this BatchDeleteInstanceTopicRespTopics.
-        :type: bool
+        :type success: bool
         """
         self._success = success
 

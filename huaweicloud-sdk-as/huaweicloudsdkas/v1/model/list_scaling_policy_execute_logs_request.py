@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListScalingPolicyExecuteLogsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class ListScalingPolicyExecuteLogsRequest:
     }
 
     def __init__(self, scaling_policy_id=None, log_id=None, scaling_resource_type=None, scaling_resource_id=None, execute_type=None, start_time=None, end_time=None, start_number=None, limit=None):
-        """ListScalingPolicyExecuteLogsRequest - a model defined in huaweicloud sdk"""
+        """ListScalingPolicyExecuteLogsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param scaling_policy_id: 伸缩策略ID。
+        :type scaling_policy_id: str
+        :param log_id: 日志ID。
+        :type log_id: str
+        :param scaling_resource_type: 伸缩资源类型：伸缩组：SCALING_GROUP。带宽：BANDWIDTH
+        :type scaling_resource_type: str
+        :param scaling_resource_id: 伸缩资源ID。
+        :type scaling_resource_id: str
+        :param execute_type: 策略执行类型：SCHEDULED：自动触发（定时）。RECURRENCE：自动触发（周期）。ALARM：自动触发（告警）。MANUAL：手动触发。
+        :type execute_type: str
+        :param start_time: 查询的起始时间，格式是“yyyy-MM-ddThh:mm:ssZ”。
+        :type start_time: str
+        :param end_time: 查询的截止时间，格式是“yyyy-MM-ddThh:mm:ssZ”。
+        :type end_time: str
+        :param start_number: 查询的起始行号，默认为0。
+        :type start_number: int
+        :param limit: 查询记录数，默认20，最大100。
+        :type limit: int
+        """
         
         
 
@@ -97,7 +118,7 @@ class ListScalingPolicyExecuteLogsRequest:
         伸缩策略ID。
 
         :param scaling_policy_id: The scaling_policy_id of this ListScalingPolicyExecuteLogsRequest.
-        :type: str
+        :type scaling_policy_id: str
         """
         self._scaling_policy_id = scaling_policy_id
 
@@ -119,7 +140,7 @@ class ListScalingPolicyExecuteLogsRequest:
         日志ID。
 
         :param log_id: The log_id of this ListScalingPolicyExecuteLogsRequest.
-        :type: str
+        :type log_id: str
         """
         self._log_id = log_id
 
@@ -141,7 +162,7 @@ class ListScalingPolicyExecuteLogsRequest:
         伸缩资源类型：伸缩组：SCALING_GROUP。带宽：BANDWIDTH
 
         :param scaling_resource_type: The scaling_resource_type of this ListScalingPolicyExecuteLogsRequest.
-        :type: str
+        :type scaling_resource_type: str
         """
         self._scaling_resource_type = scaling_resource_type
 
@@ -163,7 +184,7 @@ class ListScalingPolicyExecuteLogsRequest:
         伸缩资源ID。
 
         :param scaling_resource_id: The scaling_resource_id of this ListScalingPolicyExecuteLogsRequest.
-        :type: str
+        :type scaling_resource_id: str
         """
         self._scaling_resource_id = scaling_resource_id
 
@@ -185,7 +206,7 @@ class ListScalingPolicyExecuteLogsRequest:
         策略执行类型：SCHEDULED：自动触发（定时）。RECURRENCE：自动触发（周期）。ALARM：自动触发（告警）。MANUAL：手动触发。
 
         :param execute_type: The execute_type of this ListScalingPolicyExecuteLogsRequest.
-        :type: str
+        :type execute_type: str
         """
         self._execute_type = execute_type
 
@@ -207,7 +228,7 @@ class ListScalingPolicyExecuteLogsRequest:
         查询的起始时间，格式是“yyyy-MM-ddThh:mm:ssZ”。
 
         :param start_time: The start_time of this ListScalingPolicyExecuteLogsRequest.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -229,7 +250,7 @@ class ListScalingPolicyExecuteLogsRequest:
         查询的截止时间，格式是“yyyy-MM-ddThh:mm:ssZ”。
 
         :param end_time: The end_time of this ListScalingPolicyExecuteLogsRequest.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -251,7 +272,7 @@ class ListScalingPolicyExecuteLogsRequest:
         查询的起始行号，默认为0。
 
         :param start_number: The start_number of this ListScalingPolicyExecuteLogsRequest.
-        :type: int
+        :type start_number: int
         """
         self._start_number = start_number
 
@@ -273,7 +294,7 @@ class ListScalingPolicyExecuteLogsRequest:
         查询记录数，默认20，最大100。
 
         :param limit: The limit of this ListScalingPolicyExecuteLogsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

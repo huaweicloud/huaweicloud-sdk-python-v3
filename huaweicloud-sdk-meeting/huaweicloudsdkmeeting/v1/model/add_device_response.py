@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddDeviceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -58,7 +57,41 @@ class AddDeviceResponse(SdkResponse):
     }
 
     def __init__(self, name=None, type=None, model=None, sn=None, account=None, number=None, prj_code_mode=None, dept_code=None, dept_name=None, dept_name_path=None, phone=None, country=None, email=None, description=None, status=None):
-        """AddDeviceResponse - a model defined in huaweicloud sdk"""
+        """AddDeviceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param name: 终端名称。
+        :type name: str
+        :param type: 终端类型，区分自研和第三方终端。
+        :type type: str
+        :param model: 终端型号，枚举类型。当前支持TE系列硬件终端，具体的终端类型可以通过获取所有终端类型接口查询。
+        :type model: str
+        :param sn: 终端SN号，仅可包含数字、字母和下划线。
+        :type sn: str
+        :param account: 硬终端对应的内置账号。
+        :type account: str
+        :param number: 终端绑定的号码
+        :type number: str
+        :param prj_code_mode: 投影码生成模式 * 0、自动(该模式下根据消息上报的IP地址内部控制复杂度：私网地址配置成简单模式；公网地址配置成复杂模式) * 1、简单 * 2、复杂 
+        :type prj_code_mode: int
+        :param dept_code: 部门编号
+        :type dept_code: str
+        :param dept_name: 部门名称
+        :type dept_name: str
+        :param dept_name_path: 部门名称路径
+        :type dept_name_path: str
+        :param phone: 手机号
+        :type phone: str
+        :param country: 手机号所属的国家
+        :type country: str
+        :param email: 邮箱
+        :type email: str
+        :param description: 终端描述
+        :type description: str
+        :param status: 终端状态 * 0、正常 * 1、停用\&quot; 
+        :type status: int
+        """
         
         super(AddDeviceResponse, self).__init__()
 
@@ -128,7 +161,7 @@ class AddDeviceResponse(SdkResponse):
         终端名称。
 
         :param name: The name of this AddDeviceResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -150,7 +183,7 @@ class AddDeviceResponse(SdkResponse):
         终端类型，区分自研和第三方终端。
 
         :param type: The type of this AddDeviceResponse.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -172,7 +205,7 @@ class AddDeviceResponse(SdkResponse):
         终端型号，枚举类型。当前支持TE系列硬件终端，具体的终端类型可以通过获取所有终端类型接口查询。
 
         :param model: The model of this AddDeviceResponse.
-        :type: str
+        :type model: str
         """
         self._model = model
 
@@ -194,7 +227,7 @@ class AddDeviceResponse(SdkResponse):
         终端SN号，仅可包含数字、字母和下划线。
 
         :param sn: The sn of this AddDeviceResponse.
-        :type: str
+        :type sn: str
         """
         self._sn = sn
 
@@ -216,7 +249,7 @@ class AddDeviceResponse(SdkResponse):
         硬终端对应的内置账号。
 
         :param account: The account of this AddDeviceResponse.
-        :type: str
+        :type account: str
         """
         self._account = account
 
@@ -238,7 +271,7 @@ class AddDeviceResponse(SdkResponse):
         终端绑定的号码
 
         :param number: The number of this AddDeviceResponse.
-        :type: str
+        :type number: str
         """
         self._number = number
 
@@ -260,7 +293,7 @@ class AddDeviceResponse(SdkResponse):
         投影码生成模式 * 0、自动(该模式下根据消息上报的IP地址内部控制复杂度：私网地址配置成简单模式；公网地址配置成复杂模式) * 1、简单 * 2、复杂 
 
         :param prj_code_mode: The prj_code_mode of this AddDeviceResponse.
-        :type: int
+        :type prj_code_mode: int
         """
         self._prj_code_mode = prj_code_mode
 
@@ -282,7 +315,7 @@ class AddDeviceResponse(SdkResponse):
         部门编号
 
         :param dept_code: The dept_code of this AddDeviceResponse.
-        :type: str
+        :type dept_code: str
         """
         self._dept_code = dept_code
 
@@ -304,7 +337,7 @@ class AddDeviceResponse(SdkResponse):
         部门名称
 
         :param dept_name: The dept_name of this AddDeviceResponse.
-        :type: str
+        :type dept_name: str
         """
         self._dept_name = dept_name
 
@@ -326,7 +359,7 @@ class AddDeviceResponse(SdkResponse):
         部门名称路径
 
         :param dept_name_path: The dept_name_path of this AddDeviceResponse.
-        :type: str
+        :type dept_name_path: str
         """
         self._dept_name_path = dept_name_path
 
@@ -348,7 +381,7 @@ class AddDeviceResponse(SdkResponse):
         手机号
 
         :param phone: The phone of this AddDeviceResponse.
-        :type: str
+        :type phone: str
         """
         self._phone = phone
 
@@ -370,7 +403,7 @@ class AddDeviceResponse(SdkResponse):
         手机号所属的国家
 
         :param country: The country of this AddDeviceResponse.
-        :type: str
+        :type country: str
         """
         self._country = country
 
@@ -392,7 +425,7 @@ class AddDeviceResponse(SdkResponse):
         邮箱
 
         :param email: The email of this AddDeviceResponse.
-        :type: str
+        :type email: str
         """
         self._email = email
 
@@ -414,7 +447,7 @@ class AddDeviceResponse(SdkResponse):
         终端描述
 
         :param description: The description of this AddDeviceResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -436,7 +469,7 @@ class AddDeviceResponse(SdkResponse):
         终端状态 * 0、正常 * 1、停用\" 
 
         :param status: The status of this AddDeviceResponse.
-        :type: int
+        :type status: int
         """
         self._status = status
 

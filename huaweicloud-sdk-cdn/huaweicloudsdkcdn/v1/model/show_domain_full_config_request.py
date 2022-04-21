@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDomainFullConfigRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowDomainFullConfigRequest:
     }
 
     def __init__(self, domain_name=None, enterprise_project_id=None):
-        """ShowDomainFullConfigRequest - a model defined in huaweicloud sdk"""
+        """ShowDomainFullConfigRequest
+
+        The model defined in huaweicloud sdk
+
+        :param domain_name: 加速域名
+        :type domain_name: str
+        :param enterprise_project_id: 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子账号调用接口时，该参数必传。
+        :type enterprise_project_id: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ShowDomainFullConfigRequest:
         加速域名
 
         :param domain_name: The domain_name of this ShowDomainFullConfigRequest.
-        :type: str
+        :type domain_name: str
         """
         self._domain_name = domain_name
 
@@ -84,7 +91,7 @@ class ShowDomainFullConfigRequest:
         当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子账号调用接口时，该参数必传。
 
         :param enterprise_project_id: The enterprise_project_id of this ShowDomainFullConfigRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 

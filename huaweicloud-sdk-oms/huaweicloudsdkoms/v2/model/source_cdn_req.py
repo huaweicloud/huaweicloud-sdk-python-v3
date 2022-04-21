@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SourceCdnReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class SourceCdnReq:
     }
 
     def __init__(self, authentication_key=None, authentication_type=None, domain=None, protocol=None):
-        """SourceCdnReq - a model defined in huaweicloud sdk"""
+        """SourceCdnReq
+
+        The model defined in huaweicloud sdk
+
+        :param authentication_key: CDN鉴权秘钥，如果CDN需要进行鉴权，则此选项为必选。  无需授权：无需配置此项。 Qiniu：无需配置此项。 Aliyun：根据authentication_type指定的鉴权方式配置此项。 KingsoftCloud：无需配置此项。
+        :type authentication_key: str
+        :param authentication_type: 鉴权类型: NONE, QINIU_PRIVATE_AUTHENTICATION, ALIYUN_OSS_A, ALIYUN_OSS_B, ALIYUN_OSS_C, KSYUN_PRIVATE_AUTHENTICATION, AZURE_SAS_TOKEN
+        :type authentication_type: str
+        :param domain:   从指定域名获取对象。
+        :type domain: str
+        :param protocol: 协议类型，支持http和https协议。
+        :type protocol: str
+        """
         
         
 
@@ -70,7 +81,7 @@ class SourceCdnReq:
         CDN鉴权秘钥，如果CDN需要进行鉴权，则此选项为必选。  无需授权：无需配置此项。 Qiniu：无需配置此项。 Aliyun：根据authentication_type指定的鉴权方式配置此项。 KingsoftCloud：无需配置此项。
 
         :param authentication_key: The authentication_key of this SourceCdnReq.
-        :type: str
+        :type authentication_key: str
         """
         self._authentication_key = authentication_key
 
@@ -92,7 +103,7 @@ class SourceCdnReq:
         鉴权类型: NONE, QINIU_PRIVATE_AUTHENTICATION, ALIYUN_OSS_A, ALIYUN_OSS_B, ALIYUN_OSS_C, KSYUN_PRIVATE_AUTHENTICATION, AZURE_SAS_TOKEN
 
         :param authentication_type: The authentication_type of this SourceCdnReq.
-        :type: str
+        :type authentication_type: str
         """
         self._authentication_type = authentication_type
 
@@ -114,7 +125,7 @@ class SourceCdnReq:
           从指定域名获取对象。
 
         :param domain: The domain of this SourceCdnReq.
-        :type: str
+        :type domain: str
         """
         self._domain = domain
 
@@ -136,7 +147,7 @@ class SourceCdnReq:
         协议类型，支持http和https协议。
 
         :param protocol: The protocol of this SourceCdnReq.
-        :type: str
+        :type protocol: str
         """
         self._protocol = protocol
 

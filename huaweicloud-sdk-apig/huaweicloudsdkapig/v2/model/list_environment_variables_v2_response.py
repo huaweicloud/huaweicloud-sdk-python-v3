@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListEnvironmentVariablesV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListEnvironmentVariablesV2Response(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, variables=None):
-        """ListEnvironmentVariablesV2Response - a model defined in huaweicloud sdk"""
+        """ListEnvironmentVariablesV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param size: 本次返回的列表长度
+        :type size: int
+        :param total: 满足条件的记录数
+        :type total: int
+        :param variables: 本次返回的环境变量列表
+        :type variables: list[:class:`huaweicloudsdkapig.v2.EnvVariableInfo`]
+        """
         
         super(ListEnvironmentVariablesV2Response, self).__init__()
 
@@ -66,7 +75,7 @@ class ListEnvironmentVariablesV2Response(SdkResponse):
         本次返回的列表长度
 
         :param size: The size of this ListEnvironmentVariablesV2Response.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -88,7 +97,7 @@ class ListEnvironmentVariablesV2Response(SdkResponse):
         满足条件的记录数
 
         :param total: The total of this ListEnvironmentVariablesV2Response.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -99,7 +108,7 @@ class ListEnvironmentVariablesV2Response(SdkResponse):
         本次返回的环境变量列表
 
         :return: The variables of this ListEnvironmentVariablesV2Response.
-        :rtype: list[EnvVariableInfo]
+        :rtype: list[:class:`huaweicloudsdkapig.v2.EnvVariableInfo`]
         """
         return self._variables
 
@@ -110,7 +119,7 @@ class ListEnvironmentVariablesV2Response(SdkResponse):
         本次返回的环境变量列表
 
         :param variables: The variables of this ListEnvironmentVariablesV2Response.
-        :type: list[EnvVariableInfo]
+        :type variables: list[:class:`huaweicloudsdkapig.v2.EnvVariableInfo`]
         """
         self._variables = variables
 

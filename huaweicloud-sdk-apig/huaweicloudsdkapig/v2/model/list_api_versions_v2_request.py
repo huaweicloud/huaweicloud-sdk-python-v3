@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListApiVersionsV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListApiVersionsV2Request:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, api_id=None, env_id=None, env_name=None):
-        """ListApiVersionsV2Request - a model defined in huaweicloud sdk"""
+        """ListApiVersionsV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param offset: 偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
+        :type offset: int
+        :param limit: 每页显示的条目数量
+        :type limit: int
+        :param api_id: API的编号
+        :type api_id: str
+        :param env_id: 环境的编号
+        :type env_id: str
+        :param env_name: 环境的名称
+        :type env_name: str
+        """
         
         
 
@@ -81,7 +96,7 @@ class ListApiVersionsV2Request:
         实例ID
 
         :param instance_id: The instance_id of this ListApiVersionsV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -103,7 +118,7 @@ class ListApiVersionsV2Request:
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
         :param offset: The offset of this ListApiVersionsV2Request.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -125,7 +140,7 @@ class ListApiVersionsV2Request:
         每页显示的条目数量
 
         :param limit: The limit of this ListApiVersionsV2Request.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -147,7 +162,7 @@ class ListApiVersionsV2Request:
         API的编号
 
         :param api_id: The api_id of this ListApiVersionsV2Request.
-        :type: str
+        :type api_id: str
         """
         self._api_id = api_id
 
@@ -169,7 +184,7 @@ class ListApiVersionsV2Request:
         环境的编号
 
         :param env_id: The env_id of this ListApiVersionsV2Request.
-        :type: str
+        :type env_id: str
         """
         self._env_id = env_id
 
@@ -191,7 +206,7 @@ class ListApiVersionsV2Request:
         环境的名称
 
         :param env_name: The env_name of this ListApiVersionsV2Request.
-        :type: str
+        :type env_name: str
         """
         self._env_name = env_name
 

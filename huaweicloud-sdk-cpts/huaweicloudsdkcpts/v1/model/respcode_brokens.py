@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RespcodeBrokens:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class RespcodeBrokens:
     }
 
     def __init__(self, check_point_failed=None, error=None, others_failed=None, parsed_failed=None, refused_failed=None, success=None, timeout=None):
-        """RespcodeBrokens - a model defined in huaweicloud sdk"""
+        """RespcodeBrokens
+
+        The model defined in huaweicloud sdk
+
+        :param check_point_failed: 校验失败
+        :type check_point_failed: list[float]
+        :param error: 异常请求
+        :type error: list[float]
+        :param others_failed: 其他失败
+        :type others_failed: list[float]
+        :param parsed_failed: 解析失败
+        :type parsed_failed: list[float]
+        :param refused_failed: 连接被拒
+        :type refused_failed: list[float]
+        :param success: 成功请求
+        :type success: list[float]
+        :param timeout: 超时失败
+        :type timeout: list[float]
+        """
         
         
 
@@ -88,7 +105,7 @@ class RespcodeBrokens:
         校验失败
 
         :param check_point_failed: The check_point_failed of this RespcodeBrokens.
-        :type: list[float]
+        :type check_point_failed: list[float]
         """
         self._check_point_failed = check_point_failed
 
@@ -110,7 +127,7 @@ class RespcodeBrokens:
         异常请求
 
         :param error: The error of this RespcodeBrokens.
-        :type: list[float]
+        :type error: list[float]
         """
         self._error = error
 
@@ -132,7 +149,7 @@ class RespcodeBrokens:
         其他失败
 
         :param others_failed: The others_failed of this RespcodeBrokens.
-        :type: list[float]
+        :type others_failed: list[float]
         """
         self._others_failed = others_failed
 
@@ -154,7 +171,7 @@ class RespcodeBrokens:
         解析失败
 
         :param parsed_failed: The parsed_failed of this RespcodeBrokens.
-        :type: list[float]
+        :type parsed_failed: list[float]
         """
         self._parsed_failed = parsed_failed
 
@@ -176,7 +193,7 @@ class RespcodeBrokens:
         连接被拒
 
         :param refused_failed: The refused_failed of this RespcodeBrokens.
-        :type: list[float]
+        :type refused_failed: list[float]
         """
         self._refused_failed = refused_failed
 
@@ -198,7 +215,7 @@ class RespcodeBrokens:
         成功请求
 
         :param success: The success of this RespcodeBrokens.
-        :type: list[float]
+        :type success: list[float]
         """
         self._success = success
 
@@ -220,7 +237,7 @@ class RespcodeBrokens:
         超时失败
 
         :param timeout: The timeout of this RespcodeBrokens.
-        :type: list[float]
+        :type timeout: list[float]
         """
         self._timeout = timeout
 

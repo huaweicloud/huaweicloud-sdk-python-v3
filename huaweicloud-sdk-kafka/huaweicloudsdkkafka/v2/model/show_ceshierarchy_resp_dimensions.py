@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowCeshierarchyRespDimensions:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ShowCeshierarchyRespDimensions:
     }
 
     def __init__(self, name=None, metrics=None, key_name=None, dim_router=None, children=None):
-        """ShowCeshierarchyRespDimensions - a model defined in huaweicloud sdk"""
+        """ShowCeshierarchyRespDimensions
+
+        The model defined in huaweicloud sdk
+
+        :param name: 监控维度名称。
+        :type name: str
+        :param metrics: 监控指标名称。
+        :type metrics: list[str]
+        :param key_name: 监控查询使用的key。
+        :type key_name: list[str]
+        :param dim_router: 监控维度路由。
+        :type dim_router: list[str]
+        :param children: 子维度列表。
+        :type children: list[:class:`huaweicloudsdkkafka.v2.ShowCeshierarchyRespChildren`]
+        """
         
         
 
@@ -78,7 +91,7 @@ class ShowCeshierarchyRespDimensions:
         监控维度名称。
 
         :param name: The name of this ShowCeshierarchyRespDimensions.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -100,7 +113,7 @@ class ShowCeshierarchyRespDimensions:
         监控指标名称。
 
         :param metrics: The metrics of this ShowCeshierarchyRespDimensions.
-        :type: list[str]
+        :type metrics: list[str]
         """
         self._metrics = metrics
 
@@ -122,7 +135,7 @@ class ShowCeshierarchyRespDimensions:
         监控查询使用的key。
 
         :param key_name: The key_name of this ShowCeshierarchyRespDimensions.
-        :type: list[str]
+        :type key_name: list[str]
         """
         self._key_name = key_name
 
@@ -144,7 +157,7 @@ class ShowCeshierarchyRespDimensions:
         监控维度路由。
 
         :param dim_router: The dim_router of this ShowCeshierarchyRespDimensions.
-        :type: list[str]
+        :type dim_router: list[str]
         """
         self._dim_router = dim_router
 
@@ -155,7 +168,7 @@ class ShowCeshierarchyRespDimensions:
         子维度列表。
 
         :return: The children of this ShowCeshierarchyRespDimensions.
-        :rtype: list[ShowCeshierarchyRespChildren]
+        :rtype: list[:class:`huaweicloudsdkkafka.v2.ShowCeshierarchyRespChildren`]
         """
         return self._children
 
@@ -166,7 +179,7 @@ class ShowCeshierarchyRespDimensions:
         子维度列表。
 
         :param children: The children of this ShowCeshierarchyRespDimensions.
-        :type: list[ShowCeshierarchyRespChildren]
+        :type children: list[:class:`huaweicloudsdkkafka.v2.ShowCeshierarchyRespChildren`]
         """
         self._children = children
 

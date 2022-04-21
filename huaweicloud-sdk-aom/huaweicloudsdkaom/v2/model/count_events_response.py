@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CountEventsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CountEventsResponse(SdkResponse):
     }
 
     def __init__(self, step=None, timestamps=None, series=None):
-        """CountEventsResponse - a model defined in huaweicloud sdk"""
+        """CountEventsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param step: 统计步长。毫秒数，例如一分钟则填写为60000。
+        :type step: int
+        :param timestamps: 统计结果对应的时间序列。
+        :type timestamps: list[int]
+        :param series: 事件或者告警不同级别相同时间序列对应的统计结果。
+        :type series: list[:class:`huaweicloudsdkaom.v2.EventSeries`]
+        """
         
         super(CountEventsResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class CountEventsResponse(SdkResponse):
         统计步长。毫秒数，例如一分钟则填写为60000。
 
         :param step: The step of this CountEventsResponse.
-        :type: int
+        :type step: int
         """
         self._step = step
 
@@ -90,7 +99,7 @@ class CountEventsResponse(SdkResponse):
         统计结果对应的时间序列。
 
         :param timestamps: The timestamps of this CountEventsResponse.
-        :type: list[int]
+        :type timestamps: list[int]
         """
         self._timestamps = timestamps
 
@@ -101,7 +110,7 @@ class CountEventsResponse(SdkResponse):
         事件或者告警不同级别相同时间序列对应的统计结果。
 
         :return: The series of this CountEventsResponse.
-        :rtype: list[EventSeries]
+        :rtype: list[:class:`huaweicloudsdkaom.v2.EventSeries`]
         """
         return self._series
 
@@ -112,7 +121,7 @@ class CountEventsResponse(SdkResponse):
         事件或者告警不同级别相同时间序列对应的统计结果。
 
         :param series: The series of this CountEventsResponse.
-        :type: list[EventSeries]
+        :type series: list[:class:`huaweicloudsdkaom.v2.EventSeries`]
         """
         self._series = series
 

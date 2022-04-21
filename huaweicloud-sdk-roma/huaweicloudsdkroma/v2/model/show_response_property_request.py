@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowResponsePropertyRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowResponsePropertyRequest:
     }
 
     def __init__(self, instance_id=None, service_id=None, command_id=None, property_id=None):
-        """ShowResponsePropertyRequest - a model defined in huaweicloud sdk"""
+        """ShowResponsePropertyRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param service_id: 服务ID
+        :type service_id: str
+        :param command_id: 命令ID
+        :type command_id: int
+        :param property_id: 属性/请求属性/响应属性ID
+        :type property_id: int
+        """
         
         
 
@@ -69,7 +80,7 @@ class ShowResponsePropertyRequest:
         实例ID
 
         :param instance_id: The instance_id of this ShowResponsePropertyRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -91,7 +102,7 @@ class ShowResponsePropertyRequest:
         服务ID
 
         :param service_id: The service_id of this ShowResponsePropertyRequest.
-        :type: str
+        :type service_id: str
         """
         self._service_id = service_id
 
@@ -113,7 +124,7 @@ class ShowResponsePropertyRequest:
         命令ID
 
         :param command_id: The command_id of this ShowResponsePropertyRequest.
-        :type: int
+        :type command_id: int
         """
         self._command_id = command_id
 
@@ -135,7 +146,7 @@ class ShowResponsePropertyRequest:
         属性/请求属性/响应属性ID
 
         :param property_id: The property_id of this ShowResponsePropertyRequest.
-        :type: int
+        :type property_id: int
         """
         self._property_id = property_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CancelSelfGrantRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CancelSelfGrantRequest:
     }
 
     def __init__(self, body=None):
-        """CancelSelfGrantRequest - a model defined in huaweicloud sdk"""
+        """CancelSelfGrantRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CancelSelfGrantRequest
+        :type body: :class:`huaweicloudsdkkms.v2.RevokeGrantRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CancelSelfGrantRequest:
 
 
         :return: The body of this CancelSelfGrantRequest.
-        :rtype: RevokeGrantRequestBody
+        :rtype: :class:`huaweicloudsdkkms.v2.RevokeGrantRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CancelSelfGrantRequest:
 
 
         :param body: The body of this CancelSelfGrantRequest.
-        :type: RevokeGrantRequestBody
+        :type body: :class:`huaweicloudsdkkms.v2.RevokeGrantRequestBody`
         """
         self._body = body
 

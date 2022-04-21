@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListOpLogsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListOpLogsResponse(SdkResponse):
     }
 
     def __init__(self, operation_logs=None, count=None, limit=None, offset=None):
-        """ListOpLogsResponse - a model defined in huaweicloud sdk"""
+        """ListOpLogsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param operation_logs: 任务列表
+        :type operation_logs: list[:class:`huaweicloudsdkcbr.v1.OperationLog`]
+        :param count: 任务个数
+        :type count: int
+        :param limit: 每页显示的条目数量
+        :type limit: int
+        :param offset: 偏移量，表示从此偏移量开始查询
+        :type offset: int
+        """
         
         super(ListOpLogsResponse, self).__init__()
 
@@ -62,7 +73,7 @@ class ListOpLogsResponse(SdkResponse):
         任务列表
 
         :return: The operation_logs of this ListOpLogsResponse.
-        :rtype: list[OperationLog]
+        :rtype: list[:class:`huaweicloudsdkcbr.v1.OperationLog`]
         """
         return self._operation_logs
 
@@ -73,7 +84,7 @@ class ListOpLogsResponse(SdkResponse):
         任务列表
 
         :param operation_logs: The operation_logs of this ListOpLogsResponse.
-        :type: list[OperationLog]
+        :type operation_logs: list[:class:`huaweicloudsdkcbr.v1.OperationLog`]
         """
         self._operation_logs = operation_logs
 
@@ -95,7 +106,7 @@ class ListOpLogsResponse(SdkResponse):
         任务个数
 
         :param count: The count of this ListOpLogsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -117,7 +128,7 @@ class ListOpLogsResponse(SdkResponse):
         每页显示的条目数量
 
         :param limit: The limit of this ListOpLogsResponse.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -139,7 +150,7 @@ class ListOpLogsResponse(SdkResponse):
         偏移量，表示从此偏移量开始查询
 
         :param offset: The offset of this ListOpLogsResponse.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 

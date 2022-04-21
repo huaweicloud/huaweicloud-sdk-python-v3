@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListEndpointsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ListEndpointsRequest:
     }
 
     def __init__(self, endpoint_service_name=None, vpc_id=None, id=None, limit=None, offset=None, sort_key=None, sort_dir=None):
-        """ListEndpointsRequest - a model defined in huaweicloud sdk"""
+        """ListEndpointsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param endpoint_service_name: 终端节点服务的名称，支持大小 写，前后模糊匹配。
+        :type endpoint_service_name: str
+        :param vpc_id: 终端节点所在的VPC的ID。
+        :type vpc_id: str
+        :param id: 终端节点的ID，唯一标识。
+        :type id: str
+        :param limit: 查询返回终端节点的数量限制，即 每页返回的资源个数。 取值范围：0~1000，取值一般为 10，20或者50，默认为10。
+        :type limit: int
+        :param offset: 偏移量。 偏移量为一个大于0小于终端节点 服务总个数的整数，表示从偏移量 后面的终端节点服务开始查询。
+        :type offset: int
+        :param sort_key: 查询结果中终端节点列表的排序字 段，取值为： ● create_at：终端节点的创建时 间 ● update_at：终端节点的更新时 间 默认值为create_at。
+        :type sort_key: str
+        :param sort_dir: 查询结果中终端节点列表的排序方 式，取值为： ● desc：降序排序 ● asc：升序排序 默认值为desc。
+        :type sort_dir: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class ListEndpointsRequest:
         终端节点服务的名称，支持大小 写，前后模糊匹配。
 
         :param endpoint_service_name: The endpoint_service_name of this ListEndpointsRequest.
-        :type: str
+        :type endpoint_service_name: str
         """
         self._endpoint_service_name = endpoint_service_name
 
@@ -110,7 +127,7 @@ class ListEndpointsRequest:
         终端节点所在的VPC的ID。
 
         :param vpc_id: The vpc_id of this ListEndpointsRequest.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -132,7 +149,7 @@ class ListEndpointsRequest:
         终端节点的ID，唯一标识。
 
         :param id: The id of this ListEndpointsRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -154,7 +171,7 @@ class ListEndpointsRequest:
         查询返回终端节点的数量限制，即 每页返回的资源个数。 取值范围：0~1000，取值一般为 10，20或者50，默认为10。
 
         :param limit: The limit of this ListEndpointsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -176,7 +193,7 @@ class ListEndpointsRequest:
         偏移量。 偏移量为一个大于0小于终端节点 服务总个数的整数，表示从偏移量 后面的终端节点服务开始查询。
 
         :param offset: The offset of this ListEndpointsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -198,7 +215,7 @@ class ListEndpointsRequest:
         查询结果中终端节点列表的排序字 段，取值为： ● create_at：终端节点的创建时 间 ● update_at：终端节点的更新时 间 默认值为create_at。
 
         :param sort_key: The sort_key of this ListEndpointsRequest.
-        :type: str
+        :type sort_key: str
         """
         self._sort_key = sort_key
 
@@ -220,7 +237,7 @@ class ListEndpointsRequest:
         查询结果中终端节点列表的排序方 式，取值为： ● desc：降序排序 ● asc：升序排序 默认值为desc。
 
         :param sort_dir: The sort_dir of this ListEndpointsRequest.
-        :type: str
+        :type sort_dir: str
         """
         self._sort_dir = sort_dir
 

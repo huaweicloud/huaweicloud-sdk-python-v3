@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteBigkeyScanTaskResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class DeleteBigkeyScanTaskResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteBigkeyScanTaskResponse - a model defined in huaweicloud sdk"""
+        """DeleteBigkeyScanTaskResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(DeleteBigkeyScanTaskResponse, self).__init__()
         self.discriminator = None

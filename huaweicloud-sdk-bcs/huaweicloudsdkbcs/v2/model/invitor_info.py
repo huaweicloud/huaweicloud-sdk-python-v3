@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InvitorInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class InvitorInfo:
     }
 
     def __init__(self, invitor_id=None, invitor_name=None, invitor_bcs_id=None, invitor_bcs_name=None, invitor_consensus=None, invitor_project_id=None, invitor_cluster_type=None, invitor_database_type=None, invitor_signature_algorithm=None, invitor_fabric_version=None, order_fade_enabled=None, order_fade_cache=None):
-        """InvitorInfo - a model defined in huaweicloud sdk"""
+        """InvitorInfo
+
+        The model defined in huaweicloud sdk
+
+        :param invitor_id: 邀请方用户id
+        :type invitor_id: str
+        :param invitor_name: 邀请方用户名
+        :type invitor_name: str
+        :param invitor_bcs_id: 邀请方的服务id
+        :type invitor_bcs_id: str
+        :param invitor_bcs_name: 邀请方的服务名
+        :type invitor_bcs_name: str
+        :param invitor_consensus: 邀请方的共识
+        :type invitor_consensus: str
+        :param invitor_project_id: 邀请方的projectID
+        :type invitor_project_id: str
+        :param invitor_cluster_type: 邀请方的集群类型
+        :type invitor_cluster_type: str
+        :param invitor_database_type: 邀请方数据库类型
+        :type invitor_database_type: str
+        :param invitor_signature_algorithm: 邀请方的签名算法
+        :type invitor_signature_algorithm: str
+        :param invitor_fabric_version: 邀请方的fabric版本
+        :type invitor_fabric_version: str
+        :param order_fade_enabled: 是否允许order老化
+        :type order_fade_enabled: bool
+        :param order_fade_cache: order老化阈值
+        :type order_fade_cache: int
+        """
         
         
 
@@ -113,7 +140,7 @@ class InvitorInfo:
         邀请方用户id
 
         :param invitor_id: The invitor_id of this InvitorInfo.
-        :type: str
+        :type invitor_id: str
         """
         self._invitor_id = invitor_id
 
@@ -135,7 +162,7 @@ class InvitorInfo:
         邀请方用户名
 
         :param invitor_name: The invitor_name of this InvitorInfo.
-        :type: str
+        :type invitor_name: str
         """
         self._invitor_name = invitor_name
 
@@ -157,7 +184,7 @@ class InvitorInfo:
         邀请方的服务id
 
         :param invitor_bcs_id: The invitor_bcs_id of this InvitorInfo.
-        :type: str
+        :type invitor_bcs_id: str
         """
         self._invitor_bcs_id = invitor_bcs_id
 
@@ -179,7 +206,7 @@ class InvitorInfo:
         邀请方的服务名
 
         :param invitor_bcs_name: The invitor_bcs_name of this InvitorInfo.
-        :type: str
+        :type invitor_bcs_name: str
         """
         self._invitor_bcs_name = invitor_bcs_name
 
@@ -201,7 +228,7 @@ class InvitorInfo:
         邀请方的共识
 
         :param invitor_consensus: The invitor_consensus of this InvitorInfo.
-        :type: str
+        :type invitor_consensus: str
         """
         self._invitor_consensus = invitor_consensus
 
@@ -223,7 +250,7 @@ class InvitorInfo:
         邀请方的projectID
 
         :param invitor_project_id: The invitor_project_id of this InvitorInfo.
-        :type: str
+        :type invitor_project_id: str
         """
         self._invitor_project_id = invitor_project_id
 
@@ -245,7 +272,7 @@ class InvitorInfo:
         邀请方的集群类型
 
         :param invitor_cluster_type: The invitor_cluster_type of this InvitorInfo.
-        :type: str
+        :type invitor_cluster_type: str
         """
         self._invitor_cluster_type = invitor_cluster_type
 
@@ -267,7 +294,7 @@ class InvitorInfo:
         邀请方数据库类型
 
         :param invitor_database_type: The invitor_database_type of this InvitorInfo.
-        :type: str
+        :type invitor_database_type: str
         """
         self._invitor_database_type = invitor_database_type
 
@@ -289,7 +316,7 @@ class InvitorInfo:
         邀请方的签名算法
 
         :param invitor_signature_algorithm: The invitor_signature_algorithm of this InvitorInfo.
-        :type: str
+        :type invitor_signature_algorithm: str
         """
         self._invitor_signature_algorithm = invitor_signature_algorithm
 
@@ -311,7 +338,7 @@ class InvitorInfo:
         邀请方的fabric版本
 
         :param invitor_fabric_version: The invitor_fabric_version of this InvitorInfo.
-        :type: str
+        :type invitor_fabric_version: str
         """
         self._invitor_fabric_version = invitor_fabric_version
 
@@ -333,7 +360,7 @@ class InvitorInfo:
         是否允许order老化
 
         :param order_fade_enabled: The order_fade_enabled of this InvitorInfo.
-        :type: bool
+        :type order_fade_enabled: bool
         """
         self._order_fade_enabled = order_fade_enabled
 
@@ -355,7 +382,7 @@ class InvitorInfo:
         order老化阈值
 
         :param order_fade_cache: The order_fade_cache of this InvitorInfo.
-        :type: int
+        :type order_fade_cache: int
         """
         self._order_fade_cache = order_fade_cache
 

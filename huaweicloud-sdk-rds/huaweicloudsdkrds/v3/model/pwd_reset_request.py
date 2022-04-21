@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PwdResetRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class PwdResetRequest:
     }
 
     def __init__(self, db_user_pwd=None):
-        """PwdResetRequest - a model defined in huaweicloud sdk"""
+        """PwdResetRequest
+
+        The model defined in huaweicloud sdk
+
+        :param db_user_pwd: 数据库密码
+        :type db_user_pwd: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class PwdResetRequest:
         数据库密码
 
         :param db_user_pwd: The db_user_pwd of this PwdResetRequest.
-        :type: str
+        :type db_user_pwd: str
         """
         self._db_user_pwd = db_user_pwd
 

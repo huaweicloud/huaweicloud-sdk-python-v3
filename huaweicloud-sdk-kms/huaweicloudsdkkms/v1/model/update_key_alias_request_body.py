@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateKeyAliasRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateKeyAliasRequestBody:
     }
 
     def __init__(self, key_id=None, key_alias=None, sequence=None):
-        """UpdateKeyAliasRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateKeyAliasRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param key_id: 密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
+        :type key_id: str
+        :param key_alias: 非默认主密钥别名，取值1到255字符，满足正则匹配“^[a-zA-Z0-9:/_-]{1,255}$”且 后缀不可以为“/default”。
+        :type key_alias: str
+        :param sequence: 请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
+        :type sequence: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class UpdateKeyAliasRequestBody:
         密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
 
         :param key_id: The key_id of this UpdateKeyAliasRequestBody.
-        :type: str
+        :type key_id: str
         """
         self._key_id = key_id
 
@@ -90,7 +99,7 @@ class UpdateKeyAliasRequestBody:
         非默认主密钥别名，取值1到255字符，满足正则匹配“^[a-zA-Z0-9:/_-]{1,255}$”且 后缀不可以为“/default”。
 
         :param key_alias: The key_alias of this UpdateKeyAliasRequestBody.
-        :type: str
+        :type key_alias: str
         """
         self._key_alias = key_alias
 
@@ -112,7 +121,7 @@ class UpdateKeyAliasRequestBody:
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
 
         :param sequence: The sequence of this UpdateKeyAliasRequestBody.
-        :type: str
+        :type sequence: str
         """
         self._sequence = sequence
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RespDeh:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class RespDeh:
     }
 
     def __init__(self, resource_id=None, resouce_detail=None, tags=None, resource_name=None):
-        """RespDeh - a model defined in huaweicloud sdk"""
+        """RespDeh
+
+        The model defined in huaweicloud sdk
+
+        :param resource_id: 专属主机ID。
+        :type resource_id: str
+        :param resouce_detail: 专属主机详情。  该字段用于后续扩展，默认为空。
+        :type resouce_detail: str
+        :param tags: 标签列表。
+        :type tags: list[:class:`huaweicloudsdkdeh.v1.ResourceTag`]
+        :param resource_name: 资源名称。
+        :type resource_name: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class RespDeh:
         专属主机ID。
 
         :param resource_id: The resource_id of this RespDeh.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -91,7 +102,7 @@ class RespDeh:
         专属主机详情。  该字段用于后续扩展，默认为空。
 
         :param resouce_detail: The resouce_detail of this RespDeh.
-        :type: str
+        :type resouce_detail: str
         """
         self._resouce_detail = resouce_detail
 
@@ -102,7 +113,7 @@ class RespDeh:
         标签列表。
 
         :return: The tags of this RespDeh.
-        :rtype: list[ResourceTag]
+        :rtype: list[:class:`huaweicloudsdkdeh.v1.ResourceTag`]
         """
         return self._tags
 
@@ -113,7 +124,7 @@ class RespDeh:
         标签列表。
 
         :param tags: The tags of this RespDeh.
-        :type: list[ResourceTag]
+        :type tags: list[:class:`huaweicloudsdkdeh.v1.ResourceTag`]
         """
         self._tags = tags
 
@@ -135,7 +146,7 @@ class RespDeh:
         资源名称。
 
         :param resource_name: The resource_name of this RespDeh.
-        :type: str
+        :type resource_name: str
         """
         self._resource_name = resource_name
 

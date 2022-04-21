@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExportImageRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ExportImageRequestBody:
     }
 
     def __init__(self, bucket_url=None, file_format=None, is_quick_export=None):
-        """ExportImageRequestBody - a model defined in huaweicloud sdk"""
+        """ExportImageRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param bucket_url: 目的文件的URL，格式：&lt;bucket&gt;:&lt;file&gt;。 说明：此处的OBS桶和镜像文件的存储类别必须是OBS标准存储。
+        :type bucket_url: str
+        :param file_format: 文件格式，支持qcow2、vhd、zvhd和vmdk。
+        :type file_format: str
+        :param is_quick_export: 是否使用快速导出，取值为true或者false。 说明：若使用快速导出，则无法指定file_format参数。
+        :type is_quick_export: bool
+        """
         
         
 
@@ -66,7 +75,7 @@ class ExportImageRequestBody:
         目的文件的URL，格式：<bucket>:<file>。 说明：此处的OBS桶和镜像文件的存储类别必须是OBS标准存储。
 
         :param bucket_url: The bucket_url of this ExportImageRequestBody.
-        :type: str
+        :type bucket_url: str
         """
         self._bucket_url = bucket_url
 
@@ -88,7 +97,7 @@ class ExportImageRequestBody:
         文件格式，支持qcow2、vhd、zvhd和vmdk。
 
         :param file_format: The file_format of this ExportImageRequestBody.
-        :type: str
+        :type file_format: str
         """
         self._file_format = file_format
 
@@ -110,7 +119,7 @@ class ExportImageRequestBody:
         是否使用快速导出，取值为true或者false。 说明：若使用快速导出，则无法指定file_format参数。
 
         :param is_quick_export: The is_quick_export of this ExportImageRequestBody.
-        :type: bool
+        :type is_quick_export: bool
         """
         self._is_quick_export = is_quick_export
 

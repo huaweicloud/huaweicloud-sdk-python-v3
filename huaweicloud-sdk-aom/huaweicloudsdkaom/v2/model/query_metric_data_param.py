@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryMetricDataParam:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class QueryMetricDataParam:
     }
 
     def __init__(self, metrics=None, period=None, statistics=None, timerange=None):
-        """QueryMetricDataParam - a model defined in huaweicloud sdk"""
+        """QueryMetricDataParam
+
+        The model defined in huaweicloud sdk
+
+        :param metrics: 指标对象列表。 取值范围 JSON数组大小不超过20
+        :type metrics: list[:class:`huaweicloudsdkaom.v2.MetricQueryMeritcParam`]
+        :param period: 监控数据粒度。 取值范围 枚举值，取值范围： 60，1分钟粒度 300，5分钟粒度 900，15分钟粒度 3600，1小时粒度
+        :type period: int
+        :param statistics: 统计方式。 取值范围 maximum，minimum，sum，average，sampleCount
+        :type statistics: list[str]
+        :param timerange: 说明： timerange/period≤1440 计算时，timerange和period需换算为相同的单位。 取值范围 格式：开始时间UTC毫秒.结束时间UTC毫秒.时间范围分钟数。开始和结束时间为-1时，表示最近N分钟，N为时间范围分钟取值。 查询时间段，如最近五分钟可以表示为-1.-1.5，固定的时间范围（2017-08-01 08:00 :00到2017-08-02 08:00:00）可以表示为1501545600000.1501632000000.1440。
+        :type timerange: str
+        """
         
         
 
@@ -58,7 +69,7 @@ class QueryMetricDataParam:
         指标对象列表。 取值范围 JSON数组大小不超过20
 
         :return: The metrics of this QueryMetricDataParam.
-        :rtype: list[MetricQueryMeritcParam]
+        :rtype: list[:class:`huaweicloudsdkaom.v2.MetricQueryMeritcParam`]
         """
         return self._metrics
 
@@ -69,7 +80,7 @@ class QueryMetricDataParam:
         指标对象列表。 取值范围 JSON数组大小不超过20
 
         :param metrics: The metrics of this QueryMetricDataParam.
-        :type: list[MetricQueryMeritcParam]
+        :type metrics: list[:class:`huaweicloudsdkaom.v2.MetricQueryMeritcParam`]
         """
         self._metrics = metrics
 
@@ -91,7 +102,7 @@ class QueryMetricDataParam:
         监控数据粒度。 取值范围 枚举值，取值范围： 60，1分钟粒度 300，5分钟粒度 900，15分钟粒度 3600，1小时粒度
 
         :param period: The period of this QueryMetricDataParam.
-        :type: int
+        :type period: int
         """
         self._period = period
 
@@ -113,7 +124,7 @@ class QueryMetricDataParam:
         统计方式。 取值范围 maximum，minimum，sum，average，sampleCount
 
         :param statistics: The statistics of this QueryMetricDataParam.
-        :type: list[str]
+        :type statistics: list[str]
         """
         self._statistics = statistics
 
@@ -135,7 +146,7 @@ class QueryMetricDataParam:
         说明： timerange/period≤1440 计算时，timerange和period需换算为相同的单位。 取值范围 格式：开始时间UTC毫秒.结束时间UTC毫秒.时间范围分钟数。开始和结束时间为-1时，表示最近N分钟，N为时间范围分钟取值。 查询时间段，如最近五分钟可以表示为-1.-1.5，固定的时间范围（2017-08-01 08:00 :00到2017-08-02 08:00:00）可以表示为1501545600000.1501632000000.1440。
 
         :param timerange: The timerange of this QueryMetricDataParam.
-        :type: str
+        :type timerange: str
         """
         self._timerange = timerange
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MysqlProxyComputeFlavor:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class MysqlProxyComputeFlavor:
     }
 
     def __init__(self, vcpus=None, ram=None, db_type=None, id=None, spec_code=None, az_status=None):
-        """MysqlProxyComputeFlavor - a model defined in huaweicloud sdk"""
+        """MysqlProxyComputeFlavor
+
+        The model defined in huaweicloud sdk
+
+        :param vcpus: CPU大小。例如：1表示1U。
+        :type vcpus: str
+        :param ram: 内存大小，单位为GB。
+        :type ram: str
+        :param db_type: 数据库类型。
+        :type db_type: str
+        :param id: Proxy规格id。
+        :type id: str
+        :param spec_code: Proxy规格码。
+        :type spec_code: str
+        :param az_status: 其中key是可用区编号，value是规格所在az的状态。
+        :type az_status: object
+        """
         
         
 
@@ -77,7 +92,7 @@ class MysqlProxyComputeFlavor:
         CPU大小。例如：1表示1U。
 
         :param vcpus: The vcpus of this MysqlProxyComputeFlavor.
-        :type: str
+        :type vcpus: str
         """
         self._vcpus = vcpus
 
@@ -99,7 +114,7 @@ class MysqlProxyComputeFlavor:
         内存大小，单位为GB。
 
         :param ram: The ram of this MysqlProxyComputeFlavor.
-        :type: str
+        :type ram: str
         """
         self._ram = ram
 
@@ -121,7 +136,7 @@ class MysqlProxyComputeFlavor:
         数据库类型。
 
         :param db_type: The db_type of this MysqlProxyComputeFlavor.
-        :type: str
+        :type db_type: str
         """
         self._db_type = db_type
 
@@ -143,7 +158,7 @@ class MysqlProxyComputeFlavor:
         Proxy规格id。
 
         :param id: The id of this MysqlProxyComputeFlavor.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -165,7 +180,7 @@ class MysqlProxyComputeFlavor:
         Proxy规格码。
 
         :param spec_code: The spec_code of this MysqlProxyComputeFlavor.
-        :type: str
+        :type spec_code: str
         """
         self._spec_code = spec_code
 
@@ -187,7 +202,7 @@ class MysqlProxyComputeFlavor:
         其中key是可用区编号，value是规格所在az的状态。
 
         :param az_status: The az_status of this MysqlProxyComputeFlavor.
-        :type: object
+        :type az_status: object
         """
         self._az_status = az_status
 

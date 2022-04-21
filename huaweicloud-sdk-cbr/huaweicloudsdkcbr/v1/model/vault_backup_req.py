@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VaultBackupReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class VaultBackupReq:
     }
 
     def __init__(self, checkpoint=None):
-        """VaultBackupReq - a model defined in huaweicloud sdk"""
+        """VaultBackupReq
+
+        The model defined in huaweicloud sdk
+
+        :param checkpoint: 
+        :type checkpoint: :class:`huaweicloudsdkcbr.v1.VaultBackup`
+        """
         
         
 
@@ -45,7 +50,7 @@ class VaultBackupReq:
 
 
         :return: The checkpoint of this VaultBackupReq.
-        :rtype: VaultBackup
+        :rtype: :class:`huaweicloudsdkcbr.v1.VaultBackup`
         """
         return self._checkpoint
 
@@ -55,7 +60,7 @@ class VaultBackupReq:
 
 
         :param checkpoint: The checkpoint of this VaultBackupReq.
-        :type: VaultBackup
+        :type checkpoint: :class:`huaweicloudsdkcbr.v1.VaultBackup`
         """
         self._checkpoint = checkpoint
 

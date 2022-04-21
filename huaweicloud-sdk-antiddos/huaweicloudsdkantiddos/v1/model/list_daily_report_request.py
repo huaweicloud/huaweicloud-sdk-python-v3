@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDailyReportRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListDailyReportRequest:
     }
 
     def __init__(self, floating_ip_id=None, ip=None):
-        """ListDailyReportRequest - a model defined in huaweicloud sdk"""
+        """ListDailyReportRequest
+
+        The model defined in huaweicloud sdk
+
+        :param floating_ip_id: 用户EIP对应的ID
+        :type floating_ip_id: str
+        :param ip: 用户EIP
+        :type ip: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ListDailyReportRequest:
         用户EIP对应的ID
 
         :param floating_ip_id: The floating_ip_id of this ListDailyReportRequest.
-        :type: str
+        :type floating_ip_id: str
         """
         self._floating_ip_id = floating_ip_id
 
@@ -84,7 +91,7 @@ class ListDailyReportRequest:
         用户EIP
 
         :param ip: The ip of this ListDailyReportRequest.
-        :type: str
+        :type ip: str
         """
         self._ip = ip
 

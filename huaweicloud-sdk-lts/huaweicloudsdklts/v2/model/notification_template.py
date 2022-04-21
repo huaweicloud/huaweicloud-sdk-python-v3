@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NotificationTemplate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class NotificationTemplate:
     }
 
     def __init__(self, name=None, type=None, desc=None, source=None, locale=None, templates=None, create_time=None, modify_time=None, project_id=None):
-        """NotificationTemplate - a model defined in huaweicloud sdk"""
+        """NotificationTemplate
+
+        The model defined in huaweicloud sdk
+
+        :param name: 通知规则名称，必填，只含有汉字、数字、字母、下划线、中划线，不能以下划线等特殊符号开头和结尾，长度为 1 - 100，创建后不可修改
+        :type name: str
+        :param type: 保留字段，非必填，只支持sms（短信），dingding（钉钉），wechat（企业微信），email（邮件）和webhook（网络钩子）
+        :type type: list[str]
+        :param desc: 模板描述，必填，只含有汉字、数字、字母、下划线不能以下划线开头和结尾，长度为0--1024
+        :type desc: str
+        :param source: 模板来源，目前必填为LTS，否则会筛选不出来
+        :type source: str
+        :param locale: 语言，必填，目前可填zh-cn和en-us
+        :type locale: str
+        :param templates: 模板正文，为一个数组
+        :type templates: list[:class:`huaweicloudsdklts.v2.SubTemplate`]
+        :param create_time: 创建时间，为毫秒时间戳
+        :type create_time: int
+        :param modify_time: 更新时间，为毫秒时间戳
+        :type modify_time: int
+        :param project_id: 项目ID，获取方式请参见：获取账号ID、项目ID、日志组ID、日志流ID（https://support.huaweicloud.com/api-lts/lts_api_0006.html）。
+        :type project_id: str
+        """
         
         
 
@@ -90,7 +111,7 @@ class NotificationTemplate:
         通知规则名称，必填，只含有汉字、数字、字母、下划线、中划线，不能以下划线等特殊符号开头和结尾，长度为 1 - 100，创建后不可修改
 
         :param name: The name of this NotificationTemplate.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -112,7 +133,7 @@ class NotificationTemplate:
         保留字段，非必填，只支持sms（短信），dingding（钉钉），wechat（企业微信），email（邮件）和webhook（网络钩子）
 
         :param type: The type of this NotificationTemplate.
-        :type: list[str]
+        :type type: list[str]
         """
         self._type = type
 
@@ -134,7 +155,7 @@ class NotificationTemplate:
         模板描述，必填，只含有汉字、数字、字母、下划线不能以下划线开头和结尾，长度为0--1024
 
         :param desc: The desc of this NotificationTemplate.
-        :type: str
+        :type desc: str
         """
         self._desc = desc
 
@@ -156,7 +177,7 @@ class NotificationTemplate:
         模板来源，目前必填为LTS，否则会筛选不出来
 
         :param source: The source of this NotificationTemplate.
-        :type: str
+        :type source: str
         """
         self._source = source
 
@@ -178,7 +199,7 @@ class NotificationTemplate:
         语言，必填，目前可填zh-cn和en-us
 
         :param locale: The locale of this NotificationTemplate.
-        :type: str
+        :type locale: str
         """
         self._locale = locale
 
@@ -189,7 +210,7 @@ class NotificationTemplate:
         模板正文，为一个数组
 
         :return: The templates of this NotificationTemplate.
-        :rtype: list[SubTemplate]
+        :rtype: list[:class:`huaweicloudsdklts.v2.SubTemplate`]
         """
         return self._templates
 
@@ -200,7 +221,7 @@ class NotificationTemplate:
         模板正文，为一个数组
 
         :param templates: The templates of this NotificationTemplate.
-        :type: list[SubTemplate]
+        :type templates: list[:class:`huaweicloudsdklts.v2.SubTemplate`]
         """
         self._templates = templates
 
@@ -222,7 +243,7 @@ class NotificationTemplate:
         创建时间，为毫秒时间戳
 
         :param create_time: The create_time of this NotificationTemplate.
-        :type: int
+        :type create_time: int
         """
         self._create_time = create_time
 
@@ -244,7 +265,7 @@ class NotificationTemplate:
         更新时间，为毫秒时间戳
 
         :param modify_time: The modify_time of this NotificationTemplate.
-        :type: int
+        :type modify_time: int
         """
         self._modify_time = modify_time
 
@@ -266,7 +287,7 @@ class NotificationTemplate:
         项目ID，获取方式请参见：获取账号ID、项目ID、日志组ID、日志流ID（https://support.huaweicloud.com/api-lts/lts_api_0006.html）。
 
         :param project_id: The project_id of this NotificationTemplate.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 

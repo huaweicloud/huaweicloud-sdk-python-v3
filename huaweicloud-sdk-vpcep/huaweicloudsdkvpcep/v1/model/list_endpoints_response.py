@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListEndpointsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListEndpointsResponse(SdkResponse):
     }
 
     def __init__(self, endpoints=None, total_count=None):
-        """ListEndpointsResponse - a model defined in huaweicloud sdk"""
+        """ListEndpointsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param endpoints: 终端节点列表。
+        :type endpoints: list[:class:`huaweicloudsdkvpcep.v1.EndpointResp`]
+        :param total_count: 满足查询条件的终端节点总条数，不受分页（即limit、offset参数）影响。
+        :type total_count: int
+        """
         
         super(ListEndpointsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListEndpointsResponse(SdkResponse):
         终端节点列表。
 
         :return: The endpoints of this ListEndpointsResponse.
-        :rtype: list[EndpointResp]
+        :rtype: list[:class:`huaweicloudsdkvpcep.v1.EndpointResp`]
         """
         return self._endpoints
 
@@ -63,7 +70,7 @@ class ListEndpointsResponse(SdkResponse):
         终端节点列表。
 
         :param endpoints: The endpoints of this ListEndpointsResponse.
-        :type: list[EndpointResp]
+        :type endpoints: list[:class:`huaweicloudsdkvpcep.v1.EndpointResp`]
         """
         self._endpoints = endpoints
 
@@ -85,7 +92,7 @@ class ListEndpointsResponse(SdkResponse):
         满足查询条件的终端节点总条数，不受分页（即limit、offset参数）影响。
 
         :param total_count: The total_count of this ListEndpointsResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 

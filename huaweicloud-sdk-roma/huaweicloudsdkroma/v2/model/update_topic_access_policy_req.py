@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateTopicAccessPolicyReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateTopicAccessPolicyReq:
     }
 
     def __init__(self, topics=None):
-        """UpdateTopicAccessPolicyReq - a model defined in huaweicloud sdk"""
+        """UpdateTopicAccessPolicyReq
+
+        The model defined in huaweicloud sdk
+
+        :param topics: 策略列表。
+        :type topics: list[:class:`huaweicloudsdkroma.v2.UpdateTopicAccessPolicyTopicsObject`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class UpdateTopicAccessPolicyReq:
         策略列表。
 
         :return: The topics of this UpdateTopicAccessPolicyReq.
-        :rtype: list[UpdateTopicAccessPolicyTopicsObject]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.UpdateTopicAccessPolicyTopicsObject`]
         """
         return self._topics
 
@@ -57,7 +62,7 @@ class UpdateTopicAccessPolicyReq:
         策略列表。
 
         :param topics: The topics of this UpdateTopicAccessPolicyReq.
-        :type: list[UpdateTopicAccessPolicyTopicsObject]
+        :type topics: list[:class:`huaweicloudsdkroma.v2.UpdateTopicAccessPolicyTopicsObject`]
         """
         self._topics = topics
 

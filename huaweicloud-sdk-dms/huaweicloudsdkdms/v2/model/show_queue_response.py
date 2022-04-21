@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowQueueResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class ShowQueueResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, created=None, description=None, queue_mode=None, reservation=None, max_msg_size_byte=None, produced_messages=None, redrive_policy=None, max_consume_count=None, group_count=None, kafka_topic=None, eff_date=None):
-        """ShowQueueResponse - a model defined in huaweicloud sdk"""
+        """ShowQueueResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 队列ID。
+        :type id: str
+        :param name: 队列的名称。
+        :type name: str
+        :param created: 创建队列的时间。
+        :type created: int
+        :param description: 队列的描述信息。
+        :type description: str
+        :param queue_mode: 队列类型。
+        :type queue_mode: str
+        :param reservation: 消息在队列中允许保留的时长（单位分钟）。
+        :type reservation: int
+        :param max_msg_size_byte: 队列中允许的最大消息大小（单位Byte）。
+        :type max_msg_size_byte: int
+        :param produced_messages: 队列的消息总数。
+        :type produced_messages: int
+        :param redrive_policy: 该队列是否开启死信消息。仅当include_deadletter为true时，才有该响应参数。 - enable：表示开启。 - disable：表示不开启。
+        :type redrive_policy: str
+        :param max_consume_count: 最大确认消费失败的次数，当达到最大确认失败次数后，DMS会将该条消息转存到死信队列中。 仅当include_deadletter为true时，才有该响应参数。
+        :type max_consume_count: int
+        :param group_count: 该队列下的消费组数量。
+        :type group_count: int
+        :param kafka_topic: 仅Kafka队列才有该参数。
+        :type kafka_topic: str
+        :param eff_date: 创建队列的时间。
+        :type eff_date: int
+        """
         
         super(ShowQueueResponse, self).__init__()
 
@@ -118,7 +147,7 @@ class ShowQueueResponse(SdkResponse):
         队列ID。
 
         :param id: The id of this ShowQueueResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -140,7 +169,7 @@ class ShowQueueResponse(SdkResponse):
         队列的名称。
 
         :param name: The name of this ShowQueueResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -162,7 +191,7 @@ class ShowQueueResponse(SdkResponse):
         创建队列的时间。
 
         :param created: The created of this ShowQueueResponse.
-        :type: int
+        :type created: int
         """
         self._created = created
 
@@ -184,7 +213,7 @@ class ShowQueueResponse(SdkResponse):
         队列的描述信息。
 
         :param description: The description of this ShowQueueResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -206,7 +235,7 @@ class ShowQueueResponse(SdkResponse):
         队列类型。
 
         :param queue_mode: The queue_mode of this ShowQueueResponse.
-        :type: str
+        :type queue_mode: str
         """
         self._queue_mode = queue_mode
 
@@ -228,7 +257,7 @@ class ShowQueueResponse(SdkResponse):
         消息在队列中允许保留的时长（单位分钟）。
 
         :param reservation: The reservation of this ShowQueueResponse.
-        :type: int
+        :type reservation: int
         """
         self._reservation = reservation
 
@@ -250,7 +279,7 @@ class ShowQueueResponse(SdkResponse):
         队列中允许的最大消息大小（单位Byte）。
 
         :param max_msg_size_byte: The max_msg_size_byte of this ShowQueueResponse.
-        :type: int
+        :type max_msg_size_byte: int
         """
         self._max_msg_size_byte = max_msg_size_byte
 
@@ -272,7 +301,7 @@ class ShowQueueResponse(SdkResponse):
         队列的消息总数。
 
         :param produced_messages: The produced_messages of this ShowQueueResponse.
-        :type: int
+        :type produced_messages: int
         """
         self._produced_messages = produced_messages
 
@@ -294,7 +323,7 @@ class ShowQueueResponse(SdkResponse):
         该队列是否开启死信消息。仅当include_deadletter为true时，才有该响应参数。 - enable：表示开启。 - disable：表示不开启。
 
         :param redrive_policy: The redrive_policy of this ShowQueueResponse.
-        :type: str
+        :type redrive_policy: str
         """
         self._redrive_policy = redrive_policy
 
@@ -316,7 +345,7 @@ class ShowQueueResponse(SdkResponse):
         最大确认消费失败的次数，当达到最大确认失败次数后，DMS会将该条消息转存到死信队列中。 仅当include_deadletter为true时，才有该响应参数。
 
         :param max_consume_count: The max_consume_count of this ShowQueueResponse.
-        :type: int
+        :type max_consume_count: int
         """
         self._max_consume_count = max_consume_count
 
@@ -338,7 +367,7 @@ class ShowQueueResponse(SdkResponse):
         该队列下的消费组数量。
 
         :param group_count: The group_count of this ShowQueueResponse.
-        :type: int
+        :type group_count: int
         """
         self._group_count = group_count
 
@@ -360,7 +389,7 @@ class ShowQueueResponse(SdkResponse):
         仅Kafka队列才有该参数。
 
         :param kafka_topic: The kafka_topic of this ShowQueueResponse.
-        :type: str
+        :type kafka_topic: str
         """
         self._kafka_topic = kafka_topic
 
@@ -382,7 +411,7 @@ class ShowQueueResponse(SdkResponse):
         创建队列的时间。
 
         :param eff_date: The eff_date of this ShowQueueResponse.
-        :type: int
+        :type eff_date: int
         """
         self._eff_date = eff_date
 

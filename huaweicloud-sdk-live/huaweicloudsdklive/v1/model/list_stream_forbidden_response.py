@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListStreamForbiddenResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListStreamForbiddenResponse(SdkResponse):
     }
 
     def __init__(self, total=None, blocks=None):
-        """ListStreamForbiddenResponse - a model defined in huaweicloud sdk"""
+        """ListStreamForbiddenResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 查询结果的总元素数量
+        :type total: int
+        :param blocks: 禁播黑名单列表
+        :type blocks: list[:class:`huaweicloudsdklive.v1.StreamForbiddenList`]
+        """
         
         super(ListStreamForbiddenResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListStreamForbiddenResponse(SdkResponse):
         查询结果的总元素数量
 
         :param total: The total of this ListStreamForbiddenResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -74,7 +81,7 @@ class ListStreamForbiddenResponse(SdkResponse):
         禁播黑名单列表
 
         :return: The blocks of this ListStreamForbiddenResponse.
-        :rtype: list[StreamForbiddenList]
+        :rtype: list[:class:`huaweicloudsdklive.v1.StreamForbiddenList`]
         """
         return self._blocks
 
@@ -85,7 +92,7 @@ class ListStreamForbiddenResponse(SdkResponse):
         禁播黑名单列表
 
         :param blocks: The blocks of this ListStreamForbiddenResponse.
-        :type: list[StreamForbiddenList]
+        :type blocks: list[:class:`huaweicloudsdklive.v1.StreamForbiddenList`]
         """
         self._blocks = blocks
 

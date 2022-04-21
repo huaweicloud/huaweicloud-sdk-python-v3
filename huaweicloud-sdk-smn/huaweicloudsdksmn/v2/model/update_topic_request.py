@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateTopicRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateTopicRequest:
     }
 
     def __init__(self, topic_urn=None, body=None):
-        """UpdateTopicRequest - a model defined in huaweicloud sdk"""
+        """UpdateTopicRequest
+
+        The model defined in huaweicloud sdk
+
+        :param topic_urn: Topic的唯一的资源标识。可以通过[查看主题列表](https://support.huaweicloud.com/api-smn/smn_api_51004.html)获取该标识。
+        :type topic_urn: str
+        :param body: Body of the UpdateTopicRequest
+        :type body: :class:`huaweicloudsdksmn.v2.UpdateTopicRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateTopicRequest:
         Topic的唯一的资源标识。可以通过[查看主题列表](https://support.huaweicloud.com/api-smn/smn_api_51004.html)获取该标识。
 
         :param topic_urn: The topic_urn of this UpdateTopicRequest.
-        :type: str
+        :type topic_urn: str
         """
         self._topic_urn = topic_urn
 
@@ -72,7 +79,7 @@ class UpdateTopicRequest:
 
 
         :return: The body of this UpdateTopicRequest.
-        :rtype: UpdateTopicRequestBody
+        :rtype: :class:`huaweicloudsdksmn.v2.UpdateTopicRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateTopicRequest:
 
 
         :param body: The body of this UpdateTopicRequest.
-        :type: UpdateTopicRequestBody
+        :type body: :class:`huaweicloudsdksmn.v2.UpdateTopicRequestBody`
         """
         self._body = body
 

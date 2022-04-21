@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ModCorpBasicInfoDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ModCorpBasicInfoDTO:
     }
 
     def __init__(self, address=None, auto_user_create=None):
-        """ModCorpBasicInfoDTO - a model defined in huaweicloud sdk"""
+        """ModCorpBasicInfoDTO
+
+        The model defined in huaweicloud sdk
+
+        :param address: 企业所在地,最大长度为255个字符。 maxLength：255。 
+        :type address: str
+        :param auto_user_create: 企业自动开户开关
+        :type auto_user_create: bool
+        """
         
         
 
@@ -63,7 +70,7 @@ class ModCorpBasicInfoDTO:
         企业所在地,最大长度为255个字符。 maxLength：255。 
 
         :param address: The address of this ModCorpBasicInfoDTO.
-        :type: str
+        :type address: str
         """
         self._address = address
 
@@ -85,7 +92,7 @@ class ModCorpBasicInfoDTO:
         企业自动开户开关
 
         :param auto_user_create: The auto_user_create of this ModCorpBasicInfoDTO.
-        :type: bool
+        :type auto_user_create: bool
         """
         self._auto_user_create = auto_user_create
 

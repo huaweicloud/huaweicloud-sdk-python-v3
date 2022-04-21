@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CategorySuggestions:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CategorySuggestions:
     }
 
     def __init__(self, politics=None, terrorism=None, porn=None):
-        """CategorySuggestions - a model defined in huaweicloud sdk"""
+        """CategorySuggestions
+
+        The model defined in huaweicloud sdk
+
+        :param politics: 政治人物审核
+        :type politics: str
+        :param terrorism: 暴恐内容审核
+        :type terrorism: str
+        :param porn: 情色内容审核
+        :type porn: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class CategorySuggestions:
         政治人物审核
 
         :param politics: The politics of this CategorySuggestions.
-        :type: str
+        :type politics: str
         """
         self._politics = politics
 
@@ -90,7 +99,7 @@ class CategorySuggestions:
         暴恐内容审核
 
         :param terrorism: The terrorism of this CategorySuggestions.
-        :type: str
+        :type terrorism: str
         """
         self._terrorism = terrorism
 
@@ -112,7 +121,7 @@ class CategorySuggestions:
         情色内容审核
 
         :param porn: The porn of this CategorySuggestions.
-        :type: str
+        :type porn: str
         """
         self._porn = porn
 

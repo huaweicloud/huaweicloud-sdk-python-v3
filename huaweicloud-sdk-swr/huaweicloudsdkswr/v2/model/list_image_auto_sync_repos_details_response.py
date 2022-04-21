@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListImageAutoSyncReposDetailsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListImageAutoSyncReposDetailsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListImageAutoSyncReposDetailsResponse - a model defined in huaweicloud sdk"""
+        """ListImageAutoSyncReposDetailsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param body: 镜像自动同步规则
+        :type body: list[:class:`huaweicloudsdkswr.v2.SyncRepo`]
+        """
         
         super(ListImageAutoSyncReposDetailsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListImageAutoSyncReposDetailsResponse(SdkResponse):
         镜像自动同步规则
 
         :return: The body of this ListImageAutoSyncReposDetailsResponse.
-        :rtype: list[SyncRepo]
+        :rtype: list[:class:`huaweicloudsdkswr.v2.SyncRepo`]
         """
         return self._body
 
@@ -58,7 +63,7 @@ class ListImageAutoSyncReposDetailsResponse(SdkResponse):
         镜像自动同步规则
 
         :param body: The body of this ListImageAutoSyncReposDetailsResponse.
-        :type: list[SyncRepo]
+        :type body: list[:class:`huaweicloudsdkswr.v2.SyncRepo`]
         """
         self._body = body
 

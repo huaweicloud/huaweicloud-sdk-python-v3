@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Strategy:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Strategy:
     }
 
     def __init__(self, trigger=None, event_valid_time=None):
-        """Strategy - a model defined in huaweicloud sdk"""
+        """Strategy
+
+        The model defined in huaweicloud sdk
+
+        :param trigger: **参数说明**：规则条件触发的判断策略，默认为pulse。 **取值范围**： - pulse：设备上报的数据满足条件则触发，不判断上一次上报的数据。 - reverse：设备上一次上报的数据不满足条件，本次上报的数据满足条件则触发。
+        :type trigger: str
+        :param event_valid_time: **参数说明**：设备数据的有效时间，单位为秒，设备数据的产生时间以上报数据中的eventTime为基准。
+        :type event_valid_time: int
+        """
         
         
 
@@ -63,7 +70,7 @@ class Strategy:
         **参数说明**：规则条件触发的判断策略，默认为pulse。 **取值范围**： - pulse：设备上报的数据满足条件则触发，不判断上一次上报的数据。 - reverse：设备上一次上报的数据不满足条件，本次上报的数据满足条件则触发。
 
         :param trigger: The trigger of this Strategy.
-        :type: str
+        :type trigger: str
         """
         self._trigger = trigger
 
@@ -85,7 +92,7 @@ class Strategy:
         **参数说明**：设备数据的有效时间，单位为秒，设备数据的产生时间以上报数据中的eventTime为基准。
 
         :param event_valid_time: The event_valid_time of this Strategy.
-        :type: int
+        :type event_valid_time: int
         """
         self._event_valid_time = event_valid_time
 

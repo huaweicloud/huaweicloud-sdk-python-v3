@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDeploymentsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ListDeploymentsRequest:
     }
 
     def __init__(self, ief_instance_id=None, limit=None, offset=None, sort=None, name=None, node_id=None, group_id=None):
-        """ListDeploymentsRequest - a model defined in huaweicloud sdk"""
+        """ListDeploymentsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param ief_instance_id: 铂金版实例ID，专业版实例为空值
+        :type ief_instance_id: str
+        :param limit: 每页显示的条目数量, 最大 100，默认值 10
+        :type limit: int
+        :param offset: 查询的起始位置, 默认值 0
+        :type offset: int
+        :param sort: 查询结果排序，如按照创建时间降序排序为created_at:desc，升序排序为created_at:asc
+        :type sort: str
+        :param name: deployment 名称(支持模糊匹配)
+        :type name: str
+        :param node_id: 节点ID，查询部署在该节点下的应用列表，和group_id不可同时请求
+        :type node_id: str
+        :param group_id: 节点组ID，查询部署在该节点组的应用列表，和node_id不可同时请求
+        :type group_id: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class ListDeploymentsRequest:
         铂金版实例ID，专业版实例为空值
 
         :param ief_instance_id: The ief_instance_id of this ListDeploymentsRequest.
-        :type: str
+        :type ief_instance_id: str
         """
         self._ief_instance_id = ief_instance_id
 
@@ -110,7 +127,7 @@ class ListDeploymentsRequest:
         每页显示的条目数量, 最大 100，默认值 10
 
         :param limit: The limit of this ListDeploymentsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -132,7 +149,7 @@ class ListDeploymentsRequest:
         查询的起始位置, 默认值 0
 
         :param offset: The offset of this ListDeploymentsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -154,7 +171,7 @@ class ListDeploymentsRequest:
         查询结果排序，如按照创建时间降序排序为created_at:desc，升序排序为created_at:asc
 
         :param sort: The sort of this ListDeploymentsRequest.
-        :type: str
+        :type sort: str
         """
         self._sort = sort
 
@@ -176,7 +193,7 @@ class ListDeploymentsRequest:
         deployment 名称(支持模糊匹配)
 
         :param name: The name of this ListDeploymentsRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -198,7 +215,7 @@ class ListDeploymentsRequest:
         节点ID，查询部署在该节点下的应用列表，和group_id不可同时请求
 
         :param node_id: The node_id of this ListDeploymentsRequest.
-        :type: str
+        :type node_id: str
         """
         self._node_id = node_id
 
@@ -220,7 +237,7 @@ class ListDeploymentsRequest:
         节点组ID，查询部署在该节点组的应用列表，和node_id不可同时请求
 
         :param group_id: The group_id of this ListDeploymentsRequest.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 

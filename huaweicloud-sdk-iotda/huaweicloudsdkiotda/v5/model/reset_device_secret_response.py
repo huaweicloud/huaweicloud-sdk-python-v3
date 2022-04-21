@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResetDeviceSecretResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ResetDeviceSecretResponse(SdkResponse):
     }
 
     def __init__(self, device_id=None, secret=None):
-        """ResetDeviceSecretResponse - a model defined in huaweicloud sdk"""
+        """ResetDeviceSecretResponse
+
+        The model defined in huaweicloud sdk
+
+        :param device_id: 设备ID，用于唯一标识一个设备。在注册设备时直接指定，或者由物联网平台分配获得。由物联网平台分配时，生成规则为\&quot;product_id\&quot; + \&quot;_\&quot; + \&quot;node_id\&quot;拼接而成。
+        :type device_id: str
+        :param secret: 设备密钥。
+        :type secret: str
+        """
         
         super(ResetDeviceSecretResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ResetDeviceSecretResponse(SdkResponse):
         设备ID，用于唯一标识一个设备。在注册设备时直接指定，或者由物联网平台分配获得。由物联网平台分配时，生成规则为\"product_id\" + \"_\" + \"node_id\"拼接而成。
 
         :param device_id: The device_id of this ResetDeviceSecretResponse.
-        :type: str
+        :type device_id: str
         """
         self._device_id = device_id
 
@@ -85,7 +92,7 @@ class ResetDeviceSecretResponse(SdkResponse):
         设备密钥。
 
         :param secret: The secret of this ResetDeviceSecretResponse.
-        :type: str
+        :type secret: str
         """
         self._secret = secret
 

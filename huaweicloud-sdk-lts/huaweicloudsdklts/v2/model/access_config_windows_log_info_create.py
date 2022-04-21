@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AccessConfigWindowsLogInfoCreate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class AccessConfigWindowsLogInfoCreate:
     }
 
     def __init__(self, categorys=None, time_offset=None, event_level=None):
-        """AccessConfigWindowsLogInfoCreate - a model defined in huaweicloud sdk"""
+        """AccessConfigWindowsLogInfoCreate
+
+        The model defined in huaweicloud sdk
+
+        :param categorys: 采集Windows事件日志类型。Application：应用系统，System：系统，Security：安全，Setup：启动
+        :type categorys: list[str]
+        :param time_offset: 
+        :type time_offset: :class:`huaweicloudsdklts.v2.AccessConfigTimeOffsetCreate`
+        :param event_level: 事件等级。information：info，warning：告警，error：错误，critical：关键，verbose：冗长
+        :type event_level: list[str]
+        """
         
         
 
@@ -65,7 +74,7 @@ class AccessConfigWindowsLogInfoCreate:
         采集Windows事件日志类型。Application：应用系统，System：系统，Security：安全，Setup：启动
 
         :param categorys: The categorys of this AccessConfigWindowsLogInfoCreate.
-        :type: list[str]
+        :type categorys: list[str]
         """
         self._categorys = categorys
 
@@ -75,7 +84,7 @@ class AccessConfigWindowsLogInfoCreate:
 
 
         :return: The time_offset of this AccessConfigWindowsLogInfoCreate.
-        :rtype: AccessConfigTimeOffsetCreate
+        :rtype: :class:`huaweicloudsdklts.v2.AccessConfigTimeOffsetCreate`
         """
         return self._time_offset
 
@@ -85,7 +94,7 @@ class AccessConfigWindowsLogInfoCreate:
 
 
         :param time_offset: The time_offset of this AccessConfigWindowsLogInfoCreate.
-        :type: AccessConfigTimeOffsetCreate
+        :type time_offset: :class:`huaweicloudsdklts.v2.AccessConfigTimeOffsetCreate`
         """
         self._time_offset = time_offset
 
@@ -107,7 +116,7 @@ class AccessConfigWindowsLogInfoCreate:
         事件等级。information：info，warning：告警，error：错误，critical：关键，verbose：冗长
 
         :param event_level: The event_level of this AccessConfigWindowsLogInfoCreate.
-        :type: list[str]
+        :type event_level: list[str]
         """
         self._event_level = event_level
 

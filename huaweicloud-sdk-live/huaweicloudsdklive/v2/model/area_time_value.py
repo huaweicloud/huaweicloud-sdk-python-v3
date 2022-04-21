@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AreaTimeValue:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AreaTimeValue:
     }
 
     def __init__(self, name=None, data=None):
-        """AreaTimeValue - a model defined in huaweicloud sdk"""
+        """AreaTimeValue
+
+        The model defined in huaweicloud sdk
+
+        :param name: 各个大区下的具体省份、区域、国家的名称。  具体取值请参考[国家名称缩写](vod_08_0172.xml)和[省份名称缩写](live_03_0043.xml)。 
+        :type name: str
+        :param data: 当前时间返回指定指标的值
+        :type data: list[:class:`huaweicloudsdklive.v2.TimeValue`]
+        """
         
         
 
@@ -61,7 +68,7 @@ class AreaTimeValue:
         各个大区下的具体省份、区域、国家的名称。  具体取值请参考[国家名称缩写](vod_08_0172.xml)和[省份名称缩写](live_03_0043.xml)。 
 
         :param name: The name of this AreaTimeValue.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -72,7 +79,7 @@ class AreaTimeValue:
         当前时间返回指定指标的值
 
         :return: The data of this AreaTimeValue.
-        :rtype: list[TimeValue]
+        :rtype: list[:class:`huaweicloudsdklive.v2.TimeValue`]
         """
         return self._data
 
@@ -83,7 +90,7 @@ class AreaTimeValue:
         当前时间返回指定指标的值
 
         :param data: The data of this AreaTimeValue.
-        :type: list[TimeValue]
+        :type data: list[:class:`huaweicloudsdklive.v2.TimeValue`]
         """
         self._data = data
 

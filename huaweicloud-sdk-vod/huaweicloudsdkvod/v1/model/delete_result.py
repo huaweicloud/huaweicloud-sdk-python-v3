@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteResult:
     }
 
     def __init__(self, asset_id=None, status=None):
-        """DeleteResult - a model defined in huaweicloud sdk"""
+        """DeleteResult
+
+        The model defined in huaweicloud sdk
+
+        :param asset_id: 媒资ID。
+        :type asset_id: str
+        :param status: 删除状态。  取值如下： - DELETED：已删除。 - FAILED：删除失败。
+        :type status: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class DeleteResult:
         媒资ID。
 
         :param asset_id: The asset_id of this DeleteResult.
-        :type: str
+        :type asset_id: str
         """
         self._asset_id = asset_id
 
@@ -85,7 +92,7 @@ class DeleteResult:
         删除状态。  取值如下： - DELETED：已删除。 - FAILED：删除失败。
 
         :param status: The status of this DeleteResult.
-        :type: str
+        :type status: str
         """
         self._status = status
 

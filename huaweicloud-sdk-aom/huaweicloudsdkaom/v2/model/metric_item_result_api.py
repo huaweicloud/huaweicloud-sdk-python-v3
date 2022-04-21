@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MetricItemResultAPI:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class MetricItemResultAPI:
     }
 
     def __init__(self, dimensions=None, dimensionvaluehash=None, metric_name=None, namespace=None, unit=None):
-        """MetricItemResultAPI - a model defined in huaweicloud sdk"""
+        """MetricItemResultAPI
+
+        The model defined in huaweicloud sdk
+
+        :param dimensions: 指标维度列表。
+        :type dimensions: list[:class:`huaweicloudsdkaom.v2.Dimension`]
+        :param dimensionvaluehash: 指标哈希值。
+        :type dimensionvaluehash: str
+        :param metric_name: 指标名称。
+        :type metric_name: str
+        :param namespace: 命名空间。
+        :type namespace: str
+        :param unit: 指标单位。
+        :type unit: str
+        """
         
         
 
@@ -67,7 +80,7 @@ class MetricItemResultAPI:
         指标维度列表。
 
         :return: The dimensions of this MetricItemResultAPI.
-        :rtype: list[Dimension]
+        :rtype: list[:class:`huaweicloudsdkaom.v2.Dimension`]
         """
         return self._dimensions
 
@@ -78,7 +91,7 @@ class MetricItemResultAPI:
         指标维度列表。
 
         :param dimensions: The dimensions of this MetricItemResultAPI.
-        :type: list[Dimension]
+        :type dimensions: list[:class:`huaweicloudsdkaom.v2.Dimension`]
         """
         self._dimensions = dimensions
 
@@ -100,7 +113,7 @@ class MetricItemResultAPI:
         指标哈希值。
 
         :param dimensionvaluehash: The dimensionvaluehash of this MetricItemResultAPI.
-        :type: str
+        :type dimensionvaluehash: str
         """
         self._dimensionvaluehash = dimensionvaluehash
 
@@ -122,7 +135,7 @@ class MetricItemResultAPI:
         指标名称。
 
         :param metric_name: The metric_name of this MetricItemResultAPI.
-        :type: str
+        :type metric_name: str
         """
         self._metric_name = metric_name
 
@@ -144,7 +157,7 @@ class MetricItemResultAPI:
         命名空间。
 
         :param namespace: The namespace of this MetricItemResultAPI.
-        :type: str
+        :type namespace: str
         """
         self._namespace = namespace
 
@@ -166,7 +179,7 @@ class MetricItemResultAPI:
         指标单位。
 
         :param unit: The unit of this MetricItemResultAPI.
-        :type: str
+        :type unit: str
         """
         self._unit = unit
 

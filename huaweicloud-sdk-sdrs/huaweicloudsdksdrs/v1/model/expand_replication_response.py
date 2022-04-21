@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExpandReplicationResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ExpandReplicationResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """ExpandReplicationResponse - a model defined in huaweicloud sdk"""
+        """ExpandReplicationResponse
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 成功返回jobId信息
+        :type job_id: str
+        """
         
         super(ExpandReplicationResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class ExpandReplicationResponse(SdkResponse):
         成功返回jobId信息
 
         :param job_id: The job_id of this ExpandReplicationResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 

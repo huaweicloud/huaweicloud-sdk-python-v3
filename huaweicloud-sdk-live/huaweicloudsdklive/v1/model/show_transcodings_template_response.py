@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowTranscodingsTemplateResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowTranscodingsTemplateResponse(SdkResponse):
     }
 
     def __init__(self, total=None, domain=None, templates=None):
-        """ShowTranscodingsTemplateResponse - a model defined in huaweicloud sdk"""
+        """ShowTranscodingsTemplateResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 查询结果的总元素数量
+        :type total: int
+        :param domain: 播放域名
+        :type domain: str
+        :param templates: 转码模板
+        :type templates: list[:class:`huaweicloudsdklive.v1.AppQualityInfo`]
+        """
         
         super(ShowTranscodingsTemplateResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ShowTranscodingsTemplateResponse(SdkResponse):
         查询结果的总元素数量
 
         :param total: The total of this ShowTranscodingsTemplateResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -90,7 +99,7 @@ class ShowTranscodingsTemplateResponse(SdkResponse):
         播放域名
 
         :param domain: The domain of this ShowTranscodingsTemplateResponse.
-        :type: str
+        :type domain: str
         """
         self._domain = domain
 
@@ -101,7 +110,7 @@ class ShowTranscodingsTemplateResponse(SdkResponse):
         转码模板
 
         :return: The templates of this ShowTranscodingsTemplateResponse.
-        :rtype: list[AppQualityInfo]
+        :rtype: list[:class:`huaweicloudsdklive.v1.AppQualityInfo`]
         """
         return self._templates
 
@@ -112,7 +121,7 @@ class ShowTranscodingsTemplateResponse(SdkResponse):
         转码模板
 
         :param templates: The templates of this ShowTranscodingsTemplateResponse.
-        :type: list[AppQualityInfo]
+        :type templates: list[:class:`huaweicloudsdklive.v1.AppQualityInfo`]
         """
         self._templates = templates
 

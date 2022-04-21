@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RecordParam:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RecordParam:
     }
 
     def __init__(self, record_rule_id=None):
-        """RecordParam - a model defined in huaweicloud sdk"""
+        """RecordParam
+
+        The model defined in huaweicloud sdk
+
+        :param record_rule_id: 录制规则id。
+        :type record_rule_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class RecordParam:
         录制规则id。
 
         :param record_rule_id: The record_rule_id of this RecordParam.
-        :type: str
+        :type record_rule_id: str
         """
         self._record_rule_id = record_rule_id
 

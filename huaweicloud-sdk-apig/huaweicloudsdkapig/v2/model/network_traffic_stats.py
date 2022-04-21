@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NetworkTrafficStats:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class NetworkTrafficStats:
     }
 
     def __init__(self, output_throughput=None, input_throughput=None):
-        """NetworkTrafficStats - a model defined in huaweicloud sdk"""
+        """NetworkTrafficStats
+
+        The model defined in huaweicloud sdk
+
+        :param output_throughput: 下行吞吐量（byte）
+        :type output_throughput: int
+        :param input_throughput: 上行吞吐量（byte）
+        :type input_throughput: int
+        """
         
         
 
@@ -63,7 +70,7 @@ class NetworkTrafficStats:
         下行吞吐量（byte）
 
         :param output_throughput: The output_throughput of this NetworkTrafficStats.
-        :type: int
+        :type output_throughput: int
         """
         self._output_throughput = output_throughput
 
@@ -85,7 +92,7 @@ class NetworkTrafficStats:
         上行吞吐量（byte）
 
         :param input_throughput: The input_throughput of this NetworkTrafficStats.
-        :type: int
+        :type input_throughput: int
         """
         self._input_throughput = input_throughput
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTranscodeDetailRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListTranscodeDetailRequest:
     }
 
     def __init__(self, task_id=None):
-        """ListTranscodeDetailRequest - a model defined in huaweicloud sdk"""
+        """ListTranscodeDetailRequest
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 转码服务接受任务后产生的任务ID。一次最多10个 
+        :type task_id: list[str]
+        """
         
         
 
@@ -58,7 +63,7 @@ class ListTranscodeDetailRequest:
         转码服务接受任务后产生的任务ID。一次最多10个 
 
         :param task_id: The task_id of this ListTranscodeDetailRequest.
-        :type: list[str]
+        :type task_id: list[str]
         """
         self._task_id = task_id
 

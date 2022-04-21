@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowProjectDetailsAndStatusRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowProjectDetailsAndStatusRequest:
     }
 
     def __init__(self, project_id=None):
-        """ShowProjectDetailsAndStatusRequest - a model defined in huaweicloud sdk"""
+        """ShowProjectDetailsAndStatusRequest
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: 待查询的项目ID，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
+        :type project_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowProjectDetailsAndStatusRequest:
         待查询的项目ID，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param project_id: The project_id of this ShowProjectDetailsAndStatusRequest.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 

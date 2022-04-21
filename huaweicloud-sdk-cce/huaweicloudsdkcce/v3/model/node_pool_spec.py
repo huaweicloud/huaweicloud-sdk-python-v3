@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NodePoolSpec:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class NodePoolSpec:
     }
 
     def __init__(self, type=None, node_template=None, initial_node_count=None, autoscaling=None, node_management=None, pod_security_groups=None):
-        """NodePoolSpec - a model defined in huaweicloud sdk"""
+        """NodePoolSpec
+
+        The model defined in huaweicloud sdk
+
+        :param type: 节点池类型。不填写时默认为vm。  - vm：弹性云服务器 - ElasticBMS：C6型弹性裸金属通用计算增强型云服务器，规格示例：c6.22xlarge.2.physical 
+        :type type: str
+        :param node_template: 
+        :type node_template: :class:`huaweicloudsdkcce.v3.NodeSpec`
+        :param initial_node_count: 节点池初始化节点个数。查询时为节点池目标节点数量。
+        :type initial_node_count: int
+        :param autoscaling: 
+        :type autoscaling: :class:`huaweicloudsdkcce.v3.NodePoolNodeAutoscaling`
+        :param node_management: 
+        :type node_management: :class:`huaweicloudsdkcce.v3.NodeManagement`
+        :param pod_security_groups: 1.21版本集群节点池支持绑定安全组，最多五个。
+        :type pod_security_groups: list[:class:`huaweicloudsdkcce.v3.SecurityID`]
+        """
         
         
 
@@ -82,7 +97,7 @@ class NodePoolSpec:
         节点池类型。不填写时默认为vm。  - vm：弹性云服务器 - ElasticBMS：C6型弹性裸金属通用计算增强型云服务器，规格示例：c6.22xlarge.2.physical 
 
         :param type: The type of this NodePoolSpec.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -92,7 +107,7 @@ class NodePoolSpec:
 
 
         :return: The node_template of this NodePoolSpec.
-        :rtype: NodeSpec
+        :rtype: :class:`huaweicloudsdkcce.v3.NodeSpec`
         """
         return self._node_template
 
@@ -102,7 +117,7 @@ class NodePoolSpec:
 
 
         :param node_template: The node_template of this NodePoolSpec.
-        :type: NodeSpec
+        :type node_template: :class:`huaweicloudsdkcce.v3.NodeSpec`
         """
         self._node_template = node_template
 
@@ -124,7 +139,7 @@ class NodePoolSpec:
         节点池初始化节点个数。查询时为节点池目标节点数量。
 
         :param initial_node_count: The initial_node_count of this NodePoolSpec.
-        :type: int
+        :type initial_node_count: int
         """
         self._initial_node_count = initial_node_count
 
@@ -134,7 +149,7 @@ class NodePoolSpec:
 
 
         :return: The autoscaling of this NodePoolSpec.
-        :rtype: NodePoolNodeAutoscaling
+        :rtype: :class:`huaweicloudsdkcce.v3.NodePoolNodeAutoscaling`
         """
         return self._autoscaling
 
@@ -144,7 +159,7 @@ class NodePoolSpec:
 
 
         :param autoscaling: The autoscaling of this NodePoolSpec.
-        :type: NodePoolNodeAutoscaling
+        :type autoscaling: :class:`huaweicloudsdkcce.v3.NodePoolNodeAutoscaling`
         """
         self._autoscaling = autoscaling
 
@@ -154,7 +169,7 @@ class NodePoolSpec:
 
 
         :return: The node_management of this NodePoolSpec.
-        :rtype: NodeManagement
+        :rtype: :class:`huaweicloudsdkcce.v3.NodeManagement`
         """
         return self._node_management
 
@@ -164,7 +179,7 @@ class NodePoolSpec:
 
 
         :param node_management: The node_management of this NodePoolSpec.
-        :type: NodeManagement
+        :type node_management: :class:`huaweicloudsdkcce.v3.NodeManagement`
         """
         self._node_management = node_management
 
@@ -175,7 +190,7 @@ class NodePoolSpec:
         1.21版本集群节点池支持绑定安全组，最多五个。
 
         :return: The pod_security_groups of this NodePoolSpec.
-        :rtype: list[SecurityID]
+        :rtype: list[:class:`huaweicloudsdkcce.v3.SecurityID`]
         """
         return self._pod_security_groups
 
@@ -186,7 +201,7 @@ class NodePoolSpec:
         1.21版本集群节点池支持绑定安全组，最多五个。
 
         :param pod_security_groups: The pod_security_groups of this NodePoolSpec.
-        :type: list[SecurityID]
+        :type pod_security_groups: list[:class:`huaweicloudsdkcce.v3.SecurityID`]
         """
         self._pod_security_groups = pod_security_groups
 

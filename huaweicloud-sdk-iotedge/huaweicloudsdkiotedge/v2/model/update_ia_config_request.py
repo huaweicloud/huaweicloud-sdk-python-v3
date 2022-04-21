@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateIaConfigRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UpdateIaConfigRequest:
     }
 
     def __init__(self, node_id=None, ia_id=None, config_id=None, body=None):
-        """UpdateIaConfigRequest - a model defined in huaweicloud sdk"""
+        """UpdateIaConfigRequest
+
+        The model defined in huaweicloud sdk
+
+        :param node_id: 边缘节点ID
+        :type node_id: str
+        :param ia_id: 边侧第三方应用的模块ID
+        :type ia_id: str
+        :param config_id: 配置ID
+        :type config_id: str
+        :param body: Body of the UpdateIaConfigRequest
+        :type body: :class:`huaweicloudsdkiotedge.v2.UpdateIaConfigRequestDTO`
+        """
         
         
 
@@ -70,7 +81,7 @@ class UpdateIaConfigRequest:
         边缘节点ID
 
         :param node_id: The node_id of this UpdateIaConfigRequest.
-        :type: str
+        :type node_id: str
         """
         self._node_id = node_id
 
@@ -92,7 +103,7 @@ class UpdateIaConfigRequest:
         边侧第三方应用的模块ID
 
         :param ia_id: The ia_id of this UpdateIaConfigRequest.
-        :type: str
+        :type ia_id: str
         """
         self._ia_id = ia_id
 
@@ -114,7 +125,7 @@ class UpdateIaConfigRequest:
         配置ID
 
         :param config_id: The config_id of this UpdateIaConfigRequest.
-        :type: str
+        :type config_id: str
         """
         self._config_id = config_id
 
@@ -124,7 +135,7 @@ class UpdateIaConfigRequest:
 
 
         :return: The body of this UpdateIaConfigRequest.
-        :rtype: UpdateIaConfigRequestDTO
+        :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateIaConfigRequestDTO`
         """
         return self._body
 
@@ -134,7 +145,7 @@ class UpdateIaConfigRequest:
 
 
         :param body: The body of this UpdateIaConfigRequest.
-        :type: UpdateIaConfigRequestDTO
+        :type body: :class:`huaweicloudsdkiotedge.v2.UpdateIaConfigRequestDTO`
         """
         self._body = body
 

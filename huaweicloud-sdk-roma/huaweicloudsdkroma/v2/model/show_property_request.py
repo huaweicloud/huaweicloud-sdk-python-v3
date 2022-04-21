@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowPropertyRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowPropertyRequest:
     }
 
     def __init__(self, instance_id=None, service_id=None, property_id=None):
-        """ShowPropertyRequest - a model defined in huaweicloud sdk"""
+        """ShowPropertyRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param service_id: 服务ID
+        :type service_id: str
+        :param property_id: 属性/请求属性/响应属性ID
+        :type property_id: int
+        """
         
         
 
@@ -65,7 +74,7 @@ class ShowPropertyRequest:
         实例ID
 
         :param instance_id: The instance_id of this ShowPropertyRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -87,7 +96,7 @@ class ShowPropertyRequest:
         服务ID
 
         :param service_id: The service_id of this ShowPropertyRequest.
-        :type: str
+        :type service_id: str
         """
         self._service_id = service_id
 
@@ -109,7 +118,7 @@ class ShowPropertyRequest:
         属性/请求属性/响应属性ID
 
         :param property_id: The property_id of this ShowPropertyRequest.
-        :type: int
+        :type property_id: int
         """
         self._property_id = property_id
 

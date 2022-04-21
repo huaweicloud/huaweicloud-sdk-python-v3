@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDatabaseReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateDatabaseReq:
     }
 
     def __init__(self, name=None, comment=None):
-        """UpdateDatabaseReq - a model defined in huaweicloud sdk"""
+        """UpdateDatabaseReq
+
+        The model defined in huaweicloud sdk
+
+        :param name: 数据库名称。
+        :type name: str
+        :param comment: 数据库备注。
+        :type comment: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class UpdateDatabaseReq:
         数据库名称。
 
         :param name: The name of this UpdateDatabaseReq.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -83,7 +90,7 @@ class UpdateDatabaseReq:
         数据库备注。
 
         :param comment: The comment of this UpdateDatabaseReq.
-        :type: str
+        :type comment: str
         """
         self._comment = comment
 

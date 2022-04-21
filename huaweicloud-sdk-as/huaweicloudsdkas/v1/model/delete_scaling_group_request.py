@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteScalingGroupRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteScalingGroupRequest:
     }
 
     def __init__(self, scaling_group_id=None, force_delete=None):
-        """DeleteScalingGroupRequest - a model defined in huaweicloud sdk"""
+        """DeleteScalingGroupRequest
+
+        The model defined in huaweicloud sdk
+
+        :param scaling_group_id: 伸缩组ID。
+        :type scaling_group_id: str
+        :param force_delete: 是否强制删除伸缩组。默认为no；可选值为yes或no。
+        :type force_delete: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class DeleteScalingGroupRequest:
         伸缩组ID。
 
         :param scaling_group_id: The scaling_group_id of this DeleteScalingGroupRequest.
-        :type: str
+        :type scaling_group_id: str
         """
         self._scaling_group_id = scaling_group_id
 
@@ -84,7 +91,7 @@ class DeleteScalingGroupRequest:
         是否强制删除伸缩组。默认为no；可选值为yes或no。
 
         :param force_delete: The force_delete of this DeleteScalingGroupRequest.
-        :type: str
+        :type force_delete: str
         """
         self._force_delete = force_delete
 

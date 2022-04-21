@@ -51,22 +51,18 @@ class CloudRTCClient(Client):
     def create_app(self, request):
         """创建应用
 
-        调用此接口创建应用。 
+        调用此接口创建应用。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateAppRequest request
-        :return: CreateAppResponse
+        :param request: Request instance for CreateApp
+        :type request: :class:`huaweicloudsdkcloudrtc.v2.CreateAppRequest`
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.CreateAppResponse`
         """
         return self.create_app_with_http_info(request)
 
     def create_app_with_http_info(self, request):
-        """创建应用
-
-        调用此接口创建应用。 
-
-        :param CreateAppRequest request
-        :return: CreateAppResponse
-        """
-
         all_params = ['content_type', 'create_app_request_body', 'authorization', 'x_sdk_date', 'x_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -118,26 +114,25 @@ class CloudRTCClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_individual_stream_job(self, request):
         """启动单流任务
 
-        调用此接口接口启动单流任务。  API触发单流录制流名规则：{jobtype}\\_{jobid}\\_{roomid}\\_{userid}  jobtype取值为's'代表单流录制。 
+        调用此接口接口启动单流任务。
+        
+        API触发单流录制流名规则：{jobtype}\\_{jobid}\\_{roomid}\\_{userid}
+        
+        jobtype取值为&#39;s&#39;代表单流录制。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateIndividualStreamJobRequest request
-        :return: CreateIndividualStreamJobResponse
+        :param request: Request instance for CreateIndividualStreamJob
+        :type request: :class:`huaweicloudsdkcloudrtc.v2.CreateIndividualStreamJobRequest`
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.CreateIndividualStreamJobResponse`
         """
         return self.create_individual_stream_job_with_http_info(request)
 
     def create_individual_stream_job_with_http_info(self, request):
-        """启动单流任务
-
-        调用此接口接口启动单流任务。  API触发单流录制流名规则：{jobtype}\\_{jobid}\\_{roomid}\\_{userid}  jobtype取值为's'代表单流录制。 
-
-        :param CreateIndividualStreamJobRequest request
-        :return: CreateIndividualStreamJobResponse
-        """
-
         all_params = ['content_type', 'app_id', 'create_individual_stream_job_request_body', 'authorization', 'x_sdk_date', 'x_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -191,26 +186,37 @@ class CloudRTCClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_mix_job(self, request):
         """启动合流任务
 
-        调用此接口创建合流转码任务。  支持纯音频录制和音视频录制：  - 纯音频录制    encode_template填audio_only，音频合流会动态选择最大三方的声音。    layout_template、layout_panes以及其他视频相关参数都不填，填就忽略。  - 音视频录制（包括共享桌面）    encode_template非audio_only，layout_template、layout_panes必须非空。    音频合流会动态选择最大三方的声音。    API触发合流录制流名规则：{jobtype}\\_{jobid}\\_{roomid}，其中jobtype取值为'm'代表合流录制。 
+        调用此接口创建合流转码任务。
+        
+        支持纯音频录制和音视频录制：
+        
+        - 纯音频录制
+        
+          encode_template填audio_only，音频合流会动态选择最大三方的声音。
+        
+          layout_template、layout_panes以及其他视频相关参数都不填，填就忽略。
+        
+        - 音视频录制（包括共享桌面）
+        
+          encode_template非audio_only，layout_template、layout_panes必须非空。
+        
+          音频合流会动态选择最大三方的声音。
+        
+          API触发合流录制流名规则：{jobtype}\\_{jobid}\\_{roomid}，其中jobtype取值为&#39;m&#39;代表合流录制。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateMixJobRequest request
-        :return: CreateMixJobResponse
+        :param request: Request instance for CreateMixJob
+        :type request: :class:`huaweicloudsdkcloudrtc.v2.CreateMixJobRequest`
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.CreateMixJobResponse`
         """
         return self.create_mix_job_with_http_info(request)
 
     def create_mix_job_with_http_info(self, request):
-        """启动合流任务
-
-        调用此接口创建合流转码任务。  支持纯音频录制和音视频录制：  - 纯音频录制    encode_template填audio_only，音频合流会动态选择最大三方的声音。    layout_template、layout_panes以及其他视频相关参数都不填，填就忽略。  - 音视频录制（包括共享桌面）    encode_template非audio_only，layout_template、layout_panes必须非空。    音频合流会动态选择最大三方的声音。    API触发合流录制流名规则：{jobtype}\\_{jobid}\\_{roomid}，其中jobtype取值为'm'代表合流录制。 
-
-        :param CreateMixJobRequest request
-        :return: CreateMixJobResponse
-        """
-
         all_params = ['content_type', 'app_id', 'create_mix_job_request_body', 'authorization', 'x_sdk_date', 'x_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -264,26 +270,24 @@ class CloudRTCClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_record_rule(self, request):
         """创建或更新录制规则
 
-        调用此接口创建或更新录制规则。  - 若当前app在请求的location中无录制规则，则会创建新的录制规则 - 若当前app在请求的location中已有录制规则，则会更新原来的录制规则 
+        调用此接口创建或更新录制规则。
+        
+        - 若当前app在请求的location中无录制规则，则会创建新的录制规则
+        - 若当前app在请求的location中已有录制规则，则会更新原来的录制规则
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateRecordRuleRequest request
-        :return: CreateRecordRuleResponse
+        :param request: Request instance for CreateRecordRule
+        :type request: :class:`huaweicloudsdkcloudrtc.v2.CreateRecordRuleRequest`
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.CreateRecordRuleResponse`
         """
         return self.create_record_rule_with_http_info(request)
 
     def create_record_rule_with_http_info(self, request):
-        """创建或更新录制规则
-
-        调用此接口创建或更新录制规则。  - 若当前app在请求的location中无录制规则，则会创建新的录制规则 - 若当前app在请求的location中已有录制规则，则会更新原来的录制规则 
-
-        :param CreateRecordRuleRequest request
-        :return: CreateRecordRuleResponse
-        """
-
         all_params = ['content_type', 'app_id', 'create_record_rule_request_body', 'authorization', 'x_sdk_date', 'x_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -337,26 +341,21 @@ class CloudRTCClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_app(self, request):
         """删除应用
 
-        调用此接口删除单个应用。 
+        调用此接口删除单个应用。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteAppRequest request
-        :return: DeleteAppResponse
+        :param request: Request instance for DeleteApp
+        :type request: :class:`huaweicloudsdkcloudrtc.v2.DeleteAppRequest`
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.DeleteAppResponse`
         """
         return self.delete_app_with_http_info(request)
 
     def delete_app_with_http_info(self, request):
-        """删除应用
-
-        调用此接口删除单个应用。 
-
-        :param DeleteAppRequest request
-        :return: DeleteAppResponse
-        """
-
         all_params = ['content_type', 'app_id', 'authorization', 'x_sdk_date', 'x_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -408,26 +407,21 @@ class CloudRTCClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_record_rule(self, request):
         """删除录制规则
 
-        调用此接口删除录制规则，对于正在使用的录制规则，不允许删除。 
+        调用此接口删除录制规则，对于正在使用的录制规则，不允许删除。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteRecordRuleRequest request
-        :return: DeleteRecordRuleResponse
+        :param request: Request instance for DeleteRecordRule
+        :type request: :class:`huaweicloudsdkcloudrtc.v2.DeleteRecordRuleRequest`
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.DeleteRecordRuleResponse`
         """
         return self.delete_record_rule_with_http_info(request)
 
     def delete_record_rule_with_http_info(self, request):
-        """删除录制规则
-
-        调用此接口删除录制规则，对于正在使用的录制规则，不允许删除。 
-
-        :param DeleteRecordRuleRequest request
-        :return: DeleteRecordRuleResponse
-        """
-
         all_params = ['content_type', 'app_id', 'rule_id', 'authorization', 'x_sdk_date', 'x_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -481,26 +475,21 @@ class CloudRTCClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_apps(self, request):
         """查询应用列表
 
-        调用此接口查询应用列表。 
+        调用此接口查询应用列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListAppsRequest request
-        :return: ListAppsResponse
+        :param request: Request instance for ListApps
+        :type request: :class:`huaweicloudsdkcloudrtc.v2.ListAppsRequest`
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.ListAppsResponse`
         """
         return self.list_apps_with_http_info(request)
 
     def list_apps_with_http_info(self, request):
-        """查询应用列表
-
-        调用此接口查询应用列表。 
-
-        :param ListAppsRequest request
-        :return: ListAppsResponse
-        """
-
         all_params = ['content_type', 'authorization', 'x_sdk_date', 'x_project_id', 'state', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -556,26 +545,21 @@ class CloudRTCClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_record_rules(self, request):
         """查询录制规则列表
 
-        调用此接口查询录制规则列表。 
+        调用此接口查询录制规则列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListRecordRulesRequest request
-        :return: ListRecordRulesResponse
+        :param request: Request instance for ListRecordRules
+        :type request: :class:`huaweicloudsdkcloudrtc.v2.ListRecordRulesRequest`
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.ListRecordRulesResponse`
         """
         return self.list_record_rules_with_http_info(request)
 
     def list_record_rules_with_http_info(self, request):
-        """查询录制规则列表
-
-        调用此接口查询录制规则列表。 
-
-        :param ListRecordRulesRequest request
-        :return: ListRecordRulesResponse
-        """
-
         all_params = ['content_type', 'app_id', 'authorization', 'x_sdk_date', 'x_project_id', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -631,26 +615,21 @@ class CloudRTCClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_app(self, request):
         """查询单个应用
 
-        调用此接口查询单个应用详情。 
+        调用此接口查询单个应用详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowAppRequest request
-        :return: ShowAppResponse
+        :param request: Request instance for ShowApp
+        :type request: :class:`huaweicloudsdkcloudrtc.v2.ShowAppRequest`
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.ShowAppResponse`
         """
         return self.show_app_with_http_info(request)
 
     def show_app_with_http_info(self, request):
-        """查询单个应用
-
-        调用此接口查询单个应用详情。 
-
-        :param ShowAppRequest request
-        :return: ShowAppResponse
-        """
-
         all_params = ['content_type', 'app_id', 'authorization', 'x_sdk_date', 'x_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -702,26 +681,21 @@ class CloudRTCClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_auto_record(self, request):
         """查询自动录制配置
 
-        调用此接口查询自动录制配置 
+        调用此接口查询自动录制配置
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowAutoRecordRequest request
-        :return: ShowAutoRecordResponse
+        :param request: Request instance for ShowAutoRecord
+        :type request: :class:`huaweicloudsdkcloudrtc.v2.ShowAutoRecordRequest`
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.ShowAutoRecordResponse`
         """
         return self.show_auto_record_with_http_info(request)
 
     def show_auto_record_with_http_info(self, request):
-        """查询自动录制配置
-
-        调用此接口查询自动录制配置 
-
-        :param ShowAutoRecordRequest request
-        :return: ShowAutoRecordResponse
-        """
-
         all_params = ['content_type', 'app_id', 'authorization', 'x_sdk_date', 'x_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -773,26 +747,23 @@ class CloudRTCClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_individual_stream_job(self, request):
         """查询单流任务状态
 
-        调用此接口查询单流任务状态。  租户的OBS桶内的情况，暂不支持查询。 
+        调用此接口查询单流任务状态。
+        
+        租户的OBS桶内的情况，暂不支持查询。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowIndividualStreamJobRequest request
-        :return: ShowIndividualStreamJobResponse
+        :param request: Request instance for ShowIndividualStreamJob
+        :type request: :class:`huaweicloudsdkcloudrtc.v2.ShowIndividualStreamJobRequest`
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.ShowIndividualStreamJobResponse`
         """
         return self.show_individual_stream_job_with_http_info(request)
 
     def show_individual_stream_job_with_http_info(self, request):
-        """查询单流任务状态
-
-        调用此接口查询单流任务状态。  租户的OBS桶内的情况，暂不支持查询。 
-
-        :param ShowIndividualStreamJobRequest request
-        :return: ShowIndividualStreamJobResponse
-        """
-
         all_params = ['content_type', 'app_id', 'job_id', 'authorization', 'x_sdk_date', 'x_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -846,26 +817,21 @@ class CloudRTCClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_mix_job(self, request):
         """查询合流任务
 
-        调用此接口查询合流转码任务状态。 
+        调用此接口查询合流转码任务状态。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowMixJobRequest request
-        :return: ShowMixJobResponse
+        :param request: Request instance for ShowMixJob
+        :type request: :class:`huaweicloudsdkcloudrtc.v2.ShowMixJobRequest`
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.ShowMixJobResponse`
         """
         return self.show_mix_job_with_http_info(request)
 
     def show_mix_job_with_http_info(self, request):
-        """查询合流任务
-
-        调用此接口查询合流转码任务状态。 
-
-        :param ShowMixJobRequest request
-        :return: ShowMixJobResponse
-        """
-
         all_params = ['content_type', 'app_id', 'job_id', 'authorization', 'x_sdk_date', 'x_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -919,26 +885,21 @@ class CloudRTCClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_record_callback(self, request):
         """查询增值（录制）事件回调配置
 
-        调用此接口查询增值（录制）事件回调配置 
+        调用此接口查询增值（录制）事件回调配置
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowRecordCallbackRequest request
-        :return: ShowRecordCallbackResponse
+        :param request: Request instance for ShowRecordCallback
+        :type request: :class:`huaweicloudsdkcloudrtc.v2.ShowRecordCallbackRequest`
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.ShowRecordCallbackResponse`
         """
         return self.show_record_callback_with_http_info(request)
 
     def show_record_callback_with_http_info(self, request):
-        """查询增值（录制）事件回调配置
-
-        调用此接口查询增值（录制）事件回调配置 
-
-        :param ShowRecordCallbackRequest request
-        :return: ShowRecordCallbackResponse
-        """
-
         all_params = ['content_type', 'app_id', 'authorization', 'x_sdk_date', 'x_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -990,26 +951,21 @@ class CloudRTCClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_record_rule(self, request):
         """查询录制规则
 
-        调用此接口查询指定录制规则。 
+        调用此接口查询指定录制规则。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowRecordRuleRequest request
-        :return: ShowRecordRuleResponse
+        :param request: Request instance for ShowRecordRule
+        :type request: :class:`huaweicloudsdkcloudrtc.v2.ShowRecordRuleRequest`
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.ShowRecordRuleResponse`
         """
         return self.show_record_rule_with_http_info(request)
 
     def show_record_rule_with_http_info(self, request):
-        """查询录制规则
-
-        调用此接口查询指定录制规则。 
-
-        :param ShowRecordRuleRequest request
-        :return: ShowRecordRuleResponse
-        """
-
         all_params = ['content_type', 'app_id', 'rule_id', 'authorization', 'x_sdk_date', 'x_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1063,26 +1019,21 @@ class CloudRTCClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_url_auth(self, request):
         """查询访问控制参数
 
-        查询应用鉴权配置参数 
+        查询应用鉴权配置参数
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowUrlAuthRequest request
-        :return: ShowUrlAuthResponse
+        :param request: Request instance for ShowUrlAuth
+        :type request: :class:`huaweicloudsdkcloudrtc.v2.ShowUrlAuthRequest`
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.ShowUrlAuthResponse`
         """
         return self.show_url_auth_with_http_info(request)
 
     def show_url_auth_with_http_info(self, request):
-        """查询访问控制参数
-
-        查询应用鉴权配置参数 
-
-        :param ShowUrlAuthRequest request
-        :return: ShowUrlAuthResponse
-        """
-
         all_params = ['content_type', 'app_id', 'authorization', 'x_sdk_date', 'x_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1134,26 +1085,21 @@ class CloudRTCClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def start_app(self, request):
         """启用应用
 
-        调用此接口启用单个应用。 
+        调用此接口启用单个应用。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param StartAppRequest request
-        :return: StartAppResponse
+        :param request: Request instance for StartApp
+        :type request: :class:`huaweicloudsdkcloudrtc.v2.StartAppRequest`
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.StartAppResponse`
         """
         return self.start_app_with_http_info(request)
 
     def start_app_with_http_info(self, request):
-        """启用应用
-
-        调用此接口启用单个应用。 
-
-        :param StartAppRequest request
-        :return: StartAppResponse
-        """
-
         all_params = ['content_type', 'app_id', 'authorization', 'x_sdk_date', 'x_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1205,26 +1151,23 @@ class CloudRTCClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def stop_app(self, request):
         """停用应用
 
-        调用此接口停用单个应用。  应用停用后，新房间无法新增和加入，已加入的房间可以继续使用。合流、录制功能等也不可用。 
+        调用此接口停用单个应用。
+        
+        应用停用后，新房间无法新增和加入，已加入的房间可以继续使用。合流、录制功能等也不可用。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param StopAppRequest request
-        :return: StopAppResponse
+        :param request: Request instance for StopApp
+        :type request: :class:`huaweicloudsdkcloudrtc.v2.StopAppRequest`
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.StopAppResponse`
         """
         return self.stop_app_with_http_info(request)
 
     def stop_app_with_http_info(self, request):
-        """停用应用
-
-        调用此接口停用单个应用。  应用停用后，新房间无法新增和加入，已加入的房间可以继续使用。合流、录制功能等也不可用。 
-
-        :param StopAppRequest request
-        :return: StopAppResponse
-        """
-
         all_params = ['content_type', 'app_id', 'authorization', 'x_sdk_date', 'x_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1276,26 +1219,21 @@ class CloudRTCClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def stop_individual_stream_job(self, request):
         """停止单流任务
 
-        调用此接口停止单流任务 
+        调用此接口停止单流任务
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param StopIndividualStreamJobRequest request
-        :return: StopIndividualStreamJobResponse
+        :param request: Request instance for StopIndividualStreamJob
+        :type request: :class:`huaweicloudsdkcloudrtc.v2.StopIndividualStreamJobRequest`
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.StopIndividualStreamJobResponse`
         """
         return self.stop_individual_stream_job_with_http_info(request)
 
     def stop_individual_stream_job_with_http_info(self, request):
-        """停止单流任务
-
-        调用此接口停止单流任务 
-
-        :param StopIndividualStreamJobRequest request
-        :return: StopIndividualStreamJobResponse
-        """
-
         all_params = ['content_type', 'app_id', 'job_id', 'authorization', 'x_sdk_date', 'x_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1349,26 +1287,21 @@ class CloudRTCClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def stop_mix_job(self, request):
         """停止合流任务
 
-        调用此接口停止已下发的合流转码任务。 
+        调用此接口停止已下发的合流转码任务。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param StopMixJobRequest request
-        :return: StopMixJobResponse
+        :param request: Request instance for StopMixJob
+        :type request: :class:`huaweicloudsdkcloudrtc.v2.StopMixJobRequest`
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.StopMixJobResponse`
         """
         return self.stop_mix_job_with_http_info(request)
 
     def stop_mix_job_with_http_info(self, request):
-        """停止合流任务
-
-        调用此接口停止已下发的合流转码任务。 
-
-        :param StopMixJobRequest request
-        :return: StopMixJobResponse
-        """
-
         all_params = ['content_type', 'app_id', 'job_id', 'authorization', 'x_sdk_date', 'x_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1422,26 +1355,21 @@ class CloudRTCClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_auto_record(self, request):
         """更新自动录制配置
 
-        更新自动录制配置，租户可以开启自动单流录制或者停用自动单流录制。 
+        更新自动录制配置，租户可以开启自动单流录制或者停用自动单流录制。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateAutoRecordRequest request
-        :return: UpdateAutoRecordResponse
+        :param request: Request instance for UpdateAutoRecord
+        :type request: :class:`huaweicloudsdkcloudrtc.v2.UpdateAutoRecordRequest`
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.UpdateAutoRecordResponse`
         """
         return self.update_auto_record_with_http_info(request)
 
     def update_auto_record_with_http_info(self, request):
-        """更新自动录制配置
-
-        更新自动录制配置，租户可以开启自动单流录制或者停用自动单流录制。 
-
-        :param UpdateAutoRecordRequest request
-        :return: UpdateAutoRecordResponse
-        """
-
         all_params = ['content_type', 'app_id', 'update_auto_record_request_body', 'authorization', 'x_sdk_date', 'x_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1495,26 +1423,21 @@ class CloudRTCClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_mix_job(self, request):
         """修改合流任务
 
-        调用此接口更新合流任务布局。 
+        调用此接口更新合流任务布局。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateMixJobRequest request
-        :return: UpdateMixJobResponse
+        :param request: Request instance for UpdateMixJob
+        :type request: :class:`huaweicloudsdkcloudrtc.v2.UpdateMixJobRequest`
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.UpdateMixJobResponse`
         """
         return self.update_mix_job_with_http_info(request)
 
     def update_mix_job_with_http_info(self, request):
-        """修改合流任务
-
-        调用此接口更新合流任务布局。 
-
-        :param UpdateMixJobRequest request
-        :return: UpdateMixJobResponse
-        """
-
         all_params = ['content_type', 'app_id', 'job_id', 'update_mix_job_request_body', 'authorization', 'x_sdk_date', 'x_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1570,26 +1493,25 @@ class CloudRTCClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_record_callback(self, request):
         """RTC增值（录制）事件回调配置
 
-        调用此接口配置增值（录制）事件上报回调。  当任务发生订阅了的事件时，通过该接口配置的回调地址通知。  回调格式参考/customer-record-notify-url定义。 
+        调用此接口配置增值（录制）事件上报回调。
+        
+        当任务发生订阅了的事件时，通过该接口配置的回调地址通知。
+        
+        回调格式参考/customer-record-notify-url定义。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateRecordCallbackRequest request
-        :return: UpdateRecordCallbackResponse
+        :param request: Request instance for UpdateRecordCallback
+        :type request: :class:`huaweicloudsdkcloudrtc.v2.UpdateRecordCallbackRequest`
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.UpdateRecordCallbackResponse`
         """
         return self.update_record_callback_with_http_info(request)
 
     def update_record_callback_with_http_info(self, request):
-        """RTC增值（录制）事件回调配置
-
-        调用此接口配置增值（录制）事件上报回调。  当任务发生订阅了的事件时，通过该接口配置的回调地址通知。  回调格式参考/customer-record-notify-url定义。 
-
-        :param UpdateRecordCallbackRequest request
-        :return: UpdateRecordCallbackResponse
-        """
-
         all_params = ['content_type', 'app_id', 'update_record_callback_request_body', 'authorization', 'x_sdk_date', 'x_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1643,26 +1565,21 @@ class CloudRTCClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_record_rule(self, request):
         """更新录制规则
 
-        调用此接口更新录制规则。 
+        调用此接口更新录制规则。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateRecordRuleRequest request
-        :return: UpdateRecordRuleResponse
+        :param request: Request instance for UpdateRecordRule
+        :type request: :class:`huaweicloudsdkcloudrtc.v2.UpdateRecordRuleRequest`
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.UpdateRecordRuleResponse`
         """
         return self.update_record_rule_with_http_info(request)
 
     def update_record_rule_with_http_info(self, request):
-        """更新录制规则
-
-        调用此接口更新录制规则。 
-
-        :param UpdateRecordRuleRequest request
-        :return: UpdateRecordRuleResponse
-        """
-
         all_params = ['content_type', 'app_id', 'rule_id', 'update_record_rule_request_body', 'authorization', 'x_sdk_date', 'x_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1718,26 +1635,21 @@ class CloudRTCClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_url_auth(self, request):
         """开关访问控制
 
-        调用此接口开启或关闭URL鉴权。 
+        调用此接口开启或关闭URL鉴权。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateUrlAuthRequest request
-        :return: UpdateUrlAuthResponse
+        :param request: Request instance for UpdateUrlAuth
+        :type request: :class:`huaweicloudsdkcloudrtc.v2.UpdateUrlAuthRequest`
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.UpdateUrlAuthResponse`
         """
         return self.update_url_auth_with_http_info(request)
 
     def update_url_auth_with_http_info(self, request):
-        """开关访问控制
-
-        调用此接口开启或关闭URL鉴权。 
-
-        :param UpdateUrlAuthRequest request
-        :return: UpdateUrlAuthResponse
-        """
-
         all_params = ['content_type', 'app_id', 'update_url_auth_request_body', 'authorization', 'x_sdk_date', 'x_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1790,7 +1702,6 @@ class CloudRTCClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

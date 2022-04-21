@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Flag:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class Flag:
     }
 
     def __init__(self, pci_3ds=None, pci_dss=None, cname=None, is_dual_az=None):
-        """Flag - a model defined in huaweicloud sdk"""
+        """Flag
+
+        The model defined in huaweicloud sdk
+
+        :param pci_3ds: true:通过pci_3ds标准认证,false:未通过pci_3ds标准认证
+        :type pci_3ds: str
+        :param pci_dss: true:通过pci_dss标准认证,false:未通过pci_dss标准认证
+        :type pci_dss: str
+        :param cname: old：代表域名使用的老的cname，new：代表域名使用新的cname
+        :type cname: str
+        :param is_dual_az: true：WAF支持多可用区容灾,false：WAF不支持多可用区容灾
+        :type is_dual_az: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class Flag:
         true:通过pci_3ds标准认证,false:未通过pci_3ds标准认证
 
         :param pci_3ds: The pci_3ds of this Flag.
-        :type: str
+        :type pci_3ds: str
         """
         self._pci_3ds = pci_3ds
 
@@ -95,7 +106,7 @@ class Flag:
         true:通过pci_dss标准认证,false:未通过pci_dss标准认证
 
         :param pci_dss: The pci_dss of this Flag.
-        :type: str
+        :type pci_dss: str
         """
         self._pci_dss = pci_dss
 
@@ -117,7 +128,7 @@ class Flag:
         old：代表域名使用的老的cname，new：代表域名使用新的cname
 
         :param cname: The cname of this Flag.
-        :type: str
+        :type cname: str
         """
         self._cname = cname
 
@@ -139,7 +150,7 @@ class Flag:
         true：WAF支持多可用区容灾,false：WAF不支持多可用区容灾
 
         :param is_dual_az: The is_dual_az of this Flag.
-        :type: str
+        :type is_dual_az: str
         """
         self._is_dual_az = is_dual_az
 

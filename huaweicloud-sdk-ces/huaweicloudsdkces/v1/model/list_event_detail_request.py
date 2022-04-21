@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListEventDetailRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class ListEventDetailRequest:
     }
 
     def __init__(self, event_name=None, event_type=None, event_source=None, event_level=None, event_user=None, event_state=None, _from=None, to=None, start=None, limit=None):
-        """ListEventDetailRequest - a model defined in huaweicloud sdk"""
+        """ListEventDetailRequest
+
+        The model defined in huaweicloud sdk
+
+        :param event_name: 事件名称。
+        :type event_name: str
+        :param event_type: 事件类型，值为EVENT.SYS或EVENT.CUSTOM，EVENT.SYS表示系统事件，EVENT.CUSTOM表示自定义事件。
+        :type event_type: str
+        :param event_source: 事件名称，值为系统产生的事件名称，或用户自定义上报的事件名称。
+        :type event_source: str
+        :param event_level: 事件的级别，值为Critical，Major，Minor，Info；Critical为紧急，Major为重要，Minor为次要，Info为提示。
+        :type event_level: str
+        :param event_user: 上报事件监控数据时用户的名称，也可为projectID。
+        :type event_user: str
+        :param event_state: 事件的状态，值为normal，warning，incident；normal为正常，warning为警告，incident为故障。
+        :type event_state: str
+        :param _from: 查询数据起始时间，UNIX时间戳，单位毫秒；例如：1605952700911。
+        :type _from: int
+        :param to: 查询数据截止时间UNIX时间戳，单位毫秒。from必须小于to，例如：1606557500911。
+        :type to: int
+        :param start: 分页起始值，类型为integer，默认值为0。
+        :type start: int
+        :param limit: 单次查询的条数限制，取值范围(0,100]，默认值为100，用于限制结果数据条数。
+        :type limit: int
+        """
         
         
 
@@ -101,7 +124,7 @@ class ListEventDetailRequest:
         事件名称。
 
         :param event_name: The event_name of this ListEventDetailRequest.
-        :type: str
+        :type event_name: str
         """
         self._event_name = event_name
 
@@ -123,7 +146,7 @@ class ListEventDetailRequest:
         事件类型，值为EVENT.SYS或EVENT.CUSTOM，EVENT.SYS表示系统事件，EVENT.CUSTOM表示自定义事件。
 
         :param event_type: The event_type of this ListEventDetailRequest.
-        :type: str
+        :type event_type: str
         """
         self._event_type = event_type
 
@@ -145,7 +168,7 @@ class ListEventDetailRequest:
         事件名称，值为系统产生的事件名称，或用户自定义上报的事件名称。
 
         :param event_source: The event_source of this ListEventDetailRequest.
-        :type: str
+        :type event_source: str
         """
         self._event_source = event_source
 
@@ -167,7 +190,7 @@ class ListEventDetailRequest:
         事件的级别，值为Critical，Major，Minor，Info；Critical为紧急，Major为重要，Minor为次要，Info为提示。
 
         :param event_level: The event_level of this ListEventDetailRequest.
-        :type: str
+        :type event_level: str
         """
         self._event_level = event_level
 
@@ -189,7 +212,7 @@ class ListEventDetailRequest:
         上报事件监控数据时用户的名称，也可为projectID。
 
         :param event_user: The event_user of this ListEventDetailRequest.
-        :type: str
+        :type event_user: str
         """
         self._event_user = event_user
 
@@ -211,7 +234,7 @@ class ListEventDetailRequest:
         事件的状态，值为normal，warning，incident；normal为正常，warning为警告，incident为故障。
 
         :param event_state: The event_state of this ListEventDetailRequest.
-        :type: str
+        :type event_state: str
         """
         self._event_state = event_state
 
@@ -233,7 +256,7 @@ class ListEventDetailRequest:
         查询数据起始时间，UNIX时间戳，单位毫秒；例如：1605952700911。
 
         :param _from: The _from of this ListEventDetailRequest.
-        :type: int
+        :type _from: int
         """
         self.__from = _from
 
@@ -255,7 +278,7 @@ class ListEventDetailRequest:
         查询数据截止时间UNIX时间戳，单位毫秒。from必须小于to，例如：1606557500911。
 
         :param to: The to of this ListEventDetailRequest.
-        :type: int
+        :type to: int
         """
         self._to = to
 
@@ -277,7 +300,7 @@ class ListEventDetailRequest:
         分页起始值，类型为integer，默认值为0。
 
         :param start: The start of this ListEventDetailRequest.
-        :type: int
+        :type start: int
         """
         self._start = start
 
@@ -299,7 +322,7 @@ class ListEventDetailRequest:
         单次查询的条数限制，取值范围(0,100]，默认值为100，用于限制结果数据条数。
 
         :param limit: The limit of this ListEventDetailRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

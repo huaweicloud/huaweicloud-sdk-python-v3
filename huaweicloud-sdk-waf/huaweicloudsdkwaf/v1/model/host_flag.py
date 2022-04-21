@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class HostFlag:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class HostFlag:
     }
 
     def __init__(self, pci_dss=None, pci_3ds=None, cname=None, is_dual_az=None, ipv6=None):
-        """HostFlag - a model defined in huaweicloud sdk"""
+        """HostFlag
+
+        The model defined in huaweicloud sdk
+
+        :param pci_dss: true/false
+        :type pci_dss: str
+        :param pci_3ds: true/false
+        :type pci_3ds: str
+        :param cname: old/new
+        :type cname: str
+        :param is_dual_az: true/false
+        :type is_dual_az: str
+        :param ipv6: true/false
+        :type ipv6: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class HostFlag:
         true/false
 
         :param pci_dss: The pci_dss of this HostFlag.
-        :type: str
+        :type pci_dss: str
         """
         self._pci_dss = pci_dss
 
@@ -100,7 +113,7 @@ class HostFlag:
         true/false
 
         :param pci_3ds: The pci_3ds of this HostFlag.
-        :type: str
+        :type pci_3ds: str
         """
         self._pci_3ds = pci_3ds
 
@@ -122,7 +135,7 @@ class HostFlag:
         old/new
 
         :param cname: The cname of this HostFlag.
-        :type: str
+        :type cname: str
         """
         self._cname = cname
 
@@ -144,7 +157,7 @@ class HostFlag:
         true/false
 
         :param is_dual_az: The is_dual_az of this HostFlag.
-        :type: str
+        :type is_dual_az: str
         """
         self._is_dual_az = is_dual_az
 
@@ -166,7 +179,7 @@ class HostFlag:
         true/false
 
         :param ipv6: The ipv6 of this HostFlag.
-        :type: str
+        :type ipv6: str
         """
         self._ipv6 = ipv6
 

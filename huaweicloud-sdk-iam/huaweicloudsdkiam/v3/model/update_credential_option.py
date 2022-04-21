@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateCredentialOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateCredentialOption:
     }
 
     def __init__(self, status=None, description=None):
-        """UpdateCredentialOption - a model defined in huaweicloud sdk"""
+        """UpdateCredentialOption
+
+        The model defined in huaweicloud sdk
+
+        :param status: 访问密钥状态。取值为：“active”（启用）或者 “inactive”（停用）。status与description至少填写一个。
+        :type status: str
+        :param description: 访问密钥描述信息。status与description至少填写一个。
+        :type description: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class UpdateCredentialOption:
         访问密钥状态。取值为：“active”（启用）或者 “inactive”（停用）。status与description至少填写一个。
 
         :param status: The status of this UpdateCredentialOption.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -85,7 +92,7 @@ class UpdateCredentialOption:
         访问密钥描述信息。status与description至少填写一个。
 
         :param description: The description of this UpdateCredentialOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchSetupSyncPolicyReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchSetupSyncPolicyReq:
     }
 
     def __init__(self, jobs=None):
-        """BatchSetupSyncPolicyReq - a model defined in huaweicloud sdk"""
+        """BatchSetupSyncPolicyReq
+
+        The model defined in huaweicloud sdk
+
+        :param jobs: 批量设置同步策略请求列表。
+        :type jobs: list[:class:`huaweicloudsdkdrs.v3.SyncPolicyReq`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class BatchSetupSyncPolicyReq:
         批量设置同步策略请求列表。
 
         :return: The jobs of this BatchSetupSyncPolicyReq.
-        :rtype: list[SyncPolicyReq]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.SyncPolicyReq`]
         """
         return self._jobs
 
@@ -57,7 +62,7 @@ class BatchSetupSyncPolicyReq:
         批量设置同步策略请求列表。
 
         :param jobs: The jobs of this BatchSetupSyncPolicyReq.
-        :type: list[SyncPolicyReq]
+        :type jobs: list[:class:`huaweicloudsdkdrs.v3.SyncPolicyReq`]
         """
         self._jobs = jobs
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTopStatisticsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListTopStatisticsRequest:
     }
 
     def __init__(self, domain=None, date=None):
-        """ListTopStatisticsRequest - a model defined in huaweicloud sdk"""
+        """ListTopStatisticsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param domain: 查询域名，暂只支持查询单个或者全部域名。  取值如下： - 单个加速域名，格式：example.test1.com。 - ALL：表示查询名下全部域名。
+        :type domain: str
+        :param date: 查询日期，格式为yyyymmdd - date必须为昨天或之前的日期。 - 最多只能查最近一个月内的数据。
+        :type date: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ListTopStatisticsRequest:
         查询域名，暂只支持查询单个或者全部域名。  取值如下： - 单个加速域名，格式：example.test1.com。 - ALL：表示查询名下全部域名。
 
         :param domain: The domain of this ListTopStatisticsRequest.
-        :type: str
+        :type domain: str
         """
         self._domain = domain
 
@@ -83,7 +90,7 @@ class ListTopStatisticsRequest:
         查询日期，格式为yyyymmdd - date必须为昨天或之前的日期。 - 最多只能查最近一个月内的数据。
 
         :param date: The date of this ListTopStatisticsRequest.
-        :type: str
+        :type date: str
         """
         self._date = date
 

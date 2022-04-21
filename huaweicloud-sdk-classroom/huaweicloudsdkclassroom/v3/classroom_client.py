@@ -52,21 +52,17 @@ class ClassroomClient(Client):
         """下发判题任务
 
         下发判题任务，根据回调地址、代码来源、源代码文本、语言类型、超时时长、输出类型，触发后台代码编译运行和判题
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ApplyJudgementRequest request
-        :return: ApplyJudgementResponse
+        :param request: Request instance for ApplyJudgement
+        :type request: :class:`huaweicloudsdkclassroom.v3.ApplyJudgementRequest`
+        :rtype: :class:`huaweicloudsdkclassroom.v3.ApplyJudgementResponse`
         """
         return self.apply_judgement_with_http_info(request)
 
     def apply_judgement_with_http_info(self, request):
-        """下发判题任务
-
-        下发判题任务，根据回调地址、代码来源、源代码文本、语言类型、超时时长、输出类型，触发后台代码编译运行和判题
-
-        :param ApplyJudgementRequest request
-        :return: ApplyJudgementResponse
-        """
-
         all_params = ['apply_judgement_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -110,26 +106,21 @@ class ClassroomClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_judgement_detail(self, request):
         """获取判题结果详情
 
         根据判题任务ID获取判题结果详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowJudgementDetailRequest request
-        :return: ShowJudgementDetailResponse
+        :param request: Request instance for ShowJudgementDetail
+        :type request: :class:`huaweicloudsdkclassroom.v3.ShowJudgementDetailRequest`
+        :rtype: :class:`huaweicloudsdkclassroom.v3.ShowJudgementDetailResponse`
         """
         return self.show_judgement_detail_with_http_info(request)
 
     def show_judgement_detail_with_http_info(self, request):
-        """获取判题结果详情
-
-        根据判题任务ID获取判题结果详情
-
-        :param ShowJudgementDetailRequest request
-        :return: ShowJudgementDetailResponse
-        """
-
         all_params = ['judgement_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -173,26 +164,21 @@ class ClassroomClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_judgement_file(self, request):
         """下载判题结果文件
 
         根据文件id或图片id下载输出结果文件
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowJudgementFileRequest request
-        :return: ShowJudgementFileResponse
+        :param request: Request instance for ShowJudgementFile
+        :type request: :class:`huaweicloudsdkclassroom.v3.ShowJudgementFileRequest`
+        :rtype: :class:`huaweicloudsdkclassroom.v3.ShowJudgementFileResponse`
         """
         return self.show_judgement_file_with_http_info(request)
 
     def show_judgement_file_with_http_info(self, request):
-        """下载判题结果文件
-
-        根据文件id或图片id下载输出结果文件
-
-        :param ShowJudgementFileRequest request
-        :return: ShowJudgementFileResponse
-        """
-
         all_params = ['file_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -236,26 +222,21 @@ class ClassroomClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_classroom_members(self, request):
         """根据课堂ID获取指定课堂的课堂成员列表
 
         根据课堂ID获取指定课堂的课堂成员列表，支持分页，搜索字段默认同时匹配姓名，学号，用户名，班级。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListClassroomMembersRequest request
-        :return: ListClassroomMembersResponse
+        :param request: Request instance for ListClassroomMembers
+        :type request: :class:`huaweicloudsdkclassroom.v3.ListClassroomMembersRequest`
+        :rtype: :class:`huaweicloudsdkclassroom.v3.ListClassroomMembersResponse`
         """
         return self.list_classroom_members_with_http_info(request)
 
     def list_classroom_members_with_http_info(self, request):
-        """根据课堂ID获取指定课堂的课堂成员列表
-
-        根据课堂ID获取指定课堂的课堂成员列表，支持分页，搜索字段默认同时匹配姓名，学号，用户名，班级。
-
-        :param ListClassroomMembersRequest request
-        :return: ListClassroomMembersResponse
-        """
-
         all_params = ['classroom_id', 'offset', 'limit', 'filter']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -305,26 +286,21 @@ class ClassroomClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_classrooms(self, request):
         """获取当前用户的课堂列表
 
         获取当前用户的课堂列表，课堂课表分为我创建的课堂，我加入的课堂以及所有课堂，支持分页查询。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListClassroomsRequest request
-        :return: ListClassroomsResponse
+        :param request: Request instance for ListClassrooms
+        :type request: :class:`huaweicloudsdkclassroom.v3.ListClassroomsRequest`
+        :rtype: :class:`huaweicloudsdkclassroom.v3.ListClassroomsResponse`
         """
         return self.list_classrooms_with_http_info(request)
 
     def list_classrooms_with_http_info(self, request):
-        """获取当前用户的课堂列表
-
-        获取当前用户的课堂列表，课堂课表分为我创建的课堂，我加入的课堂以及所有课堂，支持分页查询。
-
-        :param ListClassroomsRequest request
-        :return: ListClassroomsResponse
-        """
-
         all_params = ['offset', 'limit', 'query_type']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -372,26 +348,21 @@ class ClassroomClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_classroom_detail(self, request):
         """根据课堂ID获取指定课堂的详细信息
 
         根据课堂ID获取指定课堂的详细信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowClassroomDetailRequest request
-        :return: ShowClassroomDetailResponse
+        :param request: Request instance for ShowClassroomDetail
+        :type request: :class:`huaweicloudsdkclassroom.v3.ShowClassroomDetailRequest`
+        :rtype: :class:`huaweicloudsdkclassroom.v3.ShowClassroomDetailResponse`
         """
         return self.show_classroom_detail_with_http_info(request)
 
     def show_classroom_detail_with_http_info(self, request):
-        """根据课堂ID获取指定课堂的详细信息
-
-        根据课堂ID获取指定课堂的详细信息
-
-        :param ShowClassroomDetailRequest request
-        :return: ShowClassroomDetailResponse
-        """
-
         all_params = ['classroom_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -435,26 +406,21 @@ class ClassroomClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_classroom_member_jobs(self, request):
         """查询课堂下指定成员的作业信息
 
         查询课堂下指定成员的作业信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListClassroomMemberJobsRequest request
-        :return: ListClassroomMemberJobsResponse
+        :param request: Request instance for ListClassroomMemberJobs
+        :type request: :class:`huaweicloudsdkclassroom.v3.ListClassroomMemberJobsRequest`
+        :rtype: :class:`huaweicloudsdkclassroom.v3.ListClassroomMemberJobsResponse`
         """
         return self.list_classroom_member_jobs_with_http_info(request)
 
     def list_classroom_member_jobs_with_http_info(self, request):
-        """查询课堂下指定成员的作业信息
-
-        查询课堂下指定成员的作业信息
-
-        :param ListClassroomMemberJobsRequest request
-        :return: ListClassroomMemberJobsResponse
-        """
-
         all_params = ['classroom_id', 'member_id', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -504,26 +470,21 @@ class ClassroomClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_jobs(self, request):
         """查询指定课堂下的作业列表信息
 
         查询指定课堂下的作业列表信息，支持分页查询。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListJobsRequest request
-        :return: ListJobsResponse
+        :param request: Request instance for ListJobs
+        :type request: :class:`huaweicloudsdkclassroom.v3.ListJobsRequest`
+        :rtype: :class:`huaweicloudsdkclassroom.v3.ListJobsResponse`
         """
         return self.list_jobs_with_http_info(request)
 
     def list_jobs_with_http_info(self, request):
-        """查询指定课堂下的作业列表信息
-
-        查询指定课堂下的作业列表信息，支持分页查询。
-
-        :param ListJobsRequest request
-        :return: ListJobsResponse
-        """
-
         all_params = ['source_from', 'source_id', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -573,26 +534,21 @@ class ClassroomClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_member_job_records(self, request):
         """查询学生函数习题提交记录信息
 
         查询学生指定作业的习题提交记录信息(针对函数习题)
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListMemberJobRecordsRequest request
-        :return: ListMemberJobRecordsResponse
+        :param request: Request instance for ListMemberJobRecords
+        :type request: :class:`huaweicloudsdkclassroom.v3.ListMemberJobRecordsRequest`
+        :rtype: :class:`huaweicloudsdkclassroom.v3.ListMemberJobRecordsResponse`
         """
         return self.list_member_job_records_with_http_info(request)
 
     def list_member_job_records_with_http_info(self, request):
-        """查询学生函数习题提交记录信息
-
-        查询学生指定作业的习题提交记录信息(针对函数习题)
-
-        :param ListMemberJobRecordsRequest request
-        :return: ListMemberJobRecordsResponse
-        """
-
         all_params = ['job_id', 'exercise_id', 'member_id', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -644,26 +600,21 @@ class ClassroomClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_job_detail(self, request):
         """根据作业ID，查询指定作业的信息
 
         根据作业ID，查询指定作业的信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowJobDetailRequest request
-        :return: ShowJobDetailResponse
+        :param request: Request instance for ShowJobDetail
+        :type request: :class:`huaweicloudsdkclassroom.v3.ShowJobDetailRequest`
+        :rtype: :class:`huaweicloudsdkclassroom.v3.ShowJobDetailResponse`
         """
         return self.show_job_detail_with_http_info(request)
 
     def show_job_detail_with_http_info(self, request):
-        """根据作业ID，查询指定作业的信息
-
-        根据作业ID，查询指定作业的信息
-
-        :param ShowJobDetailRequest request
-        :return: ShowJobDetailResponse
-        """
-
         all_params = ['job_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -707,26 +658,21 @@ class ClassroomClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_job_exercises(self, request):
         """查询指定作业下的习题信息
 
         查询指定作业下的习题信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowJobExercisesRequest request
-        :return: ShowJobExercisesResponse
+        :param request: Request instance for ShowJobExercises
+        :type request: :class:`huaweicloudsdkclassroom.v3.ShowJobExercisesRequest`
+        :rtype: :class:`huaweicloudsdkclassroom.v3.ShowJobExercisesResponse`
         """
         return self.show_job_exercises_with_http_info(request)
 
     def show_job_exercises_with_http_info(self, request):
-        """查询指定作业下的习题信息
-
-        查询指定作业下的习题信息
-
-        :param ShowJobExercisesRequest request
-        :return: ShowJobExercisesResponse
-        """
-
         all_params = ['job_id', 'source_from', 'source_id', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -777,7 +723,6 @@ class ClassroomClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAssetCategoryResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListAssetCategoryResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListAssetCategoryResponse - a model defined in huaweicloud sdk"""
+        """ListAssetCategoryResponse
+
+        The model defined in huaweicloud sdk
+
+        :param body: 分类返回值
+        :type body: list[:class:`huaweicloudsdkvod.v1.QueryCategoryRsp`]
+        """
         
         super(ListAssetCategoryResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListAssetCategoryResponse(SdkResponse):
         分类返回值
 
         :return: The body of this ListAssetCategoryResponse.
-        :rtype: list[QueryCategoryRsp]
+        :rtype: list[:class:`huaweicloudsdkvod.v1.QueryCategoryRsp`]
         """
         return self._body
 
@@ -58,7 +63,7 @@ class ListAssetCategoryResponse(SdkResponse):
         分类返回值
 
         :param body: The body of this ListAssetCategoryResponse.
-        :type: list[QueryCategoryRsp]
+        :type body: list[:class:`huaweicloudsdkvod.v1.QueryCategoryRsp`]
         """
         self._body = body
 

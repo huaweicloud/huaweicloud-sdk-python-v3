@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EdgeNodeMqttConfig:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class EdgeNodeMqttConfig:
     }
 
     def __init__(self, enable_mqtt=None, mqtts=None):
-        """EdgeNodeMqttConfig - a model defined in huaweicloud sdk"""
+        """EdgeNodeMqttConfig
+
+        The model defined in huaweicloud sdk
+
+        :param enable_mqtt: 是否启用MQTT
+        :type enable_mqtt: bool
+        :param mqtts: MQTT配置 当enable_mqtt取值为false时，mqtts需要为空数组
+        :type mqtts: list[:class:`huaweicloudsdkief.v1.Mqtt`]
+        """
         
         
 
@@ -61,7 +68,7 @@ class EdgeNodeMqttConfig:
         是否启用MQTT
 
         :param enable_mqtt: The enable_mqtt of this EdgeNodeMqttConfig.
-        :type: bool
+        :type enable_mqtt: bool
         """
         self._enable_mqtt = enable_mqtt
 
@@ -72,7 +79,7 @@ class EdgeNodeMqttConfig:
         MQTT配置 当enable_mqtt取值为false时，mqtts需要为空数组
 
         :return: The mqtts of this EdgeNodeMqttConfig.
-        :rtype: list[Mqtt]
+        :rtype: list[:class:`huaweicloudsdkief.v1.Mqtt`]
         """
         return self._mqtts
 
@@ -83,7 +90,7 @@ class EdgeNodeMqttConfig:
         MQTT配置 当enable_mqtt取值为false时，mqtts需要为空数组
 
         :param mqtts: The mqtts of this EdgeNodeMqttConfig.
-        :type: list[Mqtt]
+        :type mqtts: list[:class:`huaweicloudsdkief.v1.Mqtt`]
         """
         self._mqtts = mqtts
 

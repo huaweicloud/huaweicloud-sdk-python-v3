@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EpDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class EpDetail:
     }
 
     def __init__(self, id=None, name=None, description=None, status=None, created_at=None, updated_at=None, type=None):
-        """EpDetail - a model defined in huaweicloud sdk"""
+        """EpDetail
+
+        The model defined in huaweicloud sdk
+
+        :param id: 企业项目ID
+        :type id: str
+        :param name: 企业项目名称
+        :type name: str
+        :param description: 企业项目描述
+        :type description: str
+        :param status: 企业项目状态。1启用，2停用
+        :type status: int
+        :param created_at: 创建时间，格式为UTC格式。如：2018-05-18T06:49:06Z。
+        :type created_at: datetime
+        :param updated_at: 修改时间，格式为UTC格式。如：2018-05-28T02:21:36Z。
+        :type updated_at: datetime
+        :param type: 项目类型： - prod：商用项目 - poc：测试项目
+        :type type: str
+        """
         
         
 
@@ -81,7 +98,7 @@ class EpDetail:
         企业项目ID
 
         :param id: The id of this EpDetail.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -103,7 +120,7 @@ class EpDetail:
         企业项目名称
 
         :param name: The name of this EpDetail.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -125,7 +142,7 @@ class EpDetail:
         企业项目描述
 
         :param description: The description of this EpDetail.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -147,7 +164,7 @@ class EpDetail:
         企业项目状态。1启用，2停用
 
         :param status: The status of this EpDetail.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -169,7 +186,7 @@ class EpDetail:
         创建时间，格式为UTC格式。如：2018-05-18T06:49:06Z。
 
         :param created_at: The created_at of this EpDetail.
-        :type: datetime
+        :type created_at: datetime
         """
         self._created_at = created_at
 
@@ -191,7 +208,7 @@ class EpDetail:
         修改时间，格式为UTC格式。如：2018-05-28T02:21:36Z。
 
         :param updated_at: The updated_at of this EpDetail.
-        :type: datetime
+        :type updated_at: datetime
         """
         self._updated_at = updated_at
 
@@ -213,7 +230,7 @@ class EpDetail:
         项目类型： - prod：商用项目 - poc：测试项目
 
         :param type: The type of this EpDetail.
-        :type: str
+        :type type: str
         """
         self._type = type
 

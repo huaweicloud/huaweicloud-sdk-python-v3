@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CheckRepositoryDuplicateNameResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CheckRepositoryDuplicateNameResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """CheckRepositoryDuplicateNameResponse - a model defined in huaweicloud sdk"""
+        """CheckRepositoryDuplicateNameResponse
+
+        The model defined in huaweicloud sdk
+
+        :param result: 重名校验是否通过,true:校验通过不重名,false:校验不通过重名
+        :type result: bool
+        """
         
         super(CheckRepositoryDuplicateNameResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class CheckRepositoryDuplicateNameResponse(SdkResponse):
         重名校验是否通过,true:校验通过不重名,false:校验不通过重名
 
         :param result: The result of this CheckRepositoryDuplicateNameResponse.
-        :type: bool
+        :type result: bool
         """
         self._result = result
 

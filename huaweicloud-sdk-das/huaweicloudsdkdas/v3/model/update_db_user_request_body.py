@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDbUserRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateDbUserRequestBody:
     }
 
     def __init__(self, db_username=None, db_user_password=None):
-        """UpdateDbUserRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateDbUserRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param db_username: 数据库用户名称
+        :type db_username: str
+        :param db_user_password: 数据库用户密码
+        :type db_user_password: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class UpdateDbUserRequestBody:
         数据库用户名称
 
         :param db_username: The db_username of this UpdateDbUserRequestBody.
-        :type: str
+        :type db_username: str
         """
         self._db_username = db_username
 
@@ -83,7 +90,7 @@ class UpdateDbUserRequestBody:
         数据库用户密码
 
         :param db_user_password: The db_user_password of this UpdateDbUserRequestBody.
-        :type: str
+        :type db_user_password: str
         """
         self._db_user_password = db_user_password
 

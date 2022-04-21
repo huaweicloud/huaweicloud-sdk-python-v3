@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdatePublicZoneStatusResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -58,7 +57,41 @@ class UpdatePublicZoneStatusResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, email=None, zone_type=None, ttl=None, serial=None, status=None, record_num=None, pool_id=None, project_id=None, created_at=None, updated_at=None, links=None, masters=None):
-        """UpdatePublicZoneStatusResponse - a model defined in huaweicloud sdk"""
+        """UpdatePublicZoneStatusResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: zone的ID，uuid形式的一个资源标识。
+        :type id: str
+        :param name: zone名称。
+        :type name: str
+        :param description: 对zone的描述信息。
+        :type description: str
+        :param email: 管理该zone的管理员邮箱。
+        :type email: str
+        :param zone_type: zone类型，公网（public）或者内网（private）。
+        :type zone_type: str
+        :param ttl: 该zone下SOA记录中的ttl值。
+        :type ttl: int
+        :param serial: 该zone下SOA记录中用于标识zone文件变更的序列值，用于主从节点同步。
+        :type serial: int
+        :param status: 资源状态。
+        :type status: str
+        :param record_num: 该zone下的recordset个数。
+        :type record_num: int
+        :param pool_id: 托管该zone的pool，由系统分配。
+        :type pool_id: str
+        :param project_id: zone所属的项目ID。
+        :type project_id: str
+        :param created_at: 创建时间。
+        :type created_at: str
+        :param updated_at: 更新时间。
+        :type updated_at: str
+        :param links: 
+        :type links: :class:`huaweicloudsdkdns.v2.PageLink`
+        :param masters: 主从模式中，从DNS服务器用以获取DNS信息。目前暂未使用。
+        :type masters: list[str]
+        """
         
         super(UpdatePublicZoneStatusResponse, self).__init__()
 
@@ -128,7 +161,7 @@ class UpdatePublicZoneStatusResponse(SdkResponse):
         zone的ID，uuid形式的一个资源标识。
 
         :param id: The id of this UpdatePublicZoneStatusResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -150,7 +183,7 @@ class UpdatePublicZoneStatusResponse(SdkResponse):
         zone名称。
 
         :param name: The name of this UpdatePublicZoneStatusResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -172,7 +205,7 @@ class UpdatePublicZoneStatusResponse(SdkResponse):
         对zone的描述信息。
 
         :param description: The description of this UpdatePublicZoneStatusResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -194,7 +227,7 @@ class UpdatePublicZoneStatusResponse(SdkResponse):
         管理该zone的管理员邮箱。
 
         :param email: The email of this UpdatePublicZoneStatusResponse.
-        :type: str
+        :type email: str
         """
         self._email = email
 
@@ -216,7 +249,7 @@ class UpdatePublicZoneStatusResponse(SdkResponse):
         zone类型，公网（public）或者内网（private）。
 
         :param zone_type: The zone_type of this UpdatePublicZoneStatusResponse.
-        :type: str
+        :type zone_type: str
         """
         self._zone_type = zone_type
 
@@ -238,7 +271,7 @@ class UpdatePublicZoneStatusResponse(SdkResponse):
         该zone下SOA记录中的ttl值。
 
         :param ttl: The ttl of this UpdatePublicZoneStatusResponse.
-        :type: int
+        :type ttl: int
         """
         self._ttl = ttl
 
@@ -260,7 +293,7 @@ class UpdatePublicZoneStatusResponse(SdkResponse):
         该zone下SOA记录中用于标识zone文件变更的序列值，用于主从节点同步。
 
         :param serial: The serial of this UpdatePublicZoneStatusResponse.
-        :type: int
+        :type serial: int
         """
         self._serial = serial
 
@@ -282,7 +315,7 @@ class UpdatePublicZoneStatusResponse(SdkResponse):
         资源状态。
 
         :param status: The status of this UpdatePublicZoneStatusResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -304,7 +337,7 @@ class UpdatePublicZoneStatusResponse(SdkResponse):
         该zone下的recordset个数。
 
         :param record_num: The record_num of this UpdatePublicZoneStatusResponse.
-        :type: int
+        :type record_num: int
         """
         self._record_num = record_num
 
@@ -326,7 +359,7 @@ class UpdatePublicZoneStatusResponse(SdkResponse):
         托管该zone的pool，由系统分配。
 
         :param pool_id: The pool_id of this UpdatePublicZoneStatusResponse.
-        :type: str
+        :type pool_id: str
         """
         self._pool_id = pool_id
 
@@ -348,7 +381,7 @@ class UpdatePublicZoneStatusResponse(SdkResponse):
         zone所属的项目ID。
 
         :param project_id: The project_id of this UpdatePublicZoneStatusResponse.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -370,7 +403,7 @@ class UpdatePublicZoneStatusResponse(SdkResponse):
         创建时间。
 
         :param created_at: The created_at of this UpdatePublicZoneStatusResponse.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -392,7 +425,7 @@ class UpdatePublicZoneStatusResponse(SdkResponse):
         更新时间。
 
         :param updated_at: The updated_at of this UpdatePublicZoneStatusResponse.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 
@@ -402,7 +435,7 @@ class UpdatePublicZoneStatusResponse(SdkResponse):
 
 
         :return: The links of this UpdatePublicZoneStatusResponse.
-        :rtype: PageLink
+        :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
         """
         return self._links
 
@@ -412,7 +445,7 @@ class UpdatePublicZoneStatusResponse(SdkResponse):
 
 
         :param links: The links of this UpdatePublicZoneStatusResponse.
-        :type: PageLink
+        :type links: :class:`huaweicloudsdkdns.v2.PageLink`
         """
         self._links = links
 
@@ -434,7 +467,7 @@ class UpdatePublicZoneStatusResponse(SdkResponse):
         主从模式中，从DNS服务器用以获取DNS信息。目前暂未使用。
 
         :param masters: The masters of this UpdatePublicZoneStatusResponse.
-        :type: list[str]
+        :type masters: list[str]
         """
         self._masters = masters
 

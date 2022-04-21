@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExportDatasetRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ExportDatasetRequest:
     }
 
     def __init__(self, job_id=None, run_id=None):
-        """ExportDatasetRequest - a model defined in huaweicloud sdk"""
+        """ExportDatasetRequest
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 作业ID。
+        :type job_id: str
+        :param run_id: 作业运行ID。
+        :type run_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ExportDatasetRequest:
         作业ID。
 
         :param job_id: The job_id of this ExportDatasetRequest.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -83,7 +90,7 @@ class ExportDatasetRequest:
         作业运行ID。
 
         :param run_id: The run_id of this ExportDatasetRequest.
-        :type: str
+        :type run_id: str
         """
         self._run_id = run_id
 

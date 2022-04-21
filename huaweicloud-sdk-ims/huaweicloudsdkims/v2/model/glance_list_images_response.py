@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GlanceListImagesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class GlanceListImagesResponse(SdkResponse):
     }
 
     def __init__(self, first=None, images=None, schema=None, next=None):
-        """GlanceListImagesResponse - a model defined in huaweicloud sdk"""
+        """GlanceListImagesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param first: 查询首页的URL。
+        :type first: str
+        :param images: 资源类型。
+        :type images: list[:class:`huaweicloudsdkims.v2.GlanceShowImageResponseBody`]
+        :param schema: 描述镜像列表模式的URL。
+        :type schema: str
+        :param next: 查询下一页的URL。当查询镜像列表最后一页时，不存在next。
+        :type next: str
+        """
         
         super(GlanceListImagesResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class GlanceListImagesResponse(SdkResponse):
         查询首页的URL。
 
         :param first: The first of this GlanceListImagesResponse.
-        :type: str
+        :type first: str
         """
         self._first = first
 
@@ -84,7 +95,7 @@ class GlanceListImagesResponse(SdkResponse):
         资源类型。
 
         :return: The images of this GlanceListImagesResponse.
-        :rtype: list[GlanceShowImageResponseBody]
+        :rtype: list[:class:`huaweicloudsdkims.v2.GlanceShowImageResponseBody`]
         """
         return self._images
 
@@ -95,7 +106,7 @@ class GlanceListImagesResponse(SdkResponse):
         资源类型。
 
         :param images: The images of this GlanceListImagesResponse.
-        :type: list[GlanceShowImageResponseBody]
+        :type images: list[:class:`huaweicloudsdkims.v2.GlanceShowImageResponseBody`]
         """
         self._images = images
 
@@ -117,7 +128,7 @@ class GlanceListImagesResponse(SdkResponse):
         描述镜像列表模式的URL。
 
         :param schema: The schema of this GlanceListImagesResponse.
-        :type: str
+        :type schema: str
         """
         self._schema = schema
 
@@ -139,7 +150,7 @@ class GlanceListImagesResponse(SdkResponse):
         查询下一页的URL。当查询镜像列表最后一页时，不存在next。
 
         :param next: The next of this GlanceListImagesResponse.
-        :type: str
+        :type next: str
         """
         self._next = next
 

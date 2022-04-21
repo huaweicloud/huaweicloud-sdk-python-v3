@@ -51,22 +51,22 @@ class CdnClient(Client):
     def show_domain_location_stats(self, request):
         """查询域名统计区域运营商数据
 
-        - 支持查询90天内的数据。 - 支持多指标同时查询，不超过5个。 - 最多同时指定20个域名。 - 起始时间和结束时间需要同时指定，左闭右开，毫秒级时间戳，必须为5分钟整时刻点，如：0分、5分、10分、15分等，如果传的不是5分钟时刻点，返回数据可能与预期不一致。统一用开始时间表示一个时间段，如：2019-01-24 20:15:00 表示取 [20:15:00, 20:20:00)的统计数据，且左闭右开。 - action取值：location_detail,location_summary 
+        - 支持查询90天内的数据。
+        - 支持多指标同时查询，不超过5个。
+        - 最多同时指定20个域名。
+        - 起始时间和结束时间需要同时指定，左闭右开，毫秒级时间戳，必须为5分钟整时刻点，如：0分、5分、10分、15分等，如果传的不是5分钟时刻点，返回数据可能与预期不一致。统一用开始时间表示一个时间段，如：2019-01-24 20:15:00 表示取 [20:15:00, 20:20:00)的统计数据，且左闭右开。
+        - action取值：location_detail,location_summary
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowDomainLocationStatsRequest request
-        :return: ShowDomainLocationStatsResponse
+        :param request: Request instance for ShowDomainLocationStats
+        :type request: :class:`huaweicloudsdkcdn.v2.ShowDomainLocationStatsRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.ShowDomainLocationStatsResponse`
         """
         return self.show_domain_location_stats_with_http_info(request)
 
     def show_domain_location_stats_with_http_info(self, request):
-        """查询域名统计区域运营商数据
-
-        - 支持查询90天内的数据。 - 支持多指标同时查询，不超过5个。 - 最多同时指定20个域名。 - 起始时间和结束时间需要同时指定，左闭右开，毫秒级时间戳，必须为5分钟整时刻点，如：0分、5分、10分、15分等，如果传的不是5分钟时刻点，返回数据可能与预期不一致。统一用开始时间表示一个时间段，如：2019-01-24 20:15:00 表示取 [20:15:00, 20:20:00)的统计数据，且左闭右开。 - action取值：location_detail,location_summary 
-
-        :param ShowDomainLocationStatsRequest request
-        :return: ShowDomainLocationStatsResponse
-        """
-
         all_params = ['action', 'start_time', 'end_time', 'domain_name', 'stat_type', 'interval', 'country', 'province', 'isp', 'group_by', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -130,26 +130,25 @@ class CdnClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_domain_stats(self, request):
         """查询域名统计基础数据
 
-        - 支持查询90天内的数据。 - 支持多指标同时查询，不超过5个。 - 最多同时指定20个域名。 - 起始时间和结束时间需要同时指定，左闭右开，毫秒级时间戳，必须为5分钟整时刻点，如：0分、5分、10分、15分等，如果传的不是5分钟时刻点，返回数据可能与预期不一致。统一用开始时间表示一个时间段，如：2019-01-24 20:15:00 表示取 [20:15:00, 20:20:00)的统计数据，且左闭右开。 - action取值：detail,summary 
+        - 支持查询90天内的数据。
+        - 支持多指标同时查询，不超过5个。
+        - 最多同时指定20个域名。
+        - 起始时间和结束时间需要同时指定，左闭右开，毫秒级时间戳，必须为5分钟整时刻点，如：0分、5分、10分、15分等，如果传的不是5分钟时刻点，返回数据可能与预期不一致。统一用开始时间表示一个时间段，如：2019-01-24 20:15:00 表示取 [20:15:00, 20:20:00)的统计数据，且左闭右开。
+        - action取值：detail,summary
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowDomainStatsRequest request
-        :return: ShowDomainStatsResponse
+        :param request: Request instance for ShowDomainStats
+        :type request: :class:`huaweicloudsdkcdn.v2.ShowDomainStatsRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.ShowDomainStatsResponse`
         """
         return self.show_domain_stats_with_http_info(request)
 
     def show_domain_stats_with_http_info(self, request):
-        """查询域名统计基础数据
-
-        - 支持查询90天内的数据。 - 支持多指标同时查询，不超过5个。 - 最多同时指定20个域名。 - 起始时间和结束时间需要同时指定，左闭右开，毫秒级时间戳，必须为5分钟整时刻点，如：0分、5分、10分、15分等，如果传的不是5分钟时刻点，返回数据可能与预期不一致。统一用开始时间表示一个时间段，如：2019-01-24 20:15:00 表示取 [20:15:00, 20:20:00)的统计数据，且左闭右开。 - action取值：detail,summary 
-
-        :param ShowDomainStatsRequest request
-        :return: ShowDomainStatsResponse
-        """
-
         all_params = ['action', 'start_time', 'end_time', 'domain_name', 'stat_type', 'interval', 'group_by', 'service_area', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -209,26 +208,26 @@ class CdnClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_top_url(self, request):
         """查询TOP100 URL明细
 
-        - 查询TOP100 URL明细。 - 支持查询90天内的数据。 - 查询跨度不能超过31天。 - 起始时间和结束时间，左闭右开，需要同时指定。如查询2021-10-24 00:00:00 到 2021-10-25 00:00:00 的数据，表示取 [2021-10-24 00:00:00, 2021-10-25 00:00:00)的统计数据。 - 开始时间、结束时间必须传毫秒级时间戳，且必须为凌晨0点整时刻点，如果传的不是凌晨0点整时刻点，返回数据可能与预期不一致。 - 流量类指标单位统一为Byte（字节）、请求数类指标单位统一为次数。用于查询指定域名、指定统计指标的明细数据。
+        - 查询TOP100 URL明细。
+        - 支持查询90天内的数据。
+        - 查询跨度不能超过31天。
+        - 起始时间和结束时间，左闭右开，需要同时指定。如查询2021-10-24 00:00:00 到 2021-10-25 00:00:00 的数据，表示取 [2021-10-24 00:00:00, 2021-10-25 00:00:00)的统计数据。
+        - 开始时间、结束时间必须传毫秒级时间戳，且必须为凌晨0点整时刻点，如果传的不是凌晨0点整时刻点，返回数据可能与预期不一致。
+        - 流量类指标单位统一为Byte（字节）、请求数类指标单位统一为次数。用于查询指定域名、指定统计指标的明细数据。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowTopUrlRequest request
-        :return: ShowTopUrlResponse
+        :param request: Request instance for ShowTopUrl
+        :type request: :class:`huaweicloudsdkcdn.v2.ShowTopUrlRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.ShowTopUrlResponse`
         """
         return self.show_top_url_with_http_info(request)
 
     def show_top_url_with_http_info(self, request):
-        """查询TOP100 URL明细
-
-        - 查询TOP100 URL明细。 - 支持查询90天内的数据。 - 查询跨度不能超过31天。 - 起始时间和结束时间，左闭右开，需要同时指定。如查询2021-10-24 00:00:00 到 2021-10-25 00:00:00 的数据，表示取 [2021-10-24 00:00:00, 2021-10-25 00:00:00)的统计数据。 - 开始时间、结束时间必须传毫秒级时间戳，且必须为凌晨0点整时刻点，如果传的不是凌晨0点整时刻点，返回数据可能与预期不一致。 - 流量类指标单位统一为Byte（字节）、请求数类指标单位统一为次数。用于查询指定域名、指定统计指标的明细数据。
-
-        :param ShowTopUrlRequest request
-        :return: ShowTopUrlResponse
-        """
-
         all_params = ['start_time', 'end_time', 'domain_name', 'stat_type', 'service_area', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -281,7 +280,6 @@ class CdnClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

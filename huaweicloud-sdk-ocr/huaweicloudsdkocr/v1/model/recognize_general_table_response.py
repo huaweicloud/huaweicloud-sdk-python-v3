@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RecognizeGeneralTableResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RecognizeGeneralTableResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """RecognizeGeneralTableResponse - a model defined in huaweicloud sdk"""
+        """RecognizeGeneralTableResponse
+
+        The model defined in huaweicloud sdk
+
+        :param result: 
+        :type result: :class:`huaweicloudsdkocr.v1.GeneralTableResult`
+        """
         
         super(RecognizeGeneralTableResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class RecognizeGeneralTableResponse(SdkResponse):
 
 
         :return: The result of this RecognizeGeneralTableResponse.
-        :rtype: GeneralTableResult
+        :rtype: :class:`huaweicloudsdkocr.v1.GeneralTableResult`
         """
         return self._result
 
@@ -56,7 +61,7 @@ class RecognizeGeneralTableResponse(SdkResponse):
 
 
         :param result: The result of this RecognizeGeneralTableResponse.
-        :type: GeneralTableResult
+        :type result: :class:`huaweicloudsdkocr.v1.GeneralTableResult`
         """
         self._result = result
 

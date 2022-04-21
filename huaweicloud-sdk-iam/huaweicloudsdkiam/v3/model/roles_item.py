@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RolesItem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class RolesItem:
     }
 
     def __init__(self, catalog=None, display_name=None, description=None, description_cn=None, domain_id=None, flag=None, id=None, name=None, policy=None, type=None):
-        """RolesItem - a model defined in huaweicloud sdk"""
+        """RolesItem
+
+        The model defined in huaweicloud sdk
+
+        :param catalog: 权限所在目录。
+        :type catalog: str
+        :param display_name: 权限展示名称。
+        :type display_name: str
+        :param description: 权限的英文描述。
+        :type description: str
+        :param description_cn: 权限的中文描述信息。
+        :type description_cn: str
+        :param domain_id: 权限所属账号ID。
+        :type domain_id: str
+        :param flag: 该参数值为fine_grained时，标识此权限为系统内置的策略。
+        :type flag: str
+        :param id: 权限Id。
+        :type id: str
+        :param name: 权限名称。
+        :type name: str
+        :param policy: 
+        :type policy: :class:`huaweicloudsdkiam.v3.RolePolicy`
+        :param type: 权限的显示模式。 &gt; - AX表示在domain层显示。 &gt; - XA表示在project层显示。 &gt; - AA表示在domain和project层均显示。 &gt; - XX表示在domain和project层均不显示。 &gt; - 自定义策略的显示模式只能为AX或者XA，不能在domain层和project层都显示（AA），或者在domain层和project层都不显示（XX）。
+        :type type: str
+        """
         
         
 
@@ -93,7 +116,7 @@ class RolesItem:
         权限所在目录。
 
         :param catalog: The catalog of this RolesItem.
-        :type: str
+        :type catalog: str
         """
         self._catalog = catalog
 
@@ -115,7 +138,7 @@ class RolesItem:
         权限展示名称。
 
         :param display_name: The display_name of this RolesItem.
-        :type: str
+        :type display_name: str
         """
         self._display_name = display_name
 
@@ -137,7 +160,7 @@ class RolesItem:
         权限的英文描述。
 
         :param description: The description of this RolesItem.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -159,7 +182,7 @@ class RolesItem:
         权限的中文描述信息。
 
         :param description_cn: The description_cn of this RolesItem.
-        :type: str
+        :type description_cn: str
         """
         self._description_cn = description_cn
 
@@ -181,7 +204,7 @@ class RolesItem:
         权限所属账号ID。
 
         :param domain_id: The domain_id of this RolesItem.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -203,7 +226,7 @@ class RolesItem:
         该参数值为fine_grained时，标识此权限为系统内置的策略。
 
         :param flag: The flag of this RolesItem.
-        :type: str
+        :type flag: str
         """
         self._flag = flag
 
@@ -225,7 +248,7 @@ class RolesItem:
         权限Id。
 
         :param id: The id of this RolesItem.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -247,7 +270,7 @@ class RolesItem:
         权限名称。
 
         :param name: The name of this RolesItem.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -257,7 +280,7 @@ class RolesItem:
 
 
         :return: The policy of this RolesItem.
-        :rtype: RolePolicy
+        :rtype: :class:`huaweicloudsdkiam.v3.RolePolicy`
         """
         return self._policy
 
@@ -267,7 +290,7 @@ class RolesItem:
 
 
         :param policy: The policy of this RolesItem.
-        :type: RolePolicy
+        :type policy: :class:`huaweicloudsdkiam.v3.RolePolicy`
         """
         self._policy = policy
 
@@ -289,7 +312,7 @@ class RolesItem:
         权限的显示模式。 > - AX表示在domain层显示。 > - XA表示在project层显示。 > - AA表示在domain和project层均显示。 > - XX表示在domain和project层均不显示。 > - 自定义策略的显示模式只能为AX或者XA，不能在domain层和project层都显示（AA），或者在domain层和project层都不显示（XX）。
 
         :param type: The type of this RolesItem.
-        :type: str
+        :type type: str
         """
         self._type = type
 

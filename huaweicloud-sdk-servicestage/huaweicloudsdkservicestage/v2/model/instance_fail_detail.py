@@ -12,7 +12,6 @@ class InstanceFailDetail:
     """
     allowed enum values
     """
-
     CLUSTER_DELETED = "cluster_deleted"
     CLUSTER_UNAVAILABLE = "cluster_unavailable"
     CLUSTER_INACCESSIBLE = "cluster_inaccessible"
@@ -20,7 +19,6 @@ class InstanceFailDetail:
     NAMESPACE_UNAVAILABLE = "namespace_unavailable"
     NAMESPACE_INACCESSIBLE = "namespace_inaccessible"
     RESOURCE_DELETED = "resource_deleted"
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +36,11 @@ class InstanceFailDetail:
     }
 
     def __init__(self):
-        """InstanceFailDetail - a model defined in huaweicloud sdk"""
+        """InstanceFailDetail
+
+        The model defined in huaweicloud sdk
+
+        """
         
         
         self.discriminator = None

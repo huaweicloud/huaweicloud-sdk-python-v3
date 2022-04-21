@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateDatabaseResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateDatabaseResponse(SdkResponse):
     }
 
     def __init__(self, databases=None):
-        """CreateDatabaseResponse - a model defined in huaweicloud sdk"""
+        """CreateDatabaseResponse
+
+        The model defined in huaweicloud sdk
+
+        :param databases: 逻辑库相关信息的集合。
+        :type databases: list[:class:`huaweicloudsdkddm.v1.CreateDatabaseDetailResponses`]
+        """
         
         super(CreateDatabaseResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class CreateDatabaseResponse(SdkResponse):
         逻辑库相关信息的集合。
 
         :return: The databases of this CreateDatabaseResponse.
-        :rtype: list[CreateDatabaseDetailResponses]
+        :rtype: list[:class:`huaweicloudsdkddm.v1.CreateDatabaseDetailResponses`]
         """
         return self._databases
 
@@ -58,7 +63,7 @@ class CreateDatabaseResponse(SdkResponse):
         逻辑库相关信息的集合。
 
         :param databases: The databases of this CreateDatabaseResponse.
-        :type: list[CreateDatabaseDetailResponses]
+        :type databases: list[:class:`huaweicloudsdkddm.v1.CreateDatabaseDetailResponses`]
         """
         self._databases = databases
 

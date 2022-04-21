@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateAlarmRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateAlarmRequest:
     }
 
     def __init__(self, body=None):
-        """CreateAlarmRequest - a model defined in huaweicloud sdk"""
+        """CreateAlarmRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateAlarmRequest
+        :type body: :class:`huaweicloudsdkces.v1.CreateAlarmRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateAlarmRequest:
 
 
         :return: The body of this CreateAlarmRequest.
-        :rtype: CreateAlarmRequestBody
+        :rtype: :class:`huaweicloudsdkces.v1.CreateAlarmRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateAlarmRequest:
 
 
         :param body: The body of this CreateAlarmRequest.
-        :type: CreateAlarmRequestBody
+        :type body: :class:`huaweicloudsdkces.v1.CreateAlarmRequestBody`
         """
         self._body = body
 

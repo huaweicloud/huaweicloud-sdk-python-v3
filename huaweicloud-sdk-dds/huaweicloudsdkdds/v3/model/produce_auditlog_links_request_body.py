@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ProduceAuditlogLinksRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ProduceAuditlogLinksRequestBody:
     }
 
     def __init__(self, ids=None):
-        """ProduceAuditlogLinksRequestBody - a model defined in huaweicloud sdk"""
+        """ProduceAuditlogLinksRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param ids: 审计日志ID列表，限制50条以内。
+        :type ids: list[str]
+        """
         
         
 
@@ -57,7 +62,7 @@ class ProduceAuditlogLinksRequestBody:
         审计日志ID列表，限制50条以内。
 
         :param ids: The ids of this ProduceAuditlogLinksRequestBody.
-        :type: list[str]
+        :type ids: list[str]
         """
         self._ids = ids
 

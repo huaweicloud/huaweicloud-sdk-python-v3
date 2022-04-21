@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BackupReplicateReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BackupReplicateReq:
     }
 
     def __init__(self, replicate=None):
-        """BackupReplicateReq - a model defined in huaweicloud sdk"""
+        """BackupReplicateReq
+
+        The model defined in huaweicloud sdk
+
+        :param replicate: 
+        :type replicate: :class:`huaweicloudsdkcbr.v1.BackupReplicateReqBody`
+        """
         
         
 
@@ -45,7 +50,7 @@ class BackupReplicateReq:
 
 
         :return: The replicate of this BackupReplicateReq.
-        :rtype: BackupReplicateReqBody
+        :rtype: :class:`huaweicloudsdkcbr.v1.BackupReplicateReqBody`
         """
         return self._replicate
 
@@ -55,7 +60,7 @@ class BackupReplicateReq:
 
 
         :param replicate: The replicate of this BackupReplicateReq.
-        :type: BackupReplicateReqBody
+        :type replicate: :class:`huaweicloudsdkcbr.v1.BackupReplicateReqBody`
         """
         self._replicate = replicate
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DiagnosisNodeReport:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class DiagnosisNodeReport:
     }
 
     def __init__(self, node_ip=None, az_code=None, group_name=None, abnormal_sum=None, failed_sum=None, role=None, diagnosis_dimension_list=None, command_time_taken_list=None):
-        """DiagnosisNodeReport - a model defined in huaweicloud sdk"""
+        """DiagnosisNodeReport
+
+        The model defined in huaweicloud sdk
+
+        :param node_ip: 节点IP。例如：192.168.0.234:6379
+        :type node_ip: str
+        :param az_code: 节点所在可用区Code
+        :type az_code: str
+        :param group_name: 节点所在分片的名称
+        :type group_name: str
+        :param abnormal_sum: 诊断结果为异常的诊断项总数
+        :type abnormal_sum: int
+        :param failed_sum: 诊断失败的诊断项总数
+        :type failed_sum: int
+        :param role: 节点角色
+        :type role: str
+        :param diagnosis_dimension_list: 诊断维度列表
+        :type diagnosis_dimension_list: list[:class:`huaweicloudsdkdcs.v2.DiagnosisDimension`]
+        :param command_time_taken_list: 
+        :type command_time_taken_list: :class:`huaweicloudsdkdcs.v2.CommandTimeTakenList`
+        """
         
         
 
@@ -85,7 +104,7 @@ class DiagnosisNodeReport:
         节点IP。例如：192.168.0.234:6379
 
         :param node_ip: The node_ip of this DiagnosisNodeReport.
-        :type: str
+        :type node_ip: str
         """
         self._node_ip = node_ip
 
@@ -107,7 +126,7 @@ class DiagnosisNodeReport:
         节点所在可用区Code
 
         :param az_code: The az_code of this DiagnosisNodeReport.
-        :type: str
+        :type az_code: str
         """
         self._az_code = az_code
 
@@ -129,7 +148,7 @@ class DiagnosisNodeReport:
         节点所在分片的名称
 
         :param group_name: The group_name of this DiagnosisNodeReport.
-        :type: str
+        :type group_name: str
         """
         self._group_name = group_name
 
@@ -151,7 +170,7 @@ class DiagnosisNodeReport:
         诊断结果为异常的诊断项总数
 
         :param abnormal_sum: The abnormal_sum of this DiagnosisNodeReport.
-        :type: int
+        :type abnormal_sum: int
         """
         self._abnormal_sum = abnormal_sum
 
@@ -173,7 +192,7 @@ class DiagnosisNodeReport:
         诊断失败的诊断项总数
 
         :param failed_sum: The failed_sum of this DiagnosisNodeReport.
-        :type: int
+        :type failed_sum: int
         """
         self._failed_sum = failed_sum
 
@@ -195,7 +214,7 @@ class DiagnosisNodeReport:
         节点角色
 
         :param role: The role of this DiagnosisNodeReport.
-        :type: str
+        :type role: str
         """
         self._role = role
 
@@ -206,7 +225,7 @@ class DiagnosisNodeReport:
         诊断维度列表
 
         :return: The diagnosis_dimension_list of this DiagnosisNodeReport.
-        :rtype: list[DiagnosisDimension]
+        :rtype: list[:class:`huaweicloudsdkdcs.v2.DiagnosisDimension`]
         """
         return self._diagnosis_dimension_list
 
@@ -217,7 +236,7 @@ class DiagnosisNodeReport:
         诊断维度列表
 
         :param diagnosis_dimension_list: The diagnosis_dimension_list of this DiagnosisNodeReport.
-        :type: list[DiagnosisDimension]
+        :type diagnosis_dimension_list: list[:class:`huaweicloudsdkdcs.v2.DiagnosisDimension`]
         """
         self._diagnosis_dimension_list = diagnosis_dimension_list
 
@@ -227,7 +246,7 @@ class DiagnosisNodeReport:
 
 
         :return: The command_time_taken_list of this DiagnosisNodeReport.
-        :rtype: CommandTimeTakenList
+        :rtype: :class:`huaweicloudsdkdcs.v2.CommandTimeTakenList`
         """
         return self._command_time_taken_list
 
@@ -237,7 +256,7 @@ class DiagnosisNodeReport:
 
 
         :param command_time_taken_list: The command_time_taken_list of this DiagnosisNodeReport.
-        :type: CommandTimeTakenList
+        :type command_time_taken_list: :class:`huaweicloudsdkdcs.v2.CommandTimeTakenList`
         """
         self._command_time_taken_list = command_time_taken_list
 

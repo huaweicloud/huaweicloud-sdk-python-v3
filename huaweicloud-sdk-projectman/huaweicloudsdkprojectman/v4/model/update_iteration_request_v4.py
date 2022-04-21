@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateIterationRequestV4:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class UpdateIterationRequestV4:
     }
 
     def __init__(self, begin_time=None, description=None, end_time=None, name=None, status=None, over_type=None):
-        """UpdateIterationRequestV4 - a model defined in huaweicloud sdk"""
+        """UpdateIterationRequestV4
+
+        The model defined in huaweicloud sdk
+
+        :param begin_time: 开始时间，年-月-日
+        :type begin_time: str
+        :param description: 描述
+        :type description: str
+        :param end_time: 结束时间，年-月-日
+        :type end_time: str
+        :param name: 标题
+        :type name: str
+        :param status: 迭代的状态，0 未开始 &lt;--&gt; 1 进行中&lt;--&gt; 2 结束 &lt;--&gt; 1&lt;--&gt;0, 状态不能跨状态更改
+        :type status: str
+        :param over_type: 迭代结束时，工作项的处理（close 所有的工作项关闭，empty 没有关闭的工作项 放在block里面），status更新为2时需要填写over_type
+        :type over_type: str
+        """
         
         
 
@@ -80,7 +95,7 @@ class UpdateIterationRequestV4:
         开始时间，年-月-日
 
         :param begin_time: The begin_time of this UpdateIterationRequestV4.
-        :type: str
+        :type begin_time: str
         """
         self._begin_time = begin_time
 
@@ -102,7 +117,7 @@ class UpdateIterationRequestV4:
         描述
 
         :param description: The description of this UpdateIterationRequestV4.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -124,7 +139,7 @@ class UpdateIterationRequestV4:
         结束时间，年-月-日
 
         :param end_time: The end_time of this UpdateIterationRequestV4.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -146,7 +161,7 @@ class UpdateIterationRequestV4:
         标题
 
         :param name: The name of this UpdateIterationRequestV4.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -168,7 +183,7 @@ class UpdateIterationRequestV4:
         迭代的状态，0 未开始 <--> 1 进行中<--> 2 结束 <--> 1<-->0, 状态不能跨状态更改
 
         :param status: The status of this UpdateIterationRequestV4.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -190,7 +205,7 @@ class UpdateIterationRequestV4:
         迭代结束时，工作项的处理（close 所有的工作项关闭，empty 没有关闭的工作项 放在block里面），status更新为2时需要填写over_type
 
         :param over_type: The over_type of this UpdateIterationRequestV4.
-        :type: str
+        :type over_type: str
         """
         self._over_type = over_type
 

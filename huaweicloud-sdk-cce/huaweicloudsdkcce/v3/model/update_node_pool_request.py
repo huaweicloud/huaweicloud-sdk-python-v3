@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateNodePoolRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateNodePoolRequest:
     }
 
     def __init__(self, cluster_id=None, nodepool_id=None, body=None):
-        """UpdateNodePoolRequest - a model defined in huaweicloud sdk"""
+        """UpdateNodePoolRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 集群 ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
+        :type cluster_id: str
+        :param nodepool_id: 节点池ID
+        :type nodepool_id: str
+        :param body: Body of the UpdateNodePoolRequest
+        :type body: :class:`huaweicloudsdkcce.v3.NodePoolUpdate`
+        """
         
         
 
@@ -66,7 +75,7 @@ class UpdateNodePoolRequest:
         集群 ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
         :param cluster_id: The cluster_id of this UpdateNodePoolRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -88,7 +97,7 @@ class UpdateNodePoolRequest:
         节点池ID
 
         :param nodepool_id: The nodepool_id of this UpdateNodePoolRequest.
-        :type: str
+        :type nodepool_id: str
         """
         self._nodepool_id = nodepool_id
 
@@ -98,7 +107,7 @@ class UpdateNodePoolRequest:
 
 
         :return: The body of this UpdateNodePoolRequest.
-        :rtype: NodePoolUpdate
+        :rtype: :class:`huaweicloudsdkcce.v3.NodePoolUpdate`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class UpdateNodePoolRequest:
 
 
         :param body: The body of this UpdateNodePoolRequest.
-        :type: NodePoolUpdate
+        :type body: :class:`huaweicloudsdkcce.v3.NodePoolUpdate`
         """
         self._body = body
 

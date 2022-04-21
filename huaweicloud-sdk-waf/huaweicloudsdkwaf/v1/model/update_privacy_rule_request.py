@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdatePrivacyRuleRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UpdatePrivacyRuleRequest:
     }
 
     def __init__(self, enterprise_project_id=None, policy_id=None, rule_id=None, body=None):
-        """UpdatePrivacyRuleRequest - a model defined in huaweicloud sdk"""
+        """UpdatePrivacyRuleRequest
+
+        The model defined in huaweicloud sdk
+
+        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        :type enterprise_project_id: str
+        :param policy_id: 防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
+        :type policy_id: str
+        :param rule_id: privacyRuleId
+        :type rule_id: str
+        :param body: Body of the UpdatePrivacyRuleRequest
+        :type body: :class:`huaweicloudsdkwaf.v1.UpdatePrivacyRuleRequestBody`
+        """
         
         
 
@@ -71,7 +82,7 @@ class UpdatePrivacyRuleRequest:
         您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this UpdatePrivacyRuleRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -93,7 +104,7 @@ class UpdatePrivacyRuleRequest:
         防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
 
         :param policy_id: The policy_id of this UpdatePrivacyRuleRequest.
-        :type: str
+        :type policy_id: str
         """
         self._policy_id = policy_id
 
@@ -115,7 +126,7 @@ class UpdatePrivacyRuleRequest:
         privacyRuleId
 
         :param rule_id: The rule_id of this UpdatePrivacyRuleRequest.
-        :type: str
+        :type rule_id: str
         """
         self._rule_id = rule_id
 
@@ -125,7 +136,7 @@ class UpdatePrivacyRuleRequest:
 
 
         :return: The body of this UpdatePrivacyRuleRequest.
-        :rtype: UpdatePrivacyRuleRequestBody
+        :rtype: :class:`huaweicloudsdkwaf.v1.UpdatePrivacyRuleRequestBody`
         """
         return self._body
 
@@ -135,7 +146,7 @@ class UpdatePrivacyRuleRequest:
 
 
         :param body: The body of this UpdatePrivacyRuleRequest.
-        :type: UpdatePrivacyRuleRequestBody
+        :type body: :class:`huaweicloudsdkwaf.v1.UpdatePrivacyRuleRequestBody`
         """
         self._body = body
 

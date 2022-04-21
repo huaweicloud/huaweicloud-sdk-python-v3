@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListProductsRespHourly:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListProductsRespHourly:
     }
 
     def __init__(self, name=None, version=None, values=None):
-        """ListProductsRespHourly - a model defined in huaweicloud sdk"""
+        """ListProductsRespHourly
+
+        The model defined in huaweicloud sdk
+
+        :param name: 消息引擎的名称，该字段显示为rabbitmq。
+        :type name: str
+        :param version: 消息引擎的版本，当前仅支持3.7.17。
+        :type version: str
+        :param values: 产品规格列表。
+        :type values: list[:class:`huaweicloudsdkrabbitmq.v2.ListProductsRespValues`]
+        """
         
         
 
@@ -68,7 +77,7 @@ class ListProductsRespHourly:
         消息引擎的名称，该字段显示为rabbitmq。
 
         :param name: The name of this ListProductsRespHourly.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -90,7 +99,7 @@ class ListProductsRespHourly:
         消息引擎的版本，当前仅支持3.7.17。
 
         :param version: The version of this ListProductsRespHourly.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -101,7 +110,7 @@ class ListProductsRespHourly:
         产品规格列表。
 
         :return: The values of this ListProductsRespHourly.
-        :rtype: list[ListProductsRespValues]
+        :rtype: list[:class:`huaweicloudsdkrabbitmq.v2.ListProductsRespValues`]
         """
         return self._values
 
@@ -112,7 +121,7 @@ class ListProductsRespHourly:
         产品规格列表。
 
         :param values: The values of this ListProductsRespHourly.
-        :type: list[ListProductsRespValues]
+        :type values: list[:class:`huaweicloudsdkrabbitmq.v2.ListProductsRespValues`]
         """
         self._values = values
 

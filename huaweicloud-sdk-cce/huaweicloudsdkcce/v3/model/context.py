@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Context:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Context:
     }
 
     def __init__(self, cluster=None, user=None):
-        """Context - a model defined in huaweicloud sdk"""
+        """Context
+
+        The model defined in huaweicloud sdk
+
+        :param cluster: 上下文cluster信息。 
+        :type cluster: str
+        :param user: 上下文user信息。 
+        :type user: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class Context:
         上下文cluster信息。 
 
         :param cluster: The cluster of this Context.
-        :type: str
+        :type cluster: str
         """
         self._cluster = cluster
 
@@ -85,7 +92,7 @@ class Context:
         上下文user信息。 
 
         :param user: The user of this Context.
-        :type: str
+        :type user: str
         """
         self._user = user
 

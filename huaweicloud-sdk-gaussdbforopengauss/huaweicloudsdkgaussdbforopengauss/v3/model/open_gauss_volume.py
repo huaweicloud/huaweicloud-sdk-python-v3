@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OpenGaussVolume:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class OpenGaussVolume:
     }
 
     def __init__(self, type=None, size=None):
-        """OpenGaussVolume - a model defined in huaweicloud sdk"""
+        """OpenGaussVolume
+
+        The model defined in huaweicloud sdk
+
+        :param type: 磁盘类型。  仅支持ULTRAHIGH和ESSD，区分大小写，分别表示SSD和急速云盘。
+        :type type: str
+        :param size: 磁盘大小。例如：该参数填写为“40”，表示为创建的实例分配40GB的磁盘空间。  取值范围：（分片数*40GB）~（分片数*16TB），且大小只能为分片数*40的整数倍。
+        :type size: int
+        """
         
         
 
@@ -61,7 +68,7 @@ class OpenGaussVolume:
         磁盘类型。  仅支持ULTRAHIGH和ESSD，区分大小写，分别表示SSD和急速云盘。
 
         :param type: The type of this OpenGaussVolume.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -83,7 +90,7 @@ class OpenGaussVolume:
         磁盘大小。例如：该参数填写为“40”，表示为创建的实例分配40GB的磁盘空间。  取值范围：（分片数*40GB）~（分片数*16TB），且大小只能为分片数*40的整数倍。
 
         :param size: The size of this OpenGaussVolume.
-        :type: int
+        :type size: int
         """
         self._size = size
 

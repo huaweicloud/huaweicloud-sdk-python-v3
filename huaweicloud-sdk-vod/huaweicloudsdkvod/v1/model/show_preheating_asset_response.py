@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowPreheatingAssetResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowPreheatingAssetResponse(SdkResponse):
     }
 
     def __init__(self, preheating_results=None):
-        """ShowPreheatingAssetResponse - a model defined in huaweicloud sdk"""
+        """ShowPreheatingAssetResponse
+
+        The model defined in huaweicloud sdk
+
+        :param preheating_results: 预热任务数组 
+        :type preheating_results: list[:class:`huaweicloudsdkvod.v1.PreheatingResult`]
+        """
         
         super(ShowPreheatingAssetResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ShowPreheatingAssetResponse(SdkResponse):
         预热任务数组 
 
         :return: The preheating_results of this ShowPreheatingAssetResponse.
-        :rtype: list[PreheatingResult]
+        :rtype: list[:class:`huaweicloudsdkvod.v1.PreheatingResult`]
         """
         return self._preheating_results
 
@@ -58,7 +63,7 @@ class ShowPreheatingAssetResponse(SdkResponse):
         预热任务数组 
 
         :param preheating_results: The preheating_results of this ShowPreheatingAssetResponse.
-        :type: list[PreheatingResult]
+        :type preheating_results: list[:class:`huaweicloudsdkvod.v1.PreheatingResult`]
         """
         self._preheating_results = preheating_results
 

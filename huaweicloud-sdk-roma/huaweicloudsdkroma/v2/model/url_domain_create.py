@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UrlDomainCreate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UrlDomainCreate:
     }
 
     def __init__(self, min_ssl_version=None, url_domain=None):
-        """UrlDomainCreate - a model defined in huaweicloud sdk"""
+        """UrlDomainCreate
+
+        The model defined in huaweicloud sdk
+
+        :param min_ssl_version: 最小ssl协议版本号。支持TLSv1.1或TLSv1.2
+        :type min_ssl_version: str
+        :param url_domain: 自定义域名。长度为0-255位的字符串，需要符合域名规范。
+        :type url_domain: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class UrlDomainCreate:
         最小ssl协议版本号。支持TLSv1.1或TLSv1.2
 
         :param min_ssl_version: The min_ssl_version of this UrlDomainCreate.
-        :type: str
+        :type min_ssl_version: str
         """
         self._min_ssl_version = min_ssl_version
 
@@ -85,7 +92,7 @@ class UrlDomainCreate:
         自定义域名。长度为0-255位的字符串，需要符合域名规范。
 
         :param url_domain: The url_domain of this UrlDomainCreate.
-        :type: str
+        :type url_domain: str
         """
         self._url_domain = url_domain
 

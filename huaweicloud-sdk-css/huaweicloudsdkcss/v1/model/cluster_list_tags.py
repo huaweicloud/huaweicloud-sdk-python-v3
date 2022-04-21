@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ClusterListTags:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ClusterListTags:
     }
 
     def __init__(self, key=None, value=None):
-        """ClusterListTags - a model defined in huaweicloud sdk"""
+        """ClusterListTags
+
+        The model defined in huaweicloud sdk
+
+        :param key: 集群标签的key值。
+        :type key: str
+        :param value: 集群标签的value值。
+        :type value: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class ClusterListTags:
         集群标签的key值。
 
         :param key: The key of this ClusterListTags.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -85,7 +92,7 @@ class ClusterListTags:
         集群标签的value值。
 
         :param value: The value of this ClusterListTags.
-        :type: str
+        :type value: str
         """
         self._value = value
 

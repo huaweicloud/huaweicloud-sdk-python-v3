@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MountUser:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class MountUser:
     }
 
     def __init__(self, user_id=None, user_group_id=None):
-        """MountUser - a model defined in huaweicloud sdk"""
+        """MountUser
+
+        The model defined in huaweicloud sdk
+
+        :param user_id: 用户ID(-1~65534的非0整数)
+        :type user_id: int
+        :param user_group_id: 用户组ID(-1~65534的非0整数)
+        :type user_group_id: int
+        """
         
         
 
@@ -61,7 +68,7 @@ class MountUser:
         用户ID(-1~65534的非0整数)
 
         :param user_id: The user_id of this MountUser.
-        :type: int
+        :type user_id: int
         """
         self._user_id = user_id
 
@@ -83,7 +90,7 @@ class MountUser:
         用户组ID(-1~65534的非0整数)
 
         :param user_group_id: The user_group_id of this MountUser.
-        :type: int
+        :type user_group_id: int
         """
         self._user_group_id = user_group_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OptionalDiscountRatingResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class OptionalDiscountRatingResult:
     }
 
     def __init__(self, discount_id=None, amount=None, official_website_amount=None, discount_amount=None, measure_id=None, discount_type=None, discount_name=None, best_offer=None, product_rating_results=None):
-        """OptionalDiscountRatingResult - a model defined in huaweicloud sdk"""
+        """OptionalDiscountRatingResult
+
+        The model defined in huaweicloud sdk
+
+        :param discount_id: 折扣优惠ID。
+        :type discount_id: str
+        :param amount: 总额，即最终优惠后的金额。 amount&#x3D; official_website_amount - discountAmount。
+        :type amount: float
+        :param official_website_amount: 包年/包月产品的官网价。
+        :type official_website_amount: float
+        :param discount_amount: 可选折扣优惠额，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额。
+        :type discount_amount: float
+        :param measure_id: 价格度量单位标识。 1：元
+        :type measure_id: int
+        :param discount_type: 折扣优惠类型。 合同商务折扣：605：华为云BE场景下的合同商务折扣606：分销商BE场景下的合同商务折扣 伙伴授予折扣：607：合作伙伴授予折扣-折扣率
+        :type discount_type: int
+        :param discount_name: 折扣名称。
+        :type discount_name: str
+        :param best_offer: 是否为最优折扣。 0：不是最优折扣，为缺省值。1：是最优折扣最优折扣：在商务折扣、伙伴折扣中选择（优惠金额最大的折扣为最优，优惠金额相等则按此顺序排优先级），促销折扣，折扣券不参与最优折扣的计算。
+        :type best_offer: int
+        :param product_rating_results: 产品询价结果，具体参见表5。
+        :type product_rating_results: list[:class:`huaweicloudsdkbssintl.v2.PeriodProductRatingResult`]
+        """
         
         
 
@@ -98,7 +119,7 @@ class OptionalDiscountRatingResult:
         折扣优惠ID。
 
         :param discount_id: The discount_id of this OptionalDiscountRatingResult.
-        :type: str
+        :type discount_id: str
         """
         self._discount_id = discount_id
 
@@ -120,7 +141,7 @@ class OptionalDiscountRatingResult:
         总额，即最终优惠后的金额。 amount= official_website_amount - discountAmount。
 
         :param amount: The amount of this OptionalDiscountRatingResult.
-        :type: float
+        :type amount: float
         """
         self._amount = amount
 
@@ -142,7 +163,7 @@ class OptionalDiscountRatingResult:
         包年/包月产品的官网价。
 
         :param official_website_amount: The official_website_amount of this OptionalDiscountRatingResult.
-        :type: float
+        :type official_website_amount: float
         """
         self._official_website_amount = official_website_amount
 
@@ -164,7 +185,7 @@ class OptionalDiscountRatingResult:
         可选折扣优惠额，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额。
 
         :param discount_amount: The discount_amount of this OptionalDiscountRatingResult.
-        :type: float
+        :type discount_amount: float
         """
         self._discount_amount = discount_amount
 
@@ -186,7 +207,7 @@ class OptionalDiscountRatingResult:
         价格度量单位标识。 1：元
 
         :param measure_id: The measure_id of this OptionalDiscountRatingResult.
-        :type: int
+        :type measure_id: int
         """
         self._measure_id = measure_id
 
@@ -208,7 +229,7 @@ class OptionalDiscountRatingResult:
         折扣优惠类型。 合同商务折扣：605：华为云BE场景下的合同商务折扣606：分销商BE场景下的合同商务折扣 伙伴授予折扣：607：合作伙伴授予折扣-折扣率
 
         :param discount_type: The discount_type of this OptionalDiscountRatingResult.
-        :type: int
+        :type discount_type: int
         """
         self._discount_type = discount_type
 
@@ -230,7 +251,7 @@ class OptionalDiscountRatingResult:
         折扣名称。
 
         :param discount_name: The discount_name of this OptionalDiscountRatingResult.
-        :type: str
+        :type discount_name: str
         """
         self._discount_name = discount_name
 
@@ -252,7 +273,7 @@ class OptionalDiscountRatingResult:
         是否为最优折扣。 0：不是最优折扣，为缺省值。1：是最优折扣最优折扣：在商务折扣、伙伴折扣中选择（优惠金额最大的折扣为最优，优惠金额相等则按此顺序排优先级），促销折扣，折扣券不参与最优折扣的计算。
 
         :param best_offer: The best_offer of this OptionalDiscountRatingResult.
-        :type: int
+        :type best_offer: int
         """
         self._best_offer = best_offer
 
@@ -263,7 +284,7 @@ class OptionalDiscountRatingResult:
         产品询价结果，具体参见表5。
 
         :return: The product_rating_results of this OptionalDiscountRatingResult.
-        :rtype: list[PeriodProductRatingResult]
+        :rtype: list[:class:`huaweicloudsdkbssintl.v2.PeriodProductRatingResult`]
         """
         return self._product_rating_results
 
@@ -274,7 +295,7 @@ class OptionalDiscountRatingResult:
         产品询价结果，具体参见表5。
 
         :param product_rating_results: The product_rating_results of this OptionalDiscountRatingResult.
-        :type: list[PeriodProductRatingResult]
+        :type product_rating_results: list[:class:`huaweicloudsdkbssintl.v2.PeriodProductRatingResult`]
         """
         self._product_rating_results = product_rating_results
 

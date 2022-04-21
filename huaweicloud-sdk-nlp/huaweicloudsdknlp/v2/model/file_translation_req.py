@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FileTranslationReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class FileTranslationReq:
     }
 
     def __init__(self, url=None, _from=None, to=None, type=None):
-        """FileTranslationReq - a model defined in huaweicloud sdk"""
+        """FileTranslationReq
+
+        The model defined in huaweicloud sdk
+
+        :param url: 存放在OBS的文档文件路径，私密文件推荐使用临时授权URL调用服务，如何获取OBS文件URL和临时授权URL请参见配置OBS访问权限（https://support.huaweicloud.com/api-nlp/nlp_03_0080.html）。OBS的region要和请求服务的region保持一致，region不一致则OBS不可用，即使obs是公开访问权限。
+        :type url: str
+        :param _from: 翻译原语言，文档翻译服务当前仅支持中英互译。
+        :type _from: str
+        :param to: 翻译目标语言，文档翻译服务当前仅支持中英互译。
+        :type to: str
+        :param type: 文档格式，当前仅支持翻译“docx”、“pptx”和“txt”格式的文档。
+        :type type: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class FileTranslationReq:
         存放在OBS的文档文件路径，私密文件推荐使用临时授权URL调用服务，如何获取OBS文件URL和临时授权URL请参见配置OBS访问权限（https://support.huaweicloud.com/api-nlp/nlp_03_0080.html）。OBS的region要和请求服务的region保持一致，region不一致则OBS不可用，即使obs是公开访问权限。
 
         :param url: The url of this FileTranslationReq.
-        :type: str
+        :type url: str
         """
         self._url = url
 
@@ -91,7 +102,7 @@ class FileTranslationReq:
         翻译原语言，文档翻译服务当前仅支持中英互译。
 
         :param _from: The _from of this FileTranslationReq.
-        :type: str
+        :type _from: str
         """
         self.__from = _from
 
@@ -113,7 +124,7 @@ class FileTranslationReq:
         翻译目标语言，文档翻译服务当前仅支持中英互译。
 
         :param to: The to of this FileTranslationReq.
-        :type: str
+        :type to: str
         """
         self._to = to
 
@@ -135,7 +146,7 @@ class FileTranslationReq:
         文档格式，当前仅支持翻译“docx”、“pptx”和“txt”格式的文档。
 
         :param type: The type of this FileTranslationReq.
-        :type: str
+        :type type: str
         """
         self._type = type
 

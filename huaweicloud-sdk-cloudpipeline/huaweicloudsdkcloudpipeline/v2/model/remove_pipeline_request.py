@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RemovePipelineRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RemovePipelineRequest:
     }
 
     def __init__(self, x_language=None, pipeline_id=None):
-        """RemovePipelineRequest - a model defined in huaweicloud sdk"""
+        """RemovePipelineRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言类型 中文:zh-cn 英文:en-us，默认en-us
+        :type x_language: str
+        :param pipeline_id: 要删除的流水线ID
+        :type pipeline_id: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class RemovePipelineRequest:
         语言类型 中文:zh-cn 英文:en-us，默认en-us
 
         :param x_language: The x_language of this RemovePipelineRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -84,7 +91,7 @@ class RemovePipelineRequest:
         要删除的流水线ID
 
         :param pipeline_id: The pipeline_id of this RemovePipelineRequest.
-        :type: str
+        :type pipeline_id: str
         """
         self._pipeline_id = pipeline_id
 

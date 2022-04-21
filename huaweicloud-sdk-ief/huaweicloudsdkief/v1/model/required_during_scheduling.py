@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RequiredDuringScheduling:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RequiredDuringScheduling:
     }
 
     def __init__(self, node_selector_terms=None):
-        """RequiredDuringScheduling - a model defined in huaweicloud sdk"""
+        """RequiredDuringScheduling
+
+        The model defined in huaweicloud sdk
+
+        :param node_selector_terms: 节点选择规则
+        :type node_selector_terms: list[:class:`huaweicloudsdkief.v1.MatchExpressions`]
+        """
         
         
 
@@ -47,7 +52,7 @@ class RequiredDuringScheduling:
         节点选择规则
 
         :return: The node_selector_terms of this RequiredDuringScheduling.
-        :rtype: list[MatchExpressions]
+        :rtype: list[:class:`huaweicloudsdkief.v1.MatchExpressions`]
         """
         return self._node_selector_terms
 
@@ -58,7 +63,7 @@ class RequiredDuringScheduling:
         节点选择规则
 
         :param node_selector_terms: The node_selector_terms of this RequiredDuringScheduling.
-        :type: list[MatchExpressions]
+        :type node_selector_terms: list[:class:`huaweicloudsdkief.v1.MatchExpressions`]
         """
         self._node_selector_terms = node_selector_terms
 

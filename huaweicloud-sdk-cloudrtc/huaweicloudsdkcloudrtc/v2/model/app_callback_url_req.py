@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AppCallbackUrlReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AppCallbackUrlReq:
     }
 
     def __init__(self, url=None, auth_key=None):
-        """AppCallbackUrlReq - a model defined in huaweicloud sdk"""
+        """AppCallbackUrlReq
+
+        The model defined in huaweicloud sdk
+
+        :param url: 回调通知url地址，url必须以http://或https://开头，需要支持POST调用。
+        :type url: str
+        :param auth_key: 回调秘钥，主要用于鉴权
+        :type auth_key: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class AppCallbackUrlReq:
         回调通知url地址，url必须以http://或https://开头，需要支持POST调用。
 
         :param url: The url of this AppCallbackUrlReq.
-        :type: str
+        :type url: str
         """
         self._url = url
 
@@ -84,7 +91,7 @@ class AppCallbackUrlReq:
         回调秘钥，主要用于鉴权
 
         :param auth_key: The auth_key of this AppCallbackUrlReq.
-        :type: str
+        :type auth_key: str
         """
         self._auth_key = auth_key
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Az2Migrate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class Az2Migrate:
     }
 
     def __init__(self, code=None, description=None, status=None):
-        """Az2Migrate - a model defined in huaweicloud sdk"""
+        """Az2Migrate
+
+        The model defined in huaweicloud sdk
+
+        :param code: 可用区ID。
+        :type code: str
+        :param description: 可用区描述。
+        :type description: str
+        :param status: 当前可用区的的状态。 - ENABLED，表示该可用区（组合）可用。 - DISABLED，表示该可用区（组合）不可用。
+        :type status: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class Az2Migrate:
         可用区ID。
 
         :param code: The code of this Az2Migrate.
-        :type: str
+        :type code: str
         """
         self._code = code
 
@@ -87,7 +96,7 @@ class Az2Migrate:
         可用区描述。
 
         :param description: The description of this Az2Migrate.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -109,7 +118,7 @@ class Az2Migrate:
         当前可用区的的状态。 - ENABLED，表示该可用区（组合）可用。 - DISABLED，表示该可用区（组合）不可用。
 
         :param status: The status of this Az2Migrate.
-        :type: str
+        :type status: str
         """
         self._status = status
 

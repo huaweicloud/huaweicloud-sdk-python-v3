@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateCommitResponseBodyStats:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateCommitResponseBodyStats:
     }
 
     def __init__(self, additions=None, deletions=None, total=None):
-        """CreateCommitResponseBodyStats - a model defined in huaweicloud sdk"""
+        """CreateCommitResponseBodyStats
+
+        The model defined in huaweicloud sdk
+
+        :param additions: 变更增加的行数
+        :type additions: int
+        :param deletions: 变更删除的行数
+        :type deletions: int
+        :param total: 变更的总行数
+        :type total: int
+        """
         
         
 
@@ -68,7 +77,7 @@ class CreateCommitResponseBodyStats:
         变更增加的行数
 
         :param additions: The additions of this CreateCommitResponseBodyStats.
-        :type: int
+        :type additions: int
         """
         self._additions = additions
 
@@ -90,7 +99,7 @@ class CreateCommitResponseBodyStats:
         变更删除的行数
 
         :param deletions: The deletions of this CreateCommitResponseBodyStats.
-        :type: int
+        :type deletions: int
         """
         self._deletions = deletions
 
@@ -112,7 +121,7 @@ class CreateCommitResponseBodyStats:
         变更的总行数
 
         :param total: The total of this CreateCommitResponseBodyStats.
-        :type: int
+        :type total: int
         """
         self._total = total
 

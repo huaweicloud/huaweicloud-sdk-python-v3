@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDbUserRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UpdateDbUserRequest:
     }
 
     def __init__(self, instance_id=None, db_user_id=None, x_language=None, body=None):
-        """UpdateDbUserRequest - a model defined in huaweicloud sdk"""
+        """UpdateDbUserRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param db_user_id: 数据库用户ID
+        :type db_user_id: str
+        :param x_language: 语言
+        :type x_language: str
+        :param body: Body of the UpdateDbUserRequest
+        :type body: :class:`huaweicloudsdkdas.v3.UpdateDbUserRequestBody`
+        """
         
         
 
@@ -71,7 +82,7 @@ class UpdateDbUserRequest:
         实例ID
 
         :param instance_id: The instance_id of this UpdateDbUserRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -93,7 +104,7 @@ class UpdateDbUserRequest:
         数据库用户ID
 
         :param db_user_id: The db_user_id of this UpdateDbUserRequest.
-        :type: str
+        :type db_user_id: str
         """
         self._db_user_id = db_user_id
 
@@ -115,7 +126,7 @@ class UpdateDbUserRequest:
         语言
 
         :param x_language: The x_language of this UpdateDbUserRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -125,7 +136,7 @@ class UpdateDbUserRequest:
 
 
         :return: The body of this UpdateDbUserRequest.
-        :rtype: UpdateDbUserRequestBody
+        :rtype: :class:`huaweicloudsdkdas.v3.UpdateDbUserRequestBody`
         """
         return self._body
 
@@ -135,7 +146,7 @@ class UpdateDbUserRequest:
 
 
         :param body: The body of this UpdateDbUserRequest.
-        :type: UpdateDbUserRequestBody
+        :type body: :class:`huaweicloudsdkdas.v3.UpdateDbUserRequestBody`
         """
         self._body = body
 

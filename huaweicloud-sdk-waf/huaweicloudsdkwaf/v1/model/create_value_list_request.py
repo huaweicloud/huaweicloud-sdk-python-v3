@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateValueListRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateValueListRequest:
     }
 
     def __init__(self, enterprise_project_id=None, body=None):
-        """CreateValueListRequest - a model defined in huaweicloud sdk"""
+        """CreateValueListRequest
+
+        The model defined in huaweicloud sdk
+
+        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        :type enterprise_project_id: str
+        :param body: Body of the CreateValueListRequest
+        :type body: :class:`huaweicloudsdkwaf.v1.CreateValueListRequestBody`
+        """
         
         
 
@@ -63,7 +70,7 @@ class CreateValueListRequest:
         您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this CreateValueListRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -73,7 +80,7 @@ class CreateValueListRequest:
 
 
         :return: The body of this CreateValueListRequest.
-        :rtype: CreateValueListRequestBody
+        :rtype: :class:`huaweicloudsdkwaf.v1.CreateValueListRequestBody`
         """
         return self._body
 
@@ -83,7 +90,7 @@ class CreateValueListRequest:
 
 
         :param body: The body of this CreateValueListRequest.
-        :type: CreateValueListRequestBody
+        :type body: :class:`huaweicloudsdkwaf.v1.CreateValueListRequestBody`
         """
         self._body = body
 

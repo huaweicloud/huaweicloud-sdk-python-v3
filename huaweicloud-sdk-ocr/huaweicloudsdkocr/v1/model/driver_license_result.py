@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DriverLicenseResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -66,7 +65,49 @@ class DriverLicenseResult:
     }
 
     def __init__(self, type=None, number=None, name=None, sex=None, nationality=None, address=None, birth=None, issue_date=None, _class=None, valid_from=None, valid_to=None, issuing_authority=None, file_number=None, record=None, accumulated_scores=None, status=None, generation_date=None, current_time=None, text_location=None):
-        """DriverLicenseResult - a model defined in huaweicloud sdk"""
+        """DriverLicenseResult
+
+        The model defined in huaweicloud sdk
+
+        :param type: 驾驶证类型。 normal：纸质驾驶证 electronic：电子驾驶证 
+        :type type: str
+        :param number: 驾驶证号。 
+        :type number: str
+        :param name: 姓名。 
+        :type name: str
+        :param sex: 性别。 
+        :type sex: str
+        :param nationality: 国籍。 
+        :type nationality: str
+        :param address: 住址。 
+        :type address: str
+        :param birth: 出生日期。 
+        :type birth: str
+        :param issue_date: 初次领证日期。 
+        :type issue_date: str
+        :param _class: 准驾类型。 
+        :type _class: str
+        :param valid_from: 有效起始日期。 
+        :type valid_from: str
+        :param valid_to: 有效结束日期。 
+        :type valid_to: str
+        :param issuing_authority: 发证机关。 
+        :type issuing_authority: str
+        :param file_number: 档案编号。 
+        :type file_number: str
+        :param record: 记录。 
+        :type record: str
+        :param accumulated_scores: 累积记分。 
+        :type accumulated_scores: str
+        :param status: 状态。
+        :type status: list[:class:`huaweicloudsdkocr.v1.DriverLicenseResultStatus`]
+        :param generation_date: 生成时间。 
+        :type generation_date: str
+        :param current_time: 当前时间。 
+        :type current_time: str
+        :param text_location: 对应所有在原图上识别到的字段位置信息，包含所有文字区域四个顶点的二维坐标（x,y）。采用图像坐标系，坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
+        :type text_location: object
+        """
         
         
 
@@ -148,7 +189,7 @@ class DriverLicenseResult:
         驾驶证类型。 normal：纸质驾驶证 electronic：电子驾驶证 
 
         :param type: The type of this DriverLicenseResult.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -170,7 +211,7 @@ class DriverLicenseResult:
         驾驶证号。 
 
         :param number: The number of this DriverLicenseResult.
-        :type: str
+        :type number: str
         """
         self._number = number
 
@@ -192,7 +233,7 @@ class DriverLicenseResult:
         姓名。 
 
         :param name: The name of this DriverLicenseResult.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -214,7 +255,7 @@ class DriverLicenseResult:
         性别。 
 
         :param sex: The sex of this DriverLicenseResult.
-        :type: str
+        :type sex: str
         """
         self._sex = sex
 
@@ -236,7 +277,7 @@ class DriverLicenseResult:
         国籍。 
 
         :param nationality: The nationality of this DriverLicenseResult.
-        :type: str
+        :type nationality: str
         """
         self._nationality = nationality
 
@@ -258,7 +299,7 @@ class DriverLicenseResult:
         住址。 
 
         :param address: The address of this DriverLicenseResult.
-        :type: str
+        :type address: str
         """
         self._address = address
 
@@ -280,7 +321,7 @@ class DriverLicenseResult:
         出生日期。 
 
         :param birth: The birth of this DriverLicenseResult.
-        :type: str
+        :type birth: str
         """
         self._birth = birth
 
@@ -302,7 +343,7 @@ class DriverLicenseResult:
         初次领证日期。 
 
         :param issue_date: The issue_date of this DriverLicenseResult.
-        :type: str
+        :type issue_date: str
         """
         self._issue_date = issue_date
 
@@ -324,7 +365,7 @@ class DriverLicenseResult:
         准驾类型。 
 
         :param _class: The _class of this DriverLicenseResult.
-        :type: str
+        :type _class: str
         """
         self.__class = _class
 
@@ -346,7 +387,7 @@ class DriverLicenseResult:
         有效起始日期。 
 
         :param valid_from: The valid_from of this DriverLicenseResult.
-        :type: str
+        :type valid_from: str
         """
         self._valid_from = valid_from
 
@@ -368,7 +409,7 @@ class DriverLicenseResult:
         有效结束日期。 
 
         :param valid_to: The valid_to of this DriverLicenseResult.
-        :type: str
+        :type valid_to: str
         """
         self._valid_to = valid_to
 
@@ -390,7 +431,7 @@ class DriverLicenseResult:
         发证机关。 
 
         :param issuing_authority: The issuing_authority of this DriverLicenseResult.
-        :type: str
+        :type issuing_authority: str
         """
         self._issuing_authority = issuing_authority
 
@@ -412,7 +453,7 @@ class DriverLicenseResult:
         档案编号。 
 
         :param file_number: The file_number of this DriverLicenseResult.
-        :type: str
+        :type file_number: str
         """
         self._file_number = file_number
 
@@ -434,7 +475,7 @@ class DriverLicenseResult:
         记录。 
 
         :param record: The record of this DriverLicenseResult.
-        :type: str
+        :type record: str
         """
         self._record = record
 
@@ -456,7 +497,7 @@ class DriverLicenseResult:
         累积记分。 
 
         :param accumulated_scores: The accumulated_scores of this DriverLicenseResult.
-        :type: str
+        :type accumulated_scores: str
         """
         self._accumulated_scores = accumulated_scores
 
@@ -467,7 +508,7 @@ class DriverLicenseResult:
         状态。
 
         :return: The status of this DriverLicenseResult.
-        :rtype: list[DriverLicenseResultStatus]
+        :rtype: list[:class:`huaweicloudsdkocr.v1.DriverLicenseResultStatus`]
         """
         return self._status
 
@@ -478,7 +519,7 @@ class DriverLicenseResult:
         状态。
 
         :param status: The status of this DriverLicenseResult.
-        :type: list[DriverLicenseResultStatus]
+        :type status: list[:class:`huaweicloudsdkocr.v1.DriverLicenseResultStatus`]
         """
         self._status = status
 
@@ -500,7 +541,7 @@ class DriverLicenseResult:
         生成时间。 
 
         :param generation_date: The generation_date of this DriverLicenseResult.
-        :type: str
+        :type generation_date: str
         """
         self._generation_date = generation_date
 
@@ -522,7 +563,7 @@ class DriverLicenseResult:
         当前时间。 
 
         :param current_time: The current_time of this DriverLicenseResult.
-        :type: str
+        :type current_time: str
         """
         self._current_time = current_time
 
@@ -544,7 +585,7 @@ class DriverLicenseResult:
         对应所有在原图上识别到的字段位置信息，包含所有文字区域四个顶点的二维坐标（x,y）。采用图像坐标系，坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
         :param text_location: The text_location of this DriverLicenseResult.
-        :type: object
+        :type text_location: object
         """
         self._text_location = text_location
 

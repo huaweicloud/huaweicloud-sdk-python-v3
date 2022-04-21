@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateWholeImageRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateWholeImageRequest:
     }
 
     def __init__(self, body=None):
-        """CreateWholeImageRequest - a model defined in huaweicloud sdk"""
+        """CreateWholeImageRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateWholeImageRequest
+        :type body: :class:`huaweicloudsdkims.v2.CreateWholeImageRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateWholeImageRequest:
 
 
         :return: The body of this CreateWholeImageRequest.
-        :rtype: CreateWholeImageRequestBody
+        :rtype: :class:`huaweicloudsdkims.v2.CreateWholeImageRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateWholeImageRequest:
 
 
         :param body: The body of this CreateWholeImageRequest.
-        :type: CreateWholeImageRequestBody
+        :type body: :class:`huaweicloudsdkims.v2.CreateWholeImageRequestBody`
         """
         self._body = body
 

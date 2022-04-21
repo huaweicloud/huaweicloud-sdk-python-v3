@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CompositeHostResponse:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class CompositeHostResponse:
     }
 
     def __init__(self, id=None, hostname=None, policyid=None, access_code=None, protect_status=None, access_status=None, proxy=None, timestamp=None, paid_type=None, flag=None, waf_type=None):
-        """CompositeHostResponse - a model defined in huaweicloud sdk"""
+        """CompositeHostResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 域名id
+        :type id: str
+        :param hostname: 创建的云模式防护域名
+        :type hostname: str
+        :param policyid: 策略id
+        :type policyid: str
+        :param access_code: cname前缀
+        :type access_code: str
+        :param protect_status: 域名防护状态：  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
+        :type protect_status: int
+        :param access_status: 接入状态
+        :type access_status: int
+        :param proxy: 是否开启了代理
+        :type proxy: bool
+        :param timestamp: 创建防护域名的时间
+        :type timestamp: int
+        :param paid_type: 套餐付费模式，目前只支持prePaid预付款模式
+        :type paid_type: str
+        :param flag: 
+        :type flag: :class:`huaweicloudsdkwaf.v1.HostFlag`
+        :param waf_type: 域名所属WAF模式
+        :type waf_type: str
+        """
         
         
 
@@ -108,7 +133,7 @@ class CompositeHostResponse:
         域名id
 
         :param id: The id of this CompositeHostResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -130,7 +155,7 @@ class CompositeHostResponse:
         创建的云模式防护域名
 
         :param hostname: The hostname of this CompositeHostResponse.
-        :type: str
+        :type hostname: str
         """
         self._hostname = hostname
 
@@ -152,7 +177,7 @@ class CompositeHostResponse:
         策略id
 
         :param policyid: The policyid of this CompositeHostResponse.
-        :type: str
+        :type policyid: str
         """
         self._policyid = policyid
 
@@ -174,7 +199,7 @@ class CompositeHostResponse:
         cname前缀
 
         :param access_code: The access_code of this CompositeHostResponse.
-        :type: str
+        :type access_code: str
         """
         self._access_code = access_code
 
@@ -196,7 +221,7 @@ class CompositeHostResponse:
         域名防护状态：  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
 
         :param protect_status: The protect_status of this CompositeHostResponse.
-        :type: int
+        :type protect_status: int
         """
         self._protect_status = protect_status
 
@@ -218,7 +243,7 @@ class CompositeHostResponse:
         接入状态
 
         :param access_status: The access_status of this CompositeHostResponse.
-        :type: int
+        :type access_status: int
         """
         self._access_status = access_status
 
@@ -240,7 +265,7 @@ class CompositeHostResponse:
         是否开启了代理
 
         :param proxy: The proxy of this CompositeHostResponse.
-        :type: bool
+        :type proxy: bool
         """
         self._proxy = proxy
 
@@ -262,7 +287,7 @@ class CompositeHostResponse:
         创建防护域名的时间
 
         :param timestamp: The timestamp of this CompositeHostResponse.
-        :type: int
+        :type timestamp: int
         """
         self._timestamp = timestamp
 
@@ -284,7 +309,7 @@ class CompositeHostResponse:
         套餐付费模式，目前只支持prePaid预付款模式
 
         :param paid_type: The paid_type of this CompositeHostResponse.
-        :type: str
+        :type paid_type: str
         """
         self._paid_type = paid_type
 
@@ -294,7 +319,7 @@ class CompositeHostResponse:
 
 
         :return: The flag of this CompositeHostResponse.
-        :rtype: HostFlag
+        :rtype: :class:`huaweicloudsdkwaf.v1.HostFlag`
         """
         return self._flag
 
@@ -304,7 +329,7 @@ class CompositeHostResponse:
 
 
         :param flag: The flag of this CompositeHostResponse.
-        :type: HostFlag
+        :type flag: :class:`huaweicloudsdkwaf.v1.HostFlag`
         """
         self._flag = flag
 
@@ -326,7 +351,7 @@ class CompositeHostResponse:
         域名所属WAF模式
 
         :param waf_type: The waf_type of this CompositeHostResponse.
-        :type: str
+        :type waf_type: str
         """
         self._waf_type = waf_type
 

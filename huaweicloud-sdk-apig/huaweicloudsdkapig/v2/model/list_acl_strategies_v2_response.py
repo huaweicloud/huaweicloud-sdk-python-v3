@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAclStrategiesV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListAclStrategiesV2Response(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, acls=None):
-        """ListAclStrategiesV2Response - a model defined in huaweicloud sdk"""
+        """ListAclStrategiesV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param size: 本次返回的列表长度
+        :type size: int
+        :param total: 满足条件的记录数
+        :type total: int
+        :param acls: 本次查询返回的ACL策略列表
+        :type acls: list[:class:`huaweicloudsdkapig.v2.ApiAclInfoWithBindNum`]
+        """
         
         super(ListAclStrategiesV2Response, self).__init__()
 
@@ -66,7 +75,7 @@ class ListAclStrategiesV2Response(SdkResponse):
         本次返回的列表长度
 
         :param size: The size of this ListAclStrategiesV2Response.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -88,7 +97,7 @@ class ListAclStrategiesV2Response(SdkResponse):
         满足条件的记录数
 
         :param total: The total of this ListAclStrategiesV2Response.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -99,7 +108,7 @@ class ListAclStrategiesV2Response(SdkResponse):
         本次查询返回的ACL策略列表
 
         :return: The acls of this ListAclStrategiesV2Response.
-        :rtype: list[ApiAclInfoWithBindNum]
+        :rtype: list[:class:`huaweicloudsdkapig.v2.ApiAclInfoWithBindNum`]
         """
         return self._acls
 
@@ -110,7 +119,7 @@ class ListAclStrategiesV2Response(SdkResponse):
         本次查询返回的ACL策略列表
 
         :param acls: The acls of this ListAclStrategiesV2Response.
-        :type: list[ApiAclInfoWithBindNum]
+        :type acls: list[:class:`huaweicloudsdkapig.v2.ApiAclInfoWithBindNum`]
         """
         self._acls = acls
 

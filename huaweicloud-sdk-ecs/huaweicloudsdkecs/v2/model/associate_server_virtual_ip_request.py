@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AssociateServerVirtualIpRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AssociateServerVirtualIpRequest:
     }
 
     def __init__(self, nic_id=None, body=None):
-        """AssociateServerVirtualIpRequest - a model defined in huaweicloud sdk"""
+        """AssociateServerVirtualIpRequest
+
+        The model defined in huaweicloud sdk
+
+        :param nic_id: 云服务器网卡ID。
+        :type nic_id: str
+        :param body: Body of the AssociateServerVirtualIpRequest
+        :type body: :class:`huaweicloudsdkecs.v2.AssociateServerVirtualIpRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class AssociateServerVirtualIpRequest:
         云服务器网卡ID。
 
         :param nic_id: The nic_id of this AssociateServerVirtualIpRequest.
-        :type: str
+        :type nic_id: str
         """
         self._nic_id = nic_id
 
@@ -72,7 +79,7 @@ class AssociateServerVirtualIpRequest:
 
 
         :return: The body of this AssociateServerVirtualIpRequest.
-        :rtype: AssociateServerVirtualIpRequestBody
+        :rtype: :class:`huaweicloudsdkecs.v2.AssociateServerVirtualIpRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class AssociateServerVirtualIpRequest:
 
 
         :param body: The body of this AssociateServerVirtualIpRequest.
-        :type: AssociateServerVirtualIpRequestBody
+        :type body: :class:`huaweicloudsdkecs.v2.AssociateServerVirtualIpRequestBody`
         """
         self._body = body
 

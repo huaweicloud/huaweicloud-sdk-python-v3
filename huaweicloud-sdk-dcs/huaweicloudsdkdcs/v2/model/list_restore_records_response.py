@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRestoreRecordsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListRestoreRecordsResponse(SdkResponse):
     }
 
     def __init__(self, restore_record_response=None, total_num=None):
-        """ListRestoreRecordsResponse - a model defined in huaweicloud sdk"""
+        """ListRestoreRecordsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param restore_record_response: 实例恢复记录的详情数组。
+        :type restore_record_response: list[:class:`huaweicloudsdkdcs.v2.InstanceRestoreInfo`]
+        :param total_num: 返回记录数。
+        :type total_num: int
+        """
         
         super(ListRestoreRecordsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListRestoreRecordsResponse(SdkResponse):
         实例恢复记录的详情数组。
 
         :return: The restore_record_response of this ListRestoreRecordsResponse.
-        :rtype: list[InstanceRestoreInfo]
+        :rtype: list[:class:`huaweicloudsdkdcs.v2.InstanceRestoreInfo`]
         """
         return self._restore_record_response
 
@@ -63,7 +70,7 @@ class ListRestoreRecordsResponse(SdkResponse):
         实例恢复记录的详情数组。
 
         :param restore_record_response: The restore_record_response of this ListRestoreRecordsResponse.
-        :type: list[InstanceRestoreInfo]
+        :type restore_record_response: list[:class:`huaweicloudsdkdcs.v2.InstanceRestoreInfo`]
         """
         self._restore_record_response = restore_record_response
 
@@ -85,7 +92,7 @@ class ListRestoreRecordsResponse(SdkResponse):
         返回记录数。
 
         :param total_num: The total_num of this ListRestoreRecordsResponse.
-        :type: int
+        :type total_num: int
         """
         self._total_num = total_num
 

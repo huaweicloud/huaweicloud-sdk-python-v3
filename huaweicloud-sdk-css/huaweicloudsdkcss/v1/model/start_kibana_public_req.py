@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StartKibanaPublicReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class StartKibanaPublicReq:
     }
 
     def __init__(self, eip_size=None, elb_white_list=None, is_auto_pay=None):
-        """StartKibanaPublicReq - a model defined in huaweicloud sdk"""
+        """StartKibanaPublicReq
+
+        The model defined in huaweicloud sdk
+
+        :param eip_size: 带宽。
+        :type eip_size: int
+        :param elb_white_list: 
+        :type elb_white_list: :class:`huaweicloudsdkcss.v1.StartKibanaPublicReqElbWhitelist`
+        :param is_auto_pay: 是否自动支付。下单订购后，是否自动从客户的华为云账户中支付，而不需要客户手动去进行支付。该参数适用于包周期集群。   - 1: 是（会自动选择折扣和优惠券进行优惠，然后自动从客户华为云账户中支付），自动支付失败后会生成订单成功(该订单应付金额是优惠后金额)、但订单状态为“待支付”，等待客户手动支付(手动支付时，客户还可以修改系统自动选择的折扣和优惠券)。  - 0: 否（需要客户手动去支付，客户可以选择折扣和优惠券）。默认值为“0”。
+        :type is_auto_pay: int
+        """
         
         
 
@@ -66,7 +75,7 @@ class StartKibanaPublicReq:
         带宽。
 
         :param eip_size: The eip_size of this StartKibanaPublicReq.
-        :type: int
+        :type eip_size: int
         """
         self._eip_size = eip_size
 
@@ -76,7 +85,7 @@ class StartKibanaPublicReq:
 
 
         :return: The elb_white_list of this StartKibanaPublicReq.
-        :rtype: StartKibanaPublicReqElbWhitelist
+        :rtype: :class:`huaweicloudsdkcss.v1.StartKibanaPublicReqElbWhitelist`
         """
         return self._elb_white_list
 
@@ -86,7 +95,7 @@ class StartKibanaPublicReq:
 
 
         :param elb_white_list: The elb_white_list of this StartKibanaPublicReq.
-        :type: StartKibanaPublicReqElbWhitelist
+        :type elb_white_list: :class:`huaweicloudsdkcss.v1.StartKibanaPublicReqElbWhitelist`
         """
         self._elb_white_list = elb_white_list
 
@@ -108,7 +117,7 @@ class StartKibanaPublicReq:
         是否自动支付。下单订购后，是否自动从客户的华为云账户中支付，而不需要客户手动去进行支付。该参数适用于包周期集群。   - 1: 是（会自动选择折扣和优惠券进行优惠，然后自动从客户华为云账户中支付），自动支付失败后会生成订单成功(该订单应付金额是优惠后金额)、但订单状态为“待支付”，等待客户手动支付(手动支付时，客户还可以修改系统自动选择的折扣和优惠券)。  - 0: 否（需要客户手动去支付，客户可以选择折扣和优惠券）。默认值为“0”。
 
         :param is_auto_pay: The is_auto_pay of this StartKibanaPublicReq.
-        :type: int
+        :type is_auto_pay: int
         """
         self._is_auto_pay = is_auto_pay
 

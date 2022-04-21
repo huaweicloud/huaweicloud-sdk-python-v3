@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateStartedConfConfigRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateStartedConfConfigRequest:
     }
 
     def __init__(self, conference_id=None, x_conference_authorization=None, body=None):
-        """UpdateStartedConfConfigRequest - a model defined in huaweicloud sdk"""
+        """UpdateStartedConfConfigRequest
+
+        The model defined in huaweicloud sdk
+
+        :param conference_id: 会议ID。
+        :type conference_id: str
+        :param x_conference_authorization: 会控正式Token。 该头域统一为BASE64编码。
+        :type x_conference_authorization: str
+        :param body: Body of the UpdateStartedConfConfigRequest
+        :type body: :class:`huaweicloudsdkmeeting.v1.UpdateStartedConfigReqBody`
+        """
         
         
 
@@ -66,7 +75,7 @@ class UpdateStartedConfConfigRequest:
         会议ID。
 
         :param conference_id: The conference_id of this UpdateStartedConfConfigRequest.
-        :type: str
+        :type conference_id: str
         """
         self._conference_id = conference_id
 
@@ -88,7 +97,7 @@ class UpdateStartedConfConfigRequest:
         会控正式Token。 该头域统一为BASE64编码。
 
         :param x_conference_authorization: The x_conference_authorization of this UpdateStartedConfConfigRequest.
-        :type: str
+        :type x_conference_authorization: str
         """
         self._x_conference_authorization = x_conference_authorization
 
@@ -98,7 +107,7 @@ class UpdateStartedConfConfigRequest:
 
 
         :return: The body of this UpdateStartedConfConfigRequest.
-        :rtype: UpdateStartedConfigReqBody
+        :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateStartedConfigReqBody`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class UpdateStartedConfConfigRequest:
 
 
         :param body: The body of this UpdateStartedConfConfigRequest.
-        :type: UpdateStartedConfigReqBody
+        :type body: :class:`huaweicloudsdkmeeting.v1.UpdateStartedConfigReqBody`
         """
         self._body = body
 

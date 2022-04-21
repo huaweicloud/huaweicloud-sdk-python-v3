@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UnfreezeDeviceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UnfreezeDeviceResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """UnfreezeDeviceResponse - a model defined in huaweicloud sdk"""
+        """UnfreezeDeviceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param body: 
+        :type body: str
+        """
         
         super(UnfreezeDeviceResponse, self).__init__()
 
@@ -56,7 +61,7 @@ class UnfreezeDeviceResponse(SdkResponse):
 
 
         :param body: The body of this UnfreezeDeviceResponse.
-        :type: str
+        :type body: str
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListJobsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListJobsResponse(SdkResponse):
     }
 
     def __init__(self, error_message=None, error_code=None, job_count=None, job_list=None):
-        """ListJobsResponse - a model defined in huaweicloud sdk"""
+        """ListJobsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param error_message: 系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误信息。
+        :type error_message: str
+        :param error_code: 系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误码。
+        :type error_code: str
+        :param job_count: 任务总数
+        :type job_count: int
+        :param job_list: 任务列表
+        :type job_list: list[:class:`huaweicloudsdkges.v1.Job`]
+        """
         
         super(ListJobsResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class ListJobsResponse(SdkResponse):
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误信息。
 
         :param error_message: The error_message of this ListJobsResponse.
-        :type: str
+        :type error_message: str
         """
         self._error_message = error_message
 
@@ -95,7 +106,7 @@ class ListJobsResponse(SdkResponse):
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误码。
 
         :param error_code: The error_code of this ListJobsResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -117,7 +128,7 @@ class ListJobsResponse(SdkResponse):
         任务总数
 
         :param job_count: The job_count of this ListJobsResponse.
-        :type: int
+        :type job_count: int
         """
         self._job_count = job_count
 
@@ -128,7 +139,7 @@ class ListJobsResponse(SdkResponse):
         任务列表
 
         :return: The job_list of this ListJobsResponse.
-        :rtype: list[Job]
+        :rtype: list[:class:`huaweicloudsdkges.v1.Job`]
         """
         return self._job_list
 
@@ -139,7 +150,7 @@ class ListJobsResponse(SdkResponse):
         任务列表
 
         :param job_list: The job_list of this ListJobsResponse.
-        :type: list[Job]
+        :type job_list: list[:class:`huaweicloudsdkges.v1.Job`]
         """
         self._job_list = job_list
 

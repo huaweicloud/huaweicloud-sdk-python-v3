@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DataTransformationResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class DataTransformationResp:
     }
 
     def __init__(self, id=None, status=None, error_code=None, error_msg=None):
-        """DataTransformationResp - a model defined in huaweicloud sdk"""
+        """DataTransformationResp
+
+        The model defined in huaweicloud sdk
+
+        :param id: 任务id
+        :type id: str
+        :param status: 状态
+        :type status: str
+        :param error_code: 错误码
+        :type error_code: str
+        :param error_msg: 错误信息
+        :type error_msg: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class DataTransformationResp:
         任务id
 
         :param id: The id of this DataTransformationResp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -95,7 +106,7 @@ class DataTransformationResp:
         状态
 
         :param status: The status of this DataTransformationResp.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -117,7 +128,7 @@ class DataTransformationResp:
         错误码
 
         :param error_code: The error_code of this DataTransformationResp.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -139,7 +150,7 @@ class DataTransformationResp:
         错误信息
 
         :param error_msg: The error_msg of this DataTransformationResp.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 

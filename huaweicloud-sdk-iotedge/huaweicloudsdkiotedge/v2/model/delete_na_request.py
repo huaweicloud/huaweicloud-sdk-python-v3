@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteNaRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteNaRequest:
     }
 
     def __init__(self, na_id=None):
-        """DeleteNaRequest - a model defined in huaweicloud sdk"""
+        """DeleteNaRequest
+
+        The model defined in huaweicloud sdk
+
+        :param na_id: 北向数据接收端点ID
+        :type na_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteNaRequest:
         北向数据接收端点ID
 
         :param na_id: The na_id of this DeleteNaRequest.
-        :type: str
+        :type na_id: str
         """
         self._na_id = na_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListInstanceTagsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListInstanceTagsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, tags=None):
-        """ListInstanceTagsResponse - a model defined in huaweicloud sdk"""
+        """ListInstanceTagsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total_count: 总记录数。
+        :type total_count: int
+        :param tags: 标签列表。
+        :type tags: list[:class:`huaweicloudsdkgaussdb.v3.ResourceTagItem`]
+        """
         
         super(ListInstanceTagsResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListInstanceTagsResponse(SdkResponse):
         总记录数。
 
         :param total_count: The total_count of this ListInstanceTagsResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 
@@ -74,7 +81,7 @@ class ListInstanceTagsResponse(SdkResponse):
         标签列表。
 
         :return: The tags of this ListInstanceTagsResponse.
-        :rtype: list[ResourceTagItem]
+        :rtype: list[:class:`huaweicloudsdkgaussdb.v3.ResourceTagItem`]
         """
         return self._tags
 
@@ -85,7 +92,7 @@ class ListInstanceTagsResponse(SdkResponse):
         标签列表。
 
         :param tags: The tags of this ListInstanceTagsResponse.
-        :type: list[ResourceTagItem]
+        :type tags: list[:class:`huaweicloudsdkgaussdb.v3.ResourceTagItem`]
         """
         self._tags = tags
 

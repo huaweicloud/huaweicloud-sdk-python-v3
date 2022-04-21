@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InstanceModify:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class InstanceModify:
     }
 
     def __init__(self, version=None, flavor_id=None, artifacts=None, configuration=None, description=None, external_accesses=None, refer_resources=None):
-        """InstanceModify - a model defined in huaweicloud sdk"""
+        """InstanceModify
+
+        The model defined in huaweicloud sdk
+
+        :param version: 应用组件版本号，满足版本语义，如1.0.1。
+        :type version: str
+        :param flavor_id: 
+        :type flavor_id: :class:`huaweicloudsdkservicestage.v2.FlavorId`
+        :param artifacts: 组件部署件。key为组件component_name，对于Docker多容器场景，key为容器名称。
+        :type artifacts: dict(str, object)
+        :param configuration: 应用配置，如环境变量。
+        :type configuration: dict(str, object)
+        :param description: 描述。
+        :type description: str
+        :param external_accesses: 访问方式列表。
+        :type external_accesses: list[:class:`huaweicloudsdkservicestage.v2.ExternalAccesses`]
+        :param refer_resources: 部署资源列表。
+        :type refer_resources: list[:class:`huaweicloudsdkservicestage.v2.ReferResourceCreate`]
+        """
         
         
 
@@ -87,7 +104,7 @@ class InstanceModify:
         应用组件版本号，满足版本语义，如1.0.1。
 
         :param version: The version of this InstanceModify.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -97,7 +114,7 @@ class InstanceModify:
 
 
         :return: The flavor_id of this InstanceModify.
-        :rtype: FlavorId
+        :rtype: :class:`huaweicloudsdkservicestage.v2.FlavorId`
         """
         return self._flavor_id
 
@@ -107,7 +124,7 @@ class InstanceModify:
 
 
         :param flavor_id: The flavor_id of this InstanceModify.
-        :type: FlavorId
+        :type flavor_id: :class:`huaweicloudsdkservicestage.v2.FlavorId`
         """
         self._flavor_id = flavor_id
 
@@ -129,7 +146,7 @@ class InstanceModify:
         组件部署件。key为组件component_name，对于Docker多容器场景，key为容器名称。
 
         :param artifacts: The artifacts of this InstanceModify.
-        :type: dict(str, object)
+        :type artifacts: dict(str, object)
         """
         self._artifacts = artifacts
 
@@ -151,7 +168,7 @@ class InstanceModify:
         应用配置，如环境变量。
 
         :param configuration: The configuration of this InstanceModify.
-        :type: dict(str, object)
+        :type configuration: dict(str, object)
         """
         self._configuration = configuration
 
@@ -173,7 +190,7 @@ class InstanceModify:
         描述。
 
         :param description: The description of this InstanceModify.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -184,7 +201,7 @@ class InstanceModify:
         访问方式列表。
 
         :return: The external_accesses of this InstanceModify.
-        :rtype: list[ExternalAccesses]
+        :rtype: list[:class:`huaweicloudsdkservicestage.v2.ExternalAccesses`]
         """
         return self._external_accesses
 
@@ -195,7 +212,7 @@ class InstanceModify:
         访问方式列表。
 
         :param external_accesses: The external_accesses of this InstanceModify.
-        :type: list[ExternalAccesses]
+        :type external_accesses: list[:class:`huaweicloudsdkservicestage.v2.ExternalAccesses`]
         """
         self._external_accesses = external_accesses
 
@@ -206,7 +223,7 @@ class InstanceModify:
         部署资源列表。
 
         :return: The refer_resources of this InstanceModify.
-        :rtype: list[ReferResourceCreate]
+        :rtype: list[:class:`huaweicloudsdkservicestage.v2.ReferResourceCreate`]
         """
         return self._refer_resources
 
@@ -217,7 +234,7 @@ class InstanceModify:
         部署资源列表。
 
         :param refer_resources: The refer_resources of this InstanceModify.
-        :type: list[ReferResourceCreate]
+        :type refer_resources: list[:class:`huaweicloudsdkservicestage.v2.ReferResourceCreate`]
         """
         self._refer_resources = refer_resources
 

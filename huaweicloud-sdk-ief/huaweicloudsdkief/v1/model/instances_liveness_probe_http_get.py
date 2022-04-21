@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InstancesLivenessProbeHttpGet:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class InstancesLivenessProbeHttpGet:
     }
 
     def __init__(self, path=None, port=None, host=None, scheme=None):
-        """InstancesLivenessProbeHttpGet - a model defined in huaweicloud sdk"""
+        """InstancesLivenessProbeHttpGet
+
+        The model defined in huaweicloud sdk
+
+        :param path: 必须要以/开头，构造结果为：协议类型://主机地址:端口路径
+        :type path: str
+        :param port: 探测的http端口，1到65535之间的整数
+        :type port: int
+        :param host: 请求的主机地址，默认为容器IP
+        :type host: str
+        :param scheme: 协议类型，HTTP或HTTPS，默认HTTP
+        :type scheme: str
+        """
         
         
 
@@ -71,7 +82,7 @@ class InstancesLivenessProbeHttpGet:
         必须要以/开头，构造结果为：协议类型://主机地址:端口路径
 
         :param path: The path of this InstancesLivenessProbeHttpGet.
-        :type: str
+        :type path: str
         """
         self._path = path
 
@@ -93,7 +104,7 @@ class InstancesLivenessProbeHttpGet:
         探测的http端口，1到65535之间的整数
 
         :param port: The port of this InstancesLivenessProbeHttpGet.
-        :type: int
+        :type port: int
         """
         self._port = port
 
@@ -115,7 +126,7 @@ class InstancesLivenessProbeHttpGet:
         请求的主机地址，默认为容器IP
 
         :param host: The host of this InstancesLivenessProbeHttpGet.
-        :type: str
+        :type host: str
         """
         self._host = host
 
@@ -137,7 +148,7 @@ class InstancesLivenessProbeHttpGet:
         协议类型，HTTP或HTTPS，默认HTTP
 
         :param scheme: The scheme of this InstancesLivenessProbeHttpGet.
-        :type: str
+        :type scheme: str
         """
         self._scheme = scheme
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CommonPoolsWithBorderGroupDict:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CommonPoolsWithBorderGroupDict:
     }
 
     def __init__(self, publicip_pools=None, public_border_group=None):
-        """CommonPoolsWithBorderGroupDict - a model defined in huaweicloud sdk"""
+        """CommonPoolsWithBorderGroupDict
+
+        The model defined in huaweicloud sdk
+
+        :param publicip_pools: 同组的公共池列表
+        :type publicip_pools: list[str]
+        :param public_border_group: 分组：中心还是边缘
+        :type public_border_group: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class CommonPoolsWithBorderGroupDict:
         同组的公共池列表
 
         :param publicip_pools: The publicip_pools of this CommonPoolsWithBorderGroupDict.
-        :type: list[str]
+        :type publicip_pools: list[str]
         """
         self._publicip_pools = publicip_pools
 
@@ -85,7 +92,7 @@ class CommonPoolsWithBorderGroupDict:
         分组：中心还是边缘
 
         :param public_border_group: The public_border_group of this CommonPoolsWithBorderGroupDict.
-        :type: str
+        :type public_border_group: str
         """
         self._public_border_group = public_border_group
 

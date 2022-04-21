@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowSyncJobResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowSyncJobResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ShowSyncJobResponse - a model defined in huaweicloud sdk"""
+        """ShowSyncJobResponse
+
+        The model defined in huaweicloud sdk
+
+        :param body: 
+        :type body: list[:class:`huaweicloudsdkswr.v2.SyncJob`]
+        """
         
         super(ShowSyncJobResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class ShowSyncJobResponse(SdkResponse):
 
 
         :return: The body of this ShowSyncJobResponse.
-        :rtype: list[SyncJob]
+        :rtype: list[:class:`huaweicloudsdkswr.v2.SyncJob`]
         """
         return self._body
 
@@ -56,7 +61,7 @@ class ShowSyncJobResponse(SdkResponse):
 
 
         :param body: The body of this ShowSyncJobResponse.
-        :type: list[SyncJob]
+        :type body: list[:class:`huaweicloudsdkswr.v2.SyncJob`]
         """
         self._body = body
 

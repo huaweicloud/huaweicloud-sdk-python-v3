@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteImportedKeyMaterialRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteImportedKeyMaterialRequest:
     }
 
     def __init__(self, body=None):
-        """DeleteImportedKeyMaterialRequest - a model defined in huaweicloud sdk"""
+        """DeleteImportedKeyMaterialRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the DeleteImportedKeyMaterialRequest
+        :type body: :class:`huaweicloudsdkkms.v2.OperateKeyRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class DeleteImportedKeyMaterialRequest:
 
 
         :return: The body of this DeleteImportedKeyMaterialRequest.
-        :rtype: OperateKeyRequestBody
+        :rtype: :class:`huaweicloudsdkkms.v2.OperateKeyRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class DeleteImportedKeyMaterialRequest:
 
 
         :param body: The body of this DeleteImportedKeyMaterialRequest.
-        :type: OperateKeyRequestBody
+        :type body: :class:`huaweicloudsdkkms.v2.OperateKeyRequestBody`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreatePropertyRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class CreatePropertyRequestBody:
     }
 
     def __init__(self, property_name=None, description=None, data_type=None, required=None, min=None, max=None, step=None, max_length=None, unit=None, enum_list=None):
-        """CreatePropertyRequestBody - a model defined in huaweicloud sdk"""
+        """CreatePropertyRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param property_name: 属性名称，首位必须为字母，支持大小写字母，数字，中划线及下划线，长度2-50
+        :type property_name: str
+        :param description: 属性描述，长度0-200
+        :type description: str
+        :param data_type: 属性数据类型，枚举值大小写敏感；number格式为数字，范围±1.0 x 10^-28 to ±7.9228 x 10^28；sting为字符串；integer为整数；datetime为时间，格式为yyyyMMddTHHmmss；json为自定义json格式
+        :type data_type: str
+        :param required: 是否必填 0-非必填 1-必填
+        :type required: int
+        :param min: 最小值，当data_type为integer或number时必填
+        :type min: str
+        :param max: 最大值，当data_type为integer或number时必填
+        :type max: str
+        :param step: 步长，当data_type为integer或number时必填
+        :type step: str
+        :param max_length: 字符串最大长度，当data_type为string, datetime, json时必填，自动向下取整
+        :type max_length: int
+        :param unit: 属性单位
+        :type unit: str
+        :param enum_list: string的枚举值数组，使用逗号分隔
+        :type enum_list: str
+        """
         
         
 
@@ -100,7 +123,7 @@ class CreatePropertyRequestBody:
         属性名称，首位必须为字母，支持大小写字母，数字，中划线及下划线，长度2-50
 
         :param property_name: The property_name of this CreatePropertyRequestBody.
-        :type: str
+        :type property_name: str
         """
         self._property_name = property_name
 
@@ -122,7 +145,7 @@ class CreatePropertyRequestBody:
         属性描述，长度0-200
 
         :param description: The description of this CreatePropertyRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -144,7 +167,7 @@ class CreatePropertyRequestBody:
         属性数据类型，枚举值大小写敏感；number格式为数字，范围±1.0 x 10^-28 to ±7.9228 x 10^28；sting为字符串；integer为整数；datetime为时间，格式为yyyyMMddTHHmmss；json为自定义json格式
 
         :param data_type: The data_type of this CreatePropertyRequestBody.
-        :type: str
+        :type data_type: str
         """
         self._data_type = data_type
 
@@ -166,7 +189,7 @@ class CreatePropertyRequestBody:
         是否必填 0-非必填 1-必填
 
         :param required: The required of this CreatePropertyRequestBody.
-        :type: int
+        :type required: int
         """
         self._required = required
 
@@ -188,7 +211,7 @@ class CreatePropertyRequestBody:
         最小值，当data_type为integer或number时必填
 
         :param min: The min of this CreatePropertyRequestBody.
-        :type: str
+        :type min: str
         """
         self._min = min
 
@@ -210,7 +233,7 @@ class CreatePropertyRequestBody:
         最大值，当data_type为integer或number时必填
 
         :param max: The max of this CreatePropertyRequestBody.
-        :type: str
+        :type max: str
         """
         self._max = max
 
@@ -232,7 +255,7 @@ class CreatePropertyRequestBody:
         步长，当data_type为integer或number时必填
 
         :param step: The step of this CreatePropertyRequestBody.
-        :type: str
+        :type step: str
         """
         self._step = step
 
@@ -254,7 +277,7 @@ class CreatePropertyRequestBody:
         字符串最大长度，当data_type为string, datetime, json时必填，自动向下取整
 
         :param max_length: The max_length of this CreatePropertyRequestBody.
-        :type: int
+        :type max_length: int
         """
         self._max_length = max_length
 
@@ -276,7 +299,7 @@ class CreatePropertyRequestBody:
         属性单位
 
         :param unit: The unit of this CreatePropertyRequestBody.
-        :type: str
+        :type unit: str
         """
         self._unit = unit
 
@@ -298,7 +321,7 @@ class CreatePropertyRequestBody:
         string的枚举值数组，使用逗号分隔
 
         :param enum_list: The enum_list of this CreatePropertyRequestBody.
-        :type: str
+        :type enum_list: str
         """
         self._enum_list = enum_list
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateEdgeNodeDeviceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UpdateEdgeNodeDeviceResponse(SdkResponse):
     }
 
     def __init__(self, delete_connector=None, deploy_connector=None, deployment_id=None, update_devices=None):
-        """UpdateEdgeNodeDeviceResponse - a model defined in huaweicloud sdk"""
+        """UpdateEdgeNodeDeviceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param delete_connector: 工业终端设备预留字段
+        :type delete_connector: bool
+        :param deploy_connector: 工业终端设备预留字段
+        :type deploy_connector: bool
+        :param deployment_id: 工业终端设备预留字段
+        :type deployment_id: str
+        :param update_devices: 
+        :type update_devices: :class:`huaweicloudsdkief.v1.NodeDevice`
+        """
         
         super(UpdateEdgeNodeDeviceResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class UpdateEdgeNodeDeviceResponse(SdkResponse):
         工业终端设备预留字段
 
         :param delete_connector: The delete_connector of this UpdateEdgeNodeDeviceResponse.
-        :type: bool
+        :type delete_connector: bool
         """
         self._delete_connector = delete_connector
 
@@ -95,7 +106,7 @@ class UpdateEdgeNodeDeviceResponse(SdkResponse):
         工业终端设备预留字段
 
         :param deploy_connector: The deploy_connector of this UpdateEdgeNodeDeviceResponse.
-        :type: bool
+        :type deploy_connector: bool
         """
         self._deploy_connector = deploy_connector
 
@@ -117,7 +128,7 @@ class UpdateEdgeNodeDeviceResponse(SdkResponse):
         工业终端设备预留字段
 
         :param deployment_id: The deployment_id of this UpdateEdgeNodeDeviceResponse.
-        :type: str
+        :type deployment_id: str
         """
         self._deployment_id = deployment_id
 
@@ -127,7 +138,7 @@ class UpdateEdgeNodeDeviceResponse(SdkResponse):
 
 
         :return: The update_devices of this UpdateEdgeNodeDeviceResponse.
-        :rtype: NodeDevice
+        :rtype: :class:`huaweicloudsdkief.v1.NodeDevice`
         """
         return self._update_devices
 
@@ -137,7 +148,7 @@ class UpdateEdgeNodeDeviceResponse(SdkResponse):
 
 
         :param update_devices: The update_devices of this UpdateEdgeNodeDeviceResponse.
-        :type: NodeDevice
+        :type update_devices: :class:`huaweicloudsdkief.v1.NodeDevice`
         """
         self._update_devices = update_devices
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDevicesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListDevicesRequest:
     }
 
     def __init__(self, offset=None, limit=None, name=None):
-        """ListDevicesRequest - a model defined in huaweicloud sdk"""
+        """ListDevicesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param offset: 查询的起始位置，取值范围为非负整数，默认为0
+        :type offset: int
+        :param limit: 每页显示的条目数量，取值范围1~100，默认为100
+        :type limit: int
+        :param name: 设备名称，模糊匹配，只允许中英文、数字、下划线、中划线，长度1-60
+        :type name: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class ListDevicesRequest:
         查询的起始位置，取值范围为非负整数，默认为0
 
         :param offset: The offset of this ListDevicesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -90,7 +99,7 @@ class ListDevicesRequest:
         每页显示的条目数量，取值范围1~100，默认为100
 
         :param limit: The limit of this ListDevicesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -112,7 +121,7 @@ class ListDevicesRequest:
         设备名称，模糊匹配，只允许中英文、数字、下划线、中划线，长度1-60
 
         :param name: The name of this ListDevicesRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 

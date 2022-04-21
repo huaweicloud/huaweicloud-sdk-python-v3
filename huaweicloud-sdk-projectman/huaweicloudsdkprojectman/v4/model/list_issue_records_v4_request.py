@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListIssueRecordsV4Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListIssueRecordsV4Request:
     }
 
     def __init__(self, project_id=None, issue_id=None, offset=None, limit=None):
-        """ListIssueRecordsV4Request - a model defined in huaweicloud sdk"""
+        """ListIssueRecordsV4Request
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: devcloud的项目id
+        :type project_id: str
+        :param issue_id: 工作项id
+        :type issue_id: int
+        :param offset: 分页索引，偏移量,offset是limit的整数倍，limit&#x3D;10,offset&#x3D;0,10,20...
+        :type offset: int
+        :param limit: 每页显示的数量,每页最多显示100条
+        :type limit: int
+        """
         
         
 
@@ -71,7 +82,7 @@ class ListIssueRecordsV4Request:
         devcloud的项目id
 
         :param project_id: The project_id of this ListIssueRecordsV4Request.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -93,7 +104,7 @@ class ListIssueRecordsV4Request:
         工作项id
 
         :param issue_id: The issue_id of this ListIssueRecordsV4Request.
-        :type: int
+        :type issue_id: int
         """
         self._issue_id = issue_id
 
@@ -115,7 +126,7 @@ class ListIssueRecordsV4Request:
         分页索引，偏移量,offset是limit的整数倍，limit=10,offset=0,10,20...
 
         :param offset: The offset of this ListIssueRecordsV4Request.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -137,7 +148,7 @@ class ListIssueRecordsV4Request:
         每页显示的数量,每页最多显示100条
 
         :param limit: The limit of this ListIssueRecordsV4Request.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

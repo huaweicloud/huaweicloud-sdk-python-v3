@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdatePasswordResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class UpdatePasswordResponse(SdkResponse):
     }
 
     def __init__(self, lock_time=None, result=None, lock_time_left=None, retry_times_left=None, message=None):
-        """UpdatePasswordResponse - a model defined in huaweicloud sdk"""
+        """UpdatePasswordResponse
+
+        The model defined in huaweicloud sdk
+
+        :param lock_time: 锁定时间。验证失败时和锁定时该参数返回不为null
+        :type lock_time: str
+        :param result: 密码修改结果： - 成功：success； - 密码验证失败：passwordFailed； - 已锁定：locked； - 失败：failed。 
+        :type result: str
+        :param lock_time_left: 锁定剩余时间。锁定时该参数返回不为null
+        :type lock_time_left: str
+        :param retry_times_left: 密码验证剩余次数。验证失败时该参数返回不为null
+        :type retry_times_left: str
+        :param message: 修改结果。
+        :type message: str
+        """
         
         super(UpdatePasswordResponse, self).__init__()
 
@@ -78,7 +91,7 @@ class UpdatePasswordResponse(SdkResponse):
         锁定时间。验证失败时和锁定时该参数返回不为null
 
         :param lock_time: The lock_time of this UpdatePasswordResponse.
-        :type: str
+        :type lock_time: str
         """
         self._lock_time = lock_time
 
@@ -100,7 +113,7 @@ class UpdatePasswordResponse(SdkResponse):
         密码修改结果： - 成功：success； - 密码验证失败：passwordFailed； - 已锁定：locked； - 失败：failed。 
 
         :param result: The result of this UpdatePasswordResponse.
-        :type: str
+        :type result: str
         """
         self._result = result
 
@@ -122,7 +135,7 @@ class UpdatePasswordResponse(SdkResponse):
         锁定剩余时间。锁定时该参数返回不为null
 
         :param lock_time_left: The lock_time_left of this UpdatePasswordResponse.
-        :type: str
+        :type lock_time_left: str
         """
         self._lock_time_left = lock_time_left
 
@@ -144,7 +157,7 @@ class UpdatePasswordResponse(SdkResponse):
         密码验证剩余次数。验证失败时该参数返回不为null
 
         :param retry_times_left: The retry_times_left of this UpdatePasswordResponse.
-        :type: str
+        :type retry_times_left: str
         """
         self._retry_times_left = retry_times_left
 
@@ -166,7 +179,7 @@ class UpdatePasswordResponse(SdkResponse):
         修改结果。
 
         :param message: The message of this UpdatePasswordResponse.
-        :type: str
+        :type message: str
         """
         self._message = message
 

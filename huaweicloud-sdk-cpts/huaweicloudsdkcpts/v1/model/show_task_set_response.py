@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowTaskSetResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowTaskSetResponse(SdkResponse):
     }
 
     def __init__(self, code=None, extend=None, message=None, tasks=None):
-        """ShowTaskSetResponse - a model defined in huaweicloud sdk"""
+        """ShowTaskSetResponse
+
+        The model defined in huaweicloud sdk
+
+        :param code: code
+        :type code: str
+        :param extend: extend
+        :type extend: list[str]
+        :param message: message
+        :type message: str
+        :param tasks: 工程集详细信息
+        :type tasks: list[:class:`huaweicloudsdkcpts.v1.Task`]
+        """
         
         super(ShowTaskSetResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class ShowTaskSetResponse(SdkResponse):
         code
 
         :param code: The code of this ShowTaskSetResponse.
-        :type: str
+        :type code: str
         """
         self._code = code
 
@@ -95,7 +106,7 @@ class ShowTaskSetResponse(SdkResponse):
         extend
 
         :param extend: The extend of this ShowTaskSetResponse.
-        :type: list[str]
+        :type extend: list[str]
         """
         self._extend = extend
 
@@ -117,7 +128,7 @@ class ShowTaskSetResponse(SdkResponse):
         message
 
         :param message: The message of this ShowTaskSetResponse.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -128,7 +139,7 @@ class ShowTaskSetResponse(SdkResponse):
         工程集详细信息
 
         :return: The tasks of this ShowTaskSetResponse.
-        :rtype: list[Task]
+        :rtype: list[:class:`huaweicloudsdkcpts.v1.Task`]
         """
         return self._tasks
 
@@ -139,7 +150,7 @@ class ShowTaskSetResponse(SdkResponse):
         工程集详细信息
 
         :param tasks: The tasks of this ShowTaskSetResponse.
-        :type: list[Task]
+        :type tasks: list[:class:`huaweicloudsdkcpts.v1.Task`]
         """
         self._tasks = tasks
 

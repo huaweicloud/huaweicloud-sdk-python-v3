@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AppCodeCreate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class AppCodeCreate:
     }
 
     def __init__(self, app_code=None):
-        """AppCodeCreate - a model defined in huaweicloud sdk"""
+        """AppCodeCreate
+
+        The model defined in huaweicloud sdk
+
+        :param app_code: App Code值  支持英文，+_!@#$%+/&#x3D;，且只能以英文和+、/开头。
+        :type app_code: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class AppCodeCreate:
         App Code值  支持英文，+_!@#$%+/=，且只能以英文和+、/开头。
 
         :param app_code: The app_code of this AppCodeCreate.
-        :type: str
+        :type app_code: str
         """
         self._app_code = app_code
 

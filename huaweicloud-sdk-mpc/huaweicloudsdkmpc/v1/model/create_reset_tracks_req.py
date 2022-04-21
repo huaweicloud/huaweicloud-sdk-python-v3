@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateResetTracksReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateResetTracksReq:
     }
 
     def __init__(self, audio_file=None):
-        """CreateResetTracksReq - a model defined in huaweicloud sdk"""
+        """CreateResetTracksReq
+
+        The model defined in huaweicloud sdk
+
+        :param audio_file: 
+        :type audio_file: :class:`huaweicloudsdkmpc.v1.SubAudioFile`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateResetTracksReq:
 
 
         :return: The audio_file of this CreateResetTracksReq.
-        :rtype: SubAudioFile
+        :rtype: :class:`huaweicloudsdkmpc.v1.SubAudioFile`
         """
         return self._audio_file
 
@@ -56,7 +61,7 @@ class CreateResetTracksReq:
 
 
         :param audio_file: The audio_file of this CreateResetTracksReq.
-        :type: SubAudioFile
+        :type audio_file: :class:`huaweicloudsdkmpc.v1.SubAudioFile`
         """
         self._audio_file = audio_file
 

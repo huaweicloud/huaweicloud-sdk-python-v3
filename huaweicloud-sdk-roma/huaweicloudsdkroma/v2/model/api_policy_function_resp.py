@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApiPolicyFunctionResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class ApiPolicyFunctionResp:
     }
 
     def __init__(self, function_urn=None, invocation_type=None, timeout=None, version=None, id=None, name=None, conditions=None, backend_params=None, effect_mode=None, authorizer_id=None):
-        """ApiPolicyFunctionResp - a model defined in huaweicloud sdk"""
+        """ApiPolicyFunctionResp
+
+        The model defined in huaweicloud sdk
+
+        :param function_urn: 函数URN
+        :type function_urn: str
+        :param invocation_type: 调用类型 - async： 异步 - sync：同步
+        :type invocation_type: str
+        :param timeout: ROMA Connect APIC请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000  单位：毫秒。
+        :type timeout: int
+        :param version: 版本。字符长度不超过64
+        :type version: str
+        :param id: 编号
+        :type id: str
+        :param name: 策略后端名称。字符串由中文、英文字母、数字、下划线组成，且只能以中文或英文开头。
+        :type name: str
+        :param conditions: 策略条件列表
+        :type conditions: list[:class:`huaweicloudsdkroma.v2.ConditionResp`]
+        :param backend_params: 后端参数列表
+        :type backend_params: list[:class:`huaweicloudsdkroma.v2.BackendParam`]
+        :param effect_mode: 关联的策略组合模式： - ALL：满足全部条件 - ANY：满足任一条件
+        :type effect_mode: str
+        :param authorizer_id: 后端自定义认证对象的ID
+        :type authorizer_id: str
+        """
         
         
 
@@ -97,7 +120,7 @@ class ApiPolicyFunctionResp:
         函数URN
 
         :param function_urn: The function_urn of this ApiPolicyFunctionResp.
-        :type: str
+        :type function_urn: str
         """
         self._function_urn = function_urn
 
@@ -119,7 +142,7 @@ class ApiPolicyFunctionResp:
         调用类型 - async： 异步 - sync：同步
 
         :param invocation_type: The invocation_type of this ApiPolicyFunctionResp.
-        :type: str
+        :type invocation_type: str
         """
         self._invocation_type = invocation_type
 
@@ -141,7 +164,7 @@ class ApiPolicyFunctionResp:
         ROMA Connect APIC请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000  单位：毫秒。
 
         :param timeout: The timeout of this ApiPolicyFunctionResp.
-        :type: int
+        :type timeout: int
         """
         self._timeout = timeout
 
@@ -163,7 +186,7 @@ class ApiPolicyFunctionResp:
         版本。字符长度不超过64
 
         :param version: The version of this ApiPolicyFunctionResp.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -185,7 +208,7 @@ class ApiPolicyFunctionResp:
         编号
 
         :param id: The id of this ApiPolicyFunctionResp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -207,7 +230,7 @@ class ApiPolicyFunctionResp:
         策略后端名称。字符串由中文、英文字母、数字、下划线组成，且只能以中文或英文开头。
 
         :param name: The name of this ApiPolicyFunctionResp.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -218,7 +241,7 @@ class ApiPolicyFunctionResp:
         策略条件列表
 
         :return: The conditions of this ApiPolicyFunctionResp.
-        :rtype: list[ConditionResp]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.ConditionResp`]
         """
         return self._conditions
 
@@ -229,7 +252,7 @@ class ApiPolicyFunctionResp:
         策略条件列表
 
         :param conditions: The conditions of this ApiPolicyFunctionResp.
-        :type: list[ConditionResp]
+        :type conditions: list[:class:`huaweicloudsdkroma.v2.ConditionResp`]
         """
         self._conditions = conditions
 
@@ -240,7 +263,7 @@ class ApiPolicyFunctionResp:
         后端参数列表
 
         :return: The backend_params of this ApiPolicyFunctionResp.
-        :rtype: list[BackendParam]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.BackendParam`]
         """
         return self._backend_params
 
@@ -251,7 +274,7 @@ class ApiPolicyFunctionResp:
         后端参数列表
 
         :param backend_params: The backend_params of this ApiPolicyFunctionResp.
-        :type: list[BackendParam]
+        :type backend_params: list[:class:`huaweicloudsdkroma.v2.BackendParam`]
         """
         self._backend_params = backend_params
 
@@ -273,7 +296,7 @@ class ApiPolicyFunctionResp:
         关联的策略组合模式： - ALL：满足全部条件 - ANY：满足任一条件
 
         :param effect_mode: The effect_mode of this ApiPolicyFunctionResp.
-        :type: str
+        :type effect_mode: str
         """
         self._effect_mode = effect_mode
 
@@ -295,7 +318,7 @@ class ApiPolicyFunctionResp:
         后端自定义认证对象的ID
 
         :param authorizer_id: The authorizer_id of this ApiPolicyFunctionResp.
-        :type: str
+        :type authorizer_id: str
         """
         self._authorizer_id = authorizer_id
 

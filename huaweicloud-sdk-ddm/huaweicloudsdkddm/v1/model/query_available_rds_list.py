@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryAvailableRdsList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class QueryAvailableRdsList:
     }
 
     def __init__(self, id=None, project_id=None, status=None, name=None, engine_name=None, engine_software_version=None, private_ip=None, mode=None, port=None, az_code=None, time_zone=None):
-        """QueryAvailableRdsList - a model defined in huaweicloud sdk"""
+        """QueryAvailableRdsList
+
+        The model defined in huaweicloud sdk
+
+        :param id: 数据库实例 ID。
+        :type id: str
+        :param project_id: 数据库实例所在租户在某一region下的project ID。
+        :type project_id: str
+        :param status: 数据库实例状态。
+        :type status: str
+        :param name: 数据库实例名称。
+        :type name: str
+        :param engine_name: 数据库实例引擎名称。
+        :type engine_name: str
+        :param engine_software_version: 数据库实例引擎版本。
+        :type engine_software_version: str
+        :param private_ip: 数据库实例内网连接地址。
+        :type private_ip: str
+        :param mode: 数据库实例类型（主备或单机）。
+        :type mode: str
+        :param port: 数据库实例端口。
+        :type port: int
+        :param az_code: 可用区。
+        :type az_code: str
+        :param time_zone: 时区。
+        :type time_zone: str
+        """
         
         
 
@@ -108,7 +133,7 @@ class QueryAvailableRdsList:
         数据库实例 ID。
 
         :param id: The id of this QueryAvailableRdsList.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -130,7 +155,7 @@ class QueryAvailableRdsList:
         数据库实例所在租户在某一region下的project ID。
 
         :param project_id: The project_id of this QueryAvailableRdsList.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -152,7 +177,7 @@ class QueryAvailableRdsList:
         数据库实例状态。
 
         :param status: The status of this QueryAvailableRdsList.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -174,7 +199,7 @@ class QueryAvailableRdsList:
         数据库实例名称。
 
         :param name: The name of this QueryAvailableRdsList.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -196,7 +221,7 @@ class QueryAvailableRdsList:
         数据库实例引擎名称。
 
         :param engine_name: The engine_name of this QueryAvailableRdsList.
-        :type: str
+        :type engine_name: str
         """
         self._engine_name = engine_name
 
@@ -218,7 +243,7 @@ class QueryAvailableRdsList:
         数据库实例引擎版本。
 
         :param engine_software_version: The engine_software_version of this QueryAvailableRdsList.
-        :type: str
+        :type engine_software_version: str
         """
         self._engine_software_version = engine_software_version
 
@@ -240,7 +265,7 @@ class QueryAvailableRdsList:
         数据库实例内网连接地址。
 
         :param private_ip: The private_ip of this QueryAvailableRdsList.
-        :type: str
+        :type private_ip: str
         """
         self._private_ip = private_ip
 
@@ -262,7 +287,7 @@ class QueryAvailableRdsList:
         数据库实例类型（主备或单机）。
 
         :param mode: The mode of this QueryAvailableRdsList.
-        :type: str
+        :type mode: str
         """
         self._mode = mode
 
@@ -284,7 +309,7 @@ class QueryAvailableRdsList:
         数据库实例端口。
 
         :param port: The port of this QueryAvailableRdsList.
-        :type: int
+        :type port: int
         """
         self._port = port
 
@@ -306,7 +331,7 @@ class QueryAvailableRdsList:
         可用区。
 
         :param az_code: The az_code of this QueryAvailableRdsList.
-        :type: str
+        :type az_code: str
         """
         self._az_code = az_code
 
@@ -328,7 +353,7 @@ class QueryAvailableRdsList:
         时区。
 
         :param time_zone: The time_zone of this QueryAvailableRdsList.
-        :type: str
+        :type time_zone: str
         """
         self._time_zone = time_zone
 

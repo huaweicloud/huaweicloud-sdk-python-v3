@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateSignatureKeyV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateSignatureKeyV2Request:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreateSignatureKeyV2Request - a model defined in huaweicloud sdk"""
+        """CreateSignatureKeyV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param body: Body of the CreateSignatureKeyV2Request
+        :type body: :class:`huaweicloudsdkapig.v2.BaseSignature`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateSignatureKeyV2Request:
         实例ID
 
         :param instance_id: The instance_id of this CreateSignatureKeyV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -72,7 +79,7 @@ class CreateSignatureKeyV2Request:
 
 
         :return: The body of this CreateSignatureKeyV2Request.
-        :rtype: BaseSignature
+        :rtype: :class:`huaweicloudsdkapig.v2.BaseSignature`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CreateSignatureKeyV2Request:
 
 
         :param body: The body of this CreateSignatureKeyV2Request.
-        :type: BaseSignature
+        :type body: :class:`huaweicloudsdkapig.v2.BaseSignature`
         """
         self._body = body
 

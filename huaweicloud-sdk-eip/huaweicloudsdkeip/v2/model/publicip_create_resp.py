@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PublicipCreateResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class PublicipCreateResp:
     }
 
     def __init__(self, bandwidth_size=None, create_time=None, id=None, public_ip_address=None, status=None, tenant_id=None, type=None, public_ipv6_address=None, ip_version=None, enterprise_project_id=None, alias=None):
-        """PublicipCreateResp - a model defined in huaweicloud sdk"""
+        """PublicipCreateResp
+
+        The model defined in huaweicloud sdk
+
+        :param bandwidth_size: 带宽大小，单位为Mbit/s。
+        :type bandwidth_size: int
+        :param create_time: 弹性公网IP申请时间（UTC时间）
+        :type create_time: datetime
+        :param id: 弹性公网IP唯一标识
+        :type id: str
+        :param public_ip_address: IPv4时是申请到的弹性公网IP地址，IPv6时是IPv6地址对应的IPv4地址
+        :type public_ip_address: str
+        :param status: 功能说明：弹性公网IP的状态  取值范围：冻结FREEZED，绑定失败BIND_ERROR，绑定中BINDING，释放中PENDING_DELETE， 创建中PENDING_CREATE，创建中NOTIFYING，释放中NOTIFY_DELETE，更新中PENDING_UPDATE， 未绑定DOWN ，绑定ACTIVE，绑定ELB，绑定VPN，失败ERROR。
+        :type status: str
+        :param tenant_id: 项目ID
+        :type tenant_id: str
+        :param type: 功能说明：弹性IP弹性公网IP的类型  取值范围：5_telcom（电信），5_union（联通），5_bgp（全动态BGP），5_sbgp（静态BGP），5_ipv6  东北-大连：5_telcom、5_union  华南-广州：5_bgp、5_sbgp  华东-上海二：5_bgp、5_sbgp  华北-北京一：5_bgp、5_sbgp、5_ipv6  亚太-香港：5_bgp  亚太-曼谷：5_bgp  亚太-新加坡：5_bgp  非洲-约翰内斯堡：5_bgp  西南-贵阳一：5_bgp、5_sbgp  华北-北京四：5_bgp、5_sbgp  约束：必须是系统具体支持的类型publicip_id为IPv4端口，所以\&quot;publicip_type\&quot;字段未给定时，默认为5_bgp。
+        :type type: str
+        :param public_ipv6_address: IPv4时无此字段，IPv6时为申请到的弹性公网IP地址
+        :type public_ipv6_address: str
+        :param ip_version: IP版本信息，取值范围是4和6
+        :type ip_version: int
+        :param enterprise_project_id: 企业项目ID。最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。  创建弹性公网IP时，给弹性公网IP绑定企业项目ID。
+        :type enterprise_project_id: str
+        :param alias: 功能说明：弹性公网IP名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
+        :type alias: str
+        """
         
         
 
@@ -108,7 +133,7 @@ class PublicipCreateResp:
         带宽大小，单位为Mbit/s。
 
         :param bandwidth_size: The bandwidth_size of this PublicipCreateResp.
-        :type: int
+        :type bandwidth_size: int
         """
         self._bandwidth_size = bandwidth_size
 
@@ -130,7 +155,7 @@ class PublicipCreateResp:
         弹性公网IP申请时间（UTC时间）
 
         :param create_time: The create_time of this PublicipCreateResp.
-        :type: datetime
+        :type create_time: datetime
         """
         self._create_time = create_time
 
@@ -152,7 +177,7 @@ class PublicipCreateResp:
         弹性公网IP唯一标识
 
         :param id: The id of this PublicipCreateResp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -174,7 +199,7 @@ class PublicipCreateResp:
         IPv4时是申请到的弹性公网IP地址，IPv6时是IPv6地址对应的IPv4地址
 
         :param public_ip_address: The public_ip_address of this PublicipCreateResp.
-        :type: str
+        :type public_ip_address: str
         """
         self._public_ip_address = public_ip_address
 
@@ -196,7 +221,7 @@ class PublicipCreateResp:
         功能说明：弹性公网IP的状态  取值范围：冻结FREEZED，绑定失败BIND_ERROR，绑定中BINDING，释放中PENDING_DELETE， 创建中PENDING_CREATE，创建中NOTIFYING，释放中NOTIFY_DELETE，更新中PENDING_UPDATE， 未绑定DOWN ，绑定ACTIVE，绑定ELB，绑定VPN，失败ERROR。
 
         :param status: The status of this PublicipCreateResp.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -218,7 +243,7 @@ class PublicipCreateResp:
         项目ID
 
         :param tenant_id: The tenant_id of this PublicipCreateResp.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 
@@ -240,7 +265,7 @@ class PublicipCreateResp:
         功能说明：弹性IP弹性公网IP的类型  取值范围：5_telcom（电信），5_union（联通），5_bgp（全动态BGP），5_sbgp（静态BGP），5_ipv6  东北-大连：5_telcom、5_union  华南-广州：5_bgp、5_sbgp  华东-上海二：5_bgp、5_sbgp  华北-北京一：5_bgp、5_sbgp、5_ipv6  亚太-香港：5_bgp  亚太-曼谷：5_bgp  亚太-新加坡：5_bgp  非洲-约翰内斯堡：5_bgp  西南-贵阳一：5_bgp、5_sbgp  华北-北京四：5_bgp、5_sbgp  约束：必须是系统具体支持的类型publicip_id为IPv4端口，所以\"publicip_type\"字段未给定时，默认为5_bgp。
 
         :param type: The type of this PublicipCreateResp.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -262,7 +287,7 @@ class PublicipCreateResp:
         IPv4时无此字段，IPv6时为申请到的弹性公网IP地址
 
         :param public_ipv6_address: The public_ipv6_address of this PublicipCreateResp.
-        :type: str
+        :type public_ipv6_address: str
         """
         self._public_ipv6_address = public_ipv6_address
 
@@ -284,7 +309,7 @@ class PublicipCreateResp:
         IP版本信息，取值范围是4和6
 
         :param ip_version: The ip_version of this PublicipCreateResp.
-        :type: int
+        :type ip_version: int
         """
         self._ip_version = ip_version
 
@@ -306,7 +331,7 @@ class PublicipCreateResp:
         企业项目ID。最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。  创建弹性公网IP时，给弹性公网IP绑定企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this PublicipCreateResp.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -328,7 +353,7 @@ class PublicipCreateResp:
         功能说明：弹性公网IP名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
         :param alias: The alias of this PublicipCreateResp.
-        :type: str
+        :type alias: str
         """
         self._alias = alias
 

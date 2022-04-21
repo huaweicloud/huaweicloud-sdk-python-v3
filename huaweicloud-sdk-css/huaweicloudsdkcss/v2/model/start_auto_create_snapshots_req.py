@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StartAutoCreateSnapshotsReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class StartAutoCreateSnapshotsReq:
     }
 
     def __init__(self, indices=None, keepday=None, period=None, prefix=None):
-        """StartAutoCreateSnapshotsReq - a model defined in huaweicloud sdk"""
+        """StartAutoCreateSnapshotsReq
+
+        The model defined in huaweicloud sdk
+
+        :param indices: 指定要恢复的索引名称，多个索引用逗号隔开，默认恢复所有索引。支持使用“\\*”匹配多个索引，例如：2018-06\\*，表示恢复名称前缀是2018-06的所有索引的数据。  0～1024个字符，不能包含空格和大写字母，且不能包含\\\&quot;\\\\&lt;|&gt;/?特殊字符。  默认值为\\*，表示恢复所有索引。
+        :type indices: str
+        :param keepday: 设置快照保留的天数，范围是1～90。系统在半点时刻会自动删除超过保留天数的快照。
+        :type keepday: int
+        :param period: 每天创建快照的时刻，只支持整点，后面需加上时区，格式为“HH:mm z”，“HH:mm”表示整点时间，“z”表示时区。比如“00:00 GMT+08:00”、“01:00 GMT+08:00”等。
+        :type period: str
+        :param prefix: 自动创建的快照名称前缀。
+        :type prefix: str
+        """
         
         
 
@@ -70,7 +81,7 @@ class StartAutoCreateSnapshotsReq:
         指定要恢复的索引名称，多个索引用逗号隔开，默认恢复所有索引。支持使用“\\*”匹配多个索引，例如：2018-06\\*，表示恢复名称前缀是2018-06的所有索引的数据。  0～1024个字符，不能包含空格和大写字母，且不能包含\\\"\\\\<|>/?特殊字符。  默认值为\\*，表示恢复所有索引。
 
         :param indices: The indices of this StartAutoCreateSnapshotsReq.
-        :type: str
+        :type indices: str
         """
         self._indices = indices
 
@@ -92,7 +103,7 @@ class StartAutoCreateSnapshotsReq:
         设置快照保留的天数，范围是1～90。系统在半点时刻会自动删除超过保留天数的快照。
 
         :param keepday: The keepday of this StartAutoCreateSnapshotsReq.
-        :type: int
+        :type keepday: int
         """
         self._keepday = keepday
 
@@ -114,7 +125,7 @@ class StartAutoCreateSnapshotsReq:
         每天创建快照的时刻，只支持整点，后面需加上时区，格式为“HH:mm z”，“HH:mm”表示整点时间，“z”表示时区。比如“00:00 GMT+08:00”、“01:00 GMT+08:00”等。
 
         :param period: The period of this StartAutoCreateSnapshotsReq.
-        :type: str
+        :type period: str
         """
         self._period = period
 
@@ -136,7 +147,7 @@ class StartAutoCreateSnapshotsReq:
         自动创建的快照名称前缀。
 
         :param prefix: The prefix of this StartAutoCreateSnapshotsReq.
-        :type: str
+        :type prefix: str
         """
         self._prefix = prefix
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPipleineBuildResultResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListPipleineBuildResultResponse(SdkResponse):
     }
 
     def __init__(self, offset=None, limit=None, total=None, build_results=None):
-        """ListPipleineBuildResultResponse - a model defined in huaweicloud sdk"""
+        """ListPipleineBuildResultResponse
+
+        The model defined in huaweicloud sdk
+
+        :param offset: 偏移量,表示从此偏移量开始查询,offset大于等于0
+        :type offset: int
+        :param limit: 每次查询的条目数量
+        :type limit: int
+        :param total: 总条目数量
+        :type total: int
+        :param build_results: 执行状况数据列表
+        :type build_results: list[:class:`huaweicloudsdkcloudpipeline.v2.PipelineBuildResult`]
+        """
         
         super(ListPipleineBuildResultResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class ListPipleineBuildResultResponse(SdkResponse):
         偏移量,表示从此偏移量开始查询,offset大于等于0
 
         :param offset: The offset of this ListPipleineBuildResultResponse.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -95,7 +106,7 @@ class ListPipleineBuildResultResponse(SdkResponse):
         每次查询的条目数量
 
         :param limit: The limit of this ListPipleineBuildResultResponse.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -117,7 +128,7 @@ class ListPipleineBuildResultResponse(SdkResponse):
         总条目数量
 
         :param total: The total of this ListPipleineBuildResultResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -128,7 +139,7 @@ class ListPipleineBuildResultResponse(SdkResponse):
         执行状况数据列表
 
         :return: The build_results of this ListPipleineBuildResultResponse.
-        :rtype: list[PipelineBuildResult]
+        :rtype: list[:class:`huaweicloudsdkcloudpipeline.v2.PipelineBuildResult`]
         """
         return self._build_results
 
@@ -139,7 +150,7 @@ class ListPipleineBuildResultResponse(SdkResponse):
         执行状况数据列表
 
         :param build_results: The build_results of this ListPipleineBuildResultResponse.
-        :type: list[PipelineBuildResult]
+        :type build_results: list[:class:`huaweicloudsdkcloudpipeline.v2.PipelineBuildResult`]
         """
         self._build_results = build_results
 

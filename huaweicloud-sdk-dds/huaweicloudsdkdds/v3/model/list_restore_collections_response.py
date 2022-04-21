@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRestoreCollectionsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListRestoreCollectionsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, collections=None):
-        """ListRestoreCollectionsResponse - a model defined in huaweicloud sdk"""
+        """ListRestoreCollectionsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total_count: 集合总数。
+        :type total_count: int
+        :param collections: 集合列表，列表中每个元素表示一个集合。
+        :type collections: list[str]
+        """
         
         super(ListRestoreCollectionsResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListRestoreCollectionsResponse(SdkResponse):
         集合总数。
 
         :param total_count: The total_count of this ListRestoreCollectionsResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 
@@ -85,7 +92,7 @@ class ListRestoreCollectionsResponse(SdkResponse):
         集合列表，列表中每个元素表示一个集合。
 
         :param collections: The collections of this ListRestoreCollectionsResponse.
-        :type: list[str]
+        :type collections: list[str]
         """
         self._collections = collections
 

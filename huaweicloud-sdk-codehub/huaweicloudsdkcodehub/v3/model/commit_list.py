@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CommitList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CommitList:
     }
 
     def __init__(self, commits=None, total=None):
-        """CommitList - a model defined in huaweicloud sdk"""
+        """CommitList
+
+        The model defined in huaweicloud sdk
+
+        :param commits: 提交列表
+        :type commits: list[:class:`huaweicloudsdkcodehub.v3.Commit`]
+        :param total: 提交总数
+        :type total: int
+        """
         
         
 
@@ -52,7 +59,7 @@ class CommitList:
         提交列表
 
         :return: The commits of this CommitList.
-        :rtype: list[Commit]
+        :rtype: list[:class:`huaweicloudsdkcodehub.v3.Commit`]
         """
         return self._commits
 
@@ -63,7 +70,7 @@ class CommitList:
         提交列表
 
         :param commits: The commits of this CommitList.
-        :type: list[Commit]
+        :type commits: list[:class:`huaweicloudsdkcodehub.v3.Commit`]
         """
         self._commits = commits
 
@@ -85,7 +92,7 @@ class CommitList:
         提交总数
 
         :param total: The total of this CommitList.
-        :type: int
+        :type total: int
         """
         self._total = total
 

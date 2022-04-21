@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteDatabaseRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class DeleteDatabaseRequest:
     }
 
     def __init__(self, instance_id=None, ddm_dbname=None, delete_rds_data=None):
-        """DeleteDatabaseRequest - a model defined in huaweicloud sdk"""
+        """DeleteDatabaseRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: DDM实例ID。
+        :type instance_id: str
+        :param ddm_dbname: 需要查询的逻辑库名称，不区分大小写。
+        :type ddm_dbname: str
+        :param delete_rds_data: 是否同时删除关联后端数据库实例上存储的数据。 - 取值为“true”：删除。 - 取值为空或“false”：不删除。 默认值为空。
+        :type delete_rds_data: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class DeleteDatabaseRequest:
         DDM实例ID。
 
         :param instance_id: The instance_id of this DeleteDatabaseRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -88,7 +97,7 @@ class DeleteDatabaseRequest:
         需要查询的逻辑库名称，不区分大小写。
 
         :param ddm_dbname: The ddm_dbname of this DeleteDatabaseRequest.
-        :type: str
+        :type ddm_dbname: str
         """
         self._ddm_dbname = ddm_dbname
 
@@ -110,7 +119,7 @@ class DeleteDatabaseRequest:
         是否同时删除关联后端数据库实例上存储的数据。 - 取值为“true”：删除。 - 取值为空或“false”：不删除。 默认值为空。
 
         :param delete_rds_data: The delete_rds_data of this DeleteDatabaseRequest.
-        :type: str
+        :type delete_rds_data: str
         """
         self._delete_rds_data = delete_rds_data
 

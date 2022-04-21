@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExpandShareResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ExpandShareResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None):
-        """ExpandShareResponse - a model defined in huaweicloud sdk"""
+        """ExpandShareResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: SFS Turbo文件系统ID。
+        :type id: str
+        :param name: SFS Turbo文件系统名称。
+        :type name: str
+        """
         
         super(ExpandShareResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ExpandShareResponse(SdkResponse):
         SFS Turbo文件系统ID。
 
         :param id: The id of this ExpandShareResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -85,7 +92,7 @@ class ExpandShareResponse(SdkResponse):
         SFS Turbo文件系统名称。
 
         :param name: The name of this ExpandShareResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 

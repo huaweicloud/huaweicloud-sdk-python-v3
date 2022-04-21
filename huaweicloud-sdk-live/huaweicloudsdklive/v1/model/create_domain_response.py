@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateDomainResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class CreateDomainResponse(SdkResponse):
     }
 
     def __init__(self, domain=None, domain_type=None, domain_cname=None, region=None, status=None, create_time=None, status_describe=None, service_area=None):
-        """CreateDomainResponse - a model defined in huaweicloud sdk"""
+        """CreateDomainResponse
+
+        The model defined in huaweicloud sdk
+
+        :param domain: 直播域名
+        :type domain: str
+        :param domain_type: 域名类型 - pull表示播放域名 - push表示推流域名 
+        :type domain_type: str
+        :param domain_cname: 直播域名的CNAME
+        :type domain_cname: str
+        :param region: 直播所属直播中心
+        :type region: str
+        :param status: 直播域名的状态
+        :type status: str
+        :param create_time: 域名创建时间，格式：yyyy-mm-ddThh:mm:ssZ，UTC时间
+        :type create_time: datetime
+        :param status_describe: 状态描述
+        :type status_describe: str
+        :param service_area: 域名应用区域 - mainland_china表示中国大陆区域 - outside_mainland_china表示中国大陆以外区域 - global表示全球区域 
+        :type service_area: str
+        """
         
         super(CreateDomainResponse, self).__init__()
 
@@ -93,7 +112,7 @@ class CreateDomainResponse(SdkResponse):
         直播域名
 
         :param domain: The domain of this CreateDomainResponse.
-        :type: str
+        :type domain: str
         """
         self._domain = domain
 
@@ -115,7 +134,7 @@ class CreateDomainResponse(SdkResponse):
         域名类型 - pull表示播放域名 - push表示推流域名 
 
         :param domain_type: The domain_type of this CreateDomainResponse.
-        :type: str
+        :type domain_type: str
         """
         self._domain_type = domain_type
 
@@ -137,7 +156,7 @@ class CreateDomainResponse(SdkResponse):
         直播域名的CNAME
 
         :param domain_cname: The domain_cname of this CreateDomainResponse.
-        :type: str
+        :type domain_cname: str
         """
         self._domain_cname = domain_cname
 
@@ -159,7 +178,7 @@ class CreateDomainResponse(SdkResponse):
         直播所属直播中心
 
         :param region: The region of this CreateDomainResponse.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -181,7 +200,7 @@ class CreateDomainResponse(SdkResponse):
         直播域名的状态
 
         :param status: The status of this CreateDomainResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -203,7 +222,7 @@ class CreateDomainResponse(SdkResponse):
         域名创建时间，格式：yyyy-mm-ddThh:mm:ssZ，UTC时间
 
         :param create_time: The create_time of this CreateDomainResponse.
-        :type: datetime
+        :type create_time: datetime
         """
         self._create_time = create_time
 
@@ -225,7 +244,7 @@ class CreateDomainResponse(SdkResponse):
         状态描述
 
         :param status_describe: The status_describe of this CreateDomainResponse.
-        :type: str
+        :type status_describe: str
         """
         self._status_describe = status_describe
 
@@ -247,7 +266,7 @@ class CreateDomainResponse(SdkResponse):
         域名应用区域 - mainland_china表示中国大陆区域 - outside_mainland_china表示中国大陆以外区域 - global表示全球区域 
 
         :param service_area: The service_area of this CreateDomainResponse.
-        :type: str
+        :type service_area: str
         """
         self._service_area = service_area
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShrinkNodesReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShrinkNodesReq:
     }
 
     def __init__(self, shrink_nodes=None):
-        """ShrinkNodesReq - a model defined in huaweicloud sdk"""
+        """ShrinkNodesReq
+
+        The model defined in huaweicloud sdk
+
+        :param shrink_nodes: 需要下线的节点ID。
+        :type shrink_nodes: list[str]
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShrinkNodesReq:
         需要下线的节点ID。
 
         :param shrink_nodes: The shrink_nodes of this ShrinkNodesReq.
-        :type: list[str]
+        :type shrink_nodes: list[str]
         """
         self._shrink_nodes = shrink_nodes
 

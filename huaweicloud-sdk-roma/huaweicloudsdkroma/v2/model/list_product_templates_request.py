@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListProductTemplatesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class ListProductTemplatesRequest:
     }
 
     def __init__(self, instance_id=None, limit=None, id=None, name=None, status=None, created_user_name=None, created_date_start=None, created_date_end=None, offset=None):
-        """ListProductTemplatesRequest - a model defined in huaweicloud sdk"""
+        """ListProductTemplatesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param limit: 每页显示条目数量，最大数量999，超过999后只返回999
+        :type limit: int
+        :param id: 产品模板ID
+        :type id: int
+        :param name: 产品模板名称
+        :type name: str
+        :param status: 产品模板状态 0-启用 1-停用
+        :type status: int
+        :param created_user_name: 创建用户名
+        :type created_user_name: str
+        :param created_date_start: 创建时间起始，格式timestamp(ms)，使用UTC时区
+        :type created_date_start: int
+        :param created_date_end: 创建时间截止，格式timestamp(ms)，使用UTC时区
+        :type created_date_end: int
+        :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0
+        :type offset: int
+        """
         
         
 
@@ -97,7 +118,7 @@ class ListProductTemplatesRequest:
         实例ID
 
         :param instance_id: The instance_id of this ListProductTemplatesRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -119,7 +140,7 @@ class ListProductTemplatesRequest:
         每页显示条目数量，最大数量999，超过999后只返回999
 
         :param limit: The limit of this ListProductTemplatesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -141,7 +162,7 @@ class ListProductTemplatesRequest:
         产品模板ID
 
         :param id: The id of this ListProductTemplatesRequest.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -163,7 +184,7 @@ class ListProductTemplatesRequest:
         产品模板名称
 
         :param name: The name of this ListProductTemplatesRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -185,7 +206,7 @@ class ListProductTemplatesRequest:
         产品模板状态 0-启用 1-停用
 
         :param status: The status of this ListProductTemplatesRequest.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -207,7 +228,7 @@ class ListProductTemplatesRequest:
         创建用户名
 
         :param created_user_name: The created_user_name of this ListProductTemplatesRequest.
-        :type: str
+        :type created_user_name: str
         """
         self._created_user_name = created_user_name
 
@@ -229,7 +250,7 @@ class ListProductTemplatesRequest:
         创建时间起始，格式timestamp(ms)，使用UTC时区
 
         :param created_date_start: The created_date_start of this ListProductTemplatesRequest.
-        :type: int
+        :type created_date_start: int
         """
         self._created_date_start = created_date_start
 
@@ -251,7 +272,7 @@ class ListProductTemplatesRequest:
         创建时间截止，格式timestamp(ms)，使用UTC时区
 
         :param created_date_end: The created_date_end of this ListProductTemplatesRequest.
-        :type: int
+        :type created_date_end: int
         """
         self._created_date_end = created_date_end
 
@@ -273,7 +294,7 @@ class ListProductTemplatesRequest:
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
         :param offset: The offset of this ListProductTemplatesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 

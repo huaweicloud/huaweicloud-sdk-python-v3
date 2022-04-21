@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GetHostListInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class GetHostListInfo:
     }
 
     def __init__(self, host_id=None, host_ip=None, host_name=None, host_status=None, host_type=None, host_version=None, update_time=None):
-        """GetHostListInfo - a model defined in huaweicloud sdk"""
+        """GetHostListInfo
+
+        The model defined in huaweicloud sdk
+
+        :param host_id: 主机ID
+        :type host_id: str
+        :param host_ip: 主机IP
+        :type host_ip: str
+        :param host_name: 主机名称
+        :type host_name: str
+        :param host_status: 主机状态。 uninstall:未安装 running:运行 offline:离线 error:异常 plugin error:插件错误 installing:安装中 install-fail:安装失败 upgrading:升级中 upgrading-transient:升级中 upgrade failed:升级失败 upgrade-fail:升级失败 uninstalling:卸载中 uninstalling-transient:卸载中 authentication error:鉴权失败
+        :type host_status: str
+        :param host_type: 主机类型。linux:linux类型,windows:windows类型
+        :type host_type: str
+        :param host_version: 主机版本
+        :type host_version: str
+        :param update_time: 更新时间
+        :type update_time: int
+        """
         
         
 
@@ -88,7 +105,7 @@ class GetHostListInfo:
         主机ID
 
         :param host_id: The host_id of this GetHostListInfo.
-        :type: str
+        :type host_id: str
         """
         self._host_id = host_id
 
@@ -110,7 +127,7 @@ class GetHostListInfo:
         主机IP
 
         :param host_ip: The host_ip of this GetHostListInfo.
-        :type: str
+        :type host_ip: str
         """
         self._host_ip = host_ip
 
@@ -132,7 +149,7 @@ class GetHostListInfo:
         主机名称
 
         :param host_name: The host_name of this GetHostListInfo.
-        :type: str
+        :type host_name: str
         """
         self._host_name = host_name
 
@@ -154,7 +171,7 @@ class GetHostListInfo:
         主机状态。 uninstall:未安装 running:运行 offline:离线 error:异常 plugin error:插件错误 installing:安装中 install-fail:安装失败 upgrading:升级中 upgrading-transient:升级中 upgrade failed:升级失败 upgrade-fail:升级失败 uninstalling:卸载中 uninstalling-transient:卸载中 authentication error:鉴权失败
 
         :param host_status: The host_status of this GetHostListInfo.
-        :type: str
+        :type host_status: str
         """
         self._host_status = host_status
 
@@ -176,7 +193,7 @@ class GetHostListInfo:
         主机类型。linux:linux类型,windows:windows类型
 
         :param host_type: The host_type of this GetHostListInfo.
-        :type: str
+        :type host_type: str
         """
         self._host_type = host_type
 
@@ -198,7 +215,7 @@ class GetHostListInfo:
         主机版本
 
         :param host_version: The host_version of this GetHostListInfo.
-        :type: str
+        :type host_version: str
         """
         self._host_version = host_version
 
@@ -220,7 +237,7 @@ class GetHostListInfo:
         更新时间
 
         :param update_time: The update_time of this GetHostListInfo.
-        :type: int
+        :type update_time: int
         """
         self._update_time = update_time
 

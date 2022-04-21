@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateEdgeApplicationVersionResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -66,7 +65,49 @@ class CreateEdgeApplicationVersionResponse(SdkResponse):
     }
 
     def __init__(self, edge_app_id=None, name=None, deploy_type=None, version=None, description=None, create_time=None, update_time=None, state=None, liveness_probe=None, readiness_probe=None, arch=None, command=None, args=None, container_settings=None, outputs=None, inputs=None, services=None, publish_time=None, off_shelf_time=None):
-        """CreateEdgeApplicationVersionResponse - a model defined in huaweicloud sdk"""
+        """CreateEdgeApplicationVersionResponse
+
+        The model defined in huaweicloud sdk
+
+        :param edge_app_id: 应用ID
+        :type edge_app_id: str
+        :param name: 应用名称
+        :type name: str
+        :param deploy_type: 部署类型docker|process
+        :type deploy_type: str
+        :param version: 应用版本
+        :type version: str
+        :param description: 应用描述
+        :type description: str
+        :param create_time: 创建时间
+        :type create_time: str
+        :param update_time: 最后一次修改时间
+        :type update_time: str
+        :param state: 应用版本状态
+        :type state: str
+        :param liveness_probe: 
+        :type liveness_probe: :class:`huaweicloudsdkiotedge.v2.ProbeDTO`
+        :param readiness_probe: 
+        :type readiness_probe: :class:`huaweicloudsdkiotedge.v2.ProbeDTO`
+        :param arch: 架构
+        :type arch: list[str]
+        :param command: 启动命令
+        :type command: list[str]
+        :param args: 启动参数
+        :type args: list[str]
+        :param container_settings: 
+        :type container_settings: :class:`huaweicloudsdkiotedge.v2.ContainerSettingsDTO`
+        :param outputs: 应用输出路由端点
+        :type outputs: list[str]
+        :param inputs: 应用输入路由
+        :type inputs: list[str]
+        :param services: 应用实现的服务列表
+        :type services: list[str]
+        :param publish_time: 发布时间
+        :type publish_time: str
+        :param off_shelf_time: 下线时间
+        :type off_shelf_time: str
+        """
         
         super(CreateEdgeApplicationVersionResponse, self).__init__()
 
@@ -148,7 +189,7 @@ class CreateEdgeApplicationVersionResponse(SdkResponse):
         应用ID
 
         :param edge_app_id: The edge_app_id of this CreateEdgeApplicationVersionResponse.
-        :type: str
+        :type edge_app_id: str
         """
         self._edge_app_id = edge_app_id
 
@@ -170,7 +211,7 @@ class CreateEdgeApplicationVersionResponse(SdkResponse):
         应用名称
 
         :param name: The name of this CreateEdgeApplicationVersionResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -192,7 +233,7 @@ class CreateEdgeApplicationVersionResponse(SdkResponse):
         部署类型docker|process
 
         :param deploy_type: The deploy_type of this CreateEdgeApplicationVersionResponse.
-        :type: str
+        :type deploy_type: str
         """
         self._deploy_type = deploy_type
 
@@ -214,7 +255,7 @@ class CreateEdgeApplicationVersionResponse(SdkResponse):
         应用版本
 
         :param version: The version of this CreateEdgeApplicationVersionResponse.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -236,7 +277,7 @@ class CreateEdgeApplicationVersionResponse(SdkResponse):
         应用描述
 
         :param description: The description of this CreateEdgeApplicationVersionResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -258,7 +299,7 @@ class CreateEdgeApplicationVersionResponse(SdkResponse):
         创建时间
 
         :param create_time: The create_time of this CreateEdgeApplicationVersionResponse.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -280,7 +321,7 @@ class CreateEdgeApplicationVersionResponse(SdkResponse):
         最后一次修改时间
 
         :param update_time: The update_time of this CreateEdgeApplicationVersionResponse.
-        :type: str
+        :type update_time: str
         """
         self._update_time = update_time
 
@@ -302,7 +343,7 @@ class CreateEdgeApplicationVersionResponse(SdkResponse):
         应用版本状态
 
         :param state: The state of this CreateEdgeApplicationVersionResponse.
-        :type: str
+        :type state: str
         """
         self._state = state
 
@@ -312,7 +353,7 @@ class CreateEdgeApplicationVersionResponse(SdkResponse):
 
 
         :return: The liveness_probe of this CreateEdgeApplicationVersionResponse.
-        :rtype: ProbeDTO
+        :rtype: :class:`huaweicloudsdkiotedge.v2.ProbeDTO`
         """
         return self._liveness_probe
 
@@ -322,7 +363,7 @@ class CreateEdgeApplicationVersionResponse(SdkResponse):
 
 
         :param liveness_probe: The liveness_probe of this CreateEdgeApplicationVersionResponse.
-        :type: ProbeDTO
+        :type liveness_probe: :class:`huaweicloudsdkiotedge.v2.ProbeDTO`
         """
         self._liveness_probe = liveness_probe
 
@@ -332,7 +373,7 @@ class CreateEdgeApplicationVersionResponse(SdkResponse):
 
 
         :return: The readiness_probe of this CreateEdgeApplicationVersionResponse.
-        :rtype: ProbeDTO
+        :rtype: :class:`huaweicloudsdkiotedge.v2.ProbeDTO`
         """
         return self._readiness_probe
 
@@ -342,7 +383,7 @@ class CreateEdgeApplicationVersionResponse(SdkResponse):
 
 
         :param readiness_probe: The readiness_probe of this CreateEdgeApplicationVersionResponse.
-        :type: ProbeDTO
+        :type readiness_probe: :class:`huaweicloudsdkiotedge.v2.ProbeDTO`
         """
         self._readiness_probe = readiness_probe
 
@@ -364,7 +405,7 @@ class CreateEdgeApplicationVersionResponse(SdkResponse):
         架构
 
         :param arch: The arch of this CreateEdgeApplicationVersionResponse.
-        :type: list[str]
+        :type arch: list[str]
         """
         self._arch = arch
 
@@ -386,7 +427,7 @@ class CreateEdgeApplicationVersionResponse(SdkResponse):
         启动命令
 
         :param command: The command of this CreateEdgeApplicationVersionResponse.
-        :type: list[str]
+        :type command: list[str]
         """
         self._command = command
 
@@ -408,7 +449,7 @@ class CreateEdgeApplicationVersionResponse(SdkResponse):
         启动参数
 
         :param args: The args of this CreateEdgeApplicationVersionResponse.
-        :type: list[str]
+        :type args: list[str]
         """
         self._args = args
 
@@ -418,7 +459,7 @@ class CreateEdgeApplicationVersionResponse(SdkResponse):
 
 
         :return: The container_settings of this CreateEdgeApplicationVersionResponse.
-        :rtype: ContainerSettingsDTO
+        :rtype: :class:`huaweicloudsdkiotedge.v2.ContainerSettingsDTO`
         """
         return self._container_settings
 
@@ -428,7 +469,7 @@ class CreateEdgeApplicationVersionResponse(SdkResponse):
 
 
         :param container_settings: The container_settings of this CreateEdgeApplicationVersionResponse.
-        :type: ContainerSettingsDTO
+        :type container_settings: :class:`huaweicloudsdkiotedge.v2.ContainerSettingsDTO`
         """
         self._container_settings = container_settings
 
@@ -450,7 +491,7 @@ class CreateEdgeApplicationVersionResponse(SdkResponse):
         应用输出路由端点
 
         :param outputs: The outputs of this CreateEdgeApplicationVersionResponse.
-        :type: list[str]
+        :type outputs: list[str]
         """
         self._outputs = outputs
 
@@ -472,7 +513,7 @@ class CreateEdgeApplicationVersionResponse(SdkResponse):
         应用输入路由
 
         :param inputs: The inputs of this CreateEdgeApplicationVersionResponse.
-        :type: list[str]
+        :type inputs: list[str]
         """
         self._inputs = inputs
 
@@ -494,7 +535,7 @@ class CreateEdgeApplicationVersionResponse(SdkResponse):
         应用实现的服务列表
 
         :param services: The services of this CreateEdgeApplicationVersionResponse.
-        :type: list[str]
+        :type services: list[str]
         """
         self._services = services
 
@@ -516,7 +557,7 @@ class CreateEdgeApplicationVersionResponse(SdkResponse):
         发布时间
 
         :param publish_time: The publish_time of this CreateEdgeApplicationVersionResponse.
-        :type: str
+        :type publish_time: str
         """
         self._publish_time = publish_time
 
@@ -538,7 +579,7 @@ class CreateEdgeApplicationVersionResponse(SdkResponse):
         下线时间
 
         :param off_shelf_time: The off_shelf_time of this CreateEdgeApplicationVersionResponse.
-        :type: str
+        :type off_shelf_time: str
         """
         self._off_shelf_time = off_shelf_time
 

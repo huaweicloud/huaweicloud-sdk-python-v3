@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IndicatorParam:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class IndicatorParam:
     }
 
     def __init__(self, customize_parameter=None, customize_formula=None):
-        """IndicatorParam - a model defined in huaweicloud sdk"""
+        """IndicatorParam
+
+        The model defined in huaweicloud sdk
+
+        :param customize_parameter: 
+        :type customize_parameter: :class:`huaweicloudsdkres.v1.CustomizeParameter`
+        :param customize_formula: 
+        :type customize_formula: :class:`huaweicloudsdkres.v1.CustomizeFormula`
+        """
         
         
 
@@ -51,7 +58,7 @@ class IndicatorParam:
 
 
         :return: The customize_parameter of this IndicatorParam.
-        :rtype: CustomizeParameter
+        :rtype: :class:`huaweicloudsdkres.v1.CustomizeParameter`
         """
         return self._customize_parameter
 
@@ -61,7 +68,7 @@ class IndicatorParam:
 
 
         :param customize_parameter: The customize_parameter of this IndicatorParam.
-        :type: CustomizeParameter
+        :type customize_parameter: :class:`huaweicloudsdkres.v1.CustomizeParameter`
         """
         self._customize_parameter = customize_parameter
 
@@ -71,7 +78,7 @@ class IndicatorParam:
 
 
         :return: The customize_formula of this IndicatorParam.
-        :rtype: CustomizeFormula
+        :rtype: :class:`huaweicloudsdkres.v1.CustomizeFormula`
         """
         return self._customize_formula
 
@@ -81,7 +88,7 @@ class IndicatorParam:
 
 
         :param customize_formula: The customize_formula of this IndicatorParam.
-        :type: CustomizeFormula
+        :type customize_formula: :class:`huaweicloudsdkres.v1.CustomizeFormula`
         """
         self._customize_formula = customize_formula
 

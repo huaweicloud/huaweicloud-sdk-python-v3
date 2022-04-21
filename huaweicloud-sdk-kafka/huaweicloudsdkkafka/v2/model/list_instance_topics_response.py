@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListInstanceTopicsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListInstanceTopicsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, size=None, remain_partitions=None, max_partitions=None, topics=None):
-        """ListInstanceTopicsResponse - a model defined in huaweicloud sdk"""
+        """ListInstanceTopicsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: topic总数。
+        :type total: int
+        :param size: 分页查询的大小。
+        :type size: int
+        :param remain_partitions: 剩余分区数。
+        :type remain_partitions: int
+        :param max_partitions: 分区总数。
+        :type max_partitions: int
+        :param topics: topic列表。
+        :type topics: list[:class:`huaweicloudsdkkafka.v2.TopicEntity`]
+        """
         
         super(ListInstanceTopicsResponse, self).__init__()
 
@@ -78,7 +91,7 @@ class ListInstanceTopicsResponse(SdkResponse):
         topic总数。
 
         :param total: The total of this ListInstanceTopicsResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -100,7 +113,7 @@ class ListInstanceTopicsResponse(SdkResponse):
         分页查询的大小。
 
         :param size: The size of this ListInstanceTopicsResponse.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -122,7 +135,7 @@ class ListInstanceTopicsResponse(SdkResponse):
         剩余分区数。
 
         :param remain_partitions: The remain_partitions of this ListInstanceTopicsResponse.
-        :type: int
+        :type remain_partitions: int
         """
         self._remain_partitions = remain_partitions
 
@@ -144,7 +157,7 @@ class ListInstanceTopicsResponse(SdkResponse):
         分区总数。
 
         :param max_partitions: The max_partitions of this ListInstanceTopicsResponse.
-        :type: int
+        :type max_partitions: int
         """
         self._max_partitions = max_partitions
 
@@ -155,7 +168,7 @@ class ListInstanceTopicsResponse(SdkResponse):
         topic列表。
 
         :return: The topics of this ListInstanceTopicsResponse.
-        :rtype: list[TopicEntity]
+        :rtype: list[:class:`huaweicloudsdkkafka.v2.TopicEntity`]
         """
         return self._topics
 
@@ -166,7 +179,7 @@ class ListInstanceTopicsResponse(SdkResponse):
         topic列表。
 
         :param topics: The topics of this ListInstanceTopicsResponse.
-        :type: list[TopicEntity]
+        :type topics: list[:class:`huaweicloudsdkkafka.v2.TopicEntity`]
         """
         self._topics = topics
 

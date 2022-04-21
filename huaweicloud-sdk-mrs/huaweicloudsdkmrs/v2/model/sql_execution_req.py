@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SqlExecutionReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class SqlExecutionReq:
     }
 
     def __init__(self, sql_type=None, sql_content=None, database=None, archive_path=None):
-        """SqlExecutionReq - a model defined in huaweicloud sdk"""
+        """SqlExecutionReq
+
+        The model defined in huaweicloud sdk
+
+        :param sql_type: SQL类型。目前仅支持“presto”类型的SQL。  说明： 只有包含Presto组件的集群才能提交执行presto类型的SQL。
+        :type sql_type: str
+        :param sql_content: 待执行的SQL语句。  说明： 目前仅支持执行单条语句，语句中不包含“;”。
+        :type sql_content: str
+        :param database: 执行SQL所在的数据库，默认为default。
+        :type database: str
+        :param archive_path: SQL执行结果的转储文件夹。  说明： 只有select语句才会转储查询的结果。当前仅支持转储到OBS中。
+        :type archive_path: str
+        """
         
         
 
@@ -71,7 +82,7 @@ class SqlExecutionReq:
         SQL类型。目前仅支持“presto”类型的SQL。  说明： 只有包含Presto组件的集群才能提交执行presto类型的SQL。
 
         :param sql_type: The sql_type of this SqlExecutionReq.
-        :type: str
+        :type sql_type: str
         """
         self._sql_type = sql_type
 
@@ -93,7 +104,7 @@ class SqlExecutionReq:
         待执行的SQL语句。  说明： 目前仅支持执行单条语句，语句中不包含“;”。
 
         :param sql_content: The sql_content of this SqlExecutionReq.
-        :type: str
+        :type sql_content: str
         """
         self._sql_content = sql_content
 
@@ -115,7 +126,7 @@ class SqlExecutionReq:
         执行SQL所在的数据库，默认为default。
 
         :param database: The database of this SqlExecutionReq.
-        :type: str
+        :type database: str
         """
         self._database = database
 
@@ -137,7 +148,7 @@ class SqlExecutionReq:
         SQL执行结果的转储文件夹。  说明： 只有select语句才会转储查询的结果。当前仅支持转储到OBS中。
 
         :param archive_path: The archive_path of this SqlExecutionReq.
-        :type: str
+        :type archive_path: str
         """
         self._archive_path = archive_path
 

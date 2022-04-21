@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListBatchTaskFilesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListBatchTaskFilesResponse(SdkResponse):
     }
 
     def __init__(self, files=None):
-        """ListBatchTaskFilesResponse - a model defined in huaweicloud sdk"""
+        """ListBatchTaskFilesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param files: 批量任务文件列表。
+        :type files: list[:class:`huaweicloudsdkiotda.v5.BatchTaskFile`]
+        """
         
         super(ListBatchTaskFilesResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListBatchTaskFilesResponse(SdkResponse):
         批量任务文件列表。
 
         :return: The files of this ListBatchTaskFilesResponse.
-        :rtype: list[BatchTaskFile]
+        :rtype: list[:class:`huaweicloudsdkiotda.v5.BatchTaskFile`]
         """
         return self._files
 
@@ -58,7 +63,7 @@ class ListBatchTaskFilesResponse(SdkResponse):
         批量任务文件列表。
 
         :param files: The files of this ListBatchTaskFilesResponse.
-        :type: list[BatchTaskFile]
+        :type files: list[:class:`huaweicloudsdkiotda.v5.BatchTaskFile`]
         """
         self._files = files
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowRepositoryArchiveRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowRepositoryArchiveRequest:
     }
 
     def __init__(self, repository_uuid=None, sha=None, format=None):
-        """ShowRepositoryArchiveRequest - a model defined in huaweicloud sdk"""
+        """ShowRepositoryArchiveRequest
+
+        The model defined in huaweicloud sdk
+
+        :param repository_uuid: 仓库的uuid
+        :type repository_uuid: str
+        :param sha: 分支名称
+        :type sha: str
+        :param format: 下载的压缩包格式
+        :type format: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class ShowRepositoryArchiveRequest:
         仓库的uuid
 
         :param repository_uuid: The repository_uuid of this ShowRepositoryArchiveRequest.
-        :type: str
+        :type repository_uuid: str
         """
         self._repository_uuid = repository_uuid
 
@@ -87,7 +96,7 @@ class ShowRepositoryArchiveRequest:
         分支名称
 
         :param sha: The sha of this ShowRepositoryArchiveRequest.
-        :type: str
+        :type sha: str
         """
         self._sha = sha
 
@@ -109,7 +118,7 @@ class ShowRepositoryArchiveRequest:
         下载的压缩包格式
 
         :param format: The format of this ShowRepositoryArchiveRequest.
-        :type: str
+        :type format: str
         """
         self._format = format
 

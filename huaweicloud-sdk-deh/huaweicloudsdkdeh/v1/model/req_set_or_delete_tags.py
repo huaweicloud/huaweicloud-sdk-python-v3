@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ReqSetOrDeleteTags:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ReqSetOrDeleteTags:
     }
 
     def __init__(self, tags=None, action=None):
-        """ReqSetOrDeleteTags - a model defined in huaweicloud sdk"""
+        """ReqSetOrDeleteTags
+
+        The model defined in huaweicloud sdk
+
+        :param tags: 标签列表。
+        :type tags: list[:class:`huaweicloudsdkdeh.v1.ResourceTag`]
+        :param action: 操作标识（仅支持小写）：create（创建），delete（删除）。
+        :type action: str
+        """
         
         
 
@@ -50,7 +57,7 @@ class ReqSetOrDeleteTags:
         标签列表。
 
         :return: The tags of this ReqSetOrDeleteTags.
-        :rtype: list[ResourceTag]
+        :rtype: list[:class:`huaweicloudsdkdeh.v1.ResourceTag`]
         """
         return self._tags
 
@@ -61,7 +68,7 @@ class ReqSetOrDeleteTags:
         标签列表。
 
         :param tags: The tags of this ReqSetOrDeleteTags.
-        :type: list[ResourceTag]
+        :type tags: list[:class:`huaweicloudsdkdeh.v1.ResourceTag`]
         """
         self._tags = tags
 
@@ -83,7 +90,7 @@ class ReqSetOrDeleteTags:
         操作标识（仅支持小写）：create（创建），delete（删除）。
 
         :param action: The action of this ReqSetOrDeleteTags.
-        :type: str
+        :type action: str
         """
         self._action = action
 

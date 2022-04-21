@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListNetworkInstancesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class ListNetworkInstancesRequest:
     }
 
     def __init__(self, limit=None, marker=None, id=None, name=None, description=None, status=None, type=None, cloud_connection_id=None, instance_id=None, region_id=None):
-        """ListNetworkInstancesRequest - a model defined in huaweicloud sdk"""
+        """ListNetworkInstancesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 分页查询时，每页返回的个数。
+        :type limit: int
+        :param marker: 分页查询时，上一页最后一条记录的ID，为空时为查询第一页。 使用说明：必须与limit一起使用。
+        :type marker: str
+        :param id: 根据ID过滤网络实例列表。
+        :type id: list[str]
+        :param name: 根据名称过滤网络实例列表。
+        :type name: list[str]
+        :param description: 根据描述过滤网络实例列表。
+        :type description: list[str]
+        :param status: 根据状态过滤网络实例列表。ACTIVE：表示状态可用。
+        :type status: list[str]
+        :param type: 根据类型过滤网络实例列表。
+        :type type: list[str]
+        :param cloud_connection_id: 根据云连接实例ID过滤网络实例列表。
+        :type cloud_connection_id: list[str]
+        :param instance_id: 根据VPC或者VGW的ID过滤网络实例列表。
+        :type instance_id: list[str]
+        :param region_id: 根据VPC或者VGW所在的Region过滤网络实例列表。
+        :type region_id: list[str]
+        """
         
         
 
@@ -103,7 +126,7 @@ class ListNetworkInstancesRequest:
         分页查询时，每页返回的个数。
 
         :param limit: The limit of this ListNetworkInstancesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -125,7 +148,7 @@ class ListNetworkInstancesRequest:
         分页查询时，上一页最后一条记录的ID，为空时为查询第一页。 使用说明：必须与limit一起使用。
 
         :param marker: The marker of this ListNetworkInstancesRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -147,7 +170,7 @@ class ListNetworkInstancesRequest:
         根据ID过滤网络实例列表。
 
         :param id: The id of this ListNetworkInstancesRequest.
-        :type: list[str]
+        :type id: list[str]
         """
         self._id = id
 
@@ -169,7 +192,7 @@ class ListNetworkInstancesRequest:
         根据名称过滤网络实例列表。
 
         :param name: The name of this ListNetworkInstancesRequest.
-        :type: list[str]
+        :type name: list[str]
         """
         self._name = name
 
@@ -191,7 +214,7 @@ class ListNetworkInstancesRequest:
         根据描述过滤网络实例列表。
 
         :param description: The description of this ListNetworkInstancesRequest.
-        :type: list[str]
+        :type description: list[str]
         """
         self._description = description
 
@@ -213,7 +236,7 @@ class ListNetworkInstancesRequest:
         根据状态过滤网络实例列表。ACTIVE：表示状态可用。
 
         :param status: The status of this ListNetworkInstancesRequest.
-        :type: list[str]
+        :type status: list[str]
         """
         self._status = status
 
@@ -235,7 +258,7 @@ class ListNetworkInstancesRequest:
         根据类型过滤网络实例列表。
 
         :param type: The type of this ListNetworkInstancesRequest.
-        :type: list[str]
+        :type type: list[str]
         """
         self._type = type
 
@@ -257,7 +280,7 @@ class ListNetworkInstancesRequest:
         根据云连接实例ID过滤网络实例列表。
 
         :param cloud_connection_id: The cloud_connection_id of this ListNetworkInstancesRequest.
-        :type: list[str]
+        :type cloud_connection_id: list[str]
         """
         self._cloud_connection_id = cloud_connection_id
 
@@ -279,7 +302,7 @@ class ListNetworkInstancesRequest:
         根据VPC或者VGW的ID过滤网络实例列表。
 
         :param instance_id: The instance_id of this ListNetworkInstancesRequest.
-        :type: list[str]
+        :type instance_id: list[str]
         """
         self._instance_id = instance_id
 
@@ -301,7 +324,7 @@ class ListNetworkInstancesRequest:
         根据VPC或者VGW所在的Region过滤网络实例列表。
 
         :param region_id: The region_id of this ListNetworkInstancesRequest.
-        :type: list[str]
+        :type region_id: list[str]
         """
         self._region_id = region_id
 

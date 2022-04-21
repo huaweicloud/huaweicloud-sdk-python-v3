@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Resources:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class Resources:
     }
 
     def __init__(self, enterprise_project_id=None, project_id=None, project_name=None, resource_detail=None, resource_id=None, resource_name=None, resource_type=None):
-        """Resources - a model defined in huaweicloud sdk"""
+        """Resources
+
+        The model defined in huaweicloud sdk
+
+        :param enterprise_project_id: 企业项目ID
+        :type enterprise_project_id: str
+        :param project_id: ProjectID
+        :type project_id: str
+        :param project_name: Project名称
+        :type project_name: str
+        :param resource_detail: 资源详情
+        :type resource_detail: object
+        :param resource_id: 资源ID
+        :type resource_id: str
+        :param resource_name: 资源名称
+        :type resource_name: str
+        :param resource_type: 资源类型
+        :type resource_type: str
+        """
         
         
 
@@ -81,7 +98,7 @@ class Resources:
         企业项目ID
 
         :param enterprise_project_id: The enterprise_project_id of this Resources.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -103,7 +120,7 @@ class Resources:
         ProjectID
 
         :param project_id: The project_id of this Resources.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -125,7 +142,7 @@ class Resources:
         Project名称
 
         :param project_name: The project_name of this Resources.
-        :type: str
+        :type project_name: str
         """
         self._project_name = project_name
 
@@ -147,7 +164,7 @@ class Resources:
         资源详情
 
         :param resource_detail: The resource_detail of this Resources.
-        :type: object
+        :type resource_detail: object
         """
         self._resource_detail = resource_detail
 
@@ -169,7 +186,7 @@ class Resources:
         资源ID
 
         :param resource_id: The resource_id of this Resources.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -191,7 +208,7 @@ class Resources:
         资源名称
 
         :param resource_name: The resource_name of this Resources.
-        :type: str
+        :type resource_name: str
         """
         self._resource_name = resource_name
 
@@ -213,7 +230,7 @@ class Resources:
         资源类型
 
         :param resource_type: The resource_type of this Resources.
-        :type: str
+        :type resource_type: str
         """
         self._resource_type = resource_type
 

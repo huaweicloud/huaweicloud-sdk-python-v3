@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowIterationV4Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowIterationV4Request:
     }
 
     def __init__(self, iteration_id=None):
-        """ShowIterationV4Request - a model defined in huaweicloud sdk"""
+        """ShowIterationV4Request
+
+        The model defined in huaweicloud sdk
+
+        :param iteration_id: 迭代id
+        :type iteration_id: int
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowIterationV4Request:
         迭代id
 
         :param iteration_id: The iteration_id of this ShowIterationV4Request.
-        :type: int
+        :type iteration_id: int
         """
         self._iteration_id = iteration_id
 

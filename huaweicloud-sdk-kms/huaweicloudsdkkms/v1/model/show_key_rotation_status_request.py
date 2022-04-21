@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowKeyRotationStatusRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowKeyRotationStatusRequest:
     }
 
     def __init__(self, version_id=None, body=None):
-        """ShowKeyRotationStatusRequest - a model defined in huaweicloud sdk"""
+        """ShowKeyRotationStatusRequest
+
+        The model defined in huaweicloud sdk
+
+        :param version_id: API版本号
+        :type version_id: str
+        :param body: Body of the ShowKeyRotationStatusRequest
+        :type body: :class:`huaweicloudsdkkms.v1.OperateKeyRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class ShowKeyRotationStatusRequest:
         API版本号
 
         :param version_id: The version_id of this ShowKeyRotationStatusRequest.
-        :type: str
+        :type version_id: str
         """
         self._version_id = version_id
 
@@ -72,7 +79,7 @@ class ShowKeyRotationStatusRequest:
 
 
         :return: The body of this ShowKeyRotationStatusRequest.
-        :rtype: OperateKeyRequestBody
+        :rtype: :class:`huaweicloudsdkkms.v1.OperateKeyRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class ShowKeyRotationStatusRequest:
 
 
         :param body: The body of this ShowKeyRotationStatusRequest.
-        :type: OperateKeyRequestBody
+        :type body: :class:`huaweicloudsdkkms.v1.OperateKeyRequestBody`
         """
         self._body = body
 

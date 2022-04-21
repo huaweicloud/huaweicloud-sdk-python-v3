@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QualityInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class QualityInfo:
     }
 
     def __init__(self, video=None, audio=None, format=None):
-        """QualityInfo - a model defined in huaweicloud sdk"""
+        """QualityInfo
+
+        The model defined in huaweicloud sdk
+
+        :param video: 
+        :type video: :class:`huaweicloudsdkvod.v1.VideoTemplateInfo`
+        :param audio: 
+        :type audio: :class:`huaweicloudsdkvod.v1.AudioTemplateInfo`
+        :param format: 格式。
+        :type format: str
+        """
         
         
 
@@ -55,7 +64,7 @@ class QualityInfo:
 
 
         :return: The video of this QualityInfo.
-        :rtype: VideoTemplateInfo
+        :rtype: :class:`huaweicloudsdkvod.v1.VideoTemplateInfo`
         """
         return self._video
 
@@ -65,7 +74,7 @@ class QualityInfo:
 
 
         :param video: The video of this QualityInfo.
-        :type: VideoTemplateInfo
+        :type video: :class:`huaweicloudsdkvod.v1.VideoTemplateInfo`
         """
         self._video = video
 
@@ -75,7 +84,7 @@ class QualityInfo:
 
 
         :return: The audio of this QualityInfo.
-        :rtype: AudioTemplateInfo
+        :rtype: :class:`huaweicloudsdkvod.v1.AudioTemplateInfo`
         """
         return self._audio
 
@@ -85,7 +94,7 @@ class QualityInfo:
 
 
         :param audio: The audio of this QualityInfo.
-        :type: AudioTemplateInfo
+        :type audio: :class:`huaweicloudsdkvod.v1.AudioTemplateInfo`
         """
         self._audio = audio
 
@@ -107,7 +116,7 @@ class QualityInfo:
         格式。
 
         :param format: The format of this QualityInfo.
-        :type: str
+        :type format: str
         """
         self._format = format
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SubPicLayoutInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class SubPicLayoutInfo:
     }
 
     def __init__(self, id=None, left=None, top=None, x_size=None, y_size=None):
-        """SubPicLayoutInfo - a model defined in huaweicloud sdk"""
+        """SubPicLayoutInfo
+
+        The model defined in huaweicloud sdk
+
+        :param id: 画面索引号
+        :type id: int
+        :param left: 画面从左到右的坐标点
+        :type left: int
+        :param top: 画面从上到下的坐标点
+        :type top: int
+        :param x_size: 小画面的宽度
+        :type x_size: int
+        :param y_size: 小画面的高度
+        :type y_size: int
+        """
         
         
 
@@ -78,7 +91,7 @@ class SubPicLayoutInfo:
         画面索引号
 
         :param id: The id of this SubPicLayoutInfo.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -100,7 +113,7 @@ class SubPicLayoutInfo:
         画面从左到右的坐标点
 
         :param left: The left of this SubPicLayoutInfo.
-        :type: int
+        :type left: int
         """
         self._left = left
 
@@ -122,7 +135,7 @@ class SubPicLayoutInfo:
         画面从上到下的坐标点
 
         :param top: The top of this SubPicLayoutInfo.
-        :type: int
+        :type top: int
         """
         self._top = top
 
@@ -144,7 +157,7 @@ class SubPicLayoutInfo:
         小画面的宽度
 
         :param x_size: The x_size of this SubPicLayoutInfo.
-        :type: int
+        :type x_size: int
         """
         self._x_size = x_size
 
@@ -166,7 +179,7 @@ class SubPicLayoutInfo:
         小画面的高度
 
         :param y_size: The y_size of this SubPicLayoutInfo.
-        :type: int
+        :type y_size: int
         """
         self._y_size = y_size
 

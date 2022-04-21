@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListProcessesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListProcessesResponse(SdkResponse):
     }
 
     def __init__(self, processes=None, count=None):
-        """ListProcessesResponse - a model defined in huaweicloud sdk"""
+        """ListProcessesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param processes: 会话列表
+        :type processes: list[:class:`huaweicloudsdkdas.v3.Process`]
+        :param count: 总记录数
+        :type count: int
+        """
         
         super(ListProcessesResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListProcessesResponse(SdkResponse):
         会话列表
 
         :return: The processes of this ListProcessesResponse.
-        :rtype: list[Process]
+        :rtype: list[:class:`huaweicloudsdkdas.v3.Process`]
         """
         return self._processes
 
@@ -63,7 +70,7 @@ class ListProcessesResponse(SdkResponse):
         会话列表
 
         :param processes: The processes of this ListProcessesResponse.
-        :type: list[Process]
+        :type processes: list[:class:`huaweicloudsdkdas.v3.Process`]
         """
         self._processes = processes
 
@@ -85,7 +92,7 @@ class ListProcessesResponse(SdkResponse):
         总记录数
 
         :param count: The count of this ListProcessesResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

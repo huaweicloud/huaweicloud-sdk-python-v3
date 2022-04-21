@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunTestCaseRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class RunTestCaseRequestBody:
     }
 
     def __init__(self, service_id=None, plan_id=None, execute_list=None):
-        """RunTestCaseRequestBody - a model defined in huaweicloud sdk"""
+        """RunTestCaseRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param service_id: 注册测试类型服务接口返回的服务id
+        :type service_id: int
+        :param plan_id: 测试计划id
+        :type plan_id: str
+        :param execute_list: 测试用例执行信息，数组长度小于等于50
+        :type execute_list: list[:class:`huaweicloudsdkcloudtest.v1.TestCaseExecuteBean`]
+        """
         
         
 
@@ -66,7 +75,7 @@ class RunTestCaseRequestBody:
         注册测试类型服务接口返回的服务id
 
         :param service_id: The service_id of this RunTestCaseRequestBody.
-        :type: int
+        :type service_id: int
         """
         self._service_id = service_id
 
@@ -88,7 +97,7 @@ class RunTestCaseRequestBody:
         测试计划id
 
         :param plan_id: The plan_id of this RunTestCaseRequestBody.
-        :type: str
+        :type plan_id: str
         """
         self._plan_id = plan_id
 
@@ -99,7 +108,7 @@ class RunTestCaseRequestBody:
         测试用例执行信息，数组长度小于等于50
 
         :return: The execute_list of this RunTestCaseRequestBody.
-        :rtype: list[TestCaseExecuteBean]
+        :rtype: list[:class:`huaweicloudsdkcloudtest.v1.TestCaseExecuteBean`]
         """
         return self._execute_list
 
@@ -110,7 +119,7 @@ class RunTestCaseRequestBody:
         测试用例执行信息，数组长度小于等于50
 
         :param execute_list: The execute_list of this RunTestCaseRequestBody.
-        :type: list[TestCaseExecuteBean]
+        :type execute_list: list[:class:`huaweicloudsdkcloudtest.v1.TestCaseExecuteBean`]
         """
         self._execute_list = execute_list
 

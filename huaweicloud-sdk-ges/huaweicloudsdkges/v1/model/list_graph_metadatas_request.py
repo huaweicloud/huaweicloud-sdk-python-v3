@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListGraphMetadatasRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListGraphMetadatasRequest:
     }
 
     def __init__(self, metadata_id=None):
-        """ListGraphMetadatasRequest - a model defined in huaweicloud sdk"""
+        """ListGraphMetadatasRequest
+
+        The model defined in huaweicloud sdk
+
+        :param metadata_id: 元数据ID。
+        :type metadata_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ListGraphMetadatasRequest:
         元数据ID。
 
         :param metadata_id: The metadata_id of this ListGraphMetadatasRequest.
-        :type: str
+        :type metadata_id: str
         """
         self._metadata_id = metadata_id
 

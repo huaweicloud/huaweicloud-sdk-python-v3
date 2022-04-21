@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateParametersReqValues:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -68,7 +67,51 @@ class UpdateParametersReqValues:
     }
 
     def __init__(self, bind_table=None, character_set_server=None, collation_server=None, concurrent_execution_level=None, connection_idle_timeout=None, enable_table_recycle=None, insert_to_load_data=None, live_transaction_timeout_on_shutdown=None, long_query_time=None, max_allowed_packet=None, max_backend_connections=None, max_connections=None, min_backend_connections=None, not_from_pushdown=None, seconds_behind_master=None, sql_audit=None, sql_execute_timeout=None, support_ddl_binlog_hint=None, transaction_policy=None, ultimate_optimize=None):
-        """UpdateParametersReqValues - a model defined in huaweicloud sdk"""
+        """UpdateParametersReqValues
+
+        The model defined in huaweicloud sdk
+
+        :param bind_table: 用于描述多个拆分表的内在数据关联性，用于告知优化器在处理join时，把join下推到MySQL层执行。格式为:[{tb.col1,tb2.col2},{tb.col2,tb3.col1},...]。
+        :type bind_table: str
+        :param character_set_server: DDM服务端字符集，如果需要存储emoji表情符号，请选择utf8mb4,并设置RDS字符集也为utf8mb4。修改DDM服务端字符集时，DDM服务端字符序必须同步修改为对应类型的值。
+        :type character_set_server: str
+        :param collation_server: DDM服务端字符序。修改DDM服务端字符序时，DDM服务端字符集必须同步修改为对应类型的值。
+        :type collation_server: str
+        :param concurrent_execution_level: 逻辑表扫描时的分片并发执行级别: DATA_NODE: 分库间并行扫描，同一分库内各分片串行扫描;RDS_INSTANCE: RDS实例间并行扫描，同一RDS实例内各分片串行扫描;PHY_TABLE: 各物理分片全部并行扫描。
+        :type concurrent_execution_level: str
+        :param connection_idle_timeout: 服务器关闭连接之前等待连接活动的秒数，以秒为单位，取值范围为60-28800，默认值28800，表示服务器关闭连接之前等待28800秒后，关闭连接。
+        :type connection_idle_timeout: str
+        :param enable_table_recycle: 是否开启表回收站。
+        :type enable_table_recycle: str
+        :param insert_to_load_data: insert 常量值使用load data执行。
+        :type insert_to_load_data: str
+        :param live_transaction_timeout_on_shutdown: 在途事务等待时间窗口，以秒为单位，取值范围为0-100，默认值为1，表示服务器关闭前端连接之前等待1秒后关闭连接。
+        :type live_transaction_timeout_on_shutdown: str
+        :param long_query_time: 记录慢查询的最小秒数,以秒为单位，取值范围为0.01-10，默认值为1，表示如果sql执行大于等于1秒就定义为慢sql。
+        :type long_query_time: str
+        :param max_allowed_packet: 包或任何生成的中间字符串的最大值。包缓冲区初始化为net_buffer_length字节，但需要时可以增长到max_allowed_packet字节。该值默认很小，以捕获大的（可能是错误的）数据包。该值必须设置为1024的倍数。取值范围为1024~1073741824，默认值为16777216。
+        :type max_allowed_packet: str
+        :param max_backend_connections: 允许每个DDM节点同时连接RDS的最大客户端总数。0为默认值标识符,实际值等于(RDS的最大连接数-20)/DDM节点数。取值范围为0-10000000。
+        :type max_backend_connections: str
+        :param max_connections: 允许同时连接的客户端总数。与后端RDS规格及数量有关。以个数为单位，取值范围为10-40000，默认值为20000，表示允许同时连接的客户端总数不能超过40000。
+        :type max_connections: str
+        :param min_backend_connections: 允许每个DDM节点同时连接RDS的最小客户端总数。默认值为10。取值范围为0-10000000。
+        :type min_backend_connections: str
+        :param not_from_pushdown: 是否强制下推查询语句中不含from的语句。
+        :type not_from_pushdown: str
+        :param seconds_behind_master: 主从rds节点延迟时间阈值，以秒为单位，取值范围为0-7200，默认值为30，表示主rds与从rds之间的数据同步时间值不能超过30秒，如果超过30s，读数据指令就不走当前读节点。
+        :type seconds_behind_master: str
+        :param sql_audit: 开启或关闭SQL审计。
+        :type sql_audit: str
+        :param sql_execute_timeout: SQL执行超时秒数，以秒为单位，取值范围为100-28800，默认值28800，表示sql执行大于等于28800秒超时。
+        :type sql_execute_timeout: str
+        :param support_ddl_binlog_hint: DDL语句添加binlog hint。
+        :type support_ddl_binlog_hint: str
+        :param transaction_policy: XA：XA 事务，保证原子性，保证可见性；FREE：允许多写，不保证原子性，无性能损耗；NO_DTX：单分片事务。
+        :type transaction_policy: str
+        :param ultimate_optimize: 开启或关闭优化器中的极致下推优化功能。
+        :type ultimate_optimize: str
+        """
         
         
 
@@ -153,7 +196,7 @@ class UpdateParametersReqValues:
         用于描述多个拆分表的内在数据关联性，用于告知优化器在处理join时，把join下推到MySQL层执行。格式为:[{tb.col1,tb2.col2},{tb.col2,tb3.col1},...]。
 
         :param bind_table: The bind_table of this UpdateParametersReqValues.
-        :type: str
+        :type bind_table: str
         """
         self._bind_table = bind_table
 
@@ -175,7 +218,7 @@ class UpdateParametersReqValues:
         DDM服务端字符集，如果需要存储emoji表情符号，请选择utf8mb4,并设置RDS字符集也为utf8mb4。修改DDM服务端字符集时，DDM服务端字符序必须同步修改为对应类型的值。
 
         :param character_set_server: The character_set_server of this UpdateParametersReqValues.
-        :type: str
+        :type character_set_server: str
         """
         self._character_set_server = character_set_server
 
@@ -197,7 +240,7 @@ class UpdateParametersReqValues:
         DDM服务端字符序。修改DDM服务端字符序时，DDM服务端字符集必须同步修改为对应类型的值。
 
         :param collation_server: The collation_server of this UpdateParametersReqValues.
-        :type: str
+        :type collation_server: str
         """
         self._collation_server = collation_server
 
@@ -219,7 +262,7 @@ class UpdateParametersReqValues:
         逻辑表扫描时的分片并发执行级别: DATA_NODE: 分库间并行扫描，同一分库内各分片串行扫描;RDS_INSTANCE: RDS实例间并行扫描，同一RDS实例内各分片串行扫描;PHY_TABLE: 各物理分片全部并行扫描。
 
         :param concurrent_execution_level: The concurrent_execution_level of this UpdateParametersReqValues.
-        :type: str
+        :type concurrent_execution_level: str
         """
         self._concurrent_execution_level = concurrent_execution_level
 
@@ -241,7 +284,7 @@ class UpdateParametersReqValues:
         服务器关闭连接之前等待连接活动的秒数，以秒为单位，取值范围为60-28800，默认值28800，表示服务器关闭连接之前等待28800秒后，关闭连接。
 
         :param connection_idle_timeout: The connection_idle_timeout of this UpdateParametersReqValues.
-        :type: str
+        :type connection_idle_timeout: str
         """
         self._connection_idle_timeout = connection_idle_timeout
 
@@ -263,7 +306,7 @@ class UpdateParametersReqValues:
         是否开启表回收站。
 
         :param enable_table_recycle: The enable_table_recycle of this UpdateParametersReqValues.
-        :type: str
+        :type enable_table_recycle: str
         """
         self._enable_table_recycle = enable_table_recycle
 
@@ -285,7 +328,7 @@ class UpdateParametersReqValues:
         insert 常量值使用load data执行。
 
         :param insert_to_load_data: The insert_to_load_data of this UpdateParametersReqValues.
-        :type: str
+        :type insert_to_load_data: str
         """
         self._insert_to_load_data = insert_to_load_data
 
@@ -307,7 +350,7 @@ class UpdateParametersReqValues:
         在途事务等待时间窗口，以秒为单位，取值范围为0-100，默认值为1，表示服务器关闭前端连接之前等待1秒后关闭连接。
 
         :param live_transaction_timeout_on_shutdown: The live_transaction_timeout_on_shutdown of this UpdateParametersReqValues.
-        :type: str
+        :type live_transaction_timeout_on_shutdown: str
         """
         self._live_transaction_timeout_on_shutdown = live_transaction_timeout_on_shutdown
 
@@ -329,7 +372,7 @@ class UpdateParametersReqValues:
         记录慢查询的最小秒数,以秒为单位，取值范围为0.01-10，默认值为1，表示如果sql执行大于等于1秒就定义为慢sql。
 
         :param long_query_time: The long_query_time of this UpdateParametersReqValues.
-        :type: str
+        :type long_query_time: str
         """
         self._long_query_time = long_query_time
 
@@ -351,7 +394,7 @@ class UpdateParametersReqValues:
         包或任何生成的中间字符串的最大值。包缓冲区初始化为net_buffer_length字节，但需要时可以增长到max_allowed_packet字节。该值默认很小，以捕获大的（可能是错误的）数据包。该值必须设置为1024的倍数。取值范围为1024~1073741824，默认值为16777216。
 
         :param max_allowed_packet: The max_allowed_packet of this UpdateParametersReqValues.
-        :type: str
+        :type max_allowed_packet: str
         """
         self._max_allowed_packet = max_allowed_packet
 
@@ -373,7 +416,7 @@ class UpdateParametersReqValues:
         允许每个DDM节点同时连接RDS的最大客户端总数。0为默认值标识符,实际值等于(RDS的最大连接数-20)/DDM节点数。取值范围为0-10000000。
 
         :param max_backend_connections: The max_backend_connections of this UpdateParametersReqValues.
-        :type: str
+        :type max_backend_connections: str
         """
         self._max_backend_connections = max_backend_connections
 
@@ -395,7 +438,7 @@ class UpdateParametersReqValues:
         允许同时连接的客户端总数。与后端RDS规格及数量有关。以个数为单位，取值范围为10-40000，默认值为20000，表示允许同时连接的客户端总数不能超过40000。
 
         :param max_connections: The max_connections of this UpdateParametersReqValues.
-        :type: str
+        :type max_connections: str
         """
         self._max_connections = max_connections
 
@@ -417,7 +460,7 @@ class UpdateParametersReqValues:
         允许每个DDM节点同时连接RDS的最小客户端总数。默认值为10。取值范围为0-10000000。
 
         :param min_backend_connections: The min_backend_connections of this UpdateParametersReqValues.
-        :type: str
+        :type min_backend_connections: str
         """
         self._min_backend_connections = min_backend_connections
 
@@ -439,7 +482,7 @@ class UpdateParametersReqValues:
         是否强制下推查询语句中不含from的语句。
 
         :param not_from_pushdown: The not_from_pushdown of this UpdateParametersReqValues.
-        :type: str
+        :type not_from_pushdown: str
         """
         self._not_from_pushdown = not_from_pushdown
 
@@ -461,7 +504,7 @@ class UpdateParametersReqValues:
         主从rds节点延迟时间阈值，以秒为单位，取值范围为0-7200，默认值为30，表示主rds与从rds之间的数据同步时间值不能超过30秒，如果超过30s，读数据指令就不走当前读节点。
 
         :param seconds_behind_master: The seconds_behind_master of this UpdateParametersReqValues.
-        :type: str
+        :type seconds_behind_master: str
         """
         self._seconds_behind_master = seconds_behind_master
 
@@ -483,7 +526,7 @@ class UpdateParametersReqValues:
         开启或关闭SQL审计。
 
         :param sql_audit: The sql_audit of this UpdateParametersReqValues.
-        :type: str
+        :type sql_audit: str
         """
         self._sql_audit = sql_audit
 
@@ -505,7 +548,7 @@ class UpdateParametersReqValues:
         SQL执行超时秒数，以秒为单位，取值范围为100-28800，默认值28800，表示sql执行大于等于28800秒超时。
 
         :param sql_execute_timeout: The sql_execute_timeout of this UpdateParametersReqValues.
-        :type: str
+        :type sql_execute_timeout: str
         """
         self._sql_execute_timeout = sql_execute_timeout
 
@@ -527,7 +570,7 @@ class UpdateParametersReqValues:
         DDL语句添加binlog hint。
 
         :param support_ddl_binlog_hint: The support_ddl_binlog_hint of this UpdateParametersReqValues.
-        :type: str
+        :type support_ddl_binlog_hint: str
         """
         self._support_ddl_binlog_hint = support_ddl_binlog_hint
 
@@ -549,7 +592,7 @@ class UpdateParametersReqValues:
         XA：XA 事务，保证原子性，保证可见性；FREE：允许多写，不保证原子性，无性能损耗；NO_DTX：单分片事务。
 
         :param transaction_policy: The transaction_policy of this UpdateParametersReqValues.
-        :type: str
+        :type transaction_policy: str
         """
         self._transaction_policy = transaction_policy
 
@@ -571,7 +614,7 @@ class UpdateParametersReqValues:
         开启或关闭优化器中的极致下推优化功能。
 
         :param ultimate_optimize: The ultimate_optimize of this UpdateParametersReqValues.
-        :type: str
+        :type ultimate_optimize: str
         """
         self._ultimate_optimize = ultimate_optimize
 

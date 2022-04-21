@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateCustomerAccountAmountResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateCustomerAccountAmountResponse(SdkResponse):
     }
 
     def __init__(self, transfer_id=None):
-        """UpdateCustomerAccountAmountResponse - a model defined in huaweicloud sdk"""
+        """UpdateCustomerAccountAmountResponse
+
+        The model defined in huaweicloud sdk
+
+        :param transfer_id: 事务流水ID，只有成功响应才会返回。
+        :type transfer_id: str
+        """
         
         super(UpdateCustomerAccountAmountResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class UpdateCustomerAccountAmountResponse(SdkResponse):
         事务流水ID，只有成功响应才会返回。
 
         :param transfer_id: The transfer_id of this UpdateCustomerAccountAmountResponse.
-        :type: str
+        :type transfer_id: str
         """
         self._transfer_id = transfer_id
 

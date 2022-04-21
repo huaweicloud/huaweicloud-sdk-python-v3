@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RecognizeWaybillElectronicResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RecognizeWaybillElectronicResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """RecognizeWaybillElectronicResponse - a model defined in huaweicloud sdk"""
+        """RecognizeWaybillElectronicResponse
+
+        The model defined in huaweicloud sdk
+
+        :param result: 
+        :type result: :class:`huaweicloudsdkocr.v1.WaybillElectronicResult`
+        """
         
         super(RecognizeWaybillElectronicResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class RecognizeWaybillElectronicResponse(SdkResponse):
 
 
         :return: The result of this RecognizeWaybillElectronicResponse.
-        :rtype: WaybillElectronicResult
+        :rtype: :class:`huaweicloudsdkocr.v1.WaybillElectronicResult`
         """
         return self._result
 
@@ -56,7 +61,7 @@ class RecognizeWaybillElectronicResponse(SdkResponse):
 
 
         :param result: The result of this RecognizeWaybillElectronicResponse.
-        :type: WaybillElectronicResult
+        :type result: :class:`huaweicloudsdkocr.v1.WaybillElectronicResult`
         """
         self._result = result
 

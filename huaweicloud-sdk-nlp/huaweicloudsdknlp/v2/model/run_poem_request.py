@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunPoemRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RunPoemRequest:
     }
 
     def __init__(self, body=None):
-        """RunPoemRequest - a model defined in huaweicloud sdk"""
+        """RunPoemRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the RunPoemRequest
+        :type body: :class:`huaweicloudsdknlp.v2.CreatePoem`
+        """
         
         
 
@@ -46,7 +51,7 @@ class RunPoemRequest:
 
 
         :return: The body of this RunPoemRequest.
-        :rtype: CreatePoem
+        :rtype: :class:`huaweicloudsdknlp.v2.CreatePoem`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class RunPoemRequest:
 
 
         :param body: The body of this RunPoemRequest.
-        :type: CreatePoem
+        :type body: :class:`huaweicloudsdknlp.v2.CreatePoem`
         """
         self._body = body
 

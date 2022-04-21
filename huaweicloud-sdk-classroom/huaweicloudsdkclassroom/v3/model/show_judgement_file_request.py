@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowJudgementFileRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowJudgementFileRequest:
     }
 
     def __init__(self, file_id=None):
-        """ShowJudgementFileRequest - a model defined in huaweicloud sdk"""
+        """ShowJudgementFileRequest
+
+        The model defined in huaweicloud sdk
+
+        :param file_id: 文件id，可以从接口[ShowJudgementDetail](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product&#x3D;Classroom&amp;api&#x3D;ShowJudgementDetail)的响应中获取
+        :type file_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowJudgementFileRequest:
         文件id，可以从接口[ShowJudgementDetail](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=Classroom&api=ShowJudgementDetail)的响应中获取
 
         :param file_id: The file_id of this ShowJudgementFileRequest.
-        :type: str
+        :type file_id: str
         """
         self._file_id = file_id
 

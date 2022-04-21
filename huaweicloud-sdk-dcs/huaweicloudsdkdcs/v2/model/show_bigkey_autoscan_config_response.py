@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowBigkeyAutoscanConfigResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowBigkeyAutoscanConfigResponse(SdkResponse):
     }
 
     def __init__(self, instance_id=None, enable_auto_scan=None, schedule_at=None, updated_at=None):
-        """ShowBigkeyAutoscanConfigResponse - a model defined in huaweicloud sdk"""
+        """ShowBigkeyAutoscanConfigResponse
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param enable_auto_scan: 是否开启自动分析
+        :type enable_auto_scan: bool
+        :param schedule_at: 每日分析时间，时间格式为21:00
+        :type schedule_at: list[str]
+        :param updated_at: 配置更新时间，时间格式为2020-06-15T02:21:18.669Z
+        :type updated_at: str
+        """
         
         super(ShowBigkeyAutoscanConfigResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class ShowBigkeyAutoscanConfigResponse(SdkResponse):
         实例ID
 
         :param instance_id: The instance_id of this ShowBigkeyAutoscanConfigResponse.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -95,7 +106,7 @@ class ShowBigkeyAutoscanConfigResponse(SdkResponse):
         是否开启自动分析
 
         :param enable_auto_scan: The enable_auto_scan of this ShowBigkeyAutoscanConfigResponse.
-        :type: bool
+        :type enable_auto_scan: bool
         """
         self._enable_auto_scan = enable_auto_scan
 
@@ -117,7 +128,7 @@ class ShowBigkeyAutoscanConfigResponse(SdkResponse):
         每日分析时间，时间格式为21:00
 
         :param schedule_at: The schedule_at of this ShowBigkeyAutoscanConfigResponse.
-        :type: list[str]
+        :type schedule_at: list[str]
         """
         self._schedule_at = schedule_at
 
@@ -139,7 +150,7 @@ class ShowBigkeyAutoscanConfigResponse(SdkResponse):
         配置更新时间，时间格式为2020-06-15T02:21:18.669Z
 
         :param updated_at: The updated_at of this ShowBigkeyAutoscanConfigResponse.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 

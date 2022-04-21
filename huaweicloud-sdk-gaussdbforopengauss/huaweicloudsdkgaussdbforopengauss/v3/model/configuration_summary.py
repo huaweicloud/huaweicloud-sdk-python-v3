@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ConfigurationSummary:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class ConfigurationSummary:
     }
 
     def __init__(self, id=None, name=None, description=None, datastore_version=None, datastore_name=None, ha_mode=None, created=None, updated=None, user_defined=None):
-        """ConfigurationSummary - a model defined in huaweicloud sdk"""
+        """ConfigurationSummary
+
+        The model defined in huaweicloud sdk
+
+        :param id: 参数组ID。
+        :type id: str
+        :param name: 参数组名称。
+        :type name: str
+        :param description: 参数组描述。
+        :type description: str
+        :param datastore_version: 引擎版本。
+        :type datastore_version: str
+        :param datastore_name: 引擎名称。
+        :type datastore_name: str
+        :param ha_mode: 数据库部署模式。
+        :type ha_mode: str
+        :param created: 创建时间，格式为\&quot;yyyy-MM-dd HH:mm:ss\&quot;。
+        :type created: str
+        :param updated: 更新时间，格式为\&quot;yyyy-MM-dd HH:mm:ss\&quot;。
+        :type updated: str
+        :param user_defined: 是否是用户自定义参数模板：  - false，表示为系统默认参数模板。 - true，表示为用户自定义参数模板。
+        :type user_defined: bool
+        """
         
         
 
@@ -90,7 +111,7 @@ class ConfigurationSummary:
         参数组ID。
 
         :param id: The id of this ConfigurationSummary.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -112,7 +133,7 @@ class ConfigurationSummary:
         参数组名称。
 
         :param name: The name of this ConfigurationSummary.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -134,7 +155,7 @@ class ConfigurationSummary:
         参数组描述。
 
         :param description: The description of this ConfigurationSummary.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -156,7 +177,7 @@ class ConfigurationSummary:
         引擎版本。
 
         :param datastore_version: The datastore_version of this ConfigurationSummary.
-        :type: str
+        :type datastore_version: str
         """
         self._datastore_version = datastore_version
 
@@ -178,7 +199,7 @@ class ConfigurationSummary:
         引擎名称。
 
         :param datastore_name: The datastore_name of this ConfigurationSummary.
-        :type: str
+        :type datastore_name: str
         """
         self._datastore_name = datastore_name
 
@@ -200,7 +221,7 @@ class ConfigurationSummary:
         数据库部署模式。
 
         :param ha_mode: The ha_mode of this ConfigurationSummary.
-        :type: str
+        :type ha_mode: str
         """
         self._ha_mode = ha_mode
 
@@ -222,7 +243,7 @@ class ConfigurationSummary:
         创建时间，格式为\"yyyy-MM-dd HH:mm:ss\"。
 
         :param created: The created of this ConfigurationSummary.
-        :type: str
+        :type created: str
         """
         self._created = created
 
@@ -244,7 +265,7 @@ class ConfigurationSummary:
         更新时间，格式为\"yyyy-MM-dd HH:mm:ss\"。
 
         :param updated: The updated of this ConfigurationSummary.
-        :type: str
+        :type updated: str
         """
         self._updated = updated
 
@@ -266,7 +287,7 @@ class ConfigurationSummary:
         是否是用户自定义参数模板：  - false，表示为系统默认参数模板。 - true，表示为用户自定义参数模板。
 
         :param user_defined: The user_defined of this ConfigurationSummary.
-        :type: bool
+        :type user_defined: bool
         """
         self._user_defined = user_defined
 

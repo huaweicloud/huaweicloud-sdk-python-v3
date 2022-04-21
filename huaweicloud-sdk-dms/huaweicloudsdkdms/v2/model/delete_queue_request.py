@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteQueueRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteQueueRequest:
     }
 
     def __init__(self, queue_id=None):
-        """DeleteQueueRequest - a model defined in huaweicloud sdk"""
+        """DeleteQueueRequest
+
+        The model defined in huaweicloud sdk
+
+        :param queue_id: 待删除的队列ID
+        :type queue_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteQueueRequest:
         待删除的队列ID
 
         :param queue_id: The queue_id of this DeleteQueueRequest.
-        :type: str
+        :type queue_id: str
         """
         self._queue_id = queue_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResizeFlavorObject:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ResizeFlavorObject:
     }
 
     def __init__(self, spec_code=None, is_auto_pay=None):
-        """ResizeFlavorObject - a model defined in huaweicloud sdk"""
+        """ResizeFlavorObject
+
+        The model defined in huaweicloud sdk
+
+        :param spec_code: 资源规格编码。例如：rds.mysql.m1.xlarge。其中，rds代表RDS产品，mysql代表数据库引擎，m1.xlarge代表性能规格，为高内存类型。带\&quot;rr\&quot;的表示只读实例规格，反之表示单实例和HA实例规格。
+        :type spec_code: str
+        :param is_auto_pay: 变更包周期实例的规格时可指定，表示是否自动从客户的账户中支付。 - true，为自动支付。 - false，为手动支付，默认该方式。
+        :type is_auto_pay: bool
+        """
         
         
 
@@ -62,7 +69,7 @@ class ResizeFlavorObject:
         资源规格编码。例如：rds.mysql.m1.xlarge。其中，rds代表RDS产品，mysql代表数据库引擎，m1.xlarge代表性能规格，为高内存类型。带\"rr\"的表示只读实例规格，反之表示单实例和HA实例规格。
 
         :param spec_code: The spec_code of this ResizeFlavorObject.
-        :type: str
+        :type spec_code: str
         """
         self._spec_code = spec_code
 
@@ -84,7 +91,7 @@ class ResizeFlavorObject:
         变更包周期实例的规格时可指定，表示是否自动从客户的账户中支付。 - true，为自动支付。 - false，为手动支付，默认该方式。
 
         :param is_auto_pay: The is_auto_pay of this ResizeFlavorObject.
-        :type: bool
+        :type is_auto_pay: bool
         """
         self._is_auto_pay = is_auto_pay
 

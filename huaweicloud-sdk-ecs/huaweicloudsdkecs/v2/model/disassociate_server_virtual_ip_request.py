@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DisassociateServerVirtualIpRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DisassociateServerVirtualIpRequest:
     }
 
     def __init__(self, nic_id=None, body=None):
-        """DisassociateServerVirtualIpRequest - a model defined in huaweicloud sdk"""
+        """DisassociateServerVirtualIpRequest
+
+        The model defined in huaweicloud sdk
+
+        :param nic_id: 云服务器网卡ID。
+        :type nic_id: str
+        :param body: Body of the DisassociateServerVirtualIpRequest
+        :type body: :class:`huaweicloudsdkecs.v2.DisassociateServerVirtualIpRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class DisassociateServerVirtualIpRequest:
         云服务器网卡ID。
 
         :param nic_id: The nic_id of this DisassociateServerVirtualIpRequest.
-        :type: str
+        :type nic_id: str
         """
         self._nic_id = nic_id
 
@@ -72,7 +79,7 @@ class DisassociateServerVirtualIpRequest:
 
 
         :return: The body of this DisassociateServerVirtualIpRequest.
-        :rtype: DisassociateServerVirtualIpRequestBody
+        :rtype: :class:`huaweicloudsdkecs.v2.DisassociateServerVirtualIpRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class DisassociateServerVirtualIpRequest:
 
 
         :param body: The body of this DisassociateServerVirtualIpRequest.
-        :type: DisassociateServerVirtualIpRequestBody
+        :type body: :class:`huaweicloudsdkecs.v2.DisassociateServerVirtualIpRequestBody`
         """
         self._body = body
 

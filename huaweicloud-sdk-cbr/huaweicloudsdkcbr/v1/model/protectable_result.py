@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ProtectableResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ProtectableResult:
     }
 
     def __init__(self, code=None, reason=None, result=None, vault=None, message=None):
-        """ProtectableResult - a model defined in huaweicloud sdk"""
+        """ProtectableResult
+
+        The model defined in huaweicloud sdk
+
+        :param code: 不支持备份的错误码
+        :type code: str
+        :param reason: 不支持备份的原因
+        :type reason: str
+        :param result: 是否可备份
+        :type result: bool
+        :param vault: 
+        :type vault: :class:`huaweicloudsdkcbr.v1.VaultGet`
+        :param message: 资源不可备份的原因信息，当资源可保护性检验失败时才有该字段。
+        :type message: str
+        """
         
         
 
@@ -77,7 +90,7 @@ class ProtectableResult:
         不支持备份的错误码
 
         :param code: The code of this ProtectableResult.
-        :type: str
+        :type code: str
         """
         self._code = code
 
@@ -99,7 +112,7 @@ class ProtectableResult:
         不支持备份的原因
 
         :param reason: The reason of this ProtectableResult.
-        :type: str
+        :type reason: str
         """
         self._reason = reason
 
@@ -121,7 +134,7 @@ class ProtectableResult:
         是否可备份
 
         :param result: The result of this ProtectableResult.
-        :type: bool
+        :type result: bool
         """
         self._result = result
 
@@ -131,7 +144,7 @@ class ProtectableResult:
 
 
         :return: The vault of this ProtectableResult.
-        :rtype: VaultGet
+        :rtype: :class:`huaweicloudsdkcbr.v1.VaultGet`
         """
         return self._vault
 
@@ -141,7 +154,7 @@ class ProtectableResult:
 
 
         :param vault: The vault of this ProtectableResult.
-        :type: VaultGet
+        :type vault: :class:`huaweicloudsdkcbr.v1.VaultGet`
         """
         self._vault = vault
 
@@ -163,7 +176,7 @@ class ProtectableResult:
         资源不可备份的原因信息，当资源可保护性检验失败时才有该字段。
 
         :param message: The message of this ProtectableResult.
-        :type: str
+        :type message: str
         """
         self._message = message
 

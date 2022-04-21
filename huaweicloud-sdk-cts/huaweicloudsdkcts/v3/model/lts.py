@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Lts:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class Lts:
     }
 
     def __init__(self, is_lts_enabled=None, log_group_name=None, log_topic_name=None):
-        """Lts - a model defined in huaweicloud sdk"""
+        """Lts
+
+        The model defined in huaweicloud sdk
+
+        :param is_lts_enabled: 是否启用日志服务检索功能。
+        :type is_lts_enabled: bool
+        :param log_group_name: 云审计服务在日志服务中创建的日志组名称。
+        :type log_group_name: str
+        :param log_topic_name: 云审计服务在日志服务中创建的日志主题名称。
+        :type log_topic_name: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class Lts:
         是否启用日志服务检索功能。
 
         :param is_lts_enabled: The is_lts_enabled of this Lts.
-        :type: bool
+        :type is_lts_enabled: bool
         """
         self._is_lts_enabled = is_lts_enabled
 
@@ -90,7 +99,7 @@ class Lts:
         云审计服务在日志服务中创建的日志组名称。
 
         :param log_group_name: The log_group_name of this Lts.
-        :type: str
+        :type log_group_name: str
         """
         self._log_group_name = log_group_name
 
@@ -112,7 +121,7 @@ class Lts:
         云审计服务在日志服务中创建的日志主题名称。
 
         :param log_topic_name: The log_topic_name of this Lts.
-        :type: str
+        :type log_topic_name: str
         """
         self._log_topic_name = log_topic_name
 

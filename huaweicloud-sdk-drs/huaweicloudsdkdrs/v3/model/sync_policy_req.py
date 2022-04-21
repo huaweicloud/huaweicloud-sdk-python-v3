@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SyncPolicyReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class SyncPolicyReq:
     }
 
     def __init__(self, job_id=None, conflict_policy=None, filter_ddl_policy=None, ddl_trans=None, index_trans=None, topic_policy=None, topic=None, partition_policy=None, kafka_data_format=None, topic_name_format=None, partitions_num=None, replication_factor=None, is_fill_materialized_view=None, export_snapshot=None):
-        """SyncPolicyReq - a model defined in huaweicloud sdk"""
+        """SyncPolicyReq
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 任务ID。
+        :type job_id: str
+        :param conflict_policy: 冲突策略。 - ignore：忽略 - overwrite：覆盖 - stop：报错
+        :type conflict_policy: str
+        :param filter_ddl_policy: 过滤DDL策略。
+        :type filter_ddl_policy: str
+        :param ddl_trans: 同步增量是否同步DDL。
+        :type ddl_trans: bool
+        :param index_trans: 同步增量是否同步索引。
+        :type index_trans: bool
+        :param topic_policy: 同步Topic策略，目标库为kafka时必填，取值： - 0：集中投递到一个Topic - 1：按库名-schema-表名自动生成Topic名字 - 2：按库名自动生成Topic名字 - 3：按库名-schema自动生成Topic名字
+        :type topic_policy: str
+        :param topic: Topic名称，topic_policy为0时必填，确保topic已存在。
+        :type topic: str
+        :param partition_policy: 同步到kafka partition策略，取值： - 0：按库名.schema.表名的hash值投递到不同Partition - 1：全部投递到Partition 0 - 2：按主键的hash值投递到不同Partition - 3：按库名.schema的hash值投递到不同Partition **当topic_policy取0时，可以取0,1,2,3；当topic_policy取1时，可以取1,2；当topic_policy取2时，可以取0,1,3；当topic_policy取3时，可以取0,1；**
+        :type partition_policy: str
+        :param kafka_data_format: 投送到kafka的数据格式，不填默认为json：
+        :type kafka_data_format: str
+        :param topic_name_format: Topic名字格式，topic_policy为1,2,3,时需要 - 当topic_policy取1时，Topic名字格式支持database、schema两个变量，其他字符当做常量。分别用$database$代替数据库名，$schema$代替模式名，不填默认为$database$-$schema$ - 当topic_policy取2时，Topic名字格式支持database一个变量，其他字符都当做常量，不填默认为$database$ - 当topic_policy取3时，Topic名字格式支持database、schema和tablename三个变量，其他字符当做常量。分别用$database$代替数据库名，$schema$代替模式名，$tablename$代替表名，不填默认为$database$-$schema$-$tablename$
+        :type topic_name_format: str
+        :param partitions_num: Partition个数，取值1-2147483647之间，topic_policy为1,2,3,时需要，不填默认为1
+        :type partitions_num: str
+        :param replication_factor: 副本个数，取值1-32767之间，topic_policy为1,2,3,时需要，不填默认为1
+        :type replication_factor: str
+        :param is_fill_materialized_view: PostgreSQL同步全量阶段是否填充物化视图，不填默认为false
+        :type is_fill_materialized_view: bool
+        :param export_snapshot: PostgreSQL同步全量阶段是否使用快照模式导出，不填默认为false
+        :type export_snapshot: bool
+        """
         
         
 
@@ -122,7 +153,7 @@ class SyncPolicyReq:
         任务ID。
 
         :param job_id: The job_id of this SyncPolicyReq.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -144,7 +175,7 @@ class SyncPolicyReq:
         冲突策略。 - ignore：忽略 - overwrite：覆盖 - stop：报错
 
         :param conflict_policy: The conflict_policy of this SyncPolicyReq.
-        :type: str
+        :type conflict_policy: str
         """
         self._conflict_policy = conflict_policy
 
@@ -166,7 +197,7 @@ class SyncPolicyReq:
         过滤DDL策略。
 
         :param filter_ddl_policy: The filter_ddl_policy of this SyncPolicyReq.
-        :type: str
+        :type filter_ddl_policy: str
         """
         self._filter_ddl_policy = filter_ddl_policy
 
@@ -188,7 +219,7 @@ class SyncPolicyReq:
         同步增量是否同步DDL。
 
         :param ddl_trans: The ddl_trans of this SyncPolicyReq.
-        :type: bool
+        :type ddl_trans: bool
         """
         self._ddl_trans = ddl_trans
 
@@ -210,7 +241,7 @@ class SyncPolicyReq:
         同步增量是否同步索引。
 
         :param index_trans: The index_trans of this SyncPolicyReq.
-        :type: bool
+        :type index_trans: bool
         """
         self._index_trans = index_trans
 
@@ -232,7 +263,7 @@ class SyncPolicyReq:
         同步Topic策略，目标库为kafka时必填，取值： - 0：集中投递到一个Topic - 1：按库名-schema-表名自动生成Topic名字 - 2：按库名自动生成Topic名字 - 3：按库名-schema自动生成Topic名字
 
         :param topic_policy: The topic_policy of this SyncPolicyReq.
-        :type: str
+        :type topic_policy: str
         """
         self._topic_policy = topic_policy
 
@@ -254,7 +285,7 @@ class SyncPolicyReq:
         Topic名称，topic_policy为0时必填，确保topic已存在。
 
         :param topic: The topic of this SyncPolicyReq.
-        :type: str
+        :type topic: str
         """
         self._topic = topic
 
@@ -276,7 +307,7 @@ class SyncPolicyReq:
         同步到kafka partition策略，取值： - 0：按库名.schema.表名的hash值投递到不同Partition - 1：全部投递到Partition 0 - 2：按主键的hash值投递到不同Partition - 3：按库名.schema的hash值投递到不同Partition **当topic_policy取0时，可以取0,1,2,3；当topic_policy取1时，可以取1,2；当topic_policy取2时，可以取0,1,3；当topic_policy取3时，可以取0,1；**
 
         :param partition_policy: The partition_policy of this SyncPolicyReq.
-        :type: str
+        :type partition_policy: str
         """
         self._partition_policy = partition_policy
 
@@ -298,7 +329,7 @@ class SyncPolicyReq:
         投送到kafka的数据格式，不填默认为json：
 
         :param kafka_data_format: The kafka_data_format of this SyncPolicyReq.
-        :type: str
+        :type kafka_data_format: str
         """
         self._kafka_data_format = kafka_data_format
 
@@ -320,7 +351,7 @@ class SyncPolicyReq:
         Topic名字格式，topic_policy为1,2,3,时需要 - 当topic_policy取1时，Topic名字格式支持database、schema两个变量，其他字符当做常量。分别用$database$代替数据库名，$schema$代替模式名，不填默认为$database$-$schema$ - 当topic_policy取2时，Topic名字格式支持database一个变量，其他字符都当做常量，不填默认为$database$ - 当topic_policy取3时，Topic名字格式支持database、schema和tablename三个变量，其他字符当做常量。分别用$database$代替数据库名，$schema$代替模式名，$tablename$代替表名，不填默认为$database$-$schema$-$tablename$
 
         :param topic_name_format: The topic_name_format of this SyncPolicyReq.
-        :type: str
+        :type topic_name_format: str
         """
         self._topic_name_format = topic_name_format
 
@@ -342,7 +373,7 @@ class SyncPolicyReq:
         Partition个数，取值1-2147483647之间，topic_policy为1,2,3,时需要，不填默认为1
 
         :param partitions_num: The partitions_num of this SyncPolicyReq.
-        :type: str
+        :type partitions_num: str
         """
         self._partitions_num = partitions_num
 
@@ -364,7 +395,7 @@ class SyncPolicyReq:
         副本个数，取值1-32767之间，topic_policy为1,2,3,时需要，不填默认为1
 
         :param replication_factor: The replication_factor of this SyncPolicyReq.
-        :type: str
+        :type replication_factor: str
         """
         self._replication_factor = replication_factor
 
@@ -386,7 +417,7 @@ class SyncPolicyReq:
         PostgreSQL同步全量阶段是否填充物化视图，不填默认为false
 
         :param is_fill_materialized_view: The is_fill_materialized_view of this SyncPolicyReq.
-        :type: bool
+        :type is_fill_materialized_view: bool
         """
         self._is_fill_materialized_view = is_fill_materialized_view
 
@@ -408,7 +439,7 @@ class SyncPolicyReq:
         PostgreSQL同步全量阶段是否使用快照模式导出，不填默认为false
 
         :param export_snapshot: The export_snapshot of this SyncPolicyReq.
-        :type: bool
+        :type export_snapshot: bool
         """
         self._export_snapshot = export_snapshot
 

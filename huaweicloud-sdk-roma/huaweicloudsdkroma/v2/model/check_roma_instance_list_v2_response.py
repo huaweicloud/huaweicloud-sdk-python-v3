@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CheckRomaInstanceListV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CheckRomaInstanceListV2Response(SdkResponse):
     }
 
     def __init__(self, total=None, size=None, instances=None):
-        """CheckRomaInstanceListV2Response - a model defined in huaweicloud sdk"""
+        """CheckRomaInstanceListV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param total: 列表总数
+        :type total: int
+        :param size: 本页数量
+        :type size: int
+        :param instances: 实例列表
+        :type instances: list[:class:`huaweicloudsdkroma.v2.RomaInstanceCheckListRespInstances`]
+        """
         
         super(CheckRomaInstanceListV2Response, self).__init__()
 
@@ -68,7 +77,7 @@ class CheckRomaInstanceListV2Response(SdkResponse):
         列表总数
 
         :param total: The total of this CheckRomaInstanceListV2Response.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -90,7 +99,7 @@ class CheckRomaInstanceListV2Response(SdkResponse):
         本页数量
 
         :param size: The size of this CheckRomaInstanceListV2Response.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -101,7 +110,7 @@ class CheckRomaInstanceListV2Response(SdkResponse):
         实例列表
 
         :return: The instances of this CheckRomaInstanceListV2Response.
-        :rtype: list[RomaInstanceCheckListRespInstances]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.RomaInstanceCheckListRespInstances`]
         """
         return self._instances
 
@@ -112,7 +121,7 @@ class CheckRomaInstanceListV2Response(SdkResponse):
         实例列表
 
         :param instances: The instances of this CheckRomaInstanceListV2Response.
-        :type: list[RomaInstanceCheckListRespInstances]
+        :type instances: list[:class:`huaweicloudsdkroma.v2.RomaInstanceCheckListRespInstances`]
         """
         self._instances = instances
 

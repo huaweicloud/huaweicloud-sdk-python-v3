@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateJobRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateJobRequest:
     }
 
     def __init__(self, job_name=None, body=None):
-        """UpdateJobRequest - a model defined in huaweicloud sdk"""
+        """UpdateJobRequest
+
+        The model defined in huaweicloud sdk
+
+        :param job_name: 作业名称.
+        :type job_name: str
+        :param body: Body of the UpdateJobRequest
+        :type body: :class:`huaweicloudsdkdgc.v1.JobInfo`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateJobRequest:
         作业名称.
 
         :param job_name: The job_name of this UpdateJobRequest.
-        :type: str
+        :type job_name: str
         """
         self._job_name = job_name
 
@@ -72,7 +79,7 @@ class UpdateJobRequest:
 
 
         :return: The body of this UpdateJobRequest.
-        :rtype: JobInfo
+        :rtype: :class:`huaweicloudsdkdgc.v1.JobInfo`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateJobRequest:
 
 
         :param body: The body of this UpdateJobRequest.
-        :type: JobInfo
+        :type body: :class:`huaweicloudsdkdgc.v1.JobInfo`
         """
         self._body = body
 

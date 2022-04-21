@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Branch:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Branch:
     }
 
     def __init__(self, is_protected=None, name=None):
-        """Branch - a model defined in huaweicloud sdk"""
+        """Branch
+
+        The model defined in huaweicloud sdk
+
+        :param is_protected: 是否开启保护分支功能
+        :type is_protected: bool
+        :param name: 分支名
+        :type name: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class Branch:
         是否开启保护分支功能
 
         :param is_protected: The is_protected of this Branch.
-        :type: bool
+        :type is_protected: bool
         """
         self._is_protected = is_protected
 
@@ -85,7 +92,7 @@ class Branch:
         分支名
 
         :param name: The name of this Branch.
-        :type: str
+        :type name: str
         """
         self._name = name
 

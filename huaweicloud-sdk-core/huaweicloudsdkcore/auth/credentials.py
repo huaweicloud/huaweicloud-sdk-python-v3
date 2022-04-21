@@ -86,6 +86,12 @@ class DerivedCredentials:
 
 class BasicCredentials(Credentials, DerivedCredentials):
     def __init__(self, ak, sk, project_id=None):
+        """For regional services' authentication
+
+        :param ak: The access key ID for your account
+        :param sk: The secret access key for your account
+        :param project_id: The ID of your project depending on your region which you want to operate
+        """
         if not ak:
             raise ApiValueError("AK can not be null.")
         if not sk:
@@ -167,6 +173,12 @@ class BasicCredentials(Credentials, DerivedCredentials):
 
 class GlobalCredentials(Credentials, DerivedCredentials):
     def __init__(self, ak, sk, domain_id=None):
+        """For global services' authentication
+
+        :param ak: The access key ID for your account
+        :param sk: The secret access key for your account
+        :param domain_id: The account ID of Huawei Cloud
+        """
         if not ak:
             raise ApiValueError("AK can not be null.")
         if not sk:

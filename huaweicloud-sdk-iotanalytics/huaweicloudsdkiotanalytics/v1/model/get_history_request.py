@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GetHistoryRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class GetHistoryRequest:
     }
 
     def __init__(self, time_span=None, tags=None, property_names=None, limit=None):
-        """GetHistoryRequest - a model defined in huaweicloud sdk"""
+        """GetHistoryRequest
+
+        The model defined in huaweicloud sdk
+
+        :param time_span: 
+        :type time_span: :class:`huaweicloudsdkiotanalytics.v1.TimeSpan`
+        :param tags: 对property按指定tags标签进行过滤查询，填入设备标签与标签值，不可为空，例如 {\&quot;deviceId\&quot;: \&quot;id0001\&quot;}
+        :type tags: dict(str, str)
+        :param property_names: 查询的属性列表
+        :type property_names: list[str]
+        :param limit: 返回值个数限制
+        :type limit: int
+        """
         
         
 
@@ -58,7 +69,7 @@ class GetHistoryRequest:
 
 
         :return: The time_span of this GetHistoryRequest.
-        :rtype: TimeSpan
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.TimeSpan`
         """
         return self._time_span
 
@@ -68,7 +79,7 @@ class GetHistoryRequest:
 
 
         :param time_span: The time_span of this GetHistoryRequest.
-        :type: TimeSpan
+        :type time_span: :class:`huaweicloudsdkiotanalytics.v1.TimeSpan`
         """
         self._time_span = time_span
 
@@ -90,7 +101,7 @@ class GetHistoryRequest:
         对property按指定tags标签进行过滤查询，填入设备标签与标签值，不可为空，例如 {\"deviceId\": \"id0001\"}
 
         :param tags: The tags of this GetHistoryRequest.
-        :type: dict(str, str)
+        :type tags: dict(str, str)
         """
         self._tags = tags
 
@@ -112,7 +123,7 @@ class GetHistoryRequest:
         查询的属性列表
 
         :param property_names: The property_names of this GetHistoryRequest.
-        :type: list[str]
+        :type property_names: list[str]
         """
         self._property_names = property_names
 
@@ -134,7 +145,7 @@ class GetHistoryRequest:
         返回值个数限制
 
         :param limit: The limit of this GetHistoryRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

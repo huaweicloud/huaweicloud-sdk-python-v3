@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NeutronDeleteSecurityGroupResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class NeutronDeleteSecurityGroupResponse(SdkResponse):
     }
 
     def __init__(self):
-        """NeutronDeleteSecurityGroupResponse - a model defined in huaweicloud sdk"""
+        """NeutronDeleteSecurityGroupResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(NeutronDeleteSecurityGroupResponse, self).__init__()
         self.discriminator = None

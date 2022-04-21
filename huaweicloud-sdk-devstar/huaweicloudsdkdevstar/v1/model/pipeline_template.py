@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PipelineTemplate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class PipelineTemplate:
     }
 
     def __init__(self, name=None, id=None, description=None, region_id=None, url=None):
-        """PipelineTemplate - a model defined in huaweicloud sdk"""
+        """PipelineTemplate
+
+        The model defined in huaweicloud sdk
+
+        :param name: 模板名称
+        :type name: str
+        :param id: 模板id
+        :type id: str
+        :param description: 描述信息
+        :type description: str
+        :param region_id: 区域id
+        :type region_id: str
+        :param url: 预览链接
+        :type url: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class PipelineTemplate:
         模板名称
 
         :param name: The name of this PipelineTemplate.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -100,7 +113,7 @@ class PipelineTemplate:
         模板id
 
         :param id: The id of this PipelineTemplate.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -122,7 +135,7 @@ class PipelineTemplate:
         描述信息
 
         :param description: The description of this PipelineTemplate.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -144,7 +157,7 @@ class PipelineTemplate:
         区域id
 
         :param region_id: The region_id of this PipelineTemplate.
-        :type: str
+        :type region_id: str
         """
         self._region_id = region_id
 
@@ -166,7 +179,7 @@ class PipelineTemplate:
         预览链接
 
         :param url: The url of this PipelineTemplate.
-        :type: str
+        :type url: str
         """
         self._url = url
 

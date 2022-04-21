@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListMessageTemplateDetailsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ListMessageTemplateDetailsResponse(SdkResponse):
     }
 
     def __init__(self, message_template_id=None, message_template_name=None, protocol=None, tag_names=None, create_time=None, update_time=None, content=None, request_id=None):
-        """ListMessageTemplateDetailsResponse - a model defined in huaweicloud sdk"""
+        """ListMessageTemplateDetailsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param message_template_id: 模板ID。
+        :type message_template_id: str
+        :param message_template_name: 模板名称。
+        :type message_template_name: str
+        :param protocol: 模板支持的协议类型。  目前支持的协议包括：  “default”：默认协议。  “email”：邮件传输协议。  “sms”：短信传输协议。  “functionstage”：FunctionGraph（函数）传输协议。  “dms”：DMS传输协议。  “http”、“https”：HTTP/HTTPS传输协议。
+        :type protocol: str
+        :param tag_names: 模板tag列表。  是消息模板“{}”内的字段，在具体使用消息模板时，可根据实际情况替为该字段赋值。
+        :type tag_names: list[str]
+        :param create_time: 模板创建时间。 时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
+        :type create_time: str
+        :param update_time: 模板最后更新时间。时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
+        :type update_time: str
+        :param content: 模板内容。
+        :type content: str
+        :param request_id: 请求的唯一标识ID。
+        :type request_id: str
+        """
         
         super(ListMessageTemplateDetailsResponse, self).__init__()
 
@@ -93,7 +112,7 @@ class ListMessageTemplateDetailsResponse(SdkResponse):
         模板ID。
 
         :param message_template_id: The message_template_id of this ListMessageTemplateDetailsResponse.
-        :type: str
+        :type message_template_id: str
         """
         self._message_template_id = message_template_id
 
@@ -115,7 +134,7 @@ class ListMessageTemplateDetailsResponse(SdkResponse):
         模板名称。
 
         :param message_template_name: The message_template_name of this ListMessageTemplateDetailsResponse.
-        :type: str
+        :type message_template_name: str
         """
         self._message_template_name = message_template_name
 
@@ -137,7 +156,7 @@ class ListMessageTemplateDetailsResponse(SdkResponse):
         模板支持的协议类型。  目前支持的协议包括：  “default”：默认协议。  “email”：邮件传输协议。  “sms”：短信传输协议。  “functionstage”：FunctionGraph（函数）传输协议。  “dms”：DMS传输协议。  “http”、“https”：HTTP/HTTPS传输协议。
 
         :param protocol: The protocol of this ListMessageTemplateDetailsResponse.
-        :type: str
+        :type protocol: str
         """
         self._protocol = protocol
 
@@ -159,7 +178,7 @@ class ListMessageTemplateDetailsResponse(SdkResponse):
         模板tag列表。  是消息模板“{}”内的字段，在具体使用消息模板时，可根据实际情况替为该字段赋值。
 
         :param tag_names: The tag_names of this ListMessageTemplateDetailsResponse.
-        :type: list[str]
+        :type tag_names: list[str]
         """
         self._tag_names = tag_names
 
@@ -181,7 +200,7 @@ class ListMessageTemplateDetailsResponse(SdkResponse):
         模板创建时间。 时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
 
         :param create_time: The create_time of this ListMessageTemplateDetailsResponse.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -203,7 +222,7 @@ class ListMessageTemplateDetailsResponse(SdkResponse):
         模板最后更新时间。时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
 
         :param update_time: The update_time of this ListMessageTemplateDetailsResponse.
-        :type: str
+        :type update_time: str
         """
         self._update_time = update_time
 
@@ -225,7 +244,7 @@ class ListMessageTemplateDetailsResponse(SdkResponse):
         模板内容。
 
         :param content: The content of this ListMessageTemplateDetailsResponse.
-        :type: str
+        :type content: str
         """
         self._content = content
 
@@ -247,7 +266,7 @@ class ListMessageTemplateDetailsResponse(SdkResponse):
         请求的唯一标识ID。
 
         :param request_id: The request_id of this ListMessageTemplateDetailsResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 

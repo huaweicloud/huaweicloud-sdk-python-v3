@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchStartOrStopTasksResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class BatchStartOrStopTasksResponse(SdkResponse):
     }
 
     def __init__(self, success_count=None, failure_count=None, failure=None, success=None):
-        """BatchStartOrStopTasksResponse - a model defined in huaweicloud sdk"""
+        """BatchStartOrStopTasksResponse
+
+        The model defined in huaweicloud sdk
+
+        :param success_count: 成功的个数
+        :type success_count: int
+        :param failure_count: 失败的个数
+        :type failure_count: int
+        :param failure: 失败的详情
+        :type failure: list[:class:`huaweicloudsdkroma.v2.TaskBeanFacade`]
+        :param success: 成功的任务信息
+        :type success: list[:class:`huaweicloudsdkroma.v2.TaskBeanFacade`]
+        """
         
         super(BatchStartOrStopTasksResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class BatchStartOrStopTasksResponse(SdkResponse):
         成功的个数
 
         :param success_count: The success_count of this BatchStartOrStopTasksResponse.
-        :type: int
+        :type success_count: int
         """
         self._success_count = success_count
 
@@ -95,7 +106,7 @@ class BatchStartOrStopTasksResponse(SdkResponse):
         失败的个数
 
         :param failure_count: The failure_count of this BatchStartOrStopTasksResponse.
-        :type: int
+        :type failure_count: int
         """
         self._failure_count = failure_count
 
@@ -106,7 +117,7 @@ class BatchStartOrStopTasksResponse(SdkResponse):
         失败的详情
 
         :return: The failure of this BatchStartOrStopTasksResponse.
-        :rtype: list[TaskBeanFacade]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.TaskBeanFacade`]
         """
         return self._failure
 
@@ -117,7 +128,7 @@ class BatchStartOrStopTasksResponse(SdkResponse):
         失败的详情
 
         :param failure: The failure of this BatchStartOrStopTasksResponse.
-        :type: list[TaskBeanFacade]
+        :type failure: list[:class:`huaweicloudsdkroma.v2.TaskBeanFacade`]
         """
         self._failure = failure
 
@@ -128,7 +139,7 @@ class BatchStartOrStopTasksResponse(SdkResponse):
         成功的任务信息
 
         :return: The success of this BatchStartOrStopTasksResponse.
-        :rtype: list[TaskBeanFacade]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.TaskBeanFacade`]
         """
         return self._success
 
@@ -139,7 +150,7 @@ class BatchStartOrStopTasksResponse(SdkResponse):
         成功的任务信息
 
         :param success: The success of this BatchStartOrStopTasksResponse.
-        :type: list[TaskBeanFacade]
+        :type success: list[:class:`huaweicloudsdkroma.v2.TaskBeanFacade`]
         """
         self._success = success
 

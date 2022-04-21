@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InterfaceAttachment:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class InterfaceAttachment:
     }
 
     def __init__(self, fixed_ips=None, mac_addr=None, net_id=None, port_id=None, port_state=None, delete_on_termination=None, driver_mode=None, min_rate=None, multiqueue_num=None, pci_address=None):
-        """InterfaceAttachment - a model defined in huaweicloud sdk"""
+        """InterfaceAttachment
+
+        The model defined in huaweicloud sdk
+
+        :param fixed_ips: 网卡私网IP信息列表。
+        :type fixed_ips: list[:class:`huaweicloudsdkecs.v2.ServerInterfaceFixedIp`]
+        :param mac_addr: 网卡Mac地址信息。
+        :type mac_addr: str
+        :param net_id: 网卡端口所属网络ID。
+        :type net_id: str
+        :param port_id: 网卡端口ID。
+        :type port_id: str
+        :param port_state: 网卡端口状态。
+        :type port_state: str
+        :param delete_on_termination: 卸载网卡时，是否删除网卡。
+        :type delete_on_termination: bool
+        :param driver_mode: 从guest os中，网卡的驱动类型。可选值为virtio和hinic，默认为virtio
+        :type driver_mode: str
+        :param min_rate: 网卡带宽下限。
+        :type min_rate: int
+        :param multiqueue_num: 网卡多队列个数。
+        :type multiqueue_num: int
+        :param pci_address: 弹性网卡在Linux GuestOS里的BDF号
+        :type pci_address: str
+        """
         
         
 
@@ -92,7 +115,7 @@ class InterfaceAttachment:
         网卡私网IP信息列表。
 
         :return: The fixed_ips of this InterfaceAttachment.
-        :rtype: list[ServerInterfaceFixedIp]
+        :rtype: list[:class:`huaweicloudsdkecs.v2.ServerInterfaceFixedIp`]
         """
         return self._fixed_ips
 
@@ -103,7 +126,7 @@ class InterfaceAttachment:
         网卡私网IP信息列表。
 
         :param fixed_ips: The fixed_ips of this InterfaceAttachment.
-        :type: list[ServerInterfaceFixedIp]
+        :type fixed_ips: list[:class:`huaweicloudsdkecs.v2.ServerInterfaceFixedIp`]
         """
         self._fixed_ips = fixed_ips
 
@@ -125,7 +148,7 @@ class InterfaceAttachment:
         网卡Mac地址信息。
 
         :param mac_addr: The mac_addr of this InterfaceAttachment.
-        :type: str
+        :type mac_addr: str
         """
         self._mac_addr = mac_addr
 
@@ -147,7 +170,7 @@ class InterfaceAttachment:
         网卡端口所属网络ID。
 
         :param net_id: The net_id of this InterfaceAttachment.
-        :type: str
+        :type net_id: str
         """
         self._net_id = net_id
 
@@ -169,7 +192,7 @@ class InterfaceAttachment:
         网卡端口ID。
 
         :param port_id: The port_id of this InterfaceAttachment.
-        :type: str
+        :type port_id: str
         """
         self._port_id = port_id
 
@@ -191,7 +214,7 @@ class InterfaceAttachment:
         网卡端口状态。
 
         :param port_state: The port_state of this InterfaceAttachment.
-        :type: str
+        :type port_state: str
         """
         self._port_state = port_state
 
@@ -213,7 +236,7 @@ class InterfaceAttachment:
         卸载网卡时，是否删除网卡。
 
         :param delete_on_termination: The delete_on_termination of this InterfaceAttachment.
-        :type: bool
+        :type delete_on_termination: bool
         """
         self._delete_on_termination = delete_on_termination
 
@@ -235,7 +258,7 @@ class InterfaceAttachment:
         从guest os中，网卡的驱动类型。可选值为virtio和hinic，默认为virtio
 
         :param driver_mode: The driver_mode of this InterfaceAttachment.
-        :type: str
+        :type driver_mode: str
         """
         self._driver_mode = driver_mode
 
@@ -257,7 +280,7 @@ class InterfaceAttachment:
         网卡带宽下限。
 
         :param min_rate: The min_rate of this InterfaceAttachment.
-        :type: int
+        :type min_rate: int
         """
         self._min_rate = min_rate
 
@@ -279,7 +302,7 @@ class InterfaceAttachment:
         网卡多队列个数。
 
         :param multiqueue_num: The multiqueue_num of this InterfaceAttachment.
-        :type: int
+        :type multiqueue_num: int
         """
         self._multiqueue_num = multiqueue_num
 
@@ -301,7 +324,7 @@ class InterfaceAttachment:
         弹性网卡在Linux GuestOS里的BDF号
 
         :param pci_address: The pci_address of this InterfaceAttachment.
-        :type: str
+        :type pci_address: str
         """
         self._pci_address = pci_address
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddPublicipsIntoSharedBandwidthRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class AddPublicipsIntoSharedBandwidthRequestBody:
     }
 
     def __init__(self, bandwidth=None):
-        """AddPublicipsIntoSharedBandwidthRequestBody - a model defined in huaweicloud sdk"""
+        """AddPublicipsIntoSharedBandwidthRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param bandwidth: 
+        :type bandwidth: :class:`huaweicloudsdkeip.v2.AddPublicipsIntoSharedBandwidthOption`
+        """
         
         
 
@@ -45,7 +50,7 @@ class AddPublicipsIntoSharedBandwidthRequestBody:
 
 
         :return: The bandwidth of this AddPublicipsIntoSharedBandwidthRequestBody.
-        :rtype: AddPublicipsIntoSharedBandwidthOption
+        :rtype: :class:`huaweicloudsdkeip.v2.AddPublicipsIntoSharedBandwidthOption`
         """
         return self._bandwidth
 
@@ -55,7 +60,7 @@ class AddPublicipsIntoSharedBandwidthRequestBody:
 
 
         :param bandwidth: The bandwidth of this AddPublicipsIntoSharedBandwidthRequestBody.
-        :type: AddPublicipsIntoSharedBandwidthOption
+        :type bandwidth: :class:`huaweicloudsdkeip.v2.AddPublicipsIntoSharedBandwidthOption`
         """
         self._bandwidth = bandwidth
 

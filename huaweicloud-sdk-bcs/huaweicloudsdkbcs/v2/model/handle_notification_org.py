@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class HandleNotificationOrg:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class HandleNotificationOrg:
     }
 
     def __init__(self, name=None):
-        """HandleNotificationOrg - a model defined in huaweicloud sdk"""
+        """HandleNotificationOrg
+
+        The model defined in huaweicloud sdk
+
+        :param name: 加入的组织
+        :type name: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class HandleNotificationOrg:
         加入的组织
 
         :param name: The name of this HandleNotificationOrg.
-        :type: str
+        :type name: str
         """
         self._name = name
 

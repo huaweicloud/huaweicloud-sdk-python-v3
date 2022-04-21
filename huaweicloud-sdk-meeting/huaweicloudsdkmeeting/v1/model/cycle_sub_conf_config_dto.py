@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CycleSubConfConfigDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class CycleSubConfConfigDTO:
     }
 
     def __init__(self, call_in_restriction=None, audience_call_in_restriction=None, allow_guest_start_conf=None, enable_waiting_room=None, show_audience_count_info=None):
-        """CycleSubConfConfigDTO - a model defined in huaweicloud sdk"""
+        """CycleSubConfConfigDTO
+
+        The model defined in huaweicloud sdk
+
+        :param call_in_restriction: |参数名称：允许呼入的范围| |参数描述：允许呼入的范围。 0: 所有用户 1: 非匿名用户（手机pstn入会视为匿名入会） 2: 企业内用户 3: 被邀请用户| |取值范围：[0,3]|
+        :type call_in_restriction: int
+        :param audience_call_in_restriction: |参数名称：网络研讨会观众允许呼入的范围| |参数描述：允许呼入的范围。 0: 所有用户 2: 企业内用户和被邀请用户|
+        :type audience_call_in_restriction: int
+        :param allow_guest_start_conf: 参数名称：是否允许来宾启动会议(随机会议) false:禁止来宾启动会议 true：允许来宾启动会议
+        :type allow_guest_start_conf: bool
+        :param enable_waiting_room: 是否启用等候室
+        :type enable_waiting_room: bool
+        :param show_audience_count_info: 
+        :type show_audience_count_info: :class:`huaweicloudsdkmeeting.v1.ShowAudienceCountInfo`
+        """
         
         
 
@@ -78,7 +91,7 @@ class CycleSubConfConfigDTO:
         |参数名称：允许呼入的范围| |参数描述：允许呼入的范围。 0: 所有用户 1: 非匿名用户（手机pstn入会视为匿名入会） 2: 企业内用户 3: 被邀请用户| |取值范围：[0,3]|
 
         :param call_in_restriction: The call_in_restriction of this CycleSubConfConfigDTO.
-        :type: int
+        :type call_in_restriction: int
         """
         self._call_in_restriction = call_in_restriction
 
@@ -100,7 +113,7 @@ class CycleSubConfConfigDTO:
         |参数名称：网络研讨会观众允许呼入的范围| |参数描述：允许呼入的范围。 0: 所有用户 2: 企业内用户和被邀请用户|
 
         :param audience_call_in_restriction: The audience_call_in_restriction of this CycleSubConfConfigDTO.
-        :type: int
+        :type audience_call_in_restriction: int
         """
         self._audience_call_in_restriction = audience_call_in_restriction
 
@@ -122,7 +135,7 @@ class CycleSubConfConfigDTO:
         参数名称：是否允许来宾启动会议(随机会议) false:禁止来宾启动会议 true：允许来宾启动会议
 
         :param allow_guest_start_conf: The allow_guest_start_conf of this CycleSubConfConfigDTO.
-        :type: bool
+        :type allow_guest_start_conf: bool
         """
         self._allow_guest_start_conf = allow_guest_start_conf
 
@@ -144,7 +157,7 @@ class CycleSubConfConfigDTO:
         是否启用等候室
 
         :param enable_waiting_room: The enable_waiting_room of this CycleSubConfConfigDTO.
-        :type: bool
+        :type enable_waiting_room: bool
         """
         self._enable_waiting_room = enable_waiting_room
 
@@ -154,7 +167,7 @@ class CycleSubConfConfigDTO:
 
 
         :return: The show_audience_count_info of this CycleSubConfConfigDTO.
-        :rtype: ShowAudienceCountInfo
+        :rtype: :class:`huaweicloudsdkmeeting.v1.ShowAudienceCountInfo`
         """
         return self._show_audience_count_info
 
@@ -164,7 +177,7 @@ class CycleSubConfConfigDTO:
 
 
         :param show_audience_count_info: The show_audience_count_info of this CycleSubConfConfigDTO.
-        :type: ShowAudienceCountInfo
+        :type show_audience_count_info: :class:`huaweicloudsdkmeeting.v1.ShowAudienceCountInfo`
         """
         self._show_audience_count_info = show_audience_count_info
 

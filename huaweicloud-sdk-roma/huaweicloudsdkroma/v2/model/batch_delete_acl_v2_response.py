@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchDeleteAclV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchDeleteAclV2Response(SdkResponse):
     }
 
     def __init__(self, success_count=None, failure=None):
-        """BatchDeleteAclV2Response - a model defined in huaweicloud sdk"""
+        """BatchDeleteAclV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param success_count: 删除成功的ACL策略数量
+        :type success_count: int
+        :param failure: 删除失败的ACL策略及错误信息
+        :type failure: list[:class:`huaweicloudsdkroma.v2.AclBatchFailure`]
+        """
         
         super(BatchDeleteAclV2Response, self).__init__()
 
@@ -63,7 +70,7 @@ class BatchDeleteAclV2Response(SdkResponse):
         删除成功的ACL策略数量
 
         :param success_count: The success_count of this BatchDeleteAclV2Response.
-        :type: int
+        :type success_count: int
         """
         self._success_count = success_count
 
@@ -74,7 +81,7 @@ class BatchDeleteAclV2Response(SdkResponse):
         删除失败的ACL策略及错误信息
 
         :return: The failure of this BatchDeleteAclV2Response.
-        :rtype: list[AclBatchFailure]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.AclBatchFailure`]
         """
         return self._failure
 
@@ -85,7 +92,7 @@ class BatchDeleteAclV2Response(SdkResponse):
         删除失败的ACL策略及错误信息
 
         :param failure: The failure of this BatchDeleteAclV2Response.
-        :type: list[AclBatchFailure]
+        :type failure: list[:class:`huaweicloudsdkroma.v2.AclBatchFailure`]
         """
         self._failure = failure
 

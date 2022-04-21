@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowTaskResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -88,7 +87,71 @@ class ShowTaskResponse(SdkResponse):
     }
 
     def __init__(self, name=None, type=None, os_type=None, id=None, priority=None, region_id=None, start_target_server=None, enterprise_project_id=None, migration_ip=None, region_name=None, project_name=None, project_id=None, vm_template_id=None, source_server=None, target_server=None, state=None, estimate_complete_time=None, connected=None, create_date=None, start_date=None, finish_date=None, migrate_speed=None, compress_rate=None, error_json=None, total_time=None, float_ip=None, remain_seconds=None, target_snapshot_id=None, clone_server=None, sub_tasks=None):
-        """ShowTaskResponse - a model defined in huaweicloud sdk"""
+        """ShowTaskResponse
+
+        The model defined in huaweicloud sdk
+
+        :param name: 任务名称（用户自定义）
+        :type name: str
+        :param type: 任务类型，创建时必选，更新时可选
+        :type type: str
+        :param os_type: 操作系统类型，分为WINDOWS和LINUX，创建时必选，更新时可选
+        :type os_type: str
+        :param id: 迁移任务id
+        :type id: str
+        :param priority: 进程优先级  0：低  1：标准（默认）  2：高
+        :type priority: int
+        :param region_id: 目的端服务器的区域ID
+        :type region_id: str
+        :param start_target_server: 迁移完成后是否启动目的端服务器  true：启动  false：停止
+        :type start_target_server: bool
+        :param enterprise_project_id: 企业项目id
+        :type enterprise_project_id: str
+        :param migration_ip: 目的端服务器的IP地址。  公网迁移时请填写弹性IP地址  专线迁移时请填写私有IP地址
+        :type migration_ip: str
+        :param region_name: 目的端服务器的区域名称
+        :type region_name: str
+        :param project_name: 目的端服务器所在项目名称
+        :type project_name: str
+        :param project_id: 目的端服务器所在项目ID
+        :type project_id: str
+        :param vm_template_id: 模板ID
+        :type vm_template_id: str
+        :param source_server: 
+        :type source_server: :class:`huaweicloudsdksms.v3.SourceServer`
+        :param target_server: 
+        :type target_server: :class:`huaweicloudsdksms.v3.TaskTargetServer`
+        :param state: 任务状态
+        :type state: str
+        :param estimate_complete_time: 预估完成时间
+        :type estimate_complete_time: int
+        :param connected: 连接状态
+        :type connected: bool
+        :param create_date: 任务创建时间
+        :type create_date: int
+        :param start_date: 任务开始时间
+        :type start_date: int
+        :param finish_date: 任务结束时间
+        :type finish_date: int
+        :param migrate_speed: 迁移速率，单位：MB/S
+        :type migrate_speed: float
+        :param compress_rate: 压缩率
+        :type compress_rate: float
+        :param error_json: 错误信息
+        :type error_json: str
+        :param total_time: 任务总耗时
+        :type total_time: int
+        :param float_ip: 暂时保留float,兼容现网老版本的SMS-Agent
+        :type float_ip: str
+        :param remain_seconds: 迁移剩余时间（秒）
+        :type remain_seconds: int
+        :param target_snapshot_id: 目的端的快照id
+        :type target_snapshot_id: str
+        :param clone_server: 
+        :type clone_server: :class:`huaweicloudsdksms.v3.CloneServer`
+        :param sub_tasks: 任务包含的子任务列表
+        :type sub_tasks: list[:class:`huaweicloudsdksms.v3.SubTask`]
+        """
         
         super(ShowTaskResponse, self).__init__()
 
@@ -203,7 +266,7 @@ class ShowTaskResponse(SdkResponse):
         任务名称（用户自定义）
 
         :param name: The name of this ShowTaskResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -225,7 +288,7 @@ class ShowTaskResponse(SdkResponse):
         任务类型，创建时必选，更新时可选
 
         :param type: The type of this ShowTaskResponse.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -247,7 +310,7 @@ class ShowTaskResponse(SdkResponse):
         操作系统类型，分为WINDOWS和LINUX，创建时必选，更新时可选
 
         :param os_type: The os_type of this ShowTaskResponse.
-        :type: str
+        :type os_type: str
         """
         self._os_type = os_type
 
@@ -269,7 +332,7 @@ class ShowTaskResponse(SdkResponse):
         迁移任务id
 
         :param id: The id of this ShowTaskResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -291,7 +354,7 @@ class ShowTaskResponse(SdkResponse):
         进程优先级  0：低  1：标准（默认）  2：高
 
         :param priority: The priority of this ShowTaskResponse.
-        :type: int
+        :type priority: int
         """
         self._priority = priority
 
@@ -313,7 +376,7 @@ class ShowTaskResponse(SdkResponse):
         目的端服务器的区域ID
 
         :param region_id: The region_id of this ShowTaskResponse.
-        :type: str
+        :type region_id: str
         """
         self._region_id = region_id
 
@@ -335,7 +398,7 @@ class ShowTaskResponse(SdkResponse):
         迁移完成后是否启动目的端服务器  true：启动  false：停止
 
         :param start_target_server: The start_target_server of this ShowTaskResponse.
-        :type: bool
+        :type start_target_server: bool
         """
         self._start_target_server = start_target_server
 
@@ -357,7 +420,7 @@ class ShowTaskResponse(SdkResponse):
         企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this ShowTaskResponse.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -379,7 +442,7 @@ class ShowTaskResponse(SdkResponse):
         目的端服务器的IP地址。  公网迁移时请填写弹性IP地址  专线迁移时请填写私有IP地址
 
         :param migration_ip: The migration_ip of this ShowTaskResponse.
-        :type: str
+        :type migration_ip: str
         """
         self._migration_ip = migration_ip
 
@@ -401,7 +464,7 @@ class ShowTaskResponse(SdkResponse):
         目的端服务器的区域名称
 
         :param region_name: The region_name of this ShowTaskResponse.
-        :type: str
+        :type region_name: str
         """
         self._region_name = region_name
 
@@ -423,7 +486,7 @@ class ShowTaskResponse(SdkResponse):
         目的端服务器所在项目名称
 
         :param project_name: The project_name of this ShowTaskResponse.
-        :type: str
+        :type project_name: str
         """
         self._project_name = project_name
 
@@ -445,7 +508,7 @@ class ShowTaskResponse(SdkResponse):
         目的端服务器所在项目ID
 
         :param project_id: The project_id of this ShowTaskResponse.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -467,7 +530,7 @@ class ShowTaskResponse(SdkResponse):
         模板ID
 
         :param vm_template_id: The vm_template_id of this ShowTaskResponse.
-        :type: str
+        :type vm_template_id: str
         """
         self._vm_template_id = vm_template_id
 
@@ -477,7 +540,7 @@ class ShowTaskResponse(SdkResponse):
 
 
         :return: The source_server of this ShowTaskResponse.
-        :rtype: SourceServer
+        :rtype: :class:`huaweicloudsdksms.v3.SourceServer`
         """
         return self._source_server
 
@@ -487,7 +550,7 @@ class ShowTaskResponse(SdkResponse):
 
 
         :param source_server: The source_server of this ShowTaskResponse.
-        :type: SourceServer
+        :type source_server: :class:`huaweicloudsdksms.v3.SourceServer`
         """
         self._source_server = source_server
 
@@ -497,7 +560,7 @@ class ShowTaskResponse(SdkResponse):
 
 
         :return: The target_server of this ShowTaskResponse.
-        :rtype: TaskTargetServer
+        :rtype: :class:`huaweicloudsdksms.v3.TaskTargetServer`
         """
         return self._target_server
 
@@ -507,7 +570,7 @@ class ShowTaskResponse(SdkResponse):
 
 
         :param target_server: The target_server of this ShowTaskResponse.
-        :type: TaskTargetServer
+        :type target_server: :class:`huaweicloudsdksms.v3.TaskTargetServer`
         """
         self._target_server = target_server
 
@@ -529,7 +592,7 @@ class ShowTaskResponse(SdkResponse):
         任务状态
 
         :param state: The state of this ShowTaskResponse.
-        :type: str
+        :type state: str
         """
         self._state = state
 
@@ -551,7 +614,7 @@ class ShowTaskResponse(SdkResponse):
         预估完成时间
 
         :param estimate_complete_time: The estimate_complete_time of this ShowTaskResponse.
-        :type: int
+        :type estimate_complete_time: int
         """
         self._estimate_complete_time = estimate_complete_time
 
@@ -573,7 +636,7 @@ class ShowTaskResponse(SdkResponse):
         连接状态
 
         :param connected: The connected of this ShowTaskResponse.
-        :type: bool
+        :type connected: bool
         """
         self._connected = connected
 
@@ -595,7 +658,7 @@ class ShowTaskResponse(SdkResponse):
         任务创建时间
 
         :param create_date: The create_date of this ShowTaskResponse.
-        :type: int
+        :type create_date: int
         """
         self._create_date = create_date
 
@@ -617,7 +680,7 @@ class ShowTaskResponse(SdkResponse):
         任务开始时间
 
         :param start_date: The start_date of this ShowTaskResponse.
-        :type: int
+        :type start_date: int
         """
         self._start_date = start_date
 
@@ -639,7 +702,7 @@ class ShowTaskResponse(SdkResponse):
         任务结束时间
 
         :param finish_date: The finish_date of this ShowTaskResponse.
-        :type: int
+        :type finish_date: int
         """
         self._finish_date = finish_date
 
@@ -661,7 +724,7 @@ class ShowTaskResponse(SdkResponse):
         迁移速率，单位：MB/S
 
         :param migrate_speed: The migrate_speed of this ShowTaskResponse.
-        :type: float
+        :type migrate_speed: float
         """
         self._migrate_speed = migrate_speed
 
@@ -683,7 +746,7 @@ class ShowTaskResponse(SdkResponse):
         压缩率
 
         :param compress_rate: The compress_rate of this ShowTaskResponse.
-        :type: float
+        :type compress_rate: float
         """
         self._compress_rate = compress_rate
 
@@ -705,7 +768,7 @@ class ShowTaskResponse(SdkResponse):
         错误信息
 
         :param error_json: The error_json of this ShowTaskResponse.
-        :type: str
+        :type error_json: str
         """
         self._error_json = error_json
 
@@ -727,7 +790,7 @@ class ShowTaskResponse(SdkResponse):
         任务总耗时
 
         :param total_time: The total_time of this ShowTaskResponse.
-        :type: int
+        :type total_time: int
         """
         self._total_time = total_time
 
@@ -749,7 +812,7 @@ class ShowTaskResponse(SdkResponse):
         暂时保留float,兼容现网老版本的SMS-Agent
 
         :param float_ip: The float_ip of this ShowTaskResponse.
-        :type: str
+        :type float_ip: str
         """
         self._float_ip = float_ip
 
@@ -771,7 +834,7 @@ class ShowTaskResponse(SdkResponse):
         迁移剩余时间（秒）
 
         :param remain_seconds: The remain_seconds of this ShowTaskResponse.
-        :type: int
+        :type remain_seconds: int
         """
         self._remain_seconds = remain_seconds
 
@@ -793,7 +856,7 @@ class ShowTaskResponse(SdkResponse):
         目的端的快照id
 
         :param target_snapshot_id: The target_snapshot_id of this ShowTaskResponse.
-        :type: str
+        :type target_snapshot_id: str
         """
         self._target_snapshot_id = target_snapshot_id
 
@@ -803,7 +866,7 @@ class ShowTaskResponse(SdkResponse):
 
 
         :return: The clone_server of this ShowTaskResponse.
-        :rtype: CloneServer
+        :rtype: :class:`huaweicloudsdksms.v3.CloneServer`
         """
         return self._clone_server
 
@@ -813,7 +876,7 @@ class ShowTaskResponse(SdkResponse):
 
 
         :param clone_server: The clone_server of this ShowTaskResponse.
-        :type: CloneServer
+        :type clone_server: :class:`huaweicloudsdksms.v3.CloneServer`
         """
         self._clone_server = clone_server
 
@@ -824,7 +887,7 @@ class ShowTaskResponse(SdkResponse):
         任务包含的子任务列表
 
         :return: The sub_tasks of this ShowTaskResponse.
-        :rtype: list[SubTask]
+        :rtype: list[:class:`huaweicloudsdksms.v3.SubTask`]
         """
         return self._sub_tasks
 
@@ -835,7 +898,7 @@ class ShowTaskResponse(SdkResponse):
         任务包含的子任务列表
 
         :param sub_tasks: The sub_tasks of this ShowTaskResponse.
-        :type: list[SubTask]
+        :type sub_tasks: list[:class:`huaweicloudsdksms.v3.SubTask`]
         """
         self._sub_tasks = sub_tasks
 

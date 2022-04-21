@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LogInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class LogInfo:
     }
 
     def __init__(self, display_name=None, log=None, level=None, analysis=None, faq=None):
-        """LogInfo - a model defined in huaweicloud sdk"""
+        """LogInfo
+
+        The model defined in huaweicloud sdk
+
+        :param display_name: 日志标题
+        :type display_name: str
+        :param log: 日志内容
+        :type log: str
+        :param level: 日志级别
+        :type level: str
+        :param analysis: 日志分析
+        :type analysis: str
+        :param faq: 常见问题解答
+        :type faq: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class LogInfo:
         日志标题
 
         :param display_name: The display_name of this LogInfo.
-        :type: str
+        :type display_name: str
         """
         self._display_name = display_name
 
@@ -100,7 +113,7 @@ class LogInfo:
         日志内容
 
         :param log: The log of this LogInfo.
-        :type: str
+        :type log: str
         """
         self._log = log
 
@@ -122,7 +135,7 @@ class LogInfo:
         日志级别
 
         :param level: The level of this LogInfo.
-        :type: str
+        :type level: str
         """
         self._level = level
 
@@ -144,7 +157,7 @@ class LogInfo:
         日志分析
 
         :param analysis: The analysis of this LogInfo.
-        :type: str
+        :type analysis: str
         """
         self._analysis = analysis
 
@@ -166,7 +179,7 @@ class LogInfo:
         常见问题解答
 
         :param faq: The faq of this LogInfo.
-        :type: str
+        :type faq: str
         """
         self._faq = faq
 

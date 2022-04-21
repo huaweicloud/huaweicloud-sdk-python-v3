@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CheckCertificateRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CheckCertificateRequest:
     }
 
     def __init__(self, instance_id=None, certificate_id=None, action_id=None, body=None):
-        """CheckCertificateRequest - a model defined in huaweicloud sdk"""
+        """CheckCertificateRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
+        :type instance_id: str
+        :param certificate_id: **参数说明**：设备CA证书ID，在上传设备CA证书时由平台分配的唯一标识。
+        :type certificate_id: str
+        :param action_id: **参数说明**：对证书执行的操作。 **取值范围**：当前仅支持verify:校验证书。
+        :type action_id: str
+        :param body: Body of the CheckCertificateRequest
+        :type body: :class:`huaweicloudsdkiotda.v5.VerifyCertificateDTO`
+        """
         
         
 
@@ -71,7 +82,7 @@ class CheckCertificateRequest:
         **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
         :param instance_id: The instance_id of this CheckCertificateRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -93,7 +104,7 @@ class CheckCertificateRequest:
         **参数说明**：设备CA证书ID，在上传设备CA证书时由平台分配的唯一标识。
 
         :param certificate_id: The certificate_id of this CheckCertificateRequest.
-        :type: str
+        :type certificate_id: str
         """
         self._certificate_id = certificate_id
 
@@ -115,7 +126,7 @@ class CheckCertificateRequest:
         **参数说明**：对证书执行的操作。 **取值范围**：当前仅支持verify:校验证书。
 
         :param action_id: The action_id of this CheckCertificateRequest.
-        :type: str
+        :type action_id: str
         """
         self._action_id = action_id
 
@@ -125,7 +136,7 @@ class CheckCertificateRequest:
 
 
         :return: The body of this CheckCertificateRequest.
-        :rtype: VerifyCertificateDTO
+        :rtype: :class:`huaweicloudsdkiotda.v5.VerifyCertificateDTO`
         """
         return self._body
 
@@ -135,7 +146,7 @@ class CheckCertificateRequest:
 
 
         :param body: The body of this CheckCertificateRequest.
-        :type: VerifyCertificateDTO
+        :type body: :class:`huaweicloudsdkiotda.v5.VerifyCertificateDTO`
         """
         self._body = body
 

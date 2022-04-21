@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DisassociateEcsServerInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DisassociateEcsServerInfo:
     }
 
     def __init__(self, id=None, auth=None):
-        """DisassociateEcsServerInfo - a model defined in huaweicloud sdk"""
+        """DisassociateEcsServerInfo
+
+        The model defined in huaweicloud sdk
+
+        :param id: 需要绑定(替换或重置)SSH密钥对的虚拟机id
+        :type id: str
+        :param auth: 
+        :type auth: :class:`huaweicloudsdkkps.v3.Auth`
+        """
         
         
 
@@ -62,7 +69,7 @@ class DisassociateEcsServerInfo:
         需要绑定(替换或重置)SSH密钥对的虚拟机id
 
         :param id: The id of this DisassociateEcsServerInfo.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -72,7 +79,7 @@ class DisassociateEcsServerInfo:
 
 
         :return: The auth of this DisassociateEcsServerInfo.
-        :rtype: Auth
+        :rtype: :class:`huaweicloudsdkkps.v3.Auth`
         """
         return self._auth
 
@@ -82,7 +89,7 @@ class DisassociateEcsServerInfo:
 
 
         :param auth: The auth of this DisassociateEcsServerInfo.
-        :type: Auth
+        :type auth: :class:`huaweicloudsdkkps.v3.Auth`
         """
         self._auth = auth
 

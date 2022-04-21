@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RouteServerBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class RouteServerBody:
     }
 
     def __init__(self, back_protocol=None, address=None, port=None):
-        """RouteServerBody - a model defined in huaweicloud sdk"""
+        """RouteServerBody
+
+        The model defined in huaweicloud sdk
+
+        :param back_protocol: 后端协议
+        :type back_protocol: str
+        :param address: 后端ip地址
+        :type address: str
+        :param port: 端口信息
+        :type port: int
+        """
         
         
 
@@ -68,7 +77,7 @@ class RouteServerBody:
         后端协议
 
         :param back_protocol: The back_protocol of this RouteServerBody.
-        :type: str
+        :type back_protocol: str
         """
         self._back_protocol = back_protocol
 
@@ -90,7 +99,7 @@ class RouteServerBody:
         后端ip地址
 
         :param address: The address of this RouteServerBody.
-        :type: str
+        :type address: str
         """
         self._address = address
 
@@ -112,7 +121,7 @@ class RouteServerBody:
         端口信息
 
         :param port: The port of this RouteServerBody.
-        :type: int
+        :type port: int
         """
         self._port = port
 

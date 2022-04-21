@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTasksResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListTasksResponse(SdkResponse):
     }
 
     def __init__(self, count=None, tasks=None):
-        """ListTasksResponse - a model defined in huaweicloud sdk"""
+        """ListTasksResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 符合要求的任务数量，不受分页影响
+        :type count: int
+        :param tasks: 查询到的任务列表
+        :type tasks: list[:class:`huaweicloudsdksms.v3.TasksResponseBody`]
+        """
         
         super(ListTasksResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListTasksResponse(SdkResponse):
         符合要求的任务数量，不受分页影响
 
         :param count: The count of this ListTasksResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -74,7 +81,7 @@ class ListTasksResponse(SdkResponse):
         查询到的任务列表
 
         :return: The tasks of this ListTasksResponse.
-        :rtype: list[TasksResponseBody]
+        :rtype: list[:class:`huaweicloudsdksms.v3.TasksResponseBody`]
         """
         return self._tasks
 
@@ -85,7 +92,7 @@ class ListTasksResponse(SdkResponse):
         查询到的任务列表
 
         :param tasks: The tasks of this ListTasksResponse.
-        :type: list[TasksResponseBody]
+        :type tasks: list[:class:`huaweicloudsdksms.v3.TasksResponseBody`]
         """
         self._tasks = tasks
 

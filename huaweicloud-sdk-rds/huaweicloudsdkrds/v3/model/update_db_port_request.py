@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDbPortRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateDbPortRequest:
     }
 
     def __init__(self, port=None):
-        """UpdateDbPortRequest - a model defined in huaweicloud sdk"""
+        """UpdateDbPortRequest
+
+        The model defined in huaweicloud sdk
+
+        :param port: MySQL端口号范围：大于等于1024，小于等于65535，不包含12017和33071。
+        :type port: int
+        """
         
         
 
@@ -57,7 +62,7 @@ class UpdateDbPortRequest:
         MySQL端口号范围：大于等于1024，小于等于65535，不包含12017和33071。
 
         :param port: The port of this UpdateDbPortRequest.
-        :type: int
+        :type port: int
         """
         self._port = port
 

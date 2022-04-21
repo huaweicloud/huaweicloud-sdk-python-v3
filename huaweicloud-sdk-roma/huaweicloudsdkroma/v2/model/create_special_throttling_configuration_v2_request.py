@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateSpecialThrottlingConfigurationV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateSpecialThrottlingConfigurationV2Request:
     }
 
     def __init__(self, instance_id=None, throttle_id=None, body=None):
-        """CreateSpecialThrottlingConfigurationV2Request - a model defined in huaweicloud sdk"""
+        """CreateSpecialThrottlingConfigurationV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param throttle_id: 流控策略的编号
+        :type throttle_id: str
+        :param body: Body of the CreateSpecialThrottlingConfigurationV2Request
+        :type body: :class:`huaweicloudsdkroma.v2.ThrottleSpecialCreate`
+        """
         
         
 
@@ -66,7 +75,7 @@ class CreateSpecialThrottlingConfigurationV2Request:
         实例ID
 
         :param instance_id: The instance_id of this CreateSpecialThrottlingConfigurationV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -88,7 +97,7 @@ class CreateSpecialThrottlingConfigurationV2Request:
         流控策略的编号
 
         :param throttle_id: The throttle_id of this CreateSpecialThrottlingConfigurationV2Request.
-        :type: str
+        :type throttle_id: str
         """
         self._throttle_id = throttle_id
 
@@ -98,7 +107,7 @@ class CreateSpecialThrottlingConfigurationV2Request:
 
 
         :return: The body of this CreateSpecialThrottlingConfigurationV2Request.
-        :rtype: ThrottleSpecialCreate
+        :rtype: :class:`huaweicloudsdkroma.v2.ThrottleSpecialCreate`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class CreateSpecialThrottlingConfigurationV2Request:
 
 
         :param body: The body of this CreateSpecialThrottlingConfigurationV2Request.
-        :type: ThrottleSpecialCreate
+        :type body: :class:`huaweicloudsdkroma.v2.ThrottleSpecialCreate`
         """
         self._body = body
 

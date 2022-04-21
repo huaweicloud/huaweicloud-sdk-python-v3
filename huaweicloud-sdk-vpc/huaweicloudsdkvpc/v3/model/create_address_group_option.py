@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateAddressGroupOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CreateAddressGroupOption:
     }
 
     def __init__(self, name=None, description=None, ip_version=None, ip_set=None):
-        """CreateAddressGroupOption - a model defined in huaweicloud sdk"""
+        """CreateAddressGroupOption
+
+        The model defined in huaweicloud sdk
+
+        :param name: 功能说明：地址组名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
+        :type name: str
+        :param description: 功能说明：地址组描述信息 取值范围：0-255个字符，不能包含“&lt;”和“&gt;”。 
+        :type description: str
+        :param ip_version: 功能说明：地址组ip版本 取值范围：4, 表示ipv4地址组；6，表示ipv6地址组
+        :type ip_version: int
+        :param ip_set: 功能说明：地址组可包含地址集 取值范围：可以是单个ip地址，ip地址范围，ip地址cidr 约束：当前一个地址组ip_set数量限制默认值为20，即配置的ip地址、ip地址范围或ip地址cidr的总数默认限制20
+        :type ip_set: list[str]
+        """
         
         
 
@@ -71,7 +82,7 @@ class CreateAddressGroupOption:
         功能说明：地址组名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
         :param name: The name of this CreateAddressGroupOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -93,7 +104,7 @@ class CreateAddressGroupOption:
         功能说明：地址组描述信息 取值范围：0-255个字符，不能包含“<”和“>”。 
 
         :param description: The description of this CreateAddressGroupOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -115,7 +126,7 @@ class CreateAddressGroupOption:
         功能说明：地址组ip版本 取值范围：4, 表示ipv4地址组；6，表示ipv6地址组
 
         :param ip_version: The ip_version of this CreateAddressGroupOption.
-        :type: int
+        :type ip_version: int
         """
         self._ip_version = ip_version
 
@@ -137,7 +148,7 @@ class CreateAddressGroupOption:
         功能说明：地址组可包含地址集 取值范围：可以是单个ip地址，ip地址范围，ip地址cidr 约束：当前一个地址组ip_set数量限制默认值为20，即配置的ip地址、ip地址范围或ip地址cidr的总数默认限制20
 
         :param ip_set: The ip_set of this CreateAddressGroupOption.
-        :type: list[str]
+        :type ip_set: list[str]
         """
         self._ip_set = ip_set
 

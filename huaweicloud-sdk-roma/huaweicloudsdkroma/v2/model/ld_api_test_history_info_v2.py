@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LdApiTestHistoryInfoV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class LdApiTestHistoryInfoV2:
     }
 
     def __init__(self, test_status_code=None, test_request=None, test_used_time=None, test_operator=None, test_response=None, test_method=None, test_id=None, test_date=None, ld_api_id=None):
-        """LdApiTestHistoryInfoV2 - a model defined in huaweicloud sdk"""
+        """LdApiTestHistoryInfoV2
+
+        The model defined in huaweicloud sdk
+
+        :param test_status_code: 测试返回的状态码
+        :type test_status_code: str
+        :param test_request: 测试的请求内容
+        :type test_request: str
+        :param test_used_time: 测试耗时
+        :type test_used_time: int
+        :param test_operator: 测试者的项目编号
+        :type test_operator: str
+        :param test_response: 测试的响应内容
+        :type test_response: str
+        :param test_method: 测试的请求方法
+        :type test_method: str
+        :param test_id: 测试编号
+        :type test_id: int
+        :param test_date: 测试时间
+        :type test_date: datetime
+        :param ld_api_id: 后端API编号
+        :type ld_api_id: str
+        """
         
         
 
@@ -98,7 +119,7 @@ class LdApiTestHistoryInfoV2:
         测试返回的状态码
 
         :param test_status_code: The test_status_code of this LdApiTestHistoryInfoV2.
-        :type: str
+        :type test_status_code: str
         """
         self._test_status_code = test_status_code
 
@@ -120,7 +141,7 @@ class LdApiTestHistoryInfoV2:
         测试的请求内容
 
         :param test_request: The test_request of this LdApiTestHistoryInfoV2.
-        :type: str
+        :type test_request: str
         """
         self._test_request = test_request
 
@@ -142,7 +163,7 @@ class LdApiTestHistoryInfoV2:
         测试耗时
 
         :param test_used_time: The test_used_time of this LdApiTestHistoryInfoV2.
-        :type: int
+        :type test_used_time: int
         """
         self._test_used_time = test_used_time
 
@@ -164,7 +185,7 @@ class LdApiTestHistoryInfoV2:
         测试者的项目编号
 
         :param test_operator: The test_operator of this LdApiTestHistoryInfoV2.
-        :type: str
+        :type test_operator: str
         """
         self._test_operator = test_operator
 
@@ -186,7 +207,7 @@ class LdApiTestHistoryInfoV2:
         测试的响应内容
 
         :param test_response: The test_response of this LdApiTestHistoryInfoV2.
-        :type: str
+        :type test_response: str
         """
         self._test_response = test_response
 
@@ -208,7 +229,7 @@ class LdApiTestHistoryInfoV2:
         测试的请求方法
 
         :param test_method: The test_method of this LdApiTestHistoryInfoV2.
-        :type: str
+        :type test_method: str
         """
         self._test_method = test_method
 
@@ -230,7 +251,7 @@ class LdApiTestHistoryInfoV2:
         测试编号
 
         :param test_id: The test_id of this LdApiTestHistoryInfoV2.
-        :type: int
+        :type test_id: int
         """
         self._test_id = test_id
 
@@ -252,7 +273,7 @@ class LdApiTestHistoryInfoV2:
         测试时间
 
         :param test_date: The test_date of this LdApiTestHistoryInfoV2.
-        :type: datetime
+        :type test_date: datetime
         """
         self._test_date = test_date
 
@@ -274,7 +295,7 @@ class LdApiTestHistoryInfoV2:
         后端API编号
 
         :param ld_api_id: The ld_api_id of this LdApiTestHistoryInfoV2.
-        :type: str
+        :type ld_api_id: str
         """
         self._ld_api_id = ld_api_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowProjectSummaryV4Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowProjectSummaryV4Response(SdkResponse):
     }
 
     def __init__(self, bug_statistics=None, demand_statistics=None, issue_completion_rates=None, project_id=None):
-        """ShowProjectSummaryV4Response - a model defined in huaweicloud sdk"""
+        """ShowProjectSummaryV4Response
+
+        The model defined in huaweicloud sdk
+
+        :param bug_statistics: bug统计列表
+        :type bug_statistics: list[:class:`huaweicloudsdkprojectman.v4.BugStatisticResponseV4`]
+        :param demand_statistics: 按模块统计列表
+        :type demand_statistics: list[:class:`huaweicloudsdkprojectman.v4.DemandStatisticResponseV4`]
+        :param issue_completion_rates: 按工作项类型统计列表
+        :type issue_completion_rates: list[:class:`huaweicloudsdkprojectman.v4.IssueCompletionRateResponseV4`]
+        :param project_id: 项目id
+        :type project_id: str
+        """
         
         super(ShowProjectSummaryV4Response, self).__init__()
 
@@ -62,7 +73,7 @@ class ShowProjectSummaryV4Response(SdkResponse):
         bug统计列表
 
         :return: The bug_statistics of this ShowProjectSummaryV4Response.
-        :rtype: list[BugStatisticResponseV4]
+        :rtype: list[:class:`huaweicloudsdkprojectman.v4.BugStatisticResponseV4`]
         """
         return self._bug_statistics
 
@@ -73,7 +84,7 @@ class ShowProjectSummaryV4Response(SdkResponse):
         bug统计列表
 
         :param bug_statistics: The bug_statistics of this ShowProjectSummaryV4Response.
-        :type: list[BugStatisticResponseV4]
+        :type bug_statistics: list[:class:`huaweicloudsdkprojectman.v4.BugStatisticResponseV4`]
         """
         self._bug_statistics = bug_statistics
 
@@ -84,7 +95,7 @@ class ShowProjectSummaryV4Response(SdkResponse):
         按模块统计列表
 
         :return: The demand_statistics of this ShowProjectSummaryV4Response.
-        :rtype: list[DemandStatisticResponseV4]
+        :rtype: list[:class:`huaweicloudsdkprojectman.v4.DemandStatisticResponseV4`]
         """
         return self._demand_statistics
 
@@ -95,7 +106,7 @@ class ShowProjectSummaryV4Response(SdkResponse):
         按模块统计列表
 
         :param demand_statistics: The demand_statistics of this ShowProjectSummaryV4Response.
-        :type: list[DemandStatisticResponseV4]
+        :type demand_statistics: list[:class:`huaweicloudsdkprojectman.v4.DemandStatisticResponseV4`]
         """
         self._demand_statistics = demand_statistics
 
@@ -106,7 +117,7 @@ class ShowProjectSummaryV4Response(SdkResponse):
         按工作项类型统计列表
 
         :return: The issue_completion_rates of this ShowProjectSummaryV4Response.
-        :rtype: list[IssueCompletionRateResponseV4]
+        :rtype: list[:class:`huaweicloudsdkprojectman.v4.IssueCompletionRateResponseV4`]
         """
         return self._issue_completion_rates
 
@@ -117,7 +128,7 @@ class ShowProjectSummaryV4Response(SdkResponse):
         按工作项类型统计列表
 
         :param issue_completion_rates: The issue_completion_rates of this ShowProjectSummaryV4Response.
-        :type: list[IssueCompletionRateResponseV4]
+        :type issue_completion_rates: list[:class:`huaweicloudsdkprojectman.v4.IssueCompletionRateResponseV4`]
         """
         self._issue_completion_rates = issue_completion_rates
 
@@ -139,7 +150,7 @@ class ShowProjectSummaryV4Response(SdkResponse):
         项目id
 
         :param project_id: The project_id of this ShowProjectSummaryV4Response.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 

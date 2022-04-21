@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowConfigMapRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowConfigMapRequest:
     }
 
     def __init__(self, ief_instance_id=None, configmap_id=None):
-        """ShowConfigMapRequest - a model defined in huaweicloud sdk"""
+        """ShowConfigMapRequest
+
+        The model defined in huaweicloud sdk
+
+        :param ief_instance_id: 铂金版实例ID，专业版实例为空值
+        :type ief_instance_id: str
+        :param configmap_id: 配置项ID
+        :type configmap_id: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ShowConfigMapRequest:
         铂金版实例ID，专业版实例为空值
 
         :param ief_instance_id: The ief_instance_id of this ShowConfigMapRequest.
-        :type: str
+        :type ief_instance_id: str
         """
         self._ief_instance_id = ief_instance_id
 
@@ -84,7 +91,7 @@ class ShowConfigMapRequest:
         配置项ID
 
         :param configmap_id: The configmap_id of this ShowConfigMapRequest.
-        :type: str
+        :type configmap_id: str
         """
         self._configmap_id = configmap_id
 

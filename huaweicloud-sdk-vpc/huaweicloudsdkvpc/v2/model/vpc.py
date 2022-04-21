@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Vpc:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class Vpc:
     }
 
     def __init__(self, id=None, name=None, cidr=None, description=None, routes=None, status=None, enterprise_project_id=None):
-        """Vpc - a model defined in huaweicloud sdk"""
+        """Vpc
+
+        The model defined in huaweicloud sdk
+
+        :param id: 功能说明：虚拟私有云ID 取值范围：带\&quot;-\&quot;的UUID
+        :type id: str
+        :param name: 功能说明：虚拟私有云名称 取值范围：0-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点） 约束：如果名称不为空，则同一个租户下的名称不能重复
+        :type name: str
+        :param cidr: 功能说明：虚拟私有云下可用子网的范围 取值范围： - 10.0.0.0/8~10.255.255.240/28 - 172.16.0.0/12 ~ 172.31.255.240/28 - 192.168.0.0/16 ~ 192.168.255.240/28 不指定cidr时，默认值为空 约束：必须是ipv4 cidr格式，例如:192.168.0.0/16
+        :type cidr: str
+        :param description: 功能说明：虚拟私有云的描述 取值范围：0-255个字符，不能包含“&lt;”和“&gt;”
+        :type description: str
+        :param routes: 功能说明：路由信息列表，详情参见route对象
+        :type routes: list[:class:`huaweicloudsdkvpc.v2.Route`]
+        :param status: 功能说明：虚拟私有云的状态 取值范围： - CREATING：创建中 - OK：创建成功
+        :type status: str
+        :param enterprise_project_id: 功能说明：企业项目ID。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。
+        :type enterprise_project_id: str
+        """
         
         
 
@@ -81,7 +98,7 @@ class Vpc:
         功能说明：虚拟私有云ID 取值范围：带\"-\"的UUID
 
         :param id: The id of this Vpc.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -103,7 +120,7 @@ class Vpc:
         功能说明：虚拟私有云名称 取值范围：0-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点） 约束：如果名称不为空，则同一个租户下的名称不能重复
 
         :param name: The name of this Vpc.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -125,7 +142,7 @@ class Vpc:
         功能说明：虚拟私有云下可用子网的范围 取值范围： - 10.0.0.0/8~10.255.255.240/28 - 172.16.0.0/12 ~ 172.31.255.240/28 - 192.168.0.0/16 ~ 192.168.255.240/28 不指定cidr时，默认值为空 约束：必须是ipv4 cidr格式，例如:192.168.0.0/16
 
         :param cidr: The cidr of this Vpc.
-        :type: str
+        :type cidr: str
         """
         self._cidr = cidr
 
@@ -147,7 +164,7 @@ class Vpc:
         功能说明：虚拟私有云的描述 取值范围：0-255个字符，不能包含“<”和“>”
 
         :param description: The description of this Vpc.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -158,7 +175,7 @@ class Vpc:
         功能说明：路由信息列表，详情参见route对象
 
         :return: The routes of this Vpc.
-        :rtype: list[Route]
+        :rtype: list[:class:`huaweicloudsdkvpc.v2.Route`]
         """
         return self._routes
 
@@ -169,7 +186,7 @@ class Vpc:
         功能说明：路由信息列表，详情参见route对象
 
         :param routes: The routes of this Vpc.
-        :type: list[Route]
+        :type routes: list[:class:`huaweicloudsdkvpc.v2.Route`]
         """
         self._routes = routes
 
@@ -191,7 +208,7 @@ class Vpc:
         功能说明：虚拟私有云的状态 取值范围： - CREATING：创建中 - OK：创建成功
 
         :param status: The status of this Vpc.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -213,7 +230,7 @@ class Vpc:
         功能说明：企业项目ID。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。
 
         :param enterprise_project_id: The enterprise_project_id of this Vpc.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 

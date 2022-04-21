@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateCertificateResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UpdateCertificateResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, expire_time=None, timestamp=None):
-        """UpdateCertificateResponse - a model defined in huaweicloud sdk"""
+        """UpdateCertificateResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 证书ID
+        :type id: str
+        :param name: 证书名
+        :type name: str
+        :param expire_time: 证书过期时间戳
+        :type expire_time: int
+        :param timestamp: 时间戳
+        :type timestamp: int
+        """
         
         super(UpdateCertificateResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class UpdateCertificateResponse(SdkResponse):
         证书ID
 
         :param id: The id of this UpdateCertificateResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -95,7 +106,7 @@ class UpdateCertificateResponse(SdkResponse):
         证书名
 
         :param name: The name of this UpdateCertificateResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -117,7 +128,7 @@ class UpdateCertificateResponse(SdkResponse):
         证书过期时间戳
 
         :param expire_time: The expire_time of this UpdateCertificateResponse.
-        :type: int
+        :type expire_time: int
         """
         self._expire_time = expire_time
 
@@ -139,7 +150,7 @@ class UpdateCertificateResponse(SdkResponse):
         时间戳
 
         :param timestamp: The timestamp of this UpdateCertificateResponse.
-        :type: int
+        :type timestamp: int
         """
         self._timestamp = timestamp
 

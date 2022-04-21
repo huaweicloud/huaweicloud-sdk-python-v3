@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DownloadSlowlogResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class DownloadSlowlogResponse(SdkResponse):
     }
 
     def __init__(self, list=None, status=None, count=None):
-        """DownloadSlowlogResponse - a model defined in huaweicloud sdk"""
+        """DownloadSlowlogResponse
+
+        The model defined in huaweicloud sdk
+
+        :param list: 具体信息。
+        :type list: list[:class:`huaweicloudsdkdds.v3.DownloadSlowlogResult`]
+        :param status: 慢日志下载链接生成状态。 - FINISH，表示下载链接已经生成完成。 - CREATING，表示正在生成文件，准备下载链接。 - FAILED，表示存在日志文件准备失败。
+        :type status: str
+        :param count: 慢日志链接数量。
+        :type count: int
+        """
         
         super(DownloadSlowlogResponse, self).__init__()
 
@@ -57,7 +66,7 @@ class DownloadSlowlogResponse(SdkResponse):
         具体信息。
 
         :return: The list of this DownloadSlowlogResponse.
-        :rtype: list[DownloadSlowlogResult]
+        :rtype: list[:class:`huaweicloudsdkdds.v3.DownloadSlowlogResult`]
         """
         return self._list
 
@@ -68,7 +77,7 @@ class DownloadSlowlogResponse(SdkResponse):
         具体信息。
 
         :param list: The list of this DownloadSlowlogResponse.
-        :type: list[DownloadSlowlogResult]
+        :type list: list[:class:`huaweicloudsdkdds.v3.DownloadSlowlogResult`]
         """
         self._list = list
 
@@ -90,7 +99,7 @@ class DownloadSlowlogResponse(SdkResponse):
         慢日志下载链接生成状态。 - FINISH，表示下载链接已经生成完成。 - CREATING，表示正在生成文件，准备下载链接。 - FAILED，表示存在日志文件准备失败。
 
         :param status: The status of this DownloadSlowlogResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -112,7 +121,7 @@ class DownloadSlowlogResponse(SdkResponse):
         慢日志链接数量。
 
         :param count: The count of this DownloadSlowlogResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

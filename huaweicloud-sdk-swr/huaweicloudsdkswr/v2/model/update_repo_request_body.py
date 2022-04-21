@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateRepoRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateRepoRequestBody:
     }
 
     def __init__(self, is_public=None, category=None, description=None):
-        """UpdateRepoRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateRepoRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param is_public: 是否为公共仓库，可选值为true或false。
+        :type is_public: bool
+        :param category: 仓库类型，可设置为app_server, linux, framework_app, database, lang, other, windows, arm。
+        :type category: str
+        :param description: 镜像仓库的描述信息。
+        :type description: str
+        """
         
         
 
@@ -67,7 +76,7 @@ class UpdateRepoRequestBody:
         是否为公共仓库，可选值为true或false。
 
         :param is_public: The is_public of this UpdateRepoRequestBody.
-        :type: bool
+        :type is_public: bool
         """
         self._is_public = is_public
 
@@ -89,7 +98,7 @@ class UpdateRepoRequestBody:
         仓库类型，可设置为app_server, linux, framework_app, database, lang, other, windows, arm。
 
         :param category: The category of this UpdateRepoRequestBody.
-        :type: str
+        :type category: str
         """
         self._category = category
 
@@ -111,7 +120,7 @@ class UpdateRepoRequestBody:
         镜像仓库的描述信息。
 
         :param description: The description of this UpdateRepoRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ImageDetectionResultDetailPolitics:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ImageDetectionResultDetailPolitics:
     }
 
     def __init__(self, confidence=None, label=None, face_detail=None):
-        """ImageDetectionResultDetailPolitics - a model defined in huaweicloud sdk"""
+        """ImageDetectionResultDetailPolitics
+
+        The model defined in huaweicloud sdk
+
+        :param confidence: 置信度，取值范围 0-1。
+        :type confidence: float
+        :param label: 对应的政治人物信息。
+        :type label: str
+        :param face_detail: 
+        :type face_detail: :class:`huaweicloudsdkmoderation.v2.ImageDetectionResultDetailFaceDetail`
+        """
         
         
 
@@ -68,7 +77,7 @@ class ImageDetectionResultDetailPolitics:
         置信度，取值范围 0-1。
 
         :param confidence: The confidence of this ImageDetectionResultDetailPolitics.
-        :type: float
+        :type confidence: float
         """
         self._confidence = confidence
 
@@ -90,7 +99,7 @@ class ImageDetectionResultDetailPolitics:
         对应的政治人物信息。
 
         :param label: The label of this ImageDetectionResultDetailPolitics.
-        :type: str
+        :type label: str
         """
         self._label = label
 
@@ -100,7 +109,7 @@ class ImageDetectionResultDetailPolitics:
 
 
         :return: The face_detail of this ImageDetectionResultDetailPolitics.
-        :rtype: ImageDetectionResultDetailFaceDetail
+        :rtype: :class:`huaweicloudsdkmoderation.v2.ImageDetectionResultDetailFaceDetail`
         """
         return self._face_detail
 
@@ -110,7 +119,7 @@ class ImageDetectionResultDetailPolitics:
 
 
         :param face_detail: The face_detail of this ImageDetectionResultDetailPolitics.
-        :type: ImageDetectionResultDetailFaceDetail
+        :type face_detail: :class:`huaweicloudsdkmoderation.v2.ImageDetectionResultDetailFaceDetail`
         """
         self._face_detail = face_detail
 

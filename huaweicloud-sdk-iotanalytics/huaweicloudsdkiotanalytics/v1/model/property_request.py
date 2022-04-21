@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PropertyRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class PropertyRequest:
     }
 
     def __init__(self, name=None, value=None, device_id=None):
-        """PropertyRequest - a model defined in huaweicloud sdk"""
+        """PropertyRequest
+
+        The model defined in huaweicloud sdk
+
+        :param name: 属性名称，必须是模型中已存在的
+        :type name: str
+        :param value: 值，只有static型属性可以填写
+        :type value: object
+        :param device_id: 设备ID，只有measurement型属性可以填写
+        :type device_id: str
+        """
         
         
 
@@ -67,7 +76,7 @@ class PropertyRequest:
         属性名称，必须是模型中已存在的
 
         :param name: The name of this PropertyRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -89,7 +98,7 @@ class PropertyRequest:
         值，只有static型属性可以填写
 
         :param value: The value of this PropertyRequest.
-        :type: object
+        :type value: object
         """
         self._value = value
 
@@ -111,7 +120,7 @@ class PropertyRequest:
         设备ID，只有measurement型属性可以填写
 
         :param device_id: The device_id of this PropertyRequest.
-        :type: str
+        :type device_id: str
         """
         self._device_id = device_id
 

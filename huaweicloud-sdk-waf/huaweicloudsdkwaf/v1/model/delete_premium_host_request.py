@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeletePremiumHostRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class DeletePremiumHostRequest:
     }
 
     def __init__(self, enterprise_project_id=None, host_id=None, keep_policy=None):
-        """DeletePremiumHostRequest - a model defined in huaweicloud sdk"""
+        """DeletePremiumHostRequest
+
+        The model defined in huaweicloud sdk
+
+        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        :type enterprise_project_id: str
+        :param host_id: 独享模式域名ID
+        :type host_id: str
+        :param keep_policy: 是否保留规则
+        :type keep_policy: bool
+        """
         
         
 
@@ -67,7 +76,7 @@ class DeletePremiumHostRequest:
         您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this DeletePremiumHostRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -89,7 +98,7 @@ class DeletePremiumHostRequest:
         独享模式域名ID
 
         :param host_id: The host_id of this DeletePremiumHostRequest.
-        :type: str
+        :type host_id: str
         """
         self._host_id = host_id
 
@@ -111,7 +120,7 @@ class DeletePremiumHostRequest:
         是否保留规则
 
         :param keep_policy: The keep_policy of this DeletePremiumHostRequest.
-        :type: bool
+        :type keep_policy: bool
         """
         self._keep_policy = keep_policy
 

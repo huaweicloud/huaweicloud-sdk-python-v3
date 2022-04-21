@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StartVpecpReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class StartVpecpReq:
     }
 
     def __init__(self, endpoint_with_dns_name=None):
-        """StartVpecpReq - a model defined in huaweicloud sdk"""
+        """StartVpecpReq
+
+        The model defined in huaweicloud sdk
+
+        :param endpoint_with_dns_name: 内网域名。
+        :type endpoint_with_dns_name: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class StartVpecpReq:
         内网域名。
 
         :param endpoint_with_dns_name: The endpoint_with_dns_name of this StartVpecpReq.
-        :type: str
+        :type endpoint_with_dns_name: str
         """
         self._endpoint_with_dns_name = endpoint_with_dns_name
 

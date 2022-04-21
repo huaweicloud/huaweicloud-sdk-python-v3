@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CycleSubConf:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class CycleSubConf:
     }
 
     def __init__(self, cycle_sub_conf_id=None, conference_id=None, media_type=None, start_time=None, end_time=None, is_auto_record=None, conf_config_info=None, record_auth_type=None, description=None):
-        """CycleSubConf - a model defined in huaweicloud sdk"""
+        """CycleSubConf
+
+        The model defined in huaweicloud sdk
+
+        :param cycle_sub_conf_id: 子会议ID
+        :type cycle_sub_conf_id: str
+        :param conference_id: 会议ID，长度限制为不超过32个字符
+        :type conference_id: str
+        :param media_type: 会议的媒体类型。 由1个或多个枚举String组成，多个枚举时，每个枚举值之间通过”,”逗号分隔，枚举值如下： “Voice”：语音 “Video”：标清视频 “HDVideo”：高清视频（与Video互斥，如果同时选择Video、HDVideo，则系统默认选择Video） “Telepresence”：智真(与HDVideo、Video互斥，如果同时选择，系统使用Telepresence)—暂不支持 “Data”：多媒体
+        :type media_type: str
+        :param start_time: 会议起始时间(格式：YYYY-MM-DD HH:MM)
+        :type start_time: str
+        :param end_time: 会议结束时间(格式：YYYY-MM-DD HH:MM)
+        :type end_time: str
+        :param is_auto_record: 是否自动开启录音
+        :type is_auto_record: int
+        :param conf_config_info: 
+        :type conf_config_info: :class:`huaweicloudsdkmeeting.v1.CycleSubConfConfigDTO`
+        :param record_auth_type: 录播鉴权方式，在录播类型为:录播、直播+录播时有效。 0为老的鉴权方式，url中携带token鉴权，1为企业内会议用户鉴权，2为会议内会议用户鉴权
+        :type record_auth_type: int
+        :param description: 会议描述，长度限制为200个字符
+        :type description: str
+        """
         
         
 
@@ -97,7 +118,7 @@ class CycleSubConf:
         子会议ID
 
         :param cycle_sub_conf_id: The cycle_sub_conf_id of this CycleSubConf.
-        :type: str
+        :type cycle_sub_conf_id: str
         """
         self._cycle_sub_conf_id = cycle_sub_conf_id
 
@@ -119,7 +140,7 @@ class CycleSubConf:
         会议ID，长度限制为不超过32个字符
 
         :param conference_id: The conference_id of this CycleSubConf.
-        :type: str
+        :type conference_id: str
         """
         self._conference_id = conference_id
 
@@ -141,7 +162,7 @@ class CycleSubConf:
         会议的媒体类型。 由1个或多个枚举String组成，多个枚举时，每个枚举值之间通过”,”逗号分隔，枚举值如下： “Voice”：语音 “Video”：标清视频 “HDVideo”：高清视频（与Video互斥，如果同时选择Video、HDVideo，则系统默认选择Video） “Telepresence”：智真(与HDVideo、Video互斥，如果同时选择，系统使用Telepresence)—暂不支持 “Data”：多媒体
 
         :param media_type: The media_type of this CycleSubConf.
-        :type: str
+        :type media_type: str
         """
         self._media_type = media_type
 
@@ -163,7 +184,7 @@ class CycleSubConf:
         会议起始时间(格式：YYYY-MM-DD HH:MM)
 
         :param start_time: The start_time of this CycleSubConf.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -185,7 +206,7 @@ class CycleSubConf:
         会议结束时间(格式：YYYY-MM-DD HH:MM)
 
         :param end_time: The end_time of this CycleSubConf.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -207,7 +228,7 @@ class CycleSubConf:
         是否自动开启录音
 
         :param is_auto_record: The is_auto_record of this CycleSubConf.
-        :type: int
+        :type is_auto_record: int
         """
         self._is_auto_record = is_auto_record
 
@@ -217,7 +238,7 @@ class CycleSubConf:
 
 
         :return: The conf_config_info of this CycleSubConf.
-        :rtype: CycleSubConfConfigDTO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.CycleSubConfConfigDTO`
         """
         return self._conf_config_info
 
@@ -227,7 +248,7 @@ class CycleSubConf:
 
 
         :param conf_config_info: The conf_config_info of this CycleSubConf.
-        :type: CycleSubConfConfigDTO
+        :type conf_config_info: :class:`huaweicloudsdkmeeting.v1.CycleSubConfConfigDTO`
         """
         self._conf_config_info = conf_config_info
 
@@ -249,7 +270,7 @@ class CycleSubConf:
         录播鉴权方式，在录播类型为:录播、直播+录播时有效。 0为老的鉴权方式，url中携带token鉴权，1为企业内会议用户鉴权，2为会议内会议用户鉴权
 
         :param record_auth_type: The record_auth_type of this CycleSubConf.
-        :type: int
+        :type record_auth_type: int
         """
         self._record_auth_type = record_auth_type
 
@@ -271,7 +292,7 @@ class CycleSubConf:
         会议描述，长度限制为200个字符
 
         :param description: The description of this CycleSubConf.
-        :type: str
+        :type description: str
         """
         self._description = description
 

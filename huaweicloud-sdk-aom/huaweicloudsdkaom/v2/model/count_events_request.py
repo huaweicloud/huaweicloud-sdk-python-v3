@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CountEventsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CountEventsRequest:
     }
 
     def __init__(self, type=None, body=None):
-        """CountEventsRequest - a model defined in huaweicloud sdk"""
+        """CountEventsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param type: 查询类型。type&#x3D;active_alert代表查询活动告警，type&#x3D;history_alert代表查询历史告警。不传或者传其他值则返回指定查询条件的所有信息。
+        :type type: str
+        :param body: Body of the CountEventsRequest
+        :type body: :class:`huaweicloudsdkaom.v2.EventQueryParam`
+        """
         
         
 
@@ -63,7 +70,7 @@ class CountEventsRequest:
         查询类型。type=active_alert代表查询活动告警，type=history_alert代表查询历史告警。不传或者传其他值则返回指定查询条件的所有信息。
 
         :param type: The type of this CountEventsRequest.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -73,7 +80,7 @@ class CountEventsRequest:
 
 
         :return: The body of this CountEventsRequest.
-        :rtype: EventQueryParam
+        :rtype: :class:`huaweicloudsdkaom.v2.EventQueryParam`
         """
         return self._body
 
@@ -83,7 +90,7 @@ class CountEventsRequest:
 
 
         :param body: The body of this CountEventsRequest.
-        :type: EventQueryParam
+        :type body: :class:`huaweicloudsdkaom.v2.EventQueryParam`
         """
         self._body = body
 

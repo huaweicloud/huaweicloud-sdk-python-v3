@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AssociateSignatureKeyV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class AssociateSignatureKeyV2Response(SdkResponse):
     }
 
     def __init__(self, bindings=None):
-        """AssociateSignatureKeyV2Response - a model defined in huaweicloud sdk"""
+        """AssociateSignatureKeyV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param bindings: API与签名密钥的绑定关系列表
+        :type bindings: list[:class:`huaweicloudsdkapig.v2.SignApiBindingInfo`]
+        """
         
         super(AssociateSignatureKeyV2Response, self).__init__()
 
@@ -47,7 +52,7 @@ class AssociateSignatureKeyV2Response(SdkResponse):
         API与签名密钥的绑定关系列表
 
         :return: The bindings of this AssociateSignatureKeyV2Response.
-        :rtype: list[SignApiBindingInfo]
+        :rtype: list[:class:`huaweicloudsdkapig.v2.SignApiBindingInfo`]
         """
         return self._bindings
 
@@ -58,7 +63,7 @@ class AssociateSignatureKeyV2Response(SdkResponse):
         API与签名密钥的绑定关系列表
 
         :param bindings: The bindings of this AssociateSignatureKeyV2Response.
-        :type: list[SignApiBindingInfo]
+        :type bindings: list[:class:`huaweicloudsdkapig.v2.SignApiBindingInfo`]
         """
         self._bindings = bindings
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NvlCostAnalysedBillDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -59,7 +58,13 @@ class NvlCostAnalysedBillDetail:
         'amortized_coupon_amount': 'float',
         'amortized_flexipurchase_coupon_amount': 'float',
         'amortized_stored_value_card_amount': 'float',
-        'amortized_bonus_amount': 'float'
+        'amortized_bonus_amount': 'float',
+        'sub_service_type_code': 'str',
+        'sub_service_type_name': 'str',
+        'sub_resource_type_code': 'str',
+        'sub_resource_type_name': 'str',
+        'sub_resource_id': 'str',
+        'sub_resource_name': 'str'
     }
 
     attribute_map = {
@@ -100,11 +105,109 @@ class NvlCostAnalysedBillDetail:
         'amortized_coupon_amount': 'amortized_coupon_amount',
         'amortized_flexipurchase_coupon_amount': 'amortized_flexipurchase_coupon_amount',
         'amortized_stored_value_card_amount': 'amortized_stored_value_card_amount',
-        'amortized_bonus_amount': 'amortized_bonus_amount'
+        'amortized_bonus_amount': 'amortized_bonus_amount',
+        'sub_service_type_code': 'sub_service_type_code',
+        'sub_service_type_name': 'sub_service_type_name',
+        'sub_resource_type_code': 'sub_resource_type_code',
+        'sub_resource_type_name': 'sub_resource_type_name',
+        'sub_resource_id': 'sub_resource_id',
+        'sub_resource_name': 'sub_resource_name'
     }
 
-    def __init__(self, shared_month=None, bill_cycle=None, bill_type=None, customer_id=None, region_code=None, region_name=None, service_type_code=None, resource_type_code=None, service_type_name=None, resource_type_name=None, effective_time=None, expire_time=None, resource_id=None, resource_name=None, resource_tag=None, product_spec_desc=None, enterprise_project_id=None, enterprise_project_name=None, charging_mode=None, order_id=None, period_type=None, usage_type=None, usage=None, usage_measure_id=None, free_resource_usage=None, free_resource_measure_id=None, ri_usage=None, ri_usage_measure_id=None, consume_amount=None, past_months_amortized_amount=None, current_month_amortized_amount=None, future_months_amortized_amount=None, amortized_cash_amount=None, amortized_credit_amount=None, amortized_coupon_amount=None, amortized_flexipurchase_coupon_amount=None, amortized_stored_value_card_amount=None, amortized_bonus_amount=None):
-        """NvlCostAnalysedBillDetail - a model defined in huaweicloud sdk"""
+    def __init__(self, shared_month=None, bill_cycle=None, bill_type=None, customer_id=None, region_code=None, region_name=None, service_type_code=None, resource_type_code=None, service_type_name=None, resource_type_name=None, effective_time=None, expire_time=None, resource_id=None, resource_name=None, resource_tag=None, product_spec_desc=None, enterprise_project_id=None, enterprise_project_name=None, charging_mode=None, order_id=None, period_type=None, usage_type=None, usage=None, usage_measure_id=None, free_resource_usage=None, free_resource_measure_id=None, ri_usage=None, ri_usage_measure_id=None, consume_amount=None, past_months_amortized_amount=None, current_month_amortized_amount=None, future_months_amortized_amount=None, amortized_cash_amount=None, amortized_credit_amount=None, amortized_coupon_amount=None, amortized_flexipurchase_coupon_amount=None, amortized_stored_value_card_amount=None, amortized_bonus_amount=None, sub_service_type_code=None, sub_service_type_name=None, sub_resource_type_code=None, sub_resource_type_name=None, sub_resource_id=None, sub_resource_name=None):
+        """NvlCostAnalysedBillDetail
+
+        The model defined in huaweicloud sdk
+
+        :param shared_month: 查询分摊成本的月份。 格式为YYYY-MM，按照东八区截取。
+        :type shared_month: str
+        :param bill_cycle: 账期。 格式：YYYY-MM。按照东八区截取。
+        :type bill_cycle: str
+        :param bill_type: 账单类型。 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更
+        :type bill_type: int
+        :param customer_id: 消费的客户账号ID。 如果是普通客户或者企业子查询消费记录，只能查询到自身的消费记录，则这个地方显示的是自身的客户ID。如果是企业主查询消费记录，可以查询到自身以及企业子的消费记录，这个地方是消费的实际客户ID，如果是企业主自身消费，为企业主ID，如果这条消费记录是某个企业子客户的消费，这个地方的ID是企业子账号ID。
+        :type customer_id: str
+        :param region_code: 云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
+        :type region_code: str
+        :param region_name: 云服务区名称，例如：“华北-北京一”。具体请参见地区和终端节点对应云服务的“区域名称”列的值。
+        :type region_name: str
+        :param service_type_code: 云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
+        :type service_type_code: str
+        :param resource_type_code: 资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
+        :type resource_type_code: str
+        :param service_type_name: 云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
+        :type service_type_name: str
+        :param resource_type_name: 资源类型名称。例如ECS的资源类型名称为“云主机”。
+        :type resource_type_name: str
+        :param effective_time: 费用对应的资源使用的开始时间，按需有效，包年/包月该字段保留。
+        :type effective_time: str
+        :param expire_time: 费用对应的资源使用的结束时间，按需有效，包年/包月该字段保留。
+        :type expire_time: str
+        :param resource_id: 资源ID。
+        :type resource_id: str
+        :param resource_name: 资源名称。
+        :type resource_name: str
+        :param resource_tag: 资源标签。
+        :type resource_tag: str
+        :param product_spec_desc: 产品的规格描述。
+        :type product_spec_desc: str
+        :param enterprise_project_id: 企业项目标识（企业项目ID）。 default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见如何获取企业项目ID。
+        :type enterprise_project_id: str
+        :param enterprise_project_name: 企业项目的名称。
+        :type enterprise_project_name: str
+        :param charging_mode: 计费模式。 1：包年/包月3：按需10：预留实例
+        :type charging_mode: int
+        :param order_id: 订单ID。  说明： 包年/包月资源的使用记录才有该字段，按需资源则为空。
+        :type order_id: str
+        :param period_type: 周期类型。 19：年20：月24：天25：小时5：一次性
+        :type period_type: int
+        :param usage_type: 资源使用量的类型，您可以调用查询使用量类型列表接口获取。
+        :type usage_type: str
+        :param usage: 资源的使用量。
+        :type usage: float
+        :param usage_measure_id: 资源使用量的度量单位，您可以调用查询度量单位列表接口获取。
+        :type usage_measure_id: int
+        :param free_resource_usage: 套餐内使用量。
+        :type free_resource_usage: float
+        :param free_resource_measure_id: 套餐内使用量的度量单位，您可以调用查询度量单位列表接口获取。
+        :type free_resource_measure_id: int
+        :param ri_usage: 预留实例使用量。
+        :type ri_usage: float
+        :param ri_usage_measure_id: 预留实例使用量单位。
+        :type ri_usage_measure_id: int
+        :param consume_amount: 消费金额（应付金额）。 消费金额&#x3D;期初已分摊金额+当月分摊金额+期末未分摊金额
+        :type consume_amount: float
+        :param past_months_amortized_amount: 期初已分摊金额。  说明： 包周期和预留实例预付时有效；计费类型为按需，预留实例为按时计费时该值为0。
+        :type past_months_amortized_amount: float
+        :param current_month_amortized_amount: 当月分摊金额。 当月分摊金额&#x3D;现金分摊金额+信用额度分摊金额+代金券分摊金额+现金券分摊金额+储值卡分摊金额+奖励金分摊金额
+        :type current_month_amortized_amount: float
+        :param future_months_amortized_amount: 期末未分摊金额。月度成本分摊时，当月以后还未分摊的金额。  说明： 包周期和预留实例预付时有效；计费类型为按需，预留实例为按时计费时该值为0。
+        :type future_months_amortized_amount: float
+        :param amortized_cash_amount: 月度成本分摊时，当月已分摊金额中包含的现金金额。
+        :type amortized_cash_amount: float
+        :param amortized_credit_amount: 月度成本分摊时，当月已分摊金额中包含的信用额度分摊金额。
+        :type amortized_credit_amount: float
+        :param amortized_coupon_amount: 月度成本分摊时，当月已分摊金额中包含的代金券分摊金额。
+        :type amortized_coupon_amount: float
+        :param amortized_flexipurchase_coupon_amount: 月度成本分摊时，当月已分摊金额中包含的现金券分摊金额。
+        :type amortized_flexipurchase_coupon_amount: float
+        :param amortized_stored_value_card_amount: 月度成本分摊时，当月已分摊金额中包含的储值卡分摊金额。
+        :type amortized_stored_value_card_amount: float
+        :param amortized_bonus_amount: 月度成本分摊时，当月已分摊金额中包含的奖励金分摊金额（用于现网未清干净的奖励金）。
+        :type amortized_bonus_amount: float
+        :param sub_service_type_code: 该字段为预留字段
+        :type sub_service_type_code: str
+        :param sub_service_type_name: 该字段为预留字段
+        :type sub_service_type_name: str
+        :param sub_resource_type_code: 该字段为预留字段
+        :type sub_resource_type_code: str
+        :param sub_resource_type_name: 该字段为预留字段。
+        :type sub_resource_type_name: str
+        :param sub_resource_id: 该字段为预留字段。
+        :type sub_resource_id: str
+        :param sub_resource_name: 该字段为预留字段。
+        :type sub_resource_name: str
+        """
         
         
 
@@ -146,6 +249,12 @@ class NvlCostAnalysedBillDetail:
         self._amortized_flexipurchase_coupon_amount = None
         self._amortized_stored_value_card_amount = None
         self._amortized_bonus_amount = None
+        self._sub_service_type_code = None
+        self._sub_service_type_name = None
+        self._sub_resource_type_code = None
+        self._sub_resource_type_name = None
+        self._sub_resource_id = None
+        self._sub_resource_name = None
         self.discriminator = None
 
         if shared_month is not None:
@@ -224,6 +333,18 @@ class NvlCostAnalysedBillDetail:
             self.amortized_stored_value_card_amount = amortized_stored_value_card_amount
         if amortized_bonus_amount is not None:
             self.amortized_bonus_amount = amortized_bonus_amount
+        if sub_service_type_code is not None:
+            self.sub_service_type_code = sub_service_type_code
+        if sub_service_type_name is not None:
+            self.sub_service_type_name = sub_service_type_name
+        if sub_resource_type_code is not None:
+            self.sub_resource_type_code = sub_resource_type_code
+        if sub_resource_type_name is not None:
+            self.sub_resource_type_name = sub_resource_type_name
+        if sub_resource_id is not None:
+            self.sub_resource_id = sub_resource_id
+        if sub_resource_name is not None:
+            self.sub_resource_name = sub_resource_name
 
     @property
     def shared_month(self):
@@ -243,7 +364,7 @@ class NvlCostAnalysedBillDetail:
         查询分摊成本的月份。 格式为YYYY-MM，按照东八区截取。
 
         :param shared_month: The shared_month of this NvlCostAnalysedBillDetail.
-        :type: str
+        :type shared_month: str
         """
         self._shared_month = shared_month
 
@@ -265,7 +386,7 @@ class NvlCostAnalysedBillDetail:
         账期。 格式：YYYY-MM。按照东八区截取。
 
         :param bill_cycle: The bill_cycle of this NvlCostAnalysedBillDetail.
-        :type: str
+        :type bill_cycle: str
         """
         self._bill_cycle = bill_cycle
 
@@ -287,7 +408,7 @@ class NvlCostAnalysedBillDetail:
         账单类型。 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更
 
         :param bill_type: The bill_type of this NvlCostAnalysedBillDetail.
-        :type: int
+        :type bill_type: int
         """
         self._bill_type = bill_type
 
@@ -309,7 +430,7 @@ class NvlCostAnalysedBillDetail:
         消费的客户账号ID。 如果是普通客户或者企业子查询消费记录，只能查询到自身的消费记录，则这个地方显示的是自身的客户ID。如果是企业主查询消费记录，可以查询到自身以及企业子的消费记录，这个地方是消费的实际客户ID，如果是企业主自身消费，为企业主ID，如果这条消费记录是某个企业子客户的消费，这个地方的ID是企业子账号ID。
 
         :param customer_id: The customer_id of this NvlCostAnalysedBillDetail.
-        :type: str
+        :type customer_id: str
         """
         self._customer_id = customer_id
 
@@ -331,7 +452,7 @@ class NvlCostAnalysedBillDetail:
         云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
         :param region_code: The region_code of this NvlCostAnalysedBillDetail.
-        :type: str
+        :type region_code: str
         """
         self._region_code = region_code
 
@@ -353,7 +474,7 @@ class NvlCostAnalysedBillDetail:
         云服务区名称，例如：“华北-北京一”。具体请参见地区和终端节点对应云服务的“区域名称”列的值。
 
         :param region_name: The region_name of this NvlCostAnalysedBillDetail.
-        :type: str
+        :type region_name: str
         """
         self._region_name = region_name
 
@@ -375,7 +496,7 @@ class NvlCostAnalysedBillDetail:
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
         :param service_type_code: The service_type_code of this NvlCostAnalysedBillDetail.
-        :type: str
+        :type service_type_code: str
         """
         self._service_type_code = service_type_code
 
@@ -397,7 +518,7 @@ class NvlCostAnalysedBillDetail:
         资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
 
         :param resource_type_code: The resource_type_code of this NvlCostAnalysedBillDetail.
-        :type: str
+        :type resource_type_code: str
         """
         self._resource_type_code = resource_type_code
 
@@ -419,7 +540,7 @@ class NvlCostAnalysedBillDetail:
         云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
 
         :param service_type_name: The service_type_name of this NvlCostAnalysedBillDetail.
-        :type: str
+        :type service_type_name: str
         """
         self._service_type_name = service_type_name
 
@@ -441,7 +562,7 @@ class NvlCostAnalysedBillDetail:
         资源类型名称。例如ECS的资源类型名称为“云主机”。
 
         :param resource_type_name: The resource_type_name of this NvlCostAnalysedBillDetail.
-        :type: str
+        :type resource_type_name: str
         """
         self._resource_type_name = resource_type_name
 
@@ -463,7 +584,7 @@ class NvlCostAnalysedBillDetail:
         费用对应的资源使用的开始时间，按需有效，包年/包月该字段保留。
 
         :param effective_time: The effective_time of this NvlCostAnalysedBillDetail.
-        :type: str
+        :type effective_time: str
         """
         self._effective_time = effective_time
 
@@ -485,7 +606,7 @@ class NvlCostAnalysedBillDetail:
         费用对应的资源使用的结束时间，按需有效，包年/包月该字段保留。
 
         :param expire_time: The expire_time of this NvlCostAnalysedBillDetail.
-        :type: str
+        :type expire_time: str
         """
         self._expire_time = expire_time
 
@@ -507,7 +628,7 @@ class NvlCostAnalysedBillDetail:
         资源ID。
 
         :param resource_id: The resource_id of this NvlCostAnalysedBillDetail.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -529,7 +650,7 @@ class NvlCostAnalysedBillDetail:
         资源名称。
 
         :param resource_name: The resource_name of this NvlCostAnalysedBillDetail.
-        :type: str
+        :type resource_name: str
         """
         self._resource_name = resource_name
 
@@ -551,7 +672,7 @@ class NvlCostAnalysedBillDetail:
         资源标签。
 
         :param resource_tag: The resource_tag of this NvlCostAnalysedBillDetail.
-        :type: str
+        :type resource_tag: str
         """
         self._resource_tag = resource_tag
 
@@ -573,7 +694,7 @@ class NvlCostAnalysedBillDetail:
         产品的规格描述。
 
         :param product_spec_desc: The product_spec_desc of this NvlCostAnalysedBillDetail.
-        :type: str
+        :type product_spec_desc: str
         """
         self._product_spec_desc = product_spec_desc
 
@@ -595,7 +716,7 @@ class NvlCostAnalysedBillDetail:
         企业项目标识（企业项目ID）。 default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见如何获取企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this NvlCostAnalysedBillDetail.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -617,7 +738,7 @@ class NvlCostAnalysedBillDetail:
         企业项目的名称。
 
         :param enterprise_project_name: The enterprise_project_name of this NvlCostAnalysedBillDetail.
-        :type: str
+        :type enterprise_project_name: str
         """
         self._enterprise_project_name = enterprise_project_name
 
@@ -639,7 +760,7 @@ class NvlCostAnalysedBillDetail:
         计费模式。 1：包年/包月3：按需10：预留实例
 
         :param charging_mode: The charging_mode of this NvlCostAnalysedBillDetail.
-        :type: int
+        :type charging_mode: int
         """
         self._charging_mode = charging_mode
 
@@ -661,7 +782,7 @@ class NvlCostAnalysedBillDetail:
         订单ID。  说明： 包年/包月资源的使用记录才有该字段，按需资源则为空。
 
         :param order_id: The order_id of this NvlCostAnalysedBillDetail.
-        :type: str
+        :type order_id: str
         """
         self._order_id = order_id
 
@@ -683,7 +804,7 @@ class NvlCostAnalysedBillDetail:
         周期类型。 19：年20：月24：天25：小时5：一次性
 
         :param period_type: The period_type of this NvlCostAnalysedBillDetail.
-        :type: int
+        :type period_type: int
         """
         self._period_type = period_type
 
@@ -705,7 +826,7 @@ class NvlCostAnalysedBillDetail:
         资源使用量的类型，您可以调用查询使用量类型列表接口获取。
 
         :param usage_type: The usage_type of this NvlCostAnalysedBillDetail.
-        :type: str
+        :type usage_type: str
         """
         self._usage_type = usage_type
 
@@ -727,7 +848,7 @@ class NvlCostAnalysedBillDetail:
         资源的使用量。
 
         :param usage: The usage of this NvlCostAnalysedBillDetail.
-        :type: float
+        :type usage: float
         """
         self._usage = usage
 
@@ -749,7 +870,7 @@ class NvlCostAnalysedBillDetail:
         资源使用量的度量单位，您可以调用查询度量单位列表接口获取。
 
         :param usage_measure_id: The usage_measure_id of this NvlCostAnalysedBillDetail.
-        :type: int
+        :type usage_measure_id: int
         """
         self._usage_measure_id = usage_measure_id
 
@@ -771,7 +892,7 @@ class NvlCostAnalysedBillDetail:
         套餐内使用量。
 
         :param free_resource_usage: The free_resource_usage of this NvlCostAnalysedBillDetail.
-        :type: float
+        :type free_resource_usage: float
         """
         self._free_resource_usage = free_resource_usage
 
@@ -793,7 +914,7 @@ class NvlCostAnalysedBillDetail:
         套餐内使用量的度量单位，您可以调用查询度量单位列表接口获取。
 
         :param free_resource_measure_id: The free_resource_measure_id of this NvlCostAnalysedBillDetail.
-        :type: int
+        :type free_resource_measure_id: int
         """
         self._free_resource_measure_id = free_resource_measure_id
 
@@ -815,7 +936,7 @@ class NvlCostAnalysedBillDetail:
         预留实例使用量。
 
         :param ri_usage: The ri_usage of this NvlCostAnalysedBillDetail.
-        :type: float
+        :type ri_usage: float
         """
         self._ri_usage = ri_usage
 
@@ -837,7 +958,7 @@ class NvlCostAnalysedBillDetail:
         预留实例使用量单位。
 
         :param ri_usage_measure_id: The ri_usage_measure_id of this NvlCostAnalysedBillDetail.
-        :type: int
+        :type ri_usage_measure_id: int
         """
         self._ri_usage_measure_id = ri_usage_measure_id
 
@@ -859,7 +980,7 @@ class NvlCostAnalysedBillDetail:
         消费金额（应付金额）。 消费金额=期初已分摊金额+当月分摊金额+期末未分摊金额
 
         :param consume_amount: The consume_amount of this NvlCostAnalysedBillDetail.
-        :type: float
+        :type consume_amount: float
         """
         self._consume_amount = consume_amount
 
@@ -881,7 +1002,7 @@ class NvlCostAnalysedBillDetail:
         期初已分摊金额。  说明： 包周期和预留实例预付时有效；计费类型为按需，预留实例为按时计费时该值为0。
 
         :param past_months_amortized_amount: The past_months_amortized_amount of this NvlCostAnalysedBillDetail.
-        :type: float
+        :type past_months_amortized_amount: float
         """
         self._past_months_amortized_amount = past_months_amortized_amount
 
@@ -903,7 +1024,7 @@ class NvlCostAnalysedBillDetail:
         当月分摊金额。 当月分摊金额=现金分摊金额+信用额度分摊金额+代金券分摊金额+现金券分摊金额+储值卡分摊金额+奖励金分摊金额
 
         :param current_month_amortized_amount: The current_month_amortized_amount of this NvlCostAnalysedBillDetail.
-        :type: float
+        :type current_month_amortized_amount: float
         """
         self._current_month_amortized_amount = current_month_amortized_amount
 
@@ -925,7 +1046,7 @@ class NvlCostAnalysedBillDetail:
         期末未分摊金额。月度成本分摊时，当月以后还未分摊的金额。  说明： 包周期和预留实例预付时有效；计费类型为按需，预留实例为按时计费时该值为0。
 
         :param future_months_amortized_amount: The future_months_amortized_amount of this NvlCostAnalysedBillDetail.
-        :type: float
+        :type future_months_amortized_amount: float
         """
         self._future_months_amortized_amount = future_months_amortized_amount
 
@@ -947,7 +1068,7 @@ class NvlCostAnalysedBillDetail:
         月度成本分摊时，当月已分摊金额中包含的现金金额。
 
         :param amortized_cash_amount: The amortized_cash_amount of this NvlCostAnalysedBillDetail.
-        :type: float
+        :type amortized_cash_amount: float
         """
         self._amortized_cash_amount = amortized_cash_amount
 
@@ -969,7 +1090,7 @@ class NvlCostAnalysedBillDetail:
         月度成本分摊时，当月已分摊金额中包含的信用额度分摊金额。
 
         :param amortized_credit_amount: The amortized_credit_amount of this NvlCostAnalysedBillDetail.
-        :type: float
+        :type amortized_credit_amount: float
         """
         self._amortized_credit_amount = amortized_credit_amount
 
@@ -991,7 +1112,7 @@ class NvlCostAnalysedBillDetail:
         月度成本分摊时，当月已分摊金额中包含的代金券分摊金额。
 
         :param amortized_coupon_amount: The amortized_coupon_amount of this NvlCostAnalysedBillDetail.
-        :type: float
+        :type amortized_coupon_amount: float
         """
         self._amortized_coupon_amount = amortized_coupon_amount
 
@@ -1013,7 +1134,7 @@ class NvlCostAnalysedBillDetail:
         月度成本分摊时，当月已分摊金额中包含的现金券分摊金额。
 
         :param amortized_flexipurchase_coupon_amount: The amortized_flexipurchase_coupon_amount of this NvlCostAnalysedBillDetail.
-        :type: float
+        :type amortized_flexipurchase_coupon_amount: float
         """
         self._amortized_flexipurchase_coupon_amount = amortized_flexipurchase_coupon_amount
 
@@ -1035,7 +1156,7 @@ class NvlCostAnalysedBillDetail:
         月度成本分摊时，当月已分摊金额中包含的储值卡分摊金额。
 
         :param amortized_stored_value_card_amount: The amortized_stored_value_card_amount of this NvlCostAnalysedBillDetail.
-        :type: float
+        :type amortized_stored_value_card_amount: float
         """
         self._amortized_stored_value_card_amount = amortized_stored_value_card_amount
 
@@ -1057,9 +1178,141 @@ class NvlCostAnalysedBillDetail:
         月度成本分摊时，当月已分摊金额中包含的奖励金分摊金额（用于现网未清干净的奖励金）。
 
         :param amortized_bonus_amount: The amortized_bonus_amount of this NvlCostAnalysedBillDetail.
-        :type: float
+        :type amortized_bonus_amount: float
         """
         self._amortized_bonus_amount = amortized_bonus_amount
+
+    @property
+    def sub_service_type_code(self):
+        """Gets the sub_service_type_code of this NvlCostAnalysedBillDetail.
+
+        该字段为预留字段
+
+        :return: The sub_service_type_code of this NvlCostAnalysedBillDetail.
+        :rtype: str
+        """
+        return self._sub_service_type_code
+
+    @sub_service_type_code.setter
+    def sub_service_type_code(self, sub_service_type_code):
+        """Sets the sub_service_type_code of this NvlCostAnalysedBillDetail.
+
+        该字段为预留字段
+
+        :param sub_service_type_code: The sub_service_type_code of this NvlCostAnalysedBillDetail.
+        :type sub_service_type_code: str
+        """
+        self._sub_service_type_code = sub_service_type_code
+
+    @property
+    def sub_service_type_name(self):
+        """Gets the sub_service_type_name of this NvlCostAnalysedBillDetail.
+
+        该字段为预留字段
+
+        :return: The sub_service_type_name of this NvlCostAnalysedBillDetail.
+        :rtype: str
+        """
+        return self._sub_service_type_name
+
+    @sub_service_type_name.setter
+    def sub_service_type_name(self, sub_service_type_name):
+        """Sets the sub_service_type_name of this NvlCostAnalysedBillDetail.
+
+        该字段为预留字段
+
+        :param sub_service_type_name: The sub_service_type_name of this NvlCostAnalysedBillDetail.
+        :type sub_service_type_name: str
+        """
+        self._sub_service_type_name = sub_service_type_name
+
+    @property
+    def sub_resource_type_code(self):
+        """Gets the sub_resource_type_code of this NvlCostAnalysedBillDetail.
+
+        该字段为预留字段
+
+        :return: The sub_resource_type_code of this NvlCostAnalysedBillDetail.
+        :rtype: str
+        """
+        return self._sub_resource_type_code
+
+    @sub_resource_type_code.setter
+    def sub_resource_type_code(self, sub_resource_type_code):
+        """Sets the sub_resource_type_code of this NvlCostAnalysedBillDetail.
+
+        该字段为预留字段
+
+        :param sub_resource_type_code: The sub_resource_type_code of this NvlCostAnalysedBillDetail.
+        :type sub_resource_type_code: str
+        """
+        self._sub_resource_type_code = sub_resource_type_code
+
+    @property
+    def sub_resource_type_name(self):
+        """Gets the sub_resource_type_name of this NvlCostAnalysedBillDetail.
+
+        该字段为预留字段。
+
+        :return: The sub_resource_type_name of this NvlCostAnalysedBillDetail.
+        :rtype: str
+        """
+        return self._sub_resource_type_name
+
+    @sub_resource_type_name.setter
+    def sub_resource_type_name(self, sub_resource_type_name):
+        """Sets the sub_resource_type_name of this NvlCostAnalysedBillDetail.
+
+        该字段为预留字段。
+
+        :param sub_resource_type_name: The sub_resource_type_name of this NvlCostAnalysedBillDetail.
+        :type sub_resource_type_name: str
+        """
+        self._sub_resource_type_name = sub_resource_type_name
+
+    @property
+    def sub_resource_id(self):
+        """Gets the sub_resource_id of this NvlCostAnalysedBillDetail.
+
+        该字段为预留字段。
+
+        :return: The sub_resource_id of this NvlCostAnalysedBillDetail.
+        :rtype: str
+        """
+        return self._sub_resource_id
+
+    @sub_resource_id.setter
+    def sub_resource_id(self, sub_resource_id):
+        """Sets the sub_resource_id of this NvlCostAnalysedBillDetail.
+
+        该字段为预留字段。
+
+        :param sub_resource_id: The sub_resource_id of this NvlCostAnalysedBillDetail.
+        :type sub_resource_id: str
+        """
+        self._sub_resource_id = sub_resource_id
+
+    @property
+    def sub_resource_name(self):
+        """Gets the sub_resource_name of this NvlCostAnalysedBillDetail.
+
+        该字段为预留字段。
+
+        :return: The sub_resource_name of this NvlCostAnalysedBillDetail.
+        :rtype: str
+        """
+        return self._sub_resource_name
+
+    @sub_resource_name.setter
+    def sub_resource_name(self, sub_resource_name):
+        """Sets the sub_resource_name of this NvlCostAnalysedBillDetail.
+
+        该字段为预留字段。
+
+        :param sub_resource_name: The sub_resource_name of this NvlCostAnalysedBillDetail.
+        :type sub_resource_name: str
+        """
+        self._sub_resource_name = sub_resource_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

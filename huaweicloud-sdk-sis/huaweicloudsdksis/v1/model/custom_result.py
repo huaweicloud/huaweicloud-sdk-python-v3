@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CustomResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CustomResult:
     }
 
     def __init__(self, data=None):
-        """CustomResult - a model defined in huaweicloud sdk"""
+        """CustomResult
+
+        The model defined in huaweicloud sdk
+
+        :param data: 语音数据， Base64编码格式返回。
+        :type data: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class CustomResult:
         语音数据， Base64编码格式返回。
 
         :param data: The data of this CustomResult.
-        :type: str
+        :type data: str
         """
         self._data = data
 

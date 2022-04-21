@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListVaultRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class ListVaultRequest:
     }
 
     def __init__(self, limit=None, name=None, offset=None, cloud_type=None, protect_type=None, object_type=None, enterprise_project_id=None, id=None, policy_id=None, status=None, resource_ids=None):
-        """ListVaultRequest - a model defined in huaweicloud sdk"""
+        """ListVaultRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 每页显示条目数，正整数
+        :type limit: int
+        :param name: 存储库名称
+        :type name: str
+        :param offset: 偏移值,正整数
+        :type offset: int
+        :param cloud_type: 云类型
+        :type cloud_type: str
+        :param protect_type: 保护类型
+        :type protect_type: str
+        :param object_type: 资源类型
+        :type object_type: str
+        :param enterprise_project_id: 企业项目id或all_granted_eps，all_granted_eps表示查询用户有权限的所有企业项目id
+        :type enterprise_project_id: str
+        :param id: 存储库ID
+        :type id: str
+        :param policy_id: 策略ID
+        :type policy_id: str
+        :param status: 状态
+        :type status: str
+        :param resource_ids: 资源id
+        :type resource_ids: str
+        """
         
         
 
@@ -108,7 +133,7 @@ class ListVaultRequest:
         每页显示条目数，正整数
 
         :param limit: The limit of this ListVaultRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -130,7 +155,7 @@ class ListVaultRequest:
         存储库名称
 
         :param name: The name of this ListVaultRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -152,7 +177,7 @@ class ListVaultRequest:
         偏移值,正整数
 
         :param offset: The offset of this ListVaultRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -174,7 +199,7 @@ class ListVaultRequest:
         云类型
 
         :param cloud_type: The cloud_type of this ListVaultRequest.
-        :type: str
+        :type cloud_type: str
         """
         self._cloud_type = cloud_type
 
@@ -196,7 +221,7 @@ class ListVaultRequest:
         保护类型
 
         :param protect_type: The protect_type of this ListVaultRequest.
-        :type: str
+        :type protect_type: str
         """
         self._protect_type = protect_type
 
@@ -218,7 +243,7 @@ class ListVaultRequest:
         资源类型
 
         :param object_type: The object_type of this ListVaultRequest.
-        :type: str
+        :type object_type: str
         """
         self._object_type = object_type
 
@@ -240,7 +265,7 @@ class ListVaultRequest:
         企业项目id或all_granted_eps，all_granted_eps表示查询用户有权限的所有企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this ListVaultRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -262,7 +287,7 @@ class ListVaultRequest:
         存储库ID
 
         :param id: The id of this ListVaultRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -284,7 +309,7 @@ class ListVaultRequest:
         策略ID
 
         :param policy_id: The policy_id of this ListVaultRequest.
-        :type: str
+        :type policy_id: str
         """
         self._policy_id = policy_id
 
@@ -306,7 +331,7 @@ class ListVaultRequest:
         状态
 
         :param status: The status of this ListVaultRequest.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -328,7 +353,7 @@ class ListVaultRequest:
         资源id
 
         :param resource_ids: The resource_ids of this ListVaultRequest.
-        :type: str
+        :type resource_ids: str
         """
         self._resource_ids = resource_ids
 

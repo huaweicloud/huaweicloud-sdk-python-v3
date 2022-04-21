@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SeverityV2Do:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class SeverityV2Do:
     }
 
     def __init__(self, language=None, severity_name=None, severity_id=None):
-        """SeverityV2Do - a model defined in huaweicloud sdk"""
+        """SeverityV2Do
+
+        The model defined in huaweicloud sdk
+
+        :param language: 语言
+        :type language: str
+        :param severity_name: 严重性名称
+        :type severity_name: str
+        :param severity_id: 严重性id
+        :type severity_id: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class SeverityV2Do:
         语言
 
         :param language: The language of this SeverityV2Do.
-        :type: str
+        :type language: str
         """
         self._language = language
 
@@ -90,7 +99,7 @@ class SeverityV2Do:
         严重性名称
 
         :param severity_name: The severity_name of this SeverityV2Do.
-        :type: str
+        :type severity_name: str
         """
         self._severity_name = severity_name
 
@@ -112,7 +121,7 @@ class SeverityV2Do:
         严重性id
 
         :param severity_id: The severity_id of this SeverityV2Do.
-        :type: str
+        :type severity_id: str
         """
         self._severity_id = severity_id
 

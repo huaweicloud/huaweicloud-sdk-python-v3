@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ProgressInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ProgressInfo:
     }
 
     def __init__(self, completed=None, remaining_time=None):
-        """ProgressInfo - a model defined in huaweicloud sdk"""
+        """ProgressInfo
+
+        The model defined in huaweicloud sdk
+
+        :param completed: 完成进度
+        :type completed: str
+        :param remaining_time: 预计剩余时间
+        :type remaining_time: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class ProgressInfo:
         完成进度
 
         :param completed: The completed of this ProgressInfo.
-        :type: str
+        :type completed: str
         """
         self._completed = completed
 
@@ -85,7 +92,7 @@ class ProgressInfo:
         预计剩余时间
 
         :param remaining_time: The remaining_time of this ProgressInfo.
-        :type: str
+        :type remaining_time: str
         """
         self._remaining_time = remaining_time
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TagDelWithKeyValue:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class TagDelWithKeyValue:
     }
 
     def __init__(self, key=None, value=None):
-        """TagDelWithKeyValue - a model defined in huaweicloud sdk"""
+        """TagDelWithKeyValue
+
+        The model defined in huaweicloud sdk
+
+        :param key: 标签键。最大长度127个unicode字符。 key不能为空，不能为空字符串。
+        :type key: str
+        :param value: 标签值。每个值最大长度255个unicode字符。 删除说明如下： - 如果“value”有值，按照“key”/“value”删除。 - 如果“value”没值，则按照“key”删除。
+        :type value: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class TagDelWithKeyValue:
         标签键。最大长度127个unicode字符。 key不能为空，不能为空字符串。
 
         :param key: The key of this TagDelWithKeyValue.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -84,7 +91,7 @@ class TagDelWithKeyValue:
         标签值。每个值最大长度255个unicode字符。 删除说明如下： - 如果“value”有值，按照“key”/“value”删除。 - 如果“value”没值，则按照“key”删除。
 
         :param value: The value of this TagDelWithKeyValue.
-        :type: str
+        :type value: str
         """
         self._value = value
 

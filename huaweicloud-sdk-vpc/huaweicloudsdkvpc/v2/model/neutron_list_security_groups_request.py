@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NeutronListSecurityGroupsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class NeutronListSecurityGroupsRequest:
     }
 
     def __init__(self, limit=None, marker=None, id=None, name=None, description=None, tenant_id=None):
-        """NeutronListSecurityGroupsRequest - a model defined in huaweicloud sdk"""
+        """NeutronListSecurityGroupsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 每页返回的个数
+        :type limit: int
+        :param marker: 分页查询起始的资源ID，为空时查询第一页
+        :type marker: str
+        :param id: 按照安全组对应的ID过滤查询
+        :type id: str
+        :param name: 按照安全组的名称过滤查询
+        :type name: str
+        :param description: 按照安全组的描述过滤查询
+        :type description: str
+        :param tenant_id: 按照安全组所属的项目ID过滤查询
+        :type tenant_id: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class NeutronListSecurityGroupsRequest:
         每页返回的个数
 
         :param limit: The limit of this NeutronListSecurityGroupsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -105,7 +120,7 @@ class NeutronListSecurityGroupsRequest:
         分页查询起始的资源ID，为空时查询第一页
 
         :param marker: The marker of this NeutronListSecurityGroupsRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -127,7 +142,7 @@ class NeutronListSecurityGroupsRequest:
         按照安全组对应的ID过滤查询
 
         :param id: The id of this NeutronListSecurityGroupsRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -149,7 +164,7 @@ class NeutronListSecurityGroupsRequest:
         按照安全组的名称过滤查询
 
         :param name: The name of this NeutronListSecurityGroupsRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -171,7 +186,7 @@ class NeutronListSecurityGroupsRequest:
         按照安全组的描述过滤查询
 
         :param description: The description of this NeutronListSecurityGroupsRequest.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -193,7 +208,7 @@ class NeutronListSecurityGroupsRequest:
         按照安全组所属的项目ID过滤查询
 
         :param tenant_id: The tenant_id of this NeutronListSecurityGroupsRequest.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 

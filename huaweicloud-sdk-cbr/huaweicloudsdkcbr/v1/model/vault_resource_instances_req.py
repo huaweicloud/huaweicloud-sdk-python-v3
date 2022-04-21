@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VaultResourceInstancesReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class VaultResourceInstancesReq:
     }
 
     def __init__(self, without_any_tag=None, tags=None, tags_any=None, not_tags=None, not_tags_any=None, sys_tags=None, limit=None, offset=None, action=None, matches=None, cloud_type=None, object_type=None):
-        """VaultResourceInstancesReq - a model defined in huaweicloud sdk"""
+        """VaultResourceInstancesReq
+
+        The model defined in huaweicloud sdk
+
+        :param without_any_tag: 不包含任意一个标签，该字段为true时查询所有不带标签的资源，此时忽略 “tags”、“tags_any”、“not_tags”、“not_tags_any”字段。
+        :type without_any_tag: bool
+        :param tags: 包含标签。  tags不允许为空列表。  tags中最多包含10个key。  tags中key不允许重复。  tags中多个key之间是“与”的关系。  结果返回包含所有标签的资源列表，key之间是与的关系，key-value结构中value是或的关系。  无过滤条件时返回全量数据。
+        :type tags: list[:class:`huaweicloudsdkcbr.v1.TagsReq`]
+        :param tags_any: 包含任一标签。  tags不允许为空列表。  tags中最多包含10个key。  tags中key不允许重复。  结果返回包含任一标签的资源列表，key之间是或的关系，key-value结构中value是或的关系。  无过滤条件时返回全量数据。
+        :type tags_any: list[:class:`huaweicloudsdkcbr.v1.TagsReq`]
+        :param not_tags: 不包含标签。  tags不允许为空列表。  tags中最多包含10个key。  tags中key不允许重复。  结果返回不包含所有标签的资源列表，key之间是与的关系，key-value结构中value是或的关系。  无过滤条件时返回全量数据。
+        :type not_tags: list[:class:`huaweicloudsdkcbr.v1.TagsReq`]
+        :param not_tags_any: 不包含任一标签。  tags不允许为空列表。  tags中最多包含10个key。  tags中key不允许重复。  结果返回不包含任一标签的资源列表，key之间是或的关系，key-value结构张value是或的关系。  无过滤条件时返回全量数据。
+        :type not_tags_any: list[:class:`huaweicloudsdkcbr.v1.TagsReq`]
+        :param sys_tags: 仅op_service权限可以使用此字段做资源实例过滤条件。  目前TMS调用时只包含一个tag结构体。  * key： _sys_enterprise_project_id  * values：企业项目id列表  目前TMS调用时，key下面只包含一个value，0表示默认企业项目。  sys_tags和租户标签过滤条件（tags、tags_any、not_tags、not_tags_any）不能同时使用。  无sys_tags时按照tag接口处理，无tag过滤条件时返回全量数据。  sys_tags不能为空列表
+        :type sys_tags: list[:class:`huaweicloudsdkcbr.v1.SysTags`]
+        :param limit: 查询记录数（action为count时无此参数）如果action为filter时，默认为1000，limit最小值为1，limit最大值为1000, 不在范围内报错。返回的结果中记录数不超过limit。
+        :type limit: str
+        :param offset: 索引位置（action为count时无此参数）如果action为filter时，默认为0，offset最小值为0。返回的结果中第一条记录为符合查询条件的第offset+1条记录。
+        :type offset: str
+        :param action: 操作标识取值范围为：\&quot;filter\&quot;, \&quot;count\&quot;。如果是filter就是分页查询，如果是count只需按照条件将总条数返回即可
+        :type action: str
+        :param matches: 资源本身支持的查询条件。  matches不允许为空列表。  matches中key不允许重复。
+        :type matches: list[:class:`huaweicloudsdkcbr.v1.Match`]
+        :param cloud_type: 云类型
+        :type cloud_type: str
+        :param object_type: 资源类型
+        :type object_type: str
+        """
         
         
 
@@ -112,7 +139,7 @@ class VaultResourceInstancesReq:
         不包含任意一个标签，该字段为true时查询所有不带标签的资源，此时忽略 “tags”、“tags_any”、“not_tags”、“not_tags_any”字段。
 
         :param without_any_tag: The without_any_tag of this VaultResourceInstancesReq.
-        :type: bool
+        :type without_any_tag: bool
         """
         self._without_any_tag = without_any_tag
 
@@ -123,7 +150,7 @@ class VaultResourceInstancesReq:
         包含标签。  tags不允许为空列表。  tags中最多包含10个key。  tags中key不允许重复。  tags中多个key之间是“与”的关系。  结果返回包含所有标签的资源列表，key之间是与的关系，key-value结构中value是或的关系。  无过滤条件时返回全量数据。
 
         :return: The tags of this VaultResourceInstancesReq.
-        :rtype: list[TagsReq]
+        :rtype: list[:class:`huaweicloudsdkcbr.v1.TagsReq`]
         """
         return self._tags
 
@@ -134,7 +161,7 @@ class VaultResourceInstancesReq:
         包含标签。  tags不允许为空列表。  tags中最多包含10个key。  tags中key不允许重复。  tags中多个key之间是“与”的关系。  结果返回包含所有标签的资源列表，key之间是与的关系，key-value结构中value是或的关系。  无过滤条件时返回全量数据。
 
         :param tags: The tags of this VaultResourceInstancesReq.
-        :type: list[TagsReq]
+        :type tags: list[:class:`huaweicloudsdkcbr.v1.TagsReq`]
         """
         self._tags = tags
 
@@ -145,7 +172,7 @@ class VaultResourceInstancesReq:
         包含任一标签。  tags不允许为空列表。  tags中最多包含10个key。  tags中key不允许重复。  结果返回包含任一标签的资源列表，key之间是或的关系，key-value结构中value是或的关系。  无过滤条件时返回全量数据。
 
         :return: The tags_any of this VaultResourceInstancesReq.
-        :rtype: list[TagsReq]
+        :rtype: list[:class:`huaweicloudsdkcbr.v1.TagsReq`]
         """
         return self._tags_any
 
@@ -156,7 +183,7 @@ class VaultResourceInstancesReq:
         包含任一标签。  tags不允许为空列表。  tags中最多包含10个key。  tags中key不允许重复。  结果返回包含任一标签的资源列表，key之间是或的关系，key-value结构中value是或的关系。  无过滤条件时返回全量数据。
 
         :param tags_any: The tags_any of this VaultResourceInstancesReq.
-        :type: list[TagsReq]
+        :type tags_any: list[:class:`huaweicloudsdkcbr.v1.TagsReq`]
         """
         self._tags_any = tags_any
 
@@ -167,7 +194,7 @@ class VaultResourceInstancesReq:
         不包含标签。  tags不允许为空列表。  tags中最多包含10个key。  tags中key不允许重复。  结果返回不包含所有标签的资源列表，key之间是与的关系，key-value结构中value是或的关系。  无过滤条件时返回全量数据。
 
         :return: The not_tags of this VaultResourceInstancesReq.
-        :rtype: list[TagsReq]
+        :rtype: list[:class:`huaweicloudsdkcbr.v1.TagsReq`]
         """
         return self._not_tags
 
@@ -178,7 +205,7 @@ class VaultResourceInstancesReq:
         不包含标签。  tags不允许为空列表。  tags中最多包含10个key。  tags中key不允许重复。  结果返回不包含所有标签的资源列表，key之间是与的关系，key-value结构中value是或的关系。  无过滤条件时返回全量数据。
 
         :param not_tags: The not_tags of this VaultResourceInstancesReq.
-        :type: list[TagsReq]
+        :type not_tags: list[:class:`huaweicloudsdkcbr.v1.TagsReq`]
         """
         self._not_tags = not_tags
 
@@ -189,7 +216,7 @@ class VaultResourceInstancesReq:
         不包含任一标签。  tags不允许为空列表。  tags中最多包含10个key。  tags中key不允许重复。  结果返回不包含任一标签的资源列表，key之间是或的关系，key-value结构张value是或的关系。  无过滤条件时返回全量数据。
 
         :return: The not_tags_any of this VaultResourceInstancesReq.
-        :rtype: list[TagsReq]
+        :rtype: list[:class:`huaweicloudsdkcbr.v1.TagsReq`]
         """
         return self._not_tags_any
 
@@ -200,7 +227,7 @@ class VaultResourceInstancesReq:
         不包含任一标签。  tags不允许为空列表。  tags中最多包含10个key。  tags中key不允许重复。  结果返回不包含任一标签的资源列表，key之间是或的关系，key-value结构张value是或的关系。  无过滤条件时返回全量数据。
 
         :param not_tags_any: The not_tags_any of this VaultResourceInstancesReq.
-        :type: list[TagsReq]
+        :type not_tags_any: list[:class:`huaweicloudsdkcbr.v1.TagsReq`]
         """
         self._not_tags_any = not_tags_any
 
@@ -211,7 +238,7 @@ class VaultResourceInstancesReq:
         仅op_service权限可以使用此字段做资源实例过滤条件。  目前TMS调用时只包含一个tag结构体。  * key： _sys_enterprise_project_id  * values：企业项目id列表  目前TMS调用时，key下面只包含一个value，0表示默认企业项目。  sys_tags和租户标签过滤条件（tags、tags_any、not_tags、not_tags_any）不能同时使用。  无sys_tags时按照tag接口处理，无tag过滤条件时返回全量数据。  sys_tags不能为空列表
 
         :return: The sys_tags of this VaultResourceInstancesReq.
-        :rtype: list[SysTags]
+        :rtype: list[:class:`huaweicloudsdkcbr.v1.SysTags`]
         """
         return self._sys_tags
 
@@ -222,7 +249,7 @@ class VaultResourceInstancesReq:
         仅op_service权限可以使用此字段做资源实例过滤条件。  目前TMS调用时只包含一个tag结构体。  * key： _sys_enterprise_project_id  * values：企业项目id列表  目前TMS调用时，key下面只包含一个value，0表示默认企业项目。  sys_tags和租户标签过滤条件（tags、tags_any、not_tags、not_tags_any）不能同时使用。  无sys_tags时按照tag接口处理，无tag过滤条件时返回全量数据。  sys_tags不能为空列表
 
         :param sys_tags: The sys_tags of this VaultResourceInstancesReq.
-        :type: list[SysTags]
+        :type sys_tags: list[:class:`huaweicloudsdkcbr.v1.SysTags`]
         """
         self._sys_tags = sys_tags
 
@@ -244,7 +271,7 @@ class VaultResourceInstancesReq:
         查询记录数（action为count时无此参数）如果action为filter时，默认为1000，limit最小值为1，limit最大值为1000, 不在范围内报错。返回的结果中记录数不超过limit。
 
         :param limit: The limit of this VaultResourceInstancesReq.
-        :type: str
+        :type limit: str
         """
         self._limit = limit
 
@@ -266,7 +293,7 @@ class VaultResourceInstancesReq:
         索引位置（action为count时无此参数）如果action为filter时，默认为0，offset最小值为0。返回的结果中第一条记录为符合查询条件的第offset+1条记录。
 
         :param offset: The offset of this VaultResourceInstancesReq.
-        :type: str
+        :type offset: str
         """
         self._offset = offset
 
@@ -288,7 +315,7 @@ class VaultResourceInstancesReq:
         操作标识取值范围为：\"filter\", \"count\"。如果是filter就是分页查询，如果是count只需按照条件将总条数返回即可
 
         :param action: The action of this VaultResourceInstancesReq.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -299,7 +326,7 @@ class VaultResourceInstancesReq:
         资源本身支持的查询条件。  matches不允许为空列表。  matches中key不允许重复。
 
         :return: The matches of this VaultResourceInstancesReq.
-        :rtype: list[Match]
+        :rtype: list[:class:`huaweicloudsdkcbr.v1.Match`]
         """
         return self._matches
 
@@ -310,7 +337,7 @@ class VaultResourceInstancesReq:
         资源本身支持的查询条件。  matches不允许为空列表。  matches中key不允许重复。
 
         :param matches: The matches of this VaultResourceInstancesReq.
-        :type: list[Match]
+        :type matches: list[:class:`huaweicloudsdkcbr.v1.Match`]
         """
         self._matches = matches
 
@@ -332,7 +359,7 @@ class VaultResourceInstancesReq:
         云类型
 
         :param cloud_type: The cloud_type of this VaultResourceInstancesReq.
-        :type: str
+        :type cloud_type: str
         """
         self._cloud_type = cloud_type
 
@@ -354,7 +381,7 @@ class VaultResourceInstancesReq:
         资源类型
 
         :param object_type: The object_type of this VaultResourceInstancesReq.
-        :type: str
+        :type object_type: str
         """
         self._object_type = object_type
 

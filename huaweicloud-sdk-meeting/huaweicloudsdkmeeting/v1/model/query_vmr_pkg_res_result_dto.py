@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryVmrPkgResResultDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class QueryVmrPkgResResultDTO:
     }
 
     def __init__(self, vmr_pkg_id=None, vmr_name=None, vmr_pkg_parties=None, vmr_pkg_count=None, vmr_pkg_used_count=None):
-        """QueryVmrPkgResResultDTO - a model defined in huaweicloud sdk"""
+        """QueryVmrPkgResResultDTO
+
+        The model defined in huaweicloud sdk
+
+        :param vmr_pkg_id: 云会议室套餐包id。
+        :type vmr_pkg_id: str
+        :param vmr_name: 云会议室套餐包名称。
+        :type vmr_name: str
+        :param vmr_pkg_parties: 云会议室套餐方数。
+        :type vmr_pkg_parties: int
+        :param vmr_pkg_count: 该云会议室套餐分配的总数。
+        :type vmr_pkg_count: int
+        :param vmr_pkg_used_count: 该套餐对应的云会议室已分配数量。
+        :type vmr_pkg_used_count: int
+        """
         
         
 
@@ -78,7 +91,7 @@ class QueryVmrPkgResResultDTO:
         云会议室套餐包id。
 
         :param vmr_pkg_id: The vmr_pkg_id of this QueryVmrPkgResResultDTO.
-        :type: str
+        :type vmr_pkg_id: str
         """
         self._vmr_pkg_id = vmr_pkg_id
 
@@ -100,7 +113,7 @@ class QueryVmrPkgResResultDTO:
         云会议室套餐包名称。
 
         :param vmr_name: The vmr_name of this QueryVmrPkgResResultDTO.
-        :type: str
+        :type vmr_name: str
         """
         self._vmr_name = vmr_name
 
@@ -122,7 +135,7 @@ class QueryVmrPkgResResultDTO:
         云会议室套餐方数。
 
         :param vmr_pkg_parties: The vmr_pkg_parties of this QueryVmrPkgResResultDTO.
-        :type: int
+        :type vmr_pkg_parties: int
         """
         self._vmr_pkg_parties = vmr_pkg_parties
 
@@ -144,7 +157,7 @@ class QueryVmrPkgResResultDTO:
         该云会议室套餐分配的总数。
 
         :param vmr_pkg_count: The vmr_pkg_count of this QueryVmrPkgResResultDTO.
-        :type: int
+        :type vmr_pkg_count: int
         """
         self._vmr_pkg_count = vmr_pkg_count
 
@@ -166,7 +179,7 @@ class QueryVmrPkgResResultDTO:
         该套餐对应的云会议室已分配数量。
 
         :param vmr_pkg_used_count: The vmr_pkg_used_count of this QueryVmrPkgResResultDTO.
-        :type: int
+        :type vmr_pkg_used_count: int
         """
         self._vmr_pkg_used_count = vmr_pkg_used_count
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDedicatedHostRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateDedicatedHostRequest:
     }
 
     def __init__(self, dedicated_host_id=None, body=None):
-        """UpdateDedicatedHostRequest - a model defined in huaweicloud sdk"""
+        """UpdateDedicatedHostRequest
+
+        The model defined in huaweicloud sdk
+
+        :param dedicated_host_id: 专属主机ID。  可以从专属主机控制台查询，或者通过调用查询专属主机列表API获取。
+        :type dedicated_host_id: str
+        :param body: Body of the UpdateDedicatedHostRequest
+        :type body: :class:`huaweicloudsdkdeh.v1.ReqUpdateDeh`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateDedicatedHostRequest:
         专属主机ID。  可以从专属主机控制台查询，或者通过调用查询专属主机列表API获取。
 
         :param dedicated_host_id: The dedicated_host_id of this UpdateDedicatedHostRequest.
-        :type: str
+        :type dedicated_host_id: str
         """
         self._dedicated_host_id = dedicated_host_id
 
@@ -72,7 +79,7 @@ class UpdateDedicatedHostRequest:
 
 
         :return: The body of this UpdateDedicatedHostRequest.
-        :rtype: ReqUpdateDeh
+        :rtype: :class:`huaweicloudsdkdeh.v1.ReqUpdateDeh`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateDedicatedHostRequest:
 
 
         :param body: The body of this UpdateDedicatedHostRequest.
-        :type: ReqUpdateDeh
+        :type body: :class:`huaweicloudsdkdeh.v1.ReqUpdateDeh`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCustomerBillsFeeRecordsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListCustomerBillsFeeRecordsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, records=None, currency=None):
-        """ListCustomerBillsFeeRecordsResponse - a model defined in huaweicloud sdk"""
+        """ListCustomerBillsFeeRecordsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total_count: 结果集数量，只有成功才返回这个参数。
+        :type total_count: int
+        :param records: 资源费用记录数据。 具体请参见表2。
+        :type records: list[:class:`huaweicloudsdkbss.v2.MonthlyBillRecord`]
+        :param currency: 币种。 CNY：人民币
+        :type currency: str
+        """
         
         super(ListCustomerBillsFeeRecordsResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListCustomerBillsFeeRecordsResponse(SdkResponse):
         结果集数量，只有成功才返回这个参数。
 
         :param total_count: The total_count of this ListCustomerBillsFeeRecordsResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 
@@ -79,7 +88,7 @@ class ListCustomerBillsFeeRecordsResponse(SdkResponse):
         资源费用记录数据。 具体请参见表2。
 
         :return: The records of this ListCustomerBillsFeeRecordsResponse.
-        :rtype: list[MonthlyBillRecord]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.MonthlyBillRecord`]
         """
         return self._records
 
@@ -90,7 +99,7 @@ class ListCustomerBillsFeeRecordsResponse(SdkResponse):
         资源费用记录数据。 具体请参见表2。
 
         :param records: The records of this ListCustomerBillsFeeRecordsResponse.
-        :type: list[MonthlyBillRecord]
+        :type records: list[:class:`huaweicloudsdkbss.v2.MonthlyBillRecord`]
         """
         self._records = records
 
@@ -112,7 +121,7 @@ class ListCustomerBillsFeeRecordsResponse(SdkResponse):
         币种。 CNY：人民币
 
         :param currency: The currency of this ListCustomerBillsFeeRecordsResponse.
-        :type: str
+        :type currency: str
         """
         self._currency = currency
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateTestCaseInPlanRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateTestCaseInPlanRequest:
     }
 
     def __init__(self, project_id=None, plan_id=None, body=None):
-        """CreateTestCaseInPlanRequest - a model defined in huaweicloud sdk"""
+        """CreateTestCaseInPlanRequest
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: 项目唯一标识，固定长度32位字符
+        :type project_id: str
+        :param plan_id: 计划唯一标识，固定长度32位字符
+        :type plan_id: str
+        :param body: Body of the CreateTestCaseInPlanRequest
+        :type body: :class:`huaweicloudsdkcloudtest.v1.CreateTestCaseInPlanRequestBody`
+        """
         
         
 
@@ -66,7 +75,7 @@ class CreateTestCaseInPlanRequest:
         项目唯一标识，固定长度32位字符
 
         :param project_id: The project_id of this CreateTestCaseInPlanRequest.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -88,7 +97,7 @@ class CreateTestCaseInPlanRequest:
         计划唯一标识，固定长度32位字符
 
         :param plan_id: The plan_id of this CreateTestCaseInPlanRequest.
-        :type: str
+        :type plan_id: str
         """
         self._plan_id = plan_id
 
@@ -98,7 +107,7 @@ class CreateTestCaseInPlanRequest:
 
 
         :return: The body of this CreateTestCaseInPlanRequest.
-        :rtype: CreateTestCaseInPlanRequestBody
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.CreateTestCaseInPlanRequestBody`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class CreateTestCaseInPlanRequest:
 
 
         :param body: The body of this CreateTestCaseInPlanRequest.
-        :type: CreateTestCaseInPlanRequestBody
+        :type body: :class:`huaweicloudsdkcloudtest.v1.CreateTestCaseInPlanRequestBody`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SqlJob:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class SqlJob:
     }
 
     def __init__(self, sql=None):
-        """SqlJob - a model defined in huaweicloud sdk"""
+        """SqlJob
+
+        The model defined in huaweicloud sdk
+
+        :param sql: 作业的SQL。
+        :type sql: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class SqlJob:
         作业的SQL。
 
         :param sql: The sql of this SqlJob.
-        :type: str
+        :type sql: str
         """
         self._sql = sql
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NovaServerFault:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class NovaServerFault:
     }
 
     def __init__(self, code=None, created=None, message=None, details=None):
-        """NovaServerFault - a model defined in huaweicloud sdk"""
+        """NovaServerFault
+
+        The model defined in huaweicloud sdk
+
+        :param code: 错误码。
+        :type code: int
+        :param created: 异常出现的时间。
+        :type created: str
+        :param message: 异常描述信息。
+        :type message: str
+        :param details: 异常详情信息。
+        :type details: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class NovaServerFault:
         错误码。
 
         :param code: The code of this NovaServerFault.
-        :type: int
+        :type code: int
         """
         self._code = code
 
@@ -95,7 +106,7 @@ class NovaServerFault:
         异常出现的时间。
 
         :param created: The created of this NovaServerFault.
-        :type: str
+        :type created: str
         """
         self._created = created
 
@@ -117,7 +128,7 @@ class NovaServerFault:
         异常描述信息。
 
         :param message: The message of this NovaServerFault.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -139,7 +150,7 @@ class NovaServerFault:
         异常详情信息。
 
         :param details: The details of this NovaServerFault.
-        :type: str
+        :type details: str
         """
         self._details = details
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ReplicationReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ReplicationReq:
     }
 
     def __init__(self, replication=None):
-        """ReplicationReq - a model defined in huaweicloud sdk"""
+        """ReplicationReq
+
+        The model defined in huaweicloud sdk
+
+        :param replication: 新扩副本数量。
+        :type replication: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ReplicationReq:
         新扩副本数量。
 
         :param replication: The replication of this ReplicationReq.
-        :type: str
+        :type replication: str
         """
         self._replication = replication
 

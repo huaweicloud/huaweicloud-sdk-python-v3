@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteRoutesRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteRoutesRequestBody:
     }
 
     def __init__(self, routes=None):
-        """DeleteRoutesRequestBody - a model defined in huaweicloud sdk"""
+        """DeleteRoutesRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param routes: 待删除的路由信息
+        :type routes: list[:class:`huaweicloudsdkiec.v1.DeleteRouteOption`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class DeleteRoutesRequestBody:
         待删除的路由信息
 
         :return: The routes of this DeleteRoutesRequestBody.
-        :rtype: list[DeleteRouteOption]
+        :rtype: list[:class:`huaweicloudsdkiec.v1.DeleteRouteOption`]
         """
         return self._routes
 
@@ -57,7 +62,7 @@ class DeleteRoutesRequestBody:
         待删除的路由信息
 
         :param routes: The routes of this DeleteRoutesRequestBody.
-        :type: list[DeleteRouteOption]
+        :type routes: list[:class:`huaweicloudsdkiec.v1.DeleteRouteOption`]
         """
         self._routes = routes
 

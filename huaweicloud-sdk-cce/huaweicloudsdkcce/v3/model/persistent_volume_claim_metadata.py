@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PersistentVolumeClaimMetadata:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class PersistentVolumeClaimMetadata:
     }
 
     def __init__(self, name=None, labels=None):
-        """PersistentVolumeClaimMetadata - a model defined in huaweicloud sdk"""
+        """PersistentVolumeClaimMetadata
+
+        The model defined in huaweicloud sdk
+
+        :param name: PersistentVolumeClaim名称，可以包含小写字母、数字、连字符和点，开头和结尾必须是字母或数字，最长253个字符，同一namespace下name不能重复。
+        :type name: str
+        :param labels: PersistentVolumeClaim标签，key/value对格式。  - Key：必须以字母或数字开头，可以包含字母、数字、连字符、下划线和点，最长63个字符；另外可以使用DNS子域作为前缀，例如example.com/my-key，DNS子域最长253个字符。 - Value：可以为空或者非空字符串，非空字符串必须以字符或数字开头，可以包含字母、数字、连字符、下划线和点，最长63个字符。
+        :type labels: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class PersistentVolumeClaimMetadata:
         PersistentVolumeClaim名称，可以包含小写字母、数字、连字符和点，开头和结尾必须是字母或数字，最长253个字符，同一namespace下name不能重复。
 
         :param name: The name of this PersistentVolumeClaimMetadata.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -84,7 +91,7 @@ class PersistentVolumeClaimMetadata:
         PersistentVolumeClaim标签，key/value对格式。  - Key：必须以字母或数字开头，可以包含字母、数字、连字符、下划线和点，最长63个字符；另外可以使用DNS子域作为前缀，例如example.com/my-key，DNS子域最长253个字符。 - Value：可以为空或者非空字符串，非空字符串必须以字符或数字开头，可以包含字母、数字、连字符、下划线和点，最长63个字符。
 
         :param labels: The labels of this PersistentVolumeClaimMetadata.
-        :type: str
+        :type labels: str
         """
         self._labels = labels
 

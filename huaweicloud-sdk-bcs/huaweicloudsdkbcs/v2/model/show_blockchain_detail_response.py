@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowBlockchainDetailResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class ShowBlockchainDetailResponse(SdkResponse):
     }
 
     def __init__(self, basic_info=None, channels=None, peer_info=None, light_peer_info=None, orderer_info=None, couch_db_info=None, dms_kafka_info=None, ief_info=None, sfs_info=None, agent_info=None, restapi_info=None, evs_pvc_info=None, tc3_taskserver_info=None, obs_bucket_info=None):
-        """ShowBlockchainDetailResponse - a model defined in huaweicloud sdk"""
+        """ShowBlockchainDetailResponse
+
+        The model defined in huaweicloud sdk
+
+        :param basic_info: 
+        :type basic_info: :class:`huaweicloudsdkbcs.v2.BasicInfo`
+        :param channels: 通道信息
+        :type channels: list[:class:`huaweicloudsdkbcs.v2.ChannelInfo`]
+        :param peer_info: peer组织信息
+        :type peer_info: list[:class:`huaweicloudsdkbcs.v2.PeerInfo`]
+        :param light_peer_info: light_peer组织信息
+        :type light_peer_info: list[:class:`huaweicloudsdkbcs.v2.PeerInfo`]
+        :param orderer_info: 
+        :type orderer_info: :class:`huaweicloudsdkbcs.v2.PeerInfo`
+        :param couch_db_info: 
+        :type couch_db_info: :class:`huaweicloudsdkbcs.v2.CouchDBInfo`
+        :param dms_kafka_info: 
+        :type dms_kafka_info: :class:`huaweicloudsdkbcs.v2.DmsKafkaInfo`
+        :param ief_info: 
+        :type ief_info: :class:`huaweicloudsdkbcs.v2.IefInfo`
+        :param sfs_info: 
+        :type sfs_info: :class:`huaweicloudsdkbcs.v2.SfsInfo`
+        :param agent_info: 
+        :type agent_info: :class:`huaweicloudsdkbcs.v2.PeerInfo`
+        :param restapi_info: 
+        :type restapi_info: :class:`huaweicloudsdkbcs.v2.PeerInfo`
+        :param evs_pvc_info: 云硬盘存储卷信息
+        :type evs_pvc_info: dict(str, dict(str, str))
+        :param tc3_taskserver_info: 
+        :type tc3_taskserver_info: :class:`huaweicloudsdkbcs.v2.PeerInfo`
+        :param obs_bucket_info: 
+        :type obs_bucket_info: :class:`huaweicloudsdkbcs.v2.OBSInfo`
+        """
         
         super(ShowBlockchainDetailResponse, self).__init__()
 
@@ -111,7 +142,7 @@ class ShowBlockchainDetailResponse(SdkResponse):
 
 
         :return: The basic_info of this ShowBlockchainDetailResponse.
-        :rtype: BasicInfo
+        :rtype: :class:`huaweicloudsdkbcs.v2.BasicInfo`
         """
         return self._basic_info
 
@@ -121,7 +152,7 @@ class ShowBlockchainDetailResponse(SdkResponse):
 
 
         :param basic_info: The basic_info of this ShowBlockchainDetailResponse.
-        :type: BasicInfo
+        :type basic_info: :class:`huaweicloudsdkbcs.v2.BasicInfo`
         """
         self._basic_info = basic_info
 
@@ -132,7 +163,7 @@ class ShowBlockchainDetailResponse(SdkResponse):
         通道信息
 
         :return: The channels of this ShowBlockchainDetailResponse.
-        :rtype: list[ChannelInfo]
+        :rtype: list[:class:`huaweicloudsdkbcs.v2.ChannelInfo`]
         """
         return self._channels
 
@@ -143,7 +174,7 @@ class ShowBlockchainDetailResponse(SdkResponse):
         通道信息
 
         :param channels: The channels of this ShowBlockchainDetailResponse.
-        :type: list[ChannelInfo]
+        :type channels: list[:class:`huaweicloudsdkbcs.v2.ChannelInfo`]
         """
         self._channels = channels
 
@@ -154,7 +185,7 @@ class ShowBlockchainDetailResponse(SdkResponse):
         peer组织信息
 
         :return: The peer_info of this ShowBlockchainDetailResponse.
-        :rtype: list[PeerInfo]
+        :rtype: list[:class:`huaweicloudsdkbcs.v2.PeerInfo`]
         """
         return self._peer_info
 
@@ -165,7 +196,7 @@ class ShowBlockchainDetailResponse(SdkResponse):
         peer组织信息
 
         :param peer_info: The peer_info of this ShowBlockchainDetailResponse.
-        :type: list[PeerInfo]
+        :type peer_info: list[:class:`huaweicloudsdkbcs.v2.PeerInfo`]
         """
         self._peer_info = peer_info
 
@@ -176,7 +207,7 @@ class ShowBlockchainDetailResponse(SdkResponse):
         light_peer组织信息
 
         :return: The light_peer_info of this ShowBlockchainDetailResponse.
-        :rtype: list[PeerInfo]
+        :rtype: list[:class:`huaweicloudsdkbcs.v2.PeerInfo`]
         """
         return self._light_peer_info
 
@@ -187,7 +218,7 @@ class ShowBlockchainDetailResponse(SdkResponse):
         light_peer组织信息
 
         :param light_peer_info: The light_peer_info of this ShowBlockchainDetailResponse.
-        :type: list[PeerInfo]
+        :type light_peer_info: list[:class:`huaweicloudsdkbcs.v2.PeerInfo`]
         """
         self._light_peer_info = light_peer_info
 
@@ -197,7 +228,7 @@ class ShowBlockchainDetailResponse(SdkResponse):
 
 
         :return: The orderer_info of this ShowBlockchainDetailResponse.
-        :rtype: PeerInfo
+        :rtype: :class:`huaweicloudsdkbcs.v2.PeerInfo`
         """
         return self._orderer_info
 
@@ -207,7 +238,7 @@ class ShowBlockchainDetailResponse(SdkResponse):
 
 
         :param orderer_info: The orderer_info of this ShowBlockchainDetailResponse.
-        :type: PeerInfo
+        :type orderer_info: :class:`huaweicloudsdkbcs.v2.PeerInfo`
         """
         self._orderer_info = orderer_info
 
@@ -217,7 +248,7 @@ class ShowBlockchainDetailResponse(SdkResponse):
 
 
         :return: The couch_db_info of this ShowBlockchainDetailResponse.
-        :rtype: CouchDBInfo
+        :rtype: :class:`huaweicloudsdkbcs.v2.CouchDBInfo`
         """
         return self._couch_db_info
 
@@ -227,7 +258,7 @@ class ShowBlockchainDetailResponse(SdkResponse):
 
 
         :param couch_db_info: The couch_db_info of this ShowBlockchainDetailResponse.
-        :type: CouchDBInfo
+        :type couch_db_info: :class:`huaweicloudsdkbcs.v2.CouchDBInfo`
         """
         self._couch_db_info = couch_db_info
 
@@ -237,7 +268,7 @@ class ShowBlockchainDetailResponse(SdkResponse):
 
 
         :return: The dms_kafka_info of this ShowBlockchainDetailResponse.
-        :rtype: DmsKafkaInfo
+        :rtype: :class:`huaweicloudsdkbcs.v2.DmsKafkaInfo`
         """
         return self._dms_kafka_info
 
@@ -247,7 +278,7 @@ class ShowBlockchainDetailResponse(SdkResponse):
 
 
         :param dms_kafka_info: The dms_kafka_info of this ShowBlockchainDetailResponse.
-        :type: DmsKafkaInfo
+        :type dms_kafka_info: :class:`huaweicloudsdkbcs.v2.DmsKafkaInfo`
         """
         self._dms_kafka_info = dms_kafka_info
 
@@ -257,7 +288,7 @@ class ShowBlockchainDetailResponse(SdkResponse):
 
 
         :return: The ief_info of this ShowBlockchainDetailResponse.
-        :rtype: IefInfo
+        :rtype: :class:`huaweicloudsdkbcs.v2.IefInfo`
         """
         return self._ief_info
 
@@ -267,7 +298,7 @@ class ShowBlockchainDetailResponse(SdkResponse):
 
 
         :param ief_info: The ief_info of this ShowBlockchainDetailResponse.
-        :type: IefInfo
+        :type ief_info: :class:`huaweicloudsdkbcs.v2.IefInfo`
         """
         self._ief_info = ief_info
 
@@ -277,7 +308,7 @@ class ShowBlockchainDetailResponse(SdkResponse):
 
 
         :return: The sfs_info of this ShowBlockchainDetailResponse.
-        :rtype: SfsInfo
+        :rtype: :class:`huaweicloudsdkbcs.v2.SfsInfo`
         """
         return self._sfs_info
 
@@ -287,7 +318,7 @@ class ShowBlockchainDetailResponse(SdkResponse):
 
 
         :param sfs_info: The sfs_info of this ShowBlockchainDetailResponse.
-        :type: SfsInfo
+        :type sfs_info: :class:`huaweicloudsdkbcs.v2.SfsInfo`
         """
         self._sfs_info = sfs_info
 
@@ -297,7 +328,7 @@ class ShowBlockchainDetailResponse(SdkResponse):
 
 
         :return: The agent_info of this ShowBlockchainDetailResponse.
-        :rtype: PeerInfo
+        :rtype: :class:`huaweicloudsdkbcs.v2.PeerInfo`
         """
         return self._agent_info
 
@@ -307,7 +338,7 @@ class ShowBlockchainDetailResponse(SdkResponse):
 
 
         :param agent_info: The agent_info of this ShowBlockchainDetailResponse.
-        :type: PeerInfo
+        :type agent_info: :class:`huaweicloudsdkbcs.v2.PeerInfo`
         """
         self._agent_info = agent_info
 
@@ -317,7 +348,7 @@ class ShowBlockchainDetailResponse(SdkResponse):
 
 
         :return: The restapi_info of this ShowBlockchainDetailResponse.
-        :rtype: PeerInfo
+        :rtype: :class:`huaweicloudsdkbcs.v2.PeerInfo`
         """
         return self._restapi_info
 
@@ -327,7 +358,7 @@ class ShowBlockchainDetailResponse(SdkResponse):
 
 
         :param restapi_info: The restapi_info of this ShowBlockchainDetailResponse.
-        :type: PeerInfo
+        :type restapi_info: :class:`huaweicloudsdkbcs.v2.PeerInfo`
         """
         self._restapi_info = restapi_info
 
@@ -349,7 +380,7 @@ class ShowBlockchainDetailResponse(SdkResponse):
         云硬盘存储卷信息
 
         :param evs_pvc_info: The evs_pvc_info of this ShowBlockchainDetailResponse.
-        :type: dict(str, dict(str, str))
+        :type evs_pvc_info: dict(str, dict(str, str))
         """
         self._evs_pvc_info = evs_pvc_info
 
@@ -359,7 +390,7 @@ class ShowBlockchainDetailResponse(SdkResponse):
 
 
         :return: The tc3_taskserver_info of this ShowBlockchainDetailResponse.
-        :rtype: PeerInfo
+        :rtype: :class:`huaweicloudsdkbcs.v2.PeerInfo`
         """
         return self._tc3_taskserver_info
 
@@ -369,7 +400,7 @@ class ShowBlockchainDetailResponse(SdkResponse):
 
 
         :param tc3_taskserver_info: The tc3_taskserver_info of this ShowBlockchainDetailResponse.
-        :type: PeerInfo
+        :type tc3_taskserver_info: :class:`huaweicloudsdkbcs.v2.PeerInfo`
         """
         self._tc3_taskserver_info = tc3_taskserver_info
 
@@ -379,7 +410,7 @@ class ShowBlockchainDetailResponse(SdkResponse):
 
 
         :return: The obs_bucket_info of this ShowBlockchainDetailResponse.
-        :rtype: OBSInfo
+        :rtype: :class:`huaweicloudsdkbcs.v2.OBSInfo`
         """
         return self._obs_bucket_info
 
@@ -389,7 +420,7 @@ class ShowBlockchainDetailResponse(SdkResponse):
 
 
         :param obs_bucket_info: The obs_bucket_info of this ShowBlockchainDetailResponse.
-        :type: OBSInfo
+        :type obs_bucket_info: :class:`huaweicloudsdkbcs.v2.OBSInfo`
         """
         self._obs_bucket_info = obs_bucket_info
 

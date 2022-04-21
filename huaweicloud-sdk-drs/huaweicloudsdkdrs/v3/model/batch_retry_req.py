@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchRetryReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchRetryReq:
     }
 
     def __init__(self, jobs=None):
-        """BatchRetryReq - a model defined in huaweicloud sdk"""
+        """BatchRetryReq
+
+        The model defined in huaweicloud sdk
+
+        :param jobs: 批量续传任务请求列表
+        :type jobs: list[:class:`huaweicloudsdkdrs.v3.RetryInfo`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class BatchRetryReq:
         批量续传任务请求列表
 
         :return: The jobs of this BatchRetryReq.
-        :rtype: list[RetryInfo]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.RetryInfo`]
         """
         return self._jobs
 
@@ -57,7 +62,7 @@ class BatchRetryReq:
         批量续传任务请求列表
 
         :param jobs: The jobs of this BatchRetryReq.
-        :type: list[RetryInfo]
+        :type jobs: list[:class:`huaweicloudsdkdrs.v3.RetryInfo`]
         """
         self._jobs = jobs
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LoadBalancerStatusPolicy:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class LoadBalancerStatusPolicy:
     }
 
     def __init__(self, action=None, id=None, provisioning_status=None, name=None, rules=None):
-        """LoadBalancerStatusPolicy - a model defined in huaweicloud sdk"""
+        """LoadBalancerStatusPolicy
+
+        The model defined in huaweicloud sdk
+
+        :param action: 匹配后动作。取值： - REDIRECT_TO_POOL：转发到后端服务器组。 - REDIRECT_TO_LISTENER：转发到监听器。
+        :type action: str
+        :param id: 转发策略ID。
+        :type id: str
+        :param provisioning_status: 转发策略的配置状态。取值： - ACTIVE：使用中，默认值。 - ERROR：表示当前策略与同一监听器下的其他策略存在相同的规则配置。
+        :type provisioning_status: str
+        :param name: 转发策略名称。
+        :type name: str
+        :param rules: 转发规则状态信息。
+        :type rules: list[:class:`huaweicloudsdkelb.v3.LoadBalancerStatusL7Rule`]
+        """
         
         
 
@@ -78,7 +91,7 @@ class LoadBalancerStatusPolicy:
         匹配后动作。取值： - REDIRECT_TO_POOL：转发到后端服务器组。 - REDIRECT_TO_LISTENER：转发到监听器。
 
         :param action: The action of this LoadBalancerStatusPolicy.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -100,7 +113,7 @@ class LoadBalancerStatusPolicy:
         转发策略ID。
 
         :param id: The id of this LoadBalancerStatusPolicy.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -122,7 +135,7 @@ class LoadBalancerStatusPolicy:
         转发策略的配置状态。取值： - ACTIVE：使用中，默认值。 - ERROR：表示当前策略与同一监听器下的其他策略存在相同的规则配置。
 
         :param provisioning_status: The provisioning_status of this LoadBalancerStatusPolicy.
-        :type: str
+        :type provisioning_status: str
         """
         self._provisioning_status = provisioning_status
 
@@ -144,7 +157,7 @@ class LoadBalancerStatusPolicy:
         转发策略名称。
 
         :param name: The name of this LoadBalancerStatusPolicy.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -155,7 +168,7 @@ class LoadBalancerStatusPolicy:
         转发规则状态信息。
 
         :return: The rules of this LoadBalancerStatusPolicy.
-        :rtype: list[LoadBalancerStatusL7Rule]
+        :rtype: list[:class:`huaweicloudsdkelb.v3.LoadBalancerStatusL7Rule`]
         """
         return self._rules
 
@@ -166,7 +179,7 @@ class LoadBalancerStatusPolicy:
         转发规则状态信息。
 
         :param rules: The rules of this LoadBalancerStatusPolicy.
-        :type: list[LoadBalancerStatusL7Rule]
+        :type rules: list[:class:`huaweicloudsdkelb.v3.LoadBalancerStatusL7Rule`]
         """
         self._rules = rules
 

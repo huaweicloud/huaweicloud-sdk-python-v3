@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VideoDenoise:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class VideoDenoise:
     }
 
     def __init__(self, name=None, execution_order=None):
-        """VideoDenoise - a model defined in huaweicloud sdk"""
+        """VideoDenoise
+
+        The model defined in huaweicloud sdk
+
+        :param name: 降噪算法名称\&quot;hw-denoise\&quot;、\&quot;waifu2x\&quot;。 
+        :type name: str
+        :param execution_order: 1 表示视频处理时第一个执行，2表示第二个执行，以此类推；除不执行，各视频处理算法的执行次序不可相同。 
+        :type execution_order: int
+        """
         
         
 
@@ -63,7 +70,7 @@ class VideoDenoise:
         降噪算法名称\"hw-denoise\"、\"waifu2x\"。 
 
         :param name: The name of this VideoDenoise.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -85,7 +92,7 @@ class VideoDenoise:
         1 表示视频处理时第一个执行，2表示第二个执行，以此类推；除不执行，各视频处理算法的执行次序不可相同。 
 
         :param execution_order: The execution_order of this VideoDenoise.
-        :type: int
+        :type execution_order: int
         """
         self._execution_order = execution_order
 

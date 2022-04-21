@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListHealthmonitorsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListHealthmonitorsResponse(SdkResponse):
     }
 
     def __init__(self, healthmonitors=None):
-        """ListHealthmonitorsResponse - a model defined in huaweicloud sdk"""
+        """ListHealthmonitorsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param healthmonitors: 健康检查对象的列表
+        :type healthmonitors: list[:class:`huaweicloudsdkelb.v2.HealthmonitorResp`]
+        """
         
         super(ListHealthmonitorsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListHealthmonitorsResponse(SdkResponse):
         健康检查对象的列表
 
         :return: The healthmonitors of this ListHealthmonitorsResponse.
-        :rtype: list[HealthmonitorResp]
+        :rtype: list[:class:`huaweicloudsdkelb.v2.HealthmonitorResp`]
         """
         return self._healthmonitors
 
@@ -58,7 +63,7 @@ class ListHealthmonitorsResponse(SdkResponse):
         健康检查对象的列表
 
         :param healthmonitors: The healthmonitors of this ListHealthmonitorsResponse.
-        :type: list[HealthmonitorResp]
+        :type healthmonitors: list[:class:`huaweicloudsdkelb.v2.HealthmonitorResp`]
         """
         self._healthmonitors = healthmonitors
 

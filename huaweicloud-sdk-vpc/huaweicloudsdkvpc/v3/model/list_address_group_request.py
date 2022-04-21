@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAddressGroupRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListAddressGroupRequest:
     }
 
     def __init__(self, limit=None, marker=None, id=None, name=None, ip_version=None, description=None):
-        """ListAddressGroupRequest - a model defined in huaweicloud sdk"""
+        """ListAddressGroupRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 功能说明：每页返回的个数 取值范围：0~2000
+        :type limit: int
+        :param marker: 分页查询起始的资源ID，为空时查询第一页
+        :type marker: str
+        :param id: 地址组唯一标识，填写后接口按照id进行过滤，支持多ID同时过滤
+        :type id: list[str]
+        :param name: 地址组名称，填写后按照名称进行过滤，支持多名称同时过滤
+        :type name: list[str]
+        :param ip_version: IP地址组ip版本，当前只支持ipv4，填写后按照ip版本进行过滤
+        :type ip_version: int
+        :param description: 地址组描述信息，填写后按照地址组描述信息过滤，支持多描述同时过滤
+        :type description: list[str]
+        """
         
         
 
@@ -83,7 +98,7 @@ class ListAddressGroupRequest:
         功能说明：每页返回的个数 取值范围：0~2000
 
         :param limit: The limit of this ListAddressGroupRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -105,7 +120,7 @@ class ListAddressGroupRequest:
         分页查询起始的资源ID，为空时查询第一页
 
         :param marker: The marker of this ListAddressGroupRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -127,7 +142,7 @@ class ListAddressGroupRequest:
         地址组唯一标识，填写后接口按照id进行过滤，支持多ID同时过滤
 
         :param id: The id of this ListAddressGroupRequest.
-        :type: list[str]
+        :type id: list[str]
         """
         self._id = id
 
@@ -149,7 +164,7 @@ class ListAddressGroupRequest:
         地址组名称，填写后按照名称进行过滤，支持多名称同时过滤
 
         :param name: The name of this ListAddressGroupRequest.
-        :type: list[str]
+        :type name: list[str]
         """
         self._name = name
 
@@ -171,7 +186,7 @@ class ListAddressGroupRequest:
         IP地址组ip版本，当前只支持ipv4，填写后按照ip版本进行过滤
 
         :param ip_version: The ip_version of this ListAddressGroupRequest.
-        :type: int
+        :type ip_version: int
         """
         self._ip_version = ip_version
 
@@ -193,7 +208,7 @@ class ListAddressGroupRequest:
         地址组描述信息，填写后按照地址组描述信息过滤，支持多描述同时过滤
 
         :param description: The description of this ListAddressGroupRequest.
-        :type: list[str]
+        :type description: list[str]
         """
         self._description = description
 

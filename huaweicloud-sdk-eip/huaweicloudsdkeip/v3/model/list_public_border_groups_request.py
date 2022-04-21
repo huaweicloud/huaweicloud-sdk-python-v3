@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPublicBorderGroupsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListPublicBorderGroupsRequest:
     }
 
     def __init__(self, fields=None):
-        """ListPublicBorderGroupsRequest - a model defined in huaweicloud sdk"""
+        """ListPublicBorderGroupsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param fields: 显示，形式为\&quot;fields&#x3D;id&amp;fields&#x3D;name&amp;...\&quot;  支持字段：publicip_pools/public_border_group
+        :type fields: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class ListPublicBorderGroupsRequest:
         显示，形式为\"fields=id&fields=name&...\"  支持字段：publicip_pools/public_border_group
 
         :param fields: The fields of this ListPublicBorderGroupsRequest.
-        :type: str
+        :type fields: str
         """
         self._fields = fields
 

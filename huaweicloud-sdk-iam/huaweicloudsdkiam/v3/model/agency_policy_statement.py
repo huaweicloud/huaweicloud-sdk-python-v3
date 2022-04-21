@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AgencyPolicyStatement:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class AgencyPolicyStatement:
     }
 
     def __init__(self, action=None, effect=None, resource=None):
-        """AgencyPolicyStatement - a model defined in huaweicloud sdk"""
+        """AgencyPolicyStatement
+
+        The model defined in huaweicloud sdk
+
+        :param action: 授权项，指对资源的具体操作权限。 &gt; - 当自定义策略为委托自定义策略时，该字段值为：&#x60;&#x60;&#x60; \&quot;Action\&quot;: [\&quot;iam:agencies:assume\&quot;]&#x60;&#x60;&#x60;。
+        :type action: list[str]
+        :param effect: 作用。包含两种：允许（Allow）和拒绝（Deny），既有Allow又有Deny的授权语句时，遵循Deny优先的原则。
+        :type effect: str
+        :param resource: 
+        :type resource: :class:`huaweicloudsdkiam.v3.AgencyPolicyResource`
+        """
         
         
 
@@ -65,7 +74,7 @@ class AgencyPolicyStatement:
         授权项，指对资源的具体操作权限。 > - 当自定义策略为委托自定义策略时，该字段值为：``` \"Action\": [\"iam:agencies:assume\"]```。
 
         :param action: The action of this AgencyPolicyStatement.
-        :type: list[str]
+        :type action: list[str]
         """
         self._action = action
 
@@ -87,7 +96,7 @@ class AgencyPolicyStatement:
         作用。包含两种：允许（Allow）和拒绝（Deny），既有Allow又有Deny的授权语句时，遵循Deny优先的原则。
 
         :param effect: The effect of this AgencyPolicyStatement.
-        :type: str
+        :type effect: str
         """
         self._effect = effect
 
@@ -97,7 +106,7 @@ class AgencyPolicyStatement:
 
 
         :return: The resource of this AgencyPolicyStatement.
-        :rtype: AgencyPolicyResource
+        :rtype: :class:`huaweicloudsdkiam.v3.AgencyPolicyResource`
         """
         return self._resource
 
@@ -107,7 +116,7 @@ class AgencyPolicyStatement:
 
 
         :param resource: The resource of this AgencyPolicyStatement.
-        :type: AgencyPolicyResource
+        :type resource: :class:`huaweicloudsdkiam.v3.AgencyPolicyResource`
         """
         self._resource = resource
 

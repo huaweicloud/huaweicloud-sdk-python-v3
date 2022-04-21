@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ClipInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ClipInfo:
     }
 
     def __init__(self, input=None, timeline_start=None, timeline_end=None):
-        """ClipInfo - a model defined in huaweicloud sdk"""
+        """ClipInfo
+
+        The model defined in huaweicloud sdk
+
+        :param input: 
+        :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        :param timeline_start: 剪切开始时间，单位：秒。可以有正数或者负数，正数表示从开始往后的时间点，负数表示从结尾往前的时间点。 
+        :type timeline_start: str
+        :param timeline_end: 剪切结束时间，单位：秒。可以有正数或者负数，正数表示从开始往后的时间点，负数表示从结尾往前的时间点。 
+        :type timeline_end: str
+        """
         
         
 
@@ -56,7 +65,7 @@ class ClipInfo:
 
 
         :return: The input of this ClipInfo.
-        :rtype: ObsObjInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         return self._input
 
@@ -66,7 +75,7 @@ class ClipInfo:
 
 
         :param input: The input of this ClipInfo.
-        :type: ObsObjInfo
+        :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         self._input = input
 
@@ -88,7 +97,7 @@ class ClipInfo:
         剪切开始时间，单位：秒。可以有正数或者负数，正数表示从开始往后的时间点，负数表示从结尾往前的时间点。 
 
         :param timeline_start: The timeline_start of this ClipInfo.
-        :type: str
+        :type timeline_start: str
         """
         self._timeline_start = timeline_start
 
@@ -110,7 +119,7 @@ class ClipInfo:
         剪切结束时间，单位：秒。可以有正数或者负数，正数表示从开始往后的时间点，负数表示从结尾往前的时间点。 
 
         :param timeline_end: The timeline_end of this ClipInfo.
-        :type: str
+        :type timeline_end: str
         """
         self._timeline_end = timeline_end
 

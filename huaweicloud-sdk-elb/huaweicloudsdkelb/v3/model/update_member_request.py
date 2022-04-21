@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateMemberRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateMemberRequest:
     }
 
     def __init__(self, member_id=None, pool_id=None, body=None):
-        """UpdateMemberRequest - a model defined in huaweicloud sdk"""
+        """UpdateMemberRequest
+
+        The model defined in huaweicloud sdk
+
+        :param member_id: 后端服务器ID。
+        :type member_id: str
+        :param pool_id: 后端服务器组ID。
+        :type pool_id: str
+        :param body: Body of the UpdateMemberRequest
+        :type body: :class:`huaweicloudsdkelb.v3.UpdateMemberRequestBody`
+        """
         
         
 
@@ -66,7 +75,7 @@ class UpdateMemberRequest:
         后端服务器ID。
 
         :param member_id: The member_id of this UpdateMemberRequest.
-        :type: str
+        :type member_id: str
         """
         self._member_id = member_id
 
@@ -88,7 +97,7 @@ class UpdateMemberRequest:
         后端服务器组ID。
 
         :param pool_id: The pool_id of this UpdateMemberRequest.
-        :type: str
+        :type pool_id: str
         """
         self._pool_id = pool_id
 
@@ -98,7 +107,7 @@ class UpdateMemberRequest:
 
 
         :return: The body of this UpdateMemberRequest.
-        :rtype: UpdateMemberRequestBody
+        :rtype: :class:`huaweicloudsdkelb.v3.UpdateMemberRequestBody`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class UpdateMemberRequest:
 
 
         :param body: The body of this UpdateMemberRequest.
-        :type: UpdateMemberRequestBody
+        :type body: :class:`huaweicloudsdkelb.v3.UpdateMemberRequestBody`
         """
         self._body = body
 

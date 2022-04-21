@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TaskHostingResultHostingResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class TaskHostingResultHostingResult:
     }
 
     def __init__(self, overdue_date=None, status=None, data=None, file_size=None):
-        """TaskHostingResultHostingResult - a model defined in huaweicloud sdk"""
+        """TaskHostingResultHostingResult
+
+        The model defined in huaweicloud sdk
+
+        :param overdue_date: 结果文件result.json的过期时间
+        :type overdue_date: datetime
+        :param status: 结果文件result.json的状态
+        :type status: str
+        :param data: 结果文件result.json的具体内容
+        :type data: str
+        :param file_size: 结果文件result.json的大小
+        :type file_size: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class TaskHostingResultHostingResult:
         结果文件result.json的过期时间
 
         :param overdue_date: The overdue_date of this TaskHostingResultHostingResult.
-        :type: datetime
+        :type overdue_date: datetime
         """
         self._overdue_date = overdue_date
 
@@ -95,7 +106,7 @@ class TaskHostingResultHostingResult:
         结果文件result.json的状态
 
         :param status: The status of this TaskHostingResultHostingResult.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -117,7 +128,7 @@ class TaskHostingResultHostingResult:
         结果文件result.json的具体内容
 
         :param data: The data of this TaskHostingResultHostingResult.
-        :type: str
+        :type data: str
         """
         self._data = data
 
@@ -139,7 +150,7 @@ class TaskHostingResultHostingResult:
         结果文件result.json的大小
 
         :param file_size: The file_size of this TaskHostingResultHostingResult.
-        :type: str
+        :type file_size: str
         """
         self._file_size = file_size
 

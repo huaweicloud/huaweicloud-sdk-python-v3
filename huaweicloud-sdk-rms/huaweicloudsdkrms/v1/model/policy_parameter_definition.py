@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PolicyParameterDefinition:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class PolicyParameterDefinition:
     }
 
     def __init__(self, name=None, description=None, allowed_values=None, default_value=None, type=None):
-        """PolicyParameterDefinition - a model defined in huaweicloud sdk"""
+        """PolicyParameterDefinition
+
+        The model defined in huaweicloud sdk
+
+        :param name: 策略参数名字
+        :type name: str
+        :param description: 策略参数描述
+        :type description: str
+        :param allowed_values: 策略参数允许值列表
+        :type allowed_values: list[object]
+        :param default_value: 策略参数默认值
+        :type default_value: str
+        :param type: 策略参数类型
+        :type type: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class PolicyParameterDefinition:
         策略参数名字
 
         :param name: The name of this PolicyParameterDefinition.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -100,7 +113,7 @@ class PolicyParameterDefinition:
         策略参数描述
 
         :param description: The description of this PolicyParameterDefinition.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -122,7 +135,7 @@ class PolicyParameterDefinition:
         策略参数允许值列表
 
         :param allowed_values: The allowed_values of this PolicyParameterDefinition.
-        :type: list[object]
+        :type allowed_values: list[object]
         """
         self._allowed_values = allowed_values
 
@@ -144,7 +157,7 @@ class PolicyParameterDefinition:
         策略参数默认值
 
         :param default_value: The default_value of this PolicyParameterDefinition.
-        :type: str
+        :type default_value: str
         """
         self._default_value = default_value
 
@@ -166,7 +179,7 @@ class PolicyParameterDefinition:
         策略参数类型
 
         :param type: The type of this PolicyParameterDefinition.
-        :type: str
+        :type type: str
         """
         self._type = type
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DiscountDetailInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class DiscountDetailInfo:
     }
 
     def __init__(self, promotion_type=None, discount_amount=None, promotion_id=None, measure_id=None):
-        """DiscountDetailInfo - a model defined in huaweicloud sdk"""
+        """DiscountDetailInfo
+
+        The model defined in huaweicloud sdk
+
+        :param promotion_type: 折扣类型。 500：代理订购指定折扣 501：代理订购指定减免 502：代理订购指定一口价 600：合同折扣返利 （商履折扣） 601：渠道框架合同折扣 602：专款专用合同折扣（特殊商务合同折扣） 603：线下直签合同折扣 604：电销授权合同折扣 605：商务合同折扣 606：渠道商务合同折扣 607：合作伙伴授权折扣 608：严选商品折扣 610：免单金额 700：促销折扣 （促销，只有包年/包月场景） 800：赠送奖励金
+        :type promotion_type: str
+        :param discount_amount: 折扣金额。
+        :type discount_amount: float
+        :param promotion_id: 折扣类型对应的标识，可为合同ID或商务ID。
+        :type promotion_id: str
+        :param measure_id: 金额单位，1:元 3：分，默认3
+        :type measure_id: int
+        """
         
         
 
@@ -73,7 +84,7 @@ class DiscountDetailInfo:
         折扣类型。 500：代理订购指定折扣 501：代理订购指定减免 502：代理订购指定一口价 600：合同折扣返利 （商履折扣） 601：渠道框架合同折扣 602：专款专用合同折扣（特殊商务合同折扣） 603：线下直签合同折扣 604：电销授权合同折扣 605：商务合同折扣 606：渠道商务合同折扣 607：合作伙伴授权折扣 608：严选商品折扣 610：免单金额 700：促销折扣 （促销，只有包年/包月场景） 800：赠送奖励金
 
         :param promotion_type: The promotion_type of this DiscountDetailInfo.
-        :type: str
+        :type promotion_type: str
         """
         self._promotion_type = promotion_type
 
@@ -95,7 +106,7 @@ class DiscountDetailInfo:
         折扣金额。
 
         :param discount_amount: The discount_amount of this DiscountDetailInfo.
-        :type: float
+        :type discount_amount: float
         """
         self._discount_amount = discount_amount
 
@@ -117,7 +128,7 @@ class DiscountDetailInfo:
         折扣类型对应的标识，可为合同ID或商务ID。
 
         :param promotion_id: The promotion_id of this DiscountDetailInfo.
-        :type: str
+        :type promotion_id: str
         """
         self._promotion_id = promotion_id
 
@@ -139,7 +150,7 @@ class DiscountDetailInfo:
         金额单位，1:元 3：分，默认3
 
         :param measure_id: The measure_id of this DiscountDetailInfo.
-        :type: int
+        :type measure_id: int
         """
         self._measure_id = measure_id
 

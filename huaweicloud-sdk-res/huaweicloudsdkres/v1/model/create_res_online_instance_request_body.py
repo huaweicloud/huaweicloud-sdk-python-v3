@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateResOnlineInstanceRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class CreateResOnlineInstanceRequestBody:
     }
 
     def __init__(self, job_name=None, description=None, category=None, job_type=None, job_config=None, topic_urn=None):
-        """CreateResOnlineInstanceRequestBody - a model defined in huaweicloud sdk"""
+        """CreateResOnlineInstanceRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param job_name: 作业名称，1-64位的字母、数字、下划线、中划线组合。
+        :type job_name: str
+        :param description: 描述。
+        :type description: str
+        :param category: 类别: - SERVICE，在线服务
+        :type category: str
+        :param job_type: 作业类型： - infer，推理服务
+        :type job_type: str
+        :param job_config: 
+        :type job_config: :class:`huaweicloudsdkres.v1.JobConfig`
+        :param topic_urn: 通知消息配置。
+        :type topic_urn: str
+        """
         
         
 
@@ -79,7 +94,7 @@ class CreateResOnlineInstanceRequestBody:
         作业名称，1-64位的字母、数字、下划线、中划线组合。
 
         :param job_name: The job_name of this CreateResOnlineInstanceRequestBody.
-        :type: str
+        :type job_name: str
         """
         self._job_name = job_name
 
@@ -101,7 +116,7 @@ class CreateResOnlineInstanceRequestBody:
         描述。
 
         :param description: The description of this CreateResOnlineInstanceRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -123,7 +138,7 @@ class CreateResOnlineInstanceRequestBody:
         类别: - SERVICE，在线服务
 
         :param category: The category of this CreateResOnlineInstanceRequestBody.
-        :type: str
+        :type category: str
         """
         self._category = category
 
@@ -145,7 +160,7 @@ class CreateResOnlineInstanceRequestBody:
         作业类型： - infer，推理服务
 
         :param job_type: The job_type of this CreateResOnlineInstanceRequestBody.
-        :type: str
+        :type job_type: str
         """
         self._job_type = job_type
 
@@ -155,7 +170,7 @@ class CreateResOnlineInstanceRequestBody:
 
 
         :return: The job_config of this CreateResOnlineInstanceRequestBody.
-        :rtype: JobConfig
+        :rtype: :class:`huaweicloudsdkres.v1.JobConfig`
         """
         return self._job_config
 
@@ -165,7 +180,7 @@ class CreateResOnlineInstanceRequestBody:
 
 
         :param job_config: The job_config of this CreateResOnlineInstanceRequestBody.
-        :type: JobConfig
+        :type job_config: :class:`huaweicloudsdkres.v1.JobConfig`
         """
         self._job_config = job_config
 
@@ -187,7 +202,7 @@ class CreateResOnlineInstanceRequestBody:
         通知消息配置。
 
         :param topic_urn: The topic_urn of this CreateResOnlineInstanceRequestBody.
-        :type: str
+        :type topic_urn: str
         """
         self._topic_urn = topic_urn
 

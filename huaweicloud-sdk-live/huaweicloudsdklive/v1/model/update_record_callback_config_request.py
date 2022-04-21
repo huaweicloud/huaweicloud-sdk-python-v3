@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateRecordCallbackConfigRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateRecordCallbackConfigRequest:
     }
 
     def __init__(self, id=None, body=None):
-        """UpdateRecordCallbackConfigRequest - a model defined in huaweicloud sdk"""
+        """UpdateRecordCallbackConfigRequest
+
+        The model defined in huaweicloud sdk
+
+        :param id: 配置ID，在创建配置成功后返回
+        :type id: str
+        :param body: Body of the UpdateRecordCallbackConfigRequest
+        :type body: :class:`huaweicloudsdklive.v1.RecordCallbackConfigRequest`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateRecordCallbackConfigRequest:
         配置ID，在创建配置成功后返回
 
         :param id: The id of this UpdateRecordCallbackConfigRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -72,7 +79,7 @@ class UpdateRecordCallbackConfigRequest:
 
 
         :return: The body of this UpdateRecordCallbackConfigRequest.
-        :rtype: RecordCallbackConfigRequest
+        :rtype: :class:`huaweicloudsdklive.v1.RecordCallbackConfigRequest`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateRecordCallbackConfigRequest:
 
 
         :param body: The body of this UpdateRecordCallbackConfigRequest.
-        :type: RecordCallbackConfigRequest
+        :type body: :class:`huaweicloudsdklive.v1.RecordCallbackConfigRequest`
         """
         self._body = body
 

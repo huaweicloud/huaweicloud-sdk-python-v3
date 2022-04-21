@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowReferRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowReferRequest:
     }
 
     def __init__(self, enterprise_project_id=None, domain_id=None):
-        """ShowReferRequest - a model defined in huaweicloud sdk"""
+        """ShowReferRequest
+
+        The model defined in huaweicloud sdk
+
+        :param enterprise_project_id: 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子账号调用接口时，该参数必传。
+        :type enterprise_project_id: str
+        :param domain_id: 加速域名ID。获取方法请参见查询加速域名。
+        :type domain_id: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ShowReferRequest:
         当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子账号调用接口时，该参数必传。
 
         :param enterprise_project_id: The enterprise_project_id of this ShowReferRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -84,7 +91,7 @@ class ShowReferRequest:
         加速域名ID。获取方法请参见查询加速域名。
 
         :param domain_id: The domain_id of this ShowReferRequest.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 

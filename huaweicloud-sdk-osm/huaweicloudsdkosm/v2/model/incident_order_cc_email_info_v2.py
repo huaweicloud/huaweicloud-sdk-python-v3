@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IncidentOrderCCEmailInfoV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class IncidentOrderCCEmailInfoV2:
     }
 
     def __init__(self, user_id=None, customer_id=None, cc_email=None):
-        """IncidentOrderCCEmailInfoV2 - a model defined in huaweicloud sdk"""
+        """IncidentOrderCCEmailInfoV2
+
+        The model defined in huaweicloud sdk
+
+        :param user_id: 用户id
+        :type user_id: str
+        :param customer_id: 客户id
+        :type customer_id: str
+        :param cc_email: 操作邮箱
+        :type cc_email: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class IncidentOrderCCEmailInfoV2:
         用户id
 
         :param user_id: The user_id of this IncidentOrderCCEmailInfoV2.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -90,7 +99,7 @@ class IncidentOrderCCEmailInfoV2:
         客户id
 
         :param customer_id: The customer_id of this IncidentOrderCCEmailInfoV2.
-        :type: str
+        :type customer_id: str
         """
         self._customer_id = customer_id
 
@@ -112,7 +121,7 @@ class IncidentOrderCCEmailInfoV2:
         操作邮箱
 
         :param cc_email: The cc_email of this IncidentOrderCCEmailInfoV2.
-        :type: str
+        :type cc_email: str
         """
         self._cc_email = cc_email
 

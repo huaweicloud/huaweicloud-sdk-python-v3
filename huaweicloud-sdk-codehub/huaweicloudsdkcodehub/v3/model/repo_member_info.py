@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RepoMemberInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class RepoMemberInfo:
     }
 
     def __init__(self, domain_id=None, domain_name=None, id=None, name=None, role=None):
-        """RepoMemberInfo - a model defined in huaweicloud sdk"""
+        """RepoMemberInfo
+
+        The model defined in huaweicloud sdk
+
+        :param domain_id: 用户的租户ID
+        :type domain_id: str
+        :param domain_name: 用户的租户名称
+        :type domain_name: str
+        :param id: 添加的用户ID
+        :type id: str
+        :param name: 添加的用户名
+        :type name: str
+        :param role: 添加的用户权限，取值范围：30-&gt;普通成员，40-&gt;管理员
+        :type role: int
+        """
         
         
 
@@ -75,7 +88,7 @@ class RepoMemberInfo:
         用户的租户ID
 
         :param domain_id: The domain_id of this RepoMemberInfo.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -97,7 +110,7 @@ class RepoMemberInfo:
         用户的租户名称
 
         :param domain_name: The domain_name of this RepoMemberInfo.
-        :type: str
+        :type domain_name: str
         """
         self._domain_name = domain_name
 
@@ -119,7 +132,7 @@ class RepoMemberInfo:
         添加的用户ID
 
         :param id: The id of this RepoMemberInfo.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -141,7 +154,7 @@ class RepoMemberInfo:
         添加的用户名
 
         :param name: The name of this RepoMemberInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -163,7 +176,7 @@ class RepoMemberInfo:
         添加的用户权限，取值范围：30->普通成员，40->管理员
 
         :param role: The role of this RepoMemberInfo.
-        :type: int
+        :type role: int
         """
         self._role = role
 

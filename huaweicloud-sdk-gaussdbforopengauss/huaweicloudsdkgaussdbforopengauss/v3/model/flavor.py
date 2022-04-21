@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Flavor:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class Flavor:
     }
 
     def __init__(self, vcpus=None, ram=None, spec_code=None, availability_zone=None, az_status=None, version=None, name=None, group_type=None):
-        """Flavor - a model defined in huaweicloud sdk"""
+        """Flavor
+
+        The model defined in huaweicloud sdk
+
+        :param vcpus: CPU个数。
+        :type vcpus: str
+        :param ram: 内存大小，单位为GB。
+        :type ram: str
+        :param spec_code: 资源规格编码。例如：gaussdb.opengauss.ee.dn.m6.4xlarge.8.in。
+        :type spec_code: str
+        :param availability_zone: 可用az
+        :type availability_zone: list[str]
+        :param az_status: 其中key是可用区编号，value是规格所在az的状态，包含以下状态： - normal，在售。 - unsupported，暂不支持该规格。 - sellout，售罄。
+        :type az_status: dict(str, str)
+        :param version: 该规格支持的数据库版本号
+        :type version: str
+        :param name: 数组库引擎名称
+        :type name: str
+        :param group_type: 性能规格，包含以下状态： - normal：通用增强型。 - normal2：通用增强Ⅱ型。 - armFlavors：鲲鹏通用增强型。 - dedicicatenormal ：x86独享型。 - armlocalssd：鲲鹏通用型。 - normallocalssd：x86通用型。 - general：通用型。 - dedicated：独享型，仅云盘SSD支持。 - rapid：独享型，仅极速型SSD支持。
+        :type group_type: str
+        """
         
         
 
@@ -85,7 +104,7 @@ class Flavor:
         CPU个数。
 
         :param vcpus: The vcpus of this Flavor.
-        :type: str
+        :type vcpus: str
         """
         self._vcpus = vcpus
 
@@ -107,7 +126,7 @@ class Flavor:
         内存大小，单位为GB。
 
         :param ram: The ram of this Flavor.
-        :type: str
+        :type ram: str
         """
         self._ram = ram
 
@@ -129,7 +148,7 @@ class Flavor:
         资源规格编码。例如：gaussdb.opengauss.ee.dn.m6.4xlarge.8.in。
 
         :param spec_code: The spec_code of this Flavor.
-        :type: str
+        :type spec_code: str
         """
         self._spec_code = spec_code
 
@@ -151,7 +170,7 @@ class Flavor:
         可用az
 
         :param availability_zone: The availability_zone of this Flavor.
-        :type: list[str]
+        :type availability_zone: list[str]
         """
         self._availability_zone = availability_zone
 
@@ -173,7 +192,7 @@ class Flavor:
         其中key是可用区编号，value是规格所在az的状态，包含以下状态： - normal，在售。 - unsupported，暂不支持该规格。 - sellout，售罄。
 
         :param az_status: The az_status of this Flavor.
-        :type: dict(str, str)
+        :type az_status: dict(str, str)
         """
         self._az_status = az_status
 
@@ -195,7 +214,7 @@ class Flavor:
         该规格支持的数据库版本号
 
         :param version: The version of this Flavor.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -217,7 +236,7 @@ class Flavor:
         数组库引擎名称
 
         :param name: The name of this Flavor.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -239,7 +258,7 @@ class Flavor:
         性能规格，包含以下状态： - normal：通用增强型。 - normal2：通用增强Ⅱ型。 - armFlavors：鲲鹏通用增强型。 - dedicicatenormal ：x86独享型。 - armlocalssd：鲲鹏通用型。 - normallocalssd：x86通用型。 - general：通用型。 - dedicated：独享型，仅云盘SSD支持。 - rapid：独享型，仅极速型SSD支持。
 
         :param group_type: The group_type of this Flavor.
-        :type: str
+        :type group_type: str
         """
         self._group_type = group_type
 

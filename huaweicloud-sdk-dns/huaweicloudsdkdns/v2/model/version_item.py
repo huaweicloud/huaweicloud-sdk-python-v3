@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VersionItem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class VersionItem:
     }
 
     def __init__(self, id=None, status=None, links=None, updated=None, version=None, min_version=None):
-        """VersionItem - a model defined in huaweicloud sdk"""
+        """VersionItem
+
+        The model defined in huaweicloud sdk
+
+        :param id: 版本ID（版本号），如v2。
+        :type id: str
+        :param status: 版本状态，为如下3种： CURRENT：表示该版本为主推版本。 SUPPORTED：表示为老版本，但是现在还继续支持。 DEPRECATED：表示为废弃版本，存在后续删除的可能。
+        :type status: str
+        :param links: API的URL地址。
+        :type links: list[:class:`huaweicloudsdkdns.v2.LinksItem`]
+        :param updated: 版本发布时间。
+        :type updated: str
+        :param version: 支持的最大微版本号。若该版本API不支持微版本，则为空。
+        :type version: str
+        :param min_version: 支持的最小微版本号。若该版本API不支持微版本，则为空。
+        :type min_version: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class VersionItem:
         版本ID（版本号），如v2。
 
         :param id: The id of this VersionItem.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -105,7 +120,7 @@ class VersionItem:
         版本状态，为如下3种： CURRENT：表示该版本为主推版本。 SUPPORTED：表示为老版本，但是现在还继续支持。 DEPRECATED：表示为废弃版本，存在后续删除的可能。
 
         :param status: The status of this VersionItem.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -116,7 +131,7 @@ class VersionItem:
         API的URL地址。
 
         :return: The links of this VersionItem.
-        :rtype: list[LinksItem]
+        :rtype: list[:class:`huaweicloudsdkdns.v2.LinksItem`]
         """
         return self._links
 
@@ -127,7 +142,7 @@ class VersionItem:
         API的URL地址。
 
         :param links: The links of this VersionItem.
-        :type: list[LinksItem]
+        :type links: list[:class:`huaweicloudsdkdns.v2.LinksItem`]
         """
         self._links = links
 
@@ -149,7 +164,7 @@ class VersionItem:
         版本发布时间。
 
         :param updated: The updated of this VersionItem.
-        :type: str
+        :type updated: str
         """
         self._updated = updated
 
@@ -171,7 +186,7 @@ class VersionItem:
         支持的最大微版本号。若该版本API不支持微版本，则为空。
 
         :param version: The version of this VersionItem.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -193,7 +208,7 @@ class VersionItem:
         支持的最小微版本号。若该版本API不支持微版本，则为空。
 
         :param min_version: The min_version of this VersionItem.
-        :type: str
+        :type min_version: str
         """
         self._min_version = min_version
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateSnapshotOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateSnapshotOption:
     }
 
     def __init__(self, description=None, name=None):
-        """UpdateSnapshotOption - a model defined in huaweicloud sdk"""
+        """UpdateSnapshotOption
+
+        The model defined in huaweicloud sdk
+
+        :param description: 云硬盘快照描述。最大支持255个字节。
+        :type description: str
+        :param name: 云硬盘快照名称。最大支持255个字节。
+        :type name: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class UpdateSnapshotOption:
         云硬盘快照描述。最大支持255个字节。
 
         :param description: The description of this UpdateSnapshotOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -85,7 +92,7 @@ class UpdateSnapshotOption:
         云硬盘快照名称。最大支持255个字节。
 
         :param name: The name of this UpdateSnapshotOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 

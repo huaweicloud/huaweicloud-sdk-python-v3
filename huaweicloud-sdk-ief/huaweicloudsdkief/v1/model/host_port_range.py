@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class HostPortRange:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class HostPortRange:
     }
 
     def __init__(self, min_port=None, max_port=None):
-        """HostPortRange - a model defined in huaweicloud sdk"""
+        """HostPortRange
+
+        The model defined in huaweicloud sdk
+
+        :param min_port: 主机端口下限制,1到65535之间的整数
+        :type min_port: int
+        :param max_port: 主机端口上限值,1到65535之间的整数；max_port需大于min_port
+        :type max_port: int
+        """
         
         
 
@@ -61,7 +68,7 @@ class HostPortRange:
         主机端口下限制,1到65535之间的整数
 
         :param min_port: The min_port of this HostPortRange.
-        :type: int
+        :type min_port: int
         """
         self._min_port = min_port
 
@@ -83,7 +90,7 @@ class HostPortRange:
         主机端口上限值,1到65535之间的整数；max_port需大于min_port
 
         :param max_port: The max_port of this HostPortRange.
-        :type: int
+        :type max_port: int
         """
         self._max_port = max_port
 

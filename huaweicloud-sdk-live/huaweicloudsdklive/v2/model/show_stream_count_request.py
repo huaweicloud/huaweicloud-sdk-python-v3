@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowStreamCountRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowStreamCountRequest:
     }
 
     def __init__(self, publish_domains=None, start_time=None, end_time=None):
-        """ShowStreamCountRequest - a model defined in huaweicloud sdk"""
+        """ShowStreamCountRequest
+
+        The model defined in huaweicloud sdk
+
+        :param publish_domains: 推流域名列表，最多支持查询100个域名，多个域名以逗号分隔，若查询多个域名，则返回的是多个域名合并数据。 
+        :type publish_domains: list[str]
+        :param start_time: 起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度31天，最大查询周期1年。  若参数为空，默认查询7天数据。 
+        :type start_time: str
+        :param end_time: 结束时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。  若参数为空，默认为当前时间，最大查询跨度31天， 最大查询跨度31天，最大查询周期1年。 
+        :type end_time: str
+        """
         
         
 
@@ -67,7 +76,7 @@ class ShowStreamCountRequest:
         推流域名列表，最多支持查询100个域名，多个域名以逗号分隔，若查询多个域名，则返回的是多个域名合并数据。 
 
         :param publish_domains: The publish_domains of this ShowStreamCountRequest.
-        :type: list[str]
+        :type publish_domains: list[str]
         """
         self._publish_domains = publish_domains
 
@@ -89,7 +98,7 @@ class ShowStreamCountRequest:
         起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度31天，最大查询周期1年。  若参数为空，默认查询7天数据。 
 
         :param start_time: The start_time of this ShowStreamCountRequest.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -111,7 +120,7 @@ class ShowStreamCountRequest:
         结束时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。  若参数为空，默认为当前时间，最大查询跨度31天， 最大查询跨度31天，最大查询周期1年。 
 
         :param end_time: The end_time of this ShowStreamCountRequest.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 

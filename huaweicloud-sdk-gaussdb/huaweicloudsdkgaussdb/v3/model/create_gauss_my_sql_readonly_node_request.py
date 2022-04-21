@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateGaussMySqlReadonlyNodeRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateGaussMySqlReadonlyNodeRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """CreateGaussMySqlReadonlyNodeRequest - a model defined in huaweicloud sdk"""
+        """CreateGaussMySqlReadonlyNodeRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言。
+        :type x_language: str
+        :param instance_id: 实例ID，严格匹配UUID规则。
+        :type instance_id: str
+        :param body: Body of the CreateGaussMySqlReadonlyNodeRequest
+        :type body: :class:`huaweicloudsdkgaussdb.v3.MysqlCreateReadonlyNodeRequest`
+        """
         
         
 
@@ -67,7 +76,7 @@ class CreateGaussMySqlReadonlyNodeRequest:
         语言。
 
         :param x_language: The x_language of this CreateGaussMySqlReadonlyNodeRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -89,7 +98,7 @@ class CreateGaussMySqlReadonlyNodeRequest:
         实例ID，严格匹配UUID规则。
 
         :param instance_id: The instance_id of this CreateGaussMySqlReadonlyNodeRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -99,7 +108,7 @@ class CreateGaussMySqlReadonlyNodeRequest:
 
 
         :return: The body of this CreateGaussMySqlReadonlyNodeRequest.
-        :rtype: MysqlCreateReadonlyNodeRequest
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlCreateReadonlyNodeRequest`
         """
         return self._body
 
@@ -109,7 +118,7 @@ class CreateGaussMySqlReadonlyNodeRequest:
 
 
         :param body: The body of this CreateGaussMySqlReadonlyNodeRequest.
-        :type: MysqlCreateReadonlyNodeRequest
+        :type body: :class:`huaweicloudsdkgaussdb.v3.MysqlCreateReadonlyNodeRequest`
         """
         self._body = body
 

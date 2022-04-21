@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreatePrivateipRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreatePrivateipRequestBody:
     }
 
     def __init__(self, privateips=None):
-        """CreatePrivateipRequestBody - a model defined in huaweicloud sdk"""
+        """CreatePrivateipRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param privateips: 私有IP列表对象
+        :type privateips: list[:class:`huaweicloudsdkvpc.v2.CreatePrivateipOption`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreatePrivateipRequestBody:
         私有IP列表对象
 
         :return: The privateips of this CreatePrivateipRequestBody.
-        :rtype: list[CreatePrivateipOption]
+        :rtype: list[:class:`huaweicloudsdkvpc.v2.CreatePrivateipOption`]
         """
         return self._privateips
 
@@ -57,7 +62,7 @@ class CreatePrivateipRequestBody:
         私有IP列表对象
 
         :param privateips: The privateips of this CreatePrivateipRequestBody.
-        :type: list[CreatePrivateipOption]
+        :type privateips: list[:class:`huaweicloudsdkvpc.v2.CreatePrivateipOption`]
         """
         self._privateips = privateips
 

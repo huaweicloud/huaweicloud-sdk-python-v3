@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchReplaceDefinerReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchReplaceDefinerReq:
     }
 
     def __init__(self, jobs=None):
-        """BatchReplaceDefinerReq - a model defined in huaweicloud sdk"""
+        """BatchReplaceDefinerReq
+
+        The model defined in huaweicloud sdk
+
+        :param jobs: 批量设置replaceDefiner请求列表
+        :type jobs: list[:class:`huaweicloudsdkdrs.v3.ReplaceDefinerInfo`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class BatchReplaceDefinerReq:
         批量设置replaceDefiner请求列表
 
         :return: The jobs of this BatchReplaceDefinerReq.
-        :rtype: list[ReplaceDefinerInfo]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.ReplaceDefinerInfo`]
         """
         return self._jobs
 
@@ -57,7 +62,7 @@ class BatchReplaceDefinerReq:
         批量设置replaceDefiner请求列表
 
         :param jobs: The jobs of this BatchReplaceDefinerReq.
-        :type: list[ReplaceDefinerInfo]
+        :type jobs: list[:class:`huaweicloudsdkdrs.v3.ReplaceDefinerInfo`]
         """
         self._jobs = jobs
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BankCardInfoV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class BankCardInfoV2:
     }
 
     def __init__(self, bank_account=None, areacode=None, mobile=None, verification_code=None):
-        """BankCardInfoV2 - a model defined in huaweicloud sdk"""
+        """BankCardInfoV2
+
+        The model defined in huaweicloud sdk
+
+        :param bank_account: 银行卡账号。 当identifyType为4时，不能为空。 银行账号输入规则：^[0-9a-zA-Z]，可以包含特殊横杠（-）字符。
+        :type bank_account: str
+        :param areacode: 国家/区号码。 例如：0086：中国大陆区号码。
+        :type areacode: str
+        :param mobile: 手机号码。
+        :type mobile: str
+        :param verification_code: 验证码。 请调用“发送验证码”接口获取。
+        :type verification_code: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class BankCardInfoV2:
         银行卡账号。 当identifyType为4时，不能为空。 银行账号输入规则：^[0-9a-zA-Z]，可以包含特殊横杠（-）字符。
 
         :param bank_account: The bank_account of this BankCardInfoV2.
-        :type: str
+        :type bank_account: str
         """
         self._bank_account = bank_account
 
@@ -91,7 +102,7 @@ class BankCardInfoV2:
         国家/区号码。 例如：0086：中国大陆区号码。
 
         :param areacode: The areacode of this BankCardInfoV2.
-        :type: str
+        :type areacode: str
         """
         self._areacode = areacode
 
@@ -113,7 +124,7 @@ class BankCardInfoV2:
         手机号码。
 
         :param mobile: The mobile of this BankCardInfoV2.
-        :type: str
+        :type mobile: str
         """
         self._mobile = mobile
 
@@ -135,7 +146,7 @@ class BankCardInfoV2:
         验证码。 请调用“发送验证码”接口获取。
 
         :param verification_code: The verification_code of this BankCardInfoV2.
-        :type: str
+        :type verification_code: str
         """
         self._verification_code = verification_code
 

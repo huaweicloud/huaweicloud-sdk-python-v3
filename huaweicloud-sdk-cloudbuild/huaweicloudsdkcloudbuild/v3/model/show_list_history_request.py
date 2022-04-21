@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowListHistoryRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowListHistoryRequest:
     }
 
     def __init__(self, job_id=None, offset=None, limit=None, interval=None):
-        """ShowListHistoryRequest - a model defined in huaweicloud sdk"""
+        """ShowListHistoryRequest
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 构建的任务ID [获取项目下构建任务列表](https://support.huaweicloud.com/api-codeci/ShowJobListByProjectId.html)； 编辑构建任务时，浏览器URL末尾的32位数字、字母组合的字符串。
+        :type job_id: str
+        :param offset: 分页页码， 表示从此页开始查询， offset大于等于0
+        :type offset: int
+        :param limit: 每页显示的条目数量，limit小于等于100
+        :type limit: int
+        :param interval: 距今天的时间区间（单位：天），interval小于等于30
+        :type interval: int
+        """
         
         
 
@@ -69,7 +80,7 @@ class ShowListHistoryRequest:
         构建的任务ID [获取项目下构建任务列表](https://support.huaweicloud.com/api-codeci/ShowJobListByProjectId.html)； 编辑构建任务时，浏览器URL末尾的32位数字、字母组合的字符串。
 
         :param job_id: The job_id of this ShowListHistoryRequest.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -91,7 +102,7 @@ class ShowListHistoryRequest:
         分页页码， 表示从此页开始查询， offset大于等于0
 
         :param offset: The offset of this ShowListHistoryRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -113,7 +124,7 @@ class ShowListHistoryRequest:
         每页显示的条目数量，limit小于等于100
 
         :param limit: The limit of this ShowListHistoryRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -135,7 +146,7 @@ class ShowListHistoryRequest:
         距今天的时间区间（单位：天），interval小于等于30
 
         :param interval: The interval of this ShowListHistoryRequest.
-        :type: int
+        :type interval: int
         """
         self._interval = interval
 

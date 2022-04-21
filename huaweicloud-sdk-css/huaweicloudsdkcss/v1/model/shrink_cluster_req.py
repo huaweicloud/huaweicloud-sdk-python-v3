@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShrinkClusterReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShrinkClusterReq:
     }
 
     def __init__(self, shrink=None):
-        """ShrinkClusterReq - a model defined in huaweicloud sdk"""
+        """ShrinkClusterReq
+
+        The model defined in huaweicloud sdk
+
+        :param shrink: 需要缩容的节点类型和数量集合。
+        :type shrink: list[:class:`huaweicloudsdkcss.v1.ShrinkNodeReq`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class ShrinkClusterReq:
         需要缩容的节点类型和数量集合。
 
         :return: The shrink of this ShrinkClusterReq.
-        :rtype: list[ShrinkNodeReq]
+        :rtype: list[:class:`huaweicloudsdkcss.v1.ShrinkNodeReq`]
         """
         return self._shrink
 
@@ -57,7 +62,7 @@ class ShrinkClusterReq:
         需要缩容的节点类型和数量集合。
 
         :param shrink: The shrink of this ShrinkClusterReq.
-        :type: list[ShrinkNodeReq]
+        :type shrink: list[:class:`huaweicloudsdkcss.v1.ShrinkNodeReq`]
         """
         self._shrink = shrink
 

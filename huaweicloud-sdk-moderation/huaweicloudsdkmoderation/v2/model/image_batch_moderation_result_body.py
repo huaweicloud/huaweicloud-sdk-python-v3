@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ImageBatchModerationResultBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ImageBatchModerationResultBody:
     }
 
     def __init__(self, url=None, suggestion=None, detail=None, category_suggestions=None):
-        """ImageBatchModerationResultBody - a model defined in huaweicloud sdk"""
+        """ImageBatchModerationResultBody
+
+        The model defined in huaweicloud sdk
+
+        :param url: 图片的URL路径。
+        :type url: str
+        :param suggestion: 检测结果是否通过。 - block：包含敏感信息，不通过 - pass：不包含敏感信息，通过 - review：需要人工复检 &gt; 当同时检测多个场景时，suggestion的值以最可能包含敏感信息的场景为准。即任一场景出现了block则总的suggestion为block，所有场景都pass时suggestion为pass，这两种情况之外则一定有场景需要review，此时suggestion为review。 
+        :type suggestion: str
+        :param detail: 
+        :type detail: :class:`huaweicloudsdkmoderation.v2.ImageDetectionResultDetail`
+        :param category_suggestions: 具体每个场景的检测结果。  block：包含敏感信息，不通过  pass：不包含敏感信息，通过  review：需要人工复检 
+        :type category_suggestions: object
+        """
         
         
 
@@ -73,7 +84,7 @@ class ImageBatchModerationResultBody:
         图片的URL路径。
 
         :param url: The url of this ImageBatchModerationResultBody.
-        :type: str
+        :type url: str
         """
         self._url = url
 
@@ -95,7 +106,7 @@ class ImageBatchModerationResultBody:
         检测结果是否通过。 - block：包含敏感信息，不通过 - pass：不包含敏感信息，通过 - review：需要人工复检 > 当同时检测多个场景时，suggestion的值以最可能包含敏感信息的场景为准。即任一场景出现了block则总的suggestion为block，所有场景都pass时suggestion为pass，这两种情况之外则一定有场景需要review，此时suggestion为review。 
 
         :param suggestion: The suggestion of this ImageBatchModerationResultBody.
-        :type: str
+        :type suggestion: str
         """
         self._suggestion = suggestion
 
@@ -105,7 +116,7 @@ class ImageBatchModerationResultBody:
 
 
         :return: The detail of this ImageBatchModerationResultBody.
-        :rtype: ImageDetectionResultDetail
+        :rtype: :class:`huaweicloudsdkmoderation.v2.ImageDetectionResultDetail`
         """
         return self._detail
 
@@ -115,7 +126,7 @@ class ImageBatchModerationResultBody:
 
 
         :param detail: The detail of this ImageBatchModerationResultBody.
-        :type: ImageDetectionResultDetail
+        :type detail: :class:`huaweicloudsdkmoderation.v2.ImageDetectionResultDetail`
         """
         self._detail = detail
 
@@ -137,7 +148,7 @@ class ImageBatchModerationResultBody:
         具体每个场景的检测结果。  block：包含敏感信息，不通过  pass：不包含敏感信息，通过  review：需要人工复检 
 
         :param category_suggestions: The category_suggestions of this ImageBatchModerationResultBody.
-        :type: object
+        :type category_suggestions: object
         """
         self._category_suggestions = category_suggestions
 

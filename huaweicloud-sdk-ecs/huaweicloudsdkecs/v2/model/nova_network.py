@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NovaNetwork:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class NovaNetwork:
     }
 
     def __init__(self, addr=None, version=None, os_ext_ips_ma_cmac_addr=None, os_ext_ip_stype=None):
-        """NovaNetwork - a model defined in huaweicloud sdk"""
+        """NovaNetwork
+
+        The model defined in huaweicloud sdk
+
+        :param addr: IP地址。
+        :type addr: str
+        :param version: IP地址类型，值为4或6。  4：IP地址类型是IPv4 6：IP地址类型是IPv6
+        :type version: int
+        :param os_ext_ips_ma_cmac_addr: 扩展属性，MAC地址。
+        :type os_ext_ips_ma_cmac_addr: str
+        :param os_ext_ip_stype: 扩展属性，分配IP地址方式。
+        :type os_ext_ip_stype: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class NovaNetwork:
         IP地址。
 
         :param addr: The addr of this NovaNetwork.
-        :type: str
+        :type addr: str
         """
         self._addr = addr
 
@@ -91,7 +102,7 @@ class NovaNetwork:
         IP地址类型，值为4或6。  4：IP地址类型是IPv4 6：IP地址类型是IPv6
 
         :param version: The version of this NovaNetwork.
-        :type: int
+        :type version: int
         """
         self._version = version
 
@@ -113,7 +124,7 @@ class NovaNetwork:
         扩展属性，MAC地址。
 
         :param os_ext_ips_ma_cmac_addr: The os_ext_ips_ma_cmac_addr of this NovaNetwork.
-        :type: str
+        :type os_ext_ips_ma_cmac_addr: str
         """
         self._os_ext_ips_ma_cmac_addr = os_ext_ips_ma_cmac_addr
 
@@ -135,7 +146,7 @@ class NovaNetwork:
         扩展属性，分配IP地址方式。
 
         :param os_ext_ip_stype: The os_ext_ip_stype of this NovaNetwork.
-        :type: str
+        :type os_ext_ip_stype: str
         """
         self._os_ext_ip_stype = os_ext_ip_stype
 

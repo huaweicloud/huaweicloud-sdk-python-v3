@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeviceMessage:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class DeviceMessage:
     }
 
     def __init__(self, message_id=None, name=None, message=None, encoding=None, payload_format=None, topic=None, status=None, created_time=None, finished_time=None):
-        """DeviceMessage - a model defined in huaweicloud sdk"""
+        """DeviceMessage
+
+        The model defined in huaweicloud sdk
+
+        :param message_id: 设备消息ID，用于唯一标识一条消息，在下发设备消息时由物联网平台分配获得。
+        :type message_id: str
+        :param name: 消息名称,在下发消息时由用户指定。
+        :type name: str
+        :param message: 消息内容。 
+        :type message: object
+        :param encoding: 消息内容编码格式，取值范围none|base64,默认值none, base64格式仅支持透传。 
+        :type encoding: str
+        :param payload_format: 有效负载格式，在消息内容编码格式为none时有效，取值范围standard|raw，默认值standard（平台封装的标准格式），取值为raw时直接将消息内容作为有效负载下发。 
+        :type payload_format: str
+        :param topic: 消息topic
+        :type topic: str
+        :param status: 消息状态，包含PENDING，DELIVERED，FAILED和TIMEOUT，PENDING指设备不在线，消息被缓存起来，等设备上线之后下发； DELIVERED指消息发送成功；FAILED消息发送失败；TIMEOUT指消息在平台默认时间内（1天）还没有下发送给设备，则平台会将消息设置为超时，状态为TIMEOUT。
+        :type status: str
+        :param created_time: 消息的创建时间，\&quot;yyyyMMdd&#39;T&#39;HHmmss&#39;Z&#39;\&quot;格式的UTC字符串。
+        :type created_time: str
+        :param finished_time: 消息结束时间, \&quot;yyyyMMdd&#39;T&#39;HHmmss&#39;Z&#39;\&quot;格式的UTC字符串，包含消息转换到DELIVERED和TIMEOUT两个状态的时间。
+        :type finished_time: str
+        """
         
         
 
@@ -98,7 +119,7 @@ class DeviceMessage:
         设备消息ID，用于唯一标识一条消息，在下发设备消息时由物联网平台分配获得。
 
         :param message_id: The message_id of this DeviceMessage.
-        :type: str
+        :type message_id: str
         """
         self._message_id = message_id
 
@@ -120,7 +141,7 @@ class DeviceMessage:
         消息名称,在下发消息时由用户指定。
 
         :param name: The name of this DeviceMessage.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -142,7 +163,7 @@ class DeviceMessage:
         消息内容。 
 
         :param message: The message of this DeviceMessage.
-        :type: object
+        :type message: object
         """
         self._message = message
 
@@ -164,7 +185,7 @@ class DeviceMessage:
         消息内容编码格式，取值范围none|base64,默认值none, base64格式仅支持透传。 
 
         :param encoding: The encoding of this DeviceMessage.
-        :type: str
+        :type encoding: str
         """
         self._encoding = encoding
 
@@ -186,7 +207,7 @@ class DeviceMessage:
         有效负载格式，在消息内容编码格式为none时有效，取值范围standard|raw，默认值standard（平台封装的标准格式），取值为raw时直接将消息内容作为有效负载下发。 
 
         :param payload_format: The payload_format of this DeviceMessage.
-        :type: str
+        :type payload_format: str
         """
         self._payload_format = payload_format
 
@@ -208,7 +229,7 @@ class DeviceMessage:
         消息topic
 
         :param topic: The topic of this DeviceMessage.
-        :type: str
+        :type topic: str
         """
         self._topic = topic
 
@@ -230,7 +251,7 @@ class DeviceMessage:
         消息状态，包含PENDING，DELIVERED，FAILED和TIMEOUT，PENDING指设备不在线，消息被缓存起来，等设备上线之后下发； DELIVERED指消息发送成功；FAILED消息发送失败；TIMEOUT指消息在平台默认时间内（1天）还没有下发送给设备，则平台会将消息设置为超时，状态为TIMEOUT。
 
         :param status: The status of this DeviceMessage.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -252,7 +273,7 @@ class DeviceMessage:
         消息的创建时间，\"yyyyMMdd'T'HHmmss'Z'\"格式的UTC字符串。
 
         :param created_time: The created_time of this DeviceMessage.
-        :type: str
+        :type created_time: str
         """
         self._created_time = created_time
 
@@ -274,7 +295,7 @@ class DeviceMessage:
         消息结束时间, \"yyyyMMdd'T'HHmmss'Z'\"格式的UTC字符串，包含消息转换到DELIVERED和TIMEOUT两个状态的时间。
 
         :param finished_time: The finished_time of this DeviceMessage.
-        :type: str
+        :type finished_time: str
         """
         self._finished_time = finished_time
 

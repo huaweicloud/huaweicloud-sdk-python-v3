@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Storage:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Storage:
     }
 
     def __init__(self, name=None, az_status=None):
-        """Storage - a model defined in huaweicloud sdk"""
+        """Storage
+
+        The model defined in huaweicloud sdk
+
+        :param name: 磁盘类型名称，可能取值如下： - ULTRAHIGH，表示SSD。
+        :type name: str
+        :param az_status: 其中key是可用区编号，value是规格所在az的状态，包含以下状态： - normal，在售。 - unsupported，暂不支持该规格。 - sellout，售罄。
+        :type az_status: dict(str, str)
+        """
         
         
 
@@ -61,7 +68,7 @@ class Storage:
         磁盘类型名称，可能取值如下： - ULTRAHIGH，表示SSD。
 
         :param name: The name of this Storage.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -83,7 +90,7 @@ class Storage:
         其中key是可用区编号，value是规格所在az的状态，包含以下状态： - normal，在售。 - unsupported，暂不支持该规格。 - sellout，售罄。
 
         :param az_status: The az_status of this Storage.
-        :type: dict(str, str)
+        :type az_status: dict(str, str)
         """
         self._az_status = az_status
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PostMigProjectBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class PostMigProjectBody:
     }
 
     def __init__(self, name=None, description=None, isdefault=None, region=None, start_target_server=None, speed_limit=None, use_public_ip=None, exist_server=None, type=None, enterprise_project=None, syncing=None):
-        """PostMigProjectBody - a model defined in huaweicloud sdk"""
+        """PostMigProjectBody
+
+        The model defined in huaweicloud sdk
+
+        :param name: 迁移项目名称
+        :type name: str
+        :param description: 迁移项目描述
+        :type description: str
+        :param isdefault: 是否为默认模板
+        :type isdefault: bool
+        :param region: 区域名称
+        :type region: str
+        :param start_target_server: 迁移后是否启动目的端虚拟机
+        :type start_target_server: bool
+        :param speed_limit: 限制迁移速率，单位：Mbps
+        :type speed_limit: int
+        :param use_public_ip: 是否使用公网IP迁移
+        :type use_public_ip: bool
+        :param exist_server: 是否是已经存在的服务器
+        :type exist_server: bool
+        :param type: 迁移项目类型
+        :type type: str
+        :param enterprise_project: 企业项目名称
+        :type enterprise_project: str
+        :param syncing: 首次复制或者同步后 是否继续持续同步
+        :type syncing: bool
+        """
         
         
 
@@ -102,7 +127,7 @@ class PostMigProjectBody:
         迁移项目名称
 
         :param name: The name of this PostMigProjectBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -124,7 +149,7 @@ class PostMigProjectBody:
         迁移项目描述
 
         :param description: The description of this PostMigProjectBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -146,7 +171,7 @@ class PostMigProjectBody:
         是否为默认模板
 
         :param isdefault: The isdefault of this PostMigProjectBody.
-        :type: bool
+        :type isdefault: bool
         """
         self._isdefault = isdefault
 
@@ -168,7 +193,7 @@ class PostMigProjectBody:
         区域名称
 
         :param region: The region of this PostMigProjectBody.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -190,7 +215,7 @@ class PostMigProjectBody:
         迁移后是否启动目的端虚拟机
 
         :param start_target_server: The start_target_server of this PostMigProjectBody.
-        :type: bool
+        :type start_target_server: bool
         """
         self._start_target_server = start_target_server
 
@@ -212,7 +237,7 @@ class PostMigProjectBody:
         限制迁移速率，单位：Mbps
 
         :param speed_limit: The speed_limit of this PostMigProjectBody.
-        :type: int
+        :type speed_limit: int
         """
         self._speed_limit = speed_limit
 
@@ -234,7 +259,7 @@ class PostMigProjectBody:
         是否使用公网IP迁移
 
         :param use_public_ip: The use_public_ip of this PostMigProjectBody.
-        :type: bool
+        :type use_public_ip: bool
         """
         self._use_public_ip = use_public_ip
 
@@ -256,7 +281,7 @@ class PostMigProjectBody:
         是否是已经存在的服务器
 
         :param exist_server: The exist_server of this PostMigProjectBody.
-        :type: bool
+        :type exist_server: bool
         """
         self._exist_server = exist_server
 
@@ -278,7 +303,7 @@ class PostMigProjectBody:
         迁移项目类型
 
         :param type: The type of this PostMigProjectBody.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -300,7 +325,7 @@ class PostMigProjectBody:
         企业项目名称
 
         :param enterprise_project: The enterprise_project of this PostMigProjectBody.
-        :type: str
+        :type enterprise_project: str
         """
         self._enterprise_project = enterprise_project
 
@@ -322,7 +347,7 @@ class PostMigProjectBody:
         首次复制或者同步后 是否继续持续同步
 
         :param syncing: The syncing of this PostMigProjectBody.
-        :type: bool
+        :type syncing: bool
         """
         self._syncing = syncing
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ProPricePlanVo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -60,7 +59,43 @@ class ProPricePlanVo:
     }
 
     def __init__(self, price_plan_id=None, price_plan_name=None, description=None, flow_total=None, package_type=None, period=None, period_type=None, effect_type=None, silent_period_day=None, silent_period_unit=None, auto_renew=None, location_desc=None, location_type=None, sim_type=None, carrier_type=None, price=None):
-        """ProPricePlanVo - a model defined in huaweicloud sdk"""
+        """ProPricePlanVo
+
+        The model defined in huaweicloud sdk
+
+        :param price_plan_id: 套餐ID
+        :type price_plan_id: str
+        :param price_plan_name: 套餐名称
+        :type price_plan_name: str
+        :param description: 描述
+        :type description: str
+        :param flow_total: 流量总量(MB)
+        :type flow_total: int
+        :param package_type: 套餐类型 1基础套餐;2叠加包套餐;如果是国际漫游不区分基础套餐包和叠加包
+        :type package_type: int
+        :param period: 套餐周期
+        :type period: int
+        :param period_type: 套餐周期类型 10:日;20:月;30:季;40:半年;50:年
+        :type period_type: int
+        :param effect_type: 套餐生效类型 1.订购后激活使用时生效 2.订购即时生效 3.订购下个月开始生效
+        :type effect_type: int
+        :param silent_period_day: 沉默期
+        :type silent_period_day: int
+        :param silent_period_unit: 沉默期单位 1.年 2.月 3.日
+        :type silent_period_unit: int
+        :param auto_renew: 是否自动续订
+        :type auto_renew: bool
+        :param location_desc: 套餐适用区域
+        :type location_desc: str
+        :param location_type: 区域 1.中国 2.欧洲 3.大洋洲 4.非洲 5.亚太
+        :type location_type: int
+        :param sim_type: SIM卡类型 1.vSIM 2.eSIM 3.实体卡
+        :type sim_type: int
+        :param carrier_type: 运营商 101/1 中国移动/中国移动（实体卡） 102/2中国电信/中国电信（实体卡） 3中国联通（实体卡） 201.欧洲 501.中国香港 502.中国澳门 503.泰国 504.日本 505.柬埔寨 506.印度尼西亚 507.马来西亚 508.新加坡 509.斯里兰卡 510.中国台湾 511.孟加拉 
+        :type carrier_type: int
+        :param price: 价格(分)
+        :type price: int
+        """
         
         
 
@@ -133,7 +168,7 @@ class ProPricePlanVo:
         套餐ID
 
         :param price_plan_id: The price_plan_id of this ProPricePlanVo.
-        :type: str
+        :type price_plan_id: str
         """
         self._price_plan_id = price_plan_id
 
@@ -155,7 +190,7 @@ class ProPricePlanVo:
         套餐名称
 
         :param price_plan_name: The price_plan_name of this ProPricePlanVo.
-        :type: str
+        :type price_plan_name: str
         """
         self._price_plan_name = price_plan_name
 
@@ -177,7 +212,7 @@ class ProPricePlanVo:
         描述
 
         :param description: The description of this ProPricePlanVo.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -199,7 +234,7 @@ class ProPricePlanVo:
         流量总量(MB)
 
         :param flow_total: The flow_total of this ProPricePlanVo.
-        :type: int
+        :type flow_total: int
         """
         self._flow_total = flow_total
 
@@ -221,7 +256,7 @@ class ProPricePlanVo:
         套餐类型 1基础套餐;2叠加包套餐;如果是国际漫游不区分基础套餐包和叠加包
 
         :param package_type: The package_type of this ProPricePlanVo.
-        :type: int
+        :type package_type: int
         """
         self._package_type = package_type
 
@@ -243,7 +278,7 @@ class ProPricePlanVo:
         套餐周期
 
         :param period: The period of this ProPricePlanVo.
-        :type: int
+        :type period: int
         """
         self._period = period
 
@@ -265,7 +300,7 @@ class ProPricePlanVo:
         套餐周期类型 10:日;20:月;30:季;40:半年;50:年
 
         :param period_type: The period_type of this ProPricePlanVo.
-        :type: int
+        :type period_type: int
         """
         self._period_type = period_type
 
@@ -287,7 +322,7 @@ class ProPricePlanVo:
         套餐生效类型 1.订购后激活使用时生效 2.订购即时生效 3.订购下个月开始生效
 
         :param effect_type: The effect_type of this ProPricePlanVo.
-        :type: int
+        :type effect_type: int
         """
         self._effect_type = effect_type
 
@@ -309,7 +344,7 @@ class ProPricePlanVo:
         沉默期
 
         :param silent_period_day: The silent_period_day of this ProPricePlanVo.
-        :type: int
+        :type silent_period_day: int
         """
         self._silent_period_day = silent_period_day
 
@@ -331,7 +366,7 @@ class ProPricePlanVo:
         沉默期单位 1.年 2.月 3.日
 
         :param silent_period_unit: The silent_period_unit of this ProPricePlanVo.
-        :type: int
+        :type silent_period_unit: int
         """
         self._silent_period_unit = silent_period_unit
 
@@ -353,7 +388,7 @@ class ProPricePlanVo:
         是否自动续订
 
         :param auto_renew: The auto_renew of this ProPricePlanVo.
-        :type: bool
+        :type auto_renew: bool
         """
         self._auto_renew = auto_renew
 
@@ -375,7 +410,7 @@ class ProPricePlanVo:
         套餐适用区域
 
         :param location_desc: The location_desc of this ProPricePlanVo.
-        :type: str
+        :type location_desc: str
         """
         self._location_desc = location_desc
 
@@ -397,7 +432,7 @@ class ProPricePlanVo:
         区域 1.中国 2.欧洲 3.大洋洲 4.非洲 5.亚太
 
         :param location_type: The location_type of this ProPricePlanVo.
-        :type: int
+        :type location_type: int
         """
         self._location_type = location_type
 
@@ -419,7 +454,7 @@ class ProPricePlanVo:
         SIM卡类型 1.vSIM 2.eSIM 3.实体卡
 
         :param sim_type: The sim_type of this ProPricePlanVo.
-        :type: int
+        :type sim_type: int
         """
         self._sim_type = sim_type
 
@@ -441,7 +476,7 @@ class ProPricePlanVo:
         运营商 101/1 中国移动/中国移动（实体卡） 102/2中国电信/中国电信（实体卡） 3中国联通（实体卡） 201.欧洲 501.中国香港 502.中国澳门 503.泰国 504.日本 505.柬埔寨 506.印度尼西亚 507.马来西亚 508.新加坡 509.斯里兰卡 510.中国台湾 511.孟加拉 
 
         :param carrier_type: The carrier_type of this ProPricePlanVo.
-        :type: int
+        :type carrier_type: int
         """
         self._carrier_type = carrier_type
 
@@ -463,7 +498,7 @@ class ProPricePlanVo:
         价格(分)
 
         :param price: The price of this ProPricePlanVo.
-        :type: int
+        :type price: int
         """
         self._price = price
 

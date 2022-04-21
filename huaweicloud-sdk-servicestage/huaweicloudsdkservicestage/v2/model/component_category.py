@@ -12,11 +12,9 @@ class ComponentCategory:
     """
     allowed enum values
     """
-
     WEBAPP = "Webapp"
     MICROSERVICE = "MicroService"
     COMMON = "Common"
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +32,11 @@ class ComponentCategory:
     }
 
     def __init__(self):
-        """ComponentCategory - a model defined in huaweicloud sdk"""
+        """ComponentCategory
+
+        The model defined in huaweicloud sdk
+
+        """
         
         
         self.discriminator = None

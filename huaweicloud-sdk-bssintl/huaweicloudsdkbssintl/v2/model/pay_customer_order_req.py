@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PayCustomerOrderReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class PayCustomerOrderReq:
     }
 
     def __init__(self, order_id=None, coupon_infos=None, discount_infos=None):
-        """PayCustomerOrderReq - a model defined in huaweicloud sdk"""
+        """PayCustomerOrderReq
+
+        The model defined in huaweicloud sdk
+
+        :param order_id: 订单编号。 取值为调用“查询订单列表”接口时响应消息中的“order_id”字段的值或调用“续订包年/包月资源”接口时响应消息“order_ids”中的订单ID。
+        :type order_id: str
+        :param coupon_infos: 字段预留。 具体参见表1。
+        :type coupon_infos: list[:class:`huaweicloudsdkbssintl.v2.CouponSimpleInfoOrderPay`]
+        :param discount_infos: 折扣ID列表，目前仅支持传递一个折扣ID。 请从“查询订单可用折扣”接口的响应参数中获取。 具体参见表2。
+        :type discount_infos: list[:class:`huaweicloudsdkbssintl.v2.DiscountSimpleInfo`]
+        """
         
         
 
@@ -67,7 +76,7 @@ class PayCustomerOrderReq:
         订单编号。 取值为调用“查询订单列表”接口时响应消息中的“order_id”字段的值或调用“续订包年/包月资源”接口时响应消息“order_ids”中的订单ID。
 
         :param order_id: The order_id of this PayCustomerOrderReq.
-        :type: str
+        :type order_id: str
         """
         self._order_id = order_id
 
@@ -78,7 +87,7 @@ class PayCustomerOrderReq:
         字段预留。 具体参见表1。
 
         :return: The coupon_infos of this PayCustomerOrderReq.
-        :rtype: list[CouponSimpleInfoOrderPay]
+        :rtype: list[:class:`huaweicloudsdkbssintl.v2.CouponSimpleInfoOrderPay`]
         """
         return self._coupon_infos
 
@@ -89,7 +98,7 @@ class PayCustomerOrderReq:
         字段预留。 具体参见表1。
 
         :param coupon_infos: The coupon_infos of this PayCustomerOrderReq.
-        :type: list[CouponSimpleInfoOrderPay]
+        :type coupon_infos: list[:class:`huaweicloudsdkbssintl.v2.CouponSimpleInfoOrderPay`]
         """
         self._coupon_infos = coupon_infos
 
@@ -100,7 +109,7 @@ class PayCustomerOrderReq:
         折扣ID列表，目前仅支持传递一个折扣ID。 请从“查询订单可用折扣”接口的响应参数中获取。 具体参见表2。
 
         :return: The discount_infos of this PayCustomerOrderReq.
-        :rtype: list[DiscountSimpleInfo]
+        :rtype: list[:class:`huaweicloudsdkbssintl.v2.DiscountSimpleInfo`]
         """
         return self._discount_infos
 
@@ -111,7 +120,7 @@ class PayCustomerOrderReq:
         折扣ID列表，目前仅支持传递一个折扣ID。 请从“查询订单可用折扣”接口的响应参数中获取。 具体参见表2。
 
         :param discount_infos: The discount_infos of this PayCustomerOrderReq.
-        :type: list[DiscountSimpleInfo]
+        :type discount_infos: list[:class:`huaweicloudsdkbssintl.v2.DiscountSimpleInfo`]
         """
         self._discount_infos = discount_infos
 

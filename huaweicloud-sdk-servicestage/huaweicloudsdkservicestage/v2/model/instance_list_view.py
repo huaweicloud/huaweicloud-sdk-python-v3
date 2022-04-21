@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InstanceListView:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -60,7 +59,43 @@ class InstanceListView:
     }
 
     def __init__(self, id=None, application_id=None, application_name=None, component_id=None, component_name=None, name=None, environment_id=None, environment_name=None, platform_type=None, version=None, external_accesses=None, artifacts=None, creator=None, create_time=None, update_time=None, status_detail=None):
-        """InstanceListView - a model defined in huaweicloud sdk"""
+        """InstanceListView
+
+        The model defined in huaweicloud sdk
+
+        :param id: 应用组件实例ID。
+        :type id: str
+        :param application_id: 应用ID。
+        :type application_id: str
+        :param application_name: 应用名称。
+        :type application_name: str
+        :param component_id: 组件ID。
+        :type component_id: str
+        :param component_name: 组件名称。
+        :type component_name: str
+        :param name: 应用组件实例名称。
+        :type name: str
+        :param environment_id: 应用组件环境ID。
+        :type environment_id: str
+        :param environment_name: 环境名称。
+        :type environment_name: str
+        :param platform_type: 运行平台类型。 应用可以在不同的平台上运行，可选用的平台的类型有以下几种：cce、vmapp。 
+        :type platform_type: str
+        :param version: 应用组件版本号。
+        :type version: str
+        :param external_accesses: 访问方式。
+        :type external_accesses: list[:class:`huaweicloudsdkservicestage.v2.ExternalAccesses`]
+        :param artifacts: 组件部署件。key为组件component_name，对于Docker多容器场景，key为容器名称。
+        :type artifacts: dict(str, object)
+        :param creator: 创建人。
+        :type creator: str
+        :param create_time: 创建时间。
+        :type create_time: int
+        :param update_time: 修改时间。
+        :type update_time: int
+        :param status_detail: 
+        :type status_detail: :class:`huaweicloudsdkservicestage.v2.InstanceStatusView`
+        """
         
         
 
@@ -133,7 +168,7 @@ class InstanceListView:
         应用组件实例ID。
 
         :param id: The id of this InstanceListView.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -155,7 +190,7 @@ class InstanceListView:
         应用ID。
 
         :param application_id: The application_id of this InstanceListView.
-        :type: str
+        :type application_id: str
         """
         self._application_id = application_id
 
@@ -177,7 +212,7 @@ class InstanceListView:
         应用名称。
 
         :param application_name: The application_name of this InstanceListView.
-        :type: str
+        :type application_name: str
         """
         self._application_name = application_name
 
@@ -199,7 +234,7 @@ class InstanceListView:
         组件ID。
 
         :param component_id: The component_id of this InstanceListView.
-        :type: str
+        :type component_id: str
         """
         self._component_id = component_id
 
@@ -221,7 +256,7 @@ class InstanceListView:
         组件名称。
 
         :param component_name: The component_name of this InstanceListView.
-        :type: str
+        :type component_name: str
         """
         self._component_name = component_name
 
@@ -243,7 +278,7 @@ class InstanceListView:
         应用组件实例名称。
 
         :param name: The name of this InstanceListView.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -265,7 +300,7 @@ class InstanceListView:
         应用组件环境ID。
 
         :param environment_id: The environment_id of this InstanceListView.
-        :type: str
+        :type environment_id: str
         """
         self._environment_id = environment_id
 
@@ -287,7 +322,7 @@ class InstanceListView:
         环境名称。
 
         :param environment_name: The environment_name of this InstanceListView.
-        :type: str
+        :type environment_name: str
         """
         self._environment_name = environment_name
 
@@ -309,7 +344,7 @@ class InstanceListView:
         运行平台类型。 应用可以在不同的平台上运行，可选用的平台的类型有以下几种：cce、vmapp。 
 
         :param platform_type: The platform_type of this InstanceListView.
-        :type: str
+        :type platform_type: str
         """
         self._platform_type = platform_type
 
@@ -331,7 +366,7 @@ class InstanceListView:
         应用组件版本号。
 
         :param version: The version of this InstanceListView.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -342,7 +377,7 @@ class InstanceListView:
         访问方式。
 
         :return: The external_accesses of this InstanceListView.
-        :rtype: list[ExternalAccesses]
+        :rtype: list[:class:`huaweicloudsdkservicestage.v2.ExternalAccesses`]
         """
         return self._external_accesses
 
@@ -353,7 +388,7 @@ class InstanceListView:
         访问方式。
 
         :param external_accesses: The external_accesses of this InstanceListView.
-        :type: list[ExternalAccesses]
+        :type external_accesses: list[:class:`huaweicloudsdkservicestage.v2.ExternalAccesses`]
         """
         self._external_accesses = external_accesses
 
@@ -375,7 +410,7 @@ class InstanceListView:
         组件部署件。key为组件component_name，对于Docker多容器场景，key为容器名称。
 
         :param artifacts: The artifacts of this InstanceListView.
-        :type: dict(str, object)
+        :type artifacts: dict(str, object)
         """
         self._artifacts = artifacts
 
@@ -397,7 +432,7 @@ class InstanceListView:
         创建人。
 
         :param creator: The creator of this InstanceListView.
-        :type: str
+        :type creator: str
         """
         self._creator = creator
 
@@ -419,7 +454,7 @@ class InstanceListView:
         创建时间。
 
         :param create_time: The create_time of this InstanceListView.
-        :type: int
+        :type create_time: int
         """
         self._create_time = create_time
 
@@ -441,7 +476,7 @@ class InstanceListView:
         修改时间。
 
         :param update_time: The update_time of this InstanceListView.
-        :type: int
+        :type update_time: int
         """
         self._update_time = update_time
 
@@ -451,7 +486,7 @@ class InstanceListView:
 
 
         :return: The status_detail of this InstanceListView.
-        :rtype: InstanceStatusView
+        :rtype: :class:`huaweicloudsdkservicestage.v2.InstanceStatusView`
         """
         return self._status_detail
 
@@ -461,7 +496,7 @@ class InstanceListView:
 
 
         :param status_detail: The status_detail of this InstanceListView.
-        :type: InstanceStatusView
+        :type status_detail: :class:`huaweicloudsdkservicestage.v2.InstanceStatusView`
         """
         self._status_detail = status_detail
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VpcInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class VpcInfo:
     }
 
     def __init__(self, vpc_id=None, tenant_id=None):
-        """VpcInfo - a model defined in huaweicloud sdk"""
+        """VpcInfo
+
+        The model defined in huaweicloud sdk
+
+        :param vpc_id: 对等连接其中一端vpc ID
+        :type vpc_id: str
+        :param tenant_id: 对等连接其中一端vpc所属的租户ID 约束：跨租户VPC创建对等连接时必选
+        :type tenant_id: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class VpcInfo:
         对等连接其中一端vpc ID
 
         :param vpc_id: The vpc_id of this VpcInfo.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -84,7 +91,7 @@ class VpcInfo:
         对等连接其中一端vpc所属的租户ID 约束：跨租户VPC创建对等连接时必选
 
         :param tenant_id: The tenant_id of this VpcInfo.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 

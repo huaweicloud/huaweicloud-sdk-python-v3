@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NodePoolSpecUpdate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class NodePoolSpecUpdate:
     }
 
     def __init__(self, node_template=None, initial_node_count=None, autoscaling=None):
-        """NodePoolSpecUpdate - a model defined in huaweicloud sdk"""
+        """NodePoolSpecUpdate
+
+        The model defined in huaweicloud sdk
+
+        :param node_template: 
+        :type node_template: :class:`huaweicloudsdkcce.v3.NodeSpecUpdate`
+        :param initial_node_count: 节点池初始化节点个数。查询时为节点池目标节点数量。
+        :type initial_node_count: int
+        :param autoscaling: 
+        :type autoscaling: :class:`huaweicloudsdkcce.v3.NodePoolNodeAutoscaling`
+        """
         
         
 
@@ -53,7 +62,7 @@ class NodePoolSpecUpdate:
 
 
         :return: The node_template of this NodePoolSpecUpdate.
-        :rtype: NodeSpecUpdate
+        :rtype: :class:`huaweicloudsdkcce.v3.NodeSpecUpdate`
         """
         return self._node_template
 
@@ -63,7 +72,7 @@ class NodePoolSpecUpdate:
 
 
         :param node_template: The node_template of this NodePoolSpecUpdate.
-        :type: NodeSpecUpdate
+        :type node_template: :class:`huaweicloudsdkcce.v3.NodeSpecUpdate`
         """
         self._node_template = node_template
 
@@ -85,7 +94,7 @@ class NodePoolSpecUpdate:
         节点池初始化节点个数。查询时为节点池目标节点数量。
 
         :param initial_node_count: The initial_node_count of this NodePoolSpecUpdate.
-        :type: int
+        :type initial_node_count: int
         """
         self._initial_node_count = initial_node_count
 
@@ -95,7 +104,7 @@ class NodePoolSpecUpdate:
 
 
         :return: The autoscaling of this NodePoolSpecUpdate.
-        :rtype: NodePoolNodeAutoscaling
+        :rtype: :class:`huaweicloudsdkcce.v3.NodePoolNodeAutoscaling`
         """
         return self._autoscaling
 
@@ -105,7 +114,7 @@ class NodePoolSpecUpdate:
 
 
         :param autoscaling: The autoscaling of this NodePoolSpecUpdate.
-        :type: NodePoolNodeAutoscaling
+        :type autoscaling: :class:`huaweicloudsdkcce.v3.NodePoolNodeAutoscaling`
         """
         self._autoscaling = autoscaling
 

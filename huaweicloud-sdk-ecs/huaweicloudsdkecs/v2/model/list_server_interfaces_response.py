@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListServerInterfacesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListServerInterfacesResponse(SdkResponse):
     }
 
     def __init__(self, attachable_quantity=None, interface_attachments=None):
-        """ListServerInterfacesResponse - a model defined in huaweicloud sdk"""
+        """ListServerInterfacesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param attachable_quantity: 
+        :type attachable_quantity: :class:`huaweicloudsdkecs.v2.InterfaceAttachableQuantity`
+        :param interface_attachments: 云服务器网卡信息列表
+        :type interface_attachments: list[:class:`huaweicloudsdkecs.v2.InterfaceAttachment`]
+        """
         
         super(ListServerInterfacesResponse, self).__init__()
 
@@ -51,7 +58,7 @@ class ListServerInterfacesResponse(SdkResponse):
 
 
         :return: The attachable_quantity of this ListServerInterfacesResponse.
-        :rtype: InterfaceAttachableQuantity
+        :rtype: :class:`huaweicloudsdkecs.v2.InterfaceAttachableQuantity`
         """
         return self._attachable_quantity
 
@@ -61,7 +68,7 @@ class ListServerInterfacesResponse(SdkResponse):
 
 
         :param attachable_quantity: The attachable_quantity of this ListServerInterfacesResponse.
-        :type: InterfaceAttachableQuantity
+        :type attachable_quantity: :class:`huaweicloudsdkecs.v2.InterfaceAttachableQuantity`
         """
         self._attachable_quantity = attachable_quantity
 
@@ -72,7 +79,7 @@ class ListServerInterfacesResponse(SdkResponse):
         云服务器网卡信息列表
 
         :return: The interface_attachments of this ListServerInterfacesResponse.
-        :rtype: list[InterfaceAttachment]
+        :rtype: list[:class:`huaweicloudsdkecs.v2.InterfaceAttachment`]
         """
         return self._interface_attachments
 
@@ -83,7 +90,7 @@ class ListServerInterfacesResponse(SdkResponse):
         云服务器网卡信息列表
 
         :param interface_attachments: The interface_attachments of this ListServerInterfacesResponse.
-        :type: list[InterfaceAttachment]
+        :type interface_attachments: list[:class:`huaweicloudsdkecs.v2.InterfaceAttachment`]
         """
         self._interface_attachments = interface_attachments
 

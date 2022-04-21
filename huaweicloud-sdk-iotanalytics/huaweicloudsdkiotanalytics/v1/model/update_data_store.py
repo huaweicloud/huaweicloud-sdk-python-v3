@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDataStore:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UpdateDataStore:
     }
 
     def __init__(self, name=None, tags=None, metrics=None, properties=None):
-        """UpdateDataStore - a model defined in huaweicloud sdk"""
+        """UpdateDataStore
+
+        The model defined in huaweicloud sdk
+
+        :param name: 存储名称
+        :type name: str
+        :param tags: 标签，更新存储时标签只可新增，不可修改或删除原有标签
+        :type tags: list[:class:`huaweicloudsdkiotanalytics.v1.Tag`]
+        :param metrics: 指标
+        :type metrics: list[:class:`huaweicloudsdkiotanalytics.v1.Metric`]
+        :param properties: 属性，更新存储时属性只可新增，不可修改或删除原有属性
+        :type properties: list[:class:`huaweicloudsdkiotanalytics.v1.ModelProperty`]
+        """
         
         
 
@@ -73,7 +84,7 @@ class UpdateDataStore:
         存储名称
 
         :param name: The name of this UpdateDataStore.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -84,7 +95,7 @@ class UpdateDataStore:
         标签，更新存储时标签只可新增，不可修改或删除原有标签
 
         :return: The tags of this UpdateDataStore.
-        :rtype: list[Tag]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.Tag`]
         """
         return self._tags
 
@@ -95,7 +106,7 @@ class UpdateDataStore:
         标签，更新存储时标签只可新增，不可修改或删除原有标签
 
         :param tags: The tags of this UpdateDataStore.
-        :type: list[Tag]
+        :type tags: list[:class:`huaweicloudsdkiotanalytics.v1.Tag`]
         """
         self._tags = tags
 
@@ -106,7 +117,7 @@ class UpdateDataStore:
         指标
 
         :return: The metrics of this UpdateDataStore.
-        :rtype: list[Metric]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.Metric`]
         """
         return self._metrics
 
@@ -117,7 +128,7 @@ class UpdateDataStore:
         指标
 
         :param metrics: The metrics of this UpdateDataStore.
-        :type: list[Metric]
+        :type metrics: list[:class:`huaweicloudsdkiotanalytics.v1.Metric`]
         """
         self._metrics = metrics
 
@@ -128,7 +139,7 @@ class UpdateDataStore:
         属性，更新存储时属性只可新增，不可修改或删除原有属性
 
         :return: The properties of this UpdateDataStore.
-        :rtype: list[ModelProperty]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.ModelProperty`]
         """
         return self._properties
 
@@ -139,7 +150,7 @@ class UpdateDataStore:
         属性，更新存储时属性只可新增，不可修改或删除原有属性
 
         :param properties: The properties of this UpdateDataStore.
-        :type: list[ModelProperty]
+        :type properties: list[:class:`huaweicloudsdkiotanalytics.v1.ModelProperty`]
         """
         self._properties = properties
 

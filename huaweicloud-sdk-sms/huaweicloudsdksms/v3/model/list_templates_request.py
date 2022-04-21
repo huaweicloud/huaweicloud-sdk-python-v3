@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTemplatesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListTemplatesRequest:
     }
 
     def __init__(self, name=None, availability_zone=None, region=None, limit=None, offset=None):
-        """ListTemplatesRequest - a model defined in huaweicloud sdk"""
+        """ListTemplatesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param name: 模板名称
+        :type name: str
+        :param availability_zone: 可用区
+        :type availability_zone: str
+        :param region: Region ID
+        :type region: str
+        :param limit: 分页大小，不传值默认为50
+        :type limit: int
+        :param offset: 偏移量，不传值默认为0
+        :type offset: int
+        """
         
         
 
@@ -78,7 +91,7 @@ class ListTemplatesRequest:
         模板名称
 
         :param name: The name of this ListTemplatesRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -100,7 +113,7 @@ class ListTemplatesRequest:
         可用区
 
         :param availability_zone: The availability_zone of this ListTemplatesRequest.
-        :type: str
+        :type availability_zone: str
         """
         self._availability_zone = availability_zone
 
@@ -122,7 +135,7 @@ class ListTemplatesRequest:
         Region ID
 
         :param region: The region of this ListTemplatesRequest.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -144,7 +157,7 @@ class ListTemplatesRequest:
         分页大小，不传值默认为50
 
         :param limit: The limit of this ListTemplatesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -166,7 +179,7 @@ class ListTemplatesRequest:
         偏移量，不传值默认为0
 
         :param offset: The offset of this ListTemplatesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 

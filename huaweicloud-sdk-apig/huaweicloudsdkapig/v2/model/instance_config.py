@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InstanceConfig:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class InstanceConfig:
     }
 
     def __init__(self, config_id=None, config_name=None, config_value=None, config_time=None, remark=None):
-        """InstanceConfig - a model defined in huaweicloud sdk"""
+        """InstanceConfig
+
+        The model defined in huaweicloud sdk
+
+        :param config_id: 配额编号
+        :type config_id: str
+        :param config_name: 配额名称
+        :type config_name: str
+        :param config_value: 配额值  当前实例所在租户该配额对应的数量
+        :type config_value: str
+        :param config_time: 配额创建时间
+        :type config_time: datetime
+        :param remark: 配额描述 - INSTANCE_NUM_LIMIT：租户可以创建的实例个数限制
+        :type remark: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class InstanceConfig:
         配额编号
 
         :param config_id: The config_id of this InstanceConfig.
-        :type: str
+        :type config_id: str
         """
         self._config_id = config_id
 
@@ -100,7 +113,7 @@ class InstanceConfig:
         配额名称
 
         :param config_name: The config_name of this InstanceConfig.
-        :type: str
+        :type config_name: str
         """
         self._config_name = config_name
 
@@ -122,7 +135,7 @@ class InstanceConfig:
         配额值  当前实例所在租户该配额对应的数量
 
         :param config_value: The config_value of this InstanceConfig.
-        :type: str
+        :type config_value: str
         """
         self._config_value = config_value
 
@@ -144,7 +157,7 @@ class InstanceConfig:
         配额创建时间
 
         :param config_time: The config_time of this InstanceConfig.
-        :type: datetime
+        :type config_time: datetime
         """
         self._config_time = config_time
 
@@ -166,7 +179,7 @@ class InstanceConfig:
         配额描述 - INSTANCE_NUM_LIMIT：租户可以创建的实例个数限制
 
         :param remark: The remark of this InstanceConfig.
-        :type: str
+        :type remark: str
         """
         self._remark = remark
 

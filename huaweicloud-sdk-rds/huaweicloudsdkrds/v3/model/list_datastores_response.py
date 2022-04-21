@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDatastoresResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListDatastoresResponse(SdkResponse):
     }
 
     def __init__(self, data_stores=None):
-        """ListDatastoresResponse - a model defined in huaweicloud sdk"""
+        """ListDatastoresResponse
+
+        The model defined in huaweicloud sdk
+
+        :param data_stores: 数据库引擎信息。
+        :type data_stores: list[:class:`huaweicloudsdkrds.v3.LDatastore`]
+        """
         
         super(ListDatastoresResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListDatastoresResponse(SdkResponse):
         数据库引擎信息。
 
         :return: The data_stores of this ListDatastoresResponse.
-        :rtype: list[LDatastore]
+        :rtype: list[:class:`huaweicloudsdkrds.v3.LDatastore`]
         """
         return self._data_stores
 
@@ -58,7 +63,7 @@ class ListDatastoresResponse(SdkResponse):
         数据库引擎信息。
 
         :param data_stores: The data_stores of this ListDatastoresResponse.
-        :type: list[LDatastore]
+        :type data_stores: list[:class:`huaweicloudsdkrds.v3.LDatastore`]
         """
         self._data_stores = data_stores
 

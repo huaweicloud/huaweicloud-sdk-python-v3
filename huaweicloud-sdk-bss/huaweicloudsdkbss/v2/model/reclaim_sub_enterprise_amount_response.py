@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ReclaimSubEnterpriseAmountResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class ReclaimSubEnterpriseAmountResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ReclaimSubEnterpriseAmountResponse - a model defined in huaweicloud sdk"""
+        """ReclaimSubEnterpriseAmountResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(ReclaimSubEnterpriseAmountResponse, self).__init__()
         self.discriminator = None

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DownloadBackupFilesReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DownloadBackupFilesReq:
     }
 
     def __init__(self, expiration=None):
-        """DownloadBackupFilesReq - a model defined in huaweicloud sdk"""
+        """DownloadBackupFilesReq
+
+        The model defined in huaweicloud sdk
+
+        :param expiration: 设置URL的有效期，必须在5分钟和24小时之内，单位为秒。
+        :type expiration: int
+        """
         
         
 
@@ -57,7 +62,7 @@ class DownloadBackupFilesReq:
         设置URL的有效期，必须在5分钟和24小时之内，单位为秒。
 
         :param expiration: The expiration of this DownloadBackupFilesReq.
-        :type: int
+        :type expiration: int
         """
         self._expiration = expiration
 

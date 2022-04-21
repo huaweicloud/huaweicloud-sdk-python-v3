@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListBandwidthTimelineResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListBandwidthTimelineResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListBandwidthTimelineResponse - a model defined in huaweicloud sdk"""
+        """ListBandwidthTimelineResponse
+
+        The model defined in huaweicloud sdk
+
+        :param body: 安全统计的时间线
+        :type body: list[:class:`huaweicloudsdkwaf.v1.StatisticsTimelineItem`]
+        """
         
         super(ListBandwidthTimelineResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListBandwidthTimelineResponse(SdkResponse):
         安全统计的时间线
 
         :return: The body of this ListBandwidthTimelineResponse.
-        :rtype: list[StatisticsTimelineItem]
+        :rtype: list[:class:`huaweicloudsdkwaf.v1.StatisticsTimelineItem`]
         """
         return self._body
 
@@ -58,7 +63,7 @@ class ListBandwidthTimelineResponse(SdkResponse):
         安全统计的时间线
 
         :param body: The body of this ListBandwidthTimelineResponse.
-        :type: list[StatisticsTimelineItem]
+        :type body: list[:class:`huaweicloudsdkwaf.v1.StatisticsTimelineItem`]
         """
         self._body = body
 

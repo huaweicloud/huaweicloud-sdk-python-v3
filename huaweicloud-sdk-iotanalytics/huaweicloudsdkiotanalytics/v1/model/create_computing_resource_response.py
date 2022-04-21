@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateComputingResourceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class CreateComputingResourceResponse(SdkResponse):
     }
 
     def __init__(self, computing_resource_id=None, computing_resource_name=None, computing_resource_type=None, description=None, cu_count=None, charging_mode=None, created_time=None):
-        """CreateComputingResourceResponse - a model defined in huaweicloud sdk"""
+        """CreateComputingResourceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param computing_resource_id: 新增计算资源ID。
+        :type computing_resource_id: str
+        :param computing_resource_name: 新增计算资源名称。
+        :type computing_resource_name: str
+        :param computing_resource_type: 计算资源的类型。目前支持：sql。如果不指定，默认为sql。
+        :type computing_resource_type: str
+        :param description: 计算资源的描述信息。
+        :type description: str
+        :param cu_count: 与计算资源绑定的最小计算单元个数。设置值当前只支持16，64，256。
+        :type cu_count: int
+        :param charging_mode: 计算资源的收费模式。只能设置为“1”，表示按照CU时收费。
+        :type charging_mode: int
+        :param created_time: 创建计算资源时间。时间格式为ISO日期时间格式yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;。
+        :type created_time: str
+        """
         
         super(CreateComputingResourceResponse, self).__init__()
 
@@ -88,7 +105,7 @@ class CreateComputingResourceResponse(SdkResponse):
         新增计算资源ID。
 
         :param computing_resource_id: The computing_resource_id of this CreateComputingResourceResponse.
-        :type: str
+        :type computing_resource_id: str
         """
         self._computing_resource_id = computing_resource_id
 
@@ -110,7 +127,7 @@ class CreateComputingResourceResponse(SdkResponse):
         新增计算资源名称。
 
         :param computing_resource_name: The computing_resource_name of this CreateComputingResourceResponse.
-        :type: str
+        :type computing_resource_name: str
         """
         self._computing_resource_name = computing_resource_name
 
@@ -132,7 +149,7 @@ class CreateComputingResourceResponse(SdkResponse):
         计算资源的类型。目前支持：sql。如果不指定，默认为sql。
 
         :param computing_resource_type: The computing_resource_type of this CreateComputingResourceResponse.
-        :type: str
+        :type computing_resource_type: str
         """
         self._computing_resource_type = computing_resource_type
 
@@ -154,7 +171,7 @@ class CreateComputingResourceResponse(SdkResponse):
         计算资源的描述信息。
 
         :param description: The description of this CreateComputingResourceResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -176,7 +193,7 @@ class CreateComputingResourceResponse(SdkResponse):
         与计算资源绑定的最小计算单元个数。设置值当前只支持16，64，256。
 
         :param cu_count: The cu_count of this CreateComputingResourceResponse.
-        :type: int
+        :type cu_count: int
         """
         self._cu_count = cu_count
 
@@ -198,7 +215,7 @@ class CreateComputingResourceResponse(SdkResponse):
         计算资源的收费模式。只能设置为“1”，表示按照CU时收费。
 
         :param charging_mode: The charging_mode of this CreateComputingResourceResponse.
-        :type: int
+        :type charging_mode: int
         """
         self._charging_mode = charging_mode
 
@@ -220,7 +237,7 @@ class CreateComputingResourceResponse(SdkResponse):
         创建计算资源时间。时间格式为ISO日期时间格式yyyy-MM-dd'T'HH:mm:ss'Z'。
 
         :param created_time: The created_time of this CreateComputingResourceResponse.
-        :type: str
+        :type created_time: str
         """
         self._created_time = created_time
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListActiveOrHistoryAlarmsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListActiveOrHistoryAlarmsRequest:
     }
 
     def __init__(self, domain_id=None, type=None, marker=None, limit=None, body=None):
-        """ListActiveOrHistoryAlarmsRequest - a model defined in huaweicloud sdk"""
+        """ListActiveOrHistoryAlarmsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param domain_id: domainId
+        :type domain_id: str
+        :param type: 是活动告警还是历史告警
+        :type type: str
+        :param marker: 取值为上一页数据的最后一条记录的id(填写上一页数据返回得previous_marker或者next_marker值。)
+        :type marker: str
+        :param limit: 每页数据量
+        :type limit: int
+        :param body: Body of the ListActiveOrHistoryAlarmsRequest
+        :type body: :class:`huaweicloudsdklts.v2.ListActiveOrHistoryAlarmsRequestBody`
+        """
         
         
 
@@ -76,7 +89,7 @@ class ListActiveOrHistoryAlarmsRequest:
         domainId
 
         :param domain_id: The domain_id of this ListActiveOrHistoryAlarmsRequest.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -98,7 +111,7 @@ class ListActiveOrHistoryAlarmsRequest:
         是活动告警还是历史告警
 
         :param type: The type of this ListActiveOrHistoryAlarmsRequest.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -120,7 +133,7 @@ class ListActiveOrHistoryAlarmsRequest:
         取值为上一页数据的最后一条记录的id(填写上一页数据返回得previous_marker或者next_marker值。)
 
         :param marker: The marker of this ListActiveOrHistoryAlarmsRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -142,7 +155,7 @@ class ListActiveOrHistoryAlarmsRequest:
         每页数据量
 
         :param limit: The limit of this ListActiveOrHistoryAlarmsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -152,7 +165,7 @@ class ListActiveOrHistoryAlarmsRequest:
 
 
         :return: The body of this ListActiveOrHistoryAlarmsRequest.
-        :rtype: ListActiveOrHistoryAlarmsRequestBody
+        :rtype: :class:`huaweicloudsdklts.v2.ListActiveOrHistoryAlarmsRequestBody`
         """
         return self._body
 
@@ -162,7 +175,7 @@ class ListActiveOrHistoryAlarmsRequest:
 
 
         :param body: The body of this ListActiveOrHistoryAlarmsRequest.
-        :type: ListActiveOrHistoryAlarmsRequestBody
+        :type body: :class:`huaweicloudsdklts.v2.ListActiveOrHistoryAlarmsRequestBody`
         """
         self._body = body
 

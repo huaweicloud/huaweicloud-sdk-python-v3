@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ClusterInformation:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ClusterInformation:
     }
 
     def __init__(self, spec=None):
-        """ClusterInformation - a model defined in huaweicloud sdk"""
+        """ClusterInformation
+
+        The model defined in huaweicloud sdk
+
+        :param spec: 
+        :type spec: :class:`huaweicloudsdkcce.v3.ClusterInformationSpec`
+        """
         
         
 
@@ -45,7 +50,7 @@ class ClusterInformation:
 
 
         :return: The spec of this ClusterInformation.
-        :rtype: ClusterInformationSpec
+        :rtype: :class:`huaweicloudsdkcce.v3.ClusterInformationSpec`
         """
         return self._spec
 
@@ -55,7 +60,7 @@ class ClusterInformation:
 
 
         :param spec: The spec of this ClusterInformation.
-        :type: ClusterInformationSpec
+        :type spec: :class:`huaweicloudsdkcce.v3.ClusterInformationSpec`
         """
         self._spec = spec
 

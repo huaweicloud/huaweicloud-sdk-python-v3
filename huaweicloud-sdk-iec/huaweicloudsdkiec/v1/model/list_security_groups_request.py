@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSecurityGroupsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListSecurityGroupsRequest:
     }
 
     def __init__(self, limit=None, offset=None):
-        """ListSecurityGroupsRequest - a model defined in huaweicloud sdk"""
+        """ListSecurityGroupsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 查询返回边缘安全组列表数量。取值范围：0~1000。
+        :type limit: int
+        :param offset: 查询的偏移量。
+        :type offset: int
+        """
         
         
 
@@ -63,7 +70,7 @@ class ListSecurityGroupsRequest:
         查询返回边缘安全组列表数量。取值范围：0~1000。
 
         :param limit: The limit of this ListSecurityGroupsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -85,7 +92,7 @@ class ListSecurityGroupsRequest:
         查询的偏移量。
 
         :param offset: The offset of this ListSecurityGroupsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 

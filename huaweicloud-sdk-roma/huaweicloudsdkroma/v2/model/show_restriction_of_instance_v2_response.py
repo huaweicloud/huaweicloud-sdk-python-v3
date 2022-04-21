@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowRestrictionOfInstanceV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowRestrictionOfInstanceV2Response(SdkResponse):
     }
 
     def __init__(self, restrict_cidrs=None, resource_subnet_cidr=None):
-        """ShowRestrictionOfInstanceV2Response - a model defined in huaweicloud sdk"""
+        """ShowRestrictionOfInstanceV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param restrict_cidrs: 受限的IP网段的CIDR列表。
+        :type restrict_cidrs: list[str]
+        :param resource_subnet_cidr: 资源租户的IP网段的CIDR。
+        :type resource_subnet_cidr: str
+        """
         
         super(ShowRestrictionOfInstanceV2Response, self).__init__()
 
@@ -63,7 +70,7 @@ class ShowRestrictionOfInstanceV2Response(SdkResponse):
         受限的IP网段的CIDR列表。
 
         :param restrict_cidrs: The restrict_cidrs of this ShowRestrictionOfInstanceV2Response.
-        :type: list[str]
+        :type restrict_cidrs: list[str]
         """
         self._restrict_cidrs = restrict_cidrs
 
@@ -85,7 +92,7 @@ class ShowRestrictionOfInstanceV2Response(SdkResponse):
         资源租户的IP网段的CIDR。
 
         :param resource_subnet_cidr: The resource_subnet_cidr of this ShowRestrictionOfInstanceV2Response.
-        :type: str
+        :type resource_subnet_cidr: str
         """
         self._resource_subnet_cidr = resource_subnet_cidr
 

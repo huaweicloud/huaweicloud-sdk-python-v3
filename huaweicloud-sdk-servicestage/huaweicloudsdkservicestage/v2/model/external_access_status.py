@@ -12,10 +12,8 @@ class ExternalAccessStatus:
     """
     allowed enum values
     """
-
     NORMAL = "NORMAL"
     EXPIRED = "EXPIRED"
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -33,7 +31,11 @@ class ExternalAccessStatus:
     }
 
     def __init__(self):
-        """ExternalAccessStatus - a model defined in huaweicloud sdk"""
+        """ExternalAccessStatus
+
+        The model defined in huaweicloud sdk
+
+        """
         
         
         self.discriminator = None

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MetaDataSeries:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class MetaDataSeries:
     }
 
     def __init__(self, count=None, offset=None, total=None, next_token=None):
-        """MetaDataSeries - a model defined in huaweicloud sdk"""
+        """MetaDataSeries
+
+        The model defined in huaweicloud sdk
+
+        :param count: 当前返回结果条数。
+        :type count: int
+        :param offset: 下一个开始的标记，用于分页，null表示无更多数据。
+        :type offset: int
+        :param total: 总条数。
+        :type total: int
+        :param next_token: 偏移量。
+        :type next_token: int
+        """
         
         
 
@@ -73,7 +84,7 @@ class MetaDataSeries:
         当前返回结果条数。
 
         :param count: The count of this MetaDataSeries.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -95,7 +106,7 @@ class MetaDataSeries:
         下一个开始的标记，用于分页，null表示无更多数据。
 
         :param offset: The offset of this MetaDataSeries.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -117,7 +128,7 @@ class MetaDataSeries:
         总条数。
 
         :param total: The total of this MetaDataSeries.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -139,7 +150,7 @@ class MetaDataSeries:
         偏移量。
 
         :param next_token: The next_token of this MetaDataSeries.
-        :type: int
+        :type next_token: int
         """
         self._next_token = next_token
 

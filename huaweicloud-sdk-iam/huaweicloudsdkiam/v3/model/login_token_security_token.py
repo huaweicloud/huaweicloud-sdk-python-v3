@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LoginTokenSecurityToken:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class LoginTokenSecurityToken:
     }
 
     def __init__(self, access=None, secret=None, id=None, duration_seconds=None):
-        """LoginTokenSecurityToken - a model defined in huaweicloud sdk"""
+        """LoginTokenSecurityToken
+
+        The model defined in huaweicloud sdk
+
+        :param access: AK。
+        :type access: str
+        :param secret: SK。
+        :type secret: str
+        :param id: securitytoken，即临时身份的安全token。  支持使用自定义代理用户或普通用户获取的securitytoken换取logintoken，详情请参见：[通过token获取临时访问密钥和securitytoken](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product&#x3D;IAM&amp;api&#x3D;CreateTemporaryAccessKeyByToken)。  支持委托的方式，但获取securitytoken时，请求体中必须填写session_user.name参数，详情请参见：[通过委托获取临时访问密钥和securitytoken](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product&#x3D;IAM&amp;api&#x3D;CreateTemporaryAccessKeyByAgency)。
+        :type id: str
+        :param duration_seconds: 自定义代理登录票据logintoken的有效时间，时间单位为秒。默认10分钟，取值范围10min~12h，且取值不能大于临时安全凭证securitytoken的过期时间。
+        :type duration_seconds: int
+        """
         
         
 
@@ -70,7 +81,7 @@ class LoginTokenSecurityToken:
         AK。
 
         :param access: The access of this LoginTokenSecurityToken.
-        :type: str
+        :type access: str
         """
         self._access = access
 
@@ -92,7 +103,7 @@ class LoginTokenSecurityToken:
         SK。
 
         :param secret: The secret of this LoginTokenSecurityToken.
-        :type: str
+        :type secret: str
         """
         self._secret = secret
 
@@ -114,7 +125,7 @@ class LoginTokenSecurityToken:
         securitytoken，即临时身份的安全token。  支持使用自定义代理用户或普通用户获取的securitytoken换取logintoken，详情请参见：[通过token获取临时访问密钥和securitytoken](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=IAM&api=CreateTemporaryAccessKeyByToken)。  支持委托的方式，但获取securitytoken时，请求体中必须填写session_user.name参数，详情请参见：[通过委托获取临时访问密钥和securitytoken](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=IAM&api=CreateTemporaryAccessKeyByAgency)。
 
         :param id: The id of this LoginTokenSecurityToken.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -136,7 +147,7 @@ class LoginTokenSecurityToken:
         自定义代理登录票据logintoken的有效时间，时间单位为秒。默认10分钟，取值范围10min~12h，且取值不能大于临时安全凭证securitytoken的过期时间。
 
         :param duration_seconds: The duration_seconds of this LoginTokenSecurityToken.
-        :type: int
+        :type duration_seconds: int
         """
         self._duration_seconds = duration_seconds
 

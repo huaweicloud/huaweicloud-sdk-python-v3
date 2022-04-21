@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateMpeCallBackRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateMpeCallBackRequest:
     }
 
     def __init__(self, body=None):
-        """CreateMpeCallBackRequest - a model defined in huaweicloud sdk"""
+        """CreateMpeCallBackRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateMpeCallBackRequest
+        :type body: :class:`huaweicloudsdkmpc.v1.MpeCallBackReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateMpeCallBackRequest:
 
 
         :return: The body of this CreateMpeCallBackRequest.
-        :rtype: MpeCallBackReq
+        :rtype: :class:`huaweicloudsdkmpc.v1.MpeCallBackReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateMpeCallBackRequest:
 
 
         :param body: The body of this CreateMpeCallBackRequest.
-        :type: MpeCallBackReq
+        :type body: :class:`huaweicloudsdkmpc.v1.MpeCallBackReq`
         """
         self._body = body
 

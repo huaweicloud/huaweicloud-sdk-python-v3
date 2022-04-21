@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BindTagsDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class BindTagsDTO:
     }
 
     def __init__(self, resource_type=None, resource_id=None, tags=None):
-        """BindTagsDTO - a model defined in huaweicloud sdk"""
+        """BindTagsDTO
+
+        The model defined in huaweicloud sdk
+
+        :param resource_type: **参数说明**：要绑定标签的资源类型。 **取值范围**： - device：设备。
+        :type resource_type: str
+        :param resource_id: **参数说明**：要绑定标签的资源id。例如，资源类型为device，那么对应的资源id就是device_id。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
+        :type resource_id: str
+        :param tags: **参数说明**：要绑定到指定资源的标签列表，标签列表中各项标签键值之间不允许重复，一个资源最多可以绑定10个标签。
+        :type tags: list[:class:`huaweicloudsdkiotda.v5.TagV5DTO`]
+        """
         
         
 
@@ -65,7 +74,7 @@ class BindTagsDTO:
         **参数说明**：要绑定标签的资源类型。 **取值范围**： - device：设备。
 
         :param resource_type: The resource_type of this BindTagsDTO.
-        :type: str
+        :type resource_type: str
         """
         self._resource_type = resource_type
 
@@ -87,7 +96,7 @@ class BindTagsDTO:
         **参数说明**：要绑定标签的资源id。例如，资源类型为device，那么对应的资源id就是device_id。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :param resource_id: The resource_id of this BindTagsDTO.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -98,7 +107,7 @@ class BindTagsDTO:
         **参数说明**：要绑定到指定资源的标签列表，标签列表中各项标签键值之间不允许重复，一个资源最多可以绑定10个标签。
 
         :return: The tags of this BindTagsDTO.
-        :rtype: list[TagV5DTO]
+        :rtype: list[:class:`huaweicloudsdkiotda.v5.TagV5DTO`]
         """
         return self._tags
 
@@ -109,7 +118,7 @@ class BindTagsDTO:
         **参数说明**：要绑定到指定资源的标签列表，标签列表中各项标签键值之间不允许重复，一个资源最多可以绑定10个标签。
 
         :param tags: The tags of this BindTagsDTO.
-        :type: list[TagV5DTO]
+        :type tags: list[:class:`huaweicloudsdkiotda.v5.TagV5DTO`]
         """
         self._tags = tags
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPermanentAccessKeysResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListPermanentAccessKeysResponse(SdkResponse):
     }
 
     def __init__(self, credentials=None):
-        """ListPermanentAccessKeysResponse - a model defined in huaweicloud sdk"""
+        """ListPermanentAccessKeysResponse
+
+        The model defined in huaweicloud sdk
+
+        :param credentials: 认证结果信息列表。
+        :type credentials: list[:class:`huaweicloudsdkiam.v3.Credentials`]
+        """
         
         super(ListPermanentAccessKeysResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListPermanentAccessKeysResponse(SdkResponse):
         认证结果信息列表。
 
         :return: The credentials of this ListPermanentAccessKeysResponse.
-        :rtype: list[Credentials]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.Credentials`]
         """
         return self._credentials
 
@@ -58,7 +63,7 @@ class ListPermanentAccessKeysResponse(SdkResponse):
         认证结果信息列表。
 
         :param credentials: The credentials of this ListPermanentAccessKeysResponse.
-        :type: list[Credentials]
+        :type credentials: list[:class:`huaweicloudsdkiam.v3.Credentials`]
         """
         self._credentials = credentials
 

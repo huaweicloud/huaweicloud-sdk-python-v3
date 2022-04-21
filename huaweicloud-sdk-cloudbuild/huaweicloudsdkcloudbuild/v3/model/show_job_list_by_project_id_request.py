@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowJobListByProjectIdRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowJobListByProjectIdRequest:
     }
 
     def __init__(self, project_id=None, page_index=None, page_size=None):
-        """ShowJobListByProjectIdRequest - a model defined in huaweicloud sdk"""
+        """ShowJobListByProjectIdRequest
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: DevCloud项目ID，32位数字、小写字母组合。[查询项目列表](https://support.huaweicloud.com/api-projectman/ListProjectsV4.html)
+        :type project_id: str
+        :param page_index: 分页页码， 表示从此页开始查询， page_index大于等于0
+        :type page_index: int
+        :param page_size: 每页显示的条目数量，page_size小于等于100
+        :type page_size: int
+        """
         
         
 
@@ -65,7 +74,7 @@ class ShowJobListByProjectIdRequest:
         DevCloud项目ID，32位数字、小写字母组合。[查询项目列表](https://support.huaweicloud.com/api-projectman/ListProjectsV4.html)
 
         :param project_id: The project_id of this ShowJobListByProjectIdRequest.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -87,7 +96,7 @@ class ShowJobListByProjectIdRequest:
         分页页码， 表示从此页开始查询， page_index大于等于0
 
         :param page_index: The page_index of this ShowJobListByProjectIdRequest.
-        :type: int
+        :type page_index: int
         """
         self._page_index = page_index
 
@@ -109,7 +118,7 @@ class ShowJobListByProjectIdRequest:
         每页显示的条目数量，page_size小于等于100
 
         :param page_size: The page_size of this ShowJobListByProjectIdRequest.
-        :type: int
+        :type page_size: int
         """
         self._page_size = page_size
 

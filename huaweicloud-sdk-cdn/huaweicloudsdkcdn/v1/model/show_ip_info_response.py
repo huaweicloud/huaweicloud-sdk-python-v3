@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowIpInfoResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowIpInfoResponse(SdkResponse):
     }
 
     def __init__(self, cdn_ips=None):
-        """ShowIpInfoResponse - a model defined in huaweicloud sdk"""
+        """ShowIpInfoResponse
+
+        The model defined in huaweicloud sdk
+
+        :param cdn_ips: IP归属信息列表。
+        :type cdn_ips: list[:class:`huaweicloudsdkcdn.v1.CdnIps`]
+        """
         
         super(ShowIpInfoResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ShowIpInfoResponse(SdkResponse):
         IP归属信息列表。
 
         :return: The cdn_ips of this ShowIpInfoResponse.
-        :rtype: list[CdnIps]
+        :rtype: list[:class:`huaweicloudsdkcdn.v1.CdnIps`]
         """
         return self._cdn_ips
 
@@ -58,7 +63,7 @@ class ShowIpInfoResponse(SdkResponse):
         IP归属信息列表。
 
         :param cdn_ips: The cdn_ips of this ShowIpInfoResponse.
-        :type: list[CdnIps]
+        :type cdn_ips: list[:class:`huaweicloudsdkcdn.v1.CdnIps`]
         """
         self._cdn_ips = cdn_ips
 

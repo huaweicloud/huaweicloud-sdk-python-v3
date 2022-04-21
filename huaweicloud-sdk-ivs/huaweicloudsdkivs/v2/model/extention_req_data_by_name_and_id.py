@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExtentionReqDataByNameAndId:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ExtentionReqDataByNameAndId:
     }
 
     def __init__(self, verification_name=None, verification_id=None):
-        """ExtentionReqDataByNameAndId - a model defined in huaweicloud sdk"""
+        """ExtentionReqDataByNameAndId
+
+        The model defined in huaweicloud sdk
+
+        :param verification_name: 被验证人的姓名。
+        :type verification_name: str
+        :param verification_id: 被验证人的身份证号码。
+        :type verification_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ExtentionReqDataByNameAndId:
         被验证人的姓名。
 
         :param verification_name: The verification_name of this ExtentionReqDataByNameAndId.
-        :type: str
+        :type verification_name: str
         """
         self._verification_name = verification_name
 
@@ -83,7 +90,7 @@ class ExtentionReqDataByNameAndId:
         被验证人的身份证号码。
 
         :param verification_id: The verification_id of this ExtentionReqDataByNameAndId.
-        :type: str
+        :type verification_id: str
         """
         self._verification_id = verification_id
 

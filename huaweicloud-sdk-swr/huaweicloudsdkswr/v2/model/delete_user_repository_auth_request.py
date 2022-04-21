@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteUserRepositoryAuthRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class DeleteUserRepositoryAuthRequest:
     }
 
     def __init__(self, namespace=None, repository=None, body=None):
-        """DeleteUserRepositoryAuthRequest - a model defined in huaweicloud sdk"""
+        """DeleteUserRepositoryAuthRequest
+
+        The model defined in huaweicloud sdk
+
+        :param namespace: 组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
+        :type namespace: str
+        :param repository: 镜像仓库名称
+        :type repository: str
+        :param body: Body of the DeleteUserRepositoryAuthRequest
+        :type body: list[str]
+        """
         
         
 
@@ -66,7 +75,7 @@ class DeleteUserRepositoryAuthRequest:
         组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
 
         :param namespace: The namespace of this DeleteUserRepositoryAuthRequest.
-        :type: str
+        :type namespace: str
         """
         self._namespace = namespace
 
@@ -88,7 +97,7 @@ class DeleteUserRepositoryAuthRequest:
         镜像仓库名称
 
         :param repository: The repository of this DeleteUserRepositoryAuthRequest.
-        :type: str
+        :type repository: str
         """
         self._repository = repository
 
@@ -108,7 +117,7 @@ class DeleteUserRepositoryAuthRequest:
 
 
         :param body: The body of this DeleteUserRepositoryAuthRequest.
-        :type: list[str]
+        :type body: list[str]
         """
         self._body = body
 

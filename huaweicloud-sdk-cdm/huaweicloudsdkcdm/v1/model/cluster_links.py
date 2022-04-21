@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ClusterLinks:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ClusterLinks:
     }
 
     def __init__(self, rel=None, href=None):
-        """ClusterLinks - a model defined in huaweicloud sdk"""
+        """ClusterLinks
+
+        The model defined in huaweicloud sdk
+
+        :param rel: 关系
+        :type rel: str
+        :param href: 链接地址
+        :type href: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class ClusterLinks:
         关系
 
         :param rel: The rel of this ClusterLinks.
-        :type: str
+        :type rel: str
         """
         self._rel = rel
 
@@ -85,7 +92,7 @@ class ClusterLinks:
         链接地址
 
         :param href: The href of this ClusterLinks.
-        :type: str
+        :type href: str
         """
         self._href = href
 

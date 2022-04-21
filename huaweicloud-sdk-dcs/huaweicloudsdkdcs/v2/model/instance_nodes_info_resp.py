@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InstanceNodesInfoResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class InstanceNodesInfoResp:
     }
 
     def __init__(self, instance_id=None, node_count=None, nodes=None):
-        """InstanceNodesInfoResp - a model defined in huaweicloud sdk"""
+        """InstanceNodesInfoResp
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param node_count: 当前实例节点总数
+        :type node_count: int
+        :param nodes: 节点详情。
+        :type nodes: list[:class:`huaweicloudsdkdcs.v2.NodesInfoResp`]
+        """
         
         
 
@@ -68,7 +77,7 @@ class InstanceNodesInfoResp:
         实例ID
 
         :param instance_id: The instance_id of this InstanceNodesInfoResp.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -90,7 +99,7 @@ class InstanceNodesInfoResp:
         当前实例节点总数
 
         :param node_count: The node_count of this InstanceNodesInfoResp.
-        :type: int
+        :type node_count: int
         """
         self._node_count = node_count
 
@@ -101,7 +110,7 @@ class InstanceNodesInfoResp:
         节点详情。
 
         :return: The nodes of this InstanceNodesInfoResp.
-        :rtype: list[NodesInfoResp]
+        :rtype: list[:class:`huaweicloudsdkdcs.v2.NodesInfoResp`]
         """
         return self._nodes
 
@@ -112,7 +121,7 @@ class InstanceNodesInfoResp:
         节点详情。
 
         :param nodes: The nodes of this InstanceNodesInfoResp.
-        :type: list[NodesInfoResp]
+        :type nodes: list[:class:`huaweicloudsdkdcs.v2.NodesInfoResp`]
         """
         self._nodes = nodes
 

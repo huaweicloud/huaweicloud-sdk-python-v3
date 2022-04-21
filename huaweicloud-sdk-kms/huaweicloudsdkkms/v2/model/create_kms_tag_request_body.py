@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateKmsTagRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateKmsTagRequestBody:
     }
 
     def __init__(self, tag=None, sequence=None):
-        """CreateKmsTagRequestBody - a model defined in huaweicloud sdk"""
+        """CreateKmsTagRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param tag: 
+        :type tag: :class:`huaweicloudsdkkms.v2.TagItem`
+        :param sequence: 请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
+        :type sequence: str
+        """
         
         
 
@@ -51,7 +58,7 @@ class CreateKmsTagRequestBody:
 
 
         :return: The tag of this CreateKmsTagRequestBody.
-        :rtype: TagItem
+        :rtype: :class:`huaweicloudsdkkms.v2.TagItem`
         """
         return self._tag
 
@@ -61,7 +68,7 @@ class CreateKmsTagRequestBody:
 
 
         :param tag: The tag of this CreateKmsTagRequestBody.
-        :type: TagItem
+        :type tag: :class:`huaweicloudsdkkms.v2.TagItem`
         """
         self._tag = tag
 
@@ -83,7 +90,7 @@ class CreateKmsTagRequestBody:
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
 
         :param sequence: The sequence of this CreateKmsTagRequestBody.
-        :type: str
+        :type sequence: str
         """
         self._sequence = sequence
 

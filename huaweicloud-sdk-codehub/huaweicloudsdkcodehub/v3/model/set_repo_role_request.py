@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SetRepoRoleRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class SetRepoRoleRequest:
     }
 
     def __init__(self, member_id=None, repository_uuid=None, body=None):
-        """SetRepoRoleRequest - a model defined in huaweicloud sdk"""
+        """SetRepoRoleRequest
+
+        The model defined in huaweicloud sdk
+
+        :param member_id: 用户id
+        :type member_id: str
+        :param repository_uuid: 仓库uuid
+        :type repository_uuid: str
+        :param body: Body of the SetRepoRoleRequest
+        :type body: :class:`huaweicloudsdkcodehub.v3.SetRepoRoleRequestBody`
+        """
         
         
 
@@ -66,7 +75,7 @@ class SetRepoRoleRequest:
         用户id
 
         :param member_id: The member_id of this SetRepoRoleRequest.
-        :type: str
+        :type member_id: str
         """
         self._member_id = member_id
 
@@ -88,7 +97,7 @@ class SetRepoRoleRequest:
         仓库uuid
 
         :param repository_uuid: The repository_uuid of this SetRepoRoleRequest.
-        :type: str
+        :type repository_uuid: str
         """
         self._repository_uuid = repository_uuid
 
@@ -98,7 +107,7 @@ class SetRepoRoleRequest:
 
 
         :return: The body of this SetRepoRoleRequest.
-        :rtype: SetRepoRoleRequestBody
+        :rtype: :class:`huaweicloudsdkcodehub.v3.SetRepoRoleRequestBody`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class SetRepoRoleRequest:
 
 
         :param body: The body of this SetRepoRoleRequest.
-        :type: SetRepoRoleRequestBody
+        :type body: :class:`huaweicloudsdkcodehub.v3.SetRepoRoleRequestBody`
         """
         self._body = body
 

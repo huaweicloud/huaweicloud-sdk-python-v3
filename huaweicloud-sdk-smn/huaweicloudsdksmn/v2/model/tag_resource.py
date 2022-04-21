@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TagResource:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class TagResource:
     }
 
     def __init__(self, resource_id=None, resource_detail=None, tags=None, resource_name=None):
-        """TagResource - a model defined in huaweicloud sdk"""
+        """TagResource
+
+        The model defined in huaweicloud sdk
+
+        :param resource_id: 资源ID。
+        :type resource_id: str
+        :param resource_detail: 
+        :type resource_detail: :class:`huaweicloudsdksmn.v2.ResourceDetail`
+        :param tags: 标签列表。
+        :type tags: list[:class:`huaweicloudsdksmn.v2.ResourceTag`]
+        :param resource_name: 资源名称。
+        :type resource_name: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class TagResource:
         资源ID。
 
         :param resource_id: The resource_id of this TagResource.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -79,7 +90,7 @@ class TagResource:
 
 
         :return: The resource_detail of this TagResource.
-        :rtype: ResourceDetail
+        :rtype: :class:`huaweicloudsdksmn.v2.ResourceDetail`
         """
         return self._resource_detail
 
@@ -89,7 +100,7 @@ class TagResource:
 
 
         :param resource_detail: The resource_detail of this TagResource.
-        :type: ResourceDetail
+        :type resource_detail: :class:`huaweicloudsdksmn.v2.ResourceDetail`
         """
         self._resource_detail = resource_detail
 
@@ -100,7 +111,7 @@ class TagResource:
         标签列表。
 
         :return: The tags of this TagResource.
-        :rtype: list[ResourceTag]
+        :rtype: list[:class:`huaweicloudsdksmn.v2.ResourceTag`]
         """
         return self._tags
 
@@ -111,7 +122,7 @@ class TagResource:
         标签列表。
 
         :param tags: The tags of this TagResource.
-        :type: list[ResourceTag]
+        :type tags: list[:class:`huaweicloudsdksmn.v2.ResourceTag`]
         """
         self._tags = tags
 
@@ -133,7 +144,7 @@ class TagResource:
         资源名称。
 
         :param resource_name: The resource_name of this TagResource.
-        :type: str
+        :type resource_name: str
         """
         self._resource_name = resource_name
 

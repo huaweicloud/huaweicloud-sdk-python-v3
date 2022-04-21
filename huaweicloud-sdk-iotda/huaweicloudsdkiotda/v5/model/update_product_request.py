@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateProductRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateProductRequest:
     }
 
     def __init__(self, instance_id=None, product_id=None, body=None):
-        """UpdateProductRequest - a model defined in huaweicloud sdk"""
+        """UpdateProductRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
+        :type instance_id: str
+        :param product_id: **参数说明**：产品ID，用于唯一标识一个产品，在物联网平台创建产品后由平台分配获得。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
+        :type product_id: str
+        :param body: Body of the UpdateProductRequest
+        :type body: :class:`huaweicloudsdkiotda.v5.UpdateProduct`
+        """
         
         
 
@@ -67,7 +76,7 @@ class UpdateProductRequest:
         **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
         :param instance_id: The instance_id of this UpdateProductRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -89,7 +98,7 @@ class UpdateProductRequest:
         **参数说明**：产品ID，用于唯一标识一个产品，在物联网平台创建产品后由平台分配获得。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :param product_id: The product_id of this UpdateProductRequest.
-        :type: str
+        :type product_id: str
         """
         self._product_id = product_id
 
@@ -99,7 +108,7 @@ class UpdateProductRequest:
 
 
         :return: The body of this UpdateProductRequest.
-        :rtype: UpdateProduct
+        :rtype: :class:`huaweicloudsdkiotda.v5.UpdateProduct`
         """
         return self._body
 
@@ -109,7 +118,7 @@ class UpdateProductRequest:
 
 
         :param body: The body of this UpdateProductRequest.
-        :type: UpdateProduct
+        :type body: :class:`huaweicloudsdkiotda.v5.UpdateProduct`
         """
         self._body = body
 

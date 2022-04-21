@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowCorpResourceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -66,7 +65,49 @@ class ShowCorpResourceResponse(SdkResponse):
     }
 
     def __init__(self, te1080p_hard_count=None, te720p_hard_count=None, te_soft_count=None, room_count=None, record_capability=None, conf_call_count=None, live_count=None, third_party_hard_count=None, hw_vision_count=None, idea_hub_count=None, vmr=None, enable_pstn=None, enable_sms=None, enable_hybrid_cloud=None, enable_cloud_disk=None, enable_uc=None, enable_ai_minutes=None, single_conf_call_count=None, conf_length=None):
-        """ShowCorpResourceResponse - a model defined in huaweicloud sdk"""
+        """ShowCorpResourceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param te1080p_hard_count: 
+        :type te1080p_hard_count: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
+        :param te720p_hard_count: 
+        :type te720p_hard_count: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
+        :param te_soft_count: 
+        :type te_soft_count: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
+        :param room_count: 
+        :type room_count: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
+        :param record_capability: 
+        :type record_capability: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
+        :param conf_call_count: 
+        :type conf_call_count: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
+        :param live_count: 
+        :type live_count: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
+        :param third_party_hard_count: 
+        :type third_party_hard_count: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
+        :param hw_vision_count: 
+        :type hw_vision_count: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
+        :param idea_hub_count: 
+        :type idea_hub_count: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
+        :param vmr: 查询云会议室套餐包分配数量结果。
+        :type vmr: list[:class:`huaweicloudsdkmeeting.v1.QueryVmrPkgResResultDTO`]
+        :param enable_pstn: 在创建企业的时候设置的pstn权限开关
+        :type enable_pstn: bool
+        :param enable_sms: 在创建企业的时候设置的短信权限开关
+        :type enable_sms: bool
+        :param enable_hybrid_cloud: 企业是否开启混合云模式
+        :type enable_hybrid_cloud: bool
+        :param enable_cloud_disk: 是否开启云盘
+        :type enable_cloud_disk: bool
+        :param enable_uc: 是否开启UC功能
+        :type enable_uc: bool
+        :param enable_ai_minutes: 是否开启Ai会议纪要
+        :type enable_ai_minutes: bool
+        :param single_conf_call_count: 单会议并发呼叫数
+        :type single_conf_call_count: int
+        :param conf_length: 会议时长
+        :type conf_length: int
+        """
         
         super(ShowCorpResourceResponse, self).__init__()
 
@@ -136,7 +177,7 @@ class ShowCorpResourceResponse(SdkResponse):
 
 
         :return: The te1080p_hard_count of this ShowCorpResourceResponse.
-        :rtype: ResDetailDTO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         """
         return self._te1080p_hard_count
 
@@ -146,7 +187,7 @@ class ShowCorpResourceResponse(SdkResponse):
 
 
         :param te1080p_hard_count: The te1080p_hard_count of this ShowCorpResourceResponse.
-        :type: ResDetailDTO
+        :type te1080p_hard_count: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         """
         self._te1080p_hard_count = te1080p_hard_count
 
@@ -156,7 +197,7 @@ class ShowCorpResourceResponse(SdkResponse):
 
 
         :return: The te720p_hard_count of this ShowCorpResourceResponse.
-        :rtype: ResDetailDTO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         """
         return self._te720p_hard_count
 
@@ -166,7 +207,7 @@ class ShowCorpResourceResponse(SdkResponse):
 
 
         :param te720p_hard_count: The te720p_hard_count of this ShowCorpResourceResponse.
-        :type: ResDetailDTO
+        :type te720p_hard_count: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         """
         self._te720p_hard_count = te720p_hard_count
 
@@ -176,7 +217,7 @@ class ShowCorpResourceResponse(SdkResponse):
 
 
         :return: The te_soft_count of this ShowCorpResourceResponse.
-        :rtype: ResDetailDTO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         """
         return self._te_soft_count
 
@@ -186,7 +227,7 @@ class ShowCorpResourceResponse(SdkResponse):
 
 
         :param te_soft_count: The te_soft_count of this ShowCorpResourceResponse.
-        :type: ResDetailDTO
+        :type te_soft_count: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         """
         self._te_soft_count = te_soft_count
 
@@ -196,7 +237,7 @@ class ShowCorpResourceResponse(SdkResponse):
 
 
         :return: The room_count of this ShowCorpResourceResponse.
-        :rtype: ResDetailDTO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         """
         return self._room_count
 
@@ -206,7 +247,7 @@ class ShowCorpResourceResponse(SdkResponse):
 
 
         :param room_count: The room_count of this ShowCorpResourceResponse.
-        :type: ResDetailDTO
+        :type room_count: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         """
         self._room_count = room_count
 
@@ -216,7 +257,7 @@ class ShowCorpResourceResponse(SdkResponse):
 
 
         :return: The record_capability of this ShowCorpResourceResponse.
-        :rtype: ResDetailDTO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         """
         return self._record_capability
 
@@ -226,7 +267,7 @@ class ShowCorpResourceResponse(SdkResponse):
 
 
         :param record_capability: The record_capability of this ShowCorpResourceResponse.
-        :type: ResDetailDTO
+        :type record_capability: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         """
         self._record_capability = record_capability
 
@@ -236,7 +277,7 @@ class ShowCorpResourceResponse(SdkResponse):
 
 
         :return: The conf_call_count of this ShowCorpResourceResponse.
-        :rtype: ResDetailDTO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         """
         return self._conf_call_count
 
@@ -246,7 +287,7 @@ class ShowCorpResourceResponse(SdkResponse):
 
 
         :param conf_call_count: The conf_call_count of this ShowCorpResourceResponse.
-        :type: ResDetailDTO
+        :type conf_call_count: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         """
         self._conf_call_count = conf_call_count
 
@@ -256,7 +297,7 @@ class ShowCorpResourceResponse(SdkResponse):
 
 
         :return: The live_count of this ShowCorpResourceResponse.
-        :rtype: ResDetailDTO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         """
         return self._live_count
 
@@ -266,7 +307,7 @@ class ShowCorpResourceResponse(SdkResponse):
 
 
         :param live_count: The live_count of this ShowCorpResourceResponse.
-        :type: ResDetailDTO
+        :type live_count: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         """
         self._live_count = live_count
 
@@ -276,7 +317,7 @@ class ShowCorpResourceResponse(SdkResponse):
 
 
         :return: The third_party_hard_count of this ShowCorpResourceResponse.
-        :rtype: ResDetailDTO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         """
         return self._third_party_hard_count
 
@@ -286,7 +327,7 @@ class ShowCorpResourceResponse(SdkResponse):
 
 
         :param third_party_hard_count: The third_party_hard_count of this ShowCorpResourceResponse.
-        :type: ResDetailDTO
+        :type third_party_hard_count: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         """
         self._third_party_hard_count = third_party_hard_count
 
@@ -296,7 +337,7 @@ class ShowCorpResourceResponse(SdkResponse):
 
 
         :return: The hw_vision_count of this ShowCorpResourceResponse.
-        :rtype: ResDetailDTO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         """
         return self._hw_vision_count
 
@@ -306,7 +347,7 @@ class ShowCorpResourceResponse(SdkResponse):
 
 
         :param hw_vision_count: The hw_vision_count of this ShowCorpResourceResponse.
-        :type: ResDetailDTO
+        :type hw_vision_count: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         """
         self._hw_vision_count = hw_vision_count
 
@@ -316,7 +357,7 @@ class ShowCorpResourceResponse(SdkResponse):
 
 
         :return: The idea_hub_count of this ShowCorpResourceResponse.
-        :rtype: ResDetailDTO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         """
         return self._idea_hub_count
 
@@ -326,7 +367,7 @@ class ShowCorpResourceResponse(SdkResponse):
 
 
         :param idea_hub_count: The idea_hub_count of this ShowCorpResourceResponse.
-        :type: ResDetailDTO
+        :type idea_hub_count: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         """
         self._idea_hub_count = idea_hub_count
 
@@ -337,7 +378,7 @@ class ShowCorpResourceResponse(SdkResponse):
         查询云会议室套餐包分配数量结果。
 
         :return: The vmr of this ShowCorpResourceResponse.
-        :rtype: list[QueryVmrPkgResResultDTO]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.QueryVmrPkgResResultDTO`]
         """
         return self._vmr
 
@@ -348,7 +389,7 @@ class ShowCorpResourceResponse(SdkResponse):
         查询云会议室套餐包分配数量结果。
 
         :param vmr: The vmr of this ShowCorpResourceResponse.
-        :type: list[QueryVmrPkgResResultDTO]
+        :type vmr: list[:class:`huaweicloudsdkmeeting.v1.QueryVmrPkgResResultDTO`]
         """
         self._vmr = vmr
 
@@ -370,7 +411,7 @@ class ShowCorpResourceResponse(SdkResponse):
         在创建企业的时候设置的pstn权限开关
 
         :param enable_pstn: The enable_pstn of this ShowCorpResourceResponse.
-        :type: bool
+        :type enable_pstn: bool
         """
         self._enable_pstn = enable_pstn
 
@@ -392,7 +433,7 @@ class ShowCorpResourceResponse(SdkResponse):
         在创建企业的时候设置的短信权限开关
 
         :param enable_sms: The enable_sms of this ShowCorpResourceResponse.
-        :type: bool
+        :type enable_sms: bool
         """
         self._enable_sms = enable_sms
 
@@ -414,7 +455,7 @@ class ShowCorpResourceResponse(SdkResponse):
         企业是否开启混合云模式
 
         :param enable_hybrid_cloud: The enable_hybrid_cloud of this ShowCorpResourceResponse.
-        :type: bool
+        :type enable_hybrid_cloud: bool
         """
         self._enable_hybrid_cloud = enable_hybrid_cloud
 
@@ -436,7 +477,7 @@ class ShowCorpResourceResponse(SdkResponse):
         是否开启云盘
 
         :param enable_cloud_disk: The enable_cloud_disk of this ShowCorpResourceResponse.
-        :type: bool
+        :type enable_cloud_disk: bool
         """
         self._enable_cloud_disk = enable_cloud_disk
 
@@ -458,7 +499,7 @@ class ShowCorpResourceResponse(SdkResponse):
         是否开启UC功能
 
         :param enable_uc: The enable_uc of this ShowCorpResourceResponse.
-        :type: bool
+        :type enable_uc: bool
         """
         self._enable_uc = enable_uc
 
@@ -480,7 +521,7 @@ class ShowCorpResourceResponse(SdkResponse):
         是否开启Ai会议纪要
 
         :param enable_ai_minutes: The enable_ai_minutes of this ShowCorpResourceResponse.
-        :type: bool
+        :type enable_ai_minutes: bool
         """
         self._enable_ai_minutes = enable_ai_minutes
 
@@ -502,7 +543,7 @@ class ShowCorpResourceResponse(SdkResponse):
         单会议并发呼叫数
 
         :param single_conf_call_count: The single_conf_call_count of this ShowCorpResourceResponse.
-        :type: int
+        :type single_conf_call_count: int
         """
         self._single_conf_call_count = single_conf_call_count
 
@@ -524,7 +565,7 @@ class ShowCorpResourceResponse(SdkResponse):
         会议时长
 
         :param conf_length: The conf_length of this ShowCorpResourceResponse.
-        :type: int
+        :type conf_length: int
         """
         self._conf_length = conf_length
 

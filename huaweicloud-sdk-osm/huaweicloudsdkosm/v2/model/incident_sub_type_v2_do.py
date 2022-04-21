@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IncidentSubTypeV2Do:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class IncidentSubTypeV2Do:
     }
 
     def __init__(self, incident_sub_type_id=None, incident_sub_type_name=None, incident_product_category_list=None):
-        """IncidentSubTypeV2Do - a model defined in huaweicloud sdk"""
+        """IncidentSubTypeV2Do
+
+        The model defined in huaweicloud sdk
+
+        :param incident_sub_type_id: 工单子类型id
+        :type incident_sub_type_id: str
+        :param incident_sub_type_name: 工单子类型名称
+        :type incident_sub_type_name: str
+        :param incident_product_category_list: 产品类型列表
+        :type incident_product_category_list: list[:class:`huaweicloudsdkosm.v2.IncidentProductCategoryV2`]
+        """
         
         
 
@@ -68,7 +77,7 @@ class IncidentSubTypeV2Do:
         工单子类型id
 
         :param incident_sub_type_id: The incident_sub_type_id of this IncidentSubTypeV2Do.
-        :type: str
+        :type incident_sub_type_id: str
         """
         self._incident_sub_type_id = incident_sub_type_id
 
@@ -90,7 +99,7 @@ class IncidentSubTypeV2Do:
         工单子类型名称
 
         :param incident_sub_type_name: The incident_sub_type_name of this IncidentSubTypeV2Do.
-        :type: str
+        :type incident_sub_type_name: str
         """
         self._incident_sub_type_name = incident_sub_type_name
 
@@ -101,7 +110,7 @@ class IncidentSubTypeV2Do:
         产品类型列表
 
         :return: The incident_product_category_list of this IncidentSubTypeV2Do.
-        :rtype: list[IncidentProductCategoryV2]
+        :rtype: list[:class:`huaweicloudsdkosm.v2.IncidentProductCategoryV2`]
         """
         return self._incident_product_category_list
 
@@ -112,7 +121,7 @@ class IncidentSubTypeV2Do:
         产品类型列表
 
         :param incident_product_category_list: The incident_product_category_list of this IncidentSubTypeV2Do.
-        :type: list[IncidentProductCategoryV2]
+        :type incident_product_category_list: list[:class:`huaweicloudsdkosm.v2.IncidentProductCategoryV2`]
         """
         self._incident_product_category_list = incident_product_category_list
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Backup:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class Backup:
     }
 
     def __init__(self, id=None, name=None, descriprion=None, begin_time=None, status=None, type=None, instance_id=None):
-        """Backup - a model defined in huaweicloud sdk"""
+        """Backup
+
+        The model defined in huaweicloud sdk
+
+        :param id: 备份ID
+        :type id: str
+        :param name: 备份名称。
+        :type name: str
+        :param descriprion: 备份描述。
+        :type descriprion: str
+        :param begin_time: 备份开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”，其中T指时间字段的开始；Z指时区偏移量。
+        :type begin_time: str
+        :param status: 备份状态
+        :type status: str
+        :param type: 备份类型，取值：
+        :type type: str
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class Backup:
         备份ID
 
         :param id: The id of this Backup.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -110,7 +127,7 @@ class Backup:
         备份名称。
 
         :param name: The name of this Backup.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -132,7 +149,7 @@ class Backup:
         备份描述。
 
         :param descriprion: The descriprion of this Backup.
-        :type: str
+        :type descriprion: str
         """
         self._descriprion = descriprion
 
@@ -154,7 +171,7 @@ class Backup:
         备份开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”，其中T指时间字段的开始；Z指时区偏移量。
 
         :param begin_time: The begin_time of this Backup.
-        :type: str
+        :type begin_time: str
         """
         self._begin_time = begin_time
 
@@ -176,7 +193,7 @@ class Backup:
         备份状态
 
         :param status: The status of this Backup.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -198,7 +215,7 @@ class Backup:
         备份类型，取值：
 
         :param type: The type of this Backup.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -220,7 +237,7 @@ class Backup:
         实例ID。
 
         :param instance_id: The instance_id of this Backup.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 

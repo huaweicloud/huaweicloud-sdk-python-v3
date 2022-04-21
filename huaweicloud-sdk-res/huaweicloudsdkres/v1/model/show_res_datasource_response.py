@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowResDatasourceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ShowResDatasourceResponse(SdkResponse):
     }
 
     def __init__(self, datasource=None, jobs=None, is_success=None, message=None, error_code=None):
-        """ShowResDatasourceResponse - a model defined in huaweicloud sdk"""
+        """ShowResDatasourceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param datasource: 
+        :type datasource: :class:`huaweicloudsdkres.v1.Datasources`
+        :param jobs: 数据源相关任务详情。
+        :type jobs: list[:class:`huaweicloudsdkres.v1.Jobs`]
+        :param is_success: 是否成功。
+        :type is_success: bool
+        :param message: 返回消息（请求成功时，不返回此字段）。
+        :type message: str
+        :param error_code: 错误码（请求成功时，不返回此字段）。
+        :type error_code: str
+        """
         
         super(ShowResDatasourceResponse, self).__init__()
 
@@ -66,7 +79,7 @@ class ShowResDatasourceResponse(SdkResponse):
 
 
         :return: The datasource of this ShowResDatasourceResponse.
-        :rtype: Datasources
+        :rtype: :class:`huaweicloudsdkres.v1.Datasources`
         """
         return self._datasource
 
@@ -76,7 +89,7 @@ class ShowResDatasourceResponse(SdkResponse):
 
 
         :param datasource: The datasource of this ShowResDatasourceResponse.
-        :type: Datasources
+        :type datasource: :class:`huaweicloudsdkres.v1.Datasources`
         """
         self._datasource = datasource
 
@@ -87,7 +100,7 @@ class ShowResDatasourceResponse(SdkResponse):
         数据源相关任务详情。
 
         :return: The jobs of this ShowResDatasourceResponse.
-        :rtype: list[Jobs]
+        :rtype: list[:class:`huaweicloudsdkres.v1.Jobs`]
         """
         return self._jobs
 
@@ -98,7 +111,7 @@ class ShowResDatasourceResponse(SdkResponse):
         数据源相关任务详情。
 
         :param jobs: The jobs of this ShowResDatasourceResponse.
-        :type: list[Jobs]
+        :type jobs: list[:class:`huaweicloudsdkres.v1.Jobs`]
         """
         self._jobs = jobs
 
@@ -120,7 +133,7 @@ class ShowResDatasourceResponse(SdkResponse):
         是否成功。
 
         :param is_success: The is_success of this ShowResDatasourceResponse.
-        :type: bool
+        :type is_success: bool
         """
         self._is_success = is_success
 
@@ -142,7 +155,7 @@ class ShowResDatasourceResponse(SdkResponse):
         返回消息（请求成功时，不返回此字段）。
 
         :param message: The message of this ShowResDatasourceResponse.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -164,7 +177,7 @@ class ShowResDatasourceResponse(SdkResponse):
         错误码（请求成功时，不返回此字段）。
 
         :param error_code: The error_code of this ShowResDatasourceResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 

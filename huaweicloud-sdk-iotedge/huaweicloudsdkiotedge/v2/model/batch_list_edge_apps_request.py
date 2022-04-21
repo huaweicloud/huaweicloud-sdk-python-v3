@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchListEdgeAppsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class BatchListEdgeAppsRequest:
     }
 
     def __init__(self, edge_app_id=None, offset=None, limit=None, app_type=None, function_type=None):
-        """BatchListEdgeAppsRequest - a model defined in huaweicloud sdk"""
+        """BatchListEdgeAppsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param edge_app_id: 应用ID搜索关键字
+        :type edge_app_id: str
+        :param offset: 查询的起始位置，取值范围为非负整数，默认为0
+        :type offset: int
+        :param limit: 每页记录数，默认值为10，取值区间为1-1000
+        :type limit: int
+        :param app_type: 应用id搜索关键字
+        :type app_type: str
+        :param function_type: 功能类型
+        :type function_type: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class BatchListEdgeAppsRequest:
         应用ID搜索关键字
 
         :param edge_app_id: The edge_app_id of this BatchListEdgeAppsRequest.
-        :type: str
+        :type edge_app_id: str
         """
         self._edge_app_id = edge_app_id
 
@@ -100,7 +113,7 @@ class BatchListEdgeAppsRequest:
         查询的起始位置，取值范围为非负整数，默认为0
 
         :param offset: The offset of this BatchListEdgeAppsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -122,7 +135,7 @@ class BatchListEdgeAppsRequest:
         每页记录数，默认值为10，取值区间为1-1000
 
         :param limit: The limit of this BatchListEdgeAppsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -144,7 +157,7 @@ class BatchListEdgeAppsRequest:
         应用id搜索关键字
 
         :param app_type: The app_type of this BatchListEdgeAppsRequest.
-        :type: str
+        :type app_type: str
         """
         self._app_type = app_type
 
@@ -166,7 +179,7 @@ class BatchListEdgeAppsRequest:
         功能类型
 
         :param function_type: The function_type of this BatchListEdgeAppsRequest.
-        :type: str
+        :type function_type: str
         """
         self._function_type = function_type
 

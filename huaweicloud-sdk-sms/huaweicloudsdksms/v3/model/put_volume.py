@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PutVolume:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class PutVolume:
     }
 
     def __init__(self, id=None, need_migration=None, adjust_size=None):
-        """PutVolume - a model defined in huaweicloud sdk"""
+        """PutVolume
+
+        The model defined in huaweicloud sdk
+
+        :param id: 数据库id
+        :type id: str
+        :param need_migration: 是否迁移
+        :type need_migration: bool
+        :param adjust_size: 调整大小
+        :type adjust_size: int
+        """
         
         
 
@@ -68,7 +77,7 @@ class PutVolume:
         数据库id
 
         :param id: The id of this PutVolume.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -90,7 +99,7 @@ class PutVolume:
         是否迁移
 
         :param need_migration: The need_migration of this PutVolume.
-        :type: bool
+        :type need_migration: bool
         """
         self._need_migration = need_migration
 
@@ -112,7 +121,7 @@ class PutVolume:
         调整大小
 
         :param adjust_size: The adjust_size of this PutVolume.
-        :type: int
+        :type adjust_size: int
         """
         self._adjust_size = adjust_size
 

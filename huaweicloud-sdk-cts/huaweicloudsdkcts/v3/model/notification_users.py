@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NotificationUsers:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class NotificationUsers:
     }
 
     def __init__(self, user_group=None, user_list=None):
-        """NotificationUsers - a model defined in huaweicloud sdk"""
+        """NotificationUsers
+
+        The model defined in huaweicloud sdk
+
+        :param user_group: IAM用户组。
+        :type user_group: str
+        :param user_list: IAM用户。
+        :type user_list: list[str]
+        """
         
         
 
@@ -61,7 +68,7 @@ class NotificationUsers:
         IAM用户组。
 
         :param user_group: The user_group of this NotificationUsers.
-        :type: str
+        :type user_group: str
         """
         self._user_group = user_group
 
@@ -83,7 +90,7 @@ class NotificationUsers:
         IAM用户。
 
         :param user_list: The user_list of this NotificationUsers.
-        :type: list[str]
+        :type user_list: list[str]
         """
         self._user_list = user_list
 

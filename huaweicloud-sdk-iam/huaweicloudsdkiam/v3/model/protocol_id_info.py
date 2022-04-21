@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ProtocolIdInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ProtocolIdInfo:
     }
 
     def __init__(self, id=None):
-        """ProtocolIdInfo - a model defined in huaweicloud sdk"""
+        """ProtocolIdInfo
+
+        The model defined in huaweicloud sdk
+
+        :param id: 协议id。
+        :type id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ProtocolIdInfo:
         协议id。
 
         :param id: The id of this ProtocolIdInfo.
-        :type: str
+        :type id: str
         """
         self._id = id
 

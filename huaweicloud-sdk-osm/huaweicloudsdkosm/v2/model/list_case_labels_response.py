@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCaseLabelsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListCaseLabelsResponse(SdkResponse):
     }
 
     def __init__(self, case_label_list=None):
-        """ListCaseLabelsResponse - a model defined in huaweicloud sdk"""
+        """ListCaseLabelsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param case_label_list: 工单关联的标签列表
+        :type case_label_list: list[:class:`huaweicloudsdkosm.v2.CaseLabelInfo`]
+        """
         
         super(ListCaseLabelsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListCaseLabelsResponse(SdkResponse):
         工单关联的标签列表
 
         :return: The case_label_list of this ListCaseLabelsResponse.
-        :rtype: list[CaseLabelInfo]
+        :rtype: list[:class:`huaweicloudsdkosm.v2.CaseLabelInfo`]
         """
         return self._case_label_list
 
@@ -58,7 +63,7 @@ class ListCaseLabelsResponse(SdkResponse):
         工单关联的标签列表
 
         :param case_label_list: The case_label_list of this ListCaseLabelsResponse.
-        :type: list[CaseLabelInfo]
+        :type case_label_list: list[:class:`huaweicloudsdkosm.v2.CaseLabelInfo`]
         """
         self._case_label_list = case_label_list
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MultiOracleAddress:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class MultiOracleAddress:
     }
 
     def __init__(self, oracle_address=None, oracle_port=None):
-        """MultiOracleAddress - a model defined in huaweicloud sdk"""
+        """MultiOracleAddress
+
+        The model defined in huaweicloud sdk
+
+        :param oracle_address: ORACLE地址
+        :type oracle_address: str
+        :param oracle_port: ORACLE端口
+        :type oracle_port: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class MultiOracleAddress:
         ORACLE地址
 
         :param oracle_address: The oracle_address of this MultiOracleAddress.
-        :type: str
+        :type oracle_address: str
         """
         self._oracle_address = oracle_address
 
@@ -85,7 +92,7 @@ class MultiOracleAddress:
         ORACLE端口
 
         :param oracle_port: The oracle_port of this MultiOracleAddress.
-        :type: str
+        :type oracle_port: str
         """
         self._oracle_port = oracle_port
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OutputSetting:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class OutputSetting:
     }
 
     def __init__(self, format=None, video=None, audio=None, hls=None, output=None):
-        """OutputSetting - a model defined in huaweicloud sdk"""
+        """OutputSetting
+
+        The model defined in huaweicloud sdk
+
+        :param format: 剪切或拼接的输出封装格式。
+        :type format: str
+        :param video: 
+        :type video: :class:`huaweicloudsdkmpc.v1.EditVideoInfo`
+        :param audio: 
+        :type audio: :class:`huaweicloudsdkmpc.v1.EditAudioInfo`
+        :param hls: 
+        :type hls: :class:`huaweicloudsdkmpc.v1.EditHlsInfo`
+        :param output: 
+        :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        """
         
         
 
@@ -78,7 +91,7 @@ class OutputSetting:
         剪切或拼接的输出封装格式。
 
         :param format: The format of this OutputSetting.
-        :type: str
+        :type format: str
         """
         self._format = format
 
@@ -88,7 +101,7 @@ class OutputSetting:
 
 
         :return: The video of this OutputSetting.
-        :rtype: EditVideoInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.EditVideoInfo`
         """
         return self._video
 
@@ -98,7 +111,7 @@ class OutputSetting:
 
 
         :param video: The video of this OutputSetting.
-        :type: EditVideoInfo
+        :type video: :class:`huaweicloudsdkmpc.v1.EditVideoInfo`
         """
         self._video = video
 
@@ -108,7 +121,7 @@ class OutputSetting:
 
 
         :return: The audio of this OutputSetting.
-        :rtype: EditAudioInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.EditAudioInfo`
         """
         return self._audio
 
@@ -118,7 +131,7 @@ class OutputSetting:
 
 
         :param audio: The audio of this OutputSetting.
-        :type: EditAudioInfo
+        :type audio: :class:`huaweicloudsdkmpc.v1.EditAudioInfo`
         """
         self._audio = audio
 
@@ -128,7 +141,7 @@ class OutputSetting:
 
 
         :return: The hls of this OutputSetting.
-        :rtype: EditHlsInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.EditHlsInfo`
         """
         return self._hls
 
@@ -138,7 +151,7 @@ class OutputSetting:
 
 
         :param hls: The hls of this OutputSetting.
-        :type: EditHlsInfo
+        :type hls: :class:`huaweicloudsdkmpc.v1.EditHlsInfo`
         """
         self._hls = hls
 
@@ -148,7 +161,7 @@ class OutputSetting:
 
 
         :return: The output of this OutputSetting.
-        :rtype: ObsObjInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         return self._output
 
@@ -158,7 +171,7 @@ class OutputSetting:
 
 
         :param output: The output of this OutputSetting.
-        :type: ObsObjInfo
+        :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         self._output = output
 

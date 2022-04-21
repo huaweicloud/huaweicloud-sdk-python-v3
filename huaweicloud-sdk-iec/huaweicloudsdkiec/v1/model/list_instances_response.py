@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListInstancesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListInstancesResponse(SdkResponse):
     }
 
     def __init__(self, err_sites=None, count=None, servers=None):
-        """ListInstancesResponse - a model defined in huaweicloud sdk"""
+        """ListInstancesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param err_sites: 异常站点。
+        :type err_sites: list[str]
+        :param count: 边缘实例列表的总数。
+        :type count: int
+        :param servers: 边缘实例列表。
+        :type servers: list[:class:`huaweicloudsdkiec.v1.Instance`]
+        """
         
         super(ListInstancesResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListInstancesResponse(SdkResponse):
         异常站点。
 
         :param err_sites: The err_sites of this ListInstancesResponse.
-        :type: list[str]
+        :type err_sites: list[str]
         """
         self._err_sites = err_sites
 
@@ -90,7 +99,7 @@ class ListInstancesResponse(SdkResponse):
         边缘实例列表的总数。
 
         :param count: The count of this ListInstancesResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -101,7 +110,7 @@ class ListInstancesResponse(SdkResponse):
         边缘实例列表。
 
         :return: The servers of this ListInstancesResponse.
-        :rtype: list[Instance]
+        :rtype: list[:class:`huaweicloudsdkiec.v1.Instance`]
         """
         return self._servers
 
@@ -112,7 +121,7 @@ class ListInstancesResponse(SdkResponse):
         边缘实例列表。
 
         :param servers: The servers of this ListInstancesResponse.
-        :type: list[Instance]
+        :type servers: list[:class:`huaweicloudsdkiec.v1.Instance`]
         """
         self._servers = servers
 

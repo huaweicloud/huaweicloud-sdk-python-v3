@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BusinessNodeModel:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class BusinessNodeModel:
     }
 
     def __init__(self, default=None, display_name=None, eps_id=None, gmt_create=None, gmt_modify=None, id=None, inner_domain_id=None, is_default=None, name=None):
-        """BusinessNodeModel - a model defined in huaweicloud sdk"""
+        """BusinessNodeModel
+
+        The model defined in huaweicloud sdk
+
+        :param default: 默认业务
+        :type default: bool
+        :param display_name: 业务展示名称
+        :type display_name: str
+        :param eps_id: 企业项目的id
+        :type eps_id: str
+        :param gmt_create: 创建时间
+        :type gmt_create: date
+        :param gmt_modify: 修改时间
+        :type gmt_modify: date
+        :param id: 业务id
+        :type id: int
+        :param inner_domain_id: 内部租户id
+        :type inner_domain_id: int
+        :param is_default: 是否是默认的业务
+        :type is_default: bool
+        :param name: 业务的英文名称
+        :type name: str
+        """
         
         
 
@@ -98,7 +119,7 @@ class BusinessNodeModel:
         默认业务
 
         :param default: The default of this BusinessNodeModel.
-        :type: bool
+        :type default: bool
         """
         self._default = default
 
@@ -120,7 +141,7 @@ class BusinessNodeModel:
         业务展示名称
 
         :param display_name: The display_name of this BusinessNodeModel.
-        :type: str
+        :type display_name: str
         """
         self._display_name = display_name
 
@@ -142,7 +163,7 @@ class BusinessNodeModel:
         企业项目的id
 
         :param eps_id: The eps_id of this BusinessNodeModel.
-        :type: str
+        :type eps_id: str
         """
         self._eps_id = eps_id
 
@@ -164,7 +185,7 @@ class BusinessNodeModel:
         创建时间
 
         :param gmt_create: The gmt_create of this BusinessNodeModel.
-        :type: date
+        :type gmt_create: date
         """
         self._gmt_create = gmt_create
 
@@ -186,7 +207,7 @@ class BusinessNodeModel:
         修改时间
 
         :param gmt_modify: The gmt_modify of this BusinessNodeModel.
-        :type: date
+        :type gmt_modify: date
         """
         self._gmt_modify = gmt_modify
 
@@ -208,7 +229,7 @@ class BusinessNodeModel:
         业务id
 
         :param id: The id of this BusinessNodeModel.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -230,7 +251,7 @@ class BusinessNodeModel:
         内部租户id
 
         :param inner_domain_id: The inner_domain_id of this BusinessNodeModel.
-        :type: int
+        :type inner_domain_id: int
         """
         self._inner_domain_id = inner_domain_id
 
@@ -252,7 +273,7 @@ class BusinessNodeModel:
         是否是默认的业务
 
         :param is_default: The is_default of this BusinessNodeModel.
-        :type: bool
+        :type is_default: bool
         """
         self._is_default = is_default
 
@@ -274,7 +295,7 @@ class BusinessNodeModel:
         业务的英文名称
 
         :param name: The name of this BusinessNodeModel.
-        :type: str
+        :type name: str
         """
         self._name = name
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TaskOutputDis:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class TaskOutputDis:
     }
 
     def __init__(self, stream_name=None, data_category=None):
-        """TaskOutputDis - a model defined in huaweicloud sdk"""
+        """TaskOutputDis
+
+        The model defined in huaweicloud sdk
+
+        :param stream_name: DIS流名称，选用dis类型输出时必填。
+        :type stream_name: str
+        :param data_category: 作业输出数据类别的列表，选填，仅部分服务需要。当输出类型下有这个列表时，表示希望这个输出类型下存放dataCategory列表内的数据。
+        :type data_category: list[str]
+        """
         
         
 
@@ -62,7 +69,7 @@ class TaskOutputDis:
         DIS流名称，选用dis类型输出时必填。
 
         :param stream_name: The stream_name of this TaskOutputDis.
-        :type: str
+        :type stream_name: str
         """
         self._stream_name = stream_name
 
@@ -84,7 +91,7 @@ class TaskOutputDis:
         作业输出数据类别的列表，选填，仅部分服务需要。当输出类型下有这个列表时，表示希望这个输出类型下存放dataCategory列表内的数据。
 
         :param data_category: The data_category of this TaskOutputDis.
-        :type: list[str]
+        :type data_category: list[str]
         """
         self._data_category = data_category
 

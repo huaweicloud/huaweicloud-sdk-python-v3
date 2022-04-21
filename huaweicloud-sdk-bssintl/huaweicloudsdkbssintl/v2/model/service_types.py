@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ServiceTypes:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ServiceTypes:
     }
 
     def __init__(self, service_type_name=None, service_type_code=None, abbreviation=None):
-        """ServiceTypes - a model defined in huaweicloud sdk"""
+        """ServiceTypes
+
+        The model defined in huaweicloud sdk
+
+        :param service_type_name: 云服务类型的名称。
+        :type service_type_name: str
+        :param service_type_code: 云服务类型的编码。
+        :type service_type_code: str
+        :param abbreviation: 云服务类型的缩写。
+        :type abbreviation: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class ServiceTypes:
         云服务类型的名称。
 
         :param service_type_name: The service_type_name of this ServiceTypes.
-        :type: str
+        :type service_type_name: str
         """
         self._service_type_name = service_type_name
 
@@ -90,7 +99,7 @@ class ServiceTypes:
         云服务类型的编码。
 
         :param service_type_code: The service_type_code of this ServiceTypes.
-        :type: str
+        :type service_type_code: str
         """
         self._service_type_code = service_type_code
 
@@ -112,7 +121,7 @@ class ServiceTypes:
         云服务类型的缩写。
 
         :param abbreviation: The abbreviation of this ServiceTypes.
-        :type: str
+        :type abbreviation: str
         """
         self._abbreviation = abbreviation
 

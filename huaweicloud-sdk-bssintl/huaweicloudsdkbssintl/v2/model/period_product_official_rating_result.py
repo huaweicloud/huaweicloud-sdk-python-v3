@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PeriodProductOfficialRatingResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class PeriodProductOfficialRatingResult:
     }
 
     def __init__(self, id=None, product_id=None, official_website_amount=None, measure_id=None):
-        """PeriodProductOfficialRatingResult - a model defined in huaweicloud sdk"""
+        """PeriodProductOfficialRatingResult
+
+        The model defined in huaweicloud sdk
+
+        :param id: ID标识，来源于请求中的ID。
+        :type id: str
+        :param product_id: 包年/包月产品的ID。
+        :type product_id: str
+        :param official_website_amount: 包年/包月产品的官网价。
+        :type official_website_amount: float
+        :param measure_id: 价格度量单位标识。 1：元
+        :type measure_id: int
+        """
         
         
 
@@ -73,7 +84,7 @@ class PeriodProductOfficialRatingResult:
         ID标识，来源于请求中的ID。
 
         :param id: The id of this PeriodProductOfficialRatingResult.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -95,7 +106,7 @@ class PeriodProductOfficialRatingResult:
         包年/包月产品的ID。
 
         :param product_id: The product_id of this PeriodProductOfficialRatingResult.
-        :type: str
+        :type product_id: str
         """
         self._product_id = product_id
 
@@ -117,7 +128,7 @@ class PeriodProductOfficialRatingResult:
         包年/包月产品的官网价。
 
         :param official_website_amount: The official_website_amount of this PeriodProductOfficialRatingResult.
-        :type: float
+        :type official_website_amount: float
         """
         self._official_website_amount = official_website_amount
 
@@ -139,7 +150,7 @@ class PeriodProductOfficialRatingResult:
         价格度量单位标识。 1：元
 
         :param measure_id: The measure_id of this PeriodProductOfficialRatingResult.
-        :type: int
+        :type measure_id: int
         """
         self._measure_id = measure_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ParallelEdge:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ParallelEdge:
     }
 
     def __init__(self, action=None, ignore_label=None):
-        """ParallelEdge - a model defined in huaweicloud sdk"""
+        """ParallelEdge
+
+        The model defined in huaweicloud sdk
+
+        :param action: 处理方式，取值为allow，ignore和override，默认为allow。 - allow表示允许重复边。 - ignore表示忽略之后的重复边。 - override表示覆盖之前的重复边。
+        :type action: str
+        :param ignore_label: 重复边的定义，是否忽略Label。取值为true或者false，默认取true。 - true 表示重复边定义不包含Label，即用&lt;源点，终点&gt;标记一条边，不包含Label。 - false 表示重复边定义包含Label，即用&lt;源点，终点，Label&gt;标记一条边。
+        :type ignore_label: bool
+        """
         
         
 
@@ -63,7 +70,7 @@ class ParallelEdge:
         处理方式，取值为allow，ignore和override，默认为allow。 - allow表示允许重复边。 - ignore表示忽略之后的重复边。 - override表示覆盖之前的重复边。
 
         :param action: The action of this ParallelEdge.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -85,7 +92,7 @@ class ParallelEdge:
         重复边的定义，是否忽略Label。取值为true或者false，默认取true。 - true 表示重复边定义不包含Label，即用<源点，终点>标记一条边，不包含Label。 - false 表示重复边定义包含Label，即用<源点，终点，Label>标记一条边。
 
         :param ignore_label: The ignore_label of this ParallelEdge.
-        :type: bool
+        :type ignore_label: bool
         """
         self._ignore_label = ignore_label
 

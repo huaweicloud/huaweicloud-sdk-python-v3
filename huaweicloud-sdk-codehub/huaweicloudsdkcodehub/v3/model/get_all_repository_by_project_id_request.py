@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GetAllRepositoryByProjectIdRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class GetAllRepositoryByProjectIdRequest:
     }
 
     def __init__(self, page_index=None, page_size=None, project_uuid=None, search=None):
-        """GetAllRepositoryByProjectIdRequest - a model defined in huaweicloud sdk"""
+        """GetAllRepositoryByProjectIdRequest
+
+        The model defined in huaweicloud sdk
+
+        :param page_index: 分页索引，从1开始计数
+        :type page_index: int
+        :param page_size: 每页条目数
+        :type page_size: int
+        :param project_uuid: 项目的uuid
+        :type project_uuid: str
+        :param search: 搜索关键字
+        :type search: str
+        """
         
         
 
@@ -72,7 +83,7 @@ class GetAllRepositoryByProjectIdRequest:
         分页索引，从1开始计数
 
         :param page_index: The page_index of this GetAllRepositoryByProjectIdRequest.
-        :type: int
+        :type page_index: int
         """
         self._page_index = page_index
 
@@ -94,7 +105,7 @@ class GetAllRepositoryByProjectIdRequest:
         每页条目数
 
         :param page_size: The page_size of this GetAllRepositoryByProjectIdRequest.
-        :type: int
+        :type page_size: int
         """
         self._page_size = page_size
 
@@ -116,7 +127,7 @@ class GetAllRepositoryByProjectIdRequest:
         项目的uuid
 
         :param project_uuid: The project_uuid of this GetAllRepositoryByProjectIdRequest.
-        :type: str
+        :type project_uuid: str
         """
         self._project_uuid = project_uuid
 
@@ -138,7 +149,7 @@ class GetAllRepositoryByProjectIdRequest:
         搜索关键字
 
         :param search: The search of this GetAllRepositoryByProjectIdRequest.
-        :type: str
+        :type search: str
         """
         self._search = search
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OrgPropertyDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class OrgPropertyDTO:
     }
 
     def __init__(self, property_key=None, property_value=None):
-        """OrgPropertyDTO - a model defined in huaweicloud sdk"""
+        """OrgPropertyDTO
+
+        The model defined in huaweicloud sdk
+
+        :param property_key: 配置项key。 开通本地录制功能，参数填写：enableClientRecord 
+        :type property_key: str
+        :param property_value: 配置项值。 开通本地录制功能，参数填写：true 
+        :type property_value: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class OrgPropertyDTO:
         配置项key。 开通本地录制功能，参数填写：enableClientRecord 
 
         :param property_key: The property_key of this OrgPropertyDTO.
-        :type: str
+        :type property_key: str
         """
         self._property_key = property_key
 
@@ -85,7 +92,7 @@ class OrgPropertyDTO:
         配置项值。 开通本地录制功能，参数填写：true 
 
         :param property_value: The property_value of this OrgPropertyDTO.
-        :type: str
+        :type property_value: str
         """
         self._property_value = property_value
 

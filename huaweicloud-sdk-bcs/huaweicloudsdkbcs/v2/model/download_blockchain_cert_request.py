@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DownloadBlockchainCertRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class DownloadBlockchainCertRequest:
     }
 
     def __init__(self, blockchain_id=None, org_name=None, cert_type=None):
-        """DownloadBlockchainCertRequest - a model defined in huaweicloud sdk"""
+        """DownloadBlockchainCertRequest
+
+        The model defined in huaweicloud sdk
+
+        :param blockchain_id: blockchainID
+        :type blockchain_id: str
+        :param org_name: order或者peer组织名称
+        :type org_name: str
+        :param cert_type: 下载证书类别
+        :type cert_type: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class DownloadBlockchainCertRequest:
         blockchainID
 
         :param blockchain_id: The blockchain_id of this DownloadBlockchainCertRequest.
-        :type: str
+        :type blockchain_id: str
         """
         self._blockchain_id = blockchain_id
 
@@ -87,7 +96,7 @@ class DownloadBlockchainCertRequest:
         order或者peer组织名称
 
         :param org_name: The org_name of this DownloadBlockchainCertRequest.
-        :type: str
+        :type org_name: str
         """
         self._org_name = org_name
 
@@ -109,7 +118,7 @@ class DownloadBlockchainCertRequest:
         下载证书类别
 
         :param cert_type: The cert_type of this DownloadBlockchainCertRequest.
-        :type: str
+        :type cert_type: str
         """
         self._cert_type = cert_type
 

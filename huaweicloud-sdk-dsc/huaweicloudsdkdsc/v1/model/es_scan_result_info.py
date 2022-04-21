@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EsScanResultInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class EsScanResultInfo:
     }
 
     def __init__(self, task_id=None, index_name=None, type_id=None, type_name=None, risk_level=None, sensitive_data_type=None, match_info=None):
-        """EsScanResultInfo - a model defined in huaweicloud sdk"""
+        """EsScanResultInfo
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 任务ID
+        :type task_id: str
+        :param index_name: 索引名
+        :type index_name: str
+        :param type_id: 类型ID
+        :type type_id: str
+        :param type_name: 类型名
+        :type type_name: str
+        :param risk_level: 风险等级
+        :type risk_level: int
+        :param sensitive_data_type: 敏感数据类型
+        :type sensitive_data_type: list[str]
+        :param match_info: 规则匹配具体信息
+        :type match_info: list[:class:`huaweicloudsdkdsc.v1.EsMatchInfo`]
+        """
         
         
 
@@ -88,7 +105,7 @@ class EsScanResultInfo:
         任务ID
 
         :param task_id: The task_id of this EsScanResultInfo.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -110,7 +127,7 @@ class EsScanResultInfo:
         索引名
 
         :param index_name: The index_name of this EsScanResultInfo.
-        :type: str
+        :type index_name: str
         """
         self._index_name = index_name
 
@@ -132,7 +149,7 @@ class EsScanResultInfo:
         类型ID
 
         :param type_id: The type_id of this EsScanResultInfo.
-        :type: str
+        :type type_id: str
         """
         self._type_id = type_id
 
@@ -154,7 +171,7 @@ class EsScanResultInfo:
         类型名
 
         :param type_name: The type_name of this EsScanResultInfo.
-        :type: str
+        :type type_name: str
         """
         self._type_name = type_name
 
@@ -176,7 +193,7 @@ class EsScanResultInfo:
         风险等级
 
         :param risk_level: The risk_level of this EsScanResultInfo.
-        :type: int
+        :type risk_level: int
         """
         self._risk_level = risk_level
 
@@ -198,7 +215,7 @@ class EsScanResultInfo:
         敏感数据类型
 
         :param sensitive_data_type: The sensitive_data_type of this EsScanResultInfo.
-        :type: list[str]
+        :type sensitive_data_type: list[str]
         """
         self._sensitive_data_type = sensitive_data_type
 
@@ -209,7 +226,7 @@ class EsScanResultInfo:
         规则匹配具体信息
 
         :return: The match_info of this EsScanResultInfo.
-        :rtype: list[EsMatchInfo]
+        :rtype: list[:class:`huaweicloudsdkdsc.v1.EsMatchInfo`]
         """
         return self._match_info
 
@@ -220,7 +237,7 @@ class EsScanResultInfo:
         规则匹配具体信息
 
         :param match_info: The match_info of this EsScanResultInfo.
-        :type: list[EsMatchInfo]
+        :type match_info: list[:class:`huaweicloudsdkdsc.v1.EsMatchInfo`]
         """
         self._match_info = match_info
 

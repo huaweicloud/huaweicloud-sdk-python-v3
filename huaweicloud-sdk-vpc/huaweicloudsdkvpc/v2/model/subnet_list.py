@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SubnetList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class SubnetList:
     }
 
     def __init__(self, id=None):
-        """SubnetList - a model defined in huaweicloud sdk"""
+        """SubnetList
+
+        The model defined in huaweicloud sdk
+
+        :param id: 路由表关联的子网ID
+        :type id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class SubnetList:
         路由表关联的子网ID
 
         :param id: The id of this SubnetList.
-        :type: str
+        :type id: str
         """
         self._id = id
 

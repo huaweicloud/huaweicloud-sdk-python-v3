@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateRuleRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class UpdateRuleRequestBody:
     }
 
     def __init__(self, name=None, description=None, status=None, data_parsing_status=None, sql_field=None, sql_where=None):
-        """UpdateRuleRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateRuleRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param name: 规则名称，支持英文大小写，数字，下划线和中划线,长度1-64
+        :type name: str
+        :param description: 描述，长度0-200
+        :type description: str
+        :param status: 规则状态 0-启用 1-停用，不填写时默认为0-启用
+        :type status: int
+        :param data_parsing_status: 数据解析状态，0-启用 1-停用，不填写时默认为1-禁用
+        :type data_parsing_status: int
+        :param sql_field: SQL查询字段
+        :type sql_field: str
+        :param sql_where: SQL查询条件
+        :type sql_where: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class UpdateRuleRequestBody:
         规则名称，支持英文大小写，数字，下划线和中划线,长度1-64
 
         :param name: The name of this UpdateRuleRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -105,7 +120,7 @@ class UpdateRuleRequestBody:
         描述，长度0-200
 
         :param description: The description of this UpdateRuleRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -127,7 +142,7 @@ class UpdateRuleRequestBody:
         规则状态 0-启用 1-停用，不填写时默认为0-启用
 
         :param status: The status of this UpdateRuleRequestBody.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -149,7 +164,7 @@ class UpdateRuleRequestBody:
         数据解析状态，0-启用 1-停用，不填写时默认为1-禁用
 
         :param data_parsing_status: The data_parsing_status of this UpdateRuleRequestBody.
-        :type: int
+        :type data_parsing_status: int
         """
         self._data_parsing_status = data_parsing_status
 
@@ -171,7 +186,7 @@ class UpdateRuleRequestBody:
         SQL查询字段
 
         :param sql_field: The sql_field of this UpdateRuleRequestBody.
-        :type: str
+        :type sql_field: str
         """
         self._sql_field = sql_field
 
@@ -193,7 +208,7 @@ class UpdateRuleRequestBody:
         SQL查询条件
 
         :param sql_where: The sql_where of this UpdateRuleRequestBody.
-        :type: str
+        :type sql_where: str
         """
         self._sql_where = sql_where
 

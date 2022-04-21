@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateFunctionTriggerRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateFunctionTriggerRequest:
     }
 
     def __init__(self, function_urn=None, body=None):
-        """CreateFunctionTriggerRequest - a model defined in huaweicloud sdk"""
+        """CreateFunctionTriggerRequest
+
+        The model defined in huaweicloud sdk
+
+        :param function_urn: 函数的URN，详细解释见FunctionGraph函数模型的描述。
+        :type function_urn: str
+        :param body: Body of the CreateFunctionTriggerRequest
+        :type body: :class:`huaweicloudsdkfunctiongraph.v2.CreateFunctionTriggerRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateFunctionTriggerRequest:
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
         :param function_urn: The function_urn of this CreateFunctionTriggerRequest.
-        :type: str
+        :type function_urn: str
         """
         self._function_urn = function_urn
 
@@ -72,7 +79,7 @@ class CreateFunctionTriggerRequest:
 
 
         :return: The body of this CreateFunctionTriggerRequest.
-        :rtype: CreateFunctionTriggerRequestBody
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CreateFunctionTriggerRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CreateFunctionTriggerRequest:
 
 
         :param body: The body of this CreateFunctionTriggerRequest.
-        :type: CreateFunctionTriggerRequestBody
+        :type body: :class:`huaweicloudsdkfunctiongraph.v2.CreateFunctionTriggerRequestBody`
         """
         self._body = body
 

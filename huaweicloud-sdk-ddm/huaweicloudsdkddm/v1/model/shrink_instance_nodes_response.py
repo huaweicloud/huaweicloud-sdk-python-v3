@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShrinkInstanceNodesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShrinkInstanceNodesResponse(SdkResponse):
     }
 
     def __init__(self, instance_id=None, instance_name=None, job_id=None):
-        """ShrinkInstanceNodesResponse - a model defined in huaweicloud sdk"""
+        """ShrinkInstanceNodesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: DDM实例ID。
+        :type instance_id: str
+        :param instance_name: DDM实例名称。
+        :type instance_name: str
+        :param job_id: 任务ID。
+        :type job_id: str
+        """
         
         super(ShrinkInstanceNodesResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ShrinkInstanceNodesResponse(SdkResponse):
         DDM实例ID。
 
         :param instance_id: The instance_id of this ShrinkInstanceNodesResponse.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -90,7 +99,7 @@ class ShrinkInstanceNodesResponse(SdkResponse):
         DDM实例名称。
 
         :param instance_name: The instance_name of this ShrinkInstanceNodesResponse.
-        :type: str
+        :type instance_name: str
         """
         self._instance_name = instance_name
 
@@ -112,7 +121,7 @@ class ShrinkInstanceNodesResponse(SdkResponse):
         任务ID。
 
         :param job_id: The job_id of this ShrinkInstanceNodesResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 

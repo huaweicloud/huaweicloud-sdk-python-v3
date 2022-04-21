@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDatasourcesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListDatasourcesResponse(SdkResponse):
     }
 
     def __init__(self, total=None, size=None, entities=None):
-        """ListDatasourcesResponse - a model defined in huaweicloud sdk"""
+        """ListDatasourcesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 返回所有满足条件的对象个数
+        :type total: int
+        :param size: 返回对象的大小
+        :type size: int
+        :param entities: 返回的实体对象
+        :type entities: list[:class:`huaweicloudsdkroma.v2.DataSourceRsp`]
+        """
         
         super(ListDatasourcesResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListDatasourcesResponse(SdkResponse):
         返回所有满足条件的对象个数
 
         :param total: The total of this ListDatasourcesResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -90,7 +99,7 @@ class ListDatasourcesResponse(SdkResponse):
         返回对象的大小
 
         :param size: The size of this ListDatasourcesResponse.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -101,7 +110,7 @@ class ListDatasourcesResponse(SdkResponse):
         返回的实体对象
 
         :return: The entities of this ListDatasourcesResponse.
-        :rtype: list[DataSourceRsp]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.DataSourceRsp`]
         """
         return self._entities
 
@@ -112,7 +121,7 @@ class ListDatasourcesResponse(SdkResponse):
         返回的实体对象
 
         :param entities: The entities of this ListDatasourcesResponse.
-        :type: list[DataSourceRsp]
+        :type entities: list[:class:`huaweicloudsdkroma.v2.DataSourceRsp`]
         """
         self._entities = entities
 

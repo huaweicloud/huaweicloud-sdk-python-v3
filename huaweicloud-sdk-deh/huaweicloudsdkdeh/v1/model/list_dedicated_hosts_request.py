@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDedicatedHostsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class ListDedicatedHostsRequest:
     }
 
     def __init__(self, dedicated_host_id=None, name=None, host_type=None, host_type_name=None, flavor=None, state=None, tenant=None, availability_zone=None, limit=None, marker=None, tags=None, instance_uuid=None, released_at=None, changes_since=None):
-        """ListDedicatedHostsRequest - a model defined in huaweicloud sdk"""
+        """ListDedicatedHostsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param dedicated_host_id: 专属主机ID。
+        :type dedicated_host_id: str
+        :param name: 专属主机名称。
+        :type name: str
+        :param host_type: 专属主机类型。
+        :type host_type: str
+        :param host_type_name: 专属主机类型的名称。
+        :type host_type_name: str
+        :param flavor: 规格ID。
+        :type flavor: str
+        :param state: 专属主机状态。  取值范围：“available”、“fault”或“released”。
+        :type state: str
+        :param tenant: 取值范围：租户ID或“all”。  只有管理员可以指定该参数。
+        :type tenant: str
+        :param availability_zone: 专属主机所属AZ。
+        :type availability_zone: str
+        :param limit: 每个页面上显示的条目数。
+        :type limit: int
+        :param marker: 该值是上一页最后一条记录的ID。  如果“marker”取值无效，将会返回“400”错误码。
+        :type marker: str
+        :param tags: 专属主机标签。
+        :type tags: str
+        :param instance_uuid: 专属主机上的云服务器ID。
+        :type instance_uuid: str
+        :param released_at: 专属主机的释放时间。
+        :type released_at: str
+        :param changes_since: 当专属主机更新了状态时，按日期和时间戳过滤响应。为了便于记录更改，还可能返回最近删除的专属主机。  日期和时间戳的格式为ISO 8601：CCYY-MM-DDThh:mm:ss±hh:mm  如果包含“hh:mm”值，则将时区作为UTC的偏移量返回。例如，“2015-08-27T09:49:58-05:00”。如果您省略时区，则假定为UTC时区。
+        :type changes_since: str
+        """
         
         
 
@@ -123,7 +154,7 @@ class ListDedicatedHostsRequest:
         专属主机ID。
 
         :param dedicated_host_id: The dedicated_host_id of this ListDedicatedHostsRequest.
-        :type: str
+        :type dedicated_host_id: str
         """
         self._dedicated_host_id = dedicated_host_id
 
@@ -145,7 +176,7 @@ class ListDedicatedHostsRequest:
         专属主机名称。
 
         :param name: The name of this ListDedicatedHostsRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -167,7 +198,7 @@ class ListDedicatedHostsRequest:
         专属主机类型。
 
         :param host_type: The host_type of this ListDedicatedHostsRequest.
-        :type: str
+        :type host_type: str
         """
         self._host_type = host_type
 
@@ -189,7 +220,7 @@ class ListDedicatedHostsRequest:
         专属主机类型的名称。
 
         :param host_type_name: The host_type_name of this ListDedicatedHostsRequest.
-        :type: str
+        :type host_type_name: str
         """
         self._host_type_name = host_type_name
 
@@ -211,7 +242,7 @@ class ListDedicatedHostsRequest:
         规格ID。
 
         :param flavor: The flavor of this ListDedicatedHostsRequest.
-        :type: str
+        :type flavor: str
         """
         self._flavor = flavor
 
@@ -233,7 +264,7 @@ class ListDedicatedHostsRequest:
         专属主机状态。  取值范围：“available”、“fault”或“released”。
 
         :param state: The state of this ListDedicatedHostsRequest.
-        :type: str
+        :type state: str
         """
         self._state = state
 
@@ -255,7 +286,7 @@ class ListDedicatedHostsRequest:
         取值范围：租户ID或“all”。  只有管理员可以指定该参数。
 
         :param tenant: The tenant of this ListDedicatedHostsRequest.
-        :type: str
+        :type tenant: str
         """
         self._tenant = tenant
 
@@ -277,7 +308,7 @@ class ListDedicatedHostsRequest:
         专属主机所属AZ。
 
         :param availability_zone: The availability_zone of this ListDedicatedHostsRequest.
-        :type: str
+        :type availability_zone: str
         """
         self._availability_zone = availability_zone
 
@@ -299,7 +330,7 @@ class ListDedicatedHostsRequest:
         每个页面上显示的条目数。
 
         :param limit: The limit of this ListDedicatedHostsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -321,7 +352,7 @@ class ListDedicatedHostsRequest:
         该值是上一页最后一条记录的ID。  如果“marker”取值无效，将会返回“400”错误码。
 
         :param marker: The marker of this ListDedicatedHostsRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -343,7 +374,7 @@ class ListDedicatedHostsRequest:
         专属主机标签。
 
         :param tags: The tags of this ListDedicatedHostsRequest.
-        :type: str
+        :type tags: str
         """
         self._tags = tags
 
@@ -365,7 +396,7 @@ class ListDedicatedHostsRequest:
         专属主机上的云服务器ID。
 
         :param instance_uuid: The instance_uuid of this ListDedicatedHostsRequest.
-        :type: str
+        :type instance_uuid: str
         """
         self._instance_uuid = instance_uuid
 
@@ -387,7 +418,7 @@ class ListDedicatedHostsRequest:
         专属主机的释放时间。
 
         :param released_at: The released_at of this ListDedicatedHostsRequest.
-        :type: str
+        :type released_at: str
         """
         self._released_at = released_at
 
@@ -409,7 +440,7 @@ class ListDedicatedHostsRequest:
         当专属主机更新了状态时，按日期和时间戳过滤响应。为了便于记录更改，还可能返回最近删除的专属主机。  日期和时间戳的格式为ISO 8601：CCYY-MM-DDThh:mm:ss±hh:mm  如果包含“hh:mm”值，则将时区作为UTC的偏移量返回。例如，“2015-08-27T09:49:58-05:00”。如果您省略时区，则假定为UTC时区。
 
         :param changes_since: The changes_since of this ListDedicatedHostsRequest.
-        :type: str
+        :type changes_since: str
         """
         self._changes_since = changes_since
 

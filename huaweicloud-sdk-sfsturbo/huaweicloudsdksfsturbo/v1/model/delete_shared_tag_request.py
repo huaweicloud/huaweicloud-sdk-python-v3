@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteSharedTagRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteSharedTagRequest:
     }
 
     def __init__(self, share_id=None, key=None):
-        """DeleteSharedTagRequest - a model defined in huaweicloud sdk"""
+        """DeleteSharedTagRequest
+
+        The model defined in huaweicloud sdk
+
+        :param share_id: 共享ID
+        :type share_id: str
+        :param key: 标签的键,最大长度36个字符。  key不能为空，不能包含非打印字符ASCII(0-31)，“&#x3D;”,“*”,“&lt;”,“&gt;”,“\\”,“,”,“|”,“/”。只能包含大写字母、小写字母、数字，特殊字符\&quot;-\&quot;和\&quot;_\&quot;。  说明：调用删除共享标签接口删除标签时，如果标签的键中存在不被URL直接解析的特殊字符，需要对标签的键进行URL转义处理。
+        :type key: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class DeleteSharedTagRequest:
         共享ID
 
         :param share_id: The share_id of this DeleteSharedTagRequest.
-        :type: str
+        :type share_id: str
         """
         self._share_id = share_id
 
@@ -83,7 +90,7 @@ class DeleteSharedTagRequest:
         标签的键,最大长度36个字符。  key不能为空，不能包含非打印字符ASCII(0-31)，“=”,“*”,“<”,“>”,“\\”,“,”,“|”,“/”。只能包含大写字母、小写字母、数字，特殊字符\"-\"和\"_\"。  说明：调用删除共享标签接口删除标签时，如果标签的键中存在不被URL直接解析的特殊字符，需要对标签的键进行URL转义处理。
 
         :param key: The key of this DeleteSharedTagRequest.
-        :type: str
+        :type key: str
         """
         self._key = key
 

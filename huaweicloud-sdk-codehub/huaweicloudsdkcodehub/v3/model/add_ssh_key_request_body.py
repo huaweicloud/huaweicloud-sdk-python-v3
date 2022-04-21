@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddSshKeyRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AddSshKeyRequestBody:
     }
 
     def __init__(self, key=None, title=None):
-        """AddSshKeyRequestBody - a model defined in huaweicloud sdk"""
+        """AddSshKeyRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param key: 密钥
+        :type key: str
+        :param title: 密钥名称
+        :type title: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class AddSshKeyRequestBody:
         密钥
 
         :param key: The key of this AddSshKeyRequestBody.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -83,7 +90,7 @@ class AddSshKeyRequestBody:
         密钥名称
 
         :param title: The title of this AddSshKeyRequestBody.
-        :type: str
+        :type title: str
         """
         self._title = title
 

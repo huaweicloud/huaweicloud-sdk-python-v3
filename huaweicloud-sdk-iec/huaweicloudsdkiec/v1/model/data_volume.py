@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DataVolume:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DataVolume:
     }
 
     def __init__(self, size=None, volume_type=None):
-        """DataVolume - a model defined in huaweicloud sdk"""
+        """DataVolume
+
+        The model defined in huaweicloud sdk
+
+        :param size: 数据盘大小，容量单位为GB，输入大小范围为[1,500]。
+        :type size: int
+        :param volume_type: 边缘实例数据盘对应的磁盘类型，需要与站点所提供的磁盘类型相匹配。
+        :type volume_type: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class DataVolume:
         数据盘大小，容量单位为GB，输入大小范围为[1,500]。
 
         :param size: The size of this DataVolume.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -83,7 +90,7 @@ class DataVolume:
         边缘实例数据盘对应的磁盘类型，需要与站点所提供的磁盘类型相匹配。
 
         :param volume_type: The volume_type of this DataVolume.
-        :type: str
+        :type volume_type: str
         """
         self._volume_type = volume_type
 

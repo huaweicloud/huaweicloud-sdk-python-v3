@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateAppRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class CreateAppRequest:
     }
 
     def __init__(self, content_type=None, authorization=None, x_sdk_date=None, x_project_id=None, body=None):
-        """CreateAppRequest - a model defined in huaweicloud sdk"""
+        """CreateAppRequest
+
+        The model defined in huaweicloud sdk
+
+        :param content_type: 内容类型。
+        :type content_type: str
+        :param authorization: 使用AK/SK方式认证时必选，携带的鉴权信息。
+        :type authorization: str
+        :param x_sdk_date: 使用AK/SK方式认证时必选，请求的发生时间。
+        :type x_sdk_date: str
+        :param x_project_id: 使用AK/SK方式认证时必选，携带项目ID信息。
+        :type x_project_id: str
+        :param body: Body of the CreateAppRequest
+        :type body: :class:`huaweicloudsdkcloudrtc.v2.AppReq`
+        """
         
         
 
@@ -77,7 +90,7 @@ class CreateAppRequest:
         内容类型。
 
         :param content_type: The content_type of this CreateAppRequest.
-        :type: str
+        :type content_type: str
         """
         self._content_type = content_type
 
@@ -99,7 +112,7 @@ class CreateAppRequest:
         使用AK/SK方式认证时必选，携带的鉴权信息。
 
         :param authorization: The authorization of this CreateAppRequest.
-        :type: str
+        :type authorization: str
         """
         self._authorization = authorization
 
@@ -121,7 +134,7 @@ class CreateAppRequest:
         使用AK/SK方式认证时必选，请求的发生时间。
 
         :param x_sdk_date: The x_sdk_date of this CreateAppRequest.
-        :type: str
+        :type x_sdk_date: str
         """
         self._x_sdk_date = x_sdk_date
 
@@ -143,7 +156,7 @@ class CreateAppRequest:
         使用AK/SK方式认证时必选，携带项目ID信息。
 
         :param x_project_id: The x_project_id of this CreateAppRequest.
-        :type: str
+        :type x_project_id: str
         """
         self._x_project_id = x_project_id
 
@@ -153,7 +166,7 @@ class CreateAppRequest:
 
 
         :return: The body of this CreateAppRequest.
-        :rtype: AppReq
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.AppReq`
         """
         return self._body
 
@@ -163,7 +176,7 @@ class CreateAppRequest:
 
 
         :param body: The body of this CreateAppRequest.
-        :type: AppReq
+        :type body: :class:`huaweicloudsdkcloudrtc.v2.AppReq`
         """
         self._body = body
 

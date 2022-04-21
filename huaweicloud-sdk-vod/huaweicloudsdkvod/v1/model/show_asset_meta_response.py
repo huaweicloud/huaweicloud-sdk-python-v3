@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowAssetMetaResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowAssetMetaResponse(SdkResponse):
     }
 
     def __init__(self, asset_info_array=None, is_truncated=None, total=None):
-        """ShowAssetMetaResponse - a model defined in huaweicloud sdk"""
+        """ShowAssetMetaResponse
+
+        The model defined in huaweicloud sdk
+
+        :param asset_info_array: 媒资信息列表。
+        :type asset_info_array: list[:class:`huaweicloudsdkvod.v1.AssetInfo`]
+        :param is_truncated: 列表是否被截断。  取值如下： - 1：表示本次查询未返回全部结果。 - 0：表示本次查询已经返回了全部结果。
+        :type is_truncated: int
+        :param total: 查询媒资总数。  &gt; 暂只能统计2万个媒资，若您需要查询具体的媒资总数，请[提交工单](https://console.huaweicloud.com/ticket/?#/ticketindex/business?productTypeId&#x3D;462902cc39a04ab3a429df872021f970)申请。
+        :type total: int
+        """
         
         super(ShowAssetMetaResponse, self).__init__()
 
@@ -57,7 +66,7 @@ class ShowAssetMetaResponse(SdkResponse):
         媒资信息列表。
 
         :return: The asset_info_array of this ShowAssetMetaResponse.
-        :rtype: list[AssetInfo]
+        :rtype: list[:class:`huaweicloudsdkvod.v1.AssetInfo`]
         """
         return self._asset_info_array
 
@@ -68,7 +77,7 @@ class ShowAssetMetaResponse(SdkResponse):
         媒资信息列表。
 
         :param asset_info_array: The asset_info_array of this ShowAssetMetaResponse.
-        :type: list[AssetInfo]
+        :type asset_info_array: list[:class:`huaweicloudsdkvod.v1.AssetInfo`]
         """
         self._asset_info_array = asset_info_array
 
@@ -90,7 +99,7 @@ class ShowAssetMetaResponse(SdkResponse):
         列表是否被截断。  取值如下： - 1：表示本次查询未返回全部结果。 - 0：表示本次查询已经返回了全部结果。
 
         :param is_truncated: The is_truncated of this ShowAssetMetaResponse.
-        :type: int
+        :type is_truncated: int
         """
         self._is_truncated = is_truncated
 
@@ -112,7 +121,7 @@ class ShowAssetMetaResponse(SdkResponse):
         查询媒资总数。  > 暂只能统计2万个媒资，若您需要查询具体的媒资总数，请[提交工单](https://console.huaweicloud.com/ticket/?#/ticketindex/business?productTypeId=462902cc39a04ab3a429df872021f970)申请。
 
         :param total: The total of this ShowAssetMetaResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSecretVersionsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListSecretVersionsResponse(SdkResponse):
     }
 
     def __init__(self, version_metadatas=None, page_info=None):
-        """ListSecretVersionsResponse - a model defined in huaweicloud sdk"""
+        """ListSecretVersionsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param version_metadatas: version_metadata对象。
+        :type version_metadatas: list[:class:`huaweicloudsdkcsms.v1.VersionMetadata`]
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkcsms.v1.PageInfo`
+        """
         
         super(ListSecretVersionsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListSecretVersionsResponse(SdkResponse):
         version_metadata对象。
 
         :return: The version_metadatas of this ListSecretVersionsResponse.
-        :rtype: list[VersionMetadata]
+        :rtype: list[:class:`huaweicloudsdkcsms.v1.VersionMetadata`]
         """
         return self._version_metadatas
 
@@ -63,7 +70,7 @@ class ListSecretVersionsResponse(SdkResponse):
         version_metadata对象。
 
         :param version_metadatas: The version_metadatas of this ListSecretVersionsResponse.
-        :type: list[VersionMetadata]
+        :type version_metadatas: list[:class:`huaweicloudsdkcsms.v1.VersionMetadata`]
         """
         self._version_metadatas = version_metadatas
 
@@ -73,7 +80,7 @@ class ListSecretVersionsResponse(SdkResponse):
 
 
         :return: The page_info of this ListSecretVersionsResponse.
-        :rtype: PageInfo
+        :rtype: :class:`huaweicloudsdkcsms.v1.PageInfo`
         """
         return self._page_info
 
@@ -83,7 +90,7 @@ class ListSecretVersionsResponse(SdkResponse):
 
 
         :param page_info: The page_info of this ListSecretVersionsResponse.
-        :type: PageInfo
+        :type page_info: :class:`huaweicloudsdkcsms.v1.PageInfo`
         """
         self._page_info = page_info
 

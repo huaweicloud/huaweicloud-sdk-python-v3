@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Whitelist:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Whitelist:
     }
 
     def __init__(self, group_name=None, ip_list=None):
-        """Whitelist - a model defined in huaweicloud sdk"""
+        """Whitelist
+
+        The model defined in huaweicloud sdk
+
+        :param group_name: 白名单分组名称，每个实例支持创建4个分组。
+        :type group_name: str
+        :param ip_list: 白名单分组下的IP列表,每个实例最多可以添加20个IP地址/地址段。如果有多个，可以用逗号分隔。不支持的IP和地址段：0.0.0.0和0.0.0.0/0
+        :type ip_list: list[str]
+        """
         
         
 
@@ -61,7 +68,7 @@ class Whitelist:
         白名单分组名称，每个实例支持创建4个分组。
 
         :param group_name: The group_name of this Whitelist.
-        :type: str
+        :type group_name: str
         """
         self._group_name = group_name
 
@@ -83,7 +90,7 @@ class Whitelist:
         白名单分组下的IP列表,每个实例最多可以添加20个IP地址/地址段。如果有多个，可以用逗号分隔。不支持的IP和地址段：0.0.0.0和0.0.0.0/0
 
         :param ip_list: The ip_list of this Whitelist.
-        :type: list[str]
+        :type ip_list: list[str]
         """
         self._ip_list = ip_list
 

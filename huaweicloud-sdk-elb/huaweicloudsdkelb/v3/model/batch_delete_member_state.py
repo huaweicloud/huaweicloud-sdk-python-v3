@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchDeleteMemberState:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchDeleteMemberState:
     }
 
     def __init__(self, id=None, ret_status=None):
-        """BatchDeleteMemberState - a model defined in huaweicloud sdk"""
+        """BatchDeleteMemberState
+
+        The model defined in huaweicloud sdk
+
+        :param id: 后端服务器ID。
+        :type id: str
+        :param ret_status: 当前后端服务器删除结果状态。取值： - successful：删除成功。 - not found：member不存在。
+        :type ret_status: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class BatchDeleteMemberState:
         后端服务器ID。
 
         :param id: The id of this BatchDeleteMemberState.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -83,7 +90,7 @@ class BatchDeleteMemberState:
         当前后端服务器删除结果状态。取值： - successful：删除成功。 - not found：member不存在。
 
         :param ret_status: The ret_status of this BatchDeleteMemberState.
-        :type: str
+        :type ret_status: str
         """
         self._ret_status = ret_status
 

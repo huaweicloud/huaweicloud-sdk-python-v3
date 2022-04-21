@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchAddOrRemoveResourceInstanceBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchAddOrRemoveResourceInstanceBody:
     }
 
     def __init__(self, tags=None, action=None):
-        """BatchAddOrRemoveResourceInstanceBody - a model defined in huaweicloud sdk"""
+        """BatchAddOrRemoveResourceInstanceBody
+
+        The model defined in huaweicloud sdk
+
+        :param tags: 标签列表，没有标签默认为空数组。
+        :type tags: list[:class:`huaweicloudsdkvpcep.v1.ResourceTag`]
+        :param action: 操作标识：仅限于 create（创建）、 delete（删除）。
+        :type action: str
+        """
         
         
 
@@ -51,7 +58,7 @@ class BatchAddOrRemoveResourceInstanceBody:
         标签列表，没有标签默认为空数组。
 
         :return: The tags of this BatchAddOrRemoveResourceInstanceBody.
-        :rtype: list[ResourceTag]
+        :rtype: list[:class:`huaweicloudsdkvpcep.v1.ResourceTag`]
         """
         return self._tags
 
@@ -62,7 +69,7 @@ class BatchAddOrRemoveResourceInstanceBody:
         标签列表，没有标签默认为空数组。
 
         :param tags: The tags of this BatchAddOrRemoveResourceInstanceBody.
-        :type: list[ResourceTag]
+        :type tags: list[:class:`huaweicloudsdkvpcep.v1.ResourceTag`]
         """
         self._tags = tags
 
@@ -84,7 +91,7 @@ class BatchAddOrRemoveResourceInstanceBody:
         操作标识：仅限于 create（创建）、 delete（删除）。
 
         :param action: The action of this BatchAddOrRemoveResourceInstanceBody.
-        :type: str
+        :type action: str
         """
         self._action = action
 

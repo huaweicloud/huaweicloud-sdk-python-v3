@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class User:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class User:
     }
 
     def __init__(self, client_certificate_data=None, client_key_data=None):
-        """User - a model defined in huaweicloud sdk"""
+        """User
+
+        The model defined in huaweicloud sdk
+
+        :param client_certificate_data: 客户端证书。 
+        :type client_certificate_data: str
+        :param client_key_data: 包含来自TLS客户端密钥文件的PEM编码数据。 
+        :type client_key_data: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class User:
         客户端证书。 
 
         :param client_certificate_data: The client_certificate_data of this User.
-        :type: str
+        :type client_certificate_data: str
         """
         self._client_certificate_data = client_certificate_data
 
@@ -85,7 +92,7 @@ class User:
         包含来自TLS客户端密钥文件的PEM编码数据。 
 
         :param client_key_data: The client_key_data of this User.
-        :type: str
+        :type client_key_data: str
         """
         self._client_key_data = client_key_data
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateFollow302SwitchRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateFollow302SwitchRequest:
     }
 
     def __init__(self, domain_id=None, enterprise_project_id=None, body=None):
-        """UpdateFollow302SwitchRequest - a model defined in huaweicloud sdk"""
+        """UpdateFollow302SwitchRequest
+
+        The model defined in huaweicloud sdk
+
+        :param domain_id: 加速域名id。获取方法请参见查询加速域名。
+        :type domain_id: str
+        :param enterprise_project_id: 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子账号调用接口时，该参数必传。
+        :type enterprise_project_id: str
+        :param body: Body of the UpdateFollow302SwitchRequest
+        :type body: :class:`huaweicloudsdkcdn.v1.Follow302StatusRequest`
+        """
         
         
 
@@ -67,7 +76,7 @@ class UpdateFollow302SwitchRequest:
         加速域名id。获取方法请参见查询加速域名。
 
         :param domain_id: The domain_id of this UpdateFollow302SwitchRequest.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -89,7 +98,7 @@ class UpdateFollow302SwitchRequest:
         当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子账号调用接口时，该参数必传。
 
         :param enterprise_project_id: The enterprise_project_id of this UpdateFollow302SwitchRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -99,7 +108,7 @@ class UpdateFollow302SwitchRequest:
 
 
         :return: The body of this UpdateFollow302SwitchRequest.
-        :rtype: Follow302StatusRequest
+        :rtype: :class:`huaweicloudsdkcdn.v1.Follow302StatusRequest`
         """
         return self._body
 
@@ -109,7 +118,7 @@ class UpdateFollow302SwitchRequest:
 
 
         :param body: The body of this UpdateFollow302SwitchRequest.
-        :type: Follow302StatusRequest
+        :type body: :class:`huaweicloudsdkcdn.v1.Follow302StatusRequest`
         """
         self._body = body
 

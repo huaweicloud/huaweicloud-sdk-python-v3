@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FlavorInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class FlavorInfo:
     }
 
     def __init__(self, engine_name=None, type=None, vcpus=None, ram=None, spec_code=None, az_status=None, engine_versions=None):
-        """FlavorInfo - a model defined in huaweicloud sdk"""
+        """FlavorInfo
+
+        The model defined in huaweicloud sdk
+
+        :param engine_name: 引擎名称。
+        :type engine_name: str
+        :param type: 节点类型。文档数据库包含以下几种节点类型： - mongos - shard - config - replica - single
+        :type type: str
+        :param vcpus: CPU核数。
+        :type vcpus: str
+        :param ram: 内存大小，单位为兆字节。
+        :type ram: str
+        :param spec_code: 资源规格编码。例如：dds.c3.xlarge.2.shard。  - “dds”表示文档数据库服务产品。 - “c3.xlarge.2”表示节点性能规格，为高内存类型。 - “shard”表示节点类型。
+        :type spec_code: str
+        :param az_status: &#39;支持该规格的可用区ID。&#39; 示例：[\&quot;cn-east-2a\&quot;,\&quot;cn-east-2b\&quot;,\&quot;cn-east-2c\&quot;]。
+        :type az_status: object
+        :param engine_versions: 数据库版本号列表。针对DDS引擎的mongos节点，例如：{\&quot;3.4\&quot;, \&quot;4.0\&quot;}
+        :type engine_versions: list[str]
+        """
         
         
 
@@ -81,7 +98,7 @@ class FlavorInfo:
         引擎名称。
 
         :param engine_name: The engine_name of this FlavorInfo.
-        :type: str
+        :type engine_name: str
         """
         self._engine_name = engine_name
 
@@ -103,7 +120,7 @@ class FlavorInfo:
         节点类型。文档数据库包含以下几种节点类型： - mongos - shard - config - replica - single
 
         :param type: The type of this FlavorInfo.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -125,7 +142,7 @@ class FlavorInfo:
         CPU核数。
 
         :param vcpus: The vcpus of this FlavorInfo.
-        :type: str
+        :type vcpus: str
         """
         self._vcpus = vcpus
 
@@ -147,7 +164,7 @@ class FlavorInfo:
         内存大小，单位为兆字节。
 
         :param ram: The ram of this FlavorInfo.
-        :type: str
+        :type ram: str
         """
         self._ram = ram
 
@@ -169,7 +186,7 @@ class FlavorInfo:
         资源规格编码。例如：dds.c3.xlarge.2.shard。  - “dds”表示文档数据库服务产品。 - “c3.xlarge.2”表示节点性能规格，为高内存类型。 - “shard”表示节点类型。
 
         :param spec_code: The spec_code of this FlavorInfo.
-        :type: str
+        :type spec_code: str
         """
         self._spec_code = spec_code
 
@@ -191,7 +208,7 @@ class FlavorInfo:
         '支持该规格的可用区ID。' 示例：[\"cn-east-2a\",\"cn-east-2b\",\"cn-east-2c\"]。
 
         :param az_status: The az_status of this FlavorInfo.
-        :type: object
+        :type az_status: object
         """
         self._az_status = az_status
 
@@ -213,7 +230,7 @@ class FlavorInfo:
         数据库版本号列表。针对DDS引擎的mongos节点，例如：{\"3.4\", \"4.0\"}
 
         :param engine_versions: The engine_versions of this FlavorInfo.
-        :type: list[str]
+        :type engine_versions: list[str]
         """
         self._engine_versions = engine_versions
 

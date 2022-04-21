@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateServerMetadataRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateServerMetadataRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """UpdateServerMetadataRequest - a model defined in huaweicloud sdk"""
+        """UpdateServerMetadataRequest
+
+        The model defined in huaweicloud sdk
+
+        :param server_id: 云服务器ID。
+        :type server_id: str
+        :param body: Body of the UpdateServerMetadataRequest
+        :type body: :class:`huaweicloudsdkecs.v2.UpdateServerMetadataRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateServerMetadataRequest:
         云服务器ID。
 
         :param server_id: The server_id of this UpdateServerMetadataRequest.
-        :type: str
+        :type server_id: str
         """
         self._server_id = server_id
 
@@ -72,7 +79,7 @@ class UpdateServerMetadataRequest:
 
 
         :return: The body of this UpdateServerMetadataRequest.
-        :rtype: UpdateServerMetadataRequestBody
+        :rtype: :class:`huaweicloudsdkecs.v2.UpdateServerMetadataRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateServerMetadataRequest:
 
 
         :param body: The body of this UpdateServerMetadataRequest.
-        :type: UpdateServerMetadataRequestBody
+        :type body: :class:`huaweicloudsdkecs.v2.UpdateServerMetadataRequestBody`
         """
         self._body = body
 

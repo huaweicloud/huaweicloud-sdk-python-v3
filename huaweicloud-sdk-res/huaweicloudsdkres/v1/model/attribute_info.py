@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AttributeInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class AttributeInfo:
     }
 
     def __init__(self, rank_feature_pairs=None, numerical_attrs=None, num_statistics_type=None):
-        """AttributeInfo - a model defined in huaweicloud sdk"""
+        """AttributeInfo
+
+        The model defined in huaweicloud sdk
+
+        :param rank_feature_pairs: 属性匹配对。
+        :type rank_feature_pairs: list[:class:`huaweicloudsdkres.v1.RankFeaturePair`]
+        :param numerical_attrs: 属性权重。
+        :type numerical_attrs: list[:class:`huaweicloudsdkres.v1.NumericalAttr`]
+        :param num_statistics_type: 统计方式： - ORDER，顺序 - ABS，绝对值
+        :type num_statistics_type: str
+        """
         
         
 
@@ -57,7 +66,7 @@ class AttributeInfo:
         属性匹配对。
 
         :return: The rank_feature_pairs of this AttributeInfo.
-        :rtype: list[RankFeaturePair]
+        :rtype: list[:class:`huaweicloudsdkres.v1.RankFeaturePair`]
         """
         return self._rank_feature_pairs
 
@@ -68,7 +77,7 @@ class AttributeInfo:
         属性匹配对。
 
         :param rank_feature_pairs: The rank_feature_pairs of this AttributeInfo.
-        :type: list[RankFeaturePair]
+        :type rank_feature_pairs: list[:class:`huaweicloudsdkres.v1.RankFeaturePair`]
         """
         self._rank_feature_pairs = rank_feature_pairs
 
@@ -79,7 +88,7 @@ class AttributeInfo:
         属性权重。
 
         :return: The numerical_attrs of this AttributeInfo.
-        :rtype: list[NumericalAttr]
+        :rtype: list[:class:`huaweicloudsdkres.v1.NumericalAttr`]
         """
         return self._numerical_attrs
 
@@ -90,7 +99,7 @@ class AttributeInfo:
         属性权重。
 
         :param numerical_attrs: The numerical_attrs of this AttributeInfo.
-        :type: list[NumericalAttr]
+        :type numerical_attrs: list[:class:`huaweicloudsdkres.v1.NumericalAttr`]
         """
         self._numerical_attrs = numerical_attrs
 
@@ -112,7 +121,7 @@ class AttributeInfo:
         统计方式： - ORDER，顺序 - ABS，绝对值
 
         :param num_statistics_type: The num_statistics_type of this AttributeInfo.
-        :type: str
+        :type num_statistics_type: str
         """
         self._num_statistics_type = num_statistics_type
 

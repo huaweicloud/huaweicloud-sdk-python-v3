@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateRouteTableReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CreateRouteTableReq:
     }
 
     def __init__(self, name=None, routes=None, vpc_id=None, description=None):
-        """CreateRouteTableReq - a model defined in huaweicloud sdk"""
+        """CreateRouteTableReq
+
+        The model defined in huaweicloud sdk
+
+        :param name: 功能说明：路由表名称  取值范围：0-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
+        :type name: str
+        :param routes: 功能说明：路由对象，参见route字段说明  约束：每个路由表最大关联200条路由
+        :type routes: list[:class:`huaweicloudsdkvpc.v2.RouteTableRoute`]
+        :param vpc_id: 路由表所在的虚拟私有云ID
+        :type vpc_id: str
+        :param description: 功能说明：路由表描述信息  取值范围：0-255个字符，不能包含“&lt;”和“&gt;”
+        :type description: str
+        """
         
         
 
@@ -72,7 +83,7 @@ class CreateRouteTableReq:
         功能说明：路由表名称  取值范围：0-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
         :param name: The name of this CreateRouteTableReq.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -83,7 +94,7 @@ class CreateRouteTableReq:
         功能说明：路由对象，参见route字段说明  约束：每个路由表最大关联200条路由
 
         :return: The routes of this CreateRouteTableReq.
-        :rtype: list[RouteTableRoute]
+        :rtype: list[:class:`huaweicloudsdkvpc.v2.RouteTableRoute`]
         """
         return self._routes
 
@@ -94,7 +105,7 @@ class CreateRouteTableReq:
         功能说明：路由对象，参见route字段说明  约束：每个路由表最大关联200条路由
 
         :param routes: The routes of this CreateRouteTableReq.
-        :type: list[RouteTableRoute]
+        :type routes: list[:class:`huaweicloudsdkvpc.v2.RouteTableRoute`]
         """
         self._routes = routes
 
@@ -116,7 +127,7 @@ class CreateRouteTableReq:
         路由表所在的虚拟私有云ID
 
         :param vpc_id: The vpc_id of this CreateRouteTableReq.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -138,7 +149,7 @@ class CreateRouteTableReq:
         功能说明：路由表描述信息  取值范围：0-255个字符，不能包含“<”和“>”
 
         :param description: The description of this CreateRouteTableReq.
-        :type: str
+        :type description: str
         """
         self._description = description
 

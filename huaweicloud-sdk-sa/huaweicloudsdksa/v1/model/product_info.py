@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ProductInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ProductInfo:
     }
 
     def __init__(self, domain_id=None, project_id=None, region=None, company_name=None, product_name=None):
-        """ProductInfo - a model defined in huaweicloud sdk"""
+        """ProductInfo
+
+        The model defined in huaweicloud sdk
+
+        :param domain_id: 数据源产品所属账号的ID。
+        :type domain_id: str
+        :param project_id: 数据源产品所属项目的ID。
+        :type project_id: str
+        :param region: 数据源产品所在区域。
+        :type region: str
+        :param company_name: 数据源产品所属公司的名称。
+        :type company_name: str
+        :param product_name: 数据源产品的名称。
+        :type product_name: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class ProductInfo:
         数据源产品所属账号的ID。
 
         :param domain_id: The domain_id of this ProductInfo.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -100,7 +113,7 @@ class ProductInfo:
         数据源产品所属项目的ID。
 
         :param project_id: The project_id of this ProductInfo.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -122,7 +135,7 @@ class ProductInfo:
         数据源产品所在区域。
 
         :param region: The region of this ProductInfo.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -144,7 +157,7 @@ class ProductInfo:
         数据源产品所属公司的名称。
 
         :param company_name: The company_name of this ProductInfo.
-        :type: str
+        :type company_name: str
         """
         self._company_name = company_name
 
@@ -166,7 +179,7 @@ class ProductInfo:
         数据源产品的名称。
 
         :param product_name: The product_name of this ProductInfo.
-        :type: str
+        :type product_name: str
         """
         self._product_name = product_name
 

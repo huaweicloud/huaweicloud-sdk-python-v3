@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IpInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class IpInfo:
     }
 
     def __init__(self, ip=None, description=None):
-        """IpInfo - a model defined in huaweicloud sdk"""
+        """IpInfo
+
+        The model defined in huaweicloud sdk
+
+        :param ip: IP地址组中的IP地址。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt,dt_test)
+        :type ip: str
+        :param description: IP地址组中ip的备注信息
+        :type description: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class IpInfo:
         IP地址组中的IP地址。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt,dt_test)
 
         :param ip: The ip of this IpInfo.
-        :type: str
+        :type ip: str
         """
         self._ip = ip
 
@@ -83,7 +90,7 @@ class IpInfo:
         IP地址组中ip的备注信息
 
         :param description: The description of this IpInfo.
-        :type: str
+        :type description: str
         """
         self._description = description
 

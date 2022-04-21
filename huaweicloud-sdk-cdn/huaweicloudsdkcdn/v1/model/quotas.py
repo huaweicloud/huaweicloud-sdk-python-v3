@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Quotas:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class Quotas:
     }
 
     def __init__(self, quota_limit=None, type=None, used=None, user_domain_id=None):
-        """Quotas - a model defined in huaweicloud sdk"""
+        """Quotas
+
+        The model defined in huaweicloud sdk
+
+        :param quota_limit: 配额上限
+        :type quota_limit: int
+        :param type: 配额类型
+        :type type: str
+        :param used: 已使用配额数
+        :type used: int
+        :param user_domain_id: 域名所属用户的domain_id。
+        :type user_domain_id: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class Quotas:
         配额上限
 
         :param quota_limit: The quota_limit of this Quotas.
-        :type: int
+        :type quota_limit: int
         """
         self._quota_limit = quota_limit
 
@@ -95,7 +106,7 @@ class Quotas:
         配额类型
 
         :param type: The type of this Quotas.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -117,7 +128,7 @@ class Quotas:
         已使用配额数
 
         :param used: The used of this Quotas.
-        :type: int
+        :type used: int
         """
         self._used = used
 
@@ -139,7 +150,7 @@ class Quotas:
         域名所属用户的domain_id。
 
         :param user_domain_id: The user_domain_id of this Quotas.
-        :type: str
+        :type user_domain_id: str
         """
         self._user_domain_id = user_domain_id
 

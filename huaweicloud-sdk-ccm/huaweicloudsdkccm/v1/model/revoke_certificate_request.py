@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RevokeCertificateRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RevokeCertificateRequest:
     }
 
     def __init__(self, certificate_id=None, body=None):
-        """RevokeCertificateRequest - a model defined in huaweicloud sdk"""
+        """RevokeCertificateRequest
+
+        The model defined in huaweicloud sdk
+
+        :param certificate_id: 所要吊销的私有证书ID。
+        :type certificate_id: str
+        :param body: Body of the RevokeCertificateRequest
+        :type body: :class:`huaweicloudsdkccm.v1.RevokeCertificateRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class RevokeCertificateRequest:
         所要吊销的私有证书ID。
 
         :param certificate_id: The certificate_id of this RevokeCertificateRequest.
-        :type: str
+        :type certificate_id: str
         """
         self._certificate_id = certificate_id
 
@@ -72,7 +79,7 @@ class RevokeCertificateRequest:
 
 
         :return: The body of this RevokeCertificateRequest.
-        :rtype: RevokeCertificateRequestBody
+        :rtype: :class:`huaweicloudsdkccm.v1.RevokeCertificateRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class RevokeCertificateRequest:
 
 
         :param body: The body of this RevokeCertificateRequest.
-        :type: RevokeCertificateRequestBody
+        :type body: :class:`huaweicloudsdkccm.v1.RevokeCertificateRequestBody`
         """
         self._body = body
 

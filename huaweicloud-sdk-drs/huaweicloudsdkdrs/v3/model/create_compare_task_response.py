@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateCompareTaskResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class CreateCompareTaskResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, object_level_compare_create_result=None, data_level_compare_create_result=None, error_code=None, error_msg=None):
-        """CreateCompareTaskResponse - a model defined in huaweicloud sdk"""
+        """CreateCompareTaskResponse
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 任务id。
+        :type job_id: str
+        :param object_level_compare_create_result: 
+        :type object_level_compare_create_result: :class:`huaweicloudsdkdrs.v3.CreateCompareTaskResult`
+        :param data_level_compare_create_result: 
+        :type data_level_compare_create_result: :class:`huaweicloudsdkdrs.v3.CreateCompareTaskResult`
+        :param error_code: 错误码。
+        :type error_code: str
+        :param error_msg: 错误信息。
+        :type error_msg: str
+        """
         
         super(CreateCompareTaskResponse, self).__init__()
 
@@ -78,7 +91,7 @@ class CreateCompareTaskResponse(SdkResponse):
         任务id。
 
         :param job_id: The job_id of this CreateCompareTaskResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -88,7 +101,7 @@ class CreateCompareTaskResponse(SdkResponse):
 
 
         :return: The object_level_compare_create_result of this CreateCompareTaskResponse.
-        :rtype: CreateCompareTaskResult
+        :rtype: :class:`huaweicloudsdkdrs.v3.CreateCompareTaskResult`
         """
         return self._object_level_compare_create_result
 
@@ -98,7 +111,7 @@ class CreateCompareTaskResponse(SdkResponse):
 
 
         :param object_level_compare_create_result: The object_level_compare_create_result of this CreateCompareTaskResponse.
-        :type: CreateCompareTaskResult
+        :type object_level_compare_create_result: :class:`huaweicloudsdkdrs.v3.CreateCompareTaskResult`
         """
         self._object_level_compare_create_result = object_level_compare_create_result
 
@@ -108,7 +121,7 @@ class CreateCompareTaskResponse(SdkResponse):
 
 
         :return: The data_level_compare_create_result of this CreateCompareTaskResponse.
-        :rtype: CreateCompareTaskResult
+        :rtype: :class:`huaweicloudsdkdrs.v3.CreateCompareTaskResult`
         """
         return self._data_level_compare_create_result
 
@@ -118,7 +131,7 @@ class CreateCompareTaskResponse(SdkResponse):
 
 
         :param data_level_compare_create_result: The data_level_compare_create_result of this CreateCompareTaskResponse.
-        :type: CreateCompareTaskResult
+        :type data_level_compare_create_result: :class:`huaweicloudsdkdrs.v3.CreateCompareTaskResult`
         """
         self._data_level_compare_create_result = data_level_compare_create_result
 
@@ -140,7 +153,7 @@ class CreateCompareTaskResponse(SdkResponse):
         错误码。
 
         :param error_code: The error_code of this CreateCompareTaskResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -162,7 +175,7 @@ class CreateCompareTaskResponse(SdkResponse):
         错误信息。
 
         :param error_msg: The error_msg of this CreateCompareTaskResponse.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 

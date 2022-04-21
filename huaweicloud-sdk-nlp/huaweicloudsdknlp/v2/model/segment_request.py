@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SegmentRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class SegmentRequest:
     }
 
     def __init__(self, text=None, pos_switch=None, lang=None, criterion=None):
-        """SegmentRequest - a model defined in huaweicloud sdk"""
+        """SegmentRequest
+
+        The model defined in huaweicloud sdk
+
+        :param text: 待分词文本，长度为1~512，文本编码为UTF-8。
+        :type text: str
+        :param pos_switch: 是否开启词性标注功能，1为开启，0为关闭，默认为关闭。
+        :type pos_switch: int
+        :param lang: 支持的文本语言类型，目前支持中文（zh）和英文（en），默认为中文。
+        :type lang: str
+        :param criterion: 支持的分词规范。 中文分词标准目前支持PKU（北大分词标准）、CTB（宾州中文树库标准），默认为PKU。 英文分词标准默认为Penn TreeBank（宾州树库标准），不需要传入该参数。
+        :type criterion: str
+        """
         
         
 
@@ -72,7 +83,7 @@ class SegmentRequest:
         待分词文本，长度为1~512，文本编码为UTF-8。
 
         :param text: The text of this SegmentRequest.
-        :type: str
+        :type text: str
         """
         self._text = text
 
@@ -94,7 +105,7 @@ class SegmentRequest:
         是否开启词性标注功能，1为开启，0为关闭，默认为关闭。
 
         :param pos_switch: The pos_switch of this SegmentRequest.
-        :type: int
+        :type pos_switch: int
         """
         self._pos_switch = pos_switch
 
@@ -116,7 +127,7 @@ class SegmentRequest:
         支持的文本语言类型，目前支持中文（zh）和英文（en），默认为中文。
 
         :param lang: The lang of this SegmentRequest.
-        :type: str
+        :type lang: str
         """
         self._lang = lang
 
@@ -138,7 +149,7 @@ class SegmentRequest:
         支持的分词规范。 中文分词标准目前支持PKU（北大分词标准）、CTB（宾州中文树库标准），默认为PKU。 英文分词标准默认为Penn TreeBank（宾州树库标准），不需要传入该参数。
 
         :param criterion: The criterion of this SegmentRequest.
-        :type: str
+        :type criterion: str
         """
         self._criterion = criterion
 

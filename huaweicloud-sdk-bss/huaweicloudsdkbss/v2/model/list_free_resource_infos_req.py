@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListFreeResourceInfosReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ListFreeResourceInfosReq:
     }
 
     def __init__(self, region_code=None, order_id=None, product_id=None, product_name=None, enterprise_project_id=None, status=None, offset=None, limit=None):
-        """ListFreeResourceInfosReq - a model defined in huaweicloud sdk"""
+        """ListFreeResourceInfosReq
+
+        The model defined in huaweicloud sdk
+
+        :param region_code: 云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
+        :type region_code: str
+        :param order_id: 订单ID。
+        :type order_id: str
+        :param product_id: 产品ID，即资源包ID。
+        :type product_id: str
+        :param product_name: 产品名称，即资源包名称。
+        :type product_name: str
+        :param enterprise_project_id: 企业项目ID。
+        :type enterprise_project_id: str
+        :param status: 状态： 0：未生效1：生效中2：已用完3：已失效4：已退订
+        :type status: int
+        :param offset: 偏移量，从0开始，默认为0。  说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset &#x3D; 1，则返回满足条件的第二个数据至最后一个数据。 例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
+        :type offset: int
+        :param limit: 每次查询的记录数，默认为10。
+        :type limit: int
+        """
         
         
 
@@ -93,7 +112,7 @@ class ListFreeResourceInfosReq:
         云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
         :param region_code: The region_code of this ListFreeResourceInfosReq.
-        :type: str
+        :type region_code: str
         """
         self._region_code = region_code
 
@@ -115,7 +134,7 @@ class ListFreeResourceInfosReq:
         订单ID。
 
         :param order_id: The order_id of this ListFreeResourceInfosReq.
-        :type: str
+        :type order_id: str
         """
         self._order_id = order_id
 
@@ -137,7 +156,7 @@ class ListFreeResourceInfosReq:
         产品ID，即资源包ID。
 
         :param product_id: The product_id of this ListFreeResourceInfosReq.
-        :type: str
+        :type product_id: str
         """
         self._product_id = product_id
 
@@ -159,7 +178,7 @@ class ListFreeResourceInfosReq:
         产品名称，即资源包名称。
 
         :param product_name: The product_name of this ListFreeResourceInfosReq.
-        :type: str
+        :type product_name: str
         """
         self._product_name = product_name
 
@@ -181,7 +200,7 @@ class ListFreeResourceInfosReq:
         企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this ListFreeResourceInfosReq.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -203,7 +222,7 @@ class ListFreeResourceInfosReq:
         状态： 0：未生效1：生效中2：已用完3：已失效4：已退订
 
         :param status: The status of this ListFreeResourceInfosReq.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -225,7 +244,7 @@ class ListFreeResourceInfosReq:
         偏移量，从0开始，默认为0。  说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。 例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
         :param offset: The offset of this ListFreeResourceInfosReq.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -247,7 +266,7 @@ class ListFreeResourceInfosReq:
         每次查询的记录数，默认为10。
 
         :param limit: The limit of this ListFreeResourceInfosReq.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

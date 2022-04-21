@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateTestCaseResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class CreateTestCaseResponse(SdkResponse):
     }
 
     def __init__(self, testcase_id=None, project_id=None, service_id=None, name=None, testcase_number=None, rank_id=None, status_id=None, assigned_user=None, execute_count=None, result_id=None, extend_info=None, error_code=None, error_msg=None):
-        """CreateTestCaseResponse - a model defined in huaweicloud sdk"""
+        """CreateTestCaseResponse
+
+        The model defined in huaweicloud sdk
+
+        :param testcase_id: 测试用例唯一标识
+        :type testcase_id: str
+        :param project_id: 软开云项目唯一标识
+        :type project_id: str
+        :param service_id: 注册测试类型服务接口返回的服务id
+        :type service_id: int
+        :param name: 测试用例名称
+        :type name: str
+        :param testcase_number: 测试用例编号
+        :type testcase_number: str
+        :param rank_id: 测试用例等级
+        :type rank_id: str
+        :param status_id: 测试用例状态
+        :type status_id: str
+        :param assigned_user: 
+        :type assigned_user: :class:`huaweicloudsdkcloudtest.v1.AssignedUserInfo`
+        :param execute_count: 测试用例执行次数
+        :type execute_count: int
+        :param result_id: 测试用例执行结果
+        :type result_id: str
+        :param extend_info: 
+        :type extend_info: :class:`huaweicloudsdkcloudtest.v1.ExtendInfo`
+        :param error_code: 接口调用失败错误码
+        :type error_code: str
+        :param error_msg: 接口调用失败错误信息
+        :type error_msg: str
+        """
         
         super(CreateTestCaseResponse, self).__init__()
 
@@ -118,7 +147,7 @@ class CreateTestCaseResponse(SdkResponse):
         测试用例唯一标识
 
         :param testcase_id: The testcase_id of this CreateTestCaseResponse.
-        :type: str
+        :type testcase_id: str
         """
         self._testcase_id = testcase_id
 
@@ -140,7 +169,7 @@ class CreateTestCaseResponse(SdkResponse):
         软开云项目唯一标识
 
         :param project_id: The project_id of this CreateTestCaseResponse.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -162,7 +191,7 @@ class CreateTestCaseResponse(SdkResponse):
         注册测试类型服务接口返回的服务id
 
         :param service_id: The service_id of this CreateTestCaseResponse.
-        :type: int
+        :type service_id: int
         """
         self._service_id = service_id
 
@@ -184,7 +213,7 @@ class CreateTestCaseResponse(SdkResponse):
         测试用例名称
 
         :param name: The name of this CreateTestCaseResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -206,7 +235,7 @@ class CreateTestCaseResponse(SdkResponse):
         测试用例编号
 
         :param testcase_number: The testcase_number of this CreateTestCaseResponse.
-        :type: str
+        :type testcase_number: str
         """
         self._testcase_number = testcase_number
 
@@ -228,7 +257,7 @@ class CreateTestCaseResponse(SdkResponse):
         测试用例等级
 
         :param rank_id: The rank_id of this CreateTestCaseResponse.
-        :type: str
+        :type rank_id: str
         """
         self._rank_id = rank_id
 
@@ -250,7 +279,7 @@ class CreateTestCaseResponse(SdkResponse):
         测试用例状态
 
         :param status_id: The status_id of this CreateTestCaseResponse.
-        :type: str
+        :type status_id: str
         """
         self._status_id = status_id
 
@@ -260,7 +289,7 @@ class CreateTestCaseResponse(SdkResponse):
 
 
         :return: The assigned_user of this CreateTestCaseResponse.
-        :rtype: AssignedUserInfo
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.AssignedUserInfo`
         """
         return self._assigned_user
 
@@ -270,7 +299,7 @@ class CreateTestCaseResponse(SdkResponse):
 
 
         :param assigned_user: The assigned_user of this CreateTestCaseResponse.
-        :type: AssignedUserInfo
+        :type assigned_user: :class:`huaweicloudsdkcloudtest.v1.AssignedUserInfo`
         """
         self._assigned_user = assigned_user
 
@@ -292,7 +321,7 @@ class CreateTestCaseResponse(SdkResponse):
         测试用例执行次数
 
         :param execute_count: The execute_count of this CreateTestCaseResponse.
-        :type: int
+        :type execute_count: int
         """
         self._execute_count = execute_count
 
@@ -314,7 +343,7 @@ class CreateTestCaseResponse(SdkResponse):
         测试用例执行结果
 
         :param result_id: The result_id of this CreateTestCaseResponse.
-        :type: str
+        :type result_id: str
         """
         self._result_id = result_id
 
@@ -324,7 +353,7 @@ class CreateTestCaseResponse(SdkResponse):
 
 
         :return: The extend_info of this CreateTestCaseResponse.
-        :rtype: ExtendInfo
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ExtendInfo`
         """
         return self._extend_info
 
@@ -334,7 +363,7 @@ class CreateTestCaseResponse(SdkResponse):
 
 
         :param extend_info: The extend_info of this CreateTestCaseResponse.
-        :type: ExtendInfo
+        :type extend_info: :class:`huaweicloudsdkcloudtest.v1.ExtendInfo`
         """
         self._extend_info = extend_info
 
@@ -356,7 +385,7 @@ class CreateTestCaseResponse(SdkResponse):
         接口调用失败错误码
 
         :param error_code: The error_code of this CreateTestCaseResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -378,7 +407,7 @@ class CreateTestCaseResponse(SdkResponse):
         接口调用失败错误信息
 
         :param error_msg: The error_msg of this CreateTestCaseResponse.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 

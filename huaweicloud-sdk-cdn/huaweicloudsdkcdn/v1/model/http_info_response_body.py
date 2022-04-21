@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class HttpInfoResponseBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class HttpInfoResponseBody:
     }
 
     def __init__(self, https_status=None, cert_name=None, certificate=None, private_key=None, certificate_type=None, force_redirect_https=None, force_redirect_config=None, http2=None, expiration_time=None):
-        """HttpInfoResponseBody - a model defined in huaweicloud sdk"""
+        """HttpInfoResponseBody
+
+        The model defined in huaweicloud sdk
+
+        :param https_status: HTTPS证书是否启用。0：不启用，此时无需填写证书及私钥参数；1：启用HTTPS加速并协议跟随回源；2：启用HTTPS加速并HTTP回源；3：启用HTTPS加速并HTTPS回源，开启时需要传递证书及私钥
+        :type https_status: int
+        :param cert_name: 证书名称。（长度限制为3-32字符）。
+        :type cert_name: str
+        :param certificate: 证书内容。
+        :type certificate: str
+        :param private_key: 功能说明： HTTPS协议使用的私钥，不启用证书则无需输入。（为了客户信息安全，接口返回私钥为空）
+        :type private_key: str
+        :param certificate_type: 证书类型。1：代表华为云托管证书；0：表示自有证书。
+        :type certificate_type: int
+        :param force_redirect_https: 客户端请求是否强制重定向。1是，0否。（如果为2，表示强制跳转HTTP）
+        :type force_redirect_https: int
+        :param force_redirect_config: 
+        :type force_redirect_config: :class:`huaweicloudsdkcdn.v1.ForceRedirect`
+        :param http2: 是否使用HTTP2.0。（1是，0否。）
+        :type http2: int
+        :param expiration_time: 证书过期时间
+        :type expiration_time: int
+        """
         
         
 
@@ -98,7 +119,7 @@ class HttpInfoResponseBody:
         HTTPS证书是否启用。0：不启用，此时无需填写证书及私钥参数；1：启用HTTPS加速并协议跟随回源；2：启用HTTPS加速并HTTP回源；3：启用HTTPS加速并HTTPS回源，开启时需要传递证书及私钥
 
         :param https_status: The https_status of this HttpInfoResponseBody.
-        :type: int
+        :type https_status: int
         """
         self._https_status = https_status
 
@@ -120,7 +141,7 @@ class HttpInfoResponseBody:
         证书名称。（长度限制为3-32字符）。
 
         :param cert_name: The cert_name of this HttpInfoResponseBody.
-        :type: str
+        :type cert_name: str
         """
         self._cert_name = cert_name
 
@@ -142,7 +163,7 @@ class HttpInfoResponseBody:
         证书内容。
 
         :param certificate: The certificate of this HttpInfoResponseBody.
-        :type: str
+        :type certificate: str
         """
         self._certificate = certificate
 
@@ -164,7 +185,7 @@ class HttpInfoResponseBody:
         功能说明： HTTPS协议使用的私钥，不启用证书则无需输入。（为了客户信息安全，接口返回私钥为空）
 
         :param private_key: The private_key of this HttpInfoResponseBody.
-        :type: str
+        :type private_key: str
         """
         self._private_key = private_key
 
@@ -186,7 +207,7 @@ class HttpInfoResponseBody:
         证书类型。1：代表华为云托管证书；0：表示自有证书。
 
         :param certificate_type: The certificate_type of this HttpInfoResponseBody.
-        :type: int
+        :type certificate_type: int
         """
         self._certificate_type = certificate_type
 
@@ -208,7 +229,7 @@ class HttpInfoResponseBody:
         客户端请求是否强制重定向。1是，0否。（如果为2，表示强制跳转HTTP）
 
         :param force_redirect_https: The force_redirect_https of this HttpInfoResponseBody.
-        :type: int
+        :type force_redirect_https: int
         """
         self._force_redirect_https = force_redirect_https
 
@@ -218,7 +239,7 @@ class HttpInfoResponseBody:
 
 
         :return: The force_redirect_config of this HttpInfoResponseBody.
-        :rtype: ForceRedirect
+        :rtype: :class:`huaweicloudsdkcdn.v1.ForceRedirect`
         """
         return self._force_redirect_config
 
@@ -228,7 +249,7 @@ class HttpInfoResponseBody:
 
 
         :param force_redirect_config: The force_redirect_config of this HttpInfoResponseBody.
-        :type: ForceRedirect
+        :type force_redirect_config: :class:`huaweicloudsdkcdn.v1.ForceRedirect`
         """
         self._force_redirect_config = force_redirect_config
 
@@ -250,7 +271,7 @@ class HttpInfoResponseBody:
         是否使用HTTP2.0。（1是，0否。）
 
         :param http2: The http2 of this HttpInfoResponseBody.
-        :type: int
+        :type http2: int
         """
         self._http2 = http2
 
@@ -272,7 +293,7 @@ class HttpInfoResponseBody:
         证书过期时间
 
         :param expiration_time: The expiration_time of this HttpInfoResponseBody.
-        :type: int
+        :type expiration_time: int
         """
         self._expiration_time = expiration_time
 

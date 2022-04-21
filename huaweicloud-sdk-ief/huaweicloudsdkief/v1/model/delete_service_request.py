@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteServiceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteServiceRequest:
     }
 
     def __init__(self, service_id=None, ief_instance_id=None):
-        """DeleteServiceRequest - a model defined in huaweicloud sdk"""
+        """DeleteServiceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param service_id: 服务ID
+        :type service_id: str
+        :param ief_instance_id: 铂金版实例ID
+        :type ief_instance_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class DeleteServiceRequest:
         服务ID
 
         :param service_id: The service_id of this DeleteServiceRequest.
-        :type: str
+        :type service_id: str
         """
         self._service_id = service_id
 
@@ -83,7 +90,7 @@ class DeleteServiceRequest:
         铂金版实例ID
 
         :param ief_instance_id: The ief_instance_id of this DeleteServiceRequest.
-        :type: str
+        :type ief_instance_id: str
         """
         self._ief_instance_id = ief_instance_id
 

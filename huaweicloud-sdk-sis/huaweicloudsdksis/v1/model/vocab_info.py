@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VocabInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class VocabInfo:
     }
 
     def __init__(self, vocabulary_id=None, name=None, language=None, description=None):
-        """VocabInfo - a model defined in huaweicloud sdk"""
+        """VocabInfo
+
+        The model defined in huaweicloud sdk
+
+        :param vocabulary_id: 热词表ID。
+        :type vocabulary_id: str
+        :param name: 热词表名。
+        :type name: str
+        :param language: 热词表语言类型。
+        :type language: str
+        :param description: 热词表描述。
+        :type description: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class VocabInfo:
         热词表ID。
 
         :param vocabulary_id: The vocabulary_id of this VocabInfo.
-        :type: str
+        :type vocabulary_id: str
         """
         self._vocabulary_id = vocabulary_id
 
@@ -91,7 +102,7 @@ class VocabInfo:
         热词表名。
 
         :param name: The name of this VocabInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -113,7 +124,7 @@ class VocabInfo:
         热词表语言类型。
 
         :param language: The language of this VocabInfo.
-        :type: str
+        :type language: str
         """
         self._language = language
 
@@ -135,7 +146,7 @@ class VocabInfo:
         热词表描述。
 
         :param description: The description of this VocabInfo.
-        :type: str
+        :type description: str
         """
         self._description = description
 

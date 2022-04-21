@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MyanmarIdcardResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -64,7 +63,47 @@ class MyanmarIdcardResult:
     }
 
     def __init__(self, side=None, _class=None, nrc_id=None, issue_date=None, name=None, father_name=None, birth=None, bloodlines_religion=None, height=None, blood_group=None, card_id=None, nrc_id_back=None, profession=None, address=None, confidence=None, portrait_image=None, portrait_location=None, idcard_type=None):
-        """MyanmarIdcardResult - a model defined in huaweicloud sdk"""
+        """MyanmarIdcardResult
+
+        The model defined in huaweicloud sdk
+
+        :param side: 标示正面还是反面，取值为front或back。 
+        :type side: str
+        :param _class: 身份证类型。取值如下所示： - new_version：新版身份证 - old_version：旧版 
+        :type _class: str
+        :param nrc_id: 身份证号码。 
+        :type nrc_id: str
+        :param issue_date: 签发日期。 
+        :type issue_date: str
+        :param name: 姓名。 
+        :type name: str
+        :param father_name: 父亲名字。 
+        :type father_name: str
+        :param birth: 出生日期。 
+        :type birth: str
+        :param bloodlines_religion: 族群或宗教。 
+        :type bloodlines_religion: str
+        :param height: 身高。 
+        :type height: str
+        :param blood_group: 血型。 
+        :type blood_group: str
+        :param card_id: 身份证的卡号（背面）。 
+        :type card_id: str
+        :param nrc_id_back: 背面的身份证号码。 
+        :type nrc_id_back: str
+        :param profession: 职业。 
+        :type profession: str
+        :param address: 地址。 
+        :type address: str
+        :param confidence: 
+        :type confidence: :class:`huaweicloudsdkocr.v1.MyanmarIdcardConfidence`
+        :param portrait_image: 头像的base64编码。 当输入参数“return_portrait_image”为“true”时，才返回该参数。 
+        :type portrait_image: str
+        :param portrait_location: 头像在原图上的位置。 当输入参数“return_portrait_location”为“true”时，才返回该参数。以列表形式显示，包含头像区域四个顶点的二维坐标（x,y），坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向 
+        :type portrait_location: list[list[int]]
+        :param idcard_type: 身份证的类型。取值如下所示： - normal：身份证原件 - copy：复印的身份证 当输入参数“return_idcard_type”为“true”时，才返回该参数。 
+        :type idcard_type: str
+        """
         
         
 
@@ -143,7 +182,7 @@ class MyanmarIdcardResult:
         标示正面还是反面，取值为front或back。 
 
         :param side: The side of this MyanmarIdcardResult.
-        :type: str
+        :type side: str
         """
         self._side = side
 
@@ -165,7 +204,7 @@ class MyanmarIdcardResult:
         身份证类型。取值如下所示： - new_version：新版身份证 - old_version：旧版 
 
         :param _class: The _class of this MyanmarIdcardResult.
-        :type: str
+        :type _class: str
         """
         self.__class = _class
 
@@ -187,7 +226,7 @@ class MyanmarIdcardResult:
         身份证号码。 
 
         :param nrc_id: The nrc_id of this MyanmarIdcardResult.
-        :type: str
+        :type nrc_id: str
         """
         self._nrc_id = nrc_id
 
@@ -209,7 +248,7 @@ class MyanmarIdcardResult:
         签发日期。 
 
         :param issue_date: The issue_date of this MyanmarIdcardResult.
-        :type: str
+        :type issue_date: str
         """
         self._issue_date = issue_date
 
@@ -231,7 +270,7 @@ class MyanmarIdcardResult:
         姓名。 
 
         :param name: The name of this MyanmarIdcardResult.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -253,7 +292,7 @@ class MyanmarIdcardResult:
         父亲名字。 
 
         :param father_name: The father_name of this MyanmarIdcardResult.
-        :type: str
+        :type father_name: str
         """
         self._father_name = father_name
 
@@ -275,7 +314,7 @@ class MyanmarIdcardResult:
         出生日期。 
 
         :param birth: The birth of this MyanmarIdcardResult.
-        :type: str
+        :type birth: str
         """
         self._birth = birth
 
@@ -297,7 +336,7 @@ class MyanmarIdcardResult:
         族群或宗教。 
 
         :param bloodlines_religion: The bloodlines_religion of this MyanmarIdcardResult.
-        :type: str
+        :type bloodlines_religion: str
         """
         self._bloodlines_religion = bloodlines_religion
 
@@ -319,7 +358,7 @@ class MyanmarIdcardResult:
         身高。 
 
         :param height: The height of this MyanmarIdcardResult.
-        :type: str
+        :type height: str
         """
         self._height = height
 
@@ -341,7 +380,7 @@ class MyanmarIdcardResult:
         血型。 
 
         :param blood_group: The blood_group of this MyanmarIdcardResult.
-        :type: str
+        :type blood_group: str
         """
         self._blood_group = blood_group
 
@@ -363,7 +402,7 @@ class MyanmarIdcardResult:
         身份证的卡号（背面）。 
 
         :param card_id: The card_id of this MyanmarIdcardResult.
-        :type: str
+        :type card_id: str
         """
         self._card_id = card_id
 
@@ -385,7 +424,7 @@ class MyanmarIdcardResult:
         背面的身份证号码。 
 
         :param nrc_id_back: The nrc_id_back of this MyanmarIdcardResult.
-        :type: str
+        :type nrc_id_back: str
         """
         self._nrc_id_back = nrc_id_back
 
@@ -407,7 +446,7 @@ class MyanmarIdcardResult:
         职业。 
 
         :param profession: The profession of this MyanmarIdcardResult.
-        :type: str
+        :type profession: str
         """
         self._profession = profession
 
@@ -429,7 +468,7 @@ class MyanmarIdcardResult:
         地址。 
 
         :param address: The address of this MyanmarIdcardResult.
-        :type: str
+        :type address: str
         """
         self._address = address
 
@@ -439,7 +478,7 @@ class MyanmarIdcardResult:
 
 
         :return: The confidence of this MyanmarIdcardResult.
-        :rtype: MyanmarIdcardConfidence
+        :rtype: :class:`huaweicloudsdkocr.v1.MyanmarIdcardConfidence`
         """
         return self._confidence
 
@@ -449,7 +488,7 @@ class MyanmarIdcardResult:
 
 
         :param confidence: The confidence of this MyanmarIdcardResult.
-        :type: MyanmarIdcardConfidence
+        :type confidence: :class:`huaweicloudsdkocr.v1.MyanmarIdcardConfidence`
         """
         self._confidence = confidence
 
@@ -471,7 +510,7 @@ class MyanmarIdcardResult:
         头像的base64编码。 当输入参数“return_portrait_image”为“true”时，才返回该参数。 
 
         :param portrait_image: The portrait_image of this MyanmarIdcardResult.
-        :type: str
+        :type portrait_image: str
         """
         self._portrait_image = portrait_image
 
@@ -493,7 +532,7 @@ class MyanmarIdcardResult:
         头像在原图上的位置。 当输入参数“return_portrait_location”为“true”时，才返回该参数。以列表形式显示，包含头像区域四个顶点的二维坐标（x,y），坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向 
 
         :param portrait_location: The portrait_location of this MyanmarIdcardResult.
-        :type: list[list[int]]
+        :type portrait_location: list[list[int]]
         """
         self._portrait_location = portrait_location
 
@@ -515,7 +554,7 @@ class MyanmarIdcardResult:
         身份证的类型。取值如下所示： - normal：身份证原件 - copy：复印的身份证 当输入参数“return_idcard_type”为“true”时，才返回该参数。 
 
         :param idcard_type: The idcard_type of this MyanmarIdcardResult.
-        :type: str
+        :type idcard_type: str
         """
         self._idcard_type = idcard_type
 

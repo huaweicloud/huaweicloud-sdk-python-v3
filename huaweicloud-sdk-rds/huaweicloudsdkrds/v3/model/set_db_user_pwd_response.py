@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SetDbUserPwdResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class SetDbUserPwdResponse(SdkResponse):
     }
 
     def __init__(self, resp=None):
-        """SetDbUserPwdResponse - a model defined in huaweicloud sdk"""
+        """SetDbUserPwdResponse
+
+        The model defined in huaweicloud sdk
+
+        :param resp: 操作结果。
+        :type resp: str
+        """
         
         super(SetDbUserPwdResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class SetDbUserPwdResponse(SdkResponse):
         操作结果。
 
         :param resp: The resp of this SetDbUserPwdResponse.
-        :type: str
+        :type resp: str
         """
         self._resp = resp
 

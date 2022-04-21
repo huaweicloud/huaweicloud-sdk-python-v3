@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MysqlInstanceListInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -76,7 +75,59 @@ class MysqlInstanceListInfo:
     }
 
     def __init__(self, id=None, name=None, status=None, private_ips=None, public_ips=None, port=None, type=None, region=None, datastore=None, created=None, updated=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, flavor_ref=None, flavor_info=None, volume=None, backup_strategy=None, enterprise_project_id=None, time_zone=None, charge_info=None, dedicated_resource_id=None, tags=None):
-        """MysqlInstanceListInfo - a model defined in huaweicloud sdk"""
+        """MysqlInstanceListInfo
+
+        The model defined in huaweicloud sdk
+
+        :param id: 实例ID。
+        :type id: str
+        :param name: 创建的实例名称。
+        :type name: str
+        :param status: 实例状态。
+        :type status: str
+        :param private_ips: 实例写内网IP地址列表。弹性云服务器创建成功后该值存在，其他情况下为空字符串。
+        :type private_ips: list[str]
+        :param public_ips: 实例外网IP地址列表。
+        :type public_ips: list[str]
+        :param port: 数据库端口号。
+        :type port: str
+        :param type: 实例类型，取值为“Cluster”。
+        :type type: str
+        :param region: 实例所在区域。
+        :type region: str
+        :param datastore: 
+        :type datastore: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastore`
+        :param created: 创建时间，格式为\&quot;yyyy-mm-ddThh:mm:ssZ\&quot;。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。说明：创建时返回值为空，数据库实例创建成功后该值不为空。
+        :type created: str
+        :param updated: 更新时间，格式与\&quot;created\&quot;字段对应格式完全相同。说明：创建时返回值为空，数据库实例创建成功后该值不为空。
+        :type updated: str
+        :param db_user_name: 默认用户名。
+        :type db_user_name: str
+        :param vpc_id: 虚拟私有云ID。
+        :type vpc_id: str
+        :param subnet_id: 子网的网络ID信息。
+        :type subnet_id: str
+        :param security_group_id: 安全组ID。
+        :type security_group_id: str
+        :param flavor_ref: 规格码。
+        :type flavor_ref: str
+        :param flavor_info: 
+        :type flavor_info: :class:`huaweicloudsdkgaussdb.v3.MysqlFlavorInfo`
+        :param volume: 
+        :type volume: :class:`huaweicloudsdkgaussdb.v3.MysqlVolumeInfo`
+        :param backup_strategy: 
+        :type backup_strategy: :class:`huaweicloudsdkgaussdb.v3.MysqlBackupStrategy`
+        :param enterprise_project_id: 企业项目ID。
+        :type enterprise_project_id: str
+        :param time_zone: 时区。
+        :type time_zone: str
+        :param charge_info: 
+        :type charge_info: :class:`huaweicloudsdkgaussdb.v3.MysqlChargeInfo`
+        :param dedicated_resource_id: 专属资源池ID，只有数据库实例属于专属资源池才会返回该参数。
+        :type dedicated_resource_id: str
+        :param tags: 标签列表。
+        :type tags: list[:class:`huaweicloudsdkgaussdb.v3.InstanceTagItem`]
+        """
         
         
 
@@ -171,7 +222,7 @@ class MysqlInstanceListInfo:
         实例ID。
 
         :param id: The id of this MysqlInstanceListInfo.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -193,7 +244,7 @@ class MysqlInstanceListInfo:
         创建的实例名称。
 
         :param name: The name of this MysqlInstanceListInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -215,7 +266,7 @@ class MysqlInstanceListInfo:
         实例状态。
 
         :param status: The status of this MysqlInstanceListInfo.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -237,7 +288,7 @@ class MysqlInstanceListInfo:
         实例写内网IP地址列表。弹性云服务器创建成功后该值存在，其他情况下为空字符串。
 
         :param private_ips: The private_ips of this MysqlInstanceListInfo.
-        :type: list[str]
+        :type private_ips: list[str]
         """
         self._private_ips = private_ips
 
@@ -259,7 +310,7 @@ class MysqlInstanceListInfo:
         实例外网IP地址列表。
 
         :param public_ips: The public_ips of this MysqlInstanceListInfo.
-        :type: list[str]
+        :type public_ips: list[str]
         """
         self._public_ips = public_ips
 
@@ -281,7 +332,7 @@ class MysqlInstanceListInfo:
         数据库端口号。
 
         :param port: The port of this MysqlInstanceListInfo.
-        :type: str
+        :type port: str
         """
         self._port = port
 
@@ -303,7 +354,7 @@ class MysqlInstanceListInfo:
         实例类型，取值为“Cluster”。
 
         :param type: The type of this MysqlInstanceListInfo.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -325,7 +376,7 @@ class MysqlInstanceListInfo:
         实例所在区域。
 
         :param region: The region of this MysqlInstanceListInfo.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -335,7 +386,7 @@ class MysqlInstanceListInfo:
 
 
         :return: The datastore of this MysqlInstanceListInfo.
-        :rtype: MysqlDatastore
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastore`
         """
         return self._datastore
 
@@ -345,7 +396,7 @@ class MysqlInstanceListInfo:
 
 
         :param datastore: The datastore of this MysqlInstanceListInfo.
-        :type: MysqlDatastore
+        :type datastore: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastore`
         """
         self._datastore = datastore
 
@@ -367,7 +418,7 @@ class MysqlInstanceListInfo:
         创建时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。说明：创建时返回值为空，数据库实例创建成功后该值不为空。
 
         :param created: The created of this MysqlInstanceListInfo.
-        :type: str
+        :type created: str
         """
         self._created = created
 
@@ -389,7 +440,7 @@ class MysqlInstanceListInfo:
         更新时间，格式与\"created\"字段对应格式完全相同。说明：创建时返回值为空，数据库实例创建成功后该值不为空。
 
         :param updated: The updated of this MysqlInstanceListInfo.
-        :type: str
+        :type updated: str
         """
         self._updated = updated
 
@@ -411,7 +462,7 @@ class MysqlInstanceListInfo:
         默认用户名。
 
         :param db_user_name: The db_user_name of this MysqlInstanceListInfo.
-        :type: str
+        :type db_user_name: str
         """
         self._db_user_name = db_user_name
 
@@ -433,7 +484,7 @@ class MysqlInstanceListInfo:
         虚拟私有云ID。
 
         :param vpc_id: The vpc_id of this MysqlInstanceListInfo.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -455,7 +506,7 @@ class MysqlInstanceListInfo:
         子网的网络ID信息。
 
         :param subnet_id: The subnet_id of this MysqlInstanceListInfo.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -477,7 +528,7 @@ class MysqlInstanceListInfo:
         安全组ID。
 
         :param security_group_id: The security_group_id of this MysqlInstanceListInfo.
-        :type: str
+        :type security_group_id: str
         """
         self._security_group_id = security_group_id
 
@@ -499,7 +550,7 @@ class MysqlInstanceListInfo:
         规格码。
 
         :param flavor_ref: The flavor_ref of this MysqlInstanceListInfo.
-        :type: str
+        :type flavor_ref: str
         """
         self._flavor_ref = flavor_ref
 
@@ -509,7 +560,7 @@ class MysqlInstanceListInfo:
 
 
         :return: The flavor_info of this MysqlInstanceListInfo.
-        :rtype: MysqlFlavorInfo
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlFlavorInfo`
         """
         return self._flavor_info
 
@@ -519,7 +570,7 @@ class MysqlInstanceListInfo:
 
 
         :param flavor_info: The flavor_info of this MysqlInstanceListInfo.
-        :type: MysqlFlavorInfo
+        :type flavor_info: :class:`huaweicloudsdkgaussdb.v3.MysqlFlavorInfo`
         """
         self._flavor_info = flavor_info
 
@@ -529,7 +580,7 @@ class MysqlInstanceListInfo:
 
 
         :return: The volume of this MysqlInstanceListInfo.
-        :rtype: MysqlVolumeInfo
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlVolumeInfo`
         """
         return self._volume
 
@@ -539,7 +590,7 @@ class MysqlInstanceListInfo:
 
 
         :param volume: The volume of this MysqlInstanceListInfo.
-        :type: MysqlVolumeInfo
+        :type volume: :class:`huaweicloudsdkgaussdb.v3.MysqlVolumeInfo`
         """
         self._volume = volume
 
@@ -549,7 +600,7 @@ class MysqlInstanceListInfo:
 
 
         :return: The backup_strategy of this MysqlInstanceListInfo.
-        :rtype: MysqlBackupStrategy
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlBackupStrategy`
         """
         return self._backup_strategy
 
@@ -559,7 +610,7 @@ class MysqlInstanceListInfo:
 
 
         :param backup_strategy: The backup_strategy of this MysqlInstanceListInfo.
-        :type: MysqlBackupStrategy
+        :type backup_strategy: :class:`huaweicloudsdkgaussdb.v3.MysqlBackupStrategy`
         """
         self._backup_strategy = backup_strategy
 
@@ -581,7 +632,7 @@ class MysqlInstanceListInfo:
         企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this MysqlInstanceListInfo.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -603,7 +654,7 @@ class MysqlInstanceListInfo:
         时区。
 
         :param time_zone: The time_zone of this MysqlInstanceListInfo.
-        :type: str
+        :type time_zone: str
         """
         self._time_zone = time_zone
 
@@ -613,7 +664,7 @@ class MysqlInstanceListInfo:
 
 
         :return: The charge_info of this MysqlInstanceListInfo.
-        :rtype: MysqlChargeInfo
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlChargeInfo`
         """
         return self._charge_info
 
@@ -623,7 +674,7 @@ class MysqlInstanceListInfo:
 
 
         :param charge_info: The charge_info of this MysqlInstanceListInfo.
-        :type: MysqlChargeInfo
+        :type charge_info: :class:`huaweicloudsdkgaussdb.v3.MysqlChargeInfo`
         """
         self._charge_info = charge_info
 
@@ -645,7 +696,7 @@ class MysqlInstanceListInfo:
         专属资源池ID，只有数据库实例属于专属资源池才会返回该参数。
 
         :param dedicated_resource_id: The dedicated_resource_id of this MysqlInstanceListInfo.
-        :type: str
+        :type dedicated_resource_id: str
         """
         self._dedicated_resource_id = dedicated_resource_id
 
@@ -656,7 +707,7 @@ class MysqlInstanceListInfo:
         标签列表。
 
         :return: The tags of this MysqlInstanceListInfo.
-        :rtype: list[InstanceTagItem]
+        :rtype: list[:class:`huaweicloudsdkgaussdb.v3.InstanceTagItem`]
         """
         return self._tags
 
@@ -667,7 +718,7 @@ class MysqlInstanceListInfo:
         标签列表。
 
         :param tags: The tags of this MysqlInstanceListInfo.
-        :type: list[InstanceTagItem]
+        :type tags: list[:class:`huaweicloudsdkgaussdb.v3.InstanceTagItem`]
         """
         self._tags = tags
 

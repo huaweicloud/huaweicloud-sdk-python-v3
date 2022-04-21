@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowFacesByFaceIdRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowFacesByFaceIdRequest:
     }
 
     def __init__(self, face_set_name=None, face_id=None):
-        """ShowFacesByFaceIdRequest - a model defined in huaweicloud sdk"""
+        """ShowFacesByFaceIdRequest
+
+        The model defined in huaweicloud sdk
+
+        :param face_set_name: 人脸库名称。
+        :type face_set_name: str
+        :param face_id: 人脸ID。
+        :type face_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ShowFacesByFaceIdRequest:
         人脸库名称。
 
         :param face_set_name: The face_set_name of this ShowFacesByFaceIdRequest.
-        :type: str
+        :type face_set_name: str
         """
         self._face_set_name = face_set_name
 
@@ -83,7 +90,7 @@ class ShowFacesByFaceIdRequest:
         人脸ID。
 
         :param face_id: The face_id of this ShowFacesByFaceIdRequest.
-        :type: str
+        :type face_id: str
         """
         self._face_id = face_id
 

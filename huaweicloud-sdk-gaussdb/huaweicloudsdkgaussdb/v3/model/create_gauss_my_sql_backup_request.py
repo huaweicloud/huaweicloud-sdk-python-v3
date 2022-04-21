@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateGaussMySqlBackupRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateGaussMySqlBackupRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """CreateGaussMySqlBackupRequest - a model defined in huaweicloud sdk"""
+        """CreateGaussMySqlBackupRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言
+        :type x_language: str
+        :param body: Body of the CreateGaussMySqlBackupRequest
+        :type body: :class:`huaweicloudsdkgaussdb.v3.MysqlCreateBackupRequest`
+        """
         
         
 
@@ -63,7 +70,7 @@ class CreateGaussMySqlBackupRequest:
         语言
 
         :param x_language: The x_language of this CreateGaussMySqlBackupRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -73,7 +80,7 @@ class CreateGaussMySqlBackupRequest:
 
 
         :return: The body of this CreateGaussMySqlBackupRequest.
-        :rtype: MysqlCreateBackupRequest
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlCreateBackupRequest`
         """
         return self._body
 
@@ -83,7 +90,7 @@ class CreateGaussMySqlBackupRequest:
 
 
         :param body: The body of this CreateGaussMySqlBackupRequest.
-        :type: MysqlCreateBackupRequest
+        :type body: :class:`huaweicloudsdkgaussdb.v3.MysqlCreateBackupRequest`
         """
         self._body = body
 

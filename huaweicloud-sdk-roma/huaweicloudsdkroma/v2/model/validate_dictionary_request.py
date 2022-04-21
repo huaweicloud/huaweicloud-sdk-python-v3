@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ValidateDictionaryRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ValidateDictionaryRequest:
     }
 
     def __init__(self, instance_id=None, name=None, code=None):
-        """ValidateDictionaryRequest - a model defined in huaweicloud sdk"""
+        """ValidateDictionaryRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param name: 待校验是否重复的字典名称，精确匹配
+        :type name: str
+        :param code: 待校验是否重复的字典编码，精确匹配
+        :type code: str
+        """
         
         
 
@@ -67,7 +76,7 @@ class ValidateDictionaryRequest:
         实例ID
 
         :param instance_id: The instance_id of this ValidateDictionaryRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -89,7 +98,7 @@ class ValidateDictionaryRequest:
         待校验是否重复的字典名称，精确匹配
 
         :param name: The name of this ValidateDictionaryRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -111,7 +120,7 @@ class ValidateDictionaryRequest:
         待校验是否重复的字典编码，精确匹配
 
         :param code: The code of this ValidateDictionaryRequest.
-        :type: str
+        :type code: str
         """
         self._code = code
 

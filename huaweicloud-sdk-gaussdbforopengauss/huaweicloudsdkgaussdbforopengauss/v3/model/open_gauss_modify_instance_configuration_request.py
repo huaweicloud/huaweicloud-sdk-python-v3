@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OpenGaussModifyInstanceConfigurationRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class OpenGaussModifyInstanceConfigurationRequest:
     }
 
     def __init__(self, values=None):
-        """OpenGaussModifyInstanceConfigurationRequest - a model defined in huaweicloud sdk"""
+        """OpenGaussModifyInstanceConfigurationRequest
+
+        The model defined in huaweicloud sdk
+
+        :param values: 参数值对象Map&lt;String,String&gt;，用户基于默认参数模板自定义的参数值。
+        :type values: dict(str, str)
+        """
         
         
 
@@ -57,7 +62,7 @@ class OpenGaussModifyInstanceConfigurationRequest:
         参数值对象Map<String,String>，用户基于默认参数模板自定义的参数值。
 
         :param values: The values of this OpenGaussModifyInstanceConfigurationRequest.
-        :type: dict(str, str)
+        :type values: dict(str, str)
         """
         self._values = values
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PolicyUpdate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class PolicyUpdate:
     }
 
     def __init__(self, enabled=None, name=None, operation_definition=None, trigger=None):
-        """PolicyUpdate - a model defined in huaweicloud sdk"""
+        """PolicyUpdate
+
+        The model defined in huaweicloud sdk
+
+        :param enabled: 是否启用策略
+        :type enabled: bool
+        :param name: 策略名称
+        :type name: str
+        :param operation_definition: 
+        :type operation_definition: :class:`huaweicloudsdkcbr.v1.PolicyoODCreate`
+        :param trigger: 
+        :type trigger: :class:`huaweicloudsdkcbr.v1.PolicyTriggerReq`
+        """
         
         
 
@@ -73,7 +84,7 @@ class PolicyUpdate:
         是否启用策略
 
         :param enabled: The enabled of this PolicyUpdate.
-        :type: bool
+        :type enabled: bool
         """
         self._enabled = enabled
 
@@ -95,7 +106,7 @@ class PolicyUpdate:
         策略名称
 
         :param name: The name of this PolicyUpdate.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -105,7 +116,7 @@ class PolicyUpdate:
 
 
         :return: The operation_definition of this PolicyUpdate.
-        :rtype: PolicyoODCreate
+        :rtype: :class:`huaweicloudsdkcbr.v1.PolicyoODCreate`
         """
         return self._operation_definition
 
@@ -115,7 +126,7 @@ class PolicyUpdate:
 
 
         :param operation_definition: The operation_definition of this PolicyUpdate.
-        :type: PolicyoODCreate
+        :type operation_definition: :class:`huaweicloudsdkcbr.v1.PolicyoODCreate`
         """
         self._operation_definition = operation_definition
 
@@ -125,7 +136,7 @@ class PolicyUpdate:
 
 
         :return: The trigger of this PolicyUpdate.
-        :rtype: PolicyTriggerReq
+        :rtype: :class:`huaweicloudsdkcbr.v1.PolicyTriggerReq`
         """
         return self._trigger
 
@@ -135,7 +146,7 @@ class PolicyUpdate:
 
 
         :param trigger: The trigger of this PolicyUpdate.
-        :type: PolicyTriggerReq
+        :type trigger: :class:`huaweicloudsdkcbr.v1.PolicyTriggerReq`
         """
         self._trigger = trigger
 

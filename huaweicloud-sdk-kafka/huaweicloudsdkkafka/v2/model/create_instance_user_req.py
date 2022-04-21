@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateInstanceUserReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateInstanceUserReq:
     }
 
     def __init__(self, user_name=None, user_passwd=None):
-        """CreateInstanceUserReq - a model defined in huaweicloud sdk"""
+        """CreateInstanceUserReq
+
+        The model defined in huaweicloud sdk
+
+        :param user_name: 用户名称。
+        :type user_name: str
+        :param user_passwd: 用户密码。  密码不能和用户名相同。 复杂度要求： - 输入长度为8到32位的字符串。 - 必须包含如下四种字符中的两种组合：   - 小写字母   - 大写字母   - 数字   - 特殊字符包括（&#x60;~!@#$%^&amp;*()-_&#x3D;+\\|[{}]:&#39;\&quot;,&lt;.&gt;/?）
+        :type user_passwd: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class CreateInstanceUserReq:
         用户名称。
 
         :param user_name: The user_name of this CreateInstanceUserReq.
-        :type: str
+        :type user_name: str
         """
         self._user_name = user_name
 
@@ -85,7 +92,7 @@ class CreateInstanceUserReq:
         用户密码。  密码不能和用户名相同。 复杂度要求： - 输入长度为8到32位的字符串。 - 必须包含如下四种字符中的两种组合：   - 小写字母   - 大写字母   - 数字   - 特殊字符包括（`~!@#$%^&*()-_=+\\|[{}]:'\",<.>/?）
 
         :param user_passwd: The user_passwd of this CreateInstanceUserReq.
-        :type: str
+        :type user_passwd: str
         """
         self._user_passwd = user_passwd
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateCommitRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateCommitRequest:
     }
 
     def __init__(self, repo_id=None, body=None):
-        """CreateCommitRequest - a model defined in huaweicloud sdk"""
+        """CreateCommitRequest
+
+        The model defined in huaweicloud sdk
+
+        :param repo_id: 仓库短id
+        :type repo_id: int
+        :param body: Body of the CreateCommitRequest
+        :type body: :class:`huaweicloudsdkcodehub.v3.CreateCommitRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateCommitRequest:
         仓库短id
 
         :param repo_id: The repo_id of this CreateCommitRequest.
-        :type: int
+        :type repo_id: int
         """
         self._repo_id = repo_id
 
@@ -72,7 +79,7 @@ class CreateCommitRequest:
 
 
         :return: The body of this CreateCommitRequest.
-        :rtype: CreateCommitRequestBody
+        :rtype: :class:`huaweicloudsdkcodehub.v3.CreateCommitRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CreateCommitRequest:
 
 
         :param body: The body of this CreateCommitRequest.
-        :type: CreateCommitRequestBody
+        :type body: :class:`huaweicloudsdkcodehub.v3.CreateCommitRequestBody`
         """
         self._body = body
 

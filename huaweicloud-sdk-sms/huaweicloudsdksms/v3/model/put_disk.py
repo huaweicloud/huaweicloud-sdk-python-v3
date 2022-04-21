@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PutDisk:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class PutDisk:
     }
 
     def __init__(self, need_migration=None, id=None, adjust_size=None, physical_volumes=None):
-        """PutDisk - a model defined in huaweicloud sdk"""
+        """PutDisk
+
+        The model defined in huaweicloud sdk
+
+        :param need_migration: 磁盘名称
+        :type need_migration: bool
+        :param id: 磁盘id
+        :type id: str
+        :param adjust_size: 调整大小
+        :type adjust_size: int
+        :param physical_volumes: 修改的卷信息
+        :type physical_volumes: list[:class:`huaweicloudsdksms.v3.PutVolume`]
+        """
         
         
 
@@ -71,7 +82,7 @@ class PutDisk:
         磁盘名称
 
         :param need_migration: The need_migration of this PutDisk.
-        :type: bool
+        :type need_migration: bool
         """
         self._need_migration = need_migration
 
@@ -93,7 +104,7 @@ class PutDisk:
         磁盘id
 
         :param id: The id of this PutDisk.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -115,7 +126,7 @@ class PutDisk:
         调整大小
 
         :param adjust_size: The adjust_size of this PutDisk.
-        :type: int
+        :type adjust_size: int
         """
         self._adjust_size = adjust_size
 
@@ -126,7 +137,7 @@ class PutDisk:
         修改的卷信息
 
         :return: The physical_volumes of this PutDisk.
-        :rtype: list[PutVolume]
+        :rtype: list[:class:`huaweicloudsdksms.v3.PutVolume`]
         """
         return self._physical_volumes
 
@@ -137,7 +148,7 @@ class PutDisk:
         修改的卷信息
 
         :param physical_volumes: The physical_volumes of this PutDisk.
-        :type: list[PutVolume]
+        :type physical_volumes: list[:class:`huaweicloudsdksms.v3.PutVolume`]
         """
         self._physical_volumes = physical_volumes
 

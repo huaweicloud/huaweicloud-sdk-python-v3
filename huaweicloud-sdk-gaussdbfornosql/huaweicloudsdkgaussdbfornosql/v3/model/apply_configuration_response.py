@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApplyConfigurationResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ApplyConfigurationResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, success=None):
-        """ApplyConfigurationResponse - a model defined in huaweicloud sdk"""
+        """ApplyConfigurationResponse
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 应用参数模板的异步任务ID。
+        :type job_id: str
+        :param success: 应用参数模板任务是否提交成功。 - 取值为“true”，表示任务提交成功。 - 取值为“false”，表示任务提交失败。
+        :type success: bool
+        """
         
         super(ApplyConfigurationResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ApplyConfigurationResponse(SdkResponse):
         应用参数模板的异步任务ID。
 
         :param job_id: The job_id of this ApplyConfigurationResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -85,7 +92,7 @@ class ApplyConfigurationResponse(SdkResponse):
         应用参数模板任务是否提交成功。 - 取值为“true”，表示任务提交成功。 - 取值为“false”，表示任务提交失败。
 
         :param success: The success of this ApplyConfigurationResponse.
-        :type: bool
+        :type success: bool
         """
         self._success = success
 

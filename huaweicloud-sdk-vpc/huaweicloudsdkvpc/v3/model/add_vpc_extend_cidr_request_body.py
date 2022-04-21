@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddVpcExtendCidrRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AddVpcExtendCidrRequestBody:
     }
 
     def __init__(self, dry_run=None, vpc=None):
-        """AddVpcExtendCidrRequestBody - a model defined in huaweicloud sdk"""
+        """AddVpcExtendCidrRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param dry_run: 功能说明：是否只预检此次请求 取值范围： -true：发送检查请求，不会添加扩展网段。检查项包括是否填写了必需参数、请求格式、业务限制。如果检查不通过，则返回对应错误。如果检查通过，则返回响应码202。 -false（默认值）：发送正常请求，并直接添加VPC扩展网段。
+        :type dry_run: bool
+        :param vpc: 
+        :type vpc: :class:`huaweicloudsdkvpc.v3.AddExtendCidrOption`
+        """
         
         
 
@@ -62,7 +69,7 @@ class AddVpcExtendCidrRequestBody:
         功能说明：是否只预检此次请求 取值范围： -true：发送检查请求，不会添加扩展网段。检查项包括是否填写了必需参数、请求格式、业务限制。如果检查不通过，则返回对应错误。如果检查通过，则返回响应码202。 -false（默认值）：发送正常请求，并直接添加VPC扩展网段。
 
         :param dry_run: The dry_run of this AddVpcExtendCidrRequestBody.
-        :type: bool
+        :type dry_run: bool
         """
         self._dry_run = dry_run
 
@@ -72,7 +79,7 @@ class AddVpcExtendCidrRequestBody:
 
 
         :return: The vpc of this AddVpcExtendCidrRequestBody.
-        :rtype: AddExtendCidrOption
+        :rtype: :class:`huaweicloudsdkvpc.v3.AddExtendCidrOption`
         """
         return self._vpc
 
@@ -82,7 +89,7 @@ class AddVpcExtendCidrRequestBody:
 
 
         :param vpc: The vpc of this AddVpcExtendCidrRequestBody.
-        :type: AddExtendCidrOption
+        :type vpc: :class:`huaweicloudsdkvpc.v3.AddExtendCidrOption`
         """
         self._vpc = vpc
 

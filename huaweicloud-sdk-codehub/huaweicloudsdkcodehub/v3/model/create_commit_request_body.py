@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateCommitRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class CreateCommitRequestBody:
     }
 
     def __init__(self, branch=None, commit_message=None, start_branch=None, actions=None, author_email=None, author_name=None, stats=None, force=None):
-        """CreateCommitRequestBody - a model defined in huaweicloud sdk"""
+        """CreateCommitRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param branch: 目标分支
+        :type branch: str
+        :param commit_message: 提交信息
+        :type commit_message: str
+        :param start_branch: 创建分支时，新的分支名
+        :type start_branch: str
+        :param actions: 提交处理列表
+        :type actions: list[:class:`huaweicloudsdkcodehub.v3.CommitAction`]
+        :param author_email: 提交作者的电子邮件地址
+        :type author_email: str
+        :param author_name: 提交作者的名称
+        :type author_name: str
+        :param stats: 是否包括提交统计信息。默认值为true
+        :type stats: bool
+        :param force: 是否覆盖目标分支。当true时，使用基于start_branch的新提交覆盖目标分支
+        :type force: str
+        """
         
         
 
@@ -90,7 +109,7 @@ class CreateCommitRequestBody:
         目标分支
 
         :param branch: The branch of this CreateCommitRequestBody.
-        :type: str
+        :type branch: str
         """
         self._branch = branch
 
@@ -112,7 +131,7 @@ class CreateCommitRequestBody:
         提交信息
 
         :param commit_message: The commit_message of this CreateCommitRequestBody.
-        :type: str
+        :type commit_message: str
         """
         self._commit_message = commit_message
 
@@ -134,7 +153,7 @@ class CreateCommitRequestBody:
         创建分支时，新的分支名
 
         :param start_branch: The start_branch of this CreateCommitRequestBody.
-        :type: str
+        :type start_branch: str
         """
         self._start_branch = start_branch
 
@@ -145,7 +164,7 @@ class CreateCommitRequestBody:
         提交处理列表
 
         :return: The actions of this CreateCommitRequestBody.
-        :rtype: list[CommitAction]
+        :rtype: list[:class:`huaweicloudsdkcodehub.v3.CommitAction`]
         """
         return self._actions
 
@@ -156,7 +175,7 @@ class CreateCommitRequestBody:
         提交处理列表
 
         :param actions: The actions of this CreateCommitRequestBody.
-        :type: list[CommitAction]
+        :type actions: list[:class:`huaweicloudsdkcodehub.v3.CommitAction`]
         """
         self._actions = actions
 
@@ -178,7 +197,7 @@ class CreateCommitRequestBody:
         提交作者的电子邮件地址
 
         :param author_email: The author_email of this CreateCommitRequestBody.
-        :type: str
+        :type author_email: str
         """
         self._author_email = author_email
 
@@ -200,7 +219,7 @@ class CreateCommitRequestBody:
         提交作者的名称
 
         :param author_name: The author_name of this CreateCommitRequestBody.
-        :type: str
+        :type author_name: str
         """
         self._author_name = author_name
 
@@ -222,7 +241,7 @@ class CreateCommitRequestBody:
         是否包括提交统计信息。默认值为true
 
         :param stats: The stats of this CreateCommitRequestBody.
-        :type: bool
+        :type stats: bool
         """
         self._stats = stats
 
@@ -244,7 +263,7 @@ class CreateCommitRequestBody:
         是否覆盖目标分支。当true时，使用基于start_branch的新提交覆盖目标分支
 
         :param force: The force of this CreateCommitRequestBody.
-        :type: str
+        :type force: str
         """
         self._force = force
 

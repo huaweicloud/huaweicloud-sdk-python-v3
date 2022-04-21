@@ -52,21 +52,17 @@ class SaClient(Client):
         """检查心跳健康
 
         SA提供心跳接口，集成产品定时（例如：每五分钟）发送心跳报文到SA，用来确认集成产品与SA之间的通路是否健康。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CheckProductHealthyRequest request
-        :return: CheckProductHealthyResponse
+        :param request: Request instance for CheckProductHealthy
+        :type request: :class:`huaweicloudsdksa.v1.CheckProductHealthyRequest`
+        :rtype: :class:`huaweicloudsdksa.v1.CheckProductHealthyResponse`
         """
         return self.check_product_healthy_with_http_info(request)
 
     def check_product_healthy_with_http_info(self, request):
-        """检查心跳健康
-
-        SA提供心跳接口，集成产品定时（例如：每五分钟）发送心跳报文到SA，用来确认集成产品与SA之间的通路是否健康。
-
-        :param CheckProductHealthyRequest request
-        :return: CheckProductHealthyResponse
-        """
-
         all_params = ['project_id', 'check_product_healthy_request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -114,26 +110,21 @@ class SaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def import_events(self, request):
         """上报安全产品数据(V2)
 
         批量数据上报，每批次最多不超过50条。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ImportEventsRequest request
-        :return: ImportEventsResponse
+        :param request: Request instance for ImportEvents
+        :type request: :class:`huaweicloudsdksa.v1.ImportEventsRequest`
+        :rtype: :class:`huaweicloudsdksa.v1.ImportEventsResponse`
         """
         return self.import_events_with_http_info(request)
 
     def import_events_with_http_info(self, request):
-        """上报安全产品数据(V2)
-
-        批量数据上报，每批次最多不超过50条。
-
-        :param ImportEventsRequest request
-        :return: ImportEventsResponse
-        """
-
         all_params = ['project_id', 'import_events_request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -180,7 +171,6 @@ class SaClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

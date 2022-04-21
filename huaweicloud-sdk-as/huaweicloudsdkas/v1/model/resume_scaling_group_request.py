@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResumeScalingGroupRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ResumeScalingGroupRequest:
     }
 
     def __init__(self, scaling_group_id=None, body=None):
-        """ResumeScalingGroupRequest - a model defined in huaweicloud sdk"""
+        """ResumeScalingGroupRequest
+
+        The model defined in huaweicloud sdk
+
+        :param scaling_group_id: 伸缩组ID
+        :type scaling_group_id: str
+        :param body: Body of the ResumeScalingGroupRequest
+        :type body: :class:`huaweicloudsdkas.v1.ResumeScalingGroupOption`
+        """
         
         
 
@@ -62,7 +69,7 @@ class ResumeScalingGroupRequest:
         伸缩组ID
 
         :param scaling_group_id: The scaling_group_id of this ResumeScalingGroupRequest.
-        :type: str
+        :type scaling_group_id: str
         """
         self._scaling_group_id = scaling_group_id
 
@@ -72,7 +79,7 @@ class ResumeScalingGroupRequest:
 
 
         :return: The body of this ResumeScalingGroupRequest.
-        :rtype: ResumeScalingGroupOption
+        :rtype: :class:`huaweicloudsdkas.v1.ResumeScalingGroupOption`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class ResumeScalingGroupRequest:
 
 
         :param body: The body of this ResumeScalingGroupRequest.
-        :type: ResumeScalingGroupOption
+        :type body: :class:`huaweicloudsdkas.v1.ResumeScalingGroupOption`
         """
         self._body = body
 

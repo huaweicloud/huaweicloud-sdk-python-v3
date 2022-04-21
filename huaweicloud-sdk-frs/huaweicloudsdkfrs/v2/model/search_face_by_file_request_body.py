@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SearchFaceByFileRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class SearchFaceByFileRequestBody:
     }
 
     def __init__(self, image_file=None, top_n=None, threshold=None, sort=None, filter=None, return_fields=None):
-        """SearchFaceByFileRequestBody - a model defined in huaweicloud sdk"""
+        """SearchFaceByFileRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param image_file: 本地图片文件，图片不能超过8MB,建议小于1MB。上传文件时，请求格式为multipart。  必选，与image_url、image_base64、face_id四选一。
+        :type image_file: :class:`huaweicloudsdkcore.http.formdata.FormFile`
+        :param top_n: 返回查询到的最相似的N张人脸，N默认为10。
+        :type top_n: int
+        :param threshold: 人脸相似度阈值，低于这个阈值则不返回，取值范围0~1，一般情况下建议取值0.93，默认为0。
+        :type threshold: float
+        :param sort: 支持字段排序，参考[sort语法](https://support.huaweicloud.com/api-face/face_02_0013.html)。
+        :type sort: str
+        :param filter: 过滤条件，参考[filter语法](https://support.huaweicloud.com/api-face/face_02_0014.html)。
+        :type filter: str
+        :param return_fields: 指定返回的自定义字段。
+        :type return_fields: str
+        """
         
         
 
@@ -71,7 +86,7 @@ class SearchFaceByFileRequestBody:
         本地图片文件，图片不能超过8MB,建议小于1MB。上传文件时，请求格式为multipart。  必选，与image_url、image_base64、face_id四选一。
 
         :return: The image_file of this SearchFaceByFileRequestBody.
-        :rtype: file
+        :rtype: :class:`huaweicloudsdkcore.http.formdata.FormFile`
         """
         return self._image_file
 
@@ -82,7 +97,7 @@ class SearchFaceByFileRequestBody:
         本地图片文件，图片不能超过8MB,建议小于1MB。上传文件时，请求格式为multipart。  必选，与image_url、image_base64、face_id四选一。
 
         :param image_file: The image_file of this SearchFaceByFileRequestBody.
-        :type: file
+        :type image_file: :class:`huaweicloudsdkcore.http.formdata.FormFile`
         """
         self._image_file = image_file
 
@@ -104,7 +119,7 @@ class SearchFaceByFileRequestBody:
         返回查询到的最相似的N张人脸，N默认为10。
 
         :param top_n: The top_n of this SearchFaceByFileRequestBody.
-        :type: int
+        :type top_n: int
         """
         self._top_n = top_n
 
@@ -126,7 +141,7 @@ class SearchFaceByFileRequestBody:
         人脸相似度阈值，低于这个阈值则不返回，取值范围0~1，一般情况下建议取值0.93，默认为0。
 
         :param threshold: The threshold of this SearchFaceByFileRequestBody.
-        :type: float
+        :type threshold: float
         """
         self._threshold = threshold
 
@@ -148,7 +163,7 @@ class SearchFaceByFileRequestBody:
         支持字段排序，参考[sort语法](https://support.huaweicloud.com/api-face/face_02_0013.html)。
 
         :param sort: The sort of this SearchFaceByFileRequestBody.
-        :type: str
+        :type sort: str
         """
         self._sort = sort
 
@@ -170,7 +185,7 @@ class SearchFaceByFileRequestBody:
         过滤条件，参考[filter语法](https://support.huaweicloud.com/api-face/face_02_0014.html)。
 
         :param filter: The filter of this SearchFaceByFileRequestBody.
-        :type: str
+        :type filter: str
         """
         self._filter = filter
 
@@ -192,7 +207,7 @@ class SearchFaceByFileRequestBody:
         指定返回的自定义字段。
 
         :param return_fields: The return_fields of this SearchFaceByFileRequestBody.
-        :type: str
+        :type return_fields: str
         """
         self._return_fields = return_fields
 

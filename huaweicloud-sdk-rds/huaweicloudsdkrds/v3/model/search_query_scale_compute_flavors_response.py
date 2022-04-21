@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SearchQueryScaleComputeFlavorsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class SearchQueryScaleComputeFlavorsResponse(SdkResponse):
     }
 
     def __init__(self, compute_flavor_groups=None):
-        """SearchQueryScaleComputeFlavorsResponse - a model defined in huaweicloud sdk"""
+        """SearchQueryScaleComputeFlavorsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param compute_flavor_groups: 计算规格列表对象。
+        :type compute_flavor_groups: list[:class:`huaweicloudsdkrds.v3.Computes`]
+        """
         
         super(SearchQueryScaleComputeFlavorsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class SearchQueryScaleComputeFlavorsResponse(SdkResponse):
         计算规格列表对象。
 
         :return: The compute_flavor_groups of this SearchQueryScaleComputeFlavorsResponse.
-        :rtype: list[Computes]
+        :rtype: list[:class:`huaweicloudsdkrds.v3.Computes`]
         """
         return self._compute_flavor_groups
 
@@ -58,7 +63,7 @@ class SearchQueryScaleComputeFlavorsResponse(SdkResponse):
         计算规格列表对象。
 
         :param compute_flavor_groups: The compute_flavor_groups of this SearchQueryScaleComputeFlavorsResponse.
-        :type: list[Computes]
+        :type compute_flavor_groups: list[:class:`huaweicloudsdkrds.v3.Computes`]
         """
         self._compute_flavor_groups = compute_flavor_groups
 

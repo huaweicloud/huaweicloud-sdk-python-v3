@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ValueInPropertyVisitorsNodeId:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ValueInPropertyVisitorsNodeId:
     }
 
     def __init__(self, value=None, optional=None, metadata=None):
-        """ValueInPropertyVisitorsNodeId - a model defined in huaweicloud sdk"""
+        """ValueInPropertyVisitorsNodeId
+
+        The model defined in huaweicloud sdk
+
+        :param value: value 最大长度512， value允许英文字母、数字、下划线、中划线、点、逗号、@、#、+、\\、/、？、^、&#x3D;、%、&amp;、:、~
+        :type value: str
+        :param optional: 标识属性是否可选，默认为true
+        :type optional: bool
+        :param metadata: 
+        :type metadata: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsRegisterTypeMetadata`
+        """
         
         
 
@@ -67,7 +76,7 @@ class ValueInPropertyVisitorsNodeId:
         value 最大长度512， value允许英文字母、数字、下划线、中划线、点、逗号、@、#、+、\\、/、？、^、=、%、&、:、~
 
         :param value: The value of this ValueInPropertyVisitorsNodeId.
-        :type: str
+        :type value: str
         """
         self._value = value
 
@@ -89,7 +98,7 @@ class ValueInPropertyVisitorsNodeId:
         标识属性是否可选，默认为true
 
         :param optional: The optional of this ValueInPropertyVisitorsNodeId.
-        :type: bool
+        :type optional: bool
         """
         self._optional = optional
 
@@ -99,7 +108,7 @@ class ValueInPropertyVisitorsNodeId:
 
 
         :return: The metadata of this ValueInPropertyVisitorsNodeId.
-        :rtype: ValueInPropertyVisitorsRegisterTypeMetadata
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsRegisterTypeMetadata`
         """
         return self._metadata
 
@@ -109,7 +118,7 @@ class ValueInPropertyVisitorsNodeId:
 
 
         :param metadata: The metadata of this ValueInPropertyVisitorsNodeId.
-        :type: ValueInPropertyVisitorsRegisterTypeMetadata
+        :type metadata: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsRegisterTypeMetadata`
         """
         self._metadata = metadata
 

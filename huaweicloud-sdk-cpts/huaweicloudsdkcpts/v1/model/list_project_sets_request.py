@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListProjectSetsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListProjectSetsRequest:
     }
 
     def __init__(self, offset=None, limit=None):
-        """ListProjectSetsRequest - a model defined in huaweicloud sdk"""
+        """ListProjectSetsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param offset: 查询偏移
+        :type offset: int
+        :param limit: 查询数量
+        :type limit: int
+        """
         
         
 
@@ -63,7 +70,7 @@ class ListProjectSetsRequest:
         查询偏移
 
         :param offset: The offset of this ListProjectSetsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -85,7 +92,7 @@ class ListProjectSetsRequest:
         查询数量
 
         :param limit: The limit of this ListProjectSetsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

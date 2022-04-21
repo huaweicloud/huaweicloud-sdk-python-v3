@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Auth:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Auth:
     }
 
     def __init__(self, type=None, key=None):
-        """Auth - a model defined in huaweicloud sdk"""
+        """Auth
+
+        The model defined in huaweicloud sdk
+
+        :param type: 取值为枚举类型。
+        :type type: str
+        :param key: - type为枚举值password时，key表示密码； - type为枚举值keypair时，key表示私钥；
+        :type key: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class Auth:
         取值为枚举类型。
 
         :param type: The type of this Auth.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -85,7 +92,7 @@ class Auth:
         - type为枚举值password时，key表示密码； - type为枚举值keypair时，key表示私钥；
 
         :param key: The key of this Auth.
-        :type: str
+        :type key: str
         """
         self._key = key
 

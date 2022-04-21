@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchAttachSharableVolumesOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchAttachSharableVolumesOption:
     }
 
     def __init__(self, server_id=None, device=None):
-        """BatchAttachSharableVolumesOption - a model defined in huaweicloud sdk"""
+        """BatchAttachSharableVolumesOption
+
+        The model defined in huaweicloud sdk
+
+        :param server_id: 共享磁盘需要挂载的弹性云服务器ID。
+        :type server_id: str
+        :param device: 磁盘挂载点。  &gt; 说明： &gt;  &gt; - 新增加的磁盘挂载点不能和已有的磁盘挂载点相同。 &gt; - 对于采用XEN虚拟化类型的弹性云服务器，device为必选参数；系统盘挂载点请指定/dev/sda；数据盘挂载点请按英文字母顺序依次指定，如/dev/sdb，/dev/sdc，如果指定了以“/dev/vd”开头的挂载点，系统默认改为“/dev/sd”。 &gt; - 对于采用KVM虚拟化类型的弹性云服务器，系统盘挂载点请指定/dev/vda；数据盘挂载点可不用指定，也可按英文字母顺序依次指定，如/dev/vdb，/dev/vdc，如果指定了以“/dev/sd”开头的挂载点，系统默认改为“/dev/vd”。
+        :type device: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class BatchAttachSharableVolumesOption:
         共享磁盘需要挂载的弹性云服务器ID。
 
         :param server_id: The server_id of this BatchAttachSharableVolumesOption.
-        :type: str
+        :type server_id: str
         """
         self._server_id = server_id
 
@@ -84,7 +91,7 @@ class BatchAttachSharableVolumesOption:
         磁盘挂载点。  > 说明： >  > - 新增加的磁盘挂载点不能和已有的磁盘挂载点相同。 > - 对于采用XEN虚拟化类型的弹性云服务器，device为必选参数；系统盘挂载点请指定/dev/sda；数据盘挂载点请按英文字母顺序依次指定，如/dev/sdb，/dev/sdc，如果指定了以“/dev/vd”开头的挂载点，系统默认改为“/dev/sd”。 > - 对于采用KVM虚拟化类型的弹性云服务器，系统盘挂载点请指定/dev/vda；数据盘挂载点可不用指定，也可按英文字母顺序依次指定，如/dev/vdb，/dev/vdc，如果指定了以“/dev/sd”开头的挂载点，系统默认改为“/dev/vd”。
 
         :param device: The device of this BatchAttachSharableVolumesOption.
-        :type: str
+        :type device: str
         """
         self._device = device
 

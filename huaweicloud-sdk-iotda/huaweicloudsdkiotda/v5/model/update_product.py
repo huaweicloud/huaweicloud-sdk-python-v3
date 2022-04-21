@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateProduct:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class UpdateProduct:
     }
 
     def __init__(self, app_id=None, name=None, device_type=None, protocol_type=None, data_format=None, service_capabilities=None, manufacturer_name=None, industry=None, description=None):
-        """UpdateProduct - a model defined in huaweicloud sdk"""
+        """UpdateProduct
+
+        The model defined in huaweicloud sdk
+
+        :param app_id: **参数说明**：资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，建议携带该参数，指定要修改的产品属于哪个资源空间；若不携带，则优先修改默认资源空间下产品，如默认资源空间下无对应产品，则按照产品创建时间修改最早创建产品。如果用户存在多资源空间，同时又不想携带该参数，可以联系华为技术支持对用户数据做资源空间合并。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
+        :type app_id: str
+        :param name: **参数说明**：产品名称。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_?&#39;#().,&amp;%@!-等字符的组合。
+        :type name: str
+        :param device_type: **参数说明**：设备类型。 **取值范围**：长度不超过32，只允许中文、字母、数字、以及_?&#39;#().,&amp;%@!-等字符的组合。
+        :type device_type: str
+        :param protocol_type: **参数说明**：设备使用的协议类型。注：禁止其他协议类型修改为CoAP。 **取值范围**：MQTT，CoAP，HTTP，HTTPS，Modbus，ONVIF，OPC-UA，OPC-DA，Other。
+        :type protocol_type: str
+        :param data_format: **参数说明**：设备上报数据的格式。 **取值范围**： - json：JSON格式 - binary：二进制码流格式
+        :type data_format: str
+        :param service_capabilities: **参数说明**：设备的服务能力列表。
+        :type service_capabilities: list[:class:`huaweicloudsdkiotda.v5.ServiceCapability`]
+        :param manufacturer_name: **参数说明**：厂商名称。 **取值范围**：长度不超过32，只允许中文、字母、数字、以及_?&#39;#().,&amp;%@!-等字符的组合。
+        :type manufacturer_name: str
+        :param industry: **参数说明**：设备所属行业。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_?&#39;#().,&amp;%@!-等字符的组合。
+        :type industry: str
+        :param description: **参数说明**：产品的描述信息。 **取值范围**：长度不超过128，只允许中文、字母、数字、空白字符、以及_?&#39;#().,;&amp;%@!- ，、：；。/等字符的组合。
+        :type description: str
+        """
         
         
 
@@ -98,7 +119,7 @@ class UpdateProduct:
         **参数说明**：资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，建议携带该参数，指定要修改的产品属于哪个资源空间；若不携带，则优先修改默认资源空间下产品，如默认资源空间下无对应产品，则按照产品创建时间修改最早创建产品。如果用户存在多资源空间，同时又不想携带该参数，可以联系华为技术支持对用户数据做资源空间合并。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :param app_id: The app_id of this UpdateProduct.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -120,7 +141,7 @@ class UpdateProduct:
         **参数说明**：产品名称。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
         :param name: The name of this UpdateProduct.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -142,7 +163,7 @@ class UpdateProduct:
         **参数说明**：设备类型。 **取值范围**：长度不超过32，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
         :param device_type: The device_type of this UpdateProduct.
-        :type: str
+        :type device_type: str
         """
         self._device_type = device_type
 
@@ -164,7 +185,7 @@ class UpdateProduct:
         **参数说明**：设备使用的协议类型。注：禁止其他协议类型修改为CoAP。 **取值范围**：MQTT，CoAP，HTTP，HTTPS，Modbus，ONVIF，OPC-UA，OPC-DA，Other。
 
         :param protocol_type: The protocol_type of this UpdateProduct.
-        :type: str
+        :type protocol_type: str
         """
         self._protocol_type = protocol_type
 
@@ -186,7 +207,7 @@ class UpdateProduct:
         **参数说明**：设备上报数据的格式。 **取值范围**： - json：JSON格式 - binary：二进制码流格式
 
         :param data_format: The data_format of this UpdateProduct.
-        :type: str
+        :type data_format: str
         """
         self._data_format = data_format
 
@@ -197,7 +218,7 @@ class UpdateProduct:
         **参数说明**：设备的服务能力列表。
 
         :return: The service_capabilities of this UpdateProduct.
-        :rtype: list[ServiceCapability]
+        :rtype: list[:class:`huaweicloudsdkiotda.v5.ServiceCapability`]
         """
         return self._service_capabilities
 
@@ -208,7 +229,7 @@ class UpdateProduct:
         **参数说明**：设备的服务能力列表。
 
         :param service_capabilities: The service_capabilities of this UpdateProduct.
-        :type: list[ServiceCapability]
+        :type service_capabilities: list[:class:`huaweicloudsdkiotda.v5.ServiceCapability`]
         """
         self._service_capabilities = service_capabilities
 
@@ -230,7 +251,7 @@ class UpdateProduct:
         **参数说明**：厂商名称。 **取值范围**：长度不超过32，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
         :param manufacturer_name: The manufacturer_name of this UpdateProduct.
-        :type: str
+        :type manufacturer_name: str
         """
         self._manufacturer_name = manufacturer_name
 
@@ -252,7 +273,7 @@ class UpdateProduct:
         **参数说明**：设备所属行业。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
         :param industry: The industry of this UpdateProduct.
-        :type: str
+        :type industry: str
         """
         self._industry = industry
 
@@ -274,7 +295,7 @@ class UpdateProduct:
         **参数说明**：产品的描述信息。 **取值范围**：长度不超过128，只允许中文、字母、数字、空白字符、以及_?'#().,;&%@!- ，、：；。/等字符的组合。
 
         :param description: The description of this UpdateProduct.
-        :type: str
+        :type description: str
         """
         self._description = description
 

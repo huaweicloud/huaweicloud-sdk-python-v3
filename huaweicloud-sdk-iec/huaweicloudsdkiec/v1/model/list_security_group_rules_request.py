@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSecurityGroupRulesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListSecurityGroupRulesRequest:
     }
 
     def __init__(self, limit=None, offset=None, security_group_id=None):
-        """ListSecurityGroupRulesRequest - a model defined in huaweicloud sdk"""
+        """ListSecurityGroupRulesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 查询返回边缘安全组规则列表数量。取值范围：0~1000。
+        :type limit: int
+        :param offset: 查询的偏移量。
+        :type offset: int
+        :param security_group_id: 安全组ID。uuid
+        :type security_group_id: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class ListSecurityGroupRulesRequest:
         查询返回边缘安全组规则列表数量。取值范围：0~1000。
 
         :param limit: The limit of this ListSecurityGroupRulesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -90,7 +99,7 @@ class ListSecurityGroupRulesRequest:
         查询的偏移量。
 
         :param offset: The offset of this ListSecurityGroupRulesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -112,7 +121,7 @@ class ListSecurityGroupRulesRequest:
         安全组ID。uuid
 
         :param security_group_id: The security_group_id of this ListSecurityGroupRulesRequest.
-        :type: str
+        :type security_group_id: str
         """
         self._security_group_id = security_group_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QualityEnhanceVideo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class QualityEnhanceVideo:
     }
 
     def __init__(self, video_denoise=None, video_sharp=None, video_contrast=None, video_superresolution=None, video_deblock=None, video_saturation=None):
-        """QualityEnhanceVideo - a model defined in huaweicloud sdk"""
+        """QualityEnhanceVideo
+
+        The model defined in huaweicloud sdk
+
+        :param video_denoise: 
+        :type video_denoise: :class:`huaweicloudsdkmpc.v1.VideoDenoise`
+        :param video_sharp: 
+        :type video_sharp: :class:`huaweicloudsdkmpc.v1.VideoSharp`
+        :param video_contrast: 
+        :type video_contrast: :class:`huaweicloudsdkmpc.v1.VideoContrast`
+        :param video_superresolution: 
+        :type video_superresolution: :class:`huaweicloudsdkmpc.v1.VideoSuperresolution`
+        :param video_deblock: 
+        :type video_deblock: :class:`huaweicloudsdkmpc.v1.VideoDeblock`
+        :param video_saturation: 
+        :type video_saturation: :class:`huaweicloudsdkmpc.v1.VideoSaturation`
+        """
         
         
 
@@ -71,7 +86,7 @@ class QualityEnhanceVideo:
 
 
         :return: The video_denoise of this QualityEnhanceVideo.
-        :rtype: VideoDenoise
+        :rtype: :class:`huaweicloudsdkmpc.v1.VideoDenoise`
         """
         return self._video_denoise
 
@@ -81,7 +96,7 @@ class QualityEnhanceVideo:
 
 
         :param video_denoise: The video_denoise of this QualityEnhanceVideo.
-        :type: VideoDenoise
+        :type video_denoise: :class:`huaweicloudsdkmpc.v1.VideoDenoise`
         """
         self._video_denoise = video_denoise
 
@@ -91,7 +106,7 @@ class QualityEnhanceVideo:
 
 
         :return: The video_sharp of this QualityEnhanceVideo.
-        :rtype: VideoSharp
+        :rtype: :class:`huaweicloudsdkmpc.v1.VideoSharp`
         """
         return self._video_sharp
 
@@ -101,7 +116,7 @@ class QualityEnhanceVideo:
 
 
         :param video_sharp: The video_sharp of this QualityEnhanceVideo.
-        :type: VideoSharp
+        :type video_sharp: :class:`huaweicloudsdkmpc.v1.VideoSharp`
         """
         self._video_sharp = video_sharp
 
@@ -111,7 +126,7 @@ class QualityEnhanceVideo:
 
 
         :return: The video_contrast of this QualityEnhanceVideo.
-        :rtype: VideoContrast
+        :rtype: :class:`huaweicloudsdkmpc.v1.VideoContrast`
         """
         return self._video_contrast
 
@@ -121,7 +136,7 @@ class QualityEnhanceVideo:
 
 
         :param video_contrast: The video_contrast of this QualityEnhanceVideo.
-        :type: VideoContrast
+        :type video_contrast: :class:`huaweicloudsdkmpc.v1.VideoContrast`
         """
         self._video_contrast = video_contrast
 
@@ -131,7 +146,7 @@ class QualityEnhanceVideo:
 
 
         :return: The video_superresolution of this QualityEnhanceVideo.
-        :rtype: VideoSuperresolution
+        :rtype: :class:`huaweicloudsdkmpc.v1.VideoSuperresolution`
         """
         return self._video_superresolution
 
@@ -141,7 +156,7 @@ class QualityEnhanceVideo:
 
 
         :param video_superresolution: The video_superresolution of this QualityEnhanceVideo.
-        :type: VideoSuperresolution
+        :type video_superresolution: :class:`huaweicloudsdkmpc.v1.VideoSuperresolution`
         """
         self._video_superresolution = video_superresolution
 
@@ -151,7 +166,7 @@ class QualityEnhanceVideo:
 
 
         :return: The video_deblock of this QualityEnhanceVideo.
-        :rtype: VideoDeblock
+        :rtype: :class:`huaweicloudsdkmpc.v1.VideoDeblock`
         """
         return self._video_deblock
 
@@ -161,7 +176,7 @@ class QualityEnhanceVideo:
 
 
         :param video_deblock: The video_deblock of this QualityEnhanceVideo.
-        :type: VideoDeblock
+        :type video_deblock: :class:`huaweicloudsdkmpc.v1.VideoDeblock`
         """
         self._video_deblock = video_deblock
 
@@ -171,7 +186,7 @@ class QualityEnhanceVideo:
 
 
         :return: The video_saturation of this QualityEnhanceVideo.
-        :rtype: VideoSaturation
+        :rtype: :class:`huaweicloudsdkmpc.v1.VideoSaturation`
         """
         return self._video_saturation
 
@@ -181,7 +196,7 @@ class QualityEnhanceVideo:
 
 
         :param video_saturation: The video_saturation of this QualityEnhanceVideo.
-        :type: VideoSaturation
+        :type video_saturation: :class:`huaweicloudsdkmpc.v1.VideoSaturation`
         """
         self._video_saturation = video_saturation
 

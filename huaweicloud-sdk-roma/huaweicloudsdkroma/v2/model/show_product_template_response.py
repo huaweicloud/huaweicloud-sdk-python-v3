@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowProductTemplateResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ShowProductTemplateResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, status=None, created_user=None, last_updated_user=None, created_datetime=None, last_updated_datetime=None):
-        """ShowProductTemplateResponse - a model defined in huaweicloud sdk"""
+        """ShowProductTemplateResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 产品模板ID
+        :type id: int
+        :param name: 产品模板名称
+        :type name: str
+        :param description: 产品模板描述
+        :type description: str
+        :param status: 产品模板状态 0-启用 1-停用
+        :type status: int
+        :param created_user: 
+        :type created_user: :class:`huaweicloudsdkroma.v2.CreatedUser`
+        :param last_updated_user: 
+        :type last_updated_user: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
+        :param created_datetime: 创建时间，timestamp(ms)，使用UTC时区
+        :type created_datetime: int
+        :param last_updated_datetime: 最后修改时间，timestamp(ms)，使用UTC时区
+        :type last_updated_datetime: int
+        """
         
         super(ShowProductTemplateResponse, self).__init__()
 
@@ -93,7 +112,7 @@ class ShowProductTemplateResponse(SdkResponse):
         产品模板ID
 
         :param id: The id of this ShowProductTemplateResponse.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -115,7 +134,7 @@ class ShowProductTemplateResponse(SdkResponse):
         产品模板名称
 
         :param name: The name of this ShowProductTemplateResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -137,7 +156,7 @@ class ShowProductTemplateResponse(SdkResponse):
         产品模板描述
 
         :param description: The description of this ShowProductTemplateResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -159,7 +178,7 @@ class ShowProductTemplateResponse(SdkResponse):
         产品模板状态 0-启用 1-停用
 
         :param status: The status of this ShowProductTemplateResponse.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -169,7 +188,7 @@ class ShowProductTemplateResponse(SdkResponse):
 
 
         :return: The created_user of this ShowProductTemplateResponse.
-        :rtype: CreatedUser
+        :rtype: :class:`huaweicloudsdkroma.v2.CreatedUser`
         """
         return self._created_user
 
@@ -179,7 +198,7 @@ class ShowProductTemplateResponse(SdkResponse):
 
 
         :param created_user: The created_user of this ShowProductTemplateResponse.
-        :type: CreatedUser
+        :type created_user: :class:`huaweicloudsdkroma.v2.CreatedUser`
         """
         self._created_user = created_user
 
@@ -189,7 +208,7 @@ class ShowProductTemplateResponse(SdkResponse):
 
 
         :return: The last_updated_user of this ShowProductTemplateResponse.
-        :rtype: LastUpdatedUser
+        :rtype: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
         """
         return self._last_updated_user
 
@@ -199,7 +218,7 @@ class ShowProductTemplateResponse(SdkResponse):
 
 
         :param last_updated_user: The last_updated_user of this ShowProductTemplateResponse.
-        :type: LastUpdatedUser
+        :type last_updated_user: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
         """
         self._last_updated_user = last_updated_user
 
@@ -221,7 +240,7 @@ class ShowProductTemplateResponse(SdkResponse):
         创建时间，timestamp(ms)，使用UTC时区
 
         :param created_datetime: The created_datetime of this ShowProductTemplateResponse.
-        :type: int
+        :type created_datetime: int
         """
         self._created_datetime = created_datetime
 
@@ -243,7 +262,7 @@ class ShowProductTemplateResponse(SdkResponse):
         最后修改时间，timestamp(ms)，使用UTC时区
 
         :param last_updated_datetime: The last_updated_datetime of this ShowProductTemplateResponse.
-        :type: int
+        :type last_updated_datetime: int
         """
         self._last_updated_datetime = last_updated_datetime
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDeploymentJobsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ShowDeploymentJobsResponse(SdkResponse):
     }
 
     def __init__(self, id=None, job_id=None, status=None, address=None, deploy_parameters=None, time=None, creator_name=None, created_time=None):
-        """ShowDeploymentJobsResponse - a model defined in huaweicloud sdk"""
+        """ShowDeploymentJobsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 部署任务编号
+        :type id: int
+        :param job_id: 任务ID
+        :type job_id: str
+        :param status: 部署状态,-2：环境准备未就绪 -1 资源准备就绪 0 部署中 1：成功 2：失败
+        :type status: int
+        :param address: 访问地址
+        :type address: str
+        :param deploy_parameters: 部署参数
+        :type deploy_parameters: str
+        :param time: 部署耗时
+        :type time: int
+        :param creator_name: 创建人
+        :type creator_name: str
+        :param created_time: 创建时间
+        :type created_time: str
+        """
         
         super(ShowDeploymentJobsResponse, self).__init__()
 
@@ -93,7 +112,7 @@ class ShowDeploymentJobsResponse(SdkResponse):
         部署任务编号
 
         :param id: The id of this ShowDeploymentJobsResponse.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -115,7 +134,7 @@ class ShowDeploymentJobsResponse(SdkResponse):
         任务ID
 
         :param job_id: The job_id of this ShowDeploymentJobsResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -137,7 +156,7 @@ class ShowDeploymentJobsResponse(SdkResponse):
         部署状态,-2：环境准备未就绪 -1 资源准备就绪 0 部署中 1：成功 2：失败
 
         :param status: The status of this ShowDeploymentJobsResponse.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -159,7 +178,7 @@ class ShowDeploymentJobsResponse(SdkResponse):
         访问地址
 
         :param address: The address of this ShowDeploymentJobsResponse.
-        :type: str
+        :type address: str
         """
         self._address = address
 
@@ -181,7 +200,7 @@ class ShowDeploymentJobsResponse(SdkResponse):
         部署参数
 
         :param deploy_parameters: The deploy_parameters of this ShowDeploymentJobsResponse.
-        :type: str
+        :type deploy_parameters: str
         """
         self._deploy_parameters = deploy_parameters
 
@@ -203,7 +222,7 @@ class ShowDeploymentJobsResponse(SdkResponse):
         部署耗时
 
         :param time: The time of this ShowDeploymentJobsResponse.
-        :type: int
+        :type time: int
         """
         self._time = time
 
@@ -225,7 +244,7 @@ class ShowDeploymentJobsResponse(SdkResponse):
         创建人
 
         :param creator_name: The creator_name of this ShowDeploymentJobsResponse.
-        :type: str
+        :type creator_name: str
         """
         self._creator_name = creator_name
 
@@ -247,7 +266,7 @@ class ShowDeploymentJobsResponse(SdkResponse):
         创建时间
 
         :param created_time: The created_time of this ShowDeploymentJobsResponse.
-        :type: str
+        :type created_time: str
         """
         self._created_time = created_time
 

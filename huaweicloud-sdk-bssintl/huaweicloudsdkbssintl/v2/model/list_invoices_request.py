@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListInvoicesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListInvoicesRequest:
     }
 
     def __init__(self, start_time=None, end_time=None, offset=None, limit=None):
-        """ListInvoicesRequest - a model defined in huaweicloud sdk"""
+        """ListInvoicesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param start_time: 发票申请开始时间。UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。
+        :type start_time: str
+        :param end_time: 发票申请结束时间。UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。
+        :type end_time: str
+        :param offset: 页码。
+        :type offset: int
+        :param limit: 每页大小。
+        :type limit: int
+        """
         
         
 
@@ -69,7 +80,7 @@ class ListInvoicesRequest:
         发票申请开始时间。UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :param start_time: The start_time of this ListInvoicesRequest.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -91,7 +102,7 @@ class ListInvoicesRequest:
         发票申请结束时间。UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :param end_time: The end_time of this ListInvoicesRequest.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -113,7 +124,7 @@ class ListInvoicesRequest:
         页码。
 
         :param offset: The offset of this ListInvoicesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -135,7 +146,7 @@ class ListInvoicesRequest:
         每页大小。
 
         :param limit: The limit of this ListInvoicesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

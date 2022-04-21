@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SearchStatisticUserInfoRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class SearchStatisticUserInfoRequest:
     }
 
     def __init__(self, offset=None, limit=None, time_unit=None, start_time=None, end_time=None, category=None):
-        """SearchStatisticUserInfoRequest - a model defined in huaweicloud sdk"""
+        """SearchStatisticUserInfoRequest
+
+        The model defined in huaweicloud sdk
+
+        :param offset: 查询偏移量。 * 取值：大于等于0，默认值为0。 * 小于最小值0时，系统设置为0。 * 大于等于最大条目数量，则返回最后一页数据，页数根据总条目数和limit计算得出。
+        :type offset: int
+        :param limit: 查询的条目数量。 * 取值：1-500，默认值为20。 * 小于最小值1时，系统设置为1。 * 大于最大值500时，系统设置为500。
+        :type limit: int
+        :param time_unit: 查询时间维度，取值： * D: 按日查询 * M: 按月查询。
+        :type time_unit: str
+        :param start_time: 查询时间范围的开始时间，格式根据timeUnit的取值而定。 * timeUnit &#x3D; D，格式：yyyy-MM-dd，此情况下startTime与endTime间隔最多31日。 * timeUnit &#x3D; M，格式：yyyy-MM，此情况下startTime与endTime间隔最多12个月。
+        :type start_time: str
+        :param end_time: 查询时间范围的结束时间，格式根据timeUnit的取值而定。 * timeUnit &#x3D; D，格式：yyyy-MM-dd，此情况下startTime与endTime间隔最多31日。 * timeUnit &#x3D; M，格式：yyyy-MM，此情况下startTime与endTime间隔最多12个月。
+        :type end_time: str
+        :param category: 查询分类，取值： * user_login_info: 用户登录数据 * user_activate_info: 用户激活数据 * user_login_device_info: 用户登录设备数据
+        :type category: str
+        """
         
         
 
@@ -79,7 +94,7 @@ class SearchStatisticUserInfoRequest:
         查询偏移量。 * 取值：大于等于0，默认值为0。 * 小于最小值0时，系统设置为0。 * 大于等于最大条目数量，则返回最后一页数据，页数根据总条目数和limit计算得出。
 
         :param offset: The offset of this SearchStatisticUserInfoRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -101,7 +116,7 @@ class SearchStatisticUserInfoRequest:
         查询的条目数量。 * 取值：1-500，默认值为20。 * 小于最小值1时，系统设置为1。 * 大于最大值500时，系统设置为500。
 
         :param limit: The limit of this SearchStatisticUserInfoRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -123,7 +138,7 @@ class SearchStatisticUserInfoRequest:
         查询时间维度，取值： * D: 按日查询 * M: 按月查询。
 
         :param time_unit: The time_unit of this SearchStatisticUserInfoRequest.
-        :type: str
+        :type time_unit: str
         """
         self._time_unit = time_unit
 
@@ -145,7 +160,7 @@ class SearchStatisticUserInfoRequest:
         查询时间范围的开始时间，格式根据timeUnit的取值而定。 * timeUnit = D，格式：yyyy-MM-dd，此情况下startTime与endTime间隔最多31日。 * timeUnit = M，格式：yyyy-MM，此情况下startTime与endTime间隔最多12个月。
 
         :param start_time: The start_time of this SearchStatisticUserInfoRequest.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -167,7 +182,7 @@ class SearchStatisticUserInfoRequest:
         查询时间范围的结束时间，格式根据timeUnit的取值而定。 * timeUnit = D，格式：yyyy-MM-dd，此情况下startTime与endTime间隔最多31日。 * timeUnit = M，格式：yyyy-MM，此情况下startTime与endTime间隔最多12个月。
 
         :param end_time: The end_time of this SearchStatisticUserInfoRequest.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -189,7 +204,7 @@ class SearchStatisticUserInfoRequest:
         查询分类，取值： * user_login_info: 用户登录数据 * user_activate_info: 用户激活数据 * user_login_device_info: 用户登录设备数据
 
         :param category: The category of this SearchStatisticUserInfoRequest.
-        :type: str
+        :type category: str
         """
         self._category = category
 

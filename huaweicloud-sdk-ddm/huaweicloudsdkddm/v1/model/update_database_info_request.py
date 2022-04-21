@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDatabaseInfoRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateDatabaseInfoRequest:
     }
 
     def __init__(self, instance_id=None):
-        """UpdateDatabaseInfoRequest - a model defined in huaweicloud sdk"""
+        """UpdateDatabaseInfoRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: DDM实例ID
+        :type instance_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class UpdateDatabaseInfoRequest:
         DDM实例ID
 
         :param instance_id: The instance_id of this UpdateDatabaseInfoRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 

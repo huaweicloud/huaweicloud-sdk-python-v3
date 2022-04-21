@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDrReplicaStatusResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowDrReplicaStatusResponse(SdkResponse):
     }
 
     def __init__(self, replica_state=None, wal_write_receive_delay_in_mb=None, wal_write_replay_delay_in_mb=None, wal_receive_replay_delay_in_ms=None):
-        """ShowDrReplicaStatusResponse - a model defined in huaweicloud sdk"""
+        """ShowDrReplicaStatusResponse
+
+        The model defined in huaweicloud sdk
+
+        :param replica_state: 同步状态，取值范围是0或-1，0表示正常，-1表示异常。
+        :type replica_state: str
+        :param wal_write_receive_delay_in_mb: 发送延迟大小（MB），即主实例当前wal日志写入位点与灾备实例当前接收wal日志位点的差值。
+        :type wal_write_receive_delay_in_mb: str
+        :param wal_write_replay_delay_in_mb: 端到端延迟大小（MB），即主实例当前wal日志写入位点与灾备实例当前回放wal日志位点的差值。
+        :type wal_write_replay_delay_in_mb: str
+        :param wal_receive_replay_delay_in_ms: 回放延迟时间（ms），即数据在灾备上回放的延迟时间。
+        :type wal_receive_replay_delay_in_ms: str
+        """
         
         super(ShowDrReplicaStatusResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class ShowDrReplicaStatusResponse(SdkResponse):
         同步状态，取值范围是0或-1，0表示正常，-1表示异常。
 
         :param replica_state: The replica_state of this ShowDrReplicaStatusResponse.
-        :type: str
+        :type replica_state: str
         """
         self._replica_state = replica_state
 
@@ -95,7 +106,7 @@ class ShowDrReplicaStatusResponse(SdkResponse):
         发送延迟大小（MB），即主实例当前wal日志写入位点与灾备实例当前接收wal日志位点的差值。
 
         :param wal_write_receive_delay_in_mb: The wal_write_receive_delay_in_mb of this ShowDrReplicaStatusResponse.
-        :type: str
+        :type wal_write_receive_delay_in_mb: str
         """
         self._wal_write_receive_delay_in_mb = wal_write_receive_delay_in_mb
 
@@ -117,7 +128,7 @@ class ShowDrReplicaStatusResponse(SdkResponse):
         端到端延迟大小（MB），即主实例当前wal日志写入位点与灾备实例当前回放wal日志位点的差值。
 
         :param wal_write_replay_delay_in_mb: The wal_write_replay_delay_in_mb of this ShowDrReplicaStatusResponse.
-        :type: str
+        :type wal_write_replay_delay_in_mb: str
         """
         self._wal_write_replay_delay_in_mb = wal_write_replay_delay_in_mb
 
@@ -139,7 +150,7 @@ class ShowDrReplicaStatusResponse(SdkResponse):
         回放延迟时间（ms），即数据在灾备上回放的延迟时间。
 
         :param wal_receive_replay_delay_in_ms: The wal_receive_replay_delay_in_ms of this ShowDrReplicaStatusResponse.
-        :type: str
+        :type wal_receive_replay_delay_in_ms: str
         """
         self._wal_receive_replay_delay_in_ms = wal_receive_replay_delay_in_ms
 

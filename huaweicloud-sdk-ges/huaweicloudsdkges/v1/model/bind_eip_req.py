@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BindEipReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BindEipReq:
     }
 
     def __init__(self, eip_id=None):
-        """BindEipReq - a model defined in huaweicloud sdk"""
+        """BindEipReq
+
+        The model defined in huaweicloud sdk
+
+        :param eip_id: 弹性公网IP的ID。
+        :type eip_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class BindEipReq:
         弹性公网IP的ID。
 
         :param eip_id: The eip_id of this BindEipReq.
-        :type: str
+        :type eip_id: str
         """
         self._eip_id = eip_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RequestParameter:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RequestParameter:
     }
 
     def __init__(self, parameter_name=None, parameter_value=None):
-        """RequestParameter - a model defined in huaweicloud sdk"""
+        """RequestParameter
+
+        The model defined in huaweicloud sdk
+
+        :param parameter_name: 请求参数名
+        :type parameter_name: str
+        :param parameter_value: 请求参数值
+        :type parameter_value: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class RequestParameter:
         请求参数名
 
         :param parameter_name: The parameter_name of this RequestParameter.
-        :type: str
+        :type parameter_name: str
         """
         self._parameter_name = parameter_name
 
@@ -85,7 +92,7 @@ class RequestParameter:
         请求参数值
 
         :param parameter_value: The parameter_value of this RequestParameter.
-        :type: str
+        :type parameter_value: str
         """
         self._parameter_value = parameter_value
 

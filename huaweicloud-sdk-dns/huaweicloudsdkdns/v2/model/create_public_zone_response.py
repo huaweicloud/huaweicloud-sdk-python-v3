@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreatePublicZoneResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -60,7 +59,43 @@ class CreatePublicZoneResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, email=None, zone_type=None, ttl=None, serial=None, status=None, record_num=None, pool_id=None, project_id=None, created_at=None, updated_at=None, links=None, enterprise_project_id=None, masters=None):
-        """CreatePublicZoneResponse - a model defined in huaweicloud sdk"""
+        """CreatePublicZoneResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: zone的ID，uuid形式的一个资源标识。
+        :type id: str
+        :param name: zone名称。
+        :type name: str
+        :param description: 对zone的描述信息。
+        :type description: str
+        :param email: 管理该zone的管理员邮箱。
+        :type email: str
+        :param zone_type: zone类型，公网（public）。
+        :type zone_type: str
+        :param ttl: 该zone下SOA记录中的ttl值。
+        :type ttl: int
+        :param serial: 该zone下SOA记录中用于标识zone文件变更的序列值，用于主从节点同步。
+        :type serial: int
+        :param status: 资源状态。
+        :type status: str
+        :param record_num: 该zone下的recordset个数。
+        :type record_num: int
+        :param pool_id: 托管该zone的pool，由系统分配。
+        :type pool_id: str
+        :param project_id: zone所属的项目ID。
+        :type project_id: str
+        :param created_at: 创建时间。  采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
+        :type created_at: str
+        :param updated_at: 更新时间。  采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
+        :type updated_at: str
+        :param links: 
+        :type links: :class:`huaweicloudsdkdns.v2.PageLink`
+        :param enterprise_project_id: 域名关联的企业项目ID，长度不超过36个字符。
+        :type enterprise_project_id: str
+        :param masters: 主从模式中，从DNS服务器用以获取DNS信息。  目前暂未使用。
+        :type masters: list[str]
+        """
         
         super(CreatePublicZoneResponse, self).__init__()
 
@@ -133,7 +168,7 @@ class CreatePublicZoneResponse(SdkResponse):
         zone的ID，uuid形式的一个资源标识。
 
         :param id: The id of this CreatePublicZoneResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -155,7 +190,7 @@ class CreatePublicZoneResponse(SdkResponse):
         zone名称。
 
         :param name: The name of this CreatePublicZoneResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -177,7 +212,7 @@ class CreatePublicZoneResponse(SdkResponse):
         对zone的描述信息。
 
         :param description: The description of this CreatePublicZoneResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -199,7 +234,7 @@ class CreatePublicZoneResponse(SdkResponse):
         管理该zone的管理员邮箱。
 
         :param email: The email of this CreatePublicZoneResponse.
-        :type: str
+        :type email: str
         """
         self._email = email
 
@@ -221,7 +256,7 @@ class CreatePublicZoneResponse(SdkResponse):
         zone类型，公网（public）。
 
         :param zone_type: The zone_type of this CreatePublicZoneResponse.
-        :type: str
+        :type zone_type: str
         """
         self._zone_type = zone_type
 
@@ -243,7 +278,7 @@ class CreatePublicZoneResponse(SdkResponse):
         该zone下SOA记录中的ttl值。
 
         :param ttl: The ttl of this CreatePublicZoneResponse.
-        :type: int
+        :type ttl: int
         """
         self._ttl = ttl
 
@@ -265,7 +300,7 @@ class CreatePublicZoneResponse(SdkResponse):
         该zone下SOA记录中用于标识zone文件变更的序列值，用于主从节点同步。
 
         :param serial: The serial of this CreatePublicZoneResponse.
-        :type: int
+        :type serial: int
         """
         self._serial = serial
 
@@ -287,7 +322,7 @@ class CreatePublicZoneResponse(SdkResponse):
         资源状态。
 
         :param status: The status of this CreatePublicZoneResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -309,7 +344,7 @@ class CreatePublicZoneResponse(SdkResponse):
         该zone下的recordset个数。
 
         :param record_num: The record_num of this CreatePublicZoneResponse.
-        :type: int
+        :type record_num: int
         """
         self._record_num = record_num
 
@@ -331,7 +366,7 @@ class CreatePublicZoneResponse(SdkResponse):
         托管该zone的pool，由系统分配。
 
         :param pool_id: The pool_id of this CreatePublicZoneResponse.
-        :type: str
+        :type pool_id: str
         """
         self._pool_id = pool_id
 
@@ -353,7 +388,7 @@ class CreatePublicZoneResponse(SdkResponse):
         zone所属的项目ID。
 
         :param project_id: The project_id of this CreatePublicZoneResponse.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -375,7 +410,7 @@ class CreatePublicZoneResponse(SdkResponse):
         创建时间。  采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
         :param created_at: The created_at of this CreatePublicZoneResponse.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -397,7 +432,7 @@ class CreatePublicZoneResponse(SdkResponse):
         更新时间。  采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
         :param updated_at: The updated_at of this CreatePublicZoneResponse.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 
@@ -407,7 +442,7 @@ class CreatePublicZoneResponse(SdkResponse):
 
 
         :return: The links of this CreatePublicZoneResponse.
-        :rtype: PageLink
+        :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
         """
         return self._links
 
@@ -417,7 +452,7 @@ class CreatePublicZoneResponse(SdkResponse):
 
 
         :param links: The links of this CreatePublicZoneResponse.
-        :type: PageLink
+        :type links: :class:`huaweicloudsdkdns.v2.PageLink`
         """
         self._links = links
 
@@ -439,7 +474,7 @@ class CreatePublicZoneResponse(SdkResponse):
         域名关联的企业项目ID，长度不超过36个字符。
 
         :param enterprise_project_id: The enterprise_project_id of this CreatePublicZoneResponse.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -461,7 +496,7 @@ class CreatePublicZoneResponse(SdkResponse):
         主从模式中，从DNS服务器用以获取DNS信息。  目前暂未使用。
 
         :param masters: The masters of this CreatePublicZoneResponse.
-        :type: list[str]
+        :type masters: list[str]
         """
         self._masters = masters
 

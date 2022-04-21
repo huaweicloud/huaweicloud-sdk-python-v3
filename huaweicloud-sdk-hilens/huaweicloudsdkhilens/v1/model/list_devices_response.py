@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDevicesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListDevicesResponse(SdkResponse):
     }
 
     def __init__(self, total=None, data=None):
-        """ListDevicesResponse - a model defined in huaweicloud sdk"""
+        """ListDevicesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 满足条件的设备总数
+        :type total: int
+        :param data: 
+        :type data: list[:class:`huaweicloudsdkhilens.v1.GetDevicesListArrayObject`]
+        """
         
         super(ListDevicesResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListDevicesResponse(SdkResponse):
         满足条件的设备总数
 
         :param total: The total of this ListDevicesResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -73,7 +80,7 @@ class ListDevicesResponse(SdkResponse):
 
 
         :return: The data of this ListDevicesResponse.
-        :rtype: list[GetDevicesListArrayObject]
+        :rtype: list[:class:`huaweicloudsdkhilens.v1.GetDevicesListArrayObject`]
         """
         return self._data
 
@@ -83,7 +90,7 @@ class ListDevicesResponse(SdkResponse):
 
 
         :param data: The data of this ListDevicesResponse.
-        :type: list[GetDevicesListArrayObject]
+        :type data: list[:class:`huaweicloudsdkhilens.v1.GetDevicesListArrayObject`]
         """
         self._data = data
 

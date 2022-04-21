@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PeriodReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class PeriodReq:
     }
 
     def __init__(self, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None, console_url=None):
-        """PeriodReq - a model defined in huaweicloud sdk"""
+        """PeriodReq
+
+        The model defined in huaweicloud sdk
+
+        :param period_type: 订购周期类型。 - 2: 包月（参数范围：1-9）。 - 3: 包年（参数范围：1-3）。
+        :type period_type: int
+        :param period_num: 订购周期数。
+        :type period_num: int
+        :param is_auto_renew: 是否自动续订，为空时表示不自动续订 - 1: 自动续订。 - 2: 不自动续订（默认）。
+        :type is_auto_renew: int
+        :param is_auto_pay:  是否自动支付。下单订购后，是否自动从客户的华为云账户中支付，而不需要客户手动去进行支付。该参数适用于包周期集群。  - 1: 是（会自动选择折扣和优惠券进行优惠，然后自动从客户华为云账户中支付），自动支付失败后会生成订单成功(该订单应付金额是优惠后金额)、但订单状态为“待支付”，等待客户手动支付(手动支付时，客户还可以修改系统自动选择的折扣和优惠券)。  - 0: 否（需要客户手动去支付，客户可以选择折扣和优惠券）。默认值为“0”。
+        :type is_auto_pay: int
+        :param console_url: 云服务ConsoleURL。 订购订单支付完成后，客户可以通过此URL跳转到云服务Console页面查看信息。（仅手动支付时涉及）。
+        :type console_url: str
+        """
         
         
 
@@ -76,7 +89,7 @@ class PeriodReq:
         订购周期类型。 - 2: 包月（参数范围：1-9）。 - 3: 包年（参数范围：1-3）。
 
         :param period_type: The period_type of this PeriodReq.
-        :type: int
+        :type period_type: int
         """
         self._period_type = period_type
 
@@ -98,7 +111,7 @@ class PeriodReq:
         订购周期数。
 
         :param period_num: The period_num of this PeriodReq.
-        :type: int
+        :type period_num: int
         """
         self._period_num = period_num
 
@@ -120,7 +133,7 @@ class PeriodReq:
         是否自动续订，为空时表示不自动续订 - 1: 自动续订。 - 2: 不自动续订（默认）。
 
         :param is_auto_renew: The is_auto_renew of this PeriodReq.
-        :type: int
+        :type is_auto_renew: int
         """
         self._is_auto_renew = is_auto_renew
 
@@ -142,7 +155,7 @@ class PeriodReq:
          是否自动支付。下单订购后，是否自动从客户的华为云账户中支付，而不需要客户手动去进行支付。该参数适用于包周期集群。  - 1: 是（会自动选择折扣和优惠券进行优惠，然后自动从客户华为云账户中支付），自动支付失败后会生成订单成功(该订单应付金额是优惠后金额)、但订单状态为“待支付”，等待客户手动支付(手动支付时，客户还可以修改系统自动选择的折扣和优惠券)。  - 0: 否（需要客户手动去支付，客户可以选择折扣和优惠券）。默认值为“0”。
 
         :param is_auto_pay: The is_auto_pay of this PeriodReq.
-        :type: int
+        :type is_auto_pay: int
         """
         self._is_auto_pay = is_auto_pay
 
@@ -164,7 +177,7 @@ class PeriodReq:
         云服务ConsoleURL。 订购订单支付完成后，客户可以通过此URL跳转到云服务Console页面查看信息。（仅手动支付时涉及）。
 
         :param console_url: The console_url of this PeriodReq.
-        :type: str
+        :type console_url: str
         """
         self._console_url = console_url
 

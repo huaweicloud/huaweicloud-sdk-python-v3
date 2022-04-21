@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class HealthmonitorResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -58,7 +57,41 @@ class HealthmonitorResp:
     }
 
     def __init__(self, id=None, project_id=None, tenant_id=None, name=None, admin_state_up=None, monitor_port=None, timeout=None, type=None, expected_codes=None, domain_name=None, url_path=None, http_method=None, delay=None, max_retries=None, pools=None):
-        """HealthmonitorResp - a model defined in huaweicloud sdk"""
+        """HealthmonitorResp
+
+        The model defined in huaweicloud sdk
+
+        :param id: 健康检查ID
+        :type id: str
+        :param project_id: 健康检查所在的项目ID。
+        :type project_id: str
+        :param tenant_id: 健康检查所在的项目ID。
+        :type tenant_id: str
+        :param name: 健康检查名称。
+        :type name: str
+        :param admin_state_up: 健康检查的管理状态；该字段虽然支持创建、更新，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。该字段虽然支持创建、更新，但实际取值决定于member对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
+        :type admin_state_up: bool
+        :param monitor_port: 健康检查端口号。默认为空，表示使用后端云服务器组的端口。
+        :type monitor_port: int
+        :param timeout: 健康检查的超时时间。建议该值小于delay的值。
+        :type timeout: int
+        :param type: 健康检查类型
+        :type type: str
+        :param expected_codes: 期望HTTP响应状态码，指定下列值：单值，例如200；列表，例如200，202；区间，例如200-204。仅当type为HTTP时生效。该字段为预留字段，暂未启用。
+        :type expected_codes: str
+        :param domain_name: 功能说明：健康检查测试member健康状态时，发送的http请求的域名。仅当type为HTTP时生效。使用说明：默认为空，表示使用负载均衡器的vip作为http请求的目的地址。以数字或字母开头，只能包含数字、字母、’-’、’.’。
+        :type domain_name: str
+        :param url_path: HTTP方法，可以为GET、HEAD、POST、PUT、DELETE、TRACE、OPTIONS、CONNECT、PATCH。仅当type为HTTP时生效。该字段为预留字段，暂未启用。
+        :type url_path: str
+        :param http_method: HTTP方法，可以为GET、HEAD、POST、PUT、DELETE、TRACE、OPTIONS、CONNECT、PATCH。仅当type为HTTP时生效。该字段为预留字段，暂未启用。
+        :type http_method: str
+        :param delay: 健康检查间隔，单位秒
+        :type delay: int
+        :param max_retries: 最大重试次数
+        :type max_retries: int
+        :param pools: 健康检查关联的后端云服务器组列表
+        :type pools: list[:class:`huaweicloudsdkelb.v2.ResourceList`]
+        """
         
         
 
@@ -113,7 +146,7 @@ class HealthmonitorResp:
         健康检查ID
 
         :param id: The id of this HealthmonitorResp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -135,7 +168,7 @@ class HealthmonitorResp:
         健康检查所在的项目ID。
 
         :param project_id: The project_id of this HealthmonitorResp.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -157,7 +190,7 @@ class HealthmonitorResp:
         健康检查所在的项目ID。
 
         :param tenant_id: The tenant_id of this HealthmonitorResp.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 
@@ -179,7 +212,7 @@ class HealthmonitorResp:
         健康检查名称。
 
         :param name: The name of this HealthmonitorResp.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -201,7 +234,7 @@ class HealthmonitorResp:
         健康检查的管理状态；该字段虽然支持创建、更新，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。该字段虽然支持创建、更新，但实际取值决定于member对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
 
         :param admin_state_up: The admin_state_up of this HealthmonitorResp.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 
@@ -223,7 +256,7 @@ class HealthmonitorResp:
         健康检查端口号。默认为空，表示使用后端云服务器组的端口。
 
         :param monitor_port: The monitor_port of this HealthmonitorResp.
-        :type: int
+        :type monitor_port: int
         """
         self._monitor_port = monitor_port
 
@@ -245,7 +278,7 @@ class HealthmonitorResp:
         健康检查的超时时间。建议该值小于delay的值。
 
         :param timeout: The timeout of this HealthmonitorResp.
-        :type: int
+        :type timeout: int
         """
         self._timeout = timeout
 
@@ -267,7 +300,7 @@ class HealthmonitorResp:
         健康检查类型
 
         :param type: The type of this HealthmonitorResp.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -289,7 +322,7 @@ class HealthmonitorResp:
         期望HTTP响应状态码，指定下列值：单值，例如200；列表，例如200，202；区间，例如200-204。仅当type为HTTP时生效。该字段为预留字段，暂未启用。
 
         :param expected_codes: The expected_codes of this HealthmonitorResp.
-        :type: str
+        :type expected_codes: str
         """
         self._expected_codes = expected_codes
 
@@ -311,7 +344,7 @@ class HealthmonitorResp:
         功能说明：健康检查测试member健康状态时，发送的http请求的域名。仅当type为HTTP时生效。使用说明：默认为空，表示使用负载均衡器的vip作为http请求的目的地址。以数字或字母开头，只能包含数字、字母、’-’、’.’。
 
         :param domain_name: The domain_name of this HealthmonitorResp.
-        :type: str
+        :type domain_name: str
         """
         self._domain_name = domain_name
 
@@ -333,7 +366,7 @@ class HealthmonitorResp:
         HTTP方法，可以为GET、HEAD、POST、PUT、DELETE、TRACE、OPTIONS、CONNECT、PATCH。仅当type为HTTP时生效。该字段为预留字段，暂未启用。
 
         :param url_path: The url_path of this HealthmonitorResp.
-        :type: str
+        :type url_path: str
         """
         self._url_path = url_path
 
@@ -355,7 +388,7 @@ class HealthmonitorResp:
         HTTP方法，可以为GET、HEAD、POST、PUT、DELETE、TRACE、OPTIONS、CONNECT、PATCH。仅当type为HTTP时生效。该字段为预留字段，暂未启用。
 
         :param http_method: The http_method of this HealthmonitorResp.
-        :type: str
+        :type http_method: str
         """
         self._http_method = http_method
 
@@ -377,7 +410,7 @@ class HealthmonitorResp:
         健康检查间隔，单位秒
 
         :param delay: The delay of this HealthmonitorResp.
-        :type: int
+        :type delay: int
         """
         self._delay = delay
 
@@ -399,7 +432,7 @@ class HealthmonitorResp:
         最大重试次数
 
         :param max_retries: The max_retries of this HealthmonitorResp.
-        :type: int
+        :type max_retries: int
         """
         self._max_retries = max_retries
 
@@ -410,7 +443,7 @@ class HealthmonitorResp:
         健康检查关联的后端云服务器组列表
 
         :return: The pools of this HealthmonitorResp.
-        :rtype: list[ResourceList]
+        :rtype: list[:class:`huaweicloudsdkelb.v2.ResourceList`]
         """
         return self._pools
 
@@ -421,7 +454,7 @@ class HealthmonitorResp:
         健康检查关联的后端云服务器组列表
 
         :param pools: The pools of this HealthmonitorResp.
-        :type: list[ResourceList]
+        :type pools: list[:class:`huaweicloudsdkelb.v2.ResourceList`]
         """
         self._pools = pools
 

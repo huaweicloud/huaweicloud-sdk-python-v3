@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class JobInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class JobInfo:
     }
 
     def __init__(self, created_by=None, execution_status=None, job_desc=None, job_id=None, job_name=None, job_type=None, order_id=None, project_id=None, service_instance_id=None):
-        """JobInfo - a model defined in huaweicloud sdk"""
+        """JobInfo
+
+        The model defined in huaweicloud sdk
+
+        :param created_by: 创建者。
+        :type created_by: str
+        :param execution_status: 执行状态。
+        :type execution_status: str
+        :param job_desc: 工作描述。
+        :type job_desc: str
+        :param job_id: 工作ID。
+        :type job_id: str
+        :param job_name: 工作名称。
+        :type job_name: str
+        :param job_type: 类别。
+        :type job_type: str
+        :param order_id: 排序ID。
+        :type order_id: str
+        :param project_id: 创建租户的项目ID。
+        :type project_id: str
+        :param service_instance_id: 实例ID。
+        :type service_instance_id: str
+        """
         
         
 
@@ -98,7 +119,7 @@ class JobInfo:
         创建者。
 
         :param created_by: The created_by of this JobInfo.
-        :type: str
+        :type created_by: str
         """
         self._created_by = created_by
 
@@ -120,7 +141,7 @@ class JobInfo:
         执行状态。
 
         :param execution_status: The execution_status of this JobInfo.
-        :type: str
+        :type execution_status: str
         """
         self._execution_status = execution_status
 
@@ -142,7 +163,7 @@ class JobInfo:
         工作描述。
 
         :param job_desc: The job_desc of this JobInfo.
-        :type: str
+        :type job_desc: str
         """
         self._job_desc = job_desc
 
@@ -164,7 +185,7 @@ class JobInfo:
         工作ID。
 
         :param job_id: The job_id of this JobInfo.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -186,7 +207,7 @@ class JobInfo:
         工作名称。
 
         :param job_name: The job_name of this JobInfo.
-        :type: str
+        :type job_name: str
         """
         self._job_name = job_name
 
@@ -208,7 +229,7 @@ class JobInfo:
         类别。
 
         :param job_type: The job_type of this JobInfo.
-        :type: str
+        :type job_type: str
         """
         self._job_type = job_type
 
@@ -230,7 +251,7 @@ class JobInfo:
         排序ID。
 
         :param order_id: The order_id of this JobInfo.
-        :type: str
+        :type order_id: str
         """
         self._order_id = order_id
 
@@ -252,7 +273,7 @@ class JobInfo:
         创建租户的项目ID。
 
         :param project_id: The project_id of this JobInfo.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -274,7 +295,7 @@ class JobInfo:
         实例ID。
 
         :param service_instance_id: The service_instance_id of this JobInfo.
-        :type: str
+        :type service_instance_id: str
         """
         self._service_instance_id = service_instance_id
 

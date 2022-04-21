@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListMergeChannelsTaskResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListMergeChannelsTaskResponse(SdkResponse):
     }
 
     def __init__(self, task_array=None, is_truncated=None, total=None):
-        """ListMergeChannelsTaskResponse - a model defined in huaweicloud sdk"""
+        """ListMergeChannelsTaskResponse
+
+        The model defined in huaweicloud sdk
+
+        :param task_array: 任务列表
+        :type task_array: list[:class:`huaweicloudsdkmpc.v1.MergeChannelsTaskInfo`]
+        :param is_truncated: 查询结果是否被截取。 - 1：表示被截取，即还有结果未被返回，可以通过设置page和size参数继续查询。 - 0：表示未被截取，即所有结果已被返回。 
+        :type is_truncated: int
+        :param total: 查询结果的数量。 
+        :type total: int
+        """
         
         super(ListMergeChannelsTaskResponse, self).__init__()
 
@@ -57,7 +66,7 @@ class ListMergeChannelsTaskResponse(SdkResponse):
         任务列表
 
         :return: The task_array of this ListMergeChannelsTaskResponse.
-        :rtype: list[MergeChannelsTaskInfo]
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.MergeChannelsTaskInfo`]
         """
         return self._task_array
 
@@ -68,7 +77,7 @@ class ListMergeChannelsTaskResponse(SdkResponse):
         任务列表
 
         :param task_array: The task_array of this ListMergeChannelsTaskResponse.
-        :type: list[MergeChannelsTaskInfo]
+        :type task_array: list[:class:`huaweicloudsdkmpc.v1.MergeChannelsTaskInfo`]
         """
         self._task_array = task_array
 
@@ -90,7 +99,7 @@ class ListMergeChannelsTaskResponse(SdkResponse):
         查询结果是否被截取。 - 1：表示被截取，即还有结果未被返回，可以通过设置page和size参数继续查询。 - 0：表示未被截取，即所有结果已被返回。 
 
         :param is_truncated: The is_truncated of this ListMergeChannelsTaskResponse.
-        :type: int
+        :type is_truncated: int
         """
         self._is_truncated = is_truncated
 
@@ -112,7 +121,7 @@ class ListMergeChannelsTaskResponse(SdkResponse):
         查询结果的数量。 
 
         :param total: The total of this ListMergeChannelsTaskResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 

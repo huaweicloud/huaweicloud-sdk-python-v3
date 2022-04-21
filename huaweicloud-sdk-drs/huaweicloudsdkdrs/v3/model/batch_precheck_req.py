@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchPrecheckReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchPrecheckReq:
     }
 
     def __init__(self, jobs=None):
-        """BatchPrecheckReq - a model defined in huaweicloud sdk"""
+        """BatchPrecheckReq
+
+        The model defined in huaweicloud sdk
+
+        :param jobs: 批量预检查请求列表
+        :type jobs: list[:class:`huaweicloudsdkdrs.v3.PreCheckInfo`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class BatchPrecheckReq:
         批量预检查请求列表
 
         :return: The jobs of this BatchPrecheckReq.
-        :rtype: list[PreCheckInfo]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.PreCheckInfo`]
         """
         return self._jobs
 
@@ -57,7 +62,7 @@ class BatchPrecheckReq:
         批量预检查请求列表
 
         :param jobs: The jobs of this BatchPrecheckReq.
-        :type: list[PreCheckInfo]
+        :type jobs: list[:class:`huaweicloudsdkdrs.v3.PreCheckInfo`]
         """
         self._jobs = jobs
 

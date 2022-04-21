@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowTasksRulesetsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowTasksRulesetsResponse(SdkResponse):
     }
 
     def __init__(self, info=None, total=None):
-        """ShowTasksRulesetsResponse - a model defined in huaweicloud sdk"""
+        """ShowTasksRulesetsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param info: 规则集信息
+        :type info: list[:class:`huaweicloudsdkcodecheck.v2.TaskRulesetInfo`]
+        :param total: 总数
+        :type total: int
+        """
         
         super(ShowTasksRulesetsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ShowTasksRulesetsResponse(SdkResponse):
         规则集信息
 
         :return: The info of this ShowTasksRulesetsResponse.
-        :rtype: list[TaskRulesetInfo]
+        :rtype: list[:class:`huaweicloudsdkcodecheck.v2.TaskRulesetInfo`]
         """
         return self._info
 
@@ -63,7 +70,7 @@ class ShowTasksRulesetsResponse(SdkResponse):
         规则集信息
 
         :param info: The info of this ShowTasksRulesetsResponse.
-        :type: list[TaskRulesetInfo]
+        :type info: list[:class:`huaweicloudsdkcodecheck.v2.TaskRulesetInfo`]
         """
         self._info = info
 
@@ -85,7 +92,7 @@ class ShowTasksRulesetsResponse(SdkResponse):
         总数
 
         :param total: The total of this ShowTasksRulesetsResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 

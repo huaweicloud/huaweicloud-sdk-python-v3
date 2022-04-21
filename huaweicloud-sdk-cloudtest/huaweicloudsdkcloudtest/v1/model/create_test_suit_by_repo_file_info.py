@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateTestSuitByRepoFileInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CreateTestSuitByRepoFileInfo:
     }
 
     def __init__(self, testsuite_name=None, repository_id=None, repository_branch=None, file_path=None):
-        """CreateTestSuitByRepoFileInfo - a model defined in huaweicloud sdk"""
+        """CreateTestSuitByRepoFileInfo
+
+        The model defined in huaweicloud sdk
+
+        :param testsuite_name: 要生成的测试套名称
+        :type testsuite_name: str
+        :param repository_id: 仓库id
+        :type repository_id: str
+        :param repository_branch: 仓库分支
+        :type repository_branch: str
+        :param file_path: 仓库中yaml或json文件的相对路径，仅支持swagger 2.0版本的yaml和json文件
+        :type file_path: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class CreateTestSuitByRepoFileInfo:
         要生成的测试套名称
 
         :param testsuite_name: The testsuite_name of this CreateTestSuitByRepoFileInfo.
-        :type: str
+        :type testsuite_name: str
         """
         self._testsuite_name = testsuite_name
 
@@ -91,7 +102,7 @@ class CreateTestSuitByRepoFileInfo:
         仓库id
 
         :param repository_id: The repository_id of this CreateTestSuitByRepoFileInfo.
-        :type: str
+        :type repository_id: str
         """
         self._repository_id = repository_id
 
@@ -113,7 +124,7 @@ class CreateTestSuitByRepoFileInfo:
         仓库分支
 
         :param repository_branch: The repository_branch of this CreateTestSuitByRepoFileInfo.
-        :type: str
+        :type repository_branch: str
         """
         self._repository_branch = repository_branch
 
@@ -135,7 +146,7 @@ class CreateTestSuitByRepoFileInfo:
         仓库中yaml或json文件的相对路径，仅支持swagger 2.0版本的yaml和json文件
 
         :param file_path: The file_path of this CreateTestSuitByRepoFileInfo.
-        :type: str
+        :type file_path: str
         """
         self._file_path = file_path
 

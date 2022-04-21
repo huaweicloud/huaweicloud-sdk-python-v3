@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListBackgroundTasksRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListBackgroundTasksRequest:
     }
 
     def __init__(self, instance_id=None, start=None, limit=None, begin_time=None, end_time=None):
-        """ListBackgroundTasksRequest - a model defined in huaweicloud sdk"""
+        """ListBackgroundTasksRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param start: 开启查询的任务编号。
+        :type start: int
+        :param limit: 查询的任务个数。
+        :type limit: int
+        :param begin_time: 查询任务的最小时间，格式为 YYYYMMDDHHmmss。
+        :type begin_time: str
+        :param end_time: 查询任务的最大时间，格式为 YYYYMMDDHHmmss。
+        :type end_time: str
+        """
         
         
 
@@ -77,7 +90,7 @@ class ListBackgroundTasksRequest:
         实例ID。
 
         :param instance_id: The instance_id of this ListBackgroundTasksRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -99,7 +112,7 @@ class ListBackgroundTasksRequest:
         开启查询的任务编号。
 
         :param start: The start of this ListBackgroundTasksRequest.
-        :type: int
+        :type start: int
         """
         self._start = start
 
@@ -121,7 +134,7 @@ class ListBackgroundTasksRequest:
         查询的任务个数。
 
         :param limit: The limit of this ListBackgroundTasksRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -143,7 +156,7 @@ class ListBackgroundTasksRequest:
         查询任务的最小时间，格式为 YYYYMMDDHHmmss。
 
         :param begin_time: The begin_time of this ListBackgroundTasksRequest.
-        :type: str
+        :type begin_time: str
         """
         self._begin_time = begin_time
 
@@ -165,7 +178,7 @@ class ListBackgroundTasksRequest:
         查询任务的最大时间，格式为 YYYYMMDDHHmmss。
 
         :param end_time: The end_time of this ListBackgroundTasksRequest.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 

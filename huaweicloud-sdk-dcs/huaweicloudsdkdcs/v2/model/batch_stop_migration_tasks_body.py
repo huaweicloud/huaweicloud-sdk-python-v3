@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchStopMigrationTasksBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchStopMigrationTasksBody:
     }
 
     def __init__(self, migration_tasks=None):
-        """BatchStopMigrationTasksBody - a model defined in huaweicloud sdk"""
+        """BatchStopMigrationTasksBody
+
+        The model defined in huaweicloud sdk
+
+        :param migration_tasks: 数据迁移任务列表。
+        :type migration_tasks: list[str]
+        """
         
         
 
@@ -57,7 +62,7 @@ class BatchStopMigrationTasksBody:
         数据迁移任务列表。
 
         :param migration_tasks: The migration_tasks of this BatchStopMigrationTasksBody.
-        :type: list[str]
+        :type migration_tasks: list[str]
         """
         self._migration_tasks = migration_tasks
 

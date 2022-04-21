@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ProjectResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ProjectResp:
     }
 
     def __init__(self, code=None, message=None):
-        """ProjectResp - a model defined in huaweicloud sdk"""
+        """ProjectResp
+
+        The model defined in huaweicloud sdk
+
+        :param code: 状态码
+        :type code: str
+        :param message: 描述
+        :type message: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class ProjectResp:
         状态码
 
         :param code: The code of this ProjectResp.
-        :type: str
+        :type code: str
         """
         self._code = code
 
@@ -85,7 +92,7 @@ class ProjectResp:
         描述
 
         :param message: The message of this ProjectResp.
-        :type: str
+        :type message: str
         """
         self._message = message
 

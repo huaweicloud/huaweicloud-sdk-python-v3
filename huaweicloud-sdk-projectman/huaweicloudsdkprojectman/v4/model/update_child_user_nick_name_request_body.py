@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateChildUserNickNameRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateChildUserNickNameRequestBody:
     }
 
     def __init__(self, nick_name=None, user_id=None):
-        """UpdateChildUserNickNameRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateChildUserNickNameRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param nick_name: 用户昵称
+        :type nick_name: str
+        :param user_id: 用户id
+        :type user_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class UpdateChildUserNickNameRequestBody:
         用户昵称
 
         :param nick_name: The nick_name of this UpdateChildUserNickNameRequestBody.
-        :type: str
+        :type nick_name: str
         """
         self._nick_name = nick_name
 
@@ -83,7 +90,7 @@ class UpdateChildUserNickNameRequestBody:
         用户id
 
         :param user_id: The user_id of this UpdateChildUserNickNameRequestBody.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 

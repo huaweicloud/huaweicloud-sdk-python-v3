@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class WeeklyTop10:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class WeeklyTop10:
     }
 
     def __init__(self, floating_ip_address=None, times=None):
-        """WeeklyTop10 - a model defined in huaweicloud sdk"""
+        """WeeklyTop10
+
+        The model defined in huaweicloud sdk
+
+        :param floating_ip_address: 弹性IP地址
+        :type floating_ip_address: str
+        :param times: DDoS拦截次数，包括清洗和黑洞
+        :type times: int
+        """
         
         
 
@@ -61,7 +68,7 @@ class WeeklyTop10:
         弹性IP地址
 
         :param floating_ip_address: The floating_ip_address of this WeeklyTop10.
-        :type: str
+        :type floating_ip_address: str
         """
         self._floating_ip_address = floating_ip_address
 
@@ -83,7 +90,7 @@ class WeeklyTop10:
         DDoS拦截次数，包括清洗和黑洞
 
         :param times: The times of this WeeklyTop10.
-        :type: int
+        :type times: int
         """
         self._times = times
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteIkThesaurusRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteIkThesaurusRequest:
     }
 
     def __init__(self, cluster_id=None):
-        """DeleteIkThesaurusRequest - a model defined in huaweicloud sdk"""
+        """DeleteIkThesaurusRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 指定要删除自定义词库的集群ID。
+        :type cluster_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteIkThesaurusRequest:
         指定要删除自定义词库的集群ID。
 
         :param cluster_id: The cluster_id of this DeleteIkThesaurusRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 

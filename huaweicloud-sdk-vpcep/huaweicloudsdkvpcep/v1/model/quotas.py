@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Quotas:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class Quotas:
     }
 
     def __init__(self, type=None, used=None, quota=None):
-        """Quotas - a model defined in huaweicloud sdk"""
+        """Quotas
+
+        The model defined in huaweicloud sdk
+
+        :param type: 资源类型。支持根据资源类型过滤查询指 定类型的配额。 ● endpoint_service：终端节点服务 ● endpoint：终端节点
+        :type type: str
+        :param used: 已创建的资源个数。 取值范围：0~quota数。
+        :type used: int
+        :param quota: 资源的最大配额数。 取值范围：各类型资源默认配额数的最大 值。
+        :type quota: int
+        """
         
         
 
@@ -68,7 +77,7 @@ class Quotas:
         资源类型。支持根据资源类型过滤查询指 定类型的配额。 ● endpoint_service：终端节点服务 ● endpoint：终端节点
 
         :param type: The type of this Quotas.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -90,7 +99,7 @@ class Quotas:
         已创建的资源个数。 取值范围：0~quota数。
 
         :param used: The used of this Quotas.
-        :type: int
+        :type used: int
         """
         self._used = used
 
@@ -112,7 +121,7 @@ class Quotas:
         资源的最大配额数。 取值范围：各类型资源默认配额数的最大 值。
 
         :param quota: The quota of this Quotas.
-        :type: int
+        :type quota: int
         """
         self._quota = quota
 

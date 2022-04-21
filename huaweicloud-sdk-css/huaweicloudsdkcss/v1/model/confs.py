@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Confs:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class Confs:
     }
 
     def __init__(self, name=None, status=None, conf_content=None, setting=None, update_at=None):
-        """Confs - a model defined in huaweicloud sdk"""
+        """Confs
+
+        The model defined in huaweicloud sdk
+
+        :param name: 配置文件名称。
+        :type name: str
+        :param status: 配置文件状态。
+        :type status: str
+        :param conf_content: 配置文件内容。
+        :type conf_content: str
+        :param setting: 
+        :type setting: :class:`huaweicloudsdkcss.v1.Setting`
+        :param update_at: 更新时间。
+        :type update_at: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class Confs:
         配置文件名称。
 
         :param name: The name of this Confs.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -100,7 +113,7 @@ class Confs:
         配置文件状态。
 
         :param status: The status of this Confs.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -122,7 +135,7 @@ class Confs:
         配置文件内容。
 
         :param conf_content: The conf_content of this Confs.
-        :type: str
+        :type conf_content: str
         """
         self._conf_content = conf_content
 
@@ -132,7 +145,7 @@ class Confs:
 
 
         :return: The setting of this Confs.
-        :rtype: Setting
+        :rtype: :class:`huaweicloudsdkcss.v1.Setting`
         """
         return self._setting
 
@@ -142,7 +155,7 @@ class Confs:
 
 
         :param setting: The setting of this Confs.
-        :type: Setting
+        :type setting: :class:`huaweicloudsdkcss.v1.Setting`
         """
         self._setting = setting
 
@@ -164,7 +177,7 @@ class Confs:
         更新时间。
 
         :param update_at: The update_at of this Confs.
-        :type: str
+        :type update_at: str
         """
         self._update_at = update_at
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UploadProtocolMappingsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UploadProtocolMappingsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """UploadProtocolMappingsResponse - a model defined in huaweicloud sdk"""
+        """UploadProtocolMappingsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param body: 
+        :type body: str
+        """
         
         super(UploadProtocolMappingsResponse, self).__init__()
 
@@ -56,7 +61,7 @@ class UploadProtocolMappingsResponse(SdkResponse):
 
 
         :param body: The body of this UploadProtocolMappingsResponse.
-        :type: str
+        :type body: str
         """
         self._body = body
 

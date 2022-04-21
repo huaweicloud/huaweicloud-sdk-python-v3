@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ImportConnectionReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ImportConnectionReq:
     }
 
     def __init__(self, path=None, params=None, same_name_policy=None):
-        """ImportConnectionReq - a model defined in huaweicloud sdk"""
+        """ImportConnectionReq
+
+        The model defined in huaweicloud sdk
+
+        :param path: 
+        :type path: str
+        :param params: 连接参数
+        :type params: list[:class:`huaweicloudsdkdgc.v1.ConnectionParam`]
+        :param same_name_policy: 
+        :type same_name_policy: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class ImportConnectionReq:
 
 
         :param path: The path of this ImportConnectionReq.
-        :type: str
+        :type path: str
         """
         self._path = path
 
@@ -77,7 +86,7 @@ class ImportConnectionReq:
         连接参数
 
         :return: The params of this ImportConnectionReq.
-        :rtype: list[ConnectionParam]
+        :rtype: list[:class:`huaweicloudsdkdgc.v1.ConnectionParam`]
         """
         return self._params
 
@@ -88,7 +97,7 @@ class ImportConnectionReq:
         连接参数
 
         :param params: The params of this ImportConnectionReq.
-        :type: list[ConnectionParam]
+        :type params: list[:class:`huaweicloudsdkdgc.v1.ConnectionParam`]
         """
         self._params = params
 
@@ -108,7 +117,7 @@ class ImportConnectionReq:
 
 
         :param same_name_policy: The same_name_policy of this ImportConnectionReq.
-        :type: str
+        :type same_name_policy: str
         """
         self._same_name_policy = same_name_policy
 

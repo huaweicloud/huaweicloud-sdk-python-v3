@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Region:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class Region:
     }
 
     def __init__(self, description=None, parent_region_id=None, links=None, locales=None, id=None, type=None):
-        """Region - a model defined in huaweicloud sdk"""
+        """Region
+
+        The model defined in huaweicloud sdk
+
+        :param description: 区域描述信息。
+        :type description: str
+        :param parent_region_id: null.
+        :type parent_region_id: str
+        :param links: 
+        :type links: :class:`huaweicloudsdkiam.v3.LinksSelf`
+        :param locales: 
+        :type locales: :class:`huaweicloudsdkiam.v3.RegionLocales`
+        :param id: 区域ID。
+        :type id: str
+        :param type: 区域类型。
+        :type type: str
+        """
         
         
 
@@ -77,7 +92,7 @@ class Region:
         区域描述信息。
 
         :param description: The description of this Region.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -99,7 +114,7 @@ class Region:
         null.
 
         :param parent_region_id: The parent_region_id of this Region.
-        :type: str
+        :type parent_region_id: str
         """
         self._parent_region_id = parent_region_id
 
@@ -109,7 +124,7 @@ class Region:
 
 
         :return: The links of this Region.
-        :rtype: LinksSelf
+        :rtype: :class:`huaweicloudsdkiam.v3.LinksSelf`
         """
         return self._links
 
@@ -119,7 +134,7 @@ class Region:
 
 
         :param links: The links of this Region.
-        :type: LinksSelf
+        :type links: :class:`huaweicloudsdkiam.v3.LinksSelf`
         """
         self._links = links
 
@@ -129,7 +144,7 @@ class Region:
 
 
         :return: The locales of this Region.
-        :rtype: RegionLocales
+        :rtype: :class:`huaweicloudsdkiam.v3.RegionLocales`
         """
         return self._locales
 
@@ -139,7 +154,7 @@ class Region:
 
 
         :param locales: The locales of this Region.
-        :type: RegionLocales
+        :type locales: :class:`huaweicloudsdkiam.v3.RegionLocales`
         """
         self._locales = locales
 
@@ -161,7 +176,7 @@ class Region:
         区域ID。
 
         :param id: The id of this Region.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -183,7 +198,7 @@ class Region:
         区域类型。
 
         :param type: The type of this Region.
-        :type: str
+        :type type: str
         """
         self._type = type
 

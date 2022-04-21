@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CancelKeyDeletionResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CancelKeyDeletionResponse(SdkResponse):
     }
 
     def __init__(self, key_id=None, key_state=None):
-        """CancelKeyDeletionResponse - a model defined in huaweicloud sdk"""
+        """CancelKeyDeletionResponse
+
+        The model defined in huaweicloud sdk
+
+        :param key_id: 密钥ID
+        :type key_id: str
+        :param key_state: 密钥状态： - 2为启用状态 - 3为禁用状态 - 4为计划删除状态 - 5为等待导入状态 - 7为冻结状态
+        :type key_state: str
+        """
         
         super(CancelKeyDeletionResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class CancelKeyDeletionResponse(SdkResponse):
         密钥ID
 
         :param key_id: The key_id of this CancelKeyDeletionResponse.
-        :type: str
+        :type key_id: str
         """
         self._key_id = key_id
 
@@ -85,7 +92,7 @@ class CancelKeyDeletionResponse(SdkResponse):
         密钥状态： - 2为启用状态 - 3为禁用状态 - 4为计划删除状态 - 5为等待导入状态 - 7为冻结状态
 
         :param key_state: The key_state of this CancelKeyDeletionResponse.
-        :type: str
+        :type key_state: str
         """
         self._key_state = key_state
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCustomerselfResourceRecordsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListCustomerselfResourceRecordsResponse(SdkResponse):
     }
 
     def __init__(self, fee_records=None, total_count=None, currency=None):
-        """ListCustomerselfResourceRecordsResponse - a model defined in huaweicloud sdk"""
+        """ListCustomerselfResourceRecordsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param fee_records: 资源费用记录数据。 具体请参见表3。
+        :type fee_records: list[:class:`huaweicloudsdkbssintl.v2.ResFeeRecordV2`]
+        :param total_count: 结果集数量，只有成功才返回这个参数。
+        :type total_count: int
+        :param currency: 货币单位代码： USD：美元
+        :type currency: str
+        """
         
         super(ListCustomerselfResourceRecordsResponse, self).__init__()
 
@@ -57,7 +66,7 @@ class ListCustomerselfResourceRecordsResponse(SdkResponse):
         资源费用记录数据。 具体请参见表3。
 
         :return: The fee_records of this ListCustomerselfResourceRecordsResponse.
-        :rtype: list[ResFeeRecordV2]
+        :rtype: list[:class:`huaweicloudsdkbssintl.v2.ResFeeRecordV2`]
         """
         return self._fee_records
 
@@ -68,7 +77,7 @@ class ListCustomerselfResourceRecordsResponse(SdkResponse):
         资源费用记录数据。 具体请参见表3。
 
         :param fee_records: The fee_records of this ListCustomerselfResourceRecordsResponse.
-        :type: list[ResFeeRecordV2]
+        :type fee_records: list[:class:`huaweicloudsdkbssintl.v2.ResFeeRecordV2`]
         """
         self._fee_records = fee_records
 
@@ -90,7 +99,7 @@ class ListCustomerselfResourceRecordsResponse(SdkResponse):
         结果集数量，只有成功才返回这个参数。
 
         :param total_count: The total_count of this ListCustomerselfResourceRecordsResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 
@@ -112,7 +121,7 @@ class ListCustomerselfResourceRecordsResponse(SdkResponse):
         货币单位代码： USD：美元
 
         :param currency: The currency of this ListCustomerselfResourceRecordsResponse.
-        :type: str
+        :type currency: str
         """
         self._currency = currency
 

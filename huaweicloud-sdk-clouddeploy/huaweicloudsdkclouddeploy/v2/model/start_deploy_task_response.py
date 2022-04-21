@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StartDeployTaskResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class StartDeployTaskResponse(SdkResponse):
     }
 
     def __init__(self, id=None, task_id=None, job_name=None, app_component_list=None):
-        """StartDeployTaskResponse - a model defined in huaweicloud sdk"""
+        """StartDeployTaskResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 执行记录id
+        :type id: str
+        :param task_id: 部署任务id
+        :type task_id: str
+        :param job_name: 执行任务名称
+        :type job_name: str
+        :param app_component_list: 部署任务和应用组件对应关系
+        :type app_component_list: list[:class:`huaweicloudsdkclouddeploy.v2.AppComponentDao`]
+        """
         
         super(StartDeployTaskResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class StartDeployTaskResponse(SdkResponse):
         执行记录id
 
         :param id: The id of this StartDeployTaskResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -95,7 +106,7 @@ class StartDeployTaskResponse(SdkResponse):
         部署任务id
 
         :param task_id: The task_id of this StartDeployTaskResponse.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -117,7 +128,7 @@ class StartDeployTaskResponse(SdkResponse):
         执行任务名称
 
         :param job_name: The job_name of this StartDeployTaskResponse.
-        :type: str
+        :type job_name: str
         """
         self._job_name = job_name
 
@@ -128,7 +139,7 @@ class StartDeployTaskResponse(SdkResponse):
         部署任务和应用组件对应关系
 
         :return: The app_component_list of this StartDeployTaskResponse.
-        :rtype: list[AppComponentDao]
+        :rtype: list[:class:`huaweicloudsdkclouddeploy.v2.AppComponentDao`]
         """
         return self._app_component_list
 
@@ -139,7 +150,7 @@ class StartDeployTaskResponse(SdkResponse):
         部署任务和应用组件对应关系
 
         :param app_component_list: The app_component_list of this StartDeployTaskResponse.
-        :type: list[AppComponentDao]
+        :type app_component_list: list[:class:`huaweicloudsdkclouddeploy.v2.AppComponentDao`]
         """
         self._app_component_list = app_component_list
 

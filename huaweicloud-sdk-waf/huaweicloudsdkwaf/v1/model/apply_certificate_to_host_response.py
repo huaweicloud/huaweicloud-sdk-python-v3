@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApplyCertificateToHostResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ApplyCertificateToHostResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, timestamp=None, expire_time=None, bind_host=None):
-        """ApplyCertificateToHostResponse - a model defined in huaweicloud sdk"""
+        """ApplyCertificateToHostResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 证书id
+        :type id: str
+        :param name: 证书名
+        :type name: str
+        :param timestamp: 时间戳
+        :type timestamp: int
+        :param expire_time: 过期时间
+        :type expire_time: int
+        :param bind_host: 绑定域名列表
+        :type bind_host: list[:class:`huaweicloudsdkwaf.v1.CertificateBundingHostBody`]
+        """
         
         super(ApplyCertificateToHostResponse, self).__init__()
 
@@ -78,7 +91,7 @@ class ApplyCertificateToHostResponse(SdkResponse):
         证书id
 
         :param id: The id of this ApplyCertificateToHostResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -100,7 +113,7 @@ class ApplyCertificateToHostResponse(SdkResponse):
         证书名
 
         :param name: The name of this ApplyCertificateToHostResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -122,7 +135,7 @@ class ApplyCertificateToHostResponse(SdkResponse):
         时间戳
 
         :param timestamp: The timestamp of this ApplyCertificateToHostResponse.
-        :type: int
+        :type timestamp: int
         """
         self._timestamp = timestamp
 
@@ -144,7 +157,7 @@ class ApplyCertificateToHostResponse(SdkResponse):
         过期时间
 
         :param expire_time: The expire_time of this ApplyCertificateToHostResponse.
-        :type: int
+        :type expire_time: int
         """
         self._expire_time = expire_time
 
@@ -155,7 +168,7 @@ class ApplyCertificateToHostResponse(SdkResponse):
         绑定域名列表
 
         :return: The bind_host of this ApplyCertificateToHostResponse.
-        :rtype: list[CertificateBundingHostBody]
+        :rtype: list[:class:`huaweicloudsdkwaf.v1.CertificateBundingHostBody`]
         """
         return self._bind_host
 
@@ -166,7 +179,7 @@ class ApplyCertificateToHostResponse(SdkResponse):
         绑定域名列表
 
         :param bind_host: The bind_host of this ApplyCertificateToHostResponse.
-        :type: list[CertificateBundingHostBody]
+        :type bind_host: list[:class:`huaweicloudsdkwaf.v1.CertificateBundingHostBody`]
         """
         self._bind_host = bind_host
 

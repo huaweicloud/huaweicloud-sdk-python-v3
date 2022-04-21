@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RateOnPeriodReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RateOnPeriodReq:
     }
 
     def __init__(self, project_id=None, product_infos=None):
-        """RateOnPeriodReq - a model defined in huaweicloud sdk"""
+        """RateOnPeriodReq
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: 项目ID。  说明： 获取方法： 步骤1：调用IAM获取委托Token接口，获取客户Token。步骤2：参见如何将合作伙伴Token置换为客户Token的步骤2，获取项目ID。IAM子用户调用此接口，需要IAM主账号授权，具体请参考创建用户组并授权。
+        :type project_id: str
+        :param product_infos: 产品信息列表，询价时要询价产品的信息的列表，具体参见表1。
+        :type product_infos: list[:class:`huaweicloudsdkbss.v2.PeriodProductInfo`]
+        """
         
         
 
@@ -61,7 +68,7 @@ class RateOnPeriodReq:
         项目ID。  说明： 获取方法： 步骤1：调用IAM获取委托Token接口，获取客户Token。步骤2：参见如何将合作伙伴Token置换为客户Token的步骤2，获取项目ID。IAM子用户调用此接口，需要IAM主账号授权，具体请参考创建用户组并授权。
 
         :param project_id: The project_id of this RateOnPeriodReq.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -72,7 +79,7 @@ class RateOnPeriodReq:
         产品信息列表，询价时要询价产品的信息的列表，具体参见表1。
 
         :return: The product_infos of this RateOnPeriodReq.
-        :rtype: list[PeriodProductInfo]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.PeriodProductInfo`]
         """
         return self._product_infos
 
@@ -83,7 +90,7 @@ class RateOnPeriodReq:
         产品信息列表，询价时要询价产品的信息的列表，具体参见表1。
 
         :param product_infos: The product_infos of this RateOnPeriodReq.
-        :type: list[PeriodProductInfo]
+        :type product_infos: list[:class:`huaweicloudsdkbss.v2.PeriodProductInfo`]
         """
         self._product_infos = product_infos
 

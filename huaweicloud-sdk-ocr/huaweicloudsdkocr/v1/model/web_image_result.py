@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class WebImageResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class WebImageResult:
     }
 
     def __init__(self, words_block_count=None, words_block_list=None):
-        """WebImageResult - a model defined in huaweicloud sdk"""
+        """WebImageResult
+
+        The model defined in huaweicloud sdk
+
+        :param words_block_count: 代表检测识别出来的文字块数目。 
+        :type words_block_count: int
+        :param words_block_list: 识别文字块列表，输出顺序从左到右，从上到下。 
+        :type words_block_list: list[:class:`huaweicloudsdkocr.v1.WebImageWordsBlockList`]
+        """
         
         
 
@@ -61,7 +68,7 @@ class WebImageResult:
         代表检测识别出来的文字块数目。 
 
         :param words_block_count: The words_block_count of this WebImageResult.
-        :type: int
+        :type words_block_count: int
         """
         self._words_block_count = words_block_count
 
@@ -72,7 +79,7 @@ class WebImageResult:
         识别文字块列表，输出顺序从左到右，从上到下。 
 
         :return: The words_block_list of this WebImageResult.
-        :rtype: list[WebImageWordsBlockList]
+        :rtype: list[:class:`huaweicloudsdkocr.v1.WebImageWordsBlockList`]
         """
         return self._words_block_list
 
@@ -83,7 +90,7 @@ class WebImageResult:
         识别文字块列表，输出顺序从左到右，从上到下。 
 
         :param words_block_list: The words_block_list of this WebImageResult.
-        :type: list[WebImageWordsBlockList]
+        :type words_block_list: list[:class:`huaweicloudsdkocr.v1.WebImageWordsBlockList`]
         """
         self._words_block_list = words_block_list
 

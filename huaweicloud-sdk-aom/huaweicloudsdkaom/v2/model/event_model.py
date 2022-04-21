@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EventModel:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class EventModel:
     }
 
     def __init__(self, starts_at=None, ends_at=None, timeout=None, metadata=None, annotations=None, attach_rule=None, id=None):
-        """EventModel - a model defined in huaweicloud sdk"""
+        """EventModel
+
+        The model defined in huaweicloud sdk
+
+        :param starts_at: 事件或者告警产生的时间，CST毫秒级时间戳。
+        :type starts_at: int
+        :param ends_at: 事件或者告警清除的时间，CST毫秒级时间戳，为0时表示未删除。
+        :type ends_at: int
+        :param timeout: 告警自动清除时间。毫秒数，例如一分钟则填写为60000。默认清除时间为3天,对应数字为 4320 * 1000（即：3天 * 24小时 * 60分钟 * 1000毫秒）。
+        :type timeout: int
+        :param metadata: 事件或者告警的详细信息，为键值对形式。必须字段为： - event_name：事件或者告警名称,类型为String； - event_severity：事件级别枚举值。类型为String，四种类型 \&quot;Critical\&quot;, \&quot;Major\&quot;, \&quot;Minor\&quot;, \&quot;Info\&quot;； - event_type：事件类别枚举值。类型为String，event为普通告警，alarm为告警事件； - resource_provider：事件对应云服务名称。类型为String； - resource_type：事件对应资源类型。类型为String； - resource_id：事件对应资源信息。类型为String。
+        :type metadata: object
+        :param annotations: 事件或者告警附加字段，可以为空。
+        :type annotations: object
+        :param attach_rule: 事件或者告警预留字段，为空。
+        :type attach_rule: object
+        :param id: 事件或者告警id，系统会自动生成，上报无须填写该字段。
+        :type id: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class EventModel:
         事件或者告警产生的时间，CST毫秒级时间戳。
 
         :param starts_at: The starts_at of this EventModel.
-        :type: int
+        :type starts_at: int
         """
         self._starts_at = starts_at
 
@@ -110,7 +127,7 @@ class EventModel:
         事件或者告警清除的时间，CST毫秒级时间戳，为0时表示未删除。
 
         :param ends_at: The ends_at of this EventModel.
-        :type: int
+        :type ends_at: int
         """
         self._ends_at = ends_at
 
@@ -132,7 +149,7 @@ class EventModel:
         告警自动清除时间。毫秒数，例如一分钟则填写为60000。默认清除时间为3天,对应数字为 4320 * 1000（即：3天 * 24小时 * 60分钟 * 1000毫秒）。
 
         :param timeout: The timeout of this EventModel.
-        :type: int
+        :type timeout: int
         """
         self._timeout = timeout
 
@@ -154,7 +171,7 @@ class EventModel:
         事件或者告警的详细信息，为键值对形式。必须字段为： - event_name：事件或者告警名称,类型为String； - event_severity：事件级别枚举值。类型为String，四种类型 \"Critical\", \"Major\", \"Minor\", \"Info\"； - event_type：事件类别枚举值。类型为String，event为普通告警，alarm为告警事件； - resource_provider：事件对应云服务名称。类型为String； - resource_type：事件对应资源类型。类型为String； - resource_id：事件对应资源信息。类型为String。
 
         :param metadata: The metadata of this EventModel.
-        :type: object
+        :type metadata: object
         """
         self._metadata = metadata
 
@@ -176,7 +193,7 @@ class EventModel:
         事件或者告警附加字段，可以为空。
 
         :param annotations: The annotations of this EventModel.
-        :type: object
+        :type annotations: object
         """
         self._annotations = annotations
 
@@ -198,7 +215,7 @@ class EventModel:
         事件或者告警预留字段，为空。
 
         :param attach_rule: The attach_rule of this EventModel.
-        :type: object
+        :type attach_rule: object
         """
         self._attach_rule = attach_rule
 
@@ -220,7 +237,7 @@ class EventModel:
         事件或者告警id，系统会自动生成，上报无须填写该字段。
 
         :param id: The id of this EventModel.
-        :type: str
+        :type id: str
         """
         self._id = id
 

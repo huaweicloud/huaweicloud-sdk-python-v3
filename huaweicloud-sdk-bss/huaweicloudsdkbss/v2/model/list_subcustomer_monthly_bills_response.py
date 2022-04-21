@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSubcustomerMonthlyBillsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListSubcustomerMonthlyBillsResponse(SdkResponse):
     }
 
     def __init__(self, bill_sums=None, count=None, currency=None):
-        """ListSubcustomerMonthlyBillsResponse - a model defined in huaweicloud sdk"""
+        """ListSubcustomerMonthlyBillsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param bill_sums: 账单记录，具体参考表2。
+        :type bill_sums: list[:class:`huaweicloudsdkbss.v2.BillSumInfoV2`]
+        :param count: 总记录数。
+        :type count: int
+        :param currency: 货币编码。 CNY：人民币。
+        :type currency: str
+        """
         
         super(ListSubcustomerMonthlyBillsResponse, self).__init__()
 
@@ -57,7 +66,7 @@ class ListSubcustomerMonthlyBillsResponse(SdkResponse):
         账单记录，具体参考表2。
 
         :return: The bill_sums of this ListSubcustomerMonthlyBillsResponse.
-        :rtype: list[BillSumInfoV2]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.BillSumInfoV2`]
         """
         return self._bill_sums
 
@@ -68,7 +77,7 @@ class ListSubcustomerMonthlyBillsResponse(SdkResponse):
         账单记录，具体参考表2。
 
         :param bill_sums: The bill_sums of this ListSubcustomerMonthlyBillsResponse.
-        :type: list[BillSumInfoV2]
+        :type bill_sums: list[:class:`huaweicloudsdkbss.v2.BillSumInfoV2`]
         """
         self._bill_sums = bill_sums
 
@@ -90,7 +99,7 @@ class ListSubcustomerMonthlyBillsResponse(SdkResponse):
         总记录数。
 
         :param count: The count of this ListSubcustomerMonthlyBillsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -112,7 +121,7 @@ class ListSubcustomerMonthlyBillsResponse(SdkResponse):
         货币编码。 CNY：人民币。
 
         :param currency: The currency of this ListSubcustomerMonthlyBillsResponse.
-        :type: str
+        :type currency: str
         """
         self._currency = currency
 

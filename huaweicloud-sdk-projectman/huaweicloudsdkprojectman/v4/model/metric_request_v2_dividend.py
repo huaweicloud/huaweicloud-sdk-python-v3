@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MetricRequestV2Dividend:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class MetricRequestV2Dividend:
     }
 
     def __init__(self, custom_fields=None):
-        """MetricRequestV2Dividend - a model defined in huaweicloud sdk"""
+        """MetricRequestV2Dividend
+
+        The model defined in huaweicloud sdk
+
+        :param custom_fields: 自定义类型过滤条件
+        :type custom_fields: list[:class:`huaweicloudsdkprojectman.v4.MetricRequestV2DividendCustomFields`]
+        """
         
         
 
@@ -47,7 +52,7 @@ class MetricRequestV2Dividend:
         自定义类型过滤条件
 
         :return: The custom_fields of this MetricRequestV2Dividend.
-        :rtype: list[MetricRequestV2DividendCustomFields]
+        :rtype: list[:class:`huaweicloudsdkprojectman.v4.MetricRequestV2DividendCustomFields`]
         """
         return self._custom_fields
 
@@ -58,7 +63,7 @@ class MetricRequestV2Dividend:
         自定义类型过滤条件
 
         :param custom_fields: The custom_fields of this MetricRequestV2Dividend.
-        :type: list[MetricRequestV2DividendCustomFields]
+        :type custom_fields: list[:class:`huaweicloudsdkprojectman.v4.MetricRequestV2DividendCustomFields`]
         """
         self._custom_fields = custom_fields
 

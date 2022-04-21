@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAreaDetailRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class ListAreaDetailRequest:
     }
 
     def __init__(self, start_time=None, end_time=None, play_domains=None, app=None, stream=None, interval=None, isp=None, area=None, metric=None, protocol=None):
-        """ListAreaDetailRequest - a model defined in huaweicloud sdk"""
+        """ListAreaDetailRequest
+
+        The model defined in huaweicloud sdk
+
+        :param start_time: 查询起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度1天，最大查询周期90天。 
+        :type start_time: str
+        :param end_time: 查询结束时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度1天，最大查询周期90天。 
+        :type end_time: str
+        :param play_domains: 需查询的播放域名列表，最多支持查询10个域名。 
+        :type play_domains: list[str]
+        :param app: 需查询的app。 
+        :type app: str
+        :param stream: 流名称。
+        :type stream: str
+        :param interval: 查询数据的时间粒度。支持300（默认值）、3600和86400秒。若参数为空，则默认为300秒。  注意，若metric的值为player（观众数），则interval填入的值不起效果，查询粒度interval默认为60秒。 
+        :type interval: int
+        :param isp: 运营商列表，取值如下： - CMCC：移动 - CTCC：电信 - CUCC：联通 - OTHER：其他  若参数为空，则查询所有运营商。 
+        :type isp: list[str]
+        :param area: 需查询的计费大区，取值如下： - CN - AP1 - AP2 - AP3 - EU - MEAA - NA - SA 
+        :type area: list[str]
+        :param metric: 指标，取值如下： - bandwidth：带宽 - traffic：流量 - player：观众数 
+        :type metric: str
+        :param protocol: 请求协议，取值如下： - flv - hls 
+        :type protocol: str
+        """
         
         
 
@@ -98,7 +121,7 @@ class ListAreaDetailRequest:
         查询起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度1天，最大查询周期90天。 
 
         :param start_time: The start_time of this ListAreaDetailRequest.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -120,7 +143,7 @@ class ListAreaDetailRequest:
         查询结束时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度1天，最大查询周期90天。 
 
         :param end_time: The end_time of this ListAreaDetailRequest.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -142,7 +165,7 @@ class ListAreaDetailRequest:
         需查询的播放域名列表，最多支持查询10个域名。 
 
         :param play_domains: The play_domains of this ListAreaDetailRequest.
-        :type: list[str]
+        :type play_domains: list[str]
         """
         self._play_domains = play_domains
 
@@ -164,7 +187,7 @@ class ListAreaDetailRequest:
         需查询的app。 
 
         :param app: The app of this ListAreaDetailRequest.
-        :type: str
+        :type app: str
         """
         self._app = app
 
@@ -186,7 +209,7 @@ class ListAreaDetailRequest:
         流名称。
 
         :param stream: The stream of this ListAreaDetailRequest.
-        :type: str
+        :type stream: str
         """
         self._stream = stream
 
@@ -208,7 +231,7 @@ class ListAreaDetailRequest:
         查询数据的时间粒度。支持300（默认值）、3600和86400秒。若参数为空，则默认为300秒。  注意，若metric的值为player（观众数），则interval填入的值不起效果，查询粒度interval默认为60秒。 
 
         :param interval: The interval of this ListAreaDetailRequest.
-        :type: int
+        :type interval: int
         """
         self._interval = interval
 
@@ -230,7 +253,7 @@ class ListAreaDetailRequest:
         运营商列表，取值如下： - CMCC：移动 - CTCC：电信 - CUCC：联通 - OTHER：其他  若参数为空，则查询所有运营商。 
 
         :param isp: The isp of this ListAreaDetailRequest.
-        :type: list[str]
+        :type isp: list[str]
         """
         self._isp = isp
 
@@ -252,7 +275,7 @@ class ListAreaDetailRequest:
         需查询的计费大区，取值如下： - CN - AP1 - AP2 - AP3 - EU - MEAA - NA - SA 
 
         :param area: The area of this ListAreaDetailRequest.
-        :type: list[str]
+        :type area: list[str]
         """
         self._area = area
 
@@ -274,7 +297,7 @@ class ListAreaDetailRequest:
         指标，取值如下： - bandwidth：带宽 - traffic：流量 - player：观众数 
 
         :param metric: The metric of this ListAreaDetailRequest.
-        :type: str
+        :type metric: str
         """
         self._metric = metric
 
@@ -296,7 +319,7 @@ class ListAreaDetailRequest:
         请求协议，取值如下： - flv - hls 
 
         :param protocol: The protocol of this ListAreaDetailRequest.
-        :type: str
+        :type protocol: str
         """
         self._protocol = protocol
 

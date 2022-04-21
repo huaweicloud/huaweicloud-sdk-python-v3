@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAppQuotaBoundAppsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListAppQuotaBoundAppsRequest:
     }
 
     def __init__(self, instance_id=None, app_quota_id=None, offset=None, limit=None, app_name=None):
-        """ListAppQuotaBoundAppsRequest - a model defined in huaweicloud sdk"""
+        """ListAppQuotaBoundAppsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param app_quota_id: 客户端配额编号
+        :type app_quota_id: str
+        :param offset: 偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
+        :type offset: int
+        :param limit: 每页显示的条目数量
+        :type limit: int
+        :param app_name: 客户端应用名称
+        :type app_name: str
+        """
         
         
 
@@ -76,7 +89,7 @@ class ListAppQuotaBoundAppsRequest:
         实例ID
 
         :param instance_id: The instance_id of this ListAppQuotaBoundAppsRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -98,7 +111,7 @@ class ListAppQuotaBoundAppsRequest:
         客户端配额编号
 
         :param app_quota_id: The app_quota_id of this ListAppQuotaBoundAppsRequest.
-        :type: str
+        :type app_quota_id: str
         """
         self._app_quota_id = app_quota_id
 
@@ -120,7 +133,7 @@ class ListAppQuotaBoundAppsRequest:
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
         :param offset: The offset of this ListAppQuotaBoundAppsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -142,7 +155,7 @@ class ListAppQuotaBoundAppsRequest:
         每页显示的条目数量
 
         :param limit: The limit of this ListAppQuotaBoundAppsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -164,7 +177,7 @@ class ListAppQuotaBoundAppsRequest:
         客户端应用名称
 
         :param app_name: The app_name of this ListAppQuotaBoundAppsRequest.
-        :type: str
+        :type app_name: str
         """
         self._app_name = app_name
 

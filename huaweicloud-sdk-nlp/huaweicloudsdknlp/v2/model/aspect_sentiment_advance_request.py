@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AspectSentimentAdvanceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AspectSentimentAdvanceRequest:
     }
 
     def __init__(self, content=None, type=None):
-        """AspectSentimentAdvanceRequest - a model defined in huaweicloud sdk"""
+        """AspectSentimentAdvanceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param content: 待分析文本。文本编码要求为utf-8，仅支持中文。 限定4096个字符以内，建议文本长度300个字符以内。
+        :type content: str
+        :param type: 取值如下： 1 手机领域 2 汽车领域
+        :type type: int
+        """
         
         
 
@@ -61,7 +68,7 @@ class AspectSentimentAdvanceRequest:
         待分析文本。文本编码要求为utf-8，仅支持中文。 限定4096个字符以内，建议文本长度300个字符以内。
 
         :param content: The content of this AspectSentimentAdvanceRequest.
-        :type: str
+        :type content: str
         """
         self._content = content
 
@@ -83,7 +90,7 @@ class AspectSentimentAdvanceRequest:
         取值如下： 1 手机领域 2 汽车领域
 
         :param type: The type of this AspectSentimentAdvanceRequest.
-        :type: int
+        :type type: int
         """
         self._type = type
 

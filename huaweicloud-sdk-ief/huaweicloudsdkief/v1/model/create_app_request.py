@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateAppRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateAppRequest:
     }
 
     def __init__(self, ief_instance_id=None, body=None):
-        """CreateAppRequest - a model defined in huaweicloud sdk"""
+        """CreateAppRequest
+
+        The model defined in huaweicloud sdk
+
+        :param ief_instance_id: 铂金版实例ID，专业版实例为空值
+        :type ief_instance_id: str
+        :param body: Body of the CreateAppRequest
+        :type body: :class:`huaweicloudsdkief.v1.App`
+        """
         
         
 
@@ -63,7 +70,7 @@ class CreateAppRequest:
         铂金版实例ID，专业版实例为空值
 
         :param ief_instance_id: The ief_instance_id of this CreateAppRequest.
-        :type: str
+        :type ief_instance_id: str
         """
         self._ief_instance_id = ief_instance_id
 
@@ -73,7 +80,7 @@ class CreateAppRequest:
 
 
         :return: The body of this CreateAppRequest.
-        :rtype: App
+        :rtype: :class:`huaweicloudsdkief.v1.App`
         """
         return self._body
 
@@ -83,7 +90,7 @@ class CreateAppRequest:
 
 
         :param body: The body of this CreateAppRequest.
-        :type: App
+        :type body: :class:`huaweicloudsdkief.v1.App`
         """
         self._body = body
 

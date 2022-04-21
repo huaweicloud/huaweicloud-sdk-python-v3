@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DbScanResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DbScanResult:
     }
 
     def __init__(self, total=None, db_scan_results=None):
-        """DbScanResult - a model defined in huaweicloud sdk"""
+        """DbScanResult
+
+        The model defined in huaweicloud sdk
+
+        :param total: 扫描结果总数
+        :type total: int
+        :param db_scan_results: 数据库扫描结果列表
+        :type db_scan_results: list[:class:`huaweicloudsdkdsc.v1.DbScanResultInfo`]
+        """
         
         
 
@@ -63,7 +70,7 @@ class DbScanResult:
         扫描结果总数
 
         :param total: The total of this DbScanResult.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -74,7 +81,7 @@ class DbScanResult:
         数据库扫描结果列表
 
         :return: The db_scan_results of this DbScanResult.
-        :rtype: list[DbScanResultInfo]
+        :rtype: list[:class:`huaweicloudsdkdsc.v1.DbScanResultInfo`]
         """
         return self._db_scan_results
 
@@ -85,7 +92,7 @@ class DbScanResult:
         数据库扫描结果列表
 
         :param db_scan_results: The db_scan_results of this DbScanResult.
-        :type: list[DbScanResultInfo]
+        :type db_scan_results: list[:class:`huaweicloudsdkdsc.v1.DbScanResultInfo`]
         """
         self._db_scan_results = db_scan_results
 

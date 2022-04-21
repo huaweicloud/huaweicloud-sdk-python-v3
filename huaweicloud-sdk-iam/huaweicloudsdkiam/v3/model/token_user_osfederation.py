@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TokenUserOsfederation:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class TokenUserOsfederation:
     }
 
     def __init__(self, groups=None, identity_provider=None, protocol=None):
-        """TokenUserOsfederation - a model defined in huaweicloud sdk"""
+        """TokenUserOsfederation
+
+        The model defined in huaweicloud sdk
+
+        :param groups: 用户组信息列表。
+        :type groups: list[:class:`huaweicloudsdkiam.v3.OsfederationGroups`]
+        :param identity_provider: 
+        :type identity_provider: :class:`huaweicloudsdkiam.v3.OsfederationIdentityprovider`
+        :param protocol: 
+        :type protocol: :class:`huaweicloudsdkiam.v3.OsfederationProtocol`
+        """
         
         
 
@@ -54,7 +63,7 @@ class TokenUserOsfederation:
         用户组信息列表。
 
         :return: The groups of this TokenUserOsfederation.
-        :rtype: list[OsfederationGroups]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.OsfederationGroups`]
         """
         return self._groups
 
@@ -65,7 +74,7 @@ class TokenUserOsfederation:
         用户组信息列表。
 
         :param groups: The groups of this TokenUserOsfederation.
-        :type: list[OsfederationGroups]
+        :type groups: list[:class:`huaweicloudsdkiam.v3.OsfederationGroups`]
         """
         self._groups = groups
 
@@ -75,7 +84,7 @@ class TokenUserOsfederation:
 
 
         :return: The identity_provider of this TokenUserOsfederation.
-        :rtype: OsfederationIdentityprovider
+        :rtype: :class:`huaweicloudsdkiam.v3.OsfederationIdentityprovider`
         """
         return self._identity_provider
 
@@ -85,7 +94,7 @@ class TokenUserOsfederation:
 
 
         :param identity_provider: The identity_provider of this TokenUserOsfederation.
-        :type: OsfederationIdentityprovider
+        :type identity_provider: :class:`huaweicloudsdkiam.v3.OsfederationIdentityprovider`
         """
         self._identity_provider = identity_provider
 
@@ -95,7 +104,7 @@ class TokenUserOsfederation:
 
 
         :return: The protocol of this TokenUserOsfederation.
-        :rtype: OsfederationProtocol
+        :rtype: :class:`huaweicloudsdkiam.v3.OsfederationProtocol`
         """
         return self._protocol
 
@@ -105,7 +114,7 @@ class TokenUserOsfederation:
 
 
         :param protocol: The protocol of this TokenUserOsfederation.
-        :type: OsfederationProtocol
+        :type protocol: :class:`huaweicloudsdkiam.v3.OsfederationProtocol`
         """
         self._protocol = protocol
 

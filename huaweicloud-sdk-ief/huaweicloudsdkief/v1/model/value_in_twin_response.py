@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ValueInTwinResponse:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ValueInTwinResponse:
     }
 
     def __init__(self, excepted=None, actual=None, metadata=None, optional=None):
-        """ValueInTwinResponse - a model defined in huaweicloud sdk"""
+        """ValueInTwinResponse
+
+        The model defined in huaweicloud sdk
+
+        :param excepted: 
+        :type excepted: :class:`huaweicloudsdkief.v1.ValueInTwinResponseExcepted`
+        :param actual: 
+        :type actual: :class:`huaweicloudsdkief.v1.ValueInTwinResponseActual`
+        :param metadata: 
+        :type metadata: :class:`huaweicloudsdkief.v1.ValueInTwinResponseMetadata`
+        :param optional: 标识属性是否可选，默认为true，继承模板的属性默认为false
+        :type optional: bool
+        """
         
         
 
@@ -61,7 +72,7 @@ class ValueInTwinResponse:
 
 
         :return: The excepted of this ValueInTwinResponse.
-        :rtype: ValueInTwinResponseExcepted
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInTwinResponseExcepted`
         """
         return self._excepted
 
@@ -71,7 +82,7 @@ class ValueInTwinResponse:
 
 
         :param excepted: The excepted of this ValueInTwinResponse.
-        :type: ValueInTwinResponseExcepted
+        :type excepted: :class:`huaweicloudsdkief.v1.ValueInTwinResponseExcepted`
         """
         self._excepted = excepted
 
@@ -81,7 +92,7 @@ class ValueInTwinResponse:
 
 
         :return: The actual of this ValueInTwinResponse.
-        :rtype: ValueInTwinResponseActual
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInTwinResponseActual`
         """
         return self._actual
 
@@ -91,7 +102,7 @@ class ValueInTwinResponse:
 
 
         :param actual: The actual of this ValueInTwinResponse.
-        :type: ValueInTwinResponseActual
+        :type actual: :class:`huaweicloudsdkief.v1.ValueInTwinResponseActual`
         """
         self._actual = actual
 
@@ -101,7 +112,7 @@ class ValueInTwinResponse:
 
 
         :return: The metadata of this ValueInTwinResponse.
-        :rtype: ValueInTwinResponseMetadata
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInTwinResponseMetadata`
         """
         return self._metadata
 
@@ -111,7 +122,7 @@ class ValueInTwinResponse:
 
 
         :param metadata: The metadata of this ValueInTwinResponse.
-        :type: ValueInTwinResponseMetadata
+        :type metadata: :class:`huaweicloudsdkief.v1.ValueInTwinResponseMetadata`
         """
         self._metadata = metadata
 
@@ -133,7 +144,7 @@ class ValueInTwinResponse:
         标识属性是否可选，默认为true，继承模板的属性默认为false
 
         :param optional: The optional of this ValueInTwinResponse.
-        :type: bool
+        :type optional: bool
         """
         self._optional = optional
 

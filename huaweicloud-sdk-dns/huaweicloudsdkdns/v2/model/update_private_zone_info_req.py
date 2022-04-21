@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdatePrivateZoneInfoReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdatePrivateZoneInfoReq:
     }
 
     def __init__(self, description=None, email=None, ttl=None):
-        """UpdatePrivateZoneInfoReq - a model defined in huaweicloud sdk"""
+        """UpdatePrivateZoneInfoReq
+
+        The model defined in huaweicloud sdk
+
+        :param description: 域名的描述信息。长度不超过255个字符。
+        :type description: str
+        :param email: 管理该zone的管理员邮箱。
+        :type email: str
+        :param ttl: 用于填写默认生成的SOA记录中有效缓存时间，以秒为单位。
+        :type ttl: int
+        """
         
         
 
@@ -68,7 +77,7 @@ class UpdatePrivateZoneInfoReq:
         域名的描述信息。长度不超过255个字符。
 
         :param description: The description of this UpdatePrivateZoneInfoReq.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -90,7 +99,7 @@ class UpdatePrivateZoneInfoReq:
         管理该zone的管理员邮箱。
 
         :param email: The email of this UpdatePrivateZoneInfoReq.
-        :type: str
+        :type email: str
         """
         self._email = email
 
@@ -112,7 +121,7 @@ class UpdatePrivateZoneInfoReq:
         用于填写默认生成的SOA记录中有效缓存时间，以秒为单位。
 
         :param ttl: The ttl of this UpdatePrivateZoneInfoReq.
-        :type: int
+        :type ttl: int
         """
         self._ttl = ttl
 

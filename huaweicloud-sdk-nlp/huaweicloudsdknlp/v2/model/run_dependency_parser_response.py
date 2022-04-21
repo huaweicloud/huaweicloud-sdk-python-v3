@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunDependencyParserResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class RunDependencyParserResponse(SdkResponse):
     }
 
     def __init__(self, words=None, error_code=None, error_msg=None):
-        """RunDependencyParserResponse - a model defined in huaweicloud sdk"""
+        """RunDependencyParserResponse
+
+        The model defined in huaweicloud sdk
+
+        :param words: 依存句法分析结果，词汇集合。调用失败时无此字段。
+        :type words: list[:class:`huaweicloudsdknlp.v2.DependencyParserWord`]
+        :param error_code: 调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
+        :type error_code: str
+        :param error_msg: 调用失败时的错误信息。调用成功时无此字段。
+        :type error_msg: str
+        """
         
         super(RunDependencyParserResponse, self).__init__()
 
@@ -57,7 +66,7 @@ class RunDependencyParserResponse(SdkResponse):
         依存句法分析结果，词汇集合。调用失败时无此字段。
 
         :return: The words of this RunDependencyParserResponse.
-        :rtype: list[DependencyParserWord]
+        :rtype: list[:class:`huaweicloudsdknlp.v2.DependencyParserWord`]
         """
         return self._words
 
@@ -68,7 +77,7 @@ class RunDependencyParserResponse(SdkResponse):
         依存句法分析结果，词汇集合。调用失败时无此字段。
 
         :param words: The words of this RunDependencyParserResponse.
-        :type: list[DependencyParserWord]
+        :type words: list[:class:`huaweicloudsdknlp.v2.DependencyParserWord`]
         """
         self._words = words
 
@@ -90,7 +99,7 @@ class RunDependencyParserResponse(SdkResponse):
         调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
 
         :param error_code: The error_code of this RunDependencyParserResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -112,7 +121,7 @@ class RunDependencyParserResponse(SdkResponse):
         调用失败时的错误信息。调用成功时无此字段。
 
         :param error_msg: The error_msg of this RunDependencyParserResponse.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 

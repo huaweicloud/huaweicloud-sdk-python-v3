@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowNodeResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ShowNodeResponse(SdkResponse):
     }
 
     def __init__(self, kind=None, api_version=None, metadata=None, spec=None, status=None):
-        """ShowNodeResponse - a model defined in huaweicloud sdk"""
+        """ShowNodeResponse
+
+        The model defined in huaweicloud sdk
+
+        :param kind: API类型，固定值“Node”，该值不可修改。  
+        :type kind: str
+        :param api_version: API版本，固定值“v3”，该值不可修改。  
+        :type api_version: str
+        :param metadata: 
+        :type metadata: :class:`huaweicloudsdkcce.v3.NodeMetadata`
+        :param spec: 
+        :type spec: :class:`huaweicloudsdkcce.v3.NodeSpec`
+        :param status: 
+        :type status: :class:`huaweicloudsdkcce.v3.NodeStatus`
+        """
         
         super(ShowNodeResponse, self).__init__()
 
@@ -78,7 +91,7 @@ class ShowNodeResponse(SdkResponse):
         API类型，固定值“Node”，该值不可修改。  
 
         :param kind: The kind of this ShowNodeResponse.
-        :type: str
+        :type kind: str
         """
         self._kind = kind
 
@@ -100,7 +113,7 @@ class ShowNodeResponse(SdkResponse):
         API版本，固定值“v3”，该值不可修改。  
 
         :param api_version: The api_version of this ShowNodeResponse.
-        :type: str
+        :type api_version: str
         """
         self._api_version = api_version
 
@@ -110,7 +123,7 @@ class ShowNodeResponse(SdkResponse):
 
 
         :return: The metadata of this ShowNodeResponse.
-        :rtype: NodeMetadata
+        :rtype: :class:`huaweicloudsdkcce.v3.NodeMetadata`
         """
         return self._metadata
 
@@ -120,7 +133,7 @@ class ShowNodeResponse(SdkResponse):
 
 
         :param metadata: The metadata of this ShowNodeResponse.
-        :type: NodeMetadata
+        :type metadata: :class:`huaweicloudsdkcce.v3.NodeMetadata`
         """
         self._metadata = metadata
 
@@ -130,7 +143,7 @@ class ShowNodeResponse(SdkResponse):
 
 
         :return: The spec of this ShowNodeResponse.
-        :rtype: NodeSpec
+        :rtype: :class:`huaweicloudsdkcce.v3.NodeSpec`
         """
         return self._spec
 
@@ -140,7 +153,7 @@ class ShowNodeResponse(SdkResponse):
 
 
         :param spec: The spec of this ShowNodeResponse.
-        :type: NodeSpec
+        :type spec: :class:`huaweicloudsdkcce.v3.NodeSpec`
         """
         self._spec = spec
 
@@ -150,7 +163,7 @@ class ShowNodeResponse(SdkResponse):
 
 
         :return: The status of this ShowNodeResponse.
-        :rtype: NodeStatus
+        :rtype: :class:`huaweicloudsdkcce.v3.NodeStatus`
         """
         return self._status
 
@@ -160,7 +173,7 @@ class ShowNodeResponse(SdkResponse):
 
 
         :param status: The status of this ShowNodeResponse.
-        :type: NodeStatus
+        :type status: :class:`huaweicloudsdkcce.v3.NodeStatus`
         """
         self._status = status
 

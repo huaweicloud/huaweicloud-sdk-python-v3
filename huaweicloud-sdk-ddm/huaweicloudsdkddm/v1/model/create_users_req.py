@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateUsersReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateUsersReq:
     }
 
     def __init__(self, users=None):
-        """CreateUsersReq - a model defined in huaweicloud sdk"""
+        """CreateUsersReq
+
+        The model defined in huaweicloud sdk
+
+        :param users: DDM实例帐号相关信息的集合。
+        :type users: list[:class:`huaweicloudsdkddm.v1.CreateUsersInfo`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateUsersReq:
         DDM实例帐号相关信息的集合。
 
         :return: The users of this CreateUsersReq.
-        :rtype: list[CreateUsersInfo]
+        :rtype: list[:class:`huaweicloudsdkddm.v1.CreateUsersInfo`]
         """
         return self._users
 
@@ -57,7 +62,7 @@ class CreateUsersReq:
         DDM实例帐号相关信息的集合。
 
         :param users: The users of this CreateUsersReq.
-        :type: list[CreateUsersInfo]
+        :type users: list[:class:`huaweicloudsdkddm.v1.CreateUsersInfo`]
         """
         self._users = users
 

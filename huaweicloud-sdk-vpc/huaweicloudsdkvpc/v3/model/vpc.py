@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Vpc:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class Vpc:
     }
 
     def __init__(self, id=None, name=None, description=None, cidr=None, extend_cidrs=None, status=None, project_id=None, enterprise_project_id=None, created_at=None, updated_at=None, cloud_resources=None, tags=None):
-        """Vpc - a model defined in huaweicloud sdk"""
+        """Vpc
+
+        The model defined in huaweicloud sdk
+
+        :param id: 功能描述：VPC对应的唯一标识 取值范围：带“-”的UUID格式
+        :type id: str
+        :param name: 功能说明：VPC对应的名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
+        :type name: str
+        :param description: 功能说明：VPC的描述信息 取值范围：0-255个字符，不能包含“&lt;”和“&gt;”
+        :type description: str
+        :param cidr: 功能说明：VPC下可用子网的范围 取值范围： - 10.0.0.0/8~10.255.255.240/28 - 172.16.0.0/12 ~ 172.31.255.240/28 - 192.168.0.0/16 ~ 192.168.255.240/28 不指定cidr时，默认值为“” 约束：必须是ipv4 cidr格式，例如:192.168.0.0/16
+        :type cidr: str
+        :param extend_cidrs: 功能描述：VPC的扩展网段 取值范围： 约束：目前只支持ipv4
+        :type extend_cidrs: list[str]
+        :param status: 功能说明：VPC对应的状态 取值范围：PENDING：创建中；ACTIVE：创建成功 
+        :type status: str
+        :param project_id: 功能说明：VPC所属的项目ID
+        :type project_id: str
+        :param enterprise_project_id: 功能说明：VPC所属的企业项目ID。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。
+        :type enterprise_project_id: str
+        :param created_at: 功能说明：VPC创建时间 取值范围：UTC时间格式：yyyy-MM-ddTHH:mm:ss
+        :type created_at: datetime
+        :param updated_at: 功能说明：VPC更新时间 取值范围：UTC时间格式：yyyy-MM-ddTHH:mm:ss
+        :type updated_at: datetime
+        :param cloud_resources: 功能说明：VPC关联资源类型和数量 取值范围：目前只返回VPC关联的routetable和virsubnet
+        :type cloud_resources: list[:class:`huaweicloudsdkvpc.v3.CloudResource`]
+        :param tags: 功能说明：VPC的标签信息，详情参见Tag对象 取值范围：0-10个标签键值对
+        :type tags: list[:class:`huaweicloudsdkvpc.v3.Tag`]
+        """
         
         
 
@@ -101,7 +128,7 @@ class Vpc:
         功能描述：VPC对应的唯一标识 取值范围：带“-”的UUID格式
 
         :param id: The id of this Vpc.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -123,7 +150,7 @@ class Vpc:
         功能说明：VPC对应的名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
         :param name: The name of this Vpc.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -145,7 +172,7 @@ class Vpc:
         功能说明：VPC的描述信息 取值范围：0-255个字符，不能包含“<”和“>”
 
         :param description: The description of this Vpc.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -167,7 +194,7 @@ class Vpc:
         功能说明：VPC下可用子网的范围 取值范围： - 10.0.0.0/8~10.255.255.240/28 - 172.16.0.0/12 ~ 172.31.255.240/28 - 192.168.0.0/16 ~ 192.168.255.240/28 不指定cidr时，默认值为“” 约束：必须是ipv4 cidr格式，例如:192.168.0.0/16
 
         :param cidr: The cidr of this Vpc.
-        :type: str
+        :type cidr: str
         """
         self._cidr = cidr
 
@@ -189,7 +216,7 @@ class Vpc:
         功能描述：VPC的扩展网段 取值范围： 约束：目前只支持ipv4
 
         :param extend_cidrs: The extend_cidrs of this Vpc.
-        :type: list[str]
+        :type extend_cidrs: list[str]
         """
         self._extend_cidrs = extend_cidrs
 
@@ -211,7 +238,7 @@ class Vpc:
         功能说明：VPC对应的状态 取值范围：PENDING：创建中；ACTIVE：创建成功 
 
         :param status: The status of this Vpc.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -233,7 +260,7 @@ class Vpc:
         功能说明：VPC所属的项目ID
 
         :param project_id: The project_id of this Vpc.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -255,7 +282,7 @@ class Vpc:
         功能说明：VPC所属的企业项目ID。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。
 
         :param enterprise_project_id: The enterprise_project_id of this Vpc.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -277,7 +304,7 @@ class Vpc:
         功能说明：VPC创建时间 取值范围：UTC时间格式：yyyy-MM-ddTHH:mm:ss
 
         :param created_at: The created_at of this Vpc.
-        :type: datetime
+        :type created_at: datetime
         """
         self._created_at = created_at
 
@@ -299,7 +326,7 @@ class Vpc:
         功能说明：VPC更新时间 取值范围：UTC时间格式：yyyy-MM-ddTHH:mm:ss
 
         :param updated_at: The updated_at of this Vpc.
-        :type: datetime
+        :type updated_at: datetime
         """
         self._updated_at = updated_at
 
@@ -310,7 +337,7 @@ class Vpc:
         功能说明：VPC关联资源类型和数量 取值范围：目前只返回VPC关联的routetable和virsubnet
 
         :return: The cloud_resources of this Vpc.
-        :rtype: list[CloudResource]
+        :rtype: list[:class:`huaweicloudsdkvpc.v3.CloudResource`]
         """
         return self._cloud_resources
 
@@ -321,7 +348,7 @@ class Vpc:
         功能说明：VPC关联资源类型和数量 取值范围：目前只返回VPC关联的routetable和virsubnet
 
         :param cloud_resources: The cloud_resources of this Vpc.
-        :type: list[CloudResource]
+        :type cloud_resources: list[:class:`huaweicloudsdkvpc.v3.CloudResource`]
         """
         self._cloud_resources = cloud_resources
 
@@ -332,7 +359,7 @@ class Vpc:
         功能说明：VPC的标签信息，详情参见Tag对象 取值范围：0-10个标签键值对
 
         :return: The tags of this Vpc.
-        :rtype: list[Tag]
+        :rtype: list[:class:`huaweicloudsdkvpc.v3.Tag`]
         """
         return self._tags
 
@@ -343,7 +370,7 @@ class Vpc:
         功能说明：VPC的标签信息，详情参见Tag对象 取值范围：0-10个标签键值对
 
         :param tags: The tags of this Vpc.
-        :type: list[Tag]
+        :type tags: list[:class:`huaweicloudsdkvpc.v3.Tag`]
         """
         self._tags = tags
 

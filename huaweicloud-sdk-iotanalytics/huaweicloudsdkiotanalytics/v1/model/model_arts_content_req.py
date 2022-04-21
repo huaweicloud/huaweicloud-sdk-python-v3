@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ModelArtsContentReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ModelArtsContentReq:
     }
 
     def __init__(self, service_name=None, access_address=None, verify_body=None, ak=None, sk=None, project_id=None):
-        """ModelArtsContentReq - a model defined in huaweicloud sdk"""
+        """ModelArtsContentReq
+
+        The model defined in huaweicloud sdk
+
+        :param service_name: 服务名称
+        :type service_name: str
+        :param access_address: 访问地址
+        :type access_address: str
+        :param verify_body: 校验参数
+        :type verify_body: str
+        :param ak: 租户的AK
+        :type ak: str
+        :param sk: 租户的SK
+        :type sk: str
+        :param project_id: 项目id
+        :type project_id: str
+        """
         
         
 
@@ -77,7 +92,7 @@ class ModelArtsContentReq:
         服务名称
 
         :param service_name: The service_name of this ModelArtsContentReq.
-        :type: str
+        :type service_name: str
         """
         self._service_name = service_name
 
@@ -99,7 +114,7 @@ class ModelArtsContentReq:
         访问地址
 
         :param access_address: The access_address of this ModelArtsContentReq.
-        :type: str
+        :type access_address: str
         """
         self._access_address = access_address
 
@@ -121,7 +136,7 @@ class ModelArtsContentReq:
         校验参数
 
         :param verify_body: The verify_body of this ModelArtsContentReq.
-        :type: str
+        :type verify_body: str
         """
         self._verify_body = verify_body
 
@@ -143,7 +158,7 @@ class ModelArtsContentReq:
         租户的AK
 
         :param ak: The ak of this ModelArtsContentReq.
-        :type: str
+        :type ak: str
         """
         self._ak = ak
 
@@ -165,7 +180,7 @@ class ModelArtsContentReq:
         租户的SK
 
         :param sk: The sk of this ModelArtsContentReq.
-        :type: str
+        :type sk: str
         """
         self._sk = sk
 
@@ -187,7 +202,7 @@ class ModelArtsContentReq:
         项目id
 
         :param project_id: The project_id of this ModelArtsContentReq.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 

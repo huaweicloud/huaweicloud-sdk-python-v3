@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListProductTemplatesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListProductTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, total=None, size=None, items=None):
-        """ListProductTemplatesResponse - a model defined in huaweicloud sdk"""
+        """ListProductTemplatesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 总数
+        :type total: int
+        :param size: 本次返回数量
+        :type size: int
+        :param items: 产品模板信息
+        :type items: list[:class:`huaweicloudsdkroma.v2.ProductTemplate`]
+        """
         
         super(ListProductTemplatesResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListProductTemplatesResponse(SdkResponse):
         总数
 
         :param total: The total of this ListProductTemplatesResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -90,7 +99,7 @@ class ListProductTemplatesResponse(SdkResponse):
         本次返回数量
 
         :param size: The size of this ListProductTemplatesResponse.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -101,7 +110,7 @@ class ListProductTemplatesResponse(SdkResponse):
         产品模板信息
 
         :return: The items of this ListProductTemplatesResponse.
-        :rtype: list[ProductTemplate]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.ProductTemplate`]
         """
         return self._items
 
@@ -112,7 +121,7 @@ class ListProductTemplatesResponse(SdkResponse):
         产品模板信息
 
         :param items: The items of this ListProductTemplatesResponse.
-        :type: list[ProductTemplate]
+        :type items: list[:class:`huaweicloudsdkroma.v2.ProductTemplate`]
         """
         self._items = items
 

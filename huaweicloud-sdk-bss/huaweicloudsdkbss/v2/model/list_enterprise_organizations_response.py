@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListEnterpriseOrganizationsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListEnterpriseOrganizationsResponse(SdkResponse):
     }
 
     def __init__(self, root_id=None, root_name=None, child_nodes=None):
-        """ListEnterpriseOrganizationsResponse - a model defined in huaweicloud sdk"""
+        """ListEnterpriseOrganizationsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param root_id: 根节点ID，如果请求有parent_id，则该参数无值。
+        :type root_id: str
+        :param root_name: 根节点名称，如果请求有parent_id，则该参数无值。  说明： 组织根节点没有设置组织名称时，可能为空。
+        :type root_name: str
+        :param child_nodes: 子节点列表。
+        :type child_nodes: list[:class:`huaweicloudsdkbss.v2.EmChildNodeV2`]
+        """
         
         super(ListEnterpriseOrganizationsResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListEnterpriseOrganizationsResponse(SdkResponse):
         根节点ID，如果请求有parent_id，则该参数无值。
 
         :param root_id: The root_id of this ListEnterpriseOrganizationsResponse.
-        :type: str
+        :type root_id: str
         """
         self._root_id = root_id
 
@@ -90,7 +99,7 @@ class ListEnterpriseOrganizationsResponse(SdkResponse):
         根节点名称，如果请求有parent_id，则该参数无值。  说明： 组织根节点没有设置组织名称时，可能为空。
 
         :param root_name: The root_name of this ListEnterpriseOrganizationsResponse.
-        :type: str
+        :type root_name: str
         """
         self._root_name = root_name
 
@@ -101,7 +110,7 @@ class ListEnterpriseOrganizationsResponse(SdkResponse):
         子节点列表。
 
         :return: The child_nodes of this ListEnterpriseOrganizationsResponse.
-        :rtype: list[EmChildNodeV2]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.EmChildNodeV2`]
         """
         return self._child_nodes
 
@@ -112,7 +121,7 @@ class ListEnterpriseOrganizationsResponse(SdkResponse):
         子节点列表。
 
         :param child_nodes: The child_nodes of this ListEnterpriseOrganizationsResponse.
-        :type: list[EmChildNodeV2]
+        :type child_nodes: list[:class:`huaweicloudsdkbss.v2.EmChildNodeV2`]
         """
         self._child_nodes = child_nodes
 

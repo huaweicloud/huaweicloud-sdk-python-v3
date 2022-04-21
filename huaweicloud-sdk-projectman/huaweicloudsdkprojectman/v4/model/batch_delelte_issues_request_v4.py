@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchDelelteIssuesRequestV4:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchDelelteIssuesRequestV4:
     }
 
     def __init__(self, issue_ids=None):
-        """BatchDelelteIssuesRequestV4 - a model defined in huaweicloud sdk"""
+        """BatchDelelteIssuesRequestV4
+
+        The model defined in huaweicloud sdk
+
+        :param issue_ids: 工作项的id
+        :type issue_ids: list[int]
+        """
         
         
 
@@ -57,7 +62,7 @@ class BatchDelelteIssuesRequestV4:
         工作项的id
 
         :param issue_ids: The issue_ids of this BatchDelelteIssuesRequestV4.
-        :type: list[int]
+        :type issue_ids: list[int]
         """
         self._issue_ids = issue_ids
 

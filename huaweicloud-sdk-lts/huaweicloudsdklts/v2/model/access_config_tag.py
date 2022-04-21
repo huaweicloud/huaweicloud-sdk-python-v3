@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AccessConfigTag:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AccessConfigTag:
     }
 
     def __init__(self, key=None, value=None):
-        """AccessConfigTag - a model defined in huaweicloud sdk"""
+        """AccessConfigTag
+
+        The model defined in huaweicloud sdk
+
+        :param key: 
+        :type key: str
+        :param value: 
+        :type value: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class AccessConfigTag:
 
 
         :param key: The key of this AccessConfigTag.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -81,7 +88,7 @@ class AccessConfigTag:
 
 
         :param value: The value of this AccessConfigTag.
-        :type: str
+        :type value: str
         """
         self._value = value
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateDependencyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class CreateDependencyResponse(SdkResponse):
     }
 
     def __init__(self, id=None, owner=None, link=None, runtime=None, etag=None, size=None, name=None, description=None, file_name=None):
-        """CreateDependencyResponse - a model defined in huaweicloud sdk"""
+        """CreateDependencyResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 依赖包ID。
+        :type id: str
+        :param owner: 依赖包拥有者。
+        :type owner: str
+        :param link: 依赖包在obs的存储地址。
+        :type link: str
+        :param runtime: 运行时语言。
+        :type runtime: str
+        :param etag: 依赖包唯一标志。
+        :type etag: str
+        :param size: 依赖包大小。
+        :type size: int
+        :param name: 依赖包名。
+        :type name: str
+        :param description: 依赖包描述。
+        :type description: str
+        :param file_name: 依赖包文件名。
+        :type file_name: str
+        """
         
         super(CreateDependencyResponse, self).__init__()
 
@@ -98,7 +119,7 @@ class CreateDependencyResponse(SdkResponse):
         依赖包ID。
 
         :param id: The id of this CreateDependencyResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -120,7 +141,7 @@ class CreateDependencyResponse(SdkResponse):
         依赖包拥有者。
 
         :param owner: The owner of this CreateDependencyResponse.
-        :type: str
+        :type owner: str
         """
         self._owner = owner
 
@@ -142,7 +163,7 @@ class CreateDependencyResponse(SdkResponse):
         依赖包在obs的存储地址。
 
         :param link: The link of this CreateDependencyResponse.
-        :type: str
+        :type link: str
         """
         self._link = link
 
@@ -164,7 +185,7 @@ class CreateDependencyResponse(SdkResponse):
         运行时语言。
 
         :param runtime: The runtime of this CreateDependencyResponse.
-        :type: str
+        :type runtime: str
         """
         self._runtime = runtime
 
@@ -186,7 +207,7 @@ class CreateDependencyResponse(SdkResponse):
         依赖包唯一标志。
 
         :param etag: The etag of this CreateDependencyResponse.
-        :type: str
+        :type etag: str
         """
         self._etag = etag
 
@@ -208,7 +229,7 @@ class CreateDependencyResponse(SdkResponse):
         依赖包大小。
 
         :param size: The size of this CreateDependencyResponse.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -230,7 +251,7 @@ class CreateDependencyResponse(SdkResponse):
         依赖包名。
 
         :param name: The name of this CreateDependencyResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -252,7 +273,7 @@ class CreateDependencyResponse(SdkResponse):
         依赖包描述。
 
         :param description: The description of this CreateDependencyResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -274,7 +295,7 @@ class CreateDependencyResponse(SdkResponse):
         依赖包文件名。
 
         :param file_name: The file_name of this CreateDependencyResponse.
-        :type: str
+        :type file_name: str
         """
         self._file_name = file_name
 

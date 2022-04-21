@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateNodeByDeviceIdResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateNodeByDeviceIdResponse(SdkResponse):
     }
 
     def __init__(self, update_nodes=None):
-        """UpdateNodeByDeviceIdResponse - a model defined in huaweicloud sdk"""
+        """UpdateNodeByDeviceIdResponse
+
+        The model defined in huaweicloud sdk
+
+        :param update_nodes: 
+        :type update_nodes: :class:`huaweicloudsdkief.v1.NodeUpdateByDevice`
+        """
         
         super(UpdateNodeByDeviceIdResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class UpdateNodeByDeviceIdResponse(SdkResponse):
 
 
         :return: The update_nodes of this UpdateNodeByDeviceIdResponse.
-        :rtype: NodeUpdateByDevice
+        :rtype: :class:`huaweicloudsdkief.v1.NodeUpdateByDevice`
         """
         return self._update_nodes
 
@@ -56,7 +61,7 @@ class UpdateNodeByDeviceIdResponse(SdkResponse):
 
 
         :param update_nodes: The update_nodes of this UpdateNodeByDeviceIdResponse.
-        :type: NodeUpdateByDevice
+        :type update_nodes: :class:`huaweicloudsdkief.v1.NodeUpdateByDevice`
         """
         self._update_nodes = update_nodes
 

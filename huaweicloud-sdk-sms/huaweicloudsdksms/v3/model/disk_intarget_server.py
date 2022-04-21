@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DiskIntargetServer:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class DiskIntargetServer:
     }
 
     def __init__(self, name=None, size=None, device_use=None):
-        """DiskIntargetServer - a model defined in huaweicloud sdk"""
+        """DiskIntargetServer
+
+        The model defined in huaweicloud sdk
+
+        :param name: 磁盘名称
+        :type name: str
+        :param size: 磁盘大小，单位：字节
+        :type size: int
+        :param device_use: 磁盘的作用 
+        :type device_use: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class DiskIntargetServer:
         磁盘名称
 
         :param name: The name of this DiskIntargetServer.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -88,7 +97,7 @@ class DiskIntargetServer:
         磁盘大小，单位：字节
 
         :param size: The size of this DiskIntargetServer.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -110,7 +119,7 @@ class DiskIntargetServer:
         磁盘的作用 
 
         :param device_use: The device_use of this DiskIntargetServer.
-        :type: str
+        :type device_use: str
         """
         self._device_use = device_use
 

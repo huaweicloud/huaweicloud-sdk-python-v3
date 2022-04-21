@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SearchDepartmentByNameResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class SearchDepartmentByNameResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """SearchDepartmentByNameResponse - a model defined in huaweicloud sdk"""
+        """SearchDepartmentByNameResponse
+
+        The model defined in huaweicloud sdk
+
+        :param body: 部门信息
+        :type body: list[:class:`huaweicloudsdkmeeting.v1.QueryDeptResultDTO`]
+        """
         
         super(SearchDepartmentByNameResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class SearchDepartmentByNameResponse(SdkResponse):
         部门信息
 
         :return: The body of this SearchDepartmentByNameResponse.
-        :rtype: list[QueryDeptResultDTO]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.QueryDeptResultDTO`]
         """
         return self._body
 
@@ -58,7 +63,7 @@ class SearchDepartmentByNameResponse(SdkResponse):
         部门信息
 
         :param body: The body of this SearchDepartmentByNameResponse.
-        :type: list[QueryDeptResultDTO]
+        :type body: list[:class:`huaweicloudsdkmeeting.v1.QueryDeptResultDTO`]
         """
         self._body = body
 

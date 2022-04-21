@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddCertificateRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AddCertificateRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """AddCertificateRequest - a model defined in huaweicloud sdk"""
+        """AddCertificateRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
+        :type instance_id: str
+        :param body: Body of the AddCertificateRequest
+        :type body: :class:`huaweicloudsdkiotda.v5.CreateCertificateDTO`
+        """
         
         
 
@@ -63,7 +70,7 @@ class AddCertificateRequest:
         **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
         :param instance_id: The instance_id of this AddCertificateRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -73,7 +80,7 @@ class AddCertificateRequest:
 
 
         :return: The body of this AddCertificateRequest.
-        :rtype: CreateCertificateDTO
+        :rtype: :class:`huaweicloudsdkiotda.v5.CreateCertificateDTO`
         """
         return self._body
 
@@ -83,7 +90,7 @@ class AddCertificateRequest:
 
 
         :param body: The body of this AddCertificateRequest.
-        :type: CreateCertificateDTO
+        :type body: :class:`huaweicloudsdkiotda.v5.CreateCertificateDTO`
         """
         self._body = body
 

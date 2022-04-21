@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PipelineParameter:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class PipelineParameter:
     }
 
     def __init__(self, name=None, value=None):
-        """PipelineParameter - a model defined in huaweicloud sdk"""
+        """PipelineParameter
+
+        The model defined in huaweicloud sdk
+
+        :param name: 参数名称
+        :type name: str
+        :param value: 参数值
+        :type value: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class PipelineParameter:
         参数名称
 
         :param name: The name of this PipelineParameter.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -83,7 +90,7 @@ class PipelineParameter:
         参数值
 
         :param value: The value of this PipelineParameter.
-        :type: str
+        :type value: str
         """
         self._value = value
 

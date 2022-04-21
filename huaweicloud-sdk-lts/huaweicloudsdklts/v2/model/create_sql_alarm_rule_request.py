@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateSqlAlarmRuleRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateSqlAlarmRuleRequest:
     }
 
     def __init__(self, body=None):
-        """CreateSqlAlarmRuleRequest - a model defined in huaweicloud sdk"""
+        """CreateSqlAlarmRuleRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateSqlAlarmRuleRequest
+        :type body: :class:`huaweicloudsdklts.v2.CreateSqlAlarmRuleRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateSqlAlarmRuleRequest:
 
 
         :return: The body of this CreateSqlAlarmRuleRequest.
-        :rtype: CreateSqlAlarmRuleRequestBody
+        :rtype: :class:`huaweicloudsdklts.v2.CreateSqlAlarmRuleRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateSqlAlarmRuleRequest:
 
 
         :param body: The body of this CreateSqlAlarmRuleRequest.
-        :type: CreateSqlAlarmRuleRequestBody
+        :type body: :class:`huaweicloudsdklts.v2.CreateSqlAlarmRuleRequestBody`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAlarmRuleRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListAlarmRuleRequest:
     }
 
     def __init__(self, offset=None, limit=None):
-        """ListAlarmRuleRequest - a model defined in huaweicloud sdk"""
+        """ListAlarmRuleRequest
+
+        The model defined in huaweicloud sdk
+
+        :param offset: 分页信息。
+        :type offset: str
+        :param limit: 用于限制结果数据条数。 取值范围(0,1000],默认值为1000。
+        :type limit: int
+        """
         
         
 
@@ -63,7 +70,7 @@ class ListAlarmRuleRequest:
         分页信息。
 
         :param offset: The offset of this ListAlarmRuleRequest.
-        :type: str
+        :type offset: str
         """
         self._offset = offset
 
@@ -85,7 +92,7 @@ class ListAlarmRuleRequest:
         用于限制结果数据条数。 取值范围(0,1000],默认值为1000。
 
         :param limit: The limit of this ListAlarmRuleRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

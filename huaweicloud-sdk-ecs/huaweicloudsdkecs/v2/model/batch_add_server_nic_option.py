@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchAddServerNicOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class BatchAddServerNicOption:
     }
 
     def __init__(self, subnet_id=None, security_groups=None, ip_address=None, ipv6_enable=None, ipv6_bandwidth=None):
-        """BatchAddServerNicOption - a model defined in huaweicloud sdk"""
+        """BatchAddServerNicOption
+
+        The model defined in huaweicloud sdk
+
+        :param subnet_id: 云服务器添加网卡的信息。  需要指定云服务器所属虚拟私有云下已创建的网络（network）的ID，UUID格式。 指定subnet_id时不能再指定port_id参数。
+        :type subnet_id: str
+        :param security_groups: 添加网卡的安全组信息
+        :type security_groups: list[:class:`huaweicloudsdkecs.v2.ServerNicSecurityGroup`]
+        :param ip_address: IP地址，无该参数表示自动分配IP地址。
+        :type ip_address: str
+        :param ipv6_enable: 是否支持ipv6。  取值为true时，标识此网卡支持ipv6。
+        :type ipv6_enable: bool
+        :param ipv6_bandwidth: 
+        :type ipv6_bandwidth: :class:`huaweicloudsdkecs.v2.Ipv6Bandwidth`
+        """
         
         
 
@@ -77,7 +90,7 @@ class BatchAddServerNicOption:
         云服务器添加网卡的信息。  需要指定云服务器所属虚拟私有云下已创建的网络（network）的ID，UUID格式。 指定subnet_id时不能再指定port_id参数。
 
         :param subnet_id: The subnet_id of this BatchAddServerNicOption.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -88,7 +101,7 @@ class BatchAddServerNicOption:
         添加网卡的安全组信息
 
         :return: The security_groups of this BatchAddServerNicOption.
-        :rtype: list[ServerNicSecurityGroup]
+        :rtype: list[:class:`huaweicloudsdkecs.v2.ServerNicSecurityGroup`]
         """
         return self._security_groups
 
@@ -99,7 +112,7 @@ class BatchAddServerNicOption:
         添加网卡的安全组信息
 
         :param security_groups: The security_groups of this BatchAddServerNicOption.
-        :type: list[ServerNicSecurityGroup]
+        :type security_groups: list[:class:`huaweicloudsdkecs.v2.ServerNicSecurityGroup`]
         """
         self._security_groups = security_groups
 
@@ -121,7 +134,7 @@ class BatchAddServerNicOption:
         IP地址，无该参数表示自动分配IP地址。
 
         :param ip_address: The ip_address of this BatchAddServerNicOption.
-        :type: str
+        :type ip_address: str
         """
         self._ip_address = ip_address
 
@@ -143,7 +156,7 @@ class BatchAddServerNicOption:
         是否支持ipv6。  取值为true时，标识此网卡支持ipv6。
 
         :param ipv6_enable: The ipv6_enable of this BatchAddServerNicOption.
-        :type: bool
+        :type ipv6_enable: bool
         """
         self._ipv6_enable = ipv6_enable
 
@@ -153,7 +166,7 @@ class BatchAddServerNicOption:
 
 
         :return: The ipv6_bandwidth of this BatchAddServerNicOption.
-        :rtype: Ipv6Bandwidth
+        :rtype: :class:`huaweicloudsdkecs.v2.Ipv6Bandwidth`
         """
         return self._ipv6_bandwidth
 
@@ -163,7 +176,7 @@ class BatchAddServerNicOption:
 
 
         :param ipv6_bandwidth: The ipv6_bandwidth of this BatchAddServerNicOption.
-        :type: Ipv6Bandwidth
+        :type ipv6_bandwidth: :class:`huaweicloudsdkecs.v2.Ipv6Bandwidth`
         """
         self._ipv6_bandwidth = ipv6_bandwidth
 

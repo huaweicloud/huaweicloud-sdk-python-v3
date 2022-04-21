@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RealtimeScaleDimensionValue:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RealtimeScaleDimensionValue:
     }
 
     def __init__(self, dimension=None, online_users=None):
-        """RealtimeScaleDimensionValue - a model defined in huaweicloud sdk"""
+        """RealtimeScaleDimensionValue
+
+        The model defined in huaweicloud sdk
+
+        :param dimension: 维度值，如查询维度为region，则此处取值可能为GD 
+        :type dimension: str
+        :param online_users: 在线观众数
+        :type online_users: int
+        """
         
         
 
@@ -63,7 +70,7 @@ class RealtimeScaleDimensionValue:
         维度值，如查询维度为region，则此处取值可能为GD 
 
         :param dimension: The dimension of this RealtimeScaleDimensionValue.
-        :type: str
+        :type dimension: str
         """
         self._dimension = dimension
 
@@ -85,7 +92,7 @@ class RealtimeScaleDimensionValue:
         在线观众数
 
         :param online_users: The online_users of this RealtimeScaleDimensionValue.
-        :type: int
+        :type online_users: int
         """
         self._online_users = online_users
 

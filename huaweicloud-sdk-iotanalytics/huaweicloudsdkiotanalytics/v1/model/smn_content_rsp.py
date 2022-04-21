@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SmnContentRsp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class SmnContentRsp:
     }
 
     def __init__(self, project_id=None, ak=None, sk=None):
-        """SmnContentRsp - a model defined in huaweicloud sdk"""
+        """SmnContentRsp
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: 项目id
+        :type project_id: str
+        :param ak: 租户的AK
+        :type ak: str
+        :param sk: 租户的SK
+        :type sk: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class SmnContentRsp:
         项目id
 
         :param project_id: The project_id of this SmnContentRsp.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -90,7 +99,7 @@ class SmnContentRsp:
         租户的AK
 
         :param ak: The ak of this SmnContentRsp.
-        :type: str
+        :type ak: str
         """
         self._ak = ak
 
@@ -112,7 +121,7 @@ class SmnContentRsp:
         租户的SK
 
         :param sk: The sk of this SmnContentRsp.
-        :type: str
+        :type sk: str
         """
         self._sk = sk
 

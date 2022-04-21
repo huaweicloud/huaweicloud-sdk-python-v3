@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ObjectCompareResultOverview:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ObjectCompareResultOverview:
     }
 
     def __init__(self, object_type=None, object_compare_result=None, target_count=None, source_count=None, diff_count=None):
-        """ObjectCompareResultOverview - a model defined in huaweicloud sdk"""
+        """ObjectCompareResultOverview
+
+        The model defined in huaweicloud sdk
+
+        :param object_type: 对象类型。
+        :type object_type: str
+        :param object_compare_result: 对比结果。
+        :type object_compare_result: str
+        :param target_count: 该类型的对象在目标库的个数。
+        :type target_count: int
+        :param source_count: 该类型的对象在源库的个数。
+        :type source_count: int
+        :param diff_count: 源库和目标库的差异数量。
+        :type diff_count: int
+        """
         
         
 
@@ -73,7 +86,7 @@ class ObjectCompareResultOverview:
         对象类型。
 
         :param object_type: The object_type of this ObjectCompareResultOverview.
-        :type: str
+        :type object_type: str
         """
         self._object_type = object_type
 
@@ -95,7 +108,7 @@ class ObjectCompareResultOverview:
         对比结果。
 
         :param object_compare_result: The object_compare_result of this ObjectCompareResultOverview.
-        :type: str
+        :type object_compare_result: str
         """
         self._object_compare_result = object_compare_result
 
@@ -117,7 +130,7 @@ class ObjectCompareResultOverview:
         该类型的对象在目标库的个数。
 
         :param target_count: The target_count of this ObjectCompareResultOverview.
-        :type: int
+        :type target_count: int
         """
         self._target_count = target_count
 
@@ -139,7 +152,7 @@ class ObjectCompareResultOverview:
         该类型的对象在源库的个数。
 
         :param source_count: The source_count of this ObjectCompareResultOverview.
-        :type: int
+        :type source_count: int
         """
         self._source_count = source_count
 
@@ -161,7 +174,7 @@ class ObjectCompareResultOverview:
         源库和目标库的差异数量。
 
         :param diff_count: The diff_count of this ObjectCompareResultOverview.
-        :type: int
+        :type diff_count: int
         """
         self._diff_count = diff_count
 

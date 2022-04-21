@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RecordsResponse:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class RecordsResponse:
     }
 
     def __init__(self, id=None, status=None, scan_type=None, created_at=None, started_at=None, finished_at=None):
-        """RecordsResponse - a model defined in huaweicloud sdk"""
+        """RecordsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 大key分析记录ID
+        :type id: str
+        :param status: 分析任务状态
+        :type status: str
+        :param scan_type: 分析方式
+        :type scan_type: str
+        :param created_at: 分析任务创建时间,格式为：\&quot;2020-06-15T02:21:18.669Z\&quot;
+        :type created_at: str
+        :param started_at: 分析任务开始时间,格式为：\&quot;2020-06-15T02:21:18.669Z\&quot;
+        :type started_at: str
+        :param finished_at: 分析任务结束时间,格式为：\&quot;2020-06-15T02:21:18.669Z\&quot;
+        :type finished_at: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class RecordsResponse:
         大key分析记录ID
 
         :param id: The id of this RecordsResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -105,7 +120,7 @@ class RecordsResponse:
         分析任务状态
 
         :param status: The status of this RecordsResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -127,7 +142,7 @@ class RecordsResponse:
         分析方式
 
         :param scan_type: The scan_type of this RecordsResponse.
-        :type: str
+        :type scan_type: str
         """
         self._scan_type = scan_type
 
@@ -149,7 +164,7 @@ class RecordsResponse:
         分析任务创建时间,格式为：\"2020-06-15T02:21:18.669Z\"
 
         :param created_at: The created_at of this RecordsResponse.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -171,7 +186,7 @@ class RecordsResponse:
         分析任务开始时间,格式为：\"2020-06-15T02:21:18.669Z\"
 
         :param started_at: The started_at of this RecordsResponse.
-        :type: str
+        :type started_at: str
         """
         self._started_at = started_at
 
@@ -193,7 +208,7 @@ class RecordsResponse:
         分析任务结束时间,格式为：\"2020-06-15T02:21:18.669Z\"
 
         :param finished_at: The finished_at of this RecordsResponse.
-        :type: str
+        :type finished_at: str
         """
         self._finished_at = finished_at
 

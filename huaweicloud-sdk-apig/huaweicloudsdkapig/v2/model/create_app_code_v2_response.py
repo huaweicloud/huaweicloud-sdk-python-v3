@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateAppCodeV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CreateAppCodeV2Response(SdkResponse):
     }
 
     def __init__(self, app_code=None, id=None, app_id=None, create_time=None):
-        """CreateAppCodeV2Response - a model defined in huaweicloud sdk"""
+        """CreateAppCodeV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param app_code: App Code值  支持英文，+_!@#$%+/&#x3D;，且只能以英文和+、/开头，64-180个字符。
+        :type app_code: str
+        :param id: 编号
+        :type id: str
+        :param app_id: 应用编号
+        :type app_id: str
+        :param create_time: 创建时间
+        :type create_time: str
+        """
         
         super(CreateAppCodeV2Response, self).__init__()
 
@@ -72,7 +83,7 @@ class CreateAppCodeV2Response(SdkResponse):
         App Code值  支持英文，+_!@#$%+/=，且只能以英文和+、/开头，64-180个字符。
 
         :param app_code: The app_code of this CreateAppCodeV2Response.
-        :type: str
+        :type app_code: str
         """
         self._app_code = app_code
 
@@ -94,7 +105,7 @@ class CreateAppCodeV2Response(SdkResponse):
         编号
 
         :param id: The id of this CreateAppCodeV2Response.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -116,7 +127,7 @@ class CreateAppCodeV2Response(SdkResponse):
         应用编号
 
         :param app_id: The app_id of this CreateAppCodeV2Response.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -138,7 +149,7 @@ class CreateAppCodeV2Response(SdkResponse):
         创建时间
 
         :param create_time: The create_time of this CreateAppCodeV2Response.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 

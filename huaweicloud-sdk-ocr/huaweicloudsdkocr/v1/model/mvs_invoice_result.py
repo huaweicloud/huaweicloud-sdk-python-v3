@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MvsInvoiceResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -96,7 +95,79 @@ class MvsInvoiceResult:
     }
 
     def __init__(self, code=None, number=None, machine_printed_code=None, machine_printed_number=None, issue_date=None, machine_number=None, buyer_name=None, buyer_organization_number=None, buyer_id=None, seller_name=None, seller_phone=None, seller_id=None, seller_account=None, seller_address=None, seller_bank=None, vehicle_type=None, brand_model=None, manufacturing_location=None, quality_certificate=None, import_certificate=None, inspection_number=None, engine_number=None, vehicle_identification_number=None, tonnage=None, seating_capacity=None, tax_authority=None, tax_authority_code=None, tax_payment_receipt=None, tax_rate=None, tax=None, tax_exclusive_price=None, total=None, total_chinese=None, fiscal_code=None):
-        """MvsInvoiceResult - a model defined in huaweicloud sdk"""
+        """MvsInvoiceResult
+
+        The model defined in huaweicloud sdk
+
+        :param code: 发票代码。 
+        :type code: str
+        :param number: 发票号码。 
+        :type number: str
+        :param machine_printed_code: 机打代码。 
+        :type machine_printed_code: str
+        :param machine_printed_number: 机打号码。 
+        :type machine_printed_number: str
+        :param issue_date: 开票日期。 
+        :type issue_date: str
+        :param machine_number: 机器编号。 
+        :type machine_number: str
+        :param buyer_name: 购买方名称。 
+        :type buyer_name: str
+        :param buyer_organization_number: 购买方身份证号码/组织机构代码。 
+        :type buyer_organization_number: str
+        :param buyer_id: 购买方纳税人识别号。 
+        :type buyer_id: str
+        :param seller_name: 销货单位名称。 
+        :type seller_name: str
+        :param seller_phone: 销售方电话。 
+        :type seller_phone: str
+        :param seller_id: 销售方纳税人识别号。 
+        :type seller_id: str
+        :param seller_account: 销售方账号。 
+        :type seller_account: str
+        :param seller_address: 销售方地址。 
+        :type seller_address: str
+        :param seller_bank: 销售方开户行。 
+        :type seller_bank: str
+        :param vehicle_type: 车辆类型。 
+        :type vehicle_type: str
+        :param brand_model: 厂牌型号。 
+        :type brand_model: str
+        :param manufacturing_location: 产地。 
+        :type manufacturing_location: str
+        :param quality_certificate: 合格证号。 
+        :type quality_certificate: str
+        :param import_certificate: 进口证明书号。 
+        :type import_certificate: str
+        :param inspection_number: 商检单号。 
+        :type inspection_number: str
+        :param engine_number: 发动机号码。 
+        :type engine_number: str
+        :param vehicle_identification_number: 车辆识别代号/车架号码。 
+        :type vehicle_identification_number: str
+        :param tonnage: 吨位。 
+        :type tonnage: str
+        :param seating_capacity: 限乘人数。 
+        :type seating_capacity: str
+        :param tax_authority: 主管税务机关。 
+        :type tax_authority: str
+        :param tax_authority_code: 主管税务机关代码。 
+        :type tax_authority_code: str
+        :param tax_payment_receipt: 完税凭证号码。 
+        :type tax_payment_receipt: str
+        :param tax_rate: 增值税税率或征收率。 
+        :type tax_rate: str
+        :param tax: 增值税税额。 
+        :type tax: str
+        :param tax_exclusive_price: 不含税价。 
+        :type tax_exclusive_price: str
+        :param total: 价税合计。 
+        :type total: str
+        :param total_chinese: 价税合计大写。 
+        :type total_chinese: str
+        :param fiscal_code: 税控码。 
+        :type fiscal_code: str
+        """
         
         
 
@@ -223,7 +294,7 @@ class MvsInvoiceResult:
         发票代码。 
 
         :param code: The code of this MvsInvoiceResult.
-        :type: str
+        :type code: str
         """
         self._code = code
 
@@ -245,7 +316,7 @@ class MvsInvoiceResult:
         发票号码。 
 
         :param number: The number of this MvsInvoiceResult.
-        :type: str
+        :type number: str
         """
         self._number = number
 
@@ -267,7 +338,7 @@ class MvsInvoiceResult:
         机打代码。 
 
         :param machine_printed_code: The machine_printed_code of this MvsInvoiceResult.
-        :type: str
+        :type machine_printed_code: str
         """
         self._machine_printed_code = machine_printed_code
 
@@ -289,7 +360,7 @@ class MvsInvoiceResult:
         机打号码。 
 
         :param machine_printed_number: The machine_printed_number of this MvsInvoiceResult.
-        :type: str
+        :type machine_printed_number: str
         """
         self._machine_printed_number = machine_printed_number
 
@@ -311,7 +382,7 @@ class MvsInvoiceResult:
         开票日期。 
 
         :param issue_date: The issue_date of this MvsInvoiceResult.
-        :type: str
+        :type issue_date: str
         """
         self._issue_date = issue_date
 
@@ -333,7 +404,7 @@ class MvsInvoiceResult:
         机器编号。 
 
         :param machine_number: The machine_number of this MvsInvoiceResult.
-        :type: str
+        :type machine_number: str
         """
         self._machine_number = machine_number
 
@@ -355,7 +426,7 @@ class MvsInvoiceResult:
         购买方名称。 
 
         :param buyer_name: The buyer_name of this MvsInvoiceResult.
-        :type: str
+        :type buyer_name: str
         """
         self._buyer_name = buyer_name
 
@@ -377,7 +448,7 @@ class MvsInvoiceResult:
         购买方身份证号码/组织机构代码。 
 
         :param buyer_organization_number: The buyer_organization_number of this MvsInvoiceResult.
-        :type: str
+        :type buyer_organization_number: str
         """
         self._buyer_organization_number = buyer_organization_number
 
@@ -399,7 +470,7 @@ class MvsInvoiceResult:
         购买方纳税人识别号。 
 
         :param buyer_id: The buyer_id of this MvsInvoiceResult.
-        :type: str
+        :type buyer_id: str
         """
         self._buyer_id = buyer_id
 
@@ -421,7 +492,7 @@ class MvsInvoiceResult:
         销货单位名称。 
 
         :param seller_name: The seller_name of this MvsInvoiceResult.
-        :type: str
+        :type seller_name: str
         """
         self._seller_name = seller_name
 
@@ -443,7 +514,7 @@ class MvsInvoiceResult:
         销售方电话。 
 
         :param seller_phone: The seller_phone of this MvsInvoiceResult.
-        :type: str
+        :type seller_phone: str
         """
         self._seller_phone = seller_phone
 
@@ -465,7 +536,7 @@ class MvsInvoiceResult:
         销售方纳税人识别号。 
 
         :param seller_id: The seller_id of this MvsInvoiceResult.
-        :type: str
+        :type seller_id: str
         """
         self._seller_id = seller_id
 
@@ -487,7 +558,7 @@ class MvsInvoiceResult:
         销售方账号。 
 
         :param seller_account: The seller_account of this MvsInvoiceResult.
-        :type: str
+        :type seller_account: str
         """
         self._seller_account = seller_account
 
@@ -509,7 +580,7 @@ class MvsInvoiceResult:
         销售方地址。 
 
         :param seller_address: The seller_address of this MvsInvoiceResult.
-        :type: str
+        :type seller_address: str
         """
         self._seller_address = seller_address
 
@@ -531,7 +602,7 @@ class MvsInvoiceResult:
         销售方开户行。 
 
         :param seller_bank: The seller_bank of this MvsInvoiceResult.
-        :type: str
+        :type seller_bank: str
         """
         self._seller_bank = seller_bank
 
@@ -553,7 +624,7 @@ class MvsInvoiceResult:
         车辆类型。 
 
         :param vehicle_type: The vehicle_type of this MvsInvoiceResult.
-        :type: str
+        :type vehicle_type: str
         """
         self._vehicle_type = vehicle_type
 
@@ -575,7 +646,7 @@ class MvsInvoiceResult:
         厂牌型号。 
 
         :param brand_model: The brand_model of this MvsInvoiceResult.
-        :type: str
+        :type brand_model: str
         """
         self._brand_model = brand_model
 
@@ -597,7 +668,7 @@ class MvsInvoiceResult:
         产地。 
 
         :param manufacturing_location: The manufacturing_location of this MvsInvoiceResult.
-        :type: str
+        :type manufacturing_location: str
         """
         self._manufacturing_location = manufacturing_location
 
@@ -619,7 +690,7 @@ class MvsInvoiceResult:
         合格证号。 
 
         :param quality_certificate: The quality_certificate of this MvsInvoiceResult.
-        :type: str
+        :type quality_certificate: str
         """
         self._quality_certificate = quality_certificate
 
@@ -641,7 +712,7 @@ class MvsInvoiceResult:
         进口证明书号。 
 
         :param import_certificate: The import_certificate of this MvsInvoiceResult.
-        :type: str
+        :type import_certificate: str
         """
         self._import_certificate = import_certificate
 
@@ -663,7 +734,7 @@ class MvsInvoiceResult:
         商检单号。 
 
         :param inspection_number: The inspection_number of this MvsInvoiceResult.
-        :type: str
+        :type inspection_number: str
         """
         self._inspection_number = inspection_number
 
@@ -685,7 +756,7 @@ class MvsInvoiceResult:
         发动机号码。 
 
         :param engine_number: The engine_number of this MvsInvoiceResult.
-        :type: str
+        :type engine_number: str
         """
         self._engine_number = engine_number
 
@@ -707,7 +778,7 @@ class MvsInvoiceResult:
         车辆识别代号/车架号码。 
 
         :param vehicle_identification_number: The vehicle_identification_number of this MvsInvoiceResult.
-        :type: str
+        :type vehicle_identification_number: str
         """
         self._vehicle_identification_number = vehicle_identification_number
 
@@ -729,7 +800,7 @@ class MvsInvoiceResult:
         吨位。 
 
         :param tonnage: The tonnage of this MvsInvoiceResult.
-        :type: str
+        :type tonnage: str
         """
         self._tonnage = tonnage
 
@@ -751,7 +822,7 @@ class MvsInvoiceResult:
         限乘人数。 
 
         :param seating_capacity: The seating_capacity of this MvsInvoiceResult.
-        :type: str
+        :type seating_capacity: str
         """
         self._seating_capacity = seating_capacity
 
@@ -773,7 +844,7 @@ class MvsInvoiceResult:
         主管税务机关。 
 
         :param tax_authority: The tax_authority of this MvsInvoiceResult.
-        :type: str
+        :type tax_authority: str
         """
         self._tax_authority = tax_authority
 
@@ -795,7 +866,7 @@ class MvsInvoiceResult:
         主管税务机关代码。 
 
         :param tax_authority_code: The tax_authority_code of this MvsInvoiceResult.
-        :type: str
+        :type tax_authority_code: str
         """
         self._tax_authority_code = tax_authority_code
 
@@ -817,7 +888,7 @@ class MvsInvoiceResult:
         完税凭证号码。 
 
         :param tax_payment_receipt: The tax_payment_receipt of this MvsInvoiceResult.
-        :type: str
+        :type tax_payment_receipt: str
         """
         self._tax_payment_receipt = tax_payment_receipt
 
@@ -839,7 +910,7 @@ class MvsInvoiceResult:
         增值税税率或征收率。 
 
         :param tax_rate: The tax_rate of this MvsInvoiceResult.
-        :type: str
+        :type tax_rate: str
         """
         self._tax_rate = tax_rate
 
@@ -861,7 +932,7 @@ class MvsInvoiceResult:
         增值税税额。 
 
         :param tax: The tax of this MvsInvoiceResult.
-        :type: str
+        :type tax: str
         """
         self._tax = tax
 
@@ -883,7 +954,7 @@ class MvsInvoiceResult:
         不含税价。 
 
         :param tax_exclusive_price: The tax_exclusive_price of this MvsInvoiceResult.
-        :type: str
+        :type tax_exclusive_price: str
         """
         self._tax_exclusive_price = tax_exclusive_price
 
@@ -905,7 +976,7 @@ class MvsInvoiceResult:
         价税合计。 
 
         :param total: The total of this MvsInvoiceResult.
-        :type: str
+        :type total: str
         """
         self._total = total
 
@@ -927,7 +998,7 @@ class MvsInvoiceResult:
         价税合计大写。 
 
         :param total_chinese: The total_chinese of this MvsInvoiceResult.
-        :type: str
+        :type total_chinese: str
         """
         self._total_chinese = total_chinese
 
@@ -949,7 +1020,7 @@ class MvsInvoiceResult:
         税控码。 
 
         :param fiscal_code: The fiscal_code of this MvsInvoiceResult.
-        :type: str
+        :type fiscal_code: str
         """
         self._fiscal_code = fiscal_code
 

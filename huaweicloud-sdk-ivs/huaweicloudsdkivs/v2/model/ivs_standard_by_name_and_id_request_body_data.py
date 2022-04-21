@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IvsStandardByNameAndIdRequestBodyData:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class IvsStandardByNameAndIdRequestBodyData:
     }
 
     def __init__(self, req_data=None):
-        """IvsStandardByNameAndIdRequestBodyData - a model defined in huaweicloud sdk"""
+        """IvsStandardByNameAndIdRequestBodyData
+
+        The model defined in huaweicloud sdk
+
+        :param req_data: 请求列表，用于支持批量调用。目前暂时只支持单个数据查询。
+        :type req_data: list[:class:`huaweicloudsdkivs.v2.StandardReqDataByNameAndId`]
+        """
         
         
 
@@ -47,7 +52,7 @@ class IvsStandardByNameAndIdRequestBodyData:
         请求列表，用于支持批量调用。目前暂时只支持单个数据查询。
 
         :return: The req_data of this IvsStandardByNameAndIdRequestBodyData.
-        :rtype: list[StandardReqDataByNameAndId]
+        :rtype: list[:class:`huaweicloudsdkivs.v2.StandardReqDataByNameAndId`]
         """
         return self._req_data
 
@@ -58,7 +63,7 @@ class IvsStandardByNameAndIdRequestBodyData:
         请求列表，用于支持批量调用。目前暂时只支持单个数据查询。
 
         :param req_data: The req_data of this IvsStandardByNameAndIdRequestBodyData.
-        :type: list[StandardReqDataByNameAndId]
+        :type req_data: list[:class:`huaweicloudsdkivs.v2.StandardReqDataByNameAndId`]
         """
         self._req_data = req_data
 

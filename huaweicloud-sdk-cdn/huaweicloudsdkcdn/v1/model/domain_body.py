@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DomainBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class DomainBody:
     }
 
     def __init__(self, domain_name=None, business_type=None, sources=None, service_area=None, enterprise_project_id=None):
-        """DomainBody - a model defined in huaweicloud sdk"""
+        """DomainBody
+
+        The model defined in huaweicloud sdk
+
+        :param domain_name: 加速域名。（ 国际英文域名：域名用字母（A-Z，a-z，大小写等价）、数字（0-9）和连接符（-）组成，各级域名之间用实点（.）连接，国际域名75个字符。注意连接符（-）不能作为域名的开头或结尾字符。）
+        :type domain_name: str
+        :param business_type: 域名业务类型，若为web，则表示类型为网页加速；若为download，则表示业务类型为文件下载加速；若为video，则表示业务类型为点播加速；若为wholeSite，则表示业务类型为全站加速。
+        :type business_type: str
+        :param sources: 源站域名或源站IP，源站为IP类型时，仅支持IPv4，如需传入多个源站IP，以多个源站对象传入，除IP其他参数请保持一致，主源站最多支持15个源站IP对象，备源站最多支持15个源站IP对象；源站为域名类型时仅支持1个源站对象。不支持IP源站和域名源站混用。
+        :type sources: list[:class:`huaweicloudsdkcdn.v1.Sources`]
+        :param service_area: 域名服务范围，若为mainland_china，则表示服务范围为中国大陆；若为outside_mainland_china，则表示服务范围为中国大陆境外；若为global，则表示服务范围为全球。
+        :type service_area: str
+        :param enterprise_project_id: 企业项目ID，创建域名归属的项目。注意：当使用子账号调用接口时，该参数必传。
+        :type enterprise_project_id: str
+        """
         
         
 
@@ -74,7 +87,7 @@ class DomainBody:
         加速域名。（ 国际英文域名：域名用字母（A-Z，a-z，大小写等价）、数字（0-9）和连接符（-）组成，各级域名之间用实点（.）连接，国际域名75个字符。注意连接符（-）不能作为域名的开头或结尾字符。）
 
         :param domain_name: The domain_name of this DomainBody.
-        :type: str
+        :type domain_name: str
         """
         self._domain_name = domain_name
 
@@ -96,7 +109,7 @@ class DomainBody:
         域名业务类型，若为web，则表示类型为网页加速；若为download，则表示业务类型为文件下载加速；若为video，则表示业务类型为点播加速；若为wholeSite，则表示业务类型为全站加速。
 
         :param business_type: The business_type of this DomainBody.
-        :type: str
+        :type business_type: str
         """
         self._business_type = business_type
 
@@ -107,7 +120,7 @@ class DomainBody:
         源站域名或源站IP，源站为IP类型时，仅支持IPv4，如需传入多个源站IP，以多个源站对象传入，除IP其他参数请保持一致，主源站最多支持15个源站IP对象，备源站最多支持15个源站IP对象；源站为域名类型时仅支持1个源站对象。不支持IP源站和域名源站混用。
 
         :return: The sources of this DomainBody.
-        :rtype: list[Sources]
+        :rtype: list[:class:`huaweicloudsdkcdn.v1.Sources`]
         """
         return self._sources
 
@@ -118,7 +131,7 @@ class DomainBody:
         源站域名或源站IP，源站为IP类型时，仅支持IPv4，如需传入多个源站IP，以多个源站对象传入，除IP其他参数请保持一致，主源站最多支持15个源站IP对象，备源站最多支持15个源站IP对象；源站为域名类型时仅支持1个源站对象。不支持IP源站和域名源站混用。
 
         :param sources: The sources of this DomainBody.
-        :type: list[Sources]
+        :type sources: list[:class:`huaweicloudsdkcdn.v1.Sources`]
         """
         self._sources = sources
 
@@ -140,7 +153,7 @@ class DomainBody:
         域名服务范围，若为mainland_china，则表示服务范围为中国大陆；若为outside_mainland_china，则表示服务范围为中国大陆境外；若为global，则表示服务范围为全球。
 
         :param service_area: The service_area of this DomainBody.
-        :type: str
+        :type service_area: str
         """
         self._service_area = service_area
 
@@ -162,7 +175,7 @@ class DomainBody:
         企业项目ID，创建域名归属的项目。注意：当使用子账号调用接口时，该参数必传。
 
         :param enterprise_project_id: The enterprise_project_id of this DomainBody.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 

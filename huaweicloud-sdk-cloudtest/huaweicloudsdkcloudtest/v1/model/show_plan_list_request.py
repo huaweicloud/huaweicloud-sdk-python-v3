@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowPlanListRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ShowPlanListRequest:
     }
 
     def __init__(self, project_id=None, offset=None, limit=None, name=None, current_stage=None):
-        """ShowPlanListRequest - a model defined in huaweicloud sdk"""
+        """ShowPlanListRequest
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: DevCloud项目id，项目唯一标识，固定长度32位字符
+        :type project_id: str
+        :param offset: 起始偏移量，表示从此偏移量开始查询， offset大于等于0
+        :type offset: int
+        :param limit: 每页显示的条目数量,最大支持200条
+        :type limit: int
+        :param name: 模糊查询使用(针对测试计划名称)
+        :type name: str
+        :param current_stage: 测试计划所处阶段（create,design,execute,report）
+        :type current_stage: str
+        """
         
         
 
@@ -75,7 +88,7 @@ class ShowPlanListRequest:
         DevCloud项目id，项目唯一标识，固定长度32位字符
 
         :param project_id: The project_id of this ShowPlanListRequest.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -97,7 +110,7 @@ class ShowPlanListRequest:
         起始偏移量，表示从此偏移量开始查询， offset大于等于0
 
         :param offset: The offset of this ShowPlanListRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -119,7 +132,7 @@ class ShowPlanListRequest:
         每页显示的条目数量,最大支持200条
 
         :param limit: The limit of this ShowPlanListRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -141,7 +154,7 @@ class ShowPlanListRequest:
         模糊查询使用(针对测试计划名称)
 
         :param name: The name of this ShowPlanListRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -163,7 +176,7 @@ class ShowPlanListRequest:
         测试计划所处阶段（create,design,execute,report）
 
         :param current_stage: The current_stage of this ShowPlanListRequest.
-        :type: str
+        :type current_stage: str
         """
         self._current_stage = current_stage
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AttachServerVolumeOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AttachServerVolumeOption:
     }
 
     def __init__(self, device=None, volume_id=None):
-        """AttachServerVolumeOption - a model defined in huaweicloud sdk"""
+        """AttachServerVolumeOption
+
+        The model defined in huaweicloud sdk
+
+        :param device: 磁盘挂载点。  &gt; 说明：  - 新增加的磁盘挂载点不能和已有的磁盘挂载点相同。  - 对于采用XEN虚拟化类型的弹性云服务器，device为必选参数；系统盘挂载点请指定/dev/sda；数据盘挂载点请按英文字母顺序依次指定，如/dev/sdb，/dev/sdc，如果指定了以“/dev/vd”开头的挂载点，系统默认改为“/dev/sd”。  - 对于采用KVM虚拟化类型的弹性云服务器，系统盘挂载点请指定/dev/vda；数据盘挂载点可不用指定，也可按英文字母顺序依次指定，如/dev/vdb，/dev/vdc，如果指定了以“/dev/sd”开头的挂载点，系统默认改为“/dev/vd”。
+        :type device: str
+        :param volume_id: 待挂载磁盘的磁盘ID，UUID格式。
+        :type volume_id: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class AttachServerVolumeOption:
         磁盘挂载点。  > 说明：  - 新增加的磁盘挂载点不能和已有的磁盘挂载点相同。  - 对于采用XEN虚拟化类型的弹性云服务器，device为必选参数；系统盘挂载点请指定/dev/sda；数据盘挂载点请按英文字母顺序依次指定，如/dev/sdb，/dev/sdc，如果指定了以“/dev/vd”开头的挂载点，系统默认改为“/dev/sd”。  - 对于采用KVM虚拟化类型的弹性云服务器，系统盘挂载点请指定/dev/vda；数据盘挂载点可不用指定，也可按英文字母顺序依次指定，如/dev/vdb，/dev/vdc，如果指定了以“/dev/sd”开头的挂载点，系统默认改为“/dev/vd”。
 
         :param device: The device of this AttachServerVolumeOption.
-        :type: str
+        :type device: str
         """
         self._device = device
 
@@ -84,7 +91,7 @@ class AttachServerVolumeOption:
         待挂载磁盘的磁盘ID，UUID格式。
 
         :param volume_id: The volume_id of this AttachServerVolumeOption.
-        :type: str
+        :type volume_id: str
         """
         self._volume_id = volume_id
 

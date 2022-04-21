@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneCreateProtocolRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class KeystoneCreateProtocolRequest:
     }
 
     def __init__(self, idp_id=None, protocol_id=None, body=None):
-        """KeystoneCreateProtocolRequest - a model defined in huaweicloud sdk"""
+        """KeystoneCreateProtocolRequest
+
+        The model defined in huaweicloud sdk
+
+        :param idp_id: 身份提供商ID。
+        :type idp_id: str
+        :param protocol_id: 待注册的协议ID。
+        :type protocol_id: str
+        :param body: Body of the KeystoneCreateProtocolRequest
+        :type body: :class:`huaweicloudsdkiam.v3.KeystoneCreateProtocolRequestBody`
+        """
         
         
 
@@ -66,7 +75,7 @@ class KeystoneCreateProtocolRequest:
         身份提供商ID。
 
         :param idp_id: The idp_id of this KeystoneCreateProtocolRequest.
-        :type: str
+        :type idp_id: str
         """
         self._idp_id = idp_id
 
@@ -88,7 +97,7 @@ class KeystoneCreateProtocolRequest:
         待注册的协议ID。
 
         :param protocol_id: The protocol_id of this KeystoneCreateProtocolRequest.
-        :type: str
+        :type protocol_id: str
         """
         self._protocol_id = protocol_id
 
@@ -98,7 +107,7 @@ class KeystoneCreateProtocolRequest:
 
 
         :return: The body of this KeystoneCreateProtocolRequest.
-        :rtype: KeystoneCreateProtocolRequestBody
+        :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCreateProtocolRequestBody`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class KeystoneCreateProtocolRequest:
 
 
         :param body: The body of this KeystoneCreateProtocolRequest.
-        :type: KeystoneCreateProtocolRequestBody
+        :type body: :class:`huaweicloudsdkiam.v3.KeystoneCreateProtocolRequestBody`
         """
         self._body = body
 

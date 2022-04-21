@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdatePodDeployment:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdatePodDeployment:
     }
 
     def __init__(self, replicas=None, template=None):
-        """UpdatePodDeployment - a model defined in huaweicloud sdk"""
+        """UpdatePodDeployment
+
+        The model defined in huaweicloud sdk
+
+        :param replicas: 应用部署副本数，只能为1
+        :type replicas: int
+        :param template: 
+        :type template: :class:`huaweicloudsdkief.v1.PodRequest`
+        """
         
         
 
@@ -61,7 +68,7 @@ class UpdatePodDeployment:
         应用部署副本数，只能为1
 
         :param replicas: The replicas of this UpdatePodDeployment.
-        :type: int
+        :type replicas: int
         """
         self._replicas = replicas
 
@@ -71,7 +78,7 @@ class UpdatePodDeployment:
 
 
         :return: The template of this UpdatePodDeployment.
-        :rtype: PodRequest
+        :rtype: :class:`huaweicloudsdkief.v1.PodRequest`
         """
         return self._template
 
@@ -81,7 +88,7 @@ class UpdatePodDeployment:
 
 
         :param template: The template of this UpdatePodDeployment.
-        :type: PodRequest
+        :type template: :class:`huaweicloudsdkief.v1.PodRequest`
         """
         self._template = template
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResourceConfigDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ResourceConfigDTO:
     }
 
     def __init__(self, cpu=None, memory=None, gpu=None, npu=None):
-        """ResourceConfigDTO - a model defined in huaweicloud sdk"""
+        """ResourceConfigDTO
+
+        The model defined in huaweicloud sdk
+
+        :param cpu: cpu个数
+        :type cpu: float
+        :param memory: 内存大小
+        :type memory: float
+        :param gpu: cpu个数
+        :type gpu: float
+        :param npu: cpu个数
+        :type npu: float
+        """
         
         
 
@@ -73,7 +84,7 @@ class ResourceConfigDTO:
         cpu个数
 
         :param cpu: The cpu of this ResourceConfigDTO.
-        :type: float
+        :type cpu: float
         """
         self._cpu = cpu
 
@@ -95,7 +106,7 @@ class ResourceConfigDTO:
         内存大小
 
         :param memory: The memory of this ResourceConfigDTO.
-        :type: float
+        :type memory: float
         """
         self._memory = memory
 
@@ -117,7 +128,7 @@ class ResourceConfigDTO:
         cpu个数
 
         :param gpu: The gpu of this ResourceConfigDTO.
-        :type: float
+        :type gpu: float
         """
         self._gpu = gpu
 
@@ -139,7 +150,7 @@ class ResourceConfigDTO:
         cpu个数
 
         :param npu: The npu of this ResourceConfigDTO.
-        :type: float
+        :type npu: float
         """
         self._npu = npu
 

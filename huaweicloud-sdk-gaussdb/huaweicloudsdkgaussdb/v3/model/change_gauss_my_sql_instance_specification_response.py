@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ChangeGaussMySqlInstanceSpecificationResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ChangeGaussMySqlInstanceSpecificationResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, order_id=None):
-        """ChangeGaussMySqlInstanceSpecificationResponse - a model defined in huaweicloud sdk"""
+        """ChangeGaussMySqlInstanceSpecificationResponse
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 规格变更的任务id，仅变更按需实例时会返回该参数
+        :type job_id: str
+        :param order_id: 订单id，仅变更包周期实例时会返回该参数
+        :type order_id: str
+        """
         
         super(ChangeGaussMySqlInstanceSpecificationResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ChangeGaussMySqlInstanceSpecificationResponse(SdkResponse):
         规格变更的任务id，仅变更按需实例时会返回该参数
 
         :param job_id: The job_id of this ChangeGaussMySqlInstanceSpecificationResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -85,7 +92,7 @@ class ChangeGaussMySqlInstanceSpecificationResponse(SdkResponse):
         订单id，仅变更包周期实例时会返回该参数
 
         :param order_id: The order_id of this ChangeGaussMySqlInstanceSpecificationResponse.
-        :type: str
+        :type order_id: str
         """
         self._order_id = order_id
 

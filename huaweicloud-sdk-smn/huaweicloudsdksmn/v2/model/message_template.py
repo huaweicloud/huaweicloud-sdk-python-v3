@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MessageTemplate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class MessageTemplate:
     }
 
     def __init__(self, message_template_id=None, message_template_name=None, protocol=None, tag_names=None, create_time=None, update_time=None):
-        """MessageTemplate - a model defined in huaweicloud sdk"""
+        """MessageTemplate
+
+        The model defined in huaweicloud sdk
+
+        :param message_template_id: 模板ID。
+        :type message_template_id: str
+        :param message_template_name: 模板名称。
+        :type message_template_name: str
+        :param protocol: 模板协议类型。  目前支持的协议包括：  “email”：邮件传输协议。  “sms”：短信传输协议。  “functionstage”：FunctionGraph（函数）传输协议。  “dms”：DMS传输协议。  “http”、“https”：HTTP/HTTPS传输协议。
+        :type protocol: str
+        :param tag_names: 模板tag列表
+        :type tag_names: list[str]
+        :param create_time: 模板创建时间 时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
+        :type create_time: str
+        :param update_time: 模板最后更新时间 时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
+        :type update_time: str
+        """
         
         
 
@@ -77,7 +92,7 @@ class MessageTemplate:
         模板ID。
 
         :param message_template_id: The message_template_id of this MessageTemplate.
-        :type: str
+        :type message_template_id: str
         """
         self._message_template_id = message_template_id
 
@@ -99,7 +114,7 @@ class MessageTemplate:
         模板名称。
 
         :param message_template_name: The message_template_name of this MessageTemplate.
-        :type: str
+        :type message_template_name: str
         """
         self._message_template_name = message_template_name
 
@@ -121,7 +136,7 @@ class MessageTemplate:
         模板协议类型。  目前支持的协议包括：  “email”：邮件传输协议。  “sms”：短信传输协议。  “functionstage”：FunctionGraph（函数）传输协议。  “dms”：DMS传输协议。  “http”、“https”：HTTP/HTTPS传输协议。
 
         :param protocol: The protocol of this MessageTemplate.
-        :type: str
+        :type protocol: str
         """
         self._protocol = protocol
 
@@ -143,7 +158,7 @@ class MessageTemplate:
         模板tag列表
 
         :param tag_names: The tag_names of this MessageTemplate.
-        :type: list[str]
+        :type tag_names: list[str]
         """
         self._tag_names = tag_names
 
@@ -165,7 +180,7 @@ class MessageTemplate:
         模板创建时间 时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
 
         :param create_time: The create_time of this MessageTemplate.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -187,7 +202,7 @@ class MessageTemplate:
         模板最后更新时间 时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
 
         :param update_time: The update_time of this MessageTemplate.
-        :type: str
+        :type update_time: str
         """
         self._update_time = update_time
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SendSmsVerificationCodeRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class SendSmsVerificationCodeRequest:
     }
 
     def __init__(self, body=None):
-        """SendSmsVerificationCodeRequest - a model defined in huaweicloud sdk"""
+        """SendSmsVerificationCodeRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the SendSmsVerificationCodeRequest
+        :type body: :class:`huaweicloudsdkbss.v2.SendSmVerificationCodeReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class SendSmsVerificationCodeRequest:
 
 
         :return: The body of this SendSmsVerificationCodeRequest.
-        :rtype: SendSmVerificationCodeReq
+        :rtype: :class:`huaweicloudsdkbss.v2.SendSmVerificationCodeReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class SendSmsVerificationCodeRequest:
 
 
         :param body: The body of this SendSmsVerificationCodeRequest.
-        :type: SendSmVerificationCodeReq
+        :type body: :class:`huaweicloudsdkbss.v2.SendSmVerificationCodeReq`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TasksObject:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class TasksObject:
     }
 
     def __init__(self, id=None, task_type=None, status=None, processing=None, succeed=None, failed=None, total=None, create_time=None, file_type=None):
-        """TasksObject - a model defined in huaweicloud sdk"""
+        """TasksObject
+
+        The model defined in huaweicloud sdk
+
+        :param id: 任务id。
+        :type id: str
+        :param task_type: 任务的类型， 其值可以为refresh或preheating。
+        :type task_type: str
+        :param status: 刷新结果。task_done表示刷新成功  ，task_inprocess表示刷新中。
+        :type status: str
+        :param processing: 处理中的url个数。
+        :type processing: int
+        :param succeed: 成功处理的url个数。
+        :type succeed: int
+        :param failed: 处理失败的url个数。
+        :type failed: int
+        :param total: url总数。
+        :type total: int
+        :param create_time: 任务的创建时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
+        :type create_time: int
+        :param file_type: 默认是文件file。file：文件,directory：目录。
+        :type file_type: str
+        """
         
         
 
@@ -98,7 +119,7 @@ class TasksObject:
         任务id。
 
         :param id: The id of this TasksObject.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -120,7 +141,7 @@ class TasksObject:
         任务的类型， 其值可以为refresh或preheating。
 
         :param task_type: The task_type of this TasksObject.
-        :type: str
+        :type task_type: str
         """
         self._task_type = task_type
 
@@ -142,7 +163,7 @@ class TasksObject:
         刷新结果。task_done表示刷新成功  ，task_inprocess表示刷新中。
 
         :param status: The status of this TasksObject.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -164,7 +185,7 @@ class TasksObject:
         处理中的url个数。
 
         :param processing: The processing of this TasksObject.
-        :type: int
+        :type processing: int
         """
         self._processing = processing
 
@@ -186,7 +207,7 @@ class TasksObject:
         成功处理的url个数。
 
         :param succeed: The succeed of this TasksObject.
-        :type: int
+        :type succeed: int
         """
         self._succeed = succeed
 
@@ -208,7 +229,7 @@ class TasksObject:
         处理失败的url个数。
 
         :param failed: The failed of this TasksObject.
-        :type: int
+        :type failed: int
         """
         self._failed = failed
 
@@ -230,7 +251,7 @@ class TasksObject:
         url总数。
 
         :param total: The total of this TasksObject.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -252,7 +273,7 @@ class TasksObject:
         任务的创建时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
 
         :param create_time: The create_time of this TasksObject.
-        :type: int
+        :type create_time: int
         """
         self._create_time = create_time
 
@@ -274,7 +295,7 @@ class TasksObject:
         默认是文件file。file：文件,directory：目录。
 
         :param file_type: The file_type of this TasksObject.
-        :type: str
+        :type file_type: str
         """
         self._file_type = file_type
 

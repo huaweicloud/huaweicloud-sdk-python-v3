@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestSetRecordReqBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RestSetRecordReqBody:
     }
 
     def __init__(self, is_record=None):
-        """RestSetRecordReqBody - a model defined in huaweicloud sdk"""
+        """RestSetRecordReqBody
+
+        The model defined in huaweicloud sdk
+
+        :param is_record: 默认值为0。 - 0: 停止会议录制。 - 1: 启动会议录制。
+        :type is_record: int
+        """
         
         
 
@@ -57,7 +62,7 @@ class RestSetRecordReqBody:
         默认值为0。 - 0: 停止会议录制。 - 1: 启动会议录制。
 
         :param is_record: The is_record of this RestSetRecordReqBody.
-        :type: int
+        :type is_record: int
         """
         self._is_record = is_record
 

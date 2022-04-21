@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDDosResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ShowDDosResponse(SdkResponse):
     }
 
     def __init__(self, enable_l7=None, traffic_pos_id=None, http_request_pos_id=None, cleaning_access_pos_id=None, app_type_id=None):
-        """ShowDDosResponse - a model defined in huaweicloud sdk"""
+        """ShowDDosResponse
+
+        The model defined in huaweicloud sdk
+
+        :param enable_l7: 是否开启L7层防护
+        :type enable_l7: bool
+        :param traffic_pos_id: 流量分段ID，取值范围：1～9
+        :type traffic_pos_id: int
+        :param http_request_pos_id: HTTP请求数分段ID，取值范围：1～15
+        :type http_request_pos_id: int
+        :param cleaning_access_pos_id: 清洗时访问限制分段ID，取值范围：1～8
+        :type cleaning_access_pos_id: int
+        :param app_type_id: 应用类型ID，可选取值： - 0 - 1
+        :type app_type_id: int
+        """
         
         super(ShowDDosResponse, self).__init__()
 
@@ -78,7 +91,7 @@ class ShowDDosResponse(SdkResponse):
         是否开启L7层防护
 
         :param enable_l7: The enable_l7 of this ShowDDosResponse.
-        :type: bool
+        :type enable_l7: bool
         """
         self._enable_l7 = enable_l7
 
@@ -100,7 +113,7 @@ class ShowDDosResponse(SdkResponse):
         流量分段ID，取值范围：1～9
 
         :param traffic_pos_id: The traffic_pos_id of this ShowDDosResponse.
-        :type: int
+        :type traffic_pos_id: int
         """
         self._traffic_pos_id = traffic_pos_id
 
@@ -122,7 +135,7 @@ class ShowDDosResponse(SdkResponse):
         HTTP请求数分段ID，取值范围：1～15
 
         :param http_request_pos_id: The http_request_pos_id of this ShowDDosResponse.
-        :type: int
+        :type http_request_pos_id: int
         """
         self._http_request_pos_id = http_request_pos_id
 
@@ -144,7 +157,7 @@ class ShowDDosResponse(SdkResponse):
         清洗时访问限制分段ID，取值范围：1～8
 
         :param cleaning_access_pos_id: The cleaning_access_pos_id of this ShowDDosResponse.
-        :type: int
+        :type cleaning_access_pos_id: int
         """
         self._cleaning_access_pos_id = cleaning_access_pos_id
 
@@ -166,7 +179,7 @@ class ShowDDosResponse(SdkResponse):
         应用类型ID，可选取值： - 0 - 1
 
         :param app_type_id: The app_type_id of this ShowDDosResponse.
-        :type: int
+        :type app_type_id: int
         """
         self._app_type_id = app_type_id
 

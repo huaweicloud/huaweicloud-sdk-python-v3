@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AomMappingRuleInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class AomMappingRuleInfo:
     }
 
     def __init__(self, cluster_id=None, cluster_name=None, deployments=None, namespace=None, container_name=None, files=None):
-        """AomMappingRuleInfo - a model defined in huaweicloud sdk"""
+        """AomMappingRuleInfo
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 集群id
+        :type cluster_id: str
+        :param cluster_name: 集群名称
+        :type cluster_name: str
+        :param deployments: 工作负载
+        :type deployments: list[str]
+        :param namespace: 命名空间
+        :type namespace: str
+        :param container_name: 容器名称
+        :type container_name: str
+        :param files: 接入规则详情
+        :type files: list[:class:`huaweicloudsdklts.v2.AomMappingfilesInfo`]
+        """
         
         
 
@@ -78,7 +93,7 @@ class AomMappingRuleInfo:
         集群id
 
         :param cluster_id: The cluster_id of this AomMappingRuleInfo.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -100,7 +115,7 @@ class AomMappingRuleInfo:
         集群名称
 
         :param cluster_name: The cluster_name of this AomMappingRuleInfo.
-        :type: str
+        :type cluster_name: str
         """
         self._cluster_name = cluster_name
 
@@ -122,7 +137,7 @@ class AomMappingRuleInfo:
         工作负载
 
         :param deployments: The deployments of this AomMappingRuleInfo.
-        :type: list[str]
+        :type deployments: list[str]
         """
         self._deployments = deployments
 
@@ -144,7 +159,7 @@ class AomMappingRuleInfo:
         命名空间
 
         :param namespace: The namespace of this AomMappingRuleInfo.
-        :type: str
+        :type namespace: str
         """
         self._namespace = namespace
 
@@ -166,7 +181,7 @@ class AomMappingRuleInfo:
         容器名称
 
         :param container_name: The container_name of this AomMappingRuleInfo.
-        :type: str
+        :type container_name: str
         """
         self._container_name = container_name
 
@@ -177,7 +192,7 @@ class AomMappingRuleInfo:
         接入规则详情
 
         :return: The files of this AomMappingRuleInfo.
-        :rtype: list[AomMappingfilesInfo]
+        :rtype: list[:class:`huaweicloudsdklts.v2.AomMappingfilesInfo`]
         """
         return self._files
 
@@ -188,7 +203,7 @@ class AomMappingRuleInfo:
         接入规则详情
 
         :param files: The files of this AomMappingRuleInfo.
-        :type: list[AomMappingfilesInfo]
+        :type files: list[:class:`huaweicloudsdklts.v2.AomMappingfilesInfo`]
         """
         self._files = files
 

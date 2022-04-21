@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListWeeklyReportsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListWeeklyReportsResponse(SdkResponse):
     }
 
     def __init__(self, ddos_intercept_times=None, weekdata=None, top10=None):
-        """ListWeeklyReportsResponse - a model defined in huaweicloud sdk"""
+        """ListWeeklyReportsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param ddos_intercept_times: 一周内DDoS拦截次数
+        :type ddos_intercept_times: int
+        :param weekdata: 一周的攻击次数统计数据
+        :type weekdata: list[:class:`huaweicloudsdkantiddos.v1.WeeklyCount`]
+        :param top10: 被攻击次数排名前10的IP地址
+        :type top10: list[:class:`huaweicloudsdkantiddos.v1.WeeklyTop10`]
+        """
         
         super(ListWeeklyReportsResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListWeeklyReportsResponse(SdkResponse):
         一周内DDoS拦截次数
 
         :param ddos_intercept_times: The ddos_intercept_times of this ListWeeklyReportsResponse.
-        :type: int
+        :type ddos_intercept_times: int
         """
         self._ddos_intercept_times = ddos_intercept_times
 
@@ -79,7 +88,7 @@ class ListWeeklyReportsResponse(SdkResponse):
         一周的攻击次数统计数据
 
         :return: The weekdata of this ListWeeklyReportsResponse.
-        :rtype: list[WeeklyCount]
+        :rtype: list[:class:`huaweicloudsdkantiddos.v1.WeeklyCount`]
         """
         return self._weekdata
 
@@ -90,7 +99,7 @@ class ListWeeklyReportsResponse(SdkResponse):
         一周的攻击次数统计数据
 
         :param weekdata: The weekdata of this ListWeeklyReportsResponse.
-        :type: list[WeeklyCount]
+        :type weekdata: list[:class:`huaweicloudsdkantiddos.v1.WeeklyCount`]
         """
         self._weekdata = weekdata
 
@@ -101,7 +110,7 @@ class ListWeeklyReportsResponse(SdkResponse):
         被攻击次数排名前10的IP地址
 
         :return: The top10 of this ListWeeklyReportsResponse.
-        :rtype: list[WeeklyTop10]
+        :rtype: list[:class:`huaweicloudsdkantiddos.v1.WeeklyTop10`]
         """
         return self._top10
 
@@ -112,7 +121,7 @@ class ListWeeklyReportsResponse(SdkResponse):
         被攻击次数排名前10的IP地址
 
         :param top10: The top10 of this ListWeeklyReportsResponse.
-        :type: list[WeeklyTop10]
+        :type top10: list[:class:`huaweicloudsdkantiddos.v1.WeeklyTop10`]
         """
         self._top10 = top10
 

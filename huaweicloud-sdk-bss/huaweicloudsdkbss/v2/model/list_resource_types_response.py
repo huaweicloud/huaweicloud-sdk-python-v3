@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListResourceTypesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListResourceTypesResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, resource_types=None):
-        """ListResourceTypesResponse - a model defined in huaweicloud sdk"""
+        """ListResourceTypesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total_count: 总数。
+        :type total_count: int
+        :param resource_types: 资源类型信息列表，具体请参见表3。
+        :type resource_types: list[:class:`huaweicloudsdkbss.v2.ResourceTypes`]
+        """
         
         super(ListResourceTypesResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListResourceTypesResponse(SdkResponse):
         总数。
 
         :param total_count: The total_count of this ListResourceTypesResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 
@@ -74,7 +81,7 @@ class ListResourceTypesResponse(SdkResponse):
         资源类型信息列表，具体请参见表3。
 
         :return: The resource_types of this ListResourceTypesResponse.
-        :rtype: list[ResourceTypes]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.ResourceTypes`]
         """
         return self._resource_types
 
@@ -85,7 +92,7 @@ class ListResourceTypesResponse(SdkResponse):
         资源类型信息列表，具体请参见表3。
 
         :param resource_types: The resource_types of this ListResourceTypesResponse.
-        :type: list[ResourceTypes]
+        :type resource_types: list[:class:`huaweicloudsdkbss.v2.ResourceTypes`]
         """
         self._resource_types = resource_types
 

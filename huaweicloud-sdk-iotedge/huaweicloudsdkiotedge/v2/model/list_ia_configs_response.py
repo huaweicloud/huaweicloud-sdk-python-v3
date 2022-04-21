@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListIaConfigsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListIaConfigsResponse(SdkResponse):
     }
 
     def __init__(self, configs=None):
-        """ListIaConfigsResponse - a model defined in huaweicloud sdk"""
+        """ListIaConfigsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param configs: 南向3rdIA配置项列表
+        :type configs: list[:class:`huaweicloudsdkiotedge.v2.QueryIaConfigResponseDTO`]
+        """
         
         super(ListIaConfigsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListIaConfigsResponse(SdkResponse):
         南向3rdIA配置项列表
 
         :return: The configs of this ListIaConfigsResponse.
-        :rtype: list[QueryIaConfigResponseDTO]
+        :rtype: list[:class:`huaweicloudsdkiotedge.v2.QueryIaConfigResponseDTO`]
         """
         return self._configs
 
@@ -58,7 +63,7 @@ class ListIaConfigsResponse(SdkResponse):
         南向3rdIA配置项列表
 
         :param configs: The configs of this ListIaConfigsResponse.
-        :type: list[QueryIaConfigResponseDTO]
+        :type configs: list[:class:`huaweicloudsdkiotedge.v2.QueryIaConfigResponseDTO`]
         """
         self._configs = configs
 

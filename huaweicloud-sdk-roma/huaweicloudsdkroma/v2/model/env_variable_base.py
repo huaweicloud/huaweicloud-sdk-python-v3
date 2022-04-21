@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EnvVariableBase:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class EnvVariableBase:
     }
 
     def __init__(self, variable_value=None):
-        """EnvVariableBase - a model defined in huaweicloud sdk"""
+        """EnvVariableBase
+
+        The model defined in huaweicloud sdk
+
+        :param variable_value: 变量值支持英文字母、数字、英文格式的下划线、中划线，斜线（/）、点、冒号，1 ~ 255个字符。
+        :type variable_value: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class EnvVariableBase:
         变量值支持英文字母、数字、英文格式的下划线、中划线，斜线（/）、点、冒号，1 ~ 255个字符。
 
         :param variable_value: The variable_value of this EnvVariableBase.
-        :type: str
+        :type variable_value: str
         """
         self._variable_value = variable_value
 

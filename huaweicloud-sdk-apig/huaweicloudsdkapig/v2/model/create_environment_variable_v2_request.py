@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateEnvironmentVariableV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateEnvironmentVariableV2Request:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreateEnvironmentVariableV2Request - a model defined in huaweicloud sdk"""
+        """CreateEnvironmentVariableV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param body: Body of the CreateEnvironmentVariableV2Request
+        :type body: :class:`huaweicloudsdkapig.v2.EnvVariableCreate`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateEnvironmentVariableV2Request:
         实例ID
 
         :param instance_id: The instance_id of this CreateEnvironmentVariableV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -72,7 +79,7 @@ class CreateEnvironmentVariableV2Request:
 
 
         :return: The body of this CreateEnvironmentVariableV2Request.
-        :rtype: EnvVariableCreate
+        :rtype: :class:`huaweicloudsdkapig.v2.EnvVariableCreate`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CreateEnvironmentVariableV2Request:
 
 
         :param body: The body of this CreateEnvironmentVariableV2Request.
-        :type: EnvVariableCreate
+        :type body: :class:`huaweicloudsdkapig.v2.EnvVariableCreate`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ErrorReasonResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ErrorReasonResp:
     }
 
     def __init__(self, error_code=None, error_msg=None):
-        """ErrorReasonResp - a model defined in huaweicloud sdk"""
+        """ErrorReasonResp
+
+        The model defined in huaweicloud sdk
+
+        :param error_code: 迁移失败的错误码。
+        :type error_code: str
+        :param error_msg: 迁移失败的原因。
+        :type error_msg: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class ErrorReasonResp:
         迁移失败的错误码。
 
         :param error_code: The error_code of this ErrorReasonResp.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -85,7 +92,7 @@ class ErrorReasonResp:
         迁移失败的原因。
 
         :param error_msg: The error_msg of this ErrorReasonResp.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 

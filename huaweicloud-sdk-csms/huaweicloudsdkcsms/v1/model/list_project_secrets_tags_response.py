@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListProjectSecretsTagsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListProjectSecretsTagsResponse(SdkResponse):
     }
 
     def __init__(self, tags=None):
-        """ListProjectSecretsTagsResponse - a model defined in huaweicloud sdk"""
+        """ListProjectSecretsTagsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param tags: 标签列表，key和value键值对的集合。  - key：表示标签键，一个凭据下最多包含10个key，key不能为空，不能重复，同一个key中value不能重复。key最大长度为36个字符。  - value：表示标签值。每个值最大长度43个字符，value之间为“与”的关系。
+        :type tags: list[:class:`huaweicloudsdkcsms.v1.Tag`]
+        """
         
         super(ListProjectSecretsTagsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListProjectSecretsTagsResponse(SdkResponse):
         标签列表，key和value键值对的集合。  - key：表示标签键，一个凭据下最多包含10个key，key不能为空，不能重复，同一个key中value不能重复。key最大长度为36个字符。  - value：表示标签值。每个值最大长度43个字符，value之间为“与”的关系。
 
         :return: The tags of this ListProjectSecretsTagsResponse.
-        :rtype: list[Tag]
+        :rtype: list[:class:`huaweicloudsdkcsms.v1.Tag`]
         """
         return self._tags
 
@@ -58,7 +63,7 @@ class ListProjectSecretsTagsResponse(SdkResponse):
         标签列表，key和value键值对的集合。  - key：表示标签键，一个凭据下最多包含10个key，key不能为空，不能重复，同一个key中value不能重复。key最大长度为36个字符。  - value：表示标签值。每个值最大长度43个字符，value之间为“与”的关系。
 
         :param tags: The tags of this ListProjectSecretsTagsResponse.
-        :type: list[Tag]
+        :type tags: list[:class:`huaweicloudsdkcsms.v1.Tag`]
         """
         self._tags = tags
 

@@ -51,22 +51,21 @@ class DwsClient(Client):
     def create_cluster(self, request):
         """创建集群
 
-        该接口用于创建集群
+        该接口用于创建集群。
+        集群必须要运行在VPC之内，创建集群前，您需要先创建VPC，并获取VPC和子网的
+        id。
+        该接口为异步接口，创建集群需要10～15分钟。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateClusterRequest request
-        :return: CreateClusterResponse
+        :param request: Request instance for CreateCluster
+        :type request: :class:`huaweicloudsdkdws.v2.CreateClusterRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.CreateClusterResponse`
         """
         return self.create_cluster_with_http_info(request)
 
     def create_cluster_with_http_info(self, request):
-        """创建集群
-
-        该接口用于创建集群
-
-        :param CreateClusterRequest request
-        :return: CreateClusterResponse
-        """
-
         all_params = ['create_cluster_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -110,26 +109,21 @@ class DwsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_snapshot(self, request):
         """创建快照
 
         该接口用于为指定集群创建快照。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateSnapshotRequest request
-        :return: CreateSnapshotResponse
+        :param request: Request instance for CreateSnapshot
+        :type request: :class:`huaweicloudsdkdws.v2.CreateSnapshotRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.CreateSnapshotResponse`
         """
         return self.create_snapshot_with_http_info(request)
 
     def create_snapshot_with_http_info(self, request):
-        """创建快照
-
-        该接口用于为指定集群创建快照。
-
-        :param CreateSnapshotRequest request
-        :return: CreateSnapshotResponse
-        """
-
         all_params = ['create_snapshot_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -173,26 +167,21 @@ class DwsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_cluster(self, request):
         """删除集群
 
         此接口用于删除集群。集群删除后将释放此集群的所有资源，包括客户数据。为了安全起见，请在删除集群前为这个集群创建快照。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteClusterRequest request
-        :return: DeleteClusterResponse
+        :param request: Request instance for DeleteCluster
+        :type request: :class:`huaweicloudsdkdws.v2.DeleteClusterRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.DeleteClusterResponse`
         """
         return self.delete_cluster_with_http_info(request)
 
     def delete_cluster_with_http_info(self, request):
-        """删除集群
-
-        此接口用于删除集群。集群删除后将释放此集群的所有资源，包括客户数据。为了安全起见，请在删除集群前为这个集群创建快照。
-
-        :param DeleteClusterRequest request
-        :return: DeleteClusterResponse
-        """
-
         all_params = ['cluster_id', 'delete_cluster_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -238,26 +227,21 @@ class DwsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_snapshot(self, request):
         """删除快照
 
-        该接口用于删除一个指定快照。
+        该接口用于删除一个指定手动快照。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteSnapshotRequest request
-        :return: DeleteSnapshotResponse
+        :param request: Request instance for DeleteSnapshot
+        :type request: :class:`huaweicloudsdkdws.v2.DeleteSnapshotRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.DeleteSnapshotResponse`
         """
         return self.delete_snapshot_with_http_info(request)
 
     def delete_snapshot_with_http_info(self, request):
-        """删除快照
-
-        该接口用于删除一个指定快照。
-
-        :param DeleteSnapshotRequest request
-        :return: DeleteSnapshotResponse
-        """
-
         all_params = ['snapshot_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -301,26 +285,21 @@ class DwsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_cluster_details(self, request):
         """查询集群详情
 
-        该接口用于查询集群详情
+        该接口用于查询集群详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListClusterDetailsRequest request
-        :return: ListClusterDetailsResponse
+        :param request: Request instance for ListClusterDetails
+        :type request: :class:`huaweicloudsdkdws.v2.ListClusterDetailsRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.ListClusterDetailsResponse`
         """
         return self.list_cluster_details_with_http_info(request)
 
     def list_cluster_details_with_http_info(self, request):
-        """查询集群详情
-
-        该接口用于查询集群详情
-
-        :param ListClusterDetailsRequest request
-        :return: ListClusterDetailsResponse
-        """
-
         all_params = ['cluster_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -364,26 +343,21 @@ class DwsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_clusters(self, request):
         """查询集群列表
 
         该接口用于查询并显示集群列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListClustersRequest request
-        :return: ListClustersResponse
+        :param request: Request instance for ListClusters
+        :type request: :class:`huaweicloudsdkdws.v2.ListClustersRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.ListClustersResponse`
         """
         return self.list_clusters_with_http_info(request)
 
     def list_clusters_with_http_info(self, request):
-        """查询集群列表
-
-        该接口用于查询并显示集群列表
-
-        :param ListClustersRequest request
-        :return: ListClustersResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -425,26 +399,21 @@ class DwsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_node_types(self, request):
         """查询节点类型
 
-        该接口用于查询所有DWS服务支持的节点类型。
+        该接口用于查询所有GaussDB(DWS)服务支持的节点类型。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListNodeTypesRequest request
-        :return: ListNodeTypesResponse
+        :param request: Request instance for ListNodeTypes
+        :type request: :class:`huaweicloudsdkdws.v2.ListNodeTypesRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.ListNodeTypesResponse`
         """
         return self.list_node_types_with_http_info(request)
 
     def list_node_types_with_http_info(self, request):
-        """查询节点类型
-
-        该接口用于查询所有DWS服务支持的节点类型。
-
-        :param ListNodeTypesRequest request
-        :return: ListNodeTypesResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -486,26 +455,21 @@ class DwsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_snapshot_details(self, request):
         """查询快照详情
 
         该接口用于使用快照ID查询快照详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListSnapshotDetailsRequest request
-        :return: ListSnapshotDetailsResponse
+        :param request: Request instance for ListSnapshotDetails
+        :type request: :class:`huaweicloudsdkdws.v2.ListSnapshotDetailsRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.ListSnapshotDetailsResponse`
         """
         return self.list_snapshot_details_with_http_info(request)
 
     def list_snapshot_details_with_http_info(self, request):
-        """查询快照详情
-
-        该接口用于使用快照ID查询快照详情。
-
-        :param ListSnapshotDetailsRequest request
-        :return: ListSnapshotDetailsResponse
-        """
-
         all_params = ['snapshot_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -549,26 +513,21 @@ class DwsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_snapshots(self, request):
         """查询快照列表
 
         该接口用于查询快照列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListSnapshotsRequest request
-        :return: ListSnapshotsResponse
+        :param request: Request instance for ListSnapshots
+        :type request: :class:`huaweicloudsdkdws.v2.ListSnapshotsRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.ListSnapshotsResponse`
         """
         return self.list_snapshots_with_http_info(request)
 
     def list_snapshots_with_http_info(self, request):
-        """查询快照列表
-
-        该接口用于查询快照列表。
-
-        :param ListSnapshotsRequest request
-        :return: ListSnapshotsResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -610,24 +569,21 @@ class DwsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def reset_password(self, request):
         """重置密码
 
+        此接口用于重置集群管理员密码。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ResetPasswordRequest request
-        :return: ResetPasswordResponse
+        :param request: Request instance for ResetPassword
+        :type request: :class:`huaweicloudsdkdws.v2.ResetPasswordRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.ResetPasswordResponse`
         """
         return self.reset_password_with_http_info(request)
 
     def reset_password_with_http_info(self, request):
-        """重置密码
-
-
-        :param ResetPasswordRequest request
-        :return: ResetPasswordResponse
-        """
-
         all_params = ['cluster_id', 'reset_password_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -673,26 +629,21 @@ class DwsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def resize_cluster(self, request):
         """扩容集群调整集群大小
 
-        此接口用于扩容集群调整集群大小。
+        此接口用于扩容集群。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ResizeClusterRequest request
-        :return: ResizeClusterResponse
+        :param request: Request instance for ResizeCluster
+        :type request: :class:`huaweicloudsdkdws.v2.ResizeClusterRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.ResizeClusterResponse`
         """
         return self.resize_cluster_with_http_info(request)
 
     def resize_cluster_with_http_info(self, request):
-        """扩容集群调整集群大小
-
-        此接口用于扩容集群调整集群大小。
-
-        :param ResizeClusterRequest request
-        :return: ResizeClusterResponse
-        """
-
         all_params = ['cluster_id', 'resize_cluster_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -738,26 +689,21 @@ class DwsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def restart_cluster(self, request):
         """重启集群
 
         此接口用于重启集群。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param RestartClusterRequest request
-        :return: RestartClusterResponse
+        :param request: Request instance for RestartCluster
+        :type request: :class:`huaweicloudsdkdws.v2.RestartClusterRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.RestartClusterResponse`
         """
         return self.restart_cluster_with_http_info(request)
 
     def restart_cluster_with_http_info(self, request):
-        """重启集群
-
-        此接口用于重启集群。
-
-        :param RestartClusterRequest request
-        :return: RestartClusterResponse
-        """
-
         all_params = ['cluster_id', 'restart_cluster_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -803,26 +749,21 @@ class DwsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def restore_cluster(self, request):
         """恢复集群
 
         该接口用于使用快照恢复集群。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param RestoreClusterRequest request
-        :return: RestoreClusterResponse
+        :param request: Request instance for RestoreCluster
+        :type request: :class:`huaweicloudsdkdws.v2.RestoreClusterRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.RestoreClusterResponse`
         """
         return self.restore_cluster_with_http_info(request)
 
     def restore_cluster_with_http_info(self, request):
-        """恢复集群
-
-        该接口用于使用快照恢复集群。
-
-        :param RestoreClusterRequest request
-        :return: RestoreClusterResponse
-        """
-
         all_params = ['snapshot_id', 'restore_cluster_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -867,7 +808,6 @@ class DwsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

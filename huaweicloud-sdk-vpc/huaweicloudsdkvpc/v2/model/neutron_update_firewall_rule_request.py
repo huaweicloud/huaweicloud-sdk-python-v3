@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NeutronUpdateFirewallRuleRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class NeutronUpdateFirewallRuleRequest:
     }
 
     def __init__(self, firewall_rule_id=None, body=None):
-        """NeutronUpdateFirewallRuleRequest - a model defined in huaweicloud sdk"""
+        """NeutronUpdateFirewallRuleRequest
+
+        The model defined in huaweicloud sdk
+
+        :param firewall_rule_id: 网络ACL防火墙规则ID
+        :type firewall_rule_id: str
+        :param body: Body of the NeutronUpdateFirewallRuleRequest
+        :type body: :class:`huaweicloudsdkvpc.v2.NeutronUpdateFirewallRuleRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class NeutronUpdateFirewallRuleRequest:
         网络ACL防火墙规则ID
 
         :param firewall_rule_id: The firewall_rule_id of this NeutronUpdateFirewallRuleRequest.
-        :type: str
+        :type firewall_rule_id: str
         """
         self._firewall_rule_id = firewall_rule_id
 
@@ -72,7 +79,7 @@ class NeutronUpdateFirewallRuleRequest:
 
 
         :return: The body of this NeutronUpdateFirewallRuleRequest.
-        :rtype: NeutronUpdateFirewallRuleRequestBody
+        :rtype: :class:`huaweicloudsdkvpc.v2.NeutronUpdateFirewallRuleRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class NeutronUpdateFirewallRuleRequest:
 
 
         :param body: The body of this NeutronUpdateFirewallRuleRequest.
-        :type: NeutronUpdateFirewallRuleRequestBody
+        :type body: :class:`huaweicloudsdkvpc.v2.NeutronUpdateFirewallRuleRequestBody`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListErrorServersRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListErrorServersRequest:
     }
 
     def __init__(self, limit=None, offset=None, migproject=None, enterprise_project_id=None):
-        """ListErrorServersRequest - a model defined in huaweicloud sdk"""
+        """ListErrorServersRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 每一页记录的错误数量
+        :type limit: int
+        :param offset: 偏移量
+        :type offset: int
+        :param migproject: 需要查询的迁移项目id，添加此字段将只查询对应id下的迁移任务报错信息
+        :type migproject: str
+        :param enterprise_project_id: 需要查询的企业项目id
+        :type enterprise_project_id: str
+        """
         
         
 
@@ -72,7 +83,7 @@ class ListErrorServersRequest:
         每一页记录的错误数量
 
         :param limit: The limit of this ListErrorServersRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -94,7 +105,7 @@ class ListErrorServersRequest:
         偏移量
 
         :param offset: The offset of this ListErrorServersRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -116,7 +127,7 @@ class ListErrorServersRequest:
         需要查询的迁移项目id，添加此字段将只查询对应id下的迁移任务报错信息
 
         :param migproject: The migproject of this ListErrorServersRequest.
-        :type: str
+        :type migproject: str
         """
         self._migproject = migproject
 
@@ -138,7 +149,7 @@ class ListErrorServersRequest:
         需要查询的企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this ListErrorServersRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 

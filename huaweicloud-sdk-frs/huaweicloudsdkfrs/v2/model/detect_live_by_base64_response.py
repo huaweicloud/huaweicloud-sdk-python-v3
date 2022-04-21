@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DetectLiveByBase64Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DetectLiveByBase64Response(SdkResponse):
     }
 
     def __init__(self, video_result=None, warning_list=None):
-        """DetectLiveByBase64Response - a model defined in huaweicloud sdk"""
+        """DetectLiveByBase64Response
+
+        The model defined in huaweicloud sdk
+
+        :param video_result: 
+        :type video_result: :class:`huaweicloudsdkfrs.v2.LiveDetectRespVideoresult`
+        :param warning_list: 警告信息列表，WarningList结构见[WarningList](https://support.huaweicloud.com/api-face/face_02_0077.html)。 调用失败时无此字段
+        :type warning_list: list[:class:`huaweicloudsdkfrs.v2.WarningList`]
+        """
         
         super(DetectLiveByBase64Response, self).__init__()
 
@@ -51,7 +58,7 @@ class DetectLiveByBase64Response(SdkResponse):
 
 
         :return: The video_result of this DetectLiveByBase64Response.
-        :rtype: LiveDetectRespVideoresult
+        :rtype: :class:`huaweicloudsdkfrs.v2.LiveDetectRespVideoresult`
         """
         return self._video_result
 
@@ -61,7 +68,7 @@ class DetectLiveByBase64Response(SdkResponse):
 
 
         :param video_result: The video_result of this DetectLiveByBase64Response.
-        :type: LiveDetectRespVideoresult
+        :type video_result: :class:`huaweicloudsdkfrs.v2.LiveDetectRespVideoresult`
         """
         self._video_result = video_result
 
@@ -72,7 +79,7 @@ class DetectLiveByBase64Response(SdkResponse):
         警告信息列表，WarningList结构见[WarningList](https://support.huaweicloud.com/api-face/face_02_0077.html)。 调用失败时无此字段
 
         :return: The warning_list of this DetectLiveByBase64Response.
-        :rtype: list[WarningList]
+        :rtype: list[:class:`huaweicloudsdkfrs.v2.WarningList`]
         """
         return self._warning_list
 
@@ -83,7 +90,7 @@ class DetectLiveByBase64Response(SdkResponse):
         警告信息列表，WarningList结构见[WarningList](https://support.huaweicloud.com/api-face/face_02_0077.html)。 调用失败时无此字段
 
         :param warning_list: The warning_list of this DetectLiveByBase64Response.
-        :type: list[WarningList]
+        :type warning_list: list[:class:`huaweicloudsdkfrs.v2.WarningList`]
         """
         self._warning_list = warning_list
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchCreatePublicipTagsRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchCreatePublicipTagsRequestBody:
     }
 
     def __init__(self, tags=None, action=None):
-        """BatchCreatePublicipTagsRequestBody - a model defined in huaweicloud sdk"""
+        """BatchCreatePublicipTagsRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param tags: 标签列表
+        :type tags: list[:class:`huaweicloudsdkeip.v2.ResourceTagOption`]
+        :param action: 操作标识  create：创建  action为create时，tag的value必选
+        :type action: str
+        """
         
         
 
@@ -50,7 +57,7 @@ class BatchCreatePublicipTagsRequestBody:
         标签列表
 
         :return: The tags of this BatchCreatePublicipTagsRequestBody.
-        :rtype: list[ResourceTagOption]
+        :rtype: list[:class:`huaweicloudsdkeip.v2.ResourceTagOption`]
         """
         return self._tags
 
@@ -61,7 +68,7 @@ class BatchCreatePublicipTagsRequestBody:
         标签列表
 
         :param tags: The tags of this BatchCreatePublicipTagsRequestBody.
-        :type: list[ResourceTagOption]
+        :type tags: list[:class:`huaweicloudsdkeip.v2.ResourceTagOption`]
         """
         self._tags = tags
 
@@ -83,7 +90,7 @@ class BatchCreatePublicipTagsRequestBody:
         操作标识  create：创建  action为create时，tag的value必选
 
         :param action: The action of this BatchCreatePublicipTagsRequestBody.
-        :type: str
+        :type action: str
         """
         self._action = action
 

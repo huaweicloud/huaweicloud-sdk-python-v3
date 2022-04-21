@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchListRposAndRtosRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchListRposAndRtosRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """BatchListRposAndRtosRequest - a model defined in huaweicloud sdk"""
+        """BatchListRposAndRtosRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 请求语言类型
+        :type x_language: str
+        :param body: Body of the BatchListRposAndRtosRequest
+        :type body: :class:`huaweicloudsdkdrs.v3.BatchQueryRpoAndRtoReq`
+        """
         
         
 
@@ -63,7 +70,7 @@ class BatchListRposAndRtosRequest:
         请求语言类型
 
         :param x_language: The x_language of this BatchListRposAndRtosRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -73,7 +80,7 @@ class BatchListRposAndRtosRequest:
 
 
         :return: The body of this BatchListRposAndRtosRequest.
-        :rtype: BatchQueryRpoAndRtoReq
+        :rtype: :class:`huaweicloudsdkdrs.v3.BatchQueryRpoAndRtoReq`
         """
         return self._body
 
@@ -83,7 +90,7 @@ class BatchListRposAndRtosRequest:
 
 
         :param body: The body of this BatchListRposAndRtosRequest.
-        :type: BatchQueryRpoAndRtoReq
+        :type body: :class:`huaweicloudsdkdrs.v3.BatchQueryRpoAndRtoReq`
         """
         self._body = body
 

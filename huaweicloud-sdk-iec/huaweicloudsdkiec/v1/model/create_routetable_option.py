@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateRoutetableOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateRoutetableOption:
     }
 
     def __init__(self, name=None, vpc_id=None, description=None):
-        """CreateRoutetableOption - a model defined in huaweicloud sdk"""
+        """CreateRoutetableOption
+
+        The model defined in huaweicloud sdk
+
+        :param name: 路由表名称  取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
+        :type name: str
+        :param vpc_id: 路由表所在的虚拟私有云ID
+        :type vpc_id: str
+        :param description: 路由表描述信息  取值范围：0-255个字符，不能包含“&lt;”和“&gt;”
+        :type description: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class CreateRoutetableOption:
         路由表名称  取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
         :param name: The name of this CreateRoutetableOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -88,7 +97,7 @@ class CreateRoutetableOption:
         路由表所在的虚拟私有云ID
 
         :param vpc_id: The vpc_id of this CreateRoutetableOption.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -110,7 +119,7 @@ class CreateRoutetableOption:
         路由表描述信息  取值范围：0-255个字符，不能包含“<”和“>”
 
         :param description: The description of this CreateRoutetableOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 

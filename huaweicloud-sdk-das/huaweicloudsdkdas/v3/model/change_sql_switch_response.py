@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ChangeSqlSwitchResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ChangeSqlSwitchResponse(SdkResponse):
     }
 
     def __init__(self, status=None):
-        """ChangeSqlSwitchResponse - a model defined in huaweicloud sdk"""
+        """ChangeSqlSwitchResponse
+
+        The model defined in huaweicloud sdk
+
+        :param status: 开关状态。取值： Enabled：已开启， Disabled：已关闭， Switching：开关切换中
+        :type status: str
+        """
         
         super(ChangeSqlSwitchResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class ChangeSqlSwitchResponse(SdkResponse):
         开关状态。取值： Enabled：已开启， Disabled：已关闭， Switching：开关切换中
 
         :param status: The status of this ChangeSqlSwitchResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 

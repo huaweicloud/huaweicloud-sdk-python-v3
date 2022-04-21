@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateInstanceParamResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class UpdateInstanceParamResponse(SdkResponse):
     }
 
     def __init__(self, node_list=None, need_restart=None, job_id=None, config_id=None, config_name=None):
-        """UpdateInstanceParamResponse - a model defined in huaweicloud sdk"""
+        """UpdateInstanceParamResponse
+
+        The model defined in huaweicloud sdk
+
+        :param node_list: 节点列表。
+        :type node_list: str
+        :param need_restart: 是否需要重启实例。
+        :type need_restart: bool
+        :param job_id: 任务id。
+        :type job_id: str
+        :param config_id: 参数组id。
+        :type config_id: str
+        :param config_name: 参数组名称。
+        :type config_name: str
+        """
         
         super(UpdateInstanceParamResponse, self).__init__()
 
@@ -78,7 +91,7 @@ class UpdateInstanceParamResponse(SdkResponse):
         节点列表。
 
         :param node_list: The node_list of this UpdateInstanceParamResponse.
-        :type: str
+        :type node_list: str
         """
         self._node_list = node_list
 
@@ -100,7 +113,7 @@ class UpdateInstanceParamResponse(SdkResponse):
         是否需要重启实例。
 
         :param need_restart: The need_restart of this UpdateInstanceParamResponse.
-        :type: bool
+        :type need_restart: bool
         """
         self._need_restart = need_restart
 
@@ -122,7 +135,7 @@ class UpdateInstanceParamResponse(SdkResponse):
         任务id。
 
         :param job_id: The job_id of this UpdateInstanceParamResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -144,7 +157,7 @@ class UpdateInstanceParamResponse(SdkResponse):
         参数组id。
 
         :param config_id: The config_id of this UpdateInstanceParamResponse.
-        :type: str
+        :type config_id: str
         """
         self._config_id = config_id
 
@@ -166,7 +179,7 @@ class UpdateInstanceParamResponse(SdkResponse):
         参数组名称。
 
         :param config_name: The config_name of this UpdateInstanceParamResponse.
-        :type: str
+        :type config_name: str
         """
         self._config_name = config_name
 

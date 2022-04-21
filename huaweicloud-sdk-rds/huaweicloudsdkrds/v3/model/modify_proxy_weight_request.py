@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ModifyProxyWeightRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ModifyProxyWeightRequest:
     }
 
     def __init__(self, master_weight=None, readonly_instances=None):
-        """ModifyProxyWeightRequest - a model defined in huaweicloud sdk"""
+        """ModifyProxyWeightRequest
+
+        The model defined in huaweicloud sdk
+
+        :param master_weight: 主实例权重，取值范围为0~1000。
+        :type master_weight: str
+        :param readonly_instances: 只读实例信息。
+        :type readonly_instances: list[:class:`huaweicloudsdkrds.v3.ProxyReadonlyInstances`]
+        """
         
         
 
@@ -61,7 +68,7 @@ class ModifyProxyWeightRequest:
         主实例权重，取值范围为0~1000。
 
         :param master_weight: The master_weight of this ModifyProxyWeightRequest.
-        :type: str
+        :type master_weight: str
         """
         self._master_weight = master_weight
 
@@ -72,7 +79,7 @@ class ModifyProxyWeightRequest:
         只读实例信息。
 
         :return: The readonly_instances of this ModifyProxyWeightRequest.
-        :rtype: list[ProxyReadonlyInstances]
+        :rtype: list[:class:`huaweicloudsdkrds.v3.ProxyReadonlyInstances`]
         """
         return self._readonly_instances
 
@@ -83,7 +90,7 @@ class ModifyProxyWeightRequest:
         只读实例信息。
 
         :param readonly_instances: The readonly_instances of this ModifyProxyWeightRequest.
-        :type: list[ProxyReadonlyInstances]
+        :type readonly_instances: list[:class:`huaweicloudsdkrds.v3.ProxyReadonlyInstances`]
         """
         self._readonly_instances = readonly_instances
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FuncMount:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class FuncMount:
     }
 
     def __init__(self, mount_type=None, mount_resource=None, mount_share_path=None, local_mount_path=None):
-        """FuncMount - a model defined in huaweicloud sdk"""
+        """FuncMount
+
+        The model defined in huaweicloud sdk
+
+        :param mount_type: 挂载类型(sfs/sfsTurbo/ecs)，func_mounts非空时必选。
+        :type mount_type: str
+        :param mount_resource: 挂载资源ID（对应云服务ID），func_mounts非空时必选。
+        :type mount_resource: str
+        :param mount_share_path: 远端挂载路径（例如192.168.0.12:/data），如果mount_type为ecs，必选。
+        :type mount_share_path: str
+        :param local_mount_path: 函数访问路径，func_mounts非空时必选。
+        :type local_mount_path: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class FuncMount:
         挂载类型(sfs/sfsTurbo/ecs)，func_mounts非空时必选。
 
         :param mount_type: The mount_type of this FuncMount.
-        :type: str
+        :type mount_type: str
         """
         self._mount_type = mount_type
 
@@ -91,7 +102,7 @@ class FuncMount:
         挂载资源ID（对应云服务ID），func_mounts非空时必选。
 
         :param mount_resource: The mount_resource of this FuncMount.
-        :type: str
+        :type mount_resource: str
         """
         self._mount_resource = mount_resource
 
@@ -113,7 +124,7 @@ class FuncMount:
         远端挂载路径（例如192.168.0.12:/data），如果mount_type为ecs，必选。
 
         :param mount_share_path: The mount_share_path of this FuncMount.
-        :type: str
+        :type mount_share_path: str
         """
         self._mount_share_path = mount_share_path
 
@@ -135,7 +146,7 @@ class FuncMount:
         函数访问路径，func_mounts非空时必选。
 
         :param local_mount_path: The local_mount_path of this FuncMount.
-        :type: str
+        :type local_mount_path: str
         """
         self._local_mount_path = local_mount_path
 

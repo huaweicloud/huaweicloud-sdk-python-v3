@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateClusterInstanceVolumeBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateClusterInstanceVolumeBody:
     }
 
     def __init__(self, volume_type=None, size=None):
-        """CreateClusterInstanceVolumeBody - a model defined in huaweicloud sdk"""
+        """CreateClusterInstanceVolumeBody
+
+        The model defined in huaweicloud sdk
+
+        :param volume_type: 卷类型。  - COMMON：普通I/O。 - HIGH：高I/O。 - ULTRAHIGH：超高I/O。
+        :type volume_type: str
+        :param size: 卷大小，必须为4和10的倍数。 单位：GB。
+        :type size: int
+        """
         
         
 
@@ -61,7 +68,7 @@ class CreateClusterInstanceVolumeBody:
         卷类型。  - COMMON：普通I/O。 - HIGH：高I/O。 - ULTRAHIGH：超高I/O。
 
         :param volume_type: The volume_type of this CreateClusterInstanceVolumeBody.
-        :type: str
+        :type volume_type: str
         """
         self._volume_type = volume_type
 
@@ -83,7 +90,7 @@ class CreateClusterInstanceVolumeBody:
         卷大小，必须为4和10的倍数。 单位：GB。
 
         :param size: The size of this CreateClusterInstanceVolumeBody.
-        :type: int
+        :type size: int
         """
         self._size = size
 

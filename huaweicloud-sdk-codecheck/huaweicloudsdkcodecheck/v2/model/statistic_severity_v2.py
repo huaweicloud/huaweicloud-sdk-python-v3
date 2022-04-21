@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StatisticSeverityV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class StatisticSeverityV2:
     }
 
     def __init__(self, critical=None, major=None, minor=None, suggestion=None):
-        """StatisticSeverityV2 - a model defined in huaweicloud sdk"""
+        """StatisticSeverityV2
+
+        The model defined in huaweicloud sdk
+
+        :param critical: 致命问题数
+        :type critical: int
+        :param major: 严重问题数
+        :type major: int
+        :param minor: 一般问题数
+        :type minor: int
+        :param suggestion: 提示问题数
+        :type suggestion: int
+        """
         
         
 
@@ -73,7 +84,7 @@ class StatisticSeverityV2:
         致命问题数
 
         :param critical: The critical of this StatisticSeverityV2.
-        :type: int
+        :type critical: int
         """
         self._critical = critical
 
@@ -95,7 +106,7 @@ class StatisticSeverityV2:
         严重问题数
 
         :param major: The major of this StatisticSeverityV2.
-        :type: int
+        :type major: int
         """
         self._major = major
 
@@ -117,7 +128,7 @@ class StatisticSeverityV2:
         一般问题数
 
         :param minor: The minor of this StatisticSeverityV2.
-        :type: int
+        :type minor: int
         """
         self._minor = minor
 
@@ -139,7 +150,7 @@ class StatisticSeverityV2:
         提示问题数
 
         :param suggestion: The suggestion of this StatisticSeverityV2.
-        :type: int
+        :type suggestion: int
         """
         self._suggestion = suggestion
 

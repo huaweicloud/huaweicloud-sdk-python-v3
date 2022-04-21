@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TokenAuthIdentity:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class TokenAuthIdentity:
     }
 
     def __init__(self, methods=None, token=None, policy=None):
-        """TokenAuthIdentity - a model defined in huaweicloud sdk"""
+        """TokenAuthIdentity
+
+        The model defined in huaweicloud sdk
+
+        :param methods: 认证方法，该字段内容为[\&quot;token\&quot;]。
+        :type methods: list[str]
+        :param token: 
+        :type token: :class:`huaweicloudsdkiam.v3.IdentityToken`
+        :param policy: 
+        :type policy: :class:`huaweicloudsdkiam.v3.ServicePolicy`
+        """
         
         
 
@@ -67,7 +76,7 @@ class TokenAuthIdentity:
         认证方法，该字段内容为[\"token\"]。
 
         :param methods: The methods of this TokenAuthIdentity.
-        :type: list[str]
+        :type methods: list[str]
         """
         self._methods = methods
 
@@ -77,7 +86,7 @@ class TokenAuthIdentity:
 
 
         :return: The token of this TokenAuthIdentity.
-        :rtype: IdentityToken
+        :rtype: :class:`huaweicloudsdkiam.v3.IdentityToken`
         """
         return self._token
 
@@ -87,7 +96,7 @@ class TokenAuthIdentity:
 
 
         :param token: The token of this TokenAuthIdentity.
-        :type: IdentityToken
+        :type token: :class:`huaweicloudsdkiam.v3.IdentityToken`
         """
         self._token = token
 
@@ -97,7 +106,7 @@ class TokenAuthIdentity:
 
 
         :return: The policy of this TokenAuthIdentity.
-        :rtype: ServicePolicy
+        :rtype: :class:`huaweicloudsdkiam.v3.ServicePolicy`
         """
         return self._policy
 
@@ -107,7 +116,7 @@ class TokenAuthIdentity:
 
 
         :param policy: The policy of this TokenAuthIdentity.
-        :type: ServicePolicy
+        :type policy: :class:`huaweicloudsdkiam.v3.ServicePolicy`
         """
         self._policy = policy
 

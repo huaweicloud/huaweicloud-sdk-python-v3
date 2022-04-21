@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExternalServiceCaseStep:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ExternalServiceCaseStep:
     }
 
     def __init__(self, expect_result=None, test_step=None):
-        """ExternalServiceCaseStep - a model defined in huaweicloud sdk"""
+        """ExternalServiceCaseStep
+
+        The model defined in huaweicloud sdk
+
+        :param expect_result: 测试用例预期结果信息，长度为[0-500]位字符
+        :type expect_result: str
+        :param test_step: 测试步骤描述信息，长度为[0-500]位字符
+        :type test_step: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class ExternalServiceCaseStep:
         测试用例预期结果信息，长度为[0-500]位字符
 
         :param expect_result: The expect_result of this ExternalServiceCaseStep.
-        :type: str
+        :type expect_result: str
         """
         self._expect_result = expect_result
 
@@ -85,7 +92,7 @@ class ExternalServiceCaseStep:
         测试步骤描述信息，长度为[0-500]位字符
 
         :param test_step: The test_step of this ExternalServiceCaseStep.
-        :type: str
+        :type test_step: str
         """
         self._test_step = test_step
 

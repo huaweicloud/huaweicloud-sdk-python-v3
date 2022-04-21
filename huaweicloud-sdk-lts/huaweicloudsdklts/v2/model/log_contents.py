@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LogContents:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class LogContents:
     }
 
     def __init__(self, content=None, line_num=None, labels=None):
-        """LogContents - a model defined in huaweicloud sdk"""
+        """LogContents
+
+        The model defined in huaweicloud sdk
+
+        :param content: 日志原数据。
+        :type content: str
+        :param line_num: 日志单行序列号。
+        :type line_num: str
+        :param labels: 该条日志包含的 labels。
+        :type labels: dict(str, str)
+        """
         
         
 
@@ -68,7 +77,7 @@ class LogContents:
         日志原数据。
 
         :param content: The content of this LogContents.
-        :type: str
+        :type content: str
         """
         self._content = content
 
@@ -90,7 +99,7 @@ class LogContents:
         日志单行序列号。
 
         :param line_num: The line_num of this LogContents.
-        :type: str
+        :type line_num: str
         """
         self._line_num = line_num
 
@@ -112,7 +121,7 @@ class LogContents:
         该条日志包含的 labels。
 
         :param labels: The labels of this LogContents.
-        :type: dict(str, str)
+        :type labels: dict(str, str)
         """
         self._labels = labels
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowGaussMySqlBackupListResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowGaussMySqlBackupListResponse(SdkResponse):
     }
 
     def __init__(self, backups=None, total_count=None):
-        """ShowGaussMySqlBackupListResponse - a model defined in huaweicloud sdk"""
+        """ShowGaussMySqlBackupListResponse
+
+        The model defined in huaweicloud sdk
+
+        :param backups: 备份信息。
+        :type backups: list[:class:`huaweicloudsdkgaussdb.v3.Backups`]
+        :param total_count: 备份文件的总数。
+        :type total_count: int
+        """
         
         super(ShowGaussMySqlBackupListResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ShowGaussMySqlBackupListResponse(SdkResponse):
         备份信息。
 
         :return: The backups of this ShowGaussMySqlBackupListResponse.
-        :rtype: list[Backups]
+        :rtype: list[:class:`huaweicloudsdkgaussdb.v3.Backups`]
         """
         return self._backups
 
@@ -63,7 +70,7 @@ class ShowGaussMySqlBackupListResponse(SdkResponse):
         备份信息。
 
         :param backups: The backups of this ShowGaussMySqlBackupListResponse.
-        :type: list[Backups]
+        :type backups: list[:class:`huaweicloudsdkgaussdb.v3.Backups`]
         """
         self._backups = backups
 
@@ -85,7 +92,7 @@ class ShowGaussMySqlBackupListResponse(SdkResponse):
         备份文件的总数。
 
         :param total_count: The total_count of this ShowGaussMySqlBackupListResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 

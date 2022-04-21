@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdatePoolRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdatePoolRequest:
     }
 
     def __init__(self, pool_id=None, body=None):
-        """UpdatePoolRequest - a model defined in huaweicloud sdk"""
+        """UpdatePoolRequest
+
+        The model defined in huaweicloud sdk
+
+        :param pool_id: 后端服务器组ID。
+        :type pool_id: str
+        :param body: Body of the UpdatePoolRequest
+        :type body: :class:`huaweicloudsdkelb.v3.UpdatePoolRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdatePoolRequest:
         后端服务器组ID。
 
         :param pool_id: The pool_id of this UpdatePoolRequest.
-        :type: str
+        :type pool_id: str
         """
         self._pool_id = pool_id
 
@@ -72,7 +79,7 @@ class UpdatePoolRequest:
 
 
         :return: The body of this UpdatePoolRequest.
-        :rtype: UpdatePoolRequestBody
+        :rtype: :class:`huaweicloudsdkelb.v3.UpdatePoolRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdatePoolRequest:
 
 
         :param body: The body of this UpdatePoolRequest.
-        :type: UpdatePoolRequestBody
+        :type body: :class:`huaweicloudsdkelb.v3.UpdatePoolRequestBody`
         """
         self._body = body
 

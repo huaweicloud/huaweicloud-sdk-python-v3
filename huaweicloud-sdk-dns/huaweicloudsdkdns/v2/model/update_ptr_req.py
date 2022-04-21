@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdatePtrReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UpdatePtrReq:
     }
 
     def __init__(self, ptrdname=None, description=None, ttl=None, tags=None):
-        """UpdatePtrReq - a model defined in huaweicloud sdk"""
+        """UpdatePtrReq
+
+        The model defined in huaweicloud sdk
+
+        :param ptrdname: PTR记录对应的域名。
+        :type ptrdname: str
+        :param description: 对PTR记录的描述。
+        :type description: str
+        :param ttl: PTR记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
+        :type ttl: int
+        :param tags: 资源标签。
+        :type tags: list[:class:`huaweicloudsdkdns.v2.Tag`]
+        """
         
         
 
@@ -72,7 +83,7 @@ class UpdatePtrReq:
         PTR记录对应的域名。
 
         :param ptrdname: The ptrdname of this UpdatePtrReq.
-        :type: str
+        :type ptrdname: str
         """
         self._ptrdname = ptrdname
 
@@ -94,7 +105,7 @@ class UpdatePtrReq:
         对PTR记录的描述。
 
         :param description: The description of this UpdatePtrReq.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -116,7 +127,7 @@ class UpdatePtrReq:
         PTR记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
 
         :param ttl: The ttl of this UpdatePtrReq.
-        :type: int
+        :type ttl: int
         """
         self._ttl = ttl
 
@@ -127,7 +138,7 @@ class UpdatePtrReq:
         资源标签。
 
         :return: The tags of this UpdatePtrReq.
-        :rtype: list[Tag]
+        :rtype: list[:class:`huaweicloudsdkdns.v2.Tag`]
         """
         return self._tags
 
@@ -138,7 +149,7 @@ class UpdatePtrReq:
         资源标签。
 
         :param tags: The tags of this UpdatePtrReq.
-        :type: list[Tag]
+        :type tags: list[:class:`huaweicloudsdkdns.v2.Tag`]
         """
         self._tags = tags
 

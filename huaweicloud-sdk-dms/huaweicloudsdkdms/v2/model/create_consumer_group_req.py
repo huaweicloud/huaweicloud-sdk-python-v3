@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateConsumerGroupReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateConsumerGroupReq:
     }
 
     def __init__(self, groups=None):
-        """CreateConsumerGroupReq - a model defined in huaweicloud sdk"""
+        """CreateConsumerGroupReq
+
+        The model defined in huaweicloud sdk
+
+        :param groups: 消费组信息。  每个队列最多能创建3个消费组，如果请求中的消费组个数超过3个，请求校验不通过，无法创建消费组。
+        :type groups: list[:class:`huaweicloudsdkdms.v2.GroupEntity`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateConsumerGroupReq:
         消费组信息。  每个队列最多能创建3个消费组，如果请求中的消费组个数超过3个，请求校验不通过，无法创建消费组。
 
         :return: The groups of this CreateConsumerGroupReq.
-        :rtype: list[GroupEntity]
+        :rtype: list[:class:`huaweicloudsdkdms.v2.GroupEntity`]
         """
         return self._groups
 
@@ -57,7 +62,7 @@ class CreateConsumerGroupReq:
         消费组信息。  每个队列最多能创建3个消费组，如果请求中的消费组个数超过3个，请求校验不通过，无法创建消费组。
 
         :param groups: The groups of this CreateConsumerGroupReq.
-        :type: list[GroupEntity]
+        :type groups: list[:class:`huaweicloudsdkdms.v2.GroupEntity`]
         """
         self._groups = groups
 

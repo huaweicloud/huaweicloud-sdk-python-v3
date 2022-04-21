@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowJobSuccessRatioResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowJobSuccessRatioResponse(SdkResponse):
     }
 
     def __init__(self, success_count=None, total_count=None, success_ratio=None):
-        """ShowJobSuccessRatioResponse - a model defined in huaweicloud sdk"""
+        """ShowJobSuccessRatioResponse
+
+        The model defined in huaweicloud sdk
+
+        :param success_count: 任务成功构建次数
+        :type success_count: int
+        :param total_count: 任务构建总次数
+        :type total_count: int
+        :param success_ratio: 任务成功率,精确到小数点后两位
+        :type success_ratio: float
+        """
         
         super(ShowJobSuccessRatioResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ShowJobSuccessRatioResponse(SdkResponse):
         任务成功构建次数
 
         :param success_count: The success_count of this ShowJobSuccessRatioResponse.
-        :type: int
+        :type success_count: int
         """
         self._success_count = success_count
 
@@ -90,7 +99,7 @@ class ShowJobSuccessRatioResponse(SdkResponse):
         任务构建总次数
 
         :param total_count: The total_count of this ShowJobSuccessRatioResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 
@@ -112,7 +121,7 @@ class ShowJobSuccessRatioResponse(SdkResponse):
         任务成功率,精确到小数点后两位
 
         :param success_ratio: The success_ratio of this ShowJobSuccessRatioResponse.
-        :type: float
+        :type success_ratio: float
         """
         self._success_ratio = success_ratio
 

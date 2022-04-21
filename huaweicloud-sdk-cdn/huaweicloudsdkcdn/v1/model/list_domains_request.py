@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDomainsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ListDomainsRequest:
     }
 
     def __init__(self, domain_name=None, business_type=None, domain_status=None, service_area=None, page_size=None, page_number=None, enterprise_project_id=None):
-        """ListDomainsRequest - a model defined in huaweicloud sdk"""
+        """ListDomainsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param domain_name: 加速域名，采用模糊匹配的方式。（长度限制为1-255字符）。
+        :type domain_name: str
+        :param business_type: 加速域名的业务类型。取值： - web（网站加速） - download（文件下载加速） - video（点播加速） - wholeSite（全站加速）
+        :type business_type: str
+        :param domain_status: 加速域名状态。取值意义： - online表示“已开启” - offline表示“已停用” - configuring表示“配置中” - configure_failed表示“配置失败” - checking表示“审核中” - check_failed表示“审核未通过” - deleting表示“删除中”。
+        :type domain_status: str
+        :param service_area: 华为云CDN提供的加速服务范围，包含： - mainland_china 中国大陆 - outside_mainland_china 中国大陆境外 - global 全球。
+        :type service_area: str
+        :param page_size: 每页的数量，取值范围1-10000，不设值时默认值为30。
+        :type page_size: int
+        :param page_number: 查询的页码。取值范围1-65535，不设值时默认值为1。
+        :type page_number: int
+        :param enterprise_project_id: 企业项目ID。该参数仅对开启了企业项目功能的用户生效，不传表示查询default项目。\&quot;ALL\&quot;表示查询所有该用户已授权项目的资源。注意：当使用子账号调用接口时，该参数必传。
+        :type enterprise_project_id: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class ListDomainsRequest:
         加速域名，采用模糊匹配的方式。（长度限制为1-255字符）。
 
         :param domain_name: The domain_name of this ListDomainsRequest.
-        :type: str
+        :type domain_name: str
         """
         self._domain_name = domain_name
 
@@ -110,7 +127,7 @@ class ListDomainsRequest:
         加速域名的业务类型。取值： - web（网站加速） - download（文件下载加速） - video（点播加速） - wholeSite（全站加速）
 
         :param business_type: The business_type of this ListDomainsRequest.
-        :type: str
+        :type business_type: str
         """
         self._business_type = business_type
 
@@ -132,7 +149,7 @@ class ListDomainsRequest:
         加速域名状态。取值意义： - online表示“已开启” - offline表示“已停用” - configuring表示“配置中” - configure_failed表示“配置失败” - checking表示“审核中” - check_failed表示“审核未通过” - deleting表示“删除中”。
 
         :param domain_status: The domain_status of this ListDomainsRequest.
-        :type: str
+        :type domain_status: str
         """
         self._domain_status = domain_status
 
@@ -154,7 +171,7 @@ class ListDomainsRequest:
         华为云CDN提供的加速服务范围，包含： - mainland_china 中国大陆 - outside_mainland_china 中国大陆境外 - global 全球。
 
         :param service_area: The service_area of this ListDomainsRequest.
-        :type: str
+        :type service_area: str
         """
         self._service_area = service_area
 
@@ -176,7 +193,7 @@ class ListDomainsRequest:
         每页的数量，取值范围1-10000，不设值时默认值为30。
 
         :param page_size: The page_size of this ListDomainsRequest.
-        :type: int
+        :type page_size: int
         """
         self._page_size = page_size
 
@@ -198,7 +215,7 @@ class ListDomainsRequest:
         查询的页码。取值范围1-65535，不设值时默认值为1。
 
         :param page_number: The page_number of this ListDomainsRequest.
-        :type: int
+        :type page_number: int
         """
         self._page_number = page_number
 
@@ -220,7 +237,7 @@ class ListDomainsRequest:
         企业项目ID。该参数仅对开启了企业项目功能的用户生效，不传表示查询default项目。\"ALL\"表示查询所有该用户已授权项目的资源。注意：当使用子账号调用接口时，该参数必传。
 
         :param enterprise_project_id: The enterprise_project_id of this ListDomainsRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StartResJobRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class StartResJobRequest:
     }
 
     def __init__(self, content_type=None, workspace_id=None, resource_id=None, job_id=None, action=None):
-        """StartResJobRequest - a model defined in huaweicloud sdk"""
+        """StartResJobRequest
+
+        The model defined in huaweicloud sdk
+
+        :param content_type: 内容类型，取值为application/json。
+        :type content_type: str
+        :param workspace_id: 工作空间id。
+        :type workspace_id: str
+        :param resource_id: 资源id，可以为数据源id或场景id。
+        :type resource_id: str
+        :param job_id: 作业id。
+        :type job_id: str
+        :param action: 动作类型： - START，启动 - STOP，停止
+        :type action: str
+        """
         
         
 
@@ -74,7 +87,7 @@ class StartResJobRequest:
         内容类型，取值为application/json。
 
         :param content_type: The content_type of this StartResJobRequest.
-        :type: str
+        :type content_type: str
         """
         self._content_type = content_type
 
@@ -96,7 +109,7 @@ class StartResJobRequest:
         工作空间id。
 
         :param workspace_id: The workspace_id of this StartResJobRequest.
-        :type: str
+        :type workspace_id: str
         """
         self._workspace_id = workspace_id
 
@@ -118,7 +131,7 @@ class StartResJobRequest:
         资源id，可以为数据源id或场景id。
 
         :param resource_id: The resource_id of this StartResJobRequest.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -140,7 +153,7 @@ class StartResJobRequest:
         作业id。
 
         :param job_id: The job_id of this StartResJobRequest.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -162,7 +175,7 @@ class StartResJobRequest:
         动作类型： - START，启动 - STOP，停止
 
         :param action: The action of this StartResJobRequest.
-        :type: str
+        :type action: str
         """
         self._action = action
 

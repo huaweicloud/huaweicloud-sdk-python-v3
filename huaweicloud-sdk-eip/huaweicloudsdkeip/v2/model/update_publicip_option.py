@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdatePublicipOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdatePublicipOption:
     }
 
     def __init__(self, port_id=None, ip_version=None, alias=None):
-        """UpdatePublicipOption - a model defined in huaweicloud sdk"""
+        """UpdatePublicipOption
+
+        The model defined in huaweicloud sdk
+
+        :param port_id: 功能说明：端口id  约束：必须是存在的端口id，如果不带该参数或者值为空时为解除绑定弹性公网IP，如果该端口不存在或端口已绑定弹性公网IP则会提示出错。  和ip_version字段互斥，不能同时更新。
+        :type port_id: str
+        :param ip_version: 功能说明：IP版本信息  取值范围：4和6  4：IPv4  6：IPv6  约束：必须是系统支持的IP版本类型，和port_id互斥，不能同时更新。
+        :type ip_version: int
+        :param alias: 功能说明：弹性公网IP名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
+        :type alias: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class UpdatePublicipOption:
         功能说明：端口id  约束：必须是存在的端口id，如果不带该参数或者值为空时为解除绑定弹性公网IP，如果该端口不存在或端口已绑定弹性公网IP则会提示出错。  和ip_version字段互斥，不能同时更新。
 
         :param port_id: The port_id of this UpdatePublicipOption.
-        :type: str
+        :type port_id: str
         """
         self._port_id = port_id
 
@@ -90,7 +99,7 @@ class UpdatePublicipOption:
         功能说明：IP版本信息  取值范围：4和6  4：IPv4  6：IPv6  约束：必须是系统支持的IP版本类型，和port_id互斥，不能同时更新。
 
         :param ip_version: The ip_version of this UpdatePublicipOption.
-        :type: int
+        :type ip_version: int
         """
         self._ip_version = ip_version
 
@@ -112,7 +121,7 @@ class UpdatePublicipOption:
         功能说明：弹性公网IP名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
         :param alias: The alias of this UpdatePublicipOption.
-        :type: str
+        :type alias: str
         """
         self._alias = alias
 

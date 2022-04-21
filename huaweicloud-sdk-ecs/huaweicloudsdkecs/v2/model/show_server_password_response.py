@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowServerPasswordResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowServerPasswordResponse(SdkResponse):
     }
 
     def __init__(self, password=None):
-        """ShowServerPasswordResponse - a model defined in huaweicloud sdk"""
+        """ShowServerPasswordResponse
+
+        The model defined in huaweicloud sdk
+
+        :param password: 加密后的密码。
+        :type password: str
+        """
         
         super(ShowServerPasswordResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class ShowServerPasswordResponse(SdkResponse):
         加密后的密码。
 
         :param password: The password of this ShowServerPasswordResponse.
-        :type: str
+        :type password: str
         """
         self._password = password
 

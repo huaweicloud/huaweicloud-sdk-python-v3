@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteAlarmTemplateRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteAlarmTemplateRequest:
     }
 
     def __init__(self, template_id=None):
-        """DeleteAlarmTemplateRequest - a model defined in huaweicloud sdk"""
+        """DeleteAlarmTemplateRequest
+
+        The model defined in huaweicloud sdk
+
+        :param template_id: 需要删除的自定义告警模板ID。
+        :type template_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteAlarmTemplateRequest:
         需要删除的自定义告警模板ID。
 
         :param template_id: The template_id of this DeleteAlarmTemplateRequest.
-        :type: str
+        :type template_id: str
         """
         self._template_id = template_id
 

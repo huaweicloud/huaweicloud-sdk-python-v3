@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListImagesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListImagesResponse(SdkResponse):
     }
 
     def __init__(self, images=None, total=None):
-        """ListImagesResponse - a model defined in huaweicloud sdk"""
+        """ListImagesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param images: 查询返回的镜像列表。
+        :type images: list[:class:`huaweicloudsdkiec.v1.ImageList`]
+        :param total: 列表元素个数，分页查询时返回总数。
+        :type total: int
+        """
         
         super(ListImagesResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListImagesResponse(SdkResponse):
         查询返回的镜像列表。
 
         :return: The images of this ListImagesResponse.
-        :rtype: list[ImageList]
+        :rtype: list[:class:`huaweicloudsdkiec.v1.ImageList`]
         """
         return self._images
 
@@ -63,7 +70,7 @@ class ListImagesResponse(SdkResponse):
         查询返回的镜像列表。
 
         :param images: The images of this ListImagesResponse.
-        :type: list[ImageList]
+        :type images: list[:class:`huaweicloudsdkiec.v1.ImageList`]
         """
         self._images = images
 
@@ -85,7 +92,7 @@ class ListImagesResponse(SdkResponse):
         列表元素个数，分页查询时返回总数。
 
         :param total: The total of this ListImagesResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 

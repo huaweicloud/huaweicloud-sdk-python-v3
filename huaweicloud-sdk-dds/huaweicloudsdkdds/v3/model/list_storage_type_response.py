@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListStorageTypeResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListStorageTypeResponse(SdkResponse):
     }
 
     def __init__(self, storage_type=None, dss_pool_info=None):
-        """ListStorageTypeResponse - a model defined in huaweicloud sdk"""
+        """ListStorageTypeResponse
+
+        The model defined in huaweicloud sdk
+
+        :param storage_type: 实例磁盘类型信息。
+        :type storage_type: list[:class:`huaweicloudsdkdds.v3.Storage`]
+        :param dss_pool_info: 实例专属存储信息。
+        :type dss_pool_info: list[:class:`huaweicloudsdkdds.v3.DssPoolInfo`]
+        """
         
         super(ListStorageTypeResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListStorageTypeResponse(SdkResponse):
         实例磁盘类型信息。
 
         :return: The storage_type of this ListStorageTypeResponse.
-        :rtype: list[Storage]
+        :rtype: list[:class:`huaweicloudsdkdds.v3.Storage`]
         """
         return self._storage_type
 
@@ -63,7 +70,7 @@ class ListStorageTypeResponse(SdkResponse):
         实例磁盘类型信息。
 
         :param storage_type: The storage_type of this ListStorageTypeResponse.
-        :type: list[Storage]
+        :type storage_type: list[:class:`huaweicloudsdkdds.v3.Storage`]
         """
         self._storage_type = storage_type
 
@@ -74,7 +81,7 @@ class ListStorageTypeResponse(SdkResponse):
         实例专属存储信息。
 
         :return: The dss_pool_info of this ListStorageTypeResponse.
-        :rtype: list[DssPoolInfo]
+        :rtype: list[:class:`huaweicloudsdkdds.v3.DssPoolInfo`]
         """
         return self._dss_pool_info
 
@@ -85,7 +92,7 @@ class ListStorageTypeResponse(SdkResponse):
         实例专属存储信息。
 
         :param dss_pool_info: The dss_pool_info of this ListStorageTypeResponse.
-        :type: list[DssPoolInfo]
+        :type dss_pool_info: list[:class:`huaweicloudsdkdds.v3.DssPoolInfo`]
         """
         self._dss_pool_info = dss_pool_info
 

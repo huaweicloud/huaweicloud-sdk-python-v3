@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTemplateGroupResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListTemplateGroupResponse(SdkResponse):
     }
 
     def __init__(self, template_group_list=None, total=None, error_code=None, error_msg=None):
-        """ListTemplateGroupResponse - a model defined in huaweicloud sdk"""
+        """ListTemplateGroupResponse
+
+        The model defined in huaweicloud sdk
+
+        :param template_group_list: 模板组信息&lt;br/&gt; 
+        :type template_group_list: list[:class:`huaweicloudsdkvod.v1.TemplateGroup`]
+        :param total: 总记录条数&lt;br/&gt; 
+        :type total: int
+        :param error_code: 错误码&lt;br/&gt; 
+        :type error_code: str
+        :param error_msg: 错误描述&lt;br/&gt; 
+        :type error_msg: str
+        """
         
         super(ListTemplateGroupResponse, self).__init__()
 
@@ -62,7 +73,7 @@ class ListTemplateGroupResponse(SdkResponse):
         模板组信息<br/> 
 
         :return: The template_group_list of this ListTemplateGroupResponse.
-        :rtype: list[TemplateGroup]
+        :rtype: list[:class:`huaweicloudsdkvod.v1.TemplateGroup`]
         """
         return self._template_group_list
 
@@ -73,7 +84,7 @@ class ListTemplateGroupResponse(SdkResponse):
         模板组信息<br/> 
 
         :param template_group_list: The template_group_list of this ListTemplateGroupResponse.
-        :type: list[TemplateGroup]
+        :type template_group_list: list[:class:`huaweicloudsdkvod.v1.TemplateGroup`]
         """
         self._template_group_list = template_group_list
 
@@ -95,7 +106,7 @@ class ListTemplateGroupResponse(SdkResponse):
         总记录条数<br/> 
 
         :param total: The total of this ListTemplateGroupResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -117,7 +128,7 @@ class ListTemplateGroupResponse(SdkResponse):
         错误码<br/> 
 
         :param error_code: The error_code of this ListTemplateGroupResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -139,7 +150,7 @@ class ListTemplateGroupResponse(SdkResponse):
         错误描述<br/> 
 
         :param error_msg: The error_msg of this ListTemplateGroupResponse.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 

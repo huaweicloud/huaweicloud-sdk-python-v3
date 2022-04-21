@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SendMessagesRespMessages:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class SendMessagesRespMessages:
     }
 
     def __init__(self, error=None, error_code=None, state=None, id=None):
-        """SendMessagesRespMessages - a model defined in huaweicloud sdk"""
+        """SendMessagesRespMessages
+
+        The model defined in huaweicloud sdk
+
+        :param error: 错误描述信息。
+        :type error: str
+        :param error_code: 错误码。
+        :type error_code: int
+        :param state: 发送消息的状态。 0：表示发送成功。 1：表示发送失败，失败原因参考对应的error和error_code。 
+        :type state: int
+        :param id: 消息ID。
+        :type id: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class SendMessagesRespMessages:
         错误描述信息。
 
         :param error: The error of this SendMessagesRespMessages.
-        :type: str
+        :type error: str
         """
         self._error = error
 
@@ -95,7 +106,7 @@ class SendMessagesRespMessages:
         错误码。
 
         :param error_code: The error_code of this SendMessagesRespMessages.
-        :type: int
+        :type error_code: int
         """
         self._error_code = error_code
 
@@ -117,7 +128,7 @@ class SendMessagesRespMessages:
         发送消息的状态。 0：表示发送成功。 1：表示发送失败，失败原因参考对应的error和error_code。 
 
         :param state: The state of this SendMessagesRespMessages.
-        :type: int
+        :type state: int
         """
         self._state = state
 
@@ -139,7 +150,7 @@ class SendMessagesRespMessages:
         消息ID。
 
         :param id: The id of this SendMessagesRespMessages.
-        :type: str
+        :type id: str
         """
         self._id = id
 

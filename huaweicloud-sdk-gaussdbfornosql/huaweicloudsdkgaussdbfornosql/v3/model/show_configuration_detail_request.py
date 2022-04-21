@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowConfigurationDetailRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowConfigurationDetailRequest:
     }
 
     def __init__(self, config_id=None):
-        """ShowConfigurationDetailRequest - a model defined in huaweicloud sdk"""
+        """ShowConfigurationDetailRequest
+
+        The model defined in huaweicloud sdk
+
+        :param config_id: 参数模板ID。
+        :type config_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowConfigurationDetailRequest:
         参数模板ID。
 
         :param config_id: The config_id of this ShowConfigurationDetailRequest.
-        :type: str
+        :type config_id: str
         """
         self._config_id = config_id
 

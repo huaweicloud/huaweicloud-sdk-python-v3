@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteAgencyRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteAgencyRequest:
     }
 
     def __init__(self, agency_id=None):
-        """DeleteAgencyRequest - a model defined in huaweicloud sdk"""
+        """DeleteAgencyRequest
+
+        The model defined in huaweicloud sdk
+
+        :param agency_id: 待删除的委托ID，获取方式请参见：[获取委托名、委托ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
+        :type agency_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteAgencyRequest:
         待删除的委托ID，获取方式请参见：[获取委托名、委托ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param agency_id: The agency_id of this DeleteAgencyRequest.
-        :type: str
+        :type agency_id: str
         """
         self._agency_id = agency_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SatisfactionDimensionSimpleInfoV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class SatisfactionDimensionSimpleInfoV2:
     }
 
     def __init__(self, value=None, satisfaction_id=None, satisfaction_name=None, satisfaction_desc=None, per_value=None, sat_category_id=None):
-        """SatisfactionDimensionSimpleInfoV2 - a model defined in huaweicloud sdk"""
+        """SatisfactionDimensionSimpleInfoV2
+
+        The model defined in huaweicloud sdk
+
+        :param value: 总的分数
+        :type value: int
+        :param satisfaction_id: 满意度id
+        :type satisfaction_id: int
+        :param satisfaction_name: 满意度名称
+        :type satisfaction_name: str
+        :param satisfaction_desc: 满意度描述
+        :type satisfaction_desc: str
+        :param per_value: 每格的分数
+        :type per_value: int
+        :param sat_category_id: 满意度分类id
+        :type sat_category_id: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class SatisfactionDimensionSimpleInfoV2:
         总的分数
 
         :param value: The value of this SatisfactionDimensionSimpleInfoV2.
-        :type: int
+        :type value: int
         """
         self._value = value
 
@@ -105,7 +120,7 @@ class SatisfactionDimensionSimpleInfoV2:
         满意度id
 
         :param satisfaction_id: The satisfaction_id of this SatisfactionDimensionSimpleInfoV2.
-        :type: int
+        :type satisfaction_id: int
         """
         self._satisfaction_id = satisfaction_id
 
@@ -127,7 +142,7 @@ class SatisfactionDimensionSimpleInfoV2:
         满意度名称
 
         :param satisfaction_name: The satisfaction_name of this SatisfactionDimensionSimpleInfoV2.
-        :type: str
+        :type satisfaction_name: str
         """
         self._satisfaction_name = satisfaction_name
 
@@ -149,7 +164,7 @@ class SatisfactionDimensionSimpleInfoV2:
         满意度描述
 
         :param satisfaction_desc: The satisfaction_desc of this SatisfactionDimensionSimpleInfoV2.
-        :type: str
+        :type satisfaction_desc: str
         """
         self._satisfaction_desc = satisfaction_desc
 
@@ -171,7 +186,7 @@ class SatisfactionDimensionSimpleInfoV2:
         每格的分数
 
         :param per_value: The per_value of this SatisfactionDimensionSimpleInfoV2.
-        :type: int
+        :type per_value: int
         """
         self._per_value = per_value
 
@@ -193,7 +208,7 @@ class SatisfactionDimensionSimpleInfoV2:
         满意度分类id
 
         :param sat_category_id: The sat_category_id of this SatisfactionDimensionSimpleInfoV2.
-        :type: str
+        :type sat_category_id: str
         """
         self._sat_category_id = sat_category_id
 

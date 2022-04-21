@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ComponentView:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class ComponentView:
     }
 
     def __init__(self, id=None, application_id=None, name=None, runtime=None, category=None, sub_category=None, description=None, status=None, source=None, creator=None, create_time=None, update_time=None):
-        """ComponentView - a model defined in huaweicloud sdk"""
+        """ComponentView
+
+        The model defined in huaweicloud sdk
+
+        :param id: 组件ID。
+        :type id: str
+        :param application_id: 应用ID。
+        :type application_id: str
+        :param name: 应用组件名称。
+        :type name: str
+        :param runtime: 
+        :type runtime: :class:`huaweicloudsdkservicestage.v2.RuntimeType`
+        :param category: 
+        :type category: :class:`huaweicloudsdkservicestage.v2.ComponentCategory`
+        :param sub_category: 
+        :type sub_category: :class:`huaweicloudsdkservicestage.v2.ComponentSubCategory`
+        :param description: 组件描述。
+        :type description: str
+        :param status: 取值0或1。  0：表示正常状态。  1：表示正在删除。 
+        :type status: int
+        :param source: 
+        :type source: :class:`huaweicloudsdkservicestage.v2.SourceObject`
+        :param creator: 创建人。
+        :type creator: str
+        :param create_time: 创建时间。
+        :type create_time: int
+        :param update_time: 修改时间。
+        :type update_time: int
+        """
         
         
 
@@ -113,7 +140,7 @@ class ComponentView:
         组件ID。
 
         :param id: The id of this ComponentView.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -135,7 +162,7 @@ class ComponentView:
         应用ID。
 
         :param application_id: The application_id of this ComponentView.
-        :type: str
+        :type application_id: str
         """
         self._application_id = application_id
 
@@ -157,7 +184,7 @@ class ComponentView:
         应用组件名称。
 
         :param name: The name of this ComponentView.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -167,7 +194,7 @@ class ComponentView:
 
 
         :return: The runtime of this ComponentView.
-        :rtype: RuntimeType
+        :rtype: :class:`huaweicloudsdkservicestage.v2.RuntimeType`
         """
         return self._runtime
 
@@ -177,7 +204,7 @@ class ComponentView:
 
 
         :param runtime: The runtime of this ComponentView.
-        :type: RuntimeType
+        :type runtime: :class:`huaweicloudsdkservicestage.v2.RuntimeType`
         """
         self._runtime = runtime
 
@@ -187,7 +214,7 @@ class ComponentView:
 
 
         :return: The category of this ComponentView.
-        :rtype: ComponentCategory
+        :rtype: :class:`huaweicloudsdkservicestage.v2.ComponentCategory`
         """
         return self._category
 
@@ -197,7 +224,7 @@ class ComponentView:
 
 
         :param category: The category of this ComponentView.
-        :type: ComponentCategory
+        :type category: :class:`huaweicloudsdkservicestage.v2.ComponentCategory`
         """
         self._category = category
 
@@ -207,7 +234,7 @@ class ComponentView:
 
 
         :return: The sub_category of this ComponentView.
-        :rtype: ComponentSubCategory
+        :rtype: :class:`huaweicloudsdkservicestage.v2.ComponentSubCategory`
         """
         return self._sub_category
 
@@ -217,7 +244,7 @@ class ComponentView:
 
 
         :param sub_category: The sub_category of this ComponentView.
-        :type: ComponentSubCategory
+        :type sub_category: :class:`huaweicloudsdkservicestage.v2.ComponentSubCategory`
         """
         self._sub_category = sub_category
 
@@ -239,7 +266,7 @@ class ComponentView:
         组件描述。
 
         :param description: The description of this ComponentView.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -261,7 +288,7 @@ class ComponentView:
         取值0或1。  0：表示正常状态。  1：表示正在删除。 
 
         :param status: The status of this ComponentView.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -271,7 +298,7 @@ class ComponentView:
 
 
         :return: The source of this ComponentView.
-        :rtype: SourceObject
+        :rtype: :class:`huaweicloudsdkservicestage.v2.SourceObject`
         """
         return self._source
 
@@ -281,7 +308,7 @@ class ComponentView:
 
 
         :param source: The source of this ComponentView.
-        :type: SourceObject
+        :type source: :class:`huaweicloudsdkservicestage.v2.SourceObject`
         """
         self._source = source
 
@@ -303,7 +330,7 @@ class ComponentView:
         创建人。
 
         :param creator: The creator of this ComponentView.
-        :type: str
+        :type creator: str
         """
         self._creator = creator
 
@@ -325,7 +352,7 @@ class ComponentView:
         创建时间。
 
         :param create_time: The create_time of this ComponentView.
-        :type: int
+        :type create_time: int
         """
         self._create_time = create_time
 
@@ -347,7 +374,7 @@ class ComponentView:
         修改时间。
 
         :param update_time: The update_time of this ComponentView.
-        :type: int
+        :type update_time: int
         """
         self._update_time = update_time
 

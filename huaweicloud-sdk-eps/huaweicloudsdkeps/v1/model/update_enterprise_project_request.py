@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateEnterpriseProjectRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateEnterpriseProjectRequest:
     }
 
     def __init__(self, enterprise_project_id=None, body=None):
-        """UpdateEnterpriseProjectRequest - a model defined in huaweicloud sdk"""
+        """UpdateEnterpriseProjectRequest
+
+        The model defined in huaweicloud sdk
+
+        :param enterprise_project_id: 企业项目ID，不能为0。 可以通过查询企业项目列表接口获取。
+        :type enterprise_project_id: str
+        :param body: Body of the UpdateEnterpriseProjectRequest
+        :type body: :class:`huaweicloudsdkeps.v1.EnterpriseProject`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateEnterpriseProjectRequest:
         企业项目ID，不能为0。 可以通过查询企业项目列表接口获取。
 
         :param enterprise_project_id: The enterprise_project_id of this UpdateEnterpriseProjectRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -72,7 +79,7 @@ class UpdateEnterpriseProjectRequest:
 
 
         :return: The body of this UpdateEnterpriseProjectRequest.
-        :rtype: EnterpriseProject
+        :rtype: :class:`huaweicloudsdkeps.v1.EnterpriseProject`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateEnterpriseProjectRequest:
 
 
         :param body: The body of this UpdateEnterpriseProjectRequest.
-        :type: EnterpriseProject
+        :type body: :class:`huaweicloudsdkeps.v1.EnterpriseProject`
         """
         self._body = body
 

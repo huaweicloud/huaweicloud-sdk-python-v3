@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateClusterScalingResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateClusterScalingResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """UpdateClusterScalingResponse - a model defined in huaweicloud sdk"""
+        """UpdateClusterScalingResponse
+
+        The model defined in huaweicloud sdk
+
+        :param result: 操作结果。 - succeeded：操作成功 - 操作失败时返回的错误码信息如[错误码](https://support.huaweicloud.com/api-mrs/ErrorCode.html)所示。
+        :type result: str
+        """
         
         super(UpdateClusterScalingResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class UpdateClusterScalingResponse(SdkResponse):
         操作结果。 - succeeded：操作成功 - 操作失败时返回的错误码信息如[错误码](https://support.huaweicloud.com/api-mrs/ErrorCode.html)所示。
 
         :param result: The result of this UpdateClusterScalingResponse.
-        :type: str
+        :type result: str
         """
         self._result = result
 

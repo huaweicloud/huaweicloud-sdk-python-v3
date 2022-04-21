@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowCeshierarchyRespNodes:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowCeshierarchyRespNodes:
     }
 
     def __init__(self, name=None):
-        """ShowCeshierarchyRespNodes - a model defined in huaweicloud sdk"""
+        """ShowCeshierarchyRespNodes
+
+        The model defined in huaweicloud sdk
+
+        :param name: 节点名称。
+        :type name: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class ShowCeshierarchyRespNodes:
         节点名称。
 
         :param name: The name of this ShowCeshierarchyRespNodes.
-        :type: str
+        :type name: str
         """
         self._name = name
 

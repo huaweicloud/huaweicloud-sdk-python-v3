@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DrillServerParams:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DrillServerParams:
     }
 
     def __init__(self, protected_instance=None, drill_server_id=None):
-        """DrillServerParams - a model defined in huaweicloud sdk"""
+        """DrillServerParams
+
+        The model defined in huaweicloud sdk
+
+        :param protected_instance: 演练云服务器对应的保护实例ID。
+        :type protected_instance: str
+        :param drill_server_id: 演练云服务器ID。
+        :type drill_server_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class DrillServerParams:
         演练云服务器对应的保护实例ID。
 
         :param protected_instance: The protected_instance of this DrillServerParams.
-        :type: str
+        :type protected_instance: str
         """
         self._protected_instance = protected_instance
 
@@ -83,7 +90,7 @@ class DrillServerParams:
         演练云服务器ID。
 
         :param drill_server_id: The drill_server_id of this DrillServerParams.
-        :type: str
+        :type drill_server_id: str
         """
         self._drill_server_id = drill_server_id
 

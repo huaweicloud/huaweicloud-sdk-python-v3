@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchDeleteTestCaseResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class BatchDeleteTestCaseResponse(SdkResponse):
     }
 
     def __init__(self, error_code=None, error_msg=None, error_detail=None):
-        """BatchDeleteTestCaseResponse - a model defined in huaweicloud sdk"""
+        """BatchDeleteTestCaseResponse
+
+        The model defined in huaweicloud sdk
+
+        :param error_code: 接口调用失败错误码
+        :type error_code: str
+        :param error_msg: 接口调用失败错误信息
+        :type error_msg: str
+        :param error_detail: 
+        :type error_detail: :class:`huaweicloudsdkcloudtest.v1.ErrorDetailInfo`
+        """
         
         super(BatchDeleteTestCaseResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class BatchDeleteTestCaseResponse(SdkResponse):
         接口调用失败错误码
 
         :param error_code: The error_code of this BatchDeleteTestCaseResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -90,7 +99,7 @@ class BatchDeleteTestCaseResponse(SdkResponse):
         接口调用失败错误信息
 
         :param error_msg: The error_msg of this BatchDeleteTestCaseResponse.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 
@@ -100,7 +109,7 @@ class BatchDeleteTestCaseResponse(SdkResponse):
 
 
         :return: The error_detail of this BatchDeleteTestCaseResponse.
-        :rtype: ErrorDetailInfo
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ErrorDetailInfo`
         """
         return self._error_detail
 
@@ -110,7 +119,7 @@ class BatchDeleteTestCaseResponse(SdkResponse):
 
 
         :param error_detail: The error_detail of this BatchDeleteTestCaseResponse.
-        :type: ErrorDetailInfo
+        :type error_detail: :class:`huaweicloudsdkcloudtest.v1.ErrorDetailInfo`
         """
         self._error_detail = error_detail
 

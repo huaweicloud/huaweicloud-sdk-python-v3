@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ClusterDetailFailedReasons:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ClusterDetailFailedReasons:
     }
 
     def __init__(self, error_code=None, error_msg=None):
-        """ClusterDetailFailedReasons - a model defined in huaweicloud sdk"""
+        """ClusterDetailFailedReasons
+
+        The model defined in huaweicloud sdk
+
+        :param error_code: 错误码。  - CSS.6000：表示集群创建失败。 - CSS.6001：表示集群扩容失败。 - CSS.6002：表示集群重启失败。 - CSS.6004：表示集群节点创建失败。 - CSS.6005：表示服务初始化失败。
+        :type error_code: str
+        :param error_msg: 详细错误信息。
+        :type error_msg: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class ClusterDetailFailedReasons:
         错误码。  - CSS.6000：表示集群创建失败。 - CSS.6001：表示集群扩容失败。 - CSS.6002：表示集群重启失败。 - CSS.6004：表示集群节点创建失败。 - CSS.6005：表示服务初始化失败。
 
         :param error_code: The error_code of this ClusterDetailFailedReasons.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -85,7 +92,7 @@ class ClusterDetailFailedReasons:
         详细错误信息。
 
         :param error_msg: The error_msg of this ClusterDetailFailedReasons.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GlanceUpdateImageRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class GlanceUpdateImageRequest:
     }
 
     def __init__(self, image_id=None, body=None):
-        """GlanceUpdateImageRequest - a model defined in huaweicloud sdk"""
+        """GlanceUpdateImageRequest
+
+        The model defined in huaweicloud sdk
+
+        :param image_id: 镜像ID
+        :type image_id: str
+        :param body: Body of the GlanceUpdateImageRequest
+        :type body: list[:class:`huaweicloudsdkims.v2.GlanceUpdateImageRequestBody`]
+        """
         
         
 
@@ -62,7 +69,7 @@ class GlanceUpdateImageRequest:
         镜像ID
 
         :param image_id: The image_id of this GlanceUpdateImageRequest.
-        :type: str
+        :type image_id: str
         """
         self._image_id = image_id
 
@@ -72,7 +79,7 @@ class GlanceUpdateImageRequest:
 
 
         :return: The body of this GlanceUpdateImageRequest.
-        :rtype: list[GlanceUpdateImageRequestBody]
+        :rtype: list[:class:`huaweicloudsdkims.v2.GlanceUpdateImageRequestBody`]
         """
         return self._body
 
@@ -82,7 +89,7 @@ class GlanceUpdateImageRequest:
 
 
         :param body: The body of this GlanceUpdateImageRequest.
-        :type: list[GlanceUpdateImageRequestBody]
+        :type body: list[:class:`huaweicloudsdkims.v2.GlanceUpdateImageRequestBody`]
         """
         self._body = body
 

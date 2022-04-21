@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ContainerCIDR:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ContainerCIDR:
     }
 
     def __init__(self, cidr=None):
-        """ContainerCIDR - a model defined in huaweicloud sdk"""
+        """ContainerCIDR
+
+        The model defined in huaweicloud sdk
+
+        :param cidr: 容器网络网段，建议使用网段10.0.0.0/12~19，172.16.0.0/16~19，192.168.0.0/16~19。
+        :type cidr: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ContainerCIDR:
         容器网络网段，建议使用网段10.0.0.0/12~19，172.16.0.0/16~19，192.168.0.0/16~19。
 
         :param cidr: The cidr of this ContainerCIDR.
-        :type: str
+        :type cidr: str
         """
         self._cidr = cidr
 

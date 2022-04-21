@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VpcPeering:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class VpcPeering:
     }
 
     def __init__(self, id=None, name=None, status=None, request_vpc_info=None, accept_vpc_info=None, created_at=None, updated_at=None, description=None):
-        """VpcPeering - a model defined in huaweicloud sdk"""
+        """VpcPeering
+
+        The model defined in huaweicloud sdk
+
+        :param id: 对等连接ID
+        :type id: str
+        :param name: 功能说明：对等连接名称 取值范围：支持1~64个字符
+        :type name: str
+        :param status: 功能说明：对等连接状态 取值范围： - PENDING_ACCEPTANCE：等待接受 - REJECTED：已拒绝。 - EXPIRED：已过期。 - DELETED：已删除。 - ACTIVE：活动的。
+        :type status: str
+        :param request_vpc_info: 
+        :type request_vpc_info: :class:`huaweicloudsdkvpc.v2.VpcInfo`
+        :param accept_vpc_info: 
+        :type accept_vpc_info: :class:`huaweicloudsdkvpc.v2.VpcInfo`
+        :param created_at: 功能说明：资源创建UTC时间 格式：yyyy-MM-ddTHH:mm:ss
+        :type created_at: datetime
+        :param updated_at: 功能说明：资源更新UTC时间 格式：yyyy-MM-ddTHH:mm:ss
+        :type updated_at: datetime
+        :param description: 对等连接描述
+        :type description: str
+        """
         
         
 
@@ -85,7 +104,7 @@ class VpcPeering:
         对等连接ID
 
         :param id: The id of this VpcPeering.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -107,7 +126,7 @@ class VpcPeering:
         功能说明：对等连接名称 取值范围：支持1~64个字符
 
         :param name: The name of this VpcPeering.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -129,7 +148,7 @@ class VpcPeering:
         功能说明：对等连接状态 取值范围： - PENDING_ACCEPTANCE：等待接受 - REJECTED：已拒绝。 - EXPIRED：已过期。 - DELETED：已删除。 - ACTIVE：活动的。
 
         :param status: The status of this VpcPeering.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -139,7 +158,7 @@ class VpcPeering:
 
 
         :return: The request_vpc_info of this VpcPeering.
-        :rtype: VpcInfo
+        :rtype: :class:`huaweicloudsdkvpc.v2.VpcInfo`
         """
         return self._request_vpc_info
 
@@ -149,7 +168,7 @@ class VpcPeering:
 
 
         :param request_vpc_info: The request_vpc_info of this VpcPeering.
-        :type: VpcInfo
+        :type request_vpc_info: :class:`huaweicloudsdkvpc.v2.VpcInfo`
         """
         self._request_vpc_info = request_vpc_info
 
@@ -159,7 +178,7 @@ class VpcPeering:
 
 
         :return: The accept_vpc_info of this VpcPeering.
-        :rtype: VpcInfo
+        :rtype: :class:`huaweicloudsdkvpc.v2.VpcInfo`
         """
         return self._accept_vpc_info
 
@@ -169,7 +188,7 @@ class VpcPeering:
 
 
         :param accept_vpc_info: The accept_vpc_info of this VpcPeering.
-        :type: VpcInfo
+        :type accept_vpc_info: :class:`huaweicloudsdkvpc.v2.VpcInfo`
         """
         self._accept_vpc_info = accept_vpc_info
 
@@ -191,7 +210,7 @@ class VpcPeering:
         功能说明：资源创建UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 
         :param created_at: The created_at of this VpcPeering.
-        :type: datetime
+        :type created_at: datetime
         """
         self._created_at = created_at
 
@@ -213,7 +232,7 @@ class VpcPeering:
         功能说明：资源更新UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 
         :param updated_at: The updated_at of this VpcPeering.
-        :type: datetime
+        :type updated_at: datetime
         """
         self._updated_at = updated_at
 
@@ -235,7 +254,7 @@ class VpcPeering:
         对等连接描述
 
         :param description: The description of this VpcPeering.
-        :type: str
+        :type description: str
         """
         self._description = description
 

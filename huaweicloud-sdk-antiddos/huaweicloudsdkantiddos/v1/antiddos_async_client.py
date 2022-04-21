@@ -52,21 +52,17 @@ class AntiDDoSAsyncClient(Client):
         """配置Anti-DDoS默认防护策略
 
         配置用户的默认防护策略。配置防护策略后，新购买的资源在自动开启防护时，会按照该默认防护策略进行配置。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateDefaultConfigRequest request
-        :return: CreateDefaultConfigResponse
+        :param request: Request instance for CreateDefaultConfig
+        :type request: :class:`huaweicloudsdkantiddos.v1.CreateDefaultConfigRequest`
+        :rtype: :class:`huaweicloudsdkantiddos.v1.CreateDefaultConfigResponse`
         """
         return self.create_default_config_with_http_info(request)
 
     def create_default_config_with_http_info(self, request):
-        """配置Anti-DDoS默认防护策略
-
-        配置用户的默认防护策略。配置防护策略后，新购买的资源在自动开启防护时，会按照该默认防护策略进行配置。
-
-        :param CreateDefaultConfigRequest request
-        :return: CreateDefaultConfigResponse
-        """
-
         all_params = ['create_default_config_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -110,26 +106,21 @@ class AntiDDoSAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_default_config_async(self, request):
         """删除Ani-DDoS默认防护策略
 
         删除用户配置的默认防护策略。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteDefaultConfigRequest request
-        :return: DeleteDefaultConfigResponse
+        :param request: Request instance for DeleteDefaultConfig
+        :type request: :class:`huaweicloudsdkantiddos.v1.DeleteDefaultConfigRequest`
+        :rtype: :class:`huaweicloudsdkantiddos.v1.DeleteDefaultConfigResponse`
         """
         return self.delete_default_config_with_http_info(request)
 
     def delete_default_config_with_http_info(self, request):
-        """删除Ani-DDoS默认防护策略
-
-        删除用户配置的默认防护策略。
-
-        :param DeleteDefaultConfigRequest request
-        :return: DeleteDefaultConfigResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -171,26 +162,21 @@ class AntiDDoSAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_alert_config_async(self, request):
         """查询告警配置信息
 
         查询用户配置信息，用户可以通过此接口查询是否接收某类告警，同时可以配置是手机短信还是电子邮件接收告警信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowAlertConfigRequest request
-        :return: ShowAlertConfigResponse
+        :param request: Request instance for ShowAlertConfig
+        :type request: :class:`huaweicloudsdkantiddos.v1.ShowAlertConfigRequest`
+        :rtype: :class:`huaweicloudsdkantiddos.v1.ShowAlertConfigResponse`
         """
         return self.show_alert_config_with_http_info(request)
 
     def show_alert_config_with_http_info(self, request):
-        """查询告警配置信息
-
-        查询用户配置信息，用户可以通过此接口查询是否接收某类告警，同时可以配置是手机短信还是电子邮件接收告警信息。
-
-        :param ShowAlertConfigRequest request
-        :return: ShowAlertConfigResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -232,26 +218,21 @@ class AntiDDoSAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_default_config_async(self, request):
         """查询Ani-DDoS默认防护策略
 
         查询用户配置的默认防护策略。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowDefaultConfigRequest request
-        :return: ShowDefaultConfigResponse
+        :param request: Request instance for ShowDefaultConfig
+        :type request: :class:`huaweicloudsdkantiddos.v1.ShowDefaultConfigRequest`
+        :rtype: :class:`huaweicloudsdkantiddos.v1.ShowDefaultConfigResponse`
         """
         return self.show_default_config_with_http_info(request)
 
     def show_default_config_with_http_info(self, request):
-        """查询Ani-DDoS默认防护策略
-
-        查询用户配置的默认防护策略。
-
-        :param ShowDefaultConfigRequest request
-        :return: ShowDefaultConfigResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -293,26 +274,21 @@ class AntiDDoSAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_alert_config_async(self, request):
         """更新告警配置信息
 
         更新用户配置信息，用户可以通过此接口更新是否接收某类告警，同时可以配置是手机短信还是电子邮件接收告警信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateAlertConfigRequest request
-        :return: UpdateAlertConfigResponse
+        :param request: Request instance for UpdateAlertConfig
+        :type request: :class:`huaweicloudsdkantiddos.v1.UpdateAlertConfigRequest`
+        :rtype: :class:`huaweicloudsdkantiddos.v1.UpdateAlertConfigResponse`
         """
         return self.update_alert_config_with_http_info(request)
 
     def update_alert_config_with_http_info(self, request):
-        """更新告警配置信息
-
-        更新用户配置信息，用户可以通过此接口更新是否接收某类告警，同时可以配置是手机短信还是电子邮件接收告警信息。
-
-        :param UpdateAlertConfigRequest request
-        :return: UpdateAlertConfigResponse
-        """
-
         all_params = ['update_alert_config_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -356,26 +332,21 @@ class AntiDDoSAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_d_dos_status_async(self, request):
         """查询EIP防护状态列表
 
         查询用户所有EIP的Anti-DDoS防护状态信息，用户的EIP无论是否绑定到云服务器，都可以进行查询。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListDDosStatusRequest request
-        :return: ListDDosStatusResponse
+        :param request: Request instance for ListDDosStatus
+        :type request: :class:`huaweicloudsdkantiddos.v1.ListDDosStatusRequest`
+        :rtype: :class:`huaweicloudsdkantiddos.v1.ListDDosStatusResponse`
         """
         return self.list_d_dos_status_with_http_info(request)
 
     def list_d_dos_status_with_http_info(self, request):
-        """查询EIP防护状态列表
-
-        查询用户所有EIP的Anti-DDoS防护状态信息，用户的EIP无论是否绑定到云服务器，都可以进行查询。
-
-        :param ListDDosStatusRequest request
-        :return: ListDDosStatusResponse
-        """
-
         all_params = ['status', 'limit', 'offset', 'ip']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -425,26 +396,21 @@ class AntiDDoSAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_daily_log_async(self, request):
         """查询指定EIP异常事件
 
         查询指定EIP在过去24小时之内的异常事件信息，异常事件包括清洗事件和黑洞事件，查询延迟在5分钟之内。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListDailyLogRequest request
-        :return: ListDailyLogResponse
+        :param request: Request instance for ListDailyLog
+        :type request: :class:`huaweicloudsdkantiddos.v1.ListDailyLogRequest`
+        :rtype: :class:`huaweicloudsdkantiddos.v1.ListDailyLogResponse`
         """
         return self.list_daily_log_with_http_info(request)
 
     def list_daily_log_with_http_info(self, request):
-        """查询指定EIP异常事件
-
-        查询指定EIP在过去24小时之内的异常事件信息，异常事件包括清洗事件和黑洞事件，查询延迟在5分钟之内。
-
-        :param ListDailyLogRequest request
-        :return: ListDailyLogResponse
-        """
-
         all_params = ['floating_ip_id', 'sort_dir', 'limit', 'offset', 'ip']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -496,26 +462,21 @@ class AntiDDoSAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_daily_report_async(self, request):
         """查询指定EIP防护流量
 
         查询指定EIP在过去24小时之内的防护流量信息，流量的间隔时间单位为5分钟。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListDailyReportRequest request
-        :return: ListDailyReportResponse
+        :param request: Request instance for ListDailyReport
+        :type request: :class:`huaweicloudsdkantiddos.v1.ListDailyReportRequest`
+        :rtype: :class:`huaweicloudsdkantiddos.v1.ListDailyReportResponse`
         """
         return self.list_daily_report_with_http_info(request)
 
     def list_daily_report_with_http_info(self, request):
-        """查询指定EIP防护流量
-
-        查询指定EIP在过去24小时之内的防护流量信息，流量的间隔时间单位为5分钟。
-
-        :param ListDailyReportRequest request
-        :return: ListDailyReportResponse
-        """
-
         all_params = ['floating_ip_id', 'ip']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -561,26 +522,21 @@ class AntiDDoSAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_new_configs_async(self, request):
         """查询Anti-DDoS配置可选范围
 
         查询系统支持的Anti-DDoS防护策略配置的可选范围，用户根据范围列表选择适合自已业务的防护策略进行Anti-DDoS流量清洗。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListNewConfigsRequest request
-        :return: ListNewConfigsResponse
+        :param request: Request instance for ListNewConfigs
+        :type request: :class:`huaweicloudsdkantiddos.v1.ListNewConfigsRequest`
+        :rtype: :class:`huaweicloudsdkantiddos.v1.ListNewConfigsResponse`
         """
         return self.list_new_configs_with_http_info(request)
 
     def list_new_configs_with_http_info(self, request):
-        """查询Anti-DDoS配置可选范围
-
-        查询系统支持的Anti-DDoS防护策略配置的可选范围，用户根据范围列表选择适合自已业务的防护策略进行Anti-DDoS流量清洗。
-
-        :param ListNewConfigsRequest request
-        :return: ListNewConfigsResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -622,26 +578,21 @@ class AntiDDoSAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_weekly_reports_async(self, request):
         """查询周防护统计情况
 
         查询用户所有Anti-DDoS防护周统计情况，包括一周内DDoS拦截次数和攻击次数、以及按照被攻击次数进行的排名信息等统计数据。系统支持当前时间之前四周的周统计数据查询，超过这个时间的请求是查询不到统计数据的。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListWeeklyReportsRequest request
-        :return: ListWeeklyReportsResponse
+        :param request: Request instance for ListWeeklyReports
+        :type request: :class:`huaweicloudsdkantiddos.v1.ListWeeklyReportsRequest`
+        :rtype: :class:`huaweicloudsdkantiddos.v1.ListWeeklyReportsResponse`
         """
         return self.list_weekly_reports_with_http_info(request)
 
     def list_weekly_reports_with_http_info(self, request):
-        """查询周防护统计情况
-
-        查询用户所有Anti-DDoS防护周统计情况，包括一周内DDoS拦截次数和攻击次数、以及按照被攻击次数进行的排名信息等统计数据。系统支持当前时间之前四周的周统计数据查询，超过这个时间的请求是查询不到统计数据的。
-
-        :param ListWeeklyReportsRequest request
-        :return: ListWeeklyReportsResponse
-        """
-
         all_params = ['period_start_date']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -685,26 +636,21 @@ class AntiDDoSAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_d_dos_async(self, request):
         """查询Anti-DDoS服务
 
         查询配置的Anti-DDoS防护策略，用户可以查询指定EIP的Anti-DDoS防护策略。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowDDosRequest request
-        :return: ShowDDosResponse
+        :param request: Request instance for ShowDDos
+        :type request: :class:`huaweicloudsdkantiddos.v1.ShowDDosRequest`
+        :rtype: :class:`huaweicloudsdkantiddos.v1.ShowDDosResponse`
         """
         return self.show_d_dos_with_http_info(request)
 
     def show_d_dos_with_http_info(self, request):
-        """查询Anti-DDoS服务
-
-        查询配置的Anti-DDoS防护策略，用户可以查询指定EIP的Anti-DDoS防护策略。
-
-        :param ShowDDosRequest request
-        :return: ShowDDosResponse
-        """
-
         all_params = ['floating_ip_id', 'ip']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -750,26 +696,21 @@ class AntiDDoSAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_d_dos_status_async(self, request):
         """查询指定EIP防护状态
 
         查询指定EIP的Anti-DDoS防护状态。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowDDosStatusRequest request
-        :return: ShowDDosStatusResponse
+        :param request: Request instance for ShowDDosStatus
+        :type request: :class:`huaweicloudsdkantiddos.v1.ShowDDosStatusRequest`
+        :rtype: :class:`huaweicloudsdkantiddos.v1.ShowDDosStatusResponse`
         """
         return self.show_d_dos_status_with_http_info(request)
 
     def show_d_dos_status_with_http_info(self, request):
-        """查询指定EIP防护状态
-
-        查询指定EIP的Anti-DDoS防护状态。
-
-        :param ShowDDosStatusRequest request
-        :return: ShowDDosStatusResponse
-        """
-
         all_params = ['floating_ip_id', 'ip']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -815,26 +756,21 @@ class AntiDDoSAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_new_task_status_async(self, request):
         """查询Anti-DDoS任务
 
         用户查询指定的Anti-DDoS防护配置任务，得到任务当前执行的状态。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowNewTaskStatusRequest request
-        :return: ShowNewTaskStatusResponse
+        :param request: Request instance for ShowNewTaskStatus
+        :type request: :class:`huaweicloudsdkantiddos.v1.ShowNewTaskStatusRequest`
+        :rtype: :class:`huaweicloudsdkantiddos.v1.ShowNewTaskStatusResponse`
         """
         return self.show_new_task_status_with_http_info(request)
 
     def show_new_task_status_with_http_info(self, request):
-        """查询Anti-DDoS任务
-
-        用户查询指定的Anti-DDoS防护配置任务，得到任务当前执行的状态。
-
-        :param ShowNewTaskStatusRequest request
-        :return: ShowNewTaskStatusResponse
-        """
-
         all_params = ['task_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -878,26 +814,21 @@ class AntiDDoSAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_d_dos_async(self, request):
         """更新Anti-DDoS服务
 
         更新指定EIP的Anti-DDoS防护策略配置。调用成功，只是说明服务节点收到了关闭更新配置请求，操作是否成功需要通过任务查询接口查询该任务的执行状态，具体请参考查询Anti-DDoS任务。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateDDosRequest request
-        :return: UpdateDDosResponse
+        :param request: Request instance for UpdateDDos
+        :type request: :class:`huaweicloudsdkantiddos.v1.UpdateDDosRequest`
+        :rtype: :class:`huaweicloudsdkantiddos.v1.UpdateDDosResponse`
         """
         return self.update_d_dos_with_http_info(request)
 
     def update_d_dos_with_http_info(self, request):
-        """更新Anti-DDoS服务
-
-        更新指定EIP的Anti-DDoS防护策略配置。调用成功，只是说明服务节点收到了关闭更新配置请求，操作是否成功需要通过任务查询接口查询该任务的执行状态，具体请参考查询Anti-DDoS任务。
-
-        :param UpdateDDosRequest request
-        :return: UpdateDDosResponse
-        """
-
         all_params = ['floating_ip_id', 'update_d_dos_request_body', 'ip']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -944,7 +875,6 @@ class AntiDDoSAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

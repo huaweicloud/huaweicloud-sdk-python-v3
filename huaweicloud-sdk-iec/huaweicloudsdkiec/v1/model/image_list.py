@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ImageList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -86,7 +85,69 @@ class ImageList:
     }
 
     def __init__(self, id=None, name=None, status=None, disk_format=None, min_disk=None, min_ram=None, owner=None, protected=None, visibility=None, created_at=None, updated_at=None, _self=None, deleted=None, virtual_env_type=None, deleted_at=None, relation_job_id=None, imagetype=None, platform=None, os_type=None, os_version=None, isregistered=None, support_kvm=None, support_kvm_gpu_type=None, support_kvm_ascend_310=None, support_kvm_hi1822_hiovs=None, support_arm=None, hw_firmware_type=None, data_source=None, support_gpu_t4=None):
-        """ImageList - a model defined in huaweicloud sdk"""
+        """ImageList
+
+        The model defined in huaweicloud sdk
+
+        :param id: 镜像ID。
+        :type id: str
+        :param name: 镜像名称。
+        :type name: str
+        :param status: 镜像状态。
+        :type status: str
+        :param disk_format: 镜像格式。
+        :type disk_format: str
+        :param min_disk: 最小系统盘（单位：GB），取值为40～1024GB。
+        :type min_disk: int
+        :param min_ram: 最小内存（单位：MB），默认值为0。
+        :type min_ram: int
+        :param owner: 镜像所属租户ID。
+        :type owner: str
+        :param protected: 是否受保护。
+        :type protected: bool
+        :param visibility: 可见性。
+        :type visibility: str
+        :param created_at: 创建时间。
+        :type created_at: str
+        :param updated_at: 更新时间。
+        :type updated_at: str
+        :param _self: 镜像链接信息。
+        :type _self: str
+        :param deleted: 是否是删除的镜像，取值为true或者false。
+        :type deleted: bool
+        :param virtual_env_type: 镜像使用环境类型。
+        :type virtual_env_type: str
+        :param deleted_at: 删除时间，格式为UTC时间。
+        :type deleted_at: str
+        :param relation_job_id: 镜像关联的任务ID。
+        :type relation_job_id: str
+        :param imagetype: 镜像类型。  取值范围： - gold：公有镜像； - private：私有镜像。
+        :type imagetype: str
+        :param platform: 镜像平台分类。
+        :type platform: str
+        :param os_type: 镜像系统类型。
+        :type os_type: str
+        :param os_version: 镜像的操作系统具体版本。
+        :type os_version: str
+        :param isregistered: 是否是注册过的镜像。
+        :type isregistered: bool
+        :param support_kvm: 如果镜像支持KVM，取值为true，否则无该属性。
+        :type support_kvm: str
+        :param support_kvm_gpu_type: 如果镜像是支持KVM虚拟化平台下的GPU类型，取值为“V100_vGPU”或者“RTX5000”，否则无该属性。
+        :type support_kvm_gpu_type: str
+        :param support_kvm_ascend_310: 如果镜像支持AI加速，取值为true，否则无该属性。
+        :type support_kvm_ascend_310: str
+        :param support_kvm_hi1822_hiovs: 如果镜像支持计算增强，取值为true，否则无该属性。
+        :type support_kvm_hi1822_hiovs: str
+        :param support_arm: 如果镜像为ARM架构类型，取值为true，否则无该属性。
+        :type support_arm: str
+        :param hw_firmware_type: 镜像启动模式，取值为uefi或bios，不指定时无该属性。
+        :type hw_firmware_type: str
+        :param data_source: 镜像来源。  - 来源边缘实例：instance:&lt;实例ID&gt; - 来源IMS：ims:&lt;镜像ID&gt;:&lt;region ID&gt;
+        :type data_source: str
+        :param support_gpu_t4: 如果镜像支持GPU T4类型，取值为true，否则无该属性。
+        :type support_gpu_t4: str
+        """
         
         
 
@@ -198,7 +259,7 @@ class ImageList:
         镜像ID。
 
         :param id: The id of this ImageList.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -220,7 +281,7 @@ class ImageList:
         镜像名称。
 
         :param name: The name of this ImageList.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -242,7 +303,7 @@ class ImageList:
         镜像状态。
 
         :param status: The status of this ImageList.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -264,7 +325,7 @@ class ImageList:
         镜像格式。
 
         :param disk_format: The disk_format of this ImageList.
-        :type: str
+        :type disk_format: str
         """
         self._disk_format = disk_format
 
@@ -286,7 +347,7 @@ class ImageList:
         最小系统盘（单位：GB），取值为40～1024GB。
 
         :param min_disk: The min_disk of this ImageList.
-        :type: int
+        :type min_disk: int
         """
         self._min_disk = min_disk
 
@@ -308,7 +369,7 @@ class ImageList:
         最小内存（单位：MB），默认值为0。
 
         :param min_ram: The min_ram of this ImageList.
-        :type: int
+        :type min_ram: int
         """
         self._min_ram = min_ram
 
@@ -330,7 +391,7 @@ class ImageList:
         镜像所属租户ID。
 
         :param owner: The owner of this ImageList.
-        :type: str
+        :type owner: str
         """
         self._owner = owner
 
@@ -352,7 +413,7 @@ class ImageList:
         是否受保护。
 
         :param protected: The protected of this ImageList.
-        :type: bool
+        :type protected: bool
         """
         self._protected = protected
 
@@ -374,7 +435,7 @@ class ImageList:
         可见性。
 
         :param visibility: The visibility of this ImageList.
-        :type: str
+        :type visibility: str
         """
         self._visibility = visibility
 
@@ -396,7 +457,7 @@ class ImageList:
         创建时间。
 
         :param created_at: The created_at of this ImageList.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -418,7 +479,7 @@ class ImageList:
         更新时间。
 
         :param updated_at: The updated_at of this ImageList.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 
@@ -440,7 +501,7 @@ class ImageList:
         镜像链接信息。
 
         :param _self: The _self of this ImageList.
-        :type: str
+        :type _self: str
         """
         self.__self = _self
 
@@ -462,7 +523,7 @@ class ImageList:
         是否是删除的镜像，取值为true或者false。
 
         :param deleted: The deleted of this ImageList.
-        :type: bool
+        :type deleted: bool
         """
         self._deleted = deleted
 
@@ -484,7 +545,7 @@ class ImageList:
         镜像使用环境类型。
 
         :param virtual_env_type: The virtual_env_type of this ImageList.
-        :type: str
+        :type virtual_env_type: str
         """
         self._virtual_env_type = virtual_env_type
 
@@ -506,7 +567,7 @@ class ImageList:
         删除时间，格式为UTC时间。
 
         :param deleted_at: The deleted_at of this ImageList.
-        :type: str
+        :type deleted_at: str
         """
         self._deleted_at = deleted_at
 
@@ -528,7 +589,7 @@ class ImageList:
         镜像关联的任务ID。
 
         :param relation_job_id: The relation_job_id of this ImageList.
-        :type: str
+        :type relation_job_id: str
         """
         self._relation_job_id = relation_job_id
 
@@ -550,7 +611,7 @@ class ImageList:
         镜像类型。  取值范围： - gold：公有镜像； - private：私有镜像。
 
         :param imagetype: The imagetype of this ImageList.
-        :type: str
+        :type imagetype: str
         """
         self._imagetype = imagetype
 
@@ -572,7 +633,7 @@ class ImageList:
         镜像平台分类。
 
         :param platform: The platform of this ImageList.
-        :type: str
+        :type platform: str
         """
         self._platform = platform
 
@@ -594,7 +655,7 @@ class ImageList:
         镜像系统类型。
 
         :param os_type: The os_type of this ImageList.
-        :type: str
+        :type os_type: str
         """
         self._os_type = os_type
 
@@ -616,7 +677,7 @@ class ImageList:
         镜像的操作系统具体版本。
 
         :param os_version: The os_version of this ImageList.
-        :type: str
+        :type os_version: str
         """
         self._os_version = os_version
 
@@ -638,7 +699,7 @@ class ImageList:
         是否是注册过的镜像。
 
         :param isregistered: The isregistered of this ImageList.
-        :type: bool
+        :type isregistered: bool
         """
         self._isregistered = isregistered
 
@@ -660,7 +721,7 @@ class ImageList:
         如果镜像支持KVM，取值为true，否则无该属性。
 
         :param support_kvm: The support_kvm of this ImageList.
-        :type: str
+        :type support_kvm: str
         """
         self._support_kvm = support_kvm
 
@@ -682,7 +743,7 @@ class ImageList:
         如果镜像是支持KVM虚拟化平台下的GPU类型，取值为“V100_vGPU”或者“RTX5000”，否则无该属性。
 
         :param support_kvm_gpu_type: The support_kvm_gpu_type of this ImageList.
-        :type: str
+        :type support_kvm_gpu_type: str
         """
         self._support_kvm_gpu_type = support_kvm_gpu_type
 
@@ -704,7 +765,7 @@ class ImageList:
         如果镜像支持AI加速，取值为true，否则无该属性。
 
         :param support_kvm_ascend_310: The support_kvm_ascend_310 of this ImageList.
-        :type: str
+        :type support_kvm_ascend_310: str
         """
         self._support_kvm_ascend_310 = support_kvm_ascend_310
 
@@ -726,7 +787,7 @@ class ImageList:
         如果镜像支持计算增强，取值为true，否则无该属性。
 
         :param support_kvm_hi1822_hiovs: The support_kvm_hi1822_hiovs of this ImageList.
-        :type: str
+        :type support_kvm_hi1822_hiovs: str
         """
         self._support_kvm_hi1822_hiovs = support_kvm_hi1822_hiovs
 
@@ -748,7 +809,7 @@ class ImageList:
         如果镜像为ARM架构类型，取值为true，否则无该属性。
 
         :param support_arm: The support_arm of this ImageList.
-        :type: str
+        :type support_arm: str
         """
         self._support_arm = support_arm
 
@@ -770,7 +831,7 @@ class ImageList:
         镜像启动模式，取值为uefi或bios，不指定时无该属性。
 
         :param hw_firmware_type: The hw_firmware_type of this ImageList.
-        :type: str
+        :type hw_firmware_type: str
         """
         self._hw_firmware_type = hw_firmware_type
 
@@ -792,7 +853,7 @@ class ImageList:
         镜像来源。  - 来源边缘实例：instance:<实例ID> - 来源IMS：ims:<镜像ID>:<region ID>
 
         :param data_source: The data_source of this ImageList.
-        :type: str
+        :type data_source: str
         """
         self._data_source = data_source
 
@@ -814,7 +875,7 @@ class ImageList:
         如果镜像支持GPU T4类型，取值为true，否则无该属性。
 
         :param support_gpu_t4: The support_gpu_t4 of this ImageList.
-        :type: str
+        :type support_gpu_t4: str
         """
         self._support_gpu_t4 = support_gpu_t4
 

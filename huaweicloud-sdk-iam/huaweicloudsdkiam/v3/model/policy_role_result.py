@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PolicyRoleResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class PolicyRoleResult:
     }
 
     def __init__(self, domain_id=None, references=None, updated_time=None, created_time=None, description_cn=None, catalog=None, name=None, description=None, links=None, id=None, display_name=None, type=None, policy=None):
-        """PolicyRoleResult - a model defined in huaweicloud sdk"""
+        """PolicyRoleResult
+
+        The model defined in huaweicloud sdk
+
+        :param domain_id: 自定义策略所属账号ID。
+        :type domain_id: str
+        :param references: 自定义策略的引用次数。
+        :type references: int
+        :param updated_time: 自定义策略更新时间。
+        :type updated_time: str
+        :param created_time: 自定义策略创建时间。
+        :type created_time: str
+        :param description_cn: 自定义策略的中文描述信息。
+        :type description_cn: str
+        :param catalog: 自定义策略所在目录。
+        :type catalog: str
+        :param name: 自定义策略名。
+        :type name: str
+        :param description: 自定义策略的描述信息。
+        :type description: str
+        :param links: 
+        :type links: :class:`huaweicloudsdkiam.v3.LinksSelf`
+        :param id: 自定义策略ID。
+        :type id: str
+        :param display_name: 自定义策略展示名。
+        :type display_name: str
+        :param type: 自定义策略的显示模式。 &gt; - AX表示在domain层显示。 &gt; - XA表示在project层显示。 &gt; - 自定义策略的显示模式只能为AX或者XA，不能在domain层和project层都显示（AA），或者在domain层和project层都不显示（XX）。
+        :type type: str
+        :param policy: 
+        :type policy: :class:`huaweicloudsdkiam.v3.ServicePolicy`
+        """
         
         
 
@@ -109,7 +138,7 @@ class PolicyRoleResult:
         自定义策略所属账号ID。
 
         :param domain_id: The domain_id of this PolicyRoleResult.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -131,7 +160,7 @@ class PolicyRoleResult:
         自定义策略的引用次数。
 
         :param references: The references of this PolicyRoleResult.
-        :type: int
+        :type references: int
         """
         self._references = references
 
@@ -153,7 +182,7 @@ class PolicyRoleResult:
         自定义策略更新时间。
 
         :param updated_time: The updated_time of this PolicyRoleResult.
-        :type: str
+        :type updated_time: str
         """
         self._updated_time = updated_time
 
@@ -175,7 +204,7 @@ class PolicyRoleResult:
         自定义策略创建时间。
 
         :param created_time: The created_time of this PolicyRoleResult.
-        :type: str
+        :type created_time: str
         """
         self._created_time = created_time
 
@@ -197,7 +226,7 @@ class PolicyRoleResult:
         自定义策略的中文描述信息。
 
         :param description_cn: The description_cn of this PolicyRoleResult.
-        :type: str
+        :type description_cn: str
         """
         self._description_cn = description_cn
 
@@ -219,7 +248,7 @@ class PolicyRoleResult:
         自定义策略所在目录。
 
         :param catalog: The catalog of this PolicyRoleResult.
-        :type: str
+        :type catalog: str
         """
         self._catalog = catalog
 
@@ -241,7 +270,7 @@ class PolicyRoleResult:
         自定义策略名。
 
         :param name: The name of this PolicyRoleResult.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -263,7 +292,7 @@ class PolicyRoleResult:
         自定义策略的描述信息。
 
         :param description: The description of this PolicyRoleResult.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -273,7 +302,7 @@ class PolicyRoleResult:
 
 
         :return: The links of this PolicyRoleResult.
-        :rtype: LinksSelf
+        :rtype: :class:`huaweicloudsdkiam.v3.LinksSelf`
         """
         return self._links
 
@@ -283,7 +312,7 @@ class PolicyRoleResult:
 
 
         :param links: The links of this PolicyRoleResult.
-        :type: LinksSelf
+        :type links: :class:`huaweicloudsdkiam.v3.LinksSelf`
         """
         self._links = links
 
@@ -305,7 +334,7 @@ class PolicyRoleResult:
         自定义策略ID。
 
         :param id: The id of this PolicyRoleResult.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -327,7 +356,7 @@ class PolicyRoleResult:
         自定义策略展示名。
 
         :param display_name: The display_name of this PolicyRoleResult.
-        :type: str
+        :type display_name: str
         """
         self._display_name = display_name
 
@@ -349,7 +378,7 @@ class PolicyRoleResult:
         自定义策略的显示模式。 > - AX表示在domain层显示。 > - XA表示在project层显示。 > - 自定义策略的显示模式只能为AX或者XA，不能在domain层和project层都显示（AA），或者在domain层和project层都不显示（XX）。
 
         :param type: The type of this PolicyRoleResult.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -359,7 +388,7 @@ class PolicyRoleResult:
 
 
         :return: The policy of this PolicyRoleResult.
-        :rtype: ServicePolicy
+        :rtype: :class:`huaweicloudsdkiam.v3.ServicePolicy`
         """
         return self._policy
 
@@ -369,7 +398,7 @@ class PolicyRoleResult:
 
 
         :param policy: The policy of this PolicyRoleResult.
-        :type: ServicePolicy
+        :type policy: :class:`huaweicloudsdkiam.v3.ServicePolicy`
         """
         self._policy = policy
 

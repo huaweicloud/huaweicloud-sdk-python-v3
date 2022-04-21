@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ModifyTransTemplateReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ModifyTransTemplateReq:
     }
 
     def __init__(self, template_id=None, template_name=None, video=None, audio=None, common=None):
-        """ModifyTransTemplateReq - a model defined in huaweicloud sdk"""
+        """ModifyTransTemplateReq
+
+        The model defined in huaweicloud sdk
+
+        :param template_id: 转码模板ID 
+        :type template_id: int
+        :param template_name: 转码模板名称。 
+        :type template_name: str
+        :param video: 
+        :type video: :class:`huaweicloudsdkmpc.v1.Video`
+        :param audio: 
+        :type audio: :class:`huaweicloudsdkmpc.v1.Audio`
+        :param common: 
+        :type common: :class:`huaweicloudsdkmpc.v1.Common`
+        """
         
         
 
@@ -75,7 +88,7 @@ class ModifyTransTemplateReq:
         转码模板ID 
 
         :param template_id: The template_id of this ModifyTransTemplateReq.
-        :type: int
+        :type template_id: int
         """
         self._template_id = template_id
 
@@ -97,7 +110,7 @@ class ModifyTransTemplateReq:
         转码模板名称。 
 
         :param template_name: The template_name of this ModifyTransTemplateReq.
-        :type: str
+        :type template_name: str
         """
         self._template_name = template_name
 
@@ -107,7 +120,7 @@ class ModifyTransTemplateReq:
 
 
         :return: The video of this ModifyTransTemplateReq.
-        :rtype: Video
+        :rtype: :class:`huaweicloudsdkmpc.v1.Video`
         """
         return self._video
 
@@ -117,7 +130,7 @@ class ModifyTransTemplateReq:
 
 
         :param video: The video of this ModifyTransTemplateReq.
-        :type: Video
+        :type video: :class:`huaweicloudsdkmpc.v1.Video`
         """
         self._video = video
 
@@ -127,7 +140,7 @@ class ModifyTransTemplateReq:
 
 
         :return: The audio of this ModifyTransTemplateReq.
-        :rtype: Audio
+        :rtype: :class:`huaweicloudsdkmpc.v1.Audio`
         """
         return self._audio
 
@@ -137,7 +150,7 @@ class ModifyTransTemplateReq:
 
 
         :param audio: The audio of this ModifyTransTemplateReq.
-        :type: Audio
+        :type audio: :class:`huaweicloudsdkmpc.v1.Audio`
         """
         self._audio = audio
 
@@ -147,7 +160,7 @@ class ModifyTransTemplateReq:
 
 
         :return: The common of this ModifyTransTemplateReq.
-        :rtype: Common
+        :rtype: :class:`huaweicloudsdkmpc.v1.Common`
         """
         return self._common
 
@@ -157,7 +170,7 @@ class ModifyTransTemplateReq:
 
 
         :param common: The common of this ModifyTransTemplateReq.
-        :type: Common
+        :type common: :class:`huaweicloudsdkmpc.v1.Common`
         """
         self._common = common
 

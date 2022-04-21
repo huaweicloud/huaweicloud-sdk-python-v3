@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowApiVersionParams:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ShowApiVersionParams:
     }
 
     def __init__(self, id=None, links=None, version=None, status=None, updated=None, min_version=None):
-        """ShowApiVersionParams - a model defined in huaweicloud sdk"""
+        """ShowApiVersionParams
+
+        The model defined in huaweicloud sdk
+
+        :param id: 版本ID（版本号），如v1。
+        :type id: str
+        :param links: 版本号查询链接
+        :type links: list[:class:`huaweicloudsdksdrs.v1.ShowApiVersionLinksParams`]
+        :param version: 若该版本API支持微版本，则返回支持的最大微版本号，如果不支持微版本，则返回空。
+        :type version: str
+        :param status: 版本状态，为如下3种： CURRENT：表示该版本为主推版本 SUPPORTED：表示为老版本，但是现在还继续支持 DEPRECATED：表示为废弃版本，存在后续删除的可能
+        :type status: str
+        :param updated: 版本发布时间，采用UTC时间表示。如v1发布的时间2018-05-30T15:00:00Z。
+        :type updated: str
+        :param min_version: 若该版本API 支持微版本，则返回支持的最小微版本号，如果不支持微版本，则返回空。
+        :type min_version: str
+        """
         
         
 
@@ -77,7 +92,7 @@ class ShowApiVersionParams:
         版本ID（版本号），如v1。
 
         :param id: The id of this ShowApiVersionParams.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -88,7 +103,7 @@ class ShowApiVersionParams:
         版本号查询链接
 
         :return: The links of this ShowApiVersionParams.
-        :rtype: list[ShowApiVersionLinksParams]
+        :rtype: list[:class:`huaweicloudsdksdrs.v1.ShowApiVersionLinksParams`]
         """
         return self._links
 
@@ -99,7 +114,7 @@ class ShowApiVersionParams:
         版本号查询链接
 
         :param links: The links of this ShowApiVersionParams.
-        :type: list[ShowApiVersionLinksParams]
+        :type links: list[:class:`huaweicloudsdksdrs.v1.ShowApiVersionLinksParams`]
         """
         self._links = links
 
@@ -121,7 +136,7 @@ class ShowApiVersionParams:
         若该版本API支持微版本，则返回支持的最大微版本号，如果不支持微版本，则返回空。
 
         :param version: The version of this ShowApiVersionParams.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -143,7 +158,7 @@ class ShowApiVersionParams:
         版本状态，为如下3种： CURRENT：表示该版本为主推版本 SUPPORTED：表示为老版本，但是现在还继续支持 DEPRECATED：表示为废弃版本，存在后续删除的可能
 
         :param status: The status of this ShowApiVersionParams.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -165,7 +180,7 @@ class ShowApiVersionParams:
         版本发布时间，采用UTC时间表示。如v1发布的时间2018-05-30T15:00:00Z。
 
         :param updated: The updated of this ShowApiVersionParams.
-        :type: str
+        :type updated: str
         """
         self._updated = updated
 
@@ -187,7 +202,7 @@ class ShowApiVersionParams:
         若该版本API 支持微版本，则返回支持的最小微版本号，如果不支持微版本，则返回空。
 
         :param min_version: The min_version of this ShowApiVersionParams.
-        :type: str
+        :type min_version: str
         """
         self._min_version = min_version
 

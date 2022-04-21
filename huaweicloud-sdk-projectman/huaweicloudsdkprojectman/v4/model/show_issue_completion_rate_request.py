@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowIssueCompletionRateRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowIssueCompletionRateRequest:
     }
 
     def __init__(self, project_id=None):
-        """ShowIssueCompletionRateRequest - a model defined in huaweicloud sdk"""
+        """ShowIssueCompletionRateRequest
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: devcloud的项目id
+        :type project_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowIssueCompletionRateRequest:
         devcloud的项目id
 
         :param project_id: The project_id of this ShowIssueCompletionRateRequest.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 

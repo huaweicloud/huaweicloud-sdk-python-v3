@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateEndpointWhiteRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateEndpointWhiteRequest:
     }
 
     def __init__(self, vpc_endpoint_id=None, body=None):
-        """UpdateEndpointWhiteRequest - a model defined in huaweicloud sdk"""
+        """UpdateEndpointWhiteRequest
+
+        The model defined in huaweicloud sdk
+
+        :param vpc_endpoint_id: 终端节点的ID。
+        :type vpc_endpoint_id: str
+        :param body: Body of the UpdateEndpointWhiteRequest
+        :type body: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointWhiteRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateEndpointWhiteRequest:
         终端节点的ID。
 
         :param vpc_endpoint_id: The vpc_endpoint_id of this UpdateEndpointWhiteRequest.
-        :type: str
+        :type vpc_endpoint_id: str
         """
         self._vpc_endpoint_id = vpc_endpoint_id
 
@@ -72,7 +79,7 @@ class UpdateEndpointWhiteRequest:
 
 
         :return: The body of this UpdateEndpointWhiteRequest.
-        :rtype: UpdateEndpointWhiteRequestBody
+        :rtype: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointWhiteRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateEndpointWhiteRequest:
 
 
         :param body: The body of this UpdateEndpointWhiteRequest.
-        :type: UpdateEndpointWhiteRequestBody
+        :type body: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointWhiteRequestBody`
         """
         self._body = body
 

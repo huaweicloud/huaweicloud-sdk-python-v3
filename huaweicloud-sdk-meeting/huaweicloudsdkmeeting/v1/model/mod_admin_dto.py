@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ModAdminDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ModAdminDTO:
     }
 
     def __init__(self, name=None, email=None, phone=None, country=None):
-        """ModAdminDTO - a model defined in huaweicloud sdk"""
+        """ModAdminDTO
+
+        The model defined in huaweicloud sdk
+
+        :param name: 名称
+        :type name: str
+        :param email: 邮箱
+        :type email: str
+        :param phone: 手机号，必须加上国家码，例如中国大陆手机+86xxxxxxx，当填写手机号时 “country”参数必填
+        :type phone: str
+        :param country: 若smsNumber为手机号,则需带上手机号所属的国家。 例如国家为中国大陆则country参数取值为chinaPR 国家和国家码的对应关系请参考：https://support.huaweicloud.com/api-meeting/meeting_21_0109.html 
+        :type country: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class ModAdminDTO:
         名称
 
         :param name: The name of this ModAdminDTO.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -95,7 +106,7 @@ class ModAdminDTO:
         邮箱
 
         :param email: The email of this ModAdminDTO.
-        :type: str
+        :type email: str
         """
         self._email = email
 
@@ -117,7 +128,7 @@ class ModAdminDTO:
         手机号，必须加上国家码，例如中国大陆手机+86xxxxxxx，当填写手机号时 “country”参数必填
 
         :param phone: The phone of this ModAdminDTO.
-        :type: str
+        :type phone: str
         """
         self._phone = phone
 
@@ -139,7 +150,7 @@ class ModAdminDTO:
         若smsNumber为手机号,则需带上手机号所属的国家。 例如国家为中国大陆则country参数取值为chinaPR 国家和国家码的对应关系请参考：https://support.huaweicloud.com/api-meeting/meeting_21_0109.html 
 
         :param country: The country of this ModAdminDTO.
-        :type: str
+        :type country: str
         """
         self._country = country
 

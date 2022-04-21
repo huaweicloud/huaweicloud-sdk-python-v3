@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListProductsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -62,7 +61,45 @@ class ListProductsRequest:
     }
 
     def __init__(self, instance_id=None, limit=None, app_id=None, id=None, name=None, manufacturer_id=None, manufacturer_name=None, model=None, device_type=None, product_type=None, protocol_type=None, created_user_name=None, created_date_start=None, created_date_end=None, offset=None, app_name=None, product_serial=None):
-        """ListProductsRequest - a model defined in huaweicloud sdk"""
+        """ListProductsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param limit: 每页显示条目数量，最大数量999，超过999后只返回999
+        :type limit: int
+        :param app_id: 应用ID
+        :type app_id: str
+        :param id: 产品ID
+        :type id: str
+        :param name: 产品名称
+        :type name: str
+        :param manufacturer_id: 厂商ID
+        :type manufacturer_id: str
+        :param manufacturer_name: 厂商名称
+        :type manufacturer_name: str
+        :param model: 型号
+        :type model: str
+        :param device_type: 产品的设备类型，默认Default
+        :type device_type: str
+        :param product_type: 产品类型，0-普通产品(不支持子设备) 1-网关产品
+        :type product_type: int
+        :param protocol_type: 产品的协议类型 0-mqtt 2-modbus 4-opcua
+        :type protocol_type: int
+        :param created_user_name: 创建用户
+        :type created_user_name: str
+        :param created_date_start: 创建时间起始，格式timestamp(ms)，使用UTC时区
+        :type created_date_start: int
+        :param created_date_end: 创建时间截止，格式timestamp(ms)，使用UTC时区
+        :type created_date_end: int
+        :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0
+        :type offset: int
+        :param app_name: 应用名称
+        :type app_name: str
+        :param product_serial: 产品唯一序列（系统唯一值，用于MQS的TOPIC中标记产品）
+        :type product_serial: str
+        """
         
         
 
@@ -137,7 +174,7 @@ class ListProductsRequest:
         实例ID
 
         :param instance_id: The instance_id of this ListProductsRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -159,7 +196,7 @@ class ListProductsRequest:
         每页显示条目数量，最大数量999，超过999后只返回999
 
         :param limit: The limit of this ListProductsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -181,7 +218,7 @@ class ListProductsRequest:
         应用ID
 
         :param app_id: The app_id of this ListProductsRequest.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -203,7 +240,7 @@ class ListProductsRequest:
         产品ID
 
         :param id: The id of this ListProductsRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -225,7 +262,7 @@ class ListProductsRequest:
         产品名称
 
         :param name: The name of this ListProductsRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -247,7 +284,7 @@ class ListProductsRequest:
         厂商ID
 
         :param manufacturer_id: The manufacturer_id of this ListProductsRequest.
-        :type: str
+        :type manufacturer_id: str
         """
         self._manufacturer_id = manufacturer_id
 
@@ -269,7 +306,7 @@ class ListProductsRequest:
         厂商名称
 
         :param manufacturer_name: The manufacturer_name of this ListProductsRequest.
-        :type: str
+        :type manufacturer_name: str
         """
         self._manufacturer_name = manufacturer_name
 
@@ -291,7 +328,7 @@ class ListProductsRequest:
         型号
 
         :param model: The model of this ListProductsRequest.
-        :type: str
+        :type model: str
         """
         self._model = model
 
@@ -313,7 +350,7 @@ class ListProductsRequest:
         产品的设备类型，默认Default
 
         :param device_type: The device_type of this ListProductsRequest.
-        :type: str
+        :type device_type: str
         """
         self._device_type = device_type
 
@@ -335,7 +372,7 @@ class ListProductsRequest:
         产品类型，0-普通产品(不支持子设备) 1-网关产品
 
         :param product_type: The product_type of this ListProductsRequest.
-        :type: int
+        :type product_type: int
         """
         self._product_type = product_type
 
@@ -357,7 +394,7 @@ class ListProductsRequest:
         产品的协议类型 0-mqtt 2-modbus 4-opcua
 
         :param protocol_type: The protocol_type of this ListProductsRequest.
-        :type: int
+        :type protocol_type: int
         """
         self._protocol_type = protocol_type
 
@@ -379,7 +416,7 @@ class ListProductsRequest:
         创建用户
 
         :param created_user_name: The created_user_name of this ListProductsRequest.
-        :type: str
+        :type created_user_name: str
         """
         self._created_user_name = created_user_name
 
@@ -401,7 +438,7 @@ class ListProductsRequest:
         创建时间起始，格式timestamp(ms)，使用UTC时区
 
         :param created_date_start: The created_date_start of this ListProductsRequest.
-        :type: int
+        :type created_date_start: int
         """
         self._created_date_start = created_date_start
 
@@ -423,7 +460,7 @@ class ListProductsRequest:
         创建时间截止，格式timestamp(ms)，使用UTC时区
 
         :param created_date_end: The created_date_end of this ListProductsRequest.
-        :type: int
+        :type created_date_end: int
         """
         self._created_date_end = created_date_end
 
@@ -445,7 +482,7 @@ class ListProductsRequest:
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
         :param offset: The offset of this ListProductsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -467,7 +504,7 @@ class ListProductsRequest:
         应用名称
 
         :param app_name: The app_name of this ListProductsRequest.
-        :type: str
+        :type app_name: str
         """
         self._app_name = app_name
 
@@ -489,7 +526,7 @@ class ListProductsRequest:
         产品唯一序列（系统唯一值，用于MQS的TOPIC中标记产品）
 
         :param product_serial: The product_serial of this ListProductsRequest.
-        :type: str
+        :type product_serial: str
         """
         self._product_serial = product_serial
 

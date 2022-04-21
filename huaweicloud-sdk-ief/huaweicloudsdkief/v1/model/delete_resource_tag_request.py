@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteResourceTagRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class DeleteResourceTagRequest:
     }
 
     def __init__(self, ief_instance_id=None, resource_type=None, resource_id=None, key=None):
-        """DeleteResourceTagRequest - a model defined in huaweicloud sdk"""
+        """DeleteResourceTagRequest
+
+        The model defined in huaweicloud sdk
+
+        :param ief_instance_id: 铂金版实例ID，专业版实例为空值
+        :type ief_instance_id: str
+        :param resource_type: 资源类型 - ief-edge_node - ief-deployment - ief-application - ief-device
+        :type resource_type: str
+        :param resource_id: 资源id
+        :type resource_id: str
+        :param key: 标签key
+        :type key: str
+        """
         
         
 
@@ -70,7 +81,7 @@ class DeleteResourceTagRequest:
         铂金版实例ID，专业版实例为空值
 
         :param ief_instance_id: The ief_instance_id of this DeleteResourceTagRequest.
-        :type: str
+        :type ief_instance_id: str
         """
         self._ief_instance_id = ief_instance_id
 
@@ -92,7 +103,7 @@ class DeleteResourceTagRequest:
         资源类型 - ief-edge_node - ief-deployment - ief-application - ief-device
 
         :param resource_type: The resource_type of this DeleteResourceTagRequest.
-        :type: str
+        :type resource_type: str
         """
         self._resource_type = resource_type
 
@@ -114,7 +125,7 @@ class DeleteResourceTagRequest:
         资源id
 
         :param resource_id: The resource_id of this DeleteResourceTagRequest.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -136,7 +147,7 @@ class DeleteResourceTagRequest:
         标签key
 
         :param key: The key of this DeleteResourceTagRequest.
-        :type: str
+        :type key: str
         """
         self._key = key
 

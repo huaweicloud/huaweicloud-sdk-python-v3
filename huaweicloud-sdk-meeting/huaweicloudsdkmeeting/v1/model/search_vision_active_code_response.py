@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SearchVisionActiveCodeResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class SearchVisionActiveCodeResponse(SdkResponse):
     }
 
     def __init__(self, offset=None, limit=None, count=None, data=None):
-        """SearchVisionActiveCodeResponse - a model defined in huaweicloud sdk"""
+        """SearchVisionActiveCodeResponse
+
+        The model defined in huaweicloud sdk
+
+        :param offset: 页面起始页，从0开始
+        :type offset: int
+        :param limit: 每页显示的条目数量。 默认值：10。 
+        :type limit: int
+        :param count: 总数量。
+        :type count: int
+        :param data: 
+        :type data: list[:class:`huaweicloudsdkmeeting.v1.QueryVisionActiveCodeResultDTO`]
+        """
         
         super(SearchVisionActiveCodeResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class SearchVisionActiveCodeResponse(SdkResponse):
         页面起始页，从0开始
 
         :param offset: The offset of this SearchVisionActiveCodeResponse.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -95,7 +106,7 @@ class SearchVisionActiveCodeResponse(SdkResponse):
         每页显示的条目数量。 默认值：10。 
 
         :param limit: The limit of this SearchVisionActiveCodeResponse.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -117,7 +128,7 @@ class SearchVisionActiveCodeResponse(SdkResponse):
         总数量。
 
         :param count: The count of this SearchVisionActiveCodeResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -127,7 +138,7 @@ class SearchVisionActiveCodeResponse(SdkResponse):
 
 
         :return: The data of this SearchVisionActiveCodeResponse.
-        :rtype: list[QueryVisionActiveCodeResultDTO]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.QueryVisionActiveCodeResultDTO`]
         """
         return self._data
 
@@ -137,7 +148,7 @@ class SearchVisionActiveCodeResponse(SdkResponse):
 
 
         :param data: The data of this SearchVisionActiveCodeResponse.
-        :type: list[QueryVisionActiveCodeResultDTO]
+        :type data: list[:class:`huaweicloudsdkmeeting.v1.QueryVisionActiveCodeResultDTO`]
         """
         self._data = data
 

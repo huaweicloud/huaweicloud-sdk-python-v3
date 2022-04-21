@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTreesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListTreesResponse(SdkResponse):
     }
 
     def __init__(self, paths=None):
-        """ListTreesResponse - a model defined in huaweicloud sdk"""
+        """ListTreesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param paths: 仓库文件列表。
+        :type paths: list[str]
+        """
         
         super(ListTreesResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class ListTreesResponse(SdkResponse):
         仓库文件列表。
 
         :param paths: The paths of this ListTreesResponse.
-        :type: list[str]
+        :type paths: list[str]
         """
         self._paths = paths
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRangeQueryAomPromGetRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListRangeQueryAomPromGetRequest:
     }
 
     def __init__(self, query=None, start=None, end=None, step=None):
-        """ListRangeQueryAomPromGetRequest - a model defined in huaweicloud sdk"""
+        """ListRangeQueryAomPromGetRequest
+
+        The model defined in huaweicloud sdk
+
+        :param query: PromQL表达式(参考https://prometheus.io/docs/prometheus/latest/querying/basics/)。
+        :type query: str
+        :param start: 起始时间戳(Unix时间戳格式，单位：秒）。
+        :type start: str
+        :param end: 结束时间戳(Unix时间戳格式，单位：秒）。
+        :type end: str
+        :param step: 查询时间步长，时间区内每step秒执行一次。
+        :type step: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class ListRangeQueryAomPromGetRequest:
         PromQL表达式(参考https://prometheus.io/docs/prometheus/latest/querying/basics/)。
 
         :param query: The query of this ListRangeQueryAomPromGetRequest.
-        :type: str
+        :type query: str
         """
         self._query = query
 
@@ -91,7 +102,7 @@ class ListRangeQueryAomPromGetRequest:
         起始时间戳(Unix时间戳格式，单位：秒）。
 
         :param start: The start of this ListRangeQueryAomPromGetRequest.
-        :type: str
+        :type start: str
         """
         self._start = start
 
@@ -113,7 +124,7 @@ class ListRangeQueryAomPromGetRequest:
         结束时间戳(Unix时间戳格式，单位：秒）。
 
         :param end: The end of this ListRangeQueryAomPromGetRequest.
-        :type: str
+        :type end: str
         """
         self._end = end
 
@@ -135,7 +146,7 @@ class ListRangeQueryAomPromGetRequest:
         查询时间步长，时间区内每step秒执行一次。
 
         :param step: The step of this ListRangeQueryAomPromGetRequest.
-        :type: str
+        :type step: str
         """
         self._step = step
 

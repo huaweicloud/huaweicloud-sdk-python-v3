@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NetworkIpAvailability:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class NetworkIpAvailability:
     }
 
     def __init__(self, network_id=None, network_name=None, tenant_id=None, total_ips=None, used_ips=None, subnet_ip_availability=None):
-        """NetworkIpAvailability - a model defined in huaweicloud sdk"""
+        """NetworkIpAvailability
+
+        The model defined in huaweicloud sdk
+
+        :param network_id: 网络ID
+        :type network_id: str
+        :param network_name: 网络名称
+        :type network_name: str
+        :param tenant_id: 项目ID
+        :type tenant_id: str
+        :param total_ips: 网络中IP总数（不包含系统预留地址）
+        :type total_ips: int
+        :param used_ips: 网络中已经使用的IP数目（不包含系统预留地址）
+        :type used_ips: int
+        :param subnet_ip_availability: 子网IP使用情况的对象
+        :type subnet_ip_availability: list[:class:`huaweicloudsdkvpc.v2.SubnetIpAvailability`]
+        """
         
         
 
@@ -77,7 +92,7 @@ class NetworkIpAvailability:
         网络ID
 
         :param network_id: The network_id of this NetworkIpAvailability.
-        :type: str
+        :type network_id: str
         """
         self._network_id = network_id
 
@@ -99,7 +114,7 @@ class NetworkIpAvailability:
         网络名称
 
         :param network_name: The network_name of this NetworkIpAvailability.
-        :type: str
+        :type network_name: str
         """
         self._network_name = network_name
 
@@ -121,7 +136,7 @@ class NetworkIpAvailability:
         项目ID
 
         :param tenant_id: The tenant_id of this NetworkIpAvailability.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 
@@ -143,7 +158,7 @@ class NetworkIpAvailability:
         网络中IP总数（不包含系统预留地址）
 
         :param total_ips: The total_ips of this NetworkIpAvailability.
-        :type: int
+        :type total_ips: int
         """
         self._total_ips = total_ips
 
@@ -165,7 +180,7 @@ class NetworkIpAvailability:
         网络中已经使用的IP数目（不包含系统预留地址）
 
         :param used_ips: The used_ips of this NetworkIpAvailability.
-        :type: int
+        :type used_ips: int
         """
         self._used_ips = used_ips
 
@@ -176,7 +191,7 @@ class NetworkIpAvailability:
         子网IP使用情况的对象
 
         :return: The subnet_ip_availability of this NetworkIpAvailability.
-        :rtype: list[SubnetIpAvailability]
+        :rtype: list[:class:`huaweicloudsdkvpc.v2.SubnetIpAvailability`]
         """
         return self._subnet_ip_availability
 
@@ -187,7 +202,7 @@ class NetworkIpAvailability:
         子网IP使用情况的对象
 
         :param subnet_ip_availability: The subnet_ip_availability of this NetworkIpAvailability.
-        :type: list[SubnetIpAvailability]
+        :type subnet_ip_availability: list[:class:`huaweicloudsdkvpc.v2.SubnetIpAvailability`]
         """
         self._subnet_ip_availability = subnet_ip_availability
 

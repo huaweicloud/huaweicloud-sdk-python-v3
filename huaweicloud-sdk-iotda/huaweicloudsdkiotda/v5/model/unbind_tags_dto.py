@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UnbindTagsDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UnbindTagsDTO:
     }
 
     def __init__(self, resource_type=None, resource_id=None, tag_keys=None):
-        """UnbindTagsDTO - a model defined in huaweicloud sdk"""
+        """UnbindTagsDTO
+
+        The model defined in huaweicloud sdk
+
+        :param resource_type: **参数说明**：要绑定标签的资源类型。 **取值范围**： - device：设备。
+        :type resource_type: str
+        :param resource_id: **参数说明**：要绑定标签的资源id。例如，资源类型为device，那么对应的资源id就是device_id。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
+        :type resource_id: str
+        :param tag_keys: **参数说明**：指定资源要解绑的标签键列表，标签键列表中各项之间不允许重复，不能填写不存在的标签键值 **取值范围**：标签键长度不超过64，只允许中文、字母、数字、以及_.-等字符的组合。
+        :type tag_keys: list[str]
+        """
         
         
 
@@ -65,7 +74,7 @@ class UnbindTagsDTO:
         **参数说明**：要绑定标签的资源类型。 **取值范围**： - device：设备。
 
         :param resource_type: The resource_type of this UnbindTagsDTO.
-        :type: str
+        :type resource_type: str
         """
         self._resource_type = resource_type
 
@@ -87,7 +96,7 @@ class UnbindTagsDTO:
         **参数说明**：要绑定标签的资源id。例如，资源类型为device，那么对应的资源id就是device_id。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :param resource_id: The resource_id of this UnbindTagsDTO.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -109,7 +118,7 @@ class UnbindTagsDTO:
         **参数说明**：指定资源要解绑的标签键列表，标签键列表中各项之间不允许重复，不能填写不存在的标签键值 **取值范围**：标签键长度不超过64，只允许中文、字母、数字、以及_.-等字符的组合。
 
         :param tag_keys: The tag_keys of this UnbindTagsDTO.
-        :type: list[str]
+        :type tag_keys: list[str]
         """
         self._tag_keys = tag_keys
 

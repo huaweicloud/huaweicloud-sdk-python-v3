@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MigrationTaskList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class MigrationTaskList:
     }
 
     def __init__(self, task_id=None, task_name=None, status=None, migration_type=None, migration_method=None, ecs_tenant_private_ip=None, data_source=None, source_instance_name=None, source_instance_id=None, target_instance_addrs=None, target_instance_name=None, target_instance_id=None, created_at=None):
-        """MigrationTaskList - a model defined in huaweicloud sdk"""
+        """MigrationTaskList
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 迁移任务ID。
+        :type task_id: str
+        :param task_name: 迁移任务名称。
+        :type task_name: str
+        :param status: 迁移任务状态，这个字段的值包括：SUCCESS, FAILED, MIGRATING，TERMINATED
+        :type status: str
+        :param migration_type: 迁移任务类型,包括备份文件导入和在线迁移两种类型。
+        :type migration_type: str
+        :param migration_method: 迁移方式，包括全量迁移和增量迁移两种类型。
+        :type migration_method: str
+        :param ecs_tenant_private_ip: 迁移机租户侧私有IP，与目的/源redis私有IP处于同VPC，可将此IP加入白名单
+        :type ecs_tenant_private_ip: str
+        :param data_source: 数据源，格式为ip:port或者桶名。
+        :type data_source: str
+        :param source_instance_name: 源实例名称，若自建redis则为空。
+        :type source_instance_name: str
+        :param source_instance_id: 源实例ID，若自建redis则为空。
+        :type source_instance_id: str
+        :param target_instance_addrs: 目标redis地址，格式为ip:port。
+        :type target_instance_addrs: str
+        :param target_instance_name: 目标实例名称。
+        :type target_instance_name: str
+        :param target_instance_id: 目标实例ID。
+        :type target_instance_id: str
+        :param created_at: 迁移任务创建时间
+        :type created_at: str
+        """
         
         
 
@@ -118,7 +147,7 @@ class MigrationTaskList:
         迁移任务ID。
 
         :param task_id: The task_id of this MigrationTaskList.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -140,7 +169,7 @@ class MigrationTaskList:
         迁移任务名称。
 
         :param task_name: The task_name of this MigrationTaskList.
-        :type: str
+        :type task_name: str
         """
         self._task_name = task_name
 
@@ -162,7 +191,7 @@ class MigrationTaskList:
         迁移任务状态，这个字段的值包括：SUCCESS, FAILED, MIGRATING，TERMINATED
 
         :param status: The status of this MigrationTaskList.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -184,7 +213,7 @@ class MigrationTaskList:
         迁移任务类型,包括备份文件导入和在线迁移两种类型。
 
         :param migration_type: The migration_type of this MigrationTaskList.
-        :type: str
+        :type migration_type: str
         """
         self._migration_type = migration_type
 
@@ -206,7 +235,7 @@ class MigrationTaskList:
         迁移方式，包括全量迁移和增量迁移两种类型。
 
         :param migration_method: The migration_method of this MigrationTaskList.
-        :type: str
+        :type migration_method: str
         """
         self._migration_method = migration_method
 
@@ -228,7 +257,7 @@ class MigrationTaskList:
         迁移机租户侧私有IP，与目的/源redis私有IP处于同VPC，可将此IP加入白名单
 
         :param ecs_tenant_private_ip: The ecs_tenant_private_ip of this MigrationTaskList.
-        :type: str
+        :type ecs_tenant_private_ip: str
         """
         self._ecs_tenant_private_ip = ecs_tenant_private_ip
 
@@ -250,7 +279,7 @@ class MigrationTaskList:
         数据源，格式为ip:port或者桶名。
 
         :param data_source: The data_source of this MigrationTaskList.
-        :type: str
+        :type data_source: str
         """
         self._data_source = data_source
 
@@ -272,7 +301,7 @@ class MigrationTaskList:
         源实例名称，若自建redis则为空。
 
         :param source_instance_name: The source_instance_name of this MigrationTaskList.
-        :type: str
+        :type source_instance_name: str
         """
         self._source_instance_name = source_instance_name
 
@@ -294,7 +323,7 @@ class MigrationTaskList:
         源实例ID，若自建redis则为空。
 
         :param source_instance_id: The source_instance_id of this MigrationTaskList.
-        :type: str
+        :type source_instance_id: str
         """
         self._source_instance_id = source_instance_id
 
@@ -316,7 +345,7 @@ class MigrationTaskList:
         目标redis地址，格式为ip:port。
 
         :param target_instance_addrs: The target_instance_addrs of this MigrationTaskList.
-        :type: str
+        :type target_instance_addrs: str
         """
         self._target_instance_addrs = target_instance_addrs
 
@@ -338,7 +367,7 @@ class MigrationTaskList:
         目标实例名称。
 
         :param target_instance_name: The target_instance_name of this MigrationTaskList.
-        :type: str
+        :type target_instance_name: str
         """
         self._target_instance_name = target_instance_name
 
@@ -360,7 +389,7 @@ class MigrationTaskList:
         目标实例ID。
 
         :param target_instance_id: The target_instance_id of this MigrationTaskList.
-        :type: str
+        :type target_instance_id: str
         """
         self._target_instance_id = target_instance_id
 
@@ -382,7 +411,7 @@ class MigrationTaskList:
         迁移任务创建时间
 
         :param created_at: The created_at of this MigrationTaskList.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 

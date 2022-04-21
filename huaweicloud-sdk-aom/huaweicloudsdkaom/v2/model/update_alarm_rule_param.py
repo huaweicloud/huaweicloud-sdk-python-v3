@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateAlarmRuleParam:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -64,7 +63,47 @@ class UpdateAlarmRuleParam:
     }
 
     def __init__(self, action_enabled=None, alarm_actions=None, alarm_advice=None, alarm_description=None, alarm_level=None, alarm_rule_name=None, comparison_operator=None, dimensions=None, evaluation_periods=None, id_turn_on=None, insufficient_data_actions=None, metric_name=None, namespace=None, ok_actions=None, period=None, statistic=None, threshold=None, unit=None):
-        """UpdateAlarmRuleParam - a model defined in huaweicloud sdk"""
+        """UpdateAlarmRuleParam
+
+        The model defined in huaweicloud sdk
+
+        :param action_enabled: 是否启用通知。
+        :type action_enabled: bool
+        :param alarm_actions: 告警状态通知列表。
+        :type alarm_actions: list[str]
+        :param alarm_advice: 告警清除建议。
+        :type alarm_advice: str
+        :param alarm_description: 阈值规则描述。
+        :type alarm_description: str
+        :param alarm_level: 告警级别。1：紧急，2：重要，3：一般，4：提示。
+        :type alarm_level: int
+        :param alarm_rule_name: 阈值规则名称。
+        :type alarm_rule_name: str
+        :param comparison_operator: 超限条件。
+        :type comparison_operator: str
+        :param dimensions: 时间序列维度。
+        :type dimensions: list[:class:`huaweicloudsdkaom.v2.Dimension`]
+        :param evaluation_periods: 间隔周期。
+        :type evaluation_periods: int
+        :param id_turn_on: 阈值规则是否启用。
+        :type id_turn_on: bool
+        :param insufficient_data_actions: 数据不足通知列表。
+        :type insufficient_data_actions: list[str]
+        :param metric_name: 时间序列名称。名称长度取值范围为1~255个字符。
+        :type metric_name: str
+        :param namespace: 时间序列命名空间。
+        :type namespace: str
+        :param ok_actions: 正常状态通知列表。
+        :type ok_actions: list[str]
+        :param period: 统计周期。
+        :type period: int
+        :param statistic: 统计方式。
+        :type statistic: str
+        :param threshold: 超限值。
+        :type threshold: str
+        :param unit: 时间序列单位
+        :type unit: str
+        """
         
         
 
@@ -142,7 +181,7 @@ class UpdateAlarmRuleParam:
         是否启用通知。
 
         :param action_enabled: The action_enabled of this UpdateAlarmRuleParam.
-        :type: bool
+        :type action_enabled: bool
         """
         self._action_enabled = action_enabled
 
@@ -164,7 +203,7 @@ class UpdateAlarmRuleParam:
         告警状态通知列表。
 
         :param alarm_actions: The alarm_actions of this UpdateAlarmRuleParam.
-        :type: list[str]
+        :type alarm_actions: list[str]
         """
         self._alarm_actions = alarm_actions
 
@@ -186,7 +225,7 @@ class UpdateAlarmRuleParam:
         告警清除建议。
 
         :param alarm_advice: The alarm_advice of this UpdateAlarmRuleParam.
-        :type: str
+        :type alarm_advice: str
         """
         self._alarm_advice = alarm_advice
 
@@ -208,7 +247,7 @@ class UpdateAlarmRuleParam:
         阈值规则描述。
 
         :param alarm_description: The alarm_description of this UpdateAlarmRuleParam.
-        :type: str
+        :type alarm_description: str
         """
         self._alarm_description = alarm_description
 
@@ -230,7 +269,7 @@ class UpdateAlarmRuleParam:
         告警级别。1：紧急，2：重要，3：一般，4：提示。
 
         :param alarm_level: The alarm_level of this UpdateAlarmRuleParam.
-        :type: int
+        :type alarm_level: int
         """
         self._alarm_level = alarm_level
 
@@ -252,7 +291,7 @@ class UpdateAlarmRuleParam:
         阈值规则名称。
 
         :param alarm_rule_name: The alarm_rule_name of this UpdateAlarmRuleParam.
-        :type: str
+        :type alarm_rule_name: str
         """
         self._alarm_rule_name = alarm_rule_name
 
@@ -274,7 +313,7 @@ class UpdateAlarmRuleParam:
         超限条件。
 
         :param comparison_operator: The comparison_operator of this UpdateAlarmRuleParam.
-        :type: str
+        :type comparison_operator: str
         """
         self._comparison_operator = comparison_operator
 
@@ -285,7 +324,7 @@ class UpdateAlarmRuleParam:
         时间序列维度。
 
         :return: The dimensions of this UpdateAlarmRuleParam.
-        :rtype: list[Dimension]
+        :rtype: list[:class:`huaweicloudsdkaom.v2.Dimension`]
         """
         return self._dimensions
 
@@ -296,7 +335,7 @@ class UpdateAlarmRuleParam:
         时间序列维度。
 
         :param dimensions: The dimensions of this UpdateAlarmRuleParam.
-        :type: list[Dimension]
+        :type dimensions: list[:class:`huaweicloudsdkaom.v2.Dimension`]
         """
         self._dimensions = dimensions
 
@@ -318,7 +357,7 @@ class UpdateAlarmRuleParam:
         间隔周期。
 
         :param evaluation_periods: The evaluation_periods of this UpdateAlarmRuleParam.
-        :type: int
+        :type evaluation_periods: int
         """
         self._evaluation_periods = evaluation_periods
 
@@ -340,7 +379,7 @@ class UpdateAlarmRuleParam:
         阈值规则是否启用。
 
         :param id_turn_on: The id_turn_on of this UpdateAlarmRuleParam.
-        :type: bool
+        :type id_turn_on: bool
         """
         self._id_turn_on = id_turn_on
 
@@ -362,7 +401,7 @@ class UpdateAlarmRuleParam:
         数据不足通知列表。
 
         :param insufficient_data_actions: The insufficient_data_actions of this UpdateAlarmRuleParam.
-        :type: list[str]
+        :type insufficient_data_actions: list[str]
         """
         self._insufficient_data_actions = insufficient_data_actions
 
@@ -384,7 +423,7 @@ class UpdateAlarmRuleParam:
         时间序列名称。名称长度取值范围为1~255个字符。
 
         :param metric_name: The metric_name of this UpdateAlarmRuleParam.
-        :type: str
+        :type metric_name: str
         """
         self._metric_name = metric_name
 
@@ -406,7 +445,7 @@ class UpdateAlarmRuleParam:
         时间序列命名空间。
 
         :param namespace: The namespace of this UpdateAlarmRuleParam.
-        :type: str
+        :type namespace: str
         """
         self._namespace = namespace
 
@@ -428,7 +467,7 @@ class UpdateAlarmRuleParam:
         正常状态通知列表。
 
         :param ok_actions: The ok_actions of this UpdateAlarmRuleParam.
-        :type: list[str]
+        :type ok_actions: list[str]
         """
         self._ok_actions = ok_actions
 
@@ -450,7 +489,7 @@ class UpdateAlarmRuleParam:
         统计周期。
 
         :param period: The period of this UpdateAlarmRuleParam.
-        :type: int
+        :type period: int
         """
         self._period = period
 
@@ -472,7 +511,7 @@ class UpdateAlarmRuleParam:
         统计方式。
 
         :param statistic: The statistic of this UpdateAlarmRuleParam.
-        :type: str
+        :type statistic: str
         """
         self._statistic = statistic
 
@@ -494,7 +533,7 @@ class UpdateAlarmRuleParam:
         超限值。
 
         :param threshold: The threshold of this UpdateAlarmRuleParam.
-        :type: str
+        :type threshold: str
         """
         self._threshold = threshold
 
@@ -516,7 +555,7 @@ class UpdateAlarmRuleParam:
         时间序列单位
 
         :param unit: The unit of this UpdateAlarmRuleParam.
-        :type: str
+        :type unit: str
         """
         self._unit = unit
 

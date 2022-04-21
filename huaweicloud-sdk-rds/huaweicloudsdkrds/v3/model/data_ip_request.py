@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DataIpRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DataIpRequest:
     }
 
     def __init__(self, new_ip=None):
-        """DataIpRequest - a model defined in huaweicloud sdk"""
+        """DataIpRequest
+
+        The model defined in huaweicloud sdk
+
+        :param new_ip: 内网ip
+        :type new_ip: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class DataIpRequest:
         内网ip
 
         :param new_ip: The new_ip of this DataIpRequest.
-        :type: str
+        :type new_ip: str
         """
         self._new_ip = new_ip
 

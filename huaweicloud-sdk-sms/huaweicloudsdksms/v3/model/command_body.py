@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CommandBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CommandBody:
     }
 
     def __init__(self, command_name=None, result=None, result_detail=None):
-        """CommandBody - a model defined in huaweicloud sdk"""
+        """CommandBody
+
+        The model defined in huaweicloud sdk
+
+        :param command_name: 命令名称，分为：START、STOP、DELETE、SYNC、UPLOAD_LOG、RSET_LOG_ACL
+        :type command_name: str
+        :param result: 命令执行结果  success代表执行命令成功  fail代表命令执行失败 
+        :type result: str
+        :param result_detail: JSON格式的命令执行结果，只用于保存数据库，没有其他作用
+        :type result_detail: object
+        """
         
         
 
@@ -65,7 +74,7 @@ class CommandBody:
         命令名称，分为：START、STOP、DELETE、SYNC、UPLOAD_LOG、RSET_LOG_ACL
 
         :param command_name: The command_name of this CommandBody.
-        :type: str
+        :type command_name: str
         """
         self._command_name = command_name
 
@@ -87,7 +96,7 @@ class CommandBody:
         命令执行结果  success代表执行命令成功  fail代表命令执行失败 
 
         :param result: The result of this CommandBody.
-        :type: str
+        :type result: str
         """
         self._result = result
 
@@ -109,7 +118,7 @@ class CommandBody:
         JSON格式的命令执行结果，只用于保存数据库，没有其他作用
 
         :param result_detail: The result_detail of this CommandBody.
-        :type: object
+        :type result_detail: object
         """
         self._result_detail = result_detail
 

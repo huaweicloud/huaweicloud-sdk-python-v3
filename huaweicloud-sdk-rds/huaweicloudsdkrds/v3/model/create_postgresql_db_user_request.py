@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreatePostgresqlDbUserRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreatePostgresqlDbUserRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """CreatePostgresqlDbUserRequest - a model defined in huaweicloud sdk"""
+        """CreatePostgresqlDbUserRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言
+        :type x_language: str
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param body: Body of the CreatePostgresqlDbUserRequest
+        :type body: :class:`huaweicloudsdkrds.v3.PostgresqlUserForCreation`
+        """
         
         
 
@@ -67,7 +76,7 @@ class CreatePostgresqlDbUserRequest:
         语言
 
         :param x_language: The x_language of this CreatePostgresqlDbUserRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -89,7 +98,7 @@ class CreatePostgresqlDbUserRequest:
         实例ID。
 
         :param instance_id: The instance_id of this CreatePostgresqlDbUserRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -99,7 +108,7 @@ class CreatePostgresqlDbUserRequest:
 
 
         :return: The body of this CreatePostgresqlDbUserRequest.
-        :rtype: PostgresqlUserForCreation
+        :rtype: :class:`huaweicloudsdkrds.v3.PostgresqlUserForCreation`
         """
         return self._body
 
@@ -109,7 +118,7 @@ class CreatePostgresqlDbUserRequest:
 
 
         :param body: The body of this CreatePostgresqlDbUserRequest.
-        :type: PostgresqlUserForCreation
+        :type body: :class:`huaweicloudsdkrds.v3.PostgresqlUserForCreation`
         """
         self._body = body
 

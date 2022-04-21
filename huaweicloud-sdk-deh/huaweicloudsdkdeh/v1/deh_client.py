@@ -51,22 +51,20 @@ class DeHClient(Client):
     def batch_create_dedicated_host_tags(self, request):
         """批量添加专属主机标签
 
-        为指定专属主机批量添加标签。  标签管理服务（TMS）使用该接口批量添加专属主机的标签。
+        为指定专属主机批量添加标签。
+        
+        标签管理服务（TMS）使用该接口批量添加专属主机的标签。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchCreateDedicatedHostTagsRequest request
-        :return: BatchCreateDedicatedHostTagsResponse
+        :param request: Request instance for BatchCreateDedicatedHostTags
+        :type request: :class:`huaweicloudsdkdeh.v1.BatchCreateDedicatedHostTagsRequest`
+        :rtype: :class:`huaweicloudsdkdeh.v1.BatchCreateDedicatedHostTagsResponse`
         """
         return self.batch_create_dedicated_host_tags_with_http_info(request)
 
     def batch_create_dedicated_host_tags_with_http_info(self, request):
-        """批量添加专属主机标签
-
-        为指定专属主机批量添加标签。  标签管理服务（TMS）使用该接口批量添加专属主机的标签。
-
-        :param BatchCreateDedicatedHostTagsRequest request
-        :return: BatchCreateDedicatedHostTagsResponse
-        """
-
         all_params = ['dedicated_host_id', 'req_set_or_delete_tags']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -112,26 +110,23 @@ class DeHClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_delete_dedicated_host_tags(self, request):
         """批量删除专属主机标签
 
-        批量删除指定专属主机标签。  标签管理服务（TMS）使用该接口批量删除专属主机的标签。
+        批量删除指定专属主机标签。
+        
+        标签管理服务（TMS）使用该接口批量删除专属主机的标签。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchDeleteDedicatedHostTagsRequest request
-        :return: BatchDeleteDedicatedHostTagsResponse
+        :param request: Request instance for BatchDeleteDedicatedHostTags
+        :type request: :class:`huaweicloudsdkdeh.v1.BatchDeleteDedicatedHostTagsRequest`
+        :rtype: :class:`huaweicloudsdkdeh.v1.BatchDeleteDedicatedHostTagsResponse`
         """
         return self.batch_delete_dedicated_host_tags_with_http_info(request)
 
     def batch_delete_dedicated_host_tags_with_http_info(self, request):
-        """批量删除专属主机标签
-
-        批量删除指定专属主机标签。  标签管理服务（TMS）使用该接口批量删除专属主机的标签。
-
-        :param BatchDeleteDedicatedHostTagsRequest request
-        :return: BatchDeleteDedicatedHostTagsResponse
-        """
-
         all_params = ['dedicated_host_id', 'req_set_or_delete_tags']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -177,26 +172,21 @@ class DeHClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_dedicated_host(self, request):
         """分配专属主机
 
         分配一台或多台专属主机，需要设置实例规格、所属AZ、数量等参数。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateDedicatedHostRequest request
-        :return: CreateDedicatedHostResponse
+        :param request: Request instance for CreateDedicatedHost
+        :type request: :class:`huaweicloudsdkdeh.v1.CreateDedicatedHostRequest`
+        :rtype: :class:`huaweicloudsdkdeh.v1.CreateDedicatedHostResponse`
         """
         return self.create_dedicated_host_with_http_info(request)
 
     def create_dedicated_host_with_http_info(self, request):
-        """分配专属主机
-
-        分配一台或多台专属主机，需要设置实例规格、所属AZ、数量等参数。
-
-        :param CreateDedicatedHostRequest request
-        :return: CreateDedicatedHostResponse
-        """
-
         all_params = ['req_allocate_deh']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -240,26 +230,21 @@ class DeHClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_dedicated_host(self, request):
         """释放专属主机
 
         释放专属主机。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteDedicatedHostRequest request
-        :return: DeleteDedicatedHostResponse
+        :param request: Request instance for DeleteDedicatedHost
+        :type request: :class:`huaweicloudsdkdeh.v1.DeleteDedicatedHostRequest`
+        :rtype: :class:`huaweicloudsdkdeh.v1.DeleteDedicatedHostResponse`
         """
         return self.delete_dedicated_host_with_http_info(request)
 
     def delete_dedicated_host_with_http_info(self, request):
-        """释放专属主机
-
-        释放专属主机。
-
-        :param DeleteDedicatedHostRequest request
-        :return: DeleteDedicatedHostResponse
-        """
-
         all_params = ['dedicated_host_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -303,26 +288,21 @@ class DeHClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_dedicated_host_types(self, request):
         """查询可用的专属主机类型
 
         查询某一AZ内可用的专属主机类型。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListDedicatedHostTypesRequest request
-        :return: ListDedicatedHostTypesResponse
+        :param request: Request instance for ListDedicatedHostTypes
+        :type request: :class:`huaweicloudsdkdeh.v1.ListDedicatedHostTypesRequest`
+        :rtype: :class:`huaweicloudsdkdeh.v1.ListDedicatedHostTypesResponse`
         """
         return self.list_dedicated_host_types_with_http_info(request)
 
     def list_dedicated_host_types_with_http_info(self, request):
-        """查询可用的专属主机类型
-
-        查询某一AZ内可用的专属主机类型。
-
-        :param ListDedicatedHostTypesRequest request
-        :return: ListDedicatedHostTypesResponse
-        """
-
         all_params = ['availability_zone']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -366,26 +346,21 @@ class DeHClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_dedicated_hosts(self, request):
         """查询专属主机列表
 
         通过该接口查询专属主机列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListDedicatedHostsRequest request
-        :return: ListDedicatedHostsResponse
+        :param request: Request instance for ListDedicatedHosts
+        :type request: :class:`huaweicloudsdkdeh.v1.ListDedicatedHostsRequest`
+        :rtype: :class:`huaweicloudsdkdeh.v1.ListDedicatedHostsResponse`
         """
         return self.list_dedicated_hosts_with_http_info(request)
 
     def list_dedicated_hosts_with_http_info(self, request):
-        """查询专属主机列表
-
-        通过该接口查询专属主机列表。
-
-        :param ListDedicatedHostsRequest request
-        :return: ListDedicatedHostsResponse
-        """
-
         all_params = ['dedicated_host_id', 'name', 'host_type', 'host_type_name', 'flavor', 'state', 'tenant', 'availability_zone', 'limit', 'marker', 'tags', 'instance_uuid', 'released_at', 'changes_since']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -455,26 +430,23 @@ class DeHClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_dedicated_hosts_by_tags(self, request):
         """按标签查询专属主机列表
 
-        使用标签过滤专属主机列表，并返回专属主机使用的所有标签。  标签管理服务（TMS）使用该接口过滤专属主机列表。
+        使用标签过滤专属主机列表，并返回专属主机使用的所有标签。
+        
+        标签管理服务（TMS）使用该接口过滤专属主机列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListDedicatedHostsByTagsRequest request
-        :return: ListDedicatedHostsByTagsResponse
+        :param request: Request instance for ListDedicatedHostsByTags
+        :type request: :class:`huaweicloudsdkdeh.v1.ListDedicatedHostsByTagsRequest`
+        :rtype: :class:`huaweicloudsdkdeh.v1.ListDedicatedHostsByTagsResponse`
         """
         return self.list_dedicated_hosts_by_tags_with_http_info(request)
 
     def list_dedicated_hosts_by_tags_with_http_info(self, request):
-        """按标签查询专属主机列表
-
-        使用标签过滤专属主机列表，并返回专属主机使用的所有标签。  标签管理服务（TMS）使用该接口过滤专属主机列表。
-
-        :param ListDedicatedHostsByTagsRequest request
-        :return: ListDedicatedHostsByTagsResponse
-        """
-
         all_params = ['req_list_deh_by_tags']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -518,26 +490,21 @@ class DeHClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_servers_dedicated_host(self, request):
         """查询专属主机上的云服务器
 
         查询专属主机上已部署的云服务器信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListServersDedicatedHostRequest request
-        :return: ListServersDedicatedHostResponse
+        :param request: Request instance for ListServersDedicatedHost
+        :type request: :class:`huaweicloudsdkdeh.v1.ListServersDedicatedHostRequest`
+        :rtype: :class:`huaweicloudsdkdeh.v1.ListServersDedicatedHostResponse`
         """
         return self.list_servers_dedicated_host_with_http_info(request)
 
     def list_servers_dedicated_host_with_http_info(self, request):
-        """查询专属主机上的云服务器
-
-        查询专属主机上已部署的云服务器信息。
-
-        :param ListServersDedicatedHostRequest request
-        :return: ListServersDedicatedHostResponse
-        """
-
         all_params = ['dedicated_host_id', 'limit', 'marker']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -585,26 +552,21 @@ class DeHClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_dedicated_host(self, request):
         """查询专属主机详情
 
         查询某一台专属主机的详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowDedicatedHostRequest request
-        :return: ShowDedicatedHostResponse
+        :param request: Request instance for ShowDedicatedHost
+        :type request: :class:`huaweicloudsdkdeh.v1.ShowDedicatedHostRequest`
+        :rtype: :class:`huaweicloudsdkdeh.v1.ShowDedicatedHostResponse`
         """
         return self.show_dedicated_host_with_http_info(request)
 
     def show_dedicated_host_with_http_info(self, request):
-        """查询专属主机详情
-
-        查询某一台专属主机的详情。
-
-        :param ShowDedicatedHostRequest request
-        :return: ShowDedicatedHostResponse
-        """
-
         all_params = ['dedicated_host_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -648,26 +610,23 @@ class DeHClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_dedicated_host_tags(self, request):
         """查询指定专属主机标签
 
-        查询指定专属主机的标签信息。  标签管理服务（TMS）使用该接口查询指定专属主机的全部标签数据。
+        查询指定专属主机的标签信息。
+        
+        标签管理服务（TMS）使用该接口查询指定专属主机的全部标签数据。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowDedicatedHostTagsRequest request
-        :return: ShowDedicatedHostTagsResponse
+        :param request: Request instance for ShowDedicatedHostTags
+        :type request: :class:`huaweicloudsdkdeh.v1.ShowDedicatedHostTagsRequest`
+        :rtype: :class:`huaweicloudsdkdeh.v1.ShowDedicatedHostTagsResponse`
         """
         return self.show_dedicated_host_tags_with_http_info(request)
 
     def show_dedicated_host_tags_with_http_info(self, request):
-        """查询指定专属主机标签
-
-        查询指定专属主机的标签信息。  标签管理服务（TMS）使用该接口查询指定专属主机的全部标签数据。
-
-        :param ShowDedicatedHostTagsRequest request
-        :return: ShowDedicatedHostTagsResponse
-        """
-
         all_params = ['dedicated_host_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -711,26 +670,21 @@ class DeHClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_quota_sets(self, request):
         """查询租户的专属主机配额
 
         该接口用于查询租户的专属主机配额。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowQuotaSetsRequest request
-        :return: ShowQuotaSetsResponse
+        :param request: Request instance for ShowQuotaSets
+        :type request: :class:`huaweicloudsdkdeh.v1.ShowQuotaSetsRequest`
+        :rtype: :class:`huaweicloudsdkdeh.v1.ShowQuotaSetsResponse`
         """
         return self.show_quota_sets_with_http_info(request)
 
     def show_quota_sets_with_http_info(self, request):
-        """查询租户的专属主机配额
-
-        该接口用于查询租户的专属主机配额。
-
-        :param ShowQuotaSetsRequest request
-        :return: ShowQuotaSetsResponse
-        """
-
         all_params = ['tenant_id', 'resource']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -776,26 +730,21 @@ class DeHClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_dedicated_host(self, request):
         """更新专属主机属性
 
         该接口用于变更专属主机的“auto_placement”和“name”属性。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateDedicatedHostRequest request
-        :return: UpdateDedicatedHostResponse
+        :param request: Request instance for UpdateDedicatedHost
+        :type request: :class:`huaweicloudsdkdeh.v1.UpdateDedicatedHostRequest`
+        :rtype: :class:`huaweicloudsdkdeh.v1.UpdateDedicatedHostResponse`
         """
         return self.update_dedicated_host_with_http_info(request)
 
     def update_dedicated_host_with_http_info(self, request):
-        """更新专属主机属性
-
-        该接口用于变更专属主机的“auto_placement”和“name”属性。
-
-        :param UpdateDedicatedHostRequest request
-        :return: UpdateDedicatedHostResponse
-        """
-
         all_params = ['dedicated_host_id', 'req_update_deh']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -840,7 +789,6 @@ class DeHClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

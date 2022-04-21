@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RollbackInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RollbackInfo:
     }
 
     def __init__(self, volume_id=None):
-        """RollbackInfo - a model defined in huaweicloud sdk"""
+        """RollbackInfo
+
+        The model defined in huaweicloud sdk
+
+        :param volume_id: 回滚的目标云硬盘UUID。
+        :type volume_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class RollbackInfo:
         回滚的目标云硬盘UUID。
 
         :param volume_id: The volume_id of this RollbackInfo.
-        :type: str
+        :type volume_id: str
         """
         self._volume_id = volume_id
 

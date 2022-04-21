@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListScalingConfigsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListScalingConfigsRequest:
     }
 
     def __init__(self, scaling_configuration_name=None, image_id=None, start_number=None, limit=None):
-        """ListScalingConfigsRequest - a model defined in huaweicloud sdk"""
+        """ListScalingConfigsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param scaling_configuration_name: 伸缩配置名称。
+        :type scaling_configuration_name: str
+        :param image_id: 镜像ID，同imageRef。
+        :type image_id: str
+        :param start_number: 查询的起始行号，默认为0。
+        :type start_number: int
+        :param limit: 查询的记录条数，默认为20。
+        :type limit: int
+        """
         
         
 
@@ -73,7 +84,7 @@ class ListScalingConfigsRequest:
         伸缩配置名称。
 
         :param scaling_configuration_name: The scaling_configuration_name of this ListScalingConfigsRequest.
-        :type: str
+        :type scaling_configuration_name: str
         """
         self._scaling_configuration_name = scaling_configuration_name
 
@@ -95,7 +106,7 @@ class ListScalingConfigsRequest:
         镜像ID，同imageRef。
 
         :param image_id: The image_id of this ListScalingConfigsRequest.
-        :type: str
+        :type image_id: str
         """
         self._image_id = image_id
 
@@ -117,7 +128,7 @@ class ListScalingConfigsRequest:
         查询的起始行号，默认为0。
 
         :param start_number: The start_number of this ListScalingConfigsRequest.
-        :type: int
+        :type start_number: int
         """
         self._start_number = start_number
 
@@ -139,7 +150,7 @@ class ListScalingConfigsRequest:
         查询的记录条数，默认为20。
 
         :param limit: The limit of this ListScalingConfigsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

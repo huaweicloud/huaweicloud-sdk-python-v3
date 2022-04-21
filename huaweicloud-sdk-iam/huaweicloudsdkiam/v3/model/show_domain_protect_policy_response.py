@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDomainProtectPolicyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowDomainProtectPolicyResponse(SdkResponse):
     }
 
     def __init__(self, protect_policy=None):
-        """ShowDomainProtectPolicyResponse - a model defined in huaweicloud sdk"""
+        """ShowDomainProtectPolicyResponse
+
+        The model defined in huaweicloud sdk
+
+        :param protect_policy: 
+        :type protect_policy: :class:`huaweicloudsdkiam.v3.ProtectPolicyResult`
+        """
         
         super(ShowDomainProtectPolicyResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class ShowDomainProtectPolicyResponse(SdkResponse):
 
 
         :return: The protect_policy of this ShowDomainProtectPolicyResponse.
-        :rtype: ProtectPolicyResult
+        :rtype: :class:`huaweicloudsdkiam.v3.ProtectPolicyResult`
         """
         return self._protect_policy
 
@@ -56,7 +61,7 @@ class ShowDomainProtectPolicyResponse(SdkResponse):
 
 
         :param protect_policy: The protect_policy of this ShowDomainProtectPolicyResponse.
-        :type: ProtectPolicyResult
+        :type protect_policy: :class:`huaweicloudsdkiam.v3.ProtectPolicyResult`
         """
         self._protect_policy = protect_policy
 

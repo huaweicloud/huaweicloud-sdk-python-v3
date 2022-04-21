@@ -52,21 +52,17 @@ class GaussDBforopenGaussClient(Client):
         """创建数据库实例
 
         创建数据库企业版和集中式实例
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateInstanceRequest request
-        :return: CreateInstanceResponse
+        :param request: Request instance for CreateInstance
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateInstanceRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateInstanceResponse`
         """
         return self.create_instance_with_http_info(request)
 
     def create_instance_with_http_info(self, request):
-        """创建数据库实例
-
-        创建数据库企业版和集中式实例
-
-        :param CreateInstanceRequest request
-        :return: CreateInstanceResponse
-        """
-
         all_params = ['create_instance_request', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -112,26 +108,21 @@ class GaussDBforopenGaussClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_instance(self, request):
         """删除实例
 
         删除数据库实例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteInstanceRequest request
-        :return: DeleteInstanceResponse
+        :param request: Request instance for DeleteInstance
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.DeleteInstanceRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.DeleteInstanceResponse`
         """
         return self.delete_instance_with_http_info(request)
 
     def delete_instance_with_http_info(self, request):
-        """删除实例
-
-        删除数据库实例。
-
-        :param DeleteInstanceRequest request
-        :return: DeleteInstanceResponse
-        """
-
         all_params = ['instance_id', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -177,26 +168,21 @@ class GaussDBforopenGaussClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_configurations(self, request):
         """获取参数模板列表
 
         获取参数模板列表，包括所有数据库的默认参数模板和用户创建的参数模板。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListConfigurationsRequest request
-        :return: ListConfigurationsResponse
+        :param request: Request instance for ListConfigurations
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListConfigurationsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListConfigurationsResponse`
         """
         return self.list_configurations_with_http_info(request)
 
     def list_configurations_with_http_info(self, request):
-        """获取参数模板列表
-
-        获取参数模板列表，包括所有数据库的默认参数模板和用户创建的参数模板。
-
-        :param ListConfigurationsRequest request
-        :return: ListConfigurationsResponse
-        """
-
         all_params = ['x_language', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -244,26 +230,21 @@ class GaussDBforopenGaussClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_datastores(self, request):
         """查询数据库引擎的版本
 
         查询指定数据库引擎对应的版本信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListDatastoresRequest request
-        :return: ListDatastoresResponse
+        :param request: Request instance for ListDatastores
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListDatastoresRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListDatastoresResponse`
         """
         return self.list_datastores_with_http_info(request)
 
     def list_datastores_with_http_info(self, request):
-        """查询数据库引擎的版本
-
-        查询指定数据库引擎对应的版本信息。
-
-        :param ListDatastoresRequest request
-        :return: ListDatastoresResponse
-        """
-
         all_params = ['x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -307,26 +288,21 @@ class GaussDBforopenGaussClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_flavors(self, request):
         """查询数据库规格
 
         查询数据库的规格信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListFlavorsRequest request
-        :return: ListFlavorsResponse
+        :param request: Request instance for ListFlavors
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListFlavorsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListFlavorsResponse`
         """
         return self.list_flavors_with_http_info(request)
 
     def list_flavors_with_http_info(self, request):
-        """查询数据库规格
-
-        查询数据库的规格信息。
-
-        :param ListFlavorsRequest request
-        :return: ListFlavorsResponse
-        """
-
         all_params = ['x_language', 'version', 'spec_code', 'ha_mode', 'limit', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -380,26 +356,21 @@ class GaussDBforopenGaussClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_instances(self, request):
         """查询数据库实例列表/查询实例详情
 
         查询数据库实例列表/查询实例详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListInstancesRequest request
-        :return: ListInstancesResponse
+        :param request: Request instance for ListInstances
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListInstancesRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListInstancesResponse`
         """
         return self.list_instances_with_http_info(request)
 
     def list_instances_with_http_info(self, request):
-        """查询数据库实例列表/查询实例详情
-
-        查询数据库实例列表/查询实例详情
-
-        :param ListInstancesRequest request
-        :return: ListInstancesResponse
-        """
-
         all_params = ['x_language', 'id', 'name', 'type', 'datastore_type', 'vpc_id', 'subnet_id', 'offset', 'limit', 'tags']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -462,26 +433,21 @@ class GaussDBforopenGaussClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_storage_types(self, request):
         """查询数据库磁盘类型
 
         查询指定数据库引擎对应的磁盘类型。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListStorageTypesRequest request
-        :return: ListStorageTypesResponse
+        :param request: Request instance for ListStorageTypes
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListStorageTypesRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListStorageTypesResponse`
         """
         return self.list_storage_types_with_http_info(request)
 
     def list_storage_types_with_http_info(self, request):
-        """查询数据库磁盘类型
-
-        查询指定数据库引擎对应的磁盘类型。
-
-        :param ListStorageTypesRequest request
-        :return: ListStorageTypesResponse
-        """
-
         all_params = ['version', 'x_language', 'ha_mode']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -529,26 +495,21 @@ class GaussDBforopenGaussClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def reset_pwd(self, request):
         """重置数据库密码。
 
         重置数据库密码。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ResetPwdRequest request
-        :return: ResetPwdResponse
+        :param request: Request instance for ResetPwd
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ResetPwdRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ResetPwdResponse`
         """
         return self.reset_pwd_with_http_info(request)
 
     def reset_pwd_with_http_info(self, request):
-        """重置数据库密码。
-
-        重置数据库密码。
-
-        :param ResetPwdRequest request
-        :return: ResetPwdResponse
-        """
-
         all_params = ['instance_id', 'pwd_reset_request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -596,26 +557,21 @@ class GaussDBforopenGaussClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def restart_instance(self, request):
         """重启数据库实例
 
         重启数据库实例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param RestartInstanceRequest request
-        :return: RestartInstanceResponse
+        :param request: Request instance for RestartInstance
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.RestartInstanceRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.RestartInstanceResponse`
         """
         return self.restart_instance_with_http_info(request)
 
     def restart_instance_with_http_info(self, request):
-        """重启数据库实例
-
-        重启数据库实例。
-
-        :param RestartInstanceRequest request
-        :return: RestartInstanceResponse
-        """
-
         all_params = ['instance_id', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -661,26 +617,21 @@ class GaussDBforopenGaussClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def run_instance_action(self, request):
         """CN横向扩容/DN分片扩容/磁盘扩容
 
         CN横向扩容/DN分片扩容/磁盘扩容
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param RunInstanceActionRequest request
-        :return: RunInstanceActionResponse
+        :param request: Request instance for RunInstanceAction
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.RunInstanceActionRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.RunInstanceActionResponse`
         """
         return self.run_instance_action_with_http_info(request)
 
     def run_instance_action_with_http_info(self, request):
-        """CN横向扩容/DN分片扩容/磁盘扩容
-
-        CN横向扩容/DN分片扩容/磁盘扩容
-
-        :param RunInstanceActionRequest request
-        :return: RunInstanceActionResponse
-        """
-
         all_params = ['instance_id', 'instance_action_request', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -728,26 +679,21 @@ class GaussDBforopenGaussClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def set_backup_policy(self, request):
         """设置自动备份策略。
 
         设置自动备份策略。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param SetBackupPolicyRequest request
-        :return: SetBackupPolicyResponse
+        :param request: Request instance for SetBackupPolicy
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.SetBackupPolicyRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.SetBackupPolicyResponse`
         """
         return self.set_backup_policy_with_http_info(request)
 
     def set_backup_policy_with_http_info(self, request):
-        """设置自动备份策略。
-
-        设置自动备份策略。
-
-        :param SetBackupPolicyRequest request
-        :return: SetBackupPolicyResponse
-        """
-
         all_params = ['instance_id', 'set_backup_policy_request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -795,26 +741,21 @@ class GaussDBforopenGaussClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_instance_configuration(self, request):
         """获取指定实例的参数模板
 
         获取指定实例的参数模板。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowInstanceConfigurationRequest request
-        :return: ShowInstanceConfigurationResponse
+        :param request: Request instance for ShowInstanceConfiguration
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowInstanceConfigurationRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowInstanceConfigurationResponse`
         """
         return self.show_instance_configuration_with_http_info(request)
 
     def show_instance_configuration_with_http_info(self, request):
-        """获取指定实例的参数模板
-
-        获取指定实例的参数模板。
-
-        :param ShowInstanceConfigurationRequest request
-        :return: ShowInstanceConfigurationResponse
-        """
-
         all_params = ['instance_id', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -860,26 +801,21 @@ class GaussDBforopenGaussClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_instance_configuration(self, request):
         """修改指定实例的参数
 
         修改指定实例的参数。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateInstanceConfigurationRequest request
-        :return: UpdateInstanceConfigurationResponse
+        :param request: Request instance for UpdateInstanceConfiguration
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.UpdateInstanceConfigurationRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.UpdateInstanceConfigurationResponse`
         """
         return self.update_instance_configuration_with_http_info(request)
 
     def update_instance_configuration_with_http_info(self, request):
-        """修改指定实例的参数
-
-        修改指定实例的参数。
-
-        :param UpdateInstanceConfigurationRequest request
-        :return: UpdateInstanceConfigurationResponse
-        """
-
         all_params = ['instance_id', 'modify_instance_configuration_request', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -927,26 +863,21 @@ class GaussDBforopenGaussClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_instance_name(self, request):
         """修改实例名称
 
         修改实例名称。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateInstanceNameRequest request
-        :return: UpdateInstanceNameResponse
+        :param request: Request instance for UpdateInstanceName
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.UpdateInstanceNameRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.UpdateInstanceNameResponse`
         """
         return self.update_instance_name_with_http_info(request)
 
     def update_instance_name_with_http_info(self, request):
-        """修改实例名称
-
-        修改实例名称。
-
-        :param UpdateInstanceNameRequest request
-        :return: UpdateInstanceNameResponse
-        """
-
         all_params = ['instance_id', 'update_name_request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -993,7 +924,6 @@ class GaussDBforopenGaussClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

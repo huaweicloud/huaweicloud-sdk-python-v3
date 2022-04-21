@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteNotificationTemplateBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteNotificationTemplateBody:
     }
 
     def __init__(self, template_names=None):
-        """DeleteNotificationTemplateBody - a model defined in huaweicloud sdk"""
+        """DeleteNotificationTemplateBody
+
+        The model defined in huaweicloud sdk
+
+        :param template_names: 待删除模板名称数组
+        :type template_names: list[str]
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteNotificationTemplateBody:
         待删除模板名称数组
 
         :param template_names: The template_names of this DeleteNotificationTemplateBody.
-        :type: list[str]
+        :type template_names: list[str]
         """
         self._template_names = template_names
 

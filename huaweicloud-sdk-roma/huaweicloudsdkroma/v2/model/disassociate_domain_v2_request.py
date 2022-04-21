@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DisassociateDomainV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class DisassociateDomainV2Request:
     }
 
     def __init__(self, instance_id=None, group_id=None, domain_id=None):
-        """DisassociateDomainV2Request - a model defined in huaweicloud sdk"""
+        """DisassociateDomainV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param group_id: 分组的编号
+        :type group_id: str
+        :param domain_id: 域名的编号
+        :type domain_id: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class DisassociateDomainV2Request:
         实例ID
 
         :param instance_id: The instance_id of this DisassociateDomainV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -87,7 +96,7 @@ class DisassociateDomainV2Request:
         分组的编号
 
         :param group_id: The group_id of this DisassociateDomainV2Request.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -109,7 +118,7 @@ class DisassociateDomainV2Request:
         域名的编号
 
         :param domain_id: The domain_id of this DisassociateDomainV2Request.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 

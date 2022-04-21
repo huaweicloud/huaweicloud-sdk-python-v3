@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListL7RulesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class ListL7RulesRequest:
     }
 
     def __init__(self, l7policy_id=None, limit=None, marker=None, page_reverse=None, id=None, compare_type=None, provisioning_status=None, invert=None, admin_state_up=None, value=None, key=None, type=None, enterprise_project_id=None):
-        """ListL7RulesRequest - a model defined in huaweicloud sdk"""
+        """ListL7RulesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param l7policy_id: 策略ID。
+        :type l7policy_id: str
+        :param limit: 每页返回的个数。
+        :type limit: int
+        :param marker: 上一页最后一条记录的ID。  使用说明：  - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
+        :type marker: str
+        :param page_reverse: 分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。  使用说明： - 必须与limit一起使用。
+        :type page_reverse: bool
+        :param id: 转发规则ID。  支持多值查询，查询条件格式：*id&#x3D;xxx&amp;id&#x3D;xxx*。
+        :type id: list[str]
+        :param compare_type: 转发规则的匹配方式。  type为HOST_NAME时可以为EQUAL_TO。  type为PATH时可以为Perl类型的REGEX， STARTS_WITH，EQUAL_TO。  支持多值查询，查询条件格式：*compare_type&#x3D;xxx&amp;compare_type&#x3D;xxx*。
+        :type compare_type: list[str]
+        :param provisioning_status: 转发规则的配置状态。取值：ACTIVE 表示正常。  支持多值查询，查询条件格式：*provisioning_status&#x3D;xxx&amp;provisioning_status&#x3D;xxx*。
+        :type provisioning_status: list[str]
+        :param invert: 是否反向匹配。固定为false。该字段能更新但不会生效。
+        :type invert: bool
+        :param admin_state_up: 转发规则的管理状态，默认为true。  不支持该字段，请勿使用。
+        :type admin_state_up: bool
+        :param value: 匹配内容的值。  支持多值查询，查询条件格式：*value&#x3D;xxx&amp;value&#x3D;xxx*。
+        :type value: list[str]
+        :param key: 匹配内容的键值，用于标识规则。  支持多值查询，查询条件格式：*key&#x3D;xxx&amp;key&#x3D;xxx*。  不支持该字段，请勿使用。
+        :type key: list[str]
+        :param type: 匹配类别，可以为HOST_NAME，PATH。  一个l7policy下创建的l7rule的type不能重复。  支持多值查询，查询条件格式：*type&#x3D;xxx&amp;type&#x3D;xxx*。
+        :type type: list[str]
+        :param enterprise_project_id: 企业项目ID。  支持多值查询，查询条件格式：*enterprise_project_id&#x3D;xxx&amp;enterprise_project_id&#x3D;xxx*。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
+        :type enterprise_project_id: list[str]
+        """
         
         
 
@@ -117,7 +146,7 @@ class ListL7RulesRequest:
         策略ID。
 
         :param l7policy_id: The l7policy_id of this ListL7RulesRequest.
-        :type: str
+        :type l7policy_id: str
         """
         self._l7policy_id = l7policy_id
 
@@ -139,7 +168,7 @@ class ListL7RulesRequest:
         每页返回的个数。
 
         :param limit: The limit of this ListL7RulesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -161,7 +190,7 @@ class ListL7RulesRequest:
         上一页最后一条记录的ID。  使用说明：  - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
         :param marker: The marker of this ListL7RulesRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -183,7 +212,7 @@ class ListL7RulesRequest:
         分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。  使用说明： - 必须与limit一起使用。
 
         :param page_reverse: The page_reverse of this ListL7RulesRequest.
-        :type: bool
+        :type page_reverse: bool
         """
         self._page_reverse = page_reverse
 
@@ -205,7 +234,7 @@ class ListL7RulesRequest:
         转发规则ID。  支持多值查询，查询条件格式：*id=xxx&id=xxx*。
 
         :param id: The id of this ListL7RulesRequest.
-        :type: list[str]
+        :type id: list[str]
         """
         self._id = id
 
@@ -227,7 +256,7 @@ class ListL7RulesRequest:
         转发规则的匹配方式。  type为HOST_NAME时可以为EQUAL_TO。  type为PATH时可以为Perl类型的REGEX， STARTS_WITH，EQUAL_TO。  支持多值查询，查询条件格式：*compare_type=xxx&compare_type=xxx*。
 
         :param compare_type: The compare_type of this ListL7RulesRequest.
-        :type: list[str]
+        :type compare_type: list[str]
         """
         self._compare_type = compare_type
 
@@ -249,7 +278,7 @@ class ListL7RulesRequest:
         转发规则的配置状态。取值：ACTIVE 表示正常。  支持多值查询，查询条件格式：*provisioning_status=xxx&provisioning_status=xxx*。
 
         :param provisioning_status: The provisioning_status of this ListL7RulesRequest.
-        :type: list[str]
+        :type provisioning_status: list[str]
         """
         self._provisioning_status = provisioning_status
 
@@ -271,7 +300,7 @@ class ListL7RulesRequest:
         是否反向匹配。固定为false。该字段能更新但不会生效。
 
         :param invert: The invert of this ListL7RulesRequest.
-        :type: bool
+        :type invert: bool
         """
         self._invert = invert
 
@@ -293,7 +322,7 @@ class ListL7RulesRequest:
         转发规则的管理状态，默认为true。  不支持该字段，请勿使用。
 
         :param admin_state_up: The admin_state_up of this ListL7RulesRequest.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 
@@ -315,7 +344,7 @@ class ListL7RulesRequest:
         匹配内容的值。  支持多值查询，查询条件格式：*value=xxx&value=xxx*。
 
         :param value: The value of this ListL7RulesRequest.
-        :type: list[str]
+        :type value: list[str]
         """
         self._value = value
 
@@ -337,7 +366,7 @@ class ListL7RulesRequest:
         匹配内容的键值，用于标识规则。  支持多值查询，查询条件格式：*key=xxx&key=xxx*。  不支持该字段，请勿使用。
 
         :param key: The key of this ListL7RulesRequest.
-        :type: list[str]
+        :type key: list[str]
         """
         self._key = key
 
@@ -359,7 +388,7 @@ class ListL7RulesRequest:
         匹配类别，可以为HOST_NAME，PATH。  一个l7policy下创建的l7rule的type不能重复。  支持多值查询，查询条件格式：*type=xxx&type=xxx*。
 
         :param type: The type of this ListL7RulesRequest.
-        :type: list[str]
+        :type type: list[str]
         """
         self._type = type
 
@@ -381,7 +410,7 @@ class ListL7RulesRequest:
         企业项目ID。  支持多值查询，查询条件格式：*enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
 
         :param enterprise_project_id: The enterprise_project_id of this ListL7RulesRequest.
-        :type: list[str]
+        :type enterprise_project_id: list[str]
         """
         self._enterprise_project_id = enterprise_project_id
 

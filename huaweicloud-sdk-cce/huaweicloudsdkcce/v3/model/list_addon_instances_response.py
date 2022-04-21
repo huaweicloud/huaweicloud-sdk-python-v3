@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAddonInstancesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListAddonInstancesResponse(SdkResponse):
     }
 
     def __init__(self, kind=None, api_version=None, items=None):
-        """ListAddonInstancesResponse - a model defined in huaweicloud sdk"""
+        """ListAddonInstancesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param kind: API类型，固定值“Addon”，该值不可修改。
+        :type kind: str
+        :param api_version: API版本，固定值“v3”，该值不可修改。
+        :type api_version: str
+        :param items: 插件实例列表
+        :type items: list[:class:`huaweicloudsdkcce.v3.AddonInstance`]
+        """
         
         super(ListAddonInstancesResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListAddonInstancesResponse(SdkResponse):
         API类型，固定值“Addon”，该值不可修改。
 
         :param kind: The kind of this ListAddonInstancesResponse.
-        :type: str
+        :type kind: str
         """
         self._kind = kind
 
@@ -90,7 +99,7 @@ class ListAddonInstancesResponse(SdkResponse):
         API版本，固定值“v3”，该值不可修改。
 
         :param api_version: The api_version of this ListAddonInstancesResponse.
-        :type: str
+        :type api_version: str
         """
         self._api_version = api_version
 
@@ -101,7 +110,7 @@ class ListAddonInstancesResponse(SdkResponse):
         插件实例列表
 
         :return: The items of this ListAddonInstancesResponse.
-        :rtype: list[AddonInstance]
+        :rtype: list[:class:`huaweicloudsdkcce.v3.AddonInstance`]
         """
         return self._items
 
@@ -112,7 +121,7 @@ class ListAddonInstancesResponse(SdkResponse):
         插件实例列表
 
         :param items: The items of this ListAddonInstancesResponse.
-        :type: list[AddonInstance]
+        :type items: list[:class:`huaweicloudsdkcce.v3.AddonInstance`]
         """
         self._items = items
 

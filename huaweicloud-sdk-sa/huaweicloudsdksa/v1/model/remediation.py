@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Remediation:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Remediation:
     }
 
     def __init__(self, recommendation=None, url=None):
-        """Remediation - a model defined in huaweicloud sdk"""
+        """Remediation
+
+        The model defined in huaweicloud sdk
+
+        :param recommendation: 处理建议，最长512个字符。
+        :type recommendation: str
+        :param url: 链接，指向该事件的一般修复信息。该URL必须可以从公网访问，不需要提供凭证。
+        :type url: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class Remediation:
         处理建议，最长512个字符。
 
         :param recommendation: The recommendation of this Remediation.
-        :type: str
+        :type recommendation: str
         """
         self._recommendation = recommendation
 
@@ -84,7 +91,7 @@ class Remediation:
         链接，指向该事件的一般修复信息。该URL必须可以从公网访问，不需要提供凭证。
 
         :param url: The url of this Remediation.
-        :type: str
+        :type url: str
         """
         self._url = url
 

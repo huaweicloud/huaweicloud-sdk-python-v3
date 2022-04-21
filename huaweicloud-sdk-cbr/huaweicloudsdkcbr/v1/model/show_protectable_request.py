@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowProtectableRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowProtectableRequest:
     }
 
     def __init__(self, instance_id=None, protectable_type=None):
-        """ShowProtectableRequest - a model defined in huaweicloud sdk"""
+        """ShowProtectableRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 资源ID
+        :type instance_id: str
+        :param protectable_type: 可保护性类型
+        :type protectable_type: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ShowProtectableRequest:
         资源ID
 
         :param instance_id: The instance_id of this ShowProtectableRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -83,7 +90,7 @@ class ShowProtectableRequest:
         可保护性类型
 
         :param protectable_type: The protectable_type of this ShowProtectableRequest.
-        :type: str
+        :type protectable_type: str
         """
         self._protectable_type = protectable_type
 

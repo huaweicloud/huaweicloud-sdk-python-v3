@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateClusterRolesBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CreateClusterRolesBody:
     }
 
     def __init__(self, flavor_ref=None, volume=None, type=None, instance_num=None):
-        """CreateClusterRolesBody - a model defined in huaweicloud sdk"""
+        """CreateClusterRolesBody
+
+        The model defined in huaweicloud sdk
+
+        :param flavor_ref: 实例规格名称。例如，  - ess.spec-2u16g规格对应的取值范围为40GB～1280GB。 - ess.spec-4u32g规格对应的取值范围为40GB～2560GB。 - ess.spec-8u64g规格对应的取值范围为80GB～5120GB。 - ess.spec-16u128g规格对应的取值范围为160GB～10240GB。
+        :type flavor_ref: str
+        :param volume: 
+        :type volume: :class:`huaweicloudsdkcss.v2.CreateClusterInstanceVolumeBody`
+        :param type: 实例类型。例如，  - ess-master对应Master节点。 - ess-client对应Clinet节点。 - ess-cold对应冷数据节点。 - ess对应数据节点。
+        :type type: str
+        :param instance_num: 实例个数。
+        :type instance_num: int
+        """
         
         
 
@@ -69,7 +80,7 @@ class CreateClusterRolesBody:
         实例规格名称。例如，  - ess.spec-2u16g规格对应的取值范围为40GB～1280GB。 - ess.spec-4u32g规格对应的取值范围为40GB～2560GB。 - ess.spec-8u64g规格对应的取值范围为80GB～5120GB。 - ess.spec-16u128g规格对应的取值范围为160GB～10240GB。
 
         :param flavor_ref: The flavor_ref of this CreateClusterRolesBody.
-        :type: str
+        :type flavor_ref: str
         """
         self._flavor_ref = flavor_ref
 
@@ -79,7 +90,7 @@ class CreateClusterRolesBody:
 
 
         :return: The volume of this CreateClusterRolesBody.
-        :rtype: CreateClusterInstanceVolumeBody
+        :rtype: :class:`huaweicloudsdkcss.v2.CreateClusterInstanceVolumeBody`
         """
         return self._volume
 
@@ -89,7 +100,7 @@ class CreateClusterRolesBody:
 
 
         :param volume: The volume of this CreateClusterRolesBody.
-        :type: CreateClusterInstanceVolumeBody
+        :type volume: :class:`huaweicloudsdkcss.v2.CreateClusterInstanceVolumeBody`
         """
         self._volume = volume
 
@@ -111,7 +122,7 @@ class CreateClusterRolesBody:
         实例类型。例如，  - ess-master对应Master节点。 - ess-client对应Clinet节点。 - ess-cold对应冷数据节点。 - ess对应数据节点。
 
         :param type: The type of this CreateClusterRolesBody.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -133,7 +144,7 @@ class CreateClusterRolesBody:
         实例个数。
 
         :param instance_num: The instance_num of this CreateClusterRolesBody.
-        :type: int
+        :type instance_num: int
         """
         self._instance_num = instance_num
 

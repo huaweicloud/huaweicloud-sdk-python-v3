@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CommonPoolDict:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class CommonPoolDict:
     }
 
     def __init__(self, name=None, status=None, type=None, used=None, public_border_group=None, id=None, allow_share_bandwidth_types=None):
-        """CommonPoolDict - a model defined in huaweicloud sdk"""
+        """CommonPoolDict
+
+        The model defined in huaweicloud sdk
+
+        :param name: 公共池名字
+        :type name: str
+        :param status: 状态
+        :type status: str
+        :param type: 公共池类型，如bgp，sbgp等
+        :type type: str
+        :param used: 已经使用的ip数量
+        :type used: int
+        :param public_border_group: 功能说明：表示中心站点资源或者边缘站点资源 取值范围： center、边缘站点名称 约束：publicip只能绑定该字段相同的资源
+        :type public_border_group: str
+        :param id: 默认不展示，取值, 公共池ID
+        :type id: str
+        :param allow_share_bandwidth_types: 功能说明：表示此publicip可以加入的共享带宽类型列表，如果为空列表，则表示该           publicip不能加入任何共享带宽 约束：publicip只能加入到有该带宽类型的共享带宽中
+        :type allow_share_bandwidth_types: list[str]
+        """
         
         
 
@@ -88,7 +105,7 @@ class CommonPoolDict:
         公共池名字
 
         :param name: The name of this CommonPoolDict.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -110,7 +127,7 @@ class CommonPoolDict:
         状态
 
         :param status: The status of this CommonPoolDict.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -132,7 +149,7 @@ class CommonPoolDict:
         公共池类型，如bgp，sbgp等
 
         :param type: The type of this CommonPoolDict.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -154,7 +171,7 @@ class CommonPoolDict:
         已经使用的ip数量
 
         :param used: The used of this CommonPoolDict.
-        :type: int
+        :type used: int
         """
         self._used = used
 
@@ -176,7 +193,7 @@ class CommonPoolDict:
         功能说明：表示中心站点资源或者边缘站点资源 取值范围： center、边缘站点名称 约束：publicip只能绑定该字段相同的资源
 
         :param public_border_group: The public_border_group of this CommonPoolDict.
-        :type: str
+        :type public_border_group: str
         """
         self._public_border_group = public_border_group
 
@@ -198,7 +215,7 @@ class CommonPoolDict:
         默认不展示，取值, 公共池ID
 
         :param id: The id of this CommonPoolDict.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -220,7 +237,7 @@ class CommonPoolDict:
         功能说明：表示此publicip可以加入的共享带宽类型列表，如果为空列表，则表示该           publicip不能加入任何共享带宽 约束：publicip只能加入到有该带宽类型的共享带宽中
 
         :param allow_share_bandwidth_types: The allow_share_bandwidth_types of this CommonPoolDict.
-        :type: list[str]
+        :type allow_share_bandwidth_types: list[str]
         """
         self._allow_share_bandwidth_types = allow_share_bandwidth_types
 

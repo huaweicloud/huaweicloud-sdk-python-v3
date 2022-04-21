@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateAppQuotaBindingApp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateAppQuotaBindingApp:
     }
 
     def __init__(self, app_ids=None):
-        """CreateAppQuotaBindingApp - a model defined in huaweicloud sdk"""
+        """CreateAppQuotaBindingApp
+
+        The model defined in huaweicloud sdk
+
+        :param app_ids: 客户端应用编号列表
+        :type app_ids: list[str]
+        """
         
         
 
@@ -57,7 +62,7 @@ class CreateAppQuotaBindingApp:
         客户端应用编号列表
 
         :param app_ids: The app_ids of this CreateAppQuotaBindingApp.
-        :type: list[str]
+        :type app_ids: list[str]
         """
         self._app_ids = app_ids
 

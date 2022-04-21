@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestCustomMultiPictureBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class RestCustomMultiPictureBody:
     }
 
     def __init__(self, manual_set=None, pic_layout_info=None, image_type=None, subscriber_in_pics=None, switch_time=None, multi_pic_save_only=None):
-        """RestCustomMultiPictureBody - a model defined in huaweicloud sdk"""
+        """RestCustomMultiPictureBody
+
+        The model defined in huaweicloud sdk
+
+        :param manual_set: 是否为手工设置多画面： 0： 系统自动多画面 1： 手工设置多画面
+        :type manual_set: int
+        :param pic_layout_info: 
+        :type pic_layout_info: :class:`huaweicloudsdkmeeting.v1.PicLayoutInfo`
+        :param image_type: 画面类型
+        :type image_type: str
+        :param subscriber_in_pics: 子画面列表
+        :type subscriber_in_pics: list[:class:`huaweicloudsdkmeeting.v1.RestSubscriberInPic`]
+        :param switch_time: 表示轮询间隔，单位：秒。 当同一个子画面中包含有多个视频源时，此参数有效
+        :type switch_time: int
+        :param multi_pic_save_only: 多画面仅保存
+        :type multi_pic_save_only: bool
+        """
         
         
 
@@ -82,7 +97,7 @@ class RestCustomMultiPictureBody:
         是否为手工设置多画面： 0： 系统自动多画面 1： 手工设置多画面
 
         :param manual_set: The manual_set of this RestCustomMultiPictureBody.
-        :type: int
+        :type manual_set: int
         """
         self._manual_set = manual_set
 
@@ -92,7 +107,7 @@ class RestCustomMultiPictureBody:
 
 
         :return: The pic_layout_info of this RestCustomMultiPictureBody.
-        :rtype: PicLayoutInfo
+        :rtype: :class:`huaweicloudsdkmeeting.v1.PicLayoutInfo`
         """
         return self._pic_layout_info
 
@@ -102,7 +117,7 @@ class RestCustomMultiPictureBody:
 
 
         :param pic_layout_info: The pic_layout_info of this RestCustomMultiPictureBody.
-        :type: PicLayoutInfo
+        :type pic_layout_info: :class:`huaweicloudsdkmeeting.v1.PicLayoutInfo`
         """
         self._pic_layout_info = pic_layout_info
 
@@ -124,7 +139,7 @@ class RestCustomMultiPictureBody:
         画面类型
 
         :param image_type: The image_type of this RestCustomMultiPictureBody.
-        :type: str
+        :type image_type: str
         """
         self._image_type = image_type
 
@@ -135,7 +150,7 @@ class RestCustomMultiPictureBody:
         子画面列表
 
         :return: The subscriber_in_pics of this RestCustomMultiPictureBody.
-        :rtype: list[RestSubscriberInPic]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.RestSubscriberInPic`]
         """
         return self._subscriber_in_pics
 
@@ -146,7 +161,7 @@ class RestCustomMultiPictureBody:
         子画面列表
 
         :param subscriber_in_pics: The subscriber_in_pics of this RestCustomMultiPictureBody.
-        :type: list[RestSubscriberInPic]
+        :type subscriber_in_pics: list[:class:`huaweicloudsdkmeeting.v1.RestSubscriberInPic`]
         """
         self._subscriber_in_pics = subscriber_in_pics
 
@@ -168,7 +183,7 @@ class RestCustomMultiPictureBody:
         表示轮询间隔，单位：秒。 当同一个子画面中包含有多个视频源时，此参数有效
 
         :param switch_time: The switch_time of this RestCustomMultiPictureBody.
-        :type: int
+        :type switch_time: int
         """
         self._switch_time = switch_time
 
@@ -190,7 +205,7 @@ class RestCustomMultiPictureBody:
         多画面仅保存
 
         :param multi_pic_save_only: The multi_pic_save_only of this RestCustomMultiPictureBody.
-        :type: bool
+        :type multi_pic_save_only: bool
         """
         self._multi_pic_save_only = multi_pic_save_only
 

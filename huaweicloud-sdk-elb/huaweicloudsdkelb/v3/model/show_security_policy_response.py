@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowSecurityPolicyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowSecurityPolicyResponse(SdkResponse):
     }
 
     def __init__(self, security_policy=None, request_id=None):
-        """ShowSecurityPolicyResponse - a model defined in huaweicloud sdk"""
+        """ShowSecurityPolicyResponse
+
+        The model defined in huaweicloud sdk
+
+        :param security_policy: 
+        :type security_policy: :class:`huaweicloudsdkelb.v3.SecurityPolicy`
+        :param request_id: 请求ID。  注：自动生成 。
+        :type request_id: str
+        """
         
         super(ShowSecurityPolicyResponse, self).__init__()
 
@@ -51,7 +58,7 @@ class ShowSecurityPolicyResponse(SdkResponse):
 
 
         :return: The security_policy of this ShowSecurityPolicyResponse.
-        :rtype: SecurityPolicy
+        :rtype: :class:`huaweicloudsdkelb.v3.SecurityPolicy`
         """
         return self._security_policy
 
@@ -61,7 +68,7 @@ class ShowSecurityPolicyResponse(SdkResponse):
 
 
         :param security_policy: The security_policy of this ShowSecurityPolicyResponse.
-        :type: SecurityPolicy
+        :type security_policy: :class:`huaweicloudsdkelb.v3.SecurityPolicy`
         """
         self._security_policy = security_policy
 
@@ -83,7 +90,7 @@ class ShowSecurityPolicyResponse(SdkResponse):
         请求ID。  注：自动生成 。
 
         :param request_id: The request_id of this ShowSecurityPolicyResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 

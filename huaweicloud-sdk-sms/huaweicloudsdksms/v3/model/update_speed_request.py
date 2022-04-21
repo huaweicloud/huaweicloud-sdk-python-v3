@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateSpeedRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateSpeedRequest:
     }
 
     def __init__(self, task_id=None, body=None):
-        """UpdateSpeedRequest - a model defined in huaweicloud sdk"""
+        """UpdateSpeedRequest
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 主机迁移任务的id
+        :type task_id: str
+        :param body: Body of the UpdateSpeedRequest
+        :type body: :class:`huaweicloudsdksms.v3.SpeedLimit`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateSpeedRequest:
         主机迁移任务的id
 
         :param task_id: The task_id of this UpdateSpeedRequest.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -72,7 +79,7 @@ class UpdateSpeedRequest:
 
 
         :return: The body of this UpdateSpeedRequest.
-        :rtype: SpeedLimit
+        :rtype: :class:`huaweicloudsdksms.v3.SpeedLimit`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateSpeedRequest:
 
 
         :param body: The body of this UpdateSpeedRequest.
-        :type: SpeedLimit
+        :type body: :class:`huaweicloudsdksms.v3.SpeedLimit`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TaskOutputLocalpath:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class TaskOutputLocalpath:
     }
 
     def __init__(self, mount_source_path=None, data_category=None):
-        """TaskOutputLocalpath - a model defined in huaweicloud sdk"""
+        """TaskOutputLocalpath
+
+        The model defined in huaweicloud sdk
+
+        :param mount_source_path: 挂载的源路径，存放作业运行结果的路径，选用localpath类型输出时必填。必须为linux路径，且为选用的边缘运行池挂载路径的子路径，长度不超过255。
+        :type mount_source_path: str
+        :param data_category: 作业输出数据类别的列表，选填，仅部分服务需要。当输出类型下有这个列表时，表示希望这个输出类型下存放dataCategory列表内的数据。
+        :type data_category: list[str]
+        """
         
         
 
@@ -62,7 +69,7 @@ class TaskOutputLocalpath:
         挂载的源路径，存放作业运行结果的路径，选用localpath类型输出时必填。必须为linux路径，且为选用的边缘运行池挂载路径的子路径，长度不超过255。
 
         :param mount_source_path: The mount_source_path of this TaskOutputLocalpath.
-        :type: str
+        :type mount_source_path: str
         """
         self._mount_source_path = mount_source_path
 
@@ -84,7 +91,7 @@ class TaskOutputLocalpath:
         作业输出数据类别的列表，选填，仅部分服务需要。当输出类型下有这个列表时，表示希望这个输出类型下存放dataCategory列表内的数据。
 
         :param data_category: The data_category of this TaskOutputLocalpath.
-        :type: list[str]
+        :type data_category: list[str]
         """
         self._data_category = data_category
 

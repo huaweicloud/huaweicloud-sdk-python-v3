@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestHandsUpReqBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RestHandsUpReqBody:
     }
 
     def __init__(self, hands_state=None):
-        """RestHandsUpReqBody - a model defined in huaweicloud sdk"""
+        """RestHandsUpReqBody
+
+        The model defined in huaweicloud sdk
+
+        :param hands_state: - 0: 放下手。 - 1: 举手。
+        :type hands_state: int
+        """
         
         
 
@@ -57,7 +62,7 @@ class RestHandsUpReqBody:
         - 0: 放下手。 - 1: 举手。
 
         :param hands_state: The hands_state of this RestHandsUpReqBody.
-        :type: int
+        :type hands_state: int
         """
         self._hands_state = hands_state
 

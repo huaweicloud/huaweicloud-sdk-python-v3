@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OpExtendInfoCommon:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class OpExtendInfoCommon:
     }
 
     def __init__(self, progress=None, request_id=None, task_id=None):
-        """OpExtendInfoCommon - a model defined in huaweicloud sdk"""
+        """OpExtendInfoCommon
+
+        The model defined in huaweicloud sdk
+
+        :param progress: 进度，取值为0-100
+        :type progress: int
+        :param request_id: 请求id
+        :type request_id: str
+        :param task_id: 备份任务id
+        :type task_id: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class OpExtendInfoCommon:
         进度，取值为0-100
 
         :param progress: The progress of this OpExtendInfoCommon.
-        :type: int
+        :type progress: int
         """
         self._progress = progress
 
@@ -88,7 +97,7 @@ class OpExtendInfoCommon:
         请求id
 
         :param request_id: The request_id of this OpExtendInfoCommon.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 
@@ -110,7 +119,7 @@ class OpExtendInfoCommon:
         备份任务id
 
         :param task_id: The task_id of this OpExtendInfoCommon.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 

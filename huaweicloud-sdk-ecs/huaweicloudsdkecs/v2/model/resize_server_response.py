@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResizeServerResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ResizeServerResponse(SdkResponse):
     }
 
     def __init__(self, order_id=None, job_id=None):
-        """ResizeServerResponse - a model defined in huaweicloud sdk"""
+        """ResizeServerResponse
+
+        The model defined in huaweicloud sdk
+
+        :param order_id: 订单号，创建包年包月的弹性云服务器时返回该参数。
+        :type order_id: str
+        :param job_id: 任务ID，变更按需的弹性云服务器规格时返回该参数。
+        :type job_id: str
+        """
         
         super(ResizeServerResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ResizeServerResponse(SdkResponse):
         订单号，创建包年包月的弹性云服务器时返回该参数。
 
         :param order_id: The order_id of this ResizeServerResponse.
-        :type: str
+        :type order_id: str
         """
         self._order_id = order_id
 
@@ -85,7 +92,7 @@ class ResizeServerResponse(SdkResponse):
         任务ID，变更按需的弹性云服务器规格时返回该参数。
 
         :param job_id: The job_id of this ResizeServerResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 

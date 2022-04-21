@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Tag:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Tag:
     }
 
     def __init__(self, is_double_name=None, name=None):
-        """Tag - a model defined in huaweicloud sdk"""
+        """Tag
+
+        The model defined in huaweicloud sdk
+
+        :param is_double_name: 是否与分支重名
+        :type is_double_name: bool
+        :param name: 标签名
+        :type name: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class Tag:
         是否与分支重名
 
         :param is_double_name: The is_double_name of this Tag.
-        :type: bool
+        :type is_double_name: bool
         """
         self._is_double_name = is_double_name
 
@@ -85,7 +92,7 @@ class Tag:
         标签名
 
         :param name: The name of this Tag.
-        :type: str
+        :type name: str
         """
         self._name = name
 

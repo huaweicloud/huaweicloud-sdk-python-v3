@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSlowLogResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListSlowLogResponse(SdkResponse):
     }
 
     def __init__(self, total_record=None, slow_log_list=None):
-        """ListSlowLogResponse - a model defined in huaweicloud sdk"""
+        """ListSlowLogResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total_record: DDM慢sql日志条数。
+        :type total_record: int
+        :param slow_log_list: DDM慢sql日志信息列表的集合。
+        :type slow_log_list: list[:class:`huaweicloudsdkddm.v1.SlowLogList`]
+        """
         
         super(ListSlowLogResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListSlowLogResponse(SdkResponse):
         DDM慢sql日志条数。
 
         :param total_record: The total_record of this ListSlowLogResponse.
-        :type: int
+        :type total_record: int
         """
         self._total_record = total_record
 
@@ -74,7 +81,7 @@ class ListSlowLogResponse(SdkResponse):
         DDM慢sql日志信息列表的集合。
 
         :return: The slow_log_list of this ListSlowLogResponse.
-        :rtype: list[SlowLogList]
+        :rtype: list[:class:`huaweicloudsdkddm.v1.SlowLogList`]
         """
         return self._slow_log_list
 
@@ -85,7 +92,7 @@ class ListSlowLogResponse(SdkResponse):
         DDM慢sql日志信息列表的集合。
 
         :param slow_log_list: The slow_log_list of this ListSlowLogResponse.
-        :type: list[SlowLogList]
+        :type slow_log_list: list[:class:`huaweicloudsdkddm.v1.SlowLogList`]
         """
         self._slow_log_list = slow_log_list
 

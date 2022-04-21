@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AclPolicyOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AclPolicyOption:
     }
 
     def __init__(self, allow_address_netmasks=None, allow_ip_ranges=None):
-        """AclPolicyOption - a model defined in huaweicloud sdk"""
+        """AclPolicyOption
+
+        The model defined in huaweicloud sdk
+
+        :param allow_address_netmasks: 允许访问的IP地址或网段。
+        :type allow_address_netmasks: list[:class:`huaweicloudsdkiam.v3.AllowAddressNetmasksOption`]
+        :param allow_ip_ranges: 允许访问的IP地址区间。
+        :type allow_ip_ranges: list[:class:`huaweicloudsdkiam.v3.AllowIpRangesOption`]
+        """
         
         
 
@@ -50,7 +57,7 @@ class AclPolicyOption:
         允许访问的IP地址或网段。
 
         :return: The allow_address_netmasks of this AclPolicyOption.
-        :rtype: list[AllowAddressNetmasksOption]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.AllowAddressNetmasksOption`]
         """
         return self._allow_address_netmasks
 
@@ -61,7 +68,7 @@ class AclPolicyOption:
         允许访问的IP地址或网段。
 
         :param allow_address_netmasks: The allow_address_netmasks of this AclPolicyOption.
-        :type: list[AllowAddressNetmasksOption]
+        :type allow_address_netmasks: list[:class:`huaweicloudsdkiam.v3.AllowAddressNetmasksOption`]
         """
         self._allow_address_netmasks = allow_address_netmasks
 
@@ -72,7 +79,7 @@ class AclPolicyOption:
         允许访问的IP地址区间。
 
         :return: The allow_ip_ranges of this AclPolicyOption.
-        :rtype: list[AllowIpRangesOption]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.AllowIpRangesOption`]
         """
         return self._allow_ip_ranges
 
@@ -83,7 +90,7 @@ class AclPolicyOption:
         允许访问的IP地址区间。
 
         :param allow_ip_ranges: The allow_ip_ranges of this AclPolicyOption.
-        :type: list[AllowIpRangesOption]
+        :type allow_ip_ranges: list[:class:`huaweicloudsdkiam.v3.AllowIpRangesOption`]
         """
         self._allow_ip_ranges = allow_ip_ranges
 

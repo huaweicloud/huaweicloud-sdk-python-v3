@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TemplateRepository:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class TemplateRepository:
     }
 
     def __init__(self, id=None, name=None, template_name=None, tags=None, description=None, brief_introduction=None, auto_pending_pipelines=None, language=None, created_at=None, used_times=None, liked_times=None, creator_name=None, https_url=None):
-        """TemplateRepository - a model defined in huaweicloud sdk"""
+        """TemplateRepository
+
+        The model defined in huaweicloud sdk
+
+        :param id: 模板唯一标识
+        :type id: int
+        :param name: 模板名称
+        :type name: str
+        :param template_name: 模板关联仓库名称
+        :type template_name: str
+        :param tags: 模板标签
+        :type tags: list[str]
+        :param description: 模板描述
+        :type description: str
+        :param brief_introduction: 模板简介
+        :type brief_introduction: str
+        :param auto_pending_pipelines: 是否自动创建流水线
+        :type auto_pending_pipelines: int
+        :param language: 模板语言分类
+        :type language: str
+        :param created_at: 模板创建时间
+        :type created_at: str
+        :param used_times: 模板引用次数
+        :type used_times: int
+        :param liked_times: 模板被点赞次数
+        :type liked_times: int
+        :param creator_name: 模板创建人
+        :type creator_name: str
+        :param https_url: 模板https链接
+        :type https_url: str
+        """
         
         
 
@@ -118,7 +147,7 @@ class TemplateRepository:
         模板唯一标识
 
         :param id: The id of this TemplateRepository.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -140,7 +169,7 @@ class TemplateRepository:
         模板名称
 
         :param name: The name of this TemplateRepository.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -162,7 +191,7 @@ class TemplateRepository:
         模板关联仓库名称
 
         :param template_name: The template_name of this TemplateRepository.
-        :type: str
+        :type template_name: str
         """
         self._template_name = template_name
 
@@ -184,7 +213,7 @@ class TemplateRepository:
         模板标签
 
         :param tags: The tags of this TemplateRepository.
-        :type: list[str]
+        :type tags: list[str]
         """
         self._tags = tags
 
@@ -206,7 +235,7 @@ class TemplateRepository:
         模板描述
 
         :param description: The description of this TemplateRepository.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -228,7 +257,7 @@ class TemplateRepository:
         模板简介
 
         :param brief_introduction: The brief_introduction of this TemplateRepository.
-        :type: str
+        :type brief_introduction: str
         """
         self._brief_introduction = brief_introduction
 
@@ -250,7 +279,7 @@ class TemplateRepository:
         是否自动创建流水线
 
         :param auto_pending_pipelines: The auto_pending_pipelines of this TemplateRepository.
-        :type: int
+        :type auto_pending_pipelines: int
         """
         self._auto_pending_pipelines = auto_pending_pipelines
 
@@ -272,7 +301,7 @@ class TemplateRepository:
         模板语言分类
 
         :param language: The language of this TemplateRepository.
-        :type: str
+        :type language: str
         """
         self._language = language
 
@@ -294,7 +323,7 @@ class TemplateRepository:
         模板创建时间
 
         :param created_at: The created_at of this TemplateRepository.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -316,7 +345,7 @@ class TemplateRepository:
         模板引用次数
 
         :param used_times: The used_times of this TemplateRepository.
-        :type: int
+        :type used_times: int
         """
         self._used_times = used_times
 
@@ -338,7 +367,7 @@ class TemplateRepository:
         模板被点赞次数
 
         :param liked_times: The liked_times of this TemplateRepository.
-        :type: int
+        :type liked_times: int
         """
         self._liked_times = liked_times
 
@@ -360,7 +389,7 @@ class TemplateRepository:
         模板创建人
 
         :param creator_name: The creator_name of this TemplateRepository.
-        :type: str
+        :type creator_name: str
         """
         self._creator_name = creator_name
 
@@ -382,7 +411,7 @@ class TemplateRepository:
         模板https链接
 
         :param https_url: The https_url of this TemplateRepository.
-        :type: str
+        :type https_url: str
         """
         self._https_url = https_url
 

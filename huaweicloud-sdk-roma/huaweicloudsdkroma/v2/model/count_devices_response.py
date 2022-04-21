@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CountDevicesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CountDevicesResponse(SdkResponse):
     }
 
     def __init__(self, product_templates=None, products=None, devices=None):
-        """CountDevicesResponse - a model defined in huaweicloud sdk"""
+        """CountDevicesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param product_templates: 
+        :type product_templates: :class:`huaweicloudsdkroma.v2.ProductTemplatesCalculation`
+        :param products: 
+        :type products: :class:`huaweicloudsdkroma.v2.ProductsCalculation`
+        :param devices: 
+        :type devices: :class:`huaweicloudsdkroma.v2.DevicesCalculation`
+        """
         
         super(CountDevicesResponse, self).__init__()
 
@@ -56,7 +65,7 @@ class CountDevicesResponse(SdkResponse):
 
 
         :return: The product_templates of this CountDevicesResponse.
-        :rtype: ProductTemplatesCalculation
+        :rtype: :class:`huaweicloudsdkroma.v2.ProductTemplatesCalculation`
         """
         return self._product_templates
 
@@ -66,7 +75,7 @@ class CountDevicesResponse(SdkResponse):
 
 
         :param product_templates: The product_templates of this CountDevicesResponse.
-        :type: ProductTemplatesCalculation
+        :type product_templates: :class:`huaweicloudsdkroma.v2.ProductTemplatesCalculation`
         """
         self._product_templates = product_templates
 
@@ -76,7 +85,7 @@ class CountDevicesResponse(SdkResponse):
 
 
         :return: The products of this CountDevicesResponse.
-        :rtype: ProductsCalculation
+        :rtype: :class:`huaweicloudsdkroma.v2.ProductsCalculation`
         """
         return self._products
 
@@ -86,7 +95,7 @@ class CountDevicesResponse(SdkResponse):
 
 
         :param products: The products of this CountDevicesResponse.
-        :type: ProductsCalculation
+        :type products: :class:`huaweicloudsdkroma.v2.ProductsCalculation`
         """
         self._products = products
 
@@ -96,7 +105,7 @@ class CountDevicesResponse(SdkResponse):
 
 
         :return: The devices of this CountDevicesResponse.
-        :rtype: DevicesCalculation
+        :rtype: :class:`huaweicloudsdkroma.v2.DevicesCalculation`
         """
         return self._devices
 
@@ -106,7 +115,7 @@ class CountDevicesResponse(SdkResponse):
 
 
         :param devices: The devices of this CountDevicesResponse.
-        :type: DevicesCalculation
+        :type devices: :class:`huaweicloudsdkroma.v2.DevicesCalculation`
         """
         self._devices = devices
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowJobsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowJobsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, jobs=None, page_no=None, page_size=None):
-        """ShowJobsResponse - a model defined in huaweicloud sdk"""
+        """ShowJobsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 作业数,查询单个作业时为0
+        :type total: int
+        :param jobs: 作业列表，请参见jobs参数说明
+        :type jobs: list[:class:`huaweicloudsdkcdm.v1.Job`]
+        :param page_no: 返回指定页号的作业
+        :type page_no: int
+        :param page_size: 每页作业数
+        :type page_size: int
+        """
         
         super(ShowJobsResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class ShowJobsResponse(SdkResponse):
         作业数,查询单个作业时为0
 
         :param total: The total of this ShowJobsResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -84,7 +95,7 @@ class ShowJobsResponse(SdkResponse):
         作业列表，请参见jobs参数说明
 
         :return: The jobs of this ShowJobsResponse.
-        :rtype: list[Job]
+        :rtype: list[:class:`huaweicloudsdkcdm.v1.Job`]
         """
         return self._jobs
 
@@ -95,7 +106,7 @@ class ShowJobsResponse(SdkResponse):
         作业列表，请参见jobs参数说明
 
         :param jobs: The jobs of this ShowJobsResponse.
-        :type: list[Job]
+        :type jobs: list[:class:`huaweicloudsdkcdm.v1.Job`]
         """
         self._jobs = jobs
 
@@ -117,7 +128,7 @@ class ShowJobsResponse(SdkResponse):
         返回指定页号的作业
 
         :param page_no: The page_no of this ShowJobsResponse.
-        :type: int
+        :type page_no: int
         """
         self._page_no = page_no
 
@@ -139,7 +150,7 @@ class ShowJobsResponse(SdkResponse):
         每页作业数
 
         :param page_size: The page_size of this ShowJobsResponse.
-        :type: int
+        :type page_size: int
         """
         self._page_size = page_size
 

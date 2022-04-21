@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AllowedAddressPair:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class AllowedAddressPair:
     }
 
     def __init__(self, ip_address=None):
-        """AllowedAddressPair - a model defined in huaweicloud sdk"""
+        """AllowedAddressPair
+
+        The model defined in huaweicloud sdk
+
+        :param ip_address: 是否开启源/目的检查开关。  默认是开启，不允许置空。  关闭：1.1.1.1/0 开启：除“1.1.1.1/0”以外的其余值均按开启处理
+        :type ip_address: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class AllowedAddressPair:
         是否开启源/目的检查开关。  默认是开启，不允许置空。  关闭：1.1.1.1/0 开启：除“1.1.1.1/0”以外的其余值均按开启处理
 
         :param ip_address: The ip_address of this AllowedAddressPair.
-        :type: str
+        :type ip_address: str
         """
         self._ip_address = ip_address
 

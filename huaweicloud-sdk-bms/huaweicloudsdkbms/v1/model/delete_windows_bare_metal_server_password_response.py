@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteWindowsBareMetalServerPasswordResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class DeleteWindowsBareMetalServerPasswordResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteWindowsBareMetalServerPasswordResponse - a model defined in huaweicloud sdk"""
+        """DeleteWindowsBareMetalServerPasswordResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(DeleteWindowsBareMetalServerPasswordResponse, self).__init__()
         self.discriminator = None

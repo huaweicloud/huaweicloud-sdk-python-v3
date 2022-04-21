@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateCasesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class CreateCasesRequest:
     }
 
     def __init__(self, x_site=None, x_language=None, x_time_zone=None, x_phone_verifiedid=None, x_email_verifiedid=None, body=None):
-        """CreateCasesRequest - a model defined in huaweicloud sdk"""
+        """CreateCasesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_site: 对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
+        :type x_site: int
+        :param x_language: 语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
+        :type x_language: str
+        :param x_time_zone: 环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
+        :type x_time_zone: str
+        :param x_phone_verifiedid: 手机验证序列号id，如果选择非注册手机号提醒，必填
+        :type x_phone_verifiedid: str
+        :param x_email_verifiedid: 邮件验证序列号id，如果选择非注册邮箱提醒，必填
+        :type x_email_verifiedid: str
+        :param body: Body of the CreateCasesRequest
+        :type body: :class:`huaweicloudsdkosm.v2.CreateOrderIncidentV2Req`
+        """
         
         
 
@@ -83,7 +98,7 @@ class CreateCasesRequest:
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
         :param x_site: The x_site of this CreateCasesRequest.
-        :type: int
+        :type x_site: int
         """
         self._x_site = x_site
 
@@ -105,7 +120,7 @@ class CreateCasesRequest:
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
         :param x_language: The x_language of this CreateCasesRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -127,7 +142,7 @@ class CreateCasesRequest:
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 
         :param x_time_zone: The x_time_zone of this CreateCasesRequest.
-        :type: str
+        :type x_time_zone: str
         """
         self._x_time_zone = x_time_zone
 
@@ -149,7 +164,7 @@ class CreateCasesRequest:
         手机验证序列号id，如果选择非注册手机号提醒，必填
 
         :param x_phone_verifiedid: The x_phone_verifiedid of this CreateCasesRequest.
-        :type: str
+        :type x_phone_verifiedid: str
         """
         self._x_phone_verifiedid = x_phone_verifiedid
 
@@ -171,7 +186,7 @@ class CreateCasesRequest:
         邮件验证序列号id，如果选择非注册邮箱提醒，必填
 
         :param x_email_verifiedid: The x_email_verifiedid of this CreateCasesRequest.
-        :type: str
+        :type x_email_verifiedid: str
         """
         self._x_email_verifiedid = x_email_verifiedid
 
@@ -181,7 +196,7 @@ class CreateCasesRequest:
 
 
         :return: The body of this CreateCasesRequest.
-        :rtype: CreateOrderIncidentV2Req
+        :rtype: :class:`huaweicloudsdkosm.v2.CreateOrderIncidentV2Req`
         """
         return self._body
 
@@ -191,7 +206,7 @@ class CreateCasesRequest:
 
 
         :param body: The body of this CreateCasesRequest.
-        :type: CreateOrderIncidentV2Req
+        :type body: :class:`huaweicloudsdkosm.v2.CreateOrderIncidentV2Req`
         """
         self._body = body
 

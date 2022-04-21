@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TwinUpdateDetailPropertyVisitors:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class TwinUpdateDetailPropertyVisitors:
     }
 
     def __init__(self, register_type=None, access_mode=None, register_index=None, register_num=None, scale_index=None, original_datatype=None, expected_datatype=None, is_registerswap=None, is_swap=None, sample_interval=None, data_min=None, data_max=None, node_id=None, browse_name=None):
-        """TwinUpdateDetailPropertyVisitors - a model defined in huaweicloud sdk"""
+        """TwinUpdateDetailPropertyVisitors
+
+        The model defined in huaweicloud sdk
+
+        :param register_type: 
+        :type register_type: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsRegisterType`
+        :param access_mode: 
+        :type access_mode: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsAccessMode`
+        :param register_index: 
+        :type register_index: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsRegisterIndex`
+        :param register_num: 
+        :type register_num: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsRegisterNum`
+        :param scale_index: 
+        :type scale_index: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsScaleIndex`
+        :param original_datatype: 
+        :type original_datatype: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsOriginalDatatype`
+        :param expected_datatype: 
+        :type expected_datatype: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsExpectedDatatype`
+        :param is_registerswap: 
+        :type is_registerswap: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsIsRegisterswap`
+        :param is_swap: 
+        :type is_swap: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsIsSwap`
+        :param sample_interval: 
+        :type sample_interval: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsSampleInterval`
+        :param data_min: 
+        :type data_min: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsDataMin`
+        :param data_max: 
+        :type data_max: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsDataMax`
+        :param node_id: 
+        :type node_id: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsNodeId`
+        :param browse_name: 
+        :type browse_name: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsBrowseName`
+        """
         
         
 
@@ -111,7 +142,7 @@ class TwinUpdateDetailPropertyVisitors:
 
 
         :return: The register_type of this TwinUpdateDetailPropertyVisitors.
-        :rtype: ValueInPropertyVisitorsRegisterType
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsRegisterType`
         """
         return self._register_type
 
@@ -121,7 +152,7 @@ class TwinUpdateDetailPropertyVisitors:
 
 
         :param register_type: The register_type of this TwinUpdateDetailPropertyVisitors.
-        :type: ValueInPropertyVisitorsRegisterType
+        :type register_type: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsRegisterType`
         """
         self._register_type = register_type
 
@@ -131,7 +162,7 @@ class TwinUpdateDetailPropertyVisitors:
 
 
         :return: The access_mode of this TwinUpdateDetailPropertyVisitors.
-        :rtype: ValueInPropertyVisitorsAccessMode
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsAccessMode`
         """
         return self._access_mode
 
@@ -141,7 +172,7 @@ class TwinUpdateDetailPropertyVisitors:
 
 
         :param access_mode: The access_mode of this TwinUpdateDetailPropertyVisitors.
-        :type: ValueInPropertyVisitorsAccessMode
+        :type access_mode: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsAccessMode`
         """
         self._access_mode = access_mode
 
@@ -151,7 +182,7 @@ class TwinUpdateDetailPropertyVisitors:
 
 
         :return: The register_index of this TwinUpdateDetailPropertyVisitors.
-        :rtype: ValueInPropertyVisitorsRegisterIndex
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsRegisterIndex`
         """
         return self._register_index
 
@@ -161,7 +192,7 @@ class TwinUpdateDetailPropertyVisitors:
 
 
         :param register_index: The register_index of this TwinUpdateDetailPropertyVisitors.
-        :type: ValueInPropertyVisitorsRegisterIndex
+        :type register_index: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsRegisterIndex`
         """
         self._register_index = register_index
 
@@ -171,7 +202,7 @@ class TwinUpdateDetailPropertyVisitors:
 
 
         :return: The register_num of this TwinUpdateDetailPropertyVisitors.
-        :rtype: ValueInPropertyVisitorsRegisterNum
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsRegisterNum`
         """
         return self._register_num
 
@@ -181,7 +212,7 @@ class TwinUpdateDetailPropertyVisitors:
 
 
         :param register_num: The register_num of this TwinUpdateDetailPropertyVisitors.
-        :type: ValueInPropertyVisitorsRegisterNum
+        :type register_num: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsRegisterNum`
         """
         self._register_num = register_num
 
@@ -191,7 +222,7 @@ class TwinUpdateDetailPropertyVisitors:
 
 
         :return: The scale_index of this TwinUpdateDetailPropertyVisitors.
-        :rtype: ValueInPropertyVisitorsScaleIndex
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsScaleIndex`
         """
         return self._scale_index
 
@@ -201,7 +232,7 @@ class TwinUpdateDetailPropertyVisitors:
 
 
         :param scale_index: The scale_index of this TwinUpdateDetailPropertyVisitors.
-        :type: ValueInPropertyVisitorsScaleIndex
+        :type scale_index: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsScaleIndex`
         """
         self._scale_index = scale_index
 
@@ -211,7 +242,7 @@ class TwinUpdateDetailPropertyVisitors:
 
 
         :return: The original_datatype of this TwinUpdateDetailPropertyVisitors.
-        :rtype: ValueInPropertyVisitorsOriginalDatatype
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsOriginalDatatype`
         """
         return self._original_datatype
 
@@ -221,7 +252,7 @@ class TwinUpdateDetailPropertyVisitors:
 
 
         :param original_datatype: The original_datatype of this TwinUpdateDetailPropertyVisitors.
-        :type: ValueInPropertyVisitorsOriginalDatatype
+        :type original_datatype: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsOriginalDatatype`
         """
         self._original_datatype = original_datatype
 
@@ -231,7 +262,7 @@ class TwinUpdateDetailPropertyVisitors:
 
 
         :return: The expected_datatype of this TwinUpdateDetailPropertyVisitors.
-        :rtype: ValueInPropertyVisitorsExpectedDatatype
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsExpectedDatatype`
         """
         return self._expected_datatype
 
@@ -241,7 +272,7 @@ class TwinUpdateDetailPropertyVisitors:
 
 
         :param expected_datatype: The expected_datatype of this TwinUpdateDetailPropertyVisitors.
-        :type: ValueInPropertyVisitorsExpectedDatatype
+        :type expected_datatype: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsExpectedDatatype`
         """
         self._expected_datatype = expected_datatype
 
@@ -251,7 +282,7 @@ class TwinUpdateDetailPropertyVisitors:
 
 
         :return: The is_registerswap of this TwinUpdateDetailPropertyVisitors.
-        :rtype: ValueInPropertyVisitorsIsRegisterswap
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsIsRegisterswap`
         """
         return self._is_registerswap
 
@@ -261,7 +292,7 @@ class TwinUpdateDetailPropertyVisitors:
 
 
         :param is_registerswap: The is_registerswap of this TwinUpdateDetailPropertyVisitors.
-        :type: ValueInPropertyVisitorsIsRegisterswap
+        :type is_registerswap: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsIsRegisterswap`
         """
         self._is_registerswap = is_registerswap
 
@@ -271,7 +302,7 @@ class TwinUpdateDetailPropertyVisitors:
 
 
         :return: The is_swap of this TwinUpdateDetailPropertyVisitors.
-        :rtype: ValueInPropertyVisitorsIsSwap
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsIsSwap`
         """
         return self._is_swap
 
@@ -281,7 +312,7 @@ class TwinUpdateDetailPropertyVisitors:
 
 
         :param is_swap: The is_swap of this TwinUpdateDetailPropertyVisitors.
-        :type: ValueInPropertyVisitorsIsSwap
+        :type is_swap: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsIsSwap`
         """
         self._is_swap = is_swap
 
@@ -291,7 +322,7 @@ class TwinUpdateDetailPropertyVisitors:
 
 
         :return: The sample_interval of this TwinUpdateDetailPropertyVisitors.
-        :rtype: ValueInPropertyVisitorsSampleInterval
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsSampleInterval`
         """
         return self._sample_interval
 
@@ -301,7 +332,7 @@ class TwinUpdateDetailPropertyVisitors:
 
 
         :param sample_interval: The sample_interval of this TwinUpdateDetailPropertyVisitors.
-        :type: ValueInPropertyVisitorsSampleInterval
+        :type sample_interval: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsSampleInterval`
         """
         self._sample_interval = sample_interval
 
@@ -311,7 +342,7 @@ class TwinUpdateDetailPropertyVisitors:
 
 
         :return: The data_min of this TwinUpdateDetailPropertyVisitors.
-        :rtype: ValueInPropertyVisitorsDataMin
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsDataMin`
         """
         return self._data_min
 
@@ -321,7 +352,7 @@ class TwinUpdateDetailPropertyVisitors:
 
 
         :param data_min: The data_min of this TwinUpdateDetailPropertyVisitors.
-        :type: ValueInPropertyVisitorsDataMin
+        :type data_min: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsDataMin`
         """
         self._data_min = data_min
 
@@ -331,7 +362,7 @@ class TwinUpdateDetailPropertyVisitors:
 
 
         :return: The data_max of this TwinUpdateDetailPropertyVisitors.
-        :rtype: ValueInPropertyVisitorsDataMax
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsDataMax`
         """
         return self._data_max
 
@@ -341,7 +372,7 @@ class TwinUpdateDetailPropertyVisitors:
 
 
         :param data_max: The data_max of this TwinUpdateDetailPropertyVisitors.
-        :type: ValueInPropertyVisitorsDataMax
+        :type data_max: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsDataMax`
         """
         self._data_max = data_max
 
@@ -351,7 +382,7 @@ class TwinUpdateDetailPropertyVisitors:
 
 
         :return: The node_id of this TwinUpdateDetailPropertyVisitors.
-        :rtype: ValueInPropertyVisitorsNodeId
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsNodeId`
         """
         return self._node_id
 
@@ -361,7 +392,7 @@ class TwinUpdateDetailPropertyVisitors:
 
 
         :param node_id: The node_id of this TwinUpdateDetailPropertyVisitors.
-        :type: ValueInPropertyVisitorsNodeId
+        :type node_id: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsNodeId`
         """
         self._node_id = node_id
 
@@ -371,7 +402,7 @@ class TwinUpdateDetailPropertyVisitors:
 
 
         :return: The browse_name of this TwinUpdateDetailPropertyVisitors.
-        :rtype: ValueInPropertyVisitorsBrowseName
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsBrowseName`
         """
         return self._browse_name
 
@@ -381,7 +412,7 @@ class TwinUpdateDetailPropertyVisitors:
 
 
         :param browse_name: The browse_name of this TwinUpdateDetailPropertyVisitors.
-        :type: ValueInPropertyVisitorsBrowseName
+        :type browse_name: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsBrowseName`
         """
         self._browse_name = browse_name
 

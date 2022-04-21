@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListOrderCouponsByOrderIdRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListOrderCouponsByOrderIdRequest:
     }
 
     def __init__(self, order_id=None):
-        """ListOrderCouponsByOrderIdRequest - a model defined in huaweicloud sdk"""
+        """ListOrderCouponsByOrderIdRequest
+
+        The model defined in huaweicloud sdk
+
+        :param order_id: 订单ID。
+        :type order_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ListOrderCouponsByOrderIdRequest:
         订单ID。
 
         :param order_id: The order_id of this ListOrderCouponsByOrderIdRequest.
-        :type: str
+        :type order_id: str
         """
         self._order_id = order_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PostRequestsReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class PostRequestsReq:
     }
 
     def __init__(self, extends=None, chat_enable=None, user_id=None, question=None, session_id=None, query_types=None):
-        """PostRequestsReq - a model defined in huaweicloud sdk"""
+        """PostRequestsReq
+
+        The model defined in huaweicloud sdk
+
+        :param extends: 
+        :type extends: :class:`huaweicloudsdkcbs.v1.Extends`
+        :param chat_enable: 默认false true：使用内部闲聊语料进行兜底 false：不使用闲聊兜底
+        :type chat_enable: bool
+        :param user_id: 用户id，在日志中用于标识不通用户，可以为任意String
+        :type user_id: str
+        :param question: 用户输入
+        :type question: str
+        :param session_id: 会话标识符，UUID格式。如：c04e6f7b-61d7-4a2d-a0c8-f9ecd2f62359。  每次对话开启，机器人创建会话id，下次请求中传入该id表示继续该轮对话，每轮会话有效时间为2分钟。 若传入的会话id已过期或者为空，则机器人会重新创建新的会话id（重新创建会话id会消耗一定时间）。
+        :type session_id: str
+        :param query_types: 指定发送的机器人类型集合。  0 知识库问答。  1 技能问答。  2 闲聊问答。  3 图谱问答。  4 文档问答。  5 表格问答。  非必填字段。如果不填，会使用默认的机器人融合策略。
+        :type query_types: list[int]
+        """
         
         
 
@@ -70,7 +85,7 @@ class PostRequestsReq:
 
 
         :return: The extends of this PostRequestsReq.
-        :rtype: Extends
+        :rtype: :class:`huaweicloudsdkcbs.v1.Extends`
         """
         return self._extends
 
@@ -80,7 +95,7 @@ class PostRequestsReq:
 
 
         :param extends: The extends of this PostRequestsReq.
-        :type: Extends
+        :type extends: :class:`huaweicloudsdkcbs.v1.Extends`
         """
         self._extends = extends
 
@@ -102,7 +117,7 @@ class PostRequestsReq:
         默认false true：使用内部闲聊语料进行兜底 false：不使用闲聊兜底
 
         :param chat_enable: The chat_enable of this PostRequestsReq.
-        :type: bool
+        :type chat_enable: bool
         """
         self._chat_enable = chat_enable
 
@@ -124,7 +139,7 @@ class PostRequestsReq:
         用户id，在日志中用于标识不通用户，可以为任意String
 
         :param user_id: The user_id of this PostRequestsReq.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -146,7 +161,7 @@ class PostRequestsReq:
         用户输入
 
         :param question: The question of this PostRequestsReq.
-        :type: str
+        :type question: str
         """
         self._question = question
 
@@ -168,7 +183,7 @@ class PostRequestsReq:
         会话标识符，UUID格式。如：c04e6f7b-61d7-4a2d-a0c8-f9ecd2f62359。  每次对话开启，机器人创建会话id，下次请求中传入该id表示继续该轮对话，每轮会话有效时间为2分钟。 若传入的会话id已过期或者为空，则机器人会重新创建新的会话id（重新创建会话id会消耗一定时间）。
 
         :param session_id: The session_id of this PostRequestsReq.
-        :type: str
+        :type session_id: str
         """
         self._session_id = session_id
 
@@ -190,7 +205,7 @@ class PostRequestsReq:
         指定发送的机器人类型集合。  0 知识库问答。  1 技能问答。  2 闲聊问答。  3 图谱问答。  4 文档问答。  5 表格问答。  非必填字段。如果不填，会使用默认的机器人融合策略。
 
         :param query_types: The query_types of this PostRequestsReq.
-        :type: list[int]
+        :type query_types: list[int]
         """
         self._query_types = query_types
 

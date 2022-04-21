@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneListGroupsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class KeystoneListGroupsRequest:
     }
 
     def __init__(self, domain_id=None, name=None):
-        """KeystoneListGroupsRequest - a model defined in huaweicloud sdk"""
+        """KeystoneListGroupsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param domain_id: 用户组所属账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
+        :type domain_id: str
+        :param name: 用户组名，长度小于等于64字节，获取方式请参见：[获取用户组名](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
+        :type name: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class KeystoneListGroupsRequest:
         用户组所属账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param domain_id: The domain_id of this KeystoneListGroupsRequest.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -85,7 +92,7 @@ class KeystoneListGroupsRequest:
         用户组名，长度小于等于64字节，获取方式请参见：[获取用户组名](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param name: The name of this KeystoneListGroupsRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 

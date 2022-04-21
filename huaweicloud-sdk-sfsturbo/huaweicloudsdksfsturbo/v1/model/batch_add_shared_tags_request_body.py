@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchAddSharedTagsRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class BatchAddSharedTagsRequestBody:
     }
 
     def __init__(self, action=None, tags=None, sys_tags=None):
-        """BatchAddSharedTagsRequestBody - a model defined in huaweicloud sdk"""
+        """BatchAddSharedTagsRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param action: 操作标识，取值范围为：\&quot;create\&quot;。 为指定共享批量添加标签时使用\&quot;create\&quot;。
+        :type action: str
+        :param tags: 标签列表。 用户权限时该字段必选，op_service权限时和sys_tags二选一。
+        :type tags: list[:class:`huaweicloudsdksfsturbo.v1.ResourceTag`]
+        :param sys_tags: 系统标签列表。 op_service权限可以访问，和tags二选一。目前TMS调用时只包含一个resource_tag结构体，key固定为：_sys_enterprise_project_id。
+        :type sys_tags: list[:class:`huaweicloudsdksfsturbo.v1.ResourceTag`]
+        """
         
         
 
@@ -67,7 +76,7 @@ class BatchAddSharedTagsRequestBody:
         操作标识，取值范围为：\"create\"。 为指定共享批量添加标签时使用\"create\"。
 
         :param action: The action of this BatchAddSharedTagsRequestBody.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -78,7 +87,7 @@ class BatchAddSharedTagsRequestBody:
         标签列表。 用户权限时该字段必选，op_service权限时和sys_tags二选一。
 
         :return: The tags of this BatchAddSharedTagsRequestBody.
-        :rtype: list[ResourceTag]
+        :rtype: list[:class:`huaweicloudsdksfsturbo.v1.ResourceTag`]
         """
         return self._tags
 
@@ -89,7 +98,7 @@ class BatchAddSharedTagsRequestBody:
         标签列表。 用户权限时该字段必选，op_service权限时和sys_tags二选一。
 
         :param tags: The tags of this BatchAddSharedTagsRequestBody.
-        :type: list[ResourceTag]
+        :type tags: list[:class:`huaweicloudsdksfsturbo.v1.ResourceTag`]
         """
         self._tags = tags
 
@@ -100,7 +109,7 @@ class BatchAddSharedTagsRequestBody:
         系统标签列表。 op_service权限可以访问，和tags二选一。目前TMS调用时只包含一个resource_tag结构体，key固定为：_sys_enterprise_project_id。
 
         :return: The sys_tags of this BatchAddSharedTagsRequestBody.
-        :rtype: list[ResourceTag]
+        :rtype: list[:class:`huaweicloudsdksfsturbo.v1.ResourceTag`]
         """
         return self._sys_tags
 
@@ -111,7 +120,7 @@ class BatchAddSharedTagsRequestBody:
         系统标签列表。 op_service权限可以访问，和tags二选一。目前TMS调用时只包含一个resource_tag结构体，key固定为：_sys_enterprise_project_id。
 
         :param sys_tags: The sys_tags of this BatchAddSharedTagsRequestBody.
-        :type: list[ResourceTag]
+        :type sys_tags: list[:class:`huaweicloudsdksfsturbo.v1.ResourceTag`]
         """
         self._sys_tags = sys_tags
 

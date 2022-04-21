@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteVaultTagRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteVaultTagRequest:
     }
 
     def __init__(self, key=None, vault_id=None):
-        """DeleteVaultTagRequest - a model defined in huaweicloud sdk"""
+        """DeleteVaultTagRequest
+
+        The model defined in huaweicloud sdk
+
+        :param key: 不能为空或空字符串，不检查长度和字符集，去掉key前后的空格后检查，去掉key前后的空格后使用。 即使底层存在非法的tag也要能删。
+        :type key: str
+        :param vault_id: 资源id
+        :type vault_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class DeleteVaultTagRequest:
         不能为空或空字符串，不检查长度和字符集，去掉key前后的空格后检查，去掉key前后的空格后使用。 即使底层存在非法的tag也要能删。
 
         :param key: The key of this DeleteVaultTagRequest.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -83,7 +90,7 @@ class DeleteVaultTagRequest:
         资源id
 
         :param vault_id: The vault_id of this DeleteVaultTagRequest.
-        :type: str
+        :type vault_id: str
         """
         self._vault_id = vault_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDeviceGroupsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListDeviceGroupsResponse(SdkResponse):
     }
 
     def __init__(self, device_groups=None, page=None):
-        """ListDeviceGroupsResponse - a model defined in huaweicloud sdk"""
+        """ListDeviceGroupsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param device_groups: 设备组信息列表。
+        :type device_groups: list[:class:`huaweicloudsdkiotda.v5.DeviceGroupResponseDTO`]
+        :param page: 
+        :type page: :class:`huaweicloudsdkiotda.v5.Page`
+        """
         
         super(ListDeviceGroupsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListDeviceGroupsResponse(SdkResponse):
         设备组信息列表。
 
         :return: The device_groups of this ListDeviceGroupsResponse.
-        :rtype: list[DeviceGroupResponseDTO]
+        :rtype: list[:class:`huaweicloudsdkiotda.v5.DeviceGroupResponseDTO`]
         """
         return self._device_groups
 
@@ -63,7 +70,7 @@ class ListDeviceGroupsResponse(SdkResponse):
         设备组信息列表。
 
         :param device_groups: The device_groups of this ListDeviceGroupsResponse.
-        :type: list[DeviceGroupResponseDTO]
+        :type device_groups: list[:class:`huaweicloudsdkiotda.v5.DeviceGroupResponseDTO`]
         """
         self._device_groups = device_groups
 
@@ -73,7 +80,7 @@ class ListDeviceGroupsResponse(SdkResponse):
 
 
         :return: The page of this ListDeviceGroupsResponse.
-        :rtype: Page
+        :rtype: :class:`huaweicloudsdkiotda.v5.Page`
         """
         return self._page
 
@@ -83,7 +90,7 @@ class ListDeviceGroupsResponse(SdkResponse):
 
 
         :param page: The page of this ListDeviceGroupsResponse.
-        :type: Page
+        :type page: :class:`huaweicloudsdkiotda.v5.Page`
         """
         self._page = page
 

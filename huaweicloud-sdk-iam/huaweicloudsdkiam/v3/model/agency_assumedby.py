@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AgencyAssumedby:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class AgencyAssumedby:
     }
 
     def __init__(self, user=None):
-        """AgencyAssumedby - a model defined in huaweicloud sdk"""
+        """AgencyAssumedby
+
+        The model defined in huaweicloud sdk
+
+        :param user: 
+        :type user: :class:`huaweicloudsdkiam.v3.AgencyAssumedbyUser`
+        """
         
         
 
@@ -45,7 +50,7 @@ class AgencyAssumedby:
 
 
         :return: The user of this AgencyAssumedby.
-        :rtype: AgencyAssumedbyUser
+        :rtype: :class:`huaweicloudsdkiam.v3.AgencyAssumedbyUser`
         """
         return self._user
 
@@ -55,7 +60,7 @@ class AgencyAssumedby:
 
 
         :param user: The user of this AgencyAssumedby.
-        :type: AgencyAssumedbyUser
+        :type user: :class:`huaweicloudsdkiam.v3.AgencyAssumedbyUser`
         """
         self._user = user
 

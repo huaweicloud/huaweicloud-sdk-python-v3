@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ContentDetailRsp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class ContentDetailRsp:
     }
 
     def __init__(self, iotda_content=None, obs_content=None, dis_content=None, smn_content=None, function_graph_content=None, model_arts_content=None, dcs_content=None, kafka_content=None, api_content=None, node_content=None, edge_content=None):
-        """ContentDetailRsp - a model defined in huaweicloud sdk"""
+        """ContentDetailRsp
+
+        The model defined in huaweicloud sdk
+
+        :param iotda_content: 
+        :type iotda_content: :class:`huaweicloudsdkiotanalytics.v1.IotdaContentRsp`
+        :param obs_content: 
+        :type obs_content: :class:`huaweicloudsdkiotanalytics.v1.ObsContentRsp`
+        :param dis_content: 
+        :type dis_content: :class:`huaweicloudsdkiotanalytics.v1.DisContentRsp`
+        :param smn_content: 
+        :type smn_content: :class:`huaweicloudsdkiotanalytics.v1.SmnContentRsp`
+        :param function_graph_content: 
+        :type function_graph_content: :class:`huaweicloudsdkiotanalytics.v1.FunctionGraphContentRsp`
+        :param model_arts_content: 
+        :type model_arts_content: :class:`huaweicloudsdkiotanalytics.v1.ModelArtsContentRsp`
+        :param dcs_content: 
+        :type dcs_content: :class:`huaweicloudsdkiotanalytics.v1.DcsContentRsp`
+        :param kafka_content: 
+        :type kafka_content: :class:`huaweicloudsdkiotanalytics.v1.KafkaContentRsp`
+        :param api_content: 
+        :type api_content: :class:`huaweicloudsdkiotanalytics.v1.ApiContentRsp`
+        :param node_content: 
+        :type node_content: :class:`huaweicloudsdkiotanalytics.v1.NodeContentRsp`
+        :param edge_content: 
+        :type edge_content: :class:`huaweicloudsdkiotanalytics.v1.EdgeContentRsp`
+        """
         
         
 
@@ -96,7 +121,7 @@ class ContentDetailRsp:
 
 
         :return: The iotda_content of this ContentDetailRsp.
-        :rtype: IotdaContentRsp
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.IotdaContentRsp`
         """
         return self._iotda_content
 
@@ -106,7 +131,7 @@ class ContentDetailRsp:
 
 
         :param iotda_content: The iotda_content of this ContentDetailRsp.
-        :type: IotdaContentRsp
+        :type iotda_content: :class:`huaweicloudsdkiotanalytics.v1.IotdaContentRsp`
         """
         self._iotda_content = iotda_content
 
@@ -116,7 +141,7 @@ class ContentDetailRsp:
 
 
         :return: The obs_content of this ContentDetailRsp.
-        :rtype: ObsContentRsp
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.ObsContentRsp`
         """
         return self._obs_content
 
@@ -126,7 +151,7 @@ class ContentDetailRsp:
 
 
         :param obs_content: The obs_content of this ContentDetailRsp.
-        :type: ObsContentRsp
+        :type obs_content: :class:`huaweicloudsdkiotanalytics.v1.ObsContentRsp`
         """
         self._obs_content = obs_content
 
@@ -136,7 +161,7 @@ class ContentDetailRsp:
 
 
         :return: The dis_content of this ContentDetailRsp.
-        :rtype: DisContentRsp
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.DisContentRsp`
         """
         return self._dis_content
 
@@ -146,7 +171,7 @@ class ContentDetailRsp:
 
 
         :param dis_content: The dis_content of this ContentDetailRsp.
-        :type: DisContentRsp
+        :type dis_content: :class:`huaweicloudsdkiotanalytics.v1.DisContentRsp`
         """
         self._dis_content = dis_content
 
@@ -156,7 +181,7 @@ class ContentDetailRsp:
 
 
         :return: The smn_content of this ContentDetailRsp.
-        :rtype: SmnContentRsp
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.SmnContentRsp`
         """
         return self._smn_content
 
@@ -166,7 +191,7 @@ class ContentDetailRsp:
 
 
         :param smn_content: The smn_content of this ContentDetailRsp.
-        :type: SmnContentRsp
+        :type smn_content: :class:`huaweicloudsdkiotanalytics.v1.SmnContentRsp`
         """
         self._smn_content = smn_content
 
@@ -176,7 +201,7 @@ class ContentDetailRsp:
 
 
         :return: The function_graph_content of this ContentDetailRsp.
-        :rtype: FunctionGraphContentRsp
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.FunctionGraphContentRsp`
         """
         return self._function_graph_content
 
@@ -186,7 +211,7 @@ class ContentDetailRsp:
 
 
         :param function_graph_content: The function_graph_content of this ContentDetailRsp.
-        :type: FunctionGraphContentRsp
+        :type function_graph_content: :class:`huaweicloudsdkiotanalytics.v1.FunctionGraphContentRsp`
         """
         self._function_graph_content = function_graph_content
 
@@ -196,7 +221,7 @@ class ContentDetailRsp:
 
 
         :return: The model_arts_content of this ContentDetailRsp.
-        :rtype: ModelArtsContentRsp
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.ModelArtsContentRsp`
         """
         return self._model_arts_content
 
@@ -206,7 +231,7 @@ class ContentDetailRsp:
 
 
         :param model_arts_content: The model_arts_content of this ContentDetailRsp.
-        :type: ModelArtsContentRsp
+        :type model_arts_content: :class:`huaweicloudsdkiotanalytics.v1.ModelArtsContentRsp`
         """
         self._model_arts_content = model_arts_content
 
@@ -216,7 +241,7 @@ class ContentDetailRsp:
 
 
         :return: The dcs_content of this ContentDetailRsp.
-        :rtype: DcsContentRsp
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.DcsContentRsp`
         """
         return self._dcs_content
 
@@ -226,7 +251,7 @@ class ContentDetailRsp:
 
 
         :param dcs_content: The dcs_content of this ContentDetailRsp.
-        :type: DcsContentRsp
+        :type dcs_content: :class:`huaweicloudsdkiotanalytics.v1.DcsContentRsp`
         """
         self._dcs_content = dcs_content
 
@@ -236,7 +261,7 @@ class ContentDetailRsp:
 
 
         :return: The kafka_content of this ContentDetailRsp.
-        :rtype: KafkaContentRsp
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.KafkaContentRsp`
         """
         return self._kafka_content
 
@@ -246,7 +271,7 @@ class ContentDetailRsp:
 
 
         :param kafka_content: The kafka_content of this ContentDetailRsp.
-        :type: KafkaContentRsp
+        :type kafka_content: :class:`huaweicloudsdkiotanalytics.v1.KafkaContentRsp`
         """
         self._kafka_content = kafka_content
 
@@ -256,7 +281,7 @@ class ContentDetailRsp:
 
 
         :return: The api_content of this ContentDetailRsp.
-        :rtype: ApiContentRsp
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.ApiContentRsp`
         """
         return self._api_content
 
@@ -266,7 +291,7 @@ class ContentDetailRsp:
 
 
         :param api_content: The api_content of this ContentDetailRsp.
-        :type: ApiContentRsp
+        :type api_content: :class:`huaweicloudsdkiotanalytics.v1.ApiContentRsp`
         """
         self._api_content = api_content
 
@@ -276,7 +301,7 @@ class ContentDetailRsp:
 
 
         :return: The node_content of this ContentDetailRsp.
-        :rtype: NodeContentRsp
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.NodeContentRsp`
         """
         return self._node_content
 
@@ -286,7 +311,7 @@ class ContentDetailRsp:
 
 
         :param node_content: The node_content of this ContentDetailRsp.
-        :type: NodeContentRsp
+        :type node_content: :class:`huaweicloudsdkiotanalytics.v1.NodeContentRsp`
         """
         self._node_content = node_content
 
@@ -296,7 +321,7 @@ class ContentDetailRsp:
 
 
         :return: The edge_content of this ContentDetailRsp.
-        :rtype: EdgeContentRsp
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.EdgeContentRsp`
         """
         return self._edge_content
 
@@ -306,7 +331,7 @@ class ContentDetailRsp:
 
 
         :param edge_content: The edge_content of this ContentDetailRsp.
-        :type: EdgeContentRsp
+        :type edge_content: :class:`huaweicloudsdkiotanalytics.v1.EdgeContentRsp`
         """
         self._edge_content = edge_content
 

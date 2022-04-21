@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListResponsePropertiesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListResponsePropertiesResponse(SdkResponse):
     }
 
     def __init__(self, total=None, size=None, items=None):
-        """ListResponsePropertiesResponse - a model defined in huaweicloud sdk"""
+        """ListResponsePropertiesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 总数
+        :type total: int
+        :param size: 本次返回数量
+        :type size: int
+        :param items: 属性列表
+        :type items: list[:class:`huaweicloudsdkroma.v2.ModelProperty`]
+        """
         
         super(ListResponsePropertiesResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListResponsePropertiesResponse(SdkResponse):
         总数
 
         :param total: The total of this ListResponsePropertiesResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -90,7 +99,7 @@ class ListResponsePropertiesResponse(SdkResponse):
         本次返回数量
 
         :param size: The size of this ListResponsePropertiesResponse.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -101,7 +110,7 @@ class ListResponsePropertiesResponse(SdkResponse):
         属性列表
 
         :return: The items of this ListResponsePropertiesResponse.
-        :rtype: list[ModelProperty]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.ModelProperty`]
         """
         return self._items
 
@@ -112,7 +121,7 @@ class ListResponsePropertiesResponse(SdkResponse):
         属性列表
 
         :param items: The items of this ListResponsePropertiesResponse.
-        :type: list[ModelProperty]
+        :type items: list[:class:`huaweicloudsdkroma.v2.ModelProperty`]
         """
         self._items = items
 

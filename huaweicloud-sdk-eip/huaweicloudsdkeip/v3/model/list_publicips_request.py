@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPublicipsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -110,7 +109,93 @@ class ListPublicipsRequest:
     }
 
     def __init__(self, marker=None, offset=None, limit=None, fields=None, sort_key=None, sort_dir=None, id=None, ip_version=None, public_ip_address=None, public_ip_address_like=None, public_ipv6_address=None, public_ipv6_address_like=None, type=None, network_type=None, publicip_pool_name=None, status=None, alias_like=None, alias=None, description=None, vnic_private_ip_address=None, vnic_private_ip_address_like=None, vnic_device_id=None, vnic_device_owner=None, vnic_vpc_id=None, vnic_port_id=None, vnic_device_owner_prefixlike=None, vnic_instance_type=None, vnic_instance_id=None, bandwidth_id=None, bandwidth_name=None, bandwidth_name_like=None, bandwidth_size=None, bandwidth_share_type=None, bandwidth_charge_mode=None, billing_info=None, billing_mode=None, associate_instance_type=None, associate_instance_id=None, enterprise_project_id=None, public_border_group=None, allow_share_bandwidth_type_any=None):
-        """ListPublicipsRequest - a model defined in huaweicloud sdk"""
+        """ListPublicipsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param marker: 分页查询起始的资源ID，为空时为查询第一页
+        :type marker: str
+        :param offset: 分页查询起始的资源序号
+        :type offset: int
+        :param limit: 每页返回的个数取值范围：0~[2000]，其中2000为局点差异项，具体取值由局点决定
+        :type limit: int
+        :param fields: 显示，形式为\&quot;fields&#x3D;id&amp;fields&#x3D;owner&amp;...\&quot;  支持字段：id/project_id/ip_version/type/public_ip_address/public_ipv6_address/network_type/status/description/created_at/updated_at/vnic/bandwidth/associate_instance_type/associate_instance_id/lock_status/billing_info/tags/enterprise_project_id/allow_share_bandwidth_types/public_border_group/alias/publicip_pool_name/publicip_pool_id
+        :type fields: list[str]
+        :param sort_key: 排序，形式为\&quot;sort_key&#x3D;id\&quot;  支持字段：id/public_ip_address/public_ipv6_address/ip_version/created_at/updated_at/public_border_group
+        :type sort_key: str
+        :param sort_dir: 排序方向  取值范围：asc、desc
+        :type sort_dir: str
+        :param id: 根据id过滤
+        :type id: list[str]
+        :param ip_version: 根据ip_version过滤  取值范围：4、6
+        :type ip_version: list[int]
+        :param public_ip_address: 根据public_ip_address过滤
+        :type public_ip_address: list[str]
+        :param public_ip_address_like: 根据public_ip_address过滤，模糊搜索
+        :type public_ip_address_like: str
+        :param public_ipv6_address: 根据public_ipv6_address过滤
+        :type public_ipv6_address: list[str]
+        :param public_ipv6_address_like: 根据public_ipv6_address过滤，模糊搜索
+        :type public_ipv6_address_like: str
+        :param type: 根据type过滤  取值范围：EIP、DUALSTACK、DUALSTACK_SUBNET  EIP: 弹性公网IP   DUALSTACK: 双栈IPV6   DUALSTACK_SUBNET: 双栈子网
+        :type type: list[str]
+        :param network_type: 根据network_type过滤  取值范围：5_telcom、5_union、5_bgp、5_sbgp、5_ipv6、5_graybgp
+        :type network_type: list[str]
+        :param publicip_pool_name: 根据publicip_pool_name过滤  取值范围：5_telcom、5_union、5_bgp、5_sbgp、5_ipv6、5_graybgp、专属池名称等
+        :type publicip_pool_name: list[str]
+        :param status: 根据status过滤  取值范围：FREEZED、DOWN、ACTIVE、ERROR
+        :type status: list[str]
+        :param alias_like: 根据alias模糊搜索
+        :type alias_like: str
+        :param alias: 根据alias过滤
+        :type alias: list[str]
+        :param description: 根据description过滤
+        :type description: list[str]
+        :param vnic_private_ip_address: 根据private_ip_address过滤
+        :type vnic_private_ip_address: list[str]
+        :param vnic_private_ip_address_like: 根据private_ip_address模糊搜索
+        :type vnic_private_ip_address_like: str
+        :param vnic_device_id: 根据device_id过滤
+        :type vnic_device_id: list[str]
+        :param vnic_device_owner: 根据device_owner过滤
+        :type vnic_device_owner: list[str]
+        :param vnic_vpc_id: 根据vpc_id过滤
+        :type vnic_vpc_id: list[str]
+        :param vnic_port_id: 根据port_id过滤
+        :type vnic_port_id: list[str]
+        :param vnic_device_owner_prefixlike: 根据device_owner_prefixlike模糊搜索
+        :type vnic_device_owner_prefixlike: str
+        :param vnic_instance_type: 根据instance_type过滤
+        :type vnic_instance_type: list[str]
+        :param vnic_instance_id: 根据instance_id过滤
+        :type vnic_instance_id: list[str]
+        :param bandwidth_id: 根据id过滤
+        :type bandwidth_id: list[str]
+        :param bandwidth_name: 根据name过滤
+        :type bandwidth_name: list[str]
+        :param bandwidth_name_like: 根据name模糊过滤
+        :type bandwidth_name_like: list[str]
+        :param bandwidth_size: 根据size过滤
+        :type bandwidth_size: list[int]
+        :param bandwidth_share_type: 根据share_type过滤
+        :type bandwidth_share_type: list[str]
+        :param bandwidth_charge_mode: 根据charge_mode过滤
+        :type bandwidth_charge_mode: list[str]
+        :param billing_info: 根据billing_info过滤
+        :type billing_info: list[str]
+        :param billing_mode: 根据订单模式过滤,   取值范围：YEARLY_MONTHLY、PAY_PER_USE
+        :type billing_mode: str
+        :param associate_instance_type: 根据associate_instance_type过滤  取值范围：PORT、NATGW、ELB、VPN、ELBV1
+        :type associate_instance_type: list[str]
+        :param associate_instance_id: 根据associate_instance_id过滤
+        :type associate_instance_id: list[str]
+        :param enterprise_project_id: 根据enterprise_project_id过滤
+        :type enterprise_project_id: list[str]
+        :param public_border_group: 根据public_border_group过滤
+        :type public_border_group: list[str]
+        :param allow_share_bandwidth_type_any: 共享带宽类型，根据任一共享带宽类型过滤EIP列表。 可以指定多个带宽类型，不同的带宽类型间用逗号分隔。
+        :type allow_share_bandwidth_type_any: list[str]
+        """
         
         
 
@@ -258,7 +343,7 @@ class ListPublicipsRequest:
         分页查询起始的资源ID，为空时为查询第一页
 
         :param marker: The marker of this ListPublicipsRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -280,7 +365,7 @@ class ListPublicipsRequest:
         分页查询起始的资源序号
 
         :param offset: The offset of this ListPublicipsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -302,7 +387,7 @@ class ListPublicipsRequest:
         每页返回的个数取值范围：0~[2000]，其中2000为局点差异项，具体取值由局点决定
 
         :param limit: The limit of this ListPublicipsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -324,7 +409,7 @@ class ListPublicipsRequest:
         显示，形式为\"fields=id&fields=owner&...\"  支持字段：id/project_id/ip_version/type/public_ip_address/public_ipv6_address/network_type/status/description/created_at/updated_at/vnic/bandwidth/associate_instance_type/associate_instance_id/lock_status/billing_info/tags/enterprise_project_id/allow_share_bandwidth_types/public_border_group/alias/publicip_pool_name/publicip_pool_id
 
         :param fields: The fields of this ListPublicipsRequest.
-        :type: list[str]
+        :type fields: list[str]
         """
         self._fields = fields
 
@@ -346,7 +431,7 @@ class ListPublicipsRequest:
         排序，形式为\"sort_key=id\"  支持字段：id/public_ip_address/public_ipv6_address/ip_version/created_at/updated_at/public_border_group
 
         :param sort_key: The sort_key of this ListPublicipsRequest.
-        :type: str
+        :type sort_key: str
         """
         self._sort_key = sort_key
 
@@ -368,7 +453,7 @@ class ListPublicipsRequest:
         排序方向  取值范围：asc、desc
 
         :param sort_dir: The sort_dir of this ListPublicipsRequest.
-        :type: str
+        :type sort_dir: str
         """
         self._sort_dir = sort_dir
 
@@ -390,7 +475,7 @@ class ListPublicipsRequest:
         根据id过滤
 
         :param id: The id of this ListPublicipsRequest.
-        :type: list[str]
+        :type id: list[str]
         """
         self._id = id
 
@@ -412,7 +497,7 @@ class ListPublicipsRequest:
         根据ip_version过滤  取值范围：4、6
 
         :param ip_version: The ip_version of this ListPublicipsRequest.
-        :type: list[int]
+        :type ip_version: list[int]
         """
         self._ip_version = ip_version
 
@@ -434,7 +519,7 @@ class ListPublicipsRequest:
         根据public_ip_address过滤
 
         :param public_ip_address: The public_ip_address of this ListPublicipsRequest.
-        :type: list[str]
+        :type public_ip_address: list[str]
         """
         self._public_ip_address = public_ip_address
 
@@ -456,7 +541,7 @@ class ListPublicipsRequest:
         根据public_ip_address过滤，模糊搜索
 
         :param public_ip_address_like: The public_ip_address_like of this ListPublicipsRequest.
-        :type: str
+        :type public_ip_address_like: str
         """
         self._public_ip_address_like = public_ip_address_like
 
@@ -478,7 +563,7 @@ class ListPublicipsRequest:
         根据public_ipv6_address过滤
 
         :param public_ipv6_address: The public_ipv6_address of this ListPublicipsRequest.
-        :type: list[str]
+        :type public_ipv6_address: list[str]
         """
         self._public_ipv6_address = public_ipv6_address
 
@@ -500,7 +585,7 @@ class ListPublicipsRequest:
         根据public_ipv6_address过滤，模糊搜索
 
         :param public_ipv6_address_like: The public_ipv6_address_like of this ListPublicipsRequest.
-        :type: str
+        :type public_ipv6_address_like: str
         """
         self._public_ipv6_address_like = public_ipv6_address_like
 
@@ -522,7 +607,7 @@ class ListPublicipsRequest:
         根据type过滤  取值范围：EIP、DUALSTACK、DUALSTACK_SUBNET  EIP: 弹性公网IP   DUALSTACK: 双栈IPV6   DUALSTACK_SUBNET: 双栈子网
 
         :param type: The type of this ListPublicipsRequest.
-        :type: list[str]
+        :type type: list[str]
         """
         self._type = type
 
@@ -544,7 +629,7 @@ class ListPublicipsRequest:
         根据network_type过滤  取值范围：5_telcom、5_union、5_bgp、5_sbgp、5_ipv6、5_graybgp
 
         :param network_type: The network_type of this ListPublicipsRequest.
-        :type: list[str]
+        :type network_type: list[str]
         """
         self._network_type = network_type
 
@@ -566,7 +651,7 @@ class ListPublicipsRequest:
         根据publicip_pool_name过滤  取值范围：5_telcom、5_union、5_bgp、5_sbgp、5_ipv6、5_graybgp、专属池名称等
 
         :param publicip_pool_name: The publicip_pool_name of this ListPublicipsRequest.
-        :type: list[str]
+        :type publicip_pool_name: list[str]
         """
         self._publicip_pool_name = publicip_pool_name
 
@@ -588,7 +673,7 @@ class ListPublicipsRequest:
         根据status过滤  取值范围：FREEZED、DOWN、ACTIVE、ERROR
 
         :param status: The status of this ListPublicipsRequest.
-        :type: list[str]
+        :type status: list[str]
         """
         self._status = status
 
@@ -610,7 +695,7 @@ class ListPublicipsRequest:
         根据alias模糊搜索
 
         :param alias_like: The alias_like of this ListPublicipsRequest.
-        :type: str
+        :type alias_like: str
         """
         self._alias_like = alias_like
 
@@ -632,7 +717,7 @@ class ListPublicipsRequest:
         根据alias过滤
 
         :param alias: The alias of this ListPublicipsRequest.
-        :type: list[str]
+        :type alias: list[str]
         """
         self._alias = alias
 
@@ -654,7 +739,7 @@ class ListPublicipsRequest:
         根据description过滤
 
         :param description: The description of this ListPublicipsRequest.
-        :type: list[str]
+        :type description: list[str]
         """
         self._description = description
 
@@ -676,7 +761,7 @@ class ListPublicipsRequest:
         根据private_ip_address过滤
 
         :param vnic_private_ip_address: The vnic_private_ip_address of this ListPublicipsRequest.
-        :type: list[str]
+        :type vnic_private_ip_address: list[str]
         """
         self._vnic_private_ip_address = vnic_private_ip_address
 
@@ -698,7 +783,7 @@ class ListPublicipsRequest:
         根据private_ip_address模糊搜索
 
         :param vnic_private_ip_address_like: The vnic_private_ip_address_like of this ListPublicipsRequest.
-        :type: str
+        :type vnic_private_ip_address_like: str
         """
         self._vnic_private_ip_address_like = vnic_private_ip_address_like
 
@@ -720,7 +805,7 @@ class ListPublicipsRequest:
         根据device_id过滤
 
         :param vnic_device_id: The vnic_device_id of this ListPublicipsRequest.
-        :type: list[str]
+        :type vnic_device_id: list[str]
         """
         self._vnic_device_id = vnic_device_id
 
@@ -742,7 +827,7 @@ class ListPublicipsRequest:
         根据device_owner过滤
 
         :param vnic_device_owner: The vnic_device_owner of this ListPublicipsRequest.
-        :type: list[str]
+        :type vnic_device_owner: list[str]
         """
         self._vnic_device_owner = vnic_device_owner
 
@@ -764,7 +849,7 @@ class ListPublicipsRequest:
         根据vpc_id过滤
 
         :param vnic_vpc_id: The vnic_vpc_id of this ListPublicipsRequest.
-        :type: list[str]
+        :type vnic_vpc_id: list[str]
         """
         self._vnic_vpc_id = vnic_vpc_id
 
@@ -786,7 +871,7 @@ class ListPublicipsRequest:
         根据port_id过滤
 
         :param vnic_port_id: The vnic_port_id of this ListPublicipsRequest.
-        :type: list[str]
+        :type vnic_port_id: list[str]
         """
         self._vnic_port_id = vnic_port_id
 
@@ -808,7 +893,7 @@ class ListPublicipsRequest:
         根据device_owner_prefixlike模糊搜索
 
         :param vnic_device_owner_prefixlike: The vnic_device_owner_prefixlike of this ListPublicipsRequest.
-        :type: str
+        :type vnic_device_owner_prefixlike: str
         """
         self._vnic_device_owner_prefixlike = vnic_device_owner_prefixlike
 
@@ -830,7 +915,7 @@ class ListPublicipsRequest:
         根据instance_type过滤
 
         :param vnic_instance_type: The vnic_instance_type of this ListPublicipsRequest.
-        :type: list[str]
+        :type vnic_instance_type: list[str]
         """
         self._vnic_instance_type = vnic_instance_type
 
@@ -852,7 +937,7 @@ class ListPublicipsRequest:
         根据instance_id过滤
 
         :param vnic_instance_id: The vnic_instance_id of this ListPublicipsRequest.
-        :type: list[str]
+        :type vnic_instance_id: list[str]
         """
         self._vnic_instance_id = vnic_instance_id
 
@@ -874,7 +959,7 @@ class ListPublicipsRequest:
         根据id过滤
 
         :param bandwidth_id: The bandwidth_id of this ListPublicipsRequest.
-        :type: list[str]
+        :type bandwidth_id: list[str]
         """
         self._bandwidth_id = bandwidth_id
 
@@ -896,7 +981,7 @@ class ListPublicipsRequest:
         根据name过滤
 
         :param bandwidth_name: The bandwidth_name of this ListPublicipsRequest.
-        :type: list[str]
+        :type bandwidth_name: list[str]
         """
         self._bandwidth_name = bandwidth_name
 
@@ -918,7 +1003,7 @@ class ListPublicipsRequest:
         根据name模糊过滤
 
         :param bandwidth_name_like: The bandwidth_name_like of this ListPublicipsRequest.
-        :type: list[str]
+        :type bandwidth_name_like: list[str]
         """
         self._bandwidth_name_like = bandwidth_name_like
 
@@ -940,7 +1025,7 @@ class ListPublicipsRequest:
         根据size过滤
 
         :param bandwidth_size: The bandwidth_size of this ListPublicipsRequest.
-        :type: list[int]
+        :type bandwidth_size: list[int]
         """
         self._bandwidth_size = bandwidth_size
 
@@ -962,7 +1047,7 @@ class ListPublicipsRequest:
         根据share_type过滤
 
         :param bandwidth_share_type: The bandwidth_share_type of this ListPublicipsRequest.
-        :type: list[str]
+        :type bandwidth_share_type: list[str]
         """
         self._bandwidth_share_type = bandwidth_share_type
 
@@ -984,7 +1069,7 @@ class ListPublicipsRequest:
         根据charge_mode过滤
 
         :param bandwidth_charge_mode: The bandwidth_charge_mode of this ListPublicipsRequest.
-        :type: list[str]
+        :type bandwidth_charge_mode: list[str]
         """
         self._bandwidth_charge_mode = bandwidth_charge_mode
 
@@ -1006,7 +1091,7 @@ class ListPublicipsRequest:
         根据billing_info过滤
 
         :param billing_info: The billing_info of this ListPublicipsRequest.
-        :type: list[str]
+        :type billing_info: list[str]
         """
         self._billing_info = billing_info
 
@@ -1028,7 +1113,7 @@ class ListPublicipsRequest:
         根据订单模式过滤,   取值范围：YEARLY_MONTHLY、PAY_PER_USE
 
         :param billing_mode: The billing_mode of this ListPublicipsRequest.
-        :type: str
+        :type billing_mode: str
         """
         self._billing_mode = billing_mode
 
@@ -1050,7 +1135,7 @@ class ListPublicipsRequest:
         根据associate_instance_type过滤  取值范围：PORT、NATGW、ELB、VPN、ELBV1
 
         :param associate_instance_type: The associate_instance_type of this ListPublicipsRequest.
-        :type: list[str]
+        :type associate_instance_type: list[str]
         """
         self._associate_instance_type = associate_instance_type
 
@@ -1072,7 +1157,7 @@ class ListPublicipsRequest:
         根据associate_instance_id过滤
 
         :param associate_instance_id: The associate_instance_id of this ListPublicipsRequest.
-        :type: list[str]
+        :type associate_instance_id: list[str]
         """
         self._associate_instance_id = associate_instance_id
 
@@ -1094,7 +1179,7 @@ class ListPublicipsRequest:
         根据enterprise_project_id过滤
 
         :param enterprise_project_id: The enterprise_project_id of this ListPublicipsRequest.
-        :type: list[str]
+        :type enterprise_project_id: list[str]
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -1116,7 +1201,7 @@ class ListPublicipsRequest:
         根据public_border_group过滤
 
         :param public_border_group: The public_border_group of this ListPublicipsRequest.
-        :type: list[str]
+        :type public_border_group: list[str]
         """
         self._public_border_group = public_border_group
 
@@ -1138,7 +1223,7 @@ class ListPublicipsRequest:
         共享带宽类型，根据任一共享带宽类型过滤EIP列表。 可以指定多个带宽类型，不同的带宽类型间用逗号分隔。
 
         :param allow_share_bandwidth_type_any: The allow_share_bandwidth_type_any of this ListPublicipsRequest.
-        :type: list[str]
+        :type allow_share_bandwidth_type_any: list[str]
         """
         self._allow_share_bandwidth_type_any = allow_share_bandwidth_type_any
 

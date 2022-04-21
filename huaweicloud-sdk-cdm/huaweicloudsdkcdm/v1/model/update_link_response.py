@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateLinkResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateLinkResponse(SdkResponse):
     }
 
     def __init__(self, validation_result=None):
-        """UpdateLinkResponse - a model defined in huaweicloud sdk"""
+        """UpdateLinkResponse
+
+        The model defined in huaweicloud sdk
+
+        :param validation_result: 校验结构：如果创建连接失败，返回失败原因，请参见validation-result参数说明。如果创建成功，返回空列表。
+        :type validation_result: list[:class:`huaweicloudsdkcdm.v1.ValidationResult`]
+        """
         
         super(UpdateLinkResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class UpdateLinkResponse(SdkResponse):
         校验结构：如果创建连接失败，返回失败原因，请参见validation-result参数说明。如果创建成功，返回空列表。
 
         :return: The validation_result of this UpdateLinkResponse.
-        :rtype: list[ValidationResult]
+        :rtype: list[:class:`huaweicloudsdkcdm.v1.ValidationResult`]
         """
         return self._validation_result
 
@@ -58,7 +63,7 @@ class UpdateLinkResponse(SdkResponse):
         校验结构：如果创建连接失败，返回失败原因，请参见validation-result参数说明。如果创建成功，返回空列表。
 
         :param validation_result: The validation_result of this UpdateLinkResponse.
-        :type: list[ValidationResult]
+        :type validation_result: list[:class:`huaweicloudsdkcdm.v1.ValidationResult`]
         """
         self._validation_result = validation_result
 

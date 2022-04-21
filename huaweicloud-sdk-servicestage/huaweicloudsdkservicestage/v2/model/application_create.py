@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApplicationCreate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ApplicationCreate:
     }
 
     def __init__(self, name=None, description=None, enterprise_project_id=None):
-        """ApplicationCreate - a model defined in huaweicloud sdk"""
+        """ApplicationCreate
+
+        The model defined in huaweicloud sdk
+
+        :param name: 应用名称。
+        :type name: str
+        :param description: 应用描述。
+        :type description: str
+        :param enterprise_project_id: 企业项目ID。默认值为0。
+        :type enterprise_project_id: str
+        """
         
         
 
@@ -67,7 +76,7 @@ class ApplicationCreate:
         应用名称。
 
         :param name: The name of this ApplicationCreate.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -89,7 +98,7 @@ class ApplicationCreate:
         应用描述。
 
         :param description: The description of this ApplicationCreate.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -111,7 +120,7 @@ class ApplicationCreate:
         企业项目ID。默认值为0。
 
         :param enterprise_project_id: The enterprise_project_id of this ApplicationCreate.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateRecurringSubMeetingRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class UpdateRecurringSubMeetingRequest:
     }
 
     def __init__(self, x_authorization_type=None, user_uuid=None, x_site_id=None, conference_id=None, body=None):
-        """UpdateRecurringSubMeetingRequest - a model defined in huaweicloud sdk"""
+        """UpdateRecurringSubMeetingRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_authorization_type: 标识是否为第三方portal过来的请求
+        :type x_authorization_type: str
+        :param user_uuid: 用户的uuid（已在USG注册过的）
+        :type user_uuid: str
+        :param x_site_id: 用于区分到哪个HCSO站点鉴权。
+        :type x_site_id: str
+        :param conference_id: 会议标识
+        :type conference_id: str
+        :param body: Body of the UpdateRecurringSubMeetingRequest
+        :type body: :class:`huaweicloudsdkmeeting.v1.RestScheduleCycleConfDTO`
+        """
         
         
 
@@ -77,7 +90,7 @@ class UpdateRecurringSubMeetingRequest:
         标识是否为第三方portal过来的请求
 
         :param x_authorization_type: The x_authorization_type of this UpdateRecurringSubMeetingRequest.
-        :type: str
+        :type x_authorization_type: str
         """
         self._x_authorization_type = x_authorization_type
 
@@ -99,7 +112,7 @@ class UpdateRecurringSubMeetingRequest:
         用户的uuid（已在USG注册过的）
 
         :param user_uuid: The user_uuid of this UpdateRecurringSubMeetingRequest.
-        :type: str
+        :type user_uuid: str
         """
         self._user_uuid = user_uuid
 
@@ -121,7 +134,7 @@ class UpdateRecurringSubMeetingRequest:
         用于区分到哪个HCSO站点鉴权。
 
         :param x_site_id: The x_site_id of this UpdateRecurringSubMeetingRequest.
-        :type: str
+        :type x_site_id: str
         """
         self._x_site_id = x_site_id
 
@@ -143,7 +156,7 @@ class UpdateRecurringSubMeetingRequest:
         会议标识
 
         :param conference_id: The conference_id of this UpdateRecurringSubMeetingRequest.
-        :type: str
+        :type conference_id: str
         """
         self._conference_id = conference_id
 
@@ -153,7 +166,7 @@ class UpdateRecurringSubMeetingRequest:
 
 
         :return: The body of this UpdateRecurringSubMeetingRequest.
-        :rtype: RestScheduleCycleConfDTO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.RestScheduleCycleConfDTO`
         """
         return self._body
 
@@ -163,7 +176,7 @@ class UpdateRecurringSubMeetingRequest:
 
 
         :param body: The body of this UpdateRecurringSubMeetingRequest.
-        :type: RestScheduleCycleConfDTO
+        :type body: :class:`huaweicloudsdkmeeting.v1.RestScheduleCycleConfDTO`
         """
         self._body = body
 

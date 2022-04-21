@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ValueInTwinExcepted:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ValueInTwinExcepted:
     }
 
     def __init__(self, value=None, metadata=None):
-        """ValueInTwinExcepted - a model defined in huaweicloud sdk"""
+        """ValueInTwinExcepted
+
+        The model defined in huaweicloud sdk
+
+        :param value: 动态属性的初始值，最大长度512， value允许英文字母、数字、下划线、中划线、点、逗号、冒号、/、@、#
+        :type value: str
+        :param metadata: 
+        :type metadata: :class:`huaweicloudsdkief.v1.ValueInTwinExceptedMetadata`
+        """
         
         
 
@@ -62,7 +69,7 @@ class ValueInTwinExcepted:
         动态属性的初始值，最大长度512， value允许英文字母、数字、下划线、中划线、点、逗号、冒号、/、@、#
 
         :param value: The value of this ValueInTwinExcepted.
-        :type: str
+        :type value: str
         """
         self._value = value
 
@@ -72,7 +79,7 @@ class ValueInTwinExcepted:
 
 
         :return: The metadata of this ValueInTwinExcepted.
-        :rtype: ValueInTwinExceptedMetadata
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInTwinExceptedMetadata`
         """
         return self._metadata
 
@@ -82,7 +89,7 @@ class ValueInTwinExcepted:
 
 
         :param metadata: The metadata of this ValueInTwinExcepted.
-        :type: ValueInTwinExceptedMetadata
+        :type metadata: :class:`huaweicloudsdkief.v1.ValueInTwinExceptedMetadata`
         """
         self._metadata = metadata
 

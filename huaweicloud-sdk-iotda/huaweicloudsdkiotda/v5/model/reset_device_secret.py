@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResetDeviceSecret:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -33,7 +32,15 @@ class ResetDeviceSecret:
     }
 
     def __init__(self, secret=None, force_disconnect=None):
-        """ResetDeviceSecret - a model defined in huaweicloud sdk"""
+        """ResetDeviceSecret
+
+        The model defined in huaweicloud sdk
+
+        :param secret: **参数说明**：设备密钥，设置该字段时平台将设备密钥重置为指定值，若不设置则由平台自动生成。 **取值范围**：长度不低于8不超过32，只允许字母、数字、下划线（_）、连接符（-）的组合。
+        :type secret: str
+        :param force_disconnect: **参数说明**：是否强制断开设备的连接，当前仅限长连接。默认值false。
+        :type force_disconnect: bool
+        """
         
         
 
@@ -64,7 +71,7 @@ class ResetDeviceSecret:
         **参数说明**：设备密钥，设置该字段时平台将设备密钥重置为指定值，若不设置则由平台自动生成。 **取值范围**：长度不低于8不超过32，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :param secret: The secret of this ResetDeviceSecret.
-        :type: str
+        :type secret: str
         """
         self._secret = secret
 
@@ -86,7 +93,7 @@ class ResetDeviceSecret:
         **参数说明**：是否强制断开设备的连接，当前仅限长连接。默认值false。
 
         :param force_disconnect: The force_disconnect of this ResetDeviceSecret.
-        :type: bool
+        :type force_disconnect: bool
         """
         self._force_disconnect = force_disconnect
 

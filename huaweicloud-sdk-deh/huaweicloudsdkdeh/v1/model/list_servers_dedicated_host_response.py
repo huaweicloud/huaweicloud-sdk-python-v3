@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListServersDedicatedHostResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListServersDedicatedHostResponse(SdkResponse):
     }
 
     def __init__(self, servers=None):
-        """ListServersDedicatedHostResponse - a model defined in huaweicloud sdk"""
+        """ListServersDedicatedHostResponse
+
+        The model defined in huaweicloud sdk
+
+        :param servers: server字段数据结构说明
+        :type servers: list[:class:`huaweicloudsdkdeh.v1.RespServer`]
+        """
         
         super(ListServersDedicatedHostResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListServersDedicatedHostResponse(SdkResponse):
         server字段数据结构说明
 
         :return: The servers of this ListServersDedicatedHostResponse.
-        :rtype: list[RespServer]
+        :rtype: list[:class:`huaweicloudsdkdeh.v1.RespServer`]
         """
         return self._servers
 
@@ -58,7 +63,7 @@ class ListServersDedicatedHostResponse(SdkResponse):
         server字段数据结构说明
 
         :param servers: The servers of this ListServersDedicatedHostResponse.
-        :type: list[RespServer]
+        :type servers: list[:class:`huaweicloudsdkdeh.v1.RespServer`]
         """
         self._servers = servers
 

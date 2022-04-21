@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListClustersDetailsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListClustersDetailsRequest:
     }
 
     def __init__(self, start=None, limit=None):
-        """ListClustersDetailsRequest - a model defined in huaweicloud sdk"""
+        """ListClustersDetailsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param start: 指定查询起始值，默认值为1，即从第1个集群开始查询。
+        :type start: int
+        :param limit: 指定查询个数，默认值为10，即一次查询10个集群信息。
+        :type limit: int
+        """
         
         
 
@@ -63,7 +70,7 @@ class ListClustersDetailsRequest:
         指定查询起始值，默认值为1，即从第1个集群开始查询。
 
         :param start: The start of this ListClustersDetailsRequest.
-        :type: int
+        :type start: int
         """
         self._start = start
 
@@ -85,7 +92,7 @@ class ListClustersDetailsRequest:
         指定查询个数，默认值为10，即一次查询10个集群信息。
 
         :param limit: The limit of this ListClustersDetailsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

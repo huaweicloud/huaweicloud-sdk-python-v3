@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateStreamingJobResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UpdateStreamingJobResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, job_state=None, status=None, check_info=None):
-        """UpdateStreamingJobResponse - a model defined in huaweicloud sdk"""
+        """UpdateStreamingJobResponse
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 作业ID
+        :type job_id: str
+        :param job_state: 作业状态
+        :type job_state: str
+        :param status: 操作结果
+        :type status: str
+        :param check_info: 作业错误详情
+        :type check_info: dict(str, object)
+        """
         
         super(UpdateStreamingJobResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class UpdateStreamingJobResponse(SdkResponse):
         作业ID
 
         :param job_id: The job_id of this UpdateStreamingJobResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -95,7 +106,7 @@ class UpdateStreamingJobResponse(SdkResponse):
         作业状态
 
         :param job_state: The job_state of this UpdateStreamingJobResponse.
-        :type: str
+        :type job_state: str
         """
         self._job_state = job_state
 
@@ -117,7 +128,7 @@ class UpdateStreamingJobResponse(SdkResponse):
         操作结果
 
         :param status: The status of this UpdateStreamingJobResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -139,7 +150,7 @@ class UpdateStreamingJobResponse(SdkResponse):
         作业错误详情
 
         :param check_info: The check_info of this UpdateStreamingJobResponse.
-        :type: dict(str, object)
+        :type check_info: dict(str, object)
         """
         self._check_info = check_info
 

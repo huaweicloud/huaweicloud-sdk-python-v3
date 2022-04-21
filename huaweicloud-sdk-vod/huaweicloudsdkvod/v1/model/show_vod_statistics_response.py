@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowVodStatisticsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowVodStatisticsResponse(SdkResponse):
     }
 
     def __init__(self, start_time=None, interval=None, sample_data=None):
-        """ShowVodStatisticsResponse - a model defined in huaweicloud sdk"""
+        """ShowVodStatisticsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param start_time: 统计起始时间。
+        :type start_time: str
+        :param interval: 统计间隔。
+        :type interval: int
+        :param sample_data: 采样数据数组。从start_time开始，每个间隔对应一个采样数据。
+        :type sample_data: list[:class:`huaweicloudsdkvod.v1.VodSampleData`]
+        """
         
         super(ShowVodStatisticsResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ShowVodStatisticsResponse(SdkResponse):
         统计起始时间。
 
         :param start_time: The start_time of this ShowVodStatisticsResponse.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -90,7 +99,7 @@ class ShowVodStatisticsResponse(SdkResponse):
         统计间隔。
 
         :param interval: The interval of this ShowVodStatisticsResponse.
-        :type: int
+        :type interval: int
         """
         self._interval = interval
 
@@ -101,7 +110,7 @@ class ShowVodStatisticsResponse(SdkResponse):
         采样数据数组。从start_time开始，每个间隔对应一个采样数据。
 
         :return: The sample_data of this ShowVodStatisticsResponse.
-        :rtype: list[VodSampleData]
+        :rtype: list[:class:`huaweicloudsdkvod.v1.VodSampleData`]
         """
         return self._sample_data
 
@@ -112,7 +121,7 @@ class ShowVodStatisticsResponse(SdkResponse):
         采样数据数组。从start_time开始，每个间隔对应一个采样数据。
 
         :param sample_data: The sample_data of this ShowVodStatisticsResponse.
-        :type: list[VodSampleData]
+        :type sample_data: list[:class:`huaweicloudsdkvod.v1.VodSampleData`]
         """
         self._sample_data = sample_data
 

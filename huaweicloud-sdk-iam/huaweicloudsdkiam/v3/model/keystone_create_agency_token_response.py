@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneCreateAgencyTokenResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class KeystoneCreateAgencyTokenResponse(SdkResponse):
     }
 
     def __init__(self, token=None, x_subject_token=None):
-        """KeystoneCreateAgencyTokenResponse - a model defined in huaweicloud sdk"""
+        """KeystoneCreateAgencyTokenResponse
+
+        The model defined in huaweicloud sdk
+
+        :param token: 
+        :type token: :class:`huaweicloudsdkiam.v3.AgencyTokenResult`
+        :param x_subject_token: 
+        :type x_subject_token: str
+        """
         
         super(KeystoneCreateAgencyTokenResponse, self).__init__()
 
@@ -51,7 +58,7 @@ class KeystoneCreateAgencyTokenResponse(SdkResponse):
 
 
         :return: The token of this KeystoneCreateAgencyTokenResponse.
-        :rtype: AgencyTokenResult
+        :rtype: :class:`huaweicloudsdkiam.v3.AgencyTokenResult`
         """
         return self._token
 
@@ -61,7 +68,7 @@ class KeystoneCreateAgencyTokenResponse(SdkResponse):
 
 
         :param token: The token of this KeystoneCreateAgencyTokenResponse.
-        :type: AgencyTokenResult
+        :type token: :class:`huaweicloudsdkiam.v3.AgencyTokenResult`
         """
         self._token = token
 
@@ -81,7 +88,7 @@ class KeystoneCreateAgencyTokenResponse(SdkResponse):
 
 
         :param x_subject_token: The x_subject_token of this KeystoneCreateAgencyTokenResponse.
-        :type: str
+        :type x_subject_token: str
         """
         self._x_subject_token = x_subject_token
 

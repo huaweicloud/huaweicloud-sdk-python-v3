@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestScheduleCycleConfDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class RestScheduleCycleConfDTO:
     }
 
     def __init__(self, cycle_sub_conf_id=None, media_types=None, start_time=None, length=None, is_auto_record=None, conf_config_info=None, record_auth_type=None, description=None):
-        """RestScheduleCycleConfDTO - a model defined in huaweicloud sdk"""
+        """RestScheduleCycleConfDTO
+
+        The model defined in huaweicloud sdk
+
+        :param cycle_sub_conf_id: 会议ID，长度限制为不超过32个字符
+        :type cycle_sub_conf_id: str
+        :param media_types: 会议的媒体类型 由1个或多个枚举String组成，多个枚举时，每个枚举值之间通过”,”逗号分隔，枚举值如下： “Voice”：语音 “Video”：标清视频 “HDVideo”：高清视频（与Video互斥，如果同时选择Video、HDVideo，则系统默认选择Video） “Telepresence”：智真(与HDVideo、Video互斥，如果同时选择，系统使用Telepresence)—暂不支持 “Data”：多媒体（AS会根据系统配置决定是否自动添加Data）
+        :type media_types: str
+        :param start_time: 会议开始时间，使用UTC时间 预定创建会议时，如果没有指定开始时间，或填空串，则表示会议马上开始 格式：YYYY-MM-DD HH:MM
+        :type start_time: str
+        :param length: 会议持续时长，单位分钟，最长1440，最短15
+        :type length: int
+        :param is_auto_record: 会议是否自动启动录制，在录播类型为:录播、直播+录播时有效。 1 :true：自动启动录制 0 :false：不自动启动录制
+        :type is_auto_record: int
+        :param conf_config_info: 
+        :type conf_config_info: :class:`huaweicloudsdkmeeting.v1.CycleSubConfConfigDTO`
+        :param record_auth_type: 录播鉴权方式，在录播类型为:录播、直播+录播时有效。 0为老的鉴权方式，url中携带token鉴权，1为企业内会议用户鉴权，2为会议内会议用户鉴权
+        :type record_auth_type: int
+        :param description: 会议描述，长度限制为200个字符
+        :type description: str
+        """
         
         
 
@@ -89,7 +108,7 @@ class RestScheduleCycleConfDTO:
         会议ID，长度限制为不超过32个字符
 
         :param cycle_sub_conf_id: The cycle_sub_conf_id of this RestScheduleCycleConfDTO.
-        :type: str
+        :type cycle_sub_conf_id: str
         """
         self._cycle_sub_conf_id = cycle_sub_conf_id
 
@@ -111,7 +130,7 @@ class RestScheduleCycleConfDTO:
         会议的媒体类型 由1个或多个枚举String组成，多个枚举时，每个枚举值之间通过”,”逗号分隔，枚举值如下： “Voice”：语音 “Video”：标清视频 “HDVideo”：高清视频（与Video互斥，如果同时选择Video、HDVideo，则系统默认选择Video） “Telepresence”：智真(与HDVideo、Video互斥，如果同时选择，系统使用Telepresence)—暂不支持 “Data”：多媒体（AS会根据系统配置决定是否自动添加Data）
 
         :param media_types: The media_types of this RestScheduleCycleConfDTO.
-        :type: str
+        :type media_types: str
         """
         self._media_types = media_types
 
@@ -133,7 +152,7 @@ class RestScheduleCycleConfDTO:
         会议开始时间，使用UTC时间 预定创建会议时，如果没有指定开始时间，或填空串，则表示会议马上开始 格式：YYYY-MM-DD HH:MM
 
         :param start_time: The start_time of this RestScheduleCycleConfDTO.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -155,7 +174,7 @@ class RestScheduleCycleConfDTO:
         会议持续时长，单位分钟，最长1440，最短15
 
         :param length: The length of this RestScheduleCycleConfDTO.
-        :type: int
+        :type length: int
         """
         self._length = length
 
@@ -177,7 +196,7 @@ class RestScheduleCycleConfDTO:
         会议是否自动启动录制，在录播类型为:录播、直播+录播时有效。 1 :true：自动启动录制 0 :false：不自动启动录制
 
         :param is_auto_record: The is_auto_record of this RestScheduleCycleConfDTO.
-        :type: int
+        :type is_auto_record: int
         """
         self._is_auto_record = is_auto_record
 
@@ -187,7 +206,7 @@ class RestScheduleCycleConfDTO:
 
 
         :return: The conf_config_info of this RestScheduleCycleConfDTO.
-        :rtype: CycleSubConfConfigDTO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.CycleSubConfConfigDTO`
         """
         return self._conf_config_info
 
@@ -197,7 +216,7 @@ class RestScheduleCycleConfDTO:
 
 
         :param conf_config_info: The conf_config_info of this RestScheduleCycleConfDTO.
-        :type: CycleSubConfConfigDTO
+        :type conf_config_info: :class:`huaweicloudsdkmeeting.v1.CycleSubConfConfigDTO`
         """
         self._conf_config_info = conf_config_info
 
@@ -219,7 +238,7 @@ class RestScheduleCycleConfDTO:
         录播鉴权方式，在录播类型为:录播、直播+录播时有效。 0为老的鉴权方式，url中携带token鉴权，1为企业内会议用户鉴权，2为会议内会议用户鉴权
 
         :param record_auth_type: The record_auth_type of this RestScheduleCycleConfDTO.
-        :type: int
+        :type record_auth_type: int
         """
         self._record_auth_type = record_auth_type
 
@@ -241,7 +260,7 @@ class RestScheduleCycleConfDTO:
         会议描述，长度限制为200个字符
 
         :param description: The description of this RestScheduleCycleConfDTO.
-        :type: str
+        :type description: str
         """
         self._description = description
 

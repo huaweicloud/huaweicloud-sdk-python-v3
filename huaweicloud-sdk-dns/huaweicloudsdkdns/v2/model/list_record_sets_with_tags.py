@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRecordSetsWithTags:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -58,7 +57,41 @@ class ListRecordSetsWithTags:
     }
 
     def __init__(self, id=None, name=None, description=None, zone_id=None, zone_name=None, type=None, ttl=None, records=None, create_at=None, update_at=None, status=None, default=None, project_id=None, links=None, tags=None):
-        """ListRecordSetsWithTags - a model defined in huaweicloud sdk"""
+        """ListRecordSetsWithTags
+
+        The model defined in huaweicloud sdk
+
+        :param id: Record Set的ID。
+        :type id: str
+        :param name: Record Set的名称。
+        :type name: str
+        :param description: Record Set的描述信息。
+        :type description: str
+        :param zone_id: 托管该记录的zone_id。
+        :type zone_id: str
+        :param zone_name: 托管该记录的zone_name。
+        :type zone_name: str
+        :param type: 记录类型。
+        :type type: str
+        :param ttl: 解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
+        :type ttl: int
+        :param records: 域名解析后的值。
+        :type records: list[str]
+        :param create_at: 创建时间。
+        :type create_at: str
+        :param update_at: 更新时间。
+        :type update_at: str
+        :param status: 资源状态。
+        :type status: str
+        :param default: 标识是否由系统默认生成，系统默认生成的Record Set不能删除。
+        :type default: bool
+        :param project_id: 该Record Set所属的项目ID。
+        :type project_id: str
+        :param links: 
+        :type links: :class:`huaweicloudsdkdns.v2.PageLink`
+        :param tags: 资源标签。
+        :type tags: list[:class:`huaweicloudsdkdns.v2.Tag`]
+        """
         
         
 
@@ -128,7 +161,7 @@ class ListRecordSetsWithTags:
         Record Set的ID。
 
         :param id: The id of this ListRecordSetsWithTags.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -150,7 +183,7 @@ class ListRecordSetsWithTags:
         Record Set的名称。
 
         :param name: The name of this ListRecordSetsWithTags.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -172,7 +205,7 @@ class ListRecordSetsWithTags:
         Record Set的描述信息。
 
         :param description: The description of this ListRecordSetsWithTags.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -194,7 +227,7 @@ class ListRecordSetsWithTags:
         托管该记录的zone_id。
 
         :param zone_id: The zone_id of this ListRecordSetsWithTags.
-        :type: str
+        :type zone_id: str
         """
         self._zone_id = zone_id
 
@@ -216,7 +249,7 @@ class ListRecordSetsWithTags:
         托管该记录的zone_name。
 
         :param zone_name: The zone_name of this ListRecordSetsWithTags.
-        :type: str
+        :type zone_name: str
         """
         self._zone_name = zone_name
 
@@ -238,7 +271,7 @@ class ListRecordSetsWithTags:
         记录类型。
 
         :param type: The type of this ListRecordSetsWithTags.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -260,7 +293,7 @@ class ListRecordSetsWithTags:
         解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
 
         :param ttl: The ttl of this ListRecordSetsWithTags.
-        :type: int
+        :type ttl: int
         """
         self._ttl = ttl
 
@@ -282,7 +315,7 @@ class ListRecordSetsWithTags:
         域名解析后的值。
 
         :param records: The records of this ListRecordSetsWithTags.
-        :type: list[str]
+        :type records: list[str]
         """
         self._records = records
 
@@ -304,7 +337,7 @@ class ListRecordSetsWithTags:
         创建时间。
 
         :param create_at: The create_at of this ListRecordSetsWithTags.
-        :type: str
+        :type create_at: str
         """
         self._create_at = create_at
 
@@ -326,7 +359,7 @@ class ListRecordSetsWithTags:
         更新时间。
 
         :param update_at: The update_at of this ListRecordSetsWithTags.
-        :type: str
+        :type update_at: str
         """
         self._update_at = update_at
 
@@ -348,7 +381,7 @@ class ListRecordSetsWithTags:
         资源状态。
 
         :param status: The status of this ListRecordSetsWithTags.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -370,7 +403,7 @@ class ListRecordSetsWithTags:
         标识是否由系统默认生成，系统默认生成的Record Set不能删除。
 
         :param default: The default of this ListRecordSetsWithTags.
-        :type: bool
+        :type default: bool
         """
         self._default = default
 
@@ -392,7 +425,7 @@ class ListRecordSetsWithTags:
         该Record Set所属的项目ID。
 
         :param project_id: The project_id of this ListRecordSetsWithTags.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -402,7 +435,7 @@ class ListRecordSetsWithTags:
 
 
         :return: The links of this ListRecordSetsWithTags.
-        :rtype: PageLink
+        :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
         """
         return self._links
 
@@ -412,7 +445,7 @@ class ListRecordSetsWithTags:
 
 
         :param links: The links of this ListRecordSetsWithTags.
-        :type: PageLink
+        :type links: :class:`huaweicloudsdkdns.v2.PageLink`
         """
         self._links = links
 
@@ -423,7 +456,7 @@ class ListRecordSetsWithTags:
         资源标签。
 
         :return: The tags of this ListRecordSetsWithTags.
-        :rtype: list[Tag]
+        :rtype: list[:class:`huaweicloudsdkdns.v2.Tag`]
         """
         return self._tags
 
@@ -434,7 +467,7 @@ class ListRecordSetsWithTags:
         资源标签。
 
         :param tags: The tags of this ListRecordSetsWithTags.
-        :type: list[Tag]
+        :type tags: list[:class:`huaweicloudsdkdns.v2.Tag`]
         """
         self._tags = tags
 

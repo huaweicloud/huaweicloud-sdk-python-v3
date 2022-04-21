@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InstanceReplicationListInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class InstanceReplicationListInfo:
     }
 
     def __init__(self, replication_role=None, replication_ip=None, is_replication=None, replication_id=None, node_id=None, status=None, az_code=None, dimensions=None):
-        """InstanceReplicationListInfo - a model defined in huaweicloud sdk"""
+        """InstanceReplicationListInfo
+
+        The model defined in huaweicloud sdk
+
+        :param replication_role: 副本角色，取值有： - master：表示主节点。 - slave：表示从节点。 
+        :type replication_role: str
+        :param replication_ip: 副本IP。
+        :type replication_ip: str
+        :param is_replication: 是否是新加副本。
+        :type is_replication: bool
+        :param replication_id: 副本id。
+        :type replication_id: str
+        :param node_id: 节点id。
+        :type node_id: str
+        :param status: 副本状态。
+        :type status: str
+        :param az_code: 副本所在的可用区
+        :type az_code: str
+        :param dimensions: 副本对应的监控指标维度信息。可用于调用云监控服务的查询监控数据指标相关接口 - 副本的监控维度为多维度，返回数组中包含两个维度信息。从云监控查询监控数据时，要按多维度传递指标维度参数，才能查询到监控指标值 - 第一个维度为副本父维度信息，维度名称为dcs_instance_id，维度值对应副本所在的实例ID - 第二个维度，维度名称为dcs_cluster_redis_node,维度值为副本的监控对象ID，与副本ID和节点ID不同。 
+        :type dimensions: list[:class:`huaweicloudsdkdcs.v2.InstanceReplicationDimensionsInfo`]
+        """
         
         
 
@@ -93,7 +112,7 @@ class InstanceReplicationListInfo:
         副本角色，取值有： - master：表示主节点。 - slave：表示从节点。 
 
         :param replication_role: The replication_role of this InstanceReplicationListInfo.
-        :type: str
+        :type replication_role: str
         """
         self._replication_role = replication_role
 
@@ -115,7 +134,7 @@ class InstanceReplicationListInfo:
         副本IP。
 
         :param replication_ip: The replication_ip of this InstanceReplicationListInfo.
-        :type: str
+        :type replication_ip: str
         """
         self._replication_ip = replication_ip
 
@@ -137,7 +156,7 @@ class InstanceReplicationListInfo:
         是否是新加副本。
 
         :param is_replication: The is_replication of this InstanceReplicationListInfo.
-        :type: bool
+        :type is_replication: bool
         """
         self._is_replication = is_replication
 
@@ -159,7 +178,7 @@ class InstanceReplicationListInfo:
         副本id。
 
         :param replication_id: The replication_id of this InstanceReplicationListInfo.
-        :type: str
+        :type replication_id: str
         """
         self._replication_id = replication_id
 
@@ -181,7 +200,7 @@ class InstanceReplicationListInfo:
         节点id。
 
         :param node_id: The node_id of this InstanceReplicationListInfo.
-        :type: str
+        :type node_id: str
         """
         self._node_id = node_id
 
@@ -203,7 +222,7 @@ class InstanceReplicationListInfo:
         副本状态。
 
         :param status: The status of this InstanceReplicationListInfo.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -225,7 +244,7 @@ class InstanceReplicationListInfo:
         副本所在的可用区
 
         :param az_code: The az_code of this InstanceReplicationListInfo.
-        :type: str
+        :type az_code: str
         """
         self._az_code = az_code
 
@@ -236,7 +255,7 @@ class InstanceReplicationListInfo:
         副本对应的监控指标维度信息。可用于调用云监控服务的查询监控数据指标相关接口 - 副本的监控维度为多维度，返回数组中包含两个维度信息。从云监控查询监控数据时，要按多维度传递指标维度参数，才能查询到监控指标值 - 第一个维度为副本父维度信息，维度名称为dcs_instance_id，维度值对应副本所在的实例ID - 第二个维度，维度名称为dcs_cluster_redis_node,维度值为副本的监控对象ID，与副本ID和节点ID不同。 
 
         :return: The dimensions of this InstanceReplicationListInfo.
-        :rtype: list[InstanceReplicationDimensionsInfo]
+        :rtype: list[:class:`huaweicloudsdkdcs.v2.InstanceReplicationDimensionsInfo`]
         """
         return self._dimensions
 
@@ -247,7 +266,7 @@ class InstanceReplicationListInfo:
         副本对应的监控指标维度信息。可用于调用云监控服务的查询监控数据指标相关接口 - 副本的监控维度为多维度，返回数组中包含两个维度信息。从云监控查询监控数据时，要按多维度传递指标维度参数，才能查询到监控指标值 - 第一个维度为副本父维度信息，维度名称为dcs_instance_id，维度值对应副本所在的实例ID - 第二个维度，维度名称为dcs_cluster_redis_node,维度值为副本的监控对象ID，与副本ID和节点ID不同。 
 
         :param dimensions: The dimensions of this InstanceReplicationListInfo.
-        :type: list[InstanceReplicationDimensionsInfo]
+        :type dimensions: list[:class:`huaweicloudsdkdcs.v2.InstanceReplicationDimensionsInfo`]
         """
         self._dimensions = dimensions
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IQueryUserPartnerCouponsResultV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -72,7 +71,55 @@ class IQueryUserPartnerCouponsResultV2:
     }
 
     def __init__(self, coupon_id=None, status=None, customer_id=None, coupon_type=None, measure_id=None, face_value=None, effective_time=None, expire_time=None, order_id=None, promotion_plan_id=None, promotion_plan_name=None, promotion_plan_desc=None, media_type=None, fetch_method=None, use_limits=None, active_time=None, last_used_time=None, promotion_id=None, create_time=None, balance=None, lock_order_id=None, is_frozen=None):
-        """IQueryUserPartnerCouponsResultV2 - a model defined in huaweicloud sdk"""
+        """IQueryUserPartnerCouponsResultV2
+
+        The model defined in huaweicloud sdk
+
+        :param coupon_id: 优惠券ID。
+        :type coupon_id: str
+        :param status: 优惠券状态： 1：未激活2：可使用3：已使用4：已过期5：已回收
+        :type status: int
+        :param customer_id: 客户账号ID。
+        :type customer_id: str
+        :param coupon_type: 优惠券类别： 1：代金券4：现金券
+        :type coupon_type: int
+        :param measure_id: 优惠券面额单位。 1：元。
+        :type measure_id: int
+        :param face_value: 优惠券面值。
+        :type face_value: float
+        :param effective_time: 生效时间。 UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。
+        :type effective_time: str
+        :param expire_time: 失效时间。 UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。
+        :type expire_time: str
+        :param order_id: 订单ID。
+        :type order_id: str
+        :param promotion_plan_id: 促销计划ID。
+        :type promotion_plan_id: str
+        :param promotion_plan_name: 促销计划名称。
+        :type promotion_plan_name: str
+        :param promotion_plan_desc: 促销计划描述。
+        :type promotion_plan_desc: str
+        :param media_type: 介质类型。 1：电子券2：纸质券
+        :type media_type: int
+        :param fetch_method: 获取方式。 1：线上领取2：线上兑换3：线上发放4：线下获取5：事件赠送
+        :type fetch_method: int
+        :param use_limits: 优惠券限制。 具体请参见表3。
+        :type use_limits: list[:class:`huaweicloudsdkbss.v2.ICouponUseLimitInfoV2`]
+        :param active_time: 优惠券的激活时间。
+        :type active_time: str
+        :param last_used_time: 优惠券的使用时间。
+        :type last_used_time: str
+        :param promotion_id: 促销活动ID。
+        :type promotion_id: str
+        :param create_time: 优惠券的创建时间。
+        :type create_time: str
+        :param balance: 优惠券余额。
+        :type balance: float
+        :param lock_order_id: 锁定优惠券的订单ID。 如果为老版本优惠券，该值为空。
+        :type lock_order_id: str
+        :param is_frozen: 优惠券是否冻结。 0：否1：是 可用优惠券接口返回时不包括冻结状态的优惠券。
+        :type is_frozen: str
+        """
         
         
 
@@ -163,7 +210,7 @@ class IQueryUserPartnerCouponsResultV2:
         优惠券ID。
 
         :param coupon_id: The coupon_id of this IQueryUserPartnerCouponsResultV2.
-        :type: str
+        :type coupon_id: str
         """
         self._coupon_id = coupon_id
 
@@ -185,7 +232,7 @@ class IQueryUserPartnerCouponsResultV2:
         优惠券状态： 1：未激活2：可使用3：已使用4：已过期5：已回收
 
         :param status: The status of this IQueryUserPartnerCouponsResultV2.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -207,7 +254,7 @@ class IQueryUserPartnerCouponsResultV2:
         客户账号ID。
 
         :param customer_id: The customer_id of this IQueryUserPartnerCouponsResultV2.
-        :type: str
+        :type customer_id: str
         """
         self._customer_id = customer_id
 
@@ -229,7 +276,7 @@ class IQueryUserPartnerCouponsResultV2:
         优惠券类别： 1：代金券4：现金券
 
         :param coupon_type: The coupon_type of this IQueryUserPartnerCouponsResultV2.
-        :type: int
+        :type coupon_type: int
         """
         self._coupon_type = coupon_type
 
@@ -251,7 +298,7 @@ class IQueryUserPartnerCouponsResultV2:
         优惠券面额单位。 1：元。
 
         :param measure_id: The measure_id of this IQueryUserPartnerCouponsResultV2.
-        :type: int
+        :type measure_id: int
         """
         self._measure_id = measure_id
 
@@ -273,7 +320,7 @@ class IQueryUserPartnerCouponsResultV2:
         优惠券面值。
 
         :param face_value: The face_value of this IQueryUserPartnerCouponsResultV2.
-        :type: float
+        :type face_value: float
         """
         self._face_value = face_value
 
@@ -295,7 +342,7 @@ class IQueryUserPartnerCouponsResultV2:
         生效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :param effective_time: The effective_time of this IQueryUserPartnerCouponsResultV2.
-        :type: str
+        :type effective_time: str
         """
         self._effective_time = effective_time
 
@@ -317,7 +364,7 @@ class IQueryUserPartnerCouponsResultV2:
         失效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :param expire_time: The expire_time of this IQueryUserPartnerCouponsResultV2.
-        :type: str
+        :type expire_time: str
         """
         self._expire_time = expire_time
 
@@ -339,7 +386,7 @@ class IQueryUserPartnerCouponsResultV2:
         订单ID。
 
         :param order_id: The order_id of this IQueryUserPartnerCouponsResultV2.
-        :type: str
+        :type order_id: str
         """
         self._order_id = order_id
 
@@ -361,7 +408,7 @@ class IQueryUserPartnerCouponsResultV2:
         促销计划ID。
 
         :param promotion_plan_id: The promotion_plan_id of this IQueryUserPartnerCouponsResultV2.
-        :type: str
+        :type promotion_plan_id: str
         """
         self._promotion_plan_id = promotion_plan_id
 
@@ -383,7 +430,7 @@ class IQueryUserPartnerCouponsResultV2:
         促销计划名称。
 
         :param promotion_plan_name: The promotion_plan_name of this IQueryUserPartnerCouponsResultV2.
-        :type: str
+        :type promotion_plan_name: str
         """
         self._promotion_plan_name = promotion_plan_name
 
@@ -405,7 +452,7 @@ class IQueryUserPartnerCouponsResultV2:
         促销计划描述。
 
         :param promotion_plan_desc: The promotion_plan_desc of this IQueryUserPartnerCouponsResultV2.
-        :type: str
+        :type promotion_plan_desc: str
         """
         self._promotion_plan_desc = promotion_plan_desc
 
@@ -427,7 +474,7 @@ class IQueryUserPartnerCouponsResultV2:
         介质类型。 1：电子券2：纸质券
 
         :param media_type: The media_type of this IQueryUserPartnerCouponsResultV2.
-        :type: int
+        :type media_type: int
         """
         self._media_type = media_type
 
@@ -449,7 +496,7 @@ class IQueryUserPartnerCouponsResultV2:
         获取方式。 1：线上领取2：线上兑换3：线上发放4：线下获取5：事件赠送
 
         :param fetch_method: The fetch_method of this IQueryUserPartnerCouponsResultV2.
-        :type: int
+        :type fetch_method: int
         """
         self._fetch_method = fetch_method
 
@@ -460,7 +507,7 @@ class IQueryUserPartnerCouponsResultV2:
         优惠券限制。 具体请参见表3。
 
         :return: The use_limits of this IQueryUserPartnerCouponsResultV2.
-        :rtype: list[ICouponUseLimitInfoV2]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.ICouponUseLimitInfoV2`]
         """
         return self._use_limits
 
@@ -471,7 +518,7 @@ class IQueryUserPartnerCouponsResultV2:
         优惠券限制。 具体请参见表3。
 
         :param use_limits: The use_limits of this IQueryUserPartnerCouponsResultV2.
-        :type: list[ICouponUseLimitInfoV2]
+        :type use_limits: list[:class:`huaweicloudsdkbss.v2.ICouponUseLimitInfoV2`]
         """
         self._use_limits = use_limits
 
@@ -493,7 +540,7 @@ class IQueryUserPartnerCouponsResultV2:
         优惠券的激活时间。
 
         :param active_time: The active_time of this IQueryUserPartnerCouponsResultV2.
-        :type: str
+        :type active_time: str
         """
         self._active_time = active_time
 
@@ -515,7 +562,7 @@ class IQueryUserPartnerCouponsResultV2:
         优惠券的使用时间。
 
         :param last_used_time: The last_used_time of this IQueryUserPartnerCouponsResultV2.
-        :type: str
+        :type last_used_time: str
         """
         self._last_used_time = last_used_time
 
@@ -537,7 +584,7 @@ class IQueryUserPartnerCouponsResultV2:
         促销活动ID。
 
         :param promotion_id: The promotion_id of this IQueryUserPartnerCouponsResultV2.
-        :type: str
+        :type promotion_id: str
         """
         self._promotion_id = promotion_id
 
@@ -559,7 +606,7 @@ class IQueryUserPartnerCouponsResultV2:
         优惠券的创建时间。
 
         :param create_time: The create_time of this IQueryUserPartnerCouponsResultV2.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -581,7 +628,7 @@ class IQueryUserPartnerCouponsResultV2:
         优惠券余额。
 
         :param balance: The balance of this IQueryUserPartnerCouponsResultV2.
-        :type: float
+        :type balance: float
         """
         self._balance = balance
 
@@ -603,7 +650,7 @@ class IQueryUserPartnerCouponsResultV2:
         锁定优惠券的订单ID。 如果为老版本优惠券，该值为空。
 
         :param lock_order_id: The lock_order_id of this IQueryUserPartnerCouponsResultV2.
-        :type: str
+        :type lock_order_id: str
         """
         self._lock_order_id = lock_order_id
 
@@ -625,7 +672,7 @@ class IQueryUserPartnerCouponsResultV2:
         优惠券是否冻结。 0：否1：是 可用优惠券接口返回时不包括冻结状态的优惠券。
 
         :param is_frozen: The is_frozen of this IQueryUserPartnerCouponsResultV2.
-        :type: str
+        :type is_frozen: str
         """
         self._is_frozen = is_frozen
 

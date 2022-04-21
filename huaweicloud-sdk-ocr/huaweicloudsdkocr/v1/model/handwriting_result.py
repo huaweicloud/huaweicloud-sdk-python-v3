@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class HandwritingResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class HandwritingResult:
     }
 
     def __init__(self, words_block_count=None, words_block_list=None):
-        """HandwritingResult - a model defined in huaweicloud sdk"""
+        """HandwritingResult
+
+        The model defined in huaweicloud sdk
+
+        :param words_block_count: 代表检测识别出来的文字块数目。 \&quot;segment_digit\&quot; 和\&quot;segment\&quot;默认为1。       
+        :type words_block_count: int
+        :param words_block_list: 识别文字块列表，输出顺序从左到右，从上到下。 
+        :type words_block_list: list[:class:`huaweicloudsdkocr.v1.HandwritingWordsBlockList`]
+        """
         
         
 
@@ -61,7 +68,7 @@ class HandwritingResult:
         代表检测识别出来的文字块数目。 \"segment_digit\" 和\"segment\"默认为1。       
 
         :param words_block_count: The words_block_count of this HandwritingResult.
-        :type: int
+        :type words_block_count: int
         """
         self._words_block_count = words_block_count
 
@@ -72,7 +79,7 @@ class HandwritingResult:
         识别文字块列表，输出顺序从左到右，从上到下。 
 
         :return: The words_block_list of this HandwritingResult.
-        :rtype: list[HandwritingWordsBlockList]
+        :rtype: list[:class:`huaweicloudsdkocr.v1.HandwritingWordsBlockList`]
         """
         return self._words_block_list
 
@@ -83,7 +90,7 @@ class HandwritingResult:
         识别文字块列表，输出顺序从左到右，从上到下。 
 
         :param words_block_list: The words_block_list of this HandwritingResult.
-        :type: list[HandwritingWordsBlockList]
+        :type words_block_list: list[:class:`huaweicloudsdkocr.v1.HandwritingWordsBlockList`]
         """
         self._words_block_list = words_block_list
 

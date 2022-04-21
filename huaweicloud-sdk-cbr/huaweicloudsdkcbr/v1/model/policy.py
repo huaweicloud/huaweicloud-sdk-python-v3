@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Policy:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class Policy:
     }
 
     def __init__(self, enabled=None, id=None, name=None, operation_definition=None, operation_type=None, trigger=None, associated_vaults=None):
-        """Policy - a model defined in huaweicloud sdk"""
+        """Policy
+
+        The model defined in huaweicloud sdk
+
+        :param enabled: 策略是否启用
+        :type enabled: bool
+        :param id: 策略ID
+        :type id: str
+        :param name: 策略名称
+        :type name: str
+        :param operation_definition: 
+        :type operation_definition: :class:`huaweicloudsdkcbr.v1.PolicyoODCreate`
+        :param operation_type: 策略类型,例如 ‘backup’：自动备份
+        :type operation_type: str
+        :param trigger: 
+        :type trigger: :class:`huaweicloudsdkcbr.v1.PolicyTriggerResp`
+        :param associated_vaults: 关联的存储库
+        :type associated_vaults: list[:class:`huaweicloudsdkcbr.v1.PolicyAssociateVault`]
+        """
         
         
 
@@ -82,7 +99,7 @@ class Policy:
         策略是否启用
 
         :param enabled: The enabled of this Policy.
-        :type: bool
+        :type enabled: bool
         """
         self._enabled = enabled
 
@@ -104,7 +121,7 @@ class Policy:
         策略ID
 
         :param id: The id of this Policy.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -126,7 +143,7 @@ class Policy:
         策略名称
 
         :param name: The name of this Policy.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -136,7 +153,7 @@ class Policy:
 
 
         :return: The operation_definition of this Policy.
-        :rtype: PolicyoODCreate
+        :rtype: :class:`huaweicloudsdkcbr.v1.PolicyoODCreate`
         """
         return self._operation_definition
 
@@ -146,7 +163,7 @@ class Policy:
 
 
         :param operation_definition: The operation_definition of this Policy.
-        :type: PolicyoODCreate
+        :type operation_definition: :class:`huaweicloudsdkcbr.v1.PolicyoODCreate`
         """
         self._operation_definition = operation_definition
 
@@ -168,7 +185,7 @@ class Policy:
         策略类型,例如 ‘backup’：自动备份
 
         :param operation_type: The operation_type of this Policy.
-        :type: str
+        :type operation_type: str
         """
         self._operation_type = operation_type
 
@@ -178,7 +195,7 @@ class Policy:
 
 
         :return: The trigger of this Policy.
-        :rtype: PolicyTriggerResp
+        :rtype: :class:`huaweicloudsdkcbr.v1.PolicyTriggerResp`
         """
         return self._trigger
 
@@ -188,7 +205,7 @@ class Policy:
 
 
         :param trigger: The trigger of this Policy.
-        :type: PolicyTriggerResp
+        :type trigger: :class:`huaweicloudsdkcbr.v1.PolicyTriggerResp`
         """
         self._trigger = trigger
 
@@ -199,7 +216,7 @@ class Policy:
         关联的存储库
 
         :return: The associated_vaults of this Policy.
-        :rtype: list[PolicyAssociateVault]
+        :rtype: list[:class:`huaweicloudsdkcbr.v1.PolicyAssociateVault`]
         """
         return self._associated_vaults
 
@@ -210,7 +227,7 @@ class Policy:
         关联的存储库
 
         :param associated_vaults: The associated_vaults of this Policy.
-        :type: list[PolicyAssociateVault]
+        :type associated_vaults: list[:class:`huaweicloudsdkcbr.v1.PolicyAssociateVault`]
         """
         self._associated_vaults = associated_vaults
 

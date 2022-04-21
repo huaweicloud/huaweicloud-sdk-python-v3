@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UploadIssueImgResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UploadIssueImgResponse(SdkResponse):
     }
 
     def __init__(self, img_id=None, img_url=None):
-        """UploadIssueImgResponse - a model defined in huaweicloud sdk"""
+        """UploadIssueImgResponse
+
+        The model defined in huaweicloud sdk
+
+        :param img_id: 图片id
+        :type img_id: str
+        :param img_url: 图片url v1改成v3作为下载图片请求
+        :type img_url: str
+        """
         
         super(UploadIssueImgResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class UploadIssueImgResponse(SdkResponse):
         图片id
 
         :param img_id: The img_id of this UploadIssueImgResponse.
-        :type: str
+        :type img_id: str
         """
         self._img_id = img_id
 
@@ -85,7 +92,7 @@ class UploadIssueImgResponse(SdkResponse):
         图片url v1改成v3作为下载图片请求
 
         :param img_url: The img_url of this UploadIssueImgResponse.
-        :type: str
+        :type img_url: str
         """
         self._img_url = img_url
 

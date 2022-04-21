@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ContentCompareResultDetails:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ContentCompareResultDetails:
     }
 
     def __init__(self, source_db_name=None, content_compare_detail=None, content_compare_detail_count=None, content_uncompare_detail=None, content_uncompare_detail_count=None):
-        """ContentCompareResultDetails - a model defined in huaweicloud sdk"""
+        """ContentCompareResultDetails
+
+        The model defined in huaweicloud sdk
+
+        :param source_db_name: 源库名称。
+        :type source_db_name: str
+        :param content_compare_detail: 该库的表的内容对比详情。
+        :type content_compare_detail: list[:class:`huaweicloudsdkdrs.v3.ContentCompareDetail`]
+        :param content_compare_detail_count: 内容对比结果详情总数。
+        :type content_compare_detail_count: int
+        :param content_uncompare_detail: 该库的表的内容对比详情(无法对比的表)。
+        :type content_uncompare_detail: list[:class:`huaweicloudsdkdrs.v3.ContentCompareDetail`]
+        :param content_uncompare_detail_count: 内容对比结果详情总数(无法对比的表)。
+        :type content_uncompare_detail_count: int
+        """
         
         
 
@@ -74,7 +87,7 @@ class ContentCompareResultDetails:
         源库名称。
 
         :param source_db_name: The source_db_name of this ContentCompareResultDetails.
-        :type: str
+        :type source_db_name: str
         """
         self._source_db_name = source_db_name
 
@@ -85,7 +98,7 @@ class ContentCompareResultDetails:
         该库的表的内容对比详情。
 
         :return: The content_compare_detail of this ContentCompareResultDetails.
-        :rtype: list[ContentCompareDetail]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.ContentCompareDetail`]
         """
         return self._content_compare_detail
 
@@ -96,7 +109,7 @@ class ContentCompareResultDetails:
         该库的表的内容对比详情。
 
         :param content_compare_detail: The content_compare_detail of this ContentCompareResultDetails.
-        :type: list[ContentCompareDetail]
+        :type content_compare_detail: list[:class:`huaweicloudsdkdrs.v3.ContentCompareDetail`]
         """
         self._content_compare_detail = content_compare_detail
 
@@ -118,7 +131,7 @@ class ContentCompareResultDetails:
         内容对比结果详情总数。
 
         :param content_compare_detail_count: The content_compare_detail_count of this ContentCompareResultDetails.
-        :type: int
+        :type content_compare_detail_count: int
         """
         self._content_compare_detail_count = content_compare_detail_count
 
@@ -129,7 +142,7 @@ class ContentCompareResultDetails:
         该库的表的内容对比详情(无法对比的表)。
 
         :return: The content_uncompare_detail of this ContentCompareResultDetails.
-        :rtype: list[ContentCompareDetail]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.ContentCompareDetail`]
         """
         return self._content_uncompare_detail
 
@@ -140,7 +153,7 @@ class ContentCompareResultDetails:
         该库的表的内容对比详情(无法对比的表)。
 
         :param content_uncompare_detail: The content_uncompare_detail of this ContentCompareResultDetails.
-        :type: list[ContentCompareDetail]
+        :type content_uncompare_detail: list[:class:`huaweicloudsdkdrs.v3.ContentCompareDetail`]
         """
         self._content_uncompare_detail = content_uncompare_detail
 
@@ -162,7 +175,7 @@ class ContentCompareResultDetails:
         内容对比结果详情总数(无法对比的表)。
 
         :param content_uncompare_detail_count: The content_uncompare_detail_count of this ContentCompareResultDetails.
-        :type: int
+        :type content_uncompare_detail_count: int
         """
         self._content_uncompare_detail_count = content_uncompare_detail_count
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class JobConfig:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -76,7 +75,59 @@ class JobConfig:
     }
 
     def __init__(self, nearline_recall_param=None, max_recommended_num=None, match_feature_pairs=None, striping=None, match_type=None, matrix_factorization=None, behavior_frequencys=None, file_path=None, ucb_param=None, behavior_gravity=None, category=None, behavior_logic=None, features_engineering=None, sample_param=None, deep_learning_parameters=None, algorithm_specify_parameters=None, load_widetable=None, load_profile=None, save_mode=None, indicators=None, offline_rank_job_name=None, update_interval=None, optimizer=None, flows=None):
-        """JobConfig - a model defined in huaweicloud sdk"""
+        """JobConfig
+
+        The model defined in huaweicloud sdk
+
+        :param nearline_recall_param: 
+        :type nearline_recall_param: :class:`huaweicloudsdkres.v1.NearLineRecallParam`
+        :param max_recommended_num: 最大候选集个数（所有召回作业需提供此参数）。
+        :type max_recommended_num: int
+        :param match_feature_pairs: 匹配特征对（属性匹配召回作业需要提供此参数）。
+        :type match_feature_pairs: list[:class:`huaweicloudsdkres.v1.MatchFeaturePair`]
+        :param striping: 
+        :type striping: :class:`huaweicloudsdkres.v1.Striping`
+        :param match_type: 匹配类型（属性匹配召回作业需提供此参数）： - UI，基于用户推荐物品 - UU，基于用户推荐用户 - II，基于物品推荐物品 - IU，基于物品推荐用户
+        :type match_type: str
+        :param matrix_factorization: 
+        :type matrix_factorization: :class:`huaweicloudsdkres.v1.MatrixFactorization`
+        :param behavior_frequencys: 行为频率信息（历史行为记忆召回作业、历史行为过滤作业需提供此参数）。
+        :type behavior_frequencys: list[:class:`huaweicloudsdkres.v1.BehaviorFrequency`]
+        :param file_path: 文件路径（人工配置候选集作业需要提供此参数）。
+        :type file_path: str
+        :param ucb_param: 
+        :type ucb_param: :class:`huaweicloudsdkres.v1.UcbParam`
+        :param behavior_gravity: 
+        :type behavior_gravity: :class:`huaweicloudsdkres.v1.BehaviorGravity`
+        :param category: 
+        :type category: :class:`huaweicloudsdkres.v1.Category`
+        :param behavior_logic: 行为逻辑过滤（历史行为过滤作业需提供此参数）： - AND，同时满足则过滤 - OR， 满足一个则过滤
+        :type behavior_logic: str
+        :param features_engineering: 
+        :type features_engineering: :class:`huaweicloudsdkres.v1.EtlBasicParameter`
+        :param sample_param: 
+        :type sample_param: :class:`huaweicloudsdkres.v1.SampleParam`
+        :param deep_learning_parameters: 
+        :type deep_learning_parameters: :class:`huaweicloudsdkres.v1.DeepLearingParam`
+        :param algorithm_specify_parameters: 
+        :type algorithm_specify_parameters: :class:`huaweicloudsdkres.v1.AlgorithmSpecifyParameters`
+        :param load_widetable: 导入宽表（离线数据导入作业需要提供此参数）。
+        :type load_widetable: bool
+        :param load_profile: 导入画像（离线数据导入作业需要提供此参数）。
+        :type load_profile: bool
+        :param save_mode: 保留已有宽表（离线数据导入作业需要提供此参数）： - append，是 - new，否 - overwirte，覆盖
+        :type save_mode: str
+        :param indicators: 统计指标（效果评估作业需要提供此参数）。
+        :type indicators: list[:class:`huaweicloudsdkres.v1.Indicator`]
+        :param offline_rank_job_name: 离线排序作业名称（在线训练任务需要提供此参数）。
+        :type offline_rank_job_name: str
+        :param update_interval: 更新周期（在线训练任务需要提供此参数）。
+        :type update_interval: int
+        :param optimizer: 
+        :type optimizer: :class:`huaweicloudsdkres.v1.Optimizer`
+        :param flows: 
+        :type flows: :class:`huaweicloudsdkres.v1.Flow`
+        """
         
         
 
@@ -161,7 +212,7 @@ class JobConfig:
 
 
         :return: The nearline_recall_param of this JobConfig.
-        :rtype: NearLineRecallParam
+        :rtype: :class:`huaweicloudsdkres.v1.NearLineRecallParam`
         """
         return self._nearline_recall_param
 
@@ -171,7 +222,7 @@ class JobConfig:
 
 
         :param nearline_recall_param: The nearline_recall_param of this JobConfig.
-        :type: NearLineRecallParam
+        :type nearline_recall_param: :class:`huaweicloudsdkres.v1.NearLineRecallParam`
         """
         self._nearline_recall_param = nearline_recall_param
 
@@ -193,7 +244,7 @@ class JobConfig:
         最大候选集个数（所有召回作业需提供此参数）。
 
         :param max_recommended_num: The max_recommended_num of this JobConfig.
-        :type: int
+        :type max_recommended_num: int
         """
         self._max_recommended_num = max_recommended_num
 
@@ -204,7 +255,7 @@ class JobConfig:
         匹配特征对（属性匹配召回作业需要提供此参数）。
 
         :return: The match_feature_pairs of this JobConfig.
-        :rtype: list[MatchFeaturePair]
+        :rtype: list[:class:`huaweicloudsdkres.v1.MatchFeaturePair`]
         """
         return self._match_feature_pairs
 
@@ -215,7 +266,7 @@ class JobConfig:
         匹配特征对（属性匹配召回作业需要提供此参数）。
 
         :param match_feature_pairs: The match_feature_pairs of this JobConfig.
-        :type: list[MatchFeaturePair]
+        :type match_feature_pairs: list[:class:`huaweicloudsdkres.v1.MatchFeaturePair`]
         """
         self._match_feature_pairs = match_feature_pairs
 
@@ -225,7 +276,7 @@ class JobConfig:
 
 
         :return: The striping of this JobConfig.
-        :rtype: Striping
+        :rtype: :class:`huaweicloudsdkres.v1.Striping`
         """
         return self._striping
 
@@ -235,7 +286,7 @@ class JobConfig:
 
 
         :param striping: The striping of this JobConfig.
-        :type: Striping
+        :type striping: :class:`huaweicloudsdkres.v1.Striping`
         """
         self._striping = striping
 
@@ -257,7 +308,7 @@ class JobConfig:
         匹配类型（属性匹配召回作业需提供此参数）： - UI，基于用户推荐物品 - UU，基于用户推荐用户 - II，基于物品推荐物品 - IU，基于物品推荐用户
 
         :param match_type: The match_type of this JobConfig.
-        :type: str
+        :type match_type: str
         """
         self._match_type = match_type
 
@@ -267,7 +318,7 @@ class JobConfig:
 
 
         :return: The matrix_factorization of this JobConfig.
-        :rtype: MatrixFactorization
+        :rtype: :class:`huaweicloudsdkres.v1.MatrixFactorization`
         """
         return self._matrix_factorization
 
@@ -277,7 +328,7 @@ class JobConfig:
 
 
         :param matrix_factorization: The matrix_factorization of this JobConfig.
-        :type: MatrixFactorization
+        :type matrix_factorization: :class:`huaweicloudsdkres.v1.MatrixFactorization`
         """
         self._matrix_factorization = matrix_factorization
 
@@ -288,7 +339,7 @@ class JobConfig:
         行为频率信息（历史行为记忆召回作业、历史行为过滤作业需提供此参数）。
 
         :return: The behavior_frequencys of this JobConfig.
-        :rtype: list[BehaviorFrequency]
+        :rtype: list[:class:`huaweicloudsdkres.v1.BehaviorFrequency`]
         """
         return self._behavior_frequencys
 
@@ -299,7 +350,7 @@ class JobConfig:
         行为频率信息（历史行为记忆召回作业、历史行为过滤作业需提供此参数）。
 
         :param behavior_frequencys: The behavior_frequencys of this JobConfig.
-        :type: list[BehaviorFrequency]
+        :type behavior_frequencys: list[:class:`huaweicloudsdkres.v1.BehaviorFrequency`]
         """
         self._behavior_frequencys = behavior_frequencys
 
@@ -321,7 +372,7 @@ class JobConfig:
         文件路径（人工配置候选集作业需要提供此参数）。
 
         :param file_path: The file_path of this JobConfig.
-        :type: str
+        :type file_path: str
         """
         self._file_path = file_path
 
@@ -331,7 +382,7 @@ class JobConfig:
 
 
         :return: The ucb_param of this JobConfig.
-        :rtype: UcbParam
+        :rtype: :class:`huaweicloudsdkres.v1.UcbParam`
         """
         return self._ucb_param
 
@@ -341,7 +392,7 @@ class JobConfig:
 
 
         :param ucb_param: The ucb_param of this JobConfig.
-        :type: UcbParam
+        :type ucb_param: :class:`huaweicloudsdkres.v1.UcbParam`
         """
         self._ucb_param = ucb_param
 
@@ -351,7 +402,7 @@ class JobConfig:
 
 
         :return: The behavior_gravity of this JobConfig.
-        :rtype: BehaviorGravity
+        :rtype: :class:`huaweicloudsdkres.v1.BehaviorGravity`
         """
         return self._behavior_gravity
 
@@ -361,7 +412,7 @@ class JobConfig:
 
 
         :param behavior_gravity: The behavior_gravity of this JobConfig.
-        :type: BehaviorGravity
+        :type behavior_gravity: :class:`huaweicloudsdkres.v1.BehaviorGravity`
         """
         self._behavior_gravity = behavior_gravity
 
@@ -371,7 +422,7 @@ class JobConfig:
 
 
         :return: The category of this JobConfig.
-        :rtype: Category
+        :rtype: :class:`huaweicloudsdkres.v1.Category`
         """
         return self._category
 
@@ -381,7 +432,7 @@ class JobConfig:
 
 
         :param category: The category of this JobConfig.
-        :type: Category
+        :type category: :class:`huaweicloudsdkres.v1.Category`
         """
         self._category = category
 
@@ -403,7 +454,7 @@ class JobConfig:
         行为逻辑过滤（历史行为过滤作业需提供此参数）： - AND，同时满足则过滤 - OR， 满足一个则过滤
 
         :param behavior_logic: The behavior_logic of this JobConfig.
-        :type: str
+        :type behavior_logic: str
         """
         self._behavior_logic = behavior_logic
 
@@ -413,7 +464,7 @@ class JobConfig:
 
 
         :return: The features_engineering of this JobConfig.
-        :rtype: EtlBasicParameter
+        :rtype: :class:`huaweicloudsdkres.v1.EtlBasicParameter`
         """
         return self._features_engineering
 
@@ -423,7 +474,7 @@ class JobConfig:
 
 
         :param features_engineering: The features_engineering of this JobConfig.
-        :type: EtlBasicParameter
+        :type features_engineering: :class:`huaweicloudsdkres.v1.EtlBasicParameter`
         """
         self._features_engineering = features_engineering
 
@@ -433,7 +484,7 @@ class JobConfig:
 
 
         :return: The sample_param of this JobConfig.
-        :rtype: SampleParam
+        :rtype: :class:`huaweicloudsdkres.v1.SampleParam`
         """
         return self._sample_param
 
@@ -443,7 +494,7 @@ class JobConfig:
 
 
         :param sample_param: The sample_param of this JobConfig.
-        :type: SampleParam
+        :type sample_param: :class:`huaweicloudsdkres.v1.SampleParam`
         """
         self._sample_param = sample_param
 
@@ -453,7 +504,7 @@ class JobConfig:
 
 
         :return: The deep_learning_parameters of this JobConfig.
-        :rtype: DeepLearingParam
+        :rtype: :class:`huaweicloudsdkres.v1.DeepLearingParam`
         """
         return self._deep_learning_parameters
 
@@ -463,7 +514,7 @@ class JobConfig:
 
 
         :param deep_learning_parameters: The deep_learning_parameters of this JobConfig.
-        :type: DeepLearingParam
+        :type deep_learning_parameters: :class:`huaweicloudsdkres.v1.DeepLearingParam`
         """
         self._deep_learning_parameters = deep_learning_parameters
 
@@ -473,7 +524,7 @@ class JobConfig:
 
 
         :return: The algorithm_specify_parameters of this JobConfig.
-        :rtype: AlgorithmSpecifyParameters
+        :rtype: :class:`huaweicloudsdkres.v1.AlgorithmSpecifyParameters`
         """
         return self._algorithm_specify_parameters
 
@@ -483,7 +534,7 @@ class JobConfig:
 
 
         :param algorithm_specify_parameters: The algorithm_specify_parameters of this JobConfig.
-        :type: AlgorithmSpecifyParameters
+        :type algorithm_specify_parameters: :class:`huaweicloudsdkres.v1.AlgorithmSpecifyParameters`
         """
         self._algorithm_specify_parameters = algorithm_specify_parameters
 
@@ -505,7 +556,7 @@ class JobConfig:
         导入宽表（离线数据导入作业需要提供此参数）。
 
         :param load_widetable: The load_widetable of this JobConfig.
-        :type: bool
+        :type load_widetable: bool
         """
         self._load_widetable = load_widetable
 
@@ -527,7 +578,7 @@ class JobConfig:
         导入画像（离线数据导入作业需要提供此参数）。
 
         :param load_profile: The load_profile of this JobConfig.
-        :type: bool
+        :type load_profile: bool
         """
         self._load_profile = load_profile
 
@@ -549,7 +600,7 @@ class JobConfig:
         保留已有宽表（离线数据导入作业需要提供此参数）： - append，是 - new，否 - overwirte，覆盖
 
         :param save_mode: The save_mode of this JobConfig.
-        :type: str
+        :type save_mode: str
         """
         self._save_mode = save_mode
 
@@ -560,7 +611,7 @@ class JobConfig:
         统计指标（效果评估作业需要提供此参数）。
 
         :return: The indicators of this JobConfig.
-        :rtype: list[Indicator]
+        :rtype: list[:class:`huaweicloudsdkres.v1.Indicator`]
         """
         return self._indicators
 
@@ -571,7 +622,7 @@ class JobConfig:
         统计指标（效果评估作业需要提供此参数）。
 
         :param indicators: The indicators of this JobConfig.
-        :type: list[Indicator]
+        :type indicators: list[:class:`huaweicloudsdkres.v1.Indicator`]
         """
         self._indicators = indicators
 
@@ -593,7 +644,7 @@ class JobConfig:
         离线排序作业名称（在线训练任务需要提供此参数）。
 
         :param offline_rank_job_name: The offline_rank_job_name of this JobConfig.
-        :type: str
+        :type offline_rank_job_name: str
         """
         self._offline_rank_job_name = offline_rank_job_name
 
@@ -615,7 +666,7 @@ class JobConfig:
         更新周期（在线训练任务需要提供此参数）。
 
         :param update_interval: The update_interval of this JobConfig.
-        :type: int
+        :type update_interval: int
         """
         self._update_interval = update_interval
 
@@ -625,7 +676,7 @@ class JobConfig:
 
 
         :return: The optimizer of this JobConfig.
-        :rtype: Optimizer
+        :rtype: :class:`huaweicloudsdkres.v1.Optimizer`
         """
         return self._optimizer
 
@@ -635,7 +686,7 @@ class JobConfig:
 
 
         :param optimizer: The optimizer of this JobConfig.
-        :type: Optimizer
+        :type optimizer: :class:`huaweicloudsdkres.v1.Optimizer`
         """
         self._optimizer = optimizer
 
@@ -645,7 +696,7 @@ class JobConfig:
 
 
         :return: The flows of this JobConfig.
-        :rtype: Flow
+        :rtype: :class:`huaweicloudsdkres.v1.Flow`
         """
         return self._flows
 
@@ -655,7 +706,7 @@ class JobConfig:
 
 
         :param flows: The flows of this JobConfig.
-        :type: Flow
+        :type flows: :class:`huaweicloudsdkres.v1.Flow`
         """
         self._flows = flows
 

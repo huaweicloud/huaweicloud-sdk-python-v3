@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BackendApiCreate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class BackendApiCreate:
     }
 
     def __init__(self, authorizer_id=None, url_domain=None, req_protocol=None, remark=None, req_method=None, version=None, req_uri=None, timeout=None, enable_client_ssl=None, vpc_channel_info=None, vpc_channel_status=None):
-        """BackendApiCreate - a model defined in huaweicloud sdk"""
+        """BackendApiCreate
+
+        The model defined in huaweicloud sdk
+
+        :param authorizer_id: 后端自定义认证对象的ID
+        :type authorizer_id: str
+        :param url_domain: 后端服务的地址。  由主机（IP或域名）和端口号组成，总长度不超过255。格式为主机:端口（如：apig.example.com:7443）。如果不写端口，则HTTPS默认端口号为443，HTTP默认端口号为80。  支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、下划线、中划线组成，且只能以英文开头
+        :type url_domain: str
+        :param req_protocol: 请求协议
+        :type req_protocol: str
+        :param remark: 描述。字符长度不超过255 &gt; 中文字符必须为UTF-8或者unicode编码。
+        :type remark: str
+        :param req_method: 请求方式
+        :type req_method: str
+        :param version: web后端版本，字符长度不超过16
+        :type version: str
+        :param req_uri: 请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。  支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。 &gt; 需要服从URI规范。
+        :type req_uri: str
+        :param timeout: API网关请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000。  单位：毫秒。
+        :type timeout: int
+        :param enable_client_ssl: 是否开启双向认证
+        :type enable_client_ssl: bool
+        :param vpc_channel_info: 
+        :type vpc_channel_info: :class:`huaweicloudsdkapig.v2.ApiBackendVpcReq`
+        :param vpc_channel_status: 是否使用VPC通道 - 1：使用VPC通道 - 2：不使用VPC通道
+        :type vpc_channel_status: int
+        """
         
         
 
@@ -104,7 +129,7 @@ class BackendApiCreate:
         后端自定义认证对象的ID
 
         :param authorizer_id: The authorizer_id of this BackendApiCreate.
-        :type: str
+        :type authorizer_id: str
         """
         self._authorizer_id = authorizer_id
 
@@ -126,7 +151,7 @@ class BackendApiCreate:
         后端服务的地址。  由主机（IP或域名）和端口号组成，总长度不超过255。格式为主机:端口（如：apig.example.com:7443）。如果不写端口，则HTTPS默认端口号为443，HTTP默认端口号为80。  支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、下划线、中划线组成，且只能以英文开头
 
         :param url_domain: The url_domain of this BackendApiCreate.
-        :type: str
+        :type url_domain: str
         """
         self._url_domain = url_domain
 
@@ -148,7 +173,7 @@ class BackendApiCreate:
         请求协议
 
         :param req_protocol: The req_protocol of this BackendApiCreate.
-        :type: str
+        :type req_protocol: str
         """
         self._req_protocol = req_protocol
 
@@ -170,7 +195,7 @@ class BackendApiCreate:
         描述。字符长度不超过255 > 中文字符必须为UTF-8或者unicode编码。
 
         :param remark: The remark of this BackendApiCreate.
-        :type: str
+        :type remark: str
         """
         self._remark = remark
 
@@ -192,7 +217,7 @@ class BackendApiCreate:
         请求方式
 
         :param req_method: The req_method of this BackendApiCreate.
-        :type: str
+        :type req_method: str
         """
         self._req_method = req_method
 
@@ -214,7 +239,7 @@ class BackendApiCreate:
         web后端版本，字符长度不超过16
 
         :param version: The version of this BackendApiCreate.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -236,7 +261,7 @@ class BackendApiCreate:
         请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。  支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。 > 需要服从URI规范。
 
         :param req_uri: The req_uri of this BackendApiCreate.
-        :type: str
+        :type req_uri: str
         """
         self._req_uri = req_uri
 
@@ -258,7 +283,7 @@ class BackendApiCreate:
         API网关请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000。  单位：毫秒。
 
         :param timeout: The timeout of this BackendApiCreate.
-        :type: int
+        :type timeout: int
         """
         self._timeout = timeout
 
@@ -280,7 +305,7 @@ class BackendApiCreate:
         是否开启双向认证
 
         :param enable_client_ssl: The enable_client_ssl of this BackendApiCreate.
-        :type: bool
+        :type enable_client_ssl: bool
         """
         self._enable_client_ssl = enable_client_ssl
 
@@ -290,7 +315,7 @@ class BackendApiCreate:
 
 
         :return: The vpc_channel_info of this BackendApiCreate.
-        :rtype: ApiBackendVpcReq
+        :rtype: :class:`huaweicloudsdkapig.v2.ApiBackendVpcReq`
         """
         return self._vpc_channel_info
 
@@ -300,7 +325,7 @@ class BackendApiCreate:
 
 
         :param vpc_channel_info: The vpc_channel_info of this BackendApiCreate.
-        :type: ApiBackendVpcReq
+        :type vpc_channel_info: :class:`huaweicloudsdkapig.v2.ApiBackendVpcReq`
         """
         self._vpc_channel_info = vpc_channel_info
 
@@ -322,7 +347,7 @@ class BackendApiCreate:
         是否使用VPC通道 - 1：使用VPC通道 - 2：不使用VPC通道
 
         :param vpc_channel_status: The vpc_channel_status of this BackendApiCreate.
-        :type: int
+        :type vpc_channel_status: int
         """
         self._vpc_channel_status = vpc_channel_status
 

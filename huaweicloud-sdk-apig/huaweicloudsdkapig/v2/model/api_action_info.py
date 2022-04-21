@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApiActionInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ApiActionInfo:
     }
 
     def __init__(self, action=None, env_id=None, api_id=None, remark=None):
-        """ApiActionInfo - a model defined in huaweicloud sdk"""
+        """ApiActionInfo
+
+        The model defined in huaweicloud sdk
+
+        :param action: 需要进行的操作。 - online：发布 - offline：下线
+        :type action: str
+        :param env_id: 环境的编号，即：API需要发布到哪个环境
+        :type env_id: str
+        :param api_id: API的编号，即：需要进行发布或下线的API的编号
+        :type api_id: str
+        :param remark: 对发布动作的简述。字符长度不超过255 &gt; 中文字符必须为UTF-8或者unicode编码。
+        :type remark: str
+        """
         
         
 
@@ -70,7 +81,7 @@ class ApiActionInfo:
         需要进行的操作。 - online：发布 - offline：下线
 
         :param action: The action of this ApiActionInfo.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -92,7 +103,7 @@ class ApiActionInfo:
         环境的编号，即：API需要发布到哪个环境
 
         :param env_id: The env_id of this ApiActionInfo.
-        :type: str
+        :type env_id: str
         """
         self._env_id = env_id
 
@@ -114,7 +125,7 @@ class ApiActionInfo:
         API的编号，即：需要进行发布或下线的API的编号
 
         :param api_id: The api_id of this ApiActionInfo.
-        :type: str
+        :type api_id: str
         """
         self._api_id = api_id
 
@@ -136,7 +147,7 @@ class ApiActionInfo:
         对发布动作的简述。字符长度不超过255 > 中文字符必须为UTF-8或者unicode编码。
 
         :param remark: The remark of this ApiActionInfo.
-        :type: str
+        :type remark: str
         """
         self._remark = remark
 

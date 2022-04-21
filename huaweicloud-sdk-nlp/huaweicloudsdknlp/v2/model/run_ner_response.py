@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunNerResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class RunNerResponse(SdkResponse):
     }
 
     def __init__(self, named_entities=None, error_code=None, error_msg=None):
-        """RunNerResponse - a model defined in huaweicloud sdk"""
+        """RunNerResponse
+
+        The model defined in huaweicloud sdk
+
+        :param named_entities: 命名实体识别结果。调用失败时无此字段。
+        :type named_entities: list[:class:`huaweicloudsdknlp.v2.NamedEntity`]
+        :param error_code: 调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
+        :type error_code: str
+        :param error_msg: 调用失败时的错误信息。调用成功时无此字段。
+        :type error_msg: str
+        """
         
         super(RunNerResponse, self).__init__()
 
@@ -57,7 +66,7 @@ class RunNerResponse(SdkResponse):
         命名实体识别结果。调用失败时无此字段。
 
         :return: The named_entities of this RunNerResponse.
-        :rtype: list[NamedEntity]
+        :rtype: list[:class:`huaweicloudsdknlp.v2.NamedEntity`]
         """
         return self._named_entities
 
@@ -68,7 +77,7 @@ class RunNerResponse(SdkResponse):
         命名实体识别结果。调用失败时无此字段。
 
         :param named_entities: The named_entities of this RunNerResponse.
-        :type: list[NamedEntity]
+        :type named_entities: list[:class:`huaweicloudsdknlp.v2.NamedEntity`]
         """
         self._named_entities = named_entities
 
@@ -90,7 +99,7 @@ class RunNerResponse(SdkResponse):
         调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
 
         :param error_code: The error_code of this RunNerResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -112,7 +121,7 @@ class RunNerResponse(SdkResponse):
         调用失败时的错误信息。调用成功时无此字段。
 
         :param error_msg: The error_msg of this RunNerResponse.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 

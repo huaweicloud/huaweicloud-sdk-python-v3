@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateRepoMemberRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateRepoMemberRequest:
     }
 
     def __init__(self, users=None):
-        """CreateRepoMemberRequest - a model defined in huaweicloud sdk"""
+        """CreateRepoMemberRequest
+
+        The model defined in huaweicloud sdk
+
+        :param users: 添加用户的信息列表
+        :type users: list[:class:`huaweicloudsdkcodehub.v3.RepoMemberInfo`]
+        """
         
         
 
@@ -47,7 +52,7 @@ class CreateRepoMemberRequest:
         添加用户的信息列表
 
         :return: The users of this CreateRepoMemberRequest.
-        :rtype: list[RepoMemberInfo]
+        :rtype: list[:class:`huaweicloudsdkcodehub.v3.RepoMemberInfo`]
         """
         return self._users
 
@@ -58,7 +63,7 @@ class CreateRepoMemberRequest:
         添加用户的信息列表
 
         :param users: The users of this CreateRepoMemberRequest.
-        :type: list[RepoMemberInfo]
+        :type users: list[:class:`huaweicloudsdkcodehub.v3.RepoMemberInfo`]
         """
         self._users = users
 

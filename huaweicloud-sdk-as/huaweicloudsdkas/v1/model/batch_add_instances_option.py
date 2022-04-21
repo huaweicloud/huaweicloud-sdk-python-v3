@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchAddInstancesOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class BatchAddInstancesOption:
     }
 
     def __init__(self, instances_id=None, instance_delete=None, action=None, instance_append=None):
-        """BatchAddInstancesOption - a model defined in huaweicloud sdk"""
+        """BatchAddInstancesOption
+
+        The model defined in huaweicloud sdk
+
+        :param instances_id: 云服务器ID。
+        :type instances_id: list[str]
+        :param instance_delete: 从伸缩组中移出实例时，是否删除云服务器。默认为no；可选值为yes或no。只有action为REMOVE时，这个字段才生效。
+        :type instance_delete: str
+        :param action: 批量操作实例action标识：添加：ADD  移除： REMOVE  设置实例保护： PROTECT  取消实例保护： UNPROTECT；转入备用状态：ENTER_STANDBY 移出备用状态:EXIT_STANDBY
+        :type action: str
+        :param instance_append: 将实例移入备用状态时，是否补充新的云服务器。取值如下：no：不补充新的实例，默认情况为no。yes：补充新的实例。只有action为ENTER_STANDBY时，这个字段才生效。
+        :type instance_append: str
+        """
         
         
 
@@ -71,7 +82,7 @@ class BatchAddInstancesOption:
         云服务器ID。
 
         :param instances_id: The instances_id of this BatchAddInstancesOption.
-        :type: list[str]
+        :type instances_id: list[str]
         """
         self._instances_id = instances_id
 
@@ -93,7 +104,7 @@ class BatchAddInstancesOption:
         从伸缩组中移出实例时，是否删除云服务器。默认为no；可选值为yes或no。只有action为REMOVE时，这个字段才生效。
 
         :param instance_delete: The instance_delete of this BatchAddInstancesOption.
-        :type: str
+        :type instance_delete: str
         """
         self._instance_delete = instance_delete
 
@@ -115,7 +126,7 @@ class BatchAddInstancesOption:
         批量操作实例action标识：添加：ADD  移除： REMOVE  设置实例保护： PROTECT  取消实例保护： UNPROTECT；转入备用状态：ENTER_STANDBY 移出备用状态:EXIT_STANDBY
 
         :param action: The action of this BatchAddInstancesOption.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -137,7 +148,7 @@ class BatchAddInstancesOption:
         将实例移入备用状态时，是否补充新的云服务器。取值如下：no：不补充新的实例，默认情况为no。yes：补充新的实例。只有action为ENTER_STANDBY时，这个字段才生效。
 
         :param instance_append: The instance_append of this BatchAddInstancesOption.
-        :type: str
+        :type instance_append: str
         """
         self._instance_append = instance_append
 

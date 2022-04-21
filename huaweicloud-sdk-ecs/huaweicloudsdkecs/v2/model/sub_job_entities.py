@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SubJobEntities:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class SubJobEntities:
     }
 
     def __init__(self, server_id=None, nic_id=None, errorcode_message=None):
-        """SubJobEntities - a model defined in huaweicloud sdk"""
+        """SubJobEntities
+
+        The model defined in huaweicloud sdk
+
+        :param server_id: 云服务器相关操作显示server_id。
+        :type server_id: str
+        :param nic_id: 网卡相关操作显示nic_id。
+        :type nic_id: str
+        :param errorcode_message: 子任务执行失败的具体原因。
+        :type errorcode_message: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class SubJobEntities:
         云服务器相关操作显示server_id。
 
         :param server_id: The server_id of this SubJobEntities.
-        :type: str
+        :type server_id: str
         """
         self._server_id = server_id
 
@@ -90,7 +99,7 @@ class SubJobEntities:
         网卡相关操作显示nic_id。
 
         :param nic_id: The nic_id of this SubJobEntities.
-        :type: str
+        :type nic_id: str
         """
         self._nic_id = nic_id
 
@@ -112,7 +121,7 @@ class SubJobEntities:
         子任务执行失败的具体原因。
 
         :param errorcode_message: The errorcode_message of this SubJobEntities.
-        :type: str
+        :type errorcode_message: str
         """
         self._errorcode_message = errorcode_message
 

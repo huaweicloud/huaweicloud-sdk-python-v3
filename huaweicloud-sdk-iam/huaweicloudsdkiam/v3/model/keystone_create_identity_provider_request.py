@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneCreateIdentityProviderRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class KeystoneCreateIdentityProviderRequest:
     }
 
     def __init__(self, id=None, body=None):
-        """KeystoneCreateIdentityProviderRequest - a model defined in huaweicloud sdk"""
+        """KeystoneCreateIdentityProviderRequest
+
+        The model defined in huaweicloud sdk
+
+        :param id: 待注册的身份提供商ID。
+        :type id: str
+        :param body: Body of the KeystoneCreateIdentityProviderRequest
+        :type body: :class:`huaweicloudsdkiam.v3.KeystoneCreateIdentityProviderRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class KeystoneCreateIdentityProviderRequest:
         待注册的身份提供商ID。
 
         :param id: The id of this KeystoneCreateIdentityProviderRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -72,7 +79,7 @@ class KeystoneCreateIdentityProviderRequest:
 
 
         :return: The body of this KeystoneCreateIdentityProviderRequest.
-        :rtype: KeystoneCreateIdentityProviderRequestBody
+        :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCreateIdentityProviderRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class KeystoneCreateIdentityProviderRequest:
 
 
         :param body: The body of this KeystoneCreateIdentityProviderRequest.
-        :type: KeystoneCreateIdentityProviderRequestBody
+        :type body: :class:`huaweicloudsdkiam.v3.KeystoneCreateIdentityProviderRequestBody`
         """
         self._body = body
 

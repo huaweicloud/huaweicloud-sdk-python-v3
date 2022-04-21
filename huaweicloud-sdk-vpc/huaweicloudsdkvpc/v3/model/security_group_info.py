@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SecurityGroupInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class SecurityGroupInfo:
     }
 
     def __init__(self, id=None, name=None, description=None, project_id=None, created_at=None, updated_at=None, enterprise_project_id=None, security_group_rules=None):
-        """SecurityGroupInfo - a model defined in huaweicloud sdk"""
+        """SecurityGroupInfo
+
+        The model defined in huaweicloud sdk
+
+        :param id: 功能描述：安全组对应的唯一标识 取值范围：带“-”的标准UUID格式
+        :type id: str
+        :param name: 功能说明：安全组名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
+        :type name: str
+        :param description: 功能说明：安全组的描述信息 取值范围：0-255个字符，不能包含“&lt;”和“&gt;”
+        :type description: str
+        :param project_id: 功能说明：安全组所属的项目ID
+        :type project_id: str
+        :param created_at: 功能说明：安全组创建时间 取值范围：UTC时间格式：yyyy-MM-ddTHH:mm:ss
+        :type created_at: datetime
+        :param updated_at: 功能说明：安全组更新时间 取值范围：UTC时间格式：yyyy-MM-ddTHH:mm:ss
+        :type updated_at: datetime
+        :param enterprise_project_id: 功能说明：安全组所属的企业项目ID。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。
+        :type enterprise_project_id: str
+        :param security_group_rules: 安全组规则
+        :type security_group_rules: list[:class:`huaweicloudsdkvpc.v3.SecurityGroupRule`]
+        """
         
         
 
@@ -85,7 +104,7 @@ class SecurityGroupInfo:
         功能描述：安全组对应的唯一标识 取值范围：带“-”的标准UUID格式
 
         :param id: The id of this SecurityGroupInfo.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -107,7 +126,7 @@ class SecurityGroupInfo:
         功能说明：安全组名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
         :param name: The name of this SecurityGroupInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -129,7 +148,7 @@ class SecurityGroupInfo:
         功能说明：安全组的描述信息 取值范围：0-255个字符，不能包含“<”和“>”
 
         :param description: The description of this SecurityGroupInfo.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -151,7 +170,7 @@ class SecurityGroupInfo:
         功能说明：安全组所属的项目ID
 
         :param project_id: The project_id of this SecurityGroupInfo.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -173,7 +192,7 @@ class SecurityGroupInfo:
         功能说明：安全组创建时间 取值范围：UTC时间格式：yyyy-MM-ddTHH:mm:ss
 
         :param created_at: The created_at of this SecurityGroupInfo.
-        :type: datetime
+        :type created_at: datetime
         """
         self._created_at = created_at
 
@@ -195,7 +214,7 @@ class SecurityGroupInfo:
         功能说明：安全组更新时间 取值范围：UTC时间格式：yyyy-MM-ddTHH:mm:ss
 
         :param updated_at: The updated_at of this SecurityGroupInfo.
-        :type: datetime
+        :type updated_at: datetime
         """
         self._updated_at = updated_at
 
@@ -217,7 +236,7 @@ class SecurityGroupInfo:
         功能说明：安全组所属的企业项目ID。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。
 
         :param enterprise_project_id: The enterprise_project_id of this SecurityGroupInfo.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -228,7 +247,7 @@ class SecurityGroupInfo:
         安全组规则
 
         :return: The security_group_rules of this SecurityGroupInfo.
-        :rtype: list[SecurityGroupRule]
+        :rtype: list[:class:`huaweicloudsdkvpc.v3.SecurityGroupRule`]
         """
         return self._security_group_rules
 
@@ -239,7 +258,7 @@ class SecurityGroupInfo:
         安全组规则
 
         :param security_group_rules: The security_group_rules of this SecurityGroupInfo.
-        :type: list[SecurityGroupRule]
+        :type security_group_rules: list[:class:`huaweicloudsdkvpc.v3.SecurityGroupRule`]
         """
         self._security_group_rules = security_group_rules
 

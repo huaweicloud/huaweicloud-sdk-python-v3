@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ServerRemoteConsole:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ServerRemoteConsole:
     }
 
     def __init__(self, protocol=None, type=None, url=None):
-        """ServerRemoteConsole - a model defined in huaweicloud sdk"""
+        """ServerRemoteConsole
+
+        The model defined in huaweicloud sdk
+
+        :param protocol: 远程登录的协议。
+        :type protocol: str
+        :param type: 远程登录的类型。
+        :type type: str
+        :param url: 远程登录的url。
+        :type url: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class ServerRemoteConsole:
         远程登录的协议。
 
         :param protocol: The protocol of this ServerRemoteConsole.
-        :type: str
+        :type protocol: str
         """
         self._protocol = protocol
 
@@ -87,7 +96,7 @@ class ServerRemoteConsole:
         远程登录的类型。
 
         :param type: The type of this ServerRemoteConsole.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -109,7 +118,7 @@ class ServerRemoteConsole:
         远程登录的url。
 
         :param url: The url of this ServerRemoteConsole.
-        :type: str
+        :type url: str
         """
         self._url = url
 

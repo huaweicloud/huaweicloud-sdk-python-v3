@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RollcallParticipantResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class RollcallParticipantResponse(SdkResponse):
     }
 
     def __init__(self):
-        """RollcallParticipantResponse - a model defined in huaweicloud sdk"""
+        """RollcallParticipantResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(RollcallParticipantResponse, self).__init__()
         self.discriminator = None

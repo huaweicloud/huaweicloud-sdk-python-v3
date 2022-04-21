@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MultiTaskResetBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class MultiTaskResetBody:
     }
 
     def __init__(self, date_from=None):
-        """MultiTaskResetBody - a model defined in huaweicloud sdk"""
+        """MultiTaskResetBody
+
+        The model defined in huaweicloud sdk
+
+        :param date_from: 任务重置开始时间，UTC时间戳，允许为空
+        :type date_from: int
+        """
         
         
 
@@ -58,7 +63,7 @@ class MultiTaskResetBody:
         任务重置开始时间，UTC时间戳，允许为空
 
         :param date_from: The date_from of this MultiTaskResetBody.
-        :type: int
+        :type date_from: int
         """
         self._date_from = date_from
 

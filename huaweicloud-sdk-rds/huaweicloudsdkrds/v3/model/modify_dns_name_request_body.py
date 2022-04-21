@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ModifyDnsNameRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ModifyDnsNameRequestBody:
     }
 
     def __init__(self, dns_name=None):
-        """ModifyDnsNameRequestBody - a model defined in huaweicloud sdk"""
+        """ModifyDnsNameRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param dns_name: 新域名的前缀，校验规则是^[0-9a-zA-Z]{8,64}$
+        :type dns_name: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ModifyDnsNameRequestBody:
         新域名的前缀，校验规则是^[0-9a-zA-Z]{8,64}$
 
         :param dns_name: The dns_name of this ModifyDnsNameRequestBody.
-        :type: str
+        :type dns_name: str
         """
         self._dns_name = dns_name
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreatePersonalRealnameAuthRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreatePersonalRealnameAuthRequest:
     }
 
     def __init__(self, body=None):
-        """CreatePersonalRealnameAuthRequest - a model defined in huaweicloud sdk"""
+        """CreatePersonalRealnameAuthRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreatePersonalRealnameAuthRequest
+        :type body: :class:`huaweicloudsdkbssintl.v2.ApplyIndividualRealnameAuthsReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreatePersonalRealnameAuthRequest:
 
 
         :return: The body of this CreatePersonalRealnameAuthRequest.
-        :rtype: ApplyIndividualRealnameAuthsReq
+        :rtype: :class:`huaweicloudsdkbssintl.v2.ApplyIndividualRealnameAuthsReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreatePersonalRealnameAuthRequest:
 
 
         :param body: The body of this CreatePersonalRealnameAuthRequest.
-        :type: ApplyIndividualRealnameAuthsReq
+        :type body: :class:`huaweicloudsdkbssintl.v2.ApplyIndividualRealnameAuthsReq`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Resources:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class Resources:
     }
 
     def __init__(self, type=None, used=None, quota=None):
-        """Resources - a model defined in huaweicloud sdk"""
+        """Resources
+
+        The model defined in huaweicloud sdk
+
+        :param type: 证书类型:  - **CERTIFICATE_AUTHORITY**: CA证书；  - **CERTIFICATE**: 私有证书。
+        :type type: str
+        :param used: 已使用配额数。
+        :type used: int
+        :param quota: 配额总数：   - **CERTIFICATE_AUTHORITY**: 当前系统指定100；   - **CERTIFICATE**: 当前系统指定100000。
+        :type quota: int
+        """
         
         
 
@@ -65,7 +74,7 @@ class Resources:
         证书类型:  - **CERTIFICATE_AUTHORITY**: CA证书；  - **CERTIFICATE**: 私有证书。
 
         :param type: The type of this Resources.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -87,7 +96,7 @@ class Resources:
         已使用配额数。
 
         :param used: The used of this Resources.
-        :type: int
+        :type used: int
         """
         self._used = used
 
@@ -109,7 +118,7 @@ class Resources:
         配额总数：   - **CERTIFICATE_AUTHORITY**: 当前系统指定100；   - **CERTIFICATE**: 当前系统指定100000。
 
         :param quota: The quota of this Resources.
-        :type: int
+        :type quota: int
         """
         self._quota = quota
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CheckRecordResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CheckRecordResponse(SdkResponse):
     }
 
     def __init__(self, data=None, total=None):
-        """CheckRecordResponse - a model defined in huaweicloud sdk"""
+        """CheckRecordResponse
+
+        The model defined in huaweicloud sdk
+
+        :param data: 历史记录数据
+        :type data: list[:class:`huaweicloudsdkcodecheck.v2.CheckRecordDataInfo`]
+        :param total: 总数
+        :type total: int
+        """
         
         super(CheckRecordResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class CheckRecordResponse(SdkResponse):
         历史记录数据
 
         :return: The data of this CheckRecordResponse.
-        :rtype: list[CheckRecordDataInfo]
+        :rtype: list[:class:`huaweicloudsdkcodecheck.v2.CheckRecordDataInfo`]
         """
         return self._data
 
@@ -63,7 +70,7 @@ class CheckRecordResponse(SdkResponse):
         历史记录数据
 
         :param data: The data of this CheckRecordResponse.
-        :type: list[CheckRecordDataInfo]
+        :type data: list[:class:`huaweicloudsdkcodecheck.v2.CheckRecordDataInfo`]
         """
         self._data = data
 
@@ -85,7 +92,7 @@ class CheckRecordResponse(SdkResponse):
         总数
 
         :param total: The total of this CheckRecordResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 

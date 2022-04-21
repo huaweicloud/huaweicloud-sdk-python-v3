@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateKeywordsAlarmRuleRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class CreateKeywordsAlarmRuleRequestBody:
     }
 
     def __init__(self, keywords_alarm_rule_name=None, keywords_alarm_rule_description=None, keywords_requests=None, frequency=None, keywords_alarm_level=None, keywords_alarm_send=None, domain_id=None, notification_save_rule=None):
-        """CreateKeywordsAlarmRuleRequestBody - a model defined in huaweicloud sdk"""
+        """CreateKeywordsAlarmRuleRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param keywords_alarm_rule_name: 关键词告警名称
+        :type keywords_alarm_rule_name: str
+        :param keywords_alarm_rule_description: 关键词告警信息描述
+        :type keywords_alarm_rule_description: str
+        :param keywords_requests: 关键词详细信息
+        :type keywords_requests: list[:class:`huaweicloudsdklts.v2.KeywordsRequest`]
+        :param frequency: 
+        :type frequency: :class:`huaweicloudsdklts.v2.Frequency`
+        :param keywords_alarm_level: 告警级别
+        :type keywords_alarm_level: str
+        :param keywords_alarm_send: 是否发送
+        :type keywords_alarm_send: bool
+        :param domain_id: domainId
+        :type domain_id: str
+        :param notification_save_rule: 通知主题
+        :type notification_save_rule: :class:`huaweicloudsdklts.v2.NotificationSaveRule`
+        """
         
         
 
@@ -87,7 +106,7 @@ class CreateKeywordsAlarmRuleRequestBody:
         关键词告警名称
 
         :param keywords_alarm_rule_name: The keywords_alarm_rule_name of this CreateKeywordsAlarmRuleRequestBody.
-        :type: str
+        :type keywords_alarm_rule_name: str
         """
         self._keywords_alarm_rule_name = keywords_alarm_rule_name
 
@@ -109,7 +128,7 @@ class CreateKeywordsAlarmRuleRequestBody:
         关键词告警信息描述
 
         :param keywords_alarm_rule_description: The keywords_alarm_rule_description of this CreateKeywordsAlarmRuleRequestBody.
-        :type: str
+        :type keywords_alarm_rule_description: str
         """
         self._keywords_alarm_rule_description = keywords_alarm_rule_description
 
@@ -120,7 +139,7 @@ class CreateKeywordsAlarmRuleRequestBody:
         关键词详细信息
 
         :return: The keywords_requests of this CreateKeywordsAlarmRuleRequestBody.
-        :rtype: list[KeywordsRequest]
+        :rtype: list[:class:`huaweicloudsdklts.v2.KeywordsRequest`]
         """
         return self._keywords_requests
 
@@ -131,7 +150,7 @@ class CreateKeywordsAlarmRuleRequestBody:
         关键词详细信息
 
         :param keywords_requests: The keywords_requests of this CreateKeywordsAlarmRuleRequestBody.
-        :type: list[KeywordsRequest]
+        :type keywords_requests: list[:class:`huaweicloudsdklts.v2.KeywordsRequest`]
         """
         self._keywords_requests = keywords_requests
 
@@ -141,7 +160,7 @@ class CreateKeywordsAlarmRuleRequestBody:
 
 
         :return: The frequency of this CreateKeywordsAlarmRuleRequestBody.
-        :rtype: Frequency
+        :rtype: :class:`huaweicloudsdklts.v2.Frequency`
         """
         return self._frequency
 
@@ -151,7 +170,7 @@ class CreateKeywordsAlarmRuleRequestBody:
 
 
         :param frequency: The frequency of this CreateKeywordsAlarmRuleRequestBody.
-        :type: Frequency
+        :type frequency: :class:`huaweicloudsdklts.v2.Frequency`
         """
         self._frequency = frequency
 
@@ -173,7 +192,7 @@ class CreateKeywordsAlarmRuleRequestBody:
         告警级别
 
         :param keywords_alarm_level: The keywords_alarm_level of this CreateKeywordsAlarmRuleRequestBody.
-        :type: str
+        :type keywords_alarm_level: str
         """
         self._keywords_alarm_level = keywords_alarm_level
 
@@ -195,7 +214,7 @@ class CreateKeywordsAlarmRuleRequestBody:
         是否发送
 
         :param keywords_alarm_send: The keywords_alarm_send of this CreateKeywordsAlarmRuleRequestBody.
-        :type: bool
+        :type keywords_alarm_send: bool
         """
         self._keywords_alarm_send = keywords_alarm_send
 
@@ -217,7 +236,7 @@ class CreateKeywordsAlarmRuleRequestBody:
         domainId
 
         :param domain_id: The domain_id of this CreateKeywordsAlarmRuleRequestBody.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -228,7 +247,7 @@ class CreateKeywordsAlarmRuleRequestBody:
         通知主题
 
         :return: The notification_save_rule of this CreateKeywordsAlarmRuleRequestBody.
-        :rtype: NotificationSaveRule
+        :rtype: :class:`huaweicloudsdklts.v2.NotificationSaveRule`
         """
         return self._notification_save_rule
 
@@ -239,7 +258,7 @@ class CreateKeywordsAlarmRuleRequestBody:
         通知主题
 
         :param notification_save_rule: The notification_save_rule of this CreateKeywordsAlarmRuleRequestBody.
-        :type: NotificationSaveRule
+        :type notification_save_rule: :class:`huaweicloudsdklts.v2.NotificationSaveRule`
         """
         self._notification_save_rule = notification_save_rule
 

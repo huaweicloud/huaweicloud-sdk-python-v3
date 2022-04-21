@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class JobMetadata:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class JobMetadata:
     }
 
     def __init__(self, uid=None, creation_timestamp=None, update_timestamp=None):
-        """JobMetadata - a model defined in huaweicloud sdk"""
+        """JobMetadata
+
+        The model defined in huaweicloud sdk
+
+        :param uid: 任务的ID。
+        :type uid: str
+        :param creation_timestamp: 任务的创建时间。
+        :type creation_timestamp: str
+        :param update_timestamp: 任务的更新时间。
+        :type update_timestamp: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class JobMetadata:
         任务的ID。
 
         :param uid: The uid of this JobMetadata.
-        :type: str
+        :type uid: str
         """
         self._uid = uid
 
@@ -90,7 +99,7 @@ class JobMetadata:
         任务的创建时间。
 
         :param creation_timestamp: The creation_timestamp of this JobMetadata.
-        :type: str
+        :type creation_timestamp: str
         """
         self._creation_timestamp = creation_timestamp
 
@@ -112,7 +121,7 @@ class JobMetadata:
         任务的更新时间。
 
         :param update_timestamp: The update_timestamp of this JobMetadata.
-        :type: str
+        :type update_timestamp: str
         """
         self._update_timestamp = update_timestamp
 

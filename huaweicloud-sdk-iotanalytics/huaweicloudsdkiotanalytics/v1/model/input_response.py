@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InputResponse:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class InputResponse:
     }
 
     def __init__(self, name=None, property_reference=None):
-        """InputResponse - a model defined in huaweicloud sdk"""
+        """InputResponse
+
+        The model defined in huaweicloud sdk
+
+        :param name: 参数名
+        :type name: str
+        :param property_reference: 
+        :type property_reference: :class:`huaweicloudsdkiotanalytics.v1.PropertyReferenceResponse`
+        """
         
         
 
@@ -63,7 +70,7 @@ class InputResponse:
         参数名
 
         :param name: The name of this InputResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -73,7 +80,7 @@ class InputResponse:
 
 
         :return: The property_reference of this InputResponse.
-        :rtype: PropertyReferenceResponse
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.PropertyReferenceResponse`
         """
         return self._property_reference
 
@@ -83,7 +90,7 @@ class InputResponse:
 
 
         :param property_reference: The property_reference of this InputResponse.
-        :type: PropertyReferenceResponse
+        :type property_reference: :class:`huaweicloudsdkiotanalytics.v1.PropertyReferenceResponse`
         """
         self._property_reference = property_reference
 

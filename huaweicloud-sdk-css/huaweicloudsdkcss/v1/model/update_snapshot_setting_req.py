@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateSnapshotSettingReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateSnapshotSettingReq:
     }
 
     def __init__(self, bucket=None, agency=None, base_path=None):
-        """UpdateSnapshotSettingReq - a model defined in huaweicloud sdk"""
+        """UpdateSnapshotSettingReq
+
+        The model defined in huaweicloud sdk
+
+        :param bucket: 备份使用的OBS桶，如果桶已经存放快照数据了，不可更改。
+        :type bucket: str
+        :param agency: 访问OBS使用的IAM委托名称。
+        :type agency: str
+        :param base_path: 快照在OBS桶中的存放路径。
+        :type base_path: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class UpdateSnapshotSettingReq:
         备份使用的OBS桶，如果桶已经存放快照数据了，不可更改。
 
         :param bucket: The bucket of this UpdateSnapshotSettingReq.
-        :type: str
+        :type bucket: str
         """
         self._bucket = bucket
 
@@ -87,7 +96,7 @@ class UpdateSnapshotSettingReq:
         访问OBS使用的IAM委托名称。
 
         :param agency: The agency of this UpdateSnapshotSettingReq.
-        :type: str
+        :type agency: str
         """
         self._agency = agency
 
@@ -109,7 +118,7 @@ class UpdateSnapshotSettingReq:
         快照在OBS桶中的存放路径。
 
         :param base_path: The base_path of this UpdateSnapshotSettingReq.
-        :type: str
+        :type base_path: str
         """
         self._base_path = base_path
 

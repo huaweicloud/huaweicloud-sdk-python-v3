@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StartConnectivityTestRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class StartConnectivityTestRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """StartConnectivityTestRequest - a model defined in huaweicloud sdk"""
+        """StartConnectivityTestRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 指定待测试的集群ID。
+        :type cluster_id: str
+        :param body: Body of the StartConnectivityTestRequest
+        :type body: :class:`huaweicloudsdkcss.v1.StartConnectivityTestReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class StartConnectivityTestRequest:
         指定待测试的集群ID。
 
         :param cluster_id: The cluster_id of this StartConnectivityTestRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -72,7 +79,7 @@ class StartConnectivityTestRequest:
 
 
         :return: The body of this StartConnectivityTestRequest.
-        :rtype: StartConnectivityTestReq
+        :rtype: :class:`huaweicloudsdkcss.v1.StartConnectivityTestReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class StartConnectivityTestRequest:
 
 
         :param body: The body of this StartConnectivityTestRequest.
-        :type: StartConnectivityTestReq
+        :type body: :class:`huaweicloudsdkcss.v1.StartConnectivityTestReq`
         """
         self._body = body
 

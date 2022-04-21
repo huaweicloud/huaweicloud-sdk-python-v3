@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Run:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class Run:
     }
 
     def __init__(self, run_id=None, job_id=None, job_name=None, job_type=None, start_time=None, duration=None, status=None, is_schedule_job=None, computing_resource_name=None, sql_job=None):
-        """Run - a model defined in huaweicloud sdk"""
+        """Run
+
+        The model defined in huaweicloud sdk
+
+        :param run_id: 作业运行ID。
+        :type run_id: str
+        :param job_id: 作业ID。
+        :type job_id: str
+        :param job_name: 作业名称。
+        :type job_name: str
+        :param job_type: 作业类型。
+        :type job_type: str
+        :param start_time: 作业开始的时间。时间格式为ISO日期时间格式yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;
+        :type start_time: str
+        :param duration: 作业运行时长，单位毫秒。
+        :type duration: int
+        :param status: 此作业的当前状态，包含提交（LAUNCHING）、运行中（RUNNING）、完成（FINISHED）、失败（FAILED）、取消（CANCELLED）。
+        :type status: str
+        :param is_schedule_job: 是否定时作业。
+        :type is_schedule_job: bool
+        :param computing_resource_name: 计算资源名称。
+        :type computing_resource_name: str
+        :param sql_job: 
+        :type sql_job: :class:`huaweicloudsdkiotanalytics.v1.SqlJobRun`
+        """
         
         
 
@@ -97,7 +120,7 @@ class Run:
         作业运行ID。
 
         :param run_id: The run_id of this Run.
-        :type: str
+        :type run_id: str
         """
         self._run_id = run_id
 
@@ -119,7 +142,7 @@ class Run:
         作业ID。
 
         :param job_id: The job_id of this Run.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -141,7 +164,7 @@ class Run:
         作业名称。
 
         :param job_name: The job_name of this Run.
-        :type: str
+        :type job_name: str
         """
         self._job_name = job_name
 
@@ -163,7 +186,7 @@ class Run:
         作业类型。
 
         :param job_type: The job_type of this Run.
-        :type: str
+        :type job_type: str
         """
         self._job_type = job_type
 
@@ -185,7 +208,7 @@ class Run:
         作业开始的时间。时间格式为ISO日期时间格式yyyy-MM-dd'T'HH:mm:ss'Z'
 
         :param start_time: The start_time of this Run.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -207,7 +230,7 @@ class Run:
         作业运行时长，单位毫秒。
 
         :param duration: The duration of this Run.
-        :type: int
+        :type duration: int
         """
         self._duration = duration
 
@@ -229,7 +252,7 @@ class Run:
         此作业的当前状态，包含提交（LAUNCHING）、运行中（RUNNING）、完成（FINISHED）、失败（FAILED）、取消（CANCELLED）。
 
         :param status: The status of this Run.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -251,7 +274,7 @@ class Run:
         是否定时作业。
 
         :param is_schedule_job: The is_schedule_job of this Run.
-        :type: bool
+        :type is_schedule_job: bool
         """
         self._is_schedule_job = is_schedule_job
 
@@ -273,7 +296,7 @@ class Run:
         计算资源名称。
 
         :param computing_resource_name: The computing_resource_name of this Run.
-        :type: str
+        :type computing_resource_name: str
         """
         self._computing_resource_name = computing_resource_name
 
@@ -283,7 +306,7 @@ class Run:
 
 
         :return: The sql_job of this Run.
-        :rtype: SqlJobRun
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.SqlJobRun`
         """
         return self._sql_job
 
@@ -293,7 +316,7 @@ class Run:
 
 
         :param sql_job: The sql_job of this Run.
-        :type: SqlJobRun
+        :type sql_job: :class:`huaweicloudsdkiotanalytics.v1.SqlJobRun`
         """
         self._sql_job = sql_job
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ActionMatch:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ActionMatch:
     }
 
     def __init__(self, key=None, value=None):
-        """ActionMatch - a model defined in huaweicloud sdk"""
+        """ActionMatch
+
+        The model defined in huaweicloud sdk
+
+        :param key: 键。目前只支持resource_name。表示匹配资源实例的名称。
+        :type key: str
+        :param value: 值。每个值最大长度255个unicode字符 。当key为resource_name时，表示待匹配的资源实例的名称。
+        :type value: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ActionMatch:
         键。目前只支持resource_name。表示匹配资源实例的名称。
 
         :param key: The key of this ActionMatch.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -83,7 +90,7 @@ class ActionMatch:
         值。每个值最大长度255个unicode字符 。当key为resource_name时，表示待匹配的资源实例的名称。
 
         :param value: The value of this ActionMatch.
-        :type: str
+        :type value: str
         """
         self._value = value
 

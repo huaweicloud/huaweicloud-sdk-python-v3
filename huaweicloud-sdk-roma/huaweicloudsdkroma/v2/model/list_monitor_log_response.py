@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListMonitorLogResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListMonitorLogResponse(SdkResponse):
     }
 
     def __init__(self, total=None, size=None, entities=None):
-        """ListMonitorLogResponse - a model defined in huaweicloud sdk"""
+        """ListMonitorLogResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 总数
+        :type total: int
+        :param size: 当前页日志数量
+        :type size: int
+        :param entities: 任务监控日志当前页元素
+        :type entities: list[:class:`huaweicloudsdkroma.v2.TaskMonitorLog`]
+        """
         
         super(ListMonitorLogResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListMonitorLogResponse(SdkResponse):
         总数
 
         :param total: The total of this ListMonitorLogResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -90,7 +99,7 @@ class ListMonitorLogResponse(SdkResponse):
         当前页日志数量
 
         :param size: The size of this ListMonitorLogResponse.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -101,7 +110,7 @@ class ListMonitorLogResponse(SdkResponse):
         任务监控日志当前页元素
 
         :return: The entities of this ListMonitorLogResponse.
-        :rtype: list[TaskMonitorLog]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.TaskMonitorLog`]
         """
         return self._entities
 
@@ -112,7 +121,7 @@ class ListMonitorLogResponse(SdkResponse):
         任务监控日志当前页元素
 
         :param entities: The entities of this ListMonitorLogResponse.
-        :type: list[TaskMonitorLog]
+        :type entities: list[:class:`huaweicloudsdkroma.v2.TaskMonitorLog`]
         """
         self._entities = entities
 

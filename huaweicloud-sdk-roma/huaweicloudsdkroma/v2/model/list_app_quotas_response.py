@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAppQuotasResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListAppQuotasResponse(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, quotas=None):
-        """ListAppQuotasResponse - a model defined in huaweicloud sdk"""
+        """ListAppQuotasResponse
+
+        The model defined in huaweicloud sdk
+
+        :param size: 本次返回的列表长度
+        :type size: int
+        :param total: 满足条件的记录数
+        :type total: int
+        :param quotas: 客户端配额列表
+        :type quotas: list[:class:`huaweicloudsdkroma.v2.AppQuotaInfo`]
+        """
         
         super(ListAppQuotasResponse, self).__init__()
 
@@ -66,7 +75,7 @@ class ListAppQuotasResponse(SdkResponse):
         本次返回的列表长度
 
         :param size: The size of this ListAppQuotasResponse.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -88,7 +97,7 @@ class ListAppQuotasResponse(SdkResponse):
         满足条件的记录数
 
         :param total: The total of this ListAppQuotasResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -99,7 +108,7 @@ class ListAppQuotasResponse(SdkResponse):
         客户端配额列表
 
         :return: The quotas of this ListAppQuotasResponse.
-        :rtype: list[AppQuotaInfo]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.AppQuotaInfo`]
         """
         return self._quotas
 
@@ -110,7 +119,7 @@ class ListAppQuotasResponse(SdkResponse):
         客户端配额列表
 
         :param quotas: The quotas of this ListAppQuotasResponse.
-        :type: list[AppQuotaInfo]
+        :type quotas: list[:class:`huaweicloudsdkroma.v2.AppQuotaInfo`]
         """
         self._quotas = quotas
 

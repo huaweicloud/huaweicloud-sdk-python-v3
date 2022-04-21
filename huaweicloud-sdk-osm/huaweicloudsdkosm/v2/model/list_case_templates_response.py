@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCaseTemplatesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListCaseTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, incident_template_list=None):
-        """ListCaseTemplatesResponse - a model defined in huaweicloud sdk"""
+        """ListCaseTemplatesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total_count: 总数
+        :type total_count: int
+        :param incident_template_list: 模板列表
+        :type incident_template_list: list[:class:`huaweicloudsdkosm.v2.IncidentTempV2`]
+        """
         
         super(ListCaseTemplatesResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListCaseTemplatesResponse(SdkResponse):
         总数
 
         :param total_count: The total_count of this ListCaseTemplatesResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 
@@ -74,7 +81,7 @@ class ListCaseTemplatesResponse(SdkResponse):
         模板列表
 
         :return: The incident_template_list of this ListCaseTemplatesResponse.
-        :rtype: list[IncidentTempV2]
+        :rtype: list[:class:`huaweicloudsdkosm.v2.IncidentTempV2`]
         """
         return self._incident_template_list
 
@@ -85,7 +92,7 @@ class ListCaseTemplatesResponse(SdkResponse):
         模板列表
 
         :param incident_template_list: The incident_template_list of this ListCaseTemplatesResponse.
-        :type: list[IncidentTempV2]
+        :type incident_template_list: list[:class:`huaweicloudsdkosm.v2.IncidentTempV2`]
         """
         self._incident_template_list = incident_template_list
 

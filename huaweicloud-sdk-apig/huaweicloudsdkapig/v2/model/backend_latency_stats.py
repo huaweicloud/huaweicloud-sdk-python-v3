@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BackendLatencyStats:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BackendLatencyStats:
     }
 
     def __init__(self, max_backend_latency=None, avg_backend_latency=None):
-        """BackendLatencyStats - a model defined in huaweicloud sdk"""
+        """BackendLatencyStats
+
+        The model defined in huaweicloud sdk
+
+        :param max_backend_latency: 最大后端延时
+        :type max_backend_latency: int
+        :param avg_backend_latency: 平均后端延时
+        :type avg_backend_latency: float
+        """
         
         
 
@@ -63,7 +70,7 @@ class BackendLatencyStats:
         最大后端延时
 
         :param max_backend_latency: The max_backend_latency of this BackendLatencyStats.
-        :type: int
+        :type max_backend_latency: int
         """
         self._max_backend_latency = max_backend_latency
 
@@ -85,7 +92,7 @@ class BackendLatencyStats:
         平均后端延时
 
         :param avg_backend_latency: The avg_backend_latency of this BackendLatencyStats.
-        :type: float
+        :type avg_backend_latency: float
         """
         self._avg_backend_latency = avg_backend_latency
 

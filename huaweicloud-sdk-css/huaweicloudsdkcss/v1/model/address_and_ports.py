@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddressAndPorts:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AddressAndPorts:
     }
 
     def __init__(self, address=None, port=None):
-        """AddressAndPorts - a model defined in huaweicloud sdk"""
+        """AddressAndPorts
+
+        The model defined in huaweicloud sdk
+
+        :param address: IP地址或域名。
+        :type address: str
+        :param port: 端口号。
+        :type port: int
+        """
         
         
 
@@ -62,7 +69,7 @@ class AddressAndPorts:
         IP地址或域名。
 
         :param address: The address of this AddressAndPorts.
-        :type: str
+        :type address: str
         """
         self._address = address
 
@@ -84,7 +91,7 @@ class AddressAndPorts:
         端口号。
 
         :param port: The port of this AddressAndPorts.
-        :type: int
+        :type port: int
         """
         self._port = port
 

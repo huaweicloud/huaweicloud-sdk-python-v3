@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CouponInfoV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -66,7 +65,49 @@ class CouponInfoV2:
     }
 
     def __init__(self, coupon_id=None, coupon_code=None, status=None, coupon_type=None, measure_id=None, face_value=None, effective_time=None, expire_time=None, plan_name=None, plan_desc=None, use_limits=None, active_time=None, last_used_time=None, create_time=None, coupon_version=None, balance=None, used_by_order_id=None, coupon_usage=None, coupon_group=None):
-        """CouponInfoV2 - a model defined in huaweicloud sdk"""
+        """CouponInfoV2
+
+        The model defined in huaweicloud sdk
+
+        :param coupon_id: 优惠券实例ID。
+        :type coupon_id: str
+        :param coupon_code: 优惠券编码。
+        :type coupon_code: str
+        :param status: 优惠券状态： 1：未激活2：待使用
+        :type status: int
+        :param coupon_type: 优惠券类型。 1：代金券2：折扣券3：产品券4：现金券
+        :type coupon_type: int
+        :param measure_id: 面额单位： 1：元。
+        :type measure_id: int
+        :param face_value: 面值。
+        :type face_value: float
+        :param effective_time: 生效时间。 UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。
+        :type effective_time: str
+        :param expire_time: 失效时间。 UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。
+        :type expire_time: str
+        :param plan_name: 促销计划名称。
+        :type plan_name: str
+        :param plan_desc: 促销计划描述。
+        :type plan_desc: str
+        :param use_limits: 优惠券限制。 具体请参见表3。
+        :type use_limits: list[:class:`huaweicloudsdkbss.v2.LimitInfoV2`]
+        :param active_time: 激活时间。 UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。
+        :type active_time: str
+        :param last_used_time: 上一次使用时间。 UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。
+        :type last_used_time: str
+        :param create_time: 创建时间。 UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。
+        :type create_time: str
+        :param coupon_version: 优惠券版本。 1：老版本（包含三种：代金券、折扣券和奖金券）2：新版本（只有代金券）
+        :type coupon_version: int
+        :param balance: 余额。
+        :type balance: float
+        :param used_by_order_id: 使用优惠券的订单ID。表示有订单正在使用这个优惠券，优惠券已被锁定，只有锁定优惠券的订单才能使用这个优惠券，其他订单不能使用该优惠券。
+        :type used_by_order_id: str
+        :param coupon_usage: 优惠券用途。
+        :type coupon_usage: str
+        :param coupon_group: 优惠券分组。 1：云市场发放的券2：华为云券-1024-专用代金券3：华为云券-使用限制-抵扣硬件的券0：华为云服务券（排除上述取值之外的券）
+        :type coupon_group: int
+        """
         
         
 
@@ -148,7 +189,7 @@ class CouponInfoV2:
         优惠券实例ID。
 
         :param coupon_id: The coupon_id of this CouponInfoV2.
-        :type: str
+        :type coupon_id: str
         """
         self._coupon_id = coupon_id
 
@@ -170,7 +211,7 @@ class CouponInfoV2:
         优惠券编码。
 
         :param coupon_code: The coupon_code of this CouponInfoV2.
-        :type: str
+        :type coupon_code: str
         """
         self._coupon_code = coupon_code
 
@@ -192,7 +233,7 @@ class CouponInfoV2:
         优惠券状态： 1：未激活2：待使用
 
         :param status: The status of this CouponInfoV2.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -214,7 +255,7 @@ class CouponInfoV2:
         优惠券类型。 1：代金券2：折扣券3：产品券4：现金券
 
         :param coupon_type: The coupon_type of this CouponInfoV2.
-        :type: int
+        :type coupon_type: int
         """
         self._coupon_type = coupon_type
 
@@ -236,7 +277,7 @@ class CouponInfoV2:
         面额单位： 1：元。
 
         :param measure_id: The measure_id of this CouponInfoV2.
-        :type: int
+        :type measure_id: int
         """
         self._measure_id = measure_id
 
@@ -258,7 +299,7 @@ class CouponInfoV2:
         面值。
 
         :param face_value: The face_value of this CouponInfoV2.
-        :type: float
+        :type face_value: float
         """
         self._face_value = face_value
 
@@ -280,7 +321,7 @@ class CouponInfoV2:
         生效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :param effective_time: The effective_time of this CouponInfoV2.
-        :type: str
+        :type effective_time: str
         """
         self._effective_time = effective_time
 
@@ -302,7 +343,7 @@ class CouponInfoV2:
         失效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :param expire_time: The expire_time of this CouponInfoV2.
-        :type: str
+        :type expire_time: str
         """
         self._expire_time = expire_time
 
@@ -324,7 +365,7 @@ class CouponInfoV2:
         促销计划名称。
 
         :param plan_name: The plan_name of this CouponInfoV2.
-        :type: str
+        :type plan_name: str
         """
         self._plan_name = plan_name
 
@@ -346,7 +387,7 @@ class CouponInfoV2:
         促销计划描述。
 
         :param plan_desc: The plan_desc of this CouponInfoV2.
-        :type: str
+        :type plan_desc: str
         """
         self._plan_desc = plan_desc
 
@@ -357,7 +398,7 @@ class CouponInfoV2:
         优惠券限制。 具体请参见表3。
 
         :return: The use_limits of this CouponInfoV2.
-        :rtype: list[LimitInfoV2]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.LimitInfoV2`]
         """
         return self._use_limits
 
@@ -368,7 +409,7 @@ class CouponInfoV2:
         优惠券限制。 具体请参见表3。
 
         :param use_limits: The use_limits of this CouponInfoV2.
-        :type: list[LimitInfoV2]
+        :type use_limits: list[:class:`huaweicloudsdkbss.v2.LimitInfoV2`]
         """
         self._use_limits = use_limits
 
@@ -390,7 +431,7 @@ class CouponInfoV2:
         激活时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :param active_time: The active_time of this CouponInfoV2.
-        :type: str
+        :type active_time: str
         """
         self._active_time = active_time
 
@@ -412,7 +453,7 @@ class CouponInfoV2:
         上一次使用时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :param last_used_time: The last_used_time of this CouponInfoV2.
-        :type: str
+        :type last_used_time: str
         """
         self._last_used_time = last_used_time
 
@@ -434,7 +475,7 @@ class CouponInfoV2:
         创建时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :param create_time: The create_time of this CouponInfoV2.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -456,7 +497,7 @@ class CouponInfoV2:
         优惠券版本。 1：老版本（包含三种：代金券、折扣券和奖金券）2：新版本（只有代金券）
 
         :param coupon_version: The coupon_version of this CouponInfoV2.
-        :type: int
+        :type coupon_version: int
         """
         self._coupon_version = coupon_version
 
@@ -478,7 +519,7 @@ class CouponInfoV2:
         余额。
 
         :param balance: The balance of this CouponInfoV2.
-        :type: float
+        :type balance: float
         """
         self._balance = balance
 
@@ -500,7 +541,7 @@ class CouponInfoV2:
         使用优惠券的订单ID。表示有订单正在使用这个优惠券，优惠券已被锁定，只有锁定优惠券的订单才能使用这个优惠券，其他订单不能使用该优惠券。
 
         :param used_by_order_id: The used_by_order_id of this CouponInfoV2.
-        :type: str
+        :type used_by_order_id: str
         """
         self._used_by_order_id = used_by_order_id
 
@@ -522,7 +563,7 @@ class CouponInfoV2:
         优惠券用途。
 
         :param coupon_usage: The coupon_usage of this CouponInfoV2.
-        :type: str
+        :type coupon_usage: str
         """
         self._coupon_usage = coupon_usage
 
@@ -544,7 +585,7 @@ class CouponInfoV2:
         优惠券分组。 1：云市场发放的券2：华为云券-1024-专用代金券3：华为云券-使用限制-抵扣硬件的券0：华为云服务券（排除上述取值之外的券）
 
         :param coupon_group: The coupon_group of this CouponInfoV2.
-        :type: int
+        :type coupon_group: int
         """
         self._coupon_group = coupon_group
 

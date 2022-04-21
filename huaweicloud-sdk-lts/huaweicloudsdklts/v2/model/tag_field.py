@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TagField:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class TagField:
     }
 
     def __init__(self, field_name=None, type=None, content=None, is_analysis=None):
-        """TagField - a model defined in huaweicloud sdk"""
+        """TagField
+
+        The model defined in huaweicloud sdk
+
+        :param field_name: 字段名称
+        :type field_name: str
+        :param type: 字段数据类型，例：string，long，float
+        :type type: str
+        :param content: 内容
+        :type content: str
+        :param is_analysis: 是否开启快速分析
+        :type is_analysis: bool
+        """
         
         
 
@@ -71,7 +82,7 @@ class TagField:
         字段名称
 
         :param field_name: The field_name of this TagField.
-        :type: str
+        :type field_name: str
         """
         self._field_name = field_name
 
@@ -93,7 +104,7 @@ class TagField:
         字段数据类型，例：string，long，float
 
         :param type: The type of this TagField.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -115,7 +126,7 @@ class TagField:
         内容
 
         :param content: The content of this TagField.
-        :type: str
+        :type content: str
         """
         self._content = content
 
@@ -137,7 +148,7 @@ class TagField:
         是否开启快速分析
 
         :param is_analysis: The is_analysis of this TagField.
-        :type: bool
+        :type is_analysis: bool
         """
         self._is_analysis = is_analysis
 

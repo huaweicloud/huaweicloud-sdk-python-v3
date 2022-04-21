@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestoreInstanceFromCollectionRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RestoreInstanceFromCollectionRequestBody:
     }
 
     def __init__(self, restore_collections=None):
-        """RestoreInstanceFromCollectionRequestBody - a model defined in huaweicloud sdk"""
+        """RestoreInstanceFromCollectionRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param restore_collections: 数据库信息。
+        :type restore_collections: list[:class:`huaweicloudsdkdds.v3.RestoreInstanceFromCollectionRequestBodyRestoreCollections`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class RestoreInstanceFromCollectionRequestBody:
         数据库信息。
 
         :return: The restore_collections of this RestoreInstanceFromCollectionRequestBody.
-        :rtype: list[RestoreInstanceFromCollectionRequestBodyRestoreCollections]
+        :rtype: list[:class:`huaweicloudsdkdds.v3.RestoreInstanceFromCollectionRequestBodyRestoreCollections`]
         """
         return self._restore_collections
 
@@ -57,7 +62,7 @@ class RestoreInstanceFromCollectionRequestBody:
         数据库信息。
 
         :param restore_collections: The restore_collections of this RestoreInstanceFromCollectionRequestBody.
-        :type: list[RestoreInstanceFromCollectionRequestBodyRestoreCollections]
+        :type restore_collections: list[:class:`huaweicloudsdkdds.v3.RestoreInstanceFromCollectionRequestBodyRestoreCollections`]
         """
         self._restore_collections = restore_collections
 

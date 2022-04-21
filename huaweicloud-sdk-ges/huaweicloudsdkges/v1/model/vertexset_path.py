@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VertexsetPath:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class VertexsetPath:
     }
 
     def __init__(self, path=None, log=None, status=None, cause=None, total_lines=None, failed_lines=None, successful_lines=None):
-        """VertexsetPath - a model defined in huaweicloud sdk"""
+        """VertexsetPath
+
+        The model defined in huaweicloud sdk
+
+        :param path: OBS文件路径
+        :type path: str
+        :param log: OBS文件导入日志存储文件
+        :type log: str
+        :param status: - OBS文件导入状态。 - success：完全成功 - failed：完全失败 - partFailed：部分成功
+        :type status: str
+        :param cause: 导入失败原因
+        :type cause: str
+        :param total_lines: 导入总行数。其值为-1时表示当前版本没有返回该字段。
+        :type total_lines: int
+        :param failed_lines: 导入失败行数。其值为-1时表示当前版本没有返回该字段。
+        :type failed_lines: int
+        :param successful_lines: 导出成功行数。其值为-1时表示当前版本没有返回该字段。
+        :type successful_lines: int
+        """
         
         
 
@@ -86,7 +103,7 @@ class VertexsetPath:
         OBS文件路径
 
         :param path: The path of this VertexsetPath.
-        :type: str
+        :type path: str
         """
         self._path = path
 
@@ -108,7 +125,7 @@ class VertexsetPath:
         OBS文件导入日志存储文件
 
         :param log: The log of this VertexsetPath.
-        :type: str
+        :type log: str
         """
         self._log = log
 
@@ -130,7 +147,7 @@ class VertexsetPath:
         - OBS文件导入状态。 - success：完全成功 - failed：完全失败 - partFailed：部分成功
 
         :param status: The status of this VertexsetPath.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -152,7 +169,7 @@ class VertexsetPath:
         导入失败原因
 
         :param cause: The cause of this VertexsetPath.
-        :type: str
+        :type cause: str
         """
         self._cause = cause
 
@@ -174,7 +191,7 @@ class VertexsetPath:
         导入总行数。其值为-1时表示当前版本没有返回该字段。
 
         :param total_lines: The total_lines of this VertexsetPath.
-        :type: int
+        :type total_lines: int
         """
         self._total_lines = total_lines
 
@@ -196,7 +213,7 @@ class VertexsetPath:
         导入失败行数。其值为-1时表示当前版本没有返回该字段。
 
         :param failed_lines: The failed_lines of this VertexsetPath.
-        :type: int
+        :type failed_lines: int
         """
         self._failed_lines = failed_lines
 
@@ -218,7 +235,7 @@ class VertexsetPath:
         导出成功行数。其值为-1时表示当前版本没有返回该字段。
 
         :param successful_lines: The successful_lines of this VertexsetPath.
-        :type: int
+        :type successful_lines: int
         """
         self._successful_lines = successful_lines
 

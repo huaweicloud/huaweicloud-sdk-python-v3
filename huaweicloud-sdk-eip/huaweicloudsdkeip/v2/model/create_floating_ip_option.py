@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateFloatingIpOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CreateFloatingIpOption:
     }
 
     def __init__(self, floating_ip_address=None, floating_network_id=None, port_id=None, fixed_ip_address=None):
-        """CreateFloatingIpOption - a model defined in huaweicloud sdk"""
+        """CreateFloatingIpOption
+
+        The model defined in huaweicloud sdk
+
+        :param floating_ip_address: 浮动IP地址。
+        :type floating_ip_address: str
+        :param floating_network_id: 外部网络的id。只能使用固定的外网，外部网络的信息请通过GET /v2.0/networks?router:external&#x3D;True或GET /v2.0/networks?name&#x3D;{floating_network}或neutron net-external-list方式查询。
+        :type floating_network_id: str
+        :param port_id: 端口id
+        :type port_id: str
+        :param fixed_ip_address: 关联端口的私有IP地址。
+        :type fixed_ip_address: str
+        """
         
         
 
@@ -72,7 +83,7 @@ class CreateFloatingIpOption:
         浮动IP地址。
 
         :param floating_ip_address: The floating_ip_address of this CreateFloatingIpOption.
-        :type: str
+        :type floating_ip_address: str
         """
         self._floating_ip_address = floating_ip_address
 
@@ -94,7 +105,7 @@ class CreateFloatingIpOption:
         外部网络的id。只能使用固定的外网，外部网络的信息请通过GET /v2.0/networks?router:external=True或GET /v2.0/networks?name={floating_network}或neutron net-external-list方式查询。
 
         :param floating_network_id: The floating_network_id of this CreateFloatingIpOption.
-        :type: str
+        :type floating_network_id: str
         """
         self._floating_network_id = floating_network_id
 
@@ -116,7 +127,7 @@ class CreateFloatingIpOption:
         端口id
 
         :param port_id: The port_id of this CreateFloatingIpOption.
-        :type: str
+        :type port_id: str
         """
         self._port_id = port_id
 
@@ -138,7 +149,7 @@ class CreateFloatingIpOption:
         关联端口的私有IP地址。
 
         :param fixed_ip_address: The fixed_ip_address of this CreateFloatingIpOption.
-        :type: str
+        :type fixed_ip_address: str
         """
         self._fixed_ip_address = fixed_ip_address
 

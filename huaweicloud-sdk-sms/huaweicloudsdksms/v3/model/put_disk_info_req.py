@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PutDiskInfoReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class PutDiskInfoReq:
     }
 
     def __init__(self, disks=None, volumegroups=None, btrfs_list=None):
-        """PutDiskInfoReq - a model defined in huaweicloud sdk"""
+        """PutDiskInfoReq
+
+        The model defined in huaweicloud sdk
+
+        :param disks: 更新的磁盘信息
+        :type disks: list[:class:`huaweicloudsdksms.v3.ServerDisk`]
+        :param volumegroups: 更新的卷信息
+        :type volumegroups: list[:class:`huaweicloudsdksms.v3.VolumeGroups`]
+        :param btrfs_list: 更新的btrfs信息
+        :type btrfs_list: list[:class:`huaweicloudsdksms.v3.BtrfsFileSystem`]
+        """
         
         
 
@@ -57,7 +66,7 @@ class PutDiskInfoReq:
         更新的磁盘信息
 
         :return: The disks of this PutDiskInfoReq.
-        :rtype: list[ServerDisk]
+        :rtype: list[:class:`huaweicloudsdksms.v3.ServerDisk`]
         """
         return self._disks
 
@@ -68,7 +77,7 @@ class PutDiskInfoReq:
         更新的磁盘信息
 
         :param disks: The disks of this PutDiskInfoReq.
-        :type: list[ServerDisk]
+        :type disks: list[:class:`huaweicloudsdksms.v3.ServerDisk`]
         """
         self._disks = disks
 
@@ -79,7 +88,7 @@ class PutDiskInfoReq:
         更新的卷信息
 
         :return: The volumegroups of this PutDiskInfoReq.
-        :rtype: list[VolumeGroups]
+        :rtype: list[:class:`huaweicloudsdksms.v3.VolumeGroups`]
         """
         return self._volumegroups
 
@@ -90,7 +99,7 @@ class PutDiskInfoReq:
         更新的卷信息
 
         :param volumegroups: The volumegroups of this PutDiskInfoReq.
-        :type: list[VolumeGroups]
+        :type volumegroups: list[:class:`huaweicloudsdksms.v3.VolumeGroups`]
         """
         self._volumegroups = volumegroups
 
@@ -101,7 +110,7 @@ class PutDiskInfoReq:
         更新的btrfs信息
 
         :return: The btrfs_list of this PutDiskInfoReq.
-        :rtype: list[BtrfsFileSystem]
+        :rtype: list[:class:`huaweicloudsdksms.v3.BtrfsFileSystem`]
         """
         return self._btrfs_list
 
@@ -112,7 +121,7 @@ class PutDiskInfoReq:
         更新的btrfs信息
 
         :param btrfs_list: The btrfs_list of this PutDiskInfoReq.
-        :type: list[BtrfsFileSystem]
+        :type btrfs_list: list[:class:`huaweicloudsdksms.v3.BtrfsFileSystem`]
         """
         self._btrfs_list = btrfs_list
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListHooksResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListHooksResponse(SdkResponse):
     }
 
     def __init__(self, hooks=None):
-        """ListHooksResponse - a model defined in huaweicloud sdk"""
+        """ListHooksResponse
+
+        The model defined in huaweicloud sdk
+
+        :param hooks: hook列表。
+        :type hooks: list[:class:`huaweicloudsdkservicestage.v2.Hook`]
+        """
         
         super(ListHooksResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListHooksResponse(SdkResponse):
         hook列表。
 
         :return: The hooks of this ListHooksResponse.
-        :rtype: list[Hook]
+        :rtype: list[:class:`huaweicloudsdkservicestage.v2.Hook`]
         """
         return self._hooks
 
@@ -58,7 +63,7 @@ class ListHooksResponse(SdkResponse):
         hook列表。
 
         :param hooks: The hooks of this ListHooksResponse.
-        :type: list[Hook]
+        :type hooks: list[:class:`huaweicloudsdkservicestage.v2.Hook`]
         """
         self._hooks = hooks
 

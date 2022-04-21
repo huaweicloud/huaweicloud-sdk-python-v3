@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QosDataNoThrElement:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class QosDataNoThrElement:
     }
 
     def __init__(self, time=None, value=None):
-        """QosDataNoThrElement - a model defined in huaweicloud sdk"""
+        """QosDataNoThrElement
+
+        The model defined in huaweicloud sdk
+
+        :param time: Qos时间点, UTC时间，格式：yyyy-MM-ddTHH:mm:ss.SSSZ。
+        :type time: str
+        :param value: QoS值。
+        :type value: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class QosDataNoThrElement:
         Qos时间点, UTC时间，格式：yyyy-MM-ddTHH:mm:ss.SSSZ。
 
         :param time: The time of this QosDataNoThrElement.
-        :type: str
+        :type time: str
         """
         self._time = time
 
@@ -85,7 +92,7 @@ class QosDataNoThrElement:
         QoS值。
 
         :param value: The value of this QosDataNoThrElement.
-        :type: str
+        :type value: str
         """
         self._value = value
 

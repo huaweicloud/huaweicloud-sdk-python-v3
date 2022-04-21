@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowBigkeyScanTaskDetailsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowBigkeyScanTaskDetailsRequest:
     }
 
     def __init__(self, instance_id=None, bigkey_id=None):
-        """ShowBigkeyScanTaskDetailsRequest - a model defined in huaweicloud sdk"""
+        """ShowBigkeyScanTaskDetailsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param bigkey_id: 大key分析任务ID。
+        :type bigkey_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ShowBigkeyScanTaskDetailsRequest:
         实例ID。
 
         :param instance_id: The instance_id of this ShowBigkeyScanTaskDetailsRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -83,7 +90,7 @@ class ShowBigkeyScanTaskDetailsRequest:
         大key分析任务ID。
 
         :param bigkey_id: The bigkey_id of this ShowBigkeyScanTaskDetailsRequest.
-        :type: str
+        :type bigkey_id: str
         """
         self._bigkey_id = bigkey_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeviceInfoSimple:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeviceInfoSimple:
     }
 
     def __init__(self, id=None, device_name=None):
-        """DeviceInfoSimple - a model defined in huaweicloud sdk"""
+        """DeviceInfoSimple
+
+        The model defined in huaweicloud sdk
+
+        :param id: 设备ID
+        :type id: int
+        :param device_name: 设备名称
+        :type device_name: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class DeviceInfoSimple:
         设备ID
 
         :param id: The id of this DeviceInfoSimple.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -85,7 +92,7 @@ class DeviceInfoSimple:
         设备名称
 
         :param device_name: The device_name of this DeviceInfoSimple.
-        :type: str
+        :type device_name: str
         """
         self._device_name = device_name
 

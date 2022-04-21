@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AssociateRouterRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AssociateRouterRequest:
     }
 
     def __init__(self, zone_id=None, body=None):
-        """AssociateRouterRequest - a model defined in huaweicloud sdk"""
+        """AssociateRouterRequest
+
+        The model defined in huaweicloud sdk
+
+        :param zone_id: 关联VPC的Zone ID。
+        :type zone_id: str
+        :param body: Body of the AssociateRouterRequest
+        :type body: :class:`huaweicloudsdkdns.v2.AssociateRouterReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class AssociateRouterRequest:
         关联VPC的Zone ID。
 
         :param zone_id: The zone_id of this AssociateRouterRequest.
-        :type: str
+        :type zone_id: str
         """
         self._zone_id = zone_id
 
@@ -72,7 +79,7 @@ class AssociateRouterRequest:
 
 
         :return: The body of this AssociateRouterRequest.
-        :rtype: AssociateRouterReq
+        :rtype: :class:`huaweicloudsdkdns.v2.AssociateRouterReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class AssociateRouterRequest:
 
 
         :param body: The body of this AssociateRouterRequest.
-        :type: AssociateRouterReq
+        :type body: :class:`huaweicloudsdkdns.v2.AssociateRouterReq`
         """
         self._body = body
 

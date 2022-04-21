@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSnapshotsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListSnapshotsResponse(SdkResponse):
     }
 
     def __init__(self, snapshots=None, count=None):
-        """ListSnapshotsResponse - a model defined in huaweicloud sdk"""
+        """ListSnapshotsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param snapshots: 快照对象列表。
+        :type snapshots: list[:class:`huaweicloudsdkdws.v2.Snapshots`]
+        :param count: 快照对象列表总数
+        :type count: int
+        """
         
         super(ListSnapshotsResponse, self).__init__()
 
@@ -49,10 +56,10 @@ class ListSnapshotsResponse(SdkResponse):
     def snapshots(self):
         """Gets the snapshots of this ListSnapshotsResponse.
 
-        快照对象列表
+        快照对象列表。
 
         :return: The snapshots of this ListSnapshotsResponse.
-        :rtype: list[Snapshots]
+        :rtype: list[:class:`huaweicloudsdkdws.v2.Snapshots`]
         """
         return self._snapshots
 
@@ -60,10 +67,10 @@ class ListSnapshotsResponse(SdkResponse):
     def snapshots(self, snapshots):
         """Sets the snapshots of this ListSnapshotsResponse.
 
-        快照对象列表
+        快照对象列表。
 
         :param snapshots: The snapshots of this ListSnapshotsResponse.
-        :type: list[Snapshots]
+        :type snapshots: list[:class:`huaweicloudsdkdws.v2.Snapshots`]
         """
         self._snapshots = snapshots
 
@@ -85,7 +92,7 @@ class ListSnapshotsResponse(SdkResponse):
         快照对象列表总数
 
         :param count: The count of this ListSnapshotsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

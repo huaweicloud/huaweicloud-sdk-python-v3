@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowVaultTagResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowVaultTagResponse(SdkResponse):
     }
 
     def __init__(self, tags=None, sys_tags=None):
-        """ShowVaultTagResponse - a model defined in huaweicloud sdk"""
+        """ShowVaultTagResponse
+
+        The model defined in huaweicloud sdk
+
+        :param tags: 标签列表 tags中key不重复
+        :type tags: list[:class:`huaweicloudsdkcbr.v1.Tag`]
+        :param sys_tags: 仅op_service权限才可以获取此字段： 目前只包含一个resource_tag结构体  key：_sys_enterprise_project_id value：企业项目id。0表示默认企业项目 非op_service场景不能返回此字段。
+        :type sys_tags: list[:class:`huaweicloudsdkcbr.v1.SysTag`]
+        """
         
         super(ShowVaultTagResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ShowVaultTagResponse(SdkResponse):
         标签列表 tags中key不重复
 
         :return: The tags of this ShowVaultTagResponse.
-        :rtype: list[Tag]
+        :rtype: list[:class:`huaweicloudsdkcbr.v1.Tag`]
         """
         return self._tags
 
@@ -63,7 +70,7 @@ class ShowVaultTagResponse(SdkResponse):
         标签列表 tags中key不重复
 
         :param tags: The tags of this ShowVaultTagResponse.
-        :type: list[Tag]
+        :type tags: list[:class:`huaweicloudsdkcbr.v1.Tag`]
         """
         self._tags = tags
 
@@ -74,7 +81,7 @@ class ShowVaultTagResponse(SdkResponse):
         仅op_service权限才可以获取此字段： 目前只包含一个resource_tag结构体  key：_sys_enterprise_project_id value：企业项目id。0表示默认企业项目 非op_service场景不能返回此字段。
 
         :return: The sys_tags of this ShowVaultTagResponse.
-        :rtype: list[SysTag]
+        :rtype: list[:class:`huaweicloudsdkcbr.v1.SysTag`]
         """
         return self._sys_tags
 
@@ -85,7 +92,7 @@ class ShowVaultTagResponse(SdkResponse):
         仅op_service权限才可以获取此字段： 目前只包含一个resource_tag结构体  key：_sys_enterprise_project_id value：企业项目id。0表示默认企业项目 非op_service场景不能返回此字段。
 
         :param sys_tags: The sys_tags of this ShowVaultTagResponse.
-        :type: list[SysTag]
+        :type sys_tags: list[:class:`huaweicloudsdkcbr.v1.SysTag`]
         """
         self._sys_tags = sys_tags
 

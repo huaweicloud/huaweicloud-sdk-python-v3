@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Page:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Page:
     }
 
     def __init__(self, count=None, marker=None):
-        """Page - a model defined in huaweicloud sdk"""
+        """Page
+
+        The model defined in huaweicloud sdk
+
+        :param count: 满足查询条件的记录总数。
+        :type count: int
+        :param marker: 本次分页查询结果中最后一条记录的ID，可在下一次分页查询时使用。
+        :type marker: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class Page:
         满足查询条件的记录总数。
 
         :param count: The count of this Page.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -85,7 +92,7 @@ class Page:
         本次分页查询结果中最后一条记录的ID，可在下一次分页查询时使用。
 
         :param marker: The marker of this Page.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 

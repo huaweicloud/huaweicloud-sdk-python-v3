@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MemberRef:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class MemberRef:
     }
 
     def __init__(self, id=None):
-        """MemberRef - a model defined in huaweicloud sdk"""
+        """MemberRef
+
+        The model defined in huaweicloud sdk
+
+        :param id: 后端服务器ID。
+        :type id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class MemberRef:
         后端服务器ID。
 
         :param id: The id of this MemberRef.
-        :type: str
+        :type id: str
         """
         self._id = id
 

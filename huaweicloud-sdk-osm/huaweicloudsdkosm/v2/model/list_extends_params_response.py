@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListExtendsParamsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListExtendsParamsResponse(SdkResponse):
     }
 
     def __init__(self, extends_params=None, common_params=None):
-        """ListExtendsParamsResponse - a model defined in huaweicloud sdk"""
+        """ListExtendsParamsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param extends_params: 附加参数列表
+        :type extends_params: list[:class:`huaweicloudsdkosm.v2.ExtendsParamV2`]
+        :param common_params: 公共附加参数列表
+        :type common_params: list[:class:`huaweicloudsdkosm.v2.CommonParamV2`]
+        """
         
         super(ListExtendsParamsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListExtendsParamsResponse(SdkResponse):
         附加参数列表
 
         :return: The extends_params of this ListExtendsParamsResponse.
-        :rtype: list[ExtendsParamV2]
+        :rtype: list[:class:`huaweicloudsdkosm.v2.ExtendsParamV2`]
         """
         return self._extends_params
 
@@ -63,7 +70,7 @@ class ListExtendsParamsResponse(SdkResponse):
         附加参数列表
 
         :param extends_params: The extends_params of this ListExtendsParamsResponse.
-        :type: list[ExtendsParamV2]
+        :type extends_params: list[:class:`huaweicloudsdkosm.v2.ExtendsParamV2`]
         """
         self._extends_params = extends_params
 
@@ -74,7 +81,7 @@ class ListExtendsParamsResponse(SdkResponse):
         公共附加参数列表
 
         :return: The common_params of this ListExtendsParamsResponse.
-        :rtype: list[CommonParamV2]
+        :rtype: list[:class:`huaweicloudsdkosm.v2.CommonParamV2`]
         """
         return self._common_params
 
@@ -85,7 +92,7 @@ class ListExtendsParamsResponse(SdkResponse):
         公共附加参数列表
 
         :param common_params: The common_params of this ListExtendsParamsResponse.
-        :type: list[CommonParamV2]
+        :type common_params: list[:class:`huaweicloudsdkosm.v2.CommonParamV2`]
         """
         self._common_params = common_params
 

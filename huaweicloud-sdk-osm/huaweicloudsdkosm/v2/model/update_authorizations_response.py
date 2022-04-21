@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateAuthorizationsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateAuthorizationsResponse(SdkResponse):
     }
 
     def __init__(self, error_code=None, error_msg=None):
-        """UpdateAuthorizationsResponse - a model defined in huaweicloud sdk"""
+        """UpdateAuthorizationsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param error_code: 错误码
+        :type error_code: str
+        :param error_msg: 错误描述
+        :type error_msg: str
+        """
         
         super(UpdateAuthorizationsResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class UpdateAuthorizationsResponse(SdkResponse):
         错误码
 
         :param error_code: The error_code of this UpdateAuthorizationsResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -85,7 +92,7 @@ class UpdateAuthorizationsResponse(SdkResponse):
         错误描述
 
         :param error_msg: The error_msg of this UpdateAuthorizationsResponse.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRequestThrottlingPolicyV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListRequestThrottlingPolicyV2Response(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, throttles=None):
-        """ListRequestThrottlingPolicyV2Response - a model defined in huaweicloud sdk"""
+        """ListRequestThrottlingPolicyV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param size: 本次返回的列表长度
+        :type size: int
+        :param total: 满足条件的记录数
+        :type total: int
+        :param throttles: 本次查询到的流控策略列表
+        :type throttles: list[:class:`huaweicloudsdkapig.v2.ThrottlesInfo`]
+        """
         
         super(ListRequestThrottlingPolicyV2Response, self).__init__()
 
@@ -66,7 +75,7 @@ class ListRequestThrottlingPolicyV2Response(SdkResponse):
         本次返回的列表长度
 
         :param size: The size of this ListRequestThrottlingPolicyV2Response.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -88,7 +97,7 @@ class ListRequestThrottlingPolicyV2Response(SdkResponse):
         满足条件的记录数
 
         :param total: The total of this ListRequestThrottlingPolicyV2Response.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -99,7 +108,7 @@ class ListRequestThrottlingPolicyV2Response(SdkResponse):
         本次查询到的流控策略列表
 
         :return: The throttles of this ListRequestThrottlingPolicyV2Response.
-        :rtype: list[ThrottlesInfo]
+        :rtype: list[:class:`huaweicloudsdkapig.v2.ThrottlesInfo`]
         """
         return self._throttles
 
@@ -110,7 +119,7 @@ class ListRequestThrottlingPolicyV2Response(SdkResponse):
         本次查询到的流控策略列表
 
         :param throttles: The throttles of this ListRequestThrottlingPolicyV2Response.
-        :type: list[ThrottlesInfo]
+        :type throttles: list[:class:`huaweicloudsdkapig.v2.ThrottlesInfo`]
         """
         self._throttles = throttles
 

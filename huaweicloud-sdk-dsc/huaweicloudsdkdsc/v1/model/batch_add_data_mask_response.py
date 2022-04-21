@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchAddDataMaskResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchAddDataMaskResponse(SdkResponse):
     }
 
     def __init__(self, masked_data=None):
-        """BatchAddDataMaskResponse - a model defined in huaweicloud sdk"""
+        """BatchAddDataMaskResponse
+
+        The model defined in huaweicloud sdk
+
+        :param masked_data: 脱敏后的数据的数据列表，结构与请求中结构相同
+        :type masked_data: list[dict(str, object)]
+        """
         
         super(BatchAddDataMaskResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class BatchAddDataMaskResponse(SdkResponse):
         脱敏后的数据的数据列表，结构与请求中结构相同
 
         :param masked_data: The masked_data of this BatchAddDataMaskResponse.
-        :type: list[dict(str, object)]
+        :type masked_data: list[dict(str, object)]
         """
         self._masked_data = masked_data
 

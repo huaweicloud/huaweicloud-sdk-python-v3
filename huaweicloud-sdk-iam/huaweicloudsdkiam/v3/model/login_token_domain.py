@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LoginTokenDomain:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class LoginTokenDomain:
     }
 
     def __init__(self, name=None, id=None):
-        """LoginTokenDomain - a model defined in huaweicloud sdk"""
+        """LoginTokenDomain
+
+        The model defined in huaweicloud sdk
+
+        :param name: 被委托方用户所属账号名称。
+        :type name: str
+        :param id: 被委托方用户所属账号ID。
+        :type id: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class LoginTokenDomain:
         被委托方用户所属账号名称。
 
         :param name: The name of this LoginTokenDomain.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -85,7 +92,7 @@ class LoginTokenDomain:
         被委托方用户所属账号ID。
 
         :param id: The id of this LoginTokenDomain.
-        :type: str
+        :type id: str
         """
         self._id = id
 

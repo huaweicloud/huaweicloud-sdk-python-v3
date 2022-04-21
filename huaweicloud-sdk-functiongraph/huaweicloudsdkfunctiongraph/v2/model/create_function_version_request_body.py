@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateFunctionVersionRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateFunctionVersionRequestBody:
     }
 
     def __init__(self, digest=None, version=None, description=None):
-        """CreateFunctionVersionRequestBody - a model defined in huaweicloud sdk"""
+        """CreateFunctionVersionRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param digest: md5键值
+        :type digest: str
+        :param version: 发布版本名称
+        :type version: str
+        :param description: 发布版本描述
+        :type description: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class CreateFunctionVersionRequestBody:
         md5键值
 
         :param digest: The digest of this CreateFunctionVersionRequestBody.
-        :type: str
+        :type digest: str
         """
         self._digest = digest
 
@@ -90,7 +99,7 @@ class CreateFunctionVersionRequestBody:
         发布版本名称
 
         :param version: The version of this CreateFunctionVersionRequestBody.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -112,7 +121,7 @@ class CreateFunctionVersionRequestBody:
         发布版本描述
 
         :param description: The description of this CreateFunctionVersionRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 

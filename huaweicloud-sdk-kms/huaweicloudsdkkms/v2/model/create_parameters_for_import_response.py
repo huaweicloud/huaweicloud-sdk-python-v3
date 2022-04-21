@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateParametersForImportResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CreateParametersForImportResponse(SdkResponse):
     }
 
     def __init__(self, key_id=None, import_token=None, expiration_time=None, public_key=None):
-        """CreateParametersForImportResponse - a model defined in huaweicloud sdk"""
+        """CreateParametersForImportResponse
+
+        The model defined in huaweicloud sdk
+
+        :param key_id: 密钥ID。
+        :type key_id: str
+        :param import_token: 密钥导入令牌。
+        :type import_token: str
+        :param expiration_time: 导入参数到期时间，时间戳，即从1970年1月1日至该时间的总秒数。
+        :type expiration_time: int
+        :param public_key: 加密密钥材料的公钥，base64格式。
+        :type public_key: str
+        """
         
         super(CreateParametersForImportResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class CreateParametersForImportResponse(SdkResponse):
         密钥ID。
 
         :param key_id: The key_id of this CreateParametersForImportResponse.
-        :type: str
+        :type key_id: str
         """
         self._key_id = key_id
 
@@ -95,7 +106,7 @@ class CreateParametersForImportResponse(SdkResponse):
         密钥导入令牌。
 
         :param import_token: The import_token of this CreateParametersForImportResponse.
-        :type: str
+        :type import_token: str
         """
         self._import_token = import_token
 
@@ -117,7 +128,7 @@ class CreateParametersForImportResponse(SdkResponse):
         导入参数到期时间，时间戳，即从1970年1月1日至该时间的总秒数。
 
         :param expiration_time: The expiration_time of this CreateParametersForImportResponse.
-        :type: int
+        :type expiration_time: int
         """
         self._expiration_time = expiration_time
 
@@ -139,7 +150,7 @@ class CreateParametersForImportResponse(SdkResponse):
         加密密钥材料的公钥，base64格式。
 
         :param public_key: The public_key of this CreateParametersForImportResponse.
-        :type: str
+        :type public_key: str
         """
         self._public_key = public_key
 

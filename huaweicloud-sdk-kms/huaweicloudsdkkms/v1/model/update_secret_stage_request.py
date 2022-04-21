@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateSecretStageRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateSecretStageRequest:
     }
 
     def __init__(self, secret_id=None, stage_name=None, body=None):
-        """UpdateSecretStageRequest - a model defined in huaweicloud sdk"""
+        """UpdateSecretStageRequest
+
+        The model defined in huaweicloud sdk
+
+        :param secret_id: 凭据的资源标识符。
+        :type secret_id: str
+        :param stage_name: 凭据版本状态的名称。
+        :type stage_name: str
+        :param body: Body of the UpdateSecretStageRequest
+        :type body: :class:`huaweicloudsdkkms.v1.UpdateSecretStageRequestBody`
+        """
         
         
 
@@ -66,7 +75,7 @@ class UpdateSecretStageRequest:
         凭据的资源标识符。
 
         :param secret_id: The secret_id of this UpdateSecretStageRequest.
-        :type: str
+        :type secret_id: str
         """
         self._secret_id = secret_id
 
@@ -88,7 +97,7 @@ class UpdateSecretStageRequest:
         凭据版本状态的名称。
 
         :param stage_name: The stage_name of this UpdateSecretStageRequest.
-        :type: str
+        :type stage_name: str
         """
         self._stage_name = stage_name
 
@@ -98,7 +107,7 @@ class UpdateSecretStageRequest:
 
 
         :return: The body of this UpdateSecretStageRequest.
-        :rtype: UpdateSecretStageRequestBody
+        :rtype: :class:`huaweicloudsdkkms.v1.UpdateSecretStageRequestBody`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class UpdateSecretStageRequest:
 
 
         :param body: The body of this UpdateSecretStageRequest.
-        :type: UpdateSecretStageRequestBody
+        :type body: :class:`huaweicloudsdkkms.v1.UpdateSecretStageRequestBody`
         """
         self._body = body
 

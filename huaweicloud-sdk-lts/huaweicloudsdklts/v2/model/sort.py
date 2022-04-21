@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Sort:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Sort:
     }
 
     def __init__(self, order_by=None, order=None):
-        """Sort - a model defined in huaweicloud sdk"""
+        """Sort
+
+        The model defined in huaweicloud sdk
+
+        :param order_by: 排序字段
+        :type order_by: list[str]
+        :param order: 排序顺序
+        :type order: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class Sort:
         排序字段
 
         :param order_by: The order_by of this Sort.
-        :type: list[str]
+        :type order_by: list[str]
         """
         self._order_by = order_by
 
@@ -83,7 +90,7 @@ class Sort:
         排序顺序
 
         :param order: The order of this Sort.
-        :type: str
+        :type order: str
         """
         self._order = order
 

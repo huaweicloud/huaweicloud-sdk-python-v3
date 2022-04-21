@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PrecheckFailSubJobVO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class PrecheckFailSubJobVO:
     }
 
     def __init__(self, id=None, name=None, check_result=None):
-        """PrecheckFailSubJobVO - a model defined in huaweicloud sdk"""
+        """PrecheckFailSubJobVO
+
+        The model defined in huaweicloud sdk
+
+        :param id: 预检查失败子任务id。
+        :type id: str
+        :param name: 预检查失败子任务名称。
+        :type name: str
+        :param check_result: 检查结果。
+        :type check_result: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class PrecheckFailSubJobVO:
         预检查失败子任务id。
 
         :param id: The id of this PrecheckFailSubJobVO.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -90,7 +99,7 @@ class PrecheckFailSubJobVO:
         预检查失败子任务名称。
 
         :param name: The name of this PrecheckFailSubJobVO.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -112,7 +121,7 @@ class PrecheckFailSubJobVO:
         检查结果。
 
         :param check_result: The check_result of this PrecheckFailSubJobVO.
-        :type: str
+        :type check_result: str
         """
         self._check_result = check_result
 

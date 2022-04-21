@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PreheatingResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class PreheatingResult:
     }
 
     def __init__(self, url=None, status=None):
-        """PreheatingResult - a model defined in huaweicloud sdk"""
+        """PreheatingResult
+
+        The model defined in huaweicloud sdk
+
+        :param url: 媒资URL。
+        :type url: str
+        :param status: 预热任务状态。  取值如下： - processing：处理中 - succeed：预热完成 - failed：预热失败
+        :type status: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class PreheatingResult:
         媒资URL。
 
         :param url: The url of this PreheatingResult.
-        :type: str
+        :type url: str
         """
         self._url = url
 
@@ -85,7 +92,7 @@ class PreheatingResult:
         预热任务状态。  取值如下： - processing：处理中 - succeed：预热完成 - failed：预热失败
 
         :param status: The status of this PreheatingResult.
-        :type: str
+        :type status: str
         """
         self._status = status
 

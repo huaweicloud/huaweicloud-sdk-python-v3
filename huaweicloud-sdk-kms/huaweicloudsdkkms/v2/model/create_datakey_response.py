@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateDatakeyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateDatakeyResponse(SdkResponse):
     }
 
     def __init__(self, key_id=None, plain_text=None, cipher_text=None):
-        """CreateDatakeyResponse - a model defined in huaweicloud sdk"""
+        """CreateDatakeyResponse
+
+        The model defined in huaweicloud sdk
+
+        :param key_id: 密钥ID。
+        :type key_id: str
+        :param plain_text: DEK明文16进制，两位表示1byte。
+        :type plain_text: str
+        :param cipher_text: DEK密文16进制，两位表示1byte。
+        :type cipher_text: str
+        """
         
         super(CreateDatakeyResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class CreateDatakeyResponse(SdkResponse):
         密钥ID。
 
         :param key_id: The key_id of this CreateDatakeyResponse.
-        :type: str
+        :type key_id: str
         """
         self._key_id = key_id
 
@@ -90,7 +99,7 @@ class CreateDatakeyResponse(SdkResponse):
         DEK明文16进制，两位表示1byte。
 
         :param plain_text: The plain_text of this CreateDatakeyResponse.
-        :type: str
+        :type plain_text: str
         """
         self._plain_text = plain_text
 
@@ -112,7 +121,7 @@ class CreateDatakeyResponse(SdkResponse):
         DEK密文16进制，两位表示1byte。
 
         :param cipher_text: The cipher_text of this CreateDatakeyResponse.
-        :type: str
+        :type cipher_text: str
         """
         self._cipher_text = cipher_text
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SetOnlineMigrationTaskResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class SetOnlineMigrationTaskResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, status=None):
-        """SetOnlineMigrationTaskResponse - a model defined in huaweicloud sdk"""
+        """SetOnlineMigrationTaskResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 迁移任务ID。
+        :type id: str
+        :param name: 迁移任务名称。
+        :type name: str
+        :param status: 迁移任务状态，这个字段的值包括：SUCCESS, FAILED, MIGRATING，TERMINATED
+        :type status: str
+        """
         
         super(SetOnlineMigrationTaskResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class SetOnlineMigrationTaskResponse(SdkResponse):
         迁移任务ID。
 
         :param id: The id of this SetOnlineMigrationTaskResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -90,7 +99,7 @@ class SetOnlineMigrationTaskResponse(SdkResponse):
         迁移任务名称。
 
         :param name: The name of this SetOnlineMigrationTaskResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -112,7 +121,7 @@ class SetOnlineMigrationTaskResponse(SdkResponse):
         迁移任务状态，这个字段的值包括：SUCCESS, FAILED, MIGRATING，TERMINATED
 
         :param status: The status of this SetOnlineMigrationTaskResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 

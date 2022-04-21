@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneListGroupsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class KeystoneListGroupsResponse(SdkResponse):
     }
 
     def __init__(self, groups=None, links=None):
-        """KeystoneListGroupsResponse - a model defined in huaweicloud sdk"""
+        """KeystoneListGroupsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param groups: 用户组信息列表。
+        :type groups: list[:class:`huaweicloudsdkiam.v3.KeystoneGroupResult`]
+        :param links: 
+        :type links: :class:`huaweicloudsdkiam.v3.Links`
+        """
         
         super(KeystoneListGroupsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class KeystoneListGroupsResponse(SdkResponse):
         用户组信息列表。
 
         :return: The groups of this KeystoneListGroupsResponse.
-        :rtype: list[KeystoneGroupResult]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.KeystoneGroupResult`]
         """
         return self._groups
 
@@ -63,7 +70,7 @@ class KeystoneListGroupsResponse(SdkResponse):
         用户组信息列表。
 
         :param groups: The groups of this KeystoneListGroupsResponse.
-        :type: list[KeystoneGroupResult]
+        :type groups: list[:class:`huaweicloudsdkiam.v3.KeystoneGroupResult`]
         """
         self._groups = groups
 
@@ -73,7 +80,7 @@ class KeystoneListGroupsResponse(SdkResponse):
 
 
         :return: The links of this KeystoneListGroupsResponse.
-        :rtype: Links
+        :rtype: :class:`huaweicloudsdkiam.v3.Links`
         """
         return self._links
 
@@ -83,7 +90,7 @@ class KeystoneListGroupsResponse(SdkResponse):
 
 
         :param links: The links of this KeystoneListGroupsResponse.
-        :type: Links
+        :type links: :class:`huaweicloudsdkiam.v3.Links`
         """
         self._links = links
 

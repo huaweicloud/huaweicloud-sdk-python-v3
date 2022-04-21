@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListFlavorsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class ListFlavorsRequest:
     }
 
     def __init__(self, offset=None, limit=None, name=None, area=None, province=None, city=None, operator=None, id=None, site_ids=None):
-        """ListFlavorsRequest - a model defined in huaweicloud sdk"""
+        """ListFlavorsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param offset: 页码。 当前页面数，默认为1。 取值大于等于0，取值为0时返回第1页。
+        :type offset: int
+        :param limit: 查询返回边缘实例规格列表当前页面的数量 。 取值范围：0~1000。
+        :type limit: int
+        :param name: 查询条件，规格的名称。
+        :type name: str
+        :param area: 边缘规格所在大区。  大小写通用，皆支持。 支持多个查询，中间使用“,”分隔。
+        :type area: str
+        :param province: 边缘规格所在省份。  大小写通用，皆支持。 支持多个查询，中间使用“,”分隔。
+        :type province: str
+        :param city: 边缘规格所在城市。  大小写通用，皆支持。 支持多个查询，中间使用“,”分隔。
+        :type city: str
+        :param operator: 边缘规格支持运营商。  大小写通用，皆支持。 支持多个查询，中间使用“,”分隔。
+        :type operator: str
+        :param id: 查询条件，规格的ID。
+        :type id: str
+        :param site_ids: 查询条件，边缘规格站点列表，站点之间用“,”分隔。
+        :type site_ids: str
+        """
         
         
 
@@ -98,7 +119,7 @@ class ListFlavorsRequest:
         页码。 当前页面数，默认为1。 取值大于等于0，取值为0时返回第1页。
 
         :param offset: The offset of this ListFlavorsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -120,7 +141,7 @@ class ListFlavorsRequest:
         查询返回边缘实例规格列表当前页面的数量 。 取值范围：0~1000。
 
         :param limit: The limit of this ListFlavorsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -142,7 +163,7 @@ class ListFlavorsRequest:
         查询条件，规格的名称。
 
         :param name: The name of this ListFlavorsRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -164,7 +185,7 @@ class ListFlavorsRequest:
         边缘规格所在大区。  大小写通用，皆支持。 支持多个查询，中间使用“,”分隔。
 
         :param area: The area of this ListFlavorsRequest.
-        :type: str
+        :type area: str
         """
         self._area = area
 
@@ -186,7 +207,7 @@ class ListFlavorsRequest:
         边缘规格所在省份。  大小写通用，皆支持。 支持多个查询，中间使用“,”分隔。
 
         :param province: The province of this ListFlavorsRequest.
-        :type: str
+        :type province: str
         """
         self._province = province
 
@@ -208,7 +229,7 @@ class ListFlavorsRequest:
         边缘规格所在城市。  大小写通用，皆支持。 支持多个查询，中间使用“,”分隔。
 
         :param city: The city of this ListFlavorsRequest.
-        :type: str
+        :type city: str
         """
         self._city = city
 
@@ -230,7 +251,7 @@ class ListFlavorsRequest:
         边缘规格支持运营商。  大小写通用，皆支持。 支持多个查询，中间使用“,”分隔。
 
         :param operator: The operator of this ListFlavorsRequest.
-        :type: str
+        :type operator: str
         """
         self._operator = operator
 
@@ -252,7 +273,7 @@ class ListFlavorsRequest:
         查询条件，规格的ID。
 
         :param id: The id of this ListFlavorsRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -274,7 +295,7 @@ class ListFlavorsRequest:
         查询条件，边缘规格站点列表，站点之间用“,”分隔。
 
         :param site_ids: The site_ids of this ListFlavorsRequest.
-        :type: str
+        :type site_ids: str
         """
         self._site_ids = site_ids
 

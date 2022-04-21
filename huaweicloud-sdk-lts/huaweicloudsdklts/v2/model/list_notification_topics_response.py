@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListNotificationTopicsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListNotificationTopicsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, topic_count=None, topics=None):
-        """ListNotificationTopicsResponse - a model defined in huaweicloud sdk"""
+        """ListNotificationTopicsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param request_id: request_id
+        :type request_id: str
+        :param topic_count: topics数量
+        :type topic_count: int
+        :param topics: 主题信息
+        :type topics: list[:class:`huaweicloudsdklts.v2.Topics`]
+        """
         
         super(ListNotificationTopicsResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListNotificationTopicsResponse(SdkResponse):
         request_id
 
         :param request_id: The request_id of this ListNotificationTopicsResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 
@@ -90,7 +99,7 @@ class ListNotificationTopicsResponse(SdkResponse):
         topics数量
 
         :param topic_count: The topic_count of this ListNotificationTopicsResponse.
-        :type: int
+        :type topic_count: int
         """
         self._topic_count = topic_count
 
@@ -101,7 +110,7 @@ class ListNotificationTopicsResponse(SdkResponse):
         主题信息
 
         :return: The topics of this ListNotificationTopicsResponse.
-        :rtype: list[Topics]
+        :rtype: list[:class:`huaweicloudsdklts.v2.Topics`]
         """
         return self._topics
 
@@ -112,7 +121,7 @@ class ListNotificationTopicsResponse(SdkResponse):
         主题信息
 
         :param topics: The topics of this ListNotificationTopicsResponse.
-        :type: list[Topics]
+        :type topics: list[:class:`huaweicloudsdklts.v2.Topics`]
         """
         self._topics = topics
 

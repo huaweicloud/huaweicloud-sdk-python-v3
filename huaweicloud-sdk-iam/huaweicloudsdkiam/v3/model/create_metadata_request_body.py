@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateMetadataRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateMetadataRequestBody:
     }
 
     def __init__(self, domain_id=None, xaccount_type=None, metadata=None):
-        """CreateMetadataRequestBody - a model defined in huaweicloud sdk"""
+        """CreateMetadataRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param domain_id: 用户所属账号ID。
+        :type domain_id: str
+        :param xaccount_type: 该字段为标识租户来源字段，默认为空。
+        :type xaccount_type: str
+        :param metadata: 该字段为用户IdP服务器的Metadata文件的内容。
+        :type metadata: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class CreateMetadataRequestBody:
         用户所属账号ID。
 
         :param domain_id: The domain_id of this CreateMetadataRequestBody.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -87,7 +96,7 @@ class CreateMetadataRequestBody:
         该字段为标识租户来源字段，默认为空。
 
         :param xaccount_type: The xaccount_type of this CreateMetadataRequestBody.
-        :type: str
+        :type xaccount_type: str
         """
         self._xaccount_type = xaccount_type
 
@@ -109,7 +118,7 @@ class CreateMetadataRequestBody:
         该字段为用户IdP服务器的Metadata文件的内容。
 
         :param metadata: The metadata of this CreateMetadataRequestBody.
-        :type: str
+        :type metadata: str
         """
         self._metadata = metadata
 

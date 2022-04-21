@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RepoInfoV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -70,7 +69,53 @@ class RepoInfoV2:
     }
 
     def __init__(self, created_at=None, creator_name=None, domain_name=None, group_name=None, https_url=None, iam_user_uuid=None, is_owner=None, lfs_size=None, project_is_deleted=None, project_uuid=None, repository_id=None, repository_name=None, repository_size=None, repository_uuid=None, ssh_url=None, star=None, status=None, updated_at=None, user_role=None, visibility_level=None, web_url=None):
-        """RepoInfoV2 - a model defined in huaweicloud sdk"""
+        """RepoInfoV2
+
+        The model defined in huaweicloud sdk
+
+        :param created_at: 创建时间
+        :type created_at: str
+        :param creator_name: 创建者的用户名，在用户是租户的情况下，用户名和租户名相等
+        :type creator_name: str
+        :param domain_name: 创建者的租户名
+        :type domain_name: str
+        :param group_name: 仓库组名
+        :type group_name: str
+        :param https_url: 使用 https 克隆仓库时所使用的 url
+        :type https_url: str
+        :param iam_user_uuid: 用户的 iam user uuid
+        :type iam_user_uuid: str
+        :param is_owner: 当前用户是否是仓库的创建者，1：是，0：不是
+        :type is_owner: int
+        :param lfs_size: 仓库 LFS 容量，单位为M，大于 1024M 则单位为 G
+        :type lfs_size: str
+        :param project_is_deleted: 项目是否被删除
+        :type project_is_deleted: str
+        :param project_uuid: 项目的uuid
+        :type project_uuid: str
+        :param repository_id: 仓库主键id
+        :type repository_id: int
+        :param repository_name: 仓库名
+        :type repository_name: str
+        :param repository_size: 仓库总容量 &#x3D; 仓库 LFS 容量 + git 库容量，单位为M，大于 1024M 则单位为 G
+        :type repository_size: str
+        :param repository_uuid: 仓库uuid
+        :type repository_uuid: str
+        :param ssh_url: 使用 ssh 方式克隆仓库时所使用的 url
+        :type ssh_url: str
+        :param star: 当前用户是否收藏该仓库
+        :type star: bool
+        :param status: 仓库状态， 0：仓库正常创建成功 1：仓库创建中 2：创建失败 3：仓库冻结 4：仓库已经关闭 
+        :type status: int
+        :param updated_at: 更新时间
+        :type updated_at: str
+        :param user_role: 用户在仓库中的权限:20：只读成员 30：普通成员 40：管理员 
+        :type user_role: int
+        :param visibility_level: 是否可见：0私有仓库，20公有仓库
+        :type visibility_level: int
+        :param web_url: web url 路径，访问它将跳转至仓库详情页
+        :type web_url: str
+        """
         
         
 
@@ -158,7 +203,7 @@ class RepoInfoV2:
         创建时间
 
         :param created_at: The created_at of this RepoInfoV2.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -180,7 +225,7 @@ class RepoInfoV2:
         创建者的用户名，在用户是租户的情况下，用户名和租户名相等
 
         :param creator_name: The creator_name of this RepoInfoV2.
-        :type: str
+        :type creator_name: str
         """
         self._creator_name = creator_name
 
@@ -202,7 +247,7 @@ class RepoInfoV2:
         创建者的租户名
 
         :param domain_name: The domain_name of this RepoInfoV2.
-        :type: str
+        :type domain_name: str
         """
         self._domain_name = domain_name
 
@@ -224,7 +269,7 @@ class RepoInfoV2:
         仓库组名
 
         :param group_name: The group_name of this RepoInfoV2.
-        :type: str
+        :type group_name: str
         """
         self._group_name = group_name
 
@@ -246,7 +291,7 @@ class RepoInfoV2:
         使用 https 克隆仓库时所使用的 url
 
         :param https_url: The https_url of this RepoInfoV2.
-        :type: str
+        :type https_url: str
         """
         self._https_url = https_url
 
@@ -268,7 +313,7 @@ class RepoInfoV2:
         用户的 iam user uuid
 
         :param iam_user_uuid: The iam_user_uuid of this RepoInfoV2.
-        :type: str
+        :type iam_user_uuid: str
         """
         self._iam_user_uuid = iam_user_uuid
 
@@ -290,7 +335,7 @@ class RepoInfoV2:
         当前用户是否是仓库的创建者，1：是，0：不是
 
         :param is_owner: The is_owner of this RepoInfoV2.
-        :type: int
+        :type is_owner: int
         """
         self._is_owner = is_owner
 
@@ -312,7 +357,7 @@ class RepoInfoV2:
         仓库 LFS 容量，单位为M，大于 1024M 则单位为 G
 
         :param lfs_size: The lfs_size of this RepoInfoV2.
-        :type: str
+        :type lfs_size: str
         """
         self._lfs_size = lfs_size
 
@@ -334,7 +379,7 @@ class RepoInfoV2:
         项目是否被删除
 
         :param project_is_deleted: The project_is_deleted of this RepoInfoV2.
-        :type: str
+        :type project_is_deleted: str
         """
         self._project_is_deleted = project_is_deleted
 
@@ -356,7 +401,7 @@ class RepoInfoV2:
         项目的uuid
 
         :param project_uuid: The project_uuid of this RepoInfoV2.
-        :type: str
+        :type project_uuid: str
         """
         self._project_uuid = project_uuid
 
@@ -378,7 +423,7 @@ class RepoInfoV2:
         仓库主键id
 
         :param repository_id: The repository_id of this RepoInfoV2.
-        :type: int
+        :type repository_id: int
         """
         self._repository_id = repository_id
 
@@ -400,7 +445,7 @@ class RepoInfoV2:
         仓库名
 
         :param repository_name: The repository_name of this RepoInfoV2.
-        :type: str
+        :type repository_name: str
         """
         self._repository_name = repository_name
 
@@ -422,7 +467,7 @@ class RepoInfoV2:
         仓库总容量 = 仓库 LFS 容量 + git 库容量，单位为M，大于 1024M 则单位为 G
 
         :param repository_size: The repository_size of this RepoInfoV2.
-        :type: str
+        :type repository_size: str
         """
         self._repository_size = repository_size
 
@@ -444,7 +489,7 @@ class RepoInfoV2:
         仓库uuid
 
         :param repository_uuid: The repository_uuid of this RepoInfoV2.
-        :type: str
+        :type repository_uuid: str
         """
         self._repository_uuid = repository_uuid
 
@@ -466,7 +511,7 @@ class RepoInfoV2:
         使用 ssh 方式克隆仓库时所使用的 url
 
         :param ssh_url: The ssh_url of this RepoInfoV2.
-        :type: str
+        :type ssh_url: str
         """
         self._ssh_url = ssh_url
 
@@ -488,7 +533,7 @@ class RepoInfoV2:
         当前用户是否收藏该仓库
 
         :param star: The star of this RepoInfoV2.
-        :type: bool
+        :type star: bool
         """
         self._star = star
 
@@ -510,7 +555,7 @@ class RepoInfoV2:
         仓库状态， 0：仓库正常创建成功 1：仓库创建中 2：创建失败 3：仓库冻结 4：仓库已经关闭 
 
         :param status: The status of this RepoInfoV2.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -532,7 +577,7 @@ class RepoInfoV2:
         更新时间
 
         :param updated_at: The updated_at of this RepoInfoV2.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 
@@ -554,7 +599,7 @@ class RepoInfoV2:
         用户在仓库中的权限:20：只读成员 30：普通成员 40：管理员 
 
         :param user_role: The user_role of this RepoInfoV2.
-        :type: int
+        :type user_role: int
         """
         self._user_role = user_role
 
@@ -576,7 +621,7 @@ class RepoInfoV2:
         是否可见：0私有仓库，20公有仓库
 
         :param visibility_level: The visibility_level of this RepoInfoV2.
-        :type: int
+        :type visibility_level: int
         """
         self._visibility_level = visibility_level
 
@@ -598,7 +643,7 @@ class RepoInfoV2:
         web url 路径，访问它将跳转至仓库详情页
 
         :param web_url: The web_url of this RepoInfoV2.
-        :type: str
+        :type web_url: str
         """
         self._web_url = web_url
 

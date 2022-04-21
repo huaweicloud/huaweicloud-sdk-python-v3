@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VaultGet:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -64,7 +63,47 @@ class VaultGet:
     }
 
     def __init__(self, billing=None, description=None, id=None, name=None, project_id=None, provider_id=None, resources=None, tags=None, enterprise_project_id=None, auto_bind=None, bind_rules=None, user_id=None, created_at=None, auto_expand=None, smn_notify=None, threshold=None, updated_at=None, version=None):
-        """VaultGet - a model defined in huaweicloud sdk"""
+        """VaultGet
+
+        The model defined in huaweicloud sdk
+
+        :param billing: 
+        :type billing: :class:`huaweicloudsdkcbr.v1.Billing`
+        :param description: 存储库自定义描述信息。
+        :type description: str
+        :param id: 存储库ID
+        :type id: str
+        :param name: 存储库名称
+        :type name: str
+        :param project_id: 项目ID
+        :type project_id: str
+        :param provider_id: 存储库资源类型id
+        :type provider_id: str
+        :param resources: 资源
+        :type resources: list[:class:`huaweicloudsdkcbr.v1.ResourceResp`]
+        :param tags: 标签
+        :type tags: list[:class:`huaweicloudsdkcbr.v1.TagsResp`]
+        :param enterprise_project_id: 企业项目id，默认为‘0’。
+        :type enterprise_project_id: str
+        :param auto_bind: 是否自动绑定，默认为false，不支持。
+        :type auto_bind: bool
+        :param bind_rules: 
+        :type bind_rules: :class:`huaweicloudsdkcbr.v1.VaultBindRules`
+        :param user_id: 用户id
+        :type user_id: str
+        :param created_at: 创建时间,例如:\&quot;2020-02-05T10:38:34.209782\&quot;
+        :type created_at: str
+        :param auto_expand: 是否开启存储库自动扩容能力（只支持按需存储库）。
+        :type auto_expand: bool
+        :param smn_notify: 存储库smn消息通知开关
+        :type smn_notify: bool
+        :param threshold: 存储库容量阈值，已用容量占总容量达到此百分比即发送相关通知
+        :type threshold: int
+        :param updated_at: 更新时间,例如:\&quot;2020-02-05T10:38:34.209782\&quot;
+        :type updated_at: str
+        :param version: 版本
+        :type version: str
+        """
         
         
 
@@ -124,7 +163,7 @@ class VaultGet:
 
 
         :return: The billing of this VaultGet.
-        :rtype: Billing
+        :rtype: :class:`huaweicloudsdkcbr.v1.Billing`
         """
         return self._billing
 
@@ -134,7 +173,7 @@ class VaultGet:
 
 
         :param billing: The billing of this VaultGet.
-        :type: Billing
+        :type billing: :class:`huaweicloudsdkcbr.v1.Billing`
         """
         self._billing = billing
 
@@ -156,7 +195,7 @@ class VaultGet:
         存储库自定义描述信息。
 
         :param description: The description of this VaultGet.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -178,7 +217,7 @@ class VaultGet:
         存储库ID
 
         :param id: The id of this VaultGet.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -200,7 +239,7 @@ class VaultGet:
         存储库名称
 
         :param name: The name of this VaultGet.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -222,7 +261,7 @@ class VaultGet:
         项目ID
 
         :param project_id: The project_id of this VaultGet.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -244,7 +283,7 @@ class VaultGet:
         存储库资源类型id
 
         :param provider_id: The provider_id of this VaultGet.
-        :type: str
+        :type provider_id: str
         """
         self._provider_id = provider_id
 
@@ -255,7 +294,7 @@ class VaultGet:
         资源
 
         :return: The resources of this VaultGet.
-        :rtype: list[ResourceResp]
+        :rtype: list[:class:`huaweicloudsdkcbr.v1.ResourceResp`]
         """
         return self._resources
 
@@ -266,7 +305,7 @@ class VaultGet:
         资源
 
         :param resources: The resources of this VaultGet.
-        :type: list[ResourceResp]
+        :type resources: list[:class:`huaweicloudsdkcbr.v1.ResourceResp`]
         """
         self._resources = resources
 
@@ -277,7 +316,7 @@ class VaultGet:
         标签
 
         :return: The tags of this VaultGet.
-        :rtype: list[TagsResp]
+        :rtype: list[:class:`huaweicloudsdkcbr.v1.TagsResp`]
         """
         return self._tags
 
@@ -288,7 +327,7 @@ class VaultGet:
         标签
 
         :param tags: The tags of this VaultGet.
-        :type: list[TagsResp]
+        :type tags: list[:class:`huaweicloudsdkcbr.v1.TagsResp`]
         """
         self._tags = tags
 
@@ -310,7 +349,7 @@ class VaultGet:
         企业项目id，默认为‘0’。
 
         :param enterprise_project_id: The enterprise_project_id of this VaultGet.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -332,7 +371,7 @@ class VaultGet:
         是否自动绑定，默认为false，不支持。
 
         :param auto_bind: The auto_bind of this VaultGet.
-        :type: bool
+        :type auto_bind: bool
         """
         self._auto_bind = auto_bind
 
@@ -342,7 +381,7 @@ class VaultGet:
 
 
         :return: The bind_rules of this VaultGet.
-        :rtype: VaultBindRules
+        :rtype: :class:`huaweicloudsdkcbr.v1.VaultBindRules`
         """
         return self._bind_rules
 
@@ -352,7 +391,7 @@ class VaultGet:
 
 
         :param bind_rules: The bind_rules of this VaultGet.
-        :type: VaultBindRules
+        :type bind_rules: :class:`huaweicloudsdkcbr.v1.VaultBindRules`
         """
         self._bind_rules = bind_rules
 
@@ -374,7 +413,7 @@ class VaultGet:
         用户id
 
         :param user_id: The user_id of this VaultGet.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -396,7 +435,7 @@ class VaultGet:
         创建时间,例如:\"2020-02-05T10:38:34.209782\"
 
         :param created_at: The created_at of this VaultGet.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -418,7 +457,7 @@ class VaultGet:
         是否开启存储库自动扩容能力（只支持按需存储库）。
 
         :param auto_expand: The auto_expand of this VaultGet.
-        :type: bool
+        :type auto_expand: bool
         """
         self._auto_expand = auto_expand
 
@@ -440,7 +479,7 @@ class VaultGet:
         存储库smn消息通知开关
 
         :param smn_notify: The smn_notify of this VaultGet.
-        :type: bool
+        :type smn_notify: bool
         """
         self._smn_notify = smn_notify
 
@@ -462,7 +501,7 @@ class VaultGet:
         存储库容量阈值，已用容量占总容量达到此百分比即发送相关通知
 
         :param threshold: The threshold of this VaultGet.
-        :type: int
+        :type threshold: int
         """
         self._threshold = threshold
 
@@ -484,7 +523,7 @@ class VaultGet:
         更新时间,例如:\"2020-02-05T10:38:34.209782\"
 
         :param updated_at: The updated_at of this VaultGet.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 
@@ -506,7 +545,7 @@ class VaultGet:
         版本
 
         :param version: The version of this VaultGet.
-        :type: str
+        :type version: str
         """
         self._version = version
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateInstanceBy3rdRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateInstanceBy3rdRequest:
     }
 
     def __init__(self, instance_label=None, body=None):
-        """CreateInstanceBy3rdRequest - a model defined in huaweicloud sdk"""
+        """CreateInstanceBy3rdRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_label: 实例标签（不同的第三方需要和CloudIDE服务共同设定标签）。不传默认为classroom
+        :type instance_label: str
+        :param body: Body of the CreateInstanceBy3rdRequest
+        :type body: :class:`huaweicloudsdkcloudide.v2.InstanceEdgeParam`
+        """
         
         
 
@@ -63,7 +70,7 @@ class CreateInstanceBy3rdRequest:
         实例标签（不同的第三方需要和CloudIDE服务共同设定标签）。不传默认为classroom
 
         :param instance_label: The instance_label of this CreateInstanceBy3rdRequest.
-        :type: str
+        :type instance_label: str
         """
         self._instance_label = instance_label
 
@@ -73,7 +80,7 @@ class CreateInstanceBy3rdRequest:
 
 
         :return: The body of this CreateInstanceBy3rdRequest.
-        :rtype: InstanceEdgeParam
+        :rtype: :class:`huaweicloudsdkcloudide.v2.InstanceEdgeParam`
         """
         return self._body
 
@@ -83,7 +90,7 @@ class CreateInstanceBy3rdRequest:
 
 
         :param body: The body of this CreateInstanceBy3rdRequest.
-        :type: InstanceEdgeParam
+        :type body: :class:`huaweicloudsdkcloudide.v2.InstanceEdgeParam`
         """
         self._body = body
 

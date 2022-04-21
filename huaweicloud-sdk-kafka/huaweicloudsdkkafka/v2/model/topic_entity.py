@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TopicEntity:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class TopicEntity:
     }
 
     def __init__(self, policies_only=None, name=None, replication=None, partition=None, retention_time=None, sync_replication=None, sync_message_flush=None, external_configs=None, topic_type=None):
-        """TopicEntity - a model defined in huaweicloud sdk"""
+        """TopicEntity
+
+        The model defined in huaweicloud sdk
+
+        :param policies_only: 是否为默认策略。
+        :type policies_only: bool
+        :param name: topic名称。
+        :type name: str
+        :param replication: 副本数，配置数据的可靠性。
+        :type replication: int
+        :param partition: topic分区数，设置消费的并发数。
+        :type partition: int
+        :param retention_time: 消息老化时间。
+        :type retention_time: int
+        :param sync_replication: 是否开启同步复制，开启后，客户端生产消息时相应的也要设置acks&#x3D;-1，否则不生效，默认关闭。
+        :type sync_replication: bool
+        :param sync_message_flush: 是否使用同步落盘。默认值为false。同步落盘会导致性能降低。
+        :type sync_message_flush: bool
+        :param external_configs: 扩展配置。
+        :type external_configs: object
+        :param topic_type: topic类型。
+        :type topic_type: int
+        """
         
         
 
@@ -98,7 +119,7 @@ class TopicEntity:
         是否为默认策略。
 
         :param policies_only: The policies_only of this TopicEntity.
-        :type: bool
+        :type policies_only: bool
         """
         self._policies_only = policies_only
 
@@ -120,7 +141,7 @@ class TopicEntity:
         topic名称。
 
         :param name: The name of this TopicEntity.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -142,7 +163,7 @@ class TopicEntity:
         副本数，配置数据的可靠性。
 
         :param replication: The replication of this TopicEntity.
-        :type: int
+        :type replication: int
         """
         self._replication = replication
 
@@ -164,7 +185,7 @@ class TopicEntity:
         topic分区数，设置消费的并发数。
 
         :param partition: The partition of this TopicEntity.
-        :type: int
+        :type partition: int
         """
         self._partition = partition
 
@@ -186,7 +207,7 @@ class TopicEntity:
         消息老化时间。
 
         :param retention_time: The retention_time of this TopicEntity.
-        :type: int
+        :type retention_time: int
         """
         self._retention_time = retention_time
 
@@ -208,7 +229,7 @@ class TopicEntity:
         是否开启同步复制，开启后，客户端生产消息时相应的也要设置acks=-1，否则不生效，默认关闭。
 
         :param sync_replication: The sync_replication of this TopicEntity.
-        :type: bool
+        :type sync_replication: bool
         """
         self._sync_replication = sync_replication
 
@@ -230,7 +251,7 @@ class TopicEntity:
         是否使用同步落盘。默认值为false。同步落盘会导致性能降低。
 
         :param sync_message_flush: The sync_message_flush of this TopicEntity.
-        :type: bool
+        :type sync_message_flush: bool
         """
         self._sync_message_flush = sync_message_flush
 
@@ -252,7 +273,7 @@ class TopicEntity:
         扩展配置。
 
         :param external_configs: The external_configs of this TopicEntity.
-        :type: object
+        :type external_configs: object
         """
         self._external_configs = external_configs
 
@@ -274,7 +295,7 @@ class TopicEntity:
         topic类型。
 
         :param topic_type: The topic_type of this TopicEntity.
-        :type: int
+        :type topic_type: int
         """
         self._topic_type = topic_type
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Annotations:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Annotations:
     }
 
     def __init__(self, ring_controller=None, autonomy_edge_selector=None):
-        """Annotations - a model defined in huaweicloud sdk"""
+        """Annotations
+
+        The model defined in huaweicloud sdk
+
+        :param ring_controller: 生成ranktablefile。 该参数目前只支持赋值\&quot;ascend-1980\&quot;，指昇腾D910。
+        :type ring_controller: str
+        :param autonomy_edge_selector: 离线自愈功能配置字段，须填写调度的节点组id
+        :type autonomy_edge_selector: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class Annotations:
         生成ranktablefile。 该参数目前只支持赋值\"ascend-1980\"，指昇腾D910。
 
         :param ring_controller: The ring_controller of this Annotations.
-        :type: str
+        :type ring_controller: str
         """
         self._ring_controller = ring_controller
 
@@ -85,7 +92,7 @@ class Annotations:
         离线自愈功能配置字段，须填写调度的节点组id
 
         :param autonomy_edge_selector: The autonomy_edge_selector of this Annotations.
-        :type: str
+        :type autonomy_edge_selector: str
         """
         self._autonomy_edge_selector = autonomy_edge_selector
 

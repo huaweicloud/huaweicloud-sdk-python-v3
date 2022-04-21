@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CdmCreateClusterReqCluster:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class CdmCreateClusterReqCluster:
     }
 
     def __init__(self, schedule_boot_time=None, is_schedule_boot_off=None, instances=None, datastore=None, schedule_off_time=None, vpc_id=None, name=None, sys_tags=None, is_auto_off=None):
-        """CdmCreateClusterReqCluster - a model defined in huaweicloud sdk"""
+        """CdmCreateClusterReqCluster
+
+        The model defined in huaweicloud sdk
+
+        :param schedule_boot_time: 定时开机的时间，CDM集群会在每天这个时间开机
+        :type schedule_boot_time: str
+        :param is_schedule_boot_off: 选择是否启用定时开关机功能。定时开关机功能和自动关机功能不可同时开启
+        :type is_schedule_boot_off: bool
+        :param instances: 节点列表，请参见instances参数说明
+        :type instances: list[:class:`huaweicloudsdkcdm.v1.Instance`]
+        :param datastore: 
+        :type datastore: :class:`huaweicloudsdkcdm.v1.Datastore`
+        :param schedule_off_time: 定时关机的时间，定时关机时系统不会等待未完成的作业执行完成
+        :type schedule_off_time: str
+        :param vpc_id: 指定虚拟私有云ID，用于集群网络配置
+        :type vpc_id: str
+        :param name: 集群名称
+        :type name: str
+        :param sys_tags: 企业项目信息，请参见•sys_tags参数说明
+        :type sys_tags: list[:class:`huaweicloudsdkcdm.v1.SysTags`]
+        :param is_auto_off: 选择是否启用自动关机功能，自动关机功能和定时开关机功能不可同时开启。如果选择自动关机，则当集群中无作业运行且无定时作业时，等待15分钟后集群将自动关机来帮您节约成本
+        :type is_auto_off: bool
+        """
         
         
 
@@ -98,7 +119,7 @@ class CdmCreateClusterReqCluster:
         定时开机的时间，CDM集群会在每天这个时间开机
 
         :param schedule_boot_time: The schedule_boot_time of this CdmCreateClusterReqCluster.
-        :type: str
+        :type schedule_boot_time: str
         """
         self._schedule_boot_time = schedule_boot_time
 
@@ -120,7 +141,7 @@ class CdmCreateClusterReqCluster:
         选择是否启用定时开关机功能。定时开关机功能和自动关机功能不可同时开启
 
         :param is_schedule_boot_off: The is_schedule_boot_off of this CdmCreateClusterReqCluster.
-        :type: bool
+        :type is_schedule_boot_off: bool
         """
         self._is_schedule_boot_off = is_schedule_boot_off
 
@@ -131,7 +152,7 @@ class CdmCreateClusterReqCluster:
         节点列表，请参见instances参数说明
 
         :return: The instances of this CdmCreateClusterReqCluster.
-        :rtype: list[Instance]
+        :rtype: list[:class:`huaweicloudsdkcdm.v1.Instance`]
         """
         return self._instances
 
@@ -142,7 +163,7 @@ class CdmCreateClusterReqCluster:
         节点列表，请参见instances参数说明
 
         :param instances: The instances of this CdmCreateClusterReqCluster.
-        :type: list[Instance]
+        :type instances: list[:class:`huaweicloudsdkcdm.v1.Instance`]
         """
         self._instances = instances
 
@@ -152,7 +173,7 @@ class CdmCreateClusterReqCluster:
 
 
         :return: The datastore of this CdmCreateClusterReqCluster.
-        :rtype: Datastore
+        :rtype: :class:`huaweicloudsdkcdm.v1.Datastore`
         """
         return self._datastore
 
@@ -162,7 +183,7 @@ class CdmCreateClusterReqCluster:
 
 
         :param datastore: The datastore of this CdmCreateClusterReqCluster.
-        :type: Datastore
+        :type datastore: :class:`huaweicloudsdkcdm.v1.Datastore`
         """
         self._datastore = datastore
 
@@ -184,7 +205,7 @@ class CdmCreateClusterReqCluster:
         定时关机的时间，定时关机时系统不会等待未完成的作业执行完成
 
         :param schedule_off_time: The schedule_off_time of this CdmCreateClusterReqCluster.
-        :type: str
+        :type schedule_off_time: str
         """
         self._schedule_off_time = schedule_off_time
 
@@ -206,7 +227,7 @@ class CdmCreateClusterReqCluster:
         指定虚拟私有云ID，用于集群网络配置
 
         :param vpc_id: The vpc_id of this CdmCreateClusterReqCluster.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -228,7 +249,7 @@ class CdmCreateClusterReqCluster:
         集群名称
 
         :param name: The name of this CdmCreateClusterReqCluster.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -239,7 +260,7 @@ class CdmCreateClusterReqCluster:
         企业项目信息，请参见•sys_tags参数说明
 
         :return: The sys_tags of this CdmCreateClusterReqCluster.
-        :rtype: list[SysTags]
+        :rtype: list[:class:`huaweicloudsdkcdm.v1.SysTags`]
         """
         return self._sys_tags
 
@@ -250,7 +271,7 @@ class CdmCreateClusterReqCluster:
         企业项目信息，请参见•sys_tags参数说明
 
         :param sys_tags: The sys_tags of this CdmCreateClusterReqCluster.
-        :type: list[SysTags]
+        :type sys_tags: list[:class:`huaweicloudsdkcdm.v1.SysTags`]
         """
         self._sys_tags = sys_tags
 
@@ -272,7 +293,7 @@ class CdmCreateClusterReqCluster:
         选择是否启用自动关机功能，自动关机功能和定时开关机功能不可同时开启。如果选择自动关机，则当集群中无作业运行且无定时作业时，等待15分钟后集群将自动关机来帮您节约成本
 
         :param is_auto_off: The is_auto_off of this CdmCreateClusterReqCluster.
-        :type: bool
+        :type is_auto_off: bool
         """
         self._is_auto_off = is_auto_off
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListScalingConfigsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListScalingConfigsResponse(SdkResponse):
     }
 
     def __init__(self, total_number=None, start_number=None, limit=None, scaling_configurations=None):
-        """ListScalingConfigsResponse - a model defined in huaweicloud sdk"""
+        """ListScalingConfigsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total_number: 总记录数。
+        :type total_number: int
+        :param start_number: 查询的起始行号。
+        :type start_number: int
+        :param limit: 查询记录数。
+        :type limit: int
+        :param scaling_configurations: 伸缩配置列表
+        :type scaling_configurations: list[:class:`huaweicloudsdkas.v1.ScalingConfiguration`]
+        """
         
         super(ListScalingConfigsResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class ListScalingConfigsResponse(SdkResponse):
         总记录数。
 
         :param total_number: The total_number of this ListScalingConfigsResponse.
-        :type: int
+        :type total_number: int
         """
         self._total_number = total_number
 
@@ -95,7 +106,7 @@ class ListScalingConfigsResponse(SdkResponse):
         查询的起始行号。
 
         :param start_number: The start_number of this ListScalingConfigsResponse.
-        :type: int
+        :type start_number: int
         """
         self._start_number = start_number
 
@@ -117,7 +128,7 @@ class ListScalingConfigsResponse(SdkResponse):
         查询记录数。
 
         :param limit: The limit of this ListScalingConfigsResponse.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -128,7 +139,7 @@ class ListScalingConfigsResponse(SdkResponse):
         伸缩配置列表
 
         :return: The scaling_configurations of this ListScalingConfigsResponse.
-        :rtype: list[ScalingConfiguration]
+        :rtype: list[:class:`huaweicloudsdkas.v1.ScalingConfiguration`]
         """
         return self._scaling_configurations
 
@@ -139,7 +150,7 @@ class ListScalingConfigsResponse(SdkResponse):
         伸缩配置列表
 
         :param scaling_configurations: The scaling_configurations of this ListScalingConfigsResponse.
-        :type: list[ScalingConfiguration]
+        :type scaling_configurations: list[:class:`huaweicloudsdkas.v1.ScalingConfiguration`]
         """
         self._scaling_configurations = scaling_configurations
 

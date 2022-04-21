@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TextSimilarityRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class TextSimilarityRequest:
     }
 
     def __init__(self, text1=None, text2=None, lang=None):
-        """TextSimilarityRequest - a model defined in huaweicloud sdk"""
+        """TextSimilarityRequest
+
+        The model defined in huaweicloud sdk
+
+        :param text1: 待计算文本1，中文长度1~512，英文长度1~2000，文本编码为UTF-8。
+        :type text1: str
+        :param text2: 待计算文本2，中文长度1~512，英文长度1~2000，文本编码为UTF-8。
+        :type text2: str
+        :param lang: 支持的文本语言类型，目前支持中文（zh）和英文（en），默认为中文。
+        :type lang: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class TextSimilarityRequest:
         待计算文本1，中文长度1~512，英文长度1~2000，文本编码为UTF-8。
 
         :param text1: The text1 of this TextSimilarityRequest.
-        :type: str
+        :type text1: str
         """
         self._text1 = text1
 
@@ -88,7 +97,7 @@ class TextSimilarityRequest:
         待计算文本2，中文长度1~512，英文长度1~2000，文本编码为UTF-8。
 
         :param text2: The text2 of this TextSimilarityRequest.
-        :type: str
+        :type text2: str
         """
         self._text2 = text2
 
@@ -110,7 +119,7 @@ class TextSimilarityRequest:
         支持的文本语言类型，目前支持中文（zh）和英文（en），默认为中文。
 
         :param lang: The lang of this TextSimilarityRequest.
-        :type: str
+        :type lang: str
         """
         self._lang = lang
 

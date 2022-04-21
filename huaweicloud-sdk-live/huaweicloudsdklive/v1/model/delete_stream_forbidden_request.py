@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteStreamForbiddenRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class DeleteStreamForbiddenRequest:
     }
 
     def __init__(self, specify_project=None, domain=None, app_name=None, stream_name=None):
-        """DeleteStreamForbiddenRequest - a model defined in huaweicloud sdk"""
+        """DeleteStreamForbiddenRequest
+
+        The model defined in huaweicloud sdk
+
+        :param specify_project: op账号需要携带的特定project_id，当使用op账号时该值为所操作租户的project_id
+        :type specify_project: str
+        :param domain: 推流域名
+        :type domain: str
+        :param app_name: RTMP应用名称
+        :type app_name: str
+        :param stream_name: 流名称
+        :type stream_name: str
+        """
         
         
 
@@ -70,7 +81,7 @@ class DeleteStreamForbiddenRequest:
         op账号需要携带的特定project_id，当使用op账号时该值为所操作租户的project_id
 
         :param specify_project: The specify_project of this DeleteStreamForbiddenRequest.
-        :type: str
+        :type specify_project: str
         """
         self._specify_project = specify_project
 
@@ -92,7 +103,7 @@ class DeleteStreamForbiddenRequest:
         推流域名
 
         :param domain: The domain of this DeleteStreamForbiddenRequest.
-        :type: str
+        :type domain: str
         """
         self._domain = domain
 
@@ -114,7 +125,7 @@ class DeleteStreamForbiddenRequest:
         RTMP应用名称
 
         :param app_name: The app_name of this DeleteStreamForbiddenRequest.
-        :type: str
+        :type app_name: str
         """
         self._app_name = app_name
 
@@ -136,7 +147,7 @@ class DeleteStreamForbiddenRequest:
         流名称
 
         :param stream_name: The stream_name of this DeleteStreamForbiddenRequest.
-        :type: str
+        :type stream_name: str
         """
         self._stream_name = stream_name
 

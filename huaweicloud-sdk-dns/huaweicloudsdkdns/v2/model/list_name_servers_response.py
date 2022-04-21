@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListNameServersResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListNameServersResponse(SdkResponse):
     }
 
     def __init__(self, nameservers=None):
-        """ListNameServersResponse - a model defined in huaweicloud sdk"""
+        """ListNameServersResponse
+
+        The model defined in huaweicloud sdk
+
+        :param nameservers: 
+        :type nameservers: list[:class:`huaweicloudsdkdns.v2.NameServersResp`]
+        """
         
         super(ListNameServersResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class ListNameServersResponse(SdkResponse):
 
 
         :return: The nameservers of this ListNameServersResponse.
-        :rtype: list[NameServersResp]
+        :rtype: list[:class:`huaweicloudsdkdns.v2.NameServersResp`]
         """
         return self._nameservers
 
@@ -56,7 +61,7 @@ class ListNameServersResponse(SdkResponse):
 
 
         :param nameservers: The nameservers of this ListNameServersResponse.
-        :type: list[NameServersResp]
+        :type nameservers: list[:class:`huaweicloudsdkdns.v2.NameServersResp`]
         """
         self._nameservers = nameservers
 

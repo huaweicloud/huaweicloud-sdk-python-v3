@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListHostGroupResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListHostGroupResponse(SdkResponse):
     }
 
     def __init__(self, result=None, total=None):
-        """ListHostGroupResponse - a model defined in huaweicloud sdk"""
+        """ListHostGroupResponse
+
+        The model defined in huaweicloud sdk
+
+        :param result: 主机组列表
+        :type result: list[:class:`huaweicloudsdklts.v2.GetHostGroupInfo`]
+        :param total: 主机组信息总数量
+        :type total: int
+        """
         
         super(ListHostGroupResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListHostGroupResponse(SdkResponse):
         主机组列表
 
         :return: The result of this ListHostGroupResponse.
-        :rtype: list[GetHostGroupInfo]
+        :rtype: list[:class:`huaweicloudsdklts.v2.GetHostGroupInfo`]
         """
         return self._result
 
@@ -63,7 +70,7 @@ class ListHostGroupResponse(SdkResponse):
         主机组列表
 
         :param result: The result of this ListHostGroupResponse.
-        :type: list[GetHostGroupInfo]
+        :type result: list[:class:`huaweicloudsdklts.v2.GetHostGroupInfo`]
         """
         self._result = result
 
@@ -85,7 +92,7 @@ class ListHostGroupResponse(SdkResponse):
         主机组信息总数量
 
         :param total: The total of this ListHostGroupResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 

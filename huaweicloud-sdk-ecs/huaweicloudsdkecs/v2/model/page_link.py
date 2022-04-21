@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PageLink:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class PageLink:
     }
 
     def __init__(self, href=None, rel=None):
-        """PageLink - a model defined in huaweicloud sdk"""
+        """PageLink
+
+        The model defined in huaweicloud sdk
+
+        :param href: 相应资源的链接。
+        :type href: str
+        :param rel: 对应快捷链接。
+        :type rel: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class PageLink:
         相应资源的链接。
 
         :param href: The href of this PageLink.
-        :type: str
+        :type href: str
         """
         self._href = href
 
@@ -83,7 +90,7 @@ class PageLink:
         对应快捷链接。
 
         :param rel: The rel of this PageLink.
-        :type: str
+        :type rel: str
         """
         self._rel = rel
 

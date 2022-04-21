@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ModifyDbPwdResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ModifyDbPwdResp:
     }
 
     def __init__(self, id=None, status=None, end_point_type=None, error_code=None, error_msg=None):
-        """ModifyDbPwdResp - a model defined in huaweicloud sdk"""
+        """ModifyDbPwdResp
+
+        The model defined in huaweicloud sdk
+
+        :param id: 任务ID
+        :type id: str
+        :param status: 状态
+        :type status: str
+        :param end_point_type: 源库：so，目标库：ta
+        :type end_point_type: str
+        :param error_code: 错误码
+        :type error_code: str
+        :param error_msg: 错误信息
+        :type error_msg: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class ModifyDbPwdResp:
         任务ID
 
         :param id: The id of this ModifyDbPwdResp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -100,7 +113,7 @@ class ModifyDbPwdResp:
         状态
 
         :param status: The status of this ModifyDbPwdResp.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -122,7 +135,7 @@ class ModifyDbPwdResp:
         源库：so，目标库：ta
 
         :param end_point_type: The end_point_type of this ModifyDbPwdResp.
-        :type: str
+        :type end_point_type: str
         """
         self._end_point_type = end_point_type
 
@@ -144,7 +157,7 @@ class ModifyDbPwdResp:
         错误码
 
         :param error_code: The error_code of this ModifyDbPwdResp.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -166,7 +179,7 @@ class ModifyDbPwdResp:
         错误信息
 
         :param error_msg: The error_msg of this ModifyDbPwdResp.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 

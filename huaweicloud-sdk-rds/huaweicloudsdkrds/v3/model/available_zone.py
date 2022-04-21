@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AvailableZone:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AvailableZone:
     }
 
     def __init__(self, code=None, description=None):
-        """AvailableZone - a model defined in huaweicloud sdk"""
+        """AvailableZone
+
+        The model defined in huaweicloud sdk
+
+        :param code: 可用区编码。
+        :type code: str
+        :param description: 可用区描述。
+        :type description: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class AvailableZone:
         可用区编码。
 
         :param code: The code of this AvailableZone.
-        :type: str
+        :type code: str
         """
         self._code = code
 
@@ -83,7 +90,7 @@ class AvailableZone:
         可用区描述。
 
         :param description: The description of this AvailableZone.
-        :type: str
+        :type description: str
         """
         self._description = description
 

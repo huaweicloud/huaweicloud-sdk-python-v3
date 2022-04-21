@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateHookResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateHookResponse(SdkResponse):
     }
 
     def __init__(self, id=None, type=None, callback_url=None):
-        """CreateHookResponse - a model defined in huaweicloud sdk"""
+        """CreateHookResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: hook ID。
+        :type id: str
+        :param type: hook类型。
+        :type type: str
+        :param callback_url: 回滚URL。
+        :type callback_url: str
+        """
         
         super(CreateHookResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class CreateHookResponse(SdkResponse):
         hook ID。
 
         :param id: The id of this CreateHookResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -90,7 +99,7 @@ class CreateHookResponse(SdkResponse):
         hook类型。
 
         :param type: The type of this CreateHookResponse.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -112,7 +121,7 @@ class CreateHookResponse(SdkResponse):
         回滚URL。
 
         :param callback_url: The callback_url of this CreateHookResponse.
-        :type: str
+        :type callback_url: str
         """
         self._callback_url = callback_url
 

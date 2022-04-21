@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateSecretResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateSecretResponse(SdkResponse):
     }
 
     def __init__(self, auths=None):
-        """CreateSecretResponse - a model defined in huaweicloud sdk"""
+        """CreateSecretResponse
+
+        The model defined in huaweicloud sdk
+
+        :param auths: 认证信息
+        :type auths: dict(str, AuthInfo)
+        """
         
         super(CreateSecretResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class CreateSecretResponse(SdkResponse):
         认证信息
 
         :param auths: The auths of this CreateSecretResponse.
-        :type: dict(str, AuthInfo)
+        :type auths: dict(str, AuthInfo)
         """
         self._auths = auths
 

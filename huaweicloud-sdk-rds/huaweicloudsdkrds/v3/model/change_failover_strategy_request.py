@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ChangeFailoverStrategyRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ChangeFailoverStrategyRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """ChangeFailoverStrategyRequest - a model defined in huaweicloud sdk"""
+        """ChangeFailoverStrategyRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言
+        :type x_language: str
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param body: Body of the ChangeFailoverStrategyRequest
+        :type body: :class:`huaweicloudsdkrds.v3.FailoverStrategyRequest`
+        """
         
         
 
@@ -67,7 +76,7 @@ class ChangeFailoverStrategyRequest:
         语言
 
         :param x_language: The x_language of this ChangeFailoverStrategyRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -89,7 +98,7 @@ class ChangeFailoverStrategyRequest:
         实例ID。
 
         :param instance_id: The instance_id of this ChangeFailoverStrategyRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -99,7 +108,7 @@ class ChangeFailoverStrategyRequest:
 
 
         :return: The body of this ChangeFailoverStrategyRequest.
-        :rtype: FailoverStrategyRequest
+        :rtype: :class:`huaweicloudsdkrds.v3.FailoverStrategyRequest`
         """
         return self._body
 
@@ -109,7 +118,7 @@ class ChangeFailoverStrategyRequest:
 
 
         :param body: The body of this ChangeFailoverStrategyRequest.
-        :type: FailoverStrategyRequest
+        :type body: :class:`huaweicloudsdkrds.v3.FailoverStrategyRequest`
         """
         self._body = body
 

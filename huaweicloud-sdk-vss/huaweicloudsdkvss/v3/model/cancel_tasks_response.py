@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CancelTasksResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CancelTasksResponse(SdkResponse):
     }
 
     def __init__(self, info_code=None, info_description=None, task_id=None, task_status=None):
-        """CancelTasksResponse - a model defined in huaweicloud sdk"""
+        """CancelTasksResponse
+
+        The model defined in huaweicloud sdk
+
+        :param info_code: 状态码:   * success - 成功   * failure - 失败 
+        :type info_code: str
+        :param info_description: 返回的提示信息
+        :type info_description: str
+        :param task_id: 任务ID
+        :type task_id: str
+        :param task_status: 任务状态:   * running - 正在运行   * success - 成功   * canceled - 已取消   * waiting - 正在等待   * failure - 失败 
+        :type task_status: str
+        """
         
         super(CancelTasksResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class CancelTasksResponse(SdkResponse):
         状态码:   * success - 成功   * failure - 失败 
 
         :param info_code: The info_code of this CancelTasksResponse.
-        :type: str
+        :type info_code: str
         """
         self._info_code = info_code
 
@@ -95,7 +106,7 @@ class CancelTasksResponse(SdkResponse):
         返回的提示信息
 
         :param info_description: The info_description of this CancelTasksResponse.
-        :type: str
+        :type info_description: str
         """
         self._info_description = info_description
 
@@ -117,7 +128,7 @@ class CancelTasksResponse(SdkResponse):
         任务ID
 
         :param task_id: The task_id of this CancelTasksResponse.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -139,7 +150,7 @@ class CancelTasksResponse(SdkResponse):
         任务状态:   * running - 正在运行   * success - 成功   * canceled - 已取消   * waiting - 正在等待   * failure - 失败 
 
         :param task_status: The task_status of this CancelTasksResponse.
-        :type: str
+        :type task_status: str
         """
         self._task_status = task_status
 

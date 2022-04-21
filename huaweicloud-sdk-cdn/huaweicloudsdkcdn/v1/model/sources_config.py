@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SourcesConfig:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class SourcesConfig:
     }
 
     def __init__(self, origin_addr=None, origin_type=None, priority=None, obs_web_hosting_status=None, http_port=None, https_port=None, host_name=None):
-        """SourcesConfig - a model defined in huaweicloud sdk"""
+        """SourcesConfig
+
+        The model defined in huaweicloud sdk
+
+        :param origin_addr: 源站IP或者域名。
+        :type origin_addr: str
+        :param origin_type: 源站类型（\&quot;ipaddr\&quot;：\&quot;IP源站\&quot;，\&quot;domain\&quot;：\&quot;域名源站\&quot;，\&quot;obs_bucket\&quot;：\&quot;OBS Bucket源站\&quot;）。
+        :type origin_type: str
+        :param priority: 源站优先级（70：主，30：备）。
+        :type priority: int
+        :param obs_web_hosting_status: 是否开启Obs静态网站托管，源站类型为obs_bucket时传递(off：关闭，on：开启)。
+        :type obs_web_hosting_status: str
+        :param http_port: HTTP端口，默认80。
+        :type http_port: int
+        :param https_port: HTTPS端口，默认443。
+        :type https_port: int
+        :param host_name: 回源HOST，默认加速域名。
+        :type host_name: str
+        """
         
         
 
@@ -85,7 +102,7 @@ class SourcesConfig:
         源站IP或者域名。
 
         :param origin_addr: The origin_addr of this SourcesConfig.
-        :type: str
+        :type origin_addr: str
         """
         self._origin_addr = origin_addr
 
@@ -107,7 +124,7 @@ class SourcesConfig:
         源站类型（\"ipaddr\"：\"IP源站\"，\"domain\"：\"域名源站\"，\"obs_bucket\"：\"OBS Bucket源站\"）。
 
         :param origin_type: The origin_type of this SourcesConfig.
-        :type: str
+        :type origin_type: str
         """
         self._origin_type = origin_type
 
@@ -129,7 +146,7 @@ class SourcesConfig:
         源站优先级（70：主，30：备）。
 
         :param priority: The priority of this SourcesConfig.
-        :type: int
+        :type priority: int
         """
         self._priority = priority
 
@@ -151,7 +168,7 @@ class SourcesConfig:
         是否开启Obs静态网站托管，源站类型为obs_bucket时传递(off：关闭，on：开启)。
 
         :param obs_web_hosting_status: The obs_web_hosting_status of this SourcesConfig.
-        :type: str
+        :type obs_web_hosting_status: str
         """
         self._obs_web_hosting_status = obs_web_hosting_status
 
@@ -173,7 +190,7 @@ class SourcesConfig:
         HTTP端口，默认80。
 
         :param http_port: The http_port of this SourcesConfig.
-        :type: int
+        :type http_port: int
         """
         self._http_port = http_port
 
@@ -195,7 +212,7 @@ class SourcesConfig:
         HTTPS端口，默认443。
 
         :param https_port: The https_port of this SourcesConfig.
-        :type: int
+        :type https_port: int
         """
         self._https_port = https_port
 
@@ -217,7 +234,7 @@ class SourcesConfig:
         回源HOST，默认加速域名。
 
         :param host_name: The host_name of this SourcesConfig.
-        :type: str
+        :type host_name: str
         """
         self._host_name = host_name
 

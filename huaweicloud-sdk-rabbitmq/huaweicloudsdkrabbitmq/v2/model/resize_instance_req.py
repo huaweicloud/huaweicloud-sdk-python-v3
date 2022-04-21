@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResizeInstanceReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ResizeInstanceReq:
     }
 
     def __init__(self, new_spec_code=None, new_storage_space=None):
-        """ResizeInstanceReq - a model defined in huaweicloud sdk"""
+        """ResizeInstanceReq
+
+        The model defined in huaweicloud sdk
+
+        :param new_spec_code: 规格变更后的规格ID。
+        :type new_spec_code: str
+        :param new_storage_space: 规格变更后的消息存储空间，单位：GB。
+        :type new_storage_space: int
+        """
         
         
 
@@ -61,7 +68,7 @@ class ResizeInstanceReq:
         规格变更后的规格ID。
 
         :param new_spec_code: The new_spec_code of this ResizeInstanceReq.
-        :type: str
+        :type new_spec_code: str
         """
         self._new_spec_code = new_spec_code
 
@@ -83,7 +90,7 @@ class ResizeInstanceReq:
         规格变更后的消息存储空间，单位：GB。
 
         :param new_storage_space: The new_storage_space of this ResizeInstanceReq.
-        :type: int
+        :type new_storage_space: int
         """
         self._new_storage_space = new_storage_space
 

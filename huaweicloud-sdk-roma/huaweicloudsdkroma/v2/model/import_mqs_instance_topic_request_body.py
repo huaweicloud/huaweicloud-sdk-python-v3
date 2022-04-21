@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ImportMqsInstanceTopicRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ImportMqsInstanceTopicRequestBody:
     }
 
     def __init__(self, upload_file_name=None):
-        """ImportMqsInstanceTopicRequestBody - a model defined in huaweicloud sdk"""
+        """ImportMqsInstanceTopicRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param upload_file_name: 待导入的topic列表文件。
+        :type upload_file_name: :class:`huaweicloudsdkcore.http.formdata.FormFile`
+        """
         
         
 
@@ -46,7 +51,7 @@ class ImportMqsInstanceTopicRequestBody:
         待导入的topic列表文件。
 
         :return: The upload_file_name of this ImportMqsInstanceTopicRequestBody.
-        :rtype: file
+        :rtype: :class:`huaweicloudsdkcore.http.formdata.FormFile`
         """
         return self._upload_file_name
 
@@ -57,7 +62,7 @@ class ImportMqsInstanceTopicRequestBody:
         待导入的topic列表文件。
 
         :param upload_file_name: The upload_file_name of this ImportMqsInstanceTopicRequestBody.
-        :type: file
+        :type upload_file_name: :class:`huaweicloudsdkcore.http.formdata.FormFile`
         """
         self._upload_file_name = upload_file_name
 

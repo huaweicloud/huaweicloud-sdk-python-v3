@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StatisticsAPI:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -70,7 +69,53 @@ class StatisticsAPI:
     }
 
     def __init__(self, max_latency=None, avg_latency=None, req_count=None, req_count2xx=None, req_count4xx=None, req_count5xx=None, req_count_error=None, max_inner_latency=None, avg_inner_latency=None, max_backend_latency=None, avg_backend_latency=None, output_throughput=None, input_throughput=None, current_minute=None, cycle=None, api_id=None, group_id=None, provider=None, req_time=None, register_time=None, status=None):
-        """StatisticsAPI - a model defined in huaweicloud sdk"""
+        """StatisticsAPI
+
+        The model defined in huaweicloud sdk
+
+        :param max_latency: 最大延时
+        :type max_latency: int
+        :param avg_latency: 平均延时
+        :type avg_latency: float
+        :param req_count: 请求总次数
+        :type req_count: int
+        :param req_count2xx: 2xx响应码总次数
+        :type req_count2xx: int
+        :param req_count4xx: 4xx响应码总次数
+        :type req_count4xx: int
+        :param req_count5xx: 5xx响应码总次数
+        :type req_count5xx: int
+        :param req_count_error: 错误次数
+        :type req_count_error: int
+        :param max_inner_latency: 最大网关内部延时
+        :type max_inner_latency: int
+        :param avg_inner_latency: 平均网关内部延时
+        :type avg_inner_latency: float
+        :param max_backend_latency: 最大后端延时
+        :type max_backend_latency: int
+        :param avg_backend_latency: 平均后端延时
+        :type avg_backend_latency: float
+        :param output_throughput: 下行吞吐量（byte）
+        :type output_throughput: int
+        :param input_throughput: 上行吞吐量（byte）
+        :type input_throughput: int
+        :param current_minute: API访问的UTC时间戳
+        :type current_minute: int
+        :param cycle: 查询统计周期
+        :type cycle: str
+        :param api_id: API编号
+        :type api_id: str
+        :param group_id: API分组编号
+        :type group_id: str
+        :param provider: API拥有者
+        :type provider: str
+        :param req_time: API请求时间
+        :type req_time: datetime
+        :param register_time: 记录时间
+        :type register_time: datetime
+        :param status: 状态值： - 1：调度中，未上报CES - 2：已经成功上报CES  预留字段，暂不支持
+        :type status: int
+        """
         
         
 
@@ -158,7 +203,7 @@ class StatisticsAPI:
         最大延时
 
         :param max_latency: The max_latency of this StatisticsAPI.
-        :type: int
+        :type max_latency: int
         """
         self._max_latency = max_latency
 
@@ -180,7 +225,7 @@ class StatisticsAPI:
         平均延时
 
         :param avg_latency: The avg_latency of this StatisticsAPI.
-        :type: float
+        :type avg_latency: float
         """
         self._avg_latency = avg_latency
 
@@ -202,7 +247,7 @@ class StatisticsAPI:
         请求总次数
 
         :param req_count: The req_count of this StatisticsAPI.
-        :type: int
+        :type req_count: int
         """
         self._req_count = req_count
 
@@ -224,7 +269,7 @@ class StatisticsAPI:
         2xx响应码总次数
 
         :param req_count2xx: The req_count2xx of this StatisticsAPI.
-        :type: int
+        :type req_count2xx: int
         """
         self._req_count2xx = req_count2xx
 
@@ -246,7 +291,7 @@ class StatisticsAPI:
         4xx响应码总次数
 
         :param req_count4xx: The req_count4xx of this StatisticsAPI.
-        :type: int
+        :type req_count4xx: int
         """
         self._req_count4xx = req_count4xx
 
@@ -268,7 +313,7 @@ class StatisticsAPI:
         5xx响应码总次数
 
         :param req_count5xx: The req_count5xx of this StatisticsAPI.
-        :type: int
+        :type req_count5xx: int
         """
         self._req_count5xx = req_count5xx
 
@@ -290,7 +335,7 @@ class StatisticsAPI:
         错误次数
 
         :param req_count_error: The req_count_error of this StatisticsAPI.
-        :type: int
+        :type req_count_error: int
         """
         self._req_count_error = req_count_error
 
@@ -312,7 +357,7 @@ class StatisticsAPI:
         最大网关内部延时
 
         :param max_inner_latency: The max_inner_latency of this StatisticsAPI.
-        :type: int
+        :type max_inner_latency: int
         """
         self._max_inner_latency = max_inner_latency
 
@@ -334,7 +379,7 @@ class StatisticsAPI:
         平均网关内部延时
 
         :param avg_inner_latency: The avg_inner_latency of this StatisticsAPI.
-        :type: float
+        :type avg_inner_latency: float
         """
         self._avg_inner_latency = avg_inner_latency
 
@@ -356,7 +401,7 @@ class StatisticsAPI:
         最大后端延时
 
         :param max_backend_latency: The max_backend_latency of this StatisticsAPI.
-        :type: int
+        :type max_backend_latency: int
         """
         self._max_backend_latency = max_backend_latency
 
@@ -378,7 +423,7 @@ class StatisticsAPI:
         平均后端延时
 
         :param avg_backend_latency: The avg_backend_latency of this StatisticsAPI.
-        :type: float
+        :type avg_backend_latency: float
         """
         self._avg_backend_latency = avg_backend_latency
 
@@ -400,7 +445,7 @@ class StatisticsAPI:
         下行吞吐量（byte）
 
         :param output_throughput: The output_throughput of this StatisticsAPI.
-        :type: int
+        :type output_throughput: int
         """
         self._output_throughput = output_throughput
 
@@ -422,7 +467,7 @@ class StatisticsAPI:
         上行吞吐量（byte）
 
         :param input_throughput: The input_throughput of this StatisticsAPI.
-        :type: int
+        :type input_throughput: int
         """
         self._input_throughput = input_throughput
 
@@ -444,7 +489,7 @@ class StatisticsAPI:
         API访问的UTC时间戳
 
         :param current_minute: The current_minute of this StatisticsAPI.
-        :type: int
+        :type current_minute: int
         """
         self._current_minute = current_minute
 
@@ -466,7 +511,7 @@ class StatisticsAPI:
         查询统计周期
 
         :param cycle: The cycle of this StatisticsAPI.
-        :type: str
+        :type cycle: str
         """
         self._cycle = cycle
 
@@ -488,7 +533,7 @@ class StatisticsAPI:
         API编号
 
         :param api_id: The api_id of this StatisticsAPI.
-        :type: str
+        :type api_id: str
         """
         self._api_id = api_id
 
@@ -510,7 +555,7 @@ class StatisticsAPI:
         API分组编号
 
         :param group_id: The group_id of this StatisticsAPI.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -532,7 +577,7 @@ class StatisticsAPI:
         API拥有者
 
         :param provider: The provider of this StatisticsAPI.
-        :type: str
+        :type provider: str
         """
         self._provider = provider
 
@@ -554,7 +599,7 @@ class StatisticsAPI:
         API请求时间
 
         :param req_time: The req_time of this StatisticsAPI.
-        :type: datetime
+        :type req_time: datetime
         """
         self._req_time = req_time
 
@@ -576,7 +621,7 @@ class StatisticsAPI:
         记录时间
 
         :param register_time: The register_time of this StatisticsAPI.
-        :type: datetime
+        :type register_time: datetime
         """
         self._register_time = register_time
 
@@ -598,7 +643,7 @@ class StatisticsAPI:
         状态值： - 1：调度中，未上报CES - 2：已经成功上报CES  预留字段，暂不支持
 
         :param status: The status of this StatisticsAPI.
-        :type: int
+        :type status: int
         """
         self._status = status
 

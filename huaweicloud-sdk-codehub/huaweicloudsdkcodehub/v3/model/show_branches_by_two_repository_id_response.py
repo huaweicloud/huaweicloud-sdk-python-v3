@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowBranchesByTwoRepositoryIdResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowBranchesByTwoRepositoryIdResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """ShowBranchesByTwoRepositoryIdResponse - a model defined in huaweicloud sdk"""
+        """ShowBranchesByTwoRepositoryIdResponse
+
+        The model defined in huaweicloud sdk
+
+        :param error: 
+        :type error: :class:`huaweicloudsdkcodehub.v3.Error`
+        :param result: 
+        :type result: :class:`huaweicloudsdkcodehub.v3.TagList`
+        :param status: 响应状态
+        :type status: str
+        """
         
         super(ShowBranchesByTwoRepositoryIdResponse, self).__init__()
 
@@ -56,7 +65,7 @@ class ShowBranchesByTwoRepositoryIdResponse(SdkResponse):
 
 
         :return: The error of this ShowBranchesByTwoRepositoryIdResponse.
-        :rtype: Error
+        :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
         """
         return self._error
 
@@ -66,7 +75,7 @@ class ShowBranchesByTwoRepositoryIdResponse(SdkResponse):
 
 
         :param error: The error of this ShowBranchesByTwoRepositoryIdResponse.
-        :type: Error
+        :type error: :class:`huaweicloudsdkcodehub.v3.Error`
         """
         self._error = error
 
@@ -76,7 +85,7 @@ class ShowBranchesByTwoRepositoryIdResponse(SdkResponse):
 
 
         :return: The result of this ShowBranchesByTwoRepositoryIdResponse.
-        :rtype: TagList
+        :rtype: :class:`huaweicloudsdkcodehub.v3.TagList`
         """
         return self._result
 
@@ -86,7 +95,7 @@ class ShowBranchesByTwoRepositoryIdResponse(SdkResponse):
 
 
         :param result: The result of this ShowBranchesByTwoRepositoryIdResponse.
-        :type: TagList
+        :type result: :class:`huaweicloudsdkcodehub.v3.TagList`
         """
         self._result = result
 
@@ -108,7 +117,7 @@ class ShowBranchesByTwoRepositoryIdResponse(SdkResponse):
         响应状态
 
         :param status: The status of this ShowBranchesByTwoRepositoryIdResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 

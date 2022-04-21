@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BalanceTypeDeductSumV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class BalanceTypeDeductSumV2:
     }
 
     def __init__(self, balance_type=None, amount=None, bill_type=None):
-        """BalanceTypeDeductSumV2 - a model defined in huaweicloud sdk"""
+        """BalanceTypeDeductSumV2
+
+        The model defined in huaweicloud sdk
+
+        :param balance_type: 账户类型。 BALANCE_TYPE_DEBIT：现金BALANCE_TYPE_CREDIT：信用BALANCE_TYPE_BONUS：奖励BALANCE_TYPE_COUPON：代金券BALANCE_TYPE_RCASH_COUPON 现金券。BALANCE_TYPE_STORED_VALUE_CARD：储值卡消费
+        :type balance_type: str
+        :param amount: 金额。 对于billType&#x3D;1或者2的账单，该金额为负值。
+        :type amount: float
+        :param bill_type: 账单类型。 0：正常1：退订2：华为核销
+        :type bill_type: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class BalanceTypeDeductSumV2:
         账户类型。 BALANCE_TYPE_DEBIT：现金BALANCE_TYPE_CREDIT：信用BALANCE_TYPE_BONUS：奖励BALANCE_TYPE_COUPON：代金券BALANCE_TYPE_RCASH_COUPON 现金券。BALANCE_TYPE_STORED_VALUE_CARD：储值卡消费
 
         :param balance_type: The balance_type of this BalanceTypeDeductSumV2.
-        :type: str
+        :type balance_type: str
         """
         self._balance_type = balance_type
 
@@ -90,7 +99,7 @@ class BalanceTypeDeductSumV2:
         金额。 对于billType=1或者2的账单，该金额为负值。
 
         :param amount: The amount of this BalanceTypeDeductSumV2.
-        :type: float
+        :type amount: float
         """
         self._amount = amount
 
@@ -112,7 +121,7 @@ class BalanceTypeDeductSumV2:
         账单类型。 0：正常1：退订2：华为核销
 
         :param bill_type: The bill_type of this BalanceTypeDeductSumV2.
-        :type: str
+        :type bill_type: str
         """
         self._bill_type = bill_type
 

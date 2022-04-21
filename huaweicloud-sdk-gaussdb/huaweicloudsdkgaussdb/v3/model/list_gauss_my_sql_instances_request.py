@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListGaussMySqlInstancesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class ListGaussMySqlInstancesRequest:
     }
 
     def __init__(self, x_language=None, id=None, name=None, type=None, datastore_type=None, vpc_id=None, subnet_id=None, private_ip=None, offset=None, limit=None, tags=None):
-        """ListGaussMySqlInstancesRequest - a model defined in huaweicloud sdk"""
+        """ListGaussMySqlInstancesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言。
+        :type x_language: str
+        :param id: 实例ID。 “*”为系统保留字符，如果id是以 “*”起始，表示按照 “*”后面的值模糊匹配，否则，按照id精确匹配查询。不能只传入 “*”。
+        :type id: str
+        :param name: 实例名称。  “*”为系统保留字符，如果name是以 “*”起始，表示按照 “*”后面的值模糊匹配，否则，按照name精确匹配查询。不能只传入 “*”。
+        :type name: str
+        :param type: 按照实例类型查询。目前仅支持Cluster。
+        :type type: str
+        :param datastore_type: 数据库类型，现在只支持gaussdb-mysql。
+        :type datastore_type: str
+        :param vpc_id: 虚拟私有云ID。
+        :type vpc_id: str
+        :param subnet_id: 子网的网络ID信息。
+        :type subnet_id: str
+        :param private_ip: 读写内网IP。
+        :type private_ip: str
+        :param offset: 索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
+        :type offset: int
+        :param limit: 查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
+        :type limit: int
+        :param tags: 根据实例标签键值对进行查询。{key}表示标签键，{value}表示标签值。如果同时使用多个标签键值对进行查询，中间使用逗号分隔开，表示查询同时包含指定标签键值对的实例。key不能重复，key之间是与的关系。
+        :type tags: str
+        """
         
         
 
@@ -108,7 +133,7 @@ class ListGaussMySqlInstancesRequest:
         语言。
 
         :param x_language: The x_language of this ListGaussMySqlInstancesRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -130,7 +155,7 @@ class ListGaussMySqlInstancesRequest:
         实例ID。 “*”为系统保留字符，如果id是以 “*”起始，表示按照 “*”后面的值模糊匹配，否则，按照id精确匹配查询。不能只传入 “*”。
 
         :param id: The id of this ListGaussMySqlInstancesRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -152,7 +177,7 @@ class ListGaussMySqlInstancesRequest:
         实例名称。  “*”为系统保留字符，如果name是以 “*”起始，表示按照 “*”后面的值模糊匹配，否则，按照name精确匹配查询。不能只传入 “*”。
 
         :param name: The name of this ListGaussMySqlInstancesRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -174,7 +199,7 @@ class ListGaussMySqlInstancesRequest:
         按照实例类型查询。目前仅支持Cluster。
 
         :param type: The type of this ListGaussMySqlInstancesRequest.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -196,7 +221,7 @@ class ListGaussMySqlInstancesRequest:
         数据库类型，现在只支持gaussdb-mysql。
 
         :param datastore_type: The datastore_type of this ListGaussMySqlInstancesRequest.
-        :type: str
+        :type datastore_type: str
         """
         self._datastore_type = datastore_type
 
@@ -218,7 +243,7 @@ class ListGaussMySqlInstancesRequest:
         虚拟私有云ID。
 
         :param vpc_id: The vpc_id of this ListGaussMySqlInstancesRequest.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -240,7 +265,7 @@ class ListGaussMySqlInstancesRequest:
         子网的网络ID信息。
 
         :param subnet_id: The subnet_id of this ListGaussMySqlInstancesRequest.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -262,7 +287,7 @@ class ListGaussMySqlInstancesRequest:
         读写内网IP。
 
         :param private_ip: The private_ip of this ListGaussMySqlInstancesRequest.
-        :type: str
+        :type private_ip: str
         """
         self._private_ip = private_ip
 
@@ -284,7 +309,7 @@ class ListGaussMySqlInstancesRequest:
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
         :param offset: The offset of this ListGaussMySqlInstancesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -306,7 +331,7 @@ class ListGaussMySqlInstancesRequest:
         查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
 
         :param limit: The limit of this ListGaussMySqlInstancesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -328,7 +353,7 @@ class ListGaussMySqlInstancesRequest:
         根据实例标签键值对进行查询。{key}表示标签键，{value}表示标签值。如果同时使用多个标签键值对进行查询，中间使用逗号分隔开，表示查询同时包含指定标签键值对的实例。key不能重复，key之间是与的关系。
 
         :param tags: The tags of this ListGaussMySqlInstancesRequest.
-        :type: str
+        :type tags: str
         """
         self._tags = tags
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InsurancePolicyDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class InsurancePolicyDetail:
     }
 
     def __init__(self, words=None, location=None):
-        """InsurancePolicyDetail - a model defined in huaweicloud sdk"""
+        """InsurancePolicyDetail
+
+        The model defined in huaweicloud sdk
+
+        :param words: 对应识别出的文本内容
+        :type words: str
+        :param location: 对应识别出的四个顶点坐标 
+        :type location: list[list[int]]
+        """
         
         
 
@@ -63,7 +70,7 @@ class InsurancePolicyDetail:
         对应识别出的文本内容
 
         :param words: The words of this InsurancePolicyDetail.
-        :type: str
+        :type words: str
         """
         self._words = words
 
@@ -85,7 +92,7 @@ class InsurancePolicyDetail:
         对应识别出的四个顶点坐标 
 
         :param location: The location of this InsurancePolicyDetail.
-        :type: list[list[int]]
+        :type location: list[list[int]]
         """
         self._location = location
 

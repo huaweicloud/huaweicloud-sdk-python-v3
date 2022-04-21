@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListServicesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListServicesRequest:
     }
 
     def __init__(self, limit=None, offset=None, sorted=None, name=None, app=None, ief_instance_id=None):
-        """ListServicesRequest - a model defined in huaweicloud sdk"""
+        """ListServicesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 指定分页查询每页的行数，最大为100，默认值为10。
+        :type limit: int
+        :param offset: 指定要查询的偏移数量，默认为0。
+        :type offset: int
+        :param sorted: 响应中查询到的服务将按照指定的字段进行排序
+        :type sorted: str
+        :param name: 服务名称
+        :type name: str
+        :param app: 按照相关的应用查询服务
+        :type app: str
+        :param ief_instance_id: 铂金版实例ID
+        :type ief_instance_id: str
+        """
         
         
 
@@ -82,7 +97,7 @@ class ListServicesRequest:
         指定分页查询每页的行数，最大为100，默认值为10。
 
         :param limit: The limit of this ListServicesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -104,7 +119,7 @@ class ListServicesRequest:
         指定要查询的偏移数量，默认为0。
 
         :param offset: The offset of this ListServicesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -126,7 +141,7 @@ class ListServicesRequest:
         响应中查询到的服务将按照指定的字段进行排序
 
         :param sorted: The sorted of this ListServicesRequest.
-        :type: str
+        :type sorted: str
         """
         self._sorted = sorted
 
@@ -148,7 +163,7 @@ class ListServicesRequest:
         服务名称
 
         :param name: The name of this ListServicesRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -170,7 +185,7 @@ class ListServicesRequest:
         按照相关的应用查询服务
 
         :param app: The app of this ListServicesRequest.
-        :type: str
+        :type app: str
         """
         self._app = app
 
@@ -192,7 +207,7 @@ class ListServicesRequest:
         铂金版实例ID
 
         :param ief_instance_id: The ief_instance_id of this ListServicesRequest.
-        :type: str
+        :type ief_instance_id: str
         """
         self._ief_instance_id = ief_instance_id
 

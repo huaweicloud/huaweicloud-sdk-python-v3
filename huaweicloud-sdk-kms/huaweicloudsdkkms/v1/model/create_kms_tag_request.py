@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateKmsTagRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateKmsTagRequest:
     }
 
     def __init__(self, version_id=None, key_id=None, body=None):
-        """CreateKmsTagRequest - a model defined in huaweicloud sdk"""
+        """CreateKmsTagRequest
+
+        The model defined in huaweicloud sdk
+
+        :param version_id: API版本号
+        :type version_id: str
+        :param key_id: 密钥ID
+        :type key_id: str
+        :param body: Body of the CreateKmsTagRequest
+        :type body: :class:`huaweicloudsdkkms.v1.CreateKmsTagRequestBody`
+        """
         
         
 
@@ -66,7 +75,7 @@ class CreateKmsTagRequest:
         API版本号
 
         :param version_id: The version_id of this CreateKmsTagRequest.
-        :type: str
+        :type version_id: str
         """
         self._version_id = version_id
 
@@ -88,7 +97,7 @@ class CreateKmsTagRequest:
         密钥ID
 
         :param key_id: The key_id of this CreateKmsTagRequest.
-        :type: str
+        :type key_id: str
         """
         self._key_id = key_id
 
@@ -98,7 +107,7 @@ class CreateKmsTagRequest:
 
 
         :return: The body of this CreateKmsTagRequest.
-        :rtype: CreateKmsTagRequestBody
+        :rtype: :class:`huaweicloudsdkkms.v1.CreateKmsTagRequestBody`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class CreateKmsTagRequest:
 
 
         :param body: The body of this CreateKmsTagRequest.
-        :type: CreateKmsTagRequestBody
+        :type body: :class:`huaweicloudsdkkms.v1.CreateKmsTagRequestBody`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCasesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -60,7 +59,43 @@ class ListCasesRequest:
     }
 
     def __init__(self, search_key=None, label_id_list=None, app_key=None, incident_id=None, query_start_time=None, query_end_time=None, status=None, incident_status=None, x_customer_id=None, x_customer_name=None, group_id=None, offset=None, limit=None, x_site=None, x_language=None, x_time_zone=None):
-        """ListCasesRequest - a model defined in huaweicloud sdk"""
+        """ListCasesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param search_key: 关键字查询，支持多个空格隔开
+        :type search_key: list[str]
+        :param label_id_list: 标签列表，最多支持5个
+        :type label_id_list: list[str]
+        :param app_key: app关键字查询
+        :type app_key: str
+        :param incident_id: 工单id
+        :type incident_id: str
+        :param query_start_time: 查询开始时间
+        :type query_start_time: str
+        :param query_end_time: 查询结束时间
+        :type query_end_time: str
+        :param status: 状态 0：待受理 1：处理中 2：待确认结果 3：已完成 4：已撤销 12：无效 17： 待反馈
+        :type status: int
+        :param incident_status: 状态列表
+        :type incident_status: str
+        :param x_customer_id: 子用户id
+        :type x_customer_id: str
+        :param x_customer_name: 子用户名称
+        :type x_customer_name: str
+        :param group_id: 组id
+        :type group_id: str
+        :param offset: 查询偏移量
+        :type offset: int
+        :param limit: 查询限制数量
+        :type limit: int
+        :param x_site: 对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
+        :type x_site: int
+        :param x_language: 语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
+        :type x_language: str
+        :param x_time_zone: 环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
+        :type x_time_zone: str
+        """
         
         
 
@@ -133,7 +168,7 @@ class ListCasesRequest:
         关键字查询，支持多个空格隔开
 
         :param search_key: The search_key of this ListCasesRequest.
-        :type: list[str]
+        :type search_key: list[str]
         """
         self._search_key = search_key
 
@@ -155,7 +190,7 @@ class ListCasesRequest:
         标签列表，最多支持5个
 
         :param label_id_list: The label_id_list of this ListCasesRequest.
-        :type: list[str]
+        :type label_id_list: list[str]
         """
         self._label_id_list = label_id_list
 
@@ -177,7 +212,7 @@ class ListCasesRequest:
         app关键字查询
 
         :param app_key: The app_key of this ListCasesRequest.
-        :type: str
+        :type app_key: str
         """
         self._app_key = app_key
 
@@ -199,7 +234,7 @@ class ListCasesRequest:
         工单id
 
         :param incident_id: The incident_id of this ListCasesRequest.
-        :type: str
+        :type incident_id: str
         """
         self._incident_id = incident_id
 
@@ -221,7 +256,7 @@ class ListCasesRequest:
         查询开始时间
 
         :param query_start_time: The query_start_time of this ListCasesRequest.
-        :type: str
+        :type query_start_time: str
         """
         self._query_start_time = query_start_time
 
@@ -243,7 +278,7 @@ class ListCasesRequest:
         查询结束时间
 
         :param query_end_time: The query_end_time of this ListCasesRequest.
-        :type: str
+        :type query_end_time: str
         """
         self._query_end_time = query_end_time
 
@@ -265,7 +300,7 @@ class ListCasesRequest:
         状态 0：待受理 1：处理中 2：待确认结果 3：已完成 4：已撤销 12：无效 17： 待反馈
 
         :param status: The status of this ListCasesRequest.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -287,7 +322,7 @@ class ListCasesRequest:
         状态列表
 
         :param incident_status: The incident_status of this ListCasesRequest.
-        :type: str
+        :type incident_status: str
         """
         self._incident_status = incident_status
 
@@ -309,7 +344,7 @@ class ListCasesRequest:
         子用户id
 
         :param x_customer_id: The x_customer_id of this ListCasesRequest.
-        :type: str
+        :type x_customer_id: str
         """
         self._x_customer_id = x_customer_id
 
@@ -331,7 +366,7 @@ class ListCasesRequest:
         子用户名称
 
         :param x_customer_name: The x_customer_name of this ListCasesRequest.
-        :type: str
+        :type x_customer_name: str
         """
         self._x_customer_name = x_customer_name
 
@@ -353,7 +388,7 @@ class ListCasesRequest:
         组id
 
         :param group_id: The group_id of this ListCasesRequest.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -375,7 +410,7 @@ class ListCasesRequest:
         查询偏移量
 
         :param offset: The offset of this ListCasesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -397,7 +432,7 @@ class ListCasesRequest:
         查询限制数量
 
         :param limit: The limit of this ListCasesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -419,7 +454,7 @@ class ListCasesRequest:
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
         :param x_site: The x_site of this ListCasesRequest.
-        :type: int
+        :type x_site: int
         """
         self._x_site = x_site
 
@@ -441,7 +476,7 @@ class ListCasesRequest:
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
         :param x_language: The x_language of this ListCasesRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -463,7 +498,7 @@ class ListCasesRequest:
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 
         :param x_time_zone: The x_time_zone of this ListCasesRequest.
-        :type: str
+        :type x_time_zone: str
         """
         self._x_time_zone = x_time_zone
 

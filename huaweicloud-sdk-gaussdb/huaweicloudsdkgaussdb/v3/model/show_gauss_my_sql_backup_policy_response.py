@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowGaussMySqlBackupPolicyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowGaussMySqlBackupPolicyResponse(SdkResponse):
     }
 
     def __init__(self, backup_policy=None):
-        """ShowGaussMySqlBackupPolicyResponse - a model defined in huaweicloud sdk"""
+        """ShowGaussMySqlBackupPolicyResponse
+
+        The model defined in huaweicloud sdk
+
+        :param backup_policy: 
+        :type backup_policy: :class:`huaweicloudsdkgaussdb.v3.BackupPolicy`
+        """
         
         super(ShowGaussMySqlBackupPolicyResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class ShowGaussMySqlBackupPolicyResponse(SdkResponse):
 
 
         :return: The backup_policy of this ShowGaussMySqlBackupPolicyResponse.
-        :rtype: BackupPolicy
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.BackupPolicy`
         """
         return self._backup_policy
 
@@ -56,7 +61,7 @@ class ShowGaussMySqlBackupPolicyResponse(SdkResponse):
 
 
         :param backup_policy: The backup_policy of this ShowGaussMySqlBackupPolicyResponse.
-        :type: BackupPolicy
+        :type backup_policy: :class:`huaweicloudsdkgaussdb.v3.BackupPolicy`
         """
         self._backup_policy = backup_policy
 

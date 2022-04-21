@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListResourceUsageSummaryResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListResourceUsageSummaryResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, summary_usage_info_list=None):
-        """ListResourceUsageSummaryResponse - a model defined in huaweicloud sdk"""
+        """ListResourceUsageSummaryResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total_count: 总条数。
+        :type total_count: int
+        :param summary_usage_info_list: 统计值，按照资源ID维度返回的月度统计结果。具体请参见表3。  说明： 每月2日20点后可查询上月数据；若查询当月数据，则只返回资源ID。
+        :type summary_usage_info_list: list[:class:`huaweicloudsdkbss.v2.StatUsageSummaryInfo`]
+        """
         
         super(ListResourceUsageSummaryResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListResourceUsageSummaryResponse(SdkResponse):
         总条数。
 
         :param total_count: The total_count of this ListResourceUsageSummaryResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 
@@ -74,7 +81,7 @@ class ListResourceUsageSummaryResponse(SdkResponse):
         统计值，按照资源ID维度返回的月度统计结果。具体请参见表3。  说明： 每月2日20点后可查询上月数据；若查询当月数据，则只返回资源ID。
 
         :return: The summary_usage_info_list of this ListResourceUsageSummaryResponse.
-        :rtype: list[StatUsageSummaryInfo]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.StatUsageSummaryInfo`]
         """
         return self._summary_usage_info_list
 
@@ -85,7 +92,7 @@ class ListResourceUsageSummaryResponse(SdkResponse):
         统计值，按照资源ID维度返回的月度统计结果。具体请参见表3。  说明： 每月2日20点后可查询上月数据；若查询当月数据，则只返回资源ID。
 
         :param summary_usage_info_list: The summary_usage_info_list of this ListResourceUsageSummaryResponse.
-        :type: list[StatUsageSummaryInfo]
+        :type summary_usage_info_list: list[:class:`huaweicloudsdkbss.v2.StatUsageSummaryInfo`]
         """
         self._summary_usage_info_list = summary_usage_info_list
 

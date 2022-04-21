@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BootstrapScript:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class BootstrapScript:
     }
 
     def __init__(self, name=None, uri=None, parameters=None, nodes=None, active_master=None, fail_action=None, before_component_start=None, action_stages=None):
-        """BootstrapScript - a model defined in huaweicloud sdk"""
+        """BootstrapScript
+
+        The model defined in huaweicloud sdk
+
+        :param name: 引导操作脚本的名称，同一个集群的引导操作脚本名称不允许相同。  只能由数字、英文字符、空格、中划线和下划线组成，且不能以空格开头。  可输入的字符串长度为1～64个字符。
+        :type name: str
+        :param uri: 引导操作脚本的路径。设置为OBS桶的路径或虚拟机本地的路径。 - OBS桶的路径：直接手动输入脚本路径。例如输入MRS提供的公共样例脚本路径。示例：obs://bootstrap/presto/presto-install.sh，其中安装dualroles时，presto-install.sh脚本参数为dualroles, 安装worker时，presto-install.sh脚本参数为worker。根据Presto使用习惯，建议您在Active Master节点上安装dualroles，在Core节点上安装worker。 - 虚拟机本地的路径：用户需要输入正确的脚本路径。脚本所在的路径必须以‘/’开头，以.sh结尾。
+        :type uri: str
+        :param parameters: 引导操作脚本参数。
+        :type parameters: str
+        :param nodes: 引导操作脚本所执行的节点类型，包含Master、Core和Task三种类型。
+        :type nodes: list[str]
+        :param active_master: 引导操作脚本是否只运行在主Master节点上。 缺省值为false，表示引导操作脚本可运行在所有Master节点上。
+        :type active_master: bool
+        :param fail_action: 引导操作脚本执行失败后，是否继续执行后续脚本和创建集群。  缺省值为errorout,表示终止操作。   说明： 建议您在调试阶段设置为“继续”，无论此引导操作是否执行成功，则集群都能继续安装和启动。  枚举值： - continue：继续执行后续脚本。 - errorout：终止操作。
+        :type fail_action: str
+        :param before_component_start: 引导操作脚本执行的时间。目前支持“组件启动前”和“组件启动后”两种类型。 缺省值为false，表示引导操作脚本在组件启动后执行。
+        :type before_component_start: bool
+        :param action_stages: 选择引导操作脚本执行的时间。 - BEFORE_COMPONENT_FIRST_START: 组件首次启动后 - AFTER_COMPONENT_FIRST_START: 组件首次启动前 - BEFORE_SCALE_IN: 缩容前 - AFTER_SCALE_IN: 缩容后 - BEFORE_SCALE_OUT: 扩容前 - AFTER_SCALE_OUT: 扩容后
+        :type action_stages: list[str]
+        """
         
         
 
@@ -89,7 +108,7 @@ class BootstrapScript:
         引导操作脚本的名称，同一个集群的引导操作脚本名称不允许相同。  只能由数字、英文字符、空格、中划线和下划线组成，且不能以空格开头。  可输入的字符串长度为1～64个字符。
 
         :param name: The name of this BootstrapScript.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -111,7 +130,7 @@ class BootstrapScript:
         引导操作脚本的路径。设置为OBS桶的路径或虚拟机本地的路径。 - OBS桶的路径：直接手动输入脚本路径。例如输入MRS提供的公共样例脚本路径。示例：obs://bootstrap/presto/presto-install.sh，其中安装dualroles时，presto-install.sh脚本参数为dualroles, 安装worker时，presto-install.sh脚本参数为worker。根据Presto使用习惯，建议您在Active Master节点上安装dualroles，在Core节点上安装worker。 - 虚拟机本地的路径：用户需要输入正确的脚本路径。脚本所在的路径必须以‘/’开头，以.sh结尾。
 
         :param uri: The uri of this BootstrapScript.
-        :type: str
+        :type uri: str
         """
         self._uri = uri
 
@@ -133,7 +152,7 @@ class BootstrapScript:
         引导操作脚本参数。
 
         :param parameters: The parameters of this BootstrapScript.
-        :type: str
+        :type parameters: str
         """
         self._parameters = parameters
 
@@ -155,7 +174,7 @@ class BootstrapScript:
         引导操作脚本所执行的节点类型，包含Master、Core和Task三种类型。
 
         :param nodes: The nodes of this BootstrapScript.
-        :type: list[str]
+        :type nodes: list[str]
         """
         self._nodes = nodes
 
@@ -177,7 +196,7 @@ class BootstrapScript:
         引导操作脚本是否只运行在主Master节点上。 缺省值为false，表示引导操作脚本可运行在所有Master节点上。
 
         :param active_master: The active_master of this BootstrapScript.
-        :type: bool
+        :type active_master: bool
         """
         self._active_master = active_master
 
@@ -199,7 +218,7 @@ class BootstrapScript:
         引导操作脚本执行失败后，是否继续执行后续脚本和创建集群。  缺省值为errorout,表示终止操作。   说明： 建议您在调试阶段设置为“继续”，无论此引导操作是否执行成功，则集群都能继续安装和启动。  枚举值： - continue：继续执行后续脚本。 - errorout：终止操作。
 
         :param fail_action: The fail_action of this BootstrapScript.
-        :type: str
+        :type fail_action: str
         """
         self._fail_action = fail_action
 
@@ -221,7 +240,7 @@ class BootstrapScript:
         引导操作脚本执行的时间。目前支持“组件启动前”和“组件启动后”两种类型。 缺省值为false，表示引导操作脚本在组件启动后执行。
 
         :param before_component_start: The before_component_start of this BootstrapScript.
-        :type: bool
+        :type before_component_start: bool
         """
         self._before_component_start = before_component_start
 
@@ -243,7 +262,7 @@ class BootstrapScript:
         选择引导操作脚本执行的时间。 - BEFORE_COMPONENT_FIRST_START: 组件首次启动后 - AFTER_COMPONENT_FIRST_START: 组件首次启动前 - BEFORE_SCALE_IN: 缩容前 - AFTER_SCALE_IN: 缩容后 - BEFORE_SCALE_OUT: 扩容前 - AFTER_SCALE_OUT: 扩容后
 
         :param action_stages: The action_stages of this BootstrapScript.
-        :type: list[str]
+        :type action_stages: list[str]
         """
         self._action_stages = action_stages
 

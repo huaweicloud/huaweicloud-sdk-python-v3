@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UploadIssueImgRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UploadIssueImgRequest:
     }
 
     def __init__(self, project_id=None, body=None):
-        """UploadIssueImgRequest - a model defined in huaweicloud sdk"""
+        """UploadIssueImgRequest
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: devcloud的项目ID
+        :type project_id: str
+        :param body: Body of the UploadIssueImgRequest
+        :type body: :class:`huaweicloudsdkprojectman.v4.UploadIssueImgRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UploadIssueImgRequest:
         devcloud的项目ID
 
         :param project_id: The project_id of this UploadIssueImgRequest.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -72,7 +79,7 @@ class UploadIssueImgRequest:
 
 
         :return: The body of this UploadIssueImgRequest.
-        :rtype: UploadIssueImgRequestBody
+        :rtype: :class:`huaweicloudsdkprojectman.v4.UploadIssueImgRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UploadIssueImgRequest:
 
 
         :param body: The body of this UploadIssueImgRequest.
-        :type: UploadIssueImgRequestBody
+        :type body: :class:`huaweicloudsdkprojectman.v4.UploadIssueImgRequestBody`
         """
         self._body = body
 

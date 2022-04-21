@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ProjectV3:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ProjectV3:
     }
 
     def __init__(self, project_id=None, name=None, region_id=None, region_name=None, management_permission=None, is_stock=None):
-        """ProjectV3 - a model defined in huaweicloud sdk"""
+        """ProjectV3
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: 项目id
+        :type project_id: str
+        :param name: 项目名
+        :type name: str
+        :param region_id: 区域编码
+        :type region_id: str
+        :param region_name: 区域名称
+        :type region_name: str
+        :param management_permission: 管理权限
+        :type management_permission: bool
+        :param is_stock: 是否是存量项目
+        :type is_stock: bool
+        """
         
         
 
@@ -81,7 +96,7 @@ class ProjectV3:
         项目id
 
         :param project_id: The project_id of this ProjectV3.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -103,7 +118,7 @@ class ProjectV3:
         项目名
 
         :param name: The name of this ProjectV3.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -125,7 +140,7 @@ class ProjectV3:
         区域编码
 
         :param region_id: The region_id of this ProjectV3.
-        :type: str
+        :type region_id: str
         """
         self._region_id = region_id
 
@@ -147,7 +162,7 @@ class ProjectV3:
         区域名称
 
         :param region_name: The region_name of this ProjectV3.
-        :type: str
+        :type region_name: str
         """
         self._region_name = region_name
 
@@ -169,7 +184,7 @@ class ProjectV3:
         管理权限
 
         :param management_permission: The management_permission of this ProjectV3.
-        :type: bool
+        :type management_permission: bool
         """
         self._management_permission = management_permission
 
@@ -191,7 +206,7 @@ class ProjectV3:
         是否是存量项目
 
         :param is_stock: The is_stock of this ProjectV3.
-        :type: bool
+        :type is_stock: bool
         """
         self._is_stock = is_stock
 

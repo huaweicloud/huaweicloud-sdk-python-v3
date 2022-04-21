@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchDataTransformationReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchDataTransformationReq:
     }
 
     def __init__(self, jobs=None):
-        """BatchDataTransformationReq - a model defined in huaweicloud sdk"""
+        """BatchDataTransformationReq
+
+        The model defined in huaweicloud sdk
+
+        :param jobs: 批量数据加工规则请求列表
+        :type jobs: list[:class:`huaweicloudsdkdrs.v3.CheckDataTransformationReq`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class BatchDataTransformationReq:
         批量数据加工规则请求列表
 
         :return: The jobs of this BatchDataTransformationReq.
-        :rtype: list[CheckDataTransformationReq]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.CheckDataTransformationReq`]
         """
         return self._jobs
 
@@ -57,7 +62,7 @@ class BatchDataTransformationReq:
         批量数据加工规则请求列表
 
         :param jobs: The jobs of this BatchDataTransformationReq.
-        :type: list[CheckDataTransformationReq]
+        :type jobs: list[:class:`huaweicloudsdkdrs.v3.CheckDataTransformationReq`]
         """
         self._jobs = jobs
 

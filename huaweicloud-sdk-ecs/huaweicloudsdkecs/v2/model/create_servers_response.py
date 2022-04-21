@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateServersResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateServersResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, order_id=None, server_ids=None):
-        """CreateServersResponse - a model defined in huaweicloud sdk"""
+        """CreateServersResponse
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 提交任务成功后返回的任务ID，用户可以使用该ID对任务执行情况进行查询。
+        :type job_id: str
+        :param order_id: 订单号，创建包年包月的弹性云服务器时返回该参数。
+        :type order_id: str
+        :param server_ids: 云服务器ID列表。  通过云服务器ID查询云服务器详情 ，若返回404 可能云服务器还在创建或者已经创建失败。
+        :type server_ids: list[str]
+        """
         
         super(CreateServersResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class CreateServersResponse(SdkResponse):
         提交任务成功后返回的任务ID，用户可以使用该ID对任务执行情况进行查询。
 
         :param job_id: The job_id of this CreateServersResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -90,7 +99,7 @@ class CreateServersResponse(SdkResponse):
         订单号，创建包年包月的弹性云服务器时返回该参数。
 
         :param order_id: The order_id of this CreateServersResponse.
-        :type: str
+        :type order_id: str
         """
         self._order_id = order_id
 
@@ -112,7 +121,7 @@ class CreateServersResponse(SdkResponse):
         云服务器ID列表。  通过云服务器ID查询云服务器详情 ，若返回404 可能云服务器还在创建或者已经创建失败。
 
         :param server_ids: The server_ids of this CreateServersResponse.
-        :type: list[str]
+        :type server_ids: list[str]
         """
         self._server_ids = server_ids
 

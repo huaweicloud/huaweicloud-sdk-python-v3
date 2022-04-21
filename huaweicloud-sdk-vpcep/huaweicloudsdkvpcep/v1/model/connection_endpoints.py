@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ConnectionEndpoints:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ConnectionEndpoints:
     }
 
     def __init__(self, id=None, marker_id=None, created_at=None, updated_at=None, domain_id=None, status=None, error=None):
-        """ConnectionEndpoints - a model defined in huaweicloud sdk"""
+        """ConnectionEndpoints
+
+        The model defined in huaweicloud sdk
+
+        :param id: 终端节点的ID，唯一标识。
+        :type id: str
+        :param marker_id: 终端节点的报文标识。
+        :type marker_id: int
+        :param created_at: 终端节点的创建时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH: MM:SSZ
+        :type created_at: str
+        :param updated_at: 终端节点的更新时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH: MM:SSZ
+        :type updated_at: str
+        :param domain_id: 用户的Domain ID。
+        :type domain_id: str
+        :param status: 终端节点的连接状态。 ● pendingAcceptance：待接受 ● creating：创建中 ● accepted：已接受 ● rejected：已拒绝 ● failed：失败 ● deleting：删除中
+        :type status: str
+        :param error: 错误信息。  当终端节点服务状态异常，即“status”的值为“failed”时，会返回该字段。
+        :type error: list[:class:`huaweicloudsdkvpcep.v1.QueryError`]
+        """
         
         
 
@@ -88,7 +105,7 @@ class ConnectionEndpoints:
         终端节点的ID，唯一标识。
 
         :param id: The id of this ConnectionEndpoints.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -110,7 +127,7 @@ class ConnectionEndpoints:
         终端节点的报文标识。
 
         :param marker_id: The marker_id of this ConnectionEndpoints.
-        :type: int
+        :type marker_id: int
         """
         self._marker_id = marker_id
 
@@ -132,7 +149,7 @@ class ConnectionEndpoints:
         终端节点的创建时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH: MM:SSZ
 
         :param created_at: The created_at of this ConnectionEndpoints.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -154,7 +171,7 @@ class ConnectionEndpoints:
         终端节点的更新时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH: MM:SSZ
 
         :param updated_at: The updated_at of this ConnectionEndpoints.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 
@@ -176,7 +193,7 @@ class ConnectionEndpoints:
         用户的Domain ID。
 
         :param domain_id: The domain_id of this ConnectionEndpoints.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -198,7 +215,7 @@ class ConnectionEndpoints:
         终端节点的连接状态。 ● pendingAcceptance：待接受 ● creating：创建中 ● accepted：已接受 ● rejected：已拒绝 ● failed：失败 ● deleting：删除中
 
         :param status: The status of this ConnectionEndpoints.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -209,7 +226,7 @@ class ConnectionEndpoints:
         错误信息。  当终端节点服务状态异常，即“status”的值为“failed”时，会返回该字段。
 
         :return: The error of this ConnectionEndpoints.
-        :rtype: list[QueryError]
+        :rtype: list[:class:`huaweicloudsdkvpcep.v1.QueryError`]
         """
         return self._error
 
@@ -220,7 +237,7 @@ class ConnectionEndpoints:
         错误信息。  当终端节点服务状态异常，即“status”的值为“failed”时，会返回该字段。
 
         :param error: The error of this ConnectionEndpoints.
-        :type: list[QueryError]
+        :type error: list[:class:`huaweicloudsdkvpcep.v1.QueryError`]
         """
         self._error = error
 

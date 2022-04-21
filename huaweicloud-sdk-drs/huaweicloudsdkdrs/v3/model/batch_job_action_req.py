@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchJobActionReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class BatchJobActionReq:
     }
 
     def __init__(self, action=None, job_id=None, _property=None):
-        """BatchJobActionReq - a model defined in huaweicloud sdk"""
+        """BatchJobActionReq
+
+        The model defined in huaweicloud sdk
+
+        :param action: 执行操作
+        :type action: str
+        :param job_id: 任务ID（集群模式 取父任务的任务id）
+        :type job_id: str
+        :param _property: 操作对应的参数（API参考文档-批量测试连接-集群模式-property字段数据结构说明）[字段说明参考](https://support.huaweicloud.com/api-drs/zh-cn_topic_0295171516.html)
+        :type _property: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class BatchJobActionReq:
         执行操作
 
         :param action: The action of this BatchJobActionReq.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -87,7 +96,7 @@ class BatchJobActionReq:
         任务ID（集群模式 取父任务的任务id）
 
         :param job_id: The job_id of this BatchJobActionReq.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -109,7 +118,7 @@ class BatchJobActionReq:
         操作对应的参数（API参考文档-批量测试连接-集群模式-property字段数据结构说明）[字段说明参考](https://support.huaweicloud.com/api-drs/zh-cn_topic_0295171516.html)
 
         :param _property: The _property of this BatchJobActionReq.
-        :type: str
+        :type _property: str
         """
         self.__property = _property
 

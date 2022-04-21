@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateDispatchesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateDispatchesRequest:
     }
 
     def __init__(self, instance_id=None, task_id=None, body=None):
-        """CreateDispatchesRequest - a model defined in huaweicloud sdk"""
+        """CreateDispatchesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param task_id: 任务ID
+        :type task_id: str
+        :param body: Body of the CreateDispatchesRequest
+        :type body: :class:`huaweicloudsdkroma.v2.TaskDispatch`
+        """
         
         
 
@@ -66,7 +75,7 @@ class CreateDispatchesRequest:
         实例ID
 
         :param instance_id: The instance_id of this CreateDispatchesRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -88,7 +97,7 @@ class CreateDispatchesRequest:
         任务ID
 
         :param task_id: The task_id of this CreateDispatchesRequest.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -98,7 +107,7 @@ class CreateDispatchesRequest:
 
 
         :return: The body of this CreateDispatchesRequest.
-        :rtype: TaskDispatch
+        :rtype: :class:`huaweicloudsdkroma.v2.TaskDispatch`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class CreateDispatchesRequest:
 
 
         :param body: The body of this CreateDispatchesRequest.
-        :type: TaskDispatch
+        :type body: :class:`huaweicloudsdkroma.v2.TaskDispatch`
         """
         self._body = body
 

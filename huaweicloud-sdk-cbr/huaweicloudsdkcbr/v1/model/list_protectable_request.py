@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListProtectableRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ListProtectableRequest:
     }
 
     def __init__(self, limit=None, marker=None, name=None, offset=None, protectable_type=None, status=None, id=None, server_id=None):
-        """ListProtectableRequest - a model defined in huaweicloud sdk"""
+        """ListProtectableRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 每页显示的条目数量，每页最多支持50条
+        :type limit: int
+        :param marker: 上一次查询最后一条的ID
+        :type marker: str
+        :param name: 按名称过滤
+        :type name: str
+        :param offset: 偏移值
+        :type offset: int
+        :param protectable_type: 对象类型
+        :type protectable_type: str
+        :param status: 资源的状态，如available，error 等
+        :type status: str
+        :param id: 根据资源id过滤
+        :type id: str
+        :param server_id: 根据该id过滤属于该服务器的所有磁盘，支持企业多项目的用户才能传入此参数
+        :type server_id: str
+        """
         
         
 
@@ -92,7 +111,7 @@ class ListProtectableRequest:
         每页显示的条目数量，每页最多支持50条
 
         :param limit: The limit of this ListProtectableRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -114,7 +133,7 @@ class ListProtectableRequest:
         上一次查询最后一条的ID
 
         :param marker: The marker of this ListProtectableRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -136,7 +155,7 @@ class ListProtectableRequest:
         按名称过滤
 
         :param name: The name of this ListProtectableRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -158,7 +177,7 @@ class ListProtectableRequest:
         偏移值
 
         :param offset: The offset of this ListProtectableRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -180,7 +199,7 @@ class ListProtectableRequest:
         对象类型
 
         :param protectable_type: The protectable_type of this ListProtectableRequest.
-        :type: str
+        :type protectable_type: str
         """
         self._protectable_type = protectable_type
 
@@ -202,7 +221,7 @@ class ListProtectableRequest:
         资源的状态，如available，error 等
 
         :param status: The status of this ListProtectableRequest.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -224,7 +243,7 @@ class ListProtectableRequest:
         根据资源id过滤
 
         :param id: The id of this ListProtectableRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -246,7 +265,7 @@ class ListProtectableRequest:
         根据该id过滤属于该服务器的所有磁盘，支持企业多项目的用户才能传入此参数
 
         :param server_id: The server_id of this ListProtectableRequest.
-        :type: str
+        :type server_id: str
         """
         self._server_id = server_id
 

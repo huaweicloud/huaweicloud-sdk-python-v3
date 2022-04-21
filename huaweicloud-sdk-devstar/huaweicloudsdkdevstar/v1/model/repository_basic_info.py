@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RepositoryBasicInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class RepositoryBasicInfo:
     }
 
     def __init__(self, uuid=None, id=None, name=None, https_url=None, ssh_url=None, web_url=None):
-        """RepositoryBasicInfo - a model defined in huaweicloud sdk"""
+        """RepositoryBasicInfo
+
+        The model defined in huaweicloud sdk
+
+        :param uuid: 仓库uuid
+        :type uuid: str
+        :param id: 仓库id
+        :type id: str
+        :param name: 仓库名称
+        :type name: str
+        :param https_url: 仓库git的https下载地址
+        :type https_url: str
+        :param ssh_url: 仓库git的ssh下载地址
+        :type ssh_url: str
+        :param web_url: 仓库codehub内容浏览页面地址
+        :type web_url: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class RepositoryBasicInfo:
         仓库uuid
 
         :param uuid: The uuid of this RepositoryBasicInfo.
-        :type: str
+        :type uuid: str
         """
         self._uuid = uuid
 
@@ -105,7 +120,7 @@ class RepositoryBasicInfo:
         仓库id
 
         :param id: The id of this RepositoryBasicInfo.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -127,7 +142,7 @@ class RepositoryBasicInfo:
         仓库名称
 
         :param name: The name of this RepositoryBasicInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -149,7 +164,7 @@ class RepositoryBasicInfo:
         仓库git的https下载地址
 
         :param https_url: The https_url of this RepositoryBasicInfo.
-        :type: str
+        :type https_url: str
         """
         self._https_url = https_url
 
@@ -171,7 +186,7 @@ class RepositoryBasicInfo:
         仓库git的ssh下载地址
 
         :param ssh_url: The ssh_url of this RepositoryBasicInfo.
-        :type: str
+        :type ssh_url: str
         """
         self._ssh_url = ssh_url
 
@@ -193,7 +208,7 @@ class RepositoryBasicInfo:
         仓库codehub内容浏览页面地址
 
         :param web_url: The web_url of this RepositoryBasicInfo.
-        :type: str
+        :type web_url: str
         """
         self._web_url = web_url
 

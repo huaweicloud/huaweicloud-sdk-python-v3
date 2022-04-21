@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchDeleteSubnetTagsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class BatchDeleteSubnetTagsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchDeleteSubnetTagsResponse - a model defined in huaweicloud sdk"""
+        """BatchDeleteSubnetTagsResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(BatchDeleteSubnetTagsResponse, self).__init__()
         self.discriminator = None

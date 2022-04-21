@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchAttachSharableVolumesRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchAttachSharableVolumesRequestBody:
     }
 
     def __init__(self, serverinfo=None):
-        """BatchAttachSharableVolumesRequestBody - a model defined in huaweicloud sdk"""
+        """BatchAttachSharableVolumesRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param serverinfo: 共享磁盘需要挂载的弹性云服务器列表。
+        :type serverinfo: list[:class:`huaweicloudsdkecs.v2.BatchAttachSharableVolumesOption`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class BatchAttachSharableVolumesRequestBody:
         共享磁盘需要挂载的弹性云服务器列表。
 
         :return: The serverinfo of this BatchAttachSharableVolumesRequestBody.
-        :rtype: list[BatchAttachSharableVolumesOption]
+        :rtype: list[:class:`huaweicloudsdkecs.v2.BatchAttachSharableVolumesOption`]
         """
         return self._serverinfo
 
@@ -57,7 +62,7 @@ class BatchAttachSharableVolumesRequestBody:
         共享磁盘需要挂载的弹性云服务器列表。
 
         :param serverinfo: The serverinfo of this BatchAttachSharableVolumesRequestBody.
-        :type: list[BatchAttachSharableVolumesOption]
+        :type serverinfo: list[:class:`huaweicloudsdkecs.v2.BatchAttachSharableVolumesOption`]
         """
         self._serverinfo = serverinfo
 

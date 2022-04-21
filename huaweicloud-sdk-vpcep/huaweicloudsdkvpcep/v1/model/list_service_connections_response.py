@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListServiceConnectionsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListServiceConnectionsResponse(SdkResponse):
     }
 
     def __init__(self, connections=None, total_count=None):
-        """ListServiceConnectionsResponse - a model defined in huaweicloud sdk"""
+        """ListServiceConnectionsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param connections: 连接列表。
+        :type connections: list[:class:`huaweicloudsdkvpcep.v1.Connection`]
+        :param total_count: 满足查询条件的终端节点总条数，不受分页（即limit、offset参数）影响。
+        :type total_count: int
+        """
         
         super(ListServiceConnectionsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListServiceConnectionsResponse(SdkResponse):
         连接列表。
 
         :return: The connections of this ListServiceConnectionsResponse.
-        :rtype: list[Connection]
+        :rtype: list[:class:`huaweicloudsdkvpcep.v1.Connection`]
         """
         return self._connections
 
@@ -63,7 +70,7 @@ class ListServiceConnectionsResponse(SdkResponse):
         连接列表。
 
         :param connections: The connections of this ListServiceConnectionsResponse.
-        :type: list[Connection]
+        :type connections: list[:class:`huaweicloudsdkvpcep.v1.Connection`]
         """
         self._connections = connections
 
@@ -85,7 +92,7 @@ class ListServiceConnectionsResponse(SdkResponse):
         满足查询条件的终端节点总条数，不受分页（即limit、offset参数）影响。
 
         :param total_count: The total_count of this ListServiceConnectionsResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 

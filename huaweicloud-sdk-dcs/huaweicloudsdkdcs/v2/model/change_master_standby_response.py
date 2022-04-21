@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ChangeMasterStandbyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class ChangeMasterStandbyResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ChangeMasterStandbyResponse - a model defined in huaweicloud sdk"""
+        """ChangeMasterStandbyResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(ChangeMasterStandbyResponse, self).__init__()
         self.discriminator = None

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TagFieldsInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class TagFieldsInfo:
     }
 
     def __init__(self, field_name=None, type=None, content=None, is_analysis=None, index=None):
-        """TagFieldsInfo - a model defined in huaweicloud sdk"""
+        """TagFieldsInfo
+
+        The model defined in huaweicloud sdk
+
+        :param field_name: 字段名称
+        :type field_name: str
+        :param type: 字段类型
+        :type type: str
+        :param content: 内容
+        :type content: str
+        :param is_analysis: 是否解析
+        :type is_analysis: bool
+        :param index: 字段名称
+        :type index: int
+        """
         
         
 
@@ -78,7 +91,7 @@ class TagFieldsInfo:
         字段名称
 
         :param field_name: The field_name of this TagFieldsInfo.
-        :type: str
+        :type field_name: str
         """
         self._field_name = field_name
 
@@ -100,7 +113,7 @@ class TagFieldsInfo:
         字段类型
 
         :param type: The type of this TagFieldsInfo.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -122,7 +135,7 @@ class TagFieldsInfo:
         内容
 
         :param content: The content of this TagFieldsInfo.
-        :type: str
+        :type content: str
         """
         self._content = content
 
@@ -144,7 +157,7 @@ class TagFieldsInfo:
         是否解析
 
         :param is_analysis: The is_analysis of this TagFieldsInfo.
-        :type: bool
+        :type is_analysis: bool
         """
         self._is_analysis = is_analysis
 
@@ -166,7 +179,7 @@ class TagFieldsInfo:
         字段名称
 
         :param index: The index of this TagFieldsInfo.
-        :type: int
+        :type index: int
         """
         self._index = index
 

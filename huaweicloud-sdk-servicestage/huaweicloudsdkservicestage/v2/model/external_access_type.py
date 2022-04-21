@@ -12,11 +12,9 @@ class ExternalAccessType:
     """
     allowed enum values
     """
-
     AUTO_GENERATED = "AUTO_GENERATED"
     SPECIFIED = "SPECIFIED"
     IP_ADDR = "IP_ADDR"
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +32,11 @@ class ExternalAccessType:
     }
 
     def __init__(self):
-        """ExternalAccessType - a model defined in huaweicloud sdk"""
+        """ExternalAccessType
+
+        The model defined in huaweicloud sdk
+
+        """
         
         
         self.discriminator = None

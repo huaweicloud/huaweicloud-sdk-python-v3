@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExportLiveDataApiDefinitionsV2Response(SdkStreamResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class ExportLiveDataApiDefinitionsV2Response(SdkStreamResponse):
     }
 
     def __init__(self,response):
-        """ExportLiveDataApiDefinitionsV2Response - a model defined in huaweicloud sdk"""
+        """ExportLiveDataApiDefinitionsV2Response
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(ExportLiveDataApiDefinitionsV2Response, self).__init__(response)
         self.discriminator = None

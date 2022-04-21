@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Stack:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Stack:
     }
 
     def __init__(self, name=None, resources=None):
-        """Stack - a model defined in huaweicloud sdk"""
+        """Stack
+
+        The model defined in huaweicloud sdk
+
+        :param name: 边缘资源组名称。 取值范围：只能由中文字符、大小写英文字母、数字及中划线、下划线组成，且长度为[1-48]个字符。
+        :type name: str
+        :param resources: 边缘业务的堆栈，即为资源组。
+        :type resources: list[:class:`huaweicloudsdkiec.v1.Resource`]
+        """
         
         
 
@@ -61,7 +68,7 @@ class Stack:
         边缘资源组名称。 取值范围：只能由中文字符、大小写英文字母、数字及中划线、下划线组成，且长度为[1-48]个字符。
 
         :param name: The name of this Stack.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -72,7 +79,7 @@ class Stack:
         边缘业务的堆栈，即为资源组。
 
         :return: The resources of this Stack.
-        :rtype: list[Resource]
+        :rtype: list[:class:`huaweicloudsdkiec.v1.Resource`]
         """
         return self._resources
 
@@ -83,7 +90,7 @@ class Stack:
         边缘业务的堆栈，即为资源组。
 
         :param resources: The resources of this Stack.
-        :type: list[Resource]
+        :type resources: list[:class:`huaweicloudsdkiec.v1.Resource`]
         """
         self._resources = resources
 

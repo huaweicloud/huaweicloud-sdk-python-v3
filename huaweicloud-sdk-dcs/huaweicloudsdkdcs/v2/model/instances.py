@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Instances:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Instances:
     }
 
     def __init__(self, instance_id=None, instance_name=None):
-        """Instances - a model defined in huaweicloud sdk"""
+        """Instances
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 缓存实例ID。
+        :type instance_id: str
+        :param instance_name: 缓存实例名称。
+        :type instance_name: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class Instances:
         缓存实例ID。
 
         :param instance_id: The instance_id of this Instances.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -85,7 +92,7 @@ class Instances:
         缓存实例名称。
 
         :param instance_name: The instance_name of this Instances.
-        :type: str
+        :type instance_name: str
         """
         self._instance_name = instance_name
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NeutronListFirewallPoliciesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class NeutronListFirewallPoliciesResponse(SdkResponse):
     }
 
     def __init__(self, firewall_policies=None, firewall_policies_links=None):
-        """NeutronListFirewallPoliciesResponse - a model defined in huaweicloud sdk"""
+        """NeutronListFirewallPoliciesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param firewall_policies: firewall_policy对象列表
+        :type firewall_policies: list[:class:`huaweicloudsdkvpc.v2.NeutronFirewallPolicy`]
+        :param firewall_policies_links: 分页信息
+        :type firewall_policies_links: list[:class:`huaweicloudsdkvpc.v2.NeutronPageLink`]
+        """
         
         super(NeutronListFirewallPoliciesResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class NeutronListFirewallPoliciesResponse(SdkResponse):
         firewall_policy对象列表
 
         :return: The firewall_policies of this NeutronListFirewallPoliciesResponse.
-        :rtype: list[NeutronFirewallPolicy]
+        :rtype: list[:class:`huaweicloudsdkvpc.v2.NeutronFirewallPolicy`]
         """
         return self._firewall_policies
 
@@ -63,7 +70,7 @@ class NeutronListFirewallPoliciesResponse(SdkResponse):
         firewall_policy对象列表
 
         :param firewall_policies: The firewall_policies of this NeutronListFirewallPoliciesResponse.
-        :type: list[NeutronFirewallPolicy]
+        :type firewall_policies: list[:class:`huaweicloudsdkvpc.v2.NeutronFirewallPolicy`]
         """
         self._firewall_policies = firewall_policies
 
@@ -74,7 +81,7 @@ class NeutronListFirewallPoliciesResponse(SdkResponse):
         分页信息
 
         :return: The firewall_policies_links of this NeutronListFirewallPoliciesResponse.
-        :rtype: list[NeutronPageLink]
+        :rtype: list[:class:`huaweicloudsdkvpc.v2.NeutronPageLink`]
         """
         return self._firewall_policies_links
 
@@ -85,7 +92,7 @@ class NeutronListFirewallPoliciesResponse(SdkResponse):
         分页信息
 
         :param firewall_policies_links: The firewall_policies_links of this NeutronListFirewallPoliciesResponse.
-        :type: list[NeutronPageLink]
+        :type firewall_policies_links: list[:class:`huaweicloudsdkvpc.v2.NeutronPageLink`]
         """
         self._firewall_policies_links = firewall_policies_links
 

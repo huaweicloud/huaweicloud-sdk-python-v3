@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VariableDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class VariableDetail:
     }
 
     def __init__(self, file_size=None, id=None, is_quoted=None, name=None, variable=None, variable_type=None):
-        """VariableDetail - a model defined in huaweicloud sdk"""
+        """VariableDetail
+
+        The model defined in huaweicloud sdk
+
+        :param file_size: file_size
+        :type file_size: int
+        :param id: id
+        :type id: int
+        :param is_quoted: 是否被引用
+        :type is_quoted: bool
+        :param name: name
+        :type name: str
+        :param variable: variable
+        :type variable: list[object]
+        :param variable_type: variable_type
+        :type variable_type: int
+        """
         
         
 
@@ -83,7 +98,7 @@ class VariableDetail:
         file_size
 
         :param file_size: The file_size of this VariableDetail.
-        :type: int
+        :type file_size: int
         """
         self._file_size = file_size
 
@@ -105,7 +120,7 @@ class VariableDetail:
         id
 
         :param id: The id of this VariableDetail.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -127,7 +142,7 @@ class VariableDetail:
         是否被引用
 
         :param is_quoted: The is_quoted of this VariableDetail.
-        :type: bool
+        :type is_quoted: bool
         """
         self._is_quoted = is_quoted
 
@@ -149,7 +164,7 @@ class VariableDetail:
         name
 
         :param name: The name of this VariableDetail.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -171,7 +186,7 @@ class VariableDetail:
         variable
 
         :param variable: The variable of this VariableDetail.
-        :type: list[object]
+        :type variable: list[object]
         """
         self._variable = variable
 
@@ -193,7 +208,7 @@ class VariableDetail:
         variable_type
 
         :param variable_type: The variable_type of this VariableDetail.
-        :type: int
+        :type variable_type: int
         """
         self._variable_type = variable_type
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListChartsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListChartsRequest:
     }
 
     def __init__(self, log_group_id=None, log_stream_id=None, offset=None, limit=None):
-        """ListChartsRequest - a model defined in huaweicloud sdk"""
+        """ListChartsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param log_group_id: 日志组ID
+        :type log_group_id: str
+        :param log_stream_id: 日志流ID
+        :type log_stream_id: str
+        :param offset: 查询游标，初始传入0，后续从上一次的返回值中获取
+        :type offset: int
+        :param limit: 每页数据量，最大值为100
+        :type limit: int
+        """
         
         
 
@@ -71,7 +82,7 @@ class ListChartsRequest:
         日志组ID
 
         :param log_group_id: The log_group_id of this ListChartsRequest.
-        :type: str
+        :type log_group_id: str
         """
         self._log_group_id = log_group_id
 
@@ -93,7 +104,7 @@ class ListChartsRequest:
         日志流ID
 
         :param log_stream_id: The log_stream_id of this ListChartsRequest.
-        :type: str
+        :type log_stream_id: str
         """
         self._log_stream_id = log_stream_id
 
@@ -115,7 +126,7 @@ class ListChartsRequest:
         查询游标，初始传入0，后续从上一次的返回值中获取
 
         :param offset: The offset of this ListChartsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -137,7 +148,7 @@ class ListChartsRequest:
         每页数据量，最大值为100
 
         :param limit: The limit of this ListChartsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

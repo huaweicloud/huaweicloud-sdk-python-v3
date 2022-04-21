@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateGaussMySqlInstanceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateGaussMySqlInstanceResponse(SdkResponse):
     }
 
     def __init__(self, instance=None, job_id=None, order_id=None):
-        """CreateGaussMySqlInstanceResponse - a model defined in huaweicloud sdk"""
+        """CreateGaussMySqlInstanceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param instance: 
+        :type instance: :class:`huaweicloudsdkgaussdb.v3.MysqlInstanceResponse`
+        :param job_id: 实例创建的任务id。  仅创建按需实例时会返回该参数。
+        :type job_id: str
+        :param order_id: 订单号，创建包年包月时返回该参数。
+        :type order_id: str
+        """
         
         super(CreateGaussMySqlInstanceResponse, self).__init__()
 
@@ -56,7 +65,7 @@ class CreateGaussMySqlInstanceResponse(SdkResponse):
 
 
         :return: The instance of this CreateGaussMySqlInstanceResponse.
-        :rtype: MysqlInstanceResponse
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlInstanceResponse`
         """
         return self._instance
 
@@ -66,7 +75,7 @@ class CreateGaussMySqlInstanceResponse(SdkResponse):
 
 
         :param instance: The instance of this CreateGaussMySqlInstanceResponse.
-        :type: MysqlInstanceResponse
+        :type instance: :class:`huaweicloudsdkgaussdb.v3.MysqlInstanceResponse`
         """
         self._instance = instance
 
@@ -88,7 +97,7 @@ class CreateGaussMySqlInstanceResponse(SdkResponse):
         实例创建的任务id。  仅创建按需实例时会返回该参数。
 
         :param job_id: The job_id of this CreateGaussMySqlInstanceResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -110,7 +119,7 @@ class CreateGaussMySqlInstanceResponse(SdkResponse):
         订单号，创建包年包月时返回该参数。
 
         :param order_id: The order_id of this CreateGaussMySqlInstanceResponse.
-        :type: str
+        :type order_id: str
         """
         self._order_id = order_id
 

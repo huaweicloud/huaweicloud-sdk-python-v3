@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListScalingTagInfosByResourceIdResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListScalingTagInfosByResourceIdResponse(SdkResponse):
     }
 
     def __init__(self, tags=None, sys_tags=None):
-        """ListScalingTagInfosByResourceIdResponse - a model defined in huaweicloud sdk"""
+        """ListScalingTagInfosByResourceIdResponse
+
+        The model defined in huaweicloud sdk
+
+        :param tags: 资源标签列表。
+        :type tags: list[:class:`huaweicloudsdkas.v1.TagsSingleValue`]
+        :param sys_tags: 系统资源标签列表。
+        :type sys_tags: list[:class:`huaweicloudsdkas.v1.TagsSingleValue`]
+        """
         
         super(ListScalingTagInfosByResourceIdResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListScalingTagInfosByResourceIdResponse(SdkResponse):
         资源标签列表。
 
         :return: The tags of this ListScalingTagInfosByResourceIdResponse.
-        :rtype: list[TagsSingleValue]
+        :rtype: list[:class:`huaweicloudsdkas.v1.TagsSingleValue`]
         """
         return self._tags
 
@@ -63,7 +70,7 @@ class ListScalingTagInfosByResourceIdResponse(SdkResponse):
         资源标签列表。
 
         :param tags: The tags of this ListScalingTagInfosByResourceIdResponse.
-        :type: list[TagsSingleValue]
+        :type tags: list[:class:`huaweicloudsdkas.v1.TagsSingleValue`]
         """
         self._tags = tags
 
@@ -74,7 +81,7 @@ class ListScalingTagInfosByResourceIdResponse(SdkResponse):
         系统资源标签列表。
 
         :return: The sys_tags of this ListScalingTagInfosByResourceIdResponse.
-        :rtype: list[TagsSingleValue]
+        :rtype: list[:class:`huaweicloudsdkas.v1.TagsSingleValue`]
         """
         return self._sys_tags
 
@@ -85,7 +92,7 @@ class ListScalingTagInfosByResourceIdResponse(SdkResponse):
         系统资源标签列表。
 
         :param sys_tags: The sys_tags of this ListScalingTagInfosByResourceIdResponse.
-        :type: list[TagsSingleValue]
+        :type sys_tags: list[:class:`huaweicloudsdkas.v1.TagsSingleValue`]
         """
         self._sys_tags = sys_tags
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ModifyDomainConfigRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ModifyDomainConfigRequestBody:
     }
 
     def __init__(self, configs=None):
-        """ModifyDomainConfigRequestBody - a model defined in huaweicloud sdk"""
+        """ModifyDomainConfigRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param configs: 
+        :type configs: :class:`huaweicloudsdkcdn.v1.Configs`
+        """
         
         
 
@@ -46,7 +51,7 @@ class ModifyDomainConfigRequestBody:
 
 
         :return: The configs of this ModifyDomainConfigRequestBody.
-        :rtype: Configs
+        :rtype: :class:`huaweicloudsdkcdn.v1.Configs`
         """
         return self._configs
 
@@ -56,7 +61,7 @@ class ModifyDomainConfigRequestBody:
 
 
         :param configs: The configs of this ModifyDomainConfigRequestBody.
-        :type: Configs
+        :type configs: :class:`huaweicloudsdkcdn.v1.Configs`
         """
         self._configs = configs
 

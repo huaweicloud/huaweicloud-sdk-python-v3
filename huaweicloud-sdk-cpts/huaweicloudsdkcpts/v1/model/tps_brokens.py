@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TpsBrokens:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class TpsBrokens:
     }
 
     def __init__(self, average=None, tps=None):
-        """TpsBrokens - a model defined in huaweicloud sdk"""
+        """TpsBrokens
+
+        The model defined in huaweicloud sdk
+
+        :param average: 平均响应时间
+        :type average: list[float]
+        :param tps: tps
+        :type tps: list[float]
+        """
         
         
 
@@ -63,7 +70,7 @@ class TpsBrokens:
         平均响应时间
 
         :param average: The average of this TpsBrokens.
-        :type: list[float]
+        :type average: list[float]
         """
         self._average = average
 
@@ -85,7 +92,7 @@ class TpsBrokens:
         tps
 
         :param tps: The tps of this TpsBrokens.
-        :type: list[float]
+        :type tps: list[float]
         """
         self._tps = tps
 

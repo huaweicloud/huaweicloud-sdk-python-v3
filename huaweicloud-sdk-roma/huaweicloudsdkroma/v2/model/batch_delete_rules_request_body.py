@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchDeleteRulesRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchDeleteRulesRequestBody:
     }
 
     def __init__(self, resources=None):
-        """BatchDeleteRulesRequestBody - a model defined in huaweicloud sdk"""
+        """BatchDeleteRulesRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param resources: 规则ID列表，自动向下取整
+        :type resources: list[int]
+        """
         
         
 
@@ -57,7 +62,7 @@ class BatchDeleteRulesRequestBody:
         规则ID列表，自动向下取整
 
         :param resources: The resources of this BatchDeleteRulesRequestBody.
-        :type: list[int]
+        :type resources: list[int]
         """
         self._resources = resources
 

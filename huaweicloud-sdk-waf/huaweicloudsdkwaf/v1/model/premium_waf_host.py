@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PremiumWafHost:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -68,7 +67,51 @@ class PremiumWafHost:
     }
 
     def __init__(self, id=None, policyid=None, hostname=None, domainid=None, project_id=None, access_code=None, protocol=None, server=None, certificateid=None, certificatename=None, tls=None, cipher=None, proxy=None, locked=None, protect_status=None, access_status=None, timestamp=None, block_page=None, extend=None, traffic_mark=None):
-        """PremiumWafHost - a model defined in huaweicloud sdk"""
+        """PremiumWafHost
+
+        The model defined in huaweicloud sdk
+
+        :param id: 域名id
+        :type id: str
+        :param policyid: 防护域名初始绑定的策略ID,可以通过策略名称调用查询防护策略列表（ListPolicy）接口查询到对应的策略id
+        :type policyid: str
+        :param hostname: 创建的云模式防护域名
+        :type hostname: str
+        :param domainid: 用户Domain ID
+        :type domainid: str
+        :param project_id: 用户的project_id
+        :type project_id: str
+        :param access_code: cname前缀
+        :type access_code: str
+        :param protocol: http协议类型
+        :type protocol: str
+        :param server: 源站信息
+        :type server: list[:class:`huaweicloudsdkwaf.v1.PremiumWafServer`]
+        :param certificateid: 证书id，通过查询证书列表接口（ListCertificates）接口获取证书id   - 对外协议为HTTP时不需要填写   - 对外协议HTTPS时为必填参数
+        :type certificateid: str
+        :param certificatename: 证书名   - 对外协议为HTTP时不需要填写   - 对外协议HTTPS时为必填参数
+        :type certificatename: str
+        :param tls: 支持最低的TLS版本（TLS v1.0/TLS v1.1/TLS v1.2）,默认为TLS v1.0版本
+        :type tls: str
+        :param cipher: 加密套件（cipher_1，cipher_2，cipher_3，cipher_4，cipher_default）：  cipher_1： 加密算法为ECDHE-ECDSA-AES256-GCM-SHA384:HIGH:!MEDIUM:!LOW:!aNULL:!eNULL:!DES:!MD5:!PSK:!RC4:!kRSA:!SRP:!3DES:!DSS:!EXP:!CAMELLIA:@STRENGTH   cipher_2：加密算法为EECDH+AESGCM:EDH+AESGCM    cipher_3：加密算法为ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH    cipher_4：加密算法为ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!EDH    cipher_default： 加密算法为ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH:!AESGCM
+        :type cipher: str
+        :param proxy: 是否开启了代理
+        :type proxy: bool
+        :param locked: 锁定状态
+        :type locked: int
+        :param protect_status: 域名防护状态：  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
+        :type protect_status: int
+        :param access_status: 接入状态
+        :type access_status: int
+        :param timestamp: 创建防护域名的时间
+        :type timestamp: int
+        :param block_page: 
+        :type block_page: :class:`huaweicloudsdkwaf.v1.BlockPage`
+        :param extend: 可扩展属性
+        :type extend: dict(str, str)
+        :param traffic_mark: 
+        :type traffic_mark: :class:`huaweicloudsdkwaf.v1.TrafficMark`
+        """
         
         
 
@@ -153,7 +196,7 @@ class PremiumWafHost:
         域名id
 
         :param id: The id of this PremiumWafHost.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -175,7 +218,7 @@ class PremiumWafHost:
         防护域名初始绑定的策略ID,可以通过策略名称调用查询防护策略列表（ListPolicy）接口查询到对应的策略id
 
         :param policyid: The policyid of this PremiumWafHost.
-        :type: str
+        :type policyid: str
         """
         self._policyid = policyid
 
@@ -197,7 +240,7 @@ class PremiumWafHost:
         创建的云模式防护域名
 
         :param hostname: The hostname of this PremiumWafHost.
-        :type: str
+        :type hostname: str
         """
         self._hostname = hostname
 
@@ -219,7 +262,7 @@ class PremiumWafHost:
         用户Domain ID
 
         :param domainid: The domainid of this PremiumWafHost.
-        :type: str
+        :type domainid: str
         """
         self._domainid = domainid
 
@@ -241,7 +284,7 @@ class PremiumWafHost:
         用户的project_id
 
         :param project_id: The project_id of this PremiumWafHost.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -263,7 +306,7 @@ class PremiumWafHost:
         cname前缀
 
         :param access_code: The access_code of this PremiumWafHost.
-        :type: str
+        :type access_code: str
         """
         self._access_code = access_code
 
@@ -285,7 +328,7 @@ class PremiumWafHost:
         http协议类型
 
         :param protocol: The protocol of this PremiumWafHost.
-        :type: str
+        :type protocol: str
         """
         self._protocol = protocol
 
@@ -296,7 +339,7 @@ class PremiumWafHost:
         源站信息
 
         :return: The server of this PremiumWafHost.
-        :rtype: list[PremiumWafServer]
+        :rtype: list[:class:`huaweicloudsdkwaf.v1.PremiumWafServer`]
         """
         return self._server
 
@@ -307,7 +350,7 @@ class PremiumWafHost:
         源站信息
 
         :param server: The server of this PremiumWafHost.
-        :type: list[PremiumWafServer]
+        :type server: list[:class:`huaweicloudsdkwaf.v1.PremiumWafServer`]
         """
         self._server = server
 
@@ -329,7 +372,7 @@ class PremiumWafHost:
         证书id，通过查询证书列表接口（ListCertificates）接口获取证书id   - 对外协议为HTTP时不需要填写   - 对外协议HTTPS时为必填参数
 
         :param certificateid: The certificateid of this PremiumWafHost.
-        :type: str
+        :type certificateid: str
         """
         self._certificateid = certificateid
 
@@ -351,7 +394,7 @@ class PremiumWafHost:
         证书名   - 对外协议为HTTP时不需要填写   - 对外协议HTTPS时为必填参数
 
         :param certificatename: The certificatename of this PremiumWafHost.
-        :type: str
+        :type certificatename: str
         """
         self._certificatename = certificatename
 
@@ -373,7 +416,7 @@ class PremiumWafHost:
         支持最低的TLS版本（TLS v1.0/TLS v1.1/TLS v1.2）,默认为TLS v1.0版本
 
         :param tls: The tls of this PremiumWafHost.
-        :type: str
+        :type tls: str
         """
         self._tls = tls
 
@@ -395,7 +438,7 @@ class PremiumWafHost:
         加密套件（cipher_1，cipher_2，cipher_3，cipher_4，cipher_default）：  cipher_1： 加密算法为ECDHE-ECDSA-AES256-GCM-SHA384:HIGH:!MEDIUM:!LOW:!aNULL:!eNULL:!DES:!MD5:!PSK:!RC4:!kRSA:!SRP:!3DES:!DSS:!EXP:!CAMELLIA:@STRENGTH   cipher_2：加密算法为EECDH+AESGCM:EDH+AESGCM    cipher_3：加密算法为ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH    cipher_4：加密算法为ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!EDH    cipher_default： 加密算法为ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH:!AESGCM
 
         :param cipher: The cipher of this PremiumWafHost.
-        :type: str
+        :type cipher: str
         """
         self._cipher = cipher
 
@@ -417,7 +460,7 @@ class PremiumWafHost:
         是否开启了代理
 
         :param proxy: The proxy of this PremiumWafHost.
-        :type: bool
+        :type proxy: bool
         """
         self._proxy = proxy
 
@@ -439,7 +482,7 @@ class PremiumWafHost:
         锁定状态
 
         :param locked: The locked of this PremiumWafHost.
-        :type: int
+        :type locked: int
         """
         self._locked = locked
 
@@ -461,7 +504,7 @@ class PremiumWafHost:
         域名防护状态：  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
 
         :param protect_status: The protect_status of this PremiumWafHost.
-        :type: int
+        :type protect_status: int
         """
         self._protect_status = protect_status
 
@@ -483,7 +526,7 @@ class PremiumWafHost:
         接入状态
 
         :param access_status: The access_status of this PremiumWafHost.
-        :type: int
+        :type access_status: int
         """
         self._access_status = access_status
 
@@ -505,7 +548,7 @@ class PremiumWafHost:
         创建防护域名的时间
 
         :param timestamp: The timestamp of this PremiumWafHost.
-        :type: int
+        :type timestamp: int
         """
         self._timestamp = timestamp
 
@@ -515,7 +558,7 @@ class PremiumWafHost:
 
 
         :return: The block_page of this PremiumWafHost.
-        :rtype: BlockPage
+        :rtype: :class:`huaweicloudsdkwaf.v1.BlockPage`
         """
         return self._block_page
 
@@ -525,7 +568,7 @@ class PremiumWafHost:
 
 
         :param block_page: The block_page of this PremiumWafHost.
-        :type: BlockPage
+        :type block_page: :class:`huaweicloudsdkwaf.v1.BlockPage`
         """
         self._block_page = block_page
 
@@ -547,7 +590,7 @@ class PremiumWafHost:
         可扩展属性
 
         :param extend: The extend of this PremiumWafHost.
-        :type: dict(str, str)
+        :type extend: dict(str, str)
         """
         self._extend = extend
 
@@ -557,7 +600,7 @@ class PremiumWafHost:
 
 
         :return: The traffic_mark of this PremiumWafHost.
-        :rtype: TrafficMark
+        :rtype: :class:`huaweicloudsdkwaf.v1.TrafficMark`
         """
         return self._traffic_mark
 
@@ -567,7 +610,7 @@ class PremiumWafHost:
 
 
         :param traffic_mark: The traffic_mark of this PremiumWafHost.
-        :type: TrafficMark
+        :type traffic_mark: :class:`huaweicloudsdkwaf.v1.TrafficMark`
         """
         self._traffic_mark = traffic_mark
 

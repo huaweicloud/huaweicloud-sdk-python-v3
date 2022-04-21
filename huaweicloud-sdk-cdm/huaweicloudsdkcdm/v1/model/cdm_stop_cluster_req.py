@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CdmStopClusterReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CdmStopClusterReq:
     }
 
     def __init__(self, stop=None):
-        """CdmStopClusterReq - a model defined in huaweicloud sdk"""
+        """CdmStopClusterReq
+
+        The model defined in huaweicloud sdk
+
+        :param stop: 
+        :type stop: :class:`huaweicloudsdkcdm.v1.CdmStopClusterReqStop`
+        """
         
         
 
@@ -45,7 +50,7 @@ class CdmStopClusterReq:
 
 
         :return: The stop of this CdmStopClusterReq.
-        :rtype: CdmStopClusterReqStop
+        :rtype: :class:`huaweicloudsdkcdm.v1.CdmStopClusterReqStop`
         """
         return self._stop
 
@@ -55,7 +60,7 @@ class CdmStopClusterReq:
 
 
         :param stop: The stop of this CdmStopClusterReq.
-        :type: CdmStopClusterReqStop
+        :type stop: :class:`huaweicloudsdkcdm.v1.CdmStopClusterReqStop`
         """
         self._stop = stop
 

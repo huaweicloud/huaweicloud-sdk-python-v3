@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListMonthlyExpendituresResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class ListMonthlyExpendituresResponse(SdkResponse):
     }
 
     def __init__(self, error_code=None, error_msg=None, currency=None, total_count=None, total_amount=None, debt_amount=None, coupon_amount=None, cashcoupon_amount=None, storedcard_amount=None, debit_amount=None, credit_amount=None, measure_id=None, bill_sums=None):
-        """ListMonthlyExpendituresResponse - a model defined in huaweicloud sdk"""
+        """ListMonthlyExpendituresResponse
+
+        The model defined in huaweicloud sdk
+
+        :param error_code: 返回码
+        :type error_code: str
+        :param error_msg: 返回码描述
+        :type error_msg: str
+        :param currency: 货币单位代码 USD：美元
+        :type currency: str
+        :param total_count: 总条数
+        :type total_count: int
+        :param total_amount: 总金额（包含退订）。
+        :type total_amount: float
+        :param debt_amount: 总欠费金额。
+        :type debt_amount: float
+        :param coupon_amount: 代金券金额。
+        :type coupon_amount: float
+        :param cashcoupon_amount: 现金券金额，预留。
+        :type cashcoupon_amount: float
+        :param storedcard_amount: 储值卡金额，预留。
+        :type storedcard_amount: float
+        :param debit_amount: 现金账户金额。
+        :type debit_amount: float
+        :param credit_amount: 信用账户金额。
+        :type credit_amount: float
+        :param measure_id: 金额单位。 1：元3：分 默认值为3。
+        :type measure_id: int
+        :param bill_sums: 账单记录，具体参考表3。
+        :type bill_sums: list[:class:`huaweicloudsdkbssintl.v2.BillSumRecordInfo`]
+        """
         
         super(ListMonthlyExpendituresResponse, self).__init__()
 
@@ -118,7 +147,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
         返回码
 
         :param error_code: The error_code of this ListMonthlyExpendituresResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -140,7 +169,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
         返回码描述
 
         :param error_msg: The error_msg of this ListMonthlyExpendituresResponse.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 
@@ -162,7 +191,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
         货币单位代码 USD：美元
 
         :param currency: The currency of this ListMonthlyExpendituresResponse.
-        :type: str
+        :type currency: str
         """
         self._currency = currency
 
@@ -184,7 +213,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
         总条数
 
         :param total_count: The total_count of this ListMonthlyExpendituresResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 
@@ -206,7 +235,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
         总金额（包含退订）。
 
         :param total_amount: The total_amount of this ListMonthlyExpendituresResponse.
-        :type: float
+        :type total_amount: float
         """
         self._total_amount = total_amount
 
@@ -228,7 +257,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
         总欠费金额。
 
         :param debt_amount: The debt_amount of this ListMonthlyExpendituresResponse.
-        :type: float
+        :type debt_amount: float
         """
         self._debt_amount = debt_amount
 
@@ -250,7 +279,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
         代金券金额。
 
         :param coupon_amount: The coupon_amount of this ListMonthlyExpendituresResponse.
-        :type: float
+        :type coupon_amount: float
         """
         self._coupon_amount = coupon_amount
 
@@ -272,7 +301,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
         现金券金额，预留。
 
         :param cashcoupon_amount: The cashcoupon_amount of this ListMonthlyExpendituresResponse.
-        :type: float
+        :type cashcoupon_amount: float
         """
         self._cashcoupon_amount = cashcoupon_amount
 
@@ -294,7 +323,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
         储值卡金额，预留。
 
         :param storedcard_amount: The storedcard_amount of this ListMonthlyExpendituresResponse.
-        :type: float
+        :type storedcard_amount: float
         """
         self._storedcard_amount = storedcard_amount
 
@@ -316,7 +345,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
         现金账户金额。
 
         :param debit_amount: The debit_amount of this ListMonthlyExpendituresResponse.
-        :type: float
+        :type debit_amount: float
         """
         self._debit_amount = debit_amount
 
@@ -338,7 +367,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
         信用账户金额。
 
         :param credit_amount: The credit_amount of this ListMonthlyExpendituresResponse.
-        :type: float
+        :type credit_amount: float
         """
         self._credit_amount = credit_amount
 
@@ -360,7 +389,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
         金额单位。 1：元3：分 默认值为3。
 
         :param measure_id: The measure_id of this ListMonthlyExpendituresResponse.
-        :type: int
+        :type measure_id: int
         """
         self._measure_id = measure_id
 
@@ -371,7 +400,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
         账单记录，具体参考表3。
 
         :return: The bill_sums of this ListMonthlyExpendituresResponse.
-        :rtype: list[BillSumRecordInfo]
+        :rtype: list[:class:`huaweicloudsdkbssintl.v2.BillSumRecordInfo`]
         """
         return self._bill_sums
 
@@ -382,7 +411,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
         账单记录，具体参考表3。
 
         :param bill_sums: The bill_sums of this ListMonthlyExpendituresResponse.
-        :type: list[BillSumRecordInfo]
+        :type bill_sums: list[:class:`huaweicloudsdkbssintl.v2.BillSumRecordInfo`]
         """
         self._bill_sums = bill_sums
 

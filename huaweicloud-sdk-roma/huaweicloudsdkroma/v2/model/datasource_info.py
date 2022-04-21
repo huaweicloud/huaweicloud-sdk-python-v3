@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DatasourceInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class DatasourceInfo:
     }
 
     def __init__(self, datasource_name=None, datasource_type=None, app_id=None, custom_plugin_id=None, content=None, description=None):
-        """DatasourceInfo - a model defined in huaweicloud sdk"""
+        """DatasourceInfo
+
+        The model defined in huaweicloud sdk
+
+        :param datasource_name: 数据源名称，数据源名称不能包含&amp;、&lt;、&gt;、\&quot;、&#39;、(、) ，长度为1~255字符
+        :type datasource_name: str
+        :param datasource_type: 数据源类型 - DWS - MYSQL - KAFKA - API - OBS - SAP - MRSHBASE - MRSHDFS - MRSHIVE - WEBSOCKET - SQLSERVER - ORACLE - POSTGRESQL - REDIS - MONGODB - DIS - HL7 - RABBITMQ - SNMP - IBMMQ - CUSTOMIZED (自定义类型) - ACTIVEMQ - ARTEMISMQ - FTP - HIVE - HANA - FIKAFKA - MRSKAFKA - FIHDFS - FIHIVE - GAUSS200 - GAUSS100 - LDAP - DB2 - TAURUS
+        :type datasource_type: str
+        :param app_id: 数据源所属应用ID
+        :type app_id: str
+        :param custom_plugin_id: 数据源所属连接器Id，自定义数据源必填
+        :type custom_plugin_id: str
+        :param content: 
+        :type content: :class:`huaweicloudsdkroma.v2.Content`
+        :param description: 数据源描述
+        :type description: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class DatasourceInfo:
         数据源名称，数据源名称不能包含&、<、>、\"、'、(、) ，长度为1~255字符
 
         :param datasource_name: The datasource_name of this DatasourceInfo.
-        :type: str
+        :type datasource_name: str
         """
         self._datasource_name = datasource_name
 
@@ -105,7 +120,7 @@ class DatasourceInfo:
         数据源类型 - DWS - MYSQL - KAFKA - API - OBS - SAP - MRSHBASE - MRSHDFS - MRSHIVE - WEBSOCKET - SQLSERVER - ORACLE - POSTGRESQL - REDIS - MONGODB - DIS - HL7 - RABBITMQ - SNMP - IBMMQ - CUSTOMIZED (自定义类型) - ACTIVEMQ - ARTEMISMQ - FTP - HIVE - HANA - FIKAFKA - MRSKAFKA - FIHDFS - FIHIVE - GAUSS200 - GAUSS100 - LDAP - DB2 - TAURUS
 
         :param datasource_type: The datasource_type of this DatasourceInfo.
-        :type: str
+        :type datasource_type: str
         """
         self._datasource_type = datasource_type
 
@@ -127,7 +142,7 @@ class DatasourceInfo:
         数据源所属应用ID
 
         :param app_id: The app_id of this DatasourceInfo.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -149,7 +164,7 @@ class DatasourceInfo:
         数据源所属连接器Id，自定义数据源必填
 
         :param custom_plugin_id: The custom_plugin_id of this DatasourceInfo.
-        :type: str
+        :type custom_plugin_id: str
         """
         self._custom_plugin_id = custom_plugin_id
 
@@ -159,7 +174,7 @@ class DatasourceInfo:
 
 
         :return: The content of this DatasourceInfo.
-        :rtype: Content
+        :rtype: :class:`huaweicloudsdkroma.v2.Content`
         """
         return self._content
 
@@ -169,7 +184,7 @@ class DatasourceInfo:
 
 
         :param content: The content of this DatasourceInfo.
-        :type: Content
+        :type content: :class:`huaweicloudsdkroma.v2.Content`
         """
         self._content = content
 
@@ -191,7 +206,7 @@ class DatasourceInfo:
         数据源描述
 
         :param description: The description of this DatasourceInfo.
-        :type: str
+        :type description: str
         """
         self._description = description
 

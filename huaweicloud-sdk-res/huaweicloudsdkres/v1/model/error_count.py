@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ErrorCount:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ErrorCount:
     }
 
     def __init__(self, empty=None):
-        """ErrorCount - a model defined in huaweicloud sdk"""
+        """ErrorCount
+
+        The model defined in huaweicloud sdk
+
+        :param empty: 为空。
+        :type empty: bool
+        """
         
         
 
@@ -58,7 +63,7 @@ class ErrorCount:
         为空。
 
         :param empty: The empty of this ErrorCount.
-        :type: bool
+        :type empty: bool
         """
         self._empty = empty
 

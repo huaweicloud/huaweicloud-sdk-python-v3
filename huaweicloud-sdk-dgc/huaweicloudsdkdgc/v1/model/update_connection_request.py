@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateConnectionRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateConnectionRequest:
     }
 
     def __init__(self, connection_name=None, body=None):
-        """UpdateConnectionRequest - a model defined in huaweicloud sdk"""
+        """UpdateConnectionRequest
+
+        The model defined in huaweicloud sdk
+
+        :param connection_name: 连接名称.
+        :type connection_name: str
+        :param body: Body of the UpdateConnectionRequest
+        :type body: :class:`huaweicloudsdkdgc.v1.ConnectionInfo`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateConnectionRequest:
         连接名称.
 
         :param connection_name: The connection_name of this UpdateConnectionRequest.
-        :type: str
+        :type connection_name: str
         """
         self._connection_name = connection_name
 
@@ -72,7 +79,7 @@ class UpdateConnectionRequest:
 
 
         :return: The body of this UpdateConnectionRequest.
-        :rtype: ConnectionInfo
+        :rtype: :class:`huaweicloudsdkdgc.v1.ConnectionInfo`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateConnectionRequest:
 
 
         :param body: The body of this UpdateConnectionRequest.
-        :type: ConnectionInfo
+        :type body: :class:`huaweicloudsdkdgc.v1.ConnectionInfo`
         """
         self._body = body
 

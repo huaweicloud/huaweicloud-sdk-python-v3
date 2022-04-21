@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateEdgeModuleReqDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateEdgeModuleReqDTO:
     }
 
     def __init__(self, app_version=None):
-        """UpdateEdgeModuleReqDTO - a model defined in huaweicloud sdk"""
+        """UpdateEdgeModuleReqDTO
+
+        The model defined in huaweicloud sdk
+
+        :param app_version: 边缘应用版本
+        :type app_version: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class UpdateEdgeModuleReqDTO:
         边缘应用版本
 
         :param app_version: The app_version of this UpdateEdgeModuleReqDTO.
-        :type: str
+        :type app_version: str
         """
         self._app_version = app_version
 

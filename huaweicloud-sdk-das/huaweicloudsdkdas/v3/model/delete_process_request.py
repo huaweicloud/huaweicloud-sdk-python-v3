@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteProcessRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class DeleteProcessRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, body=None):
-        """DeleteProcessRequest - a model defined in huaweicloud sdk"""
+        """DeleteProcessRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param x_language: 语言
+        :type x_language: str
+        :param body: Body of the DeleteProcessRequest
+        :type body: :class:`huaweicloudsdkdas.v3.DeleteProcessReqBody`
+        """
         
         
 
@@ -67,7 +76,7 @@ class DeleteProcessRequest:
         实例ID
 
         :param instance_id: The instance_id of this DeleteProcessRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -89,7 +98,7 @@ class DeleteProcessRequest:
         语言
 
         :param x_language: The x_language of this DeleteProcessRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -99,7 +108,7 @@ class DeleteProcessRequest:
 
 
         :return: The body of this DeleteProcessRequest.
-        :rtype: DeleteProcessReqBody
+        :rtype: :class:`huaweicloudsdkdas.v3.DeleteProcessReqBody`
         """
         return self._body
 
@@ -109,7 +118,7 @@ class DeleteProcessRequest:
 
 
         :param body: The body of this DeleteProcessRequest.
-        :type: DeleteProcessReqBody
+        :type body: :class:`huaweicloudsdkdas.v3.DeleteProcessReqBody`
         """
         self._body = body
 

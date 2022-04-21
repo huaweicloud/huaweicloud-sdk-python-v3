@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddFavoriteReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AddFavoriteReq:
     }
 
     def __init__(self, name=None, template=None):
-        """AddFavoriteReq - a model defined in huaweicloud sdk"""
+        """AddFavoriteReq
+
+        The model defined in huaweicloud sdk
+
+        :param name: 自定义模板名称。
+        :type name: str
+        :param template: 
+        :type template: :class:`huaweicloudsdkcss.v1.AddFavoriteReqTemplate`
+        """
         
         
 
@@ -61,7 +68,7 @@ class AddFavoriteReq:
         自定义模板名称。
 
         :param name: The name of this AddFavoriteReq.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -71,7 +78,7 @@ class AddFavoriteReq:
 
 
         :return: The template of this AddFavoriteReq.
-        :rtype: AddFavoriteReqTemplate
+        :rtype: :class:`huaweicloudsdkcss.v1.AddFavoriteReqTemplate`
         """
         return self._template
 
@@ -81,7 +88,7 @@ class AddFavoriteReq:
 
 
         :param template: The template of this AddFavoriteReq.
-        :type: AddFavoriteReqTemplate
+        :type template: :class:`huaweicloudsdkcss.v1.AddFavoriteReqTemplate`
         """
         self._template = template
 

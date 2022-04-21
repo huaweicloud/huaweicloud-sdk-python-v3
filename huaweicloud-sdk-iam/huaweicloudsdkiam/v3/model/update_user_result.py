@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateUserResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class UpdateUserResult:
     }
 
     def __init__(self, access_mode=None, pwd_status=None, xuser_id=None, xuser_type=None, description=None, name=None, phone=None, domain_id=None, enabled=None, areacode=None, email=None, id=None, links=None, password_expires_at=None):
-        """UpdateUserResult - a model defined in huaweicloud sdk"""
+        """UpdateUserResult
+
+        The model defined in huaweicloud sdk
+
+        :param access_mode: IAM用户访问方式。 - default：默认访问模式，编程访问和管理控制台访问。 - programmatic：编程访问。 - console：管理控制台访问。
+        :type access_mode: str
+        :param pwd_status: IAM用户密码状态。true：需要修改密码，false：正常。
+        :type pwd_status: bool
+        :param xuser_id: IAM用户在外部系统中的ID。 &gt;外部系统指与华为云对接的外部企业管理系统，xaccount_type、xaccount_id、xdomain_type、xdomain_id、xuser_type、xuser_id等参数值，无法在华为云获取，请咨询企业管理员。
+        :type xuser_id: str
+        :param xuser_type: IAM用户在外部系统中的类型。 &gt;外部系统指与华为云对接的外部企业管理系统，xaccount_type、xaccount_id、xdomain_type、xdomain_id、xuser_type、xuser_id等参数值，无法在华为云获取，请咨询企业管理员。
+        :type xuser_type: str
+        :param description: IAM用户的新描述信息。
+        :type description: str
+        :param name: IAM用户新用户名，长度5~32字符之间，首位不能为数字，特殊字符只能包含下划线“_”、中划线“-”和空格。
+        :type name: str
+        :param phone: IAM用户新手机号，纯数字，长度小于等于32字符。必须与国家码同时存在。
+        :type phone: str
+        :param domain_id: IAM用户所属账号ID。
+        :type domain_id: str
+        :param enabled: 是否启用IAM用户。true为启用，false为停用，默认为true。
+        :type enabled: bool
+        :param areacode: 国家码。中国大陆为“0086”。
+        :type areacode: str
+        :param email: IAM用户新邮箱。
+        :type email: str
+        :param id: IAM用户ID。
+        :type id: str
+        :param links: 
+        :type links: :class:`huaweicloudsdkiam.v3.LinksSelf`
+        :param password_expires_at: 密码过期时间（UTC时间），“null”表示密码不过期。
+        :type password_expires_at: str
+        """
         
         
 
@@ -118,7 +149,7 @@ class UpdateUserResult:
         IAM用户访问方式。 - default：默认访问模式，编程访问和管理控制台访问。 - programmatic：编程访问。 - console：管理控制台访问。
 
         :param access_mode: The access_mode of this UpdateUserResult.
-        :type: str
+        :type access_mode: str
         """
         self._access_mode = access_mode
 
@@ -140,7 +171,7 @@ class UpdateUserResult:
         IAM用户密码状态。true：需要修改密码，false：正常。
 
         :param pwd_status: The pwd_status of this UpdateUserResult.
-        :type: bool
+        :type pwd_status: bool
         """
         self._pwd_status = pwd_status
 
@@ -162,7 +193,7 @@ class UpdateUserResult:
         IAM用户在外部系统中的ID。 >外部系统指与华为云对接的外部企业管理系统，xaccount_type、xaccount_id、xdomain_type、xdomain_id、xuser_type、xuser_id等参数值，无法在华为云获取，请咨询企业管理员。
 
         :param xuser_id: The xuser_id of this UpdateUserResult.
-        :type: str
+        :type xuser_id: str
         """
         self._xuser_id = xuser_id
 
@@ -184,7 +215,7 @@ class UpdateUserResult:
         IAM用户在外部系统中的类型。 >外部系统指与华为云对接的外部企业管理系统，xaccount_type、xaccount_id、xdomain_type、xdomain_id、xuser_type、xuser_id等参数值，无法在华为云获取，请咨询企业管理员。
 
         :param xuser_type: The xuser_type of this UpdateUserResult.
-        :type: str
+        :type xuser_type: str
         """
         self._xuser_type = xuser_type
 
@@ -206,7 +237,7 @@ class UpdateUserResult:
         IAM用户的新描述信息。
 
         :param description: The description of this UpdateUserResult.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -228,7 +259,7 @@ class UpdateUserResult:
         IAM用户新用户名，长度5~32字符之间，首位不能为数字，特殊字符只能包含下划线“_”、中划线“-”和空格。
 
         :param name: The name of this UpdateUserResult.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -250,7 +281,7 @@ class UpdateUserResult:
         IAM用户新手机号，纯数字，长度小于等于32字符。必须与国家码同时存在。
 
         :param phone: The phone of this UpdateUserResult.
-        :type: str
+        :type phone: str
         """
         self._phone = phone
 
@@ -272,7 +303,7 @@ class UpdateUserResult:
         IAM用户所属账号ID。
 
         :param domain_id: The domain_id of this UpdateUserResult.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -294,7 +325,7 @@ class UpdateUserResult:
         是否启用IAM用户。true为启用，false为停用，默认为true。
 
         :param enabled: The enabled of this UpdateUserResult.
-        :type: bool
+        :type enabled: bool
         """
         self._enabled = enabled
 
@@ -316,7 +347,7 @@ class UpdateUserResult:
         国家码。中国大陆为“0086”。
 
         :param areacode: The areacode of this UpdateUserResult.
-        :type: str
+        :type areacode: str
         """
         self._areacode = areacode
 
@@ -338,7 +369,7 @@ class UpdateUserResult:
         IAM用户新邮箱。
 
         :param email: The email of this UpdateUserResult.
-        :type: str
+        :type email: str
         """
         self._email = email
 
@@ -360,7 +391,7 @@ class UpdateUserResult:
         IAM用户ID。
 
         :param id: The id of this UpdateUserResult.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -370,7 +401,7 @@ class UpdateUserResult:
 
 
         :return: The links of this UpdateUserResult.
-        :rtype: LinksSelf
+        :rtype: :class:`huaweicloudsdkiam.v3.LinksSelf`
         """
         return self._links
 
@@ -380,7 +411,7 @@ class UpdateUserResult:
 
 
         :param links: The links of this UpdateUserResult.
-        :type: LinksSelf
+        :type links: :class:`huaweicloudsdkiam.v3.LinksSelf`
         """
         self._links = links
 
@@ -402,7 +433,7 @@ class UpdateUserResult:
         密码过期时间（UTC时间），“null”表示密码不过期。
 
         :param password_expires_at: The password_expires_at of this UpdateUserResult.
-        :type: str
+        :type password_expires_at: str
         """
         self._password_expires_at = password_expires_at
 

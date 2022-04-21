@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListWorkflowsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListWorkflowsRequest:
     }
 
     def __init__(self, workflow_name=None, limit=None, offset=None):
-        """ListWorkflowsRequest - a model defined in huaweicloud sdk"""
+        """ListWorkflowsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param workflow_name: 函数流名称
+        :type workflow_name: str
+        :param limit: 分页查询，每页显示的条目数量，最大数量200，超过200后只返回200
+        :type limit: int
+        :param offset: 分页查询，分页的偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
+        :type offset: int
+        """
         
         
 
@@ -68,7 +77,7 @@ class ListWorkflowsRequest:
         函数流名称
 
         :param workflow_name: The workflow_name of this ListWorkflowsRequest.
-        :type: str
+        :type workflow_name: str
         """
         self._workflow_name = workflow_name
 
@@ -90,7 +99,7 @@ class ListWorkflowsRequest:
         分页查询，每页显示的条目数量，最大数量200，超过200后只返回200
 
         :param limit: The limit of this ListWorkflowsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -112,7 +121,7 @@ class ListWorkflowsRequest:
         分页查询，分页的偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
         :param offset: The offset of this ListWorkflowsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 

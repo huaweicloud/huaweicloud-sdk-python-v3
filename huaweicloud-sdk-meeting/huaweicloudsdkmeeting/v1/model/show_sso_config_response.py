@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowSsoConfigResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -64,7 +63,47 @@ class ShowSsoConfigResponse(SdkResponse):
     }
 
     def __init__(self, enable_sso=None, domain=None, authorize_url=None, get_token_url=None, client_id=None, client_secret=None, scope=None, acc_field_name=None, get_user_info_url=None, oauth2_server_type=None, pc_schema_url=None, android_schema_url=None, ios_schema_url=None, third_name=None, third_email=None, third_mobile=None, third_access_token=None, third_head_img_url=None):
-        """ShowSsoConfigResponse - a model defined in huaweicloud sdk"""
+        """ShowSsoConfigResponse
+
+        The model defined in huaweicloud sdk
+
+        :param enable_sso: 是否开启SSO登录
+        :type enable_sso: bool
+        :param domain: 企业域名
+        :type domain: str
+        :param authorize_url: Oauth2授权地址
+        :type authorize_url: str
+        :param get_token_url: 获取Token URL
+        :type get_token_url: str
+        :param client_id: APPID
+        :type client_id: str
+        :param client_secret: APP秘钥
+        :type client_secret: str
+        :param scope: 授权范围，OAuth2.0的OIDC取值为“openid”
+        :type scope: str
+        :param acc_field_name: 第三方账号的字段名称
+        :type acc_field_name: str
+        :param get_user_info_url: 用户信息查询URL
+        :type get_user_info_url: str
+        :param oauth2_server_type: 鉴权类型。OAuth2.0鉴权时取0
+        :type oauth2_server_type: int
+        :param pc_schema_url: 拉起PC端终端的schema
+        :type pc_schema_url: str
+        :param android_schema_url: 拉起安卓端终端的schema
+        :type android_schema_url: str
+        :param ios_schema_url: 拉起ios端终端的schema
+        :type ios_schema_url: str
+        :param third_name: 第三方姓名的字段名称
+        :type third_name: str
+        :param third_email: 第三方邮箱的字段名称
+        :type third_email: str
+        :param third_mobile: 第三方手机号的字段名称
+        :type third_mobile: str
+        :param third_access_token: 第三方accessToken的字段名称
+        :type third_access_token: str
+        :param third_head_img_url: 第三方头像链接的字段名称
+        :type third_head_img_url: str
+        """
         
         super(ShowSsoConfigResponse, self).__init__()
 
@@ -143,7 +182,7 @@ class ShowSsoConfigResponse(SdkResponse):
         是否开启SSO登录
 
         :param enable_sso: The enable_sso of this ShowSsoConfigResponse.
-        :type: bool
+        :type enable_sso: bool
         """
         self._enable_sso = enable_sso
 
@@ -165,7 +204,7 @@ class ShowSsoConfigResponse(SdkResponse):
         企业域名
 
         :param domain: The domain of this ShowSsoConfigResponse.
-        :type: str
+        :type domain: str
         """
         self._domain = domain
 
@@ -187,7 +226,7 @@ class ShowSsoConfigResponse(SdkResponse):
         Oauth2授权地址
 
         :param authorize_url: The authorize_url of this ShowSsoConfigResponse.
-        :type: str
+        :type authorize_url: str
         """
         self._authorize_url = authorize_url
 
@@ -209,7 +248,7 @@ class ShowSsoConfigResponse(SdkResponse):
         获取Token URL
 
         :param get_token_url: The get_token_url of this ShowSsoConfigResponse.
-        :type: str
+        :type get_token_url: str
         """
         self._get_token_url = get_token_url
 
@@ -231,7 +270,7 @@ class ShowSsoConfigResponse(SdkResponse):
         APPID
 
         :param client_id: The client_id of this ShowSsoConfigResponse.
-        :type: str
+        :type client_id: str
         """
         self._client_id = client_id
 
@@ -253,7 +292,7 @@ class ShowSsoConfigResponse(SdkResponse):
         APP秘钥
 
         :param client_secret: The client_secret of this ShowSsoConfigResponse.
-        :type: str
+        :type client_secret: str
         """
         self._client_secret = client_secret
 
@@ -275,7 +314,7 @@ class ShowSsoConfigResponse(SdkResponse):
         授权范围，OAuth2.0的OIDC取值为“openid”
 
         :param scope: The scope of this ShowSsoConfigResponse.
-        :type: str
+        :type scope: str
         """
         self._scope = scope
 
@@ -297,7 +336,7 @@ class ShowSsoConfigResponse(SdkResponse):
         第三方账号的字段名称
 
         :param acc_field_name: The acc_field_name of this ShowSsoConfigResponse.
-        :type: str
+        :type acc_field_name: str
         """
         self._acc_field_name = acc_field_name
 
@@ -319,7 +358,7 @@ class ShowSsoConfigResponse(SdkResponse):
         用户信息查询URL
 
         :param get_user_info_url: The get_user_info_url of this ShowSsoConfigResponse.
-        :type: str
+        :type get_user_info_url: str
         """
         self._get_user_info_url = get_user_info_url
 
@@ -341,7 +380,7 @@ class ShowSsoConfigResponse(SdkResponse):
         鉴权类型。OAuth2.0鉴权时取0
 
         :param oauth2_server_type: The oauth2_server_type of this ShowSsoConfigResponse.
-        :type: int
+        :type oauth2_server_type: int
         """
         self._oauth2_server_type = oauth2_server_type
 
@@ -363,7 +402,7 @@ class ShowSsoConfigResponse(SdkResponse):
         拉起PC端终端的schema
 
         :param pc_schema_url: The pc_schema_url of this ShowSsoConfigResponse.
-        :type: str
+        :type pc_schema_url: str
         """
         self._pc_schema_url = pc_schema_url
 
@@ -385,7 +424,7 @@ class ShowSsoConfigResponse(SdkResponse):
         拉起安卓端终端的schema
 
         :param android_schema_url: The android_schema_url of this ShowSsoConfigResponse.
-        :type: str
+        :type android_schema_url: str
         """
         self._android_schema_url = android_schema_url
 
@@ -407,7 +446,7 @@ class ShowSsoConfigResponse(SdkResponse):
         拉起ios端终端的schema
 
         :param ios_schema_url: The ios_schema_url of this ShowSsoConfigResponse.
-        :type: str
+        :type ios_schema_url: str
         """
         self._ios_schema_url = ios_schema_url
 
@@ -429,7 +468,7 @@ class ShowSsoConfigResponse(SdkResponse):
         第三方姓名的字段名称
 
         :param third_name: The third_name of this ShowSsoConfigResponse.
-        :type: str
+        :type third_name: str
         """
         self._third_name = third_name
 
@@ -451,7 +490,7 @@ class ShowSsoConfigResponse(SdkResponse):
         第三方邮箱的字段名称
 
         :param third_email: The third_email of this ShowSsoConfigResponse.
-        :type: str
+        :type third_email: str
         """
         self._third_email = third_email
 
@@ -473,7 +512,7 @@ class ShowSsoConfigResponse(SdkResponse):
         第三方手机号的字段名称
 
         :param third_mobile: The third_mobile of this ShowSsoConfigResponse.
-        :type: str
+        :type third_mobile: str
         """
         self._third_mobile = third_mobile
 
@@ -495,7 +534,7 @@ class ShowSsoConfigResponse(SdkResponse):
         第三方accessToken的字段名称
 
         :param third_access_token: The third_access_token of this ShowSsoConfigResponse.
-        :type: str
+        :type third_access_token: str
         """
         self._third_access_token = third_access_token
 
@@ -517,7 +556,7 @@ class ShowSsoConfigResponse(SdkResponse):
         第三方头像链接的字段名称
 
         :param third_head_img_url: The third_head_img_url of this ShowSsoConfigResponse.
-        :type: str
+        :type third_head_img_url: str
         """
         self._third_head_img_url = third_head_img_url
 

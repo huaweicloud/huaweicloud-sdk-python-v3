@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneUpdateProjectOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class KeystoneUpdateProjectOption:
     }
 
     def __init__(self, name=None, description=None):
-        """KeystoneUpdateProjectOption - a model defined in huaweicloud sdk"""
+        """KeystoneUpdateProjectOption
+
+        The model defined in huaweicloud sdk
+
+        :param name: 项目名称，必须以存在的\&quot;区域ID_\&quot;开头，长度小于等于64字符。项目所属区域不能改变，即原项目名为“cn-north-1_IAMProject”时，新项目名只能以“cn-north-1_”开头。“name”与\&quot;description\&quot;至少填写一个。
+        :type name: str
+        :param description: 项目描述，长度小于等于255字符。“name”与\&quot;description\&quot;至少填写一个。
+        :type description: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class KeystoneUpdateProjectOption:
         项目名称，必须以存在的\"区域ID_\"开头，长度小于等于64字符。项目所属区域不能改变，即原项目名为“cn-north-1_IAMProject”时，新项目名只能以“cn-north-1_”开头。“name”与\"description\"至少填写一个。
 
         :param name: The name of this KeystoneUpdateProjectOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -85,7 +92,7 @@ class KeystoneUpdateProjectOption:
         项目描述，长度小于等于255字符。“name”与\"description\"至少填写一个。
 
         :param description: The description of this KeystoneUpdateProjectOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 

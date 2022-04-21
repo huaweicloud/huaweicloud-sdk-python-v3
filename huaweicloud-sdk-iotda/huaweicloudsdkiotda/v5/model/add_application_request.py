@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddApplicationRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AddApplicationRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """AddApplicationRequest - a model defined in huaweicloud sdk"""
+        """AddApplicationRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
+        :type instance_id: str
+        :param body: Body of the AddApplicationRequest
+        :type body: :class:`huaweicloudsdkiotda.v5.AddApplication`
+        """
         
         
 
@@ -63,7 +70,7 @@ class AddApplicationRequest:
         **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
         :param instance_id: The instance_id of this AddApplicationRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -73,7 +80,7 @@ class AddApplicationRequest:
 
 
         :return: The body of this AddApplicationRequest.
-        :rtype: AddApplication
+        :rtype: :class:`huaweicloudsdkiotda.v5.AddApplication`
         """
         return self._body
 
@@ -83,7 +90,7 @@ class AddApplicationRequest:
 
 
         :param body: The body of this AddApplicationRequest.
-        :type: AddApplication
+        :type body: :class:`huaweicloudsdkiotda.v5.AddApplication`
         """
         self._body = body
 

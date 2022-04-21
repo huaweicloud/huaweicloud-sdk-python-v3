@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateTransTemplateRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateTransTemplateRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateTransTemplateRequest - a model defined in huaweicloud sdk"""
+        """UpdateTransTemplateRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the UpdateTransTemplateRequest
+        :type body: :class:`huaweicloudsdkmpc.v1.ModifyTransTemplateReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class UpdateTransTemplateRequest:
 
 
         :return: The body of this UpdateTransTemplateRequest.
-        :rtype: ModifyTransTemplateReq
+        :rtype: :class:`huaweicloudsdkmpc.v1.ModifyTransTemplateReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class UpdateTransTemplateRequest:
 
 
         :param body: The body of this UpdateTransTemplateRequest.
-        :type: ModifyTransTemplateReq
+        :type body: :class:`huaweicloudsdkmpc.v1.ModifyTransTemplateReq`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MyanmarDriverLicenseResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class MyanmarDriverLicenseResult:
     }
 
     def __init__(self, card_number=None, card_number_en=None, name=None, name_en=None, nrc_id=None, nrc_id_en=None, birth=None, birth_en=None, blood_group=None, blood_group_en=None, expiried_date=None, expiried_date_en=None, confidence=None):
-        """MyanmarDriverLicenseResult - a model defined in huaweicloud sdk"""
+        """MyanmarDriverLicenseResult
+
+        The model defined in huaweicloud sdk
+
+        :param card_number: 缅文驾驶证号。 
+        :type card_number: str
+        :param card_number_en: 英文驾驶证号。 
+        :type card_number_en: str
+        :param name: 缅文名字。 
+        :type name: str
+        :param name_en: 英文名字。 
+        :type name_en: str
+        :param nrc_id: 缅文nrc号码。 
+        :type nrc_id: str
+        :param nrc_id_en: 英文nrc号码。 
+        :type nrc_id_en: str
+        :param birth: 缅文出生日期。 
+        :type birth: str
+        :param birth_en: 英文出生日期。 
+        :type birth_en: str
+        :param blood_group: 缅文血型。 
+        :type blood_group: str
+        :param blood_group_en: 英文血型。 
+        :type blood_group_en: str
+        :param expiried_date: 缅文有效期。 
+        :type expiried_date: str
+        :param expiried_date_en: 英文有效期。 
+        :type expiried_date_en: str
+        :param confidence: 
+        :type confidence: :class:`huaweicloudsdkocr.v1.MyanmarDriverLicenseConfidence`
+        """
         
         
 
@@ -118,7 +147,7 @@ class MyanmarDriverLicenseResult:
         缅文驾驶证号。 
 
         :param card_number: The card_number of this MyanmarDriverLicenseResult.
-        :type: str
+        :type card_number: str
         """
         self._card_number = card_number
 
@@ -140,7 +169,7 @@ class MyanmarDriverLicenseResult:
         英文驾驶证号。 
 
         :param card_number_en: The card_number_en of this MyanmarDriverLicenseResult.
-        :type: str
+        :type card_number_en: str
         """
         self._card_number_en = card_number_en
 
@@ -162,7 +191,7 @@ class MyanmarDriverLicenseResult:
         缅文名字。 
 
         :param name: The name of this MyanmarDriverLicenseResult.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -184,7 +213,7 @@ class MyanmarDriverLicenseResult:
         英文名字。 
 
         :param name_en: The name_en of this MyanmarDriverLicenseResult.
-        :type: str
+        :type name_en: str
         """
         self._name_en = name_en
 
@@ -206,7 +235,7 @@ class MyanmarDriverLicenseResult:
         缅文nrc号码。 
 
         :param nrc_id: The nrc_id of this MyanmarDriverLicenseResult.
-        :type: str
+        :type nrc_id: str
         """
         self._nrc_id = nrc_id
 
@@ -228,7 +257,7 @@ class MyanmarDriverLicenseResult:
         英文nrc号码。 
 
         :param nrc_id_en: The nrc_id_en of this MyanmarDriverLicenseResult.
-        :type: str
+        :type nrc_id_en: str
         """
         self._nrc_id_en = nrc_id_en
 
@@ -250,7 +279,7 @@ class MyanmarDriverLicenseResult:
         缅文出生日期。 
 
         :param birth: The birth of this MyanmarDriverLicenseResult.
-        :type: str
+        :type birth: str
         """
         self._birth = birth
 
@@ -272,7 +301,7 @@ class MyanmarDriverLicenseResult:
         英文出生日期。 
 
         :param birth_en: The birth_en of this MyanmarDriverLicenseResult.
-        :type: str
+        :type birth_en: str
         """
         self._birth_en = birth_en
 
@@ -294,7 +323,7 @@ class MyanmarDriverLicenseResult:
         缅文血型。 
 
         :param blood_group: The blood_group of this MyanmarDriverLicenseResult.
-        :type: str
+        :type blood_group: str
         """
         self._blood_group = blood_group
 
@@ -316,7 +345,7 @@ class MyanmarDriverLicenseResult:
         英文血型。 
 
         :param blood_group_en: The blood_group_en of this MyanmarDriverLicenseResult.
-        :type: str
+        :type blood_group_en: str
         """
         self._blood_group_en = blood_group_en
 
@@ -338,7 +367,7 @@ class MyanmarDriverLicenseResult:
         缅文有效期。 
 
         :param expiried_date: The expiried_date of this MyanmarDriverLicenseResult.
-        :type: str
+        :type expiried_date: str
         """
         self._expiried_date = expiried_date
 
@@ -360,7 +389,7 @@ class MyanmarDriverLicenseResult:
         英文有效期。 
 
         :param expiried_date_en: The expiried_date_en of this MyanmarDriverLicenseResult.
-        :type: str
+        :type expiried_date_en: str
         """
         self._expiried_date_en = expiried_date_en
 
@@ -370,7 +399,7 @@ class MyanmarDriverLicenseResult:
 
 
         :return: The confidence of this MyanmarDriverLicenseResult.
-        :rtype: MyanmarDriverLicenseConfidence
+        :rtype: :class:`huaweicloudsdkocr.v1.MyanmarDriverLicenseConfidence`
         """
         return self._confidence
 
@@ -380,7 +409,7 @@ class MyanmarDriverLicenseResult:
 
 
         :param confidence: The confidence of this MyanmarDriverLicenseResult.
-        :type: MyanmarDriverLicenseConfidence
+        :type confidence: :class:`huaweicloudsdkocr.v1.MyanmarDriverLicenseConfidence`
         """
         self._confidence = confidence
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TaskSettings:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class TaskSettings:
     }
 
     def __init__(self, timer=None, trigger_time=None, task_period=None, task_config=None):
-        """TaskSettings - a model defined in huaweicloud sdk"""
+        """TaskSettings
+
+        The model defined in huaweicloud sdk
+
+        :param timer: 普通任务的定时启动时间
+        :type timer: str
+        :param trigger_time: 监测任务的定时触发时间
+        :type trigger_time: str
+        :param task_period: 监测任务的定时触发周期:   * everyday - 每日   * threedays - 每三天   * everyweek - 每星期   * everymonth - 每月 
+        :type task_period: str
+        :param task_config: 
+        :type task_config: :class:`huaweicloudsdkvss.v3.TaskSettingsTaskConfig`
+        """
         
         
 
@@ -73,7 +84,7 @@ class TaskSettings:
         普通任务的定时启动时间
 
         :param timer: The timer of this TaskSettings.
-        :type: str
+        :type timer: str
         """
         self._timer = timer
 
@@ -95,7 +106,7 @@ class TaskSettings:
         监测任务的定时触发时间
 
         :param trigger_time: The trigger_time of this TaskSettings.
-        :type: str
+        :type trigger_time: str
         """
         self._trigger_time = trigger_time
 
@@ -117,7 +128,7 @@ class TaskSettings:
         监测任务的定时触发周期:   * everyday - 每日   * threedays - 每三天   * everyweek - 每星期   * everymonth - 每月 
 
         :param task_period: The task_period of this TaskSettings.
-        :type: str
+        :type task_period: str
         """
         self._task_period = task_period
 
@@ -127,7 +138,7 @@ class TaskSettings:
 
 
         :return: The task_config of this TaskSettings.
-        :rtype: TaskSettingsTaskConfig
+        :rtype: :class:`huaweicloudsdkvss.v3.TaskSettingsTaskConfig`
         """
         return self._task_config
 
@@ -137,7 +148,7 @@ class TaskSettings:
 
 
         :param task_config: The task_config of this TaskSettings.
-        :type: TaskSettingsTaskConfig
+        :type task_config: :class:`huaweicloudsdkvss.v3.TaskSettingsTaskConfig`
         """
         self._task_config = task_config
 

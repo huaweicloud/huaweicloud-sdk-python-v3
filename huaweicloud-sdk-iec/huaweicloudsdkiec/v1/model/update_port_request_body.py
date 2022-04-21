@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdatePortRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdatePortRequestBody:
     }
 
     def __init__(self, port=None):
-        """UpdatePortRequestBody - a model defined in huaweicloud sdk"""
+        """UpdatePortRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param port: 
+        :type port: :class:`huaweicloudsdkiec.v1.UpdatePortOption`
+        """
         
         
 
@@ -45,7 +50,7 @@ class UpdatePortRequestBody:
 
 
         :return: The port of this UpdatePortRequestBody.
-        :rtype: UpdatePortOption
+        :rtype: :class:`huaweicloudsdkiec.v1.UpdatePortOption`
         """
         return self._port
 
@@ -55,7 +60,7 @@ class UpdatePortRequestBody:
 
 
         :param port: The port of this UpdatePortRequestBody.
-        :type: UpdatePortOption
+        :type port: :class:`huaweicloudsdkiec.v1.UpdatePortOption`
         """
         self._port = port
 

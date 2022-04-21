@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class HostModel:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class HostModel:
     }
 
     def __init__(self, id=None, name=None, ip=None, status=None, flavor=None, type=None, mem=None, cpu=None, root_volume_size=None, data_volume_type=None, data_volume_size=None, data_volume_count=None):
-        """HostModel - a model defined in huaweicloud sdk"""
+        """HostModel
+
+        The model defined in huaweicloud sdk
+
+        :param id: 虚拟机ID
+        :type id: str
+        :param name: 虚拟机名称
+        :type name: str
+        :param ip: 虚拟机IP地址
+        :type ip: str
+        :param status: 虚拟机当前状态
+        :type status: str
+        :param flavor: 虚拟机规格ID
+        :type flavor: str
+        :param type: 虚拟机类型，当前支持MasterNode，CoreNode，TaskNode
+        :type type: str
+        :param mem: 内存
+        :type mem: str
+        :param cpu: CPU核数
+        :type cpu: str
+        :param root_volume_size: 操作系统盘容量
+        :type root_volume_size: str
+        :param data_volume_type: 数据盘类型
+        :type data_volume_type: str
+        :param data_volume_size: 数据盘容量
+        :type data_volume_size: int
+        :param data_volume_count: 数据盘个数
+        :type data_volume_count: int
+        """
         
         
 
@@ -113,7 +140,7 @@ class HostModel:
         虚拟机ID
 
         :param id: The id of this HostModel.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -135,7 +162,7 @@ class HostModel:
         虚拟机名称
 
         :param name: The name of this HostModel.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -157,7 +184,7 @@ class HostModel:
         虚拟机IP地址
 
         :param ip: The ip of this HostModel.
-        :type: str
+        :type ip: str
         """
         self._ip = ip
 
@@ -179,7 +206,7 @@ class HostModel:
         虚拟机当前状态
 
         :param status: The status of this HostModel.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -201,7 +228,7 @@ class HostModel:
         虚拟机规格ID
 
         :param flavor: The flavor of this HostModel.
-        :type: str
+        :type flavor: str
         """
         self._flavor = flavor
 
@@ -223,7 +250,7 @@ class HostModel:
         虚拟机类型，当前支持MasterNode，CoreNode，TaskNode
 
         :param type: The type of this HostModel.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -245,7 +272,7 @@ class HostModel:
         内存
 
         :param mem: The mem of this HostModel.
-        :type: str
+        :type mem: str
         """
         self._mem = mem
 
@@ -267,7 +294,7 @@ class HostModel:
         CPU核数
 
         :param cpu: The cpu of this HostModel.
-        :type: str
+        :type cpu: str
         """
         self._cpu = cpu
 
@@ -289,7 +316,7 @@ class HostModel:
         操作系统盘容量
 
         :param root_volume_size: The root_volume_size of this HostModel.
-        :type: str
+        :type root_volume_size: str
         """
         self._root_volume_size = root_volume_size
 
@@ -311,7 +338,7 @@ class HostModel:
         数据盘类型
 
         :param data_volume_type: The data_volume_type of this HostModel.
-        :type: str
+        :type data_volume_type: str
         """
         self._data_volume_type = data_volume_type
 
@@ -333,7 +360,7 @@ class HostModel:
         数据盘容量
 
         :param data_volume_size: The data_volume_size of this HostModel.
-        :type: int
+        :type data_volume_size: int
         """
         self._data_volume_size = data_volume_size
 
@@ -355,7 +382,7 @@ class HostModel:
         数据盘个数
 
         :param data_volume_count: The data_volume_count of this HostModel.
-        :type: int
+        :type data_volume_count: int
         """
         self._data_volume_count = data_volume_count
 

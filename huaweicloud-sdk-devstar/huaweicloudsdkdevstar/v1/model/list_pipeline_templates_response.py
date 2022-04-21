@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPipelineTemplatesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListPipelineTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, templates=None, count=None):
-        """ListPipelineTemplatesResponse - a model defined in huaweicloud sdk"""
+        """ListPipelineTemplatesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param templates: 模板列表
+        :type templates: list[:class:`huaweicloudsdkdevstar.v1.PipelineTemplate`]
+        :param count: 模板总数
+        :type count: int
+        """
         
         super(ListPipelineTemplatesResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListPipelineTemplatesResponse(SdkResponse):
         模板列表
 
         :return: The templates of this ListPipelineTemplatesResponse.
-        :rtype: list[PipelineTemplate]
+        :rtype: list[:class:`huaweicloudsdkdevstar.v1.PipelineTemplate`]
         """
         return self._templates
 
@@ -63,7 +70,7 @@ class ListPipelineTemplatesResponse(SdkResponse):
         模板列表
 
         :param templates: The templates of this ListPipelineTemplatesResponse.
-        :type: list[PipelineTemplate]
+        :type templates: list[:class:`huaweicloudsdkdevstar.v1.PipelineTemplate`]
         """
         self._templates = templates
 
@@ -85,7 +92,7 @@ class ListPipelineTemplatesResponse(SdkResponse):
         模板总数
 
         :param count: The count of this ListPipelineTemplatesResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

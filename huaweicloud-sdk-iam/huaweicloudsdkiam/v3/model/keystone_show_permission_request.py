@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneShowPermissionRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class KeystoneShowPermissionRequest:
     }
 
     def __init__(self, role_id=None):
-        """KeystoneShowPermissionRequest - a model defined in huaweicloud sdk"""
+        """KeystoneShowPermissionRequest
+
+        The model defined in huaweicloud sdk
+
+        :param role_id: 权限ID，获取方式请参见：[获取权限名、权限ID](https://support.huaweicloud.com/api-iam/iam_10_0001.html)。
+        :type role_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class KeystoneShowPermissionRequest:
         权限ID，获取方式请参见：[获取权限名、权限ID](https://support.huaweicloud.com/api-iam/iam_10_0001.html)。
 
         :param role_id: The role_id of this KeystoneShowPermissionRequest.
-        :type: str
+        :type role_id: str
         """
         self._role_id = role_id
 

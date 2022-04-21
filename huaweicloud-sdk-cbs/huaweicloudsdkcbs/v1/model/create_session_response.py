@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateSessionResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateSessionResponse(SdkResponse):
     }
 
     def __init__(self, session_id=None, greeting=None):
-        """CreateSessionResponse - a model defined in huaweicloud sdk"""
+        """CreateSessionResponse
+
+        The model defined in huaweicloud sdk
+
+        :param session_id: 会话标识符。
+        :type session_id: str
+        :param greeting: 机器人问候语。
+        :type greeting: str
+        """
         
         super(CreateSessionResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class CreateSessionResponse(SdkResponse):
         会话标识符。
 
         :param session_id: The session_id of this CreateSessionResponse.
-        :type: str
+        :type session_id: str
         """
         self._session_id = session_id
 
@@ -85,7 +92,7 @@ class CreateSessionResponse(SdkResponse):
         机器人问候语。
 
         :param greeting: The greeting of this CreateSessionResponse.
-        :type: str
+        :type greeting: str
         """
         self._greeting = greeting
 

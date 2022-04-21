@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResizeProtectedInstanceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ResizeProtectedInstanceRequest:
     }
 
     def __init__(self, protected_instance_id=None, body=None):
-        """ResizeProtectedInstanceRequest - a model defined in huaweicloud sdk"""
+        """ResizeProtectedInstanceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param protected_instance_id: 保护实例的ID。
+        :type protected_instance_id: str
+        :param body: Body of the ResizeProtectedInstanceRequest
+        :type body: :class:`huaweicloudsdksdrs.v1.ResizeProtectedInstanceRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class ResizeProtectedInstanceRequest:
         保护实例的ID。
 
         :param protected_instance_id: The protected_instance_id of this ResizeProtectedInstanceRequest.
-        :type: str
+        :type protected_instance_id: str
         """
         self._protected_instance_id = protected_instance_id
 
@@ -72,7 +79,7 @@ class ResizeProtectedInstanceRequest:
 
 
         :return: The body of this ResizeProtectedInstanceRequest.
-        :rtype: ResizeProtectedInstanceRequestBody
+        :rtype: :class:`huaweicloudsdksdrs.v1.ResizeProtectedInstanceRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class ResizeProtectedInstanceRequest:
 
 
         :param body: The body of this ResizeProtectedInstanceRequest.
-        :type: ResizeProtectedInstanceRequestBody
+        :type body: :class:`huaweicloudsdksdrs.v1.ResizeProtectedInstanceRequestBody`
         """
         self._body = body
 

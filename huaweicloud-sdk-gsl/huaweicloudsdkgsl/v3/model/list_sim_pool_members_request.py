@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSimPoolMembersRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListSimPoolMembersRequest:
     }
 
     def __init__(self, sim_pool_id=None, cid=None, limit=None, offset=None, billing_cycle=None):
-        """ListSimPoolMembersRequest - a model defined in huaweicloud sdk"""
+        """ListSimPoolMembersRequest
+
+        The model defined in huaweicloud sdk
+
+        :param sim_pool_id: 流量池标识
+        :type sim_pool_id: int
+        :param cid: 容器ID
+        :type cid: str
+        :param limit: 每页记录数
+        :type limit: int
+        :param offset: 页码
+        :type offset: int
+        :param billing_cycle: 账期，例如：2021-04
+        :type billing_cycle: str
+        """
         
         
 
@@ -76,7 +89,7 @@ class ListSimPoolMembersRequest:
         流量池标识
 
         :param sim_pool_id: The sim_pool_id of this ListSimPoolMembersRequest.
-        :type: int
+        :type sim_pool_id: int
         """
         self._sim_pool_id = sim_pool_id
 
@@ -98,7 +111,7 @@ class ListSimPoolMembersRequest:
         容器ID
 
         :param cid: The cid of this ListSimPoolMembersRequest.
-        :type: str
+        :type cid: str
         """
         self._cid = cid
 
@@ -120,7 +133,7 @@ class ListSimPoolMembersRequest:
         每页记录数
 
         :param limit: The limit of this ListSimPoolMembersRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -142,7 +155,7 @@ class ListSimPoolMembersRequest:
         页码
 
         :param offset: The offset of this ListSimPoolMembersRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -164,7 +177,7 @@ class ListSimPoolMembersRequest:
         账期，例如：2021-04
 
         :param billing_cycle: The billing_cycle of this ListSimPoolMembersRequest.
-        :type: str
+        :type billing_cycle: str
         """
         self._billing_cycle = billing_cycle
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestoreSnapshotRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class RestoreSnapshotRequest:
     }
 
     def __init__(self, cluster_id=None, snapshot_id=None, body=None):
-        """RestoreSnapshotRequest - a model defined in huaweicloud sdk"""
+        """RestoreSnapshotRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 快照所属的集群ID。
+        :type cluster_id: str
+        :param snapshot_id: 快照ID。
+        :type snapshot_id: str
+        :param body: Body of the RestoreSnapshotRequest
+        :type body: :class:`huaweicloudsdkcss.v1.RestoreSnapshotReq`
+        """
         
         
 
@@ -66,7 +75,7 @@ class RestoreSnapshotRequest:
         快照所属的集群ID。
 
         :param cluster_id: The cluster_id of this RestoreSnapshotRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -88,7 +97,7 @@ class RestoreSnapshotRequest:
         快照ID。
 
         :param snapshot_id: The snapshot_id of this RestoreSnapshotRequest.
-        :type: str
+        :type snapshot_id: str
         """
         self._snapshot_id = snapshot_id
 
@@ -98,7 +107,7 @@ class RestoreSnapshotRequest:
 
 
         :return: The body of this RestoreSnapshotRequest.
-        :rtype: RestoreSnapshotReq
+        :rtype: :class:`huaweicloudsdkcss.v1.RestoreSnapshotReq`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class RestoreSnapshotRequest:
 
 
         :param body: The body of this RestoreSnapshotRequest.
-        :type: RestoreSnapshotReq
+        :type body: :class:`huaweicloudsdkcss.v1.RestoreSnapshotReq`
         """
         self._body = body
 

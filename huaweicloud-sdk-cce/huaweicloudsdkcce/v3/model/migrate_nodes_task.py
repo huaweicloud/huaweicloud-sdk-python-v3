@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MigrateNodesTask:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class MigrateNodesTask:
     }
 
     def __init__(self, api_version=None, kind=None, spec=None, status=None):
-        """MigrateNodesTask - a model defined in huaweicloud sdk"""
+        """MigrateNodesTask
+
+        The model defined in huaweicloud sdk
+
+        :param api_version: API版本，固定值“v3”。
+        :type api_version: str
+        :param kind: API类型，固定值“MigrateNodesTask”。
+        :type kind: str
+        :param spec: 
+        :type spec: :class:`huaweicloudsdkcce.v3.MigrateNodesSpec`
+        :param status: 
+        :type status: :class:`huaweicloudsdkcce.v3.TaskStatus`
+        """
         
         
 
@@ -72,7 +83,7 @@ class MigrateNodesTask:
         API版本，固定值“v3”。
 
         :param api_version: The api_version of this MigrateNodesTask.
-        :type: str
+        :type api_version: str
         """
         self._api_version = api_version
 
@@ -94,7 +105,7 @@ class MigrateNodesTask:
         API类型，固定值“MigrateNodesTask”。
 
         :param kind: The kind of this MigrateNodesTask.
-        :type: str
+        :type kind: str
         """
         self._kind = kind
 
@@ -104,7 +115,7 @@ class MigrateNodesTask:
 
 
         :return: The spec of this MigrateNodesTask.
-        :rtype: MigrateNodesSpec
+        :rtype: :class:`huaweicloudsdkcce.v3.MigrateNodesSpec`
         """
         return self._spec
 
@@ -114,7 +125,7 @@ class MigrateNodesTask:
 
 
         :param spec: The spec of this MigrateNodesTask.
-        :type: MigrateNodesSpec
+        :type spec: :class:`huaweicloudsdkcce.v3.MigrateNodesSpec`
         """
         self._spec = spec
 
@@ -124,7 +135,7 @@ class MigrateNodesTask:
 
 
         :return: The status of this MigrateNodesTask.
-        :rtype: TaskStatus
+        :rtype: :class:`huaweicloudsdkcce.v3.TaskStatus`
         """
         return self._status
 
@@ -134,7 +145,7 @@ class MigrateNodesTask:
 
 
         :param status: The status of this MigrateNodesTask.
-        :type: TaskStatus
+        :type status: :class:`huaweicloudsdkcce.v3.TaskStatus`
         """
         self._status = status
 

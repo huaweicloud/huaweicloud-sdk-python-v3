@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ReinstallServerConfig:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ReinstallServerConfig:
     }
 
     def __init__(self, user_tags=None, root_volume=None):
-        """ReinstallServerConfig - a model defined in huaweicloud sdk"""
+        """ReinstallServerConfig
+
+        The model defined in huaweicloud sdk
+
+        :param user_tags: 云服务器标签，键必须唯一，CCE支持的最大用户自定义标签数量依region而定，自定义标签数上限为5个。
+        :type user_tags: list[:class:`huaweicloudsdkcce.v3.UserTag`]
+        :param root_volume: 
+        :type root_volume: :class:`huaweicloudsdkcce.v3.ReinstallVolumeSpec`
+        """
         
         
 
@@ -52,7 +59,7 @@ class ReinstallServerConfig:
         云服务器标签，键必须唯一，CCE支持的最大用户自定义标签数量依region而定，自定义标签数上限为5个。
 
         :return: The user_tags of this ReinstallServerConfig.
-        :rtype: list[UserTag]
+        :rtype: list[:class:`huaweicloudsdkcce.v3.UserTag`]
         """
         return self._user_tags
 
@@ -63,7 +70,7 @@ class ReinstallServerConfig:
         云服务器标签，键必须唯一，CCE支持的最大用户自定义标签数量依region而定，自定义标签数上限为5个。
 
         :param user_tags: The user_tags of this ReinstallServerConfig.
-        :type: list[UserTag]
+        :type user_tags: list[:class:`huaweicloudsdkcce.v3.UserTag`]
         """
         self._user_tags = user_tags
 
@@ -73,7 +80,7 @@ class ReinstallServerConfig:
 
 
         :return: The root_volume of this ReinstallServerConfig.
-        :rtype: ReinstallVolumeSpec
+        :rtype: :class:`huaweicloudsdkcce.v3.ReinstallVolumeSpec`
         """
         return self._root_volume
 
@@ -83,7 +90,7 @@ class ReinstallServerConfig:
 
 
         :param root_volume: The root_volume of this ReinstallServerConfig.
-        :type: ReinstallVolumeSpec
+        :type root_volume: :class:`huaweicloudsdkcce.v3.ReinstallVolumeSpec`
         """
         self._root_volume = root_volume
 

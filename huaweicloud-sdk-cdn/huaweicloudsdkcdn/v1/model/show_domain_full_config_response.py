@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDomainFullConfigResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowDomainFullConfigResponse(SdkResponse):
     }
 
     def __init__(self, configs=None):
-        """ShowDomainFullConfigResponse - a model defined in huaweicloud sdk"""
+        """ShowDomainFullConfigResponse
+
+        The model defined in huaweicloud sdk
+
+        :param configs: 
+        :type configs: :class:`huaweicloudsdkcdn.v1.ConfigsGetBody`
+        """
         
         super(ShowDomainFullConfigResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class ShowDomainFullConfigResponse(SdkResponse):
 
 
         :return: The configs of this ShowDomainFullConfigResponse.
-        :rtype: ConfigsGetBody
+        :rtype: :class:`huaweicloudsdkcdn.v1.ConfigsGetBody`
         """
         return self._configs
 
@@ -56,7 +61,7 @@ class ShowDomainFullConfigResponse(SdkResponse):
 
 
         :param configs: The configs of this ShowDomainFullConfigResponse.
-        :type: ConfigsGetBody
+        :type configs: :class:`huaweicloudsdkcdn.v1.ConfigsGetBody`
         """
         self._configs = configs
 

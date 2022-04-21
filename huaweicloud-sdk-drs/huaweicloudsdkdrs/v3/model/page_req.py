@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PageReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class PageReq:
     }
 
     def __init__(self, cur_page=None, per_page=None):
-        """PageReq - a model defined in huaweicloud sdk"""
+        """PageReq
+
+        The model defined in huaweicloud sdk
+
+        :param cur_page: 当前页, 不能超过item除每页任务数量的最大页 
+        :type cur_page: int
+        :param per_page: 每页item数量，填0获取全部item
+        :type per_page: int
+        """
         
         
 
@@ -63,7 +70,7 @@ class PageReq:
         当前页, 不能超过item除每页任务数量的最大页 
 
         :param cur_page: The cur_page of this PageReq.
-        :type: int
+        :type cur_page: int
         """
         self._cur_page = cur_page
 
@@ -85,7 +92,7 @@ class PageReq:
         每页item数量，填0获取全部item
 
         :param per_page: The per_page of this PageReq.
-        :type: int
+        :type per_page: int
         """
         self._per_page = per_page
 

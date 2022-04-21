@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class JobRecords:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class JobRecords:
     }
 
     def __init__(self, name=None, auto_score=None, case_pass_count=None, exe_case_count=None, code_line=None, commit_time=None, complexity_file_avg=None, auto_score_using_time=None):
-        """JobRecords - a model defined in huaweicloud sdk"""
+        """JobRecords
+
+        The model defined in huaweicloud sdk
+
+        :param name: 第XX次提交
+        :type name: str
+        :param auto_score: 习题判题得分
+        :type auto_score: int
+        :param case_pass_count: 习题用例通过数
+        :type case_pass_count: int
+        :param exe_case_count: 习题用例总数
+        :type exe_case_count: int
+        :param code_line: 代码行数
+        :type code_line: int
+        :param commit_time: 习题提交时间, 日期格式：yyyy-MM-dd HH:mm:ss
+        :type commit_time: str
+        :param complexity_file_avg: 习题圈复杂度
+        :type complexity_file_avg: str
+        :param auto_score_using_time: 习题判题耗时(毫秒)
+        :type auto_score_using_time: int
+        """
         
         
 
@@ -85,7 +104,7 @@ class JobRecords:
         第XX次提交
 
         :param name: The name of this JobRecords.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -107,7 +126,7 @@ class JobRecords:
         习题判题得分
 
         :param auto_score: The auto_score of this JobRecords.
-        :type: int
+        :type auto_score: int
         """
         self._auto_score = auto_score
 
@@ -129,7 +148,7 @@ class JobRecords:
         习题用例通过数
 
         :param case_pass_count: The case_pass_count of this JobRecords.
-        :type: int
+        :type case_pass_count: int
         """
         self._case_pass_count = case_pass_count
 
@@ -151,7 +170,7 @@ class JobRecords:
         习题用例总数
 
         :param exe_case_count: The exe_case_count of this JobRecords.
-        :type: int
+        :type exe_case_count: int
         """
         self._exe_case_count = exe_case_count
 
@@ -173,7 +192,7 @@ class JobRecords:
         代码行数
 
         :param code_line: The code_line of this JobRecords.
-        :type: int
+        :type code_line: int
         """
         self._code_line = code_line
 
@@ -195,7 +214,7 @@ class JobRecords:
         习题提交时间, 日期格式：yyyy-MM-dd HH:mm:ss
 
         :param commit_time: The commit_time of this JobRecords.
-        :type: str
+        :type commit_time: str
         """
         self._commit_time = commit_time
 
@@ -217,7 +236,7 @@ class JobRecords:
         习题圈复杂度
 
         :param complexity_file_avg: The complexity_file_avg of this JobRecords.
-        :type: str
+        :type complexity_file_avg: str
         """
         self._complexity_file_avg = complexity_file_avg
 
@@ -239,7 +258,7 @@ class JobRecords:
         习题判题耗时(毫秒)
 
         :param auto_score_using_time: The auto_score_using_time of this JobRecords.
-        :type: int
+        :type auto_score_using_time: int
         """
         self._auto_score_using_time = auto_score_using_time
 

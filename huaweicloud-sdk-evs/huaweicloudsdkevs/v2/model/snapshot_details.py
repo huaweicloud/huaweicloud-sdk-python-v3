@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SnapshotDetails:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class SnapshotDetails:
     }
 
     def __init__(self, id=None, status=None, name=None, description=None, created_at=None, updated_at=None, metadata=None, volume_id=None, size=None, os_extended_snapshot_attributesproject_id=None, os_extended_snapshot_attributesprogress=None):
-        """SnapshotDetails - a model defined in huaweicloud sdk"""
+        """SnapshotDetails
+
+        The model defined in huaweicloud sdk
+
+        :param id: 云硬盘快照ID。
+        :type id: str
+        :param status: 云硬盘快照状态。
+        :type status: str
+        :param name: 云硬盘快照名称。
+        :type name: str
+        :param description: 云硬盘快照描述信息。
+        :type description: str
+        :param created_at: 云硬盘快照创建时间。 时间格式：UTC YYYY-MM-DDTHH:MM:SS.XXXXXX
+        :type created_at: str
+        :param updated_at: 快照更新时间。 时间格式：UTC YYYY-MM-DDTHH:MM:SS.XXXXXX
+        :type updated_at: str
+        :param metadata: 云硬盘快照的元数据信息。
+        :type metadata: object
+        :param volume_id: 快照所属的云硬盘ID。
+        :type volume_id: str
+        :param size: 云硬盘快照大小，单位为GB。
+        :type size: int
+        :param os_extended_snapshot_attributesproject_id: 预留属性。
+        :type os_extended_snapshot_attributesproject_id: str
+        :param os_extended_snapshot_attributesprogress: 预留属性。
+        :type os_extended_snapshot_attributesprogress: str
+        """
         
         
 
@@ -108,7 +133,7 @@ class SnapshotDetails:
         云硬盘快照ID。
 
         :param id: The id of this SnapshotDetails.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -130,7 +155,7 @@ class SnapshotDetails:
         云硬盘快照状态。
 
         :param status: The status of this SnapshotDetails.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -152,7 +177,7 @@ class SnapshotDetails:
         云硬盘快照名称。
 
         :param name: The name of this SnapshotDetails.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -174,7 +199,7 @@ class SnapshotDetails:
         云硬盘快照描述信息。
 
         :param description: The description of this SnapshotDetails.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -196,7 +221,7 @@ class SnapshotDetails:
         云硬盘快照创建时间。 时间格式：UTC YYYY-MM-DDTHH:MM:SS.XXXXXX
 
         :param created_at: The created_at of this SnapshotDetails.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -218,7 +243,7 @@ class SnapshotDetails:
         快照更新时间。 时间格式：UTC YYYY-MM-DDTHH:MM:SS.XXXXXX
 
         :param updated_at: The updated_at of this SnapshotDetails.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 
@@ -240,7 +265,7 @@ class SnapshotDetails:
         云硬盘快照的元数据信息。
 
         :param metadata: The metadata of this SnapshotDetails.
-        :type: object
+        :type metadata: object
         """
         self._metadata = metadata
 
@@ -262,7 +287,7 @@ class SnapshotDetails:
         快照所属的云硬盘ID。
 
         :param volume_id: The volume_id of this SnapshotDetails.
-        :type: str
+        :type volume_id: str
         """
         self._volume_id = volume_id
 
@@ -284,7 +309,7 @@ class SnapshotDetails:
         云硬盘快照大小，单位为GB。
 
         :param size: The size of this SnapshotDetails.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -306,7 +331,7 @@ class SnapshotDetails:
         预留属性。
 
         :param os_extended_snapshot_attributesproject_id: The os_extended_snapshot_attributesproject_id of this SnapshotDetails.
-        :type: str
+        :type os_extended_snapshot_attributesproject_id: str
         """
         self._os_extended_snapshot_attributesproject_id = os_extended_snapshot_attributesproject_id
 
@@ -328,7 +353,7 @@ class SnapshotDetails:
         预留属性。
 
         :param os_extended_snapshot_attributesprogress: The os_extended_snapshot_attributesprogress of this SnapshotDetails.
-        :type: str
+        :type os_extended_snapshot_attributesprogress: str
         """
         self._os_extended_snapshot_attributesprogress = os_extended_snapshot_attributesprogress
 

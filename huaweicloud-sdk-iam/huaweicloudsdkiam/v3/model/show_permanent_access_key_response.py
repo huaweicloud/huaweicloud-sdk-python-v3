@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowPermanentAccessKeyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowPermanentAccessKeyResponse(SdkResponse):
     }
 
     def __init__(self, credential=None):
-        """ShowPermanentAccessKeyResponse - a model defined in huaweicloud sdk"""
+        """ShowPermanentAccessKeyResponse
+
+        The model defined in huaweicloud sdk
+
+        :param credential: 
+        :type credential: :class:`huaweicloudsdkiam.v3.ShowCredential`
+        """
         
         super(ShowPermanentAccessKeyResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class ShowPermanentAccessKeyResponse(SdkResponse):
 
 
         :return: The credential of this ShowPermanentAccessKeyResponse.
-        :rtype: ShowCredential
+        :rtype: :class:`huaweicloudsdkiam.v3.ShowCredential`
         """
         return self._credential
 
@@ -56,7 +61,7 @@ class ShowPermanentAccessKeyResponse(SdkResponse):
 
 
         :param credential: The credential of this ShowPermanentAccessKeyResponse.
-        :type: ShowCredential
+        :type credential: :class:`huaweicloudsdkiam.v3.ShowCredential`
         """
         self._credential = credential
 

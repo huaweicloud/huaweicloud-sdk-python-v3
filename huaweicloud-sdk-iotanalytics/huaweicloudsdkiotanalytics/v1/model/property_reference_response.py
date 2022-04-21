@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PropertyReferenceResponse:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class PropertyReferenceResponse:
     }
 
     def __init__(self, type=None, asset_model_id=None, asset_model_name=None, property_name=None, asset_id=None):
-        """PropertyReferenceResponse - a model defined in huaweicloud sdk"""
+        """PropertyReferenceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param type: 属性引用类型，引用本资产属性（this）、引用其他资产属性（single）、引用子资产属性（children）
+        :type type: str
+        :param asset_model_id: 引用属性所属的资产模型ID，该字段仅当type为“引用其他资产属性”或“引用子资产属性”时有效；使用导入模型和导出模型接口时，该字段无效
+        :type asset_model_id: str
+        :param asset_model_name: 引用属性所属的资产模型名称，请求中携带该字段时可以不携带asset_model_id字段
+        :type asset_model_name: str
+        :param property_name: 引用属性的名称
+        :type property_name: str
+        :param asset_id: 引用的资产ID，修改资产时携带null表示置空
+        :type asset_id: str
+        """
         
         
 
@@ -76,7 +89,7 @@ class PropertyReferenceResponse:
         属性引用类型，引用本资产属性（this）、引用其他资产属性（single）、引用子资产属性（children）
 
         :param type: The type of this PropertyReferenceResponse.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -98,7 +111,7 @@ class PropertyReferenceResponse:
         引用属性所属的资产模型ID，该字段仅当type为“引用其他资产属性”或“引用子资产属性”时有效；使用导入模型和导出模型接口时，该字段无效
 
         :param asset_model_id: The asset_model_id of this PropertyReferenceResponse.
-        :type: str
+        :type asset_model_id: str
         """
         self._asset_model_id = asset_model_id
 
@@ -120,7 +133,7 @@ class PropertyReferenceResponse:
         引用属性所属的资产模型名称，请求中携带该字段时可以不携带asset_model_id字段
 
         :param asset_model_name: The asset_model_name of this PropertyReferenceResponse.
-        :type: str
+        :type asset_model_name: str
         """
         self._asset_model_name = asset_model_name
 
@@ -142,7 +155,7 @@ class PropertyReferenceResponse:
         引用属性的名称
 
         :param property_name: The property_name of this PropertyReferenceResponse.
-        :type: str
+        :type property_name: str
         """
         self._property_name = property_name
 
@@ -164,7 +177,7 @@ class PropertyReferenceResponse:
         引用的资产ID，修改资产时携带null表示置空
 
         :param asset_id: The asset_id of this PropertyReferenceResponse.
-        :type: str
+        :type asset_id: str
         """
         self._asset_id = asset_id
 

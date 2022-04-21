@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AttachInternalIpRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AttachInternalIpRequestBody:
     }
 
     def __init__(self, node_id=None, new_ip=None):
-        """AttachInternalIpRequestBody - a model defined in huaweicloud sdk"""
+        """AttachInternalIpRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param node_id: 节点ID。
+        :type node_id: str
+        :param new_ip: 新的Ip需要为用户可用vpc中的网段。只支持IPV4。
+        :type new_ip: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class AttachInternalIpRequestBody:
         节点ID。
 
         :param node_id: The node_id of this AttachInternalIpRequestBody.
-        :type: str
+        :type node_id: str
         """
         self._node_id = node_id
 
@@ -83,7 +90,7 @@ class AttachInternalIpRequestBody:
         新的Ip需要为用户可用vpc中的网段。只支持IPV4。
 
         :param new_ip: The new_ip of this AttachInternalIpRequestBody.
-        :type: str
+        :type new_ip: str
         """
         self._new_ip = new_ip
 

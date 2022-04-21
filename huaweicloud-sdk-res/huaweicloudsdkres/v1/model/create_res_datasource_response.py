@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateResDatasourceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CreateResDatasourceResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, datasource=None, message=None, error_code=None):
-        """CreateResDatasourceResponse - a model defined in huaweicloud sdk"""
+        """CreateResDatasourceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param is_success: 是否成功。
+        :type is_success: bool
+        :param datasource: 
+        :type datasource: :class:`huaweicloudsdkres.v1.Datasource`
+        :param message: 返回消息（请求成功时，不返回此字段）。
+        :type message: str
+        :param error_code: 错误码（请求成功时，不返回此字段）。
+        :type error_code: str
+        """
         
         super(CreateResDatasourceResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class CreateResDatasourceResponse(SdkResponse):
         是否成功。
 
         :param is_success: The is_success of this CreateResDatasourceResponse.
-        :type: bool
+        :type is_success: bool
         """
         self._is_success = is_success
 
@@ -83,7 +94,7 @@ class CreateResDatasourceResponse(SdkResponse):
 
 
         :return: The datasource of this CreateResDatasourceResponse.
-        :rtype: Datasource
+        :rtype: :class:`huaweicloudsdkres.v1.Datasource`
         """
         return self._datasource
 
@@ -93,7 +104,7 @@ class CreateResDatasourceResponse(SdkResponse):
 
 
         :param datasource: The datasource of this CreateResDatasourceResponse.
-        :type: Datasource
+        :type datasource: :class:`huaweicloudsdkres.v1.Datasource`
         """
         self._datasource = datasource
 
@@ -115,7 +126,7 @@ class CreateResDatasourceResponse(SdkResponse):
         返回消息（请求成功时，不返回此字段）。
 
         :param message: The message of this CreateResDatasourceResponse.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -137,7 +148,7 @@ class CreateResDatasourceResponse(SdkResponse):
         错误码（请求成功时，不返回此字段）。
 
         :param error_code: The error_code of this CreateResDatasourceResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunDependencyParserRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RunDependencyParserRequest:
     }
 
     def __init__(self, body=None):
-        """RunDependencyParserRequest - a model defined in huaweicloud sdk"""
+        """RunDependencyParserRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the RunDependencyParserRequest
+        :type body: :class:`huaweicloudsdknlp.v2.DependencyParserRequest`
+        """
         
         
 
@@ -46,7 +51,7 @@ class RunDependencyParserRequest:
 
 
         :return: The body of this RunDependencyParserRequest.
-        :rtype: DependencyParserRequest
+        :rtype: :class:`huaweicloudsdknlp.v2.DependencyParserRequest`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class RunDependencyParserRequest:
 
 
         :param body: The body of this RunDependencyParserRequest.
-        :type: DependencyParserRequest
+        :type body: :class:`huaweicloudsdknlp.v2.DependencyParserRequest`
         """
         self._body = body
 

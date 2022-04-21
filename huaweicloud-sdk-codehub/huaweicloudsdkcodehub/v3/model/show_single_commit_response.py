@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowSingleCommitResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowSingleCommitResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """ShowSingleCommitResponse - a model defined in huaweicloud sdk"""
+        """ShowSingleCommitResponse
+
+        The model defined in huaweicloud sdk
+
+        :param error: 
+        :type error: :class:`huaweicloudsdkcodehub.v3.Error`
+        :param result: 
+        :type result: :class:`huaweicloudsdkcodehub.v3.SpecificCommitInfo`
+        :param status: 响应状态
+        :type status: str
+        """
         
         super(ShowSingleCommitResponse, self).__init__()
 
@@ -56,7 +65,7 @@ class ShowSingleCommitResponse(SdkResponse):
 
 
         :return: The error of this ShowSingleCommitResponse.
-        :rtype: Error
+        :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
         """
         return self._error
 
@@ -66,7 +75,7 @@ class ShowSingleCommitResponse(SdkResponse):
 
 
         :param error: The error of this ShowSingleCommitResponse.
-        :type: Error
+        :type error: :class:`huaweicloudsdkcodehub.v3.Error`
         """
         self._error = error
 
@@ -76,7 +85,7 @@ class ShowSingleCommitResponse(SdkResponse):
 
 
         :return: The result of this ShowSingleCommitResponse.
-        :rtype: SpecificCommitInfo
+        :rtype: :class:`huaweicloudsdkcodehub.v3.SpecificCommitInfo`
         """
         return self._result
 
@@ -86,7 +95,7 @@ class ShowSingleCommitResponse(SdkResponse):
 
 
         :param result: The result of this ShowSingleCommitResponse.
-        :type: SpecificCommitInfo
+        :type result: :class:`huaweicloudsdkcodehub.v3.SpecificCommitInfo`
         """
         self._result = result
 
@@ -108,7 +117,7 @@ class ShowSingleCommitResponse(SdkResponse):
         响应状态
 
         :param status: The status of this ShowSingleCommitResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 

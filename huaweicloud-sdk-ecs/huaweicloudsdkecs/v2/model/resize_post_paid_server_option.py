@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResizePostPaidServerOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ResizePostPaidServerOption:
     }
 
     def __init__(self, flavor_ref=None, mode=None):
-        """ResizePostPaidServerOption - a model defined in huaweicloud sdk"""
+        """ResizePostPaidServerOption
+
+        The model defined in huaweicloud sdk
+
+        :param flavor_ref: 变更后的云服务器规格ID。  可通过[查询云服务器规格变更支持列表](https://support.huaweicloud.com/api-ecs/ecs_02_0402.html)接口查询允许变更的规格列表。
+        :type flavor_ref: str
+        :param mode: 取值为withStopServer ，支持开机状态下变更规格。  mode取值为withStopServer时，对开机状态的云服务器执行变更规格操作，系统自动对云服务器先执行关机，再变更规格，变更成功后再执行开机。
+        :type mode: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ResizePostPaidServerOption:
         变更后的云服务器规格ID。  可通过[查询云服务器规格变更支持列表](https://support.huaweicloud.com/api-ecs/ecs_02_0402.html)接口查询允许变更的规格列表。
 
         :param flavor_ref: The flavor_ref of this ResizePostPaidServerOption.
-        :type: str
+        :type flavor_ref: str
         """
         self._flavor_ref = flavor_ref
 
@@ -84,7 +91,7 @@ class ResizePostPaidServerOption:
         取值为withStopServer ，支持开机状态下变更规格。  mode取值为withStopServer时，对开机状态的云服务器执行变更规格操作，系统自动对云服务器先执行关机，再变更规格，变更成功后再执行开机。
 
         :param mode: The mode of this ResizePostPaidServerOption.
-        :type: str
+        :type mode: str
         """
         self._mode = mode
 

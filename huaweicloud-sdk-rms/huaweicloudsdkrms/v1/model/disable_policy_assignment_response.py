@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DisablePolicyAssignmentResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class DisablePolicyAssignmentResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DisablePolicyAssignmentResponse - a model defined in huaweicloud sdk"""
+        """DisablePolicyAssignmentResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(DisablePolicyAssignmentResponse, self).__init__()
         self.discriminator = None

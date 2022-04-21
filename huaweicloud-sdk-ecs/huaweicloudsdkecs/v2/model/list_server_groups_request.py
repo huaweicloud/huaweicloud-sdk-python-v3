@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListServerGroupsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListServerGroupsRequest:
     }
 
     def __init__(self, limit=None, marker=None):
-        """ListServerGroupsRequest - a model defined in huaweicloud sdk"""
+        """ListServerGroupsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 查询返回server group数量限制。
+        :type limit: int
+        :param marker: 从marker指定的server group的下一条数据开始查询。
+        :type marker: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class ListServerGroupsRequest:
         查询返回server group数量限制。
 
         :param limit: The limit of this ListServerGroupsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -85,7 +92,7 @@ class ListServerGroupsRequest:
         从marker指定的server group的下一条数据开始查询。
 
         :param marker: The marker of this ListServerGroupsRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 

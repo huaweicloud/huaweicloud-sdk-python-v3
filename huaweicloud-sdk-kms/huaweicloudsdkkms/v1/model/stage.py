@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Stage:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class Stage:
     }
 
     def __init__(self, name=None, update_time=None, secret_id=None, version_id=None):
-        """Stage - a model defined in huaweicloud sdk"""
+        """Stage
+
+        The model defined in huaweicloud sdk
+
+        :param name: 凭据的版本状态名称。  约束：最小长度1，最大长度64。 
+        :type name: str
+        :param update_time: 凭据的版本状态更新的时间戳，时间戳，即从1970年1月1日至该时间的总秒数。
+        :type update_time: int
+        :param secret_id: 凭据的资源标识符。
+        :type secret_id: str
+        :param version_id: 凭据的版本号标识符。 
+        :type version_id: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class Stage:
         凭据的版本状态名称。  约束：最小长度1，最大长度64。 
 
         :param name: The name of this Stage.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -95,7 +106,7 @@ class Stage:
         凭据的版本状态更新的时间戳，时间戳，即从1970年1月1日至该时间的总秒数。
 
         :param update_time: The update_time of this Stage.
-        :type: int
+        :type update_time: int
         """
         self._update_time = update_time
 
@@ -117,7 +128,7 @@ class Stage:
         凭据的资源标识符。
 
         :param secret_id: The secret_id of this Stage.
-        :type: str
+        :type secret_id: str
         """
         self._secret_id = secret_id
 
@@ -139,7 +150,7 @@ class Stage:
         凭据的版本号标识符。 
 
         :param version_id: The version_id of this Stage.
-        :type: str
+        :type version_id: str
         """
         self._version_id = version_id
 

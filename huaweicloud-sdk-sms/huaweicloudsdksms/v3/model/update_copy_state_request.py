@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateCopyStateRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateCopyStateRequest:
     }
 
     def __init__(self, source_id=None, body=None):
-        """UpdateCopyStateRequest - a model defined in huaweicloud sdk"""
+        """UpdateCopyStateRequest
+
+        The model defined in huaweicloud sdk
+
+        :param source_id: 源端服务器在主机迁移服务中的id
+        :type source_id: str
+        :param body: Body of the UpdateCopyStateRequest
+        :type body: :class:`huaweicloudsdksms.v3.PutCopyStateReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateCopyStateRequest:
         源端服务器在主机迁移服务中的id
 
         :param source_id: The source_id of this UpdateCopyStateRequest.
-        :type: str
+        :type source_id: str
         """
         self._source_id = source_id
 
@@ -72,7 +79,7 @@ class UpdateCopyStateRequest:
 
 
         :return: The body of this UpdateCopyStateRequest.
-        :rtype: PutCopyStateReq
+        :rtype: :class:`huaweicloudsdksms.v3.PutCopyStateReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateCopyStateRequest:
 
 
         :param body: The body of this UpdateCopyStateRequest.
-        :type: PutCopyStateReq
+        :type body: :class:`huaweicloudsdksms.v3.PutCopyStateReq`
         """
         self._body = body
 

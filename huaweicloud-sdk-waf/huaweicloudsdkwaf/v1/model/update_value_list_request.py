@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateValueListRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateValueListRequest:
     }
 
     def __init__(self, enterprise_project_id=None, valuelistid=None, body=None):
-        """UpdateValueListRequest - a model defined in huaweicloud sdk"""
+        """UpdateValueListRequest
+
+        The model defined in huaweicloud sdk
+
+        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        :type enterprise_project_id: str
+        :param valuelistid: 引用表id，通过查询引用表列表（ListValueList）接口获取
+        :type valuelistid: str
+        :param body: Body of the UpdateValueListRequest
+        :type body: :class:`huaweicloudsdkwaf.v1.UpdateValueListRequestBody`
+        """
         
         
 
@@ -67,7 +76,7 @@ class UpdateValueListRequest:
         您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this UpdateValueListRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -89,7 +98,7 @@ class UpdateValueListRequest:
         引用表id，通过查询引用表列表（ListValueList）接口获取
 
         :param valuelistid: The valuelistid of this UpdateValueListRequest.
-        :type: str
+        :type valuelistid: str
         """
         self._valuelistid = valuelistid
 
@@ -99,7 +108,7 @@ class UpdateValueListRequest:
 
 
         :return: The body of this UpdateValueListRequest.
-        :rtype: UpdateValueListRequestBody
+        :rtype: :class:`huaweicloudsdkwaf.v1.UpdateValueListRequestBody`
         """
         return self._body
 
@@ -109,7 +118,7 @@ class UpdateValueListRequest:
 
 
         :param body: The body of this UpdateValueListRequest.
-        :type: UpdateValueListRequestBody
+        :type body: :class:`huaweicloudsdkwaf.v1.UpdateValueListRequestBody`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneListRegionsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class KeystoneListRegionsRequest:
     }
 
     def __init__(self):
-        """KeystoneListRegionsRequest - a model defined in huaweicloud sdk"""
+        """KeystoneListRegionsRequest
+
+        The model defined in huaweicloud sdk
+
+        """
         
         
         self.discriminator = None

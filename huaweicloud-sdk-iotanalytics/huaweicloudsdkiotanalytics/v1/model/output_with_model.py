@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OutputWithModel:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class OutputWithModel:
     }
 
     def __init__(self, name=None, output_asset_model_id=None, output_asset_model_name=None, output_property=None):
-        """OutputWithModel - a model defined in huaweicloud sdk"""
+        """OutputWithModel
+
+        The model defined in huaweicloud sdk
+
+        :param name: 输出参数名称,formulas中定义的name
+        :type name: str
+        :param output_asset_model_id: 输出模型ID，如果输出到本模型可以不携带；使用导入模型和导出模型接口时，该字段无效
+        :type output_asset_model_id: str
+        :param output_asset_model_name: 输出模型名称，请求中携带该字段时可以不携带output_asset_model_id
+        :type output_asset_model_name: str
+        :param output_property: 输出属性名
+        :type output_property: str
+        """
         
         
 
@@ -71,7 +82,7 @@ class OutputWithModel:
         输出参数名称,formulas中定义的name
 
         :param name: The name of this OutputWithModel.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -93,7 +104,7 @@ class OutputWithModel:
         输出模型ID，如果输出到本模型可以不携带；使用导入模型和导出模型接口时，该字段无效
 
         :param output_asset_model_id: The output_asset_model_id of this OutputWithModel.
-        :type: str
+        :type output_asset_model_id: str
         """
         self._output_asset_model_id = output_asset_model_id
 
@@ -115,7 +126,7 @@ class OutputWithModel:
         输出模型名称，请求中携带该字段时可以不携带output_asset_model_id
 
         :param output_asset_model_name: The output_asset_model_name of this OutputWithModel.
-        :type: str
+        :type output_asset_model_name: str
         """
         self._output_asset_model_name = output_asset_model_name
 
@@ -137,7 +148,7 @@ class OutputWithModel:
         输出属性名
 
         :param output_property: The output_property of this OutputWithModel.
-        :type: str
+        :type output_property: str
         """
         self._output_property = output_property
 

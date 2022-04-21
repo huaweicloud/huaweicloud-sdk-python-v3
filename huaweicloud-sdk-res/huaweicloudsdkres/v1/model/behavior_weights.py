@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BehaviorWeights:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class BehaviorWeights:
     }
 
     def __init__(self, behavior_type=None, weight=None, other_uses=None):
-        """BehaviorWeights - a model defined in huaweicloud sdk"""
+        """BehaviorWeights
+
+        The model defined in huaweicloud sdk
+
+        :param behavior_type: 行为类型。
+        :type behavior_type: str
+        :param weight: 行为权重。
+        :type weight: int
+        :param other_uses: 其他用途。
+        :type other_uses: list[str]
+        """
         
         
 
@@ -68,7 +77,7 @@ class BehaviorWeights:
         行为类型。
 
         :param behavior_type: The behavior_type of this BehaviorWeights.
-        :type: str
+        :type behavior_type: str
         """
         self._behavior_type = behavior_type
 
@@ -90,7 +99,7 @@ class BehaviorWeights:
         行为权重。
 
         :param weight: The weight of this BehaviorWeights.
-        :type: int
+        :type weight: int
         """
         self._weight = weight
 
@@ -112,7 +121,7 @@ class BehaviorWeights:
         其他用途。
 
         :param other_uses: The other_uses of this BehaviorWeights.
-        :type: list[str]
+        :type other_uses: list[str]
         """
         self._other_uses = other_uses
 

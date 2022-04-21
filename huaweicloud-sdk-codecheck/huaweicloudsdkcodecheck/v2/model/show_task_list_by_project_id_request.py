@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowTaskListByProjectIdRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowTaskListByProjectIdRequest:
     }
 
     def __init__(self, project_id=None, offset=None, limit=None):
-        """ShowTaskListByProjectIdRequest - a model defined in huaweicloud sdk"""
+        """ShowTaskListByProjectIdRequest
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: 项目ID
+        :type project_id: str
+        :param offset: 分页索引，偏移量
+        :type offset: int
+        :param limit: 每页显示的数量,每页最多显示100条
+        :type limit: int
+        """
         
         
 
@@ -67,7 +76,7 @@ class ShowTaskListByProjectIdRequest:
         项目ID
 
         :param project_id: The project_id of this ShowTaskListByProjectIdRequest.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -89,7 +98,7 @@ class ShowTaskListByProjectIdRequest:
         分页索引，偏移量
 
         :param offset: The offset of this ShowTaskListByProjectIdRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -111,7 +120,7 @@ class ShowTaskListByProjectIdRequest:
         每页显示的数量,每页最多显示100条
 
         :param limit: The limit of this ShowTaskListByProjectIdRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

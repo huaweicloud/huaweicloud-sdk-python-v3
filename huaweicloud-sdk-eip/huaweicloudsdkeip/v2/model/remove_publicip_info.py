@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RemovePublicipInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RemovePublicipInfo:
     }
 
     def __init__(self, publicip_type=None, publicip_id=None):
-        """RemovePublicipInfo - a model defined in huaweicloud sdk"""
+        """RemovePublicipInfo
+
+        The model defined in huaweicloud sdk
+
+        :param publicip_type: 功能说明：若publicip_id为弹性公网IP的id，则该字段可自动忽略。若publicip_id为IPv6端口PORT的id，则该字段必填：5_dualStack(目前仅北京4局点支持)
+        :type publicip_type: str
+        :param publicip_id: 功能说明：带宽对应的弹性公网IP或IPv6端口PORT的唯一标识
+        :type publicip_id: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class RemovePublicipInfo:
         功能说明：若publicip_id为弹性公网IP的id，则该字段可自动忽略。若publicip_id为IPv6端口PORT的id，则该字段必填：5_dualStack(目前仅北京4局点支持)
 
         :param publicip_type: The publicip_type of this RemovePublicipInfo.
-        :type: str
+        :type publicip_type: str
         """
         self._publicip_type = publicip_type
 
@@ -84,7 +91,7 @@ class RemovePublicipInfo:
         功能说明：带宽对应的弹性公网IP或IPv6端口PORT的唯一标识
 
         :param publicip_id: The publicip_id of this RemovePublicipInfo.
-        :type: str
+        :type publicip_id: str
         """
         self._publicip_id = publicip_id
 

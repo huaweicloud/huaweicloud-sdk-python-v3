@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AvParameters:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class AvParameters:
     }
 
     def __init__(self, video=None, audio=None, common=None):
-        """AvParameters - a model defined in huaweicloud sdk"""
+        """AvParameters
+
+        The model defined in huaweicloud sdk
+
+        :param video: 
+        :type video: :class:`huaweicloudsdkmpc.v1.VideoParameters`
+        :param audio: 
+        :type audio: :class:`huaweicloudsdkmpc.v1.Audio`
+        :param common: 
+        :type common: :class:`huaweicloudsdkmpc.v1.Common`
+        """
         
         
 
@@ -55,7 +64,7 @@ class AvParameters:
 
 
         :return: The video of this AvParameters.
-        :rtype: VideoParameters
+        :rtype: :class:`huaweicloudsdkmpc.v1.VideoParameters`
         """
         return self._video
 
@@ -65,7 +74,7 @@ class AvParameters:
 
 
         :param video: The video of this AvParameters.
-        :type: VideoParameters
+        :type video: :class:`huaweicloudsdkmpc.v1.VideoParameters`
         """
         self._video = video
 
@@ -75,7 +84,7 @@ class AvParameters:
 
 
         :return: The audio of this AvParameters.
-        :rtype: Audio
+        :rtype: :class:`huaweicloudsdkmpc.v1.Audio`
         """
         return self._audio
 
@@ -85,7 +94,7 @@ class AvParameters:
 
 
         :param audio: The audio of this AvParameters.
-        :type: Audio
+        :type audio: :class:`huaweicloudsdkmpc.v1.Audio`
         """
         self._audio = audio
 
@@ -95,7 +104,7 @@ class AvParameters:
 
 
         :return: The common of this AvParameters.
-        :rtype: Common
+        :rtype: :class:`huaweicloudsdkmpc.v1.Common`
         """
         return self._common
 
@@ -105,7 +114,7 @@ class AvParameters:
 
 
         :param common: The common of this AvParameters.
-        :type: Common
+        :type common: :class:`huaweicloudsdkmpc.v1.Common`
         """
         self._common = common
 

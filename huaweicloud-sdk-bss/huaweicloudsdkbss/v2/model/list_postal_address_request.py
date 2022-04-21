@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPostalAddressRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListPostalAddressRequest:
     }
 
     def __init__(self, offset=None, limit=None):
-        """ListPostalAddressRequest - a model defined in huaweicloud sdk"""
+        """ListPostalAddressRequest
+
+        The model defined in huaweicloud sdk
+
+        :param offset: 偏移量。默认值为0。
+        :type offset: int
+        :param limit: 每次查询的个数。默认值为10。
+        :type limit: int
+        """
         
         
 
@@ -63,7 +70,7 @@ class ListPostalAddressRequest:
         偏移量。默认值为0。
 
         :param offset: The offset of this ListPostalAddressRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -85,7 +92,7 @@ class ListPostalAddressRequest:
         每次查询的个数。默认值为10。
 
         :param limit: The limit of this ListPostalAddressRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

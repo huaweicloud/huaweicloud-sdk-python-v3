@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LoadBalancerStatus:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class LoadBalancerStatus:
     }
 
     def __init__(self, name=None, provisioning_status=None, listeners=None, pools=None, id=None, operating_status=None):
-        """LoadBalancerStatus - a model defined in huaweicloud sdk"""
+        """LoadBalancerStatus
+
+        The model defined in huaweicloud sdk
+
+        :param name: 负载均衡器名称。
+        :type name: str
+        :param provisioning_status: 负载均衡器的配置状态。取值： - ACTIVE：使用中。 - PENDING_DELETE：删除中。
+        :type provisioning_status: str
+        :param listeners: 负载均衡器关联的监听器列表。
+        :type listeners: list[:class:`huaweicloudsdkelb.v3.LoadBalancerStatusListener`]
+        :param pools: 负载均衡器关联的后端云服务器组列表。
+        :type pools: list[:class:`huaweicloudsdkelb.v3.LoadBalancerStatusPool`]
+        :param id: 负载均衡器ID。
+        :type id: str
+        :param operating_status: 负载均衡器的操作状态。取值： - ONLINE：创建时默认状态，表示负载均衡器正常运行。 - FROZEN：已冻结。 - DEGRADED：负载均衡器下存在member的operating_status为OFFLINE时返回这个状态。 - DISABLED：负载均衡器的admin_state_up属性值为false。  说明：DEGRADED和DISABLED状态仅在当前接口中返回，LB详情等其他接口不返回这两个状态值。
+        :type operating_status: str
+        """
         
         
 
@@ -77,7 +92,7 @@ class LoadBalancerStatus:
         负载均衡器名称。
 
         :param name: The name of this LoadBalancerStatus.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -99,7 +114,7 @@ class LoadBalancerStatus:
         负载均衡器的配置状态。取值： - ACTIVE：使用中。 - PENDING_DELETE：删除中。
 
         :param provisioning_status: The provisioning_status of this LoadBalancerStatus.
-        :type: str
+        :type provisioning_status: str
         """
         self._provisioning_status = provisioning_status
 
@@ -110,7 +125,7 @@ class LoadBalancerStatus:
         负载均衡器关联的监听器列表。
 
         :return: The listeners of this LoadBalancerStatus.
-        :rtype: list[LoadBalancerStatusListener]
+        :rtype: list[:class:`huaweicloudsdkelb.v3.LoadBalancerStatusListener`]
         """
         return self._listeners
 
@@ -121,7 +136,7 @@ class LoadBalancerStatus:
         负载均衡器关联的监听器列表。
 
         :param listeners: The listeners of this LoadBalancerStatus.
-        :type: list[LoadBalancerStatusListener]
+        :type listeners: list[:class:`huaweicloudsdkelb.v3.LoadBalancerStatusListener`]
         """
         self._listeners = listeners
 
@@ -132,7 +147,7 @@ class LoadBalancerStatus:
         负载均衡器关联的后端云服务器组列表。
 
         :return: The pools of this LoadBalancerStatus.
-        :rtype: list[LoadBalancerStatusPool]
+        :rtype: list[:class:`huaweicloudsdkelb.v3.LoadBalancerStatusPool`]
         """
         return self._pools
 
@@ -143,7 +158,7 @@ class LoadBalancerStatus:
         负载均衡器关联的后端云服务器组列表。
 
         :param pools: The pools of this LoadBalancerStatus.
-        :type: list[LoadBalancerStatusPool]
+        :type pools: list[:class:`huaweicloudsdkelb.v3.LoadBalancerStatusPool`]
         """
         self._pools = pools
 
@@ -165,7 +180,7 @@ class LoadBalancerStatus:
         负载均衡器ID。
 
         :param id: The id of this LoadBalancerStatus.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -187,7 +202,7 @@ class LoadBalancerStatus:
         负载均衡器的操作状态。取值： - ONLINE：创建时默认状态，表示负载均衡器正常运行。 - FROZEN：已冻结。 - DEGRADED：负载均衡器下存在member的operating_status为OFFLINE时返回这个状态。 - DISABLED：负载均衡器的admin_state_up属性值为false。  说明：DEGRADED和DISABLED状态仅在当前接口中返回，LB详情等其他接口不返回这两个状态值。
 
         :param operating_status: The operating_status of this LoadBalancerStatus.
-        :type: str
+        :type operating_status: str
         """
         self._operating_status = operating_status
 

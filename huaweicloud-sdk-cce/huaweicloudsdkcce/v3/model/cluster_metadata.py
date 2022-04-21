@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ClusterMetadata:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ClusterMetadata:
     }
 
     def __init__(self, name=None, uid=None, annotations=None, labels=None, creation_timestamp=None, update_timestamp=None):
-        """ClusterMetadata - a model defined in huaweicloud sdk"""
+        """ClusterMetadata
+
+        The model defined in huaweicloud sdk
+
+        :param name: 集群名称。  命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围4-128位，且不能以中划线(-)结尾。
+        :type name: str
+        :param uid: 资源唯一标识，创建成功后自动生成，填写无效
+        :type uid: str
+        :param annotations: 集群注解，由key/value组成：   &#x60;&#x60;&#x60;  \&quot;annotations\&quot;: {    \&quot;key1\&quot; : \&quot;value1\&quot;,    \&quot;key2\&quot; : \&quot;value2\&quot; }  &#x60;&#x60;&#x60;   &gt;    - Annotations不用于标识和选择对象。Annotations中的元数据可以是small 或large，structured 或unstructured，并且可以包括标签不允许使用的字符。 &gt;    - 该字段不会被数据库保存，当前仅用于指定集群待安装插件。 &gt;    - 可通过加入\&quot;cluster.install.addons.external/install\&quot;: \&quot;[{\&quot;addonTemplateName\&quot;:\&quot;icagent\&quot;}]\&quot;的键值对在创建集群时安装ICAgent。 
+        :type annotations: dict(str, str)
+        :param labels: 集群标签，key/value对格式。  &gt;  该字段值由系统自动生成，用于升级时前端识别集群支持的特性开关，用户指定无效。
+        :type labels: dict(str, str)
+        :param creation_timestamp: 集群创建时间
+        :type creation_timestamp: str
+        :param update_timestamp: 集群更新时间
+        :type update_timestamp: str
+        """
         
         
 
@@ -82,7 +97,7 @@ class ClusterMetadata:
         集群名称。  命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围4-128位，且不能以中划线(-)结尾。
 
         :param name: The name of this ClusterMetadata.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -104,7 +119,7 @@ class ClusterMetadata:
         资源唯一标识，创建成功后自动生成，填写无效
 
         :param uid: The uid of this ClusterMetadata.
-        :type: str
+        :type uid: str
         """
         self._uid = uid
 
@@ -126,7 +141,7 @@ class ClusterMetadata:
         集群注解，由key/value组成：   ```  \"annotations\": {    \"key1\" : \"value1\",    \"key2\" : \"value2\" }  ```   >    - Annotations不用于标识和选择对象。Annotations中的元数据可以是small 或large，structured 或unstructured，并且可以包括标签不允许使用的字符。 >    - 该字段不会被数据库保存，当前仅用于指定集群待安装插件。 >    - 可通过加入\"cluster.install.addons.external/install\": \"[{\"addonTemplateName\":\"icagent\"}]\"的键值对在创建集群时安装ICAgent。 
 
         :param annotations: The annotations of this ClusterMetadata.
-        :type: dict(str, str)
+        :type annotations: dict(str, str)
         """
         self._annotations = annotations
 
@@ -148,7 +163,7 @@ class ClusterMetadata:
         集群标签，key/value对格式。  >  该字段值由系统自动生成，用于升级时前端识别集群支持的特性开关，用户指定无效。
 
         :param labels: The labels of this ClusterMetadata.
-        :type: dict(str, str)
+        :type labels: dict(str, str)
         """
         self._labels = labels
 
@@ -170,7 +185,7 @@ class ClusterMetadata:
         集群创建时间
 
         :param creation_timestamp: The creation_timestamp of this ClusterMetadata.
-        :type: str
+        :type creation_timestamp: str
         """
         self._creation_timestamp = creation_timestamp
 
@@ -192,7 +207,7 @@ class ClusterMetadata:
         集群更新时间
 
         :param update_timestamp: The update_timestamp of this ClusterMetadata.
-        :type: str
+        :type update_timestamp: str
         """
         self._update_timestamp = update_timestamp
 

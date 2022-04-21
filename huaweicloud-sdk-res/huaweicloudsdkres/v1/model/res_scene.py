@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResScene:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class ResScene:
     }
 
     def __init__(self, category=None, datasource_id=None, ds_config=None, scene_id=None, scene_name=None, type=None, service_type=None, status=None, workspace_id=None, created_at=None, update_at=None, specs_config=None):
-        """ResScene - a model defined in huaweicloud sdk"""
+        """ResScene
+
+        The model defined in huaweicloud sdk
+
+        :param category: 类型。
+        :type category: str
+        :param datasource_id: 数据源id。
+        :type datasource_id: str
+        :param ds_config: 
+        :type ds_config: :class:`huaweicloudsdkres.v1.DataConfig`
+        :param scene_id: 场景id。
+        :type scene_id: str
+        :param scene_name: 场景名称。
+        :type scene_name: str
+        :param type: 场景类型。
+        :type type: str
+        :param service_type: 服务类型。
+        :type service_type: str
+        :param status: 状态。
+        :type status: str
+        :param workspace_id: 工作空间id。
+        :type workspace_id: str
+        :param created_at: 创建时间。
+        :type created_at: int
+        :param update_at: 更新时间。
+        :type update_at: str
+        :param specs_config: 
+        :type specs_config: :class:`huaweicloudsdkres.v1.SpecsConfig`
+        """
         
         
 
@@ -113,7 +140,7 @@ class ResScene:
         类型。
 
         :param category: The category of this ResScene.
-        :type: str
+        :type category: str
         """
         self._category = category
 
@@ -135,7 +162,7 @@ class ResScene:
         数据源id。
 
         :param datasource_id: The datasource_id of this ResScene.
-        :type: str
+        :type datasource_id: str
         """
         self._datasource_id = datasource_id
 
@@ -145,7 +172,7 @@ class ResScene:
 
 
         :return: The ds_config of this ResScene.
-        :rtype: DataConfig
+        :rtype: :class:`huaweicloudsdkres.v1.DataConfig`
         """
         return self._ds_config
 
@@ -155,7 +182,7 @@ class ResScene:
 
 
         :param ds_config: The ds_config of this ResScene.
-        :type: DataConfig
+        :type ds_config: :class:`huaweicloudsdkres.v1.DataConfig`
         """
         self._ds_config = ds_config
 
@@ -177,7 +204,7 @@ class ResScene:
         场景id。
 
         :param scene_id: The scene_id of this ResScene.
-        :type: str
+        :type scene_id: str
         """
         self._scene_id = scene_id
 
@@ -199,7 +226,7 @@ class ResScene:
         场景名称。
 
         :param scene_name: The scene_name of this ResScene.
-        :type: str
+        :type scene_name: str
         """
         self._scene_name = scene_name
 
@@ -221,7 +248,7 @@ class ResScene:
         场景类型。
 
         :param type: The type of this ResScene.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -243,7 +270,7 @@ class ResScene:
         服务类型。
 
         :param service_type: The service_type of this ResScene.
-        :type: str
+        :type service_type: str
         """
         self._service_type = service_type
 
@@ -265,7 +292,7 @@ class ResScene:
         状态。
 
         :param status: The status of this ResScene.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -287,7 +314,7 @@ class ResScene:
         工作空间id。
 
         :param workspace_id: The workspace_id of this ResScene.
-        :type: str
+        :type workspace_id: str
         """
         self._workspace_id = workspace_id
 
@@ -309,7 +336,7 @@ class ResScene:
         创建时间。
 
         :param created_at: The created_at of this ResScene.
-        :type: int
+        :type created_at: int
         """
         self._created_at = created_at
 
@@ -331,7 +358,7 @@ class ResScene:
         更新时间。
 
         :param update_at: The update_at of this ResScene.
-        :type: str
+        :type update_at: str
         """
         self._update_at = update_at
 
@@ -341,7 +368,7 @@ class ResScene:
 
 
         :return: The specs_config of this ResScene.
-        :rtype: SpecsConfig
+        :rtype: :class:`huaweicloudsdkres.v1.SpecsConfig`
         """
         return self._specs_config
 
@@ -351,7 +378,7 @@ class ResScene:
 
 
         :param specs_config: The specs_config of this ResScene.
-        :type: SpecsConfig
+        :type specs_config: :class:`huaweicloudsdkres.v1.SpecsConfig`
         """
         self._specs_config = specs_config
 

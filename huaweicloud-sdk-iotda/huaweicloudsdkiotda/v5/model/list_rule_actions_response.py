@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRuleActionsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListRuleActionsResponse(SdkResponse):
     }
 
     def __init__(self, actions=None, count=None, marker=None):
-        """ListRuleActionsResponse - a model defined in huaweicloud sdk"""
+        """ListRuleActionsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param actions: 规则动作信息列表。
+        :type actions: list[:class:`huaweicloudsdkiotda.v5.RoutingRuleAction`]
+        :param count: 满足查询条件的记录总数。
+        :type count: int
+        :param marker: 本次分页查询结果中最后一条记录的ID，可在下一次分页查询时使用。
+        :type marker: str
+        """
         
         super(ListRuleActionsResponse, self).__init__()
 
@@ -57,7 +66,7 @@ class ListRuleActionsResponse(SdkResponse):
         规则动作信息列表。
 
         :return: The actions of this ListRuleActionsResponse.
-        :rtype: list[RoutingRuleAction]
+        :rtype: list[:class:`huaweicloudsdkiotda.v5.RoutingRuleAction`]
         """
         return self._actions
 
@@ -68,7 +77,7 @@ class ListRuleActionsResponse(SdkResponse):
         规则动作信息列表。
 
         :param actions: The actions of this ListRuleActionsResponse.
-        :type: list[RoutingRuleAction]
+        :type actions: list[:class:`huaweicloudsdkiotda.v5.RoutingRuleAction`]
         """
         self._actions = actions
 
@@ -90,7 +99,7 @@ class ListRuleActionsResponse(SdkResponse):
         满足查询条件的记录总数。
 
         :param count: The count of this ListRuleActionsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -112,7 +121,7 @@ class ListRuleActionsResponse(SdkResponse):
         本次分页查询结果中最后一条记录的ID，可在下一次分页查询时使用。
 
         :param marker: The marker of this ListRuleActionsResponse.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NodeNicSpec:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class NodeNicSpec:
     }
 
     def __init__(self, primary_nic=None, ext_nics=None):
-        """NodeNicSpec - a model defined in huaweicloud sdk"""
+        """NodeNicSpec
+
+        The model defined in huaweicloud sdk
+
+        :param primary_nic: 
+        :type primary_nic: :class:`huaweicloudsdkcce.v3.NicSpec`
+        :param ext_nics: 扩展网卡
+        :type ext_nics: list[:class:`huaweicloudsdkcce.v3.NicSpec`]
+        """
         
         
 
@@ -51,7 +58,7 @@ class NodeNicSpec:
 
 
         :return: The primary_nic of this NodeNicSpec.
-        :rtype: NicSpec
+        :rtype: :class:`huaweicloudsdkcce.v3.NicSpec`
         """
         return self._primary_nic
 
@@ -61,7 +68,7 @@ class NodeNicSpec:
 
 
         :param primary_nic: The primary_nic of this NodeNicSpec.
-        :type: NicSpec
+        :type primary_nic: :class:`huaweicloudsdkcce.v3.NicSpec`
         """
         self._primary_nic = primary_nic
 
@@ -72,7 +79,7 @@ class NodeNicSpec:
         扩展网卡
 
         :return: The ext_nics of this NodeNicSpec.
-        :rtype: list[NicSpec]
+        :rtype: list[:class:`huaweicloudsdkcce.v3.NicSpec`]
         """
         return self._ext_nics
 
@@ -83,7 +90,7 @@ class NodeNicSpec:
         扩展网卡
 
         :param ext_nics: The ext_nics of this NodeNicSpec.
-        :type: list[NicSpec]
+        :type ext_nics: list[:class:`huaweicloudsdkcce.v3.NicSpec`]
         """
         self._ext_nics = ext_nics
 

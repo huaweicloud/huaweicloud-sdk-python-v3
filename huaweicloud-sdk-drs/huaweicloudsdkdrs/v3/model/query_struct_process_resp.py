@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryStructProcessResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class QueryStructProcessResp:
     }
 
     def __init__(self, job_id=None, error_code=None, error_message=None, struct_process=None):
-        """QueryStructProcessResp - a model defined in huaweicloud sdk"""
+        """QueryStructProcessResp
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 任务ID
+        :type job_id: str
+        :param error_code: 错误码
+        :type error_code: str
+        :param error_message: 错误信息
+        :type error_message: str
+        :param struct_process: 
+        :type struct_process: :class:`huaweicloudsdkdrs.v3.StructProcessResp`
+        """
         
         
 
@@ -72,7 +83,7 @@ class QueryStructProcessResp:
         任务ID
 
         :param job_id: The job_id of this QueryStructProcessResp.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -94,7 +105,7 @@ class QueryStructProcessResp:
         错误码
 
         :param error_code: The error_code of this QueryStructProcessResp.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -116,7 +127,7 @@ class QueryStructProcessResp:
         错误信息
 
         :param error_message: The error_message of this QueryStructProcessResp.
-        :type: str
+        :type error_message: str
         """
         self._error_message = error_message
 
@@ -126,7 +137,7 @@ class QueryStructProcessResp:
 
 
         :return: The struct_process of this QueryStructProcessResp.
-        :rtype: StructProcessResp
+        :rtype: :class:`huaweicloudsdkdrs.v3.StructProcessResp`
         """
         return self._struct_process
 
@@ -136,7 +147,7 @@ class QueryStructProcessResp:
 
 
         :param struct_process: The struct_process of this QueryStructProcessResp.
-        :type: StructProcessResp
+        :type struct_process: :class:`huaweicloudsdkdrs.v3.StructProcessResp`
         """
         self._struct_process = struct_process
 

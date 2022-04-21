@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDetailsOfDomainNameCertificateV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowDetailsOfDomainNameCertificateV2Request:
     }
 
     def __init__(self, instance_id=None, group_id=None, domain_id=None, certificate_id=None):
-        """ShowDetailsOfDomainNameCertificateV2Request - a model defined in huaweicloud sdk"""
+        """ShowDetailsOfDomainNameCertificateV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param group_id: 分组的编号
+        :type group_id: str
+        :param domain_id: 域名的编号
+        :type domain_id: str
+        :param certificate_id: 证书的编号
+        :type certificate_id: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class ShowDetailsOfDomainNameCertificateV2Request:
         实例ID
 
         :param instance_id: The instance_id of this ShowDetailsOfDomainNameCertificateV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -91,7 +102,7 @@ class ShowDetailsOfDomainNameCertificateV2Request:
         分组的编号
 
         :param group_id: The group_id of this ShowDetailsOfDomainNameCertificateV2Request.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -113,7 +124,7 @@ class ShowDetailsOfDomainNameCertificateV2Request:
         域名的编号
 
         :param domain_id: The domain_id of this ShowDetailsOfDomainNameCertificateV2Request.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -135,7 +146,7 @@ class ShowDetailsOfDomainNameCertificateV2Request:
         证书的编号
 
         :param certificate_id: The certificate_id of this ShowDetailsOfDomainNameCertificateV2Request.
-        :type: str
+        :type certificate_id: str
         """
         self._certificate_id = certificate_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IdentityAssumerole:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class IdentityAssumerole:
     }
 
     def __init__(self, agency_name=None, domain_id=None, domain_name=None, duration_seconds=None, session_user=None):
-        """IdentityAssumerole - a model defined in huaweicloud sdk"""
+        """IdentityAssumerole
+
+        The model defined in huaweicloud sdk
+
+        :param agency_name: 委托名。
+        :type agency_name: str
+        :param domain_id: 委托方的账号ID。“domain_id”与“domain_name”至少填写一个。
+        :type domain_id: str
+        :param domain_name: 委托方的账号名。“domain_id”与“domain_name”至少填写一个。
+        :type domain_name: str
+        :param duration_seconds: AK/SK和securitytoken的有效期，时间单位为秒。取值范围：15min ~ 24h ，默认为15min。
+        :type duration_seconds: int
+        :param session_user: 
+        :type session_user: :class:`huaweicloudsdkiam.v3.AssumeroleSessionuser`
+        """
         
         
 
@@ -77,7 +90,7 @@ class IdentityAssumerole:
         委托名。
 
         :param agency_name: The agency_name of this IdentityAssumerole.
-        :type: str
+        :type agency_name: str
         """
         self._agency_name = agency_name
 
@@ -99,7 +112,7 @@ class IdentityAssumerole:
         委托方的账号ID。“domain_id”与“domain_name”至少填写一个。
 
         :param domain_id: The domain_id of this IdentityAssumerole.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -121,7 +134,7 @@ class IdentityAssumerole:
         委托方的账号名。“domain_id”与“domain_name”至少填写一个。
 
         :param domain_name: The domain_name of this IdentityAssumerole.
-        :type: str
+        :type domain_name: str
         """
         self._domain_name = domain_name
 
@@ -143,7 +156,7 @@ class IdentityAssumerole:
         AK/SK和securitytoken的有效期，时间单位为秒。取值范围：15min ~ 24h ，默认为15min。
 
         :param duration_seconds: The duration_seconds of this IdentityAssumerole.
-        :type: int
+        :type duration_seconds: int
         """
         self._duration_seconds = duration_seconds
 
@@ -153,7 +166,7 @@ class IdentityAssumerole:
 
 
         :return: The session_user of this IdentityAssumerole.
-        :rtype: AssumeroleSessionuser
+        :rtype: :class:`huaweicloudsdkiam.v3.AssumeroleSessionuser`
         """
         return self._session_user
 
@@ -163,7 +176,7 @@ class IdentityAssumerole:
 
 
         :param session_user: The session_user of this IdentityAssumerole.
-        :type: AssumeroleSessionuser
+        :type session_user: :class:`huaweicloudsdkiam.v3.AssumeroleSessionuser`
         """
         self._session_user = session_user
 

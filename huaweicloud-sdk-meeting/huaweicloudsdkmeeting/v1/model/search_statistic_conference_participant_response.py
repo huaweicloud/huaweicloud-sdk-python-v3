@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SearchStatisticConferenceParticipantResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class SearchStatisticConferenceParticipantResponse(SdkResponse):
     }
 
     def __init__(self, count=None, limit=None, offset=None, data=None):
-        """SearchStatisticConferenceParticipantResponse - a model defined in huaweicloud sdk"""
+        """SearchStatisticConferenceParticipantResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 总记录数。
+        :type count: int
+        :param limit: 查询条目数量。
+        :type limit: int
+        :param offset: 查询偏移量。
+        :type offset: int
+        :param data: 会议与会数据按时间点统计的查询结果数组。
+        :type data: list[:class:`huaweicloudsdkmeeting.v1.StatisticParticipateDataItem`]
+        """
         
         super(SearchStatisticConferenceParticipantResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class SearchStatisticConferenceParticipantResponse(SdkResponse):
         总记录数。
 
         :param count: The count of this SearchStatisticConferenceParticipantResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -95,7 +106,7 @@ class SearchStatisticConferenceParticipantResponse(SdkResponse):
         查询条目数量。
 
         :param limit: The limit of this SearchStatisticConferenceParticipantResponse.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -117,7 +128,7 @@ class SearchStatisticConferenceParticipantResponse(SdkResponse):
         查询偏移量。
 
         :param offset: The offset of this SearchStatisticConferenceParticipantResponse.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -128,7 +139,7 @@ class SearchStatisticConferenceParticipantResponse(SdkResponse):
         会议与会数据按时间点统计的查询结果数组。
 
         :return: The data of this SearchStatisticConferenceParticipantResponse.
-        :rtype: list[StatisticParticipateDataItem]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.StatisticParticipateDataItem`]
         """
         return self._data
 
@@ -139,7 +150,7 @@ class SearchStatisticConferenceParticipantResponse(SdkResponse):
         会议与会数据按时间点统计的查询结果数组。
 
         :param data: The data of this SearchStatisticConferenceParticipantResponse.
-        :type: list[StatisticParticipateDataItem]
+        :type data: list[:class:`huaweicloudsdkmeeting.v1.StatisticParticipateDataItem`]
         """
         self._data = data
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowKafkaTopicPartitionDiskusageRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowKafkaTopicPartitionDiskusageRequest:
     }
 
     def __init__(self, instance_id=None, min_size=None, top=None, percentage=None):
-        """ShowKafkaTopicPartitionDiskusageRequest - a model defined in huaweicloud sdk"""
+        """ShowKafkaTopicPartitionDiskusageRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param min_size: 占用磁盘大小，默认值1G (1K ,1M , 1G)。
+        :type min_size: str
+        :param top: 占用磁盘大小，查询top N。
+        :type top: str
+        :param percentage: 占用磁盘大小，查询大于占比的分区。
+        :type percentage: str
+        """
         
         
 
@@ -72,7 +83,7 @@ class ShowKafkaTopicPartitionDiskusageRequest:
         实例ID。
 
         :param instance_id: The instance_id of this ShowKafkaTopicPartitionDiskusageRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -94,7 +105,7 @@ class ShowKafkaTopicPartitionDiskusageRequest:
         占用磁盘大小，默认值1G (1K ,1M , 1G)。
 
         :param min_size: The min_size of this ShowKafkaTopicPartitionDiskusageRequest.
-        :type: str
+        :type min_size: str
         """
         self._min_size = min_size
 
@@ -116,7 +127,7 @@ class ShowKafkaTopicPartitionDiskusageRequest:
         占用磁盘大小，查询top N。
 
         :param top: The top of this ShowKafkaTopicPartitionDiskusageRequest.
-        :type: str
+        :type top: str
         """
         self._top = top
 
@@ -138,7 +149,7 @@ class ShowKafkaTopicPartitionDiskusageRequest:
         占用磁盘大小，查询大于占比的分区。
 
         :param percentage: The percentage of this ShowKafkaTopicPartitionDiskusageRequest.
-        :type: str
+        :type percentage: str
         """
         self._percentage = percentage
 

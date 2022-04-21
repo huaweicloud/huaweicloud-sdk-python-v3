@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AssociateKeypairResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class AssociateKeypairResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None):
-        """AssociateKeypairResponse - a model defined in huaweicloud sdk"""
+        """AssociateKeypairResponse
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 任务下发成功返回的ID
+        :type task_id: str
+        """
         
         super(AssociateKeypairResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class AssociateKeypairResponse(SdkResponse):
         任务下发成功返回的ID
 
         :param task_id: The task_id of this AssociateKeypairResponse.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 

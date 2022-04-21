@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DatabaseInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class DatabaseInfo:
     }
 
     def __init__(self, id=None, parent_id=None, object_type=None, object_name=None, object_alias_name=None, select=None):
-        """DatabaseInfo - a model defined in huaweicloud sdk"""
+        """DatabaseInfo
+
+        The model defined in huaweicloud sdk
+
+        :param id: object_type为database时，为库名；object_type为table或者view时，字段值参考示例。
+        :type id: str
+        :param parent_id: object_type为table或view时需要填写，为库名
+        :type parent_id: str
+        :param object_type: 类型
+        :type object_type: str
+        :param object_name: 数据库对象名称，库名、表名、视图名
+        :type object_name: str
+        :param object_alias_name: 别名，映射的新名称。
+        :type object_alias_name: str
+        :param select: 是否选中，值为true会进行迁移，false该数据库对象不会迁移，partial为迁移库下面的部分表，不填默认为false
+        :type select: str
+        """
         
         
 
@@ -80,7 +95,7 @@ class DatabaseInfo:
         object_type为database时，为库名；object_type为table或者view时，字段值参考示例。
 
         :param id: The id of this DatabaseInfo.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -102,7 +117,7 @@ class DatabaseInfo:
         object_type为table或view时需要填写，为库名
 
         :param parent_id: The parent_id of this DatabaseInfo.
-        :type: str
+        :type parent_id: str
         """
         self._parent_id = parent_id
 
@@ -124,7 +139,7 @@ class DatabaseInfo:
         类型
 
         :param object_type: The object_type of this DatabaseInfo.
-        :type: str
+        :type object_type: str
         """
         self._object_type = object_type
 
@@ -146,7 +161,7 @@ class DatabaseInfo:
         数据库对象名称，库名、表名、视图名
 
         :param object_name: The object_name of this DatabaseInfo.
-        :type: str
+        :type object_name: str
         """
         self._object_name = object_name
 
@@ -168,7 +183,7 @@ class DatabaseInfo:
         别名，映射的新名称。
 
         :param object_alias_name: The object_alias_name of this DatabaseInfo.
-        :type: str
+        :type object_alias_name: str
         """
         self._object_alias_name = object_alias_name
 
@@ -190,7 +205,7 @@ class DatabaseInfo:
         是否选中，值为true会进行迁移，false该数据库对象不会迁移，partial为迁移库下面的部分表，不填默认为false
 
         :param select: The select of this DatabaseInfo.
-        :type: str
+        :type select: str
         """
         self._select = select
 

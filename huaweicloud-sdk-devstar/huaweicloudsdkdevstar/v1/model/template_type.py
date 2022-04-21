@@ -12,7 +12,6 @@ class TemplateType:
     """
     allowed enum values
     """
-
     MOBILE = "mobile"
     MICROSERVICE = "microservice"
     WEB = "web"
@@ -21,7 +20,6 @@ class TemplateType:
     AI = "ai"
     OTHERS = "others"
     NONE = "none"
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -39,7 +37,11 @@ class TemplateType:
     }
 
     def __init__(self):
-        """TemplateType - a model defined in huaweicloud sdk"""
+        """TemplateType
+
+        The model defined in huaweicloud sdk
+
+        """
         
         
         self.discriminator = None

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EngineGroupsInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class EngineGroupsInfo:
     }
 
     def __init__(self, id=None, name=None, version=None, support_azs=None):
-        """EngineGroupsInfo - a model defined in huaweicloud sdk"""
+        """EngineGroupsInfo
+
+        The model defined in huaweicloud sdk
+
+        :param id: 引擎id。
+        :type id: str
+        :param name: 引擎名称。
+        :type name: str
+        :param version: 引擎版本。
+        :type version: str
+        :param support_azs: 可用区列表。
+        :type support_azs: list[:class:`huaweicloudsdkddm.v1.SupportAzsInfo`]
+        """
         
         
 
@@ -73,7 +84,7 @@ class EngineGroupsInfo:
         引擎id。
 
         :param id: The id of this EngineGroupsInfo.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -95,7 +106,7 @@ class EngineGroupsInfo:
         引擎名称。
 
         :param name: The name of this EngineGroupsInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -117,7 +128,7 @@ class EngineGroupsInfo:
         引擎版本。
 
         :param version: The version of this EngineGroupsInfo.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -128,7 +139,7 @@ class EngineGroupsInfo:
         可用区列表。
 
         :return: The support_azs of this EngineGroupsInfo.
-        :rtype: list[SupportAzsInfo]
+        :rtype: list[:class:`huaweicloudsdkddm.v1.SupportAzsInfo`]
         """
         return self._support_azs
 
@@ -139,7 +150,7 @@ class EngineGroupsInfo:
         可用区列表。
 
         :param support_azs: The support_azs of this EngineGroupsInfo.
-        :type: list[SupportAzsInfo]
+        :type support_azs: list[:class:`huaweicloudsdkddm.v1.SupportAzsInfo`]
         """
         self._support_azs = support_azs
 

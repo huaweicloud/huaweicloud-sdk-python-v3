@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateTaskRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateTaskRequest:
     }
 
     def __init__(self, instance_id=None, task_id=None, body=None):
-        """UpdateTaskRequest - a model defined in huaweicloud sdk"""
+        """UpdateTaskRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param task_id: 任务ID
+        :type task_id: str
+        :param body: Body of the UpdateTaskRequest
+        :type body: :class:`huaweicloudsdkroma.v2.CreateCommonTaskRequestBody`
+        """
         
         
 
@@ -66,7 +75,7 @@ class UpdateTaskRequest:
         实例ID
 
         :param instance_id: The instance_id of this UpdateTaskRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -88,7 +97,7 @@ class UpdateTaskRequest:
         任务ID
 
         :param task_id: The task_id of this UpdateTaskRequest.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -98,7 +107,7 @@ class UpdateTaskRequest:
 
 
         :return: The body of this UpdateTaskRequest.
-        :rtype: CreateCommonTaskRequestBody
+        :rtype: :class:`huaweicloudsdkroma.v2.CreateCommonTaskRequestBody`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class UpdateTaskRequest:
 
 
         :param body: The body of this UpdateTaskRequest.
-        :type: CreateCommonTaskRequestBody
+        :type body: :class:`huaweicloudsdkroma.v2.CreateCommonTaskRequestBody`
         """
         self._body = body
 

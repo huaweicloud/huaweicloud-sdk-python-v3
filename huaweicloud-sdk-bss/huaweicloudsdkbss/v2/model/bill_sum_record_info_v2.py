@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BillSumRecordInfoV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -68,7 +67,51 @@ class BillSumRecordInfoV2:
     }
 
     def __init__(self, bill_cycle=None, resource_type_code=None, service_type_code=None, service_type_name=None, resource_type_name=None, charging_mode=None, official_amount=None, official_discount_amount=None, truncated_amount=None, consume_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_value_card_amount=None, debt_amount=None, writeoff_amount=None, cash_amount=None, credit_amount=None, measure_id=None, bill_type=None, customer_id=None):
-        """BillSumRecordInfoV2 - a model defined in huaweicloud sdk"""
+        """BillSumRecordInfoV2
+
+        The model defined in huaweicloud sdk
+
+        :param bill_cycle: 消费汇总数据所在账期，格式：YYYY-MM。
+        :type bill_cycle: str
+        :param resource_type_code: 资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
+        :type resource_type_code: str
+        :param service_type_code: 云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
+        :type service_type_code: str
+        :param service_type_name: 云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
+        :type service_type_name: str
+        :param resource_type_name: 资源类型名称。例如ECS的资源类型名称为“云主机”。
+        :type resource_type_name: str
+        :param charging_mode: 计费模式。 1：包年/包月3：按需10：预留实例
+        :type charging_mode: int
+        :param official_amount: 官网价。
+        :type official_amount: float
+        :param official_discount_amount: 折扣金额。
+        :type official_discount_amount: float
+        :param truncated_amount: 抹零金额。
+        :type truncated_amount: float
+        :param consume_amount: 应付金额。 应付金额&#x3D;官网价-折扣金额-抹零金额
+        :type consume_amount: float
+        :param coupon_amount: 代金券金额。
+        :type coupon_amount: float
+        :param flexipurchase_coupon_amount: 现金券金额，预留。
+        :type flexipurchase_coupon_amount: float
+        :param stored_value_card_amount: 储值卡金额，预留。
+        :type stored_value_card_amount: float
+        :param debt_amount: 欠费金额。即伙伴从客户账户扣费时，客户账户金额不足，欠费的金额。
+        :type debt_amount: float
+        :param writeoff_amount: 欠费核销金额。
+        :type writeoff_amount: float
+        :param cash_amount: 现金账户金额。
+        :type cash_amount: float
+        :param credit_amount: 信用账户金额。
+        :type credit_amount: float
+        :param measure_id: 金额单位。 1：元
+        :type measure_id: int
+        :param bill_type: 账单类型。 1：消费2：退款3：调账
+        :type bill_type: int
+        :param customer_id: 消费的客户账号ID。 如果是普通客户或者企业子客户查询消费记录，只能查询到客户自己的消费记录，且此处显示的是客户自己的客户ID。如果是企业主查询消费记录，可以查询到企业主以及企业子客户的消费记录，此处为消费的实际客户ID。如果是企业主自己的消费记录，则为企业主ID；如果是某个企业子客户的消费记录，则此处为企业子账号ID。
+        :type customer_id: str
+        """
         
         
 
@@ -153,7 +196,7 @@ class BillSumRecordInfoV2:
         消费汇总数据所在账期，格式：YYYY-MM。
 
         :param bill_cycle: The bill_cycle of this BillSumRecordInfoV2.
-        :type: str
+        :type bill_cycle: str
         """
         self._bill_cycle = bill_cycle
 
@@ -175,7 +218,7 @@ class BillSumRecordInfoV2:
         资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
 
         :param resource_type_code: The resource_type_code of this BillSumRecordInfoV2.
-        :type: str
+        :type resource_type_code: str
         """
         self._resource_type_code = resource_type_code
 
@@ -197,7 +240,7 @@ class BillSumRecordInfoV2:
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
         :param service_type_code: The service_type_code of this BillSumRecordInfoV2.
-        :type: str
+        :type service_type_code: str
         """
         self._service_type_code = service_type_code
 
@@ -219,7 +262,7 @@ class BillSumRecordInfoV2:
         云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
 
         :param service_type_name: The service_type_name of this BillSumRecordInfoV2.
-        :type: str
+        :type service_type_name: str
         """
         self._service_type_name = service_type_name
 
@@ -241,7 +284,7 @@ class BillSumRecordInfoV2:
         资源类型名称。例如ECS的资源类型名称为“云主机”。
 
         :param resource_type_name: The resource_type_name of this BillSumRecordInfoV2.
-        :type: str
+        :type resource_type_name: str
         """
         self._resource_type_name = resource_type_name
 
@@ -263,7 +306,7 @@ class BillSumRecordInfoV2:
         计费模式。 1：包年/包月3：按需10：预留实例
 
         :param charging_mode: The charging_mode of this BillSumRecordInfoV2.
-        :type: int
+        :type charging_mode: int
         """
         self._charging_mode = charging_mode
 
@@ -285,7 +328,7 @@ class BillSumRecordInfoV2:
         官网价。
 
         :param official_amount: The official_amount of this BillSumRecordInfoV2.
-        :type: float
+        :type official_amount: float
         """
         self._official_amount = official_amount
 
@@ -307,7 +350,7 @@ class BillSumRecordInfoV2:
         折扣金额。
 
         :param official_discount_amount: The official_discount_amount of this BillSumRecordInfoV2.
-        :type: float
+        :type official_discount_amount: float
         """
         self._official_discount_amount = official_discount_amount
 
@@ -329,7 +372,7 @@ class BillSumRecordInfoV2:
         抹零金额。
 
         :param truncated_amount: The truncated_amount of this BillSumRecordInfoV2.
-        :type: float
+        :type truncated_amount: float
         """
         self._truncated_amount = truncated_amount
 
@@ -351,7 +394,7 @@ class BillSumRecordInfoV2:
         应付金额。 应付金额=官网价-折扣金额-抹零金额
 
         :param consume_amount: The consume_amount of this BillSumRecordInfoV2.
-        :type: float
+        :type consume_amount: float
         """
         self._consume_amount = consume_amount
 
@@ -373,7 +416,7 @@ class BillSumRecordInfoV2:
         代金券金额。
 
         :param coupon_amount: The coupon_amount of this BillSumRecordInfoV2.
-        :type: float
+        :type coupon_amount: float
         """
         self._coupon_amount = coupon_amount
 
@@ -395,7 +438,7 @@ class BillSumRecordInfoV2:
         现金券金额，预留。
 
         :param flexipurchase_coupon_amount: The flexipurchase_coupon_amount of this BillSumRecordInfoV2.
-        :type: float
+        :type flexipurchase_coupon_amount: float
         """
         self._flexipurchase_coupon_amount = flexipurchase_coupon_amount
 
@@ -417,7 +460,7 @@ class BillSumRecordInfoV2:
         储值卡金额，预留。
 
         :param stored_value_card_amount: The stored_value_card_amount of this BillSumRecordInfoV2.
-        :type: float
+        :type stored_value_card_amount: float
         """
         self._stored_value_card_amount = stored_value_card_amount
 
@@ -439,7 +482,7 @@ class BillSumRecordInfoV2:
         欠费金额。即伙伴从客户账户扣费时，客户账户金额不足，欠费的金额。
 
         :param debt_amount: The debt_amount of this BillSumRecordInfoV2.
-        :type: float
+        :type debt_amount: float
         """
         self._debt_amount = debt_amount
 
@@ -461,7 +504,7 @@ class BillSumRecordInfoV2:
         欠费核销金额。
 
         :param writeoff_amount: The writeoff_amount of this BillSumRecordInfoV2.
-        :type: float
+        :type writeoff_amount: float
         """
         self._writeoff_amount = writeoff_amount
 
@@ -483,7 +526,7 @@ class BillSumRecordInfoV2:
         现金账户金额。
 
         :param cash_amount: The cash_amount of this BillSumRecordInfoV2.
-        :type: float
+        :type cash_amount: float
         """
         self._cash_amount = cash_amount
 
@@ -505,7 +548,7 @@ class BillSumRecordInfoV2:
         信用账户金额。
 
         :param credit_amount: The credit_amount of this BillSumRecordInfoV2.
-        :type: float
+        :type credit_amount: float
         """
         self._credit_amount = credit_amount
 
@@ -527,7 +570,7 @@ class BillSumRecordInfoV2:
         金额单位。 1：元
 
         :param measure_id: The measure_id of this BillSumRecordInfoV2.
-        :type: int
+        :type measure_id: int
         """
         self._measure_id = measure_id
 
@@ -549,7 +592,7 @@ class BillSumRecordInfoV2:
         账单类型。 1：消费2：退款3：调账
 
         :param bill_type: The bill_type of this BillSumRecordInfoV2.
-        :type: int
+        :type bill_type: int
         """
         self._bill_type = bill_type
 
@@ -571,7 +614,7 @@ class BillSumRecordInfoV2:
         消费的客户账号ID。 如果是普通客户或者企业子客户查询消费记录，只能查询到客户自己的消费记录，且此处显示的是客户自己的客户ID。如果是企业主查询消费记录，可以查询到企业主以及企业子客户的消费记录，此处为消费的实际客户ID。如果是企业主自己的消费记录，则为企业主ID；如果是某个企业子客户的消费记录，则此处为企业子账号ID。
 
         :param customer_id: The customer_id of this BillSumRecordInfoV2.
-        :type: str
+        :type customer_id: str
         """
         self._customer_id = customer_id
 

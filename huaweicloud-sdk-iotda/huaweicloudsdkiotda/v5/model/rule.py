@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Rule:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class Rule:
     }
 
     def __init__(self, name=None, description=None, condition_group=None, actions=None, rule_type=None, status=None, app_id=None):
-        """Rule - a model defined in huaweicloud sdk"""
+        """Rule
+
+        The model defined in huaweicloud sdk
+
+        :param name: **参数说明**：规则名称。
+        :type name: str
+        :param description: **参数说明**：规则的描述信息。
+        :type description: str
+        :param condition_group: 
+        :type condition_group: :class:`huaweicloudsdkiotda.v5.ConditionGroup`
+        :param actions: **参数说明**：规则的动作列表，单个规则最多支持设置10个动作。
+        :type actions: list[:class:`huaweicloudsdkiotda.v5.RuleAction`]
+        :param rule_type: **参数说明**：规则的类型。 **取值范围**： - DEVICE_LINKAGE：设备联动。 - DATA_FORWARDING：数据转发。 - EDGE：边缘侧。
+        :type rule_type: str
+        :param status: **参数说明**：规则的状态，默认值：active。 **取值范围**： - active：激活。 - inactive：未激活。
+        :type status: str
+        :param app_id: **参数说明**：资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，建议携带该参数指定创建的规则归属到哪个资源空间下，否则创建的规则将会归属到[默认资源空间](https://support.huaweicloud.com/usermanual-iothub/iot_01_0006.html#section0)下。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
+        :type app_id: str
+        """
         
         
 
@@ -84,7 +101,7 @@ class Rule:
         **参数说明**：规则名称。
 
         :param name: The name of this Rule.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -106,7 +123,7 @@ class Rule:
         **参数说明**：规则的描述信息。
 
         :param description: The description of this Rule.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -116,7 +133,7 @@ class Rule:
 
 
         :return: The condition_group of this Rule.
-        :rtype: ConditionGroup
+        :rtype: :class:`huaweicloudsdkiotda.v5.ConditionGroup`
         """
         return self._condition_group
 
@@ -126,7 +143,7 @@ class Rule:
 
 
         :param condition_group: The condition_group of this Rule.
-        :type: ConditionGroup
+        :type condition_group: :class:`huaweicloudsdkiotda.v5.ConditionGroup`
         """
         self._condition_group = condition_group
 
@@ -137,7 +154,7 @@ class Rule:
         **参数说明**：规则的动作列表，单个规则最多支持设置10个动作。
 
         :return: The actions of this Rule.
-        :rtype: list[RuleAction]
+        :rtype: list[:class:`huaweicloudsdkiotda.v5.RuleAction`]
         """
         return self._actions
 
@@ -148,7 +165,7 @@ class Rule:
         **参数说明**：规则的动作列表，单个规则最多支持设置10个动作。
 
         :param actions: The actions of this Rule.
-        :type: list[RuleAction]
+        :type actions: list[:class:`huaweicloudsdkiotda.v5.RuleAction`]
         """
         self._actions = actions
 
@@ -170,7 +187,7 @@ class Rule:
         **参数说明**：规则的类型。 **取值范围**： - DEVICE_LINKAGE：设备联动。 - DATA_FORWARDING：数据转发。 - EDGE：边缘侧。
 
         :param rule_type: The rule_type of this Rule.
-        :type: str
+        :type rule_type: str
         """
         self._rule_type = rule_type
 
@@ -192,7 +209,7 @@ class Rule:
         **参数说明**：规则的状态，默认值：active。 **取值范围**： - active：激活。 - inactive：未激活。
 
         :param status: The status of this Rule.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -214,7 +231,7 @@ class Rule:
         **参数说明**：资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，建议携带该参数指定创建的规则归属到哪个资源空间下，否则创建的规则将会归属到[默认资源空间](https://support.huaweicloud.com/usermanual-iothub/iot_01_0006.html#section0)下。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :param app_id: The app_id of this Rule.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 

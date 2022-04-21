@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ImportImageQuickRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ImportImageQuickRequest:
     }
 
     def __init__(self, body=None):
-        """ImportImageQuickRequest - a model defined in huaweicloud sdk"""
+        """ImportImageQuickRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the ImportImageQuickRequest
+        :type body: :class:`huaweicloudsdkims.v2.QuickImportImageByFileRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class ImportImageQuickRequest:
 
 
         :return: The body of this ImportImageQuickRequest.
-        :rtype: QuickImportImageByFileRequestBody
+        :rtype: :class:`huaweicloudsdkims.v2.QuickImportImageByFileRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class ImportImageQuickRequest:
 
 
         :param body: The body of this ImportImageQuickRequest.
-        :type: QuickImportImageByFileRequestBody
+        :type body: :class:`huaweicloudsdkims.v2.QuickImportImageByFileRequestBody`
         """
         self._body = body
 

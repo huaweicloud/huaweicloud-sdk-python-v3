@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NpuInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class NpuInfo:
     }
 
     def __init__(self, name=None, type=None, capacity=None, driver_version=None):
-        """NpuInfo - a model defined in huaweicloud sdk"""
+        """NpuInfo
+
+        The model defined in huaweicloud sdk
+
+        :param name: NPU名称
+        :type name: str
+        :param type: NPU类型
+        :type type: str
+        :param capacity: NPU memory大小
+        :type capacity: str
+        :param driver_version: NPU驱动版本
+        :type driver_version: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class NpuInfo:
         NPU名称
 
         :param name: The name of this NpuInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -95,7 +106,7 @@ class NpuInfo:
         NPU类型
 
         :param type: The type of this NpuInfo.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -117,7 +128,7 @@ class NpuInfo:
         NPU memory大小
 
         :param capacity: The capacity of this NpuInfo.
-        :type: str
+        :type capacity: str
         """
         self._capacity = capacity
 
@@ -139,7 +150,7 @@ class NpuInfo:
         NPU驱动版本
 
         :param driver_version: The driver_version of this NpuInfo.
-        :type: str
+        :type driver_version: str
         """
         self._driver_version = driver_version
 

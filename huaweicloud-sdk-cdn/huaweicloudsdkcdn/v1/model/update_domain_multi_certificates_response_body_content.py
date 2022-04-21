@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDomainMultiCertificatesResponseBodyContent:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
     }
 
     def __init__(self, domain_name=None, https_switch=None, access_origin_way=None, force_redirect_https=None, force_redirect_config=None, http2=None, cert_name=None, certificate=None, certificate_type=None, expiration_time=None):
-        """UpdateDomainMultiCertificatesResponseBodyContent - a model defined in huaweicloud sdk"""
+        """UpdateDomainMultiCertificatesResponseBodyContent
+
+        The model defined in huaweicloud sdk
+
+        :param domain_name: 域名列表
+        :type domain_name: str
+        :param https_switch: https开关(0：\&quot;关闭\&quot;；1：\&quot;设置证书\&quot;)
+        :type https_switch: int
+        :param access_origin_way: 回源方式:1：\&quot;PROTOCOL_FOLLOW\&quot;；2：\&quot;HTTP\&quot;(默认)，3：\&quot;https\&quot;
+        :type access_origin_way: int
+        :param force_redirect_https: 强制跳转HTTPS（0：不强制；1：强制） 为空值时默认设置为关闭。（建议使用force_redirect_config修改配置）
+        :type force_redirect_https: int
+        :param force_redirect_config: 
+        :type force_redirect_config: :class:`huaweicloudsdkcdn.v1.ForceRedirect`
+        :param http2: http2.0（0：关闭；1：开启）
+        :type http2: int
+        :param cert_name: 证书名称。（长度限制为3-32字符）。
+        :type cert_name: str
+        :param certificate: 证书内容
+        :type certificate: str
+        :param certificate_type: 证书类型（0为自有证书 ， 1为托管证书）
+        :type certificate_type: int
+        :param expiration_time: 证书过期时间
+        :type expiration_time: int
+        """
         
         
 
@@ -102,7 +125,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
         域名列表
 
         :param domain_name: The domain_name of this UpdateDomainMultiCertificatesResponseBodyContent.
-        :type: str
+        :type domain_name: str
         """
         self._domain_name = domain_name
 
@@ -124,7 +147,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
         https开关(0：\"关闭\"；1：\"设置证书\")
 
         :param https_switch: The https_switch of this UpdateDomainMultiCertificatesResponseBodyContent.
-        :type: int
+        :type https_switch: int
         """
         self._https_switch = https_switch
 
@@ -146,7 +169,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
         回源方式:1：\"PROTOCOL_FOLLOW\"；2：\"HTTP\"(默认)，3：\"https\"
 
         :param access_origin_way: The access_origin_way of this UpdateDomainMultiCertificatesResponseBodyContent.
-        :type: int
+        :type access_origin_way: int
         """
         self._access_origin_way = access_origin_way
 
@@ -168,7 +191,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
         强制跳转HTTPS（0：不强制；1：强制） 为空值时默认设置为关闭。（建议使用force_redirect_config修改配置）
 
         :param force_redirect_https: The force_redirect_https of this UpdateDomainMultiCertificatesResponseBodyContent.
-        :type: int
+        :type force_redirect_https: int
         """
         self._force_redirect_https = force_redirect_https
 
@@ -178,7 +201,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
 
 
         :return: The force_redirect_config of this UpdateDomainMultiCertificatesResponseBodyContent.
-        :rtype: ForceRedirect
+        :rtype: :class:`huaweicloudsdkcdn.v1.ForceRedirect`
         """
         return self._force_redirect_config
 
@@ -188,7 +211,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
 
 
         :param force_redirect_config: The force_redirect_config of this UpdateDomainMultiCertificatesResponseBodyContent.
-        :type: ForceRedirect
+        :type force_redirect_config: :class:`huaweicloudsdkcdn.v1.ForceRedirect`
         """
         self._force_redirect_config = force_redirect_config
 
@@ -210,7 +233,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
         http2.0（0：关闭；1：开启）
 
         :param http2: The http2 of this UpdateDomainMultiCertificatesResponseBodyContent.
-        :type: int
+        :type http2: int
         """
         self._http2 = http2
 
@@ -232,7 +255,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
         证书名称。（长度限制为3-32字符）。
 
         :param cert_name: The cert_name of this UpdateDomainMultiCertificatesResponseBodyContent.
-        :type: str
+        :type cert_name: str
         """
         self._cert_name = cert_name
 
@@ -254,7 +277,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
         证书内容
 
         :param certificate: The certificate of this UpdateDomainMultiCertificatesResponseBodyContent.
-        :type: str
+        :type certificate: str
         """
         self._certificate = certificate
 
@@ -276,7 +299,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
         证书类型（0为自有证书 ， 1为托管证书）
 
         :param certificate_type: The certificate_type of this UpdateDomainMultiCertificatesResponseBodyContent.
-        :type: int
+        :type certificate_type: int
         """
         self._certificate_type = certificate_type
 
@@ -298,7 +321,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
         证书过期时间
 
         :param expiration_time: The expiration_time of this UpdateDomainMultiCertificatesResponseBodyContent.
-        :type: int
+        :type expiration_time: int
         """
         self._expiration_time = expiration_time
 

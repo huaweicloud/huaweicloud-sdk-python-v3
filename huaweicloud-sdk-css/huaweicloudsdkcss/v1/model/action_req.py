@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ActionReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ActionReq:
     }
 
     def __init__(self, action=None):
-        """ActionReq - a model defined in huaweicloud sdk"""
+        """ActionReq
+
+        The model defined in huaweicloud sdk
+
+        :param action: 集群当前行为，REBOOTING表示重启，GROWING表示扩容，RESTORING表示恢复集群，SNAPSHOTTING表示创建快照。
+        :type action: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class ActionReq:
         集群当前行为，REBOOTING表示重启，GROWING表示扩容，RESTORING表示恢复集群，SNAPSHOTTING表示创建快照。
 
         :param action: The action of this ActionReq.
-        :type: str
+        :type action: str
         """
         self._action = action
 

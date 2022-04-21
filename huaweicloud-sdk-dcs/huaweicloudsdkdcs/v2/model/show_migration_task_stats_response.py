@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowMigrationTaskStatsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ShowMigrationTaskStatsResponse(SdkResponse):
     }
 
     def __init__(self, full_migration_progress=None, offset=None, source_dbsize=None, target_dbsize=None, target_input_kbps=None, target_ops=None, is_migrating=None):
-        """ShowMigrationTaskStatsResponse - a model defined in huaweicloud sdk"""
+        """ShowMigrationTaskStatsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param full_migration_progress: 全量迁移进度百分比。
+        :type full_migration_progress: str
+        :param offset: 增量迁移偏移量。
+        :type offset: str
+        :param source_dbsize: 源redis键数量
+        :type source_dbsize: str
+        :param target_dbsize: 目标redis键数量
+        :type target_dbsize: str
+        :param target_input_kbps: 目标redis键写入流量，单位KB/s
+        :type target_input_kbps: str
+        :param target_ops: 目标redis每秒并发操作数
+        :type target_ops: str
+        :param is_migrating: 迁移任务是否在进行
+        :type is_migrating: bool
+        """
         
         super(ShowMigrationTaskStatsResponse, self).__init__()
 
@@ -88,7 +105,7 @@ class ShowMigrationTaskStatsResponse(SdkResponse):
         全量迁移进度百分比。
 
         :param full_migration_progress: The full_migration_progress of this ShowMigrationTaskStatsResponse.
-        :type: str
+        :type full_migration_progress: str
         """
         self._full_migration_progress = full_migration_progress
 
@@ -110,7 +127,7 @@ class ShowMigrationTaskStatsResponse(SdkResponse):
         增量迁移偏移量。
 
         :param offset: The offset of this ShowMigrationTaskStatsResponse.
-        :type: str
+        :type offset: str
         """
         self._offset = offset
 
@@ -132,7 +149,7 @@ class ShowMigrationTaskStatsResponse(SdkResponse):
         源redis键数量
 
         :param source_dbsize: The source_dbsize of this ShowMigrationTaskStatsResponse.
-        :type: str
+        :type source_dbsize: str
         """
         self._source_dbsize = source_dbsize
 
@@ -154,7 +171,7 @@ class ShowMigrationTaskStatsResponse(SdkResponse):
         目标redis键数量
 
         :param target_dbsize: The target_dbsize of this ShowMigrationTaskStatsResponse.
-        :type: str
+        :type target_dbsize: str
         """
         self._target_dbsize = target_dbsize
 
@@ -176,7 +193,7 @@ class ShowMigrationTaskStatsResponse(SdkResponse):
         目标redis键写入流量，单位KB/s
 
         :param target_input_kbps: The target_input_kbps of this ShowMigrationTaskStatsResponse.
-        :type: str
+        :type target_input_kbps: str
         """
         self._target_input_kbps = target_input_kbps
 
@@ -198,7 +215,7 @@ class ShowMigrationTaskStatsResponse(SdkResponse):
         目标redis每秒并发操作数
 
         :param target_ops: The target_ops of this ShowMigrationTaskStatsResponse.
-        :type: str
+        :type target_ops: str
         """
         self._target_ops = target_ops
 
@@ -220,7 +237,7 @@ class ShowMigrationTaskStatsResponse(SdkResponse):
         迁移任务是否在进行
 
         :param is_migrating: The is_migrating of this ShowMigrationTaskStatsResponse.
-        :type: bool
+        :type is_migrating: bool
         """
         self._is_migrating = is_migrating
 

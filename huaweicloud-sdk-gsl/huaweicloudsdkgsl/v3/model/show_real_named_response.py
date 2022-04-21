@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowRealNamedResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowRealNamedResponse(SdkResponse):
     }
 
     def __init__(self, iccid=None, real_named=None):
-        """ShowRealNamedResponse - a model defined in huaweicloud sdk"""
+        """ShowRealNamedResponse
+
+        The model defined in huaweicloud sdk
+
+        :param iccid: ICCID
+        :type iccid: str
+        :param real_named: 是否已实名认证: true表示是，false表示否。
+        :type real_named: bool
+        """
         
         super(ShowRealNamedResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ShowRealNamedResponse(SdkResponse):
         ICCID
 
         :param iccid: The iccid of this ShowRealNamedResponse.
-        :type: str
+        :type iccid: str
         """
         self._iccid = iccid
 
@@ -85,7 +92,7 @@ class ShowRealNamedResponse(SdkResponse):
         是否已实名认证: true表示是，false表示否。
 
         :param real_named: The real_named of this ShowRealNamedResponse.
-        :type: bool
+        :type real_named: bool
         """
         self._real_named = real_named
 

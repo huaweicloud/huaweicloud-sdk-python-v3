@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchMetricData:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class BatchMetricData:
     }
 
     def __init__(self, unit=None, datapoints=None, namespace=None, metric_name=None, dimensions=None):
-        """BatchMetricData - a model defined in huaweicloud sdk"""
+        """BatchMetricData
+
+        The model defined in huaweicloud sdk
+
+        :param unit: 指标单位。
+        :type unit: str
+        :param datapoints: 指标数据列表。由于查询数据时，云监控会根据所选择的聚合粒度向前取整from参数，所以datapoints中包含的数据点有可能会多于预期。
+        :type datapoints: list[:class:`huaweicloudsdkces.v1.DatapointForBatchMetric`]
+        :param namespace: 指标命名空间，格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_，总长度最短为3，最大为32；各服务的命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
+        :type namespace: str
+        :param metric_name: 指标名称，例如弹性云服务器监控指标中的cpu_util；各服务的指标名称可查看：“[服务指标名称](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
+        :type metric_name: str
+        :param dimensions: 指标维度列表。
+        :type dimensions: list[:class:`huaweicloudsdkces.v1.MetricsDimension`]
+        """
         
         
 
@@ -76,7 +89,7 @@ class BatchMetricData:
         指标单位。
 
         :param unit: The unit of this BatchMetricData.
-        :type: str
+        :type unit: str
         """
         self._unit = unit
 
@@ -87,7 +100,7 @@ class BatchMetricData:
         指标数据列表。由于查询数据时，云监控会根据所选择的聚合粒度向前取整from参数，所以datapoints中包含的数据点有可能会多于预期。
 
         :return: The datapoints of this BatchMetricData.
-        :rtype: list[DatapointForBatchMetric]
+        :rtype: list[:class:`huaweicloudsdkces.v1.DatapointForBatchMetric`]
         """
         return self._datapoints
 
@@ -98,7 +111,7 @@ class BatchMetricData:
         指标数据列表。由于查询数据时，云监控会根据所选择的聚合粒度向前取整from参数，所以datapoints中包含的数据点有可能会多于预期。
 
         :param datapoints: The datapoints of this BatchMetricData.
-        :type: list[DatapointForBatchMetric]
+        :type datapoints: list[:class:`huaweicloudsdkces.v1.DatapointForBatchMetric`]
         """
         self._datapoints = datapoints
 
@@ -120,7 +133,7 @@ class BatchMetricData:
         指标命名空间，格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_，总长度最短为3，最大为32；各服务的命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
         :param namespace: The namespace of this BatchMetricData.
-        :type: str
+        :type namespace: str
         """
         self._namespace = namespace
 
@@ -142,7 +155,7 @@ class BatchMetricData:
         指标名称，例如弹性云服务器监控指标中的cpu_util；各服务的指标名称可查看：“[服务指标名称](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
         :param metric_name: The metric_name of this BatchMetricData.
-        :type: str
+        :type metric_name: str
         """
         self._metric_name = metric_name
 
@@ -153,7 +166,7 @@ class BatchMetricData:
         指标维度列表。
 
         :return: The dimensions of this BatchMetricData.
-        :rtype: list[MetricsDimension]
+        :rtype: list[:class:`huaweicloudsdkces.v1.MetricsDimension`]
         """
         return self._dimensions
 
@@ -164,7 +177,7 @@ class BatchMetricData:
         指标维度列表。
 
         :param dimensions: The dimensions of this BatchMetricData.
-        :type: list[MetricsDimension]
+        :type dimensions: list[:class:`huaweicloudsdkces.v1.MetricsDimension`]
         """
         self._dimensions = dimensions
 

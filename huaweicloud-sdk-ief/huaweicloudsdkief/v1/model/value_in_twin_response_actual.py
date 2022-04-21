@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ValueInTwinResponseActual:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ValueInTwinResponseActual:
     }
 
     def __init__(self, value=None):
-        """ValueInTwinResponseActual - a model defined in huaweicloud sdk"""
+        """ValueInTwinResponseActual
+
+        The model defined in huaweicloud sdk
+
+        :param value: 动态属性的初始值，最大长度512， value允许英文字母、数字、下划线、中划线、点、逗号、冒号、/、@、#
+        :type value: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class ValueInTwinResponseActual:
         动态属性的初始值，最大长度512， value允许英文字母、数字、下划线、中划线、点、逗号、冒号、/、@、#
 
         :param value: The value of this ValueInTwinResponseActual.
-        :type: str
+        :type value: str
         """
         self._value = value
 

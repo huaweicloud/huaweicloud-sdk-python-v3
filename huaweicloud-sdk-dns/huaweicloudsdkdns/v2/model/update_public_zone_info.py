@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdatePublicZoneInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdatePublicZoneInfo:
     }
 
     def __init__(self, description=None, email=None, ttl=None):
-        """UpdatePublicZoneInfo - a model defined in huaweicloud sdk"""
+        """UpdatePublicZoneInfo
+
+        The model defined in huaweicloud sdk
+
+        :param description: 域名的描述信息。长度不超过255个字符。
+        :type description: str
+        :param email: 管理该zone的管理员邮箱。  如果为空，表示维持原值。  默认值为空。
+        :type email: str
+        :param ttl: 用于填写默认生成的SOA记录中有效缓存时间，以秒为单位。
+        :type ttl: int
+        """
         
         
 
@@ -68,7 +77,7 @@ class UpdatePublicZoneInfo:
         域名的描述信息。长度不超过255个字符。
 
         :param description: The description of this UpdatePublicZoneInfo.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -90,7 +99,7 @@ class UpdatePublicZoneInfo:
         管理该zone的管理员邮箱。  如果为空，表示维持原值。  默认值为空。
 
         :param email: The email of this UpdatePublicZoneInfo.
-        :type: str
+        :type email: str
         """
         self._email = email
 
@@ -112,7 +121,7 @@ class UpdatePublicZoneInfo:
         用于填写默认生成的SOA记录中有效缓存时间，以秒为单位。
 
         :param ttl: The ttl of this UpdatePublicZoneInfo.
-        :type: int
+        :type ttl: int
         """
         self._ttl = ttl
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListBlockchainsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class ListBlockchainsRequest:
     }
 
     def __init__(self):
-        """ListBlockchainsRequest - a model defined in huaweicloud sdk"""
+        """ListBlockchainsRequest
+
+        The model defined in huaweicloud sdk
+
+        """
         
         
         self.discriminator = None

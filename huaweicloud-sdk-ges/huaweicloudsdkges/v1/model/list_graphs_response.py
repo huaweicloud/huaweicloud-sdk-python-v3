@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListGraphsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListGraphsResponse(SdkResponse):
     }
 
     def __init__(self, graph_count=None, graphs=None, error_message=None, error_code=None):
-        """ListGraphsResponse - a model defined in huaweicloud sdk"""
+        """ListGraphsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param graph_count: 图总个数。请求失败时为空。
+        :type graph_count: int
+        :param graphs: 图列表。请求失败时为空。
+        :type graphs: list[:class:`huaweicloudsdkges.v1.Graph1`]
+        :param error_message: 系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误信息。
+        :type error_message: str
+        :param error_code: 系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误码。
+        :type error_code: str
+        """
         
         super(ListGraphsResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class ListGraphsResponse(SdkResponse):
         图总个数。请求失败时为空。
 
         :param graph_count: The graph_count of this ListGraphsResponse.
-        :type: int
+        :type graph_count: int
         """
         self._graph_count = graph_count
 
@@ -84,7 +95,7 @@ class ListGraphsResponse(SdkResponse):
         图列表。请求失败时为空。
 
         :return: The graphs of this ListGraphsResponse.
-        :rtype: list[Graph1]
+        :rtype: list[:class:`huaweicloudsdkges.v1.Graph1`]
         """
         return self._graphs
 
@@ -95,7 +106,7 @@ class ListGraphsResponse(SdkResponse):
         图列表。请求失败时为空。
 
         :param graphs: The graphs of this ListGraphsResponse.
-        :type: list[Graph1]
+        :type graphs: list[:class:`huaweicloudsdkges.v1.Graph1`]
         """
         self._graphs = graphs
 
@@ -117,7 +128,7 @@ class ListGraphsResponse(SdkResponse):
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误信息。
 
         :param error_message: The error_message of this ListGraphsResponse.
-        :type: str
+        :type error_message: str
         """
         self._error_message = error_message
 
@@ -139,7 +150,7 @@ class ListGraphsResponse(SdkResponse):
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误码。
 
         :param error_code: The error_code of this ListGraphsResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 

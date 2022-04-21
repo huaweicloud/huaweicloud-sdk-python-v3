@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowProductConfigResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowProductConfigResponse(SdkResponse):
     }
 
     def __init__(self, service_id=None, service_type=None, description=None, properties=None):
-        """ShowProductConfigResponse - a model defined in huaweicloud sdk"""
+        """ShowProductConfigResponse
+
+        The model defined in huaweicloud sdk
+
+        :param service_id: 服务id
+        :type service_id: str
+        :param service_type: 服务类型
+        :type service_type: str
+        :param description: 描述
+        :type description: str
+        :param properties: 属性
+        :type properties: list[object]
+        """
         
         super(ShowProductConfigResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class ShowProductConfigResponse(SdkResponse):
         服务id
 
         :param service_id: The service_id of this ShowProductConfigResponse.
-        :type: str
+        :type service_id: str
         """
         self._service_id = service_id
 
@@ -95,7 +106,7 @@ class ShowProductConfigResponse(SdkResponse):
         服务类型
 
         :param service_type: The service_type of this ShowProductConfigResponse.
-        :type: str
+        :type service_type: str
         """
         self._service_type = service_type
 
@@ -117,7 +128,7 @@ class ShowProductConfigResponse(SdkResponse):
         描述
 
         :param description: The description of this ShowProductConfigResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -139,7 +150,7 @@ class ShowProductConfigResponse(SdkResponse):
         属性
 
         :param properties: The properties of this ShowProductConfigResponse.
-        :type: list[object]
+        :type properties: list[object]
         """
         self._properties = properties
 

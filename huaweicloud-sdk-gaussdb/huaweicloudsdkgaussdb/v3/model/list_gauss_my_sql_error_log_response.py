@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListGaussMySqlErrorLogResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListGaussMySqlErrorLogResponse(SdkResponse):
     }
 
     def __init__(self, error_log_list=None, total_record=None):
-        """ListGaussMySqlErrorLogResponse - a model defined in huaweicloud sdk"""
+        """ListGaussMySqlErrorLogResponse
+
+        The model defined in huaweicloud sdk
+
+        :param error_log_list: 错误日志具体信息。
+        :type error_log_list: list[:class:`huaweicloudsdkgaussdb.v3.MysqlErrorLogList`]
+        :param total_record: 总记录数。
+        :type total_record: int
+        """
         
         super(ListGaussMySqlErrorLogResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListGaussMySqlErrorLogResponse(SdkResponse):
         错误日志具体信息。
 
         :return: The error_log_list of this ListGaussMySqlErrorLogResponse.
-        :rtype: list[MysqlErrorLogList]
+        :rtype: list[:class:`huaweicloudsdkgaussdb.v3.MysqlErrorLogList`]
         """
         return self._error_log_list
 
@@ -63,7 +70,7 @@ class ListGaussMySqlErrorLogResponse(SdkResponse):
         错误日志具体信息。
 
         :param error_log_list: The error_log_list of this ListGaussMySqlErrorLogResponse.
-        :type: list[MysqlErrorLogList]
+        :type error_log_list: list[:class:`huaweicloudsdkgaussdb.v3.MysqlErrorLogList`]
         """
         self._error_log_list = error_log_list
 
@@ -85,7 +92,7 @@ class ListGaussMySqlErrorLogResponse(SdkResponse):
         总记录数。
 
         :param total_record: The total_record of this ListGaussMySqlErrorLogResponse.
-        :type: int
+        :type total_record: int
         """
         self._total_record = total_record
 

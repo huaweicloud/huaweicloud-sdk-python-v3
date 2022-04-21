@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PublishAppMessageResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class PublishAppMessageResponse(SdkResponse):
     }
 
     def __init__(self, message_id=None, request_id=None):
-        """PublishAppMessageResponse - a model defined in huaweicloud sdk"""
+        """PublishAppMessageResponse
+
+        The model defined in huaweicloud sdk
+
+        :param message_id: 唯一的消息ID。
+        :type message_id: str
+        :param request_id: 请求的唯一标识ID。
+        :type request_id: str
+        """
         
         super(PublishAppMessageResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class PublishAppMessageResponse(SdkResponse):
         唯一的消息ID。
 
         :param message_id: The message_id of this PublishAppMessageResponse.
-        :type: str
+        :type message_id: str
         """
         self._message_id = message_id
 
@@ -85,7 +92,7 @@ class PublishAppMessageResponse(SdkResponse):
         请求的唯一标识ID。
 
         :param request_id: The request_id of this PublishAppMessageResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 

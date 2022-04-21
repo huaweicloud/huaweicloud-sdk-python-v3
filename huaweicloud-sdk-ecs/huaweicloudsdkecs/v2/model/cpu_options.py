@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CpuOptions:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CpuOptions:
     }
 
     def __init__(self, hwcpu_threads=None):
-        """CpuOptions - a model defined in huaweicloud sdk"""
+        """CpuOptions
+
+        The model defined in huaweicloud sdk
+
+        :param hwcpu_threads: CPU超线程数， 决定CPU是否开启超线程
+        :type hwcpu_threads: int
+        """
         
         
 
@@ -58,7 +63,7 @@ class CpuOptions:
         CPU超线程数， 决定CPU是否开启超线程
 
         :param hwcpu_threads: The hwcpu_threads of this CpuOptions.
-        :type: int
+        :type hwcpu_threads: int
         """
         self._hwcpu_threads = hwcpu_threads
 

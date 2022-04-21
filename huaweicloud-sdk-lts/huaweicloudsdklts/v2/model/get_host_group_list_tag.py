@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GetHostGroupListTag:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class GetHostGroupListTag:
     }
 
     def __init__(self, tag_type=None, tag_list=None):
-        """GetHostGroupListTag - a model defined in huaweicloud sdk"""
+        """GetHostGroupListTag
+
+        The model defined in huaweicloud sdk
+
+        :param tag_type: 标签类型。AND：标签过滤的逻辑为与，OR：标签过滤的逻辑为或
+        :type tag_type: str
+        :param tag_list: 主机组标签
+        :type tag_list: list[:class:`huaweicloudsdklts.v2.HostGroupTag`]
+        """
         
         
 
@@ -63,7 +70,7 @@ class GetHostGroupListTag:
         标签类型。AND：标签过滤的逻辑为与，OR：标签过滤的逻辑为或
 
         :param tag_type: The tag_type of this GetHostGroupListTag.
-        :type: str
+        :type tag_type: str
         """
         self._tag_type = tag_type
 
@@ -74,7 +81,7 @@ class GetHostGroupListTag:
         主机组标签
 
         :return: The tag_list of this GetHostGroupListTag.
-        :rtype: list[HostGroupTag]
+        :rtype: list[:class:`huaweicloudsdklts.v2.HostGroupTag`]
         """
         return self._tag_list
 
@@ -85,7 +92,7 @@ class GetHostGroupListTag:
         主机组标签
 
         :param tag_list: The tag_list of this GetHostGroupListTag.
-        :type: list[HostGroupTag]
+        :type tag_list: list[:class:`huaweicloudsdklts.v2.HostGroupTag`]
         """
         self._tag_list = tag_list
 

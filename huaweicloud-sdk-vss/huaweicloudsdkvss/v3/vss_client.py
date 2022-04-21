@@ -52,21 +52,17 @@ class VssClient(Client):
         """认证域名资产
 
         认证租户的域名资产
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param AuthorizeDomainsRequest request
-        :return: AuthorizeDomainsResponse
+        :param request: Request instance for AuthorizeDomains
+        :type request: :class:`huaweicloudsdkvss.v3.AuthorizeDomainsRequest`
+        :rtype: :class:`huaweicloudsdkvss.v3.AuthorizeDomainsResponse`
         """
         return self.authorize_domains_with_http_info(request)
 
     def authorize_domains_with_http_info(self, request):
-        """认证域名资产
-
-        认证租户的域名资产
-
-        :param AuthorizeDomainsRequest request
-        :return: AuthorizeDomainsResponse
-        """
-
         all_params = ['authorize_domains_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -110,26 +106,21 @@ class VssClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_domains(self, request):
         """创建域名资产
 
         创建租户的域名资产
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateDomainsRequest request
-        :return: CreateDomainsResponse
+        :param request: Request instance for CreateDomains
+        :type request: :class:`huaweicloudsdkvss.v3.CreateDomainsRequest`
+        :rtype: :class:`huaweicloudsdkvss.v3.CreateDomainsResponse`
         """
         return self.create_domains_with_http_info(request)
 
     def create_domains_with_http_info(self, request):
-        """创建域名资产
-
-        创建租户的域名资产
-
-        :param CreateDomainsRequest request
-        :return: CreateDomainsResponse
-        """
-
         all_params = ['create_domains_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -173,26 +164,21 @@ class VssClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_domains(self, request):
         """删除域名资产
 
         删除租户的域名资产
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteDomainsRequest request
-        :return: DeleteDomainsResponse
+        :param request: Request instance for DeleteDomains
+        :type request: :class:`huaweicloudsdkvss.v3.DeleteDomainsRequest`
+        :rtype: :class:`huaweicloudsdkvss.v3.DeleteDomainsResponse`
         """
         return self.delete_domains_with_http_info(request)
 
     def delete_domains_with_http_info(self, request):
-        """删除域名资产
-
-        删除租户的域名资产
-
-        :param DeleteDomainsRequest request
-        :return: DeleteDomainsResponse
-        """
-
         all_params = ['domain_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -236,26 +222,21 @@ class VssClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_domains(self, request):
         """获取域名资产
 
         获取租户的所有域名资产
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListDomainsRequest request
-        :return: ListDomainsResponse
+        :param request: Request instance for ListDomains
+        :type request: :class:`huaweicloudsdkvss.v3.ListDomainsRequest`
+        :rtype: :class:`huaweicloudsdkvss.v3.ListDomainsResponse`
         """
         return self.list_domains_with_http_info(request)
 
     def list_domains_with_http_info(self, request):
-        """获取域名资产
-
-        获取租户的所有域名资产
-
-        :param ListDomainsRequest request
-        :return: ListDomainsResponse
-        """
-
         all_params = ['domain_id', 'auth_status', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -305,26 +286,21 @@ class VssClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_domain_settings(self, request):
         """获取域名配置
 
         获取域名登录配置
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowDomainSettingsRequest request
-        :return: ShowDomainSettingsResponse
+        :param request: Request instance for ShowDomainSettings
+        :type request: :class:`huaweicloudsdkvss.v3.ShowDomainSettingsRequest`
+        :rtype: :class:`huaweicloudsdkvss.v3.ShowDomainSettingsResponse`
         """
         return self.show_domain_settings_with_http_info(request)
 
     def show_domain_settings_with_http_info(self, request):
-        """获取域名配置
-
-        获取域名登录配置
-
-        :param ShowDomainSettingsRequest request
-        :return: ShowDomainSettingsResponse
-        """
-
         all_params = ['domain_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -368,26 +344,21 @@ class VssClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_domain_settings(self, request):
         """更新域名配置
 
         更新域名登录配置
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateDomainSettingsRequest request
-        :return: UpdateDomainSettingsResponse
+        :param request: Request instance for UpdateDomainSettings
+        :type request: :class:`huaweicloudsdkvss.v3.UpdateDomainSettingsRequest`
+        :rtype: :class:`huaweicloudsdkvss.v3.UpdateDomainSettingsResponse`
         """
         return self.update_domain_settings_with_http_info(request)
 
     def update_domain_settings_with_http_info(self, request):
-        """更新域名配置
-
-        更新域名登录配置
-
-        :param UpdateDomainSettingsRequest request
-        :return: UpdateDomainSettingsResponse
-        """
-
         all_params = ['update_domain_settings_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -431,26 +402,21 @@ class VssClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_business_risks(self, request):
         """获取业务风险扫描结果
 
         获取域名业务风险扫描结果
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListBusinessRisksRequest request
-        :return: ListBusinessRisksResponse
+        :param request: Request instance for ListBusinessRisks
+        :type request: :class:`huaweicloudsdkvss.v3.ListBusinessRisksRequest`
+        :rtype: :class:`huaweicloudsdkvss.v3.ListBusinessRisksResponse`
         """
         return self.list_business_risks_with_http_info(request)
 
     def list_business_risks_with_http_info(self, request):
-        """获取业务风险扫描结果
-
-        获取域名业务风险扫描结果
-
-        :param ListBusinessRisksRequest request
-        :return: ListBusinessRisksResponse
-        """
-
         all_params = ['task_id', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -498,26 +464,21 @@ class VssClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_port_results(self, request):
         """获取端口扫描结果
 
         获取域名端口扫描结果
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListPortResultsRequest request
-        :return: ListPortResultsResponse
+        :param request: Request instance for ListPortResults
+        :type request: :class:`huaweicloudsdkvss.v3.ListPortResultsRequest`
+        :rtype: :class:`huaweicloudsdkvss.v3.ListPortResultsResponse`
         """
         return self.list_port_results_with_http_info(request)
 
     def list_port_results_with_http_info(self, request):
-        """获取端口扫描结果
-
-        获取域名端口扫描结果
-
-        :param ListPortResultsRequest request
-        :return: ListPortResultsResponse
-        """
-
         all_params = ['task_id', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -565,26 +526,21 @@ class VssClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_results(self, request):
         """获取扫描结果
 
         获取域名漏洞扫描结果
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowResultsRequest request
-        :return: ShowResultsResponse
+        :param request: Request instance for ShowResults
+        :type request: :class:`huaweicloudsdkvss.v3.ShowResultsRequest`
+        :rtype: :class:`huaweicloudsdkvss.v3.ShowResultsResponse`
         """
         return self.show_results_with_http_info(request)
 
     def show_results_with_http_info(self, request):
-        """获取扫描结果
-
-        获取域名漏洞扫描结果
-
-        :param ShowResultsRequest request
-        :return: ShowResultsResponse
-        """
-
         all_params = ['task_id', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -632,26 +588,21 @@ class VssClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_false_positive(self, request):
         """更新漏洞的误报状态
 
         更新域名扫描漏洞的误报状态
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateFalsePositiveRequest request
-        :return: UpdateFalsePositiveResponse
+        :param request: Request instance for UpdateFalsePositive
+        :type request: :class:`huaweicloudsdkvss.v3.UpdateFalsePositiveRequest`
+        :rtype: :class:`huaweicloudsdkvss.v3.UpdateFalsePositiveResponse`
         """
         return self.update_false_positive_with_http_info(request)
 
     def update_false_positive_with_http_info(self, request):
-        """更新漏洞的误报状态
-
-        更新域名扫描漏洞的误报状态
-
-        :param UpdateFalsePositiveRequest request
-        :return: UpdateFalsePositiveResponse
-        """
-
         all_params = ['update_false_positive_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -695,26 +646,21 @@ class VssClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def cancel_tasks(self, request):
         """取消或重启扫描任务
 
         取消或重启域名漏洞扫描任务
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CancelTasksRequest request
-        :return: CancelTasksResponse
+        :param request: Request instance for CancelTasks
+        :type request: :class:`huaweicloudsdkvss.v3.CancelTasksRequest`
+        :rtype: :class:`huaweicloudsdkvss.v3.CancelTasksResponse`
         """
         return self.cancel_tasks_with_http_info(request)
 
     def cancel_tasks_with_http_info(self, request):
-        """取消或重启扫描任务
-
-        取消或重启域名漏洞扫描任务
-
-        :param CancelTasksRequest request
-        :return: CancelTasksResponse
-        """
-
         all_params = ['cancel_tasks_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -758,26 +704,21 @@ class VssClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_tasks(self, request):
         """创建扫描任务并启动
 
         创建域名漏洞扫描任务并启动
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateTasksRequest request
-        :return: CreateTasksResponse
+        :param request: Request instance for CreateTasks
+        :type request: :class:`huaweicloudsdkvss.v3.CreateTasksRequest`
+        :rtype: :class:`huaweicloudsdkvss.v3.CreateTasksResponse`
         """
         return self.create_tasks_with_http_info(request)
 
     def create_tasks_with_http_info(self, request):
-        """创建扫描任务并启动
-
-        创建域名漏洞扫描任务并启动
-
-        :param CreateTasksRequest request
-        :return: CreateTasksResponse
-        """
-
         all_params = ['create_tasks_request_body', 'upgrade']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -823,26 +764,21 @@ class VssClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_task_histories(self, request):
         """获取域名的历史扫描任务
 
         获取域名漏洞扫描的历史扫描任务
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListTaskHistoriesRequest request
-        :return: ListTaskHistoriesResponse
+        :param request: Request instance for ListTaskHistories
+        :type request: :class:`huaweicloudsdkvss.v3.ListTaskHistoriesRequest`
+        :rtype: :class:`huaweicloudsdkvss.v3.ListTaskHistoriesResponse`
         """
         return self.list_task_histories_with_http_info(request)
 
     def list_task_histories_with_http_info(self, request):
-        """获取域名的历史扫描任务
-
-        获取域名漏洞扫描的历史扫描任务
-
-        :param ListTaskHistoriesRequest request
-        :return: ListTaskHistoriesResponse
-        """
-
         all_params = ['domain_id', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -890,26 +826,21 @@ class VssClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_tasks(self, request):
         """获取扫描任务详情
 
         获取域名漏洞扫描任务详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowTasksRequest request
-        :return: ShowTasksResponse
+        :param request: Request instance for ShowTasks
+        :type request: :class:`huaweicloudsdkvss.v3.ShowTasksRequest`
+        :rtype: :class:`huaweicloudsdkvss.v3.ShowTasksResponse`
         """
         return self.show_tasks_with_http_info(request)
 
     def show_tasks_with_http_info(self, request):
-        """获取扫描任务详情
-
-        获取域名漏洞扫描任务详情
-
-        :param ShowTasksRequest request
-        :return: ShowTasksResponse
-        """
-
         all_params = ['task_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -952,7 +883,6 @@ class VssClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

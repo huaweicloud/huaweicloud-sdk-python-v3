@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AppState:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AppState:
     }
 
     def __init__(self, state=None, update_time=None):
-        """AppState - a model defined in huaweicloud sdk"""
+        """AppState
+
+        The model defined in huaweicloud sdk
+
+        :param state: 状态 - ACTIVATION：开启 - DEACTIVATION：停用 - ARREARS：欠费 - DELETED：已删除 
+        :type state: str
+        :param update_time: app鉴权的更新时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
+        :type update_time: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class AppState:
         状态 - ACTIVATION：开启 - DEACTIVATION：停用 - ARREARS：欠费 - DELETED：已删除 
 
         :param state: The state of this AppState.
-        :type: str
+        :type state: str
         """
         self._state = state
 
@@ -85,7 +92,7 @@ class AppState:
         app鉴权的更新时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
 
         :param update_time: The update_time of this AppState.
-        :type: str
+        :type update_time: str
         """
         self._update_time = update_time
 

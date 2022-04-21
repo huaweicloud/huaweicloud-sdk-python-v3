@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class HttpGetDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class HttpGetDTO:
     }
 
     def __init__(self, path=None, port=None, host=None, scheme=None):
-        """HttpGetDTO - a model defined in huaweicloud sdk"""
+        """HttpGetDTO
+
+        The model defined in huaweicloud sdk
+
+        :param path: 请求路径
+        :type path: str
+        :param port: 端口
+        :type port: int
+        :param host: 主机地址
+        :type host: str
+        :param scheme: 协议类型
+        :type scheme: str
+        """
         
         
 
@@ -70,7 +81,7 @@ class HttpGetDTO:
         请求路径
 
         :param path: The path of this HttpGetDTO.
-        :type: str
+        :type path: str
         """
         self._path = path
 
@@ -92,7 +103,7 @@ class HttpGetDTO:
         端口
 
         :param port: The port of this HttpGetDTO.
-        :type: int
+        :type port: int
         """
         self._port = port
 
@@ -114,7 +125,7 @@ class HttpGetDTO:
         主机地址
 
         :param host: The host of this HttpGetDTO.
-        :type: str
+        :type host: str
         """
         self._host = host
 
@@ -136,7 +147,7 @@ class HttpGetDTO:
         协议类型
 
         :param scheme: The scheme of this HttpGetDTO.
-        :type: str
+        :type scheme: str
         """
         self._scheme = scheme
 

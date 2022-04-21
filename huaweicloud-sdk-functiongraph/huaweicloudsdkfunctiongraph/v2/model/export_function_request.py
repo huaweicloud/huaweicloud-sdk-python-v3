@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExportFunctionRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ExportFunctionRequest:
     }
 
     def __init__(self, function_urn=None, config=None, code=None, type=None):
-        """ExportFunctionRequest - a model defined in huaweicloud sdk"""
+        """ExportFunctionRequest
+
+        The model defined in huaweicloud sdk
+
+        :param function_urn: 函数的URN（Uniform Resource Name），唯一标识函数。
+        :type function_urn: str
+        :param config: 是否导出函数配置
+        :type config: bool
+        :param code: 是否导出函数代码
+        :type code: bool
+        :param type: 兼容老的方式，type&#x3D;code代表导出代码,type&#x3D;config代码导出配置
+        :type type: str
+        """
         
         
 
@@ -72,7 +83,7 @@ class ExportFunctionRequest:
         函数的URN（Uniform Resource Name），唯一标识函数。
 
         :param function_urn: The function_urn of this ExportFunctionRequest.
-        :type: str
+        :type function_urn: str
         """
         self._function_urn = function_urn
 
@@ -94,7 +105,7 @@ class ExportFunctionRequest:
         是否导出函数配置
 
         :param config: The config of this ExportFunctionRequest.
-        :type: bool
+        :type config: bool
         """
         self._config = config
 
@@ -116,7 +127,7 @@ class ExportFunctionRequest:
         是否导出函数代码
 
         :param code: The code of this ExportFunctionRequest.
-        :type: bool
+        :type code: bool
         """
         self._code = code
 
@@ -138,7 +149,7 @@ class ExportFunctionRequest:
         兼容老的方式，type=code代表导出代码,type=config代码导出配置
 
         :param type: The type of this ExportFunctionRequest.
-        :type: str
+        :type type: str
         """
         self._type = type
 

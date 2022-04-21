@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApiAclInfoWithBindNum:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ApiAclInfoWithBindNum:
     }
 
     def __init__(self, acl_name=None, acl_type=None, acl_value=None, bind_num=None, entity_type=None, id=None, update_time=None):
-        """ApiAclInfoWithBindNum - a model defined in huaweicloud sdk"""
+        """ApiAclInfoWithBindNum
+
+        The model defined in huaweicloud sdk
+
+        :param acl_name: ACL策略名称
+        :type acl_name: str
+        :param acl_type: 类型 - PERMIT（白名单类型） - DENY（黑名单类型）
+        :type acl_type: str
+        :param acl_value: ACL策略的值
+        :type acl_value: str
+        :param bind_num: 绑定的API数量
+        :type bind_num: int
+        :param entity_type: 对象类型 - IP - DOMAIN
+        :type entity_type: str
+        :param id: ACL策略编号
+        :type id: str
+        :param update_time: 更新时间
+        :type update_time: datetime
+        """
         
         
 
@@ -88,7 +105,7 @@ class ApiAclInfoWithBindNum:
         ACL策略名称
 
         :param acl_name: The acl_name of this ApiAclInfoWithBindNum.
-        :type: str
+        :type acl_name: str
         """
         self._acl_name = acl_name
 
@@ -110,7 +127,7 @@ class ApiAclInfoWithBindNum:
         类型 - PERMIT（白名单类型） - DENY（黑名单类型）
 
         :param acl_type: The acl_type of this ApiAclInfoWithBindNum.
-        :type: str
+        :type acl_type: str
         """
         self._acl_type = acl_type
 
@@ -132,7 +149,7 @@ class ApiAclInfoWithBindNum:
         ACL策略的值
 
         :param acl_value: The acl_value of this ApiAclInfoWithBindNum.
-        :type: str
+        :type acl_value: str
         """
         self._acl_value = acl_value
 
@@ -154,7 +171,7 @@ class ApiAclInfoWithBindNum:
         绑定的API数量
 
         :param bind_num: The bind_num of this ApiAclInfoWithBindNum.
-        :type: int
+        :type bind_num: int
         """
         self._bind_num = bind_num
 
@@ -176,7 +193,7 @@ class ApiAclInfoWithBindNum:
         对象类型 - IP - DOMAIN
 
         :param entity_type: The entity_type of this ApiAclInfoWithBindNum.
-        :type: str
+        :type entity_type: str
         """
         self._entity_type = entity_type
 
@@ -198,7 +215,7 @@ class ApiAclInfoWithBindNum:
         ACL策略编号
 
         :param id: The id of this ApiAclInfoWithBindNum.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -220,7 +237,7 @@ class ApiAclInfoWithBindNum:
         更新时间
 
         :param update_time: The update_time of this ApiAclInfoWithBindNum.
-        :type: datetime
+        :type update_time: datetime
         """
         self._update_time = update_time
 

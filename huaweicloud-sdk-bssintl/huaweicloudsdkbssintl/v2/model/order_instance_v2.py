@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OrderInstanceV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -62,7 +61,45 @@ class OrderInstanceV2:
     }
 
     def __init__(self, id=None, resource_id=None, resource_name=None, region_code=None, service_type_code=None, resource_type_code=None, resource_type_name=None, service_type_name=None, resource_spec_code=None, project_id=None, product_id=None, parent_resource_id=None, is_main_resource=None, status=None, effective_time=None, expire_time=None, expire_policy=None):
-        """OrderInstanceV2 - a model defined in huaweicloud sdk"""
+        """OrderInstanceV2
+
+        The model defined in huaweicloud sdk
+
+        :param id: 标识要开通资源的内部ID，资源开通以后生成的ID为resource_id。
+        :type id: str
+        :param resource_id: 资源ID。
+        :type resource_id: str
+        :param resource_name: 资源实例名。
+        :type resource_name: str
+        :param region_code: 云服务区编码，例如：“ap-southeast-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
+        :type region_code: str
+        :param service_type_code: 云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
+        :type service_type_code: str
+        :param resource_type_code: 资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
+        :type resource_type_code: str
+        :param resource_type_name: 资源类型名称。例如ECS的资源类型名称为“云主机”。
+        :type resource_type_name: str
+        :param service_type_name: 云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
+        :type service_type_name: str
+        :param resource_spec_code: 云服务产品的资源规格。如果是VM的资源规格，则需要在规格后面添加“.win”或“.linux”，例如“s2.small.1.linux”。
+        :type resource_spec_code: str
+        :param project_id: 资源项目ID。
+        :type project_id: str
+        :param product_id: 产品ID。
+        :type product_id: str
+        :param parent_resource_id: 父资源ID。
+        :type parent_resource_id: str
+        :param is_main_resource: 是否是主资源。 0：非主资源1：主资源
+        :type is_main_resource: int
+        :param status: 资源状态。 2：使用中3：已关闭（页面不展示这个状态）4：已冻结5：已过期
+        :type status: int
+        :param effective_time: 资源生效时间。 UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。
+        :type effective_time: str
+        :param expire_time: 资源过期时间。 UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。
+        :type expire_time: str
+        :param expire_policy: 资源到期后的扣费策略： 0：到期进入宽限期1：到期转按需2：到期后自动删除（从生效中直接删除）3：到期后自动续费4：到期后冻结5：到期后删除（从保留期删除）  说明： 只有“3”表示该资源是自动续订，其他情况下，都是非自动续订下的到期策略。
+        :type expire_policy: int
+        """
         
         
 
@@ -138,7 +175,7 @@ class OrderInstanceV2:
         标识要开通资源的内部ID，资源开通以后生成的ID为resource_id。
 
         :param id: The id of this OrderInstanceV2.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -160,7 +197,7 @@ class OrderInstanceV2:
         资源ID。
 
         :param resource_id: The resource_id of this OrderInstanceV2.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -182,7 +219,7 @@ class OrderInstanceV2:
         资源实例名。
 
         :param resource_name: The resource_name of this OrderInstanceV2.
-        :type: str
+        :type resource_name: str
         """
         self._resource_name = resource_name
 
@@ -204,7 +241,7 @@ class OrderInstanceV2:
         云服务区编码，例如：“ap-southeast-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
         :param region_code: The region_code of this OrderInstanceV2.
-        :type: str
+        :type region_code: str
         """
         self._region_code = region_code
 
@@ -226,7 +263,7 @@ class OrderInstanceV2:
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
         :param service_type_code: The service_type_code of this OrderInstanceV2.
-        :type: str
+        :type service_type_code: str
         """
         self._service_type_code = service_type_code
 
@@ -248,7 +285,7 @@ class OrderInstanceV2:
         资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
 
         :param resource_type_code: The resource_type_code of this OrderInstanceV2.
-        :type: str
+        :type resource_type_code: str
         """
         self._resource_type_code = resource_type_code
 
@@ -270,7 +307,7 @@ class OrderInstanceV2:
         资源类型名称。例如ECS的资源类型名称为“云主机”。
 
         :param resource_type_name: The resource_type_name of this OrderInstanceV2.
-        :type: str
+        :type resource_type_name: str
         """
         self._resource_type_name = resource_type_name
 
@@ -292,7 +329,7 @@ class OrderInstanceV2:
         云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
 
         :param service_type_name: The service_type_name of this OrderInstanceV2.
-        :type: str
+        :type service_type_name: str
         """
         self._service_type_name = service_type_name
 
@@ -314,7 +351,7 @@ class OrderInstanceV2:
         云服务产品的资源规格。如果是VM的资源规格，则需要在规格后面添加“.win”或“.linux”，例如“s2.small.1.linux”。
 
         :param resource_spec_code: The resource_spec_code of this OrderInstanceV2.
-        :type: str
+        :type resource_spec_code: str
         """
         self._resource_spec_code = resource_spec_code
 
@@ -336,7 +373,7 @@ class OrderInstanceV2:
         资源项目ID。
 
         :param project_id: The project_id of this OrderInstanceV2.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -358,7 +395,7 @@ class OrderInstanceV2:
         产品ID。
 
         :param product_id: The product_id of this OrderInstanceV2.
-        :type: str
+        :type product_id: str
         """
         self._product_id = product_id
 
@@ -380,7 +417,7 @@ class OrderInstanceV2:
         父资源ID。
 
         :param parent_resource_id: The parent_resource_id of this OrderInstanceV2.
-        :type: str
+        :type parent_resource_id: str
         """
         self._parent_resource_id = parent_resource_id
 
@@ -402,7 +439,7 @@ class OrderInstanceV2:
         是否是主资源。 0：非主资源1：主资源
 
         :param is_main_resource: The is_main_resource of this OrderInstanceV2.
-        :type: int
+        :type is_main_resource: int
         """
         self._is_main_resource = is_main_resource
 
@@ -424,7 +461,7 @@ class OrderInstanceV2:
         资源状态。 2：使用中3：已关闭（页面不展示这个状态）4：已冻结5：已过期
 
         :param status: The status of this OrderInstanceV2.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -446,7 +483,7 @@ class OrderInstanceV2:
         资源生效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :param effective_time: The effective_time of this OrderInstanceV2.
-        :type: str
+        :type effective_time: str
         """
         self._effective_time = effective_time
 
@@ -468,7 +505,7 @@ class OrderInstanceV2:
         资源过期时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :param expire_time: The expire_time of this OrderInstanceV2.
-        :type: str
+        :type expire_time: str
         """
         self._expire_time = expire_time
 
@@ -490,7 +527,7 @@ class OrderInstanceV2:
         资源到期后的扣费策略： 0：到期进入宽限期1：到期转按需2：到期后自动删除（从生效中直接删除）3：到期后自动续费4：到期后冻结5：到期后删除（从保留期删除）  说明： 只有“3”表示该资源是自动续订，其他情况下，都是非自动续订下的到期策略。
 
         :param expire_policy: The expire_policy of this OrderInstanceV2.
-        :type: int
+        :type expire_policy: int
         """
         self._expire_policy = expire_policy
 

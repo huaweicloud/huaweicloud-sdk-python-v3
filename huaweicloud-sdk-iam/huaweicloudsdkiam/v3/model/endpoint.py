@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Endpoint:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class Endpoint:
     }
 
     def __init__(self, service_id=None, region_id=None, links=None, id=None, interface=None, region=None, url=None, enabled=None):
-        """Endpoint - a model defined in huaweicloud sdk"""
+        """Endpoint
+
+        The model defined in huaweicloud sdk
+
+        :param service_id: 终端节点所属服务的ID。
+        :type service_id: str
+        :param region_id: 终端节点所属区域的ID。
+        :type region_id: str
+        :param links: 
+        :type links: :class:`huaweicloudsdkiam.v3.Links`
+        :param id: 终端节点ID。
+        :type id: str
+        :param interface: 终端节点平面。
+        :type interface: str
+        :param region: 终端节点所属区域。
+        :type region: str
+        :param url: 终端节点的地址。
+        :type url: str
+        :param enabled: 终端节点是否可用。
+        :type enabled: bool
+        """
         
         
 
@@ -85,7 +104,7 @@ class Endpoint:
         终端节点所属服务的ID。
 
         :param service_id: The service_id of this Endpoint.
-        :type: str
+        :type service_id: str
         """
         self._service_id = service_id
 
@@ -107,7 +126,7 @@ class Endpoint:
         终端节点所属区域的ID。
 
         :param region_id: The region_id of this Endpoint.
-        :type: str
+        :type region_id: str
         """
         self._region_id = region_id
 
@@ -117,7 +136,7 @@ class Endpoint:
 
 
         :return: The links of this Endpoint.
-        :rtype: Links
+        :rtype: :class:`huaweicloudsdkiam.v3.Links`
         """
         return self._links
 
@@ -127,7 +146,7 @@ class Endpoint:
 
 
         :param links: The links of this Endpoint.
-        :type: Links
+        :type links: :class:`huaweicloudsdkiam.v3.Links`
         """
         self._links = links
 
@@ -149,7 +168,7 @@ class Endpoint:
         终端节点ID。
 
         :param id: The id of this Endpoint.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -171,7 +190,7 @@ class Endpoint:
         终端节点平面。
 
         :param interface: The interface of this Endpoint.
-        :type: str
+        :type interface: str
         """
         self._interface = interface
 
@@ -193,7 +212,7 @@ class Endpoint:
         终端节点所属区域。
 
         :param region: The region of this Endpoint.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -215,7 +234,7 @@ class Endpoint:
         终端节点的地址。
 
         :param url: The url of this Endpoint.
-        :type: str
+        :type url: str
         """
         self._url = url
 
@@ -237,7 +256,7 @@ class Endpoint:
         终端节点是否可用。
 
         :param enabled: The enabled of this Endpoint.
-        :type: bool
+        :type enabled: bool
         """
         self._enabled = enabled
 

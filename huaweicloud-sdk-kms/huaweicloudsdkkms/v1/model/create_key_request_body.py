@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateKeyRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class CreateKeyRequestBody:
     }
 
     def __init__(self, key_alias=None, key_spec=None, key_usage=None, key_description=None, origin=None, enterprise_project_id=None, sequence=None):
-        """CreateKeyRequestBody - a model defined in huaweicloud sdk"""
+        """CreateKeyRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param key_alias: 非默认主密钥别名，取值范围为1到255个字符，满足正则匹配“^[a-zA-Z0-9:/_-]{1,255}$”，且不与系统服务创建的默认主密钥别名重名。
+        :type key_alias: str
+        :param key_spec: 密钥生成算法，默认为“AES_256”，枚举如下： - AES_256 - SM4 - RSA_2048 - RSA_3072 - RSA_4096 - EC_P256 - EC_P384 - SM2
+        :type key_spec: str
+        :param key_usage: 密钥用途，对称密钥默认为“ENCRYPT_DECRYPT”，非对称密钥默认为“SIGN_VERIFY”，枚举如下： - ENCRYPT_DECRYPT - SIGN_VERIFY
+        :type key_usage: str
+        :param key_description: 密钥描述，取值0到255字符。
+        :type key_description: str
+        :param origin: 密钥来源，默认为“kms”，枚举如下： - kms：表示密钥材料由kms生成。 - external：表示密钥材料由外部导入。
+        :type origin: str
+        :param enterprise_project_id: 企业多项目ID。 - 用户未开通企业多项目时，不需要输入该字段。 - 用户开通企业多项目时，创建资源可以输入该字段。若用户户不输入该字段，默认创建属于默认企业多项目ID（ID为“0”）的资源。 注意：若用户没有默认企业多项目ID（ID为“0”）下的创建权限，则接口报错。
+        :type enterprise_project_id: str
+        :param sequence: 请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
+        :type sequence: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class CreateKeyRequestBody:
         非默认主密钥别名，取值范围为1到255个字符，满足正则匹配“^[a-zA-Z0-9:/_-]{1,255}$”，且不与系统服务创建的默认主密钥别名重名。
 
         :param key_alias: The key_alias of this CreateKeyRequestBody.
-        :type: str
+        :type key_alias: str
         """
         self._key_alias = key_alias
 
@@ -110,7 +127,7 @@ class CreateKeyRequestBody:
         密钥生成算法，默认为“AES_256”，枚举如下： - AES_256 - SM4 - RSA_2048 - RSA_3072 - RSA_4096 - EC_P256 - EC_P384 - SM2
 
         :param key_spec: The key_spec of this CreateKeyRequestBody.
-        :type: str
+        :type key_spec: str
         """
         self._key_spec = key_spec
 
@@ -132,7 +149,7 @@ class CreateKeyRequestBody:
         密钥用途，对称密钥默认为“ENCRYPT_DECRYPT”，非对称密钥默认为“SIGN_VERIFY”，枚举如下： - ENCRYPT_DECRYPT - SIGN_VERIFY
 
         :param key_usage: The key_usage of this CreateKeyRequestBody.
-        :type: str
+        :type key_usage: str
         """
         self._key_usage = key_usage
 
@@ -154,7 +171,7 @@ class CreateKeyRequestBody:
         密钥描述，取值0到255字符。
 
         :param key_description: The key_description of this CreateKeyRequestBody.
-        :type: str
+        :type key_description: str
         """
         self._key_description = key_description
 
@@ -176,7 +193,7 @@ class CreateKeyRequestBody:
         密钥来源，默认为“kms”，枚举如下： - kms：表示密钥材料由kms生成。 - external：表示密钥材料由外部导入。
 
         :param origin: The origin of this CreateKeyRequestBody.
-        :type: str
+        :type origin: str
         """
         self._origin = origin
 
@@ -198,7 +215,7 @@ class CreateKeyRequestBody:
         企业多项目ID。 - 用户未开通企业多项目时，不需要输入该字段。 - 用户开通企业多项目时，创建资源可以输入该字段。若用户户不输入该字段，默认创建属于默认企业多项目ID（ID为“0”）的资源。 注意：若用户没有默认企业多项目ID（ID为“0”）下的创建权限，则接口报错。
 
         :param enterprise_project_id: The enterprise_project_id of this CreateKeyRequestBody.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -220,7 +237,7 @@ class CreateKeyRequestBody:
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
 
         :param sequence: The sequence of this CreateKeyRequestBody.
-        :type: str
+        :type sequence: str
         """
         self._sequence = sequence
 

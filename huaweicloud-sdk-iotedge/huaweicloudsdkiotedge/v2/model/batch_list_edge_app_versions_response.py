@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchListEdgeAppVersionsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class BatchListEdgeAppVersionsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, page_info=None, versions=None):
-        """BatchListEdgeAppVersionsResponse - a model defined in huaweicloud sdk"""
+        """BatchListEdgeAppVersionsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 总记录数
+        :type count: int
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkiotedge.v2.PageInfoDTO`
+        :param versions: 每页记录数
+        :type versions: list[:class:`huaweicloudsdkiotedge.v2.QueryEdgeAppVersionBriefResponseDTO`]
+        """
         
         super(BatchListEdgeAppVersionsResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class BatchListEdgeAppVersionsResponse(SdkResponse):
         总记录数
 
         :param count: The count of this BatchListEdgeAppVersionsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -78,7 +87,7 @@ class BatchListEdgeAppVersionsResponse(SdkResponse):
 
 
         :return: The page_info of this BatchListEdgeAppVersionsResponse.
-        :rtype: PageInfoDTO
+        :rtype: :class:`huaweicloudsdkiotedge.v2.PageInfoDTO`
         """
         return self._page_info
 
@@ -88,7 +97,7 @@ class BatchListEdgeAppVersionsResponse(SdkResponse):
 
 
         :param page_info: The page_info of this BatchListEdgeAppVersionsResponse.
-        :type: PageInfoDTO
+        :type page_info: :class:`huaweicloudsdkiotedge.v2.PageInfoDTO`
         """
         self._page_info = page_info
 
@@ -99,7 +108,7 @@ class BatchListEdgeAppVersionsResponse(SdkResponse):
         每页记录数
 
         :return: The versions of this BatchListEdgeAppVersionsResponse.
-        :rtype: list[QueryEdgeAppVersionBriefResponseDTO]
+        :rtype: list[:class:`huaweicloudsdkiotedge.v2.QueryEdgeAppVersionBriefResponseDTO`]
         """
         return self._versions
 
@@ -110,7 +119,7 @@ class BatchListEdgeAppVersionsResponse(SdkResponse):
         每页记录数
 
         :param versions: The versions of this BatchListEdgeAppVersionsResponse.
-        :type: list[QueryEdgeAppVersionBriefResponseDTO]
+        :type versions: list[:class:`huaweicloudsdkiotedge.v2.QueryEdgeAppVersionBriefResponseDTO`]
         """
         self._versions = versions
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SetOffSiteBackupPolicyRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class SetOffSiteBackupPolicyRequestBody:
     }
 
     def __init__(self, policy_para=None):
-        """SetOffSiteBackupPolicyRequestBody - a model defined in huaweicloud sdk"""
+        """SetOffSiteBackupPolicyRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param policy_para: 备份策略对象，包括备份类型、备份保留天数、目标区域ID和目标project ID。
+        :type policy_para: list[:class:`huaweicloudsdkrds.v3.OffSiteBackupPolicy`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class SetOffSiteBackupPolicyRequestBody:
         备份策略对象，包括备份类型、备份保留天数、目标区域ID和目标project ID。
 
         :return: The policy_para of this SetOffSiteBackupPolicyRequestBody.
-        :rtype: list[OffSiteBackupPolicy]
+        :rtype: list[:class:`huaweicloudsdkrds.v3.OffSiteBackupPolicy`]
         """
         return self._policy_para
 
@@ -57,7 +62,7 @@ class SetOffSiteBackupPolicyRequestBody:
         备份策略对象，包括备份类型、备份保留天数、目标区域ID和目标project ID。
 
         :param policy_para: The policy_para of this SetOffSiteBackupPolicyRequestBody.
-        :type: list[OffSiteBackupPolicy]
+        :type policy_para: list[:class:`huaweicloudsdkrds.v3.OffSiteBackupPolicy`]
         """
         self._policy_para = policy_para
 

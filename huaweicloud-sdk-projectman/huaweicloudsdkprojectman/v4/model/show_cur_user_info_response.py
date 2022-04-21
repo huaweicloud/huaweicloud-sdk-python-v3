@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowCurUserInfoResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class ShowCurUserInfoResponse(SdkResponse):
     }
 
     def __init__(self, domain_id=None, domain_name=None, user_num_id=None, user_id=None, user_name=None, nick_name=None, created_time=None, updated_time=None, gender=None, user_type=None):
-        """ShowCurUserInfoResponse - a model defined in huaweicloud sdk"""
+        """ShowCurUserInfoResponse
+
+        The model defined in huaweicloud sdk
+
+        :param domain_id: 租户id
+        :type domain_id: str
+        :param domain_name: 租户名
+        :type domain_name: str
+        :param user_num_id: 用户数字id
+        :type user_num_id: int
+        :param user_id: 用户id
+        :type user_id: str
+        :param user_name: 用户名
+        :type user_name: str
+        :param nick_name: 用户昵称
+        :type nick_name: str
+        :param created_time: 创建时间
+        :type created_time: int
+        :param updated_time: 更新时间
+        :type updated_time: int
+        :param gender: 性别
+        :type gender: str
+        :param user_type: 用户类型, User 云用户, Federation 联邦账号,
+        :type user_type: str
+        """
         
         super(ShowCurUserInfoResponse, self).__init__()
 
@@ -103,7 +126,7 @@ class ShowCurUserInfoResponse(SdkResponse):
         租户id
 
         :param domain_id: The domain_id of this ShowCurUserInfoResponse.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -125,7 +148,7 @@ class ShowCurUserInfoResponse(SdkResponse):
         租户名
 
         :param domain_name: The domain_name of this ShowCurUserInfoResponse.
-        :type: str
+        :type domain_name: str
         """
         self._domain_name = domain_name
 
@@ -147,7 +170,7 @@ class ShowCurUserInfoResponse(SdkResponse):
         用户数字id
 
         :param user_num_id: The user_num_id of this ShowCurUserInfoResponse.
-        :type: int
+        :type user_num_id: int
         """
         self._user_num_id = user_num_id
 
@@ -169,7 +192,7 @@ class ShowCurUserInfoResponse(SdkResponse):
         用户id
 
         :param user_id: The user_id of this ShowCurUserInfoResponse.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -191,7 +214,7 @@ class ShowCurUserInfoResponse(SdkResponse):
         用户名
 
         :param user_name: The user_name of this ShowCurUserInfoResponse.
-        :type: str
+        :type user_name: str
         """
         self._user_name = user_name
 
@@ -213,7 +236,7 @@ class ShowCurUserInfoResponse(SdkResponse):
         用户昵称
 
         :param nick_name: The nick_name of this ShowCurUserInfoResponse.
-        :type: str
+        :type nick_name: str
         """
         self._nick_name = nick_name
 
@@ -235,7 +258,7 @@ class ShowCurUserInfoResponse(SdkResponse):
         创建时间
 
         :param created_time: The created_time of this ShowCurUserInfoResponse.
-        :type: int
+        :type created_time: int
         """
         self._created_time = created_time
 
@@ -257,7 +280,7 @@ class ShowCurUserInfoResponse(SdkResponse):
         更新时间
 
         :param updated_time: The updated_time of this ShowCurUserInfoResponse.
-        :type: int
+        :type updated_time: int
         """
         self._updated_time = updated_time
 
@@ -279,7 +302,7 @@ class ShowCurUserInfoResponse(SdkResponse):
         性别
 
         :param gender: The gender of this ShowCurUserInfoResponse.
-        :type: str
+        :type gender: str
         """
         self._gender = gender
 
@@ -301,7 +324,7 @@ class ShowCurUserInfoResponse(SdkResponse):
         用户类型, User 云用户, Federation 联邦账号,
 
         :param user_type: The user_type of this ShowCurUserInfoResponse.
-        :type: str
+        :type user_type: str
         """
         self._user_type = user_type
 

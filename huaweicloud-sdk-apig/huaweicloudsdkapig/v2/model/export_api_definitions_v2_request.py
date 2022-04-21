@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExportApiDefinitionsV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ExportApiDefinitionsV2Request:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """ExportApiDefinitionsV2Request - a model defined in huaweicloud sdk"""
+        """ExportApiDefinitionsV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param body: Body of the ExportApiDefinitionsV2Request
+        :type body: :class:`huaweicloudsdkapig.v2.ExportOpenApiReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class ExportApiDefinitionsV2Request:
         实例ID
 
         :param instance_id: The instance_id of this ExportApiDefinitionsV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -72,7 +79,7 @@ class ExportApiDefinitionsV2Request:
 
 
         :return: The body of this ExportApiDefinitionsV2Request.
-        :rtype: ExportOpenApiReq
+        :rtype: :class:`huaweicloudsdkapig.v2.ExportOpenApiReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class ExportApiDefinitionsV2Request:
 
 
         :param body: The body of this ExportApiDefinitionsV2Request.
-        :type: ExportOpenApiReq
+        :type body: :class:`huaweicloudsdkapig.v2.ExportOpenApiReq`
         """
         self._body = body
 

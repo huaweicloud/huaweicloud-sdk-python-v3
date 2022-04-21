@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Proxy:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class Proxy:
     }
 
     def __init__(self, pool_id=None, status=None, address=None, elb_vip=None, eip=None, port=None, pool_status=None, delay_threshold_in_kilobytes=None, cpu=None, mem=None, node_num=None, nodes=None, mode=None):
-        """Proxy - a model defined in huaweicloud sdk"""
+        """Proxy
+
+        The model defined in huaweicloud sdk
+
+        :param pool_id: Proxy实例ID。
+        :type pool_id: str
+        :param status: Proxy实例开启状态，取值范围如下。 - open：打开。 - closed：关闭。 - frozen：已冻结。 - opening：打开中。 - closing：关闭中。 - freezing：冻结中。 - unfreezing：解冻中。
+        :type status: str
+        :param address: Proxy读写分离地址。
+        :type address: str
+        :param elb_vip: elb模式的虚拟IP信息。
+        :type elb_vip: str
+        :param eip: 弹性公网IP信息。
+        :type eip: str
+        :param port: Proxy端口信息。
+        :type port: int
+        :param pool_status: Proxy实例状态。 - abnormal：异常。 - normal：正常。 - creating：创建中。 - deleted：已删除。
+        :type pool_status: str
+        :param delay_threshold_in_kilobytes: 延时阈值（单位：KB）。
+        :type delay_threshold_in_kilobytes: int
+        :param cpu: Proxy实例规格的CPU数量。
+        :type cpu: str
+        :param mem: Proxy实例规格的内存数量。
+        :type mem: str
+        :param node_num: Proxy节点个数。
+        :type node_num: int
+        :param nodes: Proxy节点信息。
+        :type nodes: list[:class:`huaweicloudsdkrds.v3.ProxyNode`]
+        :param mode: Proxy主备模式，取值范围：Ha。
+        :type mode: str
+        """
         
         
 
@@ -105,7 +134,7 @@ class Proxy:
         Proxy实例ID。
 
         :param pool_id: The pool_id of this Proxy.
-        :type: str
+        :type pool_id: str
         """
         self._pool_id = pool_id
 
@@ -127,7 +156,7 @@ class Proxy:
         Proxy实例开启状态，取值范围如下。 - open：打开。 - closed：关闭。 - frozen：已冻结。 - opening：打开中。 - closing：关闭中。 - freezing：冻结中。 - unfreezing：解冻中。
 
         :param status: The status of this Proxy.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -149,7 +178,7 @@ class Proxy:
         Proxy读写分离地址。
 
         :param address: The address of this Proxy.
-        :type: str
+        :type address: str
         """
         self._address = address
 
@@ -171,7 +200,7 @@ class Proxy:
         elb模式的虚拟IP信息。
 
         :param elb_vip: The elb_vip of this Proxy.
-        :type: str
+        :type elb_vip: str
         """
         self._elb_vip = elb_vip
 
@@ -193,7 +222,7 @@ class Proxy:
         弹性公网IP信息。
 
         :param eip: The eip of this Proxy.
-        :type: str
+        :type eip: str
         """
         self._eip = eip
 
@@ -215,7 +244,7 @@ class Proxy:
         Proxy端口信息。
 
         :param port: The port of this Proxy.
-        :type: int
+        :type port: int
         """
         self._port = port
 
@@ -237,7 +266,7 @@ class Proxy:
         Proxy实例状态。 - abnormal：异常。 - normal：正常。 - creating：创建中。 - deleted：已删除。
 
         :param pool_status: The pool_status of this Proxy.
-        :type: str
+        :type pool_status: str
         """
         self._pool_status = pool_status
 
@@ -259,7 +288,7 @@ class Proxy:
         延时阈值（单位：KB）。
 
         :param delay_threshold_in_kilobytes: The delay_threshold_in_kilobytes of this Proxy.
-        :type: int
+        :type delay_threshold_in_kilobytes: int
         """
         self._delay_threshold_in_kilobytes = delay_threshold_in_kilobytes
 
@@ -281,7 +310,7 @@ class Proxy:
         Proxy实例规格的CPU数量。
 
         :param cpu: The cpu of this Proxy.
-        :type: str
+        :type cpu: str
         """
         self._cpu = cpu
 
@@ -303,7 +332,7 @@ class Proxy:
         Proxy实例规格的内存数量。
 
         :param mem: The mem of this Proxy.
-        :type: str
+        :type mem: str
         """
         self._mem = mem
 
@@ -325,7 +354,7 @@ class Proxy:
         Proxy节点个数。
 
         :param node_num: The node_num of this Proxy.
-        :type: int
+        :type node_num: int
         """
         self._node_num = node_num
 
@@ -336,7 +365,7 @@ class Proxy:
         Proxy节点信息。
 
         :return: The nodes of this Proxy.
-        :rtype: list[ProxyNode]
+        :rtype: list[:class:`huaweicloudsdkrds.v3.ProxyNode`]
         """
         return self._nodes
 
@@ -347,7 +376,7 @@ class Proxy:
         Proxy节点信息。
 
         :param nodes: The nodes of this Proxy.
-        :type: list[ProxyNode]
+        :type nodes: list[:class:`huaweicloudsdkrds.v3.ProxyNode`]
         """
         self._nodes = nodes
 
@@ -369,7 +398,7 @@ class Proxy:
         Proxy主备模式，取值范围：Ha。
 
         :param mode: The mode of this Proxy.
-        :type: str
+        :type mode: str
         """
         self._mode = mode
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListOrderDiscountsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListOrderDiscountsResponse(SdkResponse):
     }
 
     def __init__(self, discounts=None):
-        """ListOrderDiscountsResponse - a model defined in huaweicloud sdk"""
+        """ListOrderDiscountsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param discounts: 可用的折扣列表。 具体请参见表2。
+        :type discounts: list[:class:`huaweicloudsdkbss.v2.DiscountInfoV3`]
+        """
         
         super(ListOrderDiscountsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListOrderDiscountsResponse(SdkResponse):
         可用的折扣列表。 具体请参见表2。
 
         :return: The discounts of this ListOrderDiscountsResponse.
-        :rtype: list[DiscountInfoV3]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.DiscountInfoV3`]
         """
         return self._discounts
 
@@ -58,7 +63,7 @@ class ListOrderDiscountsResponse(SdkResponse):
         可用的折扣列表。 具体请参见表2。
 
         :param discounts: The discounts of this ListOrderDiscountsResponse.
-        :type: list[DiscountInfoV3]
+        :type discounts: list[:class:`huaweicloudsdkbss.v2.DiscountInfoV3`]
         """
         self._discounts = discounts
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BlackWhiteListBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BlackWhiteListBody:
     }
 
     def __init__(self, type=None, ip_list=None):
-        """BlackWhiteListBody - a model defined in huaweicloud sdk"""
+        """BlackWhiteListBody
+
+        The model defined in huaweicloud sdk
+
+        :param type: IP黑白名单类型（0：关闭IP黑白名单功能，1：黑名单，2：白名单）
+        :type type: int
+        :param ip_list: IP黑白名单列表（支持掩码且有掩码的情况下IP必须是该IP段的第一个IP）
+        :type ip_list: list[str]
+        """
         
         
 
@@ -62,7 +69,7 @@ class BlackWhiteListBody:
         IP黑白名单类型（0：关闭IP黑白名单功能，1：黑名单，2：白名单）
 
         :param type: The type of this BlackWhiteListBody.
-        :type: int
+        :type type: int
         """
         self._type = type
 
@@ -84,7 +91,7 @@ class BlackWhiteListBody:
         IP黑白名单列表（支持掩码且有掩码的情况下IP必须是该IP段的第一个IP）
 
         :param ip_list: The ip_list of this BlackWhiteListBody.
-        :type: list[str]
+        :type ip_list: list[str]
         """
         self._ip_list = ip_list
 

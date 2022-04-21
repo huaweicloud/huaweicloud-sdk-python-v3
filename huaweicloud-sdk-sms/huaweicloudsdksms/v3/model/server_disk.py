@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ServerDisk:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ServerDisk:
     }
 
     def __init__(self, name=None, partition_style=None, device_use=None, size=None, used_size=None, physical_volumes=None, os_disk=None, relation_name=None):
-        """ServerDisk - a model defined in huaweicloud sdk"""
+        """ServerDisk
+
+        The model defined in huaweicloud sdk
+
+        :param name: 磁盘名称
+        :type name: str
+        :param partition_style: 磁盘的分区类型，添加源端时源端磁盘必选
+        :type partition_style: str
+        :param device_use: 磁盘类型
+        :type device_use: str
+        :param size: 磁盘总大小，以字节为单位
+        :type size: int
+        :param used_size: 磁盘已使用大小，以字节为单位
+        :type used_size: int
+        :param physical_volumes: 磁盘上的物理分区信息
+        :type physical_volumes: list[:class:`huaweicloudsdksms.v3.PhysicalVolume`]
+        :param os_disk: 是否为系统盘
+        :type os_disk: bool
+        :param relation_name: Linux系统 目的端ECS中与源端关联的磁盘名称
+        :type relation_name: str
+        """
         
         
 
@@ -88,7 +107,7 @@ class ServerDisk:
         磁盘名称
 
         :param name: The name of this ServerDisk.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -110,7 +129,7 @@ class ServerDisk:
         磁盘的分区类型，添加源端时源端磁盘必选
 
         :param partition_style: The partition_style of this ServerDisk.
-        :type: str
+        :type partition_style: str
         """
         self._partition_style = partition_style
 
@@ -132,7 +151,7 @@ class ServerDisk:
         磁盘类型
 
         :param device_use: The device_use of this ServerDisk.
-        :type: str
+        :type device_use: str
         """
         self._device_use = device_use
 
@@ -154,7 +173,7 @@ class ServerDisk:
         磁盘总大小，以字节为单位
 
         :param size: The size of this ServerDisk.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -176,7 +195,7 @@ class ServerDisk:
         磁盘已使用大小，以字节为单位
 
         :param used_size: The used_size of this ServerDisk.
-        :type: int
+        :type used_size: int
         """
         self._used_size = used_size
 
@@ -187,7 +206,7 @@ class ServerDisk:
         磁盘上的物理分区信息
 
         :return: The physical_volumes of this ServerDisk.
-        :rtype: list[PhysicalVolume]
+        :rtype: list[:class:`huaweicloudsdksms.v3.PhysicalVolume`]
         """
         return self._physical_volumes
 
@@ -198,7 +217,7 @@ class ServerDisk:
         磁盘上的物理分区信息
 
         :param physical_volumes: The physical_volumes of this ServerDisk.
-        :type: list[PhysicalVolume]
+        :type physical_volumes: list[:class:`huaweicloudsdksms.v3.PhysicalVolume`]
         """
         self._physical_volumes = physical_volumes
 
@@ -220,7 +239,7 @@ class ServerDisk:
         是否为系统盘
 
         :param os_disk: The os_disk of this ServerDisk.
-        :type: bool
+        :type os_disk: bool
         """
         self._os_disk = os_disk
 
@@ -242,7 +261,7 @@ class ServerDisk:
         Linux系统 目的端ECS中与源端关联的磁盘名称
 
         :param relation_name: The relation_name of this ServerDisk.
-        :type: str
+        :type relation_name: str
         """
         self._relation_name = relation_name
 

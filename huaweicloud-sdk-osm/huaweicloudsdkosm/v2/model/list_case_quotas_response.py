@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCaseQuotasResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListCaseQuotasResponse(SdkResponse):
     }
 
     def __init__(self, total=None, un_used=None):
-        """ListCaseQuotasResponse - a model defined in huaweicloud sdk"""
+        """ListCaseQuotasResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 总配额
+        :type total: int
+        :param un_used: 未使用
+        :type un_used: int
+        """
         
         super(ListCaseQuotasResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListCaseQuotasResponse(SdkResponse):
         总配额
 
         :param total: The total of this ListCaseQuotasResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -85,7 +92,7 @@ class ListCaseQuotasResponse(SdkResponse):
         未使用
 
         :param un_used: The un_used of this ListCaseQuotasResponse.
-        :type: int
+        :type un_used: int
         """
         self._un_used = un_used
 

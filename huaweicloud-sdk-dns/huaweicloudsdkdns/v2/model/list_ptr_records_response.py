@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPtrRecordsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListPtrRecordsResponse(SdkResponse):
     }
 
     def __init__(self, links=None, metadata=None, floatingips=None):
-        """ListPtrRecordsResponse - a model defined in huaweicloud sdk"""
+        """ListPtrRecordsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param links: 
+        :type links: :class:`huaweicloudsdkdns.v2.PageLink`
+        :param metadata: 
+        :type metadata: :class:`huaweicloudsdkdns.v2.Metedata`
+        :param floatingips: 
+        :type floatingips: list[:class:`huaweicloudsdkdns.v2.ListPtrRecordsFloatingResp`]
+        """
         
         super(ListPtrRecordsResponse, self).__init__()
 
@@ -56,7 +65,7 @@ class ListPtrRecordsResponse(SdkResponse):
 
 
         :return: The links of this ListPtrRecordsResponse.
-        :rtype: PageLink
+        :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
         """
         return self._links
 
@@ -66,7 +75,7 @@ class ListPtrRecordsResponse(SdkResponse):
 
 
         :param links: The links of this ListPtrRecordsResponse.
-        :type: PageLink
+        :type links: :class:`huaweicloudsdkdns.v2.PageLink`
         """
         self._links = links
 
@@ -76,7 +85,7 @@ class ListPtrRecordsResponse(SdkResponse):
 
 
         :return: The metadata of this ListPtrRecordsResponse.
-        :rtype: Metedata
+        :rtype: :class:`huaweicloudsdkdns.v2.Metedata`
         """
         return self._metadata
 
@@ -86,7 +95,7 @@ class ListPtrRecordsResponse(SdkResponse):
 
 
         :param metadata: The metadata of this ListPtrRecordsResponse.
-        :type: Metedata
+        :type metadata: :class:`huaweicloudsdkdns.v2.Metedata`
         """
         self._metadata = metadata
 
@@ -96,7 +105,7 @@ class ListPtrRecordsResponse(SdkResponse):
 
 
         :return: The floatingips of this ListPtrRecordsResponse.
-        :rtype: list[ListPtrRecordsFloatingResp]
+        :rtype: list[:class:`huaweicloudsdkdns.v2.ListPtrRecordsFloatingResp`]
         """
         return self._floatingips
 
@@ -106,7 +115,7 @@ class ListPtrRecordsResponse(SdkResponse):
 
 
         :param floatingips: The floatingips of this ListPtrRecordsResponse.
-        :type: list[ListPtrRecordsFloatingResp]
+        :type floatingips: list[:class:`huaweicloudsdkdns.v2.ListPtrRecordsFloatingResp`]
         """
         self._floatingips = floatingips
 

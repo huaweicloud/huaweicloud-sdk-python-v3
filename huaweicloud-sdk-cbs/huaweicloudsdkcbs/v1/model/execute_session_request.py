@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExecuteSessionRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ExecuteSessionRequest:
     }
 
     def __init__(self, qabot_id=None, session_id=None, body=None):
-        """ExecuteSessionRequest - a model defined in huaweicloud sdk"""
+        """ExecuteSessionRequest
+
+        The model defined in huaweicloud sdk
+
+        :param qabot_id: 机器人标识符。
+        :type qabot_id: str
+        :param session_id: 会话标识符。
+        :type session_id: str
+        :param body: Body of the ExecuteSessionRequest
+        :type body: :class:`huaweicloudsdkcbs.v1.PostQaSessionReq`
+        """
         
         
 
@@ -66,7 +75,7 @@ class ExecuteSessionRequest:
         机器人标识符。
 
         :param qabot_id: The qabot_id of this ExecuteSessionRequest.
-        :type: str
+        :type qabot_id: str
         """
         self._qabot_id = qabot_id
 
@@ -88,7 +97,7 @@ class ExecuteSessionRequest:
         会话标识符。
 
         :param session_id: The session_id of this ExecuteSessionRequest.
-        :type: str
+        :type session_id: str
         """
         self._session_id = session_id
 
@@ -98,7 +107,7 @@ class ExecuteSessionRequest:
 
 
         :return: The body of this ExecuteSessionRequest.
-        :rtype: PostQaSessionReq
+        :rtype: :class:`huaweicloudsdkcbs.v1.PostQaSessionReq`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class ExecuteSessionRequest:
 
 
         :param body: The body of this ExecuteSessionRequest.
-        :type: PostQaSessionReq
+        :type body: :class:`huaweicloudsdkcbs.v1.PostQaSessionReq`
         """
         self._body = body
 

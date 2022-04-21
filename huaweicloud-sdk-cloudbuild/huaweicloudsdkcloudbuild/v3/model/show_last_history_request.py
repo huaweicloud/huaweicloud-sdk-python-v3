@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowLastHistoryRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowLastHistoryRequest:
     }
 
     def __init__(self, project_id=None, repository_name=None):
-        """ShowLastHistoryRequest - a model defined in huaweicloud sdk"""
+        """ShowLastHistoryRequest
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: DevCloud项目ID，32位数字、小写字母组合。[查询项目列表](https://support.huaweicloud.com/api-projectman/ListProjectsV4.html)
+        :type project_id: str
+        :param repository_name: 代码仓库名，不支持中文
+        :type repository_name: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ShowLastHistoryRequest:
         DevCloud项目ID，32位数字、小写字母组合。[查询项目列表](https://support.huaweicloud.com/api-projectman/ListProjectsV4.html)
 
         :param project_id: The project_id of this ShowLastHistoryRequest.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -83,7 +90,7 @@ class ShowLastHistoryRequest:
         代码仓库名，不支持中文
 
         :param repository_name: The repository_name of this ShowLastHistoryRequest.
-        :type: str
+        :type repository_name: str
         """
         self._repository_name = repository_name
 

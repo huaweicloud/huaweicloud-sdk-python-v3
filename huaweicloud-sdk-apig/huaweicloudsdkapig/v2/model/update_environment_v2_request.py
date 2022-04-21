@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateEnvironmentV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateEnvironmentV2Request:
     }
 
     def __init__(self, instance_id=None, env_id=None, body=None):
-        """UpdateEnvironmentV2Request - a model defined in huaweicloud sdk"""
+        """UpdateEnvironmentV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param env_id: 环境的ID
+        :type env_id: str
+        :param body: Body of the UpdateEnvironmentV2Request
+        :type body: :class:`huaweicloudsdkapig.v2.EnvCreate`
+        """
         
         
 
@@ -66,7 +75,7 @@ class UpdateEnvironmentV2Request:
         实例ID
 
         :param instance_id: The instance_id of this UpdateEnvironmentV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -88,7 +97,7 @@ class UpdateEnvironmentV2Request:
         环境的ID
 
         :param env_id: The env_id of this UpdateEnvironmentV2Request.
-        :type: str
+        :type env_id: str
         """
         self._env_id = env_id
 
@@ -98,7 +107,7 @@ class UpdateEnvironmentV2Request:
 
 
         :return: The body of this UpdateEnvironmentV2Request.
-        :rtype: EnvCreate
+        :rtype: :class:`huaweicloudsdkapig.v2.EnvCreate`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class UpdateEnvironmentV2Request:
 
 
         :param body: The body of this UpdateEnvironmentV2Request.
-        :type: EnvCreate
+        :type body: :class:`huaweicloudsdkapig.v2.EnvCreate`
         """
         self._body = body
 

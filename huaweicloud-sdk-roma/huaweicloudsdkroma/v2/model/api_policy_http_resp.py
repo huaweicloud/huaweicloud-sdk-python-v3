@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApiPolicyHttpResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -58,7 +57,41 @@ class ApiPolicyHttpResp:
     }
 
     def __init__(self, id=None, name=None, conditions=None, backend_params=None, effect_mode=None, authorizer_id=None, url_domain=None, req_protocol=None, req_method=None, req_uri=None, timeout=None, enable_client_ssl=None, retry_count=None, vpc_channel_info=None, vpc_channel_status=None):
-        """ApiPolicyHttpResp - a model defined in huaweicloud sdk"""
+        """ApiPolicyHttpResp
+
+        The model defined in huaweicloud sdk
+
+        :param id: 编号
+        :type id: str
+        :param name: 策略后端名称。字符串由中文、英文字母、数字、下划线组成，且只能以中文或英文开头。
+        :type name: str
+        :param conditions: 策略条件列表
+        :type conditions: list[:class:`huaweicloudsdkroma.v2.ConditionResp`]
+        :param backend_params: 后端参数列表
+        :type backend_params: list[:class:`huaweicloudsdkroma.v2.BackendParam`]
+        :param effect_mode: 关联的策略组合模式： - ALL：满足全部条件 - ANY：满足任一条件
+        :type effect_mode: str
+        :param authorizer_id: 后端自定义认证对象的ID
+        :type authorizer_id: str
+        :param url_domain: 策略后端的Endpoint。 由域名（或IP地址）和端口号组成，总长度不超过255。格式为域名:端口（如：apig.example.com:7443）。如果不写端口，则HTTPS默认端口号为443， HTTP默认端口号为80。 支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、“_”、“-”组成，且只能以英文开头。 
+        :type url_domain: str
+        :param req_protocol: 请求协议：HTTP、HTTPS
+        :type req_protocol: str
+        :param req_method: 请求方式：GET、POST、PUT、DELETE、HEAD、PATCH、OPTIONS、ANY
+        :type req_method: str
+        :param req_uri: 请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。  支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。 &gt; 需要服从URI规范。
+        :type req_uri: str
+        :param timeout: ROMA Connect APIC请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000  单位：毫秒。
+        :type timeout: int
+        :param enable_client_ssl: 是否开启双向认证
+        :type enable_client_ssl: bool
+        :param retry_count: ROMA Connect APIC请求后端服务的重试次数，默认为-1，范围[-1,10]
+        :type retry_count: str
+        :param vpc_channel_info: 
+        :type vpc_channel_info: :class:`huaweicloudsdkroma.v2.VpcInfo`
+        :param vpc_channel_status: 是否使用VPC通道： - 1： 使用VPC通道 - 2：不使用VPC通道
+        :type vpc_channel_status: int
+        """
         
         
 
@@ -122,7 +155,7 @@ class ApiPolicyHttpResp:
         编号
 
         :param id: The id of this ApiPolicyHttpResp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -144,7 +177,7 @@ class ApiPolicyHttpResp:
         策略后端名称。字符串由中文、英文字母、数字、下划线组成，且只能以中文或英文开头。
 
         :param name: The name of this ApiPolicyHttpResp.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -155,7 +188,7 @@ class ApiPolicyHttpResp:
         策略条件列表
 
         :return: The conditions of this ApiPolicyHttpResp.
-        :rtype: list[ConditionResp]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.ConditionResp`]
         """
         return self._conditions
 
@@ -166,7 +199,7 @@ class ApiPolicyHttpResp:
         策略条件列表
 
         :param conditions: The conditions of this ApiPolicyHttpResp.
-        :type: list[ConditionResp]
+        :type conditions: list[:class:`huaweicloudsdkroma.v2.ConditionResp`]
         """
         self._conditions = conditions
 
@@ -177,7 +210,7 @@ class ApiPolicyHttpResp:
         后端参数列表
 
         :return: The backend_params of this ApiPolicyHttpResp.
-        :rtype: list[BackendParam]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.BackendParam`]
         """
         return self._backend_params
 
@@ -188,7 +221,7 @@ class ApiPolicyHttpResp:
         后端参数列表
 
         :param backend_params: The backend_params of this ApiPolicyHttpResp.
-        :type: list[BackendParam]
+        :type backend_params: list[:class:`huaweicloudsdkroma.v2.BackendParam`]
         """
         self._backend_params = backend_params
 
@@ -210,7 +243,7 @@ class ApiPolicyHttpResp:
         关联的策略组合模式： - ALL：满足全部条件 - ANY：满足任一条件
 
         :param effect_mode: The effect_mode of this ApiPolicyHttpResp.
-        :type: str
+        :type effect_mode: str
         """
         self._effect_mode = effect_mode
 
@@ -232,7 +265,7 @@ class ApiPolicyHttpResp:
         后端自定义认证对象的ID
 
         :param authorizer_id: The authorizer_id of this ApiPolicyHttpResp.
-        :type: str
+        :type authorizer_id: str
         """
         self._authorizer_id = authorizer_id
 
@@ -254,7 +287,7 @@ class ApiPolicyHttpResp:
         策略后端的Endpoint。 由域名（或IP地址）和端口号组成，总长度不超过255。格式为域名:端口（如：apig.example.com:7443）。如果不写端口，则HTTPS默认端口号为443， HTTP默认端口号为80。 支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、“_”、“-”组成，且只能以英文开头。 
 
         :param url_domain: The url_domain of this ApiPolicyHttpResp.
-        :type: str
+        :type url_domain: str
         """
         self._url_domain = url_domain
 
@@ -276,7 +309,7 @@ class ApiPolicyHttpResp:
         请求协议：HTTP、HTTPS
 
         :param req_protocol: The req_protocol of this ApiPolicyHttpResp.
-        :type: str
+        :type req_protocol: str
         """
         self._req_protocol = req_protocol
 
@@ -298,7 +331,7 @@ class ApiPolicyHttpResp:
         请求方式：GET、POST、PUT、DELETE、HEAD、PATCH、OPTIONS、ANY
 
         :param req_method: The req_method of this ApiPolicyHttpResp.
-        :type: str
+        :type req_method: str
         """
         self._req_method = req_method
 
@@ -320,7 +353,7 @@ class ApiPolicyHttpResp:
         请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。  支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。 > 需要服从URI规范。
 
         :param req_uri: The req_uri of this ApiPolicyHttpResp.
-        :type: str
+        :type req_uri: str
         """
         self._req_uri = req_uri
 
@@ -342,7 +375,7 @@ class ApiPolicyHttpResp:
         ROMA Connect APIC请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000  单位：毫秒。
 
         :param timeout: The timeout of this ApiPolicyHttpResp.
-        :type: int
+        :type timeout: int
         """
         self._timeout = timeout
 
@@ -364,7 +397,7 @@ class ApiPolicyHttpResp:
         是否开启双向认证
 
         :param enable_client_ssl: The enable_client_ssl of this ApiPolicyHttpResp.
-        :type: bool
+        :type enable_client_ssl: bool
         """
         self._enable_client_ssl = enable_client_ssl
 
@@ -386,7 +419,7 @@ class ApiPolicyHttpResp:
         ROMA Connect APIC请求后端服务的重试次数，默认为-1，范围[-1,10]
 
         :param retry_count: The retry_count of this ApiPolicyHttpResp.
-        :type: str
+        :type retry_count: str
         """
         self._retry_count = retry_count
 
@@ -396,7 +429,7 @@ class ApiPolicyHttpResp:
 
 
         :return: The vpc_channel_info of this ApiPolicyHttpResp.
-        :rtype: VpcInfo
+        :rtype: :class:`huaweicloudsdkroma.v2.VpcInfo`
         """
         return self._vpc_channel_info
 
@@ -406,7 +439,7 @@ class ApiPolicyHttpResp:
 
 
         :param vpc_channel_info: The vpc_channel_info of this ApiPolicyHttpResp.
-        :type: VpcInfo
+        :type vpc_channel_info: :class:`huaweicloudsdkroma.v2.VpcInfo`
         """
         self._vpc_channel_info = vpc_channel_info
 
@@ -428,7 +461,7 @@ class ApiPolicyHttpResp:
         是否使用VPC通道： - 1： 使用VPC通道 - 2：不使用VPC通道
 
         :param vpc_channel_status: The vpc_channel_status of this ApiPolicyHttpResp.
-        :type: int
+        :type vpc_channel_status: int
         """
         self._vpc_channel_status = vpc_channel_status
 

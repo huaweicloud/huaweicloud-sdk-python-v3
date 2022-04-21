@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SendSmVerificationCodeReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class SendSmVerificationCodeReq:
     }
 
     def __init__(self, mobile_phone=None, timeout=None, language=None, sm_template_args=None):
-        """SendSmVerificationCodeReq - a model defined in huaweicloud sdk"""
+        """SendSmVerificationCodeReq
+
+        The model defined in huaweicloud sdk
+
+        :param mobile_phone: 接受短信验证码的手机号码。
+        :type mobile_phone: str
+        :param timeout: 超时时间，不指定时默认为10分钟。 单位：分钟
+        :type timeout: int
+        :param language: 发送的短信的语言。 zh-cn: 中文en-us: 英语 不设置默认为偏好设置的默认语言。
+        :type language: str
+        :param sm_template_args: 短信发送模板中的变量，具体参见表1。
+        :type sm_template_args: list[:class:`huaweicloudsdkbss.v2.TemplateArgs`]
+        """
         
         
 
@@ -72,7 +83,7 @@ class SendSmVerificationCodeReq:
         接受短信验证码的手机号码。
 
         :param mobile_phone: The mobile_phone of this SendSmVerificationCodeReq.
-        :type: str
+        :type mobile_phone: str
         """
         self._mobile_phone = mobile_phone
 
@@ -94,7 +105,7 @@ class SendSmVerificationCodeReq:
         超时时间，不指定时默认为10分钟。 单位：分钟
 
         :param timeout: The timeout of this SendSmVerificationCodeReq.
-        :type: int
+        :type timeout: int
         """
         self._timeout = timeout
 
@@ -116,7 +127,7 @@ class SendSmVerificationCodeReq:
         发送的短信的语言。 zh-cn: 中文en-us: 英语 不设置默认为偏好设置的默认语言。
 
         :param language: The language of this SendSmVerificationCodeReq.
-        :type: str
+        :type language: str
         """
         self._language = language
 
@@ -127,7 +138,7 @@ class SendSmVerificationCodeReq:
         短信发送模板中的变量，具体参见表1。
 
         :return: The sm_template_args of this SendSmVerificationCodeReq.
-        :rtype: list[TemplateArgs]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.TemplateArgs`]
         """
         return self._sm_template_args
 
@@ -138,7 +149,7 @@ class SendSmVerificationCodeReq:
         短信发送模板中的变量，具体参见表1。
 
         :param sm_template_args: The sm_template_args of this SendSmVerificationCodeReq.
-        :type: list[TemplateArgs]
+        :type sm_template_args: list[:class:`huaweicloudsdkbss.v2.TemplateArgs`]
         """
         self._sm_template_args = sm_template_args
 

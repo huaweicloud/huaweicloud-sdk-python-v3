@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowAutoCreatePolicyRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowAutoCreatePolicyRequest:
     }
 
     def __init__(self, cluster_id=None):
-        """ShowAutoCreatePolicyRequest - a model defined in huaweicloud sdk"""
+        """ShowAutoCreatePolicyRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 指定需查询自动创建快照策略的集群ID。
+        :type cluster_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowAutoCreatePolicyRequest:
         指定需查询自动创建快照策略的集群ID。
 
         :param cluster_id: The cluster_id of this ShowAutoCreatePolicyRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 

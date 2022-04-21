@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NodeStatus:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class NodeStatus:
     }
 
     def __init__(self, phase=None, job_id=None, server_id=None, private_ip=None, public_ip=None, delete_status=None):
-        """NodeStatus - a model defined in huaweicloud sdk"""
+        """NodeStatus
+
+        The model defined in huaweicloud sdk
+
+        :param phase: 节点状态。
+        :type phase: str
+        :param job_id: 创建或删除时的任务ID。
+        :type job_id: str
+        :param server_id: 底层云服务器或裸金属节点ID。
+        :type server_id: str
+        :param private_ip: 节点主网卡私有网段IP地址。
+        :type private_ip: str
+        :param public_ip: 节点弹性公网IP地址。如果ECS的数据没有实时同步，可在界面上通过“同步节点信息”手动进行更新。
+        :type public_ip: str
+        :param delete_status: 
+        :type delete_status: :class:`huaweicloudsdkcce.v3.DeleteStatus`
+        """
         
         
 
@@ -83,7 +98,7 @@ class NodeStatus:
         节点状态。
 
         :param phase: The phase of this NodeStatus.
-        :type: str
+        :type phase: str
         """
         self._phase = phase
 
@@ -105,7 +120,7 @@ class NodeStatus:
         创建或删除时的任务ID。
 
         :param job_id: The job_id of this NodeStatus.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -127,7 +142,7 @@ class NodeStatus:
         底层云服务器或裸金属节点ID。
 
         :param server_id: The server_id of this NodeStatus.
-        :type: str
+        :type server_id: str
         """
         self._server_id = server_id
 
@@ -149,7 +164,7 @@ class NodeStatus:
         节点主网卡私有网段IP地址。
 
         :param private_ip: The private_ip of this NodeStatus.
-        :type: str
+        :type private_ip: str
         """
         self._private_ip = private_ip
 
@@ -171,7 +186,7 @@ class NodeStatus:
         节点弹性公网IP地址。如果ECS的数据没有实时同步，可在界面上通过“同步节点信息”手动进行更新。
 
         :param public_ip: The public_ip of this NodeStatus.
-        :type: str
+        :type public_ip: str
         """
         self._public_ip = public_ip
 
@@ -181,7 +196,7 @@ class NodeStatus:
 
 
         :return: The delete_status of this NodeStatus.
-        :rtype: DeleteStatus
+        :rtype: :class:`huaweicloudsdkcce.v3.DeleteStatus`
         """
         return self._delete_status
 
@@ -191,7 +206,7 @@ class NodeStatus:
 
 
         :param delete_status: The delete_status of this NodeStatus.
-        :type: DeleteStatus
+        :type delete_status: :class:`huaweicloudsdkcce.v3.DeleteStatus`
         """
         self._delete_status = delete_status
 

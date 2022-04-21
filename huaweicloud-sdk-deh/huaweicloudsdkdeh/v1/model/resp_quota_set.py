@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RespQuotaSet:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class RespQuotaSet:
     }
 
     def __init__(self, resource=None, hard_limit=None, used=None):
-        """RespQuotaSet - a model defined in huaweicloud sdk"""
+        """RespQuotaSet
+
+        The model defined in huaweicloud sdk
+
+        :param resource: 配额类别。
+        :type resource: str
+        :param hard_limit: 配额最大限制。  “-1”表示资源配额不受限制。
+        :type hard_limit: int
+        :param used: 已使用配额数量。
+        :type used: int
+        """
         
         
 
@@ -65,7 +74,7 @@ class RespQuotaSet:
         配额类别。
 
         :param resource: The resource of this RespQuotaSet.
-        :type: str
+        :type resource: str
         """
         self._resource = resource
 
@@ -87,7 +96,7 @@ class RespQuotaSet:
         配额最大限制。  “-1”表示资源配额不受限制。
 
         :param hard_limit: The hard_limit of this RespQuotaSet.
-        :type: int
+        :type hard_limit: int
         """
         self._hard_limit = hard_limit
 
@@ -109,7 +118,7 @@ class RespQuotaSet:
         已使用配额数量。
 
         :param used: The used of this RespQuotaSet.
-        :type: int
+        :type used: int
         """
         self._used = used
 

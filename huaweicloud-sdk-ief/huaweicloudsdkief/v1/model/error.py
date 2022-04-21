@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Error:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class Error:
     }
 
     def __init__(self, detail=None, ief_instance_id=None, project_id=None, rule_id=None, time=None):
-        """Error - a model defined in huaweicloud sdk"""
+        """Error
+
+        The model defined in huaweicloud sdk
+
+        :param detail: 错误详情
+        :type detail: str
+        :param ief_instance_id: 铂金版实例ID，如果为空则表示是专业版实例。
+        :type ief_instance_id: str
+        :param project_id: 项目ID
+        :type project_id: str
+        :param rule_id: 规则ID
+        :type rule_id: str
+        :param time: 错误发生的时间
+        :type time: str
+        """
         
         
 
@@ -73,7 +86,7 @@ class Error:
         错误详情
 
         :param detail: The detail of this Error.
-        :type: str
+        :type detail: str
         """
         self._detail = detail
 
@@ -95,7 +108,7 @@ class Error:
         铂金版实例ID，如果为空则表示是专业版实例。
 
         :param ief_instance_id: The ief_instance_id of this Error.
-        :type: str
+        :type ief_instance_id: str
         """
         self._ief_instance_id = ief_instance_id
 
@@ -117,7 +130,7 @@ class Error:
         项目ID
 
         :param project_id: The project_id of this Error.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -139,7 +152,7 @@ class Error:
         规则ID
 
         :param rule_id: The rule_id of this Error.
-        :type: str
+        :type rule_id: str
         """
         self._rule_id = rule_id
 
@@ -161,7 +174,7 @@ class Error:
         错误发生的时间
 
         :param time: The time of this Error.
-        :type: str
+        :type time: str
         """
         self._time = time
 

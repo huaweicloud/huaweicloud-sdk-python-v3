@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ConfCtlRecordInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ConfCtlRecordInfo:
     }
 
     def __init__(self, operate_time=None, operate_source=None, operator=None, operate_code=None, operation_object=None, operate_result=None, detail=None):
-        """ConfCtlRecordInfo - a model defined in huaweicloud sdk"""
+        """ConfCtlRecordInfo
+
+        The model defined in huaweicloud sdk
+
+        :param operate_time: 操作时间（UTC时间，单位毫秒）。
+        :type operate_time: int
+        :param operate_source: 操作来源。
+        :type operate_source: str
+        :param operator: 操作者。
+        :type operator: str
+        :param operate_code: 操作描述。
+        :type operate_code: str
+        :param operation_object: 被操作对象。
+        :type operation_object: str
+        :param operate_result: 操作结果。
+        :type operate_result: str
+        :param detail: 详情。
+        :type detail: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class ConfCtlRecordInfo:
         操作时间（UTC时间，单位毫秒）。
 
         :param operate_time: The operate_time of this ConfCtlRecordInfo.
-        :type: int
+        :type operate_time: int
         """
         self._operate_time = operate_time
 
@@ -110,7 +127,7 @@ class ConfCtlRecordInfo:
         操作来源。
 
         :param operate_source: The operate_source of this ConfCtlRecordInfo.
-        :type: str
+        :type operate_source: str
         """
         self._operate_source = operate_source
 
@@ -132,7 +149,7 @@ class ConfCtlRecordInfo:
         操作者。
 
         :param operator: The operator of this ConfCtlRecordInfo.
-        :type: str
+        :type operator: str
         """
         self._operator = operator
 
@@ -154,7 +171,7 @@ class ConfCtlRecordInfo:
         操作描述。
 
         :param operate_code: The operate_code of this ConfCtlRecordInfo.
-        :type: str
+        :type operate_code: str
         """
         self._operate_code = operate_code
 
@@ -176,7 +193,7 @@ class ConfCtlRecordInfo:
         被操作对象。
 
         :param operation_object: The operation_object of this ConfCtlRecordInfo.
-        :type: str
+        :type operation_object: str
         """
         self._operation_object = operation_object
 
@@ -198,7 +215,7 @@ class ConfCtlRecordInfo:
         操作结果。
 
         :param operate_result: The operate_result of this ConfCtlRecordInfo.
-        :type: str
+        :type operate_result: str
         """
         self._operate_result = operate_result
 
@@ -220,7 +237,7 @@ class ConfCtlRecordInfo:
         详情。
 
         :param detail: The detail of this ConfCtlRecordInfo.
-        :type: str
+        :type detail: str
         """
         self._detail = detail
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RollbackSnapshotOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RollbackSnapshotOption:
     }
 
     def __init__(self, name=None, volume_id=None):
-        """RollbackSnapshotOption - a model defined in huaweicloud sdk"""
+        """RollbackSnapshotOption
+
+        The model defined in huaweicloud sdk
+
+        :param name: 回滚的目标云硬盘名称。
+        :type name: str
+        :param volume_id: 回滚的目标云硬盘UUID。
+        :type volume_id: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class RollbackSnapshotOption:
         回滚的目标云硬盘名称。
 
         :param name: The name of this RollbackSnapshotOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -84,7 +91,7 @@ class RollbackSnapshotOption:
         回滚的目标云硬盘UUID。
 
         :param volume_id: The volume_id of this RollbackSnapshotOption.
-        :type: str
+        :type volume_id: str
         """
         self._volume_id = volume_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTablesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListTablesResponse(SdkResponse):
     }
 
     def __init__(self, tables=None, count=None):
-        """ListTablesResponse - a model defined in huaweicloud sdk"""
+        """ListTablesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param tables: 表的信息。
+        :type tables: list[:class:`huaweicloudsdkiotanalytics.v1.Table`]
+        :param count: 数据表总数。
+        :type count: int
+        """
         
         super(ListTablesResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListTablesResponse(SdkResponse):
         表的信息。
 
         :return: The tables of this ListTablesResponse.
-        :rtype: list[Table]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.Table`]
         """
         return self._tables
 
@@ -63,7 +70,7 @@ class ListTablesResponse(SdkResponse):
         表的信息。
 
         :param tables: The tables of this ListTablesResponse.
-        :type: list[Table]
+        :type tables: list[:class:`huaweicloudsdkiotanalytics.v1.Table`]
         """
         self._tables = tables
 
@@ -85,7 +92,7 @@ class ListTablesResponse(SdkResponse):
         数据表总数。
 
         :param count: The count of this ListTablesResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

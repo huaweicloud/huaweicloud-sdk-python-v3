@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateProjectRepoRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class CreateProjectRepoRequest:
     }
 
     def __init__(self, import_members=None, project_name=None, repo_name=None, type=None, visibility_level=None, external_project_info=None):
-        """CreateProjectRepoRequest - a model defined in huaweicloud sdk"""
+        """CreateProjectRepoRequest
+
+        The model defined in huaweicloud sdk
+
+        :param import_members: 是否导入项目成员，取值范围：0-&gt;不导入项目成员，1-&gt;导入项目成员
+        :type import_members: int
+        :param project_name: 项目名称，取值范围：可以输入英文大小写字母、数字、连字符、下划线，且必须以字母开头
+        :type project_name: str
+        :param repo_name: 仓库名称，取值范围：可以输入英文大小写字母、数字、连字符、下划线，且必须以字母开头
+        :type repo_name: str
+        :param type: 项目类型，normal|scrum
+        :type type: str
+        :param visibility_level: 是否是公仓
+        :type visibility_level: int
+        :param external_project_info: 
+        :type external_project_info: :class:`huaweicloudsdkcodehub.v3.ExternalKeyMessage`
+        """
         
         
 
@@ -81,7 +96,7 @@ class CreateProjectRepoRequest:
         是否导入项目成员，取值范围：0->不导入项目成员，1->导入项目成员
 
         :param import_members: The import_members of this CreateProjectRepoRequest.
-        :type: int
+        :type import_members: int
         """
         self._import_members = import_members
 
@@ -103,7 +118,7 @@ class CreateProjectRepoRequest:
         项目名称，取值范围：可以输入英文大小写字母、数字、连字符、下划线，且必须以字母开头
 
         :param project_name: The project_name of this CreateProjectRepoRequest.
-        :type: str
+        :type project_name: str
         """
         self._project_name = project_name
 
@@ -125,7 +140,7 @@ class CreateProjectRepoRequest:
         仓库名称，取值范围：可以输入英文大小写字母、数字、连字符、下划线，且必须以字母开头
 
         :param repo_name: The repo_name of this CreateProjectRepoRequest.
-        :type: str
+        :type repo_name: str
         """
         self._repo_name = repo_name
 
@@ -147,7 +162,7 @@ class CreateProjectRepoRequest:
         项目类型，normal|scrum
 
         :param type: The type of this CreateProjectRepoRequest.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -169,7 +184,7 @@ class CreateProjectRepoRequest:
         是否是公仓
 
         :param visibility_level: The visibility_level of this CreateProjectRepoRequest.
-        :type: int
+        :type visibility_level: int
         """
         self._visibility_level = visibility_level
 
@@ -179,7 +194,7 @@ class CreateProjectRepoRequest:
 
 
         :return: The external_project_info of this CreateProjectRepoRequest.
-        :rtype: ExternalKeyMessage
+        :rtype: :class:`huaweicloudsdkcodehub.v3.ExternalKeyMessage`
         """
         return self._external_project_info
 
@@ -189,7 +204,7 @@ class CreateProjectRepoRequest:
 
 
         :param external_project_info: The external_project_info of this CreateProjectRepoRequest.
-        :type: ExternalKeyMessage
+        :type external_project_info: :class:`huaweicloudsdkcodehub.v3.ExternalKeyMessage`
         """
         self._external_project_info = external_project_info
 

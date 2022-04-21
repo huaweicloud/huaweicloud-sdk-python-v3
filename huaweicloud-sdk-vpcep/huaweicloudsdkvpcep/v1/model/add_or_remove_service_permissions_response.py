@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddOrRemoveServicePermissionsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class AddOrRemoveServicePermissionsResponse(SdkResponse):
     }
 
     def __init__(self, permissions=None):
-        """AddOrRemoveServicePermissionsResponse - a model defined in huaweicloud sdk"""
+        """AddOrRemoveServicePermissionsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param permissions: permission列表。 权限格式为iam:domain:: 6e9dfd51d1124e8d8498dce894923a0d或“*”， “*”表示所有用户的终端节点可连接。其中 6e9dfd51d1124e8d8498dce894923a0d为可连接 的用户domian_id。
+        :type permissions: list[str]
+        """
         
         super(AddOrRemoveServicePermissionsResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class AddOrRemoveServicePermissionsResponse(SdkResponse):
         permission列表。 权限格式为iam:domain:: 6e9dfd51d1124e8d8498dce894923a0d或“*”， “*”表示所有用户的终端节点可连接。其中 6e9dfd51d1124e8d8498dce894923a0d为可连接 的用户domian_id。
 
         :param permissions: The permissions of this AddOrRemoveServicePermissionsResponse.
-        :type: list[str]
+        :type permissions: list[str]
         """
         self._permissions = permissions
 

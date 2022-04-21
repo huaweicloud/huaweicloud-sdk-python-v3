@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestartInstanceReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RestartInstanceReq:
     }
 
     def __init__(self, restart=None):
-        """RestartInstanceReq - a model defined in huaweicloud sdk"""
+        """RestartInstanceReq
+
+        The model defined in huaweicloud sdk
+
+        :param restart: 
+        :type restart: :class:`huaweicloudsdkddm.v1.RestarInstanceInfo`
+        """
         
         
 
@@ -46,7 +51,7 @@ class RestartInstanceReq:
 
 
         :return: The restart of this RestartInstanceReq.
-        :rtype: RestarInstanceInfo
+        :rtype: :class:`huaweicloudsdkddm.v1.RestarInstanceInfo`
         """
         return self._restart
 
@@ -56,7 +61,7 @@ class RestartInstanceReq:
 
 
         :param restart: The restart of this RestartInstanceReq.
-        :type: RestarInstanceInfo
+        :type restart: :class:`huaweicloudsdkddm.v1.RestarInstanceInfo`
         """
         self._restart = restart
 

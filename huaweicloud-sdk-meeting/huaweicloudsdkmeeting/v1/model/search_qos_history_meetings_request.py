@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SearchQosHistoryMeetingsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class SearchQosHistoryMeetingsRequest:
     }
 
     def __init__(self, start_date=None, end_date=None, offset=None, limit=None, search_key=None):
-        """SearchQosHistoryMeetingsRequest - a model defined in huaweicloud sdk"""
+        """SearchQosHistoryMeetingsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param start_date: 查询的起始日期，Unix时间戳（单位毫秒）。
+        :type start_date: int
+        :param end_date: 查询的截止日期，Unix时间戳（单位毫秒）。
+        :type end_date: int
+        :param offset: 查询偏移量。 * 取值：大于等于0，默认值为0。 * 小于最小值0时，系统设置为0。 * 大于等于最大条目数量，则返回最后一页的数据。
+        :type offset: int
+        :param limit: 查询的条目数量。 * 取值：1-500，默认值为20。 * 小于最小值1时，系统设置为1。 * 大于最大值500时，系统设置为500。
+        :type limit: int
+        :param search_key: 根据会议主题,预定人和会议id作为关键词，模糊查询会议列表。最大不超过512个字节。
+        :type search_key: str
+        """
         
         
 
@@ -76,7 +89,7 @@ class SearchQosHistoryMeetingsRequest:
         查询的起始日期，Unix时间戳（单位毫秒）。
 
         :param start_date: The start_date of this SearchQosHistoryMeetingsRequest.
-        :type: int
+        :type start_date: int
         """
         self._start_date = start_date
 
@@ -98,7 +111,7 @@ class SearchQosHistoryMeetingsRequest:
         查询的截止日期，Unix时间戳（单位毫秒）。
 
         :param end_date: The end_date of this SearchQosHistoryMeetingsRequest.
-        :type: int
+        :type end_date: int
         """
         self._end_date = end_date
 
@@ -120,7 +133,7 @@ class SearchQosHistoryMeetingsRequest:
         查询偏移量。 * 取值：大于等于0，默认值为0。 * 小于最小值0时，系统设置为0。 * 大于等于最大条目数量，则返回最后一页的数据。
 
         :param offset: The offset of this SearchQosHistoryMeetingsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -142,7 +155,7 @@ class SearchQosHistoryMeetingsRequest:
         查询的条目数量。 * 取值：1-500，默认值为20。 * 小于最小值1时，系统设置为1。 * 大于最大值500时，系统设置为500。
 
         :param limit: The limit of this SearchQosHistoryMeetingsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -164,7 +177,7 @@ class SearchQosHistoryMeetingsRequest:
         根据会议主题,预定人和会议id作为关键词，模糊查询会议列表。最大不超过512个字节。
 
         :param search_key: The search_key of this SearchQosHistoryMeetingsRequest.
-        :type: str
+        :type search_key: str
         """
         self._search_key = search_key
 

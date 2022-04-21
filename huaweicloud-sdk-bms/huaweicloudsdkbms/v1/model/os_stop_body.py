@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OsStopBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class OsStopBody:
     }
 
     def __init__(self, os_stop=None):
-        """OsStopBody - a model defined in huaweicloud sdk"""
+        """OsStopBody
+
+        The model defined in huaweicloud sdk
+
+        :param os_stop: 
+        :type os_stop: :class:`huaweicloudsdkbms.v1.OsStopBodyType`
+        """
         
         
 
@@ -45,7 +50,7 @@ class OsStopBody:
 
 
         :return: The os_stop of this OsStopBody.
-        :rtype: OsStopBodyType
+        :rtype: :class:`huaweicloudsdkbms.v1.OsStopBodyType`
         """
         return self._os_stop
 
@@ -55,7 +60,7 @@ class OsStopBody:
 
 
         :param os_stop: The os_stop of this OsStopBody.
-        :type: OsStopBodyType
+        :type os_stop: :class:`huaweicloudsdkbms.v1.OsStopBodyType`
         """
         self._os_stop = os_stop
 

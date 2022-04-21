@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IssueCertificateAuthorityCertificateRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class IssueCertificateAuthorityCertificateRequestBody:
     }
 
     def __init__(self, issuer_id=None, path_length=None, signature_algorithm=None, validity=None):
-        """IssueCertificateAuthorityCertificateRequestBody - a model defined in huaweicloud sdk"""
+        """IssueCertificateAuthorityCertificateRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param issuer_id: 父CA证书ID。
+        :type issuer_id: str
+        :param path_length: 路径长度。
+        :type path_length: int
+        :param signature_algorithm: 签名哈希算法，可选值如下：   - **SHA256**   - **SHA384**   - **SHA512**
+        :type signature_algorithm: str
+        :param validity: 
+        :type validity: :class:`huaweicloudsdkccm.v1.Validity`
+        """
         
         
 
@@ -69,7 +80,7 @@ class IssueCertificateAuthorityCertificateRequestBody:
         父CA证书ID。
 
         :param issuer_id: The issuer_id of this IssueCertificateAuthorityCertificateRequestBody.
-        :type: str
+        :type issuer_id: str
         """
         self._issuer_id = issuer_id
 
@@ -91,7 +102,7 @@ class IssueCertificateAuthorityCertificateRequestBody:
         路径长度。
 
         :param path_length: The path_length of this IssueCertificateAuthorityCertificateRequestBody.
-        :type: int
+        :type path_length: int
         """
         self._path_length = path_length
 
@@ -113,7 +124,7 @@ class IssueCertificateAuthorityCertificateRequestBody:
         签名哈希算法，可选值如下：   - **SHA256**   - **SHA384**   - **SHA512**
 
         :param signature_algorithm: The signature_algorithm of this IssueCertificateAuthorityCertificateRequestBody.
-        :type: str
+        :type signature_algorithm: str
         """
         self._signature_algorithm = signature_algorithm
 
@@ -123,7 +134,7 @@ class IssueCertificateAuthorityCertificateRequestBody:
 
 
         :return: The validity of this IssueCertificateAuthorityCertificateRequestBody.
-        :rtype: Validity
+        :rtype: :class:`huaweicloudsdkccm.v1.Validity`
         """
         return self._validity
 
@@ -133,7 +144,7 @@ class IssueCertificateAuthorityCertificateRequestBody:
 
 
         :param validity: The validity of this IssueCertificateAuthorityCertificateRequestBody.
-        :type: Validity
+        :type validity: :class:`huaweicloudsdkccm.v1.Validity`
         """
         self._validity = validity
 

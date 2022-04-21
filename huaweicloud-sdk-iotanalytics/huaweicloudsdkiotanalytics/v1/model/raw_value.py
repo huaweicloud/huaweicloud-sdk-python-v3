@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RawValue:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RawValue:
     }
 
     def __init__(self, property_name=None, values=None):
-        """RawValue - a model defined in huaweicloud sdk"""
+        """RawValue
+
+        The model defined in huaweicloud sdk
+
+        :param property_name: 属性名称
+        :type property_name: str
+        :param values: 资产属性的历史值序列，示例：[1,2]
+        :type values: list[object]
+        """
         
         
 
@@ -63,7 +70,7 @@ class RawValue:
         属性名称
 
         :param property_name: The property_name of this RawValue.
-        :type: str
+        :type property_name: str
         """
         self._property_name = property_name
 
@@ -85,7 +92,7 @@ class RawValue:
         资产属性的历史值序列，示例：[1,2]
 
         :param values: The values of this RawValue.
-        :type: list[object]
+        :type values: list[object]
         """
         self._values = values
 

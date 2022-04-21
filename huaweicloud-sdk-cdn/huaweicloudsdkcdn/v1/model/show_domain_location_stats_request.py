@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDomainLocationStatsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class ShowDomainLocationStatsRequest:
     }
 
     def __init__(self, action=None, start_time=None, end_time=None, interval=None, domain_name=None, stat_type=None, group_by=None, country=None, province=None, isp=None, enterprise_project_id=None):
-        """ShowDomainLocationStatsRequest - a model defined in huaweicloud sdk"""
+        """ShowDomainLocationStatsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param action: - 动作名称，可选location_summary、location_detail。 - location_summary：查询汇总数据 - location_detail：查询数据详情。
+        :type action: str
+        :param start_time: - 查询起始时间戳，时间戳应设置需为整5分钟，设置方式如下： - interval为300时，start_time设置为整5分钟时刻点，如：1631240100000(对应2021-09-10 10:15:00) - interval为3600时，start_time设置为整小时时刻点，如：1631239200000(对应2021-09-10 10:00:00) - interval为86400时，start_time设置为东8区零点时刻点，如：1631203200000(对应2021-09-10 00:00:00)
+        :type start_time: int
+        :param end_time: - 查询结束时间戳，时间戳应设置需为整5分钟，设置方式如下： - interval为300时，end_time设置为整5分钟时刻点，如：1631243700000(对应2021-09-10 11:15:00) - interval为3600时，end_time设置为整小时时刻点，如：1631325600000(对应2021-09-11 10:00:00) - interval为86400时，end_time设置为东8区零点时刻点，如：1631376000000(对应2021-09-12 00:00:00)
+        :type end_time: int
+        :param interval: 查询时间间隔，单位为秒，可设置值300(5分钟),3600(1小时),86400(1天)等。
+        :type interval: int
+        :param domain_name: 域名列表，多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com，all表示查询名下全部域名。
+        :type domain_name: str
+        :param stat_type: - 网络资源消耗   - bw(带宽)   - flux(流量) - 访问情况   - req_num(请求总数) - HTTP状态码（组合指标）   - http_code_2xx(状态码汇总2xx)   - http_code_3xx(状态码汇总3xx)   - http_code_4xx(状态码汇总4xx)   - http_code_5xx(状态码汇总5xx)   - status_code_2xx(状态码详情2xx)   - status_code_3xx(状态码详情3xx)   - status_code_4xx(状态码详情4xx)   - status_code_5xx(状态码详情5xx)
+        :type stat_type: str
+        :param group_by: 数据分组方式，多个以英文逗号分隔，可选domain、country、province、isp，默认不分组。
+        :type group_by: str
+        :param country: 国家编码，多个以英文逗号分隔，all表示全部。
+        :type country: str
+        :param province: 省份编码，当country为cn（中国）时有效，多个以英文逗号分隔，all表示全部。
+        :type province: str
+        :param isp: 运营商编码，多个以英文逗号分隔，all表示全部。
+        :type isp: str
+        :param enterprise_project_id: 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子账号调用接口时，该参数必传。
+        :type enterprise_project_id: str
+        """
         
         
 
@@ -103,7 +128,7 @@ class ShowDomainLocationStatsRequest:
         - 动作名称，可选location_summary、location_detail。 - location_summary：查询汇总数据 - location_detail：查询数据详情。
 
         :param action: The action of this ShowDomainLocationStatsRequest.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -125,7 +150,7 @@ class ShowDomainLocationStatsRequest:
         - 查询起始时间戳，时间戳应设置需为整5分钟，设置方式如下： - interval为300时，start_time设置为整5分钟时刻点，如：1631240100000(对应2021-09-10 10:15:00) - interval为3600时，start_time设置为整小时时刻点，如：1631239200000(对应2021-09-10 10:00:00) - interval为86400时，start_time设置为东8区零点时刻点，如：1631203200000(对应2021-09-10 00:00:00)
 
         :param start_time: The start_time of this ShowDomainLocationStatsRequest.
-        :type: int
+        :type start_time: int
         """
         self._start_time = start_time
 
@@ -147,7 +172,7 @@ class ShowDomainLocationStatsRequest:
         - 查询结束时间戳，时间戳应设置需为整5分钟，设置方式如下： - interval为300时，end_time设置为整5分钟时刻点，如：1631243700000(对应2021-09-10 11:15:00) - interval为3600时，end_time设置为整小时时刻点，如：1631325600000(对应2021-09-11 10:00:00) - interval为86400时，end_time设置为东8区零点时刻点，如：1631376000000(对应2021-09-12 00:00:00)
 
         :param end_time: The end_time of this ShowDomainLocationStatsRequest.
-        :type: int
+        :type end_time: int
         """
         self._end_time = end_time
 
@@ -169,7 +194,7 @@ class ShowDomainLocationStatsRequest:
         查询时间间隔，单位为秒，可设置值300(5分钟),3600(1小时),86400(1天)等。
 
         :param interval: The interval of this ShowDomainLocationStatsRequest.
-        :type: int
+        :type interval: int
         """
         self._interval = interval
 
@@ -191,7 +216,7 @@ class ShowDomainLocationStatsRequest:
         域名列表，多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com，all表示查询名下全部域名。
 
         :param domain_name: The domain_name of this ShowDomainLocationStatsRequest.
-        :type: str
+        :type domain_name: str
         """
         self._domain_name = domain_name
 
@@ -213,7 +238,7 @@ class ShowDomainLocationStatsRequest:
         - 网络资源消耗   - bw(带宽)   - flux(流量) - 访问情况   - req_num(请求总数) - HTTP状态码（组合指标）   - http_code_2xx(状态码汇总2xx)   - http_code_3xx(状态码汇总3xx)   - http_code_4xx(状态码汇总4xx)   - http_code_5xx(状态码汇总5xx)   - status_code_2xx(状态码详情2xx)   - status_code_3xx(状态码详情3xx)   - status_code_4xx(状态码详情4xx)   - status_code_5xx(状态码详情5xx)
 
         :param stat_type: The stat_type of this ShowDomainLocationStatsRequest.
-        :type: str
+        :type stat_type: str
         """
         self._stat_type = stat_type
 
@@ -235,7 +260,7 @@ class ShowDomainLocationStatsRequest:
         数据分组方式，多个以英文逗号分隔，可选domain、country、province、isp，默认不分组。
 
         :param group_by: The group_by of this ShowDomainLocationStatsRequest.
-        :type: str
+        :type group_by: str
         """
         self._group_by = group_by
 
@@ -257,7 +282,7 @@ class ShowDomainLocationStatsRequest:
         国家编码，多个以英文逗号分隔，all表示全部。
 
         :param country: The country of this ShowDomainLocationStatsRequest.
-        :type: str
+        :type country: str
         """
         self._country = country
 
@@ -279,7 +304,7 @@ class ShowDomainLocationStatsRequest:
         省份编码，当country为cn（中国）时有效，多个以英文逗号分隔，all表示全部。
 
         :param province: The province of this ShowDomainLocationStatsRequest.
-        :type: str
+        :type province: str
         """
         self._province = province
 
@@ -301,7 +326,7 @@ class ShowDomainLocationStatsRequest:
         运营商编码，多个以英文逗号分隔，all表示全部。
 
         :param isp: The isp of this ShowDomainLocationStatsRequest.
-        :type: str
+        :type isp: str
         """
         self._isp = isp
 
@@ -323,7 +348,7 @@ class ShowDomainLocationStatsRequest:
         当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子账号调用接口时，该参数必传。
 
         :param enterprise_project_id: The enterprise_project_id of this ShowDomainLocationStatsRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 

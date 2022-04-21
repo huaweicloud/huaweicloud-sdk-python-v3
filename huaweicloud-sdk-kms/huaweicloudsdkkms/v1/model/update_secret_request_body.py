@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateSecretRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateSecretRequestBody:
     }
 
     def __init__(self, name=None, kms_key_id=None, description=None):
-        """UpdateSecretRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateSecretRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param name: 凭据名称。  约束：取值范围为1到64个字符，满足正则匹配“^[a-zA-Z0-9._-]{1,64}$”。 
+        :type name: str
+        :param kms_key_id: 用于加密保护凭据值的KMS主密钥ID。更新凭据的主密钥后，仅新创建的凭据版本使用更新后的主密钥ID加密，之前的凭据版本依旧使用之前的主密钥ID解密。 
+        :type kms_key_id: str
+        :param description: 凭据的描述信息。  约束：2048字节。 
+        :type description: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class UpdateSecretRequestBody:
         凭据名称。  约束：取值范围为1到64个字符，满足正则匹配“^[a-zA-Z0-9._-]{1,64}$”。 
 
         :param name: The name of this UpdateSecretRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -90,7 +99,7 @@ class UpdateSecretRequestBody:
         用于加密保护凭据值的KMS主密钥ID。更新凭据的主密钥后，仅新创建的凭据版本使用更新后的主密钥ID加密，之前的凭据版本依旧使用之前的主密钥ID解密。 
 
         :param kms_key_id: The kms_key_id of this UpdateSecretRequestBody.
-        :type: str
+        :type kms_key_id: str
         """
         self._kms_key_id = kms_key_id
 
@@ -112,7 +121,7 @@ class UpdateSecretRequestBody:
         凭据的描述信息。  约束：2048字节。 
 
         :param description: The description of this UpdateSecretRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 

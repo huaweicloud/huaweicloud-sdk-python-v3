@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteLogGroupRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteLogGroupRequest:
     }
 
     def __init__(self, log_group_id=None):
-        """DeleteLogGroupRequest - a model defined in huaweicloud sdk"""
+        """DeleteLogGroupRequest
+
+        The model defined in huaweicloud sdk
+
+        :param log_group_id: 日志组ID，获取方式请参见：获取账号ID、项目ID、日志组ID、日志流ID（https://support.huaweicloud.com/api-lts/lts_api_0006.html）
+        :type log_group_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteLogGroupRequest:
         日志组ID，获取方式请参见：获取账号ID、项目ID、日志组ID、日志流ID（https://support.huaweicloud.com/api-lts/lts_api_0006.html）
 
         :param log_group_id: The log_group_id of this DeleteLogGroupRequest.
-        :type: str
+        :type log_group_id: str
         """
         self._log_group_id = log_group_id
 

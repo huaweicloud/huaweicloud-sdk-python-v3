@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestSetLiveReqBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RestSetLiveReqBody:
     }
 
     def __init__(self, is_live=None):
-        """RestSetLiveReqBody - a model defined in huaweicloud sdk"""
+        """RestSetLiveReqBody
+
+        The model defined in huaweicloud sdk
+
+        :param is_live: 默认值为0。 - 0: 停止会议直播。 - 1: 启动会议直播。
+        :type is_live: int
+        """
         
         
 
@@ -57,7 +62,7 @@ class RestSetLiveReqBody:
         默认值为0。 - 0: 停止会议直播。 - 1: 启动会议直播。
 
         :param is_live: The is_live of this RestSetLiveReqBody.
-        :type: int
+        :type is_live: int
         """
         self._is_live = is_live
 

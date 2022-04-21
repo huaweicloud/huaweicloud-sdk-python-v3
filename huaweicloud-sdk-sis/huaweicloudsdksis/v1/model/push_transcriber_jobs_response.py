@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PushTranscriberJobsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class PushTranscriberJobsResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """PushTranscriberJobsResponse - a model defined in huaweicloud sdk"""
+        """PushTranscriberJobsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 创建的任务标识, 如果创建任务成功时必须存在。
+        :type job_id: str
+        """
         
         super(PushTranscriberJobsResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class PushTranscriberJobsResponse(SdkResponse):
         创建的任务标识, 如果创建任务成功时必须存在。
 
         :param job_id: The job_id of this PushTranscriberJobsResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 

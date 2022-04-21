@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunSentenceEmbeddingResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class RunSentenceEmbeddingResponse(SdkResponse):
     }
 
     def __init__(self, vectors=None, error_code=None, error_msg=None):
-        """RunSentenceEmbeddingResponse - a model defined in huaweicloud sdk"""
+        """RunSentenceEmbeddingResponse
+
+        The model defined in huaweicloud sdk
+
+        :param vectors: 句向量结果列表，按输入句子顺序返回句向量。调用失败时无此字段。
+        :type vectors: list[list[float]]
+        :param error_code: 调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
+        :type error_code: str
+        :param error_msg: 调用失败时的错误信息。调用成功时无此字段。
+        :type error_msg: str
+        """
         
         super(RunSentenceEmbeddingResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class RunSentenceEmbeddingResponse(SdkResponse):
         句向量结果列表，按输入句子顺序返回句向量。调用失败时无此字段。
 
         :param vectors: The vectors of this RunSentenceEmbeddingResponse.
-        :type: list[list[float]]
+        :type vectors: list[list[float]]
         """
         self._vectors = vectors
 
@@ -90,7 +99,7 @@ class RunSentenceEmbeddingResponse(SdkResponse):
         调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
 
         :param error_code: The error_code of this RunSentenceEmbeddingResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -112,7 +121,7 @@ class RunSentenceEmbeddingResponse(SdkResponse):
         调用失败时的错误信息。调用成功时无此字段。
 
         :param error_msg: The error_msg of this RunSentenceEmbeddingResponse.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 

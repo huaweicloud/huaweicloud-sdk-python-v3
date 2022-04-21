@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeletePoolRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeletePoolRequest:
     }
 
     def __init__(self, pool_id=None):
-        """DeletePoolRequest - a model defined in huaweicloud sdk"""
+        """DeletePoolRequest
+
+        The model defined in huaweicloud sdk
+
+        :param pool_id: 后端服务器组ID。
+        :type pool_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeletePoolRequest:
         后端服务器组ID。
 
         :param pool_id: The pool_id of this DeletePoolRequest.
-        :type: str
+        :type pool_id: str
         """
         self._pool_id = pool_id
 

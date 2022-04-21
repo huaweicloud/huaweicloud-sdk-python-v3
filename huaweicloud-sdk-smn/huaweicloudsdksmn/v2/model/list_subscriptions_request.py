@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSubscriptionsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListSubscriptionsRequest:
     }
 
     def __init__(self, offset=None, limit=None, protocol=None, status=None, endpoint=None):
-        """ListSubscriptionsRequest - a model defined in huaweicloud sdk"""
+        """ListSubscriptionsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param offset: 偏移量。  偏移量为一个大于0小于资源总个数的整数，表示查询该偏移量后面的所有的资源，默认值为0。
+        :type offset: int
+        :param limit:  查询数量限制。  取值范围：1~100，取值一般为10，20，50。功能说明：每页返回的资源个数。默认值为100。
+        :type limit: int
+        :param protocol: 协议名称， 枚举值：http、https、sms、email、functionstage、dms、application。
+        :type protocol: str
+        :param status: 状态。 0：未确认 1：已确认 2：不需要确认 3：已取消确认 4：已经删除。
+        :type status: int
+        :param endpoint: 订阅终端。
+        :type endpoint: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class ListSubscriptionsRequest:
         偏移量。  偏移量为一个大于0小于资源总个数的整数，表示查询该偏移量后面的所有的资源，默认值为0。
 
         :param offset: The offset of this ListSubscriptionsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -100,7 +113,7 @@ class ListSubscriptionsRequest:
          查询数量限制。  取值范围：1~100，取值一般为10，20，50。功能说明：每页返回的资源个数。默认值为100。
 
         :param limit: The limit of this ListSubscriptionsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -122,7 +135,7 @@ class ListSubscriptionsRequest:
         协议名称， 枚举值：http、https、sms、email、functionstage、dms、application。
 
         :param protocol: The protocol of this ListSubscriptionsRequest.
-        :type: str
+        :type protocol: str
         """
         self._protocol = protocol
 
@@ -144,7 +157,7 @@ class ListSubscriptionsRequest:
         状态。 0：未确认 1：已确认 2：不需要确认 3：已取消确认 4：已经删除。
 
         :param status: The status of this ListSubscriptionsRequest.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -166,7 +179,7 @@ class ListSubscriptionsRequest:
         订阅终端。
 
         :param endpoint: The endpoint of this ListSubscriptionsRequest.
-        :type: str
+        :type endpoint: str
         """
         self._endpoint = endpoint
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApiMock:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ApiMock:
     }
 
     def __init__(self, remark=None, result_content=None, version=None, authorizer_id=None, id=None, register_time=None, status=None, update_time=None):
-        """ApiMock - a model defined in huaweicloud sdk"""
+        """ApiMock
+
+        The model defined in huaweicloud sdk
+
+        :param remark: 描述信息。长度不超过255个字符 &gt; 中文字符必须为UTF-8或者unicode编码。
+        :type remark: str
+        :param result_content: 返回结果
+        :type result_content: str
+        :param version: 版本。字符长度不超过64
+        :type version: str
+        :param authorizer_id: 后端自定义认证ID
+        :type authorizer_id: str
+        :param id: 编号
+        :type id: str
+        :param register_time: 注册时间
+        :type register_time: datetime
+        :param status: 后端状态   - 1： 有效
+        :type status: int
+        :param update_time: 修改时间
+        :type update_time: datetime
+        """
         
         
 
@@ -93,7 +112,7 @@ class ApiMock:
         描述信息。长度不超过255个字符 > 中文字符必须为UTF-8或者unicode编码。
 
         :param remark: The remark of this ApiMock.
-        :type: str
+        :type remark: str
         """
         self._remark = remark
 
@@ -115,7 +134,7 @@ class ApiMock:
         返回结果
 
         :param result_content: The result_content of this ApiMock.
-        :type: str
+        :type result_content: str
         """
         self._result_content = result_content
 
@@ -137,7 +156,7 @@ class ApiMock:
         版本。字符长度不超过64
 
         :param version: The version of this ApiMock.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -159,7 +178,7 @@ class ApiMock:
         后端自定义认证ID
 
         :param authorizer_id: The authorizer_id of this ApiMock.
-        :type: str
+        :type authorizer_id: str
         """
         self._authorizer_id = authorizer_id
 
@@ -181,7 +200,7 @@ class ApiMock:
         编号
 
         :param id: The id of this ApiMock.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -203,7 +222,7 @@ class ApiMock:
         注册时间
 
         :param register_time: The register_time of this ApiMock.
-        :type: datetime
+        :type register_time: datetime
         """
         self._register_time = register_time
 
@@ -225,7 +244,7 @@ class ApiMock:
         后端状态   - 1： 有效
 
         :param status: The status of this ApiMock.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -247,7 +266,7 @@ class ApiMock:
         修改时间
 
         :param update_time: The update_time of this ApiMock.
-        :type: datetime
+        :type update_time: datetime
         """
         self._update_time = update_time
 

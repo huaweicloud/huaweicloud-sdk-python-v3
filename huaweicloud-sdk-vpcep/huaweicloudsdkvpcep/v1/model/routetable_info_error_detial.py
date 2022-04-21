@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RoutetableInfoErrorDetial:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RoutetableInfoErrorDetial:
     }
 
     def __init__(self, id=None, error_message=None):
-        """RoutetableInfoErrorDetial - a model defined in huaweicloud sdk"""
+        """RoutetableInfoErrorDetial
+
+        The model defined in huaweicloud sdk
+
+        :param id: 路由表ID。
+        :type id: str
+        :param error_message: 详细错误信息。
+        :type error_message: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class RoutetableInfoErrorDetial:
         路由表ID。
 
         :param id: The id of this RoutetableInfoErrorDetial.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -85,7 +92,7 @@ class RoutetableInfoErrorDetial:
         详细错误信息。
 
         :param error_message: The error_message of this RoutetableInfoErrorDetial.
-        :type: str
+        :type error_message: str
         """
         self._error_message = error_message
 

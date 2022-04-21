@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SmnInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class SmnInfo:
     }
 
     def __init__(self, notify_result=None, notify_error_message=None, topic_name=None):
-        """SmnInfo - a model defined in huaweicloud sdk"""
+        """SmnInfo
+
+        The model defined in huaweicloud sdk
+
+        :param notify_result: 记录迁移任务执行完毕后SMN消息是否发送成功。
+        :type notify_result: bool
+        :param notify_error_message: 记录SMN消息发送失败原因的错误码（迁移任务成功时为空）。
+        :type notify_error_message: str
+        :param topic_name: SMN Topic的名称（SMN消息发送成功时为空）。
+        :type topic_name: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class SmnInfo:
         记录迁移任务执行完毕后SMN消息是否发送成功。
 
         :param notify_result: The notify_result of this SmnInfo.
-        :type: bool
+        :type notify_result: bool
         """
         self._notify_result = notify_result
 
@@ -90,7 +99,7 @@ class SmnInfo:
         记录SMN消息发送失败原因的错误码（迁移任务成功时为空）。
 
         :param notify_error_message: The notify_error_message of this SmnInfo.
-        :type: str
+        :type notify_error_message: str
         """
         self._notify_error_message = notify_error_message
 
@@ -112,7 +121,7 @@ class SmnInfo:
         SMN Topic的名称（SMN消息发送成功时为空）。
 
         :param topic_name: The topic_name of this SmnInfo.
-        :type: str
+        :type topic_name: str
         """
         self._topic_name = topic_name
 

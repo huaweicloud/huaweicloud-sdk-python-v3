@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ReleaseRepository:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ReleaseRepository:
     }
 
     def __init__(self, id=None, name=None, download_path=None, size=None, file_type=None, created=None, updated=None):
-        """ReleaseRepository - a model defined in huaweicloud sdk"""
+        """ReleaseRepository
+
+        The model defined in huaweicloud sdk
+
+        :param id: 软件包id
+        :type id: str
+        :param name: 软件包名称
+        :type name: str
+        :param download_path: 软件包下载地址
+        :type download_path: str
+        :param size: 软件包大小
+        :type size: str
+        :param file_type: 文件类型
+        :type file_type: str
+        :param created: 创建时间
+        :type created: str
+        :param updated: 修改时间
+        :type updated: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class ReleaseRepository:
         软件包id
 
         :param id: The id of this ReleaseRepository.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -110,7 +127,7 @@ class ReleaseRepository:
         软件包名称
 
         :param name: The name of this ReleaseRepository.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -132,7 +149,7 @@ class ReleaseRepository:
         软件包下载地址
 
         :param download_path: The download_path of this ReleaseRepository.
-        :type: str
+        :type download_path: str
         """
         self._download_path = download_path
 
@@ -154,7 +171,7 @@ class ReleaseRepository:
         软件包大小
 
         :param size: The size of this ReleaseRepository.
-        :type: str
+        :type size: str
         """
         self._size = size
 
@@ -176,7 +193,7 @@ class ReleaseRepository:
         文件类型
 
         :param file_type: The file_type of this ReleaseRepository.
-        :type: str
+        :type file_type: str
         """
         self._file_type = file_type
 
@@ -198,7 +215,7 @@ class ReleaseRepository:
         创建时间
 
         :param created: The created of this ReleaseRepository.
-        :type: str
+        :type created: str
         """
         self._created = created
 
@@ -220,7 +237,7 @@ class ReleaseRepository:
         修改时间
 
         :param updated: The updated of this ReleaseRepository.
-        :type: str
+        :type updated: str
         """
         self._updated = updated
 

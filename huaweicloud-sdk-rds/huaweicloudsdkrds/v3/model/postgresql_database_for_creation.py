@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PostgresqlDatabaseForCreation:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class PostgresqlDatabaseForCreation:
     }
 
     def __init__(self, name=None, character_set=None, owner=None, template=None, lc_collate=None, lc_ctype=None):
-        """PostgresqlDatabaseForCreation - a model defined in huaweicloud sdk"""
+        """PostgresqlDatabaseForCreation
+
+        The model defined in huaweicloud sdk
+
+        :param name: 数据库名称。  数据库名称长度可在1～63个字符之间，由字母、数字、或下划线组成，不能包含其他特殊字符，不能以“pg”和数字开头，且不能和RDS for PostgreSQL模板库重名。  RDS for PostgreSQL模板库包括postgres， template0 ，template1。
+        :type name: str
+        :param character_set: 数据库字符集。默认UTF8。
+        :type character_set: str
+        :param owner: 数据库所属用户，缺省时默认是root，不能和系统用户重名，且必须是已存在的用户。  系统用户包括“rdsAdmin”,“ rdsMetric”, “rdsBackup”, “rdsRepl”,“ rdsProxy”, “rdsDdm”。
+        :type owner: str
+        :param template: 数据库模板名称，可选值template0，template1。默认template1。
+        :type template: str
+        :param lc_collate: 数据库排序集。默认en_US.UTF-8。  - 须知： 不同的排序规则下，相同字符串的比较其结果可能是不同的。 例如，在en_US.utf8下， select &#39;a&#39;&gt;&#39;A&#39;;执行结果为false，但在&#39;C&#39;下，select &#39;a&#39;&gt;&#39;A&#39;;结果为true。如果数据库从“O”迁移到PostgreSQL，数据库排序集需使用&#39;C&#39;才能得到一致的预期。支持的排序规则可以查询系统表 pg_collation。
+        :type lc_collate: str
+        :param lc_ctype: 数据库分类集。默认en_US.UTF-8。
+        :type lc_ctype: str
+        """
         
         
 
@@ -82,7 +97,7 @@ class PostgresqlDatabaseForCreation:
         数据库名称。  数据库名称长度可在1～63个字符之间，由字母、数字、或下划线组成，不能包含其他特殊字符，不能以“pg”和数字开头，且不能和RDS for PostgreSQL模板库重名。  RDS for PostgreSQL模板库包括postgres， template0 ，template1。
 
         :param name: The name of this PostgresqlDatabaseForCreation.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -104,7 +119,7 @@ class PostgresqlDatabaseForCreation:
         数据库字符集。默认UTF8。
 
         :param character_set: The character_set of this PostgresqlDatabaseForCreation.
-        :type: str
+        :type character_set: str
         """
         self._character_set = character_set
 
@@ -126,7 +141,7 @@ class PostgresqlDatabaseForCreation:
         数据库所属用户，缺省时默认是root，不能和系统用户重名，且必须是已存在的用户。  系统用户包括“rdsAdmin”,“ rdsMetric”, “rdsBackup”, “rdsRepl”,“ rdsProxy”, “rdsDdm”。
 
         :param owner: The owner of this PostgresqlDatabaseForCreation.
-        :type: str
+        :type owner: str
         """
         self._owner = owner
 
@@ -148,7 +163,7 @@ class PostgresqlDatabaseForCreation:
         数据库模板名称，可选值template0，template1。默认template1。
 
         :param template: The template of this PostgresqlDatabaseForCreation.
-        :type: str
+        :type template: str
         """
         self._template = template
 
@@ -170,7 +185,7 @@ class PostgresqlDatabaseForCreation:
         数据库排序集。默认en_US.UTF-8。  - 须知： 不同的排序规则下，相同字符串的比较其结果可能是不同的。 例如，在en_US.utf8下， select 'a'>'A';执行结果为false，但在'C'下，select 'a'>'A';结果为true。如果数据库从“O”迁移到PostgreSQL，数据库排序集需使用'C'才能得到一致的预期。支持的排序规则可以查询系统表 pg_collation。
 
         :param lc_collate: The lc_collate of this PostgresqlDatabaseForCreation.
-        :type: str
+        :type lc_collate: str
         """
         self._lc_collate = lc_collate
 
@@ -192,7 +207,7 @@ class PostgresqlDatabaseForCreation:
         数据库分类集。默认en_US.UTF-8。
 
         :param lc_ctype: The lc_ctype of this PostgresqlDatabaseForCreation.
-        :type: str
+        :type lc_ctype: str
         """
         self._lc_ctype = lc_ctype
 

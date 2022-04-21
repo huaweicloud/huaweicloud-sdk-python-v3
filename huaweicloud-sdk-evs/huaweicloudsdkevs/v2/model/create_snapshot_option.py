@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateSnapshotOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class CreateSnapshotOption:
     }
 
     def __init__(self, volume_id=None, force=None, metadata=None, description=None, name=None):
-        """CreateSnapshotOption - a model defined in huaweicloud sdk"""
+        """CreateSnapshotOption
+
+        The model defined in huaweicloud sdk
+
+        :param volume_id: 源云硬盘的ID。
+        :type volume_id: str
+        :param force: 强制创快照标示，默认为false。 当force标记为false时，云硬盘处于挂载状态时，不能强制创建快照。 当force标记为true时，即使云硬盘处于挂载状态时，仍可以创建快照。
+        :type force: bool
+        :param metadata: 云硬盘快照的元数据信息。
+        :type metadata: dict(str, str)
+        :param description: 云硬盘快照描述，最大支持255个字节。
+        :type description: str
+        :param name: 云硬盘快照名称。最大支持255个字节。  &gt; &gt; 说明： &gt; 对云硬盘创建备份时，同时会创建以autobk_snapshot_为名称前缀的快照，云硬盘控制台对此类快照会有操作限制。因此建议不要创建以&gt; &gt; autobk_snapshot_为名称前缀的快照，避免影响快照的正常使用
+        :type name: str
+        """
         
         
 
@@ -77,7 +90,7 @@ class CreateSnapshotOption:
         源云硬盘的ID。
 
         :param volume_id: The volume_id of this CreateSnapshotOption.
-        :type: str
+        :type volume_id: str
         """
         self._volume_id = volume_id
 
@@ -99,7 +112,7 @@ class CreateSnapshotOption:
         强制创快照标示，默认为false。 当force标记为false时，云硬盘处于挂载状态时，不能强制创建快照。 当force标记为true时，即使云硬盘处于挂载状态时，仍可以创建快照。
 
         :param force: The force of this CreateSnapshotOption.
-        :type: bool
+        :type force: bool
         """
         self._force = force
 
@@ -121,7 +134,7 @@ class CreateSnapshotOption:
         云硬盘快照的元数据信息。
 
         :param metadata: The metadata of this CreateSnapshotOption.
-        :type: dict(str, str)
+        :type metadata: dict(str, str)
         """
         self._metadata = metadata
 
@@ -143,7 +156,7 @@ class CreateSnapshotOption:
         云硬盘快照描述，最大支持255个字节。
 
         :param description: The description of this CreateSnapshotOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -165,7 +178,7 @@ class CreateSnapshotOption:
         云硬盘快照名称。最大支持255个字节。  > > 说明： > 对云硬盘创建备份时，同时会创建以autobk_snapshot_为名称前缀的快照，云硬盘控制台对此类快照会有操作限制。因此建议不要创建以> > autobk_snapshot_为名称前缀的快照，避免影响快照的正常使用
 
         :param name: The name of this CreateSnapshotOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 

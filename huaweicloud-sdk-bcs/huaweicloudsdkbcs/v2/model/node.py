@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Node:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Node:
     }
 
     def __init__(self, ip_port=None, channels=None):
-        """Node - a model defined in huaweicloud sdk"""
+        """Node
+
+        The model defined in huaweicloud sdk
+
+        :param ip_port: 节点EIP信息
+        :type ip_port: str
+        :param channels: 节点所在通道数组
+        :type channels: list[str]
+        """
         
         
 
@@ -63,7 +70,7 @@ class Node:
         节点EIP信息
 
         :param ip_port: The ip_port of this Node.
-        :type: str
+        :type ip_port: str
         """
         self._ip_port = ip_port
 
@@ -85,7 +92,7 @@ class Node:
         节点所在通道数组
 
         :param channels: The channels of this Node.
-        :type: list[str]
+        :type channels: list[str]
         """
         self._channels = channels
 

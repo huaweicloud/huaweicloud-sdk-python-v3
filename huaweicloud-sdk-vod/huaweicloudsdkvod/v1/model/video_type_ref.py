@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VideoTypeRef:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class VideoTypeRef:
     }
 
     def __init__(self, video_type=None, title=None, description=None, category_id=None, tags=None, auto_publish=None, template_group_name=None, auto_encrypt=None, auto_preheat=None, thumbnail=None, review=None, workflow_name=None):
-        """VideoTypeRef - a model defined in huaweicloud sdk"""
+        """VideoTypeRef
+
+        The model defined in huaweicloud sdk
+
+        :param video_type: 转存的音视频文件类型。  取值如下： - 视频文件：MP4、TS、MOV、MXF、MPG、FLV、WMV、AVI、M4V、F4V、MPEG、3GP、ASF、MKV、HLS - 音频文件：MP3、OGG、WAV、WMA、APE、FLAC、AAC、AC3、MMF、AMR、M4A、M4R、WV、MP2  若上传格式为音频文件，则不支持转码、添加水印和字幕。  &gt; 当**video_type**选择HLS时，**storage_mode**（存储模式）需选择存储在租户桶，且输出路径设置为和输入路径在同一个目录。
+        :type video_type: str
+        :param title: 媒资标题，长度不超过128个字节，UTF-8编码。
+        :type title: str
+        :param description: 视频描述，长度不超过1024个字节。
+        :type description: str
+        :param category_id: 媒资分类ID。  您可以调用[创建媒资分类](https://support.huaweicloud.com/api-vod/vod_04_0028.html)接口或在点播控制台的[分类设置](https://support.huaweicloud.com/usermanual-vod/vod010006.html)中创建对应的媒资分类，并获取分类ID。  &gt; 若不设置或者设置为-1，则上传的音视频归类到系统预置的“其它”分类中。
+        :type category_id: int
+        :param tags: 视频标签。  单个标签不超过16个字节，最多不超过16个标签。  多个用逗号分隔，UTF8编码。
+        :type tags: str
+        :param auto_publish: 是否自动发布。  取值如下： - 0：表示不自动发布。 - 1：表示自动发布。  默认值：0。
+        :type auto_publish: int
+        :param template_group_name: 转码模板组名称。  若不为空，则使用指定的转码模板对上传的音视频进行转码，您可以在视频点播控制台配置转码模板，具体请参见[转码设置](https://support.huaweicloud.com/usermanual-vod/vod_01_0072.html)。  &gt; 若同时设置了“**template_group_name**”和“**workflow_name**”字段，则“**template_group_name**”字段生效。
+        :type template_group_name: str
+        :param auto_encrypt: 是否自动加密。  取值如下： - 0：表示不加密。 - 1：表示需要加密。  默认值：0。  若设置为需要加密，则必须配置转码模板，且转码的输出格式是HLS。
+        :type auto_encrypt: int
+        :param auto_preheat: 是否自动预热到CDN。  取值如下： - 0：表示不自动预热。 - 1：表示自动预热。  默认值：0。
+        :type auto_preheat: int
+        :param thumbnail: 
+        :type thumbnail: :class:`huaweicloudsdkvod.v1.Thumbnail`
+        :param review: 
+        :type review: :class:`huaweicloudsdkvod.v1.Review`
+        :param workflow_name: 工作流名称。  若不为空，则使用指定的工作流对上传的音视频进行处理，您可以在视频点播控制台配置工作流，具体请参见[工作流设置](https://support.huaweicloud.com/usermanual-vod/vod010041.html)。
+        :type workflow_name: str
+        """
         
         
 
@@ -111,7 +138,7 @@ class VideoTypeRef:
         转存的音视频文件类型。  取值如下： - 视频文件：MP4、TS、MOV、MXF、MPG、FLV、WMV、AVI、M4V、F4V、MPEG、3GP、ASF、MKV、HLS - 音频文件：MP3、OGG、WAV、WMA、APE、FLAC、AAC、AC3、MMF、AMR、M4A、M4R、WV、MP2  若上传格式为音频文件，则不支持转码、添加水印和字幕。  > 当**video_type**选择HLS时，**storage_mode**（存储模式）需选择存储在租户桶，且输出路径设置为和输入路径在同一个目录。
 
         :param video_type: The video_type of this VideoTypeRef.
-        :type: str
+        :type video_type: str
         """
         self._video_type = video_type
 
@@ -133,7 +160,7 @@ class VideoTypeRef:
         媒资标题，长度不超过128个字节，UTF-8编码。
 
         :param title: The title of this VideoTypeRef.
-        :type: str
+        :type title: str
         """
         self._title = title
 
@@ -155,7 +182,7 @@ class VideoTypeRef:
         视频描述，长度不超过1024个字节。
 
         :param description: The description of this VideoTypeRef.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -177,7 +204,7 @@ class VideoTypeRef:
         媒资分类ID。  您可以调用[创建媒资分类](https://support.huaweicloud.com/api-vod/vod_04_0028.html)接口或在点播控制台的[分类设置](https://support.huaweicloud.com/usermanual-vod/vod010006.html)中创建对应的媒资分类，并获取分类ID。  > 若不设置或者设置为-1，则上传的音视频归类到系统预置的“其它”分类中。
 
         :param category_id: The category_id of this VideoTypeRef.
-        :type: int
+        :type category_id: int
         """
         self._category_id = category_id
 
@@ -199,7 +226,7 @@ class VideoTypeRef:
         视频标签。  单个标签不超过16个字节，最多不超过16个标签。  多个用逗号分隔，UTF8编码。
 
         :param tags: The tags of this VideoTypeRef.
-        :type: str
+        :type tags: str
         """
         self._tags = tags
 
@@ -221,7 +248,7 @@ class VideoTypeRef:
         是否自动发布。  取值如下： - 0：表示不自动发布。 - 1：表示自动发布。  默认值：0。
 
         :param auto_publish: The auto_publish of this VideoTypeRef.
-        :type: int
+        :type auto_publish: int
         """
         self._auto_publish = auto_publish
 
@@ -243,7 +270,7 @@ class VideoTypeRef:
         转码模板组名称。  若不为空，则使用指定的转码模板对上传的音视频进行转码，您可以在视频点播控制台配置转码模板，具体请参见[转码设置](https://support.huaweicloud.com/usermanual-vod/vod_01_0072.html)。  > 若同时设置了“**template_group_name**”和“**workflow_name**”字段，则“**template_group_name**”字段生效。
 
         :param template_group_name: The template_group_name of this VideoTypeRef.
-        :type: str
+        :type template_group_name: str
         """
         self._template_group_name = template_group_name
 
@@ -265,7 +292,7 @@ class VideoTypeRef:
         是否自动加密。  取值如下： - 0：表示不加密。 - 1：表示需要加密。  默认值：0。  若设置为需要加密，则必须配置转码模板，且转码的输出格式是HLS。
 
         :param auto_encrypt: The auto_encrypt of this VideoTypeRef.
-        :type: int
+        :type auto_encrypt: int
         """
         self._auto_encrypt = auto_encrypt
 
@@ -287,7 +314,7 @@ class VideoTypeRef:
         是否自动预热到CDN。  取值如下： - 0：表示不自动预热。 - 1：表示自动预热。  默认值：0。
 
         :param auto_preheat: The auto_preheat of this VideoTypeRef.
-        :type: int
+        :type auto_preheat: int
         """
         self._auto_preheat = auto_preheat
 
@@ -297,7 +324,7 @@ class VideoTypeRef:
 
 
         :return: The thumbnail of this VideoTypeRef.
-        :rtype: Thumbnail
+        :rtype: :class:`huaweicloudsdkvod.v1.Thumbnail`
         """
         return self._thumbnail
 
@@ -307,7 +334,7 @@ class VideoTypeRef:
 
 
         :param thumbnail: The thumbnail of this VideoTypeRef.
-        :type: Thumbnail
+        :type thumbnail: :class:`huaweicloudsdkvod.v1.Thumbnail`
         """
         self._thumbnail = thumbnail
 
@@ -317,7 +344,7 @@ class VideoTypeRef:
 
 
         :return: The review of this VideoTypeRef.
-        :rtype: Review
+        :rtype: :class:`huaweicloudsdkvod.v1.Review`
         """
         return self._review
 
@@ -327,7 +354,7 @@ class VideoTypeRef:
 
 
         :param review: The review of this VideoTypeRef.
-        :type: Review
+        :type review: :class:`huaweicloudsdkvod.v1.Review`
         """
         self._review = review
 
@@ -349,7 +376,7 @@ class VideoTypeRef:
         工作流名称。  若不为空，则使用指定的工作流对上传的音视频进行处理，您可以在视频点播控制台配置工作流，具体请参见[工作流设置](https://support.huaweicloud.com/usermanual-vod/vod010041.html)。
 
         :param workflow_name: The workflow_name of this VideoTypeRef.
-        :type: str
+        :type workflow_name: str
         """
         self._workflow_name = workflow_name
 

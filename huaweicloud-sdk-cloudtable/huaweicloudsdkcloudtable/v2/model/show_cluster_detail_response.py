@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowClusterDetailResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -82,7 +81,65 @@ class ShowClusterDetailResponse(SdkResponse):
     }
 
     def __init__(self, actions=None, datastore=None, enable_open_tsdb=None, enable_lemon=None, cluster_name=None, cu_num=None, tsd_num=None, lemon_num=None, storage_type=None, storage_quota=None, used_storage_size=None, auth_mode=None, enable_dfv=None, updated=None, created=None, cluster_id=None, status=None, open_tsdb_link=None, tsd_public_endpoint=None, lemon_link=None, zookeeper_link=None, hbase_public_endpoint=None, is_frozen=None, vpc_id=None, sub_net_id=None, security_group_id=None, availability_zone=None):
-        """ShowClusterDetailResponse - a model defined in huaweicloud sdk"""
+        """ShowClusterDetailResponse
+
+        The model defined in huaweicloud sdk
+
+        :param actions: 集群当前状态列表： - 创建中 - 扩容中 - 重启中 - 开启opentsdb - 扩容失败 - 重启失败 - 开启opentsdb失败
+        :type actions: list[str]
+        :param datastore: 
+        :type datastore: :class:`huaweicloudsdkcloudtable.v2.Datastore`
+        :param enable_open_tsdb: 是否打开openTSDB特性。 - false：不开启 - true：开启
+        :type enable_open_tsdb: bool
+        :param enable_lemon: 是否打开SQL查询特性。 - false：不开启 - true：开启
+        :type enable_lemon: bool
+        :param cluster_name: 集群名称。
+        :type cluster_name: str
+        :param cu_num: RegionServer个数。
+        :type cu_num: str
+        :param tsd_num: TSD节点个数。
+        :type tsd_num: str
+        :param lemon_num: Lemon节点个数。
+        :type lemon_num: str
+        :param storage_type: 集群底层存储类型： - OBS - HDFS
+        :type storage_type: str
+        :param storage_quota: 集群存储配额。
+        :type storage_quota: str
+        :param used_storage_size: 当前使用存储空间。
+        :type used_storage_size: str
+        :param auth_mode: 是否打开IAM认证。 - false：不开启 - true：开启
+        :type auth_mode: bool
+        :param enable_dfv: 是否打开dfv
+        :type enable_dfv: bool
+        :param updated: 集群更新时间。
+        :type updated: str
+        :param created: 集群创建时间。
+        :type created: str
+        :param cluster_id: 集群唯一标识，集群ID。
+        :type cluster_id: str
+        :param status: 集群当前状态： - 200：集群正常 - 300：集群异常 - 400：集群已删除 - 303：集群创建失败
+        :type status: str
+        :param open_tsdb_link: 内网OpenTSDB连接访问地址。
+        :type open_tsdb_link: str
+        :param tsd_public_endpoint: OpenTSDB公网endpoint地址
+        :type tsd_public_endpoint: str
+        :param lemon_link: 内网Lemon连接访问地址。
+        :type lemon_link: str
+        :param zookeeper_link: 内网ZooKeeper连接访问地址。
+        :type zookeeper_link: str
+        :param hbase_public_endpoint: 公网HBase连接访问地址。
+        :type hbase_public_endpoint: str
+        :param is_frozen: 集群是否被冻结。 - false：不冻结 - true：冻结
+        :type is_frozen: str
+        :param vpc_id: VPC ID，创建集群节点所在的虚拟私有ID。
+        :type vpc_id: str
+        :param sub_net_id: 子网ID，创建集群所在子网段。
+        :type sub_net_id: str
+        :param security_group_id: 安全组对应的ID。
+        :type security_group_id: str
+        :param availability_zone: 集群所属的可用区。
+        :type availability_zone: str
+        """
         
         super(ShowClusterDetailResponse, self).__init__()
 
@@ -188,7 +245,7 @@ class ShowClusterDetailResponse(SdkResponse):
         集群当前状态列表： - 创建中 - 扩容中 - 重启中 - 开启opentsdb - 扩容失败 - 重启失败 - 开启opentsdb失败
 
         :param actions: The actions of this ShowClusterDetailResponse.
-        :type: list[str]
+        :type actions: list[str]
         """
         self._actions = actions
 
@@ -198,7 +255,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
 
         :return: The datastore of this ShowClusterDetailResponse.
-        :rtype: Datastore
+        :rtype: :class:`huaweicloudsdkcloudtable.v2.Datastore`
         """
         return self._datastore
 
@@ -208,7 +265,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
 
         :param datastore: The datastore of this ShowClusterDetailResponse.
-        :type: Datastore
+        :type datastore: :class:`huaweicloudsdkcloudtable.v2.Datastore`
         """
         self._datastore = datastore
 
@@ -230,7 +287,7 @@ class ShowClusterDetailResponse(SdkResponse):
         是否打开openTSDB特性。 - false：不开启 - true：开启
 
         :param enable_open_tsdb: The enable_open_tsdb of this ShowClusterDetailResponse.
-        :type: bool
+        :type enable_open_tsdb: bool
         """
         self._enable_open_tsdb = enable_open_tsdb
 
@@ -252,7 +309,7 @@ class ShowClusterDetailResponse(SdkResponse):
         是否打开SQL查询特性。 - false：不开启 - true：开启
 
         :param enable_lemon: The enable_lemon of this ShowClusterDetailResponse.
-        :type: bool
+        :type enable_lemon: bool
         """
         self._enable_lemon = enable_lemon
 
@@ -274,7 +331,7 @@ class ShowClusterDetailResponse(SdkResponse):
         集群名称。
 
         :param cluster_name: The cluster_name of this ShowClusterDetailResponse.
-        :type: str
+        :type cluster_name: str
         """
         self._cluster_name = cluster_name
 
@@ -296,7 +353,7 @@ class ShowClusterDetailResponse(SdkResponse):
         RegionServer个数。
 
         :param cu_num: The cu_num of this ShowClusterDetailResponse.
-        :type: str
+        :type cu_num: str
         """
         self._cu_num = cu_num
 
@@ -318,7 +375,7 @@ class ShowClusterDetailResponse(SdkResponse):
         TSD节点个数。
 
         :param tsd_num: The tsd_num of this ShowClusterDetailResponse.
-        :type: str
+        :type tsd_num: str
         """
         self._tsd_num = tsd_num
 
@@ -340,7 +397,7 @@ class ShowClusterDetailResponse(SdkResponse):
         Lemon节点个数。
 
         :param lemon_num: The lemon_num of this ShowClusterDetailResponse.
-        :type: str
+        :type lemon_num: str
         """
         self._lemon_num = lemon_num
 
@@ -362,7 +419,7 @@ class ShowClusterDetailResponse(SdkResponse):
         集群底层存储类型： - OBS - HDFS
 
         :param storage_type: The storage_type of this ShowClusterDetailResponse.
-        :type: str
+        :type storage_type: str
         """
         self._storage_type = storage_type
 
@@ -384,7 +441,7 @@ class ShowClusterDetailResponse(SdkResponse):
         集群存储配额。
 
         :param storage_quota: The storage_quota of this ShowClusterDetailResponse.
-        :type: str
+        :type storage_quota: str
         """
         self._storage_quota = storage_quota
 
@@ -406,7 +463,7 @@ class ShowClusterDetailResponse(SdkResponse):
         当前使用存储空间。
 
         :param used_storage_size: The used_storage_size of this ShowClusterDetailResponse.
-        :type: str
+        :type used_storage_size: str
         """
         self._used_storage_size = used_storage_size
 
@@ -428,7 +485,7 @@ class ShowClusterDetailResponse(SdkResponse):
         是否打开IAM认证。 - false：不开启 - true：开启
 
         :param auth_mode: The auth_mode of this ShowClusterDetailResponse.
-        :type: bool
+        :type auth_mode: bool
         """
         self._auth_mode = auth_mode
 
@@ -450,7 +507,7 @@ class ShowClusterDetailResponse(SdkResponse):
         是否打开dfv
 
         :param enable_dfv: The enable_dfv of this ShowClusterDetailResponse.
-        :type: bool
+        :type enable_dfv: bool
         """
         self._enable_dfv = enable_dfv
 
@@ -472,7 +529,7 @@ class ShowClusterDetailResponse(SdkResponse):
         集群更新时间。
 
         :param updated: The updated of this ShowClusterDetailResponse.
-        :type: str
+        :type updated: str
         """
         self._updated = updated
 
@@ -494,7 +551,7 @@ class ShowClusterDetailResponse(SdkResponse):
         集群创建时间。
 
         :param created: The created of this ShowClusterDetailResponse.
-        :type: str
+        :type created: str
         """
         self._created = created
 
@@ -516,7 +573,7 @@ class ShowClusterDetailResponse(SdkResponse):
         集群唯一标识，集群ID。
 
         :param cluster_id: The cluster_id of this ShowClusterDetailResponse.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -538,7 +595,7 @@ class ShowClusterDetailResponse(SdkResponse):
         集群当前状态： - 200：集群正常 - 300：集群异常 - 400：集群已删除 - 303：集群创建失败
 
         :param status: The status of this ShowClusterDetailResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -560,7 +617,7 @@ class ShowClusterDetailResponse(SdkResponse):
         内网OpenTSDB连接访问地址。
 
         :param open_tsdb_link: The open_tsdb_link of this ShowClusterDetailResponse.
-        :type: str
+        :type open_tsdb_link: str
         """
         self._open_tsdb_link = open_tsdb_link
 
@@ -582,7 +639,7 @@ class ShowClusterDetailResponse(SdkResponse):
         OpenTSDB公网endpoint地址
 
         :param tsd_public_endpoint: The tsd_public_endpoint of this ShowClusterDetailResponse.
-        :type: str
+        :type tsd_public_endpoint: str
         """
         self._tsd_public_endpoint = tsd_public_endpoint
 
@@ -604,7 +661,7 @@ class ShowClusterDetailResponse(SdkResponse):
         内网Lemon连接访问地址。
 
         :param lemon_link: The lemon_link of this ShowClusterDetailResponse.
-        :type: str
+        :type lemon_link: str
         """
         self._lemon_link = lemon_link
 
@@ -626,7 +683,7 @@ class ShowClusterDetailResponse(SdkResponse):
         内网ZooKeeper连接访问地址。
 
         :param zookeeper_link: The zookeeper_link of this ShowClusterDetailResponse.
-        :type: str
+        :type zookeeper_link: str
         """
         self._zookeeper_link = zookeeper_link
 
@@ -648,7 +705,7 @@ class ShowClusterDetailResponse(SdkResponse):
         公网HBase连接访问地址。
 
         :param hbase_public_endpoint: The hbase_public_endpoint of this ShowClusterDetailResponse.
-        :type: str
+        :type hbase_public_endpoint: str
         """
         self._hbase_public_endpoint = hbase_public_endpoint
 
@@ -670,7 +727,7 @@ class ShowClusterDetailResponse(SdkResponse):
         集群是否被冻结。 - false：不冻结 - true：冻结
 
         :param is_frozen: The is_frozen of this ShowClusterDetailResponse.
-        :type: str
+        :type is_frozen: str
         """
         self._is_frozen = is_frozen
 
@@ -692,7 +749,7 @@ class ShowClusterDetailResponse(SdkResponse):
         VPC ID，创建集群节点所在的虚拟私有ID。
 
         :param vpc_id: The vpc_id of this ShowClusterDetailResponse.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -714,7 +771,7 @@ class ShowClusterDetailResponse(SdkResponse):
         子网ID，创建集群所在子网段。
 
         :param sub_net_id: The sub_net_id of this ShowClusterDetailResponse.
-        :type: str
+        :type sub_net_id: str
         """
         self._sub_net_id = sub_net_id
 
@@ -736,7 +793,7 @@ class ShowClusterDetailResponse(SdkResponse):
         安全组对应的ID。
 
         :param security_group_id: The security_group_id of this ShowClusterDetailResponse.
-        :type: str
+        :type security_group_id: str
         """
         self._security_group_id = security_group_id
 
@@ -758,7 +815,7 @@ class ShowClusterDetailResponse(SdkResponse):
         集群所属的可用区。
 
         :param availability_zone: The availability_zone of this ShowClusterDetailResponse.
-        :type: str
+        :type availability_zone: str
         """
         self._availability_zone = availability_zone
 

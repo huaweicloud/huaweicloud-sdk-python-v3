@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowTranscodingsTemplateRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowTranscodingsTemplateRequest:
     }
 
     def __init__(self, domain=None, app_name=None, page=None, size=None):
-        """ShowTranscodingsTemplateRequest - a model defined in huaweicloud sdk"""
+        """ShowTranscodingsTemplateRequest
+
+        The model defined in huaweicloud sdk
+
+        :param domain: 推流域名
+        :type domain: str
+        :param app_name: 应用名称
+        :type app_name: str
+        :param page: 分页编号，默认为0。
+        :type page: int
+        :param size: 每页记录数。  取值范围：1-100。  默认为10。 
+        :type size: int
+        """
         
         
 
@@ -72,7 +83,7 @@ class ShowTranscodingsTemplateRequest:
         推流域名
 
         :param domain: The domain of this ShowTranscodingsTemplateRequest.
-        :type: str
+        :type domain: str
         """
         self._domain = domain
 
@@ -94,7 +105,7 @@ class ShowTranscodingsTemplateRequest:
         应用名称
 
         :param app_name: The app_name of this ShowTranscodingsTemplateRequest.
-        :type: str
+        :type app_name: str
         """
         self._app_name = app_name
 
@@ -116,7 +127,7 @@ class ShowTranscodingsTemplateRequest:
         分页编号，默认为0。
 
         :param page: The page of this ShowTranscodingsTemplateRequest.
-        :type: int
+        :type page: int
         """
         self._page = page
 
@@ -138,7 +149,7 @@ class ShowTranscodingsTemplateRequest:
         每页记录数。  取值范围：1-100。  默认为10。 
 
         :param size: The size of this ShowTranscodingsTemplateRequest.
-        :type: int
+        :type size: int
         """
         self._size = size
 

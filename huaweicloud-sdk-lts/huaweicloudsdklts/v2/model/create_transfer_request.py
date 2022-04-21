@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateTransferRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateTransferRequest:
     }
 
     def __init__(self, body=None):
-        """CreateTransferRequest - a model defined in huaweicloud sdk"""
+        """CreateTransferRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateTransferRequest
+        :type body: :class:`huaweicloudsdklts.v2.CreateTransferRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateTransferRequest:
 
 
         :return: The body of this CreateTransferRequest.
-        :rtype: CreateTransferRequestBody
+        :rtype: :class:`huaweicloudsdklts.v2.CreateTransferRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateTransferRequest:
 
 
         :param body: The body of this CreateTransferRequest.
-        :type: CreateTransferRequestBody
+        :type body: :class:`huaweicloudsdklts.v2.CreateTransferRequestBody`
         """
         self._body = body
 

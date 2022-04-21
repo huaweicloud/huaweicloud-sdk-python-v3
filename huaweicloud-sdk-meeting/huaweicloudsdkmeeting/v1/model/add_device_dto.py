@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddDeviceDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class AddDeviceDTO:
     }
 
     def __init__(self, name=None, model=None, sn=None, prj_code_mode=None, dept_code=None, phone=None, country=None, email=None, description=None, status=None, send_notify=None):
-        """AddDeviceDTO - a model defined in huaweicloud sdk"""
+        """AddDeviceDTO
+
+        The model defined in huaweicloud sdk
+
+        :param name: 终端名称，可以自定义，建议为具体位置，方便识别。 maxLength：64 minLength：1
+        :type name: str
+        :param model: 终端型号，枚举类型。当前支持TE系列和部分第三方硬件终端，具体的终端类型可以通过获取所有终端类型接口查询。 maxLength：128 minLength：1
+        :type model: str
+        :param sn: 终端SN码，仅可包含数字、字母和下划线。 maxLength：30 minLength：1
+        :type sn: str
+        :param prj_code_mode: 投影码生成模式，默认为自动 - 0、自动(该模式下根据消息上报的IP地址内部控制复杂度：   私网地址配置成简单模式；公网地址配置成复杂模式) - 1、简单 - 2、复杂
+        :type prj_code_mode: int
+        :param dept_code: 部门编号，默认为根部门 默认值：1 maxLength：32 minLength：1
+        :type dept_code: str
+        :param phone: 手机号，必须加上国家码，例如中国大陆手机为“+86xxxxxxxxxxx”。当填写手机号时 “country”参数必填。 手机号只允许输入纯数字。 maxLength：32 minLength：0 说明： - 手机号或者邮箱至少填写一个。
+        :type phone: str
+        :param country: 若smsNumber为手机号,则需带上手机号所属的国家。 例如国家为中国大陆则country参数取值为chinaPR 国家和国家码的对应关系请参考：https://support.huaweicloud.com/api-meeting/meeting_21_0109.html 
+        :type country: str
+        :param email: 统一邮箱格式 maxLength：255 minLength：0
+        :type email: str
+        :param description: 终端描述 maxLength：128 minLength：0
+        :type description: str
+        :param status: 终端状态 * 0、正常 * 1、冻结\&quot; 默认值：0。 
+        :type status: int
+        :param send_notify: 是否发送邮件和短信通知。 * 0：不发送 * 不填或者其他值就发送
+        :type send_notify: str
+        """
         
         
 
@@ -106,7 +131,7 @@ class AddDeviceDTO:
         终端名称，可以自定义，建议为具体位置，方便识别。 maxLength：64 minLength：1
 
         :param name: The name of this AddDeviceDTO.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -128,7 +153,7 @@ class AddDeviceDTO:
         终端型号，枚举类型。当前支持TE系列和部分第三方硬件终端，具体的终端类型可以通过获取所有终端类型接口查询。 maxLength：128 minLength：1
 
         :param model: The model of this AddDeviceDTO.
-        :type: str
+        :type model: str
         """
         self._model = model
 
@@ -150,7 +175,7 @@ class AddDeviceDTO:
         终端SN码，仅可包含数字、字母和下划线。 maxLength：30 minLength：1
 
         :param sn: The sn of this AddDeviceDTO.
-        :type: str
+        :type sn: str
         """
         self._sn = sn
 
@@ -172,7 +197,7 @@ class AddDeviceDTO:
         投影码生成模式，默认为自动 - 0、自动(该模式下根据消息上报的IP地址内部控制复杂度：   私网地址配置成简单模式；公网地址配置成复杂模式) - 1、简单 - 2、复杂
 
         :param prj_code_mode: The prj_code_mode of this AddDeviceDTO.
-        :type: int
+        :type prj_code_mode: int
         """
         self._prj_code_mode = prj_code_mode
 
@@ -194,7 +219,7 @@ class AddDeviceDTO:
         部门编号，默认为根部门 默认值：1 maxLength：32 minLength：1
 
         :param dept_code: The dept_code of this AddDeviceDTO.
-        :type: str
+        :type dept_code: str
         """
         self._dept_code = dept_code
 
@@ -216,7 +241,7 @@ class AddDeviceDTO:
         手机号，必须加上国家码，例如中国大陆手机为“+86xxxxxxxxxxx”。当填写手机号时 “country”参数必填。 手机号只允许输入纯数字。 maxLength：32 minLength：0 说明： - 手机号或者邮箱至少填写一个。
 
         :param phone: The phone of this AddDeviceDTO.
-        :type: str
+        :type phone: str
         """
         self._phone = phone
 
@@ -238,7 +263,7 @@ class AddDeviceDTO:
         若smsNumber为手机号,则需带上手机号所属的国家。 例如国家为中国大陆则country参数取值为chinaPR 国家和国家码的对应关系请参考：https://support.huaweicloud.com/api-meeting/meeting_21_0109.html 
 
         :param country: The country of this AddDeviceDTO.
-        :type: str
+        :type country: str
         """
         self._country = country
 
@@ -260,7 +285,7 @@ class AddDeviceDTO:
         统一邮箱格式 maxLength：255 minLength：0
 
         :param email: The email of this AddDeviceDTO.
-        :type: str
+        :type email: str
         """
         self._email = email
 
@@ -282,7 +307,7 @@ class AddDeviceDTO:
         终端描述 maxLength：128 minLength：0
 
         :param description: The description of this AddDeviceDTO.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -304,7 +329,7 @@ class AddDeviceDTO:
         终端状态 * 0、正常 * 1、冻结\" 默认值：0。 
 
         :param status: The status of this AddDeviceDTO.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -326,7 +351,7 @@ class AddDeviceDTO:
         是否发送邮件和短信通知。 * 0：不发送 * 不填或者其他值就发送
 
         :param send_notify: The send_notify of this AddDeviceDTO.
-        :type: str
+        :type send_notify: str
         """
         self._send_notify = send_notify
 

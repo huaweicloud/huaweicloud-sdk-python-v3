@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDataStoreRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateDataStoreRequest:
     }
 
     def __init__(self, data_store_id=None, body=None):
-        """UpdateDataStoreRequest - a model defined in huaweicloud sdk"""
+        """UpdateDataStoreRequest
+
+        The model defined in huaweicloud sdk
+
+        :param data_store_id: 存储 ID
+        :type data_store_id: str
+        :param body: Body of the UpdateDataStoreRequest
+        :type body: :class:`huaweicloudsdkiotanalytics.v1.UpdateDataStore`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateDataStoreRequest:
         存储 ID
 
         :param data_store_id: The data_store_id of this UpdateDataStoreRequest.
-        :type: str
+        :type data_store_id: str
         """
         self._data_store_id = data_store_id
 
@@ -72,7 +79,7 @@ class UpdateDataStoreRequest:
 
 
         :return: The body of this UpdateDataStoreRequest.
-        :rtype: UpdateDataStore
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.UpdateDataStore`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateDataStoreRequest:
 
 
         :param body: The body of this UpdateDataStoreRequest.
-        :type: UpdateDataStore
+        :type body: :class:`huaweicloudsdkiotanalytics.v1.UpdateDataStore`
         """
         self._body = body
 

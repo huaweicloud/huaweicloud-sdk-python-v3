@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CacheConfig:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CacheConfig:
     }
 
     def __init__(self, ignore_url_parameter=None, follow_origin=None, compress=None, rules=None):
-        """CacheConfig - a model defined in huaweicloud sdk"""
+        """CacheConfig
+
+        The model defined in huaweicloud sdk
+
+        :param ignore_url_parameter: 是否忽略url中的参数。
+        :type ignore_url_parameter: bool
+        :param follow_origin: 缓存规则是否遵循源站
+        :type follow_origin: bool
+        :param compress: 
+        :type compress: :class:`huaweicloudsdkcdn.v1.CompressResponse`
+        :param rules: 缓存规则，将覆盖之前的规则配置。规则为空重置为默认规则。
+        :type rules: list[:class:`huaweicloudsdkcdn.v1.Rules`]
+        """
         
         
 
@@ -73,7 +84,7 @@ class CacheConfig:
         是否忽略url中的参数。
 
         :param ignore_url_parameter: The ignore_url_parameter of this CacheConfig.
-        :type: bool
+        :type ignore_url_parameter: bool
         """
         self._ignore_url_parameter = ignore_url_parameter
 
@@ -95,7 +106,7 @@ class CacheConfig:
         缓存规则是否遵循源站
 
         :param follow_origin: The follow_origin of this CacheConfig.
-        :type: bool
+        :type follow_origin: bool
         """
         self._follow_origin = follow_origin
 
@@ -105,7 +116,7 @@ class CacheConfig:
 
 
         :return: The compress of this CacheConfig.
-        :rtype: CompressResponse
+        :rtype: :class:`huaweicloudsdkcdn.v1.CompressResponse`
         """
         return self._compress
 
@@ -115,7 +126,7 @@ class CacheConfig:
 
 
         :param compress: The compress of this CacheConfig.
-        :type: CompressResponse
+        :type compress: :class:`huaweicloudsdkcdn.v1.CompressResponse`
         """
         self._compress = compress
 
@@ -126,7 +137,7 @@ class CacheConfig:
         缓存规则，将覆盖之前的规则配置。规则为空重置为默认规则。
 
         :return: The rules of this CacheConfig.
-        :rtype: list[Rules]
+        :rtype: list[:class:`huaweicloudsdkcdn.v1.Rules`]
         """
         return self._rules
 
@@ -137,7 +148,7 @@ class CacheConfig:
         缓存规则，将覆盖之前的规则配置。规则为空重置为默认规则。
 
         :param rules: The rules of this CacheConfig.
-        :type: list[Rules]
+        :type rules: list[:class:`huaweicloudsdkcdn.v1.Rules`]
         """
         self._rules = rules
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateHttpsInfoResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateHttpsInfoResponse(SdkResponse):
     }
 
     def __init__(self, https=None):
-        """UpdateHttpsInfoResponse - a model defined in huaweicloud sdk"""
+        """UpdateHttpsInfoResponse
+
+        The model defined in huaweicloud sdk
+
+        :param https: 
+        :type https: :class:`huaweicloudsdkcdn.v1.HttpInfoResponseBody`
+        """
         
         super(UpdateHttpsInfoResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class UpdateHttpsInfoResponse(SdkResponse):
 
 
         :return: The https of this UpdateHttpsInfoResponse.
-        :rtype: HttpInfoResponseBody
+        :rtype: :class:`huaweicloudsdkcdn.v1.HttpInfoResponseBody`
         """
         return self._https
 
@@ -56,7 +61,7 @@ class UpdateHttpsInfoResponse(SdkResponse):
 
 
         :param https: The https of this UpdateHttpsInfoResponse.
-        :type: HttpInfoResponseBody
+        :type https: :class:`huaweicloudsdkcdn.v1.HttpInfoResponseBody`
         """
         self._https = https
 

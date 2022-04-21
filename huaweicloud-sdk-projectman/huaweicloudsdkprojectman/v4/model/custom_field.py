@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CustomField:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CustomField:
     }
 
     def __init__(self, name=None, value=None):
-        """CustomField - a model defined in huaweicloud sdk"""
+        """CustomField
+
+        The model defined in huaweicloud sdk
+
+        :param name: 自定义属性名
+        :type name: str
+        :param value: 自定义属性对应的值
+        :type value: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class CustomField:
         自定义属性名
 
         :param name: The name of this CustomField.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -85,7 +92,7 @@ class CustomField:
         自定义属性对应的值
 
         :param value: The value of this CustomField.
-        :type: str
+        :type value: str
         """
         self._value = value
 

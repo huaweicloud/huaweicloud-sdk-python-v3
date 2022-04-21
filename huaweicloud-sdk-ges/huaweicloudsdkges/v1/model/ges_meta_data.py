@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GesMetaData:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class GesMetaData:
     }
 
     def __init__(self, labels=None):
-        """GesMetaData - a model defined in huaweicloud sdk"""
+        """GesMetaData
+
+        The model defined in huaweicloud sdk
+
+        :param labels: Label数据结构集合。
+        :type labels: list[:class:`huaweicloudsdkges.v1.Label`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class GesMetaData:
         Label数据结构集合。
 
         :return: The labels of this GesMetaData.
-        :rtype: list[Label]
+        :rtype: list[:class:`huaweicloudsdkges.v1.Label`]
         """
         return self._labels
 
@@ -57,7 +62,7 @@ class GesMetaData:
         Label数据结构集合。
 
         :param labels: The labels of this GesMetaData.
-        :type: list[Label]
+        :type labels: list[:class:`huaweicloudsdkges.v1.Label`]
         """
         self._labels = labels
 

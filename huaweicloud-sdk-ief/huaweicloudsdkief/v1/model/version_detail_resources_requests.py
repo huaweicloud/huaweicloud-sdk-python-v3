@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VersionDetailResourcesRequests:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class VersionDetailResourcesRequests:
     }
 
     def __init__(self, cpu=None, memory=None, gpu=None, npu=None):
-        """VersionDetailResourcesRequests - a model defined in huaweicloud sdk"""
+        """VersionDetailResourcesRequests
+
+        The model defined in huaweicloud sdk
+
+        :param cpu: cpu核数，大于等于0.01，最大1000；请求不需要带单位
+        :type cpu: str
+        :param memory: 内存大小，单位兆，大于等于0.01，最大1024000。注意：内存的limits值最小为4；请求不需要带单位
+        :type memory: str
+        :param gpu: Gpu显存大小，单位兆，大于等于0.01，最大1024000；请求不需要带单位
+        :type gpu: str
+        :param npu: Npu个数，大于0，最大1000；请求不需要带单位
+        :type npu: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class VersionDetailResourcesRequests:
         cpu核数，大于等于0.01，最大1000；请求不需要带单位
 
         :param cpu: The cpu of this VersionDetailResourcesRequests.
-        :type: str
+        :type cpu: str
         """
         self._cpu = cpu
 
@@ -95,7 +106,7 @@ class VersionDetailResourcesRequests:
         内存大小，单位兆，大于等于0.01，最大1024000。注意：内存的limits值最小为4；请求不需要带单位
 
         :param memory: The memory of this VersionDetailResourcesRequests.
-        :type: str
+        :type memory: str
         """
         self._memory = memory
 
@@ -117,7 +128,7 @@ class VersionDetailResourcesRequests:
         Gpu显存大小，单位兆，大于等于0.01，最大1024000；请求不需要带单位
 
         :param gpu: The gpu of this VersionDetailResourcesRequests.
-        :type: str
+        :type gpu: str
         """
         self._gpu = gpu
 
@@ -139,7 +150,7 @@ class VersionDetailResourcesRequests:
         Npu个数，大于0，最大1000；请求不需要带单位
 
         :param npu: The npu of this VersionDetailResourcesRequests.
-        :type: str
+        :type npu: str
         """
         self._npu = npu
 

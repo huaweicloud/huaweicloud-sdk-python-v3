@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListServerGroupsPageInfoResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListServerGroupsPageInfoResult:
     }
 
     def __init__(self, next_marker=None):
-        """ListServerGroupsPageInfoResult - a model defined in huaweicloud sdk"""
+        """ListServerGroupsPageInfoResult
+
+        The model defined in huaweicloud sdk
+
+        :param next_marker: 
+        :type next_marker: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class ListServerGroupsPageInfoResult:
         
 
         :param next_marker: The next_marker of this ListServerGroupsPageInfoResult.
-        :type: str
+        :type next_marker: str
         """
         self._next_marker = next_marker
 

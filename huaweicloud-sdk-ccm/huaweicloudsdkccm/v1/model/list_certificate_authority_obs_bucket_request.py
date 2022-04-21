@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCertificateAuthorityObsBucketRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class ListCertificateAuthorityObsBucketRequest:
     }
 
     def __init__(self):
-        """ListCertificateAuthorityObsBucketRequest - a model defined in huaweicloud sdk"""
+        """ListCertificateAuthorityObsBucketRequest
+
+        The model defined in huaweicloud sdk
+
+        """
         
         
         self.discriminator = None

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SetSpeedValueReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class SetSpeedValueReq:
     }
 
     def __init__(self, speed_value=None):
-        """SetSpeedValueReq - a model defined in huaweicloud sdk"""
+        """SetSpeedValueReq
+
+        The model defined in huaweicloud sdk
+
+        :param speed_value: 限制带宽速率，单位 Kbps，-1表示不限速,1Mbps&#x3D;1024Kbps。正整数表示限制到当前速率，电信支持限制速率:1Kbps,64 Kbps,256 Kbps,512Kbps,1Mbs，3Mbs,5Mbs,7Mbs,10Mbs,20Mbs,30Mbs,40Mbs,50Mbs,60Mbs,70Mbs,80Mbs,90Mbs,100Mbs,110Mbs,120Mbs,130Mbs,140Mbs,150Mbs。联通支持限制速率:256Kbps,512Kbps,1Mbps,2Mbps,7.25Mbps。
+        :type speed_value: int
+        """
         
         
 
@@ -57,7 +62,7 @@ class SetSpeedValueReq:
         限制带宽速率，单位 Kbps，-1表示不限速,1Mbps=1024Kbps。正整数表示限制到当前速率，电信支持限制速率:1Kbps,64 Kbps,256 Kbps,512Kbps,1Mbs，3Mbs,5Mbs,7Mbs,10Mbs,20Mbs,30Mbs,40Mbs,50Mbs,60Mbs,70Mbs,80Mbs,90Mbs,100Mbs,110Mbs,120Mbs,130Mbs,140Mbs,150Mbs。联通支持限制速率:256Kbps,512Kbps,1Mbps,2Mbps,7.25Mbps。
 
         :param speed_value: The speed_value of this SetSpeedValueReq.
-        :type: int
+        :type speed_value: int
         """
         self._speed_value = speed_value
 

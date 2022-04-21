@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListVolumesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -64,7 +63,47 @@ class ListVolumesRequest:
     }
 
     def __init__(self, marker=None, name=None, limit=None, sort_key=None, offset=None, sort_dir=None, status=None, metadata=None, availability_zone=None, multiattach=None, service_type=None, dedicated_storage_id=None, dedicated_storage_name=None, volume_type_id=None, id=None, ids=None, enterprise_project_id=None, server_id=None):
-        """ListVolumesRequest - a model defined in huaweicloud sdk"""
+        """ListVolumesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param marker: 通过云硬盘ID进行分页查询。默认为查询第一页数据。
+        :type marker: str
+        :param name: 磁盘名称。
+        :type name: str
+        :param limit: 返回结果个数限制。默认值为1000。
+        :type limit: int
+        :param sort_key: 返回结果按该关键字排序，支持id，status，size，created_at等关键字，默认为“created_at”。
+        :type sort_key: str
+        :param offset: 偏移量（偏移量为一个大于0小于磁盘总个数的整数，表示查询该偏移量后面的所有的磁盘）。
+        :type offset: int
+        :param sort_dir: 返回结果按照降序或升序排列，默认为“desc”。 降序：desc 升序：asc
+        :type sort_dir: str
+        :param status: 云硬盘状态，取值可参考：\&quot;[云硬盘状态](https://support.huaweicloud.com/api-evs/evs_04_0040.html)\&quot;。
+        :type status: str
+        :param metadata: 云硬盘元数据。
+        :type metadata: str
+        :param availability_zone: 可用区信息。
+        :type availability_zone: str
+        :param multiattach: 是否为共享云硬盘。 true：表示为共享云硬盘。 false：表示为非共享云硬盘。
+        :type multiattach: bool
+        :param service_type: 服务类型，仅支持EVS、DSS、DESS。
+        :type service_type: str
+        :param dedicated_storage_id: 专属存储池ID，可过滤出该专属存储池下的所有云硬盘，必须精确匹配。
+        :type dedicated_storage_id: str
+        :param dedicated_storage_name: 专属存储池的名字，可过滤出该专属存储池下的所有云硬盘，支持模糊匹配。
+        :type dedicated_storage_name: str
+        :param volume_type_id: 云硬盘类型id。 通过\&quot;[查询云硬盘类型列表](https://support.huaweicloud.com/api-evs/evs_04_3035.html)\&quot;可以查到，即volume_types参数说明表格中的“id”
+        :type volume_type_id: str
+        :param id: 云硬盘ID。
+        :type id: str
+        :param ids: 云硬盘id列表，格式为ids&#x3D;[&#39;id1&#39;,&#39;id2&#39;,...,&#39;idx&#39;]，返回“ids”中有效id的云硬盘详情，无效的id会被忽略。 支持查询最多60个id对应的云硬盘详情。 如果“id”和“ids”查询参数同时存在，“id”会被忽略。
+        :type ids: str
+        :param enterprise_project_id: 指定企业项目id进行过滤。 传入“all_granted_eps”，代表查询权限范围内的所有企业项目下的云硬盘。 &gt; 说明： &gt;  &gt; 关于企业项目ID的获取及企业项目特性的详细信息，请参考：\&quot;[企业管理用户指南](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0123692049.html)\&quot;。
+        :type enterprise_project_id: str
+        :param server_id: 云服务器id。
+        :type server_id: str
+        """
         
         
 
@@ -143,7 +182,7 @@ class ListVolumesRequest:
         通过云硬盘ID进行分页查询。默认为查询第一页数据。
 
         :param marker: The marker of this ListVolumesRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -165,7 +204,7 @@ class ListVolumesRequest:
         磁盘名称。
 
         :param name: The name of this ListVolumesRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -187,7 +226,7 @@ class ListVolumesRequest:
         返回结果个数限制。默认值为1000。
 
         :param limit: The limit of this ListVolumesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -209,7 +248,7 @@ class ListVolumesRequest:
         返回结果按该关键字排序，支持id，status，size，created_at等关键字，默认为“created_at”。
 
         :param sort_key: The sort_key of this ListVolumesRequest.
-        :type: str
+        :type sort_key: str
         """
         self._sort_key = sort_key
 
@@ -231,7 +270,7 @@ class ListVolumesRequest:
         偏移量（偏移量为一个大于0小于磁盘总个数的整数，表示查询该偏移量后面的所有的磁盘）。
 
         :param offset: The offset of this ListVolumesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -253,7 +292,7 @@ class ListVolumesRequest:
         返回结果按照降序或升序排列，默认为“desc”。 降序：desc 升序：asc
 
         :param sort_dir: The sort_dir of this ListVolumesRequest.
-        :type: str
+        :type sort_dir: str
         """
         self._sort_dir = sort_dir
 
@@ -275,7 +314,7 @@ class ListVolumesRequest:
         云硬盘状态，取值可参考：\"[云硬盘状态](https://support.huaweicloud.com/api-evs/evs_04_0040.html)\"。
 
         :param status: The status of this ListVolumesRequest.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -297,7 +336,7 @@ class ListVolumesRequest:
         云硬盘元数据。
 
         :param metadata: The metadata of this ListVolumesRequest.
-        :type: str
+        :type metadata: str
         """
         self._metadata = metadata
 
@@ -319,7 +358,7 @@ class ListVolumesRequest:
         可用区信息。
 
         :param availability_zone: The availability_zone of this ListVolumesRequest.
-        :type: str
+        :type availability_zone: str
         """
         self._availability_zone = availability_zone
 
@@ -341,7 +380,7 @@ class ListVolumesRequest:
         是否为共享云硬盘。 true：表示为共享云硬盘。 false：表示为非共享云硬盘。
 
         :param multiattach: The multiattach of this ListVolumesRequest.
-        :type: bool
+        :type multiattach: bool
         """
         self._multiattach = multiattach
 
@@ -363,7 +402,7 @@ class ListVolumesRequest:
         服务类型，仅支持EVS、DSS、DESS。
 
         :param service_type: The service_type of this ListVolumesRequest.
-        :type: str
+        :type service_type: str
         """
         self._service_type = service_type
 
@@ -385,7 +424,7 @@ class ListVolumesRequest:
         专属存储池ID，可过滤出该专属存储池下的所有云硬盘，必须精确匹配。
 
         :param dedicated_storage_id: The dedicated_storage_id of this ListVolumesRequest.
-        :type: str
+        :type dedicated_storage_id: str
         """
         self._dedicated_storage_id = dedicated_storage_id
 
@@ -407,7 +446,7 @@ class ListVolumesRequest:
         专属存储池的名字，可过滤出该专属存储池下的所有云硬盘，支持模糊匹配。
 
         :param dedicated_storage_name: The dedicated_storage_name of this ListVolumesRequest.
-        :type: str
+        :type dedicated_storage_name: str
         """
         self._dedicated_storage_name = dedicated_storage_name
 
@@ -429,7 +468,7 @@ class ListVolumesRequest:
         云硬盘类型id。 通过\"[查询云硬盘类型列表](https://support.huaweicloud.com/api-evs/evs_04_3035.html)\"可以查到，即volume_types参数说明表格中的“id”
 
         :param volume_type_id: The volume_type_id of this ListVolumesRequest.
-        :type: str
+        :type volume_type_id: str
         """
         self._volume_type_id = volume_type_id
 
@@ -451,7 +490,7 @@ class ListVolumesRequest:
         云硬盘ID。
 
         :param id: The id of this ListVolumesRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -473,7 +512,7 @@ class ListVolumesRequest:
         云硬盘id列表，格式为ids=['id1','id2',...,'idx']，返回“ids”中有效id的云硬盘详情，无效的id会被忽略。 支持查询最多60个id对应的云硬盘详情。 如果“id”和“ids”查询参数同时存在，“id”会被忽略。
 
         :param ids: The ids of this ListVolumesRequest.
-        :type: str
+        :type ids: str
         """
         self._ids = ids
 
@@ -495,7 +534,7 @@ class ListVolumesRequest:
         指定企业项目id进行过滤。 传入“all_granted_eps”，代表查询权限范围内的所有企业项目下的云硬盘。 > 说明： >  > 关于企业项目ID的获取及企业项目特性的详细信息，请参考：\"[企业管理用户指南](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0123692049.html)\"。
 
         :param enterprise_project_id: The enterprise_project_id of this ListVolumesRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -517,7 +556,7 @@ class ListVolumesRequest:
         云服务器id。
 
         :param server_id: The server_id of this ListVolumesRequest.
-        :type: str
+        :type server_id: str
         """
         self._server_id = server_id
 

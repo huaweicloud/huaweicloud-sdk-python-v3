@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowPartitionEndMessageRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowPartitionEndMessageRequest:
     }
 
     def __init__(self, instance_id=None, topic=None, partition=None):
-        """ShowPartitionEndMessageRequest - a model defined in huaweicloud sdk"""
+        """ShowPartitionEndMessageRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param topic: Topic名称。
+        :type topic: str
+        :param partition: 分区编号。
+        :type partition: int
+        """
         
         
 
@@ -65,7 +74,7 @@ class ShowPartitionEndMessageRequest:
         实例ID。
 
         :param instance_id: The instance_id of this ShowPartitionEndMessageRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -87,7 +96,7 @@ class ShowPartitionEndMessageRequest:
         Topic名称。
 
         :param topic: The topic of this ShowPartitionEndMessageRequest.
-        :type: str
+        :type topic: str
         """
         self._topic = topic
 
@@ -109,7 +118,7 @@ class ShowPartitionEndMessageRequest:
         分区编号。
 
         :param partition: The partition of this ShowPartitionEndMessageRequest.
-        :type: int
+        :type partition: int
         """
         self._partition = partition
 

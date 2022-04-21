@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TurboInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class TurboInfo:
     }
 
     def __init__(self, share_type=None, type=None, available_zone=None, resource_spec_code=None):
-        """TurboInfo - a model defined in huaweicloud sdk"""
+        """TurboInfo
+
+        The model defined in huaweicloud sdk
+
+        :param share_type: 共享方式
+        :type share_type: str
+        :param type: 类型
+        :type type: str
+        :param available_zone: 可用区
+        :type available_zone: str
+        :param resource_spec_code: 规格
+        :type resource_spec_code: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class TurboInfo:
         共享方式
 
         :param share_type: The share_type of this TurboInfo.
-        :type: str
+        :type share_type: str
         """
         self._share_type = share_type
 
@@ -91,7 +102,7 @@ class TurboInfo:
         类型
 
         :param type: The type of this TurboInfo.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -113,7 +124,7 @@ class TurboInfo:
         可用区
 
         :param available_zone: The available_zone of this TurboInfo.
-        :type: str
+        :type available_zone: str
         """
         self._available_zone = available_zone
 
@@ -135,7 +146,7 @@ class TurboInfo:
         规格
 
         :param resource_spec_code: The resource_spec_code of this TurboInfo.
-        :type: str
+        :type resource_spec_code: str
         """
         self._resource_spec_code = resource_spec_code
 

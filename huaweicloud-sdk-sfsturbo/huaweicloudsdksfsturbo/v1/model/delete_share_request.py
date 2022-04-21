@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteShareRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteShareRequest:
     }
 
     def __init__(self, share_id=None):
-        """DeleteShareRequest - a model defined in huaweicloud sdk"""
+        """DeleteShareRequest
+
+        The model defined in huaweicloud sdk
+
+        :param share_id: 文件系统ID
+        :type share_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteShareRequest:
         文件系统ID
 
         :param share_id: The share_id of this DeleteShareRequest.
-        :type: str
+        :type share_id: str
         """
         self._share_id = share_id
 

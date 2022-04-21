@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDeploymentGroupDetailResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -60,7 +59,43 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
     }
 
     def __init__(self, group_id=None, created_time=None, updated_time=None, host_count=None, project_name=None, name=None, region_name=None, project_id=None, os=None, auto_connection_test_switch=None, slave_cluster_id=None, nick_name=None, created_by=None, update_by=None, description=None, permission=None):
-        """ShowDeploymentGroupDetailResponse - a model defined in huaweicloud sdk"""
+        """ShowDeploymentGroupDetailResponse
+
+        The model defined in huaweicloud sdk
+
+        :param group_id: 主机组id
+        :type group_id: str
+        :param created_time: 创建时间
+        :type created_time: str
+        :param updated_time: 修改时间
+        :type updated_time: str
+        :param host_count: 组内主机数量，一个主机组内最多可添加200台主机
+        :type host_count: int
+        :param project_name: devcloud项目名称
+        :type project_name: str
+        :param name: 主机组名
+        :type name: str
+        :param region_name: 局点信息
+        :type region_name: str
+        :param project_id: devcloud项目id
+        :type project_id: str
+        :param os: 操作系统：windows|linux
+        :type os: str
+        :param auto_connection_test_switch: 自动连通性验证 0不执行 1每日 2每周
+        :type auto_connection_test_switch: int
+        :param slave_cluster_id: slave集群id，默认为null时使用devcloud八爪鱼slave集群，用户自定义slave时为slave集群id
+        :type slave_cluster_id: str
+        :param nick_name: 用户昵称
+        :type nick_name: str
+        :param created_by: 
+        :type created_by: :class:`huaweicloudsdkclouddeploy.v2.UserInfo`
+        :param update_by: 
+        :type update_by: :class:`huaweicloudsdkclouddeploy.v2.UserInfo`
+        :param description: 描述
+        :type description: str
+        :param permission: 
+        :type permission: :class:`huaweicloudsdkclouddeploy.v2.PermissionGroupDetail`
+        """
         
         super(ShowDeploymentGroupDetailResponse, self).__init__()
 
@@ -133,7 +168,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
         主机组id
 
         :param group_id: The group_id of this ShowDeploymentGroupDetailResponse.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -155,7 +190,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
         创建时间
 
         :param created_time: The created_time of this ShowDeploymentGroupDetailResponse.
-        :type: str
+        :type created_time: str
         """
         self._created_time = created_time
 
@@ -177,7 +212,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
         修改时间
 
         :param updated_time: The updated_time of this ShowDeploymentGroupDetailResponse.
-        :type: str
+        :type updated_time: str
         """
         self._updated_time = updated_time
 
@@ -199,7 +234,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
         组内主机数量，一个主机组内最多可添加200台主机
 
         :param host_count: The host_count of this ShowDeploymentGroupDetailResponse.
-        :type: int
+        :type host_count: int
         """
         self._host_count = host_count
 
@@ -221,7 +256,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
         devcloud项目名称
 
         :param project_name: The project_name of this ShowDeploymentGroupDetailResponse.
-        :type: str
+        :type project_name: str
         """
         self._project_name = project_name
 
@@ -243,7 +278,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
         主机组名
 
         :param name: The name of this ShowDeploymentGroupDetailResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -265,7 +300,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
         局点信息
 
         :param region_name: The region_name of this ShowDeploymentGroupDetailResponse.
-        :type: str
+        :type region_name: str
         """
         self._region_name = region_name
 
@@ -287,7 +322,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
         devcloud项目id
 
         :param project_id: The project_id of this ShowDeploymentGroupDetailResponse.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -309,7 +344,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
         操作系统：windows|linux
 
         :param os: The os of this ShowDeploymentGroupDetailResponse.
-        :type: str
+        :type os: str
         """
         self._os = os
 
@@ -331,7 +366,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
         自动连通性验证 0不执行 1每日 2每周
 
         :param auto_connection_test_switch: The auto_connection_test_switch of this ShowDeploymentGroupDetailResponse.
-        :type: int
+        :type auto_connection_test_switch: int
         """
         self._auto_connection_test_switch = auto_connection_test_switch
 
@@ -353,7 +388,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
         slave集群id，默认为null时使用devcloud八爪鱼slave集群，用户自定义slave时为slave集群id
 
         :param slave_cluster_id: The slave_cluster_id of this ShowDeploymentGroupDetailResponse.
-        :type: str
+        :type slave_cluster_id: str
         """
         self._slave_cluster_id = slave_cluster_id
 
@@ -375,7 +410,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
         用户昵称
 
         :param nick_name: The nick_name of this ShowDeploymentGroupDetailResponse.
-        :type: str
+        :type nick_name: str
         """
         self._nick_name = nick_name
 
@@ -385,7 +420,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
 
 
         :return: The created_by of this ShowDeploymentGroupDetailResponse.
-        :rtype: UserInfo
+        :rtype: :class:`huaweicloudsdkclouddeploy.v2.UserInfo`
         """
         return self._created_by
 
@@ -395,7 +430,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
 
 
         :param created_by: The created_by of this ShowDeploymentGroupDetailResponse.
-        :type: UserInfo
+        :type created_by: :class:`huaweicloudsdkclouddeploy.v2.UserInfo`
         """
         self._created_by = created_by
 
@@ -405,7 +440,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
 
 
         :return: The update_by of this ShowDeploymentGroupDetailResponse.
-        :rtype: UserInfo
+        :rtype: :class:`huaweicloudsdkclouddeploy.v2.UserInfo`
         """
         return self._update_by
 
@@ -415,7 +450,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
 
 
         :param update_by: The update_by of this ShowDeploymentGroupDetailResponse.
-        :type: UserInfo
+        :type update_by: :class:`huaweicloudsdkclouddeploy.v2.UserInfo`
         """
         self._update_by = update_by
 
@@ -437,7 +472,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
         描述
 
         :param description: The description of this ShowDeploymentGroupDetailResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -447,7 +482,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
 
 
         :return: The permission of this ShowDeploymentGroupDetailResponse.
-        :rtype: PermissionGroupDetail
+        :rtype: :class:`huaweicloudsdkclouddeploy.v2.PermissionGroupDetail`
         """
         return self._permission
 
@@ -457,7 +492,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
 
 
         :param permission: The permission of this ShowDeploymentGroupDetailResponse.
-        :type: PermissionGroupDetail
+        :type permission: :class:`huaweicloudsdkclouddeploy.v2.PermissionGroupDetail`
         """
         self._permission = permission
 

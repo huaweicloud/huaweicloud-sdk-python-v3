@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPodsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ListPodsRequest:
     }
 
     def __init__(self, node_id=None, group_id=None, deployment_id=None, deployment_ids=None, limit=None, offset=None, ief_instance_id=None):
-        """ListPodsRequest - a model defined in huaweicloud sdk"""
+        """ListPodsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param node_id: 指定节点查询应用实例, 可选， 与group_id、deployment_id、deployment_ids四选一
+        :type node_id: str
+        :param group_id: 指定节点组查询应用实例，可选，与node_id、deployment_id、deployment_ids四选一
+        :type group_id: str
+        :param deployment_id: 指定应用部署ID查询应用实例， 可选， 与node_id、group_id、deployment_ids四选一
+        :type deployment_id: str
+        :param deployment_ids: 指定应用部署ID列表查询应用实例，多个ID使用逗号分隔，可选， 与node_id、group_id、deployment_id四选一
+        :type deployment_ids: str
+        :param limit: 查询返回记录的数量限制
+        :type limit: int
+        :param offset: 偏移量，表示查询该偏移量后面的记录
+        :type offset: int
+        :param ief_instance_id: 铂金版实例ID，专业版实例为空值
+        :type ief_instance_id: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class ListPodsRequest:
         指定节点查询应用实例, 可选， 与group_id、deployment_id、deployment_ids四选一
 
         :param node_id: The node_id of this ListPodsRequest.
-        :type: str
+        :type node_id: str
         """
         self._node_id = node_id
 
@@ -110,7 +127,7 @@ class ListPodsRequest:
         指定节点组查询应用实例，可选，与node_id、deployment_id、deployment_ids四选一
 
         :param group_id: The group_id of this ListPodsRequest.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -132,7 +149,7 @@ class ListPodsRequest:
         指定应用部署ID查询应用实例， 可选， 与node_id、group_id、deployment_ids四选一
 
         :param deployment_id: The deployment_id of this ListPodsRequest.
-        :type: str
+        :type deployment_id: str
         """
         self._deployment_id = deployment_id
 
@@ -154,7 +171,7 @@ class ListPodsRequest:
         指定应用部署ID列表查询应用实例，多个ID使用逗号分隔，可选， 与node_id、group_id、deployment_id四选一
 
         :param deployment_ids: The deployment_ids of this ListPodsRequest.
-        :type: str
+        :type deployment_ids: str
         """
         self._deployment_ids = deployment_ids
 
@@ -176,7 +193,7 @@ class ListPodsRequest:
         查询返回记录的数量限制
 
         :param limit: The limit of this ListPodsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -198,7 +215,7 @@ class ListPodsRequest:
         偏移量，表示查询该偏移量后面的记录
 
         :param offset: The offset of this ListPodsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -220,7 +237,7 @@ class ListPodsRequest:
         铂金版实例ID，专业版实例为空值
 
         :param ief_instance_id: The ief_instance_id of this ListPodsRequest.
-        :type: str
+        :type ief_instance_id: str
         """
         self._ief_instance_id = ief_instance_id
 

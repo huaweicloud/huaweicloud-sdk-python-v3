@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSimCardsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -70,7 +69,53 @@ class ListSimCardsRequest:
     }
 
     def __init__(self, main_search_type=None, main_search_key=None, limit=None, offset=None, sim_status=None, device_status=None, sim_type=None, order=None, sort=None, msisdn=None, customer_attribute1=None, customer_attribute2=None, customer_attribute3=None, customer_attribute4=None, customer_attribute5=None, customer_attribute6=None, min_flow=None, max_flow=None, real_named=None, order_id=None, filter_downtime_period=None):
-        """ListSimCardsRequest - a model defined in huaweicloud sdk"""
+        """ListSimCardsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param main_search_type: 查询关键标识类型： 1.容器ID(不同类型卡含义如下:ICCID(实体卡)，EID（eSIM）CID（vSIM)) 2.批次号 3.设备IMEI
+        :type main_search_type: int
+        :param main_search_key: 查询关键标识值：根据查询关键标识类型进行查询，例如想根据ICCID&#x3D;xxx进行查询，则main_search_type&#x3D;1&amp;main_search_key&#x3D;xxx
+        :type main_search_key: str
+        :param limit: 分页查询时每页显示的记录数，默认值为10，取值范围为10-500的整数
+        :type limit: int
+        :param offset: 分页查询时的页码数，默认值为1，取值范围为1-1000000的整数
+        :type offset: int
+        :param sim_status: sim卡状态：  10.可测试  11.未激活  13.可激活  14.已停用  20.在用  30.已拆机
+        :type sim_status: int
+        :param device_status: 设备状态: 1.注册 2.重启 3.在线 4.离线
+        :type device_status: int
+        :param sim_type: sim卡类型：  1.vSIM  2.eSIM  3.实体卡
+        :type sim_type: int
+        :param order: 排序的顺序，asc表示顺序排序，desc表示倒序排序，不传则默认asc
+        :type order: str
+        :param sort: 排序的属性，目前支持:cid（容器ID）、flow_used（已用流量）、flow_left（剩余流量）、act_date（激活时间）、expire_time（到期时间）
+        :type sort: str
+        :param msisdn: MSISDN
+        :type msisdn: str
+        :param customer_attribute1: 自定义属性一
+        :type customer_attribute1: str
+        :param customer_attribute2: 自定义属性二
+        :type customer_attribute2: str
+        :param customer_attribute3: 自定义属性三
+        :type customer_attribute3: str
+        :param customer_attribute4: 自定义属性四
+        :type customer_attribute4: str
+        :param customer_attribute5: 自定义属性五
+        :type customer_attribute5: str
+        :param customer_attribute6: 自定义属性六
+        :type customer_attribute6: str
+        :param min_flow: 最小使用流量(MB)
+        :type min_flow: int
+        :param max_flow: 最大使用流量(MB)
+        :type max_flow: int
+        :param real_named: 是否已实名认证: true表示是，false表示否，系统SIM卡实名认证状态非实时。
+        :type real_named: bool
+        :param order_id: 订单号
+        :type order_id: int
+        :param filter_downtime_period: 是否过滤停机保号的卡
+        :type filter_downtime_period: bool
+        """
         
         
 
@@ -158,7 +203,7 @@ class ListSimCardsRequest:
         查询关键标识类型： 1.容器ID(不同类型卡含义如下:ICCID(实体卡)，EID（eSIM）CID（vSIM)) 2.批次号 3.设备IMEI
 
         :param main_search_type: The main_search_type of this ListSimCardsRequest.
-        :type: int
+        :type main_search_type: int
         """
         self._main_search_type = main_search_type
 
@@ -180,7 +225,7 @@ class ListSimCardsRequest:
         查询关键标识值：根据查询关键标识类型进行查询，例如想根据ICCID=xxx进行查询，则main_search_type=1&main_search_key=xxx
 
         :param main_search_key: The main_search_key of this ListSimCardsRequest.
-        :type: str
+        :type main_search_key: str
         """
         self._main_search_key = main_search_key
 
@@ -202,7 +247,7 @@ class ListSimCardsRequest:
         分页查询时每页显示的记录数，默认值为10，取值范围为10-500的整数
 
         :param limit: The limit of this ListSimCardsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -224,7 +269,7 @@ class ListSimCardsRequest:
         分页查询时的页码数，默认值为1，取值范围为1-1000000的整数
 
         :param offset: The offset of this ListSimCardsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -246,7 +291,7 @@ class ListSimCardsRequest:
         sim卡状态：  10.可测试  11.未激活  13.可激活  14.已停用  20.在用  30.已拆机
 
         :param sim_status: The sim_status of this ListSimCardsRequest.
-        :type: int
+        :type sim_status: int
         """
         self._sim_status = sim_status
 
@@ -268,7 +313,7 @@ class ListSimCardsRequest:
         设备状态: 1.注册 2.重启 3.在线 4.离线
 
         :param device_status: The device_status of this ListSimCardsRequest.
-        :type: int
+        :type device_status: int
         """
         self._device_status = device_status
 
@@ -290,7 +335,7 @@ class ListSimCardsRequest:
         sim卡类型：  1.vSIM  2.eSIM  3.实体卡
 
         :param sim_type: The sim_type of this ListSimCardsRequest.
-        :type: int
+        :type sim_type: int
         """
         self._sim_type = sim_type
 
@@ -312,7 +357,7 @@ class ListSimCardsRequest:
         排序的顺序，asc表示顺序排序，desc表示倒序排序，不传则默认asc
 
         :param order: The order of this ListSimCardsRequest.
-        :type: str
+        :type order: str
         """
         self._order = order
 
@@ -334,7 +379,7 @@ class ListSimCardsRequest:
         排序的属性，目前支持:cid（容器ID）、flow_used（已用流量）、flow_left（剩余流量）、act_date（激活时间）、expire_time（到期时间）
 
         :param sort: The sort of this ListSimCardsRequest.
-        :type: str
+        :type sort: str
         """
         self._sort = sort
 
@@ -356,7 +401,7 @@ class ListSimCardsRequest:
         MSISDN
 
         :param msisdn: The msisdn of this ListSimCardsRequest.
-        :type: str
+        :type msisdn: str
         """
         self._msisdn = msisdn
 
@@ -378,7 +423,7 @@ class ListSimCardsRequest:
         自定义属性一
 
         :param customer_attribute1: The customer_attribute1 of this ListSimCardsRequest.
-        :type: str
+        :type customer_attribute1: str
         """
         self._customer_attribute1 = customer_attribute1
 
@@ -400,7 +445,7 @@ class ListSimCardsRequest:
         自定义属性二
 
         :param customer_attribute2: The customer_attribute2 of this ListSimCardsRequest.
-        :type: str
+        :type customer_attribute2: str
         """
         self._customer_attribute2 = customer_attribute2
 
@@ -422,7 +467,7 @@ class ListSimCardsRequest:
         自定义属性三
 
         :param customer_attribute3: The customer_attribute3 of this ListSimCardsRequest.
-        :type: str
+        :type customer_attribute3: str
         """
         self._customer_attribute3 = customer_attribute3
 
@@ -444,7 +489,7 @@ class ListSimCardsRequest:
         自定义属性四
 
         :param customer_attribute4: The customer_attribute4 of this ListSimCardsRequest.
-        :type: str
+        :type customer_attribute4: str
         """
         self._customer_attribute4 = customer_attribute4
 
@@ -466,7 +511,7 @@ class ListSimCardsRequest:
         自定义属性五
 
         :param customer_attribute5: The customer_attribute5 of this ListSimCardsRequest.
-        :type: str
+        :type customer_attribute5: str
         """
         self._customer_attribute5 = customer_attribute5
 
@@ -488,7 +533,7 @@ class ListSimCardsRequest:
         自定义属性六
 
         :param customer_attribute6: The customer_attribute6 of this ListSimCardsRequest.
-        :type: str
+        :type customer_attribute6: str
         """
         self._customer_attribute6 = customer_attribute6
 
@@ -510,7 +555,7 @@ class ListSimCardsRequest:
         最小使用流量(MB)
 
         :param min_flow: The min_flow of this ListSimCardsRequest.
-        :type: int
+        :type min_flow: int
         """
         self._min_flow = min_flow
 
@@ -532,7 +577,7 @@ class ListSimCardsRequest:
         最大使用流量(MB)
 
         :param max_flow: The max_flow of this ListSimCardsRequest.
-        :type: int
+        :type max_flow: int
         """
         self._max_flow = max_flow
 
@@ -554,7 +599,7 @@ class ListSimCardsRequest:
         是否已实名认证: true表示是，false表示否，系统SIM卡实名认证状态非实时。
 
         :param real_named: The real_named of this ListSimCardsRequest.
-        :type: bool
+        :type real_named: bool
         """
         self._real_named = real_named
 
@@ -576,7 +621,7 @@ class ListSimCardsRequest:
         订单号
 
         :param order_id: The order_id of this ListSimCardsRequest.
-        :type: int
+        :type order_id: int
         """
         self._order_id = order_id
 
@@ -598,7 +643,7 @@ class ListSimCardsRequest:
         是否过滤停机保号的卡
 
         :param filter_downtime_period: The filter_downtime_period of this ListSimCardsRequest.
-        :type: bool
+        :type filter_downtime_period: bool
         """
         self._filter_downtime_period = filter_downtime_period
 

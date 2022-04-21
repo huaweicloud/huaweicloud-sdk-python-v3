@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SqlJobRun:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class SqlJobRun:
     }
 
     def __init__(self, sql_type=None):
-        """SqlJobRun - a model defined in huaweicloud sdk"""
+        """SqlJobRun
+
+        The model defined in huaweicloud sdk
+
+        :param sql_type: 作业类型。DDL, DCL, IMPORT, EXPORT, QUERY, INSERT.
+        :type sql_type: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class SqlJobRun:
         作业类型。DDL, DCL, IMPORT, EXPORT, QUERY, INSERT.
 
         :param sql_type: The sql_type of this SqlJobRun.
-        :type: str
+        :type sql_type: str
         """
         self._sql_type = sql_type
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateAppAclRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateAppAclRequest:
     }
 
     def __init__(self, instance_id=None, app_id=None, body=None):
-        """UpdateAppAclRequest - a model defined in huaweicloud sdk"""
+        """UpdateAppAclRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param app_id: 应用编号
+        :type app_id: str
+        :param body: Body of the UpdateAppAclRequest
+        :type body: :class:`huaweicloudsdkroma.v2.AppAclCreate`
+        """
         
         
 
@@ -66,7 +75,7 @@ class UpdateAppAclRequest:
         实例ID
 
         :param instance_id: The instance_id of this UpdateAppAclRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -88,7 +97,7 @@ class UpdateAppAclRequest:
         应用编号
 
         :param app_id: The app_id of this UpdateAppAclRequest.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -98,7 +107,7 @@ class UpdateAppAclRequest:
 
 
         :return: The body of this UpdateAppAclRequest.
-        :rtype: AppAclCreate
+        :rtype: :class:`huaweicloudsdkroma.v2.AppAclCreate`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class UpdateAppAclRequest:
 
 
         :param body: The body of this UpdateAppAclRequest.
-        :type: AppAclCreate
+        :type body: :class:`huaweicloudsdkroma.v2.AppAclCreate`
         """
         self._body = body
 

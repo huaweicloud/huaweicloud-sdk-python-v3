@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RecognizeLicensePlateResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RecognizeLicensePlateResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """RecognizeLicensePlateResponse - a model defined in huaweicloud sdk"""
+        """RecognizeLicensePlateResponse
+
+        The model defined in huaweicloud sdk
+
+        :param result: 调用成功时表示调用结果。  调用失败时无此字段。 
+        :type result: list[:class:`huaweicloudsdkocr.v1.LicensePlateResult`]
+        """
         
         super(RecognizeLicensePlateResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class RecognizeLicensePlateResponse(SdkResponse):
         调用成功时表示调用结果。  调用失败时无此字段。 
 
         :return: The result of this RecognizeLicensePlateResponse.
-        :rtype: list[LicensePlateResult]
+        :rtype: list[:class:`huaweicloudsdkocr.v1.LicensePlateResult`]
         """
         return self._result
 
@@ -58,7 +63,7 @@ class RecognizeLicensePlateResponse(SdkResponse):
         调用成功时表示调用结果。  调用失败时无此字段。 
 
         :param result: The result of this RecognizeLicensePlateResponse.
-        :type: list[LicensePlateResult]
+        :type result: list[:class:`huaweicloudsdkocr.v1.LicensePlateResult`]
         """
         self._result = result
 

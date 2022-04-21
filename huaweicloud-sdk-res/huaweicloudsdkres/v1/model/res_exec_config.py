@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResExecConfig:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ResExecConfig:
     }
 
     def __init__(self, spark_calc_spec=None, spark_option_confs=None):
-        """ResExecConfig - a model defined in huaweicloud sdk"""
+        """ResExecConfig
+
+        The model defined in huaweicloud sdk
+
+        :param spark_calc_spec: 
+        :type spark_calc_spec: :class:`huaweicloudsdkres.v1.SparkCalcSpec`
+        :param spark_option_confs: spark可选配置项
+        :type spark_option_confs: list[:class:`huaweicloudsdkres.v1.SparkOptionConf`]
+        """
         
         
 
@@ -51,7 +58,7 @@ class ResExecConfig:
 
 
         :return: The spark_calc_spec of this ResExecConfig.
-        :rtype: SparkCalcSpec
+        :rtype: :class:`huaweicloudsdkres.v1.SparkCalcSpec`
         """
         return self._spark_calc_spec
 
@@ -61,7 +68,7 @@ class ResExecConfig:
 
 
         :param spark_calc_spec: The spark_calc_spec of this ResExecConfig.
-        :type: SparkCalcSpec
+        :type spark_calc_spec: :class:`huaweicloudsdkres.v1.SparkCalcSpec`
         """
         self._spark_calc_spec = spark_calc_spec
 
@@ -72,7 +79,7 @@ class ResExecConfig:
         spark可选配置项
 
         :return: The spark_option_confs of this ResExecConfig.
-        :rtype: list[SparkOptionConf]
+        :rtype: list[:class:`huaweicloudsdkres.v1.SparkOptionConf`]
         """
         return self._spark_option_confs
 
@@ -83,7 +90,7 @@ class ResExecConfig:
         spark可选配置项
 
         :param spark_option_confs: The spark_option_confs of this ResExecConfig.
-        :type: list[SparkOptionConf]
+        :type spark_option_confs: list[:class:`huaweicloudsdkres.v1.SparkOptionConf`]
         """
         self._spark_option_confs = spark_option_confs
 

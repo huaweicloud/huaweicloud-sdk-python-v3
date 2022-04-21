@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateLogGroupParams:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateLogGroupParams:
     }
 
     def __init__(self, ttl_in_days=None):
-        """UpdateLogGroupParams - a model defined in huaweicloud sdk"""
+        """UpdateLogGroupParams
+
+        The model defined in huaweicloud sdk
+
+        :param ttl_in_days: 日志存储时间 天。 取值范围为 [1, 30]
+        :type ttl_in_days: int
+        """
         
         
 
@@ -57,7 +62,7 @@ class UpdateLogGroupParams:
         日志存储时间 天。 取值范围为 [1, 30]
 
         :param ttl_in_days: The ttl_in_days of this UpdateLogGroupParams.
-        :type: int
+        :type ttl_in_days: int
         """
         self._ttl_in_days = ttl_in_days
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RelatedTempRunningData:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class RelatedTempRunningData:
     }
 
     def __init__(self, task_run_info_id=None, related_temp_running_id=None, temp_id=None, temp_name=None, related_temp_running_data=None):
-        """RelatedTempRunningData - a model defined in huaweicloud sdk"""
+        """RelatedTempRunningData
+
+        The model defined in huaweicloud sdk
+
+        :param task_run_info_id: task_run_info_id
+        :type task_run_info_id: int
+        :param related_temp_running_id: related_temp_running_id
+        :type related_temp_running_id: int
+        :param temp_id: temp_id
+        :type temp_id: int
+        :param temp_name: temp_name
+        :type temp_name: str
+        :param related_temp_running_data: related_temp_running_data
+        :type related_temp_running_data: list[:class:`huaweicloudsdkcpts.v1.TempRunningData`]
+        """
         
         
 
@@ -78,7 +91,7 @@ class RelatedTempRunningData:
         task_run_info_id
 
         :param task_run_info_id: The task_run_info_id of this RelatedTempRunningData.
-        :type: int
+        :type task_run_info_id: int
         """
         self._task_run_info_id = task_run_info_id
 
@@ -100,7 +113,7 @@ class RelatedTempRunningData:
         related_temp_running_id
 
         :param related_temp_running_id: The related_temp_running_id of this RelatedTempRunningData.
-        :type: int
+        :type related_temp_running_id: int
         """
         self._related_temp_running_id = related_temp_running_id
 
@@ -122,7 +135,7 @@ class RelatedTempRunningData:
         temp_id
 
         :param temp_id: The temp_id of this RelatedTempRunningData.
-        :type: int
+        :type temp_id: int
         """
         self._temp_id = temp_id
 
@@ -144,7 +157,7 @@ class RelatedTempRunningData:
         temp_name
 
         :param temp_name: The temp_name of this RelatedTempRunningData.
-        :type: str
+        :type temp_name: str
         """
         self._temp_name = temp_name
 
@@ -155,7 +168,7 @@ class RelatedTempRunningData:
         related_temp_running_data
 
         :return: The related_temp_running_data of this RelatedTempRunningData.
-        :rtype: list[TempRunningData]
+        :rtype: list[:class:`huaweicloudsdkcpts.v1.TempRunningData`]
         """
         return self._related_temp_running_data
 
@@ -166,7 +179,7 @@ class RelatedTempRunningData:
         related_temp_running_data
 
         :param related_temp_running_data: The related_temp_running_data of this RelatedTempRunningData.
-        :type: list[TempRunningData]
+        :type related_temp_running_data: list[:class:`huaweicloudsdkcpts.v1.TempRunningData`]
         """
         self._related_temp_running_data = related_temp_running_data
 

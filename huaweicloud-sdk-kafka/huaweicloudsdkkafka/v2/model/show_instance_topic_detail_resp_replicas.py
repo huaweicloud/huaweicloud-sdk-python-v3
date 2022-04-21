@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowInstanceTopicDetailRespReplicas:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ShowInstanceTopicDetailRespReplicas:
     }
 
     def __init__(self, broker=None, leader=None, in_sync=None, size=None, lag=None):
-        """ShowInstanceTopicDetailRespReplicas - a model defined in huaweicloud sdk"""
+        """ShowInstanceTopicDetailRespReplicas
+
+        The model defined in huaweicloud sdk
+
+        :param broker: 副本所在的节点ID。
+        :type broker: int
+        :param leader: 该副本是否为leader。
+        :type leader: bool
+        :param in_sync: 该副本是否在ISR副本中。
+        :type in_sync: bool
+        :param size: 该副本当前日志大小。单位：Byte。
+        :type size: int
+        :param lag: 该副本当前落后hw的消息数。
+        :type lag: int
+        """
         
         
 
@@ -78,7 +91,7 @@ class ShowInstanceTopicDetailRespReplicas:
         副本所在的节点ID。
 
         :param broker: The broker of this ShowInstanceTopicDetailRespReplicas.
-        :type: int
+        :type broker: int
         """
         self._broker = broker
 
@@ -100,7 +113,7 @@ class ShowInstanceTopicDetailRespReplicas:
         该副本是否为leader。
 
         :param leader: The leader of this ShowInstanceTopicDetailRespReplicas.
-        :type: bool
+        :type leader: bool
         """
         self._leader = leader
 
@@ -122,7 +135,7 @@ class ShowInstanceTopicDetailRespReplicas:
         该副本是否在ISR副本中。
 
         :param in_sync: The in_sync of this ShowInstanceTopicDetailRespReplicas.
-        :type: bool
+        :type in_sync: bool
         """
         self._in_sync = in_sync
 
@@ -144,7 +157,7 @@ class ShowInstanceTopicDetailRespReplicas:
         该副本当前日志大小。单位：Byte。
 
         :param size: The size of this ShowInstanceTopicDetailRespReplicas.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -166,7 +179,7 @@ class ShowInstanceTopicDetailRespReplicas:
         该副本当前落后hw的消息数。
 
         :param lag: The lag of this ShowInstanceTopicDetailRespReplicas.
-        :type: int
+        :type lag: int
         """
         self._lag = lag
 

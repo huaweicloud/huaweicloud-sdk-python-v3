@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListInstancesV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListInstancesV2Response(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, instances=None):
-        """ListInstancesV2Response - a model defined in huaweicloud sdk"""
+        """ListInstancesV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param size: 本次返回的列表长度
+        :type size: int
+        :param total: 满足条件的记录数
+        :type total: int
+        :param instances: 实例列表
+        :type instances: list[:class:`huaweicloudsdkapig.v2.RespInstanceBase`]
+        """
         
         super(ListInstancesV2Response, self).__init__()
 
@@ -66,7 +75,7 @@ class ListInstancesV2Response(SdkResponse):
         本次返回的列表长度
 
         :param size: The size of this ListInstancesV2Response.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -88,7 +97,7 @@ class ListInstancesV2Response(SdkResponse):
         满足条件的记录数
 
         :param total: The total of this ListInstancesV2Response.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -99,7 +108,7 @@ class ListInstancesV2Response(SdkResponse):
         实例列表
 
         :return: The instances of this ListInstancesV2Response.
-        :rtype: list[RespInstanceBase]
+        :rtype: list[:class:`huaweicloudsdkapig.v2.RespInstanceBase`]
         """
         return self._instances
 
@@ -110,7 +119,7 @@ class ListInstancesV2Response(SdkResponse):
         实例列表
 
         :param instances: The instances of this ListInstancesV2Response.
-        :type: list[RespInstanceBase]
+        :type instances: list[:class:`huaweicloudsdkapig.v2.RespInstanceBase`]
         """
         self._instances = instances
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListProtectionGroupsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListProtectionGroupsResponse(SdkResponse):
     }
 
     def __init__(self, server_groups=None, count=None):
-        """ListProtectionGroupsResponse - a model defined in huaweicloud sdk"""
+        """ListProtectionGroupsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param server_groups: 保护组的信息列表。
+        :type server_groups: list[:class:`huaweicloudsdksdrs.v1.ShowProtectionGroupParams`]
+        :param count: 此参数为满足过滤条件的列表中包含的保护组个数。
+        :type count: int
+        """
         
         super(ListProtectionGroupsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListProtectionGroupsResponse(SdkResponse):
         保护组的信息列表。
 
         :return: The server_groups of this ListProtectionGroupsResponse.
-        :rtype: list[ShowProtectionGroupParams]
+        :rtype: list[:class:`huaweicloudsdksdrs.v1.ShowProtectionGroupParams`]
         """
         return self._server_groups
 
@@ -63,7 +70,7 @@ class ListProtectionGroupsResponse(SdkResponse):
         保护组的信息列表。
 
         :param server_groups: The server_groups of this ListProtectionGroupsResponse.
-        :type: list[ShowProtectionGroupParams]
+        :type server_groups: list[:class:`huaweicloudsdksdrs.v1.ShowProtectionGroupParams`]
         """
         self._server_groups = server_groups
 
@@ -85,7 +92,7 @@ class ListProtectionGroupsResponse(SdkResponse):
         此参数为满足过滤条件的列表中包含的保护组个数。
 
         :param count: The count of this ListProtectionGroupsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

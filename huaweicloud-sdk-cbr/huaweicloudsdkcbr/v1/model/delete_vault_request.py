@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteVaultRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteVaultRequest:
     }
 
     def __init__(self, vault_id=None):
-        """DeleteVaultRequest - a model defined in huaweicloud sdk"""
+        """DeleteVaultRequest
+
+        The model defined in huaweicloud sdk
+
+        :param vault_id: 存储库ID
+        :type vault_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteVaultRequest:
         存储库ID
 
         :param vault_id: The vault_id of this DeleteVaultRequest.
-        :type: str
+        :type vault_id: str
         """
         self._vault_id = vault_id
 

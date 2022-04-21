@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchSetDefinerRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchSetDefinerRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """BatchSetDefinerRequest - a model defined in huaweicloud sdk"""
+        """BatchSetDefinerRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 请求语言类型
+        :type x_language: str
+        :param body: Body of the BatchSetDefinerRequest
+        :type body: :class:`huaweicloudsdkdrs.v3.BatchReplaceDefinerReq`
+        """
         
         
 
@@ -63,7 +70,7 @@ class BatchSetDefinerRequest:
         请求语言类型
 
         :param x_language: The x_language of this BatchSetDefinerRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -73,7 +80,7 @@ class BatchSetDefinerRequest:
 
 
         :return: The body of this BatchSetDefinerRequest.
-        :rtype: BatchReplaceDefinerReq
+        :rtype: :class:`huaweicloudsdkdrs.v3.BatchReplaceDefinerReq`
         """
         return self._body
 
@@ -83,7 +90,7 @@ class BatchSetDefinerRequest:
 
 
         :param body: The body of this BatchSetDefinerRequest.
-        :type: BatchReplaceDefinerReq
+        :type body: :class:`huaweicloudsdkdrs.v3.BatchReplaceDefinerReq`
         """
         self._body = body
 

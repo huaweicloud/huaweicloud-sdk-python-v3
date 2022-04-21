@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NeutronListFloatingIpsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class NeutronListFloatingIpsRequest:
     }
 
     def __init__(self, limit=None, marker=None, page_reverse=None, id=None, floating_ip_address=None, router_id=None, port_id=None, fixed_ip_address=None, tenant_id=None, floating_network_id=None):
-        """NeutronListFloatingIpsRequest - a model defined in huaweicloud sdk"""
+        """NeutronListFloatingIpsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 每页显示的条目数量。
+        :type limit: int
+        :param marker: 取值为上一页数据的最后一条记录的id，当marker参数为无效id时，response将响应错误码400
+        :type marker: str
+        :param page_reverse: False/True，是否设置分页的顺序。
+        :type page_reverse: bool
+        :param id: 浮动IP的id。
+        :type id: str
+        :param floating_ip_address: 浮动IP地址。
+        :type floating_ip_address: str
+        :param router_id: 所属路由器id。
+        :type router_id: str
+        :param port_id: 端口id。
+        :type port_id: str
+        :param fixed_ip_address: 关联端口的私有IP地址。
+        :type fixed_ip_address: str
+        :param tenant_id: 项目ID。
+        :type tenant_id: str
+        :param floating_network_id: 外部网络的id。只能使用固定的外网，外部网络的信息请通过GET /v2.0/networks?router:external&#x3D;True或GET /v2.0/networks?name&#x3D;{floating_network}或neutron net-external-list方式查询
+        :type floating_network_id: str
+        """
         
         
 
@@ -103,7 +126,7 @@ class NeutronListFloatingIpsRequest:
         每页显示的条目数量。
 
         :param limit: The limit of this NeutronListFloatingIpsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -125,7 +148,7 @@ class NeutronListFloatingIpsRequest:
         取值为上一页数据的最后一条记录的id，当marker参数为无效id时，response将响应错误码400
 
         :param marker: The marker of this NeutronListFloatingIpsRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -147,7 +170,7 @@ class NeutronListFloatingIpsRequest:
         False/True，是否设置分页的顺序。
 
         :param page_reverse: The page_reverse of this NeutronListFloatingIpsRequest.
-        :type: bool
+        :type page_reverse: bool
         """
         self._page_reverse = page_reverse
 
@@ -169,7 +192,7 @@ class NeutronListFloatingIpsRequest:
         浮动IP的id。
 
         :param id: The id of this NeutronListFloatingIpsRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -191,7 +214,7 @@ class NeutronListFloatingIpsRequest:
         浮动IP地址。
 
         :param floating_ip_address: The floating_ip_address of this NeutronListFloatingIpsRequest.
-        :type: str
+        :type floating_ip_address: str
         """
         self._floating_ip_address = floating_ip_address
 
@@ -213,7 +236,7 @@ class NeutronListFloatingIpsRequest:
         所属路由器id。
 
         :param router_id: The router_id of this NeutronListFloatingIpsRequest.
-        :type: str
+        :type router_id: str
         """
         self._router_id = router_id
 
@@ -235,7 +258,7 @@ class NeutronListFloatingIpsRequest:
         端口id。
 
         :param port_id: The port_id of this NeutronListFloatingIpsRequest.
-        :type: str
+        :type port_id: str
         """
         self._port_id = port_id
 
@@ -257,7 +280,7 @@ class NeutronListFloatingIpsRequest:
         关联端口的私有IP地址。
 
         :param fixed_ip_address: The fixed_ip_address of this NeutronListFloatingIpsRequest.
-        :type: str
+        :type fixed_ip_address: str
         """
         self._fixed_ip_address = fixed_ip_address
 
@@ -279,7 +302,7 @@ class NeutronListFloatingIpsRequest:
         项目ID。
 
         :param tenant_id: The tenant_id of this NeutronListFloatingIpsRequest.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 
@@ -301,7 +324,7 @@ class NeutronListFloatingIpsRequest:
         外部网络的id。只能使用固定的外网，外部网络的信息请通过GET /v2.0/networks?router:external=True或GET /v2.0/networks?name={floating_network}或neutron net-external-list方式查询
 
         :param floating_network_id: The floating_network_id of this NeutronListFloatingIpsRequest.
-        :type: str
+        :type floating_network_id: str
         """
         self._floating_network_id = floating_network_id
 

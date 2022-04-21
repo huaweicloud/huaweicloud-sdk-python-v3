@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TaskSumbitResponseResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class TaskSumbitResponseResult:
     }
 
     def __init__(self, job_id=None):
-        """TaskSumbitResponseResult - a model defined in huaweicloud sdk"""
+        """TaskSumbitResponseResult
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 批量图像内容审核的任务标识，用于后续的结果查询。
+        :type job_id: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class TaskSumbitResponseResult:
         批量图像内容审核的任务标识，用于后续的结果查询。
 
         :param job_id: The job_id of this TaskSumbitResponseResult.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 

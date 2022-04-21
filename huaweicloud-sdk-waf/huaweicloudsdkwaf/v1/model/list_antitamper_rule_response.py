@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAntitamperRuleResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListAntitamperRuleResponse(SdkResponse):
     }
 
     def __init__(self, total=None, items=None):
-        """ListAntitamperRuleResponse - a model defined in huaweicloud sdk"""
+        """ListAntitamperRuleResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 总条数
+        :type total: int
+        :param items: 规则
+        :type items: list[:class:`huaweicloudsdkwaf.v1.AntiTamperRuleResponseBody`]
+        """
         
         super(ListAntitamperRuleResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListAntitamperRuleResponse(SdkResponse):
         总条数
 
         :param total: The total of this ListAntitamperRuleResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -74,7 +81,7 @@ class ListAntitamperRuleResponse(SdkResponse):
         规则
 
         :return: The items of this ListAntitamperRuleResponse.
-        :rtype: list[AntiTamperRuleResponseBody]
+        :rtype: list[:class:`huaweicloudsdkwaf.v1.AntiTamperRuleResponseBody`]
         """
         return self._items
 
@@ -85,7 +92,7 @@ class ListAntitamperRuleResponse(SdkResponse):
         规则
 
         :param items: The items of this ListAntitamperRuleResponse.
-        :type: list[AntiTamperRuleResponseBody]
+        :type items: list[:class:`huaweicloudsdkwaf.v1.AntiTamperRuleResponseBody`]
         """
         self._items = items
 

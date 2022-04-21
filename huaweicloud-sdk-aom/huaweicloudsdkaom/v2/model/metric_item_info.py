@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MetricItemInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class MetricItemInfo:
     }
 
     def __init__(self, dimensions=None, namespace=None):
-        """MetricItemInfo - a model defined in huaweicloud sdk"""
+        """MetricItemInfo
+
+        The model defined in huaweicloud sdk
+
+        :param dimensions: 指标维度列表。 维度最多允许50个，单个维度为json对象，结构说明如下 dimension.name：长度最短为1，最大为32。 dimension.value：长度最短为1，最大为64。
+        :type dimensions: list[:class:`huaweicloudsdkaom.v2.Dimension2`]
+        :param namespace: 指标命名空间。 namespace中不允许存在\&quot;:\&quot;符号，取值范围 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_，总长度最短为3，最大为32，service不能为“PAAS”。
+        :type namespace: str
+        """
         
         
 
@@ -50,7 +57,7 @@ class MetricItemInfo:
         指标维度列表。 维度最多允许50个，单个维度为json对象，结构说明如下 dimension.name：长度最短为1，最大为32。 dimension.value：长度最短为1，最大为64。
 
         :return: The dimensions of this MetricItemInfo.
-        :rtype: list[Dimension2]
+        :rtype: list[:class:`huaweicloudsdkaom.v2.Dimension2`]
         """
         return self._dimensions
 
@@ -61,7 +68,7 @@ class MetricItemInfo:
         指标维度列表。 维度最多允许50个，单个维度为json对象，结构说明如下 dimension.name：长度最短为1，最大为32。 dimension.value：长度最短为1，最大为64。
 
         :param dimensions: The dimensions of this MetricItemInfo.
-        :type: list[Dimension2]
+        :type dimensions: list[:class:`huaweicloudsdkaom.v2.Dimension2`]
         """
         self._dimensions = dimensions
 
@@ -83,7 +90,7 @@ class MetricItemInfo:
         指标命名空间。 namespace中不允许存在\":\"符号，取值范围 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_，总长度最短为3，最大为32，service不能为“PAAS”。
 
         :param namespace: The namespace of this MetricItemInfo.
-        :type: str
+        :type namespace: str
         """
         self._namespace = namespace
 

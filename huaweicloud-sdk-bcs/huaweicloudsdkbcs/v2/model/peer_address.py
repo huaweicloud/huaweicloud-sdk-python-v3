@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PeerAddress:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class PeerAddress:
     }
 
     def __init__(self, domain_port=None, ip_port=None):
-        """PeerAddress - a model defined in huaweicloud sdk"""
+        """PeerAddress
+
+        The model defined in huaweicloud sdk
+
+        :param domain_port: 域名地址
+        :type domain_port: str
+        :param ip_port: IP地址
+        :type ip_port: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class PeerAddress:
         域名地址
 
         :param domain_port: The domain_port of this PeerAddress.
-        :type: str
+        :type domain_port: str
         """
         self._domain_port = domain_port
 
@@ -85,7 +92,7 @@ class PeerAddress:
         IP地址
 
         :param ip_port: The ip_port of this PeerAddress.
-        :type: str
+        :type ip_port: str
         """
         self._ip_port = ip_port
 

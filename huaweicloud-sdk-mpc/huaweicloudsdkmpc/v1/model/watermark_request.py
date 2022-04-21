@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class WatermarkRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class WatermarkRequest:
     }
 
     def __init__(self, input=None, template_id=None, text_context=None, image_watermark=None, text_watermark=None):
-        """WatermarkRequest - a model defined in huaweicloud sdk"""
+        """WatermarkRequest
+
+        The model defined in huaweicloud sdk
+
+        :param input: 
+        :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        :param template_id: 水印模板。可通过新建水印模板接口创建水印模板。
+        :type template_id: str
+        :param text_context: 文字水印内容，内容需做Base64编码，若类型为文字水印 (type字段为Text)，则此配置项不能为空  示例：若想添加文字水印“测试文字水印”，那么Content的值为：5rWL6K+V5paH5a2X5rC05Y2w 
+        :type text_context: str
+        :param image_watermark: 
+        :type image_watermark: :class:`huaweicloudsdkmpc.v1.ImageWatermark`
+        :param text_watermark: 
+        :type text_watermark: :class:`huaweicloudsdkmpc.v1.TextWatermark`
+        """
         
         
 
@@ -66,7 +79,7 @@ class WatermarkRequest:
 
 
         :return: The input of this WatermarkRequest.
-        :rtype: ObsObjInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         return self._input
 
@@ -76,7 +89,7 @@ class WatermarkRequest:
 
 
         :param input: The input of this WatermarkRequest.
-        :type: ObsObjInfo
+        :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         self._input = input
 
@@ -98,7 +111,7 @@ class WatermarkRequest:
         水印模板。可通过新建水印模板接口创建水印模板。
 
         :param template_id: The template_id of this WatermarkRequest.
-        :type: str
+        :type template_id: str
         """
         self._template_id = template_id
 
@@ -120,7 +133,7 @@ class WatermarkRequest:
         文字水印内容，内容需做Base64编码，若类型为文字水印 (type字段为Text)，则此配置项不能为空  示例：若想添加文字水印“测试文字水印”，那么Content的值为：5rWL6K+V5paH5a2X5rC05Y2w 
 
         :param text_context: The text_context of this WatermarkRequest.
-        :type: str
+        :type text_context: str
         """
         self._text_context = text_context
 
@@ -130,7 +143,7 @@ class WatermarkRequest:
 
 
         :return: The image_watermark of this WatermarkRequest.
-        :rtype: ImageWatermark
+        :rtype: :class:`huaweicloudsdkmpc.v1.ImageWatermark`
         """
         return self._image_watermark
 
@@ -140,7 +153,7 @@ class WatermarkRequest:
 
 
         :param image_watermark: The image_watermark of this WatermarkRequest.
-        :type: ImageWatermark
+        :type image_watermark: :class:`huaweicloudsdkmpc.v1.ImageWatermark`
         """
         self._image_watermark = image_watermark
 
@@ -150,7 +163,7 @@ class WatermarkRequest:
 
 
         :return: The text_watermark of this WatermarkRequest.
-        :rtype: TextWatermark
+        :rtype: :class:`huaweicloudsdkmpc.v1.TextWatermark`
         """
         return self._text_watermark
 
@@ -160,7 +173,7 @@ class WatermarkRequest:
 
 
         :param text_watermark: The text_watermark of this WatermarkRequest.
-        :type: TextWatermark
+        :type text_watermark: :class:`huaweicloudsdkmpc.v1.TextWatermark`
         """
         self._text_watermark = text_watermark
 

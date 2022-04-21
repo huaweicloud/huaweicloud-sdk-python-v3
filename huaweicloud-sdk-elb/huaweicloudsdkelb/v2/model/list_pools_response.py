@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPoolsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListPoolsResponse(SdkResponse):
     }
 
     def __init__(self, pools=None):
-        """ListPoolsResponse - a model defined in huaweicloud sdk"""
+        """ListPoolsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param pools: 后端云服务器对象组列表
+        :type pools: list[:class:`huaweicloudsdkelb.v2.PoolResp`]
+        """
         
         super(ListPoolsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListPoolsResponse(SdkResponse):
         后端云服务器对象组列表
 
         :return: The pools of this ListPoolsResponse.
-        :rtype: list[PoolResp]
+        :rtype: list[:class:`huaweicloudsdkelb.v2.PoolResp`]
         """
         return self._pools
 
@@ -58,7 +63,7 @@ class ListPoolsResponse(SdkResponse):
         后端云服务器对象组列表
 
         :param pools: The pools of this ListPoolsResponse.
-        :type: list[PoolResp]
+        :type pools: list[:class:`huaweicloudsdkelb.v2.PoolResp`]
         """
         self._pools = pools
 

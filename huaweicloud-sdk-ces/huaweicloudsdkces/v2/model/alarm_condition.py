@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AlarmCondition:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class AlarmCondition:
     }
 
     def __init__(self, period=None, filter=None, comparison_operator=None, value=None, unit=None, count=None, suppress_duration=None):
-        """AlarmCondition - a model defined in huaweicloud sdk"""
+        """AlarmCondition
+
+        The model defined in huaweicloud sdk
+
+        :param period: 告警条件判断周期，单位为秒，支持的值为1，300，1200，3600，14400，86400。说明：当period设置为1时，表示以原始的指标数据判断告警。当alarm_type为（EVENT.SYS| EVENT.CUSTOM）时允许为0。
+        :type period: int
+        :param filter: 聚合方式
+        :type filter: str
+        :param comparison_operator: 阈值符号
+        :type comparison_operator: str
+        :param value: 告警阈值，取值范围[0, Number.MAX_VALUE]，Number.MAX_VALUE值为1.7976931348623157e+108。具体阈值取值请参见附录中各服务监控指标中取值范围，如支持监控的服务列表中ECS的CPU使用率cpu_util取值范围可配置80。
+        :type value: float
+        :param unit: 数据的单位，最大长度为32位。
+        :type unit: str
+        :param count: 次数
+        :type count: int
+        :param suppress_duration: 发送告警的周期，值可为0, 300, 600, 900, 1800, 3600, 10800, 21600, 43200, 86400；0表示只告警一次，300表示每5分钟告警一次，600表示每10分钟告警一次，900表示每15分钟告警一次，1800表示每30分钟告警一次，3600表示每1小时告警一次，10800表示每3小时告警一次，21600表示每6小时告警一次，43200表示每12小时告警一次，86400表示每1天告警一次。
+        :type suppress_duration: int
+        """
         
         
 
@@ -83,7 +100,7 @@ class AlarmCondition:
         告警条件判断周期，单位为秒，支持的值为1，300，1200，3600，14400，86400。说明：当period设置为1时，表示以原始的指标数据判断告警。当alarm_type为（EVENT.SYS| EVENT.CUSTOM）时允许为0。
 
         :param period: The period of this AlarmCondition.
-        :type: int
+        :type period: int
         """
         self._period = period
 
@@ -105,7 +122,7 @@ class AlarmCondition:
         聚合方式
 
         :param filter: The filter of this AlarmCondition.
-        :type: str
+        :type filter: str
         """
         self._filter = filter
 
@@ -127,7 +144,7 @@ class AlarmCondition:
         阈值符号
 
         :param comparison_operator: The comparison_operator of this AlarmCondition.
-        :type: str
+        :type comparison_operator: str
         """
         self._comparison_operator = comparison_operator
 
@@ -149,7 +166,7 @@ class AlarmCondition:
         告警阈值，取值范围[0, Number.MAX_VALUE]，Number.MAX_VALUE值为1.7976931348623157e+108。具体阈值取值请参见附录中各服务监控指标中取值范围，如支持监控的服务列表中ECS的CPU使用率cpu_util取值范围可配置80。
 
         :param value: The value of this AlarmCondition.
-        :type: float
+        :type value: float
         """
         self._value = value
 
@@ -171,7 +188,7 @@ class AlarmCondition:
         数据的单位，最大长度为32位。
 
         :param unit: The unit of this AlarmCondition.
-        :type: str
+        :type unit: str
         """
         self._unit = unit
 
@@ -193,7 +210,7 @@ class AlarmCondition:
         次数
 
         :param count: The count of this AlarmCondition.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -215,7 +232,7 @@ class AlarmCondition:
         发送告警的周期，值可为0, 300, 600, 900, 1800, 3600, 10800, 21600, 43200, 86400；0表示只告警一次，300表示每5分钟告警一次，600表示每10分钟告警一次，900表示每15分钟告警一次，1800表示每30分钟告警一次，3600表示每1小时告警一次，10800表示每3小时告警一次，21600表示每6小时告警一次，43200表示每12小时告警一次，86400表示每1天告警一次。
 
         :param suppress_duration: The suppress_duration of this AlarmCondition.
-        :type: int
+        :type suppress_duration: int
         """
         self._suppress_duration = suppress_duration
 

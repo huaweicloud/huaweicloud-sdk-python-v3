@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RealTimeNodeStatus:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class RealTimeNodeStatus:
     }
 
     def __init__(self, name=None, status=None, log_path=None, node_type=None):
-        """RealTimeNodeStatus - a model defined in huaweicloud sdk"""
+        """RealTimeNodeStatus
+
+        The model defined in huaweicloud sdk
+
+        :param name: 
+        :type name: str
+        :param status: 
+        :type status: str
+        :param log_path: 
+        :type log_path: str
+        :param node_type: 
+        :type node_type: str
+        """
         
         
 
@@ -71,7 +82,7 @@ class RealTimeNodeStatus:
 
 
         :param name: The name of this RealTimeNodeStatus.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -91,7 +102,7 @@ class RealTimeNodeStatus:
 
 
         :param status: The status of this RealTimeNodeStatus.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -111,7 +122,7 @@ class RealTimeNodeStatus:
 
 
         :param log_path: The log_path of this RealTimeNodeStatus.
-        :type: str
+        :type log_path: str
         """
         self._log_path = log_path
 
@@ -131,7 +142,7 @@ class RealTimeNodeStatus:
 
 
         :param node_type: The node_type of this RealTimeNodeStatus.
-        :type: str
+        :type node_type: str
         """
         self._node_type = node_type
 

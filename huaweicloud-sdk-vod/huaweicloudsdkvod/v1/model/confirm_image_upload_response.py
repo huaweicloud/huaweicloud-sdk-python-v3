@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ConfirmImageUploadResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ConfirmImageUploadResponse(SdkResponse):
     }
 
     def __init__(self, id=None, image_url=None):
-        """ConfirmImageUploadResponse - a model defined in huaweicloud sdk"""
+        """ConfirmImageUploadResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 水印配置模板id&lt;br/&gt; 
+        :type id: str
+        :param image_url: 水印图片的下载url&lt;br/&gt; 
+        :type image_url: str
+        """
         
         super(ConfirmImageUploadResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ConfirmImageUploadResponse(SdkResponse):
         水印配置模板id<br/> 
 
         :param id: The id of this ConfirmImageUploadResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -85,7 +92,7 @@ class ConfirmImageUploadResponse(SdkResponse):
         水印图片的下载url<br/> 
 
         :param image_url: The image_url of this ConfirmImageUploadResponse.
-        :type: str
+        :type image_url: str
         """
         self._image_url = image_url
 

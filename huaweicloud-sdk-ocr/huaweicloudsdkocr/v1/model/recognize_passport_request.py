@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RecognizePassportRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RecognizePassportRequest:
     }
 
     def __init__(self, body=None):
-        """RecognizePassportRequest - a model defined in huaweicloud sdk"""
+        """RecognizePassportRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the RecognizePassportRequest
+        :type body: :class:`huaweicloudsdkocr.v1.PassportRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class RecognizePassportRequest:
 
 
         :return: The body of this RecognizePassportRequest.
-        :rtype: PassportRequestBody
+        :rtype: :class:`huaweicloudsdkocr.v1.PassportRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class RecognizePassportRequest:
 
 
         :param body: The body of this RecognizePassportRequest.
-        :type: PassportRequestBody
+        :type body: :class:`huaweicloudsdkocr.v1.PassportRequestBody`
         """
         self._body = body
 

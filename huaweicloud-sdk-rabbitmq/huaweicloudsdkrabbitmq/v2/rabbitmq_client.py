@@ -52,21 +52,17 @@ class RabbitMQClient(Client):
         """批量添加或删除实例标签
 
         批量添加或删除实例标签。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchCreateOrDeleteRabbitMqTagRequest request
-        :return: BatchCreateOrDeleteRabbitMqTagResponse
+        :param request: Request instance for BatchCreateOrDeleteRabbitMqTag
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.BatchCreateOrDeleteRabbitMqTagRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.BatchCreateOrDeleteRabbitMqTagResponse`
         """
         return self.batch_create_or_delete_rabbit_mq_tag_with_http_info(request)
 
     def batch_create_or_delete_rabbit_mq_tag_with_http_info(self, request):
-        """批量添加或删除实例标签
-
-        批量添加或删除实例标签。
-
-        :param BatchCreateOrDeleteRabbitMqTagRequest request
-        :return: BatchCreateOrDeleteRabbitMqTagResponse
-        """
-
         all_params = ['instance_id', 'batch_create_or_delete_rabbit_mq_tag_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -112,26 +108,25 @@ class RabbitMQClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_restart_or_delete_instances(self, request):
         """批量重启或删除实例
 
-        批量重启或删除实例。  在实例重启过程中，客户端的生产与消费消息等请求会被拒绝。  实例删除后，实例中原有的数据将被删除，且没有备份，请谨慎操作。
+        批量重启或删除实例。
+        
+        在实例重启过程中，客户端的生产与消费消息等请求会被拒绝。
+        
+        实例删除后，实例中原有的数据将被删除，且没有备份，请谨慎操作。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchRestartOrDeleteInstancesRequest request
-        :return: BatchRestartOrDeleteInstancesResponse
+        :param request: Request instance for BatchRestartOrDeleteInstances
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.BatchRestartOrDeleteInstancesRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.BatchRestartOrDeleteInstancesResponse`
         """
         return self.batch_restart_or_delete_instances_with_http_info(request)
 
     def batch_restart_or_delete_instances_with_http_info(self, request):
-        """批量重启或删除实例
-
-        批量重启或删除实例。  在实例重启过程中，客户端的生产与消费消息等请求会被拒绝。  实例删除后，实例中原有的数据将被删除，且没有备份，请谨慎操作。
-
-        :param BatchRestartOrDeleteInstancesRequest request
-        :return: BatchRestartOrDeleteInstancesResponse
-        """
-
         all_params = ['batch_restart_or_delete_instances_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -175,26 +170,21 @@ class RabbitMQClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_post_paid_instance(self, request):
         """创建实例(按需)
 
         创建实例，该接口创建的实例为按需计费的方式。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreatePostPaidInstanceRequest request
-        :return: CreatePostPaidInstanceResponse
+        :param request: Request instance for CreatePostPaidInstance
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.CreatePostPaidInstanceRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.CreatePostPaidInstanceResponse`
         """
         return self.create_post_paid_instance_with_http_info(request)
 
     def create_post_paid_instance_with_http_info(self, request):
-        """创建实例(按需)
-
-        创建实例，该接口创建的实例为按需计费的方式。
-
-        :param CreatePostPaidInstanceRequest request
-        :return: CreatePostPaidInstanceResponse
-        """
-
         all_params = ['create_post_paid_instance_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -238,26 +228,21 @@ class RabbitMQClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_background_task(self, request):
         """删除后台任务管理中的指定记录
 
         删除后台任务管理中的指定记录。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteBackgroundTaskRequest request
-        :return: DeleteBackgroundTaskResponse
+        :param request: Request instance for DeleteBackgroundTask
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.DeleteBackgroundTaskRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.DeleteBackgroundTaskResponse`
         """
         return self.delete_background_task_with_http_info(request)
 
     def delete_background_task_with_http_info(self, request):
-        """删除后台任务管理中的指定记录
-
-        删除后台任务管理中的指定记录。
-
-        :param DeleteBackgroundTaskRequest request
-        :return: DeleteBackgroundTaskResponse
-        """
-
         all_params = ['instance_id', 'task_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -303,26 +288,21 @@ class RabbitMQClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_instance(self, request):
         """删除指定的实例
 
         删除指定的实例，释放该实例的所有资源。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteInstanceRequest request
-        :return: DeleteInstanceResponse
+        :param request: Request instance for DeleteInstance
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.DeleteInstanceRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.DeleteInstanceResponse`
         """
         return self.delete_instance_with_http_info(request)
 
     def delete_instance_with_http_info(self, request):
-        """删除指定的实例
-
-        删除指定的实例，释放该实例的所有资源。
-
-        :param DeleteInstanceRequest request
-        :return: DeleteInstanceResponse
-        """
-
         all_params = ['instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -366,26 +346,21 @@ class RabbitMQClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_available_zones(self, request):
         """查询可用区信息
 
         在创建实例时，需要配置实例所在的可用区ID，可通过该接口查询可用区的ID。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListAvailableZonesRequest request
-        :return: ListAvailableZonesResponse
+        :param request: Request instance for ListAvailableZones
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.ListAvailableZonesRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.ListAvailableZonesResponse`
         """
         return self.list_available_zones_with_http_info(request)
 
     def list_available_zones_with_http_info(self, request):
-        """查询可用区信息
-
-        在创建实例时，需要配置实例所在的可用区ID，可通过该接口查询可用区的ID。
-
-        :param ListAvailableZonesRequest request
-        :return: ListAvailableZonesResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -427,26 +402,21 @@ class RabbitMQClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_background_tasks(self, request):
         """查询实例的后台任务列表
 
         查询实例的后台任务列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListBackgroundTasksRequest request
-        :return: ListBackgroundTasksResponse
+        :param request: Request instance for ListBackgroundTasks
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.ListBackgroundTasksRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.ListBackgroundTasksResponse`
         """
         return self.list_background_tasks_with_http_info(request)
 
     def list_background_tasks_with_http_info(self, request):
-        """查询实例的后台任务列表
-
-        查询实例的后台任务列表。
-
-        :param ListBackgroundTasksRequest request
-        :return: ListBackgroundTasksResponse
-        """
-
         all_params = ['instance_id', 'start', 'limit', 'begin_time', 'end_time']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -498,26 +468,21 @@ class RabbitMQClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_engine_products(self, request):
         """查询产品规格列表
 
         查询产品规格列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListEngineProductsRequest request
-        :return: ListEngineProductsResponse
+        :param request: Request instance for ListEngineProducts
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.ListEngineProductsRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.ListEngineProductsResponse`
         """
         return self.list_engine_products_with_http_info(request)
 
     def list_engine_products_with_http_info(self, request):
-        """查询产品规格列表
-
-        查询产品规格列表。
-
-        :param ListEngineProductsRequest request
-        :return: ListEngineProductsResponse
-        """
-
         all_params = ['engine', 'product_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -563,26 +528,21 @@ class RabbitMQClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_instances_details(self, request):
         """查询所有实例列表
 
         查询租户的实例列表，支持按照条件查询。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListInstancesDetailsRequest request
-        :return: ListInstancesDetailsResponse
+        :param request: Request instance for ListInstancesDetails
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.ListInstancesDetailsRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.ListInstancesDetailsResponse`
         """
         return self.list_instances_details_with_http_info(request)
 
     def list_instances_details_with_http_info(self, request):
-        """查询所有实例列表
-
-        查询租户的实例列表，支持按照条件查询。
-
-        :param ListInstancesDetailsRequest request
-        :return: ListInstancesDetailsResponse
-        """
-
         all_params = ['engine', 'name', 'instance_id', 'status', 'include_failure', 'exact_match_name', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -638,26 +598,21 @@ class RabbitMQClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_plugins(self, request):
         """查询插件列表
 
         查询插件列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListPluginsRequest request
-        :return: ListPluginsResponse
+        :param request: Request instance for ListPlugins
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.ListPluginsRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.ListPluginsResponse`
         """
         return self.list_plugins_with_http_info(request)
 
     def list_plugins_with_http_info(self, request):
-        """查询插件列表
-
-        查询插件列表。
-
-        :param ListPluginsRequest request
-        :return: ListPluginsResponse
-        """
-
         all_params = ['instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -701,26 +656,21 @@ class RabbitMQClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_products(self, request):
         """查询产品规格列表
 
         在创建实例时，需要配置订购的产品ID（即product_id），可通过该接口查询产品规格。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListProductsRequest request
-        :return: ListProductsResponse
+        :param request: Request instance for ListProducts
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.ListProductsRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.ListProductsResponse`
         """
         return self.list_products_with_http_info(request)
 
     def list_products_with_http_info(self, request):
-        """查询产品规格列表
-
-        在创建实例时，需要配置订购的产品ID（即product_id），可通过该接口查询产品规格。
-
-        :param ListProductsRequest request
-        :return: ListProductsResponse
-        """
-
         all_params = ['engine']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -764,26 +714,21 @@ class RabbitMQClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def reset_password(self, request):
         """重置密码
 
         重置密码。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ResetPasswordRequest request
-        :return: ResetPasswordResponse
+        :param request: Request instance for ResetPassword
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.ResetPasswordRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.ResetPasswordResponse`
         """
         return self.reset_password_with_http_info(request)
 
     def reset_password_with_http_info(self, request):
-        """重置密码
-
-        重置密码。
-
-        :param ResetPasswordRequest request
-        :return: ResetPasswordResponse
-        """
-
         all_params = ['instance_id', 'reset_password_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -829,26 +774,23 @@ class RabbitMQClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def resize_instance(self, request):
         """实例规格变更
 
-        实例规格变更。  [**当前通过调用API，只支持按需实例进行实例规格变更。**](tag:hws,ctc)
+        实例规格变更。
+        
+        [**当前通过调用API，只支持按需实例进行实例规格变更。**](tag:hws,ctc)
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ResizeInstanceRequest request
-        :return: ResizeInstanceResponse
+        :param request: Request instance for ResizeInstance
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.ResizeInstanceRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.ResizeInstanceResponse`
         """
         return self.resize_instance_with_http_info(request)
 
     def resize_instance_with_http_info(self, request):
-        """实例规格变更
-
-        实例规格变更。  [**当前通过调用API，只支持按需实例进行实例规格变更。**](tag:hws,ctc)
-
-        :param ResizeInstanceRequest request
-        :return: ResizeInstanceResponse
-        """
-
         all_params = ['instance_id', 'resize_instance_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -894,26 +836,21 @@ class RabbitMQClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_background_task(self, request):
         """查询后台任务管理中的指定记录
 
         查询后台任务管理中的指定记录。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowBackgroundTaskRequest request
-        :return: ShowBackgroundTaskResponse
+        :param request: Request instance for ShowBackgroundTask
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.ShowBackgroundTaskRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.ShowBackgroundTaskResponse`
         """
         return self.show_background_task_with_http_info(request)
 
     def show_background_task_with_http_info(self, request):
-        """查询后台任务管理中的指定记录
-
-        查询后台任务管理中的指定记录。
-
-        :param ShowBackgroundTaskRequest request
-        :return: ShowBackgroundTaskResponse
-        """
-
         all_params = ['instance_id', 'task_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -959,26 +896,21 @@ class RabbitMQClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_instance(self, request):
         """查询指定实例
 
         查询指定实例的详细信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowInstanceRequest request
-        :return: ShowInstanceResponse
+        :param request: Request instance for ShowInstance
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.ShowInstanceRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.ShowInstanceResponse`
         """
         return self.show_instance_with_http_info(request)
 
     def show_instance_with_http_info(self, request):
-        """查询指定实例
-
-        查询指定实例的详细信息。
-
-        :param ShowInstanceRequest request
-        :return: ShowInstanceResponse
-        """
-
         all_params = ['instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1022,26 +954,23 @@ class RabbitMQClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_instance_extend_product_info(self, request):
         """查询可扩容规格列表
 
-        查询可扩容规格列表。  RabbtiMQ只支持只增加节点数的扩容方式。
+        查询可扩容规格列表。
+        
+        RabbtiMQ只支持只增加节点数的扩容方式。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowInstanceExtendProductInfoRequest request
-        :return: ShowInstanceExtendProductInfoResponse
+        :param request: Request instance for ShowInstanceExtendProductInfo
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.ShowInstanceExtendProductInfoRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.ShowInstanceExtendProductInfoResponse`
         """
         return self.show_instance_extend_product_info_with_http_info(request)
 
     def show_instance_extend_product_info_with_http_info(self, request):
-        """查询可扩容规格列表
-
-        查询可扩容规格列表。  RabbtiMQ只支持只增加节点数的扩容方式。
-
-        :param ShowInstanceExtendProductInfoRequest request
-        :return: ShowInstanceExtendProductInfoResponse
-        """
-
         all_params = ['instance_id', 'type', 'engine']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1089,26 +1018,21 @@ class RabbitMQClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_maintain_windows(self, request):
         """查询维护时间窗时间段
 
         查询维护时间窗开始时间和结束时间。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowMaintainWindowsRequest request
-        :return: ShowMaintainWindowsResponse
+        :param request: Request instance for ShowMaintainWindows
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.ShowMaintainWindowsRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.ShowMaintainWindowsResponse`
         """
         return self.show_maintain_windows_with_http_info(request)
 
     def show_maintain_windows_with_http_info(self, request):
-        """查询维护时间窗时间段
-
-        查询维护时间窗开始时间和结束时间。
-
-        :param ShowMaintainWindowsRequest request
-        :return: ShowMaintainWindowsResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1150,26 +1074,21 @@ class RabbitMQClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_rabbit_mq_project_tags(self, request):
         """查询项目标签
 
         查询项目标签。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowRabbitMqProjectTagsRequest request
-        :return: ShowRabbitMqProjectTagsResponse
+        :param request: Request instance for ShowRabbitMqProjectTags
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.ShowRabbitMqProjectTagsRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.ShowRabbitMqProjectTagsResponse`
         """
         return self.show_rabbit_mq_project_tags_with_http_info(request)
 
     def show_rabbit_mq_project_tags_with_http_info(self, request):
-        """查询项目标签
-
-        查询项目标签。
-
-        :param ShowRabbitMqProjectTagsRequest request
-        :return: ShowRabbitMqProjectTagsResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1211,26 +1130,21 @@ class RabbitMQClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_rabbit_mq_tags(self, request):
         """查询实例标签
 
         查询实例标签。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowRabbitMqTagsRequest request
-        :return: ShowRabbitMqTagsResponse
+        :param request: Request instance for ShowRabbitMqTags
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.ShowRabbitMqTagsRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.ShowRabbitMqTagsResponse`
         """
         return self.show_rabbit_mq_tags_with_http_info(request)
 
     def show_rabbit_mq_tags_with_http_info(self, request):
-        """查询实例标签
-
-        查询实例标签。
-
-        :param ShowRabbitMqTagsRequest request
-        :return: ShowRabbitMqTagsResponse
-        """
-
         all_params = ['instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1274,26 +1188,21 @@ class RabbitMQClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_instance(self, request):
         """修改实例信息
 
         修改实例的名称和描述信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateInstanceRequest request
-        :return: UpdateInstanceResponse
+        :param request: Request instance for UpdateInstance
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.UpdateInstanceRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.UpdateInstanceResponse`
         """
         return self.update_instance_with_http_info(request)
 
     def update_instance_with_http_info(self, request):
-        """修改实例信息
-
-        修改实例的名称和描述信息。
-
-        :param UpdateInstanceRequest request
-        :return: UpdateInstanceResponse
-        """
-
         all_params = ['instance_id', 'update_instance_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1339,26 +1248,21 @@ class RabbitMQClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_plugins(self, request):
         """开启或关闭插件
 
         开启或关闭插件。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdatePluginsRequest request
-        :return: UpdatePluginsResponse
+        :param request: Request instance for UpdatePlugins
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.UpdatePluginsRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.UpdatePluginsResponse`
         """
         return self.update_plugins_with_http_info(request)
 
     def update_plugins_with_http_info(self, request):
-        """开启或关闭插件
-
-        开启或关闭插件。
-
-        :param UpdatePluginsRequest request
-        :return: UpdatePluginsResponse
-        """
-
         all_params = ['instance_id', 'update_plugins_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1403,7 +1307,6 @@ class RabbitMQClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

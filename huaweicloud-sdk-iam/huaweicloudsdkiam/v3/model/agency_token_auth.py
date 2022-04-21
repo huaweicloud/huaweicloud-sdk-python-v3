@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AgencyTokenAuth:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AgencyTokenAuth:
     }
 
     def __init__(self, identity=None, scope=None):
-        """AgencyTokenAuth - a model defined in huaweicloud sdk"""
+        """AgencyTokenAuth
+
+        The model defined in huaweicloud sdk
+
+        :param identity: 
+        :type identity: :class:`huaweicloudsdkiam.v3.AgencyTokenIdentity`
+        :param scope: 
+        :type scope: :class:`huaweicloudsdkiam.v3.AgencyTokenScope`
+        """
         
         
 
@@ -49,7 +56,7 @@ class AgencyTokenAuth:
 
 
         :return: The identity of this AgencyTokenAuth.
-        :rtype: AgencyTokenIdentity
+        :rtype: :class:`huaweicloudsdkiam.v3.AgencyTokenIdentity`
         """
         return self._identity
 
@@ -59,7 +66,7 @@ class AgencyTokenAuth:
 
 
         :param identity: The identity of this AgencyTokenAuth.
-        :type: AgencyTokenIdentity
+        :type identity: :class:`huaweicloudsdkiam.v3.AgencyTokenIdentity`
         """
         self._identity = identity
 
@@ -69,7 +76,7 @@ class AgencyTokenAuth:
 
 
         :return: The scope of this AgencyTokenAuth.
-        :rtype: AgencyTokenScope
+        :rtype: :class:`huaweicloudsdkiam.v3.AgencyTokenScope`
         """
         return self._scope
 
@@ -79,7 +86,7 @@ class AgencyTokenAuth:
 
 
         :param scope: The scope of this AgencyTokenAuth.
-        :type: AgencyTokenScope
+        :type scope: :class:`huaweicloudsdkiam.v3.AgencyTokenScope`
         """
         self._scope = scope
 

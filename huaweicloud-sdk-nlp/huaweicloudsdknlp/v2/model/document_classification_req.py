@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DocumentClassificationReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DocumentClassificationReq:
     }
 
     def __init__(self, content=None, lang=None):
-        """DocumentClassificationReq - a model defined in huaweicloud sdk"""
+        """DocumentClassificationReq
+
+        The model defined in huaweicloud sdk
+
+        :param content: 输入的文档，最大长度10000, 长度超过10000字符截取前10000个字符。
+        :type content: str
+        :param lang: 预留字段，支持的文本语言类型，当前只支持zh（中文），默认zh。
+        :type lang: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class DocumentClassificationReq:
         输入的文档，最大长度10000, 长度超过10000字符截取前10000个字符。
 
         :param content: The content of this DocumentClassificationReq.
-        :type: str
+        :type content: str
         """
         self._content = content
 
@@ -84,7 +91,7 @@ class DocumentClassificationReq:
         预留字段，支持的文本语言类型，当前只支持zh（中文），默认zh。
 
         :param lang: The lang of this DocumentClassificationReq.
-        :type: str
+        :type lang: str
         """
         self._lang = lang
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NeutronUpdateFirewallPolicyOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class NeutronUpdateFirewallPolicyOption:
     }
 
     def __init__(self, name=None, description=None, firewall_rules=None, audited=None):
-        """NeutronUpdateFirewallPolicyOption - a model defined in huaweicloud sdk"""
+        """NeutronUpdateFirewallPolicyOption
+
+        The model defined in huaweicloud sdk
+
+        :param name: 功能说明：网络ACL防火墙策略名称 取值范围：最长255个字符
+        :type name: str
+        :param description: 功能说明：网络ACL防火墙策略描述 取值范围：最长255个字符
+        :type description: str
+        :param firewall_rules: 功能说明：网络ACL策略关联的规则列表
+        :type firewall_rules: list[str]
+        :param audited: 审计标记。
+        :type audited: bool
+        """
         
         
 
@@ -73,7 +84,7 @@ class NeutronUpdateFirewallPolicyOption:
         功能说明：网络ACL防火墙策略名称 取值范围：最长255个字符
 
         :param name: The name of this NeutronUpdateFirewallPolicyOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -95,7 +106,7 @@ class NeutronUpdateFirewallPolicyOption:
         功能说明：网络ACL防火墙策略描述 取值范围：最长255个字符
 
         :param description: The description of this NeutronUpdateFirewallPolicyOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -117,7 +128,7 @@ class NeutronUpdateFirewallPolicyOption:
         功能说明：网络ACL策略关联的规则列表
 
         :param firewall_rules: The firewall_rules of this NeutronUpdateFirewallPolicyOption.
-        :type: list[str]
+        :type firewall_rules: list[str]
         """
         self._firewall_rules = firewall_rules
 
@@ -139,7 +150,7 @@ class NeutronUpdateFirewallPolicyOption:
         审计标记。
 
         :param audited: The audited of this NeutronUpdateFirewallPolicyOption.
-        :type: bool
+        :type audited: bool
         """
         self._audited = audited
 

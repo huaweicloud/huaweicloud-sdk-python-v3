@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SubTaskStatus:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class SubTaskStatus:
     }
 
     def __init__(self, id=None, name=None, start_time=None, end_time=None, last_update=None, status=None):
-        """SubTaskStatus - a model defined in huaweicloud sdk"""
+        """SubTaskStatus
+
+        The model defined in huaweicloud sdk
+
+        :param id: 
+        :type id: str
+        :param name: 
+        :type name: str
+        :param start_time: 
+        :type start_time: str
+        :param end_time: 
+        :type end_time: str
+        :param last_update: 
+        :type last_update: str
+        :param status: 
+        :type status: str
+        """
         
         
 
@@ -81,7 +96,7 @@ class SubTaskStatus:
 
 
         :param id: The id of this SubTaskStatus.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -101,7 +116,7 @@ class SubTaskStatus:
 
 
         :param name: The name of this SubTaskStatus.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -121,7 +136,7 @@ class SubTaskStatus:
 
 
         :param start_time: The start_time of this SubTaskStatus.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -141,7 +156,7 @@ class SubTaskStatus:
 
 
         :param end_time: The end_time of this SubTaskStatus.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -161,7 +176,7 @@ class SubTaskStatus:
 
 
         :param last_update: The last_update of this SubTaskStatus.
-        :type: str
+        :type last_update: str
         """
         self._last_update = last_update
 
@@ -181,7 +196,7 @@ class SubTaskStatus:
 
 
         :param status: The status of this SubTaskStatus.
-        :type: str
+        :type status: str
         """
         self._status = status
 

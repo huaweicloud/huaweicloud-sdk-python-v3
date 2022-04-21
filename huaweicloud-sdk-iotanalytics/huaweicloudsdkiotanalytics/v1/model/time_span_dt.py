@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TimeSpanDT:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class TimeSpanDT:
     }
 
     def __init__(self, _from=None, to=None):
-        """TimeSpanDT - a model defined in huaweicloud sdk"""
+        """TimeSpanDT
+
+        The model defined in huaweicloud sdk
+
+        :param _from: 起始时间, 使用UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS&#39;Z&#39;,示例：2021-02-01T00:00:00.123Z
+        :type _from: str
+        :param to: 结束时间，使用UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS&#39;Z&#39;,示例：2021-02-01T00:00:00.123Z
+        :type to: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class TimeSpanDT:
         起始时间, 使用UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss.SSS'Z',示例：2021-02-01T00:00:00.123Z
 
         :param _from: The _from of this TimeSpanDT.
-        :type: str
+        :type _from: str
         """
         self.__from = _from
 
@@ -85,7 +92,7 @@ class TimeSpanDT:
         结束时间，使用UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss.SSS'Z',示例：2021-02-01T00:00:00.123Z
 
         :param to: The to of this TimeSpanDT.
-        :type: str
+        :type to: str
         """
         self._to = to
 

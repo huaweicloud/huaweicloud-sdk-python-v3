@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SourceWithPort:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class SourceWithPort:
     }
 
     def __init__(self, ip_or_domain=None, origin_type=None, active_standby=None, enable_obs_web_hosting=None, http_port=None, https_port=None):
-        """SourceWithPort - a model defined in huaweicloud sdk"""
+        """SourceWithPort
+
+        The model defined in huaweicloud sdk
+
+        :param ip_or_domain: 源站IP（非内网IP）或者域名。
+        :type ip_or_domain: str
+        :param origin_type: 源站类型（\&quot;ipaddr\&quot;： \&quot;IP源站\&quot;；\&quot;domain\&quot;： \&quot;域名源站\&quot;；\&quot;obs_bucket\&quot;： \&quot;OBS Bucket源站\&quot;）
+        :type origin_type: str
+        :param active_standby: 主备状态（1代表主站；0代表备站）；主源站必须存在，备源站可选。
+        :type active_standby: int
+        :param enable_obs_web_hosting: 是否开启Obs静态网站托管(0表示关闭,1表示则为开启)，源站类型为obs_bucket时传递。
+        :type enable_obs_web_hosting: int
+        :param http_port: HTTP端口，默认80
+        :type http_port: int
+        :param https_port: HTTPS端口，默认443
+        :type https_port: int
+        """
         
         
 
@@ -80,7 +95,7 @@ class SourceWithPort:
         源站IP（非内网IP）或者域名。
 
         :param ip_or_domain: The ip_or_domain of this SourceWithPort.
-        :type: str
+        :type ip_or_domain: str
         """
         self._ip_or_domain = ip_or_domain
 
@@ -102,7 +117,7 @@ class SourceWithPort:
         源站类型（\"ipaddr\"： \"IP源站\"；\"domain\"： \"域名源站\"；\"obs_bucket\"： \"OBS Bucket源站\"）
 
         :param origin_type: The origin_type of this SourceWithPort.
-        :type: str
+        :type origin_type: str
         """
         self._origin_type = origin_type
 
@@ -124,7 +139,7 @@ class SourceWithPort:
         主备状态（1代表主站；0代表备站）；主源站必须存在，备源站可选。
 
         :param active_standby: The active_standby of this SourceWithPort.
-        :type: int
+        :type active_standby: int
         """
         self._active_standby = active_standby
 
@@ -146,7 +161,7 @@ class SourceWithPort:
         是否开启Obs静态网站托管(0表示关闭,1表示则为开启)，源站类型为obs_bucket时传递。
 
         :param enable_obs_web_hosting: The enable_obs_web_hosting of this SourceWithPort.
-        :type: int
+        :type enable_obs_web_hosting: int
         """
         self._enable_obs_web_hosting = enable_obs_web_hosting
 
@@ -168,7 +183,7 @@ class SourceWithPort:
         HTTP端口，默认80
 
         :param http_port: The http_port of this SourceWithPort.
-        :type: int
+        :type http_port: int
         """
         self._http_port = http_port
 
@@ -190,7 +205,7 @@ class SourceWithPort:
         HTTPS端口，默认443
 
         :param https_port: The https_port of this SourceWithPort.
-        :type: int
+        :type https_port: int
         """
         self._https_port = https_port
 

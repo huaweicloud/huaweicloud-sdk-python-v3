@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EnableConfigurationResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class EnableConfigurationResponse(SdkResponse):
     }
 
     def __init__(self, configuration_id=None, configuration_name=None, success=None, apply_results=None):
-        """EnableConfigurationResponse - a model defined in huaweicloud sdk"""
+        """EnableConfigurationResponse
+
+        The model defined in huaweicloud sdk
+
+        :param configuration_id: 参数组ID。
+        :type configuration_id: str
+        :param configuration_name: 参数组名称。
+        :type configuration_name: str
+        :param success: 参数模板是否都应用成功。  - “true”表示参数模板都应用成功。 - “false”表示存在应用失败的参数模板。
+        :type success: bool
+        :param apply_results: 对每个实例的应用结果。
+        :type apply_results: list[:class:`huaweicloudsdkrds.v3.ApplyConfigurationResponseApplyResults`]
+        """
         
         super(EnableConfigurationResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class EnableConfigurationResponse(SdkResponse):
         参数组ID。
 
         :param configuration_id: The configuration_id of this EnableConfigurationResponse.
-        :type: str
+        :type configuration_id: str
         """
         self._configuration_id = configuration_id
 
@@ -95,7 +106,7 @@ class EnableConfigurationResponse(SdkResponse):
         参数组名称。
 
         :param configuration_name: The configuration_name of this EnableConfigurationResponse.
-        :type: str
+        :type configuration_name: str
         """
         self._configuration_name = configuration_name
 
@@ -117,7 +128,7 @@ class EnableConfigurationResponse(SdkResponse):
         参数模板是否都应用成功。  - “true”表示参数模板都应用成功。 - “false”表示存在应用失败的参数模板。
 
         :param success: The success of this EnableConfigurationResponse.
-        :type: bool
+        :type success: bool
         """
         self._success = success
 
@@ -128,7 +139,7 @@ class EnableConfigurationResponse(SdkResponse):
         对每个实例的应用结果。
 
         :return: The apply_results of this EnableConfigurationResponse.
-        :rtype: list[ApplyConfigurationResponseApplyResults]
+        :rtype: list[:class:`huaweicloudsdkrds.v3.ApplyConfigurationResponseApplyResults`]
         """
         return self._apply_results
 
@@ -139,7 +150,7 @@ class EnableConfigurationResponse(SdkResponse):
         对每个实例的应用结果。
 
         :param apply_results: The apply_results of this EnableConfigurationResponse.
-        :type: list[ApplyConfigurationResponseApplyResults]
+        :type apply_results: list[:class:`huaweicloudsdkrds.v3.ApplyConfigurationResponseApplyResults`]
         """
         self._apply_results = apply_results
 

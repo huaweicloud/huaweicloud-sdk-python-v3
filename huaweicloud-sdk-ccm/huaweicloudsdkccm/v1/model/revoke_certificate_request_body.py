@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RevokeCertificateRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RevokeCertificateRequestBody:
     }
 
     def __init__(self, reason=None):
-        """RevokeCertificateRequestBody - a model defined in huaweicloud sdk"""
+        """RevokeCertificateRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param reason: 吊销理由。 &gt; 当不想填写吊销理由时，请求body体请置为\&quot;{}\&quot;，否则将会报错。
+        :type reason: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class RevokeCertificateRequestBody:
         吊销理由。 > 当不想填写吊销理由时，请求body体请置为\"{}\"，否则将会报错。
 
         :param reason: The reason of this RevokeCertificateRequestBody.
-        :type: str
+        :type reason: str
         """
         self._reason = reason
 

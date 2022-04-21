@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VaultAssociate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class VaultAssociate:
     }
 
     def __init__(self, destination_vault_id=None, policy_id=None, add_policy_ids=None):
-        """VaultAssociate - a model defined in huaweicloud sdk"""
+        """VaultAssociate
+
+        The model defined in huaweicloud sdk
+
+        :param destination_vault_id: 目标vault ID , 只有设置复制策略时使用，而且必传
+        :type destination_vault_id: str
+        :param policy_id: 策略ID。policy_id字段与add_policy_ids字段在一次请求中有且只有一个。
+        :type policy_id: str
+        :param add_policy_ids: 多策略场景下，绑定新策略的id列表。policy_id字段与add_policy_ids字段在一次请求中有且只有一个。
+        :type add_policy_ids: list[str]
+        """
         
         
 
@@ -68,7 +77,7 @@ class VaultAssociate:
         目标vault ID , 只有设置复制策略时使用，而且必传
 
         :param destination_vault_id: The destination_vault_id of this VaultAssociate.
-        :type: str
+        :type destination_vault_id: str
         """
         self._destination_vault_id = destination_vault_id
 
@@ -90,7 +99,7 @@ class VaultAssociate:
         策略ID。policy_id字段与add_policy_ids字段在一次请求中有且只有一个。
 
         :param policy_id: The policy_id of this VaultAssociate.
-        :type: str
+        :type policy_id: str
         """
         self._policy_id = policy_id
 
@@ -112,7 +121,7 @@ class VaultAssociate:
         多策略场景下，绑定新策略的id列表。policy_id字段与add_policy_ids字段在一次请求中有且只有一个。
 
         :param add_policy_ids: The add_policy_ids of this VaultAssociate.
-        :type: list[str]
+        :type add_policy_ids: list[str]
         """
         self._add_policy_ids = add_policy_ids
 

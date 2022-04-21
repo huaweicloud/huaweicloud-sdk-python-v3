@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FlavorInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class FlavorInfo:
     }
 
     def __init__(self, connection=None, cps=None, qps=None, bandwidth=None, lcu=None, https_cps=None):
-        """FlavorInfo - a model defined in huaweicloud sdk"""
+        """FlavorInfo
+
+        The model defined in huaweicloud sdk
+
+        :param connection: 并发数。
+        :type connection: int
+        :param cps: 新建数。
+        :type cps: int
+        :param qps: 7层每秒查询数。
+        :type qps: int
+        :param bandwidth: 带宽。
+        :type bandwidth: int
+        :param lcu: 当前flavor对应的lcu数量。LCU是用来衡量独享型ELB处理性能综合指标，LCU值越大，性能越好。
+        :type lcu: int
+        :param https_cps: https新建连接数。
+        :type https_cps: int
+        """
         
         
 
@@ -81,7 +96,7 @@ class FlavorInfo:
         并发数。
 
         :param connection: The connection of this FlavorInfo.
-        :type: int
+        :type connection: int
         """
         self._connection = connection
 
@@ -103,7 +118,7 @@ class FlavorInfo:
         新建数。
 
         :param cps: The cps of this FlavorInfo.
-        :type: int
+        :type cps: int
         """
         self._cps = cps
 
@@ -125,7 +140,7 @@ class FlavorInfo:
         7层每秒查询数。
 
         :param qps: The qps of this FlavorInfo.
-        :type: int
+        :type qps: int
         """
         self._qps = qps
 
@@ -147,7 +162,7 @@ class FlavorInfo:
         带宽。
 
         :param bandwidth: The bandwidth of this FlavorInfo.
-        :type: int
+        :type bandwidth: int
         """
         self._bandwidth = bandwidth
 
@@ -169,7 +184,7 @@ class FlavorInfo:
         当前flavor对应的lcu数量。LCU是用来衡量独享型ELB处理性能综合指标，LCU值越大，性能越好。
 
         :param lcu: The lcu of this FlavorInfo.
-        :type: int
+        :type lcu: int
         """
         self._lcu = lcu
 
@@ -191,7 +206,7 @@ class FlavorInfo:
         https新建连接数。
 
         :param https_cps: The https_cps of this FlavorInfo.
-        :type: int
+        :type https_cps: int
         """
         self._https_cps = https_cps
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Quota:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class Quota:
     }
 
     def __init__(self, type=None, used=None, quota=None):
-        """Quota - a model defined in huaweicloud sdk"""
+        """Quota
+
+        The model defined in huaweicloud sdk
+
+        :param type: quota资源类型。
+        :type type: str
+        :param used: 已使用的资源个数。
+        :type used: int
+        :param quota: 总资源个数。
+        :type quota: int
+        """
         
         
 
@@ -68,7 +77,7 @@ class Quota:
         quota资源类型。
 
         :param type: The type of this Quota.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -90,7 +99,7 @@ class Quota:
         已使用的资源个数。
 
         :param used: The used of this Quota.
-        :type: int
+        :type used: int
         """
         self._used = used
 
@@ -112,7 +121,7 @@ class Quota:
         总资源个数。
 
         :param quota: The quota of this Quota.
-        :type: int
+        :type quota: int
         """
         self._quota = quota
 

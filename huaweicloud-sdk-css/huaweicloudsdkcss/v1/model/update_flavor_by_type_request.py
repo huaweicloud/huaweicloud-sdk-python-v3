@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateFlavorByTypeRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateFlavorByTypeRequest:
     }
 
     def __init__(self, cluster_id=None, types=None, body=None):
-        """UpdateFlavorByTypeRequest - a model defined in huaweicloud sdk"""
+        """UpdateFlavorByTypeRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 指定待更改的集群ID。
+        :type cluster_id: str
+        :param types: 指定待更改的集群节点类型。
+        :type types: str
+        :param body: Body of the UpdateFlavorByTypeRequest
+        :type body: :class:`huaweicloudsdkcss.v1.UpdateFlavorReq`
+        """
         
         
 
@@ -66,7 +75,7 @@ class UpdateFlavorByTypeRequest:
         指定待更改的集群ID。
 
         :param cluster_id: The cluster_id of this UpdateFlavorByTypeRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -88,7 +97,7 @@ class UpdateFlavorByTypeRequest:
         指定待更改的集群节点类型。
 
         :param types: The types of this UpdateFlavorByTypeRequest.
-        :type: str
+        :type types: str
         """
         self._types = types
 
@@ -98,7 +107,7 @@ class UpdateFlavorByTypeRequest:
 
 
         :return: The body of this UpdateFlavorByTypeRequest.
-        :rtype: UpdateFlavorReq
+        :rtype: :class:`huaweicloudsdkcss.v1.UpdateFlavorReq`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class UpdateFlavorByTypeRequest:
 
 
         :param body: The body of this UpdateFlavorByTypeRequest.
-        :type: UpdateFlavorReq
+        :type body: :class:`huaweicloudsdkcss.v1.UpdateFlavorReq`
         """
         self._body = body
 

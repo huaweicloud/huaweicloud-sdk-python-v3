@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OpenGaussExpandCluster:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class OpenGaussExpandCluster:
     }
 
     def __init__(self, coordinators=None, shard=None):
-        """OpenGaussExpandCluster - a model defined in huaweicloud sdk"""
+        """OpenGaussExpandCluster
+
+        The model defined in huaweicloud sdk
+
+        :param coordinators: CN横向扩容时必填
+        :type coordinators: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussCoordinators`]
+        :param shard: 
+        :type shard: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussShard`
+        """
         
         
 
@@ -52,7 +59,7 @@ class OpenGaussExpandCluster:
         CN横向扩容时必填
 
         :return: The coordinators of this OpenGaussExpandCluster.
-        :rtype: list[OpenGaussCoordinators]
+        :rtype: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussCoordinators`]
         """
         return self._coordinators
 
@@ -63,7 +70,7 @@ class OpenGaussExpandCluster:
         CN横向扩容时必填
 
         :param coordinators: The coordinators of this OpenGaussExpandCluster.
-        :type: list[OpenGaussCoordinators]
+        :type coordinators: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussCoordinators`]
         """
         self._coordinators = coordinators
 
@@ -73,7 +80,7 @@ class OpenGaussExpandCluster:
 
 
         :return: The shard of this OpenGaussExpandCluster.
-        :rtype: OpenGaussShard
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussShard`
         """
         return self._shard
 
@@ -83,7 +90,7 @@ class OpenGaussExpandCluster:
 
 
         :param shard: The shard of this OpenGaussExpandCluster.
-        :type: OpenGaussShard
+        :type shard: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussShard`
         """
         self._shard = shard
 

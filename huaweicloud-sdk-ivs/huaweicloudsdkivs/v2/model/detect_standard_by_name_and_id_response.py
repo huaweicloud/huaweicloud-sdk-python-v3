@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DetectStandardByNameAndIdResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DetectStandardByNameAndIdResponse(SdkResponse):
     }
 
     def __init__(self, meta=None, result=None):
-        """DetectStandardByNameAndIdResponse - a model defined in huaweicloud sdk"""
+        """DetectStandardByNameAndIdResponse
+
+        The model defined in huaweicloud sdk
+
+        :param meta: 
+        :type meta: :class:`huaweicloudsdkivs.v2.Meta`
+        :param result: 
+        :type result: :class:`huaweicloudsdkivs.v2.IvsStandardByNameAndIdResponseBodyResult`
+        """
         
         super(DetectStandardByNameAndIdResponse, self).__init__()
 
@@ -51,7 +58,7 @@ class DetectStandardByNameAndIdResponse(SdkResponse):
 
 
         :return: The meta of this DetectStandardByNameAndIdResponse.
-        :rtype: Meta
+        :rtype: :class:`huaweicloudsdkivs.v2.Meta`
         """
         return self._meta
 
@@ -61,7 +68,7 @@ class DetectStandardByNameAndIdResponse(SdkResponse):
 
 
         :param meta: The meta of this DetectStandardByNameAndIdResponse.
-        :type: Meta
+        :type meta: :class:`huaweicloudsdkivs.v2.Meta`
         """
         self._meta = meta
 
@@ -71,7 +78,7 @@ class DetectStandardByNameAndIdResponse(SdkResponse):
 
 
         :return: The result of this DetectStandardByNameAndIdResponse.
-        :rtype: IvsStandardByNameAndIdResponseBodyResult
+        :rtype: :class:`huaweicloudsdkivs.v2.IvsStandardByNameAndIdResponseBodyResult`
         """
         return self._result
 
@@ -81,7 +88,7 @@ class DetectStandardByNameAndIdResponse(SdkResponse):
 
 
         :param result: The result of this DetectStandardByNameAndIdResponse.
-        :type: IvsStandardByNameAndIdResponseBodyResult
+        :type result: :class:`huaweicloudsdkivs.v2.IvsStandardByNameAndIdResponseBodyResult`
         """
         self._result = result
 

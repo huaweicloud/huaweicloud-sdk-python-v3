@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OsFederationInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class OsFederationInfo:
     }
 
     def __init__(self, identity_provider=None, protocol=None, groups=None):
-        """OsFederationInfo - a model defined in huaweicloud sdk"""
+        """OsFederationInfo
+
+        The model defined in huaweicloud sdk
+
+        :param identity_provider: 
+        :type identity_provider: :class:`huaweicloudsdkiam.v3.IdpIdInfo`
+        :param protocol: 
+        :type protocol: :class:`huaweicloudsdkiam.v3.ProtocolIdInfo`
+        :param groups: 用户组信息。
+        :type groups: list[object]
+        """
         
         
 
@@ -53,7 +62,7 @@ class OsFederationInfo:
 
 
         :return: The identity_provider of this OsFederationInfo.
-        :rtype: IdpIdInfo
+        :rtype: :class:`huaweicloudsdkiam.v3.IdpIdInfo`
         """
         return self._identity_provider
 
@@ -63,7 +72,7 @@ class OsFederationInfo:
 
 
         :param identity_provider: The identity_provider of this OsFederationInfo.
-        :type: IdpIdInfo
+        :type identity_provider: :class:`huaweicloudsdkiam.v3.IdpIdInfo`
         """
         self._identity_provider = identity_provider
 
@@ -73,7 +82,7 @@ class OsFederationInfo:
 
 
         :return: The protocol of this OsFederationInfo.
-        :rtype: ProtocolIdInfo
+        :rtype: :class:`huaweicloudsdkiam.v3.ProtocolIdInfo`
         """
         return self._protocol
 
@@ -83,7 +92,7 @@ class OsFederationInfo:
 
 
         :param protocol: The protocol of this OsFederationInfo.
-        :type: ProtocolIdInfo
+        :type protocol: :class:`huaweicloudsdkiam.v3.ProtocolIdInfo`
         """
         self._protocol = protocol
 
@@ -105,7 +114,7 @@ class OsFederationInfo:
         用户组信息。
 
         :param groups: The groups of this OsFederationInfo.
-        :type: list[object]
+        :type groups: list[object]
         """
         self._groups = groups
 

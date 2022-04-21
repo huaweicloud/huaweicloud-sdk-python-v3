@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateScalingNotificationResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateScalingNotificationResponse(SdkResponse):
     }
 
     def __init__(self, topic_urn=None, topic_scene=None, topic_name=None):
-        """CreateScalingNotificationResponse - a model defined in huaweicloud sdk"""
+        """CreateScalingNotificationResponse
+
+        The model defined in huaweicloud sdk
+
+        :param topic_urn: SMN服务中Topic的唯一的资源标识。
+        :type topic_urn: str
+        :param topic_scene: 通知场景，有以下五种类型。SCALING_UP：扩容成功。SCALING_UP_FAIL：扩容失败。SCALING_DOWN：减容成功。SCALING_DOWN_FAIL：减容失败。SCALING_GROUP_ABNORMAL：伸缩组发生异常
+        :type topic_scene: list[str]
+        :param topic_name: SMN服务中Topic的资源名称。
+        :type topic_name: str
+        """
         
         super(CreateScalingNotificationResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class CreateScalingNotificationResponse(SdkResponse):
         SMN服务中Topic的唯一的资源标识。
 
         :param topic_urn: The topic_urn of this CreateScalingNotificationResponse.
-        :type: str
+        :type topic_urn: str
         """
         self._topic_urn = topic_urn
 
@@ -90,7 +99,7 @@ class CreateScalingNotificationResponse(SdkResponse):
         通知场景，有以下五种类型。SCALING_UP：扩容成功。SCALING_UP_FAIL：扩容失败。SCALING_DOWN：减容成功。SCALING_DOWN_FAIL：减容失败。SCALING_GROUP_ABNORMAL：伸缩组发生异常
 
         :param topic_scene: The topic_scene of this CreateScalingNotificationResponse.
-        :type: list[str]
+        :type topic_scene: list[str]
         """
         self._topic_scene = topic_scene
 
@@ -112,7 +121,7 @@ class CreateScalingNotificationResponse(SdkResponse):
         SMN服务中Topic的资源名称。
 
         :param topic_name: The topic_name of this CreateScalingNotificationResponse.
-        :type: str
+        :type topic_name: str
         """
         self._topic_name = topic_name
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListFlavorsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListFlavorsRequest:
     }
 
     def __init__(self, x_language=None, version=None, spec_code=None, ha_mode=None, limit=None, offset=None):
-        """ListFlavorsRequest - a model defined in huaweicloud sdk"""
+        """ListFlavorsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言
+        :type x_language: str
+        :param version: 数据库版本号。
+        :type version: str
+        :param spec_code: 规格编码
+        :type spec_code: str
+        :param ha_mode: 实例类型  集中式centralization_standard  分布式enterprise
+        :type ha_mode: str
+        :param limit: 查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
+        :type limit: int
+        :param offset: 索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
+        :type offset: int
+        """
         
         
 
@@ -83,7 +98,7 @@ class ListFlavorsRequest:
         语言
 
         :param x_language: The x_language of this ListFlavorsRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -105,7 +120,7 @@ class ListFlavorsRequest:
         数据库版本号。
 
         :param version: The version of this ListFlavorsRequest.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -127,7 +142,7 @@ class ListFlavorsRequest:
         规格编码
 
         :param spec_code: The spec_code of this ListFlavorsRequest.
-        :type: str
+        :type spec_code: str
         """
         self._spec_code = spec_code
 
@@ -149,7 +164,7 @@ class ListFlavorsRequest:
         实例类型  集中式centralization_standard  分布式enterprise
 
         :param ha_mode: The ha_mode of this ListFlavorsRequest.
-        :type: str
+        :type ha_mode: str
         """
         self._ha_mode = ha_mode
 
@@ -171,7 +186,7 @@ class ListFlavorsRequest:
         查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
 
         :param limit: The limit of this ListFlavorsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -193,7 +208,7 @@ class ListFlavorsRequest:
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
         :param offset: The offset of this ListFlavorsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 

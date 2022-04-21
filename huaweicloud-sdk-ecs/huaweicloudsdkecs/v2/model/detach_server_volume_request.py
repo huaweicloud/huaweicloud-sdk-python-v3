@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DetachServerVolumeRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class DetachServerVolumeRequest:
     }
 
     def __init__(self, server_id=None, volume_id=None, delete_flag=None):
-        """DetachServerVolumeRequest - a model defined in huaweicloud sdk"""
+        """DetachServerVolumeRequest
+
+        The model defined in huaweicloud sdk
+
+        :param server_id: 云服务器ID。
+        :type server_id: str
+        :param volume_id: 磁盘ID。
+        :type volume_id: str
+        :param delete_flag: 是否强制卸载数据盘。  - 是，值为“1”。  - 否，值为“0”。  默认值为0。
+        :type delete_flag: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class DetachServerVolumeRequest:
         云服务器ID。
 
         :param server_id: The server_id of this DetachServerVolumeRequest.
-        :type: str
+        :type server_id: str
         """
         self._server_id = server_id
 
@@ -88,7 +97,7 @@ class DetachServerVolumeRequest:
         磁盘ID。
 
         :param volume_id: The volume_id of this DetachServerVolumeRequest.
-        :type: str
+        :type volume_id: str
         """
         self._volume_id = volume_id
 
@@ -110,7 +119,7 @@ class DetachServerVolumeRequest:
         是否强制卸载数据盘。  - 是，值为“1”。  - 否，值为“0”。  默认值为0。
 
         :param delete_flag: The delete_flag of this DetachServerVolumeRequest.
-        :type: str
+        :type delete_flag: str
         """
         self._delete_flag = delete_flag
 

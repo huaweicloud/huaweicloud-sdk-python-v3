@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListStreamForbiddenRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListStreamForbiddenRequest:
     }
 
     def __init__(self, specify_project=None, domain=None, app_name=None, stream_name=None, page=None, size=None):
-        """ListStreamForbiddenRequest - a model defined in huaweicloud sdk"""
+        """ListStreamForbiddenRequest
+
+        The model defined in huaweicloud sdk
+
+        :param specify_project: op账号需要携带的特定project_id，当使用op账号时该值为所操作租户的project_id
+        :type specify_project: str
+        :param domain: 推流域名
+        :type domain: str
+        :param app_name: 应用名称，不指定则查询domain下所有应用的禁止直播推流信息
+        :type app_name: str
+        :param stream_name: 流名称
+        :type stream_name: str
+        :param page: 分页编号。 默认为0。 
+        :type page: int
+        :param size: 每页记录数。  取值范围：1-100。  默认为10。 
+        :type size: int
+        """
         
         
 
@@ -82,7 +97,7 @@ class ListStreamForbiddenRequest:
         op账号需要携带的特定project_id，当使用op账号时该值为所操作租户的project_id
 
         :param specify_project: The specify_project of this ListStreamForbiddenRequest.
-        :type: str
+        :type specify_project: str
         """
         self._specify_project = specify_project
 
@@ -104,7 +119,7 @@ class ListStreamForbiddenRequest:
         推流域名
 
         :param domain: The domain of this ListStreamForbiddenRequest.
-        :type: str
+        :type domain: str
         """
         self._domain = domain
 
@@ -126,7 +141,7 @@ class ListStreamForbiddenRequest:
         应用名称，不指定则查询domain下所有应用的禁止直播推流信息
 
         :param app_name: The app_name of this ListStreamForbiddenRequest.
-        :type: str
+        :type app_name: str
         """
         self._app_name = app_name
 
@@ -148,7 +163,7 @@ class ListStreamForbiddenRequest:
         流名称
 
         :param stream_name: The stream_name of this ListStreamForbiddenRequest.
-        :type: str
+        :type stream_name: str
         """
         self._stream_name = stream_name
 
@@ -170,7 +185,7 @@ class ListStreamForbiddenRequest:
         分页编号。 默认为0。 
 
         :param page: The page of this ListStreamForbiddenRequest.
-        :type: int
+        :type page: int
         """
         self._page = page
 
@@ -192,7 +207,7 @@ class ListStreamForbiddenRequest:
         每页记录数。  取值范围：1-100。  默认为10。 
 
         :param size: The size of this ListStreamForbiddenRequest.
-        :type: int
+        :type size: int
         """
         self._size = size
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ActionResources:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ActionResources:
     }
 
     def __init__(self, resource_id=None, resource_detail=None, resource_name=None, tags=None):
-        """ActionResources - a model defined in huaweicloud sdk"""
+        """ActionResources
+
+        The model defined in huaweicloud sdk
+
+        :param resource_id: 资源ID。
+        :type resource_id: str
+        :param resource_detail: 
+        :type resource_detail: :class:`huaweicloudsdkcsms.v1.Secret`
+        :param resource_name: 资源名称，默认为空字符串。
+        :type resource_name: str
+        :param tags: 标签列表，没有标签，数组默认为空。
+        :type tags: list[:class:`huaweicloudsdkcsms.v1.TagItem`]
+        """
         
         
 
@@ -73,7 +84,7 @@ class ActionResources:
         资源ID。
 
         :param resource_id: The resource_id of this ActionResources.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -83,7 +94,7 @@ class ActionResources:
 
 
         :return: The resource_detail of this ActionResources.
-        :rtype: Secret
+        :rtype: :class:`huaweicloudsdkcsms.v1.Secret`
         """
         return self._resource_detail
 
@@ -93,7 +104,7 @@ class ActionResources:
 
 
         :param resource_detail: The resource_detail of this ActionResources.
-        :type: Secret
+        :type resource_detail: :class:`huaweicloudsdkcsms.v1.Secret`
         """
         self._resource_detail = resource_detail
 
@@ -115,7 +126,7 @@ class ActionResources:
         资源名称，默认为空字符串。
 
         :param resource_name: The resource_name of this ActionResources.
-        :type: str
+        :type resource_name: str
         """
         self._resource_name = resource_name
 
@@ -126,7 +137,7 @@ class ActionResources:
         标签列表，没有标签，数组默认为空。
 
         :return: The tags of this ActionResources.
-        :rtype: list[TagItem]
+        :rtype: list[:class:`huaweicloudsdkcsms.v1.TagItem`]
         """
         return self._tags
 
@@ -137,7 +148,7 @@ class ActionResources:
         标签列表，没有标签，数组默认为空。
 
         :param tags: The tags of this ActionResources.
-        :type: list[TagItem]
+        :type tags: list[:class:`huaweicloudsdkcsms.v1.TagItem`]
         """
         self._tags = tags
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ChargeInfoOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ChargeInfoOption:
     }
 
     def __init__(self, charge_mode=None, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None):
-        """ChargeInfoOption - a model defined in huaweicloud sdk"""
+        """ChargeInfoOption
+
+        The model defined in huaweicloud sdk
+
+        :param charge_mode: 计费模式。 取值范围：   - prePaid：预付费，即包年/包月。   - postPaid：后付费，即按需付费。
+        :type charge_mode: str
+        :param period_type: 订购周期类型。 “charge_mode”为“prePaid”时生效，且为必选值。 取值范围：   - month：包月。   - year：包年。
+        :type period_type: str
+        :param period_num: “charge_mode”为“prePaid”时生效，且为必选值，指定订购的时间。 取值范围：   - 当“period_type”为“month”时，取值为1~9。   - 当“period_type”为“year”时，取值为1~3
+        :type period_num: str
+        :param is_auto_renew: 创建包周期实例时可指定，表示是否自动续订，续订的周期和原周期相同，且续订时会自动支付。 取值范围：   - true，表示自动续订。   - false，表示不自动续订，默认为该方式。
+        :type is_auto_renew: str
+        :param is_auto_pay: 创建包周期实例时可指定，表示是否自动从账户中支付，该字段不影响自动续订的支付方式。 取值范围：   - true，表示自动从账户中支付   - false，表示手动从账户中支付，默认为该支付方式。
+        :type is_auto_pay: str
+        """
         
         
 
@@ -77,7 +90,7 @@ class ChargeInfoOption:
         计费模式。 取值范围：   - prePaid：预付费，即包年/包月。   - postPaid：后付费，即按需付费。
 
         :param charge_mode: The charge_mode of this ChargeInfoOption.
-        :type: str
+        :type charge_mode: str
         """
         self._charge_mode = charge_mode
 
@@ -99,7 +112,7 @@ class ChargeInfoOption:
         订购周期类型。 “charge_mode”为“prePaid”时生效，且为必选值。 取值范围：   - month：包月。   - year：包年。
 
         :param period_type: The period_type of this ChargeInfoOption.
-        :type: str
+        :type period_type: str
         """
         self._period_type = period_type
 
@@ -121,7 +134,7 @@ class ChargeInfoOption:
         “charge_mode”为“prePaid”时生效，且为必选值，指定订购的时间。 取值范围：   - 当“period_type”为“month”时，取值为1~9。   - 当“period_type”为“year”时，取值为1~3
 
         :param period_num: The period_num of this ChargeInfoOption.
-        :type: str
+        :type period_num: str
         """
         self._period_num = period_num
 
@@ -143,7 +156,7 @@ class ChargeInfoOption:
         创建包周期实例时可指定，表示是否自动续订，续订的周期和原周期相同，且续订时会自动支付。 取值范围：   - true，表示自动续订。   - false，表示不自动续订，默认为该方式。
 
         :param is_auto_renew: The is_auto_renew of this ChargeInfoOption.
-        :type: str
+        :type is_auto_renew: str
         """
         self._is_auto_renew = is_auto_renew
 
@@ -165,7 +178,7 @@ class ChargeInfoOption:
         创建包周期实例时可指定，表示是否自动从账户中支付，该字段不影响自动续订的支付方式。 取值范围：   - true，表示自动从账户中支付   - false，表示手动从账户中支付，默认为该支付方式。
 
         :param is_auto_pay: The is_auto_pay of this ChargeInfoOption.
-        :type: str
+        :type is_auto_pay: str
         """
         self._is_auto_pay = is_auto_pay
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListConfigurationTemplatesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListConfigurationTemplatesRequest:
     }
 
     def __init__(self, offset=None, limit=None):
-        """ListConfigurationTemplatesRequest - a model defined in huaweicloud sdk"""
+        """ListConfigurationTemplatesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param offset: 索引位置，偏移量。   - 从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询）。   - 取值必须为数字，不能为负数。
+        :type offset: int
+        :param limit: 查询个数上限值。 - 取值范围: 1~100。 - 不传该参数时，默认查询前100条信息。
+        :type limit: int
+        """
         
         
 
@@ -63,7 +70,7 @@ class ListConfigurationTemplatesRequest:
         索引位置，偏移量。   - 从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询）。   - 取值必须为数字，不能为负数。
 
         :param offset: The offset of this ListConfigurationTemplatesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -85,7 +92,7 @@ class ListConfigurationTemplatesRequest:
         查询个数上限值。 - 取值范围: 1~100。 - 不传该参数时，默认查询前100条信息。
 
         :param limit: The limit of this ListConfigurationTemplatesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

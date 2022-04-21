@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateAssetByFileUploadReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -62,7 +61,45 @@ class CreateAssetByFileUploadReq:
     }
 
     def __init__(self, title=None, description=None, video_name=None, video_type=None, category_id=None, video_md5=None, cover_type=None, cover_md5=None, subtitles=None, tags=None, auto_publish=None, template_group_name=None, auto_encrypt=None, auto_preheat=None, thumbnail=None, review=None, workflow_name=None):
-        """CreateAssetByFileUploadReq - a model defined in huaweicloud sdk"""
+        """CreateAssetByFileUploadReq
+
+        The model defined in huaweicloud sdk
+
+        :param title: 媒资标题，长度不超过128个字节，UTF-8编码。
+        :type title: str
+        :param description: 视频描述，长度不超过1024个字节。
+        :type description: str
+        :param video_name: 音视频文件名，长度不超过128个字节。  文件名后缀可选。
+        :type video_name: str
+        :param video_type: 上传音视频文件的格式。  取值如下： - 视频文件：MP4、TS、MOV、MXF、MPG、FLV、WMV、AVI、M4V、F4V、MPEG、3GP、ASF、MKV、HLS - 音频文件：MP3、OGG、WAV、WMA、APE、FLAC、AAC、AC3、MMF、AMR、M4A、M4R、WV、MP2  若上传格式为音频文件，则不支持转码、添加水印和字幕。
+        :type video_type: str
+        :param category_id: 媒资分类ID。  您可以调用[创建媒资分类](https://support.huaweicloud.com/api-vod/vod_04_0028.html)接口或在点播控制台的[分类设置](https://support.huaweicloud.com/usermanual-vod/vod010006.html)中创建对应的媒资分类，并获取分类ID。  &gt; 若不设置或者设置为-1，则上传的音视频归类到系统预置的“其它”分类中。
+        :type category_id: str
+        :param video_md5: 视频文件MD5值。  建议参考[媒资上传和更新](https://support.huaweicloud.com/api-vod/vod_04_0212.html)生成对应的MD5值。
+        :type video_md5: str
+        :param cover_type: 封面图片文件类型。  取值如下： - JPG - PNG  上传后的封面名称是固定的，后缀名为封面类型缩写。例如cover0.jpg，cover1.png 若不指定类型，则封面文件无后缀名。  &gt; 如果设置了图片格式，则不会执行首帧截图作为封面动作，需自行上传封面。
+        :type cover_type: str
+        :param cover_md5: 封面文件MD5值
+        :type cover_md5: str
+        :param subtitles: 字幕文件信息
+        :type subtitles: list[:class:`huaweicloudsdkvod.v1.Subtitle`]
+        :param tags: 视频标签。  单个标签不超过16个字节，最多不超过16个标签。  多个用逗号分隔，UTF8编码。
+        :type tags: str
+        :param auto_publish: 是否自动发布。  取值如下： - 0：表示不自动发布。 - 1：表示自动发布。  默认值：0。
+        :type auto_publish: int
+        :param template_group_name: 转码模板组名称。  若不为空，则使用指定的转码模板对上传的音视频进行转码，您可以在视频点播控制台配置转码模板，具体请参见[转码设置](https://support.huaweicloud.com/usermanual-vod/vod_01_0072.html)。  &gt; 若同时设置了“**template_group_name**”和“**workflow_name**”字段，则“**template_group_name**”字段生效。
+        :type template_group_name: str
+        :param auto_encrypt: 是否自动加密。  取值如下： - 0：表示不加密。 - 1：表示需要加密。  默认值：0。  加密与转码必须要一起进行，当需要加密时，转码参数不能为空，且转码输出格式必须要为HLS。
+        :type auto_encrypt: int
+        :param auto_preheat: 是否自动预热到CDN。  取值如下： - 0：表示不自动预热。 - 1：表示自动预热。  默认值：0。
+        :type auto_preheat: str
+        :param thumbnail: 
+        :type thumbnail: :class:`huaweicloudsdkvod.v1.Thumbnail`
+        :param review: 
+        :type review: :class:`huaweicloudsdkvod.v1.Review`
+        :param workflow_name: 工作流名称。  若不为空，则使用指定的工作流对上传的音视频进行处理，您可以在视频点播控制台配置工作流，具体请参见[工作流设置](https://support.huaweicloud.com/usermanual-vod/vod010041.html)。
+        :type workflow_name: str
+        """
         
         
 
@@ -135,7 +172,7 @@ class CreateAssetByFileUploadReq:
         媒资标题，长度不超过128个字节，UTF-8编码。
 
         :param title: The title of this CreateAssetByFileUploadReq.
-        :type: str
+        :type title: str
         """
         self._title = title
 
@@ -157,7 +194,7 @@ class CreateAssetByFileUploadReq:
         视频描述，长度不超过1024个字节。
 
         :param description: The description of this CreateAssetByFileUploadReq.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -179,7 +216,7 @@ class CreateAssetByFileUploadReq:
         音视频文件名，长度不超过128个字节。  文件名后缀可选。
 
         :param video_name: The video_name of this CreateAssetByFileUploadReq.
-        :type: str
+        :type video_name: str
         """
         self._video_name = video_name
 
@@ -201,7 +238,7 @@ class CreateAssetByFileUploadReq:
         上传音视频文件的格式。  取值如下： - 视频文件：MP4、TS、MOV、MXF、MPG、FLV、WMV、AVI、M4V、F4V、MPEG、3GP、ASF、MKV、HLS - 音频文件：MP3、OGG、WAV、WMA、APE、FLAC、AAC、AC3、MMF、AMR、M4A、M4R、WV、MP2  若上传格式为音频文件，则不支持转码、添加水印和字幕。
 
         :param video_type: The video_type of this CreateAssetByFileUploadReq.
-        :type: str
+        :type video_type: str
         """
         self._video_type = video_type
 
@@ -223,7 +260,7 @@ class CreateAssetByFileUploadReq:
         媒资分类ID。  您可以调用[创建媒资分类](https://support.huaweicloud.com/api-vod/vod_04_0028.html)接口或在点播控制台的[分类设置](https://support.huaweicloud.com/usermanual-vod/vod010006.html)中创建对应的媒资分类，并获取分类ID。  > 若不设置或者设置为-1，则上传的音视频归类到系统预置的“其它”分类中。
 
         :param category_id: The category_id of this CreateAssetByFileUploadReq.
-        :type: str
+        :type category_id: str
         """
         self._category_id = category_id
 
@@ -245,7 +282,7 @@ class CreateAssetByFileUploadReq:
         视频文件MD5值。  建议参考[媒资上传和更新](https://support.huaweicloud.com/api-vod/vod_04_0212.html)生成对应的MD5值。
 
         :param video_md5: The video_md5 of this CreateAssetByFileUploadReq.
-        :type: str
+        :type video_md5: str
         """
         self._video_md5 = video_md5
 
@@ -267,7 +304,7 @@ class CreateAssetByFileUploadReq:
         封面图片文件类型。  取值如下： - JPG - PNG  上传后的封面名称是固定的，后缀名为封面类型缩写。例如cover0.jpg，cover1.png 若不指定类型，则封面文件无后缀名。  > 如果设置了图片格式，则不会执行首帧截图作为封面动作，需自行上传封面。
 
         :param cover_type: The cover_type of this CreateAssetByFileUploadReq.
-        :type: str
+        :type cover_type: str
         """
         self._cover_type = cover_type
 
@@ -289,7 +326,7 @@ class CreateAssetByFileUploadReq:
         封面文件MD5值
 
         :param cover_md5: The cover_md5 of this CreateAssetByFileUploadReq.
-        :type: str
+        :type cover_md5: str
         """
         self._cover_md5 = cover_md5
 
@@ -300,7 +337,7 @@ class CreateAssetByFileUploadReq:
         字幕文件信息
 
         :return: The subtitles of this CreateAssetByFileUploadReq.
-        :rtype: list[Subtitle]
+        :rtype: list[:class:`huaweicloudsdkvod.v1.Subtitle`]
         """
         return self._subtitles
 
@@ -311,7 +348,7 @@ class CreateAssetByFileUploadReq:
         字幕文件信息
 
         :param subtitles: The subtitles of this CreateAssetByFileUploadReq.
-        :type: list[Subtitle]
+        :type subtitles: list[:class:`huaweicloudsdkvod.v1.Subtitle`]
         """
         self._subtitles = subtitles
 
@@ -333,7 +370,7 @@ class CreateAssetByFileUploadReq:
         视频标签。  单个标签不超过16个字节，最多不超过16个标签。  多个用逗号分隔，UTF8编码。
 
         :param tags: The tags of this CreateAssetByFileUploadReq.
-        :type: str
+        :type tags: str
         """
         self._tags = tags
 
@@ -355,7 +392,7 @@ class CreateAssetByFileUploadReq:
         是否自动发布。  取值如下： - 0：表示不自动发布。 - 1：表示自动发布。  默认值：0。
 
         :param auto_publish: The auto_publish of this CreateAssetByFileUploadReq.
-        :type: int
+        :type auto_publish: int
         """
         self._auto_publish = auto_publish
 
@@ -377,7 +414,7 @@ class CreateAssetByFileUploadReq:
         转码模板组名称。  若不为空，则使用指定的转码模板对上传的音视频进行转码，您可以在视频点播控制台配置转码模板，具体请参见[转码设置](https://support.huaweicloud.com/usermanual-vod/vod_01_0072.html)。  > 若同时设置了“**template_group_name**”和“**workflow_name**”字段，则“**template_group_name**”字段生效。
 
         :param template_group_name: The template_group_name of this CreateAssetByFileUploadReq.
-        :type: str
+        :type template_group_name: str
         """
         self._template_group_name = template_group_name
 
@@ -399,7 +436,7 @@ class CreateAssetByFileUploadReq:
         是否自动加密。  取值如下： - 0：表示不加密。 - 1：表示需要加密。  默认值：0。  加密与转码必须要一起进行，当需要加密时，转码参数不能为空，且转码输出格式必须要为HLS。
 
         :param auto_encrypt: The auto_encrypt of this CreateAssetByFileUploadReq.
-        :type: int
+        :type auto_encrypt: int
         """
         self._auto_encrypt = auto_encrypt
 
@@ -421,7 +458,7 @@ class CreateAssetByFileUploadReq:
         是否自动预热到CDN。  取值如下： - 0：表示不自动预热。 - 1：表示自动预热。  默认值：0。
 
         :param auto_preheat: The auto_preheat of this CreateAssetByFileUploadReq.
-        :type: str
+        :type auto_preheat: str
         """
         self._auto_preheat = auto_preheat
 
@@ -431,7 +468,7 @@ class CreateAssetByFileUploadReq:
 
 
         :return: The thumbnail of this CreateAssetByFileUploadReq.
-        :rtype: Thumbnail
+        :rtype: :class:`huaweicloudsdkvod.v1.Thumbnail`
         """
         return self._thumbnail
 
@@ -441,7 +478,7 @@ class CreateAssetByFileUploadReq:
 
 
         :param thumbnail: The thumbnail of this CreateAssetByFileUploadReq.
-        :type: Thumbnail
+        :type thumbnail: :class:`huaweicloudsdkvod.v1.Thumbnail`
         """
         self._thumbnail = thumbnail
 
@@ -451,7 +488,7 @@ class CreateAssetByFileUploadReq:
 
 
         :return: The review of this CreateAssetByFileUploadReq.
-        :rtype: Review
+        :rtype: :class:`huaweicloudsdkvod.v1.Review`
         """
         return self._review
 
@@ -461,7 +498,7 @@ class CreateAssetByFileUploadReq:
 
 
         :param review: The review of this CreateAssetByFileUploadReq.
-        :type: Review
+        :type review: :class:`huaweicloudsdkvod.v1.Review`
         """
         self._review = review
 
@@ -483,7 +520,7 @@ class CreateAssetByFileUploadReq:
         工作流名称。  若不为空，则使用指定的工作流对上传的音视频进行处理，您可以在视频点播控制台配置工作流，具体请参见[工作流设置](https://support.huaweicloud.com/usermanual-vod/vod010041.html)。
 
         :param workflow_name: The workflow_name of this CreateAssetByFileUploadReq.
-        :type: str
+        :type workflow_name: str
         """
         self._workflow_name = workflow_name
 

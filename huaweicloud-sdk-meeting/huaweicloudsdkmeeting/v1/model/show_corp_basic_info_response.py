@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowCorpBasicInfoResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class ShowCorpBasicInfoResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, address=None, admin_name=None, account=None, phone=None, country=None, email=None, enable_sms=None, enable_cloud_disk=None, enable_pstn=None, auto_user_create=None, corp_type=None):
-        """ShowCorpBasicInfoResponse - a model defined in huaweicloud sdk"""
+        """ShowCorpBasicInfoResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 企业id
+        :type id: str
+        :param name: 企业名称
+        :type name: str
+        :param address: 企业所在地
+        :type address: str
+        :param admin_name: 管理员名称
+        :type admin_name: str
+        :param account: 管理员账号
+        :type account: str
+        :param phone: 管理员手机
+        :type phone: str
+        :param country: 管理员手机所属的国家
+        :type country: str
+        :param email: 管理员邮箱
+        :type email: str
+        :param enable_sms: 是否发送短信
+        :type enable_sms: bool
+        :param enable_cloud_disk: 是否开启云盘
+        :type enable_cloud_disk: bool
+        :param enable_pstn: 是否具有pstn功能
+        :type enable_pstn: bool
+        :param auto_user_create: 是否支持自动开户
+        :type auto_user_create: bool
+        :param corp_type: 企业类型
+        :type corp_type: int
+        """
         
         super(ShowCorpBasicInfoResponse, self).__init__()
 
@@ -118,7 +147,7 @@ class ShowCorpBasicInfoResponse(SdkResponse):
         企业id
 
         :param id: The id of this ShowCorpBasicInfoResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -140,7 +169,7 @@ class ShowCorpBasicInfoResponse(SdkResponse):
         企业名称
 
         :param name: The name of this ShowCorpBasicInfoResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -162,7 +191,7 @@ class ShowCorpBasicInfoResponse(SdkResponse):
         企业所在地
 
         :param address: The address of this ShowCorpBasicInfoResponse.
-        :type: str
+        :type address: str
         """
         self._address = address
 
@@ -184,7 +213,7 @@ class ShowCorpBasicInfoResponse(SdkResponse):
         管理员名称
 
         :param admin_name: The admin_name of this ShowCorpBasicInfoResponse.
-        :type: str
+        :type admin_name: str
         """
         self._admin_name = admin_name
 
@@ -206,7 +235,7 @@ class ShowCorpBasicInfoResponse(SdkResponse):
         管理员账号
 
         :param account: The account of this ShowCorpBasicInfoResponse.
-        :type: str
+        :type account: str
         """
         self._account = account
 
@@ -228,7 +257,7 @@ class ShowCorpBasicInfoResponse(SdkResponse):
         管理员手机
 
         :param phone: The phone of this ShowCorpBasicInfoResponse.
-        :type: str
+        :type phone: str
         """
         self._phone = phone
 
@@ -250,7 +279,7 @@ class ShowCorpBasicInfoResponse(SdkResponse):
         管理员手机所属的国家
 
         :param country: The country of this ShowCorpBasicInfoResponse.
-        :type: str
+        :type country: str
         """
         self._country = country
 
@@ -272,7 +301,7 @@ class ShowCorpBasicInfoResponse(SdkResponse):
         管理员邮箱
 
         :param email: The email of this ShowCorpBasicInfoResponse.
-        :type: str
+        :type email: str
         """
         self._email = email
 
@@ -294,7 +323,7 @@ class ShowCorpBasicInfoResponse(SdkResponse):
         是否发送短信
 
         :param enable_sms: The enable_sms of this ShowCorpBasicInfoResponse.
-        :type: bool
+        :type enable_sms: bool
         """
         self._enable_sms = enable_sms
 
@@ -316,7 +345,7 @@ class ShowCorpBasicInfoResponse(SdkResponse):
         是否开启云盘
 
         :param enable_cloud_disk: The enable_cloud_disk of this ShowCorpBasicInfoResponse.
-        :type: bool
+        :type enable_cloud_disk: bool
         """
         self._enable_cloud_disk = enable_cloud_disk
 
@@ -338,7 +367,7 @@ class ShowCorpBasicInfoResponse(SdkResponse):
         是否具有pstn功能
 
         :param enable_pstn: The enable_pstn of this ShowCorpBasicInfoResponse.
-        :type: bool
+        :type enable_pstn: bool
         """
         self._enable_pstn = enable_pstn
 
@@ -360,7 +389,7 @@ class ShowCorpBasicInfoResponse(SdkResponse):
         是否支持自动开户
 
         :param auto_user_create: The auto_user_create of this ShowCorpBasicInfoResponse.
-        :type: bool
+        :type auto_user_create: bool
         """
         self._auto_user_create = auto_user_create
 
@@ -382,7 +411,7 @@ class ShowCorpBasicInfoResponse(SdkResponse):
         企业类型
 
         :param corp_type: The corp_type of this ShowCorpBasicInfoResponse.
-        :type: int
+        :type corp_type: int
         """
         self._corp_type = corp_type
 

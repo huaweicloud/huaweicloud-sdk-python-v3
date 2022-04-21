@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRtcRealtimeScaleResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListRtcRealtimeScaleResponse(SdkResponse):
     }
 
     def __init__(self, scale=None, x_request_id=None):
-        """ListRtcRealtimeScaleResponse - a model defined in huaweicloud sdk"""
+        """ListRtcRealtimeScaleResponse
+
+        The model defined in huaweicloud sdk
+
+        :param scale: 时间戳及相应时间的指标数值列表
+        :type scale: list[:class:`huaweicloudsdkcloudrtc.v1.TimeValueData`]
+        :param x_request_id: 
+        :type x_request_id: str
+        """
         
         super(ListRtcRealtimeScaleResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListRtcRealtimeScaleResponse(SdkResponse):
         时间戳及相应时间的指标数值列表
 
         :return: The scale of this ListRtcRealtimeScaleResponse.
-        :rtype: list[TimeValueData]
+        :rtype: list[:class:`huaweicloudsdkcloudrtc.v1.TimeValueData`]
         """
         return self._scale
 
@@ -63,7 +70,7 @@ class ListRtcRealtimeScaleResponse(SdkResponse):
         时间戳及相应时间的指标数值列表
 
         :param scale: The scale of this ListRtcRealtimeScaleResponse.
-        :type: list[TimeValueData]
+        :type scale: list[:class:`huaweicloudsdkcloudrtc.v1.TimeValueData`]
         """
         self._scale = scale
 
@@ -83,7 +90,7 @@ class ListRtcRealtimeScaleResponse(SdkResponse):
 
 
         :param x_request_id: The x_request_id of this ListRtcRealtimeScaleResponse.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 

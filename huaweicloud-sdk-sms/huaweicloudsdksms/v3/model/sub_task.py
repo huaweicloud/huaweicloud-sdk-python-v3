@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SubTask:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class SubTask:
     }
 
     def __init__(self, name=None, progress=None, start_date=None, end_date=None, migrate_speed=None, user_op=None, process_trace=None):
-        """SubTask - a model defined in huaweicloud sdk"""
+        """SubTask
+
+        The model defined in huaweicloud sdk
+
+        :param name: 子任务名称
+        :type name: str
+        :param progress: 子任务的进度，取值为0-100之间的整数
+        :type progress: int
+        :param start_date: 子任务开始时间
+        :type start_date: int
+        :param end_date: 子任务结束时间（如果子任务还没有结束，则为空）
+        :type end_date: int
+        :param migrate_speed: 迁移速率，Mbit/s
+        :type migrate_speed: float
+        :param user_op: 触发子任务的用户操作名称
+        :type user_op: str
+        :param process_trace: 迁移或同步时，具体的迁移详情
+        :type process_trace: str
+        """
         
         
 
@@ -87,7 +104,7 @@ class SubTask:
         子任务名称
 
         :param name: The name of this SubTask.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -109,7 +126,7 @@ class SubTask:
         子任务的进度，取值为0-100之间的整数
 
         :param progress: The progress of this SubTask.
-        :type: int
+        :type progress: int
         """
         self._progress = progress
 
@@ -131,7 +148,7 @@ class SubTask:
         子任务开始时间
 
         :param start_date: The start_date of this SubTask.
-        :type: int
+        :type start_date: int
         """
         self._start_date = start_date
 
@@ -153,7 +170,7 @@ class SubTask:
         子任务结束时间（如果子任务还没有结束，则为空）
 
         :param end_date: The end_date of this SubTask.
-        :type: int
+        :type end_date: int
         """
         self._end_date = end_date
 
@@ -175,7 +192,7 @@ class SubTask:
         迁移速率，Mbit/s
 
         :param migrate_speed: The migrate_speed of this SubTask.
-        :type: float
+        :type migrate_speed: float
         """
         self._migrate_speed = migrate_speed
 
@@ -197,7 +214,7 @@ class SubTask:
         触发子任务的用户操作名称
 
         :param user_op: The user_op of this SubTask.
-        :type: str
+        :type user_op: str
         """
         self._user_op = user_op
 
@@ -219,7 +236,7 @@ class SubTask:
         迁移或同步时，具体的迁移详情
 
         :param process_trace: The process_trace of this SubTask.
-        :type: str
+        :type process_trace: str
         """
         self._process_trace = process_trace
 

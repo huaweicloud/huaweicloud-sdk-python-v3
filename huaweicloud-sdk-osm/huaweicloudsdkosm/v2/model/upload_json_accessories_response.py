@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UploadJsonAccessoriesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UploadJsonAccessoriesResponse(SdkResponse):
     }
 
     def __init__(self, accessory_id=None):
-        """UploadJsonAccessoriesResponse - a model defined in huaweicloud sdk"""
+        """UploadJsonAccessoriesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param accessory_id: 附件id
+        :type accessory_id: str
+        """
         
         super(UploadJsonAccessoriesResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class UploadJsonAccessoriesResponse(SdkResponse):
         附件id
 
         :param accessory_id: The accessory_id of this UploadJsonAccessoriesResponse.
-        :type: str
+        :type accessory_id: str
         """
         self._accessory_id = accessory_id
 

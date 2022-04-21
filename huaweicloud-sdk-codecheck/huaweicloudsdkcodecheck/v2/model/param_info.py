@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ParamInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ParamInfo:
     }
 
     def __init__(self, url=None, branch=None, language=None, exclude_dir=None, encode=None, compile_config=None, rule_template=None):
-        """ParamInfo - a model defined in huaweicloud sdk"""
+        """ParamInfo
+
+        The model defined in huaweicloud sdk
+
+        :param url: 仓库地址
+        :type url: str
+        :param branch: 仓库分支
+        :type branch: str
+        :param language: 仓库语言
+        :type language: str
+        :param exclude_dir: 排除的目录
+        :type exclude_dir: str
+        :param encode: 编码格式
+        :type encode: str
+        :param compile_config: 编译配置信息
+        :type compile_config: str
+        :param rule_template: g规则集名称
+        :type rule_template: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class ParamInfo:
         仓库地址
 
         :param url: The url of this ParamInfo.
-        :type: str
+        :type url: str
         """
         self._url = url
 
@@ -110,7 +127,7 @@ class ParamInfo:
         仓库分支
 
         :param branch: The branch of this ParamInfo.
-        :type: str
+        :type branch: str
         """
         self._branch = branch
 
@@ -132,7 +149,7 @@ class ParamInfo:
         仓库语言
 
         :param language: The language of this ParamInfo.
-        :type: str
+        :type language: str
         """
         self._language = language
 
@@ -154,7 +171,7 @@ class ParamInfo:
         排除的目录
 
         :param exclude_dir: The exclude_dir of this ParamInfo.
-        :type: str
+        :type exclude_dir: str
         """
         self._exclude_dir = exclude_dir
 
@@ -176,7 +193,7 @@ class ParamInfo:
         编码格式
 
         :param encode: The encode of this ParamInfo.
-        :type: str
+        :type encode: str
         """
         self._encode = encode
 
@@ -198,7 +215,7 @@ class ParamInfo:
         编译配置信息
 
         :param compile_config: The compile_config of this ParamInfo.
-        :type: str
+        :type compile_config: str
         """
         self._compile_config = compile_config
 
@@ -220,7 +237,7 @@ class ParamInfo:
         g规则集名称
 
         :param rule_template: The rule_template of this ParamInfo.
-        :type: str
+        :type rule_template: str
         """
         self._rule_template = rule_template
 

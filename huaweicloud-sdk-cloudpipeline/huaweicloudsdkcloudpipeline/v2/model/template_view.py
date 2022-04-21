@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TemplateView:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -72,7 +71,55 @@ class TemplateView:
     }
 
     def __init__(self, template_id=None, template_name=None, template_type=None, template_url=None, user_id=None, user_name=None, domain_id=None, domain_name=None, is_build_in=None, region=None, project_id=None, project_name=None, create_time=None, last_modify_time=None, is_watch=None, description=None, parameter=None, flow=None, states=None, can_update=None, can_delete=None, need_hub=None):
-        """TemplateView - a model defined in huaweicloud sdk"""
+        """TemplateView
+
+        The model defined in huaweicloud sdk
+
+        :param template_id: 模板ID
+        :type template_id: str
+        :param template_name: 模板名字
+        :type template_name: str
+        :param template_type: 模板类型
+        :type template_type: str
+        :param template_url: 模板编辑URL
+        :type template_url: str
+        :param user_id: 用户ID
+        :type user_id: str
+        :param user_name: 用户名字
+        :type user_name: str
+        :param domain_id: 租户ID
+        :type domain_id: str
+        :param domain_name: 租户名字
+        :type domain_name: str
+        :param is_build_in: 是否内置模板
+        :type is_build_in: bool
+        :param region: 系统模板region为Cloud Pipeline。自定义模板region为实际region
+        :type region: str
+        :param project_id: 项目ID
+        :type project_id: str
+        :param project_name: 项目名字
+        :type project_name: str
+        :param create_time: 创建时间
+        :type create_time: str
+        :param last_modify_time: 修改时间
+        :type last_modify_time: str
+        :param is_watch: 是否关注
+        :type is_watch: bool
+        :param description: 模板描述
+        :type description: str
+        :param parameter: 模板参数
+        :type parameter: list[:class:`huaweicloudsdkcloudpipeline.v2.TemplateParam`]
+        :param flow: 编排flow详情，描述流水线内各阶段任务的串并行关系。map类型数据，key为阶段名字，默认第一阶段initial，最后阶段为final，其余名字以&#39;state_数字&#39;标识。value为该阶段内任务(以&#39;Task_数字&#39;标识)以及后续阶段的标识。本字段为描述流水线基础编排数据之一，建议可通过流水线真实界面基于模板创建接口中获取
+        :type flow: dict(str, dict(str, str))
+        :param states: 编排State详情，map类型数据。本字段为描述流水线基础编排数据之一，建议可通过流水线真实界面基于模板创建接口中获取
+        :type states: dict(str, TemplateState)
+        :param can_update: 是否可以修改
+        :type can_update: bool
+        :param can_delete: 是否可以删除
+        :type can_delete: bool
+        :param need_hub: 是否需要代码仓库
+        :type need_hub: bool
+        """
         
         
 
@@ -141,7 +188,7 @@ class TemplateView:
         模板ID
 
         :param template_id: The template_id of this TemplateView.
-        :type: str
+        :type template_id: str
         """
         self._template_id = template_id
 
@@ -163,7 +210,7 @@ class TemplateView:
         模板名字
 
         :param template_name: The template_name of this TemplateView.
-        :type: str
+        :type template_name: str
         """
         self._template_name = template_name
 
@@ -185,7 +232,7 @@ class TemplateView:
         模板类型
 
         :param template_type: The template_type of this TemplateView.
-        :type: str
+        :type template_type: str
         """
         self._template_type = template_type
 
@@ -207,7 +254,7 @@ class TemplateView:
         模板编辑URL
 
         :param template_url: The template_url of this TemplateView.
-        :type: str
+        :type template_url: str
         """
         self._template_url = template_url
 
@@ -229,7 +276,7 @@ class TemplateView:
         用户ID
 
         :param user_id: The user_id of this TemplateView.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -251,7 +298,7 @@ class TemplateView:
         用户名字
 
         :param user_name: The user_name of this TemplateView.
-        :type: str
+        :type user_name: str
         """
         self._user_name = user_name
 
@@ -273,7 +320,7 @@ class TemplateView:
         租户ID
 
         :param domain_id: The domain_id of this TemplateView.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -295,7 +342,7 @@ class TemplateView:
         租户名字
 
         :param domain_name: The domain_name of this TemplateView.
-        :type: str
+        :type domain_name: str
         """
         self._domain_name = domain_name
 
@@ -317,7 +364,7 @@ class TemplateView:
         是否内置模板
 
         :param is_build_in: The is_build_in of this TemplateView.
-        :type: bool
+        :type is_build_in: bool
         """
         self._is_build_in = is_build_in
 
@@ -339,7 +386,7 @@ class TemplateView:
         系统模板region为Cloud Pipeline。自定义模板region为实际region
 
         :param region: The region of this TemplateView.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -361,7 +408,7 @@ class TemplateView:
         项目ID
 
         :param project_id: The project_id of this TemplateView.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -383,7 +430,7 @@ class TemplateView:
         项目名字
 
         :param project_name: The project_name of this TemplateView.
-        :type: str
+        :type project_name: str
         """
         self._project_name = project_name
 
@@ -405,7 +452,7 @@ class TemplateView:
         创建时间
 
         :param create_time: The create_time of this TemplateView.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -427,7 +474,7 @@ class TemplateView:
         修改时间
 
         :param last_modify_time: The last_modify_time of this TemplateView.
-        :type: str
+        :type last_modify_time: str
         """
         self._last_modify_time = last_modify_time
 
@@ -449,7 +496,7 @@ class TemplateView:
         是否关注
 
         :param is_watch: The is_watch of this TemplateView.
-        :type: bool
+        :type is_watch: bool
         """
         self._is_watch = is_watch
 
@@ -471,7 +518,7 @@ class TemplateView:
         模板描述
 
         :param description: The description of this TemplateView.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -482,7 +529,7 @@ class TemplateView:
         模板参数
 
         :return: The parameter of this TemplateView.
-        :rtype: list[TemplateParam]
+        :rtype: list[:class:`huaweicloudsdkcloudpipeline.v2.TemplateParam`]
         """
         return self._parameter
 
@@ -493,7 +540,7 @@ class TemplateView:
         模板参数
 
         :param parameter: The parameter of this TemplateView.
-        :type: list[TemplateParam]
+        :type parameter: list[:class:`huaweicloudsdkcloudpipeline.v2.TemplateParam`]
         """
         self._parameter = parameter
 
@@ -515,7 +562,7 @@ class TemplateView:
         编排flow详情，描述流水线内各阶段任务的串并行关系。map类型数据，key为阶段名字，默认第一阶段initial，最后阶段为final，其余名字以'state_数字'标识。value为该阶段内任务(以'Task_数字'标识)以及后续阶段的标识。本字段为描述流水线基础编排数据之一，建议可通过流水线真实界面基于模板创建接口中获取
 
         :param flow: The flow of this TemplateView.
-        :type: dict(str, dict(str, str))
+        :type flow: dict(str, dict(str, str))
         """
         self._flow = flow
 
@@ -537,7 +584,7 @@ class TemplateView:
         编排State详情，map类型数据。本字段为描述流水线基础编排数据之一，建议可通过流水线真实界面基于模板创建接口中获取
 
         :param states: The states of this TemplateView.
-        :type: dict(str, TemplateState)
+        :type states: dict(str, TemplateState)
         """
         self._states = states
 
@@ -559,7 +606,7 @@ class TemplateView:
         是否可以修改
 
         :param can_update: The can_update of this TemplateView.
-        :type: bool
+        :type can_update: bool
         """
         self._can_update = can_update
 
@@ -581,7 +628,7 @@ class TemplateView:
         是否可以删除
 
         :param can_delete: The can_delete of this TemplateView.
-        :type: bool
+        :type can_delete: bool
         """
         self._can_delete = can_delete
 
@@ -603,7 +650,7 @@ class TemplateView:
         是否需要代码仓库
 
         :param need_hub: The need_hub of this TemplateView.
-        :type: bool
+        :type need_hub: bool
         """
         self._need_hub = need_hub
 

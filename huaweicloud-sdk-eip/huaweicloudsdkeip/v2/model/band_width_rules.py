@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BandWidthRules:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class BandWidthRules:
     }
 
     def __init__(self, id=None, name=None, admin_state_up=None, egress_size=None, egress_guarented_size=None, publicip_info=None):
-        """BandWidthRules - a model defined in huaweicloud sdk"""
+        """BandWidthRules
+
+        The model defined in huaweicloud sdk
+
+        :param id: 带宽规则ID
+        :type id: str
+        :param name: 带宽规则名称
+        :type name: str
+        :param admin_state_up: 配置状态，为False时配置不生效。
+        :type admin_state_up: bool
+        :param egress_size: 出网带宽最大值，单位M bps。取值范围[0,n]，其中n为所属带宽的带宽大小（size字段）。0表示设置为最大带宽。
+        :type egress_size: int
+        :param egress_guarented_size: 出网保障带宽大小，单位M bps。取值范围[0,x]，其中x为所属带宽剩余的保障额。
+        :type egress_guarented_size: int
+        :param publicip_info: 功能说明：带宽对应的弹性公网IP信息  约束：WHOLE类型的带宽支持多个弹性公网IP，PER类型的带宽只能对应一个弹性公网IP
+        :type publicip_info: list[:class:`huaweicloudsdkeip.v2.PublicipInfoResp`]
+        """
         
         
 
@@ -83,7 +98,7 @@ class BandWidthRules:
         带宽规则ID
 
         :param id: The id of this BandWidthRules.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -105,7 +120,7 @@ class BandWidthRules:
         带宽规则名称
 
         :param name: The name of this BandWidthRules.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -127,7 +142,7 @@ class BandWidthRules:
         配置状态，为False时配置不生效。
 
         :param admin_state_up: The admin_state_up of this BandWidthRules.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 
@@ -149,7 +164,7 @@ class BandWidthRules:
         出网带宽最大值，单位M bps。取值范围[0,n]，其中n为所属带宽的带宽大小（size字段）。0表示设置为最大带宽。
 
         :param egress_size: The egress_size of this BandWidthRules.
-        :type: int
+        :type egress_size: int
         """
         self._egress_size = egress_size
 
@@ -171,7 +186,7 @@ class BandWidthRules:
         出网保障带宽大小，单位M bps。取值范围[0,x]，其中x为所属带宽剩余的保障额。
 
         :param egress_guarented_size: The egress_guarented_size of this BandWidthRules.
-        :type: int
+        :type egress_guarented_size: int
         """
         self._egress_guarented_size = egress_guarented_size
 
@@ -182,7 +197,7 @@ class BandWidthRules:
         功能说明：带宽对应的弹性公网IP信息  约束：WHOLE类型的带宽支持多个弹性公网IP，PER类型的带宽只能对应一个弹性公网IP
 
         :return: The publicip_info of this BandWidthRules.
-        :rtype: list[PublicipInfoResp]
+        :rtype: list[:class:`huaweicloudsdkeip.v2.PublicipInfoResp`]
         """
         return self._publicip_info
 
@@ -193,7 +208,7 @@ class BandWidthRules:
         功能说明：带宽对应的弹性公网IP信息  约束：WHOLE类型的带宽支持多个弹性公网IP，PER类型的带宽只能对应一个弹性公网IP
 
         :param publicip_info: The publicip_info of this BandWidthRules.
-        :type: list[PublicipInfoResp]
+        :type publicip_info: list[:class:`huaweicloudsdkeip.v2.PublicipInfoResp`]
         """
         self._publicip_info = publicip_info
 

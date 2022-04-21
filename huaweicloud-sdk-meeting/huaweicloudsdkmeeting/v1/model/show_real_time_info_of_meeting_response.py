@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowRealTimeInfoOfMeetingResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowRealTimeInfoOfMeetingResponse(SdkResponse):
     }
 
     def __init__(self, attendees=None, participants=None, conf_info=None):
-        """ShowRealTimeInfoOfMeetingResponse - a model defined in huaweicloud sdk"""
+        """ShowRealTimeInfoOfMeetingResponse
+
+        The model defined in huaweicloud sdk
+
+        :param attendees: 所有参加会议的与会者列表，包括未入会的以及在线的与会者信息。
+        :type attendees: list[:class:`huaweicloudsdkmeeting.v1.RealTimeAttendee`]
+        :param participants: 在线会场列表，包括已进入会议、呼叫中、正在加入会议的与会者列表等。
+        :type participants: list[:class:`huaweicloudsdkmeeting.v1.RealTimeParticipant`]
+        :param conf_info: 
+        :type conf_info: :class:`huaweicloudsdkmeeting.v1.RealTimeConfInfo`
+        """
         
         super(ShowRealTimeInfoOfMeetingResponse, self).__init__()
 
@@ -57,7 +66,7 @@ class ShowRealTimeInfoOfMeetingResponse(SdkResponse):
         所有参加会议的与会者列表，包括未入会的以及在线的与会者信息。
 
         :return: The attendees of this ShowRealTimeInfoOfMeetingResponse.
-        :rtype: list[RealTimeAttendee]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.RealTimeAttendee`]
         """
         return self._attendees
 
@@ -68,7 +77,7 @@ class ShowRealTimeInfoOfMeetingResponse(SdkResponse):
         所有参加会议的与会者列表，包括未入会的以及在线的与会者信息。
 
         :param attendees: The attendees of this ShowRealTimeInfoOfMeetingResponse.
-        :type: list[RealTimeAttendee]
+        :type attendees: list[:class:`huaweicloudsdkmeeting.v1.RealTimeAttendee`]
         """
         self._attendees = attendees
 
@@ -79,7 +88,7 @@ class ShowRealTimeInfoOfMeetingResponse(SdkResponse):
         在线会场列表，包括已进入会议、呼叫中、正在加入会议的与会者列表等。
 
         :return: The participants of this ShowRealTimeInfoOfMeetingResponse.
-        :rtype: list[RealTimeParticipant]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.RealTimeParticipant`]
         """
         return self._participants
 
@@ -90,7 +99,7 @@ class ShowRealTimeInfoOfMeetingResponse(SdkResponse):
         在线会场列表，包括已进入会议、呼叫中、正在加入会议的与会者列表等。
 
         :param participants: The participants of this ShowRealTimeInfoOfMeetingResponse.
-        :type: list[RealTimeParticipant]
+        :type participants: list[:class:`huaweicloudsdkmeeting.v1.RealTimeParticipant`]
         """
         self._participants = participants
 
@@ -100,7 +109,7 @@ class ShowRealTimeInfoOfMeetingResponse(SdkResponse):
 
 
         :return: The conf_info of this ShowRealTimeInfoOfMeetingResponse.
-        :rtype: RealTimeConfInfo
+        :rtype: :class:`huaweicloudsdkmeeting.v1.RealTimeConfInfo`
         """
         return self._conf_info
 
@@ -110,7 +119,7 @@ class ShowRealTimeInfoOfMeetingResponse(SdkResponse):
 
 
         :param conf_info: The conf_info of this ShowRealTimeInfoOfMeetingResponse.
-        :type: RealTimeConfInfo
+        :type conf_info: :class:`huaweicloudsdkmeeting.v1.RealTimeConfInfo`
         """
         self._conf_info = conf_info
 

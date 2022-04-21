@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowPriceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowPriceResponse(SdkResponse):
     }
 
     def __init__(self, prices=None, status=None):
-        """ShowPriceResponse - a model defined in huaweicloud sdk"""
+        """ShowPriceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param prices: 技术栈价格列表
+        :type prices: list[:class:`huaweicloudsdkcloudide.v2.ResourcePrice`]
+        :param status: 状态
+        :type status: str
+        """
         
         super(ShowPriceResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ShowPriceResponse(SdkResponse):
         技术栈价格列表
 
         :return: The prices of this ShowPriceResponse.
-        :rtype: list[ResourcePrice]
+        :rtype: list[:class:`huaweicloudsdkcloudide.v2.ResourcePrice`]
         """
         return self._prices
 
@@ -63,7 +70,7 @@ class ShowPriceResponse(SdkResponse):
         技术栈价格列表
 
         :param prices: The prices of this ShowPriceResponse.
-        :type: list[ResourcePrice]
+        :type prices: list[:class:`huaweicloudsdkcloudide.v2.ResourcePrice`]
         """
         self._prices = prices
 
@@ -85,7 +92,7 @@ class ShowPriceResponse(SdkResponse):
         状态
 
         :param status: The status of this ShowPriceResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowHistoryRunInfoResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowHistoryRunInfoResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, log_list=None):
-        """ShowHistoryRunInfoResponse - a model defined in huaweicloud sdk"""
+        """ShowHistoryRunInfoResponse
+
+        The model defined in huaweicloud sdk
+
+        :param code: code
+        :type code: str
+        :param message: message
+        :type message: str
+        :param log_list: log_list
+        :type log_list: list[:class:`huaweicloudsdkcpts.v1.HistoryRunInfo`]
+        """
         
         super(ShowHistoryRunInfoResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ShowHistoryRunInfoResponse(SdkResponse):
         code
 
         :param code: The code of this ShowHistoryRunInfoResponse.
-        :type: str
+        :type code: str
         """
         self._code = code
 
@@ -90,7 +99,7 @@ class ShowHistoryRunInfoResponse(SdkResponse):
         message
 
         :param message: The message of this ShowHistoryRunInfoResponse.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -101,7 +110,7 @@ class ShowHistoryRunInfoResponse(SdkResponse):
         log_list
 
         :return: The log_list of this ShowHistoryRunInfoResponse.
-        :rtype: list[HistoryRunInfo]
+        :rtype: list[:class:`huaweicloudsdkcpts.v1.HistoryRunInfo`]
         """
         return self._log_list
 
@@ -112,7 +121,7 @@ class ShowHistoryRunInfoResponse(SdkResponse):
         log_list
 
         :param log_list: The log_list of this ShowHistoryRunInfoResponse.
-        :type: list[HistoryRunInfo]
+        :type log_list: list[:class:`huaweicloudsdkcpts.v1.HistoryRunInfo`]
         """
         self._log_list = log_list
 

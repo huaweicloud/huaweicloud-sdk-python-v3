@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CrlConfiguration:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CrlConfiguration:
     }
 
     def __init__(self, enabled=None, crl_name=None, obs_bucket_name=None, valid_days=None):
-        """CrlConfiguration - a model defined in huaweicloud sdk"""
+        """CrlConfiguration
+
+        The model defined in huaweicloud sdk
+
+        :param enabled: 是否启用CRL发布功能。 - **true** - **false**
+        :type enabled: bool
+        :param crl_name: 吊销列表文件名称。 &gt; 若用户不指定，系统将默认采用当前证书的父CA ID。
+        :type crl_name: str
+        :param obs_bucket_name: OBS桶名称。 &gt; 当需要启用CRL发布功能： &gt; - 此参数为必填项，且用户必须已创建委托授权，授予PCA服务对OBS的相关权限，具体参见本文档：**证书吊销处理&gt;查看是否具有委托权限**、**证书吊销处理&gt;创建委托**； &gt; - 指定的OBS桶必须存在，否则将报错。
+        :type obs_bucket_name: str
+        :param valid_days: CRL更新周期，单位为\&quot;天\&quot;。当启用CRL发布功能，为必填项。
+        :type valid_days: int
+        """
         
         
 
@@ -72,7 +83,7 @@ class CrlConfiguration:
         是否启用CRL发布功能。 - **true** - **false**
 
         :param enabled: The enabled of this CrlConfiguration.
-        :type: bool
+        :type enabled: bool
         """
         self._enabled = enabled
 
@@ -94,7 +105,7 @@ class CrlConfiguration:
         吊销列表文件名称。 > 若用户不指定，系统将默认采用当前证书的父CA ID。
 
         :param crl_name: The crl_name of this CrlConfiguration.
-        :type: str
+        :type crl_name: str
         """
         self._crl_name = crl_name
 
@@ -116,7 +127,7 @@ class CrlConfiguration:
         OBS桶名称。 > 当需要启用CRL发布功能： > - 此参数为必填项，且用户必须已创建委托授权，授予PCA服务对OBS的相关权限，具体参见本文档：**证书吊销处理>查看是否具有委托权限**、**证书吊销处理>创建委托**； > - 指定的OBS桶必须存在，否则将报错。
 
         :param obs_bucket_name: The obs_bucket_name of this CrlConfiguration.
-        :type: str
+        :type obs_bucket_name: str
         """
         self._obs_bucket_name = obs_bucket_name
 
@@ -138,7 +149,7 @@ class CrlConfiguration:
         CRL更新周期，单位为\"天\"。当启用CRL发布功能，为必填项。
 
         :param valid_days: The valid_days of this CrlConfiguration.
-        :type: int
+        :type valid_days: int
         """
         self._valid_days = valid_days
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UserInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UserInfo:
     }
 
     def __init__(self, id=None, name=None, domain=None):
-        """UserInfo - a model defined in huaweicloud sdk"""
+        """UserInfo
+
+        The model defined in huaweicloud sdk
+
+        :param id: 账号ID，参见《云审计服务API参考》“获取账号ID和项目ID”章节。
+        :type id: str
+        :param name: 账号名称。
+        :type name: str
+        :param domain: 
+        :type domain: :class:`huaweicloudsdkcts.v3.BaseUser`
+        """
         
         
 
@@ -68,7 +77,7 @@ class UserInfo:
         账号ID，参见《云审计服务API参考》“获取账号ID和项目ID”章节。
 
         :param id: The id of this UserInfo.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -90,7 +99,7 @@ class UserInfo:
         账号名称。
 
         :param name: The name of this UserInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -100,7 +109,7 @@ class UserInfo:
 
 
         :return: The domain of this UserInfo.
-        :rtype: BaseUser
+        :rtype: :class:`huaweicloudsdkcts.v3.BaseUser`
         """
         return self._domain
 
@@ -110,7 +119,7 @@ class UserInfo:
 
 
         :param domain: The domain of this UserInfo.
-        :type: BaseUser
+        :type domain: :class:`huaweicloudsdkcts.v3.BaseUser`
         """
         self._domain = domain
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MysqlInstanceNodeInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -62,7 +61,45 @@ class MysqlInstanceNodeInfo:
     }
 
     def __init__(self, id=None, name=None, type=None, status=None, port=None, private_read_ips=None, volume=None, az_code=None, region_code=None, created=None, updated=None, flavor_ref=None, max_connections=None, vcpus=None, ram=None, need_restart=None, priotiry=None):
-        """MysqlInstanceNodeInfo - a model defined in huaweicloud sdk"""
+        """MysqlInstanceNodeInfo
+
+        The model defined in huaweicloud sdk
+
+        :param id: 实例ID。
+        :type id: str
+        :param name: 节点名称。
+        :type name: str
+        :param type: 节点类型，master或slave。
+        :type type: str
+        :param status: 节点状态。
+        :type status: str
+        :param port: 数据库端口号。
+        :type port: int
+        :param private_read_ips: 节点的读内网地址。
+        :type private_read_ips: list[str]
+        :param volume: 
+        :type volume: :class:`huaweicloudsdkgaussdb.v3.MysqlInstanceNodeVolumeInfo`
+        :param az_code: 可用区。
+        :type az_code: str
+        :param region_code: 实例所在的区域。
+        :type region_code: str
+        :param created: 创建时间，格式为\&quot;yyyy-mm-ddThh:mm:ssZ\&quot;。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。说明：创建时返回值为空，数据库实例创建成功后该值不为空。
+        :type created: str
+        :param updated: 更新时间，格式与\&quot;created\&quot;字段对应格式完全相同。说明：创建时返回值为空，数据库实例创建成功后该值不为空。
+        :type updated: str
+        :param flavor_ref: 规格码。
+        :type flavor_ref: str
+        :param max_connections: 允许的最大连接数。
+        :type max_connections: str
+        :param vcpus: CPU核数。
+        :type vcpus: str
+        :param ram: 内存大小，单位为GB。
+        :type ram: str
+        :param need_restart: 是否需要重启使修改的参数生效。
+        :type need_restart: bool
+        :param priotiry: 主备倒换优先级。
+        :type priotiry: int
+        """
         
         
 
@@ -136,7 +173,7 @@ class MysqlInstanceNodeInfo:
         实例ID。
 
         :param id: The id of this MysqlInstanceNodeInfo.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -158,7 +195,7 @@ class MysqlInstanceNodeInfo:
         节点名称。
 
         :param name: The name of this MysqlInstanceNodeInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -180,7 +217,7 @@ class MysqlInstanceNodeInfo:
         节点类型，master或slave。
 
         :param type: The type of this MysqlInstanceNodeInfo.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -202,7 +239,7 @@ class MysqlInstanceNodeInfo:
         节点状态。
 
         :param status: The status of this MysqlInstanceNodeInfo.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -224,7 +261,7 @@ class MysqlInstanceNodeInfo:
         数据库端口号。
 
         :param port: The port of this MysqlInstanceNodeInfo.
-        :type: int
+        :type port: int
         """
         self._port = port
 
@@ -246,7 +283,7 @@ class MysqlInstanceNodeInfo:
         节点的读内网地址。
 
         :param private_read_ips: The private_read_ips of this MysqlInstanceNodeInfo.
-        :type: list[str]
+        :type private_read_ips: list[str]
         """
         self._private_read_ips = private_read_ips
 
@@ -256,7 +293,7 @@ class MysqlInstanceNodeInfo:
 
 
         :return: The volume of this MysqlInstanceNodeInfo.
-        :rtype: MysqlInstanceNodeVolumeInfo
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlInstanceNodeVolumeInfo`
         """
         return self._volume
 
@@ -266,7 +303,7 @@ class MysqlInstanceNodeInfo:
 
 
         :param volume: The volume of this MysqlInstanceNodeInfo.
-        :type: MysqlInstanceNodeVolumeInfo
+        :type volume: :class:`huaweicloudsdkgaussdb.v3.MysqlInstanceNodeVolumeInfo`
         """
         self._volume = volume
 
@@ -288,7 +325,7 @@ class MysqlInstanceNodeInfo:
         可用区。
 
         :param az_code: The az_code of this MysqlInstanceNodeInfo.
-        :type: str
+        :type az_code: str
         """
         self._az_code = az_code
 
@@ -310,7 +347,7 @@ class MysqlInstanceNodeInfo:
         实例所在的区域。
 
         :param region_code: The region_code of this MysqlInstanceNodeInfo.
-        :type: str
+        :type region_code: str
         """
         self._region_code = region_code
 
@@ -332,7 +369,7 @@ class MysqlInstanceNodeInfo:
         创建时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。说明：创建时返回值为空，数据库实例创建成功后该值不为空。
 
         :param created: The created of this MysqlInstanceNodeInfo.
-        :type: str
+        :type created: str
         """
         self._created = created
 
@@ -354,7 +391,7 @@ class MysqlInstanceNodeInfo:
         更新时间，格式与\"created\"字段对应格式完全相同。说明：创建时返回值为空，数据库实例创建成功后该值不为空。
 
         :param updated: The updated of this MysqlInstanceNodeInfo.
-        :type: str
+        :type updated: str
         """
         self._updated = updated
 
@@ -376,7 +413,7 @@ class MysqlInstanceNodeInfo:
         规格码。
 
         :param flavor_ref: The flavor_ref of this MysqlInstanceNodeInfo.
-        :type: str
+        :type flavor_ref: str
         """
         self._flavor_ref = flavor_ref
 
@@ -398,7 +435,7 @@ class MysqlInstanceNodeInfo:
         允许的最大连接数。
 
         :param max_connections: The max_connections of this MysqlInstanceNodeInfo.
-        :type: str
+        :type max_connections: str
         """
         self._max_connections = max_connections
 
@@ -420,7 +457,7 @@ class MysqlInstanceNodeInfo:
         CPU核数。
 
         :param vcpus: The vcpus of this MysqlInstanceNodeInfo.
-        :type: str
+        :type vcpus: str
         """
         self._vcpus = vcpus
 
@@ -442,7 +479,7 @@ class MysqlInstanceNodeInfo:
         内存大小，单位为GB。
 
         :param ram: The ram of this MysqlInstanceNodeInfo.
-        :type: str
+        :type ram: str
         """
         self._ram = ram
 
@@ -464,7 +501,7 @@ class MysqlInstanceNodeInfo:
         是否需要重启使修改的参数生效。
 
         :param need_restart: The need_restart of this MysqlInstanceNodeInfo.
-        :type: bool
+        :type need_restart: bool
         """
         self._need_restart = need_restart
 
@@ -486,7 +523,7 @@ class MysqlInstanceNodeInfo:
         主备倒换优先级。
 
         :param priotiry: The priotiry of this MysqlInstanceNodeInfo.
-        :type: int
+        :type priotiry: int
         """
         self._priotiry = priotiry
 

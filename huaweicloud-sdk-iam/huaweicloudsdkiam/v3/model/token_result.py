@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TokenResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class TokenResult:
     }
 
     def __init__(self, catalog=None, domain=None, expires_at=None, issued_at=None, methods=None, project=None, roles=None, user=None):
-        """TokenResult - a model defined in huaweicloud sdk"""
+        """TokenResult
+
+        The model defined in huaweicloud sdk
+
+        :param catalog: 服务目录信息。
+        :type catalog: list[:class:`huaweicloudsdkiam.v3.TokenCatalog`]
+        :param domain: 
+        :type domain: :class:`huaweicloudsdkiam.v3.TokenDomainResult`
+        :param expires_at: token过期时间。
+        :type expires_at: str
+        :param issued_at: token下发时间。
+        :type issued_at: str
+        :param methods: 获取token的方式。
+        :type methods: list[str]
+        :param project: 
+        :type project: :class:`huaweicloudsdkiam.v3.TokenProjectResult`
+        :param roles: token的权限信息。
+        :type roles: list[:class:`huaweicloudsdkiam.v3.TokenRole`]
+        :param user: 
+        :type user: :class:`huaweicloudsdkiam.v3.TokenUserResult`
+        """
         
         
 
@@ -76,7 +95,7 @@ class TokenResult:
         服务目录信息。
 
         :return: The catalog of this TokenResult.
-        :rtype: list[TokenCatalog]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.TokenCatalog`]
         """
         return self._catalog
 
@@ -87,7 +106,7 @@ class TokenResult:
         服务目录信息。
 
         :param catalog: The catalog of this TokenResult.
-        :type: list[TokenCatalog]
+        :type catalog: list[:class:`huaweicloudsdkiam.v3.TokenCatalog`]
         """
         self._catalog = catalog
 
@@ -97,7 +116,7 @@ class TokenResult:
 
 
         :return: The domain of this TokenResult.
-        :rtype: TokenDomainResult
+        :rtype: :class:`huaweicloudsdkiam.v3.TokenDomainResult`
         """
         return self._domain
 
@@ -107,7 +126,7 @@ class TokenResult:
 
 
         :param domain: The domain of this TokenResult.
-        :type: TokenDomainResult
+        :type domain: :class:`huaweicloudsdkiam.v3.TokenDomainResult`
         """
         self._domain = domain
 
@@ -129,7 +148,7 @@ class TokenResult:
         token过期时间。
 
         :param expires_at: The expires_at of this TokenResult.
-        :type: str
+        :type expires_at: str
         """
         self._expires_at = expires_at
 
@@ -151,7 +170,7 @@ class TokenResult:
         token下发时间。
 
         :param issued_at: The issued_at of this TokenResult.
-        :type: str
+        :type issued_at: str
         """
         self._issued_at = issued_at
 
@@ -173,7 +192,7 @@ class TokenResult:
         获取token的方式。
 
         :param methods: The methods of this TokenResult.
-        :type: list[str]
+        :type methods: list[str]
         """
         self._methods = methods
 
@@ -183,7 +202,7 @@ class TokenResult:
 
 
         :return: The project of this TokenResult.
-        :rtype: TokenProjectResult
+        :rtype: :class:`huaweicloudsdkiam.v3.TokenProjectResult`
         """
         return self._project
 
@@ -193,7 +212,7 @@ class TokenResult:
 
 
         :param project: The project of this TokenResult.
-        :type: TokenProjectResult
+        :type project: :class:`huaweicloudsdkiam.v3.TokenProjectResult`
         """
         self._project = project
 
@@ -204,7 +223,7 @@ class TokenResult:
         token的权限信息。
 
         :return: The roles of this TokenResult.
-        :rtype: list[TokenRole]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.TokenRole`]
         """
         return self._roles
 
@@ -215,7 +234,7 @@ class TokenResult:
         token的权限信息。
 
         :param roles: The roles of this TokenResult.
-        :type: list[TokenRole]
+        :type roles: list[:class:`huaweicloudsdkiam.v3.TokenRole`]
         """
         self._roles = roles
 
@@ -225,7 +244,7 @@ class TokenResult:
 
 
         :return: The user of this TokenResult.
-        :rtype: TokenUserResult
+        :rtype: :class:`huaweicloudsdkiam.v3.TokenUserResult`
         """
         return self._user
 
@@ -235,7 +254,7 @@ class TokenResult:
 
 
         :param user: The user of this TokenResult.
-        :type: TokenUserResult
+        :type user: :class:`huaweicloudsdkiam.v3.TokenUserResult`
         """
         self._user = user
 

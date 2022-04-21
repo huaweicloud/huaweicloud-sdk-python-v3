@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class JobInstance:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class JobInstance:
     }
 
     def __init__(self, job_name=None, status=None, plan_time=None, start_time=None, end_time=None, execute_time=None, instances_id=None):
-        """JobInstance - a model defined in huaweicloud sdk"""
+        """JobInstance
+
+        The model defined in huaweicloud sdk
+
+        :param job_name: 
+        :type job_name: str
+        :param status: 
+        :type status: str
+        :param plan_time: 
+        :type plan_time: int
+        :param start_time: 
+        :type start_time: int
+        :param end_time: 
+        :type end_time: int
+        :param execute_time: 
+        :type execute_time: int
+        :param instances_id: 
+        :type instances_id: str
+        """
         
         
 
@@ -86,7 +103,7 @@ class JobInstance:
 
 
         :param job_name: The job_name of this JobInstance.
-        :type: str
+        :type job_name: str
         """
         self._job_name = job_name
 
@@ -106,7 +123,7 @@ class JobInstance:
 
 
         :param status: The status of this JobInstance.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -126,7 +143,7 @@ class JobInstance:
 
 
         :param plan_time: The plan_time of this JobInstance.
-        :type: int
+        :type plan_time: int
         """
         self._plan_time = plan_time
 
@@ -146,7 +163,7 @@ class JobInstance:
 
 
         :param start_time: The start_time of this JobInstance.
-        :type: int
+        :type start_time: int
         """
         self._start_time = start_time
 
@@ -166,7 +183,7 @@ class JobInstance:
 
 
         :param end_time: The end_time of this JobInstance.
-        :type: int
+        :type end_time: int
         """
         self._end_time = end_time
 
@@ -186,7 +203,7 @@ class JobInstance:
 
 
         :param execute_time: The execute_time of this JobInstance.
-        :type: int
+        :type execute_time: int
         """
         self._execute_time = execute_time
 
@@ -206,7 +223,7 @@ class JobInstance:
 
 
         :param instances_id: The instances_id of this JobInstance.
-        :type: str
+        :type instances_id: str
         """
         self._instances_id = instances_id
 

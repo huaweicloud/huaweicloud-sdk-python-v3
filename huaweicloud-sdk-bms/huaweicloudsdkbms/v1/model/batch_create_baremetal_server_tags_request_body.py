@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchCreateBaremetalServerTagsRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchCreateBaremetalServerTagsRequestBody:
     }
 
     def __init__(self, action=None, tags=None):
-        """BatchCreateBaremetalServerTagsRequestBody - a model defined in huaweicloud sdk"""
+        """BatchCreateBaremetalServerTagsRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param action: 操作标识（仅支持小写）：create（创建）。
+        :type action: str
+        :param tags: 标签列表。
+        :type tags: list[:class:`huaweicloudsdkbms.v1.BaremetalServerTag`]
+        """
         
         
 
@@ -61,7 +68,7 @@ class BatchCreateBaremetalServerTagsRequestBody:
         操作标识（仅支持小写）：create（创建）。
 
         :param action: The action of this BatchCreateBaremetalServerTagsRequestBody.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -72,7 +79,7 @@ class BatchCreateBaremetalServerTagsRequestBody:
         标签列表。
 
         :return: The tags of this BatchCreateBaremetalServerTagsRequestBody.
-        :rtype: list[BaremetalServerTag]
+        :rtype: list[:class:`huaweicloudsdkbms.v1.BaremetalServerTag`]
         """
         return self._tags
 
@@ -83,7 +90,7 @@ class BatchCreateBaremetalServerTagsRequestBody:
         标签列表。
 
         :param tags: The tags of this BatchCreateBaremetalServerTagsRequestBody.
-        :type: list[BaremetalServerTag]
+        :type tags: list[:class:`huaweicloudsdkbms.v1.BaremetalServerTag`]
         """
         self._tags = tags
 

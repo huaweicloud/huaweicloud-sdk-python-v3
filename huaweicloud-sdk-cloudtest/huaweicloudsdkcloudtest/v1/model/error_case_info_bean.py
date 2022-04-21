@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ErrorCaseInfoBean:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ErrorCaseInfoBean:
     }
 
     def __init__(self, error_code=None, error_msg=None, testcase_id=None):
-        """ErrorCaseInfoBean - a model defined in huaweicloud sdk"""
+        """ErrorCaseInfoBean
+
+        The model defined in huaweicloud sdk
+
+        :param error_code: 失败错误码
+        :type error_code: str
+        :param error_msg: 失败错误信息
+        :type error_msg: str
+        :param testcase_id: 失败资源信息
+        :type testcase_id: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class ErrorCaseInfoBean:
         失败错误码
 
         :param error_code: The error_code of this ErrorCaseInfoBean.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -90,7 +99,7 @@ class ErrorCaseInfoBean:
         失败错误信息
 
         :param error_msg: The error_msg of this ErrorCaseInfoBean.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 
@@ -112,7 +121,7 @@ class ErrorCaseInfoBean:
         失败资源信息
 
         :param testcase_id: The testcase_id of this ErrorCaseInfoBean.
-        :type: str
+        :type testcase_id: str
         """
         self._testcase_id = testcase_id
 

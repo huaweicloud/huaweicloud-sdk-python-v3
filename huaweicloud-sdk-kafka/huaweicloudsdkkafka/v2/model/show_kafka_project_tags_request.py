@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowKafkaProjectTagsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class ShowKafkaProjectTagsRequest:
     }
 
     def __init__(self):
-        """ShowKafkaProjectTagsRequest - a model defined in huaweicloud sdk"""
+        """ShowKafkaProjectTagsRequest
+
+        The model defined in huaweicloud sdk
+
+        """
         
         
         self.discriminator = None

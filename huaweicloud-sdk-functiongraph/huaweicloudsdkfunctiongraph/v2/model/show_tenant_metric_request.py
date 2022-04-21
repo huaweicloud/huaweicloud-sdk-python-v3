@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowTenantMetricRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowTenantMetricRequest:
     }
 
     def __init__(self, period=None):
-        """ShowTenantMetricRequest - a model defined in huaweicloud sdk"""
+        """ShowTenantMetricRequest
+
+        The model defined in huaweicloud sdk
+
+        :param period: 时间段，单位为分钟
+        :type period: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class ShowTenantMetricRequest:
         时间段，单位为分钟
 
         :param period: The period of this ShowTenantMetricRequest.
-        :type: str
+        :type period: str
         """
         self._period = period
 

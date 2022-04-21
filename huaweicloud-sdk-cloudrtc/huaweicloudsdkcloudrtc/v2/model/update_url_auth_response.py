@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateUrlAuthResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateUrlAuthResponse(SdkResponse):
     }
 
     def __init__(self, app_id=None, authentication=None, x_request_id=None):
-        """UpdateUrlAuthResponse - a model defined in huaweicloud sdk"""
+        """UpdateUrlAuthResponse
+
+        The model defined in huaweicloud sdk
+
+        :param app_id: 应用id
+        :type app_id: str
+        :param authentication: 
+        :type authentication: :class:`huaweicloudsdkcloudrtc.v2.AppAuth`
+        :param x_request_id: 
+        :type x_request_id: str
+        """
         
         super(UpdateUrlAuthResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class UpdateUrlAuthResponse(SdkResponse):
         应用id
 
         :param app_id: The app_id of this UpdateUrlAuthResponse.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -78,7 +87,7 @@ class UpdateUrlAuthResponse(SdkResponse):
 
 
         :return: The authentication of this UpdateUrlAuthResponse.
-        :rtype: AppAuth
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.AppAuth`
         """
         return self._authentication
 
@@ -88,7 +97,7 @@ class UpdateUrlAuthResponse(SdkResponse):
 
 
         :param authentication: The authentication of this UpdateUrlAuthResponse.
-        :type: AppAuth
+        :type authentication: :class:`huaweicloudsdkcloudrtc.v2.AppAuth`
         """
         self._authentication = authentication
 
@@ -108,7 +117,7 @@ class UpdateUrlAuthResponse(SdkResponse):
 
 
         :param x_request_id: The x_request_id of this UpdateUrlAuthResponse.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 

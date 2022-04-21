@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDatabaseWaterMarkResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowDatabaseWaterMarkResponse(SdkResponse):
     }
 
     def __init__(self, watermarks=None):
-        """ShowDatabaseWaterMarkResponse - a model defined in huaweicloud sdk"""
+        """ShowDatabaseWaterMarkResponse
+
+        The model defined in huaweicloud sdk
+
+        :param watermarks: 提取水印内容列表。上传数据中不同列可能包含不同水印，返回时将所有提取到的水印返回，列表中水印个数不超过100
+        :type watermarks: list[str]
+        """
         
         super(ShowDatabaseWaterMarkResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class ShowDatabaseWaterMarkResponse(SdkResponse):
         提取水印内容列表。上传数据中不同列可能包含不同水印，返回时将所有提取到的水印返回，列表中水印个数不超过100
 
         :param watermarks: The watermarks of this ShowDatabaseWaterMarkResponse.
-        :type: list[str]
+        :type watermarks: list[str]
         """
         self._watermarks = watermarks
 

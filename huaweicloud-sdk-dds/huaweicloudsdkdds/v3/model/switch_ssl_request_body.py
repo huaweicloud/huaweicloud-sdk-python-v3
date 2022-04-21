@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SwitchSslRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class SwitchSslRequestBody:
     }
 
     def __init__(self, ssl_option=None):
-        """SwitchSslRequestBody - a model defined in huaweicloud sdk"""
+        """SwitchSslRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param ssl_option: SSL开关选项。取值：取“0”，表示DDS实例默认不启用SSL连接。取“1”，表示DDS实例默认启用SSL连接。
+        :type ssl_option: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class SwitchSslRequestBody:
         SSL开关选项。取值：取“0”，表示DDS实例默认不启用SSL连接。取“1”，表示DDS实例默认启用SSL连接。
 
         :param ssl_option: The ssl_option of this SwitchSslRequestBody.
-        :type: str
+        :type ssl_option: str
         """
         self._ssl_option = ssl_option
 

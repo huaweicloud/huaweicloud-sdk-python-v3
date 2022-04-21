@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ErrorSample:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ErrorSample:
     }
 
     def __init__(self, source=None, count=None, msg=None):
-        """ErrorSample - a model defined in huaweicloud sdk"""
+        """ErrorSample
+
+        The model defined in huaweicloud sdk
+
+        :param source: 检测源描述。
+        :type source: str
+        :param count: 此错误共计次数。
+        :type count: int
+        :param msg: 错误数据和错误提示消息。
+        :type msg: str
+        """
         
         
 
@@ -67,7 +76,7 @@ class ErrorSample:
         检测源描述。
 
         :param source: The source of this ErrorSample.
-        :type: str
+        :type source: str
         """
         self._source = source
 
@@ -89,7 +98,7 @@ class ErrorSample:
         此错误共计次数。
 
         :param count: The count of this ErrorSample.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -111,7 +120,7 @@ class ErrorSample:
         错误数据和错误提示消息。
 
         :param msg: The msg of this ErrorSample.
-        :type: str
+        :type msg: str
         """
         self._msg = msg
 

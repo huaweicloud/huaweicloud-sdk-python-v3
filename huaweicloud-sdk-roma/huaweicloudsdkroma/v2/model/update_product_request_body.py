@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateProductRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class UpdateProductRequestBody:
     }
 
     def __init__(self, name=None, description=None, manufacturer_id=None, manufacturer_name=None, model=None, device_type=None, version=None):
-        """UpdateProductRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateProductRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param name: 产品名称，创建产品时租户内唯一，长度1-64，仅支持中文，英文字母，数字，下划线和中划线
+        :type name: str
+        :param description: 产品描述，长度0-200
+        :type description: str
+        :param manufacturer_id: 产品供应商ID，支持英文大小写，数字，下划线和中划线，长度2-50
+        :type manufacturer_id: str
+        :param manufacturer_name: 厂商名称，支持长度2-64
+        :type manufacturer_name: str
+        :param model: 产品型号，支持英文大小写，数字，下划线，中划线和空格(首尾空格会被忽略)，长度2-50
+        :type model: str
+        :param device_type: 产品的设备类型（默认Default Type）
+        :type device_type: str
+        :param version: 模型版本
+        :type version: str
+        """
         
         
 
@@ -83,7 +100,7 @@ class UpdateProductRequestBody:
         产品名称，创建产品时租户内唯一，长度1-64，仅支持中文，英文字母，数字，下划线和中划线
 
         :param name: The name of this UpdateProductRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -105,7 +122,7 @@ class UpdateProductRequestBody:
         产品描述，长度0-200
 
         :param description: The description of this UpdateProductRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -127,7 +144,7 @@ class UpdateProductRequestBody:
         产品供应商ID，支持英文大小写，数字，下划线和中划线，长度2-50
 
         :param manufacturer_id: The manufacturer_id of this UpdateProductRequestBody.
-        :type: str
+        :type manufacturer_id: str
         """
         self._manufacturer_id = manufacturer_id
 
@@ -149,7 +166,7 @@ class UpdateProductRequestBody:
         厂商名称，支持长度2-64
 
         :param manufacturer_name: The manufacturer_name of this UpdateProductRequestBody.
-        :type: str
+        :type manufacturer_name: str
         """
         self._manufacturer_name = manufacturer_name
 
@@ -171,7 +188,7 @@ class UpdateProductRequestBody:
         产品型号，支持英文大小写，数字，下划线，中划线和空格(首尾空格会被忽略)，长度2-50
 
         :param model: The model of this UpdateProductRequestBody.
-        :type: str
+        :type model: str
         """
         self._model = model
 
@@ -193,7 +210,7 @@ class UpdateProductRequestBody:
         产品的设备类型（默认Default Type）
 
         :param device_type: The device_type of this UpdateProductRequestBody.
-        :type: str
+        :type device_type: str
         """
         self._device_type = device_type
 
@@ -215,7 +232,7 @@ class UpdateProductRequestBody:
         模型版本
 
         :param version: The version of this UpdateProductRequestBody.
-        :type: str
+        :type version: str
         """
         self._version = version
 

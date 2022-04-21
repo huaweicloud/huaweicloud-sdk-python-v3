@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowCoordinatorsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowCoordinatorsResponse(SdkResponse):
     }
 
     def __init__(self, coordinators=None):
-        """ShowCoordinatorsResponse - a model defined in huaweicloud sdk"""
+        """ShowCoordinatorsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param coordinators: 所有消费组对应的协调器列表。
+        :type coordinators: list[:class:`huaweicloudsdkkafka.v2.ShowCoordinatorsRespCoordinators`]
+        """
         
         super(ShowCoordinatorsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ShowCoordinatorsResponse(SdkResponse):
         所有消费组对应的协调器列表。
 
         :return: The coordinators of this ShowCoordinatorsResponse.
-        :rtype: list[ShowCoordinatorsRespCoordinators]
+        :rtype: list[:class:`huaweicloudsdkkafka.v2.ShowCoordinatorsRespCoordinators`]
         """
         return self._coordinators
 
@@ -58,7 +63,7 @@ class ShowCoordinatorsResponse(SdkResponse):
         所有消费组对应的协调器列表。
 
         :param coordinators: The coordinators of this ShowCoordinatorsResponse.
-        :type: list[ShowCoordinatorsRespCoordinators]
+        :type coordinators: list[:class:`huaweicloudsdkkafka.v2.ShowCoordinatorsRespCoordinators`]
         """
         self._coordinators = coordinators
 

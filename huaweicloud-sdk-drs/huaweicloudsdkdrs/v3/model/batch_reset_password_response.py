@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchResetPasswordResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchResetPasswordResponse(SdkResponse):
     }
 
     def __init__(self, results=None, count=None):
-        """BatchResetPasswordResponse - a model defined in huaweicloud sdk"""
+        """BatchResetPasswordResponse
+
+        The model defined in huaweicloud sdk
+
+        :param results: 
+        :type results: list[:class:`huaweicloudsdkdrs.v3.ModifyDbPwdResp`]
+        :param count: 总数
+        :type count: int
+        """
         
         super(BatchResetPasswordResponse, self).__init__()
 
@@ -51,7 +58,7 @@ class BatchResetPasswordResponse(SdkResponse):
 
 
         :return: The results of this BatchResetPasswordResponse.
-        :rtype: list[ModifyDbPwdResp]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.ModifyDbPwdResp`]
         """
         return self._results
 
@@ -61,7 +68,7 @@ class BatchResetPasswordResponse(SdkResponse):
 
 
         :param results: The results of this BatchResetPasswordResponse.
-        :type: list[ModifyDbPwdResp]
+        :type results: list[:class:`huaweicloudsdkdrs.v3.ModifyDbPwdResp`]
         """
         self._results = results
 
@@ -83,7 +90,7 @@ class BatchResetPasswordResponse(SdkResponse):
         总数
 
         :param count: The count of this BatchResetPasswordResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

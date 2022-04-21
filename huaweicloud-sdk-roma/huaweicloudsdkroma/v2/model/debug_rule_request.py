@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DebugRuleRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DebugRuleRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """DebugRuleRequest - a model defined in huaweicloud sdk"""
+        """DebugRuleRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param body: Body of the DebugRuleRequest
+        :type body: :class:`huaweicloudsdkroma.v2.DebugRuleRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class DebugRuleRequest:
         实例ID
 
         :param instance_id: The instance_id of this DebugRuleRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -72,7 +79,7 @@ class DebugRuleRequest:
 
 
         :return: The body of this DebugRuleRequest.
-        :rtype: DebugRuleRequestBody
+        :rtype: :class:`huaweicloudsdkroma.v2.DebugRuleRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class DebugRuleRequest:
 
 
         :param body: The body of this DebugRuleRequest.
-        :type: DebugRuleRequestBody
+        :type body: :class:`huaweicloudsdkroma.v2.DebugRuleRequestBody`
         """
         self._body = body
 

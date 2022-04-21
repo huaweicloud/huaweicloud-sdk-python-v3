@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DetectFaceByUrlResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DetectFaceByUrlResponse(SdkResponse):
     }
 
     def __init__(self, faces=None):
-        """DetectFaceByUrlResponse - a model defined in huaweicloud sdk"""
+        """DetectFaceByUrlResponse
+
+        The model defined in huaweicloud sdk
+
+        :param faces: 检测到的人脸。 调用失败时无此字段。
+        :type faces: list[:class:`huaweicloudsdkfrs.v2.DetectFace`]
+        """
         
         super(DetectFaceByUrlResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class DetectFaceByUrlResponse(SdkResponse):
         检测到的人脸。 调用失败时无此字段。
 
         :return: The faces of this DetectFaceByUrlResponse.
-        :rtype: list[DetectFace]
+        :rtype: list[:class:`huaweicloudsdkfrs.v2.DetectFace`]
         """
         return self._faces
 
@@ -58,7 +63,7 @@ class DetectFaceByUrlResponse(SdkResponse):
         检测到的人脸。 调用失败时无此字段。
 
         :param faces: The faces of this DetectFaceByUrlResponse.
-        :type: list[DetectFace]
+        :type faces: list[:class:`huaweicloudsdkfrs.v2.DetectFace`]
         """
         self._faces = faces
 

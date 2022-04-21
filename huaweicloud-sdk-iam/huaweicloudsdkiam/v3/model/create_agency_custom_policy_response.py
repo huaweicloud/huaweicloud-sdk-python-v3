@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateAgencyCustomPolicyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateAgencyCustomPolicyResponse(SdkResponse):
     }
 
     def __init__(self, role=None):
-        """CreateAgencyCustomPolicyResponse - a model defined in huaweicloud sdk"""
+        """CreateAgencyCustomPolicyResponse
+
+        The model defined in huaweicloud sdk
+
+        :param role: 
+        :type role: :class:`huaweicloudsdkiam.v3.AgencyPolicyRoleResult`
+        """
         
         super(CreateAgencyCustomPolicyResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class CreateAgencyCustomPolicyResponse(SdkResponse):
 
 
         :return: The role of this CreateAgencyCustomPolicyResponse.
-        :rtype: AgencyPolicyRoleResult
+        :rtype: :class:`huaweicloudsdkiam.v3.AgencyPolicyRoleResult`
         """
         return self._role
 
@@ -56,7 +61,7 @@ class CreateAgencyCustomPolicyResponse(SdkResponse):
 
 
         :param role: The role of this CreateAgencyCustomPolicyResponse.
-        :type: AgencyPolicyRoleResult
+        :type role: :class:`huaweicloudsdkiam.v3.AgencyPolicyRoleResult`
         """
         self._role = role
 

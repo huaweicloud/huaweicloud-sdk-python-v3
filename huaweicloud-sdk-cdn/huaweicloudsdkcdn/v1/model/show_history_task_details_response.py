@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowHistoryTaskDetailsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
     }
 
     def __init__(self, id=None, task_type=None, status=None, urls=None, create_time=None, processing=None, succeed=None, failed=None, total=None, file_type=None):
-        """ShowHistoryTaskDetailsResponse - a model defined in huaweicloud sdk"""
+        """ShowHistoryTaskDetailsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 任务id。
+        :type id: str
+        :param task_type: 任务的类型， 其值可以为refresh或preheating。
+        :type task_type: str
+        :param status: 任务执行结果。task_done表示成功，task_inprocess表示处理中。
+        :type status: str
+        :param urls: 本次提交的url列表。
+        :type urls: list[:class:`huaweicloudsdkcdn.v1.UrlObject`]
+        :param create_time: 创建时间。
+        :type create_time: int
+        :param processing: 处理中的url个数。
+        :type processing: int
+        :param succeed: 成功处理的url个数。
+        :type succeed: int
+        :param failed: 处理失败的url个数。
+        :type failed: int
+        :param total: 历史任务的url个数。
+        :type total: int
+        :param file_type: 默认是文件file,file：文件,directory：目录。
+        :type file_type: str
+        """
         
         super(ShowHistoryTaskDetailsResponse, self).__init__()
 
@@ -103,7 +126,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
         任务id。
 
         :param id: The id of this ShowHistoryTaskDetailsResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -125,7 +148,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
         任务的类型， 其值可以为refresh或preheating。
 
         :param task_type: The task_type of this ShowHistoryTaskDetailsResponse.
-        :type: str
+        :type task_type: str
         """
         self._task_type = task_type
 
@@ -147,7 +170,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
         任务执行结果。task_done表示成功，task_inprocess表示处理中。
 
         :param status: The status of this ShowHistoryTaskDetailsResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -158,7 +181,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
         本次提交的url列表。
 
         :return: The urls of this ShowHistoryTaskDetailsResponse.
-        :rtype: list[UrlObject]
+        :rtype: list[:class:`huaweicloudsdkcdn.v1.UrlObject`]
         """
         return self._urls
 
@@ -169,7 +192,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
         本次提交的url列表。
 
         :param urls: The urls of this ShowHistoryTaskDetailsResponse.
-        :type: list[UrlObject]
+        :type urls: list[:class:`huaweicloudsdkcdn.v1.UrlObject`]
         """
         self._urls = urls
 
@@ -191,7 +214,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
         创建时间。
 
         :param create_time: The create_time of this ShowHistoryTaskDetailsResponse.
-        :type: int
+        :type create_time: int
         """
         self._create_time = create_time
 
@@ -213,7 +236,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
         处理中的url个数。
 
         :param processing: The processing of this ShowHistoryTaskDetailsResponse.
-        :type: int
+        :type processing: int
         """
         self._processing = processing
 
@@ -235,7 +258,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
         成功处理的url个数。
 
         :param succeed: The succeed of this ShowHistoryTaskDetailsResponse.
-        :type: int
+        :type succeed: int
         """
         self._succeed = succeed
 
@@ -257,7 +280,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
         处理失败的url个数。
 
         :param failed: The failed of this ShowHistoryTaskDetailsResponse.
-        :type: int
+        :type failed: int
         """
         self._failed = failed
 
@@ -279,7 +302,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
         历史任务的url个数。
 
         :param total: The total of this ShowHistoryTaskDetailsResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -301,7 +324,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
         默认是文件file,file：文件,directory：目录。
 
         :param file_type: The file_type of this ShowHistoryTaskDetailsResponse.
-        :type: str
+        :type file_type: str
         """
         self._file_type = file_type
 

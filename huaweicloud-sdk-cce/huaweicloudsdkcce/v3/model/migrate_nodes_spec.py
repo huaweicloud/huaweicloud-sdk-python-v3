@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MigrateNodesSpec:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class MigrateNodesSpec:
     }
 
     def __init__(self, os=None, extend_param=None, login=None, nodes=None):
-        """MigrateNodesSpec - a model defined in huaweicloud sdk"""
+        """MigrateNodesSpec
+
+        The model defined in huaweicloud sdk
+
+        :param os: 操作系统类型，须精确到版本号。 当指定“alpha.cce/NodeImageID”参数时，“os”参数必须和用户自定义镜像的操作系统一致。 
+        :type os: str
+        :param extend_param: 
+        :type extend_param: :class:`huaweicloudsdkcce.v3.MigrateNodeExtendParam`
+        :param login: 
+        :type login: :class:`huaweicloudsdkcce.v3.Login`
+        :param nodes: 待操作节点列表
+        :type nodes: list[:class:`huaweicloudsdkcce.v3.NodeItem`]
+        """
         
         
 
@@ -70,7 +81,7 @@ class MigrateNodesSpec:
         操作系统类型，须精确到版本号。 当指定“alpha.cce/NodeImageID”参数时，“os”参数必须和用户自定义镜像的操作系统一致。 
 
         :param os: The os of this MigrateNodesSpec.
-        :type: str
+        :type os: str
         """
         self._os = os
 
@@ -80,7 +91,7 @@ class MigrateNodesSpec:
 
 
         :return: The extend_param of this MigrateNodesSpec.
-        :rtype: MigrateNodeExtendParam
+        :rtype: :class:`huaweicloudsdkcce.v3.MigrateNodeExtendParam`
         """
         return self._extend_param
 
@@ -90,7 +101,7 @@ class MigrateNodesSpec:
 
 
         :param extend_param: The extend_param of this MigrateNodesSpec.
-        :type: MigrateNodeExtendParam
+        :type extend_param: :class:`huaweicloudsdkcce.v3.MigrateNodeExtendParam`
         """
         self._extend_param = extend_param
 
@@ -100,7 +111,7 @@ class MigrateNodesSpec:
 
 
         :return: The login of this MigrateNodesSpec.
-        :rtype: Login
+        :rtype: :class:`huaweicloudsdkcce.v3.Login`
         """
         return self._login
 
@@ -110,7 +121,7 @@ class MigrateNodesSpec:
 
 
         :param login: The login of this MigrateNodesSpec.
-        :type: Login
+        :type login: :class:`huaweicloudsdkcce.v3.Login`
         """
         self._login = login
 
@@ -121,7 +132,7 @@ class MigrateNodesSpec:
         待操作节点列表
 
         :return: The nodes of this MigrateNodesSpec.
-        :rtype: list[NodeItem]
+        :rtype: list[:class:`huaweicloudsdkcce.v3.NodeItem`]
         """
         return self._nodes
 
@@ -132,7 +143,7 @@ class MigrateNodesSpec:
         待操作节点列表
 
         :param nodes: The nodes of this MigrateNodesSpec.
-        :type: list[NodeItem]
+        :type nodes: list[:class:`huaweicloudsdkcce.v3.NodeItem`]
         """
         self._nodes = nodes
 

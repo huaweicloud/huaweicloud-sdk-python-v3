@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Affinity:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class Affinity:
     }
 
     def __init__(self, node_affinity=None, pod_affinity=None, pod_anti_affinity=None):
-        """Affinity - a model defined in huaweicloud sdk"""
+        """Affinity
+
+        The model defined in huaweicloud sdk
+
+        :param node_affinity: 
+        :type node_affinity: :class:`huaweicloudsdkief.v1.AffinityNodeAffinity`
+        :param pod_affinity: 
+        :type pod_affinity: :class:`huaweicloudsdkief.v1.AffinityPodAffinity`
+        :param pod_anti_affinity: 
+        :type pod_anti_affinity: :class:`huaweicloudsdkief.v1.AffinityPodAntiAffinity`
+        """
         
         
 
@@ -56,7 +65,7 @@ class Affinity:
 
 
         :return: The node_affinity of this Affinity.
-        :rtype: AffinityNodeAffinity
+        :rtype: :class:`huaweicloudsdkief.v1.AffinityNodeAffinity`
         """
         return self._node_affinity
 
@@ -66,7 +75,7 @@ class Affinity:
 
 
         :param node_affinity: The node_affinity of this Affinity.
-        :type: AffinityNodeAffinity
+        :type node_affinity: :class:`huaweicloudsdkief.v1.AffinityNodeAffinity`
         """
         self._node_affinity = node_affinity
 
@@ -76,7 +85,7 @@ class Affinity:
 
 
         :return: The pod_affinity of this Affinity.
-        :rtype: AffinityPodAffinity
+        :rtype: :class:`huaweicloudsdkief.v1.AffinityPodAffinity`
         """
         return self._pod_affinity
 
@@ -86,7 +95,7 @@ class Affinity:
 
 
         :param pod_affinity: The pod_affinity of this Affinity.
-        :type: AffinityPodAffinity
+        :type pod_affinity: :class:`huaweicloudsdkief.v1.AffinityPodAffinity`
         """
         self._pod_affinity = pod_affinity
 
@@ -96,7 +105,7 @@ class Affinity:
 
 
         :return: The pod_anti_affinity of this Affinity.
-        :rtype: AffinityPodAntiAffinity
+        :rtype: :class:`huaweicloudsdkief.v1.AffinityPodAntiAffinity`
         """
         return self._pod_anti_affinity
 
@@ -106,7 +115,7 @@ class Affinity:
 
 
         :param pod_anti_affinity: The pod_anti_affinity of this Affinity.
-        :type: AffinityPodAntiAffinity
+        :type pod_anti_affinity: :class:`huaweicloudsdkief.v1.AffinityPodAntiAffinity`
         """
         self._pod_anti_affinity = pod_anti_affinity
 

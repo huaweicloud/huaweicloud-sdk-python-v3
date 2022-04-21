@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OpenGaussVolumeResponse:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class OpenGaussVolumeResponse:
     }
 
     def __init__(self, type=None, size=None):
-        """OpenGaussVolumeResponse - a model defined in huaweicloud sdk"""
+        """OpenGaussVolumeResponse
+
+        The model defined in huaweicloud sdk
+
+        :param type: 磁盘类型。  取值如下，区分大小写：  - ULTRAHIGH，表示SSD。 - ESSD，表示急速云盘
+        :type type: str
+        :param size: 磁盘大小。  GaussDB(for openGauss)分布式实例创建时需指定大小：要求必须为（分片数 * 40GB）的倍数，取值范围：（分片数*40GB）~（分片数*16TB）。
+        :type size: int
+        """
         
         
 
@@ -61,7 +68,7 @@ class OpenGaussVolumeResponse:
         磁盘类型。  取值如下，区分大小写：  - ULTRAHIGH，表示SSD。 - ESSD，表示急速云盘
 
         :param type: The type of this OpenGaussVolumeResponse.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -83,7 +90,7 @@ class OpenGaussVolumeResponse:
         磁盘大小。  GaussDB(for openGauss)分布式实例创建时需指定大小：要求必须为（分片数 * 40GB）的倍数，取值范围：（分片数*40GB）~（分片数*16TB）。
 
         :param size: The size of this OpenGaussVolumeResponse.
-        :type: int
+        :type size: int
         """
         self._size = size
 

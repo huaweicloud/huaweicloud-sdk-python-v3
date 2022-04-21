@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OrderV3:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class OrderV3:
     }
 
     def __init__(self, order_id=None, order_line_items=None):
-        """OrderV3 - a model defined in huaweicloud sdk"""
+        """OrderV3
+
+        The model defined in huaweicloud sdk
+
+        :param order_id: 可使用折扣的订单ID。
+        :type order_id: str
+        :param order_line_items: 可使用折扣的订单项列表，具体参见表4。
+        :type order_line_items: list[:class:`huaweicloudsdkbssintl.v2.OrderLineItemV3`]
+        """
         
         
 
@@ -61,7 +68,7 @@ class OrderV3:
         可使用折扣的订单ID。
 
         :param order_id: The order_id of this OrderV3.
-        :type: str
+        :type order_id: str
         """
         self._order_id = order_id
 
@@ -72,7 +79,7 @@ class OrderV3:
         可使用折扣的订单项列表，具体参见表4。
 
         :return: The order_line_items of this OrderV3.
-        :rtype: list[OrderLineItemV3]
+        :rtype: list[:class:`huaweicloudsdkbssintl.v2.OrderLineItemV3`]
         """
         return self._order_line_items
 
@@ -83,7 +90,7 @@ class OrderV3:
         可使用折扣的订单项列表，具体参见表4。
 
         :param order_line_items: The order_line_items of this OrderV3.
-        :type: list[OrderLineItemV3]
+        :type order_line_items: list[:class:`huaweicloudsdkbssintl.v2.OrderLineItemV3`]
         """
         self._order_line_items = order_line_items
 

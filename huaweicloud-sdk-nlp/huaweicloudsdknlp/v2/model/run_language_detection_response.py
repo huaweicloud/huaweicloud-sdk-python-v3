@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunLanguageDetectionResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class RunLanguageDetectionResponse(SdkResponse):
     }
 
     def __init__(self, detected_language=None, error_code=None, error_msg=None):
-        """RunLanguageDetectionResponse - a model defined in huaweicloud sdk"""
+        """RunLanguageDetectionResponse
+
+        The model defined in huaweicloud sdk
+
+        :param detected_language: 调用成功时表示调用结果，语种缩写对应名称如下： zh    中文 en    英文 ru    俄语 ja    日文 de    德文 fr    法文 es    西班牙文 pt    葡萄牙文 it    意大利文 tr    土耳其文 ar    阿拉伯文 ko    韩语 th    泰国语 ms    马来语 vi    越南语 当输入文本过短或不明确时，识别结果可能不准确； 当输入文本包含多种语言时，会返回占比最高的语种。 调用失败时无此字段。
+        :type detected_language: str
+        :param error_code: 调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
+        :type error_code: str
+        :param error_msg: 调用失败时的错误信息。调用成功时无此字段。
+        :type error_msg: str
+        """
         
         super(RunLanguageDetectionResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class RunLanguageDetectionResponse(SdkResponse):
         调用成功时表示调用结果，语种缩写对应名称如下： zh    中文 en    英文 ru    俄语 ja    日文 de    德文 fr    法文 es    西班牙文 pt    葡萄牙文 it    意大利文 tr    土耳其文 ar    阿拉伯文 ko    韩语 th    泰国语 ms    马来语 vi    越南语 当输入文本过短或不明确时，识别结果可能不准确； 当输入文本包含多种语言时，会返回占比最高的语种。 调用失败时无此字段。
 
         :param detected_language: The detected_language of this RunLanguageDetectionResponse.
-        :type: str
+        :type detected_language: str
         """
         self._detected_language = detected_language
 
@@ -90,7 +99,7 @@ class RunLanguageDetectionResponse(SdkResponse):
         调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
 
         :param error_code: The error_code of this RunLanguageDetectionResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -112,7 +121,7 @@ class RunLanguageDetectionResponse(SdkResponse):
         调用失败时的错误信息。调用成功时无此字段。
 
         :param error_msg: The error_msg of this RunLanguageDetectionResponse.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 

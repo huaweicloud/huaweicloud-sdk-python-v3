@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Secret:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class Secret:
     }
 
     def __init__(self, id=None, name=None, state=None, kms_key_id=None, description=None, create_time=None, update_time=None, scheduled_delete_time=None):
-        """Secret - a model defined in huaweicloud sdk"""
+        """Secret
+
+        The model defined in huaweicloud sdk
+
+        :param id: 凭据的资源标识符。
+        :type id: str
+        :param name: 凭据名称。
+        :type name: str
+        :param state: 凭据状态，取值如下：  ENABLED：表示启用状态  DISABLED：表示禁用状态  PENDING_DELETE：表示待删除状态  FROZEN：表示冻结状态状态 
+        :type state: str
+        :param kms_key_id: 用于加密凭据值的KMS主密钥的ID值。 
+        :type kms_key_id: str
+        :param description: 凭据的描述信息。
+        :type description: str
+        :param create_time: 凭据创建时间，时间戳，即从1970年1月1日至该时间的总秒数。 
+        :type create_time: int
+        :param update_time: 凭据上次更新时间，时间戳，即从1970年1月1日至该时间的总秒数。
+        :type update_time: int
+        :param scheduled_delete_time: 凭据计划删除时间，时间戳，即从1970年1月1日至该时间的总秒数。  凭据不在删除计划中时，本项值为null。 
+        :type scheduled_delete_time: int
+        """
         
         
 
@@ -93,7 +112,7 @@ class Secret:
         凭据的资源标识符。
 
         :param id: The id of this Secret.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -115,7 +134,7 @@ class Secret:
         凭据名称。
 
         :param name: The name of this Secret.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -137,7 +156,7 @@ class Secret:
         凭据状态，取值如下：  ENABLED：表示启用状态  DISABLED：表示禁用状态  PENDING_DELETE：表示待删除状态  FROZEN：表示冻结状态状态 
 
         :param state: The state of this Secret.
-        :type: str
+        :type state: str
         """
         self._state = state
 
@@ -159,7 +178,7 @@ class Secret:
         用于加密凭据值的KMS主密钥的ID值。 
 
         :param kms_key_id: The kms_key_id of this Secret.
-        :type: str
+        :type kms_key_id: str
         """
         self._kms_key_id = kms_key_id
 
@@ -181,7 +200,7 @@ class Secret:
         凭据的描述信息。
 
         :param description: The description of this Secret.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -203,7 +222,7 @@ class Secret:
         凭据创建时间，时间戳，即从1970年1月1日至该时间的总秒数。 
 
         :param create_time: The create_time of this Secret.
-        :type: int
+        :type create_time: int
         """
         self._create_time = create_time
 
@@ -225,7 +244,7 @@ class Secret:
         凭据上次更新时间，时间戳，即从1970年1月1日至该时间的总秒数。
 
         :param update_time: The update_time of this Secret.
-        :type: int
+        :type update_time: int
         """
         self._update_time = update_time
 
@@ -247,7 +266,7 @@ class Secret:
         凭据计划删除时间，时间戳，即从1970年1月1日至该时间的总秒数。  凭据不在删除计划中时，本项值为null。 
 
         :param scheduled_delete_time: The scheduled_delete_time of this Secret.
-        :type: int
+        :type scheduled_delete_time: int
         """
         self._scheduled_delete_time = scheduled_delete_time
 

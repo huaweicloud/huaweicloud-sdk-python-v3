@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListLogtanksRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ListLogtanksRequest:
     }
 
     def __init__(self, limit=None, marker=None, page_reverse=None, enterprise_project_id=None, id=None, loadbalancer_id=None, log_group_id=None, log_topic_id=None):
-        """ListLogtanksRequest - a model defined in huaweicloud sdk"""
+        """ListLogtanksRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 每页返回的个数。
+        :type limit: int
+        :param marker: 上一页最后一条记录的ID。  使用说明：  - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
+        :type marker: str
+        :param page_reverse: 分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。  使用说明： - 必须与limit一起使用。
+        :type page_reverse: bool
+        :param enterprise_project_id: 企业项目ID。 支持多值查询，查询条件格式：enterprise_project_id&#x3D;xxx&amp;enterprise_project_id&#x3D;xxx。
+        :type enterprise_project_id: list[str]
+        :param id: 云日志记录ID。 支持多值查询，查询条件格式：id&#x3D;xxx&amp;id&#x3D;xxx。
+        :type id: list[str]
+        :param loadbalancer_id: 负载均衡器ID。 支持多值查询，查询条件格式：loadbalancer_id&#x3D;xxx&amp;loadbalancer_id&#x3D;xxx。
+        :type loadbalancer_id: list[str]
+        :param log_group_id: 云日志分组ID。 支持多值查询，查询条件格式：log_group_id&#x3D;xxx&amp;log_group_id&#x3D;xxx。
+        :type log_group_id: list[str]
+        :param log_topic_id: 云日志主题ID 支持多值查询，查询条件格式：log_topic_id&#x3D;xxx&amp;log_topic_id&#x3D;xxx。
+        :type log_topic_id: list[str]
+        """
         
         
 
@@ -93,7 +112,7 @@ class ListLogtanksRequest:
         每页返回的个数。
 
         :param limit: The limit of this ListLogtanksRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -115,7 +134,7 @@ class ListLogtanksRequest:
         上一页最后一条记录的ID。  使用说明：  - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
         :param marker: The marker of this ListLogtanksRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -137,7 +156,7 @@ class ListLogtanksRequest:
         分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。  使用说明： - 必须与limit一起使用。
 
         :param page_reverse: The page_reverse of this ListLogtanksRequest.
-        :type: bool
+        :type page_reverse: bool
         """
         self._page_reverse = page_reverse
 
@@ -159,7 +178,7 @@ class ListLogtanksRequest:
         企业项目ID。 支持多值查询，查询条件格式：enterprise_project_id=xxx&enterprise_project_id=xxx。
 
         :param enterprise_project_id: The enterprise_project_id of this ListLogtanksRequest.
-        :type: list[str]
+        :type enterprise_project_id: list[str]
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -181,7 +200,7 @@ class ListLogtanksRequest:
         云日志记录ID。 支持多值查询，查询条件格式：id=xxx&id=xxx。
 
         :param id: The id of this ListLogtanksRequest.
-        :type: list[str]
+        :type id: list[str]
         """
         self._id = id
 
@@ -203,7 +222,7 @@ class ListLogtanksRequest:
         负载均衡器ID。 支持多值查询，查询条件格式：loadbalancer_id=xxx&loadbalancer_id=xxx。
 
         :param loadbalancer_id: The loadbalancer_id of this ListLogtanksRequest.
-        :type: list[str]
+        :type loadbalancer_id: list[str]
         """
         self._loadbalancer_id = loadbalancer_id
 
@@ -225,7 +244,7 @@ class ListLogtanksRequest:
         云日志分组ID。 支持多值查询，查询条件格式：log_group_id=xxx&log_group_id=xxx。
 
         :param log_group_id: The log_group_id of this ListLogtanksRequest.
-        :type: list[str]
+        :type log_group_id: list[str]
         """
         self._log_group_id = log_group_id
 
@@ -247,7 +266,7 @@ class ListLogtanksRequest:
         云日志主题ID 支持多值查询，查询条件格式：log_topic_id=xxx&log_topic_id=xxx。
 
         :param log_topic_id: The log_topic_id of this ListLogtanksRequest.
-        :type: list[str]
+        :type log_topic_id: list[str]
         """
         self._log_topic_id = log_topic_id
 

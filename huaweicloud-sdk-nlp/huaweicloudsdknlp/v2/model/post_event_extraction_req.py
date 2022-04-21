@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PostEventExtractionReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class PostEventExtractionReq:
     }
 
     def __init__(self, text=None):
-        """PostEventExtractionReq - a model defined in huaweicloud sdk"""
+        """PostEventExtractionReq
+
+        The model defined in huaweicloud sdk
+
+        :param text: 待分析文本，长度为1~256，文本编码为UTF-8。
+        :type text: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class PostEventExtractionReq:
         待分析文本，长度为1~256，文本编码为UTF-8。
 
         :param text: The text of this PostEventExtractionReq.
-        :type: str
+        :type text: str
         """
         self._text = text
 

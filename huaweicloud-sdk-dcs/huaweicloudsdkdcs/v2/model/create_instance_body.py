@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateInstanceBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -82,7 +81,65 @@ class CreateInstanceBody:
     }
 
     def __init__(self, name=None, engine=None, engine_version=None, capacity=None, spec_code=None, az_codes=None, vpc_id=None, subnet_id=None, security_group_id=None, publicip_id=None, enterprise_project_id=None, enterprise_project_name=None, description=None, enable_ssl=None, private_ip=None, instance_num=None, maintain_begin=None, maintain_end=None, password=None, no_password_access=None, bss_param=None, instance_backup_policy=None, tags=None, access_user=None, enable_publicip=None, port=None, rename_commands=None):
-        """CreateInstanceBody - a model defined in huaweicloud sdk"""
+        """CreateInstanceBody
+
+        The model defined in huaweicloud sdk
+
+        :param name: 实例名称。  由英文字符开头，只能由英文字母、数字、中划线和下划线组成。  创建单个实例时，名称长度为4到64位的字符串。批量创建实例时，名称长度为4到56位的字符串，且实例名称格式为“自定义名称-n”，其中n从000开始，依次递增。例如，批量创建两个实例，自定义名称为dcs_demo，则两个实例的名称为dcs_demo-000和dcs_demo-001。 
+        :type name: str
+        :param engine: 缓存引擎：Redis和Memcached。
+        :type engine: str
+        :param engine_version: 缓存版本。  当缓存引擎为Redis时，取值为3.0、4.0或5.0。  当缓存引擎为Memcached时，该字段为可选，取值为空。 
+        :type engine_version: str
+        :param capacity: 缓存容量（G Byte） - Redis3.0：单机和主备类型实例取值：2、4、8、16、32、64。Proxy集群实例规格支持64、128、256、512和1024。 - Redis4.0和Redis5.0：单机和主备类型实例取值：0.125、0.25、0.5、1、2、4、8、16、32、64。Cluster集群实例规格支持24、32、48、64、96、128、192、256、384、512、768、1024。 - Memcached：单机和主备类型实例取值：2、4、8、16、32、64。 
+        :type capacity: float
+        :param spec_code: 产品规格编码。具体查询方法如下：  - 方法一：查询产品介绍中的[实例规格](https://support.huaweicloud.com/productdesc-dcs/dcs-pd-0522002.html) - 方法二：登录分布式缓存的控制台界面，点击购买缓存实例，查找对应的实例规格名称 - 方法三：调用[查询产品规格](https://support.huaweicloud.com/api-dcs/ListFlavors.html)接口查询。 
+        :type spec_code: str
+        :param az_codes: 创建缓存节点到指定且有资源的可用区Code。创建缓存节点到指定且有资源的可用区Code。具体查询方法，请参考[查询可用区信息](https://support.huaweicloud.com/api-dcs/ListAvailableZones.html)，在查询时，请注意查看该可用区是否有资源。  如果是创建主备、Proxy集群、Cluster集群实例，支持跨可用区部署，可以为备节点指定备可用区。在为节点指定可用区时，用逗号分隔开，具体请查看示例。 
+        :type az_codes: list[str]
+        :param vpc_id: 虚拟私有云ID。  获取方法如下：   - 方法1：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。   - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询VPC列表](https://support.huaweicloud.com/api-vpc/vpc_api01_0003.html)。 
+        :type vpc_id: str
+        :param subnet_id: 子网的网络ID。  获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询子网列表](https://support.huaweicloud.com/api-vpc/vpc_subnet01_0003.html)。 
+        :type subnet_id: str
+        :param security_group_id: 指定实例所属的安全组。  当engine为Redis且engine_version为3.0时，或engine为Memcached时，该参数为必选。Redis3.0和Memcached实例支持安全组访问控制。  当engine为Redis且engine_version为4.0和5.0时，该参数为可选。Redis4.0和Redis5.0版本实例不支持安全组控制访问，只支持白名单控制。  获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询安全组列表](https://support.huaweicloud.com/api-vpc/vpc_sg01_0002.html)。 
+        :type security_group_id: str
+        :param publicip_id: Redis缓存实例绑定的弹性IP地址的id。  如果开启了公网访问功能（即enable_publicip为true），该字段为必选。 
+        :type publicip_id: str
+        :param enterprise_project_id: 企业项目ID。
+        :type enterprise_project_id: str
+        :param enterprise_project_name: 企业项目名称。
+        :type enterprise_project_name: str
+        :param description: 实例的描述信息。  长度不超过1024的字符串。 &gt; \\与\&quot;在json报文中属于特殊字符，如果参数值中需要显示\\或者\&quot;字符，请在字符前增加转义字符\\，比如\\\\或者\\\&quot;。 
+        :type description: str
+        :param enable_ssl: Redis缓存实例开启公网访问功能时，是否选择支持ssl。 - true：开启 - false：不开启 
+        :type enable_ssl: bool
+        :param private_ip: 创建缓存实例手动指定的IP地址,支持Redis和Memcached。
+        :type private_ip: str
+        :param instance_num: 表示批量创建缓存实例时，购买的实例个数。仅Redis和Memcached实例支持批量创建。  默认值：1  取值范围：1-100 
+        :type instance_num: int
+        :param maintain_begin: 维护时间窗开始时间，为UTC时间，格式为HH:mm:ss - 维护时间窗开始和结束时间必须为指定的时间段，可参考[查询维护时间窗时间段](https://support.huaweicloud.com/api-dcs/ListMaintenanceWindows.html)获取。 - 开始时间必须为22:00:00、02:00:00、06:00:00、10:00:00、14:00:00和18:00:00。 - 该参数不能单独为空，若该值为空，则结束时间也为空。系统分配一个默认开始时间02:00:00。 
+        :type maintain_begin: str
+        :param maintain_end: 维护时间窗结束时间，为UTC时间，格式为HH:mm:ss。 - 维护时间窗开始和结束时间必须为指定的时间段，可参考[查询维护时间窗时间段](https://support.huaweicloud.com/api-dcs/ListMaintenanceWindows.html)获取。 - 结束时间在开始时间基础上加四个小时，即当开始时间为22:00:00时，结束时间为02:00:00。 - 该参数不能单独为空，若该值为空，则开始时间也为空，系统分配一个默认结束时间06:00:00。 
+        :type maintain_end: str
+        :param password: 缓存实例的认证信息 &gt; 当“no_password_access”配置为“false”或未配置时，请求消息中须包含password参数。 Redis类型的缓存实例密码复杂度要求： - 输入长度为8到32位的字符串。 - 新密码不能与旧密码相同。 - 必须包含如下四种字符中的三种组合：   - 小写字母   - 大写字母   - 数字   - 特殊字符包括（&#x60;~!@#$%^&amp;*()-_&#x3D;+\\|[{}]:&#39;\&quot;,&lt;.&gt;/?） 
+        :type password: str
+        :param no_password_access: 是否允许免密码访问缓存实例。 - true：该实例无需密码即可访问。 - false：该实例必须通过密码认证才能访问。 若未配置该参数则默认值为“false”。 
+        :type no_password_access: bool
+        :param bss_param: 
+        :type bss_param: :class:`huaweicloudsdkdcs.v2.BssParam`
+        :param instance_backup_policy: 
+        :type instance_backup_policy: :class:`huaweicloudsdkdcs.v2.BackupPolicy`
+        :param tags: 实例标签键值。
+        :type tags: list[:class:`huaweicloudsdkdcs.v2.ResourceTag`]
+        :param access_user: 当缓存类型为Redis时，则不需要设置，保持为空即可。  当缓存引擎为Memcached，且“no_password_access”为“false”时才需要设置，表示通过密码认证访问缓存实例的认证用户名。  由英文字符开头，只能由英文字母、数字、中划线和下划线组成，长度为1~64的字符。 &gt;   - 当缓存引擎为Memcached时，该参数为可选项。   - 当缓存引擎为Redis时，该参数不需要设置。 
+        :type access_user: str
+        :param enable_publicip: Redis缓存实例是否开启公网访问功能。 - true：开启 - false：不开启 
+        :type enable_publicip: bool
+        :param port: 实例自定义端口。只有创建Redis4.0和Redis5.0实例才支持自定义端口，Redis3.0和Memcached实例不支持。  创建Redis4.0和Redis5.0实例，如果没发送该参数或该参数为空，表示实例使用默认端口6379。如果自定义端口，端口范围为1~65535的任意数字。 
+        :type port: int
+        :param rename_commands: 支持自定义重命名高危命令。只有创建Redis4.0和Redis5.0实例才支持重命名高危命令，Redis3.0和Memcached实例不支持。  创建Redis4.0和Redis5.0实例，如果没发送该参数或该参数为空，表示没有需要重命名的命令。当前支持重命名的高危命令有command、keys、flushdb、flushall和hgetall，其他命令暂不支持重命名。 
+        :type rename_commands: object
+        """
         
         
 
@@ -181,7 +238,7 @@ class CreateInstanceBody:
         实例名称。  由英文字符开头，只能由英文字母、数字、中划线和下划线组成。  创建单个实例时，名称长度为4到64位的字符串。批量创建实例时，名称长度为4到56位的字符串，且实例名称格式为“自定义名称-n”，其中n从000开始，依次递增。例如，批量创建两个实例，自定义名称为dcs_demo，则两个实例的名称为dcs_demo-000和dcs_demo-001。 
 
         :param name: The name of this CreateInstanceBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -203,7 +260,7 @@ class CreateInstanceBody:
         缓存引擎：Redis和Memcached。
 
         :param engine: The engine of this CreateInstanceBody.
-        :type: str
+        :type engine: str
         """
         self._engine = engine
 
@@ -225,7 +282,7 @@ class CreateInstanceBody:
         缓存版本。  当缓存引擎为Redis时，取值为3.0、4.0或5.0。  当缓存引擎为Memcached时，该字段为可选，取值为空。 
 
         :param engine_version: The engine_version of this CreateInstanceBody.
-        :type: str
+        :type engine_version: str
         """
         self._engine_version = engine_version
 
@@ -247,7 +304,7 @@ class CreateInstanceBody:
         缓存容量（G Byte） - Redis3.0：单机和主备类型实例取值：2、4、8、16、32、64。Proxy集群实例规格支持64、128、256、512和1024。 - Redis4.0和Redis5.0：单机和主备类型实例取值：0.125、0.25、0.5、1、2、4、8、16、32、64。Cluster集群实例规格支持24、32、48、64、96、128、192、256、384、512、768、1024。 - Memcached：单机和主备类型实例取值：2、4、8、16、32、64。 
 
         :param capacity: The capacity of this CreateInstanceBody.
-        :type: float
+        :type capacity: float
         """
         self._capacity = capacity
 
@@ -269,7 +326,7 @@ class CreateInstanceBody:
         产品规格编码。具体查询方法如下：  - 方法一：查询产品介绍中的[实例规格](https://support.huaweicloud.com/productdesc-dcs/dcs-pd-0522002.html) - 方法二：登录分布式缓存的控制台界面，点击购买缓存实例，查找对应的实例规格名称 - 方法三：调用[查询产品规格](https://support.huaweicloud.com/api-dcs/ListFlavors.html)接口查询。 
 
         :param spec_code: The spec_code of this CreateInstanceBody.
-        :type: str
+        :type spec_code: str
         """
         self._spec_code = spec_code
 
@@ -291,7 +348,7 @@ class CreateInstanceBody:
         创建缓存节点到指定且有资源的可用区Code。创建缓存节点到指定且有资源的可用区Code。具体查询方法，请参考[查询可用区信息](https://support.huaweicloud.com/api-dcs/ListAvailableZones.html)，在查询时，请注意查看该可用区是否有资源。  如果是创建主备、Proxy集群、Cluster集群实例，支持跨可用区部署，可以为备节点指定备可用区。在为节点指定可用区时，用逗号分隔开，具体请查看示例。 
 
         :param az_codes: The az_codes of this CreateInstanceBody.
-        :type: list[str]
+        :type az_codes: list[str]
         """
         self._az_codes = az_codes
 
@@ -313,7 +370,7 @@ class CreateInstanceBody:
         虚拟私有云ID。  获取方法如下：   - 方法1：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。   - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询VPC列表](https://support.huaweicloud.com/api-vpc/vpc_api01_0003.html)。 
 
         :param vpc_id: The vpc_id of this CreateInstanceBody.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -335,7 +392,7 @@ class CreateInstanceBody:
         子网的网络ID。  获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询子网列表](https://support.huaweicloud.com/api-vpc/vpc_subnet01_0003.html)。 
 
         :param subnet_id: The subnet_id of this CreateInstanceBody.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -357,7 +414,7 @@ class CreateInstanceBody:
         指定实例所属的安全组。  当engine为Redis且engine_version为3.0时，或engine为Memcached时，该参数为必选。Redis3.0和Memcached实例支持安全组访问控制。  当engine为Redis且engine_version为4.0和5.0时，该参数为可选。Redis4.0和Redis5.0版本实例不支持安全组控制访问，只支持白名单控制。  获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询安全组列表](https://support.huaweicloud.com/api-vpc/vpc_sg01_0002.html)。 
 
         :param security_group_id: The security_group_id of this CreateInstanceBody.
-        :type: str
+        :type security_group_id: str
         """
         self._security_group_id = security_group_id
 
@@ -379,7 +436,7 @@ class CreateInstanceBody:
         Redis缓存实例绑定的弹性IP地址的id。  如果开启了公网访问功能（即enable_publicip为true），该字段为必选。 
 
         :param publicip_id: The publicip_id of this CreateInstanceBody.
-        :type: str
+        :type publicip_id: str
         """
         self._publicip_id = publicip_id
 
@@ -401,7 +458,7 @@ class CreateInstanceBody:
         企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this CreateInstanceBody.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -423,7 +480,7 @@ class CreateInstanceBody:
         企业项目名称。
 
         :param enterprise_project_name: The enterprise_project_name of this CreateInstanceBody.
-        :type: str
+        :type enterprise_project_name: str
         """
         self._enterprise_project_name = enterprise_project_name
 
@@ -445,7 +502,7 @@ class CreateInstanceBody:
         实例的描述信息。  长度不超过1024的字符串。 > \\与\"在json报文中属于特殊字符，如果参数值中需要显示\\或者\"字符，请在字符前增加转义字符\\，比如\\\\或者\\\"。 
 
         :param description: The description of this CreateInstanceBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -467,7 +524,7 @@ class CreateInstanceBody:
         Redis缓存实例开启公网访问功能时，是否选择支持ssl。 - true：开启 - false：不开启 
 
         :param enable_ssl: The enable_ssl of this CreateInstanceBody.
-        :type: bool
+        :type enable_ssl: bool
         """
         self._enable_ssl = enable_ssl
 
@@ -489,7 +546,7 @@ class CreateInstanceBody:
         创建缓存实例手动指定的IP地址,支持Redis和Memcached。
 
         :param private_ip: The private_ip of this CreateInstanceBody.
-        :type: str
+        :type private_ip: str
         """
         self._private_ip = private_ip
 
@@ -511,7 +568,7 @@ class CreateInstanceBody:
         表示批量创建缓存实例时，购买的实例个数。仅Redis和Memcached实例支持批量创建。  默认值：1  取值范围：1-100 
 
         :param instance_num: The instance_num of this CreateInstanceBody.
-        :type: int
+        :type instance_num: int
         """
         self._instance_num = instance_num
 
@@ -533,7 +590,7 @@ class CreateInstanceBody:
         维护时间窗开始时间，为UTC时间，格式为HH:mm:ss - 维护时间窗开始和结束时间必须为指定的时间段，可参考[查询维护时间窗时间段](https://support.huaweicloud.com/api-dcs/ListMaintenanceWindows.html)获取。 - 开始时间必须为22:00:00、02:00:00、06:00:00、10:00:00、14:00:00和18:00:00。 - 该参数不能单独为空，若该值为空，则结束时间也为空。系统分配一个默认开始时间02:00:00。 
 
         :param maintain_begin: The maintain_begin of this CreateInstanceBody.
-        :type: str
+        :type maintain_begin: str
         """
         self._maintain_begin = maintain_begin
 
@@ -555,7 +612,7 @@ class CreateInstanceBody:
         维护时间窗结束时间，为UTC时间，格式为HH:mm:ss。 - 维护时间窗开始和结束时间必须为指定的时间段，可参考[查询维护时间窗时间段](https://support.huaweicloud.com/api-dcs/ListMaintenanceWindows.html)获取。 - 结束时间在开始时间基础上加四个小时，即当开始时间为22:00:00时，结束时间为02:00:00。 - 该参数不能单独为空，若该值为空，则开始时间也为空，系统分配一个默认结束时间06:00:00。 
 
         :param maintain_end: The maintain_end of this CreateInstanceBody.
-        :type: str
+        :type maintain_end: str
         """
         self._maintain_end = maintain_end
 
@@ -577,7 +634,7 @@ class CreateInstanceBody:
         缓存实例的认证信息 > 当“no_password_access”配置为“false”或未配置时，请求消息中须包含password参数。 Redis类型的缓存实例密码复杂度要求： - 输入长度为8到32位的字符串。 - 新密码不能与旧密码相同。 - 必须包含如下四种字符中的三种组合：   - 小写字母   - 大写字母   - 数字   - 特殊字符包括（`~!@#$%^&*()-_=+\\|[{}]:'\",<.>/?） 
 
         :param password: The password of this CreateInstanceBody.
-        :type: str
+        :type password: str
         """
         self._password = password
 
@@ -599,7 +656,7 @@ class CreateInstanceBody:
         是否允许免密码访问缓存实例。 - true：该实例无需密码即可访问。 - false：该实例必须通过密码认证才能访问。 若未配置该参数则默认值为“false”。 
 
         :param no_password_access: The no_password_access of this CreateInstanceBody.
-        :type: bool
+        :type no_password_access: bool
         """
         self._no_password_access = no_password_access
 
@@ -609,7 +666,7 @@ class CreateInstanceBody:
 
 
         :return: The bss_param of this CreateInstanceBody.
-        :rtype: BssParam
+        :rtype: :class:`huaweicloudsdkdcs.v2.BssParam`
         """
         return self._bss_param
 
@@ -619,7 +676,7 @@ class CreateInstanceBody:
 
 
         :param bss_param: The bss_param of this CreateInstanceBody.
-        :type: BssParam
+        :type bss_param: :class:`huaweicloudsdkdcs.v2.BssParam`
         """
         self._bss_param = bss_param
 
@@ -629,7 +686,7 @@ class CreateInstanceBody:
 
 
         :return: The instance_backup_policy of this CreateInstanceBody.
-        :rtype: BackupPolicy
+        :rtype: :class:`huaweicloudsdkdcs.v2.BackupPolicy`
         """
         return self._instance_backup_policy
 
@@ -639,7 +696,7 @@ class CreateInstanceBody:
 
 
         :param instance_backup_policy: The instance_backup_policy of this CreateInstanceBody.
-        :type: BackupPolicy
+        :type instance_backup_policy: :class:`huaweicloudsdkdcs.v2.BackupPolicy`
         """
         self._instance_backup_policy = instance_backup_policy
 
@@ -650,7 +707,7 @@ class CreateInstanceBody:
         实例标签键值。
 
         :return: The tags of this CreateInstanceBody.
-        :rtype: list[ResourceTag]
+        :rtype: list[:class:`huaweicloudsdkdcs.v2.ResourceTag`]
         """
         return self._tags
 
@@ -661,7 +718,7 @@ class CreateInstanceBody:
         实例标签键值。
 
         :param tags: The tags of this CreateInstanceBody.
-        :type: list[ResourceTag]
+        :type tags: list[:class:`huaweicloudsdkdcs.v2.ResourceTag`]
         """
         self._tags = tags
 
@@ -683,7 +740,7 @@ class CreateInstanceBody:
         当缓存类型为Redis时，则不需要设置，保持为空即可。  当缓存引擎为Memcached，且“no_password_access”为“false”时才需要设置，表示通过密码认证访问缓存实例的认证用户名。  由英文字符开头，只能由英文字母、数字、中划线和下划线组成，长度为1~64的字符。 >   - 当缓存引擎为Memcached时，该参数为可选项。   - 当缓存引擎为Redis时，该参数不需要设置。 
 
         :param access_user: The access_user of this CreateInstanceBody.
-        :type: str
+        :type access_user: str
         """
         self._access_user = access_user
 
@@ -705,7 +762,7 @@ class CreateInstanceBody:
         Redis缓存实例是否开启公网访问功能。 - true：开启 - false：不开启 
 
         :param enable_publicip: The enable_publicip of this CreateInstanceBody.
-        :type: bool
+        :type enable_publicip: bool
         """
         self._enable_publicip = enable_publicip
 
@@ -727,7 +784,7 @@ class CreateInstanceBody:
         实例自定义端口。只有创建Redis4.0和Redis5.0实例才支持自定义端口，Redis3.0和Memcached实例不支持。  创建Redis4.0和Redis5.0实例，如果没发送该参数或该参数为空，表示实例使用默认端口6379。如果自定义端口，端口范围为1~65535的任意数字。 
 
         :param port: The port of this CreateInstanceBody.
-        :type: int
+        :type port: int
         """
         self._port = port
 
@@ -749,7 +806,7 @@ class CreateInstanceBody:
         支持自定义重命名高危命令。只有创建Redis4.0和Redis5.0实例才支持重命名高危命令，Redis3.0和Memcached实例不支持。  创建Redis4.0和Redis5.0实例，如果没发送该参数或该参数为空，表示没有需要重命名的命令。当前支持重命名的高危命令有command、keys、flushdb、flushall和hgetall，其他命令暂不支持重命名。 
 
         :param rename_commands: The rename_commands of this CreateInstanceBody.
-        :type: object
+        :type rename_commands: object
         """
         self._rename_commands = rename_commands
 

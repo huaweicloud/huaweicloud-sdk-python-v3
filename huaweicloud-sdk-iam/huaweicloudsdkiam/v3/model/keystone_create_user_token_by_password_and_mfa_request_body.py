@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneCreateUserTokenByPasswordAndMfaRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class KeystoneCreateUserTokenByPasswordAndMfaRequestBody:
     }
 
     def __init__(self, auth=None):
-        """KeystoneCreateUserTokenByPasswordAndMfaRequestBody - a model defined in huaweicloud sdk"""
+        """KeystoneCreateUserTokenByPasswordAndMfaRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param auth: 
+        :type auth: :class:`huaweicloudsdkiam.v3.MfaAuth`
+        """
         
         
 
@@ -45,7 +50,7 @@ class KeystoneCreateUserTokenByPasswordAndMfaRequestBody:
 
 
         :return: The auth of this KeystoneCreateUserTokenByPasswordAndMfaRequestBody.
-        :rtype: MfaAuth
+        :rtype: :class:`huaweicloudsdkiam.v3.MfaAuth`
         """
         return self._auth
 
@@ -55,7 +60,7 @@ class KeystoneCreateUserTokenByPasswordAndMfaRequestBody:
 
 
         :param auth: The auth of this KeystoneCreateUserTokenByPasswordAndMfaRequestBody.
-        :type: MfaAuth
+        :type auth: :class:`huaweicloudsdkiam.v3.MfaAuth`
         """
         self._auth = auth
 

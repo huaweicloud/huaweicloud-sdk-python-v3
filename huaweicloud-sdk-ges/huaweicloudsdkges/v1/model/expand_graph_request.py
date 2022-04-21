@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExpandGraphRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ExpandGraphRequest:
     }
 
     def __init__(self, graph_id=None, body=None):
-        """ExpandGraphRequest - a model defined in huaweicloud sdk"""
+        """ExpandGraphRequest
+
+        The model defined in huaweicloud sdk
+
+        :param graph_id: 图ID。
+        :type graph_id: str
+        :param body: Body of the ExpandGraphRequest
+        :type body: :class:`huaweicloudsdkges.v1.ExpandGraphReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class ExpandGraphRequest:
         图ID。
 
         :param graph_id: The graph_id of this ExpandGraphRequest.
-        :type: str
+        :type graph_id: str
         """
         self._graph_id = graph_id
 
@@ -72,7 +79,7 @@ class ExpandGraphRequest:
 
 
         :return: The body of this ExpandGraphRequest.
-        :rtype: ExpandGraphReq
+        :rtype: :class:`huaweicloudsdkges.v1.ExpandGraphReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class ExpandGraphRequest:
 
 
         :param body: The body of this ExpandGraphRequest.
-        :type: ExpandGraphReq
+        :type body: :class:`huaweicloudsdkges.v1.ExpandGraphReq`
         """
         self._body = body
 

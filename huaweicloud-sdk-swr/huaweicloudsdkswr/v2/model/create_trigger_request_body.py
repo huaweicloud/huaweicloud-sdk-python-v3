@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateTriggerRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class CreateTriggerRequestBody:
     }
 
     def __init__(self, action=None, app_type=None, application=None, cluster_id=None, cluster_name=None, cluster_ns=None, condition=None, container=None, enable=None, name=None, trigger_mode=None, trigger_type=None):
-        """CreateTriggerRequestBody - a model defined in huaweicloud sdk"""
+        """CreateTriggerRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param action: 触发动作，update
+        :type action: str
+        :param app_type: 应用类型，deployments、statefulsets
+        :type app_type: str
+        :param application: 应用名
+        :type application: str
+        :param cluster_id: 集群ID（trigger_mode设置为cci时为空)
+        :type cluster_id: str
+        :param cluster_name: 集群名（trigger_mode设置为cci时为空）
+        :type cluster_name: str
+        :param cluster_ns: 应用名所在的namespace
+        :type cluster_ns: str
+        :param condition: 触发条件，type为all时为.*,type为tag时为tag名,type为regular时为正则表达式
+        :type condition: str
+        :param container: 需更新的container名，默认为所有container
+        :type container: str
+        :param enable: 是否生效
+        :type enable: str
+        :param name: 触发器名
+        :type name: str
+        :param trigger_mode: 触发器类型，cce、cci，默认为cce
+        :type trigger_mode: str
+        :param trigger_type: 触发条件，all、tag、regular
+        :type trigger_type: str
+        """
         
         
 
@@ -105,7 +132,7 @@ class CreateTriggerRequestBody:
         触发动作，update
 
         :param action: The action of this CreateTriggerRequestBody.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -127,7 +154,7 @@ class CreateTriggerRequestBody:
         应用类型，deployments、statefulsets
 
         :param app_type: The app_type of this CreateTriggerRequestBody.
-        :type: str
+        :type app_type: str
         """
         self._app_type = app_type
 
@@ -149,7 +176,7 @@ class CreateTriggerRequestBody:
         应用名
 
         :param application: The application of this CreateTriggerRequestBody.
-        :type: str
+        :type application: str
         """
         self._application = application
 
@@ -171,7 +198,7 @@ class CreateTriggerRequestBody:
         集群ID（trigger_mode设置为cci时为空)
 
         :param cluster_id: The cluster_id of this CreateTriggerRequestBody.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -193,7 +220,7 @@ class CreateTriggerRequestBody:
         集群名（trigger_mode设置为cci时为空）
 
         :param cluster_name: The cluster_name of this CreateTriggerRequestBody.
-        :type: str
+        :type cluster_name: str
         """
         self._cluster_name = cluster_name
 
@@ -215,7 +242,7 @@ class CreateTriggerRequestBody:
         应用名所在的namespace
 
         :param cluster_ns: The cluster_ns of this CreateTriggerRequestBody.
-        :type: str
+        :type cluster_ns: str
         """
         self._cluster_ns = cluster_ns
 
@@ -237,7 +264,7 @@ class CreateTriggerRequestBody:
         触发条件，type为all时为.*,type为tag时为tag名,type为regular时为正则表达式
 
         :param condition: The condition of this CreateTriggerRequestBody.
-        :type: str
+        :type condition: str
         """
         self._condition = condition
 
@@ -259,7 +286,7 @@ class CreateTriggerRequestBody:
         需更新的container名，默认为所有container
 
         :param container: The container of this CreateTriggerRequestBody.
-        :type: str
+        :type container: str
         """
         self._container = container
 
@@ -281,7 +308,7 @@ class CreateTriggerRequestBody:
         是否生效
 
         :param enable: The enable of this CreateTriggerRequestBody.
-        :type: str
+        :type enable: str
         """
         self._enable = enable
 
@@ -303,7 +330,7 @@ class CreateTriggerRequestBody:
         触发器名
 
         :param name: The name of this CreateTriggerRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -325,7 +352,7 @@ class CreateTriggerRequestBody:
         触发器类型，cce、cci，默认为cce
 
         :param trigger_mode: The trigger_mode of this CreateTriggerRequestBody.
-        :type: str
+        :type trigger_mode: str
         """
         self._trigger_mode = trigger_mode
 
@@ -347,7 +374,7 @@ class CreateTriggerRequestBody:
         触发条件，all、tag、regular
 
         :param trigger_type: The trigger_type of this CreateTriggerRequestBody.
-        :type: str
+        :type trigger_type: str
         """
         self._trigger_type = trigger_type
 

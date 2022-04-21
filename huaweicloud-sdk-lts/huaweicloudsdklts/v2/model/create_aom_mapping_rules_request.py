@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateAomMappingRulesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateAomMappingRulesRequest:
     }
 
     def __init__(self, is_batch=None, body=None):
-        """CreateAomMappingRulesRequest - a model defined in huaweicloud sdk"""
+        """CreateAomMappingRulesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param is_batch: 是否开启自动映射
+        :type is_batch: bool
+        :param body: Body of the CreateAomMappingRulesRequest
+        :type body: :class:`huaweicloudsdklts.v2.AomMappingRequestInfo`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateAomMappingRulesRequest:
         是否开启自动映射
 
         :param is_batch: The is_batch of this CreateAomMappingRulesRequest.
-        :type: bool
+        :type is_batch: bool
         """
         self._is_batch = is_batch
 
@@ -72,7 +79,7 @@ class CreateAomMappingRulesRequest:
 
 
         :return: The body of this CreateAomMappingRulesRequest.
-        :rtype: AomMappingRequestInfo
+        :rtype: :class:`huaweicloudsdklts.v2.AomMappingRequestInfo`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CreateAomMappingRulesRequest:
 
 
         :param body: The body of this CreateAomMappingRulesRequest.
-        :type: AomMappingRequestInfo
+        :type body: :class:`huaweicloudsdklts.v2.AomMappingRequestInfo`
         """
         self._body = body
 

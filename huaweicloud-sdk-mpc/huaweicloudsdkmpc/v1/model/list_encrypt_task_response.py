@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListEncryptTaskResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListEncryptTaskResponse(SdkResponse):
     }
 
     def __init__(self, task_array=None, is_truncated=None, total=None):
-        """ListEncryptTaskResponse - a model defined in huaweicloud sdk"""
+        """ListEncryptTaskResponse
+
+        The model defined in huaweicloud sdk
+
+        :param task_array: 任务列表
+        :type task_array: list[:class:`huaweicloudsdkmpc.v1.EachEncryptRsp`]
+        :param is_truncated: 是否截断
+        :type is_truncated: int
+        :param total: 查询结果数量
+        :type total: int
+        """
         
         super(ListEncryptTaskResponse, self).__init__()
 
@@ -57,7 +66,7 @@ class ListEncryptTaskResponse(SdkResponse):
         任务列表
 
         :return: The task_array of this ListEncryptTaskResponse.
-        :rtype: list[EachEncryptRsp]
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.EachEncryptRsp`]
         """
         return self._task_array
 
@@ -68,7 +77,7 @@ class ListEncryptTaskResponse(SdkResponse):
         任务列表
 
         :param task_array: The task_array of this ListEncryptTaskResponse.
-        :type: list[EachEncryptRsp]
+        :type task_array: list[:class:`huaweicloudsdkmpc.v1.EachEncryptRsp`]
         """
         self._task_array = task_array
 
@@ -90,7 +99,7 @@ class ListEncryptTaskResponse(SdkResponse):
         是否截断
 
         :param is_truncated: The is_truncated of this ListEncryptTaskResponse.
-        :type: int
+        :type is_truncated: int
         """
         self._is_truncated = is_truncated
 
@@ -112,7 +121,7 @@ class ListEncryptTaskResponse(SdkResponse):
         查询结果数量
 
         :param total: The total of this ListEncryptTaskResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 

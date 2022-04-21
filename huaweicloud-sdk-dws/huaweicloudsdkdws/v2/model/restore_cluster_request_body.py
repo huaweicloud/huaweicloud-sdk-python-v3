@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestoreClusterRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RestoreClusterRequestBody:
     }
 
     def __init__(self, restore=None):
-        """RestoreClusterRequestBody - a model defined in huaweicloud sdk"""
+        """RestoreClusterRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param restore: 
+        :type restore: :class:`huaweicloudsdkdws.v2.Restore`
+        """
         
         
 
@@ -45,7 +50,7 @@ class RestoreClusterRequestBody:
 
 
         :return: The restore of this RestoreClusterRequestBody.
-        :rtype: Restore
+        :rtype: :class:`huaweicloudsdkdws.v2.Restore`
         """
         return self._restore
 
@@ -55,7 +60,7 @@ class RestoreClusterRequestBody:
 
 
         :param restore: The restore of this RestoreClusterRequestBody.
-        :type: Restore
+        :type restore: :class:`huaweicloudsdkdws.v2.Restore`
         """
         self._restore = restore
 

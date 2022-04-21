@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTopicsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListTopicsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, topic_count=None, topics=None):
-        """ListTopicsResponse - a model defined in huaweicloud sdk"""
+        """ListTopicsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param request_id: 请求的唯一标识ID。
+        :type request_id: str
+        :param topic_count: 返回的Topic个数。该参数不受offset和limit影响，即返回的是您账户下所有的Topic个数。
+        :type topic_count: int
+        :param topics: Topic结构体数组。
+        :type topics: list[:class:`huaweicloudsdksmn.v2.ListTopicsItem`]
+        """
         
         super(ListTopicsResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListTopicsResponse(SdkResponse):
         请求的唯一标识ID。
 
         :param request_id: The request_id of this ListTopicsResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 
@@ -90,7 +99,7 @@ class ListTopicsResponse(SdkResponse):
         返回的Topic个数。该参数不受offset和limit影响，即返回的是您账户下所有的Topic个数。
 
         :param topic_count: The topic_count of this ListTopicsResponse.
-        :type: int
+        :type topic_count: int
         """
         self._topic_count = topic_count
 
@@ -101,7 +110,7 @@ class ListTopicsResponse(SdkResponse):
         Topic结构体数组。
 
         :return: The topics of this ListTopicsResponse.
-        :rtype: list[ListTopicsItem]
+        :rtype: list[:class:`huaweicloudsdksmn.v2.ListTopicsItem`]
         """
         return self._topics
 
@@ -112,7 +121,7 @@ class ListTopicsResponse(SdkResponse):
         Topic结构体数组。
 
         :param topics: The topics of this ListTopicsResponse.
-        :type: list[ListTopicsItem]
+        :type topics: list[:class:`huaweicloudsdksmn.v2.ListTopicsItem`]
         """
         self._topics = topics
 

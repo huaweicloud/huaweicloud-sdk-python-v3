@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AntiTamperRuleResponseBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class AntiTamperRuleResponseBody:
     }
 
     def __init__(self, id=None, policyid=None, timestamp=None, description=None, status=None, hostname=None, url=None):
-        """AntiTamperRuleResponseBody - a model defined in huaweicloud sdk"""
+        """AntiTamperRuleResponseBody
+
+        The model defined in huaweicloud sdk
+
+        :param id: 规则id
+        :type id: str
+        :param policyid: 策略id
+        :type policyid: str
+        :param timestamp: 时间戳
+        :type timestamp: int
+        :param description: 创建规则的时间戳
+        :type description: str
+        :param status: 规则状态，0：关闭，1：开启
+        :type status: int
+        :param hostname: 防篡改的域名
+        :type hostname: str
+        :param url: 防篡改的url
+        :type url: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class AntiTamperRuleResponseBody:
         规则id
 
         :param id: The id of this AntiTamperRuleResponseBody.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -110,7 +127,7 @@ class AntiTamperRuleResponseBody:
         策略id
 
         :param policyid: The policyid of this AntiTamperRuleResponseBody.
-        :type: str
+        :type policyid: str
         """
         self._policyid = policyid
 
@@ -132,7 +149,7 @@ class AntiTamperRuleResponseBody:
         时间戳
 
         :param timestamp: The timestamp of this AntiTamperRuleResponseBody.
-        :type: int
+        :type timestamp: int
         """
         self._timestamp = timestamp
 
@@ -154,7 +171,7 @@ class AntiTamperRuleResponseBody:
         创建规则的时间戳
 
         :param description: The description of this AntiTamperRuleResponseBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -176,7 +193,7 @@ class AntiTamperRuleResponseBody:
         规则状态，0：关闭，1：开启
 
         :param status: The status of this AntiTamperRuleResponseBody.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -198,7 +215,7 @@ class AntiTamperRuleResponseBody:
         防篡改的域名
 
         :param hostname: The hostname of this AntiTamperRuleResponseBody.
-        :type: str
+        :type hostname: str
         """
         self._hostname = hostname
 
@@ -220,7 +237,7 @@ class AntiTamperRuleResponseBody:
         防篡改的url
 
         :param url: The url of this AntiTamperRuleResponseBody.
-        :type: str
+        :type url: str
         """
         self._url = url
 

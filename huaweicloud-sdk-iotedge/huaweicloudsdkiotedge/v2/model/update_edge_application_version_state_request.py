@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateEdgeApplicationVersionStateRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateEdgeApplicationVersionStateRequest:
     }
 
     def __init__(self, edge_app_id=None, version=None, body=None):
-        """UpdateEdgeApplicationVersionStateRequest - a model defined in huaweicloud sdk"""
+        """UpdateEdgeApplicationVersionStateRequest
+
+        The model defined in huaweicloud sdk
+
+        :param edge_app_id: 应用ID，应用唯一标识。
+        :type edge_app_id: str
+        :param version: 应用版本,应用内版本唯一。
+        :type version: str
+        :param body: Body of the UpdateEdgeApplicationVersionStateRequest
+        :type body: :class:`huaweicloudsdkiotedge.v2.UpdateEdgeAppVersionStateDTO`
+        """
         
         
 
@@ -66,7 +75,7 @@ class UpdateEdgeApplicationVersionStateRequest:
         应用ID，应用唯一标识。
 
         :param edge_app_id: The edge_app_id of this UpdateEdgeApplicationVersionStateRequest.
-        :type: str
+        :type edge_app_id: str
         """
         self._edge_app_id = edge_app_id
 
@@ -88,7 +97,7 @@ class UpdateEdgeApplicationVersionStateRequest:
         应用版本,应用内版本唯一。
 
         :param version: The version of this UpdateEdgeApplicationVersionStateRequest.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -98,7 +107,7 @@ class UpdateEdgeApplicationVersionStateRequest:
 
 
         :return: The body of this UpdateEdgeApplicationVersionStateRequest.
-        :rtype: UpdateEdgeAppVersionStateDTO
+        :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateEdgeAppVersionStateDTO`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class UpdateEdgeApplicationVersionStateRequest:
 
 
         :param body: The body of this UpdateEdgeApplicationVersionStateRequest.
-        :type: UpdateEdgeAppVersionStateDTO
+        :type body: :class:`huaweicloudsdkiotedge.v2.UpdateEdgeAppVersionStateDTO`
         """
         self._body = body
 

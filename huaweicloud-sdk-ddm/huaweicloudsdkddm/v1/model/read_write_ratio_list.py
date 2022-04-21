@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ReadWriteRatioList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ReadWriteRatioList:
     }
 
     def __init__(self, schema=None, table=None, read_count=None, write_count=None, relation_tables=None, last_updated=None):
-        """ReadWriteRatioList - a model defined in huaweicloud sdk"""
+        """ReadWriteRatioList
+
+        The model defined in huaweicloud sdk
+
+        :param schema: 逻辑库名称。
+        :type schema: str
+        :param table: 逻辑表名称。
+        :type table: str
+        :param read_count: 读次数。
+        :type read_count: str
+        :param write_count: 写次数。
+        :type write_count: str
+        :param relation_tables: 关联表。
+        :type relation_tables: str
+        :param last_updated: 最后执行时间。
+        :type last_updated: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class ReadWriteRatioList:
         逻辑库名称。
 
         :param schema: The schema of this ReadWriteRatioList.
-        :type: str
+        :type schema: str
         """
         self._schema = schema
 
@@ -105,7 +120,7 @@ class ReadWriteRatioList:
         逻辑表名称。
 
         :param table: The table of this ReadWriteRatioList.
-        :type: str
+        :type table: str
         """
         self._table = table
 
@@ -127,7 +142,7 @@ class ReadWriteRatioList:
         读次数。
 
         :param read_count: The read_count of this ReadWriteRatioList.
-        :type: str
+        :type read_count: str
         """
         self._read_count = read_count
 
@@ -149,7 +164,7 @@ class ReadWriteRatioList:
         写次数。
 
         :param write_count: The write_count of this ReadWriteRatioList.
-        :type: str
+        :type write_count: str
         """
         self._write_count = write_count
 
@@ -171,7 +186,7 @@ class ReadWriteRatioList:
         关联表。
 
         :param relation_tables: The relation_tables of this ReadWriteRatioList.
-        :type: str
+        :type relation_tables: str
         """
         self._relation_tables = relation_tables
 
@@ -193,7 +208,7 @@ class ReadWriteRatioList:
         最后执行时间。
 
         :param last_updated: The last_updated of this ReadWriteRatioList.
-        :type: str
+        :type last_updated: str
         """
         self._last_updated = last_updated
 

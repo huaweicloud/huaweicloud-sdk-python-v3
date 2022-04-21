@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SourceServerByTask:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class SourceServerByTask:
     }
 
     def __init__(self, id=None):
-        """SourceServerByTask - a model defined in huaweicloud sdk"""
+        """SourceServerByTask
+
+        The model defined in huaweicloud sdk
+
+        :param id: 源端服务器id
+        :type id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class SourceServerByTask:
         源端服务器id
 
         :param id: The id of this SourceServerByTask.
-        :type: str
+        :type id: str
         """
         self._id = id
 

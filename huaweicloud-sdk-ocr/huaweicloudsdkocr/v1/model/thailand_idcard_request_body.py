@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ThailandIdcardRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ThailandIdcardRequestBody:
     }
 
     def __init__(self, image=None, url=None, side=None, return_portrait_image=None, return_portrait_location=None, return_idcard_type=None):
-        """ThailandIdcardRequestBody - a model defined in huaweicloud sdk"""
+        """ThailandIdcardRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param image: 与url二选一  图像数据，base64编码，要求base64编码后大小不超过10MB。图片最小边不小于15px，最长边不超过4096px，支持JPEG、JPG、PNG、BMP、TIFF格式。
+        :type image: str
+        :param url: 与image二选一 图片的URL路径，目前支持： - 公网http/https url - OBS提供的url，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权，详情参见[配置OBS访问权限](https://support.huaweicloud.com/intl/zh-cn/api-ocr/ocr_03_0132.html)。 &gt; 说明： - 接口响应时间依赖于图片的下载时间，如果图片下载时间过长，会返回接口调用失败。 - 请保证被检测图片所在的存储服务稳定可靠，推荐使用OBS服务存储图片数据。 
+        :type url: str
+        :param side: - front：身份证正面 - back：身份证背面 如果参数值为空或无该参数，系统自动识别，建议填写，准确率更高。 
+        :type side: str
+        :param return_portrait_image: 是否返回头像内容开关，可选值如下所示： - true：返回身份证头像照片的 base64 编码 - false：不返回身份证头像照片的 base64 编码 未传入该参数时默认为false，即不返回身份证头像照片的 base64 编码。 
+        :type return_portrait_image: bool
+        :param return_portrait_location: 是否返回头像坐标的开关，可选值如下所示： - true：返回身份证头像的位置 - false：不返回身份证头像的位置 
+        :type return_portrait_location: bool
+        :param return_idcard_type: 是否返回身份证类型的开关，可选值如下所示： - true：返回身份证的类型，类型包括身份证原件以及身份证复印件 - false：不返回身份证的类型 
+        :type return_idcard_type: bool
+        """
         
         
 
@@ -83,7 +98,7 @@ class ThailandIdcardRequestBody:
         与url二选一  图像数据，base64编码，要求base64编码后大小不超过10MB。图片最小边不小于15px，最长边不超过4096px，支持JPEG、JPG、PNG、BMP、TIFF格式。
 
         :param image: The image of this ThailandIdcardRequestBody.
-        :type: str
+        :type image: str
         """
         self._image = image
 
@@ -105,7 +120,7 @@ class ThailandIdcardRequestBody:
         与image二选一 图片的URL路径，目前支持： - 公网http/https url - OBS提供的url，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权，详情参见[配置OBS访问权限](https://support.huaweicloud.com/intl/zh-cn/api-ocr/ocr_03_0132.html)。 > 说明： - 接口响应时间依赖于图片的下载时间，如果图片下载时间过长，会返回接口调用失败。 - 请保证被检测图片所在的存储服务稳定可靠，推荐使用OBS服务存储图片数据。 
 
         :param url: The url of this ThailandIdcardRequestBody.
-        :type: str
+        :type url: str
         """
         self._url = url
 
@@ -127,7 +142,7 @@ class ThailandIdcardRequestBody:
         - front：身份证正面 - back：身份证背面 如果参数值为空或无该参数，系统自动识别，建议填写，准确率更高。 
 
         :param side: The side of this ThailandIdcardRequestBody.
-        :type: str
+        :type side: str
         """
         self._side = side
 
@@ -149,7 +164,7 @@ class ThailandIdcardRequestBody:
         是否返回头像内容开关，可选值如下所示： - true：返回身份证头像照片的 base64 编码 - false：不返回身份证头像照片的 base64 编码 未传入该参数时默认为false，即不返回身份证头像照片的 base64 编码。 
 
         :param return_portrait_image: The return_portrait_image of this ThailandIdcardRequestBody.
-        :type: bool
+        :type return_portrait_image: bool
         """
         self._return_portrait_image = return_portrait_image
 
@@ -171,7 +186,7 @@ class ThailandIdcardRequestBody:
         是否返回头像坐标的开关，可选值如下所示： - true：返回身份证头像的位置 - false：不返回身份证头像的位置 
 
         :param return_portrait_location: The return_portrait_location of this ThailandIdcardRequestBody.
-        :type: bool
+        :type return_portrait_location: bool
         """
         self._return_portrait_location = return_portrait_location
 
@@ -193,7 +208,7 @@ class ThailandIdcardRequestBody:
         是否返回身份证类型的开关，可选值如下所示： - true：返回身份证的类型，类型包括身份证原件以及身份证复印件 - false：不返回身份证的类型 
 
         :param return_idcard_type: The return_idcard_type of this ThailandIdcardRequestBody.
-        :type: bool
+        :type return_idcard_type: bool
         """
         self._return_idcard_type = return_idcard_type
 

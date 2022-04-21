@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateResWorkspaceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateResWorkspaceRequest:
     }
 
     def __init__(self, content_type=None, body=None):
-        """CreateResWorkspaceRequest - a model defined in huaweicloud sdk"""
+        """CreateResWorkspaceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param content_type: 内容类型，取值为application/json。
+        :type content_type: str
+        :param body: Body of the CreateResWorkspaceRequest
+        :type body: :class:`huaweicloudsdkres.v1.CreateResWorkspaceRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateResWorkspaceRequest:
         内容类型，取值为application/json。
 
         :param content_type: The content_type of this CreateResWorkspaceRequest.
-        :type: str
+        :type content_type: str
         """
         self._content_type = content_type
 
@@ -72,7 +79,7 @@ class CreateResWorkspaceRequest:
 
 
         :return: The body of this CreateResWorkspaceRequest.
-        :rtype: CreateResWorkspaceRequestBody
+        :rtype: :class:`huaweicloudsdkres.v1.CreateResWorkspaceRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CreateResWorkspaceRequest:
 
 
         :param body: The body of this CreateResWorkspaceRequest.
-        :type: CreateResWorkspaceRequestBody
+        :type body: :class:`huaweicloudsdkres.v1.CreateResWorkspaceRequestBody`
         """
         self._body = body
 

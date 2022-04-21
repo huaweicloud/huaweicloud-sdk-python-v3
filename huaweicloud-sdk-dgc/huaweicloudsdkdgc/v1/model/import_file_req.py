@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ImportFileReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ImportFileReq:
     }
 
     def __init__(self, path=None, params=None, same_name_policy=None, jobs_param=None, execute_user=None):
-        """ImportFileReq - a model defined in huaweicloud sdk"""
+        """ImportFileReq
+
+        The model defined in huaweicloud sdk
+
+        :param path: 
+        :type path: str
+        :param params: 公共作业参数
+        :type params: object
+        :param same_name_policy: 
+        :type same_name_policy: str
+        :param jobs_param: 指定作业参数
+        :type jobs_param: object
+        :param execute_user: 
+        :type execute_user: str
+        """
         
         
 
@@ -76,7 +89,7 @@ class ImportFileReq:
 
 
         :param path: The path of this ImportFileReq.
-        :type: str
+        :type path: str
         """
         self._path = path
 
@@ -98,7 +111,7 @@ class ImportFileReq:
         公共作业参数
 
         :param params: The params of this ImportFileReq.
-        :type: object
+        :type params: object
         """
         self._params = params
 
@@ -118,7 +131,7 @@ class ImportFileReq:
 
 
         :param same_name_policy: The same_name_policy of this ImportFileReq.
-        :type: str
+        :type same_name_policy: str
         """
         self._same_name_policy = same_name_policy
 
@@ -140,7 +153,7 @@ class ImportFileReq:
         指定作业参数
 
         :param jobs_param: The jobs_param of this ImportFileReq.
-        :type: object
+        :type jobs_param: object
         """
         self._jobs_param = jobs_param
 
@@ -160,7 +173,7 @@ class ImportFileReq:
 
 
         :param execute_user: The execute_user of this ImportFileReq.
-        :type: str
+        :type execute_user: str
         """
         self._execute_user = execute_user
 

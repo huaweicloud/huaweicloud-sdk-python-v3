@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VersionDetailResources:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class VersionDetailResources:
     }
 
     def __init__(self, limits=None, requests=None):
-        """VersionDetailResources - a model defined in huaweicloud sdk"""
+        """VersionDetailResources
+
+        The model defined in huaweicloud sdk
+
+        :param limits: 
+        :type limits: :class:`huaweicloudsdkief.v1.VersionDetailResourcesLimits`
+        :param requests: 
+        :type requests: :class:`huaweicloudsdkief.v1.VersionDetailResourcesRequests`
+        """
         
         
 
@@ -51,7 +58,7 @@ class VersionDetailResources:
 
 
         :return: The limits of this VersionDetailResources.
-        :rtype: VersionDetailResourcesLimits
+        :rtype: :class:`huaweicloudsdkief.v1.VersionDetailResourcesLimits`
         """
         return self._limits
 
@@ -61,7 +68,7 @@ class VersionDetailResources:
 
 
         :param limits: The limits of this VersionDetailResources.
-        :type: VersionDetailResourcesLimits
+        :type limits: :class:`huaweicloudsdkief.v1.VersionDetailResourcesLimits`
         """
         self._limits = limits
 
@@ -71,7 +78,7 @@ class VersionDetailResources:
 
 
         :return: The requests of this VersionDetailResources.
-        :rtype: VersionDetailResourcesRequests
+        :rtype: :class:`huaweicloudsdkief.v1.VersionDetailResourcesRequests`
         """
         return self._requests
 
@@ -81,7 +88,7 @@ class VersionDetailResources:
 
 
         :param requests: The requests of this VersionDetailResources.
-        :type: VersionDetailResourcesRequests
+        :type requests: :class:`huaweicloudsdkief.v1.VersionDetailResourcesRequests`
         """
         self._requests = requests
 

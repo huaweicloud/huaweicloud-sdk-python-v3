@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InstanceAction:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class InstanceAction:
     }
 
     def __init__(self, action=None, parameters=None):
-        """InstanceAction - a model defined in huaweicloud sdk"""
+        """InstanceAction
+
+        The model defined in huaweicloud sdk
+
+        :param action: 
+        :type action: :class:`huaweicloudsdkservicestage.v2.InstanceActionType`
+        :param parameters: 
+        :type parameters: :class:`huaweicloudsdkservicestage.v2.InstanceActionParameters`
+        """
         
         
 
@@ -50,7 +57,7 @@ class InstanceAction:
 
 
         :return: The action of this InstanceAction.
-        :rtype: InstanceActionType
+        :rtype: :class:`huaweicloudsdkservicestage.v2.InstanceActionType`
         """
         return self._action
 
@@ -60,7 +67,7 @@ class InstanceAction:
 
 
         :param action: The action of this InstanceAction.
-        :type: InstanceActionType
+        :type action: :class:`huaweicloudsdkservicestage.v2.InstanceActionType`
         """
         self._action = action
 
@@ -70,7 +77,7 @@ class InstanceAction:
 
 
         :return: The parameters of this InstanceAction.
-        :rtype: InstanceActionParameters
+        :rtype: :class:`huaweicloudsdkservicestage.v2.InstanceActionParameters`
         """
         return self._parameters
 
@@ -80,7 +87,7 @@ class InstanceAction:
 
 
         :param parameters: The parameters of this InstanceAction.
-        :type: InstanceActionParameters
+        :type parameters: :class:`huaweicloudsdkservicestage.v2.InstanceActionParameters`
         """
         self._parameters = parameters
 

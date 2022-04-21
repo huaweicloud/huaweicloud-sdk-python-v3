@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NeutronFirewallPolicy:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class NeutronFirewallPolicy:
     }
 
     def __init__(self, audited=None, description=None, firewall_rules=None, id=None, name=None, public=None, tenant_id=None, project_id=None):
-        """NeutronFirewallPolicy - a model defined in huaweicloud sdk"""
+        """NeutronFirewallPolicy
+
+        The model defined in huaweicloud sdk
+
+        :param audited: 审计标记。
+        :type audited: bool
+        :param description: 网络ACL防火墙策略描述。
+        :type description: str
+        :param firewall_rules: 策略引用的网络ACL防火墙规则链。
+        :type firewall_rules: list[str]
+        :param id: 网络ACL防火墙策略uuid标识。
+        :type id: str
+        :param name: 网络ACL防火墙策略名称。
+        :type name: str
+        :param public: 是否支持跨租户共享。
+        :type public: bool
+        :param tenant_id: 项目ID
+        :type tenant_id: str
+        :param project_id: 项目ID
+        :type project_id: str
+        """
         
         
 
@@ -85,7 +104,7 @@ class NeutronFirewallPolicy:
         审计标记。
 
         :param audited: The audited of this NeutronFirewallPolicy.
-        :type: bool
+        :type audited: bool
         """
         self._audited = audited
 
@@ -107,7 +126,7 @@ class NeutronFirewallPolicy:
         网络ACL防火墙策略描述。
 
         :param description: The description of this NeutronFirewallPolicy.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -129,7 +148,7 @@ class NeutronFirewallPolicy:
         策略引用的网络ACL防火墙规则链。
 
         :param firewall_rules: The firewall_rules of this NeutronFirewallPolicy.
-        :type: list[str]
+        :type firewall_rules: list[str]
         """
         self._firewall_rules = firewall_rules
 
@@ -151,7 +170,7 @@ class NeutronFirewallPolicy:
         网络ACL防火墙策略uuid标识。
 
         :param id: The id of this NeutronFirewallPolicy.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -173,7 +192,7 @@ class NeutronFirewallPolicy:
         网络ACL防火墙策略名称。
 
         :param name: The name of this NeutronFirewallPolicy.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -195,7 +214,7 @@ class NeutronFirewallPolicy:
         是否支持跨租户共享。
 
         :param public: The public of this NeutronFirewallPolicy.
-        :type: bool
+        :type public: bool
         """
         self._public = public
 
@@ -217,7 +236,7 @@ class NeutronFirewallPolicy:
         项目ID
 
         :param tenant_id: The tenant_id of this NeutronFirewallPolicy.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 
@@ -239,7 +258,7 @@ class NeutronFirewallPolicy:
         项目ID
 
         :param project_id: The project_id of this NeutronFirewallPolicy.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 

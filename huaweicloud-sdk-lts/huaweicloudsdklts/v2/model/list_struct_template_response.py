@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListStructTemplateResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListStructTemplateResponse(SdkResponse):
     }
 
     def __init__(self, results=None):
-        """ListStructTemplateResponse - a model defined in huaweicloud sdk"""
+        """ListStructTemplateResponse
+
+        The model defined in huaweicloud sdk
+
+        :param results: 查询的自定义结构化模板数组
+        :type results: list[:class:`huaweicloudsdklts.v2.StructTemplateModel`]
+        """
         
         super(ListStructTemplateResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListStructTemplateResponse(SdkResponse):
         查询的自定义结构化模板数组
 
         :return: The results of this ListStructTemplateResponse.
-        :rtype: list[StructTemplateModel]
+        :rtype: list[:class:`huaweicloudsdklts.v2.StructTemplateModel`]
         """
         return self._results
 
@@ -58,7 +63,7 @@ class ListStructTemplateResponse(SdkResponse):
         查询的自定义结构化模板数组
 
         :param results: The results of this ListStructTemplateResponse.
-        :type: list[StructTemplateModel]
+        :type results: list[:class:`huaweicloudsdklts.v2.StructTemplateModel`]
         """
         self._results = results
 

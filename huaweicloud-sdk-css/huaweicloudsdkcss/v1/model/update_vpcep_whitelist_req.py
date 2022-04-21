@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateVpcepWhitelistReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateVpcepWhitelistReq:
     }
 
     def __init__(self, vpc_permissions=None):
-        """UpdateVpcepWhitelistReq - a model defined in huaweicloud sdk"""
+        """UpdateVpcepWhitelistReq
+
+        The model defined in huaweicloud sdk
+
+        :param vpc_permissions: 白名单(用户的账号ID)。
+        :type vpc_permissions: list[str]
+        """
         
         
 
@@ -57,7 +62,7 @@ class UpdateVpcepWhitelistReq:
         白名单(用户的账号ID)。
 
         :param vpc_permissions: The vpc_permissions of this UpdateVpcepWhitelistReq.
-        :type: list[str]
+        :type vpc_permissions: list[str]
         """
         self._vpc_permissions = vpc_permissions
 

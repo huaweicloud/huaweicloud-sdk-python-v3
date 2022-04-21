@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MountConfig:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class MountConfig:
     }
 
     def __init__(self, mount_user=None, func_mounts=None):
-        """MountConfig - a model defined in huaweicloud sdk"""
+        """MountConfig
+
+        The model defined in huaweicloud sdk
+
+        :param mount_user: 
+        :type mount_user: :class:`huaweicloudsdkfunctiongraph.v2.MountUser`
+        :param func_mounts: 函数挂载列表。
+        :type func_mounts: list[:class:`huaweicloudsdkfunctiongraph.v2.FuncMount`]
+        """
         
         
 
@@ -49,7 +56,7 @@ class MountConfig:
 
 
         :return: The mount_user of this MountConfig.
-        :rtype: MountUser
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.MountUser`
         """
         return self._mount_user
 
@@ -59,7 +66,7 @@ class MountConfig:
 
 
         :param mount_user: The mount_user of this MountConfig.
-        :type: MountUser
+        :type mount_user: :class:`huaweicloudsdkfunctiongraph.v2.MountUser`
         """
         self._mount_user = mount_user
 
@@ -70,7 +77,7 @@ class MountConfig:
         函数挂载列表。
 
         :return: The func_mounts of this MountConfig.
-        :rtype: list[FuncMount]
+        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.FuncMount`]
         """
         return self._func_mounts
 
@@ -81,7 +88,7 @@ class MountConfig:
         函数挂载列表。
 
         :param func_mounts: The func_mounts of this MountConfig.
-        :type: list[FuncMount]
+        :type func_mounts: list[:class:`huaweicloudsdkfunctiongraph.v2.FuncMount`]
         """
         self._func_mounts = func_mounts
 

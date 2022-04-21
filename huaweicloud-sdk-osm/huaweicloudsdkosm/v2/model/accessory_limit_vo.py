@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AccessoryLimitVo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class AccessoryLimitVo:
     }
 
     def __init__(self, limit_count=None, limit_size=None, limit_file_type=None):
-        """AccessoryLimitVo - a model defined in huaweicloud sdk"""
+        """AccessoryLimitVo
+
+        The model defined in huaweicloud sdk
+
+        :param limit_count: 限制文件数量
+        :type limit_count: str
+        :param limit_size: 限制文件大小，单位是M
+        :type limit_size: str
+        :param limit_file_type: 限制文件类型
+        :type limit_file_type: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class AccessoryLimitVo:
         限制文件数量
 
         :param limit_count: The limit_count of this AccessoryLimitVo.
-        :type: str
+        :type limit_count: str
         """
         self._limit_count = limit_count
 
@@ -90,7 +99,7 @@ class AccessoryLimitVo:
         限制文件大小，单位是M
 
         :param limit_size: The limit_size of this AccessoryLimitVo.
-        :type: str
+        :type limit_size: str
         """
         self._limit_size = limit_size
 
@@ -112,7 +121,7 @@ class AccessoryLimitVo:
         限制文件类型
 
         :param limit_file_type: The limit_file_type of this AccessoryLimitVo.
-        :type: str
+        :type limit_file_type: str
         """
         self._limit_file_type = limit_file_type
 

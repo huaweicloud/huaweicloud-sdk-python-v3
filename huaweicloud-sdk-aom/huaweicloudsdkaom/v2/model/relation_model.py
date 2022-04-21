@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RelationModel:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class RelationModel:
     }
 
     def __init__(self, key=None, value=None, relation=None):
-        """RelationModel - a model defined in huaweicloud sdk"""
+        """RelationModel
+
+        The model defined in huaweicloud sdk
+
+        :param key: 指定查询字段的key，对应metadata里面的key 。
+        :type key: str
+        :param value: 查询条件中指定key的值。
+        :type value: list[str]
+        :param relation: 该条件与其他条件的组合方式。 AND：必须满足所有条件； OR：可以满足其中一个条件； NOT：必须不满足所有条件。
+        :type relation: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class RelationModel:
         指定查询字段的key，对应metadata里面的key 。
 
         :param key: The key of this RelationModel.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -90,7 +99,7 @@ class RelationModel:
         查询条件中指定key的值。
 
         :param value: The value of this RelationModel.
-        :type: list[str]
+        :type value: list[str]
         """
         self._value = value
 
@@ -112,7 +121,7 @@ class RelationModel:
         该条件与其他条件的组合方式。 AND：必须满足所有条件； OR：可以满足其中一个条件； NOT：必须不满足所有条件。
 
         :param relation: The relation of this RelationModel.
-        :type: str
+        :type relation: str
         """
         self._relation = relation
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListLogtanksResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListLogtanksResponse(SdkResponse):
     }
 
     def __init__(self, logtanks=None, page_info=None, request_id=None):
-        """ListLogtanksResponse - a model defined in huaweicloud sdk"""
+        """ListLogtanksResponse
+
+        The model defined in huaweicloud sdk
+
+        :param logtanks: 描述信息
+        :type logtanks: list[:class:`huaweicloudsdkelb.v3.Logtank`]
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`
+        :param request_id: 请求ID。  注：自动生成 。
+        :type request_id: str
+        """
         
         super(ListLogtanksResponse, self).__init__()
 
@@ -57,7 +66,7 @@ class ListLogtanksResponse(SdkResponse):
         描述信息
 
         :return: The logtanks of this ListLogtanksResponse.
-        :rtype: list[Logtank]
+        :rtype: list[:class:`huaweicloudsdkelb.v3.Logtank`]
         """
         return self._logtanks
 
@@ -68,7 +77,7 @@ class ListLogtanksResponse(SdkResponse):
         描述信息
 
         :param logtanks: The logtanks of this ListLogtanksResponse.
-        :type: list[Logtank]
+        :type logtanks: list[:class:`huaweicloudsdkelb.v3.Logtank`]
         """
         self._logtanks = logtanks
 
@@ -78,7 +87,7 @@ class ListLogtanksResponse(SdkResponse):
 
 
         :return: The page_info of this ListLogtanksResponse.
-        :rtype: PageInfo
+        :rtype: :class:`huaweicloudsdkelb.v3.PageInfo`
         """
         return self._page_info
 
@@ -88,7 +97,7 @@ class ListLogtanksResponse(SdkResponse):
 
 
         :param page_info: The page_info of this ListLogtanksResponse.
-        :type: PageInfo
+        :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`
         """
         self._page_info = page_info
 
@@ -110,7 +119,7 @@ class ListLogtanksResponse(SdkResponse):
         请求ID。  注：自动生成 。
 
         :param request_id: The request_id of this ListLogtanksResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateWhiteblackipRuleResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class CreateWhiteblackipRuleResponse(SdkResponse):
     }
 
     def __init__(self, id=None, policyid=None, addr=None, white=None, timestamp=None):
-        """CreateWhiteblackipRuleResponse - a model defined in huaweicloud sdk"""
+        """CreateWhiteblackipRuleResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 规则id
+        :type id: str
+        :param policyid: 策略id
+        :type policyid: str
+        :param addr: 黑白名单ip地址，需要输入标准的ip地址或地址段，例如：42.123.120.66或42.123.120.0/16
+        :type addr: str
+        :param white: 防护动作：  - 0 拦截  - 1 放行  - 2 仅记录
+        :type white: int
+        :param timestamp: 创建规则的时间戳,13位毫秒时间戳
+        :type timestamp: int
+        """
         
         super(CreateWhiteblackipRuleResponse, self).__init__()
 
@@ -78,7 +91,7 @@ class CreateWhiteblackipRuleResponse(SdkResponse):
         规则id
 
         :param id: The id of this CreateWhiteblackipRuleResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -100,7 +113,7 @@ class CreateWhiteblackipRuleResponse(SdkResponse):
         策略id
 
         :param policyid: The policyid of this CreateWhiteblackipRuleResponse.
-        :type: str
+        :type policyid: str
         """
         self._policyid = policyid
 
@@ -122,7 +135,7 @@ class CreateWhiteblackipRuleResponse(SdkResponse):
         黑白名单ip地址，需要输入标准的ip地址或地址段，例如：42.123.120.66或42.123.120.0/16
 
         :param addr: The addr of this CreateWhiteblackipRuleResponse.
-        :type: str
+        :type addr: str
         """
         self._addr = addr
 
@@ -144,7 +157,7 @@ class CreateWhiteblackipRuleResponse(SdkResponse):
         防护动作：  - 0 拦截  - 1 放行  - 2 仅记录
 
         :param white: The white of this CreateWhiteblackipRuleResponse.
-        :type: int
+        :type white: int
         """
         self._white = white
 
@@ -166,7 +179,7 @@ class CreateWhiteblackipRuleResponse(SdkResponse):
         创建规则的时间戳,13位毫秒时间戳
 
         :param timestamp: The timestamp of this CreateWhiteblackipRuleResponse.
-        :type: int
+        :type timestamp: int
         """
         self._timestamp = timestamp
 

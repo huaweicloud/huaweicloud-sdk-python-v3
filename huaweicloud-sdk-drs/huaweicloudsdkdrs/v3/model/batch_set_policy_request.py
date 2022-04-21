@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchSetPolicyRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchSetPolicyRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """BatchSetPolicyRequest - a model defined in huaweicloud sdk"""
+        """BatchSetPolicyRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 请求语言类型。
+        :type x_language: str
+        :param body: Body of the BatchSetPolicyRequest
+        :type body: :class:`huaweicloudsdkdrs.v3.BatchSetupSyncPolicyReq`
+        """
         
         
 
@@ -63,7 +70,7 @@ class BatchSetPolicyRequest:
         请求语言类型。
 
         :param x_language: The x_language of this BatchSetPolicyRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -73,7 +80,7 @@ class BatchSetPolicyRequest:
 
 
         :return: The body of this BatchSetPolicyRequest.
-        :rtype: BatchSetupSyncPolicyReq
+        :rtype: :class:`huaweicloudsdkdrs.v3.BatchSetupSyncPolicyReq`
         """
         return self._body
 
@@ -83,7 +90,7 @@ class BatchSetPolicyRequest:
 
 
         :param body: The body of this BatchSetPolicyRequest.
-        :type: BatchSetupSyncPolicyReq
+        :type body: :class:`huaweicloudsdkdrs.v3.BatchSetupSyncPolicyReq`
         """
         self._body = body
 

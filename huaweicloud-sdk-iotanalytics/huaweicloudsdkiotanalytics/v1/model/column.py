@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Column:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class Column:
     }
 
     def __init__(self, column_name=None, description=None, type=None, is_partition_column=None):
-        """Column - a model defined in huaweicloud sdk"""
+        """Column
+
+        The model defined in huaweicloud sdk
+
+        :param column_name: 列名称。
+        :type column_name: str
+        :param description: 列描述。
+        :type description: str
+        :param type: 列类型。
+        :type type: str
+        :param is_partition_column: 是否分区列。
+        :type is_partition_column: bool
+        """
         
         
 
@@ -71,7 +82,7 @@ class Column:
         列名称。
 
         :param column_name: The column_name of this Column.
-        :type: str
+        :type column_name: str
         """
         self._column_name = column_name
 
@@ -93,7 +104,7 @@ class Column:
         列描述。
 
         :param description: The description of this Column.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -115,7 +126,7 @@ class Column:
         列类型。
 
         :param type: The type of this Column.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -137,7 +148,7 @@ class Column:
         是否分区列。
 
         :param is_partition_column: The is_partition_column of this Column.
-        :type: bool
+        :type is_partition_column: bool
         """
         self._is_partition_column = is_partition_column
 

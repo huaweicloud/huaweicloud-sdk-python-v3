@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchPublishOrOfflineApiV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchPublishOrOfflineApiV2Response(SdkResponse):
     }
 
     def __init__(self, success=None, failure=None):
-        """BatchPublishOrOfflineApiV2Response - a model defined in huaweicloud sdk"""
+        """BatchPublishOrOfflineApiV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param success: 发布或下线成功的信息
+        :type success: list[:class:`huaweicloudsdkroma.v2.PublishResp`]
+        :param failure: 发布或下线失败的API及错误信息
+        :type failure: list[:class:`huaweicloudsdkroma.v2.BatchFailure`]
+        """
         
         super(BatchPublishOrOfflineApiV2Response, self).__init__()
 
@@ -52,7 +59,7 @@ class BatchPublishOrOfflineApiV2Response(SdkResponse):
         发布或下线成功的信息
 
         :return: The success of this BatchPublishOrOfflineApiV2Response.
-        :rtype: list[PublishResp]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.PublishResp`]
         """
         return self._success
 
@@ -63,7 +70,7 @@ class BatchPublishOrOfflineApiV2Response(SdkResponse):
         发布或下线成功的信息
 
         :param success: The success of this BatchPublishOrOfflineApiV2Response.
-        :type: list[PublishResp]
+        :type success: list[:class:`huaweicloudsdkroma.v2.PublishResp`]
         """
         self._success = success
 
@@ -74,7 +81,7 @@ class BatchPublishOrOfflineApiV2Response(SdkResponse):
         发布或下线失败的API及错误信息
 
         :return: The failure of this BatchPublishOrOfflineApiV2Response.
-        :rtype: list[BatchFailure]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.BatchFailure`]
         """
         return self._failure
 
@@ -85,7 +92,7 @@ class BatchPublishOrOfflineApiV2Response(SdkResponse):
         发布或下线失败的API及错误信息
 
         :param failure: The failure of this BatchPublishOrOfflineApiV2Response.
-        :type: list[BatchFailure]
+        :type failure: list[:class:`huaweicloudsdkroma.v2.BatchFailure`]
         """
         self._failure = failure
 

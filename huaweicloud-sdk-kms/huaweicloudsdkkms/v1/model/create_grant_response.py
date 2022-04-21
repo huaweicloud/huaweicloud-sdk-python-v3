@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateGrantResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateGrantResponse(SdkResponse):
     }
 
     def __init__(self, grant_id=None):
-        """CreateGrantResponse - a model defined in huaweicloud sdk"""
+        """CreateGrantResponse
+
+        The model defined in huaweicloud sdk
+
+        :param grant_id: 授权ID，64字节。
+        :type grant_id: str
+        """
         
         super(CreateGrantResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class CreateGrantResponse(SdkResponse):
         授权ID，64字节。
 
         :param grant_id: The grant_id of this CreateGrantResponse.
-        :type: str
+        :type grant_id: str
         """
         self._grant_id = grant_id
 

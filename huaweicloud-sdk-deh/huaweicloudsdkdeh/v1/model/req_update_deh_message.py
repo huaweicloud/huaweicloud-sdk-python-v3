@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ReqUpdateDehMessage:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ReqUpdateDehMessage:
     }
 
     def __init__(self, auto_placement=None, name=None):
-        """ReqUpdateDehMessage - a model defined in huaweicloud sdk"""
+        """ReqUpdateDehMessage
+
+        The model defined in huaweicloud sdk
+
+        :param auto_placement: 在创建云服务器时（未指定专属主机ID），是否允许云服务器自动分配在一台可用的专属主机上。  取值范围：“on”或“off”。
+        :type auto_placement: str
+        :param name: 专属主机名称。
+        :type name: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class ReqUpdateDehMessage:
         在创建云服务器时（未指定专属主机ID），是否允许云服务器自动分配在一台可用的专属主机上。  取值范围：“on”或“off”。
 
         :param auto_placement: The auto_placement of this ReqUpdateDehMessage.
-        :type: str
+        :type auto_placement: str
         """
         self._auto_placement = auto_placement
 
@@ -85,7 +92,7 @@ class ReqUpdateDehMessage:
         专属主机名称。
 
         :param name: The name of this ReqUpdateDehMessage.
-        :type: str
+        :type name: str
         """
         self._name = name
 

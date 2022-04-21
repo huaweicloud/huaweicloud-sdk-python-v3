@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VideoTemplateInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class VideoTemplateInfo:
     }
 
     def __init__(self, quality=None, width=None, height=None, bitrate=None, frame_rate=None):
-        """VideoTemplateInfo - a model defined in huaweicloud sdk"""
+        """VideoTemplateInfo
+
+        The model defined in huaweicloud sdk
+
+        :param quality: 画质。
+        :type quality: str
+        :param width: 视频宽度。
+        :type width: int
+        :param height: 视频高度。
+        :type height: int
+        :param bitrate: 码率。
+        :type bitrate: int
+        :param frame_rate: 帧率（默认为1，1代表自适应，单位是帧每秒）。
+        :type frame_rate: int
+        """
         
         
 
@@ -77,7 +90,7 @@ class VideoTemplateInfo:
         画质。
 
         :param quality: The quality of this VideoTemplateInfo.
-        :type: str
+        :type quality: str
         """
         self._quality = quality
 
@@ -99,7 +112,7 @@ class VideoTemplateInfo:
         视频宽度。
 
         :param width: The width of this VideoTemplateInfo.
-        :type: int
+        :type width: int
         """
         self._width = width
 
@@ -121,7 +134,7 @@ class VideoTemplateInfo:
         视频高度。
 
         :param height: The height of this VideoTemplateInfo.
-        :type: int
+        :type height: int
         """
         self._height = height
 
@@ -143,7 +156,7 @@ class VideoTemplateInfo:
         码率。
 
         :param bitrate: The bitrate of this VideoTemplateInfo.
-        :type: int
+        :type bitrate: int
         """
         self._bitrate = bitrate
 
@@ -165,7 +178,7 @@ class VideoTemplateInfo:
         帧率（默认为1，1代表自适应，单位是帧每秒）。
 
         :param frame_rate: The frame_rate of this VideoTemplateInfo.
-        :type: int
+        :type frame_rate: int
         """
         self._frame_rate = frame_rate
 

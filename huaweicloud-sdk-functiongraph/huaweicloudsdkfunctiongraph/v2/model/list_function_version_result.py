@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListFunctionVersionResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -102,7 +101,85 @@ class ListFunctionVersionResult:
     }
 
     def __init__(self, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, last_modified=None, func_vpc_id=None, concurrency=None, concurrent_num=None, strategy_config=None, initializer_handler=None, initializer_timeout=None, long_time=None, log_group_id=None, log_stream_id=None, function_async_config=None, type=None, enable_cloud_debug=None, enable_dynamic_memory=None, enterprise_project_id=None):
-        """ListFunctionVersionResult - a model defined in huaweicloud sdk"""
+        """ListFunctionVersionResult
+
+        The model defined in huaweicloud sdk
+
+        :param func_urn: 函数的URN（Uniform Resource Name），唯一标识函数。
+        :type func_urn: str
+        :param func_name: 函数名称。
+        :type func_name: str
+        :param domain_id: 域名id。
+        :type domain_id: str
+        :param namespace: 租户的project id。
+        :type namespace: str
+        :param project_name: 租户的project name。
+        :type project_name: str
+        :param package: 函数所属的分组Package，用于用户针对函数的自定义分组。
+        :type package: str
+        :param runtime: FunctionGraph函数的执行环境 支持Node.js6.10、Python2.7、Python3.6、Java8、Go1.8、Node.js 8.10、C#.NET Core 2.0、C#.NET Core 2.1、PHP7.3。 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 Java11、Nodejs14.18、Python3.9在type为v2时支持
+        :type runtime: str
+        :param timeout: 函数执行超时时间，超时函数将被强行停止，范围3～900秒
+        :type timeout: int
+        :param handler: 函数执行入口 规则：xx.xx，必须包含“. ” 举例：对于node.js函数：myfunction.handler，则表示函数的文件名为myfunction.js，执行的入口函数名为handler。
+        :type handler: str
+        :param memory_size: 函数消耗的内存。 单位M。 取值范围为：128、256、512、768、1024、1280、1536、1792、2048、2560、3072、3584、4096。 最小值为128，最大值为4096。
+        :type memory_size: int
+        :param cpu: 函数占用的cpu资源。 单位为millicore（1 core&#x3D;1000 millicores）。 取值与MemorySize成比例，默认是128M内存占0.1个核（100 millicores）。 函数占用的CPU为基础CPU：200 millicores，再加上内存按比例占用的CPU，计算方法：内存/128 *100 + 200。
+        :type cpu: int
+        :param code_type: 函数代码类型，取值有4种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。
+        :type code_type: str
+        :param code_url: 当CodeType为obs时，该值为函数代码包在OBS上的地址，CodeType为其他值时，该字段为空。
+        :type code_url: str
+        :param code_filename: 函数的文件名，当CodeType为jar/zip时必须提供该字段，inline和obs不需要提供。
+        :type code_filename: str
+        :param code_size: 函数大小，单位：字节。
+        :type code_size: int
+        :param user_data: 用户自定义的name/value信息。 在函数中使用的参数。 举例：如函数要访问某个主机，可以设置自定义参数：Host&#x3D;{host_ip}，最多定义20个，总长度不超过4KB。
+        :type user_data: str
+        :param encrypted_user_data: 用户自定义的name/value信息，用于需要加密的配置。
+        :type encrypted_user_data: str
+        :param digest: 函数代码SHA512 hash值，用于判断函数是否变化。
+        :type digest: str
+        :param version: 函数版本号，由系统自动生成，规则：vYYYYMMDD-HHMMSS（v+年月日-时分秒）。
+        :type version: str
+        :param image_name: 函数版本的内部标识。
+        :type image_name: str
+        :param xrole: 函数使用的权限委托名称，需要IAM支持，并在IAM界面创建委托，当函数需要访问其他服务时，必须提供该字段。
+        :type xrole: str
+        :param app_xrole: 函数app使用的权限委托名称，需要IAM支持，并在IAM界面创建委托，当函数需要访问其他服务时，必须提供该字段。
+        :type app_xrole: str
+        :param last_modified: 函数最后一次更新时间。
+        :type last_modified: datetime
+        :param func_vpc_id: 用户的vpcid
+        :type func_vpc_id: str
+        :param concurrency: 
+        :type concurrency: int
+        :param concurrent_num: 
+        :type concurrent_num: int
+        :param strategy_config: 
+        :type strategy_config: :class:`huaweicloudsdkfunctiongraph.v2.StrategyConfig`
+        :param initializer_handler: 函数初始化入口，规则：xx.xx，必须包含“. ”。 举例：对于node.js函数：myfunction.initializer，则表示函数的文件名为myfunction.js，初始化的入口函数名为initializer。
+        :type initializer_handler: str
+        :param initializer_timeout: 初始化超时时间，超时函数将被强行停止，范围1～300秒。
+        :type initializer_timeout: int
+        :param long_time: 是否是支持长时间运行
+        :type long_time: bool
+        :param log_group_id: 自定义日志查询组id
+        :type log_group_id: str
+        :param log_stream_id: 自定义日志查询流id
+        :type log_stream_id: str
+        :param function_async_config: 
+        :type function_async_config: :class:`huaweicloudsdkfunctiongraph.v2.FunctionAsyncConfig`
+        :param type: 函数版本
+        :type type: str
+        :param enable_cloud_debug: 是否启用cloud debug功能
+        :type enable_cloud_debug: str
+        :param enable_dynamic_memory: 是否启用动态内存功能
+        :type enable_dynamic_memory: bool
+        :param enterprise_project_id: 企业项目ID，在企业用户创建函数时必填。
+        :type enterprise_project_id: str
+        """
         
         
 
@@ -221,7 +298,7 @@ class ListFunctionVersionResult:
         函数的URN（Uniform Resource Name），唯一标识函数。
 
         :param func_urn: The func_urn of this ListFunctionVersionResult.
-        :type: str
+        :type func_urn: str
         """
         self._func_urn = func_urn
 
@@ -243,7 +320,7 @@ class ListFunctionVersionResult:
         函数名称。
 
         :param func_name: The func_name of this ListFunctionVersionResult.
-        :type: str
+        :type func_name: str
         """
         self._func_name = func_name
 
@@ -265,7 +342,7 @@ class ListFunctionVersionResult:
         域名id。
 
         :param domain_id: The domain_id of this ListFunctionVersionResult.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -287,7 +364,7 @@ class ListFunctionVersionResult:
         租户的project id。
 
         :param namespace: The namespace of this ListFunctionVersionResult.
-        :type: str
+        :type namespace: str
         """
         self._namespace = namespace
 
@@ -309,7 +386,7 @@ class ListFunctionVersionResult:
         租户的project name。
 
         :param project_name: The project_name of this ListFunctionVersionResult.
-        :type: str
+        :type project_name: str
         """
         self._project_name = project_name
 
@@ -331,7 +408,7 @@ class ListFunctionVersionResult:
         函数所属的分组Package，用于用户针对函数的自定义分组。
 
         :param package: The package of this ListFunctionVersionResult.
-        :type: str
+        :type package: str
         """
         self._package = package
 
@@ -353,7 +430,7 @@ class ListFunctionVersionResult:
         FunctionGraph函数的执行环境 支持Node.js6.10、Python2.7、Python3.6、Java8、Go1.8、Node.js 8.10、C#.NET Core 2.0、C#.NET Core 2.1、PHP7.3。 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 Java11、Nodejs14.18、Python3.9在type为v2时支持
 
         :param runtime: The runtime of this ListFunctionVersionResult.
-        :type: str
+        :type runtime: str
         """
         self._runtime = runtime
 
@@ -375,7 +452,7 @@ class ListFunctionVersionResult:
         函数执行超时时间，超时函数将被强行停止，范围3～900秒
 
         :param timeout: The timeout of this ListFunctionVersionResult.
-        :type: int
+        :type timeout: int
         """
         self._timeout = timeout
 
@@ -397,7 +474,7 @@ class ListFunctionVersionResult:
         函数执行入口 规则：xx.xx，必须包含“. ” 举例：对于node.js函数：myfunction.handler，则表示函数的文件名为myfunction.js，执行的入口函数名为handler。
 
         :param handler: The handler of this ListFunctionVersionResult.
-        :type: str
+        :type handler: str
         """
         self._handler = handler
 
@@ -419,7 +496,7 @@ class ListFunctionVersionResult:
         函数消耗的内存。 单位M。 取值范围为：128、256、512、768、1024、1280、1536、1792、2048、2560、3072、3584、4096。 最小值为128，最大值为4096。
 
         :param memory_size: The memory_size of this ListFunctionVersionResult.
-        :type: int
+        :type memory_size: int
         """
         self._memory_size = memory_size
 
@@ -441,7 +518,7 @@ class ListFunctionVersionResult:
         函数占用的cpu资源。 单位为millicore（1 core=1000 millicores）。 取值与MemorySize成比例，默认是128M内存占0.1个核（100 millicores）。 函数占用的CPU为基础CPU：200 millicores，再加上内存按比例占用的CPU，计算方法：内存/128 *100 + 200。
 
         :param cpu: The cpu of this ListFunctionVersionResult.
-        :type: int
+        :type cpu: int
         """
         self._cpu = cpu
 
@@ -463,7 +540,7 @@ class ListFunctionVersionResult:
         函数代码类型，取值有4种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。
 
         :param code_type: The code_type of this ListFunctionVersionResult.
-        :type: str
+        :type code_type: str
         """
         self._code_type = code_type
 
@@ -485,7 +562,7 @@ class ListFunctionVersionResult:
         当CodeType为obs时，该值为函数代码包在OBS上的地址，CodeType为其他值时，该字段为空。
 
         :param code_url: The code_url of this ListFunctionVersionResult.
-        :type: str
+        :type code_url: str
         """
         self._code_url = code_url
 
@@ -507,7 +584,7 @@ class ListFunctionVersionResult:
         函数的文件名，当CodeType为jar/zip时必须提供该字段，inline和obs不需要提供。
 
         :param code_filename: The code_filename of this ListFunctionVersionResult.
-        :type: str
+        :type code_filename: str
         """
         self._code_filename = code_filename
 
@@ -529,7 +606,7 @@ class ListFunctionVersionResult:
         函数大小，单位：字节。
 
         :param code_size: The code_size of this ListFunctionVersionResult.
-        :type: int
+        :type code_size: int
         """
         self._code_size = code_size
 
@@ -551,7 +628,7 @@ class ListFunctionVersionResult:
         用户自定义的name/value信息。 在函数中使用的参数。 举例：如函数要访问某个主机，可以设置自定义参数：Host={host_ip}，最多定义20个，总长度不超过4KB。
 
         :param user_data: The user_data of this ListFunctionVersionResult.
-        :type: str
+        :type user_data: str
         """
         self._user_data = user_data
 
@@ -573,7 +650,7 @@ class ListFunctionVersionResult:
         用户自定义的name/value信息，用于需要加密的配置。
 
         :param encrypted_user_data: The encrypted_user_data of this ListFunctionVersionResult.
-        :type: str
+        :type encrypted_user_data: str
         """
         self._encrypted_user_data = encrypted_user_data
 
@@ -595,7 +672,7 @@ class ListFunctionVersionResult:
         函数代码SHA512 hash值，用于判断函数是否变化。
 
         :param digest: The digest of this ListFunctionVersionResult.
-        :type: str
+        :type digest: str
         """
         self._digest = digest
 
@@ -617,7 +694,7 @@ class ListFunctionVersionResult:
         函数版本号，由系统自动生成，规则：vYYYYMMDD-HHMMSS（v+年月日-时分秒）。
 
         :param version: The version of this ListFunctionVersionResult.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -639,7 +716,7 @@ class ListFunctionVersionResult:
         函数版本的内部标识。
 
         :param image_name: The image_name of this ListFunctionVersionResult.
-        :type: str
+        :type image_name: str
         """
         self._image_name = image_name
 
@@ -661,7 +738,7 @@ class ListFunctionVersionResult:
         函数使用的权限委托名称，需要IAM支持，并在IAM界面创建委托，当函数需要访问其他服务时，必须提供该字段。
 
         :param xrole: The xrole of this ListFunctionVersionResult.
-        :type: str
+        :type xrole: str
         """
         self._xrole = xrole
 
@@ -683,7 +760,7 @@ class ListFunctionVersionResult:
         函数app使用的权限委托名称，需要IAM支持，并在IAM界面创建委托，当函数需要访问其他服务时，必须提供该字段。
 
         :param app_xrole: The app_xrole of this ListFunctionVersionResult.
-        :type: str
+        :type app_xrole: str
         """
         self._app_xrole = app_xrole
 
@@ -705,7 +782,7 @@ class ListFunctionVersionResult:
         函数最后一次更新时间。
 
         :param last_modified: The last_modified of this ListFunctionVersionResult.
-        :type: datetime
+        :type last_modified: datetime
         """
         self._last_modified = last_modified
 
@@ -727,7 +804,7 @@ class ListFunctionVersionResult:
         用户的vpcid
 
         :param func_vpc_id: The func_vpc_id of this ListFunctionVersionResult.
-        :type: str
+        :type func_vpc_id: str
         """
         self._func_vpc_id = func_vpc_id
 
@@ -747,7 +824,7 @@ class ListFunctionVersionResult:
 
 
         :param concurrency: The concurrency of this ListFunctionVersionResult.
-        :type: int
+        :type concurrency: int
         """
         self._concurrency = concurrency
 
@@ -767,7 +844,7 @@ class ListFunctionVersionResult:
 
 
         :param concurrent_num: The concurrent_num of this ListFunctionVersionResult.
-        :type: int
+        :type concurrent_num: int
         """
         self._concurrent_num = concurrent_num
 
@@ -777,7 +854,7 @@ class ListFunctionVersionResult:
 
 
         :return: The strategy_config of this ListFunctionVersionResult.
-        :rtype: StrategyConfig
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.StrategyConfig`
         """
         return self._strategy_config
 
@@ -787,7 +864,7 @@ class ListFunctionVersionResult:
 
 
         :param strategy_config: The strategy_config of this ListFunctionVersionResult.
-        :type: StrategyConfig
+        :type strategy_config: :class:`huaweicloudsdkfunctiongraph.v2.StrategyConfig`
         """
         self._strategy_config = strategy_config
 
@@ -809,7 +886,7 @@ class ListFunctionVersionResult:
         函数初始化入口，规则：xx.xx，必须包含“. ”。 举例：对于node.js函数：myfunction.initializer，则表示函数的文件名为myfunction.js，初始化的入口函数名为initializer。
 
         :param initializer_handler: The initializer_handler of this ListFunctionVersionResult.
-        :type: str
+        :type initializer_handler: str
         """
         self._initializer_handler = initializer_handler
 
@@ -831,7 +908,7 @@ class ListFunctionVersionResult:
         初始化超时时间，超时函数将被强行停止，范围1～300秒。
 
         :param initializer_timeout: The initializer_timeout of this ListFunctionVersionResult.
-        :type: int
+        :type initializer_timeout: int
         """
         self._initializer_timeout = initializer_timeout
 
@@ -853,7 +930,7 @@ class ListFunctionVersionResult:
         是否是支持长时间运行
 
         :param long_time: The long_time of this ListFunctionVersionResult.
-        :type: bool
+        :type long_time: bool
         """
         self._long_time = long_time
 
@@ -875,7 +952,7 @@ class ListFunctionVersionResult:
         自定义日志查询组id
 
         :param log_group_id: The log_group_id of this ListFunctionVersionResult.
-        :type: str
+        :type log_group_id: str
         """
         self._log_group_id = log_group_id
 
@@ -897,7 +974,7 @@ class ListFunctionVersionResult:
         自定义日志查询流id
 
         :param log_stream_id: The log_stream_id of this ListFunctionVersionResult.
-        :type: str
+        :type log_stream_id: str
         """
         self._log_stream_id = log_stream_id
 
@@ -907,7 +984,7 @@ class ListFunctionVersionResult:
 
 
         :return: The function_async_config of this ListFunctionVersionResult.
-        :rtype: FunctionAsyncConfig
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.FunctionAsyncConfig`
         """
         return self._function_async_config
 
@@ -917,7 +994,7 @@ class ListFunctionVersionResult:
 
 
         :param function_async_config: The function_async_config of this ListFunctionVersionResult.
-        :type: FunctionAsyncConfig
+        :type function_async_config: :class:`huaweicloudsdkfunctiongraph.v2.FunctionAsyncConfig`
         """
         self._function_async_config = function_async_config
 
@@ -939,7 +1016,7 @@ class ListFunctionVersionResult:
         函数版本
 
         :param type: The type of this ListFunctionVersionResult.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -961,7 +1038,7 @@ class ListFunctionVersionResult:
         是否启用cloud debug功能
 
         :param enable_cloud_debug: The enable_cloud_debug of this ListFunctionVersionResult.
-        :type: str
+        :type enable_cloud_debug: str
         """
         self._enable_cloud_debug = enable_cloud_debug
 
@@ -983,7 +1060,7 @@ class ListFunctionVersionResult:
         是否启用动态内存功能
 
         :param enable_dynamic_memory: The enable_dynamic_memory of this ListFunctionVersionResult.
-        :type: bool
+        :type enable_dynamic_memory: bool
         """
         self._enable_dynamic_memory = enable_dynamic_memory
 
@@ -1005,7 +1082,7 @@ class ListFunctionVersionResult:
         企业项目ID，在企业用户创建函数时必填。
 
         :param enterprise_project_id: The enterprise_project_id of this ListFunctionVersionResult.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 

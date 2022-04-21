@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListResourceResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListResourceResp:
     }
 
     def __init__(self, resouce_detail=None, resource_id=None, resource_name=None, tags=None):
-        """ListResourceResp - a model defined in huaweicloud sdk"""
+        """ListResourceResp
+
+        The model defined in huaweicloud sdk
+
+        :param resouce_detail: 资源详情。 资源对象，用于扩展。默认为空
+        :type resouce_detail: object
+        :param resource_id: 资源ID
+        :type resource_id: str
+        :param resource_name: 资源名称，没有默认为空字符串
+        :type resource_name: str
+        :param tags: 标签列表，没有标签默认为空数组
+        :type tags: list[:class:`huaweicloudsdkeip.v2.ResourceTagResp`]
+        """
         
         
 
@@ -73,7 +84,7 @@ class ListResourceResp:
         资源详情。 资源对象，用于扩展。默认为空
 
         :param resouce_detail: The resouce_detail of this ListResourceResp.
-        :type: object
+        :type resouce_detail: object
         """
         self._resouce_detail = resouce_detail
 
@@ -95,7 +106,7 @@ class ListResourceResp:
         资源ID
 
         :param resource_id: The resource_id of this ListResourceResp.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -117,7 +128,7 @@ class ListResourceResp:
         资源名称，没有默认为空字符串
 
         :param resource_name: The resource_name of this ListResourceResp.
-        :type: str
+        :type resource_name: str
         """
         self._resource_name = resource_name
 
@@ -128,7 +139,7 @@ class ListResourceResp:
         标签列表，没有标签默认为空数组
 
         :return: The tags of this ListResourceResp.
-        :rtype: list[ResourceTagResp]
+        :rtype: list[:class:`huaweicloudsdkeip.v2.ResourceTagResp`]
         """
         return self._tags
 
@@ -139,7 +150,7 @@ class ListResourceResp:
         标签列表，没有标签默认为空数组
 
         :param tags: The tags of this ListResourceResp.
-        :type: list[ResourceTagResp]
+        :type tags: list[:class:`huaweicloudsdkeip.v2.ResourceTagResp`]
         """
         self._tags = tags
 

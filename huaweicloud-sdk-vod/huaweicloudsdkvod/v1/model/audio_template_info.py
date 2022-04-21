@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AudioTemplateInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class AudioTemplateInfo:
     }
 
     def __init__(self, sample_rate=None, bitrate=None, channels=None):
-        """AudioTemplateInfo - a model defined in huaweicloud sdk"""
+        """AudioTemplateInfo
+
+        The model defined in huaweicloud sdk
+
+        :param sample_rate: 音频采样率(有效值范围) - 1：AUDIO_SAMPLE_AUTO - 2：AUDIO_SAMPLE_22050 - 3：AUDIO_SAMPLE_32000 - 4：AUDIO_SAMPLE_44100 - 5：AUDIO_SAMPLE_48000 - 6：AUDIO_SAMPLE_96000  默认值为1。
+        :type sample_rate: int
+        :param bitrate: 音频码率（单位：Kbps）。
+        :type bitrate: int
+        :param channels: 声道数(有效值范围) - 1：AUDIO_CHANNELS_1 - 2：AUDIO_CHANNELS_2
+        :type channels: int
+        """
         
         
 
@@ -66,7 +75,7 @@ class AudioTemplateInfo:
         音频采样率(有效值范围) - 1：AUDIO_SAMPLE_AUTO - 2：AUDIO_SAMPLE_22050 - 3：AUDIO_SAMPLE_32000 - 4：AUDIO_SAMPLE_44100 - 5：AUDIO_SAMPLE_48000 - 6：AUDIO_SAMPLE_96000  默认值为1。
 
         :param sample_rate: The sample_rate of this AudioTemplateInfo.
-        :type: int
+        :type sample_rate: int
         """
         self._sample_rate = sample_rate
 
@@ -88,7 +97,7 @@ class AudioTemplateInfo:
         音频码率（单位：Kbps）。
 
         :param bitrate: The bitrate of this AudioTemplateInfo.
-        :type: int
+        :type bitrate: int
         """
         self._bitrate = bitrate
 
@@ -110,7 +119,7 @@ class AudioTemplateInfo:
         声道数(有效值范围) - 1：AUDIO_CHANNELS_1 - 2：AUDIO_CHANNELS_2
 
         :param channels: The channels of this AudioTemplateInfo.
-        :type: int
+        :type channels: int
         """
         self._channels = channels
 

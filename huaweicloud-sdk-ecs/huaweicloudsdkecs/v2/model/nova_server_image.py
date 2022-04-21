@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NovaServerImage:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class NovaServerImage:
     }
 
     def __init__(self, id=None, links=None):
-        """NovaServerImage - a model defined in huaweicloud sdk"""
+        """NovaServerImage
+
+        The model defined in huaweicloud sdk
+
+        :param id: 镜像ID。
+        :type id: str
+        :param links: 云服务器类型相关标记快捷链接信息。
+        :type links: list[:class:`huaweicloudsdkecs.v2.NovaLink`]
+        """
         
         
 
@@ -61,7 +68,7 @@ class NovaServerImage:
         镜像ID。
 
         :param id: The id of this NovaServerImage.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -72,7 +79,7 @@ class NovaServerImage:
         云服务器类型相关标记快捷链接信息。
 
         :return: The links of this NovaServerImage.
-        :rtype: list[NovaLink]
+        :rtype: list[:class:`huaweicloudsdkecs.v2.NovaLink`]
         """
         return self._links
 
@@ -83,7 +90,7 @@ class NovaServerImage:
         云服务器类型相关标记快捷链接信息。
 
         :param links: The links of this NovaServerImage.
-        :type: list[NovaLink]
+        :type links: list[:class:`huaweicloudsdkecs.v2.NovaLink`]
         """
         self._links = links
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DecryptDataResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DecryptDataResponse(SdkResponse):
     }
 
     def __init__(self, key_id=None, plain_text=None):
-        """DecryptDataResponse - a model defined in huaweicloud sdk"""
+        """DecryptDataResponse
+
+        The model defined in huaweicloud sdk
+
+        :param key_id: 密钥ID。
+        :type key_id: str
+        :param plain_text: 明文。
+        :type plain_text: str
+        """
         
         super(DecryptDataResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class DecryptDataResponse(SdkResponse):
         密钥ID。
 
         :param key_id: The key_id of this DecryptDataResponse.
-        :type: str
+        :type key_id: str
         """
         self._key_id = key_id
 
@@ -85,7 +92,7 @@ class DecryptDataResponse(SdkResponse):
         明文。
 
         :param plain_text: The plain_text of this DecryptDataResponse.
-        :type: str
+        :type plain_text: str
         """
         self._plain_text = plain_text
 

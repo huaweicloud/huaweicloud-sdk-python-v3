@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SpecsConfig:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class SpecsConfig:
     }
 
     def __init__(self, offline=None, nearline=None, rank=None, online_tps=None):
-        """SpecsConfig - a model defined in huaweicloud sdk"""
+        """SpecsConfig
+
+        The model defined in huaweicloud sdk
+
+        :param offline: 离线计算规格。
+        :type offline: str
+        :param nearline: 实时计算规格。
+        :type nearline: str
+        :param rank: 深度学习计算规格。
+        :type rank: str
+        :param online_tps: 在线服务最大并发数。
+        :type online_tps: int
+        """
         
         
 
@@ -72,7 +83,7 @@ class SpecsConfig:
         离线计算规格。
 
         :param offline: The offline of this SpecsConfig.
-        :type: str
+        :type offline: str
         """
         self._offline = offline
 
@@ -94,7 +105,7 @@ class SpecsConfig:
         实时计算规格。
 
         :param nearline: The nearline of this SpecsConfig.
-        :type: str
+        :type nearline: str
         """
         self._nearline = nearline
 
@@ -116,7 +127,7 @@ class SpecsConfig:
         深度学习计算规格。
 
         :param rank: The rank of this SpecsConfig.
-        :type: str
+        :type rank: str
         """
         self._rank = rank
 
@@ -138,7 +149,7 @@ class SpecsConfig:
         在线服务最大并发数。
 
         :param online_tps: The online_tps of this SpecsConfig.
-        :type: int
+        :type online_tps: int
         """
         self._online_tps = online_tps
 

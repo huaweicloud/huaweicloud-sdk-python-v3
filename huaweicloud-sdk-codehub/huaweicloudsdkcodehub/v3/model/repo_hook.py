@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RepoHook:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class RepoHook:
     }
 
     def __init__(self, build_events=None, created_at=None, enable_ssl_verification=None, id=None, issues_events=None, merge_requests_events=None, note_events=None, pipeline_events=None, project_id=None, push_events=None, repository_update_events=None, tag_push_events=None, wiki_page_events=None):
-        """RepoHook - a model defined in huaweicloud sdk"""
+        """RepoHook
+
+        The model defined in huaweicloud sdk
+
+        :param build_events: 是否触发build_events事件
+        :type build_events: bool
+        :param created_at: 仓库统计创建的时间
+        :type created_at: datetime
+        :param enable_ssl_verification: 是否使用ssl验证
+        :type enable_ssl_verification: bool
+        :param id: hook id
+        :type id: int
+        :param issues_events: 是否触发issues_events事件
+        :type issues_events: bool
+        :param merge_requests_events: 是否触发merge_requests_events事件
+        :type merge_requests_events: bool
+        :param note_events: 是否触发note_events事件
+        :type note_events: bool
+        :param pipeline_events: 是否触发pipeline_events事件
+        :type pipeline_events: bool
+        :param project_id: 仓库id
+        :type project_id: int
+        :param push_events: 是否触发push_events事件
+        :type push_events: bool
+        :param repository_update_events: 是否触发repository_update_events事件
+        :type repository_update_events: bool
+        :param tag_push_events: 是否触发tag_push_events事件
+        :type tag_push_events: bool
+        :param wiki_page_events: 是否触发wiki_page_events事件
+        :type wiki_page_events: bool
+        """
         
         
 
@@ -118,7 +147,7 @@ class RepoHook:
         是否触发build_events事件
 
         :param build_events: The build_events of this RepoHook.
-        :type: bool
+        :type build_events: bool
         """
         self._build_events = build_events
 
@@ -140,7 +169,7 @@ class RepoHook:
         仓库统计创建的时间
 
         :param created_at: The created_at of this RepoHook.
-        :type: datetime
+        :type created_at: datetime
         """
         self._created_at = created_at
 
@@ -162,7 +191,7 @@ class RepoHook:
         是否使用ssl验证
 
         :param enable_ssl_verification: The enable_ssl_verification of this RepoHook.
-        :type: bool
+        :type enable_ssl_verification: bool
         """
         self._enable_ssl_verification = enable_ssl_verification
 
@@ -184,7 +213,7 @@ class RepoHook:
         hook id
 
         :param id: The id of this RepoHook.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -206,7 +235,7 @@ class RepoHook:
         是否触发issues_events事件
 
         :param issues_events: The issues_events of this RepoHook.
-        :type: bool
+        :type issues_events: bool
         """
         self._issues_events = issues_events
 
@@ -228,7 +257,7 @@ class RepoHook:
         是否触发merge_requests_events事件
 
         :param merge_requests_events: The merge_requests_events of this RepoHook.
-        :type: bool
+        :type merge_requests_events: bool
         """
         self._merge_requests_events = merge_requests_events
 
@@ -250,7 +279,7 @@ class RepoHook:
         是否触发note_events事件
 
         :param note_events: The note_events of this RepoHook.
-        :type: bool
+        :type note_events: bool
         """
         self._note_events = note_events
 
@@ -272,7 +301,7 @@ class RepoHook:
         是否触发pipeline_events事件
 
         :param pipeline_events: The pipeline_events of this RepoHook.
-        :type: bool
+        :type pipeline_events: bool
         """
         self._pipeline_events = pipeline_events
 
@@ -294,7 +323,7 @@ class RepoHook:
         仓库id
 
         :param project_id: The project_id of this RepoHook.
-        :type: int
+        :type project_id: int
         """
         self._project_id = project_id
 
@@ -316,7 +345,7 @@ class RepoHook:
         是否触发push_events事件
 
         :param push_events: The push_events of this RepoHook.
-        :type: bool
+        :type push_events: bool
         """
         self._push_events = push_events
 
@@ -338,7 +367,7 @@ class RepoHook:
         是否触发repository_update_events事件
 
         :param repository_update_events: The repository_update_events of this RepoHook.
-        :type: bool
+        :type repository_update_events: bool
         """
         self._repository_update_events = repository_update_events
 
@@ -360,7 +389,7 @@ class RepoHook:
         是否触发tag_push_events事件
 
         :param tag_push_events: The tag_push_events of this RepoHook.
-        :type: bool
+        :type tag_push_events: bool
         """
         self._tag_push_events = tag_push_events
 
@@ -382,7 +411,7 @@ class RepoHook:
         是否触发wiki_page_events事件
 
         :param wiki_page_events: The wiki_page_events of this RepoHook.
-        :type: bool
+        :type wiki_page_events: bool
         """
         self._wiki_page_events = wiki_page_events
 

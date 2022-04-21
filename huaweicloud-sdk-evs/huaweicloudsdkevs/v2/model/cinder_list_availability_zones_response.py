@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CinderListAvailabilityZonesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CinderListAvailabilityZonesResponse(SdkResponse):
     }
 
     def __init__(self, availability_zone_info=None):
-        """CinderListAvailabilityZonesResponse - a model defined in huaweicloud sdk"""
+        """CinderListAvailabilityZonesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param availability_zone_info: 查询请求返回的可用分区列表，请参见• [availabilityZoneInfo参数说明](https://support.huaweicloud.com/api-evs/evs_04_2081.html#evs_04_2081__li19751007201910)。
+        :type availability_zone_info: list[:class:`huaweicloudsdkevs.v2.AzInfo`]
+        """
         
         super(CinderListAvailabilityZonesResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class CinderListAvailabilityZonesResponse(SdkResponse):
         查询请求返回的可用分区列表，请参见• [availabilityZoneInfo参数说明](https://support.huaweicloud.com/api-evs/evs_04_2081.html#evs_04_2081__li19751007201910)。
 
         :return: The availability_zone_info of this CinderListAvailabilityZonesResponse.
-        :rtype: list[AzInfo]
+        :rtype: list[:class:`huaweicloudsdkevs.v2.AzInfo`]
         """
         return self._availability_zone_info
 
@@ -58,7 +63,7 @@ class CinderListAvailabilityZonesResponse(SdkResponse):
         查询请求返回的可用分区列表，请参见• [availabilityZoneInfo参数说明](https://support.huaweicloud.com/api-evs/evs_04_2081.html#evs_04_2081__li19751007201910)。
 
         :param availability_zone_info: The availability_zone_info of this CinderListAvailabilityZonesResponse.
-        :type: list[AzInfo]
+        :type availability_zone_info: list[:class:`huaweicloudsdkevs.v2.AzInfo`]
         """
         self._availability_zone_info = availability_zone_info
 

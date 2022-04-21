@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DisContentRsp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class DisContentRsp:
     }
 
     def __init__(self, stream_name=None, ak=None, sk=None, project_id=None):
-        """DisContentRsp - a model defined in huaweicloud sdk"""
+        """DisContentRsp
+
+        The model defined in huaweicloud sdk
+
+        :param stream_name: 通道名称
+        :type stream_name: str
+        :param ak: 租户的AK
+        :type ak: str
+        :param sk: 租户的SK
+        :type sk: str
+        :param project_id: 项目id
+        :type project_id: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class DisContentRsp:
         通道名称
 
         :param stream_name: The stream_name of this DisContentRsp.
-        :type: str
+        :type stream_name: str
         """
         self._stream_name = stream_name
 
@@ -95,7 +106,7 @@ class DisContentRsp:
         租户的AK
 
         :param ak: The ak of this DisContentRsp.
-        :type: str
+        :type ak: str
         """
         self._ak = ak
 
@@ -117,7 +128,7 @@ class DisContentRsp:
         租户的SK
 
         :param sk: The sk of this DisContentRsp.
-        :type: str
+        :type sk: str
         """
         self._sk = sk
 
@@ -139,7 +150,7 @@ class DisContentRsp:
         项目id
 
         :param project_id: The project_id of this DisContentRsp.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 

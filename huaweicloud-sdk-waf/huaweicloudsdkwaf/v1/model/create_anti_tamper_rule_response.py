@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateAntiTamperRuleResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class CreateAntiTamperRuleResponse(SdkResponse):
     }
 
     def __init__(self, id=None, policyid=None, hostname=None, url=None, description=None, status=None):
-        """CreateAntiTamperRuleResponse - a model defined in huaweicloud sdk"""
+        """CreateAntiTamperRuleResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 规则id
+        :type id: str
+        :param policyid: 策略id
+        :type policyid: str
+        :param hostname: 防篡改的域名
+        :type hostname: str
+        :param url: 防篡改的url，
+        :type url: str
+        :param description: 创建规则的时间戳
+        :type description: str
+        :param status: 规则状态，0：关闭，1：开启
+        :type status: int
+        """
         
         super(CreateAntiTamperRuleResponse, self).__init__()
 
@@ -83,7 +98,7 @@ class CreateAntiTamperRuleResponse(SdkResponse):
         规则id
 
         :param id: The id of this CreateAntiTamperRuleResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -105,7 +120,7 @@ class CreateAntiTamperRuleResponse(SdkResponse):
         策略id
 
         :param policyid: The policyid of this CreateAntiTamperRuleResponse.
-        :type: str
+        :type policyid: str
         """
         self._policyid = policyid
 
@@ -127,7 +142,7 @@ class CreateAntiTamperRuleResponse(SdkResponse):
         防篡改的域名
 
         :param hostname: The hostname of this CreateAntiTamperRuleResponse.
-        :type: str
+        :type hostname: str
         """
         self._hostname = hostname
 
@@ -149,7 +164,7 @@ class CreateAntiTamperRuleResponse(SdkResponse):
         防篡改的url，
 
         :param url: The url of this CreateAntiTamperRuleResponse.
-        :type: str
+        :type url: str
         """
         self._url = url
 
@@ -171,7 +186,7 @@ class CreateAntiTamperRuleResponse(SdkResponse):
         创建规则的时间戳
 
         :param description: The description of this CreateAntiTamperRuleResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -193,7 +208,7 @@ class CreateAntiTamperRuleResponse(SdkResponse):
         规则状态，0：关闭，1：开启
 
         :param status: The status of this CreateAntiTamperRuleResponse.
-        :type: int
+        :type status: int
         """
         self._status = status
 

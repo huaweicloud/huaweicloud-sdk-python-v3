@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteTemplateReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteTemplateReq:
     }
 
     def __init__(self, name=None):
-        """DeleteTemplateReq - a model defined in huaweicloud sdk"""
+        """DeleteTemplateReq
+
+        The model defined in huaweicloud sdk
+
+        :param name: 模板名称。
+        :type name: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteTemplateReq:
         模板名称。
 
         :param name: The name of this DeleteTemplateReq.
-        :type: str
+        :type name: str
         """
         self._name = name
 

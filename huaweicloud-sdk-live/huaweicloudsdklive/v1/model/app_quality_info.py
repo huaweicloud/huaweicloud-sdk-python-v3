@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AppQualityInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AppQualityInfo:
     }
 
     def __init__(self, app_name=None, quality_info=None):
-        """AppQualityInfo - a model defined in huaweicloud sdk"""
+        """AppQualityInfo
+
+        The model defined in huaweicloud sdk
+
+        :param app_name: 应用名称
+        :type app_name: str
+        :param quality_info: 视频质量信息
+        :type quality_info: list[:class:`huaweicloudsdklive.v1.QualityInfo`]
+        """
         
         
 
@@ -63,7 +70,7 @@ class AppQualityInfo:
         应用名称
 
         :param app_name: The app_name of this AppQualityInfo.
-        :type: str
+        :type app_name: str
         """
         self._app_name = app_name
 
@@ -74,7 +81,7 @@ class AppQualityInfo:
         视频质量信息
 
         :return: The quality_info of this AppQualityInfo.
-        :rtype: list[QualityInfo]
+        :rtype: list[:class:`huaweicloudsdklive.v1.QualityInfo`]
         """
         return self._quality_info
 
@@ -85,7 +92,7 @@ class AppQualityInfo:
         视频质量信息
 
         :param quality_info: The quality_info of this AppQualityInfo.
-        :type: list[QualityInfo]
+        :type quality_info: list[:class:`huaweicloudsdklive.v1.QualityInfo`]
         """
         self._quality_info = quality_info
 

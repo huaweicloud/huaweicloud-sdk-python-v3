@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MetricDataItem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class MetricDataItem:
     }
 
     def __init__(self, collect_time=None, metric=None, values=None):
-        """MetricDataItem - a model defined in huaweicloud sdk"""
+        """MetricDataItem
+
+        The model defined in huaweicloud sdk
+
+        :param collect_time: 数据收集时间支持过去1天和未来半小时范围内的数据上报。数据收集时间需要满足：  当前UTC时间减去collect_time小于等于24小时或者collect_time减去当前UTC时间小于等于30分钟。  若数据上报时间早于当天8点，则指标监控页面只显示当天8点后的数据。 取值范围： UNIX时间戳，单位毫秒。
+        :type collect_time: int
+        :param metric: 
+        :type metric: :class:`huaweicloudsdkaom.v2.MetricItemInfo`
+        :param values: 指标数据的值。
+        :type values: list[:class:`huaweicloudsdkaom.v2.ValueData`]
+        """
         
         
 
@@ -65,7 +74,7 @@ class MetricDataItem:
         数据收集时间支持过去1天和未来半小时范围内的数据上报。数据收集时间需要满足：  当前UTC时间减去collect_time小于等于24小时或者collect_time减去当前UTC时间小于等于30分钟。  若数据上报时间早于当天8点，则指标监控页面只显示当天8点后的数据。 取值范围： UNIX时间戳，单位毫秒。
 
         :param collect_time: The collect_time of this MetricDataItem.
-        :type: int
+        :type collect_time: int
         """
         self._collect_time = collect_time
 
@@ -75,7 +84,7 @@ class MetricDataItem:
 
 
         :return: The metric of this MetricDataItem.
-        :rtype: MetricItemInfo
+        :rtype: :class:`huaweicloudsdkaom.v2.MetricItemInfo`
         """
         return self._metric
 
@@ -85,7 +94,7 @@ class MetricDataItem:
 
 
         :param metric: The metric of this MetricDataItem.
-        :type: MetricItemInfo
+        :type metric: :class:`huaweicloudsdkaom.v2.MetricItemInfo`
         """
         self._metric = metric
 
@@ -96,7 +105,7 @@ class MetricDataItem:
         指标数据的值。
 
         :return: The values of this MetricDataItem.
-        :rtype: list[ValueData]
+        :rtype: list[:class:`huaweicloudsdkaom.v2.ValueData`]
         """
         return self._values
 
@@ -107,7 +116,7 @@ class MetricDataItem:
         指标数据的值。
 
         :param values: The values of this MetricDataItem.
-        :type: list[ValueData]
+        :type values: list[:class:`huaweicloudsdkaom.v2.ValueData`]
         """
         self._values = values
 

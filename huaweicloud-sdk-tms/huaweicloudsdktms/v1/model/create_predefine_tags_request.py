@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreatePredefineTagsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreatePredefineTagsRequest:
     }
 
     def __init__(self, body=None):
-        """CreatePredefineTagsRequest - a model defined in huaweicloud sdk"""
+        """CreatePredefineTagsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreatePredefineTagsRequest
+        :type body: :class:`huaweicloudsdktms.v1.ReqCreatePredefineTag`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreatePredefineTagsRequest:
 
 
         :return: The body of this CreatePredefineTagsRequest.
-        :rtype: ReqCreatePredefineTag
+        :rtype: :class:`huaweicloudsdktms.v1.ReqCreatePredefineTag`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreatePredefineTagsRequest:
 
 
         :param body: The body of this CreatePredefineTagsRequest.
-        :type: ReqCreatePredefineTag
+        :type body: :class:`huaweicloudsdktms.v1.ReqCreatePredefineTag`
         """
         self._body = body
 

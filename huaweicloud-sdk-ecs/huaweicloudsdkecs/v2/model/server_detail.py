@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ServerDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -122,7 +121,105 @@ class ServerDetail:
     }
 
     def __init__(self, status=None, updated=None, auto_terminate_time=None, host_id=None, os_ext_srv_att_rhost=None, addresses=None, key_name=None, image=None, os_ext_st_stask_state=None, os_ext_st_svm_state=None, os_ext_srv_att_rinstance_name=None, os_ext_srv_att_rhypervisor_hostname=None, flavor=None, id=None, security_groups=None, os_ext_a_zavailability_zone=None, user_id=None, name=None, created=None, tenant_id=None, os_dc_fdisk_config=None, access_i_pv4=None, access_i_pv6=None, fault=None, progress=None, os_ext_st_spower_state=None, config_drive=None, metadata=None, os_srv_us_glaunched_at=None, os_srv_us_gterminated_at=None, os_extended_volumesvolumes_attached=None, description=None, host_status=None, os_ext_srv_att_rhostname=None, os_ext_srv_att_rreservation_id=None, os_ext_srv_att_rlaunch_index=None, os_ext_srv_att_rkernel_id=None, os_ext_srv_att_rramdisk_id=None, os_ext_srv_att_rroot_device_name=None, os_ext_srv_att_ruser_data=None, locked=None, tags=None, osscheduler_hints=None, enterprise_project_id=None, sys_tags=None, cpu_options=None, hypervisor=None):
-        """ServerDetail - a model defined in huaweicloud sdk"""
+        """ServerDetail
+
+        The model defined in huaweicloud sdk
+
+        :param status: 弹性云服务器状态。  取值范围：  ACTIVE、BUILD、DELETED、ERROR、HARD_REBOOT、MIGRATING、PAUSED、REBOOT、REBUILD、RESIZE、REVERT_RESIZE、SHUTOFF、SHELVED、SHELVED_OFFLOADED、SOFT_DELETED、SUSPENDED、VERIFY_RESIZE  弹性云服务器状态说明请参考[云服务器状态](https://support.huaweicloud.com/api-ecs/ecs_08_0002.html)
+        :type status: str
+        :param updated: 弹性云服务器更新时间。  时间格式例如：2019-05-22T03:30:52Z
+        :type updated: str
+        :param auto_terminate_time: 弹性云服务器自动释放时间。  时间格式例如：2020-01-19T03:30:52Z
+        :type auto_terminate_time: str
+        :param host_id: 弹性云服务器所在主机的主机ID。
+        :type host_id: str
+        :param os_ext_srv_att_rhost: 弹性云服务器所在主机的主机名称。
+        :type os_ext_srv_att_rhost: str
+        :param addresses: 弹性云服务器的网络属性。
+        :type addresses: dict(str, list[ServerAddress])
+        :param key_name: 弹性云服务器使用的密钥对名称。
+        :type key_name: str
+        :param image: 
+        :type image: :class:`huaweicloudsdkecs.v2.ServerImage`
+        :param os_ext_st_stask_state: 扩展属性，弹性云服务器当前任务的状态。  取值范围请参考[云服务器状态](https://support.huaweicloud.com/api-ecs/ecs_08_0002.html)表3。
+        :type os_ext_st_stask_state: str
+        :param os_ext_st_svm_state: 扩展属性，弹性云服务器当前状态。  云服务器状态说明请参考[云服务器状态](https://support.huaweicloud.com/api-ecs/ecs_08_0002.html)。
+        :type os_ext_st_svm_state: str
+        :param os_ext_srv_att_rinstance_name: 扩展属性，弹性云服务器别名。
+        :type os_ext_srv_att_rinstance_name: str
+        :param os_ext_srv_att_rhypervisor_hostname: 扩展属性，弹性云服务器所在虚拟化主机名。
+        :type os_ext_srv_att_rhypervisor_hostname: str
+        :param flavor: 
+        :type flavor: :class:`huaweicloudsdkecs.v2.ServerFlavor`
+        :param id: 弹性云服务器ID，格式为UUID。
+        :type id: str
+        :param security_groups: 弹性云服务器所属安全组列表。
+        :type security_groups: list[:class:`huaweicloudsdkecs.v2.ServerSecurityGroup`]
+        :param os_ext_a_zavailability_zone: 扩展属性，弹性云服务器所在可用区名称。
+        :type os_ext_a_zavailability_zone: str
+        :param user_id: 创建弹性云服务器的用户ID，格式为UUID。
+        :type user_id: str
+        :param name: 弹性云服务器名称。
+        :type name: str
+        :param created: 弹性云服务器创建时间。  时间格式例如：2019-05-22T03:19:19Z
+        :type created: str
+        :param tenant_id: 弹性云服务器所属租户ID，即项目id，和project_id表示相同的概念，格式为UUID。
+        :type tenant_id: str
+        :param os_dc_fdisk_config: 扩展属性， diskConfig的类型。  - MANUAL，镜像空间不会扩展。 - AUTO，系统盘镜像空间会自动扩展为与flavor大小一致。
+        :type os_dc_fdisk_config: str
+        :param access_i_pv4: 预留属性。
+        :type access_i_pv4: str
+        :param access_i_pv6: 预留属性。
+        :type access_i_pv6: str
+        :param fault: 
+        :type fault: :class:`huaweicloudsdkecs.v2.ServerFault`
+        :param progress: 弹性云服务器进度。
+        :type progress: int
+        :param os_ext_st_spower_state: 扩展属性，弹性云服务器电源状态。
+        :type os_ext_st_spower_state: int
+        :param config_drive: config drive信息。
+        :type config_drive: str
+        :param metadata: 弹性云服务器元数据。  &gt; 说明： &gt;  &gt; 元数据包含系统默认添加字段和用户设置的字段。  系统默认添加字段  1. charging_mode 云服务器的计费类型。  - “0”：按需计费（即postPaid-后付费方式）。 - “1”：按包年包月计费（即prePaid-预付费方式）。\&quot;2\&quot;：竞价实例计费  2. metering.order_id 按“包年/包月”计费的云服务器对应的订单ID。  3. metering.product_id 按“包年/包月”计费的云服务器对应的产品ID。  4. vpc_id 云服务器所属的虚拟私有云ID。  5. EcmResStatus 云服务器的冻结状态。  - normal：云服务器正常状态（未被冻结）。 - freeze：云服务器被冻结。  &gt; 当云服务器被冻结或者解冻后，系统默认添加该字段，且该字段必选。  6. metering.image_id 云服务器操作系统对应的镜像ID  7.  metering.imagetype 镜像类型，目前支持：  - 公共镜像（gold） - 私有镜像（private） - 共享镜像（shared）  8. metering.resourcespeccode 云服务器对应的资源规格。  9. image_name 云服务器操作系统对应的镜像名称。  10. os_bit 操作系统位数，一般取值为“32”或者“64”。  11. lockCheckEndpoint 回调URL，用于检查弹性云服务器的加锁是否有效。  - 如果有效，则云服务器保持锁定状态。 - 如果无效，解除锁定状态，删除失效的锁。  12. lockSource 弹性云服务器来自哪个服务。订单加锁（ORDER）  13. lockSourceId 弹性云服务器的加锁来自哪个ID。lockSource为“ORDER”时，lockSourceId为订单ID。  14. lockScene 弹性云服务器的加锁类型。  - 按需转包周期（TO_PERIOD_LOCK）  15. virtual_env_type  - IOS镜像创建虚拟机，\&quot;virtual_env_type\&quot;: \&quot;IsoImage\&quot; 属性； - 非IOS镜像创建虚拟机，在19.5.0版本以后创建的虚拟机将不会添加virtual_env_type 属性，而在此之前的版本创建的虚拟机可能会返回\&quot;virtual_env_type\&quot;: \&quot;FusionCompute\&quot;属性 。  &gt; virtual_env_type属性不允许用户增加、删除和修改。  16. metering.resourcetype 云服务器对应的资源类型。  17. os_type 操作系统类型，取值为：Linux、Windows。  18. cascaded.instance_extrainfo 系统内部虚拟机扩展信息。  19. __support_agent_list 云服务器是否支持企业主机安全、主机监控。  - “hss”：企业主机安全 -  “ces”：主机监控  20. agency_name 委托的名称。  委托是由租户管理员在统一身份认证服务（Identity and Access Management，IAM）上创建的，可以为弹性云服务器提供访问云服务的临时凭证。
+        :type metadata: dict(str, str)
+        :param os_srv_us_glaunched_at: 弹性云服务器启动时间。时间格式例如：2019-05-22T03:23:59.000000
+        :type os_srv_us_glaunched_at: str
+        :param os_srv_us_gterminated_at: 弹性云服务器删除时间。  时间格式例如：2019-05-22T03:23:59.000000
+        :type os_srv_us_gterminated_at: str
+        :param os_extended_volumesvolumes_attached: 挂载到弹性云服务器上的磁盘。
+        :type os_extended_volumesvolumes_attached: list[:class:`huaweicloudsdkecs.v2.ServerExtendVolumeAttachment`]
+        :param description: 弹性云服务器的描述信息。
+        :type description: str
+        :param host_status: nova-compute状态。  - UP：服务正常 - UNKNOWN：状态未知 - DOWN：服务异常 - MAINTENANCE：维护状态 - 空字符串：弹性云服务器无主机信息
+        :type host_status: str
+        :param os_ext_srv_att_rhostname: 弹性云服务器的主机名。
+        :type os_ext_srv_att_rhostname: str
+        :param os_ext_srv_att_rreservation_id: 批量创建场景，弹性云服务器的预留ID。
+        :type os_ext_srv_att_rreservation_id: str
+        :param os_ext_srv_att_rlaunch_index: 批量创建场景，弹性云服务器的启动顺序。
+        :type os_ext_srv_att_rlaunch_index: int
+        :param os_ext_srv_att_rkernel_id: 若使用AMI格式的镜像，则表示kernel image的UUID；否则，留空。
+        :type os_ext_srv_att_rkernel_id: str
+        :param os_ext_srv_att_rramdisk_id: 若使用AMI格式镜像，则表示ramdisk image的UUID；否则，留空。
+        :type os_ext_srv_att_rramdisk_id: str
+        :param os_ext_srv_att_rroot_device_name: 弹性云服务器系统盘的设备名称。
+        :type os_ext_srv_att_rroot_device_name: str
+        :param os_ext_srv_att_ruser_data: 创建弹性云服务器时指定的user_data。
+        :type os_ext_srv_att_ruser_data: str
+        :param locked: 弹性云服务器是否为锁定状态。  - true：锁定 - false：未锁定
+        :type locked: bool
+        :param tags: 弹性云服务器标签。
+        :type tags: list[str]
+        :param osscheduler_hints: 
+        :type osscheduler_hints: :class:`huaweicloudsdkecs.v2.ServerSchedulerHints`
+        :param enterprise_project_id: 弹性云服务器所属的企业项目ID。
+        :type enterprise_project_id: str
+        :param sys_tags: 弹性云服务器系统标签。
+        :type sys_tags: list[:class:`huaweicloudsdkecs.v2.ServerSystemTag`]
+        :param cpu_options: 
+        :type cpu_options: :class:`huaweicloudsdkecs.v2.CpuOptions`
+        :param hypervisor: 
+        :type hypervisor: :class:`huaweicloudsdkecs.v2.Hypervisor`
+        """
         
         
 
@@ -253,7 +350,7 @@ class ServerDetail:
         弹性云服务器状态。  取值范围：  ACTIVE、BUILD、DELETED、ERROR、HARD_REBOOT、MIGRATING、PAUSED、REBOOT、REBUILD、RESIZE、REVERT_RESIZE、SHUTOFF、SHELVED、SHELVED_OFFLOADED、SOFT_DELETED、SUSPENDED、VERIFY_RESIZE  弹性云服务器状态说明请参考[云服务器状态](https://support.huaweicloud.com/api-ecs/ecs_08_0002.html)
 
         :param status: The status of this ServerDetail.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -275,7 +372,7 @@ class ServerDetail:
         弹性云服务器更新时间。  时间格式例如：2019-05-22T03:30:52Z
 
         :param updated: The updated of this ServerDetail.
-        :type: str
+        :type updated: str
         """
         self._updated = updated
 
@@ -297,7 +394,7 @@ class ServerDetail:
         弹性云服务器自动释放时间。  时间格式例如：2020-01-19T03:30:52Z
 
         :param auto_terminate_time: The auto_terminate_time of this ServerDetail.
-        :type: str
+        :type auto_terminate_time: str
         """
         self._auto_terminate_time = auto_terminate_time
 
@@ -319,7 +416,7 @@ class ServerDetail:
         弹性云服务器所在主机的主机ID。
 
         :param host_id: The host_id of this ServerDetail.
-        :type: str
+        :type host_id: str
         """
         self._host_id = host_id
 
@@ -341,7 +438,7 @@ class ServerDetail:
         弹性云服务器所在主机的主机名称。
 
         :param os_ext_srv_att_rhost: The os_ext_srv_att_rhost of this ServerDetail.
-        :type: str
+        :type os_ext_srv_att_rhost: str
         """
         self._os_ext_srv_att_rhost = os_ext_srv_att_rhost
 
@@ -363,7 +460,7 @@ class ServerDetail:
         弹性云服务器的网络属性。
 
         :param addresses: The addresses of this ServerDetail.
-        :type: dict(str, list[ServerAddress])
+        :type addresses: dict(str, list[ServerAddress])
         """
         self._addresses = addresses
 
@@ -385,7 +482,7 @@ class ServerDetail:
         弹性云服务器使用的密钥对名称。
 
         :param key_name: The key_name of this ServerDetail.
-        :type: str
+        :type key_name: str
         """
         self._key_name = key_name
 
@@ -395,7 +492,7 @@ class ServerDetail:
 
 
         :return: The image of this ServerDetail.
-        :rtype: ServerImage
+        :rtype: :class:`huaweicloudsdkecs.v2.ServerImage`
         """
         return self._image
 
@@ -405,7 +502,7 @@ class ServerDetail:
 
 
         :param image: The image of this ServerDetail.
-        :type: ServerImage
+        :type image: :class:`huaweicloudsdkecs.v2.ServerImage`
         """
         self._image = image
 
@@ -427,7 +524,7 @@ class ServerDetail:
         扩展属性，弹性云服务器当前任务的状态。  取值范围请参考[云服务器状态](https://support.huaweicloud.com/api-ecs/ecs_08_0002.html)表3。
 
         :param os_ext_st_stask_state: The os_ext_st_stask_state of this ServerDetail.
-        :type: str
+        :type os_ext_st_stask_state: str
         """
         self._os_ext_st_stask_state = os_ext_st_stask_state
 
@@ -449,7 +546,7 @@ class ServerDetail:
         扩展属性，弹性云服务器当前状态。  云服务器状态说明请参考[云服务器状态](https://support.huaweicloud.com/api-ecs/ecs_08_0002.html)。
 
         :param os_ext_st_svm_state: The os_ext_st_svm_state of this ServerDetail.
-        :type: str
+        :type os_ext_st_svm_state: str
         """
         self._os_ext_st_svm_state = os_ext_st_svm_state
 
@@ -471,7 +568,7 @@ class ServerDetail:
         扩展属性，弹性云服务器别名。
 
         :param os_ext_srv_att_rinstance_name: The os_ext_srv_att_rinstance_name of this ServerDetail.
-        :type: str
+        :type os_ext_srv_att_rinstance_name: str
         """
         self._os_ext_srv_att_rinstance_name = os_ext_srv_att_rinstance_name
 
@@ -493,7 +590,7 @@ class ServerDetail:
         扩展属性，弹性云服务器所在虚拟化主机名。
 
         :param os_ext_srv_att_rhypervisor_hostname: The os_ext_srv_att_rhypervisor_hostname of this ServerDetail.
-        :type: str
+        :type os_ext_srv_att_rhypervisor_hostname: str
         """
         self._os_ext_srv_att_rhypervisor_hostname = os_ext_srv_att_rhypervisor_hostname
 
@@ -503,7 +600,7 @@ class ServerDetail:
 
 
         :return: The flavor of this ServerDetail.
-        :rtype: ServerFlavor
+        :rtype: :class:`huaweicloudsdkecs.v2.ServerFlavor`
         """
         return self._flavor
 
@@ -513,7 +610,7 @@ class ServerDetail:
 
 
         :param flavor: The flavor of this ServerDetail.
-        :type: ServerFlavor
+        :type flavor: :class:`huaweicloudsdkecs.v2.ServerFlavor`
         """
         self._flavor = flavor
 
@@ -535,7 +632,7 @@ class ServerDetail:
         弹性云服务器ID，格式为UUID。
 
         :param id: The id of this ServerDetail.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -546,7 +643,7 @@ class ServerDetail:
         弹性云服务器所属安全组列表。
 
         :return: The security_groups of this ServerDetail.
-        :rtype: list[ServerSecurityGroup]
+        :rtype: list[:class:`huaweicloudsdkecs.v2.ServerSecurityGroup`]
         """
         return self._security_groups
 
@@ -557,7 +654,7 @@ class ServerDetail:
         弹性云服务器所属安全组列表。
 
         :param security_groups: The security_groups of this ServerDetail.
-        :type: list[ServerSecurityGroup]
+        :type security_groups: list[:class:`huaweicloudsdkecs.v2.ServerSecurityGroup`]
         """
         self._security_groups = security_groups
 
@@ -579,7 +676,7 @@ class ServerDetail:
         扩展属性，弹性云服务器所在可用区名称。
 
         :param os_ext_a_zavailability_zone: The os_ext_a_zavailability_zone of this ServerDetail.
-        :type: str
+        :type os_ext_a_zavailability_zone: str
         """
         self._os_ext_a_zavailability_zone = os_ext_a_zavailability_zone
 
@@ -601,7 +698,7 @@ class ServerDetail:
         创建弹性云服务器的用户ID，格式为UUID。
 
         :param user_id: The user_id of this ServerDetail.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -623,7 +720,7 @@ class ServerDetail:
         弹性云服务器名称。
 
         :param name: The name of this ServerDetail.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -645,7 +742,7 @@ class ServerDetail:
         弹性云服务器创建时间。  时间格式例如：2019-05-22T03:19:19Z
 
         :param created: The created of this ServerDetail.
-        :type: str
+        :type created: str
         """
         self._created = created
 
@@ -667,7 +764,7 @@ class ServerDetail:
         弹性云服务器所属租户ID，即项目id，和project_id表示相同的概念，格式为UUID。
 
         :param tenant_id: The tenant_id of this ServerDetail.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 
@@ -689,7 +786,7 @@ class ServerDetail:
         扩展属性， diskConfig的类型。  - MANUAL，镜像空间不会扩展。 - AUTO，系统盘镜像空间会自动扩展为与flavor大小一致。
 
         :param os_dc_fdisk_config: The os_dc_fdisk_config of this ServerDetail.
-        :type: str
+        :type os_dc_fdisk_config: str
         """
         self._os_dc_fdisk_config = os_dc_fdisk_config
 
@@ -711,7 +808,7 @@ class ServerDetail:
         预留属性。
 
         :param access_i_pv4: The access_i_pv4 of this ServerDetail.
-        :type: str
+        :type access_i_pv4: str
         """
         self._access_i_pv4 = access_i_pv4
 
@@ -733,7 +830,7 @@ class ServerDetail:
         预留属性。
 
         :param access_i_pv6: The access_i_pv6 of this ServerDetail.
-        :type: str
+        :type access_i_pv6: str
         """
         self._access_i_pv6 = access_i_pv6
 
@@ -743,7 +840,7 @@ class ServerDetail:
 
 
         :return: The fault of this ServerDetail.
-        :rtype: ServerFault
+        :rtype: :class:`huaweicloudsdkecs.v2.ServerFault`
         """
         return self._fault
 
@@ -753,7 +850,7 @@ class ServerDetail:
 
 
         :param fault: The fault of this ServerDetail.
-        :type: ServerFault
+        :type fault: :class:`huaweicloudsdkecs.v2.ServerFault`
         """
         self._fault = fault
 
@@ -775,7 +872,7 @@ class ServerDetail:
         弹性云服务器进度。
 
         :param progress: The progress of this ServerDetail.
-        :type: int
+        :type progress: int
         """
         self._progress = progress
 
@@ -797,7 +894,7 @@ class ServerDetail:
         扩展属性，弹性云服务器电源状态。
 
         :param os_ext_st_spower_state: The os_ext_st_spower_state of this ServerDetail.
-        :type: int
+        :type os_ext_st_spower_state: int
         """
         self._os_ext_st_spower_state = os_ext_st_spower_state
 
@@ -819,7 +916,7 @@ class ServerDetail:
         config drive信息。
 
         :param config_drive: The config_drive of this ServerDetail.
-        :type: str
+        :type config_drive: str
         """
         self._config_drive = config_drive
 
@@ -841,7 +938,7 @@ class ServerDetail:
         弹性云服务器元数据。  > 说明： >  > 元数据包含系统默认添加字段和用户设置的字段。  系统默认添加字段  1. charging_mode 云服务器的计费类型。  - “0”：按需计费（即postPaid-后付费方式）。 - “1”：按包年包月计费（即prePaid-预付费方式）。\"2\"：竞价实例计费  2. metering.order_id 按“包年/包月”计费的云服务器对应的订单ID。  3. metering.product_id 按“包年/包月”计费的云服务器对应的产品ID。  4. vpc_id 云服务器所属的虚拟私有云ID。  5. EcmResStatus 云服务器的冻结状态。  - normal：云服务器正常状态（未被冻结）。 - freeze：云服务器被冻结。  > 当云服务器被冻结或者解冻后，系统默认添加该字段，且该字段必选。  6. metering.image_id 云服务器操作系统对应的镜像ID  7.  metering.imagetype 镜像类型，目前支持：  - 公共镜像（gold） - 私有镜像（private） - 共享镜像（shared）  8. metering.resourcespeccode 云服务器对应的资源规格。  9. image_name 云服务器操作系统对应的镜像名称。  10. os_bit 操作系统位数，一般取值为“32”或者“64”。  11. lockCheckEndpoint 回调URL，用于检查弹性云服务器的加锁是否有效。  - 如果有效，则云服务器保持锁定状态。 - 如果无效，解除锁定状态，删除失效的锁。  12. lockSource 弹性云服务器来自哪个服务。订单加锁（ORDER）  13. lockSourceId 弹性云服务器的加锁来自哪个ID。lockSource为“ORDER”时，lockSourceId为订单ID。  14. lockScene 弹性云服务器的加锁类型。  - 按需转包周期（TO_PERIOD_LOCK）  15. virtual_env_type  - IOS镜像创建虚拟机，\"virtual_env_type\": \"IsoImage\" 属性； - 非IOS镜像创建虚拟机，在19.5.0版本以后创建的虚拟机将不会添加virtual_env_type 属性，而在此之前的版本创建的虚拟机可能会返回\"virtual_env_type\": \"FusionCompute\"属性 。  > virtual_env_type属性不允许用户增加、删除和修改。  16. metering.resourcetype 云服务器对应的资源类型。  17. os_type 操作系统类型，取值为：Linux、Windows。  18. cascaded.instance_extrainfo 系统内部虚拟机扩展信息。  19. __support_agent_list 云服务器是否支持企业主机安全、主机监控。  - “hss”：企业主机安全 -  “ces”：主机监控  20. agency_name 委托的名称。  委托是由租户管理员在统一身份认证服务（Identity and Access Management，IAM）上创建的，可以为弹性云服务器提供访问云服务的临时凭证。
 
         :param metadata: The metadata of this ServerDetail.
-        :type: dict(str, str)
+        :type metadata: dict(str, str)
         """
         self._metadata = metadata
 
@@ -863,7 +960,7 @@ class ServerDetail:
         弹性云服务器启动时间。时间格式例如：2019-05-22T03:23:59.000000
 
         :param os_srv_us_glaunched_at: The os_srv_us_glaunched_at of this ServerDetail.
-        :type: str
+        :type os_srv_us_glaunched_at: str
         """
         self._os_srv_us_glaunched_at = os_srv_us_glaunched_at
 
@@ -885,7 +982,7 @@ class ServerDetail:
         弹性云服务器删除时间。  时间格式例如：2019-05-22T03:23:59.000000
 
         :param os_srv_us_gterminated_at: The os_srv_us_gterminated_at of this ServerDetail.
-        :type: str
+        :type os_srv_us_gterminated_at: str
         """
         self._os_srv_us_gterminated_at = os_srv_us_gterminated_at
 
@@ -896,7 +993,7 @@ class ServerDetail:
         挂载到弹性云服务器上的磁盘。
 
         :return: The os_extended_volumesvolumes_attached of this ServerDetail.
-        :rtype: list[ServerExtendVolumeAttachment]
+        :rtype: list[:class:`huaweicloudsdkecs.v2.ServerExtendVolumeAttachment`]
         """
         return self._os_extended_volumesvolumes_attached
 
@@ -907,7 +1004,7 @@ class ServerDetail:
         挂载到弹性云服务器上的磁盘。
 
         :param os_extended_volumesvolumes_attached: The os_extended_volumesvolumes_attached of this ServerDetail.
-        :type: list[ServerExtendVolumeAttachment]
+        :type os_extended_volumesvolumes_attached: list[:class:`huaweicloudsdkecs.v2.ServerExtendVolumeAttachment`]
         """
         self._os_extended_volumesvolumes_attached = os_extended_volumesvolumes_attached
 
@@ -929,7 +1026,7 @@ class ServerDetail:
         弹性云服务器的描述信息。
 
         :param description: The description of this ServerDetail.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -951,7 +1048,7 @@ class ServerDetail:
         nova-compute状态。  - UP：服务正常 - UNKNOWN：状态未知 - DOWN：服务异常 - MAINTENANCE：维护状态 - 空字符串：弹性云服务器无主机信息
 
         :param host_status: The host_status of this ServerDetail.
-        :type: str
+        :type host_status: str
         """
         self._host_status = host_status
 
@@ -973,7 +1070,7 @@ class ServerDetail:
         弹性云服务器的主机名。
 
         :param os_ext_srv_att_rhostname: The os_ext_srv_att_rhostname of this ServerDetail.
-        :type: str
+        :type os_ext_srv_att_rhostname: str
         """
         self._os_ext_srv_att_rhostname = os_ext_srv_att_rhostname
 
@@ -995,7 +1092,7 @@ class ServerDetail:
         批量创建场景，弹性云服务器的预留ID。
 
         :param os_ext_srv_att_rreservation_id: The os_ext_srv_att_rreservation_id of this ServerDetail.
-        :type: str
+        :type os_ext_srv_att_rreservation_id: str
         """
         self._os_ext_srv_att_rreservation_id = os_ext_srv_att_rreservation_id
 
@@ -1017,7 +1114,7 @@ class ServerDetail:
         批量创建场景，弹性云服务器的启动顺序。
 
         :param os_ext_srv_att_rlaunch_index: The os_ext_srv_att_rlaunch_index of this ServerDetail.
-        :type: int
+        :type os_ext_srv_att_rlaunch_index: int
         """
         self._os_ext_srv_att_rlaunch_index = os_ext_srv_att_rlaunch_index
 
@@ -1039,7 +1136,7 @@ class ServerDetail:
         若使用AMI格式的镜像，则表示kernel image的UUID；否则，留空。
 
         :param os_ext_srv_att_rkernel_id: The os_ext_srv_att_rkernel_id of this ServerDetail.
-        :type: str
+        :type os_ext_srv_att_rkernel_id: str
         """
         self._os_ext_srv_att_rkernel_id = os_ext_srv_att_rkernel_id
 
@@ -1061,7 +1158,7 @@ class ServerDetail:
         若使用AMI格式镜像，则表示ramdisk image的UUID；否则，留空。
 
         :param os_ext_srv_att_rramdisk_id: The os_ext_srv_att_rramdisk_id of this ServerDetail.
-        :type: str
+        :type os_ext_srv_att_rramdisk_id: str
         """
         self._os_ext_srv_att_rramdisk_id = os_ext_srv_att_rramdisk_id
 
@@ -1083,7 +1180,7 @@ class ServerDetail:
         弹性云服务器系统盘的设备名称。
 
         :param os_ext_srv_att_rroot_device_name: The os_ext_srv_att_rroot_device_name of this ServerDetail.
-        :type: str
+        :type os_ext_srv_att_rroot_device_name: str
         """
         self._os_ext_srv_att_rroot_device_name = os_ext_srv_att_rroot_device_name
 
@@ -1105,7 +1202,7 @@ class ServerDetail:
         创建弹性云服务器时指定的user_data。
 
         :param os_ext_srv_att_ruser_data: The os_ext_srv_att_ruser_data of this ServerDetail.
-        :type: str
+        :type os_ext_srv_att_ruser_data: str
         """
         self._os_ext_srv_att_ruser_data = os_ext_srv_att_ruser_data
 
@@ -1127,7 +1224,7 @@ class ServerDetail:
         弹性云服务器是否为锁定状态。  - true：锁定 - false：未锁定
 
         :param locked: The locked of this ServerDetail.
-        :type: bool
+        :type locked: bool
         """
         self._locked = locked
 
@@ -1149,7 +1246,7 @@ class ServerDetail:
         弹性云服务器标签。
 
         :param tags: The tags of this ServerDetail.
-        :type: list[str]
+        :type tags: list[str]
         """
         self._tags = tags
 
@@ -1159,7 +1256,7 @@ class ServerDetail:
 
 
         :return: The osscheduler_hints of this ServerDetail.
-        :rtype: ServerSchedulerHints
+        :rtype: :class:`huaweicloudsdkecs.v2.ServerSchedulerHints`
         """
         return self._osscheduler_hints
 
@@ -1169,7 +1266,7 @@ class ServerDetail:
 
 
         :param osscheduler_hints: The osscheduler_hints of this ServerDetail.
-        :type: ServerSchedulerHints
+        :type osscheduler_hints: :class:`huaweicloudsdkecs.v2.ServerSchedulerHints`
         """
         self._osscheduler_hints = osscheduler_hints
 
@@ -1191,7 +1288,7 @@ class ServerDetail:
         弹性云服务器所属的企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this ServerDetail.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -1202,7 +1299,7 @@ class ServerDetail:
         弹性云服务器系统标签。
 
         :return: The sys_tags of this ServerDetail.
-        :rtype: list[ServerSystemTag]
+        :rtype: list[:class:`huaweicloudsdkecs.v2.ServerSystemTag`]
         """
         return self._sys_tags
 
@@ -1213,7 +1310,7 @@ class ServerDetail:
         弹性云服务器系统标签。
 
         :param sys_tags: The sys_tags of this ServerDetail.
-        :type: list[ServerSystemTag]
+        :type sys_tags: list[:class:`huaweicloudsdkecs.v2.ServerSystemTag`]
         """
         self._sys_tags = sys_tags
 
@@ -1223,7 +1320,7 @@ class ServerDetail:
 
 
         :return: The cpu_options of this ServerDetail.
-        :rtype: CpuOptions
+        :rtype: :class:`huaweicloudsdkecs.v2.CpuOptions`
         """
         return self._cpu_options
 
@@ -1233,7 +1330,7 @@ class ServerDetail:
 
 
         :param cpu_options: The cpu_options of this ServerDetail.
-        :type: CpuOptions
+        :type cpu_options: :class:`huaweicloudsdkecs.v2.CpuOptions`
         """
         self._cpu_options = cpu_options
 
@@ -1243,7 +1340,7 @@ class ServerDetail:
 
 
         :return: The hypervisor of this ServerDetail.
-        :rtype: Hypervisor
+        :rtype: :class:`huaweicloudsdkecs.v2.Hypervisor`
         """
         return self._hypervisor
 
@@ -1253,7 +1350,7 @@ class ServerDetail:
 
 
         :param hypervisor: The hypervisor of this ServerDetail.
-        :type: Hypervisor
+        :type hypervisor: :class:`huaweicloudsdkecs.v2.Hypervisor`
         """
         self._hypervisor = hypervisor
 

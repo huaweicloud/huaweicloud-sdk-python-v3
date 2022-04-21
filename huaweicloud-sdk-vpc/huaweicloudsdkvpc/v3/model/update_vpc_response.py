@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateVpcResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateVpcResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, error_msg=None, error_code=None):
-        """UpdateVpcResponse - a model defined in huaweicloud sdk"""
+        """UpdateVpcResponse
+
+        The model defined in huaweicloud sdk
+
+        :param request_id: 请求ID
+        :type request_id: str
+        :param error_msg: 错误消息
+        :type error_msg: str
+        :param error_code: 错误码
+        :type error_code: str
+        """
         
         super(UpdateVpcResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class UpdateVpcResponse(SdkResponse):
         请求ID
 
         :param request_id: The request_id of this UpdateVpcResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 
@@ -90,7 +99,7 @@ class UpdateVpcResponse(SdkResponse):
         错误消息
 
         :param error_msg: The error_msg of this UpdateVpcResponse.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 
@@ -112,7 +121,7 @@ class UpdateVpcResponse(SdkResponse):
         错误码
 
         :param error_code: The error_code of this UpdateVpcResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 

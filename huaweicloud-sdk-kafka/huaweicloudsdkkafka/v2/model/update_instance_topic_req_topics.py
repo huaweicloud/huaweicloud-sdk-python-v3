@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateInstanceTopicReqTopics:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class UpdateInstanceTopicReqTopics:
     }
 
     def __init__(self, id=None, retention_time=None, sync_replication=None, sync_message_flush=None, new_partition_numbers=None):
-        """UpdateInstanceTopicReqTopics - a model defined in huaweicloud sdk"""
+        """UpdateInstanceTopicReqTopics
+
+        The model defined in huaweicloud sdk
+
+        :param id: topic名称，不支持修改。
+        :type id: str
+        :param retention_time: 老化时间，单位小时。
+        :type retention_time: int
+        :param sync_replication: 是否同步复制。
+        :type sync_replication: bool
+        :param sync_message_flush: 是否同步落盘。
+        :type sync_message_flush: bool
+        :param new_partition_numbers: 分区数。
+        :type new_partition_numbers: int
+        """
         
         
 
@@ -77,7 +90,7 @@ class UpdateInstanceTopicReqTopics:
         topic名称，不支持修改。
 
         :param id: The id of this UpdateInstanceTopicReqTopics.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -99,7 +112,7 @@ class UpdateInstanceTopicReqTopics:
         老化时间，单位小时。
 
         :param retention_time: The retention_time of this UpdateInstanceTopicReqTopics.
-        :type: int
+        :type retention_time: int
         """
         self._retention_time = retention_time
 
@@ -121,7 +134,7 @@ class UpdateInstanceTopicReqTopics:
         是否同步复制。
 
         :param sync_replication: The sync_replication of this UpdateInstanceTopicReqTopics.
-        :type: bool
+        :type sync_replication: bool
         """
         self._sync_replication = sync_replication
 
@@ -143,7 +156,7 @@ class UpdateInstanceTopicReqTopics:
         是否同步落盘。
 
         :param sync_message_flush: The sync_message_flush of this UpdateInstanceTopicReqTopics.
-        :type: bool
+        :type sync_message_flush: bool
         """
         self._sync_message_flush = sync_message_flush
 
@@ -165,7 +178,7 @@ class UpdateInstanceTopicReqTopics:
         分区数。
 
         :param new_partition_numbers: The new_partition_numbers of this UpdateInstanceTopicReqTopics.
-        :type: int
+        :type new_partition_numbers: int
         """
         self._new_partition_numbers = new_partition_numbers
 

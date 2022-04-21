@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryCorpBasicResultDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class QueryCorpBasicResultDTO:
     }
 
     def __init__(self, name=None, phone=None, country=None, fax=None, email=None, address=None, description=None, sp_id=None):
-        """QueryCorpBasicResultDTO - a model defined in huaweicloud sdk"""
+        """QueryCorpBasicResultDTO
+
+        The model defined in huaweicloud sdk
+
+        :param name: 企业名称
+        :type name: str
+        :param phone: 联系号码
+        :type phone: str
+        :param country: 联系号码所属的国家
+        :type country: str
+        :param fax: 传真号码
+        :type fax: str
+        :param email: 邮箱地址
+        :type email: str
+        :param address: 地址
+        :type address: str
+        :param description: 备注
+        :type description: str
+        :param sp_id: 企业所属spId
+        :type sp_id: str
+        """
         
         
 
@@ -93,7 +112,7 @@ class QueryCorpBasicResultDTO:
         企业名称
 
         :param name: The name of this QueryCorpBasicResultDTO.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -115,7 +134,7 @@ class QueryCorpBasicResultDTO:
         联系号码
 
         :param phone: The phone of this QueryCorpBasicResultDTO.
-        :type: str
+        :type phone: str
         """
         self._phone = phone
 
@@ -137,7 +156,7 @@ class QueryCorpBasicResultDTO:
         联系号码所属的国家
 
         :param country: The country of this QueryCorpBasicResultDTO.
-        :type: str
+        :type country: str
         """
         self._country = country
 
@@ -159,7 +178,7 @@ class QueryCorpBasicResultDTO:
         传真号码
 
         :param fax: The fax of this QueryCorpBasicResultDTO.
-        :type: str
+        :type fax: str
         """
         self._fax = fax
 
@@ -181,7 +200,7 @@ class QueryCorpBasicResultDTO:
         邮箱地址
 
         :param email: The email of this QueryCorpBasicResultDTO.
-        :type: str
+        :type email: str
         """
         self._email = email
 
@@ -203,7 +222,7 @@ class QueryCorpBasicResultDTO:
         地址
 
         :param address: The address of this QueryCorpBasicResultDTO.
-        :type: str
+        :type address: str
         """
         self._address = address
 
@@ -225,7 +244,7 @@ class QueryCorpBasicResultDTO:
         备注
 
         :param description: The description of this QueryCorpBasicResultDTO.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -247,7 +266,7 @@ class QueryCorpBasicResultDTO:
         企业所属spId
 
         :param sp_id: The sp_id of this QueryCorpBasicResultDTO.
-        :type: str
+        :type sp_id: str
         """
         self._sp_id = sp_id
 

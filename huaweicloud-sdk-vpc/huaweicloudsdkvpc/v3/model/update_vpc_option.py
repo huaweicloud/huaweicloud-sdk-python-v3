@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateVpcOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateVpcOption:
     }
 
     def __init__(self, name=None, description=None):
-        """UpdateVpcOption - a model defined in huaweicloud sdk"""
+        """UpdateVpcOption
+
+        The model defined in huaweicloud sdk
+
+        :param name: 功能说明：虚拟私有云名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点） 约束：与description至少选填一个 
+        :type name: str
+        :param description: 功能说明：虚拟私有云描述 取值范围：0-255个字符，不能包含“&lt;”和“&gt;”。 约束：与name至少选填一个
+        :type description: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class UpdateVpcOption:
         功能说明：虚拟私有云名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点） 约束：与description至少选填一个 
 
         :param name: The name of this UpdateVpcOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -85,7 +92,7 @@ class UpdateVpcOption:
         功能说明：虚拟私有云描述 取值范围：0-255个字符，不能包含“<”和“>”。 约束：与name至少选填一个
 
         :param description: The description of this UpdateVpcOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 

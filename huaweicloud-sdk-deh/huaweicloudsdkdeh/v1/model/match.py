@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Match:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Match:
     }
 
     def __init__(self, key=None, value=None):
-        """Match - a model defined in huaweicloud sdk"""
+        """Match
+
+        The model defined in huaweicloud sdk
+
+        :param key: 键，表示要匹配的字段。  key不能重复，value为匹配的值。  此字段为固定字典值。  不允许为空字符串。  当前key的参数值仅支持resource_name，此时value的参数值为专属主机名称。
+        :type key: str
+        :param value: 值。  每个值最大长度为255个unicode字符。  不可以为空 。
+        :type value: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class Match:
         键，表示要匹配的字段。  key不能重复，value为匹配的值。  此字段为固定字典值。  不允许为空字符串。  当前key的参数值仅支持resource_name，此时value的参数值为专属主机名称。
 
         :param key: The key of this Match.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -83,7 +90,7 @@ class Match:
         值。  每个值最大长度为255个unicode字符。  不可以为空 。
 
         :param value: The value of this Match.
-        :type: str
+        :type value: str
         """
         self._value = value
 

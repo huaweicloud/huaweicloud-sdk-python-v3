@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RouteTableListResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class RouteTableListResp:
     }
 
     def __init__(self, id=None, name=None, default=None, subnets=None, tenant_id=None, vpc_id=None, description=None):
-        """RouteTableListResp - a model defined in huaweicloud sdk"""
+        """RouteTableListResp
+
+        The model defined in huaweicloud sdk
+
+        :param id: 功能说明：路由表ID  取值范围：标准UUID
+        :type id: str
+        :param name: 功能说明：路由表名称  取值范围：0-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
+        :type name: str
+        :param default: 功能说明：是否为默认路由表  取值范围：true表示默认路由表；false表示自定义路由表
+        :type default: bool
+        :param subnets: 功能说明：路由表所关联的子网  约束：只能关联路由表所属VPC下的子网
+        :type subnets: list[:class:`huaweicloudsdkvpc.v2.SubnetList`]
+        :param tenant_id: 项目ID
+        :type tenant_id: str
+        :param vpc_id: 路由表所在的虚拟私有云ID
+        :type vpc_id: str
+        :param description: 功能说明：路由表描述信息  取值范围：0-255个字符，不能包含“&lt;”和“&gt;”
+        :type description: str
+        """
         
         
 
@@ -81,7 +98,7 @@ class RouteTableListResp:
         功能说明：路由表ID  取值范围：标准UUID
 
         :param id: The id of this RouteTableListResp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -103,7 +120,7 @@ class RouteTableListResp:
         功能说明：路由表名称  取值范围：0-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
         :param name: The name of this RouteTableListResp.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -125,7 +142,7 @@ class RouteTableListResp:
         功能说明：是否为默认路由表  取值范围：true表示默认路由表；false表示自定义路由表
 
         :param default: The default of this RouteTableListResp.
-        :type: bool
+        :type default: bool
         """
         self._default = default
 
@@ -136,7 +153,7 @@ class RouteTableListResp:
         功能说明：路由表所关联的子网  约束：只能关联路由表所属VPC下的子网
 
         :return: The subnets of this RouteTableListResp.
-        :rtype: list[SubnetList]
+        :rtype: list[:class:`huaweicloudsdkvpc.v2.SubnetList`]
         """
         return self._subnets
 
@@ -147,7 +164,7 @@ class RouteTableListResp:
         功能说明：路由表所关联的子网  约束：只能关联路由表所属VPC下的子网
 
         :param subnets: The subnets of this RouteTableListResp.
-        :type: list[SubnetList]
+        :type subnets: list[:class:`huaweicloudsdkvpc.v2.SubnetList`]
         """
         self._subnets = subnets
 
@@ -169,7 +186,7 @@ class RouteTableListResp:
         项目ID
 
         :param tenant_id: The tenant_id of this RouteTableListResp.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 
@@ -191,7 +208,7 @@ class RouteTableListResp:
         路由表所在的虚拟私有云ID
 
         :param vpc_id: The vpc_id of this RouteTableListResp.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -213,7 +230,7 @@ class RouteTableListResp:
         功能说明：路由表描述信息  取值范围：0-255个字符，不能包含“<”和“>”
 
         :param description: The description of this RouteTableListResp.
-        :type: str
+        :type description: str
         """
         self._description = description
 

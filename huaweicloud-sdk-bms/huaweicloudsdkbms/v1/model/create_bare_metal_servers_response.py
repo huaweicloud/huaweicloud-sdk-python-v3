@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateBareMetalServersResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateBareMetalServersResponse(SdkResponse):
     }
 
     def __init__(self, order_id=None, job_id=None):
-        """CreateBareMetalServersResponse - a model defined in huaweicloud sdk"""
+        """CreateBareMetalServersResponse
+
+        The model defined in huaweicloud sdk
+
+        :param order_id: 订单ID
+        :type order_id: str
+        :param job_id: 任务ID
+        :type job_id: str
+        """
         
         super(CreateBareMetalServersResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class CreateBareMetalServersResponse(SdkResponse):
         订单ID
 
         :param order_id: The order_id of this CreateBareMetalServersResponse.
-        :type: str
+        :type order_id: str
         """
         self._order_id = order_id
 
@@ -85,7 +92,7 @@ class CreateBareMetalServersResponse(SdkResponse):
         任务ID
 
         :param job_id: The job_id of this CreateBareMetalServersResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 

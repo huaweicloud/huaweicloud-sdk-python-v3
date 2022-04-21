@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TrainTicketResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -66,7 +65,49 @@ class TrainTicketResult:
     }
 
     def __init__(self, ticket_id=None, check_port=None, train_number=None, departure_station=None, destination_station=None, departure_station_en=None, destination_station_en=None, departure_time=None, seat_number=None, ticket_price=None, sale_method=None, seat_category=None, ticket_changing=None, id_number=None, name=None, log_id=None, sale_location=None, confidence=None, text_location=None):
-        """TrainTicketResult - a model defined in huaweicloud sdk"""
+        """TrainTicketResult
+
+        The model defined in huaweicloud sdk
+
+        :param ticket_id: 火车票左上角的车票ID。 
+        :type ticket_id: str
+        :param check_port: 检票口信息。 
+        :type check_port: str
+        :param train_number: 车次。 
+        :type train_number: str
+        :param departure_station: 始发站。 
+        :type departure_station: str
+        :param destination_station: 终点站。 
+        :type destination_station: str
+        :param departure_station_en: 始发站拼音。 
+        :type departure_station_en: str
+        :param destination_station_en: 终点站拼音。 
+        :type destination_station_en: str
+        :param departure_time: 开车时间。 
+        :type departure_time: str
+        :param seat_number: 座位号。 
+        :type seat_number: str
+        :param ticket_price: 票价。 
+        :type ticket_price: str
+        :param sale_method: 售票方式。 
+        :type sale_method: str
+        :param seat_category: 座位类别。 
+        :type seat_category: str
+        :param ticket_changing: 是否改签票, \&quot;Yes\&quot;表示改签票，\&quot;No\&quot;表示非改签票。 
+        :type ticket_changing: str
+        :param id_number: 车票持有人的身份证号。 
+        :type id_number: str
+        :param name: 车票持有人姓名。 
+        :type name: str
+        :param log_id: 车票最下方的序列号。 
+        :type log_id: str
+        :param sale_location: 车票售票地点。 
+        :type sale_location: str
+        :param confidence: 相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。
+        :type confidence: object
+        :param text_location: 对应所有在原图上识别到的字段位置信息，包含所有文字区域四个顶点的二维坐标（x,y）。采用图像坐标系，坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
+        :type text_location: object
+        """
         
         
 
@@ -148,7 +189,7 @@ class TrainTicketResult:
         火车票左上角的车票ID。 
 
         :param ticket_id: The ticket_id of this TrainTicketResult.
-        :type: str
+        :type ticket_id: str
         """
         self._ticket_id = ticket_id
 
@@ -170,7 +211,7 @@ class TrainTicketResult:
         检票口信息。 
 
         :param check_port: The check_port of this TrainTicketResult.
-        :type: str
+        :type check_port: str
         """
         self._check_port = check_port
 
@@ -192,7 +233,7 @@ class TrainTicketResult:
         车次。 
 
         :param train_number: The train_number of this TrainTicketResult.
-        :type: str
+        :type train_number: str
         """
         self._train_number = train_number
 
@@ -214,7 +255,7 @@ class TrainTicketResult:
         始发站。 
 
         :param departure_station: The departure_station of this TrainTicketResult.
-        :type: str
+        :type departure_station: str
         """
         self._departure_station = departure_station
 
@@ -236,7 +277,7 @@ class TrainTicketResult:
         终点站。 
 
         :param destination_station: The destination_station of this TrainTicketResult.
-        :type: str
+        :type destination_station: str
         """
         self._destination_station = destination_station
 
@@ -258,7 +299,7 @@ class TrainTicketResult:
         始发站拼音。 
 
         :param departure_station_en: The departure_station_en of this TrainTicketResult.
-        :type: str
+        :type departure_station_en: str
         """
         self._departure_station_en = departure_station_en
 
@@ -280,7 +321,7 @@ class TrainTicketResult:
         终点站拼音。 
 
         :param destination_station_en: The destination_station_en of this TrainTicketResult.
-        :type: str
+        :type destination_station_en: str
         """
         self._destination_station_en = destination_station_en
 
@@ -302,7 +343,7 @@ class TrainTicketResult:
         开车时间。 
 
         :param departure_time: The departure_time of this TrainTicketResult.
-        :type: str
+        :type departure_time: str
         """
         self._departure_time = departure_time
 
@@ -324,7 +365,7 @@ class TrainTicketResult:
         座位号。 
 
         :param seat_number: The seat_number of this TrainTicketResult.
-        :type: str
+        :type seat_number: str
         """
         self._seat_number = seat_number
 
@@ -346,7 +387,7 @@ class TrainTicketResult:
         票价。 
 
         :param ticket_price: The ticket_price of this TrainTicketResult.
-        :type: str
+        :type ticket_price: str
         """
         self._ticket_price = ticket_price
 
@@ -368,7 +409,7 @@ class TrainTicketResult:
         售票方式。 
 
         :param sale_method: The sale_method of this TrainTicketResult.
-        :type: str
+        :type sale_method: str
         """
         self._sale_method = sale_method
 
@@ -390,7 +431,7 @@ class TrainTicketResult:
         座位类别。 
 
         :param seat_category: The seat_category of this TrainTicketResult.
-        :type: str
+        :type seat_category: str
         """
         self._seat_category = seat_category
 
@@ -412,7 +453,7 @@ class TrainTicketResult:
         是否改签票, \"Yes\"表示改签票，\"No\"表示非改签票。 
 
         :param ticket_changing: The ticket_changing of this TrainTicketResult.
-        :type: str
+        :type ticket_changing: str
         """
         self._ticket_changing = ticket_changing
 
@@ -434,7 +475,7 @@ class TrainTicketResult:
         车票持有人的身份证号。 
 
         :param id_number: The id_number of this TrainTicketResult.
-        :type: str
+        :type id_number: str
         """
         self._id_number = id_number
 
@@ -456,7 +497,7 @@ class TrainTicketResult:
         车票持有人姓名。 
 
         :param name: The name of this TrainTicketResult.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -478,7 +519,7 @@ class TrainTicketResult:
         车票最下方的序列号。 
 
         :param log_id: The log_id of this TrainTicketResult.
-        :type: str
+        :type log_id: str
         """
         self._log_id = log_id
 
@@ -500,7 +541,7 @@ class TrainTicketResult:
         车票售票地点。 
 
         :param sale_location: The sale_location of this TrainTicketResult.
-        :type: str
+        :type sale_location: str
         """
         self._sale_location = sale_location
 
@@ -522,7 +563,7 @@ class TrainTicketResult:
         相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。
 
         :param confidence: The confidence of this TrainTicketResult.
-        :type: object
+        :type confidence: object
         """
         self._confidence = confidence
 
@@ -544,7 +585,7 @@ class TrainTicketResult:
         对应所有在原图上识别到的字段位置信息，包含所有文字区域四个顶点的二维坐标（x,y）。采用图像坐标系，坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
         :param text_location: The text_location of this TrainTicketResult.
-        :type: object
+        :type text_location: object
         """
         self._text_location = text_location
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchDeleteMembersRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchDeleteMembersRequest:
     }
 
     def __init__(self, body=None):
-        """BatchDeleteMembersRequest - a model defined in huaweicloud sdk"""
+        """BatchDeleteMembersRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the BatchDeleteMembersRequest
+        :type body: :class:`huaweicloudsdkims.v2.BatchAddMembersRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class BatchDeleteMembersRequest:
 
 
         :return: The body of this BatchDeleteMembersRequest.
-        :rtype: BatchAddMembersRequestBody
+        :rtype: :class:`huaweicloudsdkims.v2.BatchAddMembersRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class BatchDeleteMembersRequest:
 
 
         :param body: The body of this BatchDeleteMembersRequest.
-        :type: BatchAddMembersRequestBody
+        :type body: :class:`huaweicloudsdkims.v2.BatchAddMembersRequestBody`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GlanceListImageSchemasResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class GlanceListImageSchemasResponse(SdkResponse):
     }
 
     def __init__(self, name=None, properties=None, links=None):
-        """GlanceListImageSchemasResponse - a model defined in huaweicloud sdk"""
+        """GlanceListImageSchemasResponse
+
+        The model defined in huaweicloud sdk
+
+        :param name: 视图名称。
+        :type name: str
+        :param properties: 镜像属性说明，主要是对基础属性的说明，包含每个属性的取值类型、用途等。
+        :type properties: object
+        :param links: 视图链接。
+        :type links: list[:class:`huaweicloudsdkims.v2.Links`]
+        """
         
         super(GlanceListImageSchemasResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class GlanceListImageSchemasResponse(SdkResponse):
         视图名称。
 
         :param name: The name of this GlanceListImageSchemasResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -90,7 +99,7 @@ class GlanceListImageSchemasResponse(SdkResponse):
         镜像属性说明，主要是对基础属性的说明，包含每个属性的取值类型、用途等。
 
         :param properties: The properties of this GlanceListImageSchemasResponse.
-        :type: object
+        :type properties: object
         """
         self._properties = properties
 
@@ -101,7 +110,7 @@ class GlanceListImageSchemasResponse(SdkResponse):
         视图链接。
 
         :return: The links of this GlanceListImageSchemasResponse.
-        :rtype: list[Links]
+        :rtype: list[:class:`huaweicloudsdkims.v2.Links`]
         """
         return self._links
 
@@ -112,7 +121,7 @@ class GlanceListImageSchemasResponse(SdkResponse):
         视图链接。
 
         :param links: The links of this GlanceListImageSchemasResponse.
-        :type: list[Links]
+        :type links: list[:class:`huaweicloudsdkims.v2.Links`]
         """
         self._links = links
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TaskInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class TaskInfo:
     }
 
     def __init__(self, bench_concurrent=None, case_list=None, create_time=None, description=None, name=None, operate_mode=None, project_id=None, related_temp_running_data=None, run_status=None, update_time=None, parallel=None):
-        """TaskInfo - a model defined in huaweicloud sdk"""
+        """TaskInfo
+
+        The model defined in huaweicloud sdk
+
+        :param bench_concurrent: bench_concurrent
+        :type bench_concurrent: int
+        :param case_list: case_list
+        :type case_list: list[:class:`huaweicloudsdkcpts.v1.CaseInfo`]
+        :param create_time: 创建时间
+        :type create_time: datetime
+        :param description: description
+        :type description: str
+        :param name: name
+        :type name: str
+        :param operate_mode: operate_mode
+        :type operate_mode: int
+        :param project_id: project_id
+        :type project_id: int
+        :param related_temp_running_data: related_temp_running_data
+        :type related_temp_running_data: list[:class:`huaweicloudsdkcpts.v1.RelatedTempRunningData`]
+        :param run_status: run_status
+        :type run_status: int
+        :param update_time: update_time
+        :type update_time: str
+        :param parallel: parallel
+        :type parallel: bool
+        """
         
         
 
@@ -108,7 +133,7 @@ class TaskInfo:
         bench_concurrent
 
         :param bench_concurrent: The bench_concurrent of this TaskInfo.
-        :type: int
+        :type bench_concurrent: int
         """
         self._bench_concurrent = bench_concurrent
 
@@ -119,7 +144,7 @@ class TaskInfo:
         case_list
 
         :return: The case_list of this TaskInfo.
-        :rtype: list[CaseInfo]
+        :rtype: list[:class:`huaweicloudsdkcpts.v1.CaseInfo`]
         """
         return self._case_list
 
@@ -130,7 +155,7 @@ class TaskInfo:
         case_list
 
         :param case_list: The case_list of this TaskInfo.
-        :type: list[CaseInfo]
+        :type case_list: list[:class:`huaweicloudsdkcpts.v1.CaseInfo`]
         """
         self._case_list = case_list
 
@@ -152,7 +177,7 @@ class TaskInfo:
         创建时间
 
         :param create_time: The create_time of this TaskInfo.
-        :type: datetime
+        :type create_time: datetime
         """
         self._create_time = create_time
 
@@ -174,7 +199,7 @@ class TaskInfo:
         description
 
         :param description: The description of this TaskInfo.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -196,7 +221,7 @@ class TaskInfo:
         name
 
         :param name: The name of this TaskInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -218,7 +243,7 @@ class TaskInfo:
         operate_mode
 
         :param operate_mode: The operate_mode of this TaskInfo.
-        :type: int
+        :type operate_mode: int
         """
         self._operate_mode = operate_mode
 
@@ -240,7 +265,7 @@ class TaskInfo:
         project_id
 
         :param project_id: The project_id of this TaskInfo.
-        :type: int
+        :type project_id: int
         """
         self._project_id = project_id
 
@@ -251,7 +276,7 @@ class TaskInfo:
         related_temp_running_data
 
         :return: The related_temp_running_data of this TaskInfo.
-        :rtype: list[RelatedTempRunningData]
+        :rtype: list[:class:`huaweicloudsdkcpts.v1.RelatedTempRunningData`]
         """
         return self._related_temp_running_data
 
@@ -262,7 +287,7 @@ class TaskInfo:
         related_temp_running_data
 
         :param related_temp_running_data: The related_temp_running_data of this TaskInfo.
-        :type: list[RelatedTempRunningData]
+        :type related_temp_running_data: list[:class:`huaweicloudsdkcpts.v1.RelatedTempRunningData`]
         """
         self._related_temp_running_data = related_temp_running_data
 
@@ -284,7 +309,7 @@ class TaskInfo:
         run_status
 
         :param run_status: The run_status of this TaskInfo.
-        :type: int
+        :type run_status: int
         """
         self._run_status = run_status
 
@@ -306,7 +331,7 @@ class TaskInfo:
         update_time
 
         :param update_time: The update_time of this TaskInfo.
-        :type: str
+        :type update_time: str
         """
         self._update_time = update_time
 
@@ -328,7 +353,7 @@ class TaskInfo:
         parallel
 
         :param parallel: The parallel of this TaskInfo.
-        :type: bool
+        :type parallel: bool
         """
         self._parallel = parallel
 

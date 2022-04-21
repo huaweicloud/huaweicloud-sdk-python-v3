@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ObjectCompareResultDetails:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ObjectCompareResultDetails:
     }
 
     def __init__(self, source_db_name=None, target_db_name=None, source_db_value=None, target_db_value=None, error_message=None):
-        """ObjectCompareResultDetails - a model defined in huaweicloud sdk"""
+        """ObjectCompareResultDetails
+
+        The model defined in huaweicloud sdk
+
+        :param source_db_name: 源库名称。
+        :type source_db_name: str
+        :param target_db_name: 目标库名称。
+        :type target_db_name: str
+        :param source_db_value: 在源库的值。
+        :type source_db_value: str
+        :param target_db_value: 在目标库的值。
+        :type target_db_value: str
+        :param error_message: 错误信息。
+        :type error_message: str
+        """
         
         
 
@@ -76,7 +89,7 @@ class ObjectCompareResultDetails:
         源库名称。
 
         :param source_db_name: The source_db_name of this ObjectCompareResultDetails.
-        :type: str
+        :type source_db_name: str
         """
         self._source_db_name = source_db_name
 
@@ -98,7 +111,7 @@ class ObjectCompareResultDetails:
         目标库名称。
 
         :param target_db_name: The target_db_name of this ObjectCompareResultDetails.
-        :type: str
+        :type target_db_name: str
         """
         self._target_db_name = target_db_name
 
@@ -120,7 +133,7 @@ class ObjectCompareResultDetails:
         在源库的值。
 
         :param source_db_value: The source_db_value of this ObjectCompareResultDetails.
-        :type: str
+        :type source_db_value: str
         """
         self._source_db_value = source_db_value
 
@@ -142,7 +155,7 @@ class ObjectCompareResultDetails:
         在目标库的值。
 
         :param target_db_value: The target_db_value of this ObjectCompareResultDetails.
-        :type: str
+        :type target_db_value: str
         """
         self._target_db_value = target_db_value
 
@@ -164,7 +177,7 @@ class ObjectCompareResultDetails:
         错误信息。
 
         :param error_message: The error_message of this ObjectCompareResultDetails.
-        :type: str
+        :type error_message: str
         """
         self._error_message = error_message
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateProjectAndforkRepositoriesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateProjectAndforkRepositoriesRequest:
     }
 
     def __init__(self, body=None):
-        """CreateProjectAndforkRepositoriesRequest - a model defined in huaweicloud sdk"""
+        """CreateProjectAndforkRepositoriesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateProjectAndforkRepositoriesRequest
+        :type body: :class:`huaweicloudsdkcodehub.v3.ForkProjectRepoRequest`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateProjectAndforkRepositoriesRequest:
 
 
         :return: The body of this CreateProjectAndforkRepositoriesRequest.
-        :rtype: ForkProjectRepoRequest
+        :rtype: :class:`huaweicloudsdkcodehub.v3.ForkProjectRepoRequest`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateProjectAndforkRepositoriesRequest:
 
 
         :param body: The body of this CreateProjectAndforkRepositoriesRequest.
-        :type: ForkProjectRepoRequest
+        :type body: :class:`huaweicloudsdkcodehub.v3.ForkProjectRepoRequest`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CompareFaceByUrlRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CompareFaceByUrlRequest:
     }
 
     def __init__(self, body=None):
-        """CompareFaceByUrlRequest - a model defined in huaweicloud sdk"""
+        """CompareFaceByUrlRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CompareFaceByUrlRequest
+        :type body: :class:`huaweicloudsdkfrs.v2.FaceCompareUrlReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CompareFaceByUrlRequest:
 
 
         :return: The body of this CompareFaceByUrlRequest.
-        :rtype: FaceCompareUrlReq
+        :rtype: :class:`huaweicloudsdkfrs.v2.FaceCompareUrlReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CompareFaceByUrlRequest:
 
 
         :param body: The body of this CompareFaceByUrlRequest.
-        :type: FaceCompareUrlReq
+        :type body: :class:`huaweicloudsdkfrs.v2.FaceCompareUrlReq`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateVariableRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class CreateVariableRequestBody:
     }
 
     def __init__(self, id=None, name=None, variable_type=None, variable=None, is_quoted=None):
-        """CreateVariableRequestBody - a model defined in huaweicloud sdk"""
+        """CreateVariableRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param id: id
+        :type id: int
+        :param name: name
+        :type name: str
+        :param variable_type: variable_type
+        :type variable_type: int
+        :param variable: variable
+        :type variable: list[object]
+        :param is_quoted: 是否被引用
+        :type is_quoted: bool
+        """
         
         
 
@@ -73,7 +86,7 @@ class CreateVariableRequestBody:
         id
 
         :param id: The id of this CreateVariableRequestBody.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -95,7 +108,7 @@ class CreateVariableRequestBody:
         name
 
         :param name: The name of this CreateVariableRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -117,7 +130,7 @@ class CreateVariableRequestBody:
         variable_type
 
         :param variable_type: The variable_type of this CreateVariableRequestBody.
-        :type: int
+        :type variable_type: int
         """
         self._variable_type = variable_type
 
@@ -139,7 +152,7 @@ class CreateVariableRequestBody:
         variable
 
         :param variable: The variable of this CreateVariableRequestBody.
-        :type: list[object]
+        :type variable: list[object]
         """
         self._variable = variable
 
@@ -161,7 +174,7 @@ class CreateVariableRequestBody:
         是否被引用
 
         :param is_quoted: The is_quoted of this CreateVariableRequestBody.
-        :type: bool
+        :type is_quoted: bool
         """
         self._is_quoted = is_quoted
 

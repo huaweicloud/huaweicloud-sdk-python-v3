@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListApplicationEndpointAttributesResponseBodyAttributes:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListApplicationEndpointAttributesResponseBodyAttributes:
     }
 
     def __init__(self, enabled=None, token=None, user_data=None):
-        """ListApplicationEndpointAttributesResponseBodyAttributes - a model defined in huaweicloud sdk"""
+        """ListApplicationEndpointAttributesResponseBodyAttributes
+
+        The model defined in huaweicloud sdk
+
+        :param enabled: 设备是否可用。
+        :type enabled: str
+        :param token: 设备token。
+        :type token: str
+        :param user_data: 用户数据。
+        :type user_data: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class ListApplicationEndpointAttributesResponseBodyAttributes:
         设备是否可用。
 
         :param enabled: The enabled of this ListApplicationEndpointAttributesResponseBodyAttributes.
-        :type: str
+        :type enabled: str
         """
         self._enabled = enabled
 
@@ -87,7 +96,7 @@ class ListApplicationEndpointAttributesResponseBodyAttributes:
         设备token。
 
         :param token: The token of this ListApplicationEndpointAttributesResponseBodyAttributes.
-        :type: str
+        :type token: str
         """
         self._token = token
 
@@ -109,7 +118,7 @@ class ListApplicationEndpointAttributesResponseBodyAttributes:
         用户数据。
 
         :param user_data: The user_data of this ListApplicationEndpointAttributesResponseBodyAttributes.
-        :type: str
+        :type user_data: str
         """
         self._user_data = user_data
 

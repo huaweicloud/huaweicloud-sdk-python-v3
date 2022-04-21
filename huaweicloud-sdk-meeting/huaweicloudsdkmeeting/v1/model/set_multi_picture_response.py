@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SetMultiPictureResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class SetMultiPictureResponse(SdkResponse):
     }
 
     def __init__(self):
-        """SetMultiPictureResponse - a model defined in huaweicloud sdk"""
+        """SetMultiPictureResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(SetMultiPictureResponse, self).__init__()
         self.discriminator = None

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PoolResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class PoolResp:
     }
 
     def __init__(self, id=None, project_id=None, tenant_id=None, name=None, description=None, admin_state_up=None, loadbalancers=None, listeners=None, members=None, healthmonitor_id=None, session_persistence=None, protocol=None, lb_algorithm=None):
-        """PoolResp - a model defined in huaweicloud sdk"""
+        """PoolResp
+
+        The model defined in huaweicloud sdk
+
+        :param id: 后端云服务器组的ID
+        :type id: str
+        :param project_id: 后端云服务器组所在的项目ID。
+        :type project_id: str
+        :param tenant_id: 后端云服务器组所在的项目ID。
+        :type tenant_id: str
+        :param name: 后端云服务器组的名称。
+        :type name: str
+        :param description: 后端云服务器组的描述信息
+        :type description: str
+        :param admin_state_up: 后端云服务器组的管理状态。只支持设定为true，该字段的值无实际意义。
+        :type admin_state_up: bool
+        :param loadbalancers: 后端云服务器组绑定的负载均衡器ID的列表。
+        :type loadbalancers: list[:class:`huaweicloudsdkelb.v2.ResourceList`]
+        :param listeners: 后端云服务器组关联的监听器ID的列表。
+        :type listeners: list[:class:`huaweicloudsdkelb.v2.ResourceList`]
+        :param members: 后端云服务器组关联的后端云服务器ID的列表。
+        :type members: list[:class:`huaweicloudsdkelb.v2.ResourceList`]
+        :param healthmonitor_id: 后端云服务器组关联的健康检查的ID。
+        :type healthmonitor_id: str
+        :param session_persistence: 
+        :type session_persistence: :class:`huaweicloudsdkelb.v2.SessionPersistence`
+        :param protocol: 后端云服务器组的后端协议。
+        :type protocol: str
+        :param lb_algorithm: 后端云服务器组的负载均衡算法，取值：ROUND_ROBIN：加权轮询算法；LEAST_CONNECTIONS：加权最少连接算法；SOURCE_IP：源IP算法。当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。
+        :type lb_algorithm: str
+        """
         
         
 
@@ -105,7 +134,7 @@ class PoolResp:
         后端云服务器组的ID
 
         :param id: The id of this PoolResp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -127,7 +156,7 @@ class PoolResp:
         后端云服务器组所在的项目ID。
 
         :param project_id: The project_id of this PoolResp.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -149,7 +178,7 @@ class PoolResp:
         后端云服务器组所在的项目ID。
 
         :param tenant_id: The tenant_id of this PoolResp.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 
@@ -171,7 +200,7 @@ class PoolResp:
         后端云服务器组的名称。
 
         :param name: The name of this PoolResp.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -193,7 +222,7 @@ class PoolResp:
         后端云服务器组的描述信息
 
         :param description: The description of this PoolResp.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -215,7 +244,7 @@ class PoolResp:
         后端云服务器组的管理状态。只支持设定为true，该字段的值无实际意义。
 
         :param admin_state_up: The admin_state_up of this PoolResp.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 
@@ -226,7 +255,7 @@ class PoolResp:
         后端云服务器组绑定的负载均衡器ID的列表。
 
         :return: The loadbalancers of this PoolResp.
-        :rtype: list[ResourceList]
+        :rtype: list[:class:`huaweicloudsdkelb.v2.ResourceList`]
         """
         return self._loadbalancers
 
@@ -237,7 +266,7 @@ class PoolResp:
         后端云服务器组绑定的负载均衡器ID的列表。
 
         :param loadbalancers: The loadbalancers of this PoolResp.
-        :type: list[ResourceList]
+        :type loadbalancers: list[:class:`huaweicloudsdkelb.v2.ResourceList`]
         """
         self._loadbalancers = loadbalancers
 
@@ -248,7 +277,7 @@ class PoolResp:
         后端云服务器组关联的监听器ID的列表。
 
         :return: The listeners of this PoolResp.
-        :rtype: list[ResourceList]
+        :rtype: list[:class:`huaweicloudsdkelb.v2.ResourceList`]
         """
         return self._listeners
 
@@ -259,7 +288,7 @@ class PoolResp:
         后端云服务器组关联的监听器ID的列表。
 
         :param listeners: The listeners of this PoolResp.
-        :type: list[ResourceList]
+        :type listeners: list[:class:`huaweicloudsdkelb.v2.ResourceList`]
         """
         self._listeners = listeners
 
@@ -270,7 +299,7 @@ class PoolResp:
         后端云服务器组关联的后端云服务器ID的列表。
 
         :return: The members of this PoolResp.
-        :rtype: list[ResourceList]
+        :rtype: list[:class:`huaweicloudsdkelb.v2.ResourceList`]
         """
         return self._members
 
@@ -281,7 +310,7 @@ class PoolResp:
         后端云服务器组关联的后端云服务器ID的列表。
 
         :param members: The members of this PoolResp.
-        :type: list[ResourceList]
+        :type members: list[:class:`huaweicloudsdkelb.v2.ResourceList`]
         """
         self._members = members
 
@@ -303,7 +332,7 @@ class PoolResp:
         后端云服务器组关联的健康检查的ID。
 
         :param healthmonitor_id: The healthmonitor_id of this PoolResp.
-        :type: str
+        :type healthmonitor_id: str
         """
         self._healthmonitor_id = healthmonitor_id
 
@@ -313,7 +342,7 @@ class PoolResp:
 
 
         :return: The session_persistence of this PoolResp.
-        :rtype: SessionPersistence
+        :rtype: :class:`huaweicloudsdkelb.v2.SessionPersistence`
         """
         return self._session_persistence
 
@@ -323,7 +352,7 @@ class PoolResp:
 
 
         :param session_persistence: The session_persistence of this PoolResp.
-        :type: SessionPersistence
+        :type session_persistence: :class:`huaweicloudsdkelb.v2.SessionPersistence`
         """
         self._session_persistence = session_persistence
 
@@ -345,7 +374,7 @@ class PoolResp:
         后端云服务器组的后端协议。
 
         :param protocol: The protocol of this PoolResp.
-        :type: str
+        :type protocol: str
         """
         self._protocol = protocol
 
@@ -367,7 +396,7 @@ class PoolResp:
         后端云服务器组的负载均衡算法，取值：ROUND_ROBIN：加权轮询算法；LEAST_CONNECTIONS：加权最少连接算法；SOURCE_IP：源IP算法。当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。
 
         :param lb_algorithm: The lb_algorithm of this PoolResp.
-        :type: str
+        :type lb_algorithm: str
         """
         self._lb_algorithm = lb_algorithm
 

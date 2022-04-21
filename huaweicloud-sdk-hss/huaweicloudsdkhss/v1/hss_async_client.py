@@ -52,21 +52,17 @@ class HssAsyncClient(Client):
         """查入侵事件列表
 
         查入侵事件列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListEventsRequest request
-        :return: ListEventsResponse
+        :param request: Request instance for ListEvents
+        :type request: :class:`huaweicloudsdkhss.v1.ListEventsRequest`
+        :rtype: :class:`huaweicloudsdkhss.v1.ListEventsResponse`
         """
         return self.list_events_with_http_info(request)
 
     def list_events_with_http_info(self, request):
-        """查入侵事件列表
-
-        查入侵事件列表
-
-        :param ListEventsRequest request
-        :return: ListEventsResponse
-        """
-
         all_params = ['begin_time', 'end_time', 'event_types', 'host_name', 'handle_status', 'limit', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -123,26 +119,21 @@ class HssAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_hosts_async(self, request):
         """查询弹性云服务器状态列表
 
         查询弹性云服务器状态列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListHostsRequest request
-        :return: ListHostsResponse
+        :param request: Request instance for ListHosts
+        :type request: :class:`huaweicloudsdkhss.v1.ListHostsRequest`
+        :rtype: :class:`huaweicloudsdkhss.v1.ListHostsResponse`
         """
         return self.list_hosts_with_http_info(request)
 
     def list_hosts_with_http_info(self, request):
-        """查询弹性云服务器状态列表
-
-        查询弹性云服务器状态列表
-
-        :param ListHostsRequest request
-        :return: ListHostsResponse
-        """
-
         all_params = ['version', 'agent_status', 'host_status', 'protect_status', 'detect_result', 'host_name', 'host_ip', 'public_ip', 'os_type', 'charging_mode', 'limit', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -207,7 +198,6 @@ class HssAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

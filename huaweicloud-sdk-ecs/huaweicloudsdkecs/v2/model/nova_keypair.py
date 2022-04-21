@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NovaKeypair:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class NovaKeypair:
     }
 
     def __init__(self, fingerprint=None, name=None, public_key=None, private_key=None, user_id=None, type=None):
-        """NovaKeypair - a model defined in huaweicloud sdk"""
+        """NovaKeypair
+
+        The model defined in huaweicloud sdk
+
+        :param fingerprint: 密钥对应指纹信息。
+        :type fingerprint: str
+        :param name: 密钥名称。
+        :type name: str
+        :param public_key: 密钥对应publicKey信息。
+        :type public_key: str
+        :param private_key: 密钥对应privateKey信息。  - 创建SSH密钥时，响应中包括private_key的信息。 - 导入SSH密钥时，响应中不包括private_key的信息。
+        :type private_key: str
+        :param user_id: 密钥所属用户ID。
+        :type user_id: str
+        :param type: 密钥类型，默认“ssh”  微版本2.2以上支持
+        :type type: str
+        """
         
         
 
@@ -78,7 +93,7 @@ class NovaKeypair:
         密钥对应指纹信息。
 
         :param fingerprint: The fingerprint of this NovaKeypair.
-        :type: str
+        :type fingerprint: str
         """
         self._fingerprint = fingerprint
 
@@ -100,7 +115,7 @@ class NovaKeypair:
         密钥名称。
 
         :param name: The name of this NovaKeypair.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -122,7 +137,7 @@ class NovaKeypair:
         密钥对应publicKey信息。
 
         :param public_key: The public_key of this NovaKeypair.
-        :type: str
+        :type public_key: str
         """
         self._public_key = public_key
 
@@ -144,7 +159,7 @@ class NovaKeypair:
         密钥对应privateKey信息。  - 创建SSH密钥时，响应中包括private_key的信息。 - 导入SSH密钥时，响应中不包括private_key的信息。
 
         :param private_key: The private_key of this NovaKeypair.
-        :type: str
+        :type private_key: str
         """
         self._private_key = private_key
 
@@ -166,7 +181,7 @@ class NovaKeypair:
         密钥所属用户ID。
 
         :param user_id: The user_id of this NovaKeypair.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -188,7 +203,7 @@ class NovaKeypair:
         密钥类型，默认“ssh”  微版本2.2以上支持
 
         :param type: The type of this NovaKeypair.
-        :type: str
+        :type type: str
         """
         self._type = type
 

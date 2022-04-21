@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListExternalEntityRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListExternalEntityRequest:
     }
 
     def __init__(self, edge_node_id=None, offset=None, limit=None):
-        """ListExternalEntityRequest - a model defined in huaweicloud sdk"""
+        """ListExternalEntityRequest
+
+        The model defined in huaweicloud sdk
+
+        :param edge_node_id: 边缘节点ID
+        :type edge_node_id: str
+        :param offset: 查询的起始位置，取值范围为非负整数，默认为0
+        :type offset: int
+        :param limit: 每页记录数，取值范围为非负整数，默认值为10
+        :type limit: int
+        """
         
         
 
@@ -67,7 +76,7 @@ class ListExternalEntityRequest:
         边缘节点ID
 
         :param edge_node_id: The edge_node_id of this ListExternalEntityRequest.
-        :type: str
+        :type edge_node_id: str
         """
         self._edge_node_id = edge_node_id
 
@@ -89,7 +98,7 @@ class ListExternalEntityRequest:
         查询的起始位置，取值范围为非负整数，默认为0
 
         :param offset: The offset of this ListExternalEntityRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -111,7 +120,7 @@ class ListExternalEntityRequest:
         每页记录数，取值范围为非负整数，默认值为10
 
         :param limit: The limit of this ListExternalEntityRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

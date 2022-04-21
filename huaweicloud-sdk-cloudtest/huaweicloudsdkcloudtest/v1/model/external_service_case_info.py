@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExternalServiceCaseInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class ExternalServiceCaseInfo:
     }
 
     def __init__(self, description=None, preparation=None, steps=None, label_list=None, module_id=None, test_version_id=None, fix_version_id=None, assigned_id=None, issue_id=None):
-        """ExternalServiceCaseInfo - a model defined in huaweicloud sdk"""
+        """ExternalServiceCaseInfo
+
+        The model defined in huaweicloud sdk
+
+        :param description: 测试用例描述信息，长度为[0-500]位字符
+        :type description: str
+        :param preparation: 执行该测试用例时需要满足的前置条件，长度为[0-500]位字符
+        :type preparation: str
+        :param steps: 测试步骤，数组长度小于10
+        :type steps: list[:class:`huaweicloudsdkcloudtest.v1.ExternalServiceCaseStep`]
+        :param label_list: 标签名称列表，数组长度小于25
+        :type label_list: list[str]
+        :param module_id: 模块号，长度为[0-32]位字符
+        :type module_id: str
+        :param test_version_id: 测试版本号，长度为[0-10]位字符
+        :type test_version_id: str
+        :param fix_version_id: 迭代号，长度为[0-32]位字符
+        :type fix_version_id: str
+        :param assigned_id: 处理者id信息，固定长度32位字符
+        :type assigned_id: str
+        :param issue_id: 用例关联的需求id信息，长度为[0-32]位字符
+        :type issue_id: str
+        """
         
         
 
@@ -98,7 +119,7 @@ class ExternalServiceCaseInfo:
         测试用例描述信息，长度为[0-500]位字符
 
         :param description: The description of this ExternalServiceCaseInfo.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -120,7 +141,7 @@ class ExternalServiceCaseInfo:
         执行该测试用例时需要满足的前置条件，长度为[0-500]位字符
 
         :param preparation: The preparation of this ExternalServiceCaseInfo.
-        :type: str
+        :type preparation: str
         """
         self._preparation = preparation
 
@@ -131,7 +152,7 @@ class ExternalServiceCaseInfo:
         测试步骤，数组长度小于10
 
         :return: The steps of this ExternalServiceCaseInfo.
-        :rtype: list[ExternalServiceCaseStep]
+        :rtype: list[:class:`huaweicloudsdkcloudtest.v1.ExternalServiceCaseStep`]
         """
         return self._steps
 
@@ -142,7 +163,7 @@ class ExternalServiceCaseInfo:
         测试步骤，数组长度小于10
 
         :param steps: The steps of this ExternalServiceCaseInfo.
-        :type: list[ExternalServiceCaseStep]
+        :type steps: list[:class:`huaweicloudsdkcloudtest.v1.ExternalServiceCaseStep`]
         """
         self._steps = steps
 
@@ -164,7 +185,7 @@ class ExternalServiceCaseInfo:
         标签名称列表，数组长度小于25
 
         :param label_list: The label_list of this ExternalServiceCaseInfo.
-        :type: list[str]
+        :type label_list: list[str]
         """
         self._label_list = label_list
 
@@ -186,7 +207,7 @@ class ExternalServiceCaseInfo:
         模块号，长度为[0-32]位字符
 
         :param module_id: The module_id of this ExternalServiceCaseInfo.
-        :type: str
+        :type module_id: str
         """
         self._module_id = module_id
 
@@ -208,7 +229,7 @@ class ExternalServiceCaseInfo:
         测试版本号，长度为[0-10]位字符
 
         :param test_version_id: The test_version_id of this ExternalServiceCaseInfo.
-        :type: str
+        :type test_version_id: str
         """
         self._test_version_id = test_version_id
 
@@ -230,7 +251,7 @@ class ExternalServiceCaseInfo:
         迭代号，长度为[0-32]位字符
 
         :param fix_version_id: The fix_version_id of this ExternalServiceCaseInfo.
-        :type: str
+        :type fix_version_id: str
         """
         self._fix_version_id = fix_version_id
 
@@ -252,7 +273,7 @@ class ExternalServiceCaseInfo:
         处理者id信息，固定长度32位字符
 
         :param assigned_id: The assigned_id of this ExternalServiceCaseInfo.
-        :type: str
+        :type assigned_id: str
         """
         self._assigned_id = assigned_id
 
@@ -274,7 +295,7 @@ class ExternalServiceCaseInfo:
         用例关联的需求id信息，长度为[0-32]位字符
 
         :param issue_id: The issue_id of this ExternalServiceCaseInfo.
-        :type: str
+        :type issue_id: str
         """
         self._issue_id = issue_id
 

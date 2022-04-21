@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDedicatedHostsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListDedicatedHostsResponse(SdkResponse):
     }
 
     def __init__(self, dedicated_hosts=None, total=None):
-        """ListDedicatedHostsResponse - a model defined in huaweicloud sdk"""
+        """ListDedicatedHostsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param dedicated_hosts: 满足查询条件的专属主机。
+        :type dedicated_hosts: list[:class:`huaweicloudsdkdeh.v1.RespDedicatedHost`]
+        :param total: 满足查询条件的专属主机数量。
+        :type total: int
+        """
         
         super(ListDedicatedHostsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListDedicatedHostsResponse(SdkResponse):
         满足查询条件的专属主机。
 
         :return: The dedicated_hosts of this ListDedicatedHostsResponse.
-        :rtype: list[RespDedicatedHost]
+        :rtype: list[:class:`huaweicloudsdkdeh.v1.RespDedicatedHost`]
         """
         return self._dedicated_hosts
 
@@ -63,7 +70,7 @@ class ListDedicatedHostsResponse(SdkResponse):
         满足查询条件的专属主机。
 
         :param dedicated_hosts: The dedicated_hosts of this ListDedicatedHostsResponse.
-        :type: list[RespDedicatedHost]
+        :type dedicated_hosts: list[:class:`huaweicloudsdkdeh.v1.RespDedicatedHost`]
         """
         self._dedicated_hosts = dedicated_hosts
 
@@ -85,7 +92,7 @@ class ListDedicatedHostsResponse(SdkResponse):
         满足查询条件的专属主机数量。
 
         :param total: The total of this ListDedicatedHostsResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddResourceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class AddResourceRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, corp_id=None, body=None):
-        """AddResourceRequest - a model defined in huaweicloud sdk"""
+        """AddResourceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        :type x_request_id: str
+        :param accept_language: 语言参数，默认为中文zh-CN, 英文为en-US
+        :type accept_language: str
+        :param corp_id: 企业id
+        :type corp_id: str
+        :param body: 待添加的资源列表，最多支持批量处理100个
+        :type body: list[:class:`huaweicloudsdkmeeting.v1.ResourceDTO`]
+        """
         
         
 
@@ -72,7 +83,7 @@ class AddResourceRequest:
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
 
         :param x_request_id: The x_request_id of this AddResourceRequest.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 
@@ -94,7 +105,7 @@ class AddResourceRequest:
         语言参数，默认为中文zh-CN, 英文为en-US
 
         :param accept_language: The accept_language of this AddResourceRequest.
-        :type: str
+        :type accept_language: str
         """
         self._accept_language = accept_language
 
@@ -116,7 +127,7 @@ class AddResourceRequest:
         企业id
 
         :param corp_id: The corp_id of this AddResourceRequest.
-        :type: str
+        :type corp_id: str
         """
         self._corp_id = corp_id
 
@@ -127,7 +138,7 @@ class AddResourceRequest:
         待添加的资源列表，最多支持批量处理100个
 
         :return: The body of this AddResourceRequest.
-        :rtype: list[ResourceDTO]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.ResourceDTO`]
         """
         return self._body
 
@@ -138,7 +149,7 @@ class AddResourceRequest:
         待添加的资源列表，最多支持批量处理100个
 
         :param body: The body of this AddResourceRequest.
-        :type: list[ResourceDTO]
+        :type body: list[:class:`huaweicloudsdkmeeting.v1.ResourceDTO`]
         """
         self._body = body
 

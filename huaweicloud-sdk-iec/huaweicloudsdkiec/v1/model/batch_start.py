@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchStart:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchStart:
     }
 
     def __init__(self, servers=None):
-        """BatchStart - a model defined in huaweicloud sdk"""
+        """BatchStart
+
+        The model defined in huaweicloud sdk
+
+        :param servers: 待启动的边缘实例列表。
+        :type servers: list[:class:`huaweicloudsdkiec.v1.BaseId`]
+        """
         
         
 
@@ -47,7 +52,7 @@ class BatchStart:
         待启动的边缘实例列表。
 
         :return: The servers of this BatchStart.
-        :rtype: list[BaseId]
+        :rtype: list[:class:`huaweicloudsdkiec.v1.BaseId`]
         """
         return self._servers
 
@@ -58,7 +63,7 @@ class BatchStart:
         待启动的边缘实例列表。
 
         :param servers: The servers of this BatchStart.
-        :type: list[BaseId]
+        :type servers: list[:class:`huaweicloudsdkiec.v1.BaseId`]
         """
         self._servers = servers
 

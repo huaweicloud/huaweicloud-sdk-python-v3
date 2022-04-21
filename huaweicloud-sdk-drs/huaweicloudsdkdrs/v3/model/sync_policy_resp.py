@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SyncPolicyResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class SyncPolicyResp:
     }
 
     def __init__(self, id=None, status=None, error_code=None, error_msg=None):
-        """SyncPolicyResp - a model defined in huaweicloud sdk"""
+        """SyncPolicyResp
+
+        The model defined in huaweicloud sdk
+
+        :param id: 任务ID
+        :type id: str
+        :param status: 状态 - success：成功 - failed：失败
+        :type status: str
+        :param error_code: 错误码
+        :type error_code: str
+        :param error_msg: 错误信息
+        :type error_msg: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class SyncPolicyResp:
         任务ID
 
         :param id: The id of this SyncPolicyResp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -95,7 +106,7 @@ class SyncPolicyResp:
         状态 - success：成功 - failed：失败
 
         :param status: The status of this SyncPolicyResp.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -117,7 +128,7 @@ class SyncPolicyResp:
         错误码
 
         :param error_code: The error_code of this SyncPolicyResp.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -139,7 +150,7 @@ class SyncPolicyResp:
         错误信息
 
         :param error_msg: The error_msg of this SyncPolicyResp.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NovaAvailabilityZoneState:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class NovaAvailabilityZoneState:
     }
 
     def __init__(self, available=None):
-        """NovaAvailabilityZoneState - a model defined in huaweicloud sdk"""
+        """NovaAvailabilityZoneState
+
+        The model defined in huaweicloud sdk
+
+        :param available: 可用域状态。
+        :type available: bool
+        """
         
         
 
@@ -57,7 +62,7 @@ class NovaAvailabilityZoneState:
         可用域状态。
 
         :param available: The available of this NovaAvailabilityZoneState.
-        :type: bool
+        :type available: bool
         """
         self._available = available
 

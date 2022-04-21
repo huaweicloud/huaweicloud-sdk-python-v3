@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SkillResponse:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class SkillResponse:
     }
 
     def __init__(self, skill_id=None, skill_version=None, frame=None, candidate=None, locked=None, related_intenions=None):
-        """SkillResponse - a model defined in huaweicloud sdk"""
+        """SkillResponse
+
+        The model defined in huaweicloud sdk
+
+        :param skill_id: 技能ID。
+        :type skill_id: str
+        :param skill_version: 技能模型版本。
+        :type skill_version: str
+        :param frame: 
+        :type frame: :class:`huaweicloudsdkcbs.v1.Frame`
+        :param candidate: 
+        :type candidate: :class:`huaweicloudsdkcbs.v1.CandidateIntention`
+        :param locked: 技能是否锁定。
+        :type locked: bool
+        :param related_intenions: 相关意图信息。
+        :type related_intenions: list[:class:`huaweicloudsdkcbs.v1.RelatedIntention`]
+        """
         
         
 
@@ -77,7 +92,7 @@ class SkillResponse:
         技能ID。
 
         :param skill_id: The skill_id of this SkillResponse.
-        :type: str
+        :type skill_id: str
         """
         self._skill_id = skill_id
 
@@ -99,7 +114,7 @@ class SkillResponse:
         技能模型版本。
 
         :param skill_version: The skill_version of this SkillResponse.
-        :type: str
+        :type skill_version: str
         """
         self._skill_version = skill_version
 
@@ -109,7 +124,7 @@ class SkillResponse:
 
 
         :return: The frame of this SkillResponse.
-        :rtype: Frame
+        :rtype: :class:`huaweicloudsdkcbs.v1.Frame`
         """
         return self._frame
 
@@ -119,7 +134,7 @@ class SkillResponse:
 
 
         :param frame: The frame of this SkillResponse.
-        :type: Frame
+        :type frame: :class:`huaweicloudsdkcbs.v1.Frame`
         """
         self._frame = frame
 
@@ -129,7 +144,7 @@ class SkillResponse:
 
 
         :return: The candidate of this SkillResponse.
-        :rtype: CandidateIntention
+        :rtype: :class:`huaweicloudsdkcbs.v1.CandidateIntention`
         """
         return self._candidate
 
@@ -139,7 +154,7 @@ class SkillResponse:
 
 
         :param candidate: The candidate of this SkillResponse.
-        :type: CandidateIntention
+        :type candidate: :class:`huaweicloudsdkcbs.v1.CandidateIntention`
         """
         self._candidate = candidate
 
@@ -161,7 +176,7 @@ class SkillResponse:
         技能是否锁定。
 
         :param locked: The locked of this SkillResponse.
-        :type: bool
+        :type locked: bool
         """
         self._locked = locked
 
@@ -172,7 +187,7 @@ class SkillResponse:
         相关意图信息。
 
         :return: The related_intenions of this SkillResponse.
-        :rtype: list[RelatedIntention]
+        :rtype: list[:class:`huaweicloudsdkcbs.v1.RelatedIntention`]
         """
         return self._related_intenions
 
@@ -183,7 +198,7 @@ class SkillResponse:
         相关意图信息。
 
         :param related_intenions: The related_intenions of this SkillResponse.
-        :type: list[RelatedIntention]
+        :type related_intenions: list[:class:`huaweicloudsdkcbs.v1.RelatedIntention`]
         """
         self._related_intenions = related_intenions
 

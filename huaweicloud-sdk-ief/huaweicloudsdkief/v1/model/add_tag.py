@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddTag:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class AddTag:
     }
 
     def __init__(self, tag=None):
-        """AddTag - a model defined in huaweicloud sdk"""
+        """AddTag
+
+        The model defined in huaweicloud sdk
+
+        :param tag: 
+        :type tag: :class:`huaweicloudsdkief.v1.ResourceTag`
+        """
         
         
 
@@ -45,7 +50,7 @@ class AddTag:
 
 
         :return: The tag of this AddTag.
-        :rtype: ResourceTag
+        :rtype: :class:`huaweicloudsdkief.v1.ResourceTag`
         """
         return self._tag
 
@@ -55,7 +60,7 @@ class AddTag:
 
 
         :param tag: The tag of this AddTag.
-        :type: ResourceTag
+        :type tag: :class:`huaweicloudsdkief.v1.ResourceTag`
         """
         self._tag = tag
 

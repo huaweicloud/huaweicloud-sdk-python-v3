@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateSecurityPolicyOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class CreateSecurityPolicyOption:
     }
 
     def __init__(self, name=None, description=None, enterprise_project_id=None, protocols=None, ciphers=None):
-        """CreateSecurityPolicyOption - a model defined in huaweicloud sdk"""
+        """CreateSecurityPolicyOption
+
+        The model defined in huaweicloud sdk
+
+        :param name: 自定义安全策略的名称。默认空字符串\&quot;\&quot;。
+        :type name: str
+        :param description: 自定义安全策略的描述信息。默认空字符串\&quot;\&quot;。
+        :type description: str
+        :param enterprise_project_id: 所属企业项目ID。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
+        :type enterprise_project_id: str
+        :param protocols: 自定义安全策略选择的TLS协议列表。取值：TLSv1, TLSv1.1, TLSv1.2, TLSv1.3, GMTLS
+        :type protocols: list[str]
+        :param ciphers: 自定义策略的加密套件列表。支持以下加密套件： ECDHE-RSA-AES256-GCM-SHA384,ECDHE-RSA-AES128-GCM-SHA256,ECDHE-ECDSA-AES256-GCM-SHA384,ECDHE-ECDSA-AES128-GCM-SHA256,AES128-GCM-SHA256,AES256-GCM-SHA384,ECDHE-ECDSA-AES128-SHA256,ECDHE-RSA-AES128-SHA256,AES128-SHA256,AES256-SHA256,ECDHE-ECDSA-AES256-SHA384,ECDHE-RSA-AES256-SHA384,ECDHE-ECDSA-AES128-SHA,ECDHE-RSA-AES128-SHA,ECDHE-RSA-AES256-SHA,ECDHE-ECDSA-AES256-SHA,AES128-SHA,AES256-SHA,CAMELLIA128-SHA,DES-CBC3-SHA,CAMELLIA256-SHA,ECDHE-RSA-CHACHA20-POLY1305,ECDHE-ECDSA-CHACHA20-POLY1305,TLS_AES_128_GCM_SHA256,TLS_AES_256_GCM_SHA384,TLS_CHACHA20_POLY1305_SHA256,TLS_AES_128_CCM_SHA256,TLS_AES_128_CCM_8_SHA256,ECC-SM4-SM3, ECDHE-SM4-SM3
+        :type ciphers: list[str]
+        """
         
         
 
@@ -76,7 +89,7 @@ class CreateSecurityPolicyOption:
         自定义安全策略的名称。默认空字符串\"\"。
 
         :param name: The name of this CreateSecurityPolicyOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -98,7 +111,7 @@ class CreateSecurityPolicyOption:
         自定义安全策略的描述信息。默认空字符串\"\"。
 
         :param description: The description of this CreateSecurityPolicyOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -120,7 +133,7 @@ class CreateSecurityPolicyOption:
         所属企业项目ID。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
 
         :param enterprise_project_id: The enterprise_project_id of this CreateSecurityPolicyOption.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -142,7 +155,7 @@ class CreateSecurityPolicyOption:
         自定义安全策略选择的TLS协议列表。取值：TLSv1, TLSv1.1, TLSv1.2, TLSv1.3, GMTLS
 
         :param protocols: The protocols of this CreateSecurityPolicyOption.
-        :type: list[str]
+        :type protocols: list[str]
         """
         self._protocols = protocols
 
@@ -164,7 +177,7 @@ class CreateSecurityPolicyOption:
         自定义策略的加密套件列表。支持以下加密套件： ECDHE-RSA-AES256-GCM-SHA384,ECDHE-RSA-AES128-GCM-SHA256,ECDHE-ECDSA-AES256-GCM-SHA384,ECDHE-ECDSA-AES128-GCM-SHA256,AES128-GCM-SHA256,AES256-GCM-SHA384,ECDHE-ECDSA-AES128-SHA256,ECDHE-RSA-AES128-SHA256,AES128-SHA256,AES256-SHA256,ECDHE-ECDSA-AES256-SHA384,ECDHE-RSA-AES256-SHA384,ECDHE-ECDSA-AES128-SHA,ECDHE-RSA-AES128-SHA,ECDHE-RSA-AES256-SHA,ECDHE-ECDSA-AES256-SHA,AES128-SHA,AES256-SHA,CAMELLIA128-SHA,DES-CBC3-SHA,CAMELLIA256-SHA,ECDHE-RSA-CHACHA20-POLY1305,ECDHE-ECDSA-CHACHA20-POLY1305,TLS_AES_128_GCM_SHA256,TLS_AES_256_GCM_SHA384,TLS_CHACHA20_POLY1305_SHA256,TLS_AES_128_CCM_SHA256,TLS_AES_128_CCM_8_SHA256,ECC-SM4-SM3, ECDHE-SM4-SM3
 
         :param ciphers: The ciphers of this CreateSecurityPolicyOption.
-        :type: list[str]
+        :type ciphers: list[str]
         """
         self._ciphers = ciphers
 

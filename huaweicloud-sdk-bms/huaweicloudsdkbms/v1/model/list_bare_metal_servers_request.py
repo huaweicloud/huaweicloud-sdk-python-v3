@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListBareMetalServersRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class ListBareMetalServersRequest:
     }
 
     def __init__(self, flavor=None, name=None, status=None, limit=None, offset=None, tags=None, reservation_id=None, detail=None, enterprise_project_id=None):
-        """ListBareMetalServersRequest - a model defined in huaweicloud sdk"""
+        """ListBareMetalServersRequest
+
+        The model defined in huaweicloud sdk
+
+        :param flavor: 裸金属服务器规格ID
+        :type flavor: str
+        :param name: 裸金属服务器名称
+        :type name: str
+        :param status: 裸金属服务器状态,只有管理员可以使用DELETED状态过滤查询已经删除的裸金属服务器。取值范围：ACTIVE、BUILD、DELETED、ERROR、HARD_REBOOT、REBOOT、REBUILD、SHUTOFF
+        :type status: str
+        :param limit: 每页返回裸金属服务器的条数，默认值是25，最大值为1000。limit为每页返回裸金属服务器详情的条数
+        :type limit: int
+        :param offset: 此接口为分页查询接口:不传offset参数，返回结果是符合条件的裸金属服务器总条数,servers列表为空。传offset参数，offset为查询页码，起始页码为1，每页查询的条数为limit值。此接口为分页查询接口，offset为查询页码（起始页码为1），返回值包括总条数和裸金属详情列表传入offset：按limit值分页（limit默认为1000），返回第offset页裸金属服务器详情列表和总条数，总条数最大值为limit，不足按实际情况返回。不传入offset传入limit ：返回裸金属服务器详情列表和总条数，总条数最大值为limit，不足按实际情况返回。。不传入limit：按25条分页，返回第1页裸金属服务器详情列表，总条数最大值为25，不足按实际情况返回。
+        :type offset: int
+        :param tags: 裸金属服务器标签：__type_baremetal
+        :type tags: str
+        :param reservation_id: 批量创建裸金属服务器时，指定返回的ID，用于查询本次批量创建的裸金属服务器
+        :type reservation_id: str
+        :param detail: 查询裸金属服务器结果的详细级别，级别越高，查询到的裸金属服务器信息越多，默认为4。可使用的级别为 1，2，3，4，5
+        :type detail: str
+        :param enterprise_project_id: 查询绑定某个企业项目的裸金属服务器
+        :type enterprise_project_id: str
+        """
         
         
 
@@ -98,7 +119,7 @@ class ListBareMetalServersRequest:
         裸金属服务器规格ID
 
         :param flavor: The flavor of this ListBareMetalServersRequest.
-        :type: str
+        :type flavor: str
         """
         self._flavor = flavor
 
@@ -120,7 +141,7 @@ class ListBareMetalServersRequest:
         裸金属服务器名称
 
         :param name: The name of this ListBareMetalServersRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -142,7 +163,7 @@ class ListBareMetalServersRequest:
         裸金属服务器状态,只有管理员可以使用DELETED状态过滤查询已经删除的裸金属服务器。取值范围：ACTIVE、BUILD、DELETED、ERROR、HARD_REBOOT、REBOOT、REBUILD、SHUTOFF
 
         :param status: The status of this ListBareMetalServersRequest.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -164,7 +185,7 @@ class ListBareMetalServersRequest:
         每页返回裸金属服务器的条数，默认值是25，最大值为1000。limit为每页返回裸金属服务器详情的条数
 
         :param limit: The limit of this ListBareMetalServersRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -186,7 +207,7 @@ class ListBareMetalServersRequest:
         此接口为分页查询接口:不传offset参数，返回结果是符合条件的裸金属服务器总条数,servers列表为空。传offset参数，offset为查询页码，起始页码为1，每页查询的条数为limit值。此接口为分页查询接口，offset为查询页码（起始页码为1），返回值包括总条数和裸金属详情列表传入offset：按limit值分页（limit默认为1000），返回第offset页裸金属服务器详情列表和总条数，总条数最大值为limit，不足按实际情况返回。不传入offset传入limit ：返回裸金属服务器详情列表和总条数，总条数最大值为limit，不足按实际情况返回。。不传入limit：按25条分页，返回第1页裸金属服务器详情列表，总条数最大值为25，不足按实际情况返回。
 
         :param offset: The offset of this ListBareMetalServersRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -208,7 +229,7 @@ class ListBareMetalServersRequest:
         裸金属服务器标签：__type_baremetal
 
         :param tags: The tags of this ListBareMetalServersRequest.
-        :type: str
+        :type tags: str
         """
         self._tags = tags
 
@@ -230,7 +251,7 @@ class ListBareMetalServersRequest:
         批量创建裸金属服务器时，指定返回的ID，用于查询本次批量创建的裸金属服务器
 
         :param reservation_id: The reservation_id of this ListBareMetalServersRequest.
-        :type: str
+        :type reservation_id: str
         """
         self._reservation_id = reservation_id
 
@@ -252,7 +273,7 @@ class ListBareMetalServersRequest:
         查询裸金属服务器结果的详细级别，级别越高，查询到的裸金属服务器信息越多，默认为4。可使用的级别为 1，2，3，4，5
 
         :param detail: The detail of this ListBareMetalServersRequest.
-        :type: str
+        :type detail: str
         """
         self._detail = detail
 
@@ -274,7 +295,7 @@ class ListBareMetalServersRequest:
         查询绑定某个企业项目的裸金属服务器
 
         :param enterprise_project_id: The enterprise_project_id of this ListBareMetalServersRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 

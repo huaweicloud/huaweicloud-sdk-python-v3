@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Cert:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class Cert:
     }
 
     def __init__(self, name=None, description=None, type=None):
-        """Cert - a model defined in huaweicloud sdk"""
+        """Cert
+
+        The model defined in huaweicloud sdk
+
+        :param name: 证书名称
+        :type name: str
+        :param description: 证书描述，最大长度255，不允许^ ~ # $ % &amp; * &lt; &gt; ( ) [ ] { } &#39; \&quot; \\
+        :type description: str
+        :param type: 证书类型，包含： - application：应用证书 - device：设备证书
+        :type type: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class Cert:
         证书名称
 
         :param name: The name of this Cert.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -88,7 +97,7 @@ class Cert:
         证书描述，最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
         :param description: The description of this Cert.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -110,7 +119,7 @@ class Cert:
         证书类型，包含： - application：应用证书 - device：设备证书
 
         :param type: The type of this Cert.
-        :type: str
+        :type type: str
         """
         self._type = type
 

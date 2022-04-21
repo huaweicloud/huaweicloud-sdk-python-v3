@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowMqsInstanceMessagesRespMessages:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class ShowMqsInstanceMessagesRespMessages:
     }
 
     def __init__(self, topic=None, partition=None, key=None, value=None, size=None, timestamp=None, huge_message=None, message_offset=None, message_id=None, app_id=None, tag=None):
-        """ShowMqsInstanceMessagesRespMessages - a model defined in huaweicloud sdk"""
+        """ShowMqsInstanceMessagesRespMessages
+
+        The model defined in huaweicloud sdk
+
+        :param topic: topic名称。
+        :type topic: str
+        :param partition: 消息所在的分区。
+        :type partition: int
+        :param key: 消息key。
+        :type key: str
+        :param value: 消息内容。
+        :type value: str
+        :param size: 消息大小。
+        :type size: int
+        :param timestamp: topic名称。
+        :type timestamp: int
+        :param huge_message: 大数据标识。
+        :type huge_message: bool
+        :param message_offset: 消息偏移量。
+        :type message_offset: int
+        :param message_id: 消息ID。
+        :type message_id: str
+        :param app_id: 应用ID。
+        :type app_id: str
+        :param tag: 消息标签。
+        :type tag: str
+        """
         
         
 
@@ -108,7 +133,7 @@ class ShowMqsInstanceMessagesRespMessages:
         topic名称。
 
         :param topic: The topic of this ShowMqsInstanceMessagesRespMessages.
-        :type: str
+        :type topic: str
         """
         self._topic = topic
 
@@ -130,7 +155,7 @@ class ShowMqsInstanceMessagesRespMessages:
         消息所在的分区。
 
         :param partition: The partition of this ShowMqsInstanceMessagesRespMessages.
-        :type: int
+        :type partition: int
         """
         self._partition = partition
 
@@ -152,7 +177,7 @@ class ShowMqsInstanceMessagesRespMessages:
         消息key。
 
         :param key: The key of this ShowMqsInstanceMessagesRespMessages.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -174,7 +199,7 @@ class ShowMqsInstanceMessagesRespMessages:
         消息内容。
 
         :param value: The value of this ShowMqsInstanceMessagesRespMessages.
-        :type: str
+        :type value: str
         """
         self._value = value
 
@@ -196,7 +221,7 @@ class ShowMqsInstanceMessagesRespMessages:
         消息大小。
 
         :param size: The size of this ShowMqsInstanceMessagesRespMessages.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -218,7 +243,7 @@ class ShowMqsInstanceMessagesRespMessages:
         topic名称。
 
         :param timestamp: The timestamp of this ShowMqsInstanceMessagesRespMessages.
-        :type: int
+        :type timestamp: int
         """
         self._timestamp = timestamp
 
@@ -240,7 +265,7 @@ class ShowMqsInstanceMessagesRespMessages:
         大数据标识。
 
         :param huge_message: The huge_message of this ShowMqsInstanceMessagesRespMessages.
-        :type: bool
+        :type huge_message: bool
         """
         self._huge_message = huge_message
 
@@ -262,7 +287,7 @@ class ShowMqsInstanceMessagesRespMessages:
         消息偏移量。
 
         :param message_offset: The message_offset of this ShowMqsInstanceMessagesRespMessages.
-        :type: int
+        :type message_offset: int
         """
         self._message_offset = message_offset
 
@@ -284,7 +309,7 @@ class ShowMqsInstanceMessagesRespMessages:
         消息ID。
 
         :param message_id: The message_id of this ShowMqsInstanceMessagesRespMessages.
-        :type: str
+        :type message_id: str
         """
         self._message_id = message_id
 
@@ -306,7 +331,7 @@ class ShowMqsInstanceMessagesRespMessages:
         应用ID。
 
         :param app_id: The app_id of this ShowMqsInstanceMessagesRespMessages.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -328,7 +353,7 @@ class ShowMqsInstanceMessagesRespMessages:
         消息标签。
 
         :param tag: The tag of this ShowMqsInstanceMessagesRespMessages.
-        :type: str
+        :type tag: str
         """
         self._tag = tag
 

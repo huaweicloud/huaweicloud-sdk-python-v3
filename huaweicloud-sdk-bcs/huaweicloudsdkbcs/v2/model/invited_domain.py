@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InvitedDomain:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class InvitedDomain:
     }
 
     def __init__(self, invited_user=None):
-        """InvitedDomain - a model defined in huaweicloud sdk"""
+        """InvitedDomain
+
+        The model defined in huaweicloud sdk
+
+        :param invited_user: 被邀请方租户
+        :type invited_user: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class InvitedDomain:
         被邀请方租户
 
         :param invited_user: The invited_user of this InvitedDomain.
-        :type: str
+        :type invited_user: str
         """
         self._invited_user = invited_user
 

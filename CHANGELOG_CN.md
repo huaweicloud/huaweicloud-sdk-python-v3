@@ -1,3 +1,72 @@
+# 3.0.85 2022-04-21
+
+### HuaweiCloud SDK AS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateScalingGroup`新增请求参数 `iam_agency_name`
+  - 接口`ListScalingGroups`新增响应参数 `iam_agency_name`
+  - 接口`UpdateScalingGroup`新增请求参数 `iam_agency_name`
+  - 接口`ShowScalingGroup`新增响应参数 `iam_agency_name`
+
+### HuaweiCloud SDK BSS
+
+- _新增特性_
+  - 支持接口`ListConsumeSubCustomers`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListCustomerBillsMonthlyBreakDown`新增响应参数 `sub_service_type_code`、`sub_service_type_name`、`sub_resource_type_code`、`sub_resource_type_name`、`sub_resource_id`、`sub_resource_name`
+
+### HuaweiCloud SDK CloudDeploy
+
+- _新增特性_
+  - 支持接口`ListDeployTasks`、`ListDeployTaskHistoryByDate`、`ShowProjectSuccessRate`、`ListTaskSuccessRate`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DCS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShowInstance`新增响应参数 `domain_name_info`
+
+### HuaweiCloud SDK DWS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListClusters`新增响应参数 `tags`
+  - 接口`ListSnapshotDetails`移除响应参数 `cluster_id`、`size`、`name`、`description`、`finished`、`started`、`id`、`type`、`status`
+
+### HuaweiCloud SDK IES
+
+- _新增特性_
+  - 支持智能边缘小站服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`RestoreToExistingInstance`移除请求参数`restore_all_database`
+
 # 3.0.84 2022-04-14
 
 ### HuaweiCloud SDK Core

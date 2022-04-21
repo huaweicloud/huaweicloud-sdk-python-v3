@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateSecretStageRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateSecretStageRequestBody:
     }
 
     def __init__(self, version_id=None):
-        """UpdateSecretStageRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateSecretStageRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param version_id: 凭据的版本号标识符。 
+        :type version_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class UpdateSecretStageRequestBody:
         凭据的版本号标识符。 
 
         :param version_id: The version_id of this UpdateSecretStageRequestBody.
-        :type: str
+        :type version_id: str
         """
         self._version_id = version_id
 

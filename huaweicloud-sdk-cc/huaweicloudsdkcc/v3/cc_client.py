@@ -52,21 +52,17 @@ class CcClient(Client):
         """创建云连接实例
 
         创建云连接实例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateCloudConnectionRequest request
-        :return: CreateCloudConnectionResponse
+        :param request: Request instance for CreateCloudConnection
+        :type request: :class:`huaweicloudsdkcc.v3.CreateCloudConnectionRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.CreateCloudConnectionResponse`
         """
         return self.create_cloud_connection_with_http_info(request)
 
     def create_cloud_connection_with_http_info(self, request):
-        """创建云连接实例
-
-        创建云连接实例。
-
-        :param CreateCloudConnectionRequest request
-        :return: CreateCloudConnectionResponse
-        """
-
         all_params = ['create_cloud_connection_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -110,26 +106,21 @@ class CcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_network_instance(self, request):
         """创建网络实例
 
         创建网络实例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateNetworkInstanceRequest request
-        :return: CreateNetworkInstanceResponse
+        :param request: Request instance for CreateNetworkInstance
+        :type request: :class:`huaweicloudsdkcc.v3.CreateNetworkInstanceRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.CreateNetworkInstanceResponse`
         """
         return self.create_network_instance_with_http_info(request)
 
     def create_network_instance_with_http_info(self, request):
-        """创建网络实例
-
-        创建网络实例。
-
-        :param CreateNetworkInstanceRequest request
-        :return: CreateNetworkInstanceResponse
-        """
-
         all_params = ['create_network_instance_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -173,26 +164,21 @@ class CcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_cloud_connection(self, request):
         """删除云连接实例
 
         删除云连接实例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteCloudConnectionRequest request
-        :return: DeleteCloudConnectionResponse
+        :param request: Request instance for DeleteCloudConnection
+        :type request: :class:`huaweicloudsdkcc.v3.DeleteCloudConnectionRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.DeleteCloudConnectionResponse`
         """
         return self.delete_cloud_connection_with_http_info(request)
 
     def delete_cloud_connection_with_http_info(self, request):
-        """删除云连接实例
-
-        删除云连接实例。
-
-        :param DeleteCloudConnectionRequest request
-        :return: DeleteCloudConnectionResponse
-        """
-
         all_params = ['id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -236,26 +222,21 @@ class CcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_network_instance(self, request):
         """删除网络实例
 
         删除网络实例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteNetworkInstanceRequest request
-        :return: DeleteNetworkInstanceResponse
+        :param request: Request instance for DeleteNetworkInstance
+        :type request: :class:`huaweicloudsdkcc.v3.DeleteNetworkInstanceRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.DeleteNetworkInstanceResponse`
         """
         return self.delete_network_instance_with_http_info(request)
 
     def delete_network_instance_with_http_info(self, request):
-        """删除网络实例
-
-        删除网络实例。
-
-        :param DeleteNetworkInstanceRequest request
-        :return: DeleteNetworkInstanceResponse
-        """
-
         all_params = ['id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -299,26 +280,22 @@ class CcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_cloud_connection_routes(self, request):
         """查询云连接路由条目列表
 
-        查询云连接路由条目列表。 分页查询使用的参数为marker、limit。marker和limit一起使用时才会生效，单独使用无效。
+        查询云连接路由条目列表。
+        分页查询使用的参数为marker、limit。marker和limit一起使用时才会生效，单独使用无效。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListCloudConnectionRoutesRequest request
-        :return: ListCloudConnectionRoutesResponse
+        :param request: Request instance for ListCloudConnectionRoutes
+        :type request: :class:`huaweicloudsdkcc.v3.ListCloudConnectionRoutesRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.ListCloudConnectionRoutesResponse`
         """
         return self.list_cloud_connection_routes_with_http_info(request)
 
     def list_cloud_connection_routes_with_http_info(self, request):
-        """查询云连接路由条目列表
-
-        查询云连接路由条目列表。 分页查询使用的参数为marker、limit。marker和limit一起使用时才会生效，单独使用无效。
-
-        :param ListCloudConnectionRoutesRequest request
-        :return: ListCloudConnectionRoutesResponse
-        """
-
         all_params = ['limit', 'marker', 'id', 'cloud_connection_id', 'instance_id', 'region_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -374,26 +351,22 @@ class CcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_cloud_connections(self, request):
         """查询云连接列表
 
-        查询云连接列表。 分页查询使用的参数为marker、limit。marker和limit一起使用时才会生效，单独使用无效。
+        查询云连接列表。
+        分页查询使用的参数为marker、limit。marker和limit一起使用时才会生效，单独使用无效。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListCloudConnectionsRequest request
-        :return: ListCloudConnectionsResponse
+        :param request: Request instance for ListCloudConnections
+        :type request: :class:`huaweicloudsdkcc.v3.ListCloudConnectionsRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.ListCloudConnectionsResponse`
         """
         return self.list_cloud_connections_with_http_info(request)
 
     def list_cloud_connections_with_http_info(self, request):
-        """查询云连接列表
-
-        查询云连接列表。 分页查询使用的参数为marker、limit。marker和limit一起使用时才会生效，单独使用无效。
-
-        :param ListCloudConnectionsRequest request
-        :return: ListCloudConnectionsResponse
-        """
-
         all_params = ['limit', 'marker', 'id', 'name', 'description', 'status', 'enterprise_project_id', 'type']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -457,26 +430,22 @@ class CcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_network_instances(self, request):
         """查询网络实例列表
 
-        查询云连接列表。 分页查询使用的参数为marker、limit。marker和limit一起使用时才会生效，单独使用无效。
+        查询云连接列表。
+        分页查询使用的参数为marker、limit。marker和limit一起使用时才会生效，单独使用无效。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListNetworkInstancesRequest request
-        :return: ListNetworkInstancesResponse
+        :param request: Request instance for ListNetworkInstances
+        :type request: :class:`huaweicloudsdkcc.v3.ListNetworkInstancesRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.ListNetworkInstancesResponse`
         """
         return self.list_network_instances_with_http_info(request)
 
     def list_network_instances_with_http_info(self, request):
-        """查询网络实例列表
-
-        查询云连接列表。 分页查询使用的参数为marker、limit。marker和limit一起使用时才会生效，单独使用无效。
-
-        :param ListNetworkInstancesRequest request
-        :return: ListNetworkInstancesResponse
-        """
-
         all_params = ['limit', 'marker', 'id', 'name', 'description', 'status', 'type', 'cloud_connection_id', 'instance_id', 'region_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -546,26 +515,21 @@ class CcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_cloud_connection(self, request):
         """查询云连接实例
 
         查询云连接实例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowCloudConnectionRequest request
-        :return: ShowCloudConnectionResponse
+        :param request: Request instance for ShowCloudConnection
+        :type request: :class:`huaweicloudsdkcc.v3.ShowCloudConnectionRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.ShowCloudConnectionResponse`
         """
         return self.show_cloud_connection_with_http_info(request)
 
     def show_cloud_connection_with_http_info(self, request):
-        """查询云连接实例
-
-        查询云连接实例。
-
-        :param ShowCloudConnectionRequest request
-        :return: ShowCloudConnectionResponse
-        """
-
         all_params = ['id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -609,26 +573,22 @@ class CcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_cloud_connection_routes(self, request):
         """查询云连接路由条目详情
 
-        查询云连接路由条目列表。 分页查询使用的参数为marker、limit。marker和limit一起使用时才会生效，单独使用无效。
+        查询云连接路由条目列表。
+        分页查询使用的参数为marker、limit。marker和limit一起使用时才会生效，单独使用无效。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowCloudConnectionRoutesRequest request
-        :return: ShowCloudConnectionRoutesResponse
+        :param request: Request instance for ShowCloudConnectionRoutes
+        :type request: :class:`huaweicloudsdkcc.v3.ShowCloudConnectionRoutesRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.ShowCloudConnectionRoutesResponse`
         """
         return self.show_cloud_connection_routes_with_http_info(request)
 
     def show_cloud_connection_routes_with_http_info(self, request):
-        """查询云连接路由条目详情
-
-        查询云连接路由条目列表。 分页查询使用的参数为marker、limit。marker和limit一起使用时才会生效，单独使用无效。
-
-        :param ShowCloudConnectionRoutesRequest request
-        :return: ShowCloudConnectionRoutesResponse
-        """
-
         all_params = ['id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -672,26 +632,21 @@ class CcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_network_instance(self, request):
         """查询网络实例
 
         查询网络实例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowNetworkInstanceRequest request
-        :return: ShowNetworkInstanceResponse
+        :param request: Request instance for ShowNetworkInstance
+        :type request: :class:`huaweicloudsdkcc.v3.ShowNetworkInstanceRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.ShowNetworkInstanceResponse`
         """
         return self.show_network_instance_with_http_info(request)
 
     def show_network_instance_with_http_info(self, request):
-        """查询网络实例
-
-        查询网络实例。
-
-        :param ShowNetworkInstanceRequest request
-        :return: ShowNetworkInstanceResponse
-        """
-
         all_params = ['id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -735,26 +690,21 @@ class CcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_cloud_connection(self, request):
         """更新云连接实例
 
         更新云连接实例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateCloudConnectionRequest request
-        :return: UpdateCloudConnectionResponse
+        :param request: Request instance for UpdateCloudConnection
+        :type request: :class:`huaweicloudsdkcc.v3.UpdateCloudConnectionRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.UpdateCloudConnectionResponse`
         """
         return self.update_cloud_connection_with_http_info(request)
 
     def update_cloud_connection_with_http_info(self, request):
-        """更新云连接实例
-
-        更新云连接实例。
-
-        :param UpdateCloudConnectionRequest request
-        :return: UpdateCloudConnectionResponse
-        """
-
         all_params = ['id', 'update_cloud_connection_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -800,26 +750,21 @@ class CcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_network_instance(self, request):
         """更新网络实例
 
         更新网络实例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateNetworkInstanceRequest request
-        :return: UpdateNetworkInstanceResponse
+        :param request: Request instance for UpdateNetworkInstance
+        :type request: :class:`huaweicloudsdkcc.v3.UpdateNetworkInstanceRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.UpdateNetworkInstanceResponse`
         """
         return self.update_network_instance_with_http_info(request)
 
     def update_network_instance_with_http_info(self, request):
-        """更新网络实例
-
-        更新网络实例。
-
-        :param UpdateNetworkInstanceRequest request
-        :return: UpdateNetworkInstanceResponse
-        """
-
         all_params = ['id', 'update_network_instance_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -864,7 +809,6 @@ class CcClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

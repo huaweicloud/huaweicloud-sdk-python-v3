@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Crop:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class Crop:
     }
 
     def __init__(self, duration=None):
-        """Crop - a model defined in huaweicloud sdk"""
+        """Crop
+
+        The model defined in huaweicloud sdk
+
+        :param duration: 截取的视频时长。  单位：秒  从0秒开始算起 
+        :type duration: int
+        """
         
         
 
@@ -58,7 +63,7 @@ class Crop:
         截取的视频时长。  单位：秒  从0秒开始算起 
 
         :param duration: The duration of this Crop.
-        :type: int
+        :type duration: int
         """
         self._duration = duration
 

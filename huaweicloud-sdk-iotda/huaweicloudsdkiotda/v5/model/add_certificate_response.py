@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddCertificateResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class AddCertificateResponse(SdkResponse):
     }
 
     def __init__(self, certificate_id=None, cn_name=None, owner=None, status=None, verify_code=None, create_date=None, effective_date=None, expiry_date=None):
-        """AddCertificateResponse - a model defined in huaweicloud sdk"""
+        """AddCertificateResponse
+
+        The model defined in huaweicloud sdk
+
+        :param certificate_id: 设备CA证书ID，在上传设备CA证书时由平台分配的唯一标识。
+        :type certificate_id: str
+        :param cn_name: CA证书CN名称。
+        :type cn_name: str
+        :param owner: CA证书所有者。
+        :type owner: str
+        :param status: CA证书验证状态。true代表证书已通过验证，可进行设备证书认证接入。false代表证书未通过验证。
+        :type status: bool
+        :param verify_code: CA证书验证码。
+        :type verify_code: str
+        :param create_date: 创建证书日期。格式：yyyyMMdd&#39;T&#39;HHmmss&#39;Z&#39;，如20151212T121212Z。
+        :type create_date: str
+        :param effective_date: CA证书生效日期。格式：yyyyMMdd&#39;T&#39;HHmmss&#39;Z&#39;，如20151212T121212Z。
+        :type effective_date: str
+        :param expiry_date: CA证书失效日期。格式：yyyyMMdd&#39;T&#39;HHmmss&#39;Z&#39;，如20151212T121212Z。
+        :type expiry_date: str
+        """
         
         super(AddCertificateResponse, self).__init__()
 
@@ -93,7 +112,7 @@ class AddCertificateResponse(SdkResponse):
         设备CA证书ID，在上传设备CA证书时由平台分配的唯一标识。
 
         :param certificate_id: The certificate_id of this AddCertificateResponse.
-        :type: str
+        :type certificate_id: str
         """
         self._certificate_id = certificate_id
 
@@ -115,7 +134,7 @@ class AddCertificateResponse(SdkResponse):
         CA证书CN名称。
 
         :param cn_name: The cn_name of this AddCertificateResponse.
-        :type: str
+        :type cn_name: str
         """
         self._cn_name = cn_name
 
@@ -137,7 +156,7 @@ class AddCertificateResponse(SdkResponse):
         CA证书所有者。
 
         :param owner: The owner of this AddCertificateResponse.
-        :type: str
+        :type owner: str
         """
         self._owner = owner
 
@@ -159,7 +178,7 @@ class AddCertificateResponse(SdkResponse):
         CA证书验证状态。true代表证书已通过验证，可进行设备证书认证接入。false代表证书未通过验证。
 
         :param status: The status of this AddCertificateResponse.
-        :type: bool
+        :type status: bool
         """
         self._status = status
 
@@ -181,7 +200,7 @@ class AddCertificateResponse(SdkResponse):
         CA证书验证码。
 
         :param verify_code: The verify_code of this AddCertificateResponse.
-        :type: str
+        :type verify_code: str
         """
         self._verify_code = verify_code
 
@@ -203,7 +222,7 @@ class AddCertificateResponse(SdkResponse):
         创建证书日期。格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
         :param create_date: The create_date of this AddCertificateResponse.
-        :type: str
+        :type create_date: str
         """
         self._create_date = create_date
 
@@ -225,7 +244,7 @@ class AddCertificateResponse(SdkResponse):
         CA证书生效日期。格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
         :param effective_date: The effective_date of this AddCertificateResponse.
-        :type: str
+        :type effective_date: str
         """
         self._effective_date = effective_date
 
@@ -247,7 +266,7 @@ class AddCertificateResponse(SdkResponse):
         CA证书失效日期。格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
         :param expiry_date: The expiry_date of this AddCertificateResponse.
-        :type: str
+        :type expiry_date: str
         """
         self._expiry_date = expiry_date
 

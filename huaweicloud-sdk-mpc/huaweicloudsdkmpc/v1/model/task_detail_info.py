@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TaskDetailInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class TaskDetailInfo:
     }
 
     def __init__(self, task_id=None, status=None, create_time=None, start_time=None, end_time=None, input=None, output=None, user_data=None, error_code=None, description=None, media_detail=None, xcode_error=None):
-        """TaskDetailInfo - a model defined in huaweicloud sdk"""
+        """TaskDetailInfo
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 任务ID。
+        :type task_id: str
+        :param status: 任务执行状态，取值如下。 
+        :type status: str
+        :param create_time: 转码任务启动时间 
+        :type create_time: str
+        :param start_time: 下发xcode任务成功时间 
+        :type start_time: str
+        :param end_time: 转码任务结束时间 
+        :type end_time: str
+        :param input: 
+        :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        :param output: 
+        :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        :param user_data: 用户数据。 
+        :type user_data: str
+        :param error_code: 转码任务错误码。 
+        :type error_code: str
+        :param description: 转码任务描述，当转码出现异常时，此字段为异常的原因。 
+        :type description: str
+        :param media_detail: 
+        :type media_detail: :class:`huaweicloudsdkmpc.v1.MediaDetail`
+        :param xcode_error: 
+        :type xcode_error: :class:`huaweicloudsdkmpc.v1.ErrorResponse`
+        """
         
         
 
@@ -113,7 +140,7 @@ class TaskDetailInfo:
         任务ID。
 
         :param task_id: The task_id of this TaskDetailInfo.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -135,7 +162,7 @@ class TaskDetailInfo:
         任务执行状态，取值如下。 
 
         :param status: The status of this TaskDetailInfo.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -157,7 +184,7 @@ class TaskDetailInfo:
         转码任务启动时间 
 
         :param create_time: The create_time of this TaskDetailInfo.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -179,7 +206,7 @@ class TaskDetailInfo:
         下发xcode任务成功时间 
 
         :param start_time: The start_time of this TaskDetailInfo.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -201,7 +228,7 @@ class TaskDetailInfo:
         转码任务结束时间 
 
         :param end_time: The end_time of this TaskDetailInfo.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -211,7 +238,7 @@ class TaskDetailInfo:
 
 
         :return: The input of this TaskDetailInfo.
-        :rtype: ObsObjInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         return self._input
 
@@ -221,7 +248,7 @@ class TaskDetailInfo:
 
 
         :param input: The input of this TaskDetailInfo.
-        :type: ObsObjInfo
+        :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         self._input = input
 
@@ -231,7 +258,7 @@ class TaskDetailInfo:
 
 
         :return: The output of this TaskDetailInfo.
-        :rtype: ObsObjInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         return self._output
 
@@ -241,7 +268,7 @@ class TaskDetailInfo:
 
 
         :param output: The output of this TaskDetailInfo.
-        :type: ObsObjInfo
+        :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         self._output = output
 
@@ -263,7 +290,7 @@ class TaskDetailInfo:
         用户数据。 
 
         :param user_data: The user_data of this TaskDetailInfo.
-        :type: str
+        :type user_data: str
         """
         self._user_data = user_data
 
@@ -285,7 +312,7 @@ class TaskDetailInfo:
         转码任务错误码。 
 
         :param error_code: The error_code of this TaskDetailInfo.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -307,7 +334,7 @@ class TaskDetailInfo:
         转码任务描述，当转码出现异常时，此字段为异常的原因。 
 
         :param description: The description of this TaskDetailInfo.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -317,7 +344,7 @@ class TaskDetailInfo:
 
 
         :return: The media_detail of this TaskDetailInfo.
-        :rtype: MediaDetail
+        :rtype: :class:`huaweicloudsdkmpc.v1.MediaDetail`
         """
         return self._media_detail
 
@@ -327,7 +354,7 @@ class TaskDetailInfo:
 
 
         :param media_detail: The media_detail of this TaskDetailInfo.
-        :type: MediaDetail
+        :type media_detail: :class:`huaweicloudsdkmpc.v1.MediaDetail`
         """
         self._media_detail = media_detail
 
@@ -337,7 +364,7 @@ class TaskDetailInfo:
 
 
         :return: The xcode_error of this TaskDetailInfo.
-        :rtype: ErrorResponse
+        :rtype: :class:`huaweicloudsdkmpc.v1.ErrorResponse`
         """
         return self._xcode_error
 
@@ -347,7 +374,7 @@ class TaskDetailInfo:
 
 
         :param xcode_error: The xcode_error of this TaskDetailInfo.
-        :type: ErrorResponse
+        :type xcode_error: :class:`huaweicloudsdkmpc.v1.ErrorResponse`
         """
         self._xcode_error = xcode_error
 

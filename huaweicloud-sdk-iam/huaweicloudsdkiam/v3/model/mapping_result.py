@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MappingResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class MappingResult:
     }
 
     def __init__(self, id=None, links=None, rules=None):
-        """MappingResult - a model defined in huaweicloud sdk"""
+        """MappingResult
+
+        The model defined in huaweicloud sdk
+
+        :param id: 映射ID。
+        :type id: str
+        :param links: 
+        :type links: :class:`huaweicloudsdkiam.v3.LinksSelf`
+        :param rules: 将联邦用户映射为本地用户的规则列表。
+        :type rules: list[:class:`huaweicloudsdkiam.v3.MappingRules`]
+        """
         
         
 
@@ -65,7 +74,7 @@ class MappingResult:
         映射ID。
 
         :param id: The id of this MappingResult.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -75,7 +84,7 @@ class MappingResult:
 
 
         :return: The links of this MappingResult.
-        :rtype: LinksSelf
+        :rtype: :class:`huaweicloudsdkiam.v3.LinksSelf`
         """
         return self._links
 
@@ -85,7 +94,7 @@ class MappingResult:
 
 
         :param links: The links of this MappingResult.
-        :type: LinksSelf
+        :type links: :class:`huaweicloudsdkiam.v3.LinksSelf`
         """
         self._links = links
 
@@ -96,7 +105,7 @@ class MappingResult:
         将联邦用户映射为本地用户的规则列表。
 
         :return: The rules of this MappingResult.
-        :rtype: list[MappingRules]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.MappingRules`]
         """
         return self._rules
 
@@ -107,7 +116,7 @@ class MappingResult:
         将联邦用户映射为本地用户的规则列表。
 
         :param rules: The rules of this MappingResult.
-        :type: list[MappingRules]
+        :type rules: list[:class:`huaweicloudsdkiam.v3.MappingRules`]
         """
         self._rules = rules
 

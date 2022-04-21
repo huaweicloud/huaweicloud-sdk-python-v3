@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAnimatedGraphicsTaskResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListAnimatedGraphicsTaskResponse(SdkResponse):
     }
 
     def __init__(self, total=None, tasks=None):
-        """ListAnimatedGraphicsTaskResponse - a model defined in huaweicloud sdk"""
+        """ListAnimatedGraphicsTaskResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 任务总数
+        :type total: int
+        :param tasks: 任务列表
+        :type tasks: list[:class:`huaweicloudsdkmpc.v1.AnimatedGraphicsTask`]
+        """
         
         super(ListAnimatedGraphicsTaskResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListAnimatedGraphicsTaskResponse(SdkResponse):
         任务总数
 
         :param total: The total of this ListAnimatedGraphicsTaskResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -74,7 +81,7 @@ class ListAnimatedGraphicsTaskResponse(SdkResponse):
         任务列表
 
         :return: The tasks of this ListAnimatedGraphicsTaskResponse.
-        :rtype: list[AnimatedGraphicsTask]
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.AnimatedGraphicsTask`]
         """
         return self._tasks
 
@@ -85,7 +92,7 @@ class ListAnimatedGraphicsTaskResponse(SdkResponse):
         任务列表
 
         :param tasks: The tasks of this ListAnimatedGraphicsTaskResponse.
-        :type: list[AnimatedGraphicsTask]
+        :type tasks: list[:class:`huaweicloudsdkmpc.v1.AnimatedGraphicsTask`]
         """
         self._tasks = tasks
 

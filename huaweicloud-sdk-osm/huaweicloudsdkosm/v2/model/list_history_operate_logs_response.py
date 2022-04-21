@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListHistoryOperateLogsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListHistoryOperateLogsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, ops_list=None):
-        """ListHistoryOperateLogsResponse - a model defined in huaweicloud sdk"""
+        """ListHistoryOperateLogsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total_count: 总记录数
+        :type total_count: int
+        :param ops_list: 操作列表
+        :type ops_list: list[:class:`huaweicloudsdkosm.v2.OperateLog`]
+        """
         
         super(ListHistoryOperateLogsResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListHistoryOperateLogsResponse(SdkResponse):
         总记录数
 
         :param total_count: The total_count of this ListHistoryOperateLogsResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 
@@ -74,7 +81,7 @@ class ListHistoryOperateLogsResponse(SdkResponse):
         操作列表
 
         :return: The ops_list of this ListHistoryOperateLogsResponse.
-        :rtype: list[OperateLog]
+        :rtype: list[:class:`huaweicloudsdkosm.v2.OperateLog`]
         """
         return self._ops_list
 
@@ -85,7 +92,7 @@ class ListHistoryOperateLogsResponse(SdkResponse):
         操作列表
 
         :param ops_list: The ops_list of this ListHistoryOperateLogsResponse.
-        :type: list[OperateLog]
+        :type ops_list: list[:class:`huaweicloudsdkosm.v2.OperateLog`]
         """
         self._ops_list = ops_list
 

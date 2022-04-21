@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Disk:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class Disk:
     }
 
     def __init__(self, name=None, partition_style=None, device_use=None, size=None, used_size=None, physical_volumes=None, disk_id=None, os_disk=None, relation_name=None):
-        """Disk - a model defined in huaweicloud sdk"""
+        """Disk
+
+        The model defined in huaweicloud sdk
+
+        :param name: 磁盘名称
+        :type name: str
+        :param partition_style: 磁盘的分区类型，添加源端时源端磁盘必选
+        :type partition_style: str
+        :param device_use: 磁盘类型
+        :type device_use: str
+        :param size: 磁盘总大小，以字节为单位
+        :type size: int
+        :param used_size: 磁盘已使用大小，以字节为单位
+        :type used_size: int
+        :param physical_volumes: 磁盘上的物理分区信息
+        :type physical_volumes: list[:class:`huaweicloudsdksms.v3.PhysicalVolumes`]
+        :param disk_id: 创建任务时，如果选择已有虚拟机，此参数必选
+        :type disk_id: str
+        :param os_disk: 是否为系统盘
+        :type os_disk: bool
+        :param relation_name: Linux系统 目的端ECS中与源端关联的磁盘名称
+        :type relation_name: str
+        """
         
         
 
@@ -93,7 +114,7 @@ class Disk:
         磁盘名称
 
         :param name: The name of this Disk.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -115,7 +136,7 @@ class Disk:
         磁盘的分区类型，添加源端时源端磁盘必选
 
         :param partition_style: The partition_style of this Disk.
-        :type: str
+        :type partition_style: str
         """
         self._partition_style = partition_style
 
@@ -137,7 +158,7 @@ class Disk:
         磁盘类型
 
         :param device_use: The device_use of this Disk.
-        :type: str
+        :type device_use: str
         """
         self._device_use = device_use
 
@@ -159,7 +180,7 @@ class Disk:
         磁盘总大小，以字节为单位
 
         :param size: The size of this Disk.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -181,7 +202,7 @@ class Disk:
         磁盘已使用大小，以字节为单位
 
         :param used_size: The used_size of this Disk.
-        :type: int
+        :type used_size: int
         """
         self._used_size = used_size
 
@@ -192,7 +213,7 @@ class Disk:
         磁盘上的物理分区信息
 
         :return: The physical_volumes of this Disk.
-        :rtype: list[PhysicalVolumes]
+        :rtype: list[:class:`huaweicloudsdksms.v3.PhysicalVolumes`]
         """
         return self._physical_volumes
 
@@ -203,7 +224,7 @@ class Disk:
         磁盘上的物理分区信息
 
         :param physical_volumes: The physical_volumes of this Disk.
-        :type: list[PhysicalVolumes]
+        :type physical_volumes: list[:class:`huaweicloudsdksms.v3.PhysicalVolumes`]
         """
         self._physical_volumes = physical_volumes
 
@@ -225,7 +246,7 @@ class Disk:
         创建任务时，如果选择已有虚拟机，此参数必选
 
         :param disk_id: The disk_id of this Disk.
-        :type: str
+        :type disk_id: str
         """
         self._disk_id = disk_id
 
@@ -247,7 +268,7 @@ class Disk:
         是否为系统盘
 
         :param os_disk: The os_disk of this Disk.
-        :type: bool
+        :type os_disk: bool
         """
         self._os_disk = os_disk
 
@@ -269,7 +290,7 @@ class Disk:
         Linux系统 目的端ECS中与源端关联的磁盘名称
 
         :param relation_name: The relation_name of this Disk.
-        :type: str
+        :type relation_name: str
         """
         self._relation_name = relation_name
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAssetsNewResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListAssetsNewResponse(SdkResponse):
     }
 
     def __init__(self, count=None, assets=None):
-        """ListAssetsNewResponse - a model defined in huaweicloud sdk"""
+        """ListAssetsNewResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 总数
+        :type count: int
+        :param assets: 资产集，数量不超过limit
+        :type assets: list[:class:`huaweicloudsdkiotanalytics.v1.AssetResponse`]
+        """
         
         super(ListAssetsNewResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListAssetsNewResponse(SdkResponse):
         总数
 
         :param count: The count of this ListAssetsNewResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -74,7 +81,7 @@ class ListAssetsNewResponse(SdkResponse):
         资产集，数量不超过limit
 
         :return: The assets of this ListAssetsNewResponse.
-        :rtype: list[AssetResponse]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.AssetResponse`]
         """
         return self._assets
 
@@ -85,7 +92,7 @@ class ListAssetsNewResponse(SdkResponse):
         资产集，数量不超过limit
 
         :param assets: The assets of this ListAssetsNewResponse.
-        :type: list[AssetResponse]
+        :type assets: list[:class:`huaweicloudsdkiotanalytics.v1.AssetResponse`]
         """
         self._assets = assets
 

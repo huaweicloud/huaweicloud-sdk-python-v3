@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowRedirectUrlRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowRedirectUrlRequest:
     }
 
     def __init__(self, repo_type=None, tag=None):
-        """ShowRedirectUrlRequest - a model defined in huaweicloud sdk"""
+        """ShowRedirectUrlRequest
+
+        The model defined in huaweicloud sdk
+
+        :param repo_type: 仓库类型。 取值范围：github、gitlab、gitee、bitbucket。
+        :type repo_type: str
+        :param tag: 站点标签。 比如国际站的，?tag&#x3D;intl。 默认为空。
+        :type tag: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ShowRedirectUrlRequest:
         仓库类型。 取值范围：github、gitlab、gitee、bitbucket。
 
         :param repo_type: The repo_type of this ShowRedirectUrlRequest.
-        :type: str
+        :type repo_type: str
         """
         self._repo_type = repo_type
 
@@ -84,7 +91,7 @@ class ShowRedirectUrlRequest:
         站点标签。 比如国际站的，?tag=intl。 默认为空。
 
         :param tag: The tag of this ShowRedirectUrlRequest.
-        :type: str
+        :type tag: str
         """
         self._tag = tag
 

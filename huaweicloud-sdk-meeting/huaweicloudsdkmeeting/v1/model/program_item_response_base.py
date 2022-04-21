@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ProgramItemResponseBase:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ProgramItemResponseBase:
     }
 
     def __init__(self, material_id=None, material_name=None, file_path=None, play_time=None):
-        """ProgramItemResponseBase - a model defined in huaweicloud sdk"""
+        """ProgramItemResponseBase
+
+        The model defined in huaweicloud sdk
+
+        :param material_id: 素材ID
+        :type material_id: str
+        :param material_name: 素材名称
+        :type material_name: str
+        :param file_path: 素材云盘文件下载路径
+        :type file_path: str
+        :param play_time: 播放时长
+        :type play_time: int
+        """
         
         
 
@@ -73,7 +84,7 @@ class ProgramItemResponseBase:
         素材ID
 
         :param material_id: The material_id of this ProgramItemResponseBase.
-        :type: str
+        :type material_id: str
         """
         self._material_id = material_id
 
@@ -95,7 +106,7 @@ class ProgramItemResponseBase:
         素材名称
 
         :param material_name: The material_name of this ProgramItemResponseBase.
-        :type: str
+        :type material_name: str
         """
         self._material_name = material_name
 
@@ -117,7 +128,7 @@ class ProgramItemResponseBase:
         素材云盘文件下载路径
 
         :param file_path: The file_path of this ProgramItemResponseBase.
-        :type: str
+        :type file_path: str
         """
         self._file_path = file_path
 
@@ -139,7 +150,7 @@ class ProgramItemResponseBase:
         播放时长
 
         :param play_time: The play_time of this ProgramItemResponseBase.
-        :type: int
+        :type play_time: int
         """
         self._play_time = play_time
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTablesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListTablesRequest:
     }
 
     def __init__(self, keyword=None, tag=None, offset=None, limit=None, order_by=None, order=None):
-        """ListTablesRequest - a model defined in huaweicloud sdk"""
+        """ListTablesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param keyword: 过滤表名称的关键词。
+        :type keyword: str
+        :param tag: 过滤标签的关键字
+        :type tag: str
+        :param offset: 当前偏移量，默认为0。
+        :type offset: int
+        :param limit: 每页显示的最大作业个数，范围: [1, 100]。默认值：10。
+        :type limit: int
+        :param order_by: 指定作业排序字段，默认为created_time（作业创建时间），支持created_time(作业创建时间)、modified_time（作业更新时间） 、job_name（作业名称）三种排序字段。
+        :type order_by: str
+        :param order: 指定作业排序的升降序，默认为desc（降序），支持asc（升序）、desc（降序）两种排序方式。
+        :type order: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class ListTablesRequest:
         过滤表名称的关键词。
 
         :param keyword: The keyword of this ListTablesRequest.
-        :type: str
+        :type keyword: str
         """
         self._keyword = keyword
 
@@ -105,7 +120,7 @@ class ListTablesRequest:
         过滤标签的关键字
 
         :param tag: The tag of this ListTablesRequest.
-        :type: str
+        :type tag: str
         """
         self._tag = tag
 
@@ -127,7 +142,7 @@ class ListTablesRequest:
         当前偏移量，默认为0。
 
         :param offset: The offset of this ListTablesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -149,7 +164,7 @@ class ListTablesRequest:
         每页显示的最大作业个数，范围: [1, 100]。默认值：10。
 
         :param limit: The limit of this ListTablesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -171,7 +186,7 @@ class ListTablesRequest:
         指定作业排序字段，默认为created_time（作业创建时间），支持created_time(作业创建时间)、modified_time（作业更新时间） 、job_name（作业名称）三种排序字段。
 
         :param order_by: The order_by of this ListTablesRequest.
-        :type: str
+        :type order_by: str
         """
         self._order_by = order_by
 
@@ -193,7 +208,7 @@ class ListTablesRequest:
         指定作业排序的升降序，默认为desc（降序），支持asc（升序）、desc（降序）两种排序方式。
 
         :param order: The order of this ListTablesRequest.
-        :type: str
+        :type order: str
         """
         self._order = order
 

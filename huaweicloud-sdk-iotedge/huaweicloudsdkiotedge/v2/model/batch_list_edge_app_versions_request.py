@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchListEdgeAppVersionsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class BatchListEdgeAppVersionsRequest:
     }
 
     def __init__(self, edge_app_id=None, version=None, offset=None, limit=None, ai_card_type=None, arch=None, state=None):
-        """BatchListEdgeAppVersionsRequest - a model defined in huaweicloud sdk"""
+        """BatchListEdgeAppVersionsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param edge_app_id: 应用版本,应用内版本唯一。
+        :type edge_app_id: str
+        :param version: 应用版本搜索关键字
+        :type version: str
+        :param offset: 查询的起始位置，取值范围为非负整数，默认为0
+        :type offset: int
+        :param limit: 每页记录数，默认值为10，取值区间为1-1000
+        :type limit: int
+        :param ai_card_type: ai加速卡类型
+        :type ai_card_type: str
+        :param arch: 支持架构
+        :type arch: str
+        :param state: 应用版本状态
+        :type state: str
+        """
         
         
 
@@ -87,7 +104,7 @@ class BatchListEdgeAppVersionsRequest:
         应用版本,应用内版本唯一。
 
         :param edge_app_id: The edge_app_id of this BatchListEdgeAppVersionsRequest.
-        :type: str
+        :type edge_app_id: str
         """
         self._edge_app_id = edge_app_id
 
@@ -109,7 +126,7 @@ class BatchListEdgeAppVersionsRequest:
         应用版本搜索关键字
 
         :param version: The version of this BatchListEdgeAppVersionsRequest.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -131,7 +148,7 @@ class BatchListEdgeAppVersionsRequest:
         查询的起始位置，取值范围为非负整数，默认为0
 
         :param offset: The offset of this BatchListEdgeAppVersionsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -153,7 +170,7 @@ class BatchListEdgeAppVersionsRequest:
         每页记录数，默认值为10，取值区间为1-1000
 
         :param limit: The limit of this BatchListEdgeAppVersionsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -175,7 +192,7 @@ class BatchListEdgeAppVersionsRequest:
         ai加速卡类型
 
         :param ai_card_type: The ai_card_type of this BatchListEdgeAppVersionsRequest.
-        :type: str
+        :type ai_card_type: str
         """
         self._ai_card_type = ai_card_type
 
@@ -197,7 +214,7 @@ class BatchListEdgeAppVersionsRequest:
         支持架构
 
         :param arch: The arch of this BatchListEdgeAppVersionsRequest.
-        :type: str
+        :type arch: str
         """
         self._arch = arch
 
@@ -219,7 +236,7 @@ class BatchListEdgeAppVersionsRequest:
         应用版本状态
 
         :param state: The state of this BatchListEdgeAppVersionsRequest.
-        :type: str
+        :type state: str
         """
         self._state = state
 

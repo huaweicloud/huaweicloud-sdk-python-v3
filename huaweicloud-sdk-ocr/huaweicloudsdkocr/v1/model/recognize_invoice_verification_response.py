@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RecognizeInvoiceVerificationResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RecognizeInvoiceVerificationResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """RecognizeInvoiceVerificationResponse - a model defined in huaweicloud sdk"""
+        """RecognizeInvoiceVerificationResponse
+
+        The model defined in huaweicloud sdk
+
+        :param result: 调用成功时表示调用结果，详情参见[响应参数](https://support.huaweicloud.com/api-ocr/ocr_03_0134.html#ocr_03_0134__table266mcpsimp)。  调用失败时无此字段。 
+        :type result: object
+        """
         
         super(RecognizeInvoiceVerificationResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class RecognizeInvoiceVerificationResponse(SdkResponse):
         调用成功时表示调用结果，详情参见[响应参数](https://support.huaweicloud.com/api-ocr/ocr_03_0134.html#ocr_03_0134__table266mcpsimp)。  调用失败时无此字段。 
 
         :param result: The result of this RecognizeInvoiceVerificationResponse.
-        :type: object
+        :type result: object
         """
         self._result = result
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchRemoveOrgsFromChannelResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchRemoveOrgsFromChannelResponse(SdkResponse):
     }
 
     def __init__(self, operation_id=None):
-        """BatchRemoveOrgsFromChannelResponse - a model defined in huaweicloud sdk"""
+        """BatchRemoveOrgsFromChannelResponse
+
+        The model defined in huaweicloud sdk
+
+        :param operation_id: 操作记录id
+        :type operation_id: str
+        """
         
         super(BatchRemoveOrgsFromChannelResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class BatchRemoveOrgsFromChannelResponse(SdkResponse):
         操作记录id
 
         :param operation_id: The operation_id of this BatchRemoveOrgsFromChannelResponse.
-        :type: str
+        :type operation_id: str
         """
         self._operation_id = operation_id
 

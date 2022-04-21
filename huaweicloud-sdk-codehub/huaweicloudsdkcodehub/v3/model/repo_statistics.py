@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RepoStatistics:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class RepoStatistics:
     }
 
     def __init__(self, add_lines=None, branch=None, commit_count=None, created_at=None, delete_lines=None, id=None, project_id=None, updated_at=None, user_name=None):
-        """RepoStatistics - a model defined in huaweicloud sdk"""
+        """RepoStatistics
+
+        The model defined in huaweicloud sdk
+
+        :param add_lines: 添加代码行
+        :type add_lines: int
+        :param branch: 分支名
+        :type branch: str
+        :param commit_count: 提交次数
+        :type commit_count: int
+        :param created_at: 仓库统计创建的时间
+        :type created_at: datetime
+        :param delete_lines: 删除代码行
+        :type delete_lines: int
+        :param id: 仓库id
+        :type id: int
+        :param project_id: 仓库id
+        :type project_id: int
+        :param updated_at: 仓库统计更新的时间
+        :type updated_at: datetime
+        :param user_name: 用户名
+        :type user_name: str
+        """
         
         
 
@@ -98,7 +119,7 @@ class RepoStatistics:
         添加代码行
 
         :param add_lines: The add_lines of this RepoStatistics.
-        :type: int
+        :type add_lines: int
         """
         self._add_lines = add_lines
 
@@ -120,7 +141,7 @@ class RepoStatistics:
         分支名
 
         :param branch: The branch of this RepoStatistics.
-        :type: str
+        :type branch: str
         """
         self._branch = branch
 
@@ -142,7 +163,7 @@ class RepoStatistics:
         提交次数
 
         :param commit_count: The commit_count of this RepoStatistics.
-        :type: int
+        :type commit_count: int
         """
         self._commit_count = commit_count
 
@@ -164,7 +185,7 @@ class RepoStatistics:
         仓库统计创建的时间
 
         :param created_at: The created_at of this RepoStatistics.
-        :type: datetime
+        :type created_at: datetime
         """
         self._created_at = created_at
 
@@ -186,7 +207,7 @@ class RepoStatistics:
         删除代码行
 
         :param delete_lines: The delete_lines of this RepoStatistics.
-        :type: int
+        :type delete_lines: int
         """
         self._delete_lines = delete_lines
 
@@ -208,7 +229,7 @@ class RepoStatistics:
         仓库id
 
         :param id: The id of this RepoStatistics.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -230,7 +251,7 @@ class RepoStatistics:
         仓库id
 
         :param project_id: The project_id of this RepoStatistics.
-        :type: int
+        :type project_id: int
         """
         self._project_id = project_id
 
@@ -252,7 +273,7 @@ class RepoStatistics:
         仓库统计更新的时间
 
         :param updated_at: The updated_at of this RepoStatistics.
-        :type: datetime
+        :type updated_at: datetime
         """
         self._updated_at = updated_at
 
@@ -274,7 +295,7 @@ class RepoStatistics:
         用户名
 
         :param user_name: The user_name of this RepoStatistics.
-        :type: str
+        :type user_name: str
         """
         self._user_name = user_name
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SwitchAgentRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class SwitchAgentRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """SwitchAgentRequest - a model defined in huaweicloud sdk"""
+        """SwitchAgentRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: instance_id
+        :type instance_id: str
+        :param body: Body of the SwitchAgentRequest
+        :type body: :class:`huaweicloudsdkdbss.v1.AgentSwitchRequest`
+        """
         
         
 
@@ -62,7 +69,7 @@ class SwitchAgentRequest:
         instance_id
 
         :param instance_id: The instance_id of this SwitchAgentRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -72,7 +79,7 @@ class SwitchAgentRequest:
 
 
         :return: The body of this SwitchAgentRequest.
-        :rtype: AgentSwitchRequest
+        :rtype: :class:`huaweicloudsdkdbss.v1.AgentSwitchRequest`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class SwitchAgentRequest:
 
 
         :param body: The body of this SwitchAgentRequest.
-        :type: AgentSwitchRequest
+        :type body: :class:`huaweicloudsdkdbss.v1.AgentSwitchRequest`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UrlObject:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class UrlObject:
     }
 
     def __init__(self, id=None, url=None, status=None, create_time=None, task_id=None, task_type=None):
-        """UrlObject - a model defined in huaweicloud sdk"""
+        """UrlObject
+
+        The model defined in huaweicloud sdk
+
+        :param id: url的id
+        :type id: str
+        :param url: url的地址。
+        :type url: str
+        :param status: url的状态 processing 处理中，succeed 完成，failed 失败，waiting 等待，refreshing 刷新中，preheating 预热中。
+        :type status: str
+        :param create_time: url创建时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
+        :type create_time: int
+        :param task_id: 任务id。
+        :type task_id: str
+        :param task_type: 任务的类型， 其值可以为REFRESH、PREHEATING、REFRESH_AFTER_PREHEATING
+        :type task_type: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class UrlObject:
         url的id
 
         :param id: The id of this UrlObject.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -105,7 +120,7 @@ class UrlObject:
         url的地址。
 
         :param url: The url of this UrlObject.
-        :type: str
+        :type url: str
         """
         self._url = url
 
@@ -127,7 +142,7 @@ class UrlObject:
         url的状态 processing 处理中，succeed 完成，failed 失败，waiting 等待，refreshing 刷新中，preheating 预热中。
 
         :param status: The status of this UrlObject.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -149,7 +164,7 @@ class UrlObject:
         url创建时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
 
         :param create_time: The create_time of this UrlObject.
-        :type: int
+        :type create_time: int
         """
         self._create_time = create_time
 
@@ -171,7 +186,7 @@ class UrlObject:
         任务id。
 
         :param task_id: The task_id of this UrlObject.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -193,7 +208,7 @@ class UrlObject:
         任务的类型， 其值可以为REFRESH、PREHEATING、REFRESH_AFTER_PREHEATING
 
         :param task_type: The task_type of this UrlObject.
-        :type: str
+        :type task_type: str
         """
         self._task_type = task_type
 

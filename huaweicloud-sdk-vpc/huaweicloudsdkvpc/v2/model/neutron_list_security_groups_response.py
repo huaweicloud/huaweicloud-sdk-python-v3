@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NeutronListSecurityGroupsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class NeutronListSecurityGroupsResponse(SdkResponse):
     }
 
     def __init__(self, security_groups=None, security_groups_links=None):
-        """NeutronListSecurityGroupsResponse - a model defined in huaweicloud sdk"""
+        """NeutronListSecurityGroupsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param security_groups: 安全组对象列表
+        :type security_groups: list[:class:`huaweicloudsdkvpc.v2.NeutronSecurityGroup`]
+        :param security_groups_links: 分页信息
+        :type security_groups_links: list[:class:`huaweicloudsdkvpc.v2.NeutronPageLink`]
+        """
         
         super(NeutronListSecurityGroupsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class NeutronListSecurityGroupsResponse(SdkResponse):
         安全组对象列表
 
         :return: The security_groups of this NeutronListSecurityGroupsResponse.
-        :rtype: list[NeutronSecurityGroup]
+        :rtype: list[:class:`huaweicloudsdkvpc.v2.NeutronSecurityGroup`]
         """
         return self._security_groups
 
@@ -63,7 +70,7 @@ class NeutronListSecurityGroupsResponse(SdkResponse):
         安全组对象列表
 
         :param security_groups: The security_groups of this NeutronListSecurityGroupsResponse.
-        :type: list[NeutronSecurityGroup]
+        :type security_groups: list[:class:`huaweicloudsdkvpc.v2.NeutronSecurityGroup`]
         """
         self._security_groups = security_groups
 
@@ -74,7 +81,7 @@ class NeutronListSecurityGroupsResponse(SdkResponse):
         分页信息
 
         :return: The security_groups_links of this NeutronListSecurityGroupsResponse.
-        :rtype: list[NeutronPageLink]
+        :rtype: list[:class:`huaweicloudsdkvpc.v2.NeutronPageLink`]
         """
         return self._security_groups_links
 
@@ -85,7 +92,7 @@ class NeutronListSecurityGroupsResponse(SdkResponse):
         分页信息
 
         :param security_groups_links: The security_groups_links of this NeutronListSecurityGroupsResponse.
-        :type: list[NeutronPageLink]
+        :type security_groups_links: list[:class:`huaweicloudsdkvpc.v2.NeutronPageLink`]
         """
         self._security_groups_links = security_groups_links
 

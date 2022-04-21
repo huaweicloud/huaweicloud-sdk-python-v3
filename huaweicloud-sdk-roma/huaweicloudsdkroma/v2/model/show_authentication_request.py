@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowAuthenticationRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowAuthenticationRequest:
     }
 
     def __init__(self, instance_id=None, device_id=None):
-        """ShowAuthenticationRequest - a model defined in huaweicloud sdk"""
+        """ShowAuthenticationRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param device_id: 设备ID
+        :type device_id: int
+        """
         
         
 
@@ -61,7 +68,7 @@ class ShowAuthenticationRequest:
         实例ID
 
         :param instance_id: The instance_id of this ShowAuthenticationRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -83,7 +90,7 @@ class ShowAuthenticationRequest:
         设备ID
 
         :param device_id: The device_id of this ShowAuthenticationRequest.
-        :type: int
+        :type device_id: int
         """
         self._device_id = device_id
 

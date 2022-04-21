@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NsRecords:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class NsRecords:
     }
 
     def __init__(self, hostname=None, address=None, priority=None):
-        """NsRecords - a model defined in huaweicloud sdk"""
+        """NsRecords
+
+        The model defined in huaweicloud sdk
+
+        :param hostname: 主机名。  当为内网名称服务器时，此值为空。
+        :type hostname: str
+        :param address: 名称服务器地址。  当为公网名称服务器时，此值为空。
+        :type address: str
+        :param priority: 优先级。  示例：  如果priority的值为“1”，表示会第一个采用该域名服务器进行解析。
+        :type priority: int
+        """
         
         
 
@@ -68,7 +77,7 @@ class NsRecords:
         主机名。  当为内网名称服务器时，此值为空。
 
         :param hostname: The hostname of this NsRecords.
-        :type: str
+        :type hostname: str
         """
         self._hostname = hostname
 
@@ -90,7 +99,7 @@ class NsRecords:
         名称服务器地址。  当为公网名称服务器时，此值为空。
 
         :param address: The address of this NsRecords.
-        :type: str
+        :type address: str
         """
         self._address = address
 
@@ -112,7 +121,7 @@ class NsRecords:
         优先级。  示例：  如果priority的值为“1”，表示会第一个采用该域名服务器进行解析。
 
         :param priority: The priority of this NsRecords.
-        :type: int
+        :type priority: int
         """
         self._priority = priority
 

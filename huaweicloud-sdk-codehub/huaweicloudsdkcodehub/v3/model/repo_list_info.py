@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RepoListInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RepoListInfo:
     }
 
     def __init__(self, repositorys=None, total=None):
-        """RepoListInfo - a model defined in huaweicloud sdk"""
+        """RepoListInfo
+
+        The model defined in huaweicloud sdk
+
+        :param repositorys: 仓库列表
+        :type repositorys: list[:class:`huaweicloudsdkcodehub.v3.RepoInfo`]
+        :param total: 仓库总数
+        :type total: int
+        """
         
         
 
@@ -52,7 +59,7 @@ class RepoListInfo:
         仓库列表
 
         :return: The repositorys of this RepoListInfo.
-        :rtype: list[RepoInfo]
+        :rtype: list[:class:`huaweicloudsdkcodehub.v3.RepoInfo`]
         """
         return self._repositorys
 
@@ -63,7 +70,7 @@ class RepoListInfo:
         仓库列表
 
         :param repositorys: The repositorys of this RepoListInfo.
-        :type: list[RepoInfo]
+        :type repositorys: list[:class:`huaweicloudsdkcodehub.v3.RepoInfo`]
         """
         self._repositorys = repositorys
 
@@ -85,7 +92,7 @@ class RepoListInfo:
         仓库总数
 
         :param total: The total of this RepoListInfo.
-        :type: int
+        :type total: int
         """
         self._total = total
 

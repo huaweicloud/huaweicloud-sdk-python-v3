@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TaskNodeInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class TaskNodeInfo:
     }
 
     def __init__(self, node_size=None, data_volume_type=None, data_volume_count=None, data_volume_size=None):
-        """TaskNodeInfo - a model defined in huaweicloud sdk"""
+        """TaskNodeInfo
+
+        The model defined in huaweicloud sdk
+
+        :param node_size: Task节点的实例规格，例如：c3.4xlarge.2.linux.bigdata。实例规格详细说明请参见[MRS所使用的弹性云服务器规格](https://support.huaweicloud.com/api-mrs/mrs_01_9006.html)和[MRS所使用的裸金属服务器规格](https://support.huaweicloud.com/api-mrs/mrs_01_9001.html)。 该参数建议从MRS控制台的集群创建页面获取对应区域对应版本所支持的规格。
+        :type node_size: str
+        :param data_volume_type: Task节点数据磁盘存储类别，目前支持SATA、SAS和SSD。 - SATA：普通IO - SAS：高IO - SSD：超高IO - GPSSD：通用型SSD
+        :type data_volume_type: str
+        :param data_volume_count: Task节点数据磁盘存储数目，取值范围：0～10。
+        :type data_volume_count: int
+        :param data_volume_size: Task节点数据磁盘存储大小。  取值范围：100GB～32000GB，传值只需填数字，不需要带单位GB。
+        :type data_volume_size: int
+        """
         
         
 
@@ -72,7 +83,7 @@ class TaskNodeInfo:
         Task节点的实例规格，例如：c3.4xlarge.2.linux.bigdata。实例规格详细说明请参见[MRS所使用的弹性云服务器规格](https://support.huaweicloud.com/api-mrs/mrs_01_9006.html)和[MRS所使用的裸金属服务器规格](https://support.huaweicloud.com/api-mrs/mrs_01_9001.html)。 该参数建议从MRS控制台的集群创建页面获取对应区域对应版本所支持的规格。
 
         :param node_size: The node_size of this TaskNodeInfo.
-        :type: str
+        :type node_size: str
         """
         self._node_size = node_size
 
@@ -94,7 +105,7 @@ class TaskNodeInfo:
         Task节点数据磁盘存储类别，目前支持SATA、SAS和SSD。 - SATA：普通IO - SAS：高IO - SSD：超高IO - GPSSD：通用型SSD
 
         :param data_volume_type: The data_volume_type of this TaskNodeInfo.
-        :type: str
+        :type data_volume_type: str
         """
         self._data_volume_type = data_volume_type
 
@@ -116,7 +127,7 @@ class TaskNodeInfo:
         Task节点数据磁盘存储数目，取值范围：0～10。
 
         :param data_volume_count: The data_volume_count of this TaskNodeInfo.
-        :type: int
+        :type data_volume_count: int
         """
         self._data_volume_count = data_volume_count
 
@@ -138,7 +149,7 @@ class TaskNodeInfo:
         Task节点数据磁盘存储大小。  取值范围：100GB～32000GB，传值只需填数字，不需要带单位GB。
 
         :param data_volume_size: The data_volume_size of this TaskNodeInfo.
-        :type: int
+        :type data_volume_size: int
         """
         self._data_volume_size = data_volume_size
 

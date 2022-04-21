@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DictionaryRemark:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class DictionaryRemark:
     }
 
     def __init__(self):
-        """DictionaryRemark - a model defined in huaweicloud sdk"""
+        """DictionaryRemark
+
+        The model defined in huaweicloud sdk
+
+        """
         
         
         self.discriminator = None

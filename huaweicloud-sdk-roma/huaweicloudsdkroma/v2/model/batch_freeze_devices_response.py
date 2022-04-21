@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchFreezeDevicesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchFreezeDevicesResponse(SdkResponse):
     }
 
     def __init__(self, success=None, failed=None):
-        """BatchFreezeDevicesResponse - a model defined in huaweicloud sdk"""
+        """BatchFreezeDevicesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param success: 下线成功设备列表
+        :type success: list[:class:`huaweicloudsdkroma.v2.DeviceInfoSimple`]
+        :param failed: 下线失败设备列表
+        :type failed: list[:class:`huaweicloudsdkroma.v2.DeviceInfoSimple`]
+        """
         
         super(BatchFreezeDevicesResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class BatchFreezeDevicesResponse(SdkResponse):
         下线成功设备列表
 
         :return: The success of this BatchFreezeDevicesResponse.
-        :rtype: list[DeviceInfoSimple]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.DeviceInfoSimple`]
         """
         return self._success
 
@@ -63,7 +70,7 @@ class BatchFreezeDevicesResponse(SdkResponse):
         下线成功设备列表
 
         :param success: The success of this BatchFreezeDevicesResponse.
-        :type: list[DeviceInfoSimple]
+        :type success: list[:class:`huaweicloudsdkroma.v2.DeviceInfoSimple`]
         """
         self._success = success
 
@@ -74,7 +81,7 @@ class BatchFreezeDevicesResponse(SdkResponse):
         下线失败设备列表
 
         :return: The failed of this BatchFreezeDevicesResponse.
-        :rtype: list[DeviceInfoSimple]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.DeviceInfoSimple`]
         """
         return self._failed
 
@@ -85,7 +92,7 @@ class BatchFreezeDevicesResponse(SdkResponse):
         下线失败设备列表
 
         :param failed: The failed of this BatchFreezeDevicesResponse.
-        :type: list[DeviceInfoSimple]
+        :type failed: list[:class:`huaweicloudsdkroma.v2.DeviceInfoSimple`]
         """
         self._failed = failed
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowMqsInstanceTopicAccessPolicyRespPolicies:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ShowMqsInstanceTopicAccessPolicyRespPolicies:
     }
 
     def __init__(self, owner=None, user_name=None, access_policy=None, app_name=None, tag=None):
-        """ShowMqsInstanceTopicAccessPolicyRespPolicies - a model defined in huaweicloud sdk"""
+        """ShowMqsInstanceTopicAccessPolicyRespPolicies
+
+        The model defined in huaweicloud sdk
+
+        :param owner: 是否为创建topic时所选择的应用。
+        :type owner: bool
+        :param user_name: 应用ID。
+        :type user_name: str
+        :param access_policy: 权限类型。   - all：发布+订阅   - pub：发布   - sub：订阅
+        :type access_policy: str
+        :param app_name: 应用名称。
+        :type app_name: str
+        :param tag: 权限类型对应的标签。
+        :type tag: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class ShowMqsInstanceTopicAccessPolicyRespPolicies:
         是否为创建topic时所选择的应用。
 
         :param owner: The owner of this ShowMqsInstanceTopicAccessPolicyRespPolicies.
-        :type: bool
+        :type owner: bool
         """
         self._owner = owner
 
@@ -100,7 +113,7 @@ class ShowMqsInstanceTopicAccessPolicyRespPolicies:
         应用ID。
 
         :param user_name: The user_name of this ShowMqsInstanceTopicAccessPolicyRespPolicies.
-        :type: str
+        :type user_name: str
         """
         self._user_name = user_name
 
@@ -122,7 +135,7 @@ class ShowMqsInstanceTopicAccessPolicyRespPolicies:
         权限类型。   - all：发布+订阅   - pub：发布   - sub：订阅
 
         :param access_policy: The access_policy of this ShowMqsInstanceTopicAccessPolicyRespPolicies.
-        :type: str
+        :type access_policy: str
         """
         self._access_policy = access_policy
 
@@ -144,7 +157,7 @@ class ShowMqsInstanceTopicAccessPolicyRespPolicies:
         应用名称。
 
         :param app_name: The app_name of this ShowMqsInstanceTopicAccessPolicyRespPolicies.
-        :type: str
+        :type app_name: str
         """
         self._app_name = app_name
 
@@ -166,7 +179,7 @@ class ShowMqsInstanceTopicAccessPolicyRespPolicies:
         权限类型对应的标签。
 
         :param tag: The tag of this ShowMqsInstanceTopicAccessPolicyRespPolicies.
-        :type: str
+        :type tag: str
         """
         self._tag = tag
 

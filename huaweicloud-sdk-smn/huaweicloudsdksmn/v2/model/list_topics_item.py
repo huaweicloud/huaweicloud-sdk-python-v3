@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTopicsItem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListTopicsItem:
     }
 
     def __init__(self, topic_urn=None, name=None, display_name=None, push_policy=None, enterprise_project_id=None):
-        """ListTopicsItem - a model defined in huaweicloud sdk"""
+        """ListTopicsItem
+
+        The model defined in huaweicloud sdk
+
+        :param topic_urn: Topic的唯一的资源标识。
+        :type topic_urn: str
+        :param name: 创建topic的名字。
+        :type name: str
+        :param display_name: Topic的显示名，推送邮件消息时，作为邮件发件人显示。
+        :type display_name: str
+        :param push_policy: 消息推送的策略，该属性目前不支持修改，后续将支持修改。0表示发送失败，保留到失败队列，1表示直接丢弃发送失败的消息。
+        :type push_policy: int
+        :param enterprise_project_id: 企业项目ID。
+        :type enterprise_project_id: str
+        """
         
         
 
@@ -73,7 +86,7 @@ class ListTopicsItem:
         Topic的唯一的资源标识。
 
         :param topic_urn: The topic_urn of this ListTopicsItem.
-        :type: str
+        :type topic_urn: str
         """
         self._topic_urn = topic_urn
 
@@ -95,7 +108,7 @@ class ListTopicsItem:
         创建topic的名字。
 
         :param name: The name of this ListTopicsItem.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -117,7 +130,7 @@ class ListTopicsItem:
         Topic的显示名，推送邮件消息时，作为邮件发件人显示。
 
         :param display_name: The display_name of this ListTopicsItem.
-        :type: str
+        :type display_name: str
         """
         self._display_name = display_name
 
@@ -139,7 +152,7 @@ class ListTopicsItem:
         消息推送的策略，该属性目前不支持修改，后续将支持修改。0表示发送失败，保留到失败队列，1表示直接丢弃发送失败的消息。
 
         :param push_policy: The push_policy of this ListTopicsItem.
-        :type: int
+        :type push_policy: int
         """
         self._push_policy = push_policy
 
@@ -161,7 +174,7 @@ class ListTopicsItem:
         企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this ListTopicsItem.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 

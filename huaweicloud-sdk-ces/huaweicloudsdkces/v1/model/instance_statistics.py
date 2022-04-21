@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InstanceStatistics:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class InstanceStatistics:
     }
 
     def __init__(self, unhealth=None, total=None, type_statistics=None):
-        """InstanceStatistics - a model defined in huaweicloud sdk"""
+        """InstanceStatistics
+
+        The model defined in huaweicloud sdk
+
+        :param unhealth: 该资源分组中当前处在告警状态的资源个数。
+        :type unhealth: int
+        :param total: 该资源分组中资源的总个数。
+        :type total: int
+        :param type_statistics: 该资源分组中选择的资源类型个数，如资源分组添加了弹性云服务、弹性公网IP和带宽则值为2。
+        :type type_statistics: int
+        """
         
         
 
@@ -68,7 +77,7 @@ class InstanceStatistics:
         该资源分组中当前处在告警状态的资源个数。
 
         :param unhealth: The unhealth of this InstanceStatistics.
-        :type: int
+        :type unhealth: int
         """
         self._unhealth = unhealth
 
@@ -90,7 +99,7 @@ class InstanceStatistics:
         该资源分组中资源的总个数。
 
         :param total: The total of this InstanceStatistics.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -112,7 +121,7 @@ class InstanceStatistics:
         该资源分组中选择的资源类型个数，如资源分组添加了弹性云服务、弹性公网IP和带宽则值为2。
 
         :param type_statistics: The type_statistics of this InstanceStatistics.
-        :type: int
+        :type type_statistics: int
         """
         self._type_statistics = type_statistics
 

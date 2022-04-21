@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VolumeDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class VolumeDTO:
     }
 
     def __init__(self, name=None, type=None, source=None, destination=None, read_only=None):
-        """VolumeDTO - a model defined in huaweicloud sdk"""
+        """VolumeDTO
+
+        The model defined in huaweicloud sdk
+
+        :param name: 卷名称
+        :type name: str
+        :param type: 挂载类型
+        :type type: str
+        :param source: 源路径
+        :type source: str
+        :param destination: 卷挂载路径
+        :type destination: str
+        :param read_only: 只读，默认只读
+        :type read_only: bool
+        """
         
         
 
@@ -75,7 +88,7 @@ class VolumeDTO:
         卷名称
 
         :param name: The name of this VolumeDTO.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -97,7 +110,7 @@ class VolumeDTO:
         挂载类型
 
         :param type: The type of this VolumeDTO.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -119,7 +132,7 @@ class VolumeDTO:
         源路径
 
         :param source: The source of this VolumeDTO.
-        :type: str
+        :type source: str
         """
         self._source = source
 
@@ -141,7 +154,7 @@ class VolumeDTO:
         卷挂载路径
 
         :param destination: The destination of this VolumeDTO.
-        :type: str
+        :type destination: str
         """
         self._destination = destination
 
@@ -163,7 +176,7 @@ class VolumeDTO:
         只读，默认只读
 
         :param read_only: The read_only of this VolumeDTO.
-        :type: bool
+        :type read_only: bool
         """
         self._read_only = read_only
 

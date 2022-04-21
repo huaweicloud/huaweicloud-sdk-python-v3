@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreatePartnerCouponsReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class CreatePartnerCouponsReq:
     }
 
     def __init__(self, quota_id=None, customer_ids=None, face_value=None, valid_time=None, expire_time=None, cloud_service_types=None, product_ids=None, memo=None, indirect_partner_id=None):
-        """CreatePartnerCouponsReq - a model defined in huaweicloud sdk"""
+        """CreatePartnerCouponsReq
+
+        The model defined in huaweicloud sdk
+
+        :param quota_id: 优惠券额度ID。该值在查询优惠券额度接口的响应参数中获取。
+        :type quota_id: str
+        :param customer_ids: 客户账号ID。您可以调用查询客户列表接口获取customer_id。
+        :type customer_ids: list[str]
+        :param face_value: 代金券面值。 单位：元。取值大于0且精确到小数点后2位。
+        :type face_value: float
+        :param valid_time: 生效时间。 UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。
+        :type valid_time: str
+        :param expire_time: 失效时间。 UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。
+        :type expire_time: str
+        :param cloud_service_types: 允许使用的云服务列表，您可以调用查询云服务类型列表接口获取。 多个云服务产品以“,”隔开，最多支持10个。 默认：空（继承额度上的限制）  说明： 如果额度上有限制云服务类型列表，则优惠券上的限制不能超过额度的限制。如果额度上没有限制，则优惠券上可以随意指定云服务类型。
+        :type cloud_service_types: list[str]
+        :param product_ids: 允许使用的产品列表。 多个产品以“,”隔开，最多支持10个。 默认：空（继承额度上的限制）  说明： 如果额度上有限制产品列表，则优惠券上的限制不能超过额度的限制。如果额度上没有限制，则优惠券上可以随意指定产品ID。 产品ID需要合作伙伴通过线下获得。
+        :type product_ids: list[str]
+        :param memo: 发券时的备注信息。
+        :type memo: str
+        :param indirect_partner_id: 精英服务商ID。获取方法请参见查询精英服务商列表。 精英服务商给子客户发放优惠券时，需要携带该参数。
+        :type indirect_partner_id: str
+        """
         
         
 
@@ -95,7 +116,7 @@ class CreatePartnerCouponsReq:
         优惠券额度ID。该值在查询优惠券额度接口的响应参数中获取。
 
         :param quota_id: The quota_id of this CreatePartnerCouponsReq.
-        :type: str
+        :type quota_id: str
         """
         self._quota_id = quota_id
 
@@ -117,7 +138,7 @@ class CreatePartnerCouponsReq:
         客户账号ID。您可以调用查询客户列表接口获取customer_id。
 
         :param customer_ids: The customer_ids of this CreatePartnerCouponsReq.
-        :type: list[str]
+        :type customer_ids: list[str]
         """
         self._customer_ids = customer_ids
 
@@ -139,7 +160,7 @@ class CreatePartnerCouponsReq:
         代金券面值。 单位：元。取值大于0且精确到小数点后2位。
 
         :param face_value: The face_value of this CreatePartnerCouponsReq.
-        :type: float
+        :type face_value: float
         """
         self._face_value = face_value
 
@@ -161,7 +182,7 @@ class CreatePartnerCouponsReq:
         生效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :param valid_time: The valid_time of this CreatePartnerCouponsReq.
-        :type: str
+        :type valid_time: str
         """
         self._valid_time = valid_time
 
@@ -183,7 +204,7 @@ class CreatePartnerCouponsReq:
         失效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :param expire_time: The expire_time of this CreatePartnerCouponsReq.
-        :type: str
+        :type expire_time: str
         """
         self._expire_time = expire_time
 
@@ -205,7 +226,7 @@ class CreatePartnerCouponsReq:
         允许使用的云服务列表，您可以调用查询云服务类型列表接口获取。 多个云服务产品以“,”隔开，最多支持10个。 默认：空（继承额度上的限制）  说明： 如果额度上有限制云服务类型列表，则优惠券上的限制不能超过额度的限制。如果额度上没有限制，则优惠券上可以随意指定云服务类型。
 
         :param cloud_service_types: The cloud_service_types of this CreatePartnerCouponsReq.
-        :type: list[str]
+        :type cloud_service_types: list[str]
         """
         self._cloud_service_types = cloud_service_types
 
@@ -227,7 +248,7 @@ class CreatePartnerCouponsReq:
         允许使用的产品列表。 多个产品以“,”隔开，最多支持10个。 默认：空（继承额度上的限制）  说明： 如果额度上有限制产品列表，则优惠券上的限制不能超过额度的限制。如果额度上没有限制，则优惠券上可以随意指定产品ID。 产品ID需要合作伙伴通过线下获得。
 
         :param product_ids: The product_ids of this CreatePartnerCouponsReq.
-        :type: list[str]
+        :type product_ids: list[str]
         """
         self._product_ids = product_ids
 
@@ -249,7 +270,7 @@ class CreatePartnerCouponsReq:
         发券时的备注信息。
 
         :param memo: The memo of this CreatePartnerCouponsReq.
-        :type: str
+        :type memo: str
         """
         self._memo = memo
 
@@ -271,7 +292,7 @@ class CreatePartnerCouponsReq:
         精英服务商ID。获取方法请参见查询精英服务商列表。 精英服务商给子客户发放优惠券时，需要携带该参数。
 
         :param indirect_partner_id: The indirect_partner_id of this CreatePartnerCouponsReq.
-        :type: str
+        :type indirect_partner_id: str
         """
         self._indirect_partner_id = indirect_partner_id
 

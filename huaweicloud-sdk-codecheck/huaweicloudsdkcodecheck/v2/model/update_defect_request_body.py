@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDefectRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateDefectRequestBody:
     }
 
     def __init__(self, defect_id=None, defect_status=None):
-        """UpdateDefectRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateDefectRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param defect_id: 问题id,多个时英文逗号分隔
+        :type defect_id: str
+        :param defect_status: 状态2：已忽略 1：已解决 0：未解决
+        :type defect_status: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class UpdateDefectRequestBody:
         问题id,多个时英文逗号分隔
 
         :param defect_id: The defect_id of this UpdateDefectRequestBody.
-        :type: str
+        :type defect_id: str
         """
         self._defect_id = defect_id
 
@@ -85,7 +92,7 @@ class UpdateDefectRequestBody:
         状态2：已忽略 1：已解决 0：未解决
 
         :param defect_status: The defect_status of this UpdateDefectRequestBody.
-        :type: str
+        :type defect_status: str
         """
         self._defect_status = defect_status
 

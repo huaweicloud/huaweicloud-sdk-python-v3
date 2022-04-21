@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateAndStartRandomClusterJobResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateAndStartRandomClusterJobResponse(SdkResponse):
     }
 
     def __init__(self, submissions=None):
-        """CreateAndStartRandomClusterJobResponse - a model defined in huaweicloud sdk"""
+        """CreateAndStartRandomClusterJobResponse
+
+        The model defined in huaweicloud sdk
+
+        :param submissions: 作业运行信息，请参见submission参数说明
+        :type submissions: list[:class:`huaweicloudsdkcdm.v1.StartJobSubmission`]
+        """
         
         super(CreateAndStartRandomClusterJobResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class CreateAndStartRandomClusterJobResponse(SdkResponse):
         作业运行信息，请参见submission参数说明
 
         :return: The submissions of this CreateAndStartRandomClusterJobResponse.
-        :rtype: list[StartJobSubmission]
+        :rtype: list[:class:`huaweicloudsdkcdm.v1.StartJobSubmission`]
         """
         return self._submissions
 
@@ -58,7 +63,7 @@ class CreateAndStartRandomClusterJobResponse(SdkResponse):
         作业运行信息，请参见submission参数说明
 
         :param submissions: The submissions of this CreateAndStartRandomClusterJobResponse.
-        :type: list[StartJobSubmission]
+        :type submissions: list[:class:`huaweicloudsdkcdm.v1.StartJobSubmission`]
         """
         self._submissions = submissions
 

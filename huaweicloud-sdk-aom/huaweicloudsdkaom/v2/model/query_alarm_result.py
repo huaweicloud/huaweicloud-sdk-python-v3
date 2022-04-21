@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryAlarmResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -78,7 +77,61 @@ class QueryAlarmResult:
     }
 
     def __init__(self, action_enabled=None, alarm_actions=None, alarm_advice=None, alarm_description=None, alarm_level=None, alarm_rule_id=None, alarm_rule_name=None, comparison_operator=None, dimensions=None, evaluation_periods=None, id_turn_on=None, insufficient_data_actions=None, metric_name=None, namespace=None, ok_actions=None, period=None, policy_name=None, resources=None, state_reason=None, state_updated_timestamp=None, state_value=None, statistic=None, threshold=None, type=None, unit=None):
-        """QueryAlarmResult - a model defined in huaweicloud sdk"""
+        """QueryAlarmResult
+
+        The model defined in huaweicloud sdk
+
+        :param action_enabled: 是否启用通知。
+        :type action_enabled: bool
+        :param alarm_actions: 告警状态通知列表。
+        :type alarm_actions: list[str]
+        :param alarm_advice: 告警清除建议。
+        :type alarm_advice: str
+        :param alarm_description: 阈值规则描述。
+        :type alarm_description: str
+        :param alarm_level: 告警级别。
+        :type alarm_level: str
+        :param alarm_rule_id: 阈值规则ID。
+        :type alarm_rule_id: str
+        :param alarm_rule_name: 阈值规则名称。
+        :type alarm_rule_name: str
+        :param comparison_operator: 极限条件。
+        :type comparison_operator: str
+        :param dimensions: 时间序列维度。
+        :type dimensions: list[:class:`huaweicloudsdkaom.v2.Dimension`]
+        :param evaluation_periods: 间隔周期。
+        :type evaluation_periods: int
+        :param id_turn_on: 阈值规则是否启用。
+        :type id_turn_on: bool
+        :param insufficient_data_actions: 数据不足通知列表。
+        :type insufficient_data_actions: list[str]
+        :param metric_name: 时间序列名称。
+        :type metric_name: str
+        :param namespace: 时间序列命名空间。
+        :type namespace: str
+        :param ok_actions: 正常状态通知列表。
+        :type ok_actions: list[str]
+        :param period: 统计周期。
+        :type period: int
+        :param policy_name: 阈值规则模板名称。
+        :type policy_name: str
+        :param resources: 资源信息(已废弃)。
+        :type resources: list[str]
+        :param state_reason: 原因描述。
+        :type state_reason: str
+        :param state_updated_timestamp: 状态更新时间戳。
+        :type state_updated_timestamp: str
+        :param state_value: 服务状态。
+        :type state_value: str
+        :param statistic: 统计方式。
+        :type statistic: str
+        :param threshold: 临界值。
+        :type threshold: str
+        :param type: 阈值规则类型。
+        :type type: str
+        :param unit: 阈值单元。
+        :type unit: str
+        """
         
         
 
@@ -178,7 +231,7 @@ class QueryAlarmResult:
         是否启用通知。
 
         :param action_enabled: The action_enabled of this QueryAlarmResult.
-        :type: bool
+        :type action_enabled: bool
         """
         self._action_enabled = action_enabled
 
@@ -200,7 +253,7 @@ class QueryAlarmResult:
         告警状态通知列表。
 
         :param alarm_actions: The alarm_actions of this QueryAlarmResult.
-        :type: list[str]
+        :type alarm_actions: list[str]
         """
         self._alarm_actions = alarm_actions
 
@@ -222,7 +275,7 @@ class QueryAlarmResult:
         告警清除建议。
 
         :param alarm_advice: The alarm_advice of this QueryAlarmResult.
-        :type: str
+        :type alarm_advice: str
         """
         self._alarm_advice = alarm_advice
 
@@ -244,7 +297,7 @@ class QueryAlarmResult:
         阈值规则描述。
 
         :param alarm_description: The alarm_description of this QueryAlarmResult.
-        :type: str
+        :type alarm_description: str
         """
         self._alarm_description = alarm_description
 
@@ -266,7 +319,7 @@ class QueryAlarmResult:
         告警级别。
 
         :param alarm_level: The alarm_level of this QueryAlarmResult.
-        :type: str
+        :type alarm_level: str
         """
         self._alarm_level = alarm_level
 
@@ -288,7 +341,7 @@ class QueryAlarmResult:
         阈值规则ID。
 
         :param alarm_rule_id: The alarm_rule_id of this QueryAlarmResult.
-        :type: str
+        :type alarm_rule_id: str
         """
         self._alarm_rule_id = alarm_rule_id
 
@@ -310,7 +363,7 @@ class QueryAlarmResult:
         阈值规则名称。
 
         :param alarm_rule_name: The alarm_rule_name of this QueryAlarmResult.
-        :type: str
+        :type alarm_rule_name: str
         """
         self._alarm_rule_name = alarm_rule_name
 
@@ -332,7 +385,7 @@ class QueryAlarmResult:
         极限条件。
 
         :param comparison_operator: The comparison_operator of this QueryAlarmResult.
-        :type: str
+        :type comparison_operator: str
         """
         self._comparison_operator = comparison_operator
 
@@ -343,7 +396,7 @@ class QueryAlarmResult:
         时间序列维度。
 
         :return: The dimensions of this QueryAlarmResult.
-        :rtype: list[Dimension]
+        :rtype: list[:class:`huaweicloudsdkaom.v2.Dimension`]
         """
         return self._dimensions
 
@@ -354,7 +407,7 @@ class QueryAlarmResult:
         时间序列维度。
 
         :param dimensions: The dimensions of this QueryAlarmResult.
-        :type: list[Dimension]
+        :type dimensions: list[:class:`huaweicloudsdkaom.v2.Dimension`]
         """
         self._dimensions = dimensions
 
@@ -376,7 +429,7 @@ class QueryAlarmResult:
         间隔周期。
 
         :param evaluation_periods: The evaluation_periods of this QueryAlarmResult.
-        :type: int
+        :type evaluation_periods: int
         """
         self._evaluation_periods = evaluation_periods
 
@@ -398,7 +451,7 @@ class QueryAlarmResult:
         阈值规则是否启用。
 
         :param id_turn_on: The id_turn_on of this QueryAlarmResult.
-        :type: bool
+        :type id_turn_on: bool
         """
         self._id_turn_on = id_turn_on
 
@@ -420,7 +473,7 @@ class QueryAlarmResult:
         数据不足通知列表。
 
         :param insufficient_data_actions: The insufficient_data_actions of this QueryAlarmResult.
-        :type: list[str]
+        :type insufficient_data_actions: list[str]
         """
         self._insufficient_data_actions = insufficient_data_actions
 
@@ -442,7 +495,7 @@ class QueryAlarmResult:
         时间序列名称。
 
         :param metric_name: The metric_name of this QueryAlarmResult.
-        :type: str
+        :type metric_name: str
         """
         self._metric_name = metric_name
 
@@ -464,7 +517,7 @@ class QueryAlarmResult:
         时间序列命名空间。
 
         :param namespace: The namespace of this QueryAlarmResult.
-        :type: str
+        :type namespace: str
         """
         self._namespace = namespace
 
@@ -486,7 +539,7 @@ class QueryAlarmResult:
         正常状态通知列表。
 
         :param ok_actions: The ok_actions of this QueryAlarmResult.
-        :type: list[str]
+        :type ok_actions: list[str]
         """
         self._ok_actions = ok_actions
 
@@ -508,7 +561,7 @@ class QueryAlarmResult:
         统计周期。
 
         :param period: The period of this QueryAlarmResult.
-        :type: int
+        :type period: int
         """
         self._period = period
 
@@ -530,7 +583,7 @@ class QueryAlarmResult:
         阈值规则模板名称。
 
         :param policy_name: The policy_name of this QueryAlarmResult.
-        :type: str
+        :type policy_name: str
         """
         self._policy_name = policy_name
 
@@ -552,7 +605,7 @@ class QueryAlarmResult:
         资源信息(已废弃)。
 
         :param resources: The resources of this QueryAlarmResult.
-        :type: list[str]
+        :type resources: list[str]
         """
         self._resources = resources
 
@@ -574,7 +627,7 @@ class QueryAlarmResult:
         原因描述。
 
         :param state_reason: The state_reason of this QueryAlarmResult.
-        :type: str
+        :type state_reason: str
         """
         self._state_reason = state_reason
 
@@ -596,7 +649,7 @@ class QueryAlarmResult:
         状态更新时间戳。
 
         :param state_updated_timestamp: The state_updated_timestamp of this QueryAlarmResult.
-        :type: str
+        :type state_updated_timestamp: str
         """
         self._state_updated_timestamp = state_updated_timestamp
 
@@ -618,7 +671,7 @@ class QueryAlarmResult:
         服务状态。
 
         :param state_value: The state_value of this QueryAlarmResult.
-        :type: str
+        :type state_value: str
         """
         self._state_value = state_value
 
@@ -640,7 +693,7 @@ class QueryAlarmResult:
         统计方式。
 
         :param statistic: The statistic of this QueryAlarmResult.
-        :type: str
+        :type statistic: str
         """
         self._statistic = statistic
 
@@ -662,7 +715,7 @@ class QueryAlarmResult:
         临界值。
 
         :param threshold: The threshold of this QueryAlarmResult.
-        :type: str
+        :type threshold: str
         """
         self._threshold = threshold
 
@@ -684,7 +737,7 @@ class QueryAlarmResult:
         阈值规则类型。
 
         :param type: The type of this QueryAlarmResult.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -706,7 +759,7 @@ class QueryAlarmResult:
         阈值单元。
 
         :param unit: The unit of this QueryAlarmResult.
-        :type: str
+        :type unit: str
         """
         self._unit = unit
 

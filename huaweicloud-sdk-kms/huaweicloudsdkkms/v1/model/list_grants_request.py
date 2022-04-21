@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListGrantsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListGrantsRequest:
     }
 
     def __init__(self, version_id=None, body=None):
-        """ListGrantsRequest - a model defined in huaweicloud sdk"""
+        """ListGrantsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param version_id: API版本号
+        :type version_id: str
+        :param body: Body of the ListGrantsRequest
+        :type body: :class:`huaweicloudsdkkms.v1.ListGrantsRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class ListGrantsRequest:
         API版本号
 
         :param version_id: The version_id of this ListGrantsRequest.
-        :type: str
+        :type version_id: str
         """
         self._version_id = version_id
 
@@ -72,7 +79,7 @@ class ListGrantsRequest:
 
 
         :return: The body of this ListGrantsRequest.
-        :rtype: ListGrantsRequestBody
+        :rtype: :class:`huaweicloudsdkkms.v1.ListGrantsRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class ListGrantsRequest:
 
 
         :param body: The body of this ListGrantsRequest.
-        :type: ListGrantsRequestBody
+        :type body: :class:`huaweicloudsdkkms.v1.ListGrantsRequestBody`
         """
         self._body = body
 

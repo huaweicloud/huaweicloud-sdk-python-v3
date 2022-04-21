@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListStatisticsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListStatisticsRequest:
     }
 
     def __init__(self, enterprise_project_id=None, _from=None, to=None, hosts=None, instances=None):
-        """ListStatisticsRequest - a model defined in huaweicloud sdk"""
+        """ListStatisticsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        :type enterprise_project_id: str
+        :param _from: 起始时间(13位时间戳)，需要和to同时使用
+        :type _from: int
+        :param to: 结束时间(13位时间戳),需要和from同时使用
+        :type to: int
+        :param hosts: 要查询域名列表
+        :type hosts: str
+        :param instances: 要查询实例列表
+        :type instances: str
+        """
         
         
 
@@ -76,7 +89,7 @@ class ListStatisticsRequest:
         您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this ListStatisticsRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -98,7 +111,7 @@ class ListStatisticsRequest:
         起始时间(13位时间戳)，需要和to同时使用
 
         :param _from: The _from of this ListStatisticsRequest.
-        :type: int
+        :type _from: int
         """
         self.__from = _from
 
@@ -120,7 +133,7 @@ class ListStatisticsRequest:
         结束时间(13位时间戳),需要和from同时使用
 
         :param to: The to of this ListStatisticsRequest.
-        :type: int
+        :type to: int
         """
         self._to = to
 
@@ -142,7 +155,7 @@ class ListStatisticsRequest:
         要查询域名列表
 
         :param hosts: The hosts of this ListStatisticsRequest.
-        :type: str
+        :type hosts: str
         """
         self._hosts = hosts
 
@@ -164,7 +177,7 @@ class ListStatisticsRequest:
         要查询实例列表
 
         :param instances: The instances of this ListStatisticsRequest.
-        :type: str
+        :type instances: str
         """
         self._instances = instances
 

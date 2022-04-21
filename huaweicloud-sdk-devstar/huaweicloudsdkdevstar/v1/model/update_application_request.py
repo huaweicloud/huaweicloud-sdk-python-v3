@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateApplicationRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateApplicationRequest:
     }
 
     def __init__(self, x_language=None, application_id=None, body=None):
-        """UpdateApplicationRequest - a model defined in huaweicloud sdk"""
+        """UpdateApplicationRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言类型 中文:zh-cn 英文:en-us
+        :type x_language: str
+        :param application_id: 应用id
+        :type application_id: str
+        :param body: Body of the UpdateApplicationRequest
+        :type body: :class:`huaweicloudsdkdevstar.v1.ApplicationModifyInfo`
+        """
         
         
 
@@ -67,7 +76,7 @@ class UpdateApplicationRequest:
         语言类型 中文:zh-cn 英文:en-us
 
         :param x_language: The x_language of this UpdateApplicationRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -89,7 +98,7 @@ class UpdateApplicationRequest:
         应用id
 
         :param application_id: The application_id of this UpdateApplicationRequest.
-        :type: str
+        :type application_id: str
         """
         self._application_id = application_id
 
@@ -99,7 +108,7 @@ class UpdateApplicationRequest:
 
 
         :return: The body of this UpdateApplicationRequest.
-        :rtype: ApplicationModifyInfo
+        :rtype: :class:`huaweicloudsdkdevstar.v1.ApplicationModifyInfo`
         """
         return self._body
 
@@ -109,7 +118,7 @@ class UpdateApplicationRequest:
 
 
         :param body: The body of this UpdateApplicationRequest.
-        :type: ApplicationModifyInfo
+        :type body: :class:`huaweicloudsdkdevstar.v1.ApplicationModifyInfo`
         """
         self._body = body
 

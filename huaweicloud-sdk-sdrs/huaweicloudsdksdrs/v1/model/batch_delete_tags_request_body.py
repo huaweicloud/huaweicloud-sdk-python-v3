@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchDeleteTagsRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchDeleteTagsRequestBody:
     }
 
     def __init__(self, tags=None, action=None):
-        """BatchDeleteTagsRequestBody - a model defined in huaweicloud sdk"""
+        """BatchDeleteTagsRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param tags: 标签列表。
+        :type tags: list[:class:`huaweicloudsdksdrs.v1.DeleteResourceTag`]
+        :param action: 操作标识，取值仅限于：delete：删除
+        :type action: str
+        """
         
         
 
@@ -50,7 +57,7 @@ class BatchDeleteTagsRequestBody:
         标签列表。
 
         :return: The tags of this BatchDeleteTagsRequestBody.
-        :rtype: list[DeleteResourceTag]
+        :rtype: list[:class:`huaweicloudsdksdrs.v1.DeleteResourceTag`]
         """
         return self._tags
 
@@ -61,7 +68,7 @@ class BatchDeleteTagsRequestBody:
         标签列表。
 
         :param tags: The tags of this BatchDeleteTagsRequestBody.
-        :type: list[DeleteResourceTag]
+        :type tags: list[:class:`huaweicloudsdksdrs.v1.DeleteResourceTag`]
         """
         self._tags = tags
 
@@ -83,7 +90,7 @@ class BatchDeleteTagsRequestBody:
         操作标识，取值仅限于：delete：删除
 
         :param action: The action of this BatchDeleteTagsRequestBody.
-        :type: str
+        :type action: str
         """
         self._action = action
 

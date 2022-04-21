@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateClustersTagsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateClustersTagsRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """CreateClustersTagsRequest - a model defined in huaweicloud sdk"""
+        """CreateClustersTagsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 指定待添加的集群ID。
+        :type cluster_id: str
+        :param body: Body of the CreateClustersTagsRequest
+        :type body: :class:`huaweicloudsdkcss.v1.TagReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateClustersTagsRequest:
         指定待添加的集群ID。
 
         :param cluster_id: The cluster_id of this CreateClustersTagsRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -72,7 +79,7 @@ class CreateClustersTagsRequest:
 
 
         :return: The body of this CreateClustersTagsRequest.
-        :rtype: TagReq
+        :rtype: :class:`huaweicloudsdkcss.v1.TagReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CreateClustersTagsRequest:
 
 
         :param body: The body of this CreateClustersTagsRequest.
-        :type: TagReq
+        :type body: :class:`huaweicloudsdkcss.v1.TagReq`
         """
         self._body = body
 

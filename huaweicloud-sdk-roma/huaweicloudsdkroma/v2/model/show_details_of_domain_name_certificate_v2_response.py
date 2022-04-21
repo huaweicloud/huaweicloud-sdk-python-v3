@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
     }
 
     def __init__(self, common_name=None, san=None, version=None, organization=None, organizational_unit=None, locality=None, state=None, country=None, not_before=None, not_after=None, serial_number=None, issuer=None, signature_algorithm=None):
-        """ShowDetailsOfDomainNameCertificateV2Response - a model defined in huaweicloud sdk"""
+        """ShowDetailsOfDomainNameCertificateV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param common_name: 证书域名
+        :type common_name: str
+        :param san: SAN域名
+        :type san: list[str]
+        :param version: 证书版本
+        :type version: int
+        :param organization: 公司、组织
+        :type organization: list[str]
+        :param organizational_unit: 部门
+        :type organizational_unit: list[str]
+        :param locality: 城市
+        :type locality: list[str]
+        :param state: 省份
+        :type state: list[str]
+        :param country: 国家
+        :type country: list[str]
+        :param not_before: 证书有效期起始时间
+        :type not_before: datetime
+        :param not_after: 证书有效期截止时间
+        :type not_after: datetime
+        :param serial_number: 序列号
+        :type serial_number: str
+        :param issuer: 颁发者
+        :type issuer: list[str]
+        :param signature_algorithm: 签名算法
+        :type signature_algorithm: str
+        """
         
         super(ShowDetailsOfDomainNameCertificateV2Response, self).__init__()
 
@@ -118,7 +147,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
         证书域名
 
         :param common_name: The common_name of this ShowDetailsOfDomainNameCertificateV2Response.
-        :type: str
+        :type common_name: str
         """
         self._common_name = common_name
 
@@ -140,7 +169,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
         SAN域名
 
         :param san: The san of this ShowDetailsOfDomainNameCertificateV2Response.
-        :type: list[str]
+        :type san: list[str]
         """
         self._san = san
 
@@ -162,7 +191,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
         证书版本
 
         :param version: The version of this ShowDetailsOfDomainNameCertificateV2Response.
-        :type: int
+        :type version: int
         """
         self._version = version
 
@@ -184,7 +213,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
         公司、组织
 
         :param organization: The organization of this ShowDetailsOfDomainNameCertificateV2Response.
-        :type: list[str]
+        :type organization: list[str]
         """
         self._organization = organization
 
@@ -206,7 +235,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
         部门
 
         :param organizational_unit: The organizational_unit of this ShowDetailsOfDomainNameCertificateV2Response.
-        :type: list[str]
+        :type organizational_unit: list[str]
         """
         self._organizational_unit = organizational_unit
 
@@ -228,7 +257,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
         城市
 
         :param locality: The locality of this ShowDetailsOfDomainNameCertificateV2Response.
-        :type: list[str]
+        :type locality: list[str]
         """
         self._locality = locality
 
@@ -250,7 +279,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
         省份
 
         :param state: The state of this ShowDetailsOfDomainNameCertificateV2Response.
-        :type: list[str]
+        :type state: list[str]
         """
         self._state = state
 
@@ -272,7 +301,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
         国家
 
         :param country: The country of this ShowDetailsOfDomainNameCertificateV2Response.
-        :type: list[str]
+        :type country: list[str]
         """
         self._country = country
 
@@ -294,7 +323,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
         证书有效期起始时间
 
         :param not_before: The not_before of this ShowDetailsOfDomainNameCertificateV2Response.
-        :type: datetime
+        :type not_before: datetime
         """
         self._not_before = not_before
 
@@ -316,7 +345,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
         证书有效期截止时间
 
         :param not_after: The not_after of this ShowDetailsOfDomainNameCertificateV2Response.
-        :type: datetime
+        :type not_after: datetime
         """
         self._not_after = not_after
 
@@ -338,7 +367,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
         序列号
 
         :param serial_number: The serial_number of this ShowDetailsOfDomainNameCertificateV2Response.
-        :type: str
+        :type serial_number: str
         """
         self._serial_number = serial_number
 
@@ -360,7 +389,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
         颁发者
 
         :param issuer: The issuer of this ShowDetailsOfDomainNameCertificateV2Response.
-        :type: list[str]
+        :type issuer: list[str]
         """
         self._issuer = issuer
 
@@ -382,7 +411,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
         签名算法
 
         :param signature_algorithm: The signature_algorithm of this ShowDetailsOfDomainNameCertificateV2Response.
-        :type: str
+        :type signature_algorithm: str
         """
         self._signature_algorithm = signature_algorithm
 

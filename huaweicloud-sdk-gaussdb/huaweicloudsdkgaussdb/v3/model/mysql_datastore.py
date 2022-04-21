@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MysqlDatastore:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class MysqlDatastore:
     }
 
     def __init__(self, type=None, version=None):
-        """MysqlDatastore - a model defined in huaweicloud sdk"""
+        """MysqlDatastore
+
+        The model defined in huaweicloud sdk
+
+        :param type: 数据库引擎，现在只支持gaussdb-mysql
+        :type type: str
+        :param version: 数据库版本。  数据库支持的详细版本信息，可调用查询数据库引擎的版本接口获取。
+        :type version: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class MysqlDatastore:
         数据库引擎，现在只支持gaussdb-mysql
 
         :param type: The type of this MysqlDatastore.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -83,7 +90,7 @@ class MysqlDatastore:
         数据库版本。  数据库支持的详细版本信息，可调用查询数据库引擎的版本接口获取。
 
         :param version: The version of this MysqlDatastore.
-        :type: str
+        :type version: str
         """
         self._version = version
 

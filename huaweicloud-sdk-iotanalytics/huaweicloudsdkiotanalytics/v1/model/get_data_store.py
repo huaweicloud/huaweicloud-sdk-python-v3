@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GetDataStore:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class GetDataStore:
     }
 
     def __init__(self, data_store_id=None, name=None, group_id=None, tags=None, metrics=None, properties=None, created_time=None, modified_time=None):
-        """GetDataStore - a model defined in huaweicloud sdk"""
+        """GetDataStore
+
+        The model defined in huaweicloud sdk
+
+        :param data_store_id: 存储 ID
+        :type data_store_id: str
+        :param name: 存储名称
+        :type name: str
+        :param group_id: 存储 ID
+        :type group_id: str
+        :param tags: 标签
+        :type tags: list[:class:`huaweicloudsdkiotanalytics.v1.Tag`]
+        :param metrics: 指标
+        :type metrics: list[:class:`huaweicloudsdkiotanalytics.v1.Metric`]
+        :param properties: 属性
+        :type properties: list[:class:`huaweicloudsdkiotanalytics.v1.ModelProperty`]
+        :param created_time: 创建时间
+        :type created_time: str
+        :param modified_time: 更新时间
+        :type modified_time: str
+        """
         
         
 
@@ -93,7 +112,7 @@ class GetDataStore:
         存储 ID
 
         :param data_store_id: The data_store_id of this GetDataStore.
-        :type: str
+        :type data_store_id: str
         """
         self._data_store_id = data_store_id
 
@@ -115,7 +134,7 @@ class GetDataStore:
         存储名称
 
         :param name: The name of this GetDataStore.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -137,7 +156,7 @@ class GetDataStore:
         存储 ID
 
         :param group_id: The group_id of this GetDataStore.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -148,7 +167,7 @@ class GetDataStore:
         标签
 
         :return: The tags of this GetDataStore.
-        :rtype: list[Tag]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.Tag`]
         """
         return self._tags
 
@@ -159,7 +178,7 @@ class GetDataStore:
         标签
 
         :param tags: The tags of this GetDataStore.
-        :type: list[Tag]
+        :type tags: list[:class:`huaweicloudsdkiotanalytics.v1.Tag`]
         """
         self._tags = tags
 
@@ -170,7 +189,7 @@ class GetDataStore:
         指标
 
         :return: The metrics of this GetDataStore.
-        :rtype: list[Metric]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.Metric`]
         """
         return self._metrics
 
@@ -181,7 +200,7 @@ class GetDataStore:
         指标
 
         :param metrics: The metrics of this GetDataStore.
-        :type: list[Metric]
+        :type metrics: list[:class:`huaweicloudsdkiotanalytics.v1.Metric`]
         """
         self._metrics = metrics
 
@@ -192,7 +211,7 @@ class GetDataStore:
         属性
 
         :return: The properties of this GetDataStore.
-        :rtype: list[ModelProperty]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.ModelProperty`]
         """
         return self._properties
 
@@ -203,7 +222,7 @@ class GetDataStore:
         属性
 
         :param properties: The properties of this GetDataStore.
-        :type: list[ModelProperty]
+        :type properties: list[:class:`huaweicloudsdkiotanalytics.v1.ModelProperty`]
         """
         self._properties = properties
 
@@ -225,7 +244,7 @@ class GetDataStore:
         创建时间
 
         :param created_time: The created_time of this GetDataStore.
-        :type: str
+        :type created_time: str
         """
         self._created_time = created_time
 
@@ -247,7 +266,7 @@ class GetDataStore:
         更新时间
 
         :param modified_time: The modified_time of this GetDataStore.
-        :type: str
+        :type modified_time: str
         """
         self._modified_time = modified_time
 

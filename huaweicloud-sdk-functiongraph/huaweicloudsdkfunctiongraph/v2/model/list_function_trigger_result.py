@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListFunctionTriggerResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListFunctionTriggerResult:
     }
 
     def __init__(self, trigger_id=None, trigger_type_code=None, trigger_status=None, event_data=None, last_updated_time=None, created_time=None):
-        """ListFunctionTriggerResult - a model defined in huaweicloud sdk"""
+        """ListFunctionTriggerResult
+
+        The model defined in huaweicloud sdk
+
+        :param trigger_id: 触发器ID。
+        :type trigger_id: str
+        :param trigger_type_code: 触发器类型。  - TIMER: \&quot;定时触发器。\&quot; - APIG: \&quot;APIG触发器。\&quot; - CTS: \&quot;云审计服务触发器。\&quot; - DDS: \&quot;文档数据库服务触发器。\&quot; - DMS: \&quot;分布式服务触发器。\&quot; - DIS: \&quot;数据接入服务触发器。\&quot; - LTS: \&quot;云日志服务触发器。\&quot; - OBS: \&quot;对象存储触发器。\&quot; - SMN: \&quot;消息通知服务触发器。\&quot; - KAFKA: \&quot;专享版消息通知服务触发器。\&quot;
+        :type trigger_type_code: str
+        :param trigger_status: \&quot;触发器状态\&quot;  - ACTIVE: 启用状态。 - DISABLED: 禁用状态。
+        :type trigger_status: str
+        :param event_data: 触发器源事件。
+        :type event_data: object
+        :param last_updated_time: 最后更新时间。
+        :type last_updated_time: datetime
+        :param created_time: 触发器创建时间。
+        :type created_time: datetime
+        """
         
         
 
@@ -77,7 +92,7 @@ class ListFunctionTriggerResult:
         触发器ID。
 
         :param trigger_id: The trigger_id of this ListFunctionTriggerResult.
-        :type: str
+        :type trigger_id: str
         """
         self._trigger_id = trigger_id
 
@@ -99,7 +114,7 @@ class ListFunctionTriggerResult:
         触发器类型。  - TIMER: \"定时触发器。\" - APIG: \"APIG触发器。\" - CTS: \"云审计服务触发器。\" - DDS: \"文档数据库服务触发器。\" - DMS: \"分布式服务触发器。\" - DIS: \"数据接入服务触发器。\" - LTS: \"云日志服务触发器。\" - OBS: \"对象存储触发器。\" - SMN: \"消息通知服务触发器。\" - KAFKA: \"专享版消息通知服务触发器。\"
 
         :param trigger_type_code: The trigger_type_code of this ListFunctionTriggerResult.
-        :type: str
+        :type trigger_type_code: str
         """
         self._trigger_type_code = trigger_type_code
 
@@ -121,7 +136,7 @@ class ListFunctionTriggerResult:
         \"触发器状态\"  - ACTIVE: 启用状态。 - DISABLED: 禁用状态。
 
         :param trigger_status: The trigger_status of this ListFunctionTriggerResult.
-        :type: str
+        :type trigger_status: str
         """
         self._trigger_status = trigger_status
 
@@ -143,7 +158,7 @@ class ListFunctionTriggerResult:
         触发器源事件。
 
         :param event_data: The event_data of this ListFunctionTriggerResult.
-        :type: object
+        :type event_data: object
         """
         self._event_data = event_data
 
@@ -165,7 +180,7 @@ class ListFunctionTriggerResult:
         最后更新时间。
 
         :param last_updated_time: The last_updated_time of this ListFunctionTriggerResult.
-        :type: datetime
+        :type last_updated_time: datetime
         """
         self._last_updated_time = last_updated_time
 
@@ -187,7 +202,7 @@ class ListFunctionTriggerResult:
         触发器创建时间。
 
         :param created_time: The created_time of this ListFunctionTriggerResult.
-        :type: datetime
+        :type created_time: datetime
         """
         self._created_time = created_time
 

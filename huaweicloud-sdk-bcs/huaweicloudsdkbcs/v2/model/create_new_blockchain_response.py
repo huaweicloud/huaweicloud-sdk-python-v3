@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateNewBlockchainResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateNewBlockchainResponse(SdkResponse):
     }
 
     def __init__(self, blockchain_id=None, blockchain_name=None, operation_id=None):
-        """CreateNewBlockchainResponse - a model defined in huaweicloud sdk"""
+        """CreateNewBlockchainResponse
+
+        The model defined in huaweicloud sdk
+
+        :param blockchain_id: 服务实例ID
+        :type blockchain_id: str
+        :param blockchain_name: 服务实例名
+        :type blockchain_name: str
+        :param operation_id: 操作ID
+        :type operation_id: str
+        """
         
         super(CreateNewBlockchainResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class CreateNewBlockchainResponse(SdkResponse):
         服务实例ID
 
         :param blockchain_id: The blockchain_id of this CreateNewBlockchainResponse.
-        :type: str
+        :type blockchain_id: str
         """
         self._blockchain_id = blockchain_id
 
@@ -90,7 +99,7 @@ class CreateNewBlockchainResponse(SdkResponse):
         服务实例名
 
         :param blockchain_name: The blockchain_name of this CreateNewBlockchainResponse.
-        :type: str
+        :type blockchain_name: str
         """
         self._blockchain_name = blockchain_name
 
@@ -112,7 +121,7 @@ class CreateNewBlockchainResponse(SdkResponse):
         操作ID
 
         :param operation_id: The operation_id of this CreateNewBlockchainResponse.
-        :type: str
+        :type operation_id: str
         """
         self._operation_id = operation_id
 

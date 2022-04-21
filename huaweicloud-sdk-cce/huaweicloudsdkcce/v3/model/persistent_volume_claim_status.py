@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PersistentVolumeClaimStatus:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class PersistentVolumeClaimStatus:
     }
 
     def __init__(self, access_modes=None, capacity=None, phase=None):
-        """PersistentVolumeClaimStatus - a model defined in huaweicloud sdk"""
+        """PersistentVolumeClaimStatus
+
+        The model defined in huaweicloud sdk
+
+        :param access_modes: 显示volume实际具有的访问模式。
+        :type access_modes: list[str]
+        :param capacity: 底层卷的实际资源
+        :type capacity: str
+        :param phase: PersistentVolumeClaim当前所处的状态
+        :type phase: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class PersistentVolumeClaimStatus:
         显示volume实际具有的访问模式。
 
         :param access_modes: The access_modes of this PersistentVolumeClaimStatus.
-        :type: list[str]
+        :type access_modes: list[str]
         """
         self._access_modes = access_modes
 
@@ -90,7 +99,7 @@ class PersistentVolumeClaimStatus:
         底层卷的实际资源
 
         :param capacity: The capacity of this PersistentVolumeClaimStatus.
-        :type: str
+        :type capacity: str
         """
         self._capacity = capacity
 
@@ -112,7 +121,7 @@ class PersistentVolumeClaimStatus:
         PersistentVolumeClaim当前所处的状态
 
         :param phase: The phase of this PersistentVolumeClaimStatus.
-        :type: str
+        :type phase: str
         """
         self._phase = phase
 

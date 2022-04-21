@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateUnscopedTokenWithIdTokenRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateUnscopedTokenWithIdTokenRequest:
     }
 
     def __init__(self, idp_id=None, protocol_id=None, authorization=None):
-        """CreateUnscopedTokenWithIdTokenRequest - a model defined in huaweicloud sdk"""
+        """CreateUnscopedTokenWithIdTokenRequest
+
+        The model defined in huaweicloud sdk
+
+        :param idp_id: 身份提供商id。
+        :type idp_id: str
+        :param protocol_id: 协议id。
+        :type protocol_id: str
+        :param authorization: OpenID Connect身份提供商的ID Token，格式为Bearer {ID Token}。
+        :type authorization: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class CreateUnscopedTokenWithIdTokenRequest:
         身份提供商id。
 
         :param idp_id: The idp_id of this CreateUnscopedTokenWithIdTokenRequest.
-        :type: str
+        :type idp_id: str
         """
         self._idp_id = idp_id
 
@@ -87,7 +96,7 @@ class CreateUnscopedTokenWithIdTokenRequest:
         协议id。
 
         :param protocol_id: The protocol_id of this CreateUnscopedTokenWithIdTokenRequest.
-        :type: str
+        :type protocol_id: str
         """
         self._protocol_id = protocol_id
 
@@ -109,7 +118,7 @@ class CreateUnscopedTokenWithIdTokenRequest:
         OpenID Connect身份提供商的ID Token，格式为Bearer {ID Token}。
 
         :param authorization: The authorization of this CreateUnscopedTokenWithIdTokenRequest.
-        :type: str
+        :type authorization: str
         """
         self._authorization = authorization
 

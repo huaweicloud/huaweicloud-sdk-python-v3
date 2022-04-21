@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListQuotasResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListQuotasResponse(SdkResponse):
     }
 
     def __init__(self, resources=None):
-        """ListQuotasResponse - a model defined in huaweicloud sdk"""
+        """ListQuotasResponse
+
+        The model defined in huaweicloud sdk
+
+        :param resources: 本次查询追踪器列表返回的追踪器数组。
+        :type resources: list[:class:`huaweicloudsdkcts.v3.Quota`]
+        """
         
         super(ListQuotasResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListQuotasResponse(SdkResponse):
         本次查询追踪器列表返回的追踪器数组。
 
         :return: The resources of this ListQuotasResponse.
-        :rtype: list[Quota]
+        :rtype: list[:class:`huaweicloudsdkcts.v3.Quota`]
         """
         return self._resources
 
@@ -58,7 +63,7 @@ class ListQuotasResponse(SdkResponse):
         本次查询追踪器列表返回的追踪器数组。
 
         :param resources: The resources of this ListQuotasResponse.
-        :type: list[Quota]
+        :type resources: list[:class:`huaweicloudsdkcts.v3.Quota`]
         """
         self._resources = resources
 

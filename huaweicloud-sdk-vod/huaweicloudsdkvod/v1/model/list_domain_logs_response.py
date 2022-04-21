@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDomainLogsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListDomainLogsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, logs=None):
-        """ListDomainLogsResponse - a model defined in huaweicloud sdk"""
+        """ListDomainLogsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 日志总数。
+        :type total: int
+        :param logs: 日志列表数据。
+        :type logs: list[:class:`huaweicloudsdkvod.v1.CdnLog`]
+        """
         
         super(ListDomainLogsResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListDomainLogsResponse(SdkResponse):
         日志总数。
 
         :param total: The total of this ListDomainLogsResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -74,7 +81,7 @@ class ListDomainLogsResponse(SdkResponse):
         日志列表数据。
 
         :return: The logs of this ListDomainLogsResponse.
-        :rtype: list[CdnLog]
+        :rtype: list[:class:`huaweicloudsdkvod.v1.CdnLog`]
         """
         return self._logs
 
@@ -85,7 +92,7 @@ class ListDomainLogsResponse(SdkResponse):
         日志列表数据。
 
         :param logs: The logs of this ListDomainLogsResponse.
-        :type: list[CdnLog]
+        :type logs: list[:class:`huaweicloudsdkvod.v1.CdnLog`]
         """
         self._logs = logs
 

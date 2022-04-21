@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDependencyRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowDependencyRequest:
     }
 
     def __init__(self, depend_id=None):
-        """ShowDependencyRequest - a model defined in huaweicloud sdk"""
+        """ShowDependencyRequest
+
+        The model defined in huaweicloud sdk
+
+        :param depend_id: 依赖包的ID。
+        :type depend_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowDependencyRequest:
         依赖包的ID。
 
         :param depend_id: The depend_id of this ShowDependencyRequest.
-        :type: str
+        :type depend_id: str
         """
         self._depend_id = depend_id
 

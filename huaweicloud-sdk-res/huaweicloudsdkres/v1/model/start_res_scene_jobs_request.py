@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StartResSceneJobsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class StartResSceneJobsRequest:
     }
 
     def __init__(self, content_type=None, workspace_id=None, resource_id=None, action=None):
-        """StartResSceneJobsRequest - a model defined in huaweicloud sdk"""
+        """StartResSceneJobsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param content_type: 内容类型，取值为application/json。
+        :type content_type: str
+        :param workspace_id: 工作空间id。
+        :type workspace_id: str
+        :param resource_id: 资源id，可以为数据源id或场景id。
+        :type resource_id: str
+        :param action: 动作类型： - START，启动 - STOP，停止
+        :type action: str
+        """
         
         
 
@@ -70,7 +81,7 @@ class StartResSceneJobsRequest:
         内容类型，取值为application/json。
 
         :param content_type: The content_type of this StartResSceneJobsRequest.
-        :type: str
+        :type content_type: str
         """
         self._content_type = content_type
 
@@ -92,7 +103,7 @@ class StartResSceneJobsRequest:
         工作空间id。
 
         :param workspace_id: The workspace_id of this StartResSceneJobsRequest.
-        :type: str
+        :type workspace_id: str
         """
         self._workspace_id = workspace_id
 
@@ -114,7 +125,7 @@ class StartResSceneJobsRequest:
         资源id，可以为数据源id或场景id。
 
         :param resource_id: The resource_id of this StartResSceneJobsRequest.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -136,7 +147,7 @@ class StartResSceneJobsRequest:
         动作类型： - START，启动 - STOP，停止
 
         :param action: The action of this StartResSceneJobsRequest.
-        :type: str
+        :type action: str
         """
         self._action = action
 

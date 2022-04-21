@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StorageSelectorsMatchLabels:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class StorageSelectorsMatchLabels:
     }
 
     def __init__(self, size=None, volume_type=None, metadata_encrypted=None, metadata_cmkid=None, count=None):
-        """StorageSelectorsMatchLabels - a model defined in huaweicloud sdk"""
+        """StorageSelectorsMatchLabels
+
+        The model defined in huaweicloud sdk
+
+        :param size: 匹配的磁盘大小，不填则无磁盘大小限制。例如：100.
+        :type size: str
+        :param volume_type: 云硬盘类型，目前支持SSD\\GPSSD\\SAS三种。
+        :type volume_type: str
+        :param metadata_encrypted: 磁盘加密标识符，0代表不加密，1代表加密。
+        :type metadata_encrypted: str
+        :param metadata_cmkid: 加密磁盘的用户主密钥ID，长度为36字节的字符串。
+        :type metadata_cmkid: str
+        :param count: 磁盘选择个数，不填则选择所有此类磁盘。
+        :type count: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class StorageSelectorsMatchLabels:
         匹配的磁盘大小，不填则无磁盘大小限制。例如：100.
 
         :param size: The size of this StorageSelectorsMatchLabels.
-        :type: str
+        :type size: str
         """
         self._size = size
 
@@ -100,7 +113,7 @@ class StorageSelectorsMatchLabels:
         云硬盘类型，目前支持SSD\\GPSSD\\SAS三种。
 
         :param volume_type: The volume_type of this StorageSelectorsMatchLabels.
-        :type: str
+        :type volume_type: str
         """
         self._volume_type = volume_type
 
@@ -122,7 +135,7 @@ class StorageSelectorsMatchLabels:
         磁盘加密标识符，0代表不加密，1代表加密。
 
         :param metadata_encrypted: The metadata_encrypted of this StorageSelectorsMatchLabels.
-        :type: str
+        :type metadata_encrypted: str
         """
         self._metadata_encrypted = metadata_encrypted
 
@@ -144,7 +157,7 @@ class StorageSelectorsMatchLabels:
         加密磁盘的用户主密钥ID，长度为36字节的字符串。
 
         :param metadata_cmkid: The metadata_cmkid of this StorageSelectorsMatchLabels.
-        :type: str
+        :type metadata_cmkid: str
         """
         self._metadata_cmkid = metadata_cmkid
 
@@ -166,7 +179,7 @@ class StorageSelectorsMatchLabels:
         磁盘选择个数，不填则选择所有此类磁盘。
 
         :param count: The count of this StorageSelectorsMatchLabels.
-        :type: str
+        :type count: str
         """
         self._count = count
 

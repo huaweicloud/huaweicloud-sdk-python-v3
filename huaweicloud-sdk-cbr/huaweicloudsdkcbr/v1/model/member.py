@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Member:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class Member:
     }
 
     def __init__(self, status=None, created_at=None, updated_at=None, backup_id=None, image_id=None, dest_project_id=None, vault_id=None, id=None):
-        """Member - a model defined in huaweicloud sdk"""
+        """Member
+
+        The model defined in huaweicloud sdk
+
+        :param status: 共享状态
+        :type status: str
+        :param created_at: 共享时间，例如:\&quot;2020-02-05T10:38:34.209782\&quot;
+        :type created_at: str
+        :param updated_at: 更新时间，例如:\&quot;2020-02-05T10:38:34.209782\&quot;
+        :type updated_at: str
+        :param backup_id: 备份副本id
+        :type backup_id: str
+        :param image_id: 接受的共享备份副本注册的镜像id
+        :type image_id: str
+        :param dest_project_id: 接受备份共享的项目id
+        :type dest_project_id: str
+        :param vault_id: 目标端接受共享备份的存储库id
+        :type vault_id: str
+        :param id: 共享记录id
+        :type id: str
+        """
         
         
 
@@ -92,7 +111,7 @@ class Member:
         共享状态
 
         :param status: The status of this Member.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -114,7 +133,7 @@ class Member:
         共享时间，例如:\"2020-02-05T10:38:34.209782\"
 
         :param created_at: The created_at of this Member.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -136,7 +155,7 @@ class Member:
         更新时间，例如:\"2020-02-05T10:38:34.209782\"
 
         :param updated_at: The updated_at of this Member.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 
@@ -158,7 +177,7 @@ class Member:
         备份副本id
 
         :param backup_id: The backup_id of this Member.
-        :type: str
+        :type backup_id: str
         """
         self._backup_id = backup_id
 
@@ -180,7 +199,7 @@ class Member:
         接受的共享备份副本注册的镜像id
 
         :param image_id: The image_id of this Member.
-        :type: str
+        :type image_id: str
         """
         self._image_id = image_id
 
@@ -202,7 +221,7 @@ class Member:
         接受备份共享的项目id
 
         :param dest_project_id: The dest_project_id of this Member.
-        :type: str
+        :type dest_project_id: str
         """
         self._dest_project_id = dest_project_id
 
@@ -224,7 +243,7 @@ class Member:
         目标端接受共享备份的存储库id
 
         :param vault_id: The vault_id of this Member.
-        :type: str
+        :type vault_id: str
         """
         self._vault_id = vault_id
 
@@ -246,7 +265,7 @@ class Member:
         共享记录id
 
         :param id: The id of this Member.
-        :type: str
+        :type id: str
         """
         self._id = id
 

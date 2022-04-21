@@ -52,21 +52,17 @@ class GesAsyncClient(Client):
         """绑定EIP(1.0.6)
 
         可以通过绑定弹性公网IP（简称EIP）访问GES服务。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param AttachEipRequest request
-        :return: AttachEipResponse
+        :param request: Request instance for AttachEip
+        :type request: :class:`huaweicloudsdkges.v1.AttachEipRequest`
+        :rtype: :class:`huaweicloudsdkges.v1.AttachEipResponse`
         """
         return self.attach_eip_with_http_info(request)
 
     def attach_eip_with_http_info(self, request):
-        """绑定EIP(1.0.6)
-
-        可以通过绑定弹性公网IP（简称EIP）访问GES服务。
-
-        :param AttachEipRequest request
-        :return: AttachEipResponse
-        """
-
         all_params = ['graph_id', 'action_id', 'bind_eip_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -114,26 +110,21 @@ class GesAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def clear_graph_async(self, request):
         """清空图(2.1.2)
 
         清空图中所有数据。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ClearGraphRequest request
-        :return: ClearGraphResponse
+        :param request: Request instance for ClearGraph
+        :type request: :class:`huaweicloudsdkges.v1.ClearGraphRequest`
+        :rtype: :class:`huaweicloudsdkges.v1.ClearGraphResponse`
         """
         return self.clear_graph_with_http_info(request)
 
     def clear_graph_with_http_info(self, request):
-        """清空图(2.1.2)
-
-        清空图中所有数据。
-
-        :param ClearGraphRequest request
-        :return: ClearGraphResponse
-        """
-
         all_params = ['graph_id', 'action_id', 'clear_metadata']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -181,26 +172,21 @@ class GesAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_backup_async(self, request):
         """新增备份(1.0.0)
 
         新增备份。当前图数据出现错误或故障时，可以启动备份图进行恢复。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateBackupRequest request
-        :return: CreateBackupResponse
+        :param request: Request instance for CreateBackup
+        :type request: :class:`huaweicloudsdkges.v1.CreateBackupRequest`
+        :rtype: :class:`huaweicloudsdkges.v1.CreateBackupResponse`
         """
         return self.create_backup_with_http_info(request)
 
     def create_backup_with_http_info(self, request):
-        """新增备份(1.0.0)
-
-        新增备份。当前图数据出现错误或故障时，可以启动备份图进行恢复。
-
-        :param CreateBackupRequest request
-        :return: CreateBackupResponse
-        """
-
         all_params = ['graph_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -244,26 +230,21 @@ class GesAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_graph_async(self, request):
         """创建图(2.2.2)
 
         创建一个图。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateGraphRequest request
-        :return: CreateGraphResponse
+        :param request: Request instance for CreateGraph
+        :type request: :class:`huaweicloudsdkges.v1.CreateGraphRequest`
+        :rtype: :class:`huaweicloudsdkges.v1.CreateGraphResponse`
         """
         return self.create_graph_with_http_info(request)
 
     def create_graph_with_http_info(self, request):
-        """创建图(2.2.2)
-
-        创建一个图。
-
-        :param CreateGraphRequest request
-        :return: CreateGraphResponse
-        """
-
         all_params = ['create_graph_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -307,26 +288,21 @@ class GesAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_metadata_async(self, request):
         """新增元数据(2.1.18)
 
         新增元数据。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateMetadataRequest request
-        :return: CreateMetadataResponse
+        :param request: Request instance for CreateMetadata
+        :type request: :class:`huaweicloudsdkges.v1.CreateMetadataRequest`
+        :rtype: :class:`huaweicloudsdkges.v1.CreateMetadataResponse`
         """
         return self.create_metadata_with_http_info(request)
 
     def create_metadata_with_http_info(self, request):
-        """新增元数据(2.1.18)
-
-        新增元数据。
-
-        :param CreateMetadataRequest request
-        :return: CreateMetadataResponse
-        """
-
         all_params = ['create_metadata_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -370,26 +346,21 @@ class GesAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_backup_async(self, request):
         """删除备份(1.0.0)
 
         删除备份。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteBackupRequest request
-        :return: DeleteBackupResponse
+        :param request: Request instance for DeleteBackup
+        :type request: :class:`huaweicloudsdkges.v1.DeleteBackupRequest`
+        :rtype: :class:`huaweicloudsdkges.v1.DeleteBackupResponse`
         """
         return self.delete_backup_with_http_info(request)
 
     def delete_backup_with_http_info(self, request):
-        """删除备份(1.0.0)
-
-        删除备份。
-
-        :param DeleteBackupRequest request
-        :return: DeleteBackupResponse
-        """
-
         all_params = ['backup_id', 'graph_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -435,26 +406,21 @@ class GesAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_graph_async(self, request):
         """删除图(1.0.0)
 
         删除一个图。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteGraphRequest request
-        :return: DeleteGraphResponse
+        :param request: Request instance for DeleteGraph
+        :type request: :class:`huaweicloudsdkges.v1.DeleteGraphRequest`
+        :rtype: :class:`huaweicloudsdkges.v1.DeleteGraphResponse`
         """
         return self.delete_graph_with_http_info(request)
 
     def delete_graph_with_http_info(self, request):
-        """删除图(1.0.0)
-
-        删除一个图。
-
-        :param DeleteGraphRequest request
-        :return: DeleteGraphResponse
-        """
-
         all_params = ['graph_id', 'keep_backup']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -500,26 +466,21 @@ class GesAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_metadata_async(self, request):
         """删除元数据(1.0.2)
 
         删除元数据。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteMetadataRequest request
-        :return: DeleteMetadataResponse
+        :param request: Request instance for DeleteMetadata
+        :type request: :class:`huaweicloudsdkges.v1.DeleteMetadataRequest`
+        :rtype: :class:`huaweicloudsdkges.v1.DeleteMetadataResponse`
         """
         return self.delete_metadata_with_http_info(request)
 
     def delete_metadata_with_http_info(self, request):
-        """删除元数据(1.0.2)
-
-        删除元数据。
-
-        :param DeleteMetadataRequest request
-        :return: DeleteMetadataResponse
-        """
-
         all_params = ['metadata_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -563,26 +524,21 @@ class GesAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def detach_eip_async(self, request):
         """解绑EIP(1.0.6)
 
         当无需继续使用EIP时，您可通过解绑EIP来释放网络资源。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DetachEipRequest request
-        :return: DetachEipResponse
+        :param request: Request instance for DetachEip
+        :type request: :class:`huaweicloudsdkges.v1.DetachEipRequest`
+        :rtype: :class:`huaweicloudsdkges.v1.DetachEipResponse`
         """
         return self.detach_eip_with_http_info(request)
 
     def detach_eip_with_http_info(self, request):
-        """解绑EIP(1.0.6)
-
-        当无需继续使用EIP时，您可通过解绑EIP来释放网络资源。
-
-        :param DetachEipRequest request
-        :return: DetachEipResponse
-        """
-
         all_params = ['graph_id', 'action_id', 'unbind_eip_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -630,26 +586,22 @@ class GesAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def expand_graph_async(self, request):
         """扩副本(2.2.23)
 
-        扩副本能力允许动态扩容多个从节点，扩容的从节点可以处理读请求，从而提高读请求性能。 >一万边和百亿边规格的图暂不支持扩副本。
+        扩副本能力允许动态扩容多个从节点，扩容的从节点可以处理读请求，从而提高读请求性能。
+        &gt;一万边和百亿边规格的图暂不支持扩副本。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ExpandGraphRequest request
-        :return: ExpandGraphResponse
+        :param request: Request instance for ExpandGraph
+        :type request: :class:`huaweicloudsdkges.v1.ExpandGraphRequest`
+        :rtype: :class:`huaweicloudsdkges.v1.ExpandGraphResponse`
         """
         return self.expand_graph_with_http_info(request)
 
     def expand_graph_with_http_info(self, request):
-        """扩副本(2.2.23)
-
-        扩副本能力允许动态扩容多个从节点，扩容的从节点可以处理读请求，从而提高读请求性能。 >一万边和百亿边规格的图暂不支持扩副本。
-
-        :param ExpandGraphRequest request
-        :return: ExpandGraphResponse
-        """
-
         all_params = ['graph_id', 'expand_graph_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -695,26 +647,21 @@ class GesAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def export_graph_async(self, request):
         """导出图(1.0.5)
 
         导出图。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ExportGraphRequest request
-        :return: ExportGraphResponse
+        :param request: Request instance for ExportGraph
+        :type request: :class:`huaweicloudsdkges.v1.ExportGraphRequest`
+        :rtype: :class:`huaweicloudsdkges.v1.ExportGraphResponse`
         """
         return self.export_graph_with_http_info(request)
 
     def export_graph_with_http_info(self, request):
-        """导出图(1.0.5)
-
-        导出图。
-
-        :param ExportGraphRequest request
-        :return: ExportGraphResponse
-        """
-
         all_params = ['graph_id', 'action_id', 'export_graph_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -762,26 +709,21 @@ class GesAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def import_graph_async(self, request):
         """增量导入图(2.1.14)
 
         增量导入图数据。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ImportGraphRequest request
-        :return: ImportGraphResponse
+        :param request: Request instance for ImportGraph
+        :type request: :class:`huaweicloudsdkges.v1.ImportGraphRequest`
+        :rtype: :class:`huaweicloudsdkges.v1.ImportGraphResponse`
         """
         return self.import_graph_with_http_info(request)
 
     def import_graph_with_http_info(self, request):
-        """增量导入图(2.1.14)
-
-        增量导入图数据。
-
-        :param ImportGraphRequest request
-        :return: ImportGraphResponse
-        """
-
         all_params = ['graph_id', 'action_id', 'import_graph_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -829,26 +771,21 @@ class GesAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_backups_async(self, request):
         """查看所有备份列表(1.0.0)
 
         查询备份列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListBackupsRequest request
-        :return: ListBackupsResponse
+        :param request: Request instance for ListBackups
+        :type request: :class:`huaweicloudsdkges.v1.ListBackupsRequest`
+        :rtype: :class:`huaweicloudsdkges.v1.ListBackupsResponse`
         """
         return self.list_backups_with_http_info(request)
 
     def list_backups_with_http_info(self, request):
-        """查看所有备份列表(1.0.0)
-
-        查询备份列表。
-
-        :param ListBackupsRequest request
-        :return: ListBackupsResponse
-        """
-
         all_params = ['limit', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -894,26 +831,21 @@ class GesAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_graph_backups_async(self, request):
         """查看某个图的备份列表(1.0.0)
 
         查询某个图下的备份列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListGraphBackupsRequest request
-        :return: ListGraphBackupsResponse
+        :param request: Request instance for ListGraphBackups
+        :type request: :class:`huaweicloudsdkges.v1.ListGraphBackupsRequest`
+        :rtype: :class:`huaweicloudsdkges.v1.ListGraphBackupsResponse`
         """
         return self.list_graph_backups_with_http_info(request)
 
     def list_graph_backups_with_http_info(self, request):
-        """查看某个图的备份列表(1.0.0)
-
-        查询某个图下的备份列表。
-
-        :param ListGraphBackupsRequest request
-        :return: ListGraphBackupsResponse
-        """
-
         all_params = ['graph_id', 'limit', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -961,26 +893,21 @@ class GesAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_graph_metadatas_async(self, request):
         """查询元数据(1.0.2)
 
         查询某个图下的元数据。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListGraphMetadatasRequest request
-        :return: ListGraphMetadatasResponse
+        :param request: Request instance for ListGraphMetadatas
+        :type request: :class:`huaweicloudsdkges.v1.ListGraphMetadatasRequest`
+        :rtype: :class:`huaweicloudsdkges.v1.ListGraphMetadatasResponse`
         """
         return self.list_graph_metadatas_with_http_info(request)
 
     def list_graph_metadatas_with_http_info(self, request):
-        """查询元数据(1.0.2)
-
-        查询某个图下的元数据。
-
-        :param ListGraphMetadatasRequest request
-        :return: ListGraphMetadatasResponse
-        """
-
         all_params = ['metadata_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1024,26 +951,21 @@ class GesAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_graphs_async(self, request):
         """查询图列表(2.1.18)
 
         查询当前租户所有的图。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListGraphsRequest request
-        :return: ListGraphsResponse
+        :param request: Request instance for ListGraphs
+        :type request: :class:`huaweicloudsdkges.v1.ListGraphsRequest`
+        :rtype: :class:`huaweicloudsdkges.v1.ListGraphsResponse`
         """
         return self.list_graphs_with_http_info(request)
 
     def list_graphs_with_http_info(self, request):
-        """查询图列表(2.1.18)
-
-        查询当前租户所有的图。
-
-        :param ListGraphsRequest request
-        :return: ListGraphsResponse
-        """
-
         all_params = ['offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1089,26 +1011,21 @@ class GesAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_jobs_async(self, request):
         """查询任务中心(1.1.8)
 
         查询管理面任务中心。当前创建图、关闭图、启动图、删除图、增加备份、导入图、导出图、升级图等操作为异步任务，该API用于查询这些任务的详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListJobsRequest request
-        :return: ListJobsResponse
+        :param request: Request instance for ListJobs
+        :type request: :class:`huaweicloudsdkges.v1.ListJobsRequest`
+        :rtype: :class:`huaweicloudsdkges.v1.ListJobsResponse`
         """
         return self.list_jobs_with_http_info(request)
 
     def list_jobs_with_http_info(self, request):
-        """查询任务中心(1.1.8)
-
-        查询管理面任务中心。当前创建图、关闭图、启动图、删除图、增加备份、导入图、导出图、升级图等操作为异步任务，该API用于查询这些任务的详情。
-
-        :param ListJobsRequest request
-        :return: ListJobsResponse
-        """
-
         all_params = ['end_time', 'graph_name', 'limit', 'offset', 'start_time', 'status']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1162,26 +1079,21 @@ class GesAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_metadatas_async(self, request):
         """查询元数据列表(1.0.2)
 
         查询元数据列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListMetadatasRequest request
-        :return: ListMetadatasResponse
+        :param request: Request instance for ListMetadatas
+        :type request: :class:`huaweicloudsdkges.v1.ListMetadatasRequest`
+        :rtype: :class:`huaweicloudsdkges.v1.ListMetadatasResponse`
         """
         return self.list_metadatas_with_http_info(request)
 
     def list_metadatas_with_http_info(self, request):
-        """查询元数据列表(1.0.2)
-
-        查询元数据列表。
-
-        :param ListMetadatasRequest request
-        :return: ListMetadatasResponse
-        """
-
         all_params = ['limit', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1227,26 +1139,21 @@ class GesAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_quotas_async(self, request):
         """查询配额(1.0.0)
 
         查询租户配额。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListQuotasRequest request
-        :return: ListQuotasResponse
+        :param request: Request instance for ListQuotas
+        :type request: :class:`huaweicloudsdkges.v1.ListQuotasRequest`
+        :rtype: :class:`huaweicloudsdkges.v1.ListQuotasResponse`
         """
         return self.list_quotas_with_http_info(request)
 
     def list_quotas_with_http_info(self, request):
-        """查询配额(1.0.0)
-
-        查询租户配额。
-
-        :param ListQuotasRequest request
-        :return: ListQuotasResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1288,26 +1195,21 @@ class GesAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def resize_graph_async(self, request):
         """扩容图(2.2.21)
 
         扩容图规格。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ResizeGraphRequest request
-        :return: ResizeGraphResponse
+        :param request: Request instance for ResizeGraph
+        :type request: :class:`huaweicloudsdkges.v1.ResizeGraphRequest`
+        :rtype: :class:`huaweicloudsdkges.v1.ResizeGraphResponse`
         """
         return self.resize_graph_with_http_info(request)
 
     def resize_graph_with_http_info(self, request):
-        """扩容图(2.2.21)
-
-        扩容图规格。
-
-        :param ResizeGraphRequest request
-        :return: ResizeGraphResponse
-        """
-
         all_params = ['graph_id', 'resize_graph_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1353,26 +1255,21 @@ class GesAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def restart_graph_async(self, request):
         """强制重启图(2.2.21)
 
         强制启动一个图。针对导入、导出 、运行中 、清空中的图。强制重启图，会将该图执行中的异步任务变为失败，然后停止图、启动图到运行状态。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param RestartGraphRequest request
-        :return: RestartGraphResponse
+        :param request: Request instance for RestartGraph
+        :type request: :class:`huaweicloudsdkges.v1.RestartGraphRequest`
+        :rtype: :class:`huaweicloudsdkges.v1.RestartGraphResponse`
         """
         return self.restart_graph_with_http_info(request)
 
     def restart_graph_with_http_info(self, request):
-        """强制重启图(2.2.21)
-
-        强制启动一个图。针对导入、导出 、运行中 、清空中的图。强制重启图，会将该图执行中的异步任务变为失败，然后停止图、启动图到运行状态。
-
-        :param RestartGraphRequest request
-        :return: RestartGraphResponse
-        """
-
         all_params = ['graph_id', 'action_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1418,26 +1315,21 @@ class GesAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_graph_async(self, request):
         """查询图详情(1.0.0)
 
         根据图ID查询某个图详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowGraphRequest request
-        :return: ShowGraphResponse
+        :param request: Request instance for ShowGraph
+        :type request: :class:`huaweicloudsdkges.v1.ShowGraphRequest`
+        :rtype: :class:`huaweicloudsdkges.v1.ShowGraphResponse`
         """
         return self.show_graph_with_http_info(request)
 
     def show_graph_with_http_info(self, request):
-        """查询图详情(1.0.0)
-
-        根据图ID查询某个图详情。
-
-        :param ShowGraphRequest request
-        :return: ShowGraphResponse
-        """
-
         all_params = ['graph_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1481,26 +1373,21 @@ class GesAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_job_async(self, request):
         """查询Job状态(1.0.0)-管理面
 
         查询Job的执行状态。对创建图、关闭图、启动图、删除图、导入图等异步API命令下发后，会返回jobId，通过jobId查询任务的执行状态。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowJobRequest request
-        :return: ShowJobResponse
+        :param request: Request instance for ShowJob
+        :type request: :class:`huaweicloudsdkges.v1.ShowJobRequest`
+        :rtype: :class:`huaweicloudsdkges.v1.ShowJobResponse`
         """
         return self.show_job_with_http_info(request)
 
     def show_job_with_http_info(self, request):
-        """查询Job状态(1.0.0)-管理面
-
-        查询Job的执行状态。对创建图、关闭图、启动图、删除图、导入图等异步API命令下发后，会返回jobId，通过jobId查询任务的执行状态。
-
-        :param ShowJobRequest request
-        :return: ShowJobResponse
-        """
-
         all_params = ['graph_id', 'job_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1546,26 +1433,21 @@ class GesAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def start_graph_async(self, request):
         """启动图(1.0.0)
 
         启动一个图。暂时不用的图可以先关闭，需要使用时再启动。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param StartGraphRequest request
-        :return: StartGraphResponse
+        :param request: Request instance for StartGraph
+        :type request: :class:`huaweicloudsdkges.v1.StartGraphRequest`
+        :rtype: :class:`huaweicloudsdkges.v1.StartGraphResponse`
         """
         return self.start_graph_with_http_info(request)
 
     def start_graph_with_http_info(self, request):
-        """启动图(1.0.0)
-
-        启动一个图。暂时不用的图可以先关闭，需要使用时再启动。
-
-        :param StartGraphRequest request
-        :return: StartGraphResponse
-        """
-
         all_params = ['graph_id', 'action_id', 'start_graph_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1613,26 +1495,22 @@ class GesAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def stop_graph_async(self, request):
         """关闭图(1.0.0)
 
-        关闭一个图。如果图创建好了，暂时不用可以先关闭，需要使用时再启用。 >处于关闭状态的图不计算实例费用。
+        关闭一个图。如果图创建好了，暂时不用可以先关闭，需要使用时再启用。
+        &gt;处于关闭状态的图不计算实例费用。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param StopGraphRequest request
-        :return: StopGraphResponse
+        :param request: Request instance for StopGraph
+        :type request: :class:`huaweicloudsdkges.v1.StopGraphRequest`
+        :rtype: :class:`huaweicloudsdkges.v1.StopGraphResponse`
         """
         return self.stop_graph_with_http_info(request)
 
     def stop_graph_with_http_info(self, request):
-        """关闭图(1.0.0)
-
-        关闭一个图。如果图创建好了，暂时不用可以先关闭，需要使用时再启用。 >处于关闭状态的图不计算实例费用。
-
-        :param StopGraphRequest request
-        :return: StopGraphResponse
-        """
-
         all_params = ['graph_id', 'action_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1678,26 +1556,21 @@ class GesAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def upgrade_graph_async(self, request):
         """升级图(1.0.5)
 
         升级图。图引擎服务会定期升级版本，用户可根据需要升级图。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpgradeGraphRequest request
-        :return: UpgradeGraphResponse
+        :param request: Request instance for UpgradeGraph
+        :type request: :class:`huaweicloudsdkges.v1.UpgradeGraphRequest`
+        :rtype: :class:`huaweicloudsdkges.v1.UpgradeGraphResponse`
         """
         return self.upgrade_graph_with_http_info(request)
 
     def upgrade_graph_with_http_info(self, request):
-        """升级图(1.0.5)
-
-        升级图。图引擎服务会定期升级版本，用户可根据需要升级图。
-
-        :param UpgradeGraphRequest request
-        :return: UpgradeGraphResponse
-        """
-
         all_params = ['graph_id', 'action_id', 'upgrade_graph_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1745,26 +1618,21 @@ class GesAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def upload_from_obs_async(self, request):
         """从OBS导入元数据(1.0.0)
 
         从OBS导入元数据。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UploadFromObsRequest request
-        :return: UploadFromObsResponse
+        :param request: Request instance for UploadFromObs
+        :type request: :class:`huaweicloudsdkges.v1.UploadFromObsRequest`
+        :rtype: :class:`huaweicloudsdkges.v1.UploadFromObsResponse`
         """
         return self.upload_from_obs_with_http_info(request)
 
     def upload_from_obs_with_http_info(self, request):
-        """从OBS导入元数据(1.0.0)
-
-        从OBS导入元数据。
-
-        :param UploadFromObsRequest request
-        :return: UploadFromObsResponse
-        """
-
         all_params = ['upload_from_obs_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1807,7 +1675,6 @@ class GesAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

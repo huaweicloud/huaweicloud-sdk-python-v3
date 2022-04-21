@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NovaDisassociateSecurityGroupRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class NovaDisassociateSecurityGroupRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """NovaDisassociateSecurityGroupRequest - a model defined in huaweicloud sdk"""
+        """NovaDisassociateSecurityGroupRequest
+
+        The model defined in huaweicloud sdk
+
+        :param server_id: 云服务器ID。
+        :type server_id: str
+        :param body: Body of the NovaDisassociateSecurityGroupRequest
+        :type body: :class:`huaweicloudsdkecs.v2.NovaDisassociateSecurityGroupRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class NovaDisassociateSecurityGroupRequest:
         云服务器ID。
 
         :param server_id: The server_id of this NovaDisassociateSecurityGroupRequest.
-        :type: str
+        :type server_id: str
         """
         self._server_id = server_id
 
@@ -72,7 +79,7 @@ class NovaDisassociateSecurityGroupRequest:
 
 
         :return: The body of this NovaDisassociateSecurityGroupRequest.
-        :rtype: NovaDisassociateSecurityGroupRequestBody
+        :rtype: :class:`huaweicloudsdkecs.v2.NovaDisassociateSecurityGroupRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class NovaDisassociateSecurityGroupRequest:
 
 
         :param body: The body of this NovaDisassociateSecurityGroupRequest.
-        :type: NovaDisassociateSecurityGroupRequestBody
+        :type body: :class:`huaweicloudsdkecs.v2.NovaDisassociateSecurityGroupRequestBody`
         """
         self._body = body
 

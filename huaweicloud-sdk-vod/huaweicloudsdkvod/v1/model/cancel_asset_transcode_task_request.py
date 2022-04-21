@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CancelAssetTranscodeTaskRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CancelAssetTranscodeTaskRequest:
     }
 
     def __init__(self, asset_id=None):
-        """CancelAssetTranscodeTaskRequest - a model defined in huaweicloud sdk"""
+        """CancelAssetTranscodeTaskRequest
+
+        The model defined in huaweicloud sdk
+
+        :param asset_id: 媒资ID。
+        :type asset_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class CancelAssetTranscodeTaskRequest:
         媒资ID。
 
         :param asset_id: The asset_id of this CancelAssetTranscodeTaskRequest.
-        :type: str
+        :type asset_id: str
         """
         self._asset_id = asset_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Dress:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Dress:
     }
 
     def __init__(self, glass=None, hat=None):
-        """Dress - a model defined in huaweicloud sdk"""
+        """Dress
+
+        The model defined in huaweicloud sdk
+
+        :param glass: 是否带眼镜： • yes：带眼镜 • dark：带墨镜 • none：未戴眼镜 • unknown：未知
+        :type glass: str
+        :param hat: 是否戴帽子： • yes：戴帽子 • none：未戴帽子 • unknown：未知
+        :type hat: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class Dress:
         是否带眼镜： • yes：带眼镜 • dark：带墨镜 • none：未戴眼镜 • unknown：未知
 
         :param glass: The glass of this Dress.
-        :type: str
+        :type glass: str
         """
         self._glass = glass
 
@@ -85,7 +92,7 @@ class Dress:
         是否戴帽子： • yes：戴帽子 • none：未戴帽子 • unknown：未知
 
         :param hat: The hat of this Dress.
-        :type: str
+        :type hat: str
         """
         self._hat = hat
 

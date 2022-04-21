@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListBusinessRisksResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListBusinessRisksResponse(SdkResponse):
     }
 
     def __init__(self, total=None, data=None):
-        """ListBusinessRisksResponse - a model defined in huaweicloud sdk"""
+        """ListBusinessRisksResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 业务风险总数
+        :type total: int
+        :param data: 业务风险列表
+        :type data: list[:class:`huaweicloudsdkvss.v3.BusinessRiskItem`]
+        """
         
         super(ListBusinessRisksResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListBusinessRisksResponse(SdkResponse):
         业务风险总数
 
         :param total: The total of this ListBusinessRisksResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -74,7 +81,7 @@ class ListBusinessRisksResponse(SdkResponse):
         业务风险列表
 
         :return: The data of this ListBusinessRisksResponse.
-        :rtype: list[BusinessRiskItem]
+        :rtype: list[:class:`huaweicloudsdkvss.v3.BusinessRiskItem`]
         """
         return self._data
 
@@ -85,7 +92,7 @@ class ListBusinessRisksResponse(SdkResponse):
         业务风险列表
 
         :param data: The data of this ListBusinessRisksResponse.
-        :type: list[BusinessRiskItem]
+        :type data: list[:class:`huaweicloudsdkvss.v3.BusinessRiskItem`]
         """
         self._data = data
 

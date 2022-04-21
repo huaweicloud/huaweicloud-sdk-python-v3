@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryCorpAdminResultDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class QueryCorpAdminResultDTO:
     }
 
     def __init__(self, id=None, account=None, name=None, admin_type=None, email=None, phone=None, country=None, dept=None):
-        """QueryCorpAdminResultDTO - a model defined in huaweicloud sdk"""
+        """QueryCorpAdminResultDTO
+
+        The model defined in huaweicloud sdk
+
+        :param id: 用户id
+        :type id: str
+        :param account: 用户账号
+        :type account: str
+        :param name: 名称
+        :type name: str
+        :param admin_type: 管理员类型。 0：默认管理员 1：普通管理员 
+        :type admin_type: int
+        :param email: 邮箱
+        :type email: str
+        :param phone: 手机号
+        :type phone: str
+        :param country: 手机号所属的国家
+        :type country: str
+        :param dept: 
+        :type dept: :class:`huaweicloudsdkmeeting.v1.DeptBasicDTO`
+        """
         
         
 
@@ -93,7 +112,7 @@ class QueryCorpAdminResultDTO:
         用户id
 
         :param id: The id of this QueryCorpAdminResultDTO.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -115,7 +134,7 @@ class QueryCorpAdminResultDTO:
         用户账号
 
         :param account: The account of this QueryCorpAdminResultDTO.
-        :type: str
+        :type account: str
         """
         self._account = account
 
@@ -137,7 +156,7 @@ class QueryCorpAdminResultDTO:
         名称
 
         :param name: The name of this QueryCorpAdminResultDTO.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -159,7 +178,7 @@ class QueryCorpAdminResultDTO:
         管理员类型。 0：默认管理员 1：普通管理员 
 
         :param admin_type: The admin_type of this QueryCorpAdminResultDTO.
-        :type: int
+        :type admin_type: int
         """
         self._admin_type = admin_type
 
@@ -181,7 +200,7 @@ class QueryCorpAdminResultDTO:
         邮箱
 
         :param email: The email of this QueryCorpAdminResultDTO.
-        :type: str
+        :type email: str
         """
         self._email = email
 
@@ -203,7 +222,7 @@ class QueryCorpAdminResultDTO:
         手机号
 
         :param phone: The phone of this QueryCorpAdminResultDTO.
-        :type: str
+        :type phone: str
         """
         self._phone = phone
 
@@ -225,7 +244,7 @@ class QueryCorpAdminResultDTO:
         手机号所属的国家
 
         :param country: The country of this QueryCorpAdminResultDTO.
-        :type: str
+        :type country: str
         """
         self._country = country
 
@@ -235,7 +254,7 @@ class QueryCorpAdminResultDTO:
 
 
         :return: The dept of this QueryCorpAdminResultDTO.
-        :rtype: DeptBasicDTO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.DeptBasicDTO`
         """
         return self._dept
 
@@ -245,7 +264,7 @@ class QueryCorpAdminResultDTO:
 
 
         :param dept: The dept of this QueryCorpAdminResultDTO.
-        :type: DeptBasicDTO
+        :type dept: :class:`huaweicloudsdkmeeting.v1.DeptBasicDTO`
         """
         self._dept = dept
 

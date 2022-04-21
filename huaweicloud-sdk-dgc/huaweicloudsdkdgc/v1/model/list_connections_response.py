@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListConnectionsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListConnectionsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, connections=None):
-        """ListConnectionsResponse - a model defined in huaweicloud sdk"""
+        """ListConnectionsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 
+        :type total: int
+        :param connections: 
+        :type connections: list[:class:`huaweicloudsdkdgc.v1.ConnectionInfo`]
+        """
         
         super(ListConnectionsResponse, self).__init__()
 
@@ -61,7 +68,7 @@ class ListConnectionsResponse(SdkResponse):
 
 
         :param total: The total of this ListConnectionsResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -71,7 +78,7 @@ class ListConnectionsResponse(SdkResponse):
 
 
         :return: The connections of this ListConnectionsResponse.
-        :rtype: list[ConnectionInfo]
+        :rtype: list[:class:`huaweicloudsdkdgc.v1.ConnectionInfo`]
         """
         return self._connections
 
@@ -81,7 +88,7 @@ class ListConnectionsResponse(SdkResponse):
 
 
         :param connections: The connections of this ListConnectionsResponse.
-        :type: list[ConnectionInfo]
+        :type connections: list[:class:`huaweicloudsdkdgc.v1.ConnectionInfo`]
         """
         self._connections = connections
 

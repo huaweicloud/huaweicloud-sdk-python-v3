@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreatePortOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreatePortOption:
     }
 
     def __init__(self, device_owner=None, network_id=None, fixed_ips=None):
-        """CreatePortOption - a model defined in huaweicloud sdk"""
+        """CreatePortOption
+
+        The model defined in huaweicloud sdk
+
+        :param device_owner: 端口设备所属。  取值范围：目前只支持指定\&quot;neutron:VIP_PORT\&quot;，neutron:VIP_PORT表示创建的是VIP
+        :type device_owner: str
+        :param network_id: 端口所属网络的ID。  约束：必须是存在的网络ID。
+        :type network_id: str
+        :param fixed_ips: 端口IP  约束：一个端口只支持一个fixed_ip，且不支持更新。
+        :type fixed_ips: list[:class:`huaweicloudsdkiec.v1.FixedIp`]
+        """
         
         
 
@@ -66,7 +75,7 @@ class CreatePortOption:
         端口设备所属。  取值范围：目前只支持指定\"neutron:VIP_PORT\"，neutron:VIP_PORT表示创建的是VIP
 
         :param device_owner: The device_owner of this CreatePortOption.
-        :type: str
+        :type device_owner: str
         """
         self._device_owner = device_owner
 
@@ -88,7 +97,7 @@ class CreatePortOption:
         端口所属网络的ID。  约束：必须是存在的网络ID。
 
         :param network_id: The network_id of this CreatePortOption.
-        :type: str
+        :type network_id: str
         """
         self._network_id = network_id
 
@@ -99,7 +108,7 @@ class CreatePortOption:
         端口IP  约束：一个端口只支持一个fixed_ip，且不支持更新。
 
         :return: The fixed_ips of this CreatePortOption.
-        :rtype: list[FixedIp]
+        :rtype: list[:class:`huaweicloudsdkiec.v1.FixedIp`]
         """
         return self._fixed_ips
 
@@ -110,7 +119,7 @@ class CreatePortOption:
         端口IP  约束：一个端口只支持一个fixed_ip，且不支持更新。
 
         :param fixed_ips: The fixed_ips of this CreatePortOption.
-        :type: list[FixedIp]
+        :type fixed_ips: list[:class:`huaweicloudsdkiec.v1.FixedIp`]
         """
         self._fixed_ips = fixed_ips
 

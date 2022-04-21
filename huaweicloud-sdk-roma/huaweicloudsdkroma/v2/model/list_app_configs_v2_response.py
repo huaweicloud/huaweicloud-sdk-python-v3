@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAppConfigsV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListAppConfigsV2Response(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, configs=None):
-        """ListAppConfigsV2Response - a model defined in huaweicloud sdk"""
+        """ListAppConfigsV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param size: 本次返回的列表长度
+        :type size: int
+        :param total: 满足条件的记录数
+        :type total: int
+        :param configs: 本次查询到的应用配置列表
+        :type configs: list[:class:`huaweicloudsdkroma.v2.AppConfigInfoV2`]
+        """
         
         super(ListAppConfigsV2Response, self).__init__()
 
@@ -66,7 +75,7 @@ class ListAppConfigsV2Response(SdkResponse):
         本次返回的列表长度
 
         :param size: The size of this ListAppConfigsV2Response.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -88,7 +97,7 @@ class ListAppConfigsV2Response(SdkResponse):
         满足条件的记录数
 
         :param total: The total of this ListAppConfigsV2Response.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -99,7 +108,7 @@ class ListAppConfigsV2Response(SdkResponse):
         本次查询到的应用配置列表
 
         :return: The configs of this ListAppConfigsV2Response.
-        :rtype: list[AppConfigInfoV2]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.AppConfigInfoV2`]
         """
         return self._configs
 
@@ -110,7 +119,7 @@ class ListAppConfigsV2Response(SdkResponse):
         本次查询到的应用配置列表
 
         :param configs: The configs of this ListAppConfigsV2Response.
-        :type: list[AppConfigInfoV2]
+        :type configs: list[:class:`huaweicloudsdkroma.v2.AppConfigInfoV2`]
         """
         self._configs = configs
 

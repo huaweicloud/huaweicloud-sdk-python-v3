@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Deduplication:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class Deduplication:
     }
 
     def __init__(self, attributes=None):
-        """Deduplication - a model defined in huaweicloud sdk"""
+        """Deduplication
+
+        The model defined in huaweicloud sdk
+
+        :param attributes: 属性。
+        :type attributes: list[str]
+        """
         
         
 
@@ -58,7 +63,7 @@ class Deduplication:
         属性。
 
         :param attributes: The attributes of this Deduplication.
-        :type: list[str]
+        :type attributes: list[str]
         """
         self._attributes = attributes
 

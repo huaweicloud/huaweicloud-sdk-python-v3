@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSnapshotDetailsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListSnapshotDetailsRequest:
     }
 
     def __init__(self, snapshot_id=None):
-        """ListSnapshotDetailsRequest - a model defined in huaweicloud sdk"""
+        """ListSnapshotDetailsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param snapshot_id: 快照ID。
+        :type snapshot_id: str
+        """
         
         
 
@@ -43,7 +48,7 @@ class ListSnapshotDetailsRequest:
     def snapshot_id(self):
         """Gets the snapshot_id of this ListSnapshotDetailsRequest.
 
-        快照ID
+        快照ID。
 
         :return: The snapshot_id of this ListSnapshotDetailsRequest.
         :rtype: str
@@ -54,10 +59,10 @@ class ListSnapshotDetailsRequest:
     def snapshot_id(self, snapshot_id):
         """Sets the snapshot_id of this ListSnapshotDetailsRequest.
 
-        快照ID
+        快照ID。
 
         :param snapshot_id: The snapshot_id of this ListSnapshotDetailsRequest.
-        :type: str
+        :type snapshot_id: str
         """
         self._snapshot_id = snapshot_id
 

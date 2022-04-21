@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowVpcepConnectionResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowVpcepConnectionResponse(SdkResponse):
     }
 
     def __init__(self, connections=None, vpcep_update_switch=None, total_count=None):
-        """ShowVpcepConnectionResponse - a model defined in huaweicloud sdk"""
+        """ShowVpcepConnectionResponse
+
+        The model defined in huaweicloud sdk
+
+        :param connections: 
+        :type connections: list[:class:`huaweicloudsdkcss.v1.Connections`]
+        :param vpcep_update_switch: 终端节点更新开关。
+        :type vpcep_update_switch: bool
+        :param total_count: 终端节点数量。
+        :type total_count: int
+        """
         
         super(ShowVpcepConnectionResponse, self).__init__()
 
@@ -56,7 +65,7 @@ class ShowVpcepConnectionResponse(SdkResponse):
 
 
         :return: The connections of this ShowVpcepConnectionResponse.
-        :rtype: list[Connections]
+        :rtype: list[:class:`huaweicloudsdkcss.v1.Connections`]
         """
         return self._connections
 
@@ -66,7 +75,7 @@ class ShowVpcepConnectionResponse(SdkResponse):
 
 
         :param connections: The connections of this ShowVpcepConnectionResponse.
-        :type: list[Connections]
+        :type connections: list[:class:`huaweicloudsdkcss.v1.Connections`]
         """
         self._connections = connections
 
@@ -88,7 +97,7 @@ class ShowVpcepConnectionResponse(SdkResponse):
         终端节点更新开关。
 
         :param vpcep_update_switch: The vpcep_update_switch of this ShowVpcepConnectionResponse.
-        :type: bool
+        :type vpcep_update_switch: bool
         """
         self._vpcep_update_switch = vpcep_update_switch
 
@@ -110,7 +119,7 @@ class ShowVpcepConnectionResponse(SdkResponse):
         终端节点数量。
 
         :param total_count: The total_count of this ShowVpcepConnectionResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 

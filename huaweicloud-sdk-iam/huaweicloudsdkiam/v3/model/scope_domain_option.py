@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ScopeDomainOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ScopeDomainOption:
     }
 
     def __init__(self, id=None, name=None):
-        """ScopeDomainOption - a model defined in huaweicloud sdk"""
+        """ScopeDomainOption
+
+        The model defined in huaweicloud sdk
+
+        :param id: 账号ID，id与name二选一即可。
+        :type id: str
+        :param name: 账号名，id与name二选一即可。
+        :type name: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class ScopeDomainOption:
         账号ID，id与name二选一即可。
 
         :param id: The id of this ScopeDomainOption.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -85,7 +92,7 @@ class ScopeDomainOption:
         账号名，id与name二选一即可。
 
         :param name: The name of this ScopeDomainOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 

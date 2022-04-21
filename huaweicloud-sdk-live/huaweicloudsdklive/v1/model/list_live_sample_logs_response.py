@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListLiveSampleLogsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListLiveSampleLogsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, domain=None, logs=None):
-        """ListLiveSampleLogsResponse - a model defined in huaweicloud sdk"""
+        """ListLiveSampleLogsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 符合查询条件的总条目数
+        :type total: int
+        :param domain: 播放域名
+        :type domain: str
+        :param logs: 日志信息列表
+        :type logs: list[:class:`huaweicloudsdklive.v1.LogInfo`]
+        """
         
         super(ListLiveSampleLogsResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListLiveSampleLogsResponse(SdkResponse):
         符合查询条件的总条目数
 
         :param total: The total of this ListLiveSampleLogsResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -90,7 +99,7 @@ class ListLiveSampleLogsResponse(SdkResponse):
         播放域名
 
         :param domain: The domain of this ListLiveSampleLogsResponse.
-        :type: str
+        :type domain: str
         """
         self._domain = domain
 
@@ -101,7 +110,7 @@ class ListLiveSampleLogsResponse(SdkResponse):
         日志信息列表
 
         :return: The logs of this ListLiveSampleLogsResponse.
-        :rtype: list[LogInfo]
+        :rtype: list[:class:`huaweicloudsdklive.v1.LogInfo`]
         """
         return self._logs
 
@@ -112,7 +121,7 @@ class ListLiveSampleLogsResponse(SdkResponse):
         日志信息列表
 
         :param logs: The logs of this ListLiveSampleLogsResponse.
-        :type: list[LogInfo]
+        :type logs: list[:class:`huaweicloudsdklive.v1.LogInfo`]
         """
         self._logs = logs
 

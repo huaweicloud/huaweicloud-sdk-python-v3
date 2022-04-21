@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TemplateState:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -58,7 +57,41 @@ class TemplateState:
     }
 
     def __init__(self, type=None, name=None, module_or_template_id=None, module_or_template_name=None, display_name=None, dsl_method=None, parameters=None, is_manual_execution=None, job_parameter_validate=None, is_show_codehub_url=None, is_execute=None, job_id=None, job_name=None, project_id=None, execution_mode=None):
-        """TemplateState - a model defined in huaweicloud sdk"""
+        """TemplateState
+
+        The model defined in huaweicloud sdk
+
+        :param type: 任务类型
+        :type type: str
+        :param name: 任务名字
+        :type name: str
+        :param module_or_template_id: 模板任务ID
+        :type module_or_template_id: str
+        :param module_or_template_name: 模板任务名字
+        :type module_or_template_name: str
+        :param display_name: 任务在流水线页面展示名字
+        :type display_name: str
+        :param dsl_method: 流水线可挂载任务类型
+        :type dsl_method: str
+        :param parameters: 任务参数,map类型数据
+        :type parameters: dict(str, object)
+        :param is_manual_execution: 是否手动执行
+        :type is_manual_execution: bool
+        :param job_parameter_validate: 任务参数是否校验
+        :type job_parameter_validate: bool
+        :param is_show_codehub_url: 是否显示代码仓URL
+        :type is_show_codehub_url: bool
+        :param is_execute: 是否执行
+        :type is_execute: bool
+        :param job_id: 执行任务ID
+        :type job_id: str
+        :param job_name: 执行任务名字
+        :type job_name: str
+        :param project_id: 任务所属项目ID
+        :type project_id: str
+        :param execution_mode: 控制阶段下任务的串并行（type是task的execution_mode值为null，type是stage的execution_mode可选parallel（并行）或者serial（串行））
+        :type execution_mode: str
+        """
         
         
 
@@ -113,7 +146,7 @@ class TemplateState:
         任务类型
 
         :param type: The type of this TemplateState.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -135,7 +168,7 @@ class TemplateState:
         任务名字
 
         :param name: The name of this TemplateState.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -157,7 +190,7 @@ class TemplateState:
         模板任务ID
 
         :param module_or_template_id: The module_or_template_id of this TemplateState.
-        :type: str
+        :type module_or_template_id: str
         """
         self._module_or_template_id = module_or_template_id
 
@@ -179,7 +212,7 @@ class TemplateState:
         模板任务名字
 
         :param module_or_template_name: The module_or_template_name of this TemplateState.
-        :type: str
+        :type module_or_template_name: str
         """
         self._module_or_template_name = module_or_template_name
 
@@ -201,7 +234,7 @@ class TemplateState:
         任务在流水线页面展示名字
 
         :param display_name: The display_name of this TemplateState.
-        :type: str
+        :type display_name: str
         """
         self._display_name = display_name
 
@@ -223,7 +256,7 @@ class TemplateState:
         流水线可挂载任务类型
 
         :param dsl_method: The dsl_method of this TemplateState.
-        :type: str
+        :type dsl_method: str
         """
         self._dsl_method = dsl_method
 
@@ -245,7 +278,7 @@ class TemplateState:
         任务参数,map类型数据
 
         :param parameters: The parameters of this TemplateState.
-        :type: dict(str, object)
+        :type parameters: dict(str, object)
         """
         self._parameters = parameters
 
@@ -267,7 +300,7 @@ class TemplateState:
         是否手动执行
 
         :param is_manual_execution: The is_manual_execution of this TemplateState.
-        :type: bool
+        :type is_manual_execution: bool
         """
         self._is_manual_execution = is_manual_execution
 
@@ -289,7 +322,7 @@ class TemplateState:
         任务参数是否校验
 
         :param job_parameter_validate: The job_parameter_validate of this TemplateState.
-        :type: bool
+        :type job_parameter_validate: bool
         """
         self._job_parameter_validate = job_parameter_validate
 
@@ -311,7 +344,7 @@ class TemplateState:
         是否显示代码仓URL
 
         :param is_show_codehub_url: The is_show_codehub_url of this TemplateState.
-        :type: bool
+        :type is_show_codehub_url: bool
         """
         self._is_show_codehub_url = is_show_codehub_url
 
@@ -333,7 +366,7 @@ class TemplateState:
         是否执行
 
         :param is_execute: The is_execute of this TemplateState.
-        :type: bool
+        :type is_execute: bool
         """
         self._is_execute = is_execute
 
@@ -355,7 +388,7 @@ class TemplateState:
         执行任务ID
 
         :param job_id: The job_id of this TemplateState.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -377,7 +410,7 @@ class TemplateState:
         执行任务名字
 
         :param job_name: The job_name of this TemplateState.
-        :type: str
+        :type job_name: str
         """
         self._job_name = job_name
 
@@ -399,7 +432,7 @@ class TemplateState:
         任务所属项目ID
 
         :param project_id: The project_id of this TemplateState.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -421,7 +454,7 @@ class TemplateState:
         控制阶段下任务的串并行（type是task的execution_mode值为null，type是stage的execution_mode可选parallel（并行）或者serial（串行））
 
         :param execution_mode: The execution_mode of this TemplateState.
-        :type: str
+        :type execution_mode: str
         """
         self._execution_mode = execution_mode
 

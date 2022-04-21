@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateWhiteBlackIpRuleRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UpdateWhiteBlackIpRuleRequestBody:
     }
 
     def __init__(self, name=None, addr=None, description=None, white=None):
-        """UpdateWhiteBlackIpRuleRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateWhiteBlackIpRuleRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param name: 黑白名单规则名称
+        :type name: str
+        :param addr: 黑白名单ip地址，需要输入标准的ip地址或地址段，例如：42.123.120.66或42.123.120.0/16
+        :type addr: str
+        :param description: 黑白名单规则描述
+        :type description: str
+        :param white: 防护动作：  - 0 拦截  - 1 放行  - 2 仅记录
+        :type white: int
+        """
         
         
 
@@ -70,7 +81,7 @@ class UpdateWhiteBlackIpRuleRequestBody:
         黑白名单规则名称
 
         :param name: The name of this UpdateWhiteBlackIpRuleRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -92,7 +103,7 @@ class UpdateWhiteBlackIpRuleRequestBody:
         黑白名单ip地址，需要输入标准的ip地址或地址段，例如：42.123.120.66或42.123.120.0/16
 
         :param addr: The addr of this UpdateWhiteBlackIpRuleRequestBody.
-        :type: str
+        :type addr: str
         """
         self._addr = addr
 
@@ -114,7 +125,7 @@ class UpdateWhiteBlackIpRuleRequestBody:
         黑白名单规则描述
 
         :param description: The description of this UpdateWhiteBlackIpRuleRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -136,7 +147,7 @@ class UpdateWhiteBlackIpRuleRequestBody:
         防护动作：  - 0 拦截  - 1 放行  - 2 仅记录
 
         :param white: The white of this UpdateWhiteBlackIpRuleRequestBody.
-        :type: int
+        :type white: int
         """
         self._white = white
 

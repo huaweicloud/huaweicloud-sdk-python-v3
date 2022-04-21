@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExecuteTbSessionResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ExecuteTbSessionResponse(SdkResponse):
     }
 
     def __init__(self, questions=None):
-        """ExecuteTbSessionResponse - a model defined in huaweicloud sdk"""
+        """ExecuteTbSessionResponse
+
+        The model defined in huaweicloud sdk
+
+        :param questions: 所有数据的信息。
+        :type questions: list[:class:`huaweicloudsdkcbs.v1.ExecuteTbQuestion`]
+        """
         
         super(ExecuteTbSessionResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ExecuteTbSessionResponse(SdkResponse):
         所有数据的信息。
 
         :return: The questions of this ExecuteTbSessionResponse.
-        :rtype: list[ExecuteTbQuestion]
+        :rtype: list[:class:`huaweicloudsdkcbs.v1.ExecuteTbQuestion`]
         """
         return self._questions
 
@@ -58,7 +63,7 @@ class ExecuteTbSessionResponse(SdkResponse):
         所有数据的信息。
 
         :param questions: The questions of this ExecuteTbSessionResponse.
-        :type: list[ExecuteTbQuestion]
+        :type questions: list[:class:`huaweicloudsdkcbs.v1.ExecuteTbQuestion`]
         """
         self._questions = questions
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateHealthmonitorRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateHealthmonitorRequestBody:
     }
 
     def __init__(self, healthmonitor=None):
-        """UpdateHealthmonitorRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateHealthmonitorRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param healthmonitor: 
+        :type healthmonitor: :class:`huaweicloudsdkelb.v2.UpdateHealthmonitorReq`
+        """
         
         
 
@@ -45,7 +50,7 @@ class UpdateHealthmonitorRequestBody:
 
 
         :return: The healthmonitor of this UpdateHealthmonitorRequestBody.
-        :rtype: UpdateHealthmonitorReq
+        :rtype: :class:`huaweicloudsdkelb.v2.UpdateHealthmonitorReq`
         """
         return self._healthmonitor
 
@@ -55,7 +60,7 @@ class UpdateHealthmonitorRequestBody:
 
 
         :param healthmonitor: The healthmonitor of this UpdateHealthmonitorRequestBody.
-        :type: UpdateHealthmonitorReq
+        :type healthmonitor: :class:`huaweicloudsdkelb.v2.UpdateHealthmonitorReq`
         """
         self._healthmonitor = healthmonitor
 

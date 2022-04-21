@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListHasVerifiedContactsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class ListHasVerifiedContactsRequest:
     }
 
     def __init__(self, contact_way=None, customer_id=None, sub_customer_id=None, expired_time=None, verified_id=None, contact_value=None, area_code=None, offset=None, limit=None, x_site=None, x_language=None, x_time_zone=None):
-        """ListHasVerifiedContactsRequest - a model defined in huaweicloud sdk"""
+        """ListHasVerifiedContactsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param contact_way: 联系方式类型
+        :type contact_way: int
+        :param customer_id: 客户id
+        :type customer_id: str
+        :param sub_customer_id: 子用户id
+        :type sub_customer_id: str
+        :param expired_time: 过期时间
+        :type expired_time: str
+        :param verified_id: 验证序列号
+        :type verified_id: str
+        :param contact_value: 联系方式的值
+        :type contact_value: str
+        :param area_code: 国家码
+        :type area_code: str
+        :param offset: 查询偏移量
+        :type offset: int
+        :param limit: 查询数量
+        :type limit: int
+        :param x_site: 对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
+        :type x_site: int
+        :param x_language: 语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
+        :type x_language: str
+        :param x_time_zone: 环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
+        :type x_time_zone: str
+        """
         
         
 
@@ -113,7 +140,7 @@ class ListHasVerifiedContactsRequest:
         联系方式类型
 
         :param contact_way: The contact_way of this ListHasVerifiedContactsRequest.
-        :type: int
+        :type contact_way: int
         """
         self._contact_way = contact_way
 
@@ -135,7 +162,7 @@ class ListHasVerifiedContactsRequest:
         客户id
 
         :param customer_id: The customer_id of this ListHasVerifiedContactsRequest.
-        :type: str
+        :type customer_id: str
         """
         self._customer_id = customer_id
 
@@ -157,7 +184,7 @@ class ListHasVerifiedContactsRequest:
         子用户id
 
         :param sub_customer_id: The sub_customer_id of this ListHasVerifiedContactsRequest.
-        :type: str
+        :type sub_customer_id: str
         """
         self._sub_customer_id = sub_customer_id
 
@@ -179,7 +206,7 @@ class ListHasVerifiedContactsRequest:
         过期时间
 
         :param expired_time: The expired_time of this ListHasVerifiedContactsRequest.
-        :type: str
+        :type expired_time: str
         """
         self._expired_time = expired_time
 
@@ -201,7 +228,7 @@ class ListHasVerifiedContactsRequest:
         验证序列号
 
         :param verified_id: The verified_id of this ListHasVerifiedContactsRequest.
-        :type: str
+        :type verified_id: str
         """
         self._verified_id = verified_id
 
@@ -223,7 +250,7 @@ class ListHasVerifiedContactsRequest:
         联系方式的值
 
         :param contact_value: The contact_value of this ListHasVerifiedContactsRequest.
-        :type: str
+        :type contact_value: str
         """
         self._contact_value = contact_value
 
@@ -245,7 +272,7 @@ class ListHasVerifiedContactsRequest:
         国家码
 
         :param area_code: The area_code of this ListHasVerifiedContactsRequest.
-        :type: str
+        :type area_code: str
         """
         self._area_code = area_code
 
@@ -267,7 +294,7 @@ class ListHasVerifiedContactsRequest:
         查询偏移量
 
         :param offset: The offset of this ListHasVerifiedContactsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -289,7 +316,7 @@ class ListHasVerifiedContactsRequest:
         查询数量
 
         :param limit: The limit of this ListHasVerifiedContactsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -311,7 +338,7 @@ class ListHasVerifiedContactsRequest:
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
         :param x_site: The x_site of this ListHasVerifiedContactsRequest.
-        :type: int
+        :type x_site: int
         """
         self._x_site = x_site
 
@@ -333,7 +360,7 @@ class ListHasVerifiedContactsRequest:
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
         :param x_language: The x_language of this ListHasVerifiedContactsRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -355,7 +382,7 @@ class ListHasVerifiedContactsRequest:
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 
         :param x_time_zone: The x_time_zone of this ListHasVerifiedContactsRequest.
-        :type: str
+        :type x_time_zone: str
         """
         self._x_time_zone = x_time_zone
 

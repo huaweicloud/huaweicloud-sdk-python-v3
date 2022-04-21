@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TaskOutputHosting:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class TaskOutputHosting:
     }
 
     def __init__(self, data_category=None):
-        """TaskOutputHosting - a model defined in huaweicloud sdk"""
+        """TaskOutputHosting
+
+        The model defined in huaweicloud sdk
+
+        :param data_category: 作业输出数据类别的列表，选填，仅部分服务需要。当输出类型下有这个列表时，表示希望这个输出类型下存放dataCategory列表内的数据。
+        :type data_category: list[str]
+        """
         
         
 
@@ -58,7 +63,7 @@ class TaskOutputHosting:
         作业输出数据类别的列表，选填，仅部分服务需要。当输出类型下有这个列表时，表示希望这个输出类型下存放dataCategory列表内的数据。
 
         :param data_category: The data_category of this TaskOutputHosting.
-        :type: list[str]
+        :type data_category: list[str]
         """
         self._data_category = data_category
 

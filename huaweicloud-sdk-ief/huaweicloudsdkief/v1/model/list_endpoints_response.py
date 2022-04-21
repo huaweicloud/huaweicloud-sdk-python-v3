@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListEndpointsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListEndpointsResponse(SdkResponse):
     }
 
     def __init__(self, endpoints=None, count=None):
-        """ListEndpointsResponse - a model defined in huaweicloud sdk"""
+        """ListEndpointsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param endpoints: 端点详情
+        :type endpoints: list[:class:`huaweicloudsdkief.v1.EndpointObjResp`]
+        :param count: 满足条件的端点个数
+        :type count: int
+        """
         
         super(ListEndpointsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListEndpointsResponse(SdkResponse):
         端点详情
 
         :return: The endpoints of this ListEndpointsResponse.
-        :rtype: list[EndpointObjResp]
+        :rtype: list[:class:`huaweicloudsdkief.v1.EndpointObjResp`]
         """
         return self._endpoints
 
@@ -63,7 +70,7 @@ class ListEndpointsResponse(SdkResponse):
         端点详情
 
         :param endpoints: The endpoints of this ListEndpointsResponse.
-        :type: list[EndpointObjResp]
+        :type endpoints: list[:class:`huaweicloudsdkief.v1.EndpointObjResp`]
         """
         self._endpoints = endpoints
 
@@ -85,7 +92,7 @@ class ListEndpointsResponse(SdkResponse):
         满足条件的端点个数
 
         :param count: The count of this ListEndpointsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

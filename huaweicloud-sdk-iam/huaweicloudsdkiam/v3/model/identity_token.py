@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IdentityToken:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class IdentityToken:
     }
 
     def __init__(self, id=None, duration_seconds=None):
-        """IdentityToken - a model defined in huaweicloud sdk"""
+        """IdentityToken
+
+        The model defined in huaweicloud sdk
+
+        :param id: token的ID。与请求头中的X-Auth-Token含义相同，待废弃。
+        :type id: str
+        :param duration_seconds: AK/SK和securitytoken的有效期，时间单位为秒。取值范围：15min ~ 24h ，默认为15min。
+        :type duration_seconds: int
+        """
         
         
 
@@ -63,7 +70,7 @@ class IdentityToken:
         token的ID。与请求头中的X-Auth-Token含义相同，待废弃。
 
         :param id: The id of this IdentityToken.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -85,7 +92,7 @@ class IdentityToken:
         AK/SK和securitytoken的有效期，时间单位为秒。取值范围：15min ~ 24h ，默认为15min。
 
         :param duration_seconds: The duration_seconds of this IdentityToken.
-        :type: int
+        :type duration_seconds: int
         """
         self._duration_seconds = duration_seconds
 

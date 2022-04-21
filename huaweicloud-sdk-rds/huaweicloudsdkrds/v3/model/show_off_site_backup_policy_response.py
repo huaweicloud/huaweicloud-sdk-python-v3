@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowOffSiteBackupPolicyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowOffSiteBackupPolicyResponse(SdkResponse):
     }
 
     def __init__(self, policy_para=None):
-        """ShowOffSiteBackupPolicyResponse - a model defined in huaweicloud sdk"""
+        """ShowOffSiteBackupPolicyResponse
+
+        The model defined in huaweicloud sdk
+
+        :param policy_para: 备份策略对象，包括备份类型、备份保留天数、目标区域ID和目标project ID。
+        :type policy_para: list[:class:`huaweicloudsdkrds.v3.GetOffSiteBackupPolicy`]
+        """
         
         super(ShowOffSiteBackupPolicyResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ShowOffSiteBackupPolicyResponse(SdkResponse):
         备份策略对象，包括备份类型、备份保留天数、目标区域ID和目标project ID。
 
         :return: The policy_para of this ShowOffSiteBackupPolicyResponse.
-        :rtype: list[GetOffSiteBackupPolicy]
+        :rtype: list[:class:`huaweicloudsdkrds.v3.GetOffSiteBackupPolicy`]
         """
         return self._policy_para
 
@@ -58,7 +63,7 @@ class ShowOffSiteBackupPolicyResponse(SdkResponse):
         备份策略对象，包括备份类型、备份保留天数、目标区域ID和目标project ID。
 
         :param policy_para: The policy_para of this ShowOffSiteBackupPolicyResponse.
-        :type: list[GetOffSiteBackupPolicy]
+        :type policy_para: list[:class:`huaweicloudsdkrds.v3.GetOffSiteBackupPolicy`]
         """
         self._policy_para = policy_para
 

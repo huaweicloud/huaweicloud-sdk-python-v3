@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Extends:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class Extends:
     }
 
     def __init__(self, tag_ids=None, domain_ids=None, source=None, return_all_answers=None):
-        """Extends - a model defined in huaweicloud sdk"""
+        """Extends
+
+        The model defined in huaweicloud sdk
+
+        :param tag_ids: 
+        :type tag_ids: :class:`huaweicloudsdkcbs.v1.Tag`
+        :param domain_ids: 领域列表，多个领域用分号隔开。如果设置了领域且领域不为空，就从这些领域中匹配答案，否则就从该用户的全部知识库匹配答案。  当前最多支持10个领域。 
+        :type domain_ids: list[str]
+        :param source: 问题来源 其他支持用户自定义，最终体现在问答日志里
+        :type source: str
+        :param return_all_answers: 是否返回所有类型的回答
+        :type return_all_answers: bool
+        """
         
         
 
@@ -61,7 +72,7 @@ class Extends:
 
 
         :return: The tag_ids of this Extends.
-        :rtype: Tag
+        :rtype: :class:`huaweicloudsdkcbs.v1.Tag`
         """
         return self._tag_ids
 
@@ -71,7 +82,7 @@ class Extends:
 
 
         :param tag_ids: The tag_ids of this Extends.
-        :type: Tag
+        :type tag_ids: :class:`huaweicloudsdkcbs.v1.Tag`
         """
         self._tag_ids = tag_ids
 
@@ -93,7 +104,7 @@ class Extends:
         领域列表，多个领域用分号隔开。如果设置了领域且领域不为空，就从这些领域中匹配答案，否则就从该用户的全部知识库匹配答案。  当前最多支持10个领域。 
 
         :param domain_ids: The domain_ids of this Extends.
-        :type: list[str]
+        :type domain_ids: list[str]
         """
         self._domain_ids = domain_ids
 
@@ -115,7 +126,7 @@ class Extends:
         问题来源 其他支持用户自定义，最终体现在问答日志里
 
         :param source: The source of this Extends.
-        :type: str
+        :type source: str
         """
         self._source = source
 
@@ -137,7 +148,7 @@ class Extends:
         是否返回所有类型的回答
 
         :param return_all_answers: The return_all_answers of this Extends.
-        :type: bool
+        :type return_all_answers: bool
         """
         self._return_all_answers = return_all_answers
 

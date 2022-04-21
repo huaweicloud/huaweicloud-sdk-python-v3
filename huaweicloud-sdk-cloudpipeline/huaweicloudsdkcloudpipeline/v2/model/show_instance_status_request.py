@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowInstanceStatusRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowInstanceStatusRequest:
     }
 
     def __init__(self, x_language=None, task_id=None):
-        """ShowInstanceStatusRequest - a model defined in huaweicloud sdk"""
+        """ShowInstanceStatusRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言类型 中文:zh-cn 英文:en-us，默认en-us
+        :type x_language: str
+        :param task_id: 实例ID
+        :type task_id: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ShowInstanceStatusRequest:
         语言类型 中文:zh-cn 英文:en-us，默认en-us
 
         :param x_language: The x_language of this ShowInstanceStatusRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -84,7 +91,7 @@ class ShowInstanceStatusRequest:
         实例ID
 
         :param task_id: The task_id of this ShowInstanceStatusRequest.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 

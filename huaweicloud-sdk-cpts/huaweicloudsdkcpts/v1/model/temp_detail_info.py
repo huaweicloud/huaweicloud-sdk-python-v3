@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TempDetailInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class TempDetailInfo:
     }
 
     def __init__(self, description=None, id=None, is_quoted=None, name=None, temp_type=None, update_time=None):
-        """TempDetailInfo - a model defined in huaweicloud sdk"""
+        """TempDetailInfo
+
+        The model defined in huaweicloud sdk
+
+        :param description: description
+        :type description: str
+        :param id: id
+        :type id: int
+        :param is_quoted: 是否被引用
+        :type is_quoted: bool
+        :param name: name
+        :type name: str
+        :param temp_type: temp_type
+        :type temp_type: int
+        :param update_time: update_time
+        :type update_time: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class TempDetailInfo:
         description
 
         :param description: The description of this TempDetailInfo.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -105,7 +120,7 @@ class TempDetailInfo:
         id
 
         :param id: The id of this TempDetailInfo.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -127,7 +142,7 @@ class TempDetailInfo:
         是否被引用
 
         :param is_quoted: The is_quoted of this TempDetailInfo.
-        :type: bool
+        :type is_quoted: bool
         """
         self._is_quoted = is_quoted
 
@@ -149,7 +164,7 @@ class TempDetailInfo:
         name
 
         :param name: The name of this TempDetailInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -171,7 +186,7 @@ class TempDetailInfo:
         temp_type
 
         :param temp_type: The temp_type of this TempDetailInfo.
-        :type: int
+        :type temp_type: int
         """
         self._temp_type = temp_type
 
@@ -193,7 +208,7 @@ class TempDetailInfo:
         update_time
 
         :param update_time: The update_time of this TempDetailInfo.
-        :type: str
+        :type update_time: str
         """
         self._update_time = update_time
 

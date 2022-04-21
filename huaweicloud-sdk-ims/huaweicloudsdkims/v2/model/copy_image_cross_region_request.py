@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CopyImageCrossRegionRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CopyImageCrossRegionRequest:
     }
 
     def __init__(self, image_id=None, body=None):
-        """CopyImageCrossRegionRequest - a model defined in huaweicloud sdk"""
+        """CopyImageCrossRegionRequest
+
+        The model defined in huaweicloud sdk
+
+        :param image_id: 镜像ID
+        :type image_id: str
+        :param body: Body of the CopyImageCrossRegionRequest
+        :type body: :class:`huaweicloudsdkims.v2.CopyImageCrossRegionRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CopyImageCrossRegionRequest:
         镜像ID
 
         :param image_id: The image_id of this CopyImageCrossRegionRequest.
-        :type: str
+        :type image_id: str
         """
         self._image_id = image_id
 
@@ -72,7 +79,7 @@ class CopyImageCrossRegionRequest:
 
 
         :return: The body of this CopyImageCrossRegionRequest.
-        :rtype: CopyImageCrossRegionRequestBody
+        :rtype: :class:`huaweicloudsdkims.v2.CopyImageCrossRegionRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CopyImageCrossRegionRequest:
 
 
         :param body: The body of this CopyImageCrossRegionRequest.
-        :type: CopyImageCrossRegionRequestBody
+        :type body: :class:`huaweicloudsdkims.v2.CopyImageCrossRegionRequestBody`
         """
         self._body = body
 

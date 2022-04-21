@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowRepositoryStatisticsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowRepositoryStatisticsResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """ShowRepositoryStatisticsResponse - a model defined in huaweicloud sdk"""
+        """ShowRepositoryStatisticsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param error: 
+        :type error: :class:`huaweicloudsdkcodehub.v3.Error`
+        :param result: 
+        :type result: :class:`huaweicloudsdkcodehub.v3.RepoStatisticsLaunch`
+        :param status: 响应状态
+        :type status: str
+        """
         
         super(ShowRepositoryStatisticsResponse, self).__init__()
 
@@ -56,7 +65,7 @@ class ShowRepositoryStatisticsResponse(SdkResponse):
 
 
         :return: The error of this ShowRepositoryStatisticsResponse.
-        :rtype: Error
+        :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
         """
         return self._error
 
@@ -66,7 +75,7 @@ class ShowRepositoryStatisticsResponse(SdkResponse):
 
 
         :param error: The error of this ShowRepositoryStatisticsResponse.
-        :type: Error
+        :type error: :class:`huaweicloudsdkcodehub.v3.Error`
         """
         self._error = error
 
@@ -76,7 +85,7 @@ class ShowRepositoryStatisticsResponse(SdkResponse):
 
 
         :return: The result of this ShowRepositoryStatisticsResponse.
-        :rtype: RepoStatisticsLaunch
+        :rtype: :class:`huaweicloudsdkcodehub.v3.RepoStatisticsLaunch`
         """
         return self._result
 
@@ -86,7 +95,7 @@ class ShowRepositoryStatisticsResponse(SdkResponse):
 
 
         :param result: The result of this ShowRepositoryStatisticsResponse.
-        :type: RepoStatisticsLaunch
+        :type result: :class:`huaweicloudsdkcodehub.v3.RepoStatisticsLaunch`
         """
         self._result = result
 
@@ -108,7 +117,7 @@ class ShowRepositoryStatisticsResponse(SdkResponse):
         响应状态
 
         :param status: The status of this ShowRepositoryStatisticsResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 

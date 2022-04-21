@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteResourceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class DeleteResourceRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, corp_id=None, body=None):
-        """DeleteResourceRequest - a model defined in huaweicloud sdk"""
+        """DeleteResourceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        :type x_request_id: str
+        :param accept_language: 语言参数，默认为中文zh-CN, 英文为en-US
+        :type accept_language: str
+        :param corp_id: 企业id
+        :type corp_id: str
+        :param body: 待删除的资源Id列表，最多支持批量处理100个
+        :type body: list[str]
+        """
         
         
 
@@ -72,7 +83,7 @@ class DeleteResourceRequest:
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
 
         :param x_request_id: The x_request_id of this DeleteResourceRequest.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 
@@ -94,7 +105,7 @@ class DeleteResourceRequest:
         语言参数，默认为中文zh-CN, 英文为en-US
 
         :param accept_language: The accept_language of this DeleteResourceRequest.
-        :type: str
+        :type accept_language: str
         """
         self._accept_language = accept_language
 
@@ -116,7 +127,7 @@ class DeleteResourceRequest:
         企业id
 
         :param corp_id: The corp_id of this DeleteResourceRequest.
-        :type: str
+        :type corp_id: str
         """
         self._corp_id = corp_id
 
@@ -138,7 +149,7 @@ class DeleteResourceRequest:
         待删除的资源Id列表，最多支持批量处理100个
 
         :param body: The body of this DeleteResourceRequest.
-        :type: list[str]
+        :type body: list[str]
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NodeResponse:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class NodeResponse:
     }
 
     def __init__(self, id=None, name=None, role=None, status=None, availability_zone=None):
-        """NodeResponse - a model defined in huaweicloud sdk"""
+        """NodeResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 节点ID。
+        :type id: str
+        :param name: 节点名称。
+        :type name: str
+        :param role: 节点类型，取值为“master”、“slave”或“readreplica”，分别对应于主节点、备节点和只读节点。
+        :type role: str
+        :param status: 节点状态。
+        :type status: str
+        :param availability_zone: 可用区。
+        :type availability_zone: str
+        """
         
         
 
@@ -73,7 +86,7 @@ class NodeResponse:
         节点ID。
 
         :param id: The id of this NodeResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -95,7 +108,7 @@ class NodeResponse:
         节点名称。
 
         :param name: The name of this NodeResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -117,7 +130,7 @@ class NodeResponse:
         节点类型，取值为“master”、“slave”或“readreplica”，分别对应于主节点、备节点和只读节点。
 
         :param role: The role of this NodeResponse.
-        :type: str
+        :type role: str
         """
         self._role = role
 
@@ -139,7 +152,7 @@ class NodeResponse:
         节点状态。
 
         :param status: The status of this NodeResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -161,7 +174,7 @@ class NodeResponse:
         可用区。
 
         :param availability_zone: The availability_zone of this NodeResponse.
-        :type: str
+        :type availability_zone: str
         """
         self._availability_zone = availability_zone
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GetAccessConfigListRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class GetAccessConfigListRequestBody:
     }
 
     def __init__(self, access_config_name_list=None, host_group_name_list=None, log_group_name_list=None, log_stream_name_list=None, access_config_tag_list=None):
-        """GetAccessConfigListRequestBody - a model defined in huaweicloud sdk"""
+        """GetAccessConfigListRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param access_config_name_list: 接入配置名称列表
+        :type access_config_name_list: list[str]
+        :param host_group_name_list: 主机组名称列表
+        :type host_group_name_list: list[str]
+        :param log_group_name_list: 日志组名称列表
+        :type log_group_name_list: list[str]
+        :param log_stream_name_list: 日志流名称列表
+        :type log_stream_name_list: list[str]
+        :param access_config_tag_list: 
+        :type access_config_tag_list: list[:class:`huaweicloudsdklts.v2.AccessConfigTag`]
+        """
         
         
 
@@ -73,7 +86,7 @@ class GetAccessConfigListRequestBody:
         接入配置名称列表
 
         :param access_config_name_list: The access_config_name_list of this GetAccessConfigListRequestBody.
-        :type: list[str]
+        :type access_config_name_list: list[str]
         """
         self._access_config_name_list = access_config_name_list
 
@@ -95,7 +108,7 @@ class GetAccessConfigListRequestBody:
         主机组名称列表
 
         :param host_group_name_list: The host_group_name_list of this GetAccessConfigListRequestBody.
-        :type: list[str]
+        :type host_group_name_list: list[str]
         """
         self._host_group_name_list = host_group_name_list
 
@@ -117,7 +130,7 @@ class GetAccessConfigListRequestBody:
         日志组名称列表
 
         :param log_group_name_list: The log_group_name_list of this GetAccessConfigListRequestBody.
-        :type: list[str]
+        :type log_group_name_list: list[str]
         """
         self._log_group_name_list = log_group_name_list
 
@@ -139,7 +152,7 @@ class GetAccessConfigListRequestBody:
         日志流名称列表
 
         :param log_stream_name_list: The log_stream_name_list of this GetAccessConfigListRequestBody.
-        :type: list[str]
+        :type log_stream_name_list: list[str]
         """
         self._log_stream_name_list = log_stream_name_list
 
@@ -149,7 +162,7 @@ class GetAccessConfigListRequestBody:
 
 
         :return: The access_config_tag_list of this GetAccessConfigListRequestBody.
-        :rtype: list[AccessConfigTag]
+        :rtype: list[:class:`huaweicloudsdklts.v2.AccessConfigTag`]
         """
         return self._access_config_tag_list
 
@@ -159,7 +172,7 @@ class GetAccessConfigListRequestBody:
 
 
         :param access_config_tag_list: The access_config_tag_list of this GetAccessConfigListRequestBody.
-        :type: list[AccessConfigTag]
+        :type access_config_tag_list: list[:class:`huaweicloudsdklts.v2.AccessConfigTag`]
         """
         self._access_config_tag_list = access_config_tag_list
 

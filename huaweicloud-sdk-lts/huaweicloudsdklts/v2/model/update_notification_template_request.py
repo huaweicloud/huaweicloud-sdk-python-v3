@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateNotificationTemplateRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateNotificationTemplateRequest:
     }
 
     def __init__(self, domain_id=None, body=None):
-        """UpdateNotificationTemplateRequest - a model defined in huaweicloud sdk"""
+        """UpdateNotificationTemplateRequest
+
+        The model defined in huaweicloud sdk
+
+        :param domain_id: 账号id，获取方式请参见：获取账号ID、项目ID、日志组ID、日志流ID（https://support.huaweicloud.com/api-lts/lts_api_0006.html）。
+        :type domain_id: str
+        :param body: Body of the UpdateNotificationTemplateRequest
+        :type body: :class:`huaweicloudsdklts.v2.CreateNotificationTemplateRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateNotificationTemplateRequest:
         账号id，获取方式请参见：获取账号ID、项目ID、日志组ID、日志流ID（https://support.huaweicloud.com/api-lts/lts_api_0006.html）。
 
         :param domain_id: The domain_id of this UpdateNotificationTemplateRequest.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -72,7 +79,7 @@ class UpdateNotificationTemplateRequest:
 
 
         :return: The body of this UpdateNotificationTemplateRequest.
-        :rtype: CreateNotificationTemplateRequestBody
+        :rtype: :class:`huaweicloudsdklts.v2.CreateNotificationTemplateRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateNotificationTemplateRequest:
 
 
         :param body: The body of this UpdateNotificationTemplateRequest.
-        :type: CreateNotificationTemplateRequestBody
+        :type body: :class:`huaweicloudsdklts.v2.CreateNotificationTemplateRequestBody`
         """
         self._body = body
 

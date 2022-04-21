@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StructFieldInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class StructFieldInfo:
     }
 
     def __init__(self, is_analysis=None, content=None, field_name=None, type=None, user_defined_name=None, index=None):
-        """StructFieldInfo - a model defined in huaweicloud sdk"""
+        """StructFieldInfo
+
+        The model defined in huaweicloud sdk
+
+        :param is_analysis: 结构化方式
+        :type is_analysis: bool
+        :param content: 字段内容
+        :type content: str
+        :param field_name: 字段名称
+        :type field_name: str
+        :param type: 字段数据类型,例：string，long，float
+        :type type: str
+        :param user_defined_name: 自定义别名(json方式中按需添加)
+        :type user_defined_name: str
+        :param index: 序号
+        :type index: int
+        """
         
         
 
@@ -81,7 +96,7 @@ class StructFieldInfo:
         结构化方式
 
         :param is_analysis: The is_analysis of this StructFieldInfo.
-        :type: bool
+        :type is_analysis: bool
         """
         self._is_analysis = is_analysis
 
@@ -103,7 +118,7 @@ class StructFieldInfo:
         字段内容
 
         :param content: The content of this StructFieldInfo.
-        :type: str
+        :type content: str
         """
         self._content = content
 
@@ -125,7 +140,7 @@ class StructFieldInfo:
         字段名称
 
         :param field_name: The field_name of this StructFieldInfo.
-        :type: str
+        :type field_name: str
         """
         self._field_name = field_name
 
@@ -147,7 +162,7 @@ class StructFieldInfo:
         字段数据类型,例：string，long，float
 
         :param type: The type of this StructFieldInfo.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -169,7 +184,7 @@ class StructFieldInfo:
         自定义别名(json方式中按需添加)
 
         :param user_defined_name: The user_defined_name of this StructFieldInfo.
-        :type: str
+        :type user_defined_name: str
         """
         self._user_defined_name = user_defined_name
 
@@ -191,7 +206,7 @@ class StructFieldInfo:
         序号
 
         :param index: The index of this StructFieldInfo.
-        :type: int
+        :type index: int
         """
         self._index = index
 

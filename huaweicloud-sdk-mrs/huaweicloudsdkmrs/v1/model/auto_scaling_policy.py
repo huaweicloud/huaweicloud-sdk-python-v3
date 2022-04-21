@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AutoScalingPolicy:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class AutoScalingPolicy:
     }
 
     def __init__(self, auto_scaling_enable=None, min_capacity=None, max_capacity=None, resources_plans=None, rules=None, exec_scripts=None):
-        """AutoScalingPolicy - a model defined in huaweicloud sdk"""
+        """AutoScalingPolicy
+
+        The model defined in huaweicloud sdk
+
+        :param auto_scaling_enable: 当前自动伸缩规则是否开启。
+        :type auto_scaling_enable: bool
+        :param min_capacity: 指定该节点组的最小保留节点数。  取值范围：[0～500]
+        :type min_capacity: int
+        :param max_capacity: 指定该节点组的最大节点数。  取值范围：[0～500]
+        :type max_capacity: int
+        :param resources_plans: 资源计划列表。若该参数为空表示不启用资源计划。  当启用弹性伸缩时，资源计划与自动伸缩规则需至少配置其中一种。
+        :type resources_plans: list[:class:`huaweicloudsdkmrs.v1.ResourcesPlan`]
+        :param rules: 自动伸缩的规则列表。  当启用弹性伸缩时，资源计划与自动伸缩规则需至少配置其中一种。
+        :type rules: list[:class:`huaweicloudsdkmrs.v1.Rules`]
+        :param exec_scripts: 弹性伸缩自定义自动化脚本列表。若该参数为空表示不启用自动化脚本。
+        :type exec_scripts: list[:class:`huaweicloudsdkmrs.v1.ScaleScript`]
+        """
         
         
 
@@ -80,7 +95,7 @@ class AutoScalingPolicy:
         当前自动伸缩规则是否开启。
 
         :param auto_scaling_enable: The auto_scaling_enable of this AutoScalingPolicy.
-        :type: bool
+        :type auto_scaling_enable: bool
         """
         self._auto_scaling_enable = auto_scaling_enable
 
@@ -102,7 +117,7 @@ class AutoScalingPolicy:
         指定该节点组的最小保留节点数。  取值范围：[0～500]
 
         :param min_capacity: The min_capacity of this AutoScalingPolicy.
-        :type: int
+        :type min_capacity: int
         """
         self._min_capacity = min_capacity
 
@@ -124,7 +139,7 @@ class AutoScalingPolicy:
         指定该节点组的最大节点数。  取值范围：[0～500]
 
         :param max_capacity: The max_capacity of this AutoScalingPolicy.
-        :type: int
+        :type max_capacity: int
         """
         self._max_capacity = max_capacity
 
@@ -135,7 +150,7 @@ class AutoScalingPolicy:
         资源计划列表。若该参数为空表示不启用资源计划。  当启用弹性伸缩时，资源计划与自动伸缩规则需至少配置其中一种。
 
         :return: The resources_plans of this AutoScalingPolicy.
-        :rtype: list[ResourcesPlan]
+        :rtype: list[:class:`huaweicloudsdkmrs.v1.ResourcesPlan`]
         """
         return self._resources_plans
 
@@ -146,7 +161,7 @@ class AutoScalingPolicy:
         资源计划列表。若该参数为空表示不启用资源计划。  当启用弹性伸缩时，资源计划与自动伸缩规则需至少配置其中一种。
 
         :param resources_plans: The resources_plans of this AutoScalingPolicy.
-        :type: list[ResourcesPlan]
+        :type resources_plans: list[:class:`huaweicloudsdkmrs.v1.ResourcesPlan`]
         """
         self._resources_plans = resources_plans
 
@@ -157,7 +172,7 @@ class AutoScalingPolicy:
         自动伸缩的规则列表。  当启用弹性伸缩时，资源计划与自动伸缩规则需至少配置其中一种。
 
         :return: The rules of this AutoScalingPolicy.
-        :rtype: list[Rules]
+        :rtype: list[:class:`huaweicloudsdkmrs.v1.Rules`]
         """
         return self._rules
 
@@ -168,7 +183,7 @@ class AutoScalingPolicy:
         自动伸缩的规则列表。  当启用弹性伸缩时，资源计划与自动伸缩规则需至少配置其中一种。
 
         :param rules: The rules of this AutoScalingPolicy.
-        :type: list[Rules]
+        :type rules: list[:class:`huaweicloudsdkmrs.v1.Rules`]
         """
         self._rules = rules
 
@@ -179,7 +194,7 @@ class AutoScalingPolicy:
         弹性伸缩自定义自动化脚本列表。若该参数为空表示不启用自动化脚本。
 
         :return: The exec_scripts of this AutoScalingPolicy.
-        :rtype: list[ScaleScript]
+        :rtype: list[:class:`huaweicloudsdkmrs.v1.ScaleScript`]
         """
         return self._exec_scripts
 
@@ -190,7 +205,7 @@ class AutoScalingPolicy:
         弹性伸缩自定义自动化脚本列表。若该参数为空表示不启用自动化脚本。
 
         :param exec_scripts: The exec_scripts of this AutoScalingPolicy.
-        :type: list[ScaleScript]
+        :type exec_scripts: list[:class:`huaweicloudsdkmrs.v1.ScaleScript`]
         """
         self._exec_scripts = exec_scripts
 

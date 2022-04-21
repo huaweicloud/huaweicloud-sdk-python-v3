@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ProtocolOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ProtocolOption:
     }
 
     def __init__(self, mapping_id=None):
-        """ProtocolOption - a model defined in huaweicloud sdk"""
+        """ProtocolOption
+
+        The model defined in huaweicloud sdk
+
+        :param mapping_id: 映射ID。身份提供商类型为iam_user_sso时，不需要绑定映射ID，无需传入此字段；否则此字段必填。
+        :type mapping_id: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class ProtocolOption:
         映射ID。身份提供商类型为iam_user_sso时，不需要绑定映射ID，无需传入此字段；否则此字段必填。
 
         :param mapping_id: The mapping_id of this ProtocolOption.
-        :type: str
+        :type mapping_id: str
         """
         self._mapping_id = mapping_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateNotificationTemplateResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class CreateNotificationTemplateResponse(SdkResponse):
     }
 
     def __init__(self, name=None, type=None, desc=None, source=None, locale=None, templates=None):
-        """CreateNotificationTemplateResponse - a model defined in huaweicloud sdk"""
+        """CreateNotificationTemplateResponse
+
+        The model defined in huaweicloud sdk
+
+        :param name: 通知规则名称，必填，只含有汉字、数字、字母、下划线、中划线，不能以下划线等特殊符号开头和结尾，长度为 1 - 100，创建后不可修改
+        :type name: str
+        :param type: 保留字段，非必填，只支持sms（短信），dingding（钉钉），wechat（企业微信），email（邮件）和webhook（网络钩子）
+        :type type: list[str]
+        :param desc: 模板描述，必填，只含有汉字、数字、字母、下划线不能以下划线开头和结尾，长度为0--1024
+        :type desc: str
+        :param source: 模板来源，目前必填为LTS，否则会筛选不出来
+        :type source: str
+        :param locale: 语言，必填，目前可填zh-cn和en-us
+        :type locale: str
+        :param templates: 模板正文，为一个数组
+        :type templates: list[:class:`huaweicloudsdklts.v2.SubTemplate`]
+        """
         
         super(CreateNotificationTemplateResponse, self).__init__()
 
@@ -83,7 +98,7 @@ class CreateNotificationTemplateResponse(SdkResponse):
         通知规则名称，必填，只含有汉字、数字、字母、下划线、中划线，不能以下划线等特殊符号开头和结尾，长度为 1 - 100，创建后不可修改
 
         :param name: The name of this CreateNotificationTemplateResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -105,7 +120,7 @@ class CreateNotificationTemplateResponse(SdkResponse):
         保留字段，非必填，只支持sms（短信），dingding（钉钉），wechat（企业微信），email（邮件）和webhook（网络钩子）
 
         :param type: The type of this CreateNotificationTemplateResponse.
-        :type: list[str]
+        :type type: list[str]
         """
         self._type = type
 
@@ -127,7 +142,7 @@ class CreateNotificationTemplateResponse(SdkResponse):
         模板描述，必填，只含有汉字、数字、字母、下划线不能以下划线开头和结尾，长度为0--1024
 
         :param desc: The desc of this CreateNotificationTemplateResponse.
-        :type: str
+        :type desc: str
         """
         self._desc = desc
 
@@ -149,7 +164,7 @@ class CreateNotificationTemplateResponse(SdkResponse):
         模板来源，目前必填为LTS，否则会筛选不出来
 
         :param source: The source of this CreateNotificationTemplateResponse.
-        :type: str
+        :type source: str
         """
         self._source = source
 
@@ -171,7 +186,7 @@ class CreateNotificationTemplateResponse(SdkResponse):
         语言，必填，目前可填zh-cn和en-us
 
         :param locale: The locale of this CreateNotificationTemplateResponse.
-        :type: str
+        :type locale: str
         """
         self._locale = locale
 
@@ -182,7 +197,7 @@ class CreateNotificationTemplateResponse(SdkResponse):
         模板正文，为一个数组
 
         :return: The templates of this CreateNotificationTemplateResponse.
-        :rtype: list[SubTemplate]
+        :rtype: list[:class:`huaweicloudsdklts.v2.SubTemplate`]
         """
         return self._templates
 
@@ -193,7 +208,7 @@ class CreateNotificationTemplateResponse(SdkResponse):
         模板正文，为一个数组
 
         :param templates: The templates of this CreateNotificationTemplateResponse.
-        :type: list[SubTemplate]
+        :type templates: list[:class:`huaweicloudsdklts.v2.SubTemplate`]
         """
         self._templates = templates
 

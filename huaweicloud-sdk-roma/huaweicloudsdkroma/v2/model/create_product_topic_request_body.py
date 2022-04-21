@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateProductTopicRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CreateProductTopicRequestBody:
     }
 
     def __init__(self, permission=None, name=None, version=None, description=None):
-        """CreateProductTopicRequestBody - a model defined in huaweicloud sdk"""
+        """CreateProductTopicRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param permission: 主题权限 0-发布 1-订阅
+        :type permission: int
+        :param name: 产品级主题名称&lt;br&gt;Topic类格式必须以“/”进行分层，区分每个类目。其中第一个为用户自定义的版本号；第二个已经规定好，为${deviceId}通配设备ID；第三个为用户自定义的topic类名（即本字段）。Topic类组成即为：/${version}/${deviceId}/${customizePart}。简单来说，Topic类：/v1/${deviceId}/customizePart是具体Topic：/v1/deviceid1/customizePart1和/v1/deviceid2/customizePart2等的集合。
+        :type name: str
+        :param version: 版本号,输入2-50个字符。值以字母或数字开头和结尾。仅允许使用字母，数字，中划线和点号。
+        :type version: str
+        :param description: 描述
+        :type description: str
+        """
         
         
 
@@ -70,7 +81,7 @@ class CreateProductTopicRequestBody:
         主题权限 0-发布 1-订阅
 
         :param permission: The permission of this CreateProductTopicRequestBody.
-        :type: int
+        :type permission: int
         """
         self._permission = permission
 
@@ -92,7 +103,7 @@ class CreateProductTopicRequestBody:
         产品级主题名称<br>Topic类格式必须以“/”进行分层，区分每个类目。其中第一个为用户自定义的版本号；第二个已经规定好，为${deviceId}通配设备ID；第三个为用户自定义的topic类名（即本字段）。Topic类组成即为：/${version}/${deviceId}/${customizePart}。简单来说，Topic类：/v1/${deviceId}/customizePart是具体Topic：/v1/deviceid1/customizePart1和/v1/deviceid2/customizePart2等的集合。
 
         :param name: The name of this CreateProductTopicRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -114,7 +125,7 @@ class CreateProductTopicRequestBody:
         版本号,输入2-50个字符。值以字母或数字开头和结尾。仅允许使用字母，数字，中划线和点号。
 
         :param version: The version of this CreateProductTopicRequestBody.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -136,7 +147,7 @@ class CreateProductTopicRequestBody:
         描述
 
         :param description: The description of this CreateProductTopicRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 

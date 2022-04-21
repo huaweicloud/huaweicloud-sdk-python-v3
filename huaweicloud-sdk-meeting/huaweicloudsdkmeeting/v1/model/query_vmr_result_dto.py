@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryVmrResultDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class QueryVmrResultDTO:
     }
 
     def __init__(self, id=None, vmr_id=None, vmr_name=None, gust_pwd=None, gust_join_url=None, chair_pwd=None, chair_join_url=None, allow_gust_first=None, gust_first_notice=None, vmr_mode=None, vmr_pkg_id=None, vmr_pkg_name=None, vmr_pkg_parties=None, status=None):
-        """QueryVmrResultDTO - a model defined in huaweicloud sdk"""
+        """QueryVmrResultDTO
+
+        The model defined in huaweicloud sdk
+
+        :param id: 唯一标识。 说明：对应会议管理-&gt;创建会议接口中的vmrID。 
+        :type id: str
+        :param vmr_id: 云会议室ID。 说明：对应会议管理-&gt;创建会议接口中当vmrIDType等于0（固定ID）时返回数据的conferenceID 。 
+        :type vmr_id: str
+        :param vmr_name: 云会议室名称
+        :type vmr_name: str
+        :param gust_pwd: 来宾密码
+        :type gust_pwd: str
+        :param gust_join_url: 来宾与会链接
+        :type gust_join_url: str
+        :param chair_pwd: 主席密码
+        :type chair_pwd: str
+        :param chair_join_url: 主席与会链接
+        :type chair_join_url: str
+        :param allow_gust_first: 允许来宾先入会
+        :type allow_gust_first: bool
+        :param gust_first_notice: 云会议室被使用后是否通知会议室所有者
+        :type gust_first_notice: bool
+        :param vmr_mode: VMR模式 * 0: 个人会议ID * 1: 云会议室 * 2: 网络研讨会 
+        :type vmr_mode: int
+        :param vmr_pkg_id: 云会议室套餐包的id，仅专用云会议室返回
+        :type vmr_pkg_id: str
+        :param vmr_pkg_name: 云会议室套餐包的名称，仅专用云会议室返回
+        :type vmr_pkg_name: str
+        :param vmr_pkg_parties: 云会议室套餐包的会议并发方数，仅专用云会议室返回
+        :type vmr_pkg_parties: int
+        :param status: 云会议室状态: * 0、正常 * 1、停用 * 2、未分配 
+        :type status: int
+        """
         
         
 
@@ -123,7 +154,7 @@ class QueryVmrResultDTO:
         唯一标识。 说明：对应会议管理->创建会议接口中的vmrID。 
 
         :param id: The id of this QueryVmrResultDTO.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -145,7 +176,7 @@ class QueryVmrResultDTO:
         云会议室ID。 说明：对应会议管理->创建会议接口中当vmrIDType等于0（固定ID）时返回数据的conferenceID 。 
 
         :param vmr_id: The vmr_id of this QueryVmrResultDTO.
-        :type: str
+        :type vmr_id: str
         """
         self._vmr_id = vmr_id
 
@@ -167,7 +198,7 @@ class QueryVmrResultDTO:
         云会议室名称
 
         :param vmr_name: The vmr_name of this QueryVmrResultDTO.
-        :type: str
+        :type vmr_name: str
         """
         self._vmr_name = vmr_name
 
@@ -189,7 +220,7 @@ class QueryVmrResultDTO:
         来宾密码
 
         :param gust_pwd: The gust_pwd of this QueryVmrResultDTO.
-        :type: str
+        :type gust_pwd: str
         """
         self._gust_pwd = gust_pwd
 
@@ -211,7 +242,7 @@ class QueryVmrResultDTO:
         来宾与会链接
 
         :param gust_join_url: The gust_join_url of this QueryVmrResultDTO.
-        :type: str
+        :type gust_join_url: str
         """
         self._gust_join_url = gust_join_url
 
@@ -233,7 +264,7 @@ class QueryVmrResultDTO:
         主席密码
 
         :param chair_pwd: The chair_pwd of this QueryVmrResultDTO.
-        :type: str
+        :type chair_pwd: str
         """
         self._chair_pwd = chair_pwd
 
@@ -255,7 +286,7 @@ class QueryVmrResultDTO:
         主席与会链接
 
         :param chair_join_url: The chair_join_url of this QueryVmrResultDTO.
-        :type: str
+        :type chair_join_url: str
         """
         self._chair_join_url = chair_join_url
 
@@ -277,7 +308,7 @@ class QueryVmrResultDTO:
         允许来宾先入会
 
         :param allow_gust_first: The allow_gust_first of this QueryVmrResultDTO.
-        :type: bool
+        :type allow_gust_first: bool
         """
         self._allow_gust_first = allow_gust_first
 
@@ -299,7 +330,7 @@ class QueryVmrResultDTO:
         云会议室被使用后是否通知会议室所有者
 
         :param gust_first_notice: The gust_first_notice of this QueryVmrResultDTO.
-        :type: bool
+        :type gust_first_notice: bool
         """
         self._gust_first_notice = gust_first_notice
 
@@ -321,7 +352,7 @@ class QueryVmrResultDTO:
         VMR模式 * 0: 个人会议ID * 1: 云会议室 * 2: 网络研讨会 
 
         :param vmr_mode: The vmr_mode of this QueryVmrResultDTO.
-        :type: int
+        :type vmr_mode: int
         """
         self._vmr_mode = vmr_mode
 
@@ -343,7 +374,7 @@ class QueryVmrResultDTO:
         云会议室套餐包的id，仅专用云会议室返回
 
         :param vmr_pkg_id: The vmr_pkg_id of this QueryVmrResultDTO.
-        :type: str
+        :type vmr_pkg_id: str
         """
         self._vmr_pkg_id = vmr_pkg_id
 
@@ -365,7 +396,7 @@ class QueryVmrResultDTO:
         云会议室套餐包的名称，仅专用云会议室返回
 
         :param vmr_pkg_name: The vmr_pkg_name of this QueryVmrResultDTO.
-        :type: str
+        :type vmr_pkg_name: str
         """
         self._vmr_pkg_name = vmr_pkg_name
 
@@ -387,7 +418,7 @@ class QueryVmrResultDTO:
         云会议室套餐包的会议并发方数，仅专用云会议室返回
 
         :param vmr_pkg_parties: The vmr_pkg_parties of this QueryVmrResultDTO.
-        :type: int
+        :type vmr_pkg_parties: int
         """
         self._vmr_pkg_parties = vmr_pkg_parties
 
@@ -409,7 +440,7 @@ class QueryVmrResultDTO:
         云会议室状态: * 0、正常 * 1、停用 * 2、未分配 
 
         :param status: The status of this QueryVmrResultDTO.
-        :type: int
+        :type status: int
         """
         self._status = status
 

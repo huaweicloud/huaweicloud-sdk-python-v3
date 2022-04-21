@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RepoStatisticsEvent:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class RepoStatisticsEvent:
     }
 
     def __init__(self, branch=None, created_at=None, date=None, id=None, project_id=None, status=None, updated_at=None, user_id=None):
-        """RepoStatisticsEvent - a model defined in huaweicloud sdk"""
+        """RepoStatisticsEvent
+
+        The model defined in huaweicloud sdk
+
+        :param branch: 分支名
+        :type branch: str
+        :param created_at: 仓库统计创建的时间
+        :type created_at: datetime
+        :param date: 仓库统计的日期
+        :type date: str
+        :param id: 仓库统计事件的id
+        :type id: int
+        :param project_id: 仓库id
+        :type project_id: int
+        :param status: 仓库统计的状态: 等待统计waiting  正在统计active  完成统计finish
+        :type status: str
+        :param updated_at: 仓库统计更新的时间
+        :type updated_at: datetime
+        :param user_id: 用户id
+        :type user_id: int
+        """
         
         
 
@@ -93,7 +112,7 @@ class RepoStatisticsEvent:
         分支名
 
         :param branch: The branch of this RepoStatisticsEvent.
-        :type: str
+        :type branch: str
         """
         self._branch = branch
 
@@ -115,7 +134,7 @@ class RepoStatisticsEvent:
         仓库统计创建的时间
 
         :param created_at: The created_at of this RepoStatisticsEvent.
-        :type: datetime
+        :type created_at: datetime
         """
         self._created_at = created_at
 
@@ -137,7 +156,7 @@ class RepoStatisticsEvent:
         仓库统计的日期
 
         :param date: The date of this RepoStatisticsEvent.
-        :type: str
+        :type date: str
         """
         self._date = date
 
@@ -159,7 +178,7 @@ class RepoStatisticsEvent:
         仓库统计事件的id
 
         :param id: The id of this RepoStatisticsEvent.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -181,7 +200,7 @@ class RepoStatisticsEvent:
         仓库id
 
         :param project_id: The project_id of this RepoStatisticsEvent.
-        :type: int
+        :type project_id: int
         """
         self._project_id = project_id
 
@@ -203,7 +222,7 @@ class RepoStatisticsEvent:
         仓库统计的状态: 等待统计waiting  正在统计active  完成统计finish
 
         :param status: The status of this RepoStatisticsEvent.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -225,7 +244,7 @@ class RepoStatisticsEvent:
         仓库统计更新的时间
 
         :param updated_at: The updated_at of this RepoStatisticsEvent.
-        :type: datetime
+        :type updated_at: datetime
         """
         self._updated_at = updated_at
 
@@ -247,7 +266,7 @@ class RepoStatisticsEvent:
         用户id
 
         :param user_id: The user_id of this RepoStatisticsEvent.
-        :type: int
+        :type user_id: int
         """
         self._user_id = user_id
 

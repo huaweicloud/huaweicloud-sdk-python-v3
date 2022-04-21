@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPublicBorderGroupsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListPublicBorderGroupsResponse(SdkResponse):
     }
 
     def __init__(self, public_border_groups=None, request_id=None):
-        """ListPublicBorderGroupsResponse - a model defined in huaweicloud sdk"""
+        """ListPublicBorderGroupsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param public_border_groups: 功能说明：公共池分组对象
+        :type public_border_groups: list[:class:`huaweicloudsdkeip.v3.CommonPoolsWithBorderGroupDict`]
+        :param request_id: 本次请求的编号
+        :type request_id: str
+        """
         
         super(ListPublicBorderGroupsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListPublicBorderGroupsResponse(SdkResponse):
         功能说明：公共池分组对象
 
         :return: The public_border_groups of this ListPublicBorderGroupsResponse.
-        :rtype: list[CommonPoolsWithBorderGroupDict]
+        :rtype: list[:class:`huaweicloudsdkeip.v3.CommonPoolsWithBorderGroupDict`]
         """
         return self._public_border_groups
 
@@ -63,7 +70,7 @@ class ListPublicBorderGroupsResponse(SdkResponse):
         功能说明：公共池分组对象
 
         :param public_border_groups: The public_border_groups of this ListPublicBorderGroupsResponse.
-        :type: list[CommonPoolsWithBorderGroupDict]
+        :type public_border_groups: list[:class:`huaweicloudsdkeip.v3.CommonPoolsWithBorderGroupDict`]
         """
         self._public_border_groups = public_border_groups
 
@@ -85,7 +92,7 @@ class ListPublicBorderGroupsResponse(SdkResponse):
         本次请求的编号
 
         :param request_id: The request_id of this ListPublicBorderGroupsResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 

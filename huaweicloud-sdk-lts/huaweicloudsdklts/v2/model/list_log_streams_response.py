@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListLogStreamsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListLogStreamsResponse(SdkResponse):
     }
 
     def __init__(self, log_streams=None):
-        """ListLogStreamsResponse - a model defined in huaweicloud sdk"""
+        """ListLogStreamsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param log_streams: 日志流数组
+        :type log_streams: list[:class:`huaweicloudsdklts.v2.ListLogStreamsResponseBody1LogStreams`]
+        """
         
         super(ListLogStreamsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListLogStreamsResponse(SdkResponse):
         日志流数组
 
         :return: The log_streams of this ListLogStreamsResponse.
-        :rtype: list[ListLogStreamsResponseBody1LogStreams]
+        :rtype: list[:class:`huaweicloudsdklts.v2.ListLogStreamsResponseBody1LogStreams`]
         """
         return self._log_streams
 
@@ -58,7 +63,7 @@ class ListLogStreamsResponse(SdkResponse):
         日志流数组
 
         :param log_streams: The log_streams of this ListLogStreamsResponse.
-        :type: list[ListLogStreamsResponseBody1LogStreams]
+        :type log_streams: list[:class:`huaweicloudsdklts.v2.ListLogStreamsResponseBody1LogStreams`]
         """
         self._log_streams = log_streams
 

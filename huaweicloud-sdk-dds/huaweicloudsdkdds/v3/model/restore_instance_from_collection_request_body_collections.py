@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestoreInstanceFromCollectionRequestBodyCollections:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class RestoreInstanceFromCollectionRequestBodyCollections:
     }
 
     def __init__(self, old_name=None, new_name=None, restore_collection_time=None):
-        """RestoreInstanceFromCollectionRequestBodyCollections - a model defined in huaweicloud sdk"""
+        """RestoreInstanceFromCollectionRequestBodyCollections
+
+        The model defined in huaweicloud sdk
+
+        :param old_name: 恢复前表名。
+        :type old_name: str
+        :param new_name: 恢复后表名。
+        :type new_name: str
+        :param restore_collection_time: 数据库集合恢复时间点。UNIX时间戳格式，单位是毫秒，时区是UTC。
+        :type restore_collection_time: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class RestoreInstanceFromCollectionRequestBodyCollections:
         恢复前表名。
 
         :param old_name: The old_name of this RestoreInstanceFromCollectionRequestBodyCollections.
-        :type: str
+        :type old_name: str
         """
         self._old_name = old_name
 
@@ -88,7 +97,7 @@ class RestoreInstanceFromCollectionRequestBodyCollections:
         恢复后表名。
 
         :param new_name: The new_name of this RestoreInstanceFromCollectionRequestBodyCollections.
-        :type: str
+        :type new_name: str
         """
         self._new_name = new_name
 
@@ -110,7 +119,7 @@ class RestoreInstanceFromCollectionRequestBodyCollections:
         数据库集合恢复时间点。UNIX时间戳格式，单位是毫秒，时区是UTC。
 
         :param restore_collection_time: The restore_collection_time of this RestoreInstanceFromCollectionRequestBodyCollections.
-        :type: str
+        :type restore_collection_time: str
         """
         self._restore_collection_time = restore_collection_time
 

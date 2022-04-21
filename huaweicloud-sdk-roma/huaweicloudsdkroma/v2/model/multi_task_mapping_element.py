@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MultiTaskMappingElement:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class MultiTaskMappingElement:
     }
 
     def __init__(self, id=None, source_table=None, target_table=None, updated_time=None, mapping_percent=None, status=None, source_columns=None, target_columns=None, mapping=None):
-        """MultiTaskMappingElement - a model defined in huaweicloud sdk"""
+        """MultiTaskMappingElement
+
+        The model defined in huaweicloud sdk
+
+        :param id: 映射唯一ID
+        :type id: str
+        :param source_table: 源表名
+        :type source_table: str
+        :param target_table: 目标表名
+        :type target_table: str
+        :param updated_time: 上次修改时间
+        :type updated_time: int
+        :param mapping_percent: 匹配度
+        :type mapping_percent: int
+        :param status: 映射状态 - AUTO (自动映射) - MANUAL (手工新增) - ADD (自动新增) - UPDATE (更新) - DELETE (删除) - USING (使用中)
+        :type status: str
+        :param source_columns: 源端字段列表
+        :type source_columns: list[:class:`huaweicloudsdkroma.v2.MultiTaskColumnInfo`]
+        :param target_columns: 目标端字段列表
+        :type target_columns: list[:class:`huaweicloudsdkroma.v2.MultiTaskColumnInfo`]
+        :param mapping: 字段映射列表
+        :type mapping: list[:class:`huaweicloudsdkroma.v2.MappingInfo`]
+        """
         
         
 
@@ -98,7 +119,7 @@ class MultiTaskMappingElement:
         映射唯一ID
 
         :param id: The id of this MultiTaskMappingElement.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -120,7 +141,7 @@ class MultiTaskMappingElement:
         源表名
 
         :param source_table: The source_table of this MultiTaskMappingElement.
-        :type: str
+        :type source_table: str
         """
         self._source_table = source_table
 
@@ -142,7 +163,7 @@ class MultiTaskMappingElement:
         目标表名
 
         :param target_table: The target_table of this MultiTaskMappingElement.
-        :type: str
+        :type target_table: str
         """
         self._target_table = target_table
 
@@ -164,7 +185,7 @@ class MultiTaskMappingElement:
         上次修改时间
 
         :param updated_time: The updated_time of this MultiTaskMappingElement.
-        :type: int
+        :type updated_time: int
         """
         self._updated_time = updated_time
 
@@ -186,7 +207,7 @@ class MultiTaskMappingElement:
         匹配度
 
         :param mapping_percent: The mapping_percent of this MultiTaskMappingElement.
-        :type: int
+        :type mapping_percent: int
         """
         self._mapping_percent = mapping_percent
 
@@ -208,7 +229,7 @@ class MultiTaskMappingElement:
         映射状态 - AUTO (自动映射) - MANUAL (手工新增) - ADD (自动新增) - UPDATE (更新) - DELETE (删除) - USING (使用中)
 
         :param status: The status of this MultiTaskMappingElement.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -219,7 +240,7 @@ class MultiTaskMappingElement:
         源端字段列表
 
         :return: The source_columns of this MultiTaskMappingElement.
-        :rtype: list[MultiTaskColumnInfo]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.MultiTaskColumnInfo`]
         """
         return self._source_columns
 
@@ -230,7 +251,7 @@ class MultiTaskMappingElement:
         源端字段列表
 
         :param source_columns: The source_columns of this MultiTaskMappingElement.
-        :type: list[MultiTaskColumnInfo]
+        :type source_columns: list[:class:`huaweicloudsdkroma.v2.MultiTaskColumnInfo`]
         """
         self._source_columns = source_columns
 
@@ -241,7 +262,7 @@ class MultiTaskMappingElement:
         目标端字段列表
 
         :return: The target_columns of this MultiTaskMappingElement.
-        :rtype: list[MultiTaskColumnInfo]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.MultiTaskColumnInfo`]
         """
         return self._target_columns
 
@@ -252,7 +273,7 @@ class MultiTaskMappingElement:
         目标端字段列表
 
         :param target_columns: The target_columns of this MultiTaskMappingElement.
-        :type: list[MultiTaskColumnInfo]
+        :type target_columns: list[:class:`huaweicloudsdkroma.v2.MultiTaskColumnInfo`]
         """
         self._target_columns = target_columns
 
@@ -263,7 +284,7 @@ class MultiTaskMappingElement:
         字段映射列表
 
         :return: The mapping of this MultiTaskMappingElement.
-        :rtype: list[MappingInfo]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.MappingInfo`]
         """
         return self._mapping
 
@@ -274,7 +295,7 @@ class MultiTaskMappingElement:
         字段映射列表
 
         :param mapping: The mapping of this MultiTaskMappingElement.
-        :type: list[MappingInfo]
+        :type mapping: list[:class:`huaweicloudsdkroma.v2.MappingInfo`]
         """
         self._mapping = mapping
 

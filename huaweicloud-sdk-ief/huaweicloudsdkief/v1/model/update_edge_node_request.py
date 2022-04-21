@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateEdgeNodeRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateEdgeNodeRequest:
     }
 
     def __init__(self, node_id=None, ief_instance_id=None, body=None):
-        """UpdateEdgeNodeRequest - a model defined in huaweicloud sdk"""
+        """UpdateEdgeNodeRequest
+
+        The model defined in huaweicloud sdk
+
+        :param node_id: 边缘节点ID
+        :type node_id: str
+        :param ief_instance_id: 铂金版实例ID，专业版实例为空值
+        :type ief_instance_id: str
+        :param body: Body of the UpdateEdgeNodeRequest
+        :type body: :class:`huaweicloudsdkief.v1.EdgeNodeUpdate`
+        """
         
         
 
@@ -67,7 +76,7 @@ class UpdateEdgeNodeRequest:
         边缘节点ID
 
         :param node_id: The node_id of this UpdateEdgeNodeRequest.
-        :type: str
+        :type node_id: str
         """
         self._node_id = node_id
 
@@ -89,7 +98,7 @@ class UpdateEdgeNodeRequest:
         铂金版实例ID，专业版实例为空值
 
         :param ief_instance_id: The ief_instance_id of this UpdateEdgeNodeRequest.
-        :type: str
+        :type ief_instance_id: str
         """
         self._ief_instance_id = ief_instance_id
 
@@ -99,7 +108,7 @@ class UpdateEdgeNodeRequest:
 
 
         :return: The body of this UpdateEdgeNodeRequest.
-        :rtype: EdgeNodeUpdate
+        :rtype: :class:`huaweicloudsdkief.v1.EdgeNodeUpdate`
         """
         return self._body
 
@@ -109,7 +118,7 @@ class UpdateEdgeNodeRequest:
 
 
         :param body: The body of this UpdateEdgeNodeRequest.
-        :type: EdgeNodeUpdate
+        :type body: :class:`huaweicloudsdkief.v1.EdgeNodeUpdate`
         """
         self._body = body
 

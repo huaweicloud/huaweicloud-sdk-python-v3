@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchShowPipelinesStatusRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchShowPipelinesStatusRequest:
     }
 
     def __init__(self, x_language=None, pipeline_ids=None):
-        """BatchShowPipelinesStatusRequest - a model defined in huaweicloud sdk"""
+        """BatchShowPipelinesStatusRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言类型 中文:zh-cn 英文:en-us，默认en-us
+        :type x_language: str
+        :param pipeline_ids: 要获取状态的流水线ID，用逗号隔开
+        :type pipeline_ids: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class BatchShowPipelinesStatusRequest:
         语言类型 中文:zh-cn 英文:en-us，默认en-us
 
         :param x_language: The x_language of this BatchShowPipelinesStatusRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -84,7 +91,7 @@ class BatchShowPipelinesStatusRequest:
         要获取状态的流水线ID，用逗号隔开
 
         :param pipeline_ids: The pipeline_ids of this BatchShowPipelinesStatusRequest.
-        :type: str
+        :type pipeline_ids: str
         """
         self._pipeline_ids = pipeline_ids
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SecurityGroups:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class SecurityGroups:
     }
 
     def __init__(self, name=None):
-        """SecurityGroups - a model defined in huaweicloud sdk"""
+        """SecurityGroups
+
+        The model defined in huaweicloud sdk
+
+        :param name: 创建裸金属服务器时未指定安全组，该值为default。创建裸金属服务器时，需要指定已有安全组的ID（UUID格式）。
+        :type name: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class SecurityGroups:
         创建裸金属服务器时未指定安全组，该值为default。创建裸金属服务器时，需要指定已有安全组的ID（UUID格式）。
 
         :param name: The name of this SecurityGroups.
-        :type: str
+        :type name: str
         """
         self._name = name
 

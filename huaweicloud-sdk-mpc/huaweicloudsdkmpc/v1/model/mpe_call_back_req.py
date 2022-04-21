@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MpeCallBackReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class MpeCallBackReq:
     }
 
     def __init__(self, task_type=None, task_id=None, status=None, complete_ratio=None, description=None, meta_data=None):
-        """MpeCallBackReq - a model defined in huaweicloud sdk"""
+        """MpeCallBackReq
+
+        The model defined in huaweicloud sdk
+
+        :param task_type: 任务类型
+        :type task_type: str
+        :param task_id: 任务ID。
+        :type task_id: str
+        :param status: 任务状态。
+        :type status: str
+        :param complete_ratio: 任务完成进度百分比值。 
+        :type complete_ratio: int
+        :param description: 任务执行描述。
+        :type description: str
+        :param meta_data: 
+        :type meta_data: :class:`huaweicloudsdkmpc.v1.MpeMetaData`
+        """
         
         
 
@@ -83,7 +98,7 @@ class MpeCallBackReq:
         任务类型
 
         :param task_type: The task_type of this MpeCallBackReq.
-        :type: str
+        :type task_type: str
         """
         self._task_type = task_type
 
@@ -105,7 +120,7 @@ class MpeCallBackReq:
         任务ID。
 
         :param task_id: The task_id of this MpeCallBackReq.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -127,7 +142,7 @@ class MpeCallBackReq:
         任务状态。
 
         :param status: The status of this MpeCallBackReq.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -149,7 +164,7 @@ class MpeCallBackReq:
         任务完成进度百分比值。 
 
         :param complete_ratio: The complete_ratio of this MpeCallBackReq.
-        :type: int
+        :type complete_ratio: int
         """
         self._complete_ratio = complete_ratio
 
@@ -171,7 +186,7 @@ class MpeCallBackReq:
         任务执行描述。
 
         :param description: The description of this MpeCallBackReq.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -181,7 +196,7 @@ class MpeCallBackReq:
 
 
         :return: The meta_data of this MpeCallBackReq.
-        :rtype: MpeMetaData
+        :rtype: :class:`huaweicloudsdkmpc.v1.MpeMetaData`
         """
         return self._meta_data
 
@@ -191,7 +206,7 @@ class MpeCallBackReq:
 
 
         :param meta_data: The meta_data of this MpeCallBackReq.
-        :type: MpeMetaData
+        :type meta_data: :class:`huaweicloudsdkmpc.v1.MpeMetaData`
         """
         self._meta_data = meta_data
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MetricDemision:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class MetricDemision:
     }
 
     def __init__(self, namespace=None, metric_name=None, dimensions=None):
-        """MetricDemision - a model defined in huaweicloud sdk"""
+        """MetricDemision
+
+        The model defined in huaweicloud sdk
+
+        :param namespace: 命名空间
+        :type namespace: str
+        :param metric_name: 指标名称
+        :type metric_name: str
+        :param dimensions: 维度列表
+        :type dimensions: list[:class:`huaweicloudsdkbcs.v2.Dimension`]
+        """
         
         
 
@@ -68,7 +77,7 @@ class MetricDemision:
         命名空间
 
         :param namespace: The namespace of this MetricDemision.
-        :type: str
+        :type namespace: str
         """
         self._namespace = namespace
 
@@ -90,7 +99,7 @@ class MetricDemision:
         指标名称
 
         :param metric_name: The metric_name of this MetricDemision.
-        :type: str
+        :type metric_name: str
         """
         self._metric_name = metric_name
 
@@ -101,7 +110,7 @@ class MetricDemision:
         维度列表
 
         :return: The dimensions of this MetricDemision.
-        :rtype: list[Dimension]
+        :rtype: list[:class:`huaweicloudsdkbcs.v2.Dimension`]
         """
         return self._dimensions
 
@@ -112,7 +121,7 @@ class MetricDemision:
         维度列表
 
         :param dimensions: The dimensions of this MetricDemision.
-        :type: list[Dimension]
+        :type dimensions: list[:class:`huaweicloudsdkbcs.v2.Dimension`]
         """
         self._dimensions = dimensions
 

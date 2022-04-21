@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowTempSetResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowTempSetResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, temps=None):
-        """ShowTempSetResponse - a model defined in huaweicloud sdk"""
+        """ShowTempSetResponse
+
+        The model defined in huaweicloud sdk
+
+        :param code: code
+        :type code: str
+        :param message: message
+        :type message: str
+        :param temps: temps
+        :type temps: list[:class:`huaweicloudsdkcpts.v1.TempDetailInfo`]
+        """
         
         super(ShowTempSetResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ShowTempSetResponse(SdkResponse):
         code
 
         :param code: The code of this ShowTempSetResponse.
-        :type: str
+        :type code: str
         """
         self._code = code
 
@@ -90,7 +99,7 @@ class ShowTempSetResponse(SdkResponse):
         message
 
         :param message: The message of this ShowTempSetResponse.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -101,7 +110,7 @@ class ShowTempSetResponse(SdkResponse):
         temps
 
         :return: The temps of this ShowTempSetResponse.
-        :rtype: list[TempDetailInfo]
+        :rtype: list[:class:`huaweicloudsdkcpts.v1.TempDetailInfo`]
         """
         return self._temps
 
@@ -112,7 +121,7 @@ class ShowTempSetResponse(SdkResponse):
         temps
 
         :param temps: The temps of this ShowTempSetResponse.
-        :type: list[TempDetailInfo]
+        :type temps: list[:class:`huaweicloudsdkcpts.v1.TempDetailInfo`]
         """
         self._temps = temps
 

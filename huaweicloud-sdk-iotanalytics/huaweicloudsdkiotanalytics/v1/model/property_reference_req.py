@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PropertyReferenceReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class PropertyReferenceReq:
     }
 
     def __init__(self, asset_id=None):
-        """PropertyReferenceReq - a model defined in huaweicloud sdk"""
+        """PropertyReferenceReq
+
+        The model defined in huaweicloud sdk
+
+        :param asset_id: 引用的资产ID，只有single型参数才能填写，可填写null置空
+        :type asset_id: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class PropertyReferenceReq:
         引用的资产ID，只有single型参数才能填写，可填写null置空
 
         :param asset_id: The asset_id of this PropertyReferenceReq.
-        :type: str
+        :type asset_id: str
         """
         self._asset_id = asset_id
 

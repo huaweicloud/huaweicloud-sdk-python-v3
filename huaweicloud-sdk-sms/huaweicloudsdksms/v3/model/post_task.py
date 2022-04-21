@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PostTask:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class PostTask:
     }
 
     def __init__(self, name=None, type=None, start_target_server=None, os_type=None, source_server=None, target_server=None, migration_ip=None, region_name=None, region_id=None, project_name=None, project_id=None, vm_template_id=None, use_public_ip=None, syncing=None):
-        """PostTask - a model defined in huaweicloud sdk"""
+        """PostTask
+
+        The model defined in huaweicloud sdk
+
+        :param name: 任务名称
+        :type name: str
+        :param type: 任务类型
+        :type type: str
+        :param start_target_server: 迁移后是否启动目的端虚拟机
+        :type start_target_server: bool
+        :param os_type: 操作系统类型
+        :type os_type: str
+        :param source_server: 
+        :type source_server: :class:`huaweicloudsdksms.v3.SourceServerByTask`
+        :param target_server: 
+        :type target_server: :class:`huaweicloudsdksms.v3.TargetServerByTask`
+        :param migration_ip: 迁移ip，如果是自动创建虚拟机，不需要此参数
+        :type migration_ip: str
+        :param region_name: region的名称
+        :type region_name: str
+        :param region_id: region id
+        :type region_id: str
+        :param project_name: 项目名称
+        :type project_name: str
+        :param project_id: 项目id
+        :type project_id: str
+        :param vm_template_id: 自动创建虚拟机使用模板
+        :type vm_template_id: str
+        :param use_public_ip: 是否使用公网ip
+        :type use_public_ip: bool
+        :param syncing: 复制或者同步后是否会继续持续同步，不添加则默认是false
+        :type syncing: bool
+        """
         
         
 
@@ -114,7 +145,7 @@ class PostTask:
         任务名称
 
         :param name: The name of this PostTask.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -136,7 +167,7 @@ class PostTask:
         任务类型
 
         :param type: The type of this PostTask.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -158,7 +189,7 @@ class PostTask:
         迁移后是否启动目的端虚拟机
 
         :param start_target_server: The start_target_server of this PostTask.
-        :type: bool
+        :type start_target_server: bool
         """
         self._start_target_server = start_target_server
 
@@ -180,7 +211,7 @@ class PostTask:
         操作系统类型
 
         :param os_type: The os_type of this PostTask.
-        :type: str
+        :type os_type: str
         """
         self._os_type = os_type
 
@@ -190,7 +221,7 @@ class PostTask:
 
 
         :return: The source_server of this PostTask.
-        :rtype: SourceServerByTask
+        :rtype: :class:`huaweicloudsdksms.v3.SourceServerByTask`
         """
         return self._source_server
 
@@ -200,7 +231,7 @@ class PostTask:
 
 
         :param source_server: The source_server of this PostTask.
-        :type: SourceServerByTask
+        :type source_server: :class:`huaweicloudsdksms.v3.SourceServerByTask`
         """
         self._source_server = source_server
 
@@ -210,7 +241,7 @@ class PostTask:
 
 
         :return: The target_server of this PostTask.
-        :rtype: TargetServerByTask
+        :rtype: :class:`huaweicloudsdksms.v3.TargetServerByTask`
         """
         return self._target_server
 
@@ -220,7 +251,7 @@ class PostTask:
 
 
         :param target_server: The target_server of this PostTask.
-        :type: TargetServerByTask
+        :type target_server: :class:`huaweicloudsdksms.v3.TargetServerByTask`
         """
         self._target_server = target_server
 
@@ -242,7 +273,7 @@ class PostTask:
         迁移ip，如果是自动创建虚拟机，不需要此参数
 
         :param migration_ip: The migration_ip of this PostTask.
-        :type: str
+        :type migration_ip: str
         """
         self._migration_ip = migration_ip
 
@@ -264,7 +295,7 @@ class PostTask:
         region的名称
 
         :param region_name: The region_name of this PostTask.
-        :type: str
+        :type region_name: str
         """
         self._region_name = region_name
 
@@ -286,7 +317,7 @@ class PostTask:
         region id
 
         :param region_id: The region_id of this PostTask.
-        :type: str
+        :type region_id: str
         """
         self._region_id = region_id
 
@@ -308,7 +339,7 @@ class PostTask:
         项目名称
 
         :param project_name: The project_name of this PostTask.
-        :type: str
+        :type project_name: str
         """
         self._project_name = project_name
 
@@ -330,7 +361,7 @@ class PostTask:
         项目id
 
         :param project_id: The project_id of this PostTask.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -352,7 +383,7 @@ class PostTask:
         自动创建虚拟机使用模板
 
         :param vm_template_id: The vm_template_id of this PostTask.
-        :type: str
+        :type vm_template_id: str
         """
         self._vm_template_id = vm_template_id
 
@@ -374,7 +405,7 @@ class PostTask:
         是否使用公网ip
 
         :param use_public_ip: The use_public_ip of this PostTask.
-        :type: bool
+        :type use_public_ip: bool
         """
         self._use_public_ip = use_public_ip
 
@@ -396,7 +427,7 @@ class PostTask:
         复制或者同步后是否会继续持续同步，不添加则默认是false
 
         :param syncing: The syncing of this PostTask.
-        :type: bool
+        :type syncing: bool
         """
         self._syncing = syncing
 

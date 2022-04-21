@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AdditionalProperties:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class AdditionalProperties:
     }
 
     def __init__(self, type=None):
-        """AdditionalProperties - a model defined in huaweicloud sdk"""
+        """AdditionalProperties
+
+        The model defined in huaweicloud sdk
+
+        :param type: 类型
+        :type type: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class AdditionalProperties:
         类型
 
         :param type: The type of this AdditionalProperties.
-        :type: str
+        :type type: str
         """
         self._type = type
 

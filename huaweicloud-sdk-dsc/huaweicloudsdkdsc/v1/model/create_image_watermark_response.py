@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateImageWatermarkResponse(SdkStreamResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class CreateImageWatermarkResponse(SdkStreamResponse):
     }
 
     def __init__(self,response):
-        """CreateImageWatermarkResponse - a model defined in huaweicloud sdk"""
+        """CreateImageWatermarkResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(CreateImageWatermarkResponse, self).__init__(response)
         self.discriminator = None

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowFileRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowFileRequest:
     }
 
     def __init__(self, repo_id=None, file_path=None, ref=None):
-        """ShowFileRequest - a model defined in huaweicloud sdk"""
+        """ShowFileRequest
+
+        The model defined in huaweicloud sdk
+
+        :param repo_id: 仓库短id
+        :type repo_id: int
+        :param file_path: Url编码的新文件的完整路径。
+        :type file_path: str
+        :param ref: commit id，仓库的branch名或tag名
+        :type ref: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class ShowFileRequest:
         仓库短id
 
         :param repo_id: The repo_id of this ShowFileRequest.
-        :type: int
+        :type repo_id: int
         """
         self._repo_id = repo_id
 
@@ -87,7 +96,7 @@ class ShowFileRequest:
         Url编码的新文件的完整路径。
 
         :param file_path: The file_path of this ShowFileRequest.
-        :type: str
+        :type file_path: str
         """
         self._file_path = file_path
 
@@ -109,7 +118,7 @@ class ShowFileRequest:
         commit id，仓库的branch名或tag名
 
         :param ref: The ref of this ShowFileRequest.
-        :type: str
+        :type ref: str
         """
         self._ref = ref
 

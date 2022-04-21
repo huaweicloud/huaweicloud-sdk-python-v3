@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ItemAttrs:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ItemAttrs:
     }
 
     def __init__(self, data_type=None, name=None, other_uses=None):
-        """ItemAttrs - a model defined in huaweicloud sdk"""
+        """ItemAttrs
+
+        The model defined in huaweicloud sdk
+
+        :param data_type: 数据类型。
+        :type data_type: str
+        :param name: 物品。
+        :type name: str
+        :param other_uses: 其他用途。
+        :type other_uses: list[str]
+        """
         
         
 
@@ -68,7 +77,7 @@ class ItemAttrs:
         数据类型。
 
         :param data_type: The data_type of this ItemAttrs.
-        :type: str
+        :type data_type: str
         """
         self._data_type = data_type
 
@@ -90,7 +99,7 @@ class ItemAttrs:
         物品。
 
         :param name: The name of this ItemAttrs.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -112,7 +121,7 @@ class ItemAttrs:
         其他用途。
 
         :param other_uses: The other_uses of this ItemAttrs.
-        :type: list[str]
+        :type other_uses: list[str]
         """
         self._other_uses = other_uses
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateWebSocketTokenRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateWebSocketTokenRequest:
     }
 
     def __init__(self, conference_id=None, x_conference_authorization=None):
-        """CreateWebSocketTokenRequest - a model defined in huaweicloud sdk"""
+        """CreateWebSocketTokenRequest
+
+        The model defined in huaweicloud sdk
+
+        :param conference_id: 会议ID。
+        :type conference_id: str
+        :param x_conference_authorization: 会控正式Token。 该头域统一为BASE64编码。
+        :type x_conference_authorization: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class CreateWebSocketTokenRequest:
         会议ID。
 
         :param conference_id: The conference_id of this CreateWebSocketTokenRequest.
-        :type: str
+        :type conference_id: str
         """
         self._conference_id = conference_id
 
@@ -83,7 +90,7 @@ class CreateWebSocketTokenRequest:
         会控正式Token。 该头域统一为BASE64编码。
 
         :param x_conference_authorization: The x_conference_authorization of this CreateWebSocketTokenRequest.
-        :type: str
+        :type x_conference_authorization: str
         """
         self._x_conference_authorization = x_conference_authorization
 

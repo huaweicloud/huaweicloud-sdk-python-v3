@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NetworkSubnet:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class NetworkSubnet:
     }
 
     def __init__(self, subnet_id=None):
-        """NetworkSubnet - a model defined in huaweicloud sdk"""
+        """NetworkSubnet
+
+        The model defined in huaweicloud sdk
+
+        :param subnet_id: 用于创建控制节点的subnet的IPv4网络ID(暂不支持IPv6)。获取方法如下：  - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找IPv4子网ID。 - 方法2：通过虚拟私有云服务的查询子网列表接口查询。   [链接请参见[查询子网列表](https://support.huaweicloud.com/api-vpc/vpc_subnet01_0003.html)](tag:hws)   [链接请参见[查询子网列表](https://support.huaweicloud.com/intl/zh-cn/api-vpc/vpc_subnet01_0003.html)](tag:hws_hk)
+        :type subnet_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class NetworkSubnet:
         用于创建控制节点的subnet的IPv4网络ID(暂不支持IPv6)。获取方法如下：  - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找IPv4子网ID。 - 方法2：通过虚拟私有云服务的查询子网列表接口查询。   [链接请参见[查询子网列表](https://support.huaweicloud.com/api-vpc/vpc_subnet01_0003.html)](tag:hws)   [链接请参见[查询子网列表](https://support.huaweicloud.com/intl/zh-cn/api-vpc/vpc_subnet01_0003.html)](tag:hws_hk)
 
         :param subnet_id: The subnet_id of this NetworkSubnet.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 

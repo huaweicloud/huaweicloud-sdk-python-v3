@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IncidentOrderAuthDetailInfoV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class IncidentOrderAuthDetailInfoV2:
     }
 
     def __init__(self, id=None, port=None, account=None, type=None, instance_id=None, instance_name=None, region_id=None):
-        """IncidentOrderAuthDetailInfoV2 - a model defined in huaweicloud sdk"""
+        """IncidentOrderAuthDetailInfoV2
+
+        The model defined in huaweicloud sdk
+
+        :param id: 授权详情id
+        :type id: int
+        :param port: 端口
+        :type port: int
+        :param account: 账户
+        :type account: str
+        :param type: 授权详情类型，0控制台 1主机资源
+        :type type: int
+        :param instance_id: 实例id
+        :type instance_id: str
+        :param instance_name: 实例名称
+        :type instance_name: str
+        :param region_id: 区域id
+        :type region_id: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class IncidentOrderAuthDetailInfoV2:
         授权详情id
 
         :param id: The id of this IncidentOrderAuthDetailInfoV2.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -110,7 +127,7 @@ class IncidentOrderAuthDetailInfoV2:
         端口
 
         :param port: The port of this IncidentOrderAuthDetailInfoV2.
-        :type: int
+        :type port: int
         """
         self._port = port
 
@@ -132,7 +149,7 @@ class IncidentOrderAuthDetailInfoV2:
         账户
 
         :param account: The account of this IncidentOrderAuthDetailInfoV2.
-        :type: str
+        :type account: str
         """
         self._account = account
 
@@ -154,7 +171,7 @@ class IncidentOrderAuthDetailInfoV2:
         授权详情类型，0控制台 1主机资源
 
         :param type: The type of this IncidentOrderAuthDetailInfoV2.
-        :type: int
+        :type type: int
         """
         self._type = type
 
@@ -176,7 +193,7 @@ class IncidentOrderAuthDetailInfoV2:
         实例id
 
         :param instance_id: The instance_id of this IncidentOrderAuthDetailInfoV2.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -198,7 +215,7 @@ class IncidentOrderAuthDetailInfoV2:
         实例名称
 
         :param instance_name: The instance_name of this IncidentOrderAuthDetailInfoV2.
-        :type: str
+        :type instance_name: str
         """
         self._instance_name = instance_name
 
@@ -220,7 +237,7 @@ class IncidentOrderAuthDetailInfoV2:
         区域id
 
         :param region_id: The region_id of this IncidentOrderAuthDetailInfoV2.
-        :type: str
+        :type region_id: str
         """
         self._region_id = region_id
 

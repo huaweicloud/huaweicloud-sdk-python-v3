@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Single2HaObject:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class Single2HaObject:
     }
 
     def __init__(self, az_code_new_node=None, dsspool_id=None, is_auto_pay=None, ad_domain_info=None):
-        """Single2HaObject - a model defined in huaweicloud sdk"""
+        """Single2HaObject
+
+        The model defined in huaweicloud sdk
+
+        :param az_code_new_node: 实例节点可用区码（AZ）。
+        :type az_code_new_node: str
+        :param dsspool_id: Dec用户专属存储ID，每个az配置的专属存储不同，实例节点所在专属存储ID，仅支持DEC用户创建时使用。
+        :type dsspool_id: str
+        :param is_auto_pay: 仅包周期实例进行单机转主备时可指定，表示是否自动从客户的账户中支付。 - true，为自动支付。 - false，为手动支付，默认该方式。
+        :type is_auto_pay: bool
+        :param ad_domain_info: 
+        :type ad_domain_info: :class:`huaweicloudsdkrds.v3.ADDomainInfo`
+        """
         
         
 
@@ -72,7 +83,7 @@ class Single2HaObject:
         实例节点可用区码（AZ）。
 
         :param az_code_new_node: The az_code_new_node of this Single2HaObject.
-        :type: str
+        :type az_code_new_node: str
         """
         self._az_code_new_node = az_code_new_node
 
@@ -94,7 +105,7 @@ class Single2HaObject:
         Dec用户专属存储ID，每个az配置的专属存储不同，实例节点所在专属存储ID，仅支持DEC用户创建时使用。
 
         :param dsspool_id: The dsspool_id of this Single2HaObject.
-        :type: str
+        :type dsspool_id: str
         """
         self._dsspool_id = dsspool_id
 
@@ -116,7 +127,7 @@ class Single2HaObject:
         仅包周期实例进行单机转主备时可指定，表示是否自动从客户的账户中支付。 - true，为自动支付。 - false，为手动支付，默认该方式。
 
         :param is_auto_pay: The is_auto_pay of this Single2HaObject.
-        :type: bool
+        :type is_auto_pay: bool
         """
         self._is_auto_pay = is_auto_pay
 
@@ -126,7 +137,7 @@ class Single2HaObject:
 
 
         :return: The ad_domain_info of this Single2HaObject.
-        :rtype: ADDomainInfo
+        :rtype: :class:`huaweicloudsdkrds.v3.ADDomainInfo`
         """
         return self._ad_domain_info
 
@@ -136,7 +147,7 @@ class Single2HaObject:
 
 
         :param ad_domain_info: The ad_domain_info of this Single2HaObject.
-        :type: ADDomainInfo
+        :type ad_domain_info: :class:`huaweicloudsdkrds.v3.ADDomainInfo`
         """
         self._ad_domain_info = ad_domain_info
 

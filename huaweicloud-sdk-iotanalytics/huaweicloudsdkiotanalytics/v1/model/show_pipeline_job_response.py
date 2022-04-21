@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowPipelineJobResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowPipelineJobResponse(SdkResponse):
     }
 
     def __init__(self, pipeline_config=None, pipeline_info=None):
-        """ShowPipelineJobResponse - a model defined in huaweicloud sdk"""
+        """ShowPipelineJobResponse
+
+        The model defined in huaweicloud sdk
+
+        :param pipeline_config: 管道作业详细配置，每个作业可选择不同的算子进行组合，各算子的使用方法详见：数据管道算子配置指南。
+        :type pipeline_config: dict(str, object)
+        :param pipeline_info: 
+        :type pipeline_info: :class:`huaweicloudsdkiotanalytics.v1.PipelineJobInfoDto`
+        """
         
         super(ShowPipelineJobResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ShowPipelineJobResponse(SdkResponse):
         管道作业详细配置，每个作业可选择不同的算子进行组合，各算子的使用方法详见：数据管道算子配置指南。
 
         :param pipeline_config: The pipeline_config of this ShowPipelineJobResponse.
-        :type: dict(str, object)
+        :type pipeline_config: dict(str, object)
         """
         self._pipeline_config = pipeline_config
 
@@ -73,7 +80,7 @@ class ShowPipelineJobResponse(SdkResponse):
 
 
         :return: The pipeline_info of this ShowPipelineJobResponse.
-        :rtype: PipelineJobInfoDto
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.PipelineJobInfoDto`
         """
         return self._pipeline_info
 
@@ -83,7 +90,7 @@ class ShowPipelineJobResponse(SdkResponse):
 
 
         :param pipeline_info: The pipeline_info of this ShowPipelineJobResponse.
-        :type: PipelineJobInfoDto
+        :type pipeline_info: :class:`huaweicloudsdkiotanalytics.v1.PipelineJobInfoDto`
         """
         self._pipeline_info = pipeline_info
 

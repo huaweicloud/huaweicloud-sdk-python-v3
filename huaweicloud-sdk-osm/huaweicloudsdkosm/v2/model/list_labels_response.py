@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListLabelsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListLabelsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, label_list=None):
-        """ListLabelsResponse - a model defined in huaweicloud sdk"""
+        """ListLabelsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total_count: 总数
+        :type total_count: int
+        :param label_list: 标签列表
+        :type label_list: list[:class:`huaweicloudsdkosm.v2.CaseLabelInfo`]
+        """
         
         super(ListLabelsResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListLabelsResponse(SdkResponse):
         总数
 
         :param total_count: The total_count of this ListLabelsResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 
@@ -74,7 +81,7 @@ class ListLabelsResponse(SdkResponse):
         标签列表
 
         :return: The label_list of this ListLabelsResponse.
-        :rtype: list[CaseLabelInfo]
+        :rtype: list[:class:`huaweicloudsdkosm.v2.CaseLabelInfo`]
         """
         return self._label_list
 
@@ -85,7 +92,7 @@ class ListLabelsResponse(SdkResponse):
         标签列表
 
         :param label_list: The label_list of this ListLabelsResponse.
-        :type: list[CaseLabelInfo]
+        :type label_list: list[:class:`huaweicloudsdkosm.v2.CaseLabelInfo`]
         """
         self._label_list = label_list
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreatePublicIpOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreatePublicIpOption:
     }
 
     def __init__(self, site_id=None, ip_version=None, type=None):
-        """CreatePublicIpOption - a model defined in huaweicloud sdk"""
+        """CreatePublicIpOption
+
+        The model defined in huaweicloud sdk
+
+        :param site_id: 边缘站点的ID。
+        :type site_id: str
+        :param ip_version: 弹性公网IP的版本。目前IEC服务只支持4，即ipv4。
+        :type ip_version: str
+        :param type: 线路ID。 不传时默认取当前站点第一条线路
+        :type type: str
+        """
         
         
 
@@ -67,7 +76,7 @@ class CreatePublicIpOption:
         边缘站点的ID。
 
         :param site_id: The site_id of this CreatePublicIpOption.
-        :type: str
+        :type site_id: str
         """
         self._site_id = site_id
 
@@ -89,7 +98,7 @@ class CreatePublicIpOption:
         弹性公网IP的版本。目前IEC服务只支持4，即ipv4。
 
         :param ip_version: The ip_version of this CreatePublicIpOption.
-        :type: str
+        :type ip_version: str
         """
         self._ip_version = ip_version
 
@@ -111,7 +120,7 @@ class CreatePublicIpOption:
         线路ID。 不传时默认取当前站点第一条线路
 
         :param type: The type of this CreatePublicIpOption.
-        :type: str
+        :type type: str
         """
         self._type = type
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAlarmTemplatesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListAlarmTemplatesRequest:
     }
 
     def __init__(self, alarm_template_id=None, namespace=None, dname=None, start=None, limit=None):
-        """ListAlarmTemplatesRequest - a model defined in huaweicloud sdk"""
+        """ListAlarmTemplatesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param alarm_template_id: 自定义告警模的ID，如：at1603330892378wkDm77y6B。
+        :type alarm_template_id: str
+        :param namespace: 自定义告警模板选择的资源类型。即命名空间，如弹性云服务器的资源命名空间为：SYS.ECS；各服务命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
+        :type namespace: str
+        :param dname: 自定义告警模板选择的资源维度，如：弹性云服务器，则维度为instance_id，各资源的指标维度名称可查看：“[服务指标维度](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
+        :type dname: str
+        :param start: 分页起始值，类型为integer，默认值为0。
+        :type start: str
+        :param limit: 单次查询的条数限制，取值范围(0,100]，默认值为100， 用于限制结果数据条数。
+        :type limit: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class ListAlarmTemplatesRequest:
         自定义告警模的ID，如：at1603330892378wkDm77y6B。
 
         :param alarm_template_id: The alarm_template_id of this ListAlarmTemplatesRequest.
-        :type: str
+        :type alarm_template_id: str
         """
         self._alarm_template_id = alarm_template_id
 
@@ -100,7 +113,7 @@ class ListAlarmTemplatesRequest:
         自定义告警模板选择的资源类型。即命名空间，如弹性云服务器的资源命名空间为：SYS.ECS；各服务命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
         :param namespace: The namespace of this ListAlarmTemplatesRequest.
-        :type: str
+        :type namespace: str
         """
         self._namespace = namespace
 
@@ -122,7 +135,7 @@ class ListAlarmTemplatesRequest:
         自定义告警模板选择的资源维度，如：弹性云服务器，则维度为instance_id，各资源的指标维度名称可查看：“[服务指标维度](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
         :param dname: The dname of this ListAlarmTemplatesRequest.
-        :type: str
+        :type dname: str
         """
         self._dname = dname
 
@@ -144,7 +157,7 @@ class ListAlarmTemplatesRequest:
         分页起始值，类型为integer，默认值为0。
 
         :param start: The start of this ListAlarmTemplatesRequest.
-        :type: str
+        :type start: str
         """
         self._start = start
 
@@ -166,7 +179,7 @@ class ListAlarmTemplatesRequest:
         单次查询的条数限制，取值范围(0,100]，默认值为100， 用于限制结果数据条数。
 
         :param limit: The limit of this ListAlarmTemplatesRequest.
-        :type: str
+        :type limit: str
         """
         self._limit = limit
 

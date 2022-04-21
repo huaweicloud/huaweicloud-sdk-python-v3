@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Contexts:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Contexts:
     }
 
     def __init__(self, name=None, context=None):
-        """Contexts - a model defined in huaweicloud sdk"""
+        """Contexts
+
+        The model defined in huaweicloud sdk
+
+        :param name: 上下文的名称。 - 若不存在publicIp（虚拟机弹性IP），则集群列表的集群数量为1，该字段值为“internal”。 - 若存在publicIp，则集群列表的集群数量大于1，所有扩展的context的name的值为“external”。 
+        :type name: str
+        :param context: 
+        :type context: :class:`huaweicloudsdkcce.v3.Context`
+        """
         
         
 
@@ -63,7 +70,7 @@ class Contexts:
         上下文的名称。 - 若不存在publicIp（虚拟机弹性IP），则集群列表的集群数量为1，该字段值为“internal”。 - 若存在publicIp，则集群列表的集群数量大于1，所有扩展的context的name的值为“external”。 
 
         :param name: The name of this Contexts.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -73,7 +80,7 @@ class Contexts:
 
 
         :return: The context of this Contexts.
-        :rtype: Context
+        :rtype: :class:`huaweicloudsdkcce.v3.Context`
         """
         return self._context
 
@@ -83,7 +90,7 @@ class Contexts:
 
 
         :param context: The context of this Contexts.
-        :type: Context
+        :type context: :class:`huaweicloudsdkcce.v3.Context`
         """
         self._context = context
 

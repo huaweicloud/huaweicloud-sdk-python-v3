@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SqlserverDatabaseForCreation:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class SqlserverDatabaseForCreation:
     }
 
     def __init__(self, name=None):
-        """SqlserverDatabaseForCreation - a model defined in huaweicloud sdk"""
+        """SqlserverDatabaseForCreation
+
+        The model defined in huaweicloud sdk
+
+        :param name: 数据库名称。 数据库名称长度可在1～64个字符之间，由字母、数字、中划线或下划线组成，不能包含其他特殊字符，且不能以RDS for SQL Server系统库开头或结尾。 RDS for SQL Server系统库包括master，msdb，model，tempdb，resource以及rdsadmin。
+        :type name: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class SqlserverDatabaseForCreation:
         数据库名称。 数据库名称长度可在1～64个字符之间，由字母、数字、中划线或下划线组成，不能包含其他特殊字符，且不能以RDS for SQL Server系统库开头或结尾。 RDS for SQL Server系统库包括master，msdb，model，tempdb，resource以及rdsadmin。
 
         :param name: The name of this SqlserverDatabaseForCreation.
-        :type: str
+        :type name: str
         """
         self._name = name
 

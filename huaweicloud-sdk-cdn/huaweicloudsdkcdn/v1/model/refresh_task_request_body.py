@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RefreshTaskRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RefreshTaskRequestBody:
     }
 
     def __init__(self, type=None, urls=None):
-        """RefreshTaskRequestBody - a model defined in huaweicloud sdk"""
+        """RefreshTaskRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param type: 刷新的类型，其值可以为file 或directory，默认为file
+        :type type: str
+        :param urls: 输入URL必须带有“http://”或“https://”，多个URL用逗号分隔，单个url的长度限制为4096字符，单次最多输入1000个url。
+        :type urls: list[str]
+        """
         
         
 
@@ -62,7 +69,7 @@ class RefreshTaskRequestBody:
         刷新的类型，其值可以为file 或directory，默认为file
 
         :param type: The type of this RefreshTaskRequestBody.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -84,7 +91,7 @@ class RefreshTaskRequestBody:
         输入URL必须带有“http://”或“https://”，多个URL用逗号分隔，单个url的长度限制为4096字符，单次最多输入1000个url。
 
         :param urls: The urls of this RefreshTaskRequestBody.
-        :type: list[str]
+        :type urls: list[str]
         """
         self._urls = urls
 

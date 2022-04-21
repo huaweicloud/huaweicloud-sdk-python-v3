@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListResResourceSpecResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListResResourceSpecResponse(SdkResponse):
     }
 
     def __init__(self, offline_spec=None, nearline_spec=None, deep_learning_spec=None, is_success=None, message=None, error_code=None):
-        """ListResResourceSpecResponse - a model defined in huaweicloud sdk"""
+        """ListResResourceSpecResponse
+
+        The model defined in huaweicloud sdk
+
+        :param offline_spec: 离线计算规格。
+        :type offline_spec: list[str]
+        :param nearline_spec: 实时计算规格。
+        :type nearline_spec: list[str]
+        :param deep_learning_spec: 排序模型计算规格。
+        :type deep_learning_spec: list[str]
+        :param is_success: 请求是否成功。
+        :type is_success: bool
+        :param message: 返回消息（请求成功时，不返回此字段）。
+        :type message: str
+        :param error_code: 错误码（请求成功时，不返回此字段）。
+        :type error_code: str
+        """
         
         super(ListResResourceSpecResponse, self).__init__()
 
@@ -83,7 +98,7 @@ class ListResResourceSpecResponse(SdkResponse):
         离线计算规格。
 
         :param offline_spec: The offline_spec of this ListResResourceSpecResponse.
-        :type: list[str]
+        :type offline_spec: list[str]
         """
         self._offline_spec = offline_spec
 
@@ -105,7 +120,7 @@ class ListResResourceSpecResponse(SdkResponse):
         实时计算规格。
 
         :param nearline_spec: The nearline_spec of this ListResResourceSpecResponse.
-        :type: list[str]
+        :type nearline_spec: list[str]
         """
         self._nearline_spec = nearline_spec
 
@@ -127,7 +142,7 @@ class ListResResourceSpecResponse(SdkResponse):
         排序模型计算规格。
 
         :param deep_learning_spec: The deep_learning_spec of this ListResResourceSpecResponse.
-        :type: list[str]
+        :type deep_learning_spec: list[str]
         """
         self._deep_learning_spec = deep_learning_spec
 
@@ -149,7 +164,7 @@ class ListResResourceSpecResponse(SdkResponse):
         请求是否成功。
 
         :param is_success: The is_success of this ListResResourceSpecResponse.
-        :type: bool
+        :type is_success: bool
         """
         self._is_success = is_success
 
@@ -171,7 +186,7 @@ class ListResResourceSpecResponse(SdkResponse):
         返回消息（请求成功时，不返回此字段）。
 
         :param message: The message of this ListResResourceSpecResponse.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -193,7 +208,7 @@ class ListResResourceSpecResponse(SdkResponse):
         错误码（请求成功时，不返回此字段）。
 
         :param error_code: The error_code of this ListResResourceSpecResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 

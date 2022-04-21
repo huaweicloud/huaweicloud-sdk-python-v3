@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SubDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class SubDetail:
     }
 
     def __init__(self, substep_name=None, detail=None, status=None, message=None, start_time=None, end_time=None, serial_num=None):
-        """SubDetail - a model defined in huaweicloud sdk"""
+        """SubDetail
+
+        The model defined in huaweicloud sdk
+
+        :param substep_name: 子操作名
+        :type substep_name: str
+        :param detail: 子操作详情
+        :type detail: str
+        :param status: 子操作状态
+        :type status: str
+        :param message: 子操作过程信息记录
+        :type message: list[str]
+        :param start_time: 开始时间
+        :type start_time: int
+        :param end_time: 结束时间
+        :type end_time: int
+        :param serial_num: 序列号
+        :type serial_num: int
+        """
         
         
 
@@ -88,7 +105,7 @@ class SubDetail:
         子操作名
 
         :param substep_name: The substep_name of this SubDetail.
-        :type: str
+        :type substep_name: str
         """
         self._substep_name = substep_name
 
@@ -110,7 +127,7 @@ class SubDetail:
         子操作详情
 
         :param detail: The detail of this SubDetail.
-        :type: str
+        :type detail: str
         """
         self._detail = detail
 
@@ -132,7 +149,7 @@ class SubDetail:
         子操作状态
 
         :param status: The status of this SubDetail.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -154,7 +171,7 @@ class SubDetail:
         子操作过程信息记录
 
         :param message: The message of this SubDetail.
-        :type: list[str]
+        :type message: list[str]
         """
         self._message = message
 
@@ -176,7 +193,7 @@ class SubDetail:
         开始时间
 
         :param start_time: The start_time of this SubDetail.
-        :type: int
+        :type start_time: int
         """
         self._start_time = start_time
 
@@ -198,7 +215,7 @@ class SubDetail:
         结束时间
 
         :param end_time: The end_time of this SubDetail.
-        :type: int
+        :type end_time: int
         """
         self._end_time = end_time
 
@@ -220,7 +237,7 @@ class SubDetail:
         序列号
 
         :param serial_num: The serial_num of this SubDetail.
-        :type: int
+        :type serial_num: int
         """
         self._serial_num = serial_num
 

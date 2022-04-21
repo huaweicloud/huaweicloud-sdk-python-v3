@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DomainItem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class DomainItem:
     }
 
     def __init__(self, high=None, middle=None, low=None, hint=None, domain_id=None, top_level_domain_id=None, domain_name=None, alias=None, create_time=None, auth_status=None, protocol_type=None):
-        """DomainItem - a model defined in huaweicloud sdk"""
+        """DomainItem
+
+        The model defined in huaweicloud sdk
+
+        :param high: 高危漏洞数
+        :type high: int
+        :param middle: 中危漏洞数
+        :type middle: int
+        :param low: 低危漏洞数
+        :type low: int
+        :param hint: 提示危漏洞数
+        :type hint: int
+        :param domain_id: 域名id
+        :type domain_id: str
+        :param top_level_domain_id: 一级域名id
+        :type top_level_domain_id: str
+        :param domain_name: 域名
+        :type domain_name: str
+        :param alias: 域名的别名
+        :type alias: str
+        :param create_time: 创建域名资产的时间
+        :type create_time: str
+        :param auth_status: 域名的认证状态:   * unauth - 未认证   * auth - 已认证   * invalid - 认证文件无效   * manual - 人工认证   * skip - 免认证 
+        :type auth_status: str
+        :param protocol_type: 协议类型:   * http:// - HTTP   * https:// - HTTPS 
+        :type protocol_type: str
+        """
         
         
 
@@ -108,7 +133,7 @@ class DomainItem:
         高危漏洞数
 
         :param high: The high of this DomainItem.
-        :type: int
+        :type high: int
         """
         self._high = high
 
@@ -130,7 +155,7 @@ class DomainItem:
         中危漏洞数
 
         :param middle: The middle of this DomainItem.
-        :type: int
+        :type middle: int
         """
         self._middle = middle
 
@@ -152,7 +177,7 @@ class DomainItem:
         低危漏洞数
 
         :param low: The low of this DomainItem.
-        :type: int
+        :type low: int
         """
         self._low = low
 
@@ -174,7 +199,7 @@ class DomainItem:
         提示危漏洞数
 
         :param hint: The hint of this DomainItem.
-        :type: int
+        :type hint: int
         """
         self._hint = hint
 
@@ -196,7 +221,7 @@ class DomainItem:
         域名id
 
         :param domain_id: The domain_id of this DomainItem.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -218,7 +243,7 @@ class DomainItem:
         一级域名id
 
         :param top_level_domain_id: The top_level_domain_id of this DomainItem.
-        :type: str
+        :type top_level_domain_id: str
         """
         self._top_level_domain_id = top_level_domain_id
 
@@ -240,7 +265,7 @@ class DomainItem:
         域名
 
         :param domain_name: The domain_name of this DomainItem.
-        :type: str
+        :type domain_name: str
         """
         self._domain_name = domain_name
 
@@ -262,7 +287,7 @@ class DomainItem:
         域名的别名
 
         :param alias: The alias of this DomainItem.
-        :type: str
+        :type alias: str
         """
         self._alias = alias
 
@@ -284,7 +309,7 @@ class DomainItem:
         创建域名资产的时间
 
         :param create_time: The create_time of this DomainItem.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -306,7 +331,7 @@ class DomainItem:
         域名的认证状态:   * unauth - 未认证   * auth - 已认证   * invalid - 认证文件无效   * manual - 人工认证   * skip - 免认证 
 
         :param auth_status: The auth_status of this DomainItem.
-        :type: str
+        :type auth_status: str
         """
         self._auth_status = auth_status
 
@@ -328,7 +353,7 @@ class DomainItem:
         协议类型:   * http:// - HTTP   * https:// - HTTPS 
 
         :param protocol_type: The protocol_type of this DomainItem.
-        :type: str
+        :type protocol_type: str
         """
         self._protocol_type = protocol_type
 

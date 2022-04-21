@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestCancelSingleRecordCycleConfListReqBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RestCancelSingleRecordCycleConfListReqBody:
     }
 
     def __init__(self, cycle_sub_conf_i_ds=None):
-        """RestCancelSingleRecordCycleConfListReqBody - a model defined in huaweicloud sdk"""
+        """RestCancelSingleRecordCycleConfListReqBody
+
+        The model defined in huaweicloud sdk
+
+        :param cycle_sub_conf_i_ds: 待删除的子会议标识列表
+        :type cycle_sub_conf_i_ds: list[str]
+        """
         
         
 
@@ -57,7 +62,7 @@ class RestCancelSingleRecordCycleConfListReqBody:
         待删除的子会议标识列表
 
         :param cycle_sub_conf_i_ds: The cycle_sub_conf_i_ds of this RestCancelSingleRecordCycleConfListReqBody.
-        :type: list[str]
+        :type cycle_sub_conf_i_ds: list[str]
         """
         self._cycle_sub_conf_i_ds = cycle_sub_conf_i_ds
 

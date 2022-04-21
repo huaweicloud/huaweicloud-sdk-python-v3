@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateExtendInstanceStorageResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateExtendInstanceStorageResponse(SdkResponse):
     }
 
     def __init__(self, id=None):
-        """UpdateExtendInstanceStorageResponse - a model defined in huaweicloud sdk"""
+        """UpdateExtendInstanceStorageResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 集群ID。
+        :type id: str
+        """
         
         super(UpdateExtendInstanceStorageResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class UpdateExtendInstanceStorageResponse(SdkResponse):
         集群ID。
 
         :param id: The id of this UpdateExtendInstanceStorageResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 

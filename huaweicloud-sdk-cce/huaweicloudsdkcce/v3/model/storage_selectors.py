@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StorageSelectors:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class StorageSelectors:
     }
 
     def __init__(self, name=None, storage_type=None, match_labels=None):
-        """StorageSelectors - a model defined in huaweicloud sdk"""
+        """StorageSelectors
+
+        The model defined in huaweicloud sdk
+
+        :param name: selector的名字，作为storageGroup中selectorNames的索引，因此各个selector间的名字不能重复。
+        :type name: str
+        :param storage_type: 存储类型，当前仅支持evs（云硬盘）或local（本地盘）；local存储类型不支持磁盘选择，所有本地盘将被组成一个VG，因此也仅允许只有一个local类型的storageSelector。
+        :type storage_type: str
+        :param match_labels: 
+        :type match_labels: :class:`huaweicloudsdkcce.v3.StorageSelectorsMatchLabels`
+        """
         
         
 
@@ -66,7 +75,7 @@ class StorageSelectors:
         selector的名字，作为storageGroup中selectorNames的索引，因此各个selector间的名字不能重复。
 
         :param name: The name of this StorageSelectors.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -88,7 +97,7 @@ class StorageSelectors:
         存储类型，当前仅支持evs（云硬盘）或local（本地盘）；local存储类型不支持磁盘选择，所有本地盘将被组成一个VG，因此也仅允许只有一个local类型的storageSelector。
 
         :param storage_type: The storage_type of this StorageSelectors.
-        :type: str
+        :type storage_type: str
         """
         self._storage_type = storage_type
 
@@ -98,7 +107,7 @@ class StorageSelectors:
 
 
         :return: The match_labels of this StorageSelectors.
-        :rtype: StorageSelectorsMatchLabels
+        :rtype: :class:`huaweicloudsdkcce.v3.StorageSelectorsMatchLabels`
         """
         return self._match_labels
 
@@ -108,7 +117,7 @@ class StorageSelectors:
 
 
         :param match_labels: The match_labels of this StorageSelectors.
-        :type: StorageSelectorsMatchLabels
+        :type match_labels: :class:`huaweicloudsdkcce.v3.StorageSelectorsMatchLabels`
         """
         self._match_labels = match_labels
 

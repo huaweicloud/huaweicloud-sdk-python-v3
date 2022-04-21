@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Events:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class Events:
     }
 
     def __init__(self, annotations=None, metadata=None, arrives_at=None, ends_at=None, id=None, starts_at=None, timeout=None, type=None):
-        """Events - a model defined in huaweicloud sdk"""
+        """Events
+
+        The model defined in huaweicloud sdk
+
+        :param annotations: 
+        :type annotations: :class:`huaweicloudsdklts.v2.Annotations`
+        :param metadata: 
+        :type metadata: :class:`huaweicloudsdklts.v2.Metadata`
+        :param arrives_at: 到达时间(时间戳)
+        :type arrives_at: int
+        :param ends_at: 告警清除时间(时间戳)
+        :type ends_at: int
+        :param id: 告警id
+        :type id: str
+        :param starts_at: 告警产生时间(时间戳)
+        :type starts_at: int
+        :param timeout: 告警自动清除时间(时间戳)
+        :type timeout: int
+        :param type: 告警规则类型(SQL/关键词)
+        :type type: str
+        """
         
         
 
@@ -73,7 +92,7 @@ class Events:
 
 
         :return: The annotations of this Events.
-        :rtype: Annotations
+        :rtype: :class:`huaweicloudsdklts.v2.Annotations`
         """
         return self._annotations
 
@@ -83,7 +102,7 @@ class Events:
 
 
         :param annotations: The annotations of this Events.
-        :type: Annotations
+        :type annotations: :class:`huaweicloudsdklts.v2.Annotations`
         """
         self._annotations = annotations
 
@@ -93,7 +112,7 @@ class Events:
 
 
         :return: The metadata of this Events.
-        :rtype: Metadata
+        :rtype: :class:`huaweicloudsdklts.v2.Metadata`
         """
         return self._metadata
 
@@ -103,7 +122,7 @@ class Events:
 
 
         :param metadata: The metadata of this Events.
-        :type: Metadata
+        :type metadata: :class:`huaweicloudsdklts.v2.Metadata`
         """
         self._metadata = metadata
 
@@ -125,7 +144,7 @@ class Events:
         到达时间(时间戳)
 
         :param arrives_at: The arrives_at of this Events.
-        :type: int
+        :type arrives_at: int
         """
         self._arrives_at = arrives_at
 
@@ -147,7 +166,7 @@ class Events:
         告警清除时间(时间戳)
 
         :param ends_at: The ends_at of this Events.
-        :type: int
+        :type ends_at: int
         """
         self._ends_at = ends_at
 
@@ -169,7 +188,7 @@ class Events:
         告警id
 
         :param id: The id of this Events.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -191,7 +210,7 @@ class Events:
         告警产生时间(时间戳)
 
         :param starts_at: The starts_at of this Events.
-        :type: int
+        :type starts_at: int
         """
         self._starts_at = starts_at
 
@@ -213,7 +232,7 @@ class Events:
         告警自动清除时间(时间戳)
 
         :param timeout: The timeout of this Events.
-        :type: int
+        :type timeout: int
         """
         self._timeout = timeout
 
@@ -235,7 +254,7 @@ class Events:
         告警规则类型(SQL/关键词)
 
         :param type: The type of this Events.
-        :type: str
+        :type type: str
         """
         self._type = type
 

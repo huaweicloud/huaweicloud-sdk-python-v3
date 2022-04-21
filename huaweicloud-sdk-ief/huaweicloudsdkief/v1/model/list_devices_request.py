@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDevicesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ListDevicesRequest:
     }
 
     def __init__(self, ief_instance_id=None, name=None, node_id=None, limit=None, offset=None, is_binding=None, tags=None):
-        """ListDevicesRequest - a model defined in huaweicloud sdk"""
+        """ListDevicesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param ief_instance_id: 铂金版实例ID，专业版实例为空值
+        :type ief_instance_id: str
+        :param name: 终端设备名称，模糊匹配
+        :type name: str
+        :param node_id: 节点ID, 精确匹配
+        :type node_id: str
+        :param limit: 每页显示的条目数量，取值范围1~1000，默认为1000
+        :type limit: str
+        :param offset: 查询的起始位置，取值范围为非负整数，默认为0
+        :type offset: str
+        :param is_binding: 是否绑定到边缘节点，为“true”时返回所有已绑定到节点的设备列表，为“false”则返回未绑定节点的设备列表
+        :type is_binding: str
+        :param tags: 标签的key和value通过点连接， 多个标签通过逗号连接，如：tags&#x3D;key1.value1,key2.value2
+        :type tags: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class ListDevicesRequest:
         铂金版实例ID，专业版实例为空值
 
         :param ief_instance_id: The ief_instance_id of this ListDevicesRequest.
-        :type: str
+        :type ief_instance_id: str
         """
         self._ief_instance_id = ief_instance_id
 
@@ -110,7 +127,7 @@ class ListDevicesRequest:
         终端设备名称，模糊匹配
 
         :param name: The name of this ListDevicesRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -132,7 +149,7 @@ class ListDevicesRequest:
         节点ID, 精确匹配
 
         :param node_id: The node_id of this ListDevicesRequest.
-        :type: str
+        :type node_id: str
         """
         self._node_id = node_id
 
@@ -154,7 +171,7 @@ class ListDevicesRequest:
         每页显示的条目数量，取值范围1~1000，默认为1000
 
         :param limit: The limit of this ListDevicesRequest.
-        :type: str
+        :type limit: str
         """
         self._limit = limit
 
@@ -176,7 +193,7 @@ class ListDevicesRequest:
         查询的起始位置，取值范围为非负整数，默认为0
 
         :param offset: The offset of this ListDevicesRequest.
-        :type: str
+        :type offset: str
         """
         self._offset = offset
 
@@ -198,7 +215,7 @@ class ListDevicesRequest:
         是否绑定到边缘节点，为“true”时返回所有已绑定到节点的设备列表，为“false”则返回未绑定节点的设备列表
 
         :param is_binding: The is_binding of this ListDevicesRequest.
-        :type: str
+        :type is_binding: str
         """
         self._is_binding = is_binding
 
@@ -220,7 +237,7 @@ class ListDevicesRequest:
         标签的key和value通过点连接， 多个标签通过逗号连接，如：tags=key1.value1,key2.value2
 
         :param tags: The tags of this ListDevicesRequest.
-        :type: str
+        :type tags: str
         """
         self._tags = tags
 

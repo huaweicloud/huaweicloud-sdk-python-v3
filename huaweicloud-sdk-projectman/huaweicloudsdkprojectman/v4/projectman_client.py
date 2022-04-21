@@ -52,21 +52,17 @@ class ProjectManClient(Client):
         """AGC调用 当前用户申请加入项目
 
         AGC调用 当前用户申请加入项目, 申请的用户id写在header中
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param AddApplyJoinProjectForAgcRequest request
-        :return: AddApplyJoinProjectForAgcResponse
+        :param request: Request instance for AddApplyJoinProjectForAgc
+        :type request: :class:`huaweicloudsdkprojectman.v4.AddApplyJoinProjectForAgcRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.AddApplyJoinProjectForAgcResponse`
         """
         return self.add_apply_join_project_for_agc_with_http_info(request)
 
     def add_apply_join_project_for_agc_with_http_info(self, request):
-        """AGC调用 当前用户申请加入项目
-
-        AGC调用 当前用户申请加入项目, 申请的用户id写在header中
-
-        :param AddApplyJoinProjectForAgcRequest request
-        :return: AddApplyJoinProjectForAgcResponse
-        """
-
         all_params = ['domain_id', 'user_id', 'project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -114,26 +110,21 @@ class ProjectManClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def add_member_v4(self, request):
         """添加项目成员
 
         添加项目成员,可以添加跨租户成员
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param AddMemberV4Request request
-        :return: AddMemberV4Response
+        :param request: Request instance for AddMemberV4
+        :type request: :class:`huaweicloudsdkprojectman.v4.AddMemberV4Request`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.AddMemberV4Response`
         """
         return self.add_member_v4_with_http_info(request)
 
     def add_member_v4_with_http_info(self, request):
-        """添加项目成员
-
-        添加项目成员,可以添加跨租户成员
-
-        :param AddMemberV4Request request
-        :return: AddMemberV4Response
-        """
-
         all_params = ['project_id', 'add_member_v4_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -179,26 +170,21 @@ class ProjectManClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_add_members_v4(self, request):
         """批量添加项目成员
 
         批量添加项目成员，只能添加和项目创建者同一租户下的成员，不正确的用户id会略过，添加的用户超过权限的，默认角色设置为7
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchAddMembersV4Request request
-        :return: BatchAddMembersV4Response
+        :param request: Request instance for BatchAddMembersV4
+        :type request: :class:`huaweicloudsdkprojectman.v4.BatchAddMembersV4Request`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.BatchAddMembersV4Response`
         """
         return self.batch_add_members_v4_with_http_info(request)
 
     def batch_add_members_v4_with_http_info(self, request):
-        """批量添加项目成员
-
-        批量添加项目成员，只能添加和项目创建者同一租户下的成员，不正确的用户id会略过，添加的用户超过权限的，默认角色设置为7
-
-        :param BatchAddMembersV4Request request
-        :return: BatchAddMembersV4Response
-        """
-
         all_params = ['project_id', 'batch_add_members_v4_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -244,26 +230,21 @@ class ProjectManClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_delete_members_v4(self, request):
         """批量删除项目成员
 
         批量删除项目成员
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchDeleteMembersV4Request request
-        :return: BatchDeleteMembersV4Response
+        :param request: Request instance for BatchDeleteMembersV4
+        :type request: :class:`huaweicloudsdkprojectman.v4.BatchDeleteMembersV4Request`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.BatchDeleteMembersV4Response`
         """
         return self.batch_delete_members_v4_with_http_info(request)
 
     def batch_delete_members_v4_with_http_info(self, request):
-        """批量删除项目成员
-
-        批量删除项目成员
-
-        :param BatchDeleteMembersV4Request request
-        :return: BatchDeleteMembersV4Response
-        """
-
         all_params = ['project_id', 'batch_delete_members_v4_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -309,26 +290,21 @@ class ProjectManClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_update_child_nick_names(self, request):
         """更新子用户昵称
 
         拥有te_admin角色的用户可以更新其他用户的昵称
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchUpdateChildNickNamesRequest request
-        :return: BatchUpdateChildNickNamesResponse
+        :param request: Request instance for BatchUpdateChildNickNames
+        :type request: :class:`huaweicloudsdkprojectman.v4.BatchUpdateChildNickNamesRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.BatchUpdateChildNickNamesResponse`
         """
         return self.batch_update_child_nick_names_with_http_info(request)
 
     def batch_update_child_nick_names_with_http_info(self, request):
-        """更新子用户昵称
-
-        拥有te_admin角色的用户可以更新其他用户的昵称
-
-        :param BatchUpdateChildNickNamesRequest request
-        :return: BatchUpdateChildNickNamesResponse
-        """
-
         all_params = ['batch_update_child_nick_names_requestbody']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -372,26 +348,21 @@ class ProjectManClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def check_project_name_v4(self, request):
         """检查项目名称是否存在
 
         检查项目名称是否存在
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CheckProjectNameV4Request request
-        :return: CheckProjectNameV4Response
+        :param request: Request instance for CheckProjectNameV4
+        :type request: :class:`huaweicloudsdkprojectman.v4.CheckProjectNameV4Request`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.CheckProjectNameV4Response`
         """
         return self.check_project_name_v4_with_http_info(request)
 
     def check_project_name_v4_with_http_info(self, request):
-        """检查项目名称是否存在
-
-        检查项目名称是否存在
-
-        :param CheckProjectNameV4Request request
-        :return: CheckProjectNameV4Response
-        """
-
         all_params = ['check_project_name_v4_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -435,26 +406,21 @@ class ProjectManClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_project_v4(self, request):
         """创建项目
 
         创建项目
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateProjectV4Request request
-        :return: CreateProjectV4Response
+        :param request: Request instance for CreateProjectV4
+        :type request: :class:`huaweicloudsdkprojectman.v4.CreateProjectV4Request`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.CreateProjectV4Response`
         """
         return self.create_project_v4_with_http_info(request)
 
     def create_project_v4_with_http_info(self, request):
-        """创建项目
-
-        创建项目
-
-        :param CreateProjectV4Request request
-        :return: CreateProjectV4Response
-        """
-
         all_params = ['create_project_v4_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -498,26 +464,21 @@ class ProjectManClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_project_v4(self, request):
         """删除项目
 
         删除项目
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteProjectV4Request request
-        :return: DeleteProjectV4Response
+        :param request: Request instance for DeleteProjectV4
+        :type request: :class:`huaweicloudsdkprojectman.v4.DeleteProjectV4Request`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.DeleteProjectV4Response`
         """
         return self.delete_project_v4_with_http_info(request)
 
     def delete_project_v4_with_http_info(self, request):
-        """删除项目
-
-        删除项目
-
-        :param DeleteProjectV4Request request
-        :return: DeleteProjectV4Response
-        """
-
         all_params = ['project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -561,26 +522,21 @@ class ProjectManClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_domain_not_added_projects_v4(self, request):
         """获取租户没有加入的项目
 
         获取租户没有加入的项目
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListDomainNotAddedProjectsV4Request request
-        :return: ListDomainNotAddedProjectsV4Response
+        :param request: Request instance for ListDomainNotAddedProjectsV4
+        :type request: :class:`huaweicloudsdkprojectman.v4.ListDomainNotAddedProjectsV4Request`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ListDomainNotAddedProjectsV4Response`
         """
         return self.list_domain_not_added_projects_v4_with_http_info(request)
 
     def list_domain_not_added_projects_v4_with_http_info(self, request):
-        """获取租户没有加入的项目
-
-        获取租户没有加入的项目
-
-        :param ListDomainNotAddedProjectsV4Request request
-        :return: ListDomainNotAddedProjectsV4Response
-        """
-
         all_params = ['offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -626,26 +582,21 @@ class ProjectManClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_project_bug_statics_v4(self, request):
         """获取bug统计信息
 
         获取bug统计信息，按模块统计
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListProjectBugStaticsV4Request request
-        :return: ListProjectBugStaticsV4Response
+        :param request: Request instance for ListProjectBugStaticsV4
+        :type request: :class:`huaweicloudsdkprojectman.v4.ListProjectBugStaticsV4Request`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ListProjectBugStaticsV4Response`
         """
         return self.list_project_bug_statics_v4_with_http_info(request)
 
     def list_project_bug_statics_v4_with_http_info(self, request):
-        """获取bug统计信息
-
-        获取bug统计信息，按模块统计
-
-        :param ListProjectBugStaticsV4Request request
-        :return: ListProjectBugStaticsV4Response
-        """
-
         all_params = ['project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -689,26 +640,21 @@ class ProjectManClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_project_demand_static_v4(self, request):
         """获取需求统计信息
 
         获取需求统计信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListProjectDemandStaticV4Request request
-        :return: ListProjectDemandStaticV4Response
+        :param request: Request instance for ListProjectDemandStaticV4
+        :type request: :class:`huaweicloudsdkprojectman.v4.ListProjectDemandStaticV4Request`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ListProjectDemandStaticV4Response`
         """
         return self.list_project_demand_static_v4_with_http_info(request)
 
     def list_project_demand_static_v4_with_http_info(self, request):
-        """获取需求统计信息
-
-        获取需求统计信息
-
-        :param ListProjectDemandStaticV4Request request
-        :return: ListProjectDemandStaticV4Response
-        """
-
         all_params = ['project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -752,26 +698,21 @@ class ProjectManClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_project_members_v4(self, request):
         """获取指定项目的成员用户列表
 
         获取项目成员列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListProjectMembersV4Request request
-        :return: ListProjectMembersV4Response
+        :param request: Request instance for ListProjectMembersV4
+        :type request: :class:`huaweicloudsdkprojectman.v4.ListProjectMembersV4Request`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ListProjectMembersV4Response`
         """
         return self.list_project_members_v4_with_http_info(request)
 
     def list_project_members_v4_with_http_info(self, request):
-        """获取指定项目的成员用户列表
-
-        获取项目成员列表
-
-        :param ListProjectMembersV4Request request
-        :return: ListProjectMembersV4Response
-        """
-
         all_params = ['project_id', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -819,26 +760,21 @@ class ProjectManClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_projects_v4(self, request):
         """查询项目列表
 
         查询项目列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListProjectsV4Request request
-        :return: ListProjectsV4Response
+        :param request: Request instance for ListProjectsV4
+        :type request: :class:`huaweicloudsdkprojectman.v4.ListProjectsV4Request`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ListProjectsV4Response`
         """
         return self.list_projects_v4_with_http_info(request)
 
     def list_projects_v4_with_http_info(self, request):
-        """查询项目列表
-
-        查询项目列表
-
-        :param ListProjectsV4Request request
-        :return: ListProjectsV4Response
-        """
-
         all_params = ['offset', 'limit', 'search', 'project_type', 'sort', 'archive', 'query_type']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -894,26 +830,21 @@ class ProjectManClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def remove_project(self, request):
         """主动退出项目
 
         项目成员主动退出项目，项目创建者不能退出
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param RemoveProjectRequest request
-        :return: RemoveProjectResponse
+        :param request: Request instance for RemoveProject
+        :type request: :class:`huaweicloudsdkprojectman.v4.RemoveProjectRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.RemoveProjectResponse`
         """
         return self.remove_project_with_http_info(request)
 
     def remove_project_with_http_info(self, request):
-        """主动退出项目
-
-        项目成员主动退出项目，项目创建者不能退出
-
-        :param RemoveProjectRequest request
-        :return: RemoveProjectResponse
-        """
-
         all_params = ['project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -957,26 +888,21 @@ class ProjectManClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_bug_density_v2(self, request):
         """查询缺陷密度
 
         查询缺陷密度
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowBugDensityV2Request request
-        :return: ShowBugDensityV2Response
+        :param request: Request instance for ShowBugDensityV2
+        :type request: :class:`huaweicloudsdkprojectman.v4.ShowBugDensityV2Request`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ShowBugDensityV2Response`
         """
         return self.show_bug_density_v2_with_http_info(request)
 
     def show_bug_density_v2_with_http_info(self, request):
-        """查询缺陷密度
-
-        查询缺陷密度
-
-        :param ShowBugDensityV2Request request
-        :return: ShowBugDensityV2Response
-        """
-
         all_params = ['project_id', 'show_bug_density_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1022,26 +948,21 @@ class ProjectManClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_bugs_per_developer(self, request):
         """查询人均bug
 
         查询人均bug
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowBugsPerDeveloperRequest request
-        :return: ShowBugsPerDeveloperResponse
+        :param request: Request instance for ShowBugsPerDeveloper
+        :type request: :class:`huaweicloudsdkprojectman.v4.ShowBugsPerDeveloperRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ShowBugsPerDeveloperResponse`
         """
         return self.show_bugs_per_developer_with_http_info(request)
 
     def show_bugs_per_developer_with_http_info(self, request):
-        """查询人均bug
-
-        查询人均bug
-
-        :param ShowBugsPerDeveloperRequest request
-        :return: ShowBugsPerDeveloperResponse
-        """
-
         all_params = ['project_id', 'show_bugs_per_developer_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1087,26 +1008,21 @@ class ProjectManClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_completion_rate(self, request):
         """查询需求按时完成率
 
         查询需求按时完成率
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowCompletionRateRequest request
-        :return: ShowCompletionRateResponse
+        :param request: Request instance for ShowCompletionRate
+        :type request: :class:`huaweicloudsdkprojectman.v4.ShowCompletionRateRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ShowCompletionRateResponse`
         """
         return self.show_completion_rate_with_http_info(request)
 
     def show_completion_rate_with_http_info(self, request):
-        """查询需求按时完成率
-
-        查询需求按时完成率
-
-        :param ShowCompletionRateRequest request
-        :return: ShowCompletionRateResponse
-        """
-
         all_params = ['project_id', 'show_completion_rate_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1152,26 +1068,21 @@ class ProjectManClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_cur_user_info(self, request):
         """获取当前用户信息
 
         获取当前用户信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowCurUserInfoRequest request
-        :return: ShowCurUserInfoResponse
+        :param request: Request instance for ShowCurUserInfo
+        :type request: :class:`huaweicloudsdkprojectman.v4.ShowCurUserInfoRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ShowCurUserInfoResponse`
         """
         return self.show_cur_user_info_with_http_info(request)
 
     def show_cur_user_info_with_http_info(self, request):
-        """获取当前用户信息
-
-        获取当前用户信息
-
-        :param ShowCurUserInfoRequest request
-        :return: ShowCurUserInfoResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1213,26 +1124,21 @@ class ProjectManClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_cur_user_role(self, request):
         """获取当前用户角色
 
         获取用户在项目中的角色
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowCurUserRoleRequest request
-        :return: ShowCurUserRoleResponse
+        :param request: Request instance for ShowCurUserRole
+        :type request: :class:`huaweicloudsdkprojectman.v4.ShowCurUserRoleRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ShowCurUserRoleResponse`
         """
         return self.show_cur_user_role_with_http_info(request)
 
     def show_cur_user_role_with_http_info(self, request):
-        """获取当前用户角色
-
-        获取用户在项目中的角色
-
-        :param ShowCurUserRoleRequest request
-        :return: ShowCurUserRoleResponse
-        """
-
         all_params = ['project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1276,26 +1182,21 @@ class ProjectManClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_project_info_v4(self, request):
         """获取项目详情
 
         获取项目详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowProjectInfoV4Request request
-        :return: ShowProjectInfoV4Response
+        :param request: Request instance for ShowProjectInfoV4
+        :type request: :class:`huaweicloudsdkprojectman.v4.ShowProjectInfoV4Request`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ShowProjectInfoV4Response`
         """
         return self.show_project_info_v4_with_http_info(request)
 
     def show_project_info_v4_with_http_info(self, request):
-        """获取项目详情
-
-        获取项目详情
-
-        :param ShowProjectInfoV4Request request
-        :return: ShowProjectInfoV4Response
-        """
-
         all_params = ['project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1339,26 +1240,21 @@ class ProjectManClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_project_summary_v4(self, request):
         """获取项目概览
 
         获取项目概览
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowProjectSummaryV4Request request
-        :return: ShowProjectSummaryV4Response
+        :param request: Request instance for ShowProjectSummaryV4
+        :type request: :class:`huaweicloudsdkprojectman.v4.ShowProjectSummaryV4Request`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ShowProjectSummaryV4Response`
         """
         return self.show_project_summary_v4_with_http_info(request)
 
     def show_project_summary_v4_with_http_info(self, request):
-        """获取项目概览
-
-        获取项目概览
-
-        :param ShowProjectSummaryV4Request request
-        :return: ShowProjectSummaryV4Response
-        """
-
         all_params = ['project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1402,26 +1298,21 @@ class ProjectManClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_membes_role_v4(self, request):
         """更新成员在项目中的角色
 
         更新成员在项目中的角色
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateMembesRoleV4Request request
-        :return: UpdateMembesRoleV4Response
+        :param request: Request instance for UpdateMembesRoleV4
+        :type request: :class:`huaweicloudsdkprojectman.v4.UpdateMembesRoleV4Request`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.UpdateMembesRoleV4Response`
         """
         return self.update_membes_role_v4_with_http_info(request)
 
     def update_membes_role_v4_with_http_info(self, request):
-        """更新成员在项目中的角色
-
-        更新成员在项目中的角色
-
-        :param UpdateMembesRoleV4Request request
-        :return: UpdateMembesRoleV4Response
-        """
-
         all_params = ['project_id', 'update_membes_role_v4_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1467,26 +1358,21 @@ class ProjectManClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_nick_name_v4(self, request):
         """更新用户昵称
 
         更新用户昵称
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateNickNameV4Request request
-        :return: UpdateNickNameV4Response
+        :param request: Request instance for UpdateNickNameV4
+        :type request: :class:`huaweicloudsdkprojectman.v4.UpdateNickNameV4Request`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.UpdateNickNameV4Response`
         """
         return self.update_nick_name_v4_with_http_info(request)
 
     def update_nick_name_v4_with_http_info(self, request):
-        """更新用户昵称
-
-        更新用户昵称
-
-        :param UpdateNickNameV4Request request
-        :return: UpdateNickNameV4Response
-        """
-
         all_params = ['update_nick_name_v4_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1530,26 +1416,21 @@ class ProjectManClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_project_v4(self, request):
         """更新项目
 
         更新项目
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateProjectV4Request request
-        :return: UpdateProjectV4Response
+        :param request: Request instance for UpdateProjectV4
+        :type request: :class:`huaweicloudsdkprojectman.v4.UpdateProjectV4Request`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.UpdateProjectV4Response`
         """
         return self.update_project_v4_with_http_info(request)
 
     def update_project_v4_with_http_info(self, request):
-        """更新项目
-
-        更新项目
-
-        :param UpdateProjectV4Request request
-        :return: UpdateProjectV4Response
-        """
-
         all_params = ['project_id', 'update_project_v4_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1595,26 +1476,21 @@ class ProjectManClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_delete_issues_v4(self, request):
         """批量删除工作项
 
         批量删除工作项
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchDeleteIssuesV4Request request
-        :return: BatchDeleteIssuesV4Response
+        :param request: Request instance for BatchDeleteIssuesV4
+        :type request: :class:`huaweicloudsdkprojectman.v4.BatchDeleteIssuesV4Request`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.BatchDeleteIssuesV4Response`
         """
         return self.batch_delete_issues_v4_with_http_info(request)
 
     def batch_delete_issues_v4_with_http_info(self, request):
-        """批量删除工作项
-
-        批量删除工作项
-
-        :param BatchDeleteIssuesV4Request request
-        :return: BatchDeleteIssuesV4Response
-        """
-
         all_params = ['project_id', 'batch_delete_issues_v4_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1660,26 +1536,21 @@ class ProjectManClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_delete_iterations_v4(self, request):
         """批量删除项目的迭代
 
         批量删除项目的迭代
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchDeleteIterationsV4Request request
-        :return: BatchDeleteIterationsV4Response
+        :param request: Request instance for BatchDeleteIterationsV4
+        :type request: :class:`huaweicloudsdkprojectman.v4.BatchDeleteIterationsV4Request`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.BatchDeleteIterationsV4Response`
         """
         return self.batch_delete_iterations_v4_with_http_info(request)
 
     def batch_delete_iterations_v4_with_http_info(self, request):
-        """批量删除项目的迭代
-
-        批量删除项目的迭代
-
-        :param BatchDeleteIterationsV4Request request
-        :return: BatchDeleteIterationsV4Response
-        """
-
         all_params = ['project_id', 'batch_delete_iterations_v4_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1725,26 +1596,21 @@ class ProjectManClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_customfields(self, request):
         """创建工作项类型自定义字段
 
         创建工作项类型自定义字段
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateCustomfieldsRequest request
-        :return: CreateCustomfieldsResponse
+        :param request: Request instance for CreateCustomfields
+        :type request: :class:`huaweicloudsdkprojectman.v4.CreateCustomfieldsRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.CreateCustomfieldsResponse`
         """
         return self.create_customfields_with_http_info(request)
 
     def create_customfields_with_http_info(self, request):
-        """创建工作项类型自定义字段
-
-        创建工作项类型自定义字段
-
-        :param CreateCustomfieldsRequest request
-        :return: CreateCustomfieldsResponse
-        """
-
         all_params = ['project_id', 'create_custom_fields_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1790,26 +1656,21 @@ class ProjectManClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_issue_v4(self, request):
         """创建工作项
 
         创建工作项
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateIssueV4Request request
-        :return: CreateIssueV4Response
+        :param request: Request instance for CreateIssueV4
+        :type request: :class:`huaweicloudsdkprojectman.v4.CreateIssueV4Request`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.CreateIssueV4Response`
         """
         return self.create_issue_v4_with_http_info(request)
 
     def create_issue_v4_with_http_info(self, request):
-        """创建工作项
-
-        创建工作项
-
-        :param CreateIssueV4Request request
-        :return: CreateIssueV4Response
-        """
-
         all_params = ['project_id', 'create_issue_v4_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1855,26 +1716,21 @@ class ProjectManClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_iteration_v4(self, request):
         """创建Scrum项目迭代
 
         创建Scrum项目迭代
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateIterationV4Request request
-        :return: CreateIterationV4Response
+        :param request: Request instance for CreateIterationV4
+        :type request: :class:`huaweicloudsdkprojectman.v4.CreateIterationV4Request`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.CreateIterationV4Response`
         """
         return self.create_iteration_v4_with_http_info(request)
 
     def create_iteration_v4_with_http_info(self, request):
-        """创建Scrum项目迭代
-
-        创建Scrum项目迭代
-
-        :param CreateIterationV4Request request
-        :return: CreateIterationV4Response
-        """
-
         all_params = ['project_id', 'create_iteration_v4_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1920,26 +1776,21 @@ class ProjectManClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_system_issue_v4(self, request):
         """细粒度权限用户创建工作项
 
         拥有IAM细粒度权限（projectmanConfig:systemSettingField:set）且在devcloud项目中有创建工作项的权限的用户可以设置工作项的创建者
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateSystemIssueV4Request request
-        :return: CreateSystemIssueV4Response
+        :param request: Request instance for CreateSystemIssueV4
+        :type request: :class:`huaweicloudsdkprojectman.v4.CreateSystemIssueV4Request`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.CreateSystemIssueV4Response`
         """
         return self.create_system_issue_v4_with_http_info(request)
 
     def create_system_issue_v4_with_http_info(self, request):
-        """细粒度权限用户创建工作项
-
-        拥有IAM细粒度权限（projectmanConfig:systemSettingField:set）且在devcloud项目中有创建工作项的权限的用户可以设置工作项的创建者
-
-        :param CreateSystemIssueV4Request request
-        :return: CreateSystemIssueV4Response
-        """
-
         all_params = ['project_id', 'create_system_issue_v4_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1985,26 +1836,21 @@ class ProjectManClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_issue_v4(self, request):
         """删除工作项
 
         删除工作项
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteIssueV4Request request
-        :return: DeleteIssueV4Response
+        :param request: Request instance for DeleteIssueV4
+        :type request: :class:`huaweicloudsdkprojectman.v4.DeleteIssueV4Request`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.DeleteIssueV4Response`
         """
         return self.delete_issue_v4_with_http_info(request)
 
     def delete_issue_v4_with_http_info(self, request):
-        """删除工作项
-
-        删除工作项
-
-        :param DeleteIssueV4Request request
-        :return: DeleteIssueV4Response
-        """
-
         all_params = ['project_id', 'issue_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2050,26 +1896,21 @@ class ProjectManClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_iteration_v4(self, request):
         """删除项目迭代
 
         删除项目迭代
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteIterationV4Request request
-        :return: DeleteIterationV4Response
+        :param request: Request instance for DeleteIterationV4
+        :type request: :class:`huaweicloudsdkprojectman.v4.DeleteIterationV4Request`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.DeleteIterationV4Response`
         """
         return self.delete_iteration_v4_with_http_info(request)
 
     def delete_iteration_v4_with_http_info(self, request):
-        """删除项目迭代
-
-        删除项目迭代
-
-        :param DeleteIterationV4Request request
-        :return: DeleteIterationV4Response
-        """
-
         all_params = ['project_id', 'iteration_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2115,26 +1956,21 @@ class ProjectManClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_child_issues_v4(self, request):
         """获取子工作项
 
         获取子工作项
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListChildIssuesV4Request request
-        :return: ListChildIssuesV4Response
+        :param request: Request instance for ListChildIssuesV4
+        :type request: :class:`huaweicloudsdkprojectman.v4.ListChildIssuesV4Request`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ListChildIssuesV4Response`
         """
         return self.list_child_issues_v4_with_http_info(request)
 
     def list_child_issues_v4_with_http_info(self, request):
-        """获取子工作项
-
-        获取子工作项
-
-        :param ListChildIssuesV4Request request
-        :return: ListChildIssuesV4Response
-        """
-
         all_params = ['project_id', 'issue_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2180,26 +2016,21 @@ class ProjectManClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_issue_comments_v4(self, request):
         """获取指定工作项的评论列表
 
         获取工作项的评论
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListIssueCommentsV4Request request
-        :return: ListIssueCommentsV4Response
+        :param request: Request instance for ListIssueCommentsV4
+        :type request: :class:`huaweicloudsdkprojectman.v4.ListIssueCommentsV4Request`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ListIssueCommentsV4Response`
         """
         return self.list_issue_comments_v4_with_http_info(request)
 
     def list_issue_comments_v4_with_http_info(self, request):
-        """获取指定工作项的评论列表
-
-        获取工作项的评论
-
-        :param ListIssueCommentsV4Request request
-        :return: ListIssueCommentsV4Response
-        """
-
         all_params = ['project_id', 'issue_id', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2249,26 +2080,21 @@ class ProjectManClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_issue_records_v4(self, request):
         """获取工作项历史记录
 
         获取工作项历史记录
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListIssueRecordsV4Request request
-        :return: ListIssueRecordsV4Response
+        :param request: Request instance for ListIssueRecordsV4
+        :type request: :class:`huaweicloudsdkprojectman.v4.ListIssueRecordsV4Request`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ListIssueRecordsV4Response`
         """
         return self.list_issue_records_v4_with_http_info(request)
 
     def list_issue_records_v4_with_http_info(self, request):
-        """获取工作项历史记录
-
-        获取工作项历史记录
-
-        :param ListIssueRecordsV4Request request
-        :return: ListIssueRecordsV4Response
-        """
-
         all_params = ['project_id', 'issue_id', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2318,26 +2144,21 @@ class ProjectManClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_issues_v4(self, request):
         """高级查询工作项
 
         根据筛选条件查询工作项
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListIssuesV4Request request
-        :return: ListIssuesV4Response
+        :param request: Request instance for ListIssuesV4
+        :type request: :class:`huaweicloudsdkprojectman.v4.ListIssuesV4Request`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ListIssuesV4Response`
         """
         return self.list_issues_v4_with_http_info(request)
 
     def list_issues_v4_with_http_info(self, request):
-        """高级查询工作项
-
-        根据筛选条件查询工作项
-
-        :param ListIssuesV4Request request
-        :return: ListIssuesV4Response
-        """
-
         all_params = ['project_id', 'list_issues_v4_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2383,26 +2204,21 @@ class ProjectManClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_iteration_histories(self, request):
         """查看迭代历史记录
 
         查看迭代历史记录
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListIterationHistoriesRequest request
-        :return: ListIterationHistoriesResponse
+        :param request: Request instance for ListIterationHistories
+        :type request: :class:`huaweicloudsdkprojectman.v4.ListIterationHistoriesRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ListIterationHistoriesResponse`
         """
         return self.list_iteration_histories_with_http_info(request)
 
     def list_iteration_histories_with_http_info(self, request):
-        """查看迭代历史记录
-
-        查看迭代历史记录
-
-        :param ListIterationHistoriesRequest request
-        :return: ListIterationHistoriesResponse
-        """
-
         all_params = ['iteration_id', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2450,26 +2266,21 @@ class ProjectManClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_project_iterations_v4(self, request):
         """获取指定项目的迭代列表
 
         获取项目迭代
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListProjectIterationsV4Request request
-        :return: ListProjectIterationsV4Response
+        :param request: Request instance for ListProjectIterationsV4
+        :type request: :class:`huaweicloudsdkprojectman.v4.ListProjectIterationsV4Request`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ListProjectIterationsV4Response`
         """
         return self.list_project_iterations_v4_with_http_info(request)
 
     def list_project_iterations_v4_with_http_info(self, request):
-        """获取指定项目的迭代列表
-
-        获取项目迭代
-
-        :param ListProjectIterationsV4Request request
-        :return: ListProjectIterationsV4Response
-        """
-
         all_params = ['project_id', 'updated_time_interval', 'include_deleted']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2517,26 +2328,21 @@ class ProjectManClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_project_work_hours(self, request):
         """按用户查询工时（多项目）
 
         按用户查询工时（多项目）
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListProjectWorkHoursRequest request
-        :return: ListProjectWorkHoursResponse
+        :param request: Request instance for ListProjectWorkHours
+        :type request: :class:`huaweicloudsdkprojectman.v4.ListProjectWorkHoursRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ListProjectWorkHoursResponse`
         """
         return self.list_project_work_hours_with_http_info(request)
 
     def list_project_work_hours_with_http_info(self, request):
-        """按用户查询工时（多项目）
-
-        按用户查询工时（多项目）
-
-        :param ListProjectWorkHoursRequest request
-        :return: ListProjectWorkHoursResponse
-        """
-
         all_params = ['list_project_work_hours_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2580,26 +2386,21 @@ class ProjectManClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_issue_completion_rate(self, request):
         """获取工作项完成率
 
         获取工作项的完成率
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowIssueCompletionRateRequest request
-        :return: ShowIssueCompletionRateResponse
+        :param request: Request instance for ShowIssueCompletionRate
+        :type request: :class:`huaweicloudsdkprojectman.v4.ShowIssueCompletionRateRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ShowIssueCompletionRateResponse`
         """
         return self.show_issue_completion_rate_with_http_info(request)
 
     def show_issue_completion_rate_with_http_info(self, request):
-        """获取工作项完成率
-
-        获取工作项的完成率
-
-        :param ShowIssueCompletionRateRequest request
-        :return: ShowIssueCompletionRateResponse
-        """
-
         all_params = ['project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2643,26 +2444,21 @@ class ProjectManClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_issue_v4(self, request):
         """查询工作项详情
 
         查询工作项详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowIssueV4Request request
-        :return: ShowIssueV4Response
+        :param request: Request instance for ShowIssueV4
+        :type request: :class:`huaweicloudsdkprojectman.v4.ShowIssueV4Request`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ShowIssueV4Response`
         """
         return self.show_issue_v4_with_http_info(request)
 
     def show_issue_v4_with_http_info(self, request):
-        """查询工作项详情
-
-        查询工作项详情
-
-        :param ShowIssueV4Request request
-        :return: ShowIssueV4Response
-        """
-
         all_params = ['project_id', 'issue_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2708,26 +2504,21 @@ class ProjectManClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_iteration_v4(self, request):
         """查看迭代详情
 
         查看迭代详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowIterationV4Request request
-        :return: ShowIterationV4Response
+        :param request: Request instance for ShowIterationV4
+        :type request: :class:`huaweicloudsdkprojectman.v4.ShowIterationV4Request`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ShowIterationV4Response`
         """
         return self.show_iteration_v4_with_http_info(request)
 
     def show_iteration_v4_with_http_info(self, request):
-        """查看迭代详情
-
-        查看迭代详情
-
-        :param ShowIterationV4Request request
-        :return: ShowIterationV4Response
-        """
-
         all_params = ['iteration_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2771,26 +2562,21 @@ class ProjectManClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_project_work_hours(self, request):
         """按用户查询工时（单项目）
 
         按用户查询工时（单项目）
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowProjectWorkHoursRequest request
-        :return: ShowProjectWorkHoursResponse
+        :param request: Request instance for ShowProjectWorkHours
+        :type request: :class:`huaweicloudsdkprojectman.v4.ShowProjectWorkHoursRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ShowProjectWorkHoursResponse`
         """
         return self.show_project_work_hours_with_http_info(request)
 
     def show_project_work_hours_with_http_info(self, request):
-        """按用户查询工时（单项目）
-
-        按用户查询工时（单项目）
-
-        :param ShowProjectWorkHoursRequest request
-        :return: ShowProjectWorkHoursResponse
-        """
-
         all_params = ['project_id', 'show_project_work_hours_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2836,26 +2622,21 @@ class ProjectManClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_issue_v4(self, request):
         """更新工作项
 
         更新工作项
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateIssueV4Request request
-        :return: UpdateIssueV4Response
+        :param request: Request instance for UpdateIssueV4
+        :type request: :class:`huaweicloudsdkprojectman.v4.UpdateIssueV4Request`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.UpdateIssueV4Response`
         """
         return self.update_issue_v4_with_http_info(request)
 
     def update_issue_v4_with_http_info(self, request):
-        """更新工作项
-
-        更新工作项
-
-        :param UpdateIssueV4Request request
-        :return: UpdateIssueV4Response
-        """
-
         all_params = ['project_id', 'issue_id', 'update_issue_v4_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2903,26 +2684,21 @@ class ProjectManClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_iteration_v4(self, request):
         """更新Scrum项目迭代
 
         更新Scrum项目迭代
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateIterationV4Request request
-        :return: UpdateIterationV4Response
+        :param request: Request instance for UpdateIterationV4
+        :type request: :class:`huaweicloudsdkprojectman.v4.UpdateIterationV4Request`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.UpdateIterationV4Response`
         """
         return self.update_iteration_v4_with_http_info(request)
 
     def update_iteration_v4_with_http_info(self, request):
-        """更新Scrum项目迭代
-
-        更新Scrum项目迭代
-
-        :param UpdateIterationV4Request request
-        :return: UpdateIterationV4Response
-        """
-
         all_params = ['project_id', 'iteration_id', 'update_iteration_v4_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2970,26 +2746,21 @@ class ProjectManClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def upload_issue_img(self, request):
         """上传图片
 
         上传图片
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UploadIssueImgRequest request
-        :return: UploadIssueImgResponse
+        :param request: Request instance for UploadIssueImg
+        :type request: :class:`huaweicloudsdkprojectman.v4.UploadIssueImgRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.UploadIssueImgResponse`
         """
         return self.upload_issue_img_with_http_info(request)
 
     def upload_issue_img_with_http_info(self, request):
-        """上传图片
-
-        上传图片
-
-        :param UploadIssueImgRequest request
-        :return: UploadIssueImgResponse
-        """
-
         all_params = ['project_id', 'file']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3036,7 +2807,6 @@ class ProjectManClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

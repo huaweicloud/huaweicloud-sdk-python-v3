@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Service:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class Service:
     }
 
     def __init__(self, name=None, description=None, links=None, id=None, type=None, enabled=None):
-        """Service - a model defined in huaweicloud sdk"""
+        """Service
+
+        The model defined in huaweicloud sdk
+
+        :param name: 服务名。
+        :type name: str
+        :param description: 服务描述信息。
+        :type description: str
+        :param links: 
+        :type links: :class:`huaweicloudsdkiam.v3.Links`
+        :param id: 服务ID。
+        :type id: str
+        :param type: 服务类型。
+        :type type: str
+        :param enabled: 服务是否可用。
+        :type enabled: bool
+        """
         
         
 
@@ -78,7 +93,7 @@ class Service:
         服务名。
 
         :param name: The name of this Service.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -100,7 +115,7 @@ class Service:
         服务描述信息。
 
         :param description: The description of this Service.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -110,7 +125,7 @@ class Service:
 
 
         :return: The links of this Service.
-        :rtype: Links
+        :rtype: :class:`huaweicloudsdkiam.v3.Links`
         """
         return self._links
 
@@ -120,7 +135,7 @@ class Service:
 
 
         :param links: The links of this Service.
-        :type: Links
+        :type links: :class:`huaweicloudsdkiam.v3.Links`
         """
         self._links = links
 
@@ -142,7 +157,7 @@ class Service:
         服务ID。
 
         :param id: The id of this Service.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -164,7 +179,7 @@ class Service:
         服务类型。
 
         :param type: The type of this Service.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -186,7 +201,7 @@ class Service:
         服务是否可用。
 
         :param enabled: The enabled of this Service.
-        :type: bool
+        :type enabled: bool
         """
         self._enabled = enabled
 

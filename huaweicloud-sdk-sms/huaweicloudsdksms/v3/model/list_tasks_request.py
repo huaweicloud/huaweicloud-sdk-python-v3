@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTasksRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ListTasksRequest:
     }
 
     def __init__(self, state=None, name=None, id=None, source_server_id=None, limit=None, offset=None, enterprise_project_id=None):
-        """ListTasksRequest - a model defined in huaweicloud sdk"""
+        """ListTasksRequest
+
+        The model defined in huaweicloud sdk
+
+        :param state: 迁移任务状态
+        :type state: str
+        :param name: 任务的名称
+        :type name: str
+        :param id: 任务的ID
+        :type id: str
+        :param source_server_id: 源端服务器的ID
+        :type source_server_id: str
+        :param limit: 每一页记录的任务数量
+        :type limit: int
+        :param offset: 偏移量
+        :type offset: int
+        :param enterprise_project_id: 需要查询的企业项目id
+        :type enterprise_project_id: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class ListTasksRequest:
         迁移任务状态
 
         :param state: The state of this ListTasksRequest.
-        :type: str
+        :type state: str
         """
         self._state = state
 
@@ -110,7 +127,7 @@ class ListTasksRequest:
         任务的名称
 
         :param name: The name of this ListTasksRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -132,7 +149,7 @@ class ListTasksRequest:
         任务的ID
 
         :param id: The id of this ListTasksRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -154,7 +171,7 @@ class ListTasksRequest:
         源端服务器的ID
 
         :param source_server_id: The source_server_id of this ListTasksRequest.
-        :type: str
+        :type source_server_id: str
         """
         self._source_server_id = source_server_id
 
@@ -176,7 +193,7 @@ class ListTasksRequest:
         每一页记录的任务数量
 
         :param limit: The limit of this ListTasksRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -198,7 +215,7 @@ class ListTasksRequest:
         偏移量
 
         :param offset: The offset of this ListTasksRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -220,7 +237,7 @@ class ListTasksRequest:
         需要查询的企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this ListTasksRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 

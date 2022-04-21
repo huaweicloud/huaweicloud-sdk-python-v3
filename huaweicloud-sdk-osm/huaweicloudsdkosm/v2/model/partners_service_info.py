@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PartnersServiceInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class PartnersServiceInfo:
     }
 
     def __init__(self, customer_id=None, customer_name=None, service_time_zone=None, service_time_day=None, service_time_hour=None):
-        """PartnersServiceInfo - a model defined in huaweicloud sdk"""
+        """PartnersServiceInfo
+
+        The model defined in huaweicloud sdk
+
+        :param customer_id: 客户id
+        :type customer_id: str
+        :param customer_name: 客户名称
+        :type customer_name: str
+        :param service_time_zone: 服务时区，GMT+08:00
+        :type service_time_zone: str
+        :param service_time_day: 每周服务天数
+        :type service_time_day: str
+        :param service_time_hour: 每天服务小时
+        :type service_time_hour: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class PartnersServiceInfo:
         客户id
 
         :param customer_id: The customer_id of this PartnersServiceInfo.
-        :type: str
+        :type customer_id: str
         """
         self._customer_id = customer_id
 
@@ -100,7 +113,7 @@ class PartnersServiceInfo:
         客户名称
 
         :param customer_name: The customer_name of this PartnersServiceInfo.
-        :type: str
+        :type customer_name: str
         """
         self._customer_name = customer_name
 
@@ -122,7 +135,7 @@ class PartnersServiceInfo:
         服务时区，GMT+08:00
 
         :param service_time_zone: The service_time_zone of this PartnersServiceInfo.
-        :type: str
+        :type service_time_zone: str
         """
         self._service_time_zone = service_time_zone
 
@@ -144,7 +157,7 @@ class PartnersServiceInfo:
         每周服务天数
 
         :param service_time_day: The service_time_day of this PartnersServiceInfo.
-        :type: str
+        :type service_time_day: str
         """
         self._service_time_day = service_time_day
 
@@ -166,7 +179,7 @@ class PartnersServiceInfo:
         每天服务小时
 
         :param service_time_hour: The service_time_hour of this PartnersServiceInfo.
-        :type: str
+        :type service_time_hour: str
         """
         self._service_time_hour = service_time_hour
 

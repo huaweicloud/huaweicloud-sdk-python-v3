@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListProjectIterationsV4Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListProjectIterationsV4Response(SdkResponse):
     }
 
     def __init__(self, total=None, iterations=None):
-        """ListProjectIterationsV4Response - a model defined in huaweicloud sdk"""
+        """ListProjectIterationsV4Response
+
+        The model defined in huaweicloud sdk
+
+        :param total: 迭代总数
+        :type total: int
+        :param iterations: 迭代信息
+        :type iterations: list[:class:`huaweicloudsdkprojectman.v4.ListProjectVersionsV4ResponseBodyIterations`]
+        """
         
         super(ListProjectIterationsV4Response, self).__init__()
 
@@ -63,7 +70,7 @@ class ListProjectIterationsV4Response(SdkResponse):
         迭代总数
 
         :param total: The total of this ListProjectIterationsV4Response.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -74,7 +81,7 @@ class ListProjectIterationsV4Response(SdkResponse):
         迭代信息
 
         :return: The iterations of this ListProjectIterationsV4Response.
-        :rtype: list[ListProjectVersionsV4ResponseBodyIterations]
+        :rtype: list[:class:`huaweicloudsdkprojectman.v4.ListProjectVersionsV4ResponseBodyIterations`]
         """
         return self._iterations
 
@@ -85,7 +92,7 @@ class ListProjectIterationsV4Response(SdkResponse):
         迭代信息
 
         :param iterations: The iterations of this ListProjectIterationsV4Response.
-        :type: list[ListProjectVersionsV4ResponseBodyIterations]
+        :type iterations: list[:class:`huaweicloudsdkprojectman.v4.ListProjectVersionsV4ResponseBodyIterations`]
         """
         self._iterations = iterations
 

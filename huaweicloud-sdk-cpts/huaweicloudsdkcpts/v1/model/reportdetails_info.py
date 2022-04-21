@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ReportdetailsInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ReportdetailsInfo:
     }
 
     def __init__(self, data=None, page_index=None, page_size=None, total=None):
-        """ReportdetailsInfo - a model defined in huaweicloud sdk"""
+        """ReportdetailsInfo
+
+        The model defined in huaweicloud sdk
+
+        :param data: 表格数据
+        :type data: list[:class:`huaweicloudsdkcpts.v1.ReportdetailItemInfo`]
+        :param page_index: 页码
+        :type page_index: int
+        :param page_size: 每页大小
+        :type page_size: int
+        :param total: 总记录数
+        :type total: int
+        """
         
         
 
@@ -62,7 +73,7 @@ class ReportdetailsInfo:
         表格数据
 
         :return: The data of this ReportdetailsInfo.
-        :rtype: list[ReportdetailItemInfo]
+        :rtype: list[:class:`huaweicloudsdkcpts.v1.ReportdetailItemInfo`]
         """
         return self._data
 
@@ -73,7 +84,7 @@ class ReportdetailsInfo:
         表格数据
 
         :param data: The data of this ReportdetailsInfo.
-        :type: list[ReportdetailItemInfo]
+        :type data: list[:class:`huaweicloudsdkcpts.v1.ReportdetailItemInfo`]
         """
         self._data = data
 
@@ -95,7 +106,7 @@ class ReportdetailsInfo:
         页码
 
         :param page_index: The page_index of this ReportdetailsInfo.
-        :type: int
+        :type page_index: int
         """
         self._page_index = page_index
 
@@ -117,7 +128,7 @@ class ReportdetailsInfo:
         每页大小
 
         :param page_size: The page_size of this ReportdetailsInfo.
-        :type: int
+        :type page_size: int
         """
         self._page_size = page_size
 
@@ -139,7 +150,7 @@ class ReportdetailsInfo:
         总记录数
 
         :param total: The total of this ReportdetailsInfo.
-        :type: int
+        :type total: int
         """
         self._total = total
 

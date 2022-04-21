@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ValidateHttpsInfoRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ValidateHttpsInfoRequest:
     }
 
     def __init__(self, iam_user_uuid=None, body=None):
-        """ValidateHttpsInfoRequest - a model defined in huaweicloud sdk"""
+        """ValidateHttpsInfoRequest
+
+        The model defined in huaweicloud sdk
+
+        :param iam_user_uuid: 用户iam_user_uuid
+        :type iam_user_uuid: str
+        :param body: Body of the ValidateHttpsInfoRequest
+        :type body: :class:`huaweicloudsdkcodehub.v3.PasswordRequest`
+        """
         
         
 
@@ -62,7 +69,7 @@ class ValidateHttpsInfoRequest:
         用户iam_user_uuid
 
         :param iam_user_uuid: The iam_user_uuid of this ValidateHttpsInfoRequest.
-        :type: str
+        :type iam_user_uuid: str
         """
         self._iam_user_uuid = iam_user_uuid
 
@@ -72,7 +79,7 @@ class ValidateHttpsInfoRequest:
 
 
         :return: The body of this ValidateHttpsInfoRequest.
-        :rtype: PasswordRequest
+        :rtype: :class:`huaweicloudsdkcodehub.v3.PasswordRequest`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class ValidateHttpsInfoRequest:
 
 
         :param body: The body of this ValidateHttpsInfoRequest.
-        :type: PasswordRequest
+        :type body: :class:`huaweicloudsdkcodehub.v3.PasswordRequest`
         """
         self._body = body
 

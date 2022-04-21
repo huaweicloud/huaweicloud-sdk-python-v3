@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CdnLog:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class CdnLog:
     }
 
     def __init__(self, domain_name=None, start_time=None, end_time=None, name=None, size=None, link=None):
-        """CdnLog - a model defined in huaweicloud sdk"""
+        """CdnLog
+
+        The model defined in huaweicloud sdk
+
+        :param domain_name: 域名名称。
+        :type domain_name: str
+        :param start_time: 查询起始时间。
+        :type start_time: str
+        :param end_time: 查询结束时间。
+        :type end_time: str
+        :param name: 日志名称。
+        :type name: str
+        :param size: 日志大小。  单位：byte。
+        :type size: int
+        :param link: 日志下载链接。
+        :type link: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class CdnLog:
         域名名称。
 
         :param domain_name: The domain_name of this CdnLog.
-        :type: str
+        :type domain_name: str
         """
         self._domain_name = domain_name
 
@@ -105,7 +120,7 @@ class CdnLog:
         查询起始时间。
 
         :param start_time: The start_time of this CdnLog.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -127,7 +142,7 @@ class CdnLog:
         查询结束时间。
 
         :param end_time: The end_time of this CdnLog.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -149,7 +164,7 @@ class CdnLog:
         日志名称。
 
         :param name: The name of this CdnLog.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -171,7 +186,7 @@ class CdnLog:
         日志大小。  单位：byte。
 
         :param size: The size of this CdnLog.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -193,7 +208,7 @@ class CdnLog:
         日志下载链接。
 
         :param link: The link of this CdnLog.
-        :type: str
+        :type link: str
         """
         self._link = link
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateRetentionResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateRetentionResponse(SdkResponse):
     }
 
     def __init__(self, id=None):
-        """CreateRetentionResponse - a model defined in huaweicloud sdk"""
+        """CreateRetentionResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 镜像老化规则id
+        :type id: int
+        """
         
         super(CreateRetentionResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class CreateRetentionResponse(SdkResponse):
         镜像老化规则id
 
         :param id: The id of this CreateRetentionResponse.
-        :type: int
+        :type id: int
         """
         self._id = id
 

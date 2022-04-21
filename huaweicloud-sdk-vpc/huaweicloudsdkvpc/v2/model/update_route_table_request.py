@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateRouteTableRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateRouteTableRequest:
     }
 
     def __init__(self, routetable_id=None, body=None):
-        """UpdateRouteTableRequest - a model defined in huaweicloud sdk"""
+        """UpdateRouteTableRequest
+
+        The model defined in huaweicloud sdk
+
+        :param routetable_id: 路由表ID
+        :type routetable_id: str
+        :param body: Body of the UpdateRouteTableRequest
+        :type body: :class:`huaweicloudsdkvpc.v2.UpdateRoutetableReqBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateRouteTableRequest:
         路由表ID
 
         :param routetable_id: The routetable_id of this UpdateRouteTableRequest.
-        :type: str
+        :type routetable_id: str
         """
         self._routetable_id = routetable_id
 
@@ -72,7 +79,7 @@ class UpdateRouteTableRequest:
 
 
         :return: The body of this UpdateRouteTableRequest.
-        :rtype: UpdateRoutetableReqBody
+        :rtype: :class:`huaweicloudsdkvpc.v2.UpdateRoutetableReqBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateRouteTableRequest:
 
 
         :param body: The body of this UpdateRouteTableRequest.
-        :type: UpdateRoutetableReqBody
+        :type body: :class:`huaweicloudsdkvpc.v2.UpdateRoutetableReqBody`
         """
         self._body = body
 

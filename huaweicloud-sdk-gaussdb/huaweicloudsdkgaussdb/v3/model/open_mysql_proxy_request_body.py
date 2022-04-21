@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OpenMysqlProxyRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class OpenMysqlProxyRequestBody:
     }
 
     def __init__(self, flavor_ref=None, node_num=None):
-        """OpenMysqlProxyRequestBody - a model defined in huaweicloud sdk"""
+        """OpenMysqlProxyRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param flavor_ref: 代理规格码。
+        :type flavor_ref: str
+        :param node_num: 代理实例节点数，取值整数2-32。
+        :type node_num: int
+        """
         
         
 
@@ -63,7 +70,7 @@ class OpenMysqlProxyRequestBody:
         代理规格码。
 
         :param flavor_ref: The flavor_ref of this OpenMysqlProxyRequestBody.
-        :type: str
+        :type flavor_ref: str
         """
         self._flavor_ref = flavor_ref
 
@@ -85,7 +92,7 @@ class OpenMysqlProxyRequestBody:
         代理实例节点数，取值整数2-32。
 
         :param node_num: The node_num of this OpenMysqlProxyRequestBody.
-        :type: int
+        :type node_num: int
         """
         self._node_num = node_num
 

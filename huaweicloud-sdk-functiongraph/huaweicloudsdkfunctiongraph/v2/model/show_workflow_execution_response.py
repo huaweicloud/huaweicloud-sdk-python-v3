@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowWorkflowExecutionResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class ShowWorkflowExecutionResponse(SdkResponse):
     }
 
     def __init__(self, workflow_id=None, workflow_urn=None, execution_id=None, status=None, headers=None, input=None, output=None, begin_time=None, end_time=None, last_update_time=None, created_by=None, node_execution_details=None):
-        """ShowWorkflowExecutionResponse - a model defined in huaweicloud sdk"""
+        """ShowWorkflowExecutionResponse
+
+        The model defined in huaweicloud sdk
+
+        :param workflow_id: 流程定义ID
+        :type workflow_id: str
+        :param workflow_urn: 唯一标识ID，流程URN
+        :type workflow_urn: str
+        :param execution_id: 流程执行实例ID
+        :type execution_id: str
+        :param status: 流程实例执行状态
+        :type status: str
+        :param headers: 函数执行时需要的Header
+        :type headers: object
+        :param input: 函数执行时的入参
+        :type input: object
+        :param output: 函数执行结果
+        :type output: object
+        :param begin_time: 流程实例创建时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
+        :type begin_time: str
+        :param end_time: 流程实例结束时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
+        :type end_time: str
+        :param last_update_time: 流程实例上次更新时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
+        :type last_update_time: str
+        :param created_by: 流程实例创建者
+        :type created_by: str
+        :param node_execution_details: 节点执行信息
+        :type node_execution_details: list[:class:`huaweicloudsdkfunctiongraph.v2.NodeExecutionDetail`]
+        """
         
         super(ShowWorkflowExecutionResponse, self).__init__()
 
@@ -113,7 +140,7 @@ class ShowWorkflowExecutionResponse(SdkResponse):
         流程定义ID
 
         :param workflow_id: The workflow_id of this ShowWorkflowExecutionResponse.
-        :type: str
+        :type workflow_id: str
         """
         self._workflow_id = workflow_id
 
@@ -135,7 +162,7 @@ class ShowWorkflowExecutionResponse(SdkResponse):
         唯一标识ID，流程URN
 
         :param workflow_urn: The workflow_urn of this ShowWorkflowExecutionResponse.
-        :type: str
+        :type workflow_urn: str
         """
         self._workflow_urn = workflow_urn
 
@@ -157,7 +184,7 @@ class ShowWorkflowExecutionResponse(SdkResponse):
         流程执行实例ID
 
         :param execution_id: The execution_id of this ShowWorkflowExecutionResponse.
-        :type: str
+        :type execution_id: str
         """
         self._execution_id = execution_id
 
@@ -179,7 +206,7 @@ class ShowWorkflowExecutionResponse(SdkResponse):
         流程实例执行状态
 
         :param status: The status of this ShowWorkflowExecutionResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -201,7 +228,7 @@ class ShowWorkflowExecutionResponse(SdkResponse):
         函数执行时需要的Header
 
         :param headers: The headers of this ShowWorkflowExecutionResponse.
-        :type: object
+        :type headers: object
         """
         self._headers = headers
 
@@ -223,7 +250,7 @@ class ShowWorkflowExecutionResponse(SdkResponse):
         函数执行时的入参
 
         :param input: The input of this ShowWorkflowExecutionResponse.
-        :type: object
+        :type input: object
         """
         self._input = input
 
@@ -245,7 +272,7 @@ class ShowWorkflowExecutionResponse(SdkResponse):
         函数执行结果
 
         :param output: The output of this ShowWorkflowExecutionResponse.
-        :type: object
+        :type output: object
         """
         self._output = output
 
@@ -267,7 +294,7 @@ class ShowWorkflowExecutionResponse(SdkResponse):
         流程实例创建时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
 
         :param begin_time: The begin_time of this ShowWorkflowExecutionResponse.
-        :type: str
+        :type begin_time: str
         """
         self._begin_time = begin_time
 
@@ -289,7 +316,7 @@ class ShowWorkflowExecutionResponse(SdkResponse):
         流程实例结束时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
 
         :param end_time: The end_time of this ShowWorkflowExecutionResponse.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -311,7 +338,7 @@ class ShowWorkflowExecutionResponse(SdkResponse):
         流程实例上次更新时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
 
         :param last_update_time: The last_update_time of this ShowWorkflowExecutionResponse.
-        :type: str
+        :type last_update_time: str
         """
         self._last_update_time = last_update_time
 
@@ -333,7 +360,7 @@ class ShowWorkflowExecutionResponse(SdkResponse):
         流程实例创建者
 
         :param created_by: The created_by of this ShowWorkflowExecutionResponse.
-        :type: str
+        :type created_by: str
         """
         self._created_by = created_by
 
@@ -344,7 +371,7 @@ class ShowWorkflowExecutionResponse(SdkResponse):
         节点执行信息
 
         :return: The node_execution_details of this ShowWorkflowExecutionResponse.
-        :rtype: list[NodeExecutionDetail]
+        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.NodeExecutionDetail`]
         """
         return self._node_execution_details
 
@@ -355,7 +382,7 @@ class ShowWorkflowExecutionResponse(SdkResponse):
         节点执行信息
 
         :param node_execution_details: The node_execution_details of this ShowWorkflowExecutionResponse.
-        :type: list[NodeExecutionDetail]
+        :type node_execution_details: list[:class:`huaweicloudsdkfunctiongraph.v2.NodeExecutionDetail`]
         """
         self._node_execution_details = node_execution_details
 

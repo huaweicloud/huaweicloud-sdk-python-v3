@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddUserToApp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class AddUserToApp:
     }
 
     def __init__(self, users=None):
-        """AddUserToApp - a model defined in huaweicloud sdk"""
+        """AddUserToApp
+
+        The model defined in huaweicloud sdk
+
+        :param users: 要添加的用户成员列表，空列表时代表清空应用的所有成员
+        :type users: list[:class:`huaweicloudsdkroma.v2.User`]
+        """
         
         
 
@@ -47,7 +52,7 @@ class AddUserToApp:
         要添加的用户成员列表，空列表时代表清空应用的所有成员
 
         :return: The users of this AddUserToApp.
-        :rtype: list[User]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.User`]
         """
         return self._users
 
@@ -58,7 +63,7 @@ class AddUserToApp:
         要添加的用户成员列表，空列表时代表清空应用的所有成员
 
         :param users: The users of this AddUserToApp.
-        :type: list[User]
+        :type users: list[:class:`huaweicloudsdkroma.v2.User`]
         """
         self._users = users
 

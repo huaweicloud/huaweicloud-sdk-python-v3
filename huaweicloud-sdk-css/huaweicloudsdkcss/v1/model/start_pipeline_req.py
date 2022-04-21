@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StartPipelineReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class StartPipelineReq:
     }
 
     def __init__(self, keep_alive=None, names=None):
-        """StartPipelineReq - a model defined in huaweicloud sdk"""
+        """StartPipelineReq
+
+        The model defined in huaweicloud sdk
+
+        :param keep_alive: 是否保持常驻。 开启“保持常驻”适用于需要长期运行的业务。开启“保持常驻”以后，将会在每个节点上面配置一个守护进程，当logstash服务出现故障的时候，会主动拉起并修复。“保持常驻”不适用于短期运行的业务，因为多次主动拉起logstash服务会导致数据迁移重复。
+        :type keep_alive: bool
+        :param names: 配置文件名称。
+        :type names: list[str]
+        """
         
         
 
@@ -62,7 +69,7 @@ class StartPipelineReq:
         是否保持常驻。 开启“保持常驻”适用于需要长期运行的业务。开启“保持常驻”以后，将会在每个节点上面配置一个守护进程，当logstash服务出现故障的时候，会主动拉起并修复。“保持常驻”不适用于短期运行的业务，因为多次主动拉起logstash服务会导致数据迁移重复。
 
         :param keep_alive: The keep_alive of this StartPipelineReq.
-        :type: bool
+        :type keep_alive: bool
         """
         self._keep_alive = keep_alive
 
@@ -84,7 +91,7 @@ class StartPipelineReq:
         配置文件名称。
 
         :param names: The names of this StartPipelineReq.
-        :type: list[str]
+        :type names: list[str]
         """
         self._names = names
 

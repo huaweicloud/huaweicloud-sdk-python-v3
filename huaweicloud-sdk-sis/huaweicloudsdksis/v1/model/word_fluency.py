@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class WordFluency:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class WordFluency:
     }
 
     def __init__(self, score=None, rhythm=None):
-        """WordFluency - a model defined in huaweicloud sdk"""
+        """WordFluency
+
+        The model defined in huaweicloud sdk
+
+        :param score: 
+        :type score: float
+        :param rhythm: 
+        :type rhythm: float
+        """
         
         
 
@@ -61,7 +68,7 @@ class WordFluency:
         
 
         :param score: The score of this WordFluency.
-        :type: float
+        :type score: float
         """
         self._score = score
 
@@ -83,7 +90,7 @@ class WordFluency:
         
 
         :param rhythm: The rhythm of this WordFluency.
-        :type: float
+        :type rhythm: float
         """
         self._rhythm = rhythm
 

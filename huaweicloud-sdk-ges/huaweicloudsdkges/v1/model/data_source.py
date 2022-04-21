@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DataSource:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DataSource:
     }
 
     def __init__(self, type=None, parameters=None):
-        """DataSource - a model defined in huaweicloud sdk"""
+        """DataSource
+
+        The model defined in huaweicloud sdk
+
+        :param type:   数据源类型。取值为OBS，且当前只支持OBS。
+        :type type: str
+        :param parameters: 
+        :type parameters: :class:`huaweicloudsdkges.v1.Parameters`
+        """
         
         
 
@@ -61,7 +68,7 @@ class DataSource:
           数据源类型。取值为OBS，且当前只支持OBS。
 
         :param type: The type of this DataSource.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -71,7 +78,7 @@ class DataSource:
 
 
         :return: The parameters of this DataSource.
-        :rtype: Parameters
+        :rtype: :class:`huaweicloudsdkges.v1.Parameters`
         """
         return self._parameters
 
@@ -81,7 +88,7 @@ class DataSource:
 
 
         :param parameters: The parameters of this DataSource.
-        :type: Parameters
+        :type parameters: :class:`huaweicloudsdkges.v1.Parameters`
         """
         self._parameters = parameters
 

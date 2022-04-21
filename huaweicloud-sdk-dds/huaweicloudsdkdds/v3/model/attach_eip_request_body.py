@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AttachEipRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AttachEipRequestBody:
     }
 
     def __init__(self, public_ip_id=None, public_ip=None):
-        """AttachEipRequestBody - a model defined in huaweicloud sdk"""
+        """AttachEipRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param public_ip_id: 公网IP的ID。
+        :type public_ip_id: str
+        :param public_ip: 公网IP。
+        :type public_ip: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class AttachEipRequestBody:
         公网IP的ID。
 
         :param public_ip_id: The public_ip_id of this AttachEipRequestBody.
-        :type: str
+        :type public_ip_id: str
         """
         self._public_ip_id = public_ip_id
 
@@ -83,7 +90,7 @@ class AttachEipRequestBody:
         公网IP。
 
         :param public_ip: The public_ip of this AttachEipRequestBody.
-        :type: str
+        :type public_ip: str
         """
         self._public_ip = public_ip
 

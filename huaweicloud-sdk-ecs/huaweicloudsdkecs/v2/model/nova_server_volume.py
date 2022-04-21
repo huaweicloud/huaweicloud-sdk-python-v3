@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NovaServerVolume:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class NovaServerVolume:
     }
 
     def __init__(self, id=None, delete_on_termination=None):
-        """NovaServerVolume - a model defined in huaweicloud sdk"""
+        """NovaServerVolume
+
+        The model defined in huaweicloud sdk
+
+        :param id: 云磁盘ID。
+        :type id: str
+        :param delete_on_termination: 一个标志，指示在删除服务器时是否删除附加的卷。、  默认情况下，这是False  微版本2.3后支持
+        :type delete_on_termination: bool
+        """
         
         
 
@@ -62,7 +69,7 @@ class NovaServerVolume:
         云磁盘ID。
 
         :param id: The id of this NovaServerVolume.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -84,7 +91,7 @@ class NovaServerVolume:
         一个标志，指示在删除服务器时是否删除附加的卷。、  默认情况下，这是False  微版本2.3后支持
 
         :param delete_on_termination: The delete_on_termination of this NovaServerVolume.
-        :type: bool
+        :type delete_on_termination: bool
         """
         self._delete_on_termination = delete_on_termination
 

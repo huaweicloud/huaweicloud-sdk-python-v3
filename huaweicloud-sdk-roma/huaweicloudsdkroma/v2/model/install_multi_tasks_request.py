@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InstallMultiTasksRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class InstallMultiTasksRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """InstallMultiTasksRequest - a model defined in huaweicloud sdk"""
+        """InstallMultiTasksRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param body: Body of the InstallMultiTasksRequest
+        :type body: :class:`huaweicloudsdkroma.v2.MultiTaskInitBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class InstallMultiTasksRequest:
         实例ID
 
         :param instance_id: The instance_id of this InstallMultiTasksRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -72,7 +79,7 @@ class InstallMultiTasksRequest:
 
 
         :return: The body of this InstallMultiTasksRequest.
-        :rtype: MultiTaskInitBody
+        :rtype: :class:`huaweicloudsdkroma.v2.MultiTaskInitBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class InstallMultiTasksRequest:
 
 
         :param body: The body of this InstallMultiTasksRequest.
-        :type: MultiTaskInitBody
+        :type body: :class:`huaweicloudsdkroma.v2.MultiTaskInitBody`
         """
         self._body = body
 

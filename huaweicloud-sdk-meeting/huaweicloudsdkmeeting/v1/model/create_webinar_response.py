@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateWebinarResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -72,7 +71,55 @@ class CreateWebinarResponse(SdkResponse):
     }
 
     def __init__(self, conference_id=None, corp_id=None, subject=None, description=None, start_time=None, duration=None, time_zone_id=None, state=None, scheduser_id=None, dept_name=None, scheduser_name=None, vmr_pkg_name=None, call_restriction=None, scope=None, audience_scope=None, chair_join_uri=None, chair_passwd=None, guest_join_uri=None, guest_passwd=None, audience_join_uri=None, audience_passwd=None, attendees=None):
-        """CreateWebinarResponse - a model defined in huaweicloud sdk"""
+        """CreateWebinarResponse
+
+        The model defined in huaweicloud sdk
+
+        :param conference_id: 会议ID。长度限制为32个字符。
+        :type conference_id: str
+        :param corp_id: 企业id
+        :type corp_id: str
+        :param subject: 主题
+        :type subject: str
+        :param description: 描述
+        :type description: str
+        :param start_time: 开始时间
+        :type start_time: str
+        :param duration: 时长，单位分钟
+        :type duration: int
+        :param time_zone_id: 时区ID
+        :type time_zone_id: int
+        :param state: 
+        :type state: :class:`huaweicloudsdkmeeting.v1.MeetingStatus`
+        :param scheduser_id: 会议预订者ID
+        :type scheduser_id: str
+        :param dept_name: 预订人部门
+        :type dept_name: str
+        :param scheduser_name: 会议预订者帐号名称。长度最大限制为96个字符。
+        :type scheduser_name: str
+        :param vmr_pkg_name: 网络研讨会资源名
+        :type vmr_pkg_name: str
+        :param call_restriction: 入会范围开关
+        :type call_restriction: bool
+        :param scope: 主持人、嘉宾入会范围  0: 所有用户 1: 非匿名用户（手机pstn入会视为匿名入会） 2: 企业内用户 3: 被邀请用户。
+        :type scope: int
+        :param audience_scope: 观众入会范围 0: 所有用户 2: 企业内用户和被邀请用户。
+        :type audience_scope: int
+        :param chair_join_uri: 主持人入会地址。
+        :type chair_join_uri: str
+        :param chair_passwd: 主持人密码。
+        :type chair_passwd: str
+        :param guest_join_uri: 嘉宾入会地址。
+        :type guest_join_uri: str
+        :param guest_passwd: 嘉宾密码。
+        :type guest_passwd: str
+        :param audience_join_uri: 观众入会地址。
+        :type audience_join_uri: str
+        :param audience_passwd: 观众密码。
+        :type audience_passwd: str
+        :param attendees: 
+        :type attendees: list[str]
+        """
         
         super(CreateWebinarResponse, self).__init__()
 
@@ -163,7 +210,7 @@ class CreateWebinarResponse(SdkResponse):
         会议ID。长度限制为32个字符。
 
         :param conference_id: The conference_id of this CreateWebinarResponse.
-        :type: str
+        :type conference_id: str
         """
         self._conference_id = conference_id
 
@@ -185,7 +232,7 @@ class CreateWebinarResponse(SdkResponse):
         企业id
 
         :param corp_id: The corp_id of this CreateWebinarResponse.
-        :type: str
+        :type corp_id: str
         """
         self._corp_id = corp_id
 
@@ -207,7 +254,7 @@ class CreateWebinarResponse(SdkResponse):
         主题
 
         :param subject: The subject of this CreateWebinarResponse.
-        :type: str
+        :type subject: str
         """
         self._subject = subject
 
@@ -229,7 +276,7 @@ class CreateWebinarResponse(SdkResponse):
         描述
 
         :param description: The description of this CreateWebinarResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -251,7 +298,7 @@ class CreateWebinarResponse(SdkResponse):
         开始时间
 
         :param start_time: The start_time of this CreateWebinarResponse.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -273,7 +320,7 @@ class CreateWebinarResponse(SdkResponse):
         时长，单位分钟
 
         :param duration: The duration of this CreateWebinarResponse.
-        :type: int
+        :type duration: int
         """
         self._duration = duration
 
@@ -295,7 +342,7 @@ class CreateWebinarResponse(SdkResponse):
         时区ID
 
         :param time_zone_id: The time_zone_id of this CreateWebinarResponse.
-        :type: int
+        :type time_zone_id: int
         """
         self._time_zone_id = time_zone_id
 
@@ -305,7 +352,7 @@ class CreateWebinarResponse(SdkResponse):
 
 
         :return: The state of this CreateWebinarResponse.
-        :rtype: MeetingStatus
+        :rtype: :class:`huaweicloudsdkmeeting.v1.MeetingStatus`
         """
         return self._state
 
@@ -315,7 +362,7 @@ class CreateWebinarResponse(SdkResponse):
 
 
         :param state: The state of this CreateWebinarResponse.
-        :type: MeetingStatus
+        :type state: :class:`huaweicloudsdkmeeting.v1.MeetingStatus`
         """
         self._state = state
 
@@ -337,7 +384,7 @@ class CreateWebinarResponse(SdkResponse):
         会议预订者ID
 
         :param scheduser_id: The scheduser_id of this CreateWebinarResponse.
-        :type: str
+        :type scheduser_id: str
         """
         self._scheduser_id = scheduser_id
 
@@ -359,7 +406,7 @@ class CreateWebinarResponse(SdkResponse):
         预订人部门
 
         :param dept_name: The dept_name of this CreateWebinarResponse.
-        :type: str
+        :type dept_name: str
         """
         self._dept_name = dept_name
 
@@ -381,7 +428,7 @@ class CreateWebinarResponse(SdkResponse):
         会议预订者帐号名称。长度最大限制为96个字符。
 
         :param scheduser_name: The scheduser_name of this CreateWebinarResponse.
-        :type: str
+        :type scheduser_name: str
         """
         self._scheduser_name = scheduser_name
 
@@ -403,7 +450,7 @@ class CreateWebinarResponse(SdkResponse):
         网络研讨会资源名
 
         :param vmr_pkg_name: The vmr_pkg_name of this CreateWebinarResponse.
-        :type: str
+        :type vmr_pkg_name: str
         """
         self._vmr_pkg_name = vmr_pkg_name
 
@@ -425,7 +472,7 @@ class CreateWebinarResponse(SdkResponse):
         入会范围开关
 
         :param call_restriction: The call_restriction of this CreateWebinarResponse.
-        :type: bool
+        :type call_restriction: bool
         """
         self._call_restriction = call_restriction
 
@@ -447,7 +494,7 @@ class CreateWebinarResponse(SdkResponse):
         主持人、嘉宾入会范围  0: 所有用户 1: 非匿名用户（手机pstn入会视为匿名入会） 2: 企业内用户 3: 被邀请用户。
 
         :param scope: The scope of this CreateWebinarResponse.
-        :type: int
+        :type scope: int
         """
         self._scope = scope
 
@@ -469,7 +516,7 @@ class CreateWebinarResponse(SdkResponse):
         观众入会范围 0: 所有用户 2: 企业内用户和被邀请用户。
 
         :param audience_scope: The audience_scope of this CreateWebinarResponse.
-        :type: int
+        :type audience_scope: int
         """
         self._audience_scope = audience_scope
 
@@ -491,7 +538,7 @@ class CreateWebinarResponse(SdkResponse):
         主持人入会地址。
 
         :param chair_join_uri: The chair_join_uri of this CreateWebinarResponse.
-        :type: str
+        :type chair_join_uri: str
         """
         self._chair_join_uri = chair_join_uri
 
@@ -513,7 +560,7 @@ class CreateWebinarResponse(SdkResponse):
         主持人密码。
 
         :param chair_passwd: The chair_passwd of this CreateWebinarResponse.
-        :type: str
+        :type chair_passwd: str
         """
         self._chair_passwd = chair_passwd
 
@@ -535,7 +582,7 @@ class CreateWebinarResponse(SdkResponse):
         嘉宾入会地址。
 
         :param guest_join_uri: The guest_join_uri of this CreateWebinarResponse.
-        :type: str
+        :type guest_join_uri: str
         """
         self._guest_join_uri = guest_join_uri
 
@@ -557,7 +604,7 @@ class CreateWebinarResponse(SdkResponse):
         嘉宾密码。
 
         :param guest_passwd: The guest_passwd of this CreateWebinarResponse.
-        :type: str
+        :type guest_passwd: str
         """
         self._guest_passwd = guest_passwd
 
@@ -579,7 +626,7 @@ class CreateWebinarResponse(SdkResponse):
         观众入会地址。
 
         :param audience_join_uri: The audience_join_uri of this CreateWebinarResponse.
-        :type: str
+        :type audience_join_uri: str
         """
         self._audience_join_uri = audience_join_uri
 
@@ -601,7 +648,7 @@ class CreateWebinarResponse(SdkResponse):
         观众密码。
 
         :param audience_passwd: The audience_passwd of this CreateWebinarResponse.
-        :type: str
+        :type audience_passwd: str
         """
         self._audience_passwd = audience_passwd
 
@@ -621,7 +668,7 @@ class CreateWebinarResponse(SdkResponse):
 
 
         :param attendees: The attendees of this CreateWebinarResponse.
-        :type: list[str]
+        :type attendees: list[str]
         """
         self._attendees = attendees
 

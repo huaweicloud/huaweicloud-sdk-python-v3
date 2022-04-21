@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ServiceReqDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ServiceReqDetail:
     }
 
     def __init__(self, meta_data=None, spec=None):
-        """ServiceReqDetail - a model defined in huaweicloud sdk"""
+        """ServiceReqDetail
+
+        The model defined in huaweicloud sdk
+
+        :param meta_data: 
+        :type meta_data: :class:`huaweicloudsdkief.v1.SvcMetadata`
+        :param spec: 
+        :type spec: :class:`huaweicloudsdkief.v1.SvcSpec`
+        """
         
         
 
@@ -49,7 +56,7 @@ class ServiceReqDetail:
 
 
         :return: The meta_data of this ServiceReqDetail.
-        :rtype: SvcMetadata
+        :rtype: :class:`huaweicloudsdkief.v1.SvcMetadata`
         """
         return self._meta_data
 
@@ -59,7 +66,7 @@ class ServiceReqDetail:
 
 
         :param meta_data: The meta_data of this ServiceReqDetail.
-        :type: SvcMetadata
+        :type meta_data: :class:`huaweicloudsdkief.v1.SvcMetadata`
         """
         self._meta_data = meta_data
 
@@ -69,7 +76,7 @@ class ServiceReqDetail:
 
 
         :return: The spec of this ServiceReqDetail.
-        :rtype: SvcSpec
+        :rtype: :class:`huaweicloudsdkief.v1.SvcSpec`
         """
         return self._spec
 
@@ -79,7 +86,7 @@ class ServiceReqDetail:
 
 
         :param spec: The spec of this ServiceReqDetail.
-        :type: SvcSpec
+        :type spec: :class:`huaweicloudsdkief.v1.SvcSpec`
         """
         self._spec = spec
 

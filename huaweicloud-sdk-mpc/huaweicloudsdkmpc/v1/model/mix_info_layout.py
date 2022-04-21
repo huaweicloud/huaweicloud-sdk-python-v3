@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MixInfoLayout:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class MixInfoLayout:
     }
 
     def __init__(self, panes=None):
-        """MixInfoLayout - a model defined in huaweicloud sdk"""
+        """MixInfoLayout
+
+        The model defined in huaweicloud sdk
+
+        :param panes: 原视频在合成视频中的位置布局配置
+        :type panes: list[:class:`huaweicloudsdkmpc.v1.PaneSetting`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class MixInfoLayout:
         原视频在合成视频中的位置布局配置
 
         :return: The panes of this MixInfoLayout.
-        :rtype: list[PaneSetting]
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.PaneSetting`]
         """
         return self._panes
 
@@ -57,7 +62,7 @@ class MixInfoLayout:
         原视频在合成视频中的位置布局配置
 
         :param panes: The panes of this MixInfoLayout.
-        :type: list[PaneSetting]
+        :type panes: list[:class:`huaweicloudsdkmpc.v1.PaneSetting`]
         """
         self._panes = panes
 

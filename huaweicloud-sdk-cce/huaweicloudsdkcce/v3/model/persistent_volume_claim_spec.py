@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PersistentVolumeClaimSpec:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class PersistentVolumeClaimSpec:
     }
 
     def __init__(self, volume_id=None, storage_type=None, access_modes=None, storage_class_name=None, volume_name=None, resources=None, volume_mode=None):
-        """PersistentVolumeClaimSpec - a model defined in huaweicloud sdk"""
+        """PersistentVolumeClaimSpec
+
+        The model defined in huaweicloud sdk
+
+        :param volume_id: 资源需为已经存在的存储资源 - 如果存储资源类型是SFS、EVS、SFS-Turbo，本参数需要填入对应资源的ID - 如果资源类型为OBS，本参数填入OBS名称
+        :type volume_id: str
+        :param storage_type: 云存储的类型，和volumeID搭配使用。即volumeID和storageType必须同时被配置。  - bs：EVS云存储 - nfs：SFS弹性文件存储 - obs：OBS对象存储 - efs：SFS Turbo极速文件存储
+        :type storage_type: str
+        :param access_modes: 指定volume应该具有的访问模式，列表中仅第一个配置参数有效。 - ReadWriteOnce：该卷可以被单个节点以读/写模式挂载   &gt;集群版本为v1.13.10且storage-driver版本为1.0.19时，才支持此功能。 - ReadOnlyMany：该卷可以被多个节点以只读模式挂载（默认） - ReadWriteMany：该卷可以被多个节点以读/写模式挂载
+        :type access_modes: list[str]
+        :param storage_class_name: PVC的StorageClass名称
+        :type storage_class_name: str
+        :param volume_name: PVC绑定的PV名称
+        :type volume_name: str
+        :param resources: 
+        :type resources: :class:`huaweicloudsdkcce.v3.ResourceRequirements`
+        :param volume_mode: PVC指定的PV类型
+        :type volume_mode: str
+        """
         
         
 
@@ -85,7 +102,7 @@ class PersistentVolumeClaimSpec:
         资源需为已经存在的存储资源 - 如果存储资源类型是SFS、EVS、SFS-Turbo，本参数需要填入对应资源的ID - 如果资源类型为OBS，本参数填入OBS名称
 
         :param volume_id: The volume_id of this PersistentVolumeClaimSpec.
-        :type: str
+        :type volume_id: str
         """
         self._volume_id = volume_id
 
@@ -107,7 +124,7 @@ class PersistentVolumeClaimSpec:
         云存储的类型，和volumeID搭配使用。即volumeID和storageType必须同时被配置。  - bs：EVS云存储 - nfs：SFS弹性文件存储 - obs：OBS对象存储 - efs：SFS Turbo极速文件存储
 
         :param storage_type: The storage_type of this PersistentVolumeClaimSpec.
-        :type: str
+        :type storage_type: str
         """
         self._storage_type = storage_type
 
@@ -129,7 +146,7 @@ class PersistentVolumeClaimSpec:
         指定volume应该具有的访问模式，列表中仅第一个配置参数有效。 - ReadWriteOnce：该卷可以被单个节点以读/写模式挂载   >集群版本为v1.13.10且storage-driver版本为1.0.19时，才支持此功能。 - ReadOnlyMany：该卷可以被多个节点以只读模式挂载（默认） - ReadWriteMany：该卷可以被多个节点以读/写模式挂载
 
         :param access_modes: The access_modes of this PersistentVolumeClaimSpec.
-        :type: list[str]
+        :type access_modes: list[str]
         """
         self._access_modes = access_modes
 
@@ -151,7 +168,7 @@ class PersistentVolumeClaimSpec:
         PVC的StorageClass名称
 
         :param storage_class_name: The storage_class_name of this PersistentVolumeClaimSpec.
-        :type: str
+        :type storage_class_name: str
         """
         self._storage_class_name = storage_class_name
 
@@ -173,7 +190,7 @@ class PersistentVolumeClaimSpec:
         PVC绑定的PV名称
 
         :param volume_name: The volume_name of this PersistentVolumeClaimSpec.
-        :type: str
+        :type volume_name: str
         """
         self._volume_name = volume_name
 
@@ -183,7 +200,7 @@ class PersistentVolumeClaimSpec:
 
 
         :return: The resources of this PersistentVolumeClaimSpec.
-        :rtype: ResourceRequirements
+        :rtype: :class:`huaweicloudsdkcce.v3.ResourceRequirements`
         """
         return self._resources
 
@@ -193,7 +210,7 @@ class PersistentVolumeClaimSpec:
 
 
         :param resources: The resources of this PersistentVolumeClaimSpec.
-        :type: ResourceRequirements
+        :type resources: :class:`huaweicloudsdkcce.v3.ResourceRequirements`
         """
         self._resources = resources
 
@@ -215,7 +232,7 @@ class PersistentVolumeClaimSpec:
         PVC指定的PV类型
 
         :param volume_mode: The volume_mode of this PersistentVolumeClaimSpec.
-        :type: str
+        :type volume_mode: str
         """
         self._volume_mode = volume_mode
 

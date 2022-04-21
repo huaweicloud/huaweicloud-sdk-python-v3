@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryUserResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class QueryUserResp:
     }
 
     def __init__(self, job_id=None, is_global_password=None, message=None, user_list=None, roles_list=None, is_success=None):
-        """QueryUserResp - a model defined in huaweicloud sdk"""
+        """QueryUserResp
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 任务id
+        :type job_id: str
+        :param is_global_password: 是否使用全局密码
+        :type is_global_password: str
+        :param message: 错误码
+        :type message: str
+        :param user_list: 用户列表数据
+        :type user_list: list[:class:`huaweicloudsdkdrs.v3.QueryUserDetailResp`]
+        :param roles_list: 角色列表数据
+        :type roles_list: list[:class:`huaweicloudsdkdrs.v3.QueryRoleDetailResp`]
+        :param is_success: 是否成功
+        :type is_success: bool
+        """
         
         
 
@@ -83,7 +98,7 @@ class QueryUserResp:
         任务id
 
         :param job_id: The job_id of this QueryUserResp.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -105,7 +120,7 @@ class QueryUserResp:
         是否使用全局密码
 
         :param is_global_password: The is_global_password of this QueryUserResp.
-        :type: str
+        :type is_global_password: str
         """
         self._is_global_password = is_global_password
 
@@ -127,7 +142,7 @@ class QueryUserResp:
         错误码
 
         :param message: The message of this QueryUserResp.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -138,7 +153,7 @@ class QueryUserResp:
         用户列表数据
 
         :return: The user_list of this QueryUserResp.
-        :rtype: list[QueryUserDetailResp]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.QueryUserDetailResp`]
         """
         return self._user_list
 
@@ -149,7 +164,7 @@ class QueryUserResp:
         用户列表数据
 
         :param user_list: The user_list of this QueryUserResp.
-        :type: list[QueryUserDetailResp]
+        :type user_list: list[:class:`huaweicloudsdkdrs.v3.QueryUserDetailResp`]
         """
         self._user_list = user_list
 
@@ -160,7 +175,7 @@ class QueryUserResp:
         角色列表数据
 
         :return: The roles_list of this QueryUserResp.
-        :rtype: list[QueryRoleDetailResp]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.QueryRoleDetailResp`]
         """
         return self._roles_list
 
@@ -171,7 +186,7 @@ class QueryUserResp:
         角色列表数据
 
         :param roles_list: The roles_list of this QueryUserResp.
-        :type: list[QueryRoleDetailResp]
+        :type roles_list: list[:class:`huaweicloudsdkdrs.v3.QueryRoleDetailResp`]
         """
         self._roles_list = roles_list
 
@@ -193,7 +208,7 @@ class QueryUserResp:
         是否成功
 
         :param is_success: The is_success of this QueryUserResp.
-        :type: bool
+        :type is_success: bool
         """
         self._is_success = is_success
 

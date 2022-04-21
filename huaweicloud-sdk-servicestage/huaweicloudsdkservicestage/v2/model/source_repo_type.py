@@ -12,12 +12,10 @@ class SourceRepoType:
     """
     allowed enum values
     """
-
     GITHUB = "GitHub"
     GITLAB = "GitLab"
     GITEE = "Gitee"
     BITBUCKET = "Bitbucket"
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -35,7 +33,11 @@ class SourceRepoType:
     }
 
     def __init__(self):
-        """SourceRepoType - a model defined in huaweicloud sdk"""
+        """SourceRepoType
+
+        The model defined in huaweicloud sdk
+
+        """
         
         
         self.discriminator = None

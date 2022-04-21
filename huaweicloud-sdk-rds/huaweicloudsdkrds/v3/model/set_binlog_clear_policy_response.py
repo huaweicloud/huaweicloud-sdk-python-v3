@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SetBinlogClearPolicyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class SetBinlogClearPolicyResponse(SdkResponse):
     }
 
     def __init__(self, resp=None):
-        """SetBinlogClearPolicyResponse - a model defined in huaweicloud sdk"""
+        """SetBinlogClearPolicyResponse
+
+        The model defined in huaweicloud sdk
+
+        :param resp: 操作结果。
+        :type resp: str
+        """
         
         super(SetBinlogClearPolicyResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class SetBinlogClearPolicyResponse(SdkResponse):
         操作结果。
 
         :param resp: The resp of this SetBinlogClearPolicyResponse.
-        :type: str
+        :type resp: str
         """
         self._resp = resp
 

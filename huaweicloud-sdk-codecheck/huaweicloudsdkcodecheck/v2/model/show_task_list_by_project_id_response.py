@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowTaskListByProjectIdResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowTaskListByProjectIdResponse(SdkResponse):
     }
 
     def __init__(self, tasks=None, total=None):
-        """ShowTaskListByProjectIdResponse - a model defined in huaweicloud sdk"""
+        """ShowTaskListByProjectIdResponse
+
+        The model defined in huaweicloud sdk
+
+        :param tasks: 任务信息
+        :type tasks: list[:class:`huaweicloudsdkcodecheck.v2.SimpleTaskInfoV2`]
+        :param total: 总数
+        :type total: int
+        """
         
         super(ShowTaskListByProjectIdResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ShowTaskListByProjectIdResponse(SdkResponse):
         任务信息
 
         :return: The tasks of this ShowTaskListByProjectIdResponse.
-        :rtype: list[SimpleTaskInfoV2]
+        :rtype: list[:class:`huaweicloudsdkcodecheck.v2.SimpleTaskInfoV2`]
         """
         return self._tasks
 
@@ -63,7 +70,7 @@ class ShowTaskListByProjectIdResponse(SdkResponse):
         任务信息
 
         :param tasks: The tasks of this ShowTaskListByProjectIdResponse.
-        :type: list[SimpleTaskInfoV2]
+        :type tasks: list[:class:`huaweicloudsdkcodecheck.v2.SimpleTaskInfoV2`]
         """
         self._tasks = tasks
 
@@ -85,7 +92,7 @@ class ShowTaskListByProjectIdResponse(SdkResponse):
         总数
 
         :param total: The total of this ShowTaskListByProjectIdResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 

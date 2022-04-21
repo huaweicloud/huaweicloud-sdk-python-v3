@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateNotificationOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateNotificationOption:
     }
 
     def __init__(self, topic_urn=None, topic_scene=None):
-        """CreateNotificationOption - a model defined in huaweicloud sdk"""
+        """CreateNotificationOption
+
+        The model defined in huaweicloud sdk
+
+        :param topic_urn: SMN服务中Topic的唯一的资源标识。
+        :type topic_urn: str
+        :param topic_scene: 通知场景，有以下五种类型。SCALING_UP：扩容成功。SCALING_UP_FAIL：扩容失败。SCALING_DOWN：减容成功。SCALING_DOWN_FAIL：减容失败。SCALING_GROUP_ABNORMAL：伸缩组发生异常
+        :type topic_scene: list[str]
+        """
         
         
 
@@ -61,7 +68,7 @@ class CreateNotificationOption:
         SMN服务中Topic的唯一的资源标识。
 
         :param topic_urn: The topic_urn of this CreateNotificationOption.
-        :type: str
+        :type topic_urn: str
         """
         self._topic_urn = topic_urn
 
@@ -83,7 +90,7 @@ class CreateNotificationOption:
         通知场景，有以下五种类型。SCALING_UP：扩容成功。SCALING_UP_FAIL：扩容失败。SCALING_DOWN：减容成功。SCALING_DOWN_FAIL：减容失败。SCALING_GROUP_ABNORMAL：伸缩组发生异常
 
         :param topic_scene: The topic_scene of this CreateNotificationOption.
-        :type: list[str]
+        :type topic_scene: list[str]
         """
         self._topic_scene = topic_scene
 

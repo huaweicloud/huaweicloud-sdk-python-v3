@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EventExtractionResponseItem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class EventExtractionResponseItem:
     }
 
     def __init__(self, argument=None, event_trigger=None, event_type=None, trigger_span=None):
-        """EventExtractionResponseItem - a model defined in huaweicloud sdk"""
+        """EventExtractionResponseItem
+
+        The model defined in huaweicloud sdk
+
+        :param argument: 事件元素列表。
+        :type argument: list[:class:`huaweicloudsdknlp.v2.EventExtractionResponseItemArgument`]
+        :param event_trigger: 事件触发词。触发词是事件描述中最能代表事件发生的词汇，决定事件类别的重要特征。
+        :type event_trigger: str
+        :param event_type: 事件类型。
+        :type event_type: str
+        :param trigger_span: 事件触发词在待分析文本中的起始和终止位置。
+        :type trigger_span: list[int]
+        """
         
         
 
@@ -59,7 +70,7 @@ class EventExtractionResponseItem:
         事件元素列表。
 
         :return: The argument of this EventExtractionResponseItem.
-        :rtype: list[EventExtractionResponseItemArgument]
+        :rtype: list[:class:`huaweicloudsdknlp.v2.EventExtractionResponseItemArgument`]
         """
         return self._argument
 
@@ -70,7 +81,7 @@ class EventExtractionResponseItem:
         事件元素列表。
 
         :param argument: The argument of this EventExtractionResponseItem.
-        :type: list[EventExtractionResponseItemArgument]
+        :type argument: list[:class:`huaweicloudsdknlp.v2.EventExtractionResponseItemArgument`]
         """
         self._argument = argument
 
@@ -92,7 +103,7 @@ class EventExtractionResponseItem:
         事件触发词。触发词是事件描述中最能代表事件发生的词汇，决定事件类别的重要特征。
 
         :param event_trigger: The event_trigger of this EventExtractionResponseItem.
-        :type: str
+        :type event_trigger: str
         """
         self._event_trigger = event_trigger
 
@@ -114,7 +125,7 @@ class EventExtractionResponseItem:
         事件类型。
 
         :param event_type: The event_type of this EventExtractionResponseItem.
-        :type: str
+        :type event_type: str
         """
         self._event_type = event_type
 
@@ -136,7 +147,7 @@ class EventExtractionResponseItem:
         事件触发词在待分析文本中的起始和终止位置。
 
         :param trigger_span: The trigger_span of this EventExtractionResponseItem.
-        :type: list[int]
+        :type trigger_span: list[int]
         """
         self._trigger_span = trigger_span
 

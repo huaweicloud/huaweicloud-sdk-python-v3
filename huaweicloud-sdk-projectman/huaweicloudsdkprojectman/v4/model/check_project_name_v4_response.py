@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CheckProjectNameV4Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CheckProjectNameV4Response(SdkResponse):
     }
 
     def __init__(self, exist=None):
-        """CheckProjectNameV4Response - a model defined in huaweicloud sdk"""
+        """CheckProjectNameV4Response
+
+        The model defined in huaweicloud sdk
+
+        :param exist: 是否存在相同的项目名称 true 存在， false 不存在
+        :type exist: bool
+        """
         
         super(CheckProjectNameV4Response, self).__init__()
 
@@ -58,7 +63,7 @@ class CheckProjectNameV4Response(SdkResponse):
         是否存在相同的项目名称 true 存在， false 不存在
 
         :param exist: The exist of this CheckProjectNameV4Response.
-        :type: bool
+        :type exist: bool
         """
         self._exist = exist
 

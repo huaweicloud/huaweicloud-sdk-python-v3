@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Cluster:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -156,7 +155,139 @@ class Cluster:
     }
 
     def __init__(self, cluster_id=None, cluster_name=None, total_node_num=None, cluster_state=None, stage_desc=None, create_at=None, update_at=None, charging_start_time=None, billing_type=None, data_center=None, vpc=None, vpc_id=None, duration=None, fee=None, hadoop_version=None, component_list=None, external_ip=None, external_alternate_ip=None, internal_ip=None, deployment_id=None, remark=None, order_id=None, az_id=None, az_name=None, az_code=None, instance_id=None, vnc=None, tenant_id=None, volume_size=None, volume_type=None, subnet_id=None, subnet_name=None, security_groups_id=None, slave_security_groups_id=None, bootstrap_scripts=None, safe_mode=None, cluster_version=None, node_public_cert_name=None, master_node_ip=None, private_ip_first=None, error_info=None, tags=None, master_node_num=None, core_node_num=None, master_node_size=None, core_node_size=None, master_node_product_id=None, master_node_spec_id=None, core_node_product_id=None, core_node_spec_id=None, master_data_volume_type=None, master_data_volume_size=None, master_data_volume_count=None, core_data_volume_type=None, core_data_volume_size=None, core_data_volume_count=None, enterprise_project_id=None, is_mrs_manager_finish=None, cluster_type=None, log_collection=None, period_type=None, scale=None, node_groups=None, task_node_groups=None):
-        """Cluster - a model defined in huaweicloud sdk"""
+        """Cluster
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 集群ID。
+        :type cluster_id: str
+        :param cluster_name: 集群名称。
+        :type cluster_name: str
+        :param total_node_num: 集群部署的节点总数。
+        :type total_node_num: str
+        :param cluster_state: 集群状态，包括： - starting：启动中的集群。 - running：运行中的集群。 - terminated：已删除的集群。 - failed：失败的集群。 - abnormal：异常的集群。 - terminating：删除中的集群。 - frozen：已冻结的集群。 - scaling-out：扩容中的集群。 - scaling-in：缩容中的集群。
+        :type cluster_state: str
+        :param stage_desc: 集群进度描述。  安装集群进度包括： - Verifying cluster parameters：校验集群参数中 - Applying for cluster resources：申请集群资源中 - Creating VM：创建虚拟机中 - Initializing VM：初始化虚拟机中 - Installing MRS Manager：安装MRS Manager中 - Deploying cluster：部署集群中 - Cluster installation failed：集群安装失败  扩容集群进度包括： - Preparing for cluster expansion：准备扩容中 - Creating VM：创建虚拟机中 - Initializing VM：初始化虚拟机中 - Adding node to the cluster：节点加入集群中 - Cluster expansion failed：集群扩容失败  缩容集群进度包括： - Preparing for cluster shrink：正在准备缩容 - Decommissioning instance：实例退服中 - Deleting VM：删除虚拟机中 - Deleting node from the cluster：从集群删除节点中 - Cluster shrink failed：集群缩容失败 集群安装、扩容、缩容失败，stageDesc会显示失败的原因。
+        :type stage_desc: str
+        :param create_at: 集群创建时间，十位时间戳。
+        :type create_at: str
+        :param update_at: 集群更新时间，十位时间戳。
+        :type update_at: str
+        :param charging_start_time: 开始计费时间。
+        :type charging_start_time: str
+        :param billing_type: 集群计费模式。
+        :type billing_type: str
+        :param data_center: 集群工作区域。
+        :type data_center: str
+        :param vpc: VPC名称。
+        :type vpc: str
+        :param vpc_id: VPC ID。
+        :type vpc_id: str
+        :param duration: 集群购买时长。
+        :type duration: str
+        :param fee: 创建集群所需费用，系统自动计算。
+        :type fee: str
+        :param hadoop_version: Hadoop组件版本信息。
+        :type hadoop_version: str
+        :param component_list: 组件列表信息。
+        :type component_list: list[:class:`huaweicloudsdkmrs.v1.ComponentAmb`]
+        :param external_ip: 公网IP地址。
+        :type external_ip: str
+        :param external_alternate_ip: 公网备用IP地址。
+        :type external_alternate_ip: str
+        :param internal_ip: 内网IP地址。
+        :type internal_ip: str
+        :param deployment_id: 集群部署ID。
+        :type deployment_id: str
+        :param remark: 集群备注信息。
+        :type remark: str
+        :param order_id: 创建集群的订单号。
+        :type order_id: str
+        :param az_id: 可用区域ID。
+        :type az_id: str
+        :param az_name: 可用区域名称。
+        :type az_name: str
+        :param az_code: 可用区域英文名称
+        :type az_code: str
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param vnc: 远程登录弹性云服务器的URI地址。
+        :type vnc: str
+        :param tenant_id: 项目编号。
+        :type tenant_id: str
+        :param volume_size: 磁盘存储空间。
+        :type volume_size: int
+        :param volume_type: 磁盘类型。
+        :type volume_type: str
+        :param subnet_id: 子网ID。
+        :type subnet_id: str
+        :param subnet_name: 子网名称。
+        :type subnet_name: str
+        :param security_groups_id: 安全组ID。
+        :type security_groups_id: str
+        :param slave_security_groups_id: 非Master节点的安全组id，当前一个MRS集群只会使用一个安全组，所以该字段已经废弃，从兼容性考虑，该字段会返回和securityGroupsId同样的值。
+        :type slave_security_groups_id: str
+        :param bootstrap_scripts: 配置引导操作脚本信息。
+        :type bootstrap_scripts: list[:class:`huaweicloudsdkmrs.v1.BootstrapScriptResp`]
+        :param safe_mode: MRS集群运行模式。 - 0：普通集群 - 1：安全集群
+        :type safe_mode: int
+        :param cluster_version: 集群版本。
+        :type cluster_version: str
+        :param node_public_cert_name: 密钥文件名称。
+        :type node_public_cert_name: str
+        :param master_node_ip: Master节点IP。
+        :type master_node_ip: str
+        :param private_ip_first: 首选私有IP。
+        :type private_ip_first: str
+        :param error_info: 错误信息。
+        :type error_info: str
+        :param tags: 标签信息
+        :type tags: str
+        :param master_node_num: 集群部署的Master节点数量。
+        :type master_node_num: str
+        :param core_node_num: 集群部署的Core节点数量。
+        :type core_node_num: str
+        :param master_node_size: Master节点的实例规格。
+        :type master_node_size: str
+        :param core_node_size: Core节点的实例规格。
+        :type core_node_size: str
+        :param master_node_product_id: Master节点产品ID。
+        :type master_node_product_id: str
+        :param master_node_spec_id: Master节点规格ID。
+        :type master_node_spec_id: str
+        :param core_node_product_id: Core节点产品ID。
+        :type core_node_product_id: str
+        :param core_node_spec_id: Core节点规格ID。
+        :type core_node_spec_id: str
+        :param master_data_volume_type: Master节点数据磁盘存储类别，目前支持SATA、SAS和SSD。
+        :type master_data_volume_type: str
+        :param master_data_volume_size: Master节点数据磁盘存储空间。为增大数据存储容量，创建集群时可同时添加磁盘。 取值范围：100GB～32000GB，传值只需填数字，不需要带单位GB。
+        :type master_data_volume_size: int
+        :param master_data_volume_count: Master节点数据磁盘个数。 取值只能是1
+        :type master_data_volume_count: int
+        :param core_data_volume_type: Core节点数据磁盘存储类别，目前支持SATA、SAS和SSD。
+        :type core_data_volume_type: str
+        :param core_data_volume_size: Core节点数据磁盘存储空间。为增大数据存储容量，创建集群时可同时添加磁盘。 取值范围：100GB～32000GB，传值只需填数字，不需要带单位GB。
+        :type core_data_volume_size: int
+        :param core_data_volume_count: Core节点数据磁盘个数。 取值范围：1～10
+        :type core_data_volume_count: int
+        :param enterprise_project_id: 企业项目ID。
+        :type enterprise_project_id: str
+        :param is_mrs_manager_finish: 表示集群创建过程中，MRS Manager是否安装完成。 - true：安装完成 - false：安装未完成
+        :type is_mrs_manager_finish: bool
+        :param cluster_type: 集群类型。
+        :type cluster_type: int
+        :param log_collection: 集群安装失败时，是否搜集日志。 - 0：不收集 - 1：收集
+        :type log_collection: int
+        :param period_type: 区分包周期，集群是包年还是包月。 - 0：包月 - 1：包年
+        :type period_type: int
+        :param scale: 集群节点的变更状态（扩容/缩容/变更规格）。当该参数取值为空时，表示集群节点没有进行变更操作。 取值范围： - scaling-out：扩容中 - scaling-in：缩容中 - scaling-error：处于running状态，且上一次扩容/缩容/升级规格失败的集群 - scaling-up：Master节点规格升级中 - scaling_up_first：备Master节点规格升级中 - scaled_up_first：备Master节点规格升级成功 - scaled-up-success：Master节点规格升级成功
+        :type scale: str
+        :param node_groups: Master节点、Core节点和Task节点列表信息。
+        :type node_groups: list[:class:`huaweicloudsdkmrs.v1.NodeGroupV10`]
+        :param task_node_groups: Task节点列表信息。
+        :type task_node_groups: list[:class:`huaweicloudsdkmrs.v1.NodeGroupV10`]
+        """
         
         
 
@@ -373,7 +504,7 @@ class Cluster:
         集群ID。
 
         :param cluster_id: The cluster_id of this Cluster.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -395,7 +526,7 @@ class Cluster:
         集群名称。
 
         :param cluster_name: The cluster_name of this Cluster.
-        :type: str
+        :type cluster_name: str
         """
         self._cluster_name = cluster_name
 
@@ -417,7 +548,7 @@ class Cluster:
         集群部署的节点总数。
 
         :param total_node_num: The total_node_num of this Cluster.
-        :type: str
+        :type total_node_num: str
         """
         self._total_node_num = total_node_num
 
@@ -439,7 +570,7 @@ class Cluster:
         集群状态，包括： - starting：启动中的集群。 - running：运行中的集群。 - terminated：已删除的集群。 - failed：失败的集群。 - abnormal：异常的集群。 - terminating：删除中的集群。 - frozen：已冻结的集群。 - scaling-out：扩容中的集群。 - scaling-in：缩容中的集群。
 
         :param cluster_state: The cluster_state of this Cluster.
-        :type: str
+        :type cluster_state: str
         """
         self._cluster_state = cluster_state
 
@@ -461,7 +592,7 @@ class Cluster:
         集群进度描述。  安装集群进度包括： - Verifying cluster parameters：校验集群参数中 - Applying for cluster resources：申请集群资源中 - Creating VM：创建虚拟机中 - Initializing VM：初始化虚拟机中 - Installing MRS Manager：安装MRS Manager中 - Deploying cluster：部署集群中 - Cluster installation failed：集群安装失败  扩容集群进度包括： - Preparing for cluster expansion：准备扩容中 - Creating VM：创建虚拟机中 - Initializing VM：初始化虚拟机中 - Adding node to the cluster：节点加入集群中 - Cluster expansion failed：集群扩容失败  缩容集群进度包括： - Preparing for cluster shrink：正在准备缩容 - Decommissioning instance：实例退服中 - Deleting VM：删除虚拟机中 - Deleting node from the cluster：从集群删除节点中 - Cluster shrink failed：集群缩容失败 集群安装、扩容、缩容失败，stageDesc会显示失败的原因。
 
         :param stage_desc: The stage_desc of this Cluster.
-        :type: str
+        :type stage_desc: str
         """
         self._stage_desc = stage_desc
 
@@ -483,7 +614,7 @@ class Cluster:
         集群创建时间，十位时间戳。
 
         :param create_at: The create_at of this Cluster.
-        :type: str
+        :type create_at: str
         """
         self._create_at = create_at
 
@@ -505,7 +636,7 @@ class Cluster:
         集群更新时间，十位时间戳。
 
         :param update_at: The update_at of this Cluster.
-        :type: str
+        :type update_at: str
         """
         self._update_at = update_at
 
@@ -527,7 +658,7 @@ class Cluster:
         开始计费时间。
 
         :param charging_start_time: The charging_start_time of this Cluster.
-        :type: str
+        :type charging_start_time: str
         """
         self._charging_start_time = charging_start_time
 
@@ -549,7 +680,7 @@ class Cluster:
         集群计费模式。
 
         :param billing_type: The billing_type of this Cluster.
-        :type: str
+        :type billing_type: str
         """
         self._billing_type = billing_type
 
@@ -571,7 +702,7 @@ class Cluster:
         集群工作区域。
 
         :param data_center: The data_center of this Cluster.
-        :type: str
+        :type data_center: str
         """
         self._data_center = data_center
 
@@ -593,7 +724,7 @@ class Cluster:
         VPC名称。
 
         :param vpc: The vpc of this Cluster.
-        :type: str
+        :type vpc: str
         """
         self._vpc = vpc
 
@@ -615,7 +746,7 @@ class Cluster:
         VPC ID。
 
         :param vpc_id: The vpc_id of this Cluster.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -637,7 +768,7 @@ class Cluster:
         集群购买时长。
 
         :param duration: The duration of this Cluster.
-        :type: str
+        :type duration: str
         """
         self._duration = duration
 
@@ -659,7 +790,7 @@ class Cluster:
         创建集群所需费用，系统自动计算。
 
         :param fee: The fee of this Cluster.
-        :type: str
+        :type fee: str
         """
         self._fee = fee
 
@@ -681,7 +812,7 @@ class Cluster:
         Hadoop组件版本信息。
 
         :param hadoop_version: The hadoop_version of this Cluster.
-        :type: str
+        :type hadoop_version: str
         """
         self._hadoop_version = hadoop_version
 
@@ -692,7 +823,7 @@ class Cluster:
         组件列表信息。
 
         :return: The component_list of this Cluster.
-        :rtype: list[ComponentAmb]
+        :rtype: list[:class:`huaweicloudsdkmrs.v1.ComponentAmb`]
         """
         return self._component_list
 
@@ -703,7 +834,7 @@ class Cluster:
         组件列表信息。
 
         :param component_list: The component_list of this Cluster.
-        :type: list[ComponentAmb]
+        :type component_list: list[:class:`huaweicloudsdkmrs.v1.ComponentAmb`]
         """
         self._component_list = component_list
 
@@ -725,7 +856,7 @@ class Cluster:
         公网IP地址。
 
         :param external_ip: The external_ip of this Cluster.
-        :type: str
+        :type external_ip: str
         """
         self._external_ip = external_ip
 
@@ -747,7 +878,7 @@ class Cluster:
         公网备用IP地址。
 
         :param external_alternate_ip: The external_alternate_ip of this Cluster.
-        :type: str
+        :type external_alternate_ip: str
         """
         self._external_alternate_ip = external_alternate_ip
 
@@ -769,7 +900,7 @@ class Cluster:
         内网IP地址。
 
         :param internal_ip: The internal_ip of this Cluster.
-        :type: str
+        :type internal_ip: str
         """
         self._internal_ip = internal_ip
 
@@ -791,7 +922,7 @@ class Cluster:
         集群部署ID。
 
         :param deployment_id: The deployment_id of this Cluster.
-        :type: str
+        :type deployment_id: str
         """
         self._deployment_id = deployment_id
 
@@ -813,7 +944,7 @@ class Cluster:
         集群备注信息。
 
         :param remark: The remark of this Cluster.
-        :type: str
+        :type remark: str
         """
         self._remark = remark
 
@@ -835,7 +966,7 @@ class Cluster:
         创建集群的订单号。
 
         :param order_id: The order_id of this Cluster.
-        :type: str
+        :type order_id: str
         """
         self._order_id = order_id
 
@@ -857,7 +988,7 @@ class Cluster:
         可用区域ID。
 
         :param az_id: The az_id of this Cluster.
-        :type: str
+        :type az_id: str
         """
         self._az_id = az_id
 
@@ -879,7 +1010,7 @@ class Cluster:
         可用区域名称。
 
         :param az_name: The az_name of this Cluster.
-        :type: str
+        :type az_name: str
         """
         self._az_name = az_name
 
@@ -901,7 +1032,7 @@ class Cluster:
         可用区域英文名称
 
         :param az_code: The az_code of this Cluster.
-        :type: str
+        :type az_code: str
         """
         self._az_code = az_code
 
@@ -923,7 +1054,7 @@ class Cluster:
         实例ID。
 
         :param instance_id: The instance_id of this Cluster.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -945,7 +1076,7 @@ class Cluster:
         远程登录弹性云服务器的URI地址。
 
         :param vnc: The vnc of this Cluster.
-        :type: str
+        :type vnc: str
         """
         self._vnc = vnc
 
@@ -967,7 +1098,7 @@ class Cluster:
         项目编号。
 
         :param tenant_id: The tenant_id of this Cluster.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 
@@ -989,7 +1120,7 @@ class Cluster:
         磁盘存储空间。
 
         :param volume_size: The volume_size of this Cluster.
-        :type: int
+        :type volume_size: int
         """
         self._volume_size = volume_size
 
@@ -1011,7 +1142,7 @@ class Cluster:
         磁盘类型。
 
         :param volume_type: The volume_type of this Cluster.
-        :type: str
+        :type volume_type: str
         """
         self._volume_type = volume_type
 
@@ -1033,7 +1164,7 @@ class Cluster:
         子网ID。
 
         :param subnet_id: The subnet_id of this Cluster.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -1055,7 +1186,7 @@ class Cluster:
         子网名称。
 
         :param subnet_name: The subnet_name of this Cluster.
-        :type: str
+        :type subnet_name: str
         """
         self._subnet_name = subnet_name
 
@@ -1077,7 +1208,7 @@ class Cluster:
         安全组ID。
 
         :param security_groups_id: The security_groups_id of this Cluster.
-        :type: str
+        :type security_groups_id: str
         """
         self._security_groups_id = security_groups_id
 
@@ -1099,7 +1230,7 @@ class Cluster:
         非Master节点的安全组id，当前一个MRS集群只会使用一个安全组，所以该字段已经废弃，从兼容性考虑，该字段会返回和securityGroupsId同样的值。
 
         :param slave_security_groups_id: The slave_security_groups_id of this Cluster.
-        :type: str
+        :type slave_security_groups_id: str
         """
         self._slave_security_groups_id = slave_security_groups_id
 
@@ -1110,7 +1241,7 @@ class Cluster:
         配置引导操作脚本信息。
 
         :return: The bootstrap_scripts of this Cluster.
-        :rtype: list[BootstrapScriptResp]
+        :rtype: list[:class:`huaweicloudsdkmrs.v1.BootstrapScriptResp`]
         """
         return self._bootstrap_scripts
 
@@ -1121,7 +1252,7 @@ class Cluster:
         配置引导操作脚本信息。
 
         :param bootstrap_scripts: The bootstrap_scripts of this Cluster.
-        :type: list[BootstrapScriptResp]
+        :type bootstrap_scripts: list[:class:`huaweicloudsdkmrs.v1.BootstrapScriptResp`]
         """
         self._bootstrap_scripts = bootstrap_scripts
 
@@ -1143,7 +1274,7 @@ class Cluster:
         MRS集群运行模式。 - 0：普通集群 - 1：安全集群
 
         :param safe_mode: The safe_mode of this Cluster.
-        :type: int
+        :type safe_mode: int
         """
         self._safe_mode = safe_mode
 
@@ -1165,7 +1296,7 @@ class Cluster:
         集群版本。
 
         :param cluster_version: The cluster_version of this Cluster.
-        :type: str
+        :type cluster_version: str
         """
         self._cluster_version = cluster_version
 
@@ -1187,7 +1318,7 @@ class Cluster:
         密钥文件名称。
 
         :param node_public_cert_name: The node_public_cert_name of this Cluster.
-        :type: str
+        :type node_public_cert_name: str
         """
         self._node_public_cert_name = node_public_cert_name
 
@@ -1209,7 +1340,7 @@ class Cluster:
         Master节点IP。
 
         :param master_node_ip: The master_node_ip of this Cluster.
-        :type: str
+        :type master_node_ip: str
         """
         self._master_node_ip = master_node_ip
 
@@ -1231,7 +1362,7 @@ class Cluster:
         首选私有IP。
 
         :param private_ip_first: The private_ip_first of this Cluster.
-        :type: str
+        :type private_ip_first: str
         """
         self._private_ip_first = private_ip_first
 
@@ -1253,7 +1384,7 @@ class Cluster:
         错误信息。
 
         :param error_info: The error_info of this Cluster.
-        :type: str
+        :type error_info: str
         """
         self._error_info = error_info
 
@@ -1275,7 +1406,7 @@ class Cluster:
         标签信息
 
         :param tags: The tags of this Cluster.
-        :type: str
+        :type tags: str
         """
         self._tags = tags
 
@@ -1297,7 +1428,7 @@ class Cluster:
         集群部署的Master节点数量。
 
         :param master_node_num: The master_node_num of this Cluster.
-        :type: str
+        :type master_node_num: str
         """
         self._master_node_num = master_node_num
 
@@ -1319,7 +1450,7 @@ class Cluster:
         集群部署的Core节点数量。
 
         :param core_node_num: The core_node_num of this Cluster.
-        :type: str
+        :type core_node_num: str
         """
         self._core_node_num = core_node_num
 
@@ -1341,7 +1472,7 @@ class Cluster:
         Master节点的实例规格。
 
         :param master_node_size: The master_node_size of this Cluster.
-        :type: str
+        :type master_node_size: str
         """
         self._master_node_size = master_node_size
 
@@ -1363,7 +1494,7 @@ class Cluster:
         Core节点的实例规格。
 
         :param core_node_size: The core_node_size of this Cluster.
-        :type: str
+        :type core_node_size: str
         """
         self._core_node_size = core_node_size
 
@@ -1385,7 +1516,7 @@ class Cluster:
         Master节点产品ID。
 
         :param master_node_product_id: The master_node_product_id of this Cluster.
-        :type: str
+        :type master_node_product_id: str
         """
         self._master_node_product_id = master_node_product_id
 
@@ -1407,7 +1538,7 @@ class Cluster:
         Master节点规格ID。
 
         :param master_node_spec_id: The master_node_spec_id of this Cluster.
-        :type: str
+        :type master_node_spec_id: str
         """
         self._master_node_spec_id = master_node_spec_id
 
@@ -1429,7 +1560,7 @@ class Cluster:
         Core节点产品ID。
 
         :param core_node_product_id: The core_node_product_id of this Cluster.
-        :type: str
+        :type core_node_product_id: str
         """
         self._core_node_product_id = core_node_product_id
 
@@ -1451,7 +1582,7 @@ class Cluster:
         Core节点规格ID。
 
         :param core_node_spec_id: The core_node_spec_id of this Cluster.
-        :type: str
+        :type core_node_spec_id: str
         """
         self._core_node_spec_id = core_node_spec_id
 
@@ -1473,7 +1604,7 @@ class Cluster:
         Master节点数据磁盘存储类别，目前支持SATA、SAS和SSD。
 
         :param master_data_volume_type: The master_data_volume_type of this Cluster.
-        :type: str
+        :type master_data_volume_type: str
         """
         self._master_data_volume_type = master_data_volume_type
 
@@ -1495,7 +1626,7 @@ class Cluster:
         Master节点数据磁盘存储空间。为增大数据存储容量，创建集群时可同时添加磁盘。 取值范围：100GB～32000GB，传值只需填数字，不需要带单位GB。
 
         :param master_data_volume_size: The master_data_volume_size of this Cluster.
-        :type: int
+        :type master_data_volume_size: int
         """
         self._master_data_volume_size = master_data_volume_size
 
@@ -1517,7 +1648,7 @@ class Cluster:
         Master节点数据磁盘个数。 取值只能是1
 
         :param master_data_volume_count: The master_data_volume_count of this Cluster.
-        :type: int
+        :type master_data_volume_count: int
         """
         self._master_data_volume_count = master_data_volume_count
 
@@ -1539,7 +1670,7 @@ class Cluster:
         Core节点数据磁盘存储类别，目前支持SATA、SAS和SSD。
 
         :param core_data_volume_type: The core_data_volume_type of this Cluster.
-        :type: str
+        :type core_data_volume_type: str
         """
         self._core_data_volume_type = core_data_volume_type
 
@@ -1561,7 +1692,7 @@ class Cluster:
         Core节点数据磁盘存储空间。为增大数据存储容量，创建集群时可同时添加磁盘。 取值范围：100GB～32000GB，传值只需填数字，不需要带单位GB。
 
         :param core_data_volume_size: The core_data_volume_size of this Cluster.
-        :type: int
+        :type core_data_volume_size: int
         """
         self._core_data_volume_size = core_data_volume_size
 
@@ -1583,7 +1714,7 @@ class Cluster:
         Core节点数据磁盘个数。 取值范围：1～10
 
         :param core_data_volume_count: The core_data_volume_count of this Cluster.
-        :type: int
+        :type core_data_volume_count: int
         """
         self._core_data_volume_count = core_data_volume_count
 
@@ -1605,7 +1736,7 @@ class Cluster:
         企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this Cluster.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -1627,7 +1758,7 @@ class Cluster:
         表示集群创建过程中，MRS Manager是否安装完成。 - true：安装完成 - false：安装未完成
 
         :param is_mrs_manager_finish: The is_mrs_manager_finish of this Cluster.
-        :type: bool
+        :type is_mrs_manager_finish: bool
         """
         self._is_mrs_manager_finish = is_mrs_manager_finish
 
@@ -1649,7 +1780,7 @@ class Cluster:
         集群类型。
 
         :param cluster_type: The cluster_type of this Cluster.
-        :type: int
+        :type cluster_type: int
         """
         self._cluster_type = cluster_type
 
@@ -1671,7 +1802,7 @@ class Cluster:
         集群安装失败时，是否搜集日志。 - 0：不收集 - 1：收集
 
         :param log_collection: The log_collection of this Cluster.
-        :type: int
+        :type log_collection: int
         """
         self._log_collection = log_collection
 
@@ -1693,7 +1824,7 @@ class Cluster:
         区分包周期，集群是包年还是包月。 - 0：包月 - 1：包年
 
         :param period_type: The period_type of this Cluster.
-        :type: int
+        :type period_type: int
         """
         self._period_type = period_type
 
@@ -1715,7 +1846,7 @@ class Cluster:
         集群节点的变更状态（扩容/缩容/变更规格）。当该参数取值为空时，表示集群节点没有进行变更操作。 取值范围： - scaling-out：扩容中 - scaling-in：缩容中 - scaling-error：处于running状态，且上一次扩容/缩容/升级规格失败的集群 - scaling-up：Master节点规格升级中 - scaling_up_first：备Master节点规格升级中 - scaled_up_first：备Master节点规格升级成功 - scaled-up-success：Master节点规格升级成功
 
         :param scale: The scale of this Cluster.
-        :type: str
+        :type scale: str
         """
         self._scale = scale
 
@@ -1726,7 +1857,7 @@ class Cluster:
         Master节点、Core节点和Task节点列表信息。
 
         :return: The node_groups of this Cluster.
-        :rtype: list[NodeGroupV10]
+        :rtype: list[:class:`huaweicloudsdkmrs.v1.NodeGroupV10`]
         """
         return self._node_groups
 
@@ -1737,7 +1868,7 @@ class Cluster:
         Master节点、Core节点和Task节点列表信息。
 
         :param node_groups: The node_groups of this Cluster.
-        :type: list[NodeGroupV10]
+        :type node_groups: list[:class:`huaweicloudsdkmrs.v1.NodeGroupV10`]
         """
         self._node_groups = node_groups
 
@@ -1748,7 +1879,7 @@ class Cluster:
         Task节点列表信息。
 
         :return: The task_node_groups of this Cluster.
-        :rtype: list[NodeGroupV10]
+        :rtype: list[:class:`huaweicloudsdkmrs.v1.NodeGroupV10`]
         """
         return self._task_node_groups
 
@@ -1759,7 +1890,7 @@ class Cluster:
         Task节点列表信息。
 
         :param task_node_groups: The task_node_groups of this Cluster.
-        :type: list[NodeGroupV10]
+        :type task_node_groups: list[:class:`huaweicloudsdkmrs.v1.NodeGroupV10`]
         """
         self._task_node_groups = task_node_groups
 

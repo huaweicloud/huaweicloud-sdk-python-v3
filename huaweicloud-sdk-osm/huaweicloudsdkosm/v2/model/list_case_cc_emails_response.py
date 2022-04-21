@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCaseCcEmailsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListCaseCcEmailsResponse(SdkResponse):
     }
 
     def __init__(self, cc_email_info=None, mc_email_infos=None):
-        """ListCaseCcEmailsResponse - a model defined in huaweicloud sdk"""
+        """ListCaseCcEmailsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param cc_email_info: 
+        :type cc_email_info: :class:`huaweicloudsdkosm.v2.IncidentOrderCCEmailInfoV2`
+        :param mc_email_infos: 抄送邮箱信息
+        :type mc_email_infos: list[str]
+        """
         
         super(ListCaseCcEmailsResponse, self).__init__()
 
@@ -51,7 +58,7 @@ class ListCaseCcEmailsResponse(SdkResponse):
 
 
         :return: The cc_email_info of this ListCaseCcEmailsResponse.
-        :rtype: IncidentOrderCCEmailInfoV2
+        :rtype: :class:`huaweicloudsdkosm.v2.IncidentOrderCCEmailInfoV2`
         """
         return self._cc_email_info
 
@@ -61,7 +68,7 @@ class ListCaseCcEmailsResponse(SdkResponse):
 
 
         :param cc_email_info: The cc_email_info of this ListCaseCcEmailsResponse.
-        :type: IncidentOrderCCEmailInfoV2
+        :type cc_email_info: :class:`huaweicloudsdkosm.v2.IncidentOrderCCEmailInfoV2`
         """
         self._cc_email_info = cc_email_info
 
@@ -83,7 +90,7 @@ class ListCaseCcEmailsResponse(SdkResponse):
         抄送邮箱信息
 
         :param mc_email_infos: The mc_email_infos of this ListCaseCcEmailsResponse.
-        :type: list[str]
+        :type mc_email_infos: list[str]
         """
         self._mc_email_infos = mc_email_infos
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListEnvironmentsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListEnvironmentsRequest:
     }
 
     def __init__(self, project_id=None, offset=None, limit=None):
-        """ListEnvironmentsRequest - a model defined in huaweicloud sdk"""
+        """ListEnvironmentsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: devcloud的项目ID
+        :type project_id: str
+        :param offset: 起始偏移量，表示从此偏移量开始查询， offset大于等于0
+        :type offset: int
+        :param limit: 每页显示的条目数量,最大支持200条
+        :type limit: int
+        """
         
         
 
@@ -65,7 +74,7 @@ class ListEnvironmentsRequest:
         devcloud的项目ID
 
         :param project_id: The project_id of this ListEnvironmentsRequest.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -87,7 +96,7 @@ class ListEnvironmentsRequest:
         起始偏移量，表示从此偏移量开始查询， offset大于等于0
 
         :param offset: The offset of this ListEnvironmentsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -109,7 +118,7 @@ class ListEnvironmentsRequest:
         每页显示的条目数量,最大支持200条
 
         :param limit: The limit of this ListEnvironmentsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

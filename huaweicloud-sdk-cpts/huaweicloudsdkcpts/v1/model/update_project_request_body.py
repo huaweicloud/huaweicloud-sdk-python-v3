@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateProjectRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class UpdateProjectRequestBody:
     }
 
     def __init__(self, id=None, name=None, description=None, variables_no_file=None, source=None, external_params=None):
-        """UpdateProjectRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateProjectRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param id: id
+        :type id: int
+        :param name: name
+        :type name: str
+        :param description: description
+        :type description: str
+        :param variables_no_file: variables_no_file
+        :type variables_no_file: list[str]
+        :param source: source
+        :type source: int
+        :param external_params: external_params
+        :type external_params: object
+        """
         
         
 
@@ -81,7 +96,7 @@ class UpdateProjectRequestBody:
         id
 
         :param id: The id of this UpdateProjectRequestBody.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -103,7 +118,7 @@ class UpdateProjectRequestBody:
         name
 
         :param name: The name of this UpdateProjectRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -125,7 +140,7 @@ class UpdateProjectRequestBody:
         description
 
         :param description: The description of this UpdateProjectRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -147,7 +162,7 @@ class UpdateProjectRequestBody:
         variables_no_file
 
         :param variables_no_file: The variables_no_file of this UpdateProjectRequestBody.
-        :type: list[str]
+        :type variables_no_file: list[str]
         """
         self._variables_no_file = variables_no_file
 
@@ -169,7 +184,7 @@ class UpdateProjectRequestBody:
         source
 
         :param source: The source of this UpdateProjectRequestBody.
-        :type: int
+        :type source: int
         """
         self._source = source
 
@@ -191,7 +206,7 @@ class UpdateProjectRequestBody:
         external_params
 
         :param external_params: The external_params of this UpdateProjectRequestBody.
-        :type: object
+        :type external_params: object
         """
         self._external_params = external_params
 

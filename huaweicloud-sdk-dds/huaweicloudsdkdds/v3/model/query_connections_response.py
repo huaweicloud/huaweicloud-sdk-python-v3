@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryConnectionsResponse:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class QueryConnectionsResponse:
     }
 
     def __init__(self, client_ip=None, count=None):
-        """QueryConnectionsResponse - a model defined in huaweicloud sdk"""
+        """QueryConnectionsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param client_ip: 连接到该实例或节点的客户端IP地址。
+        :type client_ip: str
+        :param count: 该IP对应的连接数。
+        :type count: int
+        """
         
         
 
@@ -61,7 +68,7 @@ class QueryConnectionsResponse:
         连接到该实例或节点的客户端IP地址。
 
         :param client_ip: The client_ip of this QueryConnectionsResponse.
-        :type: str
+        :type client_ip: str
         """
         self._client_ip = client_ip
 
@@ -83,7 +90,7 @@ class QueryConnectionsResponse:
         该IP对应的连接数。
 
         :param count: The count of this QueryConnectionsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

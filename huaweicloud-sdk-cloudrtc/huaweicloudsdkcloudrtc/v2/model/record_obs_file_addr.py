@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RecordObsFileAddr:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class RecordObsFileAddr:
     }
 
     def __init__(self, location=None, project_id=None, bucket=None, object=None):
-        """RecordObsFileAddr - a model defined in huaweicloud sdk"""
+        """RecordObsFileAddr
+
+        The model defined in huaweicloud sdk
+
+        :param location: OBS Bucket所在RegionID
+        :type location: str
+        :param project_id: OBS Bucket所在Region的项目ID
+        :type project_id: str
+        :param bucket: OBS的bucket名称
+        :type bucket: str
+        :param object: OBS对象路径，遵守OBS Object定义。如果为空则保存到根目录
+        :type object: str
+        """
         
         
 
@@ -70,7 +81,7 @@ class RecordObsFileAddr:
         OBS Bucket所在RegionID
 
         :param location: The location of this RecordObsFileAddr.
-        :type: str
+        :type location: str
         """
         self._location = location
 
@@ -92,7 +103,7 @@ class RecordObsFileAddr:
         OBS Bucket所在Region的项目ID
 
         :param project_id: The project_id of this RecordObsFileAddr.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -114,7 +125,7 @@ class RecordObsFileAddr:
         OBS的bucket名称
 
         :param bucket: The bucket of this RecordObsFileAddr.
-        :type: str
+        :type bucket: str
         """
         self._bucket = bucket
 
@@ -136,7 +147,7 @@ class RecordObsFileAddr:
         OBS对象路径，遵守OBS Object定义。如果为空则保存到根目录
 
         :param object: The object of this RecordObsFileAddr.
-        :type: str
+        :type object: str
         """
         self._object = object
 

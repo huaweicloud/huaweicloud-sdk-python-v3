@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteValueListRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteValueListRequest:
     }
 
     def __init__(self, enterprise_project_id=None, valuelistid=None):
-        """DeleteValueListRequest - a model defined in huaweicloud sdk"""
+        """DeleteValueListRequest
+
+        The model defined in huaweicloud sdk
+
+        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        :type enterprise_project_id: str
+        :param valuelistid: 引用表id，从查询引用表列表接口获取https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product&#x3D;WAF&amp;api&#x3D;ListValueList
+        :type valuelistid: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class DeleteValueListRequest:
         您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this DeleteValueListRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -84,7 +91,7 @@ class DeleteValueListRequest:
         引用表id，从查询引用表列表接口获取https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=WAF&api=ListValueList
 
         :param valuelistid: The valuelistid of this DeleteValueListRequest.
-        :type: str
+        :type valuelistid: str
         """
         self._valuelistid = valuelistid
 

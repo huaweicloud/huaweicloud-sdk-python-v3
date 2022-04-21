@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DecryptDatakeyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class DecryptDatakeyResponse(SdkResponse):
     }
 
     def __init__(self, data_key=None, datakey_length=None, datakey_dgst=None):
-        """DecryptDatakeyResponse - a model defined in huaweicloud sdk"""
+        """DecryptDatakeyResponse
+
+        The model defined in huaweicloud sdk
+
+        :param data_key: DEK明文的16进制字符串。
+        :type data_key: str
+        :param datakey_length: DEK明文字节长度。
+        :type datakey_length: str
+        :param datakey_dgst: DEK明文的SHA256值对应的16进制字符串。
+        :type datakey_dgst: str
+        """
         
         super(DecryptDatakeyResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class DecryptDatakeyResponse(SdkResponse):
         DEK明文的16进制字符串。
 
         :param data_key: The data_key of this DecryptDatakeyResponse.
-        :type: str
+        :type data_key: str
         """
         self._data_key = data_key
 
@@ -90,7 +99,7 @@ class DecryptDatakeyResponse(SdkResponse):
         DEK明文字节长度。
 
         :param datakey_length: The datakey_length of this DecryptDatakeyResponse.
-        :type: str
+        :type datakey_length: str
         """
         self._datakey_length = datakey_length
 
@@ -112,7 +121,7 @@ class DecryptDatakeyResponse(SdkResponse):
         DEK明文的SHA256值对应的16进制字符串。
 
         :param datakey_dgst: The datakey_dgst of this DecryptDatakeyResponse.
-        :type: str
+        :type datakey_dgst: str
         """
         self._datakey_dgst = datakey_dgst
 

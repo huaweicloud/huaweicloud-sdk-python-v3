@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowContentResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowContentResponse(SdkResponse):
     }
 
     def __init__(self, path=None, sha=None, encoding=None, content=None):
-        """ShowContentResponse - a model defined in huaweicloud sdk"""
+        """ShowContentResponse
+
+        The model defined in huaweicloud sdk
+
+        :param path: 文件路径。
+        :type path: str
+        :param sha: commit 哈希。
+        :type sha: str
+        :param encoding: 编码方式：base64或者text/plain。
+        :type encoding: str
+        :param content: 文件内容。
+        :type content: str
+        """
         
         super(ShowContentResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class ShowContentResponse(SdkResponse):
         文件路径。
 
         :param path: The path of this ShowContentResponse.
-        :type: str
+        :type path: str
         """
         self._path = path
 
@@ -95,7 +106,7 @@ class ShowContentResponse(SdkResponse):
         commit 哈希。
 
         :param sha: The sha of this ShowContentResponse.
-        :type: str
+        :type sha: str
         """
         self._sha = sha
 
@@ -117,7 +128,7 @@ class ShowContentResponse(SdkResponse):
         编码方式：base64或者text/plain。
 
         :param encoding: The encoding of this ShowContentResponse.
-        :type: str
+        :type encoding: str
         """
         self._encoding = encoding
 
@@ -139,7 +150,7 @@ class ShowContentResponse(SdkResponse):
         文件内容。
 
         :param content: The content of this ShowContentResponse.
-        :type: str
+        :type content: str
         """
         self._content = content
 

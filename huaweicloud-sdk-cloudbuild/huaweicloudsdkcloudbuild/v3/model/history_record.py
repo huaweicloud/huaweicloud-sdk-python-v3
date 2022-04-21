@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class HistoryRecord:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class HistoryRecord:
     }
 
     def __init__(self, record_id=None, job_id=None, build_number=None, start_time=None, end_time=None, result=None):
-        """HistoryRecord - a model defined in huaweicloud sdk"""
+        """HistoryRecord
+
+        The model defined in huaweicloud sdk
+
+        :param record_id: 构建记录id--唯一key
+        :type record_id: str
+        :param job_id: 任务id
+        :type job_id: str
+        :param build_number: 构建编号
+        :type build_number: int
+        :param start_time: 构建开始时间
+        :type start_time: str
+        :param end_time: 构建结束时间
+        :type end_time: str
+        :param result: 构建结果
+        :type result: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class HistoryRecord:
         构建记录id--唯一key
 
         :param record_id: The record_id of this HistoryRecord.
-        :type: str
+        :type record_id: str
         """
         self._record_id = record_id
 
@@ -105,7 +120,7 @@ class HistoryRecord:
         任务id
 
         :param job_id: The job_id of this HistoryRecord.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -127,7 +142,7 @@ class HistoryRecord:
         构建编号
 
         :param build_number: The build_number of this HistoryRecord.
-        :type: int
+        :type build_number: int
         """
         self._build_number = build_number
 
@@ -149,7 +164,7 @@ class HistoryRecord:
         构建开始时间
 
         :param start_time: The start_time of this HistoryRecord.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -171,7 +186,7 @@ class HistoryRecord:
         构建结束时间
 
         :param end_time: The end_time of this HistoryRecord.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -193,7 +208,7 @@ class HistoryRecord:
         构建结果
 
         :param result: The result of this HistoryRecord.
-        :type: str
+        :type result: str
         """
         self._result = result
 

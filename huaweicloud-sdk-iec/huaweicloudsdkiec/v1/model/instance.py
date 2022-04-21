@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Instance:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -106,7 +105,89 @@ class Instance:
     }
 
     def __init__(self, id=None, name=None, status=None, updated=None, host_id=None, addresses=None, created=None, tags=None, locked=None, description=None, tenant_id=None, sys_tags=None, flavor=None, metadata=None, security_groups=None, progress=None, os_ext_st_spower_state=None, os_ext_st_svm_state=None, os_ext_st_stask_state=None, os_dc_fdisk_config=None, os_ext_a_zavailability_zone=None, os_srv_us_glaunched_at=None, os_srv_us_gterminated_at=None, os_ext_srv_att_rroot_device_name=None, os_ext_srv_att_rramdisk_id=None, os_ext_srv_att_rkernel_id=None, os_ext_srv_att_rlaunch_index=None, os_ext_srv_att_rreservation_id=None, os_ext_srv_att_rhostname=None, os_ext_srv_att_ruser_data=None, os_ext_srv_att_rhost=None, os_ext_srv_att_rhypervisor_hostname=None, os_extended_volumesvolumes_attached=None, geolocation=None, edgecloud_id=None, edgecloud_name=None, domain_id=None, key_name=None, os_ext_srv_att_rinstance_name=None):
-        """Instance - a model defined in huaweicloud sdk"""
+        """Instance
+
+        The model defined in huaweicloud sdk
+
+        :param id: 边缘实例ID。
+        :type id: str
+        :param name: 边缘实例名称。
+        :type name: str
+        :param status: 边缘实例状态。 取值范围： ACTIVE、BUILD、DELETED、ERROR、HARD_REBOOT、MIGRATING、PAUSED、REBOOT、REBUILD、RESIZE、REVERT_RESIZE、SHUTOFF、SHELVED、SHELVED_OFFLOADED、SOFT_DELETED、SUSPENDED、VERIFY_RESIZE
+        :type status: str
+        :param updated: 边缘实例修改时间。 UTC时间，格式：yyyy-mm-ddTss:ss:ssZ，例如：2021-04-25T03:21:39Z
+        :type updated: str
+        :param host_id: 边缘实例所在主机的主机ID。
+        :type host_id: str
+        :param addresses: 边缘实例对应的网络地址信息，详情请参见表addresses字段数据结构说明。
+        :type addresses: dict(str, list[InstanceAddress])
+        :param created: 边缘实例创建时间。 时间格式：yyyy-mm-ddTss:ss:ssZ，例如：2021-04-25T02:46:23Z
+        :type created: str
+        :param tags: 边缘实例标签。 主要用来存储边缘业务ID。
+        :type tags: list[str]
+        :param locked: 边缘实例是否为锁定状态。  - true：锁定 - false：未锁定
+        :type locked: bool
+        :param description: 边缘实例的描述信息。
+        :type description: str
+        :param tenant_id: 边缘实例所属租户ID，即项目ID，和project_id表示相同的概念，格式为UUID。
+        :type tenant_id: str
+        :param sys_tags: 边缘实例系统标签。
+        :type sys_tags: list[:class:`huaweicloudsdkiec.v1.SysTags`]
+        :param flavor: 
+        :type flavor: :class:`huaweicloudsdkiec.v1.FlavorInstance`
+        :param metadata: 边缘实例元数据。
+        :type metadata: dict(str, str)
+        :param security_groups: 边缘实例所属安全组列表。
+        :type security_groups: list[:class:`huaweicloudsdkiec.v1.InstanceSecurityGroup`]
+        :param progress: 边缘实例进度。
+        :type progress: int
+        :param os_ext_st_spower_state: 扩展属性，边缘实例电源状态。
+        :type os_ext_st_spower_state: int
+        :param os_ext_st_svm_state: 扩展属性，边缘实例当前状态。
+        :type os_ext_st_svm_state: str
+        :param os_ext_st_stask_state: 边缘实例任务状态。
+        :type os_ext_st_stask_state: str
+        :param os_dc_fdisk_config: 扩展属性， diskConfig的类型。  - MANUAL，镜像空间不会扩展。 - AUTO，系统盘镜像空间会自动扩展为与flavor大小一致。
+        :type os_dc_fdisk_config: str
+        :param os_ext_a_zavailability_zone: 扩展属性，边缘实例所在可用区名称。
+        :type os_ext_a_zavailability_zone: str
+        :param os_srv_us_glaunched_at: 边缘实例启动时间。 时间格式例如：2019-05-22T03:23:59.000000
+        :type os_srv_us_glaunched_at: str
+        :param os_srv_us_gterminated_at: 边缘实例删除时间。 时间格式例如：2019-05-22T03:23:59.000000
+        :type os_srv_us_gterminated_at: str
+        :param os_ext_srv_att_rroot_device_name: 边缘实例系统盘的设备名称。
+        :type os_ext_srv_att_rroot_device_name: str
+        :param os_ext_srv_att_rramdisk_id: 若使用AMI格式镜像，则表示ramdisk image的UUID；否则，留空。
+        :type os_ext_srv_att_rramdisk_id: str
+        :param os_ext_srv_att_rkernel_id: 若使用AMI格式的镜像，则表示kernel image的UUID；否则，留空。
+        :type os_ext_srv_att_rkernel_id: str
+        :param os_ext_srv_att_rlaunch_index: 批量创建场景，边缘实例的启动顺序。
+        :type os_ext_srv_att_rlaunch_index: int
+        :param os_ext_srv_att_rreservation_id: 批量创建场景，边缘实例的预留ID。
+        :type os_ext_srv_att_rreservation_id: str
+        :param os_ext_srv_att_rhostname: 边缘实例的主机名。
+        :type os_ext_srv_att_rhostname: str
+        :param os_ext_srv_att_ruser_data: 创建边缘实例时指定的user_data。
+        :type os_ext_srv_att_ruser_data: str
+        :param os_ext_srv_att_rhost: 边缘实例所在主机的主机名称。
+        :type os_ext_srv_att_rhost: str
+        :param os_ext_srv_att_rhypervisor_hostname: 扩展属性，边缘实例所在虚拟化主机名。
+        :type os_ext_srv_att_rhypervisor_hostname: str
+        :param os_extended_volumesvolumes_attached: 挂载到边缘实例上的磁盘。
+        :type os_extended_volumesvolumes_attached: list[:class:`huaweicloudsdkiec.v1.VolumesAttached`]
+        :param geolocation: 
+        :type geolocation: :class:`huaweicloudsdkiec.v1.GeoLocation`
+        :param edgecloud_id: 边缘实例所属边缘业务的ID。
+        :type edgecloud_id: str
+        :param edgecloud_name: 边缘实例所属边缘业务的名称
+        :type edgecloud_name: str
+        :param domain_id: 帐号ID。
+        :type domain_id: str
+        :param key_name: 使用的密钥对名称。
+        :type key_name: str
+        :param os_ext_srv_att_rinstance_name: 扩展属性，边缘实例别名。
+        :type os_ext_srv_att_rinstance_name: str
+        """
         
         
 
@@ -248,7 +329,7 @@ class Instance:
         边缘实例ID。
 
         :param id: The id of this Instance.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -270,7 +351,7 @@ class Instance:
         边缘实例名称。
 
         :param name: The name of this Instance.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -292,7 +373,7 @@ class Instance:
         边缘实例状态。 取值范围： ACTIVE、BUILD、DELETED、ERROR、HARD_REBOOT、MIGRATING、PAUSED、REBOOT、REBUILD、RESIZE、REVERT_RESIZE、SHUTOFF、SHELVED、SHELVED_OFFLOADED、SOFT_DELETED、SUSPENDED、VERIFY_RESIZE
 
         :param status: The status of this Instance.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -314,7 +395,7 @@ class Instance:
         边缘实例修改时间。 UTC时间，格式：yyyy-mm-ddTss:ss:ssZ，例如：2021-04-25T03:21:39Z
 
         :param updated: The updated of this Instance.
-        :type: str
+        :type updated: str
         """
         self._updated = updated
 
@@ -336,7 +417,7 @@ class Instance:
         边缘实例所在主机的主机ID。
 
         :param host_id: The host_id of this Instance.
-        :type: str
+        :type host_id: str
         """
         self._host_id = host_id
 
@@ -358,7 +439,7 @@ class Instance:
         边缘实例对应的网络地址信息，详情请参见表addresses字段数据结构说明。
 
         :param addresses: The addresses of this Instance.
-        :type: dict(str, list[InstanceAddress])
+        :type addresses: dict(str, list[InstanceAddress])
         """
         self._addresses = addresses
 
@@ -380,7 +461,7 @@ class Instance:
         边缘实例创建时间。 时间格式：yyyy-mm-ddTss:ss:ssZ，例如：2021-04-25T02:46:23Z
 
         :param created: The created of this Instance.
-        :type: str
+        :type created: str
         """
         self._created = created
 
@@ -402,7 +483,7 @@ class Instance:
         边缘实例标签。 主要用来存储边缘业务ID。
 
         :param tags: The tags of this Instance.
-        :type: list[str]
+        :type tags: list[str]
         """
         self._tags = tags
 
@@ -424,7 +505,7 @@ class Instance:
         边缘实例是否为锁定状态。  - true：锁定 - false：未锁定
 
         :param locked: The locked of this Instance.
-        :type: bool
+        :type locked: bool
         """
         self._locked = locked
 
@@ -446,7 +527,7 @@ class Instance:
         边缘实例的描述信息。
 
         :param description: The description of this Instance.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -468,7 +549,7 @@ class Instance:
         边缘实例所属租户ID，即项目ID，和project_id表示相同的概念，格式为UUID。
 
         :param tenant_id: The tenant_id of this Instance.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 
@@ -479,7 +560,7 @@ class Instance:
         边缘实例系统标签。
 
         :return: The sys_tags of this Instance.
-        :rtype: list[SysTags]
+        :rtype: list[:class:`huaweicloudsdkiec.v1.SysTags`]
         """
         return self._sys_tags
 
@@ -490,7 +571,7 @@ class Instance:
         边缘实例系统标签。
 
         :param sys_tags: The sys_tags of this Instance.
-        :type: list[SysTags]
+        :type sys_tags: list[:class:`huaweicloudsdkiec.v1.SysTags`]
         """
         self._sys_tags = sys_tags
 
@@ -500,7 +581,7 @@ class Instance:
 
 
         :return: The flavor of this Instance.
-        :rtype: FlavorInstance
+        :rtype: :class:`huaweicloudsdkiec.v1.FlavorInstance`
         """
         return self._flavor
 
@@ -510,7 +591,7 @@ class Instance:
 
 
         :param flavor: The flavor of this Instance.
-        :type: FlavorInstance
+        :type flavor: :class:`huaweicloudsdkiec.v1.FlavorInstance`
         """
         self._flavor = flavor
 
@@ -532,7 +613,7 @@ class Instance:
         边缘实例元数据。
 
         :param metadata: The metadata of this Instance.
-        :type: dict(str, str)
+        :type metadata: dict(str, str)
         """
         self._metadata = metadata
 
@@ -543,7 +624,7 @@ class Instance:
         边缘实例所属安全组列表。
 
         :return: The security_groups of this Instance.
-        :rtype: list[InstanceSecurityGroup]
+        :rtype: list[:class:`huaweicloudsdkiec.v1.InstanceSecurityGroup`]
         """
         return self._security_groups
 
@@ -554,7 +635,7 @@ class Instance:
         边缘实例所属安全组列表。
 
         :param security_groups: The security_groups of this Instance.
-        :type: list[InstanceSecurityGroup]
+        :type security_groups: list[:class:`huaweicloudsdkiec.v1.InstanceSecurityGroup`]
         """
         self._security_groups = security_groups
 
@@ -576,7 +657,7 @@ class Instance:
         边缘实例进度。
 
         :param progress: The progress of this Instance.
-        :type: int
+        :type progress: int
         """
         self._progress = progress
 
@@ -598,7 +679,7 @@ class Instance:
         扩展属性，边缘实例电源状态。
 
         :param os_ext_st_spower_state: The os_ext_st_spower_state of this Instance.
-        :type: int
+        :type os_ext_st_spower_state: int
         """
         self._os_ext_st_spower_state = os_ext_st_spower_state
 
@@ -620,7 +701,7 @@ class Instance:
         扩展属性，边缘实例当前状态。
 
         :param os_ext_st_svm_state: The os_ext_st_svm_state of this Instance.
-        :type: str
+        :type os_ext_st_svm_state: str
         """
         self._os_ext_st_svm_state = os_ext_st_svm_state
 
@@ -642,7 +723,7 @@ class Instance:
         边缘实例任务状态。
 
         :param os_ext_st_stask_state: The os_ext_st_stask_state of this Instance.
-        :type: str
+        :type os_ext_st_stask_state: str
         """
         self._os_ext_st_stask_state = os_ext_st_stask_state
 
@@ -664,7 +745,7 @@ class Instance:
         扩展属性， diskConfig的类型。  - MANUAL，镜像空间不会扩展。 - AUTO，系统盘镜像空间会自动扩展为与flavor大小一致。
 
         :param os_dc_fdisk_config: The os_dc_fdisk_config of this Instance.
-        :type: str
+        :type os_dc_fdisk_config: str
         """
         self._os_dc_fdisk_config = os_dc_fdisk_config
 
@@ -686,7 +767,7 @@ class Instance:
         扩展属性，边缘实例所在可用区名称。
 
         :param os_ext_a_zavailability_zone: The os_ext_a_zavailability_zone of this Instance.
-        :type: str
+        :type os_ext_a_zavailability_zone: str
         """
         self._os_ext_a_zavailability_zone = os_ext_a_zavailability_zone
 
@@ -708,7 +789,7 @@ class Instance:
         边缘实例启动时间。 时间格式例如：2019-05-22T03:23:59.000000
 
         :param os_srv_us_glaunched_at: The os_srv_us_glaunched_at of this Instance.
-        :type: str
+        :type os_srv_us_glaunched_at: str
         """
         self._os_srv_us_glaunched_at = os_srv_us_glaunched_at
 
@@ -730,7 +811,7 @@ class Instance:
         边缘实例删除时间。 时间格式例如：2019-05-22T03:23:59.000000
 
         :param os_srv_us_gterminated_at: The os_srv_us_gterminated_at of this Instance.
-        :type: str
+        :type os_srv_us_gterminated_at: str
         """
         self._os_srv_us_gterminated_at = os_srv_us_gterminated_at
 
@@ -752,7 +833,7 @@ class Instance:
         边缘实例系统盘的设备名称。
 
         :param os_ext_srv_att_rroot_device_name: The os_ext_srv_att_rroot_device_name of this Instance.
-        :type: str
+        :type os_ext_srv_att_rroot_device_name: str
         """
         self._os_ext_srv_att_rroot_device_name = os_ext_srv_att_rroot_device_name
 
@@ -774,7 +855,7 @@ class Instance:
         若使用AMI格式镜像，则表示ramdisk image的UUID；否则，留空。
 
         :param os_ext_srv_att_rramdisk_id: The os_ext_srv_att_rramdisk_id of this Instance.
-        :type: str
+        :type os_ext_srv_att_rramdisk_id: str
         """
         self._os_ext_srv_att_rramdisk_id = os_ext_srv_att_rramdisk_id
 
@@ -796,7 +877,7 @@ class Instance:
         若使用AMI格式的镜像，则表示kernel image的UUID；否则，留空。
 
         :param os_ext_srv_att_rkernel_id: The os_ext_srv_att_rkernel_id of this Instance.
-        :type: str
+        :type os_ext_srv_att_rkernel_id: str
         """
         self._os_ext_srv_att_rkernel_id = os_ext_srv_att_rkernel_id
 
@@ -818,7 +899,7 @@ class Instance:
         批量创建场景，边缘实例的启动顺序。
 
         :param os_ext_srv_att_rlaunch_index: The os_ext_srv_att_rlaunch_index of this Instance.
-        :type: int
+        :type os_ext_srv_att_rlaunch_index: int
         """
         self._os_ext_srv_att_rlaunch_index = os_ext_srv_att_rlaunch_index
 
@@ -840,7 +921,7 @@ class Instance:
         批量创建场景，边缘实例的预留ID。
 
         :param os_ext_srv_att_rreservation_id: The os_ext_srv_att_rreservation_id of this Instance.
-        :type: str
+        :type os_ext_srv_att_rreservation_id: str
         """
         self._os_ext_srv_att_rreservation_id = os_ext_srv_att_rreservation_id
 
@@ -862,7 +943,7 @@ class Instance:
         边缘实例的主机名。
 
         :param os_ext_srv_att_rhostname: The os_ext_srv_att_rhostname of this Instance.
-        :type: str
+        :type os_ext_srv_att_rhostname: str
         """
         self._os_ext_srv_att_rhostname = os_ext_srv_att_rhostname
 
@@ -884,7 +965,7 @@ class Instance:
         创建边缘实例时指定的user_data。
 
         :param os_ext_srv_att_ruser_data: The os_ext_srv_att_ruser_data of this Instance.
-        :type: str
+        :type os_ext_srv_att_ruser_data: str
         """
         self._os_ext_srv_att_ruser_data = os_ext_srv_att_ruser_data
 
@@ -906,7 +987,7 @@ class Instance:
         边缘实例所在主机的主机名称。
 
         :param os_ext_srv_att_rhost: The os_ext_srv_att_rhost of this Instance.
-        :type: str
+        :type os_ext_srv_att_rhost: str
         """
         self._os_ext_srv_att_rhost = os_ext_srv_att_rhost
 
@@ -928,7 +1009,7 @@ class Instance:
         扩展属性，边缘实例所在虚拟化主机名。
 
         :param os_ext_srv_att_rhypervisor_hostname: The os_ext_srv_att_rhypervisor_hostname of this Instance.
-        :type: str
+        :type os_ext_srv_att_rhypervisor_hostname: str
         """
         self._os_ext_srv_att_rhypervisor_hostname = os_ext_srv_att_rhypervisor_hostname
 
@@ -939,7 +1020,7 @@ class Instance:
         挂载到边缘实例上的磁盘。
 
         :return: The os_extended_volumesvolumes_attached of this Instance.
-        :rtype: list[VolumesAttached]
+        :rtype: list[:class:`huaweicloudsdkiec.v1.VolumesAttached`]
         """
         return self._os_extended_volumesvolumes_attached
 
@@ -950,7 +1031,7 @@ class Instance:
         挂载到边缘实例上的磁盘。
 
         :param os_extended_volumesvolumes_attached: The os_extended_volumesvolumes_attached of this Instance.
-        :type: list[VolumesAttached]
+        :type os_extended_volumesvolumes_attached: list[:class:`huaweicloudsdkiec.v1.VolumesAttached`]
         """
         self._os_extended_volumesvolumes_attached = os_extended_volumesvolumes_attached
 
@@ -960,7 +1041,7 @@ class Instance:
 
 
         :return: The geolocation of this Instance.
-        :rtype: GeoLocation
+        :rtype: :class:`huaweicloudsdkiec.v1.GeoLocation`
         """
         return self._geolocation
 
@@ -970,7 +1051,7 @@ class Instance:
 
 
         :param geolocation: The geolocation of this Instance.
-        :type: GeoLocation
+        :type geolocation: :class:`huaweicloudsdkiec.v1.GeoLocation`
         """
         self._geolocation = geolocation
 
@@ -992,7 +1073,7 @@ class Instance:
         边缘实例所属边缘业务的ID。
 
         :param edgecloud_id: The edgecloud_id of this Instance.
-        :type: str
+        :type edgecloud_id: str
         """
         self._edgecloud_id = edgecloud_id
 
@@ -1014,7 +1095,7 @@ class Instance:
         边缘实例所属边缘业务的名称
 
         :param edgecloud_name: The edgecloud_name of this Instance.
-        :type: str
+        :type edgecloud_name: str
         """
         self._edgecloud_name = edgecloud_name
 
@@ -1036,7 +1117,7 @@ class Instance:
         帐号ID。
 
         :param domain_id: The domain_id of this Instance.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -1058,7 +1139,7 @@ class Instance:
         使用的密钥对名称。
 
         :param key_name: The key_name of this Instance.
-        :type: str
+        :type key_name: str
         """
         self._key_name = key_name
 
@@ -1080,7 +1161,7 @@ class Instance:
         扩展属性，边缘实例别名。
 
         :param os_ext_srv_att_rinstance_name: The os_ext_srv_att_rinstance_name of this Instance.
-        :type: str
+        :type os_ext_srv_att_rinstance_name: str
         """
         self._os_ext_srv_att_rinstance_name = os_ext_srv_att_rinstance_name
 

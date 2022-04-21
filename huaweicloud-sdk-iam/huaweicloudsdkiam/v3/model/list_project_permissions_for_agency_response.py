@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListProjectPermissionsForAgencyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListProjectPermissionsForAgencyResponse(SdkResponse):
     }
 
     def __init__(self, roles=None):
-        """ListProjectPermissionsForAgencyResponse - a model defined in huaweicloud sdk"""
+        """ListProjectPermissionsForAgencyResponse
+
+        The model defined in huaweicloud sdk
+
+        :param roles: 权限信息列表。
+        :type roles: list[:class:`huaweicloudsdkiam.v3.RoleResult`]
+        """
         
         super(ListProjectPermissionsForAgencyResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListProjectPermissionsForAgencyResponse(SdkResponse):
         权限信息列表。
 
         :return: The roles of this ListProjectPermissionsForAgencyResponse.
-        :rtype: list[RoleResult]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.RoleResult`]
         """
         return self._roles
 
@@ -58,7 +63,7 @@ class ListProjectPermissionsForAgencyResponse(SdkResponse):
         权限信息列表。
 
         :param roles: The roles of this ListProjectPermissionsForAgencyResponse.
-        :type: list[RoleResult]
+        :type roles: list[:class:`huaweicloudsdkiam.v3.RoleResult`]
         """
         self._roles = roles
 

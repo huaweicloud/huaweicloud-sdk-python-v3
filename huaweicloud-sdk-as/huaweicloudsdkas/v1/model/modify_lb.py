@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ModifyLb:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ModifyLb:
     }
 
     def __init__(self, lbaas_listener=None, listener=None, failed_reason=None, failed_details=None):
-        """ModifyLb - a model defined in huaweicloud sdk"""
+        """ModifyLb
+
+        The model defined in huaweicloud sdk
+
+        :param lbaas_listener: 
+        :type lbaas_listener: :class:`huaweicloudsdkas.v1.LbaasListener`
+        :param listener: 经典型负载均衡器信息
+        :type listener: str
+        :param failed_reason: 负载均衡器迁移失败原因。
+        :type failed_reason: str
+        :param failed_details: 负载均衡器迁移失败详情。
+        :type failed_details: str
+        """
         
         
 
@@ -61,7 +72,7 @@ class ModifyLb:
 
 
         :return: The lbaas_listener of this ModifyLb.
-        :rtype: LbaasListener
+        :rtype: :class:`huaweicloudsdkas.v1.LbaasListener`
         """
         return self._lbaas_listener
 
@@ -71,7 +82,7 @@ class ModifyLb:
 
 
         :param lbaas_listener: The lbaas_listener of this ModifyLb.
-        :type: LbaasListener
+        :type lbaas_listener: :class:`huaweicloudsdkas.v1.LbaasListener`
         """
         self._lbaas_listener = lbaas_listener
 
@@ -93,7 +104,7 @@ class ModifyLb:
         经典型负载均衡器信息
 
         :param listener: The listener of this ModifyLb.
-        :type: str
+        :type listener: str
         """
         self._listener = listener
 
@@ -115,7 +126,7 @@ class ModifyLb:
         负载均衡器迁移失败原因。
 
         :param failed_reason: The failed_reason of this ModifyLb.
-        :type: str
+        :type failed_reason: str
         """
         self._failed_reason = failed_reason
 
@@ -137,7 +148,7 @@ class ModifyLb:
         负载均衡器迁移失败详情。
 
         :param failed_details: The failed_details of this ModifyLb.
-        :type: str
+        :type failed_details: str
         """
         self._failed_details = failed_details
 

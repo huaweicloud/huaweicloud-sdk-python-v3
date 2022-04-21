@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AttributeChange:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class AttributeChange:
     }
 
     def __init__(self, new_value=None, old_value=None, attribute_type=None):
-        """AttributeChange - a model defined in huaweicloud sdk"""
+        """AttributeChange
+
+        The model defined in huaweicloud sdk
+
+        :param new_value: 变更后的取值
+        :type new_value: str
+        :param old_value: 变更前的取值
+        :type old_value: str
+        :param attribute_type: 发生变更的测试计划属性
+        :type attribute_type: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class AttributeChange:
         变更后的取值
 
         :param new_value: The new_value of this AttributeChange.
-        :type: str
+        :type new_value: str
         """
         self._new_value = new_value
 
@@ -90,7 +99,7 @@ class AttributeChange:
         变更前的取值
 
         :param old_value: The old_value of this AttributeChange.
-        :type: str
+        :type old_value: str
         """
         self._old_value = old_value
 
@@ -112,7 +121,7 @@ class AttributeChange:
         发生变更的测试计划属性
 
         :param attribute_type: The attribute_type of this AttributeChange.
-        :type: str
+        :type attribute_type: str
         """
         self._attribute_type = attribute_type
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class HandleNotificationInvitee:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class HandleNotificationInvitee:
     }
 
     def __init__(self, invitee_bcs_id=None, invitee_bcs_name=None, invitee_project_id=None, invitee_user_id=None):
-        """HandleNotificationInvitee - a model defined in huaweicloud sdk"""
+        """HandleNotificationInvitee
+
+        The model defined in huaweicloud sdk
+
+        :param invitee_bcs_id: 被邀请方服务实例id
+        :type invitee_bcs_id: str
+        :param invitee_bcs_name: 被邀请方服务实例名称，同意联盟邀请时必填
+        :type invitee_bcs_name: str
+        :param invitee_project_id: 被邀请方project id
+        :type invitee_project_id: str
+        :param invitee_user_id: 被邀请方租户id
+        :type invitee_user_id: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class HandleNotificationInvitee:
         被邀请方服务实例id
 
         :param invitee_bcs_id: The invitee_bcs_id of this HandleNotificationInvitee.
-        :type: str
+        :type invitee_bcs_id: str
         """
         self._invitee_bcs_id = invitee_bcs_id
 
@@ -91,7 +102,7 @@ class HandleNotificationInvitee:
         被邀请方服务实例名称，同意联盟邀请时必填
 
         :param invitee_bcs_name: The invitee_bcs_name of this HandleNotificationInvitee.
-        :type: str
+        :type invitee_bcs_name: str
         """
         self._invitee_bcs_name = invitee_bcs_name
 
@@ -113,7 +124,7 @@ class HandleNotificationInvitee:
         被邀请方project id
 
         :param invitee_project_id: The invitee_project_id of this HandleNotificationInvitee.
-        :type: str
+        :type invitee_project_id: str
         """
         self._invitee_project_id = invitee_project_id
 
@@ -135,7 +146,7 @@ class HandleNotificationInvitee:
         被邀请方租户id
 
         :param invitee_user_id: The invitee_user_id of this HandleNotificationInvitee.
-        :type: str
+        :type invitee_user_id: str
         """
         self._invitee_user_id = invitee_user_id
 

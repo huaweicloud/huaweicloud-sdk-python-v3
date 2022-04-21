@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NovaListAvailabilityZonesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class NovaListAvailabilityZonesRequest:
     }
 
     def __init__(self):
-        """NovaListAvailabilityZonesRequest - a model defined in huaweicloud sdk"""
+        """NovaListAvailabilityZonesRequest
+
+        The model defined in huaweicloud sdk
+
+        """
         
         
         self.discriminator = None

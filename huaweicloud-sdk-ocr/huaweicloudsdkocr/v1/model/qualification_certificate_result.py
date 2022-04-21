@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QualificationCertificateResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -66,7 +65,49 @@ class QualificationCertificateResult:
     }
 
     def __init__(self, id_number=None, assessment_date=None, certificate_number=None, file_number=None, union_card_number=None, continuing_education_info=None, sex=None, phone_number=None, registration_date=None, work_unit=None, integrity_assessment_info=None, nationality=None, name=None, address=None, driving_class=None, issuing_authority=None, birth_date=None, qualification_category_list=None, confidence=None):
-        """QualificationCertificateResult - a model defined in huaweicloud sdk"""
+        """QualificationCertificateResult
+
+        The model defined in huaweicloud sdk
+
+        :param id_number: 身份证号（非必有，依赖对应从业资格证板式）。 
+        :type id_number: str
+        :param assessment_date: 考核时间（非必有，依赖对应从业资格证板式）。 
+        :type assessment_date: str
+        :param certificate_number: 从业资格证号。 
+        :type certificate_number: str
+        :param file_number: 档案号（非必有，依赖对应从业资格证板式）。 
+        :type file_number: str
+        :param union_card_number: 福路通号（非必有，依赖对应从业资格证板式）。 
+        :type union_card_number: str
+        :param continuing_education_info: 继续教育信息（非必有，依赖对应从业资格证板式）。 
+        :type continuing_education_info: str
+        :param sex: 性别（非必有，依赖对应从业资格证板式）。 
+        :type sex: str
+        :param phone_number: 联系电话（非必有，依赖对应从业资格证板式）。 
+        :type phone_number: str
+        :param registration_date: 登记时间（非必有，依赖对应从业资格证板式）。 
+        :type registration_date: str
+        :param work_unit: 单位（非必有，依赖对应从业资格证板式）。 
+        :type work_unit: str
+        :param integrity_assessment_info: 诚信考核信息（非必有，依赖对应从业资格证板式）。 
+        :type integrity_assessment_info: str
+        :param nationality: 国籍（非必有，依赖对应从业资格证板式）。 
+        :type nationality: str
+        :param name: 姓名。 
+        :type name: str
+        :param address: 住址。 
+        :type address: str
+        :param driving_class: 准驾车型（非必有，依赖对应从业资格证板式）。 
+        :type driving_class: str
+        :param issuing_authority: 发证机关（非必有，依赖对应从业资格证板式）。 
+        :type issuing_authority: str
+        :param birth_date: 出生日期（非必有，依赖对应从业资格证板式）。 
+        :type birth_date: str
+        :param qualification_category_list: 从业资格列表。 
+        :type qualification_category_list: list[:class:`huaweicloudsdkocr.v1.QualificationCategory`]
+        :param confidence: 
+        :type confidence: :class:`huaweicloudsdkocr.v1.QualificationConfidence`
+        """
         
         
 
@@ -148,7 +189,7 @@ class QualificationCertificateResult:
         身份证号（非必有，依赖对应从业资格证板式）。 
 
         :param id_number: The id_number of this QualificationCertificateResult.
-        :type: str
+        :type id_number: str
         """
         self._id_number = id_number
 
@@ -170,7 +211,7 @@ class QualificationCertificateResult:
         考核时间（非必有，依赖对应从业资格证板式）。 
 
         :param assessment_date: The assessment_date of this QualificationCertificateResult.
-        :type: str
+        :type assessment_date: str
         """
         self._assessment_date = assessment_date
 
@@ -192,7 +233,7 @@ class QualificationCertificateResult:
         从业资格证号。 
 
         :param certificate_number: The certificate_number of this QualificationCertificateResult.
-        :type: str
+        :type certificate_number: str
         """
         self._certificate_number = certificate_number
 
@@ -214,7 +255,7 @@ class QualificationCertificateResult:
         档案号（非必有，依赖对应从业资格证板式）。 
 
         :param file_number: The file_number of this QualificationCertificateResult.
-        :type: str
+        :type file_number: str
         """
         self._file_number = file_number
 
@@ -236,7 +277,7 @@ class QualificationCertificateResult:
         福路通号（非必有，依赖对应从业资格证板式）。 
 
         :param union_card_number: The union_card_number of this QualificationCertificateResult.
-        :type: str
+        :type union_card_number: str
         """
         self._union_card_number = union_card_number
 
@@ -258,7 +299,7 @@ class QualificationCertificateResult:
         继续教育信息（非必有，依赖对应从业资格证板式）。 
 
         :param continuing_education_info: The continuing_education_info of this QualificationCertificateResult.
-        :type: str
+        :type continuing_education_info: str
         """
         self._continuing_education_info = continuing_education_info
 
@@ -280,7 +321,7 @@ class QualificationCertificateResult:
         性别（非必有，依赖对应从业资格证板式）。 
 
         :param sex: The sex of this QualificationCertificateResult.
-        :type: str
+        :type sex: str
         """
         self._sex = sex
 
@@ -302,7 +343,7 @@ class QualificationCertificateResult:
         联系电话（非必有，依赖对应从业资格证板式）。 
 
         :param phone_number: The phone_number of this QualificationCertificateResult.
-        :type: str
+        :type phone_number: str
         """
         self._phone_number = phone_number
 
@@ -324,7 +365,7 @@ class QualificationCertificateResult:
         登记时间（非必有，依赖对应从业资格证板式）。 
 
         :param registration_date: The registration_date of this QualificationCertificateResult.
-        :type: str
+        :type registration_date: str
         """
         self._registration_date = registration_date
 
@@ -346,7 +387,7 @@ class QualificationCertificateResult:
         单位（非必有，依赖对应从业资格证板式）。 
 
         :param work_unit: The work_unit of this QualificationCertificateResult.
-        :type: str
+        :type work_unit: str
         """
         self._work_unit = work_unit
 
@@ -368,7 +409,7 @@ class QualificationCertificateResult:
         诚信考核信息（非必有，依赖对应从业资格证板式）。 
 
         :param integrity_assessment_info: The integrity_assessment_info of this QualificationCertificateResult.
-        :type: str
+        :type integrity_assessment_info: str
         """
         self._integrity_assessment_info = integrity_assessment_info
 
@@ -390,7 +431,7 @@ class QualificationCertificateResult:
         国籍（非必有，依赖对应从业资格证板式）。 
 
         :param nationality: The nationality of this QualificationCertificateResult.
-        :type: str
+        :type nationality: str
         """
         self._nationality = nationality
 
@@ -412,7 +453,7 @@ class QualificationCertificateResult:
         姓名。 
 
         :param name: The name of this QualificationCertificateResult.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -434,7 +475,7 @@ class QualificationCertificateResult:
         住址。 
 
         :param address: The address of this QualificationCertificateResult.
-        :type: str
+        :type address: str
         """
         self._address = address
 
@@ -456,7 +497,7 @@ class QualificationCertificateResult:
         准驾车型（非必有，依赖对应从业资格证板式）。 
 
         :param driving_class: The driving_class of this QualificationCertificateResult.
-        :type: str
+        :type driving_class: str
         """
         self._driving_class = driving_class
 
@@ -478,7 +519,7 @@ class QualificationCertificateResult:
         发证机关（非必有，依赖对应从业资格证板式）。 
 
         :param issuing_authority: The issuing_authority of this QualificationCertificateResult.
-        :type: str
+        :type issuing_authority: str
         """
         self._issuing_authority = issuing_authority
 
@@ -500,7 +541,7 @@ class QualificationCertificateResult:
         出生日期（非必有，依赖对应从业资格证板式）。 
 
         :param birth_date: The birth_date of this QualificationCertificateResult.
-        :type: str
+        :type birth_date: str
         """
         self._birth_date = birth_date
 
@@ -511,7 +552,7 @@ class QualificationCertificateResult:
         从业资格列表。 
 
         :return: The qualification_category_list of this QualificationCertificateResult.
-        :rtype: list[QualificationCategory]
+        :rtype: list[:class:`huaweicloudsdkocr.v1.QualificationCategory`]
         """
         return self._qualification_category_list
 
@@ -522,7 +563,7 @@ class QualificationCertificateResult:
         从业资格列表。 
 
         :param qualification_category_list: The qualification_category_list of this QualificationCertificateResult.
-        :type: list[QualificationCategory]
+        :type qualification_category_list: list[:class:`huaweicloudsdkocr.v1.QualificationCategory`]
         """
         self._qualification_category_list = qualification_category_list
 
@@ -532,7 +573,7 @@ class QualificationCertificateResult:
 
 
         :return: The confidence of this QualificationCertificateResult.
-        :rtype: QualificationConfidence
+        :rtype: :class:`huaweicloudsdkocr.v1.QualificationConfidence`
         """
         return self._confidence
 
@@ -542,7 +583,7 @@ class QualificationCertificateResult:
 
 
         :param confidence: The confidence of this QualificationCertificateResult.
-        :type: QualificationConfidence
+        :type confidence: :class:`huaweicloudsdkocr.v1.QualificationConfidence`
         """
         self._confidence = confidence
 

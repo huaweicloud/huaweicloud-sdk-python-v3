@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateTakeOverTaskReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class CreateTakeOverTaskReq:
     }
 
     def __init__(self, bucket=None, object=None, suffix=None, template_group_name=None, workflow_name=None, host_type=None, output_bucket=None, output_path=None):
-        """CreateTakeOverTaskReq - a model defined in huaweicloud sdk"""
+        """CreateTakeOverTaskReq
+
+        The model defined in huaweicloud sdk
+
+        :param bucket: 源桶名。
+        :type bucket: str
+        :param object: 源目录名或源文件名。
+        :type object: str
+        :param suffix: 批量托管时的文件后缀名列表。不传或传空值时，表示托管所有音视频文件，不进行后缀名过滤。
+        :type suffix: list[str]
+        :param template_group_name: 转码模板组名称。  若不为空，则使用指定的转码模板对上传的音视频进行转码，您可以在视频点播控制台配置转码模板，具体请参见转码设置。  &gt; 若同时设置了“**template_group_name**”和“**workflow_name**”字段，则“**template_group_name**”字段生效。
+        :type template_group_name: str
+        :param workflow_name: 工作流名称。  若不为空，则使用指定的工作流对上传的音视频进行处理，您可以在视频点播控制台配置工作流，具体请参见[工作流设置](https://support.huaweicloud.com/usermanual-vod/vod010041.html)。
+        :type workflow_name: str
+        :param host_type: 表示音视频处理后生成的媒资文件所存储的位置类型。  取值如下所示： - 0：表示存储到点播桶。 - 1：表示存储在租户桶。 - 2：表示存储到租户桶，并且存储路径与源文件一致。
+        :type host_type: int
+        :param output_bucket: 输出桶名，host_type为1时必选
+        :type output_bucket: str
+        :param output_path: 输出路径名，host_type为1时必选
+        :type output_path: str
+        """
         
         
 
@@ -91,7 +110,7 @@ class CreateTakeOverTaskReq:
         源桶名。
 
         :param bucket: The bucket of this CreateTakeOverTaskReq.
-        :type: str
+        :type bucket: str
         """
         self._bucket = bucket
 
@@ -113,7 +132,7 @@ class CreateTakeOverTaskReq:
         源目录名或源文件名。
 
         :param object: The object of this CreateTakeOverTaskReq.
-        :type: str
+        :type object: str
         """
         self._object = object
 
@@ -135,7 +154,7 @@ class CreateTakeOverTaskReq:
         批量托管时的文件后缀名列表。不传或传空值时，表示托管所有音视频文件，不进行后缀名过滤。
 
         :param suffix: The suffix of this CreateTakeOverTaskReq.
-        :type: list[str]
+        :type suffix: list[str]
         """
         self._suffix = suffix
 
@@ -157,7 +176,7 @@ class CreateTakeOverTaskReq:
         转码模板组名称。  若不为空，则使用指定的转码模板对上传的音视频进行转码，您可以在视频点播控制台配置转码模板，具体请参见转码设置。  > 若同时设置了“**template_group_name**”和“**workflow_name**”字段，则“**template_group_name**”字段生效。
 
         :param template_group_name: The template_group_name of this CreateTakeOverTaskReq.
-        :type: str
+        :type template_group_name: str
         """
         self._template_group_name = template_group_name
 
@@ -179,7 +198,7 @@ class CreateTakeOverTaskReq:
         工作流名称。  若不为空，则使用指定的工作流对上传的音视频进行处理，您可以在视频点播控制台配置工作流，具体请参见[工作流设置](https://support.huaweicloud.com/usermanual-vod/vod010041.html)。
 
         :param workflow_name: The workflow_name of this CreateTakeOverTaskReq.
-        :type: str
+        :type workflow_name: str
         """
         self._workflow_name = workflow_name
 
@@ -201,7 +220,7 @@ class CreateTakeOverTaskReq:
         表示音视频处理后生成的媒资文件所存储的位置类型。  取值如下所示： - 0：表示存储到点播桶。 - 1：表示存储在租户桶。 - 2：表示存储到租户桶，并且存储路径与源文件一致。
 
         :param host_type: The host_type of this CreateTakeOverTaskReq.
-        :type: int
+        :type host_type: int
         """
         self._host_type = host_type
 
@@ -223,7 +242,7 @@ class CreateTakeOverTaskReq:
         输出桶名，host_type为1时必选
 
         :param output_bucket: The output_bucket of this CreateTakeOverTaskReq.
-        :type: str
+        :type output_bucket: str
         """
         self._output_bucket = output_bucket
 
@@ -245,7 +264,7 @@ class CreateTakeOverTaskReq:
         输出路径名，host_type为1时必选
 
         :param output_path: The output_path of this CreateTakeOverTaskReq.
-        :type: str
+        :type output_path: str
         """
         self._output_path = output_path
 

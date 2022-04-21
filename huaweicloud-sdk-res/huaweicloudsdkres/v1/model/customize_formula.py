@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CustomizeFormula:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CustomizeFormula:
     }
 
     def __init__(self, alias=None, formula=None):
-        """CustomizeFormula - a model defined in huaweicloud sdk"""
+        """CustomizeFormula
+
+        The model defined in huaweicloud sdk
+
+        :param alias: 别名。
+        :type alias: str
+        :param formula: 公式。
+        :type formula: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class CustomizeFormula:
         别名。
 
         :param alias: The alias of this CustomizeFormula.
-        :type: str
+        :type alias: str
         """
         self._alias = alias
 
@@ -85,7 +92,7 @@ class CustomizeFormula:
         公式。
 
         :param formula: The formula of this CustomizeFormula.
-        :type: str
+        :type formula: str
         """
         self._formula = formula
 

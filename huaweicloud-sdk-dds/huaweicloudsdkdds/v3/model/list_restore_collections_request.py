@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRestoreCollectionsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListRestoreCollectionsRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, db_name=None, restore_time=None, offset=None, limit=None):
-        """ListRestoreCollectionsRequest - a model defined in huaweicloud sdk"""
+        """ListRestoreCollectionsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言。
+        :type x_language: str
+        :param instance_id: 实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
+        :type instance_id: str
+        :param db_name: 数据库名称。
+        :type db_name: str
+        :param restore_time: 恢复时间点。UNIX时间戳格式，单位是毫秒，时区是UTC。
+        :type restore_time: str
+        :param offset: 索引位置偏移量。取值大于或等于0。不传该参数时，查询偏移量默认为0。
+        :type offset: int
+        :param limit: 查询个数上限值。取值范围：1~100。不传该参数时，默认查询前100条信息。
+        :type limit: int
+        """
         
         
 
@@ -80,7 +95,7 @@ class ListRestoreCollectionsRequest:
         语言。
 
         :param x_language: The x_language of this ListRestoreCollectionsRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -102,7 +117,7 @@ class ListRestoreCollectionsRequest:
         实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
         :param instance_id: The instance_id of this ListRestoreCollectionsRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -124,7 +139,7 @@ class ListRestoreCollectionsRequest:
         数据库名称。
 
         :param db_name: The db_name of this ListRestoreCollectionsRequest.
-        :type: str
+        :type db_name: str
         """
         self._db_name = db_name
 
@@ -146,7 +161,7 @@ class ListRestoreCollectionsRequest:
         恢复时间点。UNIX时间戳格式，单位是毫秒，时区是UTC。
 
         :param restore_time: The restore_time of this ListRestoreCollectionsRequest.
-        :type: str
+        :type restore_time: str
         """
         self._restore_time = restore_time
 
@@ -168,7 +183,7 @@ class ListRestoreCollectionsRequest:
         索引位置偏移量。取值大于或等于0。不传该参数时，查询偏移量默认为0。
 
         :param offset: The offset of this ListRestoreCollectionsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -190,7 +205,7 @@ class ListRestoreCollectionsRequest:
         查询个数上限值。取值范围：1~100。不传该参数时，默认查询前100条信息。
 
         :param limit: The limit of this ListRestoreCollectionsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

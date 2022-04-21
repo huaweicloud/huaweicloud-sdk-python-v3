@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListVpcsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListVpcsRequest:
     }
 
     def __init__(self, limit=None, marker=None, id=None, enterprise_project_id=None):
-        """ListVpcsRequest - a model defined in huaweicloud sdk"""
+        """ListVpcsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 每页返回的个数
+        :type limit: int
+        :param marker: 分页查询起始的资源ID，为空时查询第一页
+        :type marker: str
+        :param id: 功能说明：虚拟私有云ID。可以使用该字段过滤某个ID的虚拟私有云。
+        :type id: str
+        :param enterprise_project_id: 功能说明：企业项目ID。可以使用该字段过滤某个企业项目下的虚拟私有云。若未传值则默认返回所有企业项目绑定的虚拟私有云。  取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。若需要查询当前用户所有企业项目绑定的虚拟私有云，请传参all_granted_eps。
+        :type enterprise_project_id: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class ListVpcsRequest:
         每页返回的个数
 
         :param limit: The limit of this ListVpcsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -95,7 +106,7 @@ class ListVpcsRequest:
         分页查询起始的资源ID，为空时查询第一页
 
         :param marker: The marker of this ListVpcsRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -117,7 +128,7 @@ class ListVpcsRequest:
         功能说明：虚拟私有云ID。可以使用该字段过滤某个ID的虚拟私有云。
 
         :param id: The id of this ListVpcsRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -139,7 +150,7 @@ class ListVpcsRequest:
         功能说明：企业项目ID。可以使用该字段过滤某个企业项目下的虚拟私有云。若未传值则默认返回所有企业项目绑定的虚拟私有云。  取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。若需要查询当前用户所有企业项目绑定的虚拟私有云，请传参all_granted_eps。
 
         :param enterprise_project_id: The enterprise_project_id of this ListVpcsRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 

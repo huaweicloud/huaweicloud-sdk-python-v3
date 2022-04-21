@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteScriptRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteScriptRequest:
     }
 
     def __init__(self, script_name=None):
-        """DeleteScriptRequest - a model defined in huaweicloud sdk"""
+        """DeleteScriptRequest
+
+        The model defined in huaweicloud sdk
+
+        :param script_name: 
+        :type script_name: str
+        """
         
         
 
@@ -55,7 +60,7 @@ class DeleteScriptRequest:
 
 
         :param script_name: The script_name of this DeleteScriptRequest.
-        :type: str
+        :type script_name: str
         """
         self._script_name = script_name
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ClusterDetailInstanceFlavor:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ClusterDetailInstanceFlavor:
     }
 
     def __init__(self, id=None, links=None):
-        """ClusterDetailInstanceFlavor - a model defined in huaweicloud sdk"""
+        """ClusterDetailInstanceFlavor
+
+        The model defined in huaweicloud sdk
+
+        :param id: 节点虚拟机的规格ID。
+        :type id: str
+        :param links: 链接信息
+        :type links: list[:class:`huaweicloudsdkcdm.v1.ClusterLinks`]
+        """
         
         
 
@@ -63,7 +70,7 @@ class ClusterDetailInstanceFlavor:
         节点虚拟机的规格ID。
 
         :param id: The id of this ClusterDetailInstanceFlavor.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -74,7 +81,7 @@ class ClusterDetailInstanceFlavor:
         链接信息
 
         :return: The links of this ClusterDetailInstanceFlavor.
-        :rtype: list[ClusterLinks]
+        :rtype: list[:class:`huaweicloudsdkcdm.v1.ClusterLinks`]
         """
         return self._links
 
@@ -85,7 +92,7 @@ class ClusterDetailInstanceFlavor:
         链接信息
 
         :param links: The links of this ClusterDetailInstanceFlavor.
-        :type: list[ClusterLinks]
+        :type links: list[:class:`huaweicloudsdkcdm.v1.ClusterLinks`]
         """
         self._links = links
 

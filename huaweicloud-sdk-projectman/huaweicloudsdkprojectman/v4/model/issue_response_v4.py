@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IssueResponseV4:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -76,7 +75,59 @@ class IssueResponseV4:
     }
 
     def __init__(self, actual_work_hours=None, assigned_cc_user=None, assigned_user=None, begin_time=None, created_time=None, creator=None, custom_fields=None, developer=None, domain=None, done_ratio=None, end_time=None, expected_work_hours=None, id=None, project=None, iteration=None, module=None, name=None, parent_issue=None, priority=None, severity=None, status=None, tracker=None, updated_time=None, closed_time=None):
-        """IssueResponseV4 - a model defined in huaweicloud sdk"""
+        """IssueResponseV4
+
+        The model defined in huaweicloud sdk
+
+        :param actual_work_hours: 实际工时
+        :type actual_work_hours: float
+        :param assigned_cc_user: 抄送人
+        :type assigned_cc_user: list[:class:`huaweicloudsdkprojectman.v4.IssueUser`]
+        :param assigned_user: 
+        :type assigned_user: :class:`huaweicloudsdkprojectman.v4.IssueUser`
+        :param begin_time: 预计开始时间，年-月-日
+        :type begin_time: str
+        :param created_time: 创建时间 年-月-日 时:分:秒
+        :type created_time: str
+        :param creator: 
+        :type creator: :class:`huaweicloudsdkprojectman.v4.IssueUser`
+        :param custom_fields: 自定义属性值
+        :type custom_fields: list[:class:`huaweicloudsdkprojectman.v4.CustomField`]
+        :param developer: 
+        :type developer: :class:`huaweicloudsdkprojectman.v4.IssueUser`
+        :param domain: 
+        :type domain: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Domain`
+        :param done_ratio: 工作项进度值
+        :type done_ratio: int
+        :param end_time: 预计结束时间，年-月-日
+        :type end_time: str
+        :param expected_work_hours: 预计工时
+        :type expected_work_hours: float
+        :param id: 工作项项id
+        :type id: int
+        :param project: 
+        :type project: :class:`huaweicloudsdkprojectman.v4.IssueProjectResponseV4`
+        :param iteration: 
+        :type iteration: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Iteration`
+        :param module: 
+        :type module: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Module`
+        :param name: 标题
+        :type name: str
+        :param parent_issue: 
+        :type parent_issue: :class:`huaweicloudsdkprojectman.v4.CreateIssueResponseV4ParentIssue`
+        :param priority: 
+        :type priority: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Priority`
+        :param severity: 
+        :type severity: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Severity`
+        :param status: 
+        :type status: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Status`
+        :param tracker: 
+        :type tracker: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Tracker`
+        :param updated_time: 更新时间 年-月-日 时:分:秒
+        :type updated_time: str
+        :param closed_time: 关闭时间 年-月-日 时:分:秒
+        :type closed_time: str
+        """
         
         
 
@@ -173,7 +224,7 @@ class IssueResponseV4:
         实际工时
 
         :param actual_work_hours: The actual_work_hours of this IssueResponseV4.
-        :type: float
+        :type actual_work_hours: float
         """
         self._actual_work_hours = actual_work_hours
 
@@ -184,7 +235,7 @@ class IssueResponseV4:
         抄送人
 
         :return: The assigned_cc_user of this IssueResponseV4.
-        :rtype: list[IssueUser]
+        :rtype: list[:class:`huaweicloudsdkprojectman.v4.IssueUser`]
         """
         return self._assigned_cc_user
 
@@ -195,7 +246,7 @@ class IssueResponseV4:
         抄送人
 
         :param assigned_cc_user: The assigned_cc_user of this IssueResponseV4.
-        :type: list[IssueUser]
+        :type assigned_cc_user: list[:class:`huaweicloudsdkprojectman.v4.IssueUser`]
         """
         self._assigned_cc_user = assigned_cc_user
 
@@ -205,7 +256,7 @@ class IssueResponseV4:
 
 
         :return: The assigned_user of this IssueResponseV4.
-        :rtype: IssueUser
+        :rtype: :class:`huaweicloudsdkprojectman.v4.IssueUser`
         """
         return self._assigned_user
 
@@ -215,7 +266,7 @@ class IssueResponseV4:
 
 
         :param assigned_user: The assigned_user of this IssueResponseV4.
-        :type: IssueUser
+        :type assigned_user: :class:`huaweicloudsdkprojectman.v4.IssueUser`
         """
         self._assigned_user = assigned_user
 
@@ -237,7 +288,7 @@ class IssueResponseV4:
         预计开始时间，年-月-日
 
         :param begin_time: The begin_time of this IssueResponseV4.
-        :type: str
+        :type begin_time: str
         """
         self._begin_time = begin_time
 
@@ -259,7 +310,7 @@ class IssueResponseV4:
         创建时间 年-月-日 时:分:秒
 
         :param created_time: The created_time of this IssueResponseV4.
-        :type: str
+        :type created_time: str
         """
         self._created_time = created_time
 
@@ -269,7 +320,7 @@ class IssueResponseV4:
 
 
         :return: The creator of this IssueResponseV4.
-        :rtype: IssueUser
+        :rtype: :class:`huaweicloudsdkprojectman.v4.IssueUser`
         """
         return self._creator
 
@@ -279,7 +330,7 @@ class IssueResponseV4:
 
 
         :param creator: The creator of this IssueResponseV4.
-        :type: IssueUser
+        :type creator: :class:`huaweicloudsdkprojectman.v4.IssueUser`
         """
         self._creator = creator
 
@@ -290,7 +341,7 @@ class IssueResponseV4:
         自定义属性值
 
         :return: The custom_fields of this IssueResponseV4.
-        :rtype: list[CustomField]
+        :rtype: list[:class:`huaweicloudsdkprojectman.v4.CustomField`]
         """
         return self._custom_fields
 
@@ -301,7 +352,7 @@ class IssueResponseV4:
         自定义属性值
 
         :param custom_fields: The custom_fields of this IssueResponseV4.
-        :type: list[CustomField]
+        :type custom_fields: list[:class:`huaweicloudsdkprojectman.v4.CustomField`]
         """
         self._custom_fields = custom_fields
 
@@ -311,7 +362,7 @@ class IssueResponseV4:
 
 
         :return: The developer of this IssueResponseV4.
-        :rtype: IssueUser
+        :rtype: :class:`huaweicloudsdkprojectman.v4.IssueUser`
         """
         return self._developer
 
@@ -321,7 +372,7 @@ class IssueResponseV4:
 
 
         :param developer: The developer of this IssueResponseV4.
-        :type: IssueUser
+        :type developer: :class:`huaweicloudsdkprojectman.v4.IssueUser`
         """
         self._developer = developer
 
@@ -331,7 +382,7 @@ class IssueResponseV4:
 
 
         :return: The domain of this IssueResponseV4.
-        :rtype: IssueItemSfV4Domain
+        :rtype: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Domain`
         """
         return self._domain
 
@@ -341,7 +392,7 @@ class IssueResponseV4:
 
 
         :param domain: The domain of this IssueResponseV4.
-        :type: IssueItemSfV4Domain
+        :type domain: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Domain`
         """
         self._domain = domain
 
@@ -363,7 +414,7 @@ class IssueResponseV4:
         工作项进度值
 
         :param done_ratio: The done_ratio of this IssueResponseV4.
-        :type: int
+        :type done_ratio: int
         """
         self._done_ratio = done_ratio
 
@@ -385,7 +436,7 @@ class IssueResponseV4:
         预计结束时间，年-月-日
 
         :param end_time: The end_time of this IssueResponseV4.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -407,7 +458,7 @@ class IssueResponseV4:
         预计工时
 
         :param expected_work_hours: The expected_work_hours of this IssueResponseV4.
-        :type: float
+        :type expected_work_hours: float
         """
         self._expected_work_hours = expected_work_hours
 
@@ -429,7 +480,7 @@ class IssueResponseV4:
         工作项项id
 
         :param id: The id of this IssueResponseV4.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -439,7 +490,7 @@ class IssueResponseV4:
 
 
         :return: The project of this IssueResponseV4.
-        :rtype: IssueProjectResponseV4
+        :rtype: :class:`huaweicloudsdkprojectman.v4.IssueProjectResponseV4`
         """
         return self._project
 
@@ -449,7 +500,7 @@ class IssueResponseV4:
 
 
         :param project: The project of this IssueResponseV4.
-        :type: IssueProjectResponseV4
+        :type project: :class:`huaweicloudsdkprojectman.v4.IssueProjectResponseV4`
         """
         self._project = project
 
@@ -459,7 +510,7 @@ class IssueResponseV4:
 
 
         :return: The iteration of this IssueResponseV4.
-        :rtype: IssueItemSfV4Iteration
+        :rtype: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Iteration`
         """
         return self._iteration
 
@@ -469,7 +520,7 @@ class IssueResponseV4:
 
 
         :param iteration: The iteration of this IssueResponseV4.
-        :type: IssueItemSfV4Iteration
+        :type iteration: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Iteration`
         """
         self._iteration = iteration
 
@@ -479,7 +530,7 @@ class IssueResponseV4:
 
 
         :return: The module of this IssueResponseV4.
-        :rtype: IssueItemSfV4Module
+        :rtype: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Module`
         """
         return self._module
 
@@ -489,7 +540,7 @@ class IssueResponseV4:
 
 
         :param module: The module of this IssueResponseV4.
-        :type: IssueItemSfV4Module
+        :type module: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Module`
         """
         self._module = module
 
@@ -511,7 +562,7 @@ class IssueResponseV4:
         标题
 
         :param name: The name of this IssueResponseV4.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -521,7 +572,7 @@ class IssueResponseV4:
 
 
         :return: The parent_issue of this IssueResponseV4.
-        :rtype: CreateIssueResponseV4ParentIssue
+        :rtype: :class:`huaweicloudsdkprojectman.v4.CreateIssueResponseV4ParentIssue`
         """
         return self._parent_issue
 
@@ -531,7 +582,7 @@ class IssueResponseV4:
 
 
         :param parent_issue: The parent_issue of this IssueResponseV4.
-        :type: CreateIssueResponseV4ParentIssue
+        :type parent_issue: :class:`huaweicloudsdkprojectman.v4.CreateIssueResponseV4ParentIssue`
         """
         self._parent_issue = parent_issue
 
@@ -541,7 +592,7 @@ class IssueResponseV4:
 
 
         :return: The priority of this IssueResponseV4.
-        :rtype: IssueItemSfV4Priority
+        :rtype: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Priority`
         """
         return self._priority
 
@@ -551,7 +602,7 @@ class IssueResponseV4:
 
 
         :param priority: The priority of this IssueResponseV4.
-        :type: IssueItemSfV4Priority
+        :type priority: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Priority`
         """
         self._priority = priority
 
@@ -561,7 +612,7 @@ class IssueResponseV4:
 
 
         :return: The severity of this IssueResponseV4.
-        :rtype: IssueItemSfV4Severity
+        :rtype: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Severity`
         """
         return self._severity
 
@@ -571,7 +622,7 @@ class IssueResponseV4:
 
 
         :param severity: The severity of this IssueResponseV4.
-        :type: IssueItemSfV4Severity
+        :type severity: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Severity`
         """
         self._severity = severity
 
@@ -581,7 +632,7 @@ class IssueResponseV4:
 
 
         :return: The status of this IssueResponseV4.
-        :rtype: IssueItemSfV4Status
+        :rtype: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Status`
         """
         return self._status
 
@@ -591,7 +642,7 @@ class IssueResponseV4:
 
 
         :param status: The status of this IssueResponseV4.
-        :type: IssueItemSfV4Status
+        :type status: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Status`
         """
         self._status = status
 
@@ -601,7 +652,7 @@ class IssueResponseV4:
 
 
         :return: The tracker of this IssueResponseV4.
-        :rtype: IssueItemSfV4Tracker
+        :rtype: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Tracker`
         """
         return self._tracker
 
@@ -611,7 +662,7 @@ class IssueResponseV4:
 
 
         :param tracker: The tracker of this IssueResponseV4.
-        :type: IssueItemSfV4Tracker
+        :type tracker: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Tracker`
         """
         self._tracker = tracker
 
@@ -633,7 +684,7 @@ class IssueResponseV4:
         更新时间 年-月-日 时:分:秒
 
         :param updated_time: The updated_time of this IssueResponseV4.
-        :type: str
+        :type updated_time: str
         """
         self._updated_time = updated_time
 
@@ -655,7 +706,7 @@ class IssueResponseV4:
         关闭时间 年-月-日 时:分:秒
 
         :param closed_time: The closed_time of this IssueResponseV4.
-        :type: str
+        :type closed_time: str
         """
         self._closed_time = closed_time
 

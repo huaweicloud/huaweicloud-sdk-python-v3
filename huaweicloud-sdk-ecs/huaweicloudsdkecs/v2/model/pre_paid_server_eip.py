@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PrePaidServerEip:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class PrePaidServerEip:
     }
 
     def __init__(self, iptype=None, bandwidth=None, extendparam=None):
-        """PrePaidServerEip - a model defined in huaweicloud sdk"""
+        """PrePaidServerEip
+
+        The model defined in huaweicloud sdk
+
+        :param iptype: 弹性IP地址类型。  详情请参见“[申请弹性公网IP](https://support.huaweicloud.com/api-eip/eip_api_0001.html)”章节的“publicip”字段说明。
+        :type iptype: str
+        :param bandwidth: 
+        :type bandwidth: :class:`huaweicloudsdkecs.v2.PrePaidServerEipBandwidth`
+        :param extendparam: 
+        :type extendparam: :class:`huaweicloudsdkecs.v2.PrePaidServerEipExtendParam`
+        """
         
         
 
@@ -66,7 +75,7 @@ class PrePaidServerEip:
         弹性IP地址类型。  详情请参见“[申请弹性公网IP](https://support.huaweicloud.com/api-eip/eip_api_0001.html)”章节的“publicip”字段说明。
 
         :param iptype: The iptype of this PrePaidServerEip.
-        :type: str
+        :type iptype: str
         """
         self._iptype = iptype
 
@@ -76,7 +85,7 @@ class PrePaidServerEip:
 
 
         :return: The bandwidth of this PrePaidServerEip.
-        :rtype: PrePaidServerEipBandwidth
+        :rtype: :class:`huaweicloudsdkecs.v2.PrePaidServerEipBandwidth`
         """
         return self._bandwidth
 
@@ -86,7 +95,7 @@ class PrePaidServerEip:
 
 
         :param bandwidth: The bandwidth of this PrePaidServerEip.
-        :type: PrePaidServerEipBandwidth
+        :type bandwidth: :class:`huaweicloudsdkecs.v2.PrePaidServerEipBandwidth`
         """
         self._bandwidth = bandwidth
 
@@ -96,7 +105,7 @@ class PrePaidServerEip:
 
 
         :return: The extendparam of this PrePaidServerEip.
-        :rtype: PrePaidServerEipExtendParam
+        :rtype: :class:`huaweicloudsdkecs.v2.PrePaidServerEipExtendParam`
         """
         return self._extendparam
 
@@ -106,7 +115,7 @@ class PrePaidServerEip:
 
 
         :param extendparam: The extendparam of this PrePaidServerEip.
-        :type: PrePaidServerEipExtendParam
+        :type extendparam: :class:`huaweicloudsdkecs.v2.PrePaidServerEipExtendParam`
         """
         self._extendparam = extendparam
 

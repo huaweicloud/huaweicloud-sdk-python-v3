@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneListPermissionsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class KeystoneListPermissionsResponse(SdkResponse):
     }
 
     def __init__(self, links=None, roles=None, total_number=None):
-        """KeystoneListPermissionsResponse - a model defined in huaweicloud sdk"""
+        """KeystoneListPermissionsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param links: 
+        :type links: :class:`huaweicloudsdkiam.v3.Links`
+        :param roles: 权限信息列表。
+        :type roles: list[:class:`huaweicloudsdkiam.v3.RoleResult`]
+        :param total_number: 在查询参数存在domain_id时，返回自定义策略总数
+        :type total_number: int
+        """
         
         super(KeystoneListPermissionsResponse, self).__init__()
 
@@ -56,7 +65,7 @@ class KeystoneListPermissionsResponse(SdkResponse):
 
 
         :return: The links of this KeystoneListPermissionsResponse.
-        :rtype: Links
+        :rtype: :class:`huaweicloudsdkiam.v3.Links`
         """
         return self._links
 
@@ -66,7 +75,7 @@ class KeystoneListPermissionsResponse(SdkResponse):
 
 
         :param links: The links of this KeystoneListPermissionsResponse.
-        :type: Links
+        :type links: :class:`huaweicloudsdkiam.v3.Links`
         """
         self._links = links
 
@@ -77,7 +86,7 @@ class KeystoneListPermissionsResponse(SdkResponse):
         权限信息列表。
 
         :return: The roles of this KeystoneListPermissionsResponse.
-        :rtype: list[RoleResult]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.RoleResult`]
         """
         return self._roles
 
@@ -88,7 +97,7 @@ class KeystoneListPermissionsResponse(SdkResponse):
         权限信息列表。
 
         :param roles: The roles of this KeystoneListPermissionsResponse.
-        :type: list[RoleResult]
+        :type roles: list[:class:`huaweicloudsdkiam.v3.RoleResult`]
         """
         self._roles = roles
 
@@ -110,7 +119,7 @@ class KeystoneListPermissionsResponse(SdkResponse):
         在查询参数存在domain_id时，返回自定义策略总数
 
         :param total_number: The total_number of this KeystoneListPermissionsResponse.
-        :type: int
+        :type total_number: int
         """
         self._total_number = total_number
 

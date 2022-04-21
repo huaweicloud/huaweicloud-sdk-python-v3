@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteVolumeResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteVolumeResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """DeleteVolumeResponse - a model defined in huaweicloud sdk"""
+        """DeleteVolumeResponse
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 正常返回时返回的任务ID。
+        :type job_id: str
+        """
         
         super(DeleteVolumeResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class DeleteVolumeResponse(SdkResponse):
         正常返回时返回的任务ID。
 
         :param job_id: The job_id of this DeleteVolumeResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 

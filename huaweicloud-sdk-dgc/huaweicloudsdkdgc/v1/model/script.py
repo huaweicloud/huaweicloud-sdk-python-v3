@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Script:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Script:
     }
 
     def __init__(self, name=None, path=None):
-        """Script - a model defined in huaweicloud sdk"""
+        """Script
+
+        The model defined in huaweicloud sdk
+
+        :param name: 
+        :type name: str
+        :param path: 
+        :type path: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class Script:
 
 
         :param name: The name of this Script.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -81,7 +88,7 @@ class Script:
 
 
         :param path: The path of this Script.
-        :type: str
+        :type path: str
         """
         self._path = path
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListProjectsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListProjectsRequest:
     }
 
     def __init__(self, x_repo_auth=None, namespace=None):
-        """ListProjectsRequest - a model defined in huaweicloud sdk"""
+        """ListProjectsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_repo_auth: 授权名称。
+        :type x_repo_auth: str
+        :param namespace: 组织ID。
+        :type namespace: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ListProjectsRequest:
         授权名称。
 
         :param x_repo_auth: The x_repo_auth of this ListProjectsRequest.
-        :type: str
+        :type x_repo_auth: str
         """
         self._x_repo_auth = x_repo_auth
 
@@ -83,7 +90,7 @@ class ListProjectsRequest:
         组织ID。
 
         :param namespace: The namespace of this ListProjectsRequest.
-        :type: str
+        :type namespace: str
         """
         self._namespace = namespace
 

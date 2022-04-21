@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Condition:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Condition:
     }
 
     def __init__(self, pre_node_name=None, expression=None):
-        """Condition - a model defined in huaweicloud sdk"""
+        """Condition
+
+        The model defined in huaweicloud sdk
+
+        :param pre_node_name: 
+        :type pre_node_name: str
+        :param expression: 
+        :type expression: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class Condition:
 
 
         :param pre_node_name: The pre_node_name of this Condition.
-        :type: str
+        :type pre_node_name: str
         """
         self._pre_node_name = pre_node_name
 
@@ -81,7 +88,7 @@ class Condition:
 
 
         :param expression: The expression of this Condition.
-        :type: str
+        :type expression: str
         """
         self._expression = expression
 

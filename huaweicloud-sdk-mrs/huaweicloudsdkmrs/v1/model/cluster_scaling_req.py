@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ClusterScalingReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ClusterScalingReq:
     }
 
     def __init__(self, service_id=None, plan_id=None, parameters=None, previous_values=None):
-        """ClusterScalingReq - a model defined in huaweicloud sdk"""
+        """ClusterScalingReq
+
+        The model defined in huaweicloud sdk
+
+        :param service_id: 服务ID，为扩展接口，预留此参数。用户不需要配置。
+        :type service_id: str
+        :param plan_id: 套餐ID，为扩展接口，预留此参数。用户不需要配置。
+        :type plan_id: str
+        :param parameters: 
+        :type parameters: :class:`huaweicloudsdkmrs.v1.ClusterScalingParams`
+        :param previous_values: 扩展接口，预留此参数。用户不需要配置。
+        :type previous_values: dict(str, str)
+        """
         
         
 
@@ -72,7 +83,7 @@ class ClusterScalingReq:
         服务ID，为扩展接口，预留此参数。用户不需要配置。
 
         :param service_id: The service_id of this ClusterScalingReq.
-        :type: str
+        :type service_id: str
         """
         self._service_id = service_id
 
@@ -94,7 +105,7 @@ class ClusterScalingReq:
         套餐ID，为扩展接口，预留此参数。用户不需要配置。
 
         :param plan_id: The plan_id of this ClusterScalingReq.
-        :type: str
+        :type plan_id: str
         """
         self._plan_id = plan_id
 
@@ -104,7 +115,7 @@ class ClusterScalingReq:
 
 
         :return: The parameters of this ClusterScalingReq.
-        :rtype: ClusterScalingParams
+        :rtype: :class:`huaweicloudsdkmrs.v1.ClusterScalingParams`
         """
         return self._parameters
 
@@ -114,7 +125,7 @@ class ClusterScalingReq:
 
 
         :param parameters: The parameters of this ClusterScalingReq.
-        :type: ClusterScalingParams
+        :type parameters: :class:`huaweicloudsdkmrs.v1.ClusterScalingParams`
         """
         self._parameters = parameters
 
@@ -136,7 +147,7 @@ class ClusterScalingReq:
         扩展接口，预留此参数。用户不需要配置。
 
         :param previous_values: The previous_values of this ClusterScalingReq.
-        :type: dict(str, str)
+        :type previous_values: dict(str, str)
         """
         self._previous_values = previous_values
 

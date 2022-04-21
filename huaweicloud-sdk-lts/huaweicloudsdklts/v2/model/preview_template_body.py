@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PreviewTemplateBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class PreviewTemplateBody:
     }
 
     def __init__(self, templates=None, language=None, source=None):
-        """PreviewTemplateBody - a model defined in huaweicloud sdk"""
+        """PreviewTemplateBody
+
+        The model defined in huaweicloud sdk
+
+        :param templates: 邮件模板内容
+        :type templates: str
+        :param language: 语言 zh-cn中文，en-us英文
+        :type language: str
+        :param source: 来源，只能填LTS
+        :type source: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class PreviewTemplateBody:
         邮件模板内容
 
         :param templates: The templates of this PreviewTemplateBody.
-        :type: str
+        :type templates: str
         """
         self._templates = templates
 
@@ -87,7 +96,7 @@ class PreviewTemplateBody:
         语言 zh-cn中文，en-us英文
 
         :param language: The language of this PreviewTemplateBody.
-        :type: str
+        :type language: str
         """
         self._language = language
 
@@ -109,7 +118,7 @@ class PreviewTemplateBody:
         来源，只能填LTS
 
         :param source: The source of this PreviewTemplateBody.
-        :type: str
+        :type source: str
         """
         self._source = source
 

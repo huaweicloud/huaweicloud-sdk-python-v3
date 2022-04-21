@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPrivateZonesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ListPrivateZonesRequest:
     }
 
     def __init__(self, type=None, limit=None, marker=None, offset=None, tags=None, name=None, status=None, enterprise_project_id=None):
-        """ListPrivateZonesRequest - a model defined in huaweicloud sdk"""
+        """ListPrivateZonesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param type: 待查询的zone的类型。  取值范围：private。
+        :type type: str
+        :param limit: 每页返回的资源个数，取值范围：0~500
+        :type limit: int
+        :param marker: 分页查询起始的资源ID，为空时为查询第一页
+        :type marker: str
+        :param offset: 分页查询起始偏移量，表示从偏移量的下一个资源开始查询
+        :type offset: int
+        :param tags: 资源标签。
+        :type tags: str
+        :param name: zone名称。
+        :type name: str
+        :param status: 资源状态。
+        :type status: str
+        :param enterprise_project_id: 域名关联的企业项目ID，长度不超过36个字符。  默认值为0。
+        :type enterprise_project_id: str
+        """
         
         
 
@@ -92,7 +111,7 @@ class ListPrivateZonesRequest:
         待查询的zone的类型。  取值范围：private。
 
         :param type: The type of this ListPrivateZonesRequest.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -114,7 +133,7 @@ class ListPrivateZonesRequest:
         每页返回的资源个数，取值范围：0~500
 
         :param limit: The limit of this ListPrivateZonesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -136,7 +155,7 @@ class ListPrivateZonesRequest:
         分页查询起始的资源ID，为空时为查询第一页
 
         :param marker: The marker of this ListPrivateZonesRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -158,7 +177,7 @@ class ListPrivateZonesRequest:
         分页查询起始偏移量，表示从偏移量的下一个资源开始查询
 
         :param offset: The offset of this ListPrivateZonesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -180,7 +199,7 @@ class ListPrivateZonesRequest:
         资源标签。
 
         :param tags: The tags of this ListPrivateZonesRequest.
-        :type: str
+        :type tags: str
         """
         self._tags = tags
 
@@ -202,7 +221,7 @@ class ListPrivateZonesRequest:
         zone名称。
 
         :param name: The name of this ListPrivateZonesRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -224,7 +243,7 @@ class ListPrivateZonesRequest:
         资源状态。
 
         :param status: The status of this ListPrivateZonesRequest.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -246,7 +265,7 @@ class ListPrivateZonesRequest:
         域名关联的企业项目ID，长度不超过36个字符。  默认值为0。
 
         :param enterprise_project_id: The enterprise_project_id of this ListPrivateZonesRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 

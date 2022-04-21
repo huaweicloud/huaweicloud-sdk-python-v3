@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateTaskRulesetItem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UpdateTaskRulesetItem:
     }
 
     def __init__(self, language=None, rule_set_id=None, if_use=None, status=None):
-        """UpdateTaskRulesetItem - a model defined in huaweicloud sdk"""
+        """UpdateTaskRulesetItem
+
+        The model defined in huaweicloud sdk
+
+        :param language: 规则集语言
+        :type language: str
+        :param rule_set_id: 规则集ID
+        :type rule_set_id: str
+        :param if_use: 任务语言和规则集的关系是否启用，1是启用，0是未启用
+        :type if_use: str
+        :param status: 新/老数据表示，默认1
+        :type status: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class UpdateTaskRulesetItem:
         规则集语言
 
         :param language: The language of this UpdateTaskRulesetItem.
-        :type: str
+        :type language: str
         """
         self._language = language
 
@@ -91,7 +102,7 @@ class UpdateTaskRulesetItem:
         规则集ID
 
         :param rule_set_id: The rule_set_id of this UpdateTaskRulesetItem.
-        :type: str
+        :type rule_set_id: str
         """
         self._rule_set_id = rule_set_id
 
@@ -113,7 +124,7 @@ class UpdateTaskRulesetItem:
         任务语言和规则集的关系是否启用，1是启用，0是未启用
 
         :param if_use: The if_use of this UpdateTaskRulesetItem.
-        :type: str
+        :type if_use: str
         """
         self._if_use = if_use
 
@@ -135,7 +146,7 @@ class UpdateTaskRulesetItem:
         新/老数据表示，默认1
 
         :param status: The status of this UpdateTaskRulesetItem.
-        :type: str
+        :type status: str
         """
         self._status = status
 

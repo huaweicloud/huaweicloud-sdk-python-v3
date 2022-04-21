@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateWatermarkTemplateReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class UpdateWatermarkTemplateReq:
     }
 
     def __init__(self, id=None, name=None, dx=None, dy=None, position=None, width=None, height=None, watermark_type=None, image_process=None, timeline_start=None, timeline_duration=None):
-        """UpdateWatermarkTemplateReq - a model defined in huaweicloud sdk"""
+        """UpdateWatermarkTemplateReq
+
+        The model defined in huaweicloud sdk
+
+        :param id: 水印模板配置id&lt;br/&gt;
+        :type id: str
+        :param name: 水印模板名称&lt;br/&gt;
+        :type name: str
+        :param dx: 水印图片相对输出视频的水平偏移量，默认值是0&lt;br/&gt;
+        :type dx: str
+        :param dy: 水印图片相对输出视频的垂直偏移量，默认值是0&lt;br/&gt;
+        :type dy: str
+        :param position: 水印的位置&lt;br/&gt;
+        :type position: str
+        :param width: 水印图片宽&lt;br/&gt;
+        :type width: str
+        :param height: 水印图片高&lt;br/&gt;
+        :type height: str
+        :param watermark_type: 水印类型，当前只支持Image（图片水印）&lt;br/&gt;
+        :type watermark_type: str
+        :param image_process: type设置为Image时有效。  目前包括： - Original：只做简单缩放，不做其他处理 - Transparent：图片底色透明 - Grayed：彩色图片变灰
+        :type image_process: str
+        :param timeline_start: 水印开始时间&lt;br/&gt;
+        :type timeline_start: str
+        :param timeline_duration: 水印持续时间&lt;br/&gt;
+        :type timeline_duration: str
+        """
         
         
 
@@ -107,7 +132,7 @@ class UpdateWatermarkTemplateReq:
         水印模板配置id<br/>
 
         :param id: The id of this UpdateWatermarkTemplateReq.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -129,7 +154,7 @@ class UpdateWatermarkTemplateReq:
         水印模板名称<br/>
 
         :param name: The name of this UpdateWatermarkTemplateReq.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -151,7 +176,7 @@ class UpdateWatermarkTemplateReq:
         水印图片相对输出视频的水平偏移量，默认值是0<br/>
 
         :param dx: The dx of this UpdateWatermarkTemplateReq.
-        :type: str
+        :type dx: str
         """
         self._dx = dx
 
@@ -173,7 +198,7 @@ class UpdateWatermarkTemplateReq:
         水印图片相对输出视频的垂直偏移量，默认值是0<br/>
 
         :param dy: The dy of this UpdateWatermarkTemplateReq.
-        :type: str
+        :type dy: str
         """
         self._dy = dy
 
@@ -195,7 +220,7 @@ class UpdateWatermarkTemplateReq:
         水印的位置<br/>
 
         :param position: The position of this UpdateWatermarkTemplateReq.
-        :type: str
+        :type position: str
         """
         self._position = position
 
@@ -217,7 +242,7 @@ class UpdateWatermarkTemplateReq:
         水印图片宽<br/>
 
         :param width: The width of this UpdateWatermarkTemplateReq.
-        :type: str
+        :type width: str
         """
         self._width = width
 
@@ -239,7 +264,7 @@ class UpdateWatermarkTemplateReq:
         水印图片高<br/>
 
         :param height: The height of this UpdateWatermarkTemplateReq.
-        :type: str
+        :type height: str
         """
         self._height = height
 
@@ -261,7 +286,7 @@ class UpdateWatermarkTemplateReq:
         水印类型，当前只支持Image（图片水印）<br/>
 
         :param watermark_type: The watermark_type of this UpdateWatermarkTemplateReq.
-        :type: str
+        :type watermark_type: str
         """
         self._watermark_type = watermark_type
 
@@ -283,7 +308,7 @@ class UpdateWatermarkTemplateReq:
         type设置为Image时有效。  目前包括： - Original：只做简单缩放，不做其他处理 - Transparent：图片底色透明 - Grayed：彩色图片变灰
 
         :param image_process: The image_process of this UpdateWatermarkTemplateReq.
-        :type: str
+        :type image_process: str
         """
         self._image_process = image_process
 
@@ -305,7 +330,7 @@ class UpdateWatermarkTemplateReq:
         水印开始时间<br/>
 
         :param timeline_start: The timeline_start of this UpdateWatermarkTemplateReq.
-        :type: str
+        :type timeline_start: str
         """
         self._timeline_start = timeline_start
 
@@ -327,7 +352,7 @@ class UpdateWatermarkTemplateReq:
         水印持续时间<br/>
 
         :param timeline_duration: The timeline_duration of this UpdateWatermarkTemplateReq.
-        :type: str
+        :type timeline_duration: str
         """
         self._timeline_duration = timeline_duration
 

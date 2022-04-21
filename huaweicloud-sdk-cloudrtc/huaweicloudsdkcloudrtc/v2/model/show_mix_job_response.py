@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowMixJobResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class ShowMixJobResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, stream_name=None, app_id=None, room_id=None, mix_param=None, record_param=None, create_time=None, update_time=None, state=None, stop_reason=None, description=None, start_time=None, stop_time=None, x_request_id=None):
-        """ShowMixJobResponse - a model defined in huaweicloud sdk"""
+        """ShowMixJobResponse
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 任务编号，可以用于修改、查看和停止合流任务
+        :type job_id: str
+        :param stream_name: 流名
+        :type stream_name: str
+        :param app_id: 应用id
+        :type app_id: str
+        :param room_id: 房间id
+        :type room_id: str
+        :param mix_param: 
+        :type mix_param: :class:`huaweicloudsdkcloudrtc.v2.MixParam`
+        :param record_param: 
+        :type record_param: :class:`huaweicloudsdkcloudrtc.v2.RecordParam`
+        :param create_time: 任务创建的时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
+        :type create_time: str
+        :param update_time: 任务中的布局更新的时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
+        :type update_time: str
+        :param state: 任务状态。  - INIT：任务正在初始化 - RUNNING：任务正在运行 - STOPPED：任务已停止 
+        :type state: str
+        :param stop_reason: 任务结束原因
+        :type stop_reason: str
+        :param description: 状态描述，对state字段的一些补充说明，可用于人工查阅。
+        :type description: str
+        :param start_time: 任务开始时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
+        :type start_time: str
+        :param stop_time: 任务结束时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
+        :type stop_time: str
+        :param x_request_id: 
+        :type x_request_id: str
+        """
         
         super(ShowMixJobResponse, self).__init__()
 
@@ -123,7 +154,7 @@ class ShowMixJobResponse(SdkResponse):
         任务编号，可以用于修改、查看和停止合流任务
 
         :param job_id: The job_id of this ShowMixJobResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -145,7 +176,7 @@ class ShowMixJobResponse(SdkResponse):
         流名
 
         :param stream_name: The stream_name of this ShowMixJobResponse.
-        :type: str
+        :type stream_name: str
         """
         self._stream_name = stream_name
 
@@ -167,7 +198,7 @@ class ShowMixJobResponse(SdkResponse):
         应用id
 
         :param app_id: The app_id of this ShowMixJobResponse.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -189,7 +220,7 @@ class ShowMixJobResponse(SdkResponse):
         房间id
 
         :param room_id: The room_id of this ShowMixJobResponse.
-        :type: str
+        :type room_id: str
         """
         self._room_id = room_id
 
@@ -199,7 +230,7 @@ class ShowMixJobResponse(SdkResponse):
 
 
         :return: The mix_param of this ShowMixJobResponse.
-        :rtype: MixParam
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.MixParam`
         """
         return self._mix_param
 
@@ -209,7 +240,7 @@ class ShowMixJobResponse(SdkResponse):
 
 
         :param mix_param: The mix_param of this ShowMixJobResponse.
-        :type: MixParam
+        :type mix_param: :class:`huaweicloudsdkcloudrtc.v2.MixParam`
         """
         self._mix_param = mix_param
 
@@ -219,7 +250,7 @@ class ShowMixJobResponse(SdkResponse):
 
 
         :return: The record_param of this ShowMixJobResponse.
-        :rtype: RecordParam
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.RecordParam`
         """
         return self._record_param
 
@@ -229,7 +260,7 @@ class ShowMixJobResponse(SdkResponse):
 
 
         :param record_param: The record_param of this ShowMixJobResponse.
-        :type: RecordParam
+        :type record_param: :class:`huaweicloudsdkcloudrtc.v2.RecordParam`
         """
         self._record_param = record_param
 
@@ -251,7 +282,7 @@ class ShowMixJobResponse(SdkResponse):
         任务创建的时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
 
         :param create_time: The create_time of this ShowMixJobResponse.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -273,7 +304,7 @@ class ShowMixJobResponse(SdkResponse):
         任务中的布局更新的时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
 
         :param update_time: The update_time of this ShowMixJobResponse.
-        :type: str
+        :type update_time: str
         """
         self._update_time = update_time
 
@@ -295,7 +326,7 @@ class ShowMixJobResponse(SdkResponse):
         任务状态。  - INIT：任务正在初始化 - RUNNING：任务正在运行 - STOPPED：任务已停止 
 
         :param state: The state of this ShowMixJobResponse.
-        :type: str
+        :type state: str
         """
         self._state = state
 
@@ -317,7 +348,7 @@ class ShowMixJobResponse(SdkResponse):
         任务结束原因
 
         :param stop_reason: The stop_reason of this ShowMixJobResponse.
-        :type: str
+        :type stop_reason: str
         """
         self._stop_reason = stop_reason
 
@@ -339,7 +370,7 @@ class ShowMixJobResponse(SdkResponse):
         状态描述，对state字段的一些补充说明，可用于人工查阅。
 
         :param description: The description of this ShowMixJobResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -361,7 +392,7 @@ class ShowMixJobResponse(SdkResponse):
         任务开始时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
 
         :param start_time: The start_time of this ShowMixJobResponse.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -383,7 +414,7 @@ class ShowMixJobResponse(SdkResponse):
         任务结束时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
 
         :param stop_time: The stop_time of this ShowMixJobResponse.
-        :type: str
+        :type stop_time: str
         """
         self._stop_time = stop_time
 
@@ -403,7 +434,7 @@ class ShowMixJobResponse(SdkResponse):
 
 
         :param x_request_id: The x_request_id of this ShowMixJobResponse.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 

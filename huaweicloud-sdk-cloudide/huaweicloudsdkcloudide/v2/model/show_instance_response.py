@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowInstanceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowInstanceResponse(SdkResponse):
     }
 
     def __init__(self, instance=None, status=None, bundle_url=None):
-        """ShowInstanceResponse - a model defined in huaweicloud sdk"""
+        """ShowInstanceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param instance: 
+        :type instance: :class:`huaweicloudsdkcloudide.v2.InstancesVO`
+        :param status: 状态
+        :type status: str
+        :param bundle_url: 静态资源链接
+        :type bundle_url: str
+        """
         
         super(ShowInstanceResponse, self).__init__()
 
@@ -56,7 +65,7 @@ class ShowInstanceResponse(SdkResponse):
 
 
         :return: The instance of this ShowInstanceResponse.
-        :rtype: InstancesVO
+        :rtype: :class:`huaweicloudsdkcloudide.v2.InstancesVO`
         """
         return self._instance
 
@@ -66,7 +75,7 @@ class ShowInstanceResponse(SdkResponse):
 
 
         :param instance: The instance of this ShowInstanceResponse.
-        :type: InstancesVO
+        :type instance: :class:`huaweicloudsdkcloudide.v2.InstancesVO`
         """
         self._instance = instance
 
@@ -88,7 +97,7 @@ class ShowInstanceResponse(SdkResponse):
         状态
 
         :param status: The status of this ShowInstanceResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -110,7 +119,7 @@ class ShowInstanceResponse(SdkResponse):
         静态资源链接
 
         :param bundle_url: The bundle_url of this ShowInstanceResponse.
-        :type: str
+        :type bundle_url: str
         """
         self._bundle_url = bundle_url
 

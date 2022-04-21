@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SyncJob:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class SyncJob:
     }
 
     def __init__(self, created_at=None, domain_id=None, domain_name=None, id=None, namespace=None, override=None, remote_namespace=None, remote_region_id=None, repo_name=None, status=None, sync_operator_id=None, sync_operator_name=None, tag=None, updated_at=None):
-        """SyncJob - a model defined in huaweicloud sdk"""
+        """SyncJob
+
+        The model defined in huaweicloud sdk
+
+        :param created_at: 创建时间，UTC日期格式，时间为UTC标准时间，用户需要根据本地时间计算偏移量；如东8区需要+8:00
+        :type created_at: str
+        :param domain_id: 租户ID
+        :type domain_id: str
+        :param domain_name: 租户名
+        :type domain_name: str
+        :param id: ID
+        :type id: int
+        :param namespace: 组织名
+        :type namespace: str
+        :param override: 是否覆盖
+        :type override: bool
+        :param remote_namespace: 目的组织
+        :type remote_namespace: str
+        :param remote_region_id: 目的region
+        :type remote_region_id: str
+        :param repo_name: 仓库名
+        :type repo_name: str
+        :param status: 同步状态,waiting、running、success、failed、timeout、cancel、existed
+        :type status: str
+        :param sync_operator_id: 操作用户ID
+        :type sync_operator_id: str
+        :param sync_operator_name: 操作用户名
+        :type sync_operator_name: str
+        :param tag: 镜像版本
+        :type tag: str
+        :param updated_at: updatedAt
+        :type updated_at: str
+        """
         
         
 
@@ -109,7 +140,7 @@ class SyncJob:
         创建时间，UTC日期格式，时间为UTC标准时间，用户需要根据本地时间计算偏移量；如东8区需要+8:00
 
         :param created_at: The created_at of this SyncJob.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -131,7 +162,7 @@ class SyncJob:
         租户ID
 
         :param domain_id: The domain_id of this SyncJob.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -153,7 +184,7 @@ class SyncJob:
         租户名
 
         :param domain_name: The domain_name of this SyncJob.
-        :type: str
+        :type domain_name: str
         """
         self._domain_name = domain_name
 
@@ -175,7 +206,7 @@ class SyncJob:
         ID
 
         :param id: The id of this SyncJob.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -197,7 +228,7 @@ class SyncJob:
         组织名
 
         :param namespace: The namespace of this SyncJob.
-        :type: str
+        :type namespace: str
         """
         self._namespace = namespace
 
@@ -219,7 +250,7 @@ class SyncJob:
         是否覆盖
 
         :param override: The override of this SyncJob.
-        :type: bool
+        :type override: bool
         """
         self._override = override
 
@@ -241,7 +272,7 @@ class SyncJob:
         目的组织
 
         :param remote_namespace: The remote_namespace of this SyncJob.
-        :type: str
+        :type remote_namespace: str
         """
         self._remote_namespace = remote_namespace
 
@@ -263,7 +294,7 @@ class SyncJob:
         目的region
 
         :param remote_region_id: The remote_region_id of this SyncJob.
-        :type: str
+        :type remote_region_id: str
         """
         self._remote_region_id = remote_region_id
 
@@ -285,7 +316,7 @@ class SyncJob:
         仓库名
 
         :param repo_name: The repo_name of this SyncJob.
-        :type: str
+        :type repo_name: str
         """
         self._repo_name = repo_name
 
@@ -307,7 +338,7 @@ class SyncJob:
         同步状态,waiting、running、success、failed、timeout、cancel、existed
 
         :param status: The status of this SyncJob.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -329,7 +360,7 @@ class SyncJob:
         操作用户ID
 
         :param sync_operator_id: The sync_operator_id of this SyncJob.
-        :type: str
+        :type sync_operator_id: str
         """
         self._sync_operator_id = sync_operator_id
 
@@ -351,7 +382,7 @@ class SyncJob:
         操作用户名
 
         :param sync_operator_name: The sync_operator_name of this SyncJob.
-        :type: str
+        :type sync_operator_name: str
         """
         self._sync_operator_name = sync_operator_name
 
@@ -373,7 +404,7 @@ class SyncJob:
         镜像版本
 
         :param tag: The tag of this SyncJob.
-        :type: str
+        :type tag: str
         """
         self._tag = tag
 
@@ -395,7 +426,7 @@ class SyncJob:
         updatedAt
 
         :param updated_at: The updated_at of this SyncJob.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 

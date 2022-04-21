@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListMetadataAomPromGetResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListMetadataAomPromGetResponse(SdkResponse):
     }
 
     def __init__(self, status=None, data=None):
-        """ListMetadataAomPromGetResponse - a model defined in huaweicloud sdk"""
+        """ListMetadataAomPromGetResponse
+
+        The model defined in huaweicloud sdk
+
+        :param status: 响应状态。
+        :type status: str
+        :param data: 元数据信息。
+        :type data: object
+        """
         
         super(ListMetadataAomPromGetResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListMetadataAomPromGetResponse(SdkResponse):
         响应状态。
 
         :param status: The status of this ListMetadataAomPromGetResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -85,7 +92,7 @@ class ListMetadataAomPromGetResponse(SdkResponse):
         元数据信息。
 
         :param data: The data of this ListMetadataAomPromGetResponse.
-        :type: object
+        :type data: object
         """
         self._data = data
 

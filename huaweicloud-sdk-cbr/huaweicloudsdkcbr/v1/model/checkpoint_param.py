@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CheckpointParam:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class CheckpointParam:
     }
 
     def __init__(self, auto_trigger=None, description=None, incremental=None, name=None, resources=None, resource_details=None, policy_id=None):
-        """CheckpointParam - a model defined in huaweicloud sdk"""
+        """CheckpointParam
+
+        The model defined in huaweicloud sdk
+
+        :param auto_trigger: 是否自动触发,true:自动触发，false：非自动触发。
+        :type auto_trigger: bool
+        :param description: 备份描述
+        :type description: str
+        :param incremental: 是否增量备份，true:增量备份，false：非增量备份。
+        :type incremental: bool
+        :param name: 备份名称
+        :type name: str
+        :param resources: 待备份的资源id列表:uuid
+        :type resources: list[str]
+        :param resource_details: 资源详情
+        :type resource_details: list[:class:`huaweicloudsdkcbr.v1.Resource`]
+        :param policy_id: 自动备份时的策略id
+        :type policy_id: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class CheckpointParam:
         是否自动触发,true:自动触发，false：非自动触发。
 
         :param auto_trigger: The auto_trigger of this CheckpointParam.
-        :type: bool
+        :type auto_trigger: bool
         """
         self._auto_trigger = auto_trigger
 
@@ -110,7 +127,7 @@ class CheckpointParam:
         备份描述
 
         :param description: The description of this CheckpointParam.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -132,7 +149,7 @@ class CheckpointParam:
         是否增量备份，true:增量备份，false：非增量备份。
 
         :param incremental: The incremental of this CheckpointParam.
-        :type: bool
+        :type incremental: bool
         """
         self._incremental = incremental
 
@@ -154,7 +171,7 @@ class CheckpointParam:
         备份名称
 
         :param name: The name of this CheckpointParam.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -176,7 +193,7 @@ class CheckpointParam:
         待备份的资源id列表:uuid
 
         :param resources: The resources of this CheckpointParam.
-        :type: list[str]
+        :type resources: list[str]
         """
         self._resources = resources
 
@@ -187,7 +204,7 @@ class CheckpointParam:
         资源详情
 
         :return: The resource_details of this CheckpointParam.
-        :rtype: list[Resource]
+        :rtype: list[:class:`huaweicloudsdkcbr.v1.Resource`]
         """
         return self._resource_details
 
@@ -198,7 +215,7 @@ class CheckpointParam:
         资源详情
 
         :param resource_details: The resource_details of this CheckpointParam.
-        :type: list[Resource]
+        :type resource_details: list[:class:`huaweicloudsdkcbr.v1.Resource`]
         """
         self._resource_details = resource_details
 
@@ -220,7 +237,7 @@ class CheckpointParam:
         自动备份时的策略id
 
         :param policy_id: The policy_id of this CheckpointParam.
-        :type: str
+        :type policy_id: str
         """
         self._policy_id = policy_id
 

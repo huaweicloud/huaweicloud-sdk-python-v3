@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EnlargeRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class EnlargeRequest:
     }
 
     def __init__(self, flavor_id=None, node_number=None, group_id=None):
-        """EnlargeRequest - a model defined in huaweicloud sdk"""
+        """EnlargeRequest
+
+        The model defined in huaweicloud sdk
+
+        :param flavor_id: 当前进行节点扩容的DDM实例底层虚机规格id
+        :type flavor_id: str
+        :param node_number: 需要扩容的节点个数
+        :type node_number: int
+        :param group_id: 组id，指定当前进行节点扩容的组。当实例的组&gt;1时，必填。
+        :type group_id: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class EnlargeRequest:
         当前进行节点扩容的DDM实例底层虚机规格id
 
         :param flavor_id: The flavor_id of this EnlargeRequest.
-        :type: str
+        :type flavor_id: str
         """
         self._flavor_id = flavor_id
 
@@ -88,7 +97,7 @@ class EnlargeRequest:
         需要扩容的节点个数
 
         :param node_number: The node_number of this EnlargeRequest.
-        :type: int
+        :type node_number: int
         """
         self._node_number = node_number
 
@@ -110,7 +119,7 @@ class EnlargeRequest:
         组id，指定当前进行节点扩容的组。当实例的组>1时，必填。
 
         :param group_id: The group_id of this EnlargeRequest.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExportCertificateRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ExportCertificateRequest:
     }
 
     def __init__(self, certificate_id=None):
-        """ExportCertificateRequest - a model defined in huaweicloud sdk"""
+        """ExportCertificateRequest
+
+        The model defined in huaweicloud sdk
+
+        :param certificate_id: 证书id。
+        :type certificate_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ExportCertificateRequest:
         证书id。
 
         :param certificate_id: The certificate_id of this ExportCertificateRequest.
-        :type: str
+        :type certificate_id: str
         """
         self._certificate_id = certificate_id
 

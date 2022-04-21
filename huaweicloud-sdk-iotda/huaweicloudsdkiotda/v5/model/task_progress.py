@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TaskProgress:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class TaskProgress:
     }
 
     def __init__(self, total=None, processing=None, success=None, fail=None, waitting=None, fail_wait_retry=None, stopped=None):
-        """TaskProgress - a model defined in huaweicloud sdk"""
+        """TaskProgress
+
+        The model defined in huaweicloud sdk
+
+        :param total: 子任务总个数。
+        :type total: int
+        :param processing: 正在执行的子任务个数。
+        :type processing: int
+        :param success: 执行成功的子任务个数。
+        :type success: int
+        :param fail: 执行失败的的子任务个数。
+        :type fail: int
+        :param waitting: 等待执行的子任务个数。
+        :type waitting: int
+        :param fail_wait_retry: 失败等待重试的子任务个数。
+        :type fail_wait_retry: int
+        :param stopped: 停止的子任务个数。
+        :type stopped: int
+        """
         
         
 
@@ -88,7 +105,7 @@ class TaskProgress:
         子任务总个数。
 
         :param total: The total of this TaskProgress.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -110,7 +127,7 @@ class TaskProgress:
         正在执行的子任务个数。
 
         :param processing: The processing of this TaskProgress.
-        :type: int
+        :type processing: int
         """
         self._processing = processing
 
@@ -132,7 +149,7 @@ class TaskProgress:
         执行成功的子任务个数。
 
         :param success: The success of this TaskProgress.
-        :type: int
+        :type success: int
         """
         self._success = success
 
@@ -154,7 +171,7 @@ class TaskProgress:
         执行失败的的子任务个数。
 
         :param fail: The fail of this TaskProgress.
-        :type: int
+        :type fail: int
         """
         self._fail = fail
 
@@ -176,7 +193,7 @@ class TaskProgress:
         等待执行的子任务个数。
 
         :param waitting: The waitting of this TaskProgress.
-        :type: int
+        :type waitting: int
         """
         self._waitting = waitting
 
@@ -198,7 +215,7 @@ class TaskProgress:
         失败等待重试的子任务个数。
 
         :param fail_wait_retry: The fail_wait_retry of this TaskProgress.
-        :type: int
+        :type fail_wait_retry: int
         """
         self._fail_wait_retry = fail_wait_retry
 
@@ -220,7 +237,7 @@ class TaskProgress:
         停止的子任务个数。
 
         :param stopped: The stopped of this TaskProgress.
-        :type: int
+        :type stopped: int
         """
         self._stopped = stopped
 

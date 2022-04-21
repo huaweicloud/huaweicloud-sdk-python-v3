@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteGraphRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteGraphRequest:
     }
 
     def __init__(self, graph_id=None, keep_backup=None):
-        """DeleteGraphRequest - a model defined in huaweicloud sdk"""
+        """DeleteGraphRequest
+
+        The model defined in huaweicloud sdk
+
+        :param graph_id: 图ID。
+        :type graph_id: str
+        :param keep_backup: 删除图后是否保留备份，默认保留1个自动备份和2个手动备份。该查询参数为空时，表示不保留。
+        :type keep_backup: bool
+        """
         
         
 
@@ -62,7 +69,7 @@ class DeleteGraphRequest:
         图ID。
 
         :param graph_id: The graph_id of this DeleteGraphRequest.
-        :type: str
+        :type graph_id: str
         """
         self._graph_id = graph_id
 
@@ -84,7 +91,7 @@ class DeleteGraphRequest:
         删除图后是否保留备份，默认保留1个自动备份和2个手动备份。该查询参数为空时，表示不保留。
 
         :param keep_backup: The keep_backup of this DeleteGraphRequest.
-        :type: bool
+        :type keep_backup: bool
         """
         self._keep_backup = keep_backup
 

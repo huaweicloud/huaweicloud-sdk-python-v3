@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CheckNameRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CheckNameRequest:
     }
 
     def __init__(self, display_name=None):
-        """CheckNameRequest - a model defined in huaweicloud sdk"""
+        """CheckNameRequest
+
+        The model defined in huaweicloud sdk
+
+        :param display_name: 实例名。 可以输入中文、数字、字母、下划线、点、破折号。长度介于3-100之间
+        :type display_name: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class CheckNameRequest:
         实例名。 可以输入中文、数字、字母、下划线、点、破折号。长度介于3-100之间
 
         :param display_name: The display_name of this CheckNameRequest.
-        :type: str
+        :type display_name: str
         """
         self._display_name = display_name
 

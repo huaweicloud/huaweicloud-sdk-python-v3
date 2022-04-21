@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InsertHeader:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class InsertHeader:
     }
 
     def __init__(self, x_forwarded_elb_ip=None, x_forwarded_host=None):
-        """InsertHeader - a model defined in huaweicloud sdk"""
+        """InsertHeader
+
+        The model defined in huaweicloud sdk
+
+        :param x_forwarded_elb_ip: 负载均衡器弹性公网IP透传开关。
+        :type x_forwarded_elb_ip: bool
+        :param x_forwarded_host: X-Forwarded-Host设为true可以将客户请求头的第一个X-Forwarded-Host设置为请求头的Host带到后端云服务器。
+        :type x_forwarded_host: bool
+        """
         
         
 
@@ -63,7 +70,7 @@ class InsertHeader:
         负载均衡器弹性公网IP透传开关。
 
         :param x_forwarded_elb_ip: The x_forwarded_elb_ip of this InsertHeader.
-        :type: bool
+        :type x_forwarded_elb_ip: bool
         """
         self._x_forwarded_elb_ip = x_forwarded_elb_ip
 
@@ -85,7 +92,7 @@ class InsertHeader:
         X-Forwarded-Host设为true可以将客户请求头的第一个X-Forwarded-Host设置为请求头的Host带到后端云服务器。
 
         :param x_forwarded_host: The x_forwarded_host of this InsertHeader.
-        :type: bool
+        :type x_forwarded_host: bool
         """
         self._x_forwarded_host = x_forwarded_host
 

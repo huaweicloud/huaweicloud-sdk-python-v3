@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListApplicationAttributesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListApplicationAttributesRequest:
     }
 
     def __init__(self, application_urn=None):
-        """ListApplicationAttributesRequest - a model defined in huaweicloud sdk"""
+        """ListApplicationAttributesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param application_urn: Application的唯一资源标识，可通过[查询Application](https://support.huaweicloud.com/api-smn/ListApplications.html)获取该标识。
+        :type application_urn: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ListApplicationAttributesRequest:
         Application的唯一资源标识，可通过[查询Application](https://support.huaweicloud.com/api-smn/ListApplications.html)获取该标识。
 
         :param application_urn: The application_urn of this ListApplicationAttributesRequest.
-        :type: str
+        :type application_urn: str
         """
         self._application_urn = application_urn
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MockApiBaseInfoHeader:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class MockApiBaseInfoHeader:
     }
 
     def __init__(self, key=None, value=None, remark=None):
-        """MockApiBaseInfoHeader - a model defined in huaweicloud sdk"""
+        """MockApiBaseInfoHeader
+
+        The model defined in huaweicloud sdk
+
+        :param key: mock后端自定义响应头header key
+        :type key: str
+        :param value: mock后端自定义响应头header value
+        :type value: str
+        :param remark: mock后端自定义响应头header remark
+        :type remark: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class MockApiBaseInfoHeader:
         mock后端自定义响应头header key
 
         :param key: The key of this MockApiBaseInfoHeader.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -90,7 +99,7 @@ class MockApiBaseInfoHeader:
         mock后端自定义响应头header value
 
         :param value: The value of this MockApiBaseInfoHeader.
-        :type: str
+        :type value: str
         """
         self._value = value
 
@@ -112,7 +121,7 @@ class MockApiBaseInfoHeader:
         mock后端自定义响应头header remark
 
         :param remark: The remark of this MockApiBaseInfoHeader.
-        :type: str
+        :type remark: str
         """
         self._remark = remark
 

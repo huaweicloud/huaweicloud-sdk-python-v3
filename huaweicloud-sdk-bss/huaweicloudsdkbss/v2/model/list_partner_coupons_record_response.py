@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPartnerCouponsRecordResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListPartnerCouponsRecordResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, records=None):
-        """ListPartnerCouponsRecordResponse - a model defined in huaweicloud sdk"""
+        """ListPartnerCouponsRecordResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total_count: 查询记录总数。
+        :type total_count: int
+        :param records: 日志记录列表。 具体请参见表2。
+        :type records: list[:class:`huaweicloudsdkbss.v2.CouponRecordV2`]
+        """
         
         super(ListPartnerCouponsRecordResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListPartnerCouponsRecordResponse(SdkResponse):
         查询记录总数。
 
         :param total_count: The total_count of this ListPartnerCouponsRecordResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 
@@ -74,7 +81,7 @@ class ListPartnerCouponsRecordResponse(SdkResponse):
         日志记录列表。 具体请参见表2。
 
         :return: The records of this ListPartnerCouponsRecordResponse.
-        :rtype: list[CouponRecordV2]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.CouponRecordV2`]
         """
         return self._records
 
@@ -85,7 +92,7 @@ class ListPartnerCouponsRecordResponse(SdkResponse):
         日志记录列表。 具体请参见表2。
 
         :param records: The records of this ListPartnerCouponsRecordResponse.
-        :type: list[CouponRecordV2]
+        :type records: list[:class:`huaweicloudsdkbss.v2.CouponRecordV2`]
         """
         self._records = records
 

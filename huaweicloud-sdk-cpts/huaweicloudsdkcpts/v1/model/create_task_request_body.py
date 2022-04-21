@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateTaskRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class CreateTaskRequestBody:
     }
 
     def __init__(self, name=None, project_id=None, temps=None, operate_mode=None, bench_concurrent=None):
-        """CreateTaskRequestBody - a model defined in huaweicloud sdk"""
+        """CreateTaskRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param name: name
+        :type name: str
+        :param project_id: project_id
+        :type project_id: int
+        :param temps: temps
+        :type temps: list[str]
+        :param operate_mode: operate_mode
+        :type operate_mode: int
+        :param bench_concurrent: bench_concurrent
+        :type bench_concurrent: int
+        """
         
         
 
@@ -76,7 +89,7 @@ class CreateTaskRequestBody:
         name
 
         :param name: The name of this CreateTaskRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -98,7 +111,7 @@ class CreateTaskRequestBody:
         project_id
 
         :param project_id: The project_id of this CreateTaskRequestBody.
-        :type: int
+        :type project_id: int
         """
         self._project_id = project_id
 
@@ -120,7 +133,7 @@ class CreateTaskRequestBody:
         temps
 
         :param temps: The temps of this CreateTaskRequestBody.
-        :type: list[str]
+        :type temps: list[str]
         """
         self._temps = temps
 
@@ -142,7 +155,7 @@ class CreateTaskRequestBody:
         operate_mode
 
         :param operate_mode: The operate_mode of this CreateTaskRequestBody.
-        :type: int
+        :type operate_mode: int
         """
         self._operate_mode = operate_mode
 
@@ -164,7 +177,7 @@ class CreateTaskRequestBody:
         bench_concurrent
 
         :param bench_concurrent: The bench_concurrent of this CreateTaskRequestBody.
-        :type: int
+        :type bench_concurrent: int
         """
         self._bench_concurrent = bench_concurrent
 

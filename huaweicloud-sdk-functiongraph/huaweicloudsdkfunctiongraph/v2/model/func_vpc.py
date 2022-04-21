@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FuncVpc:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class FuncVpc:
     }
 
     def __init__(self, vpc_name=None, vpc_id=None, subnet_name=None, subnet_id=None, cidr=None, gateway=None):
-        """FuncVpc - a model defined in huaweicloud sdk"""
+        """FuncVpc
+
+        The model defined in huaweicloud sdk
+
+        :param vpc_name: 虚拟私有云名称。
+        :type vpc_name: str
+        :param vpc_id: 虚拟私有云唯一标识。
+        :type vpc_id: str
+        :param subnet_name: 子网名称。
+        :type subnet_name: str
+        :param subnet_id: 子网编号。
+        :type subnet_id: str
+        :param cidr: 子网掩码。
+        :type cidr: str
+        :param gateway: 网关。
+        :type gateway: str
+        """
         
         
 
@@ -77,7 +92,7 @@ class FuncVpc:
         虚拟私有云名称。
 
         :param vpc_name: The vpc_name of this FuncVpc.
-        :type: str
+        :type vpc_name: str
         """
         self._vpc_name = vpc_name
 
@@ -99,7 +114,7 @@ class FuncVpc:
         虚拟私有云唯一标识。
 
         :param vpc_id: The vpc_id of this FuncVpc.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -121,7 +136,7 @@ class FuncVpc:
         子网名称。
 
         :param subnet_name: The subnet_name of this FuncVpc.
-        :type: str
+        :type subnet_name: str
         """
         self._subnet_name = subnet_name
 
@@ -143,7 +158,7 @@ class FuncVpc:
         子网编号。
 
         :param subnet_id: The subnet_id of this FuncVpc.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -165,7 +180,7 @@ class FuncVpc:
         子网掩码。
 
         :param cidr: The cidr of this FuncVpc.
-        :type: str
+        :type cidr: str
         """
         self._cidr = cidr
 
@@ -187,7 +202,7 @@ class FuncVpc:
         网关。
 
         :param gateway: The gateway of this FuncVpc.
-        :type: str
+        :type gateway: str
         """
         self._gateway = gateway
 

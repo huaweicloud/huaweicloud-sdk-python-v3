@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateMergeChannelsTaskRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateMergeChannelsTaskRequest:
     }
 
     def __init__(self, body=None):
-        """CreateMergeChannelsTaskRequest - a model defined in huaweicloud sdk"""
+        """CreateMergeChannelsTaskRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateMergeChannelsTaskRequest
+        :type body: :class:`huaweicloudsdkmpc.v1.CreateMergeChannelsReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateMergeChannelsTaskRequest:
 
 
         :return: The body of this CreateMergeChannelsTaskRequest.
-        :rtype: CreateMergeChannelsReq
+        :rtype: :class:`huaweicloudsdkmpc.v1.CreateMergeChannelsReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateMergeChannelsTaskRequest:
 
 
         :param body: The body of this CreateMergeChannelsTaskRequest.
-        :type: CreateMergeChannelsReq
+        :type body: :class:`huaweicloudsdkmpc.v1.CreateMergeChannelsReq`
         """
         self._body = body
 

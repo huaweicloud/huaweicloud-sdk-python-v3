@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IndividualStreamJobReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class IndividualStreamJobReq:
     }
 
     def __init__(self, room_id=None, user_id=None, is_record_audio=None, video_type=None, select_stream_type=None, max_idle_time=None, publish_param=None, record_param=None):
-        """IndividualStreamJobReq - a model defined in huaweicloud sdk"""
+        """IndividualStreamJobReq
+
+        The model defined in huaweicloud sdk
+
+        :param room_id: 房间id
+        :type room_id: str
+        :param user_id: 选看的用户id，单个录制任务内保证唯一
+        :type user_id: str
+        :param is_record_audio:  是否录制音频。  - true：录制音频 - false：不录制音频  缺省为true。 
+        :type is_record_audio: bool
+        :param video_type: 标识视频流的类型，可选摄像头流或者屏幕分享流，未填写表示不录制视频。  - CAMERASTREAM：摄像头视频流 - SCREENSTREAM：屏幕分享视频流  默认为CAMERASTREAM。 
+        :type video_type: str
+        :param select_stream_type: 指定窗口拉取的分辨率档位。  - LD - SD - HD - FHD  缺省为FHD。 
+        :type select_stream_type: str
+        :param max_idle_time: 最长空闲频道时间。  取值范围：[5，43200]，默认值为30。  单位：秒。  如果频道内无连麦方的状态持续超过该时间，录制程序会自动退出。退出后，再次调用start请求，会产生新的录制任务。  连麦方指：joiner或者publisher的用户。 
+        :type max_idle_time: int
+        :param publish_param: 
+        :type publish_param: :class:`huaweicloudsdkcloudrtc.v2.PublishParam`
+        :param record_param: 
+        :type record_param: :class:`huaweicloudsdkcloudrtc.v2.RecordParam`
+        """
         
         
 
@@ -91,7 +110,7 @@ class IndividualStreamJobReq:
         房间id
 
         :param room_id: The room_id of this IndividualStreamJobReq.
-        :type: str
+        :type room_id: str
         """
         self._room_id = room_id
 
@@ -113,7 +132,7 @@ class IndividualStreamJobReq:
         选看的用户id，单个录制任务内保证唯一
 
         :param user_id: The user_id of this IndividualStreamJobReq.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -135,7 +154,7 @@ class IndividualStreamJobReq:
          是否录制音频。  - true：录制音频 - false：不录制音频  缺省为true。 
 
         :param is_record_audio: The is_record_audio of this IndividualStreamJobReq.
-        :type: bool
+        :type is_record_audio: bool
         """
         self._is_record_audio = is_record_audio
 
@@ -157,7 +176,7 @@ class IndividualStreamJobReq:
         标识视频流的类型，可选摄像头流或者屏幕分享流，未填写表示不录制视频。  - CAMERASTREAM：摄像头视频流 - SCREENSTREAM：屏幕分享视频流  默认为CAMERASTREAM。 
 
         :param video_type: The video_type of this IndividualStreamJobReq.
-        :type: str
+        :type video_type: str
         """
         self._video_type = video_type
 
@@ -179,7 +198,7 @@ class IndividualStreamJobReq:
         指定窗口拉取的分辨率档位。  - LD - SD - HD - FHD  缺省为FHD。 
 
         :param select_stream_type: The select_stream_type of this IndividualStreamJobReq.
-        :type: str
+        :type select_stream_type: str
         """
         self._select_stream_type = select_stream_type
 
@@ -201,7 +220,7 @@ class IndividualStreamJobReq:
         最长空闲频道时间。  取值范围：[5，43200]，默认值为30。  单位：秒。  如果频道内无连麦方的状态持续超过该时间，录制程序会自动退出。退出后，再次调用start请求，会产生新的录制任务。  连麦方指：joiner或者publisher的用户。 
 
         :param max_idle_time: The max_idle_time of this IndividualStreamJobReq.
-        :type: int
+        :type max_idle_time: int
         """
         self._max_idle_time = max_idle_time
 
@@ -211,7 +230,7 @@ class IndividualStreamJobReq:
 
 
         :return: The publish_param of this IndividualStreamJobReq.
-        :rtype: PublishParam
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.PublishParam`
         """
         return self._publish_param
 
@@ -221,7 +240,7 @@ class IndividualStreamJobReq:
 
 
         :param publish_param: The publish_param of this IndividualStreamJobReq.
-        :type: PublishParam
+        :type publish_param: :class:`huaweicloudsdkcloudrtc.v2.PublishParam`
         """
         self._publish_param = publish_param
 
@@ -231,7 +250,7 @@ class IndividualStreamJobReq:
 
 
         :return: The record_param of this IndividualStreamJobReq.
-        :rtype: RecordParam
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.RecordParam`
         """
         return self._record_param
 
@@ -241,7 +260,7 @@ class IndividualStreamJobReq:
 
 
         :param record_param: The record_param of this IndividualStreamJobReq.
-        :type: RecordParam
+        :type record_param: :class:`huaweicloudsdkcloudrtc.v2.RecordParam`
         """
         self._record_param = record_param
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateL7ruleReqInPolicy:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class CreateL7ruleReqInPolicy:
     }
 
     def __init__(self, admin_state_up=None, type=None, compare_type=None, key=None, value=None, invert=None):
-        """CreateL7ruleReqInPolicy - a model defined in huaweicloud sdk"""
+        """CreateL7ruleReqInPolicy
+
+        The model defined in huaweicloud sdk
+
+        :param admin_state_up: 转发规则的管理状态；该字段为预留字段，暂未启用。默认为true。
+        :type admin_state_up: bool
+        :param type: 转发规则的匹配内容
+        :type type: str
+        :param compare_type: 转发规则的匹配方式。type为HOST_NAME时可以为EQUAL_TO。type为PATH时可以为REGEX， STARTS_WITH，EQUAL_TO。
+        :type compare_type: str
+        :param key: 匹配内容的键值。目前匹配内容为HOST_NAME和PATH时，该字段不生效。该字段能更新但不会生效。
+        :type key: str
+        :param value: 匹配内容的值。其值不能包含空格。使用说明：当type为HOST_NAME时，取值范围：String(100)，字符串只能包含英文字母、数字、“-”或“.”，且必须以字母或数字开头。当type为PATH时，取值范围：String(128)。当转发规则的compare_type为STARTS_WITH，EQUAL_TO时，字符串只能包含英文字母、数字、_~&#39;;@^-%#&amp;$.*+?,&#x3D;!:| /()[]{}，且必须以\&quot;/\&quot;开头。
+        :type value: str
+        :param invert: 是否反向匹配；取值范围：true/false。默认值：false；该字段为预留字段，暂未启用。
+        :type invert: bool
+        """
         
         
 
@@ -80,7 +95,7 @@ class CreateL7ruleReqInPolicy:
         转发规则的管理状态；该字段为预留字段，暂未启用。默认为true。
 
         :param admin_state_up: The admin_state_up of this CreateL7ruleReqInPolicy.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 
@@ -102,7 +117,7 @@ class CreateL7ruleReqInPolicy:
         转发规则的匹配内容
 
         :param type: The type of this CreateL7ruleReqInPolicy.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -124,7 +139,7 @@ class CreateL7ruleReqInPolicy:
         转发规则的匹配方式。type为HOST_NAME时可以为EQUAL_TO。type为PATH时可以为REGEX， STARTS_WITH，EQUAL_TO。
 
         :param compare_type: The compare_type of this CreateL7ruleReqInPolicy.
-        :type: str
+        :type compare_type: str
         """
         self._compare_type = compare_type
 
@@ -146,7 +161,7 @@ class CreateL7ruleReqInPolicy:
         匹配内容的键值。目前匹配内容为HOST_NAME和PATH时，该字段不生效。该字段能更新但不会生效。
 
         :param key: The key of this CreateL7ruleReqInPolicy.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -168,7 +183,7 @@ class CreateL7ruleReqInPolicy:
         匹配内容的值。其值不能包含空格。使用说明：当type为HOST_NAME时，取值范围：String(100)，字符串只能包含英文字母、数字、“-”或“.”，且必须以字母或数字开头。当type为PATH时，取值范围：String(128)。当转发规则的compare_type为STARTS_WITH，EQUAL_TO时，字符串只能包含英文字母、数字、_~';@^-%#&$.*+?,=!:| /()[]{}，且必须以\"/\"开头。
 
         :param value: The value of this CreateL7ruleReqInPolicy.
-        :type: str
+        :type value: str
         """
         self._value = value
 
@@ -190,7 +205,7 @@ class CreateL7ruleReqInPolicy:
         是否反向匹配；取值范围：true/false。默认值：false；该字段为预留字段，暂未启用。
 
         :param invert: The invert of this CreateL7ruleReqInPolicy.
-        :type: bool
+        :type invert: bool
         """
         self._invert = invert
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateReplicationRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateReplicationRequestBody:
     }
 
     def __init__(self, replication=None):
-        """CreateReplicationRequestBody - a model defined in huaweicloud sdk"""
+        """CreateReplicationRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param replication: 
+        :type replication: :class:`huaweicloudsdksdrs.v1.CreateReplicationRequestParams`
+        """
         
         
 
@@ -45,7 +50,7 @@ class CreateReplicationRequestBody:
 
 
         :return: The replication of this CreateReplicationRequestBody.
-        :rtype: CreateReplicationRequestParams
+        :rtype: :class:`huaweicloudsdksdrs.v1.CreateReplicationRequestParams`
         """
         return self._replication
 
@@ -55,7 +60,7 @@ class CreateReplicationRequestBody:
 
 
         :param replication: The replication of this CreateReplicationRequestBody.
-        :type: CreateReplicationRequestParams
+        :type replication: :class:`huaweicloudsdksdrs.v1.CreateReplicationRequestParams`
         """
         self._replication = replication
 

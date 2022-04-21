@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteTemplatesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteTemplatesRequest:
     }
 
     def __init__(self, body=None):
-        """DeleteTemplatesRequest - a model defined in huaweicloud sdk"""
+        """DeleteTemplatesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the DeleteTemplatesRequest
+        :type body: :class:`huaweicloudsdksms.v3.DeletetemplatesReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class DeleteTemplatesRequest:
 
 
         :return: The body of this DeleteTemplatesRequest.
-        :rtype: DeletetemplatesReq
+        :rtype: :class:`huaweicloudsdksms.v3.DeletetemplatesReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class DeleteTemplatesRequest:
 
 
         :param body: The body of this DeleteTemplatesRequest.
-        :type: DeletetemplatesReq
+        :type body: :class:`huaweicloudsdksms.v3.DeletetemplatesReq`
         """
         self._body = body
 

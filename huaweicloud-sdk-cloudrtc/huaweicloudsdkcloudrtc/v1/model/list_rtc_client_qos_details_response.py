@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRtcClientQosDetailsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListRtcClientQosDetailsResponse(SdkResponse):
     }
 
     def __init__(self, room_id=None, data=None, x_request_id=None):
-        """ListRtcClientQosDetailsResponse - a model defined in huaweicloud sdk"""
+        """ListRtcClientQosDetailsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param room_id: 房间ID
+        :type room_id: str
+        :param data: QoS质量数据
+        :type data: list[:class:`huaweicloudsdkcloudrtc.v1.QosQualityData`]
+        :param x_request_id: 
+        :type x_request_id: str
+        """
         
         super(ListRtcClientQosDetailsResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListRtcClientQosDetailsResponse(SdkResponse):
         房间ID
 
         :param room_id: The room_id of this ListRtcClientQosDetailsResponse.
-        :type: str
+        :type room_id: str
         """
         self._room_id = room_id
 
@@ -79,7 +88,7 @@ class ListRtcClientQosDetailsResponse(SdkResponse):
         QoS质量数据
 
         :return: The data of this ListRtcClientQosDetailsResponse.
-        :rtype: list[QosQualityData]
+        :rtype: list[:class:`huaweicloudsdkcloudrtc.v1.QosQualityData`]
         """
         return self._data
 
@@ -90,7 +99,7 @@ class ListRtcClientQosDetailsResponse(SdkResponse):
         QoS质量数据
 
         :param data: The data of this ListRtcClientQosDetailsResponse.
-        :type: list[QosQualityData]
+        :type data: list[:class:`huaweicloudsdkcloudrtc.v1.QosQualityData`]
         """
         self._data = data
 
@@ -110,7 +119,7 @@ class ListRtcClientQosDetailsResponse(SdkResponse):
 
 
         :param x_request_id: The x_request_id of this ListRtcClientQosDetailsResponse.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowInstanceUsersEntity:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowInstanceUsersEntity:
     }
 
     def __init__(self, user_name=None, role=None, default_app=None, created_time=None):
-        """ShowInstanceUsersEntity - a model defined in huaweicloud sdk"""
+        """ShowInstanceUsersEntity
+
+        The model defined in huaweicloud sdk
+
+        :param user_name: 用户名称。
+        :type user_name: str
+        :param role: 用户角色。
+        :type role: str
+        :param default_app: 是否为默认应用。
+        :type default_app: bool
+        :param created_time: 创建时间。
+        :type created_time: int
+        """
         
         
 
@@ -73,7 +84,7 @@ class ShowInstanceUsersEntity:
         用户名称。
 
         :param user_name: The user_name of this ShowInstanceUsersEntity.
-        :type: str
+        :type user_name: str
         """
         self._user_name = user_name
 
@@ -95,7 +106,7 @@ class ShowInstanceUsersEntity:
         用户角色。
 
         :param role: The role of this ShowInstanceUsersEntity.
-        :type: str
+        :type role: str
         """
         self._role = role
 
@@ -117,7 +128,7 @@ class ShowInstanceUsersEntity:
         是否为默认应用。
 
         :param default_app: The default_app of this ShowInstanceUsersEntity.
-        :type: bool
+        :type default_app: bool
         """
         self._default_app = default_app
 
@@ -139,7 +150,7 @@ class ShowInstanceUsersEntity:
         创建时间。
 
         :param created_time: The created_time of this ShowInstanceUsersEntity.
-        :type: int
+        :type created_time: int
         """
         self._created_time = created_time
 

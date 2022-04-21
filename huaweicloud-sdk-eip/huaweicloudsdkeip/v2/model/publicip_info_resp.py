@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PublicipInfoResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class PublicipInfoResp:
     }
 
     def __init__(self, publicip_address=None, publicip_id=None, publicip_type=None, publicipv6_address=None, ip_version=None):
-        """PublicipInfoResp - a model defined in huaweicloud sdk"""
+        """PublicipInfoResp
+
+        The model defined in huaweicloud sdk
+
+        :param publicip_address: 功能说明：弹性公网IP或者IPv6端口的地址
+        :type publicip_address: str
+        :param publicip_id: 功能说明：带宽对应的弹性公网IP或者IPv6端口的唯一标识
+        :type publicip_id: str
+        :param publicip_type: 功能说明：弹性公网IP或者IPv6端口的类型  取值范围：5_telcom（电信），5_union（联通），5_bgp（全动态BGP），5_sbgp（静态BGP），5_ipv6  东北-大连：5_telcom、5_union  华南-广州：5_bgp、5_sbgp  华东-上海二：5_bgp、5_sbgp  华北-北京一：5_bgp、5_sbgp、5_ipv6  亚太-香港：5_bgp  亚太-曼谷：5_bgp  亚太-新加坡：5_bgp  非洲-约翰内斯堡：5_bgp  西南-贵阳一：5_bgp、5_sbgp  华北-北京四：5_bgp、5_sbgp  约束：必须是系统具体支持的类型
+        :type publicip_type: str
+        :param publicipv6_address: 功能说明：IPv4时无此字段，IPv6时为申请到的弹性公网IP地址
+        :type publicipv6_address: str
+        :param ip_version: IP版本信息  取值范围：  4：IPv4  6：IPv6
+        :type ip_version: int
+        """
         
         
 
@@ -78,7 +91,7 @@ class PublicipInfoResp:
         功能说明：弹性公网IP或者IPv6端口的地址
 
         :param publicip_address: The publicip_address of this PublicipInfoResp.
-        :type: str
+        :type publicip_address: str
         """
         self._publicip_address = publicip_address
 
@@ -100,7 +113,7 @@ class PublicipInfoResp:
         功能说明：带宽对应的弹性公网IP或者IPv6端口的唯一标识
 
         :param publicip_id: The publicip_id of this PublicipInfoResp.
-        :type: str
+        :type publicip_id: str
         """
         self._publicip_id = publicip_id
 
@@ -122,7 +135,7 @@ class PublicipInfoResp:
         功能说明：弹性公网IP或者IPv6端口的类型  取值范围：5_telcom（电信），5_union（联通），5_bgp（全动态BGP），5_sbgp（静态BGP），5_ipv6  东北-大连：5_telcom、5_union  华南-广州：5_bgp、5_sbgp  华东-上海二：5_bgp、5_sbgp  华北-北京一：5_bgp、5_sbgp、5_ipv6  亚太-香港：5_bgp  亚太-曼谷：5_bgp  亚太-新加坡：5_bgp  非洲-约翰内斯堡：5_bgp  西南-贵阳一：5_bgp、5_sbgp  华北-北京四：5_bgp、5_sbgp  约束：必须是系统具体支持的类型
 
         :param publicip_type: The publicip_type of this PublicipInfoResp.
-        :type: str
+        :type publicip_type: str
         """
         self._publicip_type = publicip_type
 
@@ -144,7 +157,7 @@ class PublicipInfoResp:
         功能说明：IPv4时无此字段，IPv6时为申请到的弹性公网IP地址
 
         :param publicipv6_address: The publicipv6_address of this PublicipInfoResp.
-        :type: str
+        :type publicipv6_address: str
         """
         self._publicipv6_address = publicipv6_address
 
@@ -166,7 +179,7 @@ class PublicipInfoResp:
         IP版本信息  取值范围：  4：IPv4  6：IPv6
 
         :param ip_version: The ip_version of this PublicipInfoResp.
-        :type: int
+        :type ip_version: int
         """
         self._ip_version = ip_version
 

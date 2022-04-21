@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchCreateProtectedInstancesRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchCreateProtectedInstancesRequestBody:
     }
 
     def __init__(self, protected_instances=None):
-        """BatchCreateProtectedInstancesRequestBody - a model defined in huaweicloud sdk"""
+        """BatchCreateProtectedInstancesRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param protected_instances: 
+        :type protected_instances: :class:`huaweicloudsdksdrs.v1.BatchCreateProtectedInstancesRequestParams`
+        """
         
         
 
@@ -45,7 +50,7 @@ class BatchCreateProtectedInstancesRequestBody:
 
 
         :return: The protected_instances of this BatchCreateProtectedInstancesRequestBody.
-        :rtype: BatchCreateProtectedInstancesRequestParams
+        :rtype: :class:`huaweicloudsdksdrs.v1.BatchCreateProtectedInstancesRequestParams`
         """
         return self._protected_instances
 
@@ -55,7 +60,7 @@ class BatchCreateProtectedInstancesRequestBody:
 
 
         :param protected_instances: The protected_instances of this BatchCreateProtectedInstancesRequestBody.
-        :type: BatchCreateProtectedInstancesRequestParams
+        :type protected_instances: :class:`huaweicloudsdksdrs.v1.BatchCreateProtectedInstancesRequestParams`
         """
         self._protected_instances = protected_instances
 

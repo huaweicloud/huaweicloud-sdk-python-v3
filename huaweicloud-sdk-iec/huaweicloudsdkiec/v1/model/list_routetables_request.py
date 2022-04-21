@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRoutetablesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListRoutetablesRequest:
     }
 
     def __init__(self, id=None, limit=None, name=None, offset=None, vpc_id=None):
-        """ListRoutetablesRequest - a model defined in huaweicloud sdk"""
+        """ListRoutetablesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param id: 路由表ID
+        :type id: str
+        :param limit: 每页的最大数
+        :type limit: int
+        :param name: 路由表名称。
+        :type name: str
+        :param offset: 偏移量
+        :type offset: int
+        :param vpc_id: vpc的ID
+        :type vpc_id: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class ListRoutetablesRequest:
         路由表ID
 
         :param id: The id of this ListRoutetablesRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -100,7 +113,7 @@ class ListRoutetablesRequest:
         每页的最大数
 
         :param limit: The limit of this ListRoutetablesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -122,7 +135,7 @@ class ListRoutetablesRequest:
         路由表名称。
 
         :param name: The name of this ListRoutetablesRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -144,7 +157,7 @@ class ListRoutetablesRequest:
         偏移量
 
         :param offset: The offset of this ListRoutetablesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -166,7 +179,7 @@ class ListRoutetablesRequest:
         vpc的ID
 
         :param vpc_id: The vpc_id of this ListRoutetablesRequest.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 

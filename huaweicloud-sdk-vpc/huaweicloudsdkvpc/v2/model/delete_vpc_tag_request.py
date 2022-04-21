@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteVpcTagRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteVpcTagRequest:
     }
 
     def __init__(self, vpc_id=None, key=None):
-        """DeleteVpcTagRequest - a model defined in huaweicloud sdk"""
+        """DeleteVpcTagRequest
+
+        The model defined in huaweicloud sdk
+
+        :param vpc_id: 功能说明：虚拟私有云唯一标识 取值范围：合法UUID 约束：ID对应的VPC必须存在
+        :type vpc_id: str
+        :param key: 功能说明：标签键
+        :type key: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class DeleteVpcTagRequest:
         功能说明：虚拟私有云唯一标识 取值范围：合法UUID 约束：ID对应的VPC必须存在
 
         :param vpc_id: The vpc_id of this DeleteVpcTagRequest.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -83,7 +90,7 @@ class DeleteVpcTagRequest:
         功能说明：标签键
 
         :param key: The key of this DeleteVpcTagRequest.
-        :type: str
+        :type key: str
         """
         self._key = key
 

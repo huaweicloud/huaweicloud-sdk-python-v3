@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PipelineDeleteStatus:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class PipelineDeleteStatus:
     }
 
     def __init__(self, name=None, status=None):
-        """PipelineDeleteStatus - a model defined in huaweicloud sdk"""
+        """PipelineDeleteStatus
+
+        The model defined in huaweicloud sdk
+
+        :param name: 流水线名称
+        :type name: str
+        :param status: 流水线删除状态,deleted:删除成功,failed:删除失败,going:正在删除中
+        :type status: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class PipelineDeleteStatus:
         流水线名称
 
         :param name: The name of this PipelineDeleteStatus.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -85,7 +92,7 @@ class PipelineDeleteStatus:
         流水线删除状态,deleted:删除成功,failed:删除失败,going:正在删除中
 
         :param status: The status of this PipelineDeleteStatus.
-        :type: str
+        :type status: str
         """
         self._status = status
 

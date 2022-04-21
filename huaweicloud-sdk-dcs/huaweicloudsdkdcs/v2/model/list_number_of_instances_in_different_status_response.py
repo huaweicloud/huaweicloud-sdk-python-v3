@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListNumberOfInstancesInDifferentStatusResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -58,7 +57,41 @@ class ListNumberOfInstancesInDifferentStatusResponse(SdkResponse):
     }
 
     def __init__(self, redis=None, memcached=None, paying_count=None, freezing_count=None, migrating_count=None, flushing_count=None, upgrading_count=None, restoring_count=None, extending_count=None, creating_count=None, running_count=None, error_count=None, frozen_count=None, createfailed_count=None, restarting_count=None):
-        """ListNumberOfInstancesInDifferentStatusResponse - a model defined in huaweicloud sdk"""
+        """ListNumberOfInstancesInDifferentStatusResponse
+
+        The model defined in huaweicloud sdk
+
+        :param redis: 
+        :type redis: :class:`huaweicloudsdkdcs.v2.StatusStatistic`
+        :param memcached: 
+        :type memcached: :class:`huaweicloudsdkdcs.v2.StatusStatistic`
+        :param paying_count: 支付中的实例数。
+        :type paying_count: int
+        :param freezing_count: 冻结中的实例数。
+        :type freezing_count: int
+        :param migrating_count: 迁移中的实例数。
+        :type migrating_count: int
+        :param flushing_count: 清空中的实例数。
+        :type flushing_count: int
+        :param upgrading_count: 升级中的实例数。
+        :type upgrading_count: int
+        :param restoring_count: 恢复中的实例数。
+        :type restoring_count: int
+        :param extending_count: 扩容中的实例数。
+        :type extending_count: int
+        :param creating_count: 正在创建的实例数。
+        :type creating_count: int
+        :param running_count: 正在运行的实例数。
+        :type running_count: int
+        :param error_count: 异常的实例数。
+        :type error_count: int
+        :param frozen_count: 已冻结的实例数。
+        :type frozen_count: int
+        :param createfailed_count: 创建失败的实例数。
+        :type createfailed_count: int
+        :param restarting_count: 正在重启的实例数。
+        :type restarting_count: int
+        """
         
         super(ListNumberOfInstancesInDifferentStatusResponse, self).__init__()
 
@@ -116,7 +149,7 @@ class ListNumberOfInstancesInDifferentStatusResponse(SdkResponse):
 
 
         :return: The redis of this ListNumberOfInstancesInDifferentStatusResponse.
-        :rtype: StatusStatistic
+        :rtype: :class:`huaweicloudsdkdcs.v2.StatusStatistic`
         """
         return self._redis
 
@@ -126,7 +159,7 @@ class ListNumberOfInstancesInDifferentStatusResponse(SdkResponse):
 
 
         :param redis: The redis of this ListNumberOfInstancesInDifferentStatusResponse.
-        :type: StatusStatistic
+        :type redis: :class:`huaweicloudsdkdcs.v2.StatusStatistic`
         """
         self._redis = redis
 
@@ -136,7 +169,7 @@ class ListNumberOfInstancesInDifferentStatusResponse(SdkResponse):
 
 
         :return: The memcached of this ListNumberOfInstancesInDifferentStatusResponse.
-        :rtype: StatusStatistic
+        :rtype: :class:`huaweicloudsdkdcs.v2.StatusStatistic`
         """
         return self._memcached
 
@@ -146,7 +179,7 @@ class ListNumberOfInstancesInDifferentStatusResponse(SdkResponse):
 
 
         :param memcached: The memcached of this ListNumberOfInstancesInDifferentStatusResponse.
-        :type: StatusStatistic
+        :type memcached: :class:`huaweicloudsdkdcs.v2.StatusStatistic`
         """
         self._memcached = memcached
 
@@ -168,7 +201,7 @@ class ListNumberOfInstancesInDifferentStatusResponse(SdkResponse):
         支付中的实例数。
 
         :param paying_count: The paying_count of this ListNumberOfInstancesInDifferentStatusResponse.
-        :type: int
+        :type paying_count: int
         """
         self._paying_count = paying_count
 
@@ -190,7 +223,7 @@ class ListNumberOfInstancesInDifferentStatusResponse(SdkResponse):
         冻结中的实例数。
 
         :param freezing_count: The freezing_count of this ListNumberOfInstancesInDifferentStatusResponse.
-        :type: int
+        :type freezing_count: int
         """
         self._freezing_count = freezing_count
 
@@ -212,7 +245,7 @@ class ListNumberOfInstancesInDifferentStatusResponse(SdkResponse):
         迁移中的实例数。
 
         :param migrating_count: The migrating_count of this ListNumberOfInstancesInDifferentStatusResponse.
-        :type: int
+        :type migrating_count: int
         """
         self._migrating_count = migrating_count
 
@@ -234,7 +267,7 @@ class ListNumberOfInstancesInDifferentStatusResponse(SdkResponse):
         清空中的实例数。
 
         :param flushing_count: The flushing_count of this ListNumberOfInstancesInDifferentStatusResponse.
-        :type: int
+        :type flushing_count: int
         """
         self._flushing_count = flushing_count
 
@@ -256,7 +289,7 @@ class ListNumberOfInstancesInDifferentStatusResponse(SdkResponse):
         升级中的实例数。
 
         :param upgrading_count: The upgrading_count of this ListNumberOfInstancesInDifferentStatusResponse.
-        :type: int
+        :type upgrading_count: int
         """
         self._upgrading_count = upgrading_count
 
@@ -278,7 +311,7 @@ class ListNumberOfInstancesInDifferentStatusResponse(SdkResponse):
         恢复中的实例数。
 
         :param restoring_count: The restoring_count of this ListNumberOfInstancesInDifferentStatusResponse.
-        :type: int
+        :type restoring_count: int
         """
         self._restoring_count = restoring_count
 
@@ -300,7 +333,7 @@ class ListNumberOfInstancesInDifferentStatusResponse(SdkResponse):
         扩容中的实例数。
 
         :param extending_count: The extending_count of this ListNumberOfInstancesInDifferentStatusResponse.
-        :type: int
+        :type extending_count: int
         """
         self._extending_count = extending_count
 
@@ -322,7 +355,7 @@ class ListNumberOfInstancesInDifferentStatusResponse(SdkResponse):
         正在创建的实例数。
 
         :param creating_count: The creating_count of this ListNumberOfInstancesInDifferentStatusResponse.
-        :type: int
+        :type creating_count: int
         """
         self._creating_count = creating_count
 
@@ -344,7 +377,7 @@ class ListNumberOfInstancesInDifferentStatusResponse(SdkResponse):
         正在运行的实例数。
 
         :param running_count: The running_count of this ListNumberOfInstancesInDifferentStatusResponse.
-        :type: int
+        :type running_count: int
         """
         self._running_count = running_count
 
@@ -366,7 +399,7 @@ class ListNumberOfInstancesInDifferentStatusResponse(SdkResponse):
         异常的实例数。
 
         :param error_count: The error_count of this ListNumberOfInstancesInDifferentStatusResponse.
-        :type: int
+        :type error_count: int
         """
         self._error_count = error_count
 
@@ -388,7 +421,7 @@ class ListNumberOfInstancesInDifferentStatusResponse(SdkResponse):
         已冻结的实例数。
 
         :param frozen_count: The frozen_count of this ListNumberOfInstancesInDifferentStatusResponse.
-        :type: int
+        :type frozen_count: int
         """
         self._frozen_count = frozen_count
 
@@ -410,7 +443,7 @@ class ListNumberOfInstancesInDifferentStatusResponse(SdkResponse):
         创建失败的实例数。
 
         :param createfailed_count: The createfailed_count of this ListNumberOfInstancesInDifferentStatusResponse.
-        :type: int
+        :type createfailed_count: int
         """
         self._createfailed_count = createfailed_count
 
@@ -432,7 +465,7 @@ class ListNumberOfInstancesInDifferentStatusResponse(SdkResponse):
         正在重启的实例数。
 
         :param restarting_count: The restarting_count of this ListNumberOfInstancesInDifferentStatusResponse.
-        :type: int
+        :type restarting_count: int
         """
         self._restarting_count = restarting_count
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowTaskCmetricsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class ShowTaskCmetricsResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None, task_name=None, creator_id=None, git_url=None, git_branch=None, last_check_time=None, last_exec_time=None, check_type=None, created_at=None, metric_info=None):
-        """ShowTaskCmetricsResponse - a model defined in huaweicloud sdk"""
+        """ShowTaskCmetricsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 任务id
+        :type task_id: str
+        :param task_name: 任务名字
+        :type task_name: str
+        :param creator_id: 创建者id
+        :type creator_id: str
+        :param git_url: 代码仓地址
+        :type git_url: str
+        :param git_branch: 代码仓分支
+        :type git_branch: str
+        :param last_check_time: 上一次检查时间
+        :type last_check_time: str
+        :param last_exec_time: 上次执行时间
+        :type last_exec_time: str
+        :param check_type: 检查类型
+        :type check_type: str
+        :param created_at: 创建时间
+        :type created_at: str
+        :param metric_info: 
+        :type metric_info: :class:`huaweicloudsdkcodecheck.v2.MetricInfo`
+        """
         
         super(ShowTaskCmetricsResponse, self).__init__()
 
@@ -103,7 +126,7 @@ class ShowTaskCmetricsResponse(SdkResponse):
         任务id
 
         :param task_id: The task_id of this ShowTaskCmetricsResponse.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -125,7 +148,7 @@ class ShowTaskCmetricsResponse(SdkResponse):
         任务名字
 
         :param task_name: The task_name of this ShowTaskCmetricsResponse.
-        :type: str
+        :type task_name: str
         """
         self._task_name = task_name
 
@@ -147,7 +170,7 @@ class ShowTaskCmetricsResponse(SdkResponse):
         创建者id
 
         :param creator_id: The creator_id of this ShowTaskCmetricsResponse.
-        :type: str
+        :type creator_id: str
         """
         self._creator_id = creator_id
 
@@ -169,7 +192,7 @@ class ShowTaskCmetricsResponse(SdkResponse):
         代码仓地址
 
         :param git_url: The git_url of this ShowTaskCmetricsResponse.
-        :type: str
+        :type git_url: str
         """
         self._git_url = git_url
 
@@ -191,7 +214,7 @@ class ShowTaskCmetricsResponse(SdkResponse):
         代码仓分支
 
         :param git_branch: The git_branch of this ShowTaskCmetricsResponse.
-        :type: str
+        :type git_branch: str
         """
         self._git_branch = git_branch
 
@@ -213,7 +236,7 @@ class ShowTaskCmetricsResponse(SdkResponse):
         上一次检查时间
 
         :param last_check_time: The last_check_time of this ShowTaskCmetricsResponse.
-        :type: str
+        :type last_check_time: str
         """
         self._last_check_time = last_check_time
 
@@ -235,7 +258,7 @@ class ShowTaskCmetricsResponse(SdkResponse):
         上次执行时间
 
         :param last_exec_time: The last_exec_time of this ShowTaskCmetricsResponse.
-        :type: str
+        :type last_exec_time: str
         """
         self._last_exec_time = last_exec_time
 
@@ -257,7 +280,7 @@ class ShowTaskCmetricsResponse(SdkResponse):
         检查类型
 
         :param check_type: The check_type of this ShowTaskCmetricsResponse.
-        :type: str
+        :type check_type: str
         """
         self._check_type = check_type
 
@@ -279,7 +302,7 @@ class ShowTaskCmetricsResponse(SdkResponse):
         创建时间
 
         :param created_at: The created_at of this ShowTaskCmetricsResponse.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -289,7 +312,7 @@ class ShowTaskCmetricsResponse(SdkResponse):
 
 
         :return: The metric_info of this ShowTaskCmetricsResponse.
-        :rtype: MetricInfo
+        :rtype: :class:`huaweicloudsdkcodecheck.v2.MetricInfo`
         """
         return self._metric_info
 
@@ -299,7 +322,7 @@ class ShowTaskCmetricsResponse(SdkResponse):
 
 
         :param metric_info: The metric_info of this ShowTaskCmetricsResponse.
-        :type: MetricInfo
+        :type metric_info: :class:`huaweicloudsdkcodecheck.v2.MetricInfo`
         """
         self._metric_info = metric_info
 

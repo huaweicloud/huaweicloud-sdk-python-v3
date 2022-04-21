@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateLogGroupResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateLogGroupResponse(SdkResponse):
     }
 
     def __init__(self, log_group_id=None):
-        """CreateLogGroupResponse - a model defined in huaweicloud sdk"""
+        """CreateLogGroupResponse
+
+        The model defined in huaweicloud sdk
+
+        :param log_group_id: 创建的日志组的Id。
+        :type log_group_id: str
+        """
         
         super(CreateLogGroupResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class CreateLogGroupResponse(SdkResponse):
         创建的日志组的Id。
 
         :param log_group_id: The log_group_id of this CreateLogGroupResponse.
-        :type: str
+        :type log_group_id: str
         """
         self._log_group_id = log_group_id
 

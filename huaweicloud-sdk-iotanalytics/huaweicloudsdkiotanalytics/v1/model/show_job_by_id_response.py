@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowJobByIdResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowJobByIdResponse(SdkResponse):
     }
 
     def __init__(self, job_config=None, job_info=None):
-        """ShowJobByIdResponse - a model defined in huaweicloud sdk"""
+        """ShowJobByIdResponse
+
+        The model defined in huaweicloud sdk
+
+        :param job_config: 实时分析作业详细配置，每个作业可选择不同的算子进行组合，各算子的使用方法详见：实时分析算子配置指南。
+        :type job_config: dict(str, object)
+        :param job_info: 
+        :type job_info: :class:`huaweicloudsdkiotanalytics.v1.StreamingJobInfoDto`
+        """
         
         super(ShowJobByIdResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ShowJobByIdResponse(SdkResponse):
         实时分析作业详细配置，每个作业可选择不同的算子进行组合，各算子的使用方法详见：实时分析算子配置指南。
 
         :param job_config: The job_config of this ShowJobByIdResponse.
-        :type: dict(str, object)
+        :type job_config: dict(str, object)
         """
         self._job_config = job_config
 
@@ -73,7 +80,7 @@ class ShowJobByIdResponse(SdkResponse):
 
 
         :return: The job_info of this ShowJobByIdResponse.
-        :rtype: StreamingJobInfoDto
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.StreamingJobInfoDto`
         """
         return self._job_info
 
@@ -83,7 +90,7 @@ class ShowJobByIdResponse(SdkResponse):
 
 
         :param job_info: The job_info of this ShowJobByIdResponse.
-        :type: StreamingJobInfoDto
+        :type job_info: :class:`huaweicloudsdkiotanalytics.v1.StreamingJobInfoDto`
         """
         self._job_info = job_info
 

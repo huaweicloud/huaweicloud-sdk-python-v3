@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddNode:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AddNode:
     }
 
     def __init__(self, server_id=None, spec=None):
-        """AddNode - a model defined in huaweicloud sdk"""
+        """AddNode
+
+        The model defined in huaweicloud sdk
+
+        :param server_id: 服务器ID，获取方式请参见ECS/BMS相关资料。
+        :type server_id: str
+        :param spec: 
+        :type spec: :class:`huaweicloudsdkcce.v3.ReinstallNodeSpec`
+        """
         
         
 
@@ -61,7 +68,7 @@ class AddNode:
         服务器ID，获取方式请参见ECS/BMS相关资料。
 
         :param server_id: The server_id of this AddNode.
-        :type: str
+        :type server_id: str
         """
         self._server_id = server_id
 
@@ -71,7 +78,7 @@ class AddNode:
 
 
         :return: The spec of this AddNode.
-        :rtype: ReinstallNodeSpec
+        :rtype: :class:`huaweicloudsdkcce.v3.ReinstallNodeSpec`
         """
         return self._spec
 
@@ -81,7 +88,7 @@ class AddNode:
 
 
         :param spec: The spec of this AddNode.
-        :type: ReinstallNodeSpec
+        :type spec: :class:`huaweicloudsdkcce.v3.ReinstallNodeSpec`
         """
         self._spec = spec
 

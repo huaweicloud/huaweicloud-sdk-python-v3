@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CertificateDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -60,7 +59,43 @@ class CertificateDetail:
     }
 
     def __init__(self, id=None, name=None, domain=None, sans=None, signature_algorithm=None, deploy_support=None, type=None, brand=None, expire_time=None, domain_type=None, validity_period=None, status=None, domain_count=None, wildcard_count=None, description=None, enterprise_project_id=None):
-        """CertificateDetail - a model defined in huaweicloud sdk"""
+        """CertificateDetail
+
+        The model defined in huaweicloud sdk
+
+        :param id: 证书id。
+        :type id: str
+        :param name: 证书名称。
+        :type name: str
+        :param domain: 证书绑定的域名。
+        :type domain: str
+        :param sans: 多域名证书绑定的附加域名。
+        :type sans: str
+        :param signature_algorithm: 签名算法。
+        :type signature_algorithm: str
+        :param deploy_support: 是否支持部署。
+        :type deploy_support: bool
+        :param type: 证书类型。取值如下： DV_SSL_CERT、DV_SSL_CERT_BASIC、EV_SSL_CERT、 EV_SSL_CERT_PRO、OV_SSL_CERT、OV_SSL_CERT_PRO
+        :type type: str
+        :param brand: 证书品牌。取值如下：GLOBALSIGN、SYMANTEC、GEOTRUST、CFCA
+        :type brand: str
+        :param expire_time: 证书过期时间。
+        :type expire_time: str
+        :param domain_type: 域名类型。取值如下： - SINGLE_DOMAIN：单域名 - WILDCARD：通配符 - MULTI_DOMAIN：多域名
+        :type domain_type: str
+        :param validity_period: 证书有效期，以月为单位。
+        :type validity_period: int
+        :param status: 证书状态，取值如下： - PAID：证书已支付；待申请证书。 - ISSUED：证书已签发。 - CHECKING：证书申请审核中。 - CANCELCHECKING：取消证书申请审核中。 - UNPASSED：证书申请未通过。 - EXPIRED：证书已过期。 - REVOKING：证书吊销申请审核中。 - CANCLEREVOKING：证书取消吊销申请审核中。 - REVOKED：证书已吊销。 - UPLOAD：证书托管中。 - SUPPLEMENTCHECKING：多域名证书新增附加域名审核中。 - CANCELSUPPLEMENTING：取消新增附加域名审核中。
+        :type status: str
+        :param domain_count: 证书可绑定域名个数。
+        :type domain_count: int
+        :param wildcard_count: 证书可绑定泛域名个数。
+        :type wildcard_count: int
+        :param description: 证书描述。
+        :type description: str
+        :param enterprise_project_id: 企业项目ID，默认为“0”。 对于开通企业项目的用户，表示资源处于默认企业项目下。 对于未开通企业项目的用户，表示资源未处于企业项目下。
+        :type enterprise_project_id: str
+        """
         
         
 
@@ -118,7 +153,7 @@ class CertificateDetail:
         证书id。
 
         :param id: The id of this CertificateDetail.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -140,7 +175,7 @@ class CertificateDetail:
         证书名称。
 
         :param name: The name of this CertificateDetail.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -162,7 +197,7 @@ class CertificateDetail:
         证书绑定的域名。
 
         :param domain: The domain of this CertificateDetail.
-        :type: str
+        :type domain: str
         """
         self._domain = domain
 
@@ -184,7 +219,7 @@ class CertificateDetail:
         多域名证书绑定的附加域名。
 
         :param sans: The sans of this CertificateDetail.
-        :type: str
+        :type sans: str
         """
         self._sans = sans
 
@@ -206,7 +241,7 @@ class CertificateDetail:
         签名算法。
 
         :param signature_algorithm: The signature_algorithm of this CertificateDetail.
-        :type: str
+        :type signature_algorithm: str
         """
         self._signature_algorithm = signature_algorithm
 
@@ -228,7 +263,7 @@ class CertificateDetail:
         是否支持部署。
 
         :param deploy_support: The deploy_support of this CertificateDetail.
-        :type: bool
+        :type deploy_support: bool
         """
         self._deploy_support = deploy_support
 
@@ -250,7 +285,7 @@ class CertificateDetail:
         证书类型。取值如下： DV_SSL_CERT、DV_SSL_CERT_BASIC、EV_SSL_CERT、 EV_SSL_CERT_PRO、OV_SSL_CERT、OV_SSL_CERT_PRO
 
         :param type: The type of this CertificateDetail.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -272,7 +307,7 @@ class CertificateDetail:
         证书品牌。取值如下：GLOBALSIGN、SYMANTEC、GEOTRUST、CFCA
 
         :param brand: The brand of this CertificateDetail.
-        :type: str
+        :type brand: str
         """
         self._brand = brand
 
@@ -294,7 +329,7 @@ class CertificateDetail:
         证书过期时间。
 
         :param expire_time: The expire_time of this CertificateDetail.
-        :type: str
+        :type expire_time: str
         """
         self._expire_time = expire_time
 
@@ -316,7 +351,7 @@ class CertificateDetail:
         域名类型。取值如下： - SINGLE_DOMAIN：单域名 - WILDCARD：通配符 - MULTI_DOMAIN：多域名
 
         :param domain_type: The domain_type of this CertificateDetail.
-        :type: str
+        :type domain_type: str
         """
         self._domain_type = domain_type
 
@@ -338,7 +373,7 @@ class CertificateDetail:
         证书有效期，以月为单位。
 
         :param validity_period: The validity_period of this CertificateDetail.
-        :type: int
+        :type validity_period: int
         """
         self._validity_period = validity_period
 
@@ -360,7 +395,7 @@ class CertificateDetail:
         证书状态，取值如下： - PAID：证书已支付；待申请证书。 - ISSUED：证书已签发。 - CHECKING：证书申请审核中。 - CANCELCHECKING：取消证书申请审核中。 - UNPASSED：证书申请未通过。 - EXPIRED：证书已过期。 - REVOKING：证书吊销申请审核中。 - CANCLEREVOKING：证书取消吊销申请审核中。 - REVOKED：证书已吊销。 - UPLOAD：证书托管中。 - SUPPLEMENTCHECKING：多域名证书新增附加域名审核中。 - CANCELSUPPLEMENTING：取消新增附加域名审核中。
 
         :param status: The status of this CertificateDetail.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -382,7 +417,7 @@ class CertificateDetail:
         证书可绑定域名个数。
 
         :param domain_count: The domain_count of this CertificateDetail.
-        :type: int
+        :type domain_count: int
         """
         self._domain_count = domain_count
 
@@ -404,7 +439,7 @@ class CertificateDetail:
         证书可绑定泛域名个数。
 
         :param wildcard_count: The wildcard_count of this CertificateDetail.
-        :type: int
+        :type wildcard_count: int
         """
         self._wildcard_count = wildcard_count
 
@@ -426,7 +461,7 @@ class CertificateDetail:
         证书描述。
 
         :param description: The description of this CertificateDetail.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -448,7 +483,7 @@ class CertificateDetail:
         企业项目ID，默认为“0”。 对于开通企业项目的用户，表示资源处于默认企业项目下。 对于未开通企业项目的用户，表示资源未处于企业项目下。
 
         :param enterprise_project_id: The enterprise_project_id of this CertificateDetail.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 

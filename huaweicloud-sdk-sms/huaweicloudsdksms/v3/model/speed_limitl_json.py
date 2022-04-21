@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SpeedLimitlJson:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class SpeedLimitlJson:
     }
 
     def __init__(self, start=None, end=None, speed=None):
-        """SpeedLimitlJson - a model defined in huaweicloud sdk"""
+        """SpeedLimitlJson
+
+        The model defined in huaweicloud sdk
+
+        :param start: 时间段开始时间，格式：XX:XX。
+        :type start: str
+        :param end: 时间段结束时间，格式：XX:XX。
+        :type end: str
+        :param speed: 时间段的速率，0-1000的整数，单位：Mbit/s。
+        :type speed: int
+        """
         
         
 
@@ -65,7 +74,7 @@ class SpeedLimitlJson:
         时间段开始时间，格式：XX:XX。
 
         :param start: The start of this SpeedLimitlJson.
-        :type: str
+        :type start: str
         """
         self._start = start
 
@@ -87,7 +96,7 @@ class SpeedLimitlJson:
         时间段结束时间，格式：XX:XX。
 
         :param end: The end of this SpeedLimitlJson.
-        :type: str
+        :type end: str
         """
         self._end = end
 
@@ -109,7 +118,7 @@ class SpeedLimitlJson:
         时间段的速率，0-1000的整数，单位：Mbit/s。
 
         :param speed: The speed of this SpeedLimitlJson.
-        :type: int
+        :type speed: int
         """
         self._speed = speed
 

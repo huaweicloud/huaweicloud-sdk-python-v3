@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GetBackupDownloadLinkResponseBodyFiles:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class GetBackupDownloadLinkResponseBodyFiles:
     }
 
     def __init__(self, name=None, size=None, download_link=None, link_expired_time=None):
-        """GetBackupDownloadLinkResponseBodyFiles - a model defined in huaweicloud sdk"""
+        """GetBackupDownloadLinkResponseBodyFiles
+
+        The model defined in huaweicloud sdk
+
+        :param name: 文件名。
+        :type name: str
+        :param size: 文件大小，单位为KB。
+        :type size: int
+        :param download_link: 文件下载链接。
+        :type download_link: str
+        :param link_expired_time: 下载链接过期时间，格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始，Z指时区偏移量，例如UTC时间偏移显示为+0000。
+        :type link_expired_time: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class GetBackupDownloadLinkResponseBodyFiles:
         文件名。
 
         :param name: The name of this GetBackupDownloadLinkResponseBodyFiles.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -91,7 +102,7 @@ class GetBackupDownloadLinkResponseBodyFiles:
         文件大小，单位为KB。
 
         :param size: The size of this GetBackupDownloadLinkResponseBodyFiles.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -113,7 +124,7 @@ class GetBackupDownloadLinkResponseBodyFiles:
         文件下载链接。
 
         :param download_link: The download_link of this GetBackupDownloadLinkResponseBodyFiles.
-        :type: str
+        :type download_link: str
         """
         self._download_link = download_link
 
@@ -135,7 +146,7 @@ class GetBackupDownloadLinkResponseBodyFiles:
         下载链接过期时间，格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始，Z指时区偏移量，例如UTC时间偏移显示为+0000。
 
         :param link_expired_time: The link_expired_time of this GetBackupDownloadLinkResponseBodyFiles.
-        :type: str
+        :type link_expired_time: str
         """
         self._link_expired_time = link_expired_time
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreatePersonalAuthRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreatePersonalAuthRequest:
     }
 
     def __init__(self, repo_type=None, body=None):
-        """CreatePersonalAuthRequest - a model defined in huaweicloud sdk"""
+        """CreatePersonalAuthRequest
+
+        The model defined in huaweicloud sdk
+
+        :param repo_type: 仓库类型。 支持私人令牌授权的仓库类型有：github、gitlab、gitee。
+        :type repo_type: str
+        :param body: Body of the CreatePersonalAuthRequest
+        :type body: :class:`huaweicloudsdkservicestage.v2.AccessToken`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreatePersonalAuthRequest:
         仓库类型。 支持私人令牌授权的仓库类型有：github、gitlab、gitee。
 
         :param repo_type: The repo_type of this CreatePersonalAuthRequest.
-        :type: str
+        :type repo_type: str
         """
         self._repo_type = repo_type
 
@@ -72,7 +79,7 @@ class CreatePersonalAuthRequest:
 
 
         :return: The body of this CreatePersonalAuthRequest.
-        :rtype: AccessToken
+        :rtype: :class:`huaweicloudsdkservicestage.v2.AccessToken`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CreatePersonalAuthRequest:
 
 
         :param body: The body of this CreatePersonalAuthRequest.
-        :type: AccessToken
+        :type body: :class:`huaweicloudsdkservicestage.v2.AccessToken`
         """
         self._body = body
 

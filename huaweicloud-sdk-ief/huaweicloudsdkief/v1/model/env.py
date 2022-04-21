@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Env:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class Env:
     }
 
     def __init__(self, name=None, value=None, value_from=None, field_path=None):
-        """Env - a model defined in huaweicloud sdk"""
+        """Env
+
+        The model defined in huaweicloud sdk
+
+        :param name: 环境变量的key，由大小写字母或下划线开头，由数字、大小写字母、下划线组成，最大长度2048个字符，不允许重复
+        :type name: str
+        :param value: 环境变量的value，最大长度20480个字符。value、value_from和field_path必须三选一使用。
+        :type value: str
+        :param value_from: 
+        :type value_from: :class:`huaweicloudsdkief.v1.EnvValueFrom`
+        :param field_path: 该参数目前只支持赋值\&quot;status.hostIP\&quot;，即引用边缘节点的IP地址作为环境变量。
+        :type field_path: str
+        """
         
         
 
@@ -72,7 +83,7 @@ class Env:
         环境变量的key，由大小写字母或下划线开头，由数字、大小写字母、下划线组成，最大长度2048个字符，不允许重复
 
         :param name: The name of this Env.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -94,7 +105,7 @@ class Env:
         环境变量的value，最大长度20480个字符。value、value_from和field_path必须三选一使用。
 
         :param value: The value of this Env.
-        :type: str
+        :type value: str
         """
         self._value = value
 
@@ -104,7 +115,7 @@ class Env:
 
 
         :return: The value_from of this Env.
-        :rtype: EnvValueFrom
+        :rtype: :class:`huaweicloudsdkief.v1.EnvValueFrom`
         """
         return self._value_from
 
@@ -114,7 +125,7 @@ class Env:
 
 
         :param value_from: The value_from of this Env.
-        :type: EnvValueFrom
+        :type value_from: :class:`huaweicloudsdkief.v1.EnvValueFrom`
         """
         self._value_from = value_from
 
@@ -136,7 +147,7 @@ class Env:
         该参数目前只支持赋值\"status.hostIP\"，即引用边缘节点的IP地址作为环境变量。
 
         :param field_path: The field_path of this Env.
-        :type: str
+        :type field_path: str
         """
         self._field_path = field_path
 

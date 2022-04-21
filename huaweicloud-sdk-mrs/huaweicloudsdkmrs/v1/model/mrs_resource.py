@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MRSResource:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class MRSResource:
     }
 
     def __init__(self, resource_id=None, resource_detail=None, tags=None, resource_name=None):
-        """MRSResource - a model defined in huaweicloud sdk"""
+        """MRSResource
+
+        The model defined in huaweicloud sdk
+
+        :param resource_id: 资源ID
+        :type resource_id: str
+        :param resource_detail: 资源详情
+        :type resource_detail: str
+        :param tags: 标签
+        :type tags: list[:class:`huaweicloudsdkmrs.v1.TagPlain`]
+        :param resource_name: 资源名称
+        :type resource_name: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class MRSResource:
         资源ID
 
         :param resource_id: The resource_id of this MRSResource.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -95,7 +106,7 @@ class MRSResource:
         资源详情
 
         :param resource_detail: The resource_detail of this MRSResource.
-        :type: str
+        :type resource_detail: str
         """
         self._resource_detail = resource_detail
 
@@ -106,7 +117,7 @@ class MRSResource:
         标签
 
         :return: The tags of this MRSResource.
-        :rtype: list[TagPlain]
+        :rtype: list[:class:`huaweicloudsdkmrs.v1.TagPlain`]
         """
         return self._tags
 
@@ -117,7 +128,7 @@ class MRSResource:
         标签
 
         :param tags: The tags of this MRSResource.
-        :type: list[TagPlain]
+        :type tags: list[:class:`huaweicloudsdkmrs.v1.TagPlain`]
         """
         self._tags = tags
 
@@ -139,7 +150,7 @@ class MRSResource:
         资源名称
 
         :param resource_name: The resource_name of this MRSResource.
-        :type: str
+        :type resource_name: str
         """
         self._resource_name = resource_name
 

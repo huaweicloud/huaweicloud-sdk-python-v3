@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchUpdateConfigs:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class BatchUpdateConfigs:
     }
 
     def __init__(self, product_id=None, app_id=None, protocol_mapping=None, instance_id=None):
-        """BatchUpdateConfigs - a model defined in huaweicloud sdk"""
+        """BatchUpdateConfigs
+
+        The model defined in huaweicloud sdk
+
+        :param product_id: 设备关联的产品ID，用于唯一标识一个产品模型，在管理门户导入产品模型后由平台分配获得。
+        :type product_id: str
+        :param app_id: **参数说明**：资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，建议携带该参数指定归属到哪个资源空间下，否则将会归属到[默认资源空间](https://support.huaweicloud.com/usermanual-iothub/iot_01_0006.html#section0)下。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
+        :type app_id: str
+        :param protocol_mapping: 设备协议配置数据。
+        :type protocol_mapping: object
+        :param instance_id: **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
+        :type instance_id: str
+        """
         
         
 
@@ -71,7 +82,7 @@ class BatchUpdateConfigs:
         设备关联的产品ID，用于唯一标识一个产品模型，在管理门户导入产品模型后由平台分配获得。
 
         :param product_id: The product_id of this BatchUpdateConfigs.
-        :type: str
+        :type product_id: str
         """
         self._product_id = product_id
 
@@ -93,7 +104,7 @@ class BatchUpdateConfigs:
         **参数说明**：资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，建议携带该参数指定归属到哪个资源空间下，否则将会归属到[默认资源空间](https://support.huaweicloud.com/usermanual-iothub/iot_01_0006.html#section0)下。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :param app_id: The app_id of this BatchUpdateConfigs.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -115,7 +126,7 @@ class BatchUpdateConfigs:
         设备协议配置数据。
 
         :param protocol_mapping: The protocol_mapping of this BatchUpdateConfigs.
-        :type: object
+        :type protocol_mapping: object
         """
         self._protocol_mapping = protocol_mapping
 
@@ -137,7 +148,7 @@ class BatchUpdateConfigs:
         **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
         :param instance_id: The instance_id of this BatchUpdateConfigs.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 

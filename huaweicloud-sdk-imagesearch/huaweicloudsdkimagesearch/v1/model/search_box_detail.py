@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SearchBoxDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class SearchBoxDetail:
     }
 
     def __init__(self, x=None, y=None, width=None, height=None):
-        """SearchBoxDetail - a model defined in huaweicloud sdk"""
+        """SearchBoxDetail
+
+        The model defined in huaweicloud sdk
+
+        :param x: 区域中x坐标的最小值，单位：像素。
+        :type x: int
+        :param y: 区域中y坐标的最小值，单位：像素。
+        :type y: int
+        :param width: 区域的宽度，单位：像素。
+        :type width: int
+        :param height: 区域的高度，单位：像素。
+        :type height: int
+        """
         
         
 
@@ -73,7 +84,7 @@ class SearchBoxDetail:
         区域中x坐标的最小值，单位：像素。
 
         :param x: The x of this SearchBoxDetail.
-        :type: int
+        :type x: int
         """
         self._x = x
 
@@ -95,7 +106,7 @@ class SearchBoxDetail:
         区域中y坐标的最小值，单位：像素。
 
         :param y: The y of this SearchBoxDetail.
-        :type: int
+        :type y: int
         """
         self._y = y
 
@@ -117,7 +128,7 @@ class SearchBoxDetail:
         区域的宽度，单位：像素。
 
         :param width: The width of this SearchBoxDetail.
-        :type: int
+        :type width: int
         """
         self._width = width
 
@@ -139,7 +150,7 @@ class SearchBoxDetail:
         区域的高度，单位：像素。
 
         :param height: The height of this SearchBoxDetail.
-        :type: int
+        :type height: int
         """
         self._height = height
 

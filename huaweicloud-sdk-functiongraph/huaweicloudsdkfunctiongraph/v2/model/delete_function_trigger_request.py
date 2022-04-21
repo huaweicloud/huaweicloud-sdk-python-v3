@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteFunctionTriggerRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class DeleteFunctionTriggerRequest:
     }
 
     def __init__(self, function_urn=None, trigger_type_code=None, trigger_id=None):
-        """DeleteFunctionTriggerRequest - a model defined in huaweicloud sdk"""
+        """DeleteFunctionTriggerRequest
+
+        The model defined in huaweicloud sdk
+
+        :param function_urn: 函数的URN，详细解释见FunctionGraph函数模型的描述。
+        :type function_urn: str
+        :param trigger_type_code: 触发器类型代码。
+        :type trigger_type_code: str
+        :param trigger_id: 触发器编码。
+        :type trigger_id: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class DeleteFunctionTriggerRequest:
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
         :param function_urn: The function_urn of this DeleteFunctionTriggerRequest.
-        :type: str
+        :type function_urn: str
         """
         self._function_urn = function_urn
 
@@ -87,7 +96,7 @@ class DeleteFunctionTriggerRequest:
         触发器类型代码。
 
         :param trigger_type_code: The trigger_type_code of this DeleteFunctionTriggerRequest.
-        :type: str
+        :type trigger_type_code: str
         """
         self._trigger_type_code = trigger_type_code
 
@@ -109,7 +118,7 @@ class DeleteFunctionTriggerRequest:
         触发器编码。
 
         :param trigger_id: The trigger_id of this DeleteFunctionTriggerRequest.
-        :type: str
+        :type trigger_id: str
         """
         self._trigger_id = trigger_id
 

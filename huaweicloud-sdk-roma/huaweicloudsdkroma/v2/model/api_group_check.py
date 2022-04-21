@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApiGroupCheck:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ApiGroupCheck:
     }
 
     def __init__(self, group_name=None, roma_app_id=None):
-        """ApiGroupCheck - a model defined in huaweicloud sdk"""
+        """ApiGroupCheck
+
+        The model defined in huaweicloud sdk
+
+        :param group_name: 待校验的API分组名称
+        :type group_name: str
+        :param roma_app_id: 集成应用ID  校验分组在集成应用下是否重名时必填，不填写默认校验全局分组是否重名
+        :type roma_app_id: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ApiGroupCheck:
         待校验的API分组名称
 
         :param group_name: The group_name of this ApiGroupCheck.
-        :type: str
+        :type group_name: str
         """
         self._group_name = group_name
 
@@ -84,7 +91,7 @@ class ApiGroupCheck:
         集成应用ID  校验分组在集成应用下是否重名时必填，不填写默认校验全局分组是否重名
 
         :param roma_app_id: The roma_app_id of this ApiGroupCheck.
-        :type: str
+        :type roma_app_id: str
         """
         self._roma_app_id = roma_app_id
 

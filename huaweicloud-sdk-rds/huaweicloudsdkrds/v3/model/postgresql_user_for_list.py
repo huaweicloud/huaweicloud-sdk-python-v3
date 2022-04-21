@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PostgresqlUserForList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class PostgresqlUserForList:
     }
 
     def __init__(self, name=None, attributes=None, memberof=None):
-        """PostgresqlUserForList - a model defined in huaweicloud sdk"""
+        """PostgresqlUserForList
+
+        The model defined in huaweicloud sdk
+
+        :param name: 帐号名。
+        :type name: str
+        :param attributes: 用户的权限属性。
+        :type attributes: object
+        :param memberof: 用户的默认权限。
+        :type memberof: list[str]
+        """
         
         
 
@@ -67,7 +76,7 @@ class PostgresqlUserForList:
         帐号名。
 
         :param name: The name of this PostgresqlUserForList.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -89,7 +98,7 @@ class PostgresqlUserForList:
         用户的权限属性。
 
         :param attributes: The attributes of this PostgresqlUserForList.
-        :type: object
+        :type attributes: object
         """
         self._attributes = attributes
 
@@ -111,7 +120,7 @@ class PostgresqlUserForList:
         用户的默认权限。
 
         :param memberof: The memberof of this PostgresqlUserForList.
-        :type: list[str]
+        :type memberof: list[str]
         """
         self._memberof = memberof
 

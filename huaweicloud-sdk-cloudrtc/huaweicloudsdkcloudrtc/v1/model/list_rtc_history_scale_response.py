@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRtcHistoryScaleResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListRtcHistoryScaleResponse(SdkResponse):
     }
 
     def __init__(self, scale=None, x_request_id=None):
-        """ListRtcHistoryScaleResponse - a model defined in huaweicloud sdk"""
+        """ListRtcHistoryScaleResponse
+
+        The model defined in huaweicloud sdk
+
+        :param scale: 时间戳及相应时间的指标数值列表
+        :type scale: list[:class:`huaweicloudsdkcloudrtc.v1.RtcHistoryScaleTimeValue`]
+        :param x_request_id: 
+        :type x_request_id: str
+        """
         
         super(ListRtcHistoryScaleResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListRtcHistoryScaleResponse(SdkResponse):
         时间戳及相应时间的指标数值列表
 
         :return: The scale of this ListRtcHistoryScaleResponse.
-        :rtype: list[RtcHistoryScaleTimeValue]
+        :rtype: list[:class:`huaweicloudsdkcloudrtc.v1.RtcHistoryScaleTimeValue`]
         """
         return self._scale
 
@@ -63,7 +70,7 @@ class ListRtcHistoryScaleResponse(SdkResponse):
         时间戳及相应时间的指标数值列表
 
         :param scale: The scale of this ListRtcHistoryScaleResponse.
-        :type: list[RtcHistoryScaleTimeValue]
+        :type scale: list[:class:`huaweicloudsdkcloudrtc.v1.RtcHistoryScaleTimeValue`]
         """
         self._scale = scale
 
@@ -83,7 +90,7 @@ class ListRtcHistoryScaleResponse(SdkResponse):
 
 
         :param x_request_id: The x_request_id of this ListRtcHistoryScaleResponse.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 

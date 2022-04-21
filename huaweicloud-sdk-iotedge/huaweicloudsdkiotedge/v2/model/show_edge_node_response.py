@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowEdgeNodeResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -78,7 +77,61 @@ class ShowEdgeNodeResponse(SdkResponse):
     }
 
     def __init__(self, log_configs=None, edge_node_id=None, instance_id=None, product_id=None, product_name=None, space_id=None, resource_spec_types=None, resource_ids=None, ips=None, name=None, state=None, software_version=None, create_time=None, update_time=None, os_name=None, arch=None, host_name=None, nics=None, specification=None, ai_card_type=None, container_version=None, type=None, security_level=None, storage_period=None, base_path=None):
-        """ShowEdgeNodeResponse - a model defined in huaweicloud sdk"""
+        """ShowEdgeNodeResponse
+
+        The model defined in huaweicloud sdk
+
+        :param log_configs: 边缘节点在IEF的日志配置
+        :type log_configs: list[:class:`huaweicloudsdkiotedge.v2.LogConfigDTO`]
+        :param edge_node_id: 边缘节点Id
+        :type edge_node_id: str
+        :param instance_id: 实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
+        :type instance_id: str
+        :param product_id: 边缘节点关联的产品ID，用于唯一标识一个产品模型。
+        :type product_id: str
+        :param product_name: 边缘节点关联的产品名称。
+        :type product_name: str
+        :param space_id: 资源空间id，对应IOTDA云服务接口参数中的app_id。
+        :type space_id: str
+        :param resource_spec_types: 节点所购买的资源类型的列表
+        :type resource_spec_types: list[str]
+        :param resource_ids: 资源id列表，创建节点时需绑定已购买的资源包，可以叠加节点功能。
+        :type resource_ids: list[str]
+        :param ips: 边缘节点主机ip
+        :type ips: list[str]
+        :param name: 边缘节点名称
+        :type name: str
+        :param state: 边缘节点状态
+        :type state: str
+        :param software_version: 边缘应用id，只允许数字、英文小写、中划线，切必须以字母或数字结尾
+        :type software_version: str
+        :param create_time: 边缘节点创建时间
+        :type create_time: str
+        :param update_time: 边缘节点更新时间
+        :type update_time: str
+        :param os_name: 边缘节点操作系统名称
+        :type os_name: str
+        :param arch: 边缘节点操作系统架构
+        :type arch: str
+        :param host_name: 边缘节点主机名
+        :type host_name: str
+        :param nics: 边缘节点网络网卡信息
+        :type nics: list[:class:`huaweicloudsdkiotedge.v2.Nic`]
+        :param specification: 网络规格，如4 cores | 3867 MB
+        :type specification: str
+        :param ai_card_type: 华为AI加速卡类型，如NPU、GPU、unEquipped
+        :type ai_card_type: str
+        :param container_version: 容器运行时版本
+        :type container_version: str
+        :param type: 节点所属资源类型：advanced|standard
+        :type type: str
+        :param security_level: 节点的安全等级，MEDIUM边缘节数据上报不进行加密，HIGH对数据上报进行加密。
+        :type security_level: str
+        :param storage_period: 节点的存储周期，默认0天，取值范围0~7天，0天则不存储。
+        :type storage_period: int
+        :param base_path: 
+        :type base_path: :class:`huaweicloudsdkiotedge.v2.BasePathDTO`
+        """
         
         super(ShowEdgeNodeResponse, self).__init__()
 
@@ -167,7 +220,7 @@ class ShowEdgeNodeResponse(SdkResponse):
         边缘节点在IEF的日志配置
 
         :return: The log_configs of this ShowEdgeNodeResponse.
-        :rtype: list[LogConfigDTO]
+        :rtype: list[:class:`huaweicloudsdkiotedge.v2.LogConfigDTO`]
         """
         return self._log_configs
 
@@ -178,7 +231,7 @@ class ShowEdgeNodeResponse(SdkResponse):
         边缘节点在IEF的日志配置
 
         :param log_configs: The log_configs of this ShowEdgeNodeResponse.
-        :type: list[LogConfigDTO]
+        :type log_configs: list[:class:`huaweicloudsdkiotedge.v2.LogConfigDTO`]
         """
         self._log_configs = log_configs
 
@@ -200,7 +253,7 @@ class ShowEdgeNodeResponse(SdkResponse):
         边缘节点Id
 
         :param edge_node_id: The edge_node_id of this ShowEdgeNodeResponse.
-        :type: str
+        :type edge_node_id: str
         """
         self._edge_node_id = edge_node_id
 
@@ -222,7 +275,7 @@ class ShowEdgeNodeResponse(SdkResponse):
         实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
         :param instance_id: The instance_id of this ShowEdgeNodeResponse.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -244,7 +297,7 @@ class ShowEdgeNodeResponse(SdkResponse):
         边缘节点关联的产品ID，用于唯一标识一个产品模型。
 
         :param product_id: The product_id of this ShowEdgeNodeResponse.
-        :type: str
+        :type product_id: str
         """
         self._product_id = product_id
 
@@ -266,7 +319,7 @@ class ShowEdgeNodeResponse(SdkResponse):
         边缘节点关联的产品名称。
 
         :param product_name: The product_name of this ShowEdgeNodeResponse.
-        :type: str
+        :type product_name: str
         """
         self._product_name = product_name
 
@@ -288,7 +341,7 @@ class ShowEdgeNodeResponse(SdkResponse):
         资源空间id，对应IOTDA云服务接口参数中的app_id。
 
         :param space_id: The space_id of this ShowEdgeNodeResponse.
-        :type: str
+        :type space_id: str
         """
         self._space_id = space_id
 
@@ -310,7 +363,7 @@ class ShowEdgeNodeResponse(SdkResponse):
         节点所购买的资源类型的列表
 
         :param resource_spec_types: The resource_spec_types of this ShowEdgeNodeResponse.
-        :type: list[str]
+        :type resource_spec_types: list[str]
         """
         self._resource_spec_types = resource_spec_types
 
@@ -332,7 +385,7 @@ class ShowEdgeNodeResponse(SdkResponse):
         资源id列表，创建节点时需绑定已购买的资源包，可以叠加节点功能。
 
         :param resource_ids: The resource_ids of this ShowEdgeNodeResponse.
-        :type: list[str]
+        :type resource_ids: list[str]
         """
         self._resource_ids = resource_ids
 
@@ -354,7 +407,7 @@ class ShowEdgeNodeResponse(SdkResponse):
         边缘节点主机ip
 
         :param ips: The ips of this ShowEdgeNodeResponse.
-        :type: list[str]
+        :type ips: list[str]
         """
         self._ips = ips
 
@@ -376,7 +429,7 @@ class ShowEdgeNodeResponse(SdkResponse):
         边缘节点名称
 
         :param name: The name of this ShowEdgeNodeResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -398,7 +451,7 @@ class ShowEdgeNodeResponse(SdkResponse):
         边缘节点状态
 
         :param state: The state of this ShowEdgeNodeResponse.
-        :type: str
+        :type state: str
         """
         self._state = state
 
@@ -420,7 +473,7 @@ class ShowEdgeNodeResponse(SdkResponse):
         边缘应用id，只允许数字、英文小写、中划线，切必须以字母或数字结尾
 
         :param software_version: The software_version of this ShowEdgeNodeResponse.
-        :type: str
+        :type software_version: str
         """
         self._software_version = software_version
 
@@ -442,7 +495,7 @@ class ShowEdgeNodeResponse(SdkResponse):
         边缘节点创建时间
 
         :param create_time: The create_time of this ShowEdgeNodeResponse.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -464,7 +517,7 @@ class ShowEdgeNodeResponse(SdkResponse):
         边缘节点更新时间
 
         :param update_time: The update_time of this ShowEdgeNodeResponse.
-        :type: str
+        :type update_time: str
         """
         self._update_time = update_time
 
@@ -486,7 +539,7 @@ class ShowEdgeNodeResponse(SdkResponse):
         边缘节点操作系统名称
 
         :param os_name: The os_name of this ShowEdgeNodeResponse.
-        :type: str
+        :type os_name: str
         """
         self._os_name = os_name
 
@@ -508,7 +561,7 @@ class ShowEdgeNodeResponse(SdkResponse):
         边缘节点操作系统架构
 
         :param arch: The arch of this ShowEdgeNodeResponse.
-        :type: str
+        :type arch: str
         """
         self._arch = arch
 
@@ -530,7 +583,7 @@ class ShowEdgeNodeResponse(SdkResponse):
         边缘节点主机名
 
         :param host_name: The host_name of this ShowEdgeNodeResponse.
-        :type: str
+        :type host_name: str
         """
         self._host_name = host_name
 
@@ -541,7 +594,7 @@ class ShowEdgeNodeResponse(SdkResponse):
         边缘节点网络网卡信息
 
         :return: The nics of this ShowEdgeNodeResponse.
-        :rtype: list[Nic]
+        :rtype: list[:class:`huaweicloudsdkiotedge.v2.Nic`]
         """
         return self._nics
 
@@ -552,7 +605,7 @@ class ShowEdgeNodeResponse(SdkResponse):
         边缘节点网络网卡信息
 
         :param nics: The nics of this ShowEdgeNodeResponse.
-        :type: list[Nic]
+        :type nics: list[:class:`huaweicloudsdkiotedge.v2.Nic`]
         """
         self._nics = nics
 
@@ -574,7 +627,7 @@ class ShowEdgeNodeResponse(SdkResponse):
         网络规格，如4 cores | 3867 MB
 
         :param specification: The specification of this ShowEdgeNodeResponse.
-        :type: str
+        :type specification: str
         """
         self._specification = specification
 
@@ -596,7 +649,7 @@ class ShowEdgeNodeResponse(SdkResponse):
         华为AI加速卡类型，如NPU、GPU、unEquipped
 
         :param ai_card_type: The ai_card_type of this ShowEdgeNodeResponse.
-        :type: str
+        :type ai_card_type: str
         """
         self._ai_card_type = ai_card_type
 
@@ -618,7 +671,7 @@ class ShowEdgeNodeResponse(SdkResponse):
         容器运行时版本
 
         :param container_version: The container_version of this ShowEdgeNodeResponse.
-        :type: str
+        :type container_version: str
         """
         self._container_version = container_version
 
@@ -640,7 +693,7 @@ class ShowEdgeNodeResponse(SdkResponse):
         节点所属资源类型：advanced|standard
 
         :param type: The type of this ShowEdgeNodeResponse.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -662,7 +715,7 @@ class ShowEdgeNodeResponse(SdkResponse):
         节点的安全等级，MEDIUM边缘节数据上报不进行加密，HIGH对数据上报进行加密。
 
         :param security_level: The security_level of this ShowEdgeNodeResponse.
-        :type: str
+        :type security_level: str
         """
         self._security_level = security_level
 
@@ -684,7 +737,7 @@ class ShowEdgeNodeResponse(SdkResponse):
         节点的存储周期，默认0天，取值范围0~7天，0天则不存储。
 
         :param storage_period: The storage_period of this ShowEdgeNodeResponse.
-        :type: int
+        :type storage_period: int
         """
         self._storage_period = storage_period
 
@@ -694,7 +747,7 @@ class ShowEdgeNodeResponse(SdkResponse):
 
 
         :return: The base_path of this ShowEdgeNodeResponse.
-        :rtype: BasePathDTO
+        :rtype: :class:`huaweicloudsdkiotedge.v2.BasePathDTO`
         """
         return self._base_path
 
@@ -704,7 +757,7 @@ class ShowEdgeNodeResponse(SdkResponse):
 
 
         :param base_path: The base_path of this ShowEdgeNodeResponse.
-        :type: BasePathDTO
+        :type base_path: :class:`huaweicloudsdkiotedge.v2.BasePathDTO`
         """
         self._base_path = base_path
 

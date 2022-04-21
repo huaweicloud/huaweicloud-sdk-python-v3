@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DisableKeyRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DisableKeyRequest:
     }
 
     def __init__(self, version_id=None, body=None):
-        """DisableKeyRequest - a model defined in huaweicloud sdk"""
+        """DisableKeyRequest
+
+        The model defined in huaweicloud sdk
+
+        :param version_id: API版本号
+        :type version_id: str
+        :param body: Body of the DisableKeyRequest
+        :type body: :class:`huaweicloudsdkkms.v1.OperateKeyRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class DisableKeyRequest:
         API版本号
 
         :param version_id: The version_id of this DisableKeyRequest.
-        :type: str
+        :type version_id: str
         """
         self._version_id = version_id
 
@@ -72,7 +79,7 @@ class DisableKeyRequest:
 
 
         :return: The body of this DisableKeyRequest.
-        :rtype: OperateKeyRequestBody
+        :rtype: :class:`huaweicloudsdkkms.v1.OperateKeyRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class DisableKeyRequest:
 
 
         :param body: The body of this DisableKeyRequest.
-        :type: OperateKeyRequestBody
+        :type body: :class:`huaweicloudsdkkms.v1.OperateKeyRequestBody`
         """
         self._body = body
 

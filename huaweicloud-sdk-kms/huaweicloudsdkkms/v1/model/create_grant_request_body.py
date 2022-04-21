@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateGrantRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class CreateGrantRequestBody:
     }
 
     def __init__(self, key_id=None, grantee_principal=None, operations=None, name=None, retiring_principal=None, grantee_principal_type=None, sequence=None):
-        """CreateGrantRequestBody - a model defined in huaweicloud sdk"""
+        """CreateGrantRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param key_id: 密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
+        :type key_id: str
+        :param grantee_principal: 被授权用户ID，1~64字节，满足正则匹配“^[a-zA-Z0-9]{1，64}$”。 例如：0d0466b00d0466b00d0466b00d0466b0
+        :type grantee_principal: str
+        :param operations: 授权允许的操作列表。 有效的值：“create-datakey”，“create-datakey-without-plaintext”，“encrypt-datakey”，“decrypt-datakey”，“describe-key”，“create-grant”，“retire-grant”，“encrypt-data”，“decrypt-data”。 有效值不能仅为“create-grant”。
+        :type operations: list[str]
+        :param name: 授权名称，取值1到255字符，满足正则匹配“^[a-zA-Z0-9:/_-]{1,255}$”。
+        :type name: str
+        :param retiring_principal: 可退役授权的用户ID，1~64字节，满足正则匹配“^[a-zA-Z0-9]{1，64}$”。 例如：0d0466b00d0466b00d0466b00d0466b0
+        :type retiring_principal: str
+        :param grantee_principal_type: 授权类型。有效值：“user”，“domain”。默认值为“user”。
+        :type grantee_principal_type: str
+        :param sequence: 请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
+        :type sequence: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class CreateGrantRequestBody:
         密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
 
         :param key_id: The key_id of this CreateGrantRequestBody.
-        :type: str
+        :type key_id: str
         """
         self._key_id = key_id
 
@@ -110,7 +127,7 @@ class CreateGrantRequestBody:
         被授权用户ID，1~64字节，满足正则匹配“^[a-zA-Z0-9]{1，64}$”。 例如：0d0466b00d0466b00d0466b00d0466b0
 
         :param grantee_principal: The grantee_principal of this CreateGrantRequestBody.
-        :type: str
+        :type grantee_principal: str
         """
         self._grantee_principal = grantee_principal
 
@@ -132,7 +149,7 @@ class CreateGrantRequestBody:
         授权允许的操作列表。 有效的值：“create-datakey”，“create-datakey-without-plaintext”，“encrypt-datakey”，“decrypt-datakey”，“describe-key”，“create-grant”，“retire-grant”，“encrypt-data”，“decrypt-data”。 有效值不能仅为“create-grant”。
 
         :param operations: The operations of this CreateGrantRequestBody.
-        :type: list[str]
+        :type operations: list[str]
         """
         self._operations = operations
 
@@ -154,7 +171,7 @@ class CreateGrantRequestBody:
         授权名称，取值1到255字符，满足正则匹配“^[a-zA-Z0-9:/_-]{1,255}$”。
 
         :param name: The name of this CreateGrantRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -176,7 +193,7 @@ class CreateGrantRequestBody:
         可退役授权的用户ID，1~64字节，满足正则匹配“^[a-zA-Z0-9]{1，64}$”。 例如：0d0466b00d0466b00d0466b00d0466b0
 
         :param retiring_principal: The retiring_principal of this CreateGrantRequestBody.
-        :type: str
+        :type retiring_principal: str
         """
         self._retiring_principal = retiring_principal
 
@@ -198,7 +215,7 @@ class CreateGrantRequestBody:
         授权类型。有效值：“user”，“domain”。默认值为“user”。
 
         :param grantee_principal_type: The grantee_principal_type of this CreateGrantRequestBody.
-        :type: str
+        :type grantee_principal_type: str
         """
         self._grantee_principal_type = grantee_principal_type
 
@@ -220,7 +237,7 @@ class CreateGrantRequestBody:
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
 
         :param sequence: The sequence of this CreateGrantRequestBody.
-        :type: str
+        :type sequence: str
         """
         self._sequence = sequence
 

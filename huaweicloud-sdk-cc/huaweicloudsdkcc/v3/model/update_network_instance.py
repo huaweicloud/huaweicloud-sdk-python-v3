@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateNetworkInstance:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateNetworkInstance:
     }
 
     def __init__(self, name=None, description=None, cidrs=None):
-        """UpdateNetworkInstance - a model defined in huaweicloud sdk"""
+        """UpdateNetworkInstance
+
+        The model defined in huaweicloud sdk
+
+        :param name: 网络实例的名字。
+        :type name: str
+        :param description: 网络实例的描述。
+        :type description: str
+        :param cidrs: VPC或者VGW发布的网段路由列表，ER场景不需要此字段。
+        :type cidrs: list[str]
+        """
         
         
 
@@ -68,7 +77,7 @@ class UpdateNetworkInstance:
         网络实例的名字。
 
         :param name: The name of this UpdateNetworkInstance.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -90,7 +99,7 @@ class UpdateNetworkInstance:
         网络实例的描述。
 
         :param description: The description of this UpdateNetworkInstance.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -112,7 +121,7 @@ class UpdateNetworkInstance:
         VPC或者VGW发布的网段路由列表，ER场景不需要此字段。
 
         :param cidrs: The cidrs of this UpdateNetworkInstance.
-        :type: list[str]
+        :type cidrs: list[str]
         """
         self._cidrs = cidrs
 

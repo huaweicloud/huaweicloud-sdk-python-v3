@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTakeOverTaskRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListTakeOverTaskRequest:
     }
 
     def __init__(self, status=None, task_id=None, page=None, size=None):
-        """ListTakeOverTaskRequest - a model defined in huaweicloud sdk"""
+        """ListTakeOverTaskRequest
+
+        The model defined in huaweicloud sdk
+
+        :param status: 任务状态。
+        :type status: str
+        :param task_id: 任务ID。
+        :type task_id: str
+        :param page: 分页编号，默认为0。
+        :type page: int
+        :param size: 每页记录数。  默认10，范围[1,100]，指定task_id时该参数无效。
+        :type size: int
+        """
         
         
 
@@ -73,7 +84,7 @@ class ListTakeOverTaskRequest:
         任务状态。
 
         :param status: The status of this ListTakeOverTaskRequest.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -95,7 +106,7 @@ class ListTakeOverTaskRequest:
         任务ID。
 
         :param task_id: The task_id of this ListTakeOverTaskRequest.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -117,7 +128,7 @@ class ListTakeOverTaskRequest:
         分页编号，默认为0。
 
         :param page: The page of this ListTakeOverTaskRequest.
-        :type: int
+        :type page: int
         """
         self._page = page
 
@@ -139,7 +150,7 @@ class ListTakeOverTaskRequest:
         每页记录数。  默认10，范围[1,100]，指定task_id时该参数无效。
 
         :param size: The size of this ListTakeOverTaskRequest.
-        :type: int
+        :type size: int
         """
         self._size = size
 

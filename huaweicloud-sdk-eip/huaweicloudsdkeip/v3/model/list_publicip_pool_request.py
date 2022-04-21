@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPublicipPoolRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class ListPublicipPoolRequest:
     }
 
     def __init__(self, marker=None, limit=None, fields=None, sort_key=None, sort_dir=None, id=None, name=None, size=None, status=None, type=None, description=None, public_border_group=None):
-        """ListPublicipPoolRequest - a model defined in huaweicloud sdk"""
+        """ListPublicipPoolRequest
+
+        The model defined in huaweicloud sdk
+
+        :param marker: 分页查询起始的资源ID，为空时为查询第一页
+        :type marker: str
+        :param limit: 每页返回的个数取值范围：0~[2000]，其中2000为局点差异项，具体取值由局点决定
+        :type limit: int
+        :param fields: 显示，形式为\&quot;fields&#x3D;id&amp;fields&#x3D;name&amp;...\&quot;  支持字段：id/name/size/used/project_id/status/billing_info/created_at/updated_at/type/shared/is_common/description/tags/enterprise_project_id/allow_share_bandwidth_types/public_border_group
+        :type fields: str
+        :param sort_key: 排序，形式为\&quot;sort_key&#x3D;id&amp;sort_dir&#x3D;asc\&quot;  支持字段：id/name/created_at/updated_at/public_border_group
+        :type sort_key: str
+        :param sort_dir: 排序方向  取值范围：asc、desc
+        :type sort_dir: str
+        :param id: 根据id过滤
+        :type id: str
+        :param name: 根据name过滤
+        :type name: str
+        :param size: 根据size过滤
+        :type size: int
+        :param status: 根据status过滤
+        :type status: str
+        :param type: 根据type过滤
+        :type type: str
+        :param description: 根据description过滤
+        :type description: str
+        :param public_border_group: 根据public_border_group过滤
+        :type public_border_group: str
+        """
         
         
 
@@ -113,7 +140,7 @@ class ListPublicipPoolRequest:
         分页查询起始的资源ID，为空时为查询第一页
 
         :param marker: The marker of this ListPublicipPoolRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -135,7 +162,7 @@ class ListPublicipPoolRequest:
         每页返回的个数取值范围：0~[2000]，其中2000为局点差异项，具体取值由局点决定
 
         :param limit: The limit of this ListPublicipPoolRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -157,7 +184,7 @@ class ListPublicipPoolRequest:
         显示，形式为\"fields=id&fields=name&...\"  支持字段：id/name/size/used/project_id/status/billing_info/created_at/updated_at/type/shared/is_common/description/tags/enterprise_project_id/allow_share_bandwidth_types/public_border_group
 
         :param fields: The fields of this ListPublicipPoolRequest.
-        :type: str
+        :type fields: str
         """
         self._fields = fields
 
@@ -179,7 +206,7 @@ class ListPublicipPoolRequest:
         排序，形式为\"sort_key=id&sort_dir=asc\"  支持字段：id/name/created_at/updated_at/public_border_group
 
         :param sort_key: The sort_key of this ListPublicipPoolRequest.
-        :type: str
+        :type sort_key: str
         """
         self._sort_key = sort_key
 
@@ -201,7 +228,7 @@ class ListPublicipPoolRequest:
         排序方向  取值范围：asc、desc
 
         :param sort_dir: The sort_dir of this ListPublicipPoolRequest.
-        :type: str
+        :type sort_dir: str
         """
         self._sort_dir = sort_dir
 
@@ -223,7 +250,7 @@ class ListPublicipPoolRequest:
         根据id过滤
 
         :param id: The id of this ListPublicipPoolRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -245,7 +272,7 @@ class ListPublicipPoolRequest:
         根据name过滤
 
         :param name: The name of this ListPublicipPoolRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -267,7 +294,7 @@ class ListPublicipPoolRequest:
         根据size过滤
 
         :param size: The size of this ListPublicipPoolRequest.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -289,7 +316,7 @@ class ListPublicipPoolRequest:
         根据status过滤
 
         :param status: The status of this ListPublicipPoolRequest.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -311,7 +338,7 @@ class ListPublicipPoolRequest:
         根据type过滤
 
         :param type: The type of this ListPublicipPoolRequest.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -333,7 +360,7 @@ class ListPublicipPoolRequest:
         根据description过滤
 
         :param description: The description of this ListPublicipPoolRequest.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -355,7 +382,7 @@ class ListPublicipPoolRequest:
         根据public_border_group过滤
 
         :param public_border_group: The public_border_group of this ListPublicipPoolRequest.
-        :type: str
+        :type public_border_group: str
         """
         self._public_border_group = public_border_group
 

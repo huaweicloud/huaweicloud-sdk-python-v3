@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TokenSocpeOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class TokenSocpeOption:
     }
 
     def __init__(self, domain=None, project=None):
-        """TokenSocpeOption - a model defined in huaweicloud sdk"""
+        """TokenSocpeOption
+
+        The model defined in huaweicloud sdk
+
+        :param domain: 
+        :type domain: :class:`huaweicloudsdkiam.v3.ScopeDomainOption`
+        :param project: 
+        :type project: :class:`huaweicloudsdkiam.v3.ScopeProjectOption`
+        """
         
         
 
@@ -51,7 +58,7 @@ class TokenSocpeOption:
 
 
         :return: The domain of this TokenSocpeOption.
-        :rtype: ScopeDomainOption
+        :rtype: :class:`huaweicloudsdkiam.v3.ScopeDomainOption`
         """
         return self._domain
 
@@ -61,7 +68,7 @@ class TokenSocpeOption:
 
 
         :param domain: The domain of this TokenSocpeOption.
-        :type: ScopeDomainOption
+        :type domain: :class:`huaweicloudsdkiam.v3.ScopeDomainOption`
         """
         self._domain = domain
 
@@ -71,7 +78,7 @@ class TokenSocpeOption:
 
 
         :return: The project of this TokenSocpeOption.
-        :rtype: ScopeProjectOption
+        :rtype: :class:`huaweicloudsdkiam.v3.ScopeProjectOption`
         """
         return self._project
 
@@ -81,7 +88,7 @@ class TokenSocpeOption:
 
 
         :param project: The project of this TokenSocpeOption.
-        :type: ScopeProjectOption
+        :type project: :class:`huaweicloudsdkiam.v3.ScopeProjectOption`
         """
         self._project = project
 

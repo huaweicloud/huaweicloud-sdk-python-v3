@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteClusterTagRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteClusterTagRequest:
     }
 
     def __init__(self, cluster_id=None, key=None):
-        """DeleteClusterTagRequest - a model defined in huaweicloud sdk"""
+        """DeleteClusterTagRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 集群ID。
+        :type cluster_id: str
+        :param key: 键。标签的key值
+        :type key: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class DeleteClusterTagRequest:
         集群ID。
 
         :param cluster_id: The cluster_id of this DeleteClusterTagRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -83,7 +90,7 @@ class DeleteClusterTagRequest:
         键。标签的key值
 
         :param key: The key of this DeleteClusterTagRequest.
-        :type: str
+        :type key: str
         """
         self._key = key
 

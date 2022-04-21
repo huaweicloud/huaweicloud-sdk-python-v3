@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowQueueResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowQueueResponse(SdkResponse):
     }
 
     def __init__(self, queue_id=None, queue_name=None, create_time=None, last_modify_time=None):
-        """ShowQueueResponse - a model defined in huaweicloud sdk"""
+        """ShowQueueResponse
+
+        The model defined in huaweicloud sdk
+
+        :param queue_id: 队列ID，用于唯一标识一个队列。
+        :type queue_id: str
+        :param queue_name: 队列名称，同一租户不允许重复。
+        :type queue_name: str
+        :param create_time: 在物联网平台创建队列的时间。格式：yyyyMMdd&#39;T&#39;HHmmss&#39;Z&#39;，如20151212T121212Z。
+        :type create_time: str
+        :param last_modify_time: 在物联网平台最后修改队列的时间。格式：yyyyMMdd&#39;T&#39;HHmmss&#39;Z&#39;，如20151212T121212Z。
+        :type last_modify_time: str
+        """
         
         super(ShowQueueResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class ShowQueueResponse(SdkResponse):
         队列ID，用于唯一标识一个队列。
 
         :param queue_id: The queue_id of this ShowQueueResponse.
-        :type: str
+        :type queue_id: str
         """
         self._queue_id = queue_id
 
@@ -95,7 +106,7 @@ class ShowQueueResponse(SdkResponse):
         队列名称，同一租户不允许重复。
 
         :param queue_name: The queue_name of this ShowQueueResponse.
-        :type: str
+        :type queue_name: str
         """
         self._queue_name = queue_name
 
@@ -117,7 +128,7 @@ class ShowQueueResponse(SdkResponse):
         在物联网平台创建队列的时间。格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
         :param create_time: The create_time of this ShowQueueResponse.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -139,7 +150,7 @@ class ShowQueueResponse(SdkResponse):
         在物联网平台最后修改队列的时间。格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
         :param last_modify_time: The last_modify_time of this ShowQueueResponse.
-        :type: str
+        :type last_modify_time: str
         """
         self._last_modify_time = last_modify_time
 

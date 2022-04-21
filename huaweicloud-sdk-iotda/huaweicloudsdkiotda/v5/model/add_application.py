@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddApplication:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class AddApplication:
     }
 
     def __init__(self, app_name=None):
-        """AddApplication - a model defined in huaweicloud sdk"""
+        """AddApplication
+
+        The model defined in huaweicloud sdk
+
+        :param app_name: **参数说明**：资源空间名称。 **取值范围**：长度不超过64，允许中文、字母、数字、下划线（_）、连接符（-）等一些特殊字符的组合。
+        :type app_name: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class AddApplication:
         **参数说明**：资源空间名称。 **取值范围**：长度不超过64，允许中文、字母、数字、下划线（_）、连接符（-）等一些特殊字符的组合。
 
         :param app_name: The app_name of this AddApplication.
-        :type: str
+        :type app_name: str
         """
         self._app_name = app_name
 

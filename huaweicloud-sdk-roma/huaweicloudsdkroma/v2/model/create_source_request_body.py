@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateSourceRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class CreateSourceRequestBody:
     }
 
     def __init__(self, product_id=None, device_id=None, topic=None, is_base64=None, contain_device_info=None):
-        """CreateSourceRequestBody - a model defined in huaweicloud sdk"""
+        """CreateSourceRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param product_id: 产品ID，自动向下取整
+        :type product_id: int
+        :param device_id: 设备ID，自动向下取整，不填为全部设备
+        :type device_id: int
+        :param topic: 主题，当设备ID为空时为产品级主题，设备ID不为空时为设备级主题
+        :type topic: str
+        :param is_base64: 是否payload使用base64，0-是 1-否
+        :type is_base64: int
+        :param contain_device_info: 是否包含设备信息是否包含设备信息，0-是 1-否
+        :type contain_device_info: int
+        """
         
         
 
@@ -76,7 +89,7 @@ class CreateSourceRequestBody:
         产品ID，自动向下取整
 
         :param product_id: The product_id of this CreateSourceRequestBody.
-        :type: int
+        :type product_id: int
         """
         self._product_id = product_id
 
@@ -98,7 +111,7 @@ class CreateSourceRequestBody:
         设备ID，自动向下取整，不填为全部设备
 
         :param device_id: The device_id of this CreateSourceRequestBody.
-        :type: int
+        :type device_id: int
         """
         self._device_id = device_id
 
@@ -120,7 +133,7 @@ class CreateSourceRequestBody:
         主题，当设备ID为空时为产品级主题，设备ID不为空时为设备级主题
 
         :param topic: The topic of this CreateSourceRequestBody.
-        :type: str
+        :type topic: str
         """
         self._topic = topic
 
@@ -142,7 +155,7 @@ class CreateSourceRequestBody:
         是否payload使用base64，0-是 1-否
 
         :param is_base64: The is_base64 of this CreateSourceRequestBody.
-        :type: int
+        :type is_base64: int
         """
         self._is_base64 = is_base64
 
@@ -164,7 +177,7 @@ class CreateSourceRequestBody:
         是否包含设备信息是否包含设备信息，0-是 1-否
 
         :param contain_device_info: The contain_device_info of this CreateSourceRequestBody.
-        :type: int
+        :type contain_device_info: int
         """
         self._contain_device_info = contain_device_info
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RetryInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RetryInfo:
     }
 
     def __init__(self, job_id=None, is_sync_re_edit=None):
-        """RetryInfo - a model defined in huaweicloud sdk"""
+        """RetryInfo
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 任务ID
+        :type job_id: str
+        :param is_sync_re_edit: 再编辑之后启动，必填为true。
+        :type is_sync_re_edit: bool
+        """
         
         
 
@@ -62,7 +69,7 @@ class RetryInfo:
         任务ID
 
         :param job_id: The job_id of this RetryInfo.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -84,7 +91,7 @@ class RetryInfo:
         再编辑之后启动，必填为true。
 
         :param is_sync_re_edit: The is_sync_re_edit of this RetryInfo.
-        :type: bool
+        :type is_sync_re_edit: bool
         """
         self._is_sync_re_edit = is_sync_re_edit
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateInstanceCrossVpcIpReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateInstanceCrossVpcIpReq:
     }
 
     def __init__(self, advertised_ip_contents=None):
-        """UpdateInstanceCrossVpcIpReq - a model defined in huaweicloud sdk"""
+        """UpdateInstanceCrossVpcIpReq
+
+        The model defined in huaweicloud sdk
+
+        :param advertised_ip_contents: 用户自定义的advertised_ip_contents键值对。  键是listeners IP。  值是advertised.listeners IP，或者域名。  &gt; IP修改未修改项也需填上。
+        :type advertised_ip_contents: dict(str, str)
+        """
         
         
 
@@ -57,7 +62,7 @@ class UpdateInstanceCrossVpcIpReq:
         用户自定义的advertised_ip_contents键值对。  键是listeners IP。  值是advertised.listeners IP，或者域名。  > IP修改未修改项也需填上。
 
         :param advertised_ip_contents: The advertised_ip_contents of this UpdateInstanceCrossVpcIpReq.
-        :type: dict(str, str)
+        :type advertised_ip_contents: dict(str, str)
         """
         self._advertised_ip_contents = advertised_ip_contents
 

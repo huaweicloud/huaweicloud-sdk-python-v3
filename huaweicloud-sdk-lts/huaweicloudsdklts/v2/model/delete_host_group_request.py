@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteHostGroupRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteHostGroupRequest:
     }
 
     def __init__(self, body=None):
-        """DeleteHostGroupRequest - a model defined in huaweicloud sdk"""
+        """DeleteHostGroupRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the DeleteHostGroupRequest
+        :type body: :class:`huaweicloudsdklts.v2.DeleteHostGroupRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class DeleteHostGroupRequest:
 
 
         :return: The body of this DeleteHostGroupRequest.
-        :rtype: DeleteHostGroupRequestBody
+        :rtype: :class:`huaweicloudsdklts.v2.DeleteHostGroupRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class DeleteHostGroupRequest:
 
 
         :param body: The body of this DeleteHostGroupRequest.
-        :type: DeleteHostGroupRequestBody
+        :type body: :class:`huaweicloudsdklts.v2.DeleteHostGroupRequestBody`
         """
         self._body = body
 

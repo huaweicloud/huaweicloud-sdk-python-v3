@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResourceBasicInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ResourceBasicInfo:
     }
 
     def __init__(self, resource_type_code=None, product_owner_service=None, name=None, description=None):
-        """ResourceBasicInfo - a model defined in huaweicloud sdk"""
+        """ResourceBasicInfo
+
+        The model defined in huaweicloud sdk
+
+        :param resource_type_code: 资源类型编码。例如：hws.resource.type.general。
+        :type resource_type_code: str
+        :param product_owner_service: 资源类型归属的服务类型编码。例如：hws.service.type.offline。
+        :type product_owner_service: str
+        :param name: 资源类型名称。例如：通用规格。
+        :type name: str
+        :param description: 资源类型描述。
+        :type description: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class ResourceBasicInfo:
         资源类型编码。例如：hws.resource.type.general。
 
         :param resource_type_code: The resource_type_code of this ResourceBasicInfo.
-        :type: str
+        :type resource_type_code: str
         """
         self._resource_type_code = resource_type_code
 
@@ -95,7 +106,7 @@ class ResourceBasicInfo:
         资源类型归属的服务类型编码。例如：hws.service.type.offline。
 
         :param product_owner_service: The product_owner_service of this ResourceBasicInfo.
-        :type: str
+        :type product_owner_service: str
         """
         self._product_owner_service = product_owner_service
 
@@ -117,7 +128,7 @@ class ResourceBasicInfo:
         资源类型名称。例如：通用规格。
 
         :param name: The name of this ResourceBasicInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -139,7 +150,7 @@ class ResourceBasicInfo:
         资源类型描述。
 
         :param description: The description of this ResourceBasicInfo.
-        :type: str
+        :type description: str
         """
         self._description = description
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class HWCloudSentimentReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class HWCloudSentimentReq:
     }
 
     def __init__(self, content=None, lang=None):
-        """HWCloudSentimentReq - a model defined in huaweicloud sdk"""
+        """HWCloudSentimentReq
+
+        The model defined in huaweicloud sdk
+
+        :param content: 待分析文本。文本编码要求为utf-8。仅支持中文和英文情感分析。 限定180个字符以内，超过180个字符，只截取前180个字符。 
+        :type content: str
+        :param lang: 支持的文本语言类型，目前支持中文（zh）和英文（en），默认为中文。
+        :type lang: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class HWCloudSentimentReq:
         待分析文本。文本编码要求为utf-8。仅支持中文和英文情感分析。 限定180个字符以内，超过180个字符，只截取前180个字符。 
 
         :param content: The content of this HWCloudSentimentReq.
-        :type: str
+        :type content: str
         """
         self._content = content
 
@@ -84,7 +91,7 @@ class HWCloudSentimentReq:
         支持的文本语言类型，目前支持中文（zh）和英文（en），默认为中文。
 
         :param lang: The lang of this HWCloudSentimentReq.
-        :type: str
+        :type lang: str
         """
         self._lang = lang
 

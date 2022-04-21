@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UnpublishAssetsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UnpublishAssetsResponse(SdkResponse):
     }
 
     def __init__(self, asset_info_array=None):
-        """UnpublishAssetsResponse - a model defined in huaweicloud sdk"""
+        """UnpublishAssetsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param asset_info_array: 
+        :type asset_info_array: list[:class:`huaweicloudsdkvod.v1.AssetInfo`]
+        """
         
         super(UnpublishAssetsResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class UnpublishAssetsResponse(SdkResponse):
 
 
         :return: The asset_info_array of this UnpublishAssetsResponse.
-        :rtype: list[AssetInfo]
+        :rtype: list[:class:`huaweicloudsdkvod.v1.AssetInfo`]
         """
         return self._asset_info_array
 
@@ -56,7 +61,7 @@ class UnpublishAssetsResponse(SdkResponse):
 
 
         :param asset_info_array: The asset_info_array of this UnpublishAssetsResponse.
-        :type: list[AssetInfo]
+        :type asset_info_array: list[:class:`huaweicloudsdkvod.v1.AssetInfo`]
         """
         self._asset_info_array = asset_info_array
 

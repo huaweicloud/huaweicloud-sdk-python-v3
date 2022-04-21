@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneCreateUserTokenByPasswordAndMfaRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class KeystoneCreateUserTokenByPasswordAndMfaRequest:
     }
 
     def __init__(self, nocatalog=None, body=None):
-        """KeystoneCreateUserTokenByPasswordAndMfaRequest - a model defined in huaweicloud sdk"""
+        """KeystoneCreateUserTokenByPasswordAndMfaRequest
+
+        The model defined in huaweicloud sdk
+
+        :param nocatalog: 如果设置该参数，返回的响应体中将不显示catalog信息。任何非空字符串都将解释为true，并使该字段生效。
+        :type nocatalog: str
+        :param body: Body of the KeystoneCreateUserTokenByPasswordAndMfaRequest
+        :type body: :class:`huaweicloudsdkiam.v3.KeystoneCreateUserTokenByPasswordAndMfaRequestBody`
+        """
         
         
 
@@ -63,7 +70,7 @@ class KeystoneCreateUserTokenByPasswordAndMfaRequest:
         如果设置该参数，返回的响应体中将不显示catalog信息。任何非空字符串都将解释为true，并使该字段生效。
 
         :param nocatalog: The nocatalog of this KeystoneCreateUserTokenByPasswordAndMfaRequest.
-        :type: str
+        :type nocatalog: str
         """
         self._nocatalog = nocatalog
 
@@ -73,7 +80,7 @@ class KeystoneCreateUserTokenByPasswordAndMfaRequest:
 
 
         :return: The body of this KeystoneCreateUserTokenByPasswordAndMfaRequest.
-        :rtype: KeystoneCreateUserTokenByPasswordAndMfaRequestBody
+        :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCreateUserTokenByPasswordAndMfaRequestBody`
         """
         return self._body
 
@@ -83,7 +90,7 @@ class KeystoneCreateUserTokenByPasswordAndMfaRequest:
 
 
         :param body: The body of this KeystoneCreateUserTokenByPasswordAndMfaRequest.
-        :type: KeystoneCreateUserTokenByPasswordAndMfaRequestBody
+        :type body: :class:`huaweicloudsdkiam.v3.KeystoneCreateUserTokenByPasswordAndMfaRequestBody`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRequestPropertiesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ListRequestPropertiesRequest:
     }
 
     def __init__(self, instance_id=None, service_id=None, command_id=None, limit=None, request_id=None, request_name=None, offset=None):
-        """ListRequestPropertiesRequest - a model defined in huaweicloud sdk"""
+        """ListRequestPropertiesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param service_id: 服务ID
+        :type service_id: str
+        :param command_id: 命令ID
+        :type command_id: int
+        :param limit: 每页显示条目数量，最大数量999，超过999后只返回999
+        :type limit: int
+        :param request_id: 请求属性ID
+        :type request_id: int
+        :param request_name: 请求属性名称
+        :type request_name: str
+        :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0
+        :type offset: int
+        """
         
         
 
@@ -85,7 +102,7 @@ class ListRequestPropertiesRequest:
         实例ID
 
         :param instance_id: The instance_id of this ListRequestPropertiesRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -107,7 +124,7 @@ class ListRequestPropertiesRequest:
         服务ID
 
         :param service_id: The service_id of this ListRequestPropertiesRequest.
-        :type: str
+        :type service_id: str
         """
         self._service_id = service_id
 
@@ -129,7 +146,7 @@ class ListRequestPropertiesRequest:
         命令ID
 
         :param command_id: The command_id of this ListRequestPropertiesRequest.
-        :type: int
+        :type command_id: int
         """
         self._command_id = command_id
 
@@ -151,7 +168,7 @@ class ListRequestPropertiesRequest:
         每页显示条目数量，最大数量999，超过999后只返回999
 
         :param limit: The limit of this ListRequestPropertiesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -173,7 +190,7 @@ class ListRequestPropertiesRequest:
         请求属性ID
 
         :param request_id: The request_id of this ListRequestPropertiesRequest.
-        :type: int
+        :type request_id: int
         """
         self._request_id = request_id
 
@@ -195,7 +212,7 @@ class ListRequestPropertiesRequest:
         请求属性名称
 
         :param request_name: The request_name of this ListRequestPropertiesRequest.
-        :type: str
+        :type request_name: str
         """
         self._request_name = request_name
 
@@ -217,7 +234,7 @@ class ListRequestPropertiesRequest:
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
         :param offset: The offset of this ListRequestPropertiesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 

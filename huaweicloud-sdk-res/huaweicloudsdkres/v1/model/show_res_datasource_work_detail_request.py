@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowResDatasourceWorkDetailRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowResDatasourceWorkDetailRequest:
     }
 
     def __init__(self, content_type=None, workspace_id=None, resource_id=None, type=None):
-        """ShowResDatasourceWorkDetailRequest - a model defined in huaweicloud sdk"""
+        """ShowResDatasourceWorkDetailRequest
+
+        The model defined in huaweicloud sdk
+
+        :param content_type: 内容类型，取值为application/json。
+        :type content_type: str
+        :param workspace_id: 工作空间id。
+        :type workspace_id: str
+        :param resource_id: 资源id。
+        :type resource_id: str
+        :param type: 任务类型： - DATA_STRUCT，数据结构 - DATA_INSPECTION，数据检测 - DATA_EXPLORATION，数据探索
+        :type type: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class ShowResDatasourceWorkDetailRequest:
         内容类型，取值为application/json。
 
         :param content_type: The content_type of this ShowResDatasourceWorkDetailRequest.
-        :type: str
+        :type content_type: str
         """
         self._content_type = content_type
 
@@ -91,7 +102,7 @@ class ShowResDatasourceWorkDetailRequest:
         工作空间id。
 
         :param workspace_id: The workspace_id of this ShowResDatasourceWorkDetailRequest.
-        :type: str
+        :type workspace_id: str
         """
         self._workspace_id = workspace_id
 
@@ -113,7 +124,7 @@ class ShowResDatasourceWorkDetailRequest:
         资源id。
 
         :param resource_id: The resource_id of this ShowResDatasourceWorkDetailRequest.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -135,7 +146,7 @@ class ShowResDatasourceWorkDetailRequest:
         任务类型： - DATA_STRUCT，数据结构 - DATA_INSPECTION，数据检测 - DATA_EXPLORATION，数据探索
 
         :param type: The type of this ShowResDatasourceWorkDetailRequest.
-        :type: str
+        :type type: str
         """
         self._type = type
 

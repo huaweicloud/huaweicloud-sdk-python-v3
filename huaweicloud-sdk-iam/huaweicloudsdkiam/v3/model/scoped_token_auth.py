@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ScopedTokenAuth:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ScopedTokenAuth:
     }
 
     def __init__(self, identity=None, scope=None):
-        """ScopedTokenAuth - a model defined in huaweicloud sdk"""
+        """ScopedTokenAuth
+
+        The model defined in huaweicloud sdk
+
+        :param identity: 
+        :type identity: :class:`huaweicloudsdkiam.v3.ScopedTokenIdentity`
+        :param scope: 
+        :type scope: :class:`huaweicloudsdkiam.v3.TokenSocpeOption`
+        """
         
         
 
@@ -49,7 +56,7 @@ class ScopedTokenAuth:
 
 
         :return: The identity of this ScopedTokenAuth.
-        :rtype: ScopedTokenIdentity
+        :rtype: :class:`huaweicloudsdkiam.v3.ScopedTokenIdentity`
         """
         return self._identity
 
@@ -59,7 +66,7 @@ class ScopedTokenAuth:
 
 
         :param identity: The identity of this ScopedTokenAuth.
-        :type: ScopedTokenIdentity
+        :type identity: :class:`huaweicloudsdkiam.v3.ScopedTokenIdentity`
         """
         self._identity = identity
 
@@ -69,7 +76,7 @@ class ScopedTokenAuth:
 
 
         :return: The scope of this ScopedTokenAuth.
-        :rtype: TokenSocpeOption
+        :rtype: :class:`huaweicloudsdkiam.v3.TokenSocpeOption`
         """
         return self._scope
 
@@ -79,7 +86,7 @@ class ScopedTokenAuth:
 
 
         :param scope: The scope of this ScopedTokenAuth.
-        :type: TokenSocpeOption
+        :type scope: :class:`huaweicloudsdkiam.v3.TokenSocpeOption`
         """
         self._scope = scope
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateSecretVersionResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateSecretVersionResponse(SdkResponse):
     }
 
     def __init__(self, version_metadata=None):
-        """CreateSecretVersionResponse - a model defined in huaweicloud sdk"""
+        """CreateSecretVersionResponse
+
+        The model defined in huaweicloud sdk
+
+        :param version_metadata: 
+        :type version_metadata: :class:`huaweicloudsdkcsms.v1.VersionMetadata`
+        """
         
         super(CreateSecretVersionResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class CreateSecretVersionResponse(SdkResponse):
 
 
         :return: The version_metadata of this CreateSecretVersionResponse.
-        :rtype: VersionMetadata
+        :rtype: :class:`huaweicloudsdkcsms.v1.VersionMetadata`
         """
         return self._version_metadata
 
@@ -56,7 +61,7 @@ class CreateSecretVersionResponse(SdkResponse):
 
 
         :param version_metadata: The version_metadata of this CreateSecretVersionResponse.
-        :type: VersionMetadata
+        :type version_metadata: :class:`huaweicloudsdkcsms.v1.VersionMetadata`
         """
         self._version_metadata = version_metadata
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowTracingResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowTracingResponse(SdkResponse):
     }
 
     def __init__(self, tracing_ak=None, tracing_sk=None):
-        """ShowTracingResponse - a model defined in huaweicloud sdk"""
+        """ShowTracingResponse
+
+        The model defined in huaweicloud sdk
+
+        :param tracing_ak: apm的ak
+        :type tracing_ak: str
+        :param tracing_sk: apm的sk
+        :type tracing_sk: str
+        """
         
         super(ShowTracingResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ShowTracingResponse(SdkResponse):
         apm的ak
 
         :param tracing_ak: The tracing_ak of this ShowTracingResponse.
-        :type: str
+        :type tracing_ak: str
         """
         self._tracing_ak = tracing_ak
 
@@ -85,7 +92,7 @@ class ShowTracingResponse(SdkResponse):
         apm的sk
 
         :param tracing_sk: The tracing_sk of this ShowTracingResponse.
-        :type: str
+        :type tracing_sk: str
         """
         self._tracing_sk = tracing_sk
 

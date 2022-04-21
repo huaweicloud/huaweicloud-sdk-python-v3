@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SetSpeedValueRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class SetSpeedValueRequest:
     }
 
     def __init__(self, sim_card_id=None, body=None):
-        """SetSpeedValueRequest - a model defined in huaweicloud sdk"""
+        """SetSpeedValueRequest
+
+        The model defined in huaweicloud sdk
+
+        :param sim_card_id: SIM卡标识，可通过[查询SIM卡列表接口](https://support.huaweicloud.com/api-ocgsl/gsl_07_0008.html)获取
+        :type sim_card_id: int
+        :param body: Body of the SetSpeedValueRequest
+        :type body: :class:`huaweicloudsdkgsl.v3.SetSpeedValueReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class SetSpeedValueRequest:
         SIM卡标识，可通过[查询SIM卡列表接口](https://support.huaweicloud.com/api-ocgsl/gsl_07_0008.html)获取
 
         :param sim_card_id: The sim_card_id of this SetSpeedValueRequest.
-        :type: int
+        :type sim_card_id: int
         """
         self._sim_card_id = sim_card_id
 
@@ -72,7 +79,7 @@ class SetSpeedValueRequest:
 
 
         :return: The body of this SetSpeedValueRequest.
-        :rtype: SetSpeedValueReq
+        :rtype: :class:`huaweicloudsdkgsl.v3.SetSpeedValueReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class SetSpeedValueRequest:
 
 
         :param body: The body of this SetSpeedValueRequest.
-        :type: SetSpeedValueReq
+        :type body: :class:`huaweicloudsdkgsl.v3.SetSpeedValueReq`
         """
         self._body = body
 

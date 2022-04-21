@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DnsAssignMent:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class DnsAssignMent:
     }
 
     def __init__(self, hostname=None, ip_address=None, fqdn=None):
-        """DnsAssignMent - a model defined in huaweicloud sdk"""
+        """DnsAssignMent
+
+        The model defined in huaweicloud sdk
+
+        :param hostname: 端口hostname
+        :type hostname: str
+        :param ip_address: 端口IP地址
+        :type ip_address: str
+        :param fqdn: 端口内网fqdn
+        :type fqdn: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class DnsAssignMent:
         端口hostname
 
         :param hostname: The hostname of this DnsAssignMent.
-        :type: str
+        :type hostname: str
         """
         self._hostname = hostname
 
@@ -90,7 +99,7 @@ class DnsAssignMent:
         端口IP地址
 
         :param ip_address: The ip_address of this DnsAssignMent.
-        :type: str
+        :type ip_address: str
         """
         self._ip_address = ip_address
 
@@ -112,7 +121,7 @@ class DnsAssignMent:
         端口内网fqdn
 
         :param fqdn: The fqdn of this DnsAssignMent.
-        :type: str
+        :type fqdn: str
         """
         self._fqdn = fqdn
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryCustomersBalancesReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class QueryCustomersBalancesReq:
     }
 
     def __init__(self, customer_infos=None, indirect_partner_id=None):
-        """QueryCustomersBalancesReq - a model defined in huaweicloud sdk"""
+        """QueryCustomersBalancesReq
+
+        The model defined in huaweicloud sdk
+
+        :param customer_infos: 客户信息列表。 具体请参见表1。
+        :type customer_infos: list[:class:`huaweicloudsdkbss.v2.CustomerInfoV2`]
+        :param indirect_partner_id: 精英服务商ID。获取方法请参见查询精英服务商列表。 华为云伙伴能力中心（一级经销商）查询精英服务商（二级经销商）子客户的账户余额时，需要携带该参数。
+        :type indirect_partner_id: str
+        """
         
         
 
@@ -51,7 +58,7 @@ class QueryCustomersBalancesReq:
         客户信息列表。 具体请参见表1。
 
         :return: The customer_infos of this QueryCustomersBalancesReq.
-        :rtype: list[CustomerInfoV2]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.CustomerInfoV2`]
         """
         return self._customer_infos
 
@@ -62,7 +69,7 @@ class QueryCustomersBalancesReq:
         客户信息列表。 具体请参见表1。
 
         :param customer_infos: The customer_infos of this QueryCustomersBalancesReq.
-        :type: list[CustomerInfoV2]
+        :type customer_infos: list[:class:`huaweicloudsdkbss.v2.CustomerInfoV2`]
         """
         self._customer_infos = customer_infos
 
@@ -84,7 +91,7 @@ class QueryCustomersBalancesReq:
         精英服务商ID。获取方法请参见查询精英服务商列表。 华为云伙伴能力中心（一级经销商）查询精英服务商（二级经销商）子客户的账户余额时，需要携带该参数。
 
         :param indirect_partner_id: The indirect_partner_id of this QueryCustomersBalancesReq.
-        :type: str
+        :type indirect_partner_id: str
         """
         self._indirect_partner_id = indirect_partner_id
 

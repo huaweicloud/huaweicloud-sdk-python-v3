@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDatasetRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowDatasetRequest:
     }
 
     def __init__(self, job_id=None, run_id=None, offset=None, limit=None):
-        """ShowDatasetRequest - a model defined in huaweicloud sdk"""
+        """ShowDatasetRequest
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 作业ID。
+        :type job_id: str
+        :param run_id: 作业运行ID。
+        :type run_id: str
+        :param offset: 当前偏移量，默认为0。
+        :type offset: int
+        :param limit: 每页显示的最大作业个数，范围: [1, 100]。默认值：10。
+        :type limit: int
+        """
         
         
 
@@ -71,7 +82,7 @@ class ShowDatasetRequest:
         作业ID。
 
         :param job_id: The job_id of this ShowDatasetRequest.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -93,7 +104,7 @@ class ShowDatasetRequest:
         作业运行ID。
 
         :param run_id: The run_id of this ShowDatasetRequest.
-        :type: str
+        :type run_id: str
         """
         self._run_id = run_id
 
@@ -115,7 +126,7 @@ class ShowDatasetRequest:
         当前偏移量，默认为0。
 
         :param offset: The offset of this ShowDatasetRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -137,7 +148,7 @@ class ShowDatasetRequest:
         每页显示的最大作业个数，范围: [1, 100]。默认值：10。
 
         :param limit: The limit of this ShowDatasetRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

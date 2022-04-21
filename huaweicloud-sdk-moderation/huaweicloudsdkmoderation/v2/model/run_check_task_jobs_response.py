@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunCheckTaskJobsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RunCheckTaskJobsResponse(SdkResponse):
     }
 
     def __init__(self, result=None, count=None):
-        """RunCheckTaskJobsResponse - a model defined in huaweicloud sdk"""
+        """RunCheckTaskJobsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param result: 调用成功时表示调用结果。  调用失败时无此字段。 
+        :type result: list[:class:`huaweicloudsdkmoderation.v2.CheckTaskJobsItemsBody`]
+        :param count: 符合查询条件的总任务数量。 
+        :type count: int
+        """
         
         super(RunCheckTaskJobsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class RunCheckTaskJobsResponse(SdkResponse):
         调用成功时表示调用结果。  调用失败时无此字段。 
 
         :return: The result of this RunCheckTaskJobsResponse.
-        :rtype: list[CheckTaskJobsItemsBody]
+        :rtype: list[:class:`huaweicloudsdkmoderation.v2.CheckTaskJobsItemsBody`]
         """
         return self._result
 
@@ -63,7 +70,7 @@ class RunCheckTaskJobsResponse(SdkResponse):
         调用成功时表示调用结果。  调用失败时无此字段。 
 
         :param result: The result of this RunCheckTaskJobsResponse.
-        :type: list[CheckTaskJobsItemsBody]
+        :type result: list[:class:`huaweicloudsdkmoderation.v2.CheckTaskJobsItemsBody`]
         """
         self._result = result
 
@@ -85,7 +92,7 @@ class RunCheckTaskJobsResponse(SdkResponse):
         符合查询条件的总任务数量。 
 
         :param count: The count of this RunCheckTaskJobsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

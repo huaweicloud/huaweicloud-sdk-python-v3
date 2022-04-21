@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListProvidersRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListProvidersRequest:
     }
 
     def __init__(self, offset=None, limit=None, x_language=None):
-        """ListProvidersRequest - a model defined in huaweicloud sdk"""
+        """ListProvidersRequest
+
+        The model defined in huaweicloud sdk
+
+        :param offset: 分页偏移
+        :type offset: int
+        :param limit: 最大的返回数量
+        :type limit: int
+        :param x_language: 选择接口返回的信息的语言，默认为\&quot;zh-cn\&quot;中文
+        :type x_language: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class ListProvidersRequest:
         分页偏移
 
         :param offset: The offset of this ListProvidersRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -90,7 +99,7 @@ class ListProvidersRequest:
         最大的返回数量
 
         :param limit: The limit of this ListProvidersRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -112,7 +121,7 @@ class ListProvidersRequest:
         选择接口返回的信息的语言，默认为\"zh-cn\"中文
 
         :param x_language: The x_language of this ListProvidersRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 

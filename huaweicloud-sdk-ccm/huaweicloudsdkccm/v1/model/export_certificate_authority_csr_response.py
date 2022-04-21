@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExportCertificateAuthorityCsrResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ExportCertificateAuthorityCsrResponse(SdkResponse):
     }
 
     def __init__(self, csr=None):
-        """ExportCertificateAuthorityCsrResponse - a model defined in huaweicloud sdk"""
+        """ExportCertificateAuthorityCsrResponse
+
+        The model defined in huaweicloud sdk
+
+        :param csr: 证书签名请求内容，有以下两种情况：   - 通过API请求本接口，证书签名请求中换行符已使用\&quot;\\r\\n\&quot;代替；   - 通过console端导出证书签名请求，将得到标准的PEM格式的证书签名请求文件。
+        :type csr: str
+        """
         
         super(ExportCertificateAuthorityCsrResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class ExportCertificateAuthorityCsrResponse(SdkResponse):
         证书签名请求内容，有以下两种情况：   - 通过API请求本接口，证书签名请求中换行符已使用\"\\r\\n\"代替；   - 通过console端导出证书签名请求，将得到标准的PEM格式的证书签名请求文件。
 
         :param csr: The csr of this ExportCertificateAuthorityCsrResponse.
-        :type: str
+        :type csr: str
         """
         self._csr = csr
 

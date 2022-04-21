@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResetMessageOffsetReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ResetMessageOffsetReq:
     }
 
     def __init__(self, topic=None, partition=None, message_offset=None, timestamp=None):
-        """ResetMessageOffsetReq - a model defined in huaweicloud sdk"""
+        """ResetMessageOffsetReq
+
+        The model defined in huaweicloud sdk
+
+        :param topic: topic名称。
+        :type topic: str
+        :param partition: 分区编号，默认值为-1，若传入值为-1，则重置所有分区。
+        :type partition: int
+        :param message_offset: 重置的消费进度到指定偏移量。 如果传入offset小于当前最小的offset，则重置到最小的offset。 如果大于最大的offset，则重置到最大的offset。 message_offset、timestamp二者必选其一。 
+        :type message_offset: int
+        :param timestamp: 重置的消费进度到指定时间，格式为unix时间戳，单位为毫秒。 如果传入timestamp早于当前最早的timestamp，则重置到最早的timestamp。 如果晚于最晚的timestamp，则重置到最晚的timestamp。 message_offset、timestamp二者必选其一。 
+        :type timestamp: int
+        """
         
         
 
@@ -72,7 +83,7 @@ class ResetMessageOffsetReq:
         topic名称。
 
         :param topic: The topic of this ResetMessageOffsetReq.
-        :type: str
+        :type topic: str
         """
         self._topic = topic
 
@@ -94,7 +105,7 @@ class ResetMessageOffsetReq:
         分区编号，默认值为-1，若传入值为-1，则重置所有分区。
 
         :param partition: The partition of this ResetMessageOffsetReq.
-        :type: int
+        :type partition: int
         """
         self._partition = partition
 
@@ -116,7 +127,7 @@ class ResetMessageOffsetReq:
         重置的消费进度到指定偏移量。 如果传入offset小于当前最小的offset，则重置到最小的offset。 如果大于最大的offset，则重置到最大的offset。 message_offset、timestamp二者必选其一。 
 
         :param message_offset: The message_offset of this ResetMessageOffsetReq.
-        :type: int
+        :type message_offset: int
         """
         self._message_offset = message_offset
 
@@ -138,7 +149,7 @@ class ResetMessageOffsetReq:
         重置的消费进度到指定时间，格式为unix时间戳，单位为毫秒。 如果传入timestamp早于当前最早的timestamp，则重置到最早的timestamp。 如果晚于最晚的timestamp，则重置到最晚的timestamp。 message_offset、timestamp二者必选其一。 
 
         :param timestamp: The timestamp of this ResetMessageOffsetReq.
-        :type: int
+        :type timestamp: int
         """
         self._timestamp = timestamp
 

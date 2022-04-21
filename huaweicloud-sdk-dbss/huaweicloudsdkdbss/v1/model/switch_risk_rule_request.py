@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SwitchRiskRuleRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class SwitchRiskRuleRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """SwitchRiskRuleRequest - a model defined in huaweicloud sdk"""
+        """SwitchRiskRuleRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: instance_id
+        :type instance_id: str
+        :param body: Body of the SwitchRiskRuleRequest
+        :type body: :class:`huaweicloudsdkdbss.v1.BatchSwitchesRequest`
+        """
         
         
 
@@ -62,7 +69,7 @@ class SwitchRiskRuleRequest:
         instance_id
 
         :param instance_id: The instance_id of this SwitchRiskRuleRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -72,7 +79,7 @@ class SwitchRiskRuleRequest:
 
 
         :return: The body of this SwitchRiskRuleRequest.
-        :rtype: BatchSwitchesRequest
+        :rtype: :class:`huaweicloudsdkdbss.v1.BatchSwitchesRequest`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class SwitchRiskRuleRequest:
 
 
         :param body: The body of this SwitchRiskRuleRequest.
-        :type: BatchSwitchesRequest
+        :type body: :class:`huaweicloudsdkdbss.v1.BatchSwitchesRequest`
         """
         self._body = body
 

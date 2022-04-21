@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateProtectedInstanceNameRequestParams:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateProtectedInstanceNameRequestParams:
     }
 
     def __init__(self, name=None):
-        """UpdateProtectedInstanceNameRequestParams - a model defined in huaweicloud sdk"""
+        """UpdateProtectedInstanceNameRequestParams
+
+        The model defined in huaweicloud sdk
+
+        :param name: 保护实例的名称。最大支持长度为64个字节。只包含中文字符、英文字母（a～ｚ、Ａ～Ｚ）、数字（０~９）、小数点（．）、下划线（_）、中划线（-）。
+        :type name: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class UpdateProtectedInstanceNameRequestParams:
         保护实例的名称。最大支持长度为64个字节。只包含中文字符、英文字母（a～ｚ、Ａ～Ｚ）、数字（０~９）、小数点（．）、下划线（_）、中划线（-）。
 
         :param name: The name of this UpdateProtectedInstanceNameRequestParams.
-        :type: str
+        :type name: str
         """
         self._name = name
 

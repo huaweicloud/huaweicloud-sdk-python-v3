@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GetJobInfoDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class GetJobInfoDetail:
     }
 
     def __init__(self, id=None, name=None, status=None, created=None, ended=None, process=None, instance=None, entities=None, fail_reason=None):
-        """GetJobInfoDetail - a model defined in huaweicloud sdk"""
+        """GetJobInfoDetail
+
+        The model defined in huaweicloud sdk
+
+        :param id: 任务ID。
+        :type id: str
+        :param name: 任务名称。
+        :type name: str
+        :param status: 任务执行状态。  取值： - 值为“Running”，表示任务正在执行。 - 值为“Completed”，表示任务执行成功。 - 值为“Failed”，表示任务执行失败。
+        :type status: str
+        :param created: 创建时间，格式为\&quot;yyyy-mm-ddThh:mm:ssZ\&quot;。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为   +0800 说明：创建时返回值为空，数据库实例创建成功后该值不为空。
+        :type created: str
+        :param ended: 结束时间，格式为\&quot;yyyy-mm-ddThh:mm:ssZ\&quot;。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为   +0800 说明：创建时返回值为空，数据库实例创建成功后该值不为空。
+        :type ended: str
+        :param process: 任务执行进度。执行中状态才返回执行进度，例如60%，否则返回\&quot;\&quot;。
+        :type process: str
+        :param instance: 
+        :type instance: :class:`huaweicloudsdkgaussdb.v3.GetJobInstanceInfoDetail`
+        :param entities: 
+        :type entities: :class:`huaweicloudsdkgaussdb.v3.GetJobEntitiesInfoDetail`
+        :param fail_reason: 任务执行失败时的错误信息。
+        :type fail_reason: str
+        """
         
         
 
@@ -93,7 +114,7 @@ class GetJobInfoDetail:
         任务ID。
 
         :param id: The id of this GetJobInfoDetail.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -115,7 +136,7 @@ class GetJobInfoDetail:
         任务名称。
 
         :param name: The name of this GetJobInfoDetail.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -137,7 +158,7 @@ class GetJobInfoDetail:
         任务执行状态。  取值： - 值为“Running”，表示任务正在执行。 - 值为“Completed”，表示任务执行成功。 - 值为“Failed”，表示任务执行失败。
 
         :param status: The status of this GetJobInfoDetail.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -159,7 +180,7 @@ class GetJobInfoDetail:
         创建时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为   +0800 说明：创建时返回值为空，数据库实例创建成功后该值不为空。
 
         :param created: The created of this GetJobInfoDetail.
-        :type: str
+        :type created: str
         """
         self._created = created
 
@@ -181,7 +202,7 @@ class GetJobInfoDetail:
         结束时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为   +0800 说明：创建时返回值为空，数据库实例创建成功后该值不为空。
 
         :param ended: The ended of this GetJobInfoDetail.
-        :type: str
+        :type ended: str
         """
         self._ended = ended
 
@@ -203,7 +224,7 @@ class GetJobInfoDetail:
         任务执行进度。执行中状态才返回执行进度，例如60%，否则返回\"\"。
 
         :param process: The process of this GetJobInfoDetail.
-        :type: str
+        :type process: str
         """
         self._process = process
 
@@ -213,7 +234,7 @@ class GetJobInfoDetail:
 
 
         :return: The instance of this GetJobInfoDetail.
-        :rtype: GetJobInstanceInfoDetail
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.GetJobInstanceInfoDetail`
         """
         return self._instance
 
@@ -223,7 +244,7 @@ class GetJobInfoDetail:
 
 
         :param instance: The instance of this GetJobInfoDetail.
-        :type: GetJobInstanceInfoDetail
+        :type instance: :class:`huaweicloudsdkgaussdb.v3.GetJobInstanceInfoDetail`
         """
         self._instance = instance
 
@@ -233,7 +254,7 @@ class GetJobInfoDetail:
 
 
         :return: The entities of this GetJobInfoDetail.
-        :rtype: GetJobEntitiesInfoDetail
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.GetJobEntitiesInfoDetail`
         """
         return self._entities
 
@@ -243,7 +264,7 @@ class GetJobInfoDetail:
 
 
         :param entities: The entities of this GetJobInfoDetail.
-        :type: GetJobEntitiesInfoDetail
+        :type entities: :class:`huaweicloudsdkgaussdb.v3.GetJobEntitiesInfoDetail`
         """
         self._entities = entities
 
@@ -265,7 +286,7 @@ class GetJobInfoDetail:
         任务执行失败时的错误信息。
 
         :param fail_reason: The fail_reason of this GetJobInfoDetail.
-        :type: str
+        :type fail_reason: str
         """
         self._fail_reason = fail_reason
 

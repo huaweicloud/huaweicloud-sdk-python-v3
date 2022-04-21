@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GeoLocation:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class GeoLocation:
     }
 
     def __init__(self, id=None, area=None, city=None, country=None, i18n_area=None, i18n_city=None, i18n_country=None, i18n_province=None, province=None):
-        """GeoLocation - a model defined in huaweicloud sdk"""
+        """GeoLocation
+
+        The model defined in huaweicloud sdk
+
+        :param id: 地理位置信息ID。
+        :type id: str
+        :param area: 所在大区。
+        :type area: str
+        :param city: 所在城市。
+        :type city: str
+        :param country: 所在的国家。
+        :type country: str
+        :param i18n_area: 区域的国际化名称。
+        :type i18n_area: str
+        :param i18n_city: 城市的国际化名称。
+        :type i18n_city: str
+        :param i18n_country: 国家的国际化名称。
+        :type i18n_country: str
+        :param i18n_province: 省份的国际化名称。
+        :type i18n_province: str
+        :param province: 所在省份。
+        :type province: str
+        """
         
         
 
@@ -98,7 +119,7 @@ class GeoLocation:
         地理位置信息ID。
 
         :param id: The id of this GeoLocation.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -120,7 +141,7 @@ class GeoLocation:
         所在大区。
 
         :param area: The area of this GeoLocation.
-        :type: str
+        :type area: str
         """
         self._area = area
 
@@ -142,7 +163,7 @@ class GeoLocation:
         所在城市。
 
         :param city: The city of this GeoLocation.
-        :type: str
+        :type city: str
         """
         self._city = city
 
@@ -164,7 +185,7 @@ class GeoLocation:
         所在的国家。
 
         :param country: The country of this GeoLocation.
-        :type: str
+        :type country: str
         """
         self._country = country
 
@@ -186,7 +207,7 @@ class GeoLocation:
         区域的国际化名称。
 
         :param i18n_area: The i18n_area of this GeoLocation.
-        :type: str
+        :type i18n_area: str
         """
         self._i18n_area = i18n_area
 
@@ -208,7 +229,7 @@ class GeoLocation:
         城市的国际化名称。
 
         :param i18n_city: The i18n_city of this GeoLocation.
-        :type: str
+        :type i18n_city: str
         """
         self._i18n_city = i18n_city
 
@@ -230,7 +251,7 @@ class GeoLocation:
         国家的国际化名称。
 
         :param i18n_country: The i18n_country of this GeoLocation.
-        :type: str
+        :type i18n_country: str
         """
         self._i18n_country = i18n_country
 
@@ -252,7 +273,7 @@ class GeoLocation:
         省份的国际化名称。
 
         :param i18n_province: The i18n_province of this GeoLocation.
-        :type: str
+        :type i18n_province: str
         """
         self._i18n_province = i18n_province
 
@@ -274,7 +295,7 @@ class GeoLocation:
         所在省份。
 
         :param province: The province of this GeoLocation.
-        :type: str
+        :type province: str
         """
         self._province = province
 

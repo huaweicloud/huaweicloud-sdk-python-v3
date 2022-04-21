@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MultiTaskInitElementExtInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class MultiTaskInitElementExtInfo:
     }
 
     def __init__(self, server_id=None):
-        """MultiTaskInitElementExtInfo - a model defined in huaweicloud sdk"""
+        """MultiTaskInitElementExtInfo
+
+        The model defined in huaweicloud sdk
+
+        :param server_id: Mysql的ServerID
+        :type server_id: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class MultiTaskInitElementExtInfo:
         Mysql的ServerID
 
         :param server_id: The server_id of this MultiTaskInitElementExtInfo.
-        :type: str
+        :type server_id: str
         """
         self._server_id = server_id
 

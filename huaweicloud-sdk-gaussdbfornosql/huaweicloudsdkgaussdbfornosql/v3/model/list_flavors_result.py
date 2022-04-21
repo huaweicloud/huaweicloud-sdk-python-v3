@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListFlavorsResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ListFlavorsResult:
     }
 
     def __init__(self, engine_name=None, engine_version=None, vcpus=None, ram=None, spec_code=None, availability_zone=None, az_status=None):
-        """ListFlavorsResult - a model defined in huaweicloud sdk"""
+        """ListFlavorsResult
+
+        The model defined in huaweicloud sdk
+
+        :param engine_name: 引擎名称。
+        :type engine_name: str
+        :param engine_version: 引擎版本。
+        :type engine_version: str
+        :param vcpus: CPU核数。
+        :type vcpus: str
+        :param ram: 内存大小，单位为兆字节。
+        :type ram: str
+        :param spec_code: 资源规格编码。例如：geminidb.cassandra.8xlarge.4   - “geminidb.cassandra”表示云数据库GaussDB NoSQL的Cassandra数据库产品。   - “8xlarge.4”表示节点性能规格。
+        :type spec_code: str
+        :param availability_zone: 
+        :type availability_zone: list[str]
+        :param az_status: 规格在可用区内的状态，包含以下状态：   - normal，在售。   - unsupported，暂不支持该规格。   - sellout，售罄。
+        :type az_status: object
+        """
         
         
 
@@ -81,7 +98,7 @@ class ListFlavorsResult:
         引擎名称。
 
         :param engine_name: The engine_name of this ListFlavorsResult.
-        :type: str
+        :type engine_name: str
         """
         self._engine_name = engine_name
 
@@ -103,7 +120,7 @@ class ListFlavorsResult:
         引擎版本。
 
         :param engine_version: The engine_version of this ListFlavorsResult.
-        :type: str
+        :type engine_version: str
         """
         self._engine_version = engine_version
 
@@ -125,7 +142,7 @@ class ListFlavorsResult:
         CPU核数。
 
         :param vcpus: The vcpus of this ListFlavorsResult.
-        :type: str
+        :type vcpus: str
         """
         self._vcpus = vcpus
 
@@ -147,7 +164,7 @@ class ListFlavorsResult:
         内存大小，单位为兆字节。
 
         :param ram: The ram of this ListFlavorsResult.
-        :type: str
+        :type ram: str
         """
         self._ram = ram
 
@@ -169,7 +186,7 @@ class ListFlavorsResult:
         资源规格编码。例如：geminidb.cassandra.8xlarge.4   - “geminidb.cassandra”表示云数据库GaussDB NoSQL的Cassandra数据库产品。   - “8xlarge.4”表示节点性能规格。
 
         :param spec_code: The spec_code of this ListFlavorsResult.
-        :type: str
+        :type spec_code: str
         """
         self._spec_code = spec_code
 
@@ -189,7 +206,7 @@ class ListFlavorsResult:
 
 
         :param availability_zone: The availability_zone of this ListFlavorsResult.
-        :type: list[str]
+        :type availability_zone: list[str]
         """
         self._availability_zone = availability_zone
 
@@ -211,7 +228,7 @@ class ListFlavorsResult:
         规格在可用区内的状态，包含以下状态：   - normal，在售。   - unsupported，暂不支持该规格。   - sellout，售罄。
 
         :param az_status: The az_status of this ListFlavorsResult.
-        :type: object
+        :type az_status: object
         """
         self._az_status = az_status
 

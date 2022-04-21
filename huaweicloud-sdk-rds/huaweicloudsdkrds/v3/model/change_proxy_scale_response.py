@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ChangeProxyScaleResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ChangeProxyScaleResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """ChangeProxyScaleResponse - a model defined in huaweicloud sdk"""
+        """ChangeProxyScaleResponse
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 任务ID。
+        :type job_id: str
+        """
         
         super(ChangeProxyScaleResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class ChangeProxyScaleResponse(SdkResponse):
         任务ID。
 
         :param job_id: The job_id of this ChangeProxyScaleResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 

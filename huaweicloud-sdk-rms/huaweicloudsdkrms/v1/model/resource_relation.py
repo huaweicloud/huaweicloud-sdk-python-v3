@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResourceRelation:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ResourceRelation:
     }
 
     def __init__(self, relation_type=None, from_resource_type=None, to_resource_type=None, from_resource_id=None, to_resource_id=None):
-        """ResourceRelation - a model defined in huaweicloud sdk"""
+        """ResourceRelation
+
+        The model defined in huaweicloud sdk
+
+        :param relation_type: 关系类型
+        :type relation_type: str
+        :param from_resource_type: 源资源类型
+        :type from_resource_type: str
+        :param to_resource_type: 目的资源类型
+        :type to_resource_type: str
+        :param from_resource_id: 源资源ID
+        :type from_resource_id: str
+        :param to_resource_id: 目的资源ID
+        :type to_resource_id: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class ResourceRelation:
         关系类型
 
         :param relation_type: The relation_type of this ResourceRelation.
-        :type: str
+        :type relation_type: str
         """
         self._relation_type = relation_type
 
@@ -100,7 +113,7 @@ class ResourceRelation:
         源资源类型
 
         :param from_resource_type: The from_resource_type of this ResourceRelation.
-        :type: str
+        :type from_resource_type: str
         """
         self._from_resource_type = from_resource_type
 
@@ -122,7 +135,7 @@ class ResourceRelation:
         目的资源类型
 
         :param to_resource_type: The to_resource_type of this ResourceRelation.
-        :type: str
+        :type to_resource_type: str
         """
         self._to_resource_type = to_resource_type
 
@@ -144,7 +157,7 @@ class ResourceRelation:
         源资源ID
 
         :param from_resource_id: The from_resource_id of this ResourceRelation.
-        :type: str
+        :type from_resource_id: str
         """
         self._from_resource_id = from_resource_id
 
@@ -166,7 +179,7 @@ class ResourceRelation:
         目的资源ID
 
         :param to_resource_id: The to_resource_id of this ResourceRelation.
-        :type: str
+        :type to_resource_id: str
         """
         self._to_resource_id = to_resource_id
 

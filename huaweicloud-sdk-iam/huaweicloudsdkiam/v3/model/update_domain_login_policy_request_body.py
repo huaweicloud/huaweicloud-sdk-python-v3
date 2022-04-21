@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDomainLoginPolicyRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateDomainLoginPolicyRequestBody:
     }
 
     def __init__(self, login_policy=None):
-        """UpdateDomainLoginPolicyRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateDomainLoginPolicyRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param login_policy: 
+        :type login_policy: :class:`huaweicloudsdkiam.v3.LoginPolicyOption`
+        """
         
         
 
@@ -45,7 +50,7 @@ class UpdateDomainLoginPolicyRequestBody:
 
 
         :return: The login_policy of this UpdateDomainLoginPolicyRequestBody.
-        :rtype: LoginPolicyOption
+        :rtype: :class:`huaweicloudsdkiam.v3.LoginPolicyOption`
         """
         return self._login_policy
 
@@ -55,7 +60,7 @@ class UpdateDomainLoginPolicyRequestBody:
 
 
         :param login_policy: The login_policy of this UpdateDomainLoginPolicyRequestBody.
-        :type: LoginPolicyOption
+        :type login_policy: :class:`huaweicloudsdkiam.v3.LoginPolicyOption`
         """
         self._login_policy = login_policy
 

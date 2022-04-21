@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DailyLog:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class DailyLog:
     }
 
     def __init__(self, start_time=None, end_time=None, status=None, trigger_bps=None, trigger_pps=None, trigger_http_pps=None):
-        """DailyLog - a model defined in huaweicloud sdk"""
+        """DailyLog
+
+        The model defined in huaweicloud sdk
+
+        :param start_time: 开始时间
+        :type start_time: int
+        :param end_time: 结束时间
+        :type end_time: int
+        :param status: 防护状态，可选范围： - 1：表示清洗 - 2：表示黑洞
+        :type status: int
+        :param trigger_bps: 触发时流量
+        :type trigger_bps: int
+        :param trigger_pps: 触发时报文速率
+        :type trigger_pps: int
+        :param trigger_http_pps: 触发时HTTP请求速率
+        :type trigger_http_pps: int
+        """
         
         
 
@@ -77,7 +92,7 @@ class DailyLog:
         开始时间
 
         :param start_time: The start_time of this DailyLog.
-        :type: int
+        :type start_time: int
         """
         self._start_time = start_time
 
@@ -99,7 +114,7 @@ class DailyLog:
         结束时间
 
         :param end_time: The end_time of this DailyLog.
-        :type: int
+        :type end_time: int
         """
         self._end_time = end_time
 
@@ -121,7 +136,7 @@ class DailyLog:
         防护状态，可选范围： - 1：表示清洗 - 2：表示黑洞
 
         :param status: The status of this DailyLog.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -143,7 +158,7 @@ class DailyLog:
         触发时流量
 
         :param trigger_bps: The trigger_bps of this DailyLog.
-        :type: int
+        :type trigger_bps: int
         """
         self._trigger_bps = trigger_bps
 
@@ -165,7 +180,7 @@ class DailyLog:
         触发时报文速率
 
         :param trigger_pps: The trigger_pps of this DailyLog.
-        :type: int
+        :type trigger_pps: int
         """
         self._trigger_pps = trigger_pps
 
@@ -187,7 +202,7 @@ class DailyLog:
         触发时HTTP请求速率
 
         :param trigger_http_pps: The trigger_http_pps of this DailyLog.
-        :type: int
+        :type trigger_http_pps: int
         """
         self._trigger_http_pps = trigger_http_pps
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListServersResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListServersResponse(SdkResponse):
     }
 
     def __init__(self, count=None, source_servers=None):
-        """ListServersResponse - a model defined in huaweicloud sdk"""
+        """ListServersResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 符合查询条件的源端总数量，不受limit和offset影响
+        :type count: int
+        :param source_servers: 批量查询的源端服务器详列表
+        :type source_servers: list[:class:`huaweicloudsdksms.v3.SourceServersResponseBody`]
+        """
         
         super(ListServersResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListServersResponse(SdkResponse):
         符合查询条件的源端总数量，不受limit和offset影响
 
         :param count: The count of this ListServersResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -74,7 +81,7 @@ class ListServersResponse(SdkResponse):
         批量查询的源端服务器详列表
 
         :return: The source_servers of this ListServersResponse.
-        :rtype: list[SourceServersResponseBody]
+        :rtype: list[:class:`huaweicloudsdksms.v3.SourceServersResponseBody`]
         """
         return self._source_servers
 
@@ -85,7 +92,7 @@ class ListServersResponse(SdkResponse):
         批量查询的源端服务器详列表
 
         :param source_servers: The source_servers of this ListServersResponse.
-        :type: list[SourceServersResponseBody]
+        :type source_servers: list[:class:`huaweicloudsdksms.v3.SourceServersResponseBody`]
         """
         self._source_servers = source_servers
 

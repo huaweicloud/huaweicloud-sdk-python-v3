@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResetUserPasswordReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ResetUserPasswordReq:
     }
 
     def __init__(self, password=None):
-        """ResetUserPasswordReq - a model defined in huaweicloud sdk"""
+        """ResetUserPasswordReq
+
+        The model defined in huaweicloud sdk
+
+        :param password: 重置后的新密码。
+        :type password: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ResetUserPasswordReq:
         重置后的新密码。
 
         :param password: The password of this ResetUserPasswordReq.
-        :type: str
+        :type password: str
         """
         self._password = password
 

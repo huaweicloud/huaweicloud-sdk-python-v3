@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowSqlExecutionPlanRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ShowSqlExecutionPlanRequest:
     }
 
     def __init__(self, instance_id=None, db_user_id=None, database=None, sql=None, x_language=None):
-        """ShowSqlExecutionPlanRequest - a model defined in huaweicloud sdk"""
+        """ShowSqlExecutionPlanRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param db_user_id: 数据库用户ID
+        :type db_user_id: str
+        :param database: 数据库名称
+        :type database: str
+        :param sql: SQL语句
+        :type sql: str
+        :param x_language: 语言
+        :type x_language: str
+        """
         
         
 
@@ -74,7 +87,7 @@ class ShowSqlExecutionPlanRequest:
         实例ID
 
         :param instance_id: The instance_id of this ShowSqlExecutionPlanRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -96,7 +109,7 @@ class ShowSqlExecutionPlanRequest:
         数据库用户ID
 
         :param db_user_id: The db_user_id of this ShowSqlExecutionPlanRequest.
-        :type: str
+        :type db_user_id: str
         """
         self._db_user_id = db_user_id
 
@@ -118,7 +131,7 @@ class ShowSqlExecutionPlanRequest:
         数据库名称
 
         :param database: The database of this ShowSqlExecutionPlanRequest.
-        :type: str
+        :type database: str
         """
         self._database = database
 
@@ -140,7 +153,7 @@ class ShowSqlExecutionPlanRequest:
         SQL语句
 
         :param sql: The sql of this ShowSqlExecutionPlanRequest.
-        :type: str
+        :type sql: str
         """
         self._sql = sql
 
@@ -162,7 +175,7 @@ class ShowSqlExecutionPlanRequest:
         语言
 
         :param x_language: The x_language of this ShowSqlExecutionPlanRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 

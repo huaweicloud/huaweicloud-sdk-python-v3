@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ConnectionInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ConnectionInfo:
     }
 
     def __init__(self, name=None, type=None, config=None, description=None):
-        """ConnectionInfo - a model defined in huaweicloud sdk"""
+        """ConnectionInfo
+
+        The model defined in huaweicloud sdk
+
+        :param name: 
+        :type name: str
+        :param type: 
+        :type type: str
+        :param config: 
+        :type config: object
+        :param description: 
+        :type description: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class ConnectionInfo:
 
 
         :param name: The name of this ConnectionInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -89,7 +100,7 @@ class ConnectionInfo:
 
 
         :param type: The type of this ConnectionInfo.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -109,7 +120,7 @@ class ConnectionInfo:
 
 
         :param config: The config of this ConnectionInfo.
-        :type: object
+        :type config: object
         """
         self._config = config
 
@@ -129,7 +140,7 @@ class ConnectionInfo:
 
 
         :param description: The description of this ConnectionInfo.
-        :type: str
+        :type description: str
         """
         self._description = description
 

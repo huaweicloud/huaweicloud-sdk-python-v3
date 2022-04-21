@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class HotkeysBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class HotkeysBody:
     }
 
     def __init__(self, name=None, type=None, shard=None, db=None, size=None, unit=None, freq=None):
-        """HotkeysBody - a model defined in huaweicloud sdk"""
+        """HotkeysBody
+
+        The model defined in huaweicloud sdk
+
+        :param name: key名称
+        :type name: str
+        :param type: key类型
+        :type type: str
+        :param shard: 热key所在的分片，仅在实例类型为集群时支持,格式为ip:port
+        :type shard: str
+        :param db: 热key所在的db
+        :type db: int
+        :param size: key的value大小。
+        :type size: int
+        :param unit: key大小的单位。type为string时，单位是：byte；type为list/set/zset/hash时，单位是：count
+        :type unit: str
+        :param freq: 表示某个key在一段时间的访问频度，会随着访问的频率而变化。  该值并不是简单的访问频率值，而是一个基于概率的对数计数器结果，最大为255(可表示100万次访问)，超过255后如果继续频繁访问该值并不会继续增大，同时默认如果每过一分钟没有访问，该值会衰减1。 
+        :type freq: int
+        """
         
         
 
@@ -88,7 +105,7 @@ class HotkeysBody:
         key名称
 
         :param name: The name of this HotkeysBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -110,7 +127,7 @@ class HotkeysBody:
         key类型
 
         :param type: The type of this HotkeysBody.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -132,7 +149,7 @@ class HotkeysBody:
         热key所在的分片，仅在实例类型为集群时支持,格式为ip:port
 
         :param shard: The shard of this HotkeysBody.
-        :type: str
+        :type shard: str
         """
         self._shard = shard
 
@@ -154,7 +171,7 @@ class HotkeysBody:
         热key所在的db
 
         :param db: The db of this HotkeysBody.
-        :type: int
+        :type db: int
         """
         self._db = db
 
@@ -176,7 +193,7 @@ class HotkeysBody:
         key的value大小。
 
         :param size: The size of this HotkeysBody.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -198,7 +215,7 @@ class HotkeysBody:
         key大小的单位。type为string时，单位是：byte；type为list/set/zset/hash时，单位是：count
 
         :param unit: The unit of this HotkeysBody.
-        :type: str
+        :type unit: str
         """
         self._unit = unit
 
@@ -220,7 +237,7 @@ class HotkeysBody:
         表示某个key在一段时间的访问频度，会随着访问的频率而变化。  该值并不是简单的访问频率值，而是一个基于概率的对数计数器结果，最大为255(可表示100万次访问)，超过255后如果继续频繁访问该值并不会继续增大，同时默认如果每过一分钟没有访问，该值会衰减1。 
 
         :param freq: The freq of this HotkeysBody.
-        :type: int
+        :type freq: int
         """
         self._freq = freq
 

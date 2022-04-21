@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryOrgVmrResultDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class QueryOrgVmrResultDTO:
     }
 
     def __init__(self, id=None, vmr_id=None, vmr_name=None, vmr_pkg_name=None, vmr_pkg_parties=None, member=None, device=None, status=None):
-        """QueryOrgVmrResultDTO - a model defined in huaweicloud sdk"""
+        """QueryOrgVmrResultDTO
+
+        The model defined in huaweicloud sdk
+
+        :param id: 唯一标识。 说明：对应会议管理-&gt;创建会议接口中的vmrID。 
+        :type id: str
+        :param vmr_id: 云会议室ID。 说明：对应会议管理-&gt;创建会议接口中当vmrIDType等于0（固定ID）时返回数据的conferenceID 。 
+        :type vmr_id: str
+        :param vmr_name: 云会议室名称。
+        :type vmr_name: str
+        :param vmr_pkg_name: 云会议室套餐名称。
+        :type vmr_pkg_name: str
+        :param vmr_pkg_parties: 云会议室套餐会议并发方数。
+        :type vmr_pkg_parties: int
+        :param member: 
+        :type member: :class:`huaweicloudsdkmeeting.v1.IdMarkDTO`
+        :param device: 
+        :type device: :class:`huaweicloudsdkmeeting.v1.IdMarkDTO`
+        :param status: 云会议室状态。 * 0：正常 * 1：冻结 * 2：未分配 
+        :type status: int
+        """
         
         
 
@@ -93,7 +112,7 @@ class QueryOrgVmrResultDTO:
         唯一标识。 说明：对应会议管理->创建会议接口中的vmrID。 
 
         :param id: The id of this QueryOrgVmrResultDTO.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -115,7 +134,7 @@ class QueryOrgVmrResultDTO:
         云会议室ID。 说明：对应会议管理->创建会议接口中当vmrIDType等于0（固定ID）时返回数据的conferenceID 。 
 
         :param vmr_id: The vmr_id of this QueryOrgVmrResultDTO.
-        :type: str
+        :type vmr_id: str
         """
         self._vmr_id = vmr_id
 
@@ -137,7 +156,7 @@ class QueryOrgVmrResultDTO:
         云会议室名称。
 
         :param vmr_name: The vmr_name of this QueryOrgVmrResultDTO.
-        :type: str
+        :type vmr_name: str
         """
         self._vmr_name = vmr_name
 
@@ -159,7 +178,7 @@ class QueryOrgVmrResultDTO:
         云会议室套餐名称。
 
         :param vmr_pkg_name: The vmr_pkg_name of this QueryOrgVmrResultDTO.
-        :type: str
+        :type vmr_pkg_name: str
         """
         self._vmr_pkg_name = vmr_pkg_name
 
@@ -181,7 +200,7 @@ class QueryOrgVmrResultDTO:
         云会议室套餐会议并发方数。
 
         :param vmr_pkg_parties: The vmr_pkg_parties of this QueryOrgVmrResultDTO.
-        :type: int
+        :type vmr_pkg_parties: int
         """
         self._vmr_pkg_parties = vmr_pkg_parties
 
@@ -191,7 +210,7 @@ class QueryOrgVmrResultDTO:
 
 
         :return: The member of this QueryOrgVmrResultDTO.
-        :rtype: IdMarkDTO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.IdMarkDTO`
         """
         return self._member
 
@@ -201,7 +220,7 @@ class QueryOrgVmrResultDTO:
 
 
         :param member: The member of this QueryOrgVmrResultDTO.
-        :type: IdMarkDTO
+        :type member: :class:`huaweicloudsdkmeeting.v1.IdMarkDTO`
         """
         self._member = member
 
@@ -211,7 +230,7 @@ class QueryOrgVmrResultDTO:
 
 
         :return: The device of this QueryOrgVmrResultDTO.
-        :rtype: IdMarkDTO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.IdMarkDTO`
         """
         return self._device
 
@@ -221,7 +240,7 @@ class QueryOrgVmrResultDTO:
 
 
         :param device: The device of this QueryOrgVmrResultDTO.
-        :type: IdMarkDTO
+        :type device: :class:`huaweicloudsdkmeeting.v1.IdMarkDTO`
         """
         self._device = device
 
@@ -243,7 +262,7 @@ class QueryOrgVmrResultDTO:
         云会议室状态。 * 0：正常 * 1：冻结 * 2：未分配 
 
         :param status: The status of this QueryOrgVmrResultDTO.
-        :type: int
+        :type status: int
         """
         self._status = status
 

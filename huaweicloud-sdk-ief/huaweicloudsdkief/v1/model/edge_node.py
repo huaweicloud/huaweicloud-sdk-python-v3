@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EdgeNode:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class EdgeNode:
     }
 
     def __init__(self, name=None, description=None, enable_gpu=None, log_configs=None, device_infos=None, enable_npu=None, npu_type=None, attributes=None, enable_docker=None, tags=None, mqtt_config=None):
-        """EdgeNode - a model defined in huaweicloud sdk"""
+        """EdgeNode
+
+        The model defined in huaweicloud sdk
+
+        :param name: 边缘节点名称，只允许中文字符、英文字母、数字、下划线、中划线，最大长度64 Name为必填字段，且本帐号中唯一。
+        :type name: str
+        :param description: 边缘节点描述，最大长度255，不允许^ ~ # $ % &amp; * &lt; &gt; ( ) [ ] { } &#39; \&quot; \\
+        :type description: str
+        :param enable_gpu: 边缘节点是否开启GPU，默认为false
+        :type enable_gpu: bool
+        :param log_configs: 边缘节点日志配置
+        :type log_configs: list[:class:`huaweicloudsdkief.v1.LogConfigs`]
+        :param device_infos: 关联设备信息
+        :type device_infos: list[:class:`huaweicloudsdkief.v1.DeviceInfos`]
+        :param enable_npu: 边缘节点是否开启NPU，true表示开启，false表示不开启，默认为false
+        :type enable_npu: bool
+        :param npu_type: npu类型，支持D310类型和D910类型。 - D310表示D310类型。 - D910表示D910类型。 - 不填表示为D310类型。
+        :type npu_type: str
+        :param attributes: 边缘节点属性，关联属性个数最多为32个
+        :type attributes: list[:class:`huaweicloudsdkief.v1.Attributes`]
+        :param enable_docker: 边缘节点启用Docker，默认为true
+        :type enable_docker: bool
+        :param tags: 边缘节点标签，标签个数最多为20个
+        :type tags: list[:class:`huaweicloudsdkief.v1.NodeResTag`]
+        :param mqtt_config: 
+        :type mqtt_config: :class:`huaweicloudsdkief.v1.EdgeNodeMqttConfig`
+        """
         
         
 
@@ -107,7 +132,7 @@ class EdgeNode:
         边缘节点名称，只允许中文字符、英文字母、数字、下划线、中划线，最大长度64 Name为必填字段，且本帐号中唯一。
 
         :param name: The name of this EdgeNode.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -129,7 +154,7 @@ class EdgeNode:
         边缘节点描述，最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
         :param description: The description of this EdgeNode.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -151,7 +176,7 @@ class EdgeNode:
         边缘节点是否开启GPU，默认为false
 
         :param enable_gpu: The enable_gpu of this EdgeNode.
-        :type: bool
+        :type enable_gpu: bool
         """
         self._enable_gpu = enable_gpu
 
@@ -162,7 +187,7 @@ class EdgeNode:
         边缘节点日志配置
 
         :return: The log_configs of this EdgeNode.
-        :rtype: list[LogConfigs]
+        :rtype: list[:class:`huaweicloudsdkief.v1.LogConfigs`]
         """
         return self._log_configs
 
@@ -173,7 +198,7 @@ class EdgeNode:
         边缘节点日志配置
 
         :param log_configs: The log_configs of this EdgeNode.
-        :type: list[LogConfigs]
+        :type log_configs: list[:class:`huaweicloudsdkief.v1.LogConfigs`]
         """
         self._log_configs = log_configs
 
@@ -184,7 +209,7 @@ class EdgeNode:
         关联设备信息
 
         :return: The device_infos of this EdgeNode.
-        :rtype: list[DeviceInfos]
+        :rtype: list[:class:`huaweicloudsdkief.v1.DeviceInfos`]
         """
         return self._device_infos
 
@@ -195,7 +220,7 @@ class EdgeNode:
         关联设备信息
 
         :param device_infos: The device_infos of this EdgeNode.
-        :type: list[DeviceInfos]
+        :type device_infos: list[:class:`huaweicloudsdkief.v1.DeviceInfos`]
         """
         self._device_infos = device_infos
 
@@ -217,7 +242,7 @@ class EdgeNode:
         边缘节点是否开启NPU，true表示开启，false表示不开启，默认为false
 
         :param enable_npu: The enable_npu of this EdgeNode.
-        :type: bool
+        :type enable_npu: bool
         """
         self._enable_npu = enable_npu
 
@@ -239,7 +264,7 @@ class EdgeNode:
         npu类型，支持D310类型和D910类型。 - D310表示D310类型。 - D910表示D910类型。 - 不填表示为D310类型。
 
         :param npu_type: The npu_type of this EdgeNode.
-        :type: str
+        :type npu_type: str
         """
         self._npu_type = npu_type
 
@@ -250,7 +275,7 @@ class EdgeNode:
         边缘节点属性，关联属性个数最多为32个
 
         :return: The attributes of this EdgeNode.
-        :rtype: list[Attributes]
+        :rtype: list[:class:`huaweicloudsdkief.v1.Attributes`]
         """
         return self._attributes
 
@@ -261,7 +286,7 @@ class EdgeNode:
         边缘节点属性，关联属性个数最多为32个
 
         :param attributes: The attributes of this EdgeNode.
-        :type: list[Attributes]
+        :type attributes: list[:class:`huaweicloudsdkief.v1.Attributes`]
         """
         self._attributes = attributes
 
@@ -283,7 +308,7 @@ class EdgeNode:
         边缘节点启用Docker，默认为true
 
         :param enable_docker: The enable_docker of this EdgeNode.
-        :type: bool
+        :type enable_docker: bool
         """
         self._enable_docker = enable_docker
 
@@ -294,7 +319,7 @@ class EdgeNode:
         边缘节点标签，标签个数最多为20个
 
         :return: The tags of this EdgeNode.
-        :rtype: list[NodeResTag]
+        :rtype: list[:class:`huaweicloudsdkief.v1.NodeResTag`]
         """
         return self._tags
 
@@ -305,7 +330,7 @@ class EdgeNode:
         边缘节点标签，标签个数最多为20个
 
         :param tags: The tags of this EdgeNode.
-        :type: list[NodeResTag]
+        :type tags: list[:class:`huaweicloudsdkief.v1.NodeResTag`]
         """
         self._tags = tags
 
@@ -315,7 +340,7 @@ class EdgeNode:
 
 
         :return: The mqtt_config of this EdgeNode.
-        :rtype: EdgeNodeMqttConfig
+        :rtype: :class:`huaweicloudsdkief.v1.EdgeNodeMqttConfig`
         """
         return self._mqtt_config
 
@@ -325,7 +350,7 @@ class EdgeNode:
 
 
         :param mqtt_config: The mqtt_config of this EdgeNode.
-        :type: EdgeNodeMqttConfig
+        :type mqtt_config: :class:`huaweicloudsdkief.v1.EdgeNodeMqttConfig`
         """
         self._mqtt_config = mqtt_config
 

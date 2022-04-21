@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Follow302StatusBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Follow302StatusBody:
     }
 
     def __init__(self, domain_id=None, follow_status=None):
-        """Follow302StatusBody - a model defined in huaweicloud sdk"""
+        """Follow302StatusBody
+
+        The model defined in huaweicloud sdk
+
+        :param domain_id: 加速域名id。获取方法请参见查询加速域名。
+        :type domain_id: str
+        :param follow_status: follow302状态（\&quot;off\&quot;/\&quot;on\&quot;）
+        :type follow_status: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class Follow302StatusBody:
         加速域名id。获取方法请参见查询加速域名。
 
         :param domain_id: The domain_id of this Follow302StatusBody.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -85,7 +92,7 @@ class Follow302StatusBody:
         follow302状态（\"off\"/\"on\"）
 
         :param follow_status: The follow_status of this Follow302StatusBody.
-        :type: str
+        :type follow_status: str
         """
         self._follow_status = follow_status
 

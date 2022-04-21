@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TaskOutputObs:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class TaskOutputObs:
     }
 
     def __init__(self, bucket=None, path=None, data_category=None):
-        """TaskOutputObs - a model defined in huaweicloud sdk"""
+        """TaskOutputObs
+
+        The model defined in huaweicloud sdk
+
+        :param bucket: OBS桶名，选用obs类型输出时必填。
+        :type bucket: str
+        :param path: OBS的路径，选用obs类型输出时必填。
+        :type path: str
+        :param data_category: 作业输出数据类别的列表，选填，仅部分服务需要。当输出类型下有这个列表时，表示希望这个输出类型下存放dataCategory列表内的数据。
+        :type data_category: list[str]
+        """
         
         
 
@@ -66,7 +75,7 @@ class TaskOutputObs:
         OBS桶名，选用obs类型输出时必填。
 
         :param bucket: The bucket of this TaskOutputObs.
-        :type: str
+        :type bucket: str
         """
         self._bucket = bucket
 
@@ -88,7 +97,7 @@ class TaskOutputObs:
         OBS的路径，选用obs类型输出时必填。
 
         :param path: The path of this TaskOutputObs.
-        :type: str
+        :type path: str
         """
         self._path = path
 
@@ -110,7 +119,7 @@ class TaskOutputObs:
         作业输出数据类别的列表，选填，仅部分服务需要。当输出类型下有这个列表时，表示希望这个输出类型下存放dataCategory列表内的数据。
 
         :param data_category: The data_category of this TaskOutputObs.
-        :type: list[str]
+        :type data_category: list[str]
         """
         self._data_category = data_category
 

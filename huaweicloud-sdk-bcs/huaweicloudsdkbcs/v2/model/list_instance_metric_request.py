@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListInstanceMetricRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListInstanceMetricRequest:
     }
 
     def __init__(self, blockchain_id=None, body=None):
-        """ListInstanceMetricRequest - a model defined in huaweicloud sdk"""
+        """ListInstanceMetricRequest
+
+        The model defined in huaweicloud sdk
+
+        :param blockchain_id: 区块链服务id。
+        :type blockchain_id: str
+        :param body: Body of the ListInstanceMetricRequest
+        :type body: :class:`huaweicloudsdkbcs.v2.ListInstanceMetricRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class ListInstanceMetricRequest:
         区块链服务id。
 
         :param blockchain_id: The blockchain_id of this ListInstanceMetricRequest.
-        :type: str
+        :type blockchain_id: str
         """
         self._blockchain_id = blockchain_id
 
@@ -72,7 +79,7 @@ class ListInstanceMetricRequest:
 
 
         :return: The body of this ListInstanceMetricRequest.
-        :rtype: ListInstanceMetricRequestBody
+        :rtype: :class:`huaweicloudsdkbcs.v2.ListInstanceMetricRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class ListInstanceMetricRequest:
 
 
         :param body: The body of this ListInstanceMetricRequest.
-        :type: ListInstanceMetricRequestBody
+        :type body: :class:`huaweicloudsdkbcs.v2.ListInstanceMetricRequestBody`
         """
         self._body = body
 

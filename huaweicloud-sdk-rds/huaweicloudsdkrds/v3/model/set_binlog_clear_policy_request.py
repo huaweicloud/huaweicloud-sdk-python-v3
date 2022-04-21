@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SetBinlogClearPolicyRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class SetBinlogClearPolicyRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """SetBinlogClearPolicyRequest - a model defined in huaweicloud sdk"""
+        """SetBinlogClearPolicyRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言
+        :type x_language: str
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param body: Body of the SetBinlogClearPolicyRequest
+        :type body: :class:`huaweicloudsdkrds.v3.BinlogClearPolicyRequestBody`
+        """
         
         
 
@@ -67,7 +76,7 @@ class SetBinlogClearPolicyRequest:
         语言
 
         :param x_language: The x_language of this SetBinlogClearPolicyRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -89,7 +98,7 @@ class SetBinlogClearPolicyRequest:
         实例ID。
 
         :param instance_id: The instance_id of this SetBinlogClearPolicyRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -99,7 +108,7 @@ class SetBinlogClearPolicyRequest:
 
 
         :return: The body of this SetBinlogClearPolicyRequest.
-        :rtype: BinlogClearPolicyRequestBody
+        :rtype: :class:`huaweicloudsdkrds.v3.BinlogClearPolicyRequestBody`
         """
         return self._body
 
@@ -109,7 +118,7 @@ class SetBinlogClearPolicyRequest:
 
 
         :param body: The body of this SetBinlogClearPolicyRequest.
-        :type: BinlogClearPolicyRequestBody
+        :type body: :class:`huaweicloudsdkrds.v3.BinlogClearPolicyRequestBody`
         """
         self._body = body
 

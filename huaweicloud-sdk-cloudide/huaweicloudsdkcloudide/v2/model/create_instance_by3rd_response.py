@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateInstanceBy3rdResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateInstanceBy3rdResponse(SdkResponse):
     }
 
     def __init__(self, result=None, status=None):
-        """CreateInstanceBy3rdResponse - a model defined in huaweicloud sdk"""
+        """CreateInstanceBy3rdResponse
+
+        The model defined in huaweicloud sdk
+
+        :param result: 
+        :type result: :class:`huaweicloudsdkcloudide.v2.InstancesResponseInstancesVOResult`
+        :param status: 状态
+        :type status: str
+        """
         
         super(CreateInstanceBy3rdResponse, self).__init__()
 
@@ -51,7 +58,7 @@ class CreateInstanceBy3rdResponse(SdkResponse):
 
 
         :return: The result of this CreateInstanceBy3rdResponse.
-        :rtype: InstancesResponseInstancesVOResult
+        :rtype: :class:`huaweicloudsdkcloudide.v2.InstancesResponseInstancesVOResult`
         """
         return self._result
 
@@ -61,7 +68,7 @@ class CreateInstanceBy3rdResponse(SdkResponse):
 
 
         :param result: The result of this CreateInstanceBy3rdResponse.
-        :type: InstancesResponseInstancesVOResult
+        :type result: :class:`huaweicloudsdkcloudide.v2.InstancesResponseInstancesVOResult`
         """
         self._result = result
 
@@ -83,7 +90,7 @@ class CreateInstanceBy3rdResponse(SdkResponse):
         状态
 
         :param status: The status of this CreateInstanceBy3rdResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 

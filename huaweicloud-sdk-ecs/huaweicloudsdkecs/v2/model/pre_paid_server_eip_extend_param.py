@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PrePaidServerEipExtendParam:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class PrePaidServerEipExtendParam:
     }
 
     def __init__(self, charging_mode=None):
-        """PrePaidServerEipExtendParam - a model defined in huaweicloud sdk"""
+        """PrePaidServerEipExtendParam
+
+        The model defined in huaweicloud sdk
+
+        :param charging_mode: 公网IP的计费模式。  取值范围：  - prePaid-预付费，即包年包月； - postPaid-后付费，即按需付费；  &gt; 说明： &gt;  &gt; 如果bandwidth对象中share_type是WHOLE且id有值，弹性IP只能创建为按需付费的，故该参数传参“prePaid”无效。
+        :type charging_mode: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class PrePaidServerEipExtendParam:
         公网IP的计费模式。  取值范围：  - prePaid-预付费，即包年包月； - postPaid-后付费，即按需付费；  > 说明： >  > 如果bandwidth对象中share_type是WHOLE且id有值，弹性IP只能创建为按需付费的，故该参数传参“prePaid”无效。
 
         :param charging_mode: The charging_mode of this PrePaidServerEipExtendParam.
-        :type: str
+        :type charging_mode: str
         """
         self._charging_mode = charging_mode
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateDatabaseRoleRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateDatabaseRoleRequestBody:
     }
 
     def __init__(self, role_name=None, db_name=None, roles=None):
-        """CreateDatabaseRoleRequestBody - a model defined in huaweicloud sdk"""
+        """CreateDatabaseRoleRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param role_name: 创建角色名称。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、中划线、下划线和点。
+        :type role_name: str
+        :param db_name: 角色所在的数据库名称，默认admin。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、下划线。
+        :type db_name: str
+        :param roles: 新用户所拥有的角色。
+        :type roles: list[:class:`huaweicloudsdkdds.v3.RolesOption`]
+        """
         
         
 
@@ -67,7 +76,7 @@ class CreateDatabaseRoleRequestBody:
         创建角色名称。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、中划线、下划线和点。
 
         :param role_name: The role_name of this CreateDatabaseRoleRequestBody.
-        :type: str
+        :type role_name: str
         """
         self._role_name = role_name
 
@@ -89,7 +98,7 @@ class CreateDatabaseRoleRequestBody:
         角色所在的数据库名称，默认admin。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、下划线。
 
         :param db_name: The db_name of this CreateDatabaseRoleRequestBody.
-        :type: str
+        :type db_name: str
         """
         self._db_name = db_name
 
@@ -100,7 +109,7 @@ class CreateDatabaseRoleRequestBody:
         新用户所拥有的角色。
 
         :return: The roles of this CreateDatabaseRoleRequestBody.
-        :rtype: list[RolesOption]
+        :rtype: list[:class:`huaweicloudsdkdds.v3.RolesOption`]
         """
         return self._roles
 
@@ -111,7 +120,7 @@ class CreateDatabaseRoleRequestBody:
         新用户所拥有的角色。
 
         :param roles: The roles of this CreateDatabaseRoleRequestBody.
-        :type: list[RolesOption]
+        :type roles: list[:class:`huaweicloudsdkdds.v3.RolesOption`]
         """
         self._roles = roles
 

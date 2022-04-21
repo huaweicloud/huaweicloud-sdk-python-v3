@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSubsetsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ListSubsetsRequest:
     }
 
     def __init__(self, instance_id=None, device_id=None, limit=None, device_name=None, status=None, online_status=None, offset=None):
-        """ListSubsetsRequest - a model defined in huaweicloud sdk"""
+        """ListSubsetsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param device_id: 设备ID
+        :type device_id: int
+        :param limit: 每页显示条目数量，最大数量999，超过999后只返回999
+        :type limit: int
+        :param device_name: 设备名称
+        :type device_name: str
+        :param status: 设备状态 0-启动 1-停用
+        :type status: int
+        :param online_status: 设备状态 0-未连接 1-在线 2-离线
+        :type online_status: int
+        :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0
+        :type offset: int
+        """
         
         
 
@@ -86,7 +103,7 @@ class ListSubsetsRequest:
         实例ID
 
         :param instance_id: The instance_id of this ListSubsetsRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -108,7 +125,7 @@ class ListSubsetsRequest:
         设备ID
 
         :param device_id: The device_id of this ListSubsetsRequest.
-        :type: int
+        :type device_id: int
         """
         self._device_id = device_id
 
@@ -130,7 +147,7 @@ class ListSubsetsRequest:
         每页显示条目数量，最大数量999，超过999后只返回999
 
         :param limit: The limit of this ListSubsetsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -152,7 +169,7 @@ class ListSubsetsRequest:
         设备名称
 
         :param device_name: The device_name of this ListSubsetsRequest.
-        :type: str
+        :type device_name: str
         """
         self._device_name = device_name
 
@@ -174,7 +191,7 @@ class ListSubsetsRequest:
         设备状态 0-启动 1-停用
 
         :param status: The status of this ListSubsetsRequest.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -196,7 +213,7 @@ class ListSubsetsRequest:
         设备状态 0-未连接 1-在线 2-离线
 
         :param online_status: The online_status of this ListSubsetsRequest.
-        :type: int
+        :type online_status: int
         """
         self._online_status = online_status
 
@@ -218,7 +235,7 @@ class ListSubsetsRequest:
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
         :param offset: The offset of this ListSubsetsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 

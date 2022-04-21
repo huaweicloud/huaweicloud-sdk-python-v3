@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListUsageTypesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListUsageTypesRequest:
     }
 
     def __init__(self, x_language=None, resource_type_code=None, offset=None, limit=None):
-        """ListUsageTypesRequest - a model defined in huaweicloud sdk"""
+        """ListUsageTypesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言。中文：zh_CN英文：en_US缺省为zh_CN。
+        :type x_language: str
+        :param resource_type_code: 资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
+        :type resource_type_code: str
+        :param offset: 偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset &#x3D; 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
+        :type offset: int
+        :param limit: 每次查询的数量，默认值为10。
+        :type limit: int
+        """
         
         
 
@@ -73,7 +84,7 @@ class ListUsageTypesRequest:
         语言。中文：zh_CN英文：en_US缺省为zh_CN。
 
         :param x_language: The x_language of this ListUsageTypesRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -95,7 +106,7 @@ class ListUsageTypesRequest:
         资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
 
         :param resource_type_code: The resource_type_code of this ListUsageTypesRequest.
-        :type: str
+        :type resource_type_code: str
         """
         self._resource_type_code = resource_type_code
 
@@ -117,7 +128,7 @@ class ListUsageTypesRequest:
         偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
         :param offset: The offset of this ListUsageTypesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -139,7 +150,7 @@ class ListUsageTypesRequest:
         每次查询的数量，默认值为10。
 
         :param limit: The limit of this ListUsageTypesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

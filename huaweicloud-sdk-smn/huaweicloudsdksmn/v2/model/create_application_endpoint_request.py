@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateApplicationEndpointRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateApplicationEndpointRequest:
     }
 
     def __init__(self, application_urn=None, body=None):
-        """CreateApplicationEndpointRequest - a model defined in huaweicloud sdk"""
+        """CreateApplicationEndpointRequest
+
+        The model defined in huaweicloud sdk
+
+        :param application_urn: Application的唯一资源标识，可通过[查询Application](https://support.huaweicloud.com/api-smn/ListApplications.html)获取该标识。
+        :type application_urn: str
+        :param body: Body of the CreateApplicationEndpointRequest
+        :type body: :class:`huaweicloudsdksmn.v2.CreateApplicationEndpointRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateApplicationEndpointRequest:
         Application的唯一资源标识，可通过[查询Application](https://support.huaweicloud.com/api-smn/ListApplications.html)获取该标识。
 
         :param application_urn: The application_urn of this CreateApplicationEndpointRequest.
-        :type: str
+        :type application_urn: str
         """
         self._application_urn = application_urn
 
@@ -72,7 +79,7 @@ class CreateApplicationEndpointRequest:
 
 
         :return: The body of this CreateApplicationEndpointRequest.
-        :rtype: CreateApplicationEndpointRequestBody
+        :rtype: :class:`huaweicloudsdksmn.v2.CreateApplicationEndpointRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CreateApplicationEndpointRequest:
 
 
         :param body: The body of this CreateApplicationEndpointRequest.
-        :type: CreateApplicationEndpointRequestBody
+        :type body: :class:`huaweicloudsdksmn.v2.CreateApplicationEndpointRequestBody`
         """
         self._body = body
 

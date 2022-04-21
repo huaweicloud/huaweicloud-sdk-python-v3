@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NovaListServersDetailsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class NovaListServersDetailsResponse(SdkResponse):
     }
 
     def __init__(self, servers=None, servers_links=None):
-        """NovaListServersDetailsResponse - a model defined in huaweicloud sdk"""
+        """NovaListServersDetailsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param servers: 查询云服务器信息列表。
+        :type servers: list[:class:`huaweicloudsdkecs.v2.NovaServer`]
+        :param servers_links: 分页查询时，查询下一页数据链接。
+        :type servers_links: list[:class:`huaweicloudsdkecs.v2.PageLink`]
+        """
         
         super(NovaListServersDetailsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class NovaListServersDetailsResponse(SdkResponse):
         查询云服务器信息列表。
 
         :return: The servers of this NovaListServersDetailsResponse.
-        :rtype: list[NovaServer]
+        :rtype: list[:class:`huaweicloudsdkecs.v2.NovaServer`]
         """
         return self._servers
 
@@ -63,7 +70,7 @@ class NovaListServersDetailsResponse(SdkResponse):
         查询云服务器信息列表。
 
         :param servers: The servers of this NovaListServersDetailsResponse.
-        :type: list[NovaServer]
+        :type servers: list[:class:`huaweicloudsdkecs.v2.NovaServer`]
         """
         self._servers = servers
 
@@ -74,7 +81,7 @@ class NovaListServersDetailsResponse(SdkResponse):
         分页查询时，查询下一页数据链接。
 
         :return: The servers_links of this NovaListServersDetailsResponse.
-        :rtype: list[PageLink]
+        :rtype: list[:class:`huaweicloudsdkecs.v2.PageLink`]
         """
         return self._servers_links
 
@@ -85,7 +92,7 @@ class NovaListServersDetailsResponse(SdkResponse):
         分页查询时，查询下一页数据链接。
 
         :param servers_links: The servers_links of this NovaListServersDetailsResponse.
-        :type: list[PageLink]
+        :type servers_links: list[:class:`huaweicloudsdkecs.v2.PageLink`]
         """
         self._servers_links = servers_links
 

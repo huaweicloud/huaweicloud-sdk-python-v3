@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchAddOrDeleteTagsRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchAddOrDeleteTagsRequestBody:
     }
 
     def __init__(self, action=None, tags=None):
-        """BatchAddOrDeleteTagsRequestBody - a model defined in huaweicloud sdk"""
+        """BatchAddOrDeleteTagsRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param action: 要进行的标签操作，区分大小写。支持create、delete，分别用于批量地创建/更新、删除标签。
+        :type action: str
+        :param tags: 需要增加、修改或者删除的标签键值对集合。
+        :type tags: list[:class:`huaweicloudsdkims.v2.ResourceTag`]
+        """
         
         
 
@@ -61,7 +68,7 @@ class BatchAddOrDeleteTagsRequestBody:
         要进行的标签操作，区分大小写。支持create、delete，分别用于批量地创建/更新、删除标签。
 
         :param action: The action of this BatchAddOrDeleteTagsRequestBody.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -72,7 +79,7 @@ class BatchAddOrDeleteTagsRequestBody:
         需要增加、修改或者删除的标签键值对集合。
 
         :return: The tags of this BatchAddOrDeleteTagsRequestBody.
-        :rtype: list[ResourceTag]
+        :rtype: list[:class:`huaweicloudsdkims.v2.ResourceTag`]
         """
         return self._tags
 
@@ -83,7 +90,7 @@ class BatchAddOrDeleteTagsRequestBody:
         需要增加、修改或者删除的标签键值对集合。
 
         :param tags: The tags of this BatchAddOrDeleteTagsRequestBody.
-        :type: list[ResourceTag]
+        :type tags: list[:class:`huaweicloudsdkims.v2.ResourceTag`]
         """
         self._tags = tags
 

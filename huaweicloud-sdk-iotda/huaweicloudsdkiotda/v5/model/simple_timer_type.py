@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SimpleTimerType:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class SimpleTimerType:
     }
 
     def __init__(self, start_time=None, repeat_interval=None, repeat_count=None):
-        """SimpleTimerType - a model defined in huaweicloud sdk"""
+        """SimpleTimerType
+
+        The model defined in huaweicloud sdk
+
+        :param start_time: **参数说明**：规则触发的开始时间，使用UTC时区，格式：yyyyMMdd&#39;T&#39;HHmmss&#39;Z&#39;。
+        :type start_time: str
+        :param repeat_interval: **参数说明**：规则触发的重复时间间隔，单位为秒。
+        :type repeat_interval: int
+        :param repeat_count: **参数说明**：规则触发的重复次数。
+        :type repeat_count: int
+        """
         
         
 
@@ -65,7 +74,7 @@ class SimpleTimerType:
         **参数说明**：规则触发的开始时间，使用UTC时区，格式：yyyyMMdd'T'HHmmss'Z'。
 
         :param start_time: The start_time of this SimpleTimerType.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -87,7 +96,7 @@ class SimpleTimerType:
         **参数说明**：规则触发的重复时间间隔，单位为秒。
 
         :param repeat_interval: The repeat_interval of this SimpleTimerType.
-        :type: int
+        :type repeat_interval: int
         """
         self._repeat_interval = repeat_interval
 
@@ -109,7 +118,7 @@ class SimpleTimerType:
         **参数说明**：规则触发的重复次数。
 
         :param repeat_count: The repeat_count of this SimpleTimerType.
-        :type: int
+        :type repeat_count: int
         """
         self._repeat_count = repeat_count
 

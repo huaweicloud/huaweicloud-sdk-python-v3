@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LatencyStats:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class LatencyStats:
     }
 
     def __init__(self, max_latency=None, avg_latency=None):
-        """LatencyStats - a model defined in huaweicloud sdk"""
+        """LatencyStats
+
+        The model defined in huaweicloud sdk
+
+        :param max_latency: 最大延时  单位：ms
+        :type max_latency: int
+        :param avg_latency: 平均延时  单位：ms
+        :type avg_latency: float
+        """
         
         
 
@@ -63,7 +70,7 @@ class LatencyStats:
         最大延时  单位：ms
 
         :param max_latency: The max_latency of this LatencyStats.
-        :type: int
+        :type max_latency: int
         """
         self._max_latency = max_latency
 
@@ -85,7 +92,7 @@ class LatencyStats:
         平均延时  单位：ms
 
         :param avg_latency: The avg_latency of this LatencyStats.
-        :type: float
+        :type avg_latency: float
         """
         self._avg_latency = avg_latency
 

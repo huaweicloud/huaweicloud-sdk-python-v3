@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowTemplateFileResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ShowTemplateFileResponse(SdkResponse):
     }
 
     def __init__(self, content=None, encoding=None, file_name=None, file_path=None, file_type=None):
-        """ShowTemplateFileResponse - a model defined in huaweicloud sdk"""
+        """ShowTemplateFileResponse
+
+        The model defined in huaweicloud sdk
+
+        :param content: 文件内容（返回的文件内容为encoding指定的编码格式编码后的内容）。
+        :type content: str
+        :param encoding: 内容编码格式(固定base64)。
+        :type encoding: str
+        :param file_name: 文件名。
+        :type file_name: str
+        :param file_path: 文件相对路径。
+        :type file_path: str
+        :param file_type: 文件类型。
+        :type file_type: str
+        """
         
         super(ShowTemplateFileResponse, self).__init__()
 
@@ -78,7 +91,7 @@ class ShowTemplateFileResponse(SdkResponse):
         文件内容（返回的文件内容为encoding指定的编码格式编码后的内容）。
 
         :param content: The content of this ShowTemplateFileResponse.
-        :type: str
+        :type content: str
         """
         self._content = content
 
@@ -100,7 +113,7 @@ class ShowTemplateFileResponse(SdkResponse):
         内容编码格式(固定base64)。
 
         :param encoding: The encoding of this ShowTemplateFileResponse.
-        :type: str
+        :type encoding: str
         """
         self._encoding = encoding
 
@@ -122,7 +135,7 @@ class ShowTemplateFileResponse(SdkResponse):
         文件名。
 
         :param file_name: The file_name of this ShowTemplateFileResponse.
-        :type: str
+        :type file_name: str
         """
         self._file_name = file_name
 
@@ -144,7 +157,7 @@ class ShowTemplateFileResponse(SdkResponse):
         文件相对路径。
 
         :param file_path: The file_path of this ShowTemplateFileResponse.
-        :type: str
+        :type file_path: str
         """
         self._file_path = file_path
 
@@ -166,7 +179,7 @@ class ShowTemplateFileResponse(SdkResponse):
         文件类型。
 
         :param file_type: The file_type of this ShowTemplateFileResponse.
-        :type: str
+        :type file_type: str
         """
         self._file_type = file_type
 

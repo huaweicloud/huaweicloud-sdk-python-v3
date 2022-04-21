@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListYmlsJobResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListYmlsJobResponse(SdkResponse):
     }
 
     def __init__(self, config_list=None):
-        """ListYmlsJobResponse - a model defined in huaweicloud sdk"""
+        """ListYmlsJobResponse
+
+        The model defined in huaweicloud sdk
+
+        :param config_list: 配置列表。
+        :type config_list: list[:class:`huaweicloudsdkcss.v1.ConfigList`]
+        """
         
         super(ListYmlsJobResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListYmlsJobResponse(SdkResponse):
         配置列表。
 
         :return: The config_list of this ListYmlsJobResponse.
-        :rtype: list[ConfigList]
+        :rtype: list[:class:`huaweicloudsdkcss.v1.ConfigList`]
         """
         return self._config_list
 
@@ -58,7 +63,7 @@ class ListYmlsJobResponse(SdkResponse):
         配置列表。
 
         :param config_list: The config_list of this ListYmlsJobResponse.
-        :type: list[ConfigList]
+        :type config_list: list[:class:`huaweicloudsdkcss.v1.ConfigList`]
         """
         self._config_list = config_list
 

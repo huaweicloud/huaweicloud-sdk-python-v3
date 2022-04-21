@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateNaResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class UpdateNaResponse(SdkResponse):
     }
 
     def __init__(self, na_id=None, name=None, description=None, endpoint=None, auth_type=None, access_type=None, access_roma_info=None, create_time=None, update_time=None):
-        """UpdateNaResponse - a model defined in huaweicloud sdk"""
+        """UpdateNaResponse
+
+        The model defined in huaweicloud sdk
+
+        :param na_id: NA系统ID，提供给其他系统访问的唯一标识
+        :type na_id: str
+        :param name: NA系统名称
+        :type name: str
+        :param description: 北向NA系统描述
+        :type description: str
+        :param endpoint: 访问URL地址
+        :type endpoint: str
+        :param auth_type: 鉴权方式
+        :type auth_type: str
+        :param access_type: 接入类型
+        :type access_type: str
+        :param access_roma_info: 
+        :type access_roma_info: :class:`huaweicloudsdkiotedge.v2.AccessRomaBriefInfo`
+        :param create_time: 创建时间
+        :type create_time: str
+        :param update_time: 更新时间
+        :type update_time: str
+        """
         
         super(UpdateNaResponse, self).__init__()
 
@@ -98,7 +119,7 @@ class UpdateNaResponse(SdkResponse):
         NA系统ID，提供给其他系统访问的唯一标识
 
         :param na_id: The na_id of this UpdateNaResponse.
-        :type: str
+        :type na_id: str
         """
         self._na_id = na_id
 
@@ -120,7 +141,7 @@ class UpdateNaResponse(SdkResponse):
         NA系统名称
 
         :param name: The name of this UpdateNaResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -142,7 +163,7 @@ class UpdateNaResponse(SdkResponse):
         北向NA系统描述
 
         :param description: The description of this UpdateNaResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -164,7 +185,7 @@ class UpdateNaResponse(SdkResponse):
         访问URL地址
 
         :param endpoint: The endpoint of this UpdateNaResponse.
-        :type: str
+        :type endpoint: str
         """
         self._endpoint = endpoint
 
@@ -186,7 +207,7 @@ class UpdateNaResponse(SdkResponse):
         鉴权方式
 
         :param auth_type: The auth_type of this UpdateNaResponse.
-        :type: str
+        :type auth_type: str
         """
         self._auth_type = auth_type
 
@@ -208,7 +229,7 @@ class UpdateNaResponse(SdkResponse):
         接入类型
 
         :param access_type: The access_type of this UpdateNaResponse.
-        :type: str
+        :type access_type: str
         """
         self._access_type = access_type
 
@@ -218,7 +239,7 @@ class UpdateNaResponse(SdkResponse):
 
 
         :return: The access_roma_info of this UpdateNaResponse.
-        :rtype: AccessRomaBriefInfo
+        :rtype: :class:`huaweicloudsdkiotedge.v2.AccessRomaBriefInfo`
         """
         return self._access_roma_info
 
@@ -228,7 +249,7 @@ class UpdateNaResponse(SdkResponse):
 
 
         :param access_roma_info: The access_roma_info of this UpdateNaResponse.
-        :type: AccessRomaBriefInfo
+        :type access_roma_info: :class:`huaweicloudsdkiotedge.v2.AccessRomaBriefInfo`
         """
         self._access_roma_info = access_roma_info
 
@@ -250,7 +271,7 @@ class UpdateNaResponse(SdkResponse):
         创建时间
 
         :param create_time: The create_time of this UpdateNaResponse.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -272,7 +293,7 @@ class UpdateNaResponse(SdkResponse):
         更新时间
 
         :param update_time: The update_time of this UpdateNaResponse.
-        :type: str
+        :type update_time: str
         """
         self._update_time = update_time
 

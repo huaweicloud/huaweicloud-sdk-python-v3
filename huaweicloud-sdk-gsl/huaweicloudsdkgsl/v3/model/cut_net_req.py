@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CutNetReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CutNetReq:
     }
 
     def __init__(self, action=None):
-        """CutNetReq - a model defined in huaweicloud sdk"""
+        """CutNetReq
+
+        The model defined in huaweicloud sdk
+
+        :param action: 操作类型(ADD：断网，DEL:取消断网)
+        :type action: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class CutNetReq:
         操作类型(ADD：断网，DEL:取消断网)
 
         :param action: The action of this CutNetReq.
-        :type: str
+        :type action: str
         """
         self._action = action
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateInstanceReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -68,7 +67,51 @@ class CreateInstanceReq:
     }
 
     def __init__(self, name=None, description=None, engine=None, engine_version=None, storage_space=None, access_user=None, password=None, vpc_id=None, security_group_id=None, subnet_id=None, available_zones=None, product_id=None, maintain_begin=None, maintain_end=None, enable_publicip=None, publicip_id=None, ssl_enable=None, storage_spec_code=None, enterprise_project_id=None, tags=None):
-        """CreateInstanceReq - a model defined in huaweicloud sdk"""
+        """CreateInstanceReq
+
+        The model defined in huaweicloud sdk
+
+        :param name: 实例名称。  由英文字符开头，只能由英文字母、数字、中划线、下划线组成，长度为4~64的字符。
+        :type name: str
+        :param description: 实例的描述信息。  长度不超过1024的字符串。  &gt; \\与\&quot;在json报文中属于特殊字符，如果参数值中需要显示\\或者\&quot;字符，请在字符前增加转义字符\\，比如\\\\或者\\\&quot;。
+        :type description: str
+        :param engine: 消息引擎：rabbitmq。
+        :type engine: str
+        :param engine_version: 消息引擎的版本。   - RabbitMQ版本有：3.7.17 
+        :type engine_version: str
+        :param storage_space: 消息存储空间，单位GB。   - 单机RabbitMQ实例的存储空间的取值范围100GB~90000GB。   - 集群RabbitMQ实例的存储空间的取值范围为100GB*节点数~90000GB、200GB*节点数~90000GB、300GB*节点数~90000GB。 
+        :type storage_space: int
+        :param access_user: 认证用户名，只能由英文字母、数字、中划线组成，长度为4~64的字符。
+        :type access_user: str
+        :param password: 实例的认证密码。  复杂度要求： - 输入长度为8到32位的字符串。 - 必须包含如下四种字符中的两种组合：   - 小写字母   - 大写字母   - 数字   - 特殊字符包括（&#x60;~!@#$%^&amp;*()-_&#x3D;+\\|[{}]:&#39;\&quot;,&lt;.&gt;/?）
+        :type password: str
+        :param vpc_id: 租户VPC ID。
+        :type vpc_id: str
+        :param security_group_id: 租户安全组ID。
+        :type security_group_id: str
+        :param subnet_id: 子网ID。
+        :type subnet_id: str
+        :param available_zones: 创建节点到指定且有资源的可用区ID。该参数不能为空数组或者数组的值为空。
+        :type available_zones: list[str]
+        :param product_id: 产品标识。
+        :type product_id: str
+        :param maintain_begin: 维护时间窗开始时间，格式为HH:mm。 - 维护时间窗开始和结束时间必须为指定的时间段。 - 开始时间必须为22:00、02:00、06:00、10:00、14:00和18:00。 - 该参数不能单独为空，若该值为空，则结束时间也为空。系统分配一个默认开始时间02:00。
+        :type maintain_begin: str
+        :param maintain_end: 维护时间窗结束时间，格式为HH:mm。 - 维护时间窗开始和结束时间必须为指定的时间段。 - 结束时间在开始时间基础上加四个小时，即当开始时间为22:00时，结束时间为02:00。 - 该参数不能单独为空，若该值为空，则开始时间也为空，系统分配一个默认结束时间06:00。
+        :type maintain_end: str
+        :param enable_publicip: RabbitMQ实例是否开启公网访问功能。 - true：开启 - false：不开启
+        :type enable_publicip: bool
+        :param publicip_id: RabbitMQ实例绑定的弹性IP地址的ID。 如果开启了公网访问功能（即enable_publicip为true），该字段为必选。
+        :type publicip_id: str
+        :param ssl_enable: 是否打开SSL加密访问。 - true：打开SSL加密访问。 - false：不打开SSL加密访问。
+        :type ssl_enable: bool
+        :param storage_spec_code: 存储IO规格。  取值范围：   - dms.physical.storage.normal：   - dms.physical.storage.high   - dms.physical.storage.ultra
+        :type storage_spec_code: str
+        :param enterprise_project_id: 企业项目ID。若为企业项目帐号，该参数必填。
+        :type enterprise_project_id: str
+        :param tags: 标签列表。
+        :type tags: list[:class:`huaweicloudsdkrabbitmq.v2.TagEntity`]
+        """
         
         
 
@@ -141,7 +184,7 @@ class CreateInstanceReq:
         实例名称。  由英文字符开头，只能由英文字母、数字、中划线、下划线组成，长度为4~64的字符。
 
         :param name: The name of this CreateInstanceReq.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -163,7 +206,7 @@ class CreateInstanceReq:
         实例的描述信息。  长度不超过1024的字符串。  > \\与\"在json报文中属于特殊字符，如果参数值中需要显示\\或者\"字符，请在字符前增加转义字符\\，比如\\\\或者\\\"。
 
         :param description: The description of this CreateInstanceReq.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -185,7 +228,7 @@ class CreateInstanceReq:
         消息引擎：rabbitmq。
 
         :param engine: The engine of this CreateInstanceReq.
-        :type: str
+        :type engine: str
         """
         self._engine = engine
 
@@ -207,7 +250,7 @@ class CreateInstanceReq:
         消息引擎的版本。   - RabbitMQ版本有：3.7.17 
 
         :param engine_version: The engine_version of this CreateInstanceReq.
-        :type: str
+        :type engine_version: str
         """
         self._engine_version = engine_version
 
@@ -229,7 +272,7 @@ class CreateInstanceReq:
         消息存储空间，单位GB。   - 单机RabbitMQ实例的存储空间的取值范围100GB~90000GB。   - 集群RabbitMQ实例的存储空间的取值范围为100GB*节点数~90000GB、200GB*节点数~90000GB、300GB*节点数~90000GB。 
 
         :param storage_space: The storage_space of this CreateInstanceReq.
-        :type: int
+        :type storage_space: int
         """
         self._storage_space = storage_space
 
@@ -251,7 +294,7 @@ class CreateInstanceReq:
         认证用户名，只能由英文字母、数字、中划线组成，长度为4~64的字符。
 
         :param access_user: The access_user of this CreateInstanceReq.
-        :type: str
+        :type access_user: str
         """
         self._access_user = access_user
 
@@ -273,7 +316,7 @@ class CreateInstanceReq:
         实例的认证密码。  复杂度要求： - 输入长度为8到32位的字符串。 - 必须包含如下四种字符中的两种组合：   - 小写字母   - 大写字母   - 数字   - 特殊字符包括（`~!@#$%^&*()-_=+\\|[{}]:'\",<.>/?）
 
         :param password: The password of this CreateInstanceReq.
-        :type: str
+        :type password: str
         """
         self._password = password
 
@@ -295,7 +338,7 @@ class CreateInstanceReq:
         租户VPC ID。
 
         :param vpc_id: The vpc_id of this CreateInstanceReq.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -317,7 +360,7 @@ class CreateInstanceReq:
         租户安全组ID。
 
         :param security_group_id: The security_group_id of this CreateInstanceReq.
-        :type: str
+        :type security_group_id: str
         """
         self._security_group_id = security_group_id
 
@@ -339,7 +382,7 @@ class CreateInstanceReq:
         子网ID。
 
         :param subnet_id: The subnet_id of this CreateInstanceReq.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -361,7 +404,7 @@ class CreateInstanceReq:
         创建节点到指定且有资源的可用区ID。该参数不能为空数组或者数组的值为空。
 
         :param available_zones: The available_zones of this CreateInstanceReq.
-        :type: list[str]
+        :type available_zones: list[str]
         """
         self._available_zones = available_zones
 
@@ -383,7 +426,7 @@ class CreateInstanceReq:
         产品标识。
 
         :param product_id: The product_id of this CreateInstanceReq.
-        :type: str
+        :type product_id: str
         """
         self._product_id = product_id
 
@@ -405,7 +448,7 @@ class CreateInstanceReq:
         维护时间窗开始时间，格式为HH:mm。 - 维护时间窗开始和结束时间必须为指定的时间段。 - 开始时间必须为22:00、02:00、06:00、10:00、14:00和18:00。 - 该参数不能单独为空，若该值为空，则结束时间也为空。系统分配一个默认开始时间02:00。
 
         :param maintain_begin: The maintain_begin of this CreateInstanceReq.
-        :type: str
+        :type maintain_begin: str
         """
         self._maintain_begin = maintain_begin
 
@@ -427,7 +470,7 @@ class CreateInstanceReq:
         维护时间窗结束时间，格式为HH:mm。 - 维护时间窗开始和结束时间必须为指定的时间段。 - 结束时间在开始时间基础上加四个小时，即当开始时间为22:00时，结束时间为02:00。 - 该参数不能单独为空，若该值为空，则开始时间也为空，系统分配一个默认结束时间06:00。
 
         :param maintain_end: The maintain_end of this CreateInstanceReq.
-        :type: str
+        :type maintain_end: str
         """
         self._maintain_end = maintain_end
 
@@ -449,7 +492,7 @@ class CreateInstanceReq:
         RabbitMQ实例是否开启公网访问功能。 - true：开启 - false：不开启
 
         :param enable_publicip: The enable_publicip of this CreateInstanceReq.
-        :type: bool
+        :type enable_publicip: bool
         """
         self._enable_publicip = enable_publicip
 
@@ -471,7 +514,7 @@ class CreateInstanceReq:
         RabbitMQ实例绑定的弹性IP地址的ID。 如果开启了公网访问功能（即enable_publicip为true），该字段为必选。
 
         :param publicip_id: The publicip_id of this CreateInstanceReq.
-        :type: str
+        :type publicip_id: str
         """
         self._publicip_id = publicip_id
 
@@ -493,7 +536,7 @@ class CreateInstanceReq:
         是否打开SSL加密访问。 - true：打开SSL加密访问。 - false：不打开SSL加密访问。
 
         :param ssl_enable: The ssl_enable of this CreateInstanceReq.
-        :type: bool
+        :type ssl_enable: bool
         """
         self._ssl_enable = ssl_enable
 
@@ -515,7 +558,7 @@ class CreateInstanceReq:
         存储IO规格。  取值范围：   - dms.physical.storage.normal：   - dms.physical.storage.high   - dms.physical.storage.ultra
 
         :param storage_spec_code: The storage_spec_code of this CreateInstanceReq.
-        :type: str
+        :type storage_spec_code: str
         """
         self._storage_spec_code = storage_spec_code
 
@@ -537,7 +580,7 @@ class CreateInstanceReq:
         企业项目ID。若为企业项目帐号，该参数必填。
 
         :param enterprise_project_id: The enterprise_project_id of this CreateInstanceReq.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -548,7 +591,7 @@ class CreateInstanceReq:
         标签列表。
 
         :return: The tags of this CreateInstanceReq.
-        :rtype: list[TagEntity]
+        :rtype: list[:class:`huaweicloudsdkrabbitmq.v2.TagEntity`]
         """
         return self._tags
 
@@ -559,7 +602,7 @@ class CreateInstanceReq:
         标签列表。
 
         :param tags: The tags of this CreateInstanceReq.
-        :type: list[TagEntity]
+        :type tags: list[:class:`huaweicloudsdkrabbitmq.v2.TagEntity`]
         """
         self._tags = tags
 

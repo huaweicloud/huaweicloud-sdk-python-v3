@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdatePortResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdatePortResponse(SdkResponse):
     }
 
     def __init__(self, workflow_id=None):
-        """UpdatePortResponse - a model defined in huaweicloud sdk"""
+        """UpdatePortResponse
+
+        The model defined in huaweicloud sdk
+
+        :param workflow_id: 任务ID
+        :type workflow_id: str
+        """
         
         super(UpdatePortResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class UpdatePortResponse(SdkResponse):
         任务ID
 
         :param workflow_id: The workflow_id of this UpdatePortResponse.
-        :type: str
+        :type workflow_id: str
         """
         self._workflow_id = workflow_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PoolRef:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class PoolRef:
     }
 
     def __init__(self, id=None):
-        """PoolRef - a model defined in huaweicloud sdk"""
+        """PoolRef
+
+        The model defined in huaweicloud sdk
+
+        :param id: 后端服务器组ID。
+        :type id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class PoolRef:
         后端服务器组ID。
 
         :param id: The id of this PoolRef.
-        :type: str
+        :type id: str
         """
         self._id = id
 

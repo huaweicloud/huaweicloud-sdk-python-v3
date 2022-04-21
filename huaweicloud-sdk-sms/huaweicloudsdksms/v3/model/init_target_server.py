@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InitTargetServer:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class InitTargetServer:
     }
 
     def __init__(self, disks=None):
-        """InitTargetServer - a model defined in huaweicloud sdk"""
+        """InitTargetServer
+
+        The model defined in huaweicloud sdk
+
+        :param disks: 推荐的目的端服务器的磁盘信息
+        :type disks: list[:class:`huaweicloudsdksms.v3.DiskIntargetServer`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class InitTargetServer:
         推荐的目的端服务器的磁盘信息
 
         :return: The disks of this InitTargetServer.
-        :rtype: list[DiskIntargetServer]
+        :rtype: list[:class:`huaweicloudsdksms.v3.DiskIntargetServer`]
         """
         return self._disks
 
@@ -57,7 +62,7 @@ class InitTargetServer:
         推荐的目的端服务器的磁盘信息
 
         :param disks: The disks of this InitTargetServer.
-        :type: list[DiskIntargetServer]
+        :type disks: list[:class:`huaweicloudsdksms.v3.DiskIntargetServer`]
         """
         self._disks = disks
 

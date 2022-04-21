@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AssetOperateRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AssetOperateRequest:
     }
 
     def __init__(self, apps=None, tasks=None):
-        """AssetOperateRequest - a model defined in huaweicloud sdk"""
+        """AssetOperateRequest
+
+        The model defined in huaweicloud sdk
+
+        :param apps: 应用列表
+        :type apps: list[str]
+        :param tasks: 任务列表
+        :type tasks: list[:class:`huaweicloudsdkroma.v2.AssetOperateRequestTasks`]
+        """
         
         
 
@@ -61,7 +68,7 @@ class AssetOperateRequest:
         应用列表
 
         :param apps: The apps of this AssetOperateRequest.
-        :type: list[str]
+        :type apps: list[str]
         """
         self._apps = apps
 
@@ -72,7 +79,7 @@ class AssetOperateRequest:
         任务列表
 
         :return: The tasks of this AssetOperateRequest.
-        :rtype: list[AssetOperateRequestTasks]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.AssetOperateRequestTasks`]
         """
         return self._tasks
 
@@ -83,7 +90,7 @@ class AssetOperateRequest:
         任务列表
 
         :param tasks: The tasks of this AssetOperateRequest.
-        :type: list[AssetOperateRequestTasks]
+        :type tasks: list[:class:`huaweicloudsdkroma.v2.AssetOperateRequestTasks`]
         """
         self._tasks = tasks
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MetricAlarms:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -62,7 +61,45 @@ class MetricAlarms:
     }
 
     def __init__(self, alarm_name=None, alarm_description=None, metric=None, condition=None, alarm_enabled=None, alarm_level=None, alarm_type=None, alarm_action_enabled=None, alarm_actions=None, ok_actions=None, insufficientdata_actions=None, alarm_action_begin_time=None, alarm_action_end_time=None, alarm_id=None, update_time=None, alarm_state=None, enterprise_project_id=None):
-        """MetricAlarms - a model defined in huaweicloud sdk"""
+        """MetricAlarms
+
+        The model defined in huaweicloud sdk
+
+        :param alarm_name: 告警名称。
+        :type alarm_name: str
+        :param alarm_description: 告警描述。
+        :type alarm_description: str
+        :param metric: 
+        :type metric: :class:`huaweicloudsdkces.v1.MetricInfoForAlarm`
+        :param condition: 
+        :type condition: :class:`huaweicloudsdkces.v1.Condition`
+        :param alarm_enabled: 是否启用该条告警。
+        :type alarm_enabled: bool
+        :param alarm_level: 告警级别，默认为2，级别为1、2、3、4。分别对应紧急、重要、次要、提示。
+        :type alarm_level: int
+        :param alarm_type: 告警类型。 仅针对事件告警的参数，枚举类型：EVENT.SYS或者EVENT.CUSTOM
+        :type alarm_type: str
+        :param alarm_action_enabled: 是否启用该条告警触发的动作。
+        :type alarm_action_enabled: bool
+        :param alarm_actions: 告警触发的动作。  结构如下：  {  \&quot;type\&quot;: \&quot;notification\&quot;, \&quot;notificationList\&quot;: [\&quot;urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\&quot;]  }  type取值： notification：通知。 autoscaling：弹性伸缩。 notificationList：告警状态发生变化时，被通知对象的列表。
+        :type alarm_actions: list[:class:`huaweicloudsdkces.v1.AlarmActions`]
+        :param ok_actions: 告警恢复触发的动作。  结构如下：  {  \&quot;type\&quot;: \&quot;notification\&quot;, \&quot;notificationList\&quot;: [\&quot;urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\&quot;]  } type取值：  notification：通知。  notificationList：告警状态发生变化时，被通知对象的列表。
+        :type ok_actions: list[:class:`huaweicloudsdkces.v1.AlarmActions`]
+        :param insufficientdata_actions: 数据不足触发的动作。  结构如下：  {  \&quot;type\&quot;: \&quot;notification\&quot;, \&quot;notificationList\&quot;: [\&quot;urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\&quot;]  }  type取值： 数据不足触发告警通知类型，取值为notification。 notificationList：数据不足触发告警通知时，被通知对象的ID列表。
+        :type insufficientdata_actions: list[:class:`huaweicloudsdkces.v1.AlarmActions`]
+        :param alarm_action_begin_time: 告警规则生效的开始时间，告警规则仅在生效时间内发送通知消息。例如alarm_action_begin_time为8:00，alarm_action_end_time为20:00时，则对应的告警规则仅在08:00-20:00发送通知消息。
+        :type alarm_action_begin_time: str
+        :param alarm_action_end_time: 告警规则生效的结束时间，告警规则仅在生效时间内发送通知消息。例如alarm_action_begin_time为8:00，alarm_action_end_time为20:00时，则对应的告警规则仅在08:00-20:00发送通知消息。
+        :type alarm_action_end_time: str
+        :param alarm_id: 告警规则的ID。
+        :type alarm_id: str
+        :param update_time: 告警状态变更的时间，UNIX时间戳，单位毫秒。
+        :type update_time: int
+        :param alarm_state: 告警状态，取值说明：  ok，正常 alarm，告警 insufficient_data，数据不足
+        :type alarm_state: str
+        :param enterprise_project_id: 企业项目ID。 取值为all_granted_eps时，表示所有企业项目; 取值为0时，表示默认的企业项目default。
+        :type enterprise_project_id: str
+        """
         
         
 
@@ -132,7 +169,7 @@ class MetricAlarms:
         告警名称。
 
         :param alarm_name: The alarm_name of this MetricAlarms.
-        :type: str
+        :type alarm_name: str
         """
         self._alarm_name = alarm_name
 
@@ -154,7 +191,7 @@ class MetricAlarms:
         告警描述。
 
         :param alarm_description: The alarm_description of this MetricAlarms.
-        :type: str
+        :type alarm_description: str
         """
         self._alarm_description = alarm_description
 
@@ -164,7 +201,7 @@ class MetricAlarms:
 
 
         :return: The metric of this MetricAlarms.
-        :rtype: MetricInfoForAlarm
+        :rtype: :class:`huaweicloudsdkces.v1.MetricInfoForAlarm`
         """
         return self._metric
 
@@ -174,7 +211,7 @@ class MetricAlarms:
 
 
         :param metric: The metric of this MetricAlarms.
-        :type: MetricInfoForAlarm
+        :type metric: :class:`huaweicloudsdkces.v1.MetricInfoForAlarm`
         """
         self._metric = metric
 
@@ -184,7 +221,7 @@ class MetricAlarms:
 
 
         :return: The condition of this MetricAlarms.
-        :rtype: Condition
+        :rtype: :class:`huaweicloudsdkces.v1.Condition`
         """
         return self._condition
 
@@ -194,7 +231,7 @@ class MetricAlarms:
 
 
         :param condition: The condition of this MetricAlarms.
-        :type: Condition
+        :type condition: :class:`huaweicloudsdkces.v1.Condition`
         """
         self._condition = condition
 
@@ -216,7 +253,7 @@ class MetricAlarms:
         是否启用该条告警。
 
         :param alarm_enabled: The alarm_enabled of this MetricAlarms.
-        :type: bool
+        :type alarm_enabled: bool
         """
         self._alarm_enabled = alarm_enabled
 
@@ -238,7 +275,7 @@ class MetricAlarms:
         告警级别，默认为2，级别为1、2、3、4。分别对应紧急、重要、次要、提示。
 
         :param alarm_level: The alarm_level of this MetricAlarms.
-        :type: int
+        :type alarm_level: int
         """
         self._alarm_level = alarm_level
 
@@ -260,7 +297,7 @@ class MetricAlarms:
         告警类型。 仅针对事件告警的参数，枚举类型：EVENT.SYS或者EVENT.CUSTOM
 
         :param alarm_type: The alarm_type of this MetricAlarms.
-        :type: str
+        :type alarm_type: str
         """
         self._alarm_type = alarm_type
 
@@ -282,7 +319,7 @@ class MetricAlarms:
         是否启用该条告警触发的动作。
 
         :param alarm_action_enabled: The alarm_action_enabled of this MetricAlarms.
-        :type: bool
+        :type alarm_action_enabled: bool
         """
         self._alarm_action_enabled = alarm_action_enabled
 
@@ -293,7 +330,7 @@ class MetricAlarms:
         告警触发的动作。  结构如下：  {  \"type\": \"notification\", \"notificationList\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"]  }  type取值： notification：通知。 autoscaling：弹性伸缩。 notificationList：告警状态发生变化时，被通知对象的列表。
 
         :return: The alarm_actions of this MetricAlarms.
-        :rtype: list[AlarmActions]
+        :rtype: list[:class:`huaweicloudsdkces.v1.AlarmActions`]
         """
         return self._alarm_actions
 
@@ -304,7 +341,7 @@ class MetricAlarms:
         告警触发的动作。  结构如下：  {  \"type\": \"notification\", \"notificationList\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"]  }  type取值： notification：通知。 autoscaling：弹性伸缩。 notificationList：告警状态发生变化时，被通知对象的列表。
 
         :param alarm_actions: The alarm_actions of this MetricAlarms.
-        :type: list[AlarmActions]
+        :type alarm_actions: list[:class:`huaweicloudsdkces.v1.AlarmActions`]
         """
         self._alarm_actions = alarm_actions
 
@@ -315,7 +352,7 @@ class MetricAlarms:
         告警恢复触发的动作。  结构如下：  {  \"type\": \"notification\", \"notificationList\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"]  } type取值：  notification：通知。  notificationList：告警状态发生变化时，被通知对象的列表。
 
         :return: The ok_actions of this MetricAlarms.
-        :rtype: list[AlarmActions]
+        :rtype: list[:class:`huaweicloudsdkces.v1.AlarmActions`]
         """
         return self._ok_actions
 
@@ -326,7 +363,7 @@ class MetricAlarms:
         告警恢复触发的动作。  结构如下：  {  \"type\": \"notification\", \"notificationList\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"]  } type取值：  notification：通知。  notificationList：告警状态发生变化时，被通知对象的列表。
 
         :param ok_actions: The ok_actions of this MetricAlarms.
-        :type: list[AlarmActions]
+        :type ok_actions: list[:class:`huaweicloudsdkces.v1.AlarmActions`]
         """
         self._ok_actions = ok_actions
 
@@ -337,7 +374,7 @@ class MetricAlarms:
         数据不足触发的动作。  结构如下：  {  \"type\": \"notification\", \"notificationList\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"]  }  type取值： 数据不足触发告警通知类型，取值为notification。 notificationList：数据不足触发告警通知时，被通知对象的ID列表。
 
         :return: The insufficientdata_actions of this MetricAlarms.
-        :rtype: list[AlarmActions]
+        :rtype: list[:class:`huaweicloudsdkces.v1.AlarmActions`]
         """
         return self._insufficientdata_actions
 
@@ -348,7 +385,7 @@ class MetricAlarms:
         数据不足触发的动作。  结构如下：  {  \"type\": \"notification\", \"notificationList\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"]  }  type取值： 数据不足触发告警通知类型，取值为notification。 notificationList：数据不足触发告警通知时，被通知对象的ID列表。
 
         :param insufficientdata_actions: The insufficientdata_actions of this MetricAlarms.
-        :type: list[AlarmActions]
+        :type insufficientdata_actions: list[:class:`huaweicloudsdkces.v1.AlarmActions`]
         """
         self._insufficientdata_actions = insufficientdata_actions
 
@@ -370,7 +407,7 @@ class MetricAlarms:
         告警规则生效的开始时间，告警规则仅在生效时间内发送通知消息。例如alarm_action_begin_time为8:00，alarm_action_end_time为20:00时，则对应的告警规则仅在08:00-20:00发送通知消息。
 
         :param alarm_action_begin_time: The alarm_action_begin_time of this MetricAlarms.
-        :type: str
+        :type alarm_action_begin_time: str
         """
         self._alarm_action_begin_time = alarm_action_begin_time
 
@@ -392,7 +429,7 @@ class MetricAlarms:
         告警规则生效的结束时间，告警规则仅在生效时间内发送通知消息。例如alarm_action_begin_time为8:00，alarm_action_end_time为20:00时，则对应的告警规则仅在08:00-20:00发送通知消息。
 
         :param alarm_action_end_time: The alarm_action_end_time of this MetricAlarms.
-        :type: str
+        :type alarm_action_end_time: str
         """
         self._alarm_action_end_time = alarm_action_end_time
 
@@ -414,7 +451,7 @@ class MetricAlarms:
         告警规则的ID。
 
         :param alarm_id: The alarm_id of this MetricAlarms.
-        :type: str
+        :type alarm_id: str
         """
         self._alarm_id = alarm_id
 
@@ -436,7 +473,7 @@ class MetricAlarms:
         告警状态变更的时间，UNIX时间戳，单位毫秒。
 
         :param update_time: The update_time of this MetricAlarms.
-        :type: int
+        :type update_time: int
         """
         self._update_time = update_time
 
@@ -458,7 +495,7 @@ class MetricAlarms:
         告警状态，取值说明：  ok，正常 alarm，告警 insufficient_data，数据不足
 
         :param alarm_state: The alarm_state of this MetricAlarms.
-        :type: str
+        :type alarm_state: str
         """
         self._alarm_state = alarm_state
 
@@ -480,7 +517,7 @@ class MetricAlarms:
         企业项目ID。 取值为all_granted_eps时，表示所有企业项目; 取值为0时，表示默认的企业项目default。
 
         :param enterprise_project_id: The enterprise_project_id of this MetricAlarms.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteRouteOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteRouteOption:
     }
 
     def __init__(self, destination=None):
-        """DeleteRouteOption - a model defined in huaweicloud sdk"""
+        """DeleteRouteOption
+
+        The model defined in huaweicloud sdk
+
+        :param destination: 功能说明：路由的目的网段  约束：合法的CIDR格式
+        :type destination: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteRouteOption:
         功能说明：路由的目的网段  约束：合法的CIDR格式
 
         :param destination: The destination of this DeleteRouteOption.
-        :type: str
+        :type destination: str
         """
         self._destination = destination
 

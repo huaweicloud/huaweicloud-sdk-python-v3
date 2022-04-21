@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BasicTaskInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class BasicTaskInfo:
     }
 
     def __init__(self, task_id=None, status=None, create_time=None, end_time=None, output=None, description=None):
-        """BasicTaskInfo - a model defined in huaweicloud sdk"""
+        """BasicTaskInfo
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 任务Id
+        :type task_id: str
+        :param status: 任务执行状态，取值如下。 \&quot;NO_TASK\&quot;      //无任务，task_id非法 \&quot;WAITING\&quot;      //等待启动 \&quot;PROCESSING\&quot;   //处理中 \&quot;SUCCEEDED\&quot;    //成功 \&quot;FAILED\&quot;       //失败 \&quot;CANCELED\&quot;     //已删除 
+        :type status: str
+        :param create_time: 任务启动时间 
+        :type create_time: str
+        :param end_time: 任务结束时间 
+        :type end_time: str
+        :param output: 
+        :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        :param description: 任务描述，当出现异常时，此字段为异常的原因。 
+        :type description: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class BasicTaskInfo:
         任务Id
 
         :param task_id: The task_id of this BasicTaskInfo.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -105,7 +120,7 @@ class BasicTaskInfo:
         任务执行状态，取值如下。 \"NO_TASK\"      //无任务，task_id非法 \"WAITING\"      //等待启动 \"PROCESSING\"   //处理中 \"SUCCEEDED\"    //成功 \"FAILED\"       //失败 \"CANCELED\"     //已删除 
 
         :param status: The status of this BasicTaskInfo.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -127,7 +142,7 @@ class BasicTaskInfo:
         任务启动时间 
 
         :param create_time: The create_time of this BasicTaskInfo.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -149,7 +164,7 @@ class BasicTaskInfo:
         任务结束时间 
 
         :param end_time: The end_time of this BasicTaskInfo.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -159,7 +174,7 @@ class BasicTaskInfo:
 
 
         :return: The output of this BasicTaskInfo.
-        :rtype: ObsObjInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         return self._output
 
@@ -169,7 +184,7 @@ class BasicTaskInfo:
 
 
         :param output: The output of this BasicTaskInfo.
-        :type: ObsObjInfo
+        :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         self._output = output
 
@@ -191,7 +206,7 @@ class BasicTaskInfo:
         任务描述，当出现异常时，此字段为异常的原因。 
 
         :param description: The description of this BasicTaskInfo.
-        :type: str
+        :type description: str
         """
         self._description = description
 

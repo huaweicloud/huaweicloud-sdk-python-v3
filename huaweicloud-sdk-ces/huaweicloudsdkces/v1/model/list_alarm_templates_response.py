@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAlarmTemplatesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListAlarmTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, alarm_templates=None, meta_data=None):
-        """ListAlarmTemplatesResponse - a model defined in huaweicloud sdk"""
+        """ListAlarmTemplatesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param alarm_templates: 自定义告警模板详细信息。
+        :type alarm_templates: list[:class:`huaweicloudsdkces.v1.AlarmTemplate`]
+        :param meta_data: 
+        :type meta_data: :class:`huaweicloudsdkces.v1.MetaData`
+        """
         
         super(ListAlarmTemplatesResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListAlarmTemplatesResponse(SdkResponse):
         自定义告警模板详细信息。
 
         :return: The alarm_templates of this ListAlarmTemplatesResponse.
-        :rtype: list[AlarmTemplate]
+        :rtype: list[:class:`huaweicloudsdkces.v1.AlarmTemplate`]
         """
         return self._alarm_templates
 
@@ -63,7 +70,7 @@ class ListAlarmTemplatesResponse(SdkResponse):
         自定义告警模板详细信息。
 
         :param alarm_templates: The alarm_templates of this ListAlarmTemplatesResponse.
-        :type: list[AlarmTemplate]
+        :type alarm_templates: list[:class:`huaweicloudsdkces.v1.AlarmTemplate`]
         """
         self._alarm_templates = alarm_templates
 
@@ -73,7 +80,7 @@ class ListAlarmTemplatesResponse(SdkResponse):
 
 
         :return: The meta_data of this ListAlarmTemplatesResponse.
-        :rtype: MetaData
+        :rtype: :class:`huaweicloudsdkces.v1.MetaData`
         """
         return self._meta_data
 
@@ -83,7 +90,7 @@ class ListAlarmTemplatesResponse(SdkResponse):
 
 
         :param meta_data: The meta_data of this ListAlarmTemplatesResponse.
-        :type: MetaData
+        :type meta_data: :class:`huaweicloudsdkces.v1.MetaData`
         """
         self._meta_data = meta_data
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTagValuesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListTagValuesResponse(SdkResponse):
     }
 
     def __init__(self, tag_name=None, tag_values=None, count=None):
-        """ListTagValuesResponse - a model defined in huaweicloud sdk"""
+        """ListTagValuesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param tag_name: 标签的名称
+        :type tag_name: str
+        :param tag_values: 标签的值列表
+        :type tag_values: list[str]
+        :param count: 当前列表元素总数
+        :type count: int
+        """
         
         super(ListTagValuesResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListTagValuesResponse(SdkResponse):
         标签的名称
 
         :param tag_name: The tag_name of this ListTagValuesResponse.
-        :type: str
+        :type tag_name: str
         """
         self._tag_name = tag_name
 
@@ -90,7 +99,7 @@ class ListTagValuesResponse(SdkResponse):
         标签的值列表
 
         :param tag_values: The tag_values of this ListTagValuesResponse.
-        :type: list[str]
+        :type tag_values: list[str]
         """
         self._tag_values = tag_values
 
@@ -112,7 +121,7 @@ class ListTagValuesResponse(SdkResponse):
         当前列表元素总数
 
         :param count: The count of this ListTagValuesResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

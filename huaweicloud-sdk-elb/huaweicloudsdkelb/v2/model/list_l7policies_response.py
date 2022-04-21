@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListL7policiesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListL7policiesResponse(SdkResponse):
     }
 
     def __init__(self, l7policies=None):
-        """ListL7policiesResponse - a model defined in huaweicloud sdk"""
+        """ListL7policiesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param l7policies: 转发策略对象的列表
+        :type l7policies: list[:class:`huaweicloudsdkelb.v2.L7policyResp`]
+        """
         
         super(ListL7policiesResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListL7policiesResponse(SdkResponse):
         转发策略对象的列表
 
         :return: The l7policies of this ListL7policiesResponse.
-        :rtype: list[L7policyResp]
+        :rtype: list[:class:`huaweicloudsdkelb.v2.L7policyResp`]
         """
         return self._l7policies
 
@@ -58,7 +63,7 @@ class ListL7policiesResponse(SdkResponse):
         转发策略对象的列表
 
         :param l7policies: The l7policies of this ListL7policiesResponse.
-        :type: list[L7policyResp]
+        :type l7policies: list[:class:`huaweicloudsdkelb.v2.L7policyResp`]
         """
         self._l7policies = l7policies
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UnpublishLiveDataApiV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UnpublishLiveDataApiV2Request:
     }
 
     def __init__(self, instance_id=None, ld_api_id=None):
-        """UnpublishLiveDataApiV2Request - a model defined in huaweicloud sdk"""
+        """UnpublishLiveDataApiV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param ld_api_id: 后端API的编号
+        :type ld_api_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class UnpublishLiveDataApiV2Request:
         实例ID
 
         :param instance_id: The instance_id of this UnpublishLiveDataApiV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -83,7 +90,7 @@ class UnpublishLiveDataApiV2Request:
         后端API的编号
 
         :param ld_api_id: The ld_api_id of this UnpublishLiveDataApiV2Request.
-        :type: str
+        :type ld_api_id: str
         """
         self._ld_api_id = ld_api_id
 

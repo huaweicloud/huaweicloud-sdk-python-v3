@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NetAddress:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class NetAddress:
     }
 
     def __init__(self, ip=None, port=None, domain=None):
-        """NetAddress - a model defined in huaweicloud sdk"""
+        """NetAddress
+
+        The model defined in huaweicloud sdk
+
+        :param ip: **参数说明**：服务的对应IP
+        :type ip: str
+        :param port: **参数说明**：服务对应端口
+        :type port: int
+        :param domain: **参数说明**：服务对应的域名
+        :type domain: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class NetAddress:
         **参数说明**：服务的对应IP
 
         :param ip: The ip of this NetAddress.
-        :type: str
+        :type ip: str
         """
         self._ip = ip
 
@@ -90,7 +99,7 @@ class NetAddress:
         **参数说明**：服务对应端口
 
         :param port: The port of this NetAddress.
-        :type: int
+        :type port: int
         """
         self._port = port
 
@@ -112,7 +121,7 @@ class NetAddress:
         **参数说明**：服务对应的域名
 
         :param domain: The domain of this NetAddress.
-        :type: str
+        :type domain: str
         """
         self._domain = domain
 

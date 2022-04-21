@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateConnectorResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateConnectorResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, connector_id=None):
-        """CreateConnectorResponse - a model defined in huaweicloud sdk"""
+        """CreateConnectorResponse
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 任务ID。 
+        :type job_id: str
+        :param connector_id: 实例转储ID。 
+        :type connector_id: str
+        """
         
         super(CreateConnectorResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class CreateConnectorResponse(SdkResponse):
         任务ID。 
 
         :param job_id: The job_id of this CreateConnectorResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -85,7 +92,7 @@ class CreateConnectorResponse(SdkResponse):
         实例转储ID。 
 
         :param connector_id: The connector_id of this CreateConnectorResponse.
-        :type: str
+        :type connector_id: str
         """
         self._connector_id = connector_id
 

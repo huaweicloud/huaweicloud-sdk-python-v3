@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PoolMemVO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class PoolMemVO:
     }
 
     def __init__(self, id=None, cid=None, sim_price_plan_id=None, flow_used=None):
-        """PoolMemVO - a model defined in huaweicloud sdk"""
+        """PoolMemVO
+
+        The model defined in huaweicloud sdk
+
+        :param id: 流量池标识
+        :type id: int
+        :param cid: 容器ID
+        :type cid: str
+        :param sim_price_plan_id: 套餐订购实例ID
+        :type sim_price_plan_id: int
+        :param flow_used: 已用流量(查询账期所在月份), 单位MB
+        :type flow_used: float
+        """
         
         
 
@@ -73,7 +84,7 @@ class PoolMemVO:
         流量池标识
 
         :param id: The id of this PoolMemVO.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -95,7 +106,7 @@ class PoolMemVO:
         容器ID
 
         :param cid: The cid of this PoolMemVO.
-        :type: str
+        :type cid: str
         """
         self._cid = cid
 
@@ -117,7 +128,7 @@ class PoolMemVO:
         套餐订购实例ID
 
         :param sim_price_plan_id: The sim_price_plan_id of this PoolMemVO.
-        :type: int
+        :type sim_price_plan_id: int
         """
         self._sim_price_plan_id = sim_price_plan_id
 
@@ -139,7 +150,7 @@ class PoolMemVO:
         已用流量(查询账期所在月份), 单位MB
 
         :param flow_used: The flow_used of this PoolMemVO.
-        :type: float
+        :type flow_used: float
         """
         self._flow_used = flow_used
 

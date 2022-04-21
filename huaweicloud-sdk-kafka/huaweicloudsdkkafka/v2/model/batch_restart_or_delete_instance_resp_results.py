@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchRestartOrDeleteInstanceRespResults:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchRestartOrDeleteInstanceRespResults:
     }
 
     def __init__(self, result=None, instance=None):
-        """BatchRestartOrDeleteInstanceRespResults - a model defined in huaweicloud sdk"""
+        """BatchRestartOrDeleteInstanceRespResults
+
+        The model defined in huaweicloud sdk
+
+        :param result: 操作结果。 - &#39;success: 操作成功&#39; - &#39;failed: 操作失败&#39; 
+        :type result: str
+        :param instance: 实例ID。
+        :type instance: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class BatchRestartOrDeleteInstanceRespResults:
         操作结果。 - 'success: 操作成功' - 'failed: 操作失败' 
 
         :param result: The result of this BatchRestartOrDeleteInstanceRespResults.
-        :type: str
+        :type result: str
         """
         self._result = result
 
@@ -85,7 +92,7 @@ class BatchRestartOrDeleteInstanceRespResults:
         实例ID。
 
         :param instance: The instance of this BatchRestartOrDeleteInstanceRespResults.
-        :type: str
+        :type instance: str
         """
         self._instance = instance
 

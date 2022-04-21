@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateL7PolicyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateL7PolicyResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, l7policy=None):
-        """CreateL7PolicyResponse - a model defined in huaweicloud sdk"""
+        """CreateL7PolicyResponse
+
+        The model defined in huaweicloud sdk
+
+        :param request_id: 请求ID。  注：自动生成 。
+        :type request_id: str
+        :param l7policy: 
+        :type l7policy: :class:`huaweicloudsdkelb.v3.L7Policy`
+        """
         
         super(CreateL7PolicyResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class CreateL7PolicyResponse(SdkResponse):
         请求ID。  注：自动生成 。
 
         :param request_id: The request_id of this CreateL7PolicyResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 
@@ -73,7 +80,7 @@ class CreateL7PolicyResponse(SdkResponse):
 
 
         :return: The l7policy of this CreateL7PolicyResponse.
-        :rtype: L7Policy
+        :rtype: :class:`huaweicloudsdkelb.v3.L7Policy`
         """
         return self._l7policy
 
@@ -83,7 +90,7 @@ class CreateL7PolicyResponse(SdkResponse):
 
 
         :param l7policy: The l7policy of this CreateL7PolicyResponse.
-        :type: L7Policy
+        :type l7policy: :class:`huaweicloudsdkelb.v3.L7Policy`
         """
         self._l7policy = l7policy
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRtcRealtimeQualityResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListRtcRealtimeQualityResponse(SdkResponse):
     }
 
     def __init__(self, quality=None, x_request_id=None):
-        """ListRtcRealtimeQualityResponse - a model defined in huaweicloud sdk"""
+        """ListRtcRealtimeQualityResponse
+
+        The model defined in huaweicloud sdk
+
+        :param quality: 时间戳及相应时间的指标数值列表
+        :type quality: list[:class:`huaweicloudsdkcloudrtc.v1.TimeDoubleValueData`]
+        :param x_request_id: 
+        :type x_request_id: str
+        """
         
         super(ListRtcRealtimeQualityResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListRtcRealtimeQualityResponse(SdkResponse):
         时间戳及相应时间的指标数值列表
 
         :return: The quality of this ListRtcRealtimeQualityResponse.
-        :rtype: list[TimeDoubleValueData]
+        :rtype: list[:class:`huaweicloudsdkcloudrtc.v1.TimeDoubleValueData`]
         """
         return self._quality
 
@@ -63,7 +70,7 @@ class ListRtcRealtimeQualityResponse(SdkResponse):
         时间戳及相应时间的指标数值列表
 
         :param quality: The quality of this ListRtcRealtimeQualityResponse.
-        :type: list[TimeDoubleValueData]
+        :type quality: list[:class:`huaweicloudsdkcloudrtc.v1.TimeDoubleValueData`]
         """
         self._quality = quality
 
@@ -83,7 +90,7 @@ class ListRtcRealtimeQualityResponse(SdkResponse):
 
 
         :param x_request_id: The x_request_id of this ListRtcRealtimeQualityResponse.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 

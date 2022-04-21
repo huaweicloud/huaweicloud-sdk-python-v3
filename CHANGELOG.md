@@ -1,3 +1,72 @@
+# 3.0.85 2022-04-21
+
+### HuaweiCloud SDK AS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `iam_agency_name` to the interface `CreateScalingGroup`
+  - Add the response parameter `iam_agency_name` to the interface `ListScalingGroups`
+  - Add the request parameter `iam_agency_name` to the interface `UpdateScalingGroup`
+  - Add the response parameter `iam_agency_name` to the interface `ShowScalingGroup`
+
+### HuaweiCloud SDK BSS
+
+- _Features_
+  - Support the interface `ListConsumeSubCustomers`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameters `sub_service_type_code`, `sub_service_type_name`, `sub_resource_type_code`, `sub_resource_type_name`, `sub_resource_id`, `sub_resource_name` to the interface `ListCustomerBillsMonthlyBreakDown`
+
+### HuaweiCloud SDK CloudDeploy
+
+- _Features_
+  - Support the interfaces `ListDeployTasks`, `ListDeployTaskHistoryByDate`, `ShowProjectSuccessRate`, `ListTaskSuccessRate`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DCS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `domain_name_info` to the interface `ShowInstance`
+
+### HuaweiCloud SDK DWS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `tags` to the interface `ListClusters`
+  - Remove the response parameters `cluster_id`, `size`, `name`, `description`, `finished`, `started`, `id`, `type`, `status` from the interface `ListSnapshotDetails`
+
+### HuaweiCloud SDK IES
+
+- _Features_
+  - Support the service `Intelligent EdgeSite`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the request parameter `restore_all_database` from the interface `RestoreToExistingInstance`
+
 # 3.0.84 2022-04-14
 
 ### HuaweiCloud SDK Core

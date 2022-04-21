@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteServerMetadataRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteServerMetadataRequest:
     }
 
     def __init__(self, key=None, server_id=None):
-        """DeleteServerMetadataRequest - a model defined in huaweicloud sdk"""
+        """DeleteServerMetadataRequest
+
+        The model defined in huaweicloud sdk
+
+        :param key: 待删除的云服务器metadata键值
+        :type key: str
+        :param server_id: 云服务器ID。
+        :type server_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class DeleteServerMetadataRequest:
         待删除的云服务器metadata键值
 
         :param key: The key of this DeleteServerMetadataRequest.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -83,7 +90,7 @@ class DeleteServerMetadataRequest:
         云服务器ID。
 
         :param server_id: The server_id of this DeleteServerMetadataRequest.
-        :type: str
+        :type server_id: str
         """
         self._server_id = server_id
 

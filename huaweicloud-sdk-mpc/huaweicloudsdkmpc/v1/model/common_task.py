@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CommonTask:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class CommonTask:
     }
 
     def __init__(self, task_id=None, status=None, create_time=None, start_time=None, end_time=None, error_code=None, description=None, user_data=None, input=None, output=None):
-        """CommonTask - a model defined in huaweicloud sdk"""
+        """CommonTask
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 任务ID 
+        :type task_id: str
+        :param status: 任务状态。  取值如下： - INIT：初始状态。 - WAITING：等待启动。 - PROCESSING：处理中。 - SUCCEED：处理成功。 - FAILED：处理失败。 - CANCELED：已取消。 
+        :type status: str
+        :param create_time: 任务创建时间 
+        :type create_time: str
+        :param start_time: 任务启动时间 
+        :type start_time: str
+        :param end_time: 任务结束时间 
+        :type end_time: str
+        :param error_code: 任务的返回码。 
+        :type error_code: str
+        :param description: 错误描述 
+        :type description: str
+        :param user_data: 用户数据。 
+        :type user_data: str
+        :param input: 
+        :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        :param output: 
+        :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        """
         
         
 
@@ -103,7 +126,7 @@ class CommonTask:
         任务ID 
 
         :param task_id: The task_id of this CommonTask.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -125,7 +148,7 @@ class CommonTask:
         任务状态。  取值如下： - INIT：初始状态。 - WAITING：等待启动。 - PROCESSING：处理中。 - SUCCEED：处理成功。 - FAILED：处理失败。 - CANCELED：已取消。 
 
         :param status: The status of this CommonTask.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -147,7 +170,7 @@ class CommonTask:
         任务创建时间 
 
         :param create_time: The create_time of this CommonTask.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -169,7 +192,7 @@ class CommonTask:
         任务启动时间 
 
         :param start_time: The start_time of this CommonTask.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -191,7 +214,7 @@ class CommonTask:
         任务结束时间 
 
         :param end_time: The end_time of this CommonTask.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -213,7 +236,7 @@ class CommonTask:
         任务的返回码。 
 
         :param error_code: The error_code of this CommonTask.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -235,7 +258,7 @@ class CommonTask:
         错误描述 
 
         :param description: The description of this CommonTask.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -257,7 +280,7 @@ class CommonTask:
         用户数据。 
 
         :param user_data: The user_data of this CommonTask.
-        :type: str
+        :type user_data: str
         """
         self._user_data = user_data
 
@@ -267,7 +290,7 @@ class CommonTask:
 
 
         :return: The input of this CommonTask.
-        :rtype: ObsObjInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         return self._input
 
@@ -277,7 +300,7 @@ class CommonTask:
 
 
         :param input: The input of this CommonTask.
-        :type: ObsObjInfo
+        :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         self._input = input
 
@@ -287,7 +310,7 @@ class CommonTask:
 
 
         :return: The output of this CommonTask.
-        :rtype: ObsObjInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         return self._output
 
@@ -297,7 +320,7 @@ class CommonTask:
 
 
         :param output: The output of this CommonTask.
-        :type: ObsObjInfo
+        :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         self._output = output
 

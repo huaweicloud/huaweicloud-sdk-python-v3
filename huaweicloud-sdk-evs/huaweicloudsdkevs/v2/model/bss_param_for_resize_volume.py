@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BssParamForResizeVolume:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BssParamForResizeVolume:
     }
 
     def __init__(self, is_auto_pay=None):
-        """BssParamForResizeVolume - a model defined in huaweicloud sdk"""
+        """BssParamForResizeVolume
+
+        The model defined in huaweicloud sdk
+
+        :param is_auto_pay: 功能说明：是否立即支付。该参数只有在云硬盘为包周期的情况下有意义。默认值为false 取值范围： * true：立即支付，从帐户余额中自动扣费 * false：不立即支付，创建订单暂不支付 
+        :type is_auto_pay: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class BssParamForResizeVolume:
         功能说明：是否立即支付。该参数只有在云硬盘为包周期的情况下有意义。默认值为false 取值范围： * true：立即支付，从帐户余额中自动扣费 * false：不立即支付，创建订单暂不支付 
 
         :param is_auto_pay: The is_auto_pay of this BssParamForResizeVolume.
-        :type: str
+        :type is_auto_pay: str
         """
         self._is_auto_pay = is_auto_pay
 

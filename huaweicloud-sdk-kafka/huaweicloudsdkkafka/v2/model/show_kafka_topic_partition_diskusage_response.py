@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowKafkaTopicPartitionDiskusageResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowKafkaTopicPartitionDiskusageResponse(SdkResponse):
     }
 
     def __init__(self, broker_list=None):
-        """ShowKafkaTopicPartitionDiskusageResponse - a model defined in huaweicloud sdk"""
+        """ShowKafkaTopicPartitionDiskusageResponse
+
+        The model defined in huaweicloud sdk
+
+        :param broker_list: Broker列表。
+        :type broker_list: list[:class:`huaweicloudsdkkafka.v2.DiskusageEntity`]
+        """
         
         super(ShowKafkaTopicPartitionDiskusageResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ShowKafkaTopicPartitionDiskusageResponse(SdkResponse):
         Broker列表。
 
         :return: The broker_list of this ShowKafkaTopicPartitionDiskusageResponse.
-        :rtype: list[DiskusageEntity]
+        :rtype: list[:class:`huaweicloudsdkkafka.v2.DiskusageEntity`]
         """
         return self._broker_list
 
@@ -58,7 +63,7 @@ class ShowKafkaTopicPartitionDiskusageResponse(SdkResponse):
         Broker列表。
 
         :param broker_list: The broker_list of this ShowKafkaTopicPartitionDiskusageResponse.
-        :type: list[DiskusageEntity]
+        :type broker_list: list[:class:`huaweicloudsdkkafka.v2.DiskusageEntity`]
         """
         self._broker_list = broker_list
 

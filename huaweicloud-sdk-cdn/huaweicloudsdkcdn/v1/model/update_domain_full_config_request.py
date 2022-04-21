@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDomainFullConfigRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateDomainFullConfigRequest:
     }
 
     def __init__(self, domain_name=None, enterprise_project_id=None, body=None):
-        """UpdateDomainFullConfigRequest - a model defined in huaweicloud sdk"""
+        """UpdateDomainFullConfigRequest
+
+        The model defined in huaweicloud sdk
+
+        :param domain_name: 加速域名
+        :type domain_name: str
+        :param enterprise_project_id: 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子账号调用接口时，该参数必传。
+        :type enterprise_project_id: str
+        :param body: Body of the UpdateDomainFullConfigRequest
+        :type body: :class:`huaweicloudsdkcdn.v1.ModifyDomainConfigRequestBody`
+        """
         
         
 
@@ -67,7 +76,7 @@ class UpdateDomainFullConfigRequest:
         加速域名
 
         :param domain_name: The domain_name of this UpdateDomainFullConfigRequest.
-        :type: str
+        :type domain_name: str
         """
         self._domain_name = domain_name
 
@@ -89,7 +98,7 @@ class UpdateDomainFullConfigRequest:
         当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子账号调用接口时，该参数必传。
 
         :param enterprise_project_id: The enterprise_project_id of this UpdateDomainFullConfigRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -99,7 +108,7 @@ class UpdateDomainFullConfigRequest:
 
 
         :return: The body of this UpdateDomainFullConfigRequest.
-        :rtype: ModifyDomainConfigRequestBody
+        :rtype: :class:`huaweicloudsdkcdn.v1.ModifyDomainConfigRequestBody`
         """
         return self._body
 
@@ -109,7 +118,7 @@ class UpdateDomainFullConfigRequest:
 
 
         :param body: The body of this UpdateDomainFullConfigRequest.
-        :type: ModifyDomainConfigRequestBody
+        :type body: :class:`huaweicloudsdkcdn.v1.ModifyDomainConfigRequestBody`
         """
         self._body = body
 

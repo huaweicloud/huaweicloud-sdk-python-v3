@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAuthorizedSqlserverDbUsersResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListAuthorizedSqlserverDbUsersResponse(SdkResponse):
     }
 
     def __init__(self, users=None, total_count=None):
-        """ListAuthorizedSqlserverDbUsersResponse - a model defined in huaweicloud sdk"""
+        """ListAuthorizedSqlserverDbUsersResponse
+
+        The model defined in huaweicloud sdk
+
+        :param users: 用户及相关权限。
+        :type users: list[:class:`huaweicloudsdkrds.v3.UserWithPrivilege`]
+        :param total_count: 总数。
+        :type total_count: int
+        """
         
         super(ListAuthorizedSqlserverDbUsersResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListAuthorizedSqlserverDbUsersResponse(SdkResponse):
         用户及相关权限。
 
         :return: The users of this ListAuthorizedSqlserverDbUsersResponse.
-        :rtype: list[UserWithPrivilege]
+        :rtype: list[:class:`huaweicloudsdkrds.v3.UserWithPrivilege`]
         """
         return self._users
 
@@ -63,7 +70,7 @@ class ListAuthorizedSqlserverDbUsersResponse(SdkResponse):
         用户及相关权限。
 
         :param users: The users of this ListAuthorizedSqlserverDbUsersResponse.
-        :type: list[UserWithPrivilege]
+        :type users: list[:class:`huaweicloudsdkrds.v3.UserWithPrivilege`]
         """
         self._users = users
 
@@ -85,7 +92,7 @@ class ListAuthorizedSqlserverDbUsersResponse(SdkResponse):
         总数。
 
         :param total_count: The total_count of this ListAuthorizedSqlserverDbUsersResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 

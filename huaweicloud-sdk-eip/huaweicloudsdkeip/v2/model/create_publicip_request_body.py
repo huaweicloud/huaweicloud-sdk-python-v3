@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreatePublicipRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreatePublicipRequestBody:
     }
 
     def __init__(self, bandwidth=None, enterprise_project_id=None, publicip=None):
-        """CreatePublicipRequestBody - a model defined in huaweicloud sdk"""
+        """CreatePublicipRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param bandwidth: 
+        :type bandwidth: :class:`huaweicloudsdkeip.v2.CreatePublicipBandwidthOption`
+        :param enterprise_project_id: 企业项目ID。最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。  创建弹性公网IP时，给弹性公网IP绑定企业项目ID。  不指定该参数时，默认值是 0
+        :type enterprise_project_id: str
+        :param publicip: 
+        :type publicip: :class:`huaweicloudsdkeip.v2.CreatePublicipOption`
+        """
         
         
 
@@ -54,7 +63,7 @@ class CreatePublicipRequestBody:
 
 
         :return: The bandwidth of this CreatePublicipRequestBody.
-        :rtype: CreatePublicipBandwidthOption
+        :rtype: :class:`huaweicloudsdkeip.v2.CreatePublicipBandwidthOption`
         """
         return self._bandwidth
 
@@ -64,7 +73,7 @@ class CreatePublicipRequestBody:
 
 
         :param bandwidth: The bandwidth of this CreatePublicipRequestBody.
-        :type: CreatePublicipBandwidthOption
+        :type bandwidth: :class:`huaweicloudsdkeip.v2.CreatePublicipBandwidthOption`
         """
         self._bandwidth = bandwidth
 
@@ -86,7 +95,7 @@ class CreatePublicipRequestBody:
         企业项目ID。最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。  创建弹性公网IP时，给弹性公网IP绑定企业项目ID。  不指定该参数时，默认值是 0
 
         :param enterprise_project_id: The enterprise_project_id of this CreatePublicipRequestBody.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -96,7 +105,7 @@ class CreatePublicipRequestBody:
 
 
         :return: The publicip of this CreatePublicipRequestBody.
-        :rtype: CreatePublicipOption
+        :rtype: :class:`huaweicloudsdkeip.v2.CreatePublicipOption`
         """
         return self._publicip
 
@@ -106,7 +115,7 @@ class CreatePublicipRequestBody:
 
 
         :param publicip: The publicip of this CreatePublicipRequestBody.
-        :type: CreatePublicipOption
+        :type publicip: :class:`huaweicloudsdkeip.v2.CreatePublicipOption`
         """
         self._publicip = publicip
 

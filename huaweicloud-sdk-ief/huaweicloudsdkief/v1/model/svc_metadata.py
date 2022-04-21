@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SvcMetadata:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class SvcMetadata:
     }
 
     def __init__(self, labels=None, name=None):
-        """SvcMetadata - a model defined in huaweicloud sdk"""
+        """SvcMetadata
+
+        The model defined in huaweicloud sdk
+
+        :param labels: 自定义标签属性列表
+        :type labels: dict(str, str)
+        :param name: 服务名称，只允许英文小写字母、数字、中划线，最大长度64，英文小写字母开头，数字或小写字母结尾
+        :type name: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class SvcMetadata:
         自定义标签属性列表
 
         :param labels: The labels of this SvcMetadata.
-        :type: dict(str, str)
+        :type labels: dict(str, str)
         """
         self._labels = labels
 
@@ -84,7 +91,7 @@ class SvcMetadata:
         服务名称，只允许英文小写字母、数字、中划线，最大长度64，英文小写字母开头，数字或小写字母结尾
 
         :param name: The name of this SvcMetadata.
-        :type: str
+        :type name: str
         """
         self._name = name
 

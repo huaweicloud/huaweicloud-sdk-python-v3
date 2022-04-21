@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCustomerOrdersRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class ListCustomerOrdersRequest:
     }
 
     def __init__(self, order_id=None, customer_id=None, create_time_begin=None, create_time_end=None, service_type_code=None, status=None, order_type=None, limit=None, offset=None, order_by=None, payment_time_begin=None, payment_time_end=None):
-        """ListCustomerOrdersRequest - a model defined in huaweicloud sdk"""
+        """ListCustomerOrdersRequest
+
+        The model defined in huaweicloud sdk
+
+        :param order_id: 订单ID。 说明： 使用特殊字符进行查询的时候，请注意进行URL编码转换，如“%”的转码应为“%25”。
+        :type order_id: str
+        :param customer_id: 客户账号ID。您可以调用[查询客户列表](https://support.huaweicloud.com/intl/zh-cn/api-bpconsole/mc_00021.html)接口获取customer_id。
+        :type customer_id: str
+        :param create_time_begin: 订单创建开始时间。UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。
+        :type create_time_begin: str
+        :param create_time_end: 订单创建结束时间。UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。
+        :type create_time_end: str
+        :param service_type_code: 云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
+        :type service_type_code: str
+        :param status: 订单状态：1：待审核3：处理中4：已取消5：已完成6：待支付9：待确认
+        :type status: int
+        :param order_type: 订单类型：1：开通2：续订3：变更4：退订11：按需转包年/包月13：试用14：转商用15：费用调整
+        :type order_type: str
+        :param limit: 每次查询的订单数量，默认值为10。
+        :type limit: int
+        :param offset: 偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset &#x3D; 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
+        :type offset: int
+        :param order_by: 查询的订单列表排序。支持按照创建时间进行排序，带-表示倒序。创建时间：升序为createTime，倒序为-createTime。
+        :type order_by: str
+        :param payment_time_begin: 订单支付开始时间。UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。
+        :type payment_time_begin: str
+        :param payment_time_end: 订单支付结束时间。UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。
+        :type payment_time_end: str
+        """
         
         
 
@@ -113,7 +140,7 @@ class ListCustomerOrdersRequest:
         订单ID。 说明： 使用特殊字符进行查询的时候，请注意进行URL编码转换，如“%”的转码应为“%25”。
 
         :param order_id: The order_id of this ListCustomerOrdersRequest.
-        :type: str
+        :type order_id: str
         """
         self._order_id = order_id
 
@@ -135,7 +162,7 @@ class ListCustomerOrdersRequest:
         客户账号ID。您可以调用[查询客户列表](https://support.huaweicloud.com/intl/zh-cn/api-bpconsole/mc_00021.html)接口获取customer_id。
 
         :param customer_id: The customer_id of this ListCustomerOrdersRequest.
-        :type: str
+        :type customer_id: str
         """
         self._customer_id = customer_id
 
@@ -157,7 +184,7 @@ class ListCustomerOrdersRequest:
         订单创建开始时间。UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。
 
         :param create_time_begin: The create_time_begin of this ListCustomerOrdersRequest.
-        :type: str
+        :type create_time_begin: str
         """
         self._create_time_begin = create_time_begin
 
@@ -179,7 +206,7 @@ class ListCustomerOrdersRequest:
         订单创建结束时间。UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。
 
         :param create_time_end: The create_time_end of this ListCustomerOrdersRequest.
-        :type: str
+        :type create_time_end: str
         """
         self._create_time_end = create_time_end
 
@@ -201,7 +228,7 @@ class ListCustomerOrdersRequest:
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
         :param service_type_code: The service_type_code of this ListCustomerOrdersRequest.
-        :type: str
+        :type service_type_code: str
         """
         self._service_type_code = service_type_code
 
@@ -223,7 +250,7 @@ class ListCustomerOrdersRequest:
         订单状态：1：待审核3：处理中4：已取消5：已完成6：待支付9：待确认
 
         :param status: The status of this ListCustomerOrdersRequest.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -245,7 +272,7 @@ class ListCustomerOrdersRequest:
         订单类型：1：开通2：续订3：变更4：退订11：按需转包年/包月13：试用14：转商用15：费用调整
 
         :param order_type: The order_type of this ListCustomerOrdersRequest.
-        :type: str
+        :type order_type: str
         """
         self._order_type = order_type
 
@@ -267,7 +294,7 @@ class ListCustomerOrdersRequest:
         每次查询的订单数量，默认值为10。
 
         :param limit: The limit of this ListCustomerOrdersRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -289,7 +316,7 @@ class ListCustomerOrdersRequest:
         偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
         :param offset: The offset of this ListCustomerOrdersRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -311,7 +338,7 @@ class ListCustomerOrdersRequest:
         查询的订单列表排序。支持按照创建时间进行排序，带-表示倒序。创建时间：升序为createTime，倒序为-createTime。
 
         :param order_by: The order_by of this ListCustomerOrdersRequest.
-        :type: str
+        :type order_by: str
         """
         self._order_by = order_by
 
@@ -333,7 +360,7 @@ class ListCustomerOrdersRequest:
         订单支付开始时间。UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。
 
         :param payment_time_begin: The payment_time_begin of this ListCustomerOrdersRequest.
-        :type: str
+        :type payment_time_begin: str
         """
         self._payment_time_begin = payment_time_begin
 
@@ -355,7 +382,7 @@ class ListCustomerOrdersRequest:
         订单支付结束时间。UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。
 
         :param payment_time_end: The payment_time_end of this ListCustomerOrdersRequest.
-        :type: str
+        :type payment_time_end: str
         """
         self._payment_time_end = payment_time_end
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListNodesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListNodesResponse(SdkResponse):
     }
 
     def __init__(self, kind=None, api_version=None, items=None):
-        """ListNodesResponse - a model defined in huaweicloud sdk"""
+        """ListNodesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param kind: API类型，固定值“List”
+        :type kind: str
+        :param api_version: API版本，固定值“v3”
+        :type api_version: str
+        :param items: 节点对象列表，包含了当前集群下所有节点的详细信息。可通过items.metadata.name下的值来找到对应的节点。
+        :type items: list[:class:`huaweicloudsdkcce.v3.Node`]
+        """
         
         super(ListNodesResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListNodesResponse(SdkResponse):
         API类型，固定值“List”
 
         :param kind: The kind of this ListNodesResponse.
-        :type: str
+        :type kind: str
         """
         self._kind = kind
 
@@ -90,7 +99,7 @@ class ListNodesResponse(SdkResponse):
         API版本，固定值“v3”
 
         :param api_version: The api_version of this ListNodesResponse.
-        :type: str
+        :type api_version: str
         """
         self._api_version = api_version
 
@@ -101,7 +110,7 @@ class ListNodesResponse(SdkResponse):
         节点对象列表，包含了当前集群下所有节点的详细信息。可通过items.metadata.name下的值来找到对应的节点。
 
         :return: The items of this ListNodesResponse.
-        :rtype: list[Node]
+        :rtype: list[:class:`huaweicloudsdkcce.v3.Node`]
         """
         return self._items
 
@@ -112,7 +121,7 @@ class ListNodesResponse(SdkResponse):
         节点对象列表，包含了当前集群下所有节点的详细信息。可通过items.metadata.name下的值来找到对应的节点。
 
         :param items: The items of this ListNodesResponse.
-        :type: list[Node]
+        :type items: list[:class:`huaweicloudsdkcce.v3.Node`]
         """
         self._items = items
 

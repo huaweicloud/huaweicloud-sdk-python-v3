@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PipelineStateStatus:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class PipelineStateStatus:
     }
 
     def __init__(self, id=None, name=None, type=None, start_time=None, end_time=None, elapsed_time=None, status=None, outcome=None, error_code=None, error_msg=None, children=None, detail_url=None):
-        """PipelineStateStatus - a model defined in huaweicloud sdk"""
+        """PipelineStateStatus
+
+        The model defined in huaweicloud sdk
+
+        :param id: 阶段或任务标识
+        :type id: str
+        :param name: 阶段或任务名称
+        :type name: str
+        :param type: 类别(阶段/任务)
+        :type type: str
+        :param start_time: 执行开始时间
+        :type start_time: str
+        :param end_time: 执行结束时间
+        :type end_time: str
+        :param elapsed_time: 运行耗时
+        :type elapsed_time: str
+        :param status: 运行状态
+        :type status: str
+        :param outcome: 运行结果
+        :type outcome: str
+        :param error_code: 错误码
+        :type error_code: str
+        :param error_msg: 错误信息
+        :type error_msg: str
+        :param children: 子任务运行信息(对任务来说是空的)
+        :type children: list[:class:`huaweicloudsdkcloudpipeline.v2.PipelineStateStatus`]
+        :param detail_url: 任务运行记录跳转链接
+        :type detail_url: str
+        """
         
         
 
@@ -101,7 +128,7 @@ class PipelineStateStatus:
         阶段或任务标识
 
         :param id: The id of this PipelineStateStatus.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -123,7 +150,7 @@ class PipelineStateStatus:
         阶段或任务名称
 
         :param name: The name of this PipelineStateStatus.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -145,7 +172,7 @@ class PipelineStateStatus:
         类别(阶段/任务)
 
         :param type: The type of this PipelineStateStatus.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -167,7 +194,7 @@ class PipelineStateStatus:
         执行开始时间
 
         :param start_time: The start_time of this PipelineStateStatus.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -189,7 +216,7 @@ class PipelineStateStatus:
         执行结束时间
 
         :param end_time: The end_time of this PipelineStateStatus.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -211,7 +238,7 @@ class PipelineStateStatus:
         运行耗时
 
         :param elapsed_time: The elapsed_time of this PipelineStateStatus.
-        :type: str
+        :type elapsed_time: str
         """
         self._elapsed_time = elapsed_time
 
@@ -233,7 +260,7 @@ class PipelineStateStatus:
         运行状态
 
         :param status: The status of this PipelineStateStatus.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -255,7 +282,7 @@ class PipelineStateStatus:
         运行结果
 
         :param outcome: The outcome of this PipelineStateStatus.
-        :type: str
+        :type outcome: str
         """
         self._outcome = outcome
 
@@ -277,7 +304,7 @@ class PipelineStateStatus:
         错误码
 
         :param error_code: The error_code of this PipelineStateStatus.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -299,7 +326,7 @@ class PipelineStateStatus:
         错误信息
 
         :param error_msg: The error_msg of this PipelineStateStatus.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 
@@ -310,7 +337,7 @@ class PipelineStateStatus:
         子任务运行信息(对任务来说是空的)
 
         :return: The children of this PipelineStateStatus.
-        :rtype: list[PipelineStateStatus]
+        :rtype: list[:class:`huaweicloudsdkcloudpipeline.v2.PipelineStateStatus`]
         """
         return self._children
 
@@ -321,7 +348,7 @@ class PipelineStateStatus:
         子任务运行信息(对任务来说是空的)
 
         :param children: The children of this PipelineStateStatus.
-        :type: list[PipelineStateStatus]
+        :type children: list[:class:`huaweicloudsdkcloudpipeline.v2.PipelineStateStatus`]
         """
         self._children = children
 
@@ -343,7 +370,7 @@ class PipelineStateStatus:
         任务运行记录跳转链接
 
         :param detail_url: The detail_url of this PipelineStateStatus.
-        :type: str
+        :type detail_url: str
         """
         self._detail_url = detail_url
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateDeployTaskByTemplateResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateDeployTaskByTemplateResponse(SdkResponse):
     }
 
     def __init__(self, task_name=None, task_id=None):
-        """CreateDeployTaskByTemplateResponse - a model defined in huaweicloud sdk"""
+        """CreateDeployTaskByTemplateResponse
+
+        The model defined in huaweicloud sdk
+
+        :param task_name: 部署任务名称
+        :type task_name: str
+        :param task_id: 部署任务id
+        :type task_id: str
+        """
         
         super(CreateDeployTaskByTemplateResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class CreateDeployTaskByTemplateResponse(SdkResponse):
         部署任务名称
 
         :param task_name: The task_name of this CreateDeployTaskByTemplateResponse.
-        :type: str
+        :type task_name: str
         """
         self._task_name = task_name
 
@@ -85,7 +92,7 @@ class CreateDeployTaskByTemplateResponse(SdkResponse):
         部署任务id
 
         :param task_id: The task_id of this CreateDeployTaskByTemplateResponse.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateOndemandClusterToPeriodResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateOndemandClusterToPeriodResponse(SdkResponse):
     }
 
     def __init__(self, order_id=None):
-        """UpdateOndemandClusterToPeriodResponse - a model defined in huaweicloud sdk"""
+        """UpdateOndemandClusterToPeriodResponse
+
+        The model defined in huaweicloud sdk
+
+        :param order_id: 订单ID（此订单类型为“新购”）。
+        :type order_id: str
+        """
         
         super(UpdateOndemandClusterToPeriodResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class UpdateOndemandClusterToPeriodResponse(SdkResponse):
         订单ID（此订单类型为“新购”）。
 
         :param order_id: The order_id of this UpdateOndemandClusterToPeriodResponse.
-        :type: str
+        :type order_id: str
         """
         self._order_id = order_id
 

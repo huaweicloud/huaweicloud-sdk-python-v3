@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateIndividualStreamJobRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class CreateIndividualStreamJobRequest:
     }
 
     def __init__(self, content_type=None, authorization=None, x_sdk_date=None, x_project_id=None, app_id=None, body=None):
-        """CreateIndividualStreamJobRequest - a model defined in huaweicloud sdk"""
+        """CreateIndividualStreamJobRequest
+
+        The model defined in huaweicloud sdk
+
+        :param content_type: 内容类型。
+        :type content_type: str
+        :param authorization: 使用AK/SK方式认证时必选，携带的鉴权信息。
+        :type authorization: str
+        :param x_sdk_date: 使用AK/SK方式认证时必选，请求的发生时间。
+        :type x_sdk_date: str
+        :param x_project_id: 使用AK/SK方式认证时必选，携带项目ID信息。
+        :type x_project_id: str
+        :param app_id: 应用id
+        :type app_id: str
+        :param body: Body of the CreateIndividualStreamJobRequest
+        :type body: :class:`huaweicloudsdkcloudrtc.v2.IndividualStreamJobReq`
+        """
         
         
 
@@ -81,7 +96,7 @@ class CreateIndividualStreamJobRequest:
         内容类型。
 
         :param content_type: The content_type of this CreateIndividualStreamJobRequest.
-        :type: str
+        :type content_type: str
         """
         self._content_type = content_type
 
@@ -103,7 +118,7 @@ class CreateIndividualStreamJobRequest:
         使用AK/SK方式认证时必选，携带的鉴权信息。
 
         :param authorization: The authorization of this CreateIndividualStreamJobRequest.
-        :type: str
+        :type authorization: str
         """
         self._authorization = authorization
 
@@ -125,7 +140,7 @@ class CreateIndividualStreamJobRequest:
         使用AK/SK方式认证时必选，请求的发生时间。
 
         :param x_sdk_date: The x_sdk_date of this CreateIndividualStreamJobRequest.
-        :type: str
+        :type x_sdk_date: str
         """
         self._x_sdk_date = x_sdk_date
 
@@ -147,7 +162,7 @@ class CreateIndividualStreamJobRequest:
         使用AK/SK方式认证时必选，携带项目ID信息。
 
         :param x_project_id: The x_project_id of this CreateIndividualStreamJobRequest.
-        :type: str
+        :type x_project_id: str
         """
         self._x_project_id = x_project_id
 
@@ -169,7 +184,7 @@ class CreateIndividualStreamJobRequest:
         应用id
 
         :param app_id: The app_id of this CreateIndividualStreamJobRequest.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -179,7 +194,7 @@ class CreateIndividualStreamJobRequest:
 
 
         :return: The body of this CreateIndividualStreamJobRequest.
-        :rtype: IndividualStreamJobReq
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.IndividualStreamJobReq`
         """
         return self._body
 
@@ -189,7 +204,7 @@ class CreateIndividualStreamJobRequest:
 
 
         :param body: The body of this CreateIndividualStreamJobRequest.
-        :type: IndividualStreamJobReq
+        :type body: :class:`huaweicloudsdkcloudrtc.v2.IndividualStreamJobReq`
         """
         self._body = body
 

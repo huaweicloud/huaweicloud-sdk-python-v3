@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PolicyOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -64,7 +63,47 @@ class PolicyOption:
     }
 
     def __init__(self, webattack=None, common=None, crawler=None, crawler_engine=None, crawler_scanner=None, crawler_script=None, crawler_other=None, webshell=None, cc=None, custom=None, whiteblackip=None, geoip=None, ignore=None, privacy=None, antitamper=None, antileakage=None, bot_enable=None, modulex_enabled=None):
-        """PolicyOption - a model defined in huaweicloud sdk"""
+        """PolicyOption
+
+        The model defined in huaweicloud sdk
+
+        :param webattack: 基础防护是否开启
+        :type webattack: bool
+        :param common: 常规检测是否开启
+        :type common: bool
+        :param crawler: 反爬虫是否开启
+        :type crawler: bool
+        :param crawler_engine: 搜索engine是否开启
+        :type crawler_engine: bool
+        :param crawler_scanner: 反爬虫检测是否开启
+        :type crawler_scanner: bool
+        :param crawler_script: 脚本反爬虫是否开启
+        :type crawler_script: bool
+        :param crawler_other: 其他爬虫是否开启
+        :type crawler_other: bool
+        :param webshell: Webshell检测是否开启
+        :type webshell: bool
+        :param cc: cc规则是否开启
+        :type cc: bool
+        :param custom: 精准防护是否开启
+        :type custom: bool
+        :param whiteblackip: 黑白名单防护是否开启
+        :type whiteblackip: bool
+        :param geoip: 地理位置访问控制规则是否开启
+        :type geoip: bool
+        :param ignore: 误报屏蔽是否开启
+        :type ignore: bool
+        :param privacy: 隐私屏蔽是否开启
+        :type privacy: bool
+        :param antitamper: 网页防篡改规则是否开启
+        :type antitamper: bool
+        :param antileakage: 防敏感信息泄露规则是否开启
+        :type antileakage: bool
+        :param bot_enable: 防网络机器人攻击是否开启
+        :type bot_enable: bool
+        :param modulex_enabled: modulex智能cc防护是否开启，该特性是公测特性，在公测期间，只支持仅记录模式。
+        :type modulex_enabled: bool
+        """
         
         
 
@@ -143,7 +182,7 @@ class PolicyOption:
         基础防护是否开启
 
         :param webattack: The webattack of this PolicyOption.
-        :type: bool
+        :type webattack: bool
         """
         self._webattack = webattack
 
@@ -165,7 +204,7 @@ class PolicyOption:
         常规检测是否开启
 
         :param common: The common of this PolicyOption.
-        :type: bool
+        :type common: bool
         """
         self._common = common
 
@@ -187,7 +226,7 @@ class PolicyOption:
         反爬虫是否开启
 
         :param crawler: The crawler of this PolicyOption.
-        :type: bool
+        :type crawler: bool
         """
         self._crawler = crawler
 
@@ -209,7 +248,7 @@ class PolicyOption:
         搜索engine是否开启
 
         :param crawler_engine: The crawler_engine of this PolicyOption.
-        :type: bool
+        :type crawler_engine: bool
         """
         self._crawler_engine = crawler_engine
 
@@ -231,7 +270,7 @@ class PolicyOption:
         反爬虫检测是否开启
 
         :param crawler_scanner: The crawler_scanner of this PolicyOption.
-        :type: bool
+        :type crawler_scanner: bool
         """
         self._crawler_scanner = crawler_scanner
 
@@ -253,7 +292,7 @@ class PolicyOption:
         脚本反爬虫是否开启
 
         :param crawler_script: The crawler_script of this PolicyOption.
-        :type: bool
+        :type crawler_script: bool
         """
         self._crawler_script = crawler_script
 
@@ -275,7 +314,7 @@ class PolicyOption:
         其他爬虫是否开启
 
         :param crawler_other: The crawler_other of this PolicyOption.
-        :type: bool
+        :type crawler_other: bool
         """
         self._crawler_other = crawler_other
 
@@ -297,7 +336,7 @@ class PolicyOption:
         Webshell检测是否开启
 
         :param webshell: The webshell of this PolicyOption.
-        :type: bool
+        :type webshell: bool
         """
         self._webshell = webshell
 
@@ -319,7 +358,7 @@ class PolicyOption:
         cc规则是否开启
 
         :param cc: The cc of this PolicyOption.
-        :type: bool
+        :type cc: bool
         """
         self._cc = cc
 
@@ -341,7 +380,7 @@ class PolicyOption:
         精准防护是否开启
 
         :param custom: The custom of this PolicyOption.
-        :type: bool
+        :type custom: bool
         """
         self._custom = custom
 
@@ -363,7 +402,7 @@ class PolicyOption:
         黑白名单防护是否开启
 
         :param whiteblackip: The whiteblackip of this PolicyOption.
-        :type: bool
+        :type whiteblackip: bool
         """
         self._whiteblackip = whiteblackip
 
@@ -385,7 +424,7 @@ class PolicyOption:
         地理位置访问控制规则是否开启
 
         :param geoip: The geoip of this PolicyOption.
-        :type: bool
+        :type geoip: bool
         """
         self._geoip = geoip
 
@@ -407,7 +446,7 @@ class PolicyOption:
         误报屏蔽是否开启
 
         :param ignore: The ignore of this PolicyOption.
-        :type: bool
+        :type ignore: bool
         """
         self._ignore = ignore
 
@@ -429,7 +468,7 @@ class PolicyOption:
         隐私屏蔽是否开启
 
         :param privacy: The privacy of this PolicyOption.
-        :type: bool
+        :type privacy: bool
         """
         self._privacy = privacy
 
@@ -451,7 +490,7 @@ class PolicyOption:
         网页防篡改规则是否开启
 
         :param antitamper: The antitamper of this PolicyOption.
-        :type: bool
+        :type antitamper: bool
         """
         self._antitamper = antitamper
 
@@ -473,7 +512,7 @@ class PolicyOption:
         防敏感信息泄露规则是否开启
 
         :param antileakage: The antileakage of this PolicyOption.
-        :type: bool
+        :type antileakage: bool
         """
         self._antileakage = antileakage
 
@@ -495,7 +534,7 @@ class PolicyOption:
         防网络机器人攻击是否开启
 
         :param bot_enable: The bot_enable of this PolicyOption.
-        :type: bool
+        :type bot_enable: bool
         """
         self._bot_enable = bot_enable
 
@@ -517,7 +556,7 @@ class PolicyOption:
         modulex智能cc防护是否开启，该特性是公测特性，在公测期间，只支持仅记录模式。
 
         :param modulex_enabled: The modulex_enabled of this PolicyOption.
-        :type: bool
+        :type modulex_enabled: bool
         """
         self._modulex_enabled = modulex_enabled
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RepositoryHookRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class RepositoryHookRequest:
     }
 
     def __init__(self, hook_url=None, service=None, token=None, hook_events=None):
-        """RepositoryHookRequest - a model defined in huaweicloud sdk"""
+        """RepositoryHookRequest
+
+        The model defined in huaweicloud sdk
+
+        :param hook_url: 触发url
+        :type hook_url: str
+        :param service: 事件来源
+        :type service: str
+        :param token: 安全令牌
+        :type token: str
+        :param hook_events: 触发事件
+        :type hook_events: list[str]
+        """
         
         
 
@@ -70,7 +81,7 @@ class RepositoryHookRequest:
         触发url
 
         :param hook_url: The hook_url of this RepositoryHookRequest.
-        :type: str
+        :type hook_url: str
         """
         self._hook_url = hook_url
 
@@ -92,7 +103,7 @@ class RepositoryHookRequest:
         事件来源
 
         :param service: The service of this RepositoryHookRequest.
-        :type: str
+        :type service: str
         """
         self._service = service
 
@@ -114,7 +125,7 @@ class RepositoryHookRequest:
         安全令牌
 
         :param token: The token of this RepositoryHookRequest.
-        :type: str
+        :type token: str
         """
         self._token = token
 
@@ -136,7 +147,7 @@ class RepositoryHookRequest:
         触发事件
 
         :param hook_events: The hook_events of this RepositoryHookRequest.
-        :type: list[str]
+        :type hook_events: list[str]
         """
         self._hook_events = hook_events
 

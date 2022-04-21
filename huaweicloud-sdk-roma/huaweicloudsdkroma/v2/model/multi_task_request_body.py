@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MultiTaskRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class MultiTaskRequestBody:
     }
 
     def __init__(self, task_name=None, task_id=None, task_type=None, description=None, task_tag=None, operation_types=None, source_app_id=None, target_app_id=None):
-        """MultiTaskRequestBody - a model defined in huaweicloud sdk"""
+        """MultiTaskRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param task_name: 任务名称，只能以字母、数字为开头，包含字母、数字和 . _ -  3~100个字符
+        :type task_name: str
+        :param task_id: 任务ID，可以为空
+        :type task_id: str
+        :param task_type: 任务类型，目前组合任务仅支持实时任务 - REALTIME (实时) - TIMING (定时)
+        :type task_type: str
+        :param description: 描述信息
+        :type description: str
+        :param task_tag: 任务标签,只能包含字母、数字、中划线、下划线
+        :type task_tag: str
+        :param operation_types: 需要支持的操作类型，支持多选，至少需要选择以下一种： - INSERT - UPDATE - DELETE
+        :type operation_types: list[str]
+        :param source_app_id: 源端数据源所属集成应用ID
+        :type source_app_id: str
+        :param target_app_id: 目标端数据源所属集成应用ID
+        :type target_app_id: str
+        """
         
         
 
@@ -93,7 +112,7 @@ class MultiTaskRequestBody:
         任务名称，只能以字母、数字为开头，包含字母、数字和 . _ -  3~100个字符
 
         :param task_name: The task_name of this MultiTaskRequestBody.
-        :type: str
+        :type task_name: str
         """
         self._task_name = task_name
 
@@ -115,7 +134,7 @@ class MultiTaskRequestBody:
         任务ID，可以为空
 
         :param task_id: The task_id of this MultiTaskRequestBody.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -137,7 +156,7 @@ class MultiTaskRequestBody:
         任务类型，目前组合任务仅支持实时任务 - REALTIME (实时) - TIMING (定时)
 
         :param task_type: The task_type of this MultiTaskRequestBody.
-        :type: str
+        :type task_type: str
         """
         self._task_type = task_type
 
@@ -159,7 +178,7 @@ class MultiTaskRequestBody:
         描述信息
 
         :param description: The description of this MultiTaskRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -181,7 +200,7 @@ class MultiTaskRequestBody:
         任务标签,只能包含字母、数字、中划线、下划线
 
         :param task_tag: The task_tag of this MultiTaskRequestBody.
-        :type: str
+        :type task_tag: str
         """
         self._task_tag = task_tag
 
@@ -203,7 +222,7 @@ class MultiTaskRequestBody:
         需要支持的操作类型，支持多选，至少需要选择以下一种： - INSERT - UPDATE - DELETE
 
         :param operation_types: The operation_types of this MultiTaskRequestBody.
-        :type: list[str]
+        :type operation_types: list[str]
         """
         self._operation_types = operation_types
 
@@ -225,7 +244,7 @@ class MultiTaskRequestBody:
         源端数据源所属集成应用ID
 
         :param source_app_id: The source_app_id of this MultiTaskRequestBody.
-        :type: str
+        :type source_app_id: str
         """
         self._source_app_id = source_app_id
 
@@ -247,7 +266,7 @@ class MultiTaskRequestBody:
         目标端数据源所属集成应用ID
 
         :param target_app_id: The target_app_id of this MultiTaskRequestBody.
-        :type: str
+        :type target_app_id: str
         """
         self._target_app_id = target_app_id
 

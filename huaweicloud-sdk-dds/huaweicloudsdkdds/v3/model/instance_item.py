@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InstanceItem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class InstanceItem:
     }
 
     def __init__(self, instance_id=None, instance_name=None, tags=None):
-        """InstanceItem - a model defined in huaweicloud sdk"""
+        """InstanceItem
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param instance_name: 实例名称
+        :type instance_name: str
+        :param tags: 标签列表。如果没有标签，默认为空数组。
+        :type tags: list[:class:`huaweicloudsdkdds.v3.InstanceItemTagItem`]
+        """
         
         
 
@@ -65,7 +74,7 @@ class InstanceItem:
         实例ID。
 
         :param instance_id: The instance_id of this InstanceItem.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -87,7 +96,7 @@ class InstanceItem:
         实例名称
 
         :param instance_name: The instance_name of this InstanceItem.
-        :type: str
+        :type instance_name: str
         """
         self._instance_name = instance_name
 
@@ -98,7 +107,7 @@ class InstanceItem:
         标签列表。如果没有标签，默认为空数组。
 
         :return: The tags of this InstanceItem.
-        :rtype: list[InstanceItemTagItem]
+        :rtype: list[:class:`huaweicloudsdkdds.v3.InstanceItemTagItem`]
         """
         return self._tags
 
@@ -109,7 +118,7 @@ class InstanceItem:
         标签列表。如果没有标签，默认为空数组。
 
         :param tags: The tags of this InstanceItem.
-        :type: list[InstanceItemTagItem]
+        :type tags: list[:class:`huaweicloudsdkdds.v3.InstanceItemTagItem`]
         """
         self._tags = tags
 

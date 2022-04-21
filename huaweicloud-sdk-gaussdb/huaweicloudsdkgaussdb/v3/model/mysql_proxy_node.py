@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MysqlProxyNode:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class MysqlProxyNode:
     }
 
     def __init__(self, id=None, instance_id=None, status=None, name=None, weight=None, available_zones=None):
-        """MysqlProxyNode - a model defined in huaweicloud sdk"""
+        """MysqlProxyNode
+
+        The model defined in huaweicloud sdk
+
+        :param id: 节点id。
+        :type id: str
+        :param instance_id: 实例id。
+        :type instance_id: str
+        :param status: 节点状态。
+        :type status: str
+        :param name: 节点名称。
+        :type name: str
+        :param weight: 节点读写分离权重。
+        :type weight: int
+        :param available_zones: 可用区信息。
+        :type available_zones: list[:class:`huaweicloudsdkgaussdb.v3.MysqlProxyAvailable`]
+        """
         
         
 
@@ -83,7 +98,7 @@ class MysqlProxyNode:
         节点id。
 
         :param id: The id of this MysqlProxyNode.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -105,7 +120,7 @@ class MysqlProxyNode:
         实例id。
 
         :param instance_id: The instance_id of this MysqlProxyNode.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -127,7 +142,7 @@ class MysqlProxyNode:
         节点状态。
 
         :param status: The status of this MysqlProxyNode.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -149,7 +164,7 @@ class MysqlProxyNode:
         节点名称。
 
         :param name: The name of this MysqlProxyNode.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -171,7 +186,7 @@ class MysqlProxyNode:
         节点读写分离权重。
 
         :param weight: The weight of this MysqlProxyNode.
-        :type: int
+        :type weight: int
         """
         self._weight = weight
 
@@ -182,7 +197,7 @@ class MysqlProxyNode:
         可用区信息。
 
         :return: The available_zones of this MysqlProxyNode.
-        :rtype: list[MysqlProxyAvailable]
+        :rtype: list[:class:`huaweicloudsdkgaussdb.v3.MysqlProxyAvailable`]
         """
         return self._available_zones
 
@@ -193,7 +208,7 @@ class MysqlProxyNode:
         可用区信息。
 
         :param available_zones: The available_zones of this MysqlProxyNode.
-        :type: list[MysqlProxyAvailable]
+        :type available_zones: list[:class:`huaweicloudsdkgaussdb.v3.MysqlProxyAvailable`]
         """
         self._available_zones = available_zones
 

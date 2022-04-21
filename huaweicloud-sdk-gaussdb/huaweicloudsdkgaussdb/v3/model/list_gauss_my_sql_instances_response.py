@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListGaussMySqlInstancesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListGaussMySqlInstancesResponse(SdkResponse):
     }
 
     def __init__(self, instances=None, total_count=None):
-        """ListGaussMySqlInstancesResponse - a model defined in huaweicloud sdk"""
+        """ListGaussMySqlInstancesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param instances: 实例列表信息。
+        :type instances: list[:class:`huaweicloudsdkgaussdb.v3.MysqlInstanceListInfo`]
+        :param total_count: 总记录数。
+        :type total_count: int
+        """
         
         super(ListGaussMySqlInstancesResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListGaussMySqlInstancesResponse(SdkResponse):
         实例列表信息。
 
         :return: The instances of this ListGaussMySqlInstancesResponse.
-        :rtype: list[MysqlInstanceListInfo]
+        :rtype: list[:class:`huaweicloudsdkgaussdb.v3.MysqlInstanceListInfo`]
         """
         return self._instances
 
@@ -63,7 +70,7 @@ class ListGaussMySqlInstancesResponse(SdkResponse):
         实例列表信息。
 
         :param instances: The instances of this ListGaussMySqlInstancesResponse.
-        :type: list[MysqlInstanceListInfo]
+        :type instances: list[:class:`huaweicloudsdkgaussdb.v3.MysqlInstanceListInfo`]
         """
         self._instances = instances
 
@@ -85,7 +92,7 @@ class ListGaussMySqlInstancesResponse(SdkResponse):
         总记录数。
 
         :param total_count: The total_count of this ListGaussMySqlInstancesResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 

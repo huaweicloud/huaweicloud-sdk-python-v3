@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateAntiTamperRulesRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateAntiTamperRulesRequestBody:
     }
 
     def __init__(self, hostname=None, url=None, description=None):
-        """CreateAntiTamperRulesRequestBody - a model defined in huaweicloud sdk"""
+        """CreateAntiTamperRulesRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param hostname: 防护网站，查询云模式防护域名列表（ListHost）接口获取防护域名，响应体中的的hostname字段
+        :type hostname: str
+        :param url: 防篡改规则防护的url，需要填写标准的url格式，例如/admin/xxx或者/admin/*,以\&quot;*\&quot;号结尾代表路径前缀
+        :type url: str
+        :param description: 规则描述
+        :type description: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class CreateAntiTamperRulesRequestBody:
         防护网站，查询云模式防护域名列表（ListHost）接口获取防护域名，响应体中的的hostname字段
 
         :param hostname: The hostname of this CreateAntiTamperRulesRequestBody.
-        :type: str
+        :type hostname: str
         """
         self._hostname = hostname
 
@@ -88,7 +97,7 @@ class CreateAntiTamperRulesRequestBody:
         防篡改规则防护的url，需要填写标准的url格式，例如/admin/xxx或者/admin/*,以\"*\"号结尾代表路径前缀
 
         :param url: The url of this CreateAntiTamperRulesRequestBody.
-        :type: str
+        :type url: str
         """
         self._url = url
 
@@ -110,7 +119,7 @@ class CreateAntiTamperRulesRequestBody:
         规则描述
 
         :param description: The description of this CreateAntiTamperRulesRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 

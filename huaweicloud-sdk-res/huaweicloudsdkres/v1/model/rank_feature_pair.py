@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RankFeaturePair:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class RankFeaturePair:
     }
 
     def __init__(self, feature_name_a=None, feature_name_b=None, weight=None):
-        """RankFeaturePair - a model defined in huaweicloud sdk"""
+        """RankFeaturePair
+
+        The model defined in huaweicloud sdk
+
+        :param feature_name_a: 待推荐对象的属性。
+        :type feature_name_a: str
+        :param feature_name_b: 被推荐对象的属性。
+        :type feature_name_b: str
+        :param weight: 权重。
+        :type weight: float
+        """
         
         
 
@@ -68,7 +77,7 @@ class RankFeaturePair:
         待推荐对象的属性。
 
         :param feature_name_a: The feature_name_a of this RankFeaturePair.
-        :type: str
+        :type feature_name_a: str
         """
         self._feature_name_a = feature_name_a
 
@@ -90,7 +99,7 @@ class RankFeaturePair:
         被推荐对象的属性。
 
         :param feature_name_b: The feature_name_b of this RankFeaturePair.
-        :type: str
+        :type feature_name_b: str
         """
         self._feature_name_b = feature_name_b
 
@@ -112,7 +121,7 @@ class RankFeaturePair:
         权重。
 
         :param weight: The weight of this RankFeaturePair.
-        :type: float
+        :type weight: float
         """
         self._weight = weight
 

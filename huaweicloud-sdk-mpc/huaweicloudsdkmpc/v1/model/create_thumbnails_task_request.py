@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateThumbnailsTaskRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateThumbnailsTaskRequest:
     }
 
     def __init__(self, body=None):
-        """CreateThumbnailsTaskRequest - a model defined in huaweicloud sdk"""
+        """CreateThumbnailsTaskRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateThumbnailsTaskRequest
+        :type body: :class:`huaweicloudsdkmpc.v1.CreateThumbReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateThumbnailsTaskRequest:
 
 
         :return: The body of this CreateThumbnailsTaskRequest.
-        :rtype: CreateThumbReq
+        :rtype: :class:`huaweicloudsdkmpc.v1.CreateThumbReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateThumbnailsTaskRequest:
 
 
         :param body: The body of this CreateThumbnailsTaskRequest.
-        :type: CreateThumbReq
+        :type body: :class:`huaweicloudsdkmpc.v1.CreateThumbReq`
         """
         self._body = body
 

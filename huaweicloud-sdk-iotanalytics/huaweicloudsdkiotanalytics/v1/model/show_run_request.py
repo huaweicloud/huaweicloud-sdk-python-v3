@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowRunRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowRunRequest:
     }
 
     def __init__(self, job_id=None, run_id=None, with_details=None):
-        """ShowRunRequest - a model defined in huaweicloud sdk"""
+        """ShowRunRequest
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 作业ID。
+        :type job_id: str
+        :param run_id: 作业运行ID。
+        :type run_id: str
+        :param with_details: 是否查询作业详情。true：查询；false：不查询。details属性为空。默认为false。
+        :type with_details: bool
+        """
         
         
 
@@ -66,7 +75,7 @@ class ShowRunRequest:
         作业ID。
 
         :param job_id: The job_id of this ShowRunRequest.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -88,7 +97,7 @@ class ShowRunRequest:
         作业运行ID。
 
         :param run_id: The run_id of this ShowRunRequest.
-        :type: str
+        :type run_id: str
         """
         self._run_id = run_id
 
@@ -110,7 +119,7 @@ class ShowRunRequest:
         是否查询作业详情。true：查询；false：不查询。details属性为空。默认为false。
 
         :param with_details: The with_details of this ShowRunRequest.
-        :type: bool
+        :type with_details: bool
         """
         self._with_details = with_details
 

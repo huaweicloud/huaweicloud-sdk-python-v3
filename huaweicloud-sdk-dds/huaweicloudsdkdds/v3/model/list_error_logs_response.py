@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListErrorLogsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListErrorLogsResponse(SdkResponse):
     }
 
     def __init__(self, error_log_list=None, total_record=None):
-        """ListErrorLogsResponse - a model defined in huaweicloud sdk"""
+        """ListErrorLogsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param error_log_list: 具体信息。
+        :type error_log_list: list[:class:`huaweicloudsdkdds.v3.ErrorlogResult`]
+        :param total_record: 数据库版本总记录数。
+        :type total_record: int
+        """
         
         super(ListErrorLogsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListErrorLogsResponse(SdkResponse):
         具体信息。
 
         :return: The error_log_list of this ListErrorLogsResponse.
-        :rtype: list[ErrorlogResult]
+        :rtype: list[:class:`huaweicloudsdkdds.v3.ErrorlogResult`]
         """
         return self._error_log_list
 
@@ -63,7 +70,7 @@ class ListErrorLogsResponse(SdkResponse):
         具体信息。
 
         :param error_log_list: The error_log_list of this ListErrorLogsResponse.
-        :type: list[ErrorlogResult]
+        :type error_log_list: list[:class:`huaweicloudsdkdds.v3.ErrorlogResult`]
         """
         self._error_log_list = error_log_list
 
@@ -85,7 +92,7 @@ class ListErrorLogsResponse(SdkResponse):
         数据库版本总记录数。
 
         :param total_record: The total_record of this ListErrorLogsResponse.
-        :type: int
+        :type total_record: int
         """
         self._total_record = total_record
 

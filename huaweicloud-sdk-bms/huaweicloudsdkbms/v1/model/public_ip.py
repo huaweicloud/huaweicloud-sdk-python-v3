@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PublicIp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class PublicIp:
     }
 
     def __init__(self, id=None, eip=None):
-        """PublicIp - a model defined in huaweicloud sdk"""
+        """PublicIp
+
+        The model defined in huaweicloud sdk
+
+        :param id: 创建裸金属服务器分配已有弹性公网IP时，分配的弹性公网IP的ID，UUID格式。弹性公网IP的ID可以从网络控制台或者参考《虚拟私有云API参考》的“查询弹性公网IP列表”章节获取。约束：只能分配状态（status）为DOWN的弹性公网IP。批量创建裸金属服务器时，不能使用已有弹性公网IP，即不支持此参数。
+        :type id: str
+        :param eip: 
+        :type eip: :class:`huaweicloudsdkbms.v1.Eip`
+        """
         
         
 
@@ -63,7 +70,7 @@ class PublicIp:
         创建裸金属服务器分配已有弹性公网IP时，分配的弹性公网IP的ID，UUID格式。弹性公网IP的ID可以从网络控制台或者参考《虚拟私有云API参考》的“查询弹性公网IP列表”章节获取。约束：只能分配状态（status）为DOWN的弹性公网IP。批量创建裸金属服务器时，不能使用已有弹性公网IP，即不支持此参数。
 
         :param id: The id of this PublicIp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -73,7 +80,7 @@ class PublicIp:
 
 
         :return: The eip of this PublicIp.
-        :rtype: Eip
+        :rtype: :class:`huaweicloudsdkbms.v1.Eip`
         """
         return self._eip
 
@@ -83,7 +90,7 @@ class PublicIp:
 
 
         :param eip: The eip of this PublicIp.
-        :type: Eip
+        :type eip: :class:`huaweicloudsdkbms.v1.Eip`
         """
         self._eip = eip
 

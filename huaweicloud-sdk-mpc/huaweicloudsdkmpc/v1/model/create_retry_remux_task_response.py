@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateRetryRemuxTaskResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class CreateRetryRemuxTaskResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateRetryRemuxTaskResponse - a model defined in huaweicloud sdk"""
+        """CreateRetryRemuxTaskResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(CreateRetryRemuxTaskResponse, self).__init__()
         self.discriminator = None

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchDeleteServerNicsRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchDeleteServerNicsRequestBody:
     }
 
     def __init__(self, nics=None):
-        """BatchDeleteServerNicsRequestBody - a model defined in huaweicloud sdk"""
+        """BatchDeleteServerNicsRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param nics: 需要删除的网卡列表信息。  说明： 主网卡是弹性云服务器上配置了路由规则的网卡，不可删除。
+        :type nics: list[:class:`huaweicloudsdkecs.v2.BatchDeleteServerNicOption`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class BatchDeleteServerNicsRequestBody:
         需要删除的网卡列表信息。  说明： 主网卡是弹性云服务器上配置了路由规则的网卡，不可删除。
 
         :return: The nics of this BatchDeleteServerNicsRequestBody.
-        :rtype: list[BatchDeleteServerNicOption]
+        :rtype: list[:class:`huaweicloudsdkecs.v2.BatchDeleteServerNicOption`]
         """
         return self._nics
 
@@ -57,7 +62,7 @@ class BatchDeleteServerNicsRequestBody:
         需要删除的网卡列表信息。  说明： 主网卡是弹性云服务器上配置了路由规则的网卡，不可删除。
 
         :param nics: The nics of this BatchDeleteServerNicsRequestBody.
-        :type: list[BatchDeleteServerNicOption]
+        :type nics: list[:class:`huaweicloudsdkecs.v2.BatchDeleteServerNicOption`]
         """
         self._nics = nics
 

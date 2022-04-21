@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AggregateResponse:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class AggregateResponse:
     }
 
     def __init__(self, inputs=None, expression=None, output_property=None, outputs=None, schedule=None):
-        """AggregateResponse - a model defined in huaweicloud sdk"""
+        """AggregateResponse
+
+        The model defined in huaweicloud sdk
+
+        :param inputs: 输入参数
+        :type inputs: list[:class:`huaweicloudsdkiotanalytics.v1.InputResponse`]
+        :param expression: 
+        :type expression: :class:`huaweicloudsdkiotanalytics.v1.Expression`
+        :param output_property: 输出属性名(不推荐使用，待废弃，使用outputs替代)
+        :type output_property: str
+        :param outputs: 
+        :type outputs: list[:class:`huaweicloudsdkiotanalytics.v1.OutputResponse`]
+        :param schedule: 
+        :type schedule: :class:`huaweicloudsdkiotanalytics.v1.DTSchedule`
+        """
         
         
 
@@ -67,7 +80,7 @@ class AggregateResponse:
         输入参数
 
         :return: The inputs of this AggregateResponse.
-        :rtype: list[InputResponse]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.InputResponse`]
         """
         return self._inputs
 
@@ -78,7 +91,7 @@ class AggregateResponse:
         输入参数
 
         :param inputs: The inputs of this AggregateResponse.
-        :type: list[InputResponse]
+        :type inputs: list[:class:`huaweicloudsdkiotanalytics.v1.InputResponse`]
         """
         self._inputs = inputs
 
@@ -88,7 +101,7 @@ class AggregateResponse:
 
 
         :return: The expression of this AggregateResponse.
-        :rtype: Expression
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.Expression`
         """
         return self._expression
 
@@ -98,7 +111,7 @@ class AggregateResponse:
 
 
         :param expression: The expression of this AggregateResponse.
-        :type: Expression
+        :type expression: :class:`huaweicloudsdkiotanalytics.v1.Expression`
         """
         self._expression = expression
 
@@ -120,7 +133,7 @@ class AggregateResponse:
         输出属性名(不推荐使用，待废弃，使用outputs替代)
 
         :param output_property: The output_property of this AggregateResponse.
-        :type: str
+        :type output_property: str
         """
         self._output_property = output_property
 
@@ -130,7 +143,7 @@ class AggregateResponse:
 
 
         :return: The outputs of this AggregateResponse.
-        :rtype: list[OutputResponse]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.OutputResponse`]
         """
         return self._outputs
 
@@ -140,7 +153,7 @@ class AggregateResponse:
 
 
         :param outputs: The outputs of this AggregateResponse.
-        :type: list[OutputResponse]
+        :type outputs: list[:class:`huaweicloudsdkiotanalytics.v1.OutputResponse`]
         """
         self._outputs = outputs
 
@@ -150,7 +163,7 @@ class AggregateResponse:
 
 
         :return: The schedule of this AggregateResponse.
-        :rtype: DTSchedule
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.DTSchedule`
         """
         return self._schedule
 
@@ -160,7 +173,7 @@ class AggregateResponse:
 
 
         :param schedule: The schedule of this AggregateResponse.
-        :type: DTSchedule
+        :type schedule: :class:`huaweicloudsdkiotanalytics.v1.DTSchedule`
         """
         self._schedule = schedule
 

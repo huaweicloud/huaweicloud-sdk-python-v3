@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PeriodToOnDemandReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class PeriodToOnDemandReq:
     }
 
     def __init__(self, operation=None, resource_ids=None):
-        """PeriodToOnDemandReq - a model defined in huaweicloud sdk"""
+        """PeriodToOnDemandReq
+
+        The model defined in huaweicloud sdk
+
+        :param operation: 设置或取消包年/包月资源到期转按需的操作。 SET_UP：设置CANCEL：取消
+        :type operation: str
+        :param resource_ids: 资源ID。 您可以调用“查询客户包年/包月资源列表”接口获取资源ID。 此处只支持设置主资源ID，最多可设置100个资源ID。设置后，主资源及其对应的从资源将一起转为按需资源。 请根据“查询客户包年/包月资源列表”接口响应参数中的“is_main_resource”参数来标识资源是否为主资源。
+        :type resource_ids: list[str]
+        """
         
         
 
@@ -61,7 +68,7 @@ class PeriodToOnDemandReq:
         设置或取消包年/包月资源到期转按需的操作。 SET_UP：设置CANCEL：取消
 
         :param operation: The operation of this PeriodToOnDemandReq.
-        :type: str
+        :type operation: str
         """
         self._operation = operation
 
@@ -83,7 +90,7 @@ class PeriodToOnDemandReq:
         资源ID。 您可以调用“查询客户包年/包月资源列表”接口获取资源ID。 此处只支持设置主资源ID，最多可设置100个资源ID。设置后，主资源及其对应的从资源将一起转为按需资源。 请根据“查询客户包年/包月资源列表”接口响应参数中的“is_main_resource”参数来标识资源是否为主资源。
 
         :param resource_ids: The resource_ids of this PeriodToOnDemandReq.
-        :type: list[str]
+        :type resource_ids: list[str]
         """
         self._resource_ids = resource_ids
 

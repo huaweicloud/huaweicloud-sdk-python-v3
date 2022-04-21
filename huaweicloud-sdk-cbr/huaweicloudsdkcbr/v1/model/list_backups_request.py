@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListBackupsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -72,7 +71,55 @@ class ListBackupsRequest:
     }
 
     def __init__(self, checkpoint_id=None, dec=None, end_time=None, image_type=None, limit=None, marker=None, name=None, offset=None, resource_az=None, resource_id=None, resource_name=None, resource_type=None, sort=None, start_time=None, status=None, vault_id=None, enterprise_project_id=None, own_type=None, member_status=None, parent_id=None, used_percent=None, show_replication=None):
-        """ListBackupsRequest - a model defined in huaweicloud sdk"""
+        """ListBackupsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param checkpoint_id: 还原点ID
+        :type checkpoint_id: str
+        :param dec: 专属云
+        :type dec: bool
+        :param end_time: 备份产生时间范围的结束时间，格式为%YYYY-%mm-%ddT%HH:%MM:%SSZ，例如2018-02-01T12:00:00Z
+        :type end_time: str
+        :param image_type: 备份类型
+        :type image_type: str
+        :param limit: 每页显示的条目数量，正整数
+        :type limit: int
+        :param marker: 上一次查询最后一条的id
+        :type marker: str
+        :param name: 名称
+        :type name: str
+        :param offset: 偏移值，正整数
+        :type offset: int
+        :param resource_az: 支持按az来过滤
+        :type resource_az: str
+        :param resource_id: 资源ID
+        :type resource_id: str
+        :param resource_name: 资源名称
+        :type resource_name: str
+        :param resource_type: 资源类型
+        :type resource_type: str
+        :param sort: sort的内容为一组由逗号分隔的属性及可选排序方向组成，形如&lt;key1&gt;[:&lt;direction&gt;],&lt;key2&gt;[:&lt;direction&gt;],其中direction的取值为asc (升序) 或 desc (降序),如没有传入direction参数，默认为降序，sort内容的长度限制为255个字符。key取值范围:[created_at，updated_at，name，status，protected_at，id]
+        :type sort: str
+        :param start_time: 备份产生时间范围的开始时间，格式为%YYYY-%mm-%ddT%HH:%MM:%SSZ，例如2018-02-01T12:00:00Z
+        :type start_time: str
+        :param status: 状态。 调用API时，支持通过传多个status值进行过滤。例如：status&#x3D;available&amp;status&#x3D;error
+        :type status: str
+        :param vault_id: 存储库ID
+        :type vault_id: str
+        :param enterprise_project_id: 企业项目id或all_granted_eps，all_granted_eps表示查询用户有权限的所有企业项目id
+        :type enterprise_project_id: str
+        :param own_type: 持有类型，私有的private/共享的shared/全部all_granted，默认只查询private。
+        :type own_type: str
+        :param member_status: 共享状态
+        :type member_status: str
+        :param parent_id: 父备份ID
+        :type parent_id: str
+        :param used_percent: 根据存储库使用率过滤备份，取值范围 [1, 100]，含1和100。例如，used_percent&#x3D;80，表示筛选所属存储库使用率大于等于80%的所有备份。
+        :type used_percent: str
+        :param show_replication: 是否返回复制记录
+        :type show_replication: bool
+        """
         
         
 
@@ -163,7 +210,7 @@ class ListBackupsRequest:
         还原点ID
 
         :param checkpoint_id: The checkpoint_id of this ListBackupsRequest.
-        :type: str
+        :type checkpoint_id: str
         """
         self._checkpoint_id = checkpoint_id
 
@@ -185,7 +232,7 @@ class ListBackupsRequest:
         专属云
 
         :param dec: The dec of this ListBackupsRequest.
-        :type: bool
+        :type dec: bool
         """
         self._dec = dec
 
@@ -207,7 +254,7 @@ class ListBackupsRequest:
         备份产生时间范围的结束时间，格式为%YYYY-%mm-%ddT%HH:%MM:%SSZ，例如2018-02-01T12:00:00Z
 
         :param end_time: The end_time of this ListBackupsRequest.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -229,7 +276,7 @@ class ListBackupsRequest:
         备份类型
 
         :param image_type: The image_type of this ListBackupsRequest.
-        :type: str
+        :type image_type: str
         """
         self._image_type = image_type
 
@@ -251,7 +298,7 @@ class ListBackupsRequest:
         每页显示的条目数量，正整数
 
         :param limit: The limit of this ListBackupsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -273,7 +320,7 @@ class ListBackupsRequest:
         上一次查询最后一条的id
 
         :param marker: The marker of this ListBackupsRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -295,7 +342,7 @@ class ListBackupsRequest:
         名称
 
         :param name: The name of this ListBackupsRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -317,7 +364,7 @@ class ListBackupsRequest:
         偏移值，正整数
 
         :param offset: The offset of this ListBackupsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -339,7 +386,7 @@ class ListBackupsRequest:
         支持按az来过滤
 
         :param resource_az: The resource_az of this ListBackupsRequest.
-        :type: str
+        :type resource_az: str
         """
         self._resource_az = resource_az
 
@@ -361,7 +408,7 @@ class ListBackupsRequest:
         资源ID
 
         :param resource_id: The resource_id of this ListBackupsRequest.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -383,7 +430,7 @@ class ListBackupsRequest:
         资源名称
 
         :param resource_name: The resource_name of this ListBackupsRequest.
-        :type: str
+        :type resource_name: str
         """
         self._resource_name = resource_name
 
@@ -405,7 +452,7 @@ class ListBackupsRequest:
         资源类型
 
         :param resource_type: The resource_type of this ListBackupsRequest.
-        :type: str
+        :type resource_type: str
         """
         self._resource_type = resource_type
 
@@ -427,7 +474,7 @@ class ListBackupsRequest:
         sort的内容为一组由逗号分隔的属性及可选排序方向组成，形如<key1>[:<direction>],<key2>[:<direction>],其中direction的取值为asc (升序) 或 desc (降序),如没有传入direction参数，默认为降序，sort内容的长度限制为255个字符。key取值范围:[created_at，updated_at，name，status，protected_at，id]
 
         :param sort: The sort of this ListBackupsRequest.
-        :type: str
+        :type sort: str
         """
         self._sort = sort
 
@@ -449,7 +496,7 @@ class ListBackupsRequest:
         备份产生时间范围的开始时间，格式为%YYYY-%mm-%ddT%HH:%MM:%SSZ，例如2018-02-01T12:00:00Z
 
         :param start_time: The start_time of this ListBackupsRequest.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -471,7 +518,7 @@ class ListBackupsRequest:
         状态。 调用API时，支持通过传多个status值进行过滤。例如：status=available&status=error
 
         :param status: The status of this ListBackupsRequest.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -493,7 +540,7 @@ class ListBackupsRequest:
         存储库ID
 
         :param vault_id: The vault_id of this ListBackupsRequest.
-        :type: str
+        :type vault_id: str
         """
         self._vault_id = vault_id
 
@@ -515,7 +562,7 @@ class ListBackupsRequest:
         企业项目id或all_granted_eps，all_granted_eps表示查询用户有权限的所有企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this ListBackupsRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -537,7 +584,7 @@ class ListBackupsRequest:
         持有类型，私有的private/共享的shared/全部all_granted，默认只查询private。
 
         :param own_type: The own_type of this ListBackupsRequest.
-        :type: str
+        :type own_type: str
         """
         self._own_type = own_type
 
@@ -559,7 +606,7 @@ class ListBackupsRequest:
         共享状态
 
         :param member_status: The member_status of this ListBackupsRequest.
-        :type: str
+        :type member_status: str
         """
         self._member_status = member_status
 
@@ -581,7 +628,7 @@ class ListBackupsRequest:
         父备份ID
 
         :param parent_id: The parent_id of this ListBackupsRequest.
-        :type: str
+        :type parent_id: str
         """
         self._parent_id = parent_id
 
@@ -603,7 +650,7 @@ class ListBackupsRequest:
         根据存储库使用率过滤备份，取值范围 [1, 100]，含1和100。例如，used_percent=80，表示筛选所属存储库使用率大于等于80%的所有备份。
 
         :param used_percent: The used_percent of this ListBackupsRequest.
-        :type: str
+        :type used_percent: str
         """
         self._used_percent = used_percent
 
@@ -625,7 +672,7 @@ class ListBackupsRequest:
         是否返回复制记录
 
         :param show_replication: The show_replication of this ListBackupsRequest.
-        :type: bool
+        :type show_replication: bool
         """
         self._show_replication = show_replication
 

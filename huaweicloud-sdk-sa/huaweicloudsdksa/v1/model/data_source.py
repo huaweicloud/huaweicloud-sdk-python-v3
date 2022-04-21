@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DataSource:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class DataSource:
     }
 
     def __init__(self, type=None, domain_id=None, project_id=None, region_id=None, company_name=None, product_name=None, product_feature=None):
-        """DataSource - a model defined in huaweicloud sdk"""
+        """DataSource
+
+        The model defined in huaweicloud sdk
+
+        :param type: 数据源类型，取值范围如下： 1 - 华为产品 2 - 第三方产品 3 - 租户私有产品
+        :type type: int
+        :param domain_id: 数据源产品所属管理账号的ID，最大36个字符。
+        :type domain_id: str
+        :param project_id: 数据源产品所属项目的ID，最大36个字符。
+        :type project_id: str
+        :param region_id: 数据源产品所在区域，具体取值范围查看华为云地区和终端节点定义。
+        :type region_id: str
+        :param company_name: 数据源产品所属公司的名称。
+        :type company_name: str
+        :param product_name: 数据源产品的名称。
+        :type product_name: str
+        :param product_feature: 产品功能特性名称，用来指明检测到当前事件的产品的功能特性。
+        :type product_feature: str
+        """
         
         
 
@@ -83,7 +100,7 @@ class DataSource:
         数据源类型，取值范围如下： 1 - 华为产品 2 - 第三方产品 3 - 租户私有产品
 
         :param type: The type of this DataSource.
-        :type: int
+        :type type: int
         """
         self._type = type
 
@@ -105,7 +122,7 @@ class DataSource:
         数据源产品所属管理账号的ID，最大36个字符。
 
         :param domain_id: The domain_id of this DataSource.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -127,7 +144,7 @@ class DataSource:
         数据源产品所属项目的ID，最大36个字符。
 
         :param project_id: The project_id of this DataSource.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -149,7 +166,7 @@ class DataSource:
         数据源产品所在区域，具体取值范围查看华为云地区和终端节点定义。
 
         :param region_id: The region_id of this DataSource.
-        :type: str
+        :type region_id: str
         """
         self._region_id = region_id
 
@@ -171,7 +188,7 @@ class DataSource:
         数据源产品所属公司的名称。
 
         :param company_name: The company_name of this DataSource.
-        :type: str
+        :type company_name: str
         """
         self._company_name = company_name
 
@@ -193,7 +210,7 @@ class DataSource:
         数据源产品的名称。
 
         :param product_name: The product_name of this DataSource.
-        :type: str
+        :type product_name: str
         """
         self._product_name = product_name
 
@@ -215,7 +232,7 @@ class DataSource:
         产品功能特性名称，用来指明检测到当前事件的产品的功能特性。
 
         :param product_feature: The product_feature of this DataSource.
-        :type: str
+        :type product_feature: str
         """
         self._product_feature = product_feature
 

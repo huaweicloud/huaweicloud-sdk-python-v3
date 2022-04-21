@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowTablePreviewResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowTablePreviewResponse(SdkResponse):
     }
 
     def __init__(self, schema=None, rows=None):
-        """ShowTablePreviewResponse - a model defined in huaweicloud sdk"""
+        """ShowTablePreviewResponse
+
+        The model defined in huaweicloud sdk
+
+        :param schema: 表的列名称和类型。
+        :type schema: list[object]
+        :param rows: 预览的表内容。
+        :type rows: list[object]
+        """
         
         super(ShowTablePreviewResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ShowTablePreviewResponse(SdkResponse):
         表的列名称和类型。
 
         :param schema: The schema of this ShowTablePreviewResponse.
-        :type: list[object]
+        :type schema: list[object]
         """
         self._schema = schema
 
@@ -85,7 +92,7 @@ class ShowTablePreviewResponse(SdkResponse):
         预览的表内容。
 
         :param rows: The rows of this ShowTablePreviewResponse.
-        :type: list[object]
+        :type rows: list[object]
         """
         self._rows = rows
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListNotificationsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListNotificationsRequest:
     }
 
     def __init__(self, notification_type=None, notification_name=None):
-        """ListNotificationsRequest - a model defined in huaweicloud sdk"""
+        """ListNotificationsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param notification_type: 通知类型。
+        :type notification_type: str
+        :param notification_name: 标识关键操作通知名称。 在不传入该字段的情况下，将查询当前租户所有的关键操作通知。
+        :type notification_name: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ListNotificationsRequest:
         通知类型。
 
         :param notification_type: The notification_type of this ListNotificationsRequest.
-        :type: str
+        :type notification_type: str
         """
         self._notification_type = notification_type
 
@@ -84,7 +91,7 @@ class ListNotificationsRequest:
         标识关键操作通知名称。 在不传入该字段的情况下，将查询当前租户所有的关键操作通知。
 
         :param notification_name: The notification_name of this ListNotificationsRequest.
-        :type: str
+        :type notification_name: str
         """
         self._notification_name = notification_name
 

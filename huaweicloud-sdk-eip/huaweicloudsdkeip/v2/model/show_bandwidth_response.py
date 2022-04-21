@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowBandwidthResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowBandwidthResponse(SdkResponse):
     }
 
     def __init__(self, bandwidth=None):
-        """ShowBandwidthResponse - a model defined in huaweicloud sdk"""
+        """ShowBandwidthResponse
+
+        The model defined in huaweicloud sdk
+
+        :param bandwidth: 
+        :type bandwidth: :class:`huaweicloudsdkeip.v2.BandwidthResp`
+        """
         
         super(ShowBandwidthResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class ShowBandwidthResponse(SdkResponse):
 
 
         :return: The bandwidth of this ShowBandwidthResponse.
-        :rtype: BandwidthResp
+        :rtype: :class:`huaweicloudsdkeip.v2.BandwidthResp`
         """
         return self._bandwidth
 
@@ -56,7 +61,7 @@ class ShowBandwidthResponse(SdkResponse):
 
 
         :param bandwidth: The bandwidth of this ShowBandwidthResponse.
-        :type: BandwidthResp
+        :type bandwidth: :class:`huaweicloudsdkeip.v2.BandwidthResp`
         """
         self._bandwidth = bandwidth
 

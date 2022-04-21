@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowPolicyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class ShowPolicyResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, action=None, options=None, level=None, full_detection=None, bind_host=None, timestamp=None, extend=None):
-        """ShowPolicyResponse - a model defined in huaweicloud sdk"""
+        """ShowPolicyResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 防护策略id
+        :type id: str
+        :param name: 防护策略名
+        :type name: str
+        :param action: 
+        :type action: :class:`huaweicloudsdkwaf.v1.PolicyAction`
+        :param options: 
+        :type options: :class:`huaweicloudsdkwaf.v1.PolicyOption`
+        :param level: 防护等级
+        :type level: int
+        :param full_detection: 精准防护中的检测模式
+        :type full_detection: bool
+        :param bind_host: 防护域名的信息
+        :type bind_host: list[:class:`huaweicloudsdkwaf.v1.BindHost`]
+        :param timestamp: 创建防护策略的时间
+        :type timestamp: int
+        :param extend: 扩展字段
+        :type extend: dict(str, str)
+        """
         
         super(ShowPolicyResponse, self).__init__()
 
@@ -98,7 +119,7 @@ class ShowPolicyResponse(SdkResponse):
         防护策略id
 
         :param id: The id of this ShowPolicyResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -120,7 +141,7 @@ class ShowPolicyResponse(SdkResponse):
         防护策略名
 
         :param name: The name of this ShowPolicyResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -130,7 +151,7 @@ class ShowPolicyResponse(SdkResponse):
 
 
         :return: The action of this ShowPolicyResponse.
-        :rtype: PolicyAction
+        :rtype: :class:`huaweicloudsdkwaf.v1.PolicyAction`
         """
         return self._action
 
@@ -140,7 +161,7 @@ class ShowPolicyResponse(SdkResponse):
 
 
         :param action: The action of this ShowPolicyResponse.
-        :type: PolicyAction
+        :type action: :class:`huaweicloudsdkwaf.v1.PolicyAction`
         """
         self._action = action
 
@@ -150,7 +171,7 @@ class ShowPolicyResponse(SdkResponse):
 
 
         :return: The options of this ShowPolicyResponse.
-        :rtype: PolicyOption
+        :rtype: :class:`huaweicloudsdkwaf.v1.PolicyOption`
         """
         return self._options
 
@@ -160,7 +181,7 @@ class ShowPolicyResponse(SdkResponse):
 
 
         :param options: The options of this ShowPolicyResponse.
-        :type: PolicyOption
+        :type options: :class:`huaweicloudsdkwaf.v1.PolicyOption`
         """
         self._options = options
 
@@ -182,7 +203,7 @@ class ShowPolicyResponse(SdkResponse):
         防护等级
 
         :param level: The level of this ShowPolicyResponse.
-        :type: int
+        :type level: int
         """
         self._level = level
 
@@ -204,7 +225,7 @@ class ShowPolicyResponse(SdkResponse):
         精准防护中的检测模式
 
         :param full_detection: The full_detection of this ShowPolicyResponse.
-        :type: bool
+        :type full_detection: bool
         """
         self._full_detection = full_detection
 
@@ -215,7 +236,7 @@ class ShowPolicyResponse(SdkResponse):
         防护域名的信息
 
         :return: The bind_host of this ShowPolicyResponse.
-        :rtype: list[BindHost]
+        :rtype: list[:class:`huaweicloudsdkwaf.v1.BindHost`]
         """
         return self._bind_host
 
@@ -226,7 +247,7 @@ class ShowPolicyResponse(SdkResponse):
         防护域名的信息
 
         :param bind_host: The bind_host of this ShowPolicyResponse.
-        :type: list[BindHost]
+        :type bind_host: list[:class:`huaweicloudsdkwaf.v1.BindHost`]
         """
         self._bind_host = bind_host
 
@@ -248,7 +269,7 @@ class ShowPolicyResponse(SdkResponse):
         创建防护策略的时间
 
         :param timestamp: The timestamp of this ShowPolicyResponse.
-        :type: int
+        :type timestamp: int
         """
         self._timestamp = timestamp
 
@@ -270,7 +291,7 @@ class ShowPolicyResponse(SdkResponse):
         扩展字段
 
         :param extend: The extend of this ShowPolicyResponse.
-        :type: dict(str, str)
+        :type extend: dict(str, str)
         """
         self._extend = extend
 

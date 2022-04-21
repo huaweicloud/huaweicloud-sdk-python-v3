@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Word:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Word:
     }
 
     def __init__(self, content=None, pos=None):
-        """Word - a model defined in huaweicloud sdk"""
+        """Word
+
+        The model defined in huaweicloud sdk
+
+        :param content: 词汇文本。
+        :type content: str
+        :param pos: 词汇对应的词性。
+        :type pos: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class Word:
         词汇文本。
 
         :param content: The content of this Word.
-        :type: str
+        :type content: str
         """
         self._content = content
 
@@ -83,7 +90,7 @@ class Word:
         词汇对应的词性。
 
         :param pos: The pos of this Word.
-        :type: str
+        :type pos: str
         """
         self._pos = pos
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListKmsByTagsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListKmsByTagsRequest:
     }
 
     def __init__(self, resource_instances=None, body=None):
-        """ListKmsByTagsRequest - a model defined in huaweicloud sdk"""
+        """ListKmsByTagsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param resource_instances: 资源实例，固定值为resource_instances
+        :type resource_instances: str
+        :param body: Body of the ListKmsByTagsRequest
+        :type body: :class:`huaweicloudsdkkms.v2.ListKmsByTagsRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class ListKmsByTagsRequest:
         资源实例，固定值为resource_instances
 
         :param resource_instances: The resource_instances of this ListKmsByTagsRequest.
-        :type: str
+        :type resource_instances: str
         """
         self._resource_instances = resource_instances
 
@@ -72,7 +79,7 @@ class ListKmsByTagsRequest:
 
 
         :return: The body of this ListKmsByTagsRequest.
-        :rtype: ListKmsByTagsRequestBody
+        :rtype: :class:`huaweicloudsdkkms.v2.ListKmsByTagsRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class ListKmsByTagsRequest:
 
 
         :param body: The body of this ListKmsByTagsRequest.
-        :type: ListKmsByTagsRequestBody
+        :type body: :class:`huaweicloudsdkkms.v2.ListKmsByTagsRequestBody`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateMfaDeviceRespon:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateMfaDeviceRespon:
     }
 
     def __init__(self, serial_number=None, base32_string_seed=None):
-        """CreateMfaDeviceRespon - a model defined in huaweicloud sdk"""
+        """CreateMfaDeviceRespon
+
+        The model defined in huaweicloud sdk
+
+        :param serial_number: MFA设备序列号。
+        :type serial_number: str
+        :param base32_string_seed: 密钥信息，用于第三方生成图片验证码。
+        :type base32_string_seed: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class CreateMfaDeviceRespon:
         MFA设备序列号。
 
         :param serial_number: The serial_number of this CreateMfaDeviceRespon.
-        :type: str
+        :type serial_number: str
         """
         self._serial_number = serial_number
 
@@ -83,7 +90,7 @@ class CreateMfaDeviceRespon:
         密钥信息，用于第三方生成图片验证码。
 
         :param base32_string_seed: The base32_string_seed of this CreateMfaDeviceRespon.
-        :type: str
+        :type base32_string_seed: str
         """
         self._base32_string_seed = base32_string_seed
 

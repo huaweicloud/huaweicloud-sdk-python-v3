@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AclBatchFailure:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class AclBatchFailure:
     }
 
     def __init__(self, acl_id=None, acl_name=None, error_code=None, error_msg=None):
-        """AclBatchFailure - a model defined in huaweicloud sdk"""
+        """AclBatchFailure
+
+        The model defined in huaweicloud sdk
+
+        :param acl_id: 删除失败的ACL策略ID
+        :type acl_id: str
+        :param acl_name: 删除失败的ACL策略名称
+        :type acl_name: str
+        :param error_code: 删除失败的错误码
+        :type error_code: str
+        :param error_msg: 删除失败的错误信息
+        :type error_msg: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class AclBatchFailure:
         删除失败的ACL策略ID
 
         :param acl_id: The acl_id of this AclBatchFailure.
-        :type: str
+        :type acl_id: str
         """
         self._acl_id = acl_id
 
@@ -95,7 +106,7 @@ class AclBatchFailure:
         删除失败的ACL策略名称
 
         :param acl_name: The acl_name of this AclBatchFailure.
-        :type: str
+        :type acl_name: str
         """
         self._acl_name = acl_name
 
@@ -117,7 +128,7 @@ class AclBatchFailure:
         删除失败的错误码
 
         :param error_code: The error_code of this AclBatchFailure.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -139,7 +150,7 @@ class AclBatchFailure:
         删除失败的错误信息
 
         :param error_msg: The error_msg of this AclBatchFailure.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 

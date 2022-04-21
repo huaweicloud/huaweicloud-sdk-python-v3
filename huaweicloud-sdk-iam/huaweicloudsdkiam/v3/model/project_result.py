@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ProjectResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ProjectResult:
     }
 
     def __init__(self, is_domain=None, description=None, links=None, enabled=None, id=None, parent_id=None, domain_id=None, name=None):
-        """ProjectResult - a model defined in huaweicloud sdk"""
+        """ProjectResult
+
+        The model defined in huaweicloud sdk
+
+        :param is_domain: false.
+        :type is_domain: bool
+        :param description: 项目描述信息。
+        :type description: str
+        :param links: 
+        :type links: :class:`huaweicloudsdkiam.v3.Links`
+        :param enabled: 项目是否可用。
+        :type enabled: bool
+        :param id: 项目ID。
+        :type id: str
+        :param parent_id: 如果查询自己创建的项目，则此处返回所属区域的项目ID。  如果查询的是系统内置项目，如cn-north-4，则此处返回账号ID。
+        :type parent_id: str
+        :param domain_id: 项目所属账号ID。
+        :type domain_id: str
+        :param name: 项目名称。
+        :type name: str
+        """
         
         
 
@@ -85,7 +104,7 @@ class ProjectResult:
         false.
 
         :param is_domain: The is_domain of this ProjectResult.
-        :type: bool
+        :type is_domain: bool
         """
         self._is_domain = is_domain
 
@@ -107,7 +126,7 @@ class ProjectResult:
         项目描述信息。
 
         :param description: The description of this ProjectResult.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -117,7 +136,7 @@ class ProjectResult:
 
 
         :return: The links of this ProjectResult.
-        :rtype: Links
+        :rtype: :class:`huaweicloudsdkiam.v3.Links`
         """
         return self._links
 
@@ -127,7 +146,7 @@ class ProjectResult:
 
 
         :param links: The links of this ProjectResult.
-        :type: Links
+        :type links: :class:`huaweicloudsdkiam.v3.Links`
         """
         self._links = links
 
@@ -149,7 +168,7 @@ class ProjectResult:
         项目是否可用。
 
         :param enabled: The enabled of this ProjectResult.
-        :type: bool
+        :type enabled: bool
         """
         self._enabled = enabled
 
@@ -171,7 +190,7 @@ class ProjectResult:
         项目ID。
 
         :param id: The id of this ProjectResult.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -193,7 +212,7 @@ class ProjectResult:
         如果查询自己创建的项目，则此处返回所属区域的项目ID。  如果查询的是系统内置项目，如cn-north-4，则此处返回账号ID。
 
         :param parent_id: The parent_id of this ProjectResult.
-        :type: str
+        :type parent_id: str
         """
         self._parent_id = parent_id
 
@@ -215,7 +234,7 @@ class ProjectResult:
         项目所属账号ID。
 
         :param domain_id: The domain_id of this ProjectResult.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -237,7 +256,7 @@ class ProjectResult:
         项目名称。
 
         :param name: The name of this ProjectResult.
-        :type: str
+        :type name: str
         """
         self._name = name
 

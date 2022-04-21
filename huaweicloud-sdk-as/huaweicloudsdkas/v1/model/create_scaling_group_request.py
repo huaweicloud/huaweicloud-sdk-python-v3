@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateScalingGroupRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateScalingGroupRequest:
     }
 
     def __init__(self, body=None):
-        """CreateScalingGroupRequest - a model defined in huaweicloud sdk"""
+        """CreateScalingGroupRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateScalingGroupRequest
+        :type body: :class:`huaweicloudsdkas.v1.CreateScalingGroupOption`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateScalingGroupRequest:
 
 
         :return: The body of this CreateScalingGroupRequest.
-        :rtype: CreateScalingGroupOption
+        :rtype: :class:`huaweicloudsdkas.v1.CreateScalingGroupOption`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateScalingGroupRequest:
 
 
         :param body: The body of this CreateScalingGroupRequest.
-        :type: CreateScalingGroupOption
+        :type body: :class:`huaweicloudsdkas.v1.CreateScalingGroupOption`
         """
         self._body = body
 

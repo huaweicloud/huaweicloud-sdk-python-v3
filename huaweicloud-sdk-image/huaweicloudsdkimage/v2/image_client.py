@@ -52,21 +52,17 @@ class ImageClient(Client):
         """名人识别
 
         分析并识别图片中包含的政治人物、明星及网红人物，返回人物信息及人脸坐标。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param RunCelebrityRecognitionRequest request
-        :return: RunCelebrityRecognitionResponse
+        :param request: Request instance for RunCelebrityRecognition
+        :type request: :class:`huaweicloudsdkimage.v2.RunCelebrityRecognitionRequest`
+        :rtype: :class:`huaweicloudsdkimage.v2.RunCelebrityRecognitionResponse`
         """
         return self.run_celebrity_recognition_with_http_info(request)
 
     def run_celebrity_recognition_with_http_info(self, request):
-        """名人识别
-
-        分析并识别图片中包含的政治人物、明星及网红人物，返回人物信息及人脸坐标。
-
-        :param RunCelebrityRecognitionRequest request
-        :return: RunCelebrityRecognitionResponse
-        """
-
         all_params = ['run_celebrity_recognition_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -110,26 +106,21 @@ class ImageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def run_image_tagging(self, request):
         """图像标签
 
         自然图像的语义内容非常丰富，一个图像包含多个标签内容，图像标签服务准确识别自然图片中数百种场景、上千种通用物体及其属性，让智能相册管理、照片检索和分类、基于场景内容或者物体的广告推荐等功能更加直观。使用时用户发送待处理图片，返回图片标签内容及相应置信度。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param RunImageTaggingRequest request
-        :return: RunImageTaggingResponse
+        :param request: Request instance for RunImageTagging
+        :type request: :class:`huaweicloudsdkimage.v2.RunImageTaggingRequest`
+        :rtype: :class:`huaweicloudsdkimage.v2.RunImageTaggingResponse`
         """
         return self.run_image_tagging_with_http_info(request)
 
     def run_image_tagging_with_http_info(self, request):
-        """图像标签
-
-        自然图像的语义内容非常丰富，一个图像包含多个标签内容，图像标签服务准确识别自然图片中数百种场景、上千种通用物体及其属性，让智能相册管理、照片检索和分类、基于场景内容或者物体的广告推荐等功能更加直观。使用时用户发送待处理图片，返回图片标签内容及相应置信度。
-
-        :param RunImageTaggingRequest request
-        :return: RunImageTaggingResponse
-        """
-
         all_params = ['run_image_tagging_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -172,7 +163,6 @@ class ImageClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

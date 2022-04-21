@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCaseOperateLogsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListCaseOperateLogsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, incident_operate_log_list=None):
-        """ListCaseOperateLogsResponse - a model defined in huaweicloud sdk"""
+        """ListCaseOperateLogsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total_count: 总数
+        :type total_count: int
+        :param incident_operate_log_list: 工单操作日志列表
+        :type incident_operate_log_list: list[:class:`huaweicloudsdkosm.v2.IncidentOperateLogV2`]
+        """
         
         super(ListCaseOperateLogsResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListCaseOperateLogsResponse(SdkResponse):
         总数
 
         :param total_count: The total_count of this ListCaseOperateLogsResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 
@@ -74,7 +81,7 @@ class ListCaseOperateLogsResponse(SdkResponse):
         工单操作日志列表
 
         :return: The incident_operate_log_list of this ListCaseOperateLogsResponse.
-        :rtype: list[IncidentOperateLogV2]
+        :rtype: list[:class:`huaweicloudsdkosm.v2.IncidentOperateLogV2`]
         """
         return self._incident_operate_log_list
 
@@ -85,7 +92,7 @@ class ListCaseOperateLogsResponse(SdkResponse):
         工单操作日志列表
 
         :param incident_operate_log_list: The incident_operate_log_list of this ListCaseOperateLogsResponse.
-        :type: list[IncidentOperateLogV2]
+        :type incident_operate_log_list: list[:class:`huaweicloudsdkosm.v2.IncidentOperateLogV2`]
         """
         self._incident_operate_log_list = incident_operate_log_list
 

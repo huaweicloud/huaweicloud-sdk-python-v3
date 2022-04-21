@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateNamespaceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateNamespaceRequest:
     }
 
     def __init__(self, body=None):
-        """CreateNamespaceRequest - a model defined in huaweicloud sdk"""
+        """CreateNamespaceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateNamespaceRequest
+        :type body: :class:`huaweicloudsdkswr.v2.CreateNamespaceRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateNamespaceRequest:
 
 
         :return: The body of this CreateNamespaceRequest.
-        :rtype: CreateNamespaceRequestBody
+        :rtype: :class:`huaweicloudsdkswr.v2.CreateNamespaceRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateNamespaceRequest:
 
 
         :param body: The body of this CreateNamespaceRequest.
-        :type: CreateNamespaceRequestBody
+        :type body: :class:`huaweicloudsdkswr.v2.CreateNamespaceRequestBody`
         """
         self._body = body
 

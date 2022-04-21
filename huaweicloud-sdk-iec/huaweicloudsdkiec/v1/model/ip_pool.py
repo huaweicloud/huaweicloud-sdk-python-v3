@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IpPool:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class IpPool:
     }
 
     def __init__(self, id=None, site_id=None, pool_id=None, ip_version=None, operator=None, display_name=None):
-        """IpPool - a model defined in huaweicloud sdk"""
+        """IpPool
+
+        The model defined in huaweicloud sdk
+
+        :param id: 线路的ID。
+        :type id: str
+        :param site_id: 线路所属站点ID。
+        :type site_id: str
+        :param pool_id: 线路标识。
+        :type pool_id: str
+        :param ip_version: IPv4[或IPv6](tag:hide)线路。  取值范围： - 4：IPv4线路 [- 6：IPv6线路](tag:hide)
+        :type ip_version: str
+        :param operator: 
+        :type operator: :class:`huaweicloudsdkiec.v1.Operator`
+        :param display_name: 线路的显示名称。
+        :type display_name: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class IpPool:
         线路的ID。
 
         :param id: The id of this IpPool.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -105,7 +120,7 @@ class IpPool:
         线路所属站点ID。
 
         :param site_id: The site_id of this IpPool.
-        :type: str
+        :type site_id: str
         """
         self._site_id = site_id
 
@@ -127,7 +142,7 @@ class IpPool:
         线路标识。
 
         :param pool_id: The pool_id of this IpPool.
-        :type: str
+        :type pool_id: str
         """
         self._pool_id = pool_id
 
@@ -149,7 +164,7 @@ class IpPool:
         IPv4[或IPv6](tag:hide)线路。  取值范围： - 4：IPv4线路 [- 6：IPv6线路](tag:hide)
 
         :param ip_version: The ip_version of this IpPool.
-        :type: str
+        :type ip_version: str
         """
         self._ip_version = ip_version
 
@@ -159,7 +174,7 @@ class IpPool:
 
 
         :return: The operator of this IpPool.
-        :rtype: Operator
+        :rtype: :class:`huaweicloudsdkiec.v1.Operator`
         """
         return self._operator
 
@@ -169,7 +184,7 @@ class IpPool:
 
 
         :param operator: The operator of this IpPool.
-        :type: Operator
+        :type operator: :class:`huaweicloudsdkiec.v1.Operator`
         """
         self._operator = operator
 
@@ -191,7 +206,7 @@ class IpPool:
         线路的显示名称。
 
         :param display_name: The display_name of this IpPool.
-        :type: str
+        :type display_name: str
         """
         self._display_name = display_name
 

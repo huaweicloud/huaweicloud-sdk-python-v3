@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UploadMetaDataByUrlRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UploadMetaDataByUrlRequest:
     }
 
     def __init__(self, body=None):
-        """UploadMetaDataByUrlRequest - a model defined in huaweicloud sdk"""
+        """UploadMetaDataByUrlRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the UploadMetaDataByUrlRequest
+        :type body: :class:`huaweicloudsdkvod.v1.UploadMetaDataByUrlReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class UploadMetaDataByUrlRequest:
 
 
         :return: The body of this UploadMetaDataByUrlRequest.
-        :rtype: UploadMetaDataByUrlReq
+        :rtype: :class:`huaweicloudsdkvod.v1.UploadMetaDataByUrlReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class UploadMetaDataByUrlRequest:
 
 
         :param body: The body of this UploadMetaDataByUrlRequest.
-        :type: UploadMetaDataByUrlReq
+        :type body: :class:`huaweicloudsdkvod.v1.UploadMetaDataByUrlReq`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateGaussMySqlInstanceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateGaussMySqlInstanceRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """CreateGaussMySqlInstanceRequest - a model defined in huaweicloud sdk"""
+        """CreateGaussMySqlInstanceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言。
+        :type x_language: str
+        :param body: Body of the CreateGaussMySqlInstanceRequest
+        :type body: :class:`huaweicloudsdkgaussdb.v3.MysqlInstanceRequest`
+        """
         
         
 
@@ -63,7 +70,7 @@ class CreateGaussMySqlInstanceRequest:
         语言。
 
         :param x_language: The x_language of this CreateGaussMySqlInstanceRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -73,7 +80,7 @@ class CreateGaussMySqlInstanceRequest:
 
 
         :return: The body of this CreateGaussMySqlInstanceRequest.
-        :rtype: MysqlInstanceRequest
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlInstanceRequest`
         """
         return self._body
 
@@ -83,7 +90,7 @@ class CreateGaussMySqlInstanceRequest:
 
 
         :param body: The body of this CreateGaussMySqlInstanceRequest.
-        :type: MysqlInstanceRequest
+        :type body: :class:`huaweicloudsdkgaussdb.v3.MysqlInstanceRequest`
         """
         self._body = body
 

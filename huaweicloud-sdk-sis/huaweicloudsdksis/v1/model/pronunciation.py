@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Pronunciation:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Pronunciation:
     }
 
     def __init__(self, score=None, gop=None):
-        """Pronunciation - a model defined in huaweicloud sdk"""
+        """Pronunciation
+
+        The model defined in huaweicloud sdk
+
+        :param score: 发音质量综合得分 0-100
+        :type score: float
+        :param gop: 发音质量好坏 0-100
+        :type gop: float
+        """
         
         
 
@@ -61,7 +68,7 @@ class Pronunciation:
         发音质量综合得分 0-100
 
         :param score: The score of this Pronunciation.
-        :type: float
+        :type score: float
         """
         self._score = score
 
@@ -83,7 +90,7 @@ class Pronunciation:
         发音质量好坏 0-100
 
         :param gop: The gop of this Pronunciation.
-        :type: float
+        :type gop: float
         """
         self._gop = gop
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDevicesInProductResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListDevicesInProductResponse(SdkResponse):
     }
 
     def __init__(self, summary=None):
-        """ListDevicesInProductResponse - a model defined in huaweicloud sdk"""
+        """ListDevicesInProductResponse
+
+        The model defined in huaweicloud sdk
+
+        :param summary: 产品内设备数量
+        :type summary: int
+        """
         
         super(ListDevicesInProductResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class ListDevicesInProductResponse(SdkResponse):
         产品内设备数量
 
         :param summary: The summary of this ListDevicesInProductResponse.
-        :type: int
+        :type summary: int
         """
         self._summary = summary
 

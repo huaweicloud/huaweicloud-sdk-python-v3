@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowProtocolMappingsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowProtocolMappingsRequest:
     }
 
     def __init__(self, product_id=None):
-        """ShowProtocolMappingsRequest - a model defined in huaweicloud sdk"""
+        """ShowProtocolMappingsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param product_id: 设备关联的产品ID，用于唯一标识一个产品模型，在管理门户导入产品模型后由平台分配获得。
+        :type product_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowProtocolMappingsRequest:
         设备关联的产品ID，用于唯一标识一个产品模型，在管理门户导入产品模型后由平台分配获得。
 
         :param product_id: The product_id of this ShowProtocolMappingsRequest.
-        :type: str
+        :type product_id: str
         """
         self._product_id = product_id
 

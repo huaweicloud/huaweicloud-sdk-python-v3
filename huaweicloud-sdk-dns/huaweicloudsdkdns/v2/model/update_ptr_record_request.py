@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdatePtrRecordRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdatePtrRecordRequest:
     }
 
     def __init__(self, region=None, floatingip_id=None, body=None):
-        """UpdatePtrRecordRequest - a model defined in huaweicloud sdk"""
+        """UpdatePtrRecordRequest
+
+        The model defined in huaweicloud sdk
+
+        :param region: 
+        :type region: str
+        :param floatingip_id: 
+        :type floatingip_id: str
+        :param body: Body of the UpdatePtrRecordRequest
+        :type body: :class:`huaweicloudsdkdns.v2.UpdatePtrReq`
+        """
         
         
 
@@ -64,7 +73,7 @@ class UpdatePtrRecordRequest:
 
 
         :param region: The region of this UpdatePtrRecordRequest.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -84,7 +93,7 @@ class UpdatePtrRecordRequest:
 
 
         :param floatingip_id: The floatingip_id of this UpdatePtrRecordRequest.
-        :type: str
+        :type floatingip_id: str
         """
         self._floatingip_id = floatingip_id
 
@@ -94,7 +103,7 @@ class UpdatePtrRecordRequest:
 
 
         :return: The body of this UpdatePtrRecordRequest.
-        :rtype: UpdatePtrReq
+        :rtype: :class:`huaweicloudsdkdns.v2.UpdatePtrReq`
         """
         return self._body
 
@@ -104,7 +113,7 @@ class UpdatePtrRecordRequest:
 
 
         :param body: The body of this UpdatePtrRecordRequest.
-        :type: UpdatePtrReq
+        :type body: :class:`huaweicloudsdkdns.v2.UpdatePtrReq`
         """
         self._body = body
 

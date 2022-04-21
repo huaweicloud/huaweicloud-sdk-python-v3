@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RevokeRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RevokeRequestBody:
     }
 
     def __init__(self, db_name=None, users=None):
-        """RevokeRequestBody - a model defined in huaweicloud sdk"""
+        """RevokeRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param db_name: 数据库名称。
+        :type db_name: str
+        :param users: 解除授权的用户列表。
+        :type users: list[:class:`huaweicloudsdkrds.v3.RevokeRequestBodyUsers`]
+        """
         
         
 
@@ -61,7 +68,7 @@ class RevokeRequestBody:
         数据库名称。
 
         :param db_name: The db_name of this RevokeRequestBody.
-        :type: str
+        :type db_name: str
         """
         self._db_name = db_name
 
@@ -72,7 +79,7 @@ class RevokeRequestBody:
         解除授权的用户列表。
 
         :return: The users of this RevokeRequestBody.
-        :rtype: list[RevokeRequestBodyUsers]
+        :rtype: list[:class:`huaweicloudsdkrds.v3.RevokeRequestBodyUsers`]
         """
         return self._users
 
@@ -83,7 +90,7 @@ class RevokeRequestBody:
         解除授权的用户列表。
 
         :param users: The users of this RevokeRequestBody.
-        :type: list[RevokeRequestBodyUsers]
+        :type users: list[:class:`huaweicloudsdkrds.v3.RevokeRequestBodyUsers`]
         """
         self._users = users
 

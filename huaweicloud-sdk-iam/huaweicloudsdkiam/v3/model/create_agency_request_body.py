@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateAgencyRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateAgencyRequestBody:
     }
 
     def __init__(self, agency=None):
-        """CreateAgencyRequestBody - a model defined in huaweicloud sdk"""
+        """CreateAgencyRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param agency: 
+        :type agency: :class:`huaweicloudsdkiam.v3.CreateAgencyOption`
+        """
         
         
 
@@ -45,7 +50,7 @@ class CreateAgencyRequestBody:
 
 
         :return: The agency of this CreateAgencyRequestBody.
-        :rtype: CreateAgencyOption
+        :rtype: :class:`huaweicloudsdkiam.v3.CreateAgencyOption`
         """
         return self._agency
 
@@ -55,7 +60,7 @@ class CreateAgencyRequestBody:
 
 
         :param agency: The agency of this CreateAgencyRequestBody.
-        :type: CreateAgencyOption
+        :type agency: :class:`huaweicloudsdkiam.v3.CreateAgencyOption`
         """
         self._agency = agency
 

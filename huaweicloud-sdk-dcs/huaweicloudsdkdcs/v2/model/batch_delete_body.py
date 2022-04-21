@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchDeleteBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchDeleteBody:
     }
 
     def __init__(self, instances=None):
-        """BatchDeleteBody - a model defined in huaweicloud sdk"""
+        """BatchDeleteBody
+
+        The model defined in huaweicloud sdk
+
+        :param instances: 实例的ID列表。  仅当URI中参数all_failure值为“false”或者其他值时，才需要配置该参数。 
+        :type instances: list[str]
+        """
         
         
 
@@ -58,7 +63,7 @@ class BatchDeleteBody:
         实例的ID列表。  仅当URI中参数all_failure值为“false”或者其他值时，才需要配置该参数。 
 
         :param instances: The instances of this BatchDeleteBody.
-        :type: list[str]
+        :type instances: list[str]
         """
         self._instances = instances
 

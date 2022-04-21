@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateGatewayResponseTypeV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateGatewayResponseTypeV2Response(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """UpdateGatewayResponseTypeV2Response - a model defined in huaweicloud sdk"""
+        """UpdateGatewayResponseTypeV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param body: 
+        :type body: dict(str, ResponseInfoResp)
+        """
         
         super(UpdateGatewayResponseTypeV2Response, self).__init__()
 
@@ -56,7 +61,7 @@ class UpdateGatewayResponseTypeV2Response(SdkResponse):
 
 
         :param body: The body of this UpdateGatewayResponseTypeV2Response.
-        :type: dict(str, ResponseInfoResp)
+        :type body: dict(str, ResponseInfoResp)
         """
         self._body = body
 

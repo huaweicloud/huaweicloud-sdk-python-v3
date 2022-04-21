@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InstanceDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -92,7 +91,75 @@ class InstanceDetail:
     }
 
     def __init__(self, publicip=None, exp_time=None, start_time=None, end_time=None, release_time=None, name=None, instance_id=None, private_ip=None, task_status=None, status=None, created=None, region=None, zone=None, availability_zone_display=None, vpc_id=None, subnet_id=None, security_group_id=None, specification=None, update=None, createinstance_status=None, fail_reason=None, instance_key=None, order_id=None, period_num=None, resource_id=None, bastion_type=None, public_id=None, alter_permit=None, bastion_version=None, new_bastion_version=None, instance_status=None, instance_description=None):
-        """InstanceDetail - a model defined in huaweicloud sdk"""
+        """InstanceDetail
+
+        The model defined in huaweicloud sdk
+
+        :param publicip: 弹性ip
+        :type publicip: str
+        :param exp_time: 过期时间
+        :type exp_time: str
+        :param start_time: 开始时间
+        :type start_time: str
+        :param end_time: 结束时间
+        :type end_time: str
+        :param release_time: 释放时间
+        :type release_time: str
+        :param name: 实例名称
+        :type name: str
+        :param instance_id: 实例的server id
+        :type instance_id: str
+        :param private_ip: 实例私有ip
+        :type private_ip: str
+        :param task_status: 实例当前的任务状态
+        :type task_status: str
+        :param status: 实例状态
+        :type status: str
+        :param created: 实例创建时间
+        :type created: str
+        :param region: 实例所在region
+        :type region: str
+        :param zone: 实例所在可用区id
+        :type zone: str
+        :param availability_zone_display: 实例所在可用区名称
+        :type availability_zone_display: str
+        :param vpc_id: 实例所在vpc的id
+        :type vpc_id: str
+        :param subnet_id: 实例所在子网的id
+        :type subnet_id: str
+        :param security_group_id: 实例所属的安全组的id
+        :type security_group_id: str
+        :param specification: 实例规格
+        :type specification: str
+        :param update: 实例镜像是否可以升级
+        :type update: str
+        :param createinstance_status: 在创建实例过程中的过程状态信息
+        :type createinstance_status: str
+        :param fail_reason: 创建实例失败原因
+        :type fail_reason: str
+        :param instance_key: 实例ID
+        :type instance_key: str
+        :param order_id: 订单id
+        :type order_id: str
+        :param period_num: 租户购买的时长
+        :type period_num: str
+        :param resource_id: 实例的资源id
+        :type resource_id: str
+        :param bastion_type: 堡垒机类型
+        :type bastion_type: str
+        :param public_id: 实例绑定的弹性IP的id
+        :type public_id: str
+        :param alter_permit: 前端是否显示扩容按钮
+        :type alter_permit: str
+        :param bastion_version: 实例镜像当前版本号
+        :type bastion_version: str
+        :param new_bastion_version: 实例镜像最新版本号
+        :type new_bastion_version: str
+        :param instance_status: 实例状态
+        :type instance_status: str
+        :param instance_description: 实例描述
+        :type instance_description: str
+        """
         
         
 
@@ -203,7 +270,7 @@ class InstanceDetail:
         弹性ip
 
         :param publicip: The publicip of this InstanceDetail.
-        :type: str
+        :type publicip: str
         """
         self._publicip = publicip
 
@@ -225,7 +292,7 @@ class InstanceDetail:
         过期时间
 
         :param exp_time: The exp_time of this InstanceDetail.
-        :type: str
+        :type exp_time: str
         """
         self._exp_time = exp_time
 
@@ -247,7 +314,7 @@ class InstanceDetail:
         开始时间
 
         :param start_time: The start_time of this InstanceDetail.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -269,7 +336,7 @@ class InstanceDetail:
         结束时间
 
         :param end_time: The end_time of this InstanceDetail.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -291,7 +358,7 @@ class InstanceDetail:
         释放时间
 
         :param release_time: The release_time of this InstanceDetail.
-        :type: str
+        :type release_time: str
         """
         self._release_time = release_time
 
@@ -313,7 +380,7 @@ class InstanceDetail:
         实例名称
 
         :param name: The name of this InstanceDetail.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -335,7 +402,7 @@ class InstanceDetail:
         实例的server id
 
         :param instance_id: The instance_id of this InstanceDetail.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -357,7 +424,7 @@ class InstanceDetail:
         实例私有ip
 
         :param private_ip: The private_ip of this InstanceDetail.
-        :type: str
+        :type private_ip: str
         """
         self._private_ip = private_ip
 
@@ -379,7 +446,7 @@ class InstanceDetail:
         实例当前的任务状态
 
         :param task_status: The task_status of this InstanceDetail.
-        :type: str
+        :type task_status: str
         """
         self._task_status = task_status
 
@@ -401,7 +468,7 @@ class InstanceDetail:
         实例状态
 
         :param status: The status of this InstanceDetail.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -423,7 +490,7 @@ class InstanceDetail:
         实例创建时间
 
         :param created: The created of this InstanceDetail.
-        :type: str
+        :type created: str
         """
         self._created = created
 
@@ -445,7 +512,7 @@ class InstanceDetail:
         实例所在region
 
         :param region: The region of this InstanceDetail.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -467,7 +534,7 @@ class InstanceDetail:
         实例所在可用区id
 
         :param zone: The zone of this InstanceDetail.
-        :type: str
+        :type zone: str
         """
         self._zone = zone
 
@@ -489,7 +556,7 @@ class InstanceDetail:
         实例所在可用区名称
 
         :param availability_zone_display: The availability_zone_display of this InstanceDetail.
-        :type: str
+        :type availability_zone_display: str
         """
         self._availability_zone_display = availability_zone_display
 
@@ -511,7 +578,7 @@ class InstanceDetail:
         实例所在vpc的id
 
         :param vpc_id: The vpc_id of this InstanceDetail.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -533,7 +600,7 @@ class InstanceDetail:
         实例所在子网的id
 
         :param subnet_id: The subnet_id of this InstanceDetail.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -555,7 +622,7 @@ class InstanceDetail:
         实例所属的安全组的id
 
         :param security_group_id: The security_group_id of this InstanceDetail.
-        :type: str
+        :type security_group_id: str
         """
         self._security_group_id = security_group_id
 
@@ -577,7 +644,7 @@ class InstanceDetail:
         实例规格
 
         :param specification: The specification of this InstanceDetail.
-        :type: str
+        :type specification: str
         """
         self._specification = specification
 
@@ -599,7 +666,7 @@ class InstanceDetail:
         实例镜像是否可以升级
 
         :param update: The update of this InstanceDetail.
-        :type: str
+        :type update: str
         """
         self._update = update
 
@@ -621,7 +688,7 @@ class InstanceDetail:
         在创建实例过程中的过程状态信息
 
         :param createinstance_status: The createinstance_status of this InstanceDetail.
-        :type: str
+        :type createinstance_status: str
         """
         self._createinstance_status = createinstance_status
 
@@ -643,7 +710,7 @@ class InstanceDetail:
         创建实例失败原因
 
         :param fail_reason: The fail_reason of this InstanceDetail.
-        :type: str
+        :type fail_reason: str
         """
         self._fail_reason = fail_reason
 
@@ -665,7 +732,7 @@ class InstanceDetail:
         实例ID
 
         :param instance_key: The instance_key of this InstanceDetail.
-        :type: str
+        :type instance_key: str
         """
         self._instance_key = instance_key
 
@@ -687,7 +754,7 @@ class InstanceDetail:
         订单id
 
         :param order_id: The order_id of this InstanceDetail.
-        :type: str
+        :type order_id: str
         """
         self._order_id = order_id
 
@@ -709,7 +776,7 @@ class InstanceDetail:
         租户购买的时长
 
         :param period_num: The period_num of this InstanceDetail.
-        :type: str
+        :type period_num: str
         """
         self._period_num = period_num
 
@@ -731,7 +798,7 @@ class InstanceDetail:
         实例的资源id
 
         :param resource_id: The resource_id of this InstanceDetail.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -753,7 +820,7 @@ class InstanceDetail:
         堡垒机类型
 
         :param bastion_type: The bastion_type of this InstanceDetail.
-        :type: str
+        :type bastion_type: str
         """
         self._bastion_type = bastion_type
 
@@ -775,7 +842,7 @@ class InstanceDetail:
         实例绑定的弹性IP的id
 
         :param public_id: The public_id of this InstanceDetail.
-        :type: str
+        :type public_id: str
         """
         self._public_id = public_id
 
@@ -797,7 +864,7 @@ class InstanceDetail:
         前端是否显示扩容按钮
 
         :param alter_permit: The alter_permit of this InstanceDetail.
-        :type: str
+        :type alter_permit: str
         """
         self._alter_permit = alter_permit
 
@@ -819,7 +886,7 @@ class InstanceDetail:
         实例镜像当前版本号
 
         :param bastion_version: The bastion_version of this InstanceDetail.
-        :type: str
+        :type bastion_version: str
         """
         self._bastion_version = bastion_version
 
@@ -841,7 +908,7 @@ class InstanceDetail:
         实例镜像最新版本号
 
         :param new_bastion_version: The new_bastion_version of this InstanceDetail.
-        :type: str
+        :type new_bastion_version: str
         """
         self._new_bastion_version = new_bastion_version
 
@@ -863,7 +930,7 @@ class InstanceDetail:
         实例状态
 
         :param instance_status: The instance_status of this InstanceDetail.
-        :type: str
+        :type instance_status: str
         """
         self._instance_status = instance_status
 
@@ -885,7 +952,7 @@ class InstanceDetail:
         实例描述
 
         :param instance_description: The instance_description of this InstanceDetail.
-        :type: str
+        :type instance_description: str
         """
         self._instance_description = instance_description
 

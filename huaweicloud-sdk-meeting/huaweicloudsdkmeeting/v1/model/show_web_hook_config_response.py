@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowWebHookConfigResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ShowWebHookConfigResponse(SdkResponse):
     }
 
     def __init__(self, return_code=None, return_desc=None, id=None, subscriber_id=None, url=None, status=None):
-        """ShowWebHookConfigResponse - a model defined in huaweicloud sdk"""
+        """ShowWebHookConfigResponse
+
+        The model defined in huaweicloud sdk
+
+        :param return_code: 结果码
+        :type return_code: int
+        :param return_desc: 结果描述
+        :type return_desc: str
+        :param id: 配置记录id
+        :type id: str
+        :param subscriber_id: 订阅ID
+        :type subscriber_id: str
+        :param url: 订阅url
+        :type url: str
+        :param status: 连接状态： 0表示已启用 ；1表示未启动； 2表示已锁定
+        :type status: int
+        """
         
         super(ShowWebHookConfigResponse, self).__init__()
 
@@ -82,7 +97,7 @@ class ShowWebHookConfigResponse(SdkResponse):
         结果码
 
         :param return_code: The return_code of this ShowWebHookConfigResponse.
-        :type: int
+        :type return_code: int
         """
         self._return_code = return_code
 
@@ -104,7 +119,7 @@ class ShowWebHookConfigResponse(SdkResponse):
         结果描述
 
         :param return_desc: The return_desc of this ShowWebHookConfigResponse.
-        :type: str
+        :type return_desc: str
         """
         self._return_desc = return_desc
 
@@ -126,7 +141,7 @@ class ShowWebHookConfigResponse(SdkResponse):
         配置记录id
 
         :param id: The id of this ShowWebHookConfigResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -148,7 +163,7 @@ class ShowWebHookConfigResponse(SdkResponse):
         订阅ID
 
         :param subscriber_id: The subscriber_id of this ShowWebHookConfigResponse.
-        :type: str
+        :type subscriber_id: str
         """
         self._subscriber_id = subscriber_id
 
@@ -170,7 +185,7 @@ class ShowWebHookConfigResponse(SdkResponse):
         订阅url
 
         :param url: The url of this ShowWebHookConfigResponse.
-        :type: str
+        :type url: str
         """
         self._url = url
 
@@ -192,7 +207,7 @@ class ShowWebHookConfigResponse(SdkResponse):
         连接状态： 0表示已启用 ；1表示未启动； 2表示已锁定
 
         :param status: The status of this ShowWebHookConfigResponse.
-        :type: int
+        :type status: int
         """
         self._status = status
 

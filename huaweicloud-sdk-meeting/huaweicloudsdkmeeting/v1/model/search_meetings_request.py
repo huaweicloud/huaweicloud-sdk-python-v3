@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SearchMeetingsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class SearchMeetingsRequest:
     }
 
     def __init__(self, user_uuid=None, offset=None, limit=None, query_all=None, search_key=None, query_conf_mode=None, sort_type=None, x_authorization_type=None, x_site_id=None):
-        """SearchMeetingsRequest - a model defined in huaweicloud sdk"""
+        """SearchMeetingsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param user_uuid: 待查询的会议预定者的uuid 仅管理员有权限查询权限范围内的所有账号；普通账号该字段无效，只能查询自己的。
+        :type user_uuid: str
+        :param offset: 指定返回的记录索引。该值必须大于等于0； 默认为0。
+        :type offset: int
+        :param limit: 指定返回的记录数，默认值由会议AS定义，默认是20，最大500条。
+        :type limit: int
+        :param query_all: 指定是否查询企业下所有用户的会议记录。 如果登录帐号不是企业管理员，则该字段无效。 如果该字段为true，则userUUID字段无效。 default : false
+        :type query_all: bool
+        :param search_key: 查询用来当作关键词的字符串。长度限制为1-128个字符。
+        :type search_key: str
+        :param query_conf_mode: - ADAY:  一天。 - AWEEK:  一周。 - AMONTH:  一个月。 - ALL:  查询所有。
+        :type query_conf_mode: str
+        :param sort_type: - ASC_StartTIME:  按会议开始时间升序排序。 - DSC_StartTIME:  按会议开始时间降序排序。
+        :type sort_type: str
+        :param x_authorization_type: 标识是否为第三方portal过来的请求。
+        :type x_authorization_type: str
+        :param x_site_id: 用于区分到哪个HCSO站点鉴权。
+        :type x_site_id: str
+        """
         
         
 
@@ -98,7 +119,7 @@ class SearchMeetingsRequest:
         待查询的会议预定者的uuid 仅管理员有权限查询权限范围内的所有账号；普通账号该字段无效，只能查询自己的。
 
         :param user_uuid: The user_uuid of this SearchMeetingsRequest.
-        :type: str
+        :type user_uuid: str
         """
         self._user_uuid = user_uuid
 
@@ -120,7 +141,7 @@ class SearchMeetingsRequest:
         指定返回的记录索引。该值必须大于等于0； 默认为0。
 
         :param offset: The offset of this SearchMeetingsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -142,7 +163,7 @@ class SearchMeetingsRequest:
         指定返回的记录数，默认值由会议AS定义，默认是20，最大500条。
 
         :param limit: The limit of this SearchMeetingsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -164,7 +185,7 @@ class SearchMeetingsRequest:
         指定是否查询企业下所有用户的会议记录。 如果登录帐号不是企业管理员，则该字段无效。 如果该字段为true，则userUUID字段无效。 default : false
 
         :param query_all: The query_all of this SearchMeetingsRequest.
-        :type: bool
+        :type query_all: bool
         """
         self._query_all = query_all
 
@@ -186,7 +207,7 @@ class SearchMeetingsRequest:
         查询用来当作关键词的字符串。长度限制为1-128个字符。
 
         :param search_key: The search_key of this SearchMeetingsRequest.
-        :type: str
+        :type search_key: str
         """
         self._search_key = search_key
 
@@ -208,7 +229,7 @@ class SearchMeetingsRequest:
         - ADAY:  一天。 - AWEEK:  一周。 - AMONTH:  一个月。 - ALL:  查询所有。
 
         :param query_conf_mode: The query_conf_mode of this SearchMeetingsRequest.
-        :type: str
+        :type query_conf_mode: str
         """
         self._query_conf_mode = query_conf_mode
 
@@ -230,7 +251,7 @@ class SearchMeetingsRequest:
         - ASC_StartTIME:  按会议开始时间升序排序。 - DSC_StartTIME:  按会议开始时间降序排序。
 
         :param sort_type: The sort_type of this SearchMeetingsRequest.
-        :type: str
+        :type sort_type: str
         """
         self._sort_type = sort_type
 
@@ -252,7 +273,7 @@ class SearchMeetingsRequest:
         标识是否为第三方portal过来的请求。
 
         :param x_authorization_type: The x_authorization_type of this SearchMeetingsRequest.
-        :type: str
+        :type x_authorization_type: str
         """
         self._x_authorization_type = x_authorization_type
 
@@ -274,7 +295,7 @@ class SearchMeetingsRequest:
         用于区分到哪个HCSO站点鉴权。
 
         :param x_site_id: The x_site_id of this SearchMeetingsRequest.
-        :type: str
+        :type x_site_id: str
         """
         self._x_site_id = x_site_id
 

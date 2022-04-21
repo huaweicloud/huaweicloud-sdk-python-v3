@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateSubNetworkInterfaceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateSubNetworkInterfaceRequest:
     }
 
     def __init__(self, body=None):
-        """CreateSubNetworkInterfaceRequest - a model defined in huaweicloud sdk"""
+        """CreateSubNetworkInterfaceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateSubNetworkInterfaceRequest
+        :type body: :class:`huaweicloudsdkvpc.v3.CreateSubNetworkInterfaceRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateSubNetworkInterfaceRequest:
 
 
         :return: The body of this CreateSubNetworkInterfaceRequest.
-        :rtype: CreateSubNetworkInterfaceRequestBody
+        :rtype: :class:`huaweicloudsdkvpc.v3.CreateSubNetworkInterfaceRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateSubNetworkInterfaceRequest:
 
 
         :param body: The body of this CreateSubNetworkInterfaceRequest.
-        :type: CreateSubNetworkInterfaceRequestBody
+        :type body: :class:`huaweicloudsdkvpc.v3.CreateSubNetworkInterfaceRequestBody`
         """
         self._body = body
 

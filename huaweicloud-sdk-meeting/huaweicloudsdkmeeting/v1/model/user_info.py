@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UserInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -84,7 +83,67 @@ class UserInfo:
     }
 
     def __init__(self, user_id=None, uclogin_account=None, service_account=None, number_ha1=None, alias1=None, company_id=None, sp_id=None, company_domain=None, realm=None, user_type=None, admin_type=None, name=None, name_en=None, is_bind_phone=None, free_user=None, third_account=None, vision_account=None, head_picture_url=None, password=None, status=None, paid_account=None, paid_password=None, we_link_user=None, app_id=None, tr069_account=None, corp_type=None, cloud_user_id=None, gray_user=None):
-        """UserInfo - a model defined in huaweicloud sdk"""
+        """UserInfo
+
+        The model defined in huaweicloud sdk
+
+        :param user_id: 用户ID
+        :type user_id: str
+        :param uclogin_account: 用户UC帐号
+        :type uclogin_account: str
+        :param service_account: 用户关联的号码，sip格式。 登录类型不一样获取到的号码也不同，如软终端和硬终端客户端登录获取的号码不同。若未关联号码，则为空。 例如：sip:+8675590121000@domain5.huawei.com 
+        :type service_account: str
+        :param number_ha1: 号码对应的HA1
+        :type number_ha1: str
+        :param alias1: 用户别名1
+        :type alias1: str
+        :param company_id: 企业ID
+        :type company_id: str
+        :param sp_id: SP ID
+        :type sp_id: str
+        :param company_domain: 企业域名
+        :type company_domain: str
+        :param realm: 本地鉴权：realm
+        :type realm: str
+        :param user_type: 用户类型。 * 0：系统管理用户 * 1：SP管理用户 * 2：企业用户 * 3：upath用户 * 4：硬终端默认用户 * 5：TE终端用户 * 6：顾客用户 * 7：公共设备用户 * 8：集群群组用户 * 9：USM用户 
+        :type user_type: int
+        :param admin_type: 管理员类型： * 0：默认管理员 * 1：普通管理员 * 2：非管理员，即普通企业成员，USERTYPE为2时有效 
+        :type admin_type: int
+        :param name: 用户姓名
+        :type name: str
+        :param name_en: 用户英文姓名
+        :type name_en: str
+        :param is_bind_phone: 标识是否绑定手机
+        :type is_bind_phone: bool
+        :param free_user: 标识是否是免费试用用户
+        :type free_user: bool
+        :param third_account: 用户的第三方账号，例如华为账号登录时获取到的union_id
+        :type third_account: str
+        :param vision_account: 智慧屏设备id
+        :type vision_account: str
+        :param head_picture_url: 头像链接
+        :type head_picture_url: str
+        :param password: 机机密码，用于智慧屏登录
+        :type password: str
+        :param status: 用户状态。 * 0：正常 * 1：停用 
+        :type status: int
+        :param paid_account: 付费用户机机账号，用于智慧屏登录
+        :type paid_account: str
+        :param paid_password: 付费用户机机密码，用于智慧屏登录
+        :type paid_password: str
+        :param we_link_user: 标识是否是WeLink用户
+        :type we_link_user: bool
+        :param app_id: 应用ID
+        :type app_id: str
+        :param tr069_account: tr069帐号
+        :type tr069_account: str
+        :param corp_type: 企业类型。 * 0：企业版 * 1：公共企业，手机、邮箱注册时会放到该企业内 * 2：公共企业，智慧屏用户自动开户时会放到该企业内 * 3：公共企业，大屏用户自动开户时会放到该企业内 * 4：公共TOC消费者企业 * 5：免费版 * 6：专业版 
+        :type corp_type: int
+        :param cloud_user_id: 华为云账号ID
+        :type cloud_user_id: str
+        :param gray_user: 标识是否是灰度用户
+        :type gray_user: bool
+        """
         
         
 
@@ -192,7 +251,7 @@ class UserInfo:
         用户ID
 
         :param user_id: The user_id of this UserInfo.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -214,7 +273,7 @@ class UserInfo:
         用户UC帐号
 
         :param uclogin_account: The uclogin_account of this UserInfo.
-        :type: str
+        :type uclogin_account: str
         """
         self._uclogin_account = uclogin_account
 
@@ -236,7 +295,7 @@ class UserInfo:
         用户关联的号码，sip格式。 登录类型不一样获取到的号码也不同，如软终端和硬终端客户端登录获取的号码不同。若未关联号码，则为空。 例如：sip:+8675590121000@domain5.huawei.com 
 
         :param service_account: The service_account of this UserInfo.
-        :type: str
+        :type service_account: str
         """
         self._service_account = service_account
 
@@ -258,7 +317,7 @@ class UserInfo:
         号码对应的HA1
 
         :param number_ha1: The number_ha1 of this UserInfo.
-        :type: str
+        :type number_ha1: str
         """
         self._number_ha1 = number_ha1
 
@@ -280,7 +339,7 @@ class UserInfo:
         用户别名1
 
         :param alias1: The alias1 of this UserInfo.
-        :type: str
+        :type alias1: str
         """
         self._alias1 = alias1
 
@@ -302,7 +361,7 @@ class UserInfo:
         企业ID
 
         :param company_id: The company_id of this UserInfo.
-        :type: str
+        :type company_id: str
         """
         self._company_id = company_id
 
@@ -324,7 +383,7 @@ class UserInfo:
         SP ID
 
         :param sp_id: The sp_id of this UserInfo.
-        :type: str
+        :type sp_id: str
         """
         self._sp_id = sp_id
 
@@ -346,7 +405,7 @@ class UserInfo:
         企业域名
 
         :param company_domain: The company_domain of this UserInfo.
-        :type: str
+        :type company_domain: str
         """
         self._company_domain = company_domain
 
@@ -368,7 +427,7 @@ class UserInfo:
         本地鉴权：realm
 
         :param realm: The realm of this UserInfo.
-        :type: str
+        :type realm: str
         """
         self._realm = realm
 
@@ -390,7 +449,7 @@ class UserInfo:
         用户类型。 * 0：系统管理用户 * 1：SP管理用户 * 2：企业用户 * 3：upath用户 * 4：硬终端默认用户 * 5：TE终端用户 * 6：顾客用户 * 7：公共设备用户 * 8：集群群组用户 * 9：USM用户 
 
         :param user_type: The user_type of this UserInfo.
-        :type: int
+        :type user_type: int
         """
         self._user_type = user_type
 
@@ -412,7 +471,7 @@ class UserInfo:
         管理员类型： * 0：默认管理员 * 1：普通管理员 * 2：非管理员，即普通企业成员，USERTYPE为2时有效 
 
         :param admin_type: The admin_type of this UserInfo.
-        :type: int
+        :type admin_type: int
         """
         self._admin_type = admin_type
 
@@ -434,7 +493,7 @@ class UserInfo:
         用户姓名
 
         :param name: The name of this UserInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -456,7 +515,7 @@ class UserInfo:
         用户英文姓名
 
         :param name_en: The name_en of this UserInfo.
-        :type: str
+        :type name_en: str
         """
         self._name_en = name_en
 
@@ -478,7 +537,7 @@ class UserInfo:
         标识是否绑定手机
 
         :param is_bind_phone: The is_bind_phone of this UserInfo.
-        :type: bool
+        :type is_bind_phone: bool
         """
         self._is_bind_phone = is_bind_phone
 
@@ -500,7 +559,7 @@ class UserInfo:
         标识是否是免费试用用户
 
         :param free_user: The free_user of this UserInfo.
-        :type: bool
+        :type free_user: bool
         """
         self._free_user = free_user
 
@@ -522,7 +581,7 @@ class UserInfo:
         用户的第三方账号，例如华为账号登录时获取到的union_id
 
         :param third_account: The third_account of this UserInfo.
-        :type: str
+        :type third_account: str
         """
         self._third_account = third_account
 
@@ -544,7 +603,7 @@ class UserInfo:
         智慧屏设备id
 
         :param vision_account: The vision_account of this UserInfo.
-        :type: str
+        :type vision_account: str
         """
         self._vision_account = vision_account
 
@@ -566,7 +625,7 @@ class UserInfo:
         头像链接
 
         :param head_picture_url: The head_picture_url of this UserInfo.
-        :type: str
+        :type head_picture_url: str
         """
         self._head_picture_url = head_picture_url
 
@@ -588,7 +647,7 @@ class UserInfo:
         机机密码，用于智慧屏登录
 
         :param password: The password of this UserInfo.
-        :type: str
+        :type password: str
         """
         self._password = password
 
@@ -610,7 +669,7 @@ class UserInfo:
         用户状态。 * 0：正常 * 1：停用 
 
         :param status: The status of this UserInfo.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -632,7 +691,7 @@ class UserInfo:
         付费用户机机账号，用于智慧屏登录
 
         :param paid_account: The paid_account of this UserInfo.
-        :type: str
+        :type paid_account: str
         """
         self._paid_account = paid_account
 
@@ -654,7 +713,7 @@ class UserInfo:
         付费用户机机密码，用于智慧屏登录
 
         :param paid_password: The paid_password of this UserInfo.
-        :type: str
+        :type paid_password: str
         """
         self._paid_password = paid_password
 
@@ -676,7 +735,7 @@ class UserInfo:
         标识是否是WeLink用户
 
         :param we_link_user: The we_link_user of this UserInfo.
-        :type: bool
+        :type we_link_user: bool
         """
         self._we_link_user = we_link_user
 
@@ -698,7 +757,7 @@ class UserInfo:
         应用ID
 
         :param app_id: The app_id of this UserInfo.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -720,7 +779,7 @@ class UserInfo:
         tr069帐号
 
         :param tr069_account: The tr069_account of this UserInfo.
-        :type: str
+        :type tr069_account: str
         """
         self._tr069_account = tr069_account
 
@@ -742,7 +801,7 @@ class UserInfo:
         企业类型。 * 0：企业版 * 1：公共企业，手机、邮箱注册时会放到该企业内 * 2：公共企业，智慧屏用户自动开户时会放到该企业内 * 3：公共企业，大屏用户自动开户时会放到该企业内 * 4：公共TOC消费者企业 * 5：免费版 * 6：专业版 
 
         :param corp_type: The corp_type of this UserInfo.
-        :type: int
+        :type corp_type: int
         """
         self._corp_type = corp_type
 
@@ -764,7 +823,7 @@ class UserInfo:
         华为云账号ID
 
         :param cloud_user_id: The cloud_user_id of this UserInfo.
-        :type: str
+        :type cloud_user_id: str
         """
         self._cloud_user_id = cloud_user_id
 
@@ -786,7 +845,7 @@ class UserInfo:
         标识是否是灰度用户
 
         :param gray_user: The gray_user of this UserInfo.
-        :type: bool
+        :type gray_user: bool
         """
         self._gray_user = gray_user
 

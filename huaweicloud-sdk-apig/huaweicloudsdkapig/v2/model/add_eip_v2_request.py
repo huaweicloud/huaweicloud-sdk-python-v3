@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddEipV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AddEipV2Request:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """AddEipV2Request - a model defined in huaweicloud sdk"""
+        """AddEipV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param body: Body of the AddEipV2Request
+        :type body: :class:`huaweicloudsdkapig.v2.EipBindReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class AddEipV2Request:
         实例ID
 
         :param instance_id: The instance_id of this AddEipV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -72,7 +79,7 @@ class AddEipV2Request:
 
 
         :return: The body of this AddEipV2Request.
-        :rtype: EipBindReq
+        :rtype: :class:`huaweicloudsdkapig.v2.EipBindReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class AddEipV2Request:
 
 
         :param body: The body of this AddEipV2Request.
-        :type: EipBindReq
+        :type body: :class:`huaweicloudsdkapig.v2.EipBindReq`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RepoCommitStatistics:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class RepoCommitStatistics:
     }
 
     def __init__(self, all_branch_commits_count=None, codelines=None, count=None, event=None, statistics=None, total=None):
-        """RepoCommitStatistics - a model defined in huaweicloud sdk"""
+        """RepoCommitStatistics
+
+        The model defined in huaweicloud sdk
+
+        :param all_branch_commits_count: 仓库总提交次数
+        :type all_branch_commits_count: int
+        :param codelines: 近15日每日代码提交行数
+        :type codelines: list[:class:`huaweicloudsdkcodehub.v3.RepoDailyCodeline`]
+        :param count: 对应分支仓库总提交次数
+        :type count: int
+        :param event: 
+        :type event: :class:`huaweicloudsdkcodehub.v3.RepoStatisticsEvent`
+        :param statistics: 仓库统计列表
+        :type statistics: list[:class:`huaweicloudsdkcodehub.v3.RepoStatistics`]
+        :param total: 仓库统计次数
+        :type total: int
+        """
         
         
 
@@ -83,7 +98,7 @@ class RepoCommitStatistics:
         仓库总提交次数
 
         :param all_branch_commits_count: The all_branch_commits_count of this RepoCommitStatistics.
-        :type: int
+        :type all_branch_commits_count: int
         """
         self._all_branch_commits_count = all_branch_commits_count
 
@@ -94,7 +109,7 @@ class RepoCommitStatistics:
         近15日每日代码提交行数
 
         :return: The codelines of this RepoCommitStatistics.
-        :rtype: list[RepoDailyCodeline]
+        :rtype: list[:class:`huaweicloudsdkcodehub.v3.RepoDailyCodeline`]
         """
         return self._codelines
 
@@ -105,7 +120,7 @@ class RepoCommitStatistics:
         近15日每日代码提交行数
 
         :param codelines: The codelines of this RepoCommitStatistics.
-        :type: list[RepoDailyCodeline]
+        :type codelines: list[:class:`huaweicloudsdkcodehub.v3.RepoDailyCodeline`]
         """
         self._codelines = codelines
 
@@ -127,7 +142,7 @@ class RepoCommitStatistics:
         对应分支仓库总提交次数
 
         :param count: The count of this RepoCommitStatistics.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -137,7 +152,7 @@ class RepoCommitStatistics:
 
 
         :return: The event of this RepoCommitStatistics.
-        :rtype: RepoStatisticsEvent
+        :rtype: :class:`huaweicloudsdkcodehub.v3.RepoStatisticsEvent`
         """
         return self._event
 
@@ -147,7 +162,7 @@ class RepoCommitStatistics:
 
 
         :param event: The event of this RepoCommitStatistics.
-        :type: RepoStatisticsEvent
+        :type event: :class:`huaweicloudsdkcodehub.v3.RepoStatisticsEvent`
         """
         self._event = event
 
@@ -158,7 +173,7 @@ class RepoCommitStatistics:
         仓库统计列表
 
         :return: The statistics of this RepoCommitStatistics.
-        :rtype: list[RepoStatistics]
+        :rtype: list[:class:`huaweicloudsdkcodehub.v3.RepoStatistics`]
         """
         return self._statistics
 
@@ -169,7 +184,7 @@ class RepoCommitStatistics:
         仓库统计列表
 
         :param statistics: The statistics of this RepoCommitStatistics.
-        :type: list[RepoStatistics]
+        :type statistics: list[:class:`huaweicloudsdkcodehub.v3.RepoStatistics`]
         """
         self._statistics = statistics
 
@@ -191,7 +206,7 @@ class RepoCommitStatistics:
         仓库统计次数
 
         :param total: The total of this RepoCommitStatistics.
-        :type: int
+        :type total: int
         """
         self._total = total
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDeviceTemplatesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListDeviceTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, device_templates=None, count=None):
-        """ListDeviceTemplatesResponse - a model defined in huaweicloud sdk"""
+        """ListDeviceTemplatesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param device_templates: 终端设备属性
+        :type device_templates: list[:class:`huaweicloudsdkief.v1.EdgemgrDevice`]
+        :param count: 模板数量
+        :type count: int
+        """
         
         super(ListDeviceTemplatesResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListDeviceTemplatesResponse(SdkResponse):
         终端设备属性
 
         :return: The device_templates of this ListDeviceTemplatesResponse.
-        :rtype: list[EdgemgrDevice]
+        :rtype: list[:class:`huaweicloudsdkief.v1.EdgemgrDevice`]
         """
         return self._device_templates
 
@@ -63,7 +70,7 @@ class ListDeviceTemplatesResponse(SdkResponse):
         终端设备属性
 
         :param device_templates: The device_templates of this ListDeviceTemplatesResponse.
-        :type: list[EdgemgrDevice]
+        :type device_templates: list[:class:`huaweicloudsdkief.v1.EdgemgrDevice`]
         """
         self._device_templates = device_templates
 
@@ -85,7 +92,7 @@ class ListDeviceTemplatesResponse(SdkResponse):
         模板数量
 
         :param count: The count of this ListDeviceTemplatesResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

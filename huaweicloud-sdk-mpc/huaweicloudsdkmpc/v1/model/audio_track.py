@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AudioTrack:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class AudioTrack:
     }
 
     def __init__(self, type=None, left=None, right=None):
-        """AudioTrack - a model defined in huaweicloud sdk"""
+        """AudioTrack
+
+        The model defined in huaweicloud sdk
+
+        :param type: 音轨选取方式。 - 0：默认选取 - 1：手动选择 
+        :type type: int
+        :param left: 选取左声道所在的音轨编号。 
+        :type left: int
+        :param right: 选取右声道所在的音轨编号。 
+        :type right: int
+        """
         
         
 
@@ -68,7 +77,7 @@ class AudioTrack:
         音轨选取方式。 - 0：默认选取 - 1：手动选择 
 
         :param type: The type of this AudioTrack.
-        :type: int
+        :type type: int
         """
         self._type = type
 
@@ -90,7 +99,7 @@ class AudioTrack:
         选取左声道所在的音轨编号。 
 
         :param left: The left of this AudioTrack.
-        :type: int
+        :type left: int
         """
         self._left = left
 
@@ -112,7 +121,7 @@ class AudioTrack:
         选取右声道所在的音轨编号。 
 
         :param right: The right of this AudioTrack.
-        :type: int
+        :type right: int
         """
         self._right = right
 

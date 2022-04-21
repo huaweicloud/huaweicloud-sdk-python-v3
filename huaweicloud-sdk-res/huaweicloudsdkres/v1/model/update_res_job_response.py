@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateResJobResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateResJobResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None):
-        """UpdateResJobResponse - a model defined in huaweicloud sdk"""
+        """UpdateResJobResponse
+
+        The model defined in huaweicloud sdk
+
+        :param is_success: 是否成功
+        :type is_success: bool
+        :param message: 返回消息
+        :type message: str
+        """
         
         super(UpdateResJobResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class UpdateResJobResponse(SdkResponse):
         是否成功
 
         :param is_success: The is_success of this UpdateResJobResponse.
-        :type: bool
+        :type is_success: bool
         """
         self._is_success = is_success
 
@@ -85,7 +92,7 @@ class UpdateResJobResponse(SdkResponse):
         返回消息
 
         :param message: The message of this UpdateResJobResponse.
-        :type: str
+        :type message: str
         """
         self._message = message
 

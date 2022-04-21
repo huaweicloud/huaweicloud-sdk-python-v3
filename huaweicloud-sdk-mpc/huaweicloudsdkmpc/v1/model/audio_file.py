@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AudioFile:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AudioFile:
     }
 
     def __init__(self, tracks_info=None, input=None):
-        """AudioFile - a model defined in huaweicloud sdk"""
+        """AudioFile
+
+        The model defined in huaweicloud sdk
+
+        :param tracks_info: 音轨信息
+        :type tracks_info: list[:class:`huaweicloudsdkmpc.v1.TracksInfo`]
+        :param input: 
+        :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        """
         
         
 
@@ -52,7 +59,7 @@ class AudioFile:
         音轨信息
 
         :return: The tracks_info of this AudioFile.
-        :rtype: list[TracksInfo]
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.TracksInfo`]
         """
         return self._tracks_info
 
@@ -63,7 +70,7 @@ class AudioFile:
         音轨信息
 
         :param tracks_info: The tracks_info of this AudioFile.
-        :type: list[TracksInfo]
+        :type tracks_info: list[:class:`huaweicloudsdkmpc.v1.TracksInfo`]
         """
         self._tracks_info = tracks_info
 
@@ -73,7 +80,7 @@ class AudioFile:
 
 
         :return: The input of this AudioFile.
-        :rtype: ObsObjInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         return self._input
 
@@ -83,7 +90,7 @@ class AudioFile:
 
 
         :param input: The input of this AudioFile.
-        :type: ObsObjInfo
+        :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         self._input = input
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateDatasourceInfoResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class CreateDatasourceInfoResponse(SdkResponse):
     }
 
     def __init__(self, datasource_id=None, datasource_name=None, datasource_type=None, vpc_id=None, app_id=None, app_name=None, instance_id=None, create_time=None, update_time=None, custom_plugin_id=None, content=None, description=None, app_permission=None):
-        """CreateDatasourceInfoResponse - a model defined in huaweicloud sdk"""
+        """CreateDatasourceInfoResponse
+
+        The model defined in huaweicloud sdk
+
+        :param datasource_id: 数据源ID
+        :type datasource_id: str
+        :param datasource_name: 数据源名称
+        :type datasource_name: str
+        :param datasource_type: 数据源类型 - DWS - MYSQL - KAFKA - API - OBS - SAP - MRSHBASE - MRSHDFS - MRSHIVE - WEBSOCKET - SQLSERVER - ORACLE - POSTGRESQL - REDIS - MONGODB - DIS - HL7 - RABBITMQ - SNMP - IBMMQ - CUSTOMIZED (自定义类型) - ACTIVEMQ - ARTEMISMQ - FTP - HIVE - HANA - FIKAFKA - MRSKAFKA - FIHDFS - FIHIVE - GAUSS200 - GAUSS100 - LDAP - DB2 - TAURUS
+        :type datasource_type: str
+        :param vpc_id: 数据源所属虚拟私有云VpcId
+        :type vpc_id: str
+        :param app_id: 数据源所属应用ID
+        :type app_id: str
+        :param app_name: 数据源所属应用名称
+        :type app_name: str
+        :param instance_id: 数据源所属实例Id
+        :type instance_id: str
+        :param create_time: 数据源创建时间
+        :type create_time: int
+        :param update_time: 数据源修改时间
+        :type update_time: int
+        :param custom_plugin_id: 数据源所属连接器Id
+        :type custom_plugin_id: str
+        :param content: 
+        :type content: :class:`huaweicloudsdkroma.v2.Content`
+        :param description: 数据源描述
+        :type description: str
+        :param app_permission: 集成应用权限信息 - read (读权限) - access (调用权限) - delete (删除权限) - modify (修改权限)
+        :type app_permission: list[str]
+        """
         
         super(CreateDatasourceInfoResponse, self).__init__()
 
@@ -118,7 +147,7 @@ class CreateDatasourceInfoResponse(SdkResponse):
         数据源ID
 
         :param datasource_id: The datasource_id of this CreateDatasourceInfoResponse.
-        :type: str
+        :type datasource_id: str
         """
         self._datasource_id = datasource_id
 
@@ -140,7 +169,7 @@ class CreateDatasourceInfoResponse(SdkResponse):
         数据源名称
 
         :param datasource_name: The datasource_name of this CreateDatasourceInfoResponse.
-        :type: str
+        :type datasource_name: str
         """
         self._datasource_name = datasource_name
 
@@ -162,7 +191,7 @@ class CreateDatasourceInfoResponse(SdkResponse):
         数据源类型 - DWS - MYSQL - KAFKA - API - OBS - SAP - MRSHBASE - MRSHDFS - MRSHIVE - WEBSOCKET - SQLSERVER - ORACLE - POSTGRESQL - REDIS - MONGODB - DIS - HL7 - RABBITMQ - SNMP - IBMMQ - CUSTOMIZED (自定义类型) - ACTIVEMQ - ARTEMISMQ - FTP - HIVE - HANA - FIKAFKA - MRSKAFKA - FIHDFS - FIHIVE - GAUSS200 - GAUSS100 - LDAP - DB2 - TAURUS
 
         :param datasource_type: The datasource_type of this CreateDatasourceInfoResponse.
-        :type: str
+        :type datasource_type: str
         """
         self._datasource_type = datasource_type
 
@@ -184,7 +213,7 @@ class CreateDatasourceInfoResponse(SdkResponse):
         数据源所属虚拟私有云VpcId
 
         :param vpc_id: The vpc_id of this CreateDatasourceInfoResponse.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -206,7 +235,7 @@ class CreateDatasourceInfoResponse(SdkResponse):
         数据源所属应用ID
 
         :param app_id: The app_id of this CreateDatasourceInfoResponse.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -228,7 +257,7 @@ class CreateDatasourceInfoResponse(SdkResponse):
         数据源所属应用名称
 
         :param app_name: The app_name of this CreateDatasourceInfoResponse.
-        :type: str
+        :type app_name: str
         """
         self._app_name = app_name
 
@@ -250,7 +279,7 @@ class CreateDatasourceInfoResponse(SdkResponse):
         数据源所属实例Id
 
         :param instance_id: The instance_id of this CreateDatasourceInfoResponse.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -272,7 +301,7 @@ class CreateDatasourceInfoResponse(SdkResponse):
         数据源创建时间
 
         :param create_time: The create_time of this CreateDatasourceInfoResponse.
-        :type: int
+        :type create_time: int
         """
         self._create_time = create_time
 
@@ -294,7 +323,7 @@ class CreateDatasourceInfoResponse(SdkResponse):
         数据源修改时间
 
         :param update_time: The update_time of this CreateDatasourceInfoResponse.
-        :type: int
+        :type update_time: int
         """
         self._update_time = update_time
 
@@ -316,7 +345,7 @@ class CreateDatasourceInfoResponse(SdkResponse):
         数据源所属连接器Id
 
         :param custom_plugin_id: The custom_plugin_id of this CreateDatasourceInfoResponse.
-        :type: str
+        :type custom_plugin_id: str
         """
         self._custom_plugin_id = custom_plugin_id
 
@@ -326,7 +355,7 @@ class CreateDatasourceInfoResponse(SdkResponse):
 
 
         :return: The content of this CreateDatasourceInfoResponse.
-        :rtype: Content
+        :rtype: :class:`huaweicloudsdkroma.v2.Content`
         """
         return self._content
 
@@ -336,7 +365,7 @@ class CreateDatasourceInfoResponse(SdkResponse):
 
 
         :param content: The content of this CreateDatasourceInfoResponse.
-        :type: Content
+        :type content: :class:`huaweicloudsdkroma.v2.Content`
         """
         self._content = content
 
@@ -358,7 +387,7 @@ class CreateDatasourceInfoResponse(SdkResponse):
         数据源描述
 
         :param description: The description of this CreateDatasourceInfoResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -380,7 +409,7 @@ class CreateDatasourceInfoResponse(SdkResponse):
         集成应用权限信息 - read (读权限) - access (调用权限) - delete (删除权限) - modify (修改权限)
 
         :param app_permission: The app_permission of this CreateDatasourceInfoResponse.
-        :type: list[str]
+        :type app_permission: list[str]
         """
         self._app_permission = app_permission
 

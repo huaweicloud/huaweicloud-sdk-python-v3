@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CheckRecordIssueCountsInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CheckRecordIssueCountsInfo:
     }
 
     def __init__(self, critical=None, serious=None, normal=None, prompt=None):
-        """CheckRecordIssueCountsInfo - a model defined in huaweicloud sdk"""
+        """CheckRecordIssueCountsInfo
+
+        The model defined in huaweicloud sdk
+
+        :param critical: 致命问题
+        :type critical: int
+        :param serious: 严重问题
+        :type serious: int
+        :param normal: 常规问题
+        :type normal: int
+        :param prompt: 提示问题
+        :type prompt: int
+        """
         
         
 
@@ -73,7 +84,7 @@ class CheckRecordIssueCountsInfo:
         致命问题
 
         :param critical: The critical of this CheckRecordIssueCountsInfo.
-        :type: int
+        :type critical: int
         """
         self._critical = critical
 
@@ -95,7 +106,7 @@ class CheckRecordIssueCountsInfo:
         严重问题
 
         :param serious: The serious of this CheckRecordIssueCountsInfo.
-        :type: int
+        :type serious: int
         """
         self._serious = serious
 
@@ -117,7 +128,7 @@ class CheckRecordIssueCountsInfo:
         常规问题
 
         :param normal: The normal of this CheckRecordIssueCountsInfo.
-        :type: int
+        :type normal: int
         """
         self._normal = normal
 
@@ -139,7 +150,7 @@ class CheckRecordIssueCountsInfo:
         提示问题
 
         :param prompt: The prompt of this CheckRecordIssueCountsInfo.
-        :type: int
+        :type prompt: int
         """
         self._prompt = prompt
 

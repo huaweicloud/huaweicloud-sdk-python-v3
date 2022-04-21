@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CheckpointCreateSkippedResource:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class CheckpointCreateSkippedResource:
     }
 
     def __init__(self, id=None, type=None, name=None, code=None, reason=None):
-        """CheckpointCreateSkippedResource - a model defined in huaweicloud sdk"""
+        """CheckpointCreateSkippedResource
+
+        The model defined in huaweicloud sdk
+
+        :param id: 资源ID
+        :type id: str
+        :param type: 资源类型
+        :type type: str
+        :param name: 资源名称
+        :type name: str
+        :param code: 请参见[错误码](ErrorCode.xml)。
+        :type code: str
+        :param reason: 跳过原因，例如：该资源正在备份中。
+        :type reason: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class CheckpointCreateSkippedResource:
         资源ID
 
         :param id: The id of this CheckpointCreateSkippedResource.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -100,7 +113,7 @@ class CheckpointCreateSkippedResource:
         资源类型
 
         :param type: The type of this CheckpointCreateSkippedResource.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -122,7 +135,7 @@ class CheckpointCreateSkippedResource:
         资源名称
 
         :param name: The name of this CheckpointCreateSkippedResource.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -144,7 +157,7 @@ class CheckpointCreateSkippedResource:
         请参见[错误码](ErrorCode.xml)。
 
         :param code: The code of this CheckpointCreateSkippedResource.
-        :type: str
+        :type code: str
         """
         self._code = code
 
@@ -166,7 +179,7 @@ class CheckpointCreateSkippedResource:
         跳过原因，例如：该资源正在备份中。
 
         :param reason: The reason of this CheckpointCreateSkippedResource.
-        :type: str
+        :type reason: str
         """
         self._reason = reason
 

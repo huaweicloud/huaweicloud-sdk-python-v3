@@ -52,21 +52,17 @@ class CodeCheckAsyncClient(Client):
         """查询任务规则集的检查参数
 
         查询任务规则集的检查参数
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CheckParametersRequest request
-        :return: CheckParametersResponse
+        :param request: Request instance for CheckParameters
+        :type request: :class:`huaweicloudsdkcodecheck.v2.CheckParametersRequest`
+        :rtype: :class:`huaweicloudsdkcodecheck.v2.CheckParametersResponse`
         """
         return self.check_parameters_with_http_info(request)
 
     def check_parameters_with_http_info(self, request):
-        """查询任务规则集的检查参数
-
-        查询任务规则集的检查参数
-
-        :param CheckParametersRequest request
-        :return: CheckParametersResponse
-        """
-
         all_params = ['project_id', 'task_id', 'ruleset_id', 'language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -116,26 +112,21 @@ class CodeCheckAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def check_record_async(self, request):
         """历史扫描结果查询
 
         提供每次扫描的问题数量统计
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CheckRecordRequest request
-        :return: CheckRecordResponse
+        :param request: Request instance for CheckRecord
+        :type request: :class:`huaweicloudsdkcodecheck.v2.CheckRecordRequest`
+        :rtype: :class:`huaweicloudsdkcodecheck.v2.CheckRecordResponse`
         """
         return self.check_record_with_http_info(request)
 
     def check_record_with_http_info(self, request):
-        """历史扫描结果查询
-
-        提供每次扫描的问题数量统计
-
-        :param CheckRecordRequest request
-        :return: CheckRecordResponse
-        """
-
         all_params = ['project_id', 'task_id', 'offset', 'limit', 'start_time', 'end_time']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -189,26 +180,21 @@ class CodeCheckAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def check_ruleset_parameters_async(self, request):
         """查询任务规则集的检查参数
 
         查询任务规则集的检查参数
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CheckRulesetParametersRequest request
-        :return: CheckRulesetParametersResponse
+        :param request: Request instance for CheckRulesetParameters
+        :type request: :class:`huaweicloudsdkcodecheck.v2.CheckRulesetParametersRequest`
+        :rtype: :class:`huaweicloudsdkcodecheck.v2.CheckRulesetParametersResponse`
         """
         return self.check_ruleset_parameters_with_http_info(request)
 
     def check_ruleset_parameters_with_http_info(self, request):
-        """查询任务规则集的检查参数
-
-        查询任务规则集的检查参数
-
-        :param CheckRulesetParametersRequest request
-        :return: CheckRulesetParametersResponse
-        """
-
         all_params = ['project_id', 'task_id', 'ruleset_id', 'language', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -262,26 +248,21 @@ class CodeCheckAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_ruleset_async(self, request):
         """创建自定义规则集
 
         可根据需求灵活的组合规则。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateRulesetRequest request
-        :return: CreateRulesetResponse
+        :param request: Request instance for CreateRuleset
+        :type request: :class:`huaweicloudsdkcodecheck.v2.CreateRulesetRequest`
+        :rtype: :class:`huaweicloudsdkcodecheck.v2.CreateRulesetResponse`
         """
         return self.create_ruleset_with_http_info(request)
 
     def create_ruleset_with_http_info(self, request):
-        """创建自定义规则集
-
-        可根据需求灵活的组合规则。
-
-        :param CreateRulesetRequest request
-        :return: CreateRulesetResponse
-        """
-
         all_params = ['create_ruleset_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -325,26 +306,21 @@ class CodeCheckAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_task_async(self, request):
         """新建检查任务
 
         新建检查任务但是不执行。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateTaskRequest request
-        :return: CreateTaskResponse
+        :param request: Request instance for CreateTask
+        :type request: :class:`huaweicloudsdkcodecheck.v2.CreateTaskRequest`
+        :rtype: :class:`huaweicloudsdkcodecheck.v2.CreateTaskResponse`
         """
         return self.create_task_with_http_info(request)
 
     def create_task_with_http_info(self, request):
-        """新建检查任务
-
-        新建检查任务但是不执行。
-
-        :param CreateTaskRequest request
-        :return: CreateTaskResponse
-        """
-
         all_params = ['project_id', 'create_task_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -390,26 +366,21 @@ class CodeCheckAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_ruleset_async(self, request):
         """删除自定义规则集
 
         删除自定义规则集，正在使用中的或默认规则集不能删除
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteRulesetRequest request
-        :return: DeleteRulesetResponse
+        :param request: Request instance for DeleteRuleset
+        :type request: :class:`huaweicloudsdkcodecheck.v2.DeleteRulesetRequest`
+        :rtype: :class:`huaweicloudsdkcodecheck.v2.DeleteRulesetResponse`
         """
         return self.delete_ruleset_with_http_info(request)
 
     def delete_ruleset_with_http_info(self, request):
-        """删除自定义规则集
-
-        删除自定义规则集，正在使用中的或默认规则集不能删除
-
-        :param DeleteRulesetRequest request
-        :return: DeleteRulesetResponse
-        """
-
         all_params = ['project_id', 'ruleset_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -455,26 +426,21 @@ class CodeCheckAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_task_async(self, request):
         """删除检查任务
 
         删除检查任务，执行中的任务删除无法再查看
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteTaskRequest request
-        :return: DeleteTaskResponse
+        :param request: Request instance for DeleteTask
+        :type request: :class:`huaweicloudsdkcodecheck.v2.DeleteTaskRequest`
+        :rtype: :class:`huaweicloudsdkcodecheck.v2.DeleteTaskResponse`
         """
         return self.delete_task_with_http_info(request)
 
     def delete_task_with_http_info(self, request):
-        """删除检查任务
-
-        删除检查任务，执行中的任务删除无法再查看
-
-        :param DeleteTaskRequest request
-        :return: DeleteTaskResponse
-        """
-
         all_params = ['task_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -518,26 +484,21 @@ class CodeCheckAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_rules_async(self, request):
         """获取规则列表接口
 
         根据语言、问题级别等条件查询规则列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListRulesRequest request
-        :return: ListRulesResponse
+        :param request: Request instance for ListRules
+        :type request: :class:`huaweicloudsdkcodecheck.v2.ListRulesRequest`
+        :rtype: :class:`huaweicloudsdkcodecheck.v2.ListRulesResponse`
         """
         return self.list_rules_with_http_info(request)
 
     def list_rules_with_http_info(self, request):
-        """获取规则列表接口
-
-        根据语言、问题级别等条件查询规则列表。
-
-        :param ListRulesRequest request
-        :return: ListRulesResponse
-        """
-
         all_params = ['rule_languages', 'rule_severity', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -587,26 +548,21 @@ class CodeCheckAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_rulesets_async(self, request):
         """查询规则集列表
 
         根据项目ID、语言等条件查询规则集列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListRulesetsRequest request
-        :return: ListRulesetsResponse
+        :param request: Request instance for ListRulesets
+        :type request: :class:`huaweicloudsdkcodecheck.v2.ListRulesetsRequest`
+        :rtype: :class:`huaweicloudsdkcodecheck.v2.ListRulesetsResponse`
         """
         return self.list_rulesets_with_http_info(request)
 
     def list_rulesets_with_http_info(self, request):
-        """查询规则集列表
-
-        根据项目ID、语言等条件查询规则集列表。
-
-        :param ListRulesetsRequest request
-        :return: ListRulesetsResponse
-        """
-
         all_params = ['project_id', 'category', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -656,26 +612,21 @@ class CodeCheckAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_task_parameter_async(self, request):
         """任务配置检查参数
 
         任务配置检查参数
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListTaskParameterRequest request
-        :return: ListTaskParameterResponse
+        :param request: Request instance for ListTaskParameter
+        :type request: :class:`huaweicloudsdkcodecheck.v2.ListTaskParameterRequest`
+        :rtype: :class:`huaweicloudsdkcodecheck.v2.ListTaskParameterResponse`
         """
         return self.list_task_parameter_with_http_info(request)
 
     def list_task_parameter_with_http_info(self, request):
-        """任务配置检查参数
-
-        任务配置检查参数
-
-        :param ListTaskParameterRequest request
-        :return: ListTaskParameterResponse
-        """
-
         all_params = ['project_id', 'task_id', 'list_task_parameter_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -723,26 +674,21 @@ class CodeCheckAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_task_ruleset_async(self, request):
         """查询任务的已选规则集列表
 
         查询任务的已选规则集列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListTaskRulesetRequest request
-        :return: ListTaskRulesetResponse
+        :param request: Request instance for ListTaskRuleset
+        :type request: :class:`huaweicloudsdkcodecheck.v2.ListTaskRulesetRequest`
+        :rtype: :class:`huaweicloudsdkcodecheck.v2.ListTaskRulesetResponse`
         """
         return self.list_task_ruleset_with_http_info(request)
 
     def list_task_ruleset_with_http_info(self, request):
-        """查询任务的已选规则集列表
-
-        查询任务的已选规则集列表。
-
-        :param ListTaskRulesetRequest request
-        :return: ListTaskRulesetResponse
-        """
-
         all_params = ['project_id', 'task_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -788,26 +734,21 @@ class CodeCheckAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_template_rules_async(self, request):
         """查看规则集的规则列表
 
         根据项目ID、规则集ID等条件查询规则列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListTemplateRulesRequest request
-        :return: ListTemplateRulesResponse
+        :param request: Request instance for ListTemplateRules
+        :type request: :class:`huaweicloudsdkcodecheck.v2.ListTemplateRulesRequest`
+        :rtype: :class:`huaweicloudsdkcodecheck.v2.ListTemplateRulesResponse`
         """
         return self.list_template_rules_with_http_info(request)
 
     def list_template_rules_with_http_info(self, request):
-        """查看规则集的规则列表
-
-        根据项目ID、规则集ID等条件查询规则列表。
-
-        :param ListTemplateRulesRequest request
-        :return: ListTemplateRulesResponse
-        """
-
         all_params = ['project_id', 'ruleset_id', 'types', 'languages', 'tags', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -863,26 +804,21 @@ class CodeCheckAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def run_task_async(self, request):
         """执行检查任务
 
         执行检查任务。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param RunTaskRequest request
-        :return: RunTaskResponse
+        :param request: Request instance for RunTask
+        :type request: :class:`huaweicloudsdkcodecheck.v2.RunTaskRequest`
+        :rtype: :class:`huaweicloudsdkcodecheck.v2.RunTaskResponse`
         """
         return self.run_task_with_http_info(request)
 
     def run_task_with_http_info(self, request):
-        """执行检查任务
-
-        执行检查任务。
-
-        :param RunTaskRequest request
-        :return: RunTaskResponse
-        """
-
         all_params = ['task_id', 'run_task_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -928,26 +864,21 @@ class CodeCheckAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def set_defaul_template_async(self, request):
         """设置每个项目对应语言的默认规则集配置
 
         设置每个项目对应语言的默认规则集配置。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param SetDefaulTemplateRequest request
-        :return: SetDefaulTemplateResponse
+        :param request: Request instance for SetDefaulTemplate
+        :type request: :class:`huaweicloudsdkcodecheck.v2.SetDefaulTemplateRequest`
+        :rtype: :class:`huaweicloudsdkcodecheck.v2.SetDefaulTemplateResponse`
         """
         return self.set_defaul_template_with_http_info(request)
 
     def set_defaul_template_with_http_info(self, request):
-        """设置每个项目对应语言的默认规则集配置
-
-        设置每个项目对应语言的默认规则集配置。
-
-        :param SetDefaulTemplateRequest request
-        :return: SetDefaulTemplateResponse
-        """
-
         all_params = ['project_id', 'ruleset_id', 'language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -995,26 +926,21 @@ class CodeCheckAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_progress_detail_async(self, request):
         """查询任务执行状态
 
         根据任务ID查询任务执行状态。任务状态：0表示检查中，1表示检查失败，2表示检查成功，3表示任务中止。只有正在检查中才有进度的详细信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowProgressDetailRequest request
-        :return: ShowProgressDetailResponse
+        :param request: Request instance for ShowProgressDetail
+        :type request: :class:`huaweicloudsdkcodecheck.v2.ShowProgressDetailRequest`
+        :rtype: :class:`huaweicloudsdkcodecheck.v2.ShowProgressDetailResponse`
         """
         return self.show_progress_detail_with_http_info(request)
 
     def show_progress_detail_with_http_info(self, request):
-        """查询任务执行状态
-
-        根据任务ID查询任务执行状态。任务状态：0表示检查中，1表示检查失败，2表示检查成功，3表示任务中止。只有正在检查中才有进度的详细信息。
-
-        :param ShowProgressDetailRequest request
-        :return: ShowProgressDetailResponse
-        """
-
         all_params = ['task_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1058,26 +984,21 @@ class CodeCheckAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_task_cmetrics_async(self, request):
         """查询cmertrics缺陷概要
 
         根据检查任务ID查询cmertrics缺陷概要。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowTaskCmetricsRequest request
-        :return: ShowTaskCmetricsResponse
+        :param request: Request instance for ShowTaskCmetrics
+        :type request: :class:`huaweicloudsdkcodecheck.v2.ShowTaskCmetricsRequest`
+        :rtype: :class:`huaweicloudsdkcodecheck.v2.ShowTaskCmetricsResponse`
         """
         return self.show_task_cmetrics_with_http_info(request)
 
     def show_task_cmetrics_with_http_info(self, request):
-        """查询cmertrics缺陷概要
-
-        根据检查任务ID查询cmertrics缺陷概要。
-
-        :param ShowTaskCmetricsRequest request
-        :return: ShowTaskCmetricsResponse
-        """
-
         all_params = ['project_id', 'task_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1123,26 +1044,21 @@ class CodeCheckAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_task_defects_async(self, request):
         """查询缺陷详情
 
         根据检查任务ID分页查询缺陷结果详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowTaskDefectsRequest request
-        :return: ShowTaskDefectsResponse
+        :param request: Request instance for ShowTaskDefects
+        :type request: :class:`huaweicloudsdkcodecheck.v2.ShowTaskDefectsRequest`
+        :rtype: :class:`huaweicloudsdkcodecheck.v2.ShowTaskDefectsResponse`
         """
         return self.show_task_defects_with_http_info(request)
 
     def show_task_defects_with_http_info(self, request):
-        """查询缺陷详情
-
-        根据检查任务ID分页查询缺陷结果详情。
-
-        :param ShowTaskDefectsRequest request
-        :return: ShowTaskDefectsResponse
-        """
-
         all_params = ['task_id', 'offset', 'limit', 'status_ids', 'severity']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1194,26 +1110,21 @@ class CodeCheckAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_task_defects_statistic_async(self, request):
         """查询缺陷详情的统计
 
         根据检查任务ID查询缺陷详情的统计
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowTaskDefectsStatisticRequest request
-        :return: ShowTaskDefectsStatisticResponse
+        :param request: Request instance for ShowTaskDefectsStatistic
+        :type request: :class:`huaweicloudsdkcodecheck.v2.ShowTaskDefectsStatisticRequest`
+        :rtype: :class:`huaweicloudsdkcodecheck.v2.ShowTaskDefectsStatisticResponse`
         """
         return self.show_task_defects_statistic_with_http_info(request)
 
     def show_task_defects_statistic_with_http_info(self, request):
-        """查询缺陷详情的统计
-
-        根据检查任务ID查询缺陷详情的统计
-
-        :param ShowTaskDefectsStatisticRequest request
-        :return: ShowTaskDefectsStatisticResponse
-        """
-
         all_params = ['task_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1257,26 +1168,21 @@ class CodeCheckAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_task_detail_async(self, request):
         """查询缺陷概要
 
         根据检查任务ID查询缺陷结果的概要。包括问题概述、问题状态、圈复杂度、代码重复率等。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowTaskDetailRequest request
-        :return: ShowTaskDetailResponse
+        :param request: Request instance for ShowTaskDetail
+        :type request: :class:`huaweicloudsdkcodecheck.v2.ShowTaskDetailRequest`
+        :rtype: :class:`huaweicloudsdkcodecheck.v2.ShowTaskDetailResponse`
         """
         return self.show_task_detail_with_http_info(request)
 
     def show_task_detail_with_http_info(self, request):
-        """查询缺陷概要
-
-        根据检查任务ID查询缺陷结果的概要。包括问题概述、问题状态、圈复杂度、代码重复率等。
-
-        :param ShowTaskDetailRequest request
-        :return: ShowTaskDetailResponse
-        """
-
         all_params = ['task_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1320,26 +1226,21 @@ class CodeCheckAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_task_list_by_project_id_async(self, request):
         """查询任务列表
 
         根据DEVCLOUD_PROJECT_UUID查询该项目下的任务列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowTaskListByProjectIdRequest request
-        :return: ShowTaskListByProjectIdResponse
+        :param request: Request instance for ShowTaskListByProjectId
+        :type request: :class:`huaweicloudsdkcodecheck.v2.ShowTaskListByProjectIdRequest`
+        :rtype: :class:`huaweicloudsdkcodecheck.v2.ShowTaskListByProjectIdResponse`
         """
         return self.show_task_list_by_project_id_with_http_info(request)
 
     def show_task_list_by_project_id_with_http_info(self, request):
-        """查询任务列表
-
-        根据DEVCLOUD_PROJECT_UUID查询该项目下的任务列表。
-
-        :param ShowTaskListByProjectIdRequest request
-        :return: ShowTaskListByProjectIdResponse
-        """
-
         all_params = ['project_id', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1387,26 +1288,21 @@ class CodeCheckAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_tasklog_async(self, request):
         """查询任务检查失败日志
 
         查询任务检查失败日志，不传execute_id则查询最近一次的检查日志
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowTasklogRequest request
-        :return: ShowTasklogResponse
+        :param request: Request instance for ShowTasklog
+        :type request: :class:`huaweicloudsdkcodecheck.v2.ShowTasklogRequest`
+        :rtype: :class:`huaweicloudsdkcodecheck.v2.ShowTasklogResponse`
         """
         return self.show_tasklog_with_http_info(request)
 
     def show_tasklog_with_http_info(self, request):
-        """查询任务检查失败日志
-
-        查询任务检查失败日志，不传execute_id则查询最近一次的检查日志
-
-        :param ShowTasklogRequest request
-        :return: ShowTasklogResponse
-        """
-
         all_params = ['project_id', 'task_id', 'execute_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1454,26 +1350,21 @@ class CodeCheckAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_tasks_rulesets_async(self, request):
         """查询任务的已选规则集列表
 
         查询任务的已选规则集列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowTasksRulesetsRequest request
-        :return: ShowTasksRulesetsResponse
+        :param request: Request instance for ShowTasksRulesets
+        :type request: :class:`huaweicloudsdkcodecheck.v2.ShowTasksRulesetsRequest`
+        :rtype: :class:`huaweicloudsdkcodecheck.v2.ShowTasksRulesetsResponse`
         """
         return self.show_tasks_rulesets_with_http_info(request)
 
     def show_tasks_rulesets_with_http_info(self, request):
-        """查询任务的已选规则集列表
-
-        查询任务的已选规则集列表。
-
-        :param ShowTasksRulesetsRequest request
-        :return: ShowTasksRulesetsResponse
-        """
-
         all_params = ['project_id', 'task_id', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1523,26 +1414,21 @@ class CodeCheckAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def stop_task_by_id_async(self, request):
         """终止检查任务
 
         根据任务ID终止检查任务。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param StopTaskByIdRequest request
-        :return: StopTaskByIdResponse
+        :param request: Request instance for StopTaskById
+        :type request: :class:`huaweicloudsdkcodecheck.v2.StopTaskByIdRequest`
+        :rtype: :class:`huaweicloudsdkcodecheck.v2.StopTaskByIdResponse`
         """
         return self.stop_task_by_id_with_http_info(request)
 
     def stop_task_by_id_with_http_info(self, request):
-        """终止检查任务
-
-        根据任务ID终止检查任务。
-
-        :param StopTaskByIdRequest request
-        :return: StopTaskByIdResponse
-        """
-
         all_params = ['task_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1586,26 +1472,21 @@ class CodeCheckAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_defect_status_async(self, request):
         """修改缺陷状态
 
         修改检查出的缺陷的状态为已解决、已忽略
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateDefectStatusRequest request
-        :return: UpdateDefectStatusResponse
+        :param request: Request instance for UpdateDefectStatus
+        :type request: :class:`huaweicloudsdkcodecheck.v2.UpdateDefectStatusRequest`
+        :rtype: :class:`huaweicloudsdkcodecheck.v2.UpdateDefectStatusResponse`
         """
         return self.update_defect_status_with_http_info(request)
 
     def update_defect_status_with_http_info(self, request):
-        """修改缺陷状态
-
-        修改检查出的缺陷的状态为已解决、已忽略
-
-        :param UpdateDefectStatusRequest request
-        :return: UpdateDefectStatusResponse
-        """
-
         all_params = ['task_id', 'update_defect_status_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1651,26 +1532,21 @@ class CodeCheckAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_task_ruleset_async(self, request):
         """修改任务规则集
 
         修改任务规则集。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateTaskRulesetRequest request
-        :return: UpdateTaskRulesetResponse
+        :param request: Request instance for UpdateTaskRuleset
+        :type request: :class:`huaweicloudsdkcodecheck.v2.UpdateTaskRulesetRequest`
+        :rtype: :class:`huaweicloudsdkcodecheck.v2.UpdateTaskRulesetResponse`
         """
         return self.update_task_ruleset_with_http_info(request)
 
     def update_task_ruleset_with_http_info(self, request):
-        """修改任务规则集
-
-        修改任务规则集。
-
-        :param UpdateTaskRulesetRequest request
-        :return: UpdateTaskRulesetResponse
-        """
-
         all_params = ['task_id', 'update_task_ruleset_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1715,7 +1591,6 @@ class CodeCheckAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

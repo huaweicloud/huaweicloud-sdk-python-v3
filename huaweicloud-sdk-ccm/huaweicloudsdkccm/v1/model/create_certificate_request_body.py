@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateCertificateRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class CreateCertificateRequestBody:
     }
 
     def __init__(self, issuer_id=None, key_algorithm=None, signature_algorithm=None, distinguished_name=None, validity=None, key_usages=None, subject_alternative_names=None, customized_extension=None):
-        """CreateCertificateRequestBody - a model defined in huaweicloud sdk"""
+        """CreateCertificateRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param issuer_id: 父CA证书ID。
+        :type issuer_id: str
+        :param key_algorithm: 密钥算法，可选值如下：   - **RSA2048** : RSA算法，密钥长度2048位；   - **RSA4096** : RSA算法，密钥长度4096位；   - **EC256** : 椭圆曲线算法（Elliptic Curve Digital Signature Algorithm (ECDSA)），密钥长度256位；   - **EC384** : 椭圆曲线算法（Elliptic Curve Digital Signature Algorithm (ECDSA)），密钥长度384位。
+        :type key_algorithm: str
+        :param signature_algorithm: 签名哈希算法，可选值如下：   - **SHA256**   - **SHA384**   - **SHA512**
+        :type signature_algorithm: str
+        :param distinguished_name: 
+        :type distinguished_name: :class:`huaweicloudsdkccm.v1.CertDistinguishedName`
+        :param validity: 
+        :type validity: :class:`huaweicloudsdkccm.v1.Validity`
+        :param key_usages: 密钥用法，具体标准参见RFC 5280中:[4.2.1.3节](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.3)。   - **digitalSignature** : 数字签名；   - **nonRepudiation** : 不可抵赖；   - **keyEncipherment** : 密钥用于加密密钥数据；   - **dataEncipherment** : 用于加密数据；   - **keyAgreement** : 密钥协商；   - **keyCertSign** : 签发证书；   - **cRLSign** : 签发吊销列表；   - **encipherOnly** : 仅用于加密；   - **decipherOnly** : 仅用于解密。
+        :type key_usages: list[str]
+        :param subject_alternative_names: 主体备用名称，详情请参见**SubjectAlternativeName**字段数据结构说明。   - array大小：[0,20]。
+        :type subject_alternative_names: list[:class:`huaweicloudsdkccm.v1.SubjectAlternativeName`]
+        :param customized_extension: 
+        :type customized_extension: :class:`huaweicloudsdkccm.v1.CustomizedExtension`
+        """
         
         
 
@@ -88,7 +107,7 @@ class CreateCertificateRequestBody:
         父CA证书ID。
 
         :param issuer_id: The issuer_id of this CreateCertificateRequestBody.
-        :type: str
+        :type issuer_id: str
         """
         self._issuer_id = issuer_id
 
@@ -110,7 +129,7 @@ class CreateCertificateRequestBody:
         密钥算法，可选值如下：   - **RSA2048** : RSA算法，密钥长度2048位；   - **RSA4096** : RSA算法，密钥长度4096位；   - **EC256** : 椭圆曲线算法（Elliptic Curve Digital Signature Algorithm (ECDSA)），密钥长度256位；   - **EC384** : 椭圆曲线算法（Elliptic Curve Digital Signature Algorithm (ECDSA)），密钥长度384位。
 
         :param key_algorithm: The key_algorithm of this CreateCertificateRequestBody.
-        :type: str
+        :type key_algorithm: str
         """
         self._key_algorithm = key_algorithm
 
@@ -132,7 +151,7 @@ class CreateCertificateRequestBody:
         签名哈希算法，可选值如下：   - **SHA256**   - **SHA384**   - **SHA512**
 
         :param signature_algorithm: The signature_algorithm of this CreateCertificateRequestBody.
-        :type: str
+        :type signature_algorithm: str
         """
         self._signature_algorithm = signature_algorithm
 
@@ -142,7 +161,7 @@ class CreateCertificateRequestBody:
 
 
         :return: The distinguished_name of this CreateCertificateRequestBody.
-        :rtype: CertDistinguishedName
+        :rtype: :class:`huaweicloudsdkccm.v1.CertDistinguishedName`
         """
         return self._distinguished_name
 
@@ -152,7 +171,7 @@ class CreateCertificateRequestBody:
 
 
         :param distinguished_name: The distinguished_name of this CreateCertificateRequestBody.
-        :type: CertDistinguishedName
+        :type distinguished_name: :class:`huaweicloudsdkccm.v1.CertDistinguishedName`
         """
         self._distinguished_name = distinguished_name
 
@@ -162,7 +181,7 @@ class CreateCertificateRequestBody:
 
 
         :return: The validity of this CreateCertificateRequestBody.
-        :rtype: Validity
+        :rtype: :class:`huaweicloudsdkccm.v1.Validity`
         """
         return self._validity
 
@@ -172,7 +191,7 @@ class CreateCertificateRequestBody:
 
 
         :param validity: The validity of this CreateCertificateRequestBody.
-        :type: Validity
+        :type validity: :class:`huaweicloudsdkccm.v1.Validity`
         """
         self._validity = validity
 
@@ -194,7 +213,7 @@ class CreateCertificateRequestBody:
         密钥用法，具体标准参见RFC 5280中:[4.2.1.3节](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.3)。   - **digitalSignature** : 数字签名；   - **nonRepudiation** : 不可抵赖；   - **keyEncipherment** : 密钥用于加密密钥数据；   - **dataEncipherment** : 用于加密数据；   - **keyAgreement** : 密钥协商；   - **keyCertSign** : 签发证书；   - **cRLSign** : 签发吊销列表；   - **encipherOnly** : 仅用于加密；   - **decipherOnly** : 仅用于解密。
 
         :param key_usages: The key_usages of this CreateCertificateRequestBody.
-        :type: list[str]
+        :type key_usages: list[str]
         """
         self._key_usages = key_usages
 
@@ -205,7 +224,7 @@ class CreateCertificateRequestBody:
         主体备用名称，详情请参见**SubjectAlternativeName**字段数据结构说明。   - array大小：[0,20]。
 
         :return: The subject_alternative_names of this CreateCertificateRequestBody.
-        :rtype: list[SubjectAlternativeName]
+        :rtype: list[:class:`huaweicloudsdkccm.v1.SubjectAlternativeName`]
         """
         return self._subject_alternative_names
 
@@ -216,7 +235,7 @@ class CreateCertificateRequestBody:
         主体备用名称，详情请参见**SubjectAlternativeName**字段数据结构说明。   - array大小：[0,20]。
 
         :param subject_alternative_names: The subject_alternative_names of this CreateCertificateRequestBody.
-        :type: list[SubjectAlternativeName]
+        :type subject_alternative_names: list[:class:`huaweicloudsdkccm.v1.SubjectAlternativeName`]
         """
         self._subject_alternative_names = subject_alternative_names
 
@@ -226,7 +245,7 @@ class CreateCertificateRequestBody:
 
 
         :return: The customized_extension of this CreateCertificateRequestBody.
-        :rtype: CustomizedExtension
+        :rtype: :class:`huaweicloudsdkccm.v1.CustomizedExtension`
         """
         return self._customized_extension
 
@@ -236,7 +255,7 @@ class CreateCertificateRequestBody:
 
 
         :param customized_extension: The customized_extension of this CreateCertificateRequestBody.
-        :type: CustomizedExtension
+        :type customized_extension: :class:`huaweicloudsdkccm.v1.CustomizedExtension`
         """
         self._customized_extension = customized_extension
 

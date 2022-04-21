@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BloomFilterConf:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BloomFilterConf:
     }
 
     def __init__(self, behaviors=None, interval=None):
-        """BloomFilterConf - a model defined in huaweicloud sdk"""
+        """BloomFilterConf
+
+        The model defined in huaweicloud sdk
+
+        :param behaviors: 待过滤行为类型。
+        :type behaviors: list[str]
+        :param interval: 过滤时间。
+        :type interval: int
+        """
         
         
 
@@ -63,7 +70,7 @@ class BloomFilterConf:
         待过滤行为类型。
 
         :param behaviors: The behaviors of this BloomFilterConf.
-        :type: list[str]
+        :type behaviors: list[str]
         """
         self._behaviors = behaviors
 
@@ -85,7 +92,7 @@ class BloomFilterConf:
         过滤时间。
 
         :param interval: The interval of this BloomFilterConf.
-        :type: int
+        :type interval: int
         """
         self._interval = interval
 

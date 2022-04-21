@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateCustomerV2Req:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class CreateCustomerV2Req:
     }
 
     def __init__(self, domain_name=None, email=None, verification_code=None, domain_area=None, xaccount_id=None, xaccount_type=None, password=None, is_close_market_ms=None, include_association_result=None):
-        """CreateCustomerV2Req - a model defined in huaweicloud sdk"""
+        """CreateCustomerV2Req
+
+        The model defined in huaweicloud sdk
+
+        :param domain_name: 客户的华为云账号名。 如果为空，随机生成。 不能以“op_”或“shadow_”开头且不能全为数字。 校验长度（5到32位）和规则^\\(\\[a-zA-Z_-\\]\\(\\[a-zA-Z0-9_-\\]\\)\\*\\)$。
+        :type domain_name: str
+        :param email: 邮箱地址。 格式：必须含有@。
+        :type email: str
+        :param verification_code: 验证码。 请调用“发送验证码”接口获取。 如果邮箱不存在，不需要输入验证码。
+        :type verification_code: str
+        :param domain_area: 客户所属国家地区的两位字母编号。该字母编号遵循ISO 3166标准。 例如：墨西哥 MX
+        :type domain_area: str
+        :param xaccount_id: 伙伴销售平台的用户唯一标识，该标识的具体值由伙伴分配。
+        :type xaccount_id: str
+        :param xaccount_type: 华为分给合作伙伴的平台标识。 该标识的具体值由华为分配。获取方法请参见[如何获取xaccountType的取值](https://support.huaweicloud.com/intl/zh-cn/api-bpconsole/bpconsole_apifaq_00002.html)。
+        :type xaccount_type: str
+        :param password: 密码规则如下： 至少包含以下四种字符中的两种： 大写字母、小写字母、数字、特殊字符；不能和账号名或倒序的账号名相同；不能包含邮箱。 如果为空，用户没有密码，则不能直接在华为云登录，只能通过伙伴系统SSO方式跳转到华为云。
+        :type password: str
+        :param is_close_market_ms: 是否关闭营销消息的发送： true：关闭false：不关闭（默认）
+        :type is_close_market_ms: str
+        :param include_association_result: 是否返回子客户的关联结果。 true：返回子客户和伙伴的关联结果false：不返回子客户和伙伴的关联结果 默认值为false。
+        :type include_association_result: bool
+        """
         
         
 
@@ -96,7 +117,7 @@ class CreateCustomerV2Req:
         客户的华为云账号名。 如果为空，随机生成。 不能以“op_”或“shadow_”开头且不能全为数字。 校验长度（5到32位）和规则^\\(\\[a-zA-Z_-\\]\\(\\[a-zA-Z0-9_-\\]\\)\\*\\)$。
 
         :param domain_name: The domain_name of this CreateCustomerV2Req.
-        :type: str
+        :type domain_name: str
         """
         self._domain_name = domain_name
 
@@ -118,7 +139,7 @@ class CreateCustomerV2Req:
         邮箱地址。 格式：必须含有@。
 
         :param email: The email of this CreateCustomerV2Req.
-        :type: str
+        :type email: str
         """
         self._email = email
 
@@ -140,7 +161,7 @@ class CreateCustomerV2Req:
         验证码。 请调用“发送验证码”接口获取。 如果邮箱不存在，不需要输入验证码。
 
         :param verification_code: The verification_code of this CreateCustomerV2Req.
-        :type: str
+        :type verification_code: str
         """
         self._verification_code = verification_code
 
@@ -162,7 +183,7 @@ class CreateCustomerV2Req:
         客户所属国家地区的两位字母编号。该字母编号遵循ISO 3166标准。 例如：墨西哥 MX
 
         :param domain_area: The domain_area of this CreateCustomerV2Req.
-        :type: str
+        :type domain_area: str
         """
         self._domain_area = domain_area
 
@@ -184,7 +205,7 @@ class CreateCustomerV2Req:
         伙伴销售平台的用户唯一标识，该标识的具体值由伙伴分配。
 
         :param xaccount_id: The xaccount_id of this CreateCustomerV2Req.
-        :type: str
+        :type xaccount_id: str
         """
         self._xaccount_id = xaccount_id
 
@@ -206,7 +227,7 @@ class CreateCustomerV2Req:
         华为分给合作伙伴的平台标识。 该标识的具体值由华为分配。获取方法请参见[如何获取xaccountType的取值](https://support.huaweicloud.com/intl/zh-cn/api-bpconsole/bpconsole_apifaq_00002.html)。
 
         :param xaccount_type: The xaccount_type of this CreateCustomerV2Req.
-        :type: str
+        :type xaccount_type: str
         """
         self._xaccount_type = xaccount_type
 
@@ -228,7 +249,7 @@ class CreateCustomerV2Req:
         密码规则如下： 至少包含以下四种字符中的两种： 大写字母、小写字母、数字、特殊字符；不能和账号名或倒序的账号名相同；不能包含邮箱。 如果为空，用户没有密码，则不能直接在华为云登录，只能通过伙伴系统SSO方式跳转到华为云。
 
         :param password: The password of this CreateCustomerV2Req.
-        :type: str
+        :type password: str
         """
         self._password = password
 
@@ -250,7 +271,7 @@ class CreateCustomerV2Req:
         是否关闭营销消息的发送： true：关闭false：不关闭（默认）
 
         :param is_close_market_ms: The is_close_market_ms of this CreateCustomerV2Req.
-        :type: str
+        :type is_close_market_ms: str
         """
         self._is_close_market_ms = is_close_market_ms
 
@@ -272,7 +293,7 @@ class CreateCustomerV2Req:
         是否返回子客户的关联结果。 true：返回子客户和伙伴的关联结果false：不返回子客户和伙伴的关联结果 默认值为false。
 
         :param include_association_result: The include_association_result of this CreateCustomerV2Req.
-        :type: bool
+        :type include_association_result: bool
         """
         self._include_association_result = include_association_result
 

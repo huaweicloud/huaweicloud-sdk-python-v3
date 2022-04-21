@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowServerRemoteConsoleRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowServerRemoteConsoleRequestBody:
     }
 
     def __init__(self, remote_console=None):
-        """ShowServerRemoteConsoleRequestBody - a model defined in huaweicloud sdk"""
+        """ShowServerRemoteConsoleRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param remote_console: 
+        :type remote_console: :class:`huaweicloudsdkecs.v2.GetServerRemoteConsoleOption`
+        """
         
         
 
@@ -45,7 +50,7 @@ class ShowServerRemoteConsoleRequestBody:
 
 
         :return: The remote_console of this ShowServerRemoteConsoleRequestBody.
-        :rtype: GetServerRemoteConsoleOption
+        :rtype: :class:`huaweicloudsdkecs.v2.GetServerRemoteConsoleOption`
         """
         return self._remote_console
 
@@ -55,7 +60,7 @@ class ShowServerRemoteConsoleRequestBody:
 
 
         :param remote_console: The remote_console of this ShowServerRemoteConsoleRequestBody.
-        :type: GetServerRemoteConsoleOption
+        :type remote_console: :class:`huaweicloudsdkecs.v2.GetServerRemoteConsoleOption`
         """
         self._remote_console = remote_console
 

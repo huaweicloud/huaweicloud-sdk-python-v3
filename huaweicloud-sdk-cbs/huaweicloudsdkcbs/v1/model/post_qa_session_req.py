@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PostQaSessionReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class PostQaSessionReq:
     }
 
     def __init__(self, extends=None, chat_enable=None, user_id=None, question=None):
-        """PostQaSessionReq - a model defined in huaweicloud sdk"""
+        """PostQaSessionReq
+
+        The model defined in huaweicloud sdk
+
+        :param extends: 
+        :type extends: :class:`huaweicloudsdkcbs.v1.SessionExtends`
+        :param chat_enable: 默认true true：使用内部闲聊语料进行兜底 false：不使用闲聊兜底
+        :type chat_enable: bool
+        :param user_id: 用户id，在日志中用于标识不通用户，可以为任意String。
+        :type user_id: str
+        :param question: 用户输入。
+        :type question: str
+        """
         
         
 
@@ -60,7 +71,7 @@ class PostQaSessionReq:
 
 
         :return: The extends of this PostQaSessionReq.
-        :rtype: SessionExtends
+        :rtype: :class:`huaweicloudsdkcbs.v1.SessionExtends`
         """
         return self._extends
 
@@ -70,7 +81,7 @@ class PostQaSessionReq:
 
 
         :param extends: The extends of this PostQaSessionReq.
-        :type: SessionExtends
+        :type extends: :class:`huaweicloudsdkcbs.v1.SessionExtends`
         """
         self._extends = extends
 
@@ -92,7 +103,7 @@ class PostQaSessionReq:
         默认true true：使用内部闲聊语料进行兜底 false：不使用闲聊兜底
 
         :param chat_enable: The chat_enable of this PostQaSessionReq.
-        :type: bool
+        :type chat_enable: bool
         """
         self._chat_enable = chat_enable
 
@@ -114,7 +125,7 @@ class PostQaSessionReq:
         用户id，在日志中用于标识不通用户，可以为任意String。
 
         :param user_id: The user_id of this PostQaSessionReq.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -136,7 +147,7 @@ class PostQaSessionReq:
         用户输入。
 
         :param question: The question of this PostQaSessionReq.
-        :type: str
+        :type question: str
         """
         self._question = question
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TagValuesList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class TagValuesList:
     }
 
     def __init__(self, key=None, values=None):
-        """TagValuesList - a model defined in huaweicloud sdk"""
+        """TagValuesList
+
+        The model defined in huaweicloud sdk
+
+        :param key: 键
+        :type key: str
+        :param values: 值列表
+        :type values: list[str]
+        """
         
         
 
@@ -61,7 +68,7 @@ class TagValuesList:
         键
 
         :param key: The key of this TagValuesList.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -83,7 +90,7 @@ class TagValuesList:
         值列表
 
         :param values: The values of this TagValuesList.
-        :type: list[str]
+        :type values: list[str]
         """
         self._values = values
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListKmsByTagsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListKmsByTagsResponse(SdkResponse):
     }
 
     def __init__(self, resources=None, total_count=None):
-        """ListKmsByTagsResponse - a model defined in huaweicloud sdk"""
+        """ListKmsByTagsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param resources: 资源实例列表，详情请参见resource字段数据结构说明。
+        :type resources: list[:class:`huaweicloudsdkkms.v2.ActionResources`]
+        :param total_count: 总记录数。
+        :type total_count: int
+        """
         
         super(ListKmsByTagsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListKmsByTagsResponse(SdkResponse):
         资源实例列表，详情请参见resource字段数据结构说明。
 
         :return: The resources of this ListKmsByTagsResponse.
-        :rtype: list[ActionResources]
+        :rtype: list[:class:`huaweicloudsdkkms.v2.ActionResources`]
         """
         return self._resources
 
@@ -63,7 +70,7 @@ class ListKmsByTagsResponse(SdkResponse):
         资源实例列表，详情请参见resource字段数据结构说明。
 
         :param resources: The resources of this ListKmsByTagsResponse.
-        :type: list[ActionResources]
+        :type resources: list[:class:`huaweicloudsdkkms.v2.ActionResources`]
         """
         self._resources = resources
 
@@ -85,7 +92,7 @@ class ListKmsByTagsResponse(SdkResponse):
         总记录数。
 
         :param total_count: The total_count of this ListKmsByTagsResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 

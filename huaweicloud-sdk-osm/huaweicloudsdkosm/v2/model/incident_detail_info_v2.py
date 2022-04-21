@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IncidentDetailInfoV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -66,7 +65,49 @@ class IncidentDetailInfoV2:
     }
 
     def __init__(self, xcustomer_id=None, xcustomer_name=None, status=None, judgement=None, incident_id=None, business_type_name=None, incident_type_name=None, customer_id=None, dc_name=None, simple_description=None, source_name=None, create_time=None, message_list=None, incident_satisfaction=None, is_authorized=None, severity_name=None, business_ownership=None, resolve_time=None, ext_info=None):
-        """IncidentDetailInfoV2 - a model defined in huaweicloud sdk"""
+        """IncidentDetailInfoV2
+
+        The model defined in huaweicloud sdk
+
+        :param xcustomer_id: 子用户id
+        :type xcustomer_id: str
+        :param xcustomer_name: 子用户名称
+        :type xcustomer_name: str
+        :param status: 状态 0：待受理 1：处理中 2：待确认结果 3：已完成 4：已撤销 12：无效 17： 待反馈
+        :type status: int
+        :param judgement: 评价内容
+        :type judgement: str
+        :param incident_id: 工单id
+        :type incident_id: str
+        :param business_type_name: 问题类型名称
+        :type business_type_name: str
+        :param incident_type_name: 工单类型名称
+        :type incident_type_name: str
+        :param customer_id: 客户id
+        :type customer_id: str
+        :param dc_name: 区域名称
+        :type dc_name: str
+        :param simple_description: 简要描述
+        :type simple_description: str
+        :param source_name: 来源名称
+        :type source_name: str
+        :param create_time: 创建时间
+        :type create_time: datetime
+        :param message_list: 留言列表
+        :type message_list: list[:class:`huaweicloudsdkosm.v2.IncidentMessageV2`]
+        :param incident_satisfaction: 满意度列表
+        :type incident_satisfaction: list[:class:`huaweicloudsdkosm.v2.IncidentSatisfactionV2Do`]
+        :param is_authorized: 是否授权
+        :type is_authorized: int
+        :param severity_name: 严重性名称
+        :type severity_name: str
+        :param business_ownership: 业务归属 0华为云 1BP伙伴 2ISV
+        :type business_ownership: int
+        :param resolve_time: 解决时间
+        :type resolve_time: int
+        :param ext_info: 
+        :type ext_info: :class:`huaweicloudsdkosm.v2.IncidentDetailExtInfoV2`
+        """
         
         
 
@@ -136,7 +177,7 @@ class IncidentDetailInfoV2:
         子用户id
 
         :param xcustomer_id: The xcustomer_id of this IncidentDetailInfoV2.
-        :type: str
+        :type xcustomer_id: str
         """
         self._xcustomer_id = xcustomer_id
 
@@ -158,7 +199,7 @@ class IncidentDetailInfoV2:
         子用户名称
 
         :param xcustomer_name: The xcustomer_name of this IncidentDetailInfoV2.
-        :type: str
+        :type xcustomer_name: str
         """
         self._xcustomer_name = xcustomer_name
 
@@ -180,7 +221,7 @@ class IncidentDetailInfoV2:
         状态 0：待受理 1：处理中 2：待确认结果 3：已完成 4：已撤销 12：无效 17： 待反馈
 
         :param status: The status of this IncidentDetailInfoV2.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -202,7 +243,7 @@ class IncidentDetailInfoV2:
         评价内容
 
         :param judgement: The judgement of this IncidentDetailInfoV2.
-        :type: str
+        :type judgement: str
         """
         self._judgement = judgement
 
@@ -224,7 +265,7 @@ class IncidentDetailInfoV2:
         工单id
 
         :param incident_id: The incident_id of this IncidentDetailInfoV2.
-        :type: str
+        :type incident_id: str
         """
         self._incident_id = incident_id
 
@@ -246,7 +287,7 @@ class IncidentDetailInfoV2:
         问题类型名称
 
         :param business_type_name: The business_type_name of this IncidentDetailInfoV2.
-        :type: str
+        :type business_type_name: str
         """
         self._business_type_name = business_type_name
 
@@ -268,7 +309,7 @@ class IncidentDetailInfoV2:
         工单类型名称
 
         :param incident_type_name: The incident_type_name of this IncidentDetailInfoV2.
-        :type: str
+        :type incident_type_name: str
         """
         self._incident_type_name = incident_type_name
 
@@ -290,7 +331,7 @@ class IncidentDetailInfoV2:
         客户id
 
         :param customer_id: The customer_id of this IncidentDetailInfoV2.
-        :type: str
+        :type customer_id: str
         """
         self._customer_id = customer_id
 
@@ -312,7 +353,7 @@ class IncidentDetailInfoV2:
         区域名称
 
         :param dc_name: The dc_name of this IncidentDetailInfoV2.
-        :type: str
+        :type dc_name: str
         """
         self._dc_name = dc_name
 
@@ -334,7 +375,7 @@ class IncidentDetailInfoV2:
         简要描述
 
         :param simple_description: The simple_description of this IncidentDetailInfoV2.
-        :type: str
+        :type simple_description: str
         """
         self._simple_description = simple_description
 
@@ -356,7 +397,7 @@ class IncidentDetailInfoV2:
         来源名称
 
         :param source_name: The source_name of this IncidentDetailInfoV2.
-        :type: str
+        :type source_name: str
         """
         self._source_name = source_name
 
@@ -378,7 +419,7 @@ class IncidentDetailInfoV2:
         创建时间
 
         :param create_time: The create_time of this IncidentDetailInfoV2.
-        :type: datetime
+        :type create_time: datetime
         """
         self._create_time = create_time
 
@@ -389,7 +430,7 @@ class IncidentDetailInfoV2:
         留言列表
 
         :return: The message_list of this IncidentDetailInfoV2.
-        :rtype: list[IncidentMessageV2]
+        :rtype: list[:class:`huaweicloudsdkosm.v2.IncidentMessageV2`]
         """
         return self._message_list
 
@@ -400,7 +441,7 @@ class IncidentDetailInfoV2:
         留言列表
 
         :param message_list: The message_list of this IncidentDetailInfoV2.
-        :type: list[IncidentMessageV2]
+        :type message_list: list[:class:`huaweicloudsdkosm.v2.IncidentMessageV2`]
         """
         self._message_list = message_list
 
@@ -411,7 +452,7 @@ class IncidentDetailInfoV2:
         满意度列表
 
         :return: The incident_satisfaction of this IncidentDetailInfoV2.
-        :rtype: list[IncidentSatisfactionV2Do]
+        :rtype: list[:class:`huaweicloudsdkosm.v2.IncidentSatisfactionV2Do`]
         """
         return self._incident_satisfaction
 
@@ -422,7 +463,7 @@ class IncidentDetailInfoV2:
         满意度列表
 
         :param incident_satisfaction: The incident_satisfaction of this IncidentDetailInfoV2.
-        :type: list[IncidentSatisfactionV2Do]
+        :type incident_satisfaction: list[:class:`huaweicloudsdkosm.v2.IncidentSatisfactionV2Do`]
         """
         self._incident_satisfaction = incident_satisfaction
 
@@ -444,7 +485,7 @@ class IncidentDetailInfoV2:
         是否授权
 
         :param is_authorized: The is_authorized of this IncidentDetailInfoV2.
-        :type: int
+        :type is_authorized: int
         """
         self._is_authorized = is_authorized
 
@@ -466,7 +507,7 @@ class IncidentDetailInfoV2:
         严重性名称
 
         :param severity_name: The severity_name of this IncidentDetailInfoV2.
-        :type: str
+        :type severity_name: str
         """
         self._severity_name = severity_name
 
@@ -488,7 +529,7 @@ class IncidentDetailInfoV2:
         业务归属 0华为云 1BP伙伴 2ISV
 
         :param business_ownership: The business_ownership of this IncidentDetailInfoV2.
-        :type: int
+        :type business_ownership: int
         """
         self._business_ownership = business_ownership
 
@@ -510,7 +551,7 @@ class IncidentDetailInfoV2:
         解决时间
 
         :param resolve_time: The resolve_time of this IncidentDetailInfoV2.
-        :type: int
+        :type resolve_time: int
         """
         self._resolve_time = resolve_time
 
@@ -520,7 +561,7 @@ class IncidentDetailInfoV2:
 
 
         :return: The ext_info of this IncidentDetailInfoV2.
-        :rtype: IncidentDetailExtInfoV2
+        :rtype: :class:`huaweicloudsdkosm.v2.IncidentDetailExtInfoV2`
         """
         return self._ext_info
 
@@ -530,7 +571,7 @@ class IncidentDetailInfoV2:
 
 
         :param ext_info: The ext_info of this IncidentDetailInfoV2.
-        :type: IncidentDetailExtInfoV2
+        :type ext_info: :class:`huaweicloudsdkosm.v2.IncidentDetailExtInfoV2`
         """
         self._ext_info = ext_info
 

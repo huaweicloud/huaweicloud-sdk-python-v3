@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateDatabaseDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class CreateDatabaseDetail:
     }
 
     def __init__(self, name=None, shard_mode=None, shard_number=None, shard_unit=None, used_rds=None):
-        """CreateDatabaseDetail - a model defined in huaweicloud sdk"""
+        """CreateDatabaseDetail
+
+        The model defined in huaweicloud sdk
+
+        :param name: 逻辑库名称，需要满足以下条件：  - 长度为2-48个字符。 - 必须以字母开头，且不区分大小写。 - 可以包含字母、数字、下划线，不能包含其它特殊字符。 - 禁用关键字：  \&quot;information_schema\&quot;、\&quot;mysql\&quot;、\&quot;performance_schema\&quot;、\&quot;sys\&quot;。
+        :type name: str
+        :param shard_mode: 逻辑库的拆分模式。 - cluster表示逻辑库是拆分模式。 - single表示逻辑库是非拆分模式。
+        :type shard_mode: str
+        :param shard_number: 同一种工作模式下逻辑库分片的数量。 - shard_unit不为空， shard_unit与关联rds数量的乘积 - shard_unit为空，大于关联的RDS数量，小于等于关联rds数量*64。
+        :type shard_number: int
+        :param shard_unit: 单个RDS上的逻辑库分片数。非必选  - 非拆分逻辑库，固定为1。 - 拆分逻辑库，大于等于1，小于等于64。
+        :type shard_unit: int
+        :param used_rds: 逻辑库关联的RDS。
+        :type used_rds: list[:class:`huaweicloudsdkddm.v1.DatabaseInstabcesParam`]
+        """
         
         
 
@@ -74,7 +87,7 @@ class CreateDatabaseDetail:
         逻辑库名称，需要满足以下条件：  - 长度为2-48个字符。 - 必须以字母开头，且不区分大小写。 - 可以包含字母、数字、下划线，不能包含其它特殊字符。 - 禁用关键字：  \"information_schema\"、\"mysql\"、\"performance_schema\"、\"sys\"。
 
         :param name: The name of this CreateDatabaseDetail.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -96,7 +109,7 @@ class CreateDatabaseDetail:
         逻辑库的拆分模式。 - cluster表示逻辑库是拆分模式。 - single表示逻辑库是非拆分模式。
 
         :param shard_mode: The shard_mode of this CreateDatabaseDetail.
-        :type: str
+        :type shard_mode: str
         """
         self._shard_mode = shard_mode
 
@@ -118,7 +131,7 @@ class CreateDatabaseDetail:
         同一种工作模式下逻辑库分片的数量。 - shard_unit不为空， shard_unit与关联rds数量的乘积 - shard_unit为空，大于关联的RDS数量，小于等于关联rds数量*64。
 
         :param shard_number: The shard_number of this CreateDatabaseDetail.
-        :type: int
+        :type shard_number: int
         """
         self._shard_number = shard_number
 
@@ -140,7 +153,7 @@ class CreateDatabaseDetail:
         单个RDS上的逻辑库分片数。非必选  - 非拆分逻辑库，固定为1。 - 拆分逻辑库，大于等于1，小于等于64。
 
         :param shard_unit: The shard_unit of this CreateDatabaseDetail.
-        :type: int
+        :type shard_unit: int
         """
         self._shard_unit = shard_unit
 
@@ -151,7 +164,7 @@ class CreateDatabaseDetail:
         逻辑库关联的RDS。
 
         :return: The used_rds of this CreateDatabaseDetail.
-        :rtype: list[DatabaseInstabcesParam]
+        :rtype: list[:class:`huaweicloudsdkddm.v1.DatabaseInstabcesParam`]
         """
         return self._used_rds
 
@@ -162,7 +175,7 @@ class CreateDatabaseDetail:
         逻辑库关联的RDS。
 
         :param used_rds: The used_rds of this CreateDatabaseDetail.
-        :type: list[DatabaseInstabcesParam]
+        :type used_rds: list[:class:`huaweicloudsdkddm.v1.DatabaseInstabcesParam`]
         """
         self._used_rds = used_rds
 

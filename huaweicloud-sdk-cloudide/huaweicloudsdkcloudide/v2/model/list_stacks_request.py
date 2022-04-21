@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListStacksRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListStacksRequest:
     }
 
     def __init__(self, tags=None):
-        """ListStacksRequest - a model defined in huaweicloud sdk"""
+        """ListStacksRequest
+
+        The model defined in huaweicloud sdk
+
+        :param tags: 技术栈标签。默认为空值，查询全部。 例如：Java,CPP,GO,Python;可查询多个标签
+        :type tags: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class ListStacksRequest:
         技术栈标签。默认为空值，查询全部。 例如：Java,CPP,GO,Python;可查询多个标签
 
         :param tags: The tags of this ListStacksRequest.
-        :type: str
+        :type tags: str
         """
         self._tags = tags
 

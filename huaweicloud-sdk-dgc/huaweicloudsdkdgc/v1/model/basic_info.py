@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BasicInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class BasicInfo:
     }
 
     def __init__(self, owner=None, priority=None, execute_user=None, instance_timeout=None, custom_fields=None):
-        """BasicInfo - a model defined in huaweicloud sdk"""
+        """BasicInfo
+
+        The model defined in huaweicloud sdk
+
+        :param owner: 作业责任人
+        :type owner: str
+        :param priority: 作业优先级
+        :type priority: str
+        :param execute_user: 作业执行用户
+        :type execute_user: str
+        :param instance_timeout: 实例超时时间
+        :type instance_timeout: str
+        :param custom_fields: 用户自定义属性字段
+        :type custom_fields: object
+        """
         
         
 
@@ -78,7 +91,7 @@ class BasicInfo:
         作业责任人
 
         :param owner: The owner of this BasicInfo.
-        :type: str
+        :type owner: str
         """
         self._owner = owner
 
@@ -100,7 +113,7 @@ class BasicInfo:
         作业优先级
 
         :param priority: The priority of this BasicInfo.
-        :type: str
+        :type priority: str
         """
         self._priority = priority
 
@@ -122,7 +135,7 @@ class BasicInfo:
         作业执行用户
 
         :param execute_user: The execute_user of this BasicInfo.
-        :type: str
+        :type execute_user: str
         """
         self._execute_user = execute_user
 
@@ -144,7 +157,7 @@ class BasicInfo:
         实例超时时间
 
         :param instance_timeout: The instance_timeout of this BasicInfo.
-        :type: str
+        :type instance_timeout: str
         """
         self._instance_timeout = instance_timeout
 
@@ -166,7 +179,7 @@ class BasicInfo:
         用户自定义属性字段
 
         :param custom_fields: The custom_fields of this BasicInfo.
-        :type: object
+        :type custom_fields: object
         """
         self._custom_fields = custom_fields
 

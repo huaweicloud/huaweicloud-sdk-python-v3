@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateHealthMonitorOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class CreateHealthMonitorOption:
     }
 
     def __init__(self, admin_state_up=None, delay=None, domain_name=None, expected_codes=None, http_method=None, max_retries=None, max_retries_down=None, monitor_port=None, name=None, pool_id=None, project_id=None, timeout=None, type=None, url_path=None):
-        """CreateHealthMonitorOption - a model defined in huaweicloud sdk"""
+        """CreateHealthMonitorOption
+
+        The model defined in huaweicloud sdk
+
+        :param admin_state_up: 健康检查的管理状态。取值： - true：表示开启健康检查，默认为true。 - false表示关闭健康检查。
+        :type admin_state_up: bool
+        :param delay: 健康检查间隔。取值：1-50s。
+        :type delay: int
+        :param domain_name: 发送健康检查请求的域名。  取值：以数字或字母开头，只能包含数字、字母、&#39;-&#39;、&#39;.&#39;。  默认为空，表示使用负载均衡器的vip作为http请求的目的地址。  使用说明： - 仅当type为HTTP时生效。
+        :type domain_name: str
+        :param expected_codes: 期望响应状态码。支持多种取值格式： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。   默认值：200。  仅支持HTTP/HTTPS设置该字段，其他协议设置不会生效。
+        :type expected_codes: str
+        :param http_method: HTTP请求方法，取值：GET、HEAD、POST、PUT、DELETE、TRACE、OPTIONS、CONNECT、PATCH，默认GET。 使用说明：  - 仅当type为HTTP时生效。 不支持该字段，请勿使用。
+        :type http_method: str
+        :param max_retries: 健康检查连续成功多少次后，将后端服务器的健康检查状态由OFFLINE判定为ONLINE。取值范围：1-10。
+        :type max_retries: int
+        :param max_retries_down: 健康检查连续失败多少次后，将后端服务器的健康检查状态由ONLINE判定为OFFLINE。取值范围：1-10，默认3。
+        :type max_retries_down: int
+        :param monitor_port: 健康检查端口号。取值：1-65535，默认为空，表示使用后端云服务器端口号。
+        :type monitor_port: int
+        :param name: 健康检查名称。
+        :type name: str
+        :param pool_id: 健康检查所在的后端云服务器组ID
+        :type pool_id: str
+        :param project_id: 健康检查所在的项目ID。
+        :type project_id: str
+        :param timeout: 一次健康检查请求的超时时间。  建议该值小于delay的值。
+        :type timeout: int
+        :param type: 健康检查请求协议。 取值：TCP、UDP_CONNECT、HTTP、HTTPS。 使用说明： - 若pool的protocol为QUIC，则type只能是UDP_CONNECT。 - 若pool的protocol为UDP，则type只能UDP_CONNECT。 - 若pool的protocol为TCP，则type可以是TCP、HTTP、HTTPS。 - 若pool的protocol为HTTP，则type可以是TCP、HTTP、HTTPS。 - 若pool的protocol为HTTPS，则type可以是TCP、HTTP、HTTPS。
+        :type type: str
+        :param url_path: 健康检查请求的请求路径。以\&quot;/\&quot;开头，默认为\&quot;/\&quot;。  使用说明： - 仅当type为HTTP时生效。
+        :type url_path: str
+        """
         
         
 
@@ -118,7 +149,7 @@ class CreateHealthMonitorOption:
         健康检查的管理状态。取值： - true：表示开启健康检查，默认为true。 - false表示关闭健康检查。
 
         :param admin_state_up: The admin_state_up of this CreateHealthMonitorOption.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 
@@ -140,7 +171,7 @@ class CreateHealthMonitorOption:
         健康检查间隔。取值：1-50s。
 
         :param delay: The delay of this CreateHealthMonitorOption.
-        :type: int
+        :type delay: int
         """
         self._delay = delay
 
@@ -162,7 +193,7 @@ class CreateHealthMonitorOption:
         发送健康检查请求的域名。  取值：以数字或字母开头，只能包含数字、字母、'-'、'.'。  默认为空，表示使用负载均衡器的vip作为http请求的目的地址。  使用说明： - 仅当type为HTTP时生效。
 
         :param domain_name: The domain_name of this CreateHealthMonitorOption.
-        :type: str
+        :type domain_name: str
         """
         self._domain_name = domain_name
 
@@ -184,7 +215,7 @@ class CreateHealthMonitorOption:
         期望响应状态码。支持多种取值格式： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。   默认值：200。  仅支持HTTP/HTTPS设置该字段，其他协议设置不会生效。
 
         :param expected_codes: The expected_codes of this CreateHealthMonitorOption.
-        :type: str
+        :type expected_codes: str
         """
         self._expected_codes = expected_codes
 
@@ -206,7 +237,7 @@ class CreateHealthMonitorOption:
         HTTP请求方法，取值：GET、HEAD、POST、PUT、DELETE、TRACE、OPTIONS、CONNECT、PATCH，默认GET。 使用说明：  - 仅当type为HTTP时生效。 不支持该字段，请勿使用。
 
         :param http_method: The http_method of this CreateHealthMonitorOption.
-        :type: str
+        :type http_method: str
         """
         self._http_method = http_method
 
@@ -228,7 +259,7 @@ class CreateHealthMonitorOption:
         健康检查连续成功多少次后，将后端服务器的健康检查状态由OFFLINE判定为ONLINE。取值范围：1-10。
 
         :param max_retries: The max_retries of this CreateHealthMonitorOption.
-        :type: int
+        :type max_retries: int
         """
         self._max_retries = max_retries
 
@@ -250,7 +281,7 @@ class CreateHealthMonitorOption:
         健康检查连续失败多少次后，将后端服务器的健康检查状态由ONLINE判定为OFFLINE。取值范围：1-10，默认3。
 
         :param max_retries_down: The max_retries_down of this CreateHealthMonitorOption.
-        :type: int
+        :type max_retries_down: int
         """
         self._max_retries_down = max_retries_down
 
@@ -272,7 +303,7 @@ class CreateHealthMonitorOption:
         健康检查端口号。取值：1-65535，默认为空，表示使用后端云服务器端口号。
 
         :param monitor_port: The monitor_port of this CreateHealthMonitorOption.
-        :type: int
+        :type monitor_port: int
         """
         self._monitor_port = monitor_port
 
@@ -294,7 +325,7 @@ class CreateHealthMonitorOption:
         健康检查名称。
 
         :param name: The name of this CreateHealthMonitorOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -316,7 +347,7 @@ class CreateHealthMonitorOption:
         健康检查所在的后端云服务器组ID
 
         :param pool_id: The pool_id of this CreateHealthMonitorOption.
-        :type: str
+        :type pool_id: str
         """
         self._pool_id = pool_id
 
@@ -338,7 +369,7 @@ class CreateHealthMonitorOption:
         健康检查所在的项目ID。
 
         :param project_id: The project_id of this CreateHealthMonitorOption.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -360,7 +391,7 @@ class CreateHealthMonitorOption:
         一次健康检查请求的超时时间。  建议该值小于delay的值。
 
         :param timeout: The timeout of this CreateHealthMonitorOption.
-        :type: int
+        :type timeout: int
         """
         self._timeout = timeout
 
@@ -382,7 +413,7 @@ class CreateHealthMonitorOption:
         健康检查请求协议。 取值：TCP、UDP_CONNECT、HTTP、HTTPS。 使用说明： - 若pool的protocol为QUIC，则type只能是UDP_CONNECT。 - 若pool的protocol为UDP，则type只能UDP_CONNECT。 - 若pool的protocol为TCP，则type可以是TCP、HTTP、HTTPS。 - 若pool的protocol为HTTP，则type可以是TCP、HTTP、HTTPS。 - 若pool的protocol为HTTPS，则type可以是TCP、HTTP、HTTPS。
 
         :param type: The type of this CreateHealthMonitorOption.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -404,7 +435,7 @@ class CreateHealthMonitorOption:
         健康检查请求的请求路径。以\"/\"开头，默认为\"/\"。  使用说明： - 仅当type为HTTP时生效。
 
         :param url_path: The url_path of this CreateHealthMonitorOption.
-        :type: str
+        :type url_path: str
         """
         self._url_path = url_path
 

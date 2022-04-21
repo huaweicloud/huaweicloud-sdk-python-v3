@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class HandwritingWordsBlockList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class HandwritingWordsBlockList:
     }
 
     def __init__(self, words=None, type=None, confidence=None, location=None):
-        """HandwritingWordsBlockList - a model defined in huaweicloud sdk"""
+        """HandwritingWordsBlockList
+
+        The model defined in huaweicloud sdk
+
+        :param words: 文字块识别结果。 
+        :type words: str
+        :param type: 说明该识别结果所属类型，例如：handwriting。 
+        :type type: str
+        :param confidence: 文字块words的置信度。 
+        :type confidence: float
+        :param location: 文字块words的区域位置信息，列表形式，分别表示文字块顶点的x, y坐标;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
+        :type location: list[list[int]]
+        """
         
         
 
@@ -73,7 +84,7 @@ class HandwritingWordsBlockList:
         文字块识别结果。 
 
         :param words: The words of this HandwritingWordsBlockList.
-        :type: str
+        :type words: str
         """
         self._words = words
 
@@ -95,7 +106,7 @@ class HandwritingWordsBlockList:
         说明该识别结果所属类型，例如：handwriting。 
 
         :param type: The type of this HandwritingWordsBlockList.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -117,7 +128,7 @@ class HandwritingWordsBlockList:
         文字块words的置信度。 
 
         :param confidence: The confidence of this HandwritingWordsBlockList.
-        :type: float
+        :type confidence: float
         """
         self._confidence = confidence
 
@@ -139,7 +150,7 @@ class HandwritingWordsBlockList:
         文字块words的区域位置信息，列表形式，分别表示文字块顶点的x, y坐标;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
         :param location: The location of this HandwritingWordsBlockList.
-        :type: list[list[int]]
+        :type location: list[list[int]]
         """
         self._location = location
 

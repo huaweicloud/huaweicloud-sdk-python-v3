@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OutputFileInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class OutputFileInfo:
     }
 
     def __init__(self, output_file_name=None, exec_description=None, meta_data=None):
-        """OutputFileInfo - a model defined in huaweicloud sdk"""
+        """OutputFileInfo
+
+        The model defined in huaweicloud sdk
+
+        :param output_file_name: 输出文件名。 
+        :type output_file_name: str
+        :param exec_description: 处理信息。 
+        :type exec_description: str
+        :param meta_data: 
+        :type meta_data: :class:`huaweicloudsdkmpc.v1.SourceInfo`
+        """
         
         
 
@@ -68,7 +77,7 @@ class OutputFileInfo:
         输出文件名。 
 
         :param output_file_name: The output_file_name of this OutputFileInfo.
-        :type: str
+        :type output_file_name: str
         """
         self._output_file_name = output_file_name
 
@@ -90,7 +99,7 @@ class OutputFileInfo:
         处理信息。 
 
         :param exec_description: The exec_description of this OutputFileInfo.
-        :type: str
+        :type exec_description: str
         """
         self._exec_description = exec_description
 
@@ -100,7 +109,7 @@ class OutputFileInfo:
 
 
         :return: The meta_data of this OutputFileInfo.
-        :rtype: SourceInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.SourceInfo`
         """
         return self._meta_data
 
@@ -110,7 +119,7 @@ class OutputFileInfo:
 
 
         :param meta_data: The meta_data of this OutputFileInfo.
-        :type: SourceInfo
+        :type meta_data: :class:`huaweicloudsdkmpc.v1.SourceInfo`
         """
         self._meta_data = meta_data
 

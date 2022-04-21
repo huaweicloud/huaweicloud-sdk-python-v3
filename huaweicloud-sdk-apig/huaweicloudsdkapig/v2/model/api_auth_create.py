@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApiAuthCreate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ApiAuthCreate:
     }
 
     def __init__(self, env_id=None, app_ids=None, api_ids=None):
-        """ApiAuthCreate - a model defined in huaweicloud sdk"""
+        """ApiAuthCreate
+
+        The model defined in huaweicloud sdk
+
+        :param env_id: 需要授权的环境编号
+        :type env_id: str
+        :param app_ids: APP的编号列表
+        :type app_ids: list[str]
+        :param api_ids: API的编号列表，可以选择租户自己的API，也可以选择从云市场上购买的API。
+        :type api_ids: list[str]
+        """
         
         
 
@@ -65,7 +74,7 @@ class ApiAuthCreate:
         需要授权的环境编号
 
         :param env_id: The env_id of this ApiAuthCreate.
-        :type: str
+        :type env_id: str
         """
         self._env_id = env_id
 
@@ -87,7 +96,7 @@ class ApiAuthCreate:
         APP的编号列表
 
         :param app_ids: The app_ids of this ApiAuthCreate.
-        :type: list[str]
+        :type app_ids: list[str]
         """
         self._app_ids = app_ids
 
@@ -109,7 +118,7 @@ class ApiAuthCreate:
         API的编号列表，可以选择租户自己的API，也可以选择从云市场上购买的API。
 
         :param api_ids: The api_ids of this ApiAuthCreate.
-        :type: list[str]
+        :type api_ids: list[str]
         """
         self._api_ids = api_ids
 

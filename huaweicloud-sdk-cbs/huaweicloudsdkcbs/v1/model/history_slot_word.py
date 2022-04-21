@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class HistorySlotWord:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class HistorySlotWord:
     }
 
     def __init__(self, word=None, norm_word=None):
-        """HistorySlotWord - a model defined in huaweicloud sdk"""
+        """HistorySlotWord
+
+        The model defined in huaweicloud sdk
+
+        :param word: 词
+        :type word: str
+        :param norm_word: 归一化后的词
+        :type norm_word: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class HistorySlotWord:
         词
 
         :param word: The word of this HistorySlotWord.
-        :type: str
+        :type word: str
         """
         self._word = word
 
@@ -83,7 +90,7 @@ class HistorySlotWord:
         归一化后的词
 
         :param norm_word: The norm_word of this HistorySlotWord.
-        :type: str
+        :type norm_word: str
         """
         self._norm_word = norm_word
 

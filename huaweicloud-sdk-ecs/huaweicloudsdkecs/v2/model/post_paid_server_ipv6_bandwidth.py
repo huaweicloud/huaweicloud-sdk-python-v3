@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PostPaidServerIpv6Bandwidth:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class PostPaidServerIpv6Bandwidth:
     }
 
     def __init__(self, id=None):
-        """PostPaidServerIpv6Bandwidth - a model defined in huaweicloud sdk"""
+        """PostPaidServerIpv6Bandwidth
+
+        The model defined in huaweicloud sdk
+
+        :param id: 绑定的共享带宽ID。
+        :type id: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class PostPaidServerIpv6Bandwidth:
         绑定的共享带宽ID。
 
         :param id: The id of this PostPaidServerIpv6Bandwidth.
-        :type: str
+        :type id: str
         """
         self._id = id
 

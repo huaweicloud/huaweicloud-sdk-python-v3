@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateNaRequestDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class UpdateNaRequestDTO:
     }
 
     def __init__(self, name=None, description=None, endpoint=None, auth_type=None, auth_aksk_info=None, access_type=None, access_roma_info=None):
-        """UpdateNaRequestDTO - a model defined in huaweicloud sdk"""
+        """UpdateNaRequestDTO
+
+        The model defined in huaweicloud sdk
+
+        :param name: NA系统名称
+        :type name: str
+        :param description: 北向NA系统描述
+        :type description: str
+        :param endpoint: 访问URL地址
+        :type endpoint: str
+        :param auth_type: 鉴权方式
+        :type auth_type: str
+        :param auth_aksk_info: 
+        :type auth_aksk_info: :class:`huaweicloudsdkiotedge.v2.AuthAkSkInfo`
+        :param access_type: 接入类型
+        :type access_type: str
+        :param access_roma_info: 
+        :type access_roma_info: :class:`huaweicloudsdkiotedge.v2.AccessRomaInfo`
+        """
         
         
 
@@ -85,7 +102,7 @@ class UpdateNaRequestDTO:
         NA系统名称
 
         :param name: The name of this UpdateNaRequestDTO.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -107,7 +124,7 @@ class UpdateNaRequestDTO:
         北向NA系统描述
 
         :param description: The description of this UpdateNaRequestDTO.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -129,7 +146,7 @@ class UpdateNaRequestDTO:
         访问URL地址
 
         :param endpoint: The endpoint of this UpdateNaRequestDTO.
-        :type: str
+        :type endpoint: str
         """
         self._endpoint = endpoint
 
@@ -151,7 +168,7 @@ class UpdateNaRequestDTO:
         鉴权方式
 
         :param auth_type: The auth_type of this UpdateNaRequestDTO.
-        :type: str
+        :type auth_type: str
         """
         self._auth_type = auth_type
 
@@ -161,7 +178,7 @@ class UpdateNaRequestDTO:
 
 
         :return: The auth_aksk_info of this UpdateNaRequestDTO.
-        :rtype: AuthAkSkInfo
+        :rtype: :class:`huaweicloudsdkiotedge.v2.AuthAkSkInfo`
         """
         return self._auth_aksk_info
 
@@ -171,7 +188,7 @@ class UpdateNaRequestDTO:
 
 
         :param auth_aksk_info: The auth_aksk_info of this UpdateNaRequestDTO.
-        :type: AuthAkSkInfo
+        :type auth_aksk_info: :class:`huaweicloudsdkiotedge.v2.AuthAkSkInfo`
         """
         self._auth_aksk_info = auth_aksk_info
 
@@ -193,7 +210,7 @@ class UpdateNaRequestDTO:
         接入类型
 
         :param access_type: The access_type of this UpdateNaRequestDTO.
-        :type: str
+        :type access_type: str
         """
         self._access_type = access_type
 
@@ -203,7 +220,7 @@ class UpdateNaRequestDTO:
 
 
         :return: The access_roma_info of this UpdateNaRequestDTO.
-        :rtype: AccessRomaInfo
+        :rtype: :class:`huaweicloudsdkiotedge.v2.AccessRomaInfo`
         """
         return self._access_roma_info
 
@@ -213,7 +230,7 @@ class UpdateNaRequestDTO:
 
 
         :param access_roma_info: The access_roma_info of this UpdateNaRequestDTO.
-        :type: AccessRomaInfo
+        :type access_roma_info: :class:`huaweicloudsdkiotedge.v2.AccessRomaInfo`
         """
         self._access_roma_info = access_roma_info
 

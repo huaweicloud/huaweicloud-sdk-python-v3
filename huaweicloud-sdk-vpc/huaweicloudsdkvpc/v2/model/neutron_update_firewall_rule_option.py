@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NeutronUpdateFirewallRuleOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class NeutronUpdateFirewallRuleOption:
     }
 
     def __init__(self, action=None, description=None, destination_ip_address=None, destination_port=None, enabled=None, ip_version=None, name=None, protocol=None, source_ip_address=None, source_port=None):
-        """NeutronUpdateFirewallRuleOption - a model defined in huaweicloud sdk"""
+        """NeutronUpdateFirewallRuleOption
+
+        The model defined in huaweicloud sdk
+
+        :param action: 对通过网络ACL防火墙的流量执行的操作。
+        :type action: str
+        :param description: 网络ACL防火墙规则描述。
+        :type description: str
+        :param destination_ip_address: 目的地址或者CIDR。
+        :type destination_ip_address: str
+        :param destination_port: 目的端口号或者一段端口范围。
+        :type destination_port: str
+        :param enabled: 是否使能网络ACL防火墙规则。
+        :type enabled: bool
+        :param ip_version: IP协议版本。
+        :type ip_version: int
+        :param name: 网络ACL防火墙规则名称。
+        :type name: str
+        :param protocol: IP协议，支持TCP,UDP,ICMP, ICMPV6或者IP协议号（0-255）
+        :type protocol: str
+        :param source_ip_address: 源地址或者CIDR。
+        :type source_ip_address: str
+        :param source_port: 源端口号或者一段端口范围。
+        :type source_port: str
+        """
         
         
 
@@ -103,7 +126,7 @@ class NeutronUpdateFirewallRuleOption:
         对通过网络ACL防火墙的流量执行的操作。
 
         :param action: The action of this NeutronUpdateFirewallRuleOption.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -125,7 +148,7 @@ class NeutronUpdateFirewallRuleOption:
         网络ACL防火墙规则描述。
 
         :param description: The description of this NeutronUpdateFirewallRuleOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -147,7 +170,7 @@ class NeutronUpdateFirewallRuleOption:
         目的地址或者CIDR。
 
         :param destination_ip_address: The destination_ip_address of this NeutronUpdateFirewallRuleOption.
-        :type: str
+        :type destination_ip_address: str
         """
         self._destination_ip_address = destination_ip_address
 
@@ -169,7 +192,7 @@ class NeutronUpdateFirewallRuleOption:
         目的端口号或者一段端口范围。
 
         :param destination_port: The destination_port of this NeutronUpdateFirewallRuleOption.
-        :type: str
+        :type destination_port: str
         """
         self._destination_port = destination_port
 
@@ -191,7 +214,7 @@ class NeutronUpdateFirewallRuleOption:
         是否使能网络ACL防火墙规则。
 
         :param enabled: The enabled of this NeutronUpdateFirewallRuleOption.
-        :type: bool
+        :type enabled: bool
         """
         self._enabled = enabled
 
@@ -213,7 +236,7 @@ class NeutronUpdateFirewallRuleOption:
         IP协议版本。
 
         :param ip_version: The ip_version of this NeutronUpdateFirewallRuleOption.
-        :type: int
+        :type ip_version: int
         """
         self._ip_version = ip_version
 
@@ -235,7 +258,7 @@ class NeutronUpdateFirewallRuleOption:
         网络ACL防火墙规则名称。
 
         :param name: The name of this NeutronUpdateFirewallRuleOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -257,7 +280,7 @@ class NeutronUpdateFirewallRuleOption:
         IP协议，支持TCP,UDP,ICMP, ICMPV6或者IP协议号（0-255）
 
         :param protocol: The protocol of this NeutronUpdateFirewallRuleOption.
-        :type: str
+        :type protocol: str
         """
         self._protocol = protocol
 
@@ -279,7 +302,7 @@ class NeutronUpdateFirewallRuleOption:
         源地址或者CIDR。
 
         :param source_ip_address: The source_ip_address of this NeutronUpdateFirewallRuleOption.
-        :type: str
+        :type source_ip_address: str
         """
         self._source_ip_address = source_ip_address
 
@@ -301,7 +324,7 @@ class NeutronUpdateFirewallRuleOption:
         源端口号或者一段端口范围。
 
         :param source_port: The source_port of this NeutronUpdateFirewallRuleOption.
-        :type: str
+        :type source_port: str
         """
         self._source_port = source_port
 

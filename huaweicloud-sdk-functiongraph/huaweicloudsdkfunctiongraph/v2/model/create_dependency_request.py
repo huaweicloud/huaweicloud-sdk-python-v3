@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateDependencyRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateDependencyRequest:
     }
 
     def __init__(self, body=None):
-        """CreateDependencyRequest - a model defined in huaweicloud sdk"""
+        """CreateDependencyRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateDependencyRequest
+        :type body: :class:`huaweicloudsdkfunctiongraph.v2.CreateDependencyRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateDependencyRequest:
 
 
         :return: The body of this CreateDependencyRequest.
-        :rtype: CreateDependencyRequestBody
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CreateDependencyRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateDependencyRequest:
 
 
         :param body: The body of this CreateDependencyRequest.
-        :type: CreateDependencyRequestBody
+        :type body: :class:`huaweicloudsdkfunctiongraph.v2.CreateDependencyRequestBody`
         """
         self._body = body
 

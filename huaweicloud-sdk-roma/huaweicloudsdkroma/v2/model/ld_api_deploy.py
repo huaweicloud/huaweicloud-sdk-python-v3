@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LdApiDeploy:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class LdApiDeploy:
     }
 
     def __init__(self, deploy_front_api=None, auth_type=None, authorizer_id=None, group_id=None, env_id=None, protocol=None, backend_timeout=None, path=None, method=None, cors=None, roma_app_id=None, retry_count=None):
-        """LdApiDeploy - a model defined in huaweicloud sdk"""
+        """LdApiDeploy
+
+        The model defined in huaweicloud sdk
+
+        :param deploy_front_api: 是否自动发布API - true：部署完成后自动创建并发布前端API。此时auth_type，group_id，env_id，protocol必填。 - false：部署完成后不创建前端API 
+        :type deploy_front_api: bool
+        :param auth_type: 认证方式[，site暂不支持IAM认证。](tag:Site) - NONE：无认证 - APP：APP认证 - IAM：IAM认证 - AUTHORIZER：自定义认证 
+        :type auth_type: str
+        :param authorizer_id: 自定义认证编号。  认证方式auth_type &#x3D; AUTHORIZER时必填
+        :type authorizer_id: str
+        :param group_id: 部署的前端API分组编号
+        :type group_id: str
+        :param env_id: 部署的环境编号
+        :type env_id: str
+        :param protocol: 请求协议
+        :type protocol: str
+        :param backend_timeout: 超时时间
+        :type backend_timeout: int
+        :param path: 请求路径
+        :type path: str
+        :param method: 请求方式
+        :type method: str
+        :param cors: 是否支持跨域 - true：支持 - false：不支持 
+        :type cors: bool
+        :param roma_app_id: 部署到前端的api归属的应用编号，与后端归属的应用编号保持一致
+        :type roma_app_id: str
+        :param retry_count: ROMA Connect APIC请求后端服务的重试次数，默认为-1，范围[-1,10]
+        :type retry_count: str
+        """
         
         
 
@@ -113,7 +140,7 @@ class LdApiDeploy:
         是否自动发布API - true：部署完成后自动创建并发布前端API。此时auth_type，group_id，env_id，protocol必填。 - false：部署完成后不创建前端API 
 
         :param deploy_front_api: The deploy_front_api of this LdApiDeploy.
-        :type: bool
+        :type deploy_front_api: bool
         """
         self._deploy_front_api = deploy_front_api
 
@@ -135,7 +162,7 @@ class LdApiDeploy:
         认证方式[，site暂不支持IAM认证。](tag:Site) - NONE：无认证 - APP：APP认证 - IAM：IAM认证 - AUTHORIZER：自定义认证 
 
         :param auth_type: The auth_type of this LdApiDeploy.
-        :type: str
+        :type auth_type: str
         """
         self._auth_type = auth_type
 
@@ -157,7 +184,7 @@ class LdApiDeploy:
         自定义认证编号。  认证方式auth_type = AUTHORIZER时必填
 
         :param authorizer_id: The authorizer_id of this LdApiDeploy.
-        :type: str
+        :type authorizer_id: str
         """
         self._authorizer_id = authorizer_id
 
@@ -179,7 +206,7 @@ class LdApiDeploy:
         部署的前端API分组编号
 
         :param group_id: The group_id of this LdApiDeploy.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -201,7 +228,7 @@ class LdApiDeploy:
         部署的环境编号
 
         :param env_id: The env_id of this LdApiDeploy.
-        :type: str
+        :type env_id: str
         """
         self._env_id = env_id
 
@@ -223,7 +250,7 @@ class LdApiDeploy:
         请求协议
 
         :param protocol: The protocol of this LdApiDeploy.
-        :type: str
+        :type protocol: str
         """
         self._protocol = protocol
 
@@ -245,7 +272,7 @@ class LdApiDeploy:
         超时时间
 
         :param backend_timeout: The backend_timeout of this LdApiDeploy.
-        :type: int
+        :type backend_timeout: int
         """
         self._backend_timeout = backend_timeout
 
@@ -267,7 +294,7 @@ class LdApiDeploy:
         请求路径
 
         :param path: The path of this LdApiDeploy.
-        :type: str
+        :type path: str
         """
         self._path = path
 
@@ -289,7 +316,7 @@ class LdApiDeploy:
         请求方式
 
         :param method: The method of this LdApiDeploy.
-        :type: str
+        :type method: str
         """
         self._method = method
 
@@ -311,7 +338,7 @@ class LdApiDeploy:
         是否支持跨域 - true：支持 - false：不支持 
 
         :param cors: The cors of this LdApiDeploy.
-        :type: bool
+        :type cors: bool
         """
         self._cors = cors
 
@@ -333,7 +360,7 @@ class LdApiDeploy:
         部署到前端的api归属的应用编号，与后端归属的应用编号保持一致
 
         :param roma_app_id: The roma_app_id of this LdApiDeploy.
-        :type: str
+        :type roma_app_id: str
         """
         self._roma_app_id = roma_app_id
 
@@ -355,7 +382,7 @@ class LdApiDeploy:
         ROMA Connect APIC请求后端服务的重试次数，默认为-1，范围[-1,10]
 
         :param retry_count: The retry_count of this LdApiDeploy.
-        :type: str
+        :type retry_count: str
         """
         self._retry_count = retry_count
 

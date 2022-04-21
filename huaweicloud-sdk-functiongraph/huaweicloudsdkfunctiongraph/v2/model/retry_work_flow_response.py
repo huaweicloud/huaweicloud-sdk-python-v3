@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RetryWorkFlowResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class RetryWorkFlowResponse(SdkResponse):
     }
 
     def __init__(self):
-        """RetryWorkFlowResponse - a model defined in huaweicloud sdk"""
+        """RetryWorkFlowResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(RetryWorkFlowResponse, self).__init__()
         self.discriminator = None

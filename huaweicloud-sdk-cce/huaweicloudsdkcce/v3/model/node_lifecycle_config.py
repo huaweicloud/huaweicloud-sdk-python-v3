@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NodeLifecycleConfig:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class NodeLifecycleConfig:
     }
 
     def __init__(self, pre_install=None, post_install=None):
-        """NodeLifecycleConfig - a model defined in huaweicloud sdk"""
+        """NodeLifecycleConfig
+
+        The model defined in huaweicloud sdk
+
+        :param pre_install: 安装前执行脚本 &gt; 输入的值需要经过Base64编码，方法为echo -n \&quot;待编码内容\&quot; | base64。 
+        :type pre_install: str
+        :param post_install: 安装后执行脚本 &gt; 输入的值需要经过Base64编码，方法为echo -n \&quot;待编码内容\&quot; | base64。 
+        :type post_install: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class NodeLifecycleConfig:
         安装前执行脚本 > 输入的值需要经过Base64编码，方法为echo -n \"待编码内容\" | base64。 
 
         :param pre_install: The pre_install of this NodeLifecycleConfig.
-        :type: str
+        :type pre_install: str
         """
         self._pre_install = pre_install
 
@@ -85,7 +92,7 @@ class NodeLifecycleConfig:
         安装后执行脚本 > 输入的值需要经过Base64编码，方法为echo -n \"待编码内容\" | base64。 
 
         :param post_install: The post_install of this NodeLifecycleConfig.
-        :type: str
+        :type post_install: str
         """
         self._post_install = post_install
 

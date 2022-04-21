@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SetWebHookConfigRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class SetWebHookConfigRequest:
     }
 
     def __init__(self, body=None):
-        """SetWebHookConfigRequest - a model defined in huaweicloud sdk"""
+        """SetWebHookConfigRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the SetWebHookConfigRequest
+        :type body: :class:`huaweicloudsdkmeeting.v1.WebHookConfigRequest`
+        """
         
         
 
@@ -46,7 +51,7 @@ class SetWebHookConfigRequest:
 
 
         :return: The body of this SetWebHookConfigRequest.
-        :rtype: WebHookConfigRequest
+        :rtype: :class:`huaweicloudsdkmeeting.v1.WebHookConfigRequest`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class SetWebHookConfigRequest:
 
 
         :param body: The body of this SetWebHookConfigRequest.
-        :type: WebHookConfigRequest
+        :type body: :class:`huaweicloudsdkmeeting.v1.WebHookConfigRequest`
         """
         self._body = body
 

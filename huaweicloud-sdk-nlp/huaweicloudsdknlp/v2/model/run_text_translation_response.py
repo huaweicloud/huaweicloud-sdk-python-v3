@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunTextTranslationResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class RunTextTranslationResponse(SdkResponse):
     }
 
     def __init__(self, src_text=None, translated_text=None, error_code=None, error_msg=None):
-        """RunTextTranslationResponse - a model defined in huaweicloud sdk"""
+        """RunTextTranslationResponse
+
+        The model defined in huaweicloud sdk
+
+        :param src_text: 翻译原文，编码格式为UTF-8。调用失败时无此字段。
+        :type src_text: str
+        :param translated_text: 翻译译文，编码格式为UTF-8。调用失败时无此字段。
+        :type translated_text: str
+        :param error_code: 调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
+        :type error_code: str
+        :param error_msg: 调用失败时的错误信息。调用成功时无此字段。
+        :type error_msg: str
+        """
         
         super(RunTextTranslationResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class RunTextTranslationResponse(SdkResponse):
         翻译原文，编码格式为UTF-8。调用失败时无此字段。
 
         :param src_text: The src_text of this RunTextTranslationResponse.
-        :type: str
+        :type src_text: str
         """
         self._src_text = src_text
 
@@ -95,7 +106,7 @@ class RunTextTranslationResponse(SdkResponse):
         翻译译文，编码格式为UTF-8。调用失败时无此字段。
 
         :param translated_text: The translated_text of this RunTextTranslationResponse.
-        :type: str
+        :type translated_text: str
         """
         self._translated_text = translated_text
 
@@ -117,7 +128,7 @@ class RunTextTranslationResponse(SdkResponse):
         调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
 
         :param error_code: The error_code of this RunTextTranslationResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -139,7 +150,7 @@ class RunTextTranslationResponse(SdkResponse):
         调用失败时的错误信息。调用成功时无此字段。
 
         :param error_msg: The error_msg of this RunTextTranslationResponse.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 

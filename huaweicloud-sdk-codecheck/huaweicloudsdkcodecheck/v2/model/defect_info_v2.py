@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DefectInfoV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class DefectInfoV2:
     }
 
     def __init__(self, defect_id=None, defect_checker_name=None, defect_status=None, rule_system_tags=None, rule_name=None, line_number=None, defect_content=None, defect_level=None, file_path=None, created_at=None, issue_key=None, fragment=None):
-        """DefectInfoV2 - a model defined in huaweicloud sdk"""
+        """DefectInfoV2
+
+        The model defined in huaweicloud sdk
+
+        :param defect_id: 缺陷的id
+        :type defect_id: str
+        :param defect_checker_name: 缺陷对应检查项的名称
+        :type defect_checker_name: str
+        :param defect_status: 缺陷的状态0为解决 1已解决 2已忽略
+        :type defect_status: str
+        :param rule_system_tags: 规则标签,多个标签用逗号隔开
+        :type rule_system_tags: str
+        :param rule_name: 规则名
+        :type rule_name: str
+        :param line_number: 缺陷所在文件行号
+        :type line_number: str
+        :param defect_content: 缺陷描述
+        :type defect_content: str
+        :param defect_level: 缺陷等级，0致命，1严重，2一般，3提示
+        :type defect_level: str
+        :param file_path: 缺陷文件路径
+        :type file_path: str
+        :param created_at: 创建时间
+        :type created_at: str
+        :param issue_key: 问题唯一标识
+        :type issue_key: str
+        :param fragment: 缺陷代码片段详情
+        :type fragment: list[:class:`huaweicloudsdkcodecheck.v2.DefectFragmentV2`]
+        """
         
         
 
@@ -113,7 +140,7 @@ class DefectInfoV2:
         缺陷的id
 
         :param defect_id: The defect_id of this DefectInfoV2.
-        :type: str
+        :type defect_id: str
         """
         self._defect_id = defect_id
 
@@ -135,7 +162,7 @@ class DefectInfoV2:
         缺陷对应检查项的名称
 
         :param defect_checker_name: The defect_checker_name of this DefectInfoV2.
-        :type: str
+        :type defect_checker_name: str
         """
         self._defect_checker_name = defect_checker_name
 
@@ -157,7 +184,7 @@ class DefectInfoV2:
         缺陷的状态0为解决 1已解决 2已忽略
 
         :param defect_status: The defect_status of this DefectInfoV2.
-        :type: str
+        :type defect_status: str
         """
         self._defect_status = defect_status
 
@@ -179,7 +206,7 @@ class DefectInfoV2:
         规则标签,多个标签用逗号隔开
 
         :param rule_system_tags: The rule_system_tags of this DefectInfoV2.
-        :type: str
+        :type rule_system_tags: str
         """
         self._rule_system_tags = rule_system_tags
 
@@ -201,7 +228,7 @@ class DefectInfoV2:
         规则名
 
         :param rule_name: The rule_name of this DefectInfoV2.
-        :type: str
+        :type rule_name: str
         """
         self._rule_name = rule_name
 
@@ -223,7 +250,7 @@ class DefectInfoV2:
         缺陷所在文件行号
 
         :param line_number: The line_number of this DefectInfoV2.
-        :type: str
+        :type line_number: str
         """
         self._line_number = line_number
 
@@ -245,7 +272,7 @@ class DefectInfoV2:
         缺陷描述
 
         :param defect_content: The defect_content of this DefectInfoV2.
-        :type: str
+        :type defect_content: str
         """
         self._defect_content = defect_content
 
@@ -267,7 +294,7 @@ class DefectInfoV2:
         缺陷等级，0致命，1严重，2一般，3提示
 
         :param defect_level: The defect_level of this DefectInfoV2.
-        :type: str
+        :type defect_level: str
         """
         self._defect_level = defect_level
 
@@ -289,7 +316,7 @@ class DefectInfoV2:
         缺陷文件路径
 
         :param file_path: The file_path of this DefectInfoV2.
-        :type: str
+        :type file_path: str
         """
         self._file_path = file_path
 
@@ -311,7 +338,7 @@ class DefectInfoV2:
         创建时间
 
         :param created_at: The created_at of this DefectInfoV2.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -333,7 +360,7 @@ class DefectInfoV2:
         问题唯一标识
 
         :param issue_key: The issue_key of this DefectInfoV2.
-        :type: str
+        :type issue_key: str
         """
         self._issue_key = issue_key
 
@@ -344,7 +371,7 @@ class DefectInfoV2:
         缺陷代码片段详情
 
         :return: The fragment of this DefectInfoV2.
-        :rtype: list[DefectFragmentV2]
+        :rtype: list[:class:`huaweicloudsdkcodecheck.v2.DefectFragmentV2`]
         """
         return self._fragment
 
@@ -355,7 +382,7 @@ class DefectInfoV2:
         缺陷代码片段详情
 
         :param fragment: The fragment of this DefectInfoV2.
-        :type: list[DefectFragmentV2]
+        :type fragment: list[:class:`huaweicloudsdkcodecheck.v2.DefectFragmentV2`]
         """
         self._fragment = fragment
 

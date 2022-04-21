@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowProtectableResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowProtectableResponse(SdkResponse):
     }
 
     def __init__(self, instance=None):
-        """ShowProtectableResponse - a model defined in huaweicloud sdk"""
+        """ShowProtectableResponse
+
+        The model defined in huaweicloud sdk
+
+        :param instance: 
+        :type instance: :class:`huaweicloudsdkcbr.v1.ProtectablesResp`
+        """
         
         super(ShowProtectableResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class ShowProtectableResponse(SdkResponse):
 
 
         :return: The instance of this ShowProtectableResponse.
-        :rtype: ProtectablesResp
+        :rtype: :class:`huaweicloudsdkcbr.v1.ProtectablesResp`
         """
         return self._instance
 
@@ -56,7 +61,7 @@ class ShowProtectableResponse(SdkResponse):
 
 
         :param instance: The instance of this ShowProtectableResponse.
-        :type: ProtectablesResp
+        :type instance: :class:`huaweicloudsdkcbr.v1.ProtectablesResp`
         """
         self._instance = instance
 

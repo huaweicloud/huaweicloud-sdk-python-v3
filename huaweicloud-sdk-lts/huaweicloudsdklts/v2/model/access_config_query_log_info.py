@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AccessConfigQueryLogInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class AccessConfigQueryLogInfo:
     }
 
     def __init__(self, log_group_id=None, log_stream_id=None, log_group_name=None, log_stream_name=None):
-        """AccessConfigQueryLogInfo - a model defined in huaweicloud sdk"""
+        """AccessConfigQueryLogInfo
+
+        The model defined in huaweicloud sdk
+
+        :param log_group_id: 日志组ID
+        :type log_group_id: str
+        :param log_stream_id: 日志流ID
+        :type log_stream_id: str
+        :param log_group_name: 日志组名称
+        :type log_group_name: str
+        :param log_stream_name: 日志流名称
+        :type log_stream_name: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class AccessConfigQueryLogInfo:
         日志组ID
 
         :param log_group_id: The log_group_id of this AccessConfigQueryLogInfo.
-        :type: str
+        :type log_group_id: str
         """
         self._log_group_id = log_group_id
 
@@ -95,7 +106,7 @@ class AccessConfigQueryLogInfo:
         日志流ID
 
         :param log_stream_id: The log_stream_id of this AccessConfigQueryLogInfo.
-        :type: str
+        :type log_stream_id: str
         """
         self._log_stream_id = log_stream_id
 
@@ -117,7 +128,7 @@ class AccessConfigQueryLogInfo:
         日志组名称
 
         :param log_group_name: The log_group_name of this AccessConfigQueryLogInfo.
-        :type: str
+        :type log_group_name: str
         """
         self._log_group_name = log_group_name
 
@@ -139,7 +150,7 @@ class AccessConfigQueryLogInfo:
         日志流名称
 
         :param log_stream_name: The log_stream_name of this AccessConfigQueryLogInfo.
-        :type: str
+        :type log_stream_name: str
         """
         self._log_stream_name = log_stream_name
 

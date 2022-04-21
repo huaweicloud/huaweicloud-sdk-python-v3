@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ThresholdData:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ThresholdData:
     }
 
     def __init__(self, receiving=None, receiving_default=None, sending=None, sending_default=None):
-        """ThresholdData - a model defined in huaweicloud sdk"""
+        """ThresholdData
+
+        The model defined in huaweicloud sdk
+
+        :param receiving: 自定义接收方向阈值，单位为毫秒(ms)
+        :type receiving: int
+        :param receiving_default: 默认接收方向阈值，单位为毫秒(ms)
+        :type receiving_default: int
+        :param sending: 自定义发送方向阈值，单位为毫秒(ms)
+        :type sending: int
+        :param sending_default: 默认发送方向阈值，单位为毫秒(ms)
+        :type sending_default: int
+        """
         
         
 
@@ -73,7 +84,7 @@ class ThresholdData:
         自定义接收方向阈值，单位为毫秒(ms)
 
         :param receiving: The receiving of this ThresholdData.
-        :type: int
+        :type receiving: int
         """
         self._receiving = receiving
 
@@ -95,7 +106,7 @@ class ThresholdData:
         默认接收方向阈值，单位为毫秒(ms)
 
         :param receiving_default: The receiving_default of this ThresholdData.
-        :type: int
+        :type receiving_default: int
         """
         self._receiving_default = receiving_default
 
@@ -117,7 +128,7 @@ class ThresholdData:
         自定义发送方向阈值，单位为毫秒(ms)
 
         :param sending: The sending of this ThresholdData.
-        :type: int
+        :type sending: int
         """
         self._sending = sending
 
@@ -139,7 +150,7 @@ class ThresholdData:
         默认发送方向阈值，单位为毫秒(ms)
 
         :param sending_default: The sending_default of this ThresholdData.
-        :type: int
+        :type sending_default: int
         """
         self._sending_default = sending_default
 

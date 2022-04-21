@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateAccessCodeResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateAccessCodeResponse(SdkResponse):
     }
 
     def __init__(self, access_key=None, access_code=None):
-        """CreateAccessCodeResponse - a model defined in huaweicloud sdk"""
+        """CreateAccessCodeResponse
+
+        The model defined in huaweicloud sdk
+
+        :param access_key: 接入名，随机生成8位字符串
+        :type access_key: str
+        :param access_code: 接入凭证。
+        :type access_code: str
+        """
         
         super(CreateAccessCodeResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class CreateAccessCodeResponse(SdkResponse):
         接入名，随机生成8位字符串
 
         :param access_key: The access_key of this CreateAccessCodeResponse.
-        :type: str
+        :type access_key: str
         """
         self._access_key = access_key
 
@@ -85,7 +92,7 @@ class CreateAccessCodeResponse(SdkResponse):
         接入凭证。
 
         :param access_code: The access_code of this CreateAccessCodeResponse.
-        :type: str
+        :type access_code: str
         """
         self._access_code = access_code
 

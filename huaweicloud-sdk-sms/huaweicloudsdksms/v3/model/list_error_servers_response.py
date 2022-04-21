@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListErrorServersResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListErrorServersResponse(SdkResponse):
     }
 
     def __init__(self, count=None, migration_errors=None):
-        """ListErrorServersResponse - a model defined in huaweicloud sdk"""
+        """ListErrorServersResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 迁移过程中发生错误的源端数量
+        :type count: int
+        :param migration_errors: 迁移过程中发生的错误详情
+        :type migration_errors: list[:class:`huaweicloudsdksms.v3.MigrationErrors`]
+        """
         
         super(ListErrorServersResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListErrorServersResponse(SdkResponse):
         迁移过程中发生错误的源端数量
 
         :param count: The count of this ListErrorServersResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -74,7 +81,7 @@ class ListErrorServersResponse(SdkResponse):
         迁移过程中发生的错误详情
 
         :return: The migration_errors of this ListErrorServersResponse.
-        :rtype: list[MigrationErrors]
+        :rtype: list[:class:`huaweicloudsdksms.v3.MigrationErrors`]
         """
         return self._migration_errors
 
@@ -85,7 +92,7 @@ class ListErrorServersResponse(SdkResponse):
         迁移过程中发生的错误详情
 
         :param migration_errors: The migration_errors of this ListErrorServersResponse.
-        :type: list[MigrationErrors]
+        :type migration_errors: list[:class:`huaweicloudsdksms.v3.MigrationErrors`]
         """
         self._migration_errors = migration_errors
 

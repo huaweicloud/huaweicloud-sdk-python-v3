@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SecurityCompliance:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class SecurityCompliance:
     }
 
     def __init__(self, password_regex=None, password_regex_description=None):
-        """SecurityCompliance - a model defined in huaweicloud sdk"""
+        """SecurityCompliance
+
+        The model defined in huaweicloud sdk
+
+        :param password_regex: 密码强度策略的正则表达式。
+        :type password_regex: str
+        :param password_regex_description: 密码强度策略的描述。
+        :type password_regex_description: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class SecurityCompliance:
         密码强度策略的正则表达式。
 
         :param password_regex: The password_regex of this SecurityCompliance.
-        :type: str
+        :type password_regex: str
         """
         self._password_regex = password_regex
 
@@ -83,7 +90,7 @@ class SecurityCompliance:
         密码强度策略的描述。
 
         :param password_regex_description: The password_regex_description of this SecurityCompliance.
-        :type: str
+        :type password_regex_description: str
         """
         self._password_regex_description = password_regex_description
 

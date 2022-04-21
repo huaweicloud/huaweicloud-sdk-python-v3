@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VpcepInfoRsp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class VpcepInfoRsp:
     }
 
     def __init__(self, vpcep_service_id=None, vpcep_service_name=None, vpcep_client_ip=None, vpcep_client_port=None, kafka_broker_ip=None):
-        """VpcepInfoRsp - a model defined in huaweicloud sdk"""
+        """VpcepInfoRsp
+
+        The model defined in huaweicloud sdk
+
+        :param vpcep_service_id: Kafka的VPCEP的service id
+        :type vpcep_service_id: str
+        :param vpcep_service_name: Kafka的VPCEP的service name
+        :type vpcep_service_name: str
+        :param vpcep_client_ip: Kafka的VPCEP的client ip
+        :type vpcep_client_ip: str
+        :param vpcep_client_port: Kafka的VPCEP的client port
+        :type vpcep_client_port: int
+        :param kafka_broker_ip: Kafka的Broker ip
+        :type kafka_broker_ip: str
+        """
         
         
 
@@ -74,7 +87,7 @@ class VpcepInfoRsp:
         Kafka的VPCEP的service id
 
         :param vpcep_service_id: The vpcep_service_id of this VpcepInfoRsp.
-        :type: str
+        :type vpcep_service_id: str
         """
         self._vpcep_service_id = vpcep_service_id
 
@@ -96,7 +109,7 @@ class VpcepInfoRsp:
         Kafka的VPCEP的service name
 
         :param vpcep_service_name: The vpcep_service_name of this VpcepInfoRsp.
-        :type: str
+        :type vpcep_service_name: str
         """
         self._vpcep_service_name = vpcep_service_name
 
@@ -118,7 +131,7 @@ class VpcepInfoRsp:
         Kafka的VPCEP的client ip
 
         :param vpcep_client_ip: The vpcep_client_ip of this VpcepInfoRsp.
-        :type: str
+        :type vpcep_client_ip: str
         """
         self._vpcep_client_ip = vpcep_client_ip
 
@@ -140,7 +153,7 @@ class VpcepInfoRsp:
         Kafka的VPCEP的client port
 
         :param vpcep_client_port: The vpcep_client_port of this VpcepInfoRsp.
-        :type: int
+        :type vpcep_client_port: int
         """
         self._vpcep_client_port = vpcep_client_port
 
@@ -162,7 +175,7 @@ class VpcepInfoRsp:
         Kafka的Broker ip
 
         :param kafka_broker_ip: The kafka_broker_ip of this VpcepInfoRsp.
-        :type: str
+        :type kafka_broker_ip: str
         """
         self._kafka_broker_ip = kafka_broker_ip
 

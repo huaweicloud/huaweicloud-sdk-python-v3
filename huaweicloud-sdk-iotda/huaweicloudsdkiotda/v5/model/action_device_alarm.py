@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ActionDeviceAlarm:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ActionDeviceAlarm:
     }
 
     def __init__(self, name=None, alarm_status=None, severity=None, description=None):
-        """ActionDeviceAlarm - a model defined in huaweicloud sdk"""
+        """ActionDeviceAlarm
+
+        The model defined in huaweicloud sdk
+
+        :param name: **参数说明**：告警名称。
+        :type name: str
+        :param alarm_status: **参数说明**：告警状态。 **取值范围**： - fault：上报告警。 - recovery：恢复告警。
+        :type alarm_status: str
+        :param severity: **参数说明**：告警级别。 **取值范围**： - warning：警告。 - minor：一般。 - major：严重。 - critical：致命。
+        :type severity: str
+        :param description: **参数说明**：告警的描述信息。
+        :type description: str
+        """
         
         
 
@@ -70,7 +81,7 @@ class ActionDeviceAlarm:
         **参数说明**：告警名称。
 
         :param name: The name of this ActionDeviceAlarm.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -92,7 +103,7 @@ class ActionDeviceAlarm:
         **参数说明**：告警状态。 **取值范围**： - fault：上报告警。 - recovery：恢复告警。
 
         :param alarm_status: The alarm_status of this ActionDeviceAlarm.
-        :type: str
+        :type alarm_status: str
         """
         self._alarm_status = alarm_status
 
@@ -114,7 +125,7 @@ class ActionDeviceAlarm:
         **参数说明**：告警级别。 **取值范围**： - warning：警告。 - minor：一般。 - major：严重。 - critical：致命。
 
         :param severity: The severity of this ActionDeviceAlarm.
-        :type: str
+        :type severity: str
         """
         self._severity = severity
 
@@ -136,7 +147,7 @@ class ActionDeviceAlarm:
         **参数说明**：告警的描述信息。
 
         :param description: The description of this ActionDeviceAlarm.
-        :type: str
+        :type description: str
         """
         self._description = description
 

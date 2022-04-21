@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchTagActionRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchTagActionRequestBody:
     }
 
     def __init__(self, action=None, tags=None):
-        """BatchTagActionRequestBody - a model defined in huaweicloud sdk"""
+        """BatchTagActionRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param action: 操作标识。取值： - create，表示添加标签。 - delete，表示删除标签。
+        :type action: str
+        :param tags: 标签列表。
+        :type tags: list[:class:`huaweicloudsdkgaussdbfornosql.v3.BatchTagActionTagOption`]
+        """
         
         
 
@@ -61,7 +68,7 @@ class BatchTagActionRequestBody:
         操作标识。取值： - create，表示添加标签。 - delete，表示删除标签。
 
         :param action: The action of this BatchTagActionRequestBody.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -72,7 +79,7 @@ class BatchTagActionRequestBody:
         标签列表。
 
         :return: The tags of this BatchTagActionRequestBody.
-        :rtype: list[BatchTagActionTagOption]
+        :rtype: list[:class:`huaweicloudsdkgaussdbfornosql.v3.BatchTagActionTagOption`]
         """
         return self._tags
 
@@ -83,7 +90,7 @@ class BatchTagActionRequestBody:
         标签列表。
 
         :param tags: The tags of this BatchTagActionRequestBody.
-        :type: list[BatchTagActionTagOption]
+        :type tags: list[:class:`huaweicloudsdkgaussdbfornosql.v3.BatchTagActionTagOption`]
         """
         self._tags = tags
 

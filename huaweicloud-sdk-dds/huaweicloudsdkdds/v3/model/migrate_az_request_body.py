@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MigrateAzRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class MigrateAzRequestBody:
     }
 
     def __init__(self, target_azs=None):
-        """MigrateAzRequestBody - a model defined in huaweicloud sdk"""
+        """MigrateAzRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param target_azs: 迁移到的目标单az或者多az，请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
+        :type target_azs: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class MigrateAzRequestBody:
         迁移到的目标单az或者多az，请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
 
         :param target_azs: The target_azs of this MigrateAzRequestBody.
-        :type: str
+        :type target_azs: str
         """
         self._target_azs = target_azs
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SimPoolVO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -60,7 +59,43 @@ class SimPoolVO:
     }
 
     def __init__(self, id=None, pool_name=None, price_plan_name=None, price_plan_id=None, effective_time=None, expired_time=None, billing_cycle=None, flow_total=None, flow_used=None, flow_left=None, quantity=None, modify_time=None, activated_sim_quantity=None, inactive_sim_quantity=None, disassembled_sim_quantity=None, order_ids=None):
-        """SimPoolVO - a model defined in huaweicloud sdk"""
+        """SimPoolVO
+
+        The model defined in huaweicloud sdk
+
+        :param id: 流量池标识
+        :type id: int
+        :param pool_name: 流量池名称
+        :type pool_name: str
+        :param price_plan_name: 套餐名称
+        :type price_plan_name: str
+        :param price_plan_id: 套餐标识
+        :type price_plan_id: str
+        :param effective_time: 生效时间
+        :type effective_time: datetime
+        :param expired_time: 失效时间
+        :type expired_time: datetime
+        :param billing_cycle: 账期
+        :type billing_cycle: str
+        :param flow_total: 可用流量(查询账期所在月份)，单位MB
+        :type flow_total: float
+        :param flow_used: 已用流量(查询账期所在月份), 单位MB
+        :type flow_used: float
+        :param flow_left: 剩余流量(查询账期所在月份), 单位MB
+        :type flow_left: float
+        :param quantity: 流量池成员数量
+        :type quantity: int
+        :param modify_time: 更新时间
+        :type modify_time: datetime
+        :param activated_sim_quantity: 已激活成员数量
+        :type activated_sim_quantity: int
+        :param inactive_sim_quantity: 未激活成员数量
+        :type inactive_sim_quantity: int
+        :param disassembled_sim_quantity: 已拆机成员数量
+        :type disassembled_sim_quantity: int
+        :param order_ids: 组成流量池的批次号列表
+        :type order_ids: str
+        """
         
         
 
@@ -133,7 +168,7 @@ class SimPoolVO:
         流量池标识
 
         :param id: The id of this SimPoolVO.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -155,7 +190,7 @@ class SimPoolVO:
         流量池名称
 
         :param pool_name: The pool_name of this SimPoolVO.
-        :type: str
+        :type pool_name: str
         """
         self._pool_name = pool_name
 
@@ -177,7 +212,7 @@ class SimPoolVO:
         套餐名称
 
         :param price_plan_name: The price_plan_name of this SimPoolVO.
-        :type: str
+        :type price_plan_name: str
         """
         self._price_plan_name = price_plan_name
 
@@ -199,7 +234,7 @@ class SimPoolVO:
         套餐标识
 
         :param price_plan_id: The price_plan_id of this SimPoolVO.
-        :type: str
+        :type price_plan_id: str
         """
         self._price_plan_id = price_plan_id
 
@@ -221,7 +256,7 @@ class SimPoolVO:
         生效时间
 
         :param effective_time: The effective_time of this SimPoolVO.
-        :type: datetime
+        :type effective_time: datetime
         """
         self._effective_time = effective_time
 
@@ -243,7 +278,7 @@ class SimPoolVO:
         失效时间
 
         :param expired_time: The expired_time of this SimPoolVO.
-        :type: datetime
+        :type expired_time: datetime
         """
         self._expired_time = expired_time
 
@@ -265,7 +300,7 @@ class SimPoolVO:
         账期
 
         :param billing_cycle: The billing_cycle of this SimPoolVO.
-        :type: str
+        :type billing_cycle: str
         """
         self._billing_cycle = billing_cycle
 
@@ -287,7 +322,7 @@ class SimPoolVO:
         可用流量(查询账期所在月份)，单位MB
 
         :param flow_total: The flow_total of this SimPoolVO.
-        :type: float
+        :type flow_total: float
         """
         self._flow_total = flow_total
 
@@ -309,7 +344,7 @@ class SimPoolVO:
         已用流量(查询账期所在月份), 单位MB
 
         :param flow_used: The flow_used of this SimPoolVO.
-        :type: float
+        :type flow_used: float
         """
         self._flow_used = flow_used
 
@@ -331,7 +366,7 @@ class SimPoolVO:
         剩余流量(查询账期所在月份), 单位MB
 
         :param flow_left: The flow_left of this SimPoolVO.
-        :type: float
+        :type flow_left: float
         """
         self._flow_left = flow_left
 
@@ -353,7 +388,7 @@ class SimPoolVO:
         流量池成员数量
 
         :param quantity: The quantity of this SimPoolVO.
-        :type: int
+        :type quantity: int
         """
         self._quantity = quantity
 
@@ -375,7 +410,7 @@ class SimPoolVO:
         更新时间
 
         :param modify_time: The modify_time of this SimPoolVO.
-        :type: datetime
+        :type modify_time: datetime
         """
         self._modify_time = modify_time
 
@@ -397,7 +432,7 @@ class SimPoolVO:
         已激活成员数量
 
         :param activated_sim_quantity: The activated_sim_quantity of this SimPoolVO.
-        :type: int
+        :type activated_sim_quantity: int
         """
         self._activated_sim_quantity = activated_sim_quantity
 
@@ -419,7 +454,7 @@ class SimPoolVO:
         未激活成员数量
 
         :param inactive_sim_quantity: The inactive_sim_quantity of this SimPoolVO.
-        :type: int
+        :type inactive_sim_quantity: int
         """
         self._inactive_sim_quantity = inactive_sim_quantity
 
@@ -441,7 +476,7 @@ class SimPoolVO:
         已拆机成员数量
 
         :param disassembled_sim_quantity: The disassembled_sim_quantity of this SimPoolVO.
-        :type: int
+        :type disassembled_sim_quantity: int
         """
         self._disassembled_sim_quantity = disassembled_sim_quantity
 
@@ -463,7 +498,7 @@ class SimPoolVO:
         组成流量池的批次号列表
 
         :param order_ids: The order_ids of this SimPoolVO.
-        :type: str
+        :type order_ids: str
         """
         self._order_ids = order_ids
 

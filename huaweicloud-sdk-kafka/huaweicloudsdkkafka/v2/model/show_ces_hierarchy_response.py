@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowCesHierarchyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ShowCesHierarchyResponse(SdkResponse):
     }
 
     def __init__(self, dimensions=None, instance_ids=None, nodes=None, queues=None, groups=None):
-        """ShowCesHierarchyResponse - a model defined in huaweicloud sdk"""
+        """ShowCesHierarchyResponse
+
+        The model defined in huaweicloud sdk
+
+        :param dimensions: 监控维度。
+        :type dimensions: list[:class:`huaweicloudsdkkafka.v2.ShowCeshierarchyRespDimensions`]
+        :param instance_ids: 实例信息。
+        :type instance_ids: list[:class:`huaweicloudsdkkafka.v2.ShowCeshierarchyRespInstanceIds`]
+        :param nodes: 节点信息。
+        :type nodes: list[:class:`huaweicloudsdkkafka.v2.ShowCeshierarchyRespNodes`]
+        :param queues: 队列信息。
+        :type queues: list[:class:`huaweicloudsdkkafka.v2.ShowCeshierarchyRespQueues`]
+        :param groups: 消费组信息。
+        :type groups: list[:class:`huaweicloudsdkkafka.v2.ShowCeshierarchyRespGroups`]
+        """
         
         super(ShowCesHierarchyResponse, self).__init__()
 
@@ -67,7 +80,7 @@ class ShowCesHierarchyResponse(SdkResponse):
         监控维度。
 
         :return: The dimensions of this ShowCesHierarchyResponse.
-        :rtype: list[ShowCeshierarchyRespDimensions]
+        :rtype: list[:class:`huaweicloudsdkkafka.v2.ShowCeshierarchyRespDimensions`]
         """
         return self._dimensions
 
@@ -78,7 +91,7 @@ class ShowCesHierarchyResponse(SdkResponse):
         监控维度。
 
         :param dimensions: The dimensions of this ShowCesHierarchyResponse.
-        :type: list[ShowCeshierarchyRespDimensions]
+        :type dimensions: list[:class:`huaweicloudsdkkafka.v2.ShowCeshierarchyRespDimensions`]
         """
         self._dimensions = dimensions
 
@@ -89,7 +102,7 @@ class ShowCesHierarchyResponse(SdkResponse):
         实例信息。
 
         :return: The instance_ids of this ShowCesHierarchyResponse.
-        :rtype: list[ShowCeshierarchyRespInstanceIds]
+        :rtype: list[:class:`huaweicloudsdkkafka.v2.ShowCeshierarchyRespInstanceIds`]
         """
         return self._instance_ids
 
@@ -100,7 +113,7 @@ class ShowCesHierarchyResponse(SdkResponse):
         实例信息。
 
         :param instance_ids: The instance_ids of this ShowCesHierarchyResponse.
-        :type: list[ShowCeshierarchyRespInstanceIds]
+        :type instance_ids: list[:class:`huaweicloudsdkkafka.v2.ShowCeshierarchyRespInstanceIds`]
         """
         self._instance_ids = instance_ids
 
@@ -111,7 +124,7 @@ class ShowCesHierarchyResponse(SdkResponse):
         节点信息。
 
         :return: The nodes of this ShowCesHierarchyResponse.
-        :rtype: list[ShowCeshierarchyRespNodes]
+        :rtype: list[:class:`huaweicloudsdkkafka.v2.ShowCeshierarchyRespNodes`]
         """
         return self._nodes
 
@@ -122,7 +135,7 @@ class ShowCesHierarchyResponse(SdkResponse):
         节点信息。
 
         :param nodes: The nodes of this ShowCesHierarchyResponse.
-        :type: list[ShowCeshierarchyRespNodes]
+        :type nodes: list[:class:`huaweicloudsdkkafka.v2.ShowCeshierarchyRespNodes`]
         """
         self._nodes = nodes
 
@@ -133,7 +146,7 @@ class ShowCesHierarchyResponse(SdkResponse):
         队列信息。
 
         :return: The queues of this ShowCesHierarchyResponse.
-        :rtype: list[ShowCeshierarchyRespQueues]
+        :rtype: list[:class:`huaweicloudsdkkafka.v2.ShowCeshierarchyRespQueues`]
         """
         return self._queues
 
@@ -144,7 +157,7 @@ class ShowCesHierarchyResponse(SdkResponse):
         队列信息。
 
         :param queues: The queues of this ShowCesHierarchyResponse.
-        :type: list[ShowCeshierarchyRespQueues]
+        :type queues: list[:class:`huaweicloudsdkkafka.v2.ShowCeshierarchyRespQueues`]
         """
         self._queues = queues
 
@@ -155,7 +168,7 @@ class ShowCesHierarchyResponse(SdkResponse):
         消费组信息。
 
         :return: The groups of this ShowCesHierarchyResponse.
-        :rtype: list[ShowCeshierarchyRespGroups]
+        :rtype: list[:class:`huaweicloudsdkkafka.v2.ShowCeshierarchyRespGroups`]
         """
         return self._groups
 
@@ -166,7 +179,7 @@ class ShowCesHierarchyResponse(SdkResponse):
         消费组信息。
 
         :param groups: The groups of this ShowCesHierarchyResponse.
-        :type: list[ShowCeshierarchyRespGroups]
+        :type groups: list[:class:`huaweicloudsdkkafka.v2.ShowCeshierarchyRespGroups`]
         """
         self._groups = groups
 

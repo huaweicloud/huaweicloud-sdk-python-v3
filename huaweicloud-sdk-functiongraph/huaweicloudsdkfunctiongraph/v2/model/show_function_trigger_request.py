@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowFunctionTriggerRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowFunctionTriggerRequest:
     }
 
     def __init__(self, function_urn=None, trigger_type_code=None, trigger_id=None):
-        """ShowFunctionTriggerRequest - a model defined in huaweicloud sdk"""
+        """ShowFunctionTriggerRequest
+
+        The model defined in huaweicloud sdk
+
+        :param function_urn: 函数的URN，详细解释见FunctionGraph函数模型的描述。
+        :type function_urn: str
+        :param trigger_type_code: 
+        :type trigger_type_code: str
+        :param trigger_id: 
+        :type trigger_id: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class ShowFunctionTriggerRequest:
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
         :param function_urn: The function_urn of this ShowFunctionTriggerRequest.
-        :type: str
+        :type function_urn: str
         """
         self._function_urn = function_urn
 
@@ -85,7 +94,7 @@ class ShowFunctionTriggerRequest:
 
 
         :param trigger_type_code: The trigger_type_code of this ShowFunctionTriggerRequest.
-        :type: str
+        :type trigger_type_code: str
         """
         self._trigger_type_code = trigger_type_code
 
@@ -105,7 +114,7 @@ class ShowFunctionTriggerRequest:
 
 
         :param trigger_id: The trigger_id of this ShowFunctionTriggerRequest.
-        :type: str
+        :type trigger_id: str
         """
         self._trigger_id = trigger_id
 

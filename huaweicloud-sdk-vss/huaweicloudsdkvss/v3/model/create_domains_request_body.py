@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateDomainsRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateDomainsRequestBody:
     }
 
     def __init__(self, domain_name=None, alias=None):
-        """CreateDomainsRequestBody - a model defined in huaweicloud sdk"""
+        """CreateDomainsRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param domain_name: 域名
+        :type domain_name: str
+        :param alias: 域名的别名
+        :type alias: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class CreateDomainsRequestBody:
         域名
 
         :param domain_name: The domain_name of this CreateDomainsRequestBody.
-        :type: str
+        :type domain_name: str
         """
         self._domain_name = domain_name
 
@@ -83,7 +90,7 @@ class CreateDomainsRequestBody:
         域名的别名
 
         :param alias: The alias of this CreateDomainsRequestBody.
-        :type: str
+        :type alias: str
         """
         self._alias = alias
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateAlarmActionRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateAlarmActionRequest:
     }
 
     def __init__(self, alarm_id=None, body=None):
-        """UpdateAlarmActionRequest - a model defined in huaweicloud sdk"""
+        """UpdateAlarmActionRequest
+
+        The model defined in huaweicloud sdk
+
+        :param alarm_id: 告警规则的ID。
+        :type alarm_id: str
+        :param body: Body of the UpdateAlarmActionRequest
+        :type body: :class:`huaweicloudsdkces.v1.ModifyAlarmActionReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateAlarmActionRequest:
         告警规则的ID。
 
         :param alarm_id: The alarm_id of this UpdateAlarmActionRequest.
-        :type: str
+        :type alarm_id: str
         """
         self._alarm_id = alarm_id
 
@@ -72,7 +79,7 @@ class UpdateAlarmActionRequest:
 
 
         :return: The body of this UpdateAlarmActionRequest.
-        :rtype: ModifyAlarmActionReq
+        :rtype: :class:`huaweicloudsdkces.v1.ModifyAlarmActionReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateAlarmActionRequest:
 
 
         :param body: The body of this UpdateAlarmActionRequest.
-        :type: ModifyAlarmActionReq
+        :type body: :class:`huaweicloudsdkces.v1.ModifyAlarmActionReq`
         """
         self._body = body
 

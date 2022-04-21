@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateAlertConfigRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateAlertConfigRequestBody:
     }
 
     def __init__(self, display_name=None, topic_urn=None, warn_config=None):
-        """UpdateAlertConfigRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateAlertConfigRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param display_name: 告警群组描述。
+        :type display_name: str
+        :param topic_urn: 告警群组的唯一标识。
+        :type topic_urn: str
+        :param warn_config: 
+        :type warn_config: :class:`huaweicloudsdkantiddos.v1.UpdateAlertConfigRequestBodyWarnConfig`
+        """
         
         
 
@@ -65,7 +74,7 @@ class UpdateAlertConfigRequestBody:
         告警群组描述。
 
         :param display_name: The display_name of this UpdateAlertConfigRequestBody.
-        :type: str
+        :type display_name: str
         """
         self._display_name = display_name
 
@@ -87,7 +96,7 @@ class UpdateAlertConfigRequestBody:
         告警群组的唯一标识。
 
         :param topic_urn: The topic_urn of this UpdateAlertConfigRequestBody.
-        :type: str
+        :type topic_urn: str
         """
         self._topic_urn = topic_urn
 
@@ -97,7 +106,7 @@ class UpdateAlertConfigRequestBody:
 
 
         :return: The warn_config of this UpdateAlertConfigRequestBody.
-        :rtype: UpdateAlertConfigRequestBodyWarnConfig
+        :rtype: :class:`huaweicloudsdkantiddos.v1.UpdateAlertConfigRequestBodyWarnConfig`
         """
         return self._warn_config
 
@@ -107,7 +116,7 @@ class UpdateAlertConfigRequestBody:
 
 
         :param warn_config: The warn_config of this UpdateAlertConfigRequestBody.
-        :type: UpdateAlertConfigRequestBodyWarnConfig
+        :type warn_config: :class:`huaweicloudsdkantiddos.v1.UpdateAlertConfigRequestBodyWarnConfig`
         """
         self._warn_config = warn_config
 

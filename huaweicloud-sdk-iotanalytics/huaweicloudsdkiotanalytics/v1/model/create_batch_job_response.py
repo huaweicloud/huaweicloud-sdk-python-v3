@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateBatchJobResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class CreateBatchJobResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, job_name=None, tags=None, created_time=None, modified_time=None, job_type=None, export_path=None, merge_result_file=None, sql_job=None, schedule=None):
-        """CreateBatchJobResponse - a model defined in huaweicloud sdk"""
+        """CreateBatchJobResponse
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 仅在响应返回。作业ID。
+        :type job_id: str
+        :param job_name: 作业名称。只能包含数字、英文字母、中文字母、下划线以及中划线。长度为1~128。
+        :type job_name: str
+        :param tags: 标签。只能包含数字、英文字母、中文字符、下划线、中划线、逗号以及斜杠。长度为0~128。
+        :type tags: str
+        :param created_time: 仅在响应返回。创建时间。
+        :type created_time: str
+        :param modified_time: 仅在响应返回。更新时间。
+        :type modified_time: str
+        :param job_type: 作业类型。目前仅支持SqlJob.
+        :type job_type: str
+        :param export_path: 作业查询结果导出到OBS的路径。覆写已存在文件。
+        :type export_path: str
+        :param merge_result_file: 导出文件时是否合并结果文件。true：合并成一个结果文件；false：不合并结果文件。
+        :type merge_result_file: bool
+        :param sql_job: 
+        :type sql_job: :class:`huaweicloudsdkiotanalytics.v1.SqlJob`
+        :param schedule: 
+        :type schedule: :class:`huaweicloudsdkiotanalytics.v1.Schedule`
+        """
         
         super(CreateBatchJobResponse, self).__init__()
 
@@ -103,7 +126,7 @@ class CreateBatchJobResponse(SdkResponse):
         仅在响应返回。作业ID。
 
         :param job_id: The job_id of this CreateBatchJobResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -125,7 +148,7 @@ class CreateBatchJobResponse(SdkResponse):
         作业名称。只能包含数字、英文字母、中文字母、下划线以及中划线。长度为1~128。
 
         :param job_name: The job_name of this CreateBatchJobResponse.
-        :type: str
+        :type job_name: str
         """
         self._job_name = job_name
 
@@ -147,7 +170,7 @@ class CreateBatchJobResponse(SdkResponse):
         标签。只能包含数字、英文字母、中文字符、下划线、中划线、逗号以及斜杠。长度为0~128。
 
         :param tags: The tags of this CreateBatchJobResponse.
-        :type: str
+        :type tags: str
         """
         self._tags = tags
 
@@ -169,7 +192,7 @@ class CreateBatchJobResponse(SdkResponse):
         仅在响应返回。创建时间。
 
         :param created_time: The created_time of this CreateBatchJobResponse.
-        :type: str
+        :type created_time: str
         """
         self._created_time = created_time
 
@@ -191,7 +214,7 @@ class CreateBatchJobResponse(SdkResponse):
         仅在响应返回。更新时间。
 
         :param modified_time: The modified_time of this CreateBatchJobResponse.
-        :type: str
+        :type modified_time: str
         """
         self._modified_time = modified_time
 
@@ -213,7 +236,7 @@ class CreateBatchJobResponse(SdkResponse):
         作业类型。目前仅支持SqlJob.
 
         :param job_type: The job_type of this CreateBatchJobResponse.
-        :type: str
+        :type job_type: str
         """
         self._job_type = job_type
 
@@ -235,7 +258,7 @@ class CreateBatchJobResponse(SdkResponse):
         作业查询结果导出到OBS的路径。覆写已存在文件。
 
         :param export_path: The export_path of this CreateBatchJobResponse.
-        :type: str
+        :type export_path: str
         """
         self._export_path = export_path
 
@@ -257,7 +280,7 @@ class CreateBatchJobResponse(SdkResponse):
         导出文件时是否合并结果文件。true：合并成一个结果文件；false：不合并结果文件。
 
         :param merge_result_file: The merge_result_file of this CreateBatchJobResponse.
-        :type: bool
+        :type merge_result_file: bool
         """
         self._merge_result_file = merge_result_file
 
@@ -267,7 +290,7 @@ class CreateBatchJobResponse(SdkResponse):
 
 
         :return: The sql_job of this CreateBatchJobResponse.
-        :rtype: SqlJob
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.SqlJob`
         """
         return self._sql_job
 
@@ -277,7 +300,7 @@ class CreateBatchJobResponse(SdkResponse):
 
 
         :param sql_job: The sql_job of this CreateBatchJobResponse.
-        :type: SqlJob
+        :type sql_job: :class:`huaweicloudsdkiotanalytics.v1.SqlJob`
         """
         self._sql_job = sql_job
 
@@ -287,7 +310,7 @@ class CreateBatchJobResponse(SdkResponse):
 
 
         :return: The schedule of this CreateBatchJobResponse.
-        :rtype: Schedule
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.Schedule`
         """
         return self._schedule
 
@@ -297,7 +320,7 @@ class CreateBatchJobResponse(SdkResponse):
 
 
         :param schedule: The schedule of this CreateBatchJobResponse.
-        :type: Schedule
+        :type schedule: :class:`huaweicloudsdkiotanalytics.v1.Schedule`
         """
         self._schedule = schedule
 

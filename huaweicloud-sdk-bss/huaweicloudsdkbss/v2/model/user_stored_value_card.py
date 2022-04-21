@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UserStoredValueCard:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class UserStoredValueCard:
     }
 
     def __init__(self, card_id=None, card_name=None, status=None, face_value=None, balance=None, effective_time=None, expire_time=None):
-        """UserStoredValueCard - a model defined in huaweicloud sdk"""
+        """UserStoredValueCard
+
+        The model defined in huaweicloud sdk
+
+        :param card_id: 储值卡ID。
+        :type card_id: str
+        :param card_name: 储值卡名称。
+        :type card_name: str
+        :param status: 状态： 1：可使用 2：已用完
+        :type status: int
+        :param face_value: 储值卡面值。
+        :type face_value: str
+        :param balance: 储值卡余额。
+        :type balance: str
+        :param effective_time: 生效时间。 UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。
+        :type effective_time: str
+        :param expire_time: 失效时间。 UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。
+        :type expire_time: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class UserStoredValueCard:
         储值卡ID。
 
         :param card_id: The card_id of this UserStoredValueCard.
-        :type: str
+        :type card_id: str
         """
         self._card_id = card_id
 
@@ -110,7 +127,7 @@ class UserStoredValueCard:
         储值卡名称。
 
         :param card_name: The card_name of this UserStoredValueCard.
-        :type: str
+        :type card_name: str
         """
         self._card_name = card_name
 
@@ -132,7 +149,7 @@ class UserStoredValueCard:
         状态： 1：可使用 2：已用完
 
         :param status: The status of this UserStoredValueCard.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -154,7 +171,7 @@ class UserStoredValueCard:
         储值卡面值。
 
         :param face_value: The face_value of this UserStoredValueCard.
-        :type: str
+        :type face_value: str
         """
         self._face_value = face_value
 
@@ -176,7 +193,7 @@ class UserStoredValueCard:
         储值卡余额。
 
         :param balance: The balance of this UserStoredValueCard.
-        :type: str
+        :type balance: str
         """
         self._balance = balance
 
@@ -198,7 +215,7 @@ class UserStoredValueCard:
         生效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :param effective_time: The effective_time of this UserStoredValueCard.
-        :type: str
+        :type effective_time: str
         """
         self._effective_time = effective_time
 
@@ -220,7 +237,7 @@ class UserStoredValueCard:
         失效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :param expire_time: The expire_time of this UserStoredValueCard.
-        :type: str
+        :type expire_time: str
         """
         self._expire_time = expire_time
 

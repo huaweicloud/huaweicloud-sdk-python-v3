@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListGraphBackupsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListGraphBackupsRequest:
     }
 
     def __init__(self, graph_id=None, limit=None, offset=None):
-        """ListGraphBackupsRequest - a model defined in huaweicloud sdk"""
+        """ListGraphBackupsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param graph_id: 图ID。
+        :type graph_id: str
+        :param limit: 每页资源数量的最大值，默认为10。
+        :type limit: int
+        :param offset: 本次请求的起始位置，默认为0。
+        :type offset: int
+        """
         
         
 
@@ -67,7 +76,7 @@ class ListGraphBackupsRequest:
         图ID。
 
         :param graph_id: The graph_id of this ListGraphBackupsRequest.
-        :type: str
+        :type graph_id: str
         """
         self._graph_id = graph_id
 
@@ -89,7 +98,7 @@ class ListGraphBackupsRequest:
         每页资源数量的最大值，默认为10。
 
         :param limit: The limit of this ListGraphBackupsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -111,7 +120,7 @@ class ListGraphBackupsRequest:
         本次请求的起始位置，默认为0。
 
         :param offset: The offset of this ListGraphBackupsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 

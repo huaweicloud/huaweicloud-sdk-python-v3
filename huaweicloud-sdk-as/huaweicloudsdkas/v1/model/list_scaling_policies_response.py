@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListScalingPoliciesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListScalingPoliciesResponse(SdkResponse):
     }
 
     def __init__(self, total_number=None, start_number=None, limit=None, scaling_policies=None):
-        """ListScalingPoliciesResponse - a model defined in huaweicloud sdk"""
+        """ListScalingPoliciesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total_number: 总记录数。
+        :type total_number: int
+        :param start_number: 查询的起始行号。
+        :type start_number: int
+        :param limit: 查询记录数。
+        :type limit: int
+        :param scaling_policies: 伸缩策略列表
+        :type scaling_policies: list[:class:`huaweicloudsdkas.v1.ScalingV1PolicyDetail`]
+        """
         
         super(ListScalingPoliciesResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class ListScalingPoliciesResponse(SdkResponse):
         总记录数。
 
         :param total_number: The total_number of this ListScalingPoliciesResponse.
-        :type: int
+        :type total_number: int
         """
         self._total_number = total_number
 
@@ -95,7 +106,7 @@ class ListScalingPoliciesResponse(SdkResponse):
         查询的起始行号。
 
         :param start_number: The start_number of this ListScalingPoliciesResponse.
-        :type: int
+        :type start_number: int
         """
         self._start_number = start_number
 
@@ -117,7 +128,7 @@ class ListScalingPoliciesResponse(SdkResponse):
         查询记录数。
 
         :param limit: The limit of this ListScalingPoliciesResponse.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -128,7 +139,7 @@ class ListScalingPoliciesResponse(SdkResponse):
         伸缩策略列表
 
         :return: The scaling_policies of this ListScalingPoliciesResponse.
-        :rtype: list[ScalingV1PolicyDetail]
+        :rtype: list[:class:`huaweicloudsdkas.v1.ScalingV1PolicyDetail`]
         """
         return self._scaling_policies
 
@@ -139,7 +150,7 @@ class ListScalingPoliciesResponse(SdkResponse):
         伸缩策略列表
 
         :param scaling_policies: The scaling_policies of this ListScalingPoliciesResponse.
-        :type: list[ScalingV1PolicyDetail]
+        :type scaling_policies: list[:class:`huaweicloudsdkas.v1.ScalingV1PolicyDetail`]
         """
         self._scaling_policies = scaling_policies
 

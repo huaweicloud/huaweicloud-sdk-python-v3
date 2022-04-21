@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExecuteTbSessionReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ExecuteTbSessionReq:
     }
 
     def __init__(self, reply=None, type=None):
-        """ExecuteTbSessionReq - a model defined in huaweicloud sdk"""
+        """ExecuteTbSessionReq
+
+        The model defined in huaweicloud sdk
+
+        :param reply: 客户回复。
+        :type reply: str
+        :param type: 客户回复属性，0表示通用回复，1表示客户打断， 2表示客户长时未回复。
+        :type type: int
+        """
         
         
 
@@ -62,7 +69,7 @@ class ExecuteTbSessionReq:
         客户回复。
 
         :param reply: The reply of this ExecuteTbSessionReq.
-        :type: str
+        :type reply: str
         """
         self._reply = reply
 
@@ -84,7 +91,7 @@ class ExecuteTbSessionReq:
         客户回复属性，0表示通用回复，1表示客户打断， 2表示客户长时未回复。
 
         :param type: The type of this ExecuteTbSessionReq.
-        :type: int
+        :type type: int
         """
         self._type = type
 

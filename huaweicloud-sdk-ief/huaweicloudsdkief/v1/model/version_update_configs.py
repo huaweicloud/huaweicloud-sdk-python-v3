@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VersionUpdateConfigs:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class VersionUpdateConfigs:
     }
 
     def __init__(self, privileged=None, host_network=None, restart_policy=None, ports=None):
-        """VersionUpdateConfigs - a model defined in huaweicloud sdk"""
+        """VersionUpdateConfigs
+
+        The model defined in huaweicloud sdk
+
+        :param privileged: 默认为false，表示是否开启特权模式
+        :type privileged: bool
+        :param host_network: 默认为true，其中true表示主机网络，而false表示端口映射
+        :type host_network: bool
+        :param restart_policy: 应用实例重启模式： 1. Always：当容器终止退出后，总是重启容器； 2. Onfailure：容器异常退出（退出码非0）时才重启容器； 3. Never：容器终止退出后，不重启容器；
+        :type restart_policy: str
+        :param ports: 容器端口映射值
+        :type ports: list[:class:`huaweicloudsdkief.v1.AppPorts`]
+        """
         
         
 
@@ -73,7 +84,7 @@ class VersionUpdateConfigs:
         默认为false，表示是否开启特权模式
 
         :param privileged: The privileged of this VersionUpdateConfigs.
-        :type: bool
+        :type privileged: bool
         """
         self._privileged = privileged
 
@@ -95,7 +106,7 @@ class VersionUpdateConfigs:
         默认为true，其中true表示主机网络，而false表示端口映射
 
         :param host_network: The host_network of this VersionUpdateConfigs.
-        :type: bool
+        :type host_network: bool
         """
         self._host_network = host_network
 
@@ -117,7 +128,7 @@ class VersionUpdateConfigs:
         应用实例重启模式： 1. Always：当容器终止退出后，总是重启容器； 2. Onfailure：容器异常退出（退出码非0）时才重启容器； 3. Never：容器终止退出后，不重启容器；
 
         :param restart_policy: The restart_policy of this VersionUpdateConfigs.
-        :type: str
+        :type restart_policy: str
         """
         self._restart_policy = restart_policy
 
@@ -128,7 +139,7 @@ class VersionUpdateConfigs:
         容器端口映射值
 
         :return: The ports of this VersionUpdateConfigs.
-        :rtype: list[AppPorts]
+        :rtype: list[:class:`huaweicloudsdkief.v1.AppPorts`]
         """
         return self._ports
 
@@ -139,7 +150,7 @@ class VersionUpdateConfigs:
         容器端口映射值
 
         :param ports: The ports of this VersionUpdateConfigs.
-        :type: list[AppPorts]
+        :type ports: list[:class:`huaweicloudsdkief.v1.AppPorts`]
         """
         self._ports = ports
 

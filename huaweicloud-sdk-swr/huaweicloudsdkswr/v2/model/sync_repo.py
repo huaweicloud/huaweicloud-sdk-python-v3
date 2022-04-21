@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SyncRepo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class SyncRepo:
     }
 
     def __init__(self, created_at=None, domain_id=None, domain_name=None, id=None, namespace=None, override=None, remote_namespace=None, remote_region_id=None, repo_name=None, sync_auto=None, updated_at=None):
-        """SyncRepo - a model defined in huaweicloud sdk"""
+        """SyncRepo
+
+        The model defined in huaweicloud sdk
+
+        :param created_at: 创建时间，UTC日期格式，时间为UTC标准时间，用户需要根据本地时间计算偏移量；如东8区需要+8:00
+        :type created_at: str
+        :param domain_id: 租户ID
+        :type domain_id: str
+        :param domain_name: 租户名
+        :type domain_name: str
+        :param id: ID
+        :type id: int
+        :param namespace: 组织名
+        :type namespace: str
+        :param override: 是否覆盖
+        :type override: bool
+        :param remote_namespace: 目的组织
+        :type remote_namespace: str
+        :param remote_region_id: 目的region
+        :type remote_region_id: str
+        :param repo_name: 仓库名
+        :type repo_name: str
+        :param sync_auto: 自动同步
+        :type sync_auto: bool
+        :param updated_at: 更新时间，UTC日期格式，时间为UTC标准时间，用户需要根据本地时间计算偏移量；如东8区需要+8:00
+        :type updated_at: str
+        """
         
         
 
@@ -97,7 +122,7 @@ class SyncRepo:
         创建时间，UTC日期格式，时间为UTC标准时间，用户需要根据本地时间计算偏移量；如东8区需要+8:00
 
         :param created_at: The created_at of this SyncRepo.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -119,7 +144,7 @@ class SyncRepo:
         租户ID
 
         :param domain_id: The domain_id of this SyncRepo.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -141,7 +166,7 @@ class SyncRepo:
         租户名
 
         :param domain_name: The domain_name of this SyncRepo.
-        :type: str
+        :type domain_name: str
         """
         self._domain_name = domain_name
 
@@ -163,7 +188,7 @@ class SyncRepo:
         ID
 
         :param id: The id of this SyncRepo.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -185,7 +210,7 @@ class SyncRepo:
         组织名
 
         :param namespace: The namespace of this SyncRepo.
-        :type: str
+        :type namespace: str
         """
         self._namespace = namespace
 
@@ -207,7 +232,7 @@ class SyncRepo:
         是否覆盖
 
         :param override: The override of this SyncRepo.
-        :type: bool
+        :type override: bool
         """
         self._override = override
 
@@ -229,7 +254,7 @@ class SyncRepo:
         目的组织
 
         :param remote_namespace: The remote_namespace of this SyncRepo.
-        :type: str
+        :type remote_namespace: str
         """
         self._remote_namespace = remote_namespace
 
@@ -251,7 +276,7 @@ class SyncRepo:
         目的region
 
         :param remote_region_id: The remote_region_id of this SyncRepo.
-        :type: str
+        :type remote_region_id: str
         """
         self._remote_region_id = remote_region_id
 
@@ -273,7 +298,7 @@ class SyncRepo:
         仓库名
 
         :param repo_name: The repo_name of this SyncRepo.
-        :type: str
+        :type repo_name: str
         """
         self._repo_name = repo_name
 
@@ -295,7 +320,7 @@ class SyncRepo:
         自动同步
 
         :param sync_auto: The sync_auto of this SyncRepo.
-        :type: bool
+        :type sync_auto: bool
         """
         self._sync_auto = sync_auto
 
@@ -317,7 +342,7 @@ class SyncRepo:
         更新时间，UTC日期格式，时间为UTC标准时间，用户需要根据本地时间计算偏移量；如东8区需要+8:00
 
         :param updated_at: The updated_at of this SyncRepo.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 

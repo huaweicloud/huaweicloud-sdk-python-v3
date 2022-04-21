@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteUserRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteUserRequest:
     }
 
     def __init__(self, instance_id=None, username=None):
-        """DeleteUserRequest - a model defined in huaweicloud sdk"""
+        """DeleteUserRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: DDM实例ID。
+        :type instance_id: str
+        :param username: 要删除的DDM帐号名称。
+        :type username: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class DeleteUserRequest:
         DDM实例ID。
 
         :param instance_id: The instance_id of this DeleteUserRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -83,7 +90,7 @@ class DeleteUserRequest:
         要删除的DDM帐号名称。
 
         :param username: The username of this DeleteUserRequest.
-        :type: str
+        :type username: str
         """
         self._username = username
 

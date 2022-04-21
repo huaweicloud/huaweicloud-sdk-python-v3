@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EventInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class EventInfo:
     }
 
     def __init__(self, event_name=None, event_type=None, event_count=None, latest_occur_time=None, latest_event_source=None):
-        """EventInfo - a model defined in huaweicloud sdk"""
+        """EventInfo
+
+        The model defined in huaweicloud sdk
+
+        :param event_name: 事件名称。
+        :type event_name: str
+        :param event_type: 事件类型。
+        :type event_type: str
+        :param event_count: 选择查询的时间范围内，此事件发生的数量。
+        :type event_count: int
+        :param latest_occur_time: 此事件最近一次发生的时间。
+        :type latest_occur_time: int
+        :param latest_event_source: 事件来源，如果是系统事件则值为各服务的命名空间，各服务的命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”；如果是自定义事件，则为用户自定义上报定义。
+        :type latest_event_source: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class EventInfo:
         事件名称。
 
         :param event_name: The event_name of this EventInfo.
-        :type: str
+        :type event_name: str
         """
         self._event_name = event_name
 
@@ -100,7 +113,7 @@ class EventInfo:
         事件类型。
 
         :param event_type: The event_type of this EventInfo.
-        :type: str
+        :type event_type: str
         """
         self._event_type = event_type
 
@@ -122,7 +135,7 @@ class EventInfo:
         选择查询的时间范围内，此事件发生的数量。
 
         :param event_count: The event_count of this EventInfo.
-        :type: int
+        :type event_count: int
         """
         self._event_count = event_count
 
@@ -144,7 +157,7 @@ class EventInfo:
         此事件最近一次发生的时间。
 
         :param latest_occur_time: The latest_occur_time of this EventInfo.
-        :type: int
+        :type latest_occur_time: int
         """
         self._latest_occur_time = latest_occur_time
 
@@ -166,7 +179,7 @@ class EventInfo:
         事件来源，如果是系统事件则值为各服务的命名空间，各服务的命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”；如果是自定义事件，则为用户自定义上报定义。
 
         :param latest_event_source: The latest_event_source of this EventInfo.
-        :type: str
+        :type latest_event_source: str
         """
         self._latest_event_source = latest_event_source
 

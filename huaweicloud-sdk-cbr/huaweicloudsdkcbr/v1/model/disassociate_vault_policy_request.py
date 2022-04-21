@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DisassociateVaultPolicyRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DisassociateVaultPolicyRequest:
     }
 
     def __init__(self, vault_id=None, body=None):
-        """DisassociateVaultPolicyRequest - a model defined in huaweicloud sdk"""
+        """DisassociateVaultPolicyRequest
+
+        The model defined in huaweicloud sdk
+
+        :param vault_id: 存储库ID
+        :type vault_id: str
+        :param body: Body of the DisassociateVaultPolicyRequest
+        :type body: :class:`huaweicloudsdkcbr.v1.VaultDissociate`
+        """
         
         
 
@@ -62,7 +69,7 @@ class DisassociateVaultPolicyRequest:
         存储库ID
 
         :param vault_id: The vault_id of this DisassociateVaultPolicyRequest.
-        :type: str
+        :type vault_id: str
         """
         self._vault_id = vault_id
 
@@ -72,7 +79,7 @@ class DisassociateVaultPolicyRequest:
 
 
         :return: The body of this DisassociateVaultPolicyRequest.
-        :rtype: VaultDissociate
+        :rtype: :class:`huaweicloudsdkcbr.v1.VaultDissociate`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class DisassociateVaultPolicyRequest:
 
 
         :param body: The body of this DisassociateVaultPolicyRequest.
-        :type: VaultDissociate
+        :type body: :class:`huaweicloudsdkcbr.v1.VaultDissociate`
         """
         self._body = body
 

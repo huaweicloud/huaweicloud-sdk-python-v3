@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateRetentionRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateRetentionRequestBody:
     }
 
     def __init__(self, algorithm=None, rules=None):
-        """UpdateRetentionRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateRetentionRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param algorithm: 老化规则匹配策略，固定为\&quot;or\&quot; 
+        :type algorithm: str
+        :param rules: 镜像老化规则
+        :type rules: list[:class:`huaweicloudsdkswr.v2.Rule`]
+        """
         
         
 
@@ -47,7 +54,7 @@ class UpdateRetentionRequestBody:
     def algorithm(self):
         """Gets the algorithm of this UpdateRetentionRequestBody.
 
-        算法
+        老化规则匹配策略，固定为\"or\" 
 
         :return: The algorithm of this UpdateRetentionRequestBody.
         :rtype: str
@@ -58,10 +65,10 @@ class UpdateRetentionRequestBody:
     def algorithm(self, algorithm):
         """Sets the algorithm of this UpdateRetentionRequestBody.
 
-        算法
+        老化规则匹配策略，固定为\"or\" 
 
         :param algorithm: The algorithm of this UpdateRetentionRequestBody.
-        :type: str
+        :type algorithm: str
         """
         self._algorithm = algorithm
 
@@ -72,7 +79,7 @@ class UpdateRetentionRequestBody:
         镜像老化规则
 
         :return: The rules of this UpdateRetentionRequestBody.
-        :rtype: list[Rule]
+        :rtype: list[:class:`huaweicloudsdkswr.v2.Rule`]
         """
         return self._rules
 
@@ -83,7 +90,7 @@ class UpdateRetentionRequestBody:
         镜像老化规则
 
         :param rules: The rules of this UpdateRetentionRequestBody.
-        :type: list[Rule]
+        :type rules: list[:class:`huaweicloudsdkswr.v2.Rule`]
         """
         self._rules = rules
 

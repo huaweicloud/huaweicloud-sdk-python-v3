@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RepoInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class RepoInfo:
     }
 
     def __init__(self, create_at=None, group_name=None, http_url=None, id=None, name=None, project_id=None, project_is_delete=None, repo_id=None, ssh_url=None, visibility_level=None, web_url=None):
-        """RepoInfo - a model defined in huaweicloud sdk"""
+        """RepoInfo
+
+        The model defined in huaweicloud sdk
+
+        :param create_at: 创建时间
+        :type create_at: str
+        :param group_name: 仓库组名
+        :type group_name: str
+        :param http_url: https url
+        :type http_url: str
+        :param id: 仓库uuid
+        :type id: str
+        :param name: 仓库名
+        :type name: str
+        :param project_id: 项目的uuid
+        :type project_id: str
+        :param project_is_delete: 项目是否被删除
+        :type project_is_delete: str
+        :param repo_id: 仓库主键id
+        :type repo_id: str
+        :param ssh_url: ssh url
+        :type ssh_url: str
+        :param visibility_level: 是否可见：0私有仓库，20公有仓库
+        :type visibility_level: int
+        :param web_url: web url 访问路径
+        :type web_url: str
+        """
         
         
 
@@ -108,7 +133,7 @@ class RepoInfo:
         创建时间
 
         :param create_at: The create_at of this RepoInfo.
-        :type: str
+        :type create_at: str
         """
         self._create_at = create_at
 
@@ -130,7 +155,7 @@ class RepoInfo:
         仓库组名
 
         :param group_name: The group_name of this RepoInfo.
-        :type: str
+        :type group_name: str
         """
         self._group_name = group_name
 
@@ -152,7 +177,7 @@ class RepoInfo:
         https url
 
         :param http_url: The http_url of this RepoInfo.
-        :type: str
+        :type http_url: str
         """
         self._http_url = http_url
 
@@ -174,7 +199,7 @@ class RepoInfo:
         仓库uuid
 
         :param id: The id of this RepoInfo.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -196,7 +221,7 @@ class RepoInfo:
         仓库名
 
         :param name: The name of this RepoInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -218,7 +243,7 @@ class RepoInfo:
         项目的uuid
 
         :param project_id: The project_id of this RepoInfo.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -240,7 +265,7 @@ class RepoInfo:
         项目是否被删除
 
         :param project_is_delete: The project_is_delete of this RepoInfo.
-        :type: str
+        :type project_is_delete: str
         """
         self._project_is_delete = project_is_delete
 
@@ -262,7 +287,7 @@ class RepoInfo:
         仓库主键id
 
         :param repo_id: The repo_id of this RepoInfo.
-        :type: str
+        :type repo_id: str
         """
         self._repo_id = repo_id
 
@@ -284,7 +309,7 @@ class RepoInfo:
         ssh url
 
         :param ssh_url: The ssh_url of this RepoInfo.
-        :type: str
+        :type ssh_url: str
         """
         self._ssh_url = ssh_url
 
@@ -306,7 +331,7 @@ class RepoInfo:
         是否可见：0私有仓库，20公有仓库
 
         :param visibility_level: The visibility_level of this RepoInfo.
-        :type: int
+        :type visibility_level: int
         """
         self._visibility_level = visibility_level
 
@@ -328,7 +353,7 @@ class RepoInfo:
         web url 访问路径
 
         :param web_url: The web_url of this RepoInfo.
-        :type: str
+        :type web_url: str
         """
         self._web_url = web_url
 

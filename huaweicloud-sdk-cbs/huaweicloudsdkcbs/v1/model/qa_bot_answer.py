@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QaBotAnswer:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class QaBotAnswer:
     }
 
     def __init__(self, qa_pair_id=None, st_question=None, answer=None, score=None, domain=None, top_score_question=None):
-        """QaBotAnswer - a model defined in huaweicloud sdk"""
+        """QaBotAnswer
+
+        The model defined in huaweicloud sdk
+
+        :param qa_pair_id: 问答对ID。
+        :type qa_pair_id: str
+        :param st_question: 标准问题。
+        :type st_question: str
+        :param answer: 知识库答案，包含该字段的回答为直接回答，未包含该字段的是推荐回答。
+        :type answer: str
+        :param score: 相似度得分，精确到小数点后3位。
+        :type score: float
+        :param domain: 所属领域。
+        :type domain: str
+        :param top_score_question: 最高评分的扩展问或标准问，当关闭内部阈值处理时返回。
+        :type top_score_question: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class QaBotAnswer:
         问答对ID。
 
         :param qa_pair_id: The qa_pair_id of this QaBotAnswer.
-        :type: str
+        :type qa_pair_id: str
         """
         self._qa_pair_id = qa_pair_id
 
@@ -105,7 +120,7 @@ class QaBotAnswer:
         标准问题。
 
         :param st_question: The st_question of this QaBotAnswer.
-        :type: str
+        :type st_question: str
         """
         self._st_question = st_question
 
@@ -127,7 +142,7 @@ class QaBotAnswer:
         知识库答案，包含该字段的回答为直接回答，未包含该字段的是推荐回答。
 
         :param answer: The answer of this QaBotAnswer.
-        :type: str
+        :type answer: str
         """
         self._answer = answer
 
@@ -149,7 +164,7 @@ class QaBotAnswer:
         相似度得分，精确到小数点后3位。
 
         :param score: The score of this QaBotAnswer.
-        :type: float
+        :type score: float
         """
         self._score = score
 
@@ -171,7 +186,7 @@ class QaBotAnswer:
         所属领域。
 
         :param domain: The domain of this QaBotAnswer.
-        :type: str
+        :type domain: str
         """
         self._domain = domain
 
@@ -193,7 +208,7 @@ class QaBotAnswer:
         最高评分的扩展问或标准问，当关闭内部阈值处理时返回。
 
         :param top_score_question: The top_score_question of this QaBotAnswer.
-        :type: str
+        :type top_score_question: str
         """
         self._top_score_question = top_score_question
 

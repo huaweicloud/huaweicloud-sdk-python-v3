@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListNaAuthorizedNodesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListNaAuthorizedNodesRequest:
     }
 
     def __init__(self, na_id=None, offset=None, limit=None):
-        """ListNaAuthorizedNodesRequest - a model defined in huaweicloud sdk"""
+        """ListNaAuthorizedNodesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param na_id: 北向数据接收端点ID
+        :type na_id: str
+        :param offset: 查询的起始位置，取值范围为非负整数，默认为0
+        :type offset: int
+        :param limit: 每页记录数，默认值为10，取值区间为1-1000
+        :type limit: int
+        """
         
         
 
@@ -67,7 +76,7 @@ class ListNaAuthorizedNodesRequest:
         北向数据接收端点ID
 
         :param na_id: The na_id of this ListNaAuthorizedNodesRequest.
-        :type: str
+        :type na_id: str
         """
         self._na_id = na_id
 
@@ -89,7 +98,7 @@ class ListNaAuthorizedNodesRequest:
         查询的起始位置，取值范围为非负整数，默认为0
 
         :param offset: The offset of this ListNaAuthorizedNodesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -111,7 +120,7 @@ class ListNaAuthorizedNodesRequest:
         每页记录数，默认值为10，取值区间为1-1000
 
         :param limit: The limit of this ListNaAuthorizedNodesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

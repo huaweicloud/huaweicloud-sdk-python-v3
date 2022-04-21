@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListProductsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListProductsRequest:
     }
 
     def __init__(self, engine=None):
-        """ListProductsRequest - a model defined in huaweicloud sdk"""
+        """ListProductsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param engine: 消息引擎的类型。当前只支持rabbitmq。
+        :type engine: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class ListProductsRequest:
         消息引擎的类型。当前只支持rabbitmq。
 
         :param engine: The engine of this ListProductsRequest.
-        :type: str
+        :type engine: str
         """
         self._engine = engine
 

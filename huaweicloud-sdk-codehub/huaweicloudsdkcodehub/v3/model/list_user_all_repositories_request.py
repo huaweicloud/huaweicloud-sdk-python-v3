@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListUserAllRepositoriesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListUserAllRepositoriesRequest:
     }
 
     def __init__(self, page_index=None, page_size=None, search=None):
-        """ListUserAllRepositoriesRequest - a model defined in huaweicloud sdk"""
+        """ListUserAllRepositoriesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param page_index: 分页索引，从1开始计数
+        :type page_index: int
+        :param page_size: 每页条目数
+        :type page_size: int
+        :param search: 搜索关键字
+        :type search: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class ListUserAllRepositoriesRequest:
         分页索引，从1开始计数
 
         :param page_index: The page_index of this ListUserAllRepositoriesRequest.
-        :type: int
+        :type page_index: int
         """
         self._page_index = page_index
 
@@ -90,7 +99,7 @@ class ListUserAllRepositoriesRequest:
         每页条目数
 
         :param page_size: The page_size of this ListUserAllRepositoriesRequest.
-        :type: int
+        :type page_size: int
         """
         self._page_size = page_size
 
@@ -112,7 +121,7 @@ class ListUserAllRepositoriesRequest:
         搜索关键字
 
         :param search: The search of this ListUserAllRepositoriesRequest.
-        :type: str
+        :type search: str
         """
         self._search = search
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowBlockchainFlavorsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowBlockchainFlavorsRequest:
     }
 
     def __init__(self, limit=None, offset=None):
-        """ShowBlockchainFlavorsRequest - a model defined in huaweicloud sdk"""
+        """ShowBlockchainFlavorsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 取值范围(0,1000]，默认值为1000。用于限制本次返回的结果数据条数。
+        :type limit: int
+        :param offset: 分页查询起始位置，为非负整数。
+        :type offset: int
+        """
         
         
 
@@ -63,7 +70,7 @@ class ShowBlockchainFlavorsRequest:
         取值范围(0,1000]，默认值为1000。用于限制本次返回的结果数据条数。
 
         :param limit: The limit of this ShowBlockchainFlavorsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -85,7 +92,7 @@ class ShowBlockchainFlavorsRequest:
         分页查询起始位置，为非负整数。
 
         :param offset: The offset of this ShowBlockchainFlavorsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 

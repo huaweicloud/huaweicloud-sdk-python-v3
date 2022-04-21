@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListMqsInstanceTopicsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListMqsInstanceTopicsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, size=None, permissions=None, topics=None, remain_partitions=None, max_partitions=None):
-        """ListMqsInstanceTopicsResponse - a model defined in huaweicloud sdk"""
+        """ListMqsInstanceTopicsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: topic的总数。
+        :type total: int
+        :param size: 当前查询的topic数量。
+        :type size: int
+        :param permissions: 允许操作的权限。
+        :type permissions: list[str]
+        :param topics: Topic列表。
+        :type topics: list[:class:`huaweicloudsdkroma.v2.ListInstanceTopicsRespTopics`]
+        :param remain_partitions: 剩余分区数。
+        :type remain_partitions: int
+        :param max_partitions: 分区总数。
+        :type max_partitions: int
+        """
         
         super(ListMqsInstanceTopicsResponse, self).__init__()
 
@@ -83,7 +98,7 @@ class ListMqsInstanceTopicsResponse(SdkResponse):
         topic的总数。
 
         :param total: The total of this ListMqsInstanceTopicsResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -105,7 +120,7 @@ class ListMqsInstanceTopicsResponse(SdkResponse):
         当前查询的topic数量。
 
         :param size: The size of this ListMqsInstanceTopicsResponse.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -127,7 +142,7 @@ class ListMqsInstanceTopicsResponse(SdkResponse):
         允许操作的权限。
 
         :param permissions: The permissions of this ListMqsInstanceTopicsResponse.
-        :type: list[str]
+        :type permissions: list[str]
         """
         self._permissions = permissions
 
@@ -138,7 +153,7 @@ class ListMqsInstanceTopicsResponse(SdkResponse):
         Topic列表。
 
         :return: The topics of this ListMqsInstanceTopicsResponse.
-        :rtype: list[ListInstanceTopicsRespTopics]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.ListInstanceTopicsRespTopics`]
         """
         return self._topics
 
@@ -149,7 +164,7 @@ class ListMqsInstanceTopicsResponse(SdkResponse):
         Topic列表。
 
         :param topics: The topics of this ListMqsInstanceTopicsResponse.
-        :type: list[ListInstanceTopicsRespTopics]
+        :type topics: list[:class:`huaweicloudsdkroma.v2.ListInstanceTopicsRespTopics`]
         """
         self._topics = topics
 
@@ -171,7 +186,7 @@ class ListMqsInstanceTopicsResponse(SdkResponse):
         剩余分区数。
 
         :param remain_partitions: The remain_partitions of this ListMqsInstanceTopicsResponse.
-        :type: int
+        :type remain_partitions: int
         """
         self._remain_partitions = remain_partitions
 
@@ -193,7 +208,7 @@ class ListMqsInstanceTopicsResponse(SdkResponse):
         分区总数。
 
         :param max_partitions: The max_partitions of this ListMqsInstanceTopicsResponse.
-        :type: int
+        :type max_partitions: int
         """
         self._max_partitions = max_partitions
 

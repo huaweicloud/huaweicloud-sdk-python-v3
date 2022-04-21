@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateLogtankRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateLogtankRequestBody:
     }
 
     def __init__(self, logtank=None):
-        """CreateLogtankRequestBody - a model defined in huaweicloud sdk"""
+        """CreateLogtankRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param logtank: 
+        :type logtank: :class:`huaweicloudsdkelb.v3.CreateLogtankOption`
+        """
         
         
 
@@ -45,7 +50,7 @@ class CreateLogtankRequestBody:
 
 
         :return: The logtank of this CreateLogtankRequestBody.
-        :rtype: CreateLogtankOption
+        :rtype: :class:`huaweicloudsdkelb.v3.CreateLogtankOption`
         """
         return self._logtank
 
@@ -55,7 +60,7 @@ class CreateLogtankRequestBody:
 
 
         :param logtank: The logtank of this CreateLogtankRequestBody.
-        :type: CreateLogtankOption
+        :type logtank: :class:`huaweicloudsdkelb.v3.CreateLogtankOption`
         """
         self._logtank = logtank
 

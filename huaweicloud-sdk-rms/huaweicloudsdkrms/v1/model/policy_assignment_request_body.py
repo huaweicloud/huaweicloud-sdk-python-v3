@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PolicyAssignmentRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class PolicyAssignmentRequestBody:
     }
 
     def __init__(self, name=None, description=None, policy_filter=None, policy_definition_id=None, parameters=None):
-        """PolicyAssignmentRequestBody - a model defined in huaweicloud sdk"""
+        """PolicyAssignmentRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param name: 规则名字
+        :type name: str
+        :param description: 规则描述
+        :type description: str
+        :param policy_filter: 
+        :type policy_filter: :class:`huaweicloudsdkrms.v1.PolicyFilterDefinition`
+        :param policy_definition_id: 策略定义ID
+        :type policy_definition_id: str
+        :param parameters: 规则参数
+        :type parameters: dict(str, PolicyParameterValue)
+        """
         
         
 
@@ -78,7 +91,7 @@ class PolicyAssignmentRequestBody:
         规则名字
 
         :param name: The name of this PolicyAssignmentRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -100,7 +113,7 @@ class PolicyAssignmentRequestBody:
         规则描述
 
         :param description: The description of this PolicyAssignmentRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -110,7 +123,7 @@ class PolicyAssignmentRequestBody:
 
 
         :return: The policy_filter of this PolicyAssignmentRequestBody.
-        :rtype: PolicyFilterDefinition
+        :rtype: :class:`huaweicloudsdkrms.v1.PolicyFilterDefinition`
         """
         return self._policy_filter
 
@@ -120,7 +133,7 @@ class PolicyAssignmentRequestBody:
 
 
         :param policy_filter: The policy_filter of this PolicyAssignmentRequestBody.
-        :type: PolicyFilterDefinition
+        :type policy_filter: :class:`huaweicloudsdkrms.v1.PolicyFilterDefinition`
         """
         self._policy_filter = policy_filter
 
@@ -142,7 +155,7 @@ class PolicyAssignmentRequestBody:
         策略定义ID
 
         :param policy_definition_id: The policy_definition_id of this PolicyAssignmentRequestBody.
-        :type: str
+        :type policy_definition_id: str
         """
         self._policy_definition_id = policy_definition_id
 
@@ -164,7 +177,7 @@ class PolicyAssignmentRequestBody:
         规则参数
 
         :param parameters: The parameters of this PolicyAssignmentRequestBody.
-        :type: dict(str, PolicyParameterValue)
+        :type parameters: dict(str, PolicyParameterValue)
         """
         self._parameters = parameters
 

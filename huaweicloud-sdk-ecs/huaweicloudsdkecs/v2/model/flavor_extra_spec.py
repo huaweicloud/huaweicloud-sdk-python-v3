@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FlavorExtraSpec:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -94,7 +93,77 @@ class FlavorExtraSpec:
     }
 
     def __init__(self, ecsperformancetype=None, hwnuma_nodes=None, resource_type=None, hpet_support=None, instance_vnictype=None, instance_vnicinstance_bandwidth=None, instance_vnicmax_count=None, quotalocal_disk=None, quotanvme_ssd=None, extra_speciopersistent_grant=None, ecsgeneration=None, ecsvirtualization_env_types=None, pci_passthroughenable_gpu=None, pci_passthroughgpu_specs=None, pci_passthroughalias=None, condoperationstatus=None, condoperationaz=None, quotamax_rate=None, quotamin_rate=None, quotamax_pps=None, condoperationcharge=None, condoperationchargestop=None, condspotoperationaz=None, condoperationroles=None, condspotoperationstatus=None, condnetwork=None, condstorage=None, condcomputelive_resizable=None, condcompute=None, infogpuname=None, infocpuname=None, quotagpu=None, ecsinstance_architecture=None):
-        """FlavorExtraSpec - a model defined in huaweicloud sdk"""
+        """FlavorExtraSpec
+
+        The model defined in huaweicloud sdk
+
+        :param ecsperformancetype: 云服务器规格的分类：  - normal：通用型 - cpuv1：计算I型 - cpuv2：计算II型 - highmem：内存优化型 - gpu：GPU加速型 - entry：通用入门型 - saphana：大内存型 - ultracpu：超高性能计算型 - diskintensive：磁盘增强型 - highio：超高I/O型 - fpga：FPGA加速型  &gt; 说明：  - 早期注册的规格该字段为hws:performancetype。
+        :type ecsperformancetype: str
+        :param hwnuma_nodes: 主机的物理cpu数量。
+        :type hwnuma_nodes: str
+        :param resource_type: 资源类型。resource_type是为了区分云服务器的物理主机类型。
+        :type resource_type: str
+        :param hpet_support: 弹性运服务器高精度时钟是否开启，开启为true，否则为false。（该字段是否返回根据云服务器规格而定）
+        :type hpet_support: str
+        :param instance_vnictype: 网卡类型，值固定为“enhanced”，表示使用增强型网络的资源创建云服务器。
+        :type instance_vnictype: str
+        :param instance_vnicinstance_bandwidth: 最大带宽，单位Mbps，最大值为10000。
+        :type instance_vnicinstance_bandwidth: str
+        :param instance_vnicmax_count: 最大网卡个数，最大为4。
+        :type instance_vnicmax_count: str
+        :param quotalocal_disk: 值格式为{type}:{count}:{size}:{safeFormat}，其中：  - type指磁盘类型，当前只支持hdd。 - count指本地磁盘数量，目前支持d1类型：3/6/12/24，d2类型：2/4/8/12/16/24，d3类型：2/4/8/12/16/24/28。 - size指单个磁盘容量，单位GB，目前只支持1675（实际磁盘大小为1800，格式化后可用大小为1675）。 - safeFormat指云服务器本地磁盘是否安全格式化，目前仅支持d1类型：FALSE，d2/d3类型：True。  &gt; 说明：  - 磁盘增强型特有字段。
+        :type quotalocal_disk: str
+        :param quotanvme_ssd: 值格式为{type}:{spec}:{size}:{safeFormat}，其中：  - type指主机上配备的nvme ssd的单卡容量大小，当前只支持1.6T/3.2T。 - spec指nvme ssd的规格，包括large/small。large表示大规格，small表示小规格。目前仅支持i3类型：large。 - size指guest使用的盘的容量大小，单位为GB。在spec值为large的情况下，此项即为host单卡大小。在spec值为small的情况下，此为1/4规格或者1/2规格。 - safeFormat指云服务器本地磁盘是否安全格式化，目前仅支持i3类型：True。  &gt; 说明：  - 超高I/O型特有字段。
+        :type quotanvme_ssd: str
+        :param extra_speciopersistent_grant: 是否支持持久化，值为true。  代表云服务器访问存储的方式为持久化授权。   &gt; 说明：  - 密集存储D1型特有字段。
+        :type extra_speciopersistent_grant: str
+        :param ecsgeneration: 弹性云服务器类型的代数。  - s1：通用型I代 - s2：通用型II代 - s3：通用型 - m1：内存优化型I代 - m2：内存优化型II代 - m3：内存优化型 - h1：高性能计算型I代 - h2：高性能计算型II代 - h3：高性能计算型 - hi3：超高性能计算型 - d1：密集存储型I代 - d2：密集存储型II代 - d3：磁盘增强型 - g1：GPU加速型I代 - g2：GPU加速型II代 - f1：FPGA高性能型 - f2：FPGA通用型 - c3：通用计算增强型 - e3：大内存型 - i3：超高I/O型
+        :type ecsgeneration: str
+        :param ecsvirtualization_env_types: 虚拟化类型。  - 如果值为“FusionCompute”，表示弹性云服务器使用基于XEN的虚拟化技术。 - 如果值为“CloudCompute”，表示弹性云服务器使用基于KVM的虚拟化技术。
+        :type ecsvirtualization_env_types: str
+        :param pci_passthroughenable_gpu: 显卡是否直通。  值为“true”，表示GPU直通。
+        :type pci_passthroughenable_gpu: str
+        :param pci_passthroughgpu_specs: G1型和G2型云服务器应用的技术，包括GPU虚拟化和GPU直通。  - 如果该规格的云服务器使用GPU虚拟化技术，且GPU卡的型号为M60-1Q，参数值可设置为“m60_1q:virt:1”。 - 如果该规格的云服务器使用GPU直通技术，且GPU卡的型号为M60，参数值可设置为“m60:direct_graphics:1”。
+        :type pci_passthroughgpu_specs: str
+        :param pci_passthroughalias: P1型v本地直通GPU的型号和数量，参数值可设置为“nvidia-p100:1”，表示使用该规格创建的弹性云服务器将占用1张NVIDIA P100显卡。
+        :type pci_passthroughalias: str
+        :param condoperationstatus: 此参数是Region级配置，某个AZ没有在cond:operation:az参数中配置时默认使用此参数的取值。不配置或无此参数时等同于“normal”。取值范围：  - normal：正常商用 - abandon：下线（即不显示） - sellout：售罄 - obt：公测 - promotion：推荐(等同normal，也是商用)
+        :type condoperationstatus: str
+        :param condoperationaz: 此参数是AZ级配置，某个AZ没有在此参数中配置时默认使用cond:operation:status参数的取值。此参数的配置格式“az(xx)”。()内为某个AZ的flavor状态，()内必须要填有状态，不填为无效配置。状态的取值范围与cond:operation:status参数相同。  例如：flavor在某个region的az0正常商用，az1售罄，az2公测，az3正常商用，其他az显示下线，可配置为：  - “cond:operation:status”设置为“abandon” - “cond:operation:az”设置为“az0(normal), az1(sellout), az2(obt), az3(normal)”  &gt; 说明：  - 如果flavor在某个AZ下的状态与cond:operation:status配置状态不同，必须配置该参数。
+        :type condoperationaz: str
+        :param quotamax_rate: 最大带宽  - 单位Mbps，显示为Gbps时除以1000
+        :type quotamax_rate: str
+        :param quotamin_rate: 基准带宽  - 单位Mbps，显示为Gbps时除以1000
+        :type quotamin_rate: str
+        :param quotamax_pps: 内网最大收发包能力  - 单位个，显示为xx万时除以10000
+        :type quotamax_pps: str
+        :param condoperationcharge: 计费类型  - 计费场景，不配置时都支持 - period，包周期 - demand，按需
+        :type condoperationcharge: str
+        :param condoperationchargestop: 关机是否收费  - 关机是否计费，默认免费： - charge - free
+        :type condoperationchargestop: str
+        :param condspotoperationaz: 计费类型  - 计费场景，不配置时都支持 - period，包周期 - demand，按需
+        :type condspotoperationaz: str
+        :param condoperationroles: 允许的角色 匹配的用户标签（roles的op_gatexxx标签）。不设置时所有用户可见
+        :type condoperationroles: str
+        :param condspotoperationstatus: Flavor在竞价销售模式下的状态  - 不配置时等同abandon - normal，正常商用 - abandon，下线 - sellout，售罄 - obt，公测，未申请时提示申请（暂不支持） - private，私有，只给特定用户显示（暂不支持） - test，试用/免费（暂不支持） - promotion，推荐
+        :type condspotoperationstatus: str
+        :param condnetwork: 网络约束 支持网络特性，不配置时以UI配置为准。
+        :type condnetwork: str
+        :param condstorage: 存储约束  - 支持磁盘特性，不配置时以UI配置为准。 - scsi，支持scsi - localdisk，支持本地盘 - ib，支持ib
+        :type condstorage: str
+        :param condcomputelive_resizable: 计算约束  - true，支持在线扩容。 - false或不存在该字段，不支持在线扩容。
+        :type condcomputelive_resizable: str
+        :param condcompute: 计算约束  - autorecovery，自动恢复特性。 - 不存在该字段，不支持自动恢复。
+        :type condcompute: str
+        :param infogpuname: 
+        :type infogpuname: str
+        :param infocpuname: 
+        :type infocpuname: str
+        :param quotagpu: 
+        :type quotagpu: str
+        :param ecsinstance_architecture: 该规格对应的CPU架构，且仅鲲鹏实例架构规格返回该字段  - 取值为arm64表示CPU架构为鲲鹏计算。
+        :type ecsinstance_architecture: str
+        """
         
         
 
@@ -218,7 +287,7 @@ class FlavorExtraSpec:
         云服务器规格的分类：  - normal：通用型 - cpuv1：计算I型 - cpuv2：计算II型 - highmem：内存优化型 - gpu：GPU加速型 - entry：通用入门型 - saphana：大内存型 - ultracpu：超高性能计算型 - diskintensive：磁盘增强型 - highio：超高I/O型 - fpga：FPGA加速型  > 说明：  - 早期注册的规格该字段为hws:performancetype。
 
         :param ecsperformancetype: The ecsperformancetype of this FlavorExtraSpec.
-        :type: str
+        :type ecsperformancetype: str
         """
         self._ecsperformancetype = ecsperformancetype
 
@@ -240,7 +309,7 @@ class FlavorExtraSpec:
         主机的物理cpu数量。
 
         :param hwnuma_nodes: The hwnuma_nodes of this FlavorExtraSpec.
-        :type: str
+        :type hwnuma_nodes: str
         """
         self._hwnuma_nodes = hwnuma_nodes
 
@@ -262,7 +331,7 @@ class FlavorExtraSpec:
         资源类型。resource_type是为了区分云服务器的物理主机类型。
 
         :param resource_type: The resource_type of this FlavorExtraSpec.
-        :type: str
+        :type resource_type: str
         """
         self._resource_type = resource_type
 
@@ -284,7 +353,7 @@ class FlavorExtraSpec:
         弹性运服务器高精度时钟是否开启，开启为true，否则为false。（该字段是否返回根据云服务器规格而定）
 
         :param hpet_support: The hpet_support of this FlavorExtraSpec.
-        :type: str
+        :type hpet_support: str
         """
         self._hpet_support = hpet_support
 
@@ -306,7 +375,7 @@ class FlavorExtraSpec:
         网卡类型，值固定为“enhanced”，表示使用增强型网络的资源创建云服务器。
 
         :param instance_vnictype: The instance_vnictype of this FlavorExtraSpec.
-        :type: str
+        :type instance_vnictype: str
         """
         self._instance_vnictype = instance_vnictype
 
@@ -328,7 +397,7 @@ class FlavorExtraSpec:
         最大带宽，单位Mbps，最大值为10000。
 
         :param instance_vnicinstance_bandwidth: The instance_vnicinstance_bandwidth of this FlavorExtraSpec.
-        :type: str
+        :type instance_vnicinstance_bandwidth: str
         """
         self._instance_vnicinstance_bandwidth = instance_vnicinstance_bandwidth
 
@@ -350,7 +419,7 @@ class FlavorExtraSpec:
         最大网卡个数，最大为4。
 
         :param instance_vnicmax_count: The instance_vnicmax_count of this FlavorExtraSpec.
-        :type: str
+        :type instance_vnicmax_count: str
         """
         self._instance_vnicmax_count = instance_vnicmax_count
 
@@ -372,7 +441,7 @@ class FlavorExtraSpec:
         值格式为{type}:{count}:{size}:{safeFormat}，其中：  - type指磁盘类型，当前只支持hdd。 - count指本地磁盘数量，目前支持d1类型：3/6/12/24，d2类型：2/4/8/12/16/24，d3类型：2/4/8/12/16/24/28。 - size指单个磁盘容量，单位GB，目前只支持1675（实际磁盘大小为1800，格式化后可用大小为1675）。 - safeFormat指云服务器本地磁盘是否安全格式化，目前仅支持d1类型：FALSE，d2/d3类型：True。  > 说明：  - 磁盘增强型特有字段。
 
         :param quotalocal_disk: The quotalocal_disk of this FlavorExtraSpec.
-        :type: str
+        :type quotalocal_disk: str
         """
         self._quotalocal_disk = quotalocal_disk
 
@@ -394,7 +463,7 @@ class FlavorExtraSpec:
         值格式为{type}:{spec}:{size}:{safeFormat}，其中：  - type指主机上配备的nvme ssd的单卡容量大小，当前只支持1.6T/3.2T。 - spec指nvme ssd的规格，包括large/small。large表示大规格，small表示小规格。目前仅支持i3类型：large。 - size指guest使用的盘的容量大小，单位为GB。在spec值为large的情况下，此项即为host单卡大小。在spec值为small的情况下，此为1/4规格或者1/2规格。 - safeFormat指云服务器本地磁盘是否安全格式化，目前仅支持i3类型：True。  > 说明：  - 超高I/O型特有字段。
 
         :param quotanvme_ssd: The quotanvme_ssd of this FlavorExtraSpec.
-        :type: str
+        :type quotanvme_ssd: str
         """
         self._quotanvme_ssd = quotanvme_ssd
 
@@ -416,7 +485,7 @@ class FlavorExtraSpec:
         是否支持持久化，值为true。  代表云服务器访问存储的方式为持久化授权。   > 说明：  - 密集存储D1型特有字段。
 
         :param extra_speciopersistent_grant: The extra_speciopersistent_grant of this FlavorExtraSpec.
-        :type: str
+        :type extra_speciopersistent_grant: str
         """
         self._extra_speciopersistent_grant = extra_speciopersistent_grant
 
@@ -438,7 +507,7 @@ class FlavorExtraSpec:
         弹性云服务器类型的代数。  - s1：通用型I代 - s2：通用型II代 - s3：通用型 - m1：内存优化型I代 - m2：内存优化型II代 - m3：内存优化型 - h1：高性能计算型I代 - h2：高性能计算型II代 - h3：高性能计算型 - hi3：超高性能计算型 - d1：密集存储型I代 - d2：密集存储型II代 - d3：磁盘增强型 - g1：GPU加速型I代 - g2：GPU加速型II代 - f1：FPGA高性能型 - f2：FPGA通用型 - c3：通用计算增强型 - e3：大内存型 - i3：超高I/O型
 
         :param ecsgeneration: The ecsgeneration of this FlavorExtraSpec.
-        :type: str
+        :type ecsgeneration: str
         """
         self._ecsgeneration = ecsgeneration
 
@@ -460,7 +529,7 @@ class FlavorExtraSpec:
         虚拟化类型。  - 如果值为“FusionCompute”，表示弹性云服务器使用基于XEN的虚拟化技术。 - 如果值为“CloudCompute”，表示弹性云服务器使用基于KVM的虚拟化技术。
 
         :param ecsvirtualization_env_types: The ecsvirtualization_env_types of this FlavorExtraSpec.
-        :type: str
+        :type ecsvirtualization_env_types: str
         """
         self._ecsvirtualization_env_types = ecsvirtualization_env_types
 
@@ -482,7 +551,7 @@ class FlavorExtraSpec:
         显卡是否直通。  值为“true”，表示GPU直通。
 
         :param pci_passthroughenable_gpu: The pci_passthroughenable_gpu of this FlavorExtraSpec.
-        :type: str
+        :type pci_passthroughenable_gpu: str
         """
         self._pci_passthroughenable_gpu = pci_passthroughenable_gpu
 
@@ -504,7 +573,7 @@ class FlavorExtraSpec:
         G1型和G2型云服务器应用的技术，包括GPU虚拟化和GPU直通。  - 如果该规格的云服务器使用GPU虚拟化技术，且GPU卡的型号为M60-1Q，参数值可设置为“m60_1q:virt:1”。 - 如果该规格的云服务器使用GPU直通技术，且GPU卡的型号为M60，参数值可设置为“m60:direct_graphics:1”。
 
         :param pci_passthroughgpu_specs: The pci_passthroughgpu_specs of this FlavorExtraSpec.
-        :type: str
+        :type pci_passthroughgpu_specs: str
         """
         self._pci_passthroughgpu_specs = pci_passthroughgpu_specs
 
@@ -526,7 +595,7 @@ class FlavorExtraSpec:
         P1型v本地直通GPU的型号和数量，参数值可设置为“nvidia-p100:1”，表示使用该规格创建的弹性云服务器将占用1张NVIDIA P100显卡。
 
         :param pci_passthroughalias: The pci_passthroughalias of this FlavorExtraSpec.
-        :type: str
+        :type pci_passthroughalias: str
         """
         self._pci_passthroughalias = pci_passthroughalias
 
@@ -548,7 +617,7 @@ class FlavorExtraSpec:
         此参数是Region级配置，某个AZ没有在cond:operation:az参数中配置时默认使用此参数的取值。不配置或无此参数时等同于“normal”。取值范围：  - normal：正常商用 - abandon：下线（即不显示） - sellout：售罄 - obt：公测 - promotion：推荐(等同normal，也是商用)
 
         :param condoperationstatus: The condoperationstatus of this FlavorExtraSpec.
-        :type: str
+        :type condoperationstatus: str
         """
         self._condoperationstatus = condoperationstatus
 
@@ -570,7 +639,7 @@ class FlavorExtraSpec:
         此参数是AZ级配置，某个AZ没有在此参数中配置时默认使用cond:operation:status参数的取值。此参数的配置格式“az(xx)”。()内为某个AZ的flavor状态，()内必须要填有状态，不填为无效配置。状态的取值范围与cond:operation:status参数相同。  例如：flavor在某个region的az0正常商用，az1售罄，az2公测，az3正常商用，其他az显示下线，可配置为：  - “cond:operation:status”设置为“abandon” - “cond:operation:az”设置为“az0(normal), az1(sellout), az2(obt), az3(normal)”  > 说明：  - 如果flavor在某个AZ下的状态与cond:operation:status配置状态不同，必须配置该参数。
 
         :param condoperationaz: The condoperationaz of this FlavorExtraSpec.
-        :type: str
+        :type condoperationaz: str
         """
         self._condoperationaz = condoperationaz
 
@@ -592,7 +661,7 @@ class FlavorExtraSpec:
         最大带宽  - 单位Mbps，显示为Gbps时除以1000
 
         :param quotamax_rate: The quotamax_rate of this FlavorExtraSpec.
-        :type: str
+        :type quotamax_rate: str
         """
         self._quotamax_rate = quotamax_rate
 
@@ -614,7 +683,7 @@ class FlavorExtraSpec:
         基准带宽  - 单位Mbps，显示为Gbps时除以1000
 
         :param quotamin_rate: The quotamin_rate of this FlavorExtraSpec.
-        :type: str
+        :type quotamin_rate: str
         """
         self._quotamin_rate = quotamin_rate
 
@@ -636,7 +705,7 @@ class FlavorExtraSpec:
         内网最大收发包能力  - 单位个，显示为xx万时除以10000
 
         :param quotamax_pps: The quotamax_pps of this FlavorExtraSpec.
-        :type: str
+        :type quotamax_pps: str
         """
         self._quotamax_pps = quotamax_pps
 
@@ -658,7 +727,7 @@ class FlavorExtraSpec:
         计费类型  - 计费场景，不配置时都支持 - period，包周期 - demand，按需
 
         :param condoperationcharge: The condoperationcharge of this FlavorExtraSpec.
-        :type: str
+        :type condoperationcharge: str
         """
         self._condoperationcharge = condoperationcharge
 
@@ -680,7 +749,7 @@ class FlavorExtraSpec:
         关机是否收费  - 关机是否计费，默认免费： - charge - free
 
         :param condoperationchargestop: The condoperationchargestop of this FlavorExtraSpec.
-        :type: str
+        :type condoperationchargestop: str
         """
         self._condoperationchargestop = condoperationchargestop
 
@@ -702,7 +771,7 @@ class FlavorExtraSpec:
         计费类型  - 计费场景，不配置时都支持 - period，包周期 - demand，按需
 
         :param condspotoperationaz: The condspotoperationaz of this FlavorExtraSpec.
-        :type: str
+        :type condspotoperationaz: str
         """
         self._condspotoperationaz = condspotoperationaz
 
@@ -724,7 +793,7 @@ class FlavorExtraSpec:
         允许的角色 匹配的用户标签（roles的op_gatexxx标签）。不设置时所有用户可见
 
         :param condoperationroles: The condoperationroles of this FlavorExtraSpec.
-        :type: str
+        :type condoperationroles: str
         """
         self._condoperationroles = condoperationroles
 
@@ -746,7 +815,7 @@ class FlavorExtraSpec:
         Flavor在竞价销售模式下的状态  - 不配置时等同abandon - normal，正常商用 - abandon，下线 - sellout，售罄 - obt，公测，未申请时提示申请（暂不支持） - private，私有，只给特定用户显示（暂不支持） - test，试用/免费（暂不支持） - promotion，推荐
 
         :param condspotoperationstatus: The condspotoperationstatus of this FlavorExtraSpec.
-        :type: str
+        :type condspotoperationstatus: str
         """
         self._condspotoperationstatus = condspotoperationstatus
 
@@ -768,7 +837,7 @@ class FlavorExtraSpec:
         网络约束 支持网络特性，不配置时以UI配置为准。
 
         :param condnetwork: The condnetwork of this FlavorExtraSpec.
-        :type: str
+        :type condnetwork: str
         """
         self._condnetwork = condnetwork
 
@@ -790,7 +859,7 @@ class FlavorExtraSpec:
         存储约束  - 支持磁盘特性，不配置时以UI配置为准。 - scsi，支持scsi - localdisk，支持本地盘 - ib，支持ib
 
         :param condstorage: The condstorage of this FlavorExtraSpec.
-        :type: str
+        :type condstorage: str
         """
         self._condstorage = condstorage
 
@@ -812,7 +881,7 @@ class FlavorExtraSpec:
         计算约束  - true，支持在线扩容。 - false或不存在该字段，不支持在线扩容。
 
         :param condcomputelive_resizable: The condcomputelive_resizable of this FlavorExtraSpec.
-        :type: str
+        :type condcomputelive_resizable: str
         """
         self._condcomputelive_resizable = condcomputelive_resizable
 
@@ -834,7 +903,7 @@ class FlavorExtraSpec:
         计算约束  - autorecovery，自动恢复特性。 - 不存在该字段，不支持自动恢复。
 
         :param condcompute: The condcompute of this FlavorExtraSpec.
-        :type: str
+        :type condcompute: str
         """
         self._condcompute = condcompute
 
@@ -856,7 +925,7 @@ class FlavorExtraSpec:
         
 
         :param infogpuname: The infogpuname of this FlavorExtraSpec.
-        :type: str
+        :type infogpuname: str
         """
         self._infogpuname = infogpuname
 
@@ -878,7 +947,7 @@ class FlavorExtraSpec:
         
 
         :param infocpuname: The infocpuname of this FlavorExtraSpec.
-        :type: str
+        :type infocpuname: str
         """
         self._infocpuname = infocpuname
 
@@ -900,7 +969,7 @@ class FlavorExtraSpec:
         
 
         :param quotagpu: The quotagpu of this FlavorExtraSpec.
-        :type: str
+        :type quotagpu: str
         """
         self._quotagpu = quotagpu
 
@@ -922,7 +991,7 @@ class FlavorExtraSpec:
         该规格对应的CPU架构，且仅鲲鹏实例架构规格返回该字段  - 取值为arm64表示CPU架构为鲲鹏计算。
 
         :param ecsinstance_architecture: The ecsinstance_architecture of this FlavorExtraSpec.
-        :type: str
+        :type ecsinstance_architecture: str
         """
         self._ecsinstance_architecture = ecsinstance_architecture
 

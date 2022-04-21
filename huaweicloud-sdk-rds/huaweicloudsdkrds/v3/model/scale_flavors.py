@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ScaleFlavors:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ScaleFlavors:
     }
 
     def __init__(self, code=None, cpu=None, mem=None):
-        """ScaleFlavors - a model defined in huaweicloud sdk"""
+        """ScaleFlavors
+
+        The model defined in huaweicloud sdk
+
+        :param code: 规格码。
+        :type code: str
+        :param cpu: CPU个数。
+        :type cpu: str
+        :param mem: 内存大小（单位：GB）。
+        :type mem: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class ScaleFlavors:
         规格码。
 
         :param code: The code of this ScaleFlavors.
-        :type: str
+        :type code: str
         """
         self._code = code
 
@@ -90,7 +99,7 @@ class ScaleFlavors:
         CPU个数。
 
         :param cpu: The cpu of this ScaleFlavors.
-        :type: str
+        :type cpu: str
         """
         self._cpu = cpu
 
@@ -112,7 +121,7 @@ class ScaleFlavors:
         内存大小（单位：GB）。
 
         :param mem: The mem of this ScaleFlavors.
-        :type: str
+        :type mem: str
         """
         self._mem = mem
 

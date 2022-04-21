@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RecordDownloadUrlDO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class RecordDownloadUrlDO:
     }
 
     def __init__(self, token=None, file_type=None, url=None):
-        """RecordDownloadUrlDO - a model defined in huaweicloud sdk"""
+        """RecordDownloadUrlDO
+
+        The model defined in huaweicloud sdk
+
+        :param token: 下载鉴权token
+        :type token: str
+        :param file_type: 文件类型
+        :type file_type: str
+        :param url: 录制文件下载URL
+        :type url: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class RecordDownloadUrlDO:
         下载鉴权token
 
         :param token: The token of this RecordDownloadUrlDO.
-        :type: str
+        :type token: str
         """
         self._token = token
 
@@ -90,7 +99,7 @@ class RecordDownloadUrlDO:
         文件类型
 
         :param file_type: The file_type of this RecordDownloadUrlDO.
-        :type: str
+        :type file_type: str
         """
         self._file_type = file_type
 
@@ -112,7 +121,7 @@ class RecordDownloadUrlDO:
         录制文件下载URL
 
         :param url: The url of this RecordDownloadUrlDO.
-        :type: str
+        :type url: str
         """
         self._url = url
 

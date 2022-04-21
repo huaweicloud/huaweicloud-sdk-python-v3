@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateAccessConfigRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class CreateAccessConfigRequestBody:
     }
 
     def __init__(self, access_config_name=None, access_config_type=None, access_config_detail=None, log_info=None, host_group_info=None, access_config_tag=None):
-        """CreateAccessConfigRequestBody - a model defined in huaweicloud sdk"""
+        """CreateAccessConfigRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param access_config_name: 日志接入名称
+        :type access_config_name: str
+        :param access_config_type: 日志接入类型。AGENT：主机接入类型
+        :type access_config_type: str
+        :param access_config_detail: 
+        :type access_config_detail: :class:`huaweicloudsdklts.v2.AccessConfigDeatilCreate`
+        :param log_info: 
+        :type log_info: :class:`huaweicloudsdklts.v2.AccessConfigBaseLogInfoCreate`
+        :param host_group_info: 
+        :type host_group_info: :class:`huaweicloudsdklts.v2.AccessConfigHostGroupIdListCreate`
+        :param access_config_tag: 
+        :type access_config_tag: list[:class:`huaweicloudsdklts.v2.AccessConfigTag`]
+        """
         
         
 
@@ -79,7 +94,7 @@ class CreateAccessConfigRequestBody:
         日志接入名称
 
         :param access_config_name: The access_config_name of this CreateAccessConfigRequestBody.
-        :type: str
+        :type access_config_name: str
         """
         self._access_config_name = access_config_name
 
@@ -101,7 +116,7 @@ class CreateAccessConfigRequestBody:
         日志接入类型。AGENT：主机接入类型
 
         :param access_config_type: The access_config_type of this CreateAccessConfigRequestBody.
-        :type: str
+        :type access_config_type: str
         """
         self._access_config_type = access_config_type
 
@@ -111,7 +126,7 @@ class CreateAccessConfigRequestBody:
 
 
         :return: The access_config_detail of this CreateAccessConfigRequestBody.
-        :rtype: AccessConfigDeatilCreate
+        :rtype: :class:`huaweicloudsdklts.v2.AccessConfigDeatilCreate`
         """
         return self._access_config_detail
 
@@ -121,7 +136,7 @@ class CreateAccessConfigRequestBody:
 
 
         :param access_config_detail: The access_config_detail of this CreateAccessConfigRequestBody.
-        :type: AccessConfigDeatilCreate
+        :type access_config_detail: :class:`huaweicloudsdklts.v2.AccessConfigDeatilCreate`
         """
         self._access_config_detail = access_config_detail
 
@@ -131,7 +146,7 @@ class CreateAccessConfigRequestBody:
 
 
         :return: The log_info of this CreateAccessConfigRequestBody.
-        :rtype: AccessConfigBaseLogInfoCreate
+        :rtype: :class:`huaweicloudsdklts.v2.AccessConfigBaseLogInfoCreate`
         """
         return self._log_info
 
@@ -141,7 +156,7 @@ class CreateAccessConfigRequestBody:
 
 
         :param log_info: The log_info of this CreateAccessConfigRequestBody.
-        :type: AccessConfigBaseLogInfoCreate
+        :type log_info: :class:`huaweicloudsdklts.v2.AccessConfigBaseLogInfoCreate`
         """
         self._log_info = log_info
 
@@ -151,7 +166,7 @@ class CreateAccessConfigRequestBody:
 
 
         :return: The host_group_info of this CreateAccessConfigRequestBody.
-        :rtype: AccessConfigHostGroupIdListCreate
+        :rtype: :class:`huaweicloudsdklts.v2.AccessConfigHostGroupIdListCreate`
         """
         return self._host_group_info
 
@@ -161,7 +176,7 @@ class CreateAccessConfigRequestBody:
 
 
         :param host_group_info: The host_group_info of this CreateAccessConfigRequestBody.
-        :type: AccessConfigHostGroupIdListCreate
+        :type host_group_info: :class:`huaweicloudsdklts.v2.AccessConfigHostGroupIdListCreate`
         """
         self._host_group_info = host_group_info
 
@@ -171,7 +186,7 @@ class CreateAccessConfigRequestBody:
 
 
         :return: The access_config_tag of this CreateAccessConfigRequestBody.
-        :rtype: list[AccessConfigTag]
+        :rtype: list[:class:`huaweicloudsdklts.v2.AccessConfigTag`]
         """
         return self._access_config_tag
 
@@ -181,7 +196,7 @@ class CreateAccessConfigRequestBody:
 
 
         :param access_config_tag: The access_config_tag of this CreateAccessConfigRequestBody.
-        :type: list[AccessConfigTag]
+        :type access_config_tag: list[:class:`huaweicloudsdklts.v2.AccessConfigTag`]
         """
         self._access_config_tag = access_config_tag
 

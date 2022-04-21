@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateDeploymentResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateDeploymentResponse(SdkResponse):
     }
 
     def __init__(self, id=None, locations=None):
-        """CreateDeploymentResponse - a model defined in huaweicloud sdk"""
+        """CreateDeploymentResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 部署计划ID。
+        :type id: str
+        :param locations: 部署位置信息列表。
+        :type locations: list[:class:`huaweicloudsdkiec.v1.Location`]
+        """
         
         super(CreateDeploymentResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class CreateDeploymentResponse(SdkResponse):
         部署计划ID。
 
         :param id: The id of this CreateDeploymentResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -74,7 +81,7 @@ class CreateDeploymentResponse(SdkResponse):
         部署位置信息列表。
 
         :return: The locations of this CreateDeploymentResponse.
-        :rtype: list[Location]
+        :rtype: list[:class:`huaweicloudsdkiec.v1.Location`]
         """
         return self._locations
 
@@ -85,7 +92,7 @@ class CreateDeploymentResponse(SdkResponse):
         部署位置信息列表。
 
         :param locations: The locations of this CreateDeploymentResponse.
-        :type: list[Location]
+        :type locations: list[:class:`huaweicloudsdkiec.v1.Location`]
         """
         self._locations = locations
 

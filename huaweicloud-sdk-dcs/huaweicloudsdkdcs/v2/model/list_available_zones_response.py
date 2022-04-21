@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAvailableZonesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListAvailableZonesResponse(SdkResponse):
     }
 
     def __init__(self, region_id=None, available_zones=None):
-        """ListAvailableZonesResponse - a model defined in huaweicloud sdk"""
+        """ListAvailableZonesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param region_id: 区域ID。
+        :type region_id: str
+        :param available_zones: 可用分区数组。
+        :type available_zones: list[:class:`huaweicloudsdkdcs.v2.AvailableZones`]
+        """
         
         super(ListAvailableZonesResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListAvailableZonesResponse(SdkResponse):
         区域ID。
 
         :param region_id: The region_id of this ListAvailableZonesResponse.
-        :type: str
+        :type region_id: str
         """
         self._region_id = region_id
 
@@ -74,7 +81,7 @@ class ListAvailableZonesResponse(SdkResponse):
         可用分区数组。
 
         :return: The available_zones of this ListAvailableZonesResponse.
-        :rtype: list[AvailableZones]
+        :rtype: list[:class:`huaweicloudsdkdcs.v2.AvailableZones`]
         """
         return self._available_zones
 
@@ -85,7 +92,7 @@ class ListAvailableZonesResponse(SdkResponse):
         可用分区数组。
 
         :param available_zones: The available_zones of this ListAvailableZonesResponse.
-        :type: list[AvailableZones]
+        :type available_zones: list[:class:`huaweicloudsdkdcs.v2.AvailableZones`]
         """
         self._available_zones = available_zones
 

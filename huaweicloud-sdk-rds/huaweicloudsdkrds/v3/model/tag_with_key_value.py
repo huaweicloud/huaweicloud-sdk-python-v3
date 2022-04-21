@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TagWithKeyValue:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class TagWithKeyValue:
     }
 
     def __init__(self, key=None, value=None):
-        """TagWithKeyValue - a model defined in huaweicloud sdk"""
+        """TagWithKeyValue
+
+        The model defined in huaweicloud sdk
+
+        :param key: 标签键。最大长度36个unicode字符。 key不能为空，不能为空字符串，不能重复。字符集：A-Z，a-z ， 0-9，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
+        :type key: str
+        :param value: 标签值。最大长度43个unicode字符。 可以为空字符串。 字符集：A-Z，a-z ， 0-9，‘.’，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
+        :type value: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class TagWithKeyValue:
         标签键。最大长度36个unicode字符。 key不能为空，不能为空字符串，不能重复。字符集：A-Z，a-z ， 0-9，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
 
         :param key: The key of this TagWithKeyValue.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -83,7 +90,7 @@ class TagWithKeyValue:
         标签值。最大长度43个unicode字符。 可以为空字符串。 字符集：A-Z，a-z ， 0-9，‘.’，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
 
         :param value: The value of this TagWithKeyValue.
-        :type: str
+        :type value: str
         """
         self._value = value
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SearchResourceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class SearchResourceRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, offset=None, limit=None, search_key=None, corp_id=None, start_expire_date=None, end_expire_date=None, type=None, type_id=None, status=None):
-        """SearchResourceRequest - a model defined in huaweicloud sdk"""
+        """SearchResourceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        :type x_request_id: str
+        :param accept_language: 语言参数，默认为中文zh-CN, 英文为en-US
+        :type accept_language: str
+        :param offset: 查询偏移量,若超过最大数量，则返回最后一页的数据 默认值：0 
+        :type offset: int
+        :param limit: 查询数量 默认值：0 
+        :type limit: int
+        :param search_key: 搜索条件
+        :type search_key: str
+        :param corp_id: 企业id
+        :type corp_id: str
+        :param start_expire_date: 查询过期时间在该时间戳之后的资源项
+        :type start_expire_date: int
+        :param end_expire_date: 查询过期时间在该时间戳之前的资源项
+        :type end_expire_date: int
+        :param type: 资源类型
+        :type type: str
+        :param type_id: 资源类型Id,若想搜索5方VMR时，需携带5方vmrpkg对应的id
+        :type type_id: str
+        :param status: 订单状态: - 0：正常 - 1：到期，仅查询时返回 - 2：停用
+        :type status: int
+        """
         
         
 
@@ -107,7 +132,7 @@ class SearchResourceRequest:
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
 
         :param x_request_id: The x_request_id of this SearchResourceRequest.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 
@@ -129,7 +154,7 @@ class SearchResourceRequest:
         语言参数，默认为中文zh-CN, 英文为en-US
 
         :param accept_language: The accept_language of this SearchResourceRequest.
-        :type: str
+        :type accept_language: str
         """
         self._accept_language = accept_language
 
@@ -151,7 +176,7 @@ class SearchResourceRequest:
         查询偏移量,若超过最大数量，则返回最后一页的数据 默认值：0 
 
         :param offset: The offset of this SearchResourceRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -173,7 +198,7 @@ class SearchResourceRequest:
         查询数量 默认值：0 
 
         :param limit: The limit of this SearchResourceRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -195,7 +220,7 @@ class SearchResourceRequest:
         搜索条件
 
         :param search_key: The search_key of this SearchResourceRequest.
-        :type: str
+        :type search_key: str
         """
         self._search_key = search_key
 
@@ -217,7 +242,7 @@ class SearchResourceRequest:
         企业id
 
         :param corp_id: The corp_id of this SearchResourceRequest.
-        :type: str
+        :type corp_id: str
         """
         self._corp_id = corp_id
 
@@ -239,7 +264,7 @@ class SearchResourceRequest:
         查询过期时间在该时间戳之后的资源项
 
         :param start_expire_date: The start_expire_date of this SearchResourceRequest.
-        :type: int
+        :type start_expire_date: int
         """
         self._start_expire_date = start_expire_date
 
@@ -261,7 +286,7 @@ class SearchResourceRequest:
         查询过期时间在该时间戳之前的资源项
 
         :param end_expire_date: The end_expire_date of this SearchResourceRequest.
-        :type: int
+        :type end_expire_date: int
         """
         self._end_expire_date = end_expire_date
 
@@ -283,7 +308,7 @@ class SearchResourceRequest:
         资源类型
 
         :param type: The type of this SearchResourceRequest.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -305,7 +330,7 @@ class SearchResourceRequest:
         资源类型Id,若想搜索5方VMR时，需携带5方vmrpkg对应的id
 
         :param type_id: The type_id of this SearchResourceRequest.
-        :type: str
+        :type type_id: str
         """
         self._type_id = type_id
 
@@ -327,7 +352,7 @@ class SearchResourceRequest:
         订单状态: - 0：正常 - 1：到期，仅查询时返回 - 2：停用
 
         :param status: The status of this SearchResourceRequest.
-        :type: int
+        :type status: int
         """
         self._status = status
 

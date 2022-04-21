@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateSecretRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateSecretRequest:
     }
 
     def __init__(self, secret_id=None, body=None):
-        """UpdateSecretRequest - a model defined in huaweicloud sdk"""
+        """UpdateSecretRequest
+
+        The model defined in huaweicloud sdk
+
+        :param secret_id: 凭据对象唯一资源标识符。
+        :type secret_id: str
+        :param body: Body of the UpdateSecretRequest
+        :type body: :class:`huaweicloudsdkkms.v1.UpdateSecretRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateSecretRequest:
         凭据对象唯一资源标识符。
 
         :param secret_id: The secret_id of this UpdateSecretRequest.
-        :type: str
+        :type secret_id: str
         """
         self._secret_id = secret_id
 
@@ -72,7 +79,7 @@ class UpdateSecretRequest:
 
 
         :return: The body of this UpdateSecretRequest.
-        :rtype: UpdateSecretRequestBody
+        :rtype: :class:`huaweicloudsdkkms.v1.UpdateSecretRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateSecretRequest:
 
 
         :param body: The body of this UpdateSecretRequest.
-        :type: UpdateSecretRequestBody
+        :type body: :class:`huaweicloudsdkkms.v1.UpdateSecretRequestBody`
         """
         self._body = body
 

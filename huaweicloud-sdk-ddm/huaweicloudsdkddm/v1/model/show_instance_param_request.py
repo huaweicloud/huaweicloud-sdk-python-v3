@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowInstanceParamRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowInstanceParamRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, x_language=None):
-        """ShowInstanceParamRequest - a model defined in huaweicloud sdk"""
+        """ShowInstanceParamRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: DDM实例ID
+        :type instance_id: str
+        :param offset: 分页参数：起始值 [大于等于0] 。默认值是0。
+        :type offset: int
+        :param limit: 分页参数：每页多少条 [大于0且小于等于128]。默认值是128。
+        :type limit: int
+        :param x_language: 语种，默认中文。中文:zh-cn;英文:en-us
+        :type x_language: str
+        """
         
         
 
@@ -72,7 +83,7 @@ class ShowInstanceParamRequest:
         DDM实例ID
 
         :param instance_id: The instance_id of this ShowInstanceParamRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -94,7 +105,7 @@ class ShowInstanceParamRequest:
         分页参数：起始值 [大于等于0] 。默认值是0。
 
         :param offset: The offset of this ShowInstanceParamRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -116,7 +127,7 @@ class ShowInstanceParamRequest:
         分页参数：每页多少条 [大于0且小于等于128]。默认值是128。
 
         :param limit: The limit of this ShowInstanceParamRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -138,7 +149,7 @@ class ShowInstanceParamRequest:
         语种，默认中文。中文:zh-cn;英文:en-us
 
         :param x_language: The x_language of this ShowInstanceParamRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 

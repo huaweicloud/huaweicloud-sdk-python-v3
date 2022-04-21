@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BackupRecordResponse:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class BackupRecordResponse:
     }
 
     def __init__(self, backup_id=None, period=None, backup_name=None, instance_id=None, size=None, backup_type=None, created_at=None, updated_at=None, progress=None, error_code=None, remark=None, status=None, is_support_restore=None):
-        """BackupRecordResponse - a model defined in huaweicloud sdk"""
+        """BackupRecordResponse
+
+        The model defined in huaweicloud sdk
+
+        :param backup_id: 备份记录ID。
+        :type backup_id: str
+        :param period: 备份执行时间段。
+        :type period: str
+        :param backup_name: 备份记录名称。
+        :type backup_name: str
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param size: 备份文件大小（Byte）。
+        :type size: int
+        :param backup_type: 备份类型。 - manual：表示备份类型为手动备份 - auto：表示备份类型为自动备份 
+        :type backup_type: str
+        :param created_at: 备份任务创建时间。
+        :type created_at: str
+        :param updated_at: 备份完成时间。
+        :type updated_at: str
+        :param progress: 备份进度。
+        :type progress: str
+        :param error_code: 备份失败后错误码 * &#x60;dcs.08.0001&#x60; - 启动备份恢复工具失败。 * &#x60;dcs.08.0002&#x60; - 执行超时。 * &#x60;dcs.08.0003&#x60; - 删除桶失败。 * &#x60;dcs.08.0004&#x60; - 获取ak/sk 失败。 * &#x60;dcs.08.0005&#x60; - 创建桶失败。 * &#x60;dcs.08.0006&#x60; - 查询备份数据大小失败。 * &#x60;dcs.08.0007&#x60; - 恢复时同步数据失败。 * &#x60;dcs.08.0008&#x60; - 自动备份任务未运行，实例正在运行其他任务。 
+        :type error_code: str
+        :param remark: 备份缓存实例的备注信息。
+        :type remark: str
+        :param status: 备份状态。 - waiting：等待中。 - backuping：备份中。 - succeed：备份成功。 - failed：备份失败。 - expired：备份文件过期。 - deleted：已手动删除备份文件。 
+        :type status: str
+        :param is_support_restore: 是否可以进行恢复操作，取值为TRUE或FALSE。
+        :type is_support_restore: str
+        """
         
         
 
@@ -118,7 +147,7 @@ class BackupRecordResponse:
         备份记录ID。
 
         :param backup_id: The backup_id of this BackupRecordResponse.
-        :type: str
+        :type backup_id: str
         """
         self._backup_id = backup_id
 
@@ -140,7 +169,7 @@ class BackupRecordResponse:
         备份执行时间段。
 
         :param period: The period of this BackupRecordResponse.
-        :type: str
+        :type period: str
         """
         self._period = period
 
@@ -162,7 +191,7 @@ class BackupRecordResponse:
         备份记录名称。
 
         :param backup_name: The backup_name of this BackupRecordResponse.
-        :type: str
+        :type backup_name: str
         """
         self._backup_name = backup_name
 
@@ -184,7 +213,7 @@ class BackupRecordResponse:
         实例ID。
 
         :param instance_id: The instance_id of this BackupRecordResponse.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -206,7 +235,7 @@ class BackupRecordResponse:
         备份文件大小（Byte）。
 
         :param size: The size of this BackupRecordResponse.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -228,7 +257,7 @@ class BackupRecordResponse:
         备份类型。 - manual：表示备份类型为手动备份 - auto：表示备份类型为自动备份 
 
         :param backup_type: The backup_type of this BackupRecordResponse.
-        :type: str
+        :type backup_type: str
         """
         self._backup_type = backup_type
 
@@ -250,7 +279,7 @@ class BackupRecordResponse:
         备份任务创建时间。
 
         :param created_at: The created_at of this BackupRecordResponse.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -272,7 +301,7 @@ class BackupRecordResponse:
         备份完成时间。
 
         :param updated_at: The updated_at of this BackupRecordResponse.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 
@@ -294,7 +323,7 @@ class BackupRecordResponse:
         备份进度。
 
         :param progress: The progress of this BackupRecordResponse.
-        :type: str
+        :type progress: str
         """
         self._progress = progress
 
@@ -316,7 +345,7 @@ class BackupRecordResponse:
         备份失败后错误码 * `dcs.08.0001` - 启动备份恢复工具失败。 * `dcs.08.0002` - 执行超时。 * `dcs.08.0003` - 删除桶失败。 * `dcs.08.0004` - 获取ak/sk 失败。 * `dcs.08.0005` - 创建桶失败。 * `dcs.08.0006` - 查询备份数据大小失败。 * `dcs.08.0007` - 恢复时同步数据失败。 * `dcs.08.0008` - 自动备份任务未运行，实例正在运行其他任务。 
 
         :param error_code: The error_code of this BackupRecordResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -338,7 +367,7 @@ class BackupRecordResponse:
         备份缓存实例的备注信息。
 
         :param remark: The remark of this BackupRecordResponse.
-        :type: str
+        :type remark: str
         """
         self._remark = remark
 
@@ -360,7 +389,7 @@ class BackupRecordResponse:
         备份状态。 - waiting：等待中。 - backuping：备份中。 - succeed：备份成功。 - failed：备份失败。 - expired：备份文件过期。 - deleted：已手动删除备份文件。 
 
         :param status: The status of this BackupRecordResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -382,7 +411,7 @@ class BackupRecordResponse:
         是否可以进行恢复操作，取值为TRUE或FALSE。
 
         :param is_support_restore: The is_support_restore of this BackupRecordResponse.
-        :type: str
+        :type is_support_restore: str
         """
         self._is_support_restore = is_support_restore
 

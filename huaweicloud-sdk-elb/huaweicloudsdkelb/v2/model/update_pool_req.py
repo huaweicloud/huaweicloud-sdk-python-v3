@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdatePoolReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class UpdatePoolReq:
     }
 
     def __init__(self, lb_algorithm=None, name=None, description=None, admin_state_up=None, session_persistence=None):
-        """UpdatePoolReq - a model defined in huaweicloud sdk"""
+        """UpdatePoolReq
+
+        The model defined in huaweicloud sdk
+
+        :param lb_algorithm: 后端云服务器组的负载均衡算法，取值：ROUND_ROBIN：加权轮询算法；LEAST_CONNECTIONS：加权最少连接算法；SOURCE_IP：源IP算法；当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。
+        :type lb_algorithm: str
+        :param name: 后端云服务器组的名称。
+        :type name: str
+        :param description: 后端云服务器组的描述信息
+        :type description: str
+        :param admin_state_up: 后端云服务器组的管理状态；该字段为预留字段，暂未启用。只支持更新为true。
+        :type admin_state_up: bool
+        :param session_persistence: 
+        :type session_persistence: :class:`huaweicloudsdkelb.v2.SessionPersistence`
+        """
         
         
 
@@ -78,7 +91,7 @@ class UpdatePoolReq:
         后端云服务器组的负载均衡算法，取值：ROUND_ROBIN：加权轮询算法；LEAST_CONNECTIONS：加权最少连接算法；SOURCE_IP：源IP算法；当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。
 
         :param lb_algorithm: The lb_algorithm of this UpdatePoolReq.
-        :type: str
+        :type lb_algorithm: str
         """
         self._lb_algorithm = lb_algorithm
 
@@ -100,7 +113,7 @@ class UpdatePoolReq:
         后端云服务器组的名称。
 
         :param name: The name of this UpdatePoolReq.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -122,7 +135,7 @@ class UpdatePoolReq:
         后端云服务器组的描述信息
 
         :param description: The description of this UpdatePoolReq.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -144,7 +157,7 @@ class UpdatePoolReq:
         后端云服务器组的管理状态；该字段为预留字段，暂未启用。只支持更新为true。
 
         :param admin_state_up: The admin_state_up of this UpdatePoolReq.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 
@@ -154,7 +167,7 @@ class UpdatePoolReq:
 
 
         :return: The session_persistence of this UpdatePoolReq.
-        :rtype: SessionPersistence
+        :rtype: :class:`huaweicloudsdkelb.v2.SessionPersistence`
         """
         return self._session_persistence
 
@@ -164,7 +177,7 @@ class UpdatePoolReq:
 
 
         :param session_persistence: The session_persistence of this UpdatePoolReq.
-        :type: SessionPersistence
+        :type session_persistence: :class:`huaweicloudsdkelb.v2.SessionPersistence`
         """
         self._session_persistence = session_persistence
 

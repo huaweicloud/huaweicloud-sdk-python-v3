@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDetailsOfInstanceV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -92,7 +91,75 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
     }
 
     def __init__(self, id=None, project_id=None, instance_name=None, status=None, instance_status=None, type=None, spec=None, create_time=None, enterprise_project_id=None, eip_address=None, charging_mode=None, cbc_metadata=None, description=None, vpc_id=None, subnet_id=None, security_group_id=None, maintain_begin=None, maintain_end=None, ingress_ip=None, user_id=None, nat_eip_ipv6_cidr=None, eip_ipv6_address=None, nat_eip_address=None, bandwidth_size=None, available_zone_ids=None, instance_version=None, virsubnet_id=None, roma_eip_address=None, listeners=None, supported_features=None, ingress_ip_v6=None, node_ips=None):
-        """ShowDetailsOfInstanceV2Response - a model defined in huaweicloud sdk"""
+        """ShowDetailsOfInstanceV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param id: 实例编号
+        :type id: str
+        :param project_id: 实例所属项目编号
+        :type project_id: str
+        :param instance_name: 实例名称
+        :type instance_name: str
+        :param status: 实例状态： - Creating：创建中 - CreateSuccess：创建成功 - CreateFail：创建失败 - Initing：初始化中 - Registering：注册中 - Running：运行中 - InitingFailed：初始化失败 - RegisterFailed：注册失败 - Installing：安装中 - InstallFailed：安装失败 - Updating：升级中 - UpdateFailed：升级失败 - Rollbacking：回滚中 - RollbackSuccess：回滚成功 - RollbackFailed：回滚失败 - Deleting：删除中 - DeleteFailed：删除失败 - Unregistering：注销中 - UnRegisterFailed：注销失败 - CreateTimeout：创建超时 - InitTimeout：初始化超时 - RegisterTimeout：注册超时 - InstallTimeout：安装超时 - UpdateTimeout：升级超时 - RollbackTimeout：回滚超时 - DeleteTimeout：删除超时 - UnregisterTimeout：注销超时 - Starting：启动中 - Freezing：冻结中 - Frozen：已冻结 - Restarting：重启中 - RestartFail：重启失败 - Unhealthy：实例异常 - RestartTimeout：重启超时
+        :type status: str
+        :param instance_status: 实例状态对应编号 - 1：创建中 - 2：创建成功 - 3：创建失败 - 4：初始化中 - 5：注册中 - 6：运行中 - 7：初始化失败 - 8：注册失败 - 10：安装中 - 11：安装失败 - 12：升级中 - 13：升级失败 - 20：回滚中 - 21：回滚成功 - 22：回滚失败 - 23：删除中 - 24：删除失败 - 25：注销中 - 26：注销失败 - 27：创建超时 - 28：初始化超时 - 29：注册超时 - 30：安装超时 - 31：升级超时 - 32：回滚超时 - 33：删除超时 - 34：注销超时 - 35：启动中 - 36：冻结中 - 37：已冻结 - 38：重启中 - 39：重启失败 - 40：实例异常 - 41：重启超时
+        :type instance_status: int
+        :param type: 实例类型  暂不支持
+        :type type: str
+        :param spec: 实例规格： - ROMA_BASIC：基础版实例 - ROMA_PROFESSIONAL：专业版实例 - ROMA_ENTERPRISE：企业版实例 - ROMA_PLATINUM：铂金版实例 [- ROMA_BASIC_IPV6：基础版IPV6实例](tag:hcs) [- ROMA_PROFESSIONAL_IPV6：专业版IPV6实例](tag:hcs) [- ROMA_ENTERPRISE_IPV6：企业版IPV6实例](tag:hcs) [- ROMA_PLATINUM_IPV6：铂金版IPV6实例](tag:hcs)
+        :type spec: str
+        :param create_time: 实例创建时间。unix时间戳格式。
+        :type create_time: int
+        :param enterprise_project_id: 企业项目ID，企业帐号必填
+        :type enterprise_project_id: str
+        :param eip_address: 实例绑定的弹性IP地址
+        :type eip_address: str
+        :param charging_mode: 实例计费方式： - 0：按需计费 - 1：包周期计费
+        :type charging_mode: int
+        :param cbc_metadata: 包周期计费订单编号
+        :type cbc_metadata: str
+        :param description: 实例描述
+        :type description: str
+        :param vpc_id: 虚拟私有云ID。 
+        :type vpc_id: str
+        :param subnet_id: 子网的网络ID。 
+        :type subnet_id: str
+        :param security_group_id: 实例所属的安全组。 
+        :type security_group_id: str
+        :param maintain_begin: &#39;维护时间窗开始时间。时间格式为 xx:00:00，xx取值为02,06,10,14,18,22。&#39;  &#39;在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次。&#39;
+        :type maintain_begin: str
+        :param maintain_end: &#39;维护时间窗结束时间。时间格式为 xx:00:00，与维护时间窗开始时间相差4个小时。&#39;  &#39;在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次&#39;。
+        :type maintain_end: str
+        :param ingress_ip: 实例入口，虚拟私有云访问地址
+        :type ingress_ip: str
+        :param user_id: 实例所属用户ID
+        :type user_id: str
+        :param nat_eip_ipv6_cidr: 出公网网段 (IPv6)  。  当前仅部分region部分可用区支持IPv6
+        :type nat_eip_ipv6_cidr: str
+        :param eip_ipv6_address: 弹性IP地址(IPv6)。  当前仅部分region部分可用区支持IPv6
+        :type eip_ipv6_address: str
+        :param nat_eip_address: 实例出公网IP
+        :type nat_eip_address: str
+        :param bandwidth_size: 出公网带宽
+        :type bandwidth_size: int
+        :param available_zone_ids: 可用区
+        :type available_zone_ids: str
+        :param instance_version: 实例版本编号
+        :type instance_version: str
+        :param virsubnet_id: 子网的网络ID。  暂不支持
+        :type virsubnet_id: str
+        :param roma_eip_address: roma弹性公网IP。  暂不支持
+        :type roma_eip_address: str
+        :param listeners: 监听信息  [暂不支持](tag:public)
+        :type listeners: list[:class:`huaweicloudsdkroma.v2.Listener`]
+        :param supported_features: 实例支持的特性列表
+        :type supported_features: list[str]
+        :param ingress_ip_v6: 实例入口（IPV6）  当前仅部分region部分可用区支持IPv6
+        :type ingress_ip_v6: str
+        :param node_ips: 
+        :type node_ips: :class:`huaweicloudsdkroma.v2.NodeIps`
+        """
         
         super(ShowDetailsOfInstanceV2Response, self).__init__()
 
@@ -213,7 +280,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         实例编号
 
         :param id: The id of this ShowDetailsOfInstanceV2Response.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -235,7 +302,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         实例所属项目编号
 
         :param project_id: The project_id of this ShowDetailsOfInstanceV2Response.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -257,7 +324,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         实例名称
 
         :param instance_name: The instance_name of this ShowDetailsOfInstanceV2Response.
-        :type: str
+        :type instance_name: str
         """
         self._instance_name = instance_name
 
@@ -279,7 +346,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         实例状态： - Creating：创建中 - CreateSuccess：创建成功 - CreateFail：创建失败 - Initing：初始化中 - Registering：注册中 - Running：运行中 - InitingFailed：初始化失败 - RegisterFailed：注册失败 - Installing：安装中 - InstallFailed：安装失败 - Updating：升级中 - UpdateFailed：升级失败 - Rollbacking：回滚中 - RollbackSuccess：回滚成功 - RollbackFailed：回滚失败 - Deleting：删除中 - DeleteFailed：删除失败 - Unregistering：注销中 - UnRegisterFailed：注销失败 - CreateTimeout：创建超时 - InitTimeout：初始化超时 - RegisterTimeout：注册超时 - InstallTimeout：安装超时 - UpdateTimeout：升级超时 - RollbackTimeout：回滚超时 - DeleteTimeout：删除超时 - UnregisterTimeout：注销超时 - Starting：启动中 - Freezing：冻结中 - Frozen：已冻结 - Restarting：重启中 - RestartFail：重启失败 - Unhealthy：实例异常 - RestartTimeout：重启超时
 
         :param status: The status of this ShowDetailsOfInstanceV2Response.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -301,7 +368,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         实例状态对应编号 - 1：创建中 - 2：创建成功 - 3：创建失败 - 4：初始化中 - 5：注册中 - 6：运行中 - 7：初始化失败 - 8：注册失败 - 10：安装中 - 11：安装失败 - 12：升级中 - 13：升级失败 - 20：回滚中 - 21：回滚成功 - 22：回滚失败 - 23：删除中 - 24：删除失败 - 25：注销中 - 26：注销失败 - 27：创建超时 - 28：初始化超时 - 29：注册超时 - 30：安装超时 - 31：升级超时 - 32：回滚超时 - 33：删除超时 - 34：注销超时 - 35：启动中 - 36：冻结中 - 37：已冻结 - 38：重启中 - 39：重启失败 - 40：实例异常 - 41：重启超时
 
         :param instance_status: The instance_status of this ShowDetailsOfInstanceV2Response.
-        :type: int
+        :type instance_status: int
         """
         self._instance_status = instance_status
 
@@ -323,7 +390,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         实例类型  暂不支持
 
         :param type: The type of this ShowDetailsOfInstanceV2Response.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -345,7 +412,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         实例规格： - ROMA_BASIC：基础版实例 - ROMA_PROFESSIONAL：专业版实例 - ROMA_ENTERPRISE：企业版实例 - ROMA_PLATINUM：铂金版实例 [- ROMA_BASIC_IPV6：基础版IPV6实例](tag:hcs) [- ROMA_PROFESSIONAL_IPV6：专业版IPV6实例](tag:hcs) [- ROMA_ENTERPRISE_IPV6：企业版IPV6实例](tag:hcs) [- ROMA_PLATINUM_IPV6：铂金版IPV6实例](tag:hcs)
 
         :param spec: The spec of this ShowDetailsOfInstanceV2Response.
-        :type: str
+        :type spec: str
         """
         self._spec = spec
 
@@ -367,7 +434,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         实例创建时间。unix时间戳格式。
 
         :param create_time: The create_time of this ShowDetailsOfInstanceV2Response.
-        :type: int
+        :type create_time: int
         """
         self._create_time = create_time
 
@@ -389,7 +456,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         企业项目ID，企业帐号必填
 
         :param enterprise_project_id: The enterprise_project_id of this ShowDetailsOfInstanceV2Response.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -411,7 +478,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         实例绑定的弹性IP地址
 
         :param eip_address: The eip_address of this ShowDetailsOfInstanceV2Response.
-        :type: str
+        :type eip_address: str
         """
         self._eip_address = eip_address
 
@@ -433,7 +500,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         实例计费方式： - 0：按需计费 - 1：包周期计费
 
         :param charging_mode: The charging_mode of this ShowDetailsOfInstanceV2Response.
-        :type: int
+        :type charging_mode: int
         """
         self._charging_mode = charging_mode
 
@@ -455,7 +522,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         包周期计费订单编号
 
         :param cbc_metadata: The cbc_metadata of this ShowDetailsOfInstanceV2Response.
-        :type: str
+        :type cbc_metadata: str
         """
         self._cbc_metadata = cbc_metadata
 
@@ -477,7 +544,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         实例描述
 
         :param description: The description of this ShowDetailsOfInstanceV2Response.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -499,7 +566,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         虚拟私有云ID。 
 
         :param vpc_id: The vpc_id of this ShowDetailsOfInstanceV2Response.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -521,7 +588,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         子网的网络ID。 
 
         :param subnet_id: The subnet_id of this ShowDetailsOfInstanceV2Response.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -543,7 +610,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         实例所属的安全组。 
 
         :param security_group_id: The security_group_id of this ShowDetailsOfInstanceV2Response.
-        :type: str
+        :type security_group_id: str
         """
         self._security_group_id = security_group_id
 
@@ -565,7 +632,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         '维护时间窗开始时间。时间格式为 xx:00:00，xx取值为02,06,10,14,18,22。'  '在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次。'
 
         :param maintain_begin: The maintain_begin of this ShowDetailsOfInstanceV2Response.
-        :type: str
+        :type maintain_begin: str
         """
         self._maintain_begin = maintain_begin
 
@@ -587,7 +654,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         '维护时间窗结束时间。时间格式为 xx:00:00，与维护时间窗开始时间相差4个小时。'  '在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次'。
 
         :param maintain_end: The maintain_end of this ShowDetailsOfInstanceV2Response.
-        :type: str
+        :type maintain_end: str
         """
         self._maintain_end = maintain_end
 
@@ -609,7 +676,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         实例入口，虚拟私有云访问地址
 
         :param ingress_ip: The ingress_ip of this ShowDetailsOfInstanceV2Response.
-        :type: str
+        :type ingress_ip: str
         """
         self._ingress_ip = ingress_ip
 
@@ -631,7 +698,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         实例所属用户ID
 
         :param user_id: The user_id of this ShowDetailsOfInstanceV2Response.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -653,7 +720,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         出公网网段 (IPv6)  。  当前仅部分region部分可用区支持IPv6
 
         :param nat_eip_ipv6_cidr: The nat_eip_ipv6_cidr of this ShowDetailsOfInstanceV2Response.
-        :type: str
+        :type nat_eip_ipv6_cidr: str
         """
         self._nat_eip_ipv6_cidr = nat_eip_ipv6_cidr
 
@@ -675,7 +742,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         弹性IP地址(IPv6)。  当前仅部分region部分可用区支持IPv6
 
         :param eip_ipv6_address: The eip_ipv6_address of this ShowDetailsOfInstanceV2Response.
-        :type: str
+        :type eip_ipv6_address: str
         """
         self._eip_ipv6_address = eip_ipv6_address
 
@@ -697,7 +764,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         实例出公网IP
 
         :param nat_eip_address: The nat_eip_address of this ShowDetailsOfInstanceV2Response.
-        :type: str
+        :type nat_eip_address: str
         """
         self._nat_eip_address = nat_eip_address
 
@@ -719,7 +786,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         出公网带宽
 
         :param bandwidth_size: The bandwidth_size of this ShowDetailsOfInstanceV2Response.
-        :type: int
+        :type bandwidth_size: int
         """
         self._bandwidth_size = bandwidth_size
 
@@ -741,7 +808,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         可用区
 
         :param available_zone_ids: The available_zone_ids of this ShowDetailsOfInstanceV2Response.
-        :type: str
+        :type available_zone_ids: str
         """
         self._available_zone_ids = available_zone_ids
 
@@ -763,7 +830,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         实例版本编号
 
         :param instance_version: The instance_version of this ShowDetailsOfInstanceV2Response.
-        :type: str
+        :type instance_version: str
         """
         self._instance_version = instance_version
 
@@ -785,7 +852,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         子网的网络ID。  暂不支持
 
         :param virsubnet_id: The virsubnet_id of this ShowDetailsOfInstanceV2Response.
-        :type: str
+        :type virsubnet_id: str
         """
         self._virsubnet_id = virsubnet_id
 
@@ -807,7 +874,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         roma弹性公网IP。  暂不支持
 
         :param roma_eip_address: The roma_eip_address of this ShowDetailsOfInstanceV2Response.
-        :type: str
+        :type roma_eip_address: str
         """
         self._roma_eip_address = roma_eip_address
 
@@ -818,7 +885,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         监听信息  [暂不支持](tag:public)
 
         :return: The listeners of this ShowDetailsOfInstanceV2Response.
-        :rtype: list[Listener]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.Listener`]
         """
         return self._listeners
 
@@ -829,7 +896,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         监听信息  [暂不支持](tag:public)
 
         :param listeners: The listeners of this ShowDetailsOfInstanceV2Response.
-        :type: list[Listener]
+        :type listeners: list[:class:`huaweicloudsdkroma.v2.Listener`]
         """
         self._listeners = listeners
 
@@ -851,7 +918,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         实例支持的特性列表
 
         :param supported_features: The supported_features of this ShowDetailsOfInstanceV2Response.
-        :type: list[str]
+        :type supported_features: list[str]
         """
         self._supported_features = supported_features
 
@@ -873,7 +940,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         实例入口（IPV6）  当前仅部分region部分可用区支持IPv6
 
         :param ingress_ip_v6: The ingress_ip_v6 of this ShowDetailsOfInstanceV2Response.
-        :type: str
+        :type ingress_ip_v6: str
         """
         self._ingress_ip_v6 = ingress_ip_v6
 
@@ -883,7 +950,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
 
 
         :return: The node_ips of this ShowDetailsOfInstanceV2Response.
-        :rtype: NodeIps
+        :rtype: :class:`huaweicloudsdkroma.v2.NodeIps`
         """
         return self._node_ips
 
@@ -893,7 +960,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
 
 
         :param node_ips: The node_ips of this ShowDetailsOfInstanceV2Response.
-        :type: NodeIps
+        :type node_ips: :class:`huaweicloudsdkroma.v2.NodeIps`
         """
         self._node_ips = node_ips
 

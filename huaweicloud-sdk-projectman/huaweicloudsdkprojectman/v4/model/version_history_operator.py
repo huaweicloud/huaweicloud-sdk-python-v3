@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VersionHistoryOperator:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class VersionHistoryOperator:
     }
 
     def __init__(self, user_id=None, user_name=None, nick_name=None, domain_id=None, domain_name=None):
-        """VersionHistoryOperator - a model defined in huaweicloud sdk"""
+        """VersionHistoryOperator
+
+        The model defined in huaweicloud sdk
+
+        :param user_id: 用户uuid
+        :type user_id: str
+        :param user_name: 用户名
+        :type user_name: str
+        :param nick_name: 昵称
+        :type nick_name: str
+        :param domain_id: 租户uuid
+        :type domain_id: str
+        :param domain_name: 租户名
+        :type domain_name: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class VersionHistoryOperator:
         用户uuid
 
         :param user_id: The user_id of this VersionHistoryOperator.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -100,7 +113,7 @@ class VersionHistoryOperator:
         用户名
 
         :param user_name: The user_name of this VersionHistoryOperator.
-        :type: str
+        :type user_name: str
         """
         self._user_name = user_name
 
@@ -122,7 +135,7 @@ class VersionHistoryOperator:
         昵称
 
         :param nick_name: The nick_name of this VersionHistoryOperator.
-        :type: str
+        :type nick_name: str
         """
         self._nick_name = nick_name
 
@@ -144,7 +157,7 @@ class VersionHistoryOperator:
         租户uuid
 
         :param domain_id: The domain_id of this VersionHistoryOperator.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -166,7 +179,7 @@ class VersionHistoryOperator:
         租户名
 
         :param domain_name: The domain_name of this VersionHistoryOperator.
-        :type: str
+        :type domain_name: str
         """
         self._domain_name = domain_name
 

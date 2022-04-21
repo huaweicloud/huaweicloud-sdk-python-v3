@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class WordsListIem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class WordsListIem:
     }
 
     def __init__(self, words=None, confidence=None, location=None):
-        """WordsListIem - a model defined in huaweicloud sdk"""
+        """WordsListIem
+
+        The model defined in huaweicloud sdk
+
+        :param words: 文字块识别结果。 
+        :type words: str
+        :param confidence: 字段的平均置信度，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。置信度由算法给出，不直接等价于对应字段的准确率。 
+        :type confidence: float
+        :param location: 文字块位置信息，列表形式，分别表示文字块4个顶点的x, y坐标;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
+        :type location: list[list[int]]
+        """
         
         
 
@@ -68,7 +77,7 @@ class WordsListIem:
         文字块识别结果。 
 
         :param words: The words of this WordsListIem.
-        :type: str
+        :type words: str
         """
         self._words = words
 
@@ -90,7 +99,7 @@ class WordsListIem:
         字段的平均置信度，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。置信度由算法给出，不直接等价于对应字段的准确率。 
 
         :param confidence: The confidence of this WordsListIem.
-        :type: float
+        :type confidence: float
         """
         self._confidence = confidence
 
@@ -112,7 +121,7 @@ class WordsListIem:
         文字块位置信息，列表形式，分别表示文字块4个顶点的x, y坐标;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
         :param location: The location of this WordsListIem.
-        :type: list[list[int]]
+        :type location: list[list[int]]
         """
         self._location = location
 

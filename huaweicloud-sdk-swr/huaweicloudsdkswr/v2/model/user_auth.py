@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UserAuth:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UserAuth:
     }
 
     def __init__(self, user_id=None, user_name=None, auth=None):
-        """UserAuth - a model defined in huaweicloud sdk"""
+        """UserAuth
+
+        The model defined in huaweicloud sdk
+
+        :param user_id: 用户id，需要从IAM服务获取
+        :type user_id: str
+        :param user_name: 用户名，需要从IAM服务获取
+        :type user_name: str
+        :param auth: 用户权限，7表示管理权限，3表示编辑权限，1表示读取权限
+        :type auth: int
+        """
         
         
 
@@ -65,7 +74,7 @@ class UserAuth:
         用户id，需要从IAM服务获取
 
         :param user_id: The user_id of this UserAuth.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -87,7 +96,7 @@ class UserAuth:
         用户名，需要从IAM服务获取
 
         :param user_name: The user_name of this UserAuth.
-        :type: str
+        :type user_name: str
         """
         self._user_name = user_name
 
@@ -109,7 +118,7 @@ class UserAuth:
         用户权限，7表示管理权限，3表示编辑权限，1表示读取权限
 
         :param auth: The auth of this UserAuth.
-        :type: int
+        :type auth: int
         """
         self._auth = auth
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KafkaAuthInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class KafkaAuthInfo:
     }
 
     def __init__(self, security_protocol=None, sasl_plain_auth_info=None):
-        """KafkaAuthInfo - a model defined in huaweicloud sdk"""
+        """KafkaAuthInfo
+
+        The model defined in huaweicloud sdk
+
+        :param security_protocol: 安全协议
+        :type security_protocol: str
+        :param sasl_plain_auth_info: 
+        :type sasl_plain_auth_info: :class:`huaweicloudsdkiotanalytics.v1.SaslPlainAuthInfo`
+        """
         
         
 
@@ -62,7 +69,7 @@ class KafkaAuthInfo:
         安全协议
 
         :param security_protocol: The security_protocol of this KafkaAuthInfo.
-        :type: str
+        :type security_protocol: str
         """
         self._security_protocol = security_protocol
 
@@ -72,7 +79,7 @@ class KafkaAuthInfo:
 
 
         :return: The sasl_plain_auth_info of this KafkaAuthInfo.
-        :rtype: SaslPlainAuthInfo
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.SaslPlainAuthInfo`
         """
         return self._sasl_plain_auth_info
 
@@ -82,7 +89,7 @@ class KafkaAuthInfo:
 
 
         :param sasl_plain_auth_info: The sasl_plain_auth_info of this KafkaAuthInfo.
-        :type: SaslPlainAuthInfo
+        :type sasl_plain_auth_info: :class:`huaweicloudsdkiotanalytics.v1.SaslPlainAuthInfo`
         """
         self._sasl_plain_auth_info = sasl_plain_auth_info
 

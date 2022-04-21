@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MysqlInstanceNodeVolumeInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class MysqlInstanceNodeVolumeInfo:
     }
 
     def __init__(self, type=None, used=None, size=None):
-        """MysqlInstanceNodeVolumeInfo - a model defined in huaweicloud sdk"""
+        """MysqlInstanceNodeVolumeInfo
+
+        The model defined in huaweicloud sdk
+
+        :param type: 磁盘类型。
+        :type type: str
+        :param used: 已使用磁盘大小，单位GB。
+        :type used: str
+        :param size: 包周期购买的存储空间大小，单位GB。
+        :type size: int
+        """
         
         
 
@@ -65,7 +74,7 @@ class MysqlInstanceNodeVolumeInfo:
         磁盘类型。
 
         :param type: The type of this MysqlInstanceNodeVolumeInfo.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -87,7 +96,7 @@ class MysqlInstanceNodeVolumeInfo:
         已使用磁盘大小，单位GB。
 
         :param used: The used of this MysqlInstanceNodeVolumeInfo.
-        :type: str
+        :type used: str
         """
         self._used = used
 
@@ -109,7 +118,7 @@ class MysqlInstanceNodeVolumeInfo:
         包周期购买的存储空间大小，单位GB。
 
         :param size: The size of this MysqlInstanceNodeVolumeInfo.
-        :type: int
+        :type size: int
         """
         self._size = size
 

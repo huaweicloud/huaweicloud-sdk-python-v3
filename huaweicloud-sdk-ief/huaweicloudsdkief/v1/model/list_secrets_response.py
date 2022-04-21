@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSecretsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListSecretsResponse(SdkResponse):
     }
 
     def __init__(self, secrets=None, count=None):
-        """ListSecretsResponse - a model defined in huaweicloud sdk"""
+        """ListSecretsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param secrets: 密钥
+        :type secrets: list[:class:`huaweicloudsdkief.v1.SecretDetailResp`]
+        :param count: 满足条件的个数
+        :type count: int
+        """
         
         super(ListSecretsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListSecretsResponse(SdkResponse):
         密钥
 
         :return: The secrets of this ListSecretsResponse.
-        :rtype: list[SecretDetailResp]
+        :rtype: list[:class:`huaweicloudsdkief.v1.SecretDetailResp`]
         """
         return self._secrets
 
@@ -63,7 +70,7 @@ class ListSecretsResponse(SdkResponse):
         密钥
 
         :param secrets: The secrets of this ListSecretsResponse.
-        :type: list[SecretDetailResp]
+        :type secrets: list[:class:`huaweicloudsdkief.v1.SecretDetailResp`]
         """
         self._secrets = secrets
 
@@ -85,7 +92,7 @@ class ListSecretsResponse(SdkResponse):
         满足条件的个数
 
         :param count: The count of this ListSecretsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

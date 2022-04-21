@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowPrivateipResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowPrivateipResponse(SdkResponse):
     }
 
     def __init__(self, privateip=None):
-        """ShowPrivateipResponse - a model defined in huaweicloud sdk"""
+        """ShowPrivateipResponse
+
+        The model defined in huaweicloud sdk
+
+        :param privateip: 
+        :type privateip: :class:`huaweicloudsdkvpc.v2.Privateip`
+        """
         
         super(ShowPrivateipResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class ShowPrivateipResponse(SdkResponse):
 
 
         :return: The privateip of this ShowPrivateipResponse.
-        :rtype: Privateip
+        :rtype: :class:`huaweicloudsdkvpc.v2.Privateip`
         """
         return self._privateip
 
@@ -56,7 +61,7 @@ class ShowPrivateipResponse(SdkResponse):
 
 
         :param privateip: The privateip of this ShowPrivateipResponse.
-        :type: Privateip
+        :type privateip: :class:`huaweicloudsdkvpc.v2.Privateip`
         """
         self._privateip = privateip
 

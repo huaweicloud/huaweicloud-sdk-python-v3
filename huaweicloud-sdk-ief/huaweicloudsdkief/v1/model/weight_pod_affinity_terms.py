@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class WeightPodAffinityTerms:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class WeightPodAffinityTerms:
     }
 
     def __init__(self, pod_affinity_term=None, weight=None):
-        """WeightPodAffinityTerms - a model defined in huaweicloud sdk"""
+        """WeightPodAffinityTerms
+
+        The model defined in huaweicloud sdk
+
+        :param pod_affinity_term: 
+        :type pod_affinity_term: :class:`huaweicloudsdkief.v1.WeightPodAffinityTermsPodAffinityTerm`
+        :param weight: 权重，范围为1-100
+        :type weight: int
+        """
         
         
 
@@ -51,7 +58,7 @@ class WeightPodAffinityTerms:
 
 
         :return: The pod_affinity_term of this WeightPodAffinityTerms.
-        :rtype: WeightPodAffinityTermsPodAffinityTerm
+        :rtype: :class:`huaweicloudsdkief.v1.WeightPodAffinityTermsPodAffinityTerm`
         """
         return self._pod_affinity_term
 
@@ -61,7 +68,7 @@ class WeightPodAffinityTerms:
 
 
         :param pod_affinity_term: The pod_affinity_term of this WeightPodAffinityTerms.
-        :type: WeightPodAffinityTermsPodAffinityTerm
+        :type pod_affinity_term: :class:`huaweicloudsdkief.v1.WeightPodAffinityTermsPodAffinityTerm`
         """
         self._pod_affinity_term = pod_affinity_term
 
@@ -83,7 +90,7 @@ class WeightPodAffinityTerms:
         权重，范围为1-100
 
         :param weight: The weight of this WeightPodAffinityTerms.
-        :type: int
+        :type weight: int
         """
         self._weight = weight
 

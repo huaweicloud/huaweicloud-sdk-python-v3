@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ConfigTransformationVo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ConfigTransformationVo:
     }
 
     def __init__(self, db_table_name=None, db_name=None, table_name=None, col_names=None, prim_key_or_index=None, indexs=None, values=None):
-        """ConfigTransformationVo - a model defined in huaweicloud sdk"""
+        """ConfigTransformationVo
+
+        The model defined in huaweicloud sdk
+
+        :param db_table_name: 库名.表名。
+        :type db_table_name: str
+        :param db_name: 库名。长度限制256。
+        :type db_name: str
+        :param table_name: 表名。长度限制256。
+        :type table_name: str
+        :param col_names: 列名。长度限制256。
+        :type col_names: str
+        :param prim_key_or_index: 主键或唯一索引。长度限制256。
+        :type prim_key_or_index: str
+        :param indexs: 优化查询所需的索引。长度限制256。
+        :type indexs: str
+        :param values: 过滤条件。长度限制256。
+        :type values: str
+        """
         
         
 
@@ -81,7 +98,7 @@ class ConfigTransformationVo:
         库名.表名。
 
         :param db_table_name: The db_table_name of this ConfigTransformationVo.
-        :type: str
+        :type db_table_name: str
         """
         self._db_table_name = db_table_name
 
@@ -103,7 +120,7 @@ class ConfigTransformationVo:
         库名。长度限制256。
 
         :param db_name: The db_name of this ConfigTransformationVo.
-        :type: str
+        :type db_name: str
         """
         self._db_name = db_name
 
@@ -125,7 +142,7 @@ class ConfigTransformationVo:
         表名。长度限制256。
 
         :param table_name: The table_name of this ConfigTransformationVo.
-        :type: str
+        :type table_name: str
         """
         self._table_name = table_name
 
@@ -147,7 +164,7 @@ class ConfigTransformationVo:
         列名。长度限制256。
 
         :param col_names: The col_names of this ConfigTransformationVo.
-        :type: str
+        :type col_names: str
         """
         self._col_names = col_names
 
@@ -169,7 +186,7 @@ class ConfigTransformationVo:
         主键或唯一索引。长度限制256。
 
         :param prim_key_or_index: The prim_key_or_index of this ConfigTransformationVo.
-        :type: str
+        :type prim_key_or_index: str
         """
         self._prim_key_or_index = prim_key_or_index
 
@@ -191,7 +208,7 @@ class ConfigTransformationVo:
         优化查询所需的索引。长度限制256。
 
         :param indexs: The indexs of this ConfigTransformationVo.
-        :type: str
+        :type indexs: str
         """
         self._indexs = indexs
 
@@ -213,7 +230,7 @@ class ConfigTransformationVo:
         过滤条件。长度限制256。
 
         :param values: The values of this ConfigTransformationVo.
-        :type: str
+        :type values: str
         """
         self._values = values
 

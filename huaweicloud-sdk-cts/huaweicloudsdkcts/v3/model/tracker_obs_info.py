@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TrackerObsInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class TrackerObsInfo:
     }
 
     def __init__(self, bucket_name=None, file_prefix_name=None, is_obs_created=None, bucket_lifecycle=None):
-        """TrackerObsInfo - a model defined in huaweicloud sdk"""
+        """TrackerObsInfo
+
+        The model defined in huaweicloud sdk
+
+        :param bucket_name: 标识OBS桶名称。由数字或字母开头，支持小写字母、数字、“-”、“.”，长度为3～63个字符。
+        :type bucket_name: str
+        :param file_prefix_name: 标识需要存储于OBS的日志文件前缀，0-9，a-z，A-Z，&#39;-&#39;，&#39;.&#39;，&#39;_&#39;长度为0～64字符。
+        :type file_prefix_name: str
+        :param is_obs_created: 是否支持新建OBS桶。   值为“true”时，表示新创建OBS桶存储事件文件；   值为“false”时，选择已存在的OBS桶存储事件文件。
+        :type is_obs_created: bool
+        :param bucket_lifecycle: 标识配置桶内对象存储周期。 当\&quot;tracker_type\&quot;参数值为\&quot;data\&quot;时该参数值有效。
+        :type bucket_lifecycle: int
+        """
         
         
 
@@ -73,7 +84,7 @@ class TrackerObsInfo:
         标识OBS桶名称。由数字或字母开头，支持小写字母、数字、“-”、“.”，长度为3～63个字符。
 
         :param bucket_name: The bucket_name of this TrackerObsInfo.
-        :type: str
+        :type bucket_name: str
         """
         self._bucket_name = bucket_name
 
@@ -95,7 +106,7 @@ class TrackerObsInfo:
         标识需要存储于OBS的日志文件前缀，0-9，a-z，A-Z，'-'，'.'，'_'长度为0～64字符。
 
         :param file_prefix_name: The file_prefix_name of this TrackerObsInfo.
-        :type: str
+        :type file_prefix_name: str
         """
         self._file_prefix_name = file_prefix_name
 
@@ -117,7 +128,7 @@ class TrackerObsInfo:
         是否支持新建OBS桶。   值为“true”时，表示新创建OBS桶存储事件文件；   值为“false”时，选择已存在的OBS桶存储事件文件。
 
         :param is_obs_created: The is_obs_created of this TrackerObsInfo.
-        :type: bool
+        :type is_obs_created: bool
         """
         self._is_obs_created = is_obs_created
 
@@ -139,7 +150,7 @@ class TrackerObsInfo:
         标识配置桶内对象存储周期。 当\"tracker_type\"参数值为\"data\"时该参数值有效。
 
         :param bucket_lifecycle: The bucket_lifecycle of this TrackerObsInfo.
-        :type: int
+        :type bucket_lifecycle: int
         """
         self._bucket_lifecycle = bucket_lifecycle
 

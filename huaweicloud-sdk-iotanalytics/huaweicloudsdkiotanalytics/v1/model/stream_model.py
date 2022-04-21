@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StreamModel:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class StreamModel:
     }
 
     def __init__(self, inputs=None, job_id=None, outputs=None):
-        """StreamModel - a model defined in huaweicloud sdk"""
+        """StreamModel
+
+        The model defined in huaweicloud sdk
+
+        :param inputs: 输入参数，最多支持10个；流计算的输入参数名需要在接收数据类型为资产数据的实时分析作业中定义，模型中必须与其保持一致
+        :type inputs: list[:class:`huaweicloudsdkiotanalytics.v1.InputModel`]
+        :param job_id: 实时分析作业ID
+        :type job_id: str
+        :param outputs: 输出属性，最多支持10个
+        :type outputs: list[:class:`huaweicloudsdkiotanalytics.v1.StreamOutput`]
+        """
         
         
 
@@ -54,7 +63,7 @@ class StreamModel:
         输入参数，最多支持10个；流计算的输入参数名需要在接收数据类型为资产数据的实时分析作业中定义，模型中必须与其保持一致
 
         :return: The inputs of this StreamModel.
-        :rtype: list[InputModel]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.InputModel`]
         """
         return self._inputs
 
@@ -65,7 +74,7 @@ class StreamModel:
         输入参数，最多支持10个；流计算的输入参数名需要在接收数据类型为资产数据的实时分析作业中定义，模型中必须与其保持一致
 
         :param inputs: The inputs of this StreamModel.
-        :type: list[InputModel]
+        :type inputs: list[:class:`huaweicloudsdkiotanalytics.v1.InputModel`]
         """
         self._inputs = inputs
 
@@ -87,7 +96,7 @@ class StreamModel:
         实时分析作业ID
 
         :param job_id: The job_id of this StreamModel.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -98,7 +107,7 @@ class StreamModel:
         输出属性，最多支持10个
 
         :return: The outputs of this StreamModel.
-        :rtype: list[StreamOutput]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.StreamOutput`]
         """
         return self._outputs
 
@@ -109,7 +118,7 @@ class StreamModel:
         输出属性，最多支持10个
 
         :param outputs: The outputs of this StreamModel.
-        :type: list[StreamOutput]
+        :type outputs: list[:class:`huaweicloudsdkiotanalytics.v1.StreamOutput`]
         """
         self._outputs = outputs
 

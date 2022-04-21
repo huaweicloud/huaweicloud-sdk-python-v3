@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ConsumeMessagesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ConsumeMessagesRequest:
     }
 
     def __init__(self, queue_id=None, consumer_group_id=None, max_msgs=None, time_wait=None, ack_wait=None, tag=None, tag_type=None):
-        """ConsumeMessagesRequest - a model defined in huaweicloud sdk"""
+        """ConsumeMessagesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param queue_id: 指定的队列ID。
+        :type queue_id: str
+        :param consumer_group_id: 消费组的ID。
+        :type consumer_group_id: str
+        :param max_msgs: 获取可消费的消息的条数。  取值范围：1~10。  默认值：10
+        :type max_msgs: int
+        :param time_wait: 设定队列可消费的消息为0时的读取消息等待时间。  如果在等待时间内有新的消息，则立即返回消费结果，如果等待时间内没有新的消息，则到等待时间后返回消费结果。  取值范围：1~60s  默认值：3s  说明：不带该参数或者配置为空，都默认为3s。
+        :type time_wait: int
+        :param ack_wait: 提交确认消费的超时时间，客户端需要在该时间内提交消费确认，如果超过指定时间，没有确认消费，系统会报消息确认超时或handler无效，则默认为消费失败。  取值范围：15~300s  默认值：30s  说明：不带该参数或者配置为空，都默认为30s。
+        :type ack_wait: int
+        :param tag: 添加标签后可以按照Tag进行过滤，只消费匹配上标签的消息。  Tag的数量不超过3个。  每个Tag长度不超过64。
+        :type tag: str
+        :param tag_type: 多个消息标签的过滤类型。  取值范围： - and：必须所有标签匹配上，才能消费消息。 - or：只要有一条标签匹配上，就可以消费消息。  默认值为：or。
+        :type tag_type: str
+        """
         
         
 
@@ -86,7 +103,7 @@ class ConsumeMessagesRequest:
         指定的队列ID。
 
         :param queue_id: The queue_id of this ConsumeMessagesRequest.
-        :type: str
+        :type queue_id: str
         """
         self._queue_id = queue_id
 
@@ -108,7 +125,7 @@ class ConsumeMessagesRequest:
         消费组的ID。
 
         :param consumer_group_id: The consumer_group_id of this ConsumeMessagesRequest.
-        :type: str
+        :type consumer_group_id: str
         """
         self._consumer_group_id = consumer_group_id
 
@@ -130,7 +147,7 @@ class ConsumeMessagesRequest:
         获取可消费的消息的条数。  取值范围：1~10。  默认值：10
 
         :param max_msgs: The max_msgs of this ConsumeMessagesRequest.
-        :type: int
+        :type max_msgs: int
         """
         self._max_msgs = max_msgs
 
@@ -152,7 +169,7 @@ class ConsumeMessagesRequest:
         设定队列可消费的消息为0时的读取消息等待时间。  如果在等待时间内有新的消息，则立即返回消费结果，如果等待时间内没有新的消息，则到等待时间后返回消费结果。  取值范围：1~60s  默认值：3s  说明：不带该参数或者配置为空，都默认为3s。
 
         :param time_wait: The time_wait of this ConsumeMessagesRequest.
-        :type: int
+        :type time_wait: int
         """
         self._time_wait = time_wait
 
@@ -174,7 +191,7 @@ class ConsumeMessagesRequest:
         提交确认消费的超时时间，客户端需要在该时间内提交消费确认，如果超过指定时间，没有确认消费，系统会报消息确认超时或handler无效，则默认为消费失败。  取值范围：15~300s  默认值：30s  说明：不带该参数或者配置为空，都默认为30s。
 
         :param ack_wait: The ack_wait of this ConsumeMessagesRequest.
-        :type: int
+        :type ack_wait: int
         """
         self._ack_wait = ack_wait
 
@@ -196,7 +213,7 @@ class ConsumeMessagesRequest:
         添加标签后可以按照Tag进行过滤，只消费匹配上标签的消息。  Tag的数量不超过3个。  每个Tag长度不超过64。
 
         :param tag: The tag of this ConsumeMessagesRequest.
-        :type: str
+        :type tag: str
         """
         self._tag = tag
 
@@ -218,7 +235,7 @@ class ConsumeMessagesRequest:
         多个消息标签的过滤类型。  取值范围： - and：必须所有标签匹配上，才能消费消息。 - or：只要有一条标签匹配上，就可以消费消息。  默认值为：or。
 
         :param tag_type: The tag_type of this ConsumeMessagesRequest.
-        :type: str
+        :type tag_type: str
         """
         self._tag_type = tag_type
 

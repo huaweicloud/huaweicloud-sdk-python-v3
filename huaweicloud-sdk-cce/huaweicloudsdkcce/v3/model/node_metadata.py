@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NodeMetadata:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class NodeMetadata:
     }
 
     def __init__(self, name=None, uid=None, labels=None, annotations=None, creation_timestamp=None, update_timestamp=None):
-        """NodeMetadata - a model defined in huaweicloud sdk"""
+        """NodeMetadata
+
+        The model defined in huaweicloud sdk
+
+        :param name: 节点名称 &gt; 命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围1-56位，且不能以中划线(-)结尾。
+        :type name: str
+        :param uid: 节点ID，资源唯一标识，创建成功后自动生成，填写无效
+        :type uid: str
+        :param labels: CCE自有节点标签，非Kubernetes原生labels。  标签可用于选择对象并查找满足某些条件的对象集合，格式为key/value键值对。  示例：  &#x60;&#x60;&#x60; \&quot;labels\&quot;: {   \&quot;key\&quot; : \&quot;value\&quot; } &#x60;&#x60;&#x60;
+        :type labels: dict(str, str)
+        :param annotations: CCE自有节点注解，非Kubernetes原生annotations，格式为key/value键值对。   示例：  &#x60;&#x60;&#x60;  \&quot;annotations\&quot;: {   \&quot;key1\&quot; : \&quot;value1\&quot;,   \&quot;key2\&quot; : \&quot;value2\&quot; }  &#x60;&#x60;&#x60;   &gt; Annotations不用于标识和选择对象。Annotations中的元数据可以是small 或large，structured 或unstructured，并且可以包括标签不允许使用的字符。 
+        :type annotations: dict(str, str)
+        :param creation_timestamp: 创建时间，创建成功后自动生成，填写无效
+        :type creation_timestamp: str
+        :param update_timestamp: 更新时间，创建成功后自动生成，填写无效
+        :type update_timestamp: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class NodeMetadata:
         节点名称 > 命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围1-56位，且不能以中划线(-)结尾。
 
         :param name: The name of this NodeMetadata.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -105,7 +120,7 @@ class NodeMetadata:
         节点ID，资源唯一标识，创建成功后自动生成，填写无效
 
         :param uid: The uid of this NodeMetadata.
-        :type: str
+        :type uid: str
         """
         self._uid = uid
 
@@ -127,7 +142,7 @@ class NodeMetadata:
         CCE自有节点标签，非Kubernetes原生labels。  标签可用于选择对象并查找满足某些条件的对象集合，格式为key/value键值对。  示例：  ``` \"labels\": {   \"key\" : \"value\" } ```
 
         :param labels: The labels of this NodeMetadata.
-        :type: dict(str, str)
+        :type labels: dict(str, str)
         """
         self._labels = labels
 
@@ -149,7 +164,7 @@ class NodeMetadata:
         CCE自有节点注解，非Kubernetes原生annotations，格式为key/value键值对。   示例：  ```  \"annotations\": {   \"key1\" : \"value1\",   \"key2\" : \"value2\" }  ```   > Annotations不用于标识和选择对象。Annotations中的元数据可以是small 或large，structured 或unstructured，并且可以包括标签不允许使用的字符。 
 
         :param annotations: The annotations of this NodeMetadata.
-        :type: dict(str, str)
+        :type annotations: dict(str, str)
         """
         self._annotations = annotations
 
@@ -171,7 +186,7 @@ class NodeMetadata:
         创建时间，创建成功后自动生成，填写无效
 
         :param creation_timestamp: The creation_timestamp of this NodeMetadata.
-        :type: str
+        :type creation_timestamp: str
         """
         self._creation_timestamp = creation_timestamp
 
@@ -193,7 +208,7 @@ class NodeMetadata:
         更新时间，创建成功后自动生成，填写无效
 
         :param update_timestamp: The update_timestamp of this NodeMetadata.
-        :type: str
+        :type update_timestamp: str
         """
         self._update_timestamp = update_timestamp
 

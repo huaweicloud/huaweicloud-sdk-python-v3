@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListInstanceRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ListInstanceRequestBody:
     }
 
     def __init__(self, tags=None, tags_any=None, not_tags=None, not_tags_any=None, offset=None, limit=None, action=None, matches=None):
-        """ListInstanceRequestBody - a model defined in huaweicloud sdk"""
+        """ListInstanceRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param tags: 最多包含10个key，每个key最多包含10个value，结构体不能缺失。key不能为空或者空字符串。key不能重复，同一个key中value不能重复，不同key对应的资源之间为与的关系。
+        :type tags: list[:class:`huaweicloudsdksmn.v2.ResourceTags`]
+        :param tags_any: 最多包含10个key，每个key最多包含10个value，结构体不能缺失。key不能为空或者空字符串。key不能重复，同一个key中value不能重复，不同key对应的资源之间为或的关系。
+        :type tags_any: list[:class:`huaweicloudsdksmn.v2.ResourceTags`]
+        :param not_tags: 最多包含10个key，每个key最多包含10个value，结构体不能缺失。key不能为空或者空字符串。key不能重复，同一个key中value不能重复，不同key对应的资源之间为与非的关系。
+        :type not_tags: list[:class:`huaweicloudsdksmn.v2.ResourceTags`]
+        :param not_tags_any: 最多包含10个key，每个key最多包含10个value，结构体不能缺失。key不能为空或者空字符串。key不能重复，同一个key中value不能重复，不同key对应的资源之间为或非的关系。
+        :type not_tags_any: list[:class:`huaweicloudsdksmn.v2.ResourceTags`]
+        :param offset: 索引位置， 从offset指定的下一条数据开始查询。 查询第一页数据时，不需要传入此参数，查询后续页码数据时，将查询前一页数据时响应体中的值带入此参数。  action为count时无此参数。  action为filter时，默认为0，必须为数字，且不能为负数。
+        :type offset: str
+        :param limit: 查询记录数。  action为count时无此参数。  action为filter时，默认为1000。limit最多为1000，不能为负数，最小值为1。
+        :type limit: str
+        :param action: 操作标识（仅限于filter，count）：filter（过滤），count(查询总条数)。 为filter时表示分页查询，为count只需按照条件将总条数返回即可。
+        :type action: str
+        :param matches: 搜索字段。  key为要匹配的字段，当前只支持resource_name。  value为匹配的值，当前为精确匹配。
+        :type matches: list[:class:`huaweicloudsdksmn.v2.TagMatch`]
+        """
         
         
 
@@ -81,7 +100,7 @@ class ListInstanceRequestBody:
         最多包含10个key，每个key最多包含10个value，结构体不能缺失。key不能为空或者空字符串。key不能重复，同一个key中value不能重复，不同key对应的资源之间为与的关系。
 
         :return: The tags of this ListInstanceRequestBody.
-        :rtype: list[ResourceTags]
+        :rtype: list[:class:`huaweicloudsdksmn.v2.ResourceTags`]
         """
         return self._tags
 
@@ -92,7 +111,7 @@ class ListInstanceRequestBody:
         最多包含10个key，每个key最多包含10个value，结构体不能缺失。key不能为空或者空字符串。key不能重复，同一个key中value不能重复，不同key对应的资源之间为与的关系。
 
         :param tags: The tags of this ListInstanceRequestBody.
-        :type: list[ResourceTags]
+        :type tags: list[:class:`huaweicloudsdksmn.v2.ResourceTags`]
         """
         self._tags = tags
 
@@ -103,7 +122,7 @@ class ListInstanceRequestBody:
         最多包含10个key，每个key最多包含10个value，结构体不能缺失。key不能为空或者空字符串。key不能重复，同一个key中value不能重复，不同key对应的资源之间为或的关系。
 
         :return: The tags_any of this ListInstanceRequestBody.
-        :rtype: list[ResourceTags]
+        :rtype: list[:class:`huaweicloudsdksmn.v2.ResourceTags`]
         """
         return self._tags_any
 
@@ -114,7 +133,7 @@ class ListInstanceRequestBody:
         最多包含10个key，每个key最多包含10个value，结构体不能缺失。key不能为空或者空字符串。key不能重复，同一个key中value不能重复，不同key对应的资源之间为或的关系。
 
         :param tags_any: The tags_any of this ListInstanceRequestBody.
-        :type: list[ResourceTags]
+        :type tags_any: list[:class:`huaweicloudsdksmn.v2.ResourceTags`]
         """
         self._tags_any = tags_any
 
@@ -125,7 +144,7 @@ class ListInstanceRequestBody:
         最多包含10个key，每个key最多包含10个value，结构体不能缺失。key不能为空或者空字符串。key不能重复，同一个key中value不能重复，不同key对应的资源之间为与非的关系。
 
         :return: The not_tags of this ListInstanceRequestBody.
-        :rtype: list[ResourceTags]
+        :rtype: list[:class:`huaweicloudsdksmn.v2.ResourceTags`]
         """
         return self._not_tags
 
@@ -136,7 +155,7 @@ class ListInstanceRequestBody:
         最多包含10个key，每个key最多包含10个value，结构体不能缺失。key不能为空或者空字符串。key不能重复，同一个key中value不能重复，不同key对应的资源之间为与非的关系。
 
         :param not_tags: The not_tags of this ListInstanceRequestBody.
-        :type: list[ResourceTags]
+        :type not_tags: list[:class:`huaweicloudsdksmn.v2.ResourceTags`]
         """
         self._not_tags = not_tags
 
@@ -147,7 +166,7 @@ class ListInstanceRequestBody:
         最多包含10个key，每个key最多包含10个value，结构体不能缺失。key不能为空或者空字符串。key不能重复，同一个key中value不能重复，不同key对应的资源之间为或非的关系。
 
         :return: The not_tags_any of this ListInstanceRequestBody.
-        :rtype: list[ResourceTags]
+        :rtype: list[:class:`huaweicloudsdksmn.v2.ResourceTags`]
         """
         return self._not_tags_any
 
@@ -158,7 +177,7 @@ class ListInstanceRequestBody:
         最多包含10个key，每个key最多包含10个value，结构体不能缺失。key不能为空或者空字符串。key不能重复，同一个key中value不能重复，不同key对应的资源之间为或非的关系。
 
         :param not_tags_any: The not_tags_any of this ListInstanceRequestBody.
-        :type: list[ResourceTags]
+        :type not_tags_any: list[:class:`huaweicloudsdksmn.v2.ResourceTags`]
         """
         self._not_tags_any = not_tags_any
 
@@ -180,7 +199,7 @@ class ListInstanceRequestBody:
         索引位置， 从offset指定的下一条数据开始查询。 查询第一页数据时，不需要传入此参数，查询后续页码数据时，将查询前一页数据时响应体中的值带入此参数。  action为count时无此参数。  action为filter时，默认为0，必须为数字，且不能为负数。
 
         :param offset: The offset of this ListInstanceRequestBody.
-        :type: str
+        :type offset: str
         """
         self._offset = offset
 
@@ -202,7 +221,7 @@ class ListInstanceRequestBody:
         查询记录数。  action为count时无此参数。  action为filter时，默认为1000。limit最多为1000，不能为负数，最小值为1。
 
         :param limit: The limit of this ListInstanceRequestBody.
-        :type: str
+        :type limit: str
         """
         self._limit = limit
 
@@ -224,7 +243,7 @@ class ListInstanceRequestBody:
         操作标识（仅限于filter，count）：filter（过滤），count(查询总条数)。 为filter时表示分页查询，为count只需按照条件将总条数返回即可。
 
         :param action: The action of this ListInstanceRequestBody.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -235,7 +254,7 @@ class ListInstanceRequestBody:
         搜索字段。  key为要匹配的字段，当前只支持resource_name。  value为匹配的值，当前为精确匹配。
 
         :return: The matches of this ListInstanceRequestBody.
-        :rtype: list[TagMatch]
+        :rtype: list[:class:`huaweicloudsdksmn.v2.TagMatch`]
         """
         return self._matches
 
@@ -246,7 +265,7 @@ class ListInstanceRequestBody:
         搜索字段。  key为要匹配的字段，当前只支持resource_name。  value为匹配的值，当前为精确匹配。
 
         :param matches: The matches of this ListInstanceRequestBody.
-        :type: list[TagMatch]
+        :type matches: list[:class:`huaweicloudsdksmn.v2.TagMatch`]
         """
         self._matches = matches
 

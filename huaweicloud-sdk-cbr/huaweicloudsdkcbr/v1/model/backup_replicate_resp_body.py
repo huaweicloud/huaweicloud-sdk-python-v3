@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BackupReplicateRespBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class BackupReplicateRespBody:
     }
 
     def __init__(self, backup_id=None, destination_project_id=None, destination_region=None, destination_vault_id=None, project_id=None, provider_id=None, replication_record_id=None, source_region=None):
-        """BackupReplicateRespBody - a model defined in huaweicloud sdk"""
+        """BackupReplicateRespBody
+
+        The model defined in huaweicloud sdk
+
+        :param backup_id: 待复制的备份ID
+        :type backup_id: str
+        :param destination_project_id: 复制的目标项目ID
+        :type destination_project_id: str
+        :param destination_region: 复制的目标区域
+        :type destination_region: str
+        :param destination_vault_id: 复制的目标区域存储库ID
+        :type destination_vault_id: str
+        :param project_id: 执行复制的项目ID
+        :type project_id: str
+        :param provider_id: 资源类型id
+        :type provider_id: str
+        :param replication_record_id: 复制记录ID
+        :type replication_record_id: str
+        :param source_region: 复制的源区域
+        :type source_region: str
+        """
         
         
 
@@ -93,7 +112,7 @@ class BackupReplicateRespBody:
         待复制的备份ID
 
         :param backup_id: The backup_id of this BackupReplicateRespBody.
-        :type: str
+        :type backup_id: str
         """
         self._backup_id = backup_id
 
@@ -115,7 +134,7 @@ class BackupReplicateRespBody:
         复制的目标项目ID
 
         :param destination_project_id: The destination_project_id of this BackupReplicateRespBody.
-        :type: str
+        :type destination_project_id: str
         """
         self._destination_project_id = destination_project_id
 
@@ -137,7 +156,7 @@ class BackupReplicateRespBody:
         复制的目标区域
 
         :param destination_region: The destination_region of this BackupReplicateRespBody.
-        :type: str
+        :type destination_region: str
         """
         self._destination_region = destination_region
 
@@ -159,7 +178,7 @@ class BackupReplicateRespBody:
         复制的目标区域存储库ID
 
         :param destination_vault_id: The destination_vault_id of this BackupReplicateRespBody.
-        :type: str
+        :type destination_vault_id: str
         """
         self._destination_vault_id = destination_vault_id
 
@@ -181,7 +200,7 @@ class BackupReplicateRespBody:
         执行复制的项目ID
 
         :param project_id: The project_id of this BackupReplicateRespBody.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -203,7 +222,7 @@ class BackupReplicateRespBody:
         资源类型id
 
         :param provider_id: The provider_id of this BackupReplicateRespBody.
-        :type: str
+        :type provider_id: str
         """
         self._provider_id = provider_id
 
@@ -225,7 +244,7 @@ class BackupReplicateRespBody:
         复制记录ID
 
         :param replication_record_id: The replication_record_id of this BackupReplicateRespBody.
-        :type: str
+        :type replication_record_id: str
         """
         self._replication_record_id = replication_record_id
 
@@ -247,7 +266,7 @@ class BackupReplicateRespBody:
         复制的源区域
 
         :param source_region: The source_region of this BackupReplicateRespBody.
-        :type: str
+        :type source_region: str
         """
         self._source_region = source_region
 

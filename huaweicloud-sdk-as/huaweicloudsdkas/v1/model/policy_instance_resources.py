@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PolicyInstanceResources:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class PolicyInstanceResources:
     }
 
     def __init__(self, type=None, used=None, quota=None, max=None, min=None):
-        """PolicyInstanceResources - a model defined in huaweicloud sdk"""
+        """PolicyInstanceResources
+
+        The model defined in huaweicloud sdk
+
+        :param type: 查询配额的类型。
+        :type type: str
+        :param used: 已使用的配额数量。
+        :type used: int
+        :param quota: 配额总数量。
+        :type quota: int
+        :param max: 配额上限。
+        :type max: int
+        :param min: 配额下限。
+        :type min: int
+        """
         
         
 
@@ -78,7 +91,7 @@ class PolicyInstanceResources:
         查询配额的类型。
 
         :param type: The type of this PolicyInstanceResources.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -100,7 +113,7 @@ class PolicyInstanceResources:
         已使用的配额数量。
 
         :param used: The used of this PolicyInstanceResources.
-        :type: int
+        :type used: int
         """
         self._used = used
 
@@ -122,7 +135,7 @@ class PolicyInstanceResources:
         配额总数量。
 
         :param quota: The quota of this PolicyInstanceResources.
-        :type: int
+        :type quota: int
         """
         self._quota = quota
 
@@ -144,7 +157,7 @@ class PolicyInstanceResources:
         配额上限。
 
         :param max: The max of this PolicyInstanceResources.
-        :type: int
+        :type max: int
         """
         self._max = max
 
@@ -166,7 +179,7 @@ class PolicyInstanceResources:
         配额下限。
 
         :param min: The min of this PolicyInstanceResources.
-        :type: int
+        :type min: int
         """
         self._min = min
 

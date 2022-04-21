@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CheckVerifyCodesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CheckVerifyCodesResponse(SdkResponse):
     }
 
     def __init__(self, error_code=None, error_msg=None):
-        """CheckVerifyCodesResponse - a model defined in huaweicloud sdk"""
+        """CheckVerifyCodesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param error_code: 错误码
+        :type error_code: str
+        :param error_msg: 错误描述
+        :type error_msg: str
+        """
         
         super(CheckVerifyCodesResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class CheckVerifyCodesResponse(SdkResponse):
         错误码
 
         :param error_code: The error_code of this CheckVerifyCodesResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -85,7 +92,7 @@ class CheckVerifyCodesResponse(SdkResponse):
         错误描述
 
         :param error_msg: The error_msg of this CheckVerifyCodesResponse.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 

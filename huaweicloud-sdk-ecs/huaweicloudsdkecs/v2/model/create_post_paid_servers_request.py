@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreatePostPaidServersRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreatePostPaidServersRequest:
     }
 
     def __init__(self, body=None):
-        """CreatePostPaidServersRequest - a model defined in huaweicloud sdk"""
+        """CreatePostPaidServersRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreatePostPaidServersRequest
+        :type body: :class:`huaweicloudsdkecs.v2.CreatePostPaidServersRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreatePostPaidServersRequest:
 
 
         :return: The body of this CreatePostPaidServersRequest.
-        :rtype: CreatePostPaidServersRequestBody
+        :rtype: :class:`huaweicloudsdkecs.v2.CreatePostPaidServersRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreatePostPaidServersRequest:
 
 
         :param body: The body of this CreatePostPaidServersRequest.
-        :type: CreatePostPaidServersRequestBody
+        :type body: :class:`huaweicloudsdkecs.v2.CreatePostPaidServersRequestBody`
         """
         self._body = body
 

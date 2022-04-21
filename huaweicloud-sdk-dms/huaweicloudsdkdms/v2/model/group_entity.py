@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GroupEntity:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class GroupEntity:
     }
 
     def __init__(self, name=None):
-        """GroupEntity - a model defined in huaweicloud sdk"""
+        """GroupEntity
+
+        The model defined in huaweicloud sdk
+
+        :param name: 消费组的名称。  长度不超过32位的字符串，仅包含a~z，A~Z，0~9、下划线（_）和中划线（-）。
+        :type name: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class GroupEntity:
         消费组的名称。  长度不超过32位的字符串，仅包含a~z，A~Z，0~9、下划线（_）和中划线（-）。
 
         :param name: The name of this GroupEntity.
-        :type: str
+        :type name: str
         """
         self._name = name
 

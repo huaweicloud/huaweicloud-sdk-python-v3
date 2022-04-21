@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestRenamePartReqBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class RestRenamePartReqBody:
     }
 
     def __init__(self, participant_id=None, number=None, new_name=None):
-        """RestRenamePartReqBody - a model defined in huaweicloud sdk"""
+        """RestRenamePartReqBody
+
+        The model defined in huaweicloud sdk
+
+        :param participant_id: 与会者标识。 已入会的必须填写该字段。
+        :type participant_id: str
+        :param number: 与会者号码。
+        :type number: str
+        :param new_name: 新名字。
+        :type new_name: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class RestRenamePartReqBody:
         与会者标识。 已入会的必须填写该字段。
 
         :param participant_id: The participant_id of this RestRenamePartReqBody.
-        :type: str
+        :type participant_id: str
         """
         self._participant_id = participant_id
 
@@ -88,7 +97,7 @@ class RestRenamePartReqBody:
         与会者号码。
 
         :param number: The number of this RestRenamePartReqBody.
-        :type: str
+        :type number: str
         """
         self._number = number
 
@@ -110,7 +119,7 @@ class RestRenamePartReqBody:
         新名字。
 
         :param new_name: The new_name of this RestRenamePartReqBody.
-        :type: str
+        :type new_name: str
         """
         self._new_name = new_name
 

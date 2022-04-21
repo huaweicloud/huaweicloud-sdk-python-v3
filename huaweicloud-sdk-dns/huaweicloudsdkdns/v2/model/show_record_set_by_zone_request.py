@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowRecordSetByZoneRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class ShowRecordSetByZoneRequest:
     }
 
     def __init__(self, zone_id=None, marker=None, limit=None, offset=None, line_id=None, tags=None, status=None, type=None, name=None, id=None, sort_key=None, sort_dir=None, search_mode=None):
-        """ShowRecordSetByZoneRequest - a model defined in huaweicloud sdk"""
+        """ShowRecordSetByZoneRequest
+
+        The model defined in huaweicloud sdk
+
+        :param zone_id: 
+        :type zone_id: str
+        :param marker: 分页查询起始的资源ID，为空时为查询第一页。  默认值为空。
+        :type marker: str
+        :param limit: 每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
+        :type limit: int
+        :param offset: 分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
+        :type offset: int
+        :param line_id: 解析线路ID。
+        :type line_id: str
+        :param tags: 资源标签。  取值格式：key1,value1|key2,value2  多个标签之间用\&quot;|\&quot;分开，每个标签的键值用英文逗号\&quot;,\&quot;相隔。
+        :type tags: str
+        :param status: 待查询的Record Set的状态。  取值范围：ACTIVE、ERROR、DISABLE、FREEZE、PENDING_CREATE、PENDING_UPDATE、PENDING_DELETE
+        :type status: str
+        :param type: 待查询的Record Set的记录集类型。  取值范围：A、CNAME、MX、AAAA、TXT、SRV、NS、CAA
+        :type type: str
+        :param name: 待查询的Record Set的域名中包含此name。  搜索模式默认为模糊搜索。  默认值为空。
+        :type name: str
+        :param id: 待查询的Record Set的id包含此id。  搜索模式默认为模糊搜索。  默认值为空。
+        :type id: str
+        :param sort_key: 查询结果中Record Set列表的排序字段。  取值范围：  name：域名 type：记录集类型 默认值为空，表示不排序。
+        :type sort_key: str
+        :param sort_dir: 查询结果中Record Set列表的排序方式。  取值范围：  desc：降序排序 asc：升序排序 默认值为空，表示不排序。
+        :type sort_dir: str
+        :param search_mode: 查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索 默认值为like。
+        :type search_mode: str
+        """
         
         
 
@@ -115,7 +144,7 @@ class ShowRecordSetByZoneRequest:
 
 
         :param zone_id: The zone_id of this ShowRecordSetByZoneRequest.
-        :type: str
+        :type zone_id: str
         """
         self._zone_id = zone_id
 
@@ -137,7 +166,7 @@ class ShowRecordSetByZoneRequest:
         分页查询起始的资源ID，为空时为查询第一页。  默认值为空。
 
         :param marker: The marker of this ShowRecordSetByZoneRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -159,7 +188,7 @@ class ShowRecordSetByZoneRequest:
         每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
 
         :param limit: The limit of this ShowRecordSetByZoneRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -181,7 +210,7 @@ class ShowRecordSetByZoneRequest:
         分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
 
         :param offset: The offset of this ShowRecordSetByZoneRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -203,7 +232,7 @@ class ShowRecordSetByZoneRequest:
         解析线路ID。
 
         :param line_id: The line_id of this ShowRecordSetByZoneRequest.
-        :type: str
+        :type line_id: str
         """
         self._line_id = line_id
 
@@ -225,7 +254,7 @@ class ShowRecordSetByZoneRequest:
         资源标签。  取值格式：key1,value1|key2,value2  多个标签之间用\"|\"分开，每个标签的键值用英文逗号\",\"相隔。
 
         :param tags: The tags of this ShowRecordSetByZoneRequest.
-        :type: str
+        :type tags: str
         """
         self._tags = tags
 
@@ -247,7 +276,7 @@ class ShowRecordSetByZoneRequest:
         待查询的Record Set的状态。  取值范围：ACTIVE、ERROR、DISABLE、FREEZE、PENDING_CREATE、PENDING_UPDATE、PENDING_DELETE
 
         :param status: The status of this ShowRecordSetByZoneRequest.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -269,7 +298,7 @@ class ShowRecordSetByZoneRequest:
         待查询的Record Set的记录集类型。  取值范围：A、CNAME、MX、AAAA、TXT、SRV、NS、CAA
 
         :param type: The type of this ShowRecordSetByZoneRequest.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -291,7 +320,7 @@ class ShowRecordSetByZoneRequest:
         待查询的Record Set的域名中包含此name。  搜索模式默认为模糊搜索。  默认值为空。
 
         :param name: The name of this ShowRecordSetByZoneRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -313,7 +342,7 @@ class ShowRecordSetByZoneRequest:
         待查询的Record Set的id包含此id。  搜索模式默认为模糊搜索。  默认值为空。
 
         :param id: The id of this ShowRecordSetByZoneRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -335,7 +364,7 @@ class ShowRecordSetByZoneRequest:
         查询结果中Record Set列表的排序字段。  取值范围：  name：域名 type：记录集类型 默认值为空，表示不排序。
 
         :param sort_key: The sort_key of this ShowRecordSetByZoneRequest.
-        :type: str
+        :type sort_key: str
         """
         self._sort_key = sort_key
 
@@ -357,7 +386,7 @@ class ShowRecordSetByZoneRequest:
         查询结果中Record Set列表的排序方式。  取值范围：  desc：降序排序 asc：升序排序 默认值为空，表示不排序。
 
         :param sort_dir: The sort_dir of this ShowRecordSetByZoneRequest.
-        :type: str
+        :type sort_dir: str
         """
         self._sort_dir = sort_dir
 
@@ -379,7 +408,7 @@ class ShowRecordSetByZoneRequest:
         查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索 默认值为like。
 
         :param search_mode: The search_mode of this ShowRecordSetByZoneRequest.
-        :type: str
+        :type search_mode: str
         """
         self._search_mode = search_mode
 

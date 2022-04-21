@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AppComponentDao:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class AppComponentDao:
     }
 
     def __init__(self, task_id=None, app_id=None, app_name=None, comp_id=None, comp_name=None, domain_id=None, region=None, state=None):
-        """AppComponentDao - a model defined in huaweicloud sdk"""
+        """AppComponentDao
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 部署任务id
+        :type task_id: str
+        :param app_id: 应用id
+        :type app_id: str
+        :param app_name: 应用名称
+        :type app_name: str
+        :param comp_id: 组件id
+        :type comp_id: str
+        :param comp_name: 组件名称
+        :type comp_name: str
+        :param domain_id: 租户ID
+        :type domain_id: str
+        :param region: 局点信息
+        :type region: str
+        :param state: 组件是否生效，0表示初始化，1表示执行成功，已生效
+        :type state: str
+        """
         
         
 
@@ -93,7 +112,7 @@ class AppComponentDao:
         部署任务id
 
         :param task_id: The task_id of this AppComponentDao.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -115,7 +134,7 @@ class AppComponentDao:
         应用id
 
         :param app_id: The app_id of this AppComponentDao.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -137,7 +156,7 @@ class AppComponentDao:
         应用名称
 
         :param app_name: The app_name of this AppComponentDao.
-        :type: str
+        :type app_name: str
         """
         self._app_name = app_name
 
@@ -159,7 +178,7 @@ class AppComponentDao:
         组件id
 
         :param comp_id: The comp_id of this AppComponentDao.
-        :type: str
+        :type comp_id: str
         """
         self._comp_id = comp_id
 
@@ -181,7 +200,7 @@ class AppComponentDao:
         组件名称
 
         :param comp_name: The comp_name of this AppComponentDao.
-        :type: str
+        :type comp_name: str
         """
         self._comp_name = comp_name
 
@@ -203,7 +222,7 @@ class AppComponentDao:
         租户ID
 
         :param domain_id: The domain_id of this AppComponentDao.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -225,7 +244,7 @@ class AppComponentDao:
         局点信息
 
         :param region: The region of this AppComponentDao.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -247,7 +266,7 @@ class AppComponentDao:
         组件是否生效，0表示初始化，1表示执行成功，已生效
 
         :param state: The state of this AppComponentDao.
-        :type: str
+        :type state: str
         """
         self._state = state
 

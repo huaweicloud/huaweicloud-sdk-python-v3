@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListInstancesResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -74,7 +73,57 @@ class ListInstancesResult:
     }
 
     def __init__(self, id=None, name=None, status=None, port=None, mode=None, region=None, datastore=None, engine=None, created=None, updated=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, backup_strategy=None, pay_mode=None, maintenance_window=None, groups=None, enterprise_project_id=None, dedicated_resource_id=None, time_zone=None, actions=None, lb_ip_address=None):
-        """ListInstancesResult - a model defined in huaweicloud sdk"""
+        """ListInstancesResult
+
+        The model defined in huaweicloud sdk
+
+        :param id: 实例ID。
+        :type id: str
+        :param name: 实例名称。
+        :type name: str
+        :param status: 实例状态。 取值： - normal，表示实例正常。 - abnormal，表示实例异常。 - creating，表示实例创建中。 - frozen，表示实例被冻结。 - data_disk_full，表示实例磁盘已满。 - createfail，表示实例创建失败。 - enlargefail，表示实例扩容节点个数失败。
+        :type status: str
+        :param port: 数据库端口。
+        :type port: str
+        :param mode: 实例类型。与请求参数相同。
+        :type mode: str
+        :param region: 实例所在区域。
+        :type region: str
+        :param datastore: 
+        :type datastore: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesDatastoreResult`
+        :param engine: 存储引擎。取值为“rocksDB”。
+        :type engine: str
+        :param created: 实例创建时间。
+        :type created: str
+        :param updated: 实例操作最新变更的时间。
+        :type updated: str
+        :param db_user_name: 默认用户名。取值为“rwuser”。
+        :type db_user_name: str
+        :param vpc_id: 虚拟私有云ID。
+        :type vpc_id: str
+        :param subnet_id: 子网ID。
+        :type subnet_id: str
+        :param security_group_id: 安全组ID。
+        :type security_group_id: str
+        :param backup_strategy: 
+        :type backup_strategy: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesBackupStrategyResult`
+        :param pay_mode: 计费方式。 - 取值为“0”，表示按需计费。 - 取值为“1”，表示包年/包月计费。
+        :type pay_mode: str
+        :param maintenance_window: 系统可维护时间窗。
+        :type maintenance_window: str
+        :param groups: 组信息。
+        :type groups: list[:class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesGroupResult`]
+        :param enterprise_project_id: 企业项目ID。取值为“0”，表示为default企业项目。
+        :type enterprise_project_id: str
+        :param dedicated_resource_id: 专属资源ID，只有数据库实例属于专属资源池才会返回该参数。
+        :type dedicated_resource_id: str
+        :param time_zone: 时区。
+        :type time_zone: str
+        :param actions: 实例正在执行的动作。
+        :type actions: list[str]
+        :param lb_ip_address: 负载均衡ip，只有存在负载均衡ip才会返回该参数。
+        :type lb_ip_address: str
+        """
         
         
 
@@ -147,7 +196,7 @@ class ListInstancesResult:
         实例ID。
 
         :param id: The id of this ListInstancesResult.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -169,7 +218,7 @@ class ListInstancesResult:
         实例名称。
 
         :param name: The name of this ListInstancesResult.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -191,7 +240,7 @@ class ListInstancesResult:
         实例状态。 取值： - normal，表示实例正常。 - abnormal，表示实例异常。 - creating，表示实例创建中。 - frozen，表示实例被冻结。 - data_disk_full，表示实例磁盘已满。 - createfail，表示实例创建失败。 - enlargefail，表示实例扩容节点个数失败。
 
         :param status: The status of this ListInstancesResult.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -213,7 +262,7 @@ class ListInstancesResult:
         数据库端口。
 
         :param port: The port of this ListInstancesResult.
-        :type: str
+        :type port: str
         """
         self._port = port
 
@@ -235,7 +284,7 @@ class ListInstancesResult:
         实例类型。与请求参数相同。
 
         :param mode: The mode of this ListInstancesResult.
-        :type: str
+        :type mode: str
         """
         self._mode = mode
 
@@ -257,7 +306,7 @@ class ListInstancesResult:
         实例所在区域。
 
         :param region: The region of this ListInstancesResult.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -267,7 +316,7 @@ class ListInstancesResult:
 
 
         :return: The datastore of this ListInstancesResult.
-        :rtype: ListInstancesDatastoreResult
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesDatastoreResult`
         """
         return self._datastore
 
@@ -277,7 +326,7 @@ class ListInstancesResult:
 
 
         :param datastore: The datastore of this ListInstancesResult.
-        :type: ListInstancesDatastoreResult
+        :type datastore: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesDatastoreResult`
         """
         self._datastore = datastore
 
@@ -299,7 +348,7 @@ class ListInstancesResult:
         存储引擎。取值为“rocksDB”。
 
         :param engine: The engine of this ListInstancesResult.
-        :type: str
+        :type engine: str
         """
         self._engine = engine
 
@@ -321,7 +370,7 @@ class ListInstancesResult:
         实例创建时间。
 
         :param created: The created of this ListInstancesResult.
-        :type: str
+        :type created: str
         """
         self._created = created
 
@@ -343,7 +392,7 @@ class ListInstancesResult:
         实例操作最新变更的时间。
 
         :param updated: The updated of this ListInstancesResult.
-        :type: str
+        :type updated: str
         """
         self._updated = updated
 
@@ -365,7 +414,7 @@ class ListInstancesResult:
         默认用户名。取值为“rwuser”。
 
         :param db_user_name: The db_user_name of this ListInstancesResult.
-        :type: str
+        :type db_user_name: str
         """
         self._db_user_name = db_user_name
 
@@ -387,7 +436,7 @@ class ListInstancesResult:
         虚拟私有云ID。
 
         :param vpc_id: The vpc_id of this ListInstancesResult.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -409,7 +458,7 @@ class ListInstancesResult:
         子网ID。
 
         :param subnet_id: The subnet_id of this ListInstancesResult.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -431,7 +480,7 @@ class ListInstancesResult:
         安全组ID。
 
         :param security_group_id: The security_group_id of this ListInstancesResult.
-        :type: str
+        :type security_group_id: str
         """
         self._security_group_id = security_group_id
 
@@ -441,7 +490,7 @@ class ListInstancesResult:
 
 
         :return: The backup_strategy of this ListInstancesResult.
-        :rtype: ListInstancesBackupStrategyResult
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesBackupStrategyResult`
         """
         return self._backup_strategy
 
@@ -451,7 +500,7 @@ class ListInstancesResult:
 
 
         :param backup_strategy: The backup_strategy of this ListInstancesResult.
-        :type: ListInstancesBackupStrategyResult
+        :type backup_strategy: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesBackupStrategyResult`
         """
         self._backup_strategy = backup_strategy
 
@@ -473,7 +522,7 @@ class ListInstancesResult:
         计费方式。 - 取值为“0”，表示按需计费。 - 取值为“1”，表示包年/包月计费。
 
         :param pay_mode: The pay_mode of this ListInstancesResult.
-        :type: str
+        :type pay_mode: str
         """
         self._pay_mode = pay_mode
 
@@ -495,7 +544,7 @@ class ListInstancesResult:
         系统可维护时间窗。
 
         :param maintenance_window: The maintenance_window of this ListInstancesResult.
-        :type: str
+        :type maintenance_window: str
         """
         self._maintenance_window = maintenance_window
 
@@ -506,7 +555,7 @@ class ListInstancesResult:
         组信息。
 
         :return: The groups of this ListInstancesResult.
-        :rtype: list[ListInstancesGroupResult]
+        :rtype: list[:class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesGroupResult`]
         """
         return self._groups
 
@@ -517,7 +566,7 @@ class ListInstancesResult:
         组信息。
 
         :param groups: The groups of this ListInstancesResult.
-        :type: list[ListInstancesGroupResult]
+        :type groups: list[:class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesGroupResult`]
         """
         self._groups = groups
 
@@ -539,7 +588,7 @@ class ListInstancesResult:
         企业项目ID。取值为“0”，表示为default企业项目。
 
         :param enterprise_project_id: The enterprise_project_id of this ListInstancesResult.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -561,7 +610,7 @@ class ListInstancesResult:
         专属资源ID，只有数据库实例属于专属资源池才会返回该参数。
 
         :param dedicated_resource_id: The dedicated_resource_id of this ListInstancesResult.
-        :type: str
+        :type dedicated_resource_id: str
         """
         self._dedicated_resource_id = dedicated_resource_id
 
@@ -583,7 +632,7 @@ class ListInstancesResult:
         时区。
 
         :param time_zone: The time_zone of this ListInstancesResult.
-        :type: str
+        :type time_zone: str
         """
         self._time_zone = time_zone
 
@@ -605,7 +654,7 @@ class ListInstancesResult:
         实例正在执行的动作。
 
         :param actions: The actions of this ListInstancesResult.
-        :type: list[str]
+        :type actions: list[str]
         """
         self._actions = actions
 
@@ -627,7 +676,7 @@ class ListInstancesResult:
         负载均衡ip，只有存在负载均衡ip才会返回该参数。
 
         :param lb_ip_address: The lb_ip_address of this ListInstancesResult.
-        :type: str
+        :type lb_ip_address: str
         """
         self._lb_ip_address = lb_ip_address
 

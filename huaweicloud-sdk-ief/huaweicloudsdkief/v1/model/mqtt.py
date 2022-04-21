@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Mqtt:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class Mqtt:
     }
 
     def __init__(self, bind_addr=None, port=None, type=None):
-        """Mqtt - a model defined in huaweicloud sdk"""
+        """Mqtt
+
+        The model defined in huaweicloud sdk
+
+        :param bind_addr: MQTT监听地址，根据type取值确定。
+        :type bind_addr: str
+        :param port: 端口号。
+        :type port: int
+        :param type: 类型。 枚举值： - nic：网卡类型 - ip：IP类型
+        :type type: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class Mqtt:
         MQTT监听地址，根据type取值确定。
 
         :param bind_addr: The bind_addr of this Mqtt.
-        :type: str
+        :type bind_addr: str
         """
         self._bind_addr = bind_addr
 
@@ -87,7 +96,7 @@ class Mqtt:
         端口号。
 
         :param port: The port of this Mqtt.
-        :type: int
+        :type port: int
         """
         self._port = port
 
@@ -109,7 +118,7 @@ class Mqtt:
         类型。 枚举值： - nic：网卡类型 - ip：IP类型
 
         :param type: The type of this Mqtt.
-        :type: str
+        :type type: str
         """
         self._type = type
 

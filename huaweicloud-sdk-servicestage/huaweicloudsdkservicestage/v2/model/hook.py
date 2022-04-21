@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Hook:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class Hook:
     }
 
     def __init__(self, id=None, type=None, callback_url=None):
-        """Hook - a model defined in huaweicloud sdk"""
+        """Hook
+
+        The model defined in huaweicloud sdk
+
+        :param id: hook ID。
+        :type id: str
+        :param type: hook类型。
+        :type type: str
+        :param callback_url: 回滚URL。
+        :type callback_url: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class Hook:
         hook ID。
 
         :param id: The id of this Hook.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -87,7 +96,7 @@ class Hook:
         hook类型。
 
         :param type: The type of this Hook.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -109,7 +118,7 @@ class Hook:
         回滚URL。
 
         :param callback_url: The callback_url of this Hook.
-        :type: str
+        :type callback_url: str
         """
         self._callback_url = callback_url
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NodeEIPSpec:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class NodeEIPSpec:
     }
 
     def __init__(self, iptype=None, bandwidth=None):
-        """NodeEIPSpec - a model defined in huaweicloud sdk"""
+        """NodeEIPSpec
+
+        The model defined in huaweicloud sdk
+
+        :param iptype: 弹性IP类型，取值请参见申请EIP接口中publicip.type说明。 [链接请参见[申请EIP](https://support.huaweicloud.com/api-eip/eip_api_0001.html)](tag:hws) [链接请参见[申请EIP](https://support.huaweicloud.com/intl/zh-cn/api-eip/eip_api_0001.html)](tag:hws_hk)
+        :type iptype: str
+        :param bandwidth: 
+        :type bandwidth: :class:`huaweicloudsdkcce.v3.NodeBandwidth`
+        """
         
         
 
@@ -63,7 +70,7 @@ class NodeEIPSpec:
         弹性IP类型，取值请参见申请EIP接口中publicip.type说明。 [链接请参见[申请EIP](https://support.huaweicloud.com/api-eip/eip_api_0001.html)](tag:hws) [链接请参见[申请EIP](https://support.huaweicloud.com/intl/zh-cn/api-eip/eip_api_0001.html)](tag:hws_hk)
 
         :param iptype: The iptype of this NodeEIPSpec.
-        :type: str
+        :type iptype: str
         """
         self._iptype = iptype
 
@@ -73,7 +80,7 @@ class NodeEIPSpec:
 
 
         :return: The bandwidth of this NodeEIPSpec.
-        :rtype: NodeBandwidth
+        :rtype: :class:`huaweicloudsdkcce.v3.NodeBandwidth`
         """
         return self._bandwidth
 
@@ -83,7 +90,7 @@ class NodeEIPSpec:
 
 
         :param bandwidth: The bandwidth of this NodeEIPSpec.
-        :type: NodeBandwidth
+        :type bandwidth: :class:`huaweicloudsdkcce.v3.NodeBandwidth`
         """
         self._bandwidth = bandwidth
 

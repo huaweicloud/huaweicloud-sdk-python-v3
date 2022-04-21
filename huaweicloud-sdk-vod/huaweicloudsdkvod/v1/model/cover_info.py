@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CoverInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CoverInfo:
     }
 
     def __init__(self, cover_url=None):
-        """CoverInfo - a model defined in huaweicloud sdk"""
+        """CoverInfo
+
+        The model defined in huaweicloud sdk
+
+        :param cover_url: 封面文件的下载地址。
+        :type cover_url: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class CoverInfo:
         封面文件的下载地址。
 
         :param cover_url: The cover_url of this CoverInfo.
-        :type: str
+        :type cover_url: str
         """
         self._cover_url = cover_url
 

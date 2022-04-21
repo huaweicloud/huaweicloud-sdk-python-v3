@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchCreateServerTagsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchCreateServerTagsRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """BatchCreateServerTagsRequest - a model defined in huaweicloud sdk"""
+        """BatchCreateServerTagsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param server_id: 云服务器ID。
+        :type server_id: str
+        :param body: Body of the BatchCreateServerTagsRequest
+        :type body: :class:`huaweicloudsdkecs.v2.BatchCreateServerTagsRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class BatchCreateServerTagsRequest:
         云服务器ID。
 
         :param server_id: The server_id of this BatchCreateServerTagsRequest.
-        :type: str
+        :type server_id: str
         """
         self._server_id = server_id
 
@@ -72,7 +79,7 @@ class BatchCreateServerTagsRequest:
 
 
         :return: The body of this BatchCreateServerTagsRequest.
-        :rtype: BatchCreateServerTagsRequestBody
+        :rtype: :class:`huaweicloudsdkecs.v2.BatchCreateServerTagsRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class BatchCreateServerTagsRequest:
 
 
         :param body: The body of this BatchCreateServerTagsRequest.
-        :type: BatchCreateServerTagsRequestBody
+        :type body: :class:`huaweicloudsdkecs.v2.BatchCreateServerTagsRequestBody`
         """
         self._body = body
 

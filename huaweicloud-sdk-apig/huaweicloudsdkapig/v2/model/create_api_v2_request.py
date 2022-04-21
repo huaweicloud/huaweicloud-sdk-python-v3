@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateApiV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateApiV2Request:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreateApiV2Request - a model defined in huaweicloud sdk"""
+        """CreateApiV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param body: Body of the CreateApiV2Request
+        :type body: :class:`huaweicloudsdkapig.v2.ApiCreate`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateApiV2Request:
         实例ID
 
         :param instance_id: The instance_id of this CreateApiV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -72,7 +79,7 @@ class CreateApiV2Request:
 
 
         :return: The body of this CreateApiV2Request.
-        :rtype: ApiCreate
+        :rtype: :class:`huaweicloudsdkapig.v2.ApiCreate`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CreateApiV2Request:
 
 
         :param body: The body of this CreateApiV2Request.
-        :type: ApiCreate
+        :type body: :class:`huaweicloudsdkapig.v2.ApiCreate`
         """
         self._body = body
 

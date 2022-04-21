@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ServiceCommand:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ServiceCommand:
     }
 
     def __init__(self, command_name=None, paras=None, responses=None):
-        """ServiceCommand - a model defined in huaweicloud sdk"""
+        """ServiceCommand
+
+        The model defined in huaweicloud sdk
+
+        :param command_name: **参数说明**：设备命令名称。注：设备服务内不允许重复。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_?&#39;#().,&amp;%@!-等字符的组合。
+        :type command_name: str
+        :param paras: **参数说明**：设备命令的参数列表。
+        :type paras: list[:class:`huaweicloudsdkiotda.v5.ServiceCommandPara`]
+        :param responses: **参数说明**：设备命令的响应列表。
+        :type responses: list[:class:`huaweicloudsdkiotda.v5.ServiceCommandResponse`]
+        """
         
         
 
@@ -67,7 +76,7 @@ class ServiceCommand:
         **参数说明**：设备命令名称。注：设备服务内不允许重复。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
         :param command_name: The command_name of this ServiceCommand.
-        :type: str
+        :type command_name: str
         """
         self._command_name = command_name
 
@@ -78,7 +87,7 @@ class ServiceCommand:
         **参数说明**：设备命令的参数列表。
 
         :return: The paras of this ServiceCommand.
-        :rtype: list[ServiceCommandPara]
+        :rtype: list[:class:`huaweicloudsdkiotda.v5.ServiceCommandPara`]
         """
         return self._paras
 
@@ -89,7 +98,7 @@ class ServiceCommand:
         **参数说明**：设备命令的参数列表。
 
         :param paras: The paras of this ServiceCommand.
-        :type: list[ServiceCommandPara]
+        :type paras: list[:class:`huaweicloudsdkiotda.v5.ServiceCommandPara`]
         """
         self._paras = paras
 
@@ -100,7 +109,7 @@ class ServiceCommand:
         **参数说明**：设备命令的响应列表。
 
         :return: The responses of this ServiceCommand.
-        :rtype: list[ServiceCommandResponse]
+        :rtype: list[:class:`huaweicloudsdkiotda.v5.ServiceCommandResponse`]
         """
         return self._responses
 
@@ -111,7 +120,7 @@ class ServiceCommand:
         **参数说明**：设备命令的响应列表。
 
         :param responses: The responses of this ServiceCommand.
-        :type: list[ServiceCommandResponse]
+        :type responses: list[:class:`huaweicloudsdkiotda.v5.ServiceCommandResponse`]
         """
         self._responses = responses
 

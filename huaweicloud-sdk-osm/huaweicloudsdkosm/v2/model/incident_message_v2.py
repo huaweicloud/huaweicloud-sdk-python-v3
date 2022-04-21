@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IncidentMessageV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class IncidentMessageV2:
     }
 
     def __init__(self, type=None, replier=None, content=None, message_id=None, replier_name=None, create_time=None, is_first_message=None, accessory_list=None):
-        """IncidentMessageV2 - a model defined in huaweicloud sdk"""
+        """IncidentMessageV2
+
+        The model defined in huaweicloud sdk
+
+        :param type: 类型，0客户留言 1华为工程师留言
+        :type type: int
+        :param replier: 回复人ID
+        :type replier: str
+        :param content: 留言内容
+        :type content: str
+        :param message_id: 留言id
+        :type message_id: str
+        :param replier_name: 回复人名称
+        :type replier_name: str
+        :param create_time: 创建时间
+        :type create_time: datetime
+        :param is_first_message: 是否是第一条留言
+        :type is_first_message: int
+        :param accessory_list: 附件列表
+        :type accessory_list: list[:class:`huaweicloudsdkosm.v2.SimpleAccessoryV2`]
+        """
         
         
 
@@ -93,7 +112,7 @@ class IncidentMessageV2:
         类型，0客户留言 1华为工程师留言
 
         :param type: The type of this IncidentMessageV2.
-        :type: int
+        :type type: int
         """
         self._type = type
 
@@ -115,7 +134,7 @@ class IncidentMessageV2:
         回复人ID
 
         :param replier: The replier of this IncidentMessageV2.
-        :type: str
+        :type replier: str
         """
         self._replier = replier
 
@@ -137,7 +156,7 @@ class IncidentMessageV2:
         留言内容
 
         :param content: The content of this IncidentMessageV2.
-        :type: str
+        :type content: str
         """
         self._content = content
 
@@ -159,7 +178,7 @@ class IncidentMessageV2:
         留言id
 
         :param message_id: The message_id of this IncidentMessageV2.
-        :type: str
+        :type message_id: str
         """
         self._message_id = message_id
 
@@ -181,7 +200,7 @@ class IncidentMessageV2:
         回复人名称
 
         :param replier_name: The replier_name of this IncidentMessageV2.
-        :type: str
+        :type replier_name: str
         """
         self._replier_name = replier_name
 
@@ -203,7 +222,7 @@ class IncidentMessageV2:
         创建时间
 
         :param create_time: The create_time of this IncidentMessageV2.
-        :type: datetime
+        :type create_time: datetime
         """
         self._create_time = create_time
 
@@ -225,7 +244,7 @@ class IncidentMessageV2:
         是否是第一条留言
 
         :param is_first_message: The is_first_message of this IncidentMessageV2.
-        :type: int
+        :type is_first_message: int
         """
         self._is_first_message = is_first_message
 
@@ -236,7 +255,7 @@ class IncidentMessageV2:
         附件列表
 
         :return: The accessory_list of this IncidentMessageV2.
-        :rtype: list[SimpleAccessoryV2]
+        :rtype: list[:class:`huaweicloudsdkosm.v2.SimpleAccessoryV2`]
         """
         return self._accessory_list
 
@@ -247,7 +266,7 @@ class IncidentMessageV2:
         附件列表
 
         :param accessory_list: The accessory_list of this IncidentMessageV2.
-        :type: list[SimpleAccessoryV2]
+        :type accessory_list: list[:class:`huaweicloudsdkosm.v2.SimpleAccessoryV2`]
         """
         self._accessory_list = accessory_list
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SetGaussMySqlQuotasRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class SetGaussMySqlQuotasRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """SetGaussMySqlQuotasRequest - a model defined in huaweicloud sdk"""
+        """SetGaussMySqlQuotasRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言
+        :type x_language: str
+        :param body: Body of the SetGaussMySqlQuotasRequest
+        :type body: :class:`huaweicloudsdkgaussdb.v3.SetQuotasRequestBody`
+        """
         
         
 
@@ -63,7 +70,7 @@ class SetGaussMySqlQuotasRequest:
         语言
 
         :param x_language: The x_language of this SetGaussMySqlQuotasRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -73,7 +80,7 @@ class SetGaussMySqlQuotasRequest:
 
 
         :return: The body of this SetGaussMySqlQuotasRequest.
-        :rtype: SetQuotasRequestBody
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.SetQuotasRequestBody`
         """
         return self._body
 
@@ -83,7 +90,7 @@ class SetGaussMySqlQuotasRequest:
 
 
         :param body: The body of this SetGaussMySqlQuotasRequest.
-        :type: SetQuotasRequestBody
+        :type body: :class:`huaweicloudsdkgaussdb.v3.SetQuotasRequestBody`
         """
         self._body = body
 

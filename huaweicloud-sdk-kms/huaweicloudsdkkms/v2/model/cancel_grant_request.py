@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CancelGrantRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CancelGrantRequest:
     }
 
     def __init__(self, body=None):
-        """CancelGrantRequest - a model defined in huaweicloud sdk"""
+        """CancelGrantRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CancelGrantRequest
+        :type body: :class:`huaweicloudsdkkms.v2.RevokeGrantRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CancelGrantRequest:
 
 
         :return: The body of this CancelGrantRequest.
-        :rtype: RevokeGrantRequestBody
+        :rtype: :class:`huaweicloudsdkkms.v2.RevokeGrantRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CancelGrantRequest:
 
 
         :param body: The body of this CancelGrantRequest.
-        :type: RevokeGrantRequestBody
+        :type body: :class:`huaweicloudsdkkms.v2.RevokeGrantRequestBody`
         """
         self._body = body
 

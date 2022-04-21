@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RepositoryMember:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class RepositoryMember:
     }
 
     def __init__(self, description=None, domain_id=None, domain_name=None, email=None, enabled=None, name=None, role=None, user_id=None):
-        """RepositoryMember - a model defined in huaweicloud sdk"""
+        """RepositoryMember
+
+        The model defined in huaweicloud sdk
+
+        :param description: 仓库成员描述
+        :type description: str
+        :param domain_id: 租户id
+        :type domain_id: str
+        :param domain_name: 租户名
+        :type domain_name: str
+        :param email: 邮箱地址
+        :type email: str
+        :param enabled: 成员是否可用
+        :type enabled: str
+        :param name: 用户名
+        :type name: str
+        :param role: 仓库用户权限，取值范围：30-&gt;普通成员，40-&gt;管理员
+        :type role: int
+        :param user_id: 用户id
+        :type user_id: str
+        """
         
         
 
@@ -93,7 +112,7 @@ class RepositoryMember:
         仓库成员描述
 
         :param description: The description of this RepositoryMember.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -115,7 +134,7 @@ class RepositoryMember:
         租户id
 
         :param domain_id: The domain_id of this RepositoryMember.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -137,7 +156,7 @@ class RepositoryMember:
         租户名
 
         :param domain_name: The domain_name of this RepositoryMember.
-        :type: str
+        :type domain_name: str
         """
         self._domain_name = domain_name
 
@@ -159,7 +178,7 @@ class RepositoryMember:
         邮箱地址
 
         :param email: The email of this RepositoryMember.
-        :type: str
+        :type email: str
         """
         self._email = email
 
@@ -181,7 +200,7 @@ class RepositoryMember:
         成员是否可用
 
         :param enabled: The enabled of this RepositoryMember.
-        :type: str
+        :type enabled: str
         """
         self._enabled = enabled
 
@@ -203,7 +222,7 @@ class RepositoryMember:
         用户名
 
         :param name: The name of this RepositoryMember.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -225,7 +244,7 @@ class RepositoryMember:
         仓库用户权限，取值范围：30->普通成员，40->管理员
 
         :param role: The role of this RepositoryMember.
-        :type: int
+        :type role: int
         """
         self._role = role
 
@@ -247,7 +266,7 @@ class RepositoryMember:
         用户id
 
         :param user_id: The user_id of this RepositoryMember.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 

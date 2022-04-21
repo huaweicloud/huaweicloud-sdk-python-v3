@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchDeleteInstanceTopicResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchDeleteInstanceTopicResponse(SdkResponse):
     }
 
     def __init__(self, topics=None):
-        """BatchDeleteInstanceTopicResponse - a model defined in huaweicloud sdk"""
+        """BatchDeleteInstanceTopicResponse
+
+        The model defined in huaweicloud sdk
+
+        :param topics: Topic列表。
+        :type topics: list[:class:`huaweicloudsdkkafka.v2.BatchDeleteInstanceTopicRespTopics`]
+        """
         
         super(BatchDeleteInstanceTopicResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class BatchDeleteInstanceTopicResponse(SdkResponse):
         Topic列表。
 
         :return: The topics of this BatchDeleteInstanceTopicResponse.
-        :rtype: list[BatchDeleteInstanceTopicRespTopics]
+        :rtype: list[:class:`huaweicloudsdkkafka.v2.BatchDeleteInstanceTopicRespTopics`]
         """
         return self._topics
 
@@ -58,7 +63,7 @@ class BatchDeleteInstanceTopicResponse(SdkResponse):
         Topic列表。
 
         :param topics: The topics of this BatchDeleteInstanceTopicResponse.
-        :type: list[BatchDeleteInstanceTopicRespTopics]
+        :type topics: list[:class:`huaweicloudsdkkafka.v2.BatchDeleteInstanceTopicRespTopics`]
         """
         self._topics = topics
 

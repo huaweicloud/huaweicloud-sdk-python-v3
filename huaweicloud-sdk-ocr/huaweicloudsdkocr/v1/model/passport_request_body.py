@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PassportRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class PassportRequestBody:
     }
 
     def __init__(self, image=None, url=None, country_code=None):
-        """PassportRequestBody - a model defined in huaweicloud sdk"""
+        """PassportRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param image: 与url二选一  图像数据，base64编码，要求base64编码后大小不超过10MB。图片最小边不小于15px，最长边不超过4096px，支持JPEG、JPG、PNG、BMP、TIFF格式。  图片文件Base64编码字符串，点击[这里](https://support.huaweicloud.com/ocr_faq/ocr_01_0032.html)查看详细获取方式。   
+        :type image: str
+        :param url: 与image二选一  图片的URL路径，目前支持：  - 公网http/https url  - OBS提供的url，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权，详情参见[配置OBS访问权限](https://support.huaweicloud.com/api-ocr/ocr_03_0132.html)。  &gt; 说明：  - 接口响应时间依赖于图片的下载时间，如果图片下载时间过长，会返回接口调用失败。  - 请保证被检测图片所在的存储服务稳定可靠，推荐使用OBS服务存储图片数据。 
+        :type url: str
+        :param country_code: 输入值为护照颁发国的国家码，根据国家码选择对应的护照识别服务。  - 若输入中未选此字段，服务会根据自己识别判断的护照类型匹配相应的护照识别服务。  - 若选择值为GENERAL，则选择护照机器码识别。  - 若选择值为CHN，则选择中国护照全字段识别。 
+        :type country_code: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class PassportRequestBody:
         与url二选一  图像数据，base64编码，要求base64编码后大小不超过10MB。图片最小边不小于15px，最长边不超过4096px，支持JPEG、JPG、PNG、BMP、TIFF格式。  图片文件Base64编码字符串，点击[这里](https://support.huaweicloud.com/ocr_faq/ocr_01_0032.html)查看详细获取方式。   
 
         :param image: The image of this PassportRequestBody.
-        :type: str
+        :type image: str
         """
         self._image = image
 
@@ -90,7 +99,7 @@ class PassportRequestBody:
         与image二选一  图片的URL路径，目前支持：  - 公网http/https url  - OBS提供的url，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权，详情参见[配置OBS访问权限](https://support.huaweicloud.com/api-ocr/ocr_03_0132.html)。  > 说明：  - 接口响应时间依赖于图片的下载时间，如果图片下载时间过长，会返回接口调用失败。  - 请保证被检测图片所在的存储服务稳定可靠，推荐使用OBS服务存储图片数据。 
 
         :param url: The url of this PassportRequestBody.
-        :type: str
+        :type url: str
         """
         self._url = url
 
@@ -112,7 +121,7 @@ class PassportRequestBody:
         输入值为护照颁发国的国家码，根据国家码选择对应的护照识别服务。  - 若输入中未选此字段，服务会根据自己识别判断的护照类型匹配相应的护照识别服务。  - 若选择值为GENERAL，则选择护照机器码识别。  - 若选择值为CHN，则选择中国护照全字段识别。 
 
         :param country_code: The country_code of this PassportRequestBody.
-        :type: str
+        :type country_code: str
         """
         self._country_code = country_code
 

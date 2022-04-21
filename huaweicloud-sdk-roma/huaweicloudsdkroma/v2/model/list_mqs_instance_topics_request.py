@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListMqsInstanceTopicsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListMqsInstanceTopicsRequest:
     }
 
     def __init__(self, instance_id=None, app_name=None, name=None, access_policy=None, limit=None, offset=None):
-        """ListMqsInstanceTopicsRequest - a model defined in huaweicloud sdk"""
+        """ListMqsInstanceTopicsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param app_name: 应用名称。
+        :type app_name: str
+        :param name: Topic名称。
+        :type name: str
+        :param access_policy: 权限类型。 - all：发布+订阅 - pub：发布 - sub：订阅
+        :type access_policy: str
+        :param limit: 分页查询大小。默认查询所有的topic。
+        :type limit: str
+        :param offset: 分页查询的偏移量。默认值是0。
+        :type offset: str
+        """
         
         
 
@@ -82,7 +97,7 @@ class ListMqsInstanceTopicsRequest:
         实例ID。
 
         :param instance_id: The instance_id of this ListMqsInstanceTopicsRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -104,7 +119,7 @@ class ListMqsInstanceTopicsRequest:
         应用名称。
 
         :param app_name: The app_name of this ListMqsInstanceTopicsRequest.
-        :type: str
+        :type app_name: str
         """
         self._app_name = app_name
 
@@ -126,7 +141,7 @@ class ListMqsInstanceTopicsRequest:
         Topic名称。
 
         :param name: The name of this ListMqsInstanceTopicsRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -148,7 +163,7 @@ class ListMqsInstanceTopicsRequest:
         权限类型。 - all：发布+订阅 - pub：发布 - sub：订阅
 
         :param access_policy: The access_policy of this ListMqsInstanceTopicsRequest.
-        :type: str
+        :type access_policy: str
         """
         self._access_policy = access_policy
 
@@ -170,7 +185,7 @@ class ListMqsInstanceTopicsRequest:
         分页查询大小。默认查询所有的topic。
 
         :param limit: The limit of this ListMqsInstanceTopicsRequest.
-        :type: str
+        :type limit: str
         """
         self._limit = limit
 
@@ -192,7 +207,7 @@ class ListMqsInstanceTopicsRequest:
         分页查询的偏移量。默认值是0。
 
         :param offset: The offset of this ListMqsInstanceTopicsRequest.
-        :type: str
+        :type offset: str
         """
         self._offset = offset
 

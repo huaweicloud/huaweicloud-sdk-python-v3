@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowRuleResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -58,7 +57,41 @@ class ShowRuleResponse(SdkResponse):
     }
 
     def __init__(self, permissions=None, rule_id=None, name=None, app_id=None, app_name=None, description=None, status=None, data_parsing_status=None, sql_field=None, sql_where=None, rule_express=None, created_user=None, last_updated_user=None, created_datetime=None, last_updated_datetime=None):
-        """ShowRuleResponse - a model defined in huaweicloud sdk"""
+        """ShowRuleResponse
+
+        The model defined in huaweicloud sdk
+
+        :param permissions: 权限
+        :type permissions: list[str]
+        :param rule_id: 规则ID
+        :type rule_id: int
+        :param name: 规则名称，支持英文大小写，数字，下划线和中划线,长度1-64
+        :type name: str
+        :param app_id: 应用ID
+        :type app_id: str
+        :param app_name: 应用名称
+        :type app_name: str
+        :param description: 描述
+        :type description: str
+        :param status: 规则状态 0-启用 1-停用
+        :type status: int
+        :param data_parsing_status: 数据解析状态，ENABLE时data_parsing必填 0-启用 1-停用
+        :type data_parsing_status: int
+        :param sql_field: SQL查询字段
+        :type sql_field: str
+        :param sql_where: SQL查询条件
+        :type sql_where: str
+        :param rule_express: 完整的规则表达式
+        :type rule_express: str
+        :param created_user: 
+        :type created_user: :class:`huaweicloudsdkroma.v2.CreatedUser`
+        :param last_updated_user: 
+        :type last_updated_user: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
+        :param created_datetime: 创建时间，timestamp(ms)，使用UTC时区
+        :type created_datetime: int
+        :param last_updated_datetime: 最后修改时间，timestamp(ms)，使用UTC时区
+        :type last_updated_datetime: int
+        """
         
         super(ShowRuleResponse, self).__init__()
 
@@ -128,7 +161,7 @@ class ShowRuleResponse(SdkResponse):
         权限
 
         :param permissions: The permissions of this ShowRuleResponse.
-        :type: list[str]
+        :type permissions: list[str]
         """
         self._permissions = permissions
 
@@ -150,7 +183,7 @@ class ShowRuleResponse(SdkResponse):
         规则ID
 
         :param rule_id: The rule_id of this ShowRuleResponse.
-        :type: int
+        :type rule_id: int
         """
         self._rule_id = rule_id
 
@@ -172,7 +205,7 @@ class ShowRuleResponse(SdkResponse):
         规则名称，支持英文大小写，数字，下划线和中划线,长度1-64
 
         :param name: The name of this ShowRuleResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -194,7 +227,7 @@ class ShowRuleResponse(SdkResponse):
         应用ID
 
         :param app_id: The app_id of this ShowRuleResponse.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -216,7 +249,7 @@ class ShowRuleResponse(SdkResponse):
         应用名称
 
         :param app_name: The app_name of this ShowRuleResponse.
-        :type: str
+        :type app_name: str
         """
         self._app_name = app_name
 
@@ -238,7 +271,7 @@ class ShowRuleResponse(SdkResponse):
         描述
 
         :param description: The description of this ShowRuleResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -260,7 +293,7 @@ class ShowRuleResponse(SdkResponse):
         规则状态 0-启用 1-停用
 
         :param status: The status of this ShowRuleResponse.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -282,7 +315,7 @@ class ShowRuleResponse(SdkResponse):
         数据解析状态，ENABLE时data_parsing必填 0-启用 1-停用
 
         :param data_parsing_status: The data_parsing_status of this ShowRuleResponse.
-        :type: int
+        :type data_parsing_status: int
         """
         self._data_parsing_status = data_parsing_status
 
@@ -304,7 +337,7 @@ class ShowRuleResponse(SdkResponse):
         SQL查询字段
 
         :param sql_field: The sql_field of this ShowRuleResponse.
-        :type: str
+        :type sql_field: str
         """
         self._sql_field = sql_field
 
@@ -326,7 +359,7 @@ class ShowRuleResponse(SdkResponse):
         SQL查询条件
 
         :param sql_where: The sql_where of this ShowRuleResponse.
-        :type: str
+        :type sql_where: str
         """
         self._sql_where = sql_where
 
@@ -348,7 +381,7 @@ class ShowRuleResponse(SdkResponse):
         完整的规则表达式
 
         :param rule_express: The rule_express of this ShowRuleResponse.
-        :type: str
+        :type rule_express: str
         """
         self._rule_express = rule_express
 
@@ -358,7 +391,7 @@ class ShowRuleResponse(SdkResponse):
 
 
         :return: The created_user of this ShowRuleResponse.
-        :rtype: CreatedUser
+        :rtype: :class:`huaweicloudsdkroma.v2.CreatedUser`
         """
         return self._created_user
 
@@ -368,7 +401,7 @@ class ShowRuleResponse(SdkResponse):
 
 
         :param created_user: The created_user of this ShowRuleResponse.
-        :type: CreatedUser
+        :type created_user: :class:`huaweicloudsdkroma.v2.CreatedUser`
         """
         self._created_user = created_user
 
@@ -378,7 +411,7 @@ class ShowRuleResponse(SdkResponse):
 
 
         :return: The last_updated_user of this ShowRuleResponse.
-        :rtype: LastUpdatedUser
+        :rtype: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
         """
         return self._last_updated_user
 
@@ -388,7 +421,7 @@ class ShowRuleResponse(SdkResponse):
 
 
         :param last_updated_user: The last_updated_user of this ShowRuleResponse.
-        :type: LastUpdatedUser
+        :type last_updated_user: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
         """
         self._last_updated_user = last_updated_user
 
@@ -410,7 +443,7 @@ class ShowRuleResponse(SdkResponse):
         创建时间，timestamp(ms)，使用UTC时区
 
         :param created_datetime: The created_datetime of this ShowRuleResponse.
-        :type: int
+        :type created_datetime: int
         """
         self._created_datetime = created_datetime
 
@@ -432,7 +465,7 @@ class ShowRuleResponse(SdkResponse):
         最后修改时间，timestamp(ms)，使用UTC时区
 
         :param last_updated_datetime: The last_updated_datetime of this ShowRuleResponse.
-        :type: int
+        :type last_updated_datetime: int
         """
         self._last_updated_datetime = last_updated_datetime
 

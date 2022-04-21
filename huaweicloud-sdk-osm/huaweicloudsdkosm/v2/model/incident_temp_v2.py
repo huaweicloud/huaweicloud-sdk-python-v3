@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IncidentTempV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class IncidentTempV2:
     }
 
     def __init__(self, incident_template_id=None, incident_template_name=None, incident_template_content=None):
-        """IncidentTempV2 - a model defined in huaweicloud sdk"""
+        """IncidentTempV2
+
+        The model defined in huaweicloud sdk
+
+        :param incident_template_id: 模板id
+        :type incident_template_id: str
+        :param incident_template_name: 模板名称
+        :type incident_template_name: str
+        :param incident_template_content: 模板内容
+        :type incident_template_content: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class IncidentTempV2:
         模板id
 
         :param incident_template_id: The incident_template_id of this IncidentTempV2.
-        :type: str
+        :type incident_template_id: str
         """
         self._incident_template_id = incident_template_id
 
@@ -90,7 +99,7 @@ class IncidentTempV2:
         模板名称
 
         :param incident_template_name: The incident_template_name of this IncidentTempV2.
-        :type: str
+        :type incident_template_name: str
         """
         self._incident_template_name = incident_template_name
 
@@ -112,7 +121,7 @@ class IncidentTempV2:
         模板内容
 
         :param incident_template_content: The incident_template_content of this IncidentTempV2.
-        :type: str
+        :type incident_template_content: str
         """
         self._incident_template_content = incident_template_content
 

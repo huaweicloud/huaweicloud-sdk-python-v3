@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class RunDetail:
     }
 
     def __init__(self, detail_id=None, status=None, sql_job=None):
-        """RunDetail - a model defined in huaweicloud sdk"""
+        """RunDetail
+
+        The model defined in huaweicloud sdk
+
+        :param detail_id: 作业运行详情ID。
+        :type detail_id: str
+        :param status: 此作业的当前状态，包含提交（LAUNCHING）、运行中（RUNNING）、完成（FINISHED）、失败（FAILED）、取消（CANCELLED）。
+        :type status: str
+        :param sql_job: 
+        :type sql_job: :class:`huaweicloudsdkiotanalytics.v1.SqlJobRunDetail`
+        """
         
         
 
@@ -67,7 +76,7 @@ class RunDetail:
         作业运行详情ID。
 
         :param detail_id: The detail_id of this RunDetail.
-        :type: str
+        :type detail_id: str
         """
         self._detail_id = detail_id
 
@@ -89,7 +98,7 @@ class RunDetail:
         此作业的当前状态，包含提交（LAUNCHING）、运行中（RUNNING）、完成（FINISHED）、失败（FAILED）、取消（CANCELLED）。
 
         :param status: The status of this RunDetail.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -99,7 +108,7 @@ class RunDetail:
 
 
         :return: The sql_job of this RunDetail.
-        :rtype: SqlJobRunDetail
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.SqlJobRunDetail`
         """
         return self._sql_job
 
@@ -109,7 +118,7 @@ class RunDetail:
 
 
         :param sql_job: The sql_job of this RunDetail.
-        :type: SqlJobRunDetail
+        :type sql_job: :class:`huaweicloudsdkiotanalytics.v1.SqlJobRunDetail`
         """
         self._sql_job = sql_job
 

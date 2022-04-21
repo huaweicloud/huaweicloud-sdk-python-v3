@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateBatchClustersTagsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateBatchClustersTagsRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """UpdateBatchClustersTagsRequest - a model defined in huaweicloud sdk"""
+        """UpdateBatchClustersTagsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 指定待添加的集群ID。
+        :type cluster_id: str
+        :param body: Body of the UpdateBatchClustersTagsRequest
+        :type body: :class:`huaweicloudsdkcss.v1.BatchAddOrDeleteTagOnClusterReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateBatchClustersTagsRequest:
         指定待添加的集群ID。
 
         :param cluster_id: The cluster_id of this UpdateBatchClustersTagsRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -72,7 +79,7 @@ class UpdateBatchClustersTagsRequest:
 
 
         :return: The body of this UpdateBatchClustersTagsRequest.
-        :rtype: BatchAddOrDeleteTagOnClusterReq
+        :rtype: :class:`huaweicloudsdkcss.v1.BatchAddOrDeleteTagOnClusterReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateBatchClustersTagsRequest:
 
 
         :param body: The body of this UpdateBatchClustersTagsRequest.
-        :type: BatchAddOrDeleteTagOnClusterReq
+        :type body: :class:`huaweicloudsdkcss.v1.BatchAddOrDeleteTagOnClusterReq`
         """
         self._body = body
 

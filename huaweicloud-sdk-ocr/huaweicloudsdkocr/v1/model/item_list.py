@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ItemList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class ItemList:
     }
 
     def __init__(self, name=None, specification=None, unit=None, quantity=None, unit_price=None, license_plate_number=None, amount=None, tax_rate=None, tax=None, end_date=None, start_date=None, vehicle_type=None):
-        """ItemList - a model defined in huaweicloud sdk"""
+        """ItemList
+
+        The model defined in huaweicloud sdk
+
+        :param name: 货物或应税劳务、服务名称。 
+        :type name: str
+        :param specification: 规格型号。 
+        :type specification: str
+        :param unit: 单位。 
+        :type unit: str
+        :param quantity: 数量。 
+        :type quantity: str
+        :param unit_price: 单价。 
+        :type unit_price: str
+        :param license_plate_number: 车牌号码。 当“advanced_mode”设置为“true”时才返回。 
+        :type license_plate_number: str
+        :param amount: 金额。 
+        :type amount: str
+        :param tax_rate: 税率。 
+        :type tax_rate: str
+        :param tax: 税额。 
+        :type tax: str
+        :param end_date: 通行日期止。 当“advanced_mode”设置为“true”时才返回。 
+        :type end_date: str
+        :param start_date: 通行日期起。 当“advanced_mode”设置为“true”时才返回。 
+        :type start_date: str
+        :param vehicle_type: 车辆类型。 当“advanced_mode”设置为“true”时才返回。 
+        :type vehicle_type: str
+        """
         
         
 
@@ -113,7 +140,7 @@ class ItemList:
         货物或应税劳务、服务名称。 
 
         :param name: The name of this ItemList.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -135,7 +162,7 @@ class ItemList:
         规格型号。 
 
         :param specification: The specification of this ItemList.
-        :type: str
+        :type specification: str
         """
         self._specification = specification
 
@@ -157,7 +184,7 @@ class ItemList:
         单位。 
 
         :param unit: The unit of this ItemList.
-        :type: str
+        :type unit: str
         """
         self._unit = unit
 
@@ -179,7 +206,7 @@ class ItemList:
         数量。 
 
         :param quantity: The quantity of this ItemList.
-        :type: str
+        :type quantity: str
         """
         self._quantity = quantity
 
@@ -201,7 +228,7 @@ class ItemList:
         单价。 
 
         :param unit_price: The unit_price of this ItemList.
-        :type: str
+        :type unit_price: str
         """
         self._unit_price = unit_price
 
@@ -223,7 +250,7 @@ class ItemList:
         车牌号码。 当“advanced_mode”设置为“true”时才返回。 
 
         :param license_plate_number: The license_plate_number of this ItemList.
-        :type: str
+        :type license_plate_number: str
         """
         self._license_plate_number = license_plate_number
 
@@ -245,7 +272,7 @@ class ItemList:
         金额。 
 
         :param amount: The amount of this ItemList.
-        :type: str
+        :type amount: str
         """
         self._amount = amount
 
@@ -267,7 +294,7 @@ class ItemList:
         税率。 
 
         :param tax_rate: The tax_rate of this ItemList.
-        :type: str
+        :type tax_rate: str
         """
         self._tax_rate = tax_rate
 
@@ -289,7 +316,7 @@ class ItemList:
         税额。 
 
         :param tax: The tax of this ItemList.
-        :type: str
+        :type tax: str
         """
         self._tax = tax
 
@@ -311,7 +338,7 @@ class ItemList:
         通行日期止。 当“advanced_mode”设置为“true”时才返回。 
 
         :param end_date: The end_date of this ItemList.
-        :type: str
+        :type end_date: str
         """
         self._end_date = end_date
 
@@ -333,7 +360,7 @@ class ItemList:
         通行日期起。 当“advanced_mode”设置为“true”时才返回。 
 
         :param start_date: The start_date of this ItemList.
-        :type: str
+        :type start_date: str
         """
         self._start_date = start_date
 
@@ -355,7 +382,7 @@ class ItemList:
         车辆类型。 当“advanced_mode”设置为“true”时才返回。 
 
         :param vehicle_type: The vehicle_type of this ItemList.
-        :type: str
+        :type vehicle_type: str
         """
         self._vehicle_type = vehicle_type
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UserStatusDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UserStatusDTO:
     }
 
     def __init__(self, number=None, reg_status=None, call_status=None):
-        """UserStatusDTO - a model defined in huaweicloud sdk"""
+        """UserStatusDTO
+
+        The model defined in huaweicloud sdk
+
+        :param number: 终端号码
+        :type number: str
+        :param reg_status: 注册状态。 * 1是未注册上 * 0是已注册 
+        :type reg_status: str
+        :param call_status: 呼叫状态。 * 0:未上线 * 1:空闲中 * 2:使用中 * 3:非会议硬终端统一的无效值 
+        :type call_status: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class UserStatusDTO:
         终端号码
 
         :param number: The number of this UserStatusDTO.
-        :type: str
+        :type number: str
         """
         self._number = number
 
@@ -90,7 +99,7 @@ class UserStatusDTO:
         注册状态。 * 1是未注册上 * 0是已注册 
 
         :param reg_status: The reg_status of this UserStatusDTO.
-        :type: str
+        :type reg_status: str
         """
         self._reg_status = reg_status
 
@@ -112,7 +121,7 @@ class UserStatusDTO:
         呼叫状态。 * 0:未上线 * 1:空闲中 * 2:使用中 * 3:非会议硬终端统一的无效值 
 
         :param call_status: The call_status of this UserStatusDTO.
-        :type: str
+        :type call_status: str
         """
         self._call_status = call_status
 

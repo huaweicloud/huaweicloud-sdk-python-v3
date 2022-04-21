@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DynamicConfigInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class DynamicConfigInfo:
     }
 
     def __init__(self, name=None, value=None, limits=None, type=None, description=None):
-        """DynamicConfigInfo - a model defined in huaweicloud sdk"""
+        """DynamicConfigInfo
+
+        The model defined in huaweicloud sdk
+
+        :param name: 执行部署任务时传递的参数名称
+        :type name: str
+        :param value: 执行部署任务时传递的参数值
+        :type value: str
+        :param limits: 参数值为枚举类型时，返回可选值列表
+        :type limits: list[:class:`huaweicloudsdkclouddeploy.v2.ParamTypeLimits`]
+        :param type: 类型，如果填写动态参数，则类型必选
+        :type type: str
+        :param description: 描述
+        :type description: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class DynamicConfigInfo:
         执行部署任务时传递的参数名称
 
         :param name: The name of this DynamicConfigInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -100,7 +113,7 @@ class DynamicConfigInfo:
         执行部署任务时传递的参数值
 
         :param value: The value of this DynamicConfigInfo.
-        :type: str
+        :type value: str
         """
         self._value = value
 
@@ -111,7 +124,7 @@ class DynamicConfigInfo:
         参数值为枚举类型时，返回可选值列表
 
         :return: The limits of this DynamicConfigInfo.
-        :rtype: list[ParamTypeLimits]
+        :rtype: list[:class:`huaweicloudsdkclouddeploy.v2.ParamTypeLimits`]
         """
         return self._limits
 
@@ -122,7 +135,7 @@ class DynamicConfigInfo:
         参数值为枚举类型时，返回可选值列表
 
         :param limits: The limits of this DynamicConfigInfo.
-        :type: list[ParamTypeLimits]
+        :type limits: list[:class:`huaweicloudsdkclouddeploy.v2.ParamTypeLimits`]
         """
         self._limits = limits
 
@@ -144,7 +157,7 @@ class DynamicConfigInfo:
         类型，如果填写动态参数，则类型必选
 
         :param type: The type of this DynamicConfigInfo.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -166,7 +179,7 @@ class DynamicConfigInfo:
         描述
 
         :param description: The description of this DynamicConfigInfo.
-        :type: str
+        :type description: str
         """
         self._description = description
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PortItem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class PortItem:
     }
 
     def __init__(self, port=None, service=None, protocol=None, status=None):
-        """PortItem - a model defined in huaweicloud sdk"""
+        """PortItem
+
+        The model defined in huaweicloud sdk
+
+        :param port: 端口号
+        :type port: int
+        :param service: 服务
+        :type service: str
+        :param protocol: 端口协议:   * TCP   * UDP 
+        :type protocol: str
+        :param status: 端口状态:   * filtered - 过滤的   * open - 开放 
+        :type status: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class PortItem:
         端口号
 
         :param port: The port of this PortItem.
-        :type: int
+        :type port: int
         """
         self._port = port
 
@@ -95,7 +106,7 @@ class PortItem:
         服务
 
         :param service: The service of this PortItem.
-        :type: str
+        :type service: str
         """
         self._service = service
 
@@ -117,7 +128,7 @@ class PortItem:
         端口协议:   * TCP   * UDP 
 
         :param protocol: The protocol of this PortItem.
-        :type: str
+        :type protocol: str
         """
         self._protocol = protocol
 
@@ -139,7 +150,7 @@ class PortItem:
         端口状态:   * filtered - 过滤的   * open - 开放 
 
         :param status: The status of this PortItem.
-        :type: str
+        :type status: str
         """
         self._status = status
 

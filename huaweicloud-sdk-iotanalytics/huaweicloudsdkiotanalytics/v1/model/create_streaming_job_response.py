@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateStreamingJobResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateStreamingJobResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, check_info=None):
-        """CreateStreamingJobResponse - a model defined in huaweicloud sdk"""
+        """CreateStreamingJobResponse
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 作业ID
+        :type job_id: str
+        :param check_info: 作业错误详情
+        :type check_info: dict(str, object)
+        """
         
         super(CreateStreamingJobResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class CreateStreamingJobResponse(SdkResponse):
         作业ID
 
         :param job_id: The job_id of this CreateStreamingJobResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -85,7 +92,7 @@ class CreateStreamingJobResponse(SdkResponse):
         作业错误详情
 
         :param check_info: The check_info of this CreateStreamingJobResponse.
-        :type: dict(str, object)
+        :type check_info: dict(str, object)
         """
         self._check_info = check_info
 

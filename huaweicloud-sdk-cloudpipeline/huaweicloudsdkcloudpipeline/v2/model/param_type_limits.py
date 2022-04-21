@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ParamTypeLimits:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ParamTypeLimits:
     }
 
     def __init__(self, disable=None, name=None, displayname=None, id=None, language=None):
-        """ParamTypeLimits - a model defined in huaweicloud sdk"""
+        """ParamTypeLimits
+
+        The model defined in huaweicloud sdk
+
+        :param disable: 是否废弃
+        :type disable: str
+        :param name: 语言名字
+        :type name: str
+        :param displayname: 语言展示名字
+        :type displayname: str
+        :param id: 规则集ID
+        :type id: str
+        :param language: 扫描语言
+        :type language: str
+        """
         
         
 
@@ -73,7 +86,7 @@ class ParamTypeLimits:
         是否废弃
 
         :param disable: The disable of this ParamTypeLimits.
-        :type: str
+        :type disable: str
         """
         self._disable = disable
 
@@ -95,7 +108,7 @@ class ParamTypeLimits:
         语言名字
 
         :param name: The name of this ParamTypeLimits.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -117,7 +130,7 @@ class ParamTypeLimits:
         语言展示名字
 
         :param displayname: The displayname of this ParamTypeLimits.
-        :type: str
+        :type displayname: str
         """
         self._displayname = displayname
 
@@ -139,7 +152,7 @@ class ParamTypeLimits:
         规则集ID
 
         :param id: The id of this ParamTypeLimits.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -161,7 +174,7 @@ class ParamTypeLimits:
         扫描语言
 
         :param language: The language of this ParamTypeLimits.
-        :type: str
+        :type language: str
         """
         self._language = language
 

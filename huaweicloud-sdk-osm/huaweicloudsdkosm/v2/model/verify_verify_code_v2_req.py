@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VerifyVerifyCodeV2Req:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class VerifyVerifyCodeV2Req:
     }
 
     def __init__(self, verify_code=None, contact_value=None, contact_way=None, area_code=None, x_customer_id=None, customer_id=None):
-        """VerifyVerifyCodeV2Req - a model defined in huaweicloud sdk"""
+        """VerifyVerifyCodeV2Req
+
+        The model defined in huaweicloud sdk
+
+        :param verify_code: 验证码
+        :type verify_code: str
+        :param contact_value: 联系方式的值
+        :type contact_value: str
+        :param contact_way: 联系方式的类型。0：短信；1：邮件
+        :type contact_way: int
+        :param area_code: 国家码
+        :type area_code: str
+        :param x_customer_id: 子用户id
+        :type x_customer_id: str
+        :param customer_id: 客户id
+        :type customer_id: str
+        """
         
         
 
@@ -80,7 +95,7 @@ class VerifyVerifyCodeV2Req:
         验证码
 
         :param verify_code: The verify_code of this VerifyVerifyCodeV2Req.
-        :type: str
+        :type verify_code: str
         """
         self._verify_code = verify_code
 
@@ -102,7 +117,7 @@ class VerifyVerifyCodeV2Req:
         联系方式的值
 
         :param contact_value: The contact_value of this VerifyVerifyCodeV2Req.
-        :type: str
+        :type contact_value: str
         """
         self._contact_value = contact_value
 
@@ -124,7 +139,7 @@ class VerifyVerifyCodeV2Req:
         联系方式的类型。0：短信；1：邮件
 
         :param contact_way: The contact_way of this VerifyVerifyCodeV2Req.
-        :type: int
+        :type contact_way: int
         """
         self._contact_way = contact_way
 
@@ -146,7 +161,7 @@ class VerifyVerifyCodeV2Req:
         国家码
 
         :param area_code: The area_code of this VerifyVerifyCodeV2Req.
-        :type: str
+        :type area_code: str
         """
         self._area_code = area_code
 
@@ -168,7 +183,7 @@ class VerifyVerifyCodeV2Req:
         子用户id
 
         :param x_customer_id: The x_customer_id of this VerifyVerifyCodeV2Req.
-        :type: str
+        :type x_customer_id: str
         """
         self._x_customer_id = x_customer_id
 
@@ -190,7 +205,7 @@ class VerifyVerifyCodeV2Req:
         客户id
 
         :param customer_id: The customer_id of this VerifyVerifyCodeV2Req.
-        :type: str
+        :type customer_id: str
         """
         self._customer_id = customer_id
 

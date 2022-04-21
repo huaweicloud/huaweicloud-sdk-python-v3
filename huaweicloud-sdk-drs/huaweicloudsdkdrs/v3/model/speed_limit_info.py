@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SpeedLimitInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class SpeedLimitInfo:
     }
 
     def __init__(self, begin=None, end=None, speed=None, is_utc=None):
-        """SpeedLimitInfo - a model defined in huaweicloud sdk"""
+        """SpeedLimitInfo
+
+        The model defined in huaweicloud sdk
+
+        :param begin: 开始限速时间, 此时间为UTC时间，开始时间为整时，若有分钟，则会忽略，格式为hh:mm，小时数为两位，例如：01:00。
+        :type begin: str
+        :param end: 结束时间,此时间为UTC时间,输入必须为59分结尾，格式为hh:mm，小时数为两位，例如：05:59。
+        :type end: str
+        :param speed: 限速，取值范围为1~9999 ,单位为MB/s
+        :type speed: str
+        :param is_utc: 是否为UTC时间
+        :type is_utc: bool
+        """
         
         
 
@@ -70,7 +81,7 @@ class SpeedLimitInfo:
         开始限速时间, 此时间为UTC时间，开始时间为整时，若有分钟，则会忽略，格式为hh:mm，小时数为两位，例如：01:00。
 
         :param begin: The begin of this SpeedLimitInfo.
-        :type: str
+        :type begin: str
         """
         self._begin = begin
 
@@ -92,7 +103,7 @@ class SpeedLimitInfo:
         结束时间,此时间为UTC时间,输入必须为59分结尾，格式为hh:mm，小时数为两位，例如：05:59。
 
         :param end: The end of this SpeedLimitInfo.
-        :type: str
+        :type end: str
         """
         self._end = end
 
@@ -114,7 +125,7 @@ class SpeedLimitInfo:
         限速，取值范围为1~9999 ,单位为MB/s
 
         :param speed: The speed of this SpeedLimitInfo.
-        :type: str
+        :type speed: str
         """
         self._speed = speed
 
@@ -136,7 +147,7 @@ class SpeedLimitInfo:
         是否为UTC时间
 
         :param is_utc: The is_utc of this SpeedLimitInfo.
-        :type: bool
+        :type is_utc: bool
         """
         self._is_utc = is_utc
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CollectReplyRatesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class CollectReplyRatesResponse(SdkResponse):
     }
 
     def __init__(self, interval=None, time_zone=None, total=None, intervals=None, startutc=None, endutc=None):
-        """CollectReplyRatesResponse - a model defined in huaweicloud sdk"""
+        """CollectReplyRatesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param interval: 统计周期目前支持year、month、week、day。 调用失败时无此字段。
+        :type interval: str
+        :param time_zone: 所在时区，例如：中国东八区为\&quot;+08:00\&quot;；美国西五区为\&quot;-05:00\&quot;;默认为\&quot;UTC\&quot;。 调用失败时无此字段。
+        :type time_zone: str
+        :param total: 
+        :type total: :class:`huaweicloudsdkcbs.v1.ReplyRatesTotal`
+        :param intervals: 
+        :type intervals: :class:`huaweicloudsdkcbs.v1.ReplyRatesIntervals`
+        :param startutc: 统计开始的utc时间。
+        :type startutc: int
+        :param endutc: 统计结束的utc时间。
+        :type endutc: int
+        """
         
         super(CollectReplyRatesResponse, self).__init__()
 
@@ -83,7 +98,7 @@ class CollectReplyRatesResponse(SdkResponse):
         统计周期目前支持year、month、week、day。 调用失败时无此字段。
 
         :param interval: The interval of this CollectReplyRatesResponse.
-        :type: str
+        :type interval: str
         """
         self._interval = interval
 
@@ -105,7 +120,7 @@ class CollectReplyRatesResponse(SdkResponse):
         所在时区，例如：中国东八区为\"+08:00\"；美国西五区为\"-05:00\";默认为\"UTC\"。 调用失败时无此字段。
 
         :param time_zone: The time_zone of this CollectReplyRatesResponse.
-        :type: str
+        :type time_zone: str
         """
         self._time_zone = time_zone
 
@@ -115,7 +130,7 @@ class CollectReplyRatesResponse(SdkResponse):
 
 
         :return: The total of this CollectReplyRatesResponse.
-        :rtype: ReplyRatesTotal
+        :rtype: :class:`huaweicloudsdkcbs.v1.ReplyRatesTotal`
         """
         return self._total
 
@@ -125,7 +140,7 @@ class CollectReplyRatesResponse(SdkResponse):
 
 
         :param total: The total of this CollectReplyRatesResponse.
-        :type: ReplyRatesTotal
+        :type total: :class:`huaweicloudsdkcbs.v1.ReplyRatesTotal`
         """
         self._total = total
 
@@ -135,7 +150,7 @@ class CollectReplyRatesResponse(SdkResponse):
 
 
         :return: The intervals of this CollectReplyRatesResponse.
-        :rtype: ReplyRatesIntervals
+        :rtype: :class:`huaweicloudsdkcbs.v1.ReplyRatesIntervals`
         """
         return self._intervals
 
@@ -145,7 +160,7 @@ class CollectReplyRatesResponse(SdkResponse):
 
 
         :param intervals: The intervals of this CollectReplyRatesResponse.
-        :type: ReplyRatesIntervals
+        :type intervals: :class:`huaweicloudsdkcbs.v1.ReplyRatesIntervals`
         """
         self._intervals = intervals
 
@@ -167,7 +182,7 @@ class CollectReplyRatesResponse(SdkResponse):
         统计开始的utc时间。
 
         :param startutc: The startutc of this CollectReplyRatesResponse.
-        :type: int
+        :type startutc: int
         """
         self._startutc = startutc
 
@@ -189,7 +204,7 @@ class CollectReplyRatesResponse(SdkResponse):
         统计结束的utc时间。
 
         :param endutc: The endutc of this CollectReplyRatesResponse.
-        :type: int
+        :type endutc: int
         """
         self._endutc = endutc
 

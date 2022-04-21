@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateDeviceRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class CreateDeviceRequestBody:
     }
 
     def __init__(self, parent_device_id=None, product=None, password=None, device_name=None, node_id=None, app_id=None, status=None, description=None, tags=None):
-        """CreateDeviceRequestBody - a model defined in huaweicloud sdk"""
+        """CreateDeviceRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param parent_device_id: 父设备ID，无父设备时不填写，自动向下取整
+        :type parent_device_id: int
+        :param product: 
+        :type product: :class:`huaweicloudsdkroma.v2.ProductReferer`
+        :param password: 设备密码，输入要求：至少1数字，1大写字母，1小写字母，1特殊字符(~!@#$%^&amp;*()-_&#x3D;+|[{}];:&lt;&gt;/?)，长度8-32个字符
+        :type password: str
+        :param device_name: 设备名称，支持中文、中文标点符号（）。；，：“”、？《》及英文大小写、数字及英文符号()_,#.?&#39;-@%&amp;!, 长度2-64
+        :type device_name: str
+        :param node_id: 设备物理编号，通常使用MAC或者IMEI号，支持英文大小写，数字，下划线和中划线，长度2-64
+        :type node_id: str
+        :param app_id: 应用ID
+        :type app_id: str
+        :param status: 设备状态 0启用 1禁用，不填时默认为0启用
+        :type status: int
+        :param description: 备注
+        :type description: str
+        :param tags: 标签
+        :type tags: list[str]
+        """
         
         
 
@@ -94,7 +115,7 @@ class CreateDeviceRequestBody:
         父设备ID，无父设备时不填写，自动向下取整
 
         :param parent_device_id: The parent_device_id of this CreateDeviceRequestBody.
-        :type: int
+        :type parent_device_id: int
         """
         self._parent_device_id = parent_device_id
 
@@ -104,7 +125,7 @@ class CreateDeviceRequestBody:
 
 
         :return: The product of this CreateDeviceRequestBody.
-        :rtype: ProductReferer
+        :rtype: :class:`huaweicloudsdkroma.v2.ProductReferer`
         """
         return self._product
 
@@ -114,7 +135,7 @@ class CreateDeviceRequestBody:
 
 
         :param product: The product of this CreateDeviceRequestBody.
-        :type: ProductReferer
+        :type product: :class:`huaweicloudsdkroma.v2.ProductReferer`
         """
         self._product = product
 
@@ -136,7 +157,7 @@ class CreateDeviceRequestBody:
         设备密码，输入要求：至少1数字，1大写字母，1小写字母，1特殊字符(~!@#$%^&*()-_=+|[{}];:<>/?)，长度8-32个字符
 
         :param password: The password of this CreateDeviceRequestBody.
-        :type: str
+        :type password: str
         """
         self._password = password
 
@@ -158,7 +179,7 @@ class CreateDeviceRequestBody:
         设备名称，支持中文、中文标点符号（）。；，：“”、？《》及英文大小写、数字及英文符号()_,#.?'-@%&!, 长度2-64
 
         :param device_name: The device_name of this CreateDeviceRequestBody.
-        :type: str
+        :type device_name: str
         """
         self._device_name = device_name
 
@@ -180,7 +201,7 @@ class CreateDeviceRequestBody:
         设备物理编号，通常使用MAC或者IMEI号，支持英文大小写，数字，下划线和中划线，长度2-64
 
         :param node_id: The node_id of this CreateDeviceRequestBody.
-        :type: str
+        :type node_id: str
         """
         self._node_id = node_id
 
@@ -202,7 +223,7 @@ class CreateDeviceRequestBody:
         应用ID
 
         :param app_id: The app_id of this CreateDeviceRequestBody.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -224,7 +245,7 @@ class CreateDeviceRequestBody:
         设备状态 0启用 1禁用，不填时默认为0启用
 
         :param status: The status of this CreateDeviceRequestBody.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -246,7 +267,7 @@ class CreateDeviceRequestBody:
         备注
 
         :param description: The description of this CreateDeviceRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -268,7 +289,7 @@ class CreateDeviceRequestBody:
         标签
 
         :param tags: The tags of this CreateDeviceRequestBody.
-        :type: list[str]
+        :type tags: list[str]
         """
         self._tags = tags
 

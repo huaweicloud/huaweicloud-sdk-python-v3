@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTopicsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListTopicsRequest:
     }
 
     def __init__(self, offset=None, limit=None, enterprise_project_id=None, name=None, fuzzy_name=None):
-        """ListTopicsRequest - a model defined in huaweicloud sdk"""
+        """ListTopicsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param offset: 偏移量。  偏移量为一个大于0小于资源总个数的整数，表示查询该偏移量后面的所有的资源，默认值为0。
+        :type offset: int
+        :param limit:  查询的数量限制。  取值范围：1~100，取值一般为10，20，50。功能说明：每页返回的资源个数。默认值为100。
+        :type limit: int
+        :param enterprise_project_id: 企业项目id，默认企业项目id为0。
+        :type enterprise_project_id: str
+        :param name: 检索的主题名称，完全匹配。
+        :type name: str
+        :param fuzzy_name: 检索的主题名称，模糊匹配，按照startwith模式进行匹配。
+        :type fuzzy_name: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class ListTopicsRequest:
         偏移量。  偏移量为一个大于0小于资源总个数的整数，表示查询该偏移量后面的所有的资源，默认值为0。
 
         :param offset: The offset of this ListTopicsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -100,7 +113,7 @@ class ListTopicsRequest:
          查询的数量限制。  取值范围：1~100，取值一般为10，20，50。功能说明：每页返回的资源个数。默认值为100。
 
         :param limit: The limit of this ListTopicsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -122,7 +135,7 @@ class ListTopicsRequest:
         企业项目id，默认企业项目id为0。
 
         :param enterprise_project_id: The enterprise_project_id of this ListTopicsRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -144,7 +157,7 @@ class ListTopicsRequest:
         检索的主题名称，完全匹配。
 
         :param name: The name of this ListTopicsRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -166,7 +179,7 @@ class ListTopicsRequest:
         检索的主题名称，模糊匹配，按照startwith模式进行匹配。
 
         :param fuzzy_name: The fuzzy_name of this ListTopicsRequest.
-        :type: str
+        :type fuzzy_name: str
         """
         self._fuzzy_name = fuzzy_name
 

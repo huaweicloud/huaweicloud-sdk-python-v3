@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListBigkeyScanTasksRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListBigkeyScanTasksRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, status=None):
-        """ListBigkeyScanTasksRequest - a model defined in huaweicloud sdk"""
+        """ListBigkeyScanTasksRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0
+        :type offset: int
+        :param limit: 每页显示的条目数量。
+        :type limit: int
+        :param status: 分析任务状态
+        :type status: str
+        """
         
         
 
@@ -72,7 +83,7 @@ class ListBigkeyScanTasksRequest:
         实例ID。
 
         :param instance_id: The instance_id of this ListBigkeyScanTasksRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -94,7 +105,7 @@ class ListBigkeyScanTasksRequest:
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
         :param offset: The offset of this ListBigkeyScanTasksRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -116,7 +127,7 @@ class ListBigkeyScanTasksRequest:
         每页显示的条目数量。
 
         :param limit: The limit of this ListBigkeyScanTasksRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -138,7 +149,7 @@ class ListBigkeyScanTasksRequest:
         分析任务状态
 
         :param status: The status of this ListBigkeyScanTasksRequest.
-        :type: str
+        :type status: str
         """
         self._status = status
 

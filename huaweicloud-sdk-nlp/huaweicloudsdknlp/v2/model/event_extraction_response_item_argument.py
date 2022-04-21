@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EventExtractionResponseItemArgument:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class EventExtractionResponseItemArgument:
     }
 
     def __init__(self, role=None, span=None, word=None):
-        """EventExtractionResponseItemArgument - a model defined in huaweicloud sdk"""
+        """EventExtractionResponseItemArgument
+
+        The model defined in huaweicloud sdk
+
+        :param role: 元素角色。元素角色指的是事件元素在事件中扮演的角色，是事件元素与事件的语义关系。
+        :type role: str
+        :param span: 实体文本在待分析文本中的起始和终止位置。
+        :type span: list[int]
+        :param word: 实体文本。
+        :type word: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class EventExtractionResponseItemArgument:
         元素角色。元素角色指的是事件元素在事件中扮演的角色，是事件元素与事件的语义关系。
 
         :param role: The role of this EventExtractionResponseItemArgument.
-        :type: str
+        :type role: str
         """
         self._role = role
 
@@ -87,7 +96,7 @@ class EventExtractionResponseItemArgument:
         实体文本在待分析文本中的起始和终止位置。
 
         :param span: The span of this EventExtractionResponseItemArgument.
-        :type: list[int]
+        :type span: list[int]
         """
         self._span = span
 
@@ -109,7 +118,7 @@ class EventExtractionResponseItemArgument:
         实体文本。
 
         :param word: The word of this EventExtractionResponseItemArgument.
-        :type: str
+        :type word: str
         """
         self._word = word
 

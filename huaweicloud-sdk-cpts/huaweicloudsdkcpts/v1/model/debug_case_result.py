@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DebugCaseResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class DebugCaseResult:
     }
 
     def __init__(self, body=None, error_reason=None, header=None, name=None, response_time=None, result=None, return_body=None, return_header=None, status_code=None, url=None):
-        """DebugCaseResult - a model defined in huaweicloud sdk"""
+        """DebugCaseResult
+
+        The model defined in huaweicloud sdk
+
+        :param body: body
+        :type body: str
+        :param error_reason: errorReason
+        :type error_reason: str
+        :param header: 
+        :type header: :class:`huaweicloudsdkcpts.v1.DebugCaseResultHeader`
+        :param name: name
+        :type name: str
+        :param response_time: responseTime
+        :type response_time: int
+        :param result: result
+        :type result: int
+        :param return_body: returnBody
+        :type return_body: str
+        :param return_header: 
+        :type return_header: :class:`huaweicloudsdkcpts.v1.DebugCaseReturnHeader`
+        :param status_code: statusCode
+        :type status_code: str
+        :param url: url
+        :type url: str
+        """
         
         
 
@@ -103,7 +126,7 @@ class DebugCaseResult:
         body
 
         :param body: The body of this DebugCaseResult.
-        :type: str
+        :type body: str
         """
         self._body = body
 
@@ -125,7 +148,7 @@ class DebugCaseResult:
         errorReason
 
         :param error_reason: The error_reason of this DebugCaseResult.
-        :type: str
+        :type error_reason: str
         """
         self._error_reason = error_reason
 
@@ -135,7 +158,7 @@ class DebugCaseResult:
 
 
         :return: The header of this DebugCaseResult.
-        :rtype: DebugCaseResultHeader
+        :rtype: :class:`huaweicloudsdkcpts.v1.DebugCaseResultHeader`
         """
         return self._header
 
@@ -145,7 +168,7 @@ class DebugCaseResult:
 
 
         :param header: The header of this DebugCaseResult.
-        :type: DebugCaseResultHeader
+        :type header: :class:`huaweicloudsdkcpts.v1.DebugCaseResultHeader`
         """
         self._header = header
 
@@ -167,7 +190,7 @@ class DebugCaseResult:
         name
 
         :param name: The name of this DebugCaseResult.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -189,7 +212,7 @@ class DebugCaseResult:
         responseTime
 
         :param response_time: The response_time of this DebugCaseResult.
-        :type: int
+        :type response_time: int
         """
         self._response_time = response_time
 
@@ -211,7 +234,7 @@ class DebugCaseResult:
         result
 
         :param result: The result of this DebugCaseResult.
-        :type: int
+        :type result: int
         """
         self._result = result
 
@@ -233,7 +256,7 @@ class DebugCaseResult:
         returnBody
 
         :param return_body: The return_body of this DebugCaseResult.
-        :type: str
+        :type return_body: str
         """
         self._return_body = return_body
 
@@ -243,7 +266,7 @@ class DebugCaseResult:
 
 
         :return: The return_header of this DebugCaseResult.
-        :rtype: DebugCaseReturnHeader
+        :rtype: :class:`huaweicloudsdkcpts.v1.DebugCaseReturnHeader`
         """
         return self._return_header
 
@@ -253,7 +276,7 @@ class DebugCaseResult:
 
 
         :param return_header: The return_header of this DebugCaseResult.
-        :type: DebugCaseReturnHeader
+        :type return_header: :class:`huaweicloudsdkcpts.v1.DebugCaseReturnHeader`
         """
         self._return_header = return_header
 
@@ -275,7 +298,7 @@ class DebugCaseResult:
         statusCode
 
         :param status_code: The status_code of this DebugCaseResult.
-        :type: str
+        :type status_code: str
         """
         self._status_code = status_code
 
@@ -297,7 +320,7 @@ class DebugCaseResult:
         url
 
         :param url: The url of this DebugCaseResult.
-        :type: str
+        :type url: str
         """
         self._url = url
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowQuotasRespQuotas:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowQuotasRespQuotas:
     }
 
     def __init__(self, resources=None):
-        """ShowQuotasRespQuotas - a model defined in huaweicloud sdk"""
+        """ShowQuotasRespQuotas
+
+        The model defined in huaweicloud sdk
+
+        :param resources: 配额列表。
+        :type resources: list[:class:`huaweicloudsdkdms.v2.ShowQuotasRespQuotasResources`]
+        """
         
         
 
@@ -47,7 +52,7 @@ class ShowQuotasRespQuotas:
         配额列表。
 
         :return: The resources of this ShowQuotasRespQuotas.
-        :rtype: list[ShowQuotasRespQuotasResources]
+        :rtype: list[:class:`huaweicloudsdkdms.v2.ShowQuotasRespQuotasResources`]
         """
         return self._resources
 
@@ -58,7 +63,7 @@ class ShowQuotasRespQuotas:
         配额列表。
 
         :param resources: The resources of this ShowQuotasRespQuotas.
-        :type: list[ShowQuotasRespQuotasResources]
+        :type resources: list[:class:`huaweicloudsdkdms.v2.ShowQuotasRespQuotasResources`]
         """
         self._resources = resources
 

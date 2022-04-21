@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRtcUserListResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListRtcUserListResponse(SdkResponse):
     }
 
     def __init__(self, total=None, limit=None, offset=None, users=None, x_request_id=None):
-        """ListRtcUserListResponse - a model defined in huaweicloud sdk"""
+        """ListRtcUserListResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 总数
+        :type total: int
+        :param limit: 查询结果限制
+        :type limit: int
+        :param offset: 查询偏移量
+        :type offset: int
+        :param users: 用户列表
+        :type users: list[:class:`huaweicloudsdkcloudrtc.v1.RtcUser`]
+        :param x_request_id: 
+        :type x_request_id: str
+        """
         
         super(ListRtcUserListResponse, self).__init__()
 
@@ -78,7 +91,7 @@ class ListRtcUserListResponse(SdkResponse):
         总数
 
         :param total: The total of this ListRtcUserListResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -100,7 +113,7 @@ class ListRtcUserListResponse(SdkResponse):
         查询结果限制
 
         :param limit: The limit of this ListRtcUserListResponse.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -122,7 +135,7 @@ class ListRtcUserListResponse(SdkResponse):
         查询偏移量
 
         :param offset: The offset of this ListRtcUserListResponse.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -133,7 +146,7 @@ class ListRtcUserListResponse(SdkResponse):
         用户列表
 
         :return: The users of this ListRtcUserListResponse.
-        :rtype: list[RtcUser]
+        :rtype: list[:class:`huaweicloudsdkcloudrtc.v1.RtcUser`]
         """
         return self._users
 
@@ -144,7 +157,7 @@ class ListRtcUserListResponse(SdkResponse):
         用户列表
 
         :param users: The users of this ListRtcUserListResponse.
-        :type: list[RtcUser]
+        :type users: list[:class:`huaweicloudsdkcloudrtc.v1.RtcUser`]
         """
         self._users = users
 
@@ -164,7 +177,7 @@ class ListRtcUserListResponse(SdkResponse):
 
 
         :param x_request_id: The x_request_id of this ListRtcUserListResponse.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 

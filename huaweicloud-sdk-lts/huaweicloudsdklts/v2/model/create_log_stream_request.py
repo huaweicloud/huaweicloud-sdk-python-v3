@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateLogStreamRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateLogStreamRequest:
     }
 
     def __init__(self, log_group_id=None, body=None):
-        """CreateLogStreamRequest - a model defined in huaweicloud sdk"""
+        """CreateLogStreamRequest
+
+        The model defined in huaweicloud sdk
+
+        :param log_group_id: 租户想创建的日志流所在的日志组的groupid，一般为36位字符串。
+        :type log_group_id: str
+        :param body: Body of the CreateLogStreamRequest
+        :type body: :class:`huaweicloudsdklts.v2.CreateLogStreamParams`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateLogStreamRequest:
         租户想创建的日志流所在的日志组的groupid，一般为36位字符串。
 
         :param log_group_id: The log_group_id of this CreateLogStreamRequest.
-        :type: str
+        :type log_group_id: str
         """
         self._log_group_id = log_group_id
 
@@ -72,7 +79,7 @@ class CreateLogStreamRequest:
 
 
         :return: The body of this CreateLogStreamRequest.
-        :rtype: CreateLogStreamParams
+        :rtype: :class:`huaweicloudsdklts.v2.CreateLogStreamParams`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CreateLogStreamRequest:
 
 
         :param body: The body of this CreateLogStreamRequest.
-        :type: CreateLogStreamParams
+        :type body: :class:`huaweicloudsdklts.v2.CreateLogStreamParams`
         """
         self._body = body
 

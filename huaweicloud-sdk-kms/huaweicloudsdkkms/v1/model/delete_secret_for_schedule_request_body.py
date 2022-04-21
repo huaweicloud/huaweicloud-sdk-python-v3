@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteSecretForScheduleRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteSecretForScheduleRequestBody:
     }
 
     def __init__(self, recovery_window_in_days=None):
-        """DeleteSecretForScheduleRequestBody - a model defined in huaweicloud sdk"""
+        """DeleteSecretForScheduleRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param recovery_window_in_days: 创建定时删除凭据的任务，且指定可恢复的天数。  约束：7~30。  默认值：30。 
+        :type recovery_window_in_days: int
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteSecretForScheduleRequestBody:
         创建定时删除凭据的任务，且指定可恢复的天数。  约束：7~30。  默认值：30。 
 
         :param recovery_window_in_days: The recovery_window_in_days of this DeleteSecretForScheduleRequestBody.
-        :type: int
+        :type recovery_window_in_days: int
         """
         self._recovery_window_in_days = recovery_window_in_days
 

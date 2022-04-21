@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class JobEntities:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class JobEntities:
     }
 
     def __init__(self, volume_type=None, size=None, volume_id=None, name=None, sub_jobs=None):
-        """JobEntities - a model defined in huaweicloud sdk"""
+        """JobEntities
+
+        The model defined in huaweicloud sdk
+
+        :param volume_type: 云硬盘的类型。
+        :type volume_type: str
+        :param size: 云硬盘的容量，单位为GB。
+        :type size: int
+        :param volume_id: 云硬盘的ID。
+        :type volume_id: str
+        :param name: 云硬盘的名称。
+        :type name: str
+        :param sub_jobs: 子Job的信息。当存在子Job信息时，entities中的其他字段将不会返回。
+        :type sub_jobs: list[:class:`huaweicloudsdkevs.v2.SubJob`]
+        """
         
         
 
@@ -78,7 +91,7 @@ class JobEntities:
         云硬盘的类型。
 
         :param volume_type: The volume_type of this JobEntities.
-        :type: str
+        :type volume_type: str
         """
         self._volume_type = volume_type
 
@@ -100,7 +113,7 @@ class JobEntities:
         云硬盘的容量，单位为GB。
 
         :param size: The size of this JobEntities.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -122,7 +135,7 @@ class JobEntities:
         云硬盘的ID。
 
         :param volume_id: The volume_id of this JobEntities.
-        :type: str
+        :type volume_id: str
         """
         self._volume_id = volume_id
 
@@ -144,7 +157,7 @@ class JobEntities:
         云硬盘的名称。
 
         :param name: The name of this JobEntities.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -155,7 +168,7 @@ class JobEntities:
         子Job的信息。当存在子Job信息时，entities中的其他字段将不会返回。
 
         :return: The sub_jobs of this JobEntities.
-        :rtype: list[SubJob]
+        :rtype: list[:class:`huaweicloudsdkevs.v2.SubJob`]
         """
         return self._sub_jobs
 
@@ -166,7 +179,7 @@ class JobEntities:
         子Job的信息。当存在子Job信息时，entities中的其他字段将不会返回。
 
         :param sub_jobs: The sub_jobs of this JobEntities.
-        :type: list[SubJob]
+        :type sub_jobs: list[:class:`huaweicloudsdkevs.v2.SubJob`]
         """
         self._sub_jobs = sub_jobs
 

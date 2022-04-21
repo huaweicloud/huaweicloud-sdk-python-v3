@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PersistentVolumeClaim:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class PersistentVolumeClaim:
     }
 
     def __init__(self, api_version=None, kind=None, metadata=None, spec=None, status=None):
-        """PersistentVolumeClaim - a model defined in huaweicloud sdk"""
+        """PersistentVolumeClaim
+
+        The model defined in huaweicloud sdk
+
+        :param api_version: API版本，固定值**v1**
+        :type api_version: str
+        :param kind: API类型，固定值**PersistentVolumeClaim**
+        :type kind: str
+        :param metadata: 
+        :type metadata: :class:`huaweicloudsdkcce.v3.PersistentVolumeClaimMetadata`
+        :param spec: 
+        :type spec: :class:`huaweicloudsdkcce.v3.PersistentVolumeClaimSpec`
+        :param status: 
+        :type status: :class:`huaweicloudsdkcce.v3.PersistentVolumeClaimStatus`
+        """
         
         
 
@@ -74,7 +87,7 @@ class PersistentVolumeClaim:
         API版本，固定值**v1**
 
         :param api_version: The api_version of this PersistentVolumeClaim.
-        :type: str
+        :type api_version: str
         """
         self._api_version = api_version
 
@@ -96,7 +109,7 @@ class PersistentVolumeClaim:
         API类型，固定值**PersistentVolumeClaim**
 
         :param kind: The kind of this PersistentVolumeClaim.
-        :type: str
+        :type kind: str
         """
         self._kind = kind
 
@@ -106,7 +119,7 @@ class PersistentVolumeClaim:
 
 
         :return: The metadata of this PersistentVolumeClaim.
-        :rtype: PersistentVolumeClaimMetadata
+        :rtype: :class:`huaweicloudsdkcce.v3.PersistentVolumeClaimMetadata`
         """
         return self._metadata
 
@@ -116,7 +129,7 @@ class PersistentVolumeClaim:
 
 
         :param metadata: The metadata of this PersistentVolumeClaim.
-        :type: PersistentVolumeClaimMetadata
+        :type metadata: :class:`huaweicloudsdkcce.v3.PersistentVolumeClaimMetadata`
         """
         self._metadata = metadata
 
@@ -126,7 +139,7 @@ class PersistentVolumeClaim:
 
 
         :return: The spec of this PersistentVolumeClaim.
-        :rtype: PersistentVolumeClaimSpec
+        :rtype: :class:`huaweicloudsdkcce.v3.PersistentVolumeClaimSpec`
         """
         return self._spec
 
@@ -136,7 +149,7 @@ class PersistentVolumeClaim:
 
 
         :param spec: The spec of this PersistentVolumeClaim.
-        :type: PersistentVolumeClaimSpec
+        :type spec: :class:`huaweicloudsdkcce.v3.PersistentVolumeClaimSpec`
         """
         self._spec = spec
 
@@ -146,7 +159,7 @@ class PersistentVolumeClaim:
 
 
         :return: The status of this PersistentVolumeClaim.
-        :rtype: PersistentVolumeClaimStatus
+        :rtype: :class:`huaweicloudsdkcce.v3.PersistentVolumeClaimStatus`
         """
         return self._status
 
@@ -156,7 +169,7 @@ class PersistentVolumeClaim:
 
 
         :param status: The status of this PersistentVolumeClaim.
-        :type: PersistentVolumeClaimStatus
+        :type status: :class:`huaweicloudsdkcce.v3.PersistentVolumeClaimStatus`
         """
         self._status = status
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRulesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListRulesRequest:
     }
 
     def __init__(self, instance_id=None, limit=None, app_id=None, name=None, offset=None):
-        """ListRulesRequest - a model defined in huaweicloud sdk"""
+        """ListRulesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param limit: 每页显示条目数量，最大数量999，超过999后只返回999
+        :type limit: int
+        :param app_id: 应用ID
+        :type app_id: str
+        :param name: 规则名称
+        :type name: str
+        :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0
+        :type offset: int
+        """
         
         
 
@@ -77,7 +90,7 @@ class ListRulesRequest:
         实例ID
 
         :param instance_id: The instance_id of this ListRulesRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -99,7 +112,7 @@ class ListRulesRequest:
         每页显示条目数量，最大数量999，超过999后只返回999
 
         :param limit: The limit of this ListRulesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -121,7 +134,7 @@ class ListRulesRequest:
         应用ID
 
         :param app_id: The app_id of this ListRulesRequest.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -143,7 +156,7 @@ class ListRulesRequest:
         规则名称
 
         :param name: The name of this ListRulesRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -165,7 +178,7 @@ class ListRulesRequest:
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
         :param offset: The offset of this ListRulesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 

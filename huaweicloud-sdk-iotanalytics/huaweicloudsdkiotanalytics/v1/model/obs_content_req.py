@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ObsContentReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ObsContentReq:
     }
 
     def __init__(self, bucket_name=None, ak=None, sk=None):
-        """ObsContentReq - a model defined in huaweicloud sdk"""
+        """ObsContentReq
+
+        The model defined in huaweicloud sdk
+
+        :param bucket_name: 桶名称
+        :type bucket_name: str
+        :param ak: 租户的AK
+        :type ak: str
+        :param sk: 租户的SK
+        :type sk: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class ObsContentReq:
         桶名称
 
         :param bucket_name: The bucket_name of this ObsContentReq.
-        :type: str
+        :type bucket_name: str
         """
         self._bucket_name = bucket_name
 
@@ -87,7 +96,7 @@ class ObsContentReq:
         租户的AK
 
         :param ak: The ak of this ObsContentReq.
-        :type: str
+        :type ak: str
         """
         self._ak = ak
 
@@ -109,7 +118,7 @@ class ObsContentReq:
         租户的SK
 
         :param sk: The sk of this ObsContentReq.
-        :type: str
+        :type sk: str
         """
         self._sk = sk
 

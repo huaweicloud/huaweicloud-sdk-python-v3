@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListServiceTypesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListServiceTypesResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, service_types=None):
-        """ListServiceTypesResponse - a model defined in huaweicloud sdk"""
+        """ListServiceTypesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total_count: 总数。
+        :type total_count: int
+        :param service_types: 云服务类型信息列表，具体请参见表3。
+        :type service_types: list[:class:`huaweicloudsdkbss.v2.ServiceTypes`]
+        """
         
         super(ListServiceTypesResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListServiceTypesResponse(SdkResponse):
         总数。
 
         :param total_count: The total_count of this ListServiceTypesResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 
@@ -74,7 +81,7 @@ class ListServiceTypesResponse(SdkResponse):
         云服务类型信息列表，具体请参见表3。
 
         :return: The service_types of this ListServiceTypesResponse.
-        :rtype: list[ServiceTypes]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.ServiceTypes`]
         """
         return self._service_types
 
@@ -85,7 +92,7 @@ class ListServiceTypesResponse(SdkResponse):
         云服务类型信息列表，具体请参见表3。
 
         :param service_types: The service_types of this ListServiceTypesResponse.
-        :type: list[ServiceTypes]
+        :type service_types: list[:class:`huaweicloudsdkbss.v2.ServiceTypes`]
         """
         self._service_types = service_types
 

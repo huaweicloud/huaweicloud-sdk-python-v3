@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EnterprisePersonNew:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class EnterprisePersonNew:
     }
 
     def __init__(self, legel_name=None, legel_id_number=None, certifier_role=None):
-        """EnterprisePersonNew - a model defined in huaweicloud sdk"""
+        """EnterprisePersonNew
+
+        The model defined in huaweicloud sdk
+
+        :param legel_name: 法人姓名。
+        :type legel_name: str
+        :param legel_id_number: 法人身份证号。
+        :type legel_id_number: str
+        :param certifier_role: 认证人角色。 legalPerson ：法人代表。
+        :type certifier_role: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class EnterprisePersonNew:
         法人姓名。
 
         :param legel_name: The legel_name of this EnterprisePersonNew.
-        :type: str
+        :type legel_name: str
         """
         self._legel_name = legel_name
 
@@ -88,7 +97,7 @@ class EnterprisePersonNew:
         法人身份证号。
 
         :param legel_id_number: The legel_id_number of this EnterprisePersonNew.
-        :type: str
+        :type legel_id_number: str
         """
         self._legel_id_number = legel_id_number
 
@@ -110,7 +119,7 @@ class EnterprisePersonNew:
         认证人角色。 legalPerson ：法人代表。
 
         :param certifier_role: The certifier_role of this EnterprisePersonNew.
-        :type: str
+        :type certifier_role: str
         """
         self._certifier_role = certifier_role
 

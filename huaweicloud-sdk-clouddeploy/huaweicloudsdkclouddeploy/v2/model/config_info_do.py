@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ConfigInfoDO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ConfigInfoDO:
     }
 
     def __init__(self, name=None, type=None, description=None, value=None, task_id=None, static_status=None, limits=None):
-        """ConfigInfoDO - a model defined in huaweicloud sdk"""
+        """ConfigInfoDO
+
+        The model defined in huaweicloud sdk
+
+        :param name: 部署参数名称，用户可自定义
+        :type name: str
+        :param type: 类型，如果填写name字段，则type必选
+        :type type: str
+        :param description: 描述
+        :type description: str
+        :param value: 部署参数值，如果填写name字段，则value必选
+        :type value: str
+        :param task_id: 部署任务id，创建部署任务后由系统自动生成
+        :type task_id: str
+        :param static_status: 表示是否为静态参数，值为1时不支持执行时变更参数，值为0时支持，并且也会把该参数上报流水线
+        :type static_status: int
+        :param limits: 当参数类型为enum枚举类型时，必须填写可选值
+        :type limits: list[:class:`huaweicloudsdkclouddeploy.v2.ParamTypeLimits`]
+        """
         
         
 
@@ -88,7 +105,7 @@ class ConfigInfoDO:
         部署参数名称，用户可自定义
 
         :param name: The name of this ConfigInfoDO.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -110,7 +127,7 @@ class ConfigInfoDO:
         类型，如果填写name字段，则type必选
 
         :param type: The type of this ConfigInfoDO.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -132,7 +149,7 @@ class ConfigInfoDO:
         描述
 
         :param description: The description of this ConfigInfoDO.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -154,7 +171,7 @@ class ConfigInfoDO:
         部署参数值，如果填写name字段，则value必选
 
         :param value: The value of this ConfigInfoDO.
-        :type: str
+        :type value: str
         """
         self._value = value
 
@@ -176,7 +193,7 @@ class ConfigInfoDO:
         部署任务id，创建部署任务后由系统自动生成
 
         :param task_id: The task_id of this ConfigInfoDO.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -198,7 +215,7 @@ class ConfigInfoDO:
         表示是否为静态参数，值为1时不支持执行时变更参数，值为0时支持，并且也会把该参数上报流水线
 
         :param static_status: The static_status of this ConfigInfoDO.
-        :type: int
+        :type static_status: int
         """
         self._static_status = static_status
 
@@ -209,7 +226,7 @@ class ConfigInfoDO:
         当参数类型为enum枚举类型时，必须填写可选值
 
         :return: The limits of this ConfigInfoDO.
-        :rtype: list[ParamTypeLimits]
+        :rtype: list[:class:`huaweicloudsdkclouddeploy.v2.ParamTypeLimits`]
         """
         return self._limits
 
@@ -220,7 +237,7 @@ class ConfigInfoDO:
         当参数类型为enum枚举类型时，必须填写可选值
 
         :param limits: The limits of this ConfigInfoDO.
-        :type: list[ParamTypeLimits]
+        :type limits: list[:class:`huaweicloudsdkclouddeploy.v2.ParamTypeLimits`]
         """
         self._limits = limits
 

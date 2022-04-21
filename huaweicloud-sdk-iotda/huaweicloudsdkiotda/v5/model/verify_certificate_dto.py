@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VerifyCertificateDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class VerifyCertificateDTO:
     }
 
     def __init__(self, verify_content=None):
-        """VerifyCertificateDTO - a model defined in huaweicloud sdk"""
+        """VerifyCertificateDTO
+
+        The model defined in huaweicloud sdk
+
+        :param verify_content: **参数说明**：验证证书的内容信息。
+        :type verify_content: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class VerifyCertificateDTO:
         **参数说明**：验证证书的内容信息。
 
         :param verify_content: The verify_content of this VerifyCertificateDTO.
-        :type: str
+        :type verify_content: str
         """
         self._verify_content = verify_content
 

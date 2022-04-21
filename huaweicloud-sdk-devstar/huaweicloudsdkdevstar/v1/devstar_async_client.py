@@ -52,21 +52,17 @@ class DevStarAsyncClient(Client):
         """通过应用Id获取软件发布仓库列表 
 
         通过应用Id获取软件发布仓库列表 
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowApplicationReleaseRepositoriesRequest request
-        :return: ShowApplicationReleaseRepositoriesResponse
+        :param request: Request instance for ShowApplicationReleaseRepositories
+        :type request: :class:`huaweicloudsdkdevstar.v1.ShowApplicationReleaseRepositoriesRequest`
+        :rtype: :class:`huaweicloudsdkdevstar.v1.ShowApplicationReleaseRepositoriesResponse`
         """
         return self.show_application_release_repositories_with_http_info(request)
 
     def show_application_release_repositories_with_http_info(self, request):
-        """通过应用Id获取软件发布仓库列表 
-
-        通过应用Id获取软件发布仓库列表 
-
-        :param ShowApplicationReleaseRepositoriesRequest request
-        :return: ShowApplicationReleaseRepositoriesResponse
-        """
-
         all_params = ['application_id', 'x_language', 'parent_id', 'keyword', 'limit', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -120,26 +116,21 @@ class DevStarAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_application_res_delete_status_async(self, request):
         """查询应用关联资源删除状态
 
         根据应用Id查询应用关联的代码仓、流水线删除状态 使用场景：用户删除应用关联的资源（如代码仓、流水线...）后，通过该接口实时查询代码仓、流水线删除状态
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowApplicationResDeleteStatusRequest request
-        :return: ShowApplicationResDeleteStatusResponse
+        :param request: Request instance for ShowApplicationResDeleteStatus
+        :type request: :class:`huaweicloudsdkdevstar.v1.ShowApplicationResDeleteStatusRequest`
+        :rtype: :class:`huaweicloudsdkdevstar.v1.ShowApplicationResDeleteStatusResponse`
         """
         return self.show_application_res_delete_status_with_http_info(request)
 
     def show_application_res_delete_status_with_http_info(self, request):
-        """查询应用关联资源删除状态
-
-        根据应用Id查询应用关联的代码仓、流水线删除状态 使用场景：用户删除应用关联的资源（如代码仓、流水线...）后，通过该接口实时查询代码仓、流水线删除状态
-
-        :param ShowApplicationResDeleteStatusRequest request
-        :return: ShowApplicationResDeleteStatusResponse
-        """
-
         all_params = ['application_id', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -185,26 +176,21 @@ class DevStarAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_application_dependent_resources_async(self, request):
         """获取应用依赖元数据资源
 
         根据应用Id获取依赖元数据资源
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowApplicationDependentResourcesRequest request
-        :return: ShowApplicationDependentResourcesResponse
+        :param request: Request instance for ShowApplicationDependentResources
+        :type request: :class:`huaweicloudsdkdevstar.v1.ShowApplicationDependentResourcesRequest`
+        :rtype: :class:`huaweicloudsdkdevstar.v1.ShowApplicationDependentResourcesResponse`
         """
         return self.show_application_dependent_resources_with_http_info(request)
 
     def show_application_dependent_resources_with_http_info(self, request):
-        """获取应用依赖元数据资源
-
-        根据应用Id获取依赖元数据资源
-
-        :param ShowApplicationDependentResourcesRequest request
-        :return: ShowApplicationDependentResourcesResponse
-        """
-
         all_params = ['application_id', 'x_language', 'limit', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -254,26 +240,21 @@ class DevStarAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_application_v3_async(self, request):
         """获取应用详情
 
         根据应用Id获取应用详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowApplicationV3Request request
-        :return: ShowApplicationV3Response
+        :param request: Request instance for ShowApplicationV3
+        :type request: :class:`huaweicloudsdkdevstar.v1.ShowApplicationV3Request`
+        :rtype: :class:`huaweicloudsdkdevstar.v1.ShowApplicationV3Response`
         """
         return self.show_application_v3_with_http_info(request)
 
     def show_application_v3_with_http_info(self, request):
-        """获取应用详情
-
-        根据应用Id获取应用详情
-
-        :param ShowApplicationV3Request request
-        :return: ShowApplicationV3Response
-        """
-
         all_params = ['application_id', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -319,26 +300,23 @@ class DevStarAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_application_async(self, request):
         """更新应用信息
 
-        根据应用Id更新对应有权限的应用信息 - 允许更新信息的信息包含 name,description,icon
+        根据应用Id更新对应有权限的应用信息
+        - 允许更新信息的信息包含
+        name,description,icon
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateApplicationRequest request
-        :return: UpdateApplicationResponse
+        :param request: Request instance for UpdateApplication
+        :type request: :class:`huaweicloudsdkdevstar.v1.UpdateApplicationRequest`
+        :rtype: :class:`huaweicloudsdkdevstar.v1.UpdateApplicationResponse`
         """
         return self.update_application_with_http_info(request)
 
     def update_application_with_http_info(self, request):
-        """更新应用信息
-
-        根据应用Id更新对应有权限的应用信息 - 允许更新信息的信息包含 name,description,icon
-
-        :param UpdateApplicationRequest request
-        :return: UpdateApplicationResponse
-        """
-
         all_params = ['application_id', 'update_application_request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -386,26 +364,21 @@ class DevStarAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_application_v4_async(self, request):
         """删除应用信息
 
         根据应用Id删除应用，并可以选择删除其关联的代码仓、流水线资源
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteApplicationV4Request request
-        :return: DeleteApplicationV4Response
+        :param request: Request instance for DeleteApplicationV4
+        :type request: :class:`huaweicloudsdkdevstar.v1.DeleteApplicationV4Request`
+        :rtype: :class:`huaweicloudsdkdevstar.v1.DeleteApplicationV4Response`
         """
         return self.delete_application_v4_with_http_info(request)
 
     def delete_application_v4_with_http_info(self, request):
-        """删除应用信息
-
-        根据应用Id删除应用，并可以选择删除其关联的代码仓、流水线资源
-
-        :param DeleteApplicationV4Request request
-        :return: DeleteApplicationV4Response
-        """
-
         all_params = ['application_id', 'is_delete_repository', 'pipeline_ids']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -453,26 +426,22 @@ class DevStarAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_applications_v6_async(self, request):
         """获取应用列表
 
-        获取我创建的应用列表 当前只支持查询我创建的应用，其中请求参数is_created_by_self需为true
+        获取我创建的应用列表
+        当前只支持查询我创建的应用，其中请求参数is_created_by_self需为true
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListApplicationsV6Request request
-        :return: ListApplicationsV6Response
+        :param request: Request instance for ListApplicationsV6
+        :type request: :class:`huaweicloudsdkdevstar.v1.ListApplicationsV6Request`
+        :rtype: :class:`huaweicloudsdkdevstar.v1.ListApplicationsV6Response`
         """
         return self.list_applications_v6_with_http_info(request)
 
     def list_applications_v6_with_http_info(self, request):
-        """获取应用列表
-
-        获取我创建的应用列表 当前只支持查询我创建的应用，其中请求参数is_created_by_self需为true
-
-        :param ListApplicationsV6Request request
-        :return: ListApplicationsV6Response
-        """
-
         all_params = ['x_language', 'attention', 'region_id', 'keyword', 'project_id', 'topic_id', 'is_created_by_self', 'sort_key', 'sort_dir', 'limit', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -538,26 +507,21 @@ class DevStarAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def download_application_code_async(self, request):
         """下载模板产物
 
         下载模板产物。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DownloadApplicationCodeRequest request
-        :return: DownloadApplicationCodeResponse
+        :param request: Request instance for DownloadApplicationCode
+        :type request: :class:`huaweicloudsdkdevstar.v1.DownloadApplicationCodeRequest`
+        :rtype: :class:`huaweicloudsdkdevstar.v1.DownloadApplicationCodeResponse`
         """
         return self.download_application_code_with_http_info(request)
 
     def download_application_code_with_http_info(self, request):
-        """下载模板产物
-
-        下载模板产物。
-
-        :param DownloadApplicationCodeRequest request
-        :return: DownloadApplicationCodeResponse
-        """
-
         all_params = ['job_id', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -603,26 +567,24 @@ class DevStarAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_deployment_jobs_async(self, request):
         """创建部署任务
 
-        创建部署任务，并触发任务执行，当前只支持函数部署。 其中，报文中file_id为查询软件版本包接口返回版本包id; handler为在函数部署方式下，入口函数名称，从应用代码中获取，格式为“包名.类名.函数名称”，例如：com.example.demo.APIGTrigger.handler。 也可以从应用详情接口返回结构template_deployment中直接获取。
+        创建部署任务，并触发任务执行，当前只支持函数部署。
+        其中，报文中file_id为查询软件版本包接口返回版本包id;
+        handler为在函数部署方式下，入口函数名称，从应用代码中获取，格式为“包名.类名.函数名称”，例如：com.example.demo.APIGTrigger.handler。
+        也可以从应用详情接口返回结构template_deployment中直接获取。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateDeploymentJobsRequest request
-        :return: CreateDeploymentJobsResponse
+        :param request: Request instance for CreateDeploymentJobs
+        :type request: :class:`huaweicloudsdkdevstar.v1.CreateDeploymentJobsRequest`
+        :rtype: :class:`huaweicloudsdkdevstar.v1.CreateDeploymentJobsResponse`
         """
         return self.create_deployment_jobs_with_http_info(request)
 
     def create_deployment_jobs_with_http_info(self, request):
-        """创建部署任务
-
-        创建部署任务，并触发任务执行，当前只支持函数部署。 其中，报文中file_id为查询软件版本包接口返回版本包id; handler为在函数部署方式下，入口函数名称，从应用代码中获取，格式为“包名.类名.函数名称”，例如：com.example.demo.APIGTrigger.handler。 也可以从应用详情接口返回结构template_deployment中直接获取。
-
-        :param CreateDeploymentJobsRequest request
-        :return: CreateDeploymentJobsResponse
-        """
-
         all_params = ['application_id', 'environment_tag', 'create_deployment_jobs_request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -672,26 +634,21 @@ class DevStarAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_deployment_jobs_async(self, request):
         """查询应用环境部署任务详情
 
         查询应用环境部署任务详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowDeploymentJobsRequest request
-        :return: ShowDeploymentJobsResponse
+        :param request: Request instance for ShowDeploymentJobs
+        :type request: :class:`huaweicloudsdkdevstar.v1.ShowDeploymentJobsRequest`
+        :rtype: :class:`huaweicloudsdkdevstar.v1.ShowDeploymentJobsResponse`
         """
         return self.show_deployment_jobs_with_http_info(request)
 
     def show_deployment_jobs_with_http_info(self, request):
-        """查询应用环境部署任务详情
-
-        查询应用环境部署任务详情
-
-        :param ShowDeploymentJobsRequest request
-        :return: ShowDeploymentJobsResponse
-        """
-
         all_params = ['application_id', 'environment_tag', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -739,26 +696,29 @@ class DevStarAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def run_codehub_template_job_async(self, request):
         """CodeHub 模板生成代码
 
-        使用CodeHub模板创建应用代码。  通过 Codehub 模板创建生成应用代码的任务，并将应用代码存储于指定的 CodeHub 仓库中或者生成代码压缩包，可以通过返回的任务 ID 查询相关任务状态。  - 接口鉴权方式 通过华为云服务获取的用户token。  - 代码生成位置 应用代码生成后的地址，目前支持codehub地址和压缩包下载地址。
+        使用CodeHub模板创建应用代码。
+        
+        通过 Codehub 模板创建生成应用代码的任务，并将应用代码存储于指定的 CodeHub 仓库中或者生成代码压缩包，可以通过返回的任务 ID 查询相关任务状态。
+        
+        - 接口鉴权方式
+        通过华为云服务获取的用户token。
+        
+        - 代码生成位置
+        应用代码生成后的地址，目前支持codehub地址和压缩包下载地址。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param RunCodehubTemplateJobRequest request
-        :return: RunCodehubTemplateJobResponse
+        :param request: Request instance for RunCodehubTemplateJob
+        :type request: :class:`huaweicloudsdkdevstar.v1.RunCodehubTemplateJobRequest`
+        :rtype: :class:`huaweicloudsdkdevstar.v1.RunCodehubTemplateJobResponse`
         """
         return self.run_codehub_template_job_with_http_info(request)
 
     def run_codehub_template_job_with_http_info(self, request):
-        """CodeHub 模板生成代码
-
-        使用CodeHub模板创建应用代码。  通过 Codehub 模板创建生成应用代码的任务，并将应用代码存储于指定的 CodeHub 仓库中或者生成代码压缩包，可以通过返回的任务 ID 查询相关任务状态。  - 接口鉴权方式 通过华为云服务获取的用户token。  - 代码生成位置 应用代码生成后的地址，目前支持codehub地址和压缩包下载地址。
-
-        :param RunCodehubTemplateJobRequest request
-        :return: RunCodehubTemplateJobResponse
-        """
-
         all_params = ['run_codehub_template_job_request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -804,26 +764,29 @@ class DevStarAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def run_devstar_template_job_async(self, request):
         """Devstar 模板生成代码
 
-        使用DevStar的模板创建应用代码。  通过 DevStar 模板创建生成应用代码的任务，并将应用代码存储于指定的 CodeHub 仓库中，可以通过返回的任务 ID 查询相关任务状态。  - 接口鉴权方式 通过华为云服务获取的用户token。  - 代码生成位置 应用代码生成后的地址，目前支持codehub地址和压缩包下载地址。
+        使用DevStar的模板创建应用代码。
+        
+        通过 DevStar 模板创建生成应用代码的任务，并将应用代码存储于指定的 CodeHub 仓库中，可以通过返回的任务 ID 查询相关任务状态。
+        
+        - 接口鉴权方式
+        通过华为云服务获取的用户token。
+        
+        - 代码生成位置
+        应用代码生成后的地址，目前支持codehub地址和压缩包下载地址。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param RunDevstarTemplateJobRequest request
-        :return: RunDevstarTemplateJobResponse
+        :param request: Request instance for RunDevstarTemplateJob
+        :type request: :class:`huaweicloudsdkdevstar.v1.RunDevstarTemplateJobRequest`
+        :rtype: :class:`huaweicloudsdkdevstar.v1.RunDevstarTemplateJobResponse`
         """
         return self.run_devstar_template_job_with_http_info(request)
 
     def run_devstar_template_job_with_http_info(self, request):
-        """Devstar 模板生成代码
-
-        使用DevStar的模板创建应用代码。  通过 DevStar 模板创建生成应用代码的任务，并将应用代码存储于指定的 CodeHub 仓库中，可以通过返回的任务 ID 查询相关任务状态。  - 接口鉴权方式 通过华为云服务获取的用户token。  - 代码生成位置 应用代码生成后的地址，目前支持codehub地址和压缩包下载地址。
-
-        :param RunDevstarTemplateJobRequest request
-        :return: RunDevstarTemplateJobResponse
-        """
-
         all_params = ['run_devstar_template_job_request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -869,26 +832,30 @@ class DevStarAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_job_detail_async(self, request):
         """查询任务详情
 
-        查询任务的详情。  通过任务ID可以查看任务的状态 当任务结束时返回应用代码存放的位置。  - 接口鉴权方式 通过华为云服务获取的用户token。  - 代码生成位置 应用代码生成后的地址，目前支持codehub地址和压缩包下载地址。
+        查询任务的详情。
+        
+        通过任务ID可以查看任务的状态
+        当任务结束时返回应用代码存放的位置。
+        
+        - 接口鉴权方式
+        通过华为云服务获取的用户token。
+        
+        - 代码生成位置
+        应用代码生成后的地址，目前支持codehub地址和压缩包下载地址。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowJobDetailRequest request
-        :return: ShowJobDetailResponse
+        :param request: Request instance for ShowJobDetail
+        :type request: :class:`huaweicloudsdkdevstar.v1.ShowJobDetailRequest`
+        :rtype: :class:`huaweicloudsdkdevstar.v1.ShowJobDetailResponse`
         """
         return self.show_job_detail_with_http_info(request)
 
     def show_job_detail_with_http_info(self, request):
-        """查询任务详情
-
-        查询任务的详情。  通过任务ID可以查看任务的状态 当任务结束时返回应用代码存放的位置。  - 接口鉴权方式 通过华为云服务获取的用户token。  - 代码生成位置 应用代码生成后的地址，目前支持codehub地址和压缩包下载地址。
-
-        :param ShowJobDetailRequest request
-        :return: ShowJobDetailResponse
-        """
-
         all_params = ['job_id', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -934,26 +901,21 @@ class DevStarAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_pipeline_templates_async(self, request):
         """流水线模板列表查询
 
         流水线模板列表查询
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListPipelineTemplatesRequest request
-        :return: ListPipelineTemplatesResponse
+        :param request: Request instance for ListPipelineTemplates
+        :type request: :class:`huaweicloudsdkdevstar.v1.ListPipelineTemplatesRequest`
+        :rtype: :class:`huaweicloudsdkdevstar.v1.ListPipelineTemplatesResponse`
         """
         return self.list_pipeline_templates_with_http_info(request)
 
     def list_pipeline_templates_with_http_info(self, request):
-        """流水线模板列表查询
-
-        流水线模板列表查询
-
-        :param ListPipelineTemplatesRequest request
-        :return: ListPipelineTemplatesResponse
-        """
-
         all_params = ['region_id', 'x_language', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1003,26 +965,21 @@ class DevStarAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_pipeline_last_status_v2_async(self, request):
         """查询流水线最近一次运行状态查询接口
 
         查询应用流水线最近一次运行状态查询接口
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowPipelineLastStatusV2Request request
-        :return: ShowPipelineLastStatusV2Response
+        :param request: Request instance for ShowPipelineLastStatusV2
+        :type request: :class:`huaweicloudsdkdevstar.v1.ShowPipelineLastStatusV2Request`
+        :rtype: :class:`huaweicloudsdkdevstar.v1.ShowPipelineLastStatusV2Response`
         """
         return self.show_pipeline_last_status_v2_with_http_info(request)
 
     def show_pipeline_last_status_v2_with_http_info(self, request):
-        """查询流水线最近一次运行状态查询接口
-
-        查询应用流水线最近一次运行状态查询接口
-
-        :param ShowPipelineLastStatusV2Request request
-        :return: ShowPipelineLastStatusV2Response
-        """
-
         all_params = ['pipeline_id', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1068,26 +1025,21 @@ class DevStarAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def start_pipeline_async(self, request):
         """根据流水线Id操作流水线启动
 
         根据流水线Id操作流水线启动
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param StartPipelineRequest request
-        :return: StartPipelineResponse
+        :param request: Request instance for StartPipeline
+        :type request: :class:`huaweicloudsdkdevstar.v1.StartPipelineRequest`
+        :rtype: :class:`huaweicloudsdkdevstar.v1.StartPipelineResponse`
         """
         return self.start_pipeline_with_http_info(request)
 
     def start_pipeline_with_http_info(self, request):
-        """根据流水线Id操作流水线启动
-
-        根据流水线Id操作流水线启动
-
-        :param StartPipelineRequest request
-        :return: StartPipelineResponse
-        """
-
         all_params = ['pipeline_id', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1133,26 +1085,22 @@ class DevStarAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_projects_v4_async(self, request):
         """获取用户有权限的DevStar存量DevCloud项目列表
 
-        获取用户有权限的DevStar存量DevCloud项目列表。 来源包括：1.DevStar创建的DevCloud项目；2.DevStar应用有关联DevCloud项目。
+        获取用户有权限的DevStar存量DevCloud项目列表。
+        来源包括：1.DevStar创建的DevCloud项目；2.DevStar应用有关联DevCloud项目。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListProjectsV4Request request
-        :return: ListProjectsV4Response
+        :param request: Request instance for ListProjectsV4
+        :type request: :class:`huaweicloudsdkdevstar.v1.ListProjectsV4Request`
+        :rtype: :class:`huaweicloudsdkdevstar.v1.ListProjectsV4Response`
         """
         return self.list_projects_v4_with_http_info(request)
 
     def list_projects_v4_with_http_info(self, request):
-        """获取用户有权限的DevStar存量DevCloud项目列表
-
-        获取用户有权限的DevStar存量DevCloud项目列表。 来源包括：1.DevStar创建的DevCloud项目；2.DevStar应用有关联DevCloud项目。
-
-        :param ListProjectsV4Request request
-        :return: ListProjectsV4Response
-        """
-
         all_params = ['x_language', 'keyword', 'limit', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1202,26 +1150,25 @@ class DevStarAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def check_repository_duplicate_name_async(self, request):
         """检查仓库名称是否重名
 
-        检查仓库名称是否重名 - 校验规则     同一个项目下的仓库名称不能存在重复,当结果为true时,校验通过,仓库名称可用,否则,校验不通过,当前项目下的仓库名称已存在,不可用 - 必传参数     project_id,name,region_id
+        检查仓库名称是否重名
+        - 校验规则
+            同一个项目下的仓库名称不能存在重复,当结果为true时,校验通过,仓库名称可用,否则,校验不通过,当前项目下的仓库名称已存在,不可用
+        - 必传参数
+            project_id,name,region_id
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CheckRepositoryDuplicateNameRequest request
-        :return: CheckRepositoryDuplicateNameResponse
+        :param request: Request instance for CheckRepositoryDuplicateName
+        :type request: :class:`huaweicloudsdkdevstar.v1.CheckRepositoryDuplicateNameRequest`
+        :rtype: :class:`huaweicloudsdkdevstar.v1.CheckRepositoryDuplicateNameResponse`
         """
         return self.check_repository_duplicate_name_with_http_info(request)
 
     def check_repository_duplicate_name_with_http_info(self, request):
-        """检查仓库名称是否重名
-
-        检查仓库名称是否重名 - 校验规则     同一个项目下的仓库名称不能存在重复,当结果为true时,校验通过,仓库名称可用,否则,校验不通过,当前项目下的仓库名称已存在,不可用 - 必传参数     project_id,name,region_id
-
-        :param CheckRepositoryDuplicateNameRequest request
-        :return: CheckRepositoryDuplicateNameResponse
-        """
-
         all_params = ['project_id', 'name', 'region_id', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1271,26 +1218,23 @@ class DevStarAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_repository_by_cloud_ide_async(self, request):
         """使用 CloudIDE 实例打开应用代码
 
-        使用 CloudIDE 实例打开应用代码。CloudIDE会保存用户项目数据，相同用户使用同一个CloudIDE，使用要求： - 用户需为登录状态。 - 拥有仓库权限。 
+        使用 CloudIDE 实例打开应用代码。CloudIDE会保存用户项目数据，相同用户使用同一个CloudIDE，使用要求：
+        - 用户需为登录状态。
+        - 拥有仓库权限。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowRepositoryByCloudIdeRequest request
-        :return: ShowRepositoryByCloudIdeResponse
+        :param request: Request instance for ShowRepositoryByCloudIde
+        :type request: :class:`huaweicloudsdkdevstar.v1.ShowRepositoryByCloudIdeRequest`
+        :rtype: :class:`huaweicloudsdkdevstar.v1.ShowRepositoryByCloudIdeResponse`
         """
         return self.show_repository_by_cloud_ide_with_http_info(request)
 
     def show_repository_by_cloud_ide_with_http_info(self, request):
-        """使用 CloudIDE 实例打开应用代码
-
-        使用 CloudIDE 实例打开应用代码。CloudIDE会保存用户项目数据，相同用户使用同一个CloudIDE，使用要求： - 用户需为登录状态。 - 拥有仓库权限。 
-
-        :param ShowRepositoryByCloudIdeRequest request
-        :return: ShowRepositoryByCloudIdeResponse
-        """
-
         all_params = ['repository_id', 'repository_ssh_url', 'x_language', 'region_id', 'space_prefix', 'is_open_last', 'is_free']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1346,26 +1290,21 @@ class DevStarAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_repository_statistical_data_v2_async(self, request):
         """应用代码仓库统计信息
 
         查询代码仓库的统计信息,包括代码仓的名称,代码行数等信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowRepositoryStatisticalDataV2Request request
-        :return: ShowRepositoryStatisticalDataV2Response
+        :param request: Request instance for ShowRepositoryStatisticalDataV2
+        :type request: :class:`huaweicloudsdkdevstar.v1.ShowRepositoryStatisticalDataV2Request`
+        :rtype: :class:`huaweicloudsdkdevstar.v1.ShowRepositoryStatisticalDataV2Response`
         """
         return self.show_repository_statistical_data_v2_with_http_info(request)
 
     def show_repository_statistical_data_v2_with_http_info(self, request):
-        """应用代码仓库统计信息
-
-        查询代码仓库的统计信息,包括代码仓的名称,代码行数等信息
-
-        :param ShowRepositoryStatisticalDataV2Request request
-        :return: ShowRepositoryStatisticalDataV2Response
-        """
-
         all_params = ['repository_id', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1411,26 +1350,21 @@ class DevStarAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_template_file_async(self, request):
         """读取模板文件
 
         该接口可以用于模板作者或模板维护人读取模板文件内容。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowTemplateFileRequest request
-        :return: ShowTemplateFileResponse
+        :param request: Request instance for ShowTemplateFile
+        :type request: :class:`huaweicloudsdkdevstar.v1.ShowTemplateFileRequest`
+        :rtype: :class:`huaweicloudsdkdevstar.v1.ShowTemplateFileResponse`
         """
         return self.show_template_file_with_http_info(request)
 
     def show_template_file_with_http_info(self, request):
-        """读取模板文件
-
-        该接口可以用于模板作者或模板维护人读取模板文件内容。
-
-        :param ShowTemplateFileRequest request
-        :return: ShowTemplateFileResponse
-        """
-
         all_params = ['template_id', 'file_path', 'x_language', 'type']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1480,26 +1414,21 @@ class DevStarAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_template_view_histories_async(self, request):
         """同步模板浏览记录
 
-        未登录状态下，将用户浏览过的模板缓存在浏览器中，登录时，调用该接口同步模板浏览记录。 
+        未登录状态下，将用户浏览过的模板缓存在浏览器中，登录时，调用该接口同步模板浏览记录。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateTemplateViewHistoriesRequest request
-        :return: CreateTemplateViewHistoriesResponse
+        :param request: Request instance for CreateTemplateViewHistories
+        :type request: :class:`huaweicloudsdkdevstar.v1.CreateTemplateViewHistoriesRequest`
+        :rtype: :class:`huaweicloudsdkdevstar.v1.CreateTemplateViewHistoriesResponse`
         """
         return self.create_template_view_histories_with_http_info(request)
 
     def create_template_view_histories_with_http_info(self, request):
-        """同步模板浏览记录
-
-        未登录状态下，将用户浏览过的模板缓存在浏览器中，登录时，调用该接口同步模板浏览记录。 
-
-        :param CreateTemplateViewHistoriesRequest request
-        :return: CreateTemplateViewHistoriesResponse
-        """
-
         all_params = ['create_template_view_histories_request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1545,26 +1474,21 @@ class DevStarAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_published_templates_async(self, request):
         """查询模板列表（V1）
 
         查询模板列表，推荐使用/v1/templates/query接口。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListPublishedTemplatesRequest request
-        :return: ListPublishedTemplatesResponse
+        :param request: Request instance for ListPublishedTemplates
+        :type request: :class:`huaweicloudsdkdevstar.v1.ListPublishedTemplatesRequest`
+        :rtype: :class:`huaweicloudsdkdevstar.v1.ListPublishedTemplatesResponse`
         """
         return self.list_published_templates_with_http_info(request)
 
     def list_published_templates_with_http_info(self, request):
-        """查询模板列表（V1）
-
-        查询模板列表，推荐使用/v1/templates/query接口。
-
-        :param ListPublishedTemplatesRequest request
-        :return: ListPublishedTemplatesResponse
-        """
-
         all_params = ['x_language', 'keyword', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1614,26 +1538,21 @@ class DevStarAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_template_view_histories_async(self, request):
         """我浏览的模板记录
 
-        查询DevStar或者CodeLabs登录用户浏览过的模板（只返回最近浏览的5个模板）。 
+        查询DevStar或者CodeLabs登录用户浏览过的模板（只返回最近浏览的5个模板）。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListTemplateViewHistoriesRequest request
-        :return: ListTemplateViewHistoriesResponse
+        :param request: Request instance for ListTemplateViewHistories
+        :type request: :class:`huaweicloudsdkdevstar.v1.ListTemplateViewHistoriesRequest`
+        :rtype: :class:`huaweicloudsdkdevstar.v1.ListTemplateViewHistoriesResponse`
         """
         return self.list_template_view_histories_with_http_info(request)
 
     def list_template_view_histories_with_http_info(self, request):
-        """我浏览的模板记录
-
-        查询DevStar或者CodeLabs登录用户浏览过的模板（只返回最近浏览的5个模板）。 
-
-        :param ListTemplateViewHistoriesRequest request
-        :return: ListTemplateViewHistoriesResponse
-        """
-
         all_params = ['platform_source', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1679,26 +1598,21 @@ class DevStarAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_templates_async(self, request):
         """查询模板列表
 
         查询模板列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListTemplatesRequest request
-        :return: ListTemplatesResponse
+        :param request: Request instance for ListTemplates
+        :type request: :class:`huaweicloudsdkdevstar.v1.ListTemplatesRequest`
+        :rtype: :class:`huaweicloudsdkdevstar.v1.ListTemplatesResponse`
         """
         return self.list_templates_with_http_info(request)
 
     def list_templates_with_http_info(self, request):
-        """查询模板列表
-
-        查询模板列表。
-
-        :param ListTemplatesRequest request
-        :return: ListTemplatesResponse
-        """
-
         all_params = ['x_language', 'list_templates_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1744,26 +1658,21 @@ class DevStarAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_templates_v2_async(self, request):
         """查询模板列表（V2）
 
         查询模板列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListTemplatesV2Request request
-        :return: ListTemplatesV2Response
+        :param request: Request instance for ListTemplatesV2
+        :type request: :class:`huaweicloudsdkdevstar.v1.ListTemplatesV2Request`
+        :rtype: :class:`huaweicloudsdkdevstar.v1.ListTemplatesV2Response`
         """
         return self.list_templates_v2_with_http_info(request)
 
     def list_templates_v2_with_http_info(self, request):
-        """查询模板列表（V2）
-
-        查询模板列表。
-
-        :param ListTemplatesV2Request request
-        :return: ListTemplatesV2Response
-        """
-
         all_params = ['action_id', 'x_language', 'list_templates_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1811,26 +1720,21 @@ class DevStarAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_template_v3_async(self, request):
         """查询模板详情（V3）
 
-        获取指定模板详情，包括模板id、名称、描述、作者、标签、上架时间等信息。 
+        获取指定模板详情，包括模板id、名称、描述、作者、标签、上架时间等信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowTemplateV3Request request
-        :return: ShowTemplateV3Response
+        :param request: Request instance for ShowTemplateV3
+        :type request: :class:`huaweicloudsdkdevstar.v1.ShowTemplateV3Request`
+        :rtype: :class:`huaweicloudsdkdevstar.v1.ShowTemplateV3Response`
         """
         return self.show_template_v3_with_http_info(request)
 
     def show_template_v3_with_http_info(self, request):
-        """查询模板详情（V3）
-
-        获取指定模板详情，包括模板id、名称、描述、作者、标签、上架时间等信息。 
-
-        :param ShowTemplateV3Request request
-        :return: ShowTemplateV3Response
-        """
-
         all_params = ['template_id', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1876,26 +1780,21 @@ class DevStarAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_template_detail_async(self, request):
         """查询模板详情（V1）
 
         查询模板详情，推荐使用V3版本接口。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowTemplateDetailRequest request
-        :return: ShowTemplateDetailResponse
+        :param request: Request instance for ShowTemplateDetail
+        :type request: :class:`huaweicloudsdkdevstar.v1.ShowTemplateDetailRequest`
+        :rtype: :class:`huaweicloudsdkdevstar.v1.ShowTemplateDetailResponse`
         """
         return self.show_template_detail_with_http_info(request)
 
     def show_template_detail_with_http_info(self, request):
-        """查询模板详情（V1）
-
-        查询模板详情，推荐使用V3版本接口。
-
-        :param ShowTemplateDetailRequest request
-        :return: ShowTemplateDetailResponse
-        """
-
         all_params = ['template_id', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1940,7 +1839,6 @@ class DevStarAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

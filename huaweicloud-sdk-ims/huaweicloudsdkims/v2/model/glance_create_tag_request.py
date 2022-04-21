@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GlanceCreateTagRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class GlanceCreateTagRequest:
     }
 
     def __init__(self, image_id=None, tag=None):
-        """GlanceCreateTagRequest - a model defined in huaweicloud sdk"""
+        """GlanceCreateTagRequest
+
+        The model defined in huaweicloud sdk
+
+        :param image_id: 镜像id
+        :type image_id: str
+        :param tag: 新增的tag。字符串中不能包含“&#x3D;”和“.”。
+        :type tag: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class GlanceCreateTagRequest:
         镜像id
 
         :param image_id: The image_id of this GlanceCreateTagRequest.
-        :type: str
+        :type image_id: str
         """
         self._image_id = image_id
 
@@ -83,7 +90,7 @@ class GlanceCreateTagRequest:
         新增的tag。字符串中不能包含“=”和“.”。
 
         :param tag: The tag of this GlanceCreateTagRequest.
-        :type: str
+        :type tag: str
         """
         self._tag = tag
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InviteeInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class InviteeInfo:
     }
 
     def __init__(self, invitee_id=None, invitee_name=None, invitee_bcs_name=None, invitee_bcs_id=None, invitee_project_id=None):
-        """InviteeInfo - a model defined in huaweicloud sdk"""
+        """InviteeInfo
+
+        The model defined in huaweicloud sdk
+
+        :param invitee_id: 被邀请用户id
+        :type invitee_id: str
+        :param invitee_name: 被邀请租户名称
+        :type invitee_name: int
+        :param invitee_bcs_name: 被邀请的服务名称
+        :type invitee_bcs_name: str
+        :param invitee_bcs_id: 被邀请的服务id
+        :type invitee_bcs_id: str
+        :param invitee_project_id: 被邀请的项目id
+        :type invitee_project_id: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class InviteeInfo:
         被邀请用户id
 
         :param invitee_id: The invitee_id of this InviteeInfo.
-        :type: str
+        :type invitee_id: str
         """
         self._invitee_id = invitee_id
 
@@ -100,7 +113,7 @@ class InviteeInfo:
         被邀请租户名称
 
         :param invitee_name: The invitee_name of this InviteeInfo.
-        :type: int
+        :type invitee_name: int
         """
         self._invitee_name = invitee_name
 
@@ -122,7 +135,7 @@ class InviteeInfo:
         被邀请的服务名称
 
         :param invitee_bcs_name: The invitee_bcs_name of this InviteeInfo.
-        :type: str
+        :type invitee_bcs_name: str
         """
         self._invitee_bcs_name = invitee_bcs_name
 
@@ -144,7 +157,7 @@ class InviteeInfo:
         被邀请的服务id
 
         :param invitee_bcs_id: The invitee_bcs_id of this InviteeInfo.
-        :type: str
+        :type invitee_bcs_id: str
         """
         self._invitee_bcs_id = invitee_bcs_id
 
@@ -166,7 +179,7 @@ class InviteeInfo:
         被邀请的项目id
 
         :param invitee_project_id: The invitee_project_id of this InviteeInfo.
-        :type: str
+        :type invitee_project_id: str
         """
         self._invitee_project_id = invitee_project_id
 

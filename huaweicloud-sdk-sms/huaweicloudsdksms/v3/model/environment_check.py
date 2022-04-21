@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EnvironmentCheck:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class EnvironmentCheck:
     }
 
     def __init__(self, id=None, params=None, name=None, result=None, error_code=None, error_params=None):
-        """EnvironmentCheck - a model defined in huaweicloud sdk"""
+        """EnvironmentCheck
+
+        The model defined in huaweicloud sdk
+
+        :param id: 该检查项的ID
+        :type id: int
+        :param params: 参数
+        :type params: list[str]
+        :param name: 检查项名称
+        :type name: str
+        :param result: 检查结果
+        :type result: str
+        :param error_code: 检查不通过的错误码
+        :type error_code: str
+        :param error_params: 检查不通过的错误参数
+        :type error_params: str
+        """
         
         
 
@@ -80,7 +95,7 @@ class EnvironmentCheck:
         该检查项的ID
 
         :param id: The id of this EnvironmentCheck.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -102,7 +117,7 @@ class EnvironmentCheck:
         参数
 
         :param params: The params of this EnvironmentCheck.
-        :type: list[str]
+        :type params: list[str]
         """
         self._params = params
 
@@ -124,7 +139,7 @@ class EnvironmentCheck:
         检查项名称
 
         :param name: The name of this EnvironmentCheck.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -146,7 +161,7 @@ class EnvironmentCheck:
         检查结果
 
         :param result: The result of this EnvironmentCheck.
-        :type: str
+        :type result: str
         """
         self._result = result
 
@@ -168,7 +183,7 @@ class EnvironmentCheck:
         检查不通过的错误码
 
         :param error_code: The error_code of this EnvironmentCheck.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -190,7 +205,7 @@ class EnvironmentCheck:
         检查不通过的错误参数
 
         :param error_params: The error_params of this EnvironmentCheck.
-        :type: str
+        :type error_params: str
         """
         self._error_params = error_params
 

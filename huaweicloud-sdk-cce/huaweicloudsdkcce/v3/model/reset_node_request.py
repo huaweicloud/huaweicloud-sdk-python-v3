@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResetNodeRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ResetNodeRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """ResetNodeRequest - a model defined in huaweicloud sdk"""
+        """ResetNodeRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 集群 ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
+        :type cluster_id: str
+        :param body: Body of the ResetNodeRequest
+        :type body: :class:`huaweicloudsdkcce.v3.ResetNodeList`
+        """
         
         
 
@@ -62,7 +69,7 @@ class ResetNodeRequest:
         集群 ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
         :param cluster_id: The cluster_id of this ResetNodeRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -72,7 +79,7 @@ class ResetNodeRequest:
 
 
         :return: The body of this ResetNodeRequest.
-        :rtype: ResetNodeList
+        :rtype: :class:`huaweicloudsdkcce.v3.ResetNodeList`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class ResetNodeRequest:
 
 
         :param body: The body of this ResetNodeRequest.
-        :type: ResetNodeList
+        :type body: :class:`huaweicloudsdkcce.v3.ResetNodeList`
         """
         self._body = body
 

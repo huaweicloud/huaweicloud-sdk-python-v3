@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRtcRoomListResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListRtcRoomListResponse(SdkResponse):
     }
 
     def __init__(self, total=None, limit=None, offset=None, room_info_list=None, x_request_id=None):
-        """ListRtcRoomListResponse - a model defined in huaweicloud sdk"""
+        """ListRtcRoomListResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 总数
+        :type total: int
+        :param limit: 查询结果限制
+        :type limit: int
+        :param offset: 查询偏移量
+        :type offset: int
+        :param room_info_list: 房间列表信息
+        :type room_info_list: list[:class:`huaweicloudsdkcloudrtc.v1.RtcServerRoomInfo`]
+        :param x_request_id: 
+        :type x_request_id: str
+        """
         
         super(ListRtcRoomListResponse, self).__init__()
 
@@ -78,7 +91,7 @@ class ListRtcRoomListResponse(SdkResponse):
         总数
 
         :param total: The total of this ListRtcRoomListResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -100,7 +113,7 @@ class ListRtcRoomListResponse(SdkResponse):
         查询结果限制
 
         :param limit: The limit of this ListRtcRoomListResponse.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -122,7 +135,7 @@ class ListRtcRoomListResponse(SdkResponse):
         查询偏移量
 
         :param offset: The offset of this ListRtcRoomListResponse.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -133,7 +146,7 @@ class ListRtcRoomListResponse(SdkResponse):
         房间列表信息
 
         :return: The room_info_list of this ListRtcRoomListResponse.
-        :rtype: list[RtcServerRoomInfo]
+        :rtype: list[:class:`huaweicloudsdkcloudrtc.v1.RtcServerRoomInfo`]
         """
         return self._room_info_list
 
@@ -144,7 +157,7 @@ class ListRtcRoomListResponse(SdkResponse):
         房间列表信息
 
         :param room_info_list: The room_info_list of this ListRtcRoomListResponse.
-        :type: list[RtcServerRoomInfo]
+        :type room_info_list: list[:class:`huaweicloudsdkcloudrtc.v1.RtcServerRoomInfo`]
         """
         self._room_info_list = room_info_list
 
@@ -164,7 +177,7 @@ class ListRtcRoomListResponse(SdkResponse):
 
 
         :param x_request_id: The x_request_id of this ListRtcRoomListResponse.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 

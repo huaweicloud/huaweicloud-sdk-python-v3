@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowOriginHostResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowOriginHostResponse(SdkResponse):
     }
 
     def __init__(self, origin_host=None):
-        """ShowOriginHostResponse - a model defined in huaweicloud sdk"""
+        """ShowOriginHostResponse
+
+        The model defined in huaweicloud sdk
+
+        :param origin_host: 
+        :type origin_host: :class:`huaweicloudsdkcdn.v1.DomainOriginHost`
+        """
         
         super(ShowOriginHostResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class ShowOriginHostResponse(SdkResponse):
 
 
         :return: The origin_host of this ShowOriginHostResponse.
-        :rtype: DomainOriginHost
+        :rtype: :class:`huaweicloudsdkcdn.v1.DomainOriginHost`
         """
         return self._origin_host
 
@@ -56,7 +61,7 @@ class ShowOriginHostResponse(SdkResponse):
 
 
         :param origin_host: The origin_host of this ShowOriginHostResponse.
-        :type: DomainOriginHost
+        :type origin_host: :class:`huaweicloudsdkcdn.v1.DomainOriginHost`
         """
         self._origin_host = origin_host
 

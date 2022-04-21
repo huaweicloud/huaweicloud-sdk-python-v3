@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Advance:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Advance:
     }
 
     def __init__(self, index=None, contents=None):
-        """Advance - a model defined in huaweicloud sdk"""
+        """Advance
+
+        The model defined in huaweicloud sdk
+
+        :param index: 索引（参数：params，会话cookie：cookie，header字段：header，body字段：body，多种组合：multipart）
+        :type index: str
+        :param contents: 指定字段（仅在param，cookie，header模式下可以使用）
+        :type contents: list[str]
+        """
         
         
 
@@ -63,7 +70,7 @@ class Advance:
         索引（参数：params，会话cookie：cookie，header字段：header，body字段：body，多种组合：multipart）
 
         :param index: The index of this Advance.
-        :type: str
+        :type index: str
         """
         self._index = index
 
@@ -85,7 +92,7 @@ class Advance:
         指定字段（仅在param，cookie，header模式下可以使用）
 
         :param contents: The contents of this Advance.
-        :type: list[str]
+        :type contents: list[str]
         """
         self._contents = contents
 

@@ -52,21 +52,17 @@ class RomaClient(Client):
         """添加子设备到网关
 
         添加子设备到网关
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param AddSubsetsToGatewayRequest request
-        :return: AddSubsetsToGatewayResponse
+        :param request: Request instance for AddSubsetsToGateway
+        :type request: :class:`huaweicloudsdkroma.v2.AddSubsetsToGatewayRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.AddSubsetsToGatewayResponse`
         """
         return self.add_subsets_to_gateway_with_http_info(request)
 
     def add_subsets_to_gateway_with_http_info(self, request):
-        """添加子设备到网关
-
-        添加子设备到网关
-
-        :param AddSubsetsToGatewayRequest request
-        :return: AddSubsetsToGatewayResponse
-        """
-
         all_params = ['instance_id', 'device_id', 'add_subsets_to_gateway_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -114,26 +110,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def associate_apps_for_app_quota(self, request):
         """客户端配额绑定客户端应用列表
 
         客户端配额绑定客户端应用列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param AssociateAppsForAppQuotaRequest request
-        :return: AssociateAppsForAppQuotaResponse
+        :param request: Request instance for AssociateAppsForAppQuota
+        :type request: :class:`huaweicloudsdkroma.v2.AssociateAppsForAppQuotaRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.AssociateAppsForAppQuotaResponse`
         """
         return self.associate_apps_for_app_quota_with_http_info(request)
 
     def associate_apps_for_app_quota_with_http_info(self, request):
-        """客户端配额绑定客户端应用列表
-
-        客户端配额绑定客户端应用列表
-
-        :param AssociateAppsForAppQuotaRequest request
-        :return: AssociateAppsForAppQuotaResponse
-        """
-
         all_params = ['instance_id', 'app_quota_id', 'associate_apps_for_app_quota_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -181,26 +172,22 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def associate_certificate_v2(self, request):
         """绑定域名证书
 
-        如果创建API时，“定义API请求”使用HTTPS请求协议，那么在独立域名中需要添加SSL证书。 本章节主要介绍为特定域名绑定证书。
+        如果创建API时，“定义API请求”使用HTTPS请求协议，那么在独立域名中需要添加SSL证书。
+        本章节主要介绍为特定域名绑定证书。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param AssociateCertificateV2Request request
-        :return: AssociateCertificateV2Response
+        :param request: Request instance for AssociateCertificateV2
+        :type request: :class:`huaweicloudsdkroma.v2.AssociateCertificateV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.AssociateCertificateV2Response`
         """
         return self.associate_certificate_v2_with_http_info(request)
 
     def associate_certificate_v2_with_http_info(self, request):
-        """绑定域名证书
-
-        如果创建API时，“定义API请求”使用HTTPS请求协议，那么在独立域名中需要添加SSL证书。 本章节主要介绍为特定域名绑定证书。
-
-        :param AssociateCertificateV2Request request
-        :return: AssociateCertificateV2Response
-        """
-
         all_params = ['instance_id', 'group_id', 'domain_id', 'associate_certificate_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -250,26 +237,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def associate_domain_v2(self, request):
         """绑定域名
 
         用户自定义的域名，需要CNAME到API分组的子域名上才能生效。 每个API分组下最多可绑定5个域名。绑定域名后，用户可通过自定义域名调用API。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param AssociateDomainV2Request request
-        :return: AssociateDomainV2Response
+        :param request: Request instance for AssociateDomainV2
+        :type request: :class:`huaweicloudsdkroma.v2.AssociateDomainV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.AssociateDomainV2Response`
         """
         return self.associate_domain_v2_with_http_info(request)
 
     def associate_domain_v2_with_http_info(self, request):
-        """绑定域名
-
-        用户自定义的域名，需要CNAME到API分组的子域名上才能生效。 每个API分组下最多可绑定5个域名。绑定域名后，用户可通过自定义域名调用API。
-
-        :param AssociateDomainV2Request request
-        :return: AssociateDomainV2Response
-        """
-
         all_params = ['instance_id', 'group_id', 'associate_domain_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -317,26 +299,25 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def associate_signature_key_v2(self, request):
         """绑定签名密钥
 
-        签名密钥创建后，需要绑定到API才能生效。  将签名密钥绑定到API后，则ROMA Connect APIC请求后端服务时就会使用这个签名密钥进行加密签名，后端服务可以校验这个签名来验证请求来源。  将指定的签名密钥绑定到一个或多个已发布的API上。同一个API发布到不同的环境可以绑定不同的签名密钥；一个API在发布到特定环境后只能绑定一个签名密钥。
+        签名密钥创建后，需要绑定到API才能生效。
+        
+        将签名密钥绑定到API后，则ROMA Connect APIC请求后端服务时就会使用这个签名密钥进行加密签名，后端服务可以校验这个签名来验证请求来源。
+        
+        将指定的签名密钥绑定到一个或多个已发布的API上。同一个API发布到不同的环境可以绑定不同的签名密钥；一个API在发布到特定环境后只能绑定一个签名密钥。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param AssociateSignatureKeyV2Request request
-        :return: AssociateSignatureKeyV2Response
+        :param request: Request instance for AssociateSignatureKeyV2
+        :type request: :class:`huaweicloudsdkroma.v2.AssociateSignatureKeyV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.AssociateSignatureKeyV2Response`
         """
         return self.associate_signature_key_v2_with_http_info(request)
 
     def associate_signature_key_v2_with_http_info(self, request):
-        """绑定签名密钥
-
-        签名密钥创建后，需要绑定到API才能生效。  将签名密钥绑定到API后，则ROMA Connect APIC请求后端服务时就会使用这个签名密钥进行加密签名，后端服务可以校验这个签名来验证请求来源。  将指定的签名密钥绑定到一个或多个已发布的API上。同一个API发布到不同的环境可以绑定不同的签名密钥；一个API在发布到特定环境后只能绑定一个签名密钥。
-
-        :param AssociateSignatureKeyV2Request request
-        :return: AssociateSignatureKeyV2Response
-        """
-
         all_params = ['instance_id', 'associate_signature_key_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -382,26 +363,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_add_device_to_group(self, request):
         """批量添加设备到设备分组
 
         批量添加设备到设备分组
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchAddDeviceToGroupRequest request
-        :return: BatchAddDeviceToGroupResponse
+        :param request: Request instance for BatchAddDeviceToGroup
+        :type request: :class:`huaweicloudsdkroma.v2.BatchAddDeviceToGroupRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.BatchAddDeviceToGroupResponse`
         """
         return self.batch_add_device_to_group_with_http_info(request)
 
     def batch_add_device_to_group_with_http_info(self, request):
-        """批量添加设备到设备分组
-
-        批量添加设备到设备分组
-
-        :param BatchAddDeviceToGroupRequest request
-        :return: BatchAddDeviceToGroupResponse
-        """
-
         all_params = ['instance_id', 'group_id', 'batch_add_device_to_group_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -449,26 +425,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_delete_devices(self, request):
         """批量删除设备
 
         批量删除设备
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchDeleteDevicesRequest request
-        :return: BatchDeleteDevicesResponse
+        :param request: Request instance for BatchDeleteDevices
+        :type request: :class:`huaweicloudsdkroma.v2.BatchDeleteDevicesRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.BatchDeleteDevicesResponse`
         """
         return self.batch_delete_devices_with_http_info(request)
 
     def batch_delete_devices_with_http_info(self, request):
-        """批量删除设备
-
-        批量删除设备
-
-        :param BatchDeleteDevicesRequest request
-        :return: BatchDeleteDevicesResponse
-        """
-
         all_params = ['instance_id', 'batch_delete_devices_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -514,26 +485,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_delete_mqs_instance_topic(self, request):
         """批量删除Topic
 
         批量删除Topic。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchDeleteMqsInstanceTopicRequest request
-        :return: BatchDeleteMqsInstanceTopicResponse
+        :param request: Request instance for BatchDeleteMqsInstanceTopic
+        :type request: :class:`huaweicloudsdkroma.v2.BatchDeleteMqsInstanceTopicRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.BatchDeleteMqsInstanceTopicResponse`
         """
         return self.batch_delete_mqs_instance_topic_with_http_info(request)
 
     def batch_delete_mqs_instance_topic_with_http_info(self, request):
-        """批量删除Topic
-
-        批量删除Topic。
-
-        :param BatchDeleteMqsInstanceTopicRequest request
-        :return: BatchDeleteMqsInstanceTopicResponse
-        """
-
         all_params = ['instance_id', 'batch_delete_mqs_instance_topic_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -579,26 +545,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_delete_rules(self, request):
         """批量删除规则
 
         批量删除规则
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchDeleteRulesRequest request
-        :return: BatchDeleteRulesResponse
+        :param request: Request instance for BatchDeleteRules
+        :type request: :class:`huaweicloudsdkroma.v2.BatchDeleteRulesRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.BatchDeleteRulesResponse`
         """
         return self.batch_delete_rules_with_http_info(request)
 
     def batch_delete_rules_with_http_info(self, request):
-        """批量删除规则
-
-        批量删除规则
-
-        :param BatchDeleteRulesRequest request
-        :return: BatchDeleteRulesResponse
-        """
-
         all_params = ['instance_id', 'batch_delete_rules_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -644,26 +605,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_freeze_devices(self, request):
         """设备批量下线
 
         设备批量下线
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchFreezeDevicesRequest request
-        :return: BatchFreezeDevicesResponse
+        :param request: Request instance for BatchFreezeDevices
+        :type request: :class:`huaweicloudsdkroma.v2.BatchFreezeDevicesRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.BatchFreezeDevicesResponse`
         """
         return self.batch_freeze_devices_with_http_info(request)
 
     def batch_freeze_devices_with_http_info(self, request):
-        """设备批量下线
-
-        设备批量下线
-
-        :param BatchFreezeDevicesRequest request
-        :return: BatchFreezeDevicesResponse
-        """
-
         all_params = ['instance_id', 'batch_freeze_devices_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -709,26 +665,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_start_or_stop_tasks(self, request):
         """批量启动\\停止任务
 
         批量启动\\停止任务
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchStartOrStopTasksRequest request
-        :return: BatchStartOrStopTasksResponse
+        :param request: Request instance for BatchStartOrStopTasks
+        :type request: :class:`huaweicloudsdkroma.v2.BatchStartOrStopTasksRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.BatchStartOrStopTasksResponse`
         """
         return self.batch_start_or_stop_tasks_with_http_info(request)
 
     def batch_start_or_stop_tasks_with_http_info(self, request):
-        """批量启动\\停止任务
-
-        批量启动\\停止任务
-
-        :param BatchStartOrStopTasksRequest request
-        :return: BatchStartOrStopTasksResponse
-        """
-
         all_params = ['instance_id', 'batch_start_or_stop_tasks_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -774,26 +725,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def check_livedata_apis_v2(self, request):
         """校验自定义后端API定义
 
         校验自定义后端API定义。校验自定义后端API的路径或名称是否已存在
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CheckLivedataApisV2Request request
-        :return: CheckLivedataApisV2Response
+        :param request: Request instance for CheckLivedataApisV2
+        :type request: :class:`huaweicloudsdkroma.v2.CheckLivedataApisV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.CheckLivedataApisV2Response`
         """
         return self.check_livedata_apis_v2_with_http_info(request)
 
     def check_livedata_apis_v2_with_http_info(self, request):
-        """校验自定义后端API定义
-
-        校验自定义后端API定义。校验自定义后端API的路径或名称是否已存在
-
-        :param CheckLivedataApisV2Request request
-        :return: CheckLivedataApisV2Response
-        """
-
         all_params = ['instance_id', 'check_livedata_apis_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -839,26 +785,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def count_devices(self, request):
         """设备数量统计
 
         设备数量统计
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CountDevicesRequest request
-        :return: CountDevicesResponse
+        :param request: Request instance for CountDevices
+        :type request: :class:`huaweicloudsdkroma.v2.CountDevicesRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.CountDevicesResponse`
         """
         return self.count_devices_with_http_info(request)
 
     def count_devices_with_http_info(self, request):
-        """设备数量统计
-
-        设备数量统计
-
-        :param CountDevicesRequest request
-        :return: CountDevicesResponse
-        """
-
         all_params = ['instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -902,26 +843,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def count_tasks(self, request):
         """统计不同类型不同状态任务数量
 
         统计不同类型不同状态任务数量
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CountTasksRequest request
-        :return: CountTasksResponse
+        :param request: Request instance for CountTasks
+        :type request: :class:`huaweicloudsdkroma.v2.CountTasksRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.CountTasksResponse`
         """
         return self.count_tasks_with_http_info(request)
 
     def count_tasks_with_http_info(self, request):
-        """统计不同类型不同状态任务数量
-
-        统计不同类型不同状态任务数量
-
-        :param CountTasksRequest request
-        :return: CountTasksResponse
-        """
-
         all_params = ['instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -965,26 +901,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_app_code_auto_v2(self, request):
         """自动生成APP Code
 
         创建App Code时，可以不指定具体值，由后台自动生成随机字符串填充。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateAppCodeAutoV2Request request
-        :return: CreateAppCodeAutoV2Response
+        :param request: Request instance for CreateAppCodeAutoV2
+        :type request: :class:`huaweicloudsdkroma.v2.CreateAppCodeAutoV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.CreateAppCodeAutoV2Response`
         """
         return self.create_app_code_auto_v2_with_http_info(request)
 
     def create_app_code_auto_v2_with_http_info(self, request):
-        """自动生成APP Code
-
-        创建App Code时，可以不指定具体值，由后台自动生成随机字符串填充。
-
-        :param CreateAppCodeAutoV2Request request
-        :return: CreateAppCodeAutoV2Response
-        """
-
         all_params = ['instance_id', 'app_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1030,26 +961,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_app_code_v2(self, request):
         """创建APP Code
 
         App Code为APP应用下的子模块，创建App Code之后，可以实现简易的APP认证。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateAppCodeV2Request request
-        :return: CreateAppCodeV2Response
+        :param request: Request instance for CreateAppCodeV2
+        :type request: :class:`huaweicloudsdkroma.v2.CreateAppCodeV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.CreateAppCodeV2Response`
         """
         return self.create_app_code_v2_with_http_info(request)
 
     def create_app_code_v2_with_http_info(self, request):
-        """创建APP Code
-
-        App Code为APP应用下的子模块，创建App Code之后，可以实现简易的APP认证。
-
-        :param CreateAppCodeV2Request request
-        :return: CreateAppCodeV2Response
-        """
-
         all_params = ['instance_id', 'app_id', 'create_app_code_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1097,26 +1023,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_app_config_v2(self, request):
         """创建应用配置
 
         创建应用配置
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateAppConfigV2Request request
-        :return: CreateAppConfigV2Response
+        :param request: Request instance for CreateAppConfigV2
+        :type request: :class:`huaweicloudsdkroma.v2.CreateAppConfigV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.CreateAppConfigV2Response`
         """
         return self.create_app_config_v2_with_http_info(request)
 
     def create_app_config_v2_with_http_info(self, request):
-        """创建应用配置
-
-        创建应用配置
-
-        :param CreateAppConfigV2Request request
-        :return: CreateAppConfigV2Response
-        """
-
         all_params = ['instance_id', 'app_id', 'create_app_config_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1164,26 +1085,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_app_quota(self, request):
         """创建客户端配额
 
         创建客户端配额
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateAppQuotaRequest request
-        :return: CreateAppQuotaResponse
+        :param request: Request instance for CreateAppQuota
+        :type request: :class:`huaweicloudsdkroma.v2.CreateAppQuotaRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.CreateAppQuotaResponse`
         """
         return self.create_app_quota_with_http_info(request)
 
     def create_app_quota_with_http_info(self, request):
-        """创建客户端配额
-
-        创建客户端配额
-
-        :param CreateAppQuotaRequest request
-        :return: CreateAppQuotaResponse
-        """
-
         all_params = ['instance_id', 'create_app_quota_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1229,26 +1145,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_command(self, request):
         """创建命令
 
         创建命令
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateCommandRequest request
-        :return: CreateCommandResponse
+        :param request: Request instance for CreateCommand
+        :type request: :class:`huaweicloudsdkroma.v2.CreateCommandRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.CreateCommandResponse`
         """
         return self.create_command_with_http_info(request)
 
     def create_command_with_http_info(self, request):
-        """创建命令
-
-        创建命令
-
-        :param CreateCommandRequest request
-        :return: CreateCommandResponse
-        """
-
         all_params = ['instance_id', 'service_id', 'create_command_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1296,26 +1207,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_common_task(self, request):
         """创建普通任务
 
         创建普通任务(区别于组合任务)
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateCommonTaskRequest request
-        :return: CreateCommonTaskResponse
+        :param request: Request instance for CreateCommonTask
+        :type request: :class:`huaweicloudsdkroma.v2.CreateCommonTaskRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.CreateCommonTaskResponse`
         """
         return self.create_common_task_with_http_info(request)
 
     def create_common_task_with_http_info(self, request):
-        """创建普通任务
-
-        创建普通任务(区别于组合任务)
-
-        :param CreateCommonTaskRequest request
-        :return: CreateCommonTaskResponse
-        """
-
         all_params = ['instance_id', 'create_common_task_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1361,26 +1267,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_custom_authorizer_v2(self, request):
         """创建自定义认证
 
         创建自定义认证
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateCustomAuthorizerV2Request request
-        :return: CreateCustomAuthorizerV2Response
+        :param request: Request instance for CreateCustomAuthorizerV2
+        :type request: :class:`huaweicloudsdkroma.v2.CreateCustomAuthorizerV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.CreateCustomAuthorizerV2Response`
         """
         return self.create_custom_authorizer_v2_with_http_info(request)
 
     def create_custom_authorizer_v2_with_http_info(self, request):
-        """创建自定义认证
-
-        创建自定义认证
-
-        :param CreateCustomAuthorizerV2Request request
-        :return: CreateCustomAuthorizerV2Response
-        """
-
         all_params = ['instance_id', 'create_custom_authorizer_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1426,26 +1327,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_datasource_info(self, request):
         """创建数据源
 
         创建数据源
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateDatasourceInfoRequest request
-        :return: CreateDatasourceInfoResponse
+        :param request: Request instance for CreateDatasourceInfo
+        :type request: :class:`huaweicloudsdkroma.v2.CreateDatasourceInfoRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.CreateDatasourceInfoResponse`
         """
         return self.create_datasource_info_with_http_info(request)
 
     def create_datasource_info_with_http_info(self, request):
-        """创建数据源
-
-        创建数据源
-
-        :param CreateDatasourceInfoRequest request
-        :return: CreateDatasourceInfoResponse
-        """
-
         all_params = ['instance_id', 'create_datasource_info_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1491,26 +1387,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_destination(self, request):
         """添加目标数据源
 
         添加目标数据源
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateDestinationRequest request
-        :return: CreateDestinationResponse
+        :param request: Request instance for CreateDestination
+        :type request: :class:`huaweicloudsdkroma.v2.CreateDestinationRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.CreateDestinationResponse`
         """
         return self.create_destination_with_http_info(request)
 
     def create_destination_with_http_info(self, request):
-        """添加目标数据源
-
-        添加目标数据源
-
-        :param CreateDestinationRequest request
-        :return: CreateDestinationResponse
-        """
-
         all_params = ['instance_id', 'rule_id', 'create_destination_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1558,26 +1449,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_device(self, request):
         """创建设备
 
         创建设备
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateDeviceRequest request
-        :return: CreateDeviceResponse
+        :param request: Request instance for CreateDevice
+        :type request: :class:`huaweicloudsdkroma.v2.CreateDeviceRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.CreateDeviceResponse`
         """
         return self.create_device_with_http_info(request)
 
     def create_device_with_http_info(self, request):
-        """创建设备
-
-        创建设备
-
-        :param CreateDeviceRequest request
-        :return: CreateDeviceResponse
-        """
-
         all_params = ['instance_id', 'create_device_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1623,26 +1509,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_device_group(self, request):
         """创建设备分组
 
         创建设备分组
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateDeviceGroupRequest request
-        :return: CreateDeviceGroupResponse
+        :param request: Request instance for CreateDeviceGroup
+        :type request: :class:`huaweicloudsdkroma.v2.CreateDeviceGroupRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.CreateDeviceGroupResponse`
         """
         return self.create_device_group_with_http_info(request)
 
     def create_device_group_with_http_info(self, request):
-        """创建设备分组
-
-        创建设备分组
-
-        :param CreateDeviceGroupRequest request
-        :return: CreateDeviceGroupResponse
-        """
-
         all_params = ['instance_id', 'create_device_group_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1688,26 +1569,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_dispatches(self, request):
         """创建调度计划
 
         创建调度计划
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateDispatchesRequest request
-        :return: CreateDispatchesResponse
+        :param request: Request instance for CreateDispatches
+        :type request: :class:`huaweicloudsdkroma.v2.CreateDispatchesRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.CreateDispatchesResponse`
         """
         return self.create_dispatches_with_http_info(request)
 
     def create_dispatches_with_http_info(self, request):
-        """创建调度计划
-
-        创建调度计划
-
-        :param CreateDispatchesRequest request
-        :return: CreateDispatchesResponse
-        """
-
         all_params = ['instance_id', 'task_id', 'create_dispatches_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1755,26 +1631,25 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_environment_v2(self, request):
         """创建环境
 
-        在实际的生产中，API提供者可能有多个环境，如开发环境、测试环境、生产环境等，用户可以自由将API发布到某个环境，供调用者调用。  对于不同的环境，API的版本、请求地址甚至于包括请求消息等均有可能不同。如：某个API，v1.0的版本为稳定版本，发布到了生产环境供生产使用，同时，该API正处于迭代中，v1.1的版本是开发人员交付测试人员进行测试的版本，发布在测试环境上，而v1.2的版本目前开发团队正处于开发过程中，可以发布到开发环境进行自测等。  为此，ROMA Connect APIC提供多环境管理功能，使租户能够最大化的模拟实际场景，低成本的接入ROMA Connect APIC。
+        在实际的生产中，API提供者可能有多个环境，如开发环境、测试环境、生产环境等，用户可以自由将API发布到某个环境，供调用者调用。
+        
+        对于不同的环境，API的版本、请求地址甚至于包括请求消息等均有可能不同。如：某个API，v1.0的版本为稳定版本，发布到了生产环境供生产使用，同时，该API正处于迭代中，v1.1的版本是开发人员交付测试人员进行测试的版本，发布在测试环境上，而v1.2的版本目前开发团队正处于开发过程中，可以发布到开发环境进行自测等。
+        
+        为此，ROMA Connect APIC提供多环境管理功能，使租户能够最大化的模拟实际场景，低成本的接入ROMA Connect APIC。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateEnvironmentV2Request request
-        :return: CreateEnvironmentV2Response
+        :param request: Request instance for CreateEnvironmentV2
+        :type request: :class:`huaweicloudsdkroma.v2.CreateEnvironmentV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.CreateEnvironmentV2Response`
         """
         return self.create_environment_v2_with_http_info(request)
 
     def create_environment_v2_with_http_info(self, request):
-        """创建环境
-
-        在实际的生产中，API提供者可能有多个环境，如开发环境、测试环境、生产环境等，用户可以自由将API发布到某个环境，供调用者调用。  对于不同的环境，API的版本、请求地址甚至于包括请求消息等均有可能不同。如：某个API，v1.0的版本为稳定版本，发布到了生产环境供生产使用，同时，该API正处于迭代中，v1.1的版本是开发人员交付测试人员进行测试的版本，发布在测试环境上，而v1.2的版本目前开发团队正处于开发过程中，可以发布到开发环境进行自测等。  为此，ROMA Connect APIC提供多环境管理功能，使租户能够最大化的模拟实际场景，低成本的接入ROMA Connect APIC。
-
-        :param CreateEnvironmentV2Request request
-        :return: CreateEnvironmentV2Response
-        """
-
         all_params = ['instance_id', 'create_environment_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1820,26 +1695,29 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_environment_variable_v2(self, request):
         """新建变量
 
-        将API发布到不同的环境后，对于不同的环境，可能会有不同的环境变量，比如，API的服务部署地址，请求的版本号等。  用户可以定义不同的环境变量，用户在定义API时，在API的定义中使用这些变量，当调用API时，ROMA Connect APIC会将这些变量替换成真实的变量值，以达到不同环境的区分效果。  环境变量定义在API分组上，该分组下的所有API都可以使用这些变量。 > 1.环境变量的变量名称必须保持唯一，即一个分组在同一个环境上不能有两个同名的变量   2.环境变量区分大小写，即变量ABC与变量abc是两个不同的变量   3.设置了环境变量后，使用到该变量的API的调试功能将不可使用。   4.定义了环境变量后，使用到环境变量的地方应该以对称的#标识环境变量，当API发布到相应的环境后，会对环境变量的值进行替换，如：定义的API的URL为：https://#address#:8080，环境变量address在RELEASE环境上的值为：192.168.1.5，则API发布到RELEASE环境后的真实的URL为：https://192.168.1.5:8080。
+        将API发布到不同的环境后，对于不同的环境，可能会有不同的环境变量，比如，API的服务部署地址，请求的版本号等。
+        
+        用户可以定义不同的环境变量，用户在定义API时，在API的定义中使用这些变量，当调用API时，ROMA Connect APIC会将这些变量替换成真实的变量值，以达到不同环境的区分效果。
+        
+        环境变量定义在API分组上，该分组下的所有API都可以使用这些变量。
+        &gt; 1.环境变量的变量名称必须保持唯一，即一个分组在同一个环境上不能有两个同名的变量
+          2.环境变量区分大小写，即变量ABC与变量abc是两个不同的变量
+          3.设置了环境变量后，使用到该变量的API的调试功能将不可使用。
+          4.定义了环境变量后，使用到环境变量的地方应该以对称的#标识环境变量，当API发布到相应的环境后，会对环境变量的值进行替换，如：定义的API的URL为：https://#address#:8080，环境变量address在RELEASE环境上的值为：192.168.1.5，则API发布到RELEASE环境后的真实的URL为：https://192.168.1.5:8080。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateEnvironmentVariableV2Request request
-        :return: CreateEnvironmentVariableV2Response
+        :param request: Request instance for CreateEnvironmentVariableV2
+        :type request: :class:`huaweicloudsdkroma.v2.CreateEnvironmentVariableV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.CreateEnvironmentVariableV2Response`
         """
         return self.create_environment_variable_v2_with_http_info(request)
 
     def create_environment_variable_v2_with_http_info(self, request):
-        """新建变量
-
-        将API发布到不同的环境后，对于不同的环境，可能会有不同的环境变量，比如，API的服务部署地址，请求的版本号等。  用户可以定义不同的环境变量，用户在定义API时，在API的定义中使用这些变量，当调用API时，ROMA Connect APIC会将这些变量替换成真实的变量值，以达到不同环境的区分效果。  环境变量定义在API分组上，该分组下的所有API都可以使用这些变量。 > 1.环境变量的变量名称必须保持唯一，即一个分组在同一个环境上不能有两个同名的变量   2.环境变量区分大小写，即变量ABC与变量abc是两个不同的变量   3.设置了环境变量后，使用到该变量的API的调试功能将不可使用。   4.定义了环境变量后，使用到环境变量的地方应该以对称的#标识环境变量，当API发布到相应的环境后，会对环境变量的值进行替换，如：定义的API的URL为：https://#address#:8080，环境变量address在RELEASE环境上的值为：192.168.1.5，则API发布到RELEASE环境后的真实的URL为：https://192.168.1.5:8080。
-
-        :param CreateEnvironmentVariableV2Request request
-        :return: CreateEnvironmentVariableV2Response
-        """
-
         all_params = ['instance_id', 'create_environment_variable_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1885,26 +1763,23 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_feature_v2(self, request):
         """实例配置特性
 
-        为实例配置需要的特性。  支持配置的特性列表及特性配置请参考“附录 > 实例支持的APIC特性”
+        为实例配置需要的特性。
+        
+        支持配置的特性列表及特性配置请参考“附录 &gt; 实例支持的APIC特性”
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateFeatureV2Request request
-        :return: CreateFeatureV2Response
+        :param request: Request instance for CreateFeatureV2
+        :type request: :class:`huaweicloudsdkroma.v2.CreateFeatureV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.CreateFeatureV2Response`
         """
         return self.create_feature_v2_with_http_info(request)
 
     def create_feature_v2_with_http_info(self, request):
-        """实例配置特性
-
-        为实例配置需要的特性。  支持配置的特性列表及特性配置请参考“附录 > 实例支持的APIC特性”
-
-        :param CreateFeatureV2Request request
-        :return: CreateFeatureV2Response
-        """
-
         all_params = ['instance_id', 'create_feature_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1950,26 +1825,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_live_data_api_script_v2(self, request):
         """创建后端API脚本
 
         在某个实例中创建后端API脚本。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateLiveDataApiScriptV2Request request
-        :return: CreateLiveDataApiScriptV2Response
+        :param request: Request instance for CreateLiveDataApiScriptV2
+        :type request: :class:`huaweicloudsdkroma.v2.CreateLiveDataApiScriptV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.CreateLiveDataApiScriptV2Response`
         """
         return self.create_live_data_api_script_v2_with_http_info(request)
 
     def create_live_data_api_script_v2_with_http_info(self, request):
-        """创建后端API脚本
-
-        在某个实例中创建后端API脚本。
-
-        :param CreateLiveDataApiScriptV2Request request
-        :return: CreateLiveDataApiScriptV2Response
-        """
-
         all_params = ['instance_id', 'ld_api_id', 'create_live_data_api_script_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2017,26 +1887,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_live_data_api_v2(self, request):
         """创建后端API
 
         在某个实例中创建后端API。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateLiveDataApiV2Request request
-        :return: CreateLiveDataApiV2Response
+        :param request: Request instance for CreateLiveDataApiV2
+        :type request: :class:`huaweicloudsdkroma.v2.CreateLiveDataApiV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.CreateLiveDataApiV2Response`
         """
         return self.create_live_data_api_v2_with_http_info(request)
 
     def create_live_data_api_v2_with_http_info(self, request):
-        """创建后端API
-
-        在某个实例中创建后端API。
-
-        :param CreateLiveDataApiV2Request request
-        :return: CreateLiveDataApiV2Response
-        """
-
         all_params = ['instance_id', 'create_live_data_api_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2082,26 +1947,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_mqs_instance_topic(self, request):
         """创建Topic
 
         创建Topic。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateMqsInstanceTopicRequest request
-        :return: CreateMqsInstanceTopicResponse
+        :param request: Request instance for CreateMqsInstanceTopic
+        :type request: :class:`huaweicloudsdkroma.v2.CreateMqsInstanceTopicRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.CreateMqsInstanceTopicResponse`
         """
         return self.create_mqs_instance_topic_with_http_info(request)
 
     def create_mqs_instance_topic_with_http_info(self, request):
-        """创建Topic
-
-        创建Topic。
-
-        :param CreateMqsInstanceTopicRequest request
-        :return: CreateMqsInstanceTopicResponse
-        """
-
         all_params = ['instance_id', 'create_mqs_instance_topic_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2147,26 +2007,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_multi_task_mappings(self, request):
         """创建组合任务映射
 
         创建组合任务映射
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateMultiTaskMappingsRequest request
-        :return: CreateMultiTaskMappingsResponse
+        :param request: Request instance for CreateMultiTaskMappings
+        :type request: :class:`huaweicloudsdkroma.v2.CreateMultiTaskMappingsRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.CreateMultiTaskMappingsResponse`
         """
         return self.create_multi_task_mappings_with_http_info(request)
 
     def create_multi_task_mappings_with_http_info(self, request):
-        """创建组合任务映射
-
-        创建组合任务映射
-
-        :param CreateMultiTaskMappingsRequest request
-        :return: CreateMultiTaskMappingsResponse
-        """
-
         all_params = ['instance_id', 'task_id', 'create_multi_task_mappings_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2214,26 +2069,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_multi_tasks(self, request):
         """创建组合任务
 
         创建组合任务
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateMultiTasksRequest request
-        :return: CreateMultiTasksResponse
+        :param request: Request instance for CreateMultiTasks
+        :type request: :class:`huaweicloudsdkroma.v2.CreateMultiTasksRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.CreateMultiTasksResponse`
         """
         return self.create_multi_tasks_with_http_info(request)
 
     def create_multi_tasks_with_http_info(self, request):
-        """创建组合任务
-
-        创建组合任务
-
-        :param CreateMultiTasksRequest request
-        :return: CreateMultiTasksResponse
-        """
-
         all_params = ['instance_id', 'create_multi_tasks_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2279,26 +2129,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_notification(self, request):
         """创建订阅管理
 
         该接口用于创建指定实例下对应的应用下的设备操作，订阅到指定的topic
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateNotificationRequest request
-        :return: CreateNotificationResponse
+        :param request: Request instance for CreateNotification
+        :type request: :class:`huaweicloudsdkroma.v2.CreateNotificationRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.CreateNotificationResponse`
         """
         return self.create_notification_with_http_info(request)
 
     def create_notification_with_http_info(self, request):
-        """创建订阅管理
-
-        该接口用于创建指定实例下对应的应用下的设备操作，订阅到指定的topic
-
-        :param CreateNotificationRequest request
-        :return: CreateNotificationResponse
-        """
-
         all_params = ['instance_id', 'create_notification_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2344,26 +2189,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_product(self, request):
         """创建产品
 
         创建产品
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateProductRequest request
-        :return: CreateProductResponse
+        :param request: Request instance for CreateProduct
+        :type request: :class:`huaweicloudsdkroma.v2.CreateProductRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.CreateProductResponse`
         """
         return self.create_product_with_http_info(request)
 
     def create_product_with_http_info(self, request):
-        """创建产品
-
-        创建产品
-
-        :param CreateProductRequest request
-        :return: CreateProductResponse
-        """
-
         all_params = ['instance_id', 'create_product_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2409,26 +2249,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_product_template(self, request):
         """创建产品模板
 
         创建产品模板
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateProductTemplateRequest request
-        :return: CreateProductTemplateResponse
+        :param request: Request instance for CreateProductTemplate
+        :type request: :class:`huaweicloudsdkroma.v2.CreateProductTemplateRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.CreateProductTemplateResponse`
         """
         return self.create_product_template_with_http_info(request)
 
     def create_product_template_with_http_info(self, request):
-        """创建产品模板
-
-        创建产品模板
-
-        :param CreateProductTemplateRequest request
-        :return: CreateProductTemplateResponse
-        """
-
         all_params = ['instance_id', 'create_product_template_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2474,26 +2309,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_product_topic(self, request):
         """添加产品主题
 
         添加产品主题
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateProductTopicRequest request
-        :return: CreateProductTopicResponse
+        :param request: Request instance for CreateProductTopic
+        :type request: :class:`huaweicloudsdkroma.v2.CreateProductTopicRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.CreateProductTopicResponse`
         """
         return self.create_product_topic_with_http_info(request)
 
     def create_product_topic_with_http_info(self, request):
-        """添加产品主题
-
-        添加产品主题
-
-        :param CreateProductTopicRequest request
-        :return: CreateProductTopicResponse
-        """
-
         all_params = ['instance_id', 'product_id', 'create_product_topic_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2541,26 +2371,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_property(self, request):
         """创建属性
 
         创建属性
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreatePropertyRequest request
-        :return: CreatePropertyResponse
+        :param request: Request instance for CreateProperty
+        :type request: :class:`huaweicloudsdkroma.v2.CreatePropertyRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.CreatePropertyResponse`
         """
         return self.create_property_with_http_info(request)
 
     def create_property_with_http_info(self, request):
-        """创建属性
-
-        创建属性
-
-        :param CreatePropertyRequest request
-        :return: CreatePropertyResponse
-        """
-
         all_params = ['instance_id', 'service_id', 'create_property_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2608,26 +2433,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_request_property(self, request):
         """创建请求属性
 
         创建请求属性
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateRequestPropertyRequest request
-        :return: CreateRequestPropertyResponse
+        :param request: Request instance for CreateRequestProperty
+        :type request: :class:`huaweicloudsdkroma.v2.CreateRequestPropertyRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.CreateRequestPropertyResponse`
         """
         return self.create_request_property_with_http_info(request)
 
     def create_request_property_with_http_info(self, request):
-        """创建请求属性
-
-        创建请求属性
-
-        :param CreateRequestPropertyRequest request
-        :return: CreateRequestPropertyResponse
-        """
-
         all_params = ['instance_id', 'service_id', 'command_id', 'create_request_property_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2677,26 +2497,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_request_throttling_policy_v2(self, request):
         """创建流控策略
 
         当API上线后，系统会默认给每个API提供一个流控策略，API提供者可以根据自身API的服务能力及负载情况变更这个流控策略。 流控策略即限制API在一定长度的时间内，能够允许被访问的最大次数。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateRequestThrottlingPolicyV2Request request
-        :return: CreateRequestThrottlingPolicyV2Response
+        :param request: Request instance for CreateRequestThrottlingPolicyV2
+        :type request: :class:`huaweicloudsdkroma.v2.CreateRequestThrottlingPolicyV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.CreateRequestThrottlingPolicyV2Response`
         """
         return self.create_request_throttling_policy_v2_with_http_info(request)
 
     def create_request_throttling_policy_v2_with_http_info(self, request):
-        """创建流控策略
-
-        当API上线后，系统会默认给每个API提供一个流控策略，API提供者可以根据自身API的服务能力及负载情况变更这个流控策略。 流控策略即限制API在一定长度的时间内，能够允许被访问的最大次数。
-
-        :param CreateRequestThrottlingPolicyV2Request request
-        :return: CreateRequestThrottlingPolicyV2Response
-        """
-
         all_params = ['instance_id', 'create_request_throttling_policy_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2742,26 +2557,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_response_property(self, request):
         """创建响应属性
 
         创建响应属性
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateResponsePropertyRequest request
-        :return: CreateResponsePropertyResponse
+        :param request: Request instance for CreateResponseProperty
+        :type request: :class:`huaweicloudsdkroma.v2.CreateResponsePropertyRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.CreateResponsePropertyResponse`
         """
         return self.create_response_property_with_http_info(request)
 
     def create_response_property_with_http_info(self, request):
-        """创建响应属性
-
-        创建响应属性
-
-        :param CreateResponsePropertyRequest request
-        :return: CreateResponsePropertyResponse
-        """
-
         all_params = ['instance_id', 'service_id', 'command_id', 'create_response_property_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2811,26 +2621,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_rule(self, request):
         """创建规则
 
         创建规则
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateRuleRequest request
-        :return: CreateRuleResponse
+        :param request: Request instance for CreateRule
+        :type request: :class:`huaweicloudsdkroma.v2.CreateRuleRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.CreateRuleResponse`
         """
         return self.create_rule_with_http_info(request)
 
     def create_rule_with_http_info(self, request):
-        """创建规则
-
-        创建规则
-
-        :param CreateRuleRequest request
-        :return: CreateRuleResponse
-        """
-
         all_params = ['instance_id', 'create_rule_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2876,26 +2681,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_service(self, request):
         """创建服务
 
         创建服务
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateServiceRequest request
-        :return: CreateServiceResponse
+        :param request: Request instance for CreateService
+        :type request: :class:`huaweicloudsdkroma.v2.CreateServiceRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.CreateServiceResponse`
         """
         return self.create_service_with_http_info(request)
 
     def create_service_with_http_info(self, request):
-        """创建服务
-
-        创建服务
-
-        :param CreateServiceRequest request
-        :return: CreateServiceResponse
-        """
-
         all_params = ['instance_id', 'create_service_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2941,26 +2741,25 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_signature_key_v2(self, request):
         """创建签名密钥
 
-        为了保护API的安全性，建议租户为API的访问提供一套保护机制，即租户开放的API，需要对请求来源进行认证，不符合认证的请求直接拒绝访问。  其中，签名密钥就是API安全保护机制的一种。  租户创建一个签名密钥，并将签名密钥与API进行绑定，则ROMA Connect APIC在请求这个API时，就会使用绑定的签名密钥对请求参数进行数据加密，生成签名。当租户的后端服务收到请求时，可以校验这个签名，如果签名校验不通过，则该请求不是ROMA Connect APIC发出的请求，租户可以拒绝这个请求，从而保证API的安全性，避免API被未知来源的请求攻击。 
+        为了保护API的安全性，建议租户为API的访问提供一套保护机制，即租户开放的API，需要对请求来源进行认证，不符合认证的请求直接拒绝访问。
+        
+        其中，签名密钥就是API安全保护机制的一种。
+        
+        租户创建一个签名密钥，并将签名密钥与API进行绑定，则ROMA Connect APIC在请求这个API时，就会使用绑定的签名密钥对请求参数进行数据加密，生成签名。当租户的后端服务收到请求时，可以校验这个签名，如果签名校验不通过，则该请求不是ROMA Connect APIC发出的请求，租户可以拒绝这个请求，从而保证API的安全性，避免API被未知来源的请求攻击。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateSignatureKeyV2Request request
-        :return: CreateSignatureKeyV2Response
+        :param request: Request instance for CreateSignatureKeyV2
+        :type request: :class:`huaweicloudsdkroma.v2.CreateSignatureKeyV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.CreateSignatureKeyV2Response`
         """
         return self.create_signature_key_v2_with_http_info(request)
 
     def create_signature_key_v2_with_http_info(self, request):
-        """创建签名密钥
-
-        为了保护API的安全性，建议租户为API的访问提供一套保护机制，即租户开放的API，需要对请求来源进行认证，不符合认证的请求直接拒绝访问。  其中，签名密钥就是API安全保护机制的一种。  租户创建一个签名密钥，并将签名密钥与API进行绑定，则ROMA Connect APIC在请求这个API时，就会使用绑定的签名密钥对请求参数进行数据加密，生成签名。当租户的后端服务收到请求时，可以校验这个签名，如果签名校验不通过，则该请求不是ROMA Connect APIC发出的请求，租户可以拒绝这个请求，从而保证API的安全性，避免API被未知来源的请求攻击。 
-
-        :param CreateSignatureKeyV2Request request
-        :return: CreateSignatureKeyV2Response
-        """
-
         all_params = ['instance_id', 'create_signature_key_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3006,26 +2805,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_source(self, request):
         """添加源数据源
 
         添加源数据源
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateSourceRequest request
-        :return: CreateSourceResponse
+        :param request: Request instance for CreateSource
+        :type request: :class:`huaweicloudsdkroma.v2.CreateSourceRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.CreateSourceResponse`
         """
         return self.create_source_with_http_info(request)
 
     def create_source_with_http_info(self, request):
-        """添加源数据源
-
-        添加源数据源
-
-        :param CreateSourceRequest request
-        :return: CreateSourceResponse
-        """
-
         all_params = ['instance_id', 'rule_id', 'create_source_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3073,26 +2867,25 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_special_throttling_configuration_v2(self, request):
         """创建特殊设置
 
-        流控策略可以限制一段时间内可以访问API的最大次数，也可以限制一段时间内单个租户和单个APP可以访问API的最大次数。  如果想要对某个特定的APP进行特殊设置，例如设置所有APP每分钟的访问次数为500次，但想设置APP1每分钟的访问次数为800次，可以通过在流控策略中设置特殊APP来实现该功能。  为流控策略添加一个特殊设置的对象，可以是APP，也可以是租户。
+        流控策略可以限制一段时间内可以访问API的最大次数，也可以限制一段时间内单个租户和单个APP可以访问API的最大次数。
+        
+        如果想要对某个特定的APP进行特殊设置，例如设置所有APP每分钟的访问次数为500次，但想设置APP1每分钟的访问次数为800次，可以通过在流控策略中设置特殊APP来实现该功能。
+        
+        为流控策略添加一个特殊设置的对象，可以是APP，也可以是租户。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateSpecialThrottlingConfigurationV2Request request
-        :return: CreateSpecialThrottlingConfigurationV2Response
+        :param request: Request instance for CreateSpecialThrottlingConfigurationV2
+        :type request: :class:`huaweicloudsdkroma.v2.CreateSpecialThrottlingConfigurationV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.CreateSpecialThrottlingConfigurationV2Response`
         """
         return self.create_special_throttling_configuration_v2_with_http_info(request)
 
     def create_special_throttling_configuration_v2_with_http_info(self, request):
-        """创建特殊设置
-
-        流控策略可以限制一段时间内可以访问API的最大次数，也可以限制一段时间内单个租户和单个APP可以访问API的最大次数。  如果想要对某个特定的APP进行特殊设置，例如设置所有APP每分钟的访问次数为500次，但想设置APP1每分钟的访问次数为800次，可以通过在流控策略中设置特殊APP来实现该功能。  为流控策略添加一个特殊设置的对象，可以是APP，也可以是租户。
-
-        :param CreateSpecialThrottlingConfigurationV2Request request
-        :return: CreateSpecialThrottlingConfigurationV2Response
-        """
-
         all_params = ['instance_id', 'throttle_id', 'create_special_throttling_configuration_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3140,26 +2933,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def debug_live_data_api_v2(self, request):
         """测试后端API
 
         测试后端API是否可用。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DebugLiveDataApiV2Request request
-        :return: DebugLiveDataApiV2Response
+        :param request: Request instance for DebugLiveDataApiV2
+        :type request: :class:`huaweicloudsdkroma.v2.DebugLiveDataApiV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.DebugLiveDataApiV2Response`
         """
         return self.debug_live_data_api_v2_with_http_info(request)
 
     def debug_live_data_api_v2_with_http_info(self, request):
-        """测试后端API
-
-        测试后端API是否可用。
-
-        :param DebugLiveDataApiV2Request request
-        :return: DebugLiveDataApiV2Response
-        """
-
         all_params = ['instance_id', 'ld_api_id', 'debug_live_data_api_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3207,26 +2995,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def debug_rule(self, request):
         """规则调试
 
         规则调试
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DebugRuleRequest request
-        :return: DebugRuleResponse
+        :param request: Request instance for DebugRule
+        :type request: :class:`huaweicloudsdkroma.v2.DebugRuleRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.DebugRuleResponse`
         """
         return self.debug_rule_with_http_info(request)
 
     def debug_rule_with_http_info(self, request):
-        """规则调试
-
-        规则调试
-
-        :param DebugRuleRequest request
-        :return: DebugRuleResponse
-        """
-
         all_params = ['instance_id', 'debug_rule_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3272,26 +3055,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_app_acl(self, request):
         """删除APP的访问控制
 
         删除客户端配置的访问控制信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteAppAclRequest request
-        :return: DeleteAppAclResponse
+        :param request: Request instance for DeleteAppAcl
+        :type request: :class:`huaweicloudsdkroma.v2.DeleteAppAclRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.DeleteAppAclResponse`
         """
         return self.delete_app_acl_with_http_info(request)
 
     def delete_app_acl_with_http_info(self, request):
-        """删除APP的访问控制
-
-        删除客户端配置的访问控制信息。
-
-        :param DeleteAppAclRequest request
-        :return: DeleteAppAclResponse
-        """
-
         all_params = ['instance_id', 'app_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3337,26 +3115,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_app_code_v2(self, request):
         """删除APP Code
 
         删除App Code，App Code删除后，将无法再通过简易认证访问对应的API。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteAppCodeV2Request request
-        :return: DeleteAppCodeV2Response
+        :param request: Request instance for DeleteAppCodeV2
+        :type request: :class:`huaweicloudsdkroma.v2.DeleteAppCodeV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.DeleteAppCodeV2Response`
         """
         return self.delete_app_code_v2_with_http_info(request)
 
     def delete_app_code_v2_with_http_info(self, request):
-        """删除APP Code
-
-        删除App Code，App Code删除后，将无法再通过简易认证访问对应的API。
-
-        :param DeleteAppCodeV2Request request
-        :return: DeleteAppCodeV2Response
-        """
-
         all_params = ['instance_id', 'app_id', 'app_code_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3404,26 +3177,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_app_config_v2(self, request):
         """删除应用配置
 
         删除应用配置
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteAppConfigV2Request request
-        :return: DeleteAppConfigV2Response
+        :param request: Request instance for DeleteAppConfigV2
+        :type request: :class:`huaweicloudsdkroma.v2.DeleteAppConfigV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.DeleteAppConfigV2Response`
         """
         return self.delete_app_config_v2_with_http_info(request)
 
     def delete_app_config_v2_with_http_info(self, request):
-        """删除应用配置
-
-        删除应用配置
-
-        :param DeleteAppConfigV2Request request
-        :return: DeleteAppConfigV2Response
-        """
-
         all_params = ['instance_id', 'app_id', 'app_config_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3471,26 +3239,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_app_quota(self, request):
         """删除客户端配额
 
         删除客户端配额。删除客户端配额时，同时删除客户端配额和客户端应用的关联关系
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteAppQuotaRequest request
-        :return: DeleteAppQuotaResponse
+        :param request: Request instance for DeleteAppQuota
+        :type request: :class:`huaweicloudsdkroma.v2.DeleteAppQuotaRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.DeleteAppQuotaResponse`
         """
         return self.delete_app_quota_with_http_info(request)
 
     def delete_app_quota_with_http_info(self, request):
-        """删除客户端配额
-
-        删除客户端配额。删除客户端配额时，同时删除客户端配额和客户端应用的关联关系
-
-        :param DeleteAppQuotaRequest request
-        :return: DeleteAppQuotaResponse
-        """
-
         all_params = ['instance_id', 'app_quota_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3536,26 +3299,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_command(self, request):
         """删除命令
 
         删除命令
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteCommandRequest request
-        :return: DeleteCommandResponse
+        :param request: Request instance for DeleteCommand
+        :type request: :class:`huaweicloudsdkroma.v2.DeleteCommandRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.DeleteCommandResponse`
         """
         return self.delete_command_with_http_info(request)
 
     def delete_command_with_http_info(self, request):
-        """删除命令
-
-        删除命令
-
-        :param DeleteCommandRequest request
-        :return: DeleteCommandResponse
-        """
-
         all_params = ['instance_id', 'service_id', 'command_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3603,26 +3361,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_custom_authorizer_v2(self, request):
         """删除自定义认证
 
         删除自定义认证
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteCustomAuthorizerV2Request request
-        :return: DeleteCustomAuthorizerV2Response
+        :param request: Request instance for DeleteCustomAuthorizerV2
+        :type request: :class:`huaweicloudsdkroma.v2.DeleteCustomAuthorizerV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.DeleteCustomAuthorizerV2Response`
         """
         return self.delete_custom_authorizer_v2_with_http_info(request)
 
     def delete_custom_authorizer_v2_with_http_info(self, request):
-        """删除自定义认证
-
-        删除自定义认证
-
-        :param DeleteCustomAuthorizerV2Request request
-        :return: DeleteCustomAuthorizerV2Response
-        """
-
         all_params = ['instance_id', 'authorizer_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3668,26 +3421,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_datasource_info_by_id(self, request):
         """通过数据源Id删除指定数据源信息
 
         通过数据源Id删除指定数据源信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteDatasourceInfoByIdRequest request
-        :return: DeleteDatasourceInfoByIdResponse
+        :param request: Request instance for DeleteDatasourceInfoById
+        :type request: :class:`huaweicloudsdkroma.v2.DeleteDatasourceInfoByIdRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.DeleteDatasourceInfoByIdResponse`
         """
         return self.delete_datasource_info_by_id_with_http_info(request)
 
     def delete_datasource_info_by_id_with_http_info(self, request):
-        """通过数据源Id删除指定数据源信息
-
-        通过数据源Id删除指定数据源信息
-
-        :param DeleteDatasourceInfoByIdRequest request
-        :return: DeleteDatasourceInfoByIdResponse
-        """
-
         all_params = ['instance_id', 'datasource_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3733,26 +3481,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_destination(self, request):
         """删除目标数据源
 
         删除目标数据源
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteDestinationRequest request
-        :return: DeleteDestinationResponse
+        :param request: Request instance for DeleteDestination
+        :type request: :class:`huaweicloudsdkroma.v2.DeleteDestinationRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.DeleteDestinationResponse`
         """
         return self.delete_destination_with_http_info(request)
 
     def delete_destination_with_http_info(self, request):
-        """删除目标数据源
-
-        删除目标数据源
-
-        :param DeleteDestinationRequest request
-        :return: DeleteDestinationResponse
-        """
-
         all_params = ['instance_id', 'rule_id', 'destination_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3800,26 +3543,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_device(self, request):
         """删除设备
 
         删除指定设备ID的设备
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteDeviceRequest request
-        :return: DeleteDeviceResponse
+        :param request: Request instance for DeleteDevice
+        :type request: :class:`huaweicloudsdkroma.v2.DeleteDeviceRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.DeleteDeviceResponse`
         """
         return self.delete_device_with_http_info(request)
 
     def delete_device_with_http_info(self, request):
-        """删除设备
-
-        删除指定设备ID的设备
-
-        :param DeleteDeviceRequest request
-        :return: DeleteDeviceResponse
-        """
-
         all_params = ['instance_id', 'device_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3865,26 +3603,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_device_from_group(self, request):
         """删除设备分组内的设备
 
         删除设备分组内的设备
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteDeviceFromGroupRequest request
-        :return: DeleteDeviceFromGroupResponse
+        :param request: Request instance for DeleteDeviceFromGroup
+        :type request: :class:`huaweicloudsdkroma.v2.DeleteDeviceFromGroupRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.DeleteDeviceFromGroupResponse`
         """
         return self.delete_device_from_group_with_http_info(request)
 
     def delete_device_from_group_with_http_info(self, request):
-        """删除设备分组内的设备
-
-        删除设备分组内的设备
-
-        :param DeleteDeviceFromGroupRequest request
-        :return: DeleteDeviceFromGroupResponse
-        """
-
         all_params = ['instance_id', 'device_id', 'group_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3932,26 +3665,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_device_group(self, request):
         """删除设备分组
 
         删除分组
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteDeviceGroupRequest request
-        :return: DeleteDeviceGroupResponse
+        :param request: Request instance for DeleteDeviceGroup
+        :type request: :class:`huaweicloudsdkroma.v2.DeleteDeviceGroupRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.DeleteDeviceGroupResponse`
         """
         return self.delete_device_group_with_http_info(request)
 
     def delete_device_group_with_http_info(self, request):
-        """删除设备分组
-
-        删除分组
-
-        :param DeleteDeviceGroupRequest request
-        :return: DeleteDeviceGroupResponse
-        """
-
         all_params = ['instance_id', 'group_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3997,26 +3725,22 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_environment_v2(self, request):
         """删除环境
 
-        删除指定的环境。 该操作将导致此API在指定的环境无法被访问，可能会影响相当一部分应用和用户。请确保已经告知用户，或者确认需要强制下线。环境上存在已发布的API时，该环境不能被删除。
+        删除指定的环境。
+        该操作将导致此API在指定的环境无法被访问，可能会影响相当一部分应用和用户。请确保已经告知用户，或者确认需要强制下线。环境上存在已发布的API时，该环境不能被删除。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteEnvironmentV2Request request
-        :return: DeleteEnvironmentV2Response
+        :param request: Request instance for DeleteEnvironmentV2
+        :type request: :class:`huaweicloudsdkroma.v2.DeleteEnvironmentV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.DeleteEnvironmentV2Response`
         """
         return self.delete_environment_v2_with_http_info(request)
 
     def delete_environment_v2_with_http_info(self, request):
-        """删除环境
-
-        删除指定的环境。 该操作将导致此API在指定的环境无法被访问，可能会影响相当一部分应用和用户。请确保已经告知用户，或者确认需要强制下线。环境上存在已发布的API时，该环境不能被删除。
-
-        :param DeleteEnvironmentV2Request request
-        :return: DeleteEnvironmentV2Response
-        """
-
         all_params = ['instance_id', 'env_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4062,26 +3786,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_environment_variable_v2(self, request):
         """删除变量
 
         删除指定的环境变量。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteEnvironmentVariableV2Request request
-        :return: DeleteEnvironmentVariableV2Response
+        :param request: Request instance for DeleteEnvironmentVariableV2
+        :type request: :class:`huaweicloudsdkroma.v2.DeleteEnvironmentVariableV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.DeleteEnvironmentVariableV2Response`
         """
         return self.delete_environment_variable_v2_with_http_info(request)
 
     def delete_environment_variable_v2_with_http_info(self, request):
-        """删除变量
-
-        删除指定的环境变量。
-
-        :param DeleteEnvironmentVariableV2Request request
-        :return: DeleteEnvironmentVariableV2Response
-        """
-
         all_params = ['instance_id', 'env_variable_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4127,26 +3846,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_live_data_api_v2(self, request):
         """删除后端API
 
         在某个实例中删除后端API。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteLiveDataApiV2Request request
-        :return: DeleteLiveDataApiV2Response
+        :param request: Request instance for DeleteLiveDataApiV2
+        :type request: :class:`huaweicloudsdkroma.v2.DeleteLiveDataApiV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.DeleteLiveDataApiV2Response`
         """
         return self.delete_live_data_api_v2_with_http_info(request)
 
     def delete_live_data_api_v2_with_http_info(self, request):
-        """删除后端API
-
-        在某个实例中删除后端API。
-
-        :param DeleteLiveDataApiV2Request request
-        :return: DeleteLiveDataApiV2Response
-        """
-
         all_params = ['instance_id', 'ld_api_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4192,26 +3906,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_mqs_instance_topic(self, request):
         """删除Topic
 
         删除Topic。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteMqsInstanceTopicRequest request
-        :return: DeleteMqsInstanceTopicResponse
+        :param request: Request instance for DeleteMqsInstanceTopic
+        :type request: :class:`huaweicloudsdkroma.v2.DeleteMqsInstanceTopicRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.DeleteMqsInstanceTopicResponse`
         """
         return self.delete_mqs_instance_topic_with_http_info(request)
 
     def delete_mqs_instance_topic_with_http_info(self, request):
-        """删除Topic
-
-        删除Topic。
-
-        :param DeleteMqsInstanceTopicRequest request
-        :return: DeleteMqsInstanceTopicResponse
-        """
-
         all_params = ['instance_id', 'name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4257,26 +3966,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_multi_task_mapping(self, request):
         """删除指定任务映射
 
         通过映射ID删除指定任务映射
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteMultiTaskMappingRequest request
-        :return: DeleteMultiTaskMappingResponse
+        :param request: Request instance for DeleteMultiTaskMapping
+        :type request: :class:`huaweicloudsdkroma.v2.DeleteMultiTaskMappingRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.DeleteMultiTaskMappingResponse`
         """
         return self.delete_multi_task_mapping_with_http_info(request)
 
     def delete_multi_task_mapping_with_http_info(self, request):
-        """删除指定任务映射
-
-        通过映射ID删除指定任务映射
-
-        :param DeleteMultiTaskMappingRequest request
-        :return: DeleteMultiTaskMappingResponse
-        """
-
         all_params = ['instance_id', 'task_id', 'mapping_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4324,26 +4028,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_notification(self, request):
         """删除订阅管理
 
         该接口用于删除指定订阅管理
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteNotificationRequest request
-        :return: DeleteNotificationResponse
+        :param request: Request instance for DeleteNotification
+        :type request: :class:`huaweicloudsdkroma.v2.DeleteNotificationRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.DeleteNotificationResponse`
         """
         return self.delete_notification_with_http_info(request)
 
     def delete_notification_with_http_info(self, request):
-        """删除订阅管理
-
-        该接口用于删除指定订阅管理
-
-        :param DeleteNotificationRequest request
-        :return: DeleteNotificationResponse
-        """
-
         all_params = ['instance_id', 'notification_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4389,26 +4088,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_product(self, request):
         """删除产品
 
         删除产品
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteProductRequest request
-        :return: DeleteProductResponse
+        :param request: Request instance for DeleteProduct
+        :type request: :class:`huaweicloudsdkroma.v2.DeleteProductRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.DeleteProductResponse`
         """
         return self.delete_product_with_http_info(request)
 
     def delete_product_with_http_info(self, request):
-        """删除产品
-
-        删除产品
-
-        :param DeleteProductRequest request
-        :return: DeleteProductResponse
-        """
-
         all_params = ['instance_id', 'product_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4454,26 +4148,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_product_template(self, request):
         """删除产品模板
 
         删除产品模板
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteProductTemplateRequest request
-        :return: DeleteProductTemplateResponse
+        :param request: Request instance for DeleteProductTemplate
+        :type request: :class:`huaweicloudsdkroma.v2.DeleteProductTemplateRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.DeleteProductTemplateResponse`
         """
         return self.delete_product_template_with_http_info(request)
 
     def delete_product_template_with_http_info(self, request):
-        """删除产品模板
-
-        删除产品模板
-
-        :param DeleteProductTemplateRequest request
-        :return: DeleteProductTemplateResponse
-        """
-
         all_params = ['instance_id', 'product_template_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4519,26 +4208,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_product_topic(self, request):
         """删除产品主题
 
         删除产品主题
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteProductTopicRequest request
-        :return: DeleteProductTopicResponse
+        :param request: Request instance for DeleteProductTopic
+        :type request: :class:`huaweicloudsdkroma.v2.DeleteProductTopicRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.DeleteProductTopicResponse`
         """
         return self.delete_product_topic_with_http_info(request)
 
     def delete_product_topic_with_http_info(self, request):
-        """删除产品主题
-
-        删除产品主题
-
-        :param DeleteProductTopicRequest request
-        :return: DeleteProductTopicResponse
-        """
-
         all_params = ['instance_id', 'product_id', 'topic_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4586,26 +4270,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_property(self, request):
         """删除服务属性
 
         删除服务属性
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeletePropertyRequest request
-        :return: DeletePropertyResponse
+        :param request: Request instance for DeleteProperty
+        :type request: :class:`huaweicloudsdkroma.v2.DeletePropertyRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.DeletePropertyResponse`
         """
         return self.delete_property_with_http_info(request)
 
     def delete_property_with_http_info(self, request):
-        """删除服务属性
-
-        删除服务属性
-
-        :param DeletePropertyRequest request
-        :return: DeletePropertyResponse
-        """
-
         all_params = ['instance_id', 'service_id', 'property_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4653,26 +4332,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_request_property(self, request):
         """删除请求属性
 
         删除请求属性
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteRequestPropertyRequest request
-        :return: DeleteRequestPropertyResponse
+        :param request: Request instance for DeleteRequestProperty
+        :type request: :class:`huaweicloudsdkroma.v2.DeleteRequestPropertyRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.DeleteRequestPropertyResponse`
         """
         return self.delete_request_property_with_http_info(request)
 
     def delete_request_property_with_http_info(self, request):
-        """删除请求属性
-
-        删除请求属性
-
-        :param DeleteRequestPropertyRequest request
-        :return: DeleteRequestPropertyResponse
-        """
-
         all_params = ['instance_id', 'service_id', 'command_id', 'property_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4722,26 +4396,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_request_throttling_policy_v2(self, request):
         """删除流控策略
 
         删除指定的流控策略。当该流控策略绑定了API时，需要先解除流控策略与API的所有绑定关系后再删除。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteRequestThrottlingPolicyV2Request request
-        :return: DeleteRequestThrottlingPolicyV2Response
+        :param request: Request instance for DeleteRequestThrottlingPolicyV2
+        :type request: :class:`huaweicloudsdkroma.v2.DeleteRequestThrottlingPolicyV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.DeleteRequestThrottlingPolicyV2Response`
         """
         return self.delete_request_throttling_policy_v2_with_http_info(request)
 
     def delete_request_throttling_policy_v2_with_http_info(self, request):
-        """删除流控策略
-
-        删除指定的流控策略。当该流控策略绑定了API时，需要先解除流控策略与API的所有绑定关系后再删除。
-
-        :param DeleteRequestThrottlingPolicyV2Request request
-        :return: DeleteRequestThrottlingPolicyV2Response
-        """
-
         all_params = ['instance_id', 'throttle_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4787,26 +4456,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_response_property(self, request):
         """删除响应属性
 
         删除响应属性
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteResponsePropertyRequest request
-        :return: DeleteResponsePropertyResponse
+        :param request: Request instance for DeleteResponseProperty
+        :type request: :class:`huaweicloudsdkroma.v2.DeleteResponsePropertyRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.DeleteResponsePropertyResponse`
         """
         return self.delete_response_property_with_http_info(request)
 
     def delete_response_property_with_http_info(self, request):
-        """删除响应属性
-
-        删除响应属性
-
-        :param DeleteResponsePropertyRequest request
-        :return: DeleteResponsePropertyResponse
-        """
-
         all_params = ['instance_id', 'service_id', 'command_id', 'property_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4856,26 +4520,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_rule(self, request):
         """删除规则
 
         删除规则
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteRuleRequest request
-        :return: DeleteRuleResponse
+        :param request: Request instance for DeleteRule
+        :type request: :class:`huaweicloudsdkroma.v2.DeleteRuleRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.DeleteRuleResponse`
         """
         return self.delete_rule_with_http_info(request)
 
     def delete_rule_with_http_info(self, request):
-        """删除规则
-
-        删除规则
-
-        :param DeleteRuleRequest request
-        :return: DeleteRuleResponse
-        """
-
         all_params = ['instance_id', 'rule_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4921,26 +4580,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_service(self, request):
         """删除服务
 
         删除服务
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteServiceRequest request
-        :return: DeleteServiceResponse
+        :param request: Request instance for DeleteService
+        :type request: :class:`huaweicloudsdkroma.v2.DeleteServiceRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.DeleteServiceResponse`
         """
         return self.delete_service_with_http_info(request)
 
     def delete_service_with_http_info(self, request):
-        """删除服务
-
-        删除服务
-
-        :param DeleteServiceRequest request
-        :return: DeleteServiceResponse
-        """
-
         all_params = ['instance_id', 'service_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -4986,26 +4640,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_signature_key_v2(self, request):
         """删除签名密钥
 
         删除指定的签名密钥。签名密钥绑定了API时无法删除，需要先解除与API的绑定关系后删除。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteSignatureKeyV2Request request
-        :return: DeleteSignatureKeyV2Response
+        :param request: Request instance for DeleteSignatureKeyV2
+        :type request: :class:`huaweicloudsdkroma.v2.DeleteSignatureKeyV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.DeleteSignatureKeyV2Response`
         """
         return self.delete_signature_key_v2_with_http_info(request)
 
     def delete_signature_key_v2_with_http_info(self, request):
-        """删除签名密钥
-
-        删除指定的签名密钥。签名密钥绑定了API时无法删除，需要先解除与API的绑定关系后删除。
-
-        :param DeleteSignatureKeyV2Request request
-        :return: DeleteSignatureKeyV2Response
-        """
-
         all_params = ['instance_id', 'sign_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -5051,26 +4700,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_source(self, request):
         """删除源数据源
 
         删除源数据源
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteSourceRequest request
-        :return: DeleteSourceResponse
+        :param request: Request instance for DeleteSource
+        :type request: :class:`huaweicloudsdkroma.v2.DeleteSourceRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.DeleteSourceResponse`
         """
         return self.delete_source_with_http_info(request)
 
     def delete_source_with_http_info(self, request):
-        """删除源数据源
-
-        删除源数据源
-
-        :param DeleteSourceRequest request
-        :return: DeleteSourceResponse
-        """
-
         all_params = ['instance_id', 'rule_id', 'source_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -5118,26 +4762,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_special_throttling_configuration_v2(self, request):
         """删除特殊设置
 
         删除某个流控策略的某个特殊配置。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteSpecialThrottlingConfigurationV2Request request
-        :return: DeleteSpecialThrottlingConfigurationV2Response
+        :param request: Request instance for DeleteSpecialThrottlingConfigurationV2
+        :type request: :class:`huaweicloudsdkroma.v2.DeleteSpecialThrottlingConfigurationV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.DeleteSpecialThrottlingConfigurationV2Response`
         """
         return self.delete_special_throttling_configuration_v2_with_http_info(request)
 
     def delete_special_throttling_configuration_v2_with_http_info(self, request):
-        """删除特殊设置
-
-        删除某个流控策略的某个特殊配置。
-
-        :param DeleteSpecialThrottlingConfigurationV2Request request
-        :return: DeleteSpecialThrottlingConfigurationV2Response
-        """
-
         all_params = ['instance_id', 'throttle_id', 'strategy_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -5185,26 +4824,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_task(self, request):
         """通过任务ID删除指定任务
 
         通过任务ID删除指定任务
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteTaskRequest request
-        :return: DeleteTaskResponse
+        :param request: Request instance for DeleteTask
+        :type request: :class:`huaweicloudsdkroma.v2.DeleteTaskRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.DeleteTaskResponse`
         """
         return self.delete_task_with_http_info(request)
 
     def delete_task_with_http_info(self, request):
-        """通过任务ID删除指定任务
-
-        通过任务ID删除指定任务
-
-        :param DeleteTaskRequest request
-        :return: DeleteTaskResponse
-        """
-
         all_params = ['instance_id', 'task_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -5250,26 +4884,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def disassociate_app_quota_with_app(self, request):
         """解除客户端配额和客户端应用的绑定
 
         解除客户端配额和客户端应用的绑定
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DisassociateAppQuotaWithAppRequest request
-        :return: DisassociateAppQuotaWithAppResponse
+        :param request: Request instance for DisassociateAppQuotaWithApp
+        :type request: :class:`huaweicloudsdkroma.v2.DisassociateAppQuotaWithAppRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.DisassociateAppQuotaWithAppResponse`
         """
         return self.disassociate_app_quota_with_app_with_http_info(request)
 
     def disassociate_app_quota_with_app_with_http_info(self, request):
-        """解除客户端配额和客户端应用的绑定
-
-        解除客户端配额和客户端应用的绑定
-
-        :param DisassociateAppQuotaWithAppRequest request
-        :return: DisassociateAppQuotaWithAppResponse
-        """
-
         all_params = ['instance_id', 'app_quota_id', 'app_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -5317,26 +4946,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def disassociate_certificate_v2(self, request):
         """删除域名证书
 
         如果域名证书不再需要或者已过期，则可以删除证书内容。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DisassociateCertificateV2Request request
-        :return: DisassociateCertificateV2Response
+        :param request: Request instance for DisassociateCertificateV2
+        :type request: :class:`huaweicloudsdkroma.v2.DisassociateCertificateV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.DisassociateCertificateV2Response`
         """
         return self.disassociate_certificate_v2_with_http_info(request)
 
     def disassociate_certificate_v2_with_http_info(self, request):
-        """删除域名证书
-
-        如果域名证书不再需要或者已过期，则可以删除证书内容。
-
-        :param DisassociateCertificateV2Request request
-        :return: DisassociateCertificateV2Response
-        """
-
         all_params = ['instance_id', 'group_id', 'domain_id', 'certificate_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -5386,26 +5010,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def disassociate_domain_v2(self, request):
         """解绑域名
 
         如果API分组不再需要绑定某个自定义域名，则可以为此API分组解绑此域名。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DisassociateDomainV2Request request
-        :return: DisassociateDomainV2Response
+        :param request: Request instance for DisassociateDomainV2
+        :type request: :class:`huaweicloudsdkroma.v2.DisassociateDomainV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.DisassociateDomainV2Response`
         """
         return self.disassociate_domain_v2_with_http_info(request)
 
     def disassociate_domain_v2_with_http_info(self, request):
-        """解绑域名
-
-        如果API分组不再需要绑定某个自定义域名，则可以为此API分组解绑此域名。
-
-        :param DisassociateDomainV2Request request
-        :return: DisassociateDomainV2Response
-        """
-
         all_params = ['instance_id', 'group_id', 'domain_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -5453,26 +5072,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def disassociate_signature_key_v2(self, request):
         """解除绑定
 
         解除API与签名密钥的绑定关系。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DisassociateSignatureKeyV2Request request
-        :return: DisassociateSignatureKeyV2Response
+        :param request: Request instance for DisassociateSignatureKeyV2
+        :type request: :class:`huaweicloudsdkroma.v2.DisassociateSignatureKeyV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.DisassociateSignatureKeyV2Response`
         """
         return self.disassociate_signature_key_v2_with_http_info(request)
 
     def disassociate_signature_key_v2_with_http_info(self, request):
-        """解除绑定
-
-        解除API与签名密钥的绑定关系。
-
-        :param DisassociateSignatureKeyV2Request request
-        :return: DisassociateSignatureKeyV2Response
-        """
-
         all_params = ['instance_id', 'sign_bindings_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -5518,26 +5132,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def download_products(self, request):
         """导出产品
 
         导出产品
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DownloadProductsRequest request
-        :return: DownloadProductsResponse
+        :param request: Request instance for DownloadProducts
+        :type request: :class:`huaweicloudsdkroma.v2.DownloadProductsRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.DownloadProductsResponse`
         """
         return self.download_products_with_http_info(request)
 
     def download_products_with_http_info(self, request):
-        """导出产品
-
-        导出产品
-
-        :param DownloadProductsRequest request
-        :return: DownloadProductsResponse
-        """
-
         all_params = ['instance_id', 'product_ids']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -5584,26 +5193,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def export_mqs_instance_topic(self, request):
         """导出Topic
 
         导出Topic。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ExportMqsInstanceTopicRequest request
-        :return: ExportMqsInstanceTopicResponse
+        :param request: Request instance for ExportMqsInstanceTopic
+        :type request: :class:`huaweicloudsdkroma.v2.ExportMqsInstanceTopicRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ExportMqsInstanceTopicResponse`
         """
         return self.export_mqs_instance_topic_with_http_info(request)
 
     def export_mqs_instance_topic_with_http_info(self, request):
-        """导出Topic
-
-        导出Topic。
-
-        :param ExportMqsInstanceTopicRequest request
-        :return: ExportMqsInstanceTopicResponse
-        """
-
         all_params = ['instance_id', 'name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -5649,26 +5253,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def import_mqs_instance_topic(self, request):
         """导入Topic
 
         导入Topic。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ImportMqsInstanceTopicRequest request
-        :return: ImportMqsInstanceTopicResponse
+        :param request: Request instance for ImportMqsInstanceTopic
+        :type request: :class:`huaweicloudsdkroma.v2.ImportMqsInstanceTopicRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ImportMqsInstanceTopicResponse`
         """
         return self.import_mqs_instance_topic_with_http_info(request)
 
     def import_mqs_instance_topic_with_http_info(self, request):
-        """导入Topic
-
-        导入Topic。
-
-        :param ImportMqsInstanceTopicRequest request
-        :return: ImportMqsInstanceTopicResponse
-        """
-
         all_params = ['instance_id', 'upload_file_name', 'mode', 'prefix']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -5720,26 +5319,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def install_multi_tasks(self, request):
         """组合任务初始化
 
         初始化组合任务，分配任务ID，初始化映射等
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param InstallMultiTasksRequest request
-        :return: InstallMultiTasksResponse
+        :param request: Request instance for InstallMultiTasks
+        :type request: :class:`huaweicloudsdkroma.v2.InstallMultiTasksRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.InstallMultiTasksResponse`
         """
         return self.install_multi_tasks_with_http_info(request)
 
     def install_multi_tasks_with_http_info(self, request):
-        """组合任务初始化
-
-        初始化组合任务，分配任务ID，初始化映射等
-
-        :param InstallMultiTasksRequest request
-        :return: InstallMultiTasksResponse
-        """
-
         all_params = ['instance_id', 'install_multi_tasks_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -5785,26 +5379,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_apis_binded_to_signature_key_v2(self, request):
         """查看签名密钥绑定的API列表
 
         查询某个签名密钥上已经绑定的API列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListApisBindedToSignatureKeyV2Request request
-        :return: ListApisBindedToSignatureKeyV2Response
+        :param request: Request instance for ListApisBindedToSignatureKeyV2
+        :type request: :class:`huaweicloudsdkroma.v2.ListApisBindedToSignatureKeyV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListApisBindedToSignatureKeyV2Response`
         """
         return self.list_apis_binded_to_signature_key_v2_with_http_info(request)
 
     def list_apis_binded_to_signature_key_v2_with_http_info(self, request):
-        """查看签名密钥绑定的API列表
-
-        查询某个签名密钥上已经绑定的API列表。
-
-        :param ListApisBindedToSignatureKeyV2Request request
-        :return: ListApisBindedToSignatureKeyV2Response
-        """
-
         all_params = ['instance_id', 'sign_id', 'offset', 'limit', 'env_id', 'api_id', 'api_name', 'group_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -5862,26 +5451,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_apis_not_bound_with_signature_key_v2(self, request):
         """查看签名密钥未绑定的API列表
 
         查询所有未绑定到该签名密钥上的API列表。需要API已经发布，未发布的API不予展示。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListApisNotBoundWithSignatureKeyV2Request request
-        :return: ListApisNotBoundWithSignatureKeyV2Response
+        :param request: Request instance for ListApisNotBoundWithSignatureKeyV2
+        :type request: :class:`huaweicloudsdkroma.v2.ListApisNotBoundWithSignatureKeyV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListApisNotBoundWithSignatureKeyV2Response`
         """
         return self.list_apis_not_bound_with_signature_key_v2_with_http_info(request)
 
     def list_apis_not_bound_with_signature_key_v2_with_http_info(self, request):
-        """查看签名密钥未绑定的API列表
-
-        查询所有未绑定到该签名密钥上的API列表。需要API已经发布，未发布的API不予展示。
-
-        :param ListApisNotBoundWithSignatureKeyV2Request request
-        :return: ListApisNotBoundWithSignatureKeyV2Response
-        """
-
         all_params = ['instance_id', 'sign_id', 'offset', 'limit', 'env_id', 'api_id', 'api_name', 'group_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -5939,26 +5523,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_app_codes_v2(self, request):
         """查询APP Code列表
 
         查询App Code列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListAppCodesV2Request request
-        :return: ListAppCodesV2Response
+        :param request: Request instance for ListAppCodesV2
+        :type request: :class:`huaweicloudsdkroma.v2.ListAppCodesV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListAppCodesV2Response`
         """
         return self.list_app_codes_v2_with_http_info(request)
 
     def list_app_codes_v2_with_http_info(self, request):
-        """查询APP Code列表
-
-        查询App Code列表。
-
-        :param ListAppCodesV2Request request
-        :return: ListAppCodesV2Response
-        """
-
         all_params = ['instance_id', 'app_id', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -6008,26 +5587,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_app_configs_v2(self, request):
         """查询应用配置列表
 
         查询应用配置列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListAppConfigsV2Request request
-        :return: ListAppConfigsV2Response
+        :param request: Request instance for ListAppConfigsV2
+        :type request: :class:`huaweicloudsdkroma.v2.ListAppConfigsV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListAppConfigsV2Response`
         """
         return self.list_app_configs_v2_with_http_info(request)
 
     def list_app_configs_v2_with_http_info(self, request):
-        """查询应用配置列表
-
-        查询应用配置列表
-
-        :param ListAppConfigsV2Request request
-        :return: ListAppConfigsV2Response
-        """
-
         all_params = ['instance_id', 'offset', 'limit', 'app_id', 'config_name', 'roma_app_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -6081,26 +5655,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_app_quota_bindable_apps(self, request):
         """查询客户端配额可绑定的客户端应用列表
 
         查询客户端配额可绑定的客户端应用列表。支持按客户端应用名称模糊搜索
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListAppQuotaBindableAppsRequest request
-        :return: ListAppQuotaBindableAppsResponse
+        :param request: Request instance for ListAppQuotaBindableApps
+        :type request: :class:`huaweicloudsdkroma.v2.ListAppQuotaBindableAppsRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListAppQuotaBindableAppsResponse`
         """
         return self.list_app_quota_bindable_apps_with_http_info(request)
 
     def list_app_quota_bindable_apps_with_http_info(self, request):
-        """查询客户端配额可绑定的客户端应用列表
-
-        查询客户端配额可绑定的客户端应用列表。支持按客户端应用名称模糊搜索
-
-        :param ListAppQuotaBindableAppsRequest request
-        :return: ListAppQuotaBindableAppsResponse
-        """
-
         all_params = ['instance_id', 'app_quota_id', 'offset', 'limit', 'app_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -6152,26 +5721,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_app_quota_bound_apps(self, request):
         """查询客户端配额已绑定的客户端应用列表
 
         查询客户端配额已绑定的客户端应用列表。支持按客户端应用名称模糊匹配
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListAppQuotaBoundAppsRequest request
-        :return: ListAppQuotaBoundAppsResponse
+        :param request: Request instance for ListAppQuotaBoundApps
+        :type request: :class:`huaweicloudsdkroma.v2.ListAppQuotaBoundAppsRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListAppQuotaBoundAppsResponse`
         """
         return self.list_app_quota_bound_apps_with_http_info(request)
 
     def list_app_quota_bound_apps_with_http_info(self, request):
-        """查询客户端配额已绑定的客户端应用列表
-
-        查询客户端配额已绑定的客户端应用列表。支持按客户端应用名称模糊匹配
-
-        :param ListAppQuotaBoundAppsRequest request
-        :return: ListAppQuotaBoundAppsResponse
-        """
-
         all_params = ['instance_id', 'app_quota_id', 'offset', 'limit', 'app_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -6223,26 +5787,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_app_quotas(self, request):
         """获取客户端配额列表
 
         获取客户端配额列表。支持根据名称模糊查询
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListAppQuotasRequest request
-        :return: ListAppQuotasResponse
+        :param request: Request instance for ListAppQuotas
+        :type request: :class:`huaweicloudsdkroma.v2.ListAppQuotasRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListAppQuotasResponse`
         """
         return self.list_app_quotas_with_http_info(request)
 
     def list_app_quotas_with_http_info(self, request):
-        """获取客户端配额列表
-
-        获取客户端配额列表。支持根据名称模糊查询
-
-        :param ListAppQuotasRequest request
-        :return: ListAppQuotasResponse
-        """
-
         all_params = ['instance_id', 'offset', 'limit', 'name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -6292,26 +5851,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_apps_v2(self, request):
         """查询APP列表
 
         查询APP列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListAppsV2Request request
-        :return: ListAppsV2Response
+        :param request: Request instance for ListAppsV2
+        :type request: :class:`huaweicloudsdkroma.v2.ListAppsV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListAppsV2Response`
         """
         return self.list_apps_v2_with_http_info(request)
 
     def list_apps_v2_with_http_info(self, request):
-        """查询APP列表
-
-        查询APP列表。
-
-        :param ListAppsV2Request request
-        :return: ListAppsV2Response
-        """
-
         all_params = ['instance_id', 'offset', 'limit', 'id', 'name', 'status', 'app_key', 'precise_search']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -6369,26 +5923,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_commands(self, request):
         """查询命令
 
         查询命令
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListCommandsRequest request
-        :return: ListCommandsResponse
+        :param request: Request instance for ListCommands
+        :type request: :class:`huaweicloudsdkroma.v2.ListCommandsRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListCommandsResponse`
         """
         return self.list_commands_with_http_info(request)
 
     def list_commands_with_http_info(self, request):
-        """查询命令
-
-        查询命令
-
-        :param ListCommandsRequest request
-        :return: ListCommandsResponse
-        """
-
         all_params = ['instance_id', 'service_id', 'limit', 'command_id', 'command_name', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -6442,26 +5991,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_custom_authorizers_v2(self, request):
         """查询自定义认证列表
 
         查询自定义认证列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListCustomAuthorizersV2Request request
-        :return: ListCustomAuthorizersV2Response
+        :param request: Request instance for ListCustomAuthorizersV2
+        :type request: :class:`huaweicloudsdkroma.v2.ListCustomAuthorizersV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListCustomAuthorizersV2Response`
         """
         return self.list_custom_authorizers_v2_with_http_info(request)
 
     def list_custom_authorizers_v2_with_http_info(self, request):
-        """查询自定义认证列表
-
-        查询自定义认证列表
-
-        :param ListCustomAuthorizersV2Request request
-        :return: ListCustomAuthorizersV2Response
-        """
-
         all_params = ['instance_id', 'offset', 'limit', 'id', 'name', 'type']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -6515,26 +6059,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_datasource_columns(self, request):
         """获取数据源中某个表中所有字段
 
         获取数据源中中某个表中所有字段
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListDatasourceColumnsRequest request
-        :return: ListDatasourceColumnsResponse
+        :param request: Request instance for ListDatasourceColumns
+        :type request: :class:`huaweicloudsdkroma.v2.ListDatasourceColumnsRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListDatasourceColumnsResponse`
         """
         return self.list_datasource_columns_with_http_info(request)
 
     def list_datasource_columns_with_http_info(self, request):
-        """获取数据源中某个表中所有字段
-
-        获取数据源中中某个表中所有字段
-
-        :param ListDatasourceColumnsRequest request
-        :return: ListDatasourceColumnsResponse
-        """
-
         all_params = ['instance_id', 'datasource_id', 'position', 'db_name', 'table_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -6586,26 +6125,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_datasource_tables(self, request):
         """获取数据源中所有的表
 
         获取数据源中所有的表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListDatasourceTablesRequest request
-        :return: ListDatasourceTablesResponse
+        :param request: Request instance for ListDatasourceTables
+        :type request: :class:`huaweicloudsdkroma.v2.ListDatasourceTablesRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListDatasourceTablesResponse`
         """
         return self.list_datasource_tables_with_http_info(request)
 
     def list_datasource_tables_with_http_info(self, request):
-        """获取数据源中所有的表
-
-        获取数据源中所有的表
-
-        :param ListDatasourceTablesRequest request
-        :return: ListDatasourceTablesResponse
-        """
-
         all_params = ['instance_id', 'datasource_id', 'position', 'db_name', 'db_schema', 'filter']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -6659,26 +6193,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_datasources(self, request):
         """查询数据源
 
         查询数据源
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListDatasourcesRequest request
-        :return: ListDatasourcesResponse
+        :param request: Request instance for ListDatasources
+        :type request: :class:`huaweicloudsdkroma.v2.ListDatasourcesRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListDatasourcesResponse`
         """
         return self.list_datasources_with_http_info(request)
 
     def list_datasources_with_http_info(self, request):
-        """查询数据源
-
-        查询数据源
-
-        :param ListDatasourcesRequest request
-        :return: ListDatasourcesResponse
-        """
-
         all_params = ['instance_id', 'limit', 'offset', 'datasource_type', 'sort_field', 'sort_type', 'name', 'app_id', 'custom_plugin_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -6738,26 +6267,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_destinations(self, request):
         """查询目标数据源列表
 
         查询目标数据源列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListDestinationsRequest request
-        :return: ListDestinationsResponse
+        :param request: Request instance for ListDestinations
+        :type request: :class:`huaweicloudsdkroma.v2.ListDestinationsRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListDestinationsResponse`
         """
         return self.list_destinations_with_http_info(request)
 
     def list_destinations_with_http_info(self, request):
-        """查询目标数据源列表
-
-        查询目标数据源列表
-
-        :param ListDestinationsRequest request
-        :return: ListDestinationsResponse
-        """
-
         all_params = ['instance_id', 'rule_id', 'limit', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -6807,26 +6331,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_devices(self, request):
         """查询设备
 
         查询设备
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListDevicesRequest request
-        :return: ListDevicesResponse
+        :param request: Request instance for ListDevices
+        :type request: :class:`huaweicloudsdkroma.v2.ListDevicesRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListDevicesResponse`
         """
         return self.list_devices_with_http_info(request)
 
     def list_devices_with_http_info(self, request):
-        """查询设备
-
-        查询设备
-
-        :param ListDevicesRequest request
-        :return: ListDevicesResponse
-        """
-
         all_params = ['instance_id', 'limit', 'offset', 'app_id', 'product_id', 'product_name', 'device_name', 'client_id', 'node_id', 'node_type', 'online_status', 'created_date_start', 'created_date_end', 'tag']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -6896,26 +6415,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_devices_in_product(self, request):
         """查询产品内设备数量
 
         查询产品内设备数量
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListDevicesInProductRequest request
-        :return: ListDevicesInProductResponse
+        :param request: Request instance for ListDevicesInProduct
+        :type request: :class:`huaweicloudsdkroma.v2.ListDevicesInProductRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListDevicesInProductResponse`
         """
         return self.list_devices_in_product_with_http_info(request)
 
     def list_devices_in_product_with_http_info(self, request):
-        """查询产品内设备数量
-
-        查询产品内设备数量
-
-        :param ListDevicesInProductRequest request
-        :return: ListDevicesInProductResponse
-        """
-
         all_params = ['instance_id', 'product_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -6961,26 +6475,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_environment_variables_v2(self, request):
         """查询变量列表
 
         查询分组下的所有环境变量的列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListEnvironmentVariablesV2Request request
-        :return: ListEnvironmentVariablesV2Response
+        :param request: Request instance for ListEnvironmentVariablesV2
+        :type request: :class:`huaweicloudsdkroma.v2.ListEnvironmentVariablesV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListEnvironmentVariablesV2Response`
         """
         return self.list_environment_variables_v2_with_http_info(request)
 
     def list_environment_variables_v2_with_http_info(self, request):
-        """查询变量列表
-
-        查询分组下的所有环境变量的列表。
-
-        :param ListEnvironmentVariablesV2Request request
-        :return: ListEnvironmentVariablesV2Response
-        """
-
         all_params = ['instance_id', 'group_id', 'offset', 'limit', 'env_id', 'variable_name', 'precise_search']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -7036,26 +6545,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_environments_v2(self, request):
         """查询环境列表
 
         查询符合条件的环境列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListEnvironmentsV2Request request
-        :return: ListEnvironmentsV2Response
+        :param request: Request instance for ListEnvironmentsV2
+        :type request: :class:`huaweicloudsdkroma.v2.ListEnvironmentsV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListEnvironmentsV2Response`
         """
         return self.list_environments_v2_with_http_info(request)
 
     def list_environments_v2_with_http_info(self, request):
-        """查询环境列表
-
-        查询符合条件的环境列表。
-
-        :param ListEnvironmentsV2Request request
-        :return: ListEnvironmentsV2Response
-        """
-
         all_params = ['instance_id', 'offset', 'limit', 'name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -7105,26 +6609,23 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_features_v2(self, request):
         """查看实例特性列表
 
-        查看实例特性列表。注意：实例不支持以下特性的需要联系技术支持升级实例版本。  支持配置的特性列表及特性配置请参考“附录 > 实例支持的APIC特性”
+        查看实例特性列表。注意：实例不支持以下特性的需要联系技术支持升级实例版本。
+        
+        支持配置的特性列表及特性配置请参考“附录 &gt; 实例支持的APIC特性”
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListFeaturesV2Request request
-        :return: ListFeaturesV2Response
+        :param request: Request instance for ListFeaturesV2
+        :type request: :class:`huaweicloudsdkroma.v2.ListFeaturesV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListFeaturesV2Response`
         """
         return self.list_features_v2_with_http_info(request)
 
     def list_features_v2_with_http_info(self, request):
-        """查看实例特性列表
-
-        查看实例特性列表。注意：实例不支持以下特性的需要联系技术支持升级实例版本。  支持配置的特性列表及特性配置请参考“附录 > 实例支持的APIC特性”
-
-        :param ListFeaturesV2Request request
-        :return: ListFeaturesV2Response
-        """
-
         all_params = ['instance_id', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -7172,26 +6673,22 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_lately_api_statistics_v2(self, request):
         """API指标统计值查询-最近一段时间
 
-        根据API的id和最近的一段时间查询API被调用的次数，统计周期为1分钟。查询范围一小时以内，一分钟一个样本，其样本值为一分钟内的累计值。 > 为了安全起见，在服务器上使用curl命令调用接口查询信息后，需要清理历史操作记录，包括但不限于“~/.bash_history”、“/var/log/messages”（如有）。
+        根据API的id和最近的一段时间查询API被调用的次数，统计周期为1分钟。查询范围一小时以内，一分钟一个样本，其样本值为一分钟内的累计值。
+        &gt; 为了安全起见，在服务器上使用curl命令调用接口查询信息后，需要清理历史操作记录，包括但不限于“~/.bash_history”、“/var/log/messages”（如有）。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListLatelyApiStatisticsV2Request request
-        :return: ListLatelyApiStatisticsV2Response
+        :param request: Request instance for ListLatelyApiStatisticsV2
+        :type request: :class:`huaweicloudsdkroma.v2.ListLatelyApiStatisticsV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListLatelyApiStatisticsV2Response`
         """
         return self.list_lately_api_statistics_v2_with_http_info(request)
 
     def list_lately_api_statistics_v2_with_http_info(self, request):
-        """API指标统计值查询-最近一段时间
-
-        根据API的id和最近的一段时间查询API被调用的次数，统计周期为1分钟。查询范围一小时以内，一分钟一个样本，其样本值为一分钟内的累计值。 > 为了安全起见，在服务器上使用curl命令调用接口查询信息后，需要清理历史操作记录，包括但不限于“~/.bash_history”、“/var/log/messages”（如有）。
-
-        :param ListLatelyApiStatisticsV2Request request
-        :return: ListLatelyApiStatisticsV2Response
-        """
-
         all_params = ['instance_id', 'api_id', 'duration']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -7239,26 +6736,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_live_data_api_deployment_history_v2(self, request):
         """查询后端API部署历史
 
         在某个实例中查询后端API的部署记录。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListLiveDataApiDeploymentHistoryV2Request request
-        :return: ListLiveDataApiDeploymentHistoryV2Response
+        :param request: Request instance for ListLiveDataApiDeploymentHistoryV2
+        :type request: :class:`huaweicloudsdkroma.v2.ListLiveDataApiDeploymentHistoryV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListLiveDataApiDeploymentHistoryV2Response`
         """
         return self.list_live_data_api_deployment_history_v2_with_http_info(request)
 
     def list_live_data_api_deployment_history_v2_with_http_info(self, request):
-        """查询后端API部署历史
-
-        在某个实例中查询后端API的部署记录。
-
-        :param ListLiveDataApiDeploymentHistoryV2Request request
-        :return: ListLiveDataApiDeploymentHistoryV2Response
-        """
-
         all_params = ['instance_id', 'ld_api_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -7304,26 +6796,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_live_data_api_test_history_v2(self, request):
         """查询后端API测试结果
 
         在某个实例中查询后端API的测试结果。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListLiveDataApiTestHistoryV2Request request
-        :return: ListLiveDataApiTestHistoryV2Response
+        :param request: Request instance for ListLiveDataApiTestHistoryV2
+        :type request: :class:`huaweicloudsdkroma.v2.ListLiveDataApiTestHistoryV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListLiveDataApiTestHistoryV2Response`
         """
         return self.list_live_data_api_test_history_v2_with_http_info(request)
 
     def list_live_data_api_test_history_v2_with_http_info(self, request):
-        """查询后端API测试结果
-
-        在某个实例中查询后端API的测试结果。
-
-        :param ListLiveDataApiTestHistoryV2Request request
-        :return: ListLiveDataApiTestHistoryV2Response
-        """
-
         all_params = ['instance_id', 'ld_api_id', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -7373,26 +6860,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_live_data_api_v2(self, request):
         """查询后端API列表
 
         获取某个实例下的所有后端API。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListLiveDataApiV2Request request
-        :return: ListLiveDataApiV2Response
+        :param request: Request instance for ListLiveDataApiV2
+        :type request: :class:`huaweicloudsdkroma.v2.ListLiveDataApiV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListLiveDataApiV2Response`
         """
         return self.list_live_data_api_v2_with_http_info(request)
 
     def list_live_data_api_v2_with_http_info(self, request):
-        """查询后端API列表
-
-        获取某个实例下的所有后端API。
-
-        :param ListLiveDataApiV2Request request
-        :return: ListLiveDataApiV2Response
-        """
-
         all_params = ['instance_id', 'offset', 'limit', 'app_id', 'app_name', 'name', 'status', 'path', 'precise_search']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -7452,26 +6934,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_live_data_data_sources_v2(self, request):
         """查询自定义后端服务数据源列表
 
         查询自定义后端服务数据源列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListLiveDataDataSourcesV2Request request
-        :return: ListLiveDataDataSourcesV2Response
+        :param request: Request instance for ListLiveDataDataSourcesV2
+        :type request: :class:`huaweicloudsdkroma.v2.ListLiveDataDataSourcesV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListLiveDataDataSourcesV2Response`
         """
         return self.list_live_data_data_sources_v2_with_http_info(request)
 
     def list_live_data_data_sources_v2_with_http_info(self, request):
-        """查询自定义后端服务数据源列表
-
-        查询自定义后端服务数据源列表。
-
-        :param ListLiveDataDataSourcesV2Request request
-        :return: ListLiveDataDataSourcesV2Response
-        """
-
         all_params = ['instance_id', 'app_id', 'offset', 'limit', 'name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -7523,26 +7000,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_live_data_quota_v2(self, request):
         """查询自定义后端服务配额
 
         查询自定义后端服务配额。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListLiveDataQuotaV2Request request
-        :return: ListLiveDataQuotaV2Response
+        :param request: Request instance for ListLiveDataQuotaV2
+        :type request: :class:`huaweicloudsdkroma.v2.ListLiveDataQuotaV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListLiveDataQuotaV2Response`
         """
         return self.list_live_data_quota_v2_with_http_info(request)
 
     def list_live_data_quota_v2_with_http_info(self, request):
-        """查询自定义后端服务配额
-
-        查询自定义后端服务配额。
-
-        :param ListLiveDataQuotaV2Request request
-        :return: ListLiveDataQuotaV2Response
-        """
-
         all_params = ['instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -7586,26 +7058,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_monitor_infos(self, request):
         """任务监控信息列表查询
 
         查询所有任务的监控信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListMonitorInfosRequest request
-        :return: ListMonitorInfosResponse
+        :param request: Request instance for ListMonitorInfos
+        :type request: :class:`huaweicloudsdkroma.v2.ListMonitorInfosRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListMonitorInfosResponse`
         """
         return self.list_monitor_infos_with_http_info(request)
 
     def list_monitor_infos_with_http_info(self, request):
-        """任务监控信息列表查询
-
-        查询所有任务的监控信息
-
-        :param ListMonitorInfosRequest request
-        :return: ListMonitorInfosResponse
-        """
-
         all_params = ['instance_id', 'offset', 'limit', 'task_name', 'execute_status']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -7657,26 +7124,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_monitor_log(self, request):
         """任务监控日志查询
 
         查询单个任务的所有日志信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListMonitorLogRequest request
-        :return: ListMonitorLogResponse
+        :param request: Request instance for ListMonitorLog
+        :type request: :class:`huaweicloudsdkroma.v2.ListMonitorLogRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListMonitorLogResponse`
         """
         return self.list_monitor_log_with_http_info(request)
 
     def list_monitor_log_with_http_info(self, request):
-        """任务监控日志查询
-
-        查询单个任务的所有日志信息
-
-        :param ListMonitorLogRequest request
-        :return: ListMonitorLogResponse
-        """
-
         all_params = ['instance_id', 'task_id', 'offset', 'limit', 'begin_time', 'end_time']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -7730,26 +7192,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_mqs_instance_topics(self, request):
         """查询Topic列表
 
         查询Topic列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListMqsInstanceTopicsRequest request
-        :return: ListMqsInstanceTopicsResponse
+        :param request: Request instance for ListMqsInstanceTopics
+        :type request: :class:`huaweicloudsdkroma.v2.ListMqsInstanceTopicsRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListMqsInstanceTopicsResponse`
         """
         return self.list_mqs_instance_topics_with_http_info(request)
 
     def list_mqs_instance_topics_with_http_info(self, request):
-        """查询Topic列表
-
-        查询Topic列表。
-
-        :param ListMqsInstanceTopicsRequest request
-        :return: ListMqsInstanceTopicsResponse
-        """
-
         all_params = ['instance_id', 'app_name', 'name', 'access_policy', 'limit', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -7803,26 +7260,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_notification(self, request):
         """查询订阅管理信息
 
         该接口用于查询指定应用订阅管理信息的数据
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListNotificationRequest request
-        :return: ListNotificationResponse
+        :param request: Request instance for ListNotification
+        :type request: :class:`huaweicloudsdkroma.v2.ListNotificationRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListNotificationResponse`
         """
         return self.list_notification_with_http_info(request)
 
     def list_notification_with_http_info(self, request):
-        """查询订阅管理信息
-
-        该接口用于查询指定应用订阅管理信息的数据
-
-        :param ListNotificationRequest request
-        :return: ListNotificationResponse
-        """
-
         all_params = ['instance_id', 'app_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -7868,26 +7320,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_product_templates(self, request):
         """查询产品模板
 
         查询产品模板
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListProductTemplatesRequest request
-        :return: ListProductTemplatesResponse
+        :param request: Request instance for ListProductTemplates
+        :type request: :class:`huaweicloudsdkroma.v2.ListProductTemplatesRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListProductTemplatesResponse`
         """
         return self.list_product_templates_with_http_info(request)
 
     def list_product_templates_with_http_info(self, request):
-        """查询产品模板
-
-        查询产品模板
-
-        :param ListProductTemplatesRequest request
-        :return: ListProductTemplatesResponse
-        """
-
         all_params = ['instance_id', 'limit', 'id', 'name', 'status', 'created_user_name', 'created_date_start', 'created_date_end', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -7947,26 +7394,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_product_topics(self, request):
         """查询产品主题
 
         查询产品主题
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListProductTopicsRequest request
-        :return: ListProductTopicsResponse
+        :param request: Request instance for ListProductTopics
+        :type request: :class:`huaweicloudsdkroma.v2.ListProductTopicsRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListProductTopicsResponse`
         """
         return self.list_product_topics_with_http_info(request)
 
     def list_product_topics_with_http_info(self, request):
-        """查询产品主题
-
-        查询产品主题
-
-        :param ListProductTopicsRequest request
-        :return: ListProductTopicsResponse
-        """
-
         all_params = ['instance_id', 'product_id', 'limit', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -8016,26 +7458,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_products(self, request):
         """查询产品
 
         查询产品
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListProductsRequest request
-        :return: ListProductsResponse
+        :param request: Request instance for ListProducts
+        :type request: :class:`huaweicloudsdkroma.v2.ListProductsRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListProductsResponse`
         """
         return self.list_products_with_http_info(request)
 
     def list_products_with_http_info(self, request):
-        """查询产品
-
-        查询产品
-
-        :param ListProductsRequest request
-        :return: ListProductsResponse
-        """
-
         all_params = ['instance_id', 'limit', 'app_id', 'id', 'name', 'manufacturer_id', 'manufacturer_name', 'model', 'device_type', 'product_type', 'protocol_type', 'created_user_name', 'created_date_start', 'created_date_end', 'offset', 'app_name', 'product_serial']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -8111,26 +7548,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_project_cofigs_v2(self, request):
         """查询某个实例的租户配置列表
 
         查询某个实例的租户配置列表，用户可以通过此接口查看各类型资源配置及使用情况。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListProjectCofigsV2Request request
-        :return: ListProjectCofigsV2Response
+        :param request: Request instance for ListProjectCofigsV2
+        :type request: :class:`huaweicloudsdkroma.v2.ListProjectCofigsV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListProjectCofigsV2Response`
         """
         return self.list_project_cofigs_v2_with_http_info(request)
 
     def list_project_cofigs_v2_with_http_info(self, request):
-        """查询某个实例的租户配置列表
-
-        查询某个实例的租户配置列表，用户可以通过此接口查看各类型资源配置及使用情况。
-
-        :param ListProjectCofigsV2Request request
-        :return: ListProjectCofigsV2Response
-        """
-
         all_params = ['instance_id', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -8178,26 +7610,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_properties(self, request):
         """查询属性
 
         查询属性
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListPropertiesRequest request
-        :return: ListPropertiesResponse
+        :param request: Request instance for ListProperties
+        :type request: :class:`huaweicloudsdkroma.v2.ListPropertiesRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListPropertiesResponse`
         """
         return self.list_properties_with_http_info(request)
 
     def list_properties_with_http_info(self, request):
-        """查询属性
-
-        查询属性
-
-        :param ListPropertiesRequest request
-        :return: ListPropertiesResponse
-        """
-
         all_params = ['instance_id', 'service_id', 'limit', 'property_id', 'property_name', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -8251,26 +7678,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_request_properties(self, request):
         """查询请求属性
 
         查询请求属性
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListRequestPropertiesRequest request
-        :return: ListRequestPropertiesResponse
+        :param request: Request instance for ListRequestProperties
+        :type request: :class:`huaweicloudsdkroma.v2.ListRequestPropertiesRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListRequestPropertiesResponse`
         """
         return self.list_request_properties_with_http_info(request)
 
     def list_request_properties_with_http_info(self, request):
-        """查询请求属性
-
-        查询请求属性
-
-        :param ListRequestPropertiesRequest request
-        :return: ListRequestPropertiesResponse
-        """
-
         all_params = ['instance_id', 'service_id', 'command_id', 'limit', 'request_id', 'request_name', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -8326,26 +7748,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_request_throttling_policy_v2(self, request):
         """查询流控策略列表
 
         查询所有流控策略的信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListRequestThrottlingPolicyV2Request request
-        :return: ListRequestThrottlingPolicyV2Response
+        :param request: Request instance for ListRequestThrottlingPolicyV2
+        :type request: :class:`huaweicloudsdkroma.v2.ListRequestThrottlingPolicyV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListRequestThrottlingPolicyV2Response`
         """
         return self.list_request_throttling_policy_v2_with_http_info(request)
 
     def list_request_throttling_policy_v2_with_http_info(self, request):
-        """查询流控策略列表
-
-        查询所有流控策略的信息。
-
-        :param ListRequestThrottlingPolicyV2Request request
-        :return: ListRequestThrottlingPolicyV2Response
-        """
-
         all_params = ['instance_id', 'offset', 'limit', 'id', 'name', 'precise_search']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -8399,26 +7816,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_response_properties(self, request):
         """查询响应属性
 
         查询响应属性
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListResponsePropertiesRequest request
-        :return: ListResponsePropertiesResponse
+        :param request: Request instance for ListResponseProperties
+        :type request: :class:`huaweicloudsdkroma.v2.ListResponsePropertiesRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListResponsePropertiesResponse`
         """
         return self.list_response_properties_with_http_info(request)
 
     def list_response_properties_with_http_info(self, request):
-        """查询响应属性
-
-        查询响应属性
-
-        :param ListResponsePropertiesRequest request
-        :return: ListResponsePropertiesResponse
-        """
-
         all_params = ['instance_id', 'service_id', 'command_id', 'limit', 'response_id', 'response_name', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -8474,26 +7886,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_rules(self, request):
         """查询规则
 
         查询规则
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListRulesRequest request
-        :return: ListRulesResponse
+        :param request: Request instance for ListRules
+        :type request: :class:`huaweicloudsdkroma.v2.ListRulesRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListRulesResponse`
         """
         return self.list_rules_with_http_info(request)
 
     def list_rules_with_http_info(self, request):
-        """查询规则
-
-        查询规则
-
-        :param ListRulesRequest request
-        :return: ListRulesResponse
-        """
-
         all_params = ['instance_id', 'limit', 'app_id', 'name', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -8545,26 +7952,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_services(self, request):
         """查询服务
 
         查询服务
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListServicesRequest request
-        :return: ListServicesResponse
+        :param request: Request instance for ListServices
+        :type request: :class:`huaweicloudsdkroma.v2.ListServicesRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListServicesResponse`
         """
         return self.list_services_with_http_info(request)
 
     def list_services_with_http_info(self, request):
-        """查询服务
-
-        查询服务
-
-        :param ListServicesRequest request
-        :return: ListServicesResponse
-        """
-
         all_params = ['instance_id', 'limit', 'service_id', 'service_name', 'product_template_id', 'product_id', 'created_user_name', 'created_date_start', 'created_date_end', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -8626,26 +8028,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_shadows(self, request):
         """查询设备影子
 
         查询设备影子
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListShadowsRequest request
-        :return: ListShadowsResponse
+        :param request: Request instance for ListShadows
+        :type request: :class:`huaweicloudsdkroma.v2.ListShadowsRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListShadowsResponse`
         """
         return self.list_shadows_with_http_info(request)
 
     def list_shadows_with_http_info(self, request):
-        """查询设备影子
-
-        查询设备影子
-
-        :param ListShadowsRequest request
-        :return: ListShadowsResponse
-        """
-
         all_params = ['instance_id', 'device_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -8691,26 +8088,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_signature_keys_binded_to_api_v2(self, request):
         """查看API绑定的签名密钥列表
 
         查询某个API绑定的签名密钥列表。每个API在每个环境上应该最多只会绑定一个签名密钥。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListSignatureKeysBindedToApiV2Request request
-        :return: ListSignatureKeysBindedToApiV2Response
+        :param request: Request instance for ListSignatureKeysBindedToApiV2
+        :type request: :class:`huaweicloudsdkroma.v2.ListSignatureKeysBindedToApiV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListSignatureKeysBindedToApiV2Response`
         """
         return self.list_signature_keys_binded_to_api_v2_with_http_info(request)
 
     def list_signature_keys_binded_to_api_v2_with_http_info(self, request):
-        """查看API绑定的签名密钥列表
-
-        查询某个API绑定的签名密钥列表。每个API在每个环境上应该最多只会绑定一个签名密钥。
-
-        :param ListSignatureKeysBindedToApiV2Request request
-        :return: ListSignatureKeysBindedToApiV2Response
-        """
-
         all_params = ['instance_id', 'api_id', 'offset', 'limit', 'sign_id', 'sign_name', 'env_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -8766,26 +8158,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_signature_keys_v2(self, request):
         """查询签名密钥列表
 
         查询所有签名密钥的信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListSignatureKeysV2Request request
-        :return: ListSignatureKeysV2Response
+        :param request: Request instance for ListSignatureKeysV2
+        :type request: :class:`huaweicloudsdkroma.v2.ListSignatureKeysV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListSignatureKeysV2Response`
         """
         return self.list_signature_keys_v2_with_http_info(request)
 
     def list_signature_keys_v2_with_http_info(self, request):
-        """查询签名密钥列表
-
-        查询所有签名密钥的信息。
-
-        :param ListSignatureKeysV2Request request
-        :return: ListSignatureKeysV2Response
-        """
-
         all_params = ['instance_id', 'offset', 'limit', 'id', 'name', 'precise_search']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -8839,26 +8226,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_sources(self, request):
         """查询源数据源列表
 
         查询源数据源列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListSourcesRequest request
-        :return: ListSourcesResponse
+        :param request: Request instance for ListSources
+        :type request: :class:`huaweicloudsdkroma.v2.ListSourcesRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListSourcesResponse`
         """
         return self.list_sources_with_http_info(request)
 
     def list_sources_with_http_info(self, request):
-        """查询源数据源列表
-
-        查询源数据源列表
-
-        :param ListSourcesRequest request
-        :return: ListSourcesResponse
-        """
-
         all_params = ['instance_id', 'rule_id', 'limit', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -8908,26 +8290,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_special_throttling_configurations_v2(self, request):
         """查看特殊设置列表
 
         查看给流控策略设置的特殊配置。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListSpecialThrottlingConfigurationsV2Request request
-        :return: ListSpecialThrottlingConfigurationsV2Response
+        :param request: Request instance for ListSpecialThrottlingConfigurationsV2
+        :type request: :class:`huaweicloudsdkroma.v2.ListSpecialThrottlingConfigurationsV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListSpecialThrottlingConfigurationsV2Response`
         """
         return self.list_special_throttling_configurations_v2_with_http_info(request)
 
     def list_special_throttling_configurations_v2_with_http_info(self, request):
-        """查看特殊设置列表
-
-        查看给流控策略设置的特殊配置。
-
-        :param ListSpecialThrottlingConfigurationsV2Request request
-        :return: ListSpecialThrottlingConfigurationsV2Response
-        """
-
         all_params = ['instance_id', 'throttle_id', 'offset', 'limit', 'object_type', 'app_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -8981,26 +8358,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_statistics_api(self, request):
         """查询API指标统计值
 
         查询某个实例下的API统计信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListStatisticsApiRequest request
-        :return: ListStatisticsApiResponse
+        :param request: Request instance for ListStatisticsApi
+        :type request: :class:`huaweicloudsdkroma.v2.ListStatisticsApiRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListStatisticsApiResponse`
         """
         return self.list_statistics_api_with_http_info(request)
 
     def list_statistics_api_with_http_info(self, request):
-        """查询API指标统计值
-
-        查询某个实例下的API统计信息。
-
-        :param ListStatisticsApiRequest request
-        :return: ListStatisticsApiResponse
-        """
-
         all_params = ['instance_id', 'mode', 'roma_app_id', 'api_id', 'cycle', 'start_time', 'end_time', 'duration']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -9058,26 +8430,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_subsets(self, request):
         """查询子设备
 
         查询子设备
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListSubsetsRequest request
-        :return: ListSubsetsResponse
+        :param request: Request instance for ListSubsets
+        :type request: :class:`huaweicloudsdkroma.v2.ListSubsetsRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListSubsetsResponse`
         """
         return self.list_subsets_with_http_info(request)
 
     def list_subsets_with_http_info(self, request):
-        """查询子设备
-
-        查询子设备
-
-        :param ListSubsetsRequest request
-        :return: ListSubsetsResponse
-        """
-
         all_params = ['instance_id', 'device_id', 'limit', 'device_name', 'status', 'online_status', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -9133,26 +8500,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_tags_v2(self, request):
         """查询标签列表
 
         查询标签列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListTagsV2Request request
-        :return: ListTagsV2Response
+        :param request: Request instance for ListTagsV2
+        :type request: :class:`huaweicloudsdkroma.v2.ListTagsV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListTagsV2Response`
         """
         return self.list_tags_v2_with_http_info(request)
 
     def list_tags_v2_with_http_info(self, request):
-        """查询标签列表
-
-        查询标签列表
-
-        :param ListTagsV2Request request
-        :return: ListTagsV2Response
-        """
-
         all_params = ['instance_id', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -9200,26 +8562,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_tasks(self, request):
         """查询任务列表
 
         查询任务列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListTasksRequest request
-        :return: ListTasksResponse
+        :param request: Request instance for ListTasks
+        :type request: :class:`huaweicloudsdkroma.v2.ListTasksRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListTasksResponse`
         """
         return self.list_tasks_with_http_info(request)
 
     def list_tasks_with_http_info(self, request):
-        """查询任务列表
-
-        查询任务列表
-
-        :param ListTasksRequest request
-        :return: ListTasksResponse
-        """
-
         all_params = ['instance_id', 'limit', 'offset', 'task_id', 'name', 'status', 'task_type', 'source_datasource_id', 'target_datasource_id', 'sort_field', 'sort_type', 'execute_status', 'source_app_id', 'target_app_id', 'task_tag']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -9291,26 +8648,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_topics(self, request):
         """查询设备主题
 
         查询设备主题
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListTopicsRequest request
-        :return: ListTopicsResponse
+        :param request: Request instance for ListTopics
+        :type request: :class:`huaweicloudsdkroma.v2.ListTopicsRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListTopicsResponse`
         """
         return self.list_topics_with_http_info(request)
 
     def list_topics_with_http_info(self, request):
-        """查询设备主题
-
-        查询设备主题
-
-        :param ListTopicsRequest request
-        :return: ListTopicsResponse
-        """
-
         all_params = ['instance_id', 'device_id', 'limit', 'offset', 'name', 'topic_permission', 'topic_type', 'is_private']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -9368,26 +8720,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def publish_live_data_api_v2(self, request):
         """部署后端API
 
         在某个实例中部署后端API。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param PublishLiveDataApiV2Request request
-        :return: PublishLiveDataApiV2Response
+        :param request: Request instance for PublishLiveDataApiV2
+        :type request: :class:`huaweicloudsdkroma.v2.PublishLiveDataApiV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.PublishLiveDataApiV2Response`
         """
         return self.publish_live_data_api_v2_with_http_info(request)
 
     def publish_live_data_api_v2_with_http_info(self, request):
-        """部署后端API
-
-        在某个实例中部署后端API。
-
-        :param PublishLiveDataApiV2Request request
-        :return: PublishLiveDataApiV2Response
-        """
-
         all_params = ['instance_id', 'ld_api_id', 'publish_live_data_api_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -9435,26 +8782,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def reset_authentication(self, request):
         """重置设备鉴权信息
 
         重置设备鉴权信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ResetAuthenticationRequest request
-        :return: ResetAuthenticationResponse
+        :param request: Request instance for ResetAuthentication
+        :type request: :class:`huaweicloudsdkroma.v2.ResetAuthenticationRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ResetAuthenticationResponse`
         """
         return self.reset_authentication_with_http_info(request)
 
     def reset_authentication_with_http_info(self, request):
-        """重置设备鉴权信息
-
-        重置设备鉴权信息
-
-        :param ResetAuthenticationRequest request
-        :return: ResetAuthenticationResponse
-        """
-
         all_params = ['instance_id', 'device_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -9500,26 +8842,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def reset_messages(self, request):
         """重发消息
 
         重发消息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ResetMessagesRequest request
-        :return: ResetMessagesResponse
+        :param request: Request instance for ResetMessages
+        :type request: :class:`huaweicloudsdkroma.v2.ResetMessagesRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ResetMessagesResponse`
         """
         return self.reset_messages_with_http_info(request)
 
     def reset_messages_with_http_info(self, request):
-        """重发消息
-
-        重发消息。
-
-        :param ResetMessagesRequest request
-        :return: ResetMessagesResponse
-        """
-
         all_params = ['instance_id', 'action_id', 'reset_messages_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -9567,26 +8904,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def reset_multi_task_offset(self, request):
         """重置组合任务进度
 
         重置组合任务进度
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ResetMultiTaskOffsetRequest request
-        :return: ResetMultiTaskOffsetResponse
+        :param request: Request instance for ResetMultiTaskOffset
+        :type request: :class:`huaweicloudsdkroma.v2.ResetMultiTaskOffsetRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ResetMultiTaskOffsetResponse`
         """
         return self.reset_multi_task_offset_with_http_info(request)
 
     def reset_multi_task_offset_with_http_info(self, request):
-        """重置组合任务进度
-
-        重置组合任务进度
-
-        :param ResetMultiTaskOffsetRequest request
-        :return: ResetMultiTaskOffsetResponse
-        """
-
         all_params = ['instance_id', 'task_id', 'reset_multi_task_offset_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -9634,26 +8966,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def reset_product_authentication(self, request):
         """重置产品鉴权信息
 
         重置产品鉴权信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ResetProductAuthenticationRequest request
-        :return: ResetProductAuthenticationResponse
+        :param request: Request instance for ResetProductAuthentication
+        :type request: :class:`huaweicloudsdkroma.v2.ResetProductAuthenticationRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ResetProductAuthenticationResponse`
         """
         return self.reset_product_authentication_with_http_info(request)
 
     def reset_product_authentication_with_http_info(self, request):
-        """重置产品鉴权信息
-
-        重置产品鉴权信息
-
-        :param ResetProductAuthenticationRequest request
-        :return: ResetProductAuthenticationResponse
-        """
-
         all_params = ['instance_id', 'product_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -9699,26 +9026,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def run_task(self, request):
         """手工触发单个任务
 
         手工触发一次任务调度
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param RunTaskRequest request
-        :return: RunTaskResponse
+        :param request: Request instance for RunTask
+        :type request: :class:`huaweicloudsdkroma.v2.RunTaskRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.RunTaskResponse`
         """
         return self.run_task_with_http_info(request)
 
     def run_task_with_http_info(self, request):
-        """手工触发单个任务
-
-        手工触发一次任务调度
-
-        :param RunTaskRequest request
-        :return: RunTaskResponse
-        """
-
         all_params = ['instance_id', 'task_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -9764,26 +9086,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def send_command(self, request):
         """发送命令
 
         发送命令
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param SendCommandRequest request
-        :return: SendCommandResponse
+        :param request: Request instance for SendCommand
+        :type request: :class:`huaweicloudsdkroma.v2.SendCommandRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.SendCommandResponse`
         """
         return self.send_command_with_http_info(request)
 
     def send_command_with_http_info(self, request):
-        """发送命令
-
-        发送命令
-
-        :param SendCommandRequest request
-        :return: SendCommandResponse
-        """
-
         all_params = ['instance_id', 'device_id', 'send_command_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -9831,26 +9148,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_app_bound_app_quota(self, request):
         """查询客户端应用关联的应用配额
 
         查看指定客户端应用关联的应用配额。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowAppBoundAppQuotaRequest request
-        :return: ShowAppBoundAppQuotaResponse
+        :param request: Request instance for ShowAppBoundAppQuota
+        :type request: :class:`huaweicloudsdkroma.v2.ShowAppBoundAppQuotaRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ShowAppBoundAppQuotaResponse`
         """
         return self.show_app_bound_app_quota_with_http_info(request)
 
     def show_app_bound_app_quota_with_http_info(self, request):
-        """查询客户端应用关联的应用配额
-
-        查看指定客户端应用关联的应用配额。
-
-        :param ShowAppBoundAppQuotaRequest request
-        :return: ShowAppBoundAppQuotaResponse
-        """
-
         all_params = ['instance_id', 'app_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -9896,26 +9208,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_app_quota(self, request):
         """获取客户端配额详情
 
         获取客户端配额详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowAppQuotaRequest request
-        :return: ShowAppQuotaResponse
+        :param request: Request instance for ShowAppQuota
+        :type request: :class:`huaweicloudsdkroma.v2.ShowAppQuotaRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ShowAppQuotaResponse`
         """
         return self.show_app_quota_with_http_info(request)
 
     def show_app_quota_with_http_info(self, request):
-        """获取客户端配额详情
-
-        获取客户端配额详情
-
-        :param ShowAppQuotaRequest request
-        :return: ShowAppQuotaResponse
-        """
-
         all_params = ['instance_id', 'app_quota_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -9961,26 +9268,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_authentication(self, request):
         """查询设备鉴权信息
 
         查询设备鉴权信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowAuthenticationRequest request
-        :return: ShowAuthenticationResponse
+        :param request: Request instance for ShowAuthentication
+        :type request: :class:`huaweicloudsdkroma.v2.ShowAuthenticationRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ShowAuthenticationResponse`
         """
         return self.show_authentication_with_http_info(request)
 
     def show_authentication_with_http_info(self, request):
-        """查询设备鉴权信息
-
-        查询设备鉴权信息
-
-        :param ShowAuthenticationRequest request
-        :return: ShowAuthenticationResponse
-        """
-
         all_params = ['instance_id', 'device_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -10026,26 +9328,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_command(self, request):
         """查询命令详情
 
         查询命令详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowCommandRequest request
-        :return: ShowCommandResponse
+        :param request: Request instance for ShowCommand
+        :type request: :class:`huaweicloudsdkroma.v2.ShowCommandRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ShowCommandResponse`
         """
         return self.show_command_with_http_info(request)
 
     def show_command_with_http_info(self, request):
-        """查询命令详情
-
-        查询命令详情
-
-        :param ShowCommandRequest request
-        :return: ShowCommandResponse
-        """
-
         all_params = ['instance_id', 'service_id', 'command_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -10093,26 +9390,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_dataource_detail(self, request):
         """查询指定数据源
 
         根据数据源id查询数据源
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowDataourceDetailRequest request
-        :return: ShowDataourceDetailResponse
+        :param request: Request instance for ShowDataourceDetail
+        :type request: :class:`huaweicloudsdkroma.v2.ShowDataourceDetailRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ShowDataourceDetailResponse`
         """
         return self.show_dataource_detail_with_http_info(request)
 
     def show_dataource_detail_with_http_info(self, request):
-        """查询指定数据源
-
-        根据数据源id查询数据源
-
-        :param ShowDataourceDetailRequest request
-        :return: ShowDataourceDetailResponse
-        """
-
         all_params = ['instance_id', 'datasource_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -10158,26 +9450,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_details_of_app_acl(self, request):
         """查看APP的访问控制详情
 
         查看APP的访问控制详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowDetailsOfAppAclRequest request
-        :return: ShowDetailsOfAppAclResponse
+        :param request: Request instance for ShowDetailsOfAppAcl
+        :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfAppAclRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfAppAclResponse`
         """
         return self.show_details_of_app_acl_with_http_info(request)
 
     def show_details_of_app_acl_with_http_info(self, request):
-        """查看APP的访问控制详情
-
-        查看APP的访问控制详情。
-
-        :param ShowDetailsOfAppAclRequest request
-        :return: ShowDetailsOfAppAclResponse
-        """
-
         all_params = ['instance_id', 'app_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -10223,26 +9510,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_details_of_app_code_v2(self, request):
         """查看APP Code详情
 
         App Code为APP应用下的子模块，创建App Code之后，可以实现简易的APP认证。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowDetailsOfAppCodeV2Request request
-        :return: ShowDetailsOfAppCodeV2Response
+        :param request: Request instance for ShowDetailsOfAppCodeV2
+        :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfAppCodeV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfAppCodeV2Response`
         """
         return self.show_details_of_app_code_v2_with_http_info(request)
 
     def show_details_of_app_code_v2_with_http_info(self, request):
-        """查看APP Code详情
-
-        App Code为APP应用下的子模块，创建App Code之后，可以实现简易的APP认证。
-
-        :param ShowDetailsOfAppCodeV2Request request
-        :return: ShowDetailsOfAppCodeV2Response
-        """
-
         all_params = ['instance_id', 'app_id', 'app_code_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -10290,26 +9572,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_details_of_app_config_v2(self, request):
         """查看应用配置详情
 
         查看应用配置详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowDetailsOfAppConfigV2Request request
-        :return: ShowDetailsOfAppConfigV2Response
+        :param request: Request instance for ShowDetailsOfAppConfigV2
+        :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfAppConfigV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfAppConfigV2Response`
         """
         return self.show_details_of_app_config_v2_with_http_info(request)
 
     def show_details_of_app_config_v2_with_http_info(self, request):
-        """查看应用配置详情
-
-        查看应用配置详情
-
-        :param ShowDetailsOfAppConfigV2Request request
-        :return: ShowDetailsOfAppConfigV2Response
-        """
-
         all_params = ['instance_id', 'app_id', 'app_config_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -10357,26 +9634,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_details_of_app_v2(self, request):
         """查看APP详情
 
         查看指定APP的详细信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowDetailsOfAppV2Request request
-        :return: ShowDetailsOfAppV2Response
+        :param request: Request instance for ShowDetailsOfAppV2
+        :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfAppV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfAppV2Response`
         """
         return self.show_details_of_app_v2_with_http_info(request)
 
     def show_details_of_app_v2_with_http_info(self, request):
-        """查看APP详情
-
-        查看指定APP的详细信息。
-
-        :param ShowDetailsOfAppV2Request request
-        :return: ShowDetailsOfAppV2Response
-        """
-
         all_params = ['instance_id', 'app_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -10422,26 +9694,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_details_of_custom_authorizers_v2(self, request):
         """查看自定义认证详情
 
         查看自定义认证详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowDetailsOfCustomAuthorizersV2Request request
-        :return: ShowDetailsOfCustomAuthorizersV2Response
+        :param request: Request instance for ShowDetailsOfCustomAuthorizersV2
+        :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfCustomAuthorizersV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfCustomAuthorizersV2Response`
         """
         return self.show_details_of_custom_authorizers_v2_with_http_info(request)
 
     def show_details_of_custom_authorizers_v2_with_http_info(self, request):
-        """查看自定义认证详情
-
-        查看自定义认证详情
-
-        :param ShowDetailsOfCustomAuthorizersV2Request request
-        :return: ShowDetailsOfCustomAuthorizersV2Response
-        """
-
         all_params = ['instance_id', 'authorizer_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -10487,26 +9754,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_details_of_domain_name_certificate_v2(self, request):
         """查看域名证书
 
         查看域名下绑定的证书详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowDetailsOfDomainNameCertificateV2Request request
-        :return: ShowDetailsOfDomainNameCertificateV2Response
+        :param request: Request instance for ShowDetailsOfDomainNameCertificateV2
+        :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfDomainNameCertificateV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfDomainNameCertificateV2Response`
         """
         return self.show_details_of_domain_name_certificate_v2_with_http_info(request)
 
     def show_details_of_domain_name_certificate_v2_with_http_info(self, request):
-        """查看域名证书
-
-        查看域名下绑定的证书详情。
-
-        :param ShowDetailsOfDomainNameCertificateV2Request request
-        :return: ShowDetailsOfDomainNameCertificateV2Response
-        """
-
         all_params = ['instance_id', 'group_id', 'domain_id', 'certificate_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -10556,26 +9818,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_details_of_environment_variable_v2(self, request):
         """查看变量详情
 
         查看指定的环境变量的详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowDetailsOfEnvironmentVariableV2Request request
-        :return: ShowDetailsOfEnvironmentVariableV2Response
+        :param request: Request instance for ShowDetailsOfEnvironmentVariableV2
+        :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfEnvironmentVariableV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfEnvironmentVariableV2Response`
         """
         return self.show_details_of_environment_variable_v2_with_http_info(request)
 
     def show_details_of_environment_variable_v2_with_http_info(self, request):
-        """查看变量详情
-
-        查看指定的环境变量的详情。
-
-        :param ShowDetailsOfEnvironmentVariableV2Request request
-        :return: ShowDetailsOfEnvironmentVariableV2Response
-        """
-
         all_params = ['instance_id', 'env_variable_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -10621,26 +9878,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_details_of_instance_v2(self, request):
         """查看ROMA Connect实例详情
 
         查看ROMA Connect实例详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowDetailsOfInstanceV2Request request
-        :return: ShowDetailsOfInstanceV2Response
+        :param request: Request instance for ShowDetailsOfInstanceV2
+        :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfInstanceV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfInstanceV2Response`
         """
         return self.show_details_of_instance_v2_with_http_info(request)
 
     def show_details_of_instance_v2_with_http_info(self, request):
-        """查看ROMA Connect实例详情
-
-        查看ROMA Connect实例详情
-
-        :param ShowDetailsOfInstanceV2Request request
-        :return: ShowDetailsOfInstanceV2Response
-        """
-
         all_params = ['instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -10684,26 +9936,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_details_of_request_throttling_policy_v2(self, request):
         """查看流控策略详情
 
         查看指定流控策略的详细信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowDetailsOfRequestThrottlingPolicyV2Request request
-        :return: ShowDetailsOfRequestThrottlingPolicyV2Response
+        :param request: Request instance for ShowDetailsOfRequestThrottlingPolicyV2
+        :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfRequestThrottlingPolicyV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfRequestThrottlingPolicyV2Response`
         """
         return self.show_details_of_request_throttling_policy_v2_with_http_info(request)
 
     def show_details_of_request_throttling_policy_v2_with_http_info(self, request):
-        """查看流控策略详情
-
-        查看指定流控策略的详细信息。
-
-        :param ShowDetailsOfRequestThrottlingPolicyV2Request request
-        :return: ShowDetailsOfRequestThrottlingPolicyV2Response
-        """
-
         all_params = ['instance_id', 'throttle_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -10749,26 +9996,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_device(self, request):
         """查询设备详情
 
         查询设备详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowDeviceRequest request
-        :return: ShowDeviceResponse
+        :param request: Request instance for ShowDevice
+        :type request: :class:`huaweicloudsdkroma.v2.ShowDeviceRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ShowDeviceResponse`
         """
         return self.show_device_with_http_info(request)
 
     def show_device_with_http_info(self, request):
-        """查询设备详情
-
-        查询设备详情
-
-        :param ShowDeviceRequest request
-        :return: ShowDeviceResponse
-        """
-
         all_params = ['instance_id', 'device_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -10814,26 +10056,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_device_group(self, request):
         """查询设备分组详情
 
         获取设备分组及下一层分组信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowDeviceGroupRequest request
-        :return: ShowDeviceGroupResponse
+        :param request: Request instance for ShowDeviceGroup
+        :type request: :class:`huaweicloudsdkroma.v2.ShowDeviceGroupRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ShowDeviceGroupResponse`
         """
         return self.show_device_group_with_http_info(request)
 
     def show_device_group_with_http_info(self, request):
-        """查询设备分组详情
-
-        获取设备分组及下一层分组信息
-
-        :param ShowDeviceGroupRequest request
-        :return: ShowDeviceGroupResponse
-        """
-
         all_params = ['instance_id', 'group_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -10879,26 +10116,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_device_group_tree(self, request):
         """查询所有设备分组
 
         查询所有设备分组
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowDeviceGroupTreeRequest request
-        :return: ShowDeviceGroupTreeResponse
+        :param request: Request instance for ShowDeviceGroupTree
+        :type request: :class:`huaweicloudsdkroma.v2.ShowDeviceGroupTreeRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ShowDeviceGroupTreeResponse`
         """
         return self.show_device_group_tree_with_http_info(request)
 
     def show_device_group_tree_with_http_info(self, request):
-        """查询所有设备分组
-
-        查询所有设备分组
-
-        :param ShowDeviceGroupTreeRequest request
-        :return: ShowDeviceGroupTreeResponse
-        """
-
         all_params = ['instance_id', 'app_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -10944,26 +10176,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_devices_in_group(self, request):
         """查询设备分组内设备
 
         查询设备分组内设备
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowDevicesInGroupRequest request
-        :return: ShowDevicesInGroupResponse
+        :param request: Request instance for ShowDevicesInGroup
+        :type request: :class:`huaweicloudsdkroma.v2.ShowDevicesInGroupRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ShowDevicesInGroupResponse`
         """
         return self.show_devices_in_group_with_http_info(request)
 
     def show_devices_in_group_with_http_info(self, request):
-        """查询设备分组内设备
-
-        查询设备分组内设备
-
-        :param ShowDevicesInGroupRequest request
-        :return: ShowDevicesInGroupResponse
-        """
-
         all_params = ['instance_id', 'group_id', 'limit', 'product_name', 'device_name', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -11017,26 +10244,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_dispatches(self, request):
         """查询调度计划
 
         查询调度计划
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowDispatchesRequest request
-        :return: ShowDispatchesResponse
+        :param request: Request instance for ShowDispatches
+        :type request: :class:`huaweicloudsdkroma.v2.ShowDispatchesRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ShowDispatchesResponse`
         """
         return self.show_dispatches_with_http_info(request)
 
     def show_dispatches_with_http_info(self, request):
-        """查询调度计划
-
-        查询调度计划
-
-        :param ShowDispatchesRequest request
-        :return: ShowDispatchesResponse
-        """
-
         all_params = ['instance_id', 'task_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -11082,26 +10304,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_live_data_api_v2(self, request):
         """查询后端API详情
 
         查询后端API的详细信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowLiveDataApiV2Request request
-        :return: ShowLiveDataApiV2Response
+        :param request: Request instance for ShowLiveDataApiV2
+        :type request: :class:`huaweicloudsdkroma.v2.ShowLiveDataApiV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ShowLiveDataApiV2Response`
         """
         return self.show_live_data_api_v2_with_http_info(request)
 
     def show_live_data_api_v2_with_http_info(self, request):
-        """查询后端API详情
-
-        查询后端API的详细信息。
-
-        :param ShowLiveDataApiV2Request request
-        :return: ShowLiveDataApiV2Response
-        """
-
         all_params = ['instance_id', 'ld_api_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -11147,26 +10364,22 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_mqs_instance_messages(self, request):
         """查询消息
 
-        查询消息的偏移量和消息内容。 先根据时间戳查询消息的偏移量，再根据偏移量查询消息内容。
+        查询消息的偏移量和消息内容。
+        先根据时间戳查询消息的偏移量，再根据偏移量查询消息内容。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowMqsInstanceMessagesRequest request
-        :return: ShowMqsInstanceMessagesResponse
+        :param request: Request instance for ShowMqsInstanceMessages
+        :type request: :class:`huaweicloudsdkroma.v2.ShowMqsInstanceMessagesRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ShowMqsInstanceMessagesResponse`
         """
         return self.show_mqs_instance_messages_with_http_info(request)
 
     def show_mqs_instance_messages_with_http_info(self, request):
-        """查询消息
-
-        查询消息的偏移量和消息内容。 先根据时间戳查询消息的偏移量，再根据偏移量查询消息内容。
-
-        :param ShowMqsInstanceMessagesRequest request
-        :return: ShowMqsInstanceMessagesResponse
-        """
-
         all_params = ['instance_id', 'topic', 'start_time', 'end_time', 'asc', 'limit', 'offset', 'download', 'message_offset', 'partition', 'key', 'message_id', 'tag']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -11234,26 +10447,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_mqs_instance_topic_access_policy(self, request):
         """查询Topic权限
 
         查询Topic权限。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowMqsInstanceTopicAccessPolicyRequest request
-        :return: ShowMqsInstanceTopicAccessPolicyResponse
+        :param request: Request instance for ShowMqsInstanceTopicAccessPolicy
+        :type request: :class:`huaweicloudsdkroma.v2.ShowMqsInstanceTopicAccessPolicyRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ShowMqsInstanceTopicAccessPolicyResponse`
         """
         return self.show_mqs_instance_topic_access_policy_with_http_info(request)
 
     def show_mqs_instance_topic_access_policy_with_http_info(self, request):
-        """查询Topic权限
-
-        查询Topic权限。
-
-        :param ShowMqsInstanceTopicAccessPolicyRequest request
-        :return: ShowMqsInstanceTopicAccessPolicyResponse
-        """
-
         all_params = ['instance_id', 'topic_name', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -11303,26 +10511,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_product(self, request):
         """查询产品详情
 
         查询产品详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowProductRequest request
-        :return: ShowProductResponse
+        :param request: Request instance for ShowProduct
+        :type request: :class:`huaweicloudsdkroma.v2.ShowProductRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ShowProductResponse`
         """
         return self.show_product_with_http_info(request)
 
     def show_product_with_http_info(self, request):
-        """查询产品详情
-
-        查询产品详情
-
-        :param ShowProductRequest request
-        :return: ShowProductResponse
-        """
-
         all_params = ['instance_id', 'product_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -11368,26 +10571,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_product_authentication(self, request):
         """查询产品鉴权信息
 
         查询产品鉴权信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowProductAuthenticationRequest request
-        :return: ShowProductAuthenticationResponse
+        :param request: Request instance for ShowProductAuthentication
+        :type request: :class:`huaweicloudsdkroma.v2.ShowProductAuthenticationRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ShowProductAuthenticationResponse`
         """
         return self.show_product_authentication_with_http_info(request)
 
     def show_product_authentication_with_http_info(self, request):
-        """查询产品鉴权信息
-
-        查询产品鉴权信息
-
-        :param ShowProductAuthenticationRequest request
-        :return: ShowProductAuthenticationResponse
-        """
-
         all_params = ['instance_id', 'product_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -11433,26 +10631,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_product_template(self, request):
         """查询产品模板详情
 
         查询产品模板详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowProductTemplateRequest request
-        :return: ShowProductTemplateResponse
+        :param request: Request instance for ShowProductTemplate
+        :type request: :class:`huaweicloudsdkroma.v2.ShowProductTemplateRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ShowProductTemplateResponse`
         """
         return self.show_product_template_with_http_info(request)
 
     def show_product_template_with_http_info(self, request):
-        """查询产品模板详情
-
-        查询产品模板详情
-
-        :param ShowProductTemplateRequest request
-        :return: ShowProductTemplateResponse
-        """
-
         all_params = ['instance_id', 'product_template_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -11498,26 +10691,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_property(self, request):
         """查询服务属性详情
 
         查询服务属性详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowPropertyRequest request
-        :return: ShowPropertyResponse
+        :param request: Request instance for ShowProperty
+        :type request: :class:`huaweicloudsdkroma.v2.ShowPropertyRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ShowPropertyResponse`
         """
         return self.show_property_with_http_info(request)
 
     def show_property_with_http_info(self, request):
-        """查询服务属性详情
-
-        查询服务属性详情
-
-        :param ShowPropertyRequest request
-        :return: ShowPropertyResponse
-        """
-
         all_params = ['instance_id', 'service_id', 'property_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -11565,26 +10753,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_request_property(self, request):
         """查询请求属性详情
 
         查询请求属性详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowRequestPropertyRequest request
-        :return: ShowRequestPropertyResponse
+        :param request: Request instance for ShowRequestProperty
+        :type request: :class:`huaweicloudsdkroma.v2.ShowRequestPropertyRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ShowRequestPropertyResponse`
         """
         return self.show_request_property_with_http_info(request)
 
     def show_request_property_with_http_info(self, request):
-        """查询请求属性详情
-
-        查询请求属性详情
-
-        :param ShowRequestPropertyRequest request
-        :return: ShowRequestPropertyResponse
-        """
-
         all_params = ['instance_id', 'service_id', 'command_id', 'property_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -11634,26 +10817,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_response_property(self, request):
         """查询响应属性详情
 
         查询响应属性详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowResponsePropertyRequest request
-        :return: ShowResponsePropertyResponse
+        :param request: Request instance for ShowResponseProperty
+        :type request: :class:`huaweicloudsdkroma.v2.ShowResponsePropertyRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ShowResponsePropertyResponse`
         """
         return self.show_response_property_with_http_info(request)
 
     def show_response_property_with_http_info(self, request):
-        """查询响应属性详情
-
-        查询响应属性详情
-
-        :param ShowResponsePropertyRequest request
-        :return: ShowResponsePropertyResponse
-        """
-
         all_params = ['instance_id', 'service_id', 'command_id', 'property_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -11703,26 +10881,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_restriction_of_instance_v2(self, request):
         """查看ROMA Connect实例约束信息
 
         查看ROMA Connect实例约束信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowRestrictionOfInstanceV2Request request
-        :return: ShowRestrictionOfInstanceV2Response
+        :param request: Request instance for ShowRestrictionOfInstanceV2
+        :type request: :class:`huaweicloudsdkroma.v2.ShowRestrictionOfInstanceV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ShowRestrictionOfInstanceV2Response`
         """
         return self.show_restriction_of_instance_v2_with_http_info(request)
 
     def show_restriction_of_instance_v2_with_http_info(self, request):
-        """查看ROMA Connect实例约束信息
-
-        查看ROMA Connect实例约束信息
-
-        :param ShowRestrictionOfInstanceV2Request request
-        :return: ShowRestrictionOfInstanceV2Response
-        """
-
         all_params = ['instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -11766,26 +10939,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_rule(self, request):
         """查询规则详情
 
         查询规则详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowRuleRequest request
-        :return: ShowRuleResponse
+        :param request: Request instance for ShowRule
+        :type request: :class:`huaweicloudsdkroma.v2.ShowRuleRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ShowRuleResponse`
         """
         return self.show_rule_with_http_info(request)
 
     def show_rule_with_http_info(self, request):
-        """查询规则详情
-
-        查询规则详情
-
-        :param ShowRuleRequest request
-        :return: ShowRuleResponse
-        """
-
         all_params = ['instance_id', 'rule_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -11831,26 +10999,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_service(self, request):
         """查询服务详情
 
         查询服务详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowServiceRequest request
-        :return: ShowServiceResponse
+        :param request: Request instance for ShowService
+        :type request: :class:`huaweicloudsdkroma.v2.ShowServiceRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ShowServiceResponse`
         """
         return self.show_service_with_http_info(request)
 
     def show_service_with_http_info(self, request):
-        """查询服务详情
-
-        查询服务详情
-
-        :param ShowServiceRequest request
-        :return: ShowServiceResponse
-        """
-
         all_params = ['instance_id', 'service_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -11896,26 +11059,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_task(self, request):
         """通过任务ID查询指定任务的信息
 
         通过任务ID查询指定任务的信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowTaskRequest request
-        :return: ShowTaskResponse
+        :param request: Request instance for ShowTask
+        :type request: :class:`huaweicloudsdkroma.v2.ShowTaskRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ShowTaskResponse`
         """
         return self.show_task_with_http_info(request)
 
     def show_task_with_http_info(self, request):
-        """通过任务ID查询指定任务的信息
-
-        通过任务ID查询指定任务的信息
-
-        :param ShowTaskRequest request
-        :return: ShowTaskResponse
-        """
-
         all_params = ['instance_id', 'task_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -11961,26 +11119,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def start_test_datasource(self, request):
         """测试数据源连通性
 
         测试数据源连通性
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param StartTestDatasourceRequest request
-        :return: StartTestDatasourceResponse
+        :param request: Request instance for StartTestDatasource
+        :type request: :class:`huaweicloudsdkroma.v2.StartTestDatasourceRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.StartTestDatasourceResponse`
         """
         return self.start_test_datasource_with_http_info(request)
 
     def start_test_datasource_with_http_info(self, request):
-        """测试数据源连通性
-
-        测试数据源连通性
-
-        :param StartTestDatasourceRequest request
-        :return: StartTestDatasourceResponse
-        """
-
         all_params = ['instance_id', 'datasource_id', 'start_test_datasource_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -12028,26 +11181,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def stop_task(self, request):
         """手工停止当前执行的任务
 
         手工停止当前执行的任务
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param StopTaskRequest request
-        :return: StopTaskResponse
+        :param request: Request instance for StopTask
+        :type request: :class:`huaweicloudsdkroma.v2.StopTaskRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.StopTaskResponse`
         """
         return self.stop_task_with_http_info(request)
 
     def stop_task_with_http_info(self, request):
-        """手工停止当前执行的任务
-
-        手工停止当前执行的任务
-
-        :param StopTaskRequest request
-        :return: StopTaskResponse
-        """
-
         all_params = ['instance_id', 'task_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -12093,26 +11241,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def unpublish_live_data_api_v2(self, request):
         """撤销后端API
 
         在某个实例中取消部署后端API。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UnpublishLiveDataApiV2Request request
-        :return: UnpublishLiveDataApiV2Response
+        :param request: Request instance for UnpublishLiveDataApiV2
+        :type request: :class:`huaweicloudsdkroma.v2.UnpublishLiveDataApiV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.UnpublishLiveDataApiV2Response`
         """
         return self.unpublish_live_data_api_v2_with_http_info(request)
 
     def unpublish_live_data_api_v2_with_http_info(self, request):
-        """撤销后端API
-
-        在某个实例中取消部署后端API。
-
-        :param UnpublishLiveDataApiV2Request request
-        :return: UnpublishLiveDataApiV2Response
-        """
-
         all_params = ['instance_id', 'ld_api_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -12158,26 +11301,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_app_acl(self, request):
         """设置APP的访问控制
 
         设置客户端配置的访问控制。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateAppAclRequest request
-        :return: UpdateAppAclResponse
+        :param request: Request instance for UpdateAppAcl
+        :type request: :class:`huaweicloudsdkroma.v2.UpdateAppAclRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.UpdateAppAclResponse`
         """
         return self.update_app_acl_with_http_info(request)
 
     def update_app_acl_with_http_info(self, request):
-        """设置APP的访问控制
-
-        设置客户端配置的访问控制。
-
-        :param UpdateAppAclRequest request
-        :return: UpdateAppAclResponse
-        """
-
         all_params = ['instance_id', 'app_id', 'update_app_acl_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -12225,26 +11363,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_app_config_v2(self, request):
         """修改应用配置
 
         修改应用配置
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateAppConfigV2Request request
-        :return: UpdateAppConfigV2Response
+        :param request: Request instance for UpdateAppConfigV2
+        :type request: :class:`huaweicloudsdkroma.v2.UpdateAppConfigV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.UpdateAppConfigV2Response`
         """
         return self.update_app_config_v2_with_http_info(request)
 
     def update_app_config_v2_with_http_info(self, request):
-        """修改应用配置
-
-        修改应用配置
-
-        :param UpdateAppConfigV2Request request
-        :return: UpdateAppConfigV2Response
-        """
-
         all_params = ['instance_id', 'app_id', 'app_config_id', 'update_app_c_onfig_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -12294,26 +11427,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_app_quota(self, request):
         """修改客户端配额
 
         修改客户端配额
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateAppQuotaRequest request
-        :return: UpdateAppQuotaResponse
+        :param request: Request instance for UpdateAppQuota
+        :type request: :class:`huaweicloudsdkroma.v2.UpdateAppQuotaRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.UpdateAppQuotaResponse`
         """
         return self.update_app_quota_with_http_info(request)
 
     def update_app_quota_with_http_info(self, request):
-        """修改客户端配额
-
-        修改客户端配额
-
-        :param UpdateAppQuotaRequest request
-        :return: UpdateAppQuotaResponse
-        """
-
         all_params = ['instance_id', 'app_quota_id', 'update_app_quota_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -12361,26 +11489,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_command(self, request):
         """修改命令
 
         修改命令
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateCommandRequest request
-        :return: UpdateCommandResponse
+        :param request: Request instance for UpdateCommand
+        :type request: :class:`huaweicloudsdkroma.v2.UpdateCommandRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.UpdateCommandResponse`
         """
         return self.update_command_with_http_info(request)
 
     def update_command_with_http_info(self, request):
-        """修改命令
-
-        修改命令
-
-        :param UpdateCommandRequest request
-        :return: UpdateCommandResponse
-        """
-
         all_params = ['instance_id', 'service_id', 'command_id', 'update_command_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -12430,26 +11553,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_custom_authorizer_v2(self, request):
         """修改自定义认证
 
         修改自定义认证
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateCustomAuthorizerV2Request request
-        :return: UpdateCustomAuthorizerV2Response
+        :param request: Request instance for UpdateCustomAuthorizerV2
+        :type request: :class:`huaweicloudsdkroma.v2.UpdateCustomAuthorizerV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.UpdateCustomAuthorizerV2Response`
         """
         return self.update_custom_authorizer_v2_with_http_info(request)
 
     def update_custom_authorizer_v2_with_http_info(self, request):
-        """修改自定义认证
-
-        修改自定义认证
-
-        :param UpdateCustomAuthorizerV2Request request
-        :return: UpdateCustomAuthorizerV2Response
-        """
-
         all_params = ['instance_id', 'authorizer_id', 'update_custom_authorizer_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -12497,26 +11615,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_datasource_info(self, request):
         """修改数据源
 
         修改数据源
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateDatasourceInfoRequest request
-        :return: UpdateDatasourceInfoResponse
+        :param request: Request instance for UpdateDatasourceInfo
+        :type request: :class:`huaweicloudsdkroma.v2.UpdateDatasourceInfoRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.UpdateDatasourceInfoResponse`
         """
         return self.update_datasource_info_with_http_info(request)
 
     def update_datasource_info_with_http_info(self, request):
-        """修改数据源
-
-        修改数据源
-
-        :param UpdateDatasourceInfoRequest request
-        :return: UpdateDatasourceInfoResponse
-        """
-
         all_params = ['instance_id', 'datasource_id', 'update_datasource_info_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -12564,26 +11677,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_device(self, request):
         """修改设备
 
         修改设备信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateDeviceRequest request
-        :return: UpdateDeviceResponse
+        :param request: Request instance for UpdateDevice
+        :type request: :class:`huaweicloudsdkroma.v2.UpdateDeviceRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.UpdateDeviceResponse`
         """
         return self.update_device_with_http_info(request)
 
     def update_device_with_http_info(self, request):
-        """修改设备
-
-        修改设备信息
-
-        :param UpdateDeviceRequest request
-        :return: UpdateDeviceResponse
-        """
-
         all_params = ['instance_id', 'device_id', 'update_device_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -12631,26 +11739,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_device_group(self, request):
         """修改设备分组
 
         修改设备分组
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateDeviceGroupRequest request
-        :return: UpdateDeviceGroupResponse
+        :param request: Request instance for UpdateDeviceGroup
+        :type request: :class:`huaweicloudsdkroma.v2.UpdateDeviceGroupRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.UpdateDeviceGroupResponse`
         """
         return self.update_device_group_with_http_info(request)
 
     def update_device_group_with_http_info(self, request):
-        """修改设备分组
-
-        修改设备分组
-
-        :param UpdateDeviceGroupRequest request
-        :return: UpdateDeviceGroupResponse
-        """
-
         all_params = ['instance_id', 'group_id', 'update_device_group_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -12698,26 +11801,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_dispatches(self, request):
         """修改调度计划
 
         通过任务ID和调度ID修改调度计划
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateDispatchesRequest request
-        :return: UpdateDispatchesResponse
+        :param request: Request instance for UpdateDispatches
+        :type request: :class:`huaweicloudsdkroma.v2.UpdateDispatchesRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.UpdateDispatchesResponse`
         """
         return self.update_dispatches_with_http_info(request)
 
     def update_dispatches_with_http_info(self, request):
-        """修改调度计划
-
-        通过任务ID和调度ID修改调度计划
-
-        :param UpdateDispatchesRequest request
-        :return: UpdateDispatchesResponse
-        """
-
         all_params = ['instance_id', 'task_id', 'dispatch_id', 'update_dispatches_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -12767,26 +11865,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_domain_v2(self, request):
         """修改域名
 
         修改绑定的域名所对应的配置信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateDomainV2Request request
-        :return: UpdateDomainV2Response
+        :param request: Request instance for UpdateDomainV2
+        :type request: :class:`huaweicloudsdkroma.v2.UpdateDomainV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.UpdateDomainV2Response`
         """
         return self.update_domain_v2_with_http_info(request)
 
     def update_domain_v2_with_http_info(self, request):
-        """修改域名
-
-        修改绑定的域名所对应的配置信息。
-
-        :param UpdateDomainV2Request request
-        :return: UpdateDomainV2Response
-        """
-
         all_params = ['instance_id', 'group_id', 'domain_id', 'update_domain_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -12836,26 +11929,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_environment_v2(self, request):
         """修改环境
 
         修改指定环境的信息。其中可修改的属性为：name、remark，其它属性不可修改。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateEnvironmentV2Request request
-        :return: UpdateEnvironmentV2Response
+        :param request: Request instance for UpdateEnvironmentV2
+        :type request: :class:`huaweicloudsdkroma.v2.UpdateEnvironmentV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.UpdateEnvironmentV2Response`
         """
         return self.update_environment_v2_with_http_info(request)
 
     def update_environment_v2_with_http_info(self, request):
-        """修改环境
-
-        修改指定环境的信息。其中可修改的属性为：name、remark，其它属性不可修改。
-
-        :param UpdateEnvironmentV2Request request
-        :return: UpdateEnvironmentV2Response
-        """
-
         all_params = ['instance_id', 'env_id', 'update_environment_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -12903,26 +11991,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_environment_variable_v2(self, request):
         """修改变量
 
         修改环境变量。环境变量引用位置为api的后端服务地址时，修改对应环境变量会将使用该变量的所有api重新发布。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateEnvironmentVariableV2Request request
-        :return: UpdateEnvironmentVariableV2Response
+        :param request: Request instance for UpdateEnvironmentVariableV2
+        :type request: :class:`huaweicloudsdkroma.v2.UpdateEnvironmentVariableV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.UpdateEnvironmentVariableV2Response`
         """
         return self.update_environment_variable_v2_with_http_info(request)
 
     def update_environment_variable_v2_with_http_info(self, request):
-        """修改变量
-
-        修改环境变量。环境变量引用位置为api的后端服务地址时，修改对应环境变量会将使用该变量的所有api重新发布。
-
-        :param UpdateEnvironmentVariableV2Request request
-        :return: UpdateEnvironmentVariableV2Response
-        """
-
         all_params = ['instance_id', 'env_variable_id', 'update_environment_variable_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -12970,26 +12053,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_live_data_api_v2(self, request):
         """修改后端API
 
         在某个实例中更新后端API的参数。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateLiveDataApiV2Request request
-        :return: UpdateLiveDataApiV2Response
+        :param request: Request instance for UpdateLiveDataApiV2
+        :type request: :class:`huaweicloudsdkroma.v2.UpdateLiveDataApiV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.UpdateLiveDataApiV2Response`
         """
         return self.update_live_data_api_v2_with_http_info(request)
 
     def update_live_data_api_v2_with_http_info(self, request):
-        """修改后端API
-
-        在某个实例中更新后端API的参数。
-
-        :param UpdateLiveDataApiV2Request request
-        :return: UpdateLiveDataApiV2Response
-        """
-
         all_params = ['instance_id', 'ld_api_id', 'update_live_data_api_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -13037,26 +12115,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_mqs_instance_topic(self, request):
         """修改Topic
 
         修改Topic。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateMqsInstanceTopicRequest request
-        :return: UpdateMqsInstanceTopicResponse
+        :param request: Request instance for UpdateMqsInstanceTopic
+        :type request: :class:`huaweicloudsdkroma.v2.UpdateMqsInstanceTopicRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.UpdateMqsInstanceTopicResponse`
         """
         return self.update_mqs_instance_topic_with_http_info(request)
 
     def update_mqs_instance_topic_with_http_info(self, request):
-        """修改Topic
-
-        修改Topic。
-
-        :param UpdateMqsInstanceTopicRequest request
-        :return: UpdateMqsInstanceTopicResponse
-        """
-
         all_params = ['instance_id', 'update_mqs_instance_topic_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -13102,26 +12175,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_multi_tasks(self, request):
         """修改组合任务
 
         修改组合任务
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateMultiTasksRequest request
-        :return: UpdateMultiTasksResponse
+        :param request: Request instance for UpdateMultiTasks
+        :type request: :class:`huaweicloudsdkroma.v2.UpdateMultiTasksRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.UpdateMultiTasksResponse`
         """
         return self.update_multi_tasks_with_http_info(request)
 
     def update_multi_tasks_with_http_info(self, request):
-        """修改组合任务
-
-        修改组合任务
-
-        :param UpdateMultiTasksRequest request
-        :return: UpdateMultiTasksResponse
-        """
-
         all_params = ['instance_id', 'task_id', 'update_multi_tasks_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -13169,26 +12237,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_notification(self, request):
         """修改订阅管理
 
         该接口用于修改指定的订阅管理
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateNotificationRequest request
-        :return: UpdateNotificationResponse
+        :param request: Request instance for UpdateNotification
+        :type request: :class:`huaweicloudsdkroma.v2.UpdateNotificationRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.UpdateNotificationResponse`
         """
         return self.update_notification_with_http_info(request)
 
     def update_notification_with_http_info(self, request):
-        """修改订阅管理
-
-        该接口用于修改指定的订阅管理
-
-        :param UpdateNotificationRequest request
-        :return: UpdateNotificationResponse
-        """
-
         all_params = ['instance_id', 'notification_id', 'update_notification_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -13236,26 +12299,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_product(self, request):
         """修改产品信息
 
         修改产品信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateProductRequest request
-        :return: UpdateProductResponse
+        :param request: Request instance for UpdateProduct
+        :type request: :class:`huaweicloudsdkroma.v2.UpdateProductRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.UpdateProductResponse`
         """
         return self.update_product_with_http_info(request)
 
     def update_product_with_http_info(self, request):
-        """修改产品信息
-
-        修改产品信息
-
-        :param UpdateProductRequest request
-        :return: UpdateProductResponse
-        """
-
         all_params = ['instance_id', 'product_id', 'update_product_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -13303,26 +12361,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_product_template(self, request):
         """修改产品模板
 
         修改产品模板
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateProductTemplateRequest request
-        :return: UpdateProductTemplateResponse
+        :param request: Request instance for UpdateProductTemplate
+        :type request: :class:`huaweicloudsdkroma.v2.UpdateProductTemplateRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.UpdateProductTemplateResponse`
         """
         return self.update_product_template_with_http_info(request)
 
     def update_product_template_with_http_info(self, request):
-        """修改产品模板
-
-        修改产品模板
-
-        :param UpdateProductTemplateRequest request
-        :return: UpdateProductTemplateResponse
-        """
-
         all_params = ['instance_id', 'product_template_id', 'update_product_template_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -13370,26 +12423,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_product_topic(self, request):
         """更新产品主题
 
         更新产品主题
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateProductTopicRequest request
-        :return: UpdateProductTopicResponse
+        :param request: Request instance for UpdateProductTopic
+        :type request: :class:`huaweicloudsdkroma.v2.UpdateProductTopicRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.UpdateProductTopicResponse`
         """
         return self.update_product_topic_with_http_info(request)
 
     def update_product_topic_with_http_info(self, request):
-        """更新产品主题
-
-        更新产品主题
-
-        :param UpdateProductTopicRequest request
-        :return: UpdateProductTopicResponse
-        """
-
         all_params = ['instance_id', 'product_id', 'topic_id', 'update_product_topic_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -13439,26 +12487,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_property(self, request):
         """修改服务属性
 
         修改服务属性
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdatePropertyRequest request
-        :return: UpdatePropertyResponse
+        :param request: Request instance for UpdateProperty
+        :type request: :class:`huaweicloudsdkroma.v2.UpdatePropertyRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.UpdatePropertyResponse`
         """
         return self.update_property_with_http_info(request)
 
     def update_property_with_http_info(self, request):
-        """修改服务属性
-
-        修改服务属性
-
-        :param UpdatePropertyRequest request
-        :return: UpdatePropertyResponse
-        """
-
         all_params = ['instance_id', 'service_id', 'property_id', 'update_property_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -13508,26 +12551,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_request_property(self, request):
         """修改请求属性
 
         修改请求属性
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateRequestPropertyRequest request
-        :return: UpdateRequestPropertyResponse
+        :param request: Request instance for UpdateRequestProperty
+        :type request: :class:`huaweicloudsdkroma.v2.UpdateRequestPropertyRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.UpdateRequestPropertyResponse`
         """
         return self.update_request_property_with_http_info(request)
 
     def update_request_property_with_http_info(self, request):
-        """修改请求属性
-
-        修改请求属性
-
-        :param UpdateRequestPropertyRequest request
-        :return: UpdateRequestPropertyResponse
-        """
-
         all_params = ['instance_id', 'service_id', 'command_id', 'property_id', 'update_request_property_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -13579,26 +12617,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_request_throttling_policy_v2(self, request):
         """修改流控策略
 
         修改指定流控策略的详细信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateRequestThrottlingPolicyV2Request request
-        :return: UpdateRequestThrottlingPolicyV2Response
+        :param request: Request instance for UpdateRequestThrottlingPolicyV2
+        :type request: :class:`huaweicloudsdkroma.v2.UpdateRequestThrottlingPolicyV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.UpdateRequestThrottlingPolicyV2Response`
         """
         return self.update_request_throttling_policy_v2_with_http_info(request)
 
     def update_request_throttling_policy_v2_with_http_info(self, request):
-        """修改流控策略
-
-        修改指定流控策略的详细信息。
-
-        :param UpdateRequestThrottlingPolicyV2Request request
-        :return: UpdateRequestThrottlingPolicyV2Response
-        """
-
         all_params = ['instance_id', 'throttle_id', 'update_request_throttling_policy_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -13646,26 +12679,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_response_property(self, request):
         """修改响应属性
 
         修改响应属性
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateResponsePropertyRequest request
-        :return: UpdateResponsePropertyResponse
+        :param request: Request instance for UpdateResponseProperty
+        :type request: :class:`huaweicloudsdkroma.v2.UpdateResponsePropertyRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.UpdateResponsePropertyResponse`
         """
         return self.update_response_property_with_http_info(request)
 
     def update_response_property_with_http_info(self, request):
-        """修改响应属性
-
-        修改响应属性
-
-        :param UpdateResponsePropertyRequest request
-        :return: UpdateResponsePropertyResponse
-        """
-
         all_params = ['instance_id', 'service_id', 'command_id', 'property_id', 'update_response_property_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -13717,26 +12745,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_rule(self, request):
         """修改规则
 
         修改规则
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateRuleRequest request
-        :return: UpdateRuleResponse
+        :param request: Request instance for UpdateRule
+        :type request: :class:`huaweicloudsdkroma.v2.UpdateRuleRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.UpdateRuleResponse`
         """
         return self.update_rule_with_http_info(request)
 
     def update_rule_with_http_info(self, request):
-        """修改规则
-
-        修改规则
-
-        :param UpdateRuleRequest request
-        :return: UpdateRuleResponse
-        """
-
         all_params = ['instance_id', 'rule_id', 'update_rule_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -13784,26 +12807,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_service(self, request):
         """修改服务
 
         修改服务
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateServiceRequest request
-        :return: UpdateServiceResponse
+        :param request: Request instance for UpdateService
+        :type request: :class:`huaweicloudsdkroma.v2.UpdateServiceRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.UpdateServiceResponse`
         """
         return self.update_service_with_http_info(request)
 
     def update_service_with_http_info(self, request):
-        """修改服务
-
-        修改服务
-
-        :param UpdateServiceRequest request
-        :return: UpdateServiceResponse
-        """
-
         all_params = ['instance_id', 'service_id', 'update_service_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -13851,26 +12869,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_signature_key_v2(self, request):
         """修改签名密钥
 
         修改指定签名密钥的详细信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateSignatureKeyV2Request request
-        :return: UpdateSignatureKeyV2Response
+        :param request: Request instance for UpdateSignatureKeyV2
+        :type request: :class:`huaweicloudsdkroma.v2.UpdateSignatureKeyV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.UpdateSignatureKeyV2Response`
         """
         return self.update_signature_key_v2_with_http_info(request)
 
     def update_signature_key_v2_with_http_info(self, request):
-        """修改签名密钥
-
-        修改指定签名密钥的详细信息。
-
-        :param UpdateSignatureKeyV2Request request
-        :return: UpdateSignatureKeyV2Response
-        """
-
         all_params = ['instance_id', 'sign_id', 'update_signature_key_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -13918,26 +12931,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_special_throttling_configuration_v2(self, request):
         """修改特殊设置
 
         修改某个流控策略下的某个特殊设置。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateSpecialThrottlingConfigurationV2Request request
-        :return: UpdateSpecialThrottlingConfigurationV2Response
+        :param request: Request instance for UpdateSpecialThrottlingConfigurationV2
+        :type request: :class:`huaweicloudsdkroma.v2.UpdateSpecialThrottlingConfigurationV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.UpdateSpecialThrottlingConfigurationV2Response`
         """
         return self.update_special_throttling_configuration_v2_with_http_info(request)
 
     def update_special_throttling_configuration_v2_with_http_info(self, request):
-        """修改特殊设置
-
-        修改某个流控策略下的某个特殊设置。
-
-        :param UpdateSpecialThrottlingConfigurationV2Request request
-        :return: UpdateSpecialThrottlingConfigurationV2Response
-        """
-
         all_params = ['instance_id', 'throttle_id', 'strategy_id', 'update_special_throttling_configuration_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -13987,26 +12995,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_task(self, request):
         """更新普通任务
 
         更新普通任务
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateTaskRequest request
-        :return: UpdateTaskResponse
+        :param request: Request instance for UpdateTask
+        :type request: :class:`huaweicloudsdkroma.v2.UpdateTaskRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.UpdateTaskResponse`
         """
         return self.update_task_with_http_info(request)
 
     def update_task_with_http_info(self, request):
-        """更新普通任务
-
-        更新普通任务
-
-        :param UpdateTaskRequest request
-        :return: UpdateTaskResponse
-        """
-
         all_params = ['instance_id', 'task_id', 'update_task_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -14054,26 +13057,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_topic_access_policy(self, request):
         """更新Topic权限
 
         更新Topic权限。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateTopicAccessPolicyRequest request
-        :return: UpdateTopicAccessPolicyResponse
+        :param request: Request instance for UpdateTopicAccessPolicy
+        :type request: :class:`huaweicloudsdkroma.v2.UpdateTopicAccessPolicyRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.UpdateTopicAccessPolicyResponse`
         """
         return self.update_topic_access_policy_with_http_info(request)
 
     def update_topic_access_policy_with_http_info(self, request):
-        """更新Topic权限
-
-        更新Topic权限。
-
-        :param UpdateTopicAccessPolicyRequest request
-        :return: UpdateTopicAccessPolicyResponse
-        """
-
         all_params = ['instance_id', 'update_topic_access_policy_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -14119,26 +13117,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def upload_product(self, request):
         """导入产品
 
         导入产品
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UploadProductRequest request
-        :return: UploadProductResponse
+        :param request: Request instance for UploadProduct
+        :type request: :class:`huaweicloudsdkroma.v2.UploadProductRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.UploadProductResponse`
         """
         return self.upload_product_with_http_info(request)
 
     def upload_product_with_http_info(self, request):
-        """导入产品
-
-        导入产品
-
-        :param UploadProductRequest request
-        :return: UploadProductResponse
-        """
-
         all_params = ['instance_id', 'file']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -14186,26 +13179,23 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_delete_acl_v2(self, request):
         """批量删除ACL策略
 
-        批量删除指定的多个ACL策略。  删除ACL策略时，如果存在ACL策略与API绑定关系，则无法删除。
+        批量删除指定的多个ACL策略。
+        
+        删除ACL策略时，如果存在ACL策略与API绑定关系，则无法删除。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchDeleteAclV2Request request
-        :return: BatchDeleteAclV2Response
+        :param request: Request instance for BatchDeleteAclV2
+        :type request: :class:`huaweicloudsdkroma.v2.BatchDeleteAclV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.BatchDeleteAclV2Response`
         """
         return self.batch_delete_acl_v2_with_http_info(request)
 
     def batch_delete_acl_v2_with_http_info(self, request):
-        """批量删除ACL策略
-
-        批量删除指定的多个ACL策略。  删除ACL策略时，如果存在ACL策略与API绑定关系，则无法删除。
-
-        :param BatchDeleteAclV2Request request
-        :return: BatchDeleteAclV2Response
-        """
-
         all_params = ['instance_id', 'action', 'batch_delete_acl_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -14253,26 +13243,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_acl_strategy_v2(self, request):
         """创建ACL策略
 
-        增加一个ACL策略，策略类型通过字段acl_type来确定（permit或者deny），限制的对象的类型可以为IP[或者DOMAIN，这里的DOMAIN对应的acl_value的值为租户名称，而非“www.exampleDomain.com\"之类的网络域名。](tag:hws;hws_hk;hcs;fcs;g42;)
+        增加一个ACL策略，策略类型通过字段acl_type来确定（permit或者deny），限制的对象的类型可以为IP[或者DOMAIN，这里的DOMAIN对应的acl_value的值为租户名称，而非“www.exampleDomain.com\&quot;之类的网络域名。](tag:hws;hws_hk;hcs;fcs;g42;)
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateAclStrategyV2Request request
-        :return: CreateAclStrategyV2Response
+        :param request: Request instance for CreateAclStrategyV2
+        :type request: :class:`huaweicloudsdkroma.v2.CreateAclStrategyV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.CreateAclStrategyV2Response`
         """
         return self.create_acl_strategy_v2_with_http_info(request)
 
     def create_acl_strategy_v2_with_http_info(self, request):
-        """创建ACL策略
-
-        增加一个ACL策略，策略类型通过字段acl_type来确定（permit或者deny），限制的对象的类型可以为IP[或者DOMAIN，这里的DOMAIN对应的acl_value的值为租户名称，而非“www.exampleDomain.com\"之类的网络域名。](tag:hws;hws_hk;hcs;fcs;g42;)
-
-        :param CreateAclStrategyV2Request request
-        :return: CreateAclStrategyV2Response
-        """
-
         all_params = ['instance_id', 'create_acl_strategy_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -14318,26 +13303,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_acl_v2(self, request):
         """删除ACL策略
 
         删除指定的ACL策略， 如果存在api与该ACL策略的绑定关系，则无法删除
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteAclV2Request request
-        :return: DeleteAclV2Response
+        :param request: Request instance for DeleteAclV2
+        :type request: :class:`huaweicloudsdkroma.v2.DeleteAclV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.DeleteAclV2Response`
         """
         return self.delete_acl_v2_with_http_info(request)
 
     def delete_acl_v2_with_http_info(self, request):
-        """删除ACL策略
-
-        删除指定的ACL策略， 如果存在api与该ACL策略的绑定关系，则无法删除
-
-        :param DeleteAclV2Request request
-        :return: DeleteAclV2Response
-        """
-
         all_params = ['instance_id', 'acl_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -14383,26 +13363,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_acl_strategies_v2(self, request):
         """查看ACL策略列表
 
-        查询所有的ACL策略列表。 
+        查询所有的ACL策略列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListAclStrategiesV2Request request
-        :return: ListAclStrategiesV2Response
+        :param request: Request instance for ListAclStrategiesV2
+        :type request: :class:`huaweicloudsdkroma.v2.ListAclStrategiesV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListAclStrategiesV2Response`
         """
         return self.list_acl_strategies_v2_with_http_info(request)
 
     def list_acl_strategies_v2_with_http_info(self, request):
-        """查看ACL策略列表
-
-        查询所有的ACL策略列表。 
-
-        :param ListAclStrategiesV2Request request
-        :return: ListAclStrategiesV2Response
-        """
-
         all_params = ['instance_id', 'offset', 'limit', 'id', 'name', 'acl_type', 'entity_type', 'precise_search']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -14460,26 +13435,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_details_of_acl_policy_v2(self, request):
         """查看ACL策略详情
 
         查询指定ACL策略的详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowDetailsOfAclPolicyV2Request request
-        :return: ShowDetailsOfAclPolicyV2Response
+        :param request: Request instance for ShowDetailsOfAclPolicyV2
+        :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfAclPolicyV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfAclPolicyV2Response`
         """
         return self.show_details_of_acl_policy_v2_with_http_info(request)
 
     def show_details_of_acl_policy_v2_with_http_info(self, request):
-        """查看ACL策略详情
-
-        查询指定ACL策略的详情。
-
-        :param ShowDetailsOfAclPolicyV2Request request
-        :return: ShowDetailsOfAclPolicyV2Response
-        """
-
         all_params = ['instance_id', 'acl_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -14525,26 +13495,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_acl_strategy_v2(self, request):
         """修改ACL策略
 
         修改指定的ACL策略，其中可修改的属性为：acl_name、acl_type、acl_value，其它属性不可修改。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateAclStrategyV2Request request
-        :return: UpdateAclStrategyV2Response
+        :param request: Request instance for UpdateAclStrategyV2
+        :type request: :class:`huaweicloudsdkroma.v2.UpdateAclStrategyV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.UpdateAclStrategyV2Response`
         """
         return self.update_acl_strategy_v2_with_http_info(request)
 
     def update_acl_strategy_v2_with_http_info(self, request):
-        """修改ACL策略
-
-        修改指定的ACL策略，其中可修改的属性为：acl_name、acl_type、acl_value，其它属性不可修改。
-
-        :param UpdateAclStrategyV2Request request
-        :return: UpdateAclStrategyV2Response
-        """
-
         all_params = ['instance_id', 'acl_id', 'update_acl_strategy_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -14592,26 +13557,25 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def associate_request_throttling_policy_v2(self, request):
         """绑定流控策略
 
-        将流控策略应用于API，则所有对该API的访问将会受到该流控策略的限制。  当一定时间内的访问次数超过流控策略设置的API最大访问次数限制后，后续的访问将会被拒绝，从而能够较好的保护后端API免受异常流量的冲击，保障服务的稳定运行。  为指定的API绑定流控策略，绑定时，需要指定在哪个环境上生效。同一个API发布到不同的环境可以绑定不同的流控策略；一个API在发布到特定环境后只能绑定一个默认的流控策略。
+        将流控策略应用于API，则所有对该API的访问将会受到该流控策略的限制。
+        
+        当一定时间内的访问次数超过流控策略设置的API最大访问次数限制后，后续的访问将会被拒绝，从而能够较好的保护后端API免受异常流量的冲击，保障服务的稳定运行。
+        
+        为指定的API绑定流控策略，绑定时，需要指定在哪个环境上生效。同一个API发布到不同的环境可以绑定不同的流控策略；一个API在发布到特定环境后只能绑定一个默认的流控策略。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param AssociateRequestThrottlingPolicyV2Request request
-        :return: AssociateRequestThrottlingPolicyV2Response
+        :param request: Request instance for AssociateRequestThrottlingPolicyV2
+        :type request: :class:`huaweicloudsdkroma.v2.AssociateRequestThrottlingPolicyV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.AssociateRequestThrottlingPolicyV2Response`
         """
         return self.associate_request_throttling_policy_v2_with_http_info(request)
 
     def associate_request_throttling_policy_v2_with_http_info(self, request):
-        """绑定流控策略
-
-        将流控策略应用于API，则所有对该API的访问将会受到该流控策略的限制。  当一定时间内的访问次数超过流控策略设置的API最大访问次数限制后，后续的访问将会被拒绝，从而能够较好的保护后端API免受异常流量的冲击，保障服务的稳定运行。  为指定的API绑定流控策略，绑定时，需要指定在哪个环境上生效。同一个API发布到不同的环境可以绑定不同的流控策略；一个API在发布到特定环境后只能绑定一个默认的流控策略。
-
-        :param AssociateRequestThrottlingPolicyV2Request request
-        :return: AssociateRequestThrottlingPolicyV2Response
-        """
-
         all_params = ['instance_id', 'associate_request_throttling_policy_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -14657,26 +13621,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_disassociate_throttling_policy_v2(self, request):
         """批量解绑流控策略
 
         批量解除API与流控策略的绑定关系
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchDisassociateThrottlingPolicyV2Request request
-        :return: BatchDisassociateThrottlingPolicyV2Response
+        :param request: Request instance for BatchDisassociateThrottlingPolicyV2
+        :type request: :class:`huaweicloudsdkroma.v2.BatchDisassociateThrottlingPolicyV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.BatchDisassociateThrottlingPolicyV2Response`
         """
         return self.batch_disassociate_throttling_policy_v2_with_http_info(request)
 
     def batch_disassociate_throttling_policy_v2_with_http_info(self, request):
-        """批量解绑流控策略
-
-        批量解除API与流控策略的绑定关系
-
-        :param BatchDisassociateThrottlingPolicyV2Request request
-        :return: BatchDisassociateThrottlingPolicyV2Response
-        """
-
         all_params = ['instance_id', 'action', 'batch_disassociate_throttling_policy_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -14724,26 +13683,23 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_publish_or_offline_api_v2(self, request):
         """批量发布或下线API
 
-        将多个API发布到一个指定的环境，或将多个API从指定的环境下线。  注意：当action = online时，接口返回的响应中publish_id，version_id， publish_time字段才有含义。
+        将多个API发布到一个指定的环境，或将多个API从指定的环境下线。
+        
+        注意：当action &#x3D; online时，接口返回的响应中publish_id，version_id， publish_time字段才有含义。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchPublishOrOfflineApiV2Request request
-        :return: BatchPublishOrOfflineApiV2Response
+        :param request: Request instance for BatchPublishOrOfflineApiV2
+        :type request: :class:`huaweicloudsdkroma.v2.BatchPublishOrOfflineApiV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.BatchPublishOrOfflineApiV2Response`
         """
         return self.batch_publish_or_offline_api_v2_with_http_info(request)
 
     def batch_publish_or_offline_api_v2_with_http_info(self, request):
-        """批量发布或下线API
-
-        将多个API发布到一个指定的环境，或将多个API从指定的环境下线。  注意：当action = online时，接口返回的响应中publish_id，version_id， publish_time字段才有含义。
-
-        :param BatchPublishOrOfflineApiV2Request request
-        :return: BatchPublishOrOfflineApiV2Response
-        """
-
         all_params = ['instance_id', 'action', 'batch_publish_or_offline_api_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -14791,26 +13747,23 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def change_api_version_v2(self, request):
         """切换API版本
 
-        API每次发布时，会基于当前的API定义生成一个版本。版本记录了API发布时的各种定义及状态。  多个版本之间可以进行随意切换。但一个API在一个环境上，只能有一个版本生效。
+        API每次发布时，会基于当前的API定义生成一个版本。版本记录了API发布时的各种定义及状态。
+        
+        多个版本之间可以进行随意切换。但一个API在一个环境上，只能有一个版本生效。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ChangeApiVersionV2Request request
-        :return: ChangeApiVersionV2Response
+        :param request: Request instance for ChangeApiVersionV2
+        :type request: :class:`huaweicloudsdkroma.v2.ChangeApiVersionV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ChangeApiVersionV2Response`
         """
         return self.change_api_version_v2_with_http_info(request)
 
     def change_api_version_v2_with_http_info(self, request):
-        """切换API版本
-
-        API每次发布时，会基于当前的API定义生成一个版本。版本记录了API发布时的各种定义及状态。  多个版本之间可以进行随意切换。但一个API在一个环境上，只能有一个版本生效。
-
-        :param ChangeApiVersionV2Request request
-        :return: ChangeApiVersionV2Response
-        """
-
         all_params = ['instance_id', 'api_id', 'change_api_version_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -14858,26 +13811,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def check_api_groups_v2(self, request):
         """校验API分组名称是否存在
 
         校验API分组名称是否存在。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CheckApiGroupsV2Request request
-        :return: CheckApiGroupsV2Response
+        :param request: Request instance for CheckApiGroupsV2
+        :type request: :class:`huaweicloudsdkroma.v2.CheckApiGroupsV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.CheckApiGroupsV2Response`
         """
         return self.check_api_groups_v2_with_http_info(request)
 
     def check_api_groups_v2_with_http_info(self, request):
-        """校验API分组名称是否存在
-
-        校验API分组名称是否存在。
-
-        :param CheckApiGroupsV2Request request
-        :return: CheckApiGroupsV2Response
-        """
-
         all_params = ['instance_id', 'check_api_groups_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -14923,26 +13871,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def check_apis_v2(self, request):
         """校验API定义
 
         校验API定义。校验API的路径或名称是否已存在
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CheckApisV2Request request
-        :return: CheckApisV2Response
+        :param request: Request instance for CheckApisV2
+        :type request: :class:`huaweicloudsdkroma.v2.CheckApisV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.CheckApisV2Response`
         """
         return self.check_apis_v2_with_http_info(request)
 
     def check_apis_v2_with_http_info(self, request):
-        """校验API定义
-
-        校验API定义。校验API的路径或名称是否已存在
-
-        :param CheckApisV2Request request
-        :return: CheckApisV2Response
-        """
-
         all_params = ['instance_id', 'check_apis_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -14988,26 +13931,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_api_group_v2(self, request):
         """创建API分组
 
-        API分组是API的管理单元，一个API分组等同于一个服务入口，创建API分组时，返回一个子域名作为访问入口。建议一个API分组下的API具有一定的相关性。 
+        API分组是API的管理单元，一个API分组等同于一个服务入口，创建API分组时，返回一个子域名作为访问入口。建议一个API分组下的API具有一定的相关性。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateApiGroupV2Request request
-        :return: CreateApiGroupV2Response
+        :param request: Request instance for CreateApiGroupV2
+        :type request: :class:`huaweicloudsdkroma.v2.CreateApiGroupV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.CreateApiGroupV2Response`
         """
         return self.create_api_group_v2_with_http_info(request)
 
     def create_api_group_v2_with_http_info(self, request):
-        """创建API分组
-
-        API分组是API的管理单元，一个API分组等同于一个服务入口，创建API分组时，返回一个子域名作为访问入口。建议一个API分组下的API具有一定的相关性。 
-
-        :param CreateApiGroupV2Request request
-        :return: CreateApiGroupV2Response
-        """
-
         all_params = ['instance_id', 'create_api_group_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -15053,26 +13991,23 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_api_v2(self, request):
         """创建API
 
-        添加一个API，API即一个服务接口，具体的服务能力。  API分为两部分，第一部分为面向API使用者的API接口，定义了使用者如何调用这个API。第二部分面向API提供者，由API提供者定义这个API的真实的后端情况，定义了ROMA Connect如何去访问真实的后端服务。API的真实后端服务目前支持三种类型：传统的HTTP/HTTPS形式的web后端、[函数工作流、](tag:hws;hws_hk;hcs;fcs;g42;)MOCK。 
+        添加一个API，API即一个服务接口，具体的服务能力。
+        
+        API分为两部分，第一部分为面向API使用者的API接口，定义了使用者如何调用这个API。第二部分面向API提供者，由API提供者定义这个API的真实的后端情况，定义了ROMA Connect如何去访问真实的后端服务。API的真实后端服务目前支持三种类型：传统的HTTP/HTTPS形式的web后端、[函数工作流、](tag:hws;hws_hk;hcs;fcs;g42;)MOCK。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateApiV2Request request
-        :return: CreateApiV2Response
+        :param request: Request instance for CreateApiV2
+        :type request: :class:`huaweicloudsdkroma.v2.CreateApiV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.CreateApiV2Response`
         """
         return self.create_api_v2_with_http_info(request)
 
     def create_api_v2_with_http_info(self, request):
-        """创建API
-
-        添加一个API，API即一个服务接口，具体的服务能力。  API分为两部分，第一部分为面向API使用者的API接口，定义了使用者如何调用这个API。第二部分面向API提供者，由API提供者定义这个API的真实的后端情况，定义了ROMA Connect如何去访问真实的后端服务。API的真实后端服务目前支持三种类型：传统的HTTP/HTTPS形式的web后端、[函数工作流、](tag:hws;hws_hk;hcs;fcs;g42;)MOCK。 
-
-        :param CreateApiV2Request request
-        :return: CreateApiV2Response
-        """
-
         all_params = ['instance_id', 'create_api_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -15118,26 +14053,25 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_or_delete_publish_record_for_api_v2(self, request):
         """发布或下线API
 
-        对API进行发布或下线。  发布操作是将一个指定的API发布到一个指定的环境，API只有发布后，才能够被调用，且只能在该环境上才能被调用。未发布的API无法被调用。  下线操作是将API从某个已发布的环境上下线，下线后，API将无法再被调用。
+        对API进行发布或下线。
+        
+        发布操作是将一个指定的API发布到一个指定的环境，API只有发布后，才能够被调用，且只能在该环境上才能被调用。未发布的API无法被调用。
+        
+        下线操作是将API从某个已发布的环境上下线，下线后，API将无法再被调用。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateOrDeletePublishRecordForApiV2Request request
-        :return: CreateOrDeletePublishRecordForApiV2Response
+        :param request: Request instance for CreateOrDeletePublishRecordForApiV2
+        :type request: :class:`huaweicloudsdkroma.v2.CreateOrDeletePublishRecordForApiV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.CreateOrDeletePublishRecordForApiV2Response`
         """
         return self.create_or_delete_publish_record_for_api_v2_with_http_info(request)
 
     def create_or_delete_publish_record_for_api_v2_with_http_info(self, request):
-        """发布或下线API
-
-        对API进行发布或下线。  发布操作是将一个指定的API发布到一个指定的环境，API只有发布后，才能够被调用，且只能在该环境上才能被调用。未发布的API无法被调用。  下线操作是将API从某个已发布的环境上下线，下线后，API将无法再被调用。
-
-        :param CreateOrDeletePublishRecordForApiV2Request request
-        :return: CreateOrDeletePublishRecordForApiV2Response
-        """
-
         all_params = ['instance_id', 'create_or_delete_publish_record_for_api_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -15183,26 +14117,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def debug_api_v2(self, request):
         """调试API
 
         调试一个API在指定运行环境下的定义，接口调用者需要具有操作该API的权限。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DebugApiV2Request request
-        :return: DebugApiV2Response
+        :param request: Request instance for DebugApiV2
+        :type request: :class:`huaweicloudsdkroma.v2.DebugApiV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.DebugApiV2Response`
         """
         return self.debug_api_v2_with_http_info(request)
 
     def debug_api_v2_with_http_info(self, request):
-        """调试API
-
-        调试一个API在指定运行环境下的定义，接口调用者需要具有操作该API的权限。
-
-        :param DebugApiV2Request request
-        :return: DebugApiV2Response
-        """
-
         all_params = ['instance_id', 'api_id', 'debug_api_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -15250,26 +14179,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_api_by_version_id_v2(self, request):
         """根据版本编号下线API
 
         对某个生效中的API版本进行下线操作，下线后，API在该版本生效的环境中将不再能够被调用。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteApiByVersionIdV2Request request
-        :return: DeleteApiByVersionIdV2Response
+        :param request: Request instance for DeleteApiByVersionIdV2
+        :type request: :class:`huaweicloudsdkroma.v2.DeleteApiByVersionIdV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.DeleteApiByVersionIdV2Response`
         """
         return self.delete_api_by_version_id_v2_with_http_info(request)
 
     def delete_api_by_version_id_v2_with_http_info(self, request):
-        """根据版本编号下线API
-
-        对某个生效中的API版本进行下线操作，下线后，API在该版本生效的环境中将不再能够被调用。
-
-        :param DeleteApiByVersionIdV2Request request
-        :return: DeleteApiByVersionIdV2Response
-        """
-
         all_params = ['instance_id', 'version_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -15315,26 +14239,23 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_api_group_v2(self, request):
         """删除API分组
 
-        删除指定的API分组。 分组下存在API时分组无法删除，需要删除所有分组下的API后，再删除分组。 删除分组时，会一并删除直接或间接关联到该分组下的所有资源，包括独立域名、SSL证书等等。并会将外部域名与子域名的绑定关系进行解除（取决于域名cname方式）。
+        删除指定的API分组。
+        分组下存在API时分组无法删除，需要删除所有分组下的API后，再删除分组。
+        删除分组时，会一并删除直接或间接关联到该分组下的所有资源，包括独立域名、SSL证书等等。并会将外部域名与子域名的绑定关系进行解除（取决于域名cname方式）。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteApiGroupV2Request request
-        :return: DeleteApiGroupV2Response
+        :param request: Request instance for DeleteApiGroupV2
+        :type request: :class:`huaweicloudsdkroma.v2.DeleteApiGroupV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.DeleteApiGroupV2Response`
         """
         return self.delete_api_group_v2_with_http_info(request)
 
     def delete_api_group_v2_with_http_info(self, request):
-        """删除API分组
-
-        删除指定的API分组。 分组下存在API时分组无法删除，需要删除所有分组下的API后，再删除分组。 删除分组时，会一并删除直接或间接关联到该分组下的所有资源，包括独立域名、SSL证书等等。并会将外部域名与子域名的绑定关系进行解除（取决于域名cname方式）。
-
-        :param DeleteApiGroupV2Request request
-        :return: DeleteApiGroupV2Response
-        """
-
         all_params = ['instance_id', 'group_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -15380,26 +14301,23 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_api_v2(self, request):
         """删除API
 
-        删除指定的API。  删除API时，会删除该API所有相关的资源信息或绑定关系，如API的发布记录，绑定的后端服务，对APP的授权信息等。
+        删除指定的API。
+        
+        删除API时，会删除该API所有相关的资源信息或绑定关系，如API的发布记录，绑定的后端服务，对APP的授权信息等。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteApiV2Request request
-        :return: DeleteApiV2Response
+        :param request: Request instance for DeleteApiV2
+        :type request: :class:`huaweicloudsdkroma.v2.DeleteApiV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.DeleteApiV2Response`
         """
         return self.delete_api_v2_with_http_info(request)
 
     def delete_api_v2_with_http_info(self, request):
-        """删除API
-
-        删除指定的API。  删除API时，会删除该API所有相关的资源信息或绑定关系，如API的发布记录，绑定的后端服务，对APP的授权信息等。
-
-        :param DeleteApiV2Request request
-        :return: DeleteApiV2Response
-        """
-
         all_params = ['instance_id', 'api_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -15445,26 +14363,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def disassociate_request_throttling_policy_v2(self, request):
         """解除API与流控策略的绑定关系
 
         解除API与流控策略的绑定关系。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DisassociateRequestThrottlingPolicyV2Request request
-        :return: DisassociateRequestThrottlingPolicyV2Response
+        :param request: Request instance for DisassociateRequestThrottlingPolicyV2
+        :type request: :class:`huaweicloudsdkroma.v2.DisassociateRequestThrottlingPolicyV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.DisassociateRequestThrottlingPolicyV2Response`
         """
         return self.disassociate_request_throttling_policy_v2_with_http_info(request)
 
     def disassociate_request_throttling_policy_v2_with_http_info(self, request):
-        """解除API与流控策略的绑定关系
-
-        解除API与流控策略的绑定关系。
-
-        :param DisassociateRequestThrottlingPolicyV2Request request
-        :return: DisassociateRequestThrottlingPolicyV2Response
-        """
-
         all_params = ['instance_id', 'throttle_binding_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -15510,26 +14423,23 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_api_groups_v2(self, request):
         """查询分组列表
 
-        查询API分组列表。  如果是租户操作，则查询该租户下所有的分组；如果是管理员操作，则查询的是所有租户的分组。
+        查询API分组列表。
+        
+        如果是租户操作，则查询该租户下所有的分组；如果是管理员操作，则查询的是所有租户的分组。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListApiGroupsV2Request request
-        :return: ListApiGroupsV2Response
+        :param request: Request instance for ListApiGroupsV2
+        :type request: :class:`huaweicloudsdkroma.v2.ListApiGroupsV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListApiGroupsV2Response`
         """
         return self.list_api_groups_v2_with_http_info(request)
 
     def list_api_groups_v2_with_http_info(self, request):
-        """查询分组列表
-
-        查询API分组列表。  如果是租户操作，则查询该租户下所有的分组；如果是管理员操作，则查询的是所有租户的分组。
-
-        :param ListApiGroupsV2Request request
-        :return: ListApiGroupsV2Response
-        """
-
         all_params = ['instance_id', 'offset', 'limit', 'id', 'name', 'roma_app_id', 'precise_search', 'domain_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -15587,26 +14497,27 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_api_runtime_definition_v2(self, request):
         """查询API运行时定义
 
-        查看指定的API在指定的环境上的运行时定义，默认查询RELEASE环境上的运行时定义。  API的定义分为临时定义和运行时定义，分别代表如下含义： - 临时定义：API在编辑中的定义，表示用户最后一次编辑后的API的状态 - 运行时定义：API在发布到某个环境时，对发布时的API的临时定义进行快照，固化出来的API的状态。  访问某个环境上的API，其实访问的就是其运行时的定义
+        查看指定的API在指定的环境上的运行时定义，默认查询RELEASE环境上的运行时定义。
+        
+        API的定义分为临时定义和运行时定义，分别代表如下含义：
+        - 临时定义：API在编辑中的定义，表示用户最后一次编辑后的API的状态
+        - 运行时定义：API在发布到某个环境时，对发布时的API的临时定义进行快照，固化出来的API的状态。
+        
+        访问某个环境上的API，其实访问的就是其运行时的定义
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListApiRuntimeDefinitionV2Request request
-        :return: ListApiRuntimeDefinitionV2Response
+        :param request: Request instance for ListApiRuntimeDefinitionV2
+        :type request: :class:`huaweicloudsdkroma.v2.ListApiRuntimeDefinitionV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListApiRuntimeDefinitionV2Response`
         """
         return self.list_api_runtime_definition_v2_with_http_info(request)
 
     def list_api_runtime_definition_v2_with_http_info(self, request):
-        """查询API运行时定义
-
-        查看指定的API在指定的环境上的运行时定义，默认查询RELEASE环境上的运行时定义。  API的定义分为临时定义和运行时定义，分别代表如下含义： - 临时定义：API在编辑中的定义，表示用户最后一次编辑后的API的状态 - 运行时定义：API在发布到某个环境时，对发布时的API的临时定义进行快照，固化出来的API的状态。  访问某个环境上的API，其实访问的就是其运行时的定义
-
-        :param ListApiRuntimeDefinitionV2Request request
-        :return: ListApiRuntimeDefinitionV2Response
-        """
-
         all_params = ['instance_id', 'api_id', 'env_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -15654,26 +14565,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_api_version_detail_v2(self, request):
         """查看版本详情
 
         查询某个指定的版本详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListApiVersionDetailV2Request request
-        :return: ListApiVersionDetailV2Response
+        :param request: Request instance for ListApiVersionDetailV2
+        :type request: :class:`huaweicloudsdkroma.v2.ListApiVersionDetailV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListApiVersionDetailV2Response`
         """
         return self.list_api_version_detail_v2_with_http_info(request)
 
     def list_api_version_detail_v2_with_http_info(self, request):
-        """查看版本详情
-
-        查询某个指定的版本详情。
-
-        :param ListApiVersionDetailV2Request request
-        :return: ListApiVersionDetailV2Response
-        """
-
         all_params = ['instance_id', 'version_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -15719,26 +14625,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_api_versions_v2(self, request):
         """查询API历史版本列表
 
         查询某个API的历史版本。每个API在一个环境上最多存在10个历史版本。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListApiVersionsV2Request request
-        :return: ListApiVersionsV2Response
+        :param request: Request instance for ListApiVersionsV2
+        :type request: :class:`huaweicloudsdkroma.v2.ListApiVersionsV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListApiVersionsV2Response`
         """
         return self.list_api_versions_v2_with_http_info(request)
 
     def list_api_versions_v2_with_http_info(self, request):
-        """查询API历史版本列表
-
-        查询某个API的历史版本。每个API在一个环境上最多存在10个历史版本。
-
-        :param ListApiVersionsV2Request request
-        :return: ListApiVersionsV2Response
-        """
-
         all_params = ['instance_id', 'api_id', 'offset', 'limit', 'env_id', 'env_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -15792,26 +14693,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_apis_binded_to_request_throttling_policy_v2(self, request):
         """查看流控策略绑定的API列表
 
         查询某个流控策略上已经绑定的API列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListApisBindedToRequestThrottlingPolicyV2Request request
-        :return: ListApisBindedToRequestThrottlingPolicyV2Response
+        :param request: Request instance for ListApisBindedToRequestThrottlingPolicyV2
+        :type request: :class:`huaweicloudsdkroma.v2.ListApisBindedToRequestThrottlingPolicyV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListApisBindedToRequestThrottlingPolicyV2Response`
         """
         return self.list_apis_binded_to_request_throttling_policy_v2_with_http_info(request)
 
     def list_apis_binded_to_request_throttling_policy_v2_with_http_info(self, request):
-        """查看流控策略绑定的API列表
-
-        查询某个流控策略上已经绑定的API列表。
-
-        :param ListApisBindedToRequestThrottlingPolicyV2Request request
-        :return: ListApisBindedToRequestThrottlingPolicyV2Response
-        """
-
         all_params = ['instance_id', 'throttle_id', 'offset', 'limit', 'env_id', 'group_id', 'api_id', 'api_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -15869,26 +14765,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_apis_unbinded_to_request_throttling_policy_v2(self, request):
         """查看流控策略未绑定的API列表
 
         查询所有未绑定到该流控策略上的自有API列表。需要API已经发布，未发布的API不予展示。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListApisUnbindedToRequestThrottlingPolicyV2Request request
-        :return: ListApisUnbindedToRequestThrottlingPolicyV2Response
+        :param request: Request instance for ListApisUnbindedToRequestThrottlingPolicyV2
+        :type request: :class:`huaweicloudsdkroma.v2.ListApisUnbindedToRequestThrottlingPolicyV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListApisUnbindedToRequestThrottlingPolicyV2Response`
         """
         return self.list_apis_unbinded_to_request_throttling_policy_v2_with_http_info(request)
 
     def list_apis_unbinded_to_request_throttling_policy_v2_with_http_info(self, request):
-        """查看流控策略未绑定的API列表
-
-        查询所有未绑定到该流控策略上的自有API列表。需要API已经发布，未发布的API不予展示。
-
-        :param ListApisUnbindedToRequestThrottlingPolicyV2Request request
-        :return: ListApisUnbindedToRequestThrottlingPolicyV2Response
-        """
-
         all_params = ['instance_id', 'throttle_id', 'offset', 'limit', 'env_id', 'group_id', 'api_id', 'api_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -15946,26 +14837,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_apis_v2(self, request):
         """查询API列表
 
         查看API列表，返回API详细信息、发布信息等，但不能查看到后端服务信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListApisV2Request request
-        :return: ListApisV2Response
+        :param request: Request instance for ListApisV2
+        :type request: :class:`huaweicloudsdkroma.v2.ListApisV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListApisV2Response`
         """
         return self.list_apis_v2_with_http_info(request)
 
     def list_apis_v2_with_http_info(self, request):
-        """查询API列表
-
-        查看API列表，返回API详细信息、发布信息等，但不能查看到后端服务信息。
-
-        :param ListApisV2Request request
-        :return: ListApisV2Response
-        """
-
         all_params = ['instance_id', 'offset', 'limit', 'id', 'name', 'group_id', 'req_protocol', 'req_method', 'req_uri', 'auth_type', 'env_id', 'type', 'precise_search', 'vpc_channel_id', 'vpc_channel_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -16037,26 +14923,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_request_throttling_policies_binded_to_api_v2(self, request):
         """查看API绑定的流控策略列表
 
         查询某个API绑定的流控策略列表。每个环境上应该最多只有一个流控策略。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListRequestThrottlingPoliciesBindedToApiV2Request request
-        :return: ListRequestThrottlingPoliciesBindedToApiV2Response
+        :param request: Request instance for ListRequestThrottlingPoliciesBindedToApiV2
+        :type request: :class:`huaweicloudsdkroma.v2.ListRequestThrottlingPoliciesBindedToApiV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListRequestThrottlingPoliciesBindedToApiV2Response`
         """
         return self.list_request_throttling_policies_binded_to_api_v2_with_http_info(request)
 
     def list_request_throttling_policies_binded_to_api_v2_with_http_info(self, request):
-        """查看API绑定的流控策略列表
-
-        查询某个API绑定的流控策略列表。每个环境上应该最多只有一个流控策略。
-
-        :param ListRequestThrottlingPoliciesBindedToApiV2Request request
-        :return: ListRequestThrottlingPoliciesBindedToApiV2Response
-        """
-
         all_params = ['instance_id', 'api_id', 'offset', 'limit', 'throttle_id', 'throttle_name', 'env_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -16112,26 +14993,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_details_of_api_group_v2(self, request):
         """查询分组详情
 
         查询指定分组的详细信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowDetailsOfApiGroupV2Request request
-        :return: ShowDetailsOfApiGroupV2Response
+        :param request: Request instance for ShowDetailsOfApiGroupV2
+        :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfApiGroupV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfApiGroupV2Response`
         """
         return self.show_details_of_api_group_v2_with_http_info(request)
 
     def show_details_of_api_group_v2_with_http_info(self, request):
-        """查询分组详情
-
-        查询指定分组的详细信息。
-
-        :param ShowDetailsOfApiGroupV2Request request
-        :return: ShowDetailsOfApiGroupV2Response
-        """
-
         all_params = ['instance_id', 'group_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -16177,26 +15053,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_details_of_api_v2(self, request):
         """查询API详情
 
         查看指定的API的详细信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowDetailsOfApiV2Request request
-        :return: ShowDetailsOfApiV2Response
+        :param request: Request instance for ShowDetailsOfApiV2
+        :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfApiV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfApiV2Response`
         """
         return self.show_details_of_api_v2_with_http_info(request)
 
     def show_details_of_api_v2_with_http_info(self, request):
-        """查询API详情
-
-        查看指定的API的详细信息。
-
-        :param ShowDetailsOfApiV2Request request
-        :return: ShowDetailsOfApiV2Response
-        """
-
         all_params = ['instance_id', 'api_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -16242,26 +15113,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_api_group_v2(self, request):
         """修改API分组
 
         修改API分组属性。其中name和remark可修改，其他属性不可修改。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateApiGroupV2Request request
-        :return: UpdateApiGroupV2Response
+        :param request: Request instance for UpdateApiGroupV2
+        :type request: :class:`huaweicloudsdkroma.v2.UpdateApiGroupV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.UpdateApiGroupV2Response`
         """
         return self.update_api_group_v2_with_http_info(request)
 
     def update_api_group_v2_with_http_info(self, request):
-        """修改API分组
-
-        修改API分组属性。其中name和remark可修改，其他属性不可修改。
-
-        :param UpdateApiGroupV2Request request
-        :return: UpdateApiGroupV2Response
-        """
-
         all_params = ['instance_id', 'group_id', 'update_api_group_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -16309,26 +15175,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_api_v2(self, request):
         """修改API
 
         修改指定API的信息，包括后端服务信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateApiV2Request request
-        :return: UpdateApiV2Response
+        :param request: Request instance for UpdateApiV2
+        :type request: :class:`huaweicloudsdkroma.v2.UpdateApiV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.UpdateApiV2Response`
         """
         return self.update_api_v2_with_http_info(request)
 
     def update_api_v2_with_http_info(self, request):
-        """修改API
-
-        修改指定API的信息，包括后端服务信息。
-
-        :param UpdateApiV2Request request
-        :return: UpdateApiV2Response
-        """
-
         all_params = ['instance_id', 'api_id', 'update_api_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -16376,26 +15237,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_delete_api_acl_binding_v2(self, request):
         """批量解除API与ACL策略的绑定
 
         批量解除API与ACL策略的绑定
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchDeleteApiAclBindingV2Request request
-        :return: BatchDeleteApiAclBindingV2Response
+        :param request: Request instance for BatchDeleteApiAclBindingV2
+        :type request: :class:`huaweicloudsdkroma.v2.BatchDeleteApiAclBindingV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.BatchDeleteApiAclBindingV2Response`
         """
         return self.batch_delete_api_acl_binding_v2_with_http_info(request)
 
     def batch_delete_api_acl_binding_v2_with_http_info(self, request):
-        """批量解除API与ACL策略的绑定
-
-        批量解除API与ACL策略的绑定
-
-        :param BatchDeleteApiAclBindingV2Request request
-        :return: BatchDeleteApiAclBindingV2Response
-        """
-
         all_params = ['instance_id', 'action', 'batch_delete_api_acl_binding_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -16443,26 +15299,23 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_api_acl_binding_v2(self, request):
         """将API与ACL策略进行绑定
 
-        将API与ACL策略进行绑定。  同一个API发布到不同的环境可以绑定不同的ACL策略；一个API在发布到特定环境后只能绑定一个同一种类型的ACL策略。
+        将API与ACL策略进行绑定。
+        
+        同一个API发布到不同的环境可以绑定不同的ACL策略；一个API在发布到特定环境后只能绑定一个同一种类型的ACL策略。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateApiAclBindingV2Request request
-        :return: CreateApiAclBindingV2Response
+        :param request: Request instance for CreateApiAclBindingV2
+        :type request: :class:`huaweicloudsdkroma.v2.CreateApiAclBindingV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.CreateApiAclBindingV2Response`
         """
         return self.create_api_acl_binding_v2_with_http_info(request)
 
     def create_api_acl_binding_v2_with_http_info(self, request):
-        """将API与ACL策略进行绑定
-
-        将API与ACL策略进行绑定。  同一个API发布到不同的环境可以绑定不同的ACL策略；一个API在发布到特定环境后只能绑定一个同一种类型的ACL策略。
-
-        :param CreateApiAclBindingV2Request request
-        :return: CreateApiAclBindingV2Response
-        """
-
         all_params = ['instance_id', 'create_api_acl_binding_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -16508,26 +15361,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_api_acl_binding_v2(self, request):
         """解除API与ACL策略的绑定
 
         解除某条API与ACL策略的绑定关系
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteApiAclBindingV2Request request
-        :return: DeleteApiAclBindingV2Response
+        :param request: Request instance for DeleteApiAclBindingV2
+        :type request: :class:`huaweicloudsdkroma.v2.DeleteApiAclBindingV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.DeleteApiAclBindingV2Response`
         """
         return self.delete_api_acl_binding_v2_with_http_info(request)
 
     def delete_api_acl_binding_v2_with_http_info(self, request):
-        """解除API与ACL策略的绑定
-
-        解除某条API与ACL策略的绑定关系
-
-        :param DeleteApiAclBindingV2Request request
-        :return: DeleteApiAclBindingV2Response
-        """
-
         all_params = ['instance_id', 'acl_bindings_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -16573,26 +15421,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_acl_policy_binded_to_api_v2(self, request):
         """查看API绑定的ACL策略列表
 
         查看API绑定的ACL策略列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListAclPolicyBindedToApiV2Request request
-        :return: ListAclPolicyBindedToApiV2Response
+        :param request: Request instance for ListAclPolicyBindedToApiV2
+        :type request: :class:`huaweicloudsdkroma.v2.ListAclPolicyBindedToApiV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListAclPolicyBindedToApiV2Response`
         """
         return self.list_acl_policy_binded_to_api_v2_with_http_info(request)
 
     def list_acl_policy_binded_to_api_v2_with_http_info(self, request):
-        """查看API绑定的ACL策略列表
-
-        查看API绑定的ACL策略列表
-
-        :param ListAclPolicyBindedToApiV2Request request
-        :return: ListAclPolicyBindedToApiV2Response
-        """
-
         all_params = ['instance_id', 'api_id', 'offset', 'limit', 'env_id', 'env_name', 'acl_id', 'acl_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -16650,26 +15493,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_apis_binded_to_acl_policy_v2(self, request):
         """查看ACL策略绑定的API列表
 
         查看ACL策略绑定的API列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListApisBindedToAclPolicyV2Request request
-        :return: ListApisBindedToAclPolicyV2Response
+        :param request: Request instance for ListApisBindedToAclPolicyV2
+        :type request: :class:`huaweicloudsdkroma.v2.ListApisBindedToAclPolicyV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListApisBindedToAclPolicyV2Response`
         """
         return self.list_apis_binded_to_acl_policy_v2_with_http_info(request)
 
     def list_apis_binded_to_acl_policy_v2_with_http_info(self, request):
-        """查看ACL策略绑定的API列表
-
-        查看ACL策略绑定的API列表
-
-        :param ListApisBindedToAclPolicyV2Request request
-        :return: ListApisBindedToAclPolicyV2Response
-        """
-
         all_params = ['instance_id', 'acl_id', 'offset', 'limit', 'api_name', 'env_id', 'group_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -16725,26 +15563,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_apis_unbinded_to_acl_policy_v2(self, request):
         """查看ACL策略未绑定的API列表
 
         查看ACL策略未绑定的API列表，需要API已发布
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListApisUnbindedToAclPolicyV2Request request
-        :return: ListApisUnbindedToAclPolicyV2Response
+        :param request: Request instance for ListApisUnbindedToAclPolicyV2
+        :type request: :class:`huaweicloudsdkroma.v2.ListApisUnbindedToAclPolicyV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListApisUnbindedToAclPolicyV2Response`
         """
         return self.list_apis_unbinded_to_acl_policy_v2_with_http_info(request)
 
     def list_apis_unbinded_to_acl_policy_v2_with_http_info(self, request):
-        """查看ACL策略未绑定的API列表
-
-        查看ACL策略未绑定的API列表，需要API已发布
-
-        :param ListApisUnbindedToAclPolicyV2Request request
-        :return: ListApisUnbindedToAclPolicyV2Response
-        """
-
         all_params = ['instance_id', 'acl_id', 'offset', 'limit', 'api_id', 'api_name', 'env_id', 'group_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -16802,26 +15635,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def canceling_authorization_v2(self, request):
         """解除授权
 
         解除API对APP的授权关系。解除授权后，APP将不再能够调用该API。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CancelingAuthorizationV2Request request
-        :return: CancelingAuthorizationV2Response
+        :param request: Request instance for CancelingAuthorizationV2
+        :type request: :class:`huaweicloudsdkroma.v2.CancelingAuthorizationV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.CancelingAuthorizationV2Response`
         """
         return self.canceling_authorization_v2_with_http_info(request)
 
     def canceling_authorization_v2_with_http_info(self, request):
-        """解除授权
-
-        解除API对APP的授权关系。解除授权后，APP将不再能够调用该API。
-
-        :param CancelingAuthorizationV2Request request
-        :return: CancelingAuthorizationV2Response
-        """
-
         all_params = ['instance_id', 'app_auth_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -16867,26 +15695,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_authorizing_apps_v2(self, request):
         """APP授权
 
-        APP创建成功后，还不能访问API，如果想要访问某个环境上的API，需要将该API在该环境上授权给APP。授权成功后，APP即可访问该环境上的这个API。 
+        APP创建成功后，还不能访问API，如果想要访问某个环境上的API，需要将该API在该环境上授权给APP。授权成功后，APP即可访问该环境上的这个API。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateAuthorizingAppsV2Request request
-        :return: CreateAuthorizingAppsV2Response
+        :param request: Request instance for CreateAuthorizingAppsV2
+        :type request: :class:`huaweicloudsdkroma.v2.CreateAuthorizingAppsV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.CreateAuthorizingAppsV2Response`
         """
         return self.create_authorizing_apps_v2_with_http_info(request)
 
     def create_authorizing_apps_v2_with_http_info(self, request):
-        """APP授权
-
-        APP创建成功后，还不能访问API，如果想要访问某个环境上的API，需要将该API在该环境上授权给APP。授权成功后，APP即可访问该环境上的这个API。 
-
-        :param CreateAuthorizingAppsV2Request request
-        :return: CreateAuthorizingAppsV2Response
-        """
-
         all_params = ['instance_id', 'create_authorizing_apps_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -16932,26 +15755,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_apis_binded_to_app_v2(self, request):
         """查看APP已绑定的API列表
 
         查询APP已经绑定的API列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListApisBindedToAppV2Request request
-        :return: ListApisBindedToAppV2Response
+        :param request: Request instance for ListApisBindedToAppV2
+        :type request: :class:`huaweicloudsdkroma.v2.ListApisBindedToAppV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListApisBindedToAppV2Response`
         """
         return self.list_apis_binded_to_app_v2_with_http_info(request)
 
     def list_apis_binded_to_app_v2_with_http_info(self, request):
-        """查看APP已绑定的API列表
-
-        查询APP已经绑定的API列表。
-
-        :param ListApisBindedToAppV2Request request
-        :return: ListApisBindedToAppV2Response
-        """
-
         all_params = ['instance_id', 'app_id', 'offset', 'limit', 'api_id', 'api_name', 'group_id', 'group_name', 'env_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -17011,26 +15829,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_apis_unbinded_to_app_v2(self, request):
         """查看APP未绑定的API列表
 
         查询指定环境上某个APP未绑定的API列表，包括自有API和从云市场购买的API。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListApisUnbindedToAppV2Request request
-        :return: ListApisUnbindedToAppV2Response
+        :param request: Request instance for ListApisUnbindedToAppV2
+        :type request: :class:`huaweicloudsdkroma.v2.ListApisUnbindedToAppV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListApisUnbindedToAppV2Response`
         """
         return self.list_apis_unbinded_to_app_v2_with_http_info(request)
 
     def list_apis_unbinded_to_app_v2_with_http_info(self, request):
-        """查看APP未绑定的API列表
-
-        查询指定环境上某个APP未绑定的API列表，包括自有API和从云市场购买的API。
-
-        :param ListApisUnbindedToAppV2Request request
-        :return: ListApisUnbindedToAppV2Response
-        """
-
         all_params = ['instance_id', 'app_id', 'env_id', 'offset', 'limit', 'group_id', 'api_id', 'api_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -17088,26 +15901,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_apps_binded_to_api_v2(self, request):
         """查看API已绑定的APP列表
 
         查询API绑定的APP列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListAppsBindedToApiV2Request request
-        :return: ListAppsBindedToApiV2Response
+        :param request: Request instance for ListAppsBindedToApiV2
+        :type request: :class:`huaweicloudsdkroma.v2.ListAppsBindedToApiV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListAppsBindedToApiV2Response`
         """
         return self.list_apps_binded_to_api_v2_with_http_info(request)
 
     def list_apps_binded_to_api_v2_with_http_info(self, request):
-        """查看API已绑定的APP列表
-
-        查询API绑定的APP列表。
-
-        :param ListAppsBindedToApiV2Request request
-        :return: ListAppsBindedToApiV2Response
-        """
-
         all_params = ['instance_id', 'offset', 'limit', 'api_id', 'app_name', 'app_id', 'env_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -17163,26 +15971,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_duplicate_apis_for_app_v2(self, request):
         """查看APP下路径冲突的api列表
 
         查询指定APP下路径冲突的api列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListDuplicateApisForAppV2Request request
-        :return: ListDuplicateApisForAppV2Response
+        :param request: Request instance for ListDuplicateApisForAppV2
+        :type request: :class:`huaweicloudsdkroma.v2.ListDuplicateApisForAppV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListDuplicateApisForAppV2Response`
         """
         return self.list_duplicate_apis_for_app_v2_with_http_info(request)
 
     def list_duplicate_apis_for_app_v2_with_http_info(self, request):
-        """查看APP下路径冲突的api列表
-
-        查询指定APP下路径冲突的api列表。
-
-        :param ListDuplicateApisForAppV2Request request
-        :return: ListDuplicateApisForAppV2Response
-        """
-
         all_params = ['instance_id', 'app_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -17228,26 +16031,22 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def add_user_to_app(self, request):
         """设置用户成员
 
-        - 设置应用的用户成员，为空数组时会清空已有应用成员列表 - 设置动作为全量更新非增量更新，应用的成员列表都会替换为当次请求的应用成员列表 
+        - 设置应用的用户成员，为空数组时会清空已有应用成员列表
+        - 设置动作为全量更新非增量更新，应用的成员列表都会替换为当次请求的应用成员列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param AddUserToAppRequest request
-        :return: AddUserToAppResponse
+        :param request: Request instance for AddUserToApp
+        :type request: :class:`huaweicloudsdkroma.v2.AddUserToAppRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.AddUserToAppResponse`
         """
         return self.add_user_to_app_with_http_info(request)
 
     def add_user_to_app_with_http_info(self, request):
-        """设置用户成员
-
-        - 设置应用的用户成员，为空数组时会清空已有应用成员列表 - 设置动作为全量更新非增量更新，应用的成员列表都会替换为当次请求的应用成员列表 
-
-        :param AddUserToAppRequest request
-        :return: AddUserToAppResponse
-        """
-
         all_params = ['app_id', 'instance_id', 'add_user_to_app_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -17295,26 +16094,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def check_auth_users_of_app(self, request):
         """查询用户成员列表
 
         查询用户成列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CheckAuthUsersOfAppRequest request
-        :return: CheckAuthUsersOfAppResponse
+        :param request: Request instance for CheckAuthUsersOfApp
+        :type request: :class:`huaweicloudsdkroma.v2.CheckAuthUsersOfAppRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.CheckAuthUsersOfAppResponse`
         """
         return self.check_auth_users_of_app_with_http_info(request)
 
     def check_auth_users_of_app_with_http_info(self, request):
-        """查询用户成员列表
-
-        查询用户成列表
-
-        :param CheckAuthUsersOfAppRequest request
-        :return: CheckAuthUsersOfAppResponse
-        """
-
         all_params = ['app_id', 'instance_id', 'user_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -17362,26 +16156,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def check_can_auth_users_of_app(self, request):
         """查询候选用户成员
 
         查询应用的候选用户成员列表,会过滤掉异常状态用户
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CheckCanAuthUsersOfAppRequest request
-        :return: CheckCanAuthUsersOfAppResponse
+        :param request: Request instance for CheckCanAuthUsersOfApp
+        :type request: :class:`huaweicloudsdkroma.v2.CheckCanAuthUsersOfAppRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.CheckCanAuthUsersOfAppResponse`
         """
         return self.check_can_auth_users_of_app_with_http_info(request)
 
     def check_can_auth_users_of_app_with_http_info(self, request):
-        """查询候选用户成员
-
-        查询应用的候选用户成员列表,会过滤掉异常状态用户
-
-        :param CheckCanAuthUsersOfAppRequest request
-        :return: CheckCanAuthUsersOfAppResponse
-        """
-
         all_params = ['app_id', 'instance_id', 'filter']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -17429,26 +16218,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def check_roma_app_details(self, request):
         """查询应用详情
 
         查询应用详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CheckRomaAppDetailsRequest request
-        :return: CheckRomaAppDetailsResponse
+        :param request: Request instance for CheckRomaAppDetails
+        :type request: :class:`huaweicloudsdkroma.v2.CheckRomaAppDetailsRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.CheckRomaAppDetailsResponse`
         """
         return self.check_roma_app_details_with_http_info(request)
 
     def check_roma_app_details_with_http_info(self, request):
-        """查询应用详情
-
-        查询应用详情
-
-        :param CheckRomaAppDetailsRequest request
-        :return: CheckRomaAppDetailsResponse
-        """
-
         all_params = ['app_id', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -17494,26 +16278,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def check_roma_app_secret(self, request):
         """查询应用密钥
 
         查询应用密钥
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CheckRomaAppSecretRequest request
-        :return: CheckRomaAppSecretResponse
+        :param request: Request instance for CheckRomaAppSecret
+        :type request: :class:`huaweicloudsdkroma.v2.CheckRomaAppSecretRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.CheckRomaAppSecretResponse`
         """
         return self.check_roma_app_secret_with_http_info(request)
 
     def check_roma_app_secret_with_http_info(self, request):
-        """查询应用密钥
-
-        查询应用密钥
-
-        :param CheckRomaAppSecretRequest request
-        :return: CheckRomaAppSecretResponse
-        """
-
         all_params = ['app_id', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -17559,26 +16338,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_roma_app(self, request):
         """创建应用
 
         创建应用
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateRomaAppRequest request
-        :return: CreateRomaAppResponse
+        :param request: Request instance for CreateRomaApp
+        :type request: :class:`huaweicloudsdkroma.v2.CreateRomaAppRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.CreateRomaAppResponse`
         """
         return self.create_roma_app_with_http_info(request)
 
     def create_roma_app_with_http_info(self, request):
-        """创建应用
-
-        创建应用
-
-        :param CreateRomaAppRequest request
-        :return: CreateRomaAppResponse
-        """
-
         all_params = ['instance_id', 'create_roma_app_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -17624,26 +16398,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_roma_app(self, request):
         """删除应用
 
         删除单个应用
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteRomaAppRequest request
-        :return: DeleteRomaAppResponse
+        :param request: Request instance for DeleteRomaApp
+        :type request: :class:`huaweicloudsdkroma.v2.DeleteRomaAppRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.DeleteRomaAppResponse`
         """
         return self.delete_roma_app_with_http_info(request)
 
     def delete_roma_app_with_http_info(self, request):
-        """删除应用
-
-        删除单个应用
-
-        :param DeleteRomaAppRequest request
-        :return: DeleteRomaAppResponse
-        """
-
         all_params = ['app_id', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -17689,26 +16458,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_roma_app(self, request):
         """查询应用列表
 
         查询应用列表，支持条件查询，所有条件是并且的关系
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListRomaAppRequest request
-        :return: ListRomaAppResponse
+        :param request: Request instance for ListRomaApp
+        :type request: :class:`huaweicloudsdkroma.v2.ListRomaAppRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListRomaAppResponse`
         """
         return self.list_roma_app_with_http_info(request)
 
     def list_roma_app_with_http_info(self, request):
-        """查询应用列表
-
-        查询应用列表，支持条件查询，所有条件是并且的关系
-
-        :param ListRomaAppRequest request
-        :return: ListRomaAppResponse
-        """
-
         all_params = ['instance_id', 'offset', 'limit', 'favorite', 'auth_role', 'name', 'owner', 'user_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -17766,26 +16530,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def reset_roma_app_secret(self, request):
         """重置应用密钥
 
         重置应用密钥
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ResetRomaAppSecretRequest request
-        :return: ResetRomaAppSecretResponse
+        :param request: Request instance for ResetRomaAppSecret
+        :type request: :class:`huaweicloudsdkroma.v2.ResetRomaAppSecretRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ResetRomaAppSecretResponse`
         """
         return self.reset_roma_app_secret_with_http_info(request)
 
     def reset_roma_app_secret_with_http_info(self, request):
-        """重置应用密钥
-
-        重置应用密钥
-
-        :param ResetRomaAppSecretRequest request
-        :return: ResetRomaAppSecretResponse
-        """
-
         all_params = ['app_id', 'instance_id', 'reset_roma_app_secret_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -17833,26 +16592,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_roma_app(self, request):
         """更新应用
 
         更新应用
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateRomaAppRequest request
-        :return: UpdateRomaAppResponse
+        :param request: Request instance for UpdateRomaApp
+        :type request: :class:`huaweicloudsdkroma.v2.UpdateRomaAppRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.UpdateRomaAppResponse`
         """
         return self.update_roma_app_with_http_info(request)
 
     def update_roma_app_with_http_info(self, request):
-        """更新应用
-
-        更新应用
-
-        :param UpdateRomaAppRequest request
-        :return: UpdateRomaAppResponse
-        """
-
         all_params = ['app_id', 'instance_id', 'update_roma_app_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -17900,26 +16654,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def validate_roma_app(self, request):
         """校验应用是否存在
 
         校验指定条件的应用是否存在
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ValidateRomaAppRequest request
-        :return: ValidateRomaAppResponse
+        :param request: Request instance for ValidateRomaApp
+        :type request: :class:`huaweicloudsdkroma.v2.ValidateRomaAppRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ValidateRomaAppResponse`
         """
         return self.validate_roma_app_with_http_info(request)
 
     def validate_roma_app_with_http_info(self, request):
-        """校验应用是否存在
-
-        校验指定条件的应用是否存在
-
-        :param ValidateRomaAppRequest request
-        :return: ValidateRomaAppResponse
-        """
-
         all_params = ['instance_id', 'name', 'id', 'key']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -17969,26 +16718,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def check_asset_job_status(self, request):
         """查询作业进度
 
         查询作业进度
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CheckAssetJobStatusRequest request
-        :return: CheckAssetJobStatusResponse
+        :param request: Request instance for CheckAssetJobStatus
+        :type request: :class:`huaweicloudsdkroma.v2.CheckAssetJobStatusRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.CheckAssetJobStatusResponse`
         """
         return self.check_asset_job_status_with_http_info(request)
 
     def check_asset_job_status_with_http_info(self, request):
-        """查询作业进度
-
-        查询作业进度
-
-        :param CheckAssetJobStatusRequest request
-        :return: CheckAssetJobStatusResponse
-        """
-
         all_params = ['instance_id', 'job_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -18034,26 +16778,24 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_asset(self, request):
         """批量删除资产
 
-        批量删除资产 - 创建批量删除指定条件的资产的作业任务 - 最大支持100个应用和任务 - 一个用户同一时刻只能创建一个资产删除作业任务，没有Running状态的作业任务存在
+        批量删除资产
+        - 创建批量删除指定条件的资产的作业任务
+        - 最大支持100个应用和任务
+        - 一个用户同一时刻只能创建一个资产删除作业任务，没有Running状态的作业任务存在
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteAssetRequest request
-        :return: DeleteAssetResponse
+        :param request: Request instance for DeleteAsset
+        :type request: :class:`huaweicloudsdkroma.v2.DeleteAssetRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.DeleteAssetResponse`
         """
         return self.delete_asset_with_http_info(request)
 
     def delete_asset_with_http_info(self, request):
-        """批量删除资产
-
-        批量删除资产 - 创建批量删除指定条件的资产的作业任务 - 最大支持100个应用和任务 - 一个用户同一时刻只能创建一个资产删除作业任务，没有Running状态的作业任务存在
-
-        :param DeleteAssetRequest request
-        :return: DeleteAssetResponse
-        """
-
         all_params = ['instance_id', 'delete_asset_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -18099,26 +16841,22 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def download_asset_archive(self, request):
         """下载资产包
 
-        - 导出作业执行成功后，通过该接口获取导出作业产生的资产包，仅能下载一次 - 可先压缩后存在数据库，下载后删除 
+        - 导出作业执行成功后，通过该接口获取导出作业产生的资产包，仅能下载一次
+        - 可先压缩后存在数据库，下载后删除
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DownloadAssetArchiveRequest request
-        :return: DownloadAssetArchiveResponse
+        :param request: Request instance for DownloadAssetArchive
+        :type request: :class:`huaweicloudsdkroma.v2.DownloadAssetArchiveRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.DownloadAssetArchiveResponse`
         """
         return self.download_asset_archive_with_http_info(request)
 
     def download_asset_archive_with_http_info(self, request):
-        """下载资产包
-
-        - 导出作业执行成功后，通过该接口获取导出作业产生的资产包，仅能下载一次 - 可先压缩后存在数据库，下载后删除 
-
-        :param DownloadAssetArchiveRequest request
-        :return: DownloadAssetArchiveResponse
-        """
-
         all_params = ['instance_id', 'archive_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -18164,26 +16902,24 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def export_asset(self, request):
         """批量导出资产
 
-        批量导出资产 - 创建批量导出指定条件的资产的作业任务 - 最大支持100个应用和任务 - 一个用户同一时刻只能创建一个资产导出作业任务，没有Running状态的作业任务存在
+        批量导出资产
+        - 创建批量导出指定条件的资产的作业任务
+        - 最大支持100个应用和任务
+        - 一个用户同一时刻只能创建一个资产导出作业任务，没有Running状态的作业任务存在
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ExportAssetRequest request
-        :return: ExportAssetResponse
+        :param request: Request instance for ExportAsset
+        :type request: :class:`huaweicloudsdkroma.v2.ExportAssetRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ExportAssetResponse`
         """
         return self.export_asset_with_http_info(request)
 
     def export_asset_with_http_info(self, request):
-        """批量导出资产
-
-        批量导出资产 - 创建批量导出指定条件的资产的作业任务 - 最大支持100个应用和任务 - 一个用户同一时刻只能创建一个资产导出作业任务，没有Running状态的作业任务存在
-
-        :param ExportAssetRequest request
-        :return: ExportAssetResponse
-        """
-
         all_params = ['instance_id', 'export_asset_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -18229,26 +16965,23 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def import_asset(self, request):
         """导入资产
 
-        - 创建导入资产作业任务，资产版本和具体哪些资产从资产内容里读取 - 最大支持100个应用和任务 - 一个用户同一时刻只能创建一个资产导入作业任务，没有Running状态的作业任务存在 
+        - 创建导入资产作业任务，资产版本和具体哪些资产从资产内容里读取
+        - 最大支持100个应用和任务
+        - 一个用户同一时刻只能创建一个资产导入作业任务，没有Running状态的作业任务存在
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ImportAssetRequest request
-        :return: ImportAssetResponse
+        :param request: Request instance for ImportAsset
+        :type request: :class:`huaweicloudsdkroma.v2.ImportAssetRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ImportAssetResponse`
         """
         return self.import_asset_with_http_info(request)
 
     def import_asset_with_http_info(self, request):
-        """导入资产
-
-        - 创建导入资产作业任务，资产版本和具体哪些资产从资产内容里读取 - 最大支持100个应用和任务 - 一个用户同一时刻只能创建一个资产导入作业任务，没有Running状态的作业任务存在 
-
-        :param ImportAssetRequest request
-        :return: ImportAssetResponse
-        """
-
         all_params = ['instance_id', 'import_asset_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -18294,26 +17027,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def check_dictionary(self, request):
         """查询字典详情
 
         查询字典详情,
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CheckDictionaryRequest request
-        :return: CheckDictionaryResponse
+        :param request: Request instance for CheckDictionary
+        :type request: :class:`huaweicloudsdkroma.v2.CheckDictionaryRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.CheckDictionaryResponse`
         """
         return self.check_dictionary_with_http_info(request)
 
     def check_dictionary_with_http_info(self, request):
-        """查询字典详情
-
-        查询字典详情,
-
-        :param CheckDictionaryRequest request
-        :return: CheckDictionaryResponse
-        """
-
         all_params = ['dict_id', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -18359,26 +17087,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_dictionary(self, request):
         """创建字典
 
         创建字典
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateDictionaryRequest request
-        :return: CreateDictionaryResponse
+        :param request: Request instance for CreateDictionary
+        :type request: :class:`huaweicloudsdkroma.v2.CreateDictionaryRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.CreateDictionaryResponse`
         """
         return self.create_dictionary_with_http_info(request)
 
     def create_dictionary_with_http_info(self, request):
-        """创建字典
-
-        创建字典
-
-        :param CreateDictionaryRequest request
-        :return: CreateDictionaryResponse
-        """
-
         all_params = ['instance_id', 'create_dictionary_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -18424,26 +17147,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_dictionary(self, request):
         """删除字典
 
         删除单个字典，会同时删除该字典的所有子字典
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteDictionaryRequest request
-        :return: DeleteDictionaryResponse
+        :param request: Request instance for DeleteDictionary
+        :type request: :class:`huaweicloudsdkroma.v2.DeleteDictionaryRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.DeleteDictionaryResponse`
         """
         return self.delete_dictionary_with_http_info(request)
 
     def delete_dictionary_with_http_info(self, request):
-        """删除字典
-
-        删除单个字典，会同时删除该字典的所有子字典
-
-        :param DeleteDictionaryRequest request
-        :return: DeleteDictionaryResponse
-        """
-
         all_params = ['dict_id', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -18489,26 +17207,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_dictionary(self, request):
         """查询字典列表
 
         查询字典列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListDictionaryRequest request
-        :return: ListDictionaryResponse
+        :param request: Request instance for ListDictionary
+        :type request: :class:`huaweicloudsdkroma.v2.ListDictionaryRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListDictionaryResponse`
         """
         return self.list_dictionary_with_http_info(request)
 
     def list_dictionary_with_http_info(self, request):
-        """查询字典列表
-
-        查询字典列表
-
-        :param ListDictionaryRequest request
-        :return: ListDictionaryResponse
-        """
-
         all_params = ['instance_id', 'offset', 'limit', 'parent_code', 'code', 'name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -18562,26 +17275,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_dictionary(self, request):
         """更新字典
 
         更新字典
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateDictionaryRequest request
-        :return: UpdateDictionaryResponse
+        :param request: Request instance for UpdateDictionary
+        :type request: :class:`huaweicloudsdkroma.v2.UpdateDictionaryRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.UpdateDictionaryResponse`
         """
         return self.update_dictionary_with_http_info(request)
 
     def update_dictionary_with_http_info(self, request):
-        """更新字典
-
-        更新字典
-
-        :param UpdateDictionaryRequest request
-        :return: UpdateDictionaryResponse
-        """
-
         all_params = ['dict_id', 'instance_id', 'update_dictionary_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -18629,26 +17337,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def validate_dictionary(self, request):
         """校验字典是否存在
 
         校验指定条件的字典是否存在，支持字典名称和字典编码
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ValidateDictionaryRequest request
-        :return: ValidateDictionaryResponse
+        :param request: Request instance for ValidateDictionary
+        :type request: :class:`huaweicloudsdkroma.v2.ValidateDictionaryRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ValidateDictionaryResponse`
         """
         return self.validate_dictionary_with_http_info(request)
 
     def validate_dictionary_with_http_info(self, request):
-        """校验字典是否存在
-
-        校验指定条件的字典是否存在，支持字典名称和字典编码
-
-        :param ValidateDictionaryRequest request
-        :return: ValidateDictionaryResponse
-        """
-
         all_params = ['instance_id', 'name', 'code']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -18696,26 +17399,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def check_roma_instance_list_v2(self, request):
         """查询实例列表
 
         获取符合条件的服务实例列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CheckRomaInstanceListV2Request request
-        :return: CheckRomaInstanceListV2Response
+        :param request: Request instance for CheckRomaInstanceListV2
+        :type request: :class:`huaweicloudsdkroma.v2.CheckRomaInstanceListV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.CheckRomaInstanceListV2Response`
         """
         return self.check_roma_instance_list_v2_with_http_info(request)
 
     def check_roma_instance_list_v2_with_http_info(self, request):
-        """查询实例列表
-
-        获取符合条件的服务实例列表。
-
-        :param CheckRomaInstanceListV2Request request
-        :return: CheckRomaInstanceListV2Response
-        """
-
         all_params = ['status', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -18763,26 +17461,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_mqs_instance(self, request):
         """查询MQS实例列表
 
         查询MQS实例列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListMqsInstanceRequest request
-        :return: ListMqsInstanceResponse
+        :param request: Request instance for ListMqsInstance
+        :type request: :class:`huaweicloudsdkroma.v2.ListMqsInstanceRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListMqsInstanceResponse`
         """
         return self.list_mqs_instance_with_http_info(request)
 
     def list_mqs_instance_with_http_info(self, request):
-        """查询MQS实例列表
-
-        查询MQS实例列表。
-
-        :param ListMqsInstanceRequest request
-        :return: ListMqsInstanceResponse
-        """
-
         all_params = ['include_internal']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -18826,26 +17519,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_mqs_instance(self, request):
         """查询MQS实例详情
 
         查询指定MQS实例详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowMqsInstanceRequest request
-        :return: ShowMqsInstanceResponse
+        :param request: Request instance for ShowMqsInstance
+        :type request: :class:`huaweicloudsdkroma.v2.ShowMqsInstanceRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ShowMqsInstanceResponse`
         """
         return self.show_mqs_instance_with_http_info(request)
 
     def show_mqs_instance_with_http_info(self, request):
-        """查询MQS实例详情
-
-        查询指定MQS实例详情。
-
-        :param ShowMqsInstanceRequest request
-        :return: ShowMqsInstanceResponse
-        """
-
         all_params = ['instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -18889,26 +17577,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def export_api_definitions_v2(self, request):
         """导出API
 
         导出分组下API的定义信息，导出文件内容符合swagger标准规范。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ExportApiDefinitionsV2Request request
-        :return: ExportApiDefinitionsV2Response
+        :param request: Request instance for ExportApiDefinitionsV2
+        :type request: :class:`huaweicloudsdkroma.v2.ExportApiDefinitionsV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ExportApiDefinitionsV2Response`
         """
         return self.export_api_definitions_v2_with_http_info(request)
 
     def export_api_definitions_v2_with_http_info(self, request):
-        """导出API
-
-        导出分组下API的定义信息，导出文件内容符合swagger标准规范。
-
-        :param ExportApiDefinitionsV2Request request
-        :return: ExportApiDefinitionsV2Response
-        """
-
         all_params = ['instance_id', 'export_api_definitions_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -18954,26 +17637,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def export_live_data_api_definitions_v2(self, request):
         """导出自定义后端API
 
         导出自定义后端API，导出文件内容符合swagger标准规范。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ExportLiveDataApiDefinitionsV2Request request
-        :return: ExportLiveDataApiDefinitionsV2Response
+        :param request: Request instance for ExportLiveDataApiDefinitionsV2
+        :type request: :class:`huaweicloudsdkroma.v2.ExportLiveDataApiDefinitionsV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ExportLiveDataApiDefinitionsV2Response`
         """
         return self.export_live_data_api_definitions_v2_with_http_info(request)
 
     def export_live_data_api_definitions_v2_with_http_info(self, request):
-        """导出自定义后端API
-
-        导出自定义后端API，导出文件内容符合swagger标准规范。
-
-        :param ExportLiveDataApiDefinitionsV2Request request
-        :return: ExportLiveDataApiDefinitionsV2Response
-        """
-
         all_params = ['instance_id', 'export_live_data_api_definitions_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -19019,26 +17697,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def import_api_definitions_v2(self, request):
         """导入API
 
         导入API。导入文件内容需要符合swagger标准规范，自定义扩展字段请参考用户指南的“附录：前端API的Swagger扩展定义”章节。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ImportApiDefinitionsV2Request request
-        :return: ImportApiDefinitionsV2Response
+        :param request: Request instance for ImportApiDefinitionsV2
+        :type request: :class:`huaweicloudsdkroma.v2.ImportApiDefinitionsV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ImportApiDefinitionsV2Response`
         """
         return self.import_api_definitions_v2_with_http_info(request)
 
     def import_api_definitions_v2_with_http_info(self, request):
-        """导入API
-
-        导入API。导入文件内容需要符合swagger标准规范，自定义扩展字段请参考用户指南的“附录：前端API的Swagger扩展定义”章节。
-
-        :param ImportApiDefinitionsV2Request request
-        :return: ImportApiDefinitionsV2Response
-        """
-
         all_params = ['instance_id', 'file_name', 'is_create_group', 'group_id', 'app_id', 'extend_mode', 'simple_mode', 'mock_mode', 'api_mode']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -19100,26 +17773,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def import_live_data_api_definitions_v2(self, request):
         """导入自定义后端API
 
         导入自定义后端API。导入文件内容需要符合swagger标准规范，自定义扩展字段请参考用户指南的“附录：后端API的Swagger扩展定义”章节
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ImportLiveDataApiDefinitionsV2Request request
-        :return: ImportLiveDataApiDefinitionsV2Response
+        :param request: Request instance for ImportLiveDataApiDefinitionsV2
+        :type request: :class:`huaweicloudsdkroma.v2.ImportLiveDataApiDefinitionsV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ImportLiveDataApiDefinitionsV2Response`
         """
         return self.import_live_data_api_definitions_v2_with_http_info(request)
 
     def import_live_data_api_definitions_v2_with_http_info(self, request):
-        """导入自定义后端API
-
-        导入自定义后端API。导入文件内容需要符合swagger标准规范，自定义扩展字段请参考用户指南的“附录：后端API的Swagger扩展定义”章节
-
-        :param ImportLiveDataApiDefinitionsV2Request request
-        :return: ImportLiveDataApiDefinitionsV2Response
-        """
-
         all_params = ['instance_id', 'file_name', 'extend_mode', 'api_mode']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -19171,26 +17839,23 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def adding_backend_instances_v2(self, request):
         """添加或更新后端实例
 
-        为指定的VPC通道添加后端实例  若指定地址的后端实例已存在，则更新对应后端实例信息。若请求体中包含多个重复地址的后端实例定义，则使用第一个定义。
+        为指定的VPC通道添加后端实例
+        
+        若指定地址的后端实例已存在，则更新对应后端实例信息。若请求体中包含多个重复地址的后端实例定义，则使用第一个定义。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param AddingBackendInstancesV2Request request
-        :return: AddingBackendInstancesV2Response
+        :param request: Request instance for AddingBackendInstancesV2
+        :type request: :class:`huaweicloudsdkroma.v2.AddingBackendInstancesV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.AddingBackendInstancesV2Response`
         """
         return self.adding_backend_instances_v2_with_http_info(request)
 
     def adding_backend_instances_v2_with_http_info(self, request):
-        """添加或更新后端实例
-
-        为指定的VPC通道添加后端实例  若指定地址的后端实例已存在，则更新对应后端实例信息。若请求体中包含多个重复地址的后端实例定义，则使用第一个定义。
-
-        :param AddingBackendInstancesV2Request request
-        :return: AddingBackendInstancesV2Response
-        """
-
         all_params = ['instance_id', 'vpc_channel_id', 'adding_backend_instances_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -19238,26 +17903,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_disable_members(self, request):
         """批量修改后端服务器状态不可用
 
         批量修改后端服务器状态不可用。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchDisableMembersRequest request
-        :return: BatchDisableMembersResponse
+        :param request: Request instance for BatchDisableMembers
+        :type request: :class:`huaweicloudsdkroma.v2.BatchDisableMembersRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.BatchDisableMembersResponse`
         """
         return self.batch_disable_members_with_http_info(request)
 
     def batch_disable_members_with_http_info(self, request):
-        """批量修改后端服务器状态不可用
-
-        批量修改后端服务器状态不可用。
-
-        :param BatchDisableMembersRequest request
-        :return: BatchDisableMembersResponse
-        """
-
         all_params = ['instance_id', 'vpc_channel_id', 'batch_disable_members_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -19305,26 +17965,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_enable_members(self, request):
         """批量修改后端服务器状态可用
 
         批量修改后端服务器状态可用。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchEnableMembersRequest request
-        :return: BatchEnableMembersResponse
+        :param request: Request instance for BatchEnableMembers
+        :type request: :class:`huaweicloudsdkroma.v2.BatchEnableMembersRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.BatchEnableMembersResponse`
         """
         return self.batch_enable_members_with_http_info(request)
 
     def batch_enable_members_with_http_info(self, request):
-        """批量修改后端服务器状态可用
-
-        批量修改后端服务器状态可用。
-
-        :param BatchEnableMembersRequest request
-        :return: BatchEnableMembersResponse
-        """
-
         all_params = ['instance_id', 'vpc_channel_id', 'batch_enable_members_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -19372,26 +18027,23 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_member_group(self, request):
         """添加或更新VPC通道后端服务器组
 
-        在ROMA Connect APIC中创建VPC通道后端服务器组，VPC通道后端实例可以选择是否关联后端实例服务器组，以便管理后端服务器节点。  若指定名称的后端服务器组已存在，则更新对应后端服务器组信息。若请求体中包含多个重复名称的后端服务器定义，则使用第一个定义。
+        在ROMA Connect APIC中创建VPC通道后端服务器组，VPC通道后端实例可以选择是否关联后端实例服务器组，以便管理后端服务器节点。
+        
+        若指定名称的后端服务器组已存在，则更新对应后端服务器组信息。若请求体中包含多个重复名称的后端服务器定义，则使用第一个定义。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateMemberGroupRequest request
-        :return: CreateMemberGroupResponse
+        :param request: Request instance for CreateMemberGroup
+        :type request: :class:`huaweicloudsdkroma.v2.CreateMemberGroupRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.CreateMemberGroupResponse`
         """
         return self.create_member_group_with_http_info(request)
 
     def create_member_group_with_http_info(self, request):
-        """添加或更新VPC通道后端服务器组
-
-        在ROMA Connect APIC中创建VPC通道后端服务器组，VPC通道后端实例可以选择是否关联后端实例服务器组，以便管理后端服务器节点。  若指定名称的后端服务器组已存在，则更新对应后端服务器组信息。若请求体中包含多个重复名称的后端服务器定义，则使用第一个定义。
-
-        :param CreateMemberGroupRequest request
-        :return: CreateMemberGroupResponse
-        """
-
         all_params = ['instance_id', 'vpc_channel_id', 'create_member_group_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -19439,26 +18091,22 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_vpc_channel_v2(self, request):
         """创建VPC通道
 
-        在ROMA Connect APIC中创建连接私有VPC资源的通道，并在创建API时将后端节点配置为使用这些VPC通道，以便ROMA Connect APIC直接访问私有VPC资源。 > 每个用户默认最多创建200个VPC通道，如需支持更多请联系技术支持调整配额。
+        在ROMA Connect APIC中创建连接私有VPC资源的通道，并在创建API时将后端节点配置为使用这些VPC通道，以便ROMA Connect APIC直接访问私有VPC资源。
+        &gt; 每个用户默认最多创建200个VPC通道，如需支持更多请联系技术支持调整配额。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateVpcChannelV2Request request
-        :return: CreateVpcChannelV2Response
+        :param request: Request instance for CreateVpcChannelV2
+        :type request: :class:`huaweicloudsdkroma.v2.CreateVpcChannelV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.CreateVpcChannelV2Response`
         """
         return self.create_vpc_channel_v2_with_http_info(request)
 
     def create_vpc_channel_v2_with_http_info(self, request):
-        """创建VPC通道
-
-        在ROMA Connect APIC中创建连接私有VPC资源的通道，并在创建API时将后端节点配置为使用这些VPC通道，以便ROMA Connect APIC直接访问私有VPC资源。 > 每个用户默认最多创建200个VPC通道，如需支持更多请联系技术支持调整配额。
-
-        :param CreateVpcChannelV2Request request
-        :return: CreateVpcChannelV2Response
-        """
-
         all_params = ['instance_id', 'create_vpc_channel_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -19504,26 +18152,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_backend_instance_v2(self, request):
         """删除后端实例
 
         删除指定VPC通道中的后端实例
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteBackendInstanceV2Request request
-        :return: DeleteBackendInstanceV2Response
+        :param request: Request instance for DeleteBackendInstanceV2
+        :type request: :class:`huaweicloudsdkroma.v2.DeleteBackendInstanceV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.DeleteBackendInstanceV2Response`
         """
         return self.delete_backend_instance_v2_with_http_info(request)
 
     def delete_backend_instance_v2_with_http_info(self, request):
-        """删除后端实例
-
-        删除指定VPC通道中的后端实例
-
-        :param DeleteBackendInstanceV2Request request
-        :return: DeleteBackendInstanceV2Response
-        """
-
         all_params = ['instance_id', 'vpc_channel_id', 'member_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -19571,26 +18214,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_member_group(self, request):
         """删除VPC通道后端服务器组
 
         删除指定的VPC通道后端服务器组
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteMemberGroupRequest request
-        :return: DeleteMemberGroupResponse
+        :param request: Request instance for DeleteMemberGroup
+        :type request: :class:`huaweicloudsdkroma.v2.DeleteMemberGroupRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.DeleteMemberGroupResponse`
         """
         return self.delete_member_group_with_http_info(request)
 
     def delete_member_group_with_http_info(self, request):
-        """删除VPC通道后端服务器组
-
-        删除指定的VPC通道后端服务器组
-
-        :param DeleteMemberGroupRequest request
-        :return: DeleteMemberGroupResponse
-        """
-
         all_params = ['instance_id', 'vpc_channel_id', 'member_group_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -19638,26 +18276,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_vpc_channel_v2(self, request):
         """删除VPC通道
 
         删除指定的VPC通道
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteVpcChannelV2Request request
-        :return: DeleteVpcChannelV2Response
+        :param request: Request instance for DeleteVpcChannelV2
+        :type request: :class:`huaweicloudsdkroma.v2.DeleteVpcChannelV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.DeleteVpcChannelV2Response`
         """
         return self.delete_vpc_channel_v2_with_http_info(request)
 
     def delete_vpc_channel_v2_with_http_info(self, request):
-        """删除VPC通道
-
-        删除指定的VPC通道
-
-        :param DeleteVpcChannelV2Request request
-        :return: DeleteVpcChannelV2Response
-        """
-
         all_params = ['instance_id', 'vpc_channel_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -19703,26 +18336,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_backend_instances_v2(self, request):
         """查看后端实例列表
 
         查看指定VPC通道的后端实例列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListBackendInstancesV2Request request
-        :return: ListBackendInstancesV2Response
+        :param request: Request instance for ListBackendInstancesV2
+        :type request: :class:`huaweicloudsdkroma.v2.ListBackendInstancesV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListBackendInstancesV2Response`
         """
         return self.list_backend_instances_v2_with_http_info(request)
 
     def list_backend_instances_v2_with_http_info(self, request):
-        """查看后端实例列表
-
-        查看指定VPC通道的后端实例列表。
-
-        :param ListBackendInstancesV2Request request
-        :return: ListBackendInstancesV2Response
-        """
-
         all_params = ['instance_id', 'vpc_channel_id', 'offset', 'limit', 'name', 'member_group_name', 'member_group_id', 'precise_search']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -19780,26 +18408,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_member_groups(self, request):
         """查询VPC通道后端云服务组列表
 
         查询VPC通道后端云服务组列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListMemberGroupsRequest request
-        :return: ListMemberGroupsResponse
+        :param request: Request instance for ListMemberGroups
+        :type request: :class:`huaweicloudsdkroma.v2.ListMemberGroupsRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListMemberGroupsResponse`
         """
         return self.list_member_groups_with_http_info(request)
 
     def list_member_groups_with_http_info(self, request):
-        """查询VPC通道后端云服务组列表
-
-        查询VPC通道后端云服务组列表
-
-        :param ListMemberGroupsRequest request
-        :return: ListMemberGroupsResponse
-        """
-
         all_params = ['instance_id', 'vpc_channel_id', 'offset', 'limit', 'dict_code', 'member_group_name', 'precise_search']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -19855,26 +18478,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_vpc_channels_v2(self, request):
         """查询VPC通道列表
 
         查看VPC通道列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListVpcChannelsV2Request request
-        :return: ListVpcChannelsV2Response
+        :param request: Request instance for ListVpcChannelsV2
+        :type request: :class:`huaweicloudsdkroma.v2.ListVpcChannelsV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListVpcChannelsV2Response`
         """
         return self.list_vpc_channels_v2_with_http_info(request)
 
     def list_vpc_channels_v2_with_http_info(self, request):
-        """查询VPC通道列表
-
-        查看VPC通道列表
-
-        :param ListVpcChannelsV2Request request
-        :return: ListVpcChannelsV2Response
-        """
-
         all_params = ['instance_id', 'offset', 'limit', 'id', 'name', 'dict_code', 'precise_search', 'member_host', 'member_port', 'member_group_name', 'member_group_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -19938,26 +18556,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_details_of_member_group(self, request):
         """查看VPC通道后端服务器组详情
 
         查看指定的VPC通道后端服务器组详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowDetailsOfMemberGroupRequest request
-        :return: ShowDetailsOfMemberGroupResponse
+        :param request: Request instance for ShowDetailsOfMemberGroup
+        :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfMemberGroupRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfMemberGroupResponse`
         """
         return self.show_details_of_member_group_with_http_info(request)
 
     def show_details_of_member_group_with_http_info(self, request):
-        """查看VPC通道后端服务器组详情
-
-        查看指定的VPC通道后端服务器组详情
-
-        :param ShowDetailsOfMemberGroupRequest request
-        :return: ShowDetailsOfMemberGroupResponse
-        """
-
         all_params = ['instance_id', 'vpc_channel_id', 'member_group_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -20005,26 +18618,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_details_of_vpc_channel_v2(self, request):
         """查看VPC通道详情
 
         查看指定的VPC通道详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowDetailsOfVpcChannelV2Request request
-        :return: ShowDetailsOfVpcChannelV2Response
+        :param request: Request instance for ShowDetailsOfVpcChannelV2
+        :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfVpcChannelV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfVpcChannelV2Response`
         """
         return self.show_details_of_vpc_channel_v2_with_http_info(request)
 
     def show_details_of_vpc_channel_v2_with_http_info(self, request):
-        """查看VPC通道详情
-
-        查看指定的VPC通道详情
-
-        :param ShowDetailsOfVpcChannelV2Request request
-        :return: ShowDetailsOfVpcChannelV2Response
-        """
-
         all_params = ['instance_id', 'vpc_channel_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -20070,26 +18678,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_backend_instances_v2(self, request):
         """更新后端实例
 
         更新指定的VPC通道的后端实例。更新时，使用传入的请求参数对对应云服务组的后端实例进行全量覆盖修改。若未指定修改的云服务器组，则进行全量覆盖。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateBackendInstancesV2Request request
-        :return: UpdateBackendInstancesV2Response
+        :param request: Request instance for UpdateBackendInstancesV2
+        :type request: :class:`huaweicloudsdkroma.v2.UpdateBackendInstancesV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.UpdateBackendInstancesV2Response`
         """
         return self.update_backend_instances_v2_with_http_info(request)
 
     def update_backend_instances_v2_with_http_info(self, request):
-        """更新后端实例
-
-        更新指定的VPC通道的后端实例。更新时，使用传入的请求参数对对应云服务组的后端实例进行全量覆盖修改。若未指定修改的云服务器组，则进行全量覆盖。
-
-        :param UpdateBackendInstancesV2Request request
-        :return: UpdateBackendInstancesV2Response
-        """
-
         all_params = ['instance_id', 'vpc_channel_id', 'update_backend_instances_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -20137,26 +18740,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_health_check(self, request):
         """修改VPC通道健康检查
 
         修改VPC通道健康检查。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateHealthCheckRequest request
-        :return: UpdateHealthCheckResponse
+        :param request: Request instance for UpdateHealthCheck
+        :type request: :class:`huaweicloudsdkroma.v2.UpdateHealthCheckRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.UpdateHealthCheckResponse`
         """
         return self.update_health_check_with_http_info(request)
 
     def update_health_check_with_http_info(self, request):
-        """修改VPC通道健康检查
-
-        修改VPC通道健康检查。
-
-        :param UpdateHealthCheckRequest request
-        :return: UpdateHealthCheckResponse
-        """
-
         all_params = ['instance_id', 'vpc_channel_id', 'update_health_check_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -20204,26 +18802,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_member_group(self, request):
         """更新VPC通道后端服务器组
 
         更新指定VPC通道后端服务器组
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateMemberGroupRequest request
-        :return: UpdateMemberGroupResponse
+        :param request: Request instance for UpdateMemberGroup
+        :type request: :class:`huaweicloudsdkroma.v2.UpdateMemberGroupRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.UpdateMemberGroupResponse`
         """
         return self.update_member_group_with_http_info(request)
 
     def update_member_group_with_http_info(self, request):
-        """更新VPC通道后端服务器组
-
-        更新指定VPC通道后端服务器组
-
-        :param UpdateMemberGroupRequest request
-        :return: UpdateMemberGroupResponse
-        """
-
         all_params = ['instance_id', 'vpc_channel_id', 'member_group_id', 'update_member_group_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -20273,26 +18866,25 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_vpc_channel_v2(self, request):
         """更新VPC通道
 
-        更新指定VPC通道的参数  使用传入的后端实例列表对VPC通道进行全量覆盖，若后端实例列表为空，则会全量删除已有的后端实例；  使用传入的后端服务器组列表对VPC通道进行全量覆盖，若后端服务器组列表为空，则会全量删除已有的服务器组；
+        更新指定VPC通道的参数
+        
+        使用传入的后端实例列表对VPC通道进行全量覆盖，若后端实例列表为空，则会全量删除已有的后端实例；
+        
+        使用传入的后端服务器组列表对VPC通道进行全量覆盖，若后端服务器组列表为空，则会全量删除已有的服务器组；
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateVpcChannelV2Request request
-        :return: UpdateVpcChannelV2Response
+        :param request: Request instance for UpdateVpcChannelV2
+        :type request: :class:`huaweicloudsdkroma.v2.UpdateVpcChannelV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.UpdateVpcChannelV2Response`
         """
         return self.update_vpc_channel_v2_with_http_info(request)
 
     def update_vpc_channel_v2_with_http_info(self, request):
-        """更新VPC通道
-
-        更新指定VPC通道的参数  使用传入的后端实例列表对VPC通道进行全量覆盖，若后端实例列表为空，则会全量删除已有的后端实例；  使用传入的后端服务器组列表对VPC通道进行全量覆盖，若后端服务器组列表为空，则会全量删除已有的服务器组；
-
-        :param UpdateVpcChannelV2Request request
-        :return: UpdateVpcChannelV2Response
-        """
-
         all_params = ['instance_id', 'vpc_channel_id', 'update_vpc_channel_v2_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -20340,26 +18932,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_project_vpc_channel(self, request):
         """项目下创建VPC通道
 
         创建相同的VPC通道关联到多个实例。同一个项目下VPC通道名称不可重复。注意：实例特性vpc_name_modifiable配置为off时才可使用。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateProjectVpcChannelRequest request
-        :return: CreateProjectVpcChannelResponse
+        :param request: Request instance for CreateProjectVpcChannel
+        :type request: :class:`huaweicloudsdkroma.v2.CreateProjectVpcChannelRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.CreateProjectVpcChannelResponse`
         """
         return self.create_project_vpc_channel_with_http_info(request)
 
     def create_project_vpc_channel_with_http_info(self, request):
-        """项目下创建VPC通道
-
-        创建相同的VPC通道关联到多个实例。同一个项目下VPC通道名称不可重复。注意：实例特性vpc_name_modifiable配置为off时才可使用。
-
-        :param CreateProjectVpcChannelRequest request
-        :return: CreateProjectVpcChannelResponse
-        """
-
         all_params = ['create_project_vpc_channel_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -20403,26 +18990,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_project_vpc_channel_syncs(self, request):
         """项目下同步VPC通道
 
         同步VPC通道到多个实例。注意：实例特性vpc_name_modifiable配置为off时才可使用。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateProjectVpcChannelSyncsRequest request
-        :return: CreateProjectVpcChannelSyncsResponse
+        :param request: Request instance for CreateProjectVpcChannelSyncs
+        :type request: :class:`huaweicloudsdkroma.v2.CreateProjectVpcChannelSyncsRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.CreateProjectVpcChannelSyncsResponse`
         """
         return self.create_project_vpc_channel_syncs_with_http_info(request)
 
     def create_project_vpc_channel_syncs_with_http_info(self, request):
-        """项目下同步VPC通道
-
-        同步VPC通道到多个实例。注意：实例特性vpc_name_modifiable配置为off时才可使用。
-
-        :param CreateProjectVpcChannelSyncsRequest request
-        :return: CreateProjectVpcChannelSyncsResponse
-        """
-
         all_params = ['create_project_vpc_channel_syncs_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -20466,26 +19048,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_project_vpc_channels_v2(self, request):
         """查询项目下所有实例的VPC通道列表
 
         查询项目下所有实例的VPC通道列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListProjectVpcChannelsV2Request request
-        :return: ListProjectVpcChannelsV2Response
+        :param request: Request instance for ListProjectVpcChannelsV2
+        :type request: :class:`huaweicloudsdkroma.v2.ListProjectVpcChannelsV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListProjectVpcChannelsV2Response`
         """
         return self.list_project_vpc_channels_v2_with_http_info(request)
 
     def list_project_vpc_channels_v2_with_http_info(self, request):
-        """查询项目下所有实例的VPC通道列表
-
-        查询项目下所有实例的VPC通道列表
-
-        :param ListProjectVpcChannelsV2Request request
-        :return: ListProjectVpcChannelsV2Response
-        """
-
         all_params = ['offset', 'limit', 'id', 'name', 'precise_search', 'member_host', 'member_port', 'member_group_name', 'member_group_id', 'members_return']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -20547,26 +19124,21 @@ class RomaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_project_vpc_channel(self, request):
         """项目下批量修改VPC通道
 
         项目下根据VPC通道名称批量修改多个多个实例下的VPC通道。若实例下不存在该VPC通道则创建。注意：实例特性vpc_name_modifiable配置为off时才可使用。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateProjectVpcChannelRequest request
-        :return: UpdateProjectVpcChannelResponse
+        :param request: Request instance for UpdateProjectVpcChannel
+        :type request: :class:`huaweicloudsdkroma.v2.UpdateProjectVpcChannelRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.UpdateProjectVpcChannelResponse`
         """
         return self.update_project_vpc_channel_with_http_info(request)
 
     def update_project_vpc_channel_with_http_info(self, request):
-        """项目下批量修改VPC通道
-
-        项目下根据VPC通道名称批量修改多个多个实例下的VPC通道。若实例下不存在该VPC通道则创建。注意：实例特性vpc_name_modifiable配置为off时才可使用。
-
-        :param UpdateProjectVpcChannelRequest request
-        :return: UpdateProjectVpcChannelResponse
-        """
-
         all_params = ['update_project_vpc_channel_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -20609,7 +19181,6 @@ class RomaClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

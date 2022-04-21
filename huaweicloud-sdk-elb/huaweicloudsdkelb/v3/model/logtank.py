@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Logtank:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class Logtank:
     }
 
     def __init__(self, id=None, project_id=None, loadbalancer_id=None, log_group_id=None, log_topic_id=None):
-        """Logtank - a model defined in huaweicloud sdk"""
+        """Logtank
+
+        The model defined in huaweicloud sdk
+
+        :param id: 云日志ID。
+        :type id: str
+        :param project_id: 项目ID。
+        :type project_id: str
+        :param loadbalancer_id: 负载均衡器ID。
+        :type loadbalancer_id: str
+        :param log_group_id: 云日志分组ID。
+        :type log_group_id: str
+        :param log_topic_id: 云日志主题ID。
+        :type log_topic_id: str
+        """
         
         
 
@@ -73,7 +86,7 @@ class Logtank:
         云日志ID。
 
         :param id: The id of this Logtank.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -95,7 +108,7 @@ class Logtank:
         项目ID。
 
         :param project_id: The project_id of this Logtank.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -117,7 +130,7 @@ class Logtank:
         负载均衡器ID。
 
         :param loadbalancer_id: The loadbalancer_id of this Logtank.
-        :type: str
+        :type loadbalancer_id: str
         """
         self._loadbalancer_id = loadbalancer_id
 
@@ -139,7 +152,7 @@ class Logtank:
         云日志分组ID。
 
         :param log_group_id: The log_group_id of this Logtank.
-        :type: str
+        :type log_group_id: str
         """
         self._log_group_id = log_group_id
 
@@ -161,7 +174,7 @@ class Logtank:
         云日志主题ID。
 
         :param log_topic_id: The log_topic_id of this Logtank.
-        :type: str
+        :type log_topic_id: str
         """
         self._log_topic_id = log_topic_id
 

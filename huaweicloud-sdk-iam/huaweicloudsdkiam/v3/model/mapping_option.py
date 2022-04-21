@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MappingOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class MappingOption:
     }
 
     def __init__(self, rules=None):
-        """MappingOption - a model defined in huaweicloud sdk"""
+        """MappingOption
+
+        The model defined in huaweicloud sdk
+
+        :param rules: 将联邦用户映射为本地用户的规则列表。
+        :type rules: list[:class:`huaweicloudsdkiam.v3.MappingRules`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class MappingOption:
         将联邦用户映射为本地用户的规则列表。
 
         :return: The rules of this MappingOption.
-        :rtype: list[MappingRules]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.MappingRules`]
         """
         return self._rules
 
@@ -57,7 +62,7 @@ class MappingOption:
         将联邦用户映射为本地用户的规则列表。
 
         :param rules: The rules of this MappingOption.
-        :type: list[MappingRules]
+        :type rules: list[:class:`huaweicloudsdkiam.v3.MappingRules`]
         """
         self._rules = rules
 

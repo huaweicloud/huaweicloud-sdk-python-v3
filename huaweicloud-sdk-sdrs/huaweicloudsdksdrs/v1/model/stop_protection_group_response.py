@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StopProtectionGroupResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class StopProtectionGroupResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """StopProtectionGroupResponse - a model defined in huaweicloud sdk"""
+        """StopProtectionGroupResponse
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 成功返回jobId信息
+        :type job_id: str
+        """
         
         super(StopProtectionGroupResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class StopProtectionGroupResponse(SdkResponse):
         成功返回jobId信息
 
         :param job_id: The job_id of this StopProtectionGroupResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 

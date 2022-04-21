@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListShareBandwidthTypesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class ListShareBandwidthTypesRequest:
     }
 
     def __init__(self, fields=None, id=None, bandwidth_type=None, name_en=None, name_zh=None, public_border_group=None, sort_key=None, sort_dir=None, limit=None):
-        """ListShareBandwidthTypesRequest - a model defined in huaweicloud sdk"""
+        """ListShareBandwidthTypesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param fields: 形式为\\\&quot;fields&#x3D;id&amp;fields&#x3D;bandwidth_type&amp;...\\\&quot;，支持字段：id/bandwidth_type/name_en/name_zh/created_at/update_at/public_border_group/description
+        :type fields: str
+        :param id: 支持带宽类型的id
+        :type id: str
+        :param bandwidth_type: 带宽支持类型
+        :type bandwidth_type: str
+        :param name_en: 带宽类型英文表述
+        :type name_en: str
+        :param name_zh: 带宽类型中文表述
+        :type name_zh: str
+        :param public_border_group: 带宽类型所处位置，中心站点or边缘站点
+        :type public_border_group: str
+        :param sort_key: 排序，形式为\&quot;sort_key&#x3D;id&amp;sort_dir&#x3D;asc\&quot;  支持字段：id/bandwidth_type/public_border_group
+        :type sort_key: str
+        :param sort_dir: 排序方向  取值范围：asc、desc
+        :type sort_dir: str
+        :param limit: 每页返回的个数取值范围：0~[2000]，其中2000为局点差异项，具体取值由局点决定
+        :type limit: int
+        """
         
         
 
@@ -98,7 +119,7 @@ class ListShareBandwidthTypesRequest:
         形式为\\\"fields=id&fields=bandwidth_type&...\\\"，支持字段：id/bandwidth_type/name_en/name_zh/created_at/update_at/public_border_group/description
 
         :param fields: The fields of this ListShareBandwidthTypesRequest.
-        :type: str
+        :type fields: str
         """
         self._fields = fields
 
@@ -120,7 +141,7 @@ class ListShareBandwidthTypesRequest:
         支持带宽类型的id
 
         :param id: The id of this ListShareBandwidthTypesRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -142,7 +163,7 @@ class ListShareBandwidthTypesRequest:
         带宽支持类型
 
         :param bandwidth_type: The bandwidth_type of this ListShareBandwidthTypesRequest.
-        :type: str
+        :type bandwidth_type: str
         """
         self._bandwidth_type = bandwidth_type
 
@@ -164,7 +185,7 @@ class ListShareBandwidthTypesRequest:
         带宽类型英文表述
 
         :param name_en: The name_en of this ListShareBandwidthTypesRequest.
-        :type: str
+        :type name_en: str
         """
         self._name_en = name_en
 
@@ -186,7 +207,7 @@ class ListShareBandwidthTypesRequest:
         带宽类型中文表述
 
         :param name_zh: The name_zh of this ListShareBandwidthTypesRequest.
-        :type: str
+        :type name_zh: str
         """
         self._name_zh = name_zh
 
@@ -208,7 +229,7 @@ class ListShareBandwidthTypesRequest:
         带宽类型所处位置，中心站点or边缘站点
 
         :param public_border_group: The public_border_group of this ListShareBandwidthTypesRequest.
-        :type: str
+        :type public_border_group: str
         """
         self._public_border_group = public_border_group
 
@@ -230,7 +251,7 @@ class ListShareBandwidthTypesRequest:
         排序，形式为\"sort_key=id&sort_dir=asc\"  支持字段：id/bandwidth_type/public_border_group
 
         :param sort_key: The sort_key of this ListShareBandwidthTypesRequest.
-        :type: str
+        :type sort_key: str
         """
         self._sort_key = sort_key
 
@@ -252,7 +273,7 @@ class ListShareBandwidthTypesRequest:
         排序方向  取值范围：asc、desc
 
         :param sort_dir: The sort_dir of this ListShareBandwidthTypesRequest.
-        :type: str
+        :type sort_dir: str
         """
         self._sort_dir = sort_dir
 
@@ -274,7 +295,7 @@ class ListShareBandwidthTypesRequest:
         每页返回的个数取值范围：0~[2000]，其中2000为局点差异项，具体取值由局点决定
 
         :param limit: The limit of this ListShareBandwidthTypesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateWholeImageRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class CreateWholeImageRequestBody:
     }
 
     def __init__(self, description=None, enterprise_project_id=None, image_tags=None, instance_id=None, name=None, tags=None, backup_id=None, whole_image_type=None, max_ram=None, min_ram=None, vault_id=None):
-        """CreateWholeImageRequestBody - a model defined in huaweicloud sdk"""
+        """CreateWholeImageRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param description: 镜像描述信息。 支持字母、数字、中文等，不支持回车、&lt;、 &gt;，长度不能超过1024个字符。
+        :type description: str
+        :param enterprise_project_id: 表示当前镜像所属的企业项目。取值为0或无该值，表示属于default企业项目。取值为UUID，表示属于该UUID对应的企业项目。关于企业项目ID的获取及企业项目特性的详细信息，请参考《企业管理用户指南》。
+        :type enterprise_project_id: str
+        :param image_tags: 新规范的镜像标签列表。默认为空。tags和image_tags只能使用一个。
+        :type image_tags: list[:class:`huaweicloudsdkims.v2.TagKeyValue`]
+        :param instance_id: 弹性云服务器ID。使用弹性云服务器制作整机镜像时使用此参数且必填。 如果使用备份创建整机镜像，该参数应换成backup_id。 非必填的原因是需要兼容“使用备份创建整机镜像”和“使用弹性云服务器制作整机镜像”两种场景的body体。
+        :type instance_id: str
+        :param name: 镜像名称。 名称的首尾字母不能为空格。 名称的长度至为1～128位。 名称包含以下4种字符： 大写字母 小写字母 数字 特殊字符包含-、.、_、空格和中文。
+        :type name: str
+        :param tags: 镜像标签列表。tags和image_tags只能使用一个。
+        :type tags: list[str]
+        :param backup_id: 使用云服务器备份创建整机镜像使用此参数且必填。 如果使用ECS创建整机镜像，则该参数应传为instance_id。 非必填的原因是需要兼容“使用备份创建整机镜像”和“使用弹性云服务器制作整机镜像”两种场景的body体。
+        :type backup_id: str
+        :param whole_image_type: 使用备份创建整机镜像时，该字段区分是CBR服务的备份还是CSBS服务的备份，取值为：CBR/CSBS。 使用ECS创建整机镜像时，该字段不填
+        :type whole_image_type: str
+        :param max_ram: 表示镜像支持的最大内存，单位为MB，默认不设置。
+        :type max_ram: int
+        :param min_ram: 表示镜像支持的最小内存，单位为MB，默认为0。
+        :type min_ram: int
+        :param vault_id: 表示云服务器待加入的或已加入的存储库的ID。 使用云服务器创建整机镜像的过程为：先创建一个备份，再将备份创建为整机镜像。如果这个备份为CBR，vault_id为必填项；如果备份为CSBS，vault_id参数可不填。
+        :type vault_id: str
+        """
         
         
 
@@ -107,7 +132,7 @@ class CreateWholeImageRequestBody:
         镜像描述信息。 支持字母、数字、中文等，不支持回车、<、 >，长度不能超过1024个字符。
 
         :param description: The description of this CreateWholeImageRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -129,7 +154,7 @@ class CreateWholeImageRequestBody:
         表示当前镜像所属的企业项目。取值为0或无该值，表示属于default企业项目。取值为UUID，表示属于该UUID对应的企业项目。关于企业项目ID的获取及企业项目特性的详细信息，请参考《企业管理用户指南》。
 
         :param enterprise_project_id: The enterprise_project_id of this CreateWholeImageRequestBody.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -140,7 +165,7 @@ class CreateWholeImageRequestBody:
         新规范的镜像标签列表。默认为空。tags和image_tags只能使用一个。
 
         :return: The image_tags of this CreateWholeImageRequestBody.
-        :rtype: list[TagKeyValue]
+        :rtype: list[:class:`huaweicloudsdkims.v2.TagKeyValue`]
         """
         return self._image_tags
 
@@ -151,7 +176,7 @@ class CreateWholeImageRequestBody:
         新规范的镜像标签列表。默认为空。tags和image_tags只能使用一个。
 
         :param image_tags: The image_tags of this CreateWholeImageRequestBody.
-        :type: list[TagKeyValue]
+        :type image_tags: list[:class:`huaweicloudsdkims.v2.TagKeyValue`]
         """
         self._image_tags = image_tags
 
@@ -173,7 +198,7 @@ class CreateWholeImageRequestBody:
         弹性云服务器ID。使用弹性云服务器制作整机镜像时使用此参数且必填。 如果使用备份创建整机镜像，该参数应换成backup_id。 非必填的原因是需要兼容“使用备份创建整机镜像”和“使用弹性云服务器制作整机镜像”两种场景的body体。
 
         :param instance_id: The instance_id of this CreateWholeImageRequestBody.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -195,7 +220,7 @@ class CreateWholeImageRequestBody:
         镜像名称。 名称的首尾字母不能为空格。 名称的长度至为1～128位。 名称包含以下4种字符： 大写字母 小写字母 数字 特殊字符包含-、.、_、空格和中文。
 
         :param name: The name of this CreateWholeImageRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -217,7 +242,7 @@ class CreateWholeImageRequestBody:
         镜像标签列表。tags和image_tags只能使用一个。
 
         :param tags: The tags of this CreateWholeImageRequestBody.
-        :type: list[str]
+        :type tags: list[str]
         """
         self._tags = tags
 
@@ -239,7 +264,7 @@ class CreateWholeImageRequestBody:
         使用云服务器备份创建整机镜像使用此参数且必填。 如果使用ECS创建整机镜像，则该参数应传为instance_id。 非必填的原因是需要兼容“使用备份创建整机镜像”和“使用弹性云服务器制作整机镜像”两种场景的body体。
 
         :param backup_id: The backup_id of this CreateWholeImageRequestBody.
-        :type: str
+        :type backup_id: str
         """
         self._backup_id = backup_id
 
@@ -261,7 +286,7 @@ class CreateWholeImageRequestBody:
         使用备份创建整机镜像时，该字段区分是CBR服务的备份还是CSBS服务的备份，取值为：CBR/CSBS。 使用ECS创建整机镜像时，该字段不填
 
         :param whole_image_type: The whole_image_type of this CreateWholeImageRequestBody.
-        :type: str
+        :type whole_image_type: str
         """
         self._whole_image_type = whole_image_type
 
@@ -283,7 +308,7 @@ class CreateWholeImageRequestBody:
         表示镜像支持的最大内存，单位为MB，默认不设置。
 
         :param max_ram: The max_ram of this CreateWholeImageRequestBody.
-        :type: int
+        :type max_ram: int
         """
         self._max_ram = max_ram
 
@@ -305,7 +330,7 @@ class CreateWholeImageRequestBody:
         表示镜像支持的最小内存，单位为MB，默认为0。
 
         :param min_ram: The min_ram of this CreateWholeImageRequestBody.
-        :type: int
+        :type min_ram: int
         """
         self._min_ram = min_ram
 
@@ -327,7 +352,7 @@ class CreateWholeImageRequestBody:
         表示云服务器待加入的或已加入的存储库的ID。 使用云服务器创建整机镜像的过程为：先创建一个备份，再将备份创建为整机镜像。如果这个备份为CBR，vault_id为必填项；如果备份为CSBS，vault_id参数可不填。
 
         :param vault_id: The vault_id of this CreateWholeImageRequestBody.
-        :type: str
+        :type vault_id: str
         """
         self._vault_id = vault_id
 

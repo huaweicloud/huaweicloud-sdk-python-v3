@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Configs:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class Configs:
     }
 
     def __init__(self, inputs=None, name=None, id=None, type=None):
-        """Configs - a model defined in huaweicloud sdk"""
+        """Configs
+
+        The model defined in huaweicloud sdk
+
+        :param inputs: 输入参数列表，列表中的每个参数为“name,value”结构，请参考inputs数据结构参数说明。在“from-config-values”数据结构中，不同的源连接类型有不同的“inputs”参数列表，请参见源端作业参数说明下的章节。在“to-cofig-values”数据结构中，不同的目的连接类型有不同的“inputs”参数列表，请参见目的端作业参数说明下面的子章节。在“driver-config-values”数据结构中，“inputs”具体参数请参见作业任务参数说明。
+        :type inputs: list[:class:`huaweicloudsdkcdm.v1.Input`]
+        :param name: 配置名称：源端作业的配置名称为“fromJobConfig”。目的端作业的配置名称为“toJobConfig”,连接的配置名称固定为“linkConfig”。
+        :type name: str
+        :param id: 配置ID
+        :type id: int
+        :param type: 配置类型
+        :type type: str
+        """
         
         
 
@@ -58,7 +69,7 @@ class Configs:
         输入参数列表，列表中的每个参数为“name,value”结构，请参考inputs数据结构参数说明。在“from-config-values”数据结构中，不同的源连接类型有不同的“inputs”参数列表，请参见源端作业参数说明下的章节。在“to-cofig-values”数据结构中，不同的目的连接类型有不同的“inputs”参数列表，请参见目的端作业参数说明下面的子章节。在“driver-config-values”数据结构中，“inputs”具体参数请参见作业任务参数说明。
 
         :return: The inputs of this Configs.
-        :rtype: list[Input]
+        :rtype: list[:class:`huaweicloudsdkcdm.v1.Input`]
         """
         return self._inputs
 
@@ -69,7 +80,7 @@ class Configs:
         输入参数列表，列表中的每个参数为“name,value”结构，请参考inputs数据结构参数说明。在“from-config-values”数据结构中，不同的源连接类型有不同的“inputs”参数列表，请参见源端作业参数说明下的章节。在“to-cofig-values”数据结构中，不同的目的连接类型有不同的“inputs”参数列表，请参见目的端作业参数说明下面的子章节。在“driver-config-values”数据结构中，“inputs”具体参数请参见作业任务参数说明。
 
         :param inputs: The inputs of this Configs.
-        :type: list[Input]
+        :type inputs: list[:class:`huaweicloudsdkcdm.v1.Input`]
         """
         self._inputs = inputs
 
@@ -91,7 +102,7 @@ class Configs:
         配置名称：源端作业的配置名称为“fromJobConfig”。目的端作业的配置名称为“toJobConfig”,连接的配置名称固定为“linkConfig”。
 
         :param name: The name of this Configs.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -113,7 +124,7 @@ class Configs:
         配置ID
 
         :param id: The id of this Configs.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -135,7 +146,7 @@ class Configs:
         配置类型
 
         :param type: The type of this Configs.
-        :type: str
+        :type type: str
         """
         self._type = type
 

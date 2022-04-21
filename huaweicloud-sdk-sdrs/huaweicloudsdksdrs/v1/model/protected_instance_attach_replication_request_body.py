@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ProtectedInstanceAttachReplicationRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ProtectedInstanceAttachReplicationRequestBody:
     }
 
     def __init__(self, replication_attachment=None):
-        """ProtectedInstanceAttachReplicationRequestBody - a model defined in huaweicloud sdk"""
+        """ProtectedInstanceAttachReplicationRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param replication_attachment: 
+        :type replication_attachment: :class:`huaweicloudsdksdrs.v1.ProtectedInstanceAttachReplicationRequestParams`
+        """
         
         
 
@@ -45,7 +50,7 @@ class ProtectedInstanceAttachReplicationRequestBody:
 
 
         :return: The replication_attachment of this ProtectedInstanceAttachReplicationRequestBody.
-        :rtype: ProtectedInstanceAttachReplicationRequestParams
+        :rtype: :class:`huaweicloudsdksdrs.v1.ProtectedInstanceAttachReplicationRequestParams`
         """
         return self._replication_attachment
 
@@ -55,7 +60,7 @@ class ProtectedInstanceAttachReplicationRequestBody:
 
 
         :param replication_attachment: The replication_attachment of this ProtectedInstanceAttachReplicationRequestBody.
-        :type: ProtectedInstanceAttachReplicationRequestParams
+        :type replication_attachment: :class:`huaweicloudsdksdrs.v1.ProtectedInstanceAttachReplicationRequestParams`
         """
         self._replication_attachment = replication_attachment
 

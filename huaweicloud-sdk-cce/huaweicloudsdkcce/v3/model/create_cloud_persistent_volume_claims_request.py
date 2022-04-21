@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateCloudPersistentVolumeClaimsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateCloudPersistentVolumeClaimsRequest:
     }
 
     def __init__(self, namespace=None, x_cluster_id=None, body=None):
-        """CreateCloudPersistentVolumeClaimsRequest - a model defined in huaweicloud sdk"""
+        """CreateCloudPersistentVolumeClaimsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param namespace: Namespace是对一组资源和对象的抽象集合，用来将系统内部的对象划分为不同的项目组或用户组。以小写字母开头，由小写字母、数字、中划线（-）组成，且不能以中划线（-）结尾。  使用namespace有如下约束：  - 用户自定义的namespace，使用前必须先[创建Namespace](cce_02_0050.xml)  - 系统自带的namespace：default  - 不能使用kube-system与kube-public 
+        :type namespace: str
+        :param x_cluster_id: 集群ID，使用**https://Endpoint/uri**这种URL格式时必须指定此参数。获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。 
+        :type x_cluster_id: str
+        :param body: Body of the CreateCloudPersistentVolumeClaimsRequest
+        :type body: :class:`huaweicloudsdkcce.v3.PersistentVolumeClaim`
+        """
         
         
 
@@ -67,7 +76,7 @@ class CreateCloudPersistentVolumeClaimsRequest:
         Namespace是对一组资源和对象的抽象集合，用来将系统内部的对象划分为不同的项目组或用户组。以小写字母开头，由小写字母、数字、中划线（-）组成，且不能以中划线（-）结尾。  使用namespace有如下约束：  - 用户自定义的namespace，使用前必须先[创建Namespace](cce_02_0050.xml)  - 系统自带的namespace：default  - 不能使用kube-system与kube-public 
 
         :param namespace: The namespace of this CreateCloudPersistentVolumeClaimsRequest.
-        :type: str
+        :type namespace: str
         """
         self._namespace = namespace
 
@@ -89,7 +98,7 @@ class CreateCloudPersistentVolumeClaimsRequest:
         集群ID，使用**https://Endpoint/uri**这种URL格式时必须指定此参数。获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。 
 
         :param x_cluster_id: The x_cluster_id of this CreateCloudPersistentVolumeClaimsRequest.
-        :type: str
+        :type x_cluster_id: str
         """
         self._x_cluster_id = x_cluster_id
 
@@ -99,7 +108,7 @@ class CreateCloudPersistentVolumeClaimsRequest:
 
 
         :return: The body of this CreateCloudPersistentVolumeClaimsRequest.
-        :rtype: PersistentVolumeClaim
+        :rtype: :class:`huaweicloudsdkcce.v3.PersistentVolumeClaim`
         """
         return self._body
 
@@ -109,7 +118,7 @@ class CreateCloudPersistentVolumeClaimsRequest:
 
 
         :param body: The body of this CreateCloudPersistentVolumeClaimsRequest.
-        :type: PersistentVolumeClaim
+        :type body: :class:`huaweicloudsdkcce.v3.PersistentVolumeClaim`
         """
         self._body = body
 

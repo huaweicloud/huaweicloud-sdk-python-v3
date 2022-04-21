@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ValueListResponseBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ValueListResponseBody:
     }
 
     def __init__(self, id=None, name=None, type=None, description=None, timestamp=None, values=None):
-        """ValueListResponseBody - a model defined in huaweicloud sdk"""
+        """ValueListResponseBody
+
+        The model defined in huaweicloud sdk
+
+        :param id: 引用表id
+        :type id: str
+        :param name: 引用表名称
+        :type name: str
+        :param type: 引用表类型
+        :type type: str
+        :param description: 引用表描述
+        :type description: str
+        :param timestamp: 引用表时间戳
+        :type timestamp: int
+        :param values: 引用表的值
+        :type values: list[str]
+        """
         
         
 
@@ -83,7 +98,7 @@ class ValueListResponseBody:
         引用表id
 
         :param id: The id of this ValueListResponseBody.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -105,7 +120,7 @@ class ValueListResponseBody:
         引用表名称
 
         :param name: The name of this ValueListResponseBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -127,7 +142,7 @@ class ValueListResponseBody:
         引用表类型
 
         :param type: The type of this ValueListResponseBody.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -149,7 +164,7 @@ class ValueListResponseBody:
         引用表描述
 
         :param description: The description of this ValueListResponseBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -171,7 +186,7 @@ class ValueListResponseBody:
         引用表时间戳
 
         :param timestamp: The timestamp of this ValueListResponseBody.
-        :type: int
+        :type timestamp: int
         """
         self._timestamp = timestamp
 
@@ -193,7 +208,7 @@ class ValueListResponseBody:
         引用表的值
 
         :param values: The values of this ValueListResponseBody.
-        :type: list[str]
+        :type values: list[str]
         """
         self._values = values
 

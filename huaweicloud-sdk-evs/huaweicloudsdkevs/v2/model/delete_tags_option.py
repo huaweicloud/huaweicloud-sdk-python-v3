@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteTagsOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteTagsOption:
     }
 
     def __init__(self, key=None):
-        """DeleteTagsOption - a model defined in huaweicloud sdk"""
+        """DeleteTagsOption
+
+        The model defined in huaweicloud sdk
+
+        :param key: 标签键。
+        :type key: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteTagsOption:
         标签键。
 
         :param key: The key of this DeleteTagsOption.
-        :type: str
+        :type key: str
         """
         self._key = key
 

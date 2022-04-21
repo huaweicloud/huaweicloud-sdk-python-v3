@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SubAudioFile:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class SubAudioFile:
     }
 
     def __init__(self, tracks_info=None, input=None, output=None, output_filename=None):
-        """SubAudioFile - a model defined in huaweicloud sdk"""
+        """SubAudioFile
+
+        The model defined in huaweicloud sdk
+
+        :param tracks_info: 音轨信息
+        :type tracks_info: list[:class:`huaweicloudsdkmpc.v1.TracksInfo`]
+        :param input: 
+        :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        :param output: 
+        :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        :param output_filename: 输出文件名。 
+        :type output_filename: str
+        """
         
         
 
@@ -62,7 +73,7 @@ class SubAudioFile:
         音轨信息
 
         :return: The tracks_info of this SubAudioFile.
-        :rtype: list[TracksInfo]
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.TracksInfo`]
         """
         return self._tracks_info
 
@@ -73,7 +84,7 @@ class SubAudioFile:
         音轨信息
 
         :param tracks_info: The tracks_info of this SubAudioFile.
-        :type: list[TracksInfo]
+        :type tracks_info: list[:class:`huaweicloudsdkmpc.v1.TracksInfo`]
         """
         self._tracks_info = tracks_info
 
@@ -83,7 +94,7 @@ class SubAudioFile:
 
 
         :return: The input of this SubAudioFile.
-        :rtype: ObsObjInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         return self._input
 
@@ -93,7 +104,7 @@ class SubAudioFile:
 
 
         :param input: The input of this SubAudioFile.
-        :type: ObsObjInfo
+        :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         self._input = input
 
@@ -103,7 +114,7 @@ class SubAudioFile:
 
 
         :return: The output of this SubAudioFile.
-        :rtype: ObsObjInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         return self._output
 
@@ -113,7 +124,7 @@ class SubAudioFile:
 
 
         :param output: The output of this SubAudioFile.
-        :type: ObsObjInfo
+        :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         self._output = output
 
@@ -135,7 +146,7 @@ class SubAudioFile:
         输出文件名。 
 
         :param output_filename: The output_filename of this SubAudioFile.
-        :type: str
+        :type output_filename: str
         """
         self._output_filename = output_filename
 

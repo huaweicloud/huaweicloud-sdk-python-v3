@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPostgresqlDbUserPaginatedRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListPostgresqlDbUserPaginatedRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, page=None, limit=None):
-        """ListPostgresqlDbUserPaginatedRequest - a model defined in huaweicloud sdk"""
+        """ListPostgresqlDbUserPaginatedRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言
+        :type x_language: str
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param page: 分页页码，从1开始。
+        :type page: int
+        :param limit: 每页数据条数。取值范围[1, 100]。
+        :type limit: int
+        """
         
         
 
@@ -70,7 +81,7 @@ class ListPostgresqlDbUserPaginatedRequest:
         语言
 
         :param x_language: The x_language of this ListPostgresqlDbUserPaginatedRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -92,7 +103,7 @@ class ListPostgresqlDbUserPaginatedRequest:
         实例ID。
 
         :param instance_id: The instance_id of this ListPostgresqlDbUserPaginatedRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -114,7 +125,7 @@ class ListPostgresqlDbUserPaginatedRequest:
         分页页码，从1开始。
 
         :param page: The page of this ListPostgresqlDbUserPaginatedRequest.
-        :type: int
+        :type page: int
         """
         self._page = page
 
@@ -136,7 +147,7 @@ class ListPostgresqlDbUserPaginatedRequest:
         每页数据条数。取值范围[1, 100]。
 
         :param limit: The limit of this ListPostgresqlDbUserPaginatedRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

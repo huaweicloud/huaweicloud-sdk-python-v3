@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UploadProcessJsonDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UploadProcessJsonDetail:
     }
 
     def __init__(self, id=None, name=None, status=None, cause=None):
-        """UploadProcessJsonDetail - a model defined in huaweicloud sdk"""
+        """UploadProcessJsonDetail
+
+        The model defined in huaweicloud sdk
+
+        :param id: id
+        :type id: int
+        :param name: name
+        :type name: str
+        :param status: status
+        :type status: int
+        :param cause: cause
+        :type cause: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class UploadProcessJsonDetail:
         id
 
         :param id: The id of this UploadProcessJsonDetail.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -95,7 +106,7 @@ class UploadProcessJsonDetail:
         name
 
         :param name: The name of this UploadProcessJsonDetail.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -117,7 +128,7 @@ class UploadProcessJsonDetail:
         status
 
         :param status: The status of this UploadProcessJsonDetail.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -139,7 +150,7 @@ class UploadProcessJsonDetail:
         cause
 
         :param cause: The cause of this UploadProcessJsonDetail.
-        :type: str
+        :type cause: str
         """
         self._cause = cause
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NovaCreateKeypairRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class NovaCreateKeypairRequest:
     }
 
     def __init__(self, open_stack_api_version=None, body=None):
-        """NovaCreateKeypairRequest - a model defined in huaweicloud sdk"""
+        """NovaCreateKeypairRequest
+
+        The model defined in huaweicloud sdk
+
+        :param open_stack_api_version: 微版本头
+        :type open_stack_api_version: str
+        :param body: Body of the NovaCreateKeypairRequest
+        :type body: :class:`huaweicloudsdkecs.v2.NovaCreateKeypairRequestBody`
+        """
         
         
 
@@ -63,7 +70,7 @@ class NovaCreateKeypairRequest:
         微版本头
 
         :param open_stack_api_version: The open_stack_api_version of this NovaCreateKeypairRequest.
-        :type: str
+        :type open_stack_api_version: str
         """
         self._open_stack_api_version = open_stack_api_version
 
@@ -73,7 +80,7 @@ class NovaCreateKeypairRequest:
 
 
         :return: The body of this NovaCreateKeypairRequest.
-        :rtype: NovaCreateKeypairRequestBody
+        :rtype: :class:`huaweicloudsdkecs.v2.NovaCreateKeypairRequestBody`
         """
         return self._body
 
@@ -83,7 +90,7 @@ class NovaCreateKeypairRequest:
 
 
         :param body: The body of this NovaCreateKeypairRequest.
-        :type: NovaCreateKeypairRequestBody
+        :type body: :class:`huaweicloudsdkecs.v2.NovaCreateKeypairRequestBody`
         """
         self._body = body
 

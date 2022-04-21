@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SampleParam:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class SampleParam:
     }
 
     def __init__(self, divide_type=None, train_rate=None, test_rate=None):
-        """SampleParam - a model defined in huaweicloud sdk"""
+        """SampleParam
+
+        The model defined in huaweicloud sdk
+
+        :param divide_type: 训练集测试集划分方式： - TIME，时间比例 - RAMDOM，个数比例
+        :type divide_type: str
+        :param train_rate: 训练数据占比。
+        :type train_rate: float
+        :param test_rate: 测试数据占比。
+        :type test_rate: float
+        """
         
         
 
@@ -67,7 +76,7 @@ class SampleParam:
         训练集测试集划分方式： - TIME，时间比例 - RAMDOM，个数比例
 
         :param divide_type: The divide_type of this SampleParam.
-        :type: str
+        :type divide_type: str
         """
         self._divide_type = divide_type
 
@@ -89,7 +98,7 @@ class SampleParam:
         训练数据占比。
 
         :param train_rate: The train_rate of this SampleParam.
-        :type: float
+        :type train_rate: float
         """
         self._train_rate = train_rate
 
@@ -111,7 +120,7 @@ class SampleParam:
         测试数据占比。
 
         :param test_rate: The test_rate of this SampleParam.
-        :type: float
+        :type test_rate: float
         """
         self._test_rate = test_rate
 

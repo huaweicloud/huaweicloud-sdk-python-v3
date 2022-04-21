@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ScopeTokenResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ScopeTokenResult:
     }
 
     def __init__(self, methods=None, expires_at=None, catalog=None, domain=None, project=None, roles=None, user=None, issued_at=None):
-        """ScopeTokenResult - a model defined in huaweicloud sdk"""
+        """ScopeTokenResult
+
+        The model defined in huaweicloud sdk
+
+        :param methods: 获取token的方式。
+        :type methods: list[str]
+        :param expires_at: token过期时间。
+        :type expires_at: str
+        :param catalog: 服务目录信息。
+        :type catalog: list[:class:`huaweicloudsdkiam.v3.TokenCatalog`]
+        :param domain: 
+        :type domain: :class:`huaweicloudsdkiam.v3.TokenDomainResult`
+        :param project: 
+        :type project: :class:`huaweicloudsdkiam.v3.TokenProjectResult`
+        :param roles: token的权限信息。
+        :type roles: list[:class:`huaweicloudsdkiam.v3.TokenRole`]
+        :param user: 
+        :type user: :class:`huaweicloudsdkiam.v3.ScopedTokenUser`
+        :param issued_at: token下发时间。
+        :type issued_at: str
+        """
         
         
 
@@ -86,7 +105,7 @@ class ScopeTokenResult:
         获取token的方式。
 
         :param methods: The methods of this ScopeTokenResult.
-        :type: list[str]
+        :type methods: list[str]
         """
         self._methods = methods
 
@@ -108,7 +127,7 @@ class ScopeTokenResult:
         token过期时间。
 
         :param expires_at: The expires_at of this ScopeTokenResult.
-        :type: str
+        :type expires_at: str
         """
         self._expires_at = expires_at
 
@@ -119,7 +138,7 @@ class ScopeTokenResult:
         服务目录信息。
 
         :return: The catalog of this ScopeTokenResult.
-        :rtype: list[TokenCatalog]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.TokenCatalog`]
         """
         return self._catalog
 
@@ -130,7 +149,7 @@ class ScopeTokenResult:
         服务目录信息。
 
         :param catalog: The catalog of this ScopeTokenResult.
-        :type: list[TokenCatalog]
+        :type catalog: list[:class:`huaweicloudsdkiam.v3.TokenCatalog`]
         """
         self._catalog = catalog
 
@@ -140,7 +159,7 @@ class ScopeTokenResult:
 
 
         :return: The domain of this ScopeTokenResult.
-        :rtype: TokenDomainResult
+        :rtype: :class:`huaweicloudsdkiam.v3.TokenDomainResult`
         """
         return self._domain
 
@@ -150,7 +169,7 @@ class ScopeTokenResult:
 
 
         :param domain: The domain of this ScopeTokenResult.
-        :type: TokenDomainResult
+        :type domain: :class:`huaweicloudsdkiam.v3.TokenDomainResult`
         """
         self._domain = domain
 
@@ -160,7 +179,7 @@ class ScopeTokenResult:
 
 
         :return: The project of this ScopeTokenResult.
-        :rtype: TokenProjectResult
+        :rtype: :class:`huaweicloudsdkiam.v3.TokenProjectResult`
         """
         return self._project
 
@@ -170,7 +189,7 @@ class ScopeTokenResult:
 
 
         :param project: The project of this ScopeTokenResult.
-        :type: TokenProjectResult
+        :type project: :class:`huaweicloudsdkiam.v3.TokenProjectResult`
         """
         self._project = project
 
@@ -181,7 +200,7 @@ class ScopeTokenResult:
         token的权限信息。
 
         :return: The roles of this ScopeTokenResult.
-        :rtype: list[TokenRole]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.TokenRole`]
         """
         return self._roles
 
@@ -192,7 +211,7 @@ class ScopeTokenResult:
         token的权限信息。
 
         :param roles: The roles of this ScopeTokenResult.
-        :type: list[TokenRole]
+        :type roles: list[:class:`huaweicloudsdkiam.v3.TokenRole`]
         """
         self._roles = roles
 
@@ -202,7 +221,7 @@ class ScopeTokenResult:
 
 
         :return: The user of this ScopeTokenResult.
-        :rtype: ScopedTokenUser
+        :rtype: :class:`huaweicloudsdkiam.v3.ScopedTokenUser`
         """
         return self._user
 
@@ -212,7 +231,7 @@ class ScopeTokenResult:
 
 
         :param user: The user of this ScopeTokenResult.
-        :type: ScopedTokenUser
+        :type user: :class:`huaweicloudsdkiam.v3.ScopedTokenUser`
         """
         self._user = user
 
@@ -234,7 +253,7 @@ class ScopeTokenResult:
         token下发时间。
 
         :param issued_at: The issued_at of this ScopeTokenResult.
-        :type: str
+        :type issued_at: str
         """
         self._issued_at = issued_at
 

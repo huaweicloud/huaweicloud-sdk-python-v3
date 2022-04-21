@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Permission:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class Permission:
     }
 
     def __init__(self, id=None, permission=None, created_at=None):
-        """Permission - a model defined in huaweicloud sdk"""
+        """Permission
+
+        The model defined in huaweicloud sdk
+
+        :param id: permission的ID，唯一标识。
+        :type id: str
+        :param permission: permission列表。 权限格式为“iam:domain:: 6e9dfd51d1124e8d8498dce894923a0d”或 “*”，“*”表示所有用户的终端节点可连接。 其中6e9dfd51d1124e8d8498dce894923a0d为 可连接的用户domian_id。
+        :type permission: str
+        :param created_at: 白名单的添加时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH: MM:SSZ
+        :type created_at: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class Permission:
         permission的ID，唯一标识。
 
         :param id: The id of this Permission.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -90,7 +99,7 @@ class Permission:
         permission列表。 权限格式为“iam:domain:: 6e9dfd51d1124e8d8498dce894923a0d”或 “*”，“*”表示所有用户的终端节点可连接。 其中6e9dfd51d1124e8d8498dce894923a0d为 可连接的用户domian_id。
 
         :param permission: The permission of this Permission.
-        :type: str
+        :type permission: str
         """
         self._permission = permission
 
@@ -112,7 +121,7 @@ class Permission:
         白名单的添加时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH: MM:SSZ
 
         :param created_at: The created_at of this Permission.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 

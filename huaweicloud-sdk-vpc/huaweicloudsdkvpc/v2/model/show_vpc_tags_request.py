@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowVpcTagsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowVpcTagsRequest:
     }
 
     def __init__(self, vpc_id=None):
-        """ShowVpcTagsRequest - a model defined in huaweicloud sdk"""
+        """ShowVpcTagsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param vpc_id: 功能说明：虚拟私有云唯一标识 取值范围：合法UUID 约束：ID对应的VPC必须存在
+        :type vpc_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowVpcTagsRequest:
         功能说明：虚拟私有云唯一标识 取值范围：合法UUID 约束：ID对应的VPC必须存在
 
         :param vpc_id: The vpc_id of this ShowVpcTagsRequest.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 

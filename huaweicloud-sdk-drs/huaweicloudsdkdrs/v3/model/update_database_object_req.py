@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDatabaseObjectReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UpdateDatabaseObjectReq:
     }
 
     def __init__(self, job_id=None, selected=None, sync_database=None, job=None):
-        """UpdateDatabaseObjectReq - a model defined in huaweicloud sdk"""
+        """UpdateDatabaseObjectReq
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 任务ID
+        :type job_id: str
+        :param selected: 是否进行对象选择，是：自定义迁移对象，否：全部迁移，不填默认为否。
+        :type selected: bool
+        :param sync_database: 是否库级同步
+        :type sync_database: bool
+        :param job: 数据对象选择信息，selected为true时必填。
+        :type job: list[:class:`huaweicloudsdkdrs.v3.DatabaseInfo`]
+        """
         
         
 
@@ -72,7 +83,7 @@ class UpdateDatabaseObjectReq:
         任务ID
 
         :param job_id: The job_id of this UpdateDatabaseObjectReq.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -94,7 +105,7 @@ class UpdateDatabaseObjectReq:
         是否进行对象选择，是：自定义迁移对象，否：全部迁移，不填默认为否。
 
         :param selected: The selected of this UpdateDatabaseObjectReq.
-        :type: bool
+        :type selected: bool
         """
         self._selected = selected
 
@@ -116,7 +127,7 @@ class UpdateDatabaseObjectReq:
         是否库级同步
 
         :param sync_database: The sync_database of this UpdateDatabaseObjectReq.
-        :type: bool
+        :type sync_database: bool
         """
         self._sync_database = sync_database
 
@@ -127,7 +138,7 @@ class UpdateDatabaseObjectReq:
         数据对象选择信息，selected为true时必填。
 
         :return: The job of this UpdateDatabaseObjectReq.
-        :rtype: list[DatabaseInfo]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.DatabaseInfo`]
         """
         return self._job
 
@@ -138,7 +149,7 @@ class UpdateDatabaseObjectReq:
         数据对象选择信息，selected为true时必填。
 
         :param job: The job of this UpdateDatabaseObjectReq.
-        :type: list[DatabaseInfo]
+        :type job: list[:class:`huaweicloudsdkdrs.v3.DatabaseInfo`]
         """
         self._job = job
 

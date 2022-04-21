@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListMediaProcessTaskResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListMediaProcessTaskResponse(SdkResponse):
     }
 
     def __init__(self, task_array=None, is_truncated=None, total=None):
-        """ListMediaProcessTaskResponse - a model defined in huaweicloud sdk"""
+        """ListMediaProcessTaskResponse
+
+        The model defined in huaweicloud sdk
+
+        :param task_array: 任务列表
+        :type task_array: list[:class:`huaweicloudsdkmpc.v1.MediaProcessTaskInfo`]
+        :param is_truncated: 是否截断
+        :type is_truncated: int
+        :param total: 任务总数
+        :type total: int
+        """
         
         super(ListMediaProcessTaskResponse, self).__init__()
 
@@ -57,7 +66,7 @@ class ListMediaProcessTaskResponse(SdkResponse):
         任务列表
 
         :return: The task_array of this ListMediaProcessTaskResponse.
-        :rtype: list[MediaProcessTaskInfo]
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.MediaProcessTaskInfo`]
         """
         return self._task_array
 
@@ -68,7 +77,7 @@ class ListMediaProcessTaskResponse(SdkResponse):
         任务列表
 
         :param task_array: The task_array of this ListMediaProcessTaskResponse.
-        :type: list[MediaProcessTaskInfo]
+        :type task_array: list[:class:`huaweicloudsdkmpc.v1.MediaProcessTaskInfo`]
         """
         self._task_array = task_array
 
@@ -90,7 +99,7 @@ class ListMediaProcessTaskResponse(SdkResponse):
         是否截断
 
         :param is_truncated: The is_truncated of this ListMediaProcessTaskResponse.
-        :type: int
+        :type is_truncated: int
         """
         self._is_truncated = is_truncated
 
@@ -112,7 +121,7 @@ class ListMediaProcessTaskResponse(SdkResponse):
         任务总数
 
         :param total: The total of this ListMediaProcessTaskResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 

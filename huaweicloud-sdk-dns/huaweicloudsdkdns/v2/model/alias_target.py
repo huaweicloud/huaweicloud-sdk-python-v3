@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AliasTarget:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AliasTarget:
     }
 
     def __init__(self, resource_type=None, resource_domain_name=None):
-        """AliasTarget - a model defined in huaweicloud sdk"""
+        """AliasTarget
+
+        The model defined in huaweicloud sdk
+
+        :param resource_type: 资源服务类型，支持别名记录的服务。取值：  cloudsite：云速建站 waf：Web应用防火墙
+        :type resource_type: str
+        :param resource_domain_name: 对应服务下的域名，由各服务提供。
+        :type resource_domain_name: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class AliasTarget:
         资源服务类型，支持别名记录的服务。取值：  cloudsite：云速建站 waf：Web应用防火墙
 
         :param resource_type: The resource_type of this AliasTarget.
-        :type: str
+        :type resource_type: str
         """
         self._resource_type = resource_type
 
@@ -85,7 +92,7 @@ class AliasTarget:
         对应服务下的域名，由各服务提供。
 
         :param resource_domain_name: The resource_domain_name of this AliasTarget.
-        :type: str
+        :type resource_domain_name: str
         """
         self._resource_domain_name = resource_domain_name
 

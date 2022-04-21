@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDetailsOfGatewayResponseV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowDetailsOfGatewayResponseV2Request:
     }
 
     def __init__(self, instance_id=None, group_id=None, response_id=None):
-        """ShowDetailsOfGatewayResponseV2Request - a model defined in huaweicloud sdk"""
+        """ShowDetailsOfGatewayResponseV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param group_id: 分组的编号
+        :type group_id: str
+        :param response_id: 响应编号
+        :type response_id: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class ShowDetailsOfGatewayResponseV2Request:
         实例ID
 
         :param instance_id: The instance_id of this ShowDetailsOfGatewayResponseV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -87,7 +96,7 @@ class ShowDetailsOfGatewayResponseV2Request:
         分组的编号
 
         :param group_id: The group_id of this ShowDetailsOfGatewayResponseV2Request.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -109,7 +118,7 @@ class ShowDetailsOfGatewayResponseV2Request:
         响应编号
 
         :param response_id: The response_id of this ShowDetailsOfGatewayResponseV2Request.
-        :type: str
+        :type response_id: str
         """
         self._response_id = response_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SendVerificationCodeV2Req:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class SendVerificationCodeV2Req:
     }
 
     def __init__(self, receiver_type=None, timeout=None, mobile_phone=None, lang=None, scene=None, customer_id=None):
-        """SendVerificationCodeV2Req - a model defined in huaweicloud sdk"""
+        """SendVerificationCodeV2Req
+
+        The model defined in huaweicloud sdk
+
+        :param receiver_type: 发送验证码的类型： 1：发送短信验证码
+        :type receiver_type: int
+        :param timeout: 发送验证码的超时时间。 如果不填的话，采用系统默认超时时间5分钟。 单位：分钟
+        :type timeout: int
+        :param mobile_phone: 指定发送验证码的手机号。 目前系统只支持中国手机号。 示例：13XXXXXXXXX
+        :type mobile_phone: str
+        :param lang: 根据该参数的取值选择发送短信验证码的语言。 zh-cn：中文en-us：英文
+        :type lang: str
+        :param scene: 验证码使用的场景，目前支持如下场景： 29：注册场景18：个人银行卡实名认证场景 不填写默认为29。
+        :type scene: int
+        :param customer_id: 客户账号ID。您可以调用查询客户列表接口获取customer_id。 如果scene&#x3D;18的时候必填。
+        :type customer_id: str
+        """
         
         
 
@@ -82,7 +97,7 @@ class SendVerificationCodeV2Req:
         发送验证码的类型： 1：发送短信验证码
 
         :param receiver_type: The receiver_type of this SendVerificationCodeV2Req.
-        :type: int
+        :type receiver_type: int
         """
         self._receiver_type = receiver_type
 
@@ -104,7 +119,7 @@ class SendVerificationCodeV2Req:
         发送验证码的超时时间。 如果不填的话，采用系统默认超时时间5分钟。 单位：分钟
 
         :param timeout: The timeout of this SendVerificationCodeV2Req.
-        :type: int
+        :type timeout: int
         """
         self._timeout = timeout
 
@@ -126,7 +141,7 @@ class SendVerificationCodeV2Req:
         指定发送验证码的手机号。 目前系统只支持中国手机号。 示例：13XXXXXXXXX
 
         :param mobile_phone: The mobile_phone of this SendVerificationCodeV2Req.
-        :type: str
+        :type mobile_phone: str
         """
         self._mobile_phone = mobile_phone
 
@@ -148,7 +163,7 @@ class SendVerificationCodeV2Req:
         根据该参数的取值选择发送短信验证码的语言。 zh-cn：中文en-us：英文
 
         :param lang: The lang of this SendVerificationCodeV2Req.
-        :type: str
+        :type lang: str
         """
         self._lang = lang
 
@@ -170,7 +185,7 @@ class SendVerificationCodeV2Req:
         验证码使用的场景，目前支持如下场景： 29：注册场景18：个人银行卡实名认证场景 不填写默认为29。
 
         :param scene: The scene of this SendVerificationCodeV2Req.
-        :type: int
+        :type scene: int
         """
         self._scene = scene
 
@@ -192,7 +207,7 @@ class SendVerificationCodeV2Req:
         客户账号ID。您可以调用查询客户列表接口获取customer_id。 如果scene=18的时候必填。
 
         :param customer_id: The customer_id of this SendVerificationCodeV2Req.
-        :type: str
+        :type customer_id: str
         """
         self._customer_id = customer_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestoreSecretRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RestoreSecretRequest:
     }
 
     def __init__(self, secret_name=None):
-        """RestoreSecretRequest - a model defined in huaweicloud sdk"""
+        """RestoreSecretRequest
+
+        The model defined in huaweicloud sdk
+
+        :param secret_name: 凭据名称。
+        :type secret_name: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class RestoreSecretRequest:
         凭据名称。
 
         :param secret_name: The secret_name of this RestoreSecretRequest.
-        :type: str
+        :type secret_name: str
         """
         self._secret_name = secret_name
 

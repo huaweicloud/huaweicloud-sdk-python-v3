@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowMemberDetailRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowMemberDetailRequest:
     }
 
     def __init__(self, backup_id=None, member_id=None):
-        """ShowMemberDetailRequest - a model defined in huaweicloud sdk"""
+        """ShowMemberDetailRequest
+
+        The model defined in huaweicloud sdk
+
+        :param backup_id: 备份副本id
+        :type backup_id: str
+        :param member_id: 成员id，为接收方的project_id
+        :type member_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ShowMemberDetailRequest:
         备份副本id
 
         :param backup_id: The backup_id of this ShowMemberDetailRequest.
-        :type: str
+        :type backup_id: str
         """
         self._backup_id = backup_id
 
@@ -83,7 +90,7 @@ class ShowMemberDetailRequest:
         成员id，为接收方的project_id
 
         :param member_id: The member_id of this ShowMemberDetailRequest.
-        :type: str
+        :type member_id: str
         """
         self._member_id = member_id
 

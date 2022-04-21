@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RecognizeHandwritingRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RecognizeHandwritingRequest:
     }
 
     def __init__(self, body=None):
-        """RecognizeHandwritingRequest - a model defined in huaweicloud sdk"""
+        """RecognizeHandwritingRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the RecognizeHandwritingRequest
+        :type body: :class:`huaweicloudsdkocr.v1.HandwritingRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class RecognizeHandwritingRequest:
 
 
         :return: The body of this RecognizeHandwritingRequest.
-        :rtype: HandwritingRequestBody
+        :rtype: :class:`huaweicloudsdkocr.v1.HandwritingRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class RecognizeHandwritingRequest:
 
 
         :param body: The body of this RecognizeHandwritingRequest.
-        :type: HandwritingRequestBody
+        :type body: :class:`huaweicloudsdkocr.v1.HandwritingRequestBody`
         """
         self._body = body
 

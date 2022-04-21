@@ -52,21 +52,17 @@ class AomAsyncClient(Client):
         """添加阈值规则
 
         该接口用于添加一条阈值规则。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param AddAlarmRuleRequest request
-        :return: AddAlarmRuleResponse
+        :param request: Request instance for AddAlarmRule
+        :type request: :class:`huaweicloudsdkaom.v2.AddAlarmRuleRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.AddAlarmRuleResponse`
         """
         return self.add_alarm_rule_with_http_info(request)
 
     def add_alarm_rule_with_http_info(self, request):
-        """添加阈值规则
-
-        该接口用于添加一条阈值规则。
-
-        :param AddAlarmRuleRequest request
-        :return: AddAlarmRuleResponse
-        """
-
         all_params = ['add_alarm_rule_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -110,26 +106,21 @@ class AomAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def add_metric_data_async(self, request):
         """添加监控数据
 
         该接口用于向服务端添加一条或多条监控数据。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param AddMetricDataRequest request
-        :return: AddMetricDataResponse
+        :param request: Request instance for AddMetricData
+        :type request: :class:`huaweicloudsdkaom.v2.AddMetricDataRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.AddMetricDataResponse`
         """
         return self.add_metric_data_with_http_info(request)
 
     def add_metric_data_with_http_info(self, request):
-        """添加监控数据
-
-        该接口用于向服务端添加一条或多条监控数据。
-
-        :param AddMetricDataRequest request
-        :return: AddMetricDataResponse
-        """
-
         all_params = ['metric_data_param']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -173,26 +164,21 @@ class AomAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def add_or_update_service_discovery_rules_async(self, request):
         """添加或修改服务发现规则
 
         该接口用于添加或修改一条或多条服务发现规则。同一projectid下可添加的规则上限为100条。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param AddOrUpdateServiceDiscoveryRulesRequest request
-        :return: AddOrUpdateServiceDiscoveryRulesResponse
+        :param request: Request instance for AddOrUpdateServiceDiscoveryRules
+        :type request: :class:`huaweicloudsdkaom.v2.AddOrUpdateServiceDiscoveryRulesRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.AddOrUpdateServiceDiscoveryRulesResponse`
         """
         return self.add_or_update_service_discovery_rules_with_http_info(request)
 
     def add_or_update_service_discovery_rules_with_http_info(self, request):
-        """添加或修改服务发现规则
-
-        该接口用于添加或修改一条或多条服务发现规则。同一projectid下可添加的规则上限为100条。
-
-        :param AddOrUpdateServiceDiscoveryRulesRequest request
-        :return: AddOrUpdateServiceDiscoveryRulesResponse
-        """
-
         all_params = ['app_rules']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -236,26 +222,21 @@ class AomAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def count_events_async(self, request):
         """统计事件告警信息
 
         该接口用于分段统计指定条件下的事件、告警。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CountEventsRequest request
-        :return: CountEventsResponse
+        :param request: Request instance for CountEvents
+        :type request: :class:`huaweicloudsdkaom.v2.CountEventsRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.CountEventsResponse`
         """
         return self.count_events_with_http_info(request)
 
     def count_events_with_http_info(self, request):
-        """统计事件告警信息
-
-        该接口用于分段统计指定条件下的事件、告警。
-
-        :param CountEventsRequest request
-        :return: CountEventsResponse
-        """
-
         all_params = ['count_events_request_body', 'type']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -301,26 +282,21 @@ class AomAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_alarm_rule_async(self, request):
         """删除阈值规则
 
         该接口用于删除阈值规则。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteAlarmRuleRequest request
-        :return: DeleteAlarmRuleResponse
+        :param request: Request instance for DeleteAlarmRule
+        :type request: :class:`huaweicloudsdkaom.v2.DeleteAlarmRuleRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.DeleteAlarmRuleResponse`
         """
         return self.delete_alarm_rule_with_http_info(request)
 
     def delete_alarm_rule_with_http_info(self, request):
-        """删除阈值规则
-
-        该接口用于删除阈值规则。
-
-        :param DeleteAlarmRuleRequest request
-        :return: DeleteAlarmRuleResponse
-        """
-
         all_params = ['alarm_rule_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -364,26 +340,21 @@ class AomAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_alarm_rules_async(self, request):
         """批量删除阈值规则
 
         批量删除阈值规则
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteAlarmRulesRequest request
-        :return: DeleteAlarmRulesResponse
+        :param request: Request instance for DeleteAlarmRules
+        :type request: :class:`huaweicloudsdkaom.v2.DeleteAlarmRulesRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.DeleteAlarmRulesResponse`
         """
         return self.delete_alarm_rules_with_http_info(request)
 
     def delete_alarm_rules_with_http_info(self, request):
-        """批量删除阈值规则
-
-        批量删除阈值规则
-
-        :param DeleteAlarmRulesRequest request
-        :return: DeleteAlarmRulesResponse
-        """
-
         all_params = ['alarm_rules']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -427,26 +398,21 @@ class AomAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def deleteservice_discovery_rules_async(self, request):
         """删除服务发现规则
 
         该接口用于删除服务发现规则。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteserviceDiscoveryRulesRequest request
-        :return: DeleteserviceDiscoveryRulesResponse
+        :param request: Request instance for DeleteserviceDiscoveryRules
+        :type request: :class:`huaweicloudsdkaom.v2.DeleteserviceDiscoveryRulesRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.DeleteserviceDiscoveryRulesResponse`
         """
         return self.deleteservice_discovery_rules_with_http_info(request)
 
     def deleteservice_discovery_rules_with_http_info(self, request):
-        """删除服务发现规则
-
-        该接口用于删除服务发现规则。
-
-        :param DeleteserviceDiscoveryRulesRequest request
-        :return: DeleteserviceDiscoveryRulesResponse
-        """
-
         all_params = ['app_rules_ids']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -491,26 +457,21 @@ class AomAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_alarm_rule_async(self, request):
         """查询阈值规则列表
 
         该接口用于查询阈值规则列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListAlarmRuleRequest request
-        :return: ListAlarmRuleResponse
+        :param request: Request instance for ListAlarmRule
+        :type request: :class:`huaweicloudsdkaom.v2.ListAlarmRuleRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.ListAlarmRuleResponse`
         """
         return self.list_alarm_rule_with_http_info(request)
 
     def list_alarm_rule_with_http_info(self, request):
-        """查询阈值规则列表
-
-        该接口用于查询阈值规则列表。
-
-        :param ListAlarmRuleRequest request
-        :return: ListAlarmRuleResponse
-        """
-
         all_params = ['offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -556,26 +517,21 @@ class AomAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_events_async(self, request):
         """查询事件告警信息
 
         该接口用于查询对应用户的事件、告警。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListEventsRequest request
-        :return: ListEventsResponse
+        :param request: Request instance for ListEvents
+        :type request: :class:`huaweicloudsdkaom.v2.ListEventsRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.ListEventsResponse`
         """
         return self.list_events_with_http_info(request)
 
     def list_events_with_http_info(self, request):
-        """查询事件告警信息
-
-        该接口用于查询对应用户的事件、告警。
-
-        :param ListEventsRequest request
-        :return: ListEventsResponse
-        """
-
         all_params = ['list_events_request_body', 'type']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -621,26 +577,21 @@ class AomAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_log_items_async(self, request):
         """查询日志
 
         该接口用于查询不同维度(例如集群、IP、应用等)下的日志内容，支持分页查询。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListLogItemsRequest request
-        :return: ListLogItemsResponse
+        :param request: Request instance for ListLogItems
+        :type request: :class:`huaweicloudsdkaom.v2.ListLogItemsRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.ListLogItemsResponse`
         """
         return self.list_log_items_with_http_info(request)
 
     def list_log_items_with_http_info(self, request):
-        """查询日志
-
-        该接口用于查询不同维度(例如集群、IP、应用等)下的日志内容，支持分页查询。
-
-        :param ListLogItemsRequest request
-        :return: ListLogItemsResponse
-        """
-
         all_params = ['type', 'list_log_items_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -686,26 +637,21 @@ class AomAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_metric_items_async(self, request):
         """查询指标
 
         该接口用于查询系统当前可监控的指标列表，可以指定指标命名空间、指标名称、维度、所属资源的编号（格式为：resType_resId），分页查询的起始位置和返回的最大记录条数。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListMetricItemsRequest request
-        :return: ListMetricItemsResponse
+        :param request: Request instance for ListMetricItems
+        :type request: :class:`huaweicloudsdkaom.v2.ListMetricItemsRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.ListMetricItemsResponse`
         """
         return self.list_metric_items_with_http_info(request)
 
     def list_metric_items_with_http_info(self, request):
-        """查询指标
-
-        该接口用于查询系统当前可监控的指标列表，可以指定指标命名空间、指标名称、维度、所属资源的编号（格式为：resType_resId），分页查询的起始位置和返回的最大记录条数。
-
-        :param ListMetricItemsRequest request
-        :return: ListMetricItemsResponse
-        """
-
         all_params = ['query_item_param', 'type', 'limit', 'start']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -755,26 +701,21 @@ class AomAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_sample_async(self, request):
         """查询时序数据
 
         该接口用于查询指定时间范围内的监控时序数据，可以通过参数指定需要查询的数据维度，数据周期等。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListSampleRequest request
-        :return: ListSampleResponse
+        :param request: Request instance for ListSample
+        :type request: :class:`huaweicloudsdkaom.v2.ListSampleRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.ListSampleResponse`
         """
         return self.list_sample_with_http_info(request)
 
     def list_sample_with_http_info(self, request):
-        """查询时序数据
-
-        该接口用于查询指定时间范围内的监控时序数据，可以通过参数指定需要查询的数据维度，数据周期等。
-
-        :param ListSampleRequest request
-        :return: ListSampleResponse
-        """
-
         all_params = ['list_sample_request_body', 'fill_value']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -820,26 +761,21 @@ class AomAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_series_async(self, request):
         """查询时间序列
 
         该接口用于查询系统当前可监控的时间序列列表，可以指定时间序列命名空间、名称、维度、所属资源的编号（格式为：resType_resId），分页查询的起始位置和返回的最大记录条数。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListSeriesRequest request
-        :return: ListSeriesResponse
+        :param request: Request instance for ListSeries
+        :type request: :class:`huaweicloudsdkaom.v2.ListSeriesRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.ListSeriesResponse`
         """
         return self.list_series_with_http_info(request)
 
     def list_series_with_http_info(self, request):
-        """查询时间序列
-
-        该接口用于查询系统当前可监控的时间序列列表，可以指定时间序列命名空间、名称、维度、所属资源的编号（格式为：resType_resId），分页查询的起始位置和返回的最大记录条数。
-
-        :param ListSeriesRequest request
-        :return: ListSeriesResponse
-        """
-
         all_params = ['list_series_request_body', 'limit', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -887,26 +823,21 @@ class AomAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_service_discovery_rules_async(self, request):
         """查询系统中已有服务发现规则
 
         该接口用于查询系统当前已存在的服务发现规则。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListServiceDiscoveryRulesRequest request
-        :return: ListServiceDiscoveryRulesResponse
+        :param request: Request instance for ListServiceDiscoveryRules
+        :type request: :class:`huaweicloudsdkaom.v2.ListServiceDiscoveryRulesRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.ListServiceDiscoveryRulesResponse`
         """
         return self.list_service_discovery_rules_with_http_info(request)
 
     def list_service_discovery_rules_with_http_info(self, request):
-        """查询系统中已有服务发现规则
-
-        该接口用于查询系统当前已存在的服务发现规则。
-
-        :param ListServiceDiscoveryRulesRequest request
-        :return: ListServiceDiscoveryRulesResponse
-        """
-
         all_params = ['id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -950,26 +881,21 @@ class AomAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def push_events_async(self, request):
         """上报事件告警信息
 
         该接口用于上报对应用户的事件、告警。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param PushEventsRequest request
-        :return: PushEventsResponse
+        :param request: Request instance for PushEvents
+        :type request: :class:`huaweicloudsdkaom.v2.PushEventsRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.PushEventsResponse`
         """
         return self.push_events_with_http_info(request)
 
     def push_events_with_http_info(self, request):
-        """上报事件告警信息
-
-        该接口用于上报对应用户的事件、告警。
-
-        :param PushEventsRequest request
-        :return: PushEventsResponse
-        """
-
         all_params = ['push_events_request_body', 'x_enterprise_prject_id', 'action']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1017,26 +943,21 @@ class AomAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_alarm_rule_async(self, request):
         """查询单条阈值规则
 
         该接口用于查询单条阈值规则。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowAlarmRuleRequest request
-        :return: ShowAlarmRuleResponse
+        :param request: Request instance for ShowAlarmRule
+        :type request: :class:`huaweicloudsdkaom.v2.ShowAlarmRuleRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.ShowAlarmRuleResponse`
         """
         return self.show_alarm_rule_with_http_info(request)
 
     def show_alarm_rule_with_http_info(self, request):
-        """查询单条阈值规则
-
-        该接口用于查询单条阈值规则。
-
-        :param ShowAlarmRuleRequest request
-        :return: ShowAlarmRuleResponse
-        """
-
         all_params = ['alarm_rule_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1080,26 +1001,21 @@ class AomAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_metrics_data_async(self, request):
         """查询监控数据
 
         该接口用于查询指定时间范围内指标的监控数据，可以通过参数指定需要查询的数据维度，数据周期等。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowMetricsDataRequest request
-        :return: ShowMetricsDataResponse
+        :param request: Request instance for ShowMetricsData
+        :type request: :class:`huaweicloudsdkaom.v2.ShowMetricsDataRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.ShowMetricsDataResponse`
         """
         return self.show_metrics_data_with_http_info(request)
 
     def show_metrics_data_with_http_info(self, request):
-        """查询监控数据
-
-        该接口用于查询指定时间范围内指标的监控数据，可以通过参数指定需要查询的数据维度，数据周期等。
-
-        :param ShowMetricsDataRequest request
-        :return: ShowMetricsDataResponse
-        """
-
         all_params = ['query_metric_data_param', 'fill_value']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1145,26 +1061,21 @@ class AomAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_alarm_rule_async(self, request):
         """修改阈值规则
 
         该接口用于修改一条阈值规则。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateAlarmRuleRequest request
-        :return: UpdateAlarmRuleResponse
+        :param request: Request instance for UpdateAlarmRule
+        :type request: :class:`huaweicloudsdkaom.v2.UpdateAlarmRuleRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.UpdateAlarmRuleResponse`
         """
         return self.update_alarm_rule_with_http_info(request)
 
     def update_alarm_rule_with_http_info(self, request):
-        """修改阈值规则
-
-        该接口用于修改一条阈值规则。
-
-        :param UpdateAlarmRuleRequest request
-        :return: UpdateAlarmRuleResponse
-        """
-
         all_params = ['update_alarm_rule_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1208,26 +1119,21 @@ class AomAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_instant_query_aom_prom_get_async(self, request):
         """瞬时数据查询
 
         该接口用于查询PromQL(Prometheus Query Language)。 在特定时间点下的计算结果。（注：接口目前开放的region为：北京四、上海一和广州）。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListInstantQueryAomPromGetRequest request
-        :return: ListInstantQueryAomPromGetResponse
+        :param request: Request instance for ListInstantQueryAomPromGet
+        :type request: :class:`huaweicloudsdkaom.v2.ListInstantQueryAomPromGetRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.ListInstantQueryAomPromGetResponse`
         """
         return self.list_instant_query_aom_prom_get_with_http_info(request)
 
     def list_instant_query_aom_prom_get_with_http_info(self, request):
-        """瞬时数据查询
-
-        该接口用于查询PromQL(Prometheus Query Language)。 在特定时间点下的计算结果。（注：接口目前开放的region为：北京四、上海一和广州）。
-
-        :param ListInstantQueryAomPromGetRequest request
-        :return: ListInstantQueryAomPromGetResponse
-        """
-
         all_params = ['query', 'time']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1273,26 +1179,21 @@ class AomAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_instant_query_aom_prom_post_async(self, request):
         """瞬时数据查询
 
         该接口用于查询PromQL(Prometheus Query Language) 在特定时间点下的计算结果。（注：接口目前开放的region为：北京四、上海一和广州）
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListInstantQueryAomPromPostRequest request
-        :return: ListInstantQueryAomPromPostResponse
+        :param request: Request instance for ListInstantQueryAomPromPost
+        :type request: :class:`huaweicloudsdkaom.v2.ListInstantQueryAomPromPostRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.ListInstantQueryAomPromPostResponse`
         """
         return self.list_instant_query_aom_prom_post_with_http_info(request)
 
     def list_instant_query_aom_prom_post_with_http_info(self, request):
-        """瞬时数据查询
-
-        该接口用于查询PromQL(Prometheus Query Language) 在特定时间点下的计算结果。（注：接口目前开放的region为：北京四、上海一和广州）
-
-        :param ListInstantQueryAomPromPostRequest request
-        :return: ListInstantQueryAomPromPostResponse
-        """
-
         all_params = ['query', 'time']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1338,26 +1239,21 @@ class AomAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_label_values_aom_prom_get_async(self, request):
         """查询标签值
 
         该接口用于查询带有指定标签的时间序列列表。（注：接口目前开放的region为：北京四、上海一和广州）。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListLabelValuesAomPromGetRequest request
-        :return: ListLabelValuesAomPromGetResponse
+        :param request: Request instance for ListLabelValuesAomPromGet
+        :type request: :class:`huaweicloudsdkaom.v2.ListLabelValuesAomPromGetRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.ListLabelValuesAomPromGetResponse`
         """
         return self.list_label_values_aom_prom_get_with_http_info(request)
 
     def list_label_values_aom_prom_get_with_http_info(self, request):
-        """查询标签值
-
-        该接口用于查询带有指定标签的时间序列列表。（注：接口目前开放的region为：北京四、上海一和广州）。
-
-        :param ListLabelValuesAomPromGetRequest request
-        :return: ListLabelValuesAomPromGetResponse
-        """
-
         all_params = ['label_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1401,26 +1297,21 @@ class AomAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_labels_aom_prom_get_async(self, request):
         """获取标签名列表
 
         该接口用于获取标签名列表。（注：接口目前开放的region为：北京四、上海一和广州）。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListLabelsAomPromGetRequest request
-        :return: ListLabelsAomPromGetResponse
+        :param request: Request instance for ListLabelsAomPromGet
+        :type request: :class:`huaweicloudsdkaom.v2.ListLabelsAomPromGetRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.ListLabelsAomPromGetResponse`
         """
         return self.list_labels_aom_prom_get_with_http_info(request)
 
     def list_labels_aom_prom_get_with_http_info(self, request):
-        """获取标签名列表
-
-        该接口用于获取标签名列表。（注：接口目前开放的region为：北京四、上海一和广州）。
-
-        :param ListLabelsAomPromGetRequest request
-        :return: ListLabelsAomPromGetResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1462,26 +1353,21 @@ class AomAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_labels_aom_prom_post_async(self, request):
         """获取标签名列表
 
         该接口用于获取标签名列表。（注：接口目前开放的region为：北京四、上海一和广州）。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListLabelsAomPromPostRequest request
-        :return: ListLabelsAomPromPostResponse
+        :param request: Request instance for ListLabelsAomPromPost
+        :type request: :class:`huaweicloudsdkaom.v2.ListLabelsAomPromPostRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.ListLabelsAomPromPostResponse`
         """
         return self.list_labels_aom_prom_post_with_http_info(request)
 
     def list_labels_aom_prom_post_with_http_info(self, request):
-        """获取标签名列表
-
-        该接口用于获取标签名列表。（注：接口目前开放的region为：北京四、上海一和广州）。
-
-        :param ListLabelsAomPromPostRequest request
-        :return: ListLabelsAomPromPostResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1523,26 +1409,21 @@ class AomAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_metadata_aom_prom_get_async(self, request):
         """元数据查询
 
         该接口用于查询序列及序列标签的元数据。（注：接口目前开放的region为：北京四、上海一和广州）。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListMetadataAomPromGetRequest request
-        :return: ListMetadataAomPromGetResponse
+        :param request: Request instance for ListMetadataAomPromGet
+        :type request: :class:`huaweicloudsdkaom.v2.ListMetadataAomPromGetRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.ListMetadataAomPromGetResponse`
         """
         return self.list_metadata_aom_prom_get_with_http_info(request)
 
     def list_metadata_aom_prom_get_with_http_info(self, request):
-        """元数据查询
-
-        该接口用于查询序列及序列标签的元数据。（注：接口目前开放的region为：北京四、上海一和广州）。
-
-        :param ListMetadataAomPromGetRequest request
-        :return: ListMetadataAomPromGetResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1584,26 +1465,21 @@ class AomAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_range_query_aom_prom_get_async(self, request):
         """区间数据查询
 
         该接口用于查询PromQL(Prometheus Query Language)在一段时间返回内的计算结果。（注：接口目前开放的region为：北京四、上海一和广州）。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListRangeQueryAomPromGetRequest request
-        :return: ListRangeQueryAomPromGetResponse
+        :param request: Request instance for ListRangeQueryAomPromGet
+        :type request: :class:`huaweicloudsdkaom.v2.ListRangeQueryAomPromGetRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.ListRangeQueryAomPromGetResponse`
         """
         return self.list_range_query_aom_prom_get_with_http_info(request)
 
     def list_range_query_aom_prom_get_with_http_info(self, request):
-        """区间数据查询
-
-        该接口用于查询PromQL(Prometheus Query Language)在一段时间返回内的计算结果。（注：接口目前开放的region为：北京四、上海一和广州）。
-
-        :param ListRangeQueryAomPromGetRequest request
-        :return: ListRangeQueryAomPromGetResponse
-        """
-
         all_params = ['query', 'start', 'end', 'step']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1653,26 +1529,21 @@ class AomAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_range_query_aom_prom_post_async(self, request):
         """区间数据查询
 
         该接口用于查询PromQL(Prometheus Query Language)在一段时间返回内的计算结果。（注：接口目前开放的region为：北京四、上海一和广州）。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListRangeQueryAomPromPostRequest request
-        :return: ListRangeQueryAomPromPostResponse
+        :param request: Request instance for ListRangeQueryAomPromPost
+        :type request: :class:`huaweicloudsdkaom.v2.ListRangeQueryAomPromPostRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.ListRangeQueryAomPromPostResponse`
         """
         return self.list_range_query_aom_prom_post_with_http_info(request)
 
     def list_range_query_aom_prom_post_with_http_info(self, request):
-        """区间数据查询
-
-        该接口用于查询PromQL(Prometheus Query Language)在一段时间返回内的计算结果。（注：接口目前开放的region为：北京四、上海一和广州）。
-
-        :param ListRangeQueryAomPromPostRequest request
-        :return: ListRangeQueryAomPromPostResponse
-        """
-
         all_params = ['query', 'start', 'end', 'step']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1721,7 +1592,6 @@ class AomAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MeetingFileBase:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class MeetingFileBase:
     }
 
     def __init__(self, file_code=None, topic=None, file_id=None, file_name=None, file_size=None, thumbnail_file_id=None, thumbnail_file_name=None, thumbnail_file_size=None, pdf_file_id=None, pdf_file_name=None, pdf_file_size=None):
-        """MeetingFileBase - a model defined in huaweicloud sdk"""
+        """MeetingFileBase
+
+        The model defined in huaweicloud sdk
+
+        :param file_code: 会议纪要文件码
+        :type file_code: str
+        :param topic: 文件主题
+        :type topic: str
+        :param file_id: 文件Id
+        :type file_id: str
+        :param file_name: 文件名
+        :type file_name: str
+        :param file_size: 文件大小，单位字节
+        :type file_size: int
+        :param thumbnail_file_id: 缩略图文件Id
+        :type thumbnail_file_id: str
+        :param thumbnail_file_name: 缩略图文件名
+        :type thumbnail_file_name: str
+        :param thumbnail_file_size: 缩略图文件大小，单位字节
+        :type thumbnail_file_size: int
+        :param pdf_file_id: pdf文件Id
+        :type pdf_file_id: str
+        :param pdf_file_name: pdf文件名
+        :type pdf_file_name: str
+        :param pdf_file_size: pdf文件大小，单位字节
+        :type pdf_file_size: int
+        """
         
         
 
@@ -108,7 +133,7 @@ class MeetingFileBase:
         会议纪要文件码
 
         :param file_code: The file_code of this MeetingFileBase.
-        :type: str
+        :type file_code: str
         """
         self._file_code = file_code
 
@@ -130,7 +155,7 @@ class MeetingFileBase:
         文件主题
 
         :param topic: The topic of this MeetingFileBase.
-        :type: str
+        :type topic: str
         """
         self._topic = topic
 
@@ -152,7 +177,7 @@ class MeetingFileBase:
         文件Id
 
         :param file_id: The file_id of this MeetingFileBase.
-        :type: str
+        :type file_id: str
         """
         self._file_id = file_id
 
@@ -174,7 +199,7 @@ class MeetingFileBase:
         文件名
 
         :param file_name: The file_name of this MeetingFileBase.
-        :type: str
+        :type file_name: str
         """
         self._file_name = file_name
 
@@ -196,7 +221,7 @@ class MeetingFileBase:
         文件大小，单位字节
 
         :param file_size: The file_size of this MeetingFileBase.
-        :type: int
+        :type file_size: int
         """
         self._file_size = file_size
 
@@ -218,7 +243,7 @@ class MeetingFileBase:
         缩略图文件Id
 
         :param thumbnail_file_id: The thumbnail_file_id of this MeetingFileBase.
-        :type: str
+        :type thumbnail_file_id: str
         """
         self._thumbnail_file_id = thumbnail_file_id
 
@@ -240,7 +265,7 @@ class MeetingFileBase:
         缩略图文件名
 
         :param thumbnail_file_name: The thumbnail_file_name of this MeetingFileBase.
-        :type: str
+        :type thumbnail_file_name: str
         """
         self._thumbnail_file_name = thumbnail_file_name
 
@@ -262,7 +287,7 @@ class MeetingFileBase:
         缩略图文件大小，单位字节
 
         :param thumbnail_file_size: The thumbnail_file_size of this MeetingFileBase.
-        :type: int
+        :type thumbnail_file_size: int
         """
         self._thumbnail_file_size = thumbnail_file_size
 
@@ -284,7 +309,7 @@ class MeetingFileBase:
         pdf文件Id
 
         :param pdf_file_id: The pdf_file_id of this MeetingFileBase.
-        :type: str
+        :type pdf_file_id: str
         """
         self._pdf_file_id = pdf_file_id
 
@@ -306,7 +331,7 @@ class MeetingFileBase:
         pdf文件名
 
         :param pdf_file_name: The pdf_file_name of this MeetingFileBase.
-        :type: str
+        :type pdf_file_name: str
         """
         self._pdf_file_name = pdf_file_name
 
@@ -328,7 +353,7 @@ class MeetingFileBase:
         pdf文件大小，单位字节
 
         :param pdf_file_size: The pdf_file_size of this MeetingFileBase.
-        :type: int
+        :type pdf_file_size: int
         """
         self._pdf_file_size = pdf_file_size
 

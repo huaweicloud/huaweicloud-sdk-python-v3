@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowApplicationReleaseRepositoriesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowApplicationReleaseRepositoriesResponse(SdkResponse):
     }
 
     def __init__(self, release_repositories=None, count=None):
-        """ShowApplicationReleaseRepositoriesResponse - a model defined in huaweicloud sdk"""
+        """ShowApplicationReleaseRepositoriesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param release_repositories: 软件包列表
+        :type release_repositories: list[:class:`huaweicloudsdkdevstar.v1.ReleaseRepository`]
+        :param count: 软件包总条数
+        :type count: int
+        """
         
         super(ShowApplicationReleaseRepositoriesResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ShowApplicationReleaseRepositoriesResponse(SdkResponse):
         软件包列表
 
         :return: The release_repositories of this ShowApplicationReleaseRepositoriesResponse.
-        :rtype: list[ReleaseRepository]
+        :rtype: list[:class:`huaweicloudsdkdevstar.v1.ReleaseRepository`]
         """
         return self._release_repositories
 
@@ -63,7 +70,7 @@ class ShowApplicationReleaseRepositoriesResponse(SdkResponse):
         软件包列表
 
         :param release_repositories: The release_repositories of this ShowApplicationReleaseRepositoriesResponse.
-        :type: list[ReleaseRepository]
+        :type release_repositories: list[:class:`huaweicloudsdkdevstar.v1.ReleaseRepository`]
         """
         self._release_repositories = release_repositories
 
@@ -85,7 +92,7 @@ class ShowApplicationReleaseRepositoriesResponse(SdkResponse):
         软件包总条数
 
         :param count: The count of this ShowApplicationReleaseRepositoriesResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

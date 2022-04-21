@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExtendAuthorInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ExtendAuthorInfo:
     }
 
     def __init__(self, id=None, name=None, time=None):
-        """ExtendAuthorInfo - a model defined in huaweicloud sdk"""
+        """ExtendAuthorInfo
+
+        The model defined in huaweicloud sdk
+
+        :param id: id信息
+        :type id: str
+        :param name: 名称信息
+        :type name: str
+        :param time: 时间信息
+        :type time: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class ExtendAuthorInfo:
         id信息
 
         :param id: The id of this ExtendAuthorInfo.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -90,7 +99,7 @@ class ExtendAuthorInfo:
         名称信息
 
         :param name: The name of this ExtendAuthorInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -112,7 +121,7 @@ class ExtendAuthorInfo:
         时间信息
 
         :param time: The time of this ExtendAuthorInfo.
-        :type: str
+        :type time: str
         """
         self._time = time
 

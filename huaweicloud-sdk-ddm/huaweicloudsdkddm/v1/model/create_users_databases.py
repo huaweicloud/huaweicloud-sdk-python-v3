@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateUsersDatabases:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateUsersDatabases:
     }
 
     def __init__(self, name=None):
-        """CreateUsersDatabases - a model defined in huaweicloud sdk"""
+        """CreateUsersDatabases
+
+        The model defined in huaweicloud sdk
+
+        :param name: 关联逻辑库名称。
+        :type name: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class CreateUsersDatabases:
         关联逻辑库名称。
 
         :param name: The name of this CreateUsersDatabases.
-        :type: str
+        :type name: str
         """
         self._name = name
 

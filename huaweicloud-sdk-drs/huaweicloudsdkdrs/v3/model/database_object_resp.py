@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DatabaseObjectResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class DatabaseObjectResp:
     }
 
     def __init__(self, job_id=None, status=None, error_code=None, error_msg=None):
-        """DatabaseObjectResp - a model defined in huaweicloud sdk"""
+        """DatabaseObjectResp
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 任务ID
+        :type job_id: str
+        :param status: 选择对象任务成功标志
+        :type status: bool
+        :param error_code: 错误码
+        :type error_code: str
+        :param error_msg: 错误信息
+        :type error_msg: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class DatabaseObjectResp:
         任务ID
 
         :param job_id: The job_id of this DatabaseObjectResp.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -95,7 +106,7 @@ class DatabaseObjectResp:
         选择对象任务成功标志
 
         :param status: The status of this DatabaseObjectResp.
-        :type: bool
+        :type status: bool
         """
         self._status = status
 
@@ -117,7 +128,7 @@ class DatabaseObjectResp:
         错误码
 
         :param error_code: The error_code of this DatabaseObjectResp.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -139,7 +150,7 @@ class DatabaseObjectResp:
         错误信息
 
         :param error_msg: The error_msg of this DatabaseObjectResp.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 

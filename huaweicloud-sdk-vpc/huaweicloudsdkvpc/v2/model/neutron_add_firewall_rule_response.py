@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NeutronAddFirewallRuleResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class NeutronAddFirewallRuleResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, firewall_rules=None, audited=None, public=None, tenant_id=None, project_id=None):
-        """NeutronAddFirewallRuleResponse - a model defined in huaweicloud sdk"""
+        """NeutronAddFirewallRuleResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 功能说明：网络ACL策略ID
+        :type id: str
+        :param name: 功能说明：网络ACL策略名称
+        :type name: str
+        :param description: 功能说明：网络ACL策略的描述信息 取值范围：0-255个字符
+        :type description: str
+        :param firewall_rules: 功能说明：网络ACL策略关联的规则的ID列表
+        :type firewall_rules: list[str]
+        :param audited: 功能说明：每次policy或者它相关的rule有变动，该参数将会被置为False
+        :type audited: bool
+        :param public: 功能说明：网络ACL策略是否对其他网络ACL策略可见 取值范围：true(可见)、false(不可见)
+        :type public: bool
+        :param tenant_id: 功能说明：网络ACL策略所属项目ID
+        :type tenant_id: str
+        :param project_id: 功能说明：网络ACL策略所属项目ID
+        :type project_id: str
+        """
         
         super(NeutronAddFirewallRuleResponse, self).__init__()
 
@@ -93,7 +112,7 @@ class NeutronAddFirewallRuleResponse(SdkResponse):
         功能说明：网络ACL策略ID
 
         :param id: The id of this NeutronAddFirewallRuleResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -115,7 +134,7 @@ class NeutronAddFirewallRuleResponse(SdkResponse):
         功能说明：网络ACL策略名称
 
         :param name: The name of this NeutronAddFirewallRuleResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -137,7 +156,7 @@ class NeutronAddFirewallRuleResponse(SdkResponse):
         功能说明：网络ACL策略的描述信息 取值范围：0-255个字符
 
         :param description: The description of this NeutronAddFirewallRuleResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -159,7 +178,7 @@ class NeutronAddFirewallRuleResponse(SdkResponse):
         功能说明：网络ACL策略关联的规则的ID列表
 
         :param firewall_rules: The firewall_rules of this NeutronAddFirewallRuleResponse.
-        :type: list[str]
+        :type firewall_rules: list[str]
         """
         self._firewall_rules = firewall_rules
 
@@ -181,7 +200,7 @@ class NeutronAddFirewallRuleResponse(SdkResponse):
         功能说明：每次policy或者它相关的rule有变动，该参数将会被置为False
 
         :param audited: The audited of this NeutronAddFirewallRuleResponse.
-        :type: bool
+        :type audited: bool
         """
         self._audited = audited
 
@@ -203,7 +222,7 @@ class NeutronAddFirewallRuleResponse(SdkResponse):
         功能说明：网络ACL策略是否对其他网络ACL策略可见 取值范围：true(可见)、false(不可见)
 
         :param public: The public of this NeutronAddFirewallRuleResponse.
-        :type: bool
+        :type public: bool
         """
         self._public = public
 
@@ -225,7 +244,7 @@ class NeutronAddFirewallRuleResponse(SdkResponse):
         功能说明：网络ACL策略所属项目ID
 
         :param tenant_id: The tenant_id of this NeutronAddFirewallRuleResponse.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 
@@ -247,7 +266,7 @@ class NeutronAddFirewallRuleResponse(SdkResponse):
         功能说明：网络ACL策略所属项目ID
 
         :param project_id: The project_id of this NeutronAddFirewallRuleResponse.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 

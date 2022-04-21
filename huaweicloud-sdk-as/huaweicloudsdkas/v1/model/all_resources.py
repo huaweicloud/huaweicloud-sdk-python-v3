@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AllResources:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class AllResources:
     }
 
     def __init__(self, type=None, used=None, quota=None, max=None, min=None):
-        """AllResources - a model defined in huaweicloud sdk"""
+        """AllResources
+
+        The model defined in huaweicloud sdk
+
+        :param type: 查询配额的类型。scaling_Group：伸缩组配额。scaling_Config：伸缩配置配额。scaling_Policy：伸缩策略配额。scaling_Instance：伸缩实例配额。bandwidth_scaling_policy：伸缩带宽策略配额。
+        :type type: str
+        :param used: 已使用的配额数量。当type为scaling_Policy和scaling_Instance时，该字段为保留字段，返回-1。可通过查询弹性伸缩策略和伸缩实例配额查询指定弹性伸缩组下的弹性伸缩策略和伸缩实例已使用的配额数量。
+        :type used: int
+        :param quota: 配额总数量。
+        :type quota: int
+        :param max: 配额上限。
+        :type max: int
+        :param min: 配额下限。
+        :type min: int
+        """
         
         
 
@@ -78,7 +91,7 @@ class AllResources:
         查询配额的类型。scaling_Group：伸缩组配额。scaling_Config：伸缩配置配额。scaling_Policy：伸缩策略配额。scaling_Instance：伸缩实例配额。bandwidth_scaling_policy：伸缩带宽策略配额。
 
         :param type: The type of this AllResources.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -100,7 +113,7 @@ class AllResources:
         已使用的配额数量。当type为scaling_Policy和scaling_Instance时，该字段为保留字段，返回-1。可通过查询弹性伸缩策略和伸缩实例配额查询指定弹性伸缩组下的弹性伸缩策略和伸缩实例已使用的配额数量。
 
         :param used: The used of this AllResources.
-        :type: int
+        :type used: int
         """
         self._used = used
 
@@ -122,7 +135,7 @@ class AllResources:
         配额总数量。
 
         :param quota: The quota of this AllResources.
-        :type: int
+        :type quota: int
         """
         self._quota = quota
 
@@ -144,7 +157,7 @@ class AllResources:
         配额上限。
 
         :param max: The max of this AllResources.
-        :type: int
+        :type max: int
         """
         self._max = max
 
@@ -166,7 +179,7 @@ class AllResources:
         配额下限。
 
         :param min: The min of this AllResources.
-        :type: int
+        :type min: int
         """
         self._min = min
 

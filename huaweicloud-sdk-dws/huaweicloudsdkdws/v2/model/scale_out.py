@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ScaleOut:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ScaleOut:
     }
 
     def __init__(self, count=None):
-        """ScaleOut - a model defined in huaweicloud sdk"""
+        """ScaleOut
+
+        The model defined in huaweicloud sdk
+
+        :param count: 扩容节点数。
+        :type count: int
+        """
         
         
 
@@ -43,7 +48,7 @@ class ScaleOut:
     def count(self):
         """Gets the count of this ScaleOut.
 
-        扩容节点数
+        扩容节点数。
 
         :return: The count of this ScaleOut.
         :rtype: int
@@ -54,10 +59,10 @@ class ScaleOut:
     def count(self, count):
         """Sets the count of this ScaleOut.
 
-        扩容节点数
+        扩容节点数。
 
         :param count: The count of this ScaleOut.
-        :type: int
+        :type count: int
         """
         self._count = count
 

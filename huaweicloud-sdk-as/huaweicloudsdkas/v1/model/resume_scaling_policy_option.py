@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResumeScalingPolicyOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ResumeScalingPolicyOption:
     }
 
     def __init__(self, action=None):
-        """ResumeScalingPolicyOption - a model defined in huaweicloud sdk"""
+        """ResumeScalingPolicyOption
+
+        The model defined in huaweicloud sdk
+
+        :param action: 执行或启用或停止伸缩策略操作的标识。执行：execute。启用：resume。停止：pause。
+        :type action: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ResumeScalingPolicyOption:
         执行或启用或停止伸缩策略操作的标识。执行：execute。启用：resume。停止：pause。
 
         :param action: The action of this ResumeScalingPolicyOption.
-        :type: str
+        :type action: str
         """
         self._action = action
 

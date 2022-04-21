@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateListenerRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateListenerRequest:
     }
 
     def __init__(self, listener_id=None, body=None):
-        """UpdateListenerRequest - a model defined in huaweicloud sdk"""
+        """UpdateListenerRequest
+
+        The model defined in huaweicloud sdk
+
+        :param listener_id: 监听器id
+        :type listener_id: str
+        :param body: Body of the UpdateListenerRequest
+        :type body: :class:`huaweicloudsdkelb.v2.UpdateListenerRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateListenerRequest:
         监听器id
 
         :param listener_id: The listener_id of this UpdateListenerRequest.
-        :type: str
+        :type listener_id: str
         """
         self._listener_id = listener_id
 
@@ -72,7 +79,7 @@ class UpdateListenerRequest:
 
 
         :return: The body of this UpdateListenerRequest.
-        :rtype: UpdateListenerRequestBody
+        :rtype: :class:`huaweicloudsdkelb.v2.UpdateListenerRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateListenerRequest:
 
 
         :param body: The body of this UpdateListenerRequest.
-        :type: UpdateListenerRequestBody
+        :type body: :class:`huaweicloudsdkelb.v2.UpdateListenerRequestBody`
         """
         self._body = body
 

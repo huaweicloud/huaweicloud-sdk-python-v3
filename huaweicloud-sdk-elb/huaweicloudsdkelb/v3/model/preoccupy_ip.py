@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PreoccupyIp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class PreoccupyIp:
     }
 
     def __init__(self, total=None):
-        """PreoccupyIp - a model defined in huaweicloud sdk"""
+        """PreoccupyIp
+
+        The model defined in huaweicloud sdk
+
+        :param total: 预占IP总数
+        :type total: int
+        """
         
         
 
@@ -57,7 +62,7 @@ class PreoccupyIp:
         预占IP总数
 
         :param total: The total of this PreoccupyIp.
-        :type: int
+        :type total: int
         """
         self._total = total
 

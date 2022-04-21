@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListFailedTaskRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListFailedTaskRequest:
     }
 
     def __init__(self, limit=None, offset=None):
-        """ListFailedTaskRequest - a model defined in huaweicloud sdk"""
+        """ListFailedTaskRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 每页返回的个数。 默认值：50。 
+        :type limit: str
+        :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0 
+        :type offset: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class ListFailedTaskRequest:
         每页返回的个数。 默认值：50。 
 
         :param limit: The limit of this ListFailedTaskRequest.
-        :type: str
+        :type limit: str
         """
         self._limit = limit
 
@@ -85,7 +92,7 @@ class ListFailedTaskRequest:
         偏移量，表示从此偏移量开始查询， offset大于等于0 
 
         :param offset: The offset of this ListFailedTaskRequest.
-        :type: str
+        :type offset: str
         """
         self._offset = offset
 

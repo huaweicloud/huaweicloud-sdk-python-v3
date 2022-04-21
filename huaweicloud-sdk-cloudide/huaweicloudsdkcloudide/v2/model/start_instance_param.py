@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StartInstanceParam:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class StartInstanceParam:
     }
 
     def __init__(self, plugin_enable_list=None, plugin_vars=None):
-        """StartInstanceParam - a model defined in huaweicloud sdk"""
+        """StartInstanceParam
+
+        The model defined in huaweicloud sdk
+
+        :param plugin_enable_list: 插件列表
+        :type plugin_enable_list: list[str]
+        :param plugin_vars: 插件参数
+        :type plugin_vars: dict(str, str)
+        """
         
         
 
@@ -63,7 +70,7 @@ class StartInstanceParam:
         插件列表
 
         :param plugin_enable_list: The plugin_enable_list of this StartInstanceParam.
-        :type: list[str]
+        :type plugin_enable_list: list[str]
         """
         self._plugin_enable_list = plugin_enable_list
 
@@ -85,7 +92,7 @@ class StartInstanceParam:
         插件参数
 
         :param plugin_vars: The plugin_vars of this StartInstanceParam.
-        :type: dict(str, str)
+        :type plugin_vars: dict(str, str)
         """
         self._plugin_vars = plugin_vars
 

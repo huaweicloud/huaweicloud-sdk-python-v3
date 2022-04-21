@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RealTimeAttendee:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class RealTimeAttendee:
     }
 
     def __init__(self, account_id=None, user_uuid=None, name=None, phone=None, phone_left=None, phone_right=None):
-        """RealTimeAttendee - a model defined in huaweicloud sdk"""
+        """RealTimeAttendee
+
+        The model defined in huaweicloud sdk
+
+        :param account_id: 与会者帐号（AAPID用户，代表第三方账号）。
+        :type account_id: str
+        :param user_uuid: 与会者的用户UUID。
+        :type user_uuid: str
+        :param name: 与会者名称或昵称，长度限制为96个字符。
+        :type name: str
+        :param phone: 与会者设备的注册号码（可支持SIP、TEL号码格式）。最大不超过127个字符。 设备为三屏智真时的中屏号码。
+        :type phone: str
+        :param phone_left: 设备为三屏智真时的左屏号码（预留）。
+        :type phone_left: str
+        :param phone_right: 设备为三屏智真时的右屏号码（预留）。
+        :type phone_right: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class RealTimeAttendee:
         与会者帐号（AAPID用户，代表第三方账号）。
 
         :param account_id: The account_id of this RealTimeAttendee.
-        :type: str
+        :type account_id: str
         """
         self._account_id = account_id
 
@@ -105,7 +120,7 @@ class RealTimeAttendee:
         与会者的用户UUID。
 
         :param user_uuid: The user_uuid of this RealTimeAttendee.
-        :type: str
+        :type user_uuid: str
         """
         self._user_uuid = user_uuid
 
@@ -127,7 +142,7 @@ class RealTimeAttendee:
         与会者名称或昵称，长度限制为96个字符。
 
         :param name: The name of this RealTimeAttendee.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -149,7 +164,7 @@ class RealTimeAttendee:
         与会者设备的注册号码（可支持SIP、TEL号码格式）。最大不超过127个字符。 设备为三屏智真时的中屏号码。
 
         :param phone: The phone of this RealTimeAttendee.
-        :type: str
+        :type phone: str
         """
         self._phone = phone
 
@@ -171,7 +186,7 @@ class RealTimeAttendee:
         设备为三屏智真时的左屏号码（预留）。
 
         :param phone_left: The phone_left of this RealTimeAttendee.
-        :type: str
+        :type phone_left: str
         """
         self._phone_left = phone_left
 
@@ -193,7 +208,7 @@ class RealTimeAttendee:
         设备为三屏智真时的右屏号码（预留）。
 
         :param phone_right: The phone_right of this RealTimeAttendee.
-        :type: str
+        :type phone_right: str
         """
         self._phone_right = phone_right
 

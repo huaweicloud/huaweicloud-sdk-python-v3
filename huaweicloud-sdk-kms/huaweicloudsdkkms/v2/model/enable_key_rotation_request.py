@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EnableKeyRotationRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class EnableKeyRotationRequest:
     }
 
     def __init__(self, body=None):
-        """EnableKeyRotationRequest - a model defined in huaweicloud sdk"""
+        """EnableKeyRotationRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the EnableKeyRotationRequest
+        :type body: :class:`huaweicloudsdkkms.v2.OperateKeyRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class EnableKeyRotationRequest:
 
 
         :return: The body of this EnableKeyRotationRequest.
-        :rtype: OperateKeyRequestBody
+        :rtype: :class:`huaweicloudsdkkms.v2.OperateKeyRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class EnableKeyRotationRequest:
 
 
         :param body: The body of this EnableKeyRotationRequest.
-        :type: OperateKeyRequestBody
+        :type body: :class:`huaweicloudsdkkms.v2.OperateKeyRequestBody`
         """
         self._body = body
 

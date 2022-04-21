@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StackInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -62,7 +61,45 @@ class StackInfo:
     }
 
     def __init__(self, arm_config=None, bundle_url=None, config=None, created_time=None, delete=None, description=None, disable=None, display_name=None, id=None, label=None, logo=None, region=None, show=None, stack_name=None, tags=None, updated_time=None, users=None):
-        """StackInfo - a model defined in huaweicloud sdk"""
+        """StackInfo
+
+        The model defined in huaweicloud sdk
+
+        :param arm_config: 
+        :type arm_config: :class:`huaweicloudsdkcloudide.v2.StacksConfig`
+        :param bundle_url: bundleUrl
+        :type bundle_url: str
+        :param config: 
+        :type config: :class:`huaweicloudsdkcloudide.v2.StacksConfig`
+        :param created_time: 创建时间
+        :type created_time: datetime
+        :param delete: 是否删除
+        :type delete: bool
+        :param description: 描述
+        :type description: str
+        :param disable: 是否可用
+        :type disable: bool
+        :param display_name: 显示名称
+        :type display_name: str
+        :param id: id
+        :type id: int
+        :param label: 标签
+        :type label: str
+        :param logo: 图标
+        :type logo: str
+        :param region: region
+        :type region: str
+        :param show: 是否显示
+        :type show: bool
+        :param stack_name: 技术栈名称
+        :type stack_name: str
+        :param tags: tags
+        :type tags: list[str]
+        :param updated_time: 修改时间
+        :type updated_time: datetime
+        :param users: 使用者
+        :type users: list[str]
+        """
         
         
 
@@ -126,7 +163,7 @@ class StackInfo:
 
 
         :return: The arm_config of this StackInfo.
-        :rtype: StacksConfig
+        :rtype: :class:`huaweicloudsdkcloudide.v2.StacksConfig`
         """
         return self._arm_config
 
@@ -136,7 +173,7 @@ class StackInfo:
 
 
         :param arm_config: The arm_config of this StackInfo.
-        :type: StacksConfig
+        :type arm_config: :class:`huaweicloudsdkcloudide.v2.StacksConfig`
         """
         self._arm_config = arm_config
 
@@ -158,7 +195,7 @@ class StackInfo:
         bundleUrl
 
         :param bundle_url: The bundle_url of this StackInfo.
-        :type: str
+        :type bundle_url: str
         """
         self._bundle_url = bundle_url
 
@@ -168,7 +205,7 @@ class StackInfo:
 
 
         :return: The config of this StackInfo.
-        :rtype: StacksConfig
+        :rtype: :class:`huaweicloudsdkcloudide.v2.StacksConfig`
         """
         return self._config
 
@@ -178,7 +215,7 @@ class StackInfo:
 
 
         :param config: The config of this StackInfo.
-        :type: StacksConfig
+        :type config: :class:`huaweicloudsdkcloudide.v2.StacksConfig`
         """
         self._config = config
 
@@ -200,7 +237,7 @@ class StackInfo:
         创建时间
 
         :param created_time: The created_time of this StackInfo.
-        :type: datetime
+        :type created_time: datetime
         """
         self._created_time = created_time
 
@@ -222,7 +259,7 @@ class StackInfo:
         是否删除
 
         :param delete: The delete of this StackInfo.
-        :type: bool
+        :type delete: bool
         """
         self._delete = delete
 
@@ -244,7 +281,7 @@ class StackInfo:
         描述
 
         :param description: The description of this StackInfo.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -266,7 +303,7 @@ class StackInfo:
         是否可用
 
         :param disable: The disable of this StackInfo.
-        :type: bool
+        :type disable: bool
         """
         self._disable = disable
 
@@ -288,7 +325,7 @@ class StackInfo:
         显示名称
 
         :param display_name: The display_name of this StackInfo.
-        :type: str
+        :type display_name: str
         """
         self._display_name = display_name
 
@@ -310,7 +347,7 @@ class StackInfo:
         id
 
         :param id: The id of this StackInfo.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -332,7 +369,7 @@ class StackInfo:
         标签
 
         :param label: The label of this StackInfo.
-        :type: str
+        :type label: str
         """
         self._label = label
 
@@ -354,7 +391,7 @@ class StackInfo:
         图标
 
         :param logo: The logo of this StackInfo.
-        :type: str
+        :type logo: str
         """
         self._logo = logo
 
@@ -376,7 +413,7 @@ class StackInfo:
         region
 
         :param region: The region of this StackInfo.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -398,7 +435,7 @@ class StackInfo:
         是否显示
 
         :param show: The show of this StackInfo.
-        :type: bool
+        :type show: bool
         """
         self._show = show
 
@@ -420,7 +457,7 @@ class StackInfo:
         技术栈名称
 
         :param stack_name: The stack_name of this StackInfo.
-        :type: str
+        :type stack_name: str
         """
         self._stack_name = stack_name
 
@@ -442,7 +479,7 @@ class StackInfo:
         tags
 
         :param tags: The tags of this StackInfo.
-        :type: list[str]
+        :type tags: list[str]
         """
         self._tags = tags
 
@@ -464,7 +501,7 @@ class StackInfo:
         修改时间
 
         :param updated_time: The updated_time of this StackInfo.
-        :type: datetime
+        :type updated_time: datetime
         """
         self._updated_time = updated_time
 
@@ -486,7 +523,7 @@ class StackInfo:
         使用者
 
         :param users: The users of this StackInfo.
-        :type: list[str]
+        :type users: list[str]
         """
         self._users = users
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AssetAddRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class AssetAddRequest:
     }
 
     def __init__(self, asset_model_id=None, name=None, display_name=None, parent=None, properties=None, analyses=None):
-        """AssetAddRequest - a model defined in huaweicloud sdk"""
+        """AssetAddRequest
+
+        The model defined in huaweicloud sdk
+
+        :param asset_model_id: 资产模型ID
+        :type asset_model_id: str
+        :param name: 资产名称，正则：\&quot;^[a-zA-Z][a-zA-Z0-9_-]{0,63}$\&quot;
+        :type name: str
+        :param display_name: 资产显示名称，修改资产时，\&quot;\&quot;代表配置为空、null或不携带代表不修改，正则：\&quot;^[\\\\u4E-\\\\u9FA5A-Za-z0-9_@#.-]{0,64}$\&quot;
+        :type display_name: str
+        :param parent: 父资产ID，根资产的父资产ID为null，修改资产时，null或不携带代表不修改
+        :type parent: str
+        :param properties: 属性集，最多200个
+        :type properties: list[:class:`huaweicloudsdkiotanalytics.v1.PropertyRequest`]
+        :param analyses: 分析任务集，最多50个
+        :type analyses: list[:class:`huaweicloudsdkiotanalytics.v1.AnalysisRequest`]
+        """
         
         
 
@@ -81,7 +96,7 @@ class AssetAddRequest:
         资产模型ID
 
         :param asset_model_id: The asset_model_id of this AssetAddRequest.
-        :type: str
+        :type asset_model_id: str
         """
         self._asset_model_id = asset_model_id
 
@@ -103,7 +118,7 @@ class AssetAddRequest:
         资产名称，正则：\"^[a-zA-Z][a-zA-Z0-9_-]{0,63}$\"
 
         :param name: The name of this AssetAddRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -125,7 +140,7 @@ class AssetAddRequest:
         资产显示名称，修改资产时，\"\"代表配置为空、null或不携带代表不修改，正则：\"^[\\\\u4E-\\\\u9FA5A-Za-z0-9_@#.-]{0,64}$\"
 
         :param display_name: The display_name of this AssetAddRequest.
-        :type: str
+        :type display_name: str
         """
         self._display_name = display_name
 
@@ -147,7 +162,7 @@ class AssetAddRequest:
         父资产ID，根资产的父资产ID为null，修改资产时，null或不携带代表不修改
 
         :param parent: The parent of this AssetAddRequest.
-        :type: str
+        :type parent: str
         """
         self._parent = parent
 
@@ -158,7 +173,7 @@ class AssetAddRequest:
         属性集，最多200个
 
         :return: The properties of this AssetAddRequest.
-        :rtype: list[PropertyRequest]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.PropertyRequest`]
         """
         return self._properties
 
@@ -169,7 +184,7 @@ class AssetAddRequest:
         属性集，最多200个
 
         :param properties: The properties of this AssetAddRequest.
-        :type: list[PropertyRequest]
+        :type properties: list[:class:`huaweicloudsdkiotanalytics.v1.PropertyRequest`]
         """
         self._properties = properties
 
@@ -180,7 +195,7 @@ class AssetAddRequest:
         分析任务集，最多50个
 
         :return: The analyses of this AssetAddRequest.
-        :rtype: list[AnalysisRequest]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.AnalysisRequest`]
         """
         return self._analyses
 
@@ -191,7 +206,7 @@ class AssetAddRequest:
         分析任务集，最多50个
 
         :param analyses: The analyses of this AssetAddRequest.
-        :type: list[AnalysisRequest]
+        :type analyses: list[:class:`huaweicloudsdkiotanalytics.v1.AnalysisRequest`]
         """
         self._analyses = analyses
 

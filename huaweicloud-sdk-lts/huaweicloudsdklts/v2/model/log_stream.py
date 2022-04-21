@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LogStream:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class LogStream:
     }
 
     def __init__(self, creation_time=None, log_stream_name=None, log_stream_id=None, filter_count=None, tag=None):
-        """LogStream - a model defined in huaweicloud sdk"""
+        """LogStream
+
+        The model defined in huaweicloud sdk
+
+        :param creation_time: 创建时间 
+        :type creation_time: int
+        :param log_stream_name: 日志流名称 
+        :type log_stream_name: str
+        :param log_stream_id: 日志流ID 
+        :type log_stream_id: str
+        :param filter_count: 过滤器个数 
+        :type filter_count: int
+        :param tag: 日志流所属标签
+        :type tag: dict(str, str)
+        """
         
         
 
@@ -74,7 +87,7 @@ class LogStream:
         创建时间 
 
         :param creation_time: The creation_time of this LogStream.
-        :type: int
+        :type creation_time: int
         """
         self._creation_time = creation_time
 
@@ -96,7 +109,7 @@ class LogStream:
         日志流名称 
 
         :param log_stream_name: The log_stream_name of this LogStream.
-        :type: str
+        :type log_stream_name: str
         """
         self._log_stream_name = log_stream_name
 
@@ -118,7 +131,7 @@ class LogStream:
         日志流ID 
 
         :param log_stream_id: The log_stream_id of this LogStream.
-        :type: str
+        :type log_stream_id: str
         """
         self._log_stream_id = log_stream_id
 
@@ -140,7 +153,7 @@ class LogStream:
         过滤器个数 
 
         :param filter_count: The filter_count of this LogStream.
-        :type: int
+        :type filter_count: int
         """
         self._filter_count = filter_count
 
@@ -162,7 +175,7 @@ class LogStream:
         日志流所属标签
 
         :param tag: The tag of this LogStream.
-        :type: dict(str, str)
+        :type tag: dict(str, str)
         """
         self._tag = tag
 

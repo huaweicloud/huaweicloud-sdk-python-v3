@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TagList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class TagList:
     }
 
     def __init__(self, tags=None, total=None):
-        """TagList - a model defined in huaweicloud sdk"""
+        """TagList
+
+        The model defined in huaweicloud sdk
+
+        :param tags: 指定仓库的标签列表
+        :type tags: list[:class:`huaweicloudsdkcodehub.v3.Tag`]
+        :param total: 指定仓库的标签总数
+        :type total: int
+        """
         
         
 
@@ -52,7 +59,7 @@ class TagList:
         指定仓库的标签列表
 
         :return: The tags of this TagList.
-        :rtype: list[Tag]
+        :rtype: list[:class:`huaweicloudsdkcodehub.v3.Tag`]
         """
         return self._tags
 
@@ -63,7 +70,7 @@ class TagList:
         指定仓库的标签列表
 
         :param tags: The tags of this TagList.
-        :type: list[Tag]
+        :type tags: list[:class:`huaweicloudsdkcodehub.v3.Tag`]
         """
         self._tags = tags
 
@@ -85,7 +92,7 @@ class TagList:
         指定仓库的标签总数
 
         :param total: The total of this TagList.
-        :type: int
+        :type total: int
         """
         self._total = total
 

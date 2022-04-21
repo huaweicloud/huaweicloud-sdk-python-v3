@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PlayInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class PlayInfo:
     }
 
     def __init__(self, play_type=None, url=None, encrypted=None, meta_data=None):
-        """PlayInfo - a model defined in huaweicloud sdk"""
+        """PlayInfo
+
+        The model defined in huaweicloud sdk
+
+        :param play_type: 播放协议类型。  取值如下： - hls - dash - mp4
+        :type play_type: str
+        :param url: 播放URL。
+        :type url: str
+        :param encrypted: 标记流是否已被加密。  取值如下： - 0：表示未加密。 - 1：表示已被加密。  默认值：0。
+        :type encrypted: int
+        :param meta_data: 
+        :type meta_data: :class:`huaweicloudsdkvod.v1.MetaData`
+        """
         
         
 
@@ -73,7 +84,7 @@ class PlayInfo:
         播放协议类型。  取值如下： - hls - dash - mp4
 
         :param play_type: The play_type of this PlayInfo.
-        :type: str
+        :type play_type: str
         """
         self._play_type = play_type
 
@@ -95,7 +106,7 @@ class PlayInfo:
         播放URL。
 
         :param url: The url of this PlayInfo.
-        :type: str
+        :type url: str
         """
         self._url = url
 
@@ -117,7 +128,7 @@ class PlayInfo:
         标记流是否已被加密。  取值如下： - 0：表示未加密。 - 1：表示已被加密。  默认值：0。
 
         :param encrypted: The encrypted of this PlayInfo.
-        :type: int
+        :type encrypted: int
         """
         self._encrypted = encrypted
 
@@ -127,7 +138,7 @@ class PlayInfo:
 
 
         :return: The meta_data of this PlayInfo.
-        :rtype: MetaData
+        :rtype: :class:`huaweicloudsdkvod.v1.MetaData`
         """
         return self._meta_data
 
@@ -137,7 +148,7 @@ class PlayInfo:
 
 
         :param meta_data: The meta_data of this PlayInfo.
-        :type: MetaData
+        :type meta_data: :class:`huaweicloudsdkvod.v1.MetaData`
         """
         self._meta_data = meta_data
 

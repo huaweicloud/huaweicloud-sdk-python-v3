@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeKInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class KeKInfo:
     }
 
     def __init__(self, key_id=None, domain_id=None):
-        """KeKInfo - a model defined in huaweicloud sdk"""
+        """KeKInfo
+
+        The model defined in huaweicloud sdk
+
+        :param key_id: 密钥ID。
+        :type key_id: str
+        :param domain_id: 用户域ID。
+        :type domain_id: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class KeKInfo:
         密钥ID。
 
         :param key_id: The key_id of this KeKInfo.
-        :type: str
+        :type key_id: str
         """
         self._key_id = key_id
 
@@ -85,7 +92,7 @@ class KeKInfo:
         用户域ID。
 
         :param domain_id: The domain_id of this KeKInfo.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 

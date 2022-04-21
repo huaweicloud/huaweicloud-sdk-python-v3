@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CheckRomaInstanceListV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CheckRomaInstanceListV2Request:
     }
 
     def __init__(self, status=None, offset=None, limit=None):
-        """CheckRomaInstanceListV2Request - a model defined in huaweicloud sdk"""
+        """CheckRomaInstanceListV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param status: 实例状态
+        :type status: str
+        :param offset: 偏移量，大于等于0
+        :type offset: int
+        :param limit: 每页显示的条目数量
+        :type limit: int
+        """
         
         
 
@@ -68,7 +77,7 @@ class CheckRomaInstanceListV2Request:
         实例状态
 
         :param status: The status of this CheckRomaInstanceListV2Request.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -90,7 +99,7 @@ class CheckRomaInstanceListV2Request:
         偏移量，大于等于0
 
         :param offset: The offset of this CheckRomaInstanceListV2Request.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -112,7 +121,7 @@ class CheckRomaInstanceListV2Request:
         每页显示的条目数量
 
         :param limit: The limit of this CheckRomaInstanceListV2Request.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

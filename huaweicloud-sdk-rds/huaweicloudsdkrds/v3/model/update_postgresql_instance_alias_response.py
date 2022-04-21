@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdatePostgresqlInstanceAliasResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdatePostgresqlInstanceAliasResponse(SdkResponse):
     }
 
     def __init__(self, resp=None):
-        """UpdatePostgresqlInstanceAliasResponse - a model defined in huaweicloud sdk"""
+        """UpdatePostgresqlInstanceAliasResponse
+
+        The model defined in huaweicloud sdk
+
+        :param resp: 操作结果。
+        :type resp: str
+        """
         
         super(UpdatePostgresqlInstanceAliasResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class UpdatePostgresqlInstanceAliasResponse(SdkResponse):
         操作结果。
 
         :param resp: The resp of this UpdatePostgresqlInstanceAliasResponse.
-        :type: str
+        :type resp: str
         """
         self._resp = resp
 

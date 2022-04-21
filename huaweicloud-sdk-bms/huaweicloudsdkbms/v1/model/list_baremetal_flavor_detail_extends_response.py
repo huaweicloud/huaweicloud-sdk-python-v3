@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListBaremetalFlavorDetailExtendsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListBaremetalFlavorDetailExtendsResponse(SdkResponse):
     }
 
     def __init__(self, flavors=None):
-        """ListBaremetalFlavorDetailExtendsResponse - a model defined in huaweicloud sdk"""
+        """ListBaremetalFlavorDetailExtendsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param flavors: 裸金属服务器规格列表，详情请参见表2 flavors数据结构说明。
+        :type flavors: list[:class:`huaweicloudsdkbms.v1.FlavorsResp`]
+        """
         
         super(ListBaremetalFlavorDetailExtendsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListBaremetalFlavorDetailExtendsResponse(SdkResponse):
         裸金属服务器规格列表，详情请参见表2 flavors数据结构说明。
 
         :return: The flavors of this ListBaremetalFlavorDetailExtendsResponse.
-        :rtype: list[FlavorsResp]
+        :rtype: list[:class:`huaweicloudsdkbms.v1.FlavorsResp`]
         """
         return self._flavors
 
@@ -58,7 +63,7 @@ class ListBaremetalFlavorDetailExtendsResponse(SdkResponse):
         裸金属服务器规格列表，详情请参见表2 flavors数据结构说明。
 
         :param flavors: The flavors of this ListBaremetalFlavorDetailExtendsResponse.
-        :type: list[FlavorsResp]
+        :type flavors: list[:class:`huaweicloudsdkbms.v1.FlavorsResp`]
         """
         self._flavors = flavors
 

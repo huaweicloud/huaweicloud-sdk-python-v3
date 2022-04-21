@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchCreateJobsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchCreateJobsResponse(SdkResponse):
     }
 
     def __init__(self, results=None, count=None):
-        """BatchCreateJobsResponse - a model defined in huaweicloud sdk"""
+        """BatchCreateJobsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param results: 批量创建任务的响应体集合。
+        :type results: list[:class:`huaweicloudsdkdrs.v3.CreateJobResp`]
+        :param count: 总记录数。
+        :type count: int
+        """
         
         super(BatchCreateJobsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class BatchCreateJobsResponse(SdkResponse):
         批量创建任务的响应体集合。
 
         :return: The results of this BatchCreateJobsResponse.
-        :rtype: list[CreateJobResp]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.CreateJobResp`]
         """
         return self._results
 
@@ -63,7 +70,7 @@ class BatchCreateJobsResponse(SdkResponse):
         批量创建任务的响应体集合。
 
         :param results: The results of this BatchCreateJobsResponse.
-        :type: list[CreateJobResp]
+        :type results: list[:class:`huaweicloudsdkdrs.v3.CreateJobResp`]
         """
         self._results = results
 
@@ -85,7 +92,7 @@ class BatchCreateJobsResponse(SdkResponse):
         总记录数。
 
         :param count: The count of this BatchCreateJobsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

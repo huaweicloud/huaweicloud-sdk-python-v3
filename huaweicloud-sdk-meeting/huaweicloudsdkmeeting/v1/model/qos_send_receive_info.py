@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QosSendReceiveInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class QosSendReceiveInfo:
     }
 
     def __init__(self, bitrate=None, latency=None, jitter=None, packet_loss_max=None, resolution=None, frame=None):
-        """QosSendReceiveInfo - a model defined in huaweicloud sdk"""
+        """QosSendReceiveInfo
+
+        The model defined in huaweicloud sdk
+
+        :param bitrate: 码率, 单位kbps，不含阈值告警。当qosType &#x3D; audio/video/screen 时有效。
+        :type bitrate: list[:class:`huaweicloudsdkmeeting.v1.QosDataNoThrElement`]
+        :param latency: 时延，单位毫秒, 含阈值告警。当qosType &#x3D; audio/video/screen 时有效。
+        :type latency: list[:class:`huaweicloudsdkmeeting.v1.QosDataElement`]
+        :param jitter: 抖动, 单位毫秒，含阈值告警。当qosType &#x3D; audio/video/screen 时有效。
+        :type jitter: list[:class:`huaweicloudsdkmeeting.v1.QosDataElement`]
+        :param packet_loss_max: 最大丢包率, 单位百分比 含阈值告警。当qosType &#x3D; audio/video/screen 时有效。
+        :type packet_loss_max: list[:class:`huaweicloudsdkmeeting.v1.QosDataElement`]
+        :param resolution: 分辨率, 不含阈值告警。当qosType &#x3D; video/screen 时有效。
+        :type resolution: list[:class:`huaweicloudsdkmeeting.v1.QosDataNoThrElement`]
+        :param frame: 帧率, 单位fps，不含阈值告警。当qosType &#x3D; video/screen 时有效。
+        :type frame: list[:class:`huaweicloudsdkmeeting.v1.QosDataNoThrElement`]
+        """
         
         
 
@@ -72,7 +87,7 @@ class QosSendReceiveInfo:
         码率, 单位kbps，不含阈值告警。当qosType = audio/video/screen 时有效。
 
         :return: The bitrate of this QosSendReceiveInfo.
-        :rtype: list[QosDataNoThrElement]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.QosDataNoThrElement`]
         """
         return self._bitrate
 
@@ -83,7 +98,7 @@ class QosSendReceiveInfo:
         码率, 单位kbps，不含阈值告警。当qosType = audio/video/screen 时有效。
 
         :param bitrate: The bitrate of this QosSendReceiveInfo.
-        :type: list[QosDataNoThrElement]
+        :type bitrate: list[:class:`huaweicloudsdkmeeting.v1.QosDataNoThrElement`]
         """
         self._bitrate = bitrate
 
@@ -94,7 +109,7 @@ class QosSendReceiveInfo:
         时延，单位毫秒, 含阈值告警。当qosType = audio/video/screen 时有效。
 
         :return: The latency of this QosSendReceiveInfo.
-        :rtype: list[QosDataElement]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.QosDataElement`]
         """
         return self._latency
 
@@ -105,7 +120,7 @@ class QosSendReceiveInfo:
         时延，单位毫秒, 含阈值告警。当qosType = audio/video/screen 时有效。
 
         :param latency: The latency of this QosSendReceiveInfo.
-        :type: list[QosDataElement]
+        :type latency: list[:class:`huaweicloudsdkmeeting.v1.QosDataElement`]
         """
         self._latency = latency
 
@@ -116,7 +131,7 @@ class QosSendReceiveInfo:
         抖动, 单位毫秒，含阈值告警。当qosType = audio/video/screen 时有效。
 
         :return: The jitter of this QosSendReceiveInfo.
-        :rtype: list[QosDataElement]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.QosDataElement`]
         """
         return self._jitter
 
@@ -127,7 +142,7 @@ class QosSendReceiveInfo:
         抖动, 单位毫秒，含阈值告警。当qosType = audio/video/screen 时有效。
 
         :param jitter: The jitter of this QosSendReceiveInfo.
-        :type: list[QosDataElement]
+        :type jitter: list[:class:`huaweicloudsdkmeeting.v1.QosDataElement`]
         """
         self._jitter = jitter
 
@@ -138,7 +153,7 @@ class QosSendReceiveInfo:
         最大丢包率, 单位百分比 含阈值告警。当qosType = audio/video/screen 时有效。
 
         :return: The packet_loss_max of this QosSendReceiveInfo.
-        :rtype: list[QosDataElement]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.QosDataElement`]
         """
         return self._packet_loss_max
 
@@ -149,7 +164,7 @@ class QosSendReceiveInfo:
         最大丢包率, 单位百分比 含阈值告警。当qosType = audio/video/screen 时有效。
 
         :param packet_loss_max: The packet_loss_max of this QosSendReceiveInfo.
-        :type: list[QosDataElement]
+        :type packet_loss_max: list[:class:`huaweicloudsdkmeeting.v1.QosDataElement`]
         """
         self._packet_loss_max = packet_loss_max
 
@@ -160,7 +175,7 @@ class QosSendReceiveInfo:
         分辨率, 不含阈值告警。当qosType = video/screen 时有效。
 
         :return: The resolution of this QosSendReceiveInfo.
-        :rtype: list[QosDataNoThrElement]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.QosDataNoThrElement`]
         """
         return self._resolution
 
@@ -171,7 +186,7 @@ class QosSendReceiveInfo:
         分辨率, 不含阈值告警。当qosType = video/screen 时有效。
 
         :param resolution: The resolution of this QosSendReceiveInfo.
-        :type: list[QosDataNoThrElement]
+        :type resolution: list[:class:`huaweicloudsdkmeeting.v1.QosDataNoThrElement`]
         """
         self._resolution = resolution
 
@@ -182,7 +197,7 @@ class QosSendReceiveInfo:
         帧率, 单位fps，不含阈值告警。当qosType = video/screen 时有效。
 
         :return: The frame of this QosSendReceiveInfo.
-        :rtype: list[QosDataNoThrElement]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.QosDataNoThrElement`]
         """
         return self._frame
 
@@ -193,7 +208,7 @@ class QosSendReceiveInfo:
         帧率, 单位fps，不含阈值告警。当qosType = video/screen 时有效。
 
         :param frame: The frame of this QosSendReceiveInfo.
-        :type: list[QosDataNoThrElement]
+        :type frame: list[:class:`huaweicloudsdkmeeting.v1.QosDataNoThrElement`]
         """
         self._frame = frame
 

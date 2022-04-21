@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateDeploymentJobsParams:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateDeploymentJobsParams:
     }
 
     def __init__(self, function=None):
-        """CreateDeploymentJobsParams - a model defined in huaweicloud sdk"""
+        """CreateDeploymentJobsParams
+
+        The model defined in huaweicloud sdk
+
+        :param function: 
+        :type function: :class:`huaweicloudsdkdevstar.v1.FGSDeploymentJobsParam`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateDeploymentJobsParams:
 
 
         :return: The function of this CreateDeploymentJobsParams.
-        :rtype: FGSDeploymentJobsParam
+        :rtype: :class:`huaweicloudsdkdevstar.v1.FGSDeploymentJobsParam`
         """
         return self._function
 
@@ -56,7 +61,7 @@ class CreateDeploymentJobsParams:
 
 
         :param function: The function of this CreateDeploymentJobsParams.
-        :type: FGSDeploymentJobsParam
+        :type function: :class:`huaweicloudsdkdevstar.v1.FGSDeploymentJobsParam`
         """
         self._function = function
 

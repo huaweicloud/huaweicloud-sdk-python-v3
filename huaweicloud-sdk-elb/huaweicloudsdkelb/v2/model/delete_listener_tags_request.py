@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteListenerTagsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteListenerTagsRequest:
     }
 
     def __init__(self, listener_id=None, key=None):
-        """DeleteListenerTagsRequest - a model defined in huaweicloud sdk"""
+        """DeleteListenerTagsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param listener_id: 监听器ID
+        :type listener_id: str
+        :param key: 待删除标签的key值。
+        :type key: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class DeleteListenerTagsRequest:
         监听器ID
 
         :param listener_id: The listener_id of this DeleteListenerTagsRequest.
-        :type: str
+        :type listener_id: str
         """
         self._listener_id = listener_id
 
@@ -83,7 +90,7 @@ class DeleteListenerTagsRequest:
         待删除标签的key值。
 
         :param key: The key of this DeleteListenerTagsRequest.
-        :type: str
+        :type key: str
         """
         self._key = key
 

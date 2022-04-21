@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DownloadBlockchainCertResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class DownloadBlockchainCertResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DownloadBlockchainCertResponse - a model defined in huaweicloud sdk"""
+        """DownloadBlockchainCertResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(DownloadBlockchainCertResponse, self).__init__()
         self.discriminator = None

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MysqlUpdateBackupPolicyRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class MysqlUpdateBackupPolicyRequest:
     }
 
     def __init__(self, backup_policy=None):
-        """MysqlUpdateBackupPolicyRequest - a model defined in huaweicloud sdk"""
+        """MysqlUpdateBackupPolicyRequest
+
+        The model defined in huaweicloud sdk
+
+        :param backup_policy: 
+        :type backup_policy: :class:`huaweicloudsdkgaussdb.v3.MysqlBackupPolicy`
+        """
         
         
 
@@ -45,7 +50,7 @@ class MysqlUpdateBackupPolicyRequest:
 
 
         :return: The backup_policy of this MysqlUpdateBackupPolicyRequest.
-        :rtype: MysqlBackupPolicy
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlBackupPolicy`
         """
         return self._backup_policy
 
@@ -55,7 +60,7 @@ class MysqlUpdateBackupPolicyRequest:
 
 
         :param backup_policy: The backup_policy of this MysqlUpdateBackupPolicyRequest.
-        :type: MysqlBackupPolicy
+        :type backup_policy: :class:`huaweicloudsdkgaussdb.v3.MysqlBackupPolicy`
         """
         self._backup_policy = backup_policy
 

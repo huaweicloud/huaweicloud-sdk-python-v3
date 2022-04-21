@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApiMockCreate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ApiMockCreate:
     }
 
     def __init__(self, remark=None, result_content=None, version=None, authorizer_id=None):
-        """ApiMockCreate - a model defined in huaweicloud sdk"""
+        """ApiMockCreate
+
+        The model defined in huaweicloud sdk
+
+        :param remark: 描述信息。长度不超过255个字符 &gt; 中文字符必须为UTF-8或者unicode编码。
+        :type remark: str
+        :param result_content: 返回结果
+        :type result_content: str
+        :param version: 版本。字符长度不超过64
+        :type version: str
+        :param authorizer_id: 后端自定义认证ID
+        :type authorizer_id: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class ApiMockCreate:
         描述信息。长度不超过255个字符 > 中文字符必须为UTF-8或者unicode编码。
 
         :param remark: The remark of this ApiMockCreate.
-        :type: str
+        :type remark: str
         """
         self._remark = remark
 
@@ -95,7 +106,7 @@ class ApiMockCreate:
         返回结果
 
         :param result_content: The result_content of this ApiMockCreate.
-        :type: str
+        :type result_content: str
         """
         self._result_content = result_content
 
@@ -117,7 +128,7 @@ class ApiMockCreate:
         版本。字符长度不超过64
 
         :param version: The version of this ApiMockCreate.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -139,7 +150,7 @@ class ApiMockCreate:
         后端自定义认证ID
 
         :param authorizer_id: The authorizer_id of this ApiMockCreate.
-        :type: str
+        :type authorizer_id: str
         """
         self._authorizer_id = authorizer_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCertificatesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListCertificatesResponse(SdkResponse):
     }
 
     def __init__(self, certificates=None, instance_num=None):
-        """ListCertificatesResponse - a model defined in huaweicloud sdk"""
+        """ListCertificatesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param certificates: SSL证书列表对象
+        :type certificates: list[:class:`huaweicloudsdkelb.v2.CertificateResp`]
+        :param instance_num: 证书的个数
+        :type instance_num: int
+        """
         
         super(ListCertificatesResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListCertificatesResponse(SdkResponse):
         SSL证书列表对象
 
         :return: The certificates of this ListCertificatesResponse.
-        :rtype: list[CertificateResp]
+        :rtype: list[:class:`huaweicloudsdkelb.v2.CertificateResp`]
         """
         return self._certificates
 
@@ -63,7 +70,7 @@ class ListCertificatesResponse(SdkResponse):
         SSL证书列表对象
 
         :param certificates: The certificates of this ListCertificatesResponse.
-        :type: list[CertificateResp]
+        :type certificates: list[:class:`huaweicloudsdkelb.v2.CertificateResp`]
         """
         self._certificates = certificates
 
@@ -85,7 +92,7 @@ class ListCertificatesResponse(SdkResponse):
         证书的个数
 
         :param instance_num: The instance_num of this ListCertificatesResponse.
-        :type: int
+        :type instance_num: int
         """
         self._instance_num = instance_num
 

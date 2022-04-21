@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ActionProgress:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ActionProgress:
     }
 
     def __init__(self, creating=None):
-        """ActionProgress - a model defined in huaweicloud sdk"""
+        """ActionProgress
+
+        The model defined in huaweicloud sdk
+
+        :param creating: 创建文件系统的进度。
+        :type creating: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class ActionProgress:
         创建文件系统的进度。
 
         :param creating: The creating of this ActionProgress.
-        :type: str
+        :type creating: str
         """
         self._creating = creating
 

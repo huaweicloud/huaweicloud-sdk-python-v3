@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RespMetadata:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RespMetadata:
     }
 
     def __init__(self, os_type=None):
-        """RespMetadata - a model defined in huaweicloud sdk"""
+        """RespMetadata
+
+        The model defined in huaweicloud sdk
+
+        :param os_type: 弹性云服务器系统类型。
+        :type os_type: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class RespMetadata:
         弹性云服务器系统类型。
 
         :param os_type: The os_type of this RespMetadata.
-        :type: str
+        :type os_type: str
         """
         self._os_type = os_type
 

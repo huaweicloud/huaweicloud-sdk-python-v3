@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRecordDataResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListRecordDataResponse(SdkResponse):
     }
 
     def __init__(self, record_data_list=None, x_request_id=None):
-        """ListRecordDataResponse - a model defined in huaweicloud sdk"""
+        """ListRecordDataResponse
+
+        The model defined in huaweicloud sdk
+
+        :param record_data_list: 采样数据列表。 
+        :type record_data_list: list[:class:`huaweicloudsdklive.v2.RecordData`]
+        :param x_request_id: 
+        :type x_request_id: str
+        """
         
         super(ListRecordDataResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListRecordDataResponse(SdkResponse):
         采样数据列表。 
 
         :return: The record_data_list of this ListRecordDataResponse.
-        :rtype: list[RecordData]
+        :rtype: list[:class:`huaweicloudsdklive.v2.RecordData`]
         """
         return self._record_data_list
 
@@ -63,7 +70,7 @@ class ListRecordDataResponse(SdkResponse):
         采样数据列表。 
 
         :param record_data_list: The record_data_list of this ListRecordDataResponse.
-        :type: list[RecordData]
+        :type record_data_list: list[:class:`huaweicloudsdklive.v2.RecordData`]
         """
         self._record_data_list = record_data_list
 
@@ -83,7 +90,7 @@ class ListRecordDataResponse(SdkResponse):
 
 
         :param x_request_id: The x_request_id of this ListRecordDataResponse.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 

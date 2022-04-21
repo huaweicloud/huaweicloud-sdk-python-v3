@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AgencyPolicyRoleOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class AgencyPolicyRoleOption:
     }
 
     def __init__(self, display_name=None, type=None, description=None, description_cn=None, policy=None):
-        """AgencyPolicyRoleOption - a model defined in huaweicloud sdk"""
+        """AgencyPolicyRoleOption
+
+        The model defined in huaweicloud sdk
+
+        :param display_name: 自定义策略展示名。
+        :type display_name: str
+        :param type: 自定义策略的显示模式。 &gt; - AX表示在domain层显示。 &gt; - XA表示在project层显示。 &gt; - 自定义策略的显示模式只能为AX或者XA，不能在domain层和project层都显示（AA），或者在domain层和project层都不显示（XX）。
+        :type type: str
+        :param description: 自定义策略的描述信息。
+        :type description: str
+        :param description_cn: 自定义策略的中文描述信息。
+        :type description_cn: str
+        :param policy: 
+        :type policy: :class:`huaweicloudsdkiam.v3.AgencyPolicy`
+        """
         
         
 
@@ -74,7 +87,7 @@ class AgencyPolicyRoleOption:
         自定义策略展示名。
 
         :param display_name: The display_name of this AgencyPolicyRoleOption.
-        :type: str
+        :type display_name: str
         """
         self._display_name = display_name
 
@@ -96,7 +109,7 @@ class AgencyPolicyRoleOption:
         自定义策略的显示模式。 > - AX表示在domain层显示。 > - XA表示在project层显示。 > - 自定义策略的显示模式只能为AX或者XA，不能在domain层和project层都显示（AA），或者在domain层和project层都不显示（XX）。
 
         :param type: The type of this AgencyPolicyRoleOption.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -118,7 +131,7 @@ class AgencyPolicyRoleOption:
         自定义策略的描述信息。
 
         :param description: The description of this AgencyPolicyRoleOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -140,7 +153,7 @@ class AgencyPolicyRoleOption:
         自定义策略的中文描述信息。
 
         :param description_cn: The description_cn of this AgencyPolicyRoleOption.
-        :type: str
+        :type description_cn: str
         """
         self._description_cn = description_cn
 
@@ -150,7 +163,7 @@ class AgencyPolicyRoleOption:
 
 
         :return: The policy of this AgencyPolicyRoleOption.
-        :rtype: AgencyPolicy
+        :rtype: :class:`huaweicloudsdkiam.v3.AgencyPolicy`
         """
         return self._policy
 
@@ -160,7 +173,7 @@ class AgencyPolicyRoleOption:
 
 
         :param policy: The policy of this AgencyPolicyRoleOption.
-        :type: AgencyPolicy
+        :type policy: :class:`huaweicloudsdkiam.v3.AgencyPolicy`
         """
         self._policy = policy
 

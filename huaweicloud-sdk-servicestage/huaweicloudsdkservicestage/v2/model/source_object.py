@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SourceObject:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class SourceObject:
     }
 
     def __init__(self, kind=None, spec=None):
-        """SourceObject - a model defined in huaweicloud sdk"""
+        """SourceObject
+
+        The model defined in huaweicloud sdk
+
+        :param kind: 
+        :type kind: :class:`huaweicloudsdkservicestage.v2.SourceKind`
+        :param spec: 
+        :type spec: :class:`huaweicloudsdkservicestage.v2.SourceOrArtifact`
+        """
         
         
 
@@ -51,7 +58,7 @@ class SourceObject:
 
 
         :return: The kind of this SourceObject.
-        :rtype: SourceKind
+        :rtype: :class:`huaweicloudsdkservicestage.v2.SourceKind`
         """
         return self._kind
 
@@ -61,7 +68,7 @@ class SourceObject:
 
 
         :param kind: The kind of this SourceObject.
-        :type: SourceKind
+        :type kind: :class:`huaweicloudsdkservicestage.v2.SourceKind`
         """
         self._kind = kind
 
@@ -71,7 +78,7 @@ class SourceObject:
 
 
         :return: The spec of this SourceObject.
-        :rtype: SourceOrArtifact
+        :rtype: :class:`huaweicloudsdkservicestage.v2.SourceOrArtifact`
         """
         return self._spec
 
@@ -81,7 +88,7 @@ class SourceObject:
 
 
         :param spec: The spec of this SourceObject.
-        :type: SourceOrArtifact
+        :type spec: :class:`huaweicloudsdkservicestage.v2.SourceOrArtifact`
         """
         self._spec = spec
 

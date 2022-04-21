@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteAssetModelRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteAssetModelRequest:
     }
 
     def __init__(self, model_id=None):
-        """DeleteAssetModelRequest - a model defined in huaweicloud sdk"""
+        """DeleteAssetModelRequest
+
+        The model defined in huaweicloud sdk
+
+        :param model_id: 模型ID
+        :type model_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteAssetModelRequest:
         模型ID
 
         :param model_id: The model_id of this DeleteAssetModelRequest.
-        :type: str
+        :type model_id: str
         """
         self._model_id = model_id
 

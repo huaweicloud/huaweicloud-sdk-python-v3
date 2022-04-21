@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListProductCategoriesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListProductCategoriesResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, incident_product_category_list=None):
-        """ListProductCategoriesResponse - a model defined in huaweicloud sdk"""
+        """ListProductCategoriesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total_count: 总数
+        :type total_count: int
+        :param incident_product_category_list: 产品类型列表
+        :type incident_product_category_list: list[:class:`huaweicloudsdkosm.v2.IncidentProductCategoryV2`]
+        """
         
         super(ListProductCategoriesResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListProductCategoriesResponse(SdkResponse):
         总数
 
         :param total_count: The total_count of this ListProductCategoriesResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 
@@ -74,7 +81,7 @@ class ListProductCategoriesResponse(SdkResponse):
         产品类型列表
 
         :return: The incident_product_category_list of this ListProductCategoriesResponse.
-        :rtype: list[IncidentProductCategoryV2]
+        :rtype: list[:class:`huaweicloudsdkosm.v2.IncidentProductCategoryV2`]
         """
         return self._incident_product_category_list
 
@@ -85,7 +92,7 @@ class ListProductCategoriesResponse(SdkResponse):
         产品类型列表
 
         :param incident_product_category_list: The incident_product_category_list of this ListProductCategoriesResponse.
-        :type: list[IncidentProductCategoryV2]
+        :type incident_product_category_list: list[:class:`huaweicloudsdkosm.v2.IncidentProductCategoryV2`]
         """
         self._incident_product_category_list = incident_product_category_list
 

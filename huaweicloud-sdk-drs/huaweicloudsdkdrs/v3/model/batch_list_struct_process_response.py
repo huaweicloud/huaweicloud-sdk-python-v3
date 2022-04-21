@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchListStructProcessResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchListStructProcessResponse(SdkResponse):
     }
 
     def __init__(self, results=None, count=None):
-        """BatchListStructProcessResponse - a model defined in huaweicloud sdk"""
+        """BatchListStructProcessResponse
+
+        The model defined in huaweicloud sdk
+
+        :param results: 批量查询灾备初始化进度返回列表
+        :type results: list[:class:`huaweicloudsdkdrs.v3.QueryStructProcessResp`]
+        :param count: 总数
+        :type count: int
+        """
         
         super(BatchListStructProcessResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class BatchListStructProcessResponse(SdkResponse):
         批量查询灾备初始化进度返回列表
 
         :return: The results of this BatchListStructProcessResponse.
-        :rtype: list[QueryStructProcessResp]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.QueryStructProcessResp`]
         """
         return self._results
 
@@ -63,7 +70,7 @@ class BatchListStructProcessResponse(SdkResponse):
         批量查询灾备初始化进度返回列表
 
         :param results: The results of this BatchListStructProcessResponse.
-        :type: list[QueryStructProcessResp]
+        :type results: list[:class:`huaweicloudsdkdrs.v3.QueryStructProcessResp`]
         """
         self._results = results
 
@@ -85,7 +92,7 @@ class BatchListStructProcessResponse(SdkResponse):
         总数
 
         :param count: The count of this BatchListStructProcessResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

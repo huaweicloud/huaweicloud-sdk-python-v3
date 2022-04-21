@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListFailureJobsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListFailureJobsResponse(SdkResponse):
     }
 
     def __init__(self, failure_jobs=None, count=None):
-        """ListFailureJobsResponse - a model defined in huaweicloud sdk"""
+        """ListFailureJobsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param failure_jobs: 失败任务信息列表。
+        :type failure_jobs: list[:class:`huaweicloudsdksdrs.v1.FailureJobParams`]
+        :param count: 列表中失败任务个数。
+        :type count: int
+        """
         
         super(ListFailureJobsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListFailureJobsResponse(SdkResponse):
         失败任务信息列表。
 
         :return: The failure_jobs of this ListFailureJobsResponse.
-        :rtype: list[FailureJobParams]
+        :rtype: list[:class:`huaweicloudsdksdrs.v1.FailureJobParams`]
         """
         return self._failure_jobs
 
@@ -63,7 +70,7 @@ class ListFailureJobsResponse(SdkResponse):
         失败任务信息列表。
 
         :param failure_jobs: The failure_jobs of this ListFailureJobsResponse.
-        :type: list[FailureJobParams]
+        :type failure_jobs: list[:class:`huaweicloudsdksdrs.v1.FailureJobParams`]
         """
         self._failure_jobs = failure_jobs
 
@@ -85,7 +92,7 @@ class ListFailureJobsResponse(SdkResponse):
         列表中失败任务个数。
 
         :param count: The count of this ListFailureJobsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

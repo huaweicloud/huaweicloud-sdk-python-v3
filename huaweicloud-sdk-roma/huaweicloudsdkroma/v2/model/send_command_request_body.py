@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SendCommandRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class SendCommandRequestBody:
     }
 
     def __init__(self, service_id=None, command_id=None, is_sync=None, requests=None):
-        """SendCommandRequestBody - a model defined in huaweicloud sdk"""
+        """SendCommandRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param service_id: 服务ID，自动向下取整
+        :type service_id: int
+        :param command_id: 命令ID，自动向下取整
+        :type command_id: int
+        :param is_sync: 命令是否同步 true-同步 false-异步 同步命令会将命令以MQTT消息发送给设备后等待设备的MQTT命令响应，收到响应后再回复响应（默认超时5秒），异步命令则以立即返回响应
+        :type is_sync: bool
+        :param requests: 请求参数列表
+        :type requests: list[:class:`huaweicloudsdkroma.v2.RequestParameter`]
+        """
         
         
 
@@ -70,7 +81,7 @@ class SendCommandRequestBody:
         服务ID，自动向下取整
 
         :param service_id: The service_id of this SendCommandRequestBody.
-        :type: int
+        :type service_id: int
         """
         self._service_id = service_id
 
@@ -92,7 +103,7 @@ class SendCommandRequestBody:
         命令ID，自动向下取整
 
         :param command_id: The command_id of this SendCommandRequestBody.
-        :type: int
+        :type command_id: int
         """
         self._command_id = command_id
 
@@ -114,7 +125,7 @@ class SendCommandRequestBody:
         命令是否同步 true-同步 false-异步 同步命令会将命令以MQTT消息发送给设备后等待设备的MQTT命令响应，收到响应后再回复响应（默认超时5秒），异步命令则以立即返回响应
 
         :param is_sync: The is_sync of this SendCommandRequestBody.
-        :type: bool
+        :type is_sync: bool
         """
         self._is_sync = is_sync
 
@@ -125,7 +136,7 @@ class SendCommandRequestBody:
         请求参数列表
 
         :return: The requests of this SendCommandRequestBody.
-        :rtype: list[RequestParameter]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.RequestParameter`]
         """
         return self._requests
 
@@ -136,7 +147,7 @@ class SendCommandRequestBody:
         请求参数列表
 
         :param requests: The requests of this SendCommandRequestBody.
-        :type: list[RequestParameter]
+        :type requests: list[:class:`huaweicloudsdkroma.v2.RequestParameter`]
         """
         self._requests = requests
 

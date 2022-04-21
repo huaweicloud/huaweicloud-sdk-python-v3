@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunAudioAssessmentResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class RunAudioAssessmentResponse(SdkResponse):
     }
 
     def __init__(self, score=None, completeness=None, duration=None, pronunciation=None, fluency=None, words=None, trace_id=None):
-        """RunAudioAssessmentResponse - a model defined in huaweicloud sdk"""
+        """RunAudioAssessmentResponse
+
+        The model defined in huaweicloud sdk
+
+        :param score: 综合评分，0-100
+        :type score: float
+        :param completeness: 完整性评分，0-100 表示有多少比例的单词发音是清楚的
+        :type completeness: float
+        :param duration: 音频/视频时长，单位秒
+        :type duration: float
+        :param pronunciation: 
+        :type pronunciation: :class:`huaweicloudsdksis.v1.Pronunciation`
+        :param fluency: 
+        :type fluency: :class:`huaweicloudsdksis.v1.Fluency`
+        :param words: 单词评测打分表
+        :type words: list[:class:`huaweicloudsdksis.v1.Word`]
+        :param trace_id: 评测失败时定位问题使用的字段
+        :type trace_id: str
+        """
         
         super(RunAudioAssessmentResponse, self).__init__()
 
@@ -88,7 +105,7 @@ class RunAudioAssessmentResponse(SdkResponse):
         综合评分，0-100
 
         :param score: The score of this RunAudioAssessmentResponse.
-        :type: float
+        :type score: float
         """
         self._score = score
 
@@ -110,7 +127,7 @@ class RunAudioAssessmentResponse(SdkResponse):
         完整性评分，0-100 表示有多少比例的单词发音是清楚的
 
         :param completeness: The completeness of this RunAudioAssessmentResponse.
-        :type: float
+        :type completeness: float
         """
         self._completeness = completeness
 
@@ -132,7 +149,7 @@ class RunAudioAssessmentResponse(SdkResponse):
         音频/视频时长，单位秒
 
         :param duration: The duration of this RunAudioAssessmentResponse.
-        :type: float
+        :type duration: float
         """
         self._duration = duration
 
@@ -142,7 +159,7 @@ class RunAudioAssessmentResponse(SdkResponse):
 
 
         :return: The pronunciation of this RunAudioAssessmentResponse.
-        :rtype: Pronunciation
+        :rtype: :class:`huaweicloudsdksis.v1.Pronunciation`
         """
         return self._pronunciation
 
@@ -152,7 +169,7 @@ class RunAudioAssessmentResponse(SdkResponse):
 
 
         :param pronunciation: The pronunciation of this RunAudioAssessmentResponse.
-        :type: Pronunciation
+        :type pronunciation: :class:`huaweicloudsdksis.v1.Pronunciation`
         """
         self._pronunciation = pronunciation
 
@@ -162,7 +179,7 @@ class RunAudioAssessmentResponse(SdkResponse):
 
 
         :return: The fluency of this RunAudioAssessmentResponse.
-        :rtype: Fluency
+        :rtype: :class:`huaweicloudsdksis.v1.Fluency`
         """
         return self._fluency
 
@@ -172,7 +189,7 @@ class RunAudioAssessmentResponse(SdkResponse):
 
 
         :param fluency: The fluency of this RunAudioAssessmentResponse.
-        :type: Fluency
+        :type fluency: :class:`huaweicloudsdksis.v1.Fluency`
         """
         self._fluency = fluency
 
@@ -183,7 +200,7 @@ class RunAudioAssessmentResponse(SdkResponse):
         单词评测打分表
 
         :return: The words of this RunAudioAssessmentResponse.
-        :rtype: list[Word]
+        :rtype: list[:class:`huaweicloudsdksis.v1.Word`]
         """
         return self._words
 
@@ -194,7 +211,7 @@ class RunAudioAssessmentResponse(SdkResponse):
         单词评测打分表
 
         :param words: The words of this RunAudioAssessmentResponse.
-        :type: list[Word]
+        :type words: list[:class:`huaweicloudsdksis.v1.Word`]
         """
         self._words = words
 
@@ -216,7 +233,7 @@ class RunAudioAssessmentResponse(SdkResponse):
         评测失败时定位问题使用的字段
 
         :param trace_id: The trace_id of this RunAudioAssessmentResponse.
-        :type: str
+        :type trace_id: str
         """
         self._trace_id = trace_id
 

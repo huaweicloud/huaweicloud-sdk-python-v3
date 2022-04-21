@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SecurityPolicy:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class SecurityPolicy:
     }
 
     def __init__(self, id=None, project_id=None, name=None, description=None, listeners=None, protocols=None, ciphers=None, created_at=None, updated_at=None):
-        """SecurityPolicy - a model defined in huaweicloud sdk"""
+        """SecurityPolicy
+
+        The model defined in huaweicloud sdk
+
+        :param id: 自定义安全安全策略的id。
+        :type id: str
+        :param project_id: 自定义安全策略的项目id。
+        :type project_id: str
+        :param name: 自定义安全策略的名称
+        :type name: str
+        :param description: 自定义安全策略的描述。
+        :type description: str
+        :param listeners: 
+        :type listeners: :class:`huaweicloudsdkelb.v3.ListenerRef`
+        :param protocols: 自定义安全策略的TLS协议列表。
+        :type protocols: list[str]
+        :param ciphers: 自定义安全策略的加密套件列表。
+        :type ciphers: list[str]
+        :param created_at: 自定义安全策略的创建时间。
+        :type created_at: str
+        :param updated_at: 自定义安全策略的更新时间。
+        :type updated_at: str
+        """
         
         
 
@@ -89,7 +110,7 @@ class SecurityPolicy:
         自定义安全安全策略的id。
 
         :param id: The id of this SecurityPolicy.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -111,7 +132,7 @@ class SecurityPolicy:
         自定义安全策略的项目id。
 
         :param project_id: The project_id of this SecurityPolicy.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -133,7 +154,7 @@ class SecurityPolicy:
         自定义安全策略的名称
 
         :param name: The name of this SecurityPolicy.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -155,7 +176,7 @@ class SecurityPolicy:
         自定义安全策略的描述。
 
         :param description: The description of this SecurityPolicy.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -165,7 +186,7 @@ class SecurityPolicy:
 
 
         :return: The listeners of this SecurityPolicy.
-        :rtype: ListenerRef
+        :rtype: :class:`huaweicloudsdkelb.v3.ListenerRef`
         """
         return self._listeners
 
@@ -175,7 +196,7 @@ class SecurityPolicy:
 
 
         :param listeners: The listeners of this SecurityPolicy.
-        :type: ListenerRef
+        :type listeners: :class:`huaweicloudsdkelb.v3.ListenerRef`
         """
         self._listeners = listeners
 
@@ -197,7 +218,7 @@ class SecurityPolicy:
         自定义安全策略的TLS协议列表。
 
         :param protocols: The protocols of this SecurityPolicy.
-        :type: list[str]
+        :type protocols: list[str]
         """
         self._protocols = protocols
 
@@ -219,7 +240,7 @@ class SecurityPolicy:
         自定义安全策略的加密套件列表。
 
         :param ciphers: The ciphers of this SecurityPolicy.
-        :type: list[str]
+        :type ciphers: list[str]
         """
         self._ciphers = ciphers
 
@@ -241,7 +262,7 @@ class SecurityPolicy:
         自定义安全策略的创建时间。
 
         :param created_at: The created_at of this SecurityPolicy.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -263,7 +284,7 @@ class SecurityPolicy:
         自定义安全策略的更新时间。
 
         :param updated_at: The updated_at of this SecurityPolicy.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 

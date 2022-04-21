@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ScalingGroupInstance:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class ScalingGroupInstance:
     }
 
     def __init__(self, instance_id=None, instance_name=None, scaling_group_id=None, scaling_group_name=None, life_cycle_state=None, health_status=None, scaling_configuration_name=None, scaling_configuration_id=None, create_time=None, protect_from_scaling_down=None):
-        """ScalingGroupInstance - a model defined in huaweicloud sdk"""
+        """ScalingGroupInstance
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param instance_name: 实例名称。
+        :type instance_name: str
+        :param scaling_group_id: 实例所在伸缩组ID。
+        :type scaling_group_id: str
+        :param scaling_group_name: 实例所在伸缩组名称。
+        :type scaling_group_name: str
+        :param life_cycle_state: 实例在伸缩组中的生命周期状态：  - INSERVICE：已启用 - PENDING：正在加入伸缩组 - PENDING_WAIT：等待（正在加入伸缩组） - REMOVING：正在移出伸缩组 - REMOVING_WAIT：等待（正在移出伸缩组） - STANDBY：已备用 - ENTERING_STANDBY：进入备用状态
+        :type life_cycle_state: str
+        :param health_status: 实例健康状态:INITAILIZING:初始化；NORMAL：正常；ERROR：错误。
+        :type health_status: str
+        :param scaling_configuration_name: 伸缩配置名称。如果返回为空，表示伸缩配置已经被删除。如果返回MANNUAL_ADD，表示实例为手动加入。
+        :type scaling_configuration_name: str
+        :param scaling_configuration_id: 伸缩配置ID。
+        :type scaling_configuration_id: str
+        :param create_time: 实例加入伸缩组的时间，遵循UTC时间。
+        :type create_time: datetime
+        :param protect_from_scaling_down: 实例的实例保护属性。
+        :type protect_from_scaling_down: bool
+        """
         
         
 
@@ -103,7 +126,7 @@ class ScalingGroupInstance:
         实例ID。
 
         :param instance_id: The instance_id of this ScalingGroupInstance.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -125,7 +148,7 @@ class ScalingGroupInstance:
         实例名称。
 
         :param instance_name: The instance_name of this ScalingGroupInstance.
-        :type: str
+        :type instance_name: str
         """
         self._instance_name = instance_name
 
@@ -147,7 +170,7 @@ class ScalingGroupInstance:
         实例所在伸缩组ID。
 
         :param scaling_group_id: The scaling_group_id of this ScalingGroupInstance.
-        :type: str
+        :type scaling_group_id: str
         """
         self._scaling_group_id = scaling_group_id
 
@@ -169,7 +192,7 @@ class ScalingGroupInstance:
         实例所在伸缩组名称。
 
         :param scaling_group_name: The scaling_group_name of this ScalingGroupInstance.
-        :type: str
+        :type scaling_group_name: str
         """
         self._scaling_group_name = scaling_group_name
 
@@ -191,7 +214,7 @@ class ScalingGroupInstance:
         实例在伸缩组中的生命周期状态：  - INSERVICE：已启用 - PENDING：正在加入伸缩组 - PENDING_WAIT：等待（正在加入伸缩组） - REMOVING：正在移出伸缩组 - REMOVING_WAIT：等待（正在移出伸缩组） - STANDBY：已备用 - ENTERING_STANDBY：进入备用状态
 
         :param life_cycle_state: The life_cycle_state of this ScalingGroupInstance.
-        :type: str
+        :type life_cycle_state: str
         """
         self._life_cycle_state = life_cycle_state
 
@@ -213,7 +236,7 @@ class ScalingGroupInstance:
         实例健康状态:INITAILIZING:初始化；NORMAL：正常；ERROR：错误。
 
         :param health_status: The health_status of this ScalingGroupInstance.
-        :type: str
+        :type health_status: str
         """
         self._health_status = health_status
 
@@ -235,7 +258,7 @@ class ScalingGroupInstance:
         伸缩配置名称。如果返回为空，表示伸缩配置已经被删除。如果返回MANNUAL_ADD，表示实例为手动加入。
 
         :param scaling_configuration_name: The scaling_configuration_name of this ScalingGroupInstance.
-        :type: str
+        :type scaling_configuration_name: str
         """
         self._scaling_configuration_name = scaling_configuration_name
 
@@ -257,7 +280,7 @@ class ScalingGroupInstance:
         伸缩配置ID。
 
         :param scaling_configuration_id: The scaling_configuration_id of this ScalingGroupInstance.
-        :type: str
+        :type scaling_configuration_id: str
         """
         self._scaling_configuration_id = scaling_configuration_id
 
@@ -279,7 +302,7 @@ class ScalingGroupInstance:
         实例加入伸缩组的时间，遵循UTC时间。
 
         :param create_time: The create_time of this ScalingGroupInstance.
-        :type: datetime
+        :type create_time: datetime
         """
         self._create_time = create_time
 
@@ -301,7 +324,7 @@ class ScalingGroupInstance:
         实例的实例保护属性。
 
         :param protect_from_scaling_down: The protect_from_scaling_down of this ScalingGroupInstance.
-        :type: bool
+        :type protect_from_scaling_down: bool
         """
         self._protect_from_scaling_down = protect_from_scaling_down
 

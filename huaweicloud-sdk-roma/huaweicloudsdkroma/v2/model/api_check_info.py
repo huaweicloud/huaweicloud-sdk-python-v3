@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApiCheckInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ApiCheckInfo:
     }
 
     def __init__(self, name=None, req_method=None, req_uri=None, match_mode=None, group_id=None, roma_app_id=None, api_id=None):
-        """ApiCheckInfo - a model defined in huaweicloud sdk"""
+        """ApiCheckInfo
+
+        The model defined in huaweicloud sdk
+
+        :param name: API名称。  type &#x3D; name时必填
+        :type name: str
+        :param req_method: 请求方式。  type &#x3D; path时必填
+        :type req_method: str
+        :param req_uri: API的访问地址。  type &#x3D; path时必填
+        :type req_uri: str
+        :param match_mode: API的匹配方式 - SWA：前缀匹配 - NORMAL：正常匹配（绝对匹配）  type &#x3D; path时必填
+        :type match_mode: str
+        :param group_id: 分组ID。  校验分组下API定义是否重复时必填
+        :type group_id: str
+        :param roma_app_id: 集成应用ID。  校验应用下API定义是否重复时必填
+        :type roma_app_id: str
+        :param api_id: 需要对比的API ID
+        :type api_id: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class ApiCheckInfo:
         API名称。  type = name时必填
 
         :param name: The name of this ApiCheckInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -110,7 +127,7 @@ class ApiCheckInfo:
         请求方式。  type = path时必填
 
         :param req_method: The req_method of this ApiCheckInfo.
-        :type: str
+        :type req_method: str
         """
         self._req_method = req_method
 
@@ -132,7 +149,7 @@ class ApiCheckInfo:
         API的访问地址。  type = path时必填
 
         :param req_uri: The req_uri of this ApiCheckInfo.
-        :type: str
+        :type req_uri: str
         """
         self._req_uri = req_uri
 
@@ -154,7 +171,7 @@ class ApiCheckInfo:
         API的匹配方式 - SWA：前缀匹配 - NORMAL：正常匹配（绝对匹配）  type = path时必填
 
         :param match_mode: The match_mode of this ApiCheckInfo.
-        :type: str
+        :type match_mode: str
         """
         self._match_mode = match_mode
 
@@ -176,7 +193,7 @@ class ApiCheckInfo:
         分组ID。  校验分组下API定义是否重复时必填
 
         :param group_id: The group_id of this ApiCheckInfo.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -198,7 +215,7 @@ class ApiCheckInfo:
         集成应用ID。  校验应用下API定义是否重复时必填
 
         :param roma_app_id: The roma_app_id of this ApiCheckInfo.
-        :type: str
+        :type roma_app_id: str
         """
         self._roma_app_id = roma_app_id
 
@@ -220,7 +237,7 @@ class ApiCheckInfo:
         需要对比的API ID
 
         :param api_id: The api_id of this ApiCheckInfo.
-        :type: str
+        :type api_id: str
         """
         self._api_id = api_id
 

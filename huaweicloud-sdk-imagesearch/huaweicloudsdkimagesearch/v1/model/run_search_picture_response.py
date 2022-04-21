@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunSearchPictureResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RunSearchPictureResponse(SdkResponse):
     }
 
     def __init__(self, count=None, result=None):
-        """RunSearchPictureResponse - a model defined in huaweicloud sdk"""
+        """RunSearchPictureResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 搜索结果总数。
+        :type count: int
+        :param result: 搜索结果详情。
+        :type result: list[:class:`huaweicloudsdkimagesearch.v1.SearchPictureItem`]
+        """
         
         super(RunSearchPictureResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class RunSearchPictureResponse(SdkResponse):
         搜索结果总数。
 
         :param count: The count of this RunSearchPictureResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -74,7 +81,7 @@ class RunSearchPictureResponse(SdkResponse):
         搜索结果详情。
 
         :return: The result of this RunSearchPictureResponse.
-        :rtype: list[SearchPictureItem]
+        :rtype: list[:class:`huaweicloudsdkimagesearch.v1.SearchPictureItem`]
         """
         return self._result
 
@@ -85,7 +92,7 @@ class RunSearchPictureResponse(SdkResponse):
         搜索结果详情。
 
         :param result: The result of this RunSearchPictureResponse.
-        :type: list[SearchPictureItem]
+        :type result: list[:class:`huaweicloudsdkimagesearch.v1.SearchPictureItem`]
         """
         self._result = result
 

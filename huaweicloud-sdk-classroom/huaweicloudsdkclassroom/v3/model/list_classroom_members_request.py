@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListClassroomMembersRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListClassroomMembersRequest:
     }
 
     def __init__(self, classroom_id=None, offset=None, limit=None, filter=None):
-        """ListClassroomMembersRequest - a model defined in huaweicloud sdk"""
+        """ListClassroomMembersRequest
+
+        The model defined in huaweicloud sdk
+
+        :param classroom_id: 课堂ID
+        :type classroom_id: str
+        :param offset: 信息记录的起始编号
+        :type offset: int
+        :param limit: 每页包含的信息记录数
+        :type limit: int
+        :param filter: 按照条件搜索学生，搜索字段会同时匹配姓名，学号，用户名，班级
+        :type filter: str
+        """
         
         
 
@@ -72,7 +83,7 @@ class ListClassroomMembersRequest:
         课堂ID
 
         :param classroom_id: The classroom_id of this ListClassroomMembersRequest.
-        :type: str
+        :type classroom_id: str
         """
         self._classroom_id = classroom_id
 
@@ -94,7 +105,7 @@ class ListClassroomMembersRequest:
         信息记录的起始编号
 
         :param offset: The offset of this ListClassroomMembersRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -116,7 +127,7 @@ class ListClassroomMembersRequest:
         每页包含的信息记录数
 
         :param limit: The limit of this ListClassroomMembersRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -138,7 +149,7 @@ class ListClassroomMembersRequest:
         按照条件搜索学生，搜索字段会同时匹配姓名，学号，用户名，班级
 
         :param filter: The filter of this ListClassroomMembersRequest.
-        :type: str
+        :type filter: str
         """
         self._filter = filter
 

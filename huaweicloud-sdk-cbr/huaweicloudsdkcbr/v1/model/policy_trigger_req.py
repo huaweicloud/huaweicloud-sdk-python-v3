@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PolicyTriggerReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class PolicyTriggerReq:
     }
 
     def __init__(self, properties=None):
-        """PolicyTriggerReq - a model defined in huaweicloud sdk"""
+        """PolicyTriggerReq
+
+        The model defined in huaweicloud sdk
+
+        :param properties: 
+        :type properties: :class:`huaweicloudsdkcbr.v1.PolicyTriggerPropertiesReq`
+        """
         
         
 
@@ -45,7 +50,7 @@ class PolicyTriggerReq:
 
 
         :return: The properties of this PolicyTriggerReq.
-        :rtype: PolicyTriggerPropertiesReq
+        :rtype: :class:`huaweicloudsdkcbr.v1.PolicyTriggerPropertiesReq`
         """
         return self._properties
 
@@ -55,7 +60,7 @@ class PolicyTriggerReq:
 
 
         :param properties: The properties of this PolicyTriggerReq.
-        :type: PolicyTriggerPropertiesReq
+        :type properties: :class:`huaweicloudsdkcbr.v1.PolicyTriggerPropertiesReq`
         """
         self._properties = properties
 

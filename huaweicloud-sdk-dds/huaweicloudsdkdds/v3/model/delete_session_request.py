@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteSessionRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteSessionRequest:
     }
 
     def __init__(self, node_id=None, body=None):
-        """DeleteSessionRequest - a model defined in huaweicloud sdk"""
+        """DeleteSessionRequest
+
+        The model defined in huaweicloud sdk
+
+        :param node_id: 节点ID。允许查询的节点如下： 集群下面的 mongos节点以及 副本集、单节点实例下面的所有节点。
+        :type node_id: str
+        :param body: Body of the DeleteSessionRequest
+        :type body: :class:`huaweicloudsdkdds.v3.DeleteSessionRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class DeleteSessionRequest:
         节点ID。允许查询的节点如下： 集群下面的 mongos节点以及 副本集、单节点实例下面的所有节点。
 
         :param node_id: The node_id of this DeleteSessionRequest.
-        :type: str
+        :type node_id: str
         """
         self._node_id = node_id
 
@@ -72,7 +79,7 @@ class DeleteSessionRequest:
 
 
         :return: The body of this DeleteSessionRequest.
-        :rtype: DeleteSessionRequestBody
+        :rtype: :class:`huaweicloudsdkdds.v3.DeleteSessionRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class DeleteSessionRequest:
 
 
         :param body: The body of this DeleteSessionRequest.
-        :type: DeleteSessionRequestBody
+        :type body: :class:`huaweicloudsdkdds.v3.DeleteSessionRequestBody`
         """
         self._body = body
 

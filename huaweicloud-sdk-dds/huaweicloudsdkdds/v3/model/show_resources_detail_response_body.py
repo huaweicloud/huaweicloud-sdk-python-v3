@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowResourcesDetailResponseBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowResourcesDetailResponseBody:
     }
 
     def __init__(self, type=None, mode=None, quota=None, used=None):
-        """ShowResourcesDetailResponseBody - a model defined in huaweicloud sdk"""
+        """ShowResourcesDetailResponseBody
+
+        The model defined in huaweicloud sdk
+
+        :param type: 配额资源类型，当前配额类型仅支持实例类型（instance）。
+        :type type: str
+        :param mode: 实例类型： - 若值为“Single”，则表示单节点实例配额信息。 - 若值为“ReplicaSet”，则表示副本集实例配额信息。 - 若值为“Sharding”，则表示集群实例配额信息。
+        :type mode: str
+        :param quota: 当前配额值。
+        :type quota: int
+        :param used: 已使用的资源数。
+        :type used: int
+        """
         
         
 
@@ -69,7 +80,7 @@ class ShowResourcesDetailResponseBody:
         配额资源类型，当前配额类型仅支持实例类型（instance）。
 
         :param type: The type of this ShowResourcesDetailResponseBody.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -91,7 +102,7 @@ class ShowResourcesDetailResponseBody:
         实例类型： - 若值为“Single”，则表示单节点实例配额信息。 - 若值为“ReplicaSet”，则表示副本集实例配额信息。 - 若值为“Sharding”，则表示集群实例配额信息。
 
         :param mode: The mode of this ShowResourcesDetailResponseBody.
-        :type: str
+        :type mode: str
         """
         self._mode = mode
 
@@ -113,7 +124,7 @@ class ShowResourcesDetailResponseBody:
         当前配额值。
 
         :param quota: The quota of this ShowResourcesDetailResponseBody.
-        :type: int
+        :type quota: int
         """
         self._quota = quota
 
@@ -135,7 +146,7 @@ class ShowResourcesDetailResponseBody:
         已使用的资源数。
 
         :param used: The used of this ShowResourcesDetailResponseBody.
-        :type: int
+        :type used: int
         """
         self._used = used
 

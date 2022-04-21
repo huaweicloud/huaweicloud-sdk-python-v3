@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NodeAction:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class NodeAction:
     }
 
     def __init__(self, node=None):
-        """NodeAction - a model defined in huaweicloud sdk"""
+        """NodeAction
+
+        The model defined in huaweicloud sdk
+
+        :param node: 
+        :type node: :class:`huaweicloudsdkief.v1.Action`
+        """
         
         
 
@@ -45,7 +50,7 @@ class NodeAction:
 
 
         :return: The node of this NodeAction.
-        :rtype: Action
+        :rtype: :class:`huaweicloudsdkief.v1.Action`
         """
         return self._node
 
@@ -55,7 +60,7 @@ class NodeAction:
 
 
         :param node: The node of this NodeAction.
-        :type: Action
+        :type node: :class:`huaweicloudsdkief.v1.Action`
         """
         self._node = node
 

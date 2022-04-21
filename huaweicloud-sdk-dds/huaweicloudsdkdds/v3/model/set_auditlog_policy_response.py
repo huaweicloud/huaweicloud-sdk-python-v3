@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SetAuditlogPolicyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class SetAuditlogPolicyResponse(SdkResponse):
     }
 
     def __init__(self):
-        """SetAuditlogPolicyResponse - a model defined in huaweicloud sdk"""
+        """SetAuditlogPolicyResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(SetAuditlogPolicyResponse, self).__init__()
         self.discriminator = None

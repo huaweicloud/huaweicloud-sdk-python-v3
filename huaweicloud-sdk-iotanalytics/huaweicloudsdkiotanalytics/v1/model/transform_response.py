@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TransformResponse:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class TransformResponse:
     }
 
     def __init__(self, inputs=None, expression=None, output_property=None, outputs=None):
-        """TransformResponse - a model defined in huaweicloud sdk"""
+        """TransformResponse
+
+        The model defined in huaweicloud sdk
+
+        :param inputs: 输入参数
+        :type inputs: list[:class:`huaweicloudsdkiotanalytics.v1.InputResponse`]
+        :param expression: 
+        :type expression: :class:`huaweicloudsdkiotanalytics.v1.Formula`
+        :param output_property: 输出属性名(不推荐使用，待废弃，使用outputs替代)
+        :type output_property: str
+        :param outputs: 
+        :type outputs: list[:class:`huaweicloudsdkiotanalytics.v1.OutputResponse`]
+        """
         
         
 
@@ -62,7 +73,7 @@ class TransformResponse:
         输入参数
 
         :return: The inputs of this TransformResponse.
-        :rtype: list[InputResponse]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.InputResponse`]
         """
         return self._inputs
 
@@ -73,7 +84,7 @@ class TransformResponse:
         输入参数
 
         :param inputs: The inputs of this TransformResponse.
-        :type: list[InputResponse]
+        :type inputs: list[:class:`huaweicloudsdkiotanalytics.v1.InputResponse`]
         """
         self._inputs = inputs
 
@@ -83,7 +94,7 @@ class TransformResponse:
 
 
         :return: The expression of this TransformResponse.
-        :rtype: Formula
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.Formula`
         """
         return self._expression
 
@@ -93,7 +104,7 @@ class TransformResponse:
 
 
         :param expression: The expression of this TransformResponse.
-        :type: Formula
+        :type expression: :class:`huaweicloudsdkiotanalytics.v1.Formula`
         """
         self._expression = expression
 
@@ -115,7 +126,7 @@ class TransformResponse:
         输出属性名(不推荐使用，待废弃，使用outputs替代)
 
         :param output_property: The output_property of this TransformResponse.
-        :type: str
+        :type output_property: str
         """
         self._output_property = output_property
 
@@ -125,7 +136,7 @@ class TransformResponse:
 
 
         :return: The outputs of this TransformResponse.
-        :rtype: list[OutputResponse]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.OutputResponse`]
         """
         return self._outputs
 
@@ -135,7 +146,7 @@ class TransformResponse:
 
 
         :param outputs: The outputs of this TransformResponse.
-        :type: list[OutputResponse]
+        :type outputs: list[:class:`huaweicloudsdkiotanalytics.v1.OutputResponse`]
         """
         self._outputs = outputs
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LdApiDeployHistoryInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class LdApiDeployHistoryInfo:
     }
 
     def __init__(self, id=None, ld_api_id=None, group_id=None, env_id=None, api_id=None, deploy_time=None, api_definition=None):
-        """LdApiDeployHistoryInfo - a model defined in huaweicloud sdk"""
+        """LdApiDeployHistoryInfo
+
+        The model defined in huaweicloud sdk
+
+        :param id: 部署的编号
+        :type id: str
+        :param ld_api_id: 部署的后端API编号
+        :type ld_api_id: str
+        :param group_id: 部署的前端API分组编号
+        :type group_id: str
+        :param env_id: 部署的环境编号
+        :type env_id: str
+        :param api_id: 部署的前端API编号
+        :type api_id: str
+        :param deploy_time: 部署时间
+        :type deploy_time: datetime
+        :param api_definition: 
+        :type api_definition: :class:`huaweicloudsdkroma.v2.LdApiInfo`
+        """
         
         
 
@@ -88,7 +105,7 @@ class LdApiDeployHistoryInfo:
         部署的编号
 
         :param id: The id of this LdApiDeployHistoryInfo.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -110,7 +127,7 @@ class LdApiDeployHistoryInfo:
         部署的后端API编号
 
         :param ld_api_id: The ld_api_id of this LdApiDeployHistoryInfo.
-        :type: str
+        :type ld_api_id: str
         """
         self._ld_api_id = ld_api_id
 
@@ -132,7 +149,7 @@ class LdApiDeployHistoryInfo:
         部署的前端API分组编号
 
         :param group_id: The group_id of this LdApiDeployHistoryInfo.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -154,7 +171,7 @@ class LdApiDeployHistoryInfo:
         部署的环境编号
 
         :param env_id: The env_id of this LdApiDeployHistoryInfo.
-        :type: str
+        :type env_id: str
         """
         self._env_id = env_id
 
@@ -176,7 +193,7 @@ class LdApiDeployHistoryInfo:
         部署的前端API编号
 
         :param api_id: The api_id of this LdApiDeployHistoryInfo.
-        :type: str
+        :type api_id: str
         """
         self._api_id = api_id
 
@@ -198,7 +215,7 @@ class LdApiDeployHistoryInfo:
         部署时间
 
         :param deploy_time: The deploy_time of this LdApiDeployHistoryInfo.
-        :type: datetime
+        :type deploy_time: datetime
         """
         self._deploy_time = deploy_time
 
@@ -208,7 +225,7 @@ class LdApiDeployHistoryInfo:
 
 
         :return: The api_definition of this LdApiDeployHistoryInfo.
-        :rtype: LdApiInfo
+        :rtype: :class:`huaweicloudsdkroma.v2.LdApiInfo`
         """
         return self._api_definition
 
@@ -218,7 +235,7 @@ class LdApiDeployHistoryInfo:
 
 
         :param api_definition: The api_definition of this LdApiDeployHistoryInfo.
-        :type: LdApiInfo
+        :type api_definition: :class:`huaweicloudsdkroma.v2.LdApiInfo`
         """
         self._api_definition = api_definition
 

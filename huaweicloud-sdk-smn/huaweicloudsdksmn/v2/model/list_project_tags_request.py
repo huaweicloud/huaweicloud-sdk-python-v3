@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListProjectTagsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListProjectTagsRequest:
     }
 
     def __init__(self, resource_type=None):
-        """ListProjectTagsRequest - a model defined in huaweicloud sdk"""
+        """ListProjectTagsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param resource_type: 资源类型 目前有: smn_topic，主题 smn_sms，短信 smn_application，移动推送
+        :type resource_type: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ListProjectTagsRequest:
         资源类型 目前有: smn_topic，主题 smn_sms，短信 smn_application，移动推送
 
         :param resource_type: The resource_type of this ListProjectTagsRequest.
-        :type: str
+        :type resource_type: str
         """
         self._resource_type = resource_type
 

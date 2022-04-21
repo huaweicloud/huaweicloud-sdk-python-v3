@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateResWorkspaceRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateResWorkspaceRequestBody:
     }
 
     def __init__(self, name=None, description=None):
-        """UpdateResWorkspaceRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateResWorkspaceRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param name: 工作空间名称，1-64位数字、字母、下划线、中划线组成，支持中文，不能以 - 结尾。
+        :type name: str
+        :param description: 描述。
+        :type description: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class UpdateResWorkspaceRequestBody:
         工作空间名称，1-64位数字、字母、下划线、中划线组成，支持中文，不能以 - 结尾。
 
         :param name: The name of this UpdateResWorkspaceRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -85,7 +92,7 @@ class UpdateResWorkspaceRequestBody:
         描述。
 
         :param description: The description of this UpdateResWorkspaceRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowBaremetalServerInterfaceAttachmentsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowBaremetalServerInterfaceAttachmentsRequest:
     }
 
     def __init__(self, server_id=None):
-        """ShowBaremetalServerInterfaceAttachmentsRequest - a model defined in huaweicloud sdk"""
+        """ShowBaremetalServerInterfaceAttachmentsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param server_id: 裸金属服务器ID
+        :type server_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowBaremetalServerInterfaceAttachmentsRequest:
         裸金属服务器ID
 
         :param server_id: The server_id of this ShowBaremetalServerInterfaceAttachmentsRequest.
-        :type: str
+        :type server_id: str
         """
         self._server_id = server_id
 

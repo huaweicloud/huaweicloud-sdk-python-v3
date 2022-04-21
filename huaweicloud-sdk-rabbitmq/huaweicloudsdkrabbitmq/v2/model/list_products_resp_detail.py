@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListProductsRespDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ListProductsRespDetail:
     }
 
     def __init__(self, storage=None, product_id=None, spec_code=None, io=None, unavailable_zones=None, available_zones=None, ecs_flavor_id=None, arch_type=None):
-        """ListProductsRespDetail - a model defined in huaweicloud sdk"""
+        """ListProductsRespDetail
+
+        The model defined in huaweicloud sdk
+
+        :param storage: 消息存储空间。
+        :type storage: str
+        :param product_id: 产品ID。
+        :type product_id: str
+        :param spec_code: 规格ID。
+        :type spec_code: str
+        :param io: IO信息。
+        :type io: list[:class:`huaweicloudsdkrabbitmq.v2.ListProductsRespIo`]
+        :param unavailable_zones: 资源售罄的可用区列表。
+        :type unavailable_zones: list[str]
+        :param available_zones: 有可用资源的可用区列表。
+        :type available_zones: list[str]
+        :param ecs_flavor_id: 该产品规格对应的虚拟机规格。
+        :type ecs_flavor_id: str
+        :param arch_type: 实例规格架构类型。当前仅支持X86。
+        :type arch_type: str
+        """
         
         
 
@@ -93,7 +112,7 @@ class ListProductsRespDetail:
         消息存储空间。
 
         :param storage: The storage of this ListProductsRespDetail.
-        :type: str
+        :type storage: str
         """
         self._storage = storage
 
@@ -115,7 +134,7 @@ class ListProductsRespDetail:
         产品ID。
 
         :param product_id: The product_id of this ListProductsRespDetail.
-        :type: str
+        :type product_id: str
         """
         self._product_id = product_id
 
@@ -137,7 +156,7 @@ class ListProductsRespDetail:
         规格ID。
 
         :param spec_code: The spec_code of this ListProductsRespDetail.
-        :type: str
+        :type spec_code: str
         """
         self._spec_code = spec_code
 
@@ -148,7 +167,7 @@ class ListProductsRespDetail:
         IO信息。
 
         :return: The io of this ListProductsRespDetail.
-        :rtype: list[ListProductsRespIo]
+        :rtype: list[:class:`huaweicloudsdkrabbitmq.v2.ListProductsRespIo`]
         """
         return self._io
 
@@ -159,7 +178,7 @@ class ListProductsRespDetail:
         IO信息。
 
         :param io: The io of this ListProductsRespDetail.
-        :type: list[ListProductsRespIo]
+        :type io: list[:class:`huaweicloudsdkrabbitmq.v2.ListProductsRespIo`]
         """
         self._io = io
 
@@ -181,7 +200,7 @@ class ListProductsRespDetail:
         资源售罄的可用区列表。
 
         :param unavailable_zones: The unavailable_zones of this ListProductsRespDetail.
-        :type: list[str]
+        :type unavailable_zones: list[str]
         """
         self._unavailable_zones = unavailable_zones
 
@@ -203,7 +222,7 @@ class ListProductsRespDetail:
         有可用资源的可用区列表。
 
         :param available_zones: The available_zones of this ListProductsRespDetail.
-        :type: list[str]
+        :type available_zones: list[str]
         """
         self._available_zones = available_zones
 
@@ -225,7 +244,7 @@ class ListProductsRespDetail:
         该产品规格对应的虚拟机规格。
 
         :param ecs_flavor_id: The ecs_flavor_id of this ListProductsRespDetail.
-        :type: str
+        :type ecs_flavor_id: str
         """
         self._ecs_flavor_id = ecs_flavor_id
 
@@ -247,7 +266,7 @@ class ListProductsRespDetail:
         实例规格架构类型。当前仅支持X86。
 
         :param arch_type: The arch_type of this ListProductsRespDetail.
-        :type: str
+        :type arch_type: str
         """
         self._arch_type = arch_type
 

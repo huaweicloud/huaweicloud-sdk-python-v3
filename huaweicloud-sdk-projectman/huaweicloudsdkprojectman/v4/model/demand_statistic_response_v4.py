@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DemandStatisticResponseV4:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class DemandStatisticResponseV4:
     }
 
     def __init__(self, closed_num=None, module=None, new_num=None, process_num=None, rejected_num=None, solved_num=None, test_num=None, total=None):
-        """DemandStatisticResponseV4 - a model defined in huaweicloud sdk"""
+        """DemandStatisticResponseV4
+
+        The model defined in huaweicloud sdk
+
+        :param closed_num: 已关闭数量
+        :type closed_num: int
+        :param module: 模块
+        :type module: str
+        :param new_num: 新建的数量
+        :type new_num: int
+        :param process_num: 开发中的数量
+        :type process_num: int
+        :param rejected_num: 已拒绝数量
+        :type rejected_num: int
+        :param solved_num: 已解决数量
+        :type solved_num: int
+        :param test_num: 测试中的数量
+        :type test_num: int
+        :param total: 总数
+        :type total: int
+        """
         
         
 
@@ -93,7 +112,7 @@ class DemandStatisticResponseV4:
         已关闭数量
 
         :param closed_num: The closed_num of this DemandStatisticResponseV4.
-        :type: int
+        :type closed_num: int
         """
         self._closed_num = closed_num
 
@@ -115,7 +134,7 @@ class DemandStatisticResponseV4:
         模块
 
         :param module: The module of this DemandStatisticResponseV4.
-        :type: str
+        :type module: str
         """
         self._module = module
 
@@ -137,7 +156,7 @@ class DemandStatisticResponseV4:
         新建的数量
 
         :param new_num: The new_num of this DemandStatisticResponseV4.
-        :type: int
+        :type new_num: int
         """
         self._new_num = new_num
 
@@ -159,7 +178,7 @@ class DemandStatisticResponseV4:
         开发中的数量
 
         :param process_num: The process_num of this DemandStatisticResponseV4.
-        :type: int
+        :type process_num: int
         """
         self._process_num = process_num
 
@@ -181,7 +200,7 @@ class DemandStatisticResponseV4:
         已拒绝数量
 
         :param rejected_num: The rejected_num of this DemandStatisticResponseV4.
-        :type: int
+        :type rejected_num: int
         """
         self._rejected_num = rejected_num
 
@@ -203,7 +222,7 @@ class DemandStatisticResponseV4:
         已解决数量
 
         :param solved_num: The solved_num of this DemandStatisticResponseV4.
-        :type: int
+        :type solved_num: int
         """
         self._solved_num = solved_num
 
@@ -225,7 +244,7 @@ class DemandStatisticResponseV4:
         测试中的数量
 
         :param test_num: The test_num of this DemandStatisticResponseV4.
-        :type: int
+        :type test_num: int
         """
         self._test_num = test_num
 
@@ -247,7 +266,7 @@ class DemandStatisticResponseV4:
         总数
 
         :param total: The total of this DemandStatisticResponseV4.
-        :type: int
+        :type total: int
         """
         self._total = total
 

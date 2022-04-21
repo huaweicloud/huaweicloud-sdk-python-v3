@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Credential:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class Credential:
     }
 
     def __init__(self, expires_at=None, access=None, secret=None, securitytoken=None):
-        """Credential - a model defined in huaweicloud sdk"""
+        """Credential
+
+        The model defined in huaweicloud sdk
+
+        :param expires_at: AK/SK和securitytoken的过期时间。
+        :type expires_at: str
+        :param access: 获取的AK。
+        :type access: str
+        :param secret: 获取的SK。
+        :type secret: str
+        :param securitytoken: securitytoken是将所获的AK、SK等信息进行加密后的字符串。
+        :type securitytoken: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class Credential:
         AK/SK和securitytoken的过期时间。
 
         :param expires_at: The expires_at of this Credential.
-        :type: str
+        :type expires_at: str
         """
         self._expires_at = expires_at
 
@@ -91,7 +102,7 @@ class Credential:
         获取的AK。
 
         :param access: The access of this Credential.
-        :type: str
+        :type access: str
         """
         self._access = access
 
@@ -113,7 +124,7 @@ class Credential:
         获取的SK。
 
         :param secret: The secret of this Credential.
-        :type: str
+        :type secret: str
         """
         self._secret = secret
 
@@ -135,7 +146,7 @@ class Credential:
         securitytoken是将所获的AK、SK等信息进行加密后的字符串。
 
         :param securitytoken: The securitytoken of this Credential.
-        :type: str
+        :type securitytoken: str
         """
         self._securitytoken = securitytoken
 

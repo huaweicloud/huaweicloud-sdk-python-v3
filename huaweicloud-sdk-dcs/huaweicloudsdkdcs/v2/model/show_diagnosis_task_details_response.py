@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDiagnosisTaskDetailsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowDiagnosisTaskDetailsResponse(SdkResponse):
     }
 
     def __init__(self, abnormal_item_sum=None, failed_item_sum=None, diagnosis_node_report_list=None):
-        """ShowDiagnosisTaskDetailsResponse - a model defined in huaweicloud sdk"""
+        """ShowDiagnosisTaskDetailsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param abnormal_item_sum: 诊断结果为异常的诊断项总数
+        :type abnormal_item_sum: int
+        :param failed_item_sum: 诊断失败的诊断项总数
+        :type failed_item_sum: int
+        :param diagnosis_node_report_list: 节点诊断报告列表
+        :type diagnosis_node_report_list: list[:class:`huaweicloudsdkdcs.v2.DiagnosisNodeReport`]
+        """
         
         super(ShowDiagnosisTaskDetailsResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ShowDiagnosisTaskDetailsResponse(SdkResponse):
         诊断结果为异常的诊断项总数
 
         :param abnormal_item_sum: The abnormal_item_sum of this ShowDiagnosisTaskDetailsResponse.
-        :type: int
+        :type abnormal_item_sum: int
         """
         self._abnormal_item_sum = abnormal_item_sum
 
@@ -90,7 +99,7 @@ class ShowDiagnosisTaskDetailsResponse(SdkResponse):
         诊断失败的诊断项总数
 
         :param failed_item_sum: The failed_item_sum of this ShowDiagnosisTaskDetailsResponse.
-        :type: int
+        :type failed_item_sum: int
         """
         self._failed_item_sum = failed_item_sum
 
@@ -101,7 +110,7 @@ class ShowDiagnosisTaskDetailsResponse(SdkResponse):
         节点诊断报告列表
 
         :return: The diagnosis_node_report_list of this ShowDiagnosisTaskDetailsResponse.
-        :rtype: list[DiagnosisNodeReport]
+        :rtype: list[:class:`huaweicloudsdkdcs.v2.DiagnosisNodeReport`]
         """
         return self._diagnosis_node_report_list
 
@@ -112,7 +121,7 @@ class ShowDiagnosisTaskDetailsResponse(SdkResponse):
         节点诊断报告列表
 
         :param diagnosis_node_report_list: The diagnosis_node_report_list of this ShowDiagnosisTaskDetailsResponse.
-        :type: list[DiagnosisNodeReport]
+        :type diagnosis_node_report_list: list[:class:`huaweicloudsdkdcs.v2.DiagnosisNodeReport`]
         """
         self._diagnosis_node_report_list = diagnosis_node_report_list
 

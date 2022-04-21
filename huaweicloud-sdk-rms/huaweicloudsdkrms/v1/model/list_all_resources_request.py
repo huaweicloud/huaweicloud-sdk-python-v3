@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAllResourcesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListAllResourcesRequest:
     }
 
     def __init__(self, region_id=None, ep_id=None, type=None, limit=None, marker=None):
-        """ListAllResourcesRequest - a model defined in huaweicloud sdk"""
+        """ListAllResourcesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param region_id: 区域ID
+        :type region_id: str
+        :param ep_id: 企业项目ID
+        :type ep_id: str
+        :param type: 资源类型（provider.type）
+        :type type: str
+        :param limit: 最大的返回数量
+        :type limit: int
+        :param marker: 分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
+        :type marker: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class ListAllResourcesRequest:
         区域ID
 
         :param region_id: The region_id of this ListAllResourcesRequest.
-        :type: str
+        :type region_id: str
         """
         self._region_id = region_id
 
@@ -100,7 +113,7 @@ class ListAllResourcesRequest:
         企业项目ID
 
         :param ep_id: The ep_id of this ListAllResourcesRequest.
-        :type: str
+        :type ep_id: str
         """
         self._ep_id = ep_id
 
@@ -122,7 +135,7 @@ class ListAllResourcesRequest:
         资源类型（provider.type）
 
         :param type: The type of this ListAllResourcesRequest.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -144,7 +157,7 @@ class ListAllResourcesRequest:
         最大的返回数量
 
         :param limit: The limit of this ListAllResourcesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -166,7 +179,7 @@ class ListAllResourcesRequest:
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
         :param marker: The marker of this ListAllResourcesRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 

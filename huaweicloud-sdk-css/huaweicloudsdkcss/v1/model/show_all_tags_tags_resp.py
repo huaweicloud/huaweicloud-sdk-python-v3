@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowAllTagsTagsResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowAllTagsTagsResp:
     }
 
     def __init__(self, key=None, values=None):
-        """ShowAllTagsTagsResp - a model defined in huaweicloud sdk"""
+        """ShowAllTagsTagsResp
+
+        The model defined in huaweicloud sdk
+
+        :param key: 集群标签的key值。
+        :type key: str
+        :param values: 集群标签的value值列表。
+        :type values: list[str]
+        """
         
         
 
@@ -63,7 +70,7 @@ class ShowAllTagsTagsResp:
         集群标签的key值。
 
         :param key: The key of this ShowAllTagsTagsResp.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -85,7 +92,7 @@ class ShowAllTagsTagsResp:
         集群标签的value值列表。
 
         :param values: The values of this ShowAllTagsTagsResp.
-        :type: list[str]
+        :type values: list[str]
         """
         self._values = values
 

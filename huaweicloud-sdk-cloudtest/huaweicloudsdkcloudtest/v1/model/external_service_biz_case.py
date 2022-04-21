@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExternalServiceBizCase:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class ExternalServiceBizCase:
     }
 
     def __init__(self, description=None, preparation=None, steps=None, label_list=None, module_id=None, test_version_id=None, fix_version_id=None, assigned_id=None, issue_id=None, status_id=None, defect_id_list=None):
-        """ExternalServiceBizCase - a model defined in huaweicloud sdk"""
+        """ExternalServiceBizCase
+
+        The model defined in huaweicloud sdk
+
+        :param description: 测试用例描述信息，长度为[0-500]位字符
+        :type description: str
+        :param preparation: 执行该测试用例时需要满足的前置条件，长度为[0-500]位字符
+        :type preparation: str
+        :param steps: 测试步骤，数组长度小于10
+        :type steps: list[:class:`huaweicloudsdkcloudtest.v1.ExternalServiceCaseStep`]
+        :param label_list: 标签名称列表，数组长度小于25
+        :type label_list: list[str]
+        :param module_id: 模块号，长度为[0-32]位字符
+        :type module_id: str
+        :param test_version_id: 测试版本号，长度为[0-10]位字符
+        :type test_version_id: str
+        :param fix_version_id: 迭代号，长度为[0-32]位字符
+        :type fix_version_id: str
+        :param assigned_id: 处理者id信息，固定长度32位字符
+        :type assigned_id: str
+        :param issue_id: 用例关联的需求id信息，长度为[0-32]位字符
+        :type issue_id: str
+        :param status_id: 测试用例状态信息，（0-新建，5-设计中，6-测试中，7-完成）
+        :type status_id: str
+        :param defect_id_list: 缺陷id信息，数组长度小于50个
+        :type defect_id_list: list[str]
+        """
         
         
 
@@ -108,7 +133,7 @@ class ExternalServiceBizCase:
         测试用例描述信息，长度为[0-500]位字符
 
         :param description: The description of this ExternalServiceBizCase.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -130,7 +155,7 @@ class ExternalServiceBizCase:
         执行该测试用例时需要满足的前置条件，长度为[0-500]位字符
 
         :param preparation: The preparation of this ExternalServiceBizCase.
-        :type: str
+        :type preparation: str
         """
         self._preparation = preparation
 
@@ -141,7 +166,7 @@ class ExternalServiceBizCase:
         测试步骤，数组长度小于10
 
         :return: The steps of this ExternalServiceBizCase.
-        :rtype: list[ExternalServiceCaseStep]
+        :rtype: list[:class:`huaweicloudsdkcloudtest.v1.ExternalServiceCaseStep`]
         """
         return self._steps
 
@@ -152,7 +177,7 @@ class ExternalServiceBizCase:
         测试步骤，数组长度小于10
 
         :param steps: The steps of this ExternalServiceBizCase.
-        :type: list[ExternalServiceCaseStep]
+        :type steps: list[:class:`huaweicloudsdkcloudtest.v1.ExternalServiceCaseStep`]
         """
         self._steps = steps
 
@@ -174,7 +199,7 @@ class ExternalServiceBizCase:
         标签名称列表，数组长度小于25
 
         :param label_list: The label_list of this ExternalServiceBizCase.
-        :type: list[str]
+        :type label_list: list[str]
         """
         self._label_list = label_list
 
@@ -196,7 +221,7 @@ class ExternalServiceBizCase:
         模块号，长度为[0-32]位字符
 
         :param module_id: The module_id of this ExternalServiceBizCase.
-        :type: str
+        :type module_id: str
         """
         self._module_id = module_id
 
@@ -218,7 +243,7 @@ class ExternalServiceBizCase:
         测试版本号，长度为[0-10]位字符
 
         :param test_version_id: The test_version_id of this ExternalServiceBizCase.
-        :type: str
+        :type test_version_id: str
         """
         self._test_version_id = test_version_id
 
@@ -240,7 +265,7 @@ class ExternalServiceBizCase:
         迭代号，长度为[0-32]位字符
 
         :param fix_version_id: The fix_version_id of this ExternalServiceBizCase.
-        :type: str
+        :type fix_version_id: str
         """
         self._fix_version_id = fix_version_id
 
@@ -262,7 +287,7 @@ class ExternalServiceBizCase:
         处理者id信息，固定长度32位字符
 
         :param assigned_id: The assigned_id of this ExternalServiceBizCase.
-        :type: str
+        :type assigned_id: str
         """
         self._assigned_id = assigned_id
 
@@ -284,7 +309,7 @@ class ExternalServiceBizCase:
         用例关联的需求id信息，长度为[0-32]位字符
 
         :param issue_id: The issue_id of this ExternalServiceBizCase.
-        :type: str
+        :type issue_id: str
         """
         self._issue_id = issue_id
 
@@ -306,7 +331,7 @@ class ExternalServiceBizCase:
         测试用例状态信息，（0-新建，5-设计中，6-测试中，7-完成）
 
         :param status_id: The status_id of this ExternalServiceBizCase.
-        :type: str
+        :type status_id: str
         """
         self._status_id = status_id
 
@@ -328,7 +353,7 @@ class ExternalServiceBizCase:
         缺陷id信息，数组长度小于50个
 
         :param defect_id_list: The defect_id_list of this ExternalServiceBizCase.
-        :type: list[str]
+        :type defect_id_list: list[str]
         """
         self._defect_id_list = defect_id_list
 

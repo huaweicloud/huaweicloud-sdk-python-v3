@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDedicatedHostsByTagsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListDedicatedHostsByTagsRequest:
     }
 
     def __init__(self, body=None):
-        """ListDedicatedHostsByTagsRequest - a model defined in huaweicloud sdk"""
+        """ListDedicatedHostsByTagsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the ListDedicatedHostsByTagsRequest
+        :type body: :class:`huaweicloudsdkdeh.v1.ReqListDehByTags`
+        """
         
         
 
@@ -46,7 +51,7 @@ class ListDedicatedHostsByTagsRequest:
 
 
         :return: The body of this ListDedicatedHostsByTagsRequest.
-        :rtype: ReqListDehByTags
+        :rtype: :class:`huaweicloudsdkdeh.v1.ReqListDehByTags`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class ListDedicatedHostsByTagsRequest:
 
 
         :param body: The body of this ListDedicatedHostsByTagsRequest.
-        :type: ReqListDehByTags
+        :type body: :class:`huaweicloudsdkdeh.v1.ReqListDehByTags`
         """
         self._body = body
 

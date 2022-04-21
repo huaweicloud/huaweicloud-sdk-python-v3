@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MemberJobCard:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class MemberJobCard:
     }
 
     def __init__(self, name=None, average_score=None, score=None, send_time=None, last_submit_time=None):
-        """MemberJobCard - a model defined in huaweicloud sdk"""
+        """MemberJobCard
+
+        The model defined in huaweicloud sdk
+
+        :param name: 作业名称
+        :type name: str
+        :param average_score: 作业均分(作业有均分该字段才返回)
+        :type average_score: str
+        :param score: 作业得分(作业有分数该字段才返回)
+        :type score: int
+        :param send_time: 作业下发时间, 日期格式：yyyy-MM-dd HH:mm:ss
+        :type send_time: str
+        :param last_submit_time: 作业最后一次提交时间, 日期格式：yyyy-MM-dd HH:mm:ss
+        :type last_submit_time: str
+        """
         
         
 
@@ -73,7 +86,7 @@ class MemberJobCard:
         作业名称
 
         :param name: The name of this MemberJobCard.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -95,7 +108,7 @@ class MemberJobCard:
         作业均分(作业有均分该字段才返回)
 
         :param average_score: The average_score of this MemberJobCard.
-        :type: str
+        :type average_score: str
         """
         self._average_score = average_score
 
@@ -117,7 +130,7 @@ class MemberJobCard:
         作业得分(作业有分数该字段才返回)
 
         :param score: The score of this MemberJobCard.
-        :type: int
+        :type score: int
         """
         self._score = score
 
@@ -139,7 +152,7 @@ class MemberJobCard:
         作业下发时间, 日期格式：yyyy-MM-dd HH:mm:ss
 
         :param send_time: The send_time of this MemberJobCard.
-        :type: str
+        :type send_time: str
         """
         self._send_time = send_time
 
@@ -161,7 +174,7 @@ class MemberJobCard:
         作业最后一次提交时间, 日期格式：yyyy-MM-dd HH:mm:ss
 
         :param last_submit_time: The last_submit_time of this MemberJobCard.
-        :type: str
+        :type last_submit_time: str
         """
         self._last_submit_time = last_submit_time
 

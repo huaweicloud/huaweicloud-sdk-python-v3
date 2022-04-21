@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateRecordSetWithLineReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class CreateRecordSetWithLineReq:
     }
 
     def __init__(self, name=None, description=None, type=None, status=None, ttl=None, records=None, line=None, tags=None, weight=None, alias_target=None):
-        """CreateRecordSetWithLineReq - a model defined in huaweicloud sdk"""
+        """CreateRecordSetWithLineReq
+
+        The model defined in huaweicloud sdk
+
+        :param name: 域名，后缀需以zone name结束且为FQDN（即以“.”号结束的完整主机名）。
+        :type name: str
+        :param description: 可选配置，对域名的描述。
+        :type description: str
+        :param type: Record Set的类型。取值范围：A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。
+        :type type: str
+        :param status: 解析记录的状态。默认值为ENABLE。
+        :type status: str
+        :param ttl: 解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
+        :type ttl: int
+        :param records: 解析记录的值。不同类型解析记录对应的值的规则不同。
+        :type records: list[str]
+        :param line: 解析线路ID
+        :type line: str
+        :param tags:  资源标签
+        :type tags: list[:class:`huaweicloudsdkdns.v2.Tag`]
+        :param weight: 解析记录的权重。
+        :type weight: int
+        :param alias_target: 
+        :type alias_target: :class:`huaweicloudsdkdns.v2.AliasTarget`
+        """
         
         
 
@@ -100,7 +123,7 @@ class CreateRecordSetWithLineReq:
         域名，后缀需以zone name结束且为FQDN（即以“.”号结束的完整主机名）。
 
         :param name: The name of this CreateRecordSetWithLineReq.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -122,7 +145,7 @@ class CreateRecordSetWithLineReq:
         可选配置，对域名的描述。
 
         :param description: The description of this CreateRecordSetWithLineReq.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -144,7 +167,7 @@ class CreateRecordSetWithLineReq:
         Record Set的类型。取值范围：A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。
 
         :param type: The type of this CreateRecordSetWithLineReq.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -166,7 +189,7 @@ class CreateRecordSetWithLineReq:
         解析记录的状态。默认值为ENABLE。
 
         :param status: The status of this CreateRecordSetWithLineReq.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -188,7 +211,7 @@ class CreateRecordSetWithLineReq:
         解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
 
         :param ttl: The ttl of this CreateRecordSetWithLineReq.
-        :type: int
+        :type ttl: int
         """
         self._ttl = ttl
 
@@ -210,7 +233,7 @@ class CreateRecordSetWithLineReq:
         解析记录的值。不同类型解析记录对应的值的规则不同。
 
         :param records: The records of this CreateRecordSetWithLineReq.
-        :type: list[str]
+        :type records: list[str]
         """
         self._records = records
 
@@ -232,7 +255,7 @@ class CreateRecordSetWithLineReq:
         解析线路ID
 
         :param line: The line of this CreateRecordSetWithLineReq.
-        :type: str
+        :type line: str
         """
         self._line = line
 
@@ -243,7 +266,7 @@ class CreateRecordSetWithLineReq:
          资源标签
 
         :return: The tags of this CreateRecordSetWithLineReq.
-        :rtype: list[Tag]
+        :rtype: list[:class:`huaweicloudsdkdns.v2.Tag`]
         """
         return self._tags
 
@@ -254,7 +277,7 @@ class CreateRecordSetWithLineReq:
          资源标签
 
         :param tags: The tags of this CreateRecordSetWithLineReq.
-        :type: list[Tag]
+        :type tags: list[:class:`huaweicloudsdkdns.v2.Tag`]
         """
         self._tags = tags
 
@@ -276,7 +299,7 @@ class CreateRecordSetWithLineReq:
         解析记录的权重。
 
         :param weight: The weight of this CreateRecordSetWithLineReq.
-        :type: int
+        :type weight: int
         """
         self._weight = weight
 
@@ -286,7 +309,7 @@ class CreateRecordSetWithLineReq:
 
 
         :return: The alias_target of this CreateRecordSetWithLineReq.
-        :rtype: AliasTarget
+        :rtype: :class:`huaweicloudsdkdns.v2.AliasTarget`
         """
         return self._alias_target
 
@@ -296,7 +319,7 @@ class CreateRecordSetWithLineReq:
 
 
         :param alias_target: The alias_target of this CreateRecordSetWithLineReq.
-        :type: AliasTarget
+        :type alias_target: :class:`huaweicloudsdkdns.v2.AliasTarget`
         """
         self._alias_target = alias_target
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchRebootServersRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchRebootServersRequestBody:
     }
 
     def __init__(self, reboot=None):
-        """BatchRebootServersRequestBody - a model defined in huaweicloud sdk"""
+        """BatchRebootServersRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param reboot: 
+        :type reboot: :class:`huaweicloudsdkecs.v2.BatchRebootSeversOption`
+        """
         
         
 
@@ -45,7 +50,7 @@ class BatchRebootServersRequestBody:
 
 
         :return: The reboot of this BatchRebootServersRequestBody.
-        :rtype: BatchRebootSeversOption
+        :rtype: :class:`huaweicloudsdkecs.v2.BatchRebootSeversOption`
         """
         return self._reboot
 
@@ -55,7 +60,7 @@ class BatchRebootServersRequestBody:
 
 
         :param reboot: The reboot of this BatchRebootServersRequestBody.
-        :type: BatchRebootSeversOption
+        :type reboot: :class:`huaweicloudsdkecs.v2.BatchRebootSeversOption`
         """
         self._reboot = reboot
 

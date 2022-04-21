@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDomainOriginResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateDomainOriginResponse(SdkResponse):
     }
 
     def __init__(self, origin=None):
-        """UpdateDomainOriginResponse - a model defined in huaweicloud sdk"""
+        """UpdateDomainOriginResponse
+
+        The model defined in huaweicloud sdk
+
+        :param origin: 
+        :type origin: :class:`huaweicloudsdkcdn.v1.ResourceBody`
+        """
         
         super(UpdateDomainOriginResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class UpdateDomainOriginResponse(SdkResponse):
 
 
         :return: The origin of this UpdateDomainOriginResponse.
-        :rtype: ResourceBody
+        :rtype: :class:`huaweicloudsdkcdn.v1.ResourceBody`
         """
         return self._origin
 
@@ -56,7 +61,7 @@ class UpdateDomainOriginResponse(SdkResponse):
 
 
         :param origin: The origin of this UpdateDomainOriginResponse.
-        :type: ResourceBody
+        :type origin: :class:`huaweicloudsdkcdn.v1.ResourceBody`
         """
         self._origin = origin
 

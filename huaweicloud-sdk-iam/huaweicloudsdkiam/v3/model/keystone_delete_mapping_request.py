@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneDeleteMappingRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class KeystoneDeleteMappingRequest:
     }
 
     def __init__(self, id=None):
-        """KeystoneDeleteMappingRequest - a model defined in huaweicloud sdk"""
+        """KeystoneDeleteMappingRequest
+
+        The model defined in huaweicloud sdk
+
+        :param id: 待删除的映射ID。
+        :type id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class KeystoneDeleteMappingRequest:
         待删除的映射ID。
 
         :param id: The id of this KeystoneDeleteMappingRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 

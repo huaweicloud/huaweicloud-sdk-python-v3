@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateBaremetalServerMetadataRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateBaremetalServerMetadataRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """UpdateBaremetalServerMetadataRequest - a model defined in huaweicloud sdk"""
+        """UpdateBaremetalServerMetadataRequest
+
+        The model defined in huaweicloud sdk
+
+        :param server_id: 裸金属服务器ID
+        :type server_id: str
+        :param body: Body of the UpdateBaremetalServerMetadataRequest
+        :type body: :class:`huaweicloudsdkbms.v1.UpdateBaremetalServerMetadataReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateBaremetalServerMetadataRequest:
         裸金属服务器ID
 
         :param server_id: The server_id of this UpdateBaremetalServerMetadataRequest.
-        :type: str
+        :type server_id: str
         """
         self._server_id = server_id
 
@@ -72,7 +79,7 @@ class UpdateBaremetalServerMetadataRequest:
 
 
         :return: The body of this UpdateBaremetalServerMetadataRequest.
-        :rtype: UpdateBaremetalServerMetadataReq
+        :rtype: :class:`huaweicloudsdkbms.v1.UpdateBaremetalServerMetadataReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateBaremetalServerMetadataRequest:
 
 
         :param body: The body of this UpdateBaremetalServerMetadataRequest.
-        :type: UpdateBaremetalServerMetadataReq
+        :type body: :class:`huaweicloudsdkbms.v1.UpdateBaremetalServerMetadataReq`
         """
         self._body = body
 

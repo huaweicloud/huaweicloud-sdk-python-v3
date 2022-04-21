@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListScalingPolicyExecuteLogsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListScalingPolicyExecuteLogsResponse(SdkResponse):
     }
 
     def __init__(self, total_number=None, start_number=None, limit=None, scaling_policy_execute_log=None):
-        """ListScalingPolicyExecuteLogsResponse - a model defined in huaweicloud sdk"""
+        """ListScalingPolicyExecuteLogsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total_number: 总记录数。
+        :type total_number: int
+        :param start_number: 查询的起始行号。
+        :type start_number: int
+        :param limit: 查询记录数。
+        :type limit: int
+        :param scaling_policy_execute_log: 伸缩策略执行日志列表。
+        :type scaling_policy_execute_log: list[:class:`huaweicloudsdkas.v1.ScalingPolicyExecuteLogList`]
+        """
         
         super(ListScalingPolicyExecuteLogsResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class ListScalingPolicyExecuteLogsResponse(SdkResponse):
         总记录数。
 
         :param total_number: The total_number of this ListScalingPolicyExecuteLogsResponse.
-        :type: int
+        :type total_number: int
         """
         self._total_number = total_number
 
@@ -95,7 +106,7 @@ class ListScalingPolicyExecuteLogsResponse(SdkResponse):
         查询的起始行号。
 
         :param start_number: The start_number of this ListScalingPolicyExecuteLogsResponse.
-        :type: int
+        :type start_number: int
         """
         self._start_number = start_number
 
@@ -117,7 +128,7 @@ class ListScalingPolicyExecuteLogsResponse(SdkResponse):
         查询记录数。
 
         :param limit: The limit of this ListScalingPolicyExecuteLogsResponse.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -128,7 +139,7 @@ class ListScalingPolicyExecuteLogsResponse(SdkResponse):
         伸缩策略执行日志列表。
 
         :return: The scaling_policy_execute_log of this ListScalingPolicyExecuteLogsResponse.
-        :rtype: list[ScalingPolicyExecuteLogList]
+        :rtype: list[:class:`huaweicloudsdkas.v1.ScalingPolicyExecuteLogList`]
         """
         return self._scaling_policy_execute_log
 
@@ -139,7 +150,7 @@ class ListScalingPolicyExecuteLogsResponse(SdkResponse):
         伸缩策略执行日志列表。
 
         :param scaling_policy_execute_log: The scaling_policy_execute_log of this ListScalingPolicyExecuteLogsResponse.
-        :type: list[ScalingPolicyExecuteLogList]
+        :type scaling_policy_execute_log: list[:class:`huaweicloudsdkas.v1.ScalingPolicyExecuteLogList`]
         """
         self._scaling_policy_execute_log = scaling_policy_execute_log
 

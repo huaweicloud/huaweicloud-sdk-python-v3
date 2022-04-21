@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListApplicationsV6Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListApplicationsV6Response(SdkResponse):
     }
 
     def __init__(self, applications=None, count=None):
-        """ListApplicationsV6Response - a model defined in huaweicloud sdk"""
+        """ListApplicationsV6Response
+
+        The model defined in huaweicloud sdk
+
+        :param applications: 应用列表
+        :type applications: list[:class:`huaweicloudsdkdevstar.v1.ApplicationV3`]
+        :param count: 应用列表总条数
+        :type count: int
+        """
         
         super(ListApplicationsV6Response, self).__init__()
 
@@ -52,7 +59,7 @@ class ListApplicationsV6Response(SdkResponse):
         应用列表
 
         :return: The applications of this ListApplicationsV6Response.
-        :rtype: list[ApplicationV3]
+        :rtype: list[:class:`huaweicloudsdkdevstar.v1.ApplicationV3`]
         """
         return self._applications
 
@@ -63,7 +70,7 @@ class ListApplicationsV6Response(SdkResponse):
         应用列表
 
         :param applications: The applications of this ListApplicationsV6Response.
-        :type: list[ApplicationV3]
+        :type applications: list[:class:`huaweicloudsdkdevstar.v1.ApplicationV3`]
         """
         self._applications = applications
 
@@ -85,7 +92,7 @@ class ListApplicationsV6Response(SdkResponse):
         应用列表总条数
 
         :param count: The count of this ListApplicationsV6Response.
-        :type: int
+        :type count: int
         """
         self._count = count
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LineCompareResultDetails:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class LineCompareResultDetails:
     }
 
     def __init__(self, source_db_name=None, line_compare_detail=None, line_compare_detail_count=None):
-        """LineCompareResultDetails - a model defined in huaweicloud sdk"""
+        """LineCompareResultDetails
+
+        The model defined in huaweicloud sdk
+
+        :param source_db_name: 源库名称。
+        :type source_db_name: str
+        :param line_compare_detail: 该库的表的行对比详情。
+        :type line_compare_detail: list[:class:`huaweicloudsdkdrs.v3.LineCompareDetail`]
+        :param line_compare_detail_count: 该库的行对比结果详情总数。
+        :type line_compare_detail_count: int
+        """
         
         
 
@@ -65,7 +74,7 @@ class LineCompareResultDetails:
         源库名称。
 
         :param source_db_name: The source_db_name of this LineCompareResultDetails.
-        :type: str
+        :type source_db_name: str
         """
         self._source_db_name = source_db_name
 
@@ -76,7 +85,7 @@ class LineCompareResultDetails:
         该库的表的行对比详情。
 
         :return: The line_compare_detail of this LineCompareResultDetails.
-        :rtype: list[LineCompareDetail]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.LineCompareDetail`]
         """
         return self._line_compare_detail
 
@@ -87,7 +96,7 @@ class LineCompareResultDetails:
         该库的表的行对比详情。
 
         :param line_compare_detail: The line_compare_detail of this LineCompareResultDetails.
-        :type: list[LineCompareDetail]
+        :type line_compare_detail: list[:class:`huaweicloudsdkdrs.v3.LineCompareDetail`]
         """
         self._line_compare_detail = line_compare_detail
 
@@ -109,7 +118,7 @@ class LineCompareResultDetails:
         该库的行对比结果详情总数。
 
         :param line_compare_detail_count: The line_compare_detail_count of this LineCompareResultDetails.
-        :type: int
+        :type line_compare_detail_count: int
         """
         self._line_compare_detail_count = line_compare_detail_count
 

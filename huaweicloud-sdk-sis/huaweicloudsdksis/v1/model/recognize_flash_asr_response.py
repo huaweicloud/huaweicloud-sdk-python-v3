@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RecognizeFlashAsrResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class RecognizeFlashAsrResponse(SdkResponse):
     }
 
     def __init__(self, trace_id=None, audio_duration=None, flash_result=None):
-        """RecognizeFlashAsrResponse - a model defined in huaweicloud sdk"""
+        """RecognizeFlashAsrResponse
+
+        The model defined in huaweicloud sdk
+
+        :param trace_id: 服务内部的令牌，可用于在日志中追溯具体调用流程
+        :type trace_id: str
+        :param audio_duration: 音频时长
+        :type audio_duration: int
+        :param flash_result: 识别结果
+        :type flash_result: list[:class:`huaweicloudsdksis.v1.FlashResult`]
+        """
         
         super(RecognizeFlashAsrResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class RecognizeFlashAsrResponse(SdkResponse):
         服务内部的令牌，可用于在日志中追溯具体调用流程
 
         :param trace_id: The trace_id of this RecognizeFlashAsrResponse.
-        :type: str
+        :type trace_id: str
         """
         self._trace_id = trace_id
 
@@ -90,7 +99,7 @@ class RecognizeFlashAsrResponse(SdkResponse):
         音频时长
 
         :param audio_duration: The audio_duration of this RecognizeFlashAsrResponse.
-        :type: int
+        :type audio_duration: int
         """
         self._audio_duration = audio_duration
 
@@ -101,7 +110,7 @@ class RecognizeFlashAsrResponse(SdkResponse):
         识别结果
 
         :return: The flash_result of this RecognizeFlashAsrResponse.
-        :rtype: list[FlashResult]
+        :rtype: list[:class:`huaweicloudsdksis.v1.FlashResult`]
         """
         return self._flash_result
 
@@ -112,7 +121,7 @@ class RecognizeFlashAsrResponse(SdkResponse):
         识别结果
 
         :param flash_result: The flash_result of this RecognizeFlashAsrResponse.
-        :type: list[FlashResult]
+        :type flash_result: list[:class:`huaweicloudsdksis.v1.FlashResult`]
         """
         self._flash_result = flash_result
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MaskStrategies:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class MaskStrategies:
     }
 
     def __init__(self, name=None, algorithm=None, parameters=None):
-        """MaskStrategies - a model defined in huaweicloud sdk"""
+        """MaskStrategies
+
+        The model defined in huaweicloud sdk
+
+        :param name: 需要脱敏的字段名称，最大支持长度256。
+        :type name: str
+        :param algorithm: 脱敏算法名称，详情见附录\&quot;动态脱敏策略配置\&quot;。
+        :type algorithm: str
+        :param parameters: 脱敏算法参数，详情见附录\&quot;动态脱敏策略配置\&quot;。
+        :type parameters: dict(str, object)
+        """
         
         
 
@@ -66,7 +75,7 @@ class MaskStrategies:
         需要脱敏的字段名称，最大支持长度256。
 
         :param name: The name of this MaskStrategies.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -88,7 +97,7 @@ class MaskStrategies:
         脱敏算法名称，详情见附录\"动态脱敏策略配置\"。
 
         :param algorithm: The algorithm of this MaskStrategies.
-        :type: str
+        :type algorithm: str
         """
         self._algorithm = algorithm
 
@@ -110,7 +119,7 @@ class MaskStrategies:
         脱敏算法参数，详情见附录\"动态脱敏策略配置\"。
 
         :param parameters: The parameters of this MaskStrategies.
-        :type: dict(str, object)
+        :type parameters: dict(str, object)
         """
         self._parameters = parameters
 

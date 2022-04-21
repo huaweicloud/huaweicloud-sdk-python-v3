@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListWorksResponseModel:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListWorksResponseModel:
     }
 
     def __init__(self, works_id=None, domain_id=None, team_id=None):
-        """ListWorksResponseModel - a model defined in huaweicloud sdk"""
+        """ListWorksResponseModel
+
+        The model defined in huaweicloud sdk
+
+        :param works_id: 作品ID
+        :type works_id: str
+        :param domain_id: 租户ID
+        :type domain_id: str
+        :param team_id: 团队ID
+        :type team_id: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class ListWorksResponseModel:
         作品ID
 
         :param works_id: The works_id of this ListWorksResponseModel.
-        :type: str
+        :type works_id: str
         """
         self._works_id = works_id
 
@@ -87,7 +96,7 @@ class ListWorksResponseModel:
         租户ID
 
         :param domain_id: The domain_id of this ListWorksResponseModel.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -109,7 +118,7 @@ class ListWorksResponseModel:
         团队ID
 
         :param team_id: The team_id of this ListWorksResponseModel.
-        :type: str
+        :type team_id: str
         """
         self._team_id = team_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateFaceSetResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateFaceSetResponse(SdkResponse):
     }
 
     def __init__(self, face_set_info=None):
-        """CreateFaceSetResponse - a model defined in huaweicloud sdk"""
+        """CreateFaceSetResponse
+
+        The model defined in huaweicloud sdk
+
+        :param face_set_info: 
+        :type face_set_info: :class:`huaweicloudsdkfrs.v2.FaceSetInfo`
+        """
         
         super(CreateFaceSetResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class CreateFaceSetResponse(SdkResponse):
 
 
         :return: The face_set_info of this CreateFaceSetResponse.
-        :rtype: FaceSetInfo
+        :rtype: :class:`huaweicloudsdkfrs.v2.FaceSetInfo`
         """
         return self._face_set_info
 
@@ -56,7 +61,7 @@ class CreateFaceSetResponse(SdkResponse):
 
 
         :param face_set_info: The face_set_info of this CreateFaceSetResponse.
-        :type: FaceSetInfo
+        :type face_set_info: :class:`huaweicloudsdkfrs.v2.FaceSetInfo`
         """
         self._face_set_info = face_set_info
 

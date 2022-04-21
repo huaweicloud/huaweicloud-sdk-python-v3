@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CheckParametersResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CheckParametersResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """CheckParametersResponse - a model defined in huaweicloud sdk"""
+        """CheckParametersResponse
+
+        The model defined in huaweicloud sdk
+
+        :param body: 
+        :type body: list[:class:`huaweicloudsdkcodecheck.v2.CheckParametersRes`]
+        """
         
         super(CheckParametersResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class CheckParametersResponse(SdkResponse):
 
 
         :return: The body of this CheckParametersResponse.
-        :rtype: list[CheckParametersRes]
+        :rtype: list[:class:`huaweicloudsdkcodecheck.v2.CheckParametersRes`]
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CheckParametersResponse(SdkResponse):
 
 
         :param body: The body of this CheckParametersResponse.
-        :type: list[CheckParametersRes]
+        :type body: list[:class:`huaweicloudsdkcodecheck.v2.CheckParametersRes`]
         """
         self._body = body
 

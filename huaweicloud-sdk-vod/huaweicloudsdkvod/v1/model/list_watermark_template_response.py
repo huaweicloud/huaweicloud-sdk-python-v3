@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListWatermarkTemplateResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListWatermarkTemplateResponse(SdkResponse):
     }
 
     def __init__(self, templates=None, total=None):
-        """ListWatermarkTemplateResponse - a model defined in huaweicloud sdk"""
+        """ListWatermarkTemplateResponse
+
+        The model defined in huaweicloud sdk
+
+        :param templates: 水印模板信息。
+        :type templates: list[:class:`huaweicloudsdkvod.v1.WatermarkTemplate`]
+        :param total: 总数。
+        :type total: int
+        """
         
         super(ListWatermarkTemplateResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListWatermarkTemplateResponse(SdkResponse):
         水印模板信息。
 
         :return: The templates of this ListWatermarkTemplateResponse.
-        :rtype: list[WatermarkTemplate]
+        :rtype: list[:class:`huaweicloudsdkvod.v1.WatermarkTemplate`]
         """
         return self._templates
 
@@ -63,7 +70,7 @@ class ListWatermarkTemplateResponse(SdkResponse):
         水印模板信息。
 
         :param templates: The templates of this ListWatermarkTemplateResponse.
-        :type: list[WatermarkTemplate]
+        :type templates: list[:class:`huaweicloudsdkvod.v1.WatermarkTemplate`]
         """
         self._templates = templates
 
@@ -85,7 +92,7 @@ class ListWatermarkTemplateResponse(SdkResponse):
         总数。
 
         :param total: The total of this ListWatermarkTemplateResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 

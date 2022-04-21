@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TokenUserResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class TokenUserResult:
     }
 
     def __init__(self, name=None, id=None, password_expires_at=None, domain=None):
-        """TokenUserResult - a model defined in huaweicloud sdk"""
+        """TokenUserResult
+
+        The model defined in huaweicloud sdk
+
+        :param name: IAM用户名。
+        :type name: str
+        :param id: IAM用户ID。
+        :type id: str
+        :param password_expires_at: 密码过期时间（UTC时间），“”表示密码不过期。
+        :type password_expires_at: str
+        :param domain: 
+        :type domain: :class:`huaweicloudsdkiam.v3.TokenUserDomainResult`
+        """
         
         
 
@@ -69,7 +80,7 @@ class TokenUserResult:
         IAM用户名。
 
         :param name: The name of this TokenUserResult.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -91,7 +102,7 @@ class TokenUserResult:
         IAM用户ID。
 
         :param id: The id of this TokenUserResult.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -113,7 +124,7 @@ class TokenUserResult:
         密码过期时间（UTC时间），“”表示密码不过期。
 
         :param password_expires_at: The password_expires_at of this TokenUserResult.
-        :type: str
+        :type password_expires_at: str
         """
         self._password_expires_at = password_expires_at
 
@@ -123,7 +134,7 @@ class TokenUserResult:
 
 
         :return: The domain of this TokenUserResult.
-        :rtype: TokenUserDomainResult
+        :rtype: :class:`huaweicloudsdkiam.v3.TokenUserDomainResult`
         """
         return self._domain
 
@@ -133,7 +144,7 @@ class TokenUserResult:
 
 
         :param domain: The domain of this TokenUserResult.
-        :type: TokenUserDomainResult
+        :type domain: :class:`huaweicloudsdkiam.v3.TokenUserDomainResult`
         """
         self._domain = domain
 

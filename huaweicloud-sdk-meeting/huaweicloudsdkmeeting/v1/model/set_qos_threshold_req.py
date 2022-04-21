@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SetQosThresholdReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class SetQosThresholdReq:
     }
 
     def __init__(self, latency=None, jitter=None, packet_loss=None, client_cpu_max=None, system_cpu_max=None):
-        """SetQosThresholdReq - a model defined in huaweicloud sdk"""
+        """SetQosThresholdReq
+
+        The model defined in huaweicloud sdk
+
+        :param latency: 
+        :type latency: :class:`huaweicloudsdkmeeting.v1.SetThresholdData`
+        :param jitter: 
+        :type jitter: :class:`huaweicloudsdkmeeting.v1.SetThresholdData`
+        :param packet_loss: 
+        :type packet_loss: :class:`huaweicloudsdkmeeting.v1.SetPacketThresholdData`
+        :param client_cpu_max: 
+        :type client_cpu_max: :class:`huaweicloudsdkmeeting.v1.SetCPUThresholdData`
+        :param system_cpu_max: 
+        :type system_cpu_max: :class:`huaweicloudsdkmeeting.v1.SetCPUThresholdData`
+        """
         
         
 
@@ -66,7 +79,7 @@ class SetQosThresholdReq:
 
 
         :return: The latency of this SetQosThresholdReq.
-        :rtype: SetThresholdData
+        :rtype: :class:`huaweicloudsdkmeeting.v1.SetThresholdData`
         """
         return self._latency
 
@@ -76,7 +89,7 @@ class SetQosThresholdReq:
 
 
         :param latency: The latency of this SetQosThresholdReq.
-        :type: SetThresholdData
+        :type latency: :class:`huaweicloudsdkmeeting.v1.SetThresholdData`
         """
         self._latency = latency
 
@@ -86,7 +99,7 @@ class SetQosThresholdReq:
 
 
         :return: The jitter of this SetQosThresholdReq.
-        :rtype: SetThresholdData
+        :rtype: :class:`huaweicloudsdkmeeting.v1.SetThresholdData`
         """
         return self._jitter
 
@@ -96,7 +109,7 @@ class SetQosThresholdReq:
 
 
         :param jitter: The jitter of this SetQosThresholdReq.
-        :type: SetThresholdData
+        :type jitter: :class:`huaweicloudsdkmeeting.v1.SetThresholdData`
         """
         self._jitter = jitter
 
@@ -106,7 +119,7 @@ class SetQosThresholdReq:
 
 
         :return: The packet_loss of this SetQosThresholdReq.
-        :rtype: SetPacketThresholdData
+        :rtype: :class:`huaweicloudsdkmeeting.v1.SetPacketThresholdData`
         """
         return self._packet_loss
 
@@ -116,7 +129,7 @@ class SetQosThresholdReq:
 
 
         :param packet_loss: The packet_loss of this SetQosThresholdReq.
-        :type: SetPacketThresholdData
+        :type packet_loss: :class:`huaweicloudsdkmeeting.v1.SetPacketThresholdData`
         """
         self._packet_loss = packet_loss
 
@@ -126,7 +139,7 @@ class SetQosThresholdReq:
 
 
         :return: The client_cpu_max of this SetQosThresholdReq.
-        :rtype: SetCPUThresholdData
+        :rtype: :class:`huaweicloudsdkmeeting.v1.SetCPUThresholdData`
         """
         return self._client_cpu_max
 
@@ -136,7 +149,7 @@ class SetQosThresholdReq:
 
 
         :param client_cpu_max: The client_cpu_max of this SetQosThresholdReq.
-        :type: SetCPUThresholdData
+        :type client_cpu_max: :class:`huaweicloudsdkmeeting.v1.SetCPUThresholdData`
         """
         self._client_cpu_max = client_cpu_max
 
@@ -146,7 +159,7 @@ class SetQosThresholdReq:
 
 
         :return: The system_cpu_max of this SetQosThresholdReq.
-        :rtype: SetCPUThresholdData
+        :rtype: :class:`huaweicloudsdkmeeting.v1.SetCPUThresholdData`
         """
         return self._system_cpu_max
 
@@ -156,7 +169,7 @@ class SetQosThresholdReq:
 
 
         :param system_cpu_max: The system_cpu_max of this SetQosThresholdReq.
-        :type: SetCPUThresholdData
+        :type system_cpu_max: :class:`huaweicloudsdkmeeting.v1.SetCPUThresholdData`
         """
         self._system_cpu_max = system_cpu_max
 

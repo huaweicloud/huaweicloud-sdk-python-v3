@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowFunctionCodeResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class ShowFunctionCodeResponse(SdkResponse):
     }
 
     def __init__(self, func_urn=None, func_name=None, domain_id=None, runtime=None, code_type=None, code_url=None, code_filename=None, code_size=None, digest=None, last_modified=None, func_code=None, depend_list=None, strategy_config=None, dependencies=None):
-        """ShowFunctionCodeResponse - a model defined in huaweicloud sdk"""
+        """ShowFunctionCodeResponse
+
+        The model defined in huaweicloud sdk
+
+        :param func_urn: 函数的URN（Uniform Resource Name），唯一标识函数。
+        :type func_urn: str
+        :param func_name: 函数名称。
+        :type func_name: str
+        :param domain_id: 域名id。
+        :type domain_id: str
+        :param runtime: FunctionGraph函数的执行环境 支持Node.js6.10、Python2.7、Python3.6、Java8、Go1.8、Node.js 8.10、C#.NET Core 2.0、C#.NET Core 2.1、PHP7.3。 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 Java11、Nodejs14.18、Python3.9在type为v2时支持
+        :type runtime: str
+        :param code_type: 函数代码类型，取值有4种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。
+        :type code_type: str
+        :param code_url: 当CodeType为obs时，该值为函数代码包在OBS上的地址，CodeType为其他值时，该字段为空。
+        :type code_url: str
+        :param code_filename: 函数的文件名，当CodeType为jar/zip时必须提供该字段，inline和obs不需要提供。
+        :type code_filename: str
+        :param code_size: 函数大小，单位：字节。
+        :type code_size: int
+        :param digest: 函数代码SHA512 hash值，用于判断函数是否变化。
+        :type digest: str
+        :param last_modified: 函数最后一次更新时间。
+        :type last_modified: datetime
+        :param func_code: 
+        :type func_code: :class:`huaweicloudsdkfunctiongraph.v2.FuncCode`
+        :param depend_list: 依赖id列表
+        :type depend_list: list[str]
+        :param strategy_config: 
+        :type strategy_config: :class:`huaweicloudsdkfunctiongraph.v2.StrategyConfig`
+        :param dependencies: 函数依赖代码包列表。
+        :type dependencies: list[:class:`huaweicloudsdkfunctiongraph.v2.Dependency`]
+        """
         
         super(ShowFunctionCodeResponse, self).__init__()
 
@@ -123,7 +154,7 @@ class ShowFunctionCodeResponse(SdkResponse):
         函数的URN（Uniform Resource Name），唯一标识函数。
 
         :param func_urn: The func_urn of this ShowFunctionCodeResponse.
-        :type: str
+        :type func_urn: str
         """
         self._func_urn = func_urn
 
@@ -145,7 +176,7 @@ class ShowFunctionCodeResponse(SdkResponse):
         函数名称。
 
         :param func_name: The func_name of this ShowFunctionCodeResponse.
-        :type: str
+        :type func_name: str
         """
         self._func_name = func_name
 
@@ -167,7 +198,7 @@ class ShowFunctionCodeResponse(SdkResponse):
         域名id。
 
         :param domain_id: The domain_id of this ShowFunctionCodeResponse.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -189,7 +220,7 @@ class ShowFunctionCodeResponse(SdkResponse):
         FunctionGraph函数的执行环境 支持Node.js6.10、Python2.7、Python3.6、Java8、Go1.8、Node.js 8.10、C#.NET Core 2.0、C#.NET Core 2.1、PHP7.3。 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 Java11、Nodejs14.18、Python3.9在type为v2时支持
 
         :param runtime: The runtime of this ShowFunctionCodeResponse.
-        :type: str
+        :type runtime: str
         """
         self._runtime = runtime
 
@@ -211,7 +242,7 @@ class ShowFunctionCodeResponse(SdkResponse):
         函数代码类型，取值有4种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。
 
         :param code_type: The code_type of this ShowFunctionCodeResponse.
-        :type: str
+        :type code_type: str
         """
         self._code_type = code_type
 
@@ -233,7 +264,7 @@ class ShowFunctionCodeResponse(SdkResponse):
         当CodeType为obs时，该值为函数代码包在OBS上的地址，CodeType为其他值时，该字段为空。
 
         :param code_url: The code_url of this ShowFunctionCodeResponse.
-        :type: str
+        :type code_url: str
         """
         self._code_url = code_url
 
@@ -255,7 +286,7 @@ class ShowFunctionCodeResponse(SdkResponse):
         函数的文件名，当CodeType为jar/zip时必须提供该字段，inline和obs不需要提供。
 
         :param code_filename: The code_filename of this ShowFunctionCodeResponse.
-        :type: str
+        :type code_filename: str
         """
         self._code_filename = code_filename
 
@@ -277,7 +308,7 @@ class ShowFunctionCodeResponse(SdkResponse):
         函数大小，单位：字节。
 
         :param code_size: The code_size of this ShowFunctionCodeResponse.
-        :type: int
+        :type code_size: int
         """
         self._code_size = code_size
 
@@ -299,7 +330,7 @@ class ShowFunctionCodeResponse(SdkResponse):
         函数代码SHA512 hash值，用于判断函数是否变化。
 
         :param digest: The digest of this ShowFunctionCodeResponse.
-        :type: str
+        :type digest: str
         """
         self._digest = digest
 
@@ -321,7 +352,7 @@ class ShowFunctionCodeResponse(SdkResponse):
         函数最后一次更新时间。
 
         :param last_modified: The last_modified of this ShowFunctionCodeResponse.
-        :type: datetime
+        :type last_modified: datetime
         """
         self._last_modified = last_modified
 
@@ -331,7 +362,7 @@ class ShowFunctionCodeResponse(SdkResponse):
 
 
         :return: The func_code of this ShowFunctionCodeResponse.
-        :rtype: FuncCode
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.FuncCode`
         """
         return self._func_code
 
@@ -341,7 +372,7 @@ class ShowFunctionCodeResponse(SdkResponse):
 
 
         :param func_code: The func_code of this ShowFunctionCodeResponse.
-        :type: FuncCode
+        :type func_code: :class:`huaweicloudsdkfunctiongraph.v2.FuncCode`
         """
         self._func_code = func_code
 
@@ -363,7 +394,7 @@ class ShowFunctionCodeResponse(SdkResponse):
         依赖id列表
 
         :param depend_list: The depend_list of this ShowFunctionCodeResponse.
-        :type: list[str]
+        :type depend_list: list[str]
         """
         self._depend_list = depend_list
 
@@ -373,7 +404,7 @@ class ShowFunctionCodeResponse(SdkResponse):
 
 
         :return: The strategy_config of this ShowFunctionCodeResponse.
-        :rtype: StrategyConfig
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.StrategyConfig`
         """
         return self._strategy_config
 
@@ -383,7 +414,7 @@ class ShowFunctionCodeResponse(SdkResponse):
 
 
         :param strategy_config: The strategy_config of this ShowFunctionCodeResponse.
-        :type: StrategyConfig
+        :type strategy_config: :class:`huaweicloudsdkfunctiongraph.v2.StrategyConfig`
         """
         self._strategy_config = strategy_config
 
@@ -394,7 +425,7 @@ class ShowFunctionCodeResponse(SdkResponse):
         函数依赖代码包列表。
 
         :return: The dependencies of this ShowFunctionCodeResponse.
-        :rtype: list[Dependency]
+        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.Dependency`]
         """
         return self._dependencies
 
@@ -405,7 +436,7 @@ class ShowFunctionCodeResponse(SdkResponse):
         函数依赖代码包列表。
 
         :param dependencies: The dependencies of this ShowFunctionCodeResponse.
-        :type: list[Dependency]
+        :type dependencies: list[:class:`huaweicloudsdkfunctiongraph.v2.Dependency`]
         """
         self._dependencies = dependencies
 

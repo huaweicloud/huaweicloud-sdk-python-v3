@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowConsoleConfigRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class ShowConsoleConfigRequest:
     }
 
     def __init__(self):
-        """ShowConsoleConfigRequest - a model defined in huaweicloud sdk"""
+        """ShowConsoleConfigRequest
+
+        The model defined in huaweicloud sdk
+
+        """
         
         
         self.discriminator = None

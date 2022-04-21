@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchShowPipelinesStatusResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchShowPipelinesStatusResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """BatchShowPipelinesStatusResponse - a model defined in huaweicloud sdk"""
+        """BatchShowPipelinesStatusResponse
+
+        The model defined in huaweicloud sdk
+
+        :param body: 
+        :type body: list[:class:`huaweicloudsdkcloudpipeline.v2.PipelineExecuteStates`]
+        """
         
         super(BatchShowPipelinesStatusResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class BatchShowPipelinesStatusResponse(SdkResponse):
 
 
         :return: The body of this BatchShowPipelinesStatusResponse.
-        :rtype: list[PipelineExecuteStates]
+        :rtype: list[:class:`huaweicloudsdkcloudpipeline.v2.PipelineExecuteStates`]
         """
         return self._body
 
@@ -56,7 +61,7 @@ class BatchShowPipelinesStatusResponse(SdkResponse):
 
 
         :param body: The body of this BatchShowPipelinesStatusResponse.
-        :type: list[PipelineExecuteStates]
+        :type body: list[:class:`huaweicloudsdkcloudpipeline.v2.PipelineExecuteStates`]
         """
         self._body = body
 

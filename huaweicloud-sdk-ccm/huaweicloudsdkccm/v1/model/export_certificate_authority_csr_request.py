@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExportCertificateAuthorityCsrRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ExportCertificateAuthorityCsrRequest:
     }
 
     def __init__(self, ca_id=None):
-        """ExportCertificateAuthorityCsrRequest - a model defined in huaweicloud sdk"""
+        """ExportCertificateAuthorityCsrRequest
+
+        The model defined in huaweicloud sdk
+
+        :param ca_id: 未激活的从属CA证书ID。
+        :type ca_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ExportCertificateAuthorityCsrRequest:
         未激活的从属CA证书ID。
 
         :param ca_id: The ca_id of this ExportCertificateAuthorityCsrRequest.
-        :type: str
+        :type ca_id: str
         """
         self._ca_id = ca_id
 

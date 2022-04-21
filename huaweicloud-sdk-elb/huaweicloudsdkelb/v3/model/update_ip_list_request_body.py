@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateIpListRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateIpListRequestBody:
     }
 
     def __init__(self, ipgroup=None):
-        """UpdateIpListRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateIpListRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param ipgroup: 
+        :type ipgroup: :class:`huaweicloudsdkelb.v3.UpdateIpGroupIpListOption`
+        """
         
         
 
@@ -46,7 +51,7 @@ class UpdateIpListRequestBody:
 
 
         :return: The ipgroup of this UpdateIpListRequestBody.
-        :rtype: UpdateIpGroupIpListOption
+        :rtype: :class:`huaweicloudsdkelb.v3.UpdateIpGroupIpListOption`
         """
         return self._ipgroup
 
@@ -56,7 +61,7 @@ class UpdateIpListRequestBody:
 
 
         :param ipgroup: The ipgroup of this UpdateIpListRequestBody.
-        :type: UpdateIpGroupIpListOption
+        :type ipgroup: :class:`huaweicloudsdkelb.v3.UpdateIpGroupIpListOption`
         """
         self._ipgroup = ipgroup
 

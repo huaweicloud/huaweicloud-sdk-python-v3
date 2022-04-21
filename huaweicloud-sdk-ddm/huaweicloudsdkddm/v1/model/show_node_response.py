@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowNodeResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class ShowNodeResponse(SdkResponse):
     }
 
     def __init__(self, status=None, name=None, node_id=None, private_ip=None, floating_ip=None, server_id=None, subnet_name=None, datavolume_id=None, res_subnet_ip=None, systemvolume_id=None):
-        """ShowNodeResponse - a model defined in huaweicloud sdk"""
+        """ShowNodeResponse
+
+        The model defined in huaweicloud sdk
+
+        :param status: 节点状态。
+        :type status: str
+        :param name: 节点名称。
+        :type name: str
+        :param node_id: 节点id。
+        :type node_id: str
+        :param private_ip: 节点私有ip。
+        :type private_ip: str
+        :param floating_ip: 节点浮动ip。
+        :type floating_ip: str
+        :param server_id: 虚机id。
+        :type server_id: str
+        :param subnet_name: 子网名称。
+        :type subnet_name: str
+        :param datavolume_id: 数据盘id。
+        :type datavolume_id: str
+        :param res_subnet_ip: 资源子网ip。
+        :type res_subnet_ip: str
+        :param systemvolume_id: 系统盘id。
+        :type systemvolume_id: str
+        """
         
         super(ShowNodeResponse, self).__init__()
 
@@ -103,7 +126,7 @@ class ShowNodeResponse(SdkResponse):
         节点状态。
 
         :param status: The status of this ShowNodeResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -125,7 +148,7 @@ class ShowNodeResponse(SdkResponse):
         节点名称。
 
         :param name: The name of this ShowNodeResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -147,7 +170,7 @@ class ShowNodeResponse(SdkResponse):
         节点id。
 
         :param node_id: The node_id of this ShowNodeResponse.
-        :type: str
+        :type node_id: str
         """
         self._node_id = node_id
 
@@ -169,7 +192,7 @@ class ShowNodeResponse(SdkResponse):
         节点私有ip。
 
         :param private_ip: The private_ip of this ShowNodeResponse.
-        :type: str
+        :type private_ip: str
         """
         self._private_ip = private_ip
 
@@ -191,7 +214,7 @@ class ShowNodeResponse(SdkResponse):
         节点浮动ip。
 
         :param floating_ip: The floating_ip of this ShowNodeResponse.
-        :type: str
+        :type floating_ip: str
         """
         self._floating_ip = floating_ip
 
@@ -213,7 +236,7 @@ class ShowNodeResponse(SdkResponse):
         虚机id。
 
         :param server_id: The server_id of this ShowNodeResponse.
-        :type: str
+        :type server_id: str
         """
         self._server_id = server_id
 
@@ -235,7 +258,7 @@ class ShowNodeResponse(SdkResponse):
         子网名称。
 
         :param subnet_name: The subnet_name of this ShowNodeResponse.
-        :type: str
+        :type subnet_name: str
         """
         self._subnet_name = subnet_name
 
@@ -257,7 +280,7 @@ class ShowNodeResponse(SdkResponse):
         数据盘id。
 
         :param datavolume_id: The datavolume_id of this ShowNodeResponse.
-        :type: str
+        :type datavolume_id: str
         """
         self._datavolume_id = datavolume_id
 
@@ -279,7 +302,7 @@ class ShowNodeResponse(SdkResponse):
         资源子网ip。
 
         :param res_subnet_ip: The res_subnet_ip of this ShowNodeResponse.
-        :type: str
+        :type res_subnet_ip: str
         """
         self._res_subnet_ip = res_subnet_ip
 
@@ -301,7 +324,7 @@ class ShowNodeResponse(SdkResponse):
         系统盘id。
 
         :param systemvolume_id: The systemvolume_id of this ShowNodeResponse.
-        :type: str
+        :type systemvolume_id: str
         """
         self._systemvolume_id = systemvolume_id
 

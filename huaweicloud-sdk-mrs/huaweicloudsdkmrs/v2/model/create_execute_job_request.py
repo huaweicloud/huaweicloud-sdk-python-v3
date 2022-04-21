@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateExecuteJobRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateExecuteJobRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """CreateExecuteJobRequest - a model defined in huaweicloud sdk"""
+        """CreateExecuteJobRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 集群ID。获取方法，请参见[获取集群ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
+        :type cluster_id: str
+        :param body: Body of the CreateExecuteJobRequest
+        :type body: :class:`huaweicloudsdkmrs.v2.JobExecution`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateExecuteJobRequest:
         集群ID。获取方法，请参见[获取集群ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
 
         :param cluster_id: The cluster_id of this CreateExecuteJobRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -72,7 +79,7 @@ class CreateExecuteJobRequest:
 
 
         :return: The body of this CreateExecuteJobRequest.
-        :rtype: JobExecution
+        :rtype: :class:`huaweicloudsdkmrs.v2.JobExecution`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CreateExecuteJobRequest:
 
 
         :param body: The body of this CreateExecuteJobRequest.
-        :type: JobExecution
+        :type body: :class:`huaweicloudsdkmrs.v2.JobExecution`
         """
         self._body = body
 

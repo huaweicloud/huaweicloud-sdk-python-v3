@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListMonitorInfosRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListMonitorInfosRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, task_name=None, execute_status=None):
-        """ListMonitorInfosRequest - a model defined in huaweicloud sdk"""
+        """ListMonitorInfosRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于1
+        :type offset: int
+        :param limit: 每页显示条目数量，最大数量999，超过999后只返回999
+        :type limit: int
+        :param task_name: 需要搜索的任务名称，支持模糊搜索，大小写敏感，非必填参数，如果为空，搜索所有任务
+        :type task_name: str
+        :param execute_status: 需要搜索任务的执行状态, 只允许如下枚举值：UNSTARTED-未启动, WAITING-等待执行,RUNNING-执行中, SUCCESS-执行成功, CANCELLED-任务取消, ERROR-执行异常&lt;/br&gt; 非必填参数，如果为空，搜索所有任务
+        :type execute_status: str
+        """
         
         
 
@@ -77,7 +90,7 @@ class ListMonitorInfosRequest:
         实例ID
 
         :param instance_id: The instance_id of this ListMonitorInfosRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -99,7 +112,7 @@ class ListMonitorInfosRequest:
         偏移量，表示从此偏移量开始查询， offset大于等于1
 
         :param offset: The offset of this ListMonitorInfosRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -121,7 +134,7 @@ class ListMonitorInfosRequest:
         每页显示条目数量，最大数量999，超过999后只返回999
 
         :param limit: The limit of this ListMonitorInfosRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -143,7 +156,7 @@ class ListMonitorInfosRequest:
         需要搜索的任务名称，支持模糊搜索，大小写敏感，非必填参数，如果为空，搜索所有任务
 
         :param task_name: The task_name of this ListMonitorInfosRequest.
-        :type: str
+        :type task_name: str
         """
         self._task_name = task_name
 
@@ -165,7 +178,7 @@ class ListMonitorInfosRequest:
         需要搜索任务的执行状态, 只允许如下枚举值：UNSTARTED-未启动, WAITING-等待执行,RUNNING-执行中, SUCCESS-执行成功, CANCELLED-任务取消, ERROR-执行异常</br> 非必填参数，如果为空，搜索所有任务
 
         :param execute_status: The execute_status of this ListMonitorInfosRequest.
-        :type: str
+        :type execute_status: str
         """
         self._execute_status = execute_status
 

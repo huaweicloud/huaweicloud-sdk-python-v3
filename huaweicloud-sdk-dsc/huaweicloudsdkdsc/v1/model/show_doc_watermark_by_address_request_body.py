@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDocWatermarkByAddressRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowDocWatermarkByAddressRequestBody:
     }
 
     def __init__(self, region_id=None, doc_type=None, src_file=None, file_password=None):
-        """ShowDocWatermarkByAddressRequestBody - a model defined in huaweicloud sdk"""
+        """ShowDocWatermarkByAddressRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param region_id: 项目所在region的id，如北京一为：cn-north-1。
+        :type region_id: str
+        :param doc_type: 待提取水印的文档类型
+        :type doc_type: str
+        :param src_file: 待提取文字暗水印的文档的地址，当前只支持华为云OBS对象，格式为 **obs://bucket/object** ，其中bucket为和当前项目处于同一区域的OBS桶名称，object为对象全路径名。例如：**obs://hwbucket/hwinfo/hw.doc**，其中obs://表示OBS存储，hwbucket为桶名，hwinfo/hw.doc为对象全路径名。
+        :type src_file: str
+        :param file_password: 解密文件的密码， 最大支持长度256。如果Office文档有读密码或域控的权限密码，请输入读密码，或者有读权限的域控密码。
+        :type file_password: str
+        """
         
         
 
@@ -70,7 +81,7 @@ class ShowDocWatermarkByAddressRequestBody:
         项目所在region的id，如北京一为：cn-north-1。
 
         :param region_id: The region_id of this ShowDocWatermarkByAddressRequestBody.
-        :type: str
+        :type region_id: str
         """
         self._region_id = region_id
 
@@ -92,7 +103,7 @@ class ShowDocWatermarkByAddressRequestBody:
         待提取水印的文档类型
 
         :param doc_type: The doc_type of this ShowDocWatermarkByAddressRequestBody.
-        :type: str
+        :type doc_type: str
         """
         self._doc_type = doc_type
 
@@ -114,7 +125,7 @@ class ShowDocWatermarkByAddressRequestBody:
         待提取文字暗水印的文档的地址，当前只支持华为云OBS对象，格式为 **obs://bucket/object** ，其中bucket为和当前项目处于同一区域的OBS桶名称，object为对象全路径名。例如：**obs://hwbucket/hwinfo/hw.doc**，其中obs://表示OBS存储，hwbucket为桶名，hwinfo/hw.doc为对象全路径名。
 
         :param src_file: The src_file of this ShowDocWatermarkByAddressRequestBody.
-        :type: str
+        :type src_file: str
         """
         self._src_file = src_file
 
@@ -136,7 +147,7 @@ class ShowDocWatermarkByAddressRequestBody:
         解密文件的密码， 最大支持长度256。如果Office文档有读密码或域控的权限密码，请输入读密码，或者有读权限的域控密码。
 
         :param file_password: The file_password of this ShowDocWatermarkByAddressRequestBody.
-        :type: str
+        :type file_password: str
         """
         self._file_password = file_password
 

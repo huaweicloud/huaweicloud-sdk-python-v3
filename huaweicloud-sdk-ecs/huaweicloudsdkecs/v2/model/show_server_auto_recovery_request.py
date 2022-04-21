@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowServerAutoRecoveryRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowServerAutoRecoveryRequest:
     }
 
     def __init__(self, server_id=None):
-        """ShowServerAutoRecoveryRequest - a model defined in huaweicloud sdk"""
+        """ShowServerAutoRecoveryRequest
+
+        The model defined in huaweicloud sdk
+
+        :param server_id: 云服务器ID。
+        :type server_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowServerAutoRecoveryRequest:
         云服务器ID。
 
         :param server_id: The server_id of this ShowServerAutoRecoveryRequest.
-        :type: str
+        :type server_id: str
         """
         self._server_id = server_id
 

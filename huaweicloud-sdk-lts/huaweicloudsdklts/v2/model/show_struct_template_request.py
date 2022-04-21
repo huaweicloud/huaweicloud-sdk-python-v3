@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowStructTemplateRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowStructTemplateRequest:
     }
 
     def __init__(self, log_group_id=None, log_stream_id=None):
-        """ShowStructTemplateRequest - a model defined in huaweicloud sdk"""
+        """ShowStructTemplateRequest
+
+        The model defined in huaweicloud sdk
+
+        :param log_group_id: 日志组ID
+        :type log_group_id: str
+        :param log_stream_id: 日志流ID
+        :type log_stream_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ShowStructTemplateRequest:
         日志组ID
 
         :param log_group_id: The log_group_id of this ShowStructTemplateRequest.
-        :type: str
+        :type log_group_id: str
         """
         self._log_group_id = log_group_id
 
@@ -83,7 +90,7 @@ class ShowStructTemplateRequest:
         日志流ID
 
         :param log_stream_id: The log_stream_id of this ShowStructTemplateRequest.
-        :type: str
+        :type log_stream_id: str
         """
         self._log_stream_id = log_stream_id
 

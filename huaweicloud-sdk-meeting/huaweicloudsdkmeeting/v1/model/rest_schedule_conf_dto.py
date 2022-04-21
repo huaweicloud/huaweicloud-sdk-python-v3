@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestScheduleConfDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -68,7 +67,51 @@ class RestScheduleConfDTO:
     }
 
     def __init__(self, start_time=None, length=None, subject=None, media_types=None, groupuri=None, attendees=None, is_auto_record=None, encrypt_mode=None, language=None, time_zone_id=None, record_type=None, live_address=None, aux_address=None, record_aux_stream=None, conf_config_info=None, record_auth_type=None, vmr_flag=None, cycle_params=None, vmr_id=None, concurrent_participants=None):
-        """RestScheduleConfDTO - a model defined in huaweicloud sdk"""
+        """RestScheduleConfDTO
+
+        The model defined in huaweicloud sdk
+
+        :param start_time: 会议开始时间（UTC时间）。 预定创建会议时，如果没有指定开始时间，或填空串，则表示会议马上开始。 格式：yyyy-MM-dd HH:mm
+        :type start_time: str
+        :param length: 会议持续时长，单位分钟，最大值为1440，最短15。default：30。
+        :type length: int
+        :param subject: 会议主题。长度限制为128个字符。
+        :type subject: str
+        :param media_types: 会议的媒体类型。 由1个或多个枚举String组成，多个枚举时，每个枚举值之间通过”,”逗号分隔，枚举值如下： - Voice: 语音。 - Video: 标清视频。 - HDVideo: 高清视频（与Video互斥，如果同时选择Video、HDVideo，则系统默认选择Video） - Telepresence: 智真(与HDVideo、Video互斥，如果同时选择，系统使用Telepresence)。（预留字段） - Data: 多媒体（系统配置决定是否自动添加Data）。
+        :type media_types: str
+        :param groupuri: 软终端创建即时会议时在当前字段带临时群组ID，由服务器在邀请其他与会者时在或者conference-info头域中携带。长度限制为31个字符。
+        :type groupuri: str
+        :param attendees: 与会者列表。该列表可以用于发送会议通知、会议提醒、会议开始时候进行自动邀请。
+        :type attendees: list[:class:`huaweicloudsdkmeeting.v1.RestAttendeeDTO`]
+        :param is_auto_record: 会议是否自动启动录制，在录播类型为:录播、直播+录播时有效。默认为不自动启动。 - 0: 不自动启动录制 - 1: 自动启动录制
+        :type is_auto_record: int
+        :param encrypt_mode: 会议媒体加密模式。默认值由企业级的配置填充。 - 0: 自适应加密 - 1: 强制加密 - 2: 不加密
+        :type encrypt_mode: int
+        :param language: 会议的默认语言，默认值由会议云服务定义。 对于系统支持的语言，按照RFC3066规范传递。 - zh-CN: 简体中文。 - en-US: 美国英文。
+        :type language: str
+        :param time_zone_id: 开始时间的时区信息。时区信息，参考时区映射关系。
+        :type time_zone_id: str
+        :param record_type: 录播类型。默认为禁用。 - 0: 禁用 - 1: 直播 - 2: 录播 - 3: 直播+录播
+        :type record_type: int
+        :param live_address: 主流直播地址，最大不超过255个字符。在录播类型为 :直播、直播+录播时有效。
+        :type live_address: str
+        :param aux_address: 辅流直播地址，最大不超过255个字符。在录播类型为: 直播、直播+录播时有效。
+        :type aux_address: str
+        :param record_aux_stream: 是否录制辅流，在录播类型为：录播、录播+直播时有效。  - 0: 不录制。  - 1: 录制。
+        :type record_aux_stream: int
+        :param conf_config_info: 
+        :type conf_config_info: :class:`huaweicloudsdkmeeting.v1.RestConfConfigDTO`
+        :param record_auth_type: 录播鉴权方式，在录播类型为:录播、直播+录播时有效。 - 0: 可通过链接观看/下载。 - 1: 企业用户可观看/下载。 - 2: 与会者可观看/下载。
+        :type record_auth_type: int
+        :param vmr_flag: 是否使用云会议室召开预约会议。默认不使用云会议室。 - 0: 不使用云会议室。 - 1: 使用云会议室。
+        :type vmr_flag: int
+        :param cycle_params: 
+        :type cycle_params: :class:`huaweicloudsdkmeeting.v1.CycleParams`
+        :param vmr_id: 用于识别用户开会时绑定的云会议室。最大长度不超过512个字符。 ID可以从云会议室管理-&gt;分页查询用户云会议室中获取id字段。 - 不为空，则用ID查询云会议室信息。 - 为空，则查用户所有云会议室，如果有个人云会议室，用个人云会议室ID；没有个人云会议室，取最小云会议室ID。
+        :type vmr_id: str
+        :param concurrent_participants: 会议方数，会议最大与会人数限制
+        :type concurrent_participants: int
+        """
         
         
 
@@ -152,7 +195,7 @@ class RestScheduleConfDTO:
         会议开始时间（UTC时间）。 预定创建会议时，如果没有指定开始时间，或填空串，则表示会议马上开始。 格式：yyyy-MM-dd HH:mm
 
         :param start_time: The start_time of this RestScheduleConfDTO.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -174,7 +217,7 @@ class RestScheduleConfDTO:
         会议持续时长，单位分钟，最大值为1440，最短15。default：30。
 
         :param length: The length of this RestScheduleConfDTO.
-        :type: int
+        :type length: int
         """
         self._length = length
 
@@ -196,7 +239,7 @@ class RestScheduleConfDTO:
         会议主题。长度限制为128个字符。
 
         :param subject: The subject of this RestScheduleConfDTO.
-        :type: str
+        :type subject: str
         """
         self._subject = subject
 
@@ -218,7 +261,7 @@ class RestScheduleConfDTO:
         会议的媒体类型。 由1个或多个枚举String组成，多个枚举时，每个枚举值之间通过”,”逗号分隔，枚举值如下： - Voice: 语音。 - Video: 标清视频。 - HDVideo: 高清视频（与Video互斥，如果同时选择Video、HDVideo，则系统默认选择Video） - Telepresence: 智真(与HDVideo、Video互斥，如果同时选择，系统使用Telepresence)。（预留字段） - Data: 多媒体（系统配置决定是否自动添加Data）。
 
         :param media_types: The media_types of this RestScheduleConfDTO.
-        :type: str
+        :type media_types: str
         """
         self._media_types = media_types
 
@@ -240,7 +283,7 @@ class RestScheduleConfDTO:
         软终端创建即时会议时在当前字段带临时群组ID，由服务器在邀请其他与会者时在或者conference-info头域中携带。长度限制为31个字符。
 
         :param groupuri: The groupuri of this RestScheduleConfDTO.
-        :type: str
+        :type groupuri: str
         """
         self._groupuri = groupuri
 
@@ -251,7 +294,7 @@ class RestScheduleConfDTO:
         与会者列表。该列表可以用于发送会议通知、会议提醒、会议开始时候进行自动邀请。
 
         :return: The attendees of this RestScheduleConfDTO.
-        :rtype: list[RestAttendeeDTO]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.RestAttendeeDTO`]
         """
         return self._attendees
 
@@ -262,7 +305,7 @@ class RestScheduleConfDTO:
         与会者列表。该列表可以用于发送会议通知、会议提醒、会议开始时候进行自动邀请。
 
         :param attendees: The attendees of this RestScheduleConfDTO.
-        :type: list[RestAttendeeDTO]
+        :type attendees: list[:class:`huaweicloudsdkmeeting.v1.RestAttendeeDTO`]
         """
         self._attendees = attendees
 
@@ -284,7 +327,7 @@ class RestScheduleConfDTO:
         会议是否自动启动录制，在录播类型为:录播、直播+录播时有效。默认为不自动启动。 - 0: 不自动启动录制 - 1: 自动启动录制
 
         :param is_auto_record: The is_auto_record of this RestScheduleConfDTO.
-        :type: int
+        :type is_auto_record: int
         """
         self._is_auto_record = is_auto_record
 
@@ -306,7 +349,7 @@ class RestScheduleConfDTO:
         会议媒体加密模式。默认值由企业级的配置填充。 - 0: 自适应加密 - 1: 强制加密 - 2: 不加密
 
         :param encrypt_mode: The encrypt_mode of this RestScheduleConfDTO.
-        :type: int
+        :type encrypt_mode: int
         """
         self._encrypt_mode = encrypt_mode
 
@@ -328,7 +371,7 @@ class RestScheduleConfDTO:
         会议的默认语言，默认值由会议云服务定义。 对于系统支持的语言，按照RFC3066规范传递。 - zh-CN: 简体中文。 - en-US: 美国英文。
 
         :param language: The language of this RestScheduleConfDTO.
-        :type: str
+        :type language: str
         """
         self._language = language
 
@@ -350,7 +393,7 @@ class RestScheduleConfDTO:
         开始时间的时区信息。时区信息，参考时区映射关系。
 
         :param time_zone_id: The time_zone_id of this RestScheduleConfDTO.
-        :type: str
+        :type time_zone_id: str
         """
         self._time_zone_id = time_zone_id
 
@@ -372,7 +415,7 @@ class RestScheduleConfDTO:
         录播类型。默认为禁用。 - 0: 禁用 - 1: 直播 - 2: 录播 - 3: 直播+录播
 
         :param record_type: The record_type of this RestScheduleConfDTO.
-        :type: int
+        :type record_type: int
         """
         self._record_type = record_type
 
@@ -394,7 +437,7 @@ class RestScheduleConfDTO:
         主流直播地址，最大不超过255个字符。在录播类型为 :直播、直播+录播时有效。
 
         :param live_address: The live_address of this RestScheduleConfDTO.
-        :type: str
+        :type live_address: str
         """
         self._live_address = live_address
 
@@ -416,7 +459,7 @@ class RestScheduleConfDTO:
         辅流直播地址，最大不超过255个字符。在录播类型为: 直播、直播+录播时有效。
 
         :param aux_address: The aux_address of this RestScheduleConfDTO.
-        :type: str
+        :type aux_address: str
         """
         self._aux_address = aux_address
 
@@ -438,7 +481,7 @@ class RestScheduleConfDTO:
         是否录制辅流，在录播类型为：录播、录播+直播时有效。  - 0: 不录制。  - 1: 录制。
 
         :param record_aux_stream: The record_aux_stream of this RestScheduleConfDTO.
-        :type: int
+        :type record_aux_stream: int
         """
         self._record_aux_stream = record_aux_stream
 
@@ -448,7 +491,7 @@ class RestScheduleConfDTO:
 
 
         :return: The conf_config_info of this RestScheduleConfDTO.
-        :rtype: RestConfConfigDTO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.RestConfConfigDTO`
         """
         return self._conf_config_info
 
@@ -458,7 +501,7 @@ class RestScheduleConfDTO:
 
 
         :param conf_config_info: The conf_config_info of this RestScheduleConfDTO.
-        :type: RestConfConfigDTO
+        :type conf_config_info: :class:`huaweicloudsdkmeeting.v1.RestConfConfigDTO`
         """
         self._conf_config_info = conf_config_info
 
@@ -480,7 +523,7 @@ class RestScheduleConfDTO:
         录播鉴权方式，在录播类型为:录播、直播+录播时有效。 - 0: 可通过链接观看/下载。 - 1: 企业用户可观看/下载。 - 2: 与会者可观看/下载。
 
         :param record_auth_type: The record_auth_type of this RestScheduleConfDTO.
-        :type: int
+        :type record_auth_type: int
         """
         self._record_auth_type = record_auth_type
 
@@ -502,7 +545,7 @@ class RestScheduleConfDTO:
         是否使用云会议室召开预约会议。默认不使用云会议室。 - 0: 不使用云会议室。 - 1: 使用云会议室。
 
         :param vmr_flag: The vmr_flag of this RestScheduleConfDTO.
-        :type: int
+        :type vmr_flag: int
         """
         self._vmr_flag = vmr_flag
 
@@ -512,7 +555,7 @@ class RestScheduleConfDTO:
 
 
         :return: The cycle_params of this RestScheduleConfDTO.
-        :rtype: CycleParams
+        :rtype: :class:`huaweicloudsdkmeeting.v1.CycleParams`
         """
         return self._cycle_params
 
@@ -522,7 +565,7 @@ class RestScheduleConfDTO:
 
 
         :param cycle_params: The cycle_params of this RestScheduleConfDTO.
-        :type: CycleParams
+        :type cycle_params: :class:`huaweicloudsdkmeeting.v1.CycleParams`
         """
         self._cycle_params = cycle_params
 
@@ -544,7 +587,7 @@ class RestScheduleConfDTO:
         用于识别用户开会时绑定的云会议室。最大长度不超过512个字符。 ID可以从云会议室管理->分页查询用户云会议室中获取id字段。 - 不为空，则用ID查询云会议室信息。 - 为空，则查用户所有云会议室，如果有个人云会议室，用个人云会议室ID；没有个人云会议室，取最小云会议室ID。
 
         :param vmr_id: The vmr_id of this RestScheduleConfDTO.
-        :type: str
+        :type vmr_id: str
         """
         self._vmr_id = vmr_id
 
@@ -566,7 +609,7 @@ class RestScheduleConfDTO:
         会议方数，会议最大与会人数限制
 
         :param concurrent_participants: The concurrent_participants of this RestScheduleConfDTO.
-        :type: int
+        :type concurrent_participants: int
         """
         self._concurrent_participants = concurrent_participants
 

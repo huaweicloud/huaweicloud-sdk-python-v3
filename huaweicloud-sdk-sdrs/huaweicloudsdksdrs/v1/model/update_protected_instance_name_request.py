@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateProtectedInstanceNameRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateProtectedInstanceNameRequest:
     }
 
     def __init__(self, protected_instance_id=None, body=None):
-        """UpdateProtectedInstanceNameRequest - a model defined in huaweicloud sdk"""
+        """UpdateProtectedInstanceNameRequest
+
+        The model defined in huaweicloud sdk
+
+        :param protected_instance_id: 保护实例的ID。
+        :type protected_instance_id: str
+        :param body: Body of the UpdateProtectedInstanceNameRequest
+        :type body: :class:`huaweicloudsdksdrs.v1.UpdateProtectedInstanceNameRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateProtectedInstanceNameRequest:
         保护实例的ID。
 
         :param protected_instance_id: The protected_instance_id of this UpdateProtectedInstanceNameRequest.
-        :type: str
+        :type protected_instance_id: str
         """
         self._protected_instance_id = protected_instance_id
 
@@ -72,7 +79,7 @@ class UpdateProtectedInstanceNameRequest:
 
 
         :return: The body of this UpdateProtectedInstanceNameRequest.
-        :rtype: UpdateProtectedInstanceNameRequestBody
+        :rtype: :class:`huaweicloudsdksdrs.v1.UpdateProtectedInstanceNameRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateProtectedInstanceNameRequest:
 
 
         :param body: The body of this UpdateProtectedInstanceNameRequest.
-        :type: UpdateProtectedInstanceNameRequestBody
+        :type body: :class:`huaweicloudsdksdrs.v1.UpdateProtectedInstanceNameRequestBody`
         """
         self._body = body
 

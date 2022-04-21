@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListL7policiesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -60,7 +59,43 @@ class ListL7policiesRequest:
     }
 
     def __init__(self, limit=None, marker=None, page_reverse=None, id=None, name=None, description=None, admin_state_up=None, listener_id=None, action=None, redirect_pool_id=None, redirect_listener_id=None, redirect_url=None, position=None, provisioning_status=None, enterprise_project_id=None, display_all_rules=None):
-        """ListL7policiesRequest - a model defined in huaweicloud sdk"""
+        """ListL7policiesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 分页查询中每页的转发策略个数
+        :type limit: int
+        :param marker: 分页查询的起始的资源id，表示上一页最后一条查询记录的转发策略的id。不指定时表示查询第一页。
+        :type marker: str
+        :param page_reverse: 分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。
+        :type page_reverse: bool
+        :param id: 转发策略ID。
+        :type id: str
+        :param name: 转发策略名称。
+        :type name: str
+        :param description: 转发策略的描述信息。
+        :type description: str
+        :param admin_state_up: 转发策略的管理状态；取值范围： true/false。该字段为预留字段，暂未启用。默认为true。
+        :type admin_state_up: bool
+        :param listener_id: 转发策略所在的监听器ID。
+        :type listener_id: str
+        :param action: 转发策略的匹配动作。 取值范围：REDIRECT_TO_POOL：将匹配的流量转发到redirect_pool_id指定的后端云服务器组上；REDIRECT_TO_LISTENER：将listener_id指定的HTTP监听器的流量重定向到redirect_listener_id指定的TERMINATED_HTTPS监听器上。
+        :type action: str
+        :param redirect_pool_id: 流量匹配后转发到后端云服务器组的ID。
+        :type redirect_pool_id: str
+        :param redirect_listener_id: 流量匹配后转发到的监听器的ID。
+        :type redirect_listener_id: str
+        :param redirect_url: 转发策略重定向到的url。该字段为预留字段，暂未启用。
+        :type redirect_url: str
+        :param position: 转发优先级，从1递增，最高100。默认值：100；该字段为预留字段，暂未启用。
+        :type position: int
+        :param provisioning_status: 转发策略的配置状态，可以为ACTIVE、PENDING_CREATE 或者ERROR。默认值：ACTIVE；该字段为预留字段，暂未启用。
+        :type provisioning_status: str
+        :param enterprise_project_id: 企业项目ID。  取值范围：带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。  若子账号查询转发策略列表时，需要指定enterprise_project_id为all_granted_eps或者具体企业项目ID。
+        :type enterprise_project_id: str
+        :param display_all_rules: 是否显示所有的rule信息。取值范围：false表示不显示（跟以前一样只显示ID）；true表示显示。
+        :type display_all_rules: bool
+        """
         
         
 
@@ -133,7 +168,7 @@ class ListL7policiesRequest:
         分页查询中每页的转发策略个数
 
         :param limit: The limit of this ListL7policiesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -155,7 +190,7 @@ class ListL7policiesRequest:
         分页查询的起始的资源id，表示上一页最后一条查询记录的转发策略的id。不指定时表示查询第一页。
 
         :param marker: The marker of this ListL7policiesRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -177,7 +212,7 @@ class ListL7policiesRequest:
         分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。
 
         :param page_reverse: The page_reverse of this ListL7policiesRequest.
-        :type: bool
+        :type page_reverse: bool
         """
         self._page_reverse = page_reverse
 
@@ -199,7 +234,7 @@ class ListL7policiesRequest:
         转发策略ID。
 
         :param id: The id of this ListL7policiesRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -221,7 +256,7 @@ class ListL7policiesRequest:
         转发策略名称。
 
         :param name: The name of this ListL7policiesRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -243,7 +278,7 @@ class ListL7policiesRequest:
         转发策略的描述信息。
 
         :param description: The description of this ListL7policiesRequest.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -265,7 +300,7 @@ class ListL7policiesRequest:
         转发策略的管理状态；取值范围： true/false。该字段为预留字段，暂未启用。默认为true。
 
         :param admin_state_up: The admin_state_up of this ListL7policiesRequest.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 
@@ -287,7 +322,7 @@ class ListL7policiesRequest:
         转发策略所在的监听器ID。
 
         :param listener_id: The listener_id of this ListL7policiesRequest.
-        :type: str
+        :type listener_id: str
         """
         self._listener_id = listener_id
 
@@ -309,7 +344,7 @@ class ListL7policiesRequest:
         转发策略的匹配动作。 取值范围：REDIRECT_TO_POOL：将匹配的流量转发到redirect_pool_id指定的后端云服务器组上；REDIRECT_TO_LISTENER：将listener_id指定的HTTP监听器的流量重定向到redirect_listener_id指定的TERMINATED_HTTPS监听器上。
 
         :param action: The action of this ListL7policiesRequest.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -331,7 +366,7 @@ class ListL7policiesRequest:
         流量匹配后转发到后端云服务器组的ID。
 
         :param redirect_pool_id: The redirect_pool_id of this ListL7policiesRequest.
-        :type: str
+        :type redirect_pool_id: str
         """
         self._redirect_pool_id = redirect_pool_id
 
@@ -353,7 +388,7 @@ class ListL7policiesRequest:
         流量匹配后转发到的监听器的ID。
 
         :param redirect_listener_id: The redirect_listener_id of this ListL7policiesRequest.
-        :type: str
+        :type redirect_listener_id: str
         """
         self._redirect_listener_id = redirect_listener_id
 
@@ -375,7 +410,7 @@ class ListL7policiesRequest:
         转发策略重定向到的url。该字段为预留字段，暂未启用。
 
         :param redirect_url: The redirect_url of this ListL7policiesRequest.
-        :type: str
+        :type redirect_url: str
         """
         self._redirect_url = redirect_url
 
@@ -397,7 +432,7 @@ class ListL7policiesRequest:
         转发优先级，从1递增，最高100。默认值：100；该字段为预留字段，暂未启用。
 
         :param position: The position of this ListL7policiesRequest.
-        :type: int
+        :type position: int
         """
         self._position = position
 
@@ -419,7 +454,7 @@ class ListL7policiesRequest:
         转发策略的配置状态，可以为ACTIVE、PENDING_CREATE 或者ERROR。默认值：ACTIVE；该字段为预留字段，暂未启用。
 
         :param provisioning_status: The provisioning_status of this ListL7policiesRequest.
-        :type: str
+        :type provisioning_status: str
         """
         self._provisioning_status = provisioning_status
 
@@ -441,7 +476,7 @@ class ListL7policiesRequest:
         企业项目ID。  取值范围：带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。  若子账号查询转发策略列表时，需要指定enterprise_project_id为all_granted_eps或者具体企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this ListL7policiesRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -463,7 +498,7 @@ class ListL7policiesRequest:
         是否显示所有的rule信息。取值范围：false表示不显示（跟以前一样只显示ID）；true表示显示。
 
         :param display_all_rules: The display_all_rules of this ListL7policiesRequest.
-        :type: bool
+        :type display_all_rules: bool
         """
         self._display_all_rules = display_all_rules
 

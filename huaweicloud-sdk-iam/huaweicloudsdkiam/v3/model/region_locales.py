@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RegionLocales:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class RegionLocales:
     }
 
     def __init__(self, zh_cn=None, en_us=None, pt_br=None, es_us=None, es_es=None):
-        """RegionLocales - a model defined in huaweicloud sdk"""
+        """RegionLocales
+
+        The model defined in huaweicloud sdk
+
+        :param zh_cn: 区域的中文名称。
+        :type zh_cn: str
+        :param en_us: 区域的英文名称。
+        :type en_us: str
+        :param pt_br: 区域的葡萄牙语名称。
+        :type pt_br: str
+        :param es_us: 区域的美国西班牙语名称。
+        :type es_us: str
+        :param es_es: 区域的西班牙语名称。
+        :type es_es: str
+        """
         
         
 
@@ -76,7 +89,7 @@ class RegionLocales:
         区域的中文名称。
 
         :param zh_cn: The zh_cn of this RegionLocales.
-        :type: str
+        :type zh_cn: str
         """
         self._zh_cn = zh_cn
 
@@ -98,7 +111,7 @@ class RegionLocales:
         区域的英文名称。
 
         :param en_us: The en_us of this RegionLocales.
-        :type: str
+        :type en_us: str
         """
         self._en_us = en_us
 
@@ -120,7 +133,7 @@ class RegionLocales:
         区域的葡萄牙语名称。
 
         :param pt_br: The pt_br of this RegionLocales.
-        :type: str
+        :type pt_br: str
         """
         self._pt_br = pt_br
 
@@ -142,7 +155,7 @@ class RegionLocales:
         区域的美国西班牙语名称。
 
         :param es_us: The es_us of this RegionLocales.
-        :type: str
+        :type es_us: str
         """
         self._es_us = es_us
 
@@ -164,7 +177,7 @@ class RegionLocales:
         区域的西班牙语名称。
 
         :param es_es: The es_es of this RegionLocales.
-        :type: str
+        :type es_es: str
         """
         self._es_es = es_es
 

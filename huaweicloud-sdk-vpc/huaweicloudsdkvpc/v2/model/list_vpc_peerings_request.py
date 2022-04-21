@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListVpcPeeringsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ListVpcPeeringsRequest:
     }
 
     def __init__(self, limit=None, marker=None, id=None, name=None, status=None, tenant_id=None, vpc_id=None):
-        """ListVpcPeeringsRequest - a model defined in huaweicloud sdk"""
+        """ListVpcPeeringsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 每页返回的个数
+        :type limit: int
+        :param marker: 分页查询起始的资源ID，为空时查询第一页
+        :type marker: str
+        :param id: 按照peering_id过滤查询
+        :type id: str
+        :param name: 功能说明：按照peering_name过查询  取值范围：最大长度不超过64
+        :type name: str
+        :param status: 根据status进行过滤  - PENDING_ACCEPTANCE：等待接受 - REJECTED：已拒绝。 - EXPIRED：已过期。 - DELETED：已删除。 - ACTIVE：活动的。
+        :type status: str
+        :param tenant_id: 按照项目ID过滤查询
+        :type tenant_id: str
+        :param vpc_id: 根据vpc ID过滤查询
+        :type vpc_id: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class ListVpcPeeringsRequest:
         每页返回的个数
 
         :param limit: The limit of this ListVpcPeeringsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -110,7 +127,7 @@ class ListVpcPeeringsRequest:
         分页查询起始的资源ID，为空时查询第一页
 
         :param marker: The marker of this ListVpcPeeringsRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -132,7 +149,7 @@ class ListVpcPeeringsRequest:
         按照peering_id过滤查询
 
         :param id: The id of this ListVpcPeeringsRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -154,7 +171,7 @@ class ListVpcPeeringsRequest:
         功能说明：按照peering_name过查询  取值范围：最大长度不超过64
 
         :param name: The name of this ListVpcPeeringsRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -176,7 +193,7 @@ class ListVpcPeeringsRequest:
         根据status进行过滤  - PENDING_ACCEPTANCE：等待接受 - REJECTED：已拒绝。 - EXPIRED：已过期。 - DELETED：已删除。 - ACTIVE：活动的。
 
         :param status: The status of this ListVpcPeeringsRequest.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -198,7 +215,7 @@ class ListVpcPeeringsRequest:
         按照项目ID过滤查询
 
         :param tenant_id: The tenant_id of this ListVpcPeeringsRequest.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 
@@ -220,7 +237,7 @@ class ListVpcPeeringsRequest:
         根据vpc ID过滤查询
 
         :param vpc_id: The vpc_id of this ListVpcPeeringsRequest.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 

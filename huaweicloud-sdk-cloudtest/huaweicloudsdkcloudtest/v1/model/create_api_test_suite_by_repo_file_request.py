@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateApiTestSuiteByRepoFileRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateApiTestSuiteByRepoFileRequest:
     }
 
     def __init__(self, project_id=None, body=None):
-        """CreateApiTestSuiteByRepoFileRequest - a model defined in huaweicloud sdk"""
+        """CreateApiTestSuiteByRepoFileRequest
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: devcloud的项目ID
+        :type project_id: str
+        :param body: Body of the CreateApiTestSuiteByRepoFileRequest
+        :type body: :class:`huaweicloudsdkcloudtest.v1.CreateTestSuitByRepoFileInfo`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateApiTestSuiteByRepoFileRequest:
         devcloud的项目ID
 
         :param project_id: The project_id of this CreateApiTestSuiteByRepoFileRequest.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -72,7 +79,7 @@ class CreateApiTestSuiteByRepoFileRequest:
 
 
         :return: The body of this CreateApiTestSuiteByRepoFileRequest.
-        :rtype: CreateTestSuitByRepoFileInfo
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.CreateTestSuitByRepoFileInfo`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CreateApiTestSuiteByRepoFileRequest:
 
 
         :param body: The body of this CreateApiTestSuiteByRepoFileRequest.
-        :type: CreateTestSuitByRepoFileInfo
+        :type body: :class:`huaweicloudsdkcloudtest.v1.CreateTestSuitByRepoFileInfo`
         """
         self._body = body
 

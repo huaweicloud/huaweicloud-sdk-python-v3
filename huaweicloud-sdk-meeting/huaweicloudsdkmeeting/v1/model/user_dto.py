@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UserDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -62,7 +61,45 @@ class UserDTO:
     }
 
     def __init__(self, id=None, status_code=None, account=None, name=None, english_name=None, email=None, phone=None, dept_name=None, number=None, update_time=None, is_hard_terminal=None, vmr_id=None, signature=None, title=None, description=None, hide_phone=None, type=None):
-        """UserDTO - a model defined in huaweicloud sdk"""
+        """UserDTO
+
+        The model defined in huaweicloud sdk
+
+        :param id: 用户ID。
+        :type id: str
+        :param status_code: 查询用户详情时, 根据不同情况，响应不同。 * 0： 查询成功且用户信息有变化， 响应会把新的信息都返回回去 * 1 ：查询成功且用户信息没有变化，响应只会返回用户ID * 2 ：用户不存在 * 3 ：无权限查询这个用户 
+        :type status_code: int
+        :param account: 用户账号。
+        :type account: str
+        :param name: 用户名。
+        :type name: str
+        :param english_name: 英文名。
+        :type english_name: str
+        :param email: 邮箱。
+        :type email: str
+        :param phone: 用户手机。
+        :type phone: str
+        :param dept_name: 用户部门。
+        :type dept_name: str
+        :param number: 用户号码。
+        :type number: str
+        :param update_time: 用户信息最后更新时间。
+        :type update_time: int
+        :param is_hard_terminal: 是否为硬终端。
+        :type is_hard_terminal: bool
+        :param vmr_id: 用户虚拟会议室ID。
+        :type vmr_id: str
+        :param signature: 用户签名。
+        :type signature: str
+        :param title: 职位。
+        :type title: str
+        :param description: 描述信息。
+        :type description: str
+        :param hide_phone: 是否隐藏手机号（如果为true，其他人查询该用户时，不会返回该用户的手机号。自己查自己是可见的）
+        :type hide_phone: bool
+        :param type: 类型： * NORMAL_USER&#x3D;普通用户 * HARD_TERMINAL&#x3D;硬终端用户 * WHITE_BOARD&#x3D;第三方白板 * HW_VISION_MEMBER&#x3D;智慧屏 
+        :type type: str
+        """
         
         
 
@@ -138,7 +175,7 @@ class UserDTO:
         用户ID。
 
         :param id: The id of this UserDTO.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -160,7 +197,7 @@ class UserDTO:
         查询用户详情时, 根据不同情况，响应不同。 * 0： 查询成功且用户信息有变化， 响应会把新的信息都返回回去 * 1 ：查询成功且用户信息没有变化，响应只会返回用户ID * 2 ：用户不存在 * 3 ：无权限查询这个用户 
 
         :param status_code: The status_code of this UserDTO.
-        :type: int
+        :type status_code: int
         """
         self._status_code = status_code
 
@@ -182,7 +219,7 @@ class UserDTO:
         用户账号。
 
         :param account: The account of this UserDTO.
-        :type: str
+        :type account: str
         """
         self._account = account
 
@@ -204,7 +241,7 @@ class UserDTO:
         用户名。
 
         :param name: The name of this UserDTO.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -226,7 +263,7 @@ class UserDTO:
         英文名。
 
         :param english_name: The english_name of this UserDTO.
-        :type: str
+        :type english_name: str
         """
         self._english_name = english_name
 
@@ -248,7 +285,7 @@ class UserDTO:
         邮箱。
 
         :param email: The email of this UserDTO.
-        :type: str
+        :type email: str
         """
         self._email = email
 
@@ -270,7 +307,7 @@ class UserDTO:
         用户手机。
 
         :param phone: The phone of this UserDTO.
-        :type: str
+        :type phone: str
         """
         self._phone = phone
 
@@ -292,7 +329,7 @@ class UserDTO:
         用户部门。
 
         :param dept_name: The dept_name of this UserDTO.
-        :type: str
+        :type dept_name: str
         """
         self._dept_name = dept_name
 
@@ -314,7 +351,7 @@ class UserDTO:
         用户号码。
 
         :param number: The number of this UserDTO.
-        :type: str
+        :type number: str
         """
         self._number = number
 
@@ -336,7 +373,7 @@ class UserDTO:
         用户信息最后更新时间。
 
         :param update_time: The update_time of this UserDTO.
-        :type: int
+        :type update_time: int
         """
         self._update_time = update_time
 
@@ -358,7 +395,7 @@ class UserDTO:
         是否为硬终端。
 
         :param is_hard_terminal: The is_hard_terminal of this UserDTO.
-        :type: bool
+        :type is_hard_terminal: bool
         """
         self._is_hard_terminal = is_hard_terminal
 
@@ -380,7 +417,7 @@ class UserDTO:
         用户虚拟会议室ID。
 
         :param vmr_id: The vmr_id of this UserDTO.
-        :type: str
+        :type vmr_id: str
         """
         self._vmr_id = vmr_id
 
@@ -402,7 +439,7 @@ class UserDTO:
         用户签名。
 
         :param signature: The signature of this UserDTO.
-        :type: str
+        :type signature: str
         """
         self._signature = signature
 
@@ -424,7 +461,7 @@ class UserDTO:
         职位。
 
         :param title: The title of this UserDTO.
-        :type: str
+        :type title: str
         """
         self._title = title
 
@@ -446,7 +483,7 @@ class UserDTO:
         描述信息。
 
         :param description: The description of this UserDTO.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -468,7 +505,7 @@ class UserDTO:
         是否隐藏手机号（如果为true，其他人查询该用户时，不会返回该用户的手机号。自己查自己是可见的）
 
         :param hide_phone: The hide_phone of this UserDTO.
-        :type: bool
+        :type hide_phone: bool
         """
         self._hide_phone = hide_phone
 
@@ -490,7 +527,7 @@ class UserDTO:
         类型： * NORMAL_USER=普通用户 * HARD_TERMINAL=硬终端用户 * WHITE_BOARD=第三方白板 * HW_VISION_MEMBER=智慧屏 
 
         :param type: The type of this UserDTO.
-        :type: str
+        :type type: str
         """
         self._type = type
 

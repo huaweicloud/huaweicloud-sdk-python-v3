@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FlavorView:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class FlavorView:
     }
 
     def __init__(self, flavor_id=None, storage_size=None, num_cpu=None, num_cpu_init=None, memory_size=None, memory_size_init=None, label=None):
-        """FlavorView - a model defined in huaweicloud sdk"""
+        """FlavorView
+
+        The model defined in huaweicloud sdk
+
+        :param flavor_id: 
+        :type flavor_id: :class:`huaweicloudsdkservicestage.v2.FlavorId`
+        :param storage_size: 存储大小。
+        :type storage_size: str
+        :param num_cpu: CPU限制。
+        :type num_cpu: str
+        :param num_cpu_init: CPU初始。
+        :type num_cpu_init: str
+        :param memory_size: 内存限制。
+        :type memory_size: str
+        :param memory_size_init: 内存初始。
+        :type memory_size_init: str
+        :param label: 展示标签。
+        :type label: str
+        """
         
         
 
@@ -76,7 +93,7 @@ class FlavorView:
 
 
         :return: The flavor_id of this FlavorView.
-        :rtype: FlavorId
+        :rtype: :class:`huaweicloudsdkservicestage.v2.FlavorId`
         """
         return self._flavor_id
 
@@ -86,7 +103,7 @@ class FlavorView:
 
 
         :param flavor_id: The flavor_id of this FlavorView.
-        :type: FlavorId
+        :type flavor_id: :class:`huaweicloudsdkservicestage.v2.FlavorId`
         """
         self._flavor_id = flavor_id
 
@@ -108,7 +125,7 @@ class FlavorView:
         存储大小。
 
         :param storage_size: The storage_size of this FlavorView.
-        :type: str
+        :type storage_size: str
         """
         self._storage_size = storage_size
 
@@ -130,7 +147,7 @@ class FlavorView:
         CPU限制。
 
         :param num_cpu: The num_cpu of this FlavorView.
-        :type: str
+        :type num_cpu: str
         """
         self._num_cpu = num_cpu
 
@@ -152,7 +169,7 @@ class FlavorView:
         CPU初始。
 
         :param num_cpu_init: The num_cpu_init of this FlavorView.
-        :type: str
+        :type num_cpu_init: str
         """
         self._num_cpu_init = num_cpu_init
 
@@ -174,7 +191,7 @@ class FlavorView:
         内存限制。
 
         :param memory_size: The memory_size of this FlavorView.
-        :type: str
+        :type memory_size: str
         """
         self._memory_size = memory_size
 
@@ -196,7 +213,7 @@ class FlavorView:
         内存初始。
 
         :param memory_size_init: The memory_size_init of this FlavorView.
-        :type: str
+        :type memory_size_init: str
         """
         self._memory_size_init = memory_size_init
 
@@ -218,7 +235,7 @@ class FlavorView:
         展示标签。
 
         :param label: The label of this FlavorView.
-        :type: str
+        :type label: str
         """
         self._label = label
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTaskRulesetResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListTaskRulesetResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListTaskRulesetResponse - a model defined in huaweicloud sdk"""
+        """ListTaskRulesetResponse
+
+        The model defined in huaweicloud sdk
+
+        :param body: 
+        :type body: list[:class:`huaweicloudsdkcodecheck.v2.ListTaskRulesetRes`]
+        """
         
         super(ListTaskRulesetResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class ListTaskRulesetResponse(SdkResponse):
 
 
         :return: The body of this ListTaskRulesetResponse.
-        :rtype: list[ListTaskRulesetRes]
+        :rtype: list[:class:`huaweicloudsdkcodecheck.v2.ListTaskRulesetRes`]
         """
         return self._body
 
@@ -56,7 +61,7 @@ class ListTaskRulesetResponse(SdkResponse):
 
 
         :param body: The body of this ListTaskRulesetResponse.
-        :type: list[ListTaskRulesetRes]
+        :type body: list[:class:`huaweicloudsdkcodecheck.v2.ListTaskRulesetRes`]
         """
         self._body = body
 

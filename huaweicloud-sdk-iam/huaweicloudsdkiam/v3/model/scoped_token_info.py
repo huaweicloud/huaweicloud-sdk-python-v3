@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ScopedTokenInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ScopedTokenInfo:
     }
 
     def __init__(self, expires_at=None, methods=None, issued_at=None, user=None, domain=None, project=None, roles=None, catalog=None):
-        """ScopedTokenInfo - a model defined in huaweicloud sdk"""
+        """ScopedTokenInfo
+
+        The model defined in huaweicloud sdk
+
+        :param expires_at: 过期时间。
+        :type expires_at: str
+        :param methods: 获取token的方式，联邦用户默认为mapped。
+        :type methods: list[str]
+        :param issued_at: 生成时间。
+        :type issued_at: str
+        :param user: 
+        :type user: :class:`huaweicloudsdkiam.v3.FederationUserBody`
+        :param domain: 
+        :type domain: :class:`huaweicloudsdkiam.v3.DomainInfo`
+        :param project: 
+        :type project: :class:`huaweicloudsdkiam.v3.ProjectInfo`
+        :param roles: roles信息。
+        :type roles: list[:class:`huaweicloudsdkiam.v3.ScopedTokenInfoRoles`]
+        :param catalog: catalog信息
+        :type catalog: list[:class:`huaweicloudsdkiam.v3.UnscopedTokenInfoCatalog`]
+        """
         
         
 
@@ -87,7 +106,7 @@ class ScopedTokenInfo:
         过期时间。
 
         :param expires_at: The expires_at of this ScopedTokenInfo.
-        :type: str
+        :type expires_at: str
         """
         self._expires_at = expires_at
 
@@ -109,7 +128,7 @@ class ScopedTokenInfo:
         获取token的方式，联邦用户默认为mapped。
 
         :param methods: The methods of this ScopedTokenInfo.
-        :type: list[str]
+        :type methods: list[str]
         """
         self._methods = methods
 
@@ -131,7 +150,7 @@ class ScopedTokenInfo:
         生成时间。
 
         :param issued_at: The issued_at of this ScopedTokenInfo.
-        :type: str
+        :type issued_at: str
         """
         self._issued_at = issued_at
 
@@ -141,7 +160,7 @@ class ScopedTokenInfo:
 
 
         :return: The user of this ScopedTokenInfo.
-        :rtype: FederationUserBody
+        :rtype: :class:`huaweicloudsdkiam.v3.FederationUserBody`
         """
         return self._user
 
@@ -151,7 +170,7 @@ class ScopedTokenInfo:
 
 
         :param user: The user of this ScopedTokenInfo.
-        :type: FederationUserBody
+        :type user: :class:`huaweicloudsdkiam.v3.FederationUserBody`
         """
         self._user = user
 
@@ -161,7 +180,7 @@ class ScopedTokenInfo:
 
 
         :return: The domain of this ScopedTokenInfo.
-        :rtype: DomainInfo
+        :rtype: :class:`huaweicloudsdkiam.v3.DomainInfo`
         """
         return self._domain
 
@@ -171,7 +190,7 @@ class ScopedTokenInfo:
 
 
         :param domain: The domain of this ScopedTokenInfo.
-        :type: DomainInfo
+        :type domain: :class:`huaweicloudsdkiam.v3.DomainInfo`
         """
         self._domain = domain
 
@@ -181,7 +200,7 @@ class ScopedTokenInfo:
 
 
         :return: The project of this ScopedTokenInfo.
-        :rtype: ProjectInfo
+        :rtype: :class:`huaweicloudsdkiam.v3.ProjectInfo`
         """
         return self._project
 
@@ -191,7 +210,7 @@ class ScopedTokenInfo:
 
 
         :param project: The project of this ScopedTokenInfo.
-        :type: ProjectInfo
+        :type project: :class:`huaweicloudsdkiam.v3.ProjectInfo`
         """
         self._project = project
 
@@ -202,7 +221,7 @@ class ScopedTokenInfo:
         roles信息。
 
         :return: The roles of this ScopedTokenInfo.
-        :rtype: list[ScopedTokenInfoRoles]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.ScopedTokenInfoRoles`]
         """
         return self._roles
 
@@ -213,7 +232,7 @@ class ScopedTokenInfo:
         roles信息。
 
         :param roles: The roles of this ScopedTokenInfo.
-        :type: list[ScopedTokenInfoRoles]
+        :type roles: list[:class:`huaweicloudsdkiam.v3.ScopedTokenInfoRoles`]
         """
         self._roles = roles
 
@@ -224,7 +243,7 @@ class ScopedTokenInfo:
         catalog信息
 
         :return: The catalog of this ScopedTokenInfo.
-        :rtype: list[UnscopedTokenInfoCatalog]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.UnscopedTokenInfoCatalog`]
         """
         return self._catalog
 
@@ -235,7 +254,7 @@ class ScopedTokenInfo:
         catalog信息
 
         :param catalog: The catalog of this ScopedTokenInfo.
-        :type: list[UnscopedTokenInfoCatalog]
+        :type catalog: list[:class:`huaweicloudsdkiam.v3.UnscopedTokenInfoCatalog`]
         """
         self._catalog = catalog
 

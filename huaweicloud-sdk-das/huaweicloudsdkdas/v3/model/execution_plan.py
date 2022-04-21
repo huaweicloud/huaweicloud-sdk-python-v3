@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExecutionPlan:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class ExecutionPlan:
     }
 
     def __init__(self, id=None, select_type=None, table=None, partitions=None, type=None, possible_keys=None, key=None, key_len=None, ref=None, rows=None, filtered=None, extra=None):
-        """ExecutionPlan - a model defined in huaweicloud sdk"""
+        """ExecutionPlan
+
+        The model defined in huaweicloud sdk
+
+        :param id: id
+        :type id: str
+        :param select_type: select子句的类型
+        :type select_type: str
+        :param table: 数据库表
+        :type table: str
+        :param partitions: 查询将匹配记录的分区
+        :type partitions: str
+        :param type: 访问类型
+        :type type: str
+        :param possible_keys: 可能使用的键(索引)
+        :type possible_keys: str
+        :param key: 实际使用的键(索引)
+        :type key: str
+        :param key_len: 决定使用的键的长度
+        :type key_len: str
+        :param ref: 使用哪个列或常数与键一起来选择行
+        :type ref: str
+        :param rows: MySQL认为它执行查询时必须检查的行数
+        :type rows: str
+        :param filtered: 按表条件过滤的表行的估计百分比
+        :type filtered: str
+        :param extra: 其他信息
+        :type extra: str
+        """
         
         
 
@@ -101,7 +128,7 @@ class ExecutionPlan:
         id
 
         :param id: The id of this ExecutionPlan.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -123,7 +150,7 @@ class ExecutionPlan:
         select子句的类型
 
         :param select_type: The select_type of this ExecutionPlan.
-        :type: str
+        :type select_type: str
         """
         self._select_type = select_type
 
@@ -145,7 +172,7 @@ class ExecutionPlan:
         数据库表
 
         :param table: The table of this ExecutionPlan.
-        :type: str
+        :type table: str
         """
         self._table = table
 
@@ -167,7 +194,7 @@ class ExecutionPlan:
         查询将匹配记录的分区
 
         :param partitions: The partitions of this ExecutionPlan.
-        :type: str
+        :type partitions: str
         """
         self._partitions = partitions
 
@@ -189,7 +216,7 @@ class ExecutionPlan:
         访问类型
 
         :param type: The type of this ExecutionPlan.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -211,7 +238,7 @@ class ExecutionPlan:
         可能使用的键(索引)
 
         :param possible_keys: The possible_keys of this ExecutionPlan.
-        :type: str
+        :type possible_keys: str
         """
         self._possible_keys = possible_keys
 
@@ -233,7 +260,7 @@ class ExecutionPlan:
         实际使用的键(索引)
 
         :param key: The key of this ExecutionPlan.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -255,7 +282,7 @@ class ExecutionPlan:
         决定使用的键的长度
 
         :param key_len: The key_len of this ExecutionPlan.
-        :type: str
+        :type key_len: str
         """
         self._key_len = key_len
 
@@ -277,7 +304,7 @@ class ExecutionPlan:
         使用哪个列或常数与键一起来选择行
 
         :param ref: The ref of this ExecutionPlan.
-        :type: str
+        :type ref: str
         """
         self._ref = ref
 
@@ -299,7 +326,7 @@ class ExecutionPlan:
         MySQL认为它执行查询时必须检查的行数
 
         :param rows: The rows of this ExecutionPlan.
-        :type: str
+        :type rows: str
         """
         self._rows = rows
 
@@ -321,7 +348,7 @@ class ExecutionPlan:
         按表条件过滤的表行的估计百分比
 
         :param filtered: The filtered of this ExecutionPlan.
-        :type: str
+        :type filtered: str
         """
         self._filtered = filtered
 
@@ -343,7 +370,7 @@ class ExecutionPlan:
         其他信息
 
         :param extra: The extra of this ExecutionPlan.
-        :type: str
+        :type extra: str
         """
         self._extra = extra
 

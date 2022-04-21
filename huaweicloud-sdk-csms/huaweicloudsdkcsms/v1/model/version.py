@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Version:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class Version:
     }
 
     def __init__(self, version_metadata=None, secret_binary=None, secret_string=None):
-        """Version - a model defined in huaweicloud sdk"""
+        """Version
+
+        The model defined in huaweicloud sdk
+
+        :param version_metadata: 
+        :type version_metadata: :class:`huaweicloudsdkcsms.v1.VersionMetadata`
+        :param secret_binary: 二进制类型凭据在base64编码后的明文，凭据管理服务将其加密后，存入凭据的初始版本中。  类型：base64编码的二进制数据对象。 
+        :type secret_binary: str
+        :param secret_string: 文本类型凭据的明文，凭据管理服务将其加密后，存入凭据的初始版本中。
+        :type secret_string: str
+        """
         
         
 
@@ -56,7 +65,7 @@ class Version:
 
 
         :return: The version_metadata of this Version.
-        :rtype: VersionMetadata
+        :rtype: :class:`huaweicloudsdkcsms.v1.VersionMetadata`
         """
         return self._version_metadata
 
@@ -66,7 +75,7 @@ class Version:
 
 
         :param version_metadata: The version_metadata of this Version.
-        :type: VersionMetadata
+        :type version_metadata: :class:`huaweicloudsdkcsms.v1.VersionMetadata`
         """
         self._version_metadata = version_metadata
 
@@ -88,7 +97,7 @@ class Version:
         二进制类型凭据在base64编码后的明文，凭据管理服务将其加密后，存入凭据的初始版本中。  类型：base64编码的二进制数据对象。 
 
         :param secret_binary: The secret_binary of this Version.
-        :type: str
+        :type secret_binary: str
         """
         self._secret_binary = secret_binary
 
@@ -110,7 +119,7 @@ class Version:
         文本类型凭据的明文，凭据管理服务将其加密后，存入凭据的初始版本中。
 
         :param secret_string: The secret_string of this Version.
-        :type: str
+        :type secret_string: str
         """
         self._secret_string = secret_string
 

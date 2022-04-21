@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDbUsersResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListDbUsersResponse(SdkResponse):
     }
 
     def __init__(self, users=None, total_count=None):
-        """ListDbUsersResponse - a model defined in huaweicloud sdk"""
+        """ListDbUsersResponse
+
+        The model defined in huaweicloud sdk
+
+        :param users: 用户信息。
+        :type users: list[:class:`huaweicloudsdkrds.v3.UserForList`]
+        :param total_count: 总条数。
+        :type total_count: int
+        """
         
         super(ListDbUsersResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListDbUsersResponse(SdkResponse):
         用户信息。
 
         :return: The users of this ListDbUsersResponse.
-        :rtype: list[UserForList]
+        :rtype: list[:class:`huaweicloudsdkrds.v3.UserForList`]
         """
         return self._users
 
@@ -63,7 +70,7 @@ class ListDbUsersResponse(SdkResponse):
         用户信息。
 
         :param users: The users of this ListDbUsersResponse.
-        :type: list[UserForList]
+        :type users: list[:class:`huaweicloudsdkrds.v3.UserForList`]
         """
         self._users = users
 
@@ -85,7 +92,7 @@ class ListDbUsersResponse(SdkResponse):
         总条数。
 
         :param total_count: The total_count of this ListDbUsersResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CopyInstanceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CopyInstanceResponse(SdkResponse):
     }
 
     def __init__(self, backup_id=None):
-        """CopyInstanceResponse - a model defined in huaweicloud sdk"""
+        """CopyInstanceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param backup_id: 备份记录ID。
+        :type backup_id: str
+        """
         
         super(CopyInstanceResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class CopyInstanceResponse(SdkResponse):
         备份记录ID。
 
         :param backup_id: The backup_id of this CopyInstanceResponse.
-        :type: str
+        :type backup_id: str
         """
         self._backup_id = backup_id
 

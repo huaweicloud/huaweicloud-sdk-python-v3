@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchStopBaremetalServersRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchStopBaremetalServersRequest:
     }
 
     def __init__(self, body=None):
-        """BatchStopBaremetalServersRequest - a model defined in huaweicloud sdk"""
+        """BatchStopBaremetalServersRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the BatchStopBaremetalServersRequest
+        :type body: :class:`huaweicloudsdkbms.v1.OsStopBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class BatchStopBaremetalServersRequest:
 
 
         :return: The body of this BatchStopBaremetalServersRequest.
-        :rtype: OsStopBody
+        :rtype: :class:`huaweicloudsdkbms.v1.OsStopBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class BatchStopBaremetalServersRequest:
 
 
         :param body: The body of this BatchStopBaremetalServersRequest.
-        :type: OsStopBody
+        :type body: :class:`huaweicloudsdkbms.v1.OsStopBody`
         """
         self._body = body
 

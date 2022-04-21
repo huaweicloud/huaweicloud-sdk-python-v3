@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateVaultResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateVaultResponse(SdkResponse):
     }
 
     def __init__(self, vault=None):
-        """CreateVaultResponse - a model defined in huaweicloud sdk"""
+        """CreateVaultResponse
+
+        The model defined in huaweicloud sdk
+
+        :param vault: 
+        :type vault: :class:`huaweicloudsdkcbr.v1.VaultCreateResource`
+        """
         
         super(CreateVaultResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class CreateVaultResponse(SdkResponse):
 
 
         :return: The vault of this CreateVaultResponse.
-        :rtype: VaultCreateResource
+        :rtype: :class:`huaweicloudsdkcbr.v1.VaultCreateResource`
         """
         return self._vault
 
@@ -56,7 +61,7 @@ class CreateVaultResponse(SdkResponse):
 
 
         :param vault: The vault of this CreateVaultResponse.
-        :type: VaultCreateResource
+        :type vault: :class:`huaweicloudsdkcbr.v1.VaultCreateResource`
         """
         self._vault = vault
 

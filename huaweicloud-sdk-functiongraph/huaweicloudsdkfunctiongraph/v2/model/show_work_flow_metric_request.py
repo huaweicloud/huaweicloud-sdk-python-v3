@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowWorkFlowMetricRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowWorkFlowMetricRequest:
     }
 
     def __init__(self, workflow_urn=None, period=None):
-        """ShowWorkFlowMetricRequest - a model defined in huaweicloud sdk"""
+        """ShowWorkFlowMetricRequest
+
+        The model defined in huaweicloud sdk
+
+        :param workflow_urn: 函数工作流URN, 格式为： urn:fss:&lt;region_id&gt;:&lt;project_id&gt;:workflow:\\&lt;package\\&gt;:&lt;workflow_name&gt;:\\&lt;version\\&gt; 注意： package当前只支持default version当前只支持latest
+        :type workflow_urn: str
+        :param period: 时间段，单位为分钟
+        :type period: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ShowWorkFlowMetricRequest:
         函数工作流URN, 格式为： urn:fss:<region_id>:<project_id>:workflow:\\<package\\>:<workflow_name>:\\<version\\> 注意： package当前只支持default version当前只支持latest
 
         :param workflow_urn: The workflow_urn of this ShowWorkFlowMetricRequest.
-        :type: str
+        :type workflow_urn: str
         """
         self._workflow_urn = workflow_urn
 
@@ -84,7 +91,7 @@ class ShowWorkFlowMetricRequest:
         时间段，单位为分钟
 
         :param period: The period of this ShowWorkFlowMetricRequest.
-        :type: str
+        :type period: str
         """
         self._period = period
 

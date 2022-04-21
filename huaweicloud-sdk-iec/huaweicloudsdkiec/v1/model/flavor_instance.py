@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FlavorInstance:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class FlavorInstance:
     }
 
     def __init__(self, id=None, name=None, disk=None, ram=None, vcpus=None):
-        """FlavorInstance - a model defined in huaweicloud sdk"""
+        """FlavorInstance
+
+        The model defined in huaweicloud sdk
+
+        :param id: 边缘实例规格的ID。
+        :type id: str
+        :param name: 边缘实例规格的名称。
+        :type name: str
+        :param disk: 边缘实例规格对应要求系统盘大小。  当前未使用该参数，缺省值为0。
+        :type disk: str
+        :param ram: 边缘实例规格对应的内存大小，单位为MB。
+        :type ram: str
+        :param vcpus: 边缘实例规格对应的CPU核数。
+        :type vcpus: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class FlavorInstance:
         边缘实例规格的ID。
 
         :param id: The id of this FlavorInstance.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -100,7 +113,7 @@ class FlavorInstance:
         边缘实例规格的名称。
 
         :param name: The name of this FlavorInstance.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -122,7 +135,7 @@ class FlavorInstance:
         边缘实例规格对应要求系统盘大小。  当前未使用该参数，缺省值为0。
 
         :param disk: The disk of this FlavorInstance.
-        :type: str
+        :type disk: str
         """
         self._disk = disk
 
@@ -144,7 +157,7 @@ class FlavorInstance:
         边缘实例规格对应的内存大小，单位为MB。
 
         :param ram: The ram of this FlavorInstance.
-        :type: str
+        :type ram: str
         """
         self._ram = ram
 
@@ -166,7 +179,7 @@ class FlavorInstance:
         边缘实例规格对应的CPU核数。
 
         :param vcpus: The vcpus of this FlavorInstance.
-        :type: str
+        :type vcpus: str
         """
         self._vcpus = vcpus
 

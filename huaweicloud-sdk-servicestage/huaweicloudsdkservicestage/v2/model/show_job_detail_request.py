@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowJobDetailRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ShowJobDetailRequest:
     }
 
     def __init__(self, job_id=None, instance_id=None, limit=None, offset=None, desc=None):
-        """ShowJobDetailRequest - a model defined in huaweicloud sdk"""
+        """ShowJobDetailRequest
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 部署任务ID。
+        :type job_id: str
+        :param instance_id: 应用组件实例ID。
+        :type instance_id: str
+        :param limit: 指定查询的个数，可用于分页查询。
+        :type limit: int
+        :param offset: 指定查询的偏移量，可用于分页查询。
+        :type offset: int
+        :param desc: 是否降序。true表示desc, false表示asc。
+        :type desc: str
+        """
         
         
 
@@ -77,7 +90,7 @@ class ShowJobDetailRequest:
         部署任务ID。
 
         :param job_id: The job_id of this ShowJobDetailRequest.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -99,7 +112,7 @@ class ShowJobDetailRequest:
         应用组件实例ID。
 
         :param instance_id: The instance_id of this ShowJobDetailRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -121,7 +134,7 @@ class ShowJobDetailRequest:
         指定查询的个数，可用于分页查询。
 
         :param limit: The limit of this ShowJobDetailRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -143,7 +156,7 @@ class ShowJobDetailRequest:
         指定查询的偏移量，可用于分页查询。
 
         :param offset: The offset of this ShowJobDetailRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -165,7 +178,7 @@ class ShowJobDetailRequest:
         是否降序。true表示desc, false表示asc。
 
         :param desc: The desc of this ShowJobDetailRequest.
-        :type: str
+        :type desc: str
         """
         self._desc = desc
 

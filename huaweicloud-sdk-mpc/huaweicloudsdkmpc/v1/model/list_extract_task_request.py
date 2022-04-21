@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListExtractTaskRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ListExtractTaskRequest:
     }
 
     def __init__(self, x_language=None, task_id=None, status=None, start_time=None, end_time=None, page=None, size=None):
-        """ListExtractTaskRequest - a model defined in huaweicloud sdk"""
+        """ListExtractTaskRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 客户端语言
+        :type x_language: str
+        :param task_id: 任务ID。一次最多10个 
+        :type task_id: list[str]
+        :param status: 任务执行状态。  取值如下： - INIT：初始状态 - WAITING：等待启动 - PREPROCESSING：处理中 - SUCCEED：处理成功 - FAILED：处理失败 - CANCELED：已取消 
+        :type status: str
+        :param start_time: 起始时间。格式为yyyymmddhhmmss。必须是与时区无关的UTC时间，指定task_id时该参数无效。 
+        :type start_time: str
+        :param end_time: 结束时间。格式为yyyymmddhhmmss。必须是与时区无关的UTC时间，指定task_id时该参数无效。 
+        :type end_time: str
+        :param page: 分页编号。查询指定“task_id”时，该参数无效。  默认值：0。 
+        :type page: int
+        :param size: 每页记录数。查询指定“task_id”时，该参数无效。  取值范围：[1,100]。  默认值：10。 
+        :type size: int
+        """
         
         
 
@@ -88,7 +105,7 @@ class ListExtractTaskRequest:
         客户端语言
 
         :param x_language: The x_language of this ListExtractTaskRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -110,7 +127,7 @@ class ListExtractTaskRequest:
         任务ID。一次最多10个 
 
         :param task_id: The task_id of this ListExtractTaskRequest.
-        :type: list[str]
+        :type task_id: list[str]
         """
         self._task_id = task_id
 
@@ -132,7 +149,7 @@ class ListExtractTaskRequest:
         任务执行状态。  取值如下： - INIT：初始状态 - WAITING：等待启动 - PREPROCESSING：处理中 - SUCCEED：处理成功 - FAILED：处理失败 - CANCELED：已取消 
 
         :param status: The status of this ListExtractTaskRequest.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -154,7 +171,7 @@ class ListExtractTaskRequest:
         起始时间。格式为yyyymmddhhmmss。必须是与时区无关的UTC时间，指定task_id时该参数无效。 
 
         :param start_time: The start_time of this ListExtractTaskRequest.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -176,7 +193,7 @@ class ListExtractTaskRequest:
         结束时间。格式为yyyymmddhhmmss。必须是与时区无关的UTC时间，指定task_id时该参数无效。 
 
         :param end_time: The end_time of this ListExtractTaskRequest.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -198,7 +215,7 @@ class ListExtractTaskRequest:
         分页编号。查询指定“task_id”时，该参数无效。  默认值：0。 
 
         :param page: The page of this ListExtractTaskRequest.
-        :type: int
+        :type page: int
         """
         self._page = page
 
@@ -220,7 +237,7 @@ class ListExtractTaskRequest:
         每页记录数。查询指定“task_id”时，该参数无效。  取值范围：[1,100]。  默认值：10。 
 
         :param size: The size of this ListExtractTaskRequest.
-        :type: int
+        :type size: int
         """
         self._size = size
 

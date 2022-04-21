@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateIpGroupIpOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateIpGroupIpOption:
     }
 
     def __init__(self, ip=None, description=None):
-        """CreateIpGroupIpOption - a model defined in huaweicloud sdk"""
+        """CreateIpGroupIpOption
+
+        The model defined in huaweicloud sdk
+
+        :param ip: IP地址。支持IPv4、IPv6。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt,dt_test)
+        :type ip: str
+        :param description: 备注信息。
+        :type description: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateIpGroupIpOption:
         IP地址。支持IPv4、IPv6。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt,dt_test)
 
         :param ip: The ip of this CreateIpGroupIpOption.
-        :type: str
+        :type ip: str
         """
         self._ip = ip
 
@@ -84,7 +91,7 @@ class CreateIpGroupIpOption:
         备注信息。
 
         :param description: The description of this CreateIpGroupIpOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 

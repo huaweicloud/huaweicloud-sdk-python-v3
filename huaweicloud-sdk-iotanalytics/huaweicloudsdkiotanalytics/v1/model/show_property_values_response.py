@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowPropertyValuesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowPropertyValuesResponse(SdkResponse):
     }
 
     def __init__(self, properties=None):
-        """ShowPropertyValuesResponse - a model defined in huaweicloud sdk"""
+        """ShowPropertyValuesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param properties: 查询设备的属性值
+        :type properties: list[:class:`huaweicloudsdkiotanalytics.v1.PropertyValue`]
+        """
         
         super(ShowPropertyValuesResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ShowPropertyValuesResponse(SdkResponse):
         查询设备的属性值
 
         :return: The properties of this ShowPropertyValuesResponse.
-        :rtype: list[PropertyValue]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.PropertyValue`]
         """
         return self._properties
 
@@ -58,7 +63,7 @@ class ShowPropertyValuesResponse(SdkResponse):
         查询设备的属性值
 
         :param properties: The properties of this ShowPropertyValuesResponse.
-        :type: list[PropertyValue]
+        :type properties: list[:class:`huaweicloudsdkiotanalytics.v1.PropertyValue`]
         """
         self._properties = properties
 

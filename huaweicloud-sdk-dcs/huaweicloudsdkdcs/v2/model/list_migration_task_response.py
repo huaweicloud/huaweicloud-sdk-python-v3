@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListMigrationTaskResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListMigrationTaskResponse(SdkResponse):
     }
 
     def __init__(self, count=None, migration_tasks=None):
-        """ListMigrationTaskResponse - a model defined in huaweicloud sdk"""
+        """ListMigrationTaskResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 迁移任务数量。
+        :type count: int
+        :param migration_tasks: 迁移任务列表。
+        :type migration_tasks: list[:class:`huaweicloudsdkdcs.v2.MigrationTaskList`]
+        """
         
         super(ListMigrationTaskResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListMigrationTaskResponse(SdkResponse):
         迁移任务数量。
 
         :param count: The count of this ListMigrationTaskResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -74,7 +81,7 @@ class ListMigrationTaskResponse(SdkResponse):
         迁移任务列表。
 
         :return: The migration_tasks of this ListMigrationTaskResponse.
-        :rtype: list[MigrationTaskList]
+        :rtype: list[:class:`huaweicloudsdkdcs.v2.MigrationTaskList`]
         """
         return self._migration_tasks
 
@@ -85,7 +92,7 @@ class ListMigrationTaskResponse(SdkResponse):
         迁移任务列表。
 
         :param migration_tasks: The migration_tasks of this ListMigrationTaskResponse.
-        :type: list[MigrationTaskList]
+        :type migration_tasks: list[:class:`huaweicloudsdkdcs.v2.MigrationTaskList`]
         """
         self._migration_tasks = migration_tasks
 

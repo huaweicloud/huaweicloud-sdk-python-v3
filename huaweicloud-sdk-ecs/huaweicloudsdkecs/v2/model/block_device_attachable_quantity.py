@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BlockDeviceAttachableQuantity:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class BlockDeviceAttachableQuantity:
     }
 
     def __init__(self, free_scsi=None, free_blk=None, free_disk=None):
-        """BlockDeviceAttachableQuantity - a model defined in huaweicloud sdk"""
+        """BlockDeviceAttachableQuantity
+
+        The model defined in huaweicloud sdk
+
+        :param free_scsi: 云服务器可挂载scsi类型磁盘数量。
+        :type free_scsi: int
+        :param free_blk: 云服务器可挂载virtio_blk类型磁盘数量。
+        :type free_blk: int
+        :param free_disk: 云服务器可挂载磁盘总数。
+        :type free_disk: int
+        """
         
         
 
@@ -68,7 +77,7 @@ class BlockDeviceAttachableQuantity:
         云服务器可挂载scsi类型磁盘数量。
 
         :param free_scsi: The free_scsi of this BlockDeviceAttachableQuantity.
-        :type: int
+        :type free_scsi: int
         """
         self._free_scsi = free_scsi
 
@@ -90,7 +99,7 @@ class BlockDeviceAttachableQuantity:
         云服务器可挂载virtio_blk类型磁盘数量。
 
         :param free_blk: The free_blk of this BlockDeviceAttachableQuantity.
-        :type: int
+        :type free_blk: int
         """
         self._free_blk = free_blk
 
@@ -112,7 +121,7 @@ class BlockDeviceAttachableQuantity:
         云服务器可挂载磁盘总数。
 
         :param free_disk: The free_disk of this BlockDeviceAttachableQuantity.
-        :type: int
+        :type free_disk: int
         """
         self._free_disk = free_disk
 

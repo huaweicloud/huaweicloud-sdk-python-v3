@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowPublicZoneNameServerResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowPublicZoneNameServerResponse(SdkResponse):
     }
 
     def __init__(self, nameservers=None):
-        """ShowPublicZoneNameServerResponse - a model defined in huaweicloud sdk"""
+        """ShowPublicZoneNameServerResponse
+
+        The model defined in huaweicloud sdk
+
+        :param nameservers: 查询单个公网Zone的名称服务器响应。
+        :type nameservers: list[:class:`huaweicloudsdkdns.v2.Nameserver`]
+        """
         
         super(ShowPublicZoneNameServerResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ShowPublicZoneNameServerResponse(SdkResponse):
         查询单个公网Zone的名称服务器响应。
 
         :return: The nameservers of this ShowPublicZoneNameServerResponse.
-        :rtype: list[Nameserver]
+        :rtype: list[:class:`huaweicloudsdkdns.v2.Nameserver`]
         """
         return self._nameservers
 
@@ -58,7 +63,7 @@ class ShowPublicZoneNameServerResponse(SdkResponse):
         查询单个公网Zone的名称服务器响应。
 
         :param nameservers: The nameservers of this ShowPublicZoneNameServerResponse.
-        :type: list[Nameserver]
+        :type nameservers: list[:class:`huaweicloudsdkdns.v2.Nameserver`]
         """
         self._nameservers = nameservers
 

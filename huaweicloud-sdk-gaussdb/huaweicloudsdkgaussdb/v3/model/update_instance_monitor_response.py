@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateInstanceMonitorResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateInstanceMonitorResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """UpdateInstanceMonitorResponse - a model defined in huaweicloud sdk"""
+        """UpdateInstanceMonitorResponse
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 修改秒级监控的任务流id
+        :type job_id: str
+        """
         
         super(UpdateInstanceMonitorResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class UpdateInstanceMonitorResponse(SdkResponse):
         修改秒级监控的任务流id
 
         :param job_id: The job_id of this UpdateInstanceMonitorResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 

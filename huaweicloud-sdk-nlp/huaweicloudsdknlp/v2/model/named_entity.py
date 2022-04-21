@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NamedEntity:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class NamedEntity:
     }
 
     def __init__(self, word=None, tag=None, offset=None, len=None):
-        """NamedEntity - a model defined in huaweicloud sdk"""
+        """NamedEntity
+
+        The model defined in huaweicloud sdk
+
+        :param word: 实体文本。
+        :type word: str
+        :param tag: 实体类型，枚举类型。 中文支持人名“nr”，地名“ns”，机构名“nt”，时间“t”。 英文支持人名“per”，地名“loc”，机构名“org”，时间“t”。 西班牙文支持人名“per”，地名“loc”，机构名“org”，时间“t”。
+        :type tag: str
+        :param offset: 实体文本在待分析文本中的起始位置。
+        :type offset: int
+        :param len: 实体文本长度。
+        :type len: int
+        """
         
         
 
@@ -69,7 +80,7 @@ class NamedEntity:
         实体文本。
 
         :param word: The word of this NamedEntity.
-        :type: str
+        :type word: str
         """
         self._word = word
 
@@ -91,7 +102,7 @@ class NamedEntity:
         实体类型，枚举类型。 中文支持人名“nr”，地名“ns”，机构名“nt”，时间“t”。 英文支持人名“per”，地名“loc”，机构名“org”，时间“t”。 西班牙文支持人名“per”，地名“loc”，机构名“org”，时间“t”。
 
         :param tag: The tag of this NamedEntity.
-        :type: str
+        :type tag: str
         """
         self._tag = tag
 
@@ -113,7 +124,7 @@ class NamedEntity:
         实体文本在待分析文本中的起始位置。
 
         :param offset: The offset of this NamedEntity.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -135,7 +146,7 @@ class NamedEntity:
         实体文本长度。
 
         :param len: The len of this NamedEntity.
-        :type: int
+        :type len: int
         """
         self._len = len
 

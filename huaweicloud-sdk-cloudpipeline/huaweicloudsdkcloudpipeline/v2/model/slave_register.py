@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SlaveRegister:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class SlaveRegister:
     }
 
     def __init__(self, cluster_id=None, slave_name=None, work_dir=None, label=None, version=None, retry=None, owner_type=None):
-        """SlaveRegister - a model defined in huaweicloud sdk"""
+        """SlaveRegister
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: cluster ID
+        :type cluster_id: str
+        :param slave_name: Slave名称
+        :type slave_name: str
+        :param work_dir: Slave工作空间
+        :type work_dir: str
+        :param label: Slave label
+        :type label: str
+        :param version: agent版本
+        :type version: str
+        :param retry: 是否重试
+        :type retry: bool
+        :param owner_type: Slave ownerType
+        :type owner_type: str
+        """
         
         
 
@@ -85,7 +102,7 @@ class SlaveRegister:
         cluster ID
 
         :param cluster_id: The cluster_id of this SlaveRegister.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -107,7 +124,7 @@ class SlaveRegister:
         Slave名称
 
         :param slave_name: The slave_name of this SlaveRegister.
-        :type: str
+        :type slave_name: str
         """
         self._slave_name = slave_name
 
@@ -129,7 +146,7 @@ class SlaveRegister:
         Slave工作空间
 
         :param work_dir: The work_dir of this SlaveRegister.
-        :type: str
+        :type work_dir: str
         """
         self._work_dir = work_dir
 
@@ -151,7 +168,7 @@ class SlaveRegister:
         Slave label
 
         :param label: The label of this SlaveRegister.
-        :type: str
+        :type label: str
         """
         self._label = label
 
@@ -173,7 +190,7 @@ class SlaveRegister:
         agent版本
 
         :param version: The version of this SlaveRegister.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -195,7 +212,7 @@ class SlaveRegister:
         是否重试
 
         :param retry: The retry of this SlaveRegister.
-        :type: bool
+        :type retry: bool
         """
         self._retry = retry
 
@@ -217,7 +234,7 @@ class SlaveRegister:
         Slave ownerType
 
         :param owner_type: The owner_type of this SlaveRegister.
-        :type: str
+        :type owner_type: str
         """
         self._owner_type = owner_type
 

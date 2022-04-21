@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InstanceAddress:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class InstanceAddress:
     }
 
     def __init__(self, os_ext_ips_ma_cmac_addr=None, os_ext_ip_sport_id=None, os_ext_ip_stype=None, addr=None, version=None):
-        """InstanceAddress - a model defined in huaweicloud sdk"""
+        """InstanceAddress
+
+        The model defined in huaweicloud sdk
+
+        :param os_ext_ips_ma_cmac_addr: MAC地址。
+        :type os_ext_ips_ma_cmac_addr: str
+        :param os_ext_ip_sport_id: IP地址对应的端口ID。
+        :type os_ext_ip_sport_id: str
+        :param os_ext_ip_stype: IP地址类型。  - fixed：代表私有IP地址。 - floating：代表浮动IP地址。
+        :type os_ext_ip_stype: str
+        :param addr: IP地址。
+        :type addr: str
+        :param version: IP地址版本。  - “4”：代表IPv4。 [- “6”：代表IPv6。](tag:hide)
+        :type version: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class InstanceAddress:
         MAC地址。
 
         :param os_ext_ips_ma_cmac_addr: The os_ext_ips_ma_cmac_addr of this InstanceAddress.
-        :type: str
+        :type os_ext_ips_ma_cmac_addr: str
         """
         self._os_ext_ips_ma_cmac_addr = os_ext_ips_ma_cmac_addr
 
@@ -100,7 +113,7 @@ class InstanceAddress:
         IP地址对应的端口ID。
 
         :param os_ext_ip_sport_id: The os_ext_ip_sport_id of this InstanceAddress.
-        :type: str
+        :type os_ext_ip_sport_id: str
         """
         self._os_ext_ip_sport_id = os_ext_ip_sport_id
 
@@ -122,7 +135,7 @@ class InstanceAddress:
         IP地址类型。  - fixed：代表私有IP地址。 - floating：代表浮动IP地址。
 
         :param os_ext_ip_stype: The os_ext_ip_stype of this InstanceAddress.
-        :type: str
+        :type os_ext_ip_stype: str
         """
         self._os_ext_ip_stype = os_ext_ip_stype
 
@@ -144,7 +157,7 @@ class InstanceAddress:
         IP地址。
 
         :param addr: The addr of this InstanceAddress.
-        :type: str
+        :type addr: str
         """
         self._addr = addr
 
@@ -166,7 +179,7 @@ class InstanceAddress:
         IP地址版本。  - “4”：代表IPv4。 [- “6”：代表IPv6。](tag:hide)
 
         :param version: The version of this InstanceAddress.
-        :type: str
+        :type version: str
         """
         self._version = version
 

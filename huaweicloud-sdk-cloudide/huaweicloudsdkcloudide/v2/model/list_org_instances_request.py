@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListOrgInstancesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListOrgInstancesRequest:
     }
 
     def __init__(self, is_temporary=None, limit=None, offset=None, org_id=None, search=None):
-        """ListOrgInstancesRequest - a model defined in huaweicloud sdk"""
+        """ListOrgInstancesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param is_temporary: 是否页面显示（以标签配置为准）
+        :type is_temporary: bool
+        :param limit: 每页显示的条目数量 10/15/30
+        :type limit: int
+        :param offset: 偏移量，表示从此偏移量开始查询
+        :type offset: int
+        :param org_id: 租户id（对应华为云帐号的domainId）
+        :type org_id: str
+        :param search: 关键字查询(根据实例名，描述模糊查询)
+        :type search: str
+        """
         
         
 
@@ -77,7 +90,7 @@ class ListOrgInstancesRequest:
         是否页面显示（以标签配置为准）
 
         :param is_temporary: The is_temporary of this ListOrgInstancesRequest.
-        :type: bool
+        :type is_temporary: bool
         """
         self._is_temporary = is_temporary
 
@@ -99,7 +112,7 @@ class ListOrgInstancesRequest:
         每页显示的条目数量 10/15/30
 
         :param limit: The limit of this ListOrgInstancesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -121,7 +134,7 @@ class ListOrgInstancesRequest:
         偏移量，表示从此偏移量开始查询
 
         :param offset: The offset of this ListOrgInstancesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -143,7 +156,7 @@ class ListOrgInstancesRequest:
         租户id（对应华为云帐号的domainId）
 
         :param org_id: The org_id of this ListOrgInstancesRequest.
-        :type: str
+        :type org_id: str
         """
         self._org_id = org_id
 
@@ -165,7 +178,7 @@ class ListOrgInstancesRequest:
         关键字查询(根据实例名，描述模糊查询)
 
         :param search: The search of this ListOrgInstancesRequest.
-        :type: str
+        :type search: str
         """
         self._search = search
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSubnetsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListSubnetsResponse(SdkResponse):
     }
 
     def __init__(self, subnets=None):
-        """ListSubnetsResponse - a model defined in huaweicloud sdk"""
+        """ListSubnetsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param subnets: subnet对象列表
+        :type subnets: list[:class:`huaweicloudsdkvpc.v2.Subnet`]
+        """
         
         super(ListSubnetsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListSubnetsResponse(SdkResponse):
         subnet对象列表
 
         :return: The subnets of this ListSubnetsResponse.
-        :rtype: list[Subnet]
+        :rtype: list[:class:`huaweicloudsdkvpc.v2.Subnet`]
         """
         return self._subnets
 
@@ -58,7 +63,7 @@ class ListSubnetsResponse(SdkResponse):
         subnet对象列表
 
         :param subnets: The subnets of this ListSubnetsResponse.
-        :type: list[Subnet]
+        :type subnets: list[:class:`huaweicloudsdkvpc.v2.Subnet`]
         """
         self._subnets = subnets
 

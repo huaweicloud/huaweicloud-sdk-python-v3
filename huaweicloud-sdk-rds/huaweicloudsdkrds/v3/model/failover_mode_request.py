@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FailoverModeRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class FailoverModeRequest:
     }
 
     def __init__(self, mode=None):
-        """FailoverModeRequest - a model defined in huaweicloud sdk"""
+        """FailoverModeRequest
+
+        The model defined in huaweicloud sdk
+
+        :param mode: 同步模式，各引擎可选择方式具体如下： MySQL： - async：异步。 - semisync：半同步。
+        :type mode: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class FailoverModeRequest:
         同步模式，各引擎可选择方式具体如下： MySQL： - async：异步。 - semisync：半同步。
 
         :param mode: The mode of this FailoverModeRequest.
-        :type: str
+        :type mode: str
         """
         self._mode = mode
 

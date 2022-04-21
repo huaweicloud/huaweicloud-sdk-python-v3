@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ProjectVpcSync:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ProjectVpcSync:
     }
 
     def __init__(self, vpc_channel_id=None, instance_ids=None, force_sync=None):
-        """ProjectVpcSync - a model defined in huaweicloud sdk"""
+        """ProjectVpcSync
+
+        The model defined in huaweicloud sdk
+
+        :param vpc_channel_id: VPC通道编号
+        :type vpc_channel_id: str
+        :param instance_ids: 新增关联的实例列表
+        :type instance_ids: list[str]
+        :param force_sync: 是否强制同步，默认不强制同步
+        :type force_sync: bool
+        """
         
         
 
@@ -68,7 +77,7 @@ class ProjectVpcSync:
         VPC通道编号
 
         :param vpc_channel_id: The vpc_channel_id of this ProjectVpcSync.
-        :type: str
+        :type vpc_channel_id: str
         """
         self._vpc_channel_id = vpc_channel_id
 
@@ -90,7 +99,7 @@ class ProjectVpcSync:
         新增关联的实例列表
 
         :param instance_ids: The instance_ids of this ProjectVpcSync.
-        :type: list[str]
+        :type instance_ids: list[str]
         """
         self._instance_ids = instance_ids
 
@@ -112,7 +121,7 @@ class ProjectVpcSync:
         是否强制同步，默认不强制同步
 
         :param force_sync: The force_sync of this ProjectVpcSync.
-        :type: bool
+        :type force_sync: bool
         """
         self._force_sync = force_sync
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDatastoresRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListDatastoresRequest:
     }
 
     def __init__(self, datastore_name=None):
-        """ListDatastoresRequest - a model defined in huaweicloud sdk"""
+        """ListDatastoresRequest
+
+        The model defined in huaweicloud sdk
+
+        :param datastore_name: 数据库类型。 - GaussDB(for Cassandra)数据库实例，取值为“cassandra”。 - GaussDB(for Mongo)数据库实例，取值为“mongodb”。 - GaussDB(for Influx)数据库实例，取值为“influxdb”。
+        :type datastore_name: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ListDatastoresRequest:
         数据库类型。 - GaussDB(for Cassandra)数据库实例，取值为“cassandra”。 - GaussDB(for Mongo)数据库实例，取值为“mongodb”。 - GaussDB(for Influx)数据库实例，取值为“influxdb”。
 
         :param datastore_name: The datastore_name of this ListDatastoresRequest.
-        :type: str
+        :type datastore_name: str
         """
         self._datastore_name = datastore_name
 

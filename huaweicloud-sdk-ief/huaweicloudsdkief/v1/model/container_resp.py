@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ContainerResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -66,7 +65,49 @@ class ContainerResp:
     }
 
     def __init__(self, args=None, command=None, name=None, envs=None, image_url=None, version=None, liveness_probe=None, readiness_probe=None, ports=None, resources=None, volumes=None, restarts=None, message=None, reason=None, is_ready=None, privileged=None, container_id=None, state=None, npu_type=None):
-        """ContainerResp - a model defined in huaweicloud sdk"""
+        """ContainerResp
+
+        The model defined in huaweicloud sdk
+
+        :param args: 容器启动参数，字符总长度最大为65536
+        :type args: list[str]
+        :param command: 容器启动命令，字符总长度最大为65536。 command支持使用数组定义多条命令，但在IEF控制台界面只会显示第一条命令。
+        :type command: list[str]
+        :param name: 容器名称，只允许英文小写字母、数字、中划线，最大长度32, 英文小写字母或数字开头和结尾
+        :type name: str
+        :param envs: 环境变量
+        :type envs: list[:class:`huaweicloudsdkief.v1.EnvPods`]
+        :param image_url: 容器镜像URL
+        :type image_url: str
+        :param version: 容器镜像版本
+        :type version: str
+        :param liveness_probe: 
+        :type liveness_probe: :class:`huaweicloudsdkief.v1.Probe`
+        :param readiness_probe: 
+        :type readiness_probe: :class:`huaweicloudsdkief.v1.Probe`
+        :param ports: 容器端口映射值
+        :type ports: list[:class:`huaweicloudsdkief.v1.HostContainerPort`]
+        :param resources: 
+        :type resources: :class:`huaweicloudsdkief.v1.DeploymentResources`
+        :param volumes: 卷配置
+        :type volumes: list[:class:`huaweicloudsdkief.v1.Volumes`]
+        :param restarts: 容器重启次数
+        :type restarts: int
+        :param message: 容器故障详情
+        :type message: str
+        :param reason: 容器故障原因
+        :type reason: str
+        :param is_ready: 健康检查结果
+        :type is_ready: str
+        :param privileged: 是否启用特权容器,默认值false
+        :type privileged: bool
+        :param container_id: 容器ID
+        :type container_id: str
+        :param state: 容器状态
+        :type state: str
+        :param npu_type: npu类型，支持D310类型和D910类型。 - D310表示D310类型。 - D910表示D910类型。 - 不填表示为D310类型。
+        :type npu_type: str
+        """
         
         
 
@@ -146,7 +187,7 @@ class ContainerResp:
         容器启动参数，字符总长度最大为65536
 
         :param args: The args of this ContainerResp.
-        :type: list[str]
+        :type args: list[str]
         """
         self._args = args
 
@@ -168,7 +209,7 @@ class ContainerResp:
         容器启动命令，字符总长度最大为65536。 command支持使用数组定义多条命令，但在IEF控制台界面只会显示第一条命令。
 
         :param command: The command of this ContainerResp.
-        :type: list[str]
+        :type command: list[str]
         """
         self._command = command
 
@@ -190,7 +231,7 @@ class ContainerResp:
         容器名称，只允许英文小写字母、数字、中划线，最大长度32, 英文小写字母或数字开头和结尾
 
         :param name: The name of this ContainerResp.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -201,7 +242,7 @@ class ContainerResp:
         环境变量
 
         :return: The envs of this ContainerResp.
-        :rtype: list[EnvPods]
+        :rtype: list[:class:`huaweicloudsdkief.v1.EnvPods`]
         """
         return self._envs
 
@@ -212,7 +253,7 @@ class ContainerResp:
         环境变量
 
         :param envs: The envs of this ContainerResp.
-        :type: list[EnvPods]
+        :type envs: list[:class:`huaweicloudsdkief.v1.EnvPods`]
         """
         self._envs = envs
 
@@ -234,7 +275,7 @@ class ContainerResp:
         容器镜像URL
 
         :param image_url: The image_url of this ContainerResp.
-        :type: str
+        :type image_url: str
         """
         self._image_url = image_url
 
@@ -256,7 +297,7 @@ class ContainerResp:
         容器镜像版本
 
         :param version: The version of this ContainerResp.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -266,7 +307,7 @@ class ContainerResp:
 
 
         :return: The liveness_probe of this ContainerResp.
-        :rtype: Probe
+        :rtype: :class:`huaweicloudsdkief.v1.Probe`
         """
         return self._liveness_probe
 
@@ -276,7 +317,7 @@ class ContainerResp:
 
 
         :param liveness_probe: The liveness_probe of this ContainerResp.
-        :type: Probe
+        :type liveness_probe: :class:`huaweicloudsdkief.v1.Probe`
         """
         self._liveness_probe = liveness_probe
 
@@ -286,7 +327,7 @@ class ContainerResp:
 
 
         :return: The readiness_probe of this ContainerResp.
-        :rtype: Probe
+        :rtype: :class:`huaweicloudsdkief.v1.Probe`
         """
         return self._readiness_probe
 
@@ -296,7 +337,7 @@ class ContainerResp:
 
 
         :param readiness_probe: The readiness_probe of this ContainerResp.
-        :type: Probe
+        :type readiness_probe: :class:`huaweicloudsdkief.v1.Probe`
         """
         self._readiness_probe = readiness_probe
 
@@ -307,7 +348,7 @@ class ContainerResp:
         容器端口映射值
 
         :return: The ports of this ContainerResp.
-        :rtype: list[HostContainerPort]
+        :rtype: list[:class:`huaweicloudsdkief.v1.HostContainerPort`]
         """
         return self._ports
 
@@ -318,7 +359,7 @@ class ContainerResp:
         容器端口映射值
 
         :param ports: The ports of this ContainerResp.
-        :type: list[HostContainerPort]
+        :type ports: list[:class:`huaweicloudsdkief.v1.HostContainerPort`]
         """
         self._ports = ports
 
@@ -328,7 +369,7 @@ class ContainerResp:
 
 
         :return: The resources of this ContainerResp.
-        :rtype: DeploymentResources
+        :rtype: :class:`huaweicloudsdkief.v1.DeploymentResources`
         """
         return self._resources
 
@@ -338,7 +379,7 @@ class ContainerResp:
 
 
         :param resources: The resources of this ContainerResp.
-        :type: DeploymentResources
+        :type resources: :class:`huaweicloudsdkief.v1.DeploymentResources`
         """
         self._resources = resources
 
@@ -349,7 +390,7 @@ class ContainerResp:
         卷配置
 
         :return: The volumes of this ContainerResp.
-        :rtype: list[Volumes]
+        :rtype: list[:class:`huaweicloudsdkief.v1.Volumes`]
         """
         return self._volumes
 
@@ -360,7 +401,7 @@ class ContainerResp:
         卷配置
 
         :param volumes: The volumes of this ContainerResp.
-        :type: list[Volumes]
+        :type volumes: list[:class:`huaweicloudsdkief.v1.Volumes`]
         """
         self._volumes = volumes
 
@@ -382,7 +423,7 @@ class ContainerResp:
         容器重启次数
 
         :param restarts: The restarts of this ContainerResp.
-        :type: int
+        :type restarts: int
         """
         self._restarts = restarts
 
@@ -404,7 +445,7 @@ class ContainerResp:
         容器故障详情
 
         :param message: The message of this ContainerResp.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -426,7 +467,7 @@ class ContainerResp:
         容器故障原因
 
         :param reason: The reason of this ContainerResp.
-        :type: str
+        :type reason: str
         """
         self._reason = reason
 
@@ -448,7 +489,7 @@ class ContainerResp:
         健康检查结果
 
         :param is_ready: The is_ready of this ContainerResp.
-        :type: str
+        :type is_ready: str
         """
         self._is_ready = is_ready
 
@@ -470,7 +511,7 @@ class ContainerResp:
         是否启用特权容器,默认值false
 
         :param privileged: The privileged of this ContainerResp.
-        :type: bool
+        :type privileged: bool
         """
         self._privileged = privileged
 
@@ -492,7 +533,7 @@ class ContainerResp:
         容器ID
 
         :param container_id: The container_id of this ContainerResp.
-        :type: str
+        :type container_id: str
         """
         self._container_id = container_id
 
@@ -514,7 +555,7 @@ class ContainerResp:
         容器状态
 
         :param state: The state of this ContainerResp.
-        :type: str
+        :type state: str
         """
         self._state = state
 
@@ -536,7 +577,7 @@ class ContainerResp:
         npu类型，支持D310类型和D910类型。 - D310表示D310类型。 - D910表示D910类型。 - 不填表示为D310类型。
 
         :param npu_type: The npu_type of this ContainerResp.
-        :type: str
+        :type npu_type: str
         """
         self._npu_type = npu_type
 

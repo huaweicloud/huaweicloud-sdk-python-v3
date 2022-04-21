@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDetailsOfVpcChannelV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
     }
 
     def __init__(self, name=None, port=None, balance_strategy=None, member_type=None, create_time=None, id=None, status=None, member_groups=None, members=None, vpc_health_config=None):
-        """ShowDetailsOfVpcChannelV2Response - a model defined in huaweicloud sdk"""
+        """ShowDetailsOfVpcChannelV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param name: VPC通道的名称。  长度为3 ~ 64位的字符串，字符串由中文、英文字母、数字、中划线、下划线组成，且只能以英文或中文开头。 &gt; 中文字符必须为UTF-8或者unicode编码。
+        :type name: str
+        :param port: VPC通道中主机的端口号。  取值范围1 ~ 65535，仅VPC通道类型为2时有效。  VPC通道类型为2时必选。
+        :type port: int
+        :param balance_strategy: 分发算法。 - 1：加权轮询（wrr） - 2：加权最少连接（wleastconn） - 3：源地址哈希（source） - 4：URI哈希（uri）  VPC通道类型为2时必选。
+        :type balance_strategy: int
+        :param member_type: VPC通道的成员类型。 - ip - ecs  VPC通道类型为2时必选。
+        :type member_type: str
+        :param create_time: VPC通道的创建时间
+        :type create_time: datetime
+        :param id: VPC通道的编号
+        :type id: str
+        :param status: VPC通道的状态。 - 1：正常 - 2：异常
+        :type status: int
+        :param member_groups: 后端云服务器组列表。  暂不支持
+        :type member_groups: list[:class:`huaweicloudsdkapig.v2.MemberGroupInfo`]
+        :param members: 后端实例列表，VPC通道类型为1时，有且仅有1个后端实例。
+        :type members: list[:class:`huaweicloudsdkapig.v2.VpcMemberInfo`]
+        :param vpc_health_config: 
+        :type vpc_health_config: :class:`huaweicloudsdkapig.v2.VpcHealthConfigInfo`
+        """
         
         super(ShowDetailsOfVpcChannelV2Response, self).__init__()
 
@@ -102,7 +125,7 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
         VPC通道的名称。  长度为3 ~ 64位的字符串，字符串由中文、英文字母、数字、中划线、下划线组成，且只能以英文或中文开头。 > 中文字符必须为UTF-8或者unicode编码。
 
         :param name: The name of this ShowDetailsOfVpcChannelV2Response.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -124,7 +147,7 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
         VPC通道中主机的端口号。  取值范围1 ~ 65535，仅VPC通道类型为2时有效。  VPC通道类型为2时必选。
 
         :param port: The port of this ShowDetailsOfVpcChannelV2Response.
-        :type: int
+        :type port: int
         """
         self._port = port
 
@@ -146,7 +169,7 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
         分发算法。 - 1：加权轮询（wrr） - 2：加权最少连接（wleastconn） - 3：源地址哈希（source） - 4：URI哈希（uri）  VPC通道类型为2时必选。
 
         :param balance_strategy: The balance_strategy of this ShowDetailsOfVpcChannelV2Response.
-        :type: int
+        :type balance_strategy: int
         """
         self._balance_strategy = balance_strategy
 
@@ -168,7 +191,7 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
         VPC通道的成员类型。 - ip - ecs  VPC通道类型为2时必选。
 
         :param member_type: The member_type of this ShowDetailsOfVpcChannelV2Response.
-        :type: str
+        :type member_type: str
         """
         self._member_type = member_type
 
@@ -190,7 +213,7 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
         VPC通道的创建时间
 
         :param create_time: The create_time of this ShowDetailsOfVpcChannelV2Response.
-        :type: datetime
+        :type create_time: datetime
         """
         self._create_time = create_time
 
@@ -212,7 +235,7 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
         VPC通道的编号
 
         :param id: The id of this ShowDetailsOfVpcChannelV2Response.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -234,7 +257,7 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
         VPC通道的状态。 - 1：正常 - 2：异常
 
         :param status: The status of this ShowDetailsOfVpcChannelV2Response.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -245,7 +268,7 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
         后端云服务器组列表。  暂不支持
 
         :return: The member_groups of this ShowDetailsOfVpcChannelV2Response.
-        :rtype: list[MemberGroupInfo]
+        :rtype: list[:class:`huaweicloudsdkapig.v2.MemberGroupInfo`]
         """
         return self._member_groups
 
@@ -256,7 +279,7 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
         后端云服务器组列表。  暂不支持
 
         :param member_groups: The member_groups of this ShowDetailsOfVpcChannelV2Response.
-        :type: list[MemberGroupInfo]
+        :type member_groups: list[:class:`huaweicloudsdkapig.v2.MemberGroupInfo`]
         """
         self._member_groups = member_groups
 
@@ -267,7 +290,7 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
         后端实例列表，VPC通道类型为1时，有且仅有1个后端实例。
 
         :return: The members of this ShowDetailsOfVpcChannelV2Response.
-        :rtype: list[VpcMemberInfo]
+        :rtype: list[:class:`huaweicloudsdkapig.v2.VpcMemberInfo`]
         """
         return self._members
 
@@ -278,7 +301,7 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
         后端实例列表，VPC通道类型为1时，有且仅有1个后端实例。
 
         :param members: The members of this ShowDetailsOfVpcChannelV2Response.
-        :type: list[VpcMemberInfo]
+        :type members: list[:class:`huaweicloudsdkapig.v2.VpcMemberInfo`]
         """
         self._members = members
 
@@ -288,7 +311,7 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
 
 
         :return: The vpc_health_config of this ShowDetailsOfVpcChannelV2Response.
-        :rtype: VpcHealthConfigInfo
+        :rtype: :class:`huaweicloudsdkapig.v2.VpcHealthConfigInfo`
         """
         return self._vpc_health_config
 
@@ -298,7 +321,7 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
 
 
         :param vpc_health_config: The vpc_health_config of this ShowDetailsOfVpcChannelV2Response.
-        :type: VpcHealthConfigInfo
+        :type vpc_health_config: :class:`huaweicloudsdkapig.v2.VpcHealthConfigInfo`
         """
         self._vpc_health_config = vpc_health_config
 

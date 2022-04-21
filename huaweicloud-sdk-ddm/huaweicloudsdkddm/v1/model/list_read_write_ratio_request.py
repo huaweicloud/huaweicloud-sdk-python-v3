@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListReadWriteRatioRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListReadWriteRatioRequest:
     }
 
     def __init__(self, instance_id=None, cur_page=None, per_page=None, start_date=None, end_date=None):
-        """ListReadWriteRatioRequest - a model defined in huaweicloud sdk"""
+        """ListReadWriteRatioRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: DDM实例ID。
+        :type instance_id: str
+        :param cur_page: 分页参数：起始值 [大于等于0] 。
+        :type cur_page: str
+        :param per_page: 分页参数：每页多少条。
+        :type per_page: str
+        :param start_date: 开始时间，UTC time，精确到毫秒。
+        :type start_date: str
+        :param end_date: 结束时间，UTC time，精确到毫秒。结束时间与开始时间，间隔不能超过1个月。
+        :type end_date: str
+        """
         
         
 
@@ -73,7 +86,7 @@ class ListReadWriteRatioRequest:
         DDM实例ID。
 
         :param instance_id: The instance_id of this ListReadWriteRatioRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -95,7 +108,7 @@ class ListReadWriteRatioRequest:
         分页参数：起始值 [大于等于0] 。
 
         :param cur_page: The cur_page of this ListReadWriteRatioRequest.
-        :type: str
+        :type cur_page: str
         """
         self._cur_page = cur_page
 
@@ -117,7 +130,7 @@ class ListReadWriteRatioRequest:
         分页参数：每页多少条。
 
         :param per_page: The per_page of this ListReadWriteRatioRequest.
-        :type: str
+        :type per_page: str
         """
         self._per_page = per_page
 
@@ -139,7 +152,7 @@ class ListReadWriteRatioRequest:
         开始时间，UTC time，精确到毫秒。
 
         :param start_date: The start_date of this ListReadWriteRatioRequest.
-        :type: str
+        :type start_date: str
         """
         self._start_date = start_date
 
@@ -161,7 +174,7 @@ class ListReadWriteRatioRequest:
         结束时间，UTC time，精确到毫秒。结束时间与开始时间，间隔不能超过1个月。
 
         :param end_date: The end_date of this ListReadWriteRatioRequest.
-        :type: str
+        :type end_date: str
         """
         self._end_date = end_date
 

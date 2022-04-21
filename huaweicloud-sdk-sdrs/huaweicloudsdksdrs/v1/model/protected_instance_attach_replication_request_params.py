@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ProtectedInstanceAttachReplicationRequestParams:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ProtectedInstanceAttachReplicationRequestParams:
     }
 
     def __init__(self, replication_id=None, device=None):
-        """ProtectedInstanceAttachReplicationRequestParams - a model defined in huaweicloud sdk"""
+        """ProtectedInstanceAttachReplicationRequestParams
+
+        The model defined in huaweicloud sdk
+
+        :param replication_id: 复制对的ID。
+        :type replication_id: str
+        :param device: 复制对中使用的磁盘挂载点。  说明:新增加的磁盘挂载点不能和已有的磁盘挂载点相同。 对于采用XEN虚拟化类型的弹性云服务器组成的保护实例，系统盘挂载点请指定/dev/sda；数据盘挂载点请按英文字母顺序依次指定，如/dev/sdb，/dev/sdc，如果指定了以“/dev/vd”开头的挂载点，系统默认改为“/dev/sd”。对于采用KVM虚拟化类型的弹性云服务器组成的保护实例，系统盘挂载点请指定/dev/vda；数据盘挂载点请按英文字母顺序依次指定，如/dev/vdb，/dev/vdc，如果指定了以“/dev/sd”开头的挂载点，系统默认改为“/dev/vd”。
+        :type device: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ProtectedInstanceAttachReplicationRequestParams:
         复制对的ID。
 
         :param replication_id: The replication_id of this ProtectedInstanceAttachReplicationRequestParams.
-        :type: str
+        :type replication_id: str
         """
         self._replication_id = replication_id
 
@@ -83,7 +90,7 @@ class ProtectedInstanceAttachReplicationRequestParams:
         复制对中使用的磁盘挂载点。  说明:新增加的磁盘挂载点不能和已有的磁盘挂载点相同。 对于采用XEN虚拟化类型的弹性云服务器组成的保护实例，系统盘挂载点请指定/dev/sda；数据盘挂载点请按英文字母顺序依次指定，如/dev/sdb，/dev/sdc，如果指定了以“/dev/vd”开头的挂载点，系统默认改为“/dev/sd”。对于采用KVM虚拟化类型的弹性云服务器组成的保护实例，系统盘挂载点请指定/dev/vda；数据盘挂载点请按英文字母顺序依次指定，如/dev/vdb，/dev/vdc，如果指定了以“/dev/sd”开头的挂载点，系统默认改为“/dev/vd”。
 
         :param device: The device of this ProtectedInstanceAttachReplicationRequestParams.
-        :type: str
+        :type device: str
         """
         self._device = device
 

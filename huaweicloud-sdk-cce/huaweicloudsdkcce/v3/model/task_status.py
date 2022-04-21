@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TaskStatus:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class TaskStatus:
     }
 
     def __init__(self, job_id=None):
-        """TaskStatus - a model defined in huaweicloud sdk"""
+        """TaskStatus
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 任务ID，供调用者查询任务进度。
+        :type job_id: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class TaskStatus:
         任务ID，供调用者查询任务进度。
 
         :param job_id: The job_id of this TaskStatus.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 

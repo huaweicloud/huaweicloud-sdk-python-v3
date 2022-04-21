@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunModerationAudioRequestBodyConfig:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RunModerationAudioRequestBodyConfig:
     }
 
     def __init__(self, format=None, _property=None):
-        """RunModerationAudioRequestBodyConfig - a model defined in huaweicloud sdk"""
+        """RunModerationAudioRequestBodyConfig
+
+        The model defined in huaweicloud sdk
+
+        :param format: 支持的语音格式
+        :type format: str
+        :param _property: 所使用的模型特征串。通常是 “语种_采样率_领域”的形式。 采样率需要与音频采样率保持一致。 当前支持如下模型特征串：   chinese_8k_common   chinese_16k_common 
+        :type _property: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class RunModerationAudioRequestBodyConfig:
         支持的语音格式
 
         :param format: The format of this RunModerationAudioRequestBodyConfig.
-        :type: str
+        :type format: str
         """
         self._format = format
 
@@ -83,7 +90,7 @@ class RunModerationAudioRequestBodyConfig:
         所使用的模型特征串。通常是 “语种_采样率_领域”的形式。 采样率需要与音频采样率保持一致。 当前支持如下模型特征串：   chinese_8k_common   chinese_16k_common 
 
         :param _property: The _property of this RunModerationAudioRequestBodyConfig.
-        :type: str
+        :type _property: str
         """
         self.__property = _property
 

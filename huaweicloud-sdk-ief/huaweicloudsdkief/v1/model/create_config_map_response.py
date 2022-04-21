@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateConfigMapResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateConfigMapResponse(SdkResponse):
     }
 
     def __init__(self, configmap=None):
-        """CreateConfigMapResponse - a model defined in huaweicloud sdk"""
+        """CreateConfigMapResponse
+
+        The model defined in huaweicloud sdk
+
+        :param configmap: 
+        :type configmap: :class:`huaweicloudsdkief.v1.ConfigMapResp`
+        """
         
         super(CreateConfigMapResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class CreateConfigMapResponse(SdkResponse):
 
 
         :return: The configmap of this CreateConfigMapResponse.
-        :rtype: ConfigMapResp
+        :rtype: :class:`huaweicloudsdkief.v1.ConfigMapResp`
         """
         return self._configmap
 
@@ -56,7 +61,7 @@ class CreateConfigMapResponse(SdkResponse):
 
 
         :param configmap: The configmap of this CreateConfigMapResponse.
-        :type: ConfigMapResp
+        :type configmap: :class:`huaweicloudsdkief.v1.ConfigMapResp`
         """
         self._configmap = configmap
 

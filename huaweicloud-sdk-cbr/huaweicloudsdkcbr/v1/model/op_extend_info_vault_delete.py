@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OpExtendInfoVaultDelete:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class OpExtendInfoVaultDelete:
     }
 
     def __init__(self, fail_count=None, total_count=None):
-        """OpExtendInfoVaultDelete - a model defined in huaweicloud sdk"""
+        """OpExtendInfoVaultDelete
+
+        The model defined in huaweicloud sdk
+
+        :param fail_count: 本次任务删除失败的资源数量
+        :type fail_count: int
+        :param total_count: 本次任务删除的备份总数
+        :type total_count: int
+        """
         
         
 
@@ -63,7 +70,7 @@ class OpExtendInfoVaultDelete:
         本次任务删除失败的资源数量
 
         :param fail_count: The fail_count of this OpExtendInfoVaultDelete.
-        :type: int
+        :type fail_count: int
         """
         self._fail_count = fail_count
 
@@ -85,7 +92,7 @@ class OpExtendInfoVaultDelete:
         本次任务删除的备份总数
 
         :param total_count: The total_count of this OpExtendInfoVaultDelete.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class WeeklyCount:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class WeeklyCount:
     }
 
     def __init__(self, ddos_intercept_times=None, ddos_blackhole_times=None, max_attack_bps=None, max_attack_conns=None, period_start_date=None):
-        """WeeklyCount - a model defined in huaweicloud sdk"""
+        """WeeklyCount
+
+        The model defined in huaweicloud sdk
+
+        :param ddos_intercept_times: DDoS拦截次数
+        :type ddos_intercept_times: int
+        :param ddos_blackhole_times: DDoS黑洞次数
+        :type ddos_blackhole_times: int
+        :param max_attack_bps: 最大攻击流量
+        :type max_attack_bps: int
+        :param max_attack_conns: 最大攻击连接数
+        :type max_attack_conns: int
+        :param period_start_date: 开始时间
+        :type period_start_date: int
+        """
         
         
 
@@ -73,7 +86,7 @@ class WeeklyCount:
         DDoS拦截次数
 
         :param ddos_intercept_times: The ddos_intercept_times of this WeeklyCount.
-        :type: int
+        :type ddos_intercept_times: int
         """
         self._ddos_intercept_times = ddos_intercept_times
 
@@ -95,7 +108,7 @@ class WeeklyCount:
         DDoS黑洞次数
 
         :param ddos_blackhole_times: The ddos_blackhole_times of this WeeklyCount.
-        :type: int
+        :type ddos_blackhole_times: int
         """
         self._ddos_blackhole_times = ddos_blackhole_times
 
@@ -117,7 +130,7 @@ class WeeklyCount:
         最大攻击流量
 
         :param max_attack_bps: The max_attack_bps of this WeeklyCount.
-        :type: int
+        :type max_attack_bps: int
         """
         self._max_attack_bps = max_attack_bps
 
@@ -139,7 +152,7 @@ class WeeklyCount:
         最大攻击连接数
 
         :param max_attack_conns: The max_attack_conns of this WeeklyCount.
-        :type: int
+        :type max_attack_conns: int
         """
         self._max_attack_conns = max_attack_conns
 
@@ -161,7 +174,7 @@ class WeeklyCount:
         开始时间
 
         :param period_start_date: The period_start_date of this WeeklyCount.
-        :type: int
+        :type period_start_date: int
         """
         self._period_start_date = period_start_date
 

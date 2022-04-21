@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunAspectSentimentResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class RunAspectSentimentResponse(SdkResponse):
     }
 
     def __init__(self, text=None, label=None, confidence=None, aspect_opinions=None, error_code=None, error_msg=None):
-        """RunAspectSentimentResponse - a model defined in huaweicloud sdk"""
+        """RunAspectSentimentResponse
+
+        The model defined in huaweicloud sdk
+
+        :param text: 待分析文本
+        :type text: str
+        :param label: 该文本的整体情感标签，取值如下： 0  负向 1  正向
+        :type label: int
+        :param confidence: 该文本整体情感label的置信度,小数点精确到3位。
+        :type confidence: float
+        :param aspect_opinions: 属性级情感挖掘列表
+        :type aspect_opinions: list[:class:`huaweicloudsdknlp.v2.AspectOpinion`]
+        :param error_code: 调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
+        :type error_code: str
+        :param error_msg: 调用失败时的错误信息。调用成功时无此字段。
+        :type error_msg: str
+        """
         
         super(RunAspectSentimentResponse, self).__init__()
 
@@ -83,7 +98,7 @@ class RunAspectSentimentResponse(SdkResponse):
         待分析文本
 
         :param text: The text of this RunAspectSentimentResponse.
-        :type: str
+        :type text: str
         """
         self._text = text
 
@@ -105,7 +120,7 @@ class RunAspectSentimentResponse(SdkResponse):
         该文本的整体情感标签，取值如下： 0  负向 1  正向
 
         :param label: The label of this RunAspectSentimentResponse.
-        :type: int
+        :type label: int
         """
         self._label = label
 
@@ -127,7 +142,7 @@ class RunAspectSentimentResponse(SdkResponse):
         该文本整体情感label的置信度,小数点精确到3位。
 
         :param confidence: The confidence of this RunAspectSentimentResponse.
-        :type: float
+        :type confidence: float
         """
         self._confidence = confidence
 
@@ -138,7 +153,7 @@ class RunAspectSentimentResponse(SdkResponse):
         属性级情感挖掘列表
 
         :return: The aspect_opinions of this RunAspectSentimentResponse.
-        :rtype: list[AspectOpinion]
+        :rtype: list[:class:`huaweicloudsdknlp.v2.AspectOpinion`]
         """
         return self._aspect_opinions
 
@@ -149,7 +164,7 @@ class RunAspectSentimentResponse(SdkResponse):
         属性级情感挖掘列表
 
         :param aspect_opinions: The aspect_opinions of this RunAspectSentimentResponse.
-        :type: list[AspectOpinion]
+        :type aspect_opinions: list[:class:`huaweicloudsdknlp.v2.AspectOpinion`]
         """
         self._aspect_opinions = aspect_opinions
 
@@ -171,7 +186,7 @@ class RunAspectSentimentResponse(SdkResponse):
         调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
 
         :param error_code: The error_code of this RunAspectSentimentResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -193,7 +208,7 @@ class RunAspectSentimentResponse(SdkResponse):
         调用失败时的错误信息。调用成功时无此字段。
 
         :param error_msg: The error_msg of this RunAspectSentimentResponse.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 

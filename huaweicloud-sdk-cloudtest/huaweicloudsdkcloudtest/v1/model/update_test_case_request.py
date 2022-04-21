@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateTestCaseRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateTestCaseRequest:
     }
 
     def __init__(self, project_id=None, testcase_id=None, body=None):
-        """UpdateTestCaseRequest - a model defined in huaweicloud sdk"""
+        """UpdateTestCaseRequest
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: 项目唯一标识，固定长度32位字符
+        :type project_id: str
+        :param testcase_id: 测试用例唯一标识，固定长度32位字符
+        :type testcase_id: str
+        :param body: Body of the UpdateTestCaseRequest
+        :type body: :class:`huaweicloudsdkcloudtest.v1.UpdateTestCaseRequestBody`
+        """
         
         
 
@@ -66,7 +75,7 @@ class UpdateTestCaseRequest:
         项目唯一标识，固定长度32位字符
 
         :param project_id: The project_id of this UpdateTestCaseRequest.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -88,7 +97,7 @@ class UpdateTestCaseRequest:
         测试用例唯一标识，固定长度32位字符
 
         :param testcase_id: The testcase_id of this UpdateTestCaseRequest.
-        :type: str
+        :type testcase_id: str
         """
         self._testcase_id = testcase_id
 
@@ -98,7 +107,7 @@ class UpdateTestCaseRequest:
 
 
         :return: The body of this UpdateTestCaseRequest.
-        :rtype: UpdateTestCaseRequestBody
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.UpdateTestCaseRequestBody`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class UpdateTestCaseRequest:
 
 
         :param body: The body of this UpdateTestCaseRequest.
-        :type: UpdateTestCaseRequestBody
+        :type body: :class:`huaweicloudsdkcloudtest.v1.UpdateTestCaseRequestBody`
         """
         self._body = body
 

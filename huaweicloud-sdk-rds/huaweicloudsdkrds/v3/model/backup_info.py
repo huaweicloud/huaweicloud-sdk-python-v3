@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BackupInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class BackupInfo:
     }
 
     def __init__(self, id=None, instance_id=None, name=None, description=None, databases=None, begin_time=None, status=None, type=None):
-        """BackupInfo - a model defined in huaweicloud sdk"""
+        """BackupInfo
+
+        The model defined in huaweicloud sdk
+
+        :param id: 备份ID。
+        :type id: str
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param name: 备份名称。
+        :type name: str
+        :param description: 备份描述。
+        :type description: str
+        :param databases: 只支持Microsoft SQL Server，局部备份的用户自建数据库名列表，当有此参数时以局部备份为准。
+        :type databases: list[:class:`huaweicloudsdkrds.v3.BackupDatabase`]
+        :param begin_time: 备份开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        :type begin_time: str
+        :param status: 备份状态，取值：  - BUILDING: 备份中。 - COMPLETED: 备份完成。 - FAILED：备份失败。 - DELETING：备份删除中。
+        :type status: str
+        :param type: 备份类型，取值：  - “auto”: 自动全量备份 - “manual”: 手动全量备份 - “fragment”: 差异全量备份 - “incremental”: 自动增量备份
+        :type type: str
+        """
         
         
 
@@ -87,7 +106,7 @@ class BackupInfo:
         备份ID。
 
         :param id: The id of this BackupInfo.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -109,7 +128,7 @@ class BackupInfo:
         实例ID。
 
         :param instance_id: The instance_id of this BackupInfo.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -131,7 +150,7 @@ class BackupInfo:
         备份名称。
 
         :param name: The name of this BackupInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -153,7 +172,7 @@ class BackupInfo:
         备份描述。
 
         :param description: The description of this BackupInfo.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -164,7 +183,7 @@ class BackupInfo:
         只支持Microsoft SQL Server，局部备份的用户自建数据库名列表，当有此参数时以局部备份为准。
 
         :return: The databases of this BackupInfo.
-        :rtype: list[BackupDatabase]
+        :rtype: list[:class:`huaweicloudsdkrds.v3.BackupDatabase`]
         """
         return self._databases
 
@@ -175,7 +194,7 @@ class BackupInfo:
         只支持Microsoft SQL Server，局部备份的用户自建数据库名列表，当有此参数时以局部备份为准。
 
         :param databases: The databases of this BackupInfo.
-        :type: list[BackupDatabase]
+        :type databases: list[:class:`huaweicloudsdkrds.v3.BackupDatabase`]
         """
         self._databases = databases
 
@@ -197,7 +216,7 @@ class BackupInfo:
         备份开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
         :param begin_time: The begin_time of this BackupInfo.
-        :type: str
+        :type begin_time: str
         """
         self._begin_time = begin_time
 
@@ -219,7 +238,7 @@ class BackupInfo:
         备份状态，取值：  - BUILDING: 备份中。 - COMPLETED: 备份完成。 - FAILED：备份失败。 - DELETING：备份删除中。
 
         :param status: The status of this BackupInfo.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -241,7 +260,7 @@ class BackupInfo:
         备份类型，取值：  - “auto”: 自动全量备份 - “manual”: 手动全量备份 - “fragment”: 差异全量备份 - “incremental”: 自动增量备份
 
         :param type: The type of this BackupInfo.
-        :type: str
+        :type type: str
         """
         self._type = type
 

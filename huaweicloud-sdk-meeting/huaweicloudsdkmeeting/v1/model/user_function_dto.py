@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UserFunctionDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UserFunctionDTO:
     }
 
     def __init__(self, enable_room=None):
-        """UserFunctionDTO - a model defined in huaweicloud sdk"""
+        """UserFunctionDTO
+
+        The model defined in huaweicloud sdk
+
+        :param enable_room: 是否开启智能协同白板功能。如果开启，表示该帐号是给智能协同白板使用，占用企业智能协同白板的资源，如果资源不足，则无法开启。 默认值：false。 
+        :type enable_room: bool
+        """
         
         
 
@@ -58,7 +63,7 @@ class UserFunctionDTO:
         是否开启智能协同白板功能。如果开启，表示该帐号是给智能协同白板使用，占用企业智能协同白板的资源，如果资源不足，则无法开启。 默认值：false。 
 
         :param enable_room: The enable_room of this UserFunctionDTO.
-        :type: bool
+        :type enable_room: bool
         """
         self._enable_room = enable_room
 

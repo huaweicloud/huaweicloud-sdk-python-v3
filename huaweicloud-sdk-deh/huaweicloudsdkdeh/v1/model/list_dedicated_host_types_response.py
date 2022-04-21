@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDedicatedHostTypesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListDedicatedHostTypesResponse(SdkResponse):
     }
 
     def __init__(self, dedicated_host_types=None):
-        """ListDedicatedHostTypesResponse - a model defined in huaweicloud sdk"""
+        """ListDedicatedHostTypesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param dedicated_host_types: 可用的专属主机类型。
+        :type dedicated_host_types: list[:class:`huaweicloudsdkdeh.v1.RespHostType`]
+        """
         
         super(ListDedicatedHostTypesResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListDedicatedHostTypesResponse(SdkResponse):
         可用的专属主机类型。
 
         :return: The dedicated_host_types of this ListDedicatedHostTypesResponse.
-        :rtype: list[RespHostType]
+        :rtype: list[:class:`huaweicloudsdkdeh.v1.RespHostType`]
         """
         return self._dedicated_host_types
 
@@ -58,7 +63,7 @@ class ListDedicatedHostTypesResponse(SdkResponse):
         可用的专属主机类型。
 
         :param dedicated_host_types: The dedicated_host_types of this ListDedicatedHostTypesResponse.
-        :type: list[RespHostType]
+        :type dedicated_host_types: list[:class:`huaweicloudsdkdeh.v1.RespHostType`]
         """
         self._dedicated_host_types = dedicated_host_types
 

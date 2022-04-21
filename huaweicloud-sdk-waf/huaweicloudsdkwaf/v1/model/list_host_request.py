@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListHostRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListHostRequest:
     }
 
     def __init__(self, enterprise_project_id=None, page=None, pagesize=None, hostname=None, policyname=None):
-        """ListHostRequest - a model defined in huaweicloud sdk"""
+        """ListHostRequest
+
+        The model defined in huaweicloud sdk
+
+        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        :type enterprise_project_id: str
+        :param page: 分页查询时，返回第几页数据。范围0-100000，默认值为1，表示返回第1页数据。
+        :type page: int
+        :param pagesize: 分页查询时，每页包含多少条结果。范围1-100，默认值为10，表示每页包含10条结果。
+        :type pagesize: int
+        :param hostname: 域名
+        :type hostname: str
+        :param policyname: 策略名
+        :type policyname: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class ListHostRequest:
         您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this ListHostRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -100,7 +113,7 @@ class ListHostRequest:
         分页查询时，返回第几页数据。范围0-100000，默认值为1，表示返回第1页数据。
 
         :param page: The page of this ListHostRequest.
-        :type: int
+        :type page: int
         """
         self._page = page
 
@@ -122,7 +135,7 @@ class ListHostRequest:
         分页查询时，每页包含多少条结果。范围1-100，默认值为10，表示每页包含10条结果。
 
         :param pagesize: The pagesize of this ListHostRequest.
-        :type: int
+        :type pagesize: int
         """
         self._pagesize = pagesize
 
@@ -144,7 +157,7 @@ class ListHostRequest:
         域名
 
         :param hostname: The hostname of this ListHostRequest.
-        :type: str
+        :type hostname: str
         """
         self._hostname = hostname
 
@@ -166,7 +179,7 @@ class ListHostRequest:
         策略名
 
         :param policyname: The policyname of this ListHostRequest.
-        :type: str
+        :type policyname: str
         """
         self._policyname = policyname
 

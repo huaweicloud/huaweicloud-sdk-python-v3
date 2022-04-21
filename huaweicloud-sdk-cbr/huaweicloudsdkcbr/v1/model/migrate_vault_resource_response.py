@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MigrateVaultResourceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class MigrateVaultResourceResponse(SdkResponse):
     }
 
     def __init__(self, migrated_resources=None):
-        """MigrateVaultResourceResponse - a model defined in huaweicloud sdk"""
+        """MigrateVaultResourceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param migrated_resources: 
+        :type migrated_resources: list[str]
+        """
         
         super(MigrateVaultResourceResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class MigrateVaultResourceResponse(SdkResponse):
         
 
         :param migrated_resources: The migrated_resources of this MigrateVaultResourceResponse.
-        :type: list[str]
+        :type migrated_resources: list[str]
         """
         self._migrated_resources = migrated_resources
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddSubsetsToGatewayRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class AddSubsetsToGatewayRequestBody:
     }
 
     def __init__(self, resources=None):
-        """AddSubsetsToGatewayRequestBody - a model defined in huaweicloud sdk"""
+        """AddSubsetsToGatewayRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param resources: 待添加子设备ID列表，且设备需是普通设备，自动向下取整
+        :type resources: list[int]
+        """
         
         
 
@@ -57,7 +62,7 @@ class AddSubsetsToGatewayRequestBody:
         待添加子设备ID列表，且设备需是普通设备，自动向下取整
 
         :param resources: The resources of this AddSubsetsToGatewayRequestBody.
-        :type: list[int]
+        :type resources: list[int]
         """
         self._resources = resources
 

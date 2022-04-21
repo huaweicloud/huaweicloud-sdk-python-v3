@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateClusterInstanceBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CreateClusterInstanceBody:
     }
 
     def __init__(self, flavor_ref=None, volume=None, nics=None, availability_zone=None):
-        """CreateClusterInstanceBody - a model defined in huaweicloud sdk"""
+        """CreateClusterInstanceBody
+
+        The model defined in huaweicloud sdk
+
+        :param flavor_ref: 实例规格名称。例如乌兰察布三中，  - ess.spec-2u16g规格对应的取值范围为40GB～1280GB。 - ess.spec-4u32g规格对应的取值范围为40GB～2560GB。 - ess.spec-8u64g规格对应的取值范围为80GB～5120GB。 - ess.spec-16u128g规格对应的取值范围为160GB～10240GB。
+        :type flavor_ref: str
+        :param volume: 
+        :type volume: :class:`huaweicloudsdkcss.v1.CreateClusterInstanceVolumeBody`
+        :param nics: 
+        :type nics: :class:`huaweicloudsdkcss.v1.CreateClusterInstanceNicsBody`
+        :param availability_zone: 可用区。不填时默认创建单AZ。  如果需要创建多AZ，各个AZ之间使用英文逗号分隔，比如az1,az2 ，az不能重复输入，并且要求节点个数大于等于AZ个数。  如果节点个数为AZ个数的倍数，节点将会均匀的分布到各个AZ。如果节点个数不为AZ个数的倍数时，各个AZ分布的节点个数之和的绝对值之差小于等于1。
+        :type availability_zone: str
+        """
         
         
 
@@ -70,7 +81,7 @@ class CreateClusterInstanceBody:
         实例规格名称。例如乌兰察布三中，  - ess.spec-2u16g规格对应的取值范围为40GB～1280GB。 - ess.spec-4u32g规格对应的取值范围为40GB～2560GB。 - ess.spec-8u64g规格对应的取值范围为80GB～5120GB。 - ess.spec-16u128g规格对应的取值范围为160GB～10240GB。
 
         :param flavor_ref: The flavor_ref of this CreateClusterInstanceBody.
-        :type: str
+        :type flavor_ref: str
         """
         self._flavor_ref = flavor_ref
 
@@ -80,7 +91,7 @@ class CreateClusterInstanceBody:
 
 
         :return: The volume of this CreateClusterInstanceBody.
-        :rtype: CreateClusterInstanceVolumeBody
+        :rtype: :class:`huaweicloudsdkcss.v1.CreateClusterInstanceVolumeBody`
         """
         return self._volume
 
@@ -90,7 +101,7 @@ class CreateClusterInstanceBody:
 
 
         :param volume: The volume of this CreateClusterInstanceBody.
-        :type: CreateClusterInstanceVolumeBody
+        :type volume: :class:`huaweicloudsdkcss.v1.CreateClusterInstanceVolumeBody`
         """
         self._volume = volume
 
@@ -100,7 +111,7 @@ class CreateClusterInstanceBody:
 
 
         :return: The nics of this CreateClusterInstanceBody.
-        :rtype: CreateClusterInstanceNicsBody
+        :rtype: :class:`huaweicloudsdkcss.v1.CreateClusterInstanceNicsBody`
         """
         return self._nics
 
@@ -110,7 +121,7 @@ class CreateClusterInstanceBody:
 
 
         :param nics: The nics of this CreateClusterInstanceBody.
-        :type: CreateClusterInstanceNicsBody
+        :type nics: :class:`huaweicloudsdkcss.v1.CreateClusterInstanceNicsBody`
         """
         self._nics = nics
 
@@ -132,7 +143,7 @@ class CreateClusterInstanceBody:
         可用区。不填时默认创建单AZ。  如果需要创建多AZ，各个AZ之间使用英文逗号分隔，比如az1,az2 ，az不能重复输入，并且要求节点个数大于等于AZ个数。  如果节点个数为AZ个数的倍数，节点将会均匀的分布到各个AZ。如果节点个数不为AZ个数的倍数时，各个AZ分布的节点个数之和的绝对值之差小于等于1。
 
         :param availability_zone: The availability_zone of this CreateClusterInstanceBody.
-        :type: str
+        :type availability_zone: str
         """
         self._availability_zone = availability_zone
 

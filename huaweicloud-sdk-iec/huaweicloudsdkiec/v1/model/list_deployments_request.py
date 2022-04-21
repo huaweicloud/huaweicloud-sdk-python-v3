@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDeploymentsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListDeploymentsRequest:
     }
 
     def __init__(self, offset=None, limit=None, status=None, id=None, edgecloud_id=None):
-        """ListDeploymentsRequest - a model defined in huaweicloud sdk"""
+        """ListDeploymentsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param offset: 偏移量。 当前偏移量，默认为0。
+        :type offset: int
+        :param limit: 查询返回部署计划列表当前页面的数量。
+        :type limit: int
+        :param status: 查询条件，部署计划状态，现只包含如下值： - open:部署计划处于未执行状态，可执行部署计划进行部署 - closed:部署计划已关闭，不可部署。
+        :type status: str
+        :param id: 查询条件，部署计划ID。
+        :type id: str
+        :param edgecloud_id: 查询条件，边缘业务ID。
+        :type edgecloud_id: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class ListDeploymentsRequest:
         偏移量。 当前偏移量，默认为0。
 
         :param offset: The offset of this ListDeploymentsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -100,7 +113,7 @@ class ListDeploymentsRequest:
         查询返回部署计划列表当前页面的数量。
 
         :param limit: The limit of this ListDeploymentsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -122,7 +135,7 @@ class ListDeploymentsRequest:
         查询条件，部署计划状态，现只包含如下值： - open:部署计划处于未执行状态，可执行部署计划进行部署 - closed:部署计划已关闭，不可部署。
 
         :param status: The status of this ListDeploymentsRequest.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -144,7 +157,7 @@ class ListDeploymentsRequest:
         查询条件，部署计划ID。
 
         :param id: The id of this ListDeploymentsRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -166,7 +179,7 @@ class ListDeploymentsRequest:
         查询条件，边缘业务ID。
 
         :param edgecloud_id: The edgecloud_id of this ListDeploymentsRequest.
-        :type: str
+        :type edgecloud_id: str
         """
         self._edgecloud_id = edgecloud_id
 

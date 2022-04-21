@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSinkTasksResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListSinkTasksResponse(SdkResponse):
     }
 
     def __init__(self, tasks=None, total_number=None, max_tasks=None, quota_tasks=None):
-        """ListSinkTasksResponse - a model defined in huaweicloud sdk"""
+        """ListSinkTasksResponse
+
+        The model defined in huaweicloud sdk
+
+        :param tasks: 转储任务列表。
+        :type tasks: list[:class:`huaweicloudsdkkafka.v2.ListSinkTasksRespTasks`]
+        :param total_number: 转储任务总数。
+        :type total_number: int
+        :param max_tasks: 总的支持任务个数。
+        :type max_tasks: int
+        :param quota_tasks: 任务总数的配额。
+        :type quota_tasks: int
+        """
         
         super(ListSinkTasksResponse, self).__init__()
 
@@ -62,7 +73,7 @@ class ListSinkTasksResponse(SdkResponse):
         转储任务列表。
 
         :return: The tasks of this ListSinkTasksResponse.
-        :rtype: list[ListSinkTasksRespTasks]
+        :rtype: list[:class:`huaweicloudsdkkafka.v2.ListSinkTasksRespTasks`]
         """
         return self._tasks
 
@@ -73,7 +84,7 @@ class ListSinkTasksResponse(SdkResponse):
         转储任务列表。
 
         :param tasks: The tasks of this ListSinkTasksResponse.
-        :type: list[ListSinkTasksRespTasks]
+        :type tasks: list[:class:`huaweicloudsdkkafka.v2.ListSinkTasksRespTasks`]
         """
         self._tasks = tasks
 
@@ -95,7 +106,7 @@ class ListSinkTasksResponse(SdkResponse):
         转储任务总数。
 
         :param total_number: The total_number of this ListSinkTasksResponse.
-        :type: int
+        :type total_number: int
         """
         self._total_number = total_number
 
@@ -117,7 +128,7 @@ class ListSinkTasksResponse(SdkResponse):
         总的支持任务个数。
 
         :param max_tasks: The max_tasks of this ListSinkTasksResponse.
-        :type: int
+        :type max_tasks: int
         """
         self._max_tasks = max_tasks
 
@@ -139,7 +150,7 @@ class ListSinkTasksResponse(SdkResponse):
         任务总数的配额。
 
         :param quota_tasks: The quota_tasks of this ListSinkTasksResponse.
-        :type: int
+        :type quota_tasks: int
         """
         self._quota_tasks = quota_tasks
 

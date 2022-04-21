@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IdentityprovidersResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class IdentityprovidersResult:
     }
 
     def __init__(self, sso_type=None, id=None, description=None, enabled=None, remote_ids=None, links=None):
-        """IdentityprovidersResult - a model defined in huaweicloud sdk"""
+        """IdentityprovidersResult
+
+        The model defined in huaweicloud sdk
+
+        :param sso_type: 身份提供商类型。当前支持virtual_user_sso和iam_user_sso两种。当返回为空字符串或者null时，默认为缺省类型virtual_user_sso类型。
+        :type sso_type: str
+        :param id: 身份提供商ID。
+        :type id: str
+        :param description: 身份提供商描述信息。
+        :type description: str
+        :param enabled: 身份提供商是否启用，true为启用，false为停用，默认为false。
+        :type enabled: bool
+        :param remote_ids: 身份提供商的联邦用户ID列表。
+        :type remote_ids: list[str]
+        :param links: 
+        :type links: :class:`huaweicloudsdkiam.v3.IdentityprovidersLinks`
+        """
         
         
 
@@ -77,7 +92,7 @@ class IdentityprovidersResult:
         身份提供商类型。当前支持virtual_user_sso和iam_user_sso两种。当返回为空字符串或者null时，默认为缺省类型virtual_user_sso类型。
 
         :param sso_type: The sso_type of this IdentityprovidersResult.
-        :type: str
+        :type sso_type: str
         """
         self._sso_type = sso_type
 
@@ -99,7 +114,7 @@ class IdentityprovidersResult:
         身份提供商ID。
 
         :param id: The id of this IdentityprovidersResult.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -121,7 +136,7 @@ class IdentityprovidersResult:
         身份提供商描述信息。
 
         :param description: The description of this IdentityprovidersResult.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -143,7 +158,7 @@ class IdentityprovidersResult:
         身份提供商是否启用，true为启用，false为停用，默认为false。
 
         :param enabled: The enabled of this IdentityprovidersResult.
-        :type: bool
+        :type enabled: bool
         """
         self._enabled = enabled
 
@@ -165,7 +180,7 @@ class IdentityprovidersResult:
         身份提供商的联邦用户ID列表。
 
         :param remote_ids: The remote_ids of this IdentityprovidersResult.
-        :type: list[str]
+        :type remote_ids: list[str]
         """
         self._remote_ids = remote_ids
 
@@ -175,7 +190,7 @@ class IdentityprovidersResult:
 
 
         :return: The links of this IdentityprovidersResult.
-        :rtype: IdentityprovidersLinks
+        :rtype: :class:`huaweicloudsdkiam.v3.IdentityprovidersLinks`
         """
         return self._links
 
@@ -185,7 +200,7 @@ class IdentityprovidersResult:
 
 
         :param links: The links of this IdentityprovidersResult.
-        :type: IdentityprovidersLinks
+        :type links: :class:`huaweicloudsdkiam.v3.IdentityprovidersLinks`
         """
         self._links = links
 

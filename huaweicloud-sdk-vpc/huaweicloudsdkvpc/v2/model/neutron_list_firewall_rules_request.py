@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NeutronListFirewallRulesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class NeutronListFirewallRulesRequest:
     }
 
     def __init__(self, marker=None, limit=None, id=None, name=None, description=None, action=None, tenant_id=None):
-        """NeutronListFirewallRulesRequest - a model defined in huaweicloud sdk"""
+        """NeutronListFirewallRulesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param marker: 分页查询起始的资源ID，为空时查询第一页
+        :type marker: str
+        :param limit: 每页返回的个数
+        :type limit: int
+        :param id: 使用网络ACL规则ID过滤网络ACL规则
+        :type id: list[str]
+        :param name: 使用网络ACL规则name过滤网络ACL规则
+        :type name: list[str]
+        :param description: 使用网络ACL规则的description过滤网络ACL规则
+        :type description: list[str]
+        :param action: 使用action过滤查询网络ACL规则
+        :type action: str
+        :param tenant_id: 使用tenant_id过滤查询网络ACL规则
+        :type tenant_id: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class NeutronListFirewallRulesRequest:
         分页查询起始的资源ID，为空时查询第一页
 
         :param marker: The marker of this NeutronListFirewallRulesRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -110,7 +127,7 @@ class NeutronListFirewallRulesRequest:
         每页返回的个数
 
         :param limit: The limit of this NeutronListFirewallRulesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -132,7 +149,7 @@ class NeutronListFirewallRulesRequest:
         使用网络ACL规则ID过滤网络ACL规则
 
         :param id: The id of this NeutronListFirewallRulesRequest.
-        :type: list[str]
+        :type id: list[str]
         """
         self._id = id
 
@@ -154,7 +171,7 @@ class NeutronListFirewallRulesRequest:
         使用网络ACL规则name过滤网络ACL规则
 
         :param name: The name of this NeutronListFirewallRulesRequest.
-        :type: list[str]
+        :type name: list[str]
         """
         self._name = name
 
@@ -176,7 +193,7 @@ class NeutronListFirewallRulesRequest:
         使用网络ACL规则的description过滤网络ACL规则
 
         :param description: The description of this NeutronListFirewallRulesRequest.
-        :type: list[str]
+        :type description: list[str]
         """
         self._description = description
 
@@ -198,7 +215,7 @@ class NeutronListFirewallRulesRequest:
         使用action过滤查询网络ACL规则
 
         :param action: The action of this NeutronListFirewallRulesRequest.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -220,7 +237,7 @@ class NeutronListFirewallRulesRequest:
         使用tenant_id过滤查询网络ACL规则
 
         :param tenant_id: The tenant_id of this NeutronListFirewallRulesRequest.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 

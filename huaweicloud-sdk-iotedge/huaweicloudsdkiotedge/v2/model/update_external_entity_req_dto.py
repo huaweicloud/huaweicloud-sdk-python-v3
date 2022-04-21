@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateExternalEntityReqDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateExternalEntityReqDTO:
     }
 
     def __init__(self, protocol=None, connection_type=None, mqtt_connection_info=None):
-        """UpdateExternalEntityReqDTO - a model defined in huaweicloud sdk"""
+        """UpdateExternalEntityReqDTO
+
+        The model defined in huaweicloud sdk
+
+        :param protocol: 连接外部实体的协议类型
+        :type protocol: str
+        :param connection_type: 连接类型
+        :type connection_type: str
+        :param mqtt_connection_info: 
+        :type mqtt_connection_info: :class:`huaweicloudsdkiotedge.v2.MqttConnectionInfo`
+        """
         
         
 
@@ -66,7 +75,7 @@ class UpdateExternalEntityReqDTO:
         连接外部实体的协议类型
 
         :param protocol: The protocol of this UpdateExternalEntityReqDTO.
-        :type: str
+        :type protocol: str
         """
         self._protocol = protocol
 
@@ -88,7 +97,7 @@ class UpdateExternalEntityReqDTO:
         连接类型
 
         :param connection_type: The connection_type of this UpdateExternalEntityReqDTO.
-        :type: str
+        :type connection_type: str
         """
         self._connection_type = connection_type
 
@@ -98,7 +107,7 @@ class UpdateExternalEntityReqDTO:
 
 
         :return: The mqtt_connection_info of this UpdateExternalEntityReqDTO.
-        :rtype: MqttConnectionInfo
+        :rtype: :class:`huaweicloudsdkiotedge.v2.MqttConnectionInfo`
         """
         return self._mqtt_connection_info
 
@@ -108,7 +117,7 @@ class UpdateExternalEntityReqDTO:
 
 
         :param mqtt_connection_info: The mqtt_connection_info of this UpdateExternalEntityReqDTO.
-        :type: MqttConnectionInfo
+        :type mqtt_connection_info: :class:`huaweicloudsdkiotedge.v2.MqttConnectionInfo`
         """
         self._mqtt_connection_info = mqtt_connection_info
 

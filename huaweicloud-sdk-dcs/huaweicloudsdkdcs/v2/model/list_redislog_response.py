@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRedislogResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListRedislogResponse(SdkResponse):
     }
 
     def __init__(self, total_num=None, file_list=None):
-        """ListRedislogResponse - a model defined in huaweicloud sdk"""
+        """ListRedislogResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total_num: 总数
+        :type total_num: int
+        :param file_list: 运行日志列表
+        :type file_list: list[:class:`huaweicloudsdkdcs.v2.RunlogItem`]
+        """
         
         super(ListRedislogResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListRedislogResponse(SdkResponse):
         总数
 
         :param total_num: The total_num of this ListRedislogResponse.
-        :type: int
+        :type total_num: int
         """
         self._total_num = total_num
 
@@ -74,7 +81,7 @@ class ListRedislogResponse(SdkResponse):
         运行日志列表
 
         :return: The file_list of this ListRedislogResponse.
-        :rtype: list[RunlogItem]
+        :rtype: list[:class:`huaweicloudsdkdcs.v2.RunlogItem`]
         """
         return self._file_list
 
@@ -85,7 +92,7 @@ class ListRedislogResponse(SdkResponse):
         运行日志列表
 
         :param file_list: The file_list of this ListRedislogResponse.
-        :type: list[RunlogItem]
+        :type file_list: list[:class:`huaweicloudsdkdcs.v2.RunlogItem`]
         """
         self._file_list = file_list
 

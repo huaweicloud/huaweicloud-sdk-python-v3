@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TaxInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class TaxInfo:
     }
 
     def __init__(self, tax_class=None, tax_rate=None, sub_tax_class=None, tax_amount=None):
-        """TaxInfo - a model defined in huaweicloud sdk"""
+        """TaxInfo
+
+        The model defined in huaweicloud sdk
+
+        :param tax_class: 税种。 VATISSWHTGST
+        :type tax_class: str
+        :param tax_rate: 税率。
+        :type tax_rate: str
+        :param sub_tax_class: 税种子类。 PISCOFINSCGSTSGSTIGSTISSWHTVAT
+        :type sub_tax_class: str
+        :param tax_amount: 税金金额。 单位：美元
+        :type tax_amount: float
+        """
         
         
 
@@ -73,7 +84,7 @@ class TaxInfo:
         税种。 VATISSWHTGST
 
         :param tax_class: The tax_class of this TaxInfo.
-        :type: str
+        :type tax_class: str
         """
         self._tax_class = tax_class
 
@@ -95,7 +106,7 @@ class TaxInfo:
         税率。
 
         :param tax_rate: The tax_rate of this TaxInfo.
-        :type: str
+        :type tax_rate: str
         """
         self._tax_rate = tax_rate
 
@@ -117,7 +128,7 @@ class TaxInfo:
         税种子类。 PISCOFINSCGSTSGSTIGSTISSWHTVAT
 
         :param sub_tax_class: The sub_tax_class of this TaxInfo.
-        :type: str
+        :type sub_tax_class: str
         """
         self._sub_tax_class = sub_tax_class
 
@@ -139,7 +150,7 @@ class TaxInfo:
         税金金额。 单位：美元
 
         :param tax_amount: The tax_amount of this TaxInfo.
-        :type: float
+        :type tax_amount: float
         """
         self._tax_amount = tax_amount
 

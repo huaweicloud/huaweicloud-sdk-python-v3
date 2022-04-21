@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchFailure:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class BatchFailure:
     }
 
     def __init__(self, api_id=None, api_name=None, error_code=None, error_msg=None):
-        """BatchFailure - a model defined in huaweicloud sdk"""
+        """BatchFailure
+
+        The model defined in huaweicloud sdk
+
+        :param api_id: 操作失败的API ID
+        :type api_id: str
+        :param api_name: 操作失败的APi名称
+        :type api_name: str
+        :param error_code: 操作失败的错误码
+        :type error_code: str
+        :param error_msg: 操作失败的错误信息
+        :type error_msg: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class BatchFailure:
         操作失败的API ID
 
         :param api_id: The api_id of this BatchFailure.
-        :type: str
+        :type api_id: str
         """
         self._api_id = api_id
 
@@ -95,7 +106,7 @@ class BatchFailure:
         操作失败的APi名称
 
         :param api_name: The api_name of this BatchFailure.
-        :type: str
+        :type api_name: str
         """
         self._api_name = api_name
 
@@ -117,7 +128,7 @@ class BatchFailure:
         操作失败的错误码
 
         :param error_code: The error_code of this BatchFailure.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -139,7 +150,7 @@ class BatchFailure:
         操作失败的错误信息
 
         :param error_msg: The error_msg of this BatchFailure.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 

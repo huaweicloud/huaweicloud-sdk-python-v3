@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Geo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class Geo:
     }
 
     def __init__(self, latitude=None, longitude=None, city_code=None, country_code=None):
-        """Geo - a model defined in huaweicloud sdk"""
+        """Geo
+
+        The model defined in huaweicloud sdk
+
+        :param latitude: 纬度。
+        :type latitude: float
+        :param longitude: 经度。
+        :type longitude: float
+        :param city_code: 城市编码。
+        :type city_code: str
+        :param country_code: 国家简码ISO 3166-1 alpha-2，例如：CN、US、DE、IT、SG。
+        :type country_code: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class Geo:
         纬度。
 
         :param latitude: The latitude of this Geo.
-        :type: float
+        :type latitude: float
         """
         self._latitude = latitude
 
@@ -95,7 +106,7 @@ class Geo:
         经度。
 
         :param longitude: The longitude of this Geo.
-        :type: float
+        :type longitude: float
         """
         self._longitude = longitude
 
@@ -117,7 +128,7 @@ class Geo:
         城市编码。
 
         :param city_code: The city_code of this Geo.
-        :type: str
+        :type city_code: str
         """
         self._city_code = city_code
 
@@ -139,7 +150,7 @@ class Geo:
         国家简码ISO 3166-1 alpha-2，例如：CN、US、DE、IT、SG。
 
         :param country_code: The country_code of this Geo.
-        :type: str
+        :type country_code: str
         """
         self._country_code = country_code
 

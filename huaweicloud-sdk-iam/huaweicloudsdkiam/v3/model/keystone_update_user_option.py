@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneUpdateUserOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class KeystoneUpdateUserOption:
     }
 
     def __init__(self, domain_id=None, name=None, password=None, enabled=None, description=None, pwd_status=None):
-        """KeystoneUpdateUserOption - a model defined in huaweicloud sdk"""
+        """KeystoneUpdateUserOption
+
+        The model defined in huaweicloud sdk
+
+        :param domain_id: IAM用户所属账号ID。
+        :type domain_id: str
+        :param name: IAM用户新用户名，长度5~32之间，首位不能为数字，特殊字符只能包含下划线“_”、中划线“-”和空格。
+        :type name: str
+        :param password: IAM用户密码。 - 系统默认密码最小长度为6位字符，在6-32位之间支持用户自定义密码长度。 - 至少包含以下四种字符中的两种： 大写字母、小写字母、数字和特殊字符。 - 不能包含手机号和邮箱。 - 必须满足账户设置中密码策略的要求。 - 新密码不能与当前密码相同。
+        :type password: str
+        :param enabled: 是否启用IAM用户。true为启用，false为停用，默认为true。
+        :type enabled: bool
+        :param description: IAM用户新描述信息。
+        :type description: str
+        :param pwd_status: IAM用户密码状态。true:需要修改密码,false:正常。
+        :type pwd_status: bool
+        """
         
         
 
@@ -83,7 +98,7 @@ class KeystoneUpdateUserOption:
         IAM用户所属账号ID。
 
         :param domain_id: The domain_id of this KeystoneUpdateUserOption.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -105,7 +120,7 @@ class KeystoneUpdateUserOption:
         IAM用户新用户名，长度5~32之间，首位不能为数字，特殊字符只能包含下划线“_”、中划线“-”和空格。
 
         :param name: The name of this KeystoneUpdateUserOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -127,7 +142,7 @@ class KeystoneUpdateUserOption:
         IAM用户密码。 - 系统默认密码最小长度为6位字符，在6-32位之间支持用户自定义密码长度。 - 至少包含以下四种字符中的两种： 大写字母、小写字母、数字和特殊字符。 - 不能包含手机号和邮箱。 - 必须满足账户设置中密码策略的要求。 - 新密码不能与当前密码相同。
 
         :param password: The password of this KeystoneUpdateUserOption.
-        :type: str
+        :type password: str
         """
         self._password = password
 
@@ -149,7 +164,7 @@ class KeystoneUpdateUserOption:
         是否启用IAM用户。true为启用，false为停用，默认为true。
 
         :param enabled: The enabled of this KeystoneUpdateUserOption.
-        :type: bool
+        :type enabled: bool
         """
         self._enabled = enabled
 
@@ -171,7 +186,7 @@ class KeystoneUpdateUserOption:
         IAM用户新描述信息。
 
         :param description: The description of this KeystoneUpdateUserOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -193,7 +208,7 @@ class KeystoneUpdateUserOption:
         IAM用户密码状态。true:需要修改密码,false:正常。
 
         :param pwd_status: The pwd_status of this KeystoneUpdateUserOption.
-        :type: bool
+        :type pwd_status: bool
         """
         self._pwd_status = pwd_status
 

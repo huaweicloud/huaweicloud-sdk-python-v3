@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SetRepoRoleResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class SetRepoRoleResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """SetRepoRoleResponse - a model defined in huaweicloud sdk"""
+        """SetRepoRoleResponse
+
+        The model defined in huaweicloud sdk
+
+        :param error: 
+        :type error: :class:`huaweicloudsdkcodehub.v3.Error`
+        :param result: 
+        :type result: :class:`huaweicloudsdkcodehub.v3.Empty`
+        :param status: 响应状态
+        :type status: str
+        """
         
         super(SetRepoRoleResponse, self).__init__()
 
@@ -56,7 +65,7 @@ class SetRepoRoleResponse(SdkResponse):
 
 
         :return: The error of this SetRepoRoleResponse.
-        :rtype: Error
+        :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
         """
         return self._error
 
@@ -66,7 +75,7 @@ class SetRepoRoleResponse(SdkResponse):
 
 
         :param error: The error of this SetRepoRoleResponse.
-        :type: Error
+        :type error: :class:`huaweicloudsdkcodehub.v3.Error`
         """
         self._error = error
 
@@ -76,7 +85,7 @@ class SetRepoRoleResponse(SdkResponse):
 
 
         :return: The result of this SetRepoRoleResponse.
-        :rtype: Empty
+        :rtype: :class:`huaweicloudsdkcodehub.v3.Empty`
         """
         return self._result
 
@@ -86,7 +95,7 @@ class SetRepoRoleResponse(SdkResponse):
 
 
         :param result: The result of this SetRepoRoleResponse.
-        :type: Empty
+        :type result: :class:`huaweicloudsdkcodehub.v3.Empty`
         """
         self._result = result
 
@@ -108,7 +117,7 @@ class SetRepoRoleResponse(SdkResponse):
         响应状态
 
         :param status: The status of this SetRepoRoleResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 

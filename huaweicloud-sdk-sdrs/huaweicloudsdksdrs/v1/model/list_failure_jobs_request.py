@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListFailureJobsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListFailureJobsRequest:
     }
 
     def __init__(self, failure_status=None, resource_name=None, server_group_id=None, resource_type=None, limit=None, offset=None):
-        """ListFailureJobsRequest - a model defined in huaweicloud sdk"""
+        """ListFailureJobsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param failure_status: 失败任务状态。createFail：表示创建失败。deleteFail：表示删除失败。attachFail：表示挂载失败。detachFail：表示卸载失败。expandFail：表示扩容失败。resizeFail：表示变更规格失败。startFail：表示开启保护失败。stopFail：表示停止保护失败。reverseFail：表示切换失败。failoverFail：表示故障切换失败。reprotectFail : 表示重保护失败。
+        :type failure_status: str
+        :param resource_name: 保护组资源名称。
+        :type resource_name: str
+        :param server_group_id: 保护组ID。
+        :type server_group_id: str
+        :param resource_type: 资源类型。server_groups：表示保护组。protected_instances：表示保护实例。replications：表示复制对。disaster_recovery_drills：表示容灾演练。
+        :type resource_type: str
+        :param limit: 每次请求返回结果个数限制。取值范围为[0,1000]的正整数，默认值为1000。
+        :type limit: int
+        :param offset: 每次请求开始的下标，即偏移量，默认值为0。offset必须为数字，不能为负数。
+        :type offset: int
+        """
         
         
 
@@ -83,7 +98,7 @@ class ListFailureJobsRequest:
         失败任务状态。createFail：表示创建失败。deleteFail：表示删除失败。attachFail：表示挂载失败。detachFail：表示卸载失败。expandFail：表示扩容失败。resizeFail：表示变更规格失败。startFail：表示开启保护失败。stopFail：表示停止保护失败。reverseFail：表示切换失败。failoverFail：表示故障切换失败。reprotectFail : 表示重保护失败。
 
         :param failure_status: The failure_status of this ListFailureJobsRequest.
-        :type: str
+        :type failure_status: str
         """
         self._failure_status = failure_status
 
@@ -105,7 +120,7 @@ class ListFailureJobsRequest:
         保护组资源名称。
 
         :param resource_name: The resource_name of this ListFailureJobsRequest.
-        :type: str
+        :type resource_name: str
         """
         self._resource_name = resource_name
 
@@ -127,7 +142,7 @@ class ListFailureJobsRequest:
         保护组ID。
 
         :param server_group_id: The server_group_id of this ListFailureJobsRequest.
-        :type: str
+        :type server_group_id: str
         """
         self._server_group_id = server_group_id
 
@@ -149,7 +164,7 @@ class ListFailureJobsRequest:
         资源类型。server_groups：表示保护组。protected_instances：表示保护实例。replications：表示复制对。disaster_recovery_drills：表示容灾演练。
 
         :param resource_type: The resource_type of this ListFailureJobsRequest.
-        :type: str
+        :type resource_type: str
         """
         self._resource_type = resource_type
 
@@ -171,7 +186,7 @@ class ListFailureJobsRequest:
         每次请求返回结果个数限制。取值范围为[0,1000]的正整数，默认值为1000。
 
         :param limit: The limit of this ListFailureJobsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -193,7 +208,7 @@ class ListFailureJobsRequest:
         每次请求开始的下标，即偏移量，默认值为0。offset必须为数字，不能为负数。
 
         :param offset: The offset of this ListFailureJobsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 

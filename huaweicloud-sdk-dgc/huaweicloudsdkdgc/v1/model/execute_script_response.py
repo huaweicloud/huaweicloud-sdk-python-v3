@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExecuteScriptResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ExecuteScriptResponse(SdkResponse):
     }
 
     def __init__(self, instance_id=None):
-        """ExecuteScriptResponse - a model defined in huaweicloud sdk"""
+        """ExecuteScriptResponse
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 
+        :type instance_id: str
+        """
         
         super(ExecuteScriptResponse, self).__init__()
 
@@ -56,7 +61,7 @@ class ExecuteScriptResponse(SdkResponse):
 
 
         :param instance_id: The instance_id of this ExecuteScriptResponse.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCertificatesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class ListCertificatesRequest:
     }
 
     def __init__(self, limit=None, marker=None, page_reverse=None, id=None, name=None, description=None, type=None, domain=None, private_key=None, certificate=None):
-        """ListCertificatesRequest - a model defined in huaweicloud sdk"""
+        """ListCertificatesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 每页返回的个数。 取值范围：0~intmax。
+        :type limit: int
+        :param marker: 分页查询起始的证书id，为空时为查询第一页。 仅当和limit一起使用时生效
+        :type marker: str
+        :param page_reverse: 分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。 仅当和limit一起使用时生效。
+        :type page_reverse: str
+        :param id: SSL证书ID。
+        :type id: str
+        :param name: SSL证书的名称。
+        :type name: str
+        :param description: 证书描述SSL证书描述。
+        :type description: str
+        :param type: SSL证书的类型。默认值：server；取值范围：server：服务端证书；client：客户端证书；
+        :type type: str
+        :param domain: 服务端证书所签的域名。默认值：null；取值范围：普通域名由若干字符串组成，总长度为0-1024，字符串间以\&quot;.\&quot;分割，单个字符串长度不超过63个字符，只能包含英文字母、数字或\&quot;-\&quot;，且必须以字母或数字开头和结尾。泛域名在普通域名的基础上仅允许首字母为\&quot;*\&quot;。该字段仅type为server时有效。
+        :type domain: str
+        :param private_key: PEM格式的服务端私有密钥。
+        :type private_key: str
+        :param certificate: PEM格式的服务端公有密钥或者用于认证客户端证书的CA证书，由type字段区分。
+        :type certificate: str
+        """
         
         
 
@@ -103,7 +126,7 @@ class ListCertificatesRequest:
         每页返回的个数。 取值范围：0~intmax。
 
         :param limit: The limit of this ListCertificatesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -125,7 +148,7 @@ class ListCertificatesRequest:
         分页查询起始的证书id，为空时为查询第一页。 仅当和limit一起使用时生效
 
         :param marker: The marker of this ListCertificatesRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -147,7 +170,7 @@ class ListCertificatesRequest:
         分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。 仅当和limit一起使用时生效。
 
         :param page_reverse: The page_reverse of this ListCertificatesRequest.
-        :type: str
+        :type page_reverse: str
         """
         self._page_reverse = page_reverse
 
@@ -169,7 +192,7 @@ class ListCertificatesRequest:
         SSL证书ID。
 
         :param id: The id of this ListCertificatesRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -191,7 +214,7 @@ class ListCertificatesRequest:
         SSL证书的名称。
 
         :param name: The name of this ListCertificatesRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -213,7 +236,7 @@ class ListCertificatesRequest:
         证书描述SSL证书描述。
 
         :param description: The description of this ListCertificatesRequest.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -235,7 +258,7 @@ class ListCertificatesRequest:
         SSL证书的类型。默认值：server；取值范围：server：服务端证书；client：客户端证书；
 
         :param type: The type of this ListCertificatesRequest.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -257,7 +280,7 @@ class ListCertificatesRequest:
         服务端证书所签的域名。默认值：null；取值范围：普通域名由若干字符串组成，总长度为0-1024，字符串间以\".\"分割，单个字符串长度不超过63个字符，只能包含英文字母、数字或\"-\"，且必须以字母或数字开头和结尾。泛域名在普通域名的基础上仅允许首字母为\"*\"。该字段仅type为server时有效。
 
         :param domain: The domain of this ListCertificatesRequest.
-        :type: str
+        :type domain: str
         """
         self._domain = domain
 
@@ -279,7 +302,7 @@ class ListCertificatesRequest:
         PEM格式的服务端私有密钥。
 
         :param private_key: The private_key of this ListCertificatesRequest.
-        :type: str
+        :type private_key: str
         """
         self._private_key = private_key
 
@@ -301,7 +324,7 @@ class ListCertificatesRequest:
         PEM格式的服务端公有密钥或者用于认证客户端证书的CA证书，由type字段区分。
 
         :param certificate: The certificate of this ListCertificatesRequest.
-        :type: str
+        :type certificate: str
         """
         self._certificate = certificate
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteScalingTagInfoRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class DeleteScalingTagInfoRequest:
     }
 
     def __init__(self, resource_type=None, resource_id=None, body=None):
-        """DeleteScalingTagInfoRequest - a model defined in huaweicloud sdk"""
+        """DeleteScalingTagInfoRequest
+
+        The model defined in huaweicloud sdk
+
+        :param resource_type: 资源类型，枚举类：scaling_group_tag。scaling_group_tag表示资源类型为伸缩组。
+        :type resource_type: str
+        :param resource_id: 资源ID。
+        :type resource_id: str
+        :param body: Body of the DeleteScalingTagInfoRequest
+        :type body: :class:`huaweicloudsdkas.v1.DeleteTagsOption`
+        """
         
         
 
@@ -66,7 +75,7 @@ class DeleteScalingTagInfoRequest:
         资源类型，枚举类：scaling_group_tag。scaling_group_tag表示资源类型为伸缩组。
 
         :param resource_type: The resource_type of this DeleteScalingTagInfoRequest.
-        :type: str
+        :type resource_type: str
         """
         self._resource_type = resource_type
 
@@ -88,7 +97,7 @@ class DeleteScalingTagInfoRequest:
         资源ID。
 
         :param resource_id: The resource_id of this DeleteScalingTagInfoRequest.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -98,7 +107,7 @@ class DeleteScalingTagInfoRequest:
 
 
         :return: The body of this DeleteScalingTagInfoRequest.
-        :rtype: DeleteTagsOption
+        :rtype: :class:`huaweicloudsdkas.v1.DeleteTagsOption`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class DeleteScalingTagInfoRequest:
 
 
         :param body: The body of this DeleteScalingTagInfoRequest.
-        :type: DeleteTagsOption
+        :type body: :class:`huaweicloudsdkas.v1.DeleteTagsOption`
         """
         self._body = body
 

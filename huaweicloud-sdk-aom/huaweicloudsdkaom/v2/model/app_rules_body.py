@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AppRulesBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class AppRulesBody:
     }
 
     def __init__(self, app_rules=None):
-        """AppRulesBody - a model defined in huaweicloud sdk"""
+        """AppRulesBody
+
+        The model defined in huaweicloud sdk
+
+        :param app_rules: 服务参数。
+        :type app_rules: list[:class:`huaweicloudsdkaom.v2.AppRules`]
+        """
         
         
 
@@ -47,7 +52,7 @@ class AppRulesBody:
         服务参数。
 
         :return: The app_rules of this AppRulesBody.
-        :rtype: list[AppRules]
+        :rtype: list[:class:`huaweicloudsdkaom.v2.AppRules`]
         """
         return self._app_rules
 
@@ -58,7 +63,7 @@ class AppRulesBody:
         服务参数。
 
         :param app_rules: The app_rules of this AppRulesBody.
-        :type: list[AppRules]
+        :type app_rules: list[:class:`huaweicloudsdkaom.v2.AppRules`]
         """
         self._app_rules = app_rules
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PriorityBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class PriorityBody:
     }
 
     def __init__(self, slave_priority_weight=None):
-        """PriorityBody - a model defined in huaweicloud sdk"""
+        """PriorityBody
+
+        The model defined in huaweicloud sdk
+
+        :param slave_priority_weight: 副本优先级，取值范围是0到100，0为默认禁止倒换。
+        :type slave_priority_weight: int
+        """
         
         
 
@@ -57,7 +62,7 @@ class PriorityBody:
         副本优先级，取值范围是0到100，0为默认禁止倒换。
 
         :param slave_priority_weight: The slave_priority_weight of this PriorityBody.
-        :type: int
+        :type slave_priority_weight: int
         """
         self._slave_priority_weight = slave_priority_weight
 

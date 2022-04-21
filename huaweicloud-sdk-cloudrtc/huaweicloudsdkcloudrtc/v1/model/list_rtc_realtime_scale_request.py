@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRtcRealtimeScaleRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class ListRtcRealtimeScaleRequest:
     }
 
     def __init__(self, authorization=None, x_sdk_date=None, x_project_id=None, project_id=None, app=None, room_id=None, metric=None, start_time=None, end_time=None):
-        """ListRtcRealtimeScaleRequest - a model defined in huaweicloud sdk"""
+        """ListRtcRealtimeScaleRequest
+
+        The model defined in huaweicloud sdk
+
+        :param authorization: 使用AK/SK方式认证时必选，携带的鉴权信息。 
+        :type authorization: str
+        :param x_sdk_date: 使用AK/SK方式认证时必选，请求的发生时间。 
+        :type x_sdk_date: str
+        :param x_project_id: 使用AK/SK方式认证时必选，携带项目ID信息，与路径参数中的项目ID相同。 
+        :type x_project_id: str
+        :param project_id: 项目ID，获取方法请参考[获取项目ID](rtc_07_0015.xml)。 
+        :type project_id: str
+        :param app: 应用标识 
+        :type app: str
+        :param room_id: 房间ID 
+        :type room_id: str
+        :param metric: 查询的数据类型  OnlineUsers:在线用户数;  RoomCount:在线房间数; 
+        :type metric: str
+        :param start_time: 查询起始时间。UTC时间，格式：YYYY-MM-DDThh:mm:ssZ，如2020-04-23T06:00:00Z，不写默认读取过去1小时数据数据。 
+        :type start_time: str
+        :param end_time: 查询结束时间。UTC时间，格式：YYYY-MM-DDThh:mm:ssZ，如2020-04-23T07:00:00Z，不写默认为当前时间。 
+        :type end_time: str
+        """
         
         
 
@@ -95,7 +116,7 @@ class ListRtcRealtimeScaleRequest:
         使用AK/SK方式认证时必选，携带的鉴权信息。 
 
         :param authorization: The authorization of this ListRtcRealtimeScaleRequest.
-        :type: str
+        :type authorization: str
         """
         self._authorization = authorization
 
@@ -117,7 +138,7 @@ class ListRtcRealtimeScaleRequest:
         使用AK/SK方式认证时必选，请求的发生时间。 
 
         :param x_sdk_date: The x_sdk_date of this ListRtcRealtimeScaleRequest.
-        :type: str
+        :type x_sdk_date: str
         """
         self._x_sdk_date = x_sdk_date
 
@@ -139,7 +160,7 @@ class ListRtcRealtimeScaleRequest:
         使用AK/SK方式认证时必选，携带项目ID信息，与路径参数中的项目ID相同。 
 
         :param x_project_id: The x_project_id of this ListRtcRealtimeScaleRequest.
-        :type: str
+        :type x_project_id: str
         """
         self._x_project_id = x_project_id
 
@@ -161,7 +182,7 @@ class ListRtcRealtimeScaleRequest:
         项目ID，获取方法请参考[获取项目ID](rtc_07_0015.xml)。 
 
         :param project_id: The project_id of this ListRtcRealtimeScaleRequest.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -183,7 +204,7 @@ class ListRtcRealtimeScaleRequest:
         应用标识 
 
         :param app: The app of this ListRtcRealtimeScaleRequest.
-        :type: str
+        :type app: str
         """
         self._app = app
 
@@ -205,7 +226,7 @@ class ListRtcRealtimeScaleRequest:
         房间ID 
 
         :param room_id: The room_id of this ListRtcRealtimeScaleRequest.
-        :type: str
+        :type room_id: str
         """
         self._room_id = room_id
 
@@ -227,7 +248,7 @@ class ListRtcRealtimeScaleRequest:
         查询的数据类型  OnlineUsers:在线用户数;  RoomCount:在线房间数; 
 
         :param metric: The metric of this ListRtcRealtimeScaleRequest.
-        :type: str
+        :type metric: str
         """
         self._metric = metric
 
@@ -249,7 +270,7 @@ class ListRtcRealtimeScaleRequest:
         查询起始时间。UTC时间，格式：YYYY-MM-DDThh:mm:ssZ，如2020-04-23T06:00:00Z，不写默认读取过去1小时数据数据。 
 
         :param start_time: The start_time of this ListRtcRealtimeScaleRequest.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -271,7 +292,7 @@ class ListRtcRealtimeScaleRequest:
         查询结束时间。UTC时间，格式：YYYY-MM-DDThh:mm:ssZ，如2020-04-23T07:00:00Z，不写默认为当前时间。 
 
         :param end_time: The end_time of this ListRtcRealtimeScaleRequest.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 

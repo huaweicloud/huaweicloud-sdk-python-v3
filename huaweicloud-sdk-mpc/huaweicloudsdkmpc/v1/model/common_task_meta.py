@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CommonTaskMeta:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class CommonTaskMeta:
     }
 
     def __init__(self, task_id=None, status=None, create_time=None, start_time=None, end_time=None, error_code=None, description=None, user_data=None):
-        """CommonTaskMeta - a model defined in huaweicloud sdk"""
+        """CommonTaskMeta
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 任务ID 
+        :type task_id: str
+        :param status: 任务状态。  取值如下： - INIT：初始状态。 - WAITING：等待启动。 - PROCESSING：处理中。 - SUCCEED：处理成功。 - FAILED：处理失败。 - CANCELED：已取消。 
+        :type status: str
+        :param create_time: 任务创建时间 
+        :type create_time: str
+        :param start_time: 任务启动时间 
+        :type start_time: str
+        :param end_time: 任务结束时间 
+        :type end_time: str
+        :param error_code: 任务的返回码。 
+        :type error_code: str
+        :param description: 错误描述 
+        :type description: str
+        :param user_data: 用户数据。 
+        :type user_data: str
+        """
         
         
 
@@ -93,7 +112,7 @@ class CommonTaskMeta:
         任务ID 
 
         :param task_id: The task_id of this CommonTaskMeta.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -115,7 +134,7 @@ class CommonTaskMeta:
         任务状态。  取值如下： - INIT：初始状态。 - WAITING：等待启动。 - PROCESSING：处理中。 - SUCCEED：处理成功。 - FAILED：处理失败。 - CANCELED：已取消。 
 
         :param status: The status of this CommonTaskMeta.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -137,7 +156,7 @@ class CommonTaskMeta:
         任务创建时间 
 
         :param create_time: The create_time of this CommonTaskMeta.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -159,7 +178,7 @@ class CommonTaskMeta:
         任务启动时间 
 
         :param start_time: The start_time of this CommonTaskMeta.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -181,7 +200,7 @@ class CommonTaskMeta:
         任务结束时间 
 
         :param end_time: The end_time of this CommonTaskMeta.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -203,7 +222,7 @@ class CommonTaskMeta:
         任务的返回码。 
 
         :param error_code: The error_code of this CommonTaskMeta.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -225,7 +244,7 @@ class CommonTaskMeta:
         错误描述 
 
         :param description: The description of this CommonTaskMeta.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -247,7 +266,7 @@ class CommonTaskMeta:
         用户数据。 
 
         :param user_data: The user_data of this CommonTaskMeta.
-        :type: str
+        :type user_data: str
         """
         self._user_data = user_data
 

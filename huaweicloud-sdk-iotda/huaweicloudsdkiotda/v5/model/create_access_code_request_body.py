@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateAccessCodeRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateAccessCodeRequestBody:
     }
 
     def __init__(self, type=None):
-        """CreateAccessCodeRequestBody - a model defined in huaweicloud sdk"""
+        """CreateAccessCodeRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param type: **参数说明**：接入凭证类型，默认为AMQP的接入凭证类型。 **取值范围**： - AMQP 
+        :type type: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class CreateAccessCodeRequestBody:
         **参数说明**：接入凭证类型，默认为AMQP的接入凭证类型。 **取值范围**： - AMQP 
 
         :param type: The type of this CreateAccessCodeRequestBody.
-        :type: str
+        :type type: str
         """
         self._type = type
 

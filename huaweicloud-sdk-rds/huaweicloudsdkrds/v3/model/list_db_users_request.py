@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDbUsersRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListDbUsersRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, page=None, limit=None):
-        """ListDbUsersRequest - a model defined in huaweicloud sdk"""
+        """ListDbUsersRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言
+        :type x_language: str
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param page: 分页页码，从1开始。
+        :type page: int
+        :param limit: 每页数据条数。取值范围[1, 100]。
+        :type limit: int
+        """
         
         
 
@@ -70,7 +81,7 @@ class ListDbUsersRequest:
         语言
 
         :param x_language: The x_language of this ListDbUsersRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -92,7 +103,7 @@ class ListDbUsersRequest:
         实例ID。
 
         :param instance_id: The instance_id of this ListDbUsersRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -114,7 +125,7 @@ class ListDbUsersRequest:
         分页页码，从1开始。
 
         :param page: The page of this ListDbUsersRequest.
-        :type: int
+        :type page: int
         """
         self._page = page
 
@@ -136,7 +147,7 @@ class ListDbUsersRequest:
         每页数据条数。取值范围[1, 100]。
 
         :param limit: The limit of this ListDbUsersRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ValidateSignatureResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ValidateSignatureResponse(SdkResponse):
     }
 
     def __init__(self, key_id=None, signature_vaild=None):
-        """ValidateSignatureResponse - a model defined in huaweicloud sdk"""
+        """ValidateSignatureResponse
+
+        The model defined in huaweicloud sdk
+
+        :param key_id: 密钥ID。
+        :type key_id: str
+        :param signature_vaild: 签名验证合法性，“true”表示验证签名合法，“false”表示验证签名非法。
+        :type signature_vaild: bool
+        """
         
         super(ValidateSignatureResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ValidateSignatureResponse(SdkResponse):
         密钥ID。
 
         :param key_id: The key_id of this ValidateSignatureResponse.
-        :type: str
+        :type key_id: str
         """
         self._key_id = key_id
 
@@ -85,7 +92,7 @@ class ValidateSignatureResponse(SdkResponse):
         签名验证合法性，“true”表示验证签名合法，“false”表示验证签名非法。
 
         :param signature_vaild: The signature_vaild of this ValidateSignatureResponse.
-        :type: bool
+        :type signature_vaild: bool
         """
         self._signature_vaild = signature_vaild
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPublicipsByTagsRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListPublicipsByTagsRequestBody:
     }
 
     def __init__(self, tags=None, limit=None, offset=None, action=None, matches=None):
-        """ListPublicipsByTagsRequestBody - a model defined in huaweicloud sdk"""
+        """ListPublicipsByTagsRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param tags: 包含标签，最多包含10个key。  每个key下面的value最多10个，结构体不能缺失，key不能为空或者空字符串。  Key不能重复，同一个key中values不能重复。
+        :type tags: list[:class:`huaweicloudsdkeip.v2.TagReq`]
+        :param limit: 查询记录数（action为count时无此参数）
+        :type limit: int
+        :param offset: 索引位置， 从offset指定的下一条数据开始查询。 查询第一页数据时，不需要传入此参数，查询后续页码数据时，将查询前一页数据时响应体中的值带入此参数（action为count时无此参数）
+        :type offset: int
+        :param action: 操作标识：  filter分页查询  count查询总数
+        :type action: str
+        :param matches: 搜索字段，key为要匹配的字段，当前仅支持resource_name。value为匹配的值。此字段为固定字典值。
+        :type matches: list[:class:`huaweicloudsdkeip.v2.MatchReq`]
+        """
         
         
 
@@ -66,7 +79,7 @@ class ListPublicipsByTagsRequestBody:
         包含标签，最多包含10个key。  每个key下面的value最多10个，结构体不能缺失，key不能为空或者空字符串。  Key不能重复，同一个key中values不能重复。
 
         :return: The tags of this ListPublicipsByTagsRequestBody.
-        :rtype: list[TagReq]
+        :rtype: list[:class:`huaweicloudsdkeip.v2.TagReq`]
         """
         return self._tags
 
@@ -77,7 +90,7 @@ class ListPublicipsByTagsRequestBody:
         包含标签，最多包含10个key。  每个key下面的value最多10个，结构体不能缺失，key不能为空或者空字符串。  Key不能重复，同一个key中values不能重复。
 
         :param tags: The tags of this ListPublicipsByTagsRequestBody.
-        :type: list[TagReq]
+        :type tags: list[:class:`huaweicloudsdkeip.v2.TagReq`]
         """
         self._tags = tags
 
@@ -99,7 +112,7 @@ class ListPublicipsByTagsRequestBody:
         查询记录数（action为count时无此参数）
 
         :param limit: The limit of this ListPublicipsByTagsRequestBody.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -121,7 +134,7 @@ class ListPublicipsByTagsRequestBody:
         索引位置， 从offset指定的下一条数据开始查询。 查询第一页数据时，不需要传入此参数，查询后续页码数据时，将查询前一页数据时响应体中的值带入此参数（action为count时无此参数）
 
         :param offset: The offset of this ListPublicipsByTagsRequestBody.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -143,7 +156,7 @@ class ListPublicipsByTagsRequestBody:
         操作标识：  filter分页查询  count查询总数
 
         :param action: The action of this ListPublicipsByTagsRequestBody.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -154,7 +167,7 @@ class ListPublicipsByTagsRequestBody:
         搜索字段，key为要匹配的字段，当前仅支持resource_name。value为匹配的值。此字段为固定字典值。
 
         :return: The matches of this ListPublicipsByTagsRequestBody.
-        :rtype: list[MatchReq]
+        :rtype: list[:class:`huaweicloudsdkeip.v2.MatchReq`]
         """
         return self._matches
 
@@ -165,7 +178,7 @@ class ListPublicipsByTagsRequestBody:
         搜索字段，key为要匹配的字段，当前仅支持resource_name。value为匹配的值。此字段为固定字典值。
 
         :param matches: The matches of this ListPublicipsByTagsRequestBody.
-        :type: list[MatchReq]
+        :type matches: list[:class:`huaweicloudsdkeip.v2.MatchReq`]
         """
         self._matches = matches
 

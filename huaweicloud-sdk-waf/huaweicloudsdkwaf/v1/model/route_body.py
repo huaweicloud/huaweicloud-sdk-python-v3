@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RouteBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class RouteBody:
     }
 
     def __init__(self, cname=None, name=None, servers=None):
-        """RouteBody - a model defined in huaweicloud sdk"""
+        """RouteBody
+
+        The model defined in huaweicloud sdk
+
+        :param cname: cname后缀
+        :type cname: str
+        :param name: 名称
+        :type name: str
+        :param servers: 路由信息
+        :type servers: list[:class:`huaweicloudsdkwaf.v1.RouteServerBody`]
+        """
         
         
 
@@ -68,7 +77,7 @@ class RouteBody:
         cname后缀
 
         :param cname: The cname of this RouteBody.
-        :type: str
+        :type cname: str
         """
         self._cname = cname
 
@@ -90,7 +99,7 @@ class RouteBody:
         名称
 
         :param name: The name of this RouteBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -101,7 +110,7 @@ class RouteBody:
         路由信息
 
         :return: The servers of this RouteBody.
-        :rtype: list[RouteServerBody]
+        :rtype: list[:class:`huaweicloudsdkwaf.v1.RouteServerBody`]
         """
         return self._servers
 
@@ -112,7 +121,7 @@ class RouteBody:
         路由信息
 
         :param servers: The servers of this RouteBody.
-        :type: list[RouteServerBody]
+        :type servers: list[:class:`huaweicloudsdkwaf.v1.RouteServerBody`]
         """
         self._servers = servers
 

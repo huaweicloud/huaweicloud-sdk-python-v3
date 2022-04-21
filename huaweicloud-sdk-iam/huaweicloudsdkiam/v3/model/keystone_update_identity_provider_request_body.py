@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneUpdateIdentityProviderRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class KeystoneUpdateIdentityProviderRequestBody:
     }
 
     def __init__(self, identity_provider=None):
-        """KeystoneUpdateIdentityProviderRequestBody - a model defined in huaweicloud sdk"""
+        """KeystoneUpdateIdentityProviderRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param identity_provider: 
+        :type identity_provider: :class:`huaweicloudsdkiam.v3.UpdateIdentityproviderOption`
+        """
         
         
 
@@ -45,7 +50,7 @@ class KeystoneUpdateIdentityProviderRequestBody:
 
 
         :return: The identity_provider of this KeystoneUpdateIdentityProviderRequestBody.
-        :rtype: UpdateIdentityproviderOption
+        :rtype: :class:`huaweicloudsdkiam.v3.UpdateIdentityproviderOption`
         """
         return self._identity_provider
 
@@ -55,7 +60,7 @@ class KeystoneUpdateIdentityProviderRequestBody:
 
 
         :param identity_provider: The identity_provider of this KeystoneUpdateIdentityProviderRequestBody.
-        :type: UpdateIdentityproviderOption
+        :type identity_provider: :class:`huaweicloudsdkiam.v3.UpdateIdentityproviderOption`
         """
         self._identity_provider = identity_provider
 

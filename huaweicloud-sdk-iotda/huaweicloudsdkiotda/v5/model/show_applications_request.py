@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowApplicationsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowApplicationsRequest:
     }
 
     def __init__(self, instance_id=None, default_app=None):
-        """ShowApplicationsRequest - a model defined in huaweicloud sdk"""
+        """ShowApplicationsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
+        :type instance_id: str
+        :param default_app: **参数说明**：默认资源空间标识，不携带则查询所有资源空间。 **取值范围**： - true：查询默认资源空间。 - false：查询非默认资源空间。
+        :type default_app: bool
+        """
         
         
 
@@ -63,7 +70,7 @@ class ShowApplicationsRequest:
         **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
         :param instance_id: The instance_id of this ShowApplicationsRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -85,7 +92,7 @@ class ShowApplicationsRequest:
         **参数说明**：默认资源空间标识，不携带则查询所有资源空间。 **取值范围**： - true：查询默认资源空间。 - false：查询非默认资源空间。
 
         :param default_app: The default_app of this ShowApplicationsRequest.
-        :type: bool
+        :type default_app: bool
         """
         self._default_app = default_app
 

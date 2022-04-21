@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListWhiteblackipRuleRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListWhiteblackipRuleRequest:
     }
 
     def __init__(self, enterprise_project_id=None, policy_id=None, page=None, pagesize=None, name=None):
-        """ListWhiteblackipRuleRequest - a model defined in huaweicloud sdk"""
+        """ListWhiteblackipRuleRequest
+
+        The model defined in huaweicloud sdk
+
+        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        :type enterprise_project_id: str
+        :param policy_id: 防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
+        :type policy_id: str
+        :param page: 分页查询时，返回第几页数据。范围0-100000，默认值为1，表示返回第1页数据。
+        :type page: int
+        :param pagesize: 分页查询时，每页包含多少条结果。范围1-100，默认值为10，表示每页包含10条结果。
+        :type pagesize: int
+        :param name: 黑白名单规则名称
+        :type name: str
+        """
         
         
 
@@ -77,7 +90,7 @@ class ListWhiteblackipRuleRequest:
         您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this ListWhiteblackipRuleRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -99,7 +112,7 @@ class ListWhiteblackipRuleRequest:
         防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
 
         :param policy_id: The policy_id of this ListWhiteblackipRuleRequest.
-        :type: str
+        :type policy_id: str
         """
         self._policy_id = policy_id
 
@@ -121,7 +134,7 @@ class ListWhiteblackipRuleRequest:
         分页查询时，返回第几页数据。范围0-100000，默认值为1，表示返回第1页数据。
 
         :param page: The page of this ListWhiteblackipRuleRequest.
-        :type: int
+        :type page: int
         """
         self._page = page
 
@@ -143,7 +156,7 @@ class ListWhiteblackipRuleRequest:
         分页查询时，每页包含多少条结果。范围1-100，默认值为10，表示每页包含10条结果。
 
         :param pagesize: The pagesize of this ListWhiteblackipRuleRequest.
-        :type: int
+        :type pagesize: int
         """
         self._pagesize = pagesize
 
@@ -165,7 +178,7 @@ class ListWhiteblackipRuleRequest:
         黑白名单规则名称
 
         :param name: The name of this ListWhiteblackipRuleRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 

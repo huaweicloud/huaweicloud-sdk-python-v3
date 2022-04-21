@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDatastoresRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListDatastoresRequest:
     }
 
     def __init__(self, x_language=None):
-        """ListDatastoresRequest - a model defined in huaweicloud sdk"""
+        """ListDatastoresRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言
+        :type x_language: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class ListDatastoresRequest:
         语言
 
         :param x_language: The x_language of this ListDatastoresRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 

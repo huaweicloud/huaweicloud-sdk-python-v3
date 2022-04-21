@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateAgencyOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class CreateAgencyOption:
     }
 
     def __init__(self, name=None, domain_id=None, trust_domain_id=None, trust_domain_name=None, description=None, duration=None):
-        """CreateAgencyOption - a model defined in huaweicloud sdk"""
+        """CreateAgencyOption
+
+        The model defined in huaweicloud sdk
+
+        :param name: 委托名，长度不大于64位。
+        :type name: str
+        :param domain_id: 委托方账号ID。
+        :type domain_id: str
+        :param trust_domain_id: 被委托方账号ID。trust_domain_id和trust_domain_name至少填写一个，若都填写优先校验trust_domain_name。
+        :type trust_domain_id: str
+        :param trust_domain_name: 被委托方账号名。trust_domain_id和trust_domain_name至少填写一个，若都填写优先校验trust_domain_name。
+        :type trust_domain_name: str
+        :param description: 委托描述信息，长度不大于255位。
+        :type description: str
+        :param duration: 委托的期限。取值为“FOREVER\&quot;表示委托的期限为永久，取值为\&quot;ONEDAY\&quot;表示委托的期限为一天。不填写该参数则默认为\&quot;null\&quot;也表示委托的期限为永久。
+        :type duration: str
+        """
         
         
 
@@ -81,7 +96,7 @@ class CreateAgencyOption:
         委托名，长度不大于64位。
 
         :param name: The name of this CreateAgencyOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -103,7 +118,7 @@ class CreateAgencyOption:
         委托方账号ID。
 
         :param domain_id: The domain_id of this CreateAgencyOption.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -125,7 +140,7 @@ class CreateAgencyOption:
         被委托方账号ID。trust_domain_id和trust_domain_name至少填写一个，若都填写优先校验trust_domain_name。
 
         :param trust_domain_id: The trust_domain_id of this CreateAgencyOption.
-        :type: str
+        :type trust_domain_id: str
         """
         self._trust_domain_id = trust_domain_id
 
@@ -147,7 +162,7 @@ class CreateAgencyOption:
         被委托方账号名。trust_domain_id和trust_domain_name至少填写一个，若都填写优先校验trust_domain_name。
 
         :param trust_domain_name: The trust_domain_name of this CreateAgencyOption.
-        :type: str
+        :type trust_domain_name: str
         """
         self._trust_domain_name = trust_domain_name
 
@@ -169,7 +184,7 @@ class CreateAgencyOption:
         委托描述信息，长度不大于255位。
 
         :param description: The description of this CreateAgencyOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -191,7 +206,7 @@ class CreateAgencyOption:
         委托的期限。取值为“FOREVER\"表示委托的期限为永久，取值为\"ONEDAY\"表示委托的期限为一天。不填写该参数则默认为\"null\"也表示委托的期限为永久。
 
         :param duration: The duration of this CreateAgencyOption.
-        :type: str
+        :type duration: str
         """
         self._duration = duration
 

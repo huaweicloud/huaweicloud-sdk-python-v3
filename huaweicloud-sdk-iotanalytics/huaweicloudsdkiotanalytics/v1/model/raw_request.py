@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RawRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class RawRequest:
     }
 
     def __init__(self, time_span=None, tags=None, property_filter=None, property_names=None, limit=None):
-        """RawRequest - a model defined in huaweicloud sdk"""
+        """RawRequest
+
+        The model defined in huaweicloud sdk
+
+        :param time_span: 
+        :type time_span: :class:`huaweicloudsdkiotanalytics.v1.TimeSpanDT`
+        :param tags: 对property按指定tags标签进行过滤查询，填入资产标签属性的属性名与属性值，不可为空，例如 {\&quot;tagPropertyA\&quot;: \&quot;id0001\&quot;}；注意，标签过滤只对打上标签时刻之后的数据生效，打标签之前的数据不能通过标签过滤
+        :type tags: dict(str, object)
+        :param property_filter: 属性过滤器，最多5个
+        :type property_filter: list[:class:`huaweicloudsdkiotanalytics.v1.PropertyFilter`]
+        :param property_names: 待查询的资产属性列表
+        :type property_names: list[str]
+        :param limit: 返回值个数限制
+        :type limit: int
+        """
         
         
 
@@ -65,7 +78,7 @@ class RawRequest:
 
 
         :return: The time_span of this RawRequest.
-        :rtype: TimeSpanDT
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.TimeSpanDT`
         """
         return self._time_span
 
@@ -75,7 +88,7 @@ class RawRequest:
 
 
         :param time_span: The time_span of this RawRequest.
-        :type: TimeSpanDT
+        :type time_span: :class:`huaweicloudsdkiotanalytics.v1.TimeSpanDT`
         """
         self._time_span = time_span
 
@@ -97,7 +110,7 @@ class RawRequest:
         对property按指定tags标签进行过滤查询，填入资产标签属性的属性名与属性值，不可为空，例如 {\"tagPropertyA\": \"id0001\"}；注意，标签过滤只对打上标签时刻之后的数据生效，打标签之前的数据不能通过标签过滤
 
         :param tags: The tags of this RawRequest.
-        :type: dict(str, object)
+        :type tags: dict(str, object)
         """
         self._tags = tags
 
@@ -108,7 +121,7 @@ class RawRequest:
         属性过滤器，最多5个
 
         :return: The property_filter of this RawRequest.
-        :rtype: list[PropertyFilter]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.PropertyFilter`]
         """
         return self._property_filter
 
@@ -119,7 +132,7 @@ class RawRequest:
         属性过滤器，最多5个
 
         :param property_filter: The property_filter of this RawRequest.
-        :type: list[PropertyFilter]
+        :type property_filter: list[:class:`huaweicloudsdkiotanalytics.v1.PropertyFilter`]
         """
         self._property_filter = property_filter
 
@@ -141,7 +154,7 @@ class RawRequest:
         待查询的资产属性列表
 
         :param property_names: The property_names of this RawRequest.
-        :type: list[str]
+        :type property_names: list[str]
         """
         self._property_names = property_names
 
@@ -163,7 +176,7 @@ class RawRequest:
         返回值个数限制
 
         :param limit: The limit of this RawRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

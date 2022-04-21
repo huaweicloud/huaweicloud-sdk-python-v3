@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTopAbnormalRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ListTopAbnormalRequest:
     }
 
     def __init__(self, enterprise_project_id=None, _from=None, to=None, top=None, code=None, hosts=None, instances=None):
-        """ListTopAbnormalRequest - a model defined in huaweicloud sdk"""
+        """ListTopAbnormalRequest
+
+        The model defined in huaweicloud sdk
+
+        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        :type enterprise_project_id: str
+        :param _from: 起始时间（13位毫秒时间戳），需要和to同时使用
+        :type _from: int
+        :param to: 结束时间（13位毫秒时间戳），需要和from同时使用
+        :type to: int
+        :param top: 要查询的前几的结果
+        :type top: int
+        :param code: 状态码
+        :type code: int
+        :param hosts: 要查询域名列表（通过ListHost接口查询）
+        :type hosts: str
+        :param instances: 要查询实例列表（仅独享模式涉及）
+        :type instances: str
+        """
         
         
 
@@ -86,7 +103,7 @@ class ListTopAbnormalRequest:
         您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this ListTopAbnormalRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -108,7 +125,7 @@ class ListTopAbnormalRequest:
         起始时间（13位毫秒时间戳），需要和to同时使用
 
         :param _from: The _from of this ListTopAbnormalRequest.
-        :type: int
+        :type _from: int
         """
         self.__from = _from
 
@@ -130,7 +147,7 @@ class ListTopAbnormalRequest:
         结束时间（13位毫秒时间戳），需要和from同时使用
 
         :param to: The to of this ListTopAbnormalRequest.
-        :type: int
+        :type to: int
         """
         self._to = to
 
@@ -152,7 +169,7 @@ class ListTopAbnormalRequest:
         要查询的前几的结果
 
         :param top: The top of this ListTopAbnormalRequest.
-        :type: int
+        :type top: int
         """
         self._top = top
 
@@ -174,7 +191,7 @@ class ListTopAbnormalRequest:
         状态码
 
         :param code: The code of this ListTopAbnormalRequest.
-        :type: int
+        :type code: int
         """
         self._code = code
 
@@ -196,7 +213,7 @@ class ListTopAbnormalRequest:
         要查询域名列表（通过ListHost接口查询）
 
         :param hosts: The hosts of this ListTopAbnormalRequest.
-        :type: str
+        :type hosts: str
         """
         self._hosts = hosts
 
@@ -218,7 +235,7 @@ class ListTopAbnormalRequest:
         要查询实例列表（仅独享模式涉及）
 
         :param instances: The instances of this ListTopAbnormalRequest.
-        :type: str
+        :type instances: str
         """
         self._instances = instances
 

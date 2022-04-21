@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ErrorDetailInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ErrorDetailInfo:
     }
 
     def __init__(self, failed=None):
-        """ErrorDetailInfo - a model defined in huaweicloud sdk"""
+        """ErrorDetailInfo
+
+        The model defined in huaweicloud sdk
+
+        :param failed: 批量操作失败的资源的详情信息
+        :type failed: list[:class:`huaweicloudsdkcloudtest.v1.ErrorCaseInfoBean`]
+        """
         
         
 
@@ -47,7 +52,7 @@ class ErrorDetailInfo:
         批量操作失败的资源的详情信息
 
         :return: The failed of this ErrorDetailInfo.
-        :rtype: list[ErrorCaseInfoBean]
+        :rtype: list[:class:`huaweicloudsdkcloudtest.v1.ErrorCaseInfoBean`]
         """
         return self._failed
 
@@ -58,7 +63,7 @@ class ErrorDetailInfo:
         批量操作失败的资源的详情信息
 
         :param failed: The failed of this ErrorDetailInfo.
-        :type: list[ErrorCaseInfoBean]
+        :type failed: list[:class:`huaweicloudsdkcloudtest.v1.ErrorCaseInfoBean`]
         """
         self._failed = failed
 

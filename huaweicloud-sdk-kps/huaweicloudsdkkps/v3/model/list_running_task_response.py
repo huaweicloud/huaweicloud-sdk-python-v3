@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRunningTaskResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListRunningTaskResponse(SdkResponse):
     }
 
     def __init__(self, total=None, tasks=None):
-        """ListRunningTaskResponse - a model defined in huaweicloud sdk"""
+        """ListRunningTaskResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 正在处理的任务总数。
+        :type total: int
+        :param tasks: 正在处理的任务列表。
+        :type tasks: list[:class:`huaweicloudsdkkps.v3.RunningTasks`]
+        """
         
         super(ListRunningTaskResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListRunningTaskResponse(SdkResponse):
         正在处理的任务总数。
 
         :param total: The total of this ListRunningTaskResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -74,7 +81,7 @@ class ListRunningTaskResponse(SdkResponse):
         正在处理的任务列表。
 
         :return: The tasks of this ListRunningTaskResponse.
-        :rtype: list[RunningTasks]
+        :rtype: list[:class:`huaweicloudsdkkps.v3.RunningTasks`]
         """
         return self._tasks
 
@@ -85,7 +92,7 @@ class ListRunningTaskResponse(SdkResponse):
         正在处理的任务列表。
 
         :param tasks: The tasks of this ListRunningTaskResponse.
-        :type: list[RunningTasks]
+        :type tasks: list[:class:`huaweicloudsdkkps.v3.RunningTasks`]
         """
         self._tasks = tasks
 

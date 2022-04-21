@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestChairViewReqBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class RestChairViewReqBody:
     }
 
     def __init__(self, view_type=None, participant_id=None, switch_time=None, status=None):
-        """RestChairViewReqBody - a model defined in huaweicloud sdk"""
+        """RestChairViewReqBody
+
+        The model defined in huaweicloud sdk
+
+        :param view_type: 主持人观看的画面类型。 - 0: 主持人轮询。 - 1: 主持人观看多画面。 - 2: 主持人选看会场。
+        :type view_type: int
+        :param participant_id: 被主持人选看的会场。 当为主持人选看会场时为必填参数。
+        :type participant_id: str
+        :param switch_time: 主持人轮询时，必填字段。 表示轮询间隔，单位：秒。 范围:[10-120]，默认值：30
+        :type switch_time: int
+        :param status: 主持人轮询时，必填字段。 - 0: 停止轮询。 - 1: 启动轮询。
+        :type status: int
+        """
         
         
 
@@ -72,7 +83,7 @@ class RestChairViewReqBody:
         主持人观看的画面类型。 - 0: 主持人轮询。 - 1: 主持人观看多画面。 - 2: 主持人选看会场。
 
         :param view_type: The view_type of this RestChairViewReqBody.
-        :type: int
+        :type view_type: int
         """
         self._view_type = view_type
 
@@ -94,7 +105,7 @@ class RestChairViewReqBody:
         被主持人选看的会场。 当为主持人选看会场时为必填参数。
 
         :param participant_id: The participant_id of this RestChairViewReqBody.
-        :type: str
+        :type participant_id: str
         """
         self._participant_id = participant_id
 
@@ -116,7 +127,7 @@ class RestChairViewReqBody:
         主持人轮询时，必填字段。 表示轮询间隔，单位：秒。 范围:[10-120]，默认值：30
 
         :param switch_time: The switch_time of this RestChairViewReqBody.
-        :type: int
+        :type switch_time: int
         """
         self._switch_time = switch_time
 
@@ -138,7 +149,7 @@ class RestChairViewReqBody:
         主持人轮询时，必填字段。 - 0: 停止轮询。 - 1: 启动轮询。
 
         :param status: The status of this RestChairViewReqBody.
-        :type: int
+        :type status: int
         """
         self._status = status
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NatGatewayResponseBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class NatGatewayResponseBody:
     }
 
     def __init__(self, id=None, tenant_id=None, name=None, description=None, spec=None, status=None, admin_state_up=None, created_at=None, router_id=None, internal_network_id=None, enterprise_project_id=None):
-        """NatGatewayResponseBody - a model defined in huaweicloud sdk"""
+        """NatGatewayResponseBody
+
+        The model defined in huaweicloud sdk
+
+        :param id: 公网NAT网关实例的ID。
+        :type id: str
+        :param tenant_id: 项目的ID。
+        :type tenant_id: str
+        :param name: 公网NAT网关实例的名字，长度限制为64。
+        :type name: str
+        :param description: 公网NAT网关实例的描述，长度限制为255。
+        :type description: str
+        :param spec: 公网NAT网关的规格。 取值为： “1”：小型，SNAT最大连接数10000 “2”：中型，SNAT最大连接数50000 “3”：大型，SNAT最大连接数200000 “4”：超大型，SNAT最大连接数1000000 
+        :type spec: str
+        :param status: 公网NAT网关实例的状态。
+        :type status: str
+        :param admin_state_up: 解冻/冻结状态。 取值范围： - \&quot;true\&quot;：解冻 - \&quot;false\&quot;：冻结
+        :type admin_state_up: bool
+        :param created_at: 公网NAT网关实例的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
+        :type created_at: datetime
+        :param router_id: VPC的id。
+        :type router_id: str
+        :param internal_network_id: 公网NAT网关下行口（DVR的下一跳）所属的network id。
+        :type internal_network_id: str
+        :param enterprise_project_id: 企业项目ID。 创建公网NAT网关实例时，关联的企业项目ID。
+        :type enterprise_project_id: str
+        """
         
         
 
@@ -97,7 +122,7 @@ class NatGatewayResponseBody:
         公网NAT网关实例的ID。
 
         :param id: The id of this NatGatewayResponseBody.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -119,7 +144,7 @@ class NatGatewayResponseBody:
         项目的ID。
 
         :param tenant_id: The tenant_id of this NatGatewayResponseBody.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 
@@ -141,7 +166,7 @@ class NatGatewayResponseBody:
         公网NAT网关实例的名字，长度限制为64。
 
         :param name: The name of this NatGatewayResponseBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -163,7 +188,7 @@ class NatGatewayResponseBody:
         公网NAT网关实例的描述，长度限制为255。
 
         :param description: The description of this NatGatewayResponseBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -185,7 +210,7 @@ class NatGatewayResponseBody:
         公网NAT网关的规格。 取值为： “1”：小型，SNAT最大连接数10000 “2”：中型，SNAT最大连接数50000 “3”：大型，SNAT最大连接数200000 “4”：超大型，SNAT最大连接数1000000 
 
         :param spec: The spec of this NatGatewayResponseBody.
-        :type: str
+        :type spec: str
         """
         self._spec = spec
 
@@ -207,7 +232,7 @@ class NatGatewayResponseBody:
         公网NAT网关实例的状态。
 
         :param status: The status of this NatGatewayResponseBody.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -229,7 +254,7 @@ class NatGatewayResponseBody:
         解冻/冻结状态。 取值范围： - \"true\"：解冻 - \"false\"：冻结
 
         :param admin_state_up: The admin_state_up of this NatGatewayResponseBody.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 
@@ -251,7 +276,7 @@ class NatGatewayResponseBody:
         公网NAT网关实例的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
 
         :param created_at: The created_at of this NatGatewayResponseBody.
-        :type: datetime
+        :type created_at: datetime
         """
         self._created_at = created_at
 
@@ -273,7 +298,7 @@ class NatGatewayResponseBody:
         VPC的id。
 
         :param router_id: The router_id of this NatGatewayResponseBody.
-        :type: str
+        :type router_id: str
         """
         self._router_id = router_id
 
@@ -295,7 +320,7 @@ class NatGatewayResponseBody:
         公网NAT网关下行口（DVR的下一跳）所属的network id。
 
         :param internal_network_id: The internal_network_id of this NatGatewayResponseBody.
-        :type: str
+        :type internal_network_id: str
         """
         self._internal_network_id = internal_network_id
 
@@ -317,7 +342,7 @@ class NatGatewayResponseBody:
         企业项目ID。 创建公网NAT网关实例时，关联的企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this NatGatewayResponseBody.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 

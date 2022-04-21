@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Encryption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class Encryption:
     }
 
     def __init__(self, hls_encrypt=None):
-        """Encryption - a model defined in huaweicloud sdk"""
+        """Encryption
+
+        The model defined in huaweicloud sdk
+
+        :param hls_encrypt: 
+        :type hls_encrypt: :class:`huaweicloudsdkmpc.v1.HlsEncrypt`
+        """
         
         
 
@@ -46,7 +51,7 @@ class Encryption:
 
 
         :return: The hls_encrypt of this Encryption.
-        :rtype: HlsEncrypt
+        :rtype: :class:`huaweicloudsdkmpc.v1.HlsEncrypt`
         """
         return self._hls_encrypt
 
@@ -56,7 +61,7 @@ class Encryption:
 
 
         :param hls_encrypt: The hls_encrypt of this Encryption.
-        :type: HlsEncrypt
+        :type hls_encrypt: :class:`huaweicloudsdkmpc.v1.HlsEncrypt`
         """
         self._hls_encrypt = hls_encrypt
 

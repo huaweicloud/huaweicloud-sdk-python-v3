@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteCustomLineRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteCustomLineRequest:
     }
 
     def __init__(self, line_id=None):
-        """DeleteCustomLineRequest - a model defined in huaweicloud sdk"""
+        """DeleteCustomLineRequest
+
+        The model defined in huaweicloud sdk
+
+        :param line_id: 解析线路ID。
+        :type line_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteCustomLineRequest:
         解析线路ID。
 
         :param line_id: The line_id of this DeleteCustomLineRequest.
-        :type: str
+        :type line_id: str
         """
         self._line_id = line_id
 

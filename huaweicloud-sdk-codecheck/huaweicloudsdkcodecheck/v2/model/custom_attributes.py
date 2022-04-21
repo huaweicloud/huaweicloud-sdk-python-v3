@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CustomAttributes:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CustomAttributes:
     }
 
     def __init__(self, attribute=None, rules=None):
-        """CustomAttributes - a model defined in huaweicloud sdk"""
+        """CustomAttributes
+
+        The model defined in huaweicloud sdk
+
+        :param attribute: 配置项属性，severity：为问题级别
+        :type attribute: str
+        :param rules: 规则详细
+        :type rules: list[:class:`huaweicloudsdkcodecheck.v2.CustomAttributesRule`]
+        """
         
         
 
@@ -63,7 +70,7 @@ class CustomAttributes:
         配置项属性，severity：为问题级别
 
         :param attribute: The attribute of this CustomAttributes.
-        :type: str
+        :type attribute: str
         """
         self._attribute = attribute
 
@@ -74,7 +81,7 @@ class CustomAttributes:
         规则详细
 
         :return: The rules of this CustomAttributes.
-        :rtype: list[CustomAttributesRule]
+        :rtype: list[:class:`huaweicloudsdkcodecheck.v2.CustomAttributesRule`]
         """
         return self._rules
 
@@ -85,7 +92,7 @@ class CustomAttributes:
         规则详细
 
         :param rules: The rules of this CustomAttributes.
-        :type: list[CustomAttributesRule]
+        :type rules: list[:class:`huaweicloudsdkcodecheck.v2.CustomAttributesRule`]
         """
         self._rules = rules
 

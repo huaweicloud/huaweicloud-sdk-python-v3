@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GetLogBackupReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class GetLogBackupReq:
     }
 
     def __init__(self, instance_name=None, level=None, log_type=None):
-        """GetLogBackupReq - a model defined in huaweicloud sdk"""
+        """GetLogBackupReq
+
+        The model defined in huaweicloud sdk
+
+        :param instance_name: 节点名称
+        :type instance_name: str
+        :param level: 日志级别。可查询的日志级别为：INFO，ERROR，DEBUG，WARN。
+        :type level: str
+        :param log_type: 日志类型。可查询的日志类型为：deprecation，indexingSlow，searchSlow， instance。
+        :type log_type: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class GetLogBackupReq:
         节点名称
 
         :param instance_name: The instance_name of this GetLogBackupReq.
-        :type: str
+        :type instance_name: str
         """
         self._instance_name = instance_name
 
@@ -87,7 +96,7 @@ class GetLogBackupReq:
         日志级别。可查询的日志级别为：INFO，ERROR，DEBUG，WARN。
 
         :param level: The level of this GetLogBackupReq.
-        :type: str
+        :type level: str
         """
         self._level = level
 
@@ -109,7 +118,7 @@ class GetLogBackupReq:
         日志类型。可查询的日志类型为：deprecation，indexingSlow，searchSlow， instance。
 
         :param log_type: The log_type of this GetLogBackupReq.
-        :type: str
+        :type log_type: str
         """
         self._log_type = log_type
 

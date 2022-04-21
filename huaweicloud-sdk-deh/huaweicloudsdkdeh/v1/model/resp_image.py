@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RespImage:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RespImage:
     }
 
     def __init__(self, id=None):
-        """RespImage - a model defined in huaweicloud sdk"""
+        """RespImage
+
+        The model defined in huaweicloud sdk
+
+        :param id: 弹性云服务器镜像ID。
+        :type id: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class RespImage:
         弹性云服务器镜像ID。
 
         :param id: The id of this RespImage.
-        :type: str
+        :type id: str
         """
         self._id = id
 

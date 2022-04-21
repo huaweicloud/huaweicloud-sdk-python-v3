@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateAnonymousAuthRandomRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -33,7 +32,15 @@ class CreateAnonymousAuthRandomRequest:
     }
 
     def __init__(self, conference_id=None, x_password=None):
-        """CreateAnonymousAuthRandomRequest - a model defined in huaweicloud sdk"""
+        """CreateAnonymousAuthRandomRequest
+
+        The model defined in huaweicloud sdk
+
+        :param conference_id: 会议ID。
+        :type conference_id: str
+        :param x_password: 会议密码。
+        :type x_password: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateAnonymousAuthRandomRequest:
         会议ID。
 
         :param conference_id: The conference_id of this CreateAnonymousAuthRandomRequest.
-        :type: str
+        :type conference_id: str
         """
         self._conference_id = conference_id
 
@@ -84,7 +91,7 @@ class CreateAnonymousAuthRandomRequest:
         会议密码。
 
         :param x_password: The x_password of this CreateAnonymousAuthRandomRequest.
-        :type: str
+        :type x_password: str
         """
         self._x_password = x_password
 

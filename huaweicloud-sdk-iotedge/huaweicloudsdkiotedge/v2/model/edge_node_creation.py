@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EdgeNodeCreation:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class EdgeNodeCreation:
     }
 
     def __init__(self, name=None, type=None, instance_id=None, space_id=None, resource_ids=None, security_level=None, storage_period=None, ai_card_type=None, log_configs=None, apps=None):
-        """EdgeNodeCreation - a model defined in huaweicloud sdk"""
+        """EdgeNodeCreation
+
+        The model defined in huaweicloud sdk
+
+        :param name: 边缘节点名称，只允许中、数字、英文大小写、中划线、下划线
+        :type name: str
+        :param type: 节点所属资源类型：advanced|standard
+        :type type: str
+        :param instance_id: 实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
+        :type instance_id: str
+        :param space_id: 资源空间id，对应IOTDA云服务接口参数中的app_id。
+        :type space_id: str
+        :param resource_ids: 资源id列表，创建节点时需绑定已购买的资源包，可以叠加节点功能。
+        :type resource_ids: list[str]
+        :param security_level: 节点的安全等级，MEDIUM边缘节数据上报不进行加密，HIGH对数据上报进行加密。
+        :type security_level: str
+        :param storage_period: 节点的存储周期，默认0天，取值范围0~7天，0天则不存储。
+        :type storage_period: int
+        :param ai_card_type: 华为AI加速卡类型，如NPU、GPU
+        :type ai_card_type: str
+        :param log_configs: 边缘节点在IEF日志配置参数
+        :type log_configs: list[:class:`huaweicloudsdkiotedge.v2.LogConfigDTO`]
+        :param apps: 用户预置第三方边缘应用
+        :type apps: list[:class:`huaweicloudsdkiotedge.v2.EdgeAppInstanceDTO`]
+        """
         
         
 
@@ -101,7 +124,7 @@ class EdgeNodeCreation:
         边缘节点名称，只允许中、数字、英文大小写、中划线、下划线
 
         :param name: The name of this EdgeNodeCreation.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -123,7 +146,7 @@ class EdgeNodeCreation:
         节点所属资源类型：advanced|standard
 
         :param type: The type of this EdgeNodeCreation.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -145,7 +168,7 @@ class EdgeNodeCreation:
         实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
         :param instance_id: The instance_id of this EdgeNodeCreation.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -167,7 +190,7 @@ class EdgeNodeCreation:
         资源空间id，对应IOTDA云服务接口参数中的app_id。
 
         :param space_id: The space_id of this EdgeNodeCreation.
-        :type: str
+        :type space_id: str
         """
         self._space_id = space_id
 
@@ -189,7 +212,7 @@ class EdgeNodeCreation:
         资源id列表，创建节点时需绑定已购买的资源包，可以叠加节点功能。
 
         :param resource_ids: The resource_ids of this EdgeNodeCreation.
-        :type: list[str]
+        :type resource_ids: list[str]
         """
         self._resource_ids = resource_ids
 
@@ -211,7 +234,7 @@ class EdgeNodeCreation:
         节点的安全等级，MEDIUM边缘节数据上报不进行加密，HIGH对数据上报进行加密。
 
         :param security_level: The security_level of this EdgeNodeCreation.
-        :type: str
+        :type security_level: str
         """
         self._security_level = security_level
 
@@ -233,7 +256,7 @@ class EdgeNodeCreation:
         节点的存储周期，默认0天，取值范围0~7天，0天则不存储。
 
         :param storage_period: The storage_period of this EdgeNodeCreation.
-        :type: int
+        :type storage_period: int
         """
         self._storage_period = storage_period
 
@@ -255,7 +278,7 @@ class EdgeNodeCreation:
         华为AI加速卡类型，如NPU、GPU
 
         :param ai_card_type: The ai_card_type of this EdgeNodeCreation.
-        :type: str
+        :type ai_card_type: str
         """
         self._ai_card_type = ai_card_type
 
@@ -266,7 +289,7 @@ class EdgeNodeCreation:
         边缘节点在IEF日志配置参数
 
         :return: The log_configs of this EdgeNodeCreation.
-        :rtype: list[LogConfigDTO]
+        :rtype: list[:class:`huaweicloudsdkiotedge.v2.LogConfigDTO`]
         """
         return self._log_configs
 
@@ -277,7 +300,7 @@ class EdgeNodeCreation:
         边缘节点在IEF日志配置参数
 
         :param log_configs: The log_configs of this EdgeNodeCreation.
-        :type: list[LogConfigDTO]
+        :type log_configs: list[:class:`huaweicloudsdkiotedge.v2.LogConfigDTO`]
         """
         self._log_configs = log_configs
 
@@ -288,7 +311,7 @@ class EdgeNodeCreation:
         用户预置第三方边缘应用
 
         :return: The apps of this EdgeNodeCreation.
-        :rtype: list[EdgeAppInstanceDTO]
+        :rtype: list[:class:`huaweicloudsdkiotedge.v2.EdgeAppInstanceDTO`]
         """
         return self._apps
 
@@ -299,7 +322,7 @@ class EdgeNodeCreation:
         用户预置第三方边缘应用
 
         :param apps: The apps of this EdgeNodeCreation.
-        :type: list[EdgeAppInstanceDTO]
+        :type apps: list[:class:`huaweicloudsdkiotedge.v2.EdgeAppInstanceDTO`]
         """
         self._apps = apps
 

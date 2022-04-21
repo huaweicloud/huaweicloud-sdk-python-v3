@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ImportCertificateRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ImportCertificateRequestBody:
     }
 
     def __init__(self, name=None, certificate=None, certificate_chain=None, private_key=None, enterprise_project_id=None, enc_certificate=None, enc_private_key=None):
-        """ImportCertificateRequestBody - a model defined in huaweicloud sdk"""
+        """ImportCertificateRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param name: 证书名称。字符长度为0~63位。
+        :type name: str
+        :param certificate: 证书内容。回车换行需要使用转义字符\\n或者\\r\\n替换。
+        :type certificate: str
+        :param certificate_chain: 证书链。回车换行需要使用转义字符\\n或者\\r\\n替换。
+        :type certificate_chain: str
+        :param private_key: 证书私钥。 不能上传带有口令保护的私钥，回车换行需要使用转义字符\\n或者\\r\\n替换。
+        :type private_key: str
+        :param enterprise_project_id: 企业多项目ID。用户未开通企业多项目时，不需要输入该字段。 用户开通企业多项目时，查询资源可以输入该字段。 若用户不输入该字段，默认查询租户所有有权限的企业多项目下的资源。 此时“enterprise_project_id”取值为“all”。 若用户输入该字段，取值满足以下任一条件.  取值为“all”  取值为“0”  满足正则匹配：“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”
+        :type enterprise_project_id: str
+        :param enc_certificate: 可选参数，国密证书的加密证书内容。书回车换行需要使用转义字符\\n或者\\r\\n替换。
+        :type enc_certificate: str
+        :param enc_private_key: 可选参数，国密证书的加密私钥。 不能上传带有口令保护的私钥，回车换行需要使用转义字符\\n或者\\r\\n替换。
+        :type enc_private_key: str
+        """
         
         
 
@@ -84,7 +101,7 @@ class ImportCertificateRequestBody:
         证书名称。字符长度为0~63位。
 
         :param name: The name of this ImportCertificateRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -106,7 +123,7 @@ class ImportCertificateRequestBody:
         证书内容。回车换行需要使用转义字符\\n或者\\r\\n替换。
 
         :param certificate: The certificate of this ImportCertificateRequestBody.
-        :type: str
+        :type certificate: str
         """
         self._certificate = certificate
 
@@ -128,7 +145,7 @@ class ImportCertificateRequestBody:
         证书链。回车换行需要使用转义字符\\n或者\\r\\n替换。
 
         :param certificate_chain: The certificate_chain of this ImportCertificateRequestBody.
-        :type: str
+        :type certificate_chain: str
         """
         self._certificate_chain = certificate_chain
 
@@ -150,7 +167,7 @@ class ImportCertificateRequestBody:
         证书私钥。 不能上传带有口令保护的私钥，回车换行需要使用转义字符\\n或者\\r\\n替换。
 
         :param private_key: The private_key of this ImportCertificateRequestBody.
-        :type: str
+        :type private_key: str
         """
         self._private_key = private_key
 
@@ -172,7 +189,7 @@ class ImportCertificateRequestBody:
         企业多项目ID。用户未开通企业多项目时，不需要输入该字段。 用户开通企业多项目时，查询资源可以输入该字段。 若用户不输入该字段，默认查询租户所有有权限的企业多项目下的资源。 此时“enterprise_project_id”取值为“all”。 若用户输入该字段，取值满足以下任一条件.  取值为“all”  取值为“0”  满足正则匹配：“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”
 
         :param enterprise_project_id: The enterprise_project_id of this ImportCertificateRequestBody.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -194,7 +211,7 @@ class ImportCertificateRequestBody:
         可选参数，国密证书的加密证书内容。书回车换行需要使用转义字符\\n或者\\r\\n替换。
 
         :param enc_certificate: The enc_certificate of this ImportCertificateRequestBody.
-        :type: str
+        :type enc_certificate: str
         """
         self._enc_certificate = enc_certificate
 
@@ -216,7 +233,7 @@ class ImportCertificateRequestBody:
         可选参数，国密证书的加密私钥。 不能上传带有口令保护的私钥，回车换行需要使用转义字符\\n或者\\r\\n替换。
 
         :param enc_private_key: The enc_private_key of this ImportCertificateRequestBody.
-        :type: str
+        :type enc_private_key: str
         """
         self._enc_private_key = enc_private_key
 

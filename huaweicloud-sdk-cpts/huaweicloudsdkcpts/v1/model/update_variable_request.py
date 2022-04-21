@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateVariableRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateVariableRequest:
     }
 
     def __init__(self, test_suite_id=None, body=None):
-        """UpdateVariableRequest - a model defined in huaweicloud sdk"""
+        """UpdateVariableRequest
+
+        The model defined in huaweicloud sdk
+
+        :param test_suite_id: 测试工程id
+        :type test_suite_id: int
+        :param body: Body of the UpdateVariableRequest
+        :type body: list[:class:`huaweicloudsdkcpts.v1.UpdateVariableRequestBody`]
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateVariableRequest:
         测试工程id
 
         :param test_suite_id: The test_suite_id of this UpdateVariableRequest.
-        :type: int
+        :type test_suite_id: int
         """
         self._test_suite_id = test_suite_id
 
@@ -72,7 +79,7 @@ class UpdateVariableRequest:
 
 
         :return: The body of this UpdateVariableRequest.
-        :rtype: list[UpdateVariableRequestBody]
+        :rtype: list[:class:`huaweicloudsdkcpts.v1.UpdateVariableRequestBody`]
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateVariableRequest:
 
 
         :param body: The body of this UpdateVariableRequest.
-        :type: list[UpdateVariableRequestBody]
+        :type body: list[:class:`huaweicloudsdkcpts.v1.UpdateVariableRequestBody`]
         """
         self._body = body
 

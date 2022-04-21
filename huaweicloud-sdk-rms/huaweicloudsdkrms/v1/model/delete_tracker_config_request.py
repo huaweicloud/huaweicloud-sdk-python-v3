@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteTrackerConfigRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class DeleteTrackerConfigRequest:
     }
 
     def __init__(self):
-        """DeleteTrackerConfigRequest - a model defined in huaweicloud sdk"""
+        """DeleteTrackerConfigRequest
+
+        The model defined in huaweicloud sdk
+
+        """
         
         
         self.discriminator = None

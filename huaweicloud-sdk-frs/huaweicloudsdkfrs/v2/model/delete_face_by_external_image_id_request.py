@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteFaceByExternalImageIdRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteFaceByExternalImageIdRequest:
     }
 
     def __init__(self, face_set_name=None, external_image_id=None):
-        """DeleteFaceByExternalImageIdRequest - a model defined in huaweicloud sdk"""
+        """DeleteFaceByExternalImageIdRequest
+
+        The model defined in huaweicloud sdk
+
+        :param face_set_name: 人脸库名称。
+        :type face_set_name: str
+        :param external_image_id: external_image_id。
+        :type external_image_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class DeleteFaceByExternalImageIdRequest:
         人脸库名称。
 
         :param face_set_name: The face_set_name of this DeleteFaceByExternalImageIdRequest.
-        :type: str
+        :type face_set_name: str
         """
         self._face_set_name = face_set_name
 
@@ -83,7 +90,7 @@ class DeleteFaceByExternalImageIdRequest:
         external_image_id。
 
         :param external_image_id: The external_image_id of this DeleteFaceByExternalImageIdRequest.
-        :type: str
+        :type external_image_id: str
         """
         self._external_image_id = external_image_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NeutronCreateSecurityGroupRuleOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class NeutronCreateSecurityGroupRuleOption:
     }
 
     def __init__(self, description=None, direction=None, ethertype=None, port_range_max=None, port_range_min=None, protocol=None, remote_group_id=None, remote_ip_prefix=None, security_group_id=None):
-        """NeutronCreateSecurityGroupRuleOption - a model defined in huaweicloud sdk"""
+        """NeutronCreateSecurityGroupRuleOption
+
+        The model defined in huaweicloud sdk
+
+        :param description: 功能说明：安全组规则描述 取值范围：0-255个字符
+        :type description: str
+        :param direction: 功能说明：安全组规则方向 取值范围：ingress(入方向)或egress(出方向)
+        :type direction: str
+        :param ethertype: 功能说明：安全组规则网络类型 取值范围：IPv4或IPv6
+        :type ethertype: str
+        :param port_range_max: 最大端口，当协议类型为ICMP时，该值表示ICMP的code
+        :type port_range_max: int
+        :param port_range_min: 功能说明：最小端口，当协议类型为ICMP时，该值表示ICMP的type 约束：protocol为tcp和udp时，port_range_max和port_range_min必须同时输入，且port_range_max应大于等于port_range_min。protocol为icmp时，指定ICMP code（port_range_max）时，必须同时指定ICMP type（port_range_min）。
+        :type port_range_min: int
+        :param protocol: 功能说明：tcp/udp/icmp/icmpv6或IP协议编号（0~255） 约束：协议为icmpv6时，网络类型应该为IPv6；协议为icmp时，网络类型应该为IPv4
+        :type protocol: str
+        :param remote_group_id: 功能说明：目的安全组的ID
+        :type remote_group_id: str
+        :param remote_ip_prefix: 功能说明：目的端ip网段 取值范围：cidr格式，如10.10.0.0/16
+        :type remote_ip_prefix: str
+        :param security_group_id: 所属安全组ID
+        :type security_group_id: str
+        """
         
         
 
@@ -96,7 +117,7 @@ class NeutronCreateSecurityGroupRuleOption:
         功能说明：安全组规则描述 取值范围：0-255个字符
 
         :param description: The description of this NeutronCreateSecurityGroupRuleOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -118,7 +139,7 @@ class NeutronCreateSecurityGroupRuleOption:
         功能说明：安全组规则方向 取值范围：ingress(入方向)或egress(出方向)
 
         :param direction: The direction of this NeutronCreateSecurityGroupRuleOption.
-        :type: str
+        :type direction: str
         """
         self._direction = direction
 
@@ -140,7 +161,7 @@ class NeutronCreateSecurityGroupRuleOption:
         功能说明：安全组规则网络类型 取值范围：IPv4或IPv6
 
         :param ethertype: The ethertype of this NeutronCreateSecurityGroupRuleOption.
-        :type: str
+        :type ethertype: str
         """
         self._ethertype = ethertype
 
@@ -162,7 +183,7 @@ class NeutronCreateSecurityGroupRuleOption:
         最大端口，当协议类型为ICMP时，该值表示ICMP的code
 
         :param port_range_max: The port_range_max of this NeutronCreateSecurityGroupRuleOption.
-        :type: int
+        :type port_range_max: int
         """
         self._port_range_max = port_range_max
 
@@ -184,7 +205,7 @@ class NeutronCreateSecurityGroupRuleOption:
         功能说明：最小端口，当协议类型为ICMP时，该值表示ICMP的type 约束：protocol为tcp和udp时，port_range_max和port_range_min必须同时输入，且port_range_max应大于等于port_range_min。protocol为icmp时，指定ICMP code（port_range_max）时，必须同时指定ICMP type（port_range_min）。
 
         :param port_range_min: The port_range_min of this NeutronCreateSecurityGroupRuleOption.
-        :type: int
+        :type port_range_min: int
         """
         self._port_range_min = port_range_min
 
@@ -206,7 +227,7 @@ class NeutronCreateSecurityGroupRuleOption:
         功能说明：tcp/udp/icmp/icmpv6或IP协议编号（0~255） 约束：协议为icmpv6时，网络类型应该为IPv6；协议为icmp时，网络类型应该为IPv4
 
         :param protocol: The protocol of this NeutronCreateSecurityGroupRuleOption.
-        :type: str
+        :type protocol: str
         """
         self._protocol = protocol
 
@@ -228,7 +249,7 @@ class NeutronCreateSecurityGroupRuleOption:
         功能说明：目的安全组的ID
 
         :param remote_group_id: The remote_group_id of this NeutronCreateSecurityGroupRuleOption.
-        :type: str
+        :type remote_group_id: str
         """
         self._remote_group_id = remote_group_id
 
@@ -250,7 +271,7 @@ class NeutronCreateSecurityGroupRuleOption:
         功能说明：目的端ip网段 取值范围：cidr格式，如10.10.0.0/16
 
         :param remote_ip_prefix: The remote_ip_prefix of this NeutronCreateSecurityGroupRuleOption.
-        :type: str
+        :type remote_ip_prefix: str
         """
         self._remote_ip_prefix = remote_ip_prefix
 
@@ -272,7 +293,7 @@ class NeutronCreateSecurityGroupRuleOption:
         所属安全组ID
 
         :param security_group_id: The security_group_id of this NeutronCreateSecurityGroupRuleOption.
-        :type: str
+        :type security_group_id: str
         """
         self._security_group_id = security_group_id
 

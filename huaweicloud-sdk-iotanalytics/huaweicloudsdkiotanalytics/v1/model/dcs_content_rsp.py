@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DcsContentRsp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class DcsContentRsp:
     }
 
     def __init__(self, endpoint_service_id=None, endpoint_service_name=None, endpoint_ip=None, port=None, dcs_type=None, password=None):
-        """DcsContentRsp - a model defined in huaweicloud sdk"""
+        """DcsContentRsp
+
+        The model defined in huaweicloud sdk
+
+        :param endpoint_service_id: VPC-EP服务端id
+        :type endpoint_service_id: str
+        :param endpoint_service_name: VPC-EP服务端名称
+        :type endpoint_service_name: str
+        :param endpoint_ip: VPC-EP客户端IP
+        :type endpoint_ip: str
+        :param port: VPC-EP客户端Port
+        :type port: int
+        :param dcs_type: redis实例类型
+        :type dcs_type: str
+        :param password: redis访问密码
+        :type password: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class DcsContentRsp:
         VPC-EP服务端id
 
         :param endpoint_service_id: The endpoint_service_id of this DcsContentRsp.
-        :type: str
+        :type endpoint_service_id: str
         """
         self._endpoint_service_id = endpoint_service_id
 
@@ -105,7 +120,7 @@ class DcsContentRsp:
         VPC-EP服务端名称
 
         :param endpoint_service_name: The endpoint_service_name of this DcsContentRsp.
-        :type: str
+        :type endpoint_service_name: str
         """
         self._endpoint_service_name = endpoint_service_name
 
@@ -127,7 +142,7 @@ class DcsContentRsp:
         VPC-EP客户端IP
 
         :param endpoint_ip: The endpoint_ip of this DcsContentRsp.
-        :type: str
+        :type endpoint_ip: str
         """
         self._endpoint_ip = endpoint_ip
 
@@ -149,7 +164,7 @@ class DcsContentRsp:
         VPC-EP客户端Port
 
         :param port: The port of this DcsContentRsp.
-        :type: int
+        :type port: int
         """
         self._port = port
 
@@ -171,7 +186,7 @@ class DcsContentRsp:
         redis实例类型
 
         :param dcs_type: The dcs_type of this DcsContentRsp.
-        :type: str
+        :type dcs_type: str
         """
         self._dcs_type = dcs_type
 
@@ -193,7 +208,7 @@ class DcsContentRsp:
         redis访问密码
 
         :param password: The password of this DcsContentRsp.
-        :type: str
+        :type password: str
         """
         self._password = password
 

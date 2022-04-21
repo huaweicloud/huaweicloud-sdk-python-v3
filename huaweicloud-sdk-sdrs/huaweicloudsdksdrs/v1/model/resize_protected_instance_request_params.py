@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResizeProtectedInstanceRequestParams:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ResizeProtectedInstanceRequestParams:
     }
 
     def __init__(self, flavor_ref=None, production_flavor_ref=None, dr_flavor_ref=None, production_dedicated_host_id=None, dr_dedicated_host_id=None):
-        """ResizeProtectedInstanceRequestParams - a model defined in huaweicloud sdk"""
+        """ResizeProtectedInstanceRequestParams
+
+        The model defined in huaweicloud sdk
+
+        :param flavor_ref: 变更规格后，生产站点云服务器和容灾站点云服务器的flavor ID。可通过查询云服务器规格变更支持列表接口获取。 说明：系统支持同时变更生产站点云服务器和容灾站点云服务器的规格。如需同时变更，请使用flavorRef参数，变更规格后，生产站点云服务器和容灾站点云服务器的规格相同。
+        :type flavor_ref: str
+        :param production_flavor_ref: 变更规格后，生产站点云服务器的flavor ID。可通过查询云服务器规格变更支持列表接口获取。 说明：系统支持仅变更生产站点云服务器的规格。此时，请使用production_flavorRef参数。当flavorRef参数有值时，production_flavorRef参数不生效。
+        :type production_flavor_ref: str
+        :param dr_flavor_ref: 变更规格后，容灾站点云服务器的flavor ID。可通过查询云服务器规格变更支持列表接口获取。 说明：系统支持仅变更容灾站点云服务器的规格。此时，请使用dr_flavorRef参数。当flavorRef参数有值时，dr_flavorRef参数不生效。
+        :type dr_flavor_ref: str
+        :param production_dedicated_host_id: 新生产站点专属主机ID。 说明：生产站点云服务器在专属主机上时，变更规格需要指定此参数。可以指定为生产站点云服务器当前所在专属主机ID或其他专属主机ID。
+        :type production_dedicated_host_id: str
+        :param dr_dedicated_host_id: 新容灾站点专属主机ID。 说明：容灾站点云服务器在专属主机上时，变更规格需要指定此参数。可以指定为容灾站点云服务器当前所在专属主机ID或其他专属主机ID。
+        :type dr_dedicated_host_id: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class ResizeProtectedInstanceRequestParams:
         变更规格后，生产站点云服务器和容灾站点云服务器的flavor ID。可通过查询云服务器规格变更支持列表接口获取。 说明：系统支持同时变更生产站点云服务器和容灾站点云服务器的规格。如需同时变更，请使用flavorRef参数，变更规格后，生产站点云服务器和容灾站点云服务器的规格相同。
 
         :param flavor_ref: The flavor_ref of this ResizeProtectedInstanceRequestParams.
-        :type: str
+        :type flavor_ref: str
         """
         self._flavor_ref = flavor_ref
 
@@ -100,7 +113,7 @@ class ResizeProtectedInstanceRequestParams:
         变更规格后，生产站点云服务器的flavor ID。可通过查询云服务器规格变更支持列表接口获取。 说明：系统支持仅变更生产站点云服务器的规格。此时，请使用production_flavorRef参数。当flavorRef参数有值时，production_flavorRef参数不生效。
 
         :param production_flavor_ref: The production_flavor_ref of this ResizeProtectedInstanceRequestParams.
-        :type: str
+        :type production_flavor_ref: str
         """
         self._production_flavor_ref = production_flavor_ref
 
@@ -122,7 +135,7 @@ class ResizeProtectedInstanceRequestParams:
         变更规格后，容灾站点云服务器的flavor ID。可通过查询云服务器规格变更支持列表接口获取。 说明：系统支持仅变更容灾站点云服务器的规格。此时，请使用dr_flavorRef参数。当flavorRef参数有值时，dr_flavorRef参数不生效。
 
         :param dr_flavor_ref: The dr_flavor_ref of this ResizeProtectedInstanceRequestParams.
-        :type: str
+        :type dr_flavor_ref: str
         """
         self._dr_flavor_ref = dr_flavor_ref
 
@@ -144,7 +157,7 @@ class ResizeProtectedInstanceRequestParams:
         新生产站点专属主机ID。 说明：生产站点云服务器在专属主机上时，变更规格需要指定此参数。可以指定为生产站点云服务器当前所在专属主机ID或其他专属主机ID。
 
         :param production_dedicated_host_id: The production_dedicated_host_id of this ResizeProtectedInstanceRequestParams.
-        :type: str
+        :type production_dedicated_host_id: str
         """
         self._production_dedicated_host_id = production_dedicated_host_id
 
@@ -166,7 +179,7 @@ class ResizeProtectedInstanceRequestParams:
         新容灾站点专属主机ID。 说明：容灾站点云服务器在专属主机上时，变更规格需要指定此参数。可以指定为容灾站点云服务器当前所在专属主机ID或其他专属主机ID。
 
         :param dr_dedicated_host_id: The dr_dedicated_host_id of this ResizeProtectedInstanceRequestParams.
-        :type: str
+        :type dr_dedicated_host_id: str
         """
         self._dr_dedicated_host_id = dr_dedicated_host_id
 

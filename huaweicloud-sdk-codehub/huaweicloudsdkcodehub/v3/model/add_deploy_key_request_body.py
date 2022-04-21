@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddDeployKeyRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class AddDeployKeyRequestBody:
     }
 
     def __init__(self, application=None, can_push=None, key=None, key_title=None):
-        """AddDeployKeyRequestBody - a model defined in huaweicloud sdk"""
+        """AddDeployKeyRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param application: 部署key的来源
+        :type application: str
+        :param can_push: 部署key是否可以推送代码
+        :type can_push: bool
+        :param key: 部署key
+        :type key: str
+        :param key_title: 部署key名称
+        :type key_title: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class AddDeployKeyRequestBody:
         部署key的来源
 
         :param application: The application of this AddDeployKeyRequestBody.
-        :type: str
+        :type application: str
         """
         self._application = application
 
@@ -91,7 +102,7 @@ class AddDeployKeyRequestBody:
         部署key是否可以推送代码
 
         :param can_push: The can_push of this AddDeployKeyRequestBody.
-        :type: bool
+        :type can_push: bool
         """
         self._can_push = can_push
 
@@ -113,7 +124,7 @@ class AddDeployKeyRequestBody:
         部署key
 
         :param key: The key of this AddDeployKeyRequestBody.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -135,7 +146,7 @@ class AddDeployKeyRequestBody:
         部署key名称
 
         :param key_title: The key_title of this AddDeployKeyRequestBody.
-        :type: str
+        :type key_title: str
         """
         self._key_title = key_title
 

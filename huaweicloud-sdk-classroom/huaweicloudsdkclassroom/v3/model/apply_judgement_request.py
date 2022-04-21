@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApplyJudgementRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ApplyJudgementRequest:
     }
 
     def __init__(self, body=None):
-        """ApplyJudgementRequest - a model defined in huaweicloud sdk"""
+        """ApplyJudgementRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the ApplyJudgementRequest
+        :type body: :class:`huaweicloudsdkclassroom.v3.JudgementTaskRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class ApplyJudgementRequest:
 
 
         :return: The body of this ApplyJudgementRequest.
-        :rtype: JudgementTaskRequestBody
+        :rtype: :class:`huaweicloudsdkclassroom.v3.JudgementTaskRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class ApplyJudgementRequest:
 
 
         :param body: The body of this ApplyJudgementRequest.
-        :type: JudgementTaskRequestBody
+        :type body: :class:`huaweicloudsdkclassroom.v3.JudgementTaskRequestBody`
         """
         self._body = body
 

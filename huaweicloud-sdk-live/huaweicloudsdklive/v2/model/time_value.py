@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TimeValue:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class TimeValue:
     }
 
     def __init__(self, time=None, value=None):
-        """TimeValue - a model defined in huaweicloud sdk"""
+        """TimeValue
+
+        The model defined in huaweicloud sdk
+
+        :param time: 采样时间。日期格式按照ISO8601表示法，并使用UTC时间。格式为YYYY-MM-DDThh:mm:ssZ
+        :type time: str
+        :param value: 当前时间返回指定指标的值
+        :type value: int
+        """
         
         
 
@@ -63,7 +70,7 @@ class TimeValue:
         采样时间。日期格式按照ISO8601表示法，并使用UTC时间。格式为YYYY-MM-DDThh:mm:ssZ
 
         :param time: The time of this TimeValue.
-        :type: str
+        :type time: str
         """
         self._time = time
 
@@ -85,7 +92,7 @@ class TimeValue:
         当前时间返回指定指标的值
 
         :param value: The value of this TimeValue.
-        :type: int
+        :type value: int
         """
         self._value = value
 

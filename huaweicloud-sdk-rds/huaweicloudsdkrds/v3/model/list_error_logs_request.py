@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListErrorLogsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ListErrorLogsRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, start_date=None, end_date=None, offset=None, limit=None, level=None):
-        """ListErrorLogsRequest - a model defined in huaweicloud sdk"""
+        """ListErrorLogsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言
+        :type x_language: str
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param start_date: 开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        :type start_date: str
+        :param end_date: 结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。  只能查询当前时间前一个月内的错误日志。
+        :type end_date: str
+        :param offset: 页数偏移量，如1、2、3、4等，不填时默认为1。
+        :type offset: int
+        :param limit: 每页多少条记录，取值范围是1~100，不填时默认为10。
+        :type limit: int
+        :param level: 日志级别，默认为ALL。
+        :type level: str
+        """
         
         
 
@@ -85,7 +102,7 @@ class ListErrorLogsRequest:
         语言
 
         :param x_language: The x_language of this ListErrorLogsRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -107,7 +124,7 @@ class ListErrorLogsRequest:
         实例ID。
 
         :param instance_id: The instance_id of this ListErrorLogsRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -129,7 +146,7 @@ class ListErrorLogsRequest:
         开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
         :param start_date: The start_date of this ListErrorLogsRequest.
-        :type: str
+        :type start_date: str
         """
         self._start_date = start_date
 
@@ -151,7 +168,7 @@ class ListErrorLogsRequest:
         结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。  只能查询当前时间前一个月内的错误日志。
 
         :param end_date: The end_date of this ListErrorLogsRequest.
-        :type: str
+        :type end_date: str
         """
         self._end_date = end_date
 
@@ -173,7 +190,7 @@ class ListErrorLogsRequest:
         页数偏移量，如1、2、3、4等，不填时默认为1。
 
         :param offset: The offset of this ListErrorLogsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -195,7 +212,7 @@ class ListErrorLogsRequest:
         每页多少条记录，取值范围是1~100，不填时默认为10。
 
         :param limit: The limit of this ListErrorLogsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -217,7 +234,7 @@ class ListErrorLogsRequest:
         日志级别，默认为ALL。
 
         :param level: The level of this ListErrorLogsRequest.
-        :type: str
+        :type level: str
         """
         self._level = level
 

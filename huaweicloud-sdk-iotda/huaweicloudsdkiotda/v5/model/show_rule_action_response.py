@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowRuleActionResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ShowRuleActionResponse(SdkResponse):
     }
 
     def __init__(self, action_id=None, rule_id=None, app_id=None, channel=None, channel_detail=None):
-        """ShowRuleActionResponse - a model defined in huaweicloud sdk"""
+        """ShowRuleActionResponse
+
+        The model defined in huaweicloud sdk
+
+        :param action_id: 规则动作ID，用于唯一标识一条规则动作，在创建规则动作时由物联网平台分配获得，创建时无需携带，由平台统一分配唯一的action_id。
+        :type action_id: str
+        :param rule_id: 规则动作对应的的规则触发条件ID。
+        :type rule_id: str
+        :param app_id: 资源空间ID。
+        :type app_id: str
+        :param channel: 规则动作的类型，取值范围： - HTTP_FORWARDING：HTTP服务消息类型。 - DIS_FORWARDING：转发DIS服务消息类型。 - OBS_FORWARDING：转发OBS服务消息类型。 - AMQP_FORWARDING：转发AMQP服务消息类型。 - DMS_KAFKA_FORWARDING：转发kafka消息类型。 
+        :type channel: str
+        :param channel_detail: 
+        :type channel_detail: :class:`huaweicloudsdkiotda.v5.ChannelDetail`
+        """
         
         super(ShowRuleActionResponse, self).__init__()
 
@@ -78,7 +91,7 @@ class ShowRuleActionResponse(SdkResponse):
         规则动作ID，用于唯一标识一条规则动作，在创建规则动作时由物联网平台分配获得，创建时无需携带，由平台统一分配唯一的action_id。
 
         :param action_id: The action_id of this ShowRuleActionResponse.
-        :type: str
+        :type action_id: str
         """
         self._action_id = action_id
 
@@ -100,7 +113,7 @@ class ShowRuleActionResponse(SdkResponse):
         规则动作对应的的规则触发条件ID。
 
         :param rule_id: The rule_id of this ShowRuleActionResponse.
-        :type: str
+        :type rule_id: str
         """
         self._rule_id = rule_id
 
@@ -122,7 +135,7 @@ class ShowRuleActionResponse(SdkResponse):
         资源空间ID。
 
         :param app_id: The app_id of this ShowRuleActionResponse.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -144,7 +157,7 @@ class ShowRuleActionResponse(SdkResponse):
         规则动作的类型，取值范围： - HTTP_FORWARDING：HTTP服务消息类型。 - DIS_FORWARDING：转发DIS服务消息类型。 - OBS_FORWARDING：转发OBS服务消息类型。 - AMQP_FORWARDING：转发AMQP服务消息类型。 - DMS_KAFKA_FORWARDING：转发kafka消息类型。 
 
         :param channel: The channel of this ShowRuleActionResponse.
-        :type: str
+        :type channel: str
         """
         self._channel = channel
 
@@ -154,7 +167,7 @@ class ShowRuleActionResponse(SdkResponse):
 
 
         :return: The channel_detail of this ShowRuleActionResponse.
-        :rtype: ChannelDetail
+        :rtype: :class:`huaweicloudsdkiotda.v5.ChannelDetail`
         """
         return self._channel_detail
 
@@ -164,7 +177,7 @@ class ShowRuleActionResponse(SdkResponse):
 
 
         :param channel_detail: The channel_detail of this ShowRuleActionResponse.
-        :type: ChannelDetail
+        :type channel_detail: :class:`huaweicloudsdkiotda.v5.ChannelDetail`
         """
         self._channel_detail = channel_detail
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunPoemResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class RunPoemResponse(SdkResponse):
     }
 
     def __init__(self, poem=None, error_code=None, error_msg=None):
-        """RunPoemResponse - a model defined in huaweicloud sdk"""
+        """RunPoemResponse
+
+        The model defined in huaweicloud sdk
+
+        :param poem: 根据文本请求体，返回生成的诗歌。调用失败时无此字段。
+        :type poem: list[str]
+        :param error_code: 调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
+        :type error_code: str
+        :param error_msg: 调用失败时的错误信息。调用成功时无此字段。
+        :type error_msg: str
+        """
         
         super(RunPoemResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class RunPoemResponse(SdkResponse):
         根据文本请求体，返回生成的诗歌。调用失败时无此字段。
 
         :param poem: The poem of this RunPoemResponse.
-        :type: list[str]
+        :type poem: list[str]
         """
         self._poem = poem
 
@@ -90,7 +99,7 @@ class RunPoemResponse(SdkResponse):
         调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
 
         :param error_code: The error_code of this RunPoemResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -112,7 +121,7 @@ class RunPoemResponse(SdkResponse):
         调用失败时的错误信息。调用成功时无此字段。
 
         :param error_msg: The error_msg of this RunPoemResponse.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 

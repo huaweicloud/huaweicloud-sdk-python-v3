@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CustomTemplates:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CustomTemplates:
     }
 
     def __init__(self, id=None, name=None, conf_content=None, desc=None):
-        """CustomTemplates - a model defined in huaweicloud sdk"""
+        """CustomTemplates
+
+        The model defined in huaweicloud sdk
+
+        :param id: 配置文件id。
+        :type id: str
+        :param name: 配置文件名称。
+        :type name: str
+        :param conf_content: 配置文件内容。
+        :type conf_content: str
+        :param desc: 描述。
+        :type desc: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class CustomTemplates:
         配置文件id。
 
         :param id: The id of this CustomTemplates.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -95,7 +106,7 @@ class CustomTemplates:
         配置文件名称。
 
         :param name: The name of this CustomTemplates.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -117,7 +128,7 @@ class CustomTemplates:
         配置文件内容。
 
         :param conf_content: The conf_content of this CustomTemplates.
-        :type: str
+        :type conf_content: str
         """
         self._conf_content = conf_content
 
@@ -139,7 +150,7 @@ class CustomTemplates:
         描述。
 
         :param desc: The desc of this CustomTemplates.
-        :type: str
+        :type desc: str
         """
         self._desc = desc
 

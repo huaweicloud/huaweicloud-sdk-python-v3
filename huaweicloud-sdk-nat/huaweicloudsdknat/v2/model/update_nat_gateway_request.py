@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateNatGatewayRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateNatGatewayRequest:
     }
 
     def __init__(self, nat_gateway_id=None, body=None):
-        """UpdateNatGatewayRequest - a model defined in huaweicloud sdk"""
+        """UpdateNatGatewayRequest
+
+        The model defined in huaweicloud sdk
+
+        :param nat_gateway_id: 公网NAT网关实例的ID。
+        :type nat_gateway_id: str
+        :param body: Body of the UpdateNatGatewayRequest
+        :type body: :class:`huaweicloudsdknat.v2.UpdateNatGatewayRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateNatGatewayRequest:
         公网NAT网关实例的ID。
 
         :param nat_gateway_id: The nat_gateway_id of this UpdateNatGatewayRequest.
-        :type: str
+        :type nat_gateway_id: str
         """
         self._nat_gateway_id = nat_gateway_id
 
@@ -72,7 +79,7 @@ class UpdateNatGatewayRequest:
 
 
         :return: The body of this UpdateNatGatewayRequest.
-        :rtype: UpdateNatGatewayRequestBody
+        :rtype: :class:`huaweicloudsdknat.v2.UpdateNatGatewayRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateNatGatewayRequest:
 
 
         :param body: The body of this UpdateNatGatewayRequest.
-        :type: UpdateNatGatewayRequestBody
+        :type body: :class:`huaweicloudsdknat.v2.UpdateNatGatewayRequestBody`
         """
         self._body = body
 

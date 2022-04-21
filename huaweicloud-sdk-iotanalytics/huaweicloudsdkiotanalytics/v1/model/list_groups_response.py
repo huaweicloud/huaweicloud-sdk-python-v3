@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListGroupsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListGroupsResponse(SdkResponse):
     }
 
     def __init__(self, groups=None, count=None):
-        """ListGroupsResponse - a model defined in huaweicloud sdk"""
+        """ListGroupsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param groups: 存储组列表
+        :type groups: list[:class:`huaweicloudsdkiotanalytics.v1.GetGroup`]
+        :param count: 返回的 data-store-group 数量
+        :type count: int
+        """
         
         super(ListGroupsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListGroupsResponse(SdkResponse):
         存储组列表
 
         :return: The groups of this ListGroupsResponse.
-        :rtype: list[GetGroup]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.GetGroup`]
         """
         return self._groups
 
@@ -63,7 +70,7 @@ class ListGroupsResponse(SdkResponse):
         存储组列表
 
         :param groups: The groups of this ListGroupsResponse.
-        :type: list[GetGroup]
+        :type groups: list[:class:`huaweicloudsdkiotanalytics.v1.GetGroup`]
         """
         self._groups = groups
 
@@ -85,7 +92,7 @@ class ListGroupsResponse(SdkResponse):
         返回的 data-store-group 数量
 
         :param count: The count of this ListGroupsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

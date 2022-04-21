@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryMessageInfoV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class QueryMessageInfoV2:
     }
 
     def __init__(self, type=None, replier_type=None, replier=None, content=None, create_time=None, replier_name=None, is_first_message=None, iam_user_type=None, accessory_list=None):
-        """QueryMessageInfoV2 - a model defined in huaweicloud sdk"""
+        """QueryMessageInfoV2
+
+        The model defined in huaweicloud sdk
+
+        :param type: 类型，0客户留言 1华为工程师留言
+        :type type: int
+        :param replier_type: 回复人类型，0客户留言 1华为工程师留言 2第三方留言
+        :type replier_type: int
+        :param replier: 回复人id
+        :type replier: str
+        :param content: 留言内容
+        :type content: str
+        :param create_time: 创建时间
+        :type create_time: datetime
+        :param replier_name: 回复人名称
+        :type replier_name: str
+        :param is_first_message: 是否是第一条留言
+        :type is_first_message: int
+        :param iam_user_type: 子用户类型
+        :type iam_user_type: int
+        :param accessory_list: 附件列表
+        :type accessory_list: list[:class:`huaweicloudsdkosm.v2.SimpleAccessoryV2`]
+        """
         
         
 
@@ -98,7 +119,7 @@ class QueryMessageInfoV2:
         类型，0客户留言 1华为工程师留言
 
         :param type: The type of this QueryMessageInfoV2.
-        :type: int
+        :type type: int
         """
         self._type = type
 
@@ -120,7 +141,7 @@ class QueryMessageInfoV2:
         回复人类型，0客户留言 1华为工程师留言 2第三方留言
 
         :param replier_type: The replier_type of this QueryMessageInfoV2.
-        :type: int
+        :type replier_type: int
         """
         self._replier_type = replier_type
 
@@ -142,7 +163,7 @@ class QueryMessageInfoV2:
         回复人id
 
         :param replier: The replier of this QueryMessageInfoV2.
-        :type: str
+        :type replier: str
         """
         self._replier = replier
 
@@ -164,7 +185,7 @@ class QueryMessageInfoV2:
         留言内容
 
         :param content: The content of this QueryMessageInfoV2.
-        :type: str
+        :type content: str
         """
         self._content = content
 
@@ -186,7 +207,7 @@ class QueryMessageInfoV2:
         创建时间
 
         :param create_time: The create_time of this QueryMessageInfoV2.
-        :type: datetime
+        :type create_time: datetime
         """
         self._create_time = create_time
 
@@ -208,7 +229,7 @@ class QueryMessageInfoV2:
         回复人名称
 
         :param replier_name: The replier_name of this QueryMessageInfoV2.
-        :type: str
+        :type replier_name: str
         """
         self._replier_name = replier_name
 
@@ -230,7 +251,7 @@ class QueryMessageInfoV2:
         是否是第一条留言
 
         :param is_first_message: The is_first_message of this QueryMessageInfoV2.
-        :type: int
+        :type is_first_message: int
         """
         self._is_first_message = is_first_message
 
@@ -252,7 +273,7 @@ class QueryMessageInfoV2:
         子用户类型
 
         :param iam_user_type: The iam_user_type of this QueryMessageInfoV2.
-        :type: int
+        :type iam_user_type: int
         """
         self._iam_user_type = iam_user_type
 
@@ -263,7 +284,7 @@ class QueryMessageInfoV2:
         附件列表
 
         :return: The accessory_list of this QueryMessageInfoV2.
-        :rtype: list[SimpleAccessoryV2]
+        :rtype: list[:class:`huaweicloudsdkosm.v2.SimpleAccessoryV2`]
         """
         return self._accessory_list
 
@@ -274,7 +295,7 @@ class QueryMessageInfoV2:
         附件列表
 
         :param accessory_list: The accessory_list of this QueryMessageInfoV2.
-        :type: list[SimpleAccessoryV2]
+        :type accessory_list: list[:class:`huaweicloudsdkosm.v2.SimpleAccessoryV2`]
         """
         self._accessory_list = accessory_list
 

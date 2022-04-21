@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ServerGroupMember:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ServerGroupMember:
     }
 
     def __init__(self, instance_uuid=None):
-        """ServerGroupMember - a model defined in huaweicloud sdk"""
+        """ServerGroupMember
+
+        The model defined in huaweicloud sdk
+
+        :param instance_uuid: 云服务器UUID。
+        :type instance_uuid: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ServerGroupMember:
         云服务器UUID。
 
         :param instance_uuid: The instance_uuid of this ServerGroupMember.
-        :type: str
+        :type instance_uuid: str
         """
         self._instance_uuid = instance_uuid
 

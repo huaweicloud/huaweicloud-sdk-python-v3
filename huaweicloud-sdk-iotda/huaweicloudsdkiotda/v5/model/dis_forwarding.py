@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DisForwarding:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class DisForwarding:
     }
 
     def __init__(self, region_name=None, project_id=None, stream_name=None, stream_id=None):
-        """DisForwarding - a model defined in huaweicloud sdk"""
+        """DisForwarding
+
+        The model defined in huaweicloud sdk
+
+        :param region_name: **参数说明**：DIS服务对应的region区域
+        :type region_name: str
+        :param project_id: **参数说明**：DIS服务对应的projectId信息
+        :type project_id: str
+        :param stream_name: **参数说明**：DIS服务对应的通道名称，stream_id和stream_name两个参数必须携带一个，优先使用stream_id
+        :type stream_name: str
+        :param stream_id: **参数说明**：DIS服务对应的通道ID，stream_id和stream_name两个参数必须携带一个，优先使用stream_id
+        :type stream_id: str
+        """
         
         
 
@@ -71,7 +82,7 @@ class DisForwarding:
         **参数说明**：DIS服务对应的region区域
 
         :param region_name: The region_name of this DisForwarding.
-        :type: str
+        :type region_name: str
         """
         self._region_name = region_name
 
@@ -93,7 +104,7 @@ class DisForwarding:
         **参数说明**：DIS服务对应的projectId信息
 
         :param project_id: The project_id of this DisForwarding.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -115,7 +126,7 @@ class DisForwarding:
         **参数说明**：DIS服务对应的通道名称，stream_id和stream_name两个参数必须携带一个，优先使用stream_id
 
         :param stream_name: The stream_name of this DisForwarding.
-        :type: str
+        :type stream_name: str
         """
         self._stream_name = stream_name
 
@@ -137,7 +148,7 @@ class DisForwarding:
         **参数说明**：DIS服务对应的通道ID，stream_id和stream_name两个参数必须携带一个，优先使用stream_id
 
         :param stream_id: The stream_id of this DisForwarding.
-        :type: str
+        :type stream_id: str
         """
         self._stream_id = stream_id
 

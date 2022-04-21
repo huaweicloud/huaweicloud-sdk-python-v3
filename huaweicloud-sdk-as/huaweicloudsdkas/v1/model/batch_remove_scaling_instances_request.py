@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchRemoveScalingInstancesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchRemoveScalingInstancesRequest:
     }
 
     def __init__(self, scaling_group_id=None, body=None):
-        """BatchRemoveScalingInstancesRequest - a model defined in huaweicloud sdk"""
+        """BatchRemoveScalingInstancesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param scaling_group_id: 实例ID。
+        :type scaling_group_id: str
+        :param body: Body of the BatchRemoveScalingInstancesRequest
+        :type body: :class:`huaweicloudsdkas.v1.BatchRemoveInstancesOption`
+        """
         
         
 
@@ -62,7 +69,7 @@ class BatchRemoveScalingInstancesRequest:
         实例ID。
 
         :param scaling_group_id: The scaling_group_id of this BatchRemoveScalingInstancesRequest.
-        :type: str
+        :type scaling_group_id: str
         """
         self._scaling_group_id = scaling_group_id
 
@@ -72,7 +79,7 @@ class BatchRemoveScalingInstancesRequest:
 
 
         :return: The body of this BatchRemoveScalingInstancesRequest.
-        :rtype: BatchRemoveInstancesOption
+        :rtype: :class:`huaweicloudsdkas.v1.BatchRemoveInstancesOption`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class BatchRemoveScalingInstancesRequest:
 
 
         :param body: The body of this BatchRemoveScalingInstancesRequest.
-        :type: BatchRemoveInstancesOption
+        :type body: :class:`huaweicloudsdkas.v1.BatchRemoveInstancesOption`
         """
         self._body = body
 

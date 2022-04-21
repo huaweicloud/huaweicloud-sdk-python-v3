@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EnlargeProxyRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class EnlargeProxyRequest:
     }
 
     def __init__(self, node_num=None):
-        """EnlargeProxyRequest - a model defined in huaweicloud sdk"""
+        """EnlargeProxyRequest
+
+        The model defined in huaweicloud sdk
+
+        :param node_num: proxy节点扩容操作需要扩容的节点数。本次扩容的节点数的取值范围：1~30之间的整数。 限制条件：该实例的proxy节点的总数量小于等于32。
+        :type node_num: int
+        """
         
         
 
@@ -57,7 +62,7 @@ class EnlargeProxyRequest:
         proxy节点扩容操作需要扩容的节点数。本次扩容的节点数的取值范围：1~30之间的整数。 限制条件：该实例的proxy节点的总数量小于等于32。
 
         :param node_num: The node_num of this EnlargeProxyRequest.
-        :type: int
+        :type node_num: int
         """
         self._node_num = node_num
 

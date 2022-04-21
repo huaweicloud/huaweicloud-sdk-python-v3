@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AssetSummary:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -58,7 +57,41 @@ class AssetSummary:
     }
 
     def __init__(self, asset_id=None, title=None, description=None, duration=None, size=None, original_url=None, category=None, covers=None, create_time=None, asset_status=None, transcode_status=None, thumbnail_status=None, review_status=None, exec_desc=None, media_type=None):
-        """AssetSummary - a model defined in huaweicloud sdk"""
+        """AssetSummary
+
+        The model defined in huaweicloud sdk
+
+        :param asset_id: 媒资ID。
+        :type asset_id: str
+        :param title: 媒资标题。长度不超过128个字节，UTF-8编码。
+        :type title: str
+        :param description: 媒资描述。长度不超过1024个字节。
+        :type description: str
+        :param duration: 媒资时长。  单位：秒。
+        :type duration: int
+        :param size: 媒资大小。  单位：字节。
+        :type size: int
+        :param original_url: 原始播放url。
+        :type original_url: str
+        :param category: 媒资分类名称。
+        :type category: str
+        :param covers: 封面信息。
+        :type covers: list[:class:`huaweicloudsdkvod.v1.CoverInfo`]
+        :param create_time: 媒资创建时间。  格式为yyyymmddhhmmss。必须是与时区无关的UTC时间。
+        :type create_time: str
+        :param asset_status: 媒资状态。  取值如下： - CREATING：上传中。 - FAILED：上传失败。 - CREATED：上传成功。 - PUBLISHED：已发布。 - DELETED：已删除。
+        :type asset_status: str
+        :param transcode_status: 转码状态。  取值如下： - UN_TRANSCODE：未转码。 - WAITING_TRANSCODE：待转码 - TRANSCODING：转码中。 - TRANSCODE_SUCCEED：转码成功。 - TRANSCODE_FAILED：转码失败。
+        :type transcode_status: str
+        :param thumbnail_status: 截图状态。  取值如下： - UN_THUMBNAIL：未截图。 - THUMBNAILING：截图中。 - THUMBNAIL_SUCCEED：截图成功。 - THUMBNAIL_FAILED：截图失败。
+        :type thumbnail_status: str
+        :param review_status: 内容审核状态  取值如下： - UN_REVIEW：未审核。 - REVIEWING：审核中。 - REVIEW_SUSPICIOUS：审核可疑，需要人工复审。 - REVIEW_PASSED：审核通过。 - REVIEW_FAILED：审核失败。 - REVIEW_BLOCKED：已屏蔽。
+        :type review_status: str
+        :param exec_desc: 媒资的任务执行描述汇总。  示例： - asset_exec_desc: upload success，媒资任务执行描述信息。 - transcode_exec_desc: transcode success，转码任务执行描述信息。 - thumbnail_exec_desc: thumbnail failed，截图任务执行描述信息。 - review_exec_desc: review pass，审核任务执行描述信息。
+        :type exec_desc: str
+        :param media_type: 音视频文件的格式。  取值如下： - 视频文件格式：MP4、TS、MOV、MXF、MPG、FLV、WMV、AVI、M4V、F4V、MPEG - 音频文件格式：MP3、OGG、WAV、WMA、APE、FLAC、AAC、AC3、MMF、AMR、M4A、M4R、WV、MP2
+        :type media_type: str
+        """
         
         
 
@@ -123,7 +156,7 @@ class AssetSummary:
         媒资ID。
 
         :param asset_id: The asset_id of this AssetSummary.
-        :type: str
+        :type asset_id: str
         """
         self._asset_id = asset_id
 
@@ -145,7 +178,7 @@ class AssetSummary:
         媒资标题。长度不超过128个字节，UTF-8编码。
 
         :param title: The title of this AssetSummary.
-        :type: str
+        :type title: str
         """
         self._title = title
 
@@ -167,7 +200,7 @@ class AssetSummary:
         媒资描述。长度不超过1024个字节。
 
         :param description: The description of this AssetSummary.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -189,7 +222,7 @@ class AssetSummary:
         媒资时长。  单位：秒。
 
         :param duration: The duration of this AssetSummary.
-        :type: int
+        :type duration: int
         """
         self._duration = duration
 
@@ -211,7 +244,7 @@ class AssetSummary:
         媒资大小。  单位：字节。
 
         :param size: The size of this AssetSummary.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -233,7 +266,7 @@ class AssetSummary:
         原始播放url。
 
         :param original_url: The original_url of this AssetSummary.
-        :type: str
+        :type original_url: str
         """
         self._original_url = original_url
 
@@ -255,7 +288,7 @@ class AssetSummary:
         媒资分类名称。
 
         :param category: The category of this AssetSummary.
-        :type: str
+        :type category: str
         """
         self._category = category
 
@@ -266,7 +299,7 @@ class AssetSummary:
         封面信息。
 
         :return: The covers of this AssetSummary.
-        :rtype: list[CoverInfo]
+        :rtype: list[:class:`huaweicloudsdkvod.v1.CoverInfo`]
         """
         return self._covers
 
@@ -277,7 +310,7 @@ class AssetSummary:
         封面信息。
 
         :param covers: The covers of this AssetSummary.
-        :type: list[CoverInfo]
+        :type covers: list[:class:`huaweicloudsdkvod.v1.CoverInfo`]
         """
         self._covers = covers
 
@@ -299,7 +332,7 @@ class AssetSummary:
         媒资创建时间。  格式为yyyymmddhhmmss。必须是与时区无关的UTC时间。
 
         :param create_time: The create_time of this AssetSummary.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -321,7 +354,7 @@ class AssetSummary:
         媒资状态。  取值如下： - CREATING：上传中。 - FAILED：上传失败。 - CREATED：上传成功。 - PUBLISHED：已发布。 - DELETED：已删除。
 
         :param asset_status: The asset_status of this AssetSummary.
-        :type: str
+        :type asset_status: str
         """
         self._asset_status = asset_status
 
@@ -343,7 +376,7 @@ class AssetSummary:
         转码状态。  取值如下： - UN_TRANSCODE：未转码。 - WAITING_TRANSCODE：待转码 - TRANSCODING：转码中。 - TRANSCODE_SUCCEED：转码成功。 - TRANSCODE_FAILED：转码失败。
 
         :param transcode_status: The transcode_status of this AssetSummary.
-        :type: str
+        :type transcode_status: str
         """
         self._transcode_status = transcode_status
 
@@ -365,7 +398,7 @@ class AssetSummary:
         截图状态。  取值如下： - UN_THUMBNAIL：未截图。 - THUMBNAILING：截图中。 - THUMBNAIL_SUCCEED：截图成功。 - THUMBNAIL_FAILED：截图失败。
 
         :param thumbnail_status: The thumbnail_status of this AssetSummary.
-        :type: str
+        :type thumbnail_status: str
         """
         self._thumbnail_status = thumbnail_status
 
@@ -387,7 +420,7 @@ class AssetSummary:
         内容审核状态  取值如下： - UN_REVIEW：未审核。 - REVIEWING：审核中。 - REVIEW_SUSPICIOUS：审核可疑，需要人工复审。 - REVIEW_PASSED：审核通过。 - REVIEW_FAILED：审核失败。 - REVIEW_BLOCKED：已屏蔽。
 
         :param review_status: The review_status of this AssetSummary.
-        :type: str
+        :type review_status: str
         """
         self._review_status = review_status
 
@@ -409,7 +442,7 @@ class AssetSummary:
         媒资的任务执行描述汇总。  示例： - asset_exec_desc: upload success，媒资任务执行描述信息。 - transcode_exec_desc: transcode success，转码任务执行描述信息。 - thumbnail_exec_desc: thumbnail failed，截图任务执行描述信息。 - review_exec_desc: review pass，审核任务执行描述信息。
 
         :param exec_desc: The exec_desc of this AssetSummary.
-        :type: str
+        :type exec_desc: str
         """
         self._exec_desc = exec_desc
 
@@ -431,7 +464,7 @@ class AssetSummary:
         音视频文件的格式。  取值如下： - 视频文件格式：MP4、TS、MOV、MXF、MPG、FLV、WMV、AVI、M4V、F4V、MPEG - 音频文件格式：MP3、OGG、WAV、WMA、APE、FLAC、AAC、AC3、MMF、AMR、M4A、M4R、WV、MP2
 
         :param media_type: The media_type of this AssetSummary.
-        :type: str
+        :type media_type: str
         """
         self._media_type = media_type
 

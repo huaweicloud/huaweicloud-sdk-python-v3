@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MetaData:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class MetaData:
     }
 
     def __init__(self, count=None, start=None, total=None):
-        """MetaData - a model defined in huaweicloud sdk"""
+        """MetaData
+
+        The model defined in huaweicloud sdk
+
+        :param count: 当前返回结果条数。
+        :type count: int
+        :param start: 下一个开始的标记，用于分页，null表示无更多数据。
+        :type start: str
+        :param total: 总条数。
+        :type total: int
+        """
         
         
 
@@ -68,7 +77,7 @@ class MetaData:
         当前返回结果条数。
 
         :param count: The count of this MetaData.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -90,7 +99,7 @@ class MetaData:
         下一个开始的标记，用于分页，null表示无更多数据。
 
         :param start: The start of this MetaData.
-        :type: str
+        :type start: str
         """
         self._start = start
 
@@ -112,7 +121,7 @@ class MetaData:
         总条数。
 
         :param total: The total of this MetaData.
-        :type: int
+        :type total: int
         """
         self._total = total
 

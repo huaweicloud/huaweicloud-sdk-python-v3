@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DownloadKeystoreRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DownloadKeystoreRequest:
     }
 
     def __init__(self, file_name=None, domain_id=None):
-        """DownloadKeystoreRequest - a model defined in huaweicloud sdk"""
+        """DownloadKeystoreRequest
+
+        The model defined in huaweicloud sdk
+
+        :param file_name: 下载的文件名称
+        :type file_name: str
+        :param domain_id: 租户ID。32位数字、小写字母组合
+        :type domain_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class DownloadKeystoreRequest:
         下载的文件名称
 
         :param file_name: The file_name of this DownloadKeystoreRequest.
-        :type: str
+        :type file_name: str
         """
         self._file_name = file_name
 
@@ -83,7 +90,7 @@ class DownloadKeystoreRequest:
         租户ID。32位数字、小写字母组合
 
         :param domain_id: The domain_id of this DownloadKeystoreRequest.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 

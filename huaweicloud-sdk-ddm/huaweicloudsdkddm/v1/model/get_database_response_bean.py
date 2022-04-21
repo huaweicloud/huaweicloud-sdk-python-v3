@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GetDatabaseResponseBean:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class GetDatabaseResponseBean:
     }
 
     def __init__(self, name=None, created=None, status=None, updated=None, databases=None, shard_mode=None, shard_number=None, shard_unit=None, data_vips=None, used_rds=None):
-        """GetDatabaseResponseBean - a model defined in huaweicloud sdk"""
+        """GetDatabaseResponseBean
+
+        The model defined in huaweicloud sdk
+
+        :param name: 逻辑库名称。
+        :type name: str
+        :param created: 逻辑库的创建时间。
+        :type created: str
+        :param status: 状态。
+        :type status: str
+        :param updated: DDM实例最后更新时间。
+        :type updated: str
+        :param databases: 逻辑库分片的详细信息。
+        :type databases: list[:class:`huaweicloudsdkddm.v1.GetDatabases`]
+        :param shard_mode: 逻辑库的工作模式。  - cluster表示逻辑库是拆分模式。 - single表示逻辑库是非拆分模式。
+        :type shard_mode: str
+        :param shard_number: 同一种工作模式下逻辑库分片的数量。
+        :type shard_number: int
+        :param shard_unit: 单个RDS上的逻辑库分片数。
+        :type shard_unit: int
+        :param data_vips: 连接逻辑库使用的IP:端口。
+        :type data_vips: list[str]
+        :param used_rds: 关联RDS
+        :type used_rds: list[:class:`huaweicloudsdkddm.v1.GetDatabaseUsedRds`]
+        """
         
         
 
@@ -93,7 +116,7 @@ class GetDatabaseResponseBean:
         逻辑库名称。
 
         :param name: The name of this GetDatabaseResponseBean.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -115,7 +138,7 @@ class GetDatabaseResponseBean:
         逻辑库的创建时间。
 
         :param created: The created of this GetDatabaseResponseBean.
-        :type: str
+        :type created: str
         """
         self._created = created
 
@@ -137,7 +160,7 @@ class GetDatabaseResponseBean:
         状态。
 
         :param status: The status of this GetDatabaseResponseBean.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -159,7 +182,7 @@ class GetDatabaseResponseBean:
         DDM实例最后更新时间。
 
         :param updated: The updated of this GetDatabaseResponseBean.
-        :type: str
+        :type updated: str
         """
         self._updated = updated
 
@@ -170,7 +193,7 @@ class GetDatabaseResponseBean:
         逻辑库分片的详细信息。
 
         :return: The databases of this GetDatabaseResponseBean.
-        :rtype: list[GetDatabases]
+        :rtype: list[:class:`huaweicloudsdkddm.v1.GetDatabases`]
         """
         return self._databases
 
@@ -181,7 +204,7 @@ class GetDatabaseResponseBean:
         逻辑库分片的详细信息。
 
         :param databases: The databases of this GetDatabaseResponseBean.
-        :type: list[GetDatabases]
+        :type databases: list[:class:`huaweicloudsdkddm.v1.GetDatabases`]
         """
         self._databases = databases
 
@@ -203,7 +226,7 @@ class GetDatabaseResponseBean:
         逻辑库的工作模式。  - cluster表示逻辑库是拆分模式。 - single表示逻辑库是非拆分模式。
 
         :param shard_mode: The shard_mode of this GetDatabaseResponseBean.
-        :type: str
+        :type shard_mode: str
         """
         self._shard_mode = shard_mode
 
@@ -225,7 +248,7 @@ class GetDatabaseResponseBean:
         同一种工作模式下逻辑库分片的数量。
 
         :param shard_number: The shard_number of this GetDatabaseResponseBean.
-        :type: int
+        :type shard_number: int
         """
         self._shard_number = shard_number
 
@@ -247,7 +270,7 @@ class GetDatabaseResponseBean:
         单个RDS上的逻辑库分片数。
 
         :param shard_unit: The shard_unit of this GetDatabaseResponseBean.
-        :type: int
+        :type shard_unit: int
         """
         self._shard_unit = shard_unit
 
@@ -269,7 +292,7 @@ class GetDatabaseResponseBean:
         连接逻辑库使用的IP:端口。
 
         :param data_vips: The data_vips of this GetDatabaseResponseBean.
-        :type: list[str]
+        :type data_vips: list[str]
         """
         self._data_vips = data_vips
 
@@ -280,7 +303,7 @@ class GetDatabaseResponseBean:
         关联RDS
 
         :return: The used_rds of this GetDatabaseResponseBean.
-        :rtype: list[GetDatabaseUsedRds]
+        :rtype: list[:class:`huaweicloudsdkddm.v1.GetDatabaseUsedRds`]
         """
         return self._used_rds
 
@@ -291,7 +314,7 @@ class GetDatabaseResponseBean:
         关联RDS
 
         :param used_rds: The used_rds of this GetDatabaseResponseBean.
-        :type: list[GetDatabaseUsedRds]
+        :type used_rds: list[:class:`huaweicloudsdkddm.v1.GetDatabaseUsedRds`]
         """
         self._used_rds = used_rds
 

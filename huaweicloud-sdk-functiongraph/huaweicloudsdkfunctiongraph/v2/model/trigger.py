@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Trigger:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class Trigger:
     }
 
     def __init__(self, trigger_name=None, trigger_type=None, enabled=None, trigger_config=None):
-        """Trigger - a model defined in huaweicloud sdk"""
+        """Trigger
+
+        The model defined in huaweicloud sdk
+
+        :param trigger_name: 触发器名称
+        :type trigger_name: str
+        :param trigger_type: 触发器类型
+        :type trigger_type: str
+        :param enabled: 是否启用
+        :type enabled: bool
+        :param trigger_config: 
+        :type trigger_config: :class:`huaweicloudsdkfunctiongraph.v2.OBSTriggerConfig`
+        """
         
         
 
@@ -73,7 +84,7 @@ class Trigger:
         触发器名称
 
         :param trigger_name: The trigger_name of this Trigger.
-        :type: str
+        :type trigger_name: str
         """
         self._trigger_name = trigger_name
 
@@ -95,7 +106,7 @@ class Trigger:
         触发器类型
 
         :param trigger_type: The trigger_type of this Trigger.
-        :type: str
+        :type trigger_type: str
         """
         self._trigger_type = trigger_type
 
@@ -117,7 +128,7 @@ class Trigger:
         是否启用
 
         :param enabled: The enabled of this Trigger.
-        :type: bool
+        :type enabled: bool
         """
         self._enabled = enabled
 
@@ -127,7 +138,7 @@ class Trigger:
 
 
         :return: The trigger_config of this Trigger.
-        :rtype: OBSTriggerConfig
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.OBSTriggerConfig`
         """
         return self._trigger_config
 
@@ -137,7 +148,7 @@ class Trigger:
 
 
         :param trigger_config: The trigger_config of this Trigger.
-        :type: OBSTriggerConfig
+        :type trigger_config: :class:`huaweicloudsdkfunctiongraph.v2.OBSTriggerConfig`
         """
         self._trigger_config = trigger_config
 

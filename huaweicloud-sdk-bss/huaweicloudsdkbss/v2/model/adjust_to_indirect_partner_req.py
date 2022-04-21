@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AdjustToIndirectPartnerReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AdjustToIndirectPartnerReq:
     }
 
     def __init__(self, indirect_partner_id=None, amount=None):
-        """AdjustToIndirectPartnerReq - a model defined in huaweicloud sdk"""
+        """AdjustToIndirectPartnerReq
+
+        The model defined in huaweicloud sdk
+
+        :param indirect_partner_id: 精英服务商ID。获取方法请参见查询精英服务商列表。
+        :type indirect_partner_id: str
+        :param amount: 华为云伙伴能力中心向精英服务商拨款的金额。 单位：元。取值大于0且精确到小数点后2位。
+        :type amount: float
+        """
         
         
 
@@ -61,7 +68,7 @@ class AdjustToIndirectPartnerReq:
         精英服务商ID。获取方法请参见查询精英服务商列表。
 
         :param indirect_partner_id: The indirect_partner_id of this AdjustToIndirectPartnerReq.
-        :type: str
+        :type indirect_partner_id: str
         """
         self._indirect_partner_id = indirect_partner_id
 
@@ -83,7 +90,7 @@ class AdjustToIndirectPartnerReq:
         华为云伙伴能力中心向精英服务商拨款的金额。 单位：元。取值大于0且精确到小数点后2位。
 
         :param amount: The amount of this AdjustToIndirectPartnerReq.
-        :type: float
+        :type amount: float
         """
         self._amount = amount
 

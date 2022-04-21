@@ -12,10 +12,8 @@ class ExternalAccessProtocol:
     """
     allowed enum values
     """
-
     HTTP = "HTTP"
     HTTPS = "HTTPS"
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -33,7 +31,11 @@ class ExternalAccessProtocol:
     }
 
     def __init__(self):
-        """ExternalAccessProtocol - a model defined in huaweicloud sdk"""
+        """ExternalAccessProtocol
+
+        The model defined in huaweicloud sdk
+
+        """
         
         
         self.discriminator = None

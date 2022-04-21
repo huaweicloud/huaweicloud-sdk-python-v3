@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Rule:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class Rule:
     }
 
     def __init__(self, template=None, params=None, tag_selectors=None):
-        """Rule - a model defined in huaweicloud sdk"""
+        """Rule
+
+        The model defined in huaweicloud sdk
+
+        :param template: 回收类型，date_rule、tag_rule
+        :type template: str
+        :param params: template是date_rule时，设置params为{\&quot;days\&quot;: \&quot;xxx\&quot;} template是tag_rule时，设置params为{\&quot;num\&quot;: \&quot;xxx\&quot;} 
+        :type params: object
+        :param tag_selectors: 例外镜像
+        :type tag_selectors: list[:class:`huaweicloudsdkswr.v2.TagSelector`]
+        """
         
         
 
@@ -65,7 +74,7 @@ class Rule:
         回收类型，date_rule、tag_rule
 
         :param template: The template of this Rule.
-        :type: str
+        :type template: str
         """
         self._template = template
 
@@ -87,7 +96,7 @@ class Rule:
         template是date_rule时，设置params为{\"days\": \"xxx\"} template是tag_rule时，设置params为{\"num\": \"xxx\"} 
 
         :param params: The params of this Rule.
-        :type: object
+        :type params: object
         """
         self._params = params
 
@@ -98,7 +107,7 @@ class Rule:
         例外镜像
 
         :return: The tag_selectors of this Rule.
-        :rtype: list[TagSelector]
+        :rtype: list[:class:`huaweicloudsdkswr.v2.TagSelector`]
         """
         return self._tag_selectors
 
@@ -109,7 +118,7 @@ class Rule:
         例外镜像
 
         :param tag_selectors: The tag_selectors of this Rule.
-        :type: list[TagSelector]
+        :type tag_selectors: list[:class:`huaweicloudsdkswr.v2.TagSelector`]
         """
         self._tag_selectors = tag_selectors
 

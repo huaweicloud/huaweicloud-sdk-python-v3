@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowAgentStatusRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowAgentStatusRequest:
     }
 
     def __init__(self, x_language=None, agent_id=None):
-        """ShowAgentStatusRequest - a model defined in huaweicloud sdk"""
+        """ShowAgentStatusRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言类型 中文:zh-cn 英文:en-us
+        :type x_language: str
+        :param agent_id: AgentID
+        :type agent_id: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ShowAgentStatusRequest:
         语言类型 中文:zh-cn 英文:en-us
 
         :param x_language: The x_language of this ShowAgentStatusRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -84,7 +91,7 @@ class ShowAgentStatusRequest:
         AgentID
 
         :param agent_id: The agent_id of this ShowAgentStatusRequest.
-        :type: str
+        :type agent_id: str
         """
         self._agent_id = agent_id
 

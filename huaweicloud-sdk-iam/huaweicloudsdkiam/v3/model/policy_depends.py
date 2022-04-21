@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PolicyDepends:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class PolicyDepends:
     }
 
     def __init__(self, catalog=None, display_name=None):
-        """PolicyDepends - a model defined in huaweicloud sdk"""
+        """PolicyDepends
+
+        The model defined in huaweicloud sdk
+
+        :param catalog: 权限所在目录。
+        :type catalog: str
+        :param display_name: 权限展示名。
+        :type display_name: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class PolicyDepends:
         权限所在目录。
 
         :param catalog: The catalog of this PolicyDepends.
-        :type: str
+        :type catalog: str
         """
         self._catalog = catalog
 
@@ -83,7 +90,7 @@ class PolicyDepends:
         权限展示名。
 
         :param display_name: The display_name of this PolicyDepends.
-        :type: str
+        :type display_name: str
         """
         self._display_name = display_name
 

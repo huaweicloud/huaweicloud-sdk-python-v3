@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AssetOperateRequestTasks:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class AssetOperateRequestTasks:
     }
 
     def __init__(self, task_id=None):
-        """AssetOperateRequestTasks - a model defined in huaweicloud sdk"""
+        """AssetOperateRequestTasks
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 任务ID
+        :type task_id: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class AssetOperateRequestTasks:
         任务ID
 
         :param task_id: The task_id of this AssetOperateRequestTasks.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 

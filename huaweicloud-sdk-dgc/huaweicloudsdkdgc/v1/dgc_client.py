@@ -51,20 +51,17 @@ class DgcClient(Client):
     def cancel_script(self, request):
         """停止脚本实例的执行
 
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CancelScriptRequest request
-        :return: CancelScriptResponse
+        :param request: Request instance for CancelScript
+        :type request: :class:`huaweicloudsdkdgc.v1.CancelScriptRequest`
+        :rtype: :class:`huaweicloudsdkdgc.v1.CancelScriptResponse`
         """
         return self.cancel_script_with_http_info(request)
 
     def cancel_script_with_http_info(self, request):
-        """停止脚本实例的执行
-
-
-        :param CancelScriptRequest request
-        :return: CancelScriptResponse
-        """
-
         all_params = ['script_name', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -110,24 +107,20 @@ class DgcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_connection(self, request):
         """创建连接
 
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateConnectionRequest request
-        :return: CreateConnectionResponse
+        :param request: Request instance for CreateConnection
+        :type request: :class:`huaweicloudsdkdgc.v1.CreateConnectionRequest`
+        :rtype: :class:`huaweicloudsdkdgc.v1.CreateConnectionResponse`
         """
         return self.create_connection_with_http_info(request)
 
     def create_connection_with_http_info(self, request):
-        """创建连接
-
-
-        :param CreateConnectionRequest request
-        :return: CreateConnectionResponse
-        """
-
         all_params = ['body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -171,24 +164,20 @@ class DgcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_job(self, request):
         """创建作业
 
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateJobRequest request
-        :return: CreateJobResponse
+        :param request: Request instance for CreateJob
+        :type request: :class:`huaweicloudsdkdgc.v1.CreateJobRequest`
+        :rtype: :class:`huaweicloudsdkdgc.v1.CreateJobResponse`
         """
         return self.create_job_with_http_info(request)
 
     def create_job_with_http_info(self, request):
-        """创建作业
-
-
-        :param CreateJobRequest request
-        :return: CreateJobResponse
-        """
-
         all_params = ['body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -232,24 +221,20 @@ class DgcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_resource(self, request):
         """创建资源
 
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateResourceRequest request
-        :return: CreateResourceResponse
+        :param request: Request instance for CreateResource
+        :type request: :class:`huaweicloudsdkdgc.v1.CreateResourceRequest`
+        :rtype: :class:`huaweicloudsdkdgc.v1.CreateResourceResponse`
         """
         return self.create_resource_with_http_info(request)
 
     def create_resource_with_http_info(self, request):
-        """创建资源
-
-
-        :param CreateResourceRequest request
-        :return: CreateResourceResponse
-        """
-
         all_params = ['body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -293,24 +278,20 @@ class DgcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_script(self, request):
         """创建脚本
 
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateScriptRequest request
-        :return: CreateScriptResponse
+        :param request: Request instance for CreateScript
+        :type request: :class:`huaweicloudsdkdgc.v1.CreateScriptRequest`
+        :rtype: :class:`huaweicloudsdkdgc.v1.CreateScriptResponse`
         """
         return self.create_script_with_http_info(request)
 
     def create_script_with_http_info(self, request):
-        """创建脚本
-
-
-        :param CreateScriptRequest request
-        :return: CreateScriptResponse
-        """
-
         all_params = ['body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -354,24 +335,20 @@ class DgcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_connction(self, request):
         """删除连接
 
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteConnctionRequest request
-        :return: DeleteConnctionResponse
+        :param request: Request instance for DeleteConnction
+        :type request: :class:`huaweicloudsdkdgc.v1.DeleteConnctionRequest`
+        :rtype: :class:`huaweicloudsdkdgc.v1.DeleteConnctionResponse`
         """
         return self.delete_connction_with_http_info(request)
 
     def delete_connction_with_http_info(self, request):
-        """删除连接
-
-
-        :param DeleteConnctionRequest request
-        :return: DeleteConnctionResponse
-        """
-
         all_params = ['connection_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -415,24 +392,20 @@ class DgcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_job(self, request):
         """删除作业
 
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteJobRequest request
-        :return: DeleteJobResponse
+        :param request: Request instance for DeleteJob
+        :type request: :class:`huaweicloudsdkdgc.v1.DeleteJobRequest`
+        :rtype: :class:`huaweicloudsdkdgc.v1.DeleteJobResponse`
         """
         return self.delete_job_with_http_info(request)
 
     def delete_job_with_http_info(self, request):
-        """删除作业
-
-
-        :param DeleteJobRequest request
-        :return: DeleteJobResponse
-        """
-
         all_params = ['job_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -476,24 +449,20 @@ class DgcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_resource(self, request):
         """删除资源
 
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteResourceRequest request
-        :return: DeleteResourceResponse
+        :param request: Request instance for DeleteResource
+        :type request: :class:`huaweicloudsdkdgc.v1.DeleteResourceRequest`
+        :rtype: :class:`huaweicloudsdkdgc.v1.DeleteResourceResponse`
         """
         return self.delete_resource_with_http_info(request)
 
     def delete_resource_with_http_info(self, request):
-        """删除资源
-
-
-        :param DeleteResourceRequest request
-        :return: DeleteResourceResponse
-        """
-
         all_params = ['resource_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -537,24 +506,20 @@ class DgcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_script(self, request):
         """删除脚本
 
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteScriptRequest request
-        :return: DeleteScriptResponse
+        :param request: Request instance for DeleteScript
+        :type request: :class:`huaweicloudsdkdgc.v1.DeleteScriptRequest`
+        :rtype: :class:`huaweicloudsdkdgc.v1.DeleteScriptResponse`
         """
         return self.delete_script_with_http_info(request)
 
     def delete_script_with_http_info(self, request):
-        """删除脚本
-
-
-        :param DeleteScriptRequest request
-        :return: DeleteScriptResponse
-        """
-
         all_params = ['script_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -598,24 +563,20 @@ class DgcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def execute_script(self, request):
         """执行脚本
 
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ExecuteScriptRequest request
-        :return: ExecuteScriptResponse
+        :param request: Request instance for ExecuteScript
+        :type request: :class:`huaweicloudsdkdgc.v1.ExecuteScriptRequest`
+        :rtype: :class:`huaweicloudsdkdgc.v1.ExecuteScriptResponse`
         """
         return self.execute_script_with_http_info(request)
 
     def execute_script_with_http_info(self, request):
-        """执行脚本
-
-
-        :param ExecuteScriptRequest request
-        :return: ExecuteScriptResponse
-        """
-
         all_params = ['script_name', 'body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -661,24 +622,20 @@ class DgcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def export_connections(self, request):
         """导出连接
 
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ExportConnectionsRequest request
-        :return: ExportConnectionsResponse
+        :param request: Request instance for ExportConnections
+        :type request: :class:`huaweicloudsdkdgc.v1.ExportConnectionsRequest`
+        :rtype: :class:`huaweicloudsdkdgc.v1.ExportConnectionsResponse`
         """
         return self.export_connections_with_http_info(request)
 
     def export_connections_with_http_info(self, request):
-        """导出连接
-
-
-        :param ExportConnectionsRequest request
-        :return: ExportConnectionsResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -720,24 +677,20 @@ class DgcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def export_job(self, request):
         """导出作业
 
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ExportJobRequest request
-        :return: ExportJobResponse
+        :param request: Request instance for ExportJob
+        :type request: :class:`huaweicloudsdkdgc.v1.ExportJobRequest`
+        :rtype: :class:`huaweicloudsdkdgc.v1.ExportJobResponse`
         """
         return self.export_job_with_http_info(request)
 
     def export_job_with_http_info(self, request):
-        """导出作业
-
-
-        :param ExportJobRequest request
-        :return: ExportJobResponse
-        """
-
         all_params = ['job_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -781,24 +734,20 @@ class DgcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def export_job_list(self, request):
         """批量导出作业
 
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ExportJobListRequest request
-        :return: ExportJobListResponse
+        :param request: Request instance for ExportJobList
+        :type request: :class:`huaweicloudsdkdgc.v1.ExportJobListRequest`
+        :rtype: :class:`huaweicloudsdkdgc.v1.ExportJobListResponse`
         """
         return self.export_job_list_with_http_info(request)
 
     def export_job_list_with_http_info(self, request):
-        """批量导出作业
-
-
-        :param ExportJobListRequest request
-        :return: ExportJobListResponse
-        """
-
         all_params = ['body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -842,24 +791,20 @@ class DgcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def import_connections(self, request):
         """导入连接
 
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ImportConnectionsRequest request
-        :return: ImportConnectionsResponse
+        :param request: Request instance for ImportConnections
+        :type request: :class:`huaweicloudsdkdgc.v1.ImportConnectionsRequest`
+        :rtype: :class:`huaweicloudsdkdgc.v1.ImportConnectionsResponse`
         """
         return self.import_connections_with_http_info(request)
 
     def import_connections_with_http_info(self, request):
-        """导入连接
-
-
-        :param ImportConnectionsRequest request
-        :return: ImportConnectionsResponse
-        """
-
         all_params = ['body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -903,24 +848,20 @@ class DgcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def import_job(self, request):
         """导入作业
 
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ImportJobRequest request
-        :return: ImportJobResponse
+        :param request: Request instance for ImportJob
+        :type request: :class:`huaweicloudsdkdgc.v1.ImportJobRequest`
+        :rtype: :class:`huaweicloudsdkdgc.v1.ImportJobResponse`
         """
         return self.import_job_with_http_info(request)
 
     def import_job_with_http_info(self, request):
-        """导入作业
-
-
-        :param ImportJobRequest request
-        :return: ImportJobResponse
-        """
-
         all_params = ['body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -964,24 +905,20 @@ class DgcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_connections(self, request):
         """查询连接列表
 
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListConnectionsRequest request
-        :return: ListConnectionsResponse
+        :param request: Request instance for ListConnections
+        :type request: :class:`huaweicloudsdkdgc.v1.ListConnectionsRequest`
+        :rtype: :class:`huaweicloudsdkdgc.v1.ListConnectionsResponse`
         """
         return self.list_connections_with_http_info(request)
 
     def list_connections_with_http_info(self, request):
-        """查询连接列表
-
-
-        :param ListConnectionsRequest request
-        :return: ListConnectionsResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1023,24 +960,20 @@ class DgcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_job_instances(self, request):
         """查询作业实例列表
 
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListJobInstancesRequest request
-        :return: ListJobInstancesResponse
+        :param request: Request instance for ListJobInstances
+        :type request: :class:`huaweicloudsdkdgc.v1.ListJobInstancesRequest`
+        :rtype: :class:`huaweicloudsdkdgc.v1.ListJobInstancesResponse`
         """
         return self.list_job_instances_with_http_info(request)
 
     def list_job_instances_with_http_info(self, request):
-        """查询作业实例列表
-
-
-        :param ListJobInstancesRequest request
-        :return: ListJobInstancesResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1082,24 +1015,20 @@ class DgcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_jobs(self, request):
         """查询作业列表
 
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListJobsRequest request
-        :return: ListJobsResponse
+        :param request: Request instance for ListJobs
+        :type request: :class:`huaweicloudsdkdgc.v1.ListJobsRequest`
+        :rtype: :class:`huaweicloudsdkdgc.v1.ListJobsResponse`
         """
         return self.list_jobs_with_http_info(request)
 
     def list_jobs_with_http_info(self, request):
-        """查询作业列表
-
-
-        :param ListJobsRequest request
-        :return: ListJobsResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1141,24 +1070,17 @@ class DgcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_resources(self, request):
         """查询资源列表
 
 
-        :param ListResourcesRequest request
-        :return: ListResourcesResponse
+        :param request: Request instance for ListResources
+        :type request: :class:`huaweicloudsdkdgc.v1.ListResourcesRequest`
+        :rtype: :class:`huaweicloudsdkdgc.v1.ListResourcesResponse`
         """
         return self.list_resources_with_http_info(request)
 
     def list_resources_with_http_info(self, request):
-        """查询资源列表
-
-
-        :param ListResourcesRequest request
-        :return: ListResourcesResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1200,24 +1122,20 @@ class DgcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_script_results(self, request):
         """查询脚本实例执行结果
 
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListScriptResultsRequest request
-        :return: ListScriptResultsResponse
+        :param request: Request instance for ListScriptResults
+        :type request: :class:`huaweicloudsdkdgc.v1.ListScriptResultsRequest`
+        :rtype: :class:`huaweicloudsdkdgc.v1.ListScriptResultsResponse`
         """
         return self.list_script_results_with_http_info(request)
 
     def list_script_results_with_http_info(self, request):
-        """查询脚本实例执行结果
-
-
-        :param ListScriptResultsRequest request
-        :return: ListScriptResultsResponse
-        """
-
         all_params = ['script_name', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1263,24 +1181,20 @@ class DgcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_scripts(self, request):
         """查询脚本列表
 
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListScriptsRequest request
-        :return: ListScriptsResponse
+        :param request: Request instance for ListScripts
+        :type request: :class:`huaweicloudsdkdgc.v1.ListScriptsRequest`
+        :rtype: :class:`huaweicloudsdkdgc.v1.ListScriptsResponse`
         """
         return self.list_scripts_with_http_info(request)
 
     def list_scripts_with_http_info(self, request):
-        """查询脚本列表
-
-
-        :param ListScriptsRequest request
-        :return: ListScriptsResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1322,24 +1236,20 @@ class DgcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_system_tasks(self, request):
         """查询系统任务详情
 
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListSystemTasksRequest request
-        :return: ListSystemTasksResponse
+        :param request: Request instance for ListSystemTasks
+        :type request: :class:`huaweicloudsdkdgc.v1.ListSystemTasksRequest`
+        :rtype: :class:`huaweicloudsdkdgc.v1.ListSystemTasksResponse`
         """
         return self.list_system_tasks_with_http_info(request)
 
     def list_system_tasks_with_http_info(self, request):
-        """查询系统任务详情
-
-
-        :param ListSystemTasksRequest request
-        :return: ListSystemTasksResponse
-        """
-
         all_params = ['task_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1383,24 +1293,20 @@ class DgcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def restore_job_instance(self, request):
         """重跑作业实例
 
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param RestoreJobInstanceRequest request
-        :return: RestoreJobInstanceResponse
+        :param request: Request instance for RestoreJobInstance
+        :type request: :class:`huaweicloudsdkdgc.v1.RestoreJobInstanceRequest`
+        :rtype: :class:`huaweicloudsdkdgc.v1.RestoreJobInstanceResponse`
         """
         return self.restore_job_instance_with_http_info(request)
 
     def restore_job_instance_with_http_info(self, request):
-        """重跑作业实例
-
-
-        :param RestoreJobInstanceRequest request
-        :return: RestoreJobInstanceResponse
-        """
-
         all_params = ['job_name', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1446,24 +1352,20 @@ class DgcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def run_once(self, request):
         """单次执行作业
 
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param RunOnceRequest request
-        :return: RunOnceResponse
+        :param request: Request instance for RunOnce
+        :type request: :class:`huaweicloudsdkdgc.v1.RunOnceRequest`
+        :rtype: :class:`huaweicloudsdkdgc.v1.RunOnceResponse`
         """
         return self.run_once_with_http_info(request)
 
     def run_once_with_http_info(self, request):
-        """单次执行作业
-
-
-        :param RunOnceRequest request
-        :return: RunOnceResponse
-        """
-
         all_params = ['job_name', 'body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1509,24 +1411,20 @@ class DgcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_connection(self, request):
         """查询连接详情
 
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowConnectionRequest request
-        :return: ShowConnectionResponse
+        :param request: Request instance for ShowConnection
+        :type request: :class:`huaweicloudsdkdgc.v1.ShowConnectionRequest`
+        :rtype: :class:`huaweicloudsdkdgc.v1.ShowConnectionResponse`
         """
         return self.show_connection_with_http_info(request)
 
     def show_connection_with_http_info(self, request):
-        """查询连接详情
-
-
-        :param ShowConnectionRequest request
-        :return: ShowConnectionResponse
-        """
-
         all_params = ['connection_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1570,24 +1468,20 @@ class DgcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_file_info(self, request):
         """检查导入作业文件中的作业和脚本
 
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowFileInfoRequest request
-        :return: ShowFileInfoResponse
+        :param request: Request instance for ShowFileInfo
+        :type request: :class:`huaweicloudsdkdgc.v1.ShowFileInfoRequest`
+        :rtype: :class:`huaweicloudsdkdgc.v1.ShowFileInfoResponse`
         """
         return self.show_file_info_with_http_info(request)
 
     def show_file_info_with_http_info(self, request):
-        """检查导入作业文件中的作业和脚本
-
-
-        :param ShowFileInfoRequest request
-        :return: ShowFileInfoResponse
-        """
-
         all_params = ['body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1631,24 +1525,20 @@ class DgcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_job(self, request):
         """查询作业详情
 
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowJobRequest request
-        :return: ShowJobResponse
+        :param request: Request instance for ShowJob
+        :type request: :class:`huaweicloudsdkdgc.v1.ShowJobRequest`
+        :rtype: :class:`huaweicloudsdkdgc.v1.ShowJobResponse`
         """
         return self.show_job_with_http_info(request)
 
     def show_job_with_http_info(self, request):
-        """查询作业详情
-
-
-        :param ShowJobRequest request
-        :return: ShowJobResponse
-        """
-
         all_params = ['job_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1692,24 +1582,20 @@ class DgcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_job_instance(self, request):
         """查询作业实例详情
 
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowJobInstanceRequest request
-        :return: ShowJobInstanceResponse
+        :param request: Request instance for ShowJobInstance
+        :type request: :class:`huaweicloudsdkdgc.v1.ShowJobInstanceRequest`
+        :rtype: :class:`huaweicloudsdkdgc.v1.ShowJobInstanceResponse`
         """
         return self.show_job_instance_with_http_info(request)
 
     def show_job_instance_with_http_info(self, request):
-        """查询作业实例详情
-
-
-        :param ShowJobInstanceRequest request
-        :return: ShowJobInstanceResponse
-        """
-
         all_params = ['job_name', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1755,24 +1641,20 @@ class DgcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_job_status(self, request):
         """查询实时作业的运行状态
 
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowJobStatusRequest request
-        :return: ShowJobStatusResponse
+        :param request: Request instance for ShowJobStatus
+        :type request: :class:`huaweicloudsdkdgc.v1.ShowJobStatusRequest`
+        :rtype: :class:`huaweicloudsdkdgc.v1.ShowJobStatusResponse`
         """
         return self.show_job_status_with_http_info(request)
 
     def show_job_status_with_http_info(self, request):
-        """查询实时作业的运行状态
-
-
-        :param ShowJobStatusRequest request
-        :return: ShowJobStatusResponse
-        """
-
         all_params = ['job_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1816,24 +1698,20 @@ class DgcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_resource(self, request):
         """查询资源详情
 
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowResourceRequest request
-        :return: ShowResourceResponse
+        :param request: Request instance for ShowResource
+        :type request: :class:`huaweicloudsdkdgc.v1.ShowResourceRequest`
+        :rtype: :class:`huaweicloudsdkdgc.v1.ShowResourceResponse`
         """
         return self.show_resource_with_http_info(request)
 
     def show_resource_with_http_info(self, request):
-        """查询资源详情
-
-
-        :param ShowResourceRequest request
-        :return: ShowResourceResponse
-        """
-
         all_params = ['resource_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1877,24 +1755,20 @@ class DgcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_script(self, request):
         """查询脚本信息
 
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowScriptRequest request
-        :return: ShowScriptResponse
+        :param request: Request instance for ShowScript
+        :type request: :class:`huaweicloudsdkdgc.v1.ShowScriptRequest`
+        :rtype: :class:`huaweicloudsdkdgc.v1.ShowScriptResponse`
         """
         return self.show_script_with_http_info(request)
 
     def show_script_with_http_info(self, request):
-        """查询脚本信息
-
-
-        :param ShowScriptRequest request
-        :return: ShowScriptResponse
-        """
-
         all_params = ['script_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1938,24 +1812,20 @@ class DgcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def start_job(self, request):
         """启动作业
 
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param StartJobRequest request
-        :return: StartJobResponse
+        :param request: Request instance for StartJob
+        :type request: :class:`huaweicloudsdkdgc.v1.StartJobRequest`
+        :rtype: :class:`huaweicloudsdkdgc.v1.StartJobResponse`
         """
         return self.start_job_with_http_info(request)
 
     def start_job_with_http_info(self, request):
-        """启动作业
-
-
-        :param StartJobRequest request
-        :return: StartJobResponse
-        """
-
         all_params = ['job_name', 'body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2001,24 +1871,20 @@ class DgcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def stop_job(self, request):
         """停止作业
 
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param StopJobRequest request
-        :return: StopJobResponse
+        :param request: Request instance for StopJob
+        :type request: :class:`huaweicloudsdkdgc.v1.StopJobRequest`
+        :rtype: :class:`huaweicloudsdkdgc.v1.StopJobResponse`
         """
         return self.stop_job_with_http_info(request)
 
     def stop_job_with_http_info(self, request):
-        """停止作业
-
-
-        :param StopJobRequest request
-        :return: StopJobResponse
-        """
-
         all_params = ['job_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2062,24 +1928,20 @@ class DgcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def stop_job_instance(self, request):
         """停止作业实例
 
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param StopJobInstanceRequest request
-        :return: StopJobInstanceResponse
+        :param request: Request instance for StopJobInstance
+        :type request: :class:`huaweicloudsdkdgc.v1.StopJobInstanceRequest`
+        :rtype: :class:`huaweicloudsdkdgc.v1.StopJobInstanceResponse`
         """
         return self.stop_job_instance_with_http_info(request)
 
     def stop_job_instance_with_http_info(self, request):
-        """停止作业实例
-
-
-        :param StopJobInstanceRequest request
-        :return: StopJobInstanceResponse
-        """
-
         all_params = ['job_name', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2125,24 +1987,20 @@ class DgcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_connection(self, request):
         """修改连接
 
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateConnectionRequest request
-        :return: UpdateConnectionResponse
+        :param request: Request instance for UpdateConnection
+        :type request: :class:`huaweicloudsdkdgc.v1.UpdateConnectionRequest`
+        :rtype: :class:`huaweicloudsdkdgc.v1.UpdateConnectionResponse`
         """
         return self.update_connection_with_http_info(request)
 
     def update_connection_with_http_info(self, request):
-        """修改连接
-
-
-        :param UpdateConnectionRequest request
-        :return: UpdateConnectionResponse
-        """
-
         all_params = ['connection_name', 'body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2188,24 +2046,20 @@ class DgcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_job(self, request):
         """修改作业
 
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateJobRequest request
-        :return: UpdateJobResponse
+        :param request: Request instance for UpdateJob
+        :type request: :class:`huaweicloudsdkdgc.v1.UpdateJobRequest`
+        :rtype: :class:`huaweicloudsdkdgc.v1.UpdateJobResponse`
         """
         return self.update_job_with_http_info(request)
 
     def update_job_with_http_info(self, request):
-        """修改作业
-
-
-        :param UpdateJobRequest request
-        :return: UpdateJobResponse
-        """
-
         all_params = ['job_name', 'body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2251,24 +2105,20 @@ class DgcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_resource(self, request):
         """修改资源
 
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateResourceRequest request
-        :return: UpdateResourceResponse
+        :param request: Request instance for UpdateResource
+        :type request: :class:`huaweicloudsdkdgc.v1.UpdateResourceRequest`
+        :rtype: :class:`huaweicloudsdkdgc.v1.UpdateResourceResponse`
         """
         return self.update_resource_with_http_info(request)
 
     def update_resource_with_http_info(self, request):
-        """修改资源
-
-
-        :param UpdateResourceRequest request
-        :return: UpdateResourceResponse
-        """
-
         all_params = ['resource_id', 'body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2314,24 +2164,20 @@ class DgcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_script(self, request):
         """修改脚本内容
 
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateScriptRequest request
-        :return: UpdateScriptResponse
+        :param request: Request instance for UpdateScript
+        :type request: :class:`huaweicloudsdkdgc.v1.UpdateScriptRequest`
+        :rtype: :class:`huaweicloudsdkdgc.v1.UpdateScriptResponse`
         """
         return self.update_script_with_http_info(request)
 
     def update_script_with_http_info(self, request):
-        """修改脚本内容
-
-
-        :param UpdateScriptRequest request
-        :return: UpdateScriptResponse
-        """
-
         all_params = ['script_name', 'body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2376,7 +2222,6 @@ class DgcClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

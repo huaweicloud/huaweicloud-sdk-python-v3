@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class HistoryRecord1:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class HistoryRecord1:
     }
 
     def __init__(self, record_id=None, job_id=None, build_number=None, start_time=None, end_time=None, result=None, branch=None, commit_id=None, commit_message=None, executor=None, trigger_type=None):
-        """HistoryRecord1 - a model defined in huaweicloud sdk"""
+        """HistoryRecord1
+
+        The model defined in huaweicloud sdk
+
+        :param record_id: 构建记录id--唯一key
+        :type record_id: str
+        :param job_id: 任务id
+        :type job_id: str
+        :param build_number: 构建编号
+        :type build_number: int
+        :param start_time: 构建开始时间
+        :type start_time: str
+        :param end_time: 构建结束时间
+        :type end_time: str
+        :param result: 构建结果
+        :type result: str
+        :param branch: 代码分支
+        :type branch: str
+        :param commit_id: 代码提交的commit id
+        :type commit_id: str
+        :param commit_message: 代码提交时用户输入的提交信息，只有使用codehub仓库时有值
+        :type commit_message: str
+        :param executor: 执行构建任务的用户的用户名
+        :type executor: str
+        :param trigger_type: 触发方式，可选值：手工触发，定时触发，代码更新触发，流水线触发
+        :type trigger_type: str
+        """
         
         
 
@@ -108,7 +133,7 @@ class HistoryRecord1:
         构建记录id--唯一key
 
         :param record_id: The record_id of this HistoryRecord1.
-        :type: str
+        :type record_id: str
         """
         self._record_id = record_id
 
@@ -130,7 +155,7 @@ class HistoryRecord1:
         任务id
 
         :param job_id: The job_id of this HistoryRecord1.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -152,7 +177,7 @@ class HistoryRecord1:
         构建编号
 
         :param build_number: The build_number of this HistoryRecord1.
-        :type: int
+        :type build_number: int
         """
         self._build_number = build_number
 
@@ -174,7 +199,7 @@ class HistoryRecord1:
         构建开始时间
 
         :param start_time: The start_time of this HistoryRecord1.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -196,7 +221,7 @@ class HistoryRecord1:
         构建结束时间
 
         :param end_time: The end_time of this HistoryRecord1.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -218,7 +243,7 @@ class HistoryRecord1:
         构建结果
 
         :param result: The result of this HistoryRecord1.
-        :type: str
+        :type result: str
         """
         self._result = result
 
@@ -240,7 +265,7 @@ class HistoryRecord1:
         代码分支
 
         :param branch: The branch of this HistoryRecord1.
-        :type: str
+        :type branch: str
         """
         self._branch = branch
 
@@ -262,7 +287,7 @@ class HistoryRecord1:
         代码提交的commit id
 
         :param commit_id: The commit_id of this HistoryRecord1.
-        :type: str
+        :type commit_id: str
         """
         self._commit_id = commit_id
 
@@ -284,7 +309,7 @@ class HistoryRecord1:
         代码提交时用户输入的提交信息，只有使用codehub仓库时有值
 
         :param commit_message: The commit_message of this HistoryRecord1.
-        :type: str
+        :type commit_message: str
         """
         self._commit_message = commit_message
 
@@ -306,7 +331,7 @@ class HistoryRecord1:
         执行构建任务的用户的用户名
 
         :param executor: The executor of this HistoryRecord1.
-        :type: str
+        :type executor: str
         """
         self._executor = executor
 
@@ -328,7 +353,7 @@ class HistoryRecord1:
         触发方式，可选值：手工触发，定时触发，代码更新触发，流水线触发
 
         :param trigger_type: The trigger_type of this HistoryRecord1.
-        :type: str
+        :type trigger_type: str
         """
         self._trigger_type = trigger_type
 

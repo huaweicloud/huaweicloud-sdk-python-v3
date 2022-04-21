@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FaceCompareBase64Req:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class FaceCompareBase64Req:
     }
 
     def __init__(self, image2_base64=None, image1_base64=None):
-        """FaceCompareBase64Req - a model defined in huaweicloud sdk"""
+        """FaceCompareBase64Req
+
+        The model defined in huaweicloud sdk
+
+        :param image2_base64: 图像数据，Base64编码，要求： • Base64编码后大小不超过8MB，建议小于1MB。 • 图片为JPG/JPEG/BMP/PNG格式。
+        :type image2_base64: str
+        :param image1_base64: 图像数据，Base64编码，要求： • Base64编码后大小不超过8MB，建议小于1MB。 • 图片为JPG/JPEG/BMP/PNG格式。
+        :type image1_base64: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class FaceCompareBase64Req:
         图像数据，Base64编码，要求： • Base64编码后大小不超过8MB，建议小于1MB。 • 图片为JPG/JPEG/BMP/PNG格式。
 
         :param image2_base64: The image2_base64 of this FaceCompareBase64Req.
-        :type: str
+        :type image2_base64: str
         """
         self._image2_base64 = image2_base64
 
@@ -83,7 +90,7 @@ class FaceCompareBase64Req:
         图像数据，Base64编码，要求： • Base64编码后大小不超过8MB，建议小于1MB。 • 图片为JPG/JPEG/BMP/PNG格式。
 
         :param image1_base64: The image1_base64 of this FaceCompareBase64Req.
-        :type: str
+        :type image1_base64: str
         """
         self._image1_base64 = image1_base64
 

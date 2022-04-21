@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateInstanceDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class CreateInstanceDetail:
     }
 
     def __init__(self, name=None, flavor_id=None, node_num=None, engine_id=None, enterprise_project_id=None, available_zones=None, vpc_id=None, security_group_id=None, subnet_id=None, param_group_id=None, time_zone=None):
-        """CreateInstanceDetail - a model defined in huaweicloud sdk"""
+        """CreateInstanceDetail
+
+        The model defined in huaweicloud sdk
+
+        :param name: DDM实例名称，命名要求如下。 - 长度为4-64个字符。 - 必须以字母开头。 - 可以包含字母、数字、中划线，不能包含其它特殊字符。
+        :type name: str
+        :param flavor_id: 规格ID。
+        :type flavor_id: str
+        :param node_num: 节点个数。
+        :type node_num: int
+        :param engine_id: 引擎ID。
+        :type engine_id: str
+        :param enterprise_project_id: 企业项目ID。
+        :type enterprise_project_id: str
+        :param available_zones: 可用区code。取值非空，请参见地区和终端节点(https://developer.huaweicloud.com/endpoint?DDM)。
+        :type available_zones: list[str]
+        :param vpc_id: 虚拟私有云的ID。
+        :type vpc_id: str
+        :param security_group_id: 安全组ID。
+        :type security_group_id: str
+        :param subnet_id: 子网ID。
+        :type subnet_id: str
+        :param param_group_id: 参数组ID.
+        :type param_group_id: str
+        :param time_zone: UTC时区。默认为UTC。取值范围：\&quot;UTC\&quot;,\&quot;UTC-12:00\&quot;,\&quot;UTC-11:00\&quot;,\&quot;UTC-10:00\&quot;,\&quot;UTC-09:00\&quot;, \&quot;UTC-08:00\&quot;, \&quot;UTC-07:00\&quot;, \&quot;UTC-06:00\&quot;, \&quot;UTC-05:00\&quot;, \&quot;UTC-04:00\&quot;, \&quot;UTC-03:00\&quot;, \&quot;UTC-02:00\&quot;, \&quot;UTC-01:00\&quot;, \&quot;UTC+01:00\&quot;, \&quot;UTC+02:00\&quot;, \&quot;UTC+03:00\&quot;, \&quot;UTC+04:00\&quot;, \&quot;UTC+05:00\&quot;, \&quot;UTC+06:00\&quot;, \&quot;UTC+07:00\&quot;, \&quot;UTC+08:00\&quot;, \&quot;UTC+09:00\&quot;, \&quot;UTC+10:00\&quot;, \&quot;UTC+11:00\&quot;, \&quot;UTC+12:00\&quot;
+        :type time_zone: str
+        """
         
         
 
@@ -100,7 +125,7 @@ class CreateInstanceDetail:
         DDM实例名称，命名要求如下。 - 长度为4-64个字符。 - 必须以字母开头。 - 可以包含字母、数字、中划线，不能包含其它特殊字符。
 
         :param name: The name of this CreateInstanceDetail.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -122,7 +147,7 @@ class CreateInstanceDetail:
         规格ID。
 
         :param flavor_id: The flavor_id of this CreateInstanceDetail.
-        :type: str
+        :type flavor_id: str
         """
         self._flavor_id = flavor_id
 
@@ -144,7 +169,7 @@ class CreateInstanceDetail:
         节点个数。
 
         :param node_num: The node_num of this CreateInstanceDetail.
-        :type: int
+        :type node_num: int
         """
         self._node_num = node_num
 
@@ -166,7 +191,7 @@ class CreateInstanceDetail:
         引擎ID。
 
         :param engine_id: The engine_id of this CreateInstanceDetail.
-        :type: str
+        :type engine_id: str
         """
         self._engine_id = engine_id
 
@@ -188,7 +213,7 @@ class CreateInstanceDetail:
         企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this CreateInstanceDetail.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -210,7 +235,7 @@ class CreateInstanceDetail:
         可用区code。取值非空，请参见地区和终端节点(https://developer.huaweicloud.com/endpoint?DDM)。
 
         :param available_zones: The available_zones of this CreateInstanceDetail.
-        :type: list[str]
+        :type available_zones: list[str]
         """
         self._available_zones = available_zones
 
@@ -232,7 +257,7 @@ class CreateInstanceDetail:
         虚拟私有云的ID。
 
         :param vpc_id: The vpc_id of this CreateInstanceDetail.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -254,7 +279,7 @@ class CreateInstanceDetail:
         安全组ID。
 
         :param security_group_id: The security_group_id of this CreateInstanceDetail.
-        :type: str
+        :type security_group_id: str
         """
         self._security_group_id = security_group_id
 
@@ -276,7 +301,7 @@ class CreateInstanceDetail:
         子网ID。
 
         :param subnet_id: The subnet_id of this CreateInstanceDetail.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -298,7 +323,7 @@ class CreateInstanceDetail:
         参数组ID.
 
         :param param_group_id: The param_group_id of this CreateInstanceDetail.
-        :type: str
+        :type param_group_id: str
         """
         self._param_group_id = param_group_id
 
@@ -320,7 +345,7 @@ class CreateInstanceDetail:
         UTC时区。默认为UTC。取值范围：\"UTC\",\"UTC-12:00\",\"UTC-11:00\",\"UTC-10:00\",\"UTC-09:00\", \"UTC-08:00\", \"UTC-07:00\", \"UTC-06:00\", \"UTC-05:00\", \"UTC-04:00\", \"UTC-03:00\", \"UTC-02:00\", \"UTC-01:00\", \"UTC+01:00\", \"UTC+02:00\", \"UTC+03:00\", \"UTC+04:00\", \"UTC+05:00\", \"UTC+06:00\", \"UTC+07:00\", \"UTC+08:00\", \"UTC+09:00\", \"UTC+10:00\", \"UTC+11:00\", \"UTC+12:00\"
 
         :param time_zone: The time_zone of this CreateInstanceDetail.
-        :type: str
+        :type time_zone: str
         """
         self._time_zone = time_zone
 

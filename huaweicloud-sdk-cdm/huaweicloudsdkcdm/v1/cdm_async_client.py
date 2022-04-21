@@ -52,21 +52,17 @@ class CdmAsyncClient(Client):
         """随机集群创建作业并执行
 
         随机集群创建作业并执行接口。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateAndStartRandomClusterJobRequest request
-        :return: CreateAndStartRandomClusterJobResponse
+        :param request: Request instance for CreateAndStartRandomClusterJob
+        :type request: :class:`huaweicloudsdkcdm.v1.CreateAndStartRandomClusterJobRequest`
+        :rtype: :class:`huaweicloudsdkcdm.v1.CreateAndStartRandomClusterJobResponse`
         """
         return self.create_and_start_random_cluster_job_with_http_info(request)
 
     def create_and_start_random_cluster_job_with_http_info(self, request):
-        """随机集群创建作业并执行
-
-        随机集群创建作业并执行接口。
-
-        :param CreateAndStartRandomClusterJobRequest request
-        :return: CreateAndStartRandomClusterJobResponse
-        """
-
         all_params = ['x_language', 'cdm_random_create_and_start_job_json_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -112,26 +108,21 @@ class CdmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_cluster_async(self, request):
         """创建集群
 
         创建集群接口。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateClusterRequest request
-        :return: CreateClusterResponse
+        :param request: Request instance for CreateCluster
+        :type request: :class:`huaweicloudsdkcdm.v1.CreateClusterRequest`
+        :rtype: :class:`huaweicloudsdkcdm.v1.CreateClusterResponse`
         """
         return self.create_cluster_with_http_info(request)
 
     def create_cluster_with_http_info(self, request):
-        """创建集群
-
-        创建集群接口。
-
-        :param CreateClusterRequest request
-        :return: CreateClusterResponse
-        """
-
         all_params = ['x_language', 'cdm_create_cluster_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -177,26 +168,21 @@ class CdmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_job_async(self, request):
         """指定集群创建作业
 
         指定集群创建作业接口。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateJobRequest request
-        :return: CreateJobResponse
+        :param request: Request instance for CreateJob
+        :type request: :class:`huaweicloudsdkcdm.v1.CreateJobRequest`
+        :rtype: :class:`huaweicloudsdkcdm.v1.CreateJobResponse`
         """
         return self.create_job_with_http_info(request)
 
     def create_job_with_http_info(self, request):
-        """指定集群创建作业
-
-        指定集群创建作业接口。
-
-        :param CreateJobRequest request
-        :return: CreateJobResponse
-        """
-
         all_params = ['cluster_id', 'cdm_start_job_json_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -242,26 +228,21 @@ class CdmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_link_async(self, request):
         """创建连接
 
         创建连接接口。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateLinkRequest request
-        :return: CreateLinkResponse
+        :param request: Request instance for CreateLink
+        :type request: :class:`huaweicloudsdkcdm.v1.CreateLinkRequest`
+        :rtype: :class:`huaweicloudsdkcdm.v1.CreateLinkResponse`
         """
         return self.create_link_with_http_info(request)
 
     def create_link_with_http_info(self, request):
-        """创建连接
-
-        创建连接接口。
-
-        :param CreateLinkRequest request
-        :return: CreateLinkResponse
-        """
-
         all_params = ['cluster_id', 'cdm_create_link_req', 'validate']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -309,26 +290,21 @@ class CdmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_cluster_async(self, request):
         """删除集群
 
         删除集群接口。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteClusterRequest request
-        :return: DeleteClusterResponse
+        :param request: Request instance for DeleteCluster
+        :type request: :class:`huaweicloudsdkcdm.v1.DeleteClusterRequest`
+        :rtype: :class:`huaweicloudsdkcdm.v1.DeleteClusterResponse`
         """
         return self.delete_cluster_with_http_info(request)
 
     def delete_cluster_with_http_info(self, request):
-        """删除集群
-
-        删除集群接口。
-
-        :param DeleteClusterRequest request
-        :return: DeleteClusterResponse
-        """
-
         all_params = ['cluster_id', 'cdm_delete_cluster_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -374,26 +350,21 @@ class CdmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_job_async(self, request):
         """删除作业
 
         删除作业接口。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteJobRequest request
-        :return: DeleteJobResponse
+        :param request: Request instance for DeleteJob
+        :type request: :class:`huaweicloudsdkcdm.v1.DeleteJobRequest`
+        :rtype: :class:`huaweicloudsdkcdm.v1.DeleteJobResponse`
         """
         return self.delete_job_with_http_info(request)
 
     def delete_job_with_http_info(self, request):
-        """删除作业
-
-        删除作业接口。
-
-        :param DeleteJobRequest request
-        :return: DeleteJobResponse
-        """
-
         all_params = ['cluster_id', 'job_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -439,26 +410,21 @@ class CdmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_link_async(self, request):
         """删除连接
 
         删除连接接口。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteLinkRequest request
-        :return: DeleteLinkResponse
+        :param request: Request instance for DeleteLink
+        :type request: :class:`huaweicloudsdkcdm.v1.DeleteLinkRequest`
+        :rtype: :class:`huaweicloudsdkcdm.v1.DeleteLinkResponse`
         """
         return self.delete_link_with_http_info(request)
 
     def delete_link_with_http_info(self, request):
-        """删除连接
-
-        删除连接接口。
-
-        :param DeleteLinkRequest request
-        :return: DeleteLinkResponse
-        """
-
         all_params = ['cluster_id', 'link_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -504,26 +470,21 @@ class CdmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_clusters_async(self, request):
         """查询集群列表
 
         查询集群列表接口。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListClustersRequest request
-        :return: ListClustersResponse
+        :param request: Request instance for ListClusters
+        :type request: :class:`huaweicloudsdkcdm.v1.ListClustersRequest`
+        :rtype: :class:`huaweicloudsdkcdm.v1.ListClustersResponse`
         """
         return self.list_clusters_with_http_info(request)
 
     def list_clusters_with_http_info(self, request):
-        """查询集群列表
-
-        查询集群列表接口。
-
-        :param ListClustersRequest request
-        :return: ListClustersResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -565,26 +526,21 @@ class CdmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def restart_cluster_async(self, request):
         """重启集群
 
         重启集群接口。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param RestartClusterRequest request
-        :return: RestartClusterResponse
+        :param request: Request instance for RestartCluster
+        :type request: :class:`huaweicloudsdkcdm.v1.RestartClusterRequest`
+        :rtype: :class:`huaweicloudsdkcdm.v1.RestartClusterResponse`
         """
         return self.restart_cluster_with_http_info(request)
 
     def restart_cluster_with_http_info(self, request):
-        """重启集群
-
-        重启集群接口。
-
-        :param RestartClusterRequest request
-        :return: RestartClusterResponse
-        """
-
         all_params = ['cluster_id', 'cdm_restart_cluster_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -630,26 +586,21 @@ class CdmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_cluster_detail_async(self, request):
         """查询集群详情
 
         查询集群详情接口。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowClusterDetailRequest request
-        :return: ShowClusterDetailResponse
+        :param request: Request instance for ShowClusterDetail
+        :type request: :class:`huaweicloudsdkcdm.v1.ShowClusterDetailRequest`
+        :rtype: :class:`huaweicloudsdkcdm.v1.ShowClusterDetailResponse`
         """
         return self.show_cluster_detail_with_http_info(request)
 
     def show_cluster_detail_with_http_info(self, request):
-        """查询集群详情
-
-        查询集群详情接口。
-
-        :param ShowClusterDetailRequest request
-        :return: ShowClusterDetailResponse
-        """
-
         all_params = ['cluster_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -693,26 +644,21 @@ class CdmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_job_status_async(self, request):
         """查询作业状态
 
         查询作业状态接口。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowJobStatusRequest request
-        :return: ShowJobStatusResponse
+        :param request: Request instance for ShowJobStatus
+        :type request: :class:`huaweicloudsdkcdm.v1.ShowJobStatusRequest`
+        :rtype: :class:`huaweicloudsdkcdm.v1.ShowJobStatusResponse`
         """
         return self.show_job_status_with_http_info(request)
 
     def show_job_status_with_http_info(self, request):
-        """查询作业状态
-
-        查询作业状态接口。
-
-        :param ShowJobStatusRequest request
-        :return: ShowJobStatusResponse
-        """
-
         all_params = ['cluster_id', 'job_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -758,26 +704,21 @@ class CdmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_jobs_async(self, request):
         """查询作业
 
         查询作业接口。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowJobsRequest request
-        :return: ShowJobsResponse
+        :param request: Request instance for ShowJobs
+        :type request: :class:`huaweicloudsdkcdm.v1.ShowJobsRequest`
+        :rtype: :class:`huaweicloudsdkcdm.v1.ShowJobsResponse`
         """
         return self.show_jobs_with_http_info(request)
 
     def show_jobs_with_http_info(self, request):
-        """查询作业
-
-        查询作业接口。
-
-        :param ShowJobsRequest request
-        :return: ShowJobsResponse
-        """
-
         all_params = ['cluster_id', 'job_name', 'filter', 'page_no', 'page_size', 'job_type']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -831,26 +772,21 @@ class CdmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_link_async(self, request):
         """查询连接
 
         查询连接接口。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowLinkRequest request
-        :return: ShowLinkResponse
+        :param request: Request instance for ShowLink
+        :type request: :class:`huaweicloudsdkcdm.v1.ShowLinkRequest`
+        :rtype: :class:`huaweicloudsdkcdm.v1.ShowLinkResponse`
         """
         return self.show_link_with_http_info(request)
 
     def show_link_with_http_info(self, request):
-        """查询连接
-
-        查询连接接口。
-
-        :param ShowLinkRequest request
-        :return: ShowLinkResponse
-        """
-
         all_params = ['cluster_id', 'link_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -896,26 +832,21 @@ class CdmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_submissions_async(self, request):
         """查询作业执行历史
 
         查询作业执行历史接口。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowSubmissionsRequest request
-        :return: ShowSubmissionsResponse
+        :param request: Request instance for ShowSubmissions
+        :type request: :class:`huaweicloudsdkcdm.v1.ShowSubmissionsRequest`
+        :rtype: :class:`huaweicloudsdkcdm.v1.ShowSubmissionsResponse`
         """
         return self.show_submissions_with_http_info(request)
 
     def show_submissions_with_http_info(self, request):
-        """查询作业执行历史
-
-        查询作业执行历史接口。
-
-        :param ShowSubmissionsRequest request
-        :return: ShowSubmissionsResponse
-        """
-
         all_params = ['cluster_id', 'jname']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -961,26 +892,21 @@ class CdmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def start_cluster_async(self, request):
         """启动集群
 
         启动集群接口。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param StartClusterRequest request
-        :return: StartClusterResponse
+        :param request: Request instance for StartCluster
+        :type request: :class:`huaweicloudsdkcdm.v1.StartClusterRequest`
+        :rtype: :class:`huaweicloudsdkcdm.v1.StartClusterResponse`
         """
         return self.start_cluster_with_http_info(request)
 
     def start_cluster_with_http_info(self, request):
-        """启动集群
-
-        启动集群接口。
-
-        :param StartClusterRequest request
-        :return: StartClusterResponse
-        """
-
         all_params = ['cluster_id', 'cdm_start_cluster_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1026,26 +952,21 @@ class CdmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def start_job_async(self, request):
         """启动作业
 
         启动作业接口。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param StartJobRequest request
-        :return: StartJobResponse
+        :param request: Request instance for StartJob
+        :type request: :class:`huaweicloudsdkcdm.v1.StartJobRequest`
+        :rtype: :class:`huaweicloudsdkcdm.v1.StartJobResponse`
         """
         return self.start_job_with_http_info(request)
 
     def start_job_with_http_info(self, request):
-        """启动作业
-
-        启动作业接口。
-
-        :param StartJobRequest request
-        :return: StartJobResponse
-        """
-
         all_params = ['cluster_id', 'job_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1091,26 +1012,21 @@ class CdmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def stop_cluster_async(self, request):
         """停止集群
 
         停止集群接口。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param StopClusterRequest request
-        :return: StopClusterResponse
+        :param request: Request instance for StopCluster
+        :type request: :class:`huaweicloudsdkcdm.v1.StopClusterRequest`
+        :rtype: :class:`huaweicloudsdkcdm.v1.StopClusterResponse`
         """
         return self.stop_cluster_with_http_info(request)
 
     def stop_cluster_with_http_info(self, request):
-        """停止集群
-
-        停止集群接口。
-
-        :param StopClusterRequest request
-        :return: StopClusterResponse
-        """
-
         all_params = ['cluster_id', 'cdm_stop_cluster_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1156,26 +1072,21 @@ class CdmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def stop_job_async(self, request):
         """停止作业
 
         停止作业接口。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param StopJobRequest request
-        :return: StopJobResponse
+        :param request: Request instance for StopJob
+        :type request: :class:`huaweicloudsdkcdm.v1.StopJobRequest`
+        :rtype: :class:`huaweicloudsdkcdm.v1.StopJobResponse`
         """
         return self.stop_job_with_http_info(request)
 
     def stop_job_with_http_info(self, request):
-        """停止作业
-
-        停止作业接口。
-
-        :param StopJobRequest request
-        :return: StopJobResponse
-        """
-
         all_params = ['cluster_id', 'job_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1221,26 +1132,21 @@ class CdmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_job_async(self, request):
         """修改作业
 
         修改作业接口。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateJobRequest request
-        :return: UpdateJobResponse
+        :param request: Request instance for UpdateJob
+        :type request: :class:`huaweicloudsdkcdm.v1.UpdateJobRequest`
+        :rtype: :class:`huaweicloudsdkcdm.v1.UpdateJobResponse`
         """
         return self.update_job_with_http_info(request)
 
     def update_job_with_http_info(self, request):
-        """修改作业
-
-        修改作业接口。
-
-        :param UpdateJobRequest request
-        :return: UpdateJobResponse
-        """
-
         all_params = ['cluster_id', 'job_name', 'cdm_update_job_json_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1288,26 +1194,21 @@ class CdmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_link_async(self, request):
         """修改连接
 
         修改连接接口。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateLinkRequest request
-        :return: UpdateLinkResponse
+        :param request: Request instance for UpdateLink
+        :type request: :class:`huaweicloudsdkcdm.v1.UpdateLinkRequest`
+        :rtype: :class:`huaweicloudsdkcdm.v1.UpdateLinkResponse`
         """
         return self.update_link_with_http_info(request)
 
     def update_link_with_http_info(self, request):
-        """修改连接
-
-        修改连接接口。
-
-        :param UpdateLinkRequest request
-        :return: UpdateLinkResponse
-        """
-
         all_params = ['cluster_id', 'link_name', 'cdm_update_link_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1354,7 +1255,6 @@ class CdmAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

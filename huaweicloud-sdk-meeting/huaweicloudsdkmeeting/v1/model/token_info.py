@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TokenInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class TokenInfo:
     }
 
     def __init__(self, token=None, tmp_ws_token=None, ws_url=None, role=None, expire_time=None, user_id=None, org_id=None, participant_id=None, conf_token_expire_time=None, vmr_current_conf_id=None, support_notify_type=None):
-        """TokenInfo - a model defined in huaweicloud sdk"""
+        """TokenInfo
+
+        The model defined in huaweicloud sdk
+
+        :param token: 会控鉴权Token。
+        :type token: str
+        :param tmp_ws_token: websocket建链鉴权Token，成功时必带。
+        :type tmp_ws_token: str
+        :param ws_url: websocket建链URL。
+        :type ws_url: str
+        :param role: 会议中的角色 1：会议主席 0：普通与会者
+        :type role: int
+        :param expire_time: 会话过期时间。UTC时间毫秒数。
+        :type expire_time: int
+        :param user_id: 会议预定人ID。
+        :type user_id: str
+        :param org_id: 会议所属企业ID。
+        :type org_id: str
+        :param participant_id: 终端请求时，返回终端入会后会场ID。
+        :type participant_id: str
+        :param conf_token_expire_time: 会控token失效的时间。（单位秒）
+        :type conf_token_expire_time: int
+        :param vmr_current_conf_id: 云会议室会议的当前会议ID。
+        :type vmr_current_conf_id: str
+        :param support_notify_type: websocket消息推送支持类型。
+        :type support_notify_type: list[str]
+        """
         
         
 
@@ -108,7 +133,7 @@ class TokenInfo:
         会控鉴权Token。
 
         :param token: The token of this TokenInfo.
-        :type: str
+        :type token: str
         """
         self._token = token
 
@@ -130,7 +155,7 @@ class TokenInfo:
         websocket建链鉴权Token，成功时必带。
 
         :param tmp_ws_token: The tmp_ws_token of this TokenInfo.
-        :type: str
+        :type tmp_ws_token: str
         """
         self._tmp_ws_token = tmp_ws_token
 
@@ -152,7 +177,7 @@ class TokenInfo:
         websocket建链URL。
 
         :param ws_url: The ws_url of this TokenInfo.
-        :type: str
+        :type ws_url: str
         """
         self._ws_url = ws_url
 
@@ -174,7 +199,7 @@ class TokenInfo:
         会议中的角色 1：会议主席 0：普通与会者
 
         :param role: The role of this TokenInfo.
-        :type: int
+        :type role: int
         """
         self._role = role
 
@@ -196,7 +221,7 @@ class TokenInfo:
         会话过期时间。UTC时间毫秒数。
 
         :param expire_time: The expire_time of this TokenInfo.
-        :type: int
+        :type expire_time: int
         """
         self._expire_time = expire_time
 
@@ -218,7 +243,7 @@ class TokenInfo:
         会议预定人ID。
 
         :param user_id: The user_id of this TokenInfo.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -240,7 +265,7 @@ class TokenInfo:
         会议所属企业ID。
 
         :param org_id: The org_id of this TokenInfo.
-        :type: str
+        :type org_id: str
         """
         self._org_id = org_id
 
@@ -262,7 +287,7 @@ class TokenInfo:
         终端请求时，返回终端入会后会场ID。
 
         :param participant_id: The participant_id of this TokenInfo.
-        :type: str
+        :type participant_id: str
         """
         self._participant_id = participant_id
 
@@ -284,7 +309,7 @@ class TokenInfo:
         会控token失效的时间。（单位秒）
 
         :param conf_token_expire_time: The conf_token_expire_time of this TokenInfo.
-        :type: int
+        :type conf_token_expire_time: int
         """
         self._conf_token_expire_time = conf_token_expire_time
 
@@ -306,7 +331,7 @@ class TokenInfo:
         云会议室会议的当前会议ID。
 
         :param vmr_current_conf_id: The vmr_current_conf_id of this TokenInfo.
-        :type: str
+        :type vmr_current_conf_id: str
         """
         self._vmr_current_conf_id = vmr_current_conf_id
 
@@ -328,7 +353,7 @@ class TokenInfo:
         websocket消息推送支持类型。
 
         :param support_notify_type: The support_notify_type of this TokenInfo.
-        :type: list[str]
+        :type support_notify_type: list[str]
         """
         self._support_notify_type = support_notify_type
 

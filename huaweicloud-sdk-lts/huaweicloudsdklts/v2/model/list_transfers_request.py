@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTransfersRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListTransfersRequest:
     }
 
     def __init__(self, log_transfer_type=None, log_group_name=None, log_stream_name=None, offset=None, limit=None):
-        """ListTransfersRequest - a model defined in huaweicloud sdk"""
+        """ListTransfersRequest
+
+        The model defined in huaweicloud sdk
+
+        :param log_transfer_type: 日志转储类型。OBS指OBS日志转储，DIS指DIS日志转储，DMS指DMS日志转储
+        :type log_transfer_type: str
+        :param log_group_name: 日志组名称
+        :type log_group_name: str
+        :param log_stream_name: 日志流名称
+        :type log_stream_name: str
+        :param offset: 查询游标，初始传入0，后续从上一次的返回值中获取
+        :type offset: int
+        :param limit: 每页数据量，最大值为100
+        :type limit: int
+        """
         
         
 
@@ -78,7 +91,7 @@ class ListTransfersRequest:
         日志转储类型。OBS指OBS日志转储，DIS指DIS日志转储，DMS指DMS日志转储
 
         :param log_transfer_type: The log_transfer_type of this ListTransfersRequest.
-        :type: str
+        :type log_transfer_type: str
         """
         self._log_transfer_type = log_transfer_type
 
@@ -100,7 +113,7 @@ class ListTransfersRequest:
         日志组名称
 
         :param log_group_name: The log_group_name of this ListTransfersRequest.
-        :type: str
+        :type log_group_name: str
         """
         self._log_group_name = log_group_name
 
@@ -122,7 +135,7 @@ class ListTransfersRequest:
         日志流名称
 
         :param log_stream_name: The log_stream_name of this ListTransfersRequest.
-        :type: str
+        :type log_stream_name: str
         """
         self._log_stream_name = log_stream_name
 
@@ -144,7 +157,7 @@ class ListTransfersRequest:
         查询游标，初始传入0，后续从上一次的返回值中获取
 
         :param offset: The offset of this ListTransfersRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -166,7 +179,7 @@ class ListTransfersRequest:
         每页数据量，最大值为100
 
         :param limit: The limit of this ListTransfersRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

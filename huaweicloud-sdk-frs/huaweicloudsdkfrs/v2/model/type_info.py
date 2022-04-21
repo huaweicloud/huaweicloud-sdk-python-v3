@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TypeInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class TypeInfo:
     }
 
     def __init__(self, type=None):
-        """TypeInfo - a model defined in huaweicloud sdk"""
+        """TypeInfo
+
+        The model defined in huaweicloud sdk
+
+        :param type: 数据类型:string,integer,double,long等。
+        :type type: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class TypeInfo:
         数据类型:string,integer,double,long等。
 
         :param type: The type of this TypeInfo.
-        :type: str
+        :type type: str
         """
         self._type = type
 

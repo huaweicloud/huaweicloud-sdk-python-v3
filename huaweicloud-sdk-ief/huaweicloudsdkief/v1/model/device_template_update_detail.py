@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeviceTemplateUpdateDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class DeviceTemplateUpdateDetail:
     }
 
     def __init__(self, description=None, attributes=None, twin=None, tags=None, access_protocol=None, property_visitors=None):
-        """DeviceTemplateUpdateDetail - a model defined in huaweicloud sdk"""
+        """DeviceTemplateUpdateDetail
+
+        The model defined in huaweicloud sdk
+
+        :param description: 设备模板描述,最大长度255
+        :type description: str
+        :param attributes: 终端设备静态属性，最多64个键值。
+        :type attributes: dict(str, ValueInAttributes)
+        :param twin: 终端设备动态属性
+        :type twin: dict(str, ValueInTwin)
+        :param tags: 
+        :type tags: :class:`huaweicloudsdkief.v1.DeviceTemplateUpdateDetailTags`
+        :param access_protocol: - userdefine：自定义协议 - modbus：modbus协议 - opc-ua：opc-ua协议
+        :type access_protocol: str
+        :param property_visitors: 孪生属性配置，与access_protocol关联。
+        :type property_visitors: dict(str, ValueInPropertyVisitors)
+        """
         
         
 
@@ -83,7 +98,7 @@ class DeviceTemplateUpdateDetail:
         设备模板描述,最大长度255
 
         :param description: The description of this DeviceTemplateUpdateDetail.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -105,7 +120,7 @@ class DeviceTemplateUpdateDetail:
         终端设备静态属性，最多64个键值。
 
         :param attributes: The attributes of this DeviceTemplateUpdateDetail.
-        :type: dict(str, ValueInAttributes)
+        :type attributes: dict(str, ValueInAttributes)
         """
         self._attributes = attributes
 
@@ -127,7 +142,7 @@ class DeviceTemplateUpdateDetail:
         终端设备动态属性
 
         :param twin: The twin of this DeviceTemplateUpdateDetail.
-        :type: dict(str, ValueInTwin)
+        :type twin: dict(str, ValueInTwin)
         """
         self._twin = twin
 
@@ -137,7 +152,7 @@ class DeviceTemplateUpdateDetail:
 
 
         :return: The tags of this DeviceTemplateUpdateDetail.
-        :rtype: DeviceTemplateUpdateDetailTags
+        :rtype: :class:`huaweicloudsdkief.v1.DeviceTemplateUpdateDetailTags`
         """
         return self._tags
 
@@ -147,7 +162,7 @@ class DeviceTemplateUpdateDetail:
 
 
         :param tags: The tags of this DeviceTemplateUpdateDetail.
-        :type: DeviceTemplateUpdateDetailTags
+        :type tags: :class:`huaweicloudsdkief.v1.DeviceTemplateUpdateDetailTags`
         """
         self._tags = tags
 
@@ -169,7 +184,7 @@ class DeviceTemplateUpdateDetail:
         - userdefine：自定义协议 - modbus：modbus协议 - opc-ua：opc-ua协议
 
         :param access_protocol: The access_protocol of this DeviceTemplateUpdateDetail.
-        :type: str
+        :type access_protocol: str
         """
         self._access_protocol = access_protocol
 
@@ -191,7 +206,7 @@ class DeviceTemplateUpdateDetail:
         孪生属性配置，与access_protocol关联。
 
         :param property_visitors: The property_visitors of this DeviceTemplateUpdateDetail.
-        :type: dict(str, ValueInPropertyVisitors)
+        :type property_visitors: dict(str, ValueInPropertyVisitors)
         """
         self._property_visitors = property_visitors
 

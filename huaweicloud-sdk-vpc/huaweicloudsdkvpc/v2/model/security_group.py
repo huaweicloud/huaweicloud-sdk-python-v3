@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SecurityGroup:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class SecurityGroup:
     }
 
     def __init__(self, name=None, description=None, id=None, vpc_id=None, enterprise_project_id=None, security_group_rules=None):
-        """SecurityGroup - a model defined in huaweicloud sdk"""
+        """SecurityGroup
+
+        The model defined in huaweicloud sdk
+
+        :param name: 安全组名称
+        :type name: str
+        :param description: 安全组描述
+        :type description: str
+        :param id: 安全组唯一标识
+        :type id: str
+        :param vpc_id: 安全组所在的vpc的资源标识
+        :type vpc_id: str
+        :param enterprise_project_id: 功能说明：企业项目ID。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。
+        :type enterprise_project_id: str
+        :param security_group_rules: 安全组规则
+        :type security_group_rules: list[:class:`huaweicloudsdkvpc.v2.SecurityGroupRule`]
+        """
         
         
 
@@ -80,7 +95,7 @@ class SecurityGroup:
         安全组名称
 
         :param name: The name of this SecurityGroup.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -102,7 +117,7 @@ class SecurityGroup:
         安全组描述
 
         :param description: The description of this SecurityGroup.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -124,7 +139,7 @@ class SecurityGroup:
         安全组唯一标识
 
         :param id: The id of this SecurityGroup.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -146,7 +161,7 @@ class SecurityGroup:
         安全组所在的vpc的资源标识
 
         :param vpc_id: The vpc_id of this SecurityGroup.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -168,7 +183,7 @@ class SecurityGroup:
         功能说明：企业项目ID。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。
 
         :param enterprise_project_id: The enterprise_project_id of this SecurityGroup.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -179,7 +194,7 @@ class SecurityGroup:
         安全组规则
 
         :return: The security_group_rules of this SecurityGroup.
-        :rtype: list[SecurityGroupRule]
+        :rtype: list[:class:`huaweicloudsdkvpc.v2.SecurityGroupRule`]
         """
         return self._security_group_rules
 
@@ -190,7 +205,7 @@ class SecurityGroup:
         安全组规则
 
         :param security_group_rules: The security_group_rules of this SecurityGroup.
-        :type: list[SecurityGroupRule]
+        :type security_group_rules: list[:class:`huaweicloudsdkvpc.v2.SecurityGroupRule`]
         """
         self._security_group_rules = security_group_rules
 

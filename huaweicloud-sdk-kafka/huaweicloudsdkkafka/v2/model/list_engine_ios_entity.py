@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListEngineIosEntity:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListEngineIosEntity:
     }
 
     def __init__(self, io_spec=None, type=None, available_zones=None, unavailable_zones=None):
-        """ListEngineIosEntity - a model defined in huaweicloud sdk"""
+        """ListEngineIosEntity
+
+        The model defined in huaweicloud sdk
+
+        :param io_spec: 磁盘IO编码。
+        :type io_spec: str
+        :param type: 磁盘类型。
+        :type type: str
+        :param available_zones: 可用区。
+        :type available_zones: list[str]
+        :param unavailable_zones: 不可用区。
+        :type unavailable_zones: list[str]
+        """
         
         
 
@@ -73,7 +84,7 @@ class ListEngineIosEntity:
         磁盘IO编码。
 
         :param io_spec: The io_spec of this ListEngineIosEntity.
-        :type: str
+        :type io_spec: str
         """
         self._io_spec = io_spec
 
@@ -95,7 +106,7 @@ class ListEngineIosEntity:
         磁盘类型。
 
         :param type: The type of this ListEngineIosEntity.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -117,7 +128,7 @@ class ListEngineIosEntity:
         可用区。
 
         :param available_zones: The available_zones of this ListEngineIosEntity.
-        :type: list[str]
+        :type available_zones: list[str]
         """
         self._available_zones = available_zones
 
@@ -139,7 +150,7 @@ class ListEngineIosEntity:
         不可用区。
 
         :param unavailable_zones: The unavailable_zones of this ListEngineIosEntity.
-        :type: list[str]
+        :type unavailable_zones: list[str]
         """
         self._unavailable_zones = unavailable_zones
 

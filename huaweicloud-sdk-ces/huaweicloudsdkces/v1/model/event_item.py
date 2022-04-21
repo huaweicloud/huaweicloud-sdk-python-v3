@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EventItem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class EventItem:
     }
 
     def __init__(self, event_name=None, event_source=None, time=None, detail=None):
-        """EventItem - a model defined in huaweicloud sdk"""
+        """EventItem
+
+        The model defined in huaweicloud sdk
+
+        :param event_name: 事件名称。  必须以字母开头，只能包含0-9/a-z/A-Z/_，长度最短为1，最大为64。
+        :type event_name: str
+        :param event_source: 事件来源。 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_，总长度最短为3，最大为32。
+        :type event_source: str
+        :param time: 事件发生时间。UNIX时间戳，单位毫秒。  说明： 因为客户端到服务器端有延时，因此插入数据的时间戳应该在[当前时间-1小时+20秒，当前时间+10分钟-20秒]区间内，保证到达服务器时不会因为传输时延造成数据不能插入数据库。
+        :type time: int
+        :param detail: 
+        :type detail: :class:`huaweicloudsdkces.v1.EventItemDetail`
+        """
         
         
 
@@ -69,7 +80,7 @@ class EventItem:
         事件名称。  必须以字母开头，只能包含0-9/a-z/A-Z/_，长度最短为1，最大为64。
 
         :param event_name: The event_name of this EventItem.
-        :type: str
+        :type event_name: str
         """
         self._event_name = event_name
 
@@ -91,7 +102,7 @@ class EventItem:
         事件来源。 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_，总长度最短为3，最大为32。
 
         :param event_source: The event_source of this EventItem.
-        :type: str
+        :type event_source: str
         """
         self._event_source = event_source
 
@@ -113,7 +124,7 @@ class EventItem:
         事件发生时间。UNIX时间戳，单位毫秒。  说明： 因为客户端到服务器端有延时，因此插入数据的时间戳应该在[当前时间-1小时+20秒，当前时间+10分钟-20秒]区间内，保证到达服务器时不会因为传输时延造成数据不能插入数据库。
 
         :param time: The time of this EventItem.
-        :type: int
+        :type time: int
         """
         self._time = time
 
@@ -123,7 +134,7 @@ class EventItem:
 
 
         :return: The detail of this EventItem.
-        :rtype: EventItemDetail
+        :rtype: :class:`huaweicloudsdkces.v1.EventItemDetail`
         """
         return self._detail
 
@@ -133,7 +144,7 @@ class EventItem:
 
 
         :param detail: The detail of this EventItem.
-        :type: EventItemDetail
+        :type detail: :class:`huaweicloudsdkces.v1.EventItemDetail`
         """
         self._detail = detail
 

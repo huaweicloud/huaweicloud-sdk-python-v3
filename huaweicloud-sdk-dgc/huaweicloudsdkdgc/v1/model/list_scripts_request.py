@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListScriptsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class ListScriptsRequest:
     }
 
     def __init__(self):
-        """ListScriptsRequest - a model defined in huaweicloud sdk"""
+        """ListScriptsRequest
+
+        The model defined in huaweicloud sdk
+
+        """
         
         
         self.discriminator = None

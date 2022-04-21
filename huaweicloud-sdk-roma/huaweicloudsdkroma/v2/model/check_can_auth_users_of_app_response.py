@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CheckCanAuthUsersOfAppResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CheckCanAuthUsersOfAppResponse(SdkResponse):
     }
 
     def __init__(self, users=None):
-        """CheckCanAuthUsersOfAppResponse - a model defined in huaweicloud sdk"""
+        """CheckCanAuthUsersOfAppResponse
+
+        The model defined in huaweicloud sdk
+
+        :param users: 候选用户成员列表
+        :type users: list[:class:`huaweicloudsdkroma.v2.CandidatesUser`]
+        """
         
         super(CheckCanAuthUsersOfAppResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class CheckCanAuthUsersOfAppResponse(SdkResponse):
         候选用户成员列表
 
         :return: The users of this CheckCanAuthUsersOfAppResponse.
-        :rtype: list[CandidatesUser]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.CandidatesUser`]
         """
         return self._users
 
@@ -58,7 +63,7 @@ class CheckCanAuthUsersOfAppResponse(SdkResponse):
         候选用户成员列表
 
         :param users: The users of this CheckCanAuthUsersOfAppResponse.
-        :type: list[CandidatesUser]
+        :type users: list[:class:`huaweicloudsdkroma.v2.CandidatesUser`]
         """
         self._users = users
 

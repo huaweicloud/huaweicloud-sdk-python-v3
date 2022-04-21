@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GlanceCreateImageMetadataRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class GlanceCreateImageMetadataRequestBody:
     }
 
     def __init__(self, os_version=None, container_format=None, disk_format=None, min_disk=None, min_ram=None, name=None, protected=None, tags=None, visibility=None):
-        """GlanceCreateImageMetadataRequestBody - a model defined in huaweicloud sdk"""
+        """GlanceCreateImageMetadataRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param os_version: 镜像的操作系统具体版本,如果未指定__os_version，则默认设置为Other Linux(64 bit)，不保证该镜像能成功创建虚拟机以及通过该镜像创建的虚拟机能够正常使用。
+        :type os_version: str
+        :param container_format: 容器格式。默认取值为bare。
+        :type container_format: str
+        :param disk_format: 镜像文件格式。目前支持vhd，zvhd、zvhd2、raw，qcow2。默认取值为vhd
+        :type disk_format: str
+        :param min_disk: 镜像运行需要的最小磁盘，单位为GB 。必须大于镜像系统盘容量，否则创建云主机云服务器可能失败。
+        :type min_disk: int
+        :param min_ram: 镜像运行需要的最小内存，单位为MB。参数取值依据云主机云服务器的规格限制。默认取值为0。
+        :type min_ram: int
+        :param name: 镜像名称，如果未指定name的取值，则默认为空，但是使用该镜像创建虚拟机会失败。名称的长度为1-255位。
+        :type name: str
+        :param protected: 镜像是否被保护，保护后的镜像不可删除。默认取值为false。
+        :type protected: bool
+        :param tags: 镜像标签列表。长度为1-255位。默认为空。
+        :type tags: list[str]
+        :param visibility: 其他租户是否可见。默认取值为private。创建镜像元数据时，visibility取值只能为private。
+        :type visibility: str
+        """
         
         
 
@@ -98,7 +119,7 @@ class GlanceCreateImageMetadataRequestBody:
         镜像的操作系统具体版本,如果未指定__os_version，则默认设置为Other Linux(64 bit)，不保证该镜像能成功创建虚拟机以及通过该镜像创建的虚拟机能够正常使用。
 
         :param os_version: The os_version of this GlanceCreateImageMetadataRequestBody.
-        :type: str
+        :type os_version: str
         """
         self._os_version = os_version
 
@@ -120,7 +141,7 @@ class GlanceCreateImageMetadataRequestBody:
         容器格式。默认取值为bare。
 
         :param container_format: The container_format of this GlanceCreateImageMetadataRequestBody.
-        :type: str
+        :type container_format: str
         """
         self._container_format = container_format
 
@@ -142,7 +163,7 @@ class GlanceCreateImageMetadataRequestBody:
         镜像文件格式。目前支持vhd，zvhd、zvhd2、raw，qcow2。默认取值为vhd
 
         :param disk_format: The disk_format of this GlanceCreateImageMetadataRequestBody.
-        :type: str
+        :type disk_format: str
         """
         self._disk_format = disk_format
 
@@ -164,7 +185,7 @@ class GlanceCreateImageMetadataRequestBody:
         镜像运行需要的最小磁盘，单位为GB 。必须大于镜像系统盘容量，否则创建云主机云服务器可能失败。
 
         :param min_disk: The min_disk of this GlanceCreateImageMetadataRequestBody.
-        :type: int
+        :type min_disk: int
         """
         self._min_disk = min_disk
 
@@ -186,7 +207,7 @@ class GlanceCreateImageMetadataRequestBody:
         镜像运行需要的最小内存，单位为MB。参数取值依据云主机云服务器的规格限制。默认取值为0。
 
         :param min_ram: The min_ram of this GlanceCreateImageMetadataRequestBody.
-        :type: int
+        :type min_ram: int
         """
         self._min_ram = min_ram
 
@@ -208,7 +229,7 @@ class GlanceCreateImageMetadataRequestBody:
         镜像名称，如果未指定name的取值，则默认为空，但是使用该镜像创建虚拟机会失败。名称的长度为1-255位。
 
         :param name: The name of this GlanceCreateImageMetadataRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -230,7 +251,7 @@ class GlanceCreateImageMetadataRequestBody:
         镜像是否被保护，保护后的镜像不可删除。默认取值为false。
 
         :param protected: The protected of this GlanceCreateImageMetadataRequestBody.
-        :type: bool
+        :type protected: bool
         """
         self._protected = protected
 
@@ -252,7 +273,7 @@ class GlanceCreateImageMetadataRequestBody:
         镜像标签列表。长度为1-255位。默认为空。
 
         :param tags: The tags of this GlanceCreateImageMetadataRequestBody.
-        :type: list[str]
+        :type tags: list[str]
         """
         self._tags = tags
 
@@ -274,7 +295,7 @@ class GlanceCreateImageMetadataRequestBody:
         其他租户是否可见。默认取值为private。创建镜像元数据时，visibility取值只能为private。
 
         :param visibility: The visibility of this GlanceCreateImageMetadataRequestBody.
-        :type: str
+        :type visibility: str
         """
         self._visibility = visibility
 

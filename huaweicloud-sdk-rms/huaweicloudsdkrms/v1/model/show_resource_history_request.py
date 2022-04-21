@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowResourceHistoryRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ShowResourceHistoryRequest:
     }
 
     def __init__(self, resource_id=None, marker=None, limit=None, earlier_time=None, later_time=None, chronological_order=None):
-        """ShowResourceHistoryRequest - a model defined in huaweicloud sdk"""
+        """ShowResourceHistoryRequest
+
+        The model defined in huaweicloud sdk
+
+        :param resource_id: 资源ID
+        :type resource_id: str
+        :param marker: 分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
+        :type marker: str
+        :param limit: 最大的返回数量
+        :type limit: int
+        :param earlier_time: 指定查询范围的起始时间点，如果不设置此参数，默认为最早的时间
+        :type earlier_time: int
+        :param later_time: 指定查询范围的结束时间点，如果不设置此参数，默认为当前时间
+        :type later_time: int
+        :param chronological_order: 指定返回数据的时间顺序，默认为倒序
+        :type chronological_order: str
+        """
         
         
 
@@ -82,7 +97,7 @@ class ShowResourceHistoryRequest:
         资源ID
 
         :param resource_id: The resource_id of this ShowResourceHistoryRequest.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -104,7 +119,7 @@ class ShowResourceHistoryRequest:
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
         :param marker: The marker of this ShowResourceHistoryRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -126,7 +141,7 @@ class ShowResourceHistoryRequest:
         最大的返回数量
 
         :param limit: The limit of this ShowResourceHistoryRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -148,7 +163,7 @@ class ShowResourceHistoryRequest:
         指定查询范围的起始时间点，如果不设置此参数，默认为最早的时间
 
         :param earlier_time: The earlier_time of this ShowResourceHistoryRequest.
-        :type: int
+        :type earlier_time: int
         """
         self._earlier_time = earlier_time
 
@@ -170,7 +185,7 @@ class ShowResourceHistoryRequest:
         指定查询范围的结束时间点，如果不设置此参数，默认为当前时间
 
         :param later_time: The later_time of this ShowResourceHistoryRequest.
-        :type: int
+        :type later_time: int
         """
         self._later_time = later_time
 
@@ -192,7 +207,7 @@ class ShowResourceHistoryRequest:
         指定返回数据的时间顺序，默认为倒序
 
         :param chronological_order: The chronological_order of this ShowResourceHistoryRequest.
-        :type: str
+        :type chronological_order: str
         """
         self._chronological_order = chronological_order
 

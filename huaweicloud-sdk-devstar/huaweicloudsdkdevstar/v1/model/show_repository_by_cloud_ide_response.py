@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowRepositoryByCloudIdeResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowRepositoryByCloudIdeResponse(SdkResponse):
     }
 
     def __init__(self, url=None):
-        """ShowRepositoryByCloudIdeResponse - a model defined in huaweicloud sdk"""
+        """ShowRepositoryByCloudIdeResponse
+
+        The model defined in huaweicloud sdk
+
+        :param url: CloudIde打开链接:https://xxx/cloudide/loading?instanceId&#x3D;xxx&amp;scmUrl&#x3D;xxx
+        :type url: str
+        """
         
         super(ShowRepositoryByCloudIdeResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class ShowRepositoryByCloudIdeResponse(SdkResponse):
         CloudIde打开链接:https://xxx/cloudide/loading?instanceId=xxx&scmUrl=xxx
 
         :param url: The url of this ShowRepositoryByCloudIdeResponse.
-        :type: str
+        :type url: str
         """
         self._url = url
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDevicesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListDevicesRequest:
     }
 
     def __init__(self, edge_node_id=None, gateway_id=None, device_name=None, offset=None, limit=None):
-        """ListDevicesRequest - a model defined in huaweicloud sdk"""
+        """ListDevicesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param edge_node_id: 边缘节点ID
+        :type edge_node_id: str
+        :param gateway_id: 父设备ID,对应之前的gatewayId的概念，传该参数时代表查询网关下的子设备，不传代表节点下的
+        :type gateway_id: str
+        :param device_name: 设备名称
+        :type device_name: str
+        :param offset: 查询的起始位置，取值范围为非负整数，默认为0
+        :type offset: int
+        :param limit: 每页记录数，默认值为10，取值区间为1-1000
+        :type limit: int
+        """
         
         
 
@@ -77,7 +90,7 @@ class ListDevicesRequest:
         边缘节点ID
 
         :param edge_node_id: The edge_node_id of this ListDevicesRequest.
-        :type: str
+        :type edge_node_id: str
         """
         self._edge_node_id = edge_node_id
 
@@ -99,7 +112,7 @@ class ListDevicesRequest:
         父设备ID,对应之前的gatewayId的概念，传该参数时代表查询网关下的子设备，不传代表节点下的
 
         :param gateway_id: The gateway_id of this ListDevicesRequest.
-        :type: str
+        :type gateway_id: str
         """
         self._gateway_id = gateway_id
 
@@ -121,7 +134,7 @@ class ListDevicesRequest:
         设备名称
 
         :param device_name: The device_name of this ListDevicesRequest.
-        :type: str
+        :type device_name: str
         """
         self._device_name = device_name
 
@@ -143,7 +156,7 @@ class ListDevicesRequest:
         查询的起始位置，取值范围为非负整数，默认为0
 
         :param offset: The offset of this ListDevicesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -165,7 +178,7 @@ class ListDevicesRequest:
         每页记录数，默认值为10，取值区间为1-1000
 
         :param limit: The limit of this ListDevicesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListBandwidthsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListBandwidthsRequest:
     }
 
     def __init__(self, marker=None, limit=None, enterprise_project_id=None, share_type=None):
-        """ListBandwidthsRequest - a model defined in huaweicloud sdk"""
+        """ListBandwidthsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param marker: 取值为上一页数据的最后一条记录的id，为空时为查询第一页
+        :type marker: str
+        :param limit: 功能说明：每页返回的个数  取值范围：0~intmax
+        :type limit: int
+        :param enterprise_project_id: 功能说明：企业项目ID。可以使用该字段过滤某个企业项目下的虚拟私有云。  取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。若需要查询当前用户所有企业项目绑定的虚拟私有云，请传参all_granted_eps。
+        :type enterprise_project_id: str
+        :param share_type: 功能说明：带宽类型，标识是否是共享带宽 取值范围：WHOLE，PER WHOLE表示共享带宽；PER，表示独享带宽
+        :type share_type: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class ListBandwidthsRequest:
         取值为上一页数据的最后一条记录的id，为空时为查询第一页
 
         :param marker: The marker of this ListBandwidthsRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -95,7 +106,7 @@ class ListBandwidthsRequest:
         功能说明：每页返回的个数  取值范围：0~intmax
 
         :param limit: The limit of this ListBandwidthsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -117,7 +128,7 @@ class ListBandwidthsRequest:
         功能说明：企业项目ID。可以使用该字段过滤某个企业项目下的虚拟私有云。  取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。若需要查询当前用户所有企业项目绑定的虚拟私有云，请传参all_granted_eps。
 
         :param enterprise_project_id: The enterprise_project_id of this ListBandwidthsRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -139,7 +150,7 @@ class ListBandwidthsRequest:
         功能说明：带宽类型，标识是否是共享带宽 取值范围：WHOLE，PER WHOLE表示共享带宽；PER，表示独享带宽
 
         :param share_type: The share_type of this ListBandwidthsRequest.
-        :type: str
+        :type share_type: str
         """
         self._share_type = share_type
 

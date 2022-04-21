@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowAomMappingRuleRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowAomMappingRuleRequest:
     }
 
     def __init__(self, rule_id=None):
-        """ShowAomMappingRuleRequest - a model defined in huaweicloud sdk"""
+        """ShowAomMappingRuleRequest
+
+        The model defined in huaweicloud sdk
+
+        :param rule_id: 接入规则ID
+        :type rule_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowAomMappingRuleRequest:
         接入规则ID
 
         :param rule_id: The rule_id of this ShowAomMappingRuleRequest.
-        :type: str
+        :type rule_id: str
         """
         self._rule_id = rule_id
 

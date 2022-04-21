@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EditAudioInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class EditAudioInfo:
     }
 
     def __init__(self, codec=None, bitrate=None, sample=None, channels=None):
-        """EditAudioInfo - a model defined in huaweicloud sdk"""
+        """EditAudioInfo
+
+        The model defined in huaweicloud sdk
+
+        :param codec: 音频编码格式,取值有：[AAC, HEAAC, MP3]。
+        :type codec: str
+        :param bitrate: 视频码率，单位: bit/s 
+        :type bitrate: int
+        :param sample: 采样率, 单位: HZ 
+        :type sample: int
+        :param channels: 声道数。
+        :type channels: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class EditAudioInfo:
         音频编码格式,取值有：[AAC, HEAAC, MP3]。
 
         :param codec: The codec of this EditAudioInfo.
-        :type: str
+        :type codec: str
         """
         self._codec = codec
 
@@ -95,7 +106,7 @@ class EditAudioInfo:
         视频码率，单位: bit/s 
 
         :param bitrate: The bitrate of this EditAudioInfo.
-        :type: int
+        :type bitrate: int
         """
         self._bitrate = bitrate
 
@@ -117,7 +128,7 @@ class EditAudioInfo:
         采样率, 单位: HZ 
 
         :param sample: The sample of this EditAudioInfo.
-        :type: int
+        :type sample: int
         """
         self._sample = sample
 
@@ -139,7 +150,7 @@ class EditAudioInfo:
         声道数。
 
         :param channels: The channels of this EditAudioInfo.
-        :type: str
+        :type channels: str
         """
         self._channels = channels
 

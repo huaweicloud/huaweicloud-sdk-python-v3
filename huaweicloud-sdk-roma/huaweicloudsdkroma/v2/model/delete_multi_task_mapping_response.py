@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteMultiTaskMappingResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteMultiTaskMappingResponse(SdkResponse):
     }
 
     def __init__(self, mapping_id=None):
-        """DeleteMultiTaskMappingResponse - a model defined in huaweicloud sdk"""
+        """DeleteMultiTaskMappingResponse
+
+        The model defined in huaweicloud sdk
+
+        :param mapping_id: 映射唯一ID
+        :type mapping_id: str
+        """
         
         super(DeleteMultiTaskMappingResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class DeleteMultiTaskMappingResponse(SdkResponse):
         映射唯一ID
 
         :param mapping_id: The mapping_id of this DeleteMultiTaskMappingResponse.
-        :type: str
+        :type mapping_id: str
         """
         self._mapping_id = mapping_id
 

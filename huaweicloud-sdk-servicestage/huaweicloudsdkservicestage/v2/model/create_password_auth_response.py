@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreatePasswordAuthResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreatePasswordAuthResponse(SdkResponse):
     }
 
     def __init__(self, authorization=None):
-        """CreatePasswordAuthResponse - a model defined in huaweicloud sdk"""
+        """CreatePasswordAuthResponse
+
+        The model defined in huaweicloud sdk
+
+        :param authorization: 
+        :type authorization: :class:`huaweicloudsdkservicestage.v2.AuthorizationVO`
+        """
         
         super(CreatePasswordAuthResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class CreatePasswordAuthResponse(SdkResponse):
 
 
         :return: The authorization of this CreatePasswordAuthResponse.
-        :rtype: AuthorizationVO
+        :rtype: :class:`huaweicloudsdkservicestage.v2.AuthorizationVO`
         """
         return self._authorization
 
@@ -56,7 +61,7 @@ class CreatePasswordAuthResponse(SdkResponse):
 
 
         :param authorization: The authorization of this CreatePasswordAuthResponse.
-        :type: AuthorizationVO
+        :type authorization: :class:`huaweicloudsdkservicestage.v2.AuthorizationVO`
         """
         self._authorization = authorization
 

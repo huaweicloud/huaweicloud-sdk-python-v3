@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Scm:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Scm:
     }
 
     def __init__(self, build_tag=None, build_commit_id=None):
-        """Scm - a model defined in huaweicloud sdk"""
+        """Scm
+
+        The model defined in huaweicloud sdk
+
+        :param build_tag: 代码Tag
+        :type build_tag: str
+        :param build_commit_id: 代码提交ID
+        :type build_commit_id: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class Scm:
         代码Tag
 
         :param build_tag: The build_tag of this Scm.
-        :type: str
+        :type build_tag: str
         """
         self._build_tag = build_tag
 
@@ -85,7 +92,7 @@ class Scm:
         代码提交ID
 
         :param build_commit_id: The build_commit_id of this Scm.
-        :type: str
+        :type build_commit_id: str
         """
         self._build_commit_id = build_commit_id
 

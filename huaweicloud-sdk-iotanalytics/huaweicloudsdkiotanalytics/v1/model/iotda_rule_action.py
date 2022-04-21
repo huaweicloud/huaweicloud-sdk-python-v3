@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IotdaRuleAction:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class IotdaRuleAction:
     }
 
     def __init__(self, rule_id=None, action_id=None):
-        """IotdaRuleAction - a model defined in huaweicloud sdk"""
+        """IotdaRuleAction
+
+        The model defined in huaweicloud sdk
+
+        :param rule_id: IoTDA中的规则Id
+        :type rule_id: str
+        :param action_id: IoTDA中推送数据动作ID
+        :type action_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class IotdaRuleAction:
         IoTDA中的规则Id
 
         :param rule_id: The rule_id of this IotdaRuleAction.
-        :type: str
+        :type rule_id: str
         """
         self._rule_id = rule_id
 
@@ -83,7 +90,7 @@ class IotdaRuleAction:
         IoTDA中推送数据动作ID
 
         :param action_id: The action_id of this IotdaRuleAction.
-        :type: str
+        :type action_id: str
         """
         self._action_id = action_id
 

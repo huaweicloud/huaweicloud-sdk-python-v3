@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateInstanceCrossVpcIpRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateInstanceCrossVpcIpRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """UpdateInstanceCrossVpcIpRequest - a model defined in huaweicloud sdk"""
+        """UpdateInstanceCrossVpcIpRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param body: Body of the UpdateInstanceCrossVpcIpRequest
+        :type body: :class:`huaweicloudsdkkafka.v2.UpdateInstanceCrossVpcIpReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateInstanceCrossVpcIpRequest:
         实例ID。
 
         :param instance_id: The instance_id of this UpdateInstanceCrossVpcIpRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -72,7 +79,7 @@ class UpdateInstanceCrossVpcIpRequest:
 
 
         :return: The body of this UpdateInstanceCrossVpcIpRequest.
-        :rtype: UpdateInstanceCrossVpcIpReq
+        :rtype: :class:`huaweicloudsdkkafka.v2.UpdateInstanceCrossVpcIpReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateInstanceCrossVpcIpRequest:
 
 
         :param body: The body of this UpdateInstanceCrossVpcIpRequest.
-        :type: UpdateInstanceCrossVpcIpReq
+        :type body: :class:`huaweicloudsdkkafka.v2.UpdateInstanceCrossVpcIpReq`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PostPreCheckResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class PostPreCheckResp:
     }
 
     def __init__(self, id=None, precheck_id=None, status=None, error_code=None, error_msg=None):
-        """PostPreCheckResp - a model defined in huaweicloud sdk"""
+        """PostPreCheckResp
+
+        The model defined in huaweicloud sdk
+
+        :param id: 任务id。
+        :type id: str
+        :param precheck_id: 预检查id。
+        :type precheck_id: str
+        :param status: 成功或失败的状态
+        :type status: str
+        :param error_code: 错误码。
+        :type error_code: str
+        :param error_msg: 错误信息。
+        :type error_msg: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class PostPreCheckResp:
         任务id。
 
         :param id: The id of this PostPreCheckResp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -100,7 +113,7 @@ class PostPreCheckResp:
         预检查id。
 
         :param precheck_id: The precheck_id of this PostPreCheckResp.
-        :type: str
+        :type precheck_id: str
         """
         self._precheck_id = precheck_id
 
@@ -122,7 +135,7 @@ class PostPreCheckResp:
         成功或失败的状态
 
         :param status: The status of this PostPreCheckResp.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -144,7 +157,7 @@ class PostPreCheckResp:
         错误码。
 
         :param error_code: The error_code of this PostPreCheckResp.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -166,7 +179,7 @@ class PostPreCheckResp:
         错误信息。
 
         :param error_msg: The error_msg of this PostPreCheckResp.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 

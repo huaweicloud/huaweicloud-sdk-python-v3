@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowAlertConfigResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowAlertConfigResponse(SdkResponse):
     }
 
     def __init__(self, topic_urn=None, display_name=None, warn_config=None):
-        """ShowAlertConfigResponse - a model defined in huaweicloud sdk"""
+        """ShowAlertConfigResponse
+
+        The model defined in huaweicloud sdk
+
+        :param topic_urn: 告警群组的唯一标识
+        :type topic_urn: str
+        :param display_name: 告警群组描述
+        :type display_name: str
+        :param warn_config: 
+        :type warn_config: :class:`huaweicloudsdkantiddos.v1.AlertConfigRespWarnConfig`
+        """
         
         super(ShowAlertConfigResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ShowAlertConfigResponse(SdkResponse):
         告警群组的唯一标识
 
         :param topic_urn: The topic_urn of this ShowAlertConfigResponse.
-        :type: str
+        :type topic_urn: str
         """
         self._topic_urn = topic_urn
 
@@ -90,7 +99,7 @@ class ShowAlertConfigResponse(SdkResponse):
         告警群组描述
 
         :param display_name: The display_name of this ShowAlertConfigResponse.
-        :type: str
+        :type display_name: str
         """
         self._display_name = display_name
 
@@ -100,7 +109,7 @@ class ShowAlertConfigResponse(SdkResponse):
 
 
         :return: The warn_config of this ShowAlertConfigResponse.
-        :rtype: AlertConfigRespWarnConfig
+        :rtype: :class:`huaweicloudsdkantiddos.v1.AlertConfigRespWarnConfig`
         """
         return self._warn_config
 
@@ -110,7 +119,7 @@ class ShowAlertConfigResponse(SdkResponse):
 
 
         :param warn_config: The warn_config of this ShowAlertConfigResponse.
-        :type: AlertConfigRespWarnConfig
+        :type warn_config: :class:`huaweicloudsdkantiddos.v1.AlertConfigRespWarnConfig`
         """
         self._warn_config = warn_config
 

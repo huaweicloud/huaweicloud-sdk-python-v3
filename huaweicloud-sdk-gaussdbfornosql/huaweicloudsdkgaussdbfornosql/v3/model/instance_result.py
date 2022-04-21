@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InstanceResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class InstanceResult:
     }
 
     def __init__(self, instance_id=None, instance_name=None, tags=None):
-        """InstanceResult - a model defined in huaweicloud sdk"""
+        """InstanceResult
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param instance_name: 实例名称。
+        :type instance_name: str
+        :param tags: 标签列表。如果没有标签，默认为空数组。
+        :type tags: list[:class:`huaweicloudsdkgaussdbfornosql.v3.InstanceTagResult`]
+        """
         
         
 
@@ -65,7 +74,7 @@ class InstanceResult:
         实例ID。
 
         :param instance_id: The instance_id of this InstanceResult.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -87,7 +96,7 @@ class InstanceResult:
         实例名称。
 
         :param instance_name: The instance_name of this InstanceResult.
-        :type: str
+        :type instance_name: str
         """
         self._instance_name = instance_name
 
@@ -98,7 +107,7 @@ class InstanceResult:
         标签列表。如果没有标签，默认为空数组。
 
         :return: The tags of this InstanceResult.
-        :rtype: list[InstanceTagResult]
+        :rtype: list[:class:`huaweicloudsdkgaussdbfornosql.v3.InstanceTagResult`]
         """
         return self._tags
 
@@ -109,7 +118,7 @@ class InstanceResult:
         标签列表。如果没有标签，默认为空数组。
 
         :param tags: The tags of this InstanceResult.
-        :type: list[InstanceTagResult]
+        :type tags: list[:class:`huaweicloudsdkgaussdbfornosql.v3.InstanceTagResult`]
         """
         self._tags = tags
 

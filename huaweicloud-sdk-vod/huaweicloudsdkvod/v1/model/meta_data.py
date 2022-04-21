@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MetaData:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class MetaData:
     }
 
     def __init__(self, codec=None, duration=None, video_size=None, width=None, hight=None, bit_rate=None, frame_rate=None, quality=None, audio_channels=None):
-        """MetaData - a model defined in huaweicloud sdk"""
+        """MetaData
+
+        The model defined in huaweicloud sdk
+
+        :param codec: 视频编码格式。  取值如下： - MPEG-2 - MPEG-4 - H.264 - H.265 - WMV - Vorbis - AAC - AC-3 - AMR - APE - FLAC - MP3 - MP2 - WMA - PCM - ADPCM - WavPack
+        :type codec: str
+        :param duration: 视频时长。  若视频的原时长为非整数，则该字段值为原时长的向上取整。
+        :type duration: int
+        :param video_size: 视频文件大小。  单位：字节。
+        :type video_size: int
+        :param width: 视频宽度（单位：像素）。 - 编码为H.264的取值范围：[32,3840]之间2的倍数。 - 编码为H.265的取值范围：[320,3840]之间4的倍数。
+        :type width: int
+        :param hight: 视频高度（单位：像素）。 - 编码为H.264的取值范围：[32,2160]之间2的倍数 。 - 编码为H.265的取值范围：[240,2160]之间4的倍数。
+        :type hight: int
+        :param bit_rate: 视频平均码率。
+        :type bit_rate: int
+        :param frame_rate: 帧率（单位：帧每秒）。  取值如下： - FRAMERATE_AUTO &#x3D; 1, - FRAMERATE_10 &#x3D; 2, - FRAMERATE_15 &#x3D; 3, - FRAMERATE_2397 &#x3D; 4, // 23.97 fps - FRAMERATE_24 &#x3D; 5, - FRAMERATE_25 &#x3D; 6, - FRAMERATE_2997 &#x3D; 7, // 29.97 fps - FRAMERATE_30 &#x3D; 8, - FRAMERATE_50 &#x3D; 9, - FRAMERATE_60 &#x3D; 10  默认值：1。  单位：帧每秒。
+        :type frame_rate: int
+        :param quality: 清晰度。  取值如下： - FULL_HD：超高清 - HD：高清 - SD：标清 - FLUENT：流畅 - AD：自适应 - 2K - 4K
+        :type quality: str
+        :param audio_channels: 音频的声道数。
+        :type audio_channels: int
+        """
         
         
 
@@ -98,7 +119,7 @@ class MetaData:
         视频编码格式。  取值如下： - MPEG-2 - MPEG-4 - H.264 - H.265 - WMV - Vorbis - AAC - AC-3 - AMR - APE - FLAC - MP3 - MP2 - WMA - PCM - ADPCM - WavPack
 
         :param codec: The codec of this MetaData.
-        :type: str
+        :type codec: str
         """
         self._codec = codec
 
@@ -120,7 +141,7 @@ class MetaData:
         视频时长。  若视频的原时长为非整数，则该字段值为原时长的向上取整。
 
         :param duration: The duration of this MetaData.
-        :type: int
+        :type duration: int
         """
         self._duration = duration
 
@@ -142,7 +163,7 @@ class MetaData:
         视频文件大小。  单位：字节。
 
         :param video_size: The video_size of this MetaData.
-        :type: int
+        :type video_size: int
         """
         self._video_size = video_size
 
@@ -164,7 +185,7 @@ class MetaData:
         视频宽度（单位：像素）。 - 编码为H.264的取值范围：[32,3840]之间2的倍数。 - 编码为H.265的取值范围：[320,3840]之间4的倍数。
 
         :param width: The width of this MetaData.
-        :type: int
+        :type width: int
         """
         self._width = width
 
@@ -186,7 +207,7 @@ class MetaData:
         视频高度（单位：像素）。 - 编码为H.264的取值范围：[32,2160]之间2的倍数 。 - 编码为H.265的取值范围：[240,2160]之间4的倍数。
 
         :param hight: The hight of this MetaData.
-        :type: int
+        :type hight: int
         """
         self._hight = hight
 
@@ -208,7 +229,7 @@ class MetaData:
         视频平均码率。
 
         :param bit_rate: The bit_rate of this MetaData.
-        :type: int
+        :type bit_rate: int
         """
         self._bit_rate = bit_rate
 
@@ -230,7 +251,7 @@ class MetaData:
         帧率（单位：帧每秒）。  取值如下： - FRAMERATE_AUTO = 1, - FRAMERATE_10 = 2, - FRAMERATE_15 = 3, - FRAMERATE_2397 = 4, // 23.97 fps - FRAMERATE_24 = 5, - FRAMERATE_25 = 6, - FRAMERATE_2997 = 7, // 29.97 fps - FRAMERATE_30 = 8, - FRAMERATE_50 = 9, - FRAMERATE_60 = 10  默认值：1。  单位：帧每秒。
 
         :param frame_rate: The frame_rate of this MetaData.
-        :type: int
+        :type frame_rate: int
         """
         self._frame_rate = frame_rate
 
@@ -252,7 +273,7 @@ class MetaData:
         清晰度。  取值如下： - FULL_HD：超高清 - HD：高清 - SD：标清 - FLUENT：流畅 - AD：自适应 - 2K - 4K
 
         :param quality: The quality of this MetaData.
-        :type: str
+        :type quality: str
         """
         self._quality = quality
 
@@ -274,7 +295,7 @@ class MetaData:
         音频的声道数。
 
         :param audio_channels: The audio_channels of this MetaData.
-        :type: int
+        :type audio_channels: int
         """
         self._audio_channels = audio_channels
 

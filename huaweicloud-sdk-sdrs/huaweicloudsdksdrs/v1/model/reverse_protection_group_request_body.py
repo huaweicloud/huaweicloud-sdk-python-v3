@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ReverseProtectionGroupRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ReverseProtectionGroupRequestBody:
     }
 
     def __init__(self, reverse_server_group=None):
-        """ReverseProtectionGroupRequestBody - a model defined in huaweicloud sdk"""
+        """ReverseProtectionGroupRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param reverse_server_group: 
+        :type reverse_server_group: :class:`huaweicloudsdksdrs.v1.ReverseProtectionGroupRequestParams`
+        """
         
         
 
@@ -45,7 +50,7 @@ class ReverseProtectionGroupRequestBody:
 
 
         :return: The reverse_server_group of this ReverseProtectionGroupRequestBody.
-        :rtype: ReverseProtectionGroupRequestParams
+        :rtype: :class:`huaweicloudsdksdrs.v1.ReverseProtectionGroupRequestParams`
         """
         return self._reverse_server_group
 
@@ -55,7 +60,7 @@ class ReverseProtectionGroupRequestBody:
 
 
         :param reverse_server_group: The reverse_server_group of this ReverseProtectionGroupRequestBody.
-        :type: ReverseProtectionGroupRequestParams
+        :type reverse_server_group: :class:`huaweicloudsdksdrs.v1.ReverseProtectionGroupRequestParams`
         """
         self._reverse_server_group = reverse_server_group
 

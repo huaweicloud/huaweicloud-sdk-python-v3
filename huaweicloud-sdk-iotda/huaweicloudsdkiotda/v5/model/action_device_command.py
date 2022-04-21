@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ActionDeviceCommand:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ActionDeviceCommand:
     }
 
     def __init__(self, device_id=None, cmd=None):
-        """ActionDeviceCommand - a model defined in huaweicloud sdk"""
+        """ActionDeviceCommand
+
+        The model defined in huaweicloud sdk
+
+        :param device_id: **参数说明**：下发命令的设备ID。当创建设备数据规则时，若device_id为空，则命令下发给触发条件的设备。当创建定时规则时，不允许为空。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
+        :type device_id: str
+        :param cmd: 
+        :type cmd: :class:`huaweicloudsdkiotda.v5.Cmd`
+        """
         
         
 
@@ -62,7 +69,7 @@ class ActionDeviceCommand:
         **参数说明**：下发命令的设备ID。当创建设备数据规则时，若device_id为空，则命令下发给触发条件的设备。当创建定时规则时，不允许为空。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :param device_id: The device_id of this ActionDeviceCommand.
-        :type: str
+        :type device_id: str
         """
         self._device_id = device_id
 
@@ -72,7 +79,7 @@ class ActionDeviceCommand:
 
 
         :return: The cmd of this ActionDeviceCommand.
-        :rtype: Cmd
+        :rtype: :class:`huaweicloudsdkiotda.v5.Cmd`
         """
         return self._cmd
 
@@ -82,7 +89,7 @@ class ActionDeviceCommand:
 
 
         :param cmd: The cmd of this ActionDeviceCommand.
-        :type: Cmd
+        :type cmd: :class:`huaweicloudsdkiotda.v5.Cmd`
         """
         self._cmd = cmd
 

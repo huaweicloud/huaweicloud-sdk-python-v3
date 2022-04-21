@@ -12,10 +12,8 @@ class SourceKind:
     """
     allowed enum values
     """
-
     CODE = "code"
     ARTIFACT = "artifact"
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -33,7 +31,11 @@ class SourceKind:
     }
 
     def __init__(self):
-        """SourceKind - a model defined in huaweicloud sdk"""
+        """SourceKind
+
+        The model defined in huaweicloud sdk
+
+        """
         
         
         self.discriminator = None

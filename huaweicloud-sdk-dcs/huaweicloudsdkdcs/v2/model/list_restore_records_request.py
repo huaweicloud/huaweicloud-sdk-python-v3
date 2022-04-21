@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRestoreRecordsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListRestoreRecordsRequest:
     }
 
     def __init__(self, instance_id=None, begin_time=None, end_time=None, limit=None, offset=None):
-        """ListRestoreRecordsRequest - a model defined in huaweicloud sdk"""
+        """ListRestoreRecordsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param begin_time: 查询开始时间。格式：yyyyMMddHHmmss，如：20170718235959。
+        :type begin_time: str
+        :param end_time: 查询结束时间。格式：yyyyMMddHHmmss，如：20170718235959。
+        :type end_time: str
+        :param limit: 每页显示的条目数量。
+        :type limit: int
+        :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0。
+        :type offset: int
+        """
         
         
 
@@ -77,7 +90,7 @@ class ListRestoreRecordsRequest:
         实例ID。
 
         :param instance_id: The instance_id of this ListRestoreRecordsRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -99,7 +112,7 @@ class ListRestoreRecordsRequest:
         查询开始时间。格式：yyyyMMddHHmmss，如：20170718235959。
 
         :param begin_time: The begin_time of this ListRestoreRecordsRequest.
-        :type: str
+        :type begin_time: str
         """
         self._begin_time = begin_time
 
@@ -121,7 +134,7 @@ class ListRestoreRecordsRequest:
         查询结束时间。格式：yyyyMMddHHmmss，如：20170718235959。
 
         :param end_time: The end_time of this ListRestoreRecordsRequest.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -143,7 +156,7 @@ class ListRestoreRecordsRequest:
         每页显示的条目数量。
 
         :param limit: The limit of this ListRestoreRecordsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -165,7 +178,7 @@ class ListRestoreRecordsRequest:
         偏移量，表示从此偏移量开始查询， offset大于等于0。
 
         :param offset: The offset of this ListRestoreRecordsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 

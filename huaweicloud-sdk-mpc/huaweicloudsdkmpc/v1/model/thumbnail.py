@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Thumbnail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class Thumbnail:
     }
 
     def __init__(self, tar=None, out=None, params=None):
-        """Thumbnail - a model defined in huaweicloud sdk"""
+        """Thumbnail
+
+        The model defined in huaweicloud sdk
+
+        :param tar: 是否压缩抽帧图片生成tar包 - 0：表示压缩 - 1：表示不压缩 
+        :type tar: int
+        :param out: 
+        :type out: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        :param params: 
+        :type params: :class:`huaweicloudsdkmpc.v1.ThumbnailPara`
+        """
         
         
 
@@ -67,7 +76,7 @@ class Thumbnail:
         是否压缩抽帧图片生成tar包 - 0：表示压缩 - 1：表示不压缩 
 
         :param tar: The tar of this Thumbnail.
-        :type: int
+        :type tar: int
         """
         self._tar = tar
 
@@ -77,7 +86,7 @@ class Thumbnail:
 
 
         :return: The out of this Thumbnail.
-        :rtype: ObsObjInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         return self._out
 
@@ -87,7 +96,7 @@ class Thumbnail:
 
 
         :param out: The out of this Thumbnail.
-        :type: ObsObjInfo
+        :type out: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         self._out = out
 
@@ -97,7 +106,7 @@ class Thumbnail:
 
 
         :return: The params of this Thumbnail.
-        :rtype: ThumbnailPara
+        :rtype: :class:`huaweicloudsdkmpc.v1.ThumbnailPara`
         """
         return self._params
 
@@ -107,7 +116,7 @@ class Thumbnail:
 
 
         :param params: The params of this Thumbnail.
-        :type: ThumbnailPara
+        :type params: :class:`huaweicloudsdkmpc.v1.ThumbnailPara`
         """
         self._params = params
 

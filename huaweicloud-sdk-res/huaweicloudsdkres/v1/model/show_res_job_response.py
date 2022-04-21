@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowResJobResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowResJobResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, jobs=None, message=None, error_code=None):
-        """ShowResJobResponse - a model defined in huaweicloud sdk"""
+        """ShowResJobResponse
+
+        The model defined in huaweicloud sdk
+
+        :param is_success: 是否成功
+        :type is_success: bool
+        :param jobs: 作业详情
+        :type jobs: list[:class:`huaweicloudsdkres.v1.Jobs`]
+        :param message: 返回消息（请求成功时，不返回此字段）
+        :type message: str
+        :param error_code: 错误码（请求成功时，不返回此字段）
+        :type error_code: str
+        """
         
         super(ShowResJobResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class ShowResJobResponse(SdkResponse):
         是否成功
 
         :param is_success: The is_success of this ShowResJobResponse.
-        :type: bool
+        :type is_success: bool
         """
         self._is_success = is_success
 
@@ -84,7 +95,7 @@ class ShowResJobResponse(SdkResponse):
         作业详情
 
         :return: The jobs of this ShowResJobResponse.
-        :rtype: list[Jobs]
+        :rtype: list[:class:`huaweicloudsdkres.v1.Jobs`]
         """
         return self._jobs
 
@@ -95,7 +106,7 @@ class ShowResJobResponse(SdkResponse):
         作业详情
 
         :param jobs: The jobs of this ShowResJobResponse.
-        :type: list[Jobs]
+        :type jobs: list[:class:`huaweicloudsdkres.v1.Jobs`]
         """
         self._jobs = jobs
 
@@ -117,7 +128,7 @@ class ShowResJobResponse(SdkResponse):
         返回消息（请求成功时，不返回此字段）
 
         :param message: The message of this ShowResJobResponse.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -139,7 +150,7 @@ class ShowResJobResponse(SdkResponse):
         错误码（请求成功时，不返回此字段）
 
         :param error_code: The error_code of this ShowResJobResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 

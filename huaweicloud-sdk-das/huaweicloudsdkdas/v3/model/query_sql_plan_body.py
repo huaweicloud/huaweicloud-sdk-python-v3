@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QuerySqlPlanBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class QuerySqlPlanBody:
     }
 
     def __init__(self, db_user_id=None, database=None, sql=None):
-        """QuerySqlPlanBody - a model defined in huaweicloud sdk"""
+        """QuerySqlPlanBody
+
+        The model defined in huaweicloud sdk
+
+        :param db_user_id: 数据库用户ID
+        :type db_user_id: str
+        :param database: 数据库名称
+        :type database: str
+        :param sql: SQL语句
+        :type sql: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class QuerySqlPlanBody:
         数据库用户ID
 
         :param db_user_id: The db_user_id of this QuerySqlPlanBody.
-        :type: str
+        :type db_user_id: str
         """
         self._db_user_id = db_user_id
 
@@ -90,7 +99,7 @@ class QuerySqlPlanBody:
         数据库名称
 
         :param database: The database of this QuerySqlPlanBody.
-        :type: str
+        :type database: str
         """
         self._database = database
 
@@ -112,7 +121,7 @@ class QuerySqlPlanBody:
         SQL语句
 
         :param sql: The sql of this QuerySqlPlanBody.
-        :type: str
+        :type sql: str
         """
         self._sql = sql
 

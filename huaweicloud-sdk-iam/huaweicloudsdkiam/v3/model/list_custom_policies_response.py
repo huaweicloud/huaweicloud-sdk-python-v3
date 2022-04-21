@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCustomPoliciesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListCustomPoliciesResponse(SdkResponse):
     }
 
     def __init__(self, links=None, roles=None, total_number=None):
-        """ListCustomPoliciesResponse - a model defined in huaweicloud sdk"""
+        """ListCustomPoliciesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param links: 
+        :type links: :class:`huaweicloudsdkiam.v3.Links`
+        :param roles: 自定义策略信息列表。
+        :type roles: list[:class:`huaweicloudsdkiam.v3.PolicyRoleResult`]
+        :param total_number: 返回自定义策略的总条数
+        :type total_number: int
+        """
         
         super(ListCustomPoliciesResponse, self).__init__()
 
@@ -56,7 +65,7 @@ class ListCustomPoliciesResponse(SdkResponse):
 
 
         :return: The links of this ListCustomPoliciesResponse.
-        :rtype: Links
+        :rtype: :class:`huaweicloudsdkiam.v3.Links`
         """
         return self._links
 
@@ -66,7 +75,7 @@ class ListCustomPoliciesResponse(SdkResponse):
 
 
         :param links: The links of this ListCustomPoliciesResponse.
-        :type: Links
+        :type links: :class:`huaweicloudsdkiam.v3.Links`
         """
         self._links = links
 
@@ -77,7 +86,7 @@ class ListCustomPoliciesResponse(SdkResponse):
         自定义策略信息列表。
 
         :return: The roles of this ListCustomPoliciesResponse.
-        :rtype: list[PolicyRoleResult]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.PolicyRoleResult`]
         """
         return self._roles
 
@@ -88,7 +97,7 @@ class ListCustomPoliciesResponse(SdkResponse):
         自定义策略信息列表。
 
         :param roles: The roles of this ListCustomPoliciesResponse.
-        :type: list[PolicyRoleResult]
+        :type roles: list[:class:`huaweicloudsdkiam.v3.PolicyRoleResult`]
         """
         self._roles = roles
 
@@ -110,7 +119,7 @@ class ListCustomPoliciesResponse(SdkResponse):
         返回自定义策略的总条数
 
         :param total_number: The total_number of this ListCustomPoliciesResponse.
-        :type: int
+        :type total_number: int
         """
         self._total_number = total_number
 

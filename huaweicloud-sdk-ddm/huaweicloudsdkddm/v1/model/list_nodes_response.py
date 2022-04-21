@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListNodesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListNodesResponse(SdkResponse):
     }
 
     def __init__(self, nodes=None, offset=None, limit=None, total=None):
-        """ListNodesResponse - a model defined in huaweicloud sdk"""
+        """ListNodesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param nodes: DDM实例节点信息列表的集合。
+        :type nodes: list[:class:`huaweicloudsdkddm.v1.NodeList`]
+        :param offset: 分页参数: 起始值。
+        :type offset: int
+        :param limit: 分页参数：每页多少条。
+        :type limit: int
+        :param total: DDM实例节点个数。
+        :type total: int
+        """
         
         super(ListNodesResponse, self).__init__()
 
@@ -62,7 +73,7 @@ class ListNodesResponse(SdkResponse):
         DDM实例节点信息列表的集合。
 
         :return: The nodes of this ListNodesResponse.
-        :rtype: list[NodeList]
+        :rtype: list[:class:`huaweicloudsdkddm.v1.NodeList`]
         """
         return self._nodes
 
@@ -73,7 +84,7 @@ class ListNodesResponse(SdkResponse):
         DDM实例节点信息列表的集合。
 
         :param nodes: The nodes of this ListNodesResponse.
-        :type: list[NodeList]
+        :type nodes: list[:class:`huaweicloudsdkddm.v1.NodeList`]
         """
         self._nodes = nodes
 
@@ -95,7 +106,7 @@ class ListNodesResponse(SdkResponse):
         分页参数: 起始值。
 
         :param offset: The offset of this ListNodesResponse.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -117,7 +128,7 @@ class ListNodesResponse(SdkResponse):
         分页参数：每页多少条。
 
         :param limit: The limit of this ListNodesResponse.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -139,7 +150,7 @@ class ListNodesResponse(SdkResponse):
         DDM实例节点个数。
 
         :param total: The total of this ListNodesResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 

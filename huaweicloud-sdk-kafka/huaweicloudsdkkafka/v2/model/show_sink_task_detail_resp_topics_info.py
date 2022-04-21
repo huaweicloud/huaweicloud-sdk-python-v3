@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowSinkTaskDetailRespTopicsInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowSinkTaskDetailRespTopicsInfo:
     }
 
     def __init__(self, topic=None, partitions=None):
-        """ShowSinkTaskDetailRespTopicsInfo - a model defined in huaweicloud sdk"""
+        """ShowSinkTaskDetailRespTopicsInfo
+
+        The model defined in huaweicloud sdk
+
+        :param topic: topic名称。
+        :type topic: str
+        :param partitions: 分区列表。
+        :type partitions: list[:class:`huaweicloudsdkkafka.v2.ShowSinkTaskDetailRespPartitions`]
+        """
         
         
 
@@ -63,7 +70,7 @@ class ShowSinkTaskDetailRespTopicsInfo:
         topic名称。
 
         :param topic: The topic of this ShowSinkTaskDetailRespTopicsInfo.
-        :type: str
+        :type topic: str
         """
         self._topic = topic
 
@@ -74,7 +81,7 @@ class ShowSinkTaskDetailRespTopicsInfo:
         分区列表。
 
         :return: The partitions of this ShowSinkTaskDetailRespTopicsInfo.
-        :rtype: list[ShowSinkTaskDetailRespPartitions]
+        :rtype: list[:class:`huaweicloudsdkkafka.v2.ShowSinkTaskDetailRespPartitions`]
         """
         return self._partitions
 
@@ -85,7 +92,7 @@ class ShowSinkTaskDetailRespTopicsInfo:
         分区列表。
 
         :param partitions: The partitions of this ShowSinkTaskDetailRespTopicsInfo.
-        :type: list[ShowSinkTaskDetailRespPartitions]
+        :type partitions: list[:class:`huaweicloudsdkkafka.v2.ShowSinkTaskDetailRespPartitions`]
         """
         self._partitions = partitions
 

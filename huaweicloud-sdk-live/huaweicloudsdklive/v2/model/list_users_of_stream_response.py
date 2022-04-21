@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListUsersOfStreamResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListUsersOfStreamResponse(SdkResponse):
     }
 
     def __init__(self, data_list=None, x_request_id=None):
-        """ListUsersOfStreamResponse - a model defined in huaweicloud sdk"""
+        """ListUsersOfStreamResponse
+
+        The model defined in huaweicloud sdk
+
+        :param data_list: 观众趋势列表。
+        :type data_list: list[:class:`huaweicloudsdklive.v2.V2UserData`]
+        :param x_request_id: 
+        :type x_request_id: str
+        """
         
         super(ListUsersOfStreamResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListUsersOfStreamResponse(SdkResponse):
         观众趋势列表。
 
         :return: The data_list of this ListUsersOfStreamResponse.
-        :rtype: list[V2UserData]
+        :rtype: list[:class:`huaweicloudsdklive.v2.V2UserData`]
         """
         return self._data_list
 
@@ -63,7 +70,7 @@ class ListUsersOfStreamResponse(SdkResponse):
         观众趋势列表。
 
         :param data_list: The data_list of this ListUsersOfStreamResponse.
-        :type: list[V2UserData]
+        :type data_list: list[:class:`huaweicloudsdklive.v2.V2UserData`]
         """
         self._data_list = data_list
 
@@ -83,7 +90,7 @@ class ListUsersOfStreamResponse(SdkResponse):
 
 
         :param x_request_id: The x_request_id of this ListUsersOfStreamResponse.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 

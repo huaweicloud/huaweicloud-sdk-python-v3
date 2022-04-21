@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Trigger:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -58,7 +57,41 @@ class Trigger:
     }
 
     def __init__(self, action=None, app_type=None, application=None, cluster_id=None, cluster_name=None, cluster_ns=None, condition=None, container=None, created_at=None, creator_name=None, enable=None, name=None, trigger_history=None, trigger_mode=None, trigger_type=None):
-        """Trigger - a model defined in huaweicloud sdk"""
+        """Trigger
+
+        The model defined in huaweicloud sdk
+
+        :param action: 触发动作，update
+        :type action: str
+        :param app_type: 应用类型，deployments、statefulsets
+        :type app_type: str
+        :param application: 应用名
+        :type application: str
+        :param cluster_id: 集群ID（cci时为空）
+        :type cluster_id: str
+        :param cluster_name: 集群名（cci时为空）
+        :type cluster_name: str
+        :param cluster_ns: 应用名所在的namespace
+        :type cluster_ns: str
+        :param condition: 触发条件，type为all时为.*,type为tag时为tag名,type为regular时为正则表达式
+        :type condition: str
+        :param container: 需更新的container名，默认为所有container
+        :type container: str
+        :param created_at: 创建时间
+        :type created_at: str
+        :param creator_name: 创建人
+        :type creator_name: str
+        :param enable: 是否生效
+        :type enable: str
+        :param name: 触发器名
+        :type name: str
+        :param trigger_history: 触发器历史
+        :type trigger_history: list[:class:`huaweicloudsdkswr.v2.TriggerHistories`]
+        :param trigger_mode: 触发器类型，cce、cci
+        :type trigger_mode: str
+        :param trigger_type: 触发条件，all、tag、regular
+        :type trigger_type: str
+        """
         
         
 
@@ -113,7 +146,7 @@ class Trigger:
         触发动作，update
 
         :param action: The action of this Trigger.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -135,7 +168,7 @@ class Trigger:
         应用类型，deployments、statefulsets
 
         :param app_type: The app_type of this Trigger.
-        :type: str
+        :type app_type: str
         """
         self._app_type = app_type
 
@@ -157,7 +190,7 @@ class Trigger:
         应用名
 
         :param application: The application of this Trigger.
-        :type: str
+        :type application: str
         """
         self._application = application
 
@@ -179,7 +212,7 @@ class Trigger:
         集群ID（cci时为空）
 
         :param cluster_id: The cluster_id of this Trigger.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -201,7 +234,7 @@ class Trigger:
         集群名（cci时为空）
 
         :param cluster_name: The cluster_name of this Trigger.
-        :type: str
+        :type cluster_name: str
         """
         self._cluster_name = cluster_name
 
@@ -223,7 +256,7 @@ class Trigger:
         应用名所在的namespace
 
         :param cluster_ns: The cluster_ns of this Trigger.
-        :type: str
+        :type cluster_ns: str
         """
         self._cluster_ns = cluster_ns
 
@@ -245,7 +278,7 @@ class Trigger:
         触发条件，type为all时为.*,type为tag时为tag名,type为regular时为正则表达式
 
         :param condition: The condition of this Trigger.
-        :type: str
+        :type condition: str
         """
         self._condition = condition
 
@@ -267,7 +300,7 @@ class Trigger:
         需更新的container名，默认为所有container
 
         :param container: The container of this Trigger.
-        :type: str
+        :type container: str
         """
         self._container = container
 
@@ -289,7 +322,7 @@ class Trigger:
         创建时间
 
         :param created_at: The created_at of this Trigger.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -311,7 +344,7 @@ class Trigger:
         创建人
 
         :param creator_name: The creator_name of this Trigger.
-        :type: str
+        :type creator_name: str
         """
         self._creator_name = creator_name
 
@@ -333,7 +366,7 @@ class Trigger:
         是否生效
 
         :param enable: The enable of this Trigger.
-        :type: str
+        :type enable: str
         """
         self._enable = enable
 
@@ -355,7 +388,7 @@ class Trigger:
         触发器名
 
         :param name: The name of this Trigger.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -366,7 +399,7 @@ class Trigger:
         触发器历史
 
         :return: The trigger_history of this Trigger.
-        :rtype: list[TriggerHistories]
+        :rtype: list[:class:`huaweicloudsdkswr.v2.TriggerHistories`]
         """
         return self._trigger_history
 
@@ -377,7 +410,7 @@ class Trigger:
         触发器历史
 
         :param trigger_history: The trigger_history of this Trigger.
-        :type: list[TriggerHistories]
+        :type trigger_history: list[:class:`huaweicloudsdkswr.v2.TriggerHistories`]
         """
         self._trigger_history = trigger_history
 
@@ -399,7 +432,7 @@ class Trigger:
         触发器类型，cce、cci
 
         :param trigger_mode: The trigger_mode of this Trigger.
-        :type: str
+        :type trigger_mode: str
         """
         self._trigger_mode = trigger_mode
 
@@ -421,7 +454,7 @@ class Trigger:
         触发条件，all、tag、regular
 
         :param trigger_type: The trigger_type of this Trigger.
-        :type: str
+        :type trigger_type: str
         """
         self._trigger_type = trigger_type
 

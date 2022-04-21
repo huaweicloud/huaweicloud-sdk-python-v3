@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchShowParamsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchShowParamsRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """BatchShowParamsRequest - a model defined in huaweicloud sdk"""
+        """BatchShowParamsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 请求语言类型
+        :type x_language: str
+        :param body: Body of the BatchShowParamsRequest
+        :type body: :class:`huaweicloudsdkdrs.v3.BatchQueryParamReq`
+        """
         
         
 
@@ -63,7 +70,7 @@ class BatchShowParamsRequest:
         请求语言类型
 
         :param x_language: The x_language of this BatchShowParamsRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -73,7 +80,7 @@ class BatchShowParamsRequest:
 
 
         :return: The body of this BatchShowParamsRequest.
-        :rtype: BatchQueryParamReq
+        :rtype: :class:`huaweicloudsdkdrs.v3.BatchQueryParamReq`
         """
         return self._body
 
@@ -83,7 +90,7 @@ class BatchShowParamsRequest:
 
 
         :param body: The body of this BatchShowParamsRequest.
-        :type: BatchQueryParamReq
+        :type body: :class:`huaweicloudsdkdrs.v3.BatchQueryParamReq`
         """
         self._body = body
 

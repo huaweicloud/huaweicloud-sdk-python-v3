@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApiPolicyMockBase:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ApiPolicyMockBase:
     }
 
     def __init__(self, result_content=None):
-        """ApiPolicyMockBase - a model defined in huaweicloud sdk"""
+        """ApiPolicyMockBase
+
+        The model defined in huaweicloud sdk
+
+        :param result_content: 返回结果
+        :type result_content: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class ApiPolicyMockBase:
         返回结果
 
         :param result_content: The result_content of this ApiPolicyMockBase.
-        :type: str
+        :type result_content: str
         """
         self._result_content = result_content
 

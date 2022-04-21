@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowPropertyValuesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowPropertyValuesRequest:
     }
 
     def __init__(self, data_store_id=None, body=None):
-        """ShowPropertyValuesRequest - a model defined in huaweicloud sdk"""
+        """ShowPropertyValuesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param data_store_id: 存储ID
+        :type data_store_id: str
+        :param body: Body of the ShowPropertyValuesRequest
+        :type body: :class:`huaweicloudsdkiotanalytics.v1.GetPropertyRequest`
+        """
         
         
 
@@ -62,7 +69,7 @@ class ShowPropertyValuesRequest:
         存储ID
 
         :param data_store_id: The data_store_id of this ShowPropertyValuesRequest.
-        :type: str
+        :type data_store_id: str
         """
         self._data_store_id = data_store_id
 
@@ -72,7 +79,7 @@ class ShowPropertyValuesRequest:
 
 
         :return: The body of this ShowPropertyValuesRequest.
-        :rtype: GetPropertyRequest
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.GetPropertyRequest`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class ShowPropertyValuesRequest:
 
 
         :param body: The body of this ShowPropertyValuesRequest.
-        :type: GetPropertyRequest
+        :type body: :class:`huaweicloudsdkiotanalytics.v1.GetPropertyRequest`
         """
         self._body = body
 

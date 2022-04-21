@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowGetConfDetailResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ShowGetConfDetailResponse(SdkResponse):
     }
 
     def __init__(self, name=None, status=None, conf_content=None, setting=None, update_at=None):
-        """ShowGetConfDetailResponse - a model defined in huaweicloud sdk"""
+        """ShowGetConfDetailResponse
+
+        The model defined in huaweicloud sdk
+
+        :param name: 配置文件名称。
+        :type name: str
+        :param status: 配置文件状态。
+        :type status: str
+        :param conf_content: 配置文件内容。
+        :type conf_content: str
+        :param setting: 
+        :type setting: :class:`huaweicloudsdkcss.v1.Setting`
+        :param update_at: 更新时间。
+        :type update_at: str
+        """
         
         super(ShowGetConfDetailResponse, self).__init__()
 
@@ -78,7 +91,7 @@ class ShowGetConfDetailResponse(SdkResponse):
         配置文件名称。
 
         :param name: The name of this ShowGetConfDetailResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -100,7 +113,7 @@ class ShowGetConfDetailResponse(SdkResponse):
         配置文件状态。
 
         :param status: The status of this ShowGetConfDetailResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -122,7 +135,7 @@ class ShowGetConfDetailResponse(SdkResponse):
         配置文件内容。
 
         :param conf_content: The conf_content of this ShowGetConfDetailResponse.
-        :type: str
+        :type conf_content: str
         """
         self._conf_content = conf_content
 
@@ -132,7 +145,7 @@ class ShowGetConfDetailResponse(SdkResponse):
 
 
         :return: The setting of this ShowGetConfDetailResponse.
-        :rtype: Setting
+        :rtype: :class:`huaweicloudsdkcss.v1.Setting`
         """
         return self._setting
 
@@ -142,7 +155,7 @@ class ShowGetConfDetailResponse(SdkResponse):
 
 
         :param setting: The setting of this ShowGetConfDetailResponse.
-        :type: Setting
+        :type setting: :class:`huaweicloudsdkcss.v1.Setting`
         """
         self._setting = setting
 
@@ -164,7 +177,7 @@ class ShowGetConfDetailResponse(SdkResponse):
         更新时间。
 
         :param update_at: The update_at of this ShowGetConfDetailResponse.
-        :type: str
+        :type update_at: str
         """
         self._update_at = update_at
 

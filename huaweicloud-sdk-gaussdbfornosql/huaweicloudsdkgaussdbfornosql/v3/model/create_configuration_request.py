@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateConfigurationRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateConfigurationRequest:
     }
 
     def __init__(self, body=None):
-        """CreateConfigurationRequest - a model defined in huaweicloud sdk"""
+        """CreateConfigurationRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateConfigurationRequest
+        :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.CreateConfigurationRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateConfigurationRequest:
 
 
         :return: The body of this CreateConfigurationRequest.
-        :rtype: CreateConfigurationRequestBody
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.CreateConfigurationRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateConfigurationRequest:
 
 
         :param body: The body of this CreateConfigurationRequest.
-        :type: CreateConfigurationRequestBody
+        :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.CreateConfigurationRequestBody`
         """
         self._body = body
 

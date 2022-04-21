@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RecognizeQualificationCertificateResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RecognizeQualificationCertificateResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """RecognizeQualificationCertificateResponse - a model defined in huaweicloud sdk"""
+        """RecognizeQualificationCertificateResponse
+
+        The model defined in huaweicloud sdk
+
+        :param result: 
+        :type result: :class:`huaweicloudsdkocr.v1.QualificationCertificateResult`
+        """
         
         super(RecognizeQualificationCertificateResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class RecognizeQualificationCertificateResponse(SdkResponse):
 
 
         :return: The result of this RecognizeQualificationCertificateResponse.
-        :rtype: QualificationCertificateResult
+        :rtype: :class:`huaweicloudsdkocr.v1.QualificationCertificateResult`
         """
         return self._result
 
@@ -56,7 +61,7 @@ class RecognizeQualificationCertificateResponse(SdkResponse):
 
 
         :param result: The result of this RecognizeQualificationCertificateResponse.
-        :type: QualificationCertificateResult
+        :type result: :class:`huaweicloudsdkocr.v1.QualificationCertificateResult`
         """
         self._result = result
 

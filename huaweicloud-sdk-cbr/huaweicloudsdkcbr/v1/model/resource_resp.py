@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResourceResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class ResourceResp:
     }
 
     def __init__(self, extra_info=None, id=None, name=None, protect_status=None, size=None, type=None, backup_size=None, backup_count=None, auto_protect=None):
-        """ResourceResp - a model defined in huaweicloud sdk"""
+        """ResourceResp
+
+        The model defined in huaweicloud sdk
+
+        :param extra_info: 
+        :type extra_info: :class:`huaweicloudsdkcbr.v1.ResourceExtraInfo`
+        :param id: 待备份资源id
+        :type id: str
+        :param name: 待备份资源名称
+        :type name: str
+        :param protect_status: 保护状态
+        :type protect_status: str
+        :param size: 资源已分配容量,单位为GB
+        :type size: int
+        :param type: 待备份资源的类型, 云服务器: OS::Nova::Server, 云硬盘: OS::Cinder::Volume, 裸金属服务器: OS::Ironic::BareMetalServer, 线下本地服务器: OS::Native::Server, 弹性文件系统: OS::Sfs::Turbo
+        :type type: str
+        :param backup_size: 副本大小
+        :type backup_size: int
+        :param backup_count: 副本数量
+        :type backup_count: int
+        :param auto_protect: 是否跟随存储库自动备份策略进行备份
+        :type auto_protect: bool
+        """
         
         
 
@@ -83,7 +104,7 @@ class ResourceResp:
 
 
         :return: The extra_info of this ResourceResp.
-        :rtype: ResourceExtraInfo
+        :rtype: :class:`huaweicloudsdkcbr.v1.ResourceExtraInfo`
         """
         return self._extra_info
 
@@ -93,7 +114,7 @@ class ResourceResp:
 
 
         :param extra_info: The extra_info of this ResourceResp.
-        :type: ResourceExtraInfo
+        :type extra_info: :class:`huaweicloudsdkcbr.v1.ResourceExtraInfo`
         """
         self._extra_info = extra_info
 
@@ -115,7 +136,7 @@ class ResourceResp:
         待备份资源id
 
         :param id: The id of this ResourceResp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -137,7 +158,7 @@ class ResourceResp:
         待备份资源名称
 
         :param name: The name of this ResourceResp.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -159,7 +180,7 @@ class ResourceResp:
         保护状态
 
         :param protect_status: The protect_status of this ResourceResp.
-        :type: str
+        :type protect_status: str
         """
         self._protect_status = protect_status
 
@@ -181,7 +202,7 @@ class ResourceResp:
         资源已分配容量,单位为GB
 
         :param size: The size of this ResourceResp.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -203,7 +224,7 @@ class ResourceResp:
         待备份资源的类型, 云服务器: OS::Nova::Server, 云硬盘: OS::Cinder::Volume, 裸金属服务器: OS::Ironic::BareMetalServer, 线下本地服务器: OS::Native::Server, 弹性文件系统: OS::Sfs::Turbo
 
         :param type: The type of this ResourceResp.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -225,7 +246,7 @@ class ResourceResp:
         副本大小
 
         :param backup_size: The backup_size of this ResourceResp.
-        :type: int
+        :type backup_size: int
         """
         self._backup_size = backup_size
 
@@ -247,7 +268,7 @@ class ResourceResp:
         副本数量
 
         :param backup_count: The backup_count of this ResourceResp.
-        :type: int
+        :type backup_count: int
         """
         self._backup_count = backup_count
 
@@ -269,7 +290,7 @@ class ResourceResp:
         是否跟随存储库自动备份策略进行备份
 
         :param auto_protect: The auto_protect of this ResourceResp.
-        :type: bool
+        :type auto_protect: bool
         """
         self._auto_protect = auto_protect
 

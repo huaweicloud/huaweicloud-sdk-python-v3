@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ForkProjectRepoRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ForkProjectRepoRequest:
     }
 
     def __init__(self, import_members=None, project_name=None, repo_name=None, template_id=None, type=None, visibility_level=None, external_project_info=None):
-        """ForkProjectRepoRequest - a model defined in huaweicloud sdk"""
+        """ForkProjectRepoRequest
+
+        The model defined in huaweicloud sdk
+
+        :param import_members: 是否导入项目成员，取值范围：0-&gt;不导入项目成员，1-&gt;导入项目成员
+        :type import_members: int
+        :param project_name: 项目名称，取值范围：可以输入英文大小写字母、数字、连字符、下划线，且必须以字母开头
+        :type project_name: str
+        :param repo_name: 仓库名称，取值范围：可以输入英文大小写字母、数字、连字符、下划线，且必须以字母开头
+        :type repo_name: str
+        :param template_id: 复制模板的ID
+        :type template_id: str
+        :param type: 项目类型，normal|scrum
+        :type type: str
+        :param visibility_level: 是否是公仓
+        :type visibility_level: int
+        :param external_project_info: 
+        :type external_project_info: :class:`huaweicloudsdkcodehub.v3.ExternalKeyMessage`
+        """
         
         
 
@@ -85,7 +102,7 @@ class ForkProjectRepoRequest:
         是否导入项目成员，取值范围：0->不导入项目成员，1->导入项目成员
 
         :param import_members: The import_members of this ForkProjectRepoRequest.
-        :type: int
+        :type import_members: int
         """
         self._import_members = import_members
 
@@ -107,7 +124,7 @@ class ForkProjectRepoRequest:
         项目名称，取值范围：可以输入英文大小写字母、数字、连字符、下划线，且必须以字母开头
 
         :param project_name: The project_name of this ForkProjectRepoRequest.
-        :type: str
+        :type project_name: str
         """
         self._project_name = project_name
 
@@ -129,7 +146,7 @@ class ForkProjectRepoRequest:
         仓库名称，取值范围：可以输入英文大小写字母、数字、连字符、下划线，且必须以字母开头
 
         :param repo_name: The repo_name of this ForkProjectRepoRequest.
-        :type: str
+        :type repo_name: str
         """
         self._repo_name = repo_name
 
@@ -151,7 +168,7 @@ class ForkProjectRepoRequest:
         复制模板的ID
 
         :param template_id: The template_id of this ForkProjectRepoRequest.
-        :type: str
+        :type template_id: str
         """
         self._template_id = template_id
 
@@ -173,7 +190,7 @@ class ForkProjectRepoRequest:
         项目类型，normal|scrum
 
         :param type: The type of this ForkProjectRepoRequest.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -195,7 +212,7 @@ class ForkProjectRepoRequest:
         是否是公仓
 
         :param visibility_level: The visibility_level of this ForkProjectRepoRequest.
-        :type: int
+        :type visibility_level: int
         """
         self._visibility_level = visibility_level
 
@@ -205,7 +222,7 @@ class ForkProjectRepoRequest:
 
 
         :return: The external_project_info of this ForkProjectRepoRequest.
-        :rtype: ExternalKeyMessage
+        :rtype: :class:`huaweicloudsdkcodehub.v3.ExternalKeyMessage`
         """
         return self._external_project_info
 
@@ -215,7 +232,7 @@ class ForkProjectRepoRequest:
 
 
         :param external_project_info: The external_project_info of this ForkProjectRepoRequest.
-        :type: ExternalKeyMessage
+        :type external_project_info: :class:`huaweicloudsdkcodehub.v3.ExternalKeyMessage`
         """
         self._external_project_info = external_project_info
 

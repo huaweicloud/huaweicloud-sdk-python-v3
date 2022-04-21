@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateEdgeAppRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateEdgeAppRequest:
     }
 
     def __init__(self, body=None):
-        """CreateEdgeAppRequest - a model defined in huaweicloud sdk"""
+        """CreateEdgeAppRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateEdgeAppRequest
+        :type body: :class:`huaweicloudsdkiotedge.v2.CreateEdgeApplicationRequestDTO`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateEdgeAppRequest:
 
 
         :return: The body of this CreateEdgeAppRequest.
-        :rtype: CreateEdgeApplicationRequestDTO
+        :rtype: :class:`huaweicloudsdkiotedge.v2.CreateEdgeApplicationRequestDTO`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateEdgeAppRequest:
 
 
         :param body: The body of this CreateEdgeAppRequest.
-        :type: CreateEdgeApplicationRequestDTO
+        :type body: :class:`huaweicloudsdkiotedge.v2.CreateEdgeApplicationRequestDTO`
         """
         self._body = body
 

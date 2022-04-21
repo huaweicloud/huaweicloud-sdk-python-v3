@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListGrantsRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListGrantsRequestBody:
     }
 
     def __init__(self, key_id=None, limit=None, marker=None, sequence=None):
-        """ListGrantsRequestBody - a model defined in huaweicloud sdk"""
+        """ListGrantsRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param key_id: 密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
+        :type key_id: str
+        :param limit: 指定查询授权列表返回记录条数，如果查询记录条数小于存在的条数，响应参数“truncated”将返回“true”，表示存在分页。 取值在授权最大个数范围以内。例如：100
+        :type limit: str
+        :param marker: 分页查询起始位置标识。 分页查询收到的响应参数“truncated”为“true”时，可以发送连续的请求获取更多的记录条数，“marker”设置为响应的“next_marker”的值。例如：10。
+        :type marker: str
+        :param sequence: 请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
+        :type sequence: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class ListGrantsRequestBody:
         密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
 
         :param key_id: The key_id of this ListGrantsRequestBody.
-        :type: str
+        :type key_id: str
         """
         self._key_id = key_id
 
@@ -95,7 +106,7 @@ class ListGrantsRequestBody:
         指定查询授权列表返回记录条数，如果查询记录条数小于存在的条数，响应参数“truncated”将返回“true”，表示存在分页。 取值在授权最大个数范围以内。例如：100
 
         :param limit: The limit of this ListGrantsRequestBody.
-        :type: str
+        :type limit: str
         """
         self._limit = limit
 
@@ -117,7 +128,7 @@ class ListGrantsRequestBody:
         分页查询起始位置标识。 分页查询收到的响应参数“truncated”为“true”时，可以发送连续的请求获取更多的记录条数，“marker”设置为响应的“next_marker”的值。例如：10。
 
         :param marker: The marker of this ListGrantsRequestBody.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -139,7 +150,7 @@ class ListGrantsRequestBody:
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
 
         :param sequence: The sequence of this ListGrantsRequestBody.
-        :type: str
+        :type sequence: str
         """
         self._sequence = sequence
 

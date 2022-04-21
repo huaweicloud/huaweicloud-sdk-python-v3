@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Quota:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class Quota:
     }
 
     def __init__(self, enterprise_project_id=None, enterprise_project_name=None, instance_quota=None, vcpus_quota=None, ram_quota=None, availability_instance_quota=None, availability_vcpus_quota=None, availability_ram_quota=None):
-        """Quota - a model defined in huaweicloud sdk"""
+        """Quota
+
+        The model defined in huaweicloud sdk
+
+        :param enterprise_project_id: 企业项目ID。
+        :type enterprise_project_id: str
+        :param enterprise_project_name: 企业项目名称。
+        :type enterprise_project_name: str
+        :param instance_quota: 实例个数配额。
+        :type instance_quota: int
+        :param vcpus_quota: CPU核数配额。
+        :type vcpus_quota: int
+        :param ram_quota: 内存使用配额，单位为GB。
+        :type ram_quota: int
+        :param availability_instance_quota: 实例剩余配额。
+        :type availability_instance_quota: int
+        :param availability_vcpus_quota: CPU核数剩余配额。
+        :type availability_vcpus_quota: int
+        :param availability_ram_quota: 内存剩余配额。
+        :type availability_ram_quota: int
+        """
         
         
 
@@ -86,7 +105,7 @@ class Quota:
         企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this Quota.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -108,7 +127,7 @@ class Quota:
         企业项目名称。
 
         :param enterprise_project_name: The enterprise_project_name of this Quota.
-        :type: str
+        :type enterprise_project_name: str
         """
         self._enterprise_project_name = enterprise_project_name
 
@@ -130,7 +149,7 @@ class Quota:
         实例个数配额。
 
         :param instance_quota: The instance_quota of this Quota.
-        :type: int
+        :type instance_quota: int
         """
         self._instance_quota = instance_quota
 
@@ -152,7 +171,7 @@ class Quota:
         CPU核数配额。
 
         :param vcpus_quota: The vcpus_quota of this Quota.
-        :type: int
+        :type vcpus_quota: int
         """
         self._vcpus_quota = vcpus_quota
 
@@ -174,7 +193,7 @@ class Quota:
         内存使用配额，单位为GB。
 
         :param ram_quota: The ram_quota of this Quota.
-        :type: int
+        :type ram_quota: int
         """
         self._ram_quota = ram_quota
 
@@ -196,7 +215,7 @@ class Quota:
         实例剩余配额。
 
         :param availability_instance_quota: The availability_instance_quota of this Quota.
-        :type: int
+        :type availability_instance_quota: int
         """
         self._availability_instance_quota = availability_instance_quota
 
@@ -218,7 +237,7 @@ class Quota:
         CPU核数剩余配额。
 
         :param availability_vcpus_quota: The availability_vcpus_quota of this Quota.
-        :type: int
+        :type availability_vcpus_quota: int
         """
         self._availability_vcpus_quota = availability_vcpus_quota
 
@@ -240,7 +259,7 @@ class Quota:
         内存剩余配额。
 
         :param availability_ram_quota: The availability_ram_quota of this Quota.
-        :type: int
+        :type availability_ram_quota: int
         """
         self._availability_ram_quota = availability_ram_quota
 

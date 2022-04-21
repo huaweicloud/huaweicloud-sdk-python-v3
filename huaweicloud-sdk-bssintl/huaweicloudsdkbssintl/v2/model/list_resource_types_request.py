@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListResourceTypesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListResourceTypesRequest:
     }
 
     def __init__(self, x_language=None, offset=None, limit=None):
-        """ListResourceTypesRequest - a model defined in huaweicloud sdk"""
+        """ListResourceTypesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言。zh_CN：中文en_US：英文缺省为zh_CN。
+        :type x_language: str
+        :param offset: 偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset &#x3D; 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
+        :type offset: int
+        :param limit: 每次查询的数量，默认值为10。
+        :type limit: int
+        """
         
         
 
@@ -68,7 +77,7 @@ class ListResourceTypesRequest:
         语言。zh_CN：中文en_US：英文缺省为zh_CN。
 
         :param x_language: The x_language of this ListResourceTypesRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -90,7 +99,7 @@ class ListResourceTypesRequest:
         偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
         :param offset: The offset of this ListResourceTypesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -112,7 +121,7 @@ class ListResourceTypesRequest:
         每次查询的数量，默认值为10。
 
         :param limit: The limit of this ListResourceTypesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

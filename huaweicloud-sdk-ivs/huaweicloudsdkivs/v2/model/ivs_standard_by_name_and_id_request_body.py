@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IvsStandardByNameAndIdRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class IvsStandardByNameAndIdRequestBody:
     }
 
     def __init__(self, meta=None, data=None):
-        """IvsStandardByNameAndIdRequestBody - a model defined in huaweicloud sdk"""
+        """IvsStandardByNameAndIdRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param meta: 
+        :type meta: :class:`huaweicloudsdkivs.v2.Meta`
+        :param data: 
+        :type data: :class:`huaweicloudsdkivs.v2.IvsStandardByNameAndIdRequestBodyData`
+        """
         
         
 
@@ -49,7 +56,7 @@ class IvsStandardByNameAndIdRequestBody:
 
 
         :return: The meta of this IvsStandardByNameAndIdRequestBody.
-        :rtype: Meta
+        :rtype: :class:`huaweicloudsdkivs.v2.Meta`
         """
         return self._meta
 
@@ -59,7 +66,7 @@ class IvsStandardByNameAndIdRequestBody:
 
 
         :param meta: The meta of this IvsStandardByNameAndIdRequestBody.
-        :type: Meta
+        :type meta: :class:`huaweicloudsdkivs.v2.Meta`
         """
         self._meta = meta
 
@@ -69,7 +76,7 @@ class IvsStandardByNameAndIdRequestBody:
 
 
         :return: The data of this IvsStandardByNameAndIdRequestBody.
-        :rtype: IvsStandardByNameAndIdRequestBodyData
+        :rtype: :class:`huaweicloudsdkivs.v2.IvsStandardByNameAndIdRequestBodyData`
         """
         return self._data
 
@@ -79,7 +86,7 @@ class IvsStandardByNameAndIdRequestBody:
 
 
         :param data: The data of this IvsStandardByNameAndIdRequestBody.
-        :type: IvsStandardByNameAndIdRequestBodyData
+        :type data: :class:`huaweicloudsdkivs.v2.IvsStandardByNameAndIdRequestBodyData`
         """
         self._data = data
 

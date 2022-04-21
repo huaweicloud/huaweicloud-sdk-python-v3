@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EachEncryptRsp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class EachEncryptRsp:
     }
 
     def __init__(self, task_id=None, status=None, create_time=None, end_time=None, input=None, output=None, output_file_name=None, user_data=None, description=None):
-        """EachEncryptRsp - a model defined in huaweicloud sdk"""
+        """EachEncryptRsp
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 任务Id
+        :type task_id: str
+        :param status: 任务执行状态。  取值如下： - NO_TASK：无任务 - WAITING：等待启动 - PROCESSING：加密中 - SUCCEEDED：加密成功 - FAILED：加密失败 - CANCELED：已删除 
+        :type status: str
+        :param create_time: 加密任务启动时间。 
+        :type create_time: str
+        :param end_time: 加密任务结束时间。 
+        :type end_time: str
+        :param input: 
+        :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        :param output: 
+        :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        :param output_file_name: 加密生成的文件名，数组类型，可能包含多个，包含加密文件名。 
+        :type output_file_name: list[str]
+        :param user_data: 用户数据。 
+        :type user_data: str
+        :param description: 加密任务描述，当加密出现异常时，此字段为异常的原因。 
+        :type description: str
+        """
         
         
 
@@ -98,7 +119,7 @@ class EachEncryptRsp:
         任务Id
 
         :param task_id: The task_id of this EachEncryptRsp.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -120,7 +141,7 @@ class EachEncryptRsp:
         任务执行状态。  取值如下： - NO_TASK：无任务 - WAITING：等待启动 - PROCESSING：加密中 - SUCCEEDED：加密成功 - FAILED：加密失败 - CANCELED：已删除 
 
         :param status: The status of this EachEncryptRsp.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -142,7 +163,7 @@ class EachEncryptRsp:
         加密任务启动时间。 
 
         :param create_time: The create_time of this EachEncryptRsp.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -164,7 +185,7 @@ class EachEncryptRsp:
         加密任务结束时间。 
 
         :param end_time: The end_time of this EachEncryptRsp.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -174,7 +195,7 @@ class EachEncryptRsp:
 
 
         :return: The input of this EachEncryptRsp.
-        :rtype: ObsObjInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         return self._input
 
@@ -184,7 +205,7 @@ class EachEncryptRsp:
 
 
         :param input: The input of this EachEncryptRsp.
-        :type: ObsObjInfo
+        :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         self._input = input
 
@@ -194,7 +215,7 @@ class EachEncryptRsp:
 
 
         :return: The output of this EachEncryptRsp.
-        :rtype: ObsObjInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         return self._output
 
@@ -204,7 +225,7 @@ class EachEncryptRsp:
 
 
         :param output: The output of this EachEncryptRsp.
-        :type: ObsObjInfo
+        :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         self._output = output
 
@@ -226,7 +247,7 @@ class EachEncryptRsp:
         加密生成的文件名，数组类型，可能包含多个，包含加密文件名。 
 
         :param output_file_name: The output_file_name of this EachEncryptRsp.
-        :type: list[str]
+        :type output_file_name: list[str]
         """
         self._output_file_name = output_file_name
 
@@ -248,7 +269,7 @@ class EachEncryptRsp:
         用户数据。 
 
         :param user_data: The user_data of this EachEncryptRsp.
-        :type: str
+        :type user_data: str
         """
         self._user_data = user_data
 
@@ -270,7 +291,7 @@ class EachEncryptRsp:
         加密任务描述，当加密出现异常时，此字段为异常的原因。 
 
         :param description: The description of this EachEncryptRsp.
-        :type: str
+        :type description: str
         """
         self._description = description
 

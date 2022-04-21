@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InstanceStatistic:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class InstanceStatistic:
     }
 
     def __init__(self, input_kbps=None, output_kbps=None, instance_id=None, keys=None, used_memory=None, max_memory=None, cmd_get_count=None, cmd_set_count=None, used_cpu=None):
-        """InstanceStatistic - a model defined in huaweicloud sdk"""
+        """InstanceStatistic
+
+        The model defined in huaweicloud sdk
+
+        :param input_kbps: 缓存实例网络入流量，单位：Kbps。
+        :type input_kbps: str
+        :param output_kbps: 缓存实例网络出流量，单位：Kbps。
+        :type output_kbps: str
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param keys: 缓存存储的数据条数。
+        :type keys: int
+        :param used_memory: 缓存已经使用内存，单位：MB。
+        :type used_memory: int
+        :param max_memory: 缓存的总内存，单位：MB。
+        :type max_memory: int
+        :param cmd_get_count: 缓存get命令被调用次数。
+        :type cmd_get_count: int
+        :param cmd_set_count: 缓存set命令被调用次数。
+        :type cmd_set_count: int
+        :param used_cpu: CPU使用率，单位：百分比。
+        :type used_cpu: str
+        """
         
         
 
@@ -98,7 +119,7 @@ class InstanceStatistic:
         缓存实例网络入流量，单位：Kbps。
 
         :param input_kbps: The input_kbps of this InstanceStatistic.
-        :type: str
+        :type input_kbps: str
         """
         self._input_kbps = input_kbps
 
@@ -120,7 +141,7 @@ class InstanceStatistic:
         缓存实例网络出流量，单位：Kbps。
 
         :param output_kbps: The output_kbps of this InstanceStatistic.
-        :type: str
+        :type output_kbps: str
         """
         self._output_kbps = output_kbps
 
@@ -142,7 +163,7 @@ class InstanceStatistic:
         实例ID。
 
         :param instance_id: The instance_id of this InstanceStatistic.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -164,7 +185,7 @@ class InstanceStatistic:
         缓存存储的数据条数。
 
         :param keys: The keys of this InstanceStatistic.
-        :type: int
+        :type keys: int
         """
         self._keys = keys
 
@@ -186,7 +207,7 @@ class InstanceStatistic:
         缓存已经使用内存，单位：MB。
 
         :param used_memory: The used_memory of this InstanceStatistic.
-        :type: int
+        :type used_memory: int
         """
         self._used_memory = used_memory
 
@@ -208,7 +229,7 @@ class InstanceStatistic:
         缓存的总内存，单位：MB。
 
         :param max_memory: The max_memory of this InstanceStatistic.
-        :type: int
+        :type max_memory: int
         """
         self._max_memory = max_memory
 
@@ -230,7 +251,7 @@ class InstanceStatistic:
         缓存get命令被调用次数。
 
         :param cmd_get_count: The cmd_get_count of this InstanceStatistic.
-        :type: int
+        :type cmd_get_count: int
         """
         self._cmd_get_count = cmd_get_count
 
@@ -252,7 +273,7 @@ class InstanceStatistic:
         缓存set命令被调用次数。
 
         :param cmd_set_count: The cmd_set_count of this InstanceStatistic.
-        :type: int
+        :type cmd_set_count: int
         """
         self._cmd_set_count = cmd_set_count
 
@@ -274,7 +295,7 @@ class InstanceStatistic:
         CPU使用率，单位：百分比。
 
         :param used_cpu: The used_cpu of this InstanceStatistic.
-        :type: str
+        :type used_cpu: str
         """
         self._used_cpu = used_cpu
 

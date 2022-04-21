@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteNodeRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class DeleteNodeRequest:
     }
 
     def __init__(self, cluster_id=None, node_id=None, nodepool_scale_down=None):
-        """DeleteNodeRequest - a model defined in huaweicloud sdk"""
+        """DeleteNodeRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 集群 ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
+        :type cluster_id: str
+        :param node_id: 节点ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
+        :type node_id: str
+        :param nodepool_scale_down: 标明是否为nodepool下发的请求。若不为“NoScaleDown”将自动更新对应节点池的实例数
+        :type nodepool_scale_down: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class DeleteNodeRequest:
         集群 ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
         :param cluster_id: The cluster_id of this DeleteNodeRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -88,7 +97,7 @@ class DeleteNodeRequest:
         节点ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
         :param node_id: The node_id of this DeleteNodeRequest.
-        :type: str
+        :type node_id: str
         """
         self._node_id = node_id
 
@@ -110,7 +119,7 @@ class DeleteNodeRequest:
         标明是否为nodepool下发的请求。若不为“NoScaleDown”将自动更新对应节点池的实例数
 
         :param nodepool_scale_down: The nodepool_scale_down of this DeleteNodeRequest.
-        :type: str
+        :type nodepool_scale_down: str
         """
         self._nodepool_scale_down = nodepool_scale_down
 

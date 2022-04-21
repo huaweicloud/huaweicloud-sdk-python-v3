@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryAdminResultDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class QueryAdminResultDTO:
     }
 
     def __init__(self, id=None, account=None, name=None, admin_type=None, email=None, phone=None, country=None):
-        """QueryAdminResultDTO - a model defined in huaweicloud sdk"""
+        """QueryAdminResultDTO
+
+        The model defined in huaweicloud sdk
+
+        :param id: 用户id
+        :type id: str
+        :param account: 用户账号
+        :type account: str
+        :param name: 名称
+        :type name: str
+        :param admin_type: 管理员类型 - 0：默认管理员 - 1：普通管理员
+        :type admin_type: int
+        :param email: 邮箱
+        :type email: str
+        :param phone: 联系电话
+        :type phone: str
+        :param country: 联系电话所属的国家
+        :type country: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class QueryAdminResultDTO:
         用户id
 
         :param id: The id of this QueryAdminResultDTO.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -110,7 +127,7 @@ class QueryAdminResultDTO:
         用户账号
 
         :param account: The account of this QueryAdminResultDTO.
-        :type: str
+        :type account: str
         """
         self._account = account
 
@@ -132,7 +149,7 @@ class QueryAdminResultDTO:
         名称
 
         :param name: The name of this QueryAdminResultDTO.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -154,7 +171,7 @@ class QueryAdminResultDTO:
         管理员类型 - 0：默认管理员 - 1：普通管理员
 
         :param admin_type: The admin_type of this QueryAdminResultDTO.
-        :type: int
+        :type admin_type: int
         """
         self._admin_type = admin_type
 
@@ -176,7 +193,7 @@ class QueryAdminResultDTO:
         邮箱
 
         :param email: The email of this QueryAdminResultDTO.
-        :type: str
+        :type email: str
         """
         self._email = email
 
@@ -198,7 +215,7 @@ class QueryAdminResultDTO:
         联系电话
 
         :param phone: The phone of this QueryAdminResultDTO.
-        :type: str
+        :type phone: str
         """
         self._phone = phone
 
@@ -220,7 +237,7 @@ class QueryAdminResultDTO:
         联系电话所属的国家
 
         :param country: The country of this QueryAdminResultDTO.
-        :type: str
+        :type country: str
         """
         self._country = country
 

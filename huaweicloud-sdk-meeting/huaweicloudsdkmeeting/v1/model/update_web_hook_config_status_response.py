@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateWebHookConfigStatusResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class UpdateWebHookConfigStatusResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateWebHookConfigStatusResponse - a model defined in huaweicloud sdk"""
+        """UpdateWebHookConfigStatusResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(UpdateWebHookConfigStatusResponse, self).__init__()
         self.discriminator = None

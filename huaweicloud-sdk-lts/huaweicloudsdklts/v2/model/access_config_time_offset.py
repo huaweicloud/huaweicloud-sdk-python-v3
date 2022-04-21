@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AccessConfigTimeOffset:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AccessConfigTimeOffset:
     }
 
     def __init__(self, offset=None, unit=None):
-        """AccessConfigTimeOffset - a model defined in huaweicloud sdk"""
+        """AccessConfigTimeOffset
+
+        The model defined in huaweicloud sdk
+
+        :param offset: 偏移时间。 当\&quot;unit\&quot;选择\&quot;day\&quot;时，范围为1~7天。 当\&quot;unit\&quot;选择\&quot;hour\&quot;时，范围为1~168小时。 当\&quot;unit\&quot;选择\&quot;sec\&quot;时，范围为1~604800秒。
+        :type offset: int
+        :param unit: 偏移时间单位。day ：天，hour：小时，sec：秒
+        :type unit: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class AccessConfigTimeOffset:
         偏移时间。 当\"unit\"选择\"day\"时，范围为1~7天。 当\"unit\"选择\"hour\"时，范围为1~168小时。 当\"unit\"选择\"sec\"时，范围为1~604800秒。
 
         :param offset: The offset of this AccessConfigTimeOffset.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -83,7 +90,7 @@ class AccessConfigTimeOffset:
         偏移时间单位。day ：天，hour：小时，sec：秒
 
         :param unit: The unit of this AccessConfigTimeOffset.
-        :type: str
+        :type unit: str
         """
         self._unit = unit
 

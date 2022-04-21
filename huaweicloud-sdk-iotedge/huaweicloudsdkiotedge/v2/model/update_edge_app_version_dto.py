@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateEdgeAppVersionDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class UpdateEdgeAppVersionDTO:
     }
 
     def __init__(self, description=None, deploy_type=None, container_settings=None, liveness_probe=None, readiness_probe=None, arch=None, command=None, args=None, outputs=None, inputs=None, services=None):
-        """UpdateEdgeAppVersionDTO - a model defined in huaweicloud sdk"""
+        """UpdateEdgeAppVersionDTO
+
+        The model defined in huaweicloud sdk
+
+        :param description: 应用描述
+        :type description: str
+        :param deploy_type: 部署类型docker|process
+        :type deploy_type: str
+        :param container_settings: 
+        :type container_settings: :class:`huaweicloudsdkiotedge.v2.ContainerSettingsDTO`
+        :param liveness_probe: 
+        :type liveness_probe: :class:`huaweicloudsdkiotedge.v2.ProbeDTO`
+        :param readiness_probe: 
+        :type readiness_probe: :class:`huaweicloudsdkiotedge.v2.ProbeDTO`
+        :param arch: 架构
+        :type arch: object
+        :param command: 启动命令
+        :type command: object
+        :param args: 启动参数
+        :type args: object
+        :param outputs: 应用输出路由端点
+        :type outputs: object
+        :param inputs: 应用输入路由
+        :type inputs: object
+        :param services: 应用实现的服务列表
+        :type services: object
+        """
         
         
 
@@ -106,7 +131,7 @@ class UpdateEdgeAppVersionDTO:
         应用描述
 
         :param description: The description of this UpdateEdgeAppVersionDTO.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -128,7 +153,7 @@ class UpdateEdgeAppVersionDTO:
         部署类型docker|process
 
         :param deploy_type: The deploy_type of this UpdateEdgeAppVersionDTO.
-        :type: str
+        :type deploy_type: str
         """
         self._deploy_type = deploy_type
 
@@ -138,7 +163,7 @@ class UpdateEdgeAppVersionDTO:
 
 
         :return: The container_settings of this UpdateEdgeAppVersionDTO.
-        :rtype: ContainerSettingsDTO
+        :rtype: :class:`huaweicloudsdkiotedge.v2.ContainerSettingsDTO`
         """
         return self._container_settings
 
@@ -148,7 +173,7 @@ class UpdateEdgeAppVersionDTO:
 
 
         :param container_settings: The container_settings of this UpdateEdgeAppVersionDTO.
-        :type: ContainerSettingsDTO
+        :type container_settings: :class:`huaweicloudsdkiotedge.v2.ContainerSettingsDTO`
         """
         self._container_settings = container_settings
 
@@ -158,7 +183,7 @@ class UpdateEdgeAppVersionDTO:
 
 
         :return: The liveness_probe of this UpdateEdgeAppVersionDTO.
-        :rtype: ProbeDTO
+        :rtype: :class:`huaweicloudsdkiotedge.v2.ProbeDTO`
         """
         return self._liveness_probe
 
@@ -168,7 +193,7 @@ class UpdateEdgeAppVersionDTO:
 
 
         :param liveness_probe: The liveness_probe of this UpdateEdgeAppVersionDTO.
-        :type: ProbeDTO
+        :type liveness_probe: :class:`huaweicloudsdkiotedge.v2.ProbeDTO`
         """
         self._liveness_probe = liveness_probe
 
@@ -178,7 +203,7 @@ class UpdateEdgeAppVersionDTO:
 
 
         :return: The readiness_probe of this UpdateEdgeAppVersionDTO.
-        :rtype: ProbeDTO
+        :rtype: :class:`huaweicloudsdkiotedge.v2.ProbeDTO`
         """
         return self._readiness_probe
 
@@ -188,7 +213,7 @@ class UpdateEdgeAppVersionDTO:
 
 
         :param readiness_probe: The readiness_probe of this UpdateEdgeAppVersionDTO.
-        :type: ProbeDTO
+        :type readiness_probe: :class:`huaweicloudsdkiotedge.v2.ProbeDTO`
         """
         self._readiness_probe = readiness_probe
 
@@ -210,7 +235,7 @@ class UpdateEdgeAppVersionDTO:
         架构
 
         :param arch: The arch of this UpdateEdgeAppVersionDTO.
-        :type: object
+        :type arch: object
         """
         self._arch = arch
 
@@ -232,7 +257,7 @@ class UpdateEdgeAppVersionDTO:
         启动命令
 
         :param command: The command of this UpdateEdgeAppVersionDTO.
-        :type: object
+        :type command: object
         """
         self._command = command
 
@@ -254,7 +279,7 @@ class UpdateEdgeAppVersionDTO:
         启动参数
 
         :param args: The args of this UpdateEdgeAppVersionDTO.
-        :type: object
+        :type args: object
         """
         self._args = args
 
@@ -276,7 +301,7 @@ class UpdateEdgeAppVersionDTO:
         应用输出路由端点
 
         :param outputs: The outputs of this UpdateEdgeAppVersionDTO.
-        :type: object
+        :type outputs: object
         """
         self._outputs = outputs
 
@@ -298,7 +323,7 @@ class UpdateEdgeAppVersionDTO:
         应用输入路由
 
         :param inputs: The inputs of this UpdateEdgeAppVersionDTO.
-        :type: object
+        :type inputs: object
         """
         self._inputs = inputs
 
@@ -320,7 +345,7 @@ class UpdateEdgeAppVersionDTO:
         应用实现的服务列表
 
         :param services: The services of this UpdateEdgeAppVersionDTO.
-        :type: object
+        :type services: object
         """
         self._services = services
 

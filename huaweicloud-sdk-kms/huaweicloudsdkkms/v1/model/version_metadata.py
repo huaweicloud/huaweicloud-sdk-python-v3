@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VersionMetadata:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class VersionMetadata:
     }
 
     def __init__(self, id=None, create_time=None, kms_key_id=None, secret_id=None, version_stages=None):
-        """VersionMetadata - a model defined in huaweicloud sdk"""
+        """VersionMetadata
+
+        The model defined in huaweicloud sdk
+
+        :param id: 凭据的版本号标识符，凭据对象下唯一。
+        :type id: str
+        :param create_time: 凭据版本创建时间，时间戳，即从1970年1月1日至该时间的总秒数。 
+        :type create_time: int
+        :param kms_key_id: 加密版本凭据值的KMS主密钥ID。 
+        :type kms_key_id: str
+        :param secret_id: 凭据的资源标识符。
+        :type secret_id: str
+        :param version_stages: 凭据版本被标记的状态列表。每个版本标签对于凭据对象下版本是唯一存在的，如果你创建版本时，指定的是同一凭据对象下的一个已经标记在其他版本上的状态，该标签将自动从其他版本上删除，并附加到此版本上。  如果未指定version_stage的值，则凭据管理服务会自动移动临时标签SYSCURRENT到此新版本。 
+        :type version_stages: list[str]
+        """
         
         
 
@@ -78,7 +91,7 @@ class VersionMetadata:
         凭据的版本号标识符，凭据对象下唯一。
 
         :param id: The id of this VersionMetadata.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -100,7 +113,7 @@ class VersionMetadata:
         凭据版本创建时间，时间戳，即从1970年1月1日至该时间的总秒数。 
 
         :param create_time: The create_time of this VersionMetadata.
-        :type: int
+        :type create_time: int
         """
         self._create_time = create_time
 
@@ -122,7 +135,7 @@ class VersionMetadata:
         加密版本凭据值的KMS主密钥ID。 
 
         :param kms_key_id: The kms_key_id of this VersionMetadata.
-        :type: str
+        :type kms_key_id: str
         """
         self._kms_key_id = kms_key_id
 
@@ -144,7 +157,7 @@ class VersionMetadata:
         凭据的资源标识符。
 
         :param secret_id: The secret_id of this VersionMetadata.
-        :type: str
+        :type secret_id: str
         """
         self._secret_id = secret_id
 
@@ -166,7 +179,7 @@ class VersionMetadata:
         凭据版本被标记的状态列表。每个版本标签对于凭据对象下版本是唯一存在的，如果你创建版本时，指定的是同一凭据对象下的一个已经标记在其他版本上的状态，该标签将自动从其他版本上删除，并附加到此版本上。  如果未指定version_stage的值，则凭据管理服务会自动移动临时标签SYSCURRENT到此新版本。 
 
         :param version_stages: The version_stages of this VersionMetadata.
-        :type: list[str]
+        :type version_stages: list[str]
         """
         self._version_stages = version_stages
 

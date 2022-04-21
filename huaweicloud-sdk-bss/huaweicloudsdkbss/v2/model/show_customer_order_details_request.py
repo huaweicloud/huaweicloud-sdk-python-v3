@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowCustomerOrderDetailsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ShowCustomerOrderDetailsRequest:
     }
 
     def __init__(self, x_language=None, order_id=None, limit=None, offset=None, indirect_partner_id=None):
-        """ShowCustomerOrderDetailsRequest - a model defined in huaweicloud sdk"""
+        """ShowCustomerOrderDetailsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言：中文：zh_CN 英文：en_US 缺省为zh_CN
+        :type x_language: str
+        :param order_id: 订单ID。
+        :type order_id: str
+        :param limit: 每页大小。默认值为10。
+        :type limit: int
+        :param offset: 偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset &#x3D; 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
+        :type offset: int
+        :param indirect_partner_id: 精英服务商ID。获取方法请参见查询精英服务商列表。华为云伙伴能力中心（一级经销商）查询精英服务商的客户订单详情时，需要携带该参数；否则只能查询自己客户的订单详情。
+        :type indirect_partner_id: str
+        """
         
         
 
@@ -77,7 +90,7 @@ class ShowCustomerOrderDetailsRequest:
         语言：中文：zh_CN 英文：en_US 缺省为zh_CN
 
         :param x_language: The x_language of this ShowCustomerOrderDetailsRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -99,7 +112,7 @@ class ShowCustomerOrderDetailsRequest:
         订单ID。
 
         :param order_id: The order_id of this ShowCustomerOrderDetailsRequest.
-        :type: str
+        :type order_id: str
         """
         self._order_id = order_id
 
@@ -121,7 +134,7 @@ class ShowCustomerOrderDetailsRequest:
         每页大小。默认值为10。
 
         :param limit: The limit of this ShowCustomerOrderDetailsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -143,7 +156,7 @@ class ShowCustomerOrderDetailsRequest:
         偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
         :param offset: The offset of this ShowCustomerOrderDetailsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -165,7 +178,7 @@ class ShowCustomerOrderDetailsRequest:
         精英服务商ID。获取方法请参见查询精英服务商列表。华为云伙伴能力中心（一级经销商）查询精英服务商的客户订单详情时，需要携带该参数；否则只能查询自己客户的订单详情。
 
         :param indirect_partner_id: The indirect_partner_id of this ShowCustomerOrderDetailsRequest.
-        :type: str
+        :type indirect_partner_id: str
         """
         self._indirect_partner_id = indirect_partner_id
 

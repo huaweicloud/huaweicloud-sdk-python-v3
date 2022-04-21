@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowTopUrlRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ShowTopUrlRequest:
     }
 
     def __init__(self, enterprise_project_id=None, start_time=None, end_time=None, domain_name=None, service_area=None, stat_type=None):
-        """ShowTopUrlRequest - a model defined in huaweicloud sdk"""
+        """ShowTopUrlRequest
+
+        The model defined in huaweicloud sdk
+
+        :param enterprise_project_id: 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子账号调用接口时，该参数必传。
+        :type enterprise_project_id: str
+        :param start_time: 查询起始时间戳（单位：毫秒）。该时间戳的取值在转化为日期格式后须满足以下格式：XXXX-XX-XX 00:00:00
+        :type start_time: int
+        :param end_time: 查询结束时间戳（单位：毫秒）。该时间戳的取值在转化为日期格式后须满足以下格式：XXXX-XX-XX 00:00:00
+        :type end_time: int
+        :param domain_name: 域名列表，多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com ，ALL表示查询名下全部域名。
+        :type domain_name: str
+        :param service_area: mainland_china(中国大陆)，outside_mainland_china(中国大陆境外)，默认为mainland_china。
+        :type service_area: str
+        :param stat_type: 参数类型支持：flux(流量),req_num(请求总数)。
+        :type stat_type: str
+        """
         
         
 
@@ -79,7 +94,7 @@ class ShowTopUrlRequest:
         当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子账号调用接口时，该参数必传。
 
         :param enterprise_project_id: The enterprise_project_id of this ShowTopUrlRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -101,7 +116,7 @@ class ShowTopUrlRequest:
         查询起始时间戳（单位：毫秒）。该时间戳的取值在转化为日期格式后须满足以下格式：XXXX-XX-XX 00:00:00
 
         :param start_time: The start_time of this ShowTopUrlRequest.
-        :type: int
+        :type start_time: int
         """
         self._start_time = start_time
 
@@ -123,7 +138,7 @@ class ShowTopUrlRequest:
         查询结束时间戳（单位：毫秒）。该时间戳的取值在转化为日期格式后须满足以下格式：XXXX-XX-XX 00:00:00
 
         :param end_time: The end_time of this ShowTopUrlRequest.
-        :type: int
+        :type end_time: int
         """
         self._end_time = end_time
 
@@ -145,7 +160,7 @@ class ShowTopUrlRequest:
         域名列表，多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com ，ALL表示查询名下全部域名。
 
         :param domain_name: The domain_name of this ShowTopUrlRequest.
-        :type: str
+        :type domain_name: str
         """
         self._domain_name = domain_name
 
@@ -167,7 +182,7 @@ class ShowTopUrlRequest:
         mainland_china(中国大陆)，outside_mainland_china(中国大陆境外)，默认为mainland_china。
 
         :param service_area: The service_area of this ShowTopUrlRequest.
-        :type: str
+        :type service_area: str
         """
         self._service_area = service_area
 
@@ -189,7 +204,7 @@ class ShowTopUrlRequest:
         参数类型支持：flux(流量),req_num(请求总数)。
 
         :param stat_type: The stat_type of this ShowTopUrlRequest.
-        :type: str
+        :type stat_type: str
         """
         self._stat_type = stat_type
 

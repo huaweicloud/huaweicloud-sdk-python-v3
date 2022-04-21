@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunAspectSentimentAdvanceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RunAspectSentimentAdvanceRequest:
     }
 
     def __init__(self, body=None):
-        """RunAspectSentimentAdvanceRequest - a model defined in huaweicloud sdk"""
+        """RunAspectSentimentAdvanceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the RunAspectSentimentAdvanceRequest
+        :type body: :class:`huaweicloudsdknlp.v2.AspectSentimentAdvanceRequest`
+        """
         
         
 
@@ -46,7 +51,7 @@ class RunAspectSentimentAdvanceRequest:
 
 
         :return: The body of this RunAspectSentimentAdvanceRequest.
-        :rtype: AspectSentimentAdvanceRequest
+        :rtype: :class:`huaweicloudsdknlp.v2.AspectSentimentAdvanceRequest`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class RunAspectSentimentAdvanceRequest:
 
 
         :param body: The body of this RunAspectSentimentAdvanceRequest.
-        :type: AspectSentimentAdvanceRequest
+        :type body: :class:`huaweicloudsdknlp.v2.AspectSentimentAdvanceRequest`
         """
         self._body = body
 

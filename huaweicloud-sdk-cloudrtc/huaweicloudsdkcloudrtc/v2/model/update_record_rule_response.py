@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateRecordRuleResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class UpdateRecordRuleResponse(SdkResponse):
     }
 
     def __init__(self, rule_id=None, app_id=None, obs_addr=None, record_formats=None, hls_config=None, mp4_config=None, create_time=None, update_time=None, x_request_id=None):
-        """UpdateRecordRuleResponse - a model defined in huaweicloud sdk"""
+        """UpdateRecordRuleResponse
+
+        The model defined in huaweicloud sdk
+
+        :param rule_id: 规则id，由服务端返回。创建或修改规则的时候不携带
+        :type rule_id: str
+        :param app_id: 应用id
+        :type app_id: str
+        :param obs_addr: 
+        :type obs_addr: :class:`huaweicloudsdkcloudrtc.v2.RecordObsFileAddr`
+        :param record_formats: 录制格式：hls格式或者mp4格式
+        :type record_formats: list[str]
+        :param hls_config: 
+        :type hls_config: :class:`huaweicloudsdkcloudrtc.v2.HLSRecordConfig`
+        :param mp4_config: 
+        :type mp4_config: :class:`huaweicloudsdkcloudrtc.v2.MP4RecordConfig`
+        :param create_time: 创建时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
+        :type create_time: str
+        :param update_time: 更新时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
+        :type update_time: str
+        :param x_request_id: 
+        :type x_request_id: str
+        """
         
         super(UpdateRecordRuleResponse, self).__init__()
 
@@ -98,7 +119,7 @@ class UpdateRecordRuleResponse(SdkResponse):
         规则id，由服务端返回。创建或修改规则的时候不携带
 
         :param rule_id: The rule_id of this UpdateRecordRuleResponse.
-        :type: str
+        :type rule_id: str
         """
         self._rule_id = rule_id
 
@@ -120,7 +141,7 @@ class UpdateRecordRuleResponse(SdkResponse):
         应用id
 
         :param app_id: The app_id of this UpdateRecordRuleResponse.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -130,7 +151,7 @@ class UpdateRecordRuleResponse(SdkResponse):
 
 
         :return: The obs_addr of this UpdateRecordRuleResponse.
-        :rtype: RecordObsFileAddr
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.RecordObsFileAddr`
         """
         return self._obs_addr
 
@@ -140,7 +161,7 @@ class UpdateRecordRuleResponse(SdkResponse):
 
 
         :param obs_addr: The obs_addr of this UpdateRecordRuleResponse.
-        :type: RecordObsFileAddr
+        :type obs_addr: :class:`huaweicloudsdkcloudrtc.v2.RecordObsFileAddr`
         """
         self._obs_addr = obs_addr
 
@@ -162,7 +183,7 @@ class UpdateRecordRuleResponse(SdkResponse):
         录制格式：hls格式或者mp4格式
 
         :param record_formats: The record_formats of this UpdateRecordRuleResponse.
-        :type: list[str]
+        :type record_formats: list[str]
         """
         self._record_formats = record_formats
 
@@ -172,7 +193,7 @@ class UpdateRecordRuleResponse(SdkResponse):
 
 
         :return: The hls_config of this UpdateRecordRuleResponse.
-        :rtype: HLSRecordConfig
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.HLSRecordConfig`
         """
         return self._hls_config
 
@@ -182,7 +203,7 @@ class UpdateRecordRuleResponse(SdkResponse):
 
 
         :param hls_config: The hls_config of this UpdateRecordRuleResponse.
-        :type: HLSRecordConfig
+        :type hls_config: :class:`huaweicloudsdkcloudrtc.v2.HLSRecordConfig`
         """
         self._hls_config = hls_config
 
@@ -192,7 +213,7 @@ class UpdateRecordRuleResponse(SdkResponse):
 
 
         :return: The mp4_config of this UpdateRecordRuleResponse.
-        :rtype: MP4RecordConfig
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.MP4RecordConfig`
         """
         return self._mp4_config
 
@@ -202,7 +223,7 @@ class UpdateRecordRuleResponse(SdkResponse):
 
 
         :param mp4_config: The mp4_config of this UpdateRecordRuleResponse.
-        :type: MP4RecordConfig
+        :type mp4_config: :class:`huaweicloudsdkcloudrtc.v2.MP4RecordConfig`
         """
         self._mp4_config = mp4_config
 
@@ -224,7 +245,7 @@ class UpdateRecordRuleResponse(SdkResponse):
         创建时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
 
         :param create_time: The create_time of this UpdateRecordRuleResponse.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -246,7 +267,7 @@ class UpdateRecordRuleResponse(SdkResponse):
         更新时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
 
         :param update_time: The update_time of this UpdateRecordRuleResponse.
-        :type: str
+        :type update_time: str
         """
         self._update_time = update_time
 
@@ -266,7 +287,7 @@ class UpdateRecordRuleResponse(SdkResponse):
 
 
         :param x_request_id: The x_request_id of this UpdateRecordRuleResponse.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 

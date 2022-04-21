@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RecognizeTransportationLicenseRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RecognizeTransportationLicenseRequest:
     }
 
     def __init__(self, body=None):
-        """RecognizeTransportationLicenseRequest - a model defined in huaweicloud sdk"""
+        """RecognizeTransportationLicenseRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the RecognizeTransportationLicenseRequest
+        :type body: :class:`huaweicloudsdkocr.v1.TransportationLicenseRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class RecognizeTransportationLicenseRequest:
 
 
         :return: The body of this RecognizeTransportationLicenseRequest.
-        :rtype: TransportationLicenseRequestBody
+        :rtype: :class:`huaweicloudsdkocr.v1.TransportationLicenseRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class RecognizeTransportationLicenseRequest:
 
 
         :param body: The body of this RecognizeTransportationLicenseRequest.
-        :type: TransportationLicenseRequestBody
+        :type body: :class:`huaweicloudsdkocr.v1.TransportationLicenseRequestBody`
         """
         self._body = body
 

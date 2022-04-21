@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAddonTemplatesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListAddonTemplatesRequest:
     }
 
     def __init__(self, addon_template_name=None):
-        """ListAddonTemplatesRequest - a model defined in huaweicloud sdk"""
+        """ListAddonTemplatesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param addon_template_name: 指定的模板名称，不填写则查询列表。
+        :type addon_template_name: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class ListAddonTemplatesRequest:
         指定的模板名称，不填写则查询列表。
 
         :param addon_template_name: The addon_template_name of this ListAddonTemplatesRequest.
-        :type: str
+        :type addon_template_name: str
         """
         self._addon_template_name = addon_template_name
 

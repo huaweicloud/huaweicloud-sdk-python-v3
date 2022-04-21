@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UploadFromOBSReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UploadFromOBSReq:
     }
 
     def __init__(self, metadata_path=None, name=None, description=None, encryption=None):
-        """UploadFromOBSReq - a model defined in huaweicloud sdk"""
+        """UploadFromOBSReq
+
+        The model defined in huaweicloud sdk
+
+        :param metadata_path: 元数据存储地址。
+        :type metadata_path: str
+        :param name: 元数据的名字。
+        :type name: str
+        :param description: 对元数据的描述。
+        :type description: str
+        :param encryption: 
+        :type encryption: :class:`huaweicloudsdkges.v1.EncryptionReq`
+        """
         
         
 
@@ -71,7 +82,7 @@ class UploadFromOBSReq:
         元数据存储地址。
 
         :param metadata_path: The metadata_path of this UploadFromOBSReq.
-        :type: str
+        :type metadata_path: str
         """
         self._metadata_path = metadata_path
 
@@ -93,7 +104,7 @@ class UploadFromOBSReq:
         元数据的名字。
 
         :param name: The name of this UploadFromOBSReq.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -115,7 +126,7 @@ class UploadFromOBSReq:
         对元数据的描述。
 
         :param description: The description of this UploadFromOBSReq.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -125,7 +136,7 @@ class UploadFromOBSReq:
 
 
         :return: The encryption of this UploadFromOBSReq.
-        :rtype: EncryptionReq
+        :rtype: :class:`huaweicloudsdkges.v1.EncryptionReq`
         """
         return self._encryption
 
@@ -135,7 +146,7 @@ class UploadFromOBSReq:
 
 
         :param encryption: The encryption of this UploadFromOBSReq.
-        :type: EncryptionReq
+        :type encryption: :class:`huaweicloudsdkges.v1.EncryptionReq`
         """
         self._encryption = encryption
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDeviceDetailRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowDeviceDetailRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, sn=None):
-        """ShowDeviceDetailRequest - a model defined in huaweicloud sdk"""
+        """ShowDeviceDetailRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        :type x_request_id: str
+        :param accept_language: 语言参数，默认为中文zh-CN, 英文为en-US
+        :type accept_language: str
+        :param sn: 终端SN号，仅可包含数字、字母和下划线。 maxLength：30 minLength：1
+        :type sn: str
+        """
         
         
 
@@ -67,7 +76,7 @@ class ShowDeviceDetailRequest:
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
 
         :param x_request_id: The x_request_id of this ShowDeviceDetailRequest.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 
@@ -89,7 +98,7 @@ class ShowDeviceDetailRequest:
         语言参数，默认为中文zh-CN, 英文为en-US
 
         :param accept_language: The accept_language of this ShowDeviceDetailRequest.
-        :type: str
+        :type accept_language: str
         """
         self._accept_language = accept_language
 
@@ -111,7 +120,7 @@ class ShowDeviceDetailRequest:
         终端SN号，仅可包含数字、字母和下划线。 maxLength：30 minLength：1
 
         :param sn: The sn of this ShowDeviceDetailRequest.
-        :type: str
+        :type sn: str
         """
         self._sn = sn
 

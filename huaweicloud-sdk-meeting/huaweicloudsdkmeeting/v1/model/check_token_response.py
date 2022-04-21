@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CheckTokenResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -64,7 +63,47 @@ class CheckTokenResponse(SdkResponse):
     }
 
     def __init__(self, access_token=None, token_ip=None, valid_period=None, expire_time=None, create_time=None, user=None, client_type=None, force_login_ind=None, first_login=None, pwd_expired=None, days_pwd_available=None, proxy_token=None, delay_delete=None, token_type=None, refresh_token=None, refresh_valid_period=None, refresh_expire_time=None, refresh_create_time=None):
-        """CheckTokenResponse - a model defined in huaweicloud sdk"""
+        """CheckTokenResponse
+
+        The model defined in huaweicloud sdk
+
+        :param access_token: 接入token字符串。
+        :type access_token: str
+        :param token_ip: 用户IP。
+        :type token_ip: str
+        :param valid_period: token有效时长，单位：秒。
+        :type valid_period: int
+        :param expire_time: token的失效时间戳，单位：秒。
+        :type expire_time: int
+        :param create_time: 业务token的创建时间戳，单位：毫秒。
+        :type create_time: int
+        :param user: 
+        :type user: :class:`huaweicloudsdkmeeting.v1.UserInfo`
+        :param client_type: 登录帐号类型。 * 72：API调用类型 
+        :type client_type: int
+        :param force_login_ind: 抢占登录标识 * 0：非抢占 * 1：抢占  未启用 
+        :type force_login_ind: int
+        :param first_login: 是否首次登录（说明：首次登录表示尚未修改过密码。首次登录时，系统会提醒用户需要修改密码），默认值：false。
+        :type first_login: bool
+        :param pwd_expired: 密码是否过期，默认值：false。
+        :type pwd_expired: bool
+        :param days_pwd_available: 密码有效天数
+        :type days_pwd_available: int
+        :param proxy_token: 
+        :type proxy_token: :class:`huaweicloudsdkmeeting.v1.ProxyTokenDTO`
+        :param delay_delete: 是否延时删除状态
+        :type delay_delete: bool
+        :param token_type: token类型 * 0：用户ACCESS TOKEN； * 1：会控TOKEN * 2：一次性TOKEN 
+        :type token_type: int
+        :param refresh_token: 刷新token字符串。
+        :type refresh_token: str
+        :param refresh_valid_period: 刷新token有效时长，单位：秒。
+        :type refresh_valid_period: int
+        :param refresh_expire_time: 刷新token的失效时间戳，单位：秒。
+        :type refresh_expire_time: int
+        :param refresh_create_time: 刷新token的创建时间戳，单位：毫秒。
+        :type refresh_create_time: int
+        """
         
         super(CheckTokenResponse, self).__init__()
 
@@ -143,7 +182,7 @@ class CheckTokenResponse(SdkResponse):
         接入token字符串。
 
         :param access_token: The access_token of this CheckTokenResponse.
-        :type: str
+        :type access_token: str
         """
         self._access_token = access_token
 
@@ -165,7 +204,7 @@ class CheckTokenResponse(SdkResponse):
         用户IP。
 
         :param token_ip: The token_ip of this CheckTokenResponse.
-        :type: str
+        :type token_ip: str
         """
         self._token_ip = token_ip
 
@@ -187,7 +226,7 @@ class CheckTokenResponse(SdkResponse):
         token有效时长，单位：秒。
 
         :param valid_period: The valid_period of this CheckTokenResponse.
-        :type: int
+        :type valid_period: int
         """
         self._valid_period = valid_period
 
@@ -209,7 +248,7 @@ class CheckTokenResponse(SdkResponse):
         token的失效时间戳，单位：秒。
 
         :param expire_time: The expire_time of this CheckTokenResponse.
-        :type: int
+        :type expire_time: int
         """
         self._expire_time = expire_time
 
@@ -231,7 +270,7 @@ class CheckTokenResponse(SdkResponse):
         业务token的创建时间戳，单位：毫秒。
 
         :param create_time: The create_time of this CheckTokenResponse.
-        :type: int
+        :type create_time: int
         """
         self._create_time = create_time
 
@@ -241,7 +280,7 @@ class CheckTokenResponse(SdkResponse):
 
 
         :return: The user of this CheckTokenResponse.
-        :rtype: UserInfo
+        :rtype: :class:`huaweicloudsdkmeeting.v1.UserInfo`
         """
         return self._user
 
@@ -251,7 +290,7 @@ class CheckTokenResponse(SdkResponse):
 
 
         :param user: The user of this CheckTokenResponse.
-        :type: UserInfo
+        :type user: :class:`huaweicloudsdkmeeting.v1.UserInfo`
         """
         self._user = user
 
@@ -273,7 +312,7 @@ class CheckTokenResponse(SdkResponse):
         登录帐号类型。 * 72：API调用类型 
 
         :param client_type: The client_type of this CheckTokenResponse.
-        :type: int
+        :type client_type: int
         """
         self._client_type = client_type
 
@@ -295,7 +334,7 @@ class CheckTokenResponse(SdkResponse):
         抢占登录标识 * 0：非抢占 * 1：抢占  未启用 
 
         :param force_login_ind: The force_login_ind of this CheckTokenResponse.
-        :type: int
+        :type force_login_ind: int
         """
         self._force_login_ind = force_login_ind
 
@@ -317,7 +356,7 @@ class CheckTokenResponse(SdkResponse):
         是否首次登录（说明：首次登录表示尚未修改过密码。首次登录时，系统会提醒用户需要修改密码），默认值：false。
 
         :param first_login: The first_login of this CheckTokenResponse.
-        :type: bool
+        :type first_login: bool
         """
         self._first_login = first_login
 
@@ -339,7 +378,7 @@ class CheckTokenResponse(SdkResponse):
         密码是否过期，默认值：false。
 
         :param pwd_expired: The pwd_expired of this CheckTokenResponse.
-        :type: bool
+        :type pwd_expired: bool
         """
         self._pwd_expired = pwd_expired
 
@@ -361,7 +400,7 @@ class CheckTokenResponse(SdkResponse):
         密码有效天数
 
         :param days_pwd_available: The days_pwd_available of this CheckTokenResponse.
-        :type: int
+        :type days_pwd_available: int
         """
         self._days_pwd_available = days_pwd_available
 
@@ -371,7 +410,7 @@ class CheckTokenResponse(SdkResponse):
 
 
         :return: The proxy_token of this CheckTokenResponse.
-        :rtype: ProxyTokenDTO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.ProxyTokenDTO`
         """
         return self._proxy_token
 
@@ -381,7 +420,7 @@ class CheckTokenResponse(SdkResponse):
 
 
         :param proxy_token: The proxy_token of this CheckTokenResponse.
-        :type: ProxyTokenDTO
+        :type proxy_token: :class:`huaweicloudsdkmeeting.v1.ProxyTokenDTO`
         """
         self._proxy_token = proxy_token
 
@@ -403,7 +442,7 @@ class CheckTokenResponse(SdkResponse):
         是否延时删除状态
 
         :param delay_delete: The delay_delete of this CheckTokenResponse.
-        :type: bool
+        :type delay_delete: bool
         """
         self._delay_delete = delay_delete
 
@@ -425,7 +464,7 @@ class CheckTokenResponse(SdkResponse):
         token类型 * 0：用户ACCESS TOKEN； * 1：会控TOKEN * 2：一次性TOKEN 
 
         :param token_type: The token_type of this CheckTokenResponse.
-        :type: int
+        :type token_type: int
         """
         self._token_type = token_type
 
@@ -447,7 +486,7 @@ class CheckTokenResponse(SdkResponse):
         刷新token字符串。
 
         :param refresh_token: The refresh_token of this CheckTokenResponse.
-        :type: str
+        :type refresh_token: str
         """
         self._refresh_token = refresh_token
 
@@ -469,7 +508,7 @@ class CheckTokenResponse(SdkResponse):
         刷新token有效时长，单位：秒。
 
         :param refresh_valid_period: The refresh_valid_period of this CheckTokenResponse.
-        :type: int
+        :type refresh_valid_period: int
         """
         self._refresh_valid_period = refresh_valid_period
 
@@ -491,7 +530,7 @@ class CheckTokenResponse(SdkResponse):
         刷新token的失效时间戳，单位：秒。
 
         :param refresh_expire_time: The refresh_expire_time of this CheckTokenResponse.
-        :type: int
+        :type refresh_expire_time: int
         """
         self._refresh_expire_time = refresh_expire_time
 
@@ -513,7 +552,7 @@ class CheckTokenResponse(SdkResponse):
         刷新token的创建时间戳，单位：毫秒。
 
         :param refresh_create_time: The refresh_create_time of this CheckTokenResponse.
-        :type: int
+        :type refresh_create_time: int
         """
         self._refresh_create_time = refresh_create_time
 

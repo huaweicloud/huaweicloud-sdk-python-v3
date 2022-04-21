@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CheckResultResultBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class CheckResultResultBody:
     }
 
     def __init__(self, job_id=None, status=None, create_time=None, update_time=None, items=None):
-        """CheckResultResultBody - a model defined in huaweicloud sdk"""
+        """CheckResultResultBody
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 任务标识。
+        :type job_id: str
+        :param status: 任务状态。  created：已创建  running：正在处理  finish：已完成  failed：处理失败 
+        :type status: str
+        :param create_time: 任务创建的时间。例如：2018-01-02T15:03:04Z
+        :type create_time: str
+        :param update_time: 任务最近更新的时间。例如：2018-01-02T15:03:04Z
+        :type update_time: str
+        :param items: 图片内容检测的结果列表。
+        :type items: list[:class:`huaweicloudsdkmoderation.v2.CheckResultItemsBody`]
+        """
         
         
 
@@ -78,7 +91,7 @@ class CheckResultResultBody:
         任务标识。
 
         :param job_id: The job_id of this CheckResultResultBody.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -100,7 +113,7 @@ class CheckResultResultBody:
         任务状态。  created：已创建  running：正在处理  finish：已完成  failed：处理失败 
 
         :param status: The status of this CheckResultResultBody.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -122,7 +135,7 @@ class CheckResultResultBody:
         任务创建的时间。例如：2018-01-02T15:03:04Z
 
         :param create_time: The create_time of this CheckResultResultBody.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -144,7 +157,7 @@ class CheckResultResultBody:
         任务最近更新的时间。例如：2018-01-02T15:03:04Z
 
         :param update_time: The update_time of this CheckResultResultBody.
-        :type: str
+        :type update_time: str
         """
         self._update_time = update_time
 
@@ -155,7 +168,7 @@ class CheckResultResultBody:
         图片内容检测的结果列表。
 
         :return: The items of this CheckResultResultBody.
-        :rtype: list[CheckResultItemsBody]
+        :rtype: list[:class:`huaweicloudsdkmoderation.v2.CheckResultItemsBody`]
         """
         return self._items
 
@@ -166,7 +179,7 @@ class CheckResultResultBody:
         图片内容检测的结果列表。
 
         :param items: The items of this CheckResultResultBody.
-        :type: list[CheckResultItemsBody]
+        :type items: list[:class:`huaweicloudsdkmoderation.v2.CheckResultItemsBody`]
         """
         self._items = items
 

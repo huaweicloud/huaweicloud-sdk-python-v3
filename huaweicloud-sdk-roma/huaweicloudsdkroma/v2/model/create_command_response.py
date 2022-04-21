@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateCommandResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CreateCommandResponse(SdkResponse):
     }
 
     def __init__(self, service_id=None, command_id=None, command_name=None, description=None):
-        """CreateCommandResponse - a model defined in huaweicloud sdk"""
+        """CreateCommandResponse
+
+        The model defined in huaweicloud sdk
+
+        :param service_id: 命令所属服务id
+        :type service_id: int
+        :param command_id: 命令id
+        :type command_id: int
+        :param command_name: 命令名称
+        :type command_name: str
+        :param description: 命令描述
+        :type description: str
+        """
         
         super(CreateCommandResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class CreateCommandResponse(SdkResponse):
         命令所属服务id
 
         :param service_id: The service_id of this CreateCommandResponse.
-        :type: int
+        :type service_id: int
         """
         self._service_id = service_id
 
@@ -95,7 +106,7 @@ class CreateCommandResponse(SdkResponse):
         命令id
 
         :param command_id: The command_id of this CreateCommandResponse.
-        :type: int
+        :type command_id: int
         """
         self._command_id = command_id
 
@@ -117,7 +128,7 @@ class CreateCommandResponse(SdkResponse):
         命令名称
 
         :param command_name: The command_name of this CreateCommandResponse.
-        :type: str
+        :type command_name: str
         """
         self._command_name = command_name
 
@@ -139,7 +150,7 @@ class CreateCommandResponse(SdkResponse):
         命令描述
 
         :param description: The description of this CreateCommandResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 

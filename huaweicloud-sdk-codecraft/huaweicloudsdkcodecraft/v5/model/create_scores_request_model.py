@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateScoresRequestModel:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class CreateScoresRequestModel:
     }
 
     def __init__(self, competition_id=None, stage_id=None, works_id=None, name=None, works_kind=None, score=None, status=None, created_time=None, note=None, message=None, domain_id=None, user_id=None):
-        """CreateScoresRequestModel - a model defined in huaweicloud sdk"""
+        """CreateScoresRequestModel
+
+        The model defined in huaweicloud sdk
+
+        :param competition_id: 大赛ID，大赛平台提供
+        :type competition_id: str
+        :param stage_id: 大赛阶段ID，大赛平台提供
+        :type stage_id: str
+        :param works_id: 第三方服务作品ID
+        :type works_id: int
+        :param name: 作品名称，名称最大字符数为75，并且不能有含有特殊符号
+        :type name: str
+        :param works_kind: 作品类型,例如docx、png、zip等
+        :type works_kind: str
+        :param score: 作品分数，作品状态为failed时传-1，计算长度时包括小数点，小数点后面最多保留四位
+        :type score: float
+        :param status: 作品状态success|failed。判题时，需要对上传作品进行检查，当作品不符合要求时，应该返回failed，并将提示信息通过 message显示出来
+        :type status: str
+        :param created_time: 作品创建时间
+        :type created_time: str
+        :param note: 作品备注信息
+        :type note: str
+        :param message: 作品描述信息
+        :type message: str
+        :param domain_id: 租户ID
+        :type domain_id: str
+        :param user_id: 用户ID
+        :type user_id: str
+        """
         
         
 
@@ -105,7 +132,7 @@ class CreateScoresRequestModel:
         大赛ID，大赛平台提供
 
         :param competition_id: The competition_id of this CreateScoresRequestModel.
-        :type: str
+        :type competition_id: str
         """
         self._competition_id = competition_id
 
@@ -127,7 +154,7 @@ class CreateScoresRequestModel:
         大赛阶段ID，大赛平台提供
 
         :param stage_id: The stage_id of this CreateScoresRequestModel.
-        :type: str
+        :type stage_id: str
         """
         self._stage_id = stage_id
 
@@ -149,7 +176,7 @@ class CreateScoresRequestModel:
         第三方服务作品ID
 
         :param works_id: The works_id of this CreateScoresRequestModel.
-        :type: int
+        :type works_id: int
         """
         self._works_id = works_id
 
@@ -171,7 +198,7 @@ class CreateScoresRequestModel:
         作品名称，名称最大字符数为75，并且不能有含有特殊符号
 
         :param name: The name of this CreateScoresRequestModel.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -193,7 +220,7 @@ class CreateScoresRequestModel:
         作品类型,例如docx、png、zip等
 
         :param works_kind: The works_kind of this CreateScoresRequestModel.
-        :type: str
+        :type works_kind: str
         """
         self._works_kind = works_kind
 
@@ -215,7 +242,7 @@ class CreateScoresRequestModel:
         作品分数，作品状态为failed时传-1，计算长度时包括小数点，小数点后面最多保留四位
 
         :param score: The score of this CreateScoresRequestModel.
-        :type: float
+        :type score: float
         """
         self._score = score
 
@@ -237,7 +264,7 @@ class CreateScoresRequestModel:
         作品状态success|failed。判题时，需要对上传作品进行检查，当作品不符合要求时，应该返回failed，并将提示信息通过 message显示出来
 
         :param status: The status of this CreateScoresRequestModel.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -259,7 +286,7 @@ class CreateScoresRequestModel:
         作品创建时间
 
         :param created_time: The created_time of this CreateScoresRequestModel.
-        :type: str
+        :type created_time: str
         """
         self._created_time = created_time
 
@@ -281,7 +308,7 @@ class CreateScoresRequestModel:
         作品备注信息
 
         :param note: The note of this CreateScoresRequestModel.
-        :type: str
+        :type note: str
         """
         self._note = note
 
@@ -303,7 +330,7 @@ class CreateScoresRequestModel:
         作品描述信息
 
         :param message: The message of this CreateScoresRequestModel.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -325,7 +352,7 @@ class CreateScoresRequestModel:
         租户ID
 
         :param domain_id: The domain_id of this CreateScoresRequestModel.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -347,7 +374,7 @@ class CreateScoresRequestModel:
         用户ID
 
         :param user_id: The user_id of this CreateScoresRequestModel.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 

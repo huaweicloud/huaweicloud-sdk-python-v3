@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchCreateOrDeleteResourceTagsRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchCreateOrDeleteResourceTagsRequestBody:
     }
 
     def __init__(self, tags=None, action=None):
-        """BatchCreateOrDeleteResourceTagsRequestBody - a model defined in huaweicloud sdk"""
+        """BatchCreateOrDeleteResourceTagsRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param tags: 标签列表，结构体说明请参见表1。删除时tags结构体不能缺失，key不能为空或空字符串，且不针对字符集范围进行校验。
+        :type tags: list[:class:`huaweicloudsdksmn.v2.ResourceTag`]
+        :param action: 操作标识：仅限于create（创建）、delete（删除）。
+        :type action: str
+        """
         
         
 
@@ -50,7 +57,7 @@ class BatchCreateOrDeleteResourceTagsRequestBody:
         标签列表，结构体说明请参见表1。删除时tags结构体不能缺失，key不能为空或空字符串，且不针对字符集范围进行校验。
 
         :return: The tags of this BatchCreateOrDeleteResourceTagsRequestBody.
-        :rtype: list[ResourceTag]
+        :rtype: list[:class:`huaweicloudsdksmn.v2.ResourceTag`]
         """
         return self._tags
 
@@ -61,7 +68,7 @@ class BatchCreateOrDeleteResourceTagsRequestBody:
         标签列表，结构体说明请参见表1。删除时tags结构体不能缺失，key不能为空或空字符串，且不针对字符集范围进行校验。
 
         :param tags: The tags of this BatchCreateOrDeleteResourceTagsRequestBody.
-        :type: list[ResourceTag]
+        :type tags: list[:class:`huaweicloudsdksmn.v2.ResourceTag`]
         """
         self._tags = tags
 
@@ -83,7 +90,7 @@ class BatchCreateOrDeleteResourceTagsRequestBody:
         操作标识：仅限于create（创建）、delete（删除）。
 
         :param action: The action of this BatchCreateOrDeleteResourceTagsRequestBody.
-        :type: str
+        :type action: str
         """
         self._action = action
 

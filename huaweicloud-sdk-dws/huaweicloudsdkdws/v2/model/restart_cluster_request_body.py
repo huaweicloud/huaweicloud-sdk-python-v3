@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestartClusterRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RestartClusterRequestBody:
     }
 
     def __init__(self, restart=None):
-        """RestartClusterRequestBody - a model defined in huaweicloud sdk"""
+        """RestartClusterRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param restart: 重启标识
+        :type restart: object
+        """
         
         
 
@@ -57,7 +62,7 @@ class RestartClusterRequestBody:
         重启标识
 
         :param restart: The restart of this RestartClusterRequestBody.
-        :type: object
+        :type restart: object
         """
         self._restart = restart
 

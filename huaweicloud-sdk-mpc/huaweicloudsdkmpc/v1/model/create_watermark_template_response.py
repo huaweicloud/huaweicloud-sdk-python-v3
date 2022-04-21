@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateWatermarkTemplateResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateWatermarkTemplateResponse(SdkResponse):
     }
 
     def __init__(self, template_id=None):
-        """CreateWatermarkTemplateResponse - a model defined in huaweicloud sdk"""
+        """CreateWatermarkTemplateResponse
+
+        The model defined in huaweicloud sdk
+
+        :param template_id: 水印模板Id
+        :type template_id: int
+        """
         
         super(CreateWatermarkTemplateResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class CreateWatermarkTemplateResponse(SdkResponse):
         水印模板Id
 
         :param template_id: The template_id of this CreateWatermarkTemplateResponse.
-        :type: int
+        :type template_id: int
         """
         self._template_id = template_id
 

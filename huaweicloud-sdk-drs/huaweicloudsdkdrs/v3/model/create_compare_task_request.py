@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateCompareTaskRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateCompareTaskRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """CreateCompareTaskRequest - a model defined in huaweicloud sdk"""
+        """CreateCompareTaskRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 请求语言类型
+        :type x_language: str
+        :param body: Body of the CreateCompareTaskRequest
+        :type body: :class:`huaweicloudsdkdrs.v3.CreateCompareTaskReq`
+        """
         
         
 
@@ -63,7 +70,7 @@ class CreateCompareTaskRequest:
         请求语言类型
 
         :param x_language: The x_language of this CreateCompareTaskRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -73,7 +80,7 @@ class CreateCompareTaskRequest:
 
 
         :return: The body of this CreateCompareTaskRequest.
-        :rtype: CreateCompareTaskReq
+        :rtype: :class:`huaweicloudsdkdrs.v3.CreateCompareTaskReq`
         """
         return self._body
 
@@ -83,7 +90,7 @@ class CreateCompareTaskRequest:
 
 
         :param body: The body of this CreateCompareTaskRequest.
-        :type: CreateCompareTaskReq
+        :type body: :class:`huaweicloudsdkdrs.v3.CreateCompareTaskReq`
         """
         self._body = body
 

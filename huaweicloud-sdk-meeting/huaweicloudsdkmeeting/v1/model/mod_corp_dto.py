@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ModCorpDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ModCorpDTO:
     }
 
     def __init__(self, basic_info=None, admin_info=None, group_id=None, property_info=None):
-        """ModCorpDTO - a model defined in huaweicloud sdk"""
+        """ModCorpDTO
+
+        The model defined in huaweicloud sdk
+
+        :param basic_info: 
+        :type basic_info: :class:`huaweicloudsdkmeeting.v1.ModCorpBasicDTO`
+        :param admin_info: 
+        :type admin_info: :class:`huaweicloudsdkmeeting.v1.ModAdminDTO`
+        :param group_id: 媒体接入（包括SBC和MCU）分组id, 可通过企业资源管理下的SP管理员查询资源信息接口获取。
+        :type group_id: str
+        :param property_info: 可配置项信息。
+        :type property_info: list[:class:`huaweicloudsdkmeeting.v1.OrgPropertyDTO`]
+        """
         
         
 
@@ -61,7 +72,7 @@ class ModCorpDTO:
 
 
         :return: The basic_info of this ModCorpDTO.
-        :rtype: ModCorpBasicDTO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.ModCorpBasicDTO`
         """
         return self._basic_info
 
@@ -71,7 +82,7 @@ class ModCorpDTO:
 
 
         :param basic_info: The basic_info of this ModCorpDTO.
-        :type: ModCorpBasicDTO
+        :type basic_info: :class:`huaweicloudsdkmeeting.v1.ModCorpBasicDTO`
         """
         self._basic_info = basic_info
 
@@ -81,7 +92,7 @@ class ModCorpDTO:
 
 
         :return: The admin_info of this ModCorpDTO.
-        :rtype: ModAdminDTO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.ModAdminDTO`
         """
         return self._admin_info
 
@@ -91,7 +102,7 @@ class ModCorpDTO:
 
 
         :param admin_info: The admin_info of this ModCorpDTO.
-        :type: ModAdminDTO
+        :type admin_info: :class:`huaweicloudsdkmeeting.v1.ModAdminDTO`
         """
         self._admin_info = admin_info
 
@@ -113,7 +124,7 @@ class ModCorpDTO:
         媒体接入（包括SBC和MCU）分组id, 可通过企业资源管理下的SP管理员查询资源信息接口获取。
 
         :param group_id: The group_id of this ModCorpDTO.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -124,7 +135,7 @@ class ModCorpDTO:
         可配置项信息。
 
         :return: The property_info of this ModCorpDTO.
-        :rtype: list[OrgPropertyDTO]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.OrgPropertyDTO`]
         """
         return self._property_info
 
@@ -135,7 +146,7 @@ class ModCorpDTO:
         可配置项信息。
 
         :param property_info: The property_info of this ModCorpDTO.
-        :type: list[OrgPropertyDTO]
+        :type property_info: list[:class:`huaweicloudsdkmeeting.v1.OrgPropertyDTO`]
         """
         self._property_info = property_info
 

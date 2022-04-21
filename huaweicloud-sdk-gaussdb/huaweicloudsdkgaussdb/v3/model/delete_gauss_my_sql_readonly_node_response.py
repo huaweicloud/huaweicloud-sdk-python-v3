@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteGaussMySqlReadonlyNodeResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteGaussMySqlReadonlyNodeResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """DeleteGaussMySqlReadonlyNodeResponse - a model defined in huaweicloud sdk"""
+        """DeleteGaussMySqlReadonlyNodeResponse
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 任务ID。
+        :type job_id: str
+        """
         
         super(DeleteGaussMySqlReadonlyNodeResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class DeleteGaussMySqlReadonlyNodeResponse(SdkResponse):
         任务ID。
 
         :param job_id: The job_id of this DeleteGaussMySqlReadonlyNodeResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 

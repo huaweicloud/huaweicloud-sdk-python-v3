@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DTAggregateMetrics:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class DTAggregateMetrics:
     }
 
     def __init__(self, inputs=None, expression=None, metric_name=None):
-        """DTAggregateMetrics - a model defined in huaweicloud sdk"""
+        """DTAggregateMetrics
+
+        The model defined in huaweicloud sdk
+
+        :param inputs: 定义指标计算查询的输入资产属性列表
+        :type inputs: list[:class:`huaweicloudsdkiotanalytics.v1.MetricInput`]
+        :param expression: 指标表达式,最多64个字符
+        :type expression: str
+        :param metric_name: 指标名，指标计算查询的输出指标名称
+        :type metric_name: str
+        """
         
         
 
@@ -54,7 +63,7 @@ class DTAggregateMetrics:
         定义指标计算查询的输入资产属性列表
 
         :return: The inputs of this DTAggregateMetrics.
-        :rtype: list[MetricInput]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.MetricInput`]
         """
         return self._inputs
 
@@ -65,7 +74,7 @@ class DTAggregateMetrics:
         定义指标计算查询的输入资产属性列表
 
         :param inputs: The inputs of this DTAggregateMetrics.
-        :type: list[MetricInput]
+        :type inputs: list[:class:`huaweicloudsdkiotanalytics.v1.MetricInput`]
         """
         self._inputs = inputs
 
@@ -87,7 +96,7 @@ class DTAggregateMetrics:
         指标表达式,最多64个字符
 
         :param expression: The expression of this DTAggregateMetrics.
-        :type: str
+        :type expression: str
         """
         self._expression = expression
 
@@ -109,7 +118,7 @@ class DTAggregateMetrics:
         指标名，指标计算查询的输出指标名称
 
         :param metric_name: The metric_name of this DTAggregateMetrics.
-        :type: str
+        :type metric_name: str
         """
         self._metric_name = metric_name
 

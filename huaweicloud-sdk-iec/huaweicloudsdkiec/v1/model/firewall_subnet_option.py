@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FirewallSubnetOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class FirewallSubnetOption:
     }
 
     def __init__(self, id=None, vpc_id=None):
-        """FirewallSubnetOption - a model defined in huaweicloud sdk"""
+        """FirewallSubnetOption
+
+        The model defined in huaweicloud sdk
+
+        :param id: 子网ID。
+        :type id: str
+        :param vpc_id: 虚拟私有云ID。
+        :type vpc_id: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class FirewallSubnetOption:
         子网ID。
 
         :param id: The id of this FirewallSubnetOption.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -84,7 +91,7 @@ class FirewallSubnetOption:
         虚拟私有云ID。
 
         :param vpc_id: The vpc_id of this FirewallSubnetOption.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 

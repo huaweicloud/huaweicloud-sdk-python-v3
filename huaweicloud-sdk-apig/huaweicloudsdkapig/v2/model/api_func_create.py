@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApiFuncCreate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ApiFuncCreate:
     }
 
     def __init__(self, function_urn=None, remark=None, invocation_type=None, version=None, timeout=None, authorizer_id=None):
-        """ApiFuncCreate - a model defined in huaweicloud sdk"""
+        """ApiFuncCreate
+
+        The model defined in huaweicloud sdk
+
+        :param function_urn: 函数URN
+        :type function_urn: str
+        :param remark: 描述信息。长度不超过255个字符 &gt; 中文字符必须为UTF-8或者unicode编码。
+        :type remark: str
+        :param invocation_type: 调用类型 - async： 异步 - sync：同步
+        :type invocation_type: str
+        :param version: 版本。
+        :type version: str
+        :param timeout: API网关请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000。  单位：毫秒。
+        :type timeout: int
+        :param authorizer_id: 后端自定义认证ID
+        :type authorizer_id: str
+        """
         
         
 
@@ -80,7 +95,7 @@ class ApiFuncCreate:
         函数URN
 
         :param function_urn: The function_urn of this ApiFuncCreate.
-        :type: str
+        :type function_urn: str
         """
         self._function_urn = function_urn
 
@@ -102,7 +117,7 @@ class ApiFuncCreate:
         描述信息。长度不超过255个字符 > 中文字符必须为UTF-8或者unicode编码。
 
         :param remark: The remark of this ApiFuncCreate.
-        :type: str
+        :type remark: str
         """
         self._remark = remark
 
@@ -124,7 +139,7 @@ class ApiFuncCreate:
         调用类型 - async： 异步 - sync：同步
 
         :param invocation_type: The invocation_type of this ApiFuncCreate.
-        :type: str
+        :type invocation_type: str
         """
         self._invocation_type = invocation_type
 
@@ -146,7 +161,7 @@ class ApiFuncCreate:
         版本。
 
         :param version: The version of this ApiFuncCreate.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -168,7 +183,7 @@ class ApiFuncCreate:
         API网关请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000。  单位：毫秒。
 
         :param timeout: The timeout of this ApiFuncCreate.
-        :type: int
+        :type timeout: int
         """
         self._timeout = timeout
 
@@ -190,7 +205,7 @@ class ApiFuncCreate:
         后端自定义认证ID
 
         :param authorizer_id: The authorizer_id of this ApiFuncCreate.
-        :type: str
+        :type authorizer_id: str
         """
         self._authorizer_id = authorizer_id
 

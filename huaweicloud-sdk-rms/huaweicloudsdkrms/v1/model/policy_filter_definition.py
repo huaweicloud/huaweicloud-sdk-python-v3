@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PolicyFilterDefinition:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class PolicyFilterDefinition:
     }
 
     def __init__(self, region_id=None, resource_provider=None, resource_type=None, resource_id=None, tag_key=None, tag_value=None):
-        """PolicyFilterDefinition - a model defined in huaweicloud sdk"""
+        """PolicyFilterDefinition
+
+        The model defined in huaweicloud sdk
+
+        :param region_id: 区域ID
+        :type region_id: str
+        :param resource_provider: 资源服务
+        :type resource_provider: str
+        :param resource_type: 资源类型
+        :type resource_type: str
+        :param resource_id: 资源ID
+        :type resource_id: str
+        :param tag_key: 标签键
+        :type tag_key: str
+        :param tag_value: 标签值
+        :type tag_value: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class PolicyFilterDefinition:
         区域ID
 
         :param region_id: The region_id of this PolicyFilterDefinition.
-        :type: str
+        :type region_id: str
         """
         self._region_id = region_id
 
@@ -105,7 +120,7 @@ class PolicyFilterDefinition:
         资源服务
 
         :param resource_provider: The resource_provider of this PolicyFilterDefinition.
-        :type: str
+        :type resource_provider: str
         """
         self._resource_provider = resource_provider
 
@@ -127,7 +142,7 @@ class PolicyFilterDefinition:
         资源类型
 
         :param resource_type: The resource_type of this PolicyFilterDefinition.
-        :type: str
+        :type resource_type: str
         """
         self._resource_type = resource_type
 
@@ -149,7 +164,7 @@ class PolicyFilterDefinition:
         资源ID
 
         :param resource_id: The resource_id of this PolicyFilterDefinition.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -171,7 +186,7 @@ class PolicyFilterDefinition:
         标签键
 
         :param tag_key: The tag_key of this PolicyFilterDefinition.
-        :type: str
+        :type tag_key: str
         """
         self._tag_key = tag_key
 
@@ -193,7 +208,7 @@ class PolicyFilterDefinition:
         标签值
 
         :param tag_value: The tag_value of this PolicyFilterDefinition.
-        :type: str
+        :type tag_value: str
         """
         self._tag_value = tag_value
 

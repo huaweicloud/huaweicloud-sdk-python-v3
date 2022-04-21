@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ProbeDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ProbeDTO:
     }
 
     def __init__(self, exec_command=None, http_get=None, initial_delay_seconds=None, timeout_seconds=None):
-        """ProbeDTO - a model defined in huaweicloud sdk"""
+        """ProbeDTO
+
+        The model defined in huaweicloud sdk
+
+        :param exec_command: 执行探测的命令行命令
+        :type exec_command: str
+        :param http_get: 
+        :type http_get: :class:`huaweicloudsdkiotedge.v2.HttpGetDTO`
+        :param initial_delay_seconds: 表示从工作负载启动后从多久开始探测
+        :type initial_delay_seconds: int
+        :param timeout_seconds: 表示探测超时时间
+        :type timeout_seconds: int
+        """
         
         
 
@@ -71,7 +82,7 @@ class ProbeDTO:
         执行探测的命令行命令
 
         :param exec_command: The exec_command of this ProbeDTO.
-        :type: str
+        :type exec_command: str
         """
         self._exec_command = exec_command
 
@@ -81,7 +92,7 @@ class ProbeDTO:
 
 
         :return: The http_get of this ProbeDTO.
-        :rtype: HttpGetDTO
+        :rtype: :class:`huaweicloudsdkiotedge.v2.HttpGetDTO`
         """
         return self._http_get
 
@@ -91,7 +102,7 @@ class ProbeDTO:
 
 
         :param http_get: The http_get of this ProbeDTO.
-        :type: HttpGetDTO
+        :type http_get: :class:`huaweicloudsdkiotedge.v2.HttpGetDTO`
         """
         self._http_get = http_get
 
@@ -113,7 +124,7 @@ class ProbeDTO:
         表示从工作负载启动后从多久开始探测
 
         :param initial_delay_seconds: The initial_delay_seconds of this ProbeDTO.
-        :type: int
+        :type initial_delay_seconds: int
         """
         self._initial_delay_seconds = initial_delay_seconds
 
@@ -135,7 +146,7 @@ class ProbeDTO:
         表示探测超时时间
 
         :param timeout_seconds: The timeout_seconds of this ProbeDTO.
-        :type: int
+        :type timeout_seconds: int
         """
         self._timeout_seconds = timeout_seconds
 

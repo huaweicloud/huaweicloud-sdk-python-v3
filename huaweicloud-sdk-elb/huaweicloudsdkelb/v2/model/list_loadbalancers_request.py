@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListLoadbalancersRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -60,7 +59,43 @@ class ListLoadbalancersRequest:
     }
 
     def __init__(self, limit=None, marker=None, page_reverse=None, id=None, description=None, name=None, operating_status=None, provisioning_status=None, vip_address=None, vip_port_id=None, vip_subnet_id=None, vpc_id=None, enterprise_project_id=None, admin_state_up=None, member_address=None, member_device_id=None):
-        """ListLoadbalancersRequest - a model defined in huaweicloud sdk"""
+        """ListLoadbalancersRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 分页查询中每页的负载均衡器个数
+        :type limit: int
+        :param marker: 分页查询的起始的资源id，表示上一页最后一条查询记录的负载均衡器的id。不指定时表示查询第一页。
+        :type marker: str
+        :param page_reverse: 分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。
+        :type page_reverse: bool
+        :param id: 负载均衡器的ID。
+        :type id: str
+        :param description: 负载均衡器的描述信息。
+        :type description: str
+        :param name: 负载均衡器的名称。
+        :type name: str
+        :param operating_status: 负载均衡器的操作状态。取值范围：可以为ONLINE、OFFLINE、DEGRADED、DISABLED或NO_MONITOR。
+        :type operating_status: str
+        :param provisioning_status: 负载均衡器的配置状态。取值范围：可以为ACTIVE、PENDING_CREATE 或者ERROR。
+        :type provisioning_status: str
+        :param vip_address: 负载均衡器的内网IP。
+        :type vip_address: str
+        :param vip_port_id: 负载均衡器内网IP对应的端口ID。
+        :type vip_port_id: str
+        :param vip_subnet_id: 负载均衡器所在的子网ID。
+        :type vip_subnet_id: str
+        :param vpc_id: 负载均衡器所在的虚拟私有云ID。
+        :type vpc_id: str
+        :param enterprise_project_id: 企业项目ID。创建负载均衡器时，给负载均衡器绑定企业项目ID。取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。 关于企业项目ID的获取及企业项目特性的详细信息，请参见《企业管理用户指南》。
+        :type enterprise_project_id: str
+        :param admin_state_up: 负载均衡器的管理状态。负载均衡器停用时不再接收流量。取值范围：true：启用负载均衡器；false：停用负载均衡器。
+        :type admin_state_up: bool
+        :param member_address: 负载均衡器的后端服务器的IP地址
+        :type member_address: str
+        :param member_device_id: 负载均衡器的后端服务器对应的弹性云服务器ID
+        :type member_device_id: str
+        """
         
         
 
@@ -133,7 +168,7 @@ class ListLoadbalancersRequest:
         分页查询中每页的负载均衡器个数
 
         :param limit: The limit of this ListLoadbalancersRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -155,7 +190,7 @@ class ListLoadbalancersRequest:
         分页查询的起始的资源id，表示上一页最后一条查询记录的负载均衡器的id。不指定时表示查询第一页。
 
         :param marker: The marker of this ListLoadbalancersRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -177,7 +212,7 @@ class ListLoadbalancersRequest:
         分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。
 
         :param page_reverse: The page_reverse of this ListLoadbalancersRequest.
-        :type: bool
+        :type page_reverse: bool
         """
         self._page_reverse = page_reverse
 
@@ -199,7 +234,7 @@ class ListLoadbalancersRequest:
         负载均衡器的ID。
 
         :param id: The id of this ListLoadbalancersRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -221,7 +256,7 @@ class ListLoadbalancersRequest:
         负载均衡器的描述信息。
 
         :param description: The description of this ListLoadbalancersRequest.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -243,7 +278,7 @@ class ListLoadbalancersRequest:
         负载均衡器的名称。
 
         :param name: The name of this ListLoadbalancersRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -265,7 +300,7 @@ class ListLoadbalancersRequest:
         负载均衡器的操作状态。取值范围：可以为ONLINE、OFFLINE、DEGRADED、DISABLED或NO_MONITOR。
 
         :param operating_status: The operating_status of this ListLoadbalancersRequest.
-        :type: str
+        :type operating_status: str
         """
         self._operating_status = operating_status
 
@@ -287,7 +322,7 @@ class ListLoadbalancersRequest:
         负载均衡器的配置状态。取值范围：可以为ACTIVE、PENDING_CREATE 或者ERROR。
 
         :param provisioning_status: The provisioning_status of this ListLoadbalancersRequest.
-        :type: str
+        :type provisioning_status: str
         """
         self._provisioning_status = provisioning_status
 
@@ -309,7 +344,7 @@ class ListLoadbalancersRequest:
         负载均衡器的内网IP。
 
         :param vip_address: The vip_address of this ListLoadbalancersRequest.
-        :type: str
+        :type vip_address: str
         """
         self._vip_address = vip_address
 
@@ -331,7 +366,7 @@ class ListLoadbalancersRequest:
         负载均衡器内网IP对应的端口ID。
 
         :param vip_port_id: The vip_port_id of this ListLoadbalancersRequest.
-        :type: str
+        :type vip_port_id: str
         """
         self._vip_port_id = vip_port_id
 
@@ -353,7 +388,7 @@ class ListLoadbalancersRequest:
         负载均衡器所在的子网ID。
 
         :param vip_subnet_id: The vip_subnet_id of this ListLoadbalancersRequest.
-        :type: str
+        :type vip_subnet_id: str
         """
         self._vip_subnet_id = vip_subnet_id
 
@@ -375,7 +410,7 @@ class ListLoadbalancersRequest:
         负载均衡器所在的虚拟私有云ID。
 
         :param vpc_id: The vpc_id of this ListLoadbalancersRequest.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -397,7 +432,7 @@ class ListLoadbalancersRequest:
         企业项目ID。创建负载均衡器时，给负载均衡器绑定企业项目ID。取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。 关于企业项目ID的获取及企业项目特性的详细信息，请参见《企业管理用户指南》。
 
         :param enterprise_project_id: The enterprise_project_id of this ListLoadbalancersRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -419,7 +454,7 @@ class ListLoadbalancersRequest:
         负载均衡器的管理状态。负载均衡器停用时不再接收流量。取值范围：true：启用负载均衡器；false：停用负载均衡器。
 
         :param admin_state_up: The admin_state_up of this ListLoadbalancersRequest.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 
@@ -441,7 +476,7 @@ class ListLoadbalancersRequest:
         负载均衡器的后端服务器的IP地址
 
         :param member_address: The member_address of this ListLoadbalancersRequest.
-        :type: str
+        :type member_address: str
         """
         self._member_address = member_address
 
@@ -463,7 +498,7 @@ class ListLoadbalancersRequest:
         负载均衡器的后端服务器对应的弹性云服务器ID
 
         :param member_device_id: The member_device_id of this ListLoadbalancersRequest.
-        :type: str
+        :type member_device_id: str
         """
         self._member_device_id = member_device_id
 

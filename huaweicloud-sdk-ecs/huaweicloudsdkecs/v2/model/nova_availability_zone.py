@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NovaAvailabilityZone:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class NovaAvailabilityZone:
     }
 
     def __init__(self, hosts=None, zone_name=None, zone_state=None):
-        """NovaAvailabilityZone - a model defined in huaweicloud sdk"""
+        """NovaAvailabilityZone
+
+        The model defined in huaweicloud sdk
+
+        :param hosts: 该字段的值为null。
+        :type hosts: list[str]
+        :param zone_name: 可用域的名称。
+        :type zone_name: str
+        :param zone_state: 
+        :type zone_state: :class:`huaweicloudsdkecs.v2.NovaAvailabilityZoneState`
+        """
         
         
 
@@ -65,7 +74,7 @@ class NovaAvailabilityZone:
         该字段的值为null。
 
         :param hosts: The hosts of this NovaAvailabilityZone.
-        :type: list[str]
+        :type hosts: list[str]
         """
         self._hosts = hosts
 
@@ -87,7 +96,7 @@ class NovaAvailabilityZone:
         可用域的名称。
 
         :param zone_name: The zone_name of this NovaAvailabilityZone.
-        :type: str
+        :type zone_name: str
         """
         self._zone_name = zone_name
 
@@ -97,7 +106,7 @@ class NovaAvailabilityZone:
 
 
         :return: The zone_state of this NovaAvailabilityZone.
-        :rtype: NovaAvailabilityZoneState
+        :rtype: :class:`huaweicloudsdkecs.v2.NovaAvailabilityZoneState`
         """
         return self._zone_state
 
@@ -107,7 +116,7 @@ class NovaAvailabilityZone:
 
 
         :param zone_state: The zone_state of this NovaAvailabilityZone.
-        :type: NovaAvailabilityZoneState
+        :type zone_state: :class:`huaweicloudsdkecs.v2.NovaAvailabilityZoneState`
         """
         self._zone_state = zone_state
 

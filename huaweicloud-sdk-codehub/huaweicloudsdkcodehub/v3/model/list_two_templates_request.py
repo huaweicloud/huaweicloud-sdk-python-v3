@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTwoTemplatesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class ListTwoTemplatesRequest:
     }
 
     def __init__(self, platform=None, language=None, pipeline=None, enter_type=None, search=None, date_order=None, used_time_order=None, type=None, region=None, page_no=None, page_size=None):
-        """ListTwoTemplatesRequest - a model defined in huaweicloud sdk"""
+        """ListTwoTemplatesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param platform: 模板平台类型
+        :type platform: str
+        :param language: 语言类型
+        :type language: str
+        :param pipeline: 是否支持流水线
+        :type pipeline: str
+        :param enter_type: 模板分类
+        :type enter_type: str
+        :param search: 模板名称
+        :type search: str
+        :param date_order: 模板日期排序
+        :type date_order: str
+        :param used_time_order: 模板引用次数排序
+        :type used_time_order: str
+        :param type: 模板公开类型
+        :type type: str
+        :param region: 大区名称
+        :type region: str
+        :param page_no: 分页页数
+        :type page_no: int
+        :param page_size: 每页数据数
+        :type page_size: int
+        """
         
         
 
@@ -106,7 +131,7 @@ class ListTwoTemplatesRequest:
         模板平台类型
 
         :param platform: The platform of this ListTwoTemplatesRequest.
-        :type: str
+        :type platform: str
         """
         self._platform = platform
 
@@ -128,7 +153,7 @@ class ListTwoTemplatesRequest:
         语言类型
 
         :param language: The language of this ListTwoTemplatesRequest.
-        :type: str
+        :type language: str
         """
         self._language = language
 
@@ -150,7 +175,7 @@ class ListTwoTemplatesRequest:
         是否支持流水线
 
         :param pipeline: The pipeline of this ListTwoTemplatesRequest.
-        :type: str
+        :type pipeline: str
         """
         self._pipeline = pipeline
 
@@ -172,7 +197,7 @@ class ListTwoTemplatesRequest:
         模板分类
 
         :param enter_type: The enter_type of this ListTwoTemplatesRequest.
-        :type: str
+        :type enter_type: str
         """
         self._enter_type = enter_type
 
@@ -194,7 +219,7 @@ class ListTwoTemplatesRequest:
         模板名称
 
         :param search: The search of this ListTwoTemplatesRequest.
-        :type: str
+        :type search: str
         """
         self._search = search
 
@@ -216,7 +241,7 @@ class ListTwoTemplatesRequest:
         模板日期排序
 
         :param date_order: The date_order of this ListTwoTemplatesRequest.
-        :type: str
+        :type date_order: str
         """
         self._date_order = date_order
 
@@ -238,7 +263,7 @@ class ListTwoTemplatesRequest:
         模板引用次数排序
 
         :param used_time_order: The used_time_order of this ListTwoTemplatesRequest.
-        :type: str
+        :type used_time_order: str
         """
         self._used_time_order = used_time_order
 
@@ -260,7 +285,7 @@ class ListTwoTemplatesRequest:
         模板公开类型
 
         :param type: The type of this ListTwoTemplatesRequest.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -282,7 +307,7 @@ class ListTwoTemplatesRequest:
         大区名称
 
         :param region: The region of this ListTwoTemplatesRequest.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -304,7 +329,7 @@ class ListTwoTemplatesRequest:
         分页页数
 
         :param page_no: The page_no of this ListTwoTemplatesRequest.
-        :type: int
+        :type page_no: int
         """
         self._page_no = page_no
 
@@ -326,7 +351,7 @@ class ListTwoTemplatesRequest:
         每页数据数
 
         :param page_size: The page_size of this ListTwoTemplatesRequest.
-        :type: int
+        :type page_size: int
         """
         self._page_size = page_size
 

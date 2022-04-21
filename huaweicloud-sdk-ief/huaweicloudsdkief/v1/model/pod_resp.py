@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PodResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class PodResp:
     }
 
     def __init__(self, id=None, name=None, configs=None, affinity=None, init_containers=None, containers=None, node_id=None, deployment_id=None, project_id=None, reason=None, message=None, created_at=None, updated_at=None, state=None):
-        """PodResp - a model defined in huaweicloud sdk"""
+        """PodResp
+
+        The model defined in huaweicloud sdk
+
+        :param id: 应用实例uuid
+        :type id: str
+        :param name: 应用实例名称
+        :type name: str
+        :param configs: 
+        :type configs: :class:`huaweicloudsdkief.v1.PodConfigs`
+        :param affinity: 
+        :type affinity: :class:`huaweicloudsdkief.v1.Affinity`
+        :param init_containers: 应用实例init容器
+        :type init_containers: list[:class:`huaweicloudsdkief.v1.ContainerResp`]
+        :param containers: 应用实例业务容器
+        :type containers: list[:class:`huaweicloudsdkief.v1.ContainerResp`]
+        :param node_id: 应用实例所在节点
+        :type node_id: str
+        :param deployment_id: 应用ID
+        :type deployment_id: str
+        :param project_id: 项目ID
+        :type project_id: str
+        :param reason: 应用实例故障原因
+        :type reason: str
+        :param message: 应用实例故障详情
+        :type message: str
+        :param created_at: 应用实例创建时间
+        :type created_at: str
+        :param updated_at: 应用实例更新时间
+        :type updated_at: str
+        :param state: 应用实例状态
+        :type state: str
+        """
         
         
 
@@ -110,7 +141,7 @@ class PodResp:
         应用实例uuid
 
         :param id: The id of this PodResp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -132,7 +163,7 @@ class PodResp:
         应用实例名称
 
         :param name: The name of this PodResp.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -142,7 +173,7 @@ class PodResp:
 
 
         :return: The configs of this PodResp.
-        :rtype: PodConfigs
+        :rtype: :class:`huaweicloudsdkief.v1.PodConfigs`
         """
         return self._configs
 
@@ -152,7 +183,7 @@ class PodResp:
 
 
         :param configs: The configs of this PodResp.
-        :type: PodConfigs
+        :type configs: :class:`huaweicloudsdkief.v1.PodConfigs`
         """
         self._configs = configs
 
@@ -162,7 +193,7 @@ class PodResp:
 
 
         :return: The affinity of this PodResp.
-        :rtype: Affinity
+        :rtype: :class:`huaweicloudsdkief.v1.Affinity`
         """
         return self._affinity
 
@@ -172,7 +203,7 @@ class PodResp:
 
 
         :param affinity: The affinity of this PodResp.
-        :type: Affinity
+        :type affinity: :class:`huaweicloudsdkief.v1.Affinity`
         """
         self._affinity = affinity
 
@@ -183,7 +214,7 @@ class PodResp:
         应用实例init容器
 
         :return: The init_containers of this PodResp.
-        :rtype: list[ContainerResp]
+        :rtype: list[:class:`huaweicloudsdkief.v1.ContainerResp`]
         """
         return self._init_containers
 
@@ -194,7 +225,7 @@ class PodResp:
         应用实例init容器
 
         :param init_containers: The init_containers of this PodResp.
-        :type: list[ContainerResp]
+        :type init_containers: list[:class:`huaweicloudsdkief.v1.ContainerResp`]
         """
         self._init_containers = init_containers
 
@@ -205,7 +236,7 @@ class PodResp:
         应用实例业务容器
 
         :return: The containers of this PodResp.
-        :rtype: list[ContainerResp]
+        :rtype: list[:class:`huaweicloudsdkief.v1.ContainerResp`]
         """
         return self._containers
 
@@ -216,7 +247,7 @@ class PodResp:
         应用实例业务容器
 
         :param containers: The containers of this PodResp.
-        :type: list[ContainerResp]
+        :type containers: list[:class:`huaweicloudsdkief.v1.ContainerResp`]
         """
         self._containers = containers
 
@@ -238,7 +269,7 @@ class PodResp:
         应用实例所在节点
 
         :param node_id: The node_id of this PodResp.
-        :type: str
+        :type node_id: str
         """
         self._node_id = node_id
 
@@ -260,7 +291,7 @@ class PodResp:
         应用ID
 
         :param deployment_id: The deployment_id of this PodResp.
-        :type: str
+        :type deployment_id: str
         """
         self._deployment_id = deployment_id
 
@@ -282,7 +313,7 @@ class PodResp:
         项目ID
 
         :param project_id: The project_id of this PodResp.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -304,7 +335,7 @@ class PodResp:
         应用实例故障原因
 
         :param reason: The reason of this PodResp.
-        :type: str
+        :type reason: str
         """
         self._reason = reason
 
@@ -326,7 +357,7 @@ class PodResp:
         应用实例故障详情
 
         :param message: The message of this PodResp.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -348,7 +379,7 @@ class PodResp:
         应用实例创建时间
 
         :param created_at: The created_at of this PodResp.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -370,7 +401,7 @@ class PodResp:
         应用实例更新时间
 
         :param updated_at: The updated_at of this PodResp.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 
@@ -392,7 +423,7 @@ class PodResp:
         应用实例状态
 
         :param state: The state of this PodResp.
-        :type: str
+        :type state: str
         """
         self._state = state
 

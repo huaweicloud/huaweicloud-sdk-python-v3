@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PostgresqlDatabaseForListSchema:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class PostgresqlDatabaseForListSchema:
     }
 
     def __init__(self, schema_name=None, owner=None):
-        """PostgresqlDatabaseForListSchema - a model defined in huaweicloud sdk"""
+        """PostgresqlDatabaseForListSchema
+
+        The model defined in huaweicloud sdk
+
+        :param schema_name: schema名称。
+        :type schema_name: str
+        :param owner: schema所属用户。
+        :type owner: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class PostgresqlDatabaseForListSchema:
         schema名称。
 
         :param schema_name: The schema_name of this PostgresqlDatabaseForListSchema.
-        :type: str
+        :type schema_name: str
         """
         self._schema_name = schema_name
 
@@ -83,7 +90,7 @@ class PostgresqlDatabaseForListSchema:
         schema所属用户。
 
         :param owner: The owner of this PostgresqlDatabaseForListSchema.
-        :type: str
+        :type owner: str
         """
         self._owner = owner
 

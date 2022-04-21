@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RulesetItem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class RulesetItem:
     }
 
     def __init__(self, template_id=None, language=None, template_name=None, creator_id=None, creator_name=None, template_create_time=None, is_used=None, rule_ids=None, is_default=None, is_devcloud_project_default=None, is_default_template=None):
-        """RulesetItem - a model defined in huaweicloud sdk"""
+        """RulesetItem
+
+        The model defined in huaweicloud sdk
+
+        :param template_id: 规则集id
+        :type template_id: str
+        :param language: 规则集语言
+        :type language: str
+        :param template_name: 规则集名称
+        :type template_name: str
+        :param creator_id: 创建人ID
+        :type creator_id: str
+        :param creator_name: 创建人名称
+        :type creator_name: str
+        :param template_create_time: 创建人时间
+        :type template_create_time: str
+        :param is_used: 使用状态1使用中，0空闲中
+        :type is_used: str
+        :param rule_ids: 规则集包含的规则id
+        :type rule_ids: str
+        :param is_default: 是否该语言默认规则集，0不是，1是
+        :type is_default: str
+        :param is_devcloud_project_default: 是否是项目下语言默认规则集，0不是，1是
+        :type is_devcloud_project_default: str
+        :param is_default_template: 是否是系统规则集，0不是，1是
+        :type is_default_template: str
+        """
         
         
 
@@ -108,7 +133,7 @@ class RulesetItem:
         规则集id
 
         :param template_id: The template_id of this RulesetItem.
-        :type: str
+        :type template_id: str
         """
         self._template_id = template_id
 
@@ -130,7 +155,7 @@ class RulesetItem:
         规则集语言
 
         :param language: The language of this RulesetItem.
-        :type: str
+        :type language: str
         """
         self._language = language
 
@@ -152,7 +177,7 @@ class RulesetItem:
         规则集名称
 
         :param template_name: The template_name of this RulesetItem.
-        :type: str
+        :type template_name: str
         """
         self._template_name = template_name
 
@@ -174,7 +199,7 @@ class RulesetItem:
         创建人ID
 
         :param creator_id: The creator_id of this RulesetItem.
-        :type: str
+        :type creator_id: str
         """
         self._creator_id = creator_id
 
@@ -196,7 +221,7 @@ class RulesetItem:
         创建人名称
 
         :param creator_name: The creator_name of this RulesetItem.
-        :type: str
+        :type creator_name: str
         """
         self._creator_name = creator_name
 
@@ -218,7 +243,7 @@ class RulesetItem:
         创建人时间
 
         :param template_create_time: The template_create_time of this RulesetItem.
-        :type: str
+        :type template_create_time: str
         """
         self._template_create_time = template_create_time
 
@@ -240,7 +265,7 @@ class RulesetItem:
         使用状态1使用中，0空闲中
 
         :param is_used: The is_used of this RulesetItem.
-        :type: str
+        :type is_used: str
         """
         self._is_used = is_used
 
@@ -262,7 +287,7 @@ class RulesetItem:
         规则集包含的规则id
 
         :param rule_ids: The rule_ids of this RulesetItem.
-        :type: str
+        :type rule_ids: str
         """
         self._rule_ids = rule_ids
 
@@ -284,7 +309,7 @@ class RulesetItem:
         是否该语言默认规则集，0不是，1是
 
         :param is_default: The is_default of this RulesetItem.
-        :type: str
+        :type is_default: str
         """
         self._is_default = is_default
 
@@ -306,7 +331,7 @@ class RulesetItem:
         是否是项目下语言默认规则集，0不是，1是
 
         :param is_devcloud_project_default: The is_devcloud_project_default of this RulesetItem.
-        :type: str
+        :type is_devcloud_project_default: str
         """
         self._is_devcloud_project_default = is_devcloud_project_default
 
@@ -328,7 +353,7 @@ class RulesetItem:
         是否是系统规则集，0不是，1是
 
         :param is_default_template: The is_default_template of this RulesetItem.
-        :type: str
+        :type is_default_template: str
         """
         self._is_default_template = is_default_template
 

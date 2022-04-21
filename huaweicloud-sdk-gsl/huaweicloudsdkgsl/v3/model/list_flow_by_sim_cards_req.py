@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListFlowBySimCardsReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListFlowBySimCardsReq:
     }
 
     def __init__(self, iccids=None):
-        """ListFlowBySimCardsReq - a model defined in huaweicloud sdk"""
+        """ListFlowBySimCardsReq
+
+        The model defined in huaweicloud sdk
+
+        :param iccids: ICCID列表,最大支持50
+        :type iccids: list[str]
+        """
         
         
 
@@ -57,7 +62,7 @@ class ListFlowBySimCardsReq:
         ICCID列表,最大支持50
 
         :param iccids: The iccids of this ListFlowBySimCardsReq.
-        :type: list[str]
+        :type iccids: list[str]
         """
         self._iccids = iccids
 

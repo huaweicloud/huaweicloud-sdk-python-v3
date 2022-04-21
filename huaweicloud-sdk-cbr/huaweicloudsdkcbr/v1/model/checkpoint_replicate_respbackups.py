@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CheckpointReplicateRespbackups:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CheckpointReplicateRespbackups:
     }
 
     def __init__(self, backup_id=None, replication_record_id=None):
-        """CheckpointReplicateRespbackups - a model defined in huaweicloud sdk"""
+        """CheckpointReplicateRespbackups
+
+        The model defined in huaweicloud sdk
+
+        :param backup_id: 待复制的备份ID
+        :type backup_id: str
+        :param replication_record_id: 复制记录ID
+        :type replication_record_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class CheckpointReplicateRespbackups:
         待复制的备份ID
 
         :param backup_id: The backup_id of this CheckpointReplicateRespbackups.
-        :type: str
+        :type backup_id: str
         """
         self._backup_id = backup_id
 
@@ -83,7 +90,7 @@ class CheckpointReplicateRespbackups:
         复制记录ID
 
         :param replication_record_id: The replication_record_id of this CheckpointReplicateRespbackups.
-        :type: str
+        :type replication_record_id: str
         """
         self._replication_record_id = replication_record_id
 

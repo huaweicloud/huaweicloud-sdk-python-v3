@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListNatGatewaysRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class ListNatGatewaysRequest:
     }
 
     def __init__(self, id=None, enterprise_project_id=None, description=None, created_at=None, name=None, status=None, spec=None, admin_state_up=None, internal_network_id=None, router_id=None, limit=None):
-        """ListNatGatewaysRequest - a model defined in huaweicloud sdk"""
+        """ListNatGatewaysRequest
+
+        The model defined in huaweicloud sdk
+
+        :param id: 公网NAT网关实例的ID。
+        :type id: str
+        :param enterprise_project_id: 企业项目ID。创建公网NAT网关实例时，关联的企业项目ID。
+        :type enterprise_project_id: str
+        :param description: 公网NAT网关实例的描述，长度限制为255。
+        :type description: str
+        :param created_at: 公网NAT网关实例的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
+        :type created_at: datetime
+        :param name: 公网NAT网关实例的名字，长度限制为64。 公网NAT网关实例的名字仅支持数字、字母、_（下划线）、-（中划线）、中文
+        :type name: str
+        :param status: 公网NAT网关实例的状态。
+        :type status: list[str]
+        :param spec: 公网NAT网关实例的规格。 取值为： \&quot;1\&quot;：小型，SNAT最大连接数10000 \&quot;2\&quot;：中型，SNAT最大连接数50000 \&quot;3\&quot;：大型，SNAT最大连接数200000 \&quot;4\&quot;：超大型，SNAT最大连接数1000000 
+        :type spec: list[str]
+        :param admin_state_up: 解冻/冻结状态。 取值范围： \&quot;true\&quot;：解冻 \&quot;false\&quot;：冻结
+        :type admin_state_up: bool
+        :param internal_network_id: 公网NAT网关下行口（DVR的下一跳）所属的network id。
+        :type internal_network_id: str
+        :param router_id: VPC的id。
+        :type router_id: str
+        :param limit: 功能说明：每页返回的个数。 取值范围：0~2000。 默认值：2000。
+        :type limit: int
+        """
         
         
 
@@ -108,7 +133,7 @@ class ListNatGatewaysRequest:
         公网NAT网关实例的ID。
 
         :param id: The id of this ListNatGatewaysRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -130,7 +155,7 @@ class ListNatGatewaysRequest:
         企业项目ID。创建公网NAT网关实例时，关联的企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this ListNatGatewaysRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -152,7 +177,7 @@ class ListNatGatewaysRequest:
         公网NAT网关实例的描述，长度限制为255。
 
         :param description: The description of this ListNatGatewaysRequest.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -174,7 +199,7 @@ class ListNatGatewaysRequest:
         公网NAT网关实例的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
 
         :param created_at: The created_at of this ListNatGatewaysRequest.
-        :type: datetime
+        :type created_at: datetime
         """
         self._created_at = created_at
 
@@ -196,7 +221,7 @@ class ListNatGatewaysRequest:
         公网NAT网关实例的名字，长度限制为64。 公网NAT网关实例的名字仅支持数字、字母、_（下划线）、-（中划线）、中文
 
         :param name: The name of this ListNatGatewaysRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -218,7 +243,7 @@ class ListNatGatewaysRequest:
         公网NAT网关实例的状态。
 
         :param status: The status of this ListNatGatewaysRequest.
-        :type: list[str]
+        :type status: list[str]
         """
         self._status = status
 
@@ -240,7 +265,7 @@ class ListNatGatewaysRequest:
         公网NAT网关实例的规格。 取值为： \"1\"：小型，SNAT最大连接数10000 \"2\"：中型，SNAT最大连接数50000 \"3\"：大型，SNAT最大连接数200000 \"4\"：超大型，SNAT最大连接数1000000 
 
         :param spec: The spec of this ListNatGatewaysRequest.
-        :type: list[str]
+        :type spec: list[str]
         """
         self._spec = spec
 
@@ -262,7 +287,7 @@ class ListNatGatewaysRequest:
         解冻/冻结状态。 取值范围： \"true\"：解冻 \"false\"：冻结
 
         :param admin_state_up: The admin_state_up of this ListNatGatewaysRequest.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 
@@ -284,7 +309,7 @@ class ListNatGatewaysRequest:
         公网NAT网关下行口（DVR的下一跳）所属的network id。
 
         :param internal_network_id: The internal_network_id of this ListNatGatewaysRequest.
-        :type: str
+        :type internal_network_id: str
         """
         self._internal_network_id = internal_network_id
 
@@ -306,7 +331,7 @@ class ListNatGatewaysRequest:
         VPC的id。
 
         :param router_id: The router_id of this ListNatGatewaysRequest.
-        :type: str
+        :type router_id: str
         """
         self._router_id = router_id
 
@@ -328,7 +353,7 @@ class ListNatGatewaysRequest:
         功能说明：每页返回的个数。 取值范围：0~2000。 默认值：2000。
 
         :param limit: The limit of this ListNatGatewaysRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

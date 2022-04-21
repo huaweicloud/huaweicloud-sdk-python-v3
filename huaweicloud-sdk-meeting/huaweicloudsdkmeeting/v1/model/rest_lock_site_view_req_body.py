@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestLockSiteViewReqBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RestLockSiteViewReqBody:
     }
 
     def __init__(self, status=None, participant_id=None):
-        """RestLockSiteViewReqBody - a model defined in huaweicloud sdk"""
+        """RestLockSiteViewReqBody
+
+        The model defined in huaweicloud sdk
+
+        :param status: - 0: 取消锁定。 - 1: 锁定。
+        :type status: int
+        :param participant_id: 被锁定视频源的与会者标识。
+        :type participant_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class RestLockSiteViewReqBody:
         - 0: 取消锁定。 - 1: 锁定。
 
         :param status: The status of this RestLockSiteViewReqBody.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -83,7 +90,7 @@ class RestLockSiteViewReqBody:
         被锁定视频源的与会者标识。
 
         :param participant_id: The participant_id of this RestLockSiteViewReqBody.
-        :type: str
+        :type participant_id: str
         """
         self._participant_id = participant_id
 

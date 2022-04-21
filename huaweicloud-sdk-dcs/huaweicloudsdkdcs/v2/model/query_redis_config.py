@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryRedisConfig:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class QueryRedisConfig:
     }
 
     def __init__(self, param_value=None, value_type=None, value_range=None, description=None, default_value=None, param_name=None, param_id=None):
-        """QueryRedisConfig - a model defined in huaweicloud sdk"""
+        """QueryRedisConfig
+
+        The model defined in huaweicloud sdk
+
+        :param param_value: 配置参数值。
+        :type param_value: str
+        :param value_type: 配置参数的值类型。
+        :type value_type: str
+        :param value_range: 配置参数的取值范围。
+        :type value_range: str
+        :param description: 配置项的描述。
+        :type description: str
+        :param default_value: 配置参数的默认值。
+        :type default_value: str
+        :param param_name: 配置参数名称。
+        :type param_name: str
+        :param param_id: 配置参数ID。
+        :type param_id: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class QueryRedisConfig:
         配置参数值。
 
         :param param_value: The param_value of this QueryRedisConfig.
-        :type: str
+        :type param_value: str
         """
         self._param_value = param_value
 
@@ -110,7 +127,7 @@ class QueryRedisConfig:
         配置参数的值类型。
 
         :param value_type: The value_type of this QueryRedisConfig.
-        :type: str
+        :type value_type: str
         """
         self._value_type = value_type
 
@@ -132,7 +149,7 @@ class QueryRedisConfig:
         配置参数的取值范围。
 
         :param value_range: The value_range of this QueryRedisConfig.
-        :type: str
+        :type value_range: str
         """
         self._value_range = value_range
 
@@ -154,7 +171,7 @@ class QueryRedisConfig:
         配置项的描述。
 
         :param description: The description of this QueryRedisConfig.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -176,7 +193,7 @@ class QueryRedisConfig:
         配置参数的默认值。
 
         :param default_value: The default_value of this QueryRedisConfig.
-        :type: str
+        :type default_value: str
         """
         self._default_value = default_value
 
@@ -198,7 +215,7 @@ class QueryRedisConfig:
         配置参数名称。
 
         :param param_name: The param_name of this QueryRedisConfig.
-        :type: str
+        :type param_name: str
         """
         self._param_name = param_name
 
@@ -220,7 +237,7 @@ class QueryRedisConfig:
         配置参数ID。
 
         :param param_id: The param_id of this QueryRedisConfig.
-        :type: str
+        :type param_id: str
         """
         self._param_id = param_id
 

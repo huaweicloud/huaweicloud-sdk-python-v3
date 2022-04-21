@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UnscopedTokenInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class UnscopedTokenInfo:
     }
 
     def __init__(self, expires_at=None, methods=None, issued_at=None, user=None, roles=None, catalog=None):
-        """UnscopedTokenInfo - a model defined in huaweicloud sdk"""
+        """UnscopedTokenInfo
+
+        The model defined in huaweicloud sdk
+
+        :param expires_at: 过期时间。
+        :type expires_at: str
+        :param methods: token获取方式，联邦认证默认为mapped。
+        :type methods: list[str]
+        :param issued_at: 生成时间。
+        :type issued_at: str
+        :param user: 
+        :type user: :class:`huaweicloudsdkiam.v3.FederationUserBody`
+        :param roles: roles信息。
+        :type roles: list[:class:`huaweicloudsdkiam.v3.UnscopedTokenInfoRoles`]
+        :param catalog: catalog信息。
+        :type catalog: list[:class:`huaweicloudsdkiam.v3.UnscopedTokenInfoCatalog`]
+        """
         
         
 
@@ -79,7 +94,7 @@ class UnscopedTokenInfo:
         过期时间。
 
         :param expires_at: The expires_at of this UnscopedTokenInfo.
-        :type: str
+        :type expires_at: str
         """
         self._expires_at = expires_at
 
@@ -101,7 +116,7 @@ class UnscopedTokenInfo:
         token获取方式，联邦认证默认为mapped。
 
         :param methods: The methods of this UnscopedTokenInfo.
-        :type: list[str]
+        :type methods: list[str]
         """
         self._methods = methods
 
@@ -123,7 +138,7 @@ class UnscopedTokenInfo:
         生成时间。
 
         :param issued_at: The issued_at of this UnscopedTokenInfo.
-        :type: str
+        :type issued_at: str
         """
         self._issued_at = issued_at
 
@@ -133,7 +148,7 @@ class UnscopedTokenInfo:
 
 
         :return: The user of this UnscopedTokenInfo.
-        :rtype: FederationUserBody
+        :rtype: :class:`huaweicloudsdkiam.v3.FederationUserBody`
         """
         return self._user
 
@@ -143,7 +158,7 @@ class UnscopedTokenInfo:
 
 
         :param user: The user of this UnscopedTokenInfo.
-        :type: FederationUserBody
+        :type user: :class:`huaweicloudsdkiam.v3.FederationUserBody`
         """
         self._user = user
 
@@ -154,7 +169,7 @@ class UnscopedTokenInfo:
         roles信息。
 
         :return: The roles of this UnscopedTokenInfo.
-        :rtype: list[UnscopedTokenInfoRoles]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.UnscopedTokenInfoRoles`]
         """
         return self._roles
 
@@ -165,7 +180,7 @@ class UnscopedTokenInfo:
         roles信息。
 
         :param roles: The roles of this UnscopedTokenInfo.
-        :type: list[UnscopedTokenInfoRoles]
+        :type roles: list[:class:`huaweicloudsdkiam.v3.UnscopedTokenInfoRoles`]
         """
         self._roles = roles
 
@@ -176,7 +191,7 @@ class UnscopedTokenInfo:
         catalog信息。
 
         :return: The catalog of this UnscopedTokenInfo.
-        :rtype: list[UnscopedTokenInfoCatalog]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.UnscopedTokenInfoCatalog`]
         """
         return self._catalog
 
@@ -187,7 +202,7 @@ class UnscopedTokenInfo:
         catalog信息。
 
         :param catalog: The catalog of this UnscopedTokenInfo.
-        :type: list[UnscopedTokenInfoCatalog]
+        :type catalog: list[:class:`huaweicloudsdkiam.v3.UnscopedTokenInfoCatalog`]
         """
         self._catalog = catalog
 

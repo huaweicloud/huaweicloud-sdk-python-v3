@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Fluency:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class Fluency:
     }
 
     def __init__(self, score=None, rhythm=None, cohesion=None):
-        """Fluency - a model defined in huaweicloud sdk"""
+        """Fluency
+
+        The model defined in huaweicloud sdk
+
+        :param score: 流利度综合得分 0-100
+        :type score: float
+        :param rhythm: 韵律得分 0-100 韵律指音素在单词和句子中的发音长度是否得当
+        :type rhythm: float
+        :param cohesion: 连贯性得分 0-100
+        :type cohesion: float
+        """
         
         
 
@@ -65,7 +74,7 @@ class Fluency:
         流利度综合得分 0-100
 
         :param score: The score of this Fluency.
-        :type: float
+        :type score: float
         """
         self._score = score
 
@@ -87,7 +96,7 @@ class Fluency:
         韵律得分 0-100 韵律指音素在单词和句子中的发音长度是否得当
 
         :param rhythm: The rhythm of this Fluency.
-        :type: float
+        :type rhythm: float
         """
         self._rhythm = rhythm
 
@@ -109,7 +118,7 @@ class Fluency:
         连贯性得分 0-100
 
         :param cohesion: The cohesion of this Fluency.
-        :type: float
+        :type cohesion: float
         """
         self._cohesion = cohesion
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CommitStatistic:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CommitStatistic:
     }
 
     def __init__(self, additions=None, deletions=None):
-        """CommitStatistic - a model defined in huaweicloud sdk"""
+        """CommitStatistic
+
+        The model defined in huaweicloud sdk
+
+        :param additions: 增加的行数
+        :type additions: int
+        :param deletions: 删除的行数
+        :type deletions: int
+        """
         
         
 
@@ -63,7 +70,7 @@ class CommitStatistic:
         增加的行数
 
         :param additions: The additions of this CommitStatistic.
-        :type: int
+        :type additions: int
         """
         self._additions = additions
 
@@ -85,7 +92,7 @@ class CommitStatistic:
         删除的行数
 
         :param deletions: The deletions of this CommitStatistic.
-        :type: int
+        :type deletions: int
         """
         self._deletions = deletions
 

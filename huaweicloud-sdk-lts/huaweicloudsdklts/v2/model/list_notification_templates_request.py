@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListNotificationTemplatesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListNotificationTemplatesRequest:
     }
 
     def __init__(self, domain_id=None, offset=None, limit=None):
-        """ListNotificationTemplatesRequest - a model defined in huaweicloud sdk"""
+        """ListNotificationTemplatesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param domain_id: 账号id，获取方式请参见：获取账号ID、项目ID、日志组ID、日志流ID（https://support.huaweicloud.com/api-lts/lts_api_0006.html）。
+        :type domain_id: str
+        :param offset: 查询游标，初始传入0，后续从上一次的返回值中获取
+        :type offset: int
+        :param limit: 每页数据量，最大值为100
+        :type limit: int
+        """
         
         
 
@@ -67,7 +76,7 @@ class ListNotificationTemplatesRequest:
         账号id，获取方式请参见：获取账号ID、项目ID、日志组ID、日志流ID（https://support.huaweicloud.com/api-lts/lts_api_0006.html）。
 
         :param domain_id: The domain_id of this ListNotificationTemplatesRequest.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -89,7 +98,7 @@ class ListNotificationTemplatesRequest:
         查询游标，初始传入0，后续从上一次的返回值中获取
 
         :param offset: The offset of this ListNotificationTemplatesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -111,7 +120,7 @@ class ListNotificationTemplatesRequest:
         每页数据量，最大值为100
 
         :param limit: The limit of this ListNotificationTemplatesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

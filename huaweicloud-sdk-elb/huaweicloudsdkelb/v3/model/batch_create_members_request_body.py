@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchCreateMembersRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchCreateMembersRequestBody:
     }
 
     def __init__(self, members=None):
-        """BatchCreateMembersRequestBody - a model defined in huaweicloud sdk"""
+        """BatchCreateMembersRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param members: 后端服务器对象。
+        :type members: list[:class:`huaweicloudsdkelb.v3.BatchCreateMembersOption`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class BatchCreateMembersRequestBody:
         后端服务器对象。
 
         :return: The members of this BatchCreateMembersRequestBody.
-        :rtype: list[BatchCreateMembersOption]
+        :rtype: list[:class:`huaweicloudsdkelb.v3.BatchCreateMembersOption`]
         """
         return self._members
 
@@ -57,7 +62,7 @@ class BatchCreateMembersRequestBody:
         后端服务器对象。
 
         :param members: The members of this BatchCreateMembersRequestBody.
-        :type: list[BatchCreateMembersOption]
+        :type members: list[:class:`huaweicloudsdkelb.v3.BatchCreateMembersOption`]
         """
         self._members = members
 

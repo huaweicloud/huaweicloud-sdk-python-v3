@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDatabasesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListDatabasesRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None):
-        """ListDatabasesRequest - a model defined in huaweicloud sdk"""
+        """ListDatabasesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: DDM实例ID
+        :type instance_id: str
+        :param offset: 分页参数：起始值 [大于等于0] 。默认值是0。
+        :type offset: int
+        :param limit: 分页参数：每页多少条 [大于0且小于等于128]。默认值是128。
+        :type limit: int
+        """
         
         
 
@@ -67,7 +76,7 @@ class ListDatabasesRequest:
         DDM实例ID
 
         :param instance_id: The instance_id of this ListDatabasesRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -89,7 +98,7 @@ class ListDatabasesRequest:
         分页参数：起始值 [大于等于0] 。默认值是0。
 
         :param offset: The offset of this ListDatabasesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -111,7 +120,7 @@ class ListDatabasesRequest:
         分页参数：每页多少条 [大于0且小于等于128]。默认值是128。
 
         :param limit: The limit of this ListDatabasesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

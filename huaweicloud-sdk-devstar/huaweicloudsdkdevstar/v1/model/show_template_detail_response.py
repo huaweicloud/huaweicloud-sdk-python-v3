@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowTemplateDetailResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class ShowTemplateDetailResponse(SdkResponse):
     }
 
     def __init__(self, id=None, title=None, description=None, region_id=None, repostory_id=None, code_url=None, ssh_url=None, project_uuid=None, status=None, properties=None, dependencies=None, dependency_type=None, deployment=None):
-        """ShowTemplateDetailResponse - a model defined in huaweicloud sdk"""
+        """ShowTemplateDetailResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 模板的id。
+        :type id: str
+        :param title: 模板的名称。
+        :type title: str
+        :param description: 模板的描述信息。
+        :type description: str
+        :param region_id: 模板关联的region host id。
+        :type region_id: str
+        :param repostory_id: 模板关联的repo id。
+        :type repostory_id: str
+        :param code_url: 模板https下载路径。
+        :type code_url: str
+        :param ssh_url: 模板ssh下载路径。
+        :type ssh_url: str
+        :param project_uuid: 项目id。
+        :type project_uuid: str
+        :param status: 模板状态。
+        :type status: int
+        :param properties: 源数据信息： - key：元数据标识 - defaultValue：用户输入值的默认值 - isShow：前台界面组件是否展示该元数据 - isProjectName：是否使用作为项目名称 - label：前台界面组件展示名称 - type：前台界面组件类型 - helpText：前台界面组件帮助文本 - readOnly：前台界面组件是否可修改 - required：前台界面组件是否展示必填 - regType：该元数据进行正则校验类型；简化模板编码使用 - regPattern：该元数据对应js语法正则表达式 - regTip：该元数据正则校验提示信息 - visibleRule：该元数据可见规则 - isRequired：是否必填 - isReadOnly：是否只读 - options：option对象集合   - displayName：前台界面展示字符串   - value：该选项值 - eventOnchange：联动属性集合   - associatedProperty：被关联Property的key值   - associatedValue：被关联的value - fold：是否折叠 - show：是否展示该Property 
+        :type properties: list[object]
+        :param dependencies: dependency信息： - id：依赖全局唯一标识 - name：依赖展示名称 - description：依赖展示描述 - recommended：是否推荐使用该依赖 - versionProperty：该依赖版本被关联Property的key值 - versionRange：该依赖版本适用范围 - groupName：分组名称 - items：分组列表 
+        :type dependencies: list[object]
+        :param dependency_type: dependency类型： - 0：分组 - 1：不分组 - null：无分组信息 
+        :type dependency_type: str
+        :param deployment: 部署信息： - param：参数对象   - build：构建类型   - runtime：函数运行时   - handler：函数执行入口   - outputFile：构建产物文件路径 - target：部署环境 
+        :type deployment: object
+        """
         
         super(ShowTemplateDetailResponse, self).__init__()
 
@@ -118,7 +147,7 @@ class ShowTemplateDetailResponse(SdkResponse):
         模板的id。
 
         :param id: The id of this ShowTemplateDetailResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -140,7 +169,7 @@ class ShowTemplateDetailResponse(SdkResponse):
         模板的名称。
 
         :param title: The title of this ShowTemplateDetailResponse.
-        :type: str
+        :type title: str
         """
         self._title = title
 
@@ -162,7 +191,7 @@ class ShowTemplateDetailResponse(SdkResponse):
         模板的描述信息。
 
         :param description: The description of this ShowTemplateDetailResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -184,7 +213,7 @@ class ShowTemplateDetailResponse(SdkResponse):
         模板关联的region host id。
 
         :param region_id: The region_id of this ShowTemplateDetailResponse.
-        :type: str
+        :type region_id: str
         """
         self._region_id = region_id
 
@@ -206,7 +235,7 @@ class ShowTemplateDetailResponse(SdkResponse):
         模板关联的repo id。
 
         :param repostory_id: The repostory_id of this ShowTemplateDetailResponse.
-        :type: str
+        :type repostory_id: str
         """
         self._repostory_id = repostory_id
 
@@ -228,7 +257,7 @@ class ShowTemplateDetailResponse(SdkResponse):
         模板https下载路径。
 
         :param code_url: The code_url of this ShowTemplateDetailResponse.
-        :type: str
+        :type code_url: str
         """
         self._code_url = code_url
 
@@ -250,7 +279,7 @@ class ShowTemplateDetailResponse(SdkResponse):
         模板ssh下载路径。
 
         :param ssh_url: The ssh_url of this ShowTemplateDetailResponse.
-        :type: str
+        :type ssh_url: str
         """
         self._ssh_url = ssh_url
 
@@ -272,7 +301,7 @@ class ShowTemplateDetailResponse(SdkResponse):
         项目id。
 
         :param project_uuid: The project_uuid of this ShowTemplateDetailResponse.
-        :type: str
+        :type project_uuid: str
         """
         self._project_uuid = project_uuid
 
@@ -294,7 +323,7 @@ class ShowTemplateDetailResponse(SdkResponse):
         模板状态。
 
         :param status: The status of this ShowTemplateDetailResponse.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -316,7 +345,7 @@ class ShowTemplateDetailResponse(SdkResponse):
         源数据信息： - key：元数据标识 - defaultValue：用户输入值的默认值 - isShow：前台界面组件是否展示该元数据 - isProjectName：是否使用作为项目名称 - label：前台界面组件展示名称 - type：前台界面组件类型 - helpText：前台界面组件帮助文本 - readOnly：前台界面组件是否可修改 - required：前台界面组件是否展示必填 - regType：该元数据进行正则校验类型；简化模板编码使用 - regPattern：该元数据对应js语法正则表达式 - regTip：该元数据正则校验提示信息 - visibleRule：该元数据可见规则 - isRequired：是否必填 - isReadOnly：是否只读 - options：option对象集合   - displayName：前台界面展示字符串   - value：该选项值 - eventOnchange：联动属性集合   - associatedProperty：被关联Property的key值   - associatedValue：被关联的value - fold：是否折叠 - show：是否展示该Property 
 
         :param properties: The properties of this ShowTemplateDetailResponse.
-        :type: list[object]
+        :type properties: list[object]
         """
         self._properties = properties
 
@@ -338,7 +367,7 @@ class ShowTemplateDetailResponse(SdkResponse):
         dependency信息： - id：依赖全局唯一标识 - name：依赖展示名称 - description：依赖展示描述 - recommended：是否推荐使用该依赖 - versionProperty：该依赖版本被关联Property的key值 - versionRange：该依赖版本适用范围 - groupName：分组名称 - items：分组列表 
 
         :param dependencies: The dependencies of this ShowTemplateDetailResponse.
-        :type: list[object]
+        :type dependencies: list[object]
         """
         self._dependencies = dependencies
 
@@ -360,7 +389,7 @@ class ShowTemplateDetailResponse(SdkResponse):
         dependency类型： - 0：分组 - 1：不分组 - null：无分组信息 
 
         :param dependency_type: The dependency_type of this ShowTemplateDetailResponse.
-        :type: str
+        :type dependency_type: str
         """
         self._dependency_type = dependency_type
 
@@ -382,7 +411,7 @@ class ShowTemplateDetailResponse(SdkResponse):
         部署信息： - param：参数对象   - build：构建类型   - runtime：函数运行时   - handler：函数执行入口   - outputFile：构建产物文件路径 - target：部署环境 
 
         :param deployment: The deployment of this ShowTemplateDetailResponse.
-        :type: object
+        :type deployment: object
         """
         self._deployment = deployment
 

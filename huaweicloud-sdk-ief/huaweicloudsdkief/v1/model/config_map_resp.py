@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ConfigMapResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ConfigMapResp:
     }
 
     def __init__(self, id=None, name=None, description=None, configs=None, project_id=None, created_at=None, updated_at=None):
-        """ConfigMapResp - a model defined in huaweicloud sdk"""
+        """ConfigMapResp
+
+        The model defined in huaweicloud sdk
+
+        :param id: 配置项ID
+        :type id: str
+        :param name: 配置项名称
+        :type name: str
+        :param description: 配置项描述
+        :type description: str
+        :param configs: 配置项键列表
+        :type configs: dict(str, str)
+        :param project_id: 项目ID
+        :type project_id: str
+        :param created_at: 创建时间
+        :type created_at: str
+        :param updated_at: 更新时间
+        :type updated_at: str
+        """
         
         
 
@@ -81,7 +98,7 @@ class ConfigMapResp:
         配置项ID
 
         :param id: The id of this ConfigMapResp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -103,7 +120,7 @@ class ConfigMapResp:
         配置项名称
 
         :param name: The name of this ConfigMapResp.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -125,7 +142,7 @@ class ConfigMapResp:
         配置项描述
 
         :param description: The description of this ConfigMapResp.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -147,7 +164,7 @@ class ConfigMapResp:
         配置项键列表
 
         :param configs: The configs of this ConfigMapResp.
-        :type: dict(str, str)
+        :type configs: dict(str, str)
         """
         self._configs = configs
 
@@ -169,7 +186,7 @@ class ConfigMapResp:
         项目ID
 
         :param project_id: The project_id of this ConfigMapResp.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -191,7 +208,7 @@ class ConfigMapResp:
         创建时间
 
         :param created_at: The created_at of this ConfigMapResp.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -213,7 +230,7 @@ class ConfigMapResp:
         更新时间
 
         :param updated_at: The updated_at of this ConfigMapResp.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 

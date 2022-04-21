@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UserWithPrivilege:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UserWithPrivilege:
     }
 
     def __init__(self, name=None, readonly=None):
-        """UserWithPrivilege - a model defined in huaweicloud sdk"""
+        """UserWithPrivilege
+
+        The model defined in huaweicloud sdk
+
+        :param name: 用户名。
+        :type name: str
+        :param readonly: 是否为只读权限。
+        :type readonly: bool
+        """
         
         
 
@@ -61,7 +68,7 @@ class UserWithPrivilege:
         用户名。
 
         :param name: The name of this UserWithPrivilege.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -83,7 +90,7 @@ class UserWithPrivilege:
         是否为只读权限。
 
         :param readonly: The readonly of this UserWithPrivilege.
-        :type: bool
+        :type readonly: bool
         """
         self._readonly = readonly
 

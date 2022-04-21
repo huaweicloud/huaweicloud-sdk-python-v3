@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FuncCode:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class FuncCode:
     }
 
     def __init__(self, file=None, link=None):
-        """FuncCode - a model defined in huaweicloud sdk"""
+        """FuncCode
+
+        The model defined in huaweicloud sdk
+
+        :param file: 函数代码，当CodeTye为inline/zip/jar时必选，且代码必须要进行base64编码。
+        :type file: str
+        :param link: 函数代码链接。
+        :type link: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class FuncCode:
         函数代码，当CodeTye为inline/zip/jar时必选，且代码必须要进行base64编码。
 
         :param file: The file of this FuncCode.
-        :type: str
+        :type file: str
         """
         self._file = file
 
@@ -85,7 +92,7 @@ class FuncCode:
         函数代码链接。
 
         :param link: The link of this FuncCode.
-        :type: str
+        :type link: str
         """
         self._link = link
 

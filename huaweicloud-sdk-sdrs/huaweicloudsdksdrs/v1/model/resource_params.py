@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResourceParams:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ResourceParams:
     }
 
     def __init__(self, resource_id=None, resource_detail=None, tags=None, resource_name=None):
-        """ResourceParams - a model defined in huaweicloud sdk"""
+        """ResourceParams
+
+        The model defined in huaweicloud sdk
+
+        :param resource_id: 保护实例ID。
+        :type resource_id: str
+        :param resource_detail: 
+        :type resource_detail: :class:`huaweicloudsdksdrs.v1.ShowProtectedInstanceParams`
+        :param tags: 标签列表，没有标签默认为空数组。
+        :type tags: list[:class:`huaweicloudsdksdrs.v1.ResourceTag`]
+        :param resource_name: 保护实例名称，没有名称时默认为空字符串。
+        :type resource_name: str
+        """
         
         
 
@@ -70,7 +81,7 @@ class ResourceParams:
         保护实例ID。
 
         :param resource_id: The resource_id of this ResourceParams.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -80,7 +91,7 @@ class ResourceParams:
 
 
         :return: The resource_detail of this ResourceParams.
-        :rtype: ShowProtectedInstanceParams
+        :rtype: :class:`huaweicloudsdksdrs.v1.ShowProtectedInstanceParams`
         """
         return self._resource_detail
 
@@ -90,7 +101,7 @@ class ResourceParams:
 
 
         :param resource_detail: The resource_detail of this ResourceParams.
-        :type: ShowProtectedInstanceParams
+        :type resource_detail: :class:`huaweicloudsdksdrs.v1.ShowProtectedInstanceParams`
         """
         self._resource_detail = resource_detail
 
@@ -101,7 +112,7 @@ class ResourceParams:
         标签列表，没有标签默认为空数组。
 
         :return: The tags of this ResourceParams.
-        :rtype: list[ResourceTag]
+        :rtype: list[:class:`huaweicloudsdksdrs.v1.ResourceTag`]
         """
         return self._tags
 
@@ -112,7 +123,7 @@ class ResourceParams:
         标签列表，没有标签默认为空数组。
 
         :param tags: The tags of this ResourceParams.
-        :type: list[ResourceTag]
+        :type tags: list[:class:`huaweicloudsdksdrs.v1.ResourceTag`]
         """
         self._tags = tags
 
@@ -134,7 +145,7 @@ class ResourceParams:
         保护实例名称，没有名称时默认为空字符串。
 
         :param resource_name: The resource_name of this ResourceParams.
-        :type: str
+        :type resource_name: str
         """
         self._resource_name = resource_name
 

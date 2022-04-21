@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowInstanceParamResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ShowInstanceParamResponse(SdkResponse):
     }
 
     def __init__(self, updated=None, configuration_parameter=None, offset=None, limit=None, total=None):
-        """ShowInstanceParamResponse - a model defined in huaweicloud sdk"""
+        """ShowInstanceParamResponse
+
+        The model defined in huaweicloud sdk
+
+        :param updated: DDM参数最后更新时间。
+        :type updated: str
+        :param configuration_parameter: DDM实例参数信息列表的集合。
+        :type configuration_parameter: list[:class:`huaweicloudsdkddm.v1.ConfigurationParameterList`]
+        :param offset: 分页参数: 起始值。
+        :type offset: int
+        :param limit: 分页参数：每页多少条。
+        :type limit: int
+        :param total: 集合总数
+        :type total: int
+        """
         
         super(ShowInstanceParamResponse, self).__init__()
 
@@ -78,7 +91,7 @@ class ShowInstanceParamResponse(SdkResponse):
         DDM参数最后更新时间。
 
         :param updated: The updated of this ShowInstanceParamResponse.
-        :type: str
+        :type updated: str
         """
         self._updated = updated
 
@@ -89,7 +102,7 @@ class ShowInstanceParamResponse(SdkResponse):
         DDM实例参数信息列表的集合。
 
         :return: The configuration_parameter of this ShowInstanceParamResponse.
-        :rtype: list[ConfigurationParameterList]
+        :rtype: list[:class:`huaweicloudsdkddm.v1.ConfigurationParameterList`]
         """
         return self._configuration_parameter
 
@@ -100,7 +113,7 @@ class ShowInstanceParamResponse(SdkResponse):
         DDM实例参数信息列表的集合。
 
         :param configuration_parameter: The configuration_parameter of this ShowInstanceParamResponse.
-        :type: list[ConfigurationParameterList]
+        :type configuration_parameter: list[:class:`huaweicloudsdkddm.v1.ConfigurationParameterList`]
         """
         self._configuration_parameter = configuration_parameter
 
@@ -122,7 +135,7 @@ class ShowInstanceParamResponse(SdkResponse):
         分页参数: 起始值。
 
         :param offset: The offset of this ShowInstanceParamResponse.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -144,7 +157,7 @@ class ShowInstanceParamResponse(SdkResponse):
         分页参数：每页多少条。
 
         :param limit: The limit of this ShowInstanceParamResponse.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -166,7 +179,7 @@ class ShowInstanceParamResponse(SdkResponse):
         集合总数
 
         :param total: The total of this ShowInstanceParamResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 

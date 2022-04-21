@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeviceShadowProperties:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeviceShadowProperties:
     }
 
     def __init__(self, properties=None, event_time=None):
-        """DeviceShadowProperties - a model defined in huaweicloud sdk"""
+        """DeviceShadowProperties
+
+        The model defined in huaweicloud sdk
+
+        :param properties: 设备影子的属性数据，Json格式，里面是一个个键值对，每个键都是产品模型中属性的参数名(property_name)，目前如样例所示只支持一层结构。 **注意**：JSON结构的key当前不支持特殊字符：点(.)、dollar符号($)、空char(十六进制的ASCII码为00),key为以上特殊字符无法正常刷新设备影子
+        :type properties: object
+        :param event_time: 事件操作时间，格式：yyyyMMdd&#39;T&#39;HHmmss&#39;Z&#39;，如20151212T121212Z。
+        :type event_time: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class DeviceShadowProperties:
         设备影子的属性数据，Json格式，里面是一个个键值对，每个键都是产品模型中属性的参数名(property_name)，目前如样例所示只支持一层结构。 **注意**：JSON结构的key当前不支持特殊字符：点(.)、dollar符号($)、空char(十六进制的ASCII码为00),key为以上特殊字符无法正常刷新设备影子
 
         :param properties: The properties of this DeviceShadowProperties.
-        :type: object
+        :type properties: object
         """
         self._properties = properties
 
@@ -85,7 +92,7 @@ class DeviceShadowProperties:
         事件操作时间，格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
         :param event_time: The event_time of this DeviceShadowProperties.
-        :type: str
+        :type event_time: str
         """
         self._event_time = event_time
 

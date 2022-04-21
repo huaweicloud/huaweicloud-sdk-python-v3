@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteProtectedInstanceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteProtectedInstanceRequest:
     }
 
     def __init__(self, protected_instance_id=None, body=None):
-        """DeleteProtectedInstanceRequest - a model defined in huaweicloud sdk"""
+        """DeleteProtectedInstanceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param protected_instance_id: 保护实例的ID。
+        :type protected_instance_id: str
+        :param body: Body of the DeleteProtectedInstanceRequest
+        :type body: :class:`huaweicloudsdksdrs.v1.DeleteProtectedInstanceRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class DeleteProtectedInstanceRequest:
         保护实例的ID。
 
         :param protected_instance_id: The protected_instance_id of this DeleteProtectedInstanceRequest.
-        :type: str
+        :type protected_instance_id: str
         """
         self._protected_instance_id = protected_instance_id
 
@@ -72,7 +79,7 @@ class DeleteProtectedInstanceRequest:
 
 
         :return: The body of this DeleteProtectedInstanceRequest.
-        :rtype: DeleteProtectedInstanceRequestBody
+        :rtype: :class:`huaweicloudsdksdrs.v1.DeleteProtectedInstanceRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class DeleteProtectedInstanceRequest:
 
 
         :param body: The body of this DeleteProtectedInstanceRequest.
-        :type: DeleteProtectedInstanceRequestBody
+        :type body: :class:`huaweicloudsdksdrs.v1.DeleteProtectedInstanceRequestBody`
         """
         self._body = body
 

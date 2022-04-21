@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListOpRecordRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListOpRecordRequest:
     }
 
     def __init__(self, blockchain_id=None, operation_status=None, resource_type=None, operation_type=None, operation_id=None):
-        """ListOpRecordRequest - a model defined in huaweicloud sdk"""
+        """ListOpRecordRequest
+
+        The model defined in huaweicloud sdk
+
+        :param blockchain_id: 区块链ID
+        :type blockchain_id: str
+        :param operation_status: 操作状态, 可选数值如下（括号中为该数值对应的操作类型含义）：waiting(等待执行)，processing（处理中），finished（操作完成，成功），failed（操作失败），stop（操作中断）
+        :type operation_status: str
+        :param resource_type: 资源类型, 可选数值如下（括号中为该数值对应的操作类型含义）：BCSSVC01（BCS变更操作），BCSSVC02（UGBaaS变更操作），PLUGIN01（RestAPI插件变更操作），PLUGIN02（TC3插件变更操作），PLUGIN03（轻节点插件变更操作）
+        :type resource_type: str
+        :param operation_type: 操作类型,  可选数值如下（括号中为该数值对应的操作类型含义）：99（OpCreate）,00（OpDelete）,01（OpUpgrade）,91（OpUpgradeRb）,02（OpAddOrg）,03（OpScaleOrg）,04（OpJoinChannel）,05（OpJoinUnion）
+        :type operation_type: str
+        :param operation_id: 操作记录ID
+        :type operation_id: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class ListOpRecordRequest:
         区块链ID
 
         :param blockchain_id: The blockchain_id of this ListOpRecordRequest.
-        :type: str
+        :type blockchain_id: str
         """
         self._blockchain_id = blockchain_id
 
@@ -100,7 +113,7 @@ class ListOpRecordRequest:
         操作状态, 可选数值如下（括号中为该数值对应的操作类型含义）：waiting(等待执行)，processing（处理中），finished（操作完成，成功），failed（操作失败），stop（操作中断）
 
         :param operation_status: The operation_status of this ListOpRecordRequest.
-        :type: str
+        :type operation_status: str
         """
         self._operation_status = operation_status
 
@@ -122,7 +135,7 @@ class ListOpRecordRequest:
         资源类型, 可选数值如下（括号中为该数值对应的操作类型含义）：BCSSVC01（BCS变更操作），BCSSVC02（UGBaaS变更操作），PLUGIN01（RestAPI插件变更操作），PLUGIN02（TC3插件变更操作），PLUGIN03（轻节点插件变更操作）
 
         :param resource_type: The resource_type of this ListOpRecordRequest.
-        :type: str
+        :type resource_type: str
         """
         self._resource_type = resource_type
 
@@ -144,7 +157,7 @@ class ListOpRecordRequest:
         操作类型,  可选数值如下（括号中为该数值对应的操作类型含义）：99（OpCreate）,00（OpDelete）,01（OpUpgrade）,91（OpUpgradeRb）,02（OpAddOrg）,03（OpScaleOrg）,04（OpJoinChannel）,05（OpJoinUnion）
 
         :param operation_type: The operation_type of this ListOpRecordRequest.
-        :type: str
+        :type operation_type: str
         """
         self._operation_type = operation_type
 
@@ -166,7 +179,7 @@ class ListOpRecordRequest:
         操作记录ID
 
         :param operation_id: The operation_id of this ListOpRecordRequest.
-        :type: str
+        :type operation_id: str
         """
         self._operation_id = operation_id
 

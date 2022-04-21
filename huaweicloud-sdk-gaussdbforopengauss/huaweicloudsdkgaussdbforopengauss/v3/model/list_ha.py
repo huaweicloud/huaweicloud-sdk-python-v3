@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListHa:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListHa:
     }
 
     def __init__(self, consistency=None, replication_mode=None):
-        """ListHa - a model defined in huaweicloud sdk"""
+        """ListHa
+
+        The model defined in huaweicloud sdk
+
+        :param consistency: 数据库一致性类型，分布式模式实例仅有。取值为“strong”、“eventual”，分别表示强一致性、最终一致性。
+        :type consistency: str
+        :param replication_mode: 备机同步参数。  取值：非空。  GaussDB(for openGauss)为 “sync” 说明： “sync”为同步模式。
+        :type replication_mode: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ListHa:
         数据库一致性类型，分布式模式实例仅有。取值为“strong”、“eventual”，分别表示强一致性、最终一致性。
 
         :param consistency: The consistency of this ListHa.
-        :type: str
+        :type consistency: str
         """
         self._consistency = consistency
 
@@ -83,7 +90,7 @@ class ListHa:
         备机同步参数。  取值：非空。  GaussDB(for openGauss)为 “sync” 说明： “sync”为同步模式。
 
         :param replication_mode: The replication_mode of this ListHa.
-        :type: str
+        :type replication_mode: str
         """
         self._replication_mode = replication_mode
 

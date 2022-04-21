@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowIterationV4Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class ShowIterationV4Response(SdkResponse):
     }
 
     def __init__(self, begin_time=None, charts=None, closed_total=None, created_time=None, end_time=None, have_task=None, iteration_id=None, name=None, opened_total=None, progress=None, total=None, updated_time=None, status=None):
-        """ShowIterationV4Response - a model defined in huaweicloud sdk"""
+        """ShowIterationV4Response
+
+        The model defined in huaweicloud sdk
+
+        :param begin_time: 迭代结束时间，年-月-日
+        :type begin_time: str
+        :param charts: 燃尽图
+        :type charts: list[:class:`huaweicloudsdkprojectman.v4.Chart`]
+        :param closed_total: 已关闭的工单数
+        :type closed_total: int
+        :param created_time: 迭代创建时间
+        :type created_time: str
+        :param end_time: 迭代开始时间，年-月-日
+        :type end_time: str
+        :param have_task: 是否有task
+        :type have_task: bool
+        :param iteration_id: 迭代id
+        :type iteration_id: int
+        :param name: 迭代标题
+        :type name: str
+        :param opened_total: 开启的工单数
+        :type opened_total: int
+        :param progress: 工作进展
+        :type progress: str
+        :param total: 工单总数
+        :type total: int
+        :param updated_time: 迭代更新时间
+        :type updated_time: str
+        :param status: 迭代的状态,0 未开始，1 进行中，2 结束
+        :type status: str
+        """
         
         super(ShowIterationV4Response, self).__init__()
 
@@ -118,7 +147,7 @@ class ShowIterationV4Response(SdkResponse):
         迭代结束时间，年-月-日
 
         :param begin_time: The begin_time of this ShowIterationV4Response.
-        :type: str
+        :type begin_time: str
         """
         self._begin_time = begin_time
 
@@ -129,7 +158,7 @@ class ShowIterationV4Response(SdkResponse):
         燃尽图
 
         :return: The charts of this ShowIterationV4Response.
-        :rtype: list[Chart]
+        :rtype: list[:class:`huaweicloudsdkprojectman.v4.Chart`]
         """
         return self._charts
 
@@ -140,7 +169,7 @@ class ShowIterationV4Response(SdkResponse):
         燃尽图
 
         :param charts: The charts of this ShowIterationV4Response.
-        :type: list[Chart]
+        :type charts: list[:class:`huaweicloudsdkprojectman.v4.Chart`]
         """
         self._charts = charts
 
@@ -162,7 +191,7 @@ class ShowIterationV4Response(SdkResponse):
         已关闭的工单数
 
         :param closed_total: The closed_total of this ShowIterationV4Response.
-        :type: int
+        :type closed_total: int
         """
         self._closed_total = closed_total
 
@@ -184,7 +213,7 @@ class ShowIterationV4Response(SdkResponse):
         迭代创建时间
 
         :param created_time: The created_time of this ShowIterationV4Response.
-        :type: str
+        :type created_time: str
         """
         self._created_time = created_time
 
@@ -206,7 +235,7 @@ class ShowIterationV4Response(SdkResponse):
         迭代开始时间，年-月-日
 
         :param end_time: The end_time of this ShowIterationV4Response.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -228,7 +257,7 @@ class ShowIterationV4Response(SdkResponse):
         是否有task
 
         :param have_task: The have_task of this ShowIterationV4Response.
-        :type: bool
+        :type have_task: bool
         """
         self._have_task = have_task
 
@@ -250,7 +279,7 @@ class ShowIterationV4Response(SdkResponse):
         迭代id
 
         :param iteration_id: The iteration_id of this ShowIterationV4Response.
-        :type: int
+        :type iteration_id: int
         """
         self._iteration_id = iteration_id
 
@@ -272,7 +301,7 @@ class ShowIterationV4Response(SdkResponse):
         迭代标题
 
         :param name: The name of this ShowIterationV4Response.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -294,7 +323,7 @@ class ShowIterationV4Response(SdkResponse):
         开启的工单数
 
         :param opened_total: The opened_total of this ShowIterationV4Response.
-        :type: int
+        :type opened_total: int
         """
         self._opened_total = opened_total
 
@@ -316,7 +345,7 @@ class ShowIterationV4Response(SdkResponse):
         工作进展
 
         :param progress: The progress of this ShowIterationV4Response.
-        :type: str
+        :type progress: str
         """
         self._progress = progress
 
@@ -338,7 +367,7 @@ class ShowIterationV4Response(SdkResponse):
         工单总数
 
         :param total: The total of this ShowIterationV4Response.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -360,7 +389,7 @@ class ShowIterationV4Response(SdkResponse):
         迭代更新时间
 
         :param updated_time: The updated_time of this ShowIterationV4Response.
-        :type: str
+        :type updated_time: str
         """
         self._updated_time = updated_time
 
@@ -382,7 +411,7 @@ class ShowIterationV4Response(SdkResponse):
         迭代的状态,0 未开始，1 进行中，2 结束
 
         :param status: The status of this ShowIterationV4Response.
-        :type: str
+        :type status: str
         """
         self._status = status
 

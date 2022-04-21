@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ReclaimPartnerCouponsReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ReclaimPartnerCouponsReq:
     }
 
     def __init__(self, coupon_id=None, indirect_partner_id=None):
-        """ReclaimPartnerCouponsReq - a model defined in huaweicloud sdk"""
+        """ReclaimPartnerCouponsReq
+
+        The model defined in huaweicloud sdk
+
+        :param coupon_id: 待回收的代金券ID。 请从“发放优惠券”或“查询已发放的优惠券”接口的响应参数中获取。
+        :type coupon_id: str
+        :param indirect_partner_id: 精英服务商ID。获取方法请参见查询精英服务商列表。 精英服务商回收给子客户发放的优惠券时，需要携带该字段。
+        :type indirect_partner_id: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ReclaimPartnerCouponsReq:
         待回收的代金券ID。 请从“发放优惠券”或“查询已发放的优惠券”接口的响应参数中获取。
 
         :param coupon_id: The coupon_id of this ReclaimPartnerCouponsReq.
-        :type: str
+        :type coupon_id: str
         """
         self._coupon_id = coupon_id
 
@@ -84,7 +91,7 @@ class ReclaimPartnerCouponsReq:
         精英服务商ID。获取方法请参见查询精英服务商列表。 精英服务商回收给子客户发放的优惠券时，需要携带该字段。
 
         :param indirect_partner_id: The indirect_partner_id of this ReclaimPartnerCouponsReq.
-        :type: str
+        :type indirect_partner_id: str
         """
         self._indirect_partner_id = indirect_partner_id
 

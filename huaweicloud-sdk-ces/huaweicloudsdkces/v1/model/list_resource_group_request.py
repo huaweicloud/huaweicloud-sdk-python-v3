@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListResourceGroupRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListResourceGroupRequest:
     }
 
     def __init__(self, group_name=None, group_id=None, status=None, start=None, limit=None):
-        """ListResourceGroupRequest - a model defined in huaweicloud sdk"""
+        """ListResourceGroupRequest
+
+        The model defined in huaweicloud sdk
+
+        :param group_name: 资源分组的名称；长度为1-128，只能包含0-9/a-z/A-Z/_/-或汉字；如：ResourceGroup-Test01。
+        :type group_name: str
+        :param group_id: 资源分组的ID，长度为1-128，只能包含0-9/a-z/A-Z；如：rg16063743652226ew93e64p。
+        :type group_id: str
+        :param status: 资源分组健康状态，值可为health、unhealth、no_alarm_rule；health表示健康，
+        :type status: str
+        :param start: 分页起始值，类型为integer，默认值为0。
+        :type start: int
+        :param limit: 单次查询的条数限制，取值范围(0,100]，默认值为100， 用于限制结果数据条数。
+        :type limit: int
+        """
         
         
 
@@ -78,7 +91,7 @@ class ListResourceGroupRequest:
         资源分组的名称；长度为1-128，只能包含0-9/a-z/A-Z/_/-或汉字；如：ResourceGroup-Test01。
 
         :param group_name: The group_name of this ListResourceGroupRequest.
-        :type: str
+        :type group_name: str
         """
         self._group_name = group_name
 
@@ -100,7 +113,7 @@ class ListResourceGroupRequest:
         资源分组的ID，长度为1-128，只能包含0-9/a-z/A-Z；如：rg16063743652226ew93e64p。
 
         :param group_id: The group_id of this ListResourceGroupRequest.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -122,7 +135,7 @@ class ListResourceGroupRequest:
         资源分组健康状态，值可为health、unhealth、no_alarm_rule；health表示健康，
 
         :param status: The status of this ListResourceGroupRequest.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -144,7 +157,7 @@ class ListResourceGroupRequest:
         分页起始值，类型为integer，默认值为0。
 
         :param start: The start of this ListResourceGroupRequest.
-        :type: int
+        :type start: int
         """
         self._start = start
 
@@ -166,7 +179,7 @@ class ListResourceGroupRequest:
         单次查询的条数限制，取值范围(0,100]，默认值为100， 用于限制结果数据条数。
 
         :param limit: The limit of this ListResourceGroupRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MysqlVolumeInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class MysqlVolumeInfo:
     }
 
     def __init__(self, type=None, size=None):
-        """MysqlVolumeInfo - a model defined in huaweicloud sdk"""
+        """MysqlVolumeInfo
+
+        The model defined in huaweicloud sdk
+
+        :param type: 磁盘类型。
+        :type type: str
+        :param size: 已使用磁盘大小，单位GB。
+        :type size: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class MysqlVolumeInfo:
         磁盘类型。
 
         :param type: The type of this MysqlVolumeInfo.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -83,7 +90,7 @@ class MysqlVolumeInfo:
         已使用磁盘大小，单位GB。
 
         :param size: The size of this MysqlVolumeInfo.
-        :type: str
+        :type size: str
         """
         self._size = size
 

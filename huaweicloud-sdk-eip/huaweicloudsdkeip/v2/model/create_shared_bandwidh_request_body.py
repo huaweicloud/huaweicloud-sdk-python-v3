@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateSharedBandwidhRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateSharedBandwidhRequestBody:
     }
 
     def __init__(self, bandwidth=None):
-        """CreateSharedBandwidhRequestBody - a model defined in huaweicloud sdk"""
+        """CreateSharedBandwidhRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param bandwidth: 
+        :type bandwidth: :class:`huaweicloudsdkeip.v2.CreateSharedBandwidthOption`
+        """
         
         
 
@@ -45,7 +50,7 @@ class CreateSharedBandwidhRequestBody:
 
 
         :return: The bandwidth of this CreateSharedBandwidhRequestBody.
-        :rtype: CreateSharedBandwidthOption
+        :rtype: :class:`huaweicloudsdkeip.v2.CreateSharedBandwidthOption`
         """
         return self._bandwidth
 
@@ -55,7 +60,7 @@ class CreateSharedBandwidhRequestBody:
 
 
         :param bandwidth: The bandwidth of this CreateSharedBandwidhRequestBody.
-        :type: CreateSharedBandwidthOption
+        :type bandwidth: :class:`huaweicloudsdkeip.v2.CreateSharedBandwidthOption`
         """
         self._bandwidth = bandwidth
 

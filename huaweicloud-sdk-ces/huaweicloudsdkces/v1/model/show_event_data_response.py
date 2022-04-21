@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowEventDataResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowEventDataResponse(SdkResponse):
     }
 
     def __init__(self, datapoints=None):
-        """ShowEventDataResponse - a model defined in huaweicloud sdk"""
+        """ShowEventDataResponse
+
+        The model defined in huaweicloud sdk
+
+        :param datapoints: 配置信息列表。如果不存在对应的配置信息，则datapoints为空数组[]。
+        :type datapoints: list[:class:`huaweicloudsdkces.v1.EventDataInfo`]
+        """
         
         super(ShowEventDataResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ShowEventDataResponse(SdkResponse):
         配置信息列表。如果不存在对应的配置信息，则datapoints为空数组[]。
 
         :return: The datapoints of this ShowEventDataResponse.
-        :rtype: list[EventDataInfo]
+        :rtype: list[:class:`huaweicloudsdkces.v1.EventDataInfo`]
         """
         return self._datapoints
 
@@ -58,7 +63,7 @@ class ShowEventDataResponse(SdkResponse):
         配置信息列表。如果不存在对应的配置信息，则datapoints为空数组[]。
 
         :param datapoints: The datapoints of this ShowEventDataResponse.
-        :type: list[EventDataInfo]
+        :type datapoints: list[:class:`huaweicloudsdkces.v1.EventDataInfo`]
         """
         self._datapoints = datapoints
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListExtractTaskResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListExtractTaskResponse(SdkResponse):
     }
 
     def __init__(self, total=None, tasks=None):
-        """ListExtractTaskResponse - a model defined in huaweicloud sdk"""
+        """ListExtractTaskResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 任务总数
+        :type total: int
+        :param tasks: 任务列表
+        :type tasks: list[:class:`huaweicloudsdkmpc.v1.ExtractTask`]
+        """
         
         super(ListExtractTaskResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListExtractTaskResponse(SdkResponse):
         任务总数
 
         :param total: The total of this ListExtractTaskResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -74,7 +81,7 @@ class ListExtractTaskResponse(SdkResponse):
         任务列表
 
         :return: The tasks of this ListExtractTaskResponse.
-        :rtype: list[ExtractTask]
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.ExtractTask`]
         """
         return self._tasks
 
@@ -85,7 +92,7 @@ class ListExtractTaskResponse(SdkResponse):
         任务列表
 
         :param tasks: The tasks of this ListExtractTaskResponse.
-        :type: list[ExtractTask]
+        :type tasks: list[:class:`huaweicloudsdkmpc.v1.ExtractTask`]
         """
         self._tasks = tasks
 

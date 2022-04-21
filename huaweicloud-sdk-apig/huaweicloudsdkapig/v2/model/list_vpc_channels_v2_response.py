@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListVpcChannelsV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListVpcChannelsV2Response(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, vpc_channels=None):
-        """ListVpcChannelsV2Response - a model defined in huaweicloud sdk"""
+        """ListVpcChannelsV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param size: 本次返回的列表长度
+        :type size: int
+        :param total: 满足条件的记录数
+        :type total: int
+        :param vpc_channels: 本次查询到的VPC通道列表
+        :type vpc_channels: list[:class:`huaweicloudsdkapig.v2.VpcChannelInfo`]
+        """
         
         super(ListVpcChannelsV2Response, self).__init__()
 
@@ -66,7 +75,7 @@ class ListVpcChannelsV2Response(SdkResponse):
         本次返回的列表长度
 
         :param size: The size of this ListVpcChannelsV2Response.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -88,7 +97,7 @@ class ListVpcChannelsV2Response(SdkResponse):
         满足条件的记录数
 
         :param total: The total of this ListVpcChannelsV2Response.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -99,7 +108,7 @@ class ListVpcChannelsV2Response(SdkResponse):
         本次查询到的VPC通道列表
 
         :return: The vpc_channels of this ListVpcChannelsV2Response.
-        :rtype: list[VpcChannelInfo]
+        :rtype: list[:class:`huaweicloudsdkapig.v2.VpcChannelInfo`]
         """
         return self._vpc_channels
 
@@ -110,7 +119,7 @@ class ListVpcChannelsV2Response(SdkResponse):
         本次查询到的VPC通道列表
 
         :param vpc_channels: The vpc_channels of this ListVpcChannelsV2Response.
-        :type: list[VpcChannelInfo]
+        :type vpc_channels: list[:class:`huaweicloudsdkapig.v2.VpcChannelInfo`]
         """
         self._vpc_channels = vpc_channels
 

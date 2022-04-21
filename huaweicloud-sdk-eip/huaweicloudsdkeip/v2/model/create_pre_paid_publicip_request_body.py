@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreatePrePaidPublicipRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CreatePrePaidPublicipRequestBody:
     }
 
     def __init__(self, publicip=None, bandwidth=None, extend_param=None, enterprise_project_id=None):
-        """CreatePrePaidPublicipRequestBody - a model defined in huaweicloud sdk"""
+        """CreatePrePaidPublicipRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param publicip: 
+        :type publicip: :class:`huaweicloudsdkeip.v2.CreatePrePaidPublicipOption`
+        :param bandwidth: 
+        :type bandwidth: :class:`huaweicloudsdkeip.v2.CreatePublicipBandwidthOption`
+        :param extend_param: 
+        :type extend_param: :class:`huaweicloudsdkeip.v2.CreatePrePaidPublicipExtendParamOption`
+        :param enterprise_project_id: 企业项目ID。最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。  创建弹性公网IP时，给弹性公网IP绑定企业项目ID。  不指定该参数时，默认值是 0
+        :type enterprise_project_id: str
+        """
         
         
 
@@ -59,7 +70,7 @@ class CreatePrePaidPublicipRequestBody:
 
 
         :return: The publicip of this CreatePrePaidPublicipRequestBody.
-        :rtype: CreatePrePaidPublicipOption
+        :rtype: :class:`huaweicloudsdkeip.v2.CreatePrePaidPublicipOption`
         """
         return self._publicip
 
@@ -69,7 +80,7 @@ class CreatePrePaidPublicipRequestBody:
 
 
         :param publicip: The publicip of this CreatePrePaidPublicipRequestBody.
-        :type: CreatePrePaidPublicipOption
+        :type publicip: :class:`huaweicloudsdkeip.v2.CreatePrePaidPublicipOption`
         """
         self._publicip = publicip
 
@@ -79,7 +90,7 @@ class CreatePrePaidPublicipRequestBody:
 
 
         :return: The bandwidth of this CreatePrePaidPublicipRequestBody.
-        :rtype: CreatePublicipBandwidthOption
+        :rtype: :class:`huaweicloudsdkeip.v2.CreatePublicipBandwidthOption`
         """
         return self._bandwidth
 
@@ -89,7 +100,7 @@ class CreatePrePaidPublicipRequestBody:
 
 
         :param bandwidth: The bandwidth of this CreatePrePaidPublicipRequestBody.
-        :type: CreatePublicipBandwidthOption
+        :type bandwidth: :class:`huaweicloudsdkeip.v2.CreatePublicipBandwidthOption`
         """
         self._bandwidth = bandwidth
 
@@ -99,7 +110,7 @@ class CreatePrePaidPublicipRequestBody:
 
 
         :return: The extend_param of this CreatePrePaidPublicipRequestBody.
-        :rtype: CreatePrePaidPublicipExtendParamOption
+        :rtype: :class:`huaweicloudsdkeip.v2.CreatePrePaidPublicipExtendParamOption`
         """
         return self._extend_param
 
@@ -109,7 +120,7 @@ class CreatePrePaidPublicipRequestBody:
 
 
         :param extend_param: The extend_param of this CreatePrePaidPublicipRequestBody.
-        :type: CreatePrePaidPublicipExtendParamOption
+        :type extend_param: :class:`huaweicloudsdkeip.v2.CreatePrePaidPublicipExtendParamOption`
         """
         self._extend_param = extend_param
 
@@ -131,7 +142,7 @@ class CreatePrePaidPublicipRequestBody:
         企业项目ID。最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。  创建弹性公网IP时，给弹性公网IP绑定企业项目ID。  不指定该参数时，默认值是 0
 
         :param enterprise_project_id: The enterprise_project_id of this CreatePrePaidPublicipRequestBody.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 

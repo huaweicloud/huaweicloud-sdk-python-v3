@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDisasterRecoveryDrillRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowDisasterRecoveryDrillRequest:
     }
 
     def __init__(self, disaster_recovery_drill_id=None):
-        """ShowDisasterRecoveryDrillRequest - a model defined in huaweicloud sdk"""
+        """ShowDisasterRecoveryDrillRequest
+
+        The model defined in huaweicloud sdk
+
+        :param disaster_recovery_drill_id: 容灾演练的ID。
+        :type disaster_recovery_drill_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowDisasterRecoveryDrillRequest:
         容灾演练的ID。
 
         :param disaster_recovery_drill_id: The disaster_recovery_drill_id of this ShowDisasterRecoveryDrillRequest.
-        :type: str
+        :type disaster_recovery_drill_id: str
         """
         self._disaster_recovery_drill_id = disaster_recovery_drill_id
 

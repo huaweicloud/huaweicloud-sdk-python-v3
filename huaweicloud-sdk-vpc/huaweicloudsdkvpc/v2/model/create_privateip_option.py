@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreatePrivateipOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreatePrivateipOption:
     }
 
     def __init__(self, subnet_id=None, ip_address=None):
-        """CreatePrivateipOption - a model defined in huaweicloud sdk"""
+        """CreatePrivateipOption
+
+        The model defined in huaweicloud sdk
+
+        :param subnet_id: 分配IP的子网标识
+        :type subnet_id: str
+        :param ip_address: 功能说明：指定IP地址申请 取值范围：子网段中的可以使用且未分配的IP地址，不指定时由系统自动分配
+        :type ip_address: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreatePrivateipOption:
         分配IP的子网标识
 
         :param subnet_id: The subnet_id of this CreatePrivateipOption.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -84,7 +91,7 @@ class CreatePrivateipOption:
         功能说明：指定IP地址申请 取值范围：子网段中的可以使用且未分配的IP地址，不指定时由系统自动分配
 
         :param ip_address: The ip_address of this CreatePrivateipOption.
-        :type: str
+        :type ip_address: str
         """
         self._ip_address = ip_address
 

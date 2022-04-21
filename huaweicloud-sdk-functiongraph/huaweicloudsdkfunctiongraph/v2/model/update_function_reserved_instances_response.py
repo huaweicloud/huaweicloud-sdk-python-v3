@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateFunctionReservedInstancesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateFunctionReservedInstancesResponse(SdkResponse):
     }
 
     def __init__(self, count=None):
-        """UpdateFunctionReservedInstancesResponse - a model defined in huaweicloud sdk"""
+        """UpdateFunctionReservedInstancesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 预留实例个数
+        :type count: int
+        """
         
         super(UpdateFunctionReservedInstancesResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class UpdateFunctionReservedInstancesResponse(SdkResponse):
         预留实例个数
 
         :param count: The count of this UpdateFunctionReservedInstancesResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

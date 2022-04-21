@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDeploymentRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateDeploymentRequest:
     }
 
     def __init__(self, ief_instance_id=None, deployment_id=None, body=None):
-        """UpdateDeploymentRequest - a model defined in huaweicloud sdk"""
+        """UpdateDeploymentRequest
+
+        The model defined in huaweicloud sdk
+
+        :param ief_instance_id: 铂金版实例ID，专业版实例为空值
+        :type ief_instance_id: str
+        :param deployment_id: 应用部署ID
+        :type deployment_id: str
+        :param body: Body of the UpdateDeploymentRequest
+        :type body: :class:`huaweicloudsdkief.v1.UpdateDeployment`
+        """
         
         
 
@@ -67,7 +76,7 @@ class UpdateDeploymentRequest:
         铂金版实例ID，专业版实例为空值
 
         :param ief_instance_id: The ief_instance_id of this UpdateDeploymentRequest.
-        :type: str
+        :type ief_instance_id: str
         """
         self._ief_instance_id = ief_instance_id
 
@@ -89,7 +98,7 @@ class UpdateDeploymentRequest:
         应用部署ID
 
         :param deployment_id: The deployment_id of this UpdateDeploymentRequest.
-        :type: str
+        :type deployment_id: str
         """
         self._deployment_id = deployment_id
 
@@ -99,7 +108,7 @@ class UpdateDeploymentRequest:
 
 
         :return: The body of this UpdateDeploymentRequest.
-        :rtype: UpdateDeployment
+        :rtype: :class:`huaweicloudsdkief.v1.UpdateDeployment`
         """
         return self._body
 
@@ -109,7 +118,7 @@ class UpdateDeploymentRequest:
 
 
         :param body: The body of this UpdateDeploymentRequest.
-        :type: UpdateDeployment
+        :type body: :class:`huaweicloudsdkief.v1.UpdateDeployment`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CloudResource:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CloudResource:
     }
 
     def __init__(self, resource_type=None, resource_count=None):
-        """CloudResource - a model defined in huaweicloud sdk"""
+        """CloudResource
+
+        The model defined in huaweicloud sdk
+
+        :param resource_type: 功能描述：资源类型
+        :type resource_type: str
+        :param resource_count: 功能说明：资源数量
+        :type resource_count: int
+        """
         
         
 
@@ -61,7 +68,7 @@ class CloudResource:
         功能描述：资源类型
 
         :param resource_type: The resource_type of this CloudResource.
-        :type: str
+        :type resource_type: str
         """
         self._resource_type = resource_type
 
@@ -83,7 +90,7 @@ class CloudResource:
         功能说明：资源数量
 
         :param resource_count: The resource_count of this CloudResource.
-        :type: int
+        :type resource_count: int
         """
         self._resource_count = resource_count
 

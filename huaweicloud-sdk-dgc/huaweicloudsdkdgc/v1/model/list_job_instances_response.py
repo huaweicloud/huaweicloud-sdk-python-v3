@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListJobInstancesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListJobInstancesResponse(SdkResponse):
     }
 
     def __init__(self, total=None, instances=None):
-        """ListJobInstancesResponse - a model defined in huaweicloud sdk"""
+        """ListJobInstancesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 
+        :type total: int
+        :param instances: 
+        :type instances: list[:class:`huaweicloudsdkdgc.v1.JobInstance`]
+        """
         
         super(ListJobInstancesResponse, self).__init__()
 
@@ -61,7 +68,7 @@ class ListJobInstancesResponse(SdkResponse):
 
 
         :param total: The total of this ListJobInstancesResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -71,7 +78,7 @@ class ListJobInstancesResponse(SdkResponse):
 
 
         :return: The instances of this ListJobInstancesResponse.
-        :rtype: list[JobInstance]
+        :rtype: list[:class:`huaweicloudsdkdgc.v1.JobInstance`]
         """
         return self._instances
 
@@ -81,7 +88,7 @@ class ListJobInstancesResponse(SdkResponse):
 
 
         :param instances: The instances of this ListJobInstancesResponse.
-        :type: list[JobInstance]
+        :type instances: list[:class:`huaweicloudsdkdgc.v1.JobInstance`]
         """
         self._instances = instances
 

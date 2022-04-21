@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApiBaseInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -74,7 +73,57 @@ class ApiBaseInfo:
     }
 
     def __init__(self, name=None, type=None, version=None, req_protocol=None, req_method=None, req_uri=None, auth_type=None, auth_opt=None, cors=None, match_mode=None, backend_type=None, remark=None, group_id=None, body_remark=None, result_normal_sample=None, result_failure_sample=None, authorizer_id=None, tags=None, response_id=None, roma_app_id=None, domain_name=None, tag=None, content_type=None):
-        """ApiBaseInfo - a model defined in huaweicloud sdk"""
+        """ApiBaseInfo
+
+        The model defined in huaweicloud sdk
+
+        :param name: API名称。  长度为3 ~ 64位的字符串，字符串由中文、英文字母、数字、下划线组成，且只能以英文或中文开头。 &gt; 中文字符必须为UTF-8或者unicode编码。
+        :type name: str
+        :param type: API类型 - 1：公有API - 2：私有API
+        :type type: int
+        :param version: API的版本
+        :type version: str
+        :param req_protocol: API的请求协议 - HTTP - HTTPS - BOTH：同时支持HTTP和HTTPS
+        :type req_protocol: str
+        :param req_method: API的请求方式
+        :type req_method: str
+        :param req_uri: 请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。 &gt; 需要服从URI规范。
+        :type req_uri: str
+        :param auth_type: API的认证方式 - NONE：无认证 - APP：APP认证 - IAM：IAM认证 - AUTHORIZER：自定义认证
+        :type auth_type: str
+        :param auth_opt: 
+        :type auth_opt: :class:`huaweicloudsdkapig.v2.AuthOpt`
+        :param cors: 是否支持跨域 - TRUE：支持 - FALSE：不支持
+        :type cors: bool
+        :param match_mode: API的匹配方式 - SWA：前缀匹配 - NORMAL：正常匹配（绝对匹配） 默认：NORMAL
+        :type match_mode: str
+        :param backend_type: 后端类型 - HTTP：web后端 - FUNCTION：函数工作流 - MOCK：模拟的后端
+        :type backend_type: str
+        :param remark: API描述。字符长度不超过255 &gt; 中文字符必须为UTF-8或者unicode编码。
+        :type remark: str
+        :param group_id: API所属的分组编号
+        :type group_id: str
+        :param body_remark: API请求体描述，可以是请求体示例、媒体类型、参数等信息。字符长度不超过20480 &gt; 中文字符必须为UTF-8或者unicode编码。
+        :type body_remark: str
+        :param result_normal_sample: 正常响应示例，描述API的正常返回信息。字符长度不超过20480 &gt; 中文字符必须为UTF-8或者unicode编码。
+        :type result_normal_sample: str
+        :param result_failure_sample: 失败返回示例，描述API的异常返回信息。字符长度不超过20480 &gt; 中文字符必须为UTF-8或者unicode编码。
+        :type result_failure_sample: str
+        :param authorizer_id: 前端自定义认证对象的ID
+        :type authorizer_id: str
+        :param tags: 标签。  支持英文，数字，下划线，且只能以英文开头。支持输入多个标签，不同标签以英文逗号分割。 
+        :type tags: list[str]
+        :param response_id: 分组自定义响应ID
+        :type response_id: str
+        :param roma_app_id: 集成应用ID  暂不支持
+        :type roma_app_id: str
+        :param domain_name: API绑定的自定义域名  暂不支持
+        :type domain_name: str
+        :param tag: 标签  待废弃，优先使用tags字段
+        :type tag: str
+        :param content_type: 请求内容格式类型：  application/json application/xml multipart/form-date text/plain  暂不支持
+        :type content_type: str
+        """
         
         
 
@@ -160,7 +209,7 @@ class ApiBaseInfo:
         API名称。  长度为3 ~ 64位的字符串，字符串由中文、英文字母、数字、下划线组成，且只能以英文或中文开头。 > 中文字符必须为UTF-8或者unicode编码。
 
         :param name: The name of this ApiBaseInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -182,7 +231,7 @@ class ApiBaseInfo:
         API类型 - 1：公有API - 2：私有API
 
         :param type: The type of this ApiBaseInfo.
-        :type: int
+        :type type: int
         """
         self._type = type
 
@@ -204,7 +253,7 @@ class ApiBaseInfo:
         API的版本
 
         :param version: The version of this ApiBaseInfo.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -226,7 +275,7 @@ class ApiBaseInfo:
         API的请求协议 - HTTP - HTTPS - BOTH：同时支持HTTP和HTTPS
 
         :param req_protocol: The req_protocol of this ApiBaseInfo.
-        :type: str
+        :type req_protocol: str
         """
         self._req_protocol = req_protocol
 
@@ -248,7 +297,7 @@ class ApiBaseInfo:
         API的请求方式
 
         :param req_method: The req_method of this ApiBaseInfo.
-        :type: str
+        :type req_method: str
         """
         self._req_method = req_method
 
@@ -270,7 +319,7 @@ class ApiBaseInfo:
         请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。 > 需要服从URI规范。
 
         :param req_uri: The req_uri of this ApiBaseInfo.
-        :type: str
+        :type req_uri: str
         """
         self._req_uri = req_uri
 
@@ -292,7 +341,7 @@ class ApiBaseInfo:
         API的认证方式 - NONE：无认证 - APP：APP认证 - IAM：IAM认证 - AUTHORIZER：自定义认证
 
         :param auth_type: The auth_type of this ApiBaseInfo.
-        :type: str
+        :type auth_type: str
         """
         self._auth_type = auth_type
 
@@ -302,7 +351,7 @@ class ApiBaseInfo:
 
 
         :return: The auth_opt of this ApiBaseInfo.
-        :rtype: AuthOpt
+        :rtype: :class:`huaweicloudsdkapig.v2.AuthOpt`
         """
         return self._auth_opt
 
@@ -312,7 +361,7 @@ class ApiBaseInfo:
 
 
         :param auth_opt: The auth_opt of this ApiBaseInfo.
-        :type: AuthOpt
+        :type auth_opt: :class:`huaweicloudsdkapig.v2.AuthOpt`
         """
         self._auth_opt = auth_opt
 
@@ -334,7 +383,7 @@ class ApiBaseInfo:
         是否支持跨域 - TRUE：支持 - FALSE：不支持
 
         :param cors: The cors of this ApiBaseInfo.
-        :type: bool
+        :type cors: bool
         """
         self._cors = cors
 
@@ -356,7 +405,7 @@ class ApiBaseInfo:
         API的匹配方式 - SWA：前缀匹配 - NORMAL：正常匹配（绝对匹配） 默认：NORMAL
 
         :param match_mode: The match_mode of this ApiBaseInfo.
-        :type: str
+        :type match_mode: str
         """
         self._match_mode = match_mode
 
@@ -378,7 +427,7 @@ class ApiBaseInfo:
         后端类型 - HTTP：web后端 - FUNCTION：函数工作流 - MOCK：模拟的后端
 
         :param backend_type: The backend_type of this ApiBaseInfo.
-        :type: str
+        :type backend_type: str
         """
         self._backend_type = backend_type
 
@@ -400,7 +449,7 @@ class ApiBaseInfo:
         API描述。字符长度不超过255 > 中文字符必须为UTF-8或者unicode编码。
 
         :param remark: The remark of this ApiBaseInfo.
-        :type: str
+        :type remark: str
         """
         self._remark = remark
 
@@ -422,7 +471,7 @@ class ApiBaseInfo:
         API所属的分组编号
 
         :param group_id: The group_id of this ApiBaseInfo.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -444,7 +493,7 @@ class ApiBaseInfo:
         API请求体描述，可以是请求体示例、媒体类型、参数等信息。字符长度不超过20480 > 中文字符必须为UTF-8或者unicode编码。
 
         :param body_remark: The body_remark of this ApiBaseInfo.
-        :type: str
+        :type body_remark: str
         """
         self._body_remark = body_remark
 
@@ -466,7 +515,7 @@ class ApiBaseInfo:
         正常响应示例，描述API的正常返回信息。字符长度不超过20480 > 中文字符必须为UTF-8或者unicode编码。
 
         :param result_normal_sample: The result_normal_sample of this ApiBaseInfo.
-        :type: str
+        :type result_normal_sample: str
         """
         self._result_normal_sample = result_normal_sample
 
@@ -488,7 +537,7 @@ class ApiBaseInfo:
         失败返回示例，描述API的异常返回信息。字符长度不超过20480 > 中文字符必须为UTF-8或者unicode编码。
 
         :param result_failure_sample: The result_failure_sample of this ApiBaseInfo.
-        :type: str
+        :type result_failure_sample: str
         """
         self._result_failure_sample = result_failure_sample
 
@@ -510,7 +559,7 @@ class ApiBaseInfo:
         前端自定义认证对象的ID
 
         :param authorizer_id: The authorizer_id of this ApiBaseInfo.
-        :type: str
+        :type authorizer_id: str
         """
         self._authorizer_id = authorizer_id
 
@@ -532,7 +581,7 @@ class ApiBaseInfo:
         标签。  支持英文，数字，下划线，且只能以英文开头。支持输入多个标签，不同标签以英文逗号分割。 
 
         :param tags: The tags of this ApiBaseInfo.
-        :type: list[str]
+        :type tags: list[str]
         """
         self._tags = tags
 
@@ -554,7 +603,7 @@ class ApiBaseInfo:
         分组自定义响应ID
 
         :param response_id: The response_id of this ApiBaseInfo.
-        :type: str
+        :type response_id: str
         """
         self._response_id = response_id
 
@@ -576,7 +625,7 @@ class ApiBaseInfo:
         集成应用ID  暂不支持
 
         :param roma_app_id: The roma_app_id of this ApiBaseInfo.
-        :type: str
+        :type roma_app_id: str
         """
         self._roma_app_id = roma_app_id
 
@@ -598,7 +647,7 @@ class ApiBaseInfo:
         API绑定的自定义域名  暂不支持
 
         :param domain_name: The domain_name of this ApiBaseInfo.
-        :type: str
+        :type domain_name: str
         """
         self._domain_name = domain_name
 
@@ -620,7 +669,7 @@ class ApiBaseInfo:
         标签  待废弃，优先使用tags字段
 
         :param tag: The tag of this ApiBaseInfo.
-        :type: str
+        :type tag: str
         """
         self._tag = tag
 
@@ -642,7 +691,7 @@ class ApiBaseInfo:
         请求内容格式类型：  application/json application/xml multipart/form-date text/plain  暂不支持
 
         :param content_type: The content_type of this ApiBaseInfo.
-        :type: str
+        :type content_type: str
         """
         self._content_type = content_type
 

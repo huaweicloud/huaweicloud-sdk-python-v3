@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowRunResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ShowRunResponse(SdkResponse):
     }
 
     def __init__(self, run_id=None, job_id=None, job_type=None, status=None, created_time=None, message=None, details=None):
-        """ShowRunResponse - a model defined in huaweicloud sdk"""
+        """ShowRunResponse
+
+        The model defined in huaweicloud sdk
+
+        :param run_id: 作业运行ID。
+        :type run_id: str
+        :param job_id: 作业ID。
+        :type job_id: str
+        :param job_type: 作业类型。
+        :type job_type: str
+        :param status: 此作业的当前状态，包含提交（LAUNCHING）、运行中（RUNNING）、完成（FINISHED）、失败（FAILED）、取消（CANCELLED）。
+        :type status: str
+        :param created_time: 创建运行时间。
+        :type created_time: str
+        :param message: 系统提示信息。运行失败时，失败原因。
+        :type message: str
+        :param details: 作业运行详情。
+        :type details: list[:class:`huaweicloudsdkiotanalytics.v1.RunDetail`]
+        """
         
         super(ShowRunResponse, self).__init__()
 
@@ -88,7 +105,7 @@ class ShowRunResponse(SdkResponse):
         作业运行ID。
 
         :param run_id: The run_id of this ShowRunResponse.
-        :type: str
+        :type run_id: str
         """
         self._run_id = run_id
 
@@ -110,7 +127,7 @@ class ShowRunResponse(SdkResponse):
         作业ID。
 
         :param job_id: The job_id of this ShowRunResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -132,7 +149,7 @@ class ShowRunResponse(SdkResponse):
         作业类型。
 
         :param job_type: The job_type of this ShowRunResponse.
-        :type: str
+        :type job_type: str
         """
         self._job_type = job_type
 
@@ -154,7 +171,7 @@ class ShowRunResponse(SdkResponse):
         此作业的当前状态，包含提交（LAUNCHING）、运行中（RUNNING）、完成（FINISHED）、失败（FAILED）、取消（CANCELLED）。
 
         :param status: The status of this ShowRunResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -176,7 +193,7 @@ class ShowRunResponse(SdkResponse):
         创建运行时间。
 
         :param created_time: The created_time of this ShowRunResponse.
-        :type: str
+        :type created_time: str
         """
         self._created_time = created_time
 
@@ -198,7 +215,7 @@ class ShowRunResponse(SdkResponse):
         系统提示信息。运行失败时，失败原因。
 
         :param message: The message of this ShowRunResponse.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -209,7 +226,7 @@ class ShowRunResponse(SdkResponse):
         作业运行详情。
 
         :return: The details of this ShowRunResponse.
-        :rtype: list[RunDetail]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.RunDetail`]
         """
         return self._details
 
@@ -220,7 +237,7 @@ class ShowRunResponse(SdkResponse):
         作业运行详情。
 
         :param details: The details of this ShowRunResponse.
-        :type: list[RunDetail]
+        :type details: list[:class:`huaweicloudsdkiotanalytics.v1.RunDetail`]
         """
         self._details = details
 

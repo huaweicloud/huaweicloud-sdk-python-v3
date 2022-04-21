@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateIssueResponseV4ParentIssue:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateIssueResponseV4ParentIssue:
     }
 
     def __init__(self, id=None, name=None):
-        """CreateIssueResponseV4ParentIssue - a model defined in huaweicloud sdk"""
+        """CreateIssueResponseV4ParentIssue
+
+        The model defined in huaweicloud sdk
+
+        :param id: 父工作项id
+        :type id: int
+        :param name: 父工作项
+        :type name: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class CreateIssueResponseV4ParentIssue:
         父工作项id
 
         :param id: The id of this CreateIssueResponseV4ParentIssue.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -85,7 +92,7 @@ class CreateIssueResponseV4ParentIssue:
         父工作项
 
         :param name: The name of this CreateIssueResponseV4ParentIssue.
-        :type: str
+        :type name: str
         """
         self._name = name
 

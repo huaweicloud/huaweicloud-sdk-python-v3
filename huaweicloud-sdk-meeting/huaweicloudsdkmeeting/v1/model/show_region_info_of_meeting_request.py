@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowRegionInfoOfMeetingRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowRegionInfoOfMeetingRequest:
     }
 
     def __init__(self, conference_id=None):
-        """ShowRegionInfoOfMeetingRequest - a model defined in huaweicloud sdk"""
+        """ShowRegionInfoOfMeetingRequest
+
+        The model defined in huaweicloud sdk
+
+        :param conference_id: 会议ID。
+        :type conference_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowRegionInfoOfMeetingRequest:
         会议ID。
 
         :param conference_id: The conference_id of this ShowRegionInfoOfMeetingRequest.
-        :type: str
+        :type conference_id: str
         """
         self._conference_id = conference_id
 

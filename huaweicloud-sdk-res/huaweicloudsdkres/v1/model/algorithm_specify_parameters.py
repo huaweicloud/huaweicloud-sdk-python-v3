@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AlgorithmSpecifyParameters:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class AlgorithmSpecifyParameters:
     }
 
     def __init__(self, latent_vector_length=None, architecture=None, active_function=None, value_keep_probability=None, embed_size=None, mlp_architecture=None, max_order=None, hash_sizes=None, hash_compensation=None, use_wide_part=None, structure_optimizer=None, merge_multi_hot=None, fix_structure=None):
-        """AlgorithmSpecifyParameters - a model defined in huaweicloud sdk"""
+        """AlgorithmSpecifyParameters
+
+        The model defined in huaweicloud sdk
+
+        :param latent_vector_length: 隐向量长度(DEEPFM需要提供此参数)。
+        :type latent_vector_length: int
+        :param architecture: 神经网络结构(DEEPFM需要提供此参数)。
+        :type architecture: list[int]
+        :param active_function: 激活函数(DEEPFM需要提供此参数,AutoGroup需要提供此参数)。
+        :type active_function: str
+        :param value_keep_probability: 神经元值保留概率(DEEPFM需要提供此参数,AutoGroup需要提供此参数)。
+        :type value_keep_probability: float
+        :param embed_size: 各阶隐向量长度(AutoGroup需要提供此参数)。
+        :type embed_size: list[int]
+        :param mlp_architecture: 神经网络结构(AutoGroup需要提供此参数)。
+        :type mlp_architecture: list[int]
+        :param max_order: 最大交互阶数(AutoGroup需要提供此参数)。
+        :type max_order: int
+        :param hash_sizes: 哈希长度(AutoGroup需要提供此参数)。
+        :type hash_sizes: list[int]
+        :param hash_compensation: 特征交互层惩罚项系数(AutoGroup需要提供此参数)。
+        :type hash_compensation: list[float]
+        :param use_wide_part: 使用线性部分(AutoGroup需要提供此参数)。
+        :type use_wide_part: bool
+        :param structure_optimizer: 
+        :type structure_optimizer: :class:`huaweicloudsdkres.v1.Optimizer`
+        :param merge_multi_hot: 融合多值特征(AutoGroup需要提供此参数)。
+        :type merge_multi_hot: bool
+        :param fix_structure: 固定哈希结构(AutoGroup需要提供此参数)。
+        :type fix_structure: bool
+        """
         
         
 
@@ -118,7 +147,7 @@ class AlgorithmSpecifyParameters:
         隐向量长度(DEEPFM需要提供此参数)。
 
         :param latent_vector_length: The latent_vector_length of this AlgorithmSpecifyParameters.
-        :type: int
+        :type latent_vector_length: int
         """
         self._latent_vector_length = latent_vector_length
 
@@ -140,7 +169,7 @@ class AlgorithmSpecifyParameters:
         神经网络结构(DEEPFM需要提供此参数)。
 
         :param architecture: The architecture of this AlgorithmSpecifyParameters.
-        :type: list[int]
+        :type architecture: list[int]
         """
         self._architecture = architecture
 
@@ -162,7 +191,7 @@ class AlgorithmSpecifyParameters:
         激活函数(DEEPFM需要提供此参数,AutoGroup需要提供此参数)。
 
         :param active_function: The active_function of this AlgorithmSpecifyParameters.
-        :type: str
+        :type active_function: str
         """
         self._active_function = active_function
 
@@ -184,7 +213,7 @@ class AlgorithmSpecifyParameters:
         神经元值保留概率(DEEPFM需要提供此参数,AutoGroup需要提供此参数)。
 
         :param value_keep_probability: The value_keep_probability of this AlgorithmSpecifyParameters.
-        :type: float
+        :type value_keep_probability: float
         """
         self._value_keep_probability = value_keep_probability
 
@@ -206,7 +235,7 @@ class AlgorithmSpecifyParameters:
         各阶隐向量长度(AutoGroup需要提供此参数)。
 
         :param embed_size: The embed_size of this AlgorithmSpecifyParameters.
-        :type: list[int]
+        :type embed_size: list[int]
         """
         self._embed_size = embed_size
 
@@ -228,7 +257,7 @@ class AlgorithmSpecifyParameters:
         神经网络结构(AutoGroup需要提供此参数)。
 
         :param mlp_architecture: The mlp_architecture of this AlgorithmSpecifyParameters.
-        :type: list[int]
+        :type mlp_architecture: list[int]
         """
         self._mlp_architecture = mlp_architecture
 
@@ -250,7 +279,7 @@ class AlgorithmSpecifyParameters:
         最大交互阶数(AutoGroup需要提供此参数)。
 
         :param max_order: The max_order of this AlgorithmSpecifyParameters.
-        :type: int
+        :type max_order: int
         """
         self._max_order = max_order
 
@@ -272,7 +301,7 @@ class AlgorithmSpecifyParameters:
         哈希长度(AutoGroup需要提供此参数)。
 
         :param hash_sizes: The hash_sizes of this AlgorithmSpecifyParameters.
-        :type: list[int]
+        :type hash_sizes: list[int]
         """
         self._hash_sizes = hash_sizes
 
@@ -294,7 +323,7 @@ class AlgorithmSpecifyParameters:
         特征交互层惩罚项系数(AutoGroup需要提供此参数)。
 
         :param hash_compensation: The hash_compensation of this AlgorithmSpecifyParameters.
-        :type: list[float]
+        :type hash_compensation: list[float]
         """
         self._hash_compensation = hash_compensation
 
@@ -316,7 +345,7 @@ class AlgorithmSpecifyParameters:
         使用线性部分(AutoGroup需要提供此参数)。
 
         :param use_wide_part: The use_wide_part of this AlgorithmSpecifyParameters.
-        :type: bool
+        :type use_wide_part: bool
         """
         self._use_wide_part = use_wide_part
 
@@ -326,7 +355,7 @@ class AlgorithmSpecifyParameters:
 
 
         :return: The structure_optimizer of this AlgorithmSpecifyParameters.
-        :rtype: Optimizer
+        :rtype: :class:`huaweicloudsdkres.v1.Optimizer`
         """
         return self._structure_optimizer
 
@@ -336,7 +365,7 @@ class AlgorithmSpecifyParameters:
 
 
         :param structure_optimizer: The structure_optimizer of this AlgorithmSpecifyParameters.
-        :type: Optimizer
+        :type structure_optimizer: :class:`huaweicloudsdkres.v1.Optimizer`
         """
         self._structure_optimizer = structure_optimizer
 
@@ -358,7 +387,7 @@ class AlgorithmSpecifyParameters:
         融合多值特征(AutoGroup需要提供此参数)。
 
         :param merge_multi_hot: The merge_multi_hot of this AlgorithmSpecifyParameters.
-        :type: bool
+        :type merge_multi_hot: bool
         """
         self._merge_multi_hot = merge_multi_hot
 
@@ -380,7 +409,7 @@ class AlgorithmSpecifyParameters:
         固定哈希结构(AutoGroup需要提供此参数)。
 
         :param fix_structure: The fix_structure of this AlgorithmSpecifyParameters.
-        :type: bool
+        :type fix_structure: bool
         """
         self._fix_structure = fix_structure
 

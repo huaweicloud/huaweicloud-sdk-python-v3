@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LogConfigs:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class LogConfigs:
     }
 
     def __init__(self, id=None, size=None, level=None, rotate_num=None, rotate_period=None, type=None, component=None):
-        """LogConfigs - a model defined in huaweicloud sdk"""
+        """LogConfigs
+
+        The model defined in huaweicloud sdk
+
+        :param id: 数据库保存的主键，不需要关注此字段。
+        :type id: str
+        :param size: 应用日志文件大小限制，单位MB，默认50，取值范围10-1000。
+        :type size: int
+        :param level: - 当type为LTS时，应用级日志可配置为On或Off；系统级日志可配置为Off/Error/Warning/Info/Debug； - 当type为local时，无需配置level。
+        :type level: str
+        :param rotate_num: 应用日志rotate个数，默认5，取值范围1-10。
+        :type rotate_num: int
+        :param rotate_period: 应用日志rotate周期，可选项： - daily - monthly - weekly - yearly
+        :type rotate_period: str
+        :param type: - LTS：将日志发送到AOM - local：本地日志
+        :type type: str
+        :param component: - app：部署到边缘节点上的应用的日志 - system：边缘节点上系统的日志
+        :type component: str
+        """
         
         
 
@@ -86,7 +103,7 @@ class LogConfigs:
         数据库保存的主键，不需要关注此字段。
 
         :param id: The id of this LogConfigs.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -108,7 +125,7 @@ class LogConfigs:
         应用日志文件大小限制，单位MB，默认50，取值范围10-1000。
 
         :param size: The size of this LogConfigs.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -130,7 +147,7 @@ class LogConfigs:
         - 当type为LTS时，应用级日志可配置为On或Off；系统级日志可配置为Off/Error/Warning/Info/Debug； - 当type为local时，无需配置level。
 
         :param level: The level of this LogConfigs.
-        :type: str
+        :type level: str
         """
         self._level = level
 
@@ -152,7 +169,7 @@ class LogConfigs:
         应用日志rotate个数，默认5，取值范围1-10。
 
         :param rotate_num: The rotate_num of this LogConfigs.
-        :type: int
+        :type rotate_num: int
         """
         self._rotate_num = rotate_num
 
@@ -174,7 +191,7 @@ class LogConfigs:
         应用日志rotate周期，可选项： - daily - monthly - weekly - yearly
 
         :param rotate_period: The rotate_period of this LogConfigs.
-        :type: str
+        :type rotate_period: str
         """
         self._rotate_period = rotate_period
 
@@ -196,7 +213,7 @@ class LogConfigs:
         - LTS：将日志发送到AOM - local：本地日志
 
         :param type: The type of this LogConfigs.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -218,7 +235,7 @@ class LogConfigs:
         - app：部署到边缘节点上的应用的日志 - system：边缘节点上系统的日志
 
         :param component: The component of this LogConfigs.
-        :type: str
+        :type component: str
         """
         self._component = component
 

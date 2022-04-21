@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CheckNameResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CheckNameResponse(SdkResponse):
     }
 
     def __init__(self, result=None, status=None):
-        """CheckNameResponse - a model defined in huaweicloud sdk"""
+        """CheckNameResponse
+
+        The model defined in huaweicloud sdk
+
+        :param result: 返回值
+        :type result: bool
+        :param status: 状态
+        :type status: str
+        """
         
         super(CheckNameResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class CheckNameResponse(SdkResponse):
         返回值
 
         :param result: The result of this CheckNameResponse.
-        :type: bool
+        :type result: bool
         """
         self._result = result
 
@@ -85,7 +92,7 @@ class CheckNameResponse(SdkResponse):
         状态
 
         :param status: The status of this CheckNameResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 

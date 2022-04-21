@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowLogsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowLogsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, logs=None):
-        """ShowLogsResponse - a model defined in huaweicloud sdk"""
+        """ShowLogsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 总数。
+        :type total: int
+        :param logs: 日志列表数据
+        :type logs: list[:class:`huaweicloudsdkcdn.v1.LogObject`]
+        """
         
         super(ShowLogsResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ShowLogsResponse(SdkResponse):
         总数。
 
         :param total: The total of this ShowLogsResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -74,7 +81,7 @@ class ShowLogsResponse(SdkResponse):
         日志列表数据
 
         :return: The logs of this ShowLogsResponse.
-        :rtype: list[LogObject]
+        :rtype: list[:class:`huaweicloudsdkcdn.v1.LogObject`]
         """
         return self._logs
 
@@ -85,7 +92,7 @@ class ShowLogsResponse(SdkResponse):
         日志列表数据
 
         :param logs: The logs of this ShowLogsResponse.
-        :type: list[LogObject]
+        :type logs: list[:class:`huaweicloudsdkcdn.v1.LogObject`]
         """
         self._logs = logs
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LoginTokenAuth:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class LoginTokenAuth:
     }
 
     def __init__(self, securitytoken=None):
-        """LoginTokenAuth - a model defined in huaweicloud sdk"""
+        """LoginTokenAuth
+
+        The model defined in huaweicloud sdk
+
+        :param securitytoken: 
+        :type securitytoken: :class:`huaweicloudsdkiam.v3.LoginTokenSecurityToken`
+        """
         
         
 
@@ -45,7 +50,7 @@ class LoginTokenAuth:
 
 
         :return: The securitytoken of this LoginTokenAuth.
-        :rtype: LoginTokenSecurityToken
+        :rtype: :class:`huaweicloudsdkiam.v3.LoginTokenSecurityToken`
         """
         return self._securitytoken
 
@@ -55,7 +60,7 @@ class LoginTokenAuth:
 
 
         :param securitytoken: The securitytoken of this LoginTokenAuth.
-        :type: LoginTokenSecurityToken
+        :type securitytoken: :class:`huaweicloudsdkiam.v3.LoginTokenSecurityToken`
         """
         self._securitytoken = securitytoken
 

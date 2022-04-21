@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowServerRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowServerRequest:
     }
 
     def __init__(self, source_id=None):
-        """ShowServerRequest - a model defined in huaweicloud sdk"""
+        """ShowServerRequest
+
+        The model defined in huaweicloud sdk
+
+        :param source_id: 源端服务器在主机迁移服务中的id
+        :type source_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowServerRequest:
         源端服务器在主机迁移服务中的id
 
         :param source_id: The source_id of this ShowServerRequest.
-        :type: str
+        :type source_id: str
         """
         self._source_id = source_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Probe:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class Probe:
     }
 
     def __init__(self, _exec=None, http_get=None, initial_delay_seconds=None, timeout_seconds=None):
-        """Probe - a model defined in huaweicloud sdk"""
+        """Probe
+
+        The model defined in huaweicloud sdk
+
+        :param _exec: 
+        :type _exec: :class:`huaweicloudsdkief.v1.ProbeExec`
+        :param http_get: 
+        :type http_get: :class:`huaweicloudsdkief.v1.InstancesLivenessProbeHttpGet`
+        :param initial_delay_seconds: 表示从工作负载启动后从多久开始探测，大于0且不大于3600的整数，默认为10
+        :type initial_delay_seconds: int
+        :param timeout_seconds: 表示探测超时时间，大于0且不大于3600的整数，默认为1
+        :type timeout_seconds: int
+        """
         
         
 
@@ -61,7 +72,7 @@ class Probe:
 
 
         :return: The _exec of this Probe.
-        :rtype: ProbeExec
+        :rtype: :class:`huaweicloudsdkief.v1.ProbeExec`
         """
         return self.__exec
 
@@ -71,7 +82,7 @@ class Probe:
 
 
         :param _exec: The _exec of this Probe.
-        :type: ProbeExec
+        :type _exec: :class:`huaweicloudsdkief.v1.ProbeExec`
         """
         self.__exec = _exec
 
@@ -81,7 +92,7 @@ class Probe:
 
 
         :return: The http_get of this Probe.
-        :rtype: InstancesLivenessProbeHttpGet
+        :rtype: :class:`huaweicloudsdkief.v1.InstancesLivenessProbeHttpGet`
         """
         return self._http_get
 
@@ -91,7 +102,7 @@ class Probe:
 
 
         :param http_get: The http_get of this Probe.
-        :type: InstancesLivenessProbeHttpGet
+        :type http_get: :class:`huaweicloudsdkief.v1.InstancesLivenessProbeHttpGet`
         """
         self._http_get = http_get
 
@@ -113,7 +124,7 @@ class Probe:
         表示从工作负载启动后从多久开始探测，大于0且不大于3600的整数，默认为10
 
         :param initial_delay_seconds: The initial_delay_seconds of this Probe.
-        :type: int
+        :type initial_delay_seconds: int
         """
         self._initial_delay_seconds = initial_delay_seconds
 
@@ -135,7 +146,7 @@ class Probe:
         表示探测超时时间，大于0且不大于3600的整数，默认为1
 
         :param timeout_seconds: The timeout_seconds of this Probe.
-        :type: int
+        :type timeout_seconds: int
         """
         self._timeout_seconds = timeout_seconds
 

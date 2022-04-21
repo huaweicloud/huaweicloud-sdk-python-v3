@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateVpcPeeringOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateVpcPeeringOption:
     }
 
     def __init__(self, name=None, request_vpc_info=None, accept_vpc_info=None):
-        """CreateVpcPeeringOption - a model defined in huaweicloud sdk"""
+        """CreateVpcPeeringOption
+
+        The model defined in huaweicloud sdk
+
+        :param name: 功能说明：对等连接名称 取值范围：支持1~64个字符
+        :type name: str
+        :param request_vpc_info: 
+        :type request_vpc_info: :class:`huaweicloudsdkvpc.v2.VpcInfo`
+        :param accept_vpc_info: 
+        :type accept_vpc_info: :class:`huaweicloudsdkvpc.v2.VpcInfo`
+        """
         
         
 
@@ -65,7 +74,7 @@ class CreateVpcPeeringOption:
         功能说明：对等连接名称 取值范围：支持1~64个字符
 
         :param name: The name of this CreateVpcPeeringOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -75,7 +84,7 @@ class CreateVpcPeeringOption:
 
 
         :return: The request_vpc_info of this CreateVpcPeeringOption.
-        :rtype: VpcInfo
+        :rtype: :class:`huaweicloudsdkvpc.v2.VpcInfo`
         """
         return self._request_vpc_info
 
@@ -85,7 +94,7 @@ class CreateVpcPeeringOption:
 
 
         :param request_vpc_info: The request_vpc_info of this CreateVpcPeeringOption.
-        :type: VpcInfo
+        :type request_vpc_info: :class:`huaweicloudsdkvpc.v2.VpcInfo`
         """
         self._request_vpc_info = request_vpc_info
 
@@ -95,7 +104,7 @@ class CreateVpcPeeringOption:
 
 
         :return: The accept_vpc_info of this CreateVpcPeeringOption.
-        :rtype: VpcInfo
+        :rtype: :class:`huaweicloudsdkvpc.v2.VpcInfo`
         """
         return self._accept_vpc_info
 
@@ -105,7 +114,7 @@ class CreateVpcPeeringOption:
 
 
         :param accept_vpc_info: The accept_vpc_info of this CreateVpcPeeringOption.
-        :type: VpcInfo
+        :type accept_vpc_info: :class:`huaweicloudsdkvpc.v2.VpcInfo`
         """
         self._accept_vpc_info = accept_vpc_info
 

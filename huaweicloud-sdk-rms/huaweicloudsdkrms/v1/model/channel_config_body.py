@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ChannelConfigBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ChannelConfigBody:
     }
 
     def __init__(self, smn=None, obs=None):
-        """ChannelConfigBody - a model defined in huaweicloud sdk"""
+        """ChannelConfigBody
+
+        The model defined in huaweicloud sdk
+
+        :param smn: 
+        :type smn: :class:`huaweicloudsdkrms.v1.TrackerSMNChannelConfigBody`
+        :param obs: 
+        :type obs: :class:`huaweicloudsdkrms.v1.TrackerOBSChannelConfigBody`
+        """
         
         
 
@@ -51,7 +58,7 @@ class ChannelConfigBody:
 
 
         :return: The smn of this ChannelConfigBody.
-        :rtype: TrackerSMNChannelConfigBody
+        :rtype: :class:`huaweicloudsdkrms.v1.TrackerSMNChannelConfigBody`
         """
         return self._smn
 
@@ -61,7 +68,7 @@ class ChannelConfigBody:
 
 
         :param smn: The smn of this ChannelConfigBody.
-        :type: TrackerSMNChannelConfigBody
+        :type smn: :class:`huaweicloudsdkrms.v1.TrackerSMNChannelConfigBody`
         """
         self._smn = smn
 
@@ -71,7 +78,7 @@ class ChannelConfigBody:
 
 
         :return: The obs of this ChannelConfigBody.
-        :rtype: TrackerOBSChannelConfigBody
+        :rtype: :class:`huaweicloudsdkrms.v1.TrackerOBSChannelConfigBody`
         """
         return self._obs
 
@@ -81,7 +88,7 @@ class ChannelConfigBody:
 
 
         :param obs: The obs of this ChannelConfigBody.
-        :type: TrackerOBSChannelConfigBody
+        :type obs: :class:`huaweicloudsdkrms.v1.TrackerOBSChannelConfigBody`
         """
         self._obs = obs
 

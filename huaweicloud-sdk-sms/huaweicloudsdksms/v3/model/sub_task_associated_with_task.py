@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SubTaskAssociatedWithTask:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class SubTaskAssociatedWithTask:
     }
 
     def __init__(self, id=None, name=None, progress=None, start_date=None, end_date=None, process_trace=None):
-        """SubTaskAssociatedWithTask - a model defined in huaweicloud sdk"""
+        """SubTaskAssociatedWithTask
+
+        The model defined in huaweicloud sdk
+
+        :param id: 子任务id
+        :type id: int
+        :param name: 子任务名称
+        :type name: str
+        :param progress: 子任务的进度，取值为0-100之间的整数
+        :type progress: int
+        :param start_date: 子任务开始时间
+        :type start_date: int
+        :param end_date: 子任务结束时间（如果子任务还没有结束，则为空）
+        :type end_date: int
+        :param process_trace: 迁移或同步时，具体的迁移详情
+        :type process_trace: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class SubTaskAssociatedWithTask:
         子任务id
 
         :param id: The id of this SubTaskAssociatedWithTask.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -105,7 +120,7 @@ class SubTaskAssociatedWithTask:
         子任务名称
 
         :param name: The name of this SubTaskAssociatedWithTask.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -127,7 +142,7 @@ class SubTaskAssociatedWithTask:
         子任务的进度，取值为0-100之间的整数
 
         :param progress: The progress of this SubTaskAssociatedWithTask.
-        :type: int
+        :type progress: int
         """
         self._progress = progress
 
@@ -149,7 +164,7 @@ class SubTaskAssociatedWithTask:
         子任务开始时间
 
         :param start_date: The start_date of this SubTaskAssociatedWithTask.
-        :type: int
+        :type start_date: int
         """
         self._start_date = start_date
 
@@ -171,7 +186,7 @@ class SubTaskAssociatedWithTask:
         子任务结束时间（如果子任务还没有结束，则为空）
 
         :param end_date: The end_date of this SubTaskAssociatedWithTask.
-        :type: int
+        :type end_date: int
         """
         self._end_date = end_date
 
@@ -193,7 +208,7 @@ class SubTaskAssociatedWithTask:
         迁移或同步时，具体的迁移详情
 
         :param process_trace: The process_trace of this SubTaskAssociatedWithTask.
-        :type: str
+        :type process_trace: str
         """
         self._process_trace = process_trace
 

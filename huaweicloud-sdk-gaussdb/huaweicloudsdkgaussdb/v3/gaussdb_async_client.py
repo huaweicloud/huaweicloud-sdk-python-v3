@@ -52,21 +52,17 @@ class GaussDBAsyncClient(Client):
         """批量添加或删除标签
 
         批量添加或删除指定实例的标签。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchTagActionRequest request
-        :return: BatchTagActionResponse
+        :param request: Request instance for BatchTagAction
+        :type request: :class:`huaweicloudsdkgaussdb.v3.BatchTagActionRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.BatchTagActionResponse`
         """
         return self.batch_tag_action_with_http_info(request)
 
     def batch_tag_action_with_http_info(self, request):
-        """批量添加或删除标签
-
-        批量添加或删除指定实例的标签。
-
-        :param BatchTagActionRequest request
-        :return: BatchTagActionResponse
-        """
-
         all_params = ['instance_id', 'batch_operate_instance_tag_request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -114,26 +110,21 @@ class GaussDBAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def change_gauss_my_sql_instance_specification_async(self, request):
         """变更实例规格
 
         变更数据库实例的规格。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ChangeGaussMySqlInstanceSpecificationRequest request
-        :return: ChangeGaussMySqlInstanceSpecificationResponse
+        :param request: Request instance for ChangeGaussMySqlInstanceSpecification
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ChangeGaussMySqlInstanceSpecificationRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ChangeGaussMySqlInstanceSpecificationResponse`
         """
         return self.change_gauss_my_sql_instance_specification_with_http_info(request)
 
     def change_gauss_my_sql_instance_specification_with_http_info(self, request):
-        """变更实例规格
-
-        变更数据库实例的规格。
-
-        :param ChangeGaussMySqlInstanceSpecificationRequest request
-        :return: ChangeGaussMySqlInstanceSpecificationResponse
-        """
-
         all_params = ['instance_id', 'mysql_change_specification_request', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -181,26 +172,21 @@ class GaussDBAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_gauss_my_sql_backup_async(self, request):
         """创建手动备份
 
         创建手动备份
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateGaussMySqlBackupRequest request
-        :return: CreateGaussMySqlBackupResponse
+        :param request: Request instance for CreateGaussMySqlBackup
+        :type request: :class:`huaweicloudsdkgaussdb.v3.CreateGaussMySqlBackupRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.CreateGaussMySqlBackupResponse`
         """
         return self.create_gauss_my_sql_backup_with_http_info(request)
 
     def create_gauss_my_sql_backup_with_http_info(self, request):
-        """创建手动备份
-
-        创建手动备份
-
-        :param CreateGaussMySqlBackupRequest request
-        :return: CreateGaussMySqlBackupResponse
-        """
-
         all_params = ['mysql_create_backup_request', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -246,26 +232,21 @@ class GaussDBAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_gauss_my_sql_instance_async(self, request):
         """创建数据库实例
 
         创建云数据库 GaussDB(for MySQL)实例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateGaussMySqlInstanceRequest request
-        :return: CreateGaussMySqlInstanceResponse
+        :param request: Request instance for CreateGaussMySqlInstance
+        :type request: :class:`huaweicloudsdkgaussdb.v3.CreateGaussMySqlInstanceRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.CreateGaussMySqlInstanceResponse`
         """
         return self.create_gauss_my_sql_instance_with_http_info(request)
 
     def create_gauss_my_sql_instance_with_http_info(self, request):
-        """创建数据库实例
-
-        创建云数据库 GaussDB(for MySQL)实例。
-
-        :param CreateGaussMySqlInstanceRequest request
-        :return: CreateGaussMySqlInstanceResponse
-        """
-
         all_params = ['create_instance_request', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -311,26 +292,21 @@ class GaussDBAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_gauss_my_sql_proxy_async(self, request):
         """开启数据库代理
 
         开启数据库代理，只支持ELB模式。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateGaussMySqlProxyRequest request
-        :return: CreateGaussMySqlProxyResponse
+        :param request: Request instance for CreateGaussMySqlProxy
+        :type request: :class:`huaweicloudsdkgaussdb.v3.CreateGaussMySqlProxyRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.CreateGaussMySqlProxyResponse`
         """
         return self.create_gauss_my_sql_proxy_with_http_info(request)
 
     def create_gauss_my_sql_proxy_with_http_info(self, request):
-        """开启数据库代理
-
-        开启数据库代理，只支持ELB模式。
-
-        :param CreateGaussMySqlProxyRequest request
-        :return: CreateGaussMySqlProxyResponse
-        """
-
         all_params = ['instance_id', 'x_language', 'create_mysql_proxy_request']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -378,26 +354,21 @@ class GaussDBAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_gauss_my_sql_readonly_node_async(self, request):
         """创建只读节点
 
         创建只读节点。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateGaussMySqlReadonlyNodeRequest request
-        :return: CreateGaussMySqlReadonlyNodeResponse
+        :param request: Request instance for CreateGaussMySqlReadonlyNode
+        :type request: :class:`huaweicloudsdkgaussdb.v3.CreateGaussMySqlReadonlyNodeRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.CreateGaussMySqlReadonlyNodeResponse`
         """
         return self.create_gauss_my_sql_readonly_node_with_http_info(request)
 
     def create_gauss_my_sql_readonly_node_with_http_info(self, request):
-        """创建只读节点
-
-        创建只读节点。
-
-        :param CreateGaussMySqlReadonlyNodeRequest request
-        :return: CreateGaussMySqlReadonlyNodeResponse
-        """
-
         all_params = ['instance_id', 'mysql_create_readonly_node_request', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -445,26 +416,21 @@ class GaussDBAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_gauss_my_sql_instance_async(self, request):
         """删除实例
 
         删除数据库实例，不支持删除包周期实例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteGaussMySqlInstanceRequest request
-        :return: DeleteGaussMySqlInstanceResponse
+        :param request: Request instance for DeleteGaussMySqlInstance
+        :type request: :class:`huaweicloudsdkgaussdb.v3.DeleteGaussMySqlInstanceRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.DeleteGaussMySqlInstanceResponse`
         """
         return self.delete_gauss_my_sql_instance_with_http_info(request)
 
     def delete_gauss_my_sql_instance_with_http_info(self, request):
-        """删除实例
-
-        删除数据库实例，不支持删除包周期实例。
-
-        :param DeleteGaussMySqlInstanceRequest request
-        :return: DeleteGaussMySqlInstanceResponse
-        """
-
         all_params = ['instance_id', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -510,26 +476,21 @@ class GaussDBAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_gauss_my_sql_proxy_async(self, request):
         """关闭数据库代理
 
         关闭数据库代理。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteGaussMySqlProxyRequest request
-        :return: DeleteGaussMySqlProxyResponse
+        :param request: Request instance for DeleteGaussMySqlProxy
+        :type request: :class:`huaweicloudsdkgaussdb.v3.DeleteGaussMySqlProxyRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.DeleteGaussMySqlProxyResponse`
         """
         return self.delete_gauss_my_sql_proxy_with_http_info(request)
 
     def delete_gauss_my_sql_proxy_with_http_info(self, request):
-        """关闭数据库代理
-
-        关闭数据库代理。
-
-        :param DeleteGaussMySqlProxyRequest request
-        :return: DeleteGaussMySqlProxyResponse
-        """
-
         all_params = ['instance_id', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -575,26 +536,21 @@ class GaussDBAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_gauss_my_sql_readonly_node_async(self, request):
         """删除只读节点
 
         删除实例的只读节点。多可用区模式删除只读节点时，要保证删除后，剩余的只读节点和主节点在不同的可用区中，否则无法删除该只读节点。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteGaussMySqlReadonlyNodeRequest request
-        :return: DeleteGaussMySqlReadonlyNodeResponse
+        :param request: Request instance for DeleteGaussMySqlReadonlyNode
+        :type request: :class:`huaweicloudsdkgaussdb.v3.DeleteGaussMySqlReadonlyNodeRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.DeleteGaussMySqlReadonlyNodeResponse`
         """
         return self.delete_gauss_my_sql_readonly_node_with_http_info(request)
 
     def delete_gauss_my_sql_readonly_node_with_http_info(self, request):
-        """删除只读节点
-
-        删除实例的只读节点。多可用区模式删除只读节点时，要保证删除后，剩余的只读节点和主节点在不同的可用区中，否则无法删除该只读节点。
-
-        :param DeleteGaussMySqlReadonlyNodeRequest request
-        :return: DeleteGaussMySqlReadonlyNodeResponse
-        """
-
         all_params = ['instance_id', 'node_id', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -642,26 +598,21 @@ class GaussDBAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def expand_gauss_my_sql_instance_volume_async(self, request):
         """包周期存储扩容
 
         包周期存储扩容
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ExpandGaussMySqlInstanceVolumeRequest request
-        :return: ExpandGaussMySqlInstanceVolumeResponse
+        :param request: Request instance for ExpandGaussMySqlInstanceVolume
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ExpandGaussMySqlInstanceVolumeRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ExpandGaussMySqlInstanceVolumeResponse`
         """
         return self.expand_gauss_my_sql_instance_volume_with_http_info(request)
 
     def expand_gauss_my_sql_instance_volume_with_http_info(self, request):
-        """包周期存储扩容
-
-        包周期存储扩容
-
-        :param ExpandGaussMySqlInstanceVolumeRequest request
-        :return: ExpandGaussMySqlInstanceVolumeResponse
-        """
-
         all_params = ['instance_id', 'mysql_extend_instance_volume_request', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -709,26 +660,22 @@ class GaussDBAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def expand_gauss_my_sql_proxy_async(self, request):
         """扩容数据库代理节点的数量
 
-        扩容数据库代理节点的数量。 DeC专属云账号暂不支持数据库代理。
+        扩容数据库代理节点的数量。
+        DeC专属云账号暂不支持数据库代理。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ExpandGaussMySqlProxyRequest request
-        :return: ExpandGaussMySqlProxyResponse
+        :param request: Request instance for ExpandGaussMySqlProxy
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ExpandGaussMySqlProxyRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ExpandGaussMySqlProxyResponse`
         """
         return self.expand_gauss_my_sql_proxy_with_http_info(request)
 
     def expand_gauss_my_sql_proxy_with_http_info(self, request):
-        """扩容数据库代理节点的数量
-
-        扩容数据库代理节点的数量。 DeC专属云账号暂不支持数据库代理。
-
-        :param ExpandGaussMySqlProxyRequest request
-        :return: ExpandGaussMySqlProxyResponse
-        """
-
         all_params = ['instance_id', 'enlarge_proxy_request', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -776,26 +723,21 @@ class GaussDBAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_gauss_my_sql_configurations_async(self, request):
         """查询参数模板
 
         获取参数模板列表，包括所有数据库的默认参数模板和用户创建的参数模板。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListGaussMySqlConfigurationsRequest request
-        :return: ListGaussMySqlConfigurationsResponse
+        :param request: Request instance for ListGaussMySqlConfigurations
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlConfigurationsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlConfigurationsResponse`
         """
         return self.list_gauss_my_sql_configurations_with_http_info(request)
 
     def list_gauss_my_sql_configurations_with_http_info(self, request):
-        """查询参数模板
-
-        获取参数模板列表，包括所有数据库的默认参数模板和用户创建的参数模板。
-
-        :param ListGaussMySqlConfigurationsRequest request
-        :return: ListGaussMySqlConfigurationsResponse
-        """
-
         all_params = ['x_language', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -843,26 +785,21 @@ class GaussDBAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_gauss_my_sql_dedicated_resources_async(self, request):
         """查询专属资源池列表
 
         获取专属资源池列表，包括用户开通的所有专属资源池信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListGaussMySqlDedicatedResourcesRequest request
-        :return: ListGaussMySqlDedicatedResourcesResponse
+        :param request: Request instance for ListGaussMySqlDedicatedResources
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlDedicatedResourcesRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlDedicatedResourcesResponse`
         """
         return self.list_gauss_my_sql_dedicated_resources_with_http_info(request)
 
     def list_gauss_my_sql_dedicated_resources_with_http_info(self, request):
-        """查询专属资源池列表
-
-        获取专属资源池列表，包括用户开通的所有专属资源池信息。
-
-        :param ListGaussMySqlDedicatedResourcesRequest request
-        :return: ListGaussMySqlDedicatedResourcesResponse
-        """
-
         all_params = ['x_language', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -910,26 +847,21 @@ class GaussDBAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_gauss_my_sql_error_log_async(self, request):
         """查询数据库错误日志
 
         查询数据库错误日志。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListGaussMySqlErrorLogRequest request
-        :return: ListGaussMySqlErrorLogResponse
+        :param request: Request instance for ListGaussMySqlErrorLog
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlErrorLogRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlErrorLogResponse`
         """
         return self.list_gauss_my_sql_error_log_with_http_info(request)
 
     def list_gauss_my_sql_error_log_with_http_info(self, request):
-        """查询数据库错误日志
-
-        查询数据库错误日志。
-
-        :param ListGaussMySqlErrorLogRequest request
-        :return: ListGaussMySqlErrorLogResponse
-        """
-
         all_params = ['instance_id', 'start_date', 'end_date', 'x_language', 'offset', 'limit', 'level', 'node_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -987,26 +919,21 @@ class GaussDBAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_gauss_my_sql_instances_async(self, request):
         """查询实例列表
 
         根据指定条件查询实例列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListGaussMySqlInstancesRequest request
-        :return: ListGaussMySqlInstancesResponse
+        :param request: Request instance for ListGaussMySqlInstances
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlInstancesRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlInstancesResponse`
         """
         return self.list_gauss_my_sql_instances_with_http_info(request)
 
     def list_gauss_my_sql_instances_with_http_info(self, request):
-        """查询实例列表
-
-        根据指定条件查询实例列表。
-
-        :param ListGaussMySqlInstancesRequest request
-        :return: ListGaussMySqlInstancesResponse
-        """
-
         all_params = ['x_language', 'id', 'name', 'type', 'datastore_type', 'vpc_id', 'subnet_id', 'private_ip', 'offset', 'limit', 'tags']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1070,26 +997,21 @@ class GaussDBAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_gauss_my_sql_slow_log_async(self, request):
         """查询数据库慢日志
 
         查询数据库慢日志
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListGaussMySqlSlowLogRequest request
-        :return: ListGaussMySqlSlowLogResponse
+        :param request: Request instance for ListGaussMySqlSlowLog
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlSlowLogRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlSlowLogResponse`
         """
         return self.list_gauss_my_sql_slow_log_with_http_info(request)
 
     def list_gauss_my_sql_slow_log_with_http_info(self, request):
-        """查询数据库慢日志
-
-        查询数据库慢日志
-
-        :param ListGaussMySqlSlowLogRequest request
-        :return: ListGaussMySqlSlowLogResponse
-        """
-
         all_params = ['instance_id', 'start_date', 'end_date', 'node_id', 'x_language', 'offset', 'limit', 'type']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1147,26 +1069,21 @@ class GaussDBAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_instance_tags_async(self, request):
         """查询资源标签
 
         查询指定实例的标签信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListInstanceTagsRequest request
-        :return: ListInstanceTagsResponse
+        :param request: Request instance for ListInstanceTags
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ListInstanceTagsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ListInstanceTagsResponse`
         """
         return self.list_instance_tags_with_http_info(request)
 
     def list_instance_tags_with_http_info(self, request):
-        """查询资源标签
-
-        查询指定实例的标签信息。
-
-        :param ListInstanceTagsRequest request
-        :return: ListInstanceTagsResponse
-        """
-
         all_params = ['instance_id', 'x_language', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1216,26 +1133,21 @@ class GaussDBAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_project_tags_async(self, request):
         """查询项目标签
 
         查询指定project ID下实例的所有标签集合。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListProjectTagsRequest request
-        :return: ListProjectTagsResponse
+        :param request: Request instance for ListProjectTags
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ListProjectTagsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ListProjectTagsResponse`
         """
         return self.list_project_tags_with_http_info(request)
 
     def list_project_tags_with_http_info(self, request):
-        """查询项目标签
-
-        查询指定project ID下实例的所有标签集合。
-
-        :param ListProjectTagsRequest request
-        :return: ListProjectTagsResponse
-        """
-
         all_params = ['x_language', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1283,26 +1195,21 @@ class GaussDBAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def reset_gauss_my_sql_password_async(self, request):
         """重置数据库密码
 
         重置数据库密码
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ResetGaussMySqlPasswordRequest request
-        :return: ResetGaussMySqlPasswordResponse
+        :param request: Request instance for ResetGaussMySqlPassword
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ResetGaussMySqlPasswordRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ResetGaussMySqlPasswordResponse`
         """
         return self.reset_gauss_my_sql_password_with_http_info(request)
 
     def reset_gauss_my_sql_password_with_http_info(self, request):
-        """重置数据库密码
-
-        重置数据库密码
-
-        :param ResetGaussMySqlPasswordRequest request
-        :return: ResetGaussMySqlPasswordResponse
-        """
-
         all_params = ['instance_id', 'mysql_reset_password_request', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1350,26 +1257,21 @@ class GaussDBAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def set_gauss_my_sql_quotas_async(self, request):
         """设置租户基于企业项目的资源配额
 
         设置指定企业项目的资源配额。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param SetGaussMySqlQuotasRequest request
-        :return: SetGaussMySqlQuotasResponse
+        :param request: Request instance for SetGaussMySqlQuotas
+        :type request: :class:`huaweicloudsdkgaussdb.v3.SetGaussMySqlQuotasRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.SetGaussMySqlQuotasResponse`
         """
         return self.set_gauss_my_sql_quotas_with_http_info(request)
 
     def set_gauss_my_sql_quotas_with_http_info(self, request):
-        """设置租户基于企业项目的资源配额
-
-        设置指定企业项目的资源配额。
-
-        :param SetGaussMySqlQuotasRequest request
-        :return: SetGaussMySqlQuotasResponse
-        """
-
         all_params = ['x_language', 'set_quotas_request']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1415,26 +1317,21 @@ class GaussDBAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_audit_log_async(self, request):
         """查询审计日志开关状态
 
         查询审计日志开关状态
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowAuditLogRequest request
-        :return: ShowAuditLogResponse
+        :param request: Request instance for ShowAuditLog
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowAuditLogRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowAuditLogResponse`
         """
         return self.show_audit_log_with_http_info(request)
 
     def show_audit_log_with_http_info(self, request):
-        """查询审计日志开关状态
-
-        查询审计日志开关状态
-
-        :param ShowAuditLogRequest request
-        :return: ShowAuditLogResponse
-        """
-
         all_params = ['instance_id', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1480,26 +1377,21 @@ class GaussDBAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_gauss_my_sql_backup_list_async(self, request):
         """查询备份列表
 
         查询备份列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowGaussMySqlBackupListRequest request
-        :return: ShowGaussMySqlBackupListResponse
+        :param request: Request instance for ShowGaussMySqlBackupList
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlBackupListRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlBackupListResponse`
         """
         return self.show_gauss_my_sql_backup_list_with_http_info(request)
 
     def show_gauss_my_sql_backup_list_with_http_info(self, request):
-        """查询备份列表
-
-        查询备份列表
-
-        :param ShowGaussMySqlBackupListRequest request
-        :return: ShowGaussMySqlBackupListResponse
-        """
-
         all_params = ['x_language', 'instance_id', 'backup_id', 'backup_type', 'offset', 'limit', 'begin_time', 'end_time']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1557,26 +1449,21 @@ class GaussDBAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_gauss_my_sql_backup_policy_async(self, request):
         """查询自动备份策略
 
         查询自动备份策略。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowGaussMySqlBackupPolicyRequest request
-        :return: ShowGaussMySqlBackupPolicyResponse
+        :param request: Request instance for ShowGaussMySqlBackupPolicy
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlBackupPolicyRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlBackupPolicyResponse`
         """
         return self.show_gauss_my_sql_backup_policy_with_http_info(request)
 
     def show_gauss_my_sql_backup_policy_with_http_info(self, request):
-        """查询自动备份策略
-
-        查询自动备份策略。
-
-        :param ShowGaussMySqlBackupPolicyRequest request
-        :return: ShowGaussMySqlBackupPolicyResponse
-        """
-
         all_params = ['instance_id', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1622,26 +1509,21 @@ class GaussDBAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_gauss_my_sql_engine_version_async(self, request):
         """查询数据库引擎的版本
 
         获取指定数据库引擎对应的数据库版本信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowGaussMySqlEngineVersionRequest request
-        :return: ShowGaussMySqlEngineVersionResponse
+        :param request: Request instance for ShowGaussMySqlEngineVersion
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlEngineVersionRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlEngineVersionResponse`
         """
         return self.show_gauss_my_sql_engine_version_with_http_info(request)
 
     def show_gauss_my_sql_engine_version_with_http_info(self, request):
-        """查询数据库引擎的版本
-
-        获取指定数据库引擎对应的数据库版本信息。
-
-        :param ShowGaussMySqlEngineVersionRequest request
-        :return: ShowGaussMySqlEngineVersionResponse
-        """
-
         all_params = ['database_name', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1687,26 +1569,21 @@ class GaussDBAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_gauss_my_sql_flavors_async(self, request):
         """查询数据库规格
 
         获取指定数据库引擎版本对应的规格信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowGaussMySqlFlavorsRequest request
-        :return: ShowGaussMySqlFlavorsResponse
+        :param request: Request instance for ShowGaussMySqlFlavors
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlFlavorsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlFlavorsResponse`
         """
         return self.show_gauss_my_sql_flavors_with_http_info(request)
 
     def show_gauss_my_sql_flavors_with_http_info(self, request):
-        """查询数据库规格
-
-        获取指定数据库引擎版本对应的规格信息。
-
-        :param ShowGaussMySqlFlavorsRequest request
-        :return: ShowGaussMySqlFlavorsResponse
-        """
-
         all_params = ['database_name', 'availability_zone_mode', 'x_language', 'version_name', 'spec_code']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1758,26 +1635,21 @@ class GaussDBAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_gauss_my_sql_instance_info_async(self, request):
         """查询实例详情信息
 
         查询实例详情信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowGaussMySqlInstanceInfoRequest request
-        :return: ShowGaussMySqlInstanceInfoResponse
+        :param request: Request instance for ShowGaussMySqlInstanceInfo
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlInstanceInfoRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlInstanceInfoResponse`
         """
         return self.show_gauss_my_sql_instance_info_with_http_info(request)
 
     def show_gauss_my_sql_instance_info_with_http_info(self, request):
-        """查询实例详情信息
-
-        查询实例详情信息
-
-        :param ShowGaussMySqlInstanceInfoRequest request
-        :return: ShowGaussMySqlInstanceInfoResponse
-        """
-
         all_params = ['instance_id', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1823,26 +1695,21 @@ class GaussDBAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_gauss_my_sql_job_info_async(self, request):
         """获取指定ID的任务信息
 
         获取指定ID的任务信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowGaussMySqlJobInfoRequest request
-        :return: ShowGaussMySqlJobInfoResponse
+        :param request: Request instance for ShowGaussMySqlJobInfo
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlJobInfoRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlJobInfoResponse`
         """
         return self.show_gauss_my_sql_job_info_with_http_info(request)
 
     def show_gauss_my_sql_job_info_with_http_info(self, request):
-        """获取指定ID的任务信息
-
-        获取指定ID的任务信息。
-
-        :param ShowGaussMySqlJobInfoRequest request
-        :return: ShowGaussMySqlJobInfoResponse
-        """
-
         all_params = ['id', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1888,26 +1755,21 @@ class GaussDBAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_gauss_my_sql_project_quotas_async(self, request):
         """查询租户的实例配额
 
         获取指定租户的资源配额。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowGaussMySqlProjectQuotasRequest request
-        :return: ShowGaussMySqlProjectQuotasResponse
+        :param request: Request instance for ShowGaussMySqlProjectQuotas
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlProjectQuotasRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlProjectQuotasResponse`
         """
         return self.show_gauss_my_sql_project_quotas_with_http_info(request)
 
     def show_gauss_my_sql_project_quotas_with_http_info(self, request):
-        """查询租户的实例配额
-
-        获取指定租户的资源配额。
-
-        :param ShowGaussMySqlProjectQuotasRequest request
-        :return: ShowGaussMySqlProjectQuotasResponse
-        """
-
         all_params = ['x_language', 'type']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1953,26 +1815,21 @@ class GaussDBAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_gauss_my_sql_proxy_async(self, request):
         """查询数据库代理信息
 
         查询数据库代理信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowGaussMySqlProxyRequest request
-        :return: ShowGaussMySqlProxyResponse
+        :param request: Request instance for ShowGaussMySqlProxy
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlProxyRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlProxyResponse`
         """
         return self.show_gauss_my_sql_proxy_with_http_info(request)
 
     def show_gauss_my_sql_proxy_with_http_info(self, request):
-        """查询数据库代理信息
-
-        查询数据库代理信息。
-
-        :param ShowGaussMySqlProxyRequest request
-        :return: ShowGaussMySqlProxyResponse
-        """
-
         all_params = ['instance_id', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2018,26 +1875,21 @@ class GaussDBAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_gauss_my_sql_proxy_flavors_async(self, request):
         """查询数据库代理规格信息
 
         查询数据库代理规格信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowGaussMySqlProxyFlavorsRequest request
-        :return: ShowGaussMySqlProxyFlavorsResponse
+        :param request: Request instance for ShowGaussMySqlProxyFlavors
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlProxyFlavorsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlProxyFlavorsResponse`
         """
         return self.show_gauss_my_sql_proxy_flavors_with_http_info(request)
 
     def show_gauss_my_sql_proxy_flavors_with_http_info(self, request):
-        """查询数据库代理规格信息
-
-        查询数据库代理规格信息。
-
-        :param ShowGaussMySqlProxyFlavorsRequest request
-        :return: ShowGaussMySqlProxyFlavorsResponse
-        """
-
         all_params = ['instance_id', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2083,26 +1935,21 @@ class GaussDBAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_gauss_my_sql_quotas_async(self, request):
         """查询租户基于企业项目的资源配额
 
         获取指定企业项目的资源配额。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowGaussMySqlQuotasRequest request
-        :return: ShowGaussMySqlQuotasResponse
+        :param request: Request instance for ShowGaussMySqlQuotas
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlQuotasRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlQuotasResponse`
         """
         return self.show_gauss_my_sql_quotas_with_http_info(request)
 
     def show_gauss_my_sql_quotas_with_http_info(self, request):
-        """查询租户基于企业项目的资源配额
-
-        获取指定企业项目的资源配额。
-
-        :param ShowGaussMySqlQuotasRequest request
-        :return: ShowGaussMySqlQuotasResponse
-        """
-
         all_params = ['x_language', 'offset', 'limit', 'enterprise_project_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2152,26 +1999,21 @@ class GaussDBAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_instance_monitor_extend_async(self, request):
         """查询实例秒级监控频率
 
         查询实例秒级监控频率。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowInstanceMonitorExtendRequest request
-        :return: ShowInstanceMonitorExtendResponse
+        :param request: Request instance for ShowInstanceMonitorExtend
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowInstanceMonitorExtendRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowInstanceMonitorExtendResponse`
         """
         return self.show_instance_monitor_extend_with_http_info(request)
 
     def show_instance_monitor_extend_with_http_info(self, request):
-        """查询实例秒级监控频率
-
-        查询实例秒级监控频率。
-
-        :param ShowInstanceMonitorExtendRequest request
-        :return: ShowInstanceMonitorExtendResponse
-        """
-
         all_params = ['instance_id', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2217,26 +2059,21 @@ class GaussDBAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_audit_log_async(self, request):
         """开启或者关闭审计日志
 
         开启或者关闭审计日志
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateAuditLogRequest request
-        :return: UpdateAuditLogResponse
+        :param request: Request instance for UpdateAuditLog
+        :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateAuditLogRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateAuditLogResponse`
         """
         return self.update_audit_log_with_http_info(request)
 
     def update_audit_log_with_http_info(self, request):
-        """开启或者关闭审计日志
-
-        开启或者关闭审计日志
-
-        :param UpdateAuditLogRequest request
-        :return: UpdateAuditLogResponse
-        """
-
         all_params = ['instance_id', 'operate_audit_log_request_v3_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2284,26 +2121,21 @@ class GaussDBAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_gauss_my_sql_backup_policy_async(self, request):
         """修改备份策略
 
         修改备份策略
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateGaussMySqlBackupPolicyRequest request
-        :return: UpdateGaussMySqlBackupPolicyResponse
+        :param request: Request instance for UpdateGaussMySqlBackupPolicy
+        :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlBackupPolicyRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlBackupPolicyResponse`
         """
         return self.update_gauss_my_sql_backup_policy_with_http_info(request)
 
     def update_gauss_my_sql_backup_policy_with_http_info(self, request):
-        """修改备份策略
-
-        修改备份策略
-
-        :param UpdateGaussMySqlBackupPolicyRequest request
-        :return: UpdateGaussMySqlBackupPolicyResponse
-        """
-
         all_params = ['instance_id', 'mysql_update_backup_policy_request', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2351,26 +2183,21 @@ class GaussDBAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_gauss_my_sql_instance_name_async(self, request):
         """修改实例名称
 
         修改实例名称
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateGaussMySqlInstanceNameRequest request
-        :return: UpdateGaussMySqlInstanceNameResponse
+        :param request: Request instance for UpdateGaussMySqlInstanceName
+        :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlInstanceNameRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlInstanceNameResponse`
         """
         return self.update_gauss_my_sql_instance_name_with_http_info(request)
 
     def update_gauss_my_sql_instance_name_with_http_info(self, request):
-        """修改实例名称
-
-        修改实例名称
-
-        :param UpdateGaussMySqlInstanceNameRequest request
-        :return: UpdateGaussMySqlInstanceNameResponse
-        """
-
         all_params = ['instance_id', 'mysql_update_instance_name_request', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2418,26 +2245,21 @@ class GaussDBAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_gauss_my_sql_quotas_async(self, request):
         """修改租户基于企业项目的资源配额
 
         修改指定企业项目的资源配额。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateGaussMySqlQuotasRequest request
-        :return: UpdateGaussMySqlQuotasResponse
+        :param request: Request instance for UpdateGaussMySqlQuotas
+        :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlQuotasRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlQuotasResponse`
         """
         return self.update_gauss_my_sql_quotas_with_http_info(request)
 
     def update_gauss_my_sql_quotas_with_http_info(self, request):
-        """修改租户基于企业项目的资源配额
-
-        修改指定企业项目的资源配额。
-
-        :param UpdateGaussMySqlQuotasRequest request
-        :return: UpdateGaussMySqlQuotasResponse
-        """
-
         all_params = ['x_language', 'set_quotas_request']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2483,26 +2305,21 @@ class GaussDBAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_instance_monitor_async(self, request):
         """修改实例秒级监控频率
 
         打开/关闭/修改实例秒级监控。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateInstanceMonitorRequest request
-        :return: UpdateInstanceMonitorResponse
+        :param request: Request instance for UpdateInstanceMonitor
+        :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateInstanceMonitorRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateInstanceMonitorResponse`
         """
         return self.update_instance_monitor_with_http_info(request)
 
     def update_instance_monitor_with_http_info(self, request):
-        """修改实例秒级监控频率
-
-        打开/关闭/修改实例秒级监控。
-
-        :param UpdateInstanceMonitorRequest request
-        :return: UpdateInstanceMonitorResponse
-        """
-
         all_params = ['instance_id', 'taurus_modify_instance_monitor_request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2549,7 +2366,6 @@ class GaussDBAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

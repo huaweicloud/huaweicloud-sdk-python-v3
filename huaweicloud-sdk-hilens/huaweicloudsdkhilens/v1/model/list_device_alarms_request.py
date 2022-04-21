@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDeviceAlarmsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListDeviceAlarmsRequest:
     }
 
     def __init__(self, offset=None, limit=None, device_id=None):
-        """ListDeviceAlarmsRequest - a model defined in huaweicloud sdk"""
+        """ListDeviceAlarmsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param offset: 查询的起始位置，取值范围为非负整数，默认为0
+        :type offset: int
+        :param limit: 每页显示的条目数量，取值范围1~100，默认为100
+        :type limit: int
+        :param device_id: 设备ID
+        :type device_id: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class ListDeviceAlarmsRequest:
         查询的起始位置，取值范围为非负整数，默认为0
 
         :param offset: The offset of this ListDeviceAlarmsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -90,7 +99,7 @@ class ListDeviceAlarmsRequest:
         每页显示的条目数量，取值范围1~100，默认为100
 
         :param limit: The limit of this ListDeviceAlarmsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -112,7 +121,7 @@ class ListDeviceAlarmsRequest:
         设备ID
 
         :param device_id: The device_id of this ListDeviceAlarmsRequest.
-        :type: str
+        :type device_id: str
         """
         self._device_id = device_id
 

@@ -12,11 +12,9 @@ class VideoFormatVar:
     """
     allowed enum values
     """
-
     FLV = "FLV"
     HLS = "HLS"
     MP4 = "MP4"
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +32,11 @@ class VideoFormatVar:
     }
 
     def __init__(self):
-        """VideoFormatVar - a model defined in huaweicloud sdk"""
+        """VideoFormatVar
+
+        The model defined in huaweicloud sdk
+
+        """
         
         
         self.discriminator = None

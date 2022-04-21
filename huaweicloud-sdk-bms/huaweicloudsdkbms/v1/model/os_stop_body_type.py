@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OsStopBodyType:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class OsStopBodyType:
     }
 
     def __init__(self, type=None, servers=None):
-        """OsStopBodyType - a model defined in huaweicloud sdk"""
+        """OsStopBodyType
+
+        The model defined in huaweicloud sdk
+
+        :param type: 关机类型：SOFT：普通关机（默认）。HARD：强制关机。
+        :type type: str
+        :param servers: 裸金属服务器ID列表，详情请参见表3 servers字段数据结构说明。
+        :type servers: list[:class:`huaweicloudsdkbms.v1.ServersList`]
+        """
         
         
 
@@ -61,7 +68,7 @@ class OsStopBodyType:
         关机类型：SOFT：普通关机（默认）。HARD：强制关机。
 
         :param type: The type of this OsStopBodyType.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -72,7 +79,7 @@ class OsStopBodyType:
         裸金属服务器ID列表，详情请参见表3 servers字段数据结构说明。
 
         :return: The servers of this OsStopBodyType.
-        :rtype: list[ServersList]
+        :rtype: list[:class:`huaweicloudsdkbms.v1.ServersList`]
         """
         return self._servers
 
@@ -83,7 +90,7 @@ class OsStopBodyType:
         裸金属服务器ID列表，详情请参见表3 servers字段数据结构说明。
 
         :param servers: The servers of this OsStopBodyType.
-        :type: list[ServersList]
+        :type servers: list[:class:`huaweicloudsdkbms.v1.ServersList`]
         """
         self._servers = servers
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TriggerQpsDict:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class TriggerQpsDict:
     }
 
     def __init__(self, http_request_pos_id=None, http_packet_per_second=None):
-        """TriggerQpsDict - a model defined in huaweicloud sdk"""
+        """TriggerQpsDict
+
+        The model defined in huaweicloud sdk
+
+        :param http_request_pos_id: HTTP请求数分段ID
+        :type http_request_pos_id: int
+        :param http_packet_per_second: 每秒HTTP请求数（个/s）阈值
+        :type http_packet_per_second: int
+        """
         
         
 
@@ -61,7 +68,7 @@ class TriggerQpsDict:
         HTTP请求数分段ID
 
         :param http_request_pos_id: The http_request_pos_id of this TriggerQpsDict.
-        :type: int
+        :type http_request_pos_id: int
         """
         self._http_request_pos_id = http_request_pos_id
 
@@ -83,7 +90,7 @@ class TriggerQpsDict:
         每秒HTTP请求数（个/s）阈值
 
         :param http_packet_per_second: The http_packet_per_second of this TriggerQpsDict.
-        :type: int
+        :type http_packet_per_second: int
         """
         self._http_packet_per_second = http_packet_per_second
 

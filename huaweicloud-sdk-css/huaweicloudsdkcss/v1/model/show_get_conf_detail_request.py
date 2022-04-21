@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowGetConfDetailRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowGetConfDetailRequest:
     }
 
     def __init__(self, cluster_id=None, name=None):
-        """ShowGetConfDetailRequest - a model defined in huaweicloud sdk"""
+        """ShowGetConfDetailRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 指定查询集群ID。
+        :type cluster_id: str
+        :param name: 配置文件名称。
+        :type name: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ShowGetConfDetailRequest:
         指定查询集群ID。
 
         :param cluster_id: The cluster_id of this ShowGetConfDetailRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -83,7 +90,7 @@ class ShowGetConfDetailRequest:
         配置文件名称。
 
         :param name: The name of this ShowGetConfDetailRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 

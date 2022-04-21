@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ThailandIdcardConfidence:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -58,7 +57,41 @@ class ThailandIdcardConfidence:
     }
 
     def __init__(self, id_number=None, name_th=None, first_name_en=None, last_name_en=None, date_of_birth_th=None, date_of_birth_en=None, religion_th=None, address_th=None, date_of_issue_th=None, date_of_issue_en=None, date_of_expiry_th=None, date_of_expiry_en=None, serial_number=None, card_number=None, laser_number=None):
-        """ThailandIdcardConfidence - a model defined in huaweicloud sdk"""
+        """ThailandIdcardConfidence
+
+        The model defined in huaweicloud sdk
+
+        :param id_number: 身份证号置信度。 
+        :type id_number: float
+        :param name_th: 泰文名字置信度。 
+        :type name_th: float
+        :param first_name_en: 英文名字置信度。 
+        :type first_name_en: float
+        :param last_name_en: 英文姓氏置信度。 
+        :type last_name_en: float
+        :param date_of_birth_th: 泰文出生日期置信度。 
+        :type date_of_birth_th: float
+        :param date_of_birth_en: 英文出生日期置信度。 
+        :type date_of_birth_en: float
+        :param religion_th: 宗教置信度。 
+        :type religion_th: float
+        :param address_th: 地址置信度。 
+        :type address_th: float
+        :param date_of_issue_th: 泰文签发日期置信度。 
+        :type date_of_issue_th: float
+        :param date_of_issue_en: 英文签发日期置信度。 
+        :type date_of_issue_en: float
+        :param date_of_expiry_th: 泰文有效期置信度。 
+        :type date_of_expiry_th: float
+        :param date_of_expiry_en: 英文有效期置信度。 
+        :type date_of_expiry_en: float
+        :param serial_number: 序列号置信度。 
+        :type serial_number: float
+        :param card_number: 身份证反面卡号置信度。 
+        :type card_number: float
+        :param laser_number: 激光码置信度。 
+        :type laser_number: float
+        """
         
         
 
@@ -128,7 +161,7 @@ class ThailandIdcardConfidence:
         身份证号置信度。 
 
         :param id_number: The id_number of this ThailandIdcardConfidence.
-        :type: float
+        :type id_number: float
         """
         self._id_number = id_number
 
@@ -150,7 +183,7 @@ class ThailandIdcardConfidence:
         泰文名字置信度。 
 
         :param name_th: The name_th of this ThailandIdcardConfidence.
-        :type: float
+        :type name_th: float
         """
         self._name_th = name_th
 
@@ -172,7 +205,7 @@ class ThailandIdcardConfidence:
         英文名字置信度。 
 
         :param first_name_en: The first_name_en of this ThailandIdcardConfidence.
-        :type: float
+        :type first_name_en: float
         """
         self._first_name_en = first_name_en
 
@@ -194,7 +227,7 @@ class ThailandIdcardConfidence:
         英文姓氏置信度。 
 
         :param last_name_en: The last_name_en of this ThailandIdcardConfidence.
-        :type: float
+        :type last_name_en: float
         """
         self._last_name_en = last_name_en
 
@@ -216,7 +249,7 @@ class ThailandIdcardConfidence:
         泰文出生日期置信度。 
 
         :param date_of_birth_th: The date_of_birth_th of this ThailandIdcardConfidence.
-        :type: float
+        :type date_of_birth_th: float
         """
         self._date_of_birth_th = date_of_birth_th
 
@@ -238,7 +271,7 @@ class ThailandIdcardConfidence:
         英文出生日期置信度。 
 
         :param date_of_birth_en: The date_of_birth_en of this ThailandIdcardConfidence.
-        :type: float
+        :type date_of_birth_en: float
         """
         self._date_of_birth_en = date_of_birth_en
 
@@ -260,7 +293,7 @@ class ThailandIdcardConfidence:
         宗教置信度。 
 
         :param religion_th: The religion_th of this ThailandIdcardConfidence.
-        :type: float
+        :type religion_th: float
         """
         self._religion_th = religion_th
 
@@ -282,7 +315,7 @@ class ThailandIdcardConfidence:
         地址置信度。 
 
         :param address_th: The address_th of this ThailandIdcardConfidence.
-        :type: float
+        :type address_th: float
         """
         self._address_th = address_th
 
@@ -304,7 +337,7 @@ class ThailandIdcardConfidence:
         泰文签发日期置信度。 
 
         :param date_of_issue_th: The date_of_issue_th of this ThailandIdcardConfidence.
-        :type: float
+        :type date_of_issue_th: float
         """
         self._date_of_issue_th = date_of_issue_th
 
@@ -326,7 +359,7 @@ class ThailandIdcardConfidence:
         英文签发日期置信度。 
 
         :param date_of_issue_en: The date_of_issue_en of this ThailandIdcardConfidence.
-        :type: float
+        :type date_of_issue_en: float
         """
         self._date_of_issue_en = date_of_issue_en
 
@@ -348,7 +381,7 @@ class ThailandIdcardConfidence:
         泰文有效期置信度。 
 
         :param date_of_expiry_th: The date_of_expiry_th of this ThailandIdcardConfidence.
-        :type: float
+        :type date_of_expiry_th: float
         """
         self._date_of_expiry_th = date_of_expiry_th
 
@@ -370,7 +403,7 @@ class ThailandIdcardConfidence:
         英文有效期置信度。 
 
         :param date_of_expiry_en: The date_of_expiry_en of this ThailandIdcardConfidence.
-        :type: float
+        :type date_of_expiry_en: float
         """
         self._date_of_expiry_en = date_of_expiry_en
 
@@ -392,7 +425,7 @@ class ThailandIdcardConfidence:
         序列号置信度。 
 
         :param serial_number: The serial_number of this ThailandIdcardConfidence.
-        :type: float
+        :type serial_number: float
         """
         self._serial_number = serial_number
 
@@ -414,7 +447,7 @@ class ThailandIdcardConfidence:
         身份证反面卡号置信度。 
 
         :param card_number: The card_number of this ThailandIdcardConfidence.
-        :type: float
+        :type card_number: float
         """
         self._card_number = card_number
 
@@ -436,7 +469,7 @@ class ThailandIdcardConfidence:
         激光码置信度。 
 
         :param laser_number: The laser_number of this ThailandIdcardConfidence.
-        :type: float
+        :type laser_number: float
         """
         self._laser_number = laser_number
 

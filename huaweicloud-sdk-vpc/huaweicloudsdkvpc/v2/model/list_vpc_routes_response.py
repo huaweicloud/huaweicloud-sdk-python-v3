@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListVpcRoutesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListVpcRoutesResponse(SdkResponse):
     }
 
     def __init__(self, routes=None, routes_links=None):
-        """ListVpcRoutesResponse - a model defined in huaweicloud sdk"""
+        """ListVpcRoutesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param routes: route对象列表
+        :type routes: list[:class:`huaweicloudsdkvpc.v2.VpcRoute`]
+        :param routes_links: 分页信息
+        :type routes_links: list[:class:`huaweicloudsdkvpc.v2.NeutronPageLink`]
+        """
         
         super(ListVpcRoutesResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListVpcRoutesResponse(SdkResponse):
         route对象列表
 
         :return: The routes of this ListVpcRoutesResponse.
-        :rtype: list[VpcRoute]
+        :rtype: list[:class:`huaweicloudsdkvpc.v2.VpcRoute`]
         """
         return self._routes
 
@@ -63,7 +70,7 @@ class ListVpcRoutesResponse(SdkResponse):
         route对象列表
 
         :param routes: The routes of this ListVpcRoutesResponse.
-        :type: list[VpcRoute]
+        :type routes: list[:class:`huaweicloudsdkvpc.v2.VpcRoute`]
         """
         self._routes = routes
 
@@ -74,7 +81,7 @@ class ListVpcRoutesResponse(SdkResponse):
         分页信息
 
         :return: The routes_links of this ListVpcRoutesResponse.
-        :rtype: list[NeutronPageLink]
+        :rtype: list[:class:`huaweicloudsdkvpc.v2.NeutronPageLink`]
         """
         return self._routes_links
 
@@ -85,7 +92,7 @@ class ListVpcRoutesResponse(SdkResponse):
         分页信息
 
         :param routes_links: The routes_links of this ListVpcRoutesResponse.
-        :type: list[NeutronPageLink]
+        :type routes_links: list[:class:`huaweicloudsdkvpc.v2.NeutronPageLink`]
         """
         self._routes_links = routes_links
 

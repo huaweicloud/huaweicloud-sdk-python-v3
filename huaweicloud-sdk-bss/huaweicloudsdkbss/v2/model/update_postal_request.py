@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdatePostalRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdatePostalRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """UpdatePostalRequest - a model defined in huaweicloud sdk"""
+        """UpdatePostalRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: |参数名称：语言| |参数的约束及描述：中文：zh_CN 英文：en_US缺省为zh_CN|
+        :type x_language: str
+        :param body: Body of the UpdatePostalRequest
+        :type body: :class:`huaweicloudsdkbss.v2.UpdatePostalReq`
+        """
         
         
 
@@ -63,7 +70,7 @@ class UpdatePostalRequest:
         |参数名称：语言| |参数的约束及描述：中文：zh_CN 英文：en_US缺省为zh_CN|
 
         :param x_language: The x_language of this UpdatePostalRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -73,7 +80,7 @@ class UpdatePostalRequest:
 
 
         :return: The body of this UpdatePostalRequest.
-        :rtype: UpdatePostalReq
+        :rtype: :class:`huaweicloudsdkbss.v2.UpdatePostalReq`
         """
         return self._body
 
@@ -83,7 +90,7 @@ class UpdatePostalRequest:
 
 
         :param body: The body of this UpdatePostalRequest.
-        :type: UpdatePostalReq
+        :type body: :class:`huaweicloudsdkbss.v2.UpdatePostalReq`
         """
         self._body = body
 

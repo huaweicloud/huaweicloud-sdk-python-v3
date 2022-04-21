@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UnfreezeCertResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UnfreezeCertResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """UnfreezeCertResponse - a model defined in huaweicloud sdk"""
+        """UnfreezeCertResponse
+
+        The model defined in huaweicloud sdk
+
+        :param result: 操作结果
+        :type result: str
+        """
         
         super(UnfreezeCertResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class UnfreezeCertResponse(SdkResponse):
         操作结果
 
         :param result: The result of this UnfreezeCertResponse.
-        :type: str
+        :type result: str
         """
         self._result = result
 

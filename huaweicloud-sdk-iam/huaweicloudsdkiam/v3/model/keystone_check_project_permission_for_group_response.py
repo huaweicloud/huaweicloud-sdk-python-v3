@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneCheckProjectPermissionForGroupResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class KeystoneCheckProjectPermissionForGroupResponse(SdkResponse):
     }
 
     def __init__(self):
-        """KeystoneCheckProjectPermissionForGroupResponse - a model defined in huaweicloud sdk"""
+        """KeystoneCheckProjectPermissionForGroupResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(KeystoneCheckProjectPermissionForGroupResponse, self).__init__()
         self.discriminator = None

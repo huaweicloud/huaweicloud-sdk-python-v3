@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateTopicAccessPolicyTopicsObject:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UpdateTopicAccessPolicyTopicsObject:
     }
 
     def __init__(self, name=None, policies=None, description=None, sensitive_word=None):
-        """UpdateTopicAccessPolicyTopicsObject - a model defined in huaweicloud sdk"""
+        """UpdateTopicAccessPolicyTopicsObject
+
+        The model defined in huaweicloud sdk
+
+        :param name: topic名称。
+        :type name: str
+        :param policies: 权限列表。
+        :type policies: list[:class:`huaweicloudsdkroma.v2.UpdateTopicAccessPolicyPoliciesObject`]
+        :param description: 描述。
+        :type description: str
+        :param sensitive_word: 敏感字段。
+        :type sensitive_word: str
+        """
         
         
 
@@ -71,7 +82,7 @@ class UpdateTopicAccessPolicyTopicsObject:
         topic名称。
 
         :param name: The name of this UpdateTopicAccessPolicyTopicsObject.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -82,7 +93,7 @@ class UpdateTopicAccessPolicyTopicsObject:
         权限列表。
 
         :return: The policies of this UpdateTopicAccessPolicyTopicsObject.
-        :rtype: list[UpdateTopicAccessPolicyPoliciesObject]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.UpdateTopicAccessPolicyPoliciesObject`]
         """
         return self._policies
 
@@ -93,7 +104,7 @@ class UpdateTopicAccessPolicyTopicsObject:
         权限列表。
 
         :param policies: The policies of this UpdateTopicAccessPolicyTopicsObject.
-        :type: list[UpdateTopicAccessPolicyPoliciesObject]
+        :type policies: list[:class:`huaweicloudsdkroma.v2.UpdateTopicAccessPolicyPoliciesObject`]
         """
         self._policies = policies
 
@@ -115,7 +126,7 @@ class UpdateTopicAccessPolicyTopicsObject:
         描述。
 
         :param description: The description of this UpdateTopicAccessPolicyTopicsObject.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -137,7 +148,7 @@ class UpdateTopicAccessPolicyTopicsObject:
         敏感字段。
 
         :param sensitive_word: The sensitive_word of this UpdateTopicAccessPolicyTopicsObject.
-        :type: str
+        :type sensitive_word: str
         """
         self._sensitive_word = sensitive_word
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GetHostListFilter:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class GetHostListFilter:
     }
 
     def __init__(self, host_name_list=None, host_ip_list=None, host_status=None, host_version=None):
-        """GetHostListFilter - a model defined in huaweicloud sdk"""
+        """GetHostListFilter
+
+        The model defined in huaweicloud sdk
+
+        :param host_name_list: 主机名称列表。可以根据主机名称列表，进行批量过滤。
+        :type host_name_list: list[str]
+        :param host_ip_list: 主机ID列表。可以根据主机IP列表，进行批量过滤。
+        :type host_ip_list: list[str]
+        :param host_status: 主机状态。可以根据主机状态进行过滤。 uninstall:未安装 running:运行 offline:离线 error:异常 plugin error:插件错误 installing:安装中 install-fail:安装失败 upgrading:升级中 upgrading-transient:升级中 upgrade failed:升级失败 upgrade-fail:升级失败 uninstalling:卸载中 uninstalling-transient:卸载中 authentication error:鉴权失败
+        :type host_status: str
+        :param host_version: 主机版本。可以根据主机版本进行过滤。
+        :type host_version: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class GetHostListFilter:
         主机名称列表。可以根据主机名称列表，进行批量过滤。
 
         :param host_name_list: The host_name_list of this GetHostListFilter.
-        :type: list[str]
+        :type host_name_list: list[str]
         """
         self._host_name_list = host_name_list
 
@@ -95,7 +106,7 @@ class GetHostListFilter:
         主机ID列表。可以根据主机IP列表，进行批量过滤。
 
         :param host_ip_list: The host_ip_list of this GetHostListFilter.
-        :type: list[str]
+        :type host_ip_list: list[str]
         """
         self._host_ip_list = host_ip_list
 
@@ -117,7 +128,7 @@ class GetHostListFilter:
         主机状态。可以根据主机状态进行过滤。 uninstall:未安装 running:运行 offline:离线 error:异常 plugin error:插件错误 installing:安装中 install-fail:安装失败 upgrading:升级中 upgrading-transient:升级中 upgrade failed:升级失败 upgrade-fail:升级失败 uninstalling:卸载中 uninstalling-transient:卸载中 authentication error:鉴权失败
 
         :param host_status: The host_status of this GetHostListFilter.
-        :type: str
+        :type host_status: str
         """
         self._host_status = host_status
 
@@ -139,7 +150,7 @@ class GetHostListFilter:
         主机版本。可以根据主机版本进行过滤。
 
         :param host_version: The host_version of this GetHostListFilter.
-        :type: str
+        :type host_version: str
         """
         self._host_version = host_version
 

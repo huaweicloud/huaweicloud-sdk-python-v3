@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunSemanticParserResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class RunSemanticParserResponse(SdkResponse):
     }
 
     def __init__(self, result=None, error_code=None, error_msg=None):
-        """RunSemanticParserResponse - a model defined in huaweicloud sdk"""
+        """RunSemanticParserResponse
+
+        The model defined in huaweicloud sdk
+
+        :param result: 
+        :type result: :class:`huaweicloudsdknlp.v2.IntentResult`
+        :param error_code: 调用失败时的错误码。调用成功时无此字段。
+        :type error_code: str
+        :param error_msg: 调用失败时的错误信息。调用成功时无此字段。
+        :type error_msg: str
+        """
         
         super(RunSemanticParserResponse, self).__init__()
 
@@ -56,7 +65,7 @@ class RunSemanticParserResponse(SdkResponse):
 
 
         :return: The result of this RunSemanticParserResponse.
-        :rtype: IntentResult
+        :rtype: :class:`huaweicloudsdknlp.v2.IntentResult`
         """
         return self._result
 
@@ -66,7 +75,7 @@ class RunSemanticParserResponse(SdkResponse):
 
 
         :param result: The result of this RunSemanticParserResponse.
-        :type: IntentResult
+        :type result: :class:`huaweicloudsdknlp.v2.IntentResult`
         """
         self._result = result
 
@@ -88,7 +97,7 @@ class RunSemanticParserResponse(SdkResponse):
         调用失败时的错误码。调用成功时无此字段。
 
         :param error_code: The error_code of this RunSemanticParserResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -110,7 +119,7 @@ class RunSemanticParserResponse(SdkResponse):
         调用失败时的错误信息。调用成功时无此字段。
 
         :param error_msg: The error_msg of this RunSemanticParserResponse.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 

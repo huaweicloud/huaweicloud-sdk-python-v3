@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VerifyCodeSendDTOV1:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class VerifyCodeSendDTOV1:
     }
 
     def __init__(self, user=None, send_method=None, token=None):
-        """VerifyCodeSendDTOV1 - a model defined in huaweicloud sdk"""
+        """VerifyCodeSendDTOV1
+
+        The model defined in huaweicloud sdk
+
+        :param user: 用户身份信息（手机号码或邮箱账号或用户真实账号） 说明：必须和发送滑块验证码时带的用户身份信息相同。 maxLength：255 minLength：1 
+        :type user: str
+        :param send_method: 验证码发送方式 user类型是用户真实账号时必选；如果没有选择的话，优先短信方式。 * sms：短信方式 * email：邮件方式 
+        :type send_method: str
+        :param token: 校验滑块验证码返回的token字符串。
+        :type token: str
+        """
         
         
 
@@ -67,7 +76,7 @@ class VerifyCodeSendDTOV1:
         用户身份信息（手机号码或邮箱账号或用户真实账号） 说明：必须和发送滑块验证码时带的用户身份信息相同。 maxLength：255 minLength：1 
 
         :param user: The user of this VerifyCodeSendDTOV1.
-        :type: str
+        :type user: str
         """
         self._user = user
 
@@ -89,7 +98,7 @@ class VerifyCodeSendDTOV1:
         验证码发送方式 user类型是用户真实账号时必选；如果没有选择的话，优先短信方式。 * sms：短信方式 * email：邮件方式 
 
         :param send_method: The send_method of this VerifyCodeSendDTOV1.
-        :type: str
+        :type send_method: str
         """
         self._send_method = send_method
 
@@ -111,7 +120,7 @@ class VerifyCodeSendDTOV1:
         校验滑块验证码返回的token字符串。
 
         :param token: The token of this VerifyCodeSendDTOV1.
-        :type: str
+        :type token: str
         """
         self._token = token
 

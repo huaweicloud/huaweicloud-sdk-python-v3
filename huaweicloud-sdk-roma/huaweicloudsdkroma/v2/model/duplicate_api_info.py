@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DuplicateApiInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class DuplicateApiInfo:
     }
 
     def __init__(self, api_id=None, api_name=None, group_name=None, group_id=None, remark=None, api_type=None):
-        """DuplicateApiInfo - a model defined in huaweicloud sdk"""
+        """DuplicateApiInfo
+
+        The model defined in huaweicloud sdk
+
+        :param api_id: API ID
+        :type api_id: str
+        :param api_name: API名称
+        :type api_name: str
+        :param group_name: 分组名称
+        :type group_name: str
+        :param group_id: 分组ID
+        :type group_id: str
+        :param remark: API描述
+        :type remark: str
+        :param api_type: api类型： - self-owned：自有API - authorized：授权API
+        :type api_type: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class DuplicateApiInfo:
         API ID
 
         :param api_id: The api_id of this DuplicateApiInfo.
-        :type: str
+        :type api_id: str
         """
         self._api_id = api_id
 
@@ -105,7 +120,7 @@ class DuplicateApiInfo:
         API名称
 
         :param api_name: The api_name of this DuplicateApiInfo.
-        :type: str
+        :type api_name: str
         """
         self._api_name = api_name
 
@@ -127,7 +142,7 @@ class DuplicateApiInfo:
         分组名称
 
         :param group_name: The group_name of this DuplicateApiInfo.
-        :type: str
+        :type group_name: str
         """
         self._group_name = group_name
 
@@ -149,7 +164,7 @@ class DuplicateApiInfo:
         分组ID
 
         :param group_id: The group_id of this DuplicateApiInfo.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -171,7 +186,7 @@ class DuplicateApiInfo:
         API描述
 
         :param remark: The remark of this DuplicateApiInfo.
-        :type: str
+        :type remark: str
         """
         self._remark = remark
 
@@ -193,7 +208,7 @@ class DuplicateApiInfo:
         api类型： - self-owned：自有API - authorized：授权API
 
         :param api_type: The api_type of this DuplicateApiInfo.
-        :type: str
+        :type api_type: str
         """
         self._api_type = api_type
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ProgramRequestBase:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ProgramRequestBase:
     }
 
     def __init__(self, program_name=None):
-        """ProgramRequestBase - a model defined in huaweicloud sdk"""
+        """ProgramRequestBase
+
+        The model defined in huaweicloud sdk
+
+        :param program_name: 节目名称
+        :type program_name: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ProgramRequestBase:
         节目名称
 
         :param program_name: The program_name of this ProgramRequestBase.
-        :type: str
+        :type program_name: str
         """
         self._program_name = program_name
 

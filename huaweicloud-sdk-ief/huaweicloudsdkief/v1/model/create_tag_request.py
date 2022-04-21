@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateTagRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CreateTagRequest:
     }
 
     def __init__(self, resource_id=None, resource_type=None, ief_instance_id=None, body=None):
-        """CreateTagRequest - a model defined in huaweicloud sdk"""
+        """CreateTagRequest
+
+        The model defined in huaweicloud sdk
+
+        :param resource_id: 资源id
+        :type resource_id: str
+        :param resource_type: 资源类型
+        :type resource_type: str
+        :param ief_instance_id: 铂金版实例ID，专业版实例为空值
+        :type ief_instance_id: str
+        :param body: Body of the CreateTagRequest
+        :type body: :class:`huaweicloudsdkief.v1.AddTag`
+        """
         
         
 
@@ -71,7 +82,7 @@ class CreateTagRequest:
         资源id
 
         :param resource_id: The resource_id of this CreateTagRequest.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -93,7 +104,7 @@ class CreateTagRequest:
         资源类型
 
         :param resource_type: The resource_type of this CreateTagRequest.
-        :type: str
+        :type resource_type: str
         """
         self._resource_type = resource_type
 
@@ -115,7 +126,7 @@ class CreateTagRequest:
         铂金版实例ID，专业版实例为空值
 
         :param ief_instance_id: The ief_instance_id of this CreateTagRequest.
-        :type: str
+        :type ief_instance_id: str
         """
         self._ief_instance_id = ief_instance_id
 
@@ -125,7 +136,7 @@ class CreateTagRequest:
 
 
         :return: The body of this CreateTagRequest.
-        :rtype: AddTag
+        :rtype: :class:`huaweicloudsdkief.v1.AddTag`
         """
         return self._body
 
@@ -135,7 +146,7 @@ class CreateTagRequest:
 
 
         :param body: The body of this CreateTagRequest.
-        :type: AddTag
+        :type body: :class:`huaweicloudsdkief.v1.AddTag`
         """
         self._body = body
 

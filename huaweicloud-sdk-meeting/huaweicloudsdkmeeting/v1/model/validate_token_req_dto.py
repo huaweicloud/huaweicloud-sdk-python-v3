@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ValidateTokenReqDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ValidateTokenReqDTO:
     }
 
     def __init__(self, token=None, need_gen_new_token=None, need_account_info=None):
-        """ValidateTokenReqDTO - a model defined in huaweicloud sdk"""
+        """ValidateTokenReqDTO
+
+        The model defined in huaweicloud sdk
+
+        :param token: 登录用账号的token字符串
+        :type token: str
+        :param need_gen_new_token: 是否生成新的token，内部使用参数。 true：生成新的token值。 false：不生成新的token值。 
+        :type need_gen_new_token: bool
+        :param need_account_info: 是否需要返回用户可见帐号信息（帐号、用户姓名等信息）。
+        :type need_account_info: bool
+        """
         
         
 
@@ -66,7 +75,7 @@ class ValidateTokenReqDTO:
         登录用账号的token字符串
 
         :param token: The token of this ValidateTokenReqDTO.
-        :type: str
+        :type token: str
         """
         self._token = token
 
@@ -88,7 +97,7 @@ class ValidateTokenReqDTO:
         是否生成新的token，内部使用参数。 true：生成新的token值。 false：不生成新的token值。 
 
         :param need_gen_new_token: The need_gen_new_token of this ValidateTokenReqDTO.
-        :type: bool
+        :type need_gen_new_token: bool
         """
         self._need_gen_new_token = need_gen_new_token
 
@@ -110,7 +119,7 @@ class ValidateTokenReqDTO:
         是否需要返回用户可见帐号信息（帐号、用户姓名等信息）。
 
         :param need_account_info: The need_account_info of this ValidateTokenReqDTO.
-        :type: bool
+        :type need_account_info: bool
         """
         self._need_account_info = need_account_info
 

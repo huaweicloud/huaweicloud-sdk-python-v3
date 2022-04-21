@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCommitStatisticsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListCommitStatisticsRequest:
     }
 
     def __init__(self, branch_name=None, repository_id=None):
-        """ListCommitStatisticsRequest - a model defined in huaweicloud sdk"""
+        """ListCommitStatisticsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param branch_name: 分支名
+        :type branch_name: str
+        :param repository_id: 仓库的主键id
+        :type repository_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ListCommitStatisticsRequest:
         分支名
 
         :param branch_name: The branch_name of this ListCommitStatisticsRequest.
-        :type: str
+        :type branch_name: str
         """
         self._branch_name = branch_name
 
@@ -83,7 +90,7 @@ class ListCommitStatisticsRequest:
         仓库的主键id
 
         :param repository_id: The repository_id of this ListCommitStatisticsRequest.
-        :type: str
+        :type repository_id: str
         """
         self._repository_id = repository_id
 

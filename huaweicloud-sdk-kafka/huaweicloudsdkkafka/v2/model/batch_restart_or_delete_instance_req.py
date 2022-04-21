@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchRestartOrDeleteInstanceReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class BatchRestartOrDeleteInstanceReq:
     }
 
     def __init__(self, instances=None, action=None, all_failure=None):
-        """BatchRestartOrDeleteInstanceReq - a model defined in huaweicloud sdk"""
+        """BatchRestartOrDeleteInstanceReq
+
+        The model defined in huaweicloud sdk
+
+        :param instances: 实例的ID列表。
+        :type instances: list[str]
+        :param action: 对实例的操作：restart、delete
+        :type action: str
+        :param all_failure: 参数值为kafka，表示删除租户所有创建失败的Kafka实例。
+        :type all_failure: str
+        """
         
         
 
@@ -67,7 +76,7 @@ class BatchRestartOrDeleteInstanceReq:
         实例的ID列表。
 
         :param instances: The instances of this BatchRestartOrDeleteInstanceReq.
-        :type: list[str]
+        :type instances: list[str]
         """
         self._instances = instances
 
@@ -89,7 +98,7 @@ class BatchRestartOrDeleteInstanceReq:
         对实例的操作：restart、delete
 
         :param action: The action of this BatchRestartOrDeleteInstanceReq.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -111,7 +120,7 @@ class BatchRestartOrDeleteInstanceReq:
         参数值为kafka，表示删除租户所有创建失败的Kafka实例。
 
         :param all_failure: The all_failure of this BatchRestartOrDeleteInstanceReq.
-        :type: str
+        :type all_failure: str
         """
         self._all_failure = all_failure
 

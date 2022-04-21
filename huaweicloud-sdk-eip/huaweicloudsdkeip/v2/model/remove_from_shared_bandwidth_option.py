@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RemoveFromSharedBandwidthOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class RemoveFromSharedBandwidthOption:
     }
 
     def __init__(self, charge_mode=None, publicip_info=None, size=None):
-        """RemoveFromSharedBandwidthOption - a model defined in huaweicloud sdk"""
+        """RemoveFromSharedBandwidthOption
+
+        The model defined in huaweicloud sdk
+
+        :param charge_mode: 弹性公网IP从共享带宽移除后，会为此弹性公网IP创建独占带宽进行计费。  此参数表示弹性公网IP从共享带宽移除后，使用的独占带宽的计费类型。（bandwidth/traffic）
+        :type charge_mode: str
+        :param publicip_info: 功能说明：要从共享带宽中移除的弹性公网IP或者IPv6端口信息  约束：WHOLE类型的带宽支持多个弹性公网IP或者IPv6端口，跟租户的配额相关，默认一个共享带宽的配额为20
+        :type publicip_info: list[:class:`huaweicloudsdkeip.v2.RemovePublicipInfo`]
+        :param size: 弹性公网IP从共享带宽移除后，会为此弹性公网IP创建独占带宽进行计费。  此参数表示弹性公网IP从共享带宽移除后，使用的独占带宽的带宽大小。（M）取值范围：默认为1~2000Mbit/s. 可能因为局点配置不同而不同。也跟带宽的计费模式（bandwidth/traffic）相关。
+        :type size: int
+        """
         
         
 
@@ -65,7 +74,7 @@ class RemoveFromSharedBandwidthOption:
         弹性公网IP从共享带宽移除后，会为此弹性公网IP创建独占带宽进行计费。  此参数表示弹性公网IP从共享带宽移除后，使用的独占带宽的计费类型。（bandwidth/traffic）
 
         :param charge_mode: The charge_mode of this RemoveFromSharedBandwidthOption.
-        :type: str
+        :type charge_mode: str
         """
         self._charge_mode = charge_mode
 
@@ -76,7 +85,7 @@ class RemoveFromSharedBandwidthOption:
         功能说明：要从共享带宽中移除的弹性公网IP或者IPv6端口信息  约束：WHOLE类型的带宽支持多个弹性公网IP或者IPv6端口，跟租户的配额相关，默认一个共享带宽的配额为20
 
         :return: The publicip_info of this RemoveFromSharedBandwidthOption.
-        :rtype: list[RemovePublicipInfo]
+        :rtype: list[:class:`huaweicloudsdkeip.v2.RemovePublicipInfo`]
         """
         return self._publicip_info
 
@@ -87,7 +96,7 @@ class RemoveFromSharedBandwidthOption:
         功能说明：要从共享带宽中移除的弹性公网IP或者IPv6端口信息  约束：WHOLE类型的带宽支持多个弹性公网IP或者IPv6端口，跟租户的配额相关，默认一个共享带宽的配额为20
 
         :param publicip_info: The publicip_info of this RemoveFromSharedBandwidthOption.
-        :type: list[RemovePublicipInfo]
+        :type publicip_info: list[:class:`huaweicloudsdkeip.v2.RemovePublicipInfo`]
         """
         self._publicip_info = publicip_info
 
@@ -109,7 +118,7 @@ class RemoveFromSharedBandwidthOption:
         弹性公网IP从共享带宽移除后，会为此弹性公网IP创建独占带宽进行计费。  此参数表示弹性公网IP从共享带宽移除后，使用的独占带宽的带宽大小。（M）取值范围：默认为1~2000Mbit/s. 可能因为局点配置不同而不同。也跟带宽的计费模式（bandwidth/traffic）相关。
 
         :param size: The size of this RemoveFromSharedBandwidthOption.
-        :type: int
+        :type size: int
         """
         self._size = size
 

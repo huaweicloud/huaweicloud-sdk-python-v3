@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CollectKeyWordsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CollectKeyWordsResponse(SdkResponse):
     }
 
     def __init__(self, keywords=None):
-        """CollectKeyWordsResponse - a model defined in huaweicloud sdk"""
+        """CollectKeyWordsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param keywords: 指定时间范围内，用户问关键词列表。
+        :type keywords: list[:class:`huaweicloudsdkcbs.v1.KeyWordsStat`]
+        """
         
         super(CollectKeyWordsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class CollectKeyWordsResponse(SdkResponse):
         指定时间范围内，用户问关键词列表。
 
         :return: The keywords of this CollectKeyWordsResponse.
-        :rtype: list[KeyWordsStat]
+        :rtype: list[:class:`huaweicloudsdkcbs.v1.KeyWordsStat`]
         """
         return self._keywords
 
@@ -58,7 +63,7 @@ class CollectKeyWordsResponse(SdkResponse):
         指定时间范围内，用户问关键词列表。
 
         :param keywords: The keywords of this CollectKeyWordsResponse.
-        :type: list[KeyWordsStat]
+        :type keywords: list[:class:`huaweicloudsdkcbs.v1.KeyWordsStat`]
         """
         self._keywords = keywords
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDomainPasswordPolicyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowDomainPasswordPolicyResponse(SdkResponse):
     }
 
     def __init__(self, password_policy=None):
-        """ShowDomainPasswordPolicyResponse - a model defined in huaweicloud sdk"""
+        """ShowDomainPasswordPolicyResponse
+
+        The model defined in huaweicloud sdk
+
+        :param password_policy: 
+        :type password_policy: :class:`huaweicloudsdkiam.v3.PasswordPolicyResult`
+        """
         
         super(ShowDomainPasswordPolicyResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class ShowDomainPasswordPolicyResponse(SdkResponse):
 
 
         :return: The password_policy of this ShowDomainPasswordPolicyResponse.
-        :rtype: PasswordPolicyResult
+        :rtype: :class:`huaweicloudsdkiam.v3.PasswordPolicyResult`
         """
         return self._password_policy
 
@@ -56,7 +61,7 @@ class ShowDomainPasswordPolicyResponse(SdkResponse):
 
 
         :param password_policy: The password_policy of this ShowDomainPasswordPolicyResponse.
-        :type: PasswordPolicyResult
+        :type password_policy: :class:`huaweicloudsdkiam.v3.PasswordPolicyResult`
         """
         self._password_policy = password_policy
 

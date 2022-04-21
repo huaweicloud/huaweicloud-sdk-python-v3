@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Rules:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class Rules:
     }
 
     def __init__(self, name=None, description=None, adjustment_type=None, cool_down_minutes=None, scaling_adjustment=None, trigger=None):
-        """Rules - a model defined in huaweicloud sdk"""
+        """Rules
+
+        The model defined in huaweicloud sdk
+
+        :param name: 弹性伸缩规则的名称。  只能由字母、数字、中划线和下划线组成，并且长度为1～64个字符。  在一个节点组范围内，不允许重名。
+        :type name: str
+        :param description: 弹性伸缩规则的说明。  最大长度为1024字符。
+        :type description: str
+        :param adjustment_type: 弹性伸缩规则的调整类型，只允许以下类型：  枚举值： - scale_out：扩容 - scale_in：缩容
+        :type adjustment_type: str
+        :param cool_down_minutes: 触发弹性伸缩规则后，该集群处于冷却状态（不再执行弹性伸缩操作）的时长，单位为分钟。  取值范围[0～10080]，10080为一周的分钟数。
+        :type cool_down_minutes: int
+        :param scaling_adjustment: 单次调整集群节点的个数。  取值范围[1～100]
+        :type scaling_adjustment: int
+        :param trigger: 
+        :type trigger: :class:`huaweicloudsdkmrs.v1.Trigger`
+        """
         
         
 
@@ -78,7 +93,7 @@ class Rules:
         弹性伸缩规则的名称。  只能由字母、数字、中划线和下划线组成，并且长度为1～64个字符。  在一个节点组范围内，不允许重名。
 
         :param name: The name of this Rules.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -100,7 +115,7 @@ class Rules:
         弹性伸缩规则的说明。  最大长度为1024字符。
 
         :param description: The description of this Rules.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -122,7 +137,7 @@ class Rules:
         弹性伸缩规则的调整类型，只允许以下类型：  枚举值： - scale_out：扩容 - scale_in：缩容
 
         :param adjustment_type: The adjustment_type of this Rules.
-        :type: str
+        :type adjustment_type: str
         """
         self._adjustment_type = adjustment_type
 
@@ -144,7 +159,7 @@ class Rules:
         触发弹性伸缩规则后，该集群处于冷却状态（不再执行弹性伸缩操作）的时长，单位为分钟。  取值范围[0～10080]，10080为一周的分钟数。
 
         :param cool_down_minutes: The cool_down_minutes of this Rules.
-        :type: int
+        :type cool_down_minutes: int
         """
         self._cool_down_minutes = cool_down_minutes
 
@@ -166,7 +181,7 @@ class Rules:
         单次调整集群节点的个数。  取值范围[1～100]
 
         :param scaling_adjustment: The scaling_adjustment of this Rules.
-        :type: int
+        :type scaling_adjustment: int
         """
         self._scaling_adjustment = scaling_adjustment
 
@@ -176,7 +191,7 @@ class Rules:
 
 
         :return: The trigger of this Rules.
-        :rtype: Trigger
+        :rtype: :class:`huaweicloudsdkmrs.v1.Trigger`
         """
         return self._trigger
 
@@ -186,7 +201,7 @@ class Rules:
 
 
         :param trigger: The trigger of this Rules.
-        :type: Trigger
+        :type trigger: :class:`huaweicloudsdkmrs.v1.Trigger`
         """
         self._trigger = trigger
 

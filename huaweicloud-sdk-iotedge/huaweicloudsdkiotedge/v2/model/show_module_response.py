@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowModuleResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class ShowModuleResponse(SdkResponse):
     }
 
     def __init__(self, edge_app_id=None, app_version=None, state=None, node_id=None, module_name=None, module_id=None, create_time=None, update_time=None, app_type=None, function_type=None):
-        """ShowModuleResponse - a model defined in huaweicloud sdk"""
+        """ShowModuleResponse
+
+        The model defined in huaweicloud sdk
+
+        :param edge_app_id: 应用ID
+        :type edge_app_id: str
+        :param app_version: 应用版本
+        :type app_version: str
+        :param state: 模块状态
+        :type state: str
+        :param node_id: 边缘节点（同deviceID）ID
+        :type node_id: str
+        :param module_name: 模块名称
+        :type module_name: str
+        :param module_id: 模块ID
+        :type module_id: str
+        :param create_time: 创建时间
+        :type create_time: str
+        :param update_time: 最后一次修改时间
+        :type update_time: str
+        :param app_type: 应用类型
+        :type app_type: str
+        :param function_type: 功能类型
+        :type function_type: str
+        """
         
         super(ShowModuleResponse, self).__init__()
 
@@ -103,7 +126,7 @@ class ShowModuleResponse(SdkResponse):
         应用ID
 
         :param edge_app_id: The edge_app_id of this ShowModuleResponse.
-        :type: str
+        :type edge_app_id: str
         """
         self._edge_app_id = edge_app_id
 
@@ -125,7 +148,7 @@ class ShowModuleResponse(SdkResponse):
         应用版本
 
         :param app_version: The app_version of this ShowModuleResponse.
-        :type: str
+        :type app_version: str
         """
         self._app_version = app_version
 
@@ -147,7 +170,7 @@ class ShowModuleResponse(SdkResponse):
         模块状态
 
         :param state: The state of this ShowModuleResponse.
-        :type: str
+        :type state: str
         """
         self._state = state
 
@@ -169,7 +192,7 @@ class ShowModuleResponse(SdkResponse):
         边缘节点（同deviceID）ID
 
         :param node_id: The node_id of this ShowModuleResponse.
-        :type: str
+        :type node_id: str
         """
         self._node_id = node_id
 
@@ -191,7 +214,7 @@ class ShowModuleResponse(SdkResponse):
         模块名称
 
         :param module_name: The module_name of this ShowModuleResponse.
-        :type: str
+        :type module_name: str
         """
         self._module_name = module_name
 
@@ -213,7 +236,7 @@ class ShowModuleResponse(SdkResponse):
         模块ID
 
         :param module_id: The module_id of this ShowModuleResponse.
-        :type: str
+        :type module_id: str
         """
         self._module_id = module_id
 
@@ -235,7 +258,7 @@ class ShowModuleResponse(SdkResponse):
         创建时间
 
         :param create_time: The create_time of this ShowModuleResponse.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -257,7 +280,7 @@ class ShowModuleResponse(SdkResponse):
         最后一次修改时间
 
         :param update_time: The update_time of this ShowModuleResponse.
-        :type: str
+        :type update_time: str
         """
         self._update_time = update_time
 
@@ -279,7 +302,7 @@ class ShowModuleResponse(SdkResponse):
         应用类型
 
         :param app_type: The app_type of this ShowModuleResponse.
-        :type: str
+        :type app_type: str
         """
         self._app_type = app_type
 
@@ -301,7 +324,7 @@ class ShowModuleResponse(SdkResponse):
         功能类型
 
         :param function_type: The function_type of this ShowModuleResponse.
-        :type: str
+        :type function_type: str
         """
         self._function_type = function_type
 

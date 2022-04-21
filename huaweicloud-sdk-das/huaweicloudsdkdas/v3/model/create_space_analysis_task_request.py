@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateSpaceAnalysisTaskRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateSpaceAnalysisTaskRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, body=None):
-        """CreateSpaceAnalysisTaskRequest - a model defined in huaweicloud sdk"""
+        """CreateSpaceAnalysisTaskRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param x_language: 语言
+        :type x_language: str
+        :param body: Body of the CreateSpaceAnalysisTaskRequest
+        :type body: :class:`huaweicloudsdkdas.v3.CreateSpaceAnalysisTaskBody`
+        """
         
         
 
@@ -67,7 +76,7 @@ class CreateSpaceAnalysisTaskRequest:
         实例ID
 
         :param instance_id: The instance_id of this CreateSpaceAnalysisTaskRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -89,7 +98,7 @@ class CreateSpaceAnalysisTaskRequest:
         语言
 
         :param x_language: The x_language of this CreateSpaceAnalysisTaskRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -99,7 +108,7 @@ class CreateSpaceAnalysisTaskRequest:
 
 
         :return: The body of this CreateSpaceAnalysisTaskRequest.
-        :rtype: CreateSpaceAnalysisTaskBody
+        :rtype: :class:`huaweicloudsdkdas.v3.CreateSpaceAnalysisTaskBody`
         """
         return self._body
 
@@ -109,7 +118,7 @@ class CreateSpaceAnalysisTaskRequest:
 
 
         :param body: The body of this CreateSpaceAnalysisTaskRequest.
-        :type: CreateSpaceAnalysisTaskBody
+        :type body: :class:`huaweicloudsdkdas.v3.CreateSpaceAnalysisTaskBody`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PrePaidServerRootVolume:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class PrePaidServerRootVolume:
     }
 
     def __init__(self, volumetype=None, size=None, extendparam=None, cluster_type=None, cluster_id=None, hwpassthrough=None):
-        """PrePaidServerRootVolume - a model defined in huaweicloud sdk"""
+        """PrePaidServerRootVolume
+
+        The model defined in huaweicloud sdk
+
+        :param volumetype: 云服务器系统盘对应的磁盘类型，需要与系统所提供的磁盘类型相匹配。  - SATA：普通IO磁盘类型。 - SAS：高IO磁盘类型。 - SSD：超高IO磁盘类型。 - co-p1：高IO (性能优化Ⅰ型) - uh-l1：超高IO (时延优化)  &gt; 说明： &gt;  &gt; 对于HANA云服务器、HL1型云服务器、HL2型云服务器，需使用co-p1和uh-l1两种磁盘类型。对于其他类型的云服务器，不能使用co-p1和uh-l1两种磁盘类型。
+        :type volumetype: str
+        :param size: 系统盘大小，容量单位为GB， 输入大小范围为[1,1024]。  约束：  - 系统盘大小取值应不小于镜像支持的系统盘的最小值(镜像的min_disk属性)。 - 若该参数没有指定或者指定为0时，系统盘大小默认取值为镜像中系统盘的最小值(镜像的min_disk属性)。  &gt; 说明：  &gt; 镜像系统盘的最小值(镜像的min_disk属性)可在控制台中点击镜像详情查看。或通过调用“查询镜像详情（OpenStack原生）”API获取，详细操作请参考[《镜像服务API参考》](https://support.huaweicloud.com/api-ims/ims_03_0702.html)中“查询镜像详情（OpenStack原生）”章节。
+        :type size: int
+        :param extendparam: 
+        :type extendparam: :class:`huaweicloudsdkecs.v2.PrePaidServerRootVolumeExtendParam`
+        :param cluster_type: 云服务器系统盘对应的磁盘存储类型。 磁盘存储类型枚举值： DSS：专属存储类型
+        :type cluster_type: str
+        :param cluster_id: 使用SDI规格创建虚拟机时请关注该参数，如果该参数值为true，说明创建的为scsi类型的卷
+        :type cluster_id: str
+        :param hwpassthrough: 使用SDI规格创建虚拟机时请关注该参数，如果该参数值为true，说明创建的为scsi类型的卷  &gt; 说明： &gt;  &gt; 此参数为boolean类型，若传入非boolean类型字符，程序将按照false方式处理。
+        :type hwpassthrough: bool
+        """
         
         
 
@@ -82,7 +97,7 @@ class PrePaidServerRootVolume:
         云服务器系统盘对应的磁盘类型，需要与系统所提供的磁盘类型相匹配。  - SATA：普通IO磁盘类型。 - SAS：高IO磁盘类型。 - SSD：超高IO磁盘类型。 - co-p1：高IO (性能优化Ⅰ型) - uh-l1：超高IO (时延优化)  > 说明： >  > 对于HANA云服务器、HL1型云服务器、HL2型云服务器，需使用co-p1和uh-l1两种磁盘类型。对于其他类型的云服务器，不能使用co-p1和uh-l1两种磁盘类型。
 
         :param volumetype: The volumetype of this PrePaidServerRootVolume.
-        :type: str
+        :type volumetype: str
         """
         self._volumetype = volumetype
 
@@ -104,7 +119,7 @@ class PrePaidServerRootVolume:
         系统盘大小，容量单位为GB， 输入大小范围为[1,1024]。  约束：  - 系统盘大小取值应不小于镜像支持的系统盘的最小值(镜像的min_disk属性)。 - 若该参数没有指定或者指定为0时，系统盘大小默认取值为镜像中系统盘的最小值(镜像的min_disk属性)。  > 说明：  > 镜像系统盘的最小值(镜像的min_disk属性)可在控制台中点击镜像详情查看。或通过调用“查询镜像详情（OpenStack原生）”API获取，详细操作请参考[《镜像服务API参考》](https://support.huaweicloud.com/api-ims/ims_03_0702.html)中“查询镜像详情（OpenStack原生）”章节。
 
         :param size: The size of this PrePaidServerRootVolume.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -114,7 +129,7 @@ class PrePaidServerRootVolume:
 
 
         :return: The extendparam of this PrePaidServerRootVolume.
-        :rtype: PrePaidServerRootVolumeExtendParam
+        :rtype: :class:`huaweicloudsdkecs.v2.PrePaidServerRootVolumeExtendParam`
         """
         return self._extendparam
 
@@ -124,7 +139,7 @@ class PrePaidServerRootVolume:
 
 
         :param extendparam: The extendparam of this PrePaidServerRootVolume.
-        :type: PrePaidServerRootVolumeExtendParam
+        :type extendparam: :class:`huaweicloudsdkecs.v2.PrePaidServerRootVolumeExtendParam`
         """
         self._extendparam = extendparam
 
@@ -146,7 +161,7 @@ class PrePaidServerRootVolume:
         云服务器系统盘对应的磁盘存储类型。 磁盘存储类型枚举值： DSS：专属存储类型
 
         :param cluster_type: The cluster_type of this PrePaidServerRootVolume.
-        :type: str
+        :type cluster_type: str
         """
         self._cluster_type = cluster_type
 
@@ -168,7 +183,7 @@ class PrePaidServerRootVolume:
         使用SDI规格创建虚拟机时请关注该参数，如果该参数值为true，说明创建的为scsi类型的卷
 
         :param cluster_id: The cluster_id of this PrePaidServerRootVolume.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -190,7 +205,7 @@ class PrePaidServerRootVolume:
         使用SDI规格创建虚拟机时请关注该参数，如果该参数值为true，说明创建的为scsi类型的卷  > 说明： >  > 此参数为boolean类型，若传入非boolean类型字符，程序将按照false方式处理。
 
         :param hwpassthrough: The hwpassthrough of this PrePaidServerRootVolume.
-        :type: bool
+        :type hwpassthrough: bool
         """
         self._hwpassthrough = hwpassthrough
 

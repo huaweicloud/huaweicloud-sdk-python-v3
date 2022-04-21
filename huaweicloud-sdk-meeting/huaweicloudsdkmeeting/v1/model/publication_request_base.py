@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PublicationRequestBase:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class PublicationRequestBase:
     }
 
     def __init__(self, publish_name=None, start_time=None, end_time=None, dept_list=None, device_list=None):
-        """PublicationRequestBase - a model defined in huaweicloud sdk"""
+        """PublicationRequestBase
+
+        The model defined in huaweicloud sdk
+
+        :param publish_name: 发布名称
+        :type publish_name: str
+        :param start_time: 开始时间
+        :type start_time: int
+        :param end_time: 结束时间
+        :type end_time: int
+        :param dept_list: 发布到部门编码列表
+        :type dept_list: list[str]
+        :param device_list: 发布到设备用户ID列表
+        :type device_list: list[str]
+        """
         
         
 
@@ -73,7 +86,7 @@ class PublicationRequestBase:
         发布名称
 
         :param publish_name: The publish_name of this PublicationRequestBase.
-        :type: str
+        :type publish_name: str
         """
         self._publish_name = publish_name
 
@@ -95,7 +108,7 @@ class PublicationRequestBase:
         开始时间
 
         :param start_time: The start_time of this PublicationRequestBase.
-        :type: int
+        :type start_time: int
         """
         self._start_time = start_time
 
@@ -117,7 +130,7 @@ class PublicationRequestBase:
         结束时间
 
         :param end_time: The end_time of this PublicationRequestBase.
-        :type: int
+        :type end_time: int
         """
         self._end_time = end_time
 
@@ -139,7 +152,7 @@ class PublicationRequestBase:
         发布到部门编码列表
 
         :param dept_list: The dept_list of this PublicationRequestBase.
-        :type: list[str]
+        :type dept_list: list[str]
         """
         self._dept_list = dept_list
 
@@ -161,7 +174,7 @@ class PublicationRequestBase:
         发布到设备用户ID列表
 
         :param device_list: The device_list of this PublicationRequestBase.
-        :type: list[str]
+        :type device_list: list[str]
         """
         self._device_list = device_list
 

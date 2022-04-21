@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MysqlResizeFlavor:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class MysqlResizeFlavor:
     }
 
     def __init__(self, spec_code=None):
-        """MysqlResizeFlavor - a model defined in huaweicloud sdk"""
+        """MysqlResizeFlavor
+
+        The model defined in huaweicloud sdk
+
+        :param spec_code: 规格码
+        :type spec_code: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class MysqlResizeFlavor:
         规格码
 
         :param spec_code: The spec_code of this MysqlResizeFlavor.
-        :type: str
+        :type spec_code: str
         """
         self._spec_code = spec_code
 

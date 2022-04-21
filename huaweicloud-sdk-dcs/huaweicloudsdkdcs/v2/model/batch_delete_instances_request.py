@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchDeleteInstancesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchDeleteInstancesRequest:
     }
 
     def __init__(self, all_failure=None, body=None):
-        """BatchDeleteInstancesRequest - a model defined in huaweicloud sdk"""
+        """BatchDeleteInstancesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param all_failure: 是否批量删除创建失败的缓存实例。取值如下： - true，表示删除租户所有创建失败的缓存实例，此时请求参数instances可为空； - false或者其他值，表示删除instances参数数组中指定的缓存实例。 
+        :type all_failure: bool
+        :param body: Body of the BatchDeleteInstancesRequest
+        :type body: :class:`huaweicloudsdkdcs.v2.BatchDeleteBody`
+        """
         
         
 
@@ -63,7 +70,7 @@ class BatchDeleteInstancesRequest:
         是否批量删除创建失败的缓存实例。取值如下： - true，表示删除租户所有创建失败的缓存实例，此时请求参数instances可为空； - false或者其他值，表示删除instances参数数组中指定的缓存实例。 
 
         :param all_failure: The all_failure of this BatchDeleteInstancesRequest.
-        :type: bool
+        :type all_failure: bool
         """
         self._all_failure = all_failure
 
@@ -73,7 +80,7 @@ class BatchDeleteInstancesRequest:
 
 
         :return: The body of this BatchDeleteInstancesRequest.
-        :rtype: BatchDeleteBody
+        :rtype: :class:`huaweicloudsdkdcs.v2.BatchDeleteBody`
         """
         return self._body
 
@@ -83,7 +90,7 @@ class BatchDeleteInstancesRequest:
 
 
         :param body: The body of this BatchDeleteInstancesRequest.
-        :type: BatchDeleteBody
+        :type body: :class:`huaweicloudsdkdcs.v2.BatchDeleteBody`
         """
         self._body = body
 

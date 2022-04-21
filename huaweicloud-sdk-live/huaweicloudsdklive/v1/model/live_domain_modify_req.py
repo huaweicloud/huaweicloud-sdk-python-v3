@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LiveDomainModifyReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class LiveDomainModifyReq:
     }
 
     def __init__(self, domain=None, status=None):
-        """LiveDomainModifyReq - a model defined in huaweicloud sdk"""
+        """LiveDomainModifyReq
+
+        The model defined in huaweicloud sdk
+
+        :param domain: 直播域名，不允许修改
+        :type domain: str
+        :param status: 直播域名状态，通过修改此字段，实现域名的启用和停用。注意：域名处于“配置中”状态时，不允对该域名执行启停操作。
+        :type status: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class LiveDomainModifyReq:
         直播域名，不允许修改
 
         :param domain: The domain of this LiveDomainModifyReq.
-        :type: str
+        :type domain: str
         """
         self._domain = domain
 
@@ -84,7 +91,7 @@ class LiveDomainModifyReq:
         直播域名状态，通过修改此字段，实现域名的启用和停用。注意：域名处于“配置中”状态时，不允对该域名执行启停操作。
 
         :param status: The status of this LiveDomainModifyReq.
-        :type: str
+        :type status: str
         """
         self._status = status
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Workflow:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class Workflow:
     }
 
     def __init__(self, parameter=None, source=None, name=None, project_id=None, project_name=None):
-        """Workflow - a model defined in huaweicloud sdk"""
+        """Workflow
+
+        The model defined in huaweicloud sdk
+
+        :param parameter: 任务类型,list类型数据
+        :type parameter: list[:class:`huaweicloudsdkcloudpipeline.v2.PipelineParam`]
+        :param source: 源码仓,list类型数据
+        :type source: list[:class:`huaweicloudsdkcloudpipeline.v2.Source`]
+        :param name: 流水线名字
+        :type name: str
+        :param project_id: 项目ID
+        :type project_id: str
+        :param project_name: 项目名字
+        :type project_name: str
+        """
         
         
 
@@ -62,7 +75,7 @@ class Workflow:
         任务类型,list类型数据
 
         :return: The parameter of this Workflow.
-        :rtype: list[PipelineParam]
+        :rtype: list[:class:`huaweicloudsdkcloudpipeline.v2.PipelineParam`]
         """
         return self._parameter
 
@@ -73,7 +86,7 @@ class Workflow:
         任务类型,list类型数据
 
         :param parameter: The parameter of this Workflow.
-        :type: list[PipelineParam]
+        :type parameter: list[:class:`huaweicloudsdkcloudpipeline.v2.PipelineParam`]
         """
         self._parameter = parameter
 
@@ -84,7 +97,7 @@ class Workflow:
         源码仓,list类型数据
 
         :return: The source of this Workflow.
-        :rtype: list[Source]
+        :rtype: list[:class:`huaweicloudsdkcloudpipeline.v2.Source`]
         """
         return self._source
 
@@ -95,7 +108,7 @@ class Workflow:
         源码仓,list类型数据
 
         :param source: The source of this Workflow.
-        :type: list[Source]
+        :type source: list[:class:`huaweicloudsdkcloudpipeline.v2.Source`]
         """
         self._source = source
 
@@ -117,7 +130,7 @@ class Workflow:
         流水线名字
 
         :param name: The name of this Workflow.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -139,7 +152,7 @@ class Workflow:
         项目ID
 
         :param project_id: The project_id of this Workflow.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -161,7 +174,7 @@ class Workflow:
         项目名字
 
         :param project_name: The project_name of this Workflow.
-        :type: str
+        :type project_name: str
         """
         self._project_name = project_name
 

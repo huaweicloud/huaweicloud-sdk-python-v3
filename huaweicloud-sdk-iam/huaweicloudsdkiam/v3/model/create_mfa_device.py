@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateMfaDevice:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateMfaDevice:
     }
 
     def __init__(self, name=None, user_id=None):
-        """CreateMfaDevice - a model defined in huaweicloud sdk"""
+        """CreateMfaDevice
+
+        The model defined in huaweicloud sdk
+
+        :param name: 设备名称。
+        :type name: str
+        :param user_id: 创建MFA设备的IAM用户ID。
+        :type user_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class CreateMfaDevice:
         设备名称。
 
         :param name: The name of this CreateMfaDevice.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -83,7 +90,7 @@ class CreateMfaDevice:
         创建MFA设备的IAM用户ID。
 
         :param user_id: The user_id of this CreateMfaDevice.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 

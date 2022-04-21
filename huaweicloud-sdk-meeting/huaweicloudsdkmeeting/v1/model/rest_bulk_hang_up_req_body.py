@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestBulkHangUpReqBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RestBulkHangUpReqBody:
     }
 
     def __init__(self, bulk_hang_up_participants=None):
-        """RestBulkHangUpReqBody - a model defined in huaweicloud sdk"""
+        """RestBulkHangUpReqBody
+
+        The model defined in huaweicloud sdk
+
+        :param bulk_hang_up_participants: 批量挂断会场列表，列表元素为与会者标识。
+        :type bulk_hang_up_participants: list[str]
+        """
         
         
 
@@ -57,7 +62,7 @@ class RestBulkHangUpReqBody:
         批量挂断会场列表，列表元素为与会者标识。
 
         :param bulk_hang_up_participants: The bulk_hang_up_participants of this RestBulkHangUpReqBody.
-        :type: list[str]
+        :type bulk_hang_up_participants: list[str]
         """
         self._bulk_hang_up_participants = bulk_hang_up_participants
 

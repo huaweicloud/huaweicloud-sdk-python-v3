@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateRunRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateRunRequest:
     }
 
     def __init__(self, job_id=None, body=None):
-        """CreateRunRequest - a model defined in huaweicloud sdk"""
+        """CreateRunRequest
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 作业ID。
+        :type job_id: str
+        :param body: Body of the CreateRunRequest
+        :type body: :class:`huaweicloudsdkiotanalytics.v1.CreateRunRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateRunRequest:
         作业ID。
 
         :param job_id: The job_id of this CreateRunRequest.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -72,7 +79,7 @@ class CreateRunRequest:
 
 
         :return: The body of this CreateRunRequest.
-        :rtype: CreateRunRequestBody
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.CreateRunRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CreateRunRequest:
 
 
         :param body: The body of this CreateRunRequest.
-        :type: CreateRunRequestBody
+        :type body: :class:`huaweicloudsdkiotanalytics.v1.CreateRunRequestBody`
         """
         self._body = body
 

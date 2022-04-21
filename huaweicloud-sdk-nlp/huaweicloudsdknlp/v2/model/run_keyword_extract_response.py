@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunKeywordExtractResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class RunKeywordExtractResponse(SdkResponse):
     }
 
     def __init__(self, words=None, error_code=None, error_msg=None):
-        """RunKeywordExtractResponse - a model defined in huaweicloud sdk"""
+        """RunKeywordExtractResponse
+
+        The model defined in huaweicloud sdk
+
+        :param words: 关键词列表。调用失败时无此字段。
+        :type words: list[str]
+        :param error_code: 调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
+        :type error_code: str
+        :param error_msg: 调用失败时的错误信息。调用成功时无此字段。
+        :type error_msg: str
+        """
         
         super(RunKeywordExtractResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class RunKeywordExtractResponse(SdkResponse):
         关键词列表。调用失败时无此字段。
 
         :param words: The words of this RunKeywordExtractResponse.
-        :type: list[str]
+        :type words: list[str]
         """
         self._words = words
 
@@ -90,7 +99,7 @@ class RunKeywordExtractResponse(SdkResponse):
         调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
 
         :param error_code: The error_code of this RunKeywordExtractResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -112,7 +121,7 @@ class RunKeywordExtractResponse(SdkResponse):
         调用失败时的错误信息。调用成功时无此字段。
 
         :param error_msg: The error_msg of this RunKeywordExtractResponse.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 

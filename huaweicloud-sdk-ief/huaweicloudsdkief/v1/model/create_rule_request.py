@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateRuleRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateRuleRequest:
     }
 
     def __init__(self, ief_instance_id=None, body=None):
-        """CreateRuleRequest - a model defined in huaweicloud sdk"""
+        """CreateRuleRequest
+
+        The model defined in huaweicloud sdk
+
+        :param ief_instance_id: 铂金版实例ID，专业版实例为空值
+        :type ief_instance_id: str
+        :param body: Body of the CreateRuleRequest
+        :type body: :class:`huaweicloudsdkief.v1.RuleDetail`
+        """
         
         
 
@@ -63,7 +70,7 @@ class CreateRuleRequest:
         铂金版实例ID，专业版实例为空值
 
         :param ief_instance_id: The ief_instance_id of this CreateRuleRequest.
-        :type: str
+        :type ief_instance_id: str
         """
         self._ief_instance_id = ief_instance_id
 
@@ -73,7 +80,7 @@ class CreateRuleRequest:
 
 
         :return: The body of this CreateRuleRequest.
-        :rtype: RuleDetail
+        :rtype: :class:`huaweicloudsdkief.v1.RuleDetail`
         """
         return self._body
 
@@ -83,7 +90,7 @@ class CreateRuleRequest:
 
 
         :param body: The body of this CreateRuleRequest.
-        :type: RuleDetail
+        :type body: :class:`huaweicloudsdkief.v1.RuleDetail`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowAssetDetailResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ShowAssetDetailResponse(SdkResponse):
     }
 
     def __init__(self, asset_id=None, base_info=None, transcode_info=None, thumbnail_info=None, review_info=None):
-        """ShowAssetDetailResponse - a model defined in huaweicloud sdk"""
+        """ShowAssetDetailResponse
+
+        The model defined in huaweicloud sdk
+
+        :param asset_id: 媒资ID。
+        :type asset_id: str
+        :param base_info: 
+        :type base_info: :class:`huaweicloudsdkvod.v1.BaseInfo`
+        :param transcode_info: 
+        :type transcode_info: :class:`huaweicloudsdkvod.v1.TranscodeInfo`
+        :param thumbnail_info: 
+        :type thumbnail_info: :class:`huaweicloudsdkvod.v1.ThumbnailInfo`
+        :param review_info: 
+        :type review_info: :class:`huaweicloudsdkvod.v1.ReviewInfo`
+        """
         
         super(ShowAssetDetailResponse, self).__init__()
 
@@ -78,7 +91,7 @@ class ShowAssetDetailResponse(SdkResponse):
         媒资ID。
 
         :param asset_id: The asset_id of this ShowAssetDetailResponse.
-        :type: str
+        :type asset_id: str
         """
         self._asset_id = asset_id
 
@@ -88,7 +101,7 @@ class ShowAssetDetailResponse(SdkResponse):
 
 
         :return: The base_info of this ShowAssetDetailResponse.
-        :rtype: BaseInfo
+        :rtype: :class:`huaweicloudsdkvod.v1.BaseInfo`
         """
         return self._base_info
 
@@ -98,7 +111,7 @@ class ShowAssetDetailResponse(SdkResponse):
 
 
         :param base_info: The base_info of this ShowAssetDetailResponse.
-        :type: BaseInfo
+        :type base_info: :class:`huaweicloudsdkvod.v1.BaseInfo`
         """
         self._base_info = base_info
 
@@ -108,7 +121,7 @@ class ShowAssetDetailResponse(SdkResponse):
 
 
         :return: The transcode_info of this ShowAssetDetailResponse.
-        :rtype: TranscodeInfo
+        :rtype: :class:`huaweicloudsdkvod.v1.TranscodeInfo`
         """
         return self._transcode_info
 
@@ -118,7 +131,7 @@ class ShowAssetDetailResponse(SdkResponse):
 
 
         :param transcode_info: The transcode_info of this ShowAssetDetailResponse.
-        :type: TranscodeInfo
+        :type transcode_info: :class:`huaweicloudsdkvod.v1.TranscodeInfo`
         """
         self._transcode_info = transcode_info
 
@@ -128,7 +141,7 @@ class ShowAssetDetailResponse(SdkResponse):
 
 
         :return: The thumbnail_info of this ShowAssetDetailResponse.
-        :rtype: ThumbnailInfo
+        :rtype: :class:`huaweicloudsdkvod.v1.ThumbnailInfo`
         """
         return self._thumbnail_info
 
@@ -138,7 +151,7 @@ class ShowAssetDetailResponse(SdkResponse):
 
 
         :param thumbnail_info: The thumbnail_info of this ShowAssetDetailResponse.
-        :type: ThumbnailInfo
+        :type thumbnail_info: :class:`huaweicloudsdkvod.v1.ThumbnailInfo`
         """
         self._thumbnail_info = thumbnail_info
 
@@ -148,7 +161,7 @@ class ShowAssetDetailResponse(SdkResponse):
 
 
         :return: The review_info of this ShowAssetDetailResponse.
-        :rtype: ReviewInfo
+        :rtype: :class:`huaweicloudsdkvod.v1.ReviewInfo`
         """
         return self._review_info
 
@@ -158,7 +171,7 @@ class ShowAssetDetailResponse(SdkResponse):
 
 
         :param review_info: The review_info of this ShowAssetDetailResponse.
-        :type: ReviewInfo
+        :type review_info: :class:`huaweicloudsdkvod.v1.ReviewInfo`
         """
         self._review_info = review_info
 

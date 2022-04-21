@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InnerLatencyStats:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class InnerLatencyStats:
     }
 
     def __init__(self, max_inner_latency=None, avg_inner_latency=None):
-        """InnerLatencyStats - a model defined in huaweicloud sdk"""
+        """InnerLatencyStats
+
+        The model defined in huaweicloud sdk
+
+        :param max_inner_latency: 最大网关内部延时  单位：ms
+        :type max_inner_latency: int
+        :param avg_inner_latency: 平均网关内部延时  单位：ms
+        :type avg_inner_latency: float
+        """
         
         
 
@@ -63,7 +70,7 @@ class InnerLatencyStats:
         最大网关内部延时  单位：ms
 
         :param max_inner_latency: The max_inner_latency of this InnerLatencyStats.
-        :type: int
+        :type max_inner_latency: int
         """
         self._max_inner_latency = max_inner_latency
 
@@ -85,7 +92,7 @@ class InnerLatencyStats:
         平均网关内部延时  单位：ms
 
         :param avg_inner_latency: The avg_inner_latency of this InnerLatencyStats.
-        :type: float
+        :type avg_inner_latency: float
         """
         self._avg_inner_latency = avg_inner_latency
 

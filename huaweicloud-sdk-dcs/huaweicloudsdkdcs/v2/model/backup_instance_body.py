@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BackupInstanceBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BackupInstanceBody:
     }
 
     def __init__(self, remark=None, backup_format=None):
-        """BackupInstanceBody - a model defined in huaweicloud sdk"""
+        """BackupInstanceBody
+
+        The model defined in huaweicloud sdk
+
+        :param remark: 备份缓存实例的备注信息。
+        :type remark: str
+        :param backup_format: 备份缓存实例的格式。
+        :type backup_format: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class BackupInstanceBody:
         备份缓存实例的备注信息。
 
         :param remark: The remark of this BackupInstanceBody.
-        :type: str
+        :type remark: str
         """
         self._remark = remark
 
@@ -85,7 +92,7 @@ class BackupInstanceBody:
         备份缓存实例的格式。
 
         :param backup_format: The backup_format of this BackupInstanceBody.
-        :type: str
+        :type backup_format: str
         """
         self._backup_format = backup_format
 

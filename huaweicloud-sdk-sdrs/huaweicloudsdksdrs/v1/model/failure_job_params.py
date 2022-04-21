@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FailureJobParams:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class FailureJobParams:
     }
 
     def __init__(self, job_type=None, job_status=None, begin_time=None, job_id=None, failure_status=None, resource_id=None, resource_name=None, error_code=None, fail_reason=None, resource_type=None):
-        """FailureJobParams - a model defined in huaweicloud sdk"""
+        """FailureJobParams
+
+        The model defined in huaweicloud sdk
+
+        :param job_type: 任务名称。
+        :type job_type: str
+        :param job_status: 任务状态。当前仅支持“FAIL”。FAIL：表示任务失败。
+        :type job_status: str
+        :param begin_time: 任务操作时间。默认格式为：\&quot;yyyy-MM-ddTHH:mm:ss.SSSZ\&quot;，例：\&quot;2019-04-01T12:00:00.000Z\&quot;。
+        :type begin_time: str
+        :param job_id: 任务id。执行异步API命令下发成功的返回参数。
+        :type job_id: str
+        :param failure_status: 失败任务状态。createFail：表示创建失败。deleteFail：表示删除失败。attachFail：表示挂载失败。detachFail：表示卸载失败。expandFail：表示扩容失败。resizeFail：表示变更规格失败。startFail：表示开启保护失败。stopFail：表示停止保护失败。reverseFail：表示切换失败。failoverFail：表示故障切换失败。reprotectFail : 表示重保护失败。
+        :type failure_status: str
+        :param resource_id: 资源ID。
+        :type resource_id: str
+        :param resource_name: 资源名称。
+        :type resource_name: str
+        :param error_code: 任务失败错误码。
+        :type error_code: str
+        :param fail_reason: 任务失败原因。
+        :type fail_reason: str
+        :param resource_type: 资源类型。 server_groups：表示保护组。 protected_instances：表示保护实例。 replications：表示复制对。 disaster_recovery_drills：表示容灾演练。
+        :type resource_type: str
+        """
         
         
 
@@ -93,7 +116,7 @@ class FailureJobParams:
         任务名称。
 
         :param job_type: The job_type of this FailureJobParams.
-        :type: str
+        :type job_type: str
         """
         self._job_type = job_type
 
@@ -115,7 +138,7 @@ class FailureJobParams:
         任务状态。当前仅支持“FAIL”。FAIL：表示任务失败。
 
         :param job_status: The job_status of this FailureJobParams.
-        :type: str
+        :type job_status: str
         """
         self._job_status = job_status
 
@@ -137,7 +160,7 @@ class FailureJobParams:
         任务操作时间。默认格式为：\"yyyy-MM-ddTHH:mm:ss.SSSZ\"，例：\"2019-04-01T12:00:00.000Z\"。
 
         :param begin_time: The begin_time of this FailureJobParams.
-        :type: str
+        :type begin_time: str
         """
         self._begin_time = begin_time
 
@@ -159,7 +182,7 @@ class FailureJobParams:
         任务id。执行异步API命令下发成功的返回参数。
 
         :param job_id: The job_id of this FailureJobParams.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -181,7 +204,7 @@ class FailureJobParams:
         失败任务状态。createFail：表示创建失败。deleteFail：表示删除失败。attachFail：表示挂载失败。detachFail：表示卸载失败。expandFail：表示扩容失败。resizeFail：表示变更规格失败。startFail：表示开启保护失败。stopFail：表示停止保护失败。reverseFail：表示切换失败。failoverFail：表示故障切换失败。reprotectFail : 表示重保护失败。
 
         :param failure_status: The failure_status of this FailureJobParams.
-        :type: str
+        :type failure_status: str
         """
         self._failure_status = failure_status
 
@@ -203,7 +226,7 @@ class FailureJobParams:
         资源ID。
 
         :param resource_id: The resource_id of this FailureJobParams.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -225,7 +248,7 @@ class FailureJobParams:
         资源名称。
 
         :param resource_name: The resource_name of this FailureJobParams.
-        :type: str
+        :type resource_name: str
         """
         self._resource_name = resource_name
 
@@ -247,7 +270,7 @@ class FailureJobParams:
         任务失败错误码。
 
         :param error_code: The error_code of this FailureJobParams.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -269,7 +292,7 @@ class FailureJobParams:
         任务失败原因。
 
         :param fail_reason: The fail_reason of this FailureJobParams.
-        :type: str
+        :type fail_reason: str
         """
         self._fail_reason = fail_reason
 
@@ -291,7 +314,7 @@ class FailureJobParams:
         资源类型。 server_groups：表示保护组。 protected_instances：表示保护实例。 replications：表示复制对。 disaster_recovery_drills：表示容灾演练。
 
         :param resource_type: The resource_type of this FailureJobParams.
-        :type: str
+        :type resource_type: str
         """
         self._resource_type = resource_type
 

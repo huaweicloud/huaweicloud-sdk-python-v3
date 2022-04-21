@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListApisBindedToAppV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListApisBindedToAppV2Response(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, auths=None):
-        """ListApisBindedToAppV2Response - a model defined in huaweicloud sdk"""
+        """ListApisBindedToAppV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param size: 本次返回的列表长度
+        :type size: int
+        :param total: 满足条件的记录数
+        :type total: int
+        :param auths: 本次返回的API列表
+        :type auths: list[:class:`huaweicloudsdkapig.v2.ApiAuthInfo`]
+        """
         
         super(ListApisBindedToAppV2Response, self).__init__()
 
@@ -66,7 +75,7 @@ class ListApisBindedToAppV2Response(SdkResponse):
         本次返回的列表长度
 
         :param size: The size of this ListApisBindedToAppV2Response.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -88,7 +97,7 @@ class ListApisBindedToAppV2Response(SdkResponse):
         满足条件的记录数
 
         :param total: The total of this ListApisBindedToAppV2Response.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -99,7 +108,7 @@ class ListApisBindedToAppV2Response(SdkResponse):
         本次返回的API列表
 
         :return: The auths of this ListApisBindedToAppV2Response.
-        :rtype: list[ApiAuthInfo]
+        :rtype: list[:class:`huaweicloudsdkapig.v2.ApiAuthInfo`]
         """
         return self._auths
 
@@ -110,7 +119,7 @@ class ListApisBindedToAppV2Response(SdkResponse):
         本次返回的API列表
 
         :param auths: The auths of this ListApisBindedToAppV2Response.
-        :type: list[ApiAuthInfo]
+        :type auths: list[:class:`huaweicloudsdkapig.v2.ApiAuthInfo`]
         """
         self._auths = auths
 

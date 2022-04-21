@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowTaskDefectsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowTaskDefectsResponse(SdkResponse):
     }
 
     def __init__(self, defects=None, total=None):
-        """ShowTaskDefectsResponse - a model defined in huaweicloud sdk"""
+        """ShowTaskDefectsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param defects: 缺陷详情信息
+        :type defects: list[:class:`huaweicloudsdkcodecheck.v2.DefectInfoV2`]
+        :param total: 总数
+        :type total: int
+        """
         
         super(ShowTaskDefectsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ShowTaskDefectsResponse(SdkResponse):
         缺陷详情信息
 
         :return: The defects of this ShowTaskDefectsResponse.
-        :rtype: list[DefectInfoV2]
+        :rtype: list[:class:`huaweicloudsdkcodecheck.v2.DefectInfoV2`]
         """
         return self._defects
 
@@ -63,7 +70,7 @@ class ShowTaskDefectsResponse(SdkResponse):
         缺陷详情信息
 
         :param defects: The defects of this ShowTaskDefectsResponse.
-        :type: list[DefectInfoV2]
+        :type defects: list[:class:`huaweicloudsdkcodecheck.v2.DefectInfoV2`]
         """
         self._defects = defects
 
@@ -85,7 +92,7 @@ class ShowTaskDefectsResponse(SdkResponse):
         总数
 
         :param total: The total of this ShowTaskDefectsResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 

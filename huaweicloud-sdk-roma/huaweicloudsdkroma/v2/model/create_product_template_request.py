@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateProductTemplateRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateProductTemplateRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreateProductTemplateRequest - a model defined in huaweicloud sdk"""
+        """CreateProductTemplateRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param body: Body of the CreateProductTemplateRequest
+        :type body: :class:`huaweicloudsdkroma.v2.CreateProductTemplateRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateProductTemplateRequest:
         实例ID
 
         :param instance_id: The instance_id of this CreateProductTemplateRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -72,7 +79,7 @@ class CreateProductTemplateRequest:
 
 
         :return: The body of this CreateProductTemplateRequest.
-        :rtype: CreateProductTemplateRequestBody
+        :rtype: :class:`huaweicloudsdkroma.v2.CreateProductTemplateRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CreateProductTemplateRequest:
 
 
         :param body: The body of this CreateProductTemplateRequest.
-        :type: CreateProductTemplateRequestBody
+        :type body: :class:`huaweicloudsdkroma.v2.CreateProductTemplateRequestBody`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateCredentialResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class UpdateCredentialResult:
     }
 
     def __init__(self, user_id=None, access=None, status=None, create_time=None, description=None):
-        """UpdateCredentialResult - a model defined in huaweicloud sdk"""
+        """UpdateCredentialResult
+
+        The model defined in huaweicloud sdk
+
+        :param user_id: IAM用户ID。
+        :type user_id: str
+        :param access: 修改的AK。
+        :type access: str
+        :param status: 访问密钥状态。
+        :type status: str
+        :param create_time: 访问密钥创建时间。
+        :type create_time: str
+        :param description: 访问密钥描述信息。
+        :type description: str
+        """
         
         
 
@@ -73,7 +86,7 @@ class UpdateCredentialResult:
         IAM用户ID。
 
         :param user_id: The user_id of this UpdateCredentialResult.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -95,7 +108,7 @@ class UpdateCredentialResult:
         修改的AK。
 
         :param access: The access of this UpdateCredentialResult.
-        :type: str
+        :type access: str
         """
         self._access = access
 
@@ -117,7 +130,7 @@ class UpdateCredentialResult:
         访问密钥状态。
 
         :param status: The status of this UpdateCredentialResult.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -139,7 +152,7 @@ class UpdateCredentialResult:
         访问密钥创建时间。
 
         :param create_time: The create_time of this UpdateCredentialResult.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -161,7 +174,7 @@ class UpdateCredentialResult:
         访问密钥描述信息。
 
         :param description: The description of this UpdateCredentialResult.
-        :type: str
+        :type description: str
         """
         self._description = description
 

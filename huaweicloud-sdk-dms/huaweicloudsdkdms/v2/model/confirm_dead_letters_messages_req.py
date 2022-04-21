@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ConfirmDeadLettersMessagesReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ConfirmDeadLettersMessagesReq:
     }
 
     def __init__(self, message=None):
-        """ConfirmDeadLettersMessagesReq - a model defined in huaweicloud sdk"""
+        """ConfirmDeadLettersMessagesReq
+
+        The model defined in huaweicloud sdk
+
+        :param message: 确认消息数组。
+        :type message: list[:class:`huaweicloudsdkdms.v2.ConfirmMessageEntity`]
+        """
         
         
 
@@ -47,7 +52,7 @@ class ConfirmDeadLettersMessagesReq:
         确认消息数组。
 
         :return: The message of this ConfirmDeadLettersMessagesReq.
-        :rtype: list[ConfirmMessageEntity]
+        :rtype: list[:class:`huaweicloudsdkdms.v2.ConfirmMessageEntity`]
         """
         return self._message
 
@@ -58,7 +63,7 @@ class ConfirmDeadLettersMessagesReq:
         确认消息数组。
 
         :param message: The message of this ConfirmDeadLettersMessagesReq.
-        :type: list[ConfirmMessageEntity]
+        :type message: list[:class:`huaweicloudsdkdms.v2.ConfirmMessageEntity`]
         """
         self._message = message
 

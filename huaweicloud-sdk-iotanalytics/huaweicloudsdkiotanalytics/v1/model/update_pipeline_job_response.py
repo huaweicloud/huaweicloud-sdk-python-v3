@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdatePipelineJobResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UpdatePipelineJobResponse(SdkResponse):
     }
 
     def __init__(self, pipeline_id=None, pipeline_state=None, status=None, check_info=None):
-        """UpdatePipelineJobResponse - a model defined in huaweicloud sdk"""
+        """UpdatePipelineJobResponse
+
+        The model defined in huaweicloud sdk
+
+        :param pipeline_id: 管道ID
+        :type pipeline_id: str
+        :param pipeline_state: 管道状态
+        :type pipeline_state: str
+        :param status: 操作结果
+        :type status: str
+        :param check_info: 管道错误详情
+        :type check_info: dict(str, object)
+        """
         
         super(UpdatePipelineJobResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class UpdatePipelineJobResponse(SdkResponse):
         管道ID
 
         :param pipeline_id: The pipeline_id of this UpdatePipelineJobResponse.
-        :type: str
+        :type pipeline_id: str
         """
         self._pipeline_id = pipeline_id
 
@@ -95,7 +106,7 @@ class UpdatePipelineJobResponse(SdkResponse):
         管道状态
 
         :param pipeline_state: The pipeline_state of this UpdatePipelineJobResponse.
-        :type: str
+        :type pipeline_state: str
         """
         self._pipeline_state = pipeline_state
 
@@ -117,7 +128,7 @@ class UpdatePipelineJobResponse(SdkResponse):
         操作结果
 
         :param status: The status of this UpdatePipelineJobResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -139,7 +150,7 @@ class UpdatePipelineJobResponse(SdkResponse):
         管道错误详情
 
         :param check_info: The check_info of this UpdatePipelineJobResponse.
-        :type: dict(str, object)
+        :type check_info: dict(str, object)
         """
         self._check_info = check_info
 

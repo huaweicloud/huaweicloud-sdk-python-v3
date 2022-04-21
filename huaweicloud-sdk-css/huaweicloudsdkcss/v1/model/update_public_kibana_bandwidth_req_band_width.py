@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdatePublicKibanaBandwidthReqBandWidth:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdatePublicKibanaBandwidthReqBandWidth:
     }
 
     def __init__(self, size=None):
-        """UpdatePublicKibanaBandwidthReqBandWidth - a model defined in huaweicloud sdk"""
+        """UpdatePublicKibanaBandwidthReqBandWidth
+
+        The model defined in huaweicloud sdk
+
+        :param size: 修改后的带宽。
+        :type size: int
+        """
         
         
 
@@ -57,7 +62,7 @@ class UpdatePublicKibanaBandwidthReqBandWidth:
         修改后的带宽。
 
         :param size: The size of this UpdatePublicKibanaBandwidthReqBandWidth.
-        :type: int
+        :type size: int
         """
         self._size = size
 

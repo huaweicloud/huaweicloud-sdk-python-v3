@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteActiveAlarmsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteActiveAlarmsRequest:
     }
 
     def __init__(self, domain_id=None, body=None):
-        """DeleteActiveAlarmsRequest - a model defined in huaweicloud sdk"""
+        """DeleteActiveAlarmsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param domain_id: domainId
+        :type domain_id: str
+        :param body: Body of the DeleteActiveAlarmsRequest
+        :type body: :class:`huaweicloudsdklts.v2.DeleteActiveAlarmsRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class DeleteActiveAlarmsRequest:
         domainId
 
         :param domain_id: The domain_id of this DeleteActiveAlarmsRequest.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -72,7 +79,7 @@ class DeleteActiveAlarmsRequest:
 
 
         :return: The body of this DeleteActiveAlarmsRequest.
-        :rtype: DeleteActiveAlarmsRequestBody
+        :rtype: :class:`huaweicloudsdklts.v2.DeleteActiveAlarmsRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class DeleteActiveAlarmsRequest:
 
 
         :param body: The body of this DeleteActiveAlarmsRequest.
-        :type: DeleteActiveAlarmsRequestBody
+        :type body: :class:`huaweicloudsdklts.v2.DeleteActiveAlarmsRequestBody`
         """
         self._body = body
 

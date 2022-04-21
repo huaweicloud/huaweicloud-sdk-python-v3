@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddHooksResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class AddHooksResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """AddHooksResponse - a model defined in huaweicloud sdk"""
+        """AddHooksResponse
+
+        The model defined in huaweicloud sdk
+
+        :param error: 
+        :type error: :class:`huaweicloudsdkcodehub.v3.Error`
+        :param result: 
+        :type result: :class:`huaweicloudsdkcodehub.v3.RepoHook`
+        :param status: 响应状态
+        :type status: str
+        """
         
         super(AddHooksResponse, self).__init__()
 
@@ -56,7 +65,7 @@ class AddHooksResponse(SdkResponse):
 
 
         :return: The error of this AddHooksResponse.
-        :rtype: Error
+        :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
         """
         return self._error
 
@@ -66,7 +75,7 @@ class AddHooksResponse(SdkResponse):
 
 
         :param error: The error of this AddHooksResponse.
-        :type: Error
+        :type error: :class:`huaweicloudsdkcodehub.v3.Error`
         """
         self._error = error
 
@@ -76,7 +85,7 @@ class AddHooksResponse(SdkResponse):
 
 
         :return: The result of this AddHooksResponse.
-        :rtype: RepoHook
+        :rtype: :class:`huaweicloudsdkcodehub.v3.RepoHook`
         """
         return self._result
 
@@ -86,7 +95,7 @@ class AddHooksResponse(SdkResponse):
 
 
         :param result: The result of this AddHooksResponse.
-        :type: RepoHook
+        :type result: :class:`huaweicloudsdkcodehub.v3.RepoHook`
         """
         self._result = result
 
@@ -108,7 +117,7 @@ class AddHooksResponse(SdkResponse):
         响应状态
 
         :param status: The status of this AddHooksResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 

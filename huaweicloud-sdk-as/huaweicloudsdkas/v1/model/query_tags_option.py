@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryTagsOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class QueryTagsOption:
     }
 
     def __init__(self, tags=None, tags_any=None, not_tags=None, not_tags_any=None, limit=None, marker=None, action=None, offset=None, matches=None):
-        """QueryTagsOption - a model defined in huaweicloud sdk"""
+        """QueryTagsOption
+
+        The model defined in huaweicloud sdk
+
+        :param tags: 过滤条件，包含标签，最多包含10个Tag，结构体不能缺失。
+        :type tags: list[:class:`huaweicloudsdkas.v1.TagsMultiValue`]
+        :param tags_any: 过滤条件，包含任意标签，最多包含10个Tag。
+        :type tags_any: list[:class:`huaweicloudsdkas.v1.TagsMultiValue`]
+        :param not_tags: 过滤条件，不包含标签，最多包含10个Tag。
+        :type not_tags: list[:class:`huaweicloudsdkas.v1.TagsMultiValue`]
+        :param not_tags_any: 过滤条件，不包含任意标签，最多包含10个Tag。
+        :type not_tags_any: list[:class:`huaweicloudsdkas.v1.TagsMultiValue`]
+        :param limit: 查询记录数（action为count时无此参数）如果action为filter默认为1000，limit最多为1000，不能为负数，最小值为1。
+        :type limit: str
+        :param marker: 分页位置标识（资源ID或索引位置）。
+        :type marker: str
+        :param action: 操作标识（仅限filter，count）：filter（过滤）：即分页查询。count（查询总条数）：按照条件将总条数返回即可。
+        :type action: str
+        :param offset: （索引位置），从offset指定的下一条数据开始查询。查询第一页数据时，不需要传入此参数。查询后续页码数据时，将查询前一页数据时，不需要传入此参数。查询后续页码数据时，将查询前一页数据时响应体中的值带入此参数。必须为数字，不能为负数。action：count时，无此参数。action：filter时，默认为0
+        :type offset: str
+        :param matches: 模糊搜索字段。
+        :type matches: list[:class:`huaweicloudsdkas.v1.Matches`]
+        """
         
         
 
@@ -86,7 +107,7 @@ class QueryTagsOption:
         过滤条件，包含标签，最多包含10个Tag，结构体不能缺失。
 
         :return: The tags of this QueryTagsOption.
-        :rtype: list[TagsMultiValue]
+        :rtype: list[:class:`huaweicloudsdkas.v1.TagsMultiValue`]
         """
         return self._tags
 
@@ -97,7 +118,7 @@ class QueryTagsOption:
         过滤条件，包含标签，最多包含10个Tag，结构体不能缺失。
 
         :param tags: The tags of this QueryTagsOption.
-        :type: list[TagsMultiValue]
+        :type tags: list[:class:`huaweicloudsdkas.v1.TagsMultiValue`]
         """
         self._tags = tags
 
@@ -108,7 +129,7 @@ class QueryTagsOption:
         过滤条件，包含任意标签，最多包含10个Tag。
 
         :return: The tags_any of this QueryTagsOption.
-        :rtype: list[TagsMultiValue]
+        :rtype: list[:class:`huaweicloudsdkas.v1.TagsMultiValue`]
         """
         return self._tags_any
 
@@ -119,7 +140,7 @@ class QueryTagsOption:
         过滤条件，包含任意标签，最多包含10个Tag。
 
         :param tags_any: The tags_any of this QueryTagsOption.
-        :type: list[TagsMultiValue]
+        :type tags_any: list[:class:`huaweicloudsdkas.v1.TagsMultiValue`]
         """
         self._tags_any = tags_any
 
@@ -130,7 +151,7 @@ class QueryTagsOption:
         过滤条件，不包含标签，最多包含10个Tag。
 
         :return: The not_tags of this QueryTagsOption.
-        :rtype: list[TagsMultiValue]
+        :rtype: list[:class:`huaweicloudsdkas.v1.TagsMultiValue`]
         """
         return self._not_tags
 
@@ -141,7 +162,7 @@ class QueryTagsOption:
         过滤条件，不包含标签，最多包含10个Tag。
 
         :param not_tags: The not_tags of this QueryTagsOption.
-        :type: list[TagsMultiValue]
+        :type not_tags: list[:class:`huaweicloudsdkas.v1.TagsMultiValue`]
         """
         self._not_tags = not_tags
 
@@ -152,7 +173,7 @@ class QueryTagsOption:
         过滤条件，不包含任意标签，最多包含10个Tag。
 
         :return: The not_tags_any of this QueryTagsOption.
-        :rtype: list[TagsMultiValue]
+        :rtype: list[:class:`huaweicloudsdkas.v1.TagsMultiValue`]
         """
         return self._not_tags_any
 
@@ -163,7 +184,7 @@ class QueryTagsOption:
         过滤条件，不包含任意标签，最多包含10个Tag。
 
         :param not_tags_any: The not_tags_any of this QueryTagsOption.
-        :type: list[TagsMultiValue]
+        :type not_tags_any: list[:class:`huaweicloudsdkas.v1.TagsMultiValue`]
         """
         self._not_tags_any = not_tags_any
 
@@ -185,7 +206,7 @@ class QueryTagsOption:
         查询记录数（action为count时无此参数）如果action为filter默认为1000，limit最多为1000，不能为负数，最小值为1。
 
         :param limit: The limit of this QueryTagsOption.
-        :type: str
+        :type limit: str
         """
         self._limit = limit
 
@@ -207,7 +228,7 @@ class QueryTagsOption:
         分页位置标识（资源ID或索引位置）。
 
         :param marker: The marker of this QueryTagsOption.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -229,7 +250,7 @@ class QueryTagsOption:
         操作标识（仅限filter，count）：filter（过滤）：即分页查询。count（查询总条数）：按照条件将总条数返回即可。
 
         :param action: The action of this QueryTagsOption.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -251,7 +272,7 @@ class QueryTagsOption:
         （索引位置），从offset指定的下一条数据开始查询。查询第一页数据时，不需要传入此参数。查询后续页码数据时，将查询前一页数据时，不需要传入此参数。查询后续页码数据时，将查询前一页数据时响应体中的值带入此参数。必须为数字，不能为负数。action：count时，无此参数。action：filter时，默认为0
 
         :param offset: The offset of this QueryTagsOption.
-        :type: str
+        :type offset: str
         """
         self._offset = offset
 
@@ -262,7 +283,7 @@ class QueryTagsOption:
         模糊搜索字段。
 
         :return: The matches of this QueryTagsOption.
-        :rtype: list[Matches]
+        :rtype: list[:class:`huaweicloudsdkas.v1.Matches`]
         """
         return self._matches
 
@@ -273,7 +294,7 @@ class QueryTagsOption:
         模糊搜索字段。
 
         :param matches: The matches of this QueryTagsOption.
-        :type: list[Matches]
+        :type matches: list[:class:`huaweicloudsdkas.v1.Matches`]
         """
         self._matches = matches
 

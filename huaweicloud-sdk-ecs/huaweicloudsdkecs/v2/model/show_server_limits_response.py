@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowServerLimitsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowServerLimitsResponse(SdkResponse):
     }
 
     def __init__(self, absolute=None):
-        """ShowServerLimitsResponse - a model defined in huaweicloud sdk"""
+        """ShowServerLimitsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param absolute: 
+        :type absolute: :class:`huaweicloudsdkecs.v2.ServerLimits`
+        """
         
         super(ShowServerLimitsResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class ShowServerLimitsResponse(SdkResponse):
 
 
         :return: The absolute of this ShowServerLimitsResponse.
-        :rtype: ServerLimits
+        :rtype: :class:`huaweicloudsdkecs.v2.ServerLimits`
         """
         return self._absolute
 
@@ -56,7 +61,7 @@ class ShowServerLimitsResponse(SdkResponse):
 
 
         :param absolute: The absolute of this ShowServerLimitsResponse.
-        :type: ServerLimits
+        :type absolute: :class:`huaweicloudsdkecs.v2.ServerLimits`
         """
         self._absolute = absolute
 

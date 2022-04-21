@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListInstancesNodeResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class ListInstancesNodeResult:
     }
 
     def __init__(self, id=None, name=None, status=None, role=None, private_ip=None, public_ip=None, spec_code=None, availability_zone=None, support_reduce=None):
-        """ListInstancesNodeResult - a model defined in huaweicloud sdk"""
+        """ListInstancesNodeResult
+
+        The model defined in huaweicloud sdk
+
+        :param id: 节点ID。
+        :type id: str
+        :param name: 节点名称。
+        :type name: str
+        :param status: 节点状态。
+        :type status: str
+        :param role: 节点角色。 该参数仅对GaussDB(for Mongo)引擎的副本集实例有效。
+        :type role: str
+        :param private_ip: 节点内网IP。在弹性云服务器创建成功后参数值存在，否则，值为\&quot;\&quot;。
+        :type private_ip: str
+        :param public_ip: 绑定的公网IP。该参数仅针对绑定了公网IP的节点有效。
+        :type public_ip: str
+        :param spec_code: 资源规格编码。关于实例的规格信息，请参见查询所有实例规格信息中响应参数“flavors.spec_code”的值。
+        :type spec_code: str
+        :param availability_zone: 可用区。
+        :type availability_zone: str
+        :param support_reduce: 是否支持节点缩容。 - true，表示该节点支持节点缩容。 - false，表示该节点不支持节点缩容。
+        :type support_reduce: bool
+        """
         
         
 
@@ -89,7 +110,7 @@ class ListInstancesNodeResult:
         节点ID。
 
         :param id: The id of this ListInstancesNodeResult.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -111,7 +132,7 @@ class ListInstancesNodeResult:
         节点名称。
 
         :param name: The name of this ListInstancesNodeResult.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -133,7 +154,7 @@ class ListInstancesNodeResult:
         节点状态。
 
         :param status: The status of this ListInstancesNodeResult.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -155,7 +176,7 @@ class ListInstancesNodeResult:
         节点角色。 该参数仅对GaussDB(for Mongo)引擎的副本集实例有效。
 
         :param role: The role of this ListInstancesNodeResult.
-        :type: str
+        :type role: str
         """
         self._role = role
 
@@ -177,7 +198,7 @@ class ListInstancesNodeResult:
         节点内网IP。在弹性云服务器创建成功后参数值存在，否则，值为\"\"。
 
         :param private_ip: The private_ip of this ListInstancesNodeResult.
-        :type: str
+        :type private_ip: str
         """
         self._private_ip = private_ip
 
@@ -199,7 +220,7 @@ class ListInstancesNodeResult:
         绑定的公网IP。该参数仅针对绑定了公网IP的节点有效。
 
         :param public_ip: The public_ip of this ListInstancesNodeResult.
-        :type: str
+        :type public_ip: str
         """
         self._public_ip = public_ip
 
@@ -221,7 +242,7 @@ class ListInstancesNodeResult:
         资源规格编码。关于实例的规格信息，请参见查询所有实例规格信息中响应参数“flavors.spec_code”的值。
 
         :param spec_code: The spec_code of this ListInstancesNodeResult.
-        :type: str
+        :type spec_code: str
         """
         self._spec_code = spec_code
 
@@ -243,7 +264,7 @@ class ListInstancesNodeResult:
         可用区。
 
         :param availability_zone: The availability_zone of this ListInstancesNodeResult.
-        :type: str
+        :type availability_zone: str
         """
         self._availability_zone = availability_zone
 
@@ -265,7 +286,7 @@ class ListInstancesNodeResult:
         是否支持节点缩容。 - true，表示该节点支持节点缩容。 - false，表示该节点不支持节点缩容。
 
         :param support_reduce: The support_reduce of this ListInstancesNodeResult.
-        :type: bool
+        :type support_reduce: bool
         """
         self._support_reduce = support_reduce
 

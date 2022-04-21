@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowPartnersServiceInfoResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowPartnersServiceInfoResponse(SdkResponse):
     }
 
     def __init__(self, partners_service_info=None):
-        """ShowPartnersServiceInfoResponse - a model defined in huaweicloud sdk"""
+        """ShowPartnersServiceInfoResponse
+
+        The model defined in huaweicloud sdk
+
+        :param partners_service_info: 
+        :type partners_service_info: :class:`huaweicloudsdkosm.v2.PartnersServiceInfo`
+        """
         
         super(ShowPartnersServiceInfoResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class ShowPartnersServiceInfoResponse(SdkResponse):
 
 
         :return: The partners_service_info of this ShowPartnersServiceInfoResponse.
-        :rtype: PartnersServiceInfo
+        :rtype: :class:`huaweicloudsdkosm.v2.PartnersServiceInfo`
         """
         return self._partners_service_info
 
@@ -56,7 +61,7 @@ class ShowPartnersServiceInfoResponse(SdkResponse):
 
 
         :param partners_service_info: The partners_service_info of this ShowPartnersServiceInfoResponse.
-        :type: PartnersServiceInfo
+        :type partners_service_info: :class:`huaweicloudsdkosm.v2.PartnersServiceInfo`
         """
         self._partners_service_info = partners_service_info
 

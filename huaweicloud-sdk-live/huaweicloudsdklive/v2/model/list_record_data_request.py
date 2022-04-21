@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRecordDataRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListRecordDataRequest:
     }
 
     def __init__(self, publish_domain=None, start_time=None, end_time=None):
-        """ListRecordDataRequest - a model defined in huaweicloud sdk"""
+        """ListRecordDataRequest
+
+        The model defined in huaweicloud sdk
+
+        :param publish_domain: 推流域名。 
+        :type publish_domain: str
+        :param start_time: 起始时间。日期格式按照ISO8601表示法，并使用UTC时间。格式为：YYYY-MM-DDThh:mm:ssZ。  非整点时间按小时取整，若start_time为2020-08-18T07:20:40Z，则实际查询起始时间为2020-08-18T07:00:00Z。  若start_time为空，则默认查询最近24小时数据。 
+        :type start_time: str
+        :param end_time: 结束时间。日期格式按照ISO8601表示法，并使用UTC时间。格式为：YYYY-MM-DDThh:mm:ssZ。  非整点时间按小时取整，若end_time为2020-08-18T08:20:40Z，则实际查询起始时间为2020-08-18T08:00:00Z。  若参数为空，默认为当前时间。结束时间需大于起始时间。 
+        :type end_time: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class ListRecordDataRequest:
         推流域名。 
 
         :param publish_domain: The publish_domain of this ListRecordDataRequest.
-        :type: str
+        :type publish_domain: str
         """
         self._publish_domain = publish_domain
 
@@ -90,7 +99,7 @@ class ListRecordDataRequest:
         起始时间。日期格式按照ISO8601表示法，并使用UTC时间。格式为：YYYY-MM-DDThh:mm:ssZ。  非整点时间按小时取整，若start_time为2020-08-18T07:20:40Z，则实际查询起始时间为2020-08-18T07:00:00Z。  若start_time为空，则默认查询最近24小时数据。 
 
         :param start_time: The start_time of this ListRecordDataRequest.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -112,7 +121,7 @@ class ListRecordDataRequest:
         结束时间。日期格式按照ISO8601表示法，并使用UTC时间。格式为：YYYY-MM-DDThh:mm:ssZ。  非整点时间按小时取整，若end_time为2020-08-18T08:20:40Z，则实际查询起始时间为2020-08-18T08:00:00Z。  若参数为空，默认为当前时间。结束时间需大于起始时间。 
 
         :param end_time: The end_time of this ListRecordDataRequest.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 

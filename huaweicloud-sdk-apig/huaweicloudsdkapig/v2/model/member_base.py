@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MemberBase:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class MemberBase:
     }
 
     def __init__(self, host=None, weight=None, is_backup=None, member_group_name=None, status=None, port=None):
-        """MemberBase - a model defined in huaweicloud sdk"""
+        """MemberBase
+
+        The model defined in huaweicloud sdk
+
+        :param host: 后端服务器地址  后端实例类型为ip时必填
+        :type host: str
+        :param weight: 权重值。  允许您对后端服务进行评级，权重值越大，转发到该云服务的请求数量越多。
+        :type weight: int
+        :param is_backup: 是否备用节点。  开启后对应后端服务为备用节点，仅当非备用节点全部故障时工作。  实例需要升级到对应版本才支持此功能，若不支持请联系技术支持。
+        :type is_backup: bool
+        :param member_group_name: 后端服务器组名称。为后端服务地址选择服务器组，便于统一修改对应服务器组的后端地址。  暂不支持
+        :type member_group_name: str
+        :param status: 后端服务器状态   - 1：可用   - 2：不可用
+        :type status: int
+        :param port: 后端服务器端口
+        :type port: int
+        """
         
         
 
@@ -83,7 +98,7 @@ class MemberBase:
         后端服务器地址  后端实例类型为ip时必填
 
         :param host: The host of this MemberBase.
-        :type: str
+        :type host: str
         """
         self._host = host
 
@@ -105,7 +120,7 @@ class MemberBase:
         权重值。  允许您对后端服务进行评级，权重值越大，转发到该云服务的请求数量越多。
 
         :param weight: The weight of this MemberBase.
-        :type: int
+        :type weight: int
         """
         self._weight = weight
 
@@ -127,7 +142,7 @@ class MemberBase:
         是否备用节点。  开启后对应后端服务为备用节点，仅当非备用节点全部故障时工作。  实例需要升级到对应版本才支持此功能，若不支持请联系技术支持。
 
         :param is_backup: The is_backup of this MemberBase.
-        :type: bool
+        :type is_backup: bool
         """
         self._is_backup = is_backup
 
@@ -149,7 +164,7 @@ class MemberBase:
         后端服务器组名称。为后端服务地址选择服务器组，便于统一修改对应服务器组的后端地址。  暂不支持
 
         :param member_group_name: The member_group_name of this MemberBase.
-        :type: str
+        :type member_group_name: str
         """
         self._member_group_name = member_group_name
 
@@ -171,7 +186,7 @@ class MemberBase:
         后端服务器状态   - 1：可用   - 2：不可用
 
         :param status: The status of this MemberBase.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -193,7 +208,7 @@ class MemberBase:
         后端服务器端口
 
         :param port: The port of this MemberBase.
-        :type: int
+        :type port: int
         """
         self._port = port
 

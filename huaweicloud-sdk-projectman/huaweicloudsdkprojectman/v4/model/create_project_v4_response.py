@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateProjectV4Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class CreateProjectV4Response(SdkResponse):
     }
 
     def __init__(self, project_num_id=None, project_id=None, project_name=None, description=None, project_type=None, user_num_id=None):
-        """CreateProjectV4Response - a model defined in huaweicloud sdk"""
+        """CreateProjectV4Response
+
+        The model defined in huaweicloud sdk
+
+        :param project_num_id: 项目数字id
+        :type project_num_id: int
+        :param project_id: 项目id
+        :type project_id: str
+        :param project_name: 项目名
+        :type project_name: str
+        :param description: 项目描述
+        :type description: str
+        :param project_type: 项目类型
+        :type project_type: str
+        :param user_num_id: 创建者的数字id
+        :type user_num_id: int
+        """
         
         super(CreateProjectV4Response, self).__init__()
 
@@ -83,7 +98,7 @@ class CreateProjectV4Response(SdkResponse):
         项目数字id
 
         :param project_num_id: The project_num_id of this CreateProjectV4Response.
-        :type: int
+        :type project_num_id: int
         """
         self._project_num_id = project_num_id
 
@@ -105,7 +120,7 @@ class CreateProjectV4Response(SdkResponse):
         项目id
 
         :param project_id: The project_id of this CreateProjectV4Response.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -127,7 +142,7 @@ class CreateProjectV4Response(SdkResponse):
         项目名
 
         :param project_name: The project_name of this CreateProjectV4Response.
-        :type: str
+        :type project_name: str
         """
         self._project_name = project_name
 
@@ -149,7 +164,7 @@ class CreateProjectV4Response(SdkResponse):
         项目描述
 
         :param description: The description of this CreateProjectV4Response.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -171,7 +186,7 @@ class CreateProjectV4Response(SdkResponse):
         项目类型
 
         :param project_type: The project_type of this CreateProjectV4Response.
-        :type: str
+        :type project_type: str
         """
         self._project_type = project_type
 
@@ -193,7 +208,7 @@ class CreateProjectV4Response(SdkResponse):
         创建者的数字id
 
         :param user_num_id: The user_num_id of this CreateProjectV4Response.
-        :type: int
+        :type user_num_id: int
         """
         self._user_num_id = user_num_id
 

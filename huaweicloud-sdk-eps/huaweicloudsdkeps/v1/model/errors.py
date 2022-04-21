@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Errors:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class Errors:
     }
 
     def __init__(self, error_code=None, error_msg=None, project_id=None, resource_type=None):
-        """Errors - a model defined in huaweicloud sdk"""
+        """Errors
+
+        The model defined in huaweicloud sdk
+
+        :param error_code: 错误码
+        :type error_code: str
+        :param error_msg: 错误描述
+        :type error_msg: str
+        :param project_id: ProjectID
+        :type project_id: str
+        :param resource_type: 资源类型
+        :type resource_type: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class Errors:
         错误码
 
         :param error_code: The error_code of this Errors.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -95,7 +106,7 @@ class Errors:
         错误描述
 
         :param error_msg: The error_msg of this Errors.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 
@@ -117,7 +128,7 @@ class Errors:
         ProjectID
 
         :param project_id: The project_id of this Errors.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -139,7 +150,7 @@ class Errors:
         资源类型
 
         :param resource_type: The resource_type of this Errors.
-        :type: str
+        :type resource_type: str
         """
         self._resource_type = resource_type
 

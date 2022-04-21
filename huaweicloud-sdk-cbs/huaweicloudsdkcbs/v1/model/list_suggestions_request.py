@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSuggestionsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListSuggestionsRequest:
     }
 
     def __init__(self, qabot_id=None, body=None):
-        """ListSuggestionsRequest - a model defined in huaweicloud sdk"""
+        """ListSuggestionsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param qabot_id: qabot编号，UUID格式。
+        :type qabot_id: str
+        :param body: Body of the ListSuggestionsRequest
+        :type body: :class:`huaweicloudsdkcbs.v1.PostSuggestionsReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class ListSuggestionsRequest:
         qabot编号，UUID格式。
 
         :param qabot_id: The qabot_id of this ListSuggestionsRequest.
-        :type: str
+        :type qabot_id: str
         """
         self._qabot_id = qabot_id
 
@@ -72,7 +79,7 @@ class ListSuggestionsRequest:
 
 
         :return: The body of this ListSuggestionsRequest.
-        :rtype: PostSuggestionsReq
+        :rtype: :class:`huaweicloudsdkcbs.v1.PostSuggestionsReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class ListSuggestionsRequest:
 
 
         :param body: The body of this ListSuggestionsRequest.
-        :type: PostSuggestionsReq
+        :type body: :class:`huaweicloudsdkcbs.v1.PostSuggestionsReq`
         """
         self._body = body
 

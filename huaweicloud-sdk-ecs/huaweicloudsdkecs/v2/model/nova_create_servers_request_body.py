@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NovaCreateServersRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class NovaCreateServersRequestBody:
     }
 
     def __init__(self, server=None, osscheduler_hints=None):
-        """NovaCreateServersRequestBody - a model defined in huaweicloud sdk"""
+        """NovaCreateServersRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param server: 
+        :type server: :class:`huaweicloudsdkecs.v2.NovaCreateServersOption`
+        :param osscheduler_hints: 
+        :type osscheduler_hints: :class:`huaweicloudsdkecs.v2.NovaCreateServersSchedulerHint`
+        """
         
         
 
@@ -50,7 +57,7 @@ class NovaCreateServersRequestBody:
 
 
         :return: The server of this NovaCreateServersRequestBody.
-        :rtype: NovaCreateServersOption
+        :rtype: :class:`huaweicloudsdkecs.v2.NovaCreateServersOption`
         """
         return self._server
 
@@ -60,7 +67,7 @@ class NovaCreateServersRequestBody:
 
 
         :param server: The server of this NovaCreateServersRequestBody.
-        :type: NovaCreateServersOption
+        :type server: :class:`huaweicloudsdkecs.v2.NovaCreateServersOption`
         """
         self._server = server
 
@@ -70,7 +77,7 @@ class NovaCreateServersRequestBody:
 
 
         :return: The osscheduler_hints of this NovaCreateServersRequestBody.
-        :rtype: NovaCreateServersSchedulerHint
+        :rtype: :class:`huaweicloudsdkecs.v2.NovaCreateServersSchedulerHint`
         """
         return self._osscheduler_hints
 
@@ -80,7 +87,7 @@ class NovaCreateServersRequestBody:
 
 
         :param osscheduler_hints: The osscheduler_hints of this NovaCreateServersRequestBody.
-        :type: NovaCreateServersSchedulerHint
+        :type osscheduler_hints: :class:`huaweicloudsdkecs.v2.NovaCreateServersSchedulerHint`
         """
         self._osscheduler_hints = osscheduler_hints
 

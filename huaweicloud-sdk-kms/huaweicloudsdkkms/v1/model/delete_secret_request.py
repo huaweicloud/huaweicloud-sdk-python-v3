@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteSecretRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteSecretRequest:
     }
 
     def __init__(self, secret_id=None):
-        """DeleteSecretRequest - a model defined in huaweicloud sdk"""
+        """DeleteSecretRequest
+
+        The model defined in huaweicloud sdk
+
+        :param secret_id: 凭据的资源标识符。
+        :type secret_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteSecretRequest:
         凭据的资源标识符。
 
         :param secret_id: The secret_id of this DeleteSecretRequest.
-        :type: str
+        :type secret_id: str
         """
         self._secret_id = secret_id
 

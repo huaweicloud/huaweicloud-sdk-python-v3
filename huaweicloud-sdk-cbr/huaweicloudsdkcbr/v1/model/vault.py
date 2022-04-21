@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Vault:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -60,7 +59,43 @@ class Vault:
     }
 
     def __init__(self, billing=None, description=None, id=None, name=None, project_id=None, provider_id=None, resources=None, tags=None, enterprise_project_id=None, auto_bind=None, bind_rules=None, user_id=None, created_at=None, auto_expand=None, smn_notify=None, threshold=None):
-        """Vault - a model defined in huaweicloud sdk"""
+        """Vault
+
+        The model defined in huaweicloud sdk
+
+        :param billing: 
+        :type billing: :class:`huaweicloudsdkcbr.v1.Billing`
+        :param description: 存储库自定义描述信息。
+        :type description: str
+        :param id: 存储库ID
+        :type id: str
+        :param name: 存储库名称
+        :type name: str
+        :param project_id: 项目ID
+        :type project_id: str
+        :param provider_id: 存储库资源类型id
+        :type provider_id: str
+        :param resources: 存储库资源
+        :type resources: list[:class:`huaweicloudsdkcbr.v1.ResourceResp`]
+        :param tags: 存储库标签
+        :type tags: list[:class:`huaweicloudsdkcbr.v1.Tag`]
+        :param enterprise_project_id: 企业项目id，默认为‘0’。
+        :type enterprise_project_id: str
+        :param auto_bind: 是否自动绑定，默认为false，不支持。
+        :type auto_bind: bool
+        :param bind_rules: 
+        :type bind_rules: :class:`huaweicloudsdkcbr.v1.VaultBindRules`
+        :param user_id: 用户id
+        :type user_id: str
+        :param created_at: 创建时间,例如:\&quot;2020-02-05T10:38:34.209782\&quot;
+        :type created_at: str
+        :param auto_expand: 是否开启存储库自动扩容能力（只支持按需存储库）。
+        :type auto_expand: bool
+        :param smn_notify: 存储库smn消息通知开关
+        :type smn_notify: bool
+        :param threshold: 存储库容量阈值，已用容量占总容量达到此百分比即发送相关通知
+        :type threshold: int
+        """
         
         
 
@@ -115,7 +150,7 @@ class Vault:
 
 
         :return: The billing of this Vault.
-        :rtype: Billing
+        :rtype: :class:`huaweicloudsdkcbr.v1.Billing`
         """
         return self._billing
 
@@ -125,7 +160,7 @@ class Vault:
 
 
         :param billing: The billing of this Vault.
-        :type: Billing
+        :type billing: :class:`huaweicloudsdkcbr.v1.Billing`
         """
         self._billing = billing
 
@@ -147,7 +182,7 @@ class Vault:
         存储库自定义描述信息。
 
         :param description: The description of this Vault.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -169,7 +204,7 @@ class Vault:
         存储库ID
 
         :param id: The id of this Vault.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -191,7 +226,7 @@ class Vault:
         存储库名称
 
         :param name: The name of this Vault.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -213,7 +248,7 @@ class Vault:
         项目ID
 
         :param project_id: The project_id of this Vault.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -235,7 +270,7 @@ class Vault:
         存储库资源类型id
 
         :param provider_id: The provider_id of this Vault.
-        :type: str
+        :type provider_id: str
         """
         self._provider_id = provider_id
 
@@ -246,7 +281,7 @@ class Vault:
         存储库资源
 
         :return: The resources of this Vault.
-        :rtype: list[ResourceResp]
+        :rtype: list[:class:`huaweicloudsdkcbr.v1.ResourceResp`]
         """
         return self._resources
 
@@ -257,7 +292,7 @@ class Vault:
         存储库资源
 
         :param resources: The resources of this Vault.
-        :type: list[ResourceResp]
+        :type resources: list[:class:`huaweicloudsdkcbr.v1.ResourceResp`]
         """
         self._resources = resources
 
@@ -268,7 +303,7 @@ class Vault:
         存储库标签
 
         :return: The tags of this Vault.
-        :rtype: list[Tag]
+        :rtype: list[:class:`huaweicloudsdkcbr.v1.Tag`]
         """
         return self._tags
 
@@ -279,7 +314,7 @@ class Vault:
         存储库标签
 
         :param tags: The tags of this Vault.
-        :type: list[Tag]
+        :type tags: list[:class:`huaweicloudsdkcbr.v1.Tag`]
         """
         self._tags = tags
 
@@ -301,7 +336,7 @@ class Vault:
         企业项目id，默认为‘0’。
 
         :param enterprise_project_id: The enterprise_project_id of this Vault.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -323,7 +358,7 @@ class Vault:
         是否自动绑定，默认为false，不支持。
 
         :param auto_bind: The auto_bind of this Vault.
-        :type: bool
+        :type auto_bind: bool
         """
         self._auto_bind = auto_bind
 
@@ -333,7 +368,7 @@ class Vault:
 
 
         :return: The bind_rules of this Vault.
-        :rtype: VaultBindRules
+        :rtype: :class:`huaweicloudsdkcbr.v1.VaultBindRules`
         """
         return self._bind_rules
 
@@ -343,7 +378,7 @@ class Vault:
 
 
         :param bind_rules: The bind_rules of this Vault.
-        :type: VaultBindRules
+        :type bind_rules: :class:`huaweicloudsdkcbr.v1.VaultBindRules`
         """
         self._bind_rules = bind_rules
 
@@ -365,7 +400,7 @@ class Vault:
         用户id
 
         :param user_id: The user_id of this Vault.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -387,7 +422,7 @@ class Vault:
         创建时间,例如:\"2020-02-05T10:38:34.209782\"
 
         :param created_at: The created_at of this Vault.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -409,7 +444,7 @@ class Vault:
         是否开启存储库自动扩容能力（只支持按需存储库）。
 
         :param auto_expand: The auto_expand of this Vault.
-        :type: bool
+        :type auto_expand: bool
         """
         self._auto_expand = auto_expand
 
@@ -431,7 +466,7 @@ class Vault:
         存储库smn消息通知开关
 
         :param smn_notify: The smn_notify of this Vault.
-        :type: bool
+        :type smn_notify: bool
         """
         self._smn_notify = smn_notify
 
@@ -453,7 +488,7 @@ class Vault:
         存储库容量阈值，已用容量占总容量达到此百分比即发送相关通知
 
         :param threshold: The threshold of this Vault.
-        :type: int
+        :type threshold: int
         """
         self._threshold = threshold
 

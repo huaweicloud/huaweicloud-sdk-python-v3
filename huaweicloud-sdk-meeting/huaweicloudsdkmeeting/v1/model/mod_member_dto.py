@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ModMemberDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ModMemberDTO:
     }
 
     def __init__(self, name=None, english_name=None, signature=None, title=None, desc=None):
-        """ModMemberDTO - a model defined in huaweicloud sdk"""
+        """ModMemberDTO
+
+        The model defined in huaweicloud sdk
+
+        :param name: 名称 maxLength：64 minLength：1
+        :type name: str
+        :param english_name: 英文名称 maxLength：64 minLength：0
+        :type english_name: str
+        :param signature: 签名 maxLength：512 minLength：0
+        :type signature: str
+        :param title: 职位 maxLength：32 minLength：0
+        :type title: str
+        :param desc: 备注 maxLength：128 minLength：0
+        :type desc: str
+        """
         
         
 
@@ -77,7 +90,7 @@ class ModMemberDTO:
         名称 maxLength：64 minLength：1
 
         :param name: The name of this ModMemberDTO.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -99,7 +112,7 @@ class ModMemberDTO:
         英文名称 maxLength：64 minLength：0
 
         :param english_name: The english_name of this ModMemberDTO.
-        :type: str
+        :type english_name: str
         """
         self._english_name = english_name
 
@@ -121,7 +134,7 @@ class ModMemberDTO:
         签名 maxLength：512 minLength：0
 
         :param signature: The signature of this ModMemberDTO.
-        :type: str
+        :type signature: str
         """
         self._signature = signature
 
@@ -143,7 +156,7 @@ class ModMemberDTO:
         职位 maxLength：32 minLength：0
 
         :param title: The title of this ModMemberDTO.
-        :type: str
+        :type title: str
         """
         self._title = title
 
@@ -165,7 +178,7 @@ class ModMemberDTO:
         备注 maxLength：128 minLength：0
 
         :param desc: The desc of this ModMemberDTO.
-        :type: str
+        :type desc: str
         """
         self._desc = desc
 

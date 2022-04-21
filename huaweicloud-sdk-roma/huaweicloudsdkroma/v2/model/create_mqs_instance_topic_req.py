@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateMqsInstanceTopicReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class CreateMqsInstanceTopicReq:
     }
 
     def __init__(self, name=None, app_id=None, partition=None, replication=None, access_policy=None, sync_message_flush=None, sync_replication=None, retention_time=None, tag=None, description=None, sensitive_word=None):
-        """CreateMqsInstanceTopicReq - a model defined in huaweicloud sdk"""
+        """CreateMqsInstanceTopicReq
+
+        The model defined in huaweicloud sdk
+
+        :param name: topic名称，以字母开头，仅能包含数字,字母,下划线(_)，中划线（-）,长度3-200字符。
+        :type name: str
+        :param app_id: 集成应用key。
+        :type app_id: str
+        :param partition: topic分区数，设置消费的并发数。  取值范围：1-50。  默认值：3。
+        :type partition: int
+        :param replication: 副本数，配置数据的可靠性。  取值范围：1-3。  默认值：3。  &gt; 体验版实例的副本数只能为1。
+        :type replication: int
+        :param access_policy: 权限类型。   - all：发布+订阅   - pub：发布   - sub：订阅
+        :type access_policy: str
+        :param sync_message_flush: 是否使用同步落盘。默认值为false。同步落盘会导致性能降低。
+        :type sync_message_flush: bool
+        :param sync_replication: 是否开启同步复制，开启后，客户端生产消息时相应的也要设置acks&#x3D;-1，否则不生效,默认关闭。
+        :type sync_replication: bool
+        :param retention_time: 消息老化时间。默认值为72。取值范围1~720，单位小时。
+        :type retention_time: int
+        :param tag: 权限类型对应的标签。  当权限类型是all时，发布和订阅的标签用符号“&amp;”隔开。  当有多个标签时，标签用符号“||”隔开。
+        :type tag: str
+        :param description: 描述。长度0-1000字符。
+        :type description: str
+        :param sensitive_word: 敏感字段。  当有多个敏感字段时，敏感字段用符号“||”隔开。
+        :type sensitive_word: str
+        """
         
         
 
@@ -105,7 +130,7 @@ class CreateMqsInstanceTopicReq:
         topic名称，以字母开头，仅能包含数字,字母,下划线(_)，中划线（-）,长度3-200字符。
 
         :param name: The name of this CreateMqsInstanceTopicReq.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -127,7 +152,7 @@ class CreateMqsInstanceTopicReq:
         集成应用key。
 
         :param app_id: The app_id of this CreateMqsInstanceTopicReq.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -149,7 +174,7 @@ class CreateMqsInstanceTopicReq:
         topic分区数，设置消费的并发数。  取值范围：1-50。  默认值：3。
 
         :param partition: The partition of this CreateMqsInstanceTopicReq.
-        :type: int
+        :type partition: int
         """
         self._partition = partition
 
@@ -171,7 +196,7 @@ class CreateMqsInstanceTopicReq:
         副本数，配置数据的可靠性。  取值范围：1-3。  默认值：3。  > 体验版实例的副本数只能为1。
 
         :param replication: The replication of this CreateMqsInstanceTopicReq.
-        :type: int
+        :type replication: int
         """
         self._replication = replication
 
@@ -193,7 +218,7 @@ class CreateMqsInstanceTopicReq:
         权限类型。   - all：发布+订阅   - pub：发布   - sub：订阅
 
         :param access_policy: The access_policy of this CreateMqsInstanceTopicReq.
-        :type: str
+        :type access_policy: str
         """
         self._access_policy = access_policy
 
@@ -215,7 +240,7 @@ class CreateMqsInstanceTopicReq:
         是否使用同步落盘。默认值为false。同步落盘会导致性能降低。
 
         :param sync_message_flush: The sync_message_flush of this CreateMqsInstanceTopicReq.
-        :type: bool
+        :type sync_message_flush: bool
         """
         self._sync_message_flush = sync_message_flush
 
@@ -237,7 +262,7 @@ class CreateMqsInstanceTopicReq:
         是否开启同步复制，开启后，客户端生产消息时相应的也要设置acks=-1，否则不生效,默认关闭。
 
         :param sync_replication: The sync_replication of this CreateMqsInstanceTopicReq.
-        :type: bool
+        :type sync_replication: bool
         """
         self._sync_replication = sync_replication
 
@@ -259,7 +284,7 @@ class CreateMqsInstanceTopicReq:
         消息老化时间。默认值为72。取值范围1~720，单位小时。
 
         :param retention_time: The retention_time of this CreateMqsInstanceTopicReq.
-        :type: int
+        :type retention_time: int
         """
         self._retention_time = retention_time
 
@@ -281,7 +306,7 @@ class CreateMqsInstanceTopicReq:
         权限类型对应的标签。  当权限类型是all时，发布和订阅的标签用符号“&”隔开。  当有多个标签时，标签用符号“||”隔开。
 
         :param tag: The tag of this CreateMqsInstanceTopicReq.
-        :type: str
+        :type tag: str
         """
         self._tag = tag
 
@@ -303,7 +328,7 @@ class CreateMqsInstanceTopicReq:
         描述。长度0-1000字符。
 
         :param description: The description of this CreateMqsInstanceTopicReq.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -325,7 +350,7 @@ class CreateMqsInstanceTopicReq:
         敏感字段。  当有多个敏感字段时，敏感字段用符号“||”隔开。
 
         :param sensitive_word: The sensitive_word of this CreateMqsInstanceTopicReq.
-        :type: str
+        :type sensitive_word: str
         """
         self._sensitive_word = sensitive_word
 

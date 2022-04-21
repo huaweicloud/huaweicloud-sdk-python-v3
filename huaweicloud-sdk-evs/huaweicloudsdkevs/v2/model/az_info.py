@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AzInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AzInfo:
     }
 
     def __init__(self, zone_name=None, zone_state=None):
-        """AzInfo - a model defined in huaweicloud sdk"""
+        """AzInfo
+
+        The model defined in huaweicloud sdk
+
+        :param zone_name: 可用分区的名字。
+        :type zone_name: str
+        :param zone_state: 
+        :type zone_state: :class:`huaweicloudsdkevs.v2.ZoneState`
+        """
         
         
 
@@ -61,7 +68,7 @@ class AzInfo:
         可用分区的名字。
 
         :param zone_name: The zone_name of this AzInfo.
-        :type: str
+        :type zone_name: str
         """
         self._zone_name = zone_name
 
@@ -71,7 +78,7 @@ class AzInfo:
 
 
         :return: The zone_state of this AzInfo.
-        :rtype: ZoneState
+        :rtype: :class:`huaweicloudsdkevs.v2.ZoneState`
         """
         return self._zone_state
 
@@ -81,7 +88,7 @@ class AzInfo:
 
 
         :param zone_state: The zone_state of this AzInfo.
-        :type: ZoneState
+        :type zone_state: :class:`huaweicloudsdkevs.v2.ZoneState`
         """
         self._zone_state = zone_state
 

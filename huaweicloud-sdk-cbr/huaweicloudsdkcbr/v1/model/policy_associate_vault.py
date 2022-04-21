@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PolicyAssociateVault:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class PolicyAssociateVault:
     }
 
     def __init__(self, destination_vault_id=None, vault_id=None):
-        """PolicyAssociateVault - a model defined in huaweicloud sdk"""
+        """PolicyAssociateVault
+
+        The model defined in huaweicloud sdk
+
+        :param destination_vault_id: 关联的远端存储库ID
+        :type destination_vault_id: str
+        :param vault_id: 存储库ID
+        :type vault_id: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class PolicyAssociateVault:
         关联的远端存储库ID
 
         :param destination_vault_id: The destination_vault_id of this PolicyAssociateVault.
-        :type: str
+        :type destination_vault_id: str
         """
         self._destination_vault_id = destination_vault_id
 
@@ -84,7 +91,7 @@ class PolicyAssociateVault:
         存储库ID
 
         :param vault_id: The vault_id of this PolicyAssociateVault.
-        :type: str
+        :type vault_id: str
         """
         self._vault_id = vault_id
 

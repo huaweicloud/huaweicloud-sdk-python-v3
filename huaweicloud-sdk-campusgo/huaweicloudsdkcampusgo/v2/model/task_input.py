@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TaskInput:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class TaskInput:
     }
 
     def __init__(self, type=None, data=None, vcn=None):
-        """TaskInput - a model defined in huaweicloud sdk"""
+        """TaskInput
+
+        The model defined in huaweicloud sdk
+
+        :param type: 作业的输入类型，必填。可选类型有obs（对象存储服务存储的文件），vis（视频接入服务的视频流），url（指定的文件地址或取流地址），edgecamera（绑定在IEF的边缘摄像头），edgerestful（从自定义的流媒体服务器通过Restful接口获取取流地址），vcn（VCN设备）。
+        :type type: str
+        :param data: 作业的输入详情，针对不同的输入类型有不同的配置。创建时允许填写多路输入，但更新时，obs以外其余的输入类型只允许填写一路输入
+        :type data: list[:class:`huaweicloudsdkcampusgo.v2.TaskInputData`]
+        :param vcn: 
+        :type vcn: :class:`huaweicloudsdkcampusgo.v2.TaskInputVcn`
+        """
         
         
 
@@ -66,7 +75,7 @@ class TaskInput:
         作业的输入类型，必填。可选类型有obs（对象存储服务存储的文件），vis（视频接入服务的视频流），url（指定的文件地址或取流地址），edgecamera（绑定在IEF的边缘摄像头），edgerestful（从自定义的流媒体服务器通过Restful接口获取取流地址），vcn（VCN设备）。
 
         :param type: The type of this TaskInput.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -77,7 +86,7 @@ class TaskInput:
         作业的输入详情，针对不同的输入类型有不同的配置。创建时允许填写多路输入，但更新时，obs以外其余的输入类型只允许填写一路输入
 
         :return: The data of this TaskInput.
-        :rtype: list[TaskInputData]
+        :rtype: list[:class:`huaweicloudsdkcampusgo.v2.TaskInputData`]
         """
         return self._data
 
@@ -88,7 +97,7 @@ class TaskInput:
         作业的输入详情，针对不同的输入类型有不同的配置。创建时允许填写多路输入，但更新时，obs以外其余的输入类型只允许填写一路输入
 
         :param data: The data of this TaskInput.
-        :type: list[TaskInputData]
+        :type data: list[:class:`huaweicloudsdkcampusgo.v2.TaskInputData`]
         """
         self._data = data
 
@@ -98,7 +107,7 @@ class TaskInput:
 
 
         :return: The vcn of this TaskInput.
-        :rtype: TaskInputVcn
+        :rtype: :class:`huaweicloudsdkcampusgo.v2.TaskInputVcn`
         """
         return self._vcn
 
@@ -108,7 +117,7 @@ class TaskInput:
 
 
         :param vcn: The vcn of this TaskInput.
-        :type: TaskInputVcn
+        :type vcn: :class:`huaweicloudsdkcampusgo.v2.TaskInputVcn`
         """
         self._vcn = vcn
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AssetReviewReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AssetReviewReq:
     }
 
     def __init__(self, asset_id=None, review=None):
-        """AssetReviewReq - a model defined in huaweicloud sdk"""
+        """AssetReviewReq
+
+        The model defined in huaweicloud sdk
+
+        :param asset_id: 媒资ID
+        :type asset_id: str
+        :param review: 
+        :type review: :class:`huaweicloudsdkvod.v1.Review`
+        """
         
         
 
@@ -61,7 +68,7 @@ class AssetReviewReq:
         媒资ID
 
         :param asset_id: The asset_id of this AssetReviewReq.
-        :type: str
+        :type asset_id: str
         """
         self._asset_id = asset_id
 
@@ -71,7 +78,7 @@ class AssetReviewReq:
 
 
         :return: The review of this AssetReviewReq.
-        :rtype: Review
+        :rtype: :class:`huaweicloudsdkvod.v1.Review`
         """
         return self._review
 
@@ -81,7 +88,7 @@ class AssetReviewReq:
 
 
         :param review: The review of this AssetReviewReq.
-        :type: Review
+        :type review: :class:`huaweicloudsdkvod.v1.Review`
         """
         self._review = review
 

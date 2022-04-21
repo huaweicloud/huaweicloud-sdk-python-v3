@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListMetadatasRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListMetadatasRequest:
     }
 
     def __init__(self, limit=None, offset=None):
-        """ListMetadatasRequest - a model defined in huaweicloud sdk"""
+        """ListMetadatasRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 每页资源数量的最大值，默认为10。
+        :type limit: int
+        :param offset: 本次请求的起始位置，默认为0。
+        :type offset: int
+        """
         
         
 
@@ -63,7 +70,7 @@ class ListMetadatasRequest:
         每页资源数量的最大值，默认为10。
 
         :param limit: The limit of this ListMetadatasRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -85,7 +92,7 @@ class ListMetadatasRequest:
         本次请求的起始位置，默认为0。
 
         :param offset: The offset of this ListMetadatasRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 

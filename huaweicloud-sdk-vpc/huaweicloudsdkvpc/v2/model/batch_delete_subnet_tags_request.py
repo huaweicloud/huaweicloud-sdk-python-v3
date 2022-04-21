@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchDeleteSubnetTagsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchDeleteSubnetTagsRequest:
     }
 
     def __init__(self, subnet_id=None, body=None):
-        """BatchDeleteSubnetTagsRequest - a model defined in huaweicloud sdk"""
+        """BatchDeleteSubnetTagsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param subnet_id: 子网ID
+        :type subnet_id: str
+        :param body: Body of the BatchDeleteSubnetTagsRequest
+        :type body: :class:`huaweicloudsdkvpc.v2.BatchDeleteSubnetTagsRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class BatchDeleteSubnetTagsRequest:
         子网ID
 
         :param subnet_id: The subnet_id of this BatchDeleteSubnetTagsRequest.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -72,7 +79,7 @@ class BatchDeleteSubnetTagsRequest:
 
 
         :return: The body of this BatchDeleteSubnetTagsRequest.
-        :rtype: BatchDeleteSubnetTagsRequestBody
+        :rtype: :class:`huaweicloudsdkvpc.v2.BatchDeleteSubnetTagsRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class BatchDeleteSubnetTagsRequest:
 
 
         :param body: The body of this BatchDeleteSubnetTagsRequest.
-        :type: BatchDeleteSubnetTagsRequestBody
+        :type body: :class:`huaweicloudsdkvpc.v2.BatchDeleteSubnetTagsRequestBody`
         """
         self._body = body
 

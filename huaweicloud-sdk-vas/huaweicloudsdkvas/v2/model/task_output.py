@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TaskOutput:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class TaskOutput:
     }
 
     def __init__(self, obs=None, dis=None, webhook=None, hosting=None, localpath=None):
-        """TaskOutput - a model defined in huaweicloud sdk"""
+        """TaskOutput
+
+        The model defined in huaweicloud sdk
+
+        :param obs: 
+        :type obs: :class:`huaweicloudsdkvas.v2.TaskOutputObs`
+        :param dis: 
+        :type dis: :class:`huaweicloudsdkvas.v2.TaskOutputDis`
+        :param webhook: 
+        :type webhook: :class:`huaweicloudsdkvas.v2.TaskOutputWebhook`
+        :param hosting: 
+        :type hosting: :class:`huaweicloudsdkvas.v2.TaskOutputHosting`
+        :param localpath: 
+        :type localpath: :class:`huaweicloudsdkvas.v2.TaskOutputLocalpath`
+        """
         
         
 
@@ -66,7 +79,7 @@ class TaskOutput:
 
 
         :return: The obs of this TaskOutput.
-        :rtype: TaskOutputObs
+        :rtype: :class:`huaweicloudsdkvas.v2.TaskOutputObs`
         """
         return self._obs
 
@@ -76,7 +89,7 @@ class TaskOutput:
 
 
         :param obs: The obs of this TaskOutput.
-        :type: TaskOutputObs
+        :type obs: :class:`huaweicloudsdkvas.v2.TaskOutputObs`
         """
         self._obs = obs
 
@@ -86,7 +99,7 @@ class TaskOutput:
 
 
         :return: The dis of this TaskOutput.
-        :rtype: TaskOutputDis
+        :rtype: :class:`huaweicloudsdkvas.v2.TaskOutputDis`
         """
         return self._dis
 
@@ -96,7 +109,7 @@ class TaskOutput:
 
 
         :param dis: The dis of this TaskOutput.
-        :type: TaskOutputDis
+        :type dis: :class:`huaweicloudsdkvas.v2.TaskOutputDis`
         """
         self._dis = dis
 
@@ -106,7 +119,7 @@ class TaskOutput:
 
 
         :return: The webhook of this TaskOutput.
-        :rtype: TaskOutputWebhook
+        :rtype: :class:`huaweicloudsdkvas.v2.TaskOutputWebhook`
         """
         return self._webhook
 
@@ -116,7 +129,7 @@ class TaskOutput:
 
 
         :param webhook: The webhook of this TaskOutput.
-        :type: TaskOutputWebhook
+        :type webhook: :class:`huaweicloudsdkvas.v2.TaskOutputWebhook`
         """
         self._webhook = webhook
 
@@ -126,7 +139,7 @@ class TaskOutput:
 
 
         :return: The hosting of this TaskOutput.
-        :rtype: TaskOutputHosting
+        :rtype: :class:`huaweicloudsdkvas.v2.TaskOutputHosting`
         """
         return self._hosting
 
@@ -136,7 +149,7 @@ class TaskOutput:
 
 
         :param hosting: The hosting of this TaskOutput.
-        :type: TaskOutputHosting
+        :type hosting: :class:`huaweicloudsdkvas.v2.TaskOutputHosting`
         """
         self._hosting = hosting
 
@@ -146,7 +159,7 @@ class TaskOutput:
 
 
         :return: The localpath of this TaskOutput.
-        :rtype: TaskOutputLocalpath
+        :rtype: :class:`huaweicloudsdkvas.v2.TaskOutputLocalpath`
         """
         return self._localpath
 
@@ -156,7 +169,7 @@ class TaskOutput:
 
 
         :param localpath: The localpath of this TaskOutput.
-        :type: TaskOutputLocalpath
+        :type localpath: :class:`huaweicloudsdkvas.v2.TaskOutputLocalpath`
         """
         self._localpath = localpath
 

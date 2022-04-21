@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDispatchesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UpdateDispatchesRequest:
     }
 
     def __init__(self, instance_id=None, task_id=None, dispatch_id=None, body=None):
-        """UpdateDispatchesRequest - a model defined in huaweicloud sdk"""
+        """UpdateDispatchesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param task_id: 任务ID
+        :type task_id: str
+        :param dispatch_id: 调度唯一标识，调度计划ID
+        :type dispatch_id: str
+        :param body: Body of the UpdateDispatchesRequest
+        :type body: :class:`huaweicloudsdkroma.v2.TaskDispatch`
+        """
         
         
 
@@ -70,7 +81,7 @@ class UpdateDispatchesRequest:
         实例ID
 
         :param instance_id: The instance_id of this UpdateDispatchesRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -92,7 +103,7 @@ class UpdateDispatchesRequest:
         任务ID
 
         :param task_id: The task_id of this UpdateDispatchesRequest.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -114,7 +125,7 @@ class UpdateDispatchesRequest:
         调度唯一标识，调度计划ID
 
         :param dispatch_id: The dispatch_id of this UpdateDispatchesRequest.
-        :type: str
+        :type dispatch_id: str
         """
         self._dispatch_id = dispatch_id
 
@@ -124,7 +135,7 @@ class UpdateDispatchesRequest:
 
 
         :return: The body of this UpdateDispatchesRequest.
-        :rtype: TaskDispatch
+        :rtype: :class:`huaweicloudsdkroma.v2.TaskDispatch`
         """
         return self._body
 
@@ -134,7 +145,7 @@ class UpdateDispatchesRequest:
 
 
         :param body: The body of this UpdateDispatchesRequest.
-        :type: TaskDispatch
+        :type body: :class:`huaweicloudsdkroma.v2.TaskDispatch`
         """
         self._body = body
 

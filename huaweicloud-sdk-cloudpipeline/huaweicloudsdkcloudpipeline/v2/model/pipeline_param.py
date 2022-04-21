@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PipelineParam:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class PipelineParam:
     }
 
     def __init__(self, name=None, value=None, description=None, param_type=None, is_static=None, is_default=None):
-        """PipelineParam - a model defined in huaweicloud sdk"""
+        """PipelineParam
+
+        The model defined in huaweicloud sdk
+
+        :param name: 流水线参数名字
+        :type name: str
+        :param value: 流水线参数值
+        :type value: str
+        :param description: 流水线参数描述
+        :type description: str
+        :param param_type: 流水线参数类型
+        :type param_type: str
+        :param is_static: 是否静态参数
+        :type is_static: bool
+        :param is_default: 是否默认参数
+        :type is_default: bool
+        """
         
         
 
@@ -77,7 +92,7 @@ class PipelineParam:
         流水线参数名字
 
         :param name: The name of this PipelineParam.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -99,7 +114,7 @@ class PipelineParam:
         流水线参数值
 
         :param value: The value of this PipelineParam.
-        :type: str
+        :type value: str
         """
         self._value = value
 
@@ -121,7 +136,7 @@ class PipelineParam:
         流水线参数描述
 
         :param description: The description of this PipelineParam.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -143,7 +158,7 @@ class PipelineParam:
         流水线参数类型
 
         :param param_type: The param_type of this PipelineParam.
-        :type: str
+        :type param_type: str
         """
         self._param_type = param_type
 
@@ -165,7 +180,7 @@ class PipelineParam:
         是否静态参数
 
         :param is_static: The is_static of this PipelineParam.
-        :type: bool
+        :type is_static: bool
         """
         self._is_static = is_static
 
@@ -187,7 +202,7 @@ class PipelineParam:
         是否默认参数
 
         :param is_default: The is_default of this PipelineParam.
-        :type: bool
+        :type is_default: bool
         """
         self._is_default = is_default
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NatGatewaySnatRuleResponseBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class NatGatewaySnatRuleResponseBody:
     }
 
     def __init__(self, id=None, tenant_id=None, nat_gateway_id=None, cidr=None, source_type=None, floating_ip_id=None, description=None, status=None, created_at=None, network_id=None, admin_state_up=None, floating_ip_address=None, freezed_ip_address=None):
-        """NatGatewaySnatRuleResponseBody - a model defined in huaweicloud sdk"""
+        """NatGatewaySnatRuleResponseBody
+
+        The model defined in huaweicloud sdk
+
+        :param id: SNAT规则的ID。
+        :type id: str
+        :param tenant_id: 项目的ID。
+        :type tenant_id: str
+        :param nat_gateway_id: 公网NAT网关实例的ID。
+        :type nat_gateway_id: str
+        :param cidr: cidr，可以是网段或者主机格式，与network_id参数二选一。 Source_type&#x3D;0时，cidr必须是vpc 子网网段的子集(不能相等）; Source_type&#x3D;1时，cidr必须指定专线侧网段。
+        :type cidr: str
+        :param source_type: 0：VPC侧，可以指定network_id 或者cidr 1：专线侧，只能指定cidr 不输入默认为0（VPC）
+        :type source_type: int
+        :param floating_ip_id: 功能说明：弹性公网IP的id，多个弹性公网IP使用逗号分隔。 取值范围：最大长度4096字节。
+        :type floating_ip_id: str
+        :param description: SNAT规则的描述，长度限制为255。
+        :type description: str
+        :param status: 功能说明：SNAT规则的状态。
+        :type status: str
+        :param created_at: SNAT规则的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
+        :type created_at: datetime
+        :param network_id: 规则使用的网络id。与cidr参数二选一。
+        :type network_id: str
+        :param admin_state_up: 解冻/冻结状态。 取值范围： - \&quot;true\&quot;：解冻 - \&quot;false\&quot;：冻结
+        :type admin_state_up: bool
+        :param floating_ip_address: 功能说明：弹性公网IP，多个弹性公网IP使用逗号分隔。 取值范围：最大长度1024字节。
+        :type floating_ip_address: str
+        :param freezed_ip_address: 功能说明：冻结的弹性公网IP，多个冻结的弹性公网IP使用逗号分隔。 取值范围：最大长度1024字节。
+        :type freezed_ip_address: str
+        """
         
         
 
@@ -105,7 +134,7 @@ class NatGatewaySnatRuleResponseBody:
         SNAT规则的ID。
 
         :param id: The id of this NatGatewaySnatRuleResponseBody.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -127,7 +156,7 @@ class NatGatewaySnatRuleResponseBody:
         项目的ID。
 
         :param tenant_id: The tenant_id of this NatGatewaySnatRuleResponseBody.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 
@@ -149,7 +178,7 @@ class NatGatewaySnatRuleResponseBody:
         公网NAT网关实例的ID。
 
         :param nat_gateway_id: The nat_gateway_id of this NatGatewaySnatRuleResponseBody.
-        :type: str
+        :type nat_gateway_id: str
         """
         self._nat_gateway_id = nat_gateway_id
 
@@ -171,7 +200,7 @@ class NatGatewaySnatRuleResponseBody:
         cidr，可以是网段或者主机格式，与network_id参数二选一。 Source_type=0时，cidr必须是vpc 子网网段的子集(不能相等）; Source_type=1时，cidr必须指定专线侧网段。
 
         :param cidr: The cidr of this NatGatewaySnatRuleResponseBody.
-        :type: str
+        :type cidr: str
         """
         self._cidr = cidr
 
@@ -193,7 +222,7 @@ class NatGatewaySnatRuleResponseBody:
         0：VPC侧，可以指定network_id 或者cidr 1：专线侧，只能指定cidr 不输入默认为0（VPC）
 
         :param source_type: The source_type of this NatGatewaySnatRuleResponseBody.
-        :type: int
+        :type source_type: int
         """
         self._source_type = source_type
 
@@ -215,7 +244,7 @@ class NatGatewaySnatRuleResponseBody:
         功能说明：弹性公网IP的id，多个弹性公网IP使用逗号分隔。 取值范围：最大长度4096字节。
 
         :param floating_ip_id: The floating_ip_id of this NatGatewaySnatRuleResponseBody.
-        :type: str
+        :type floating_ip_id: str
         """
         self._floating_ip_id = floating_ip_id
 
@@ -237,7 +266,7 @@ class NatGatewaySnatRuleResponseBody:
         SNAT规则的描述，长度限制为255。
 
         :param description: The description of this NatGatewaySnatRuleResponseBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -259,7 +288,7 @@ class NatGatewaySnatRuleResponseBody:
         功能说明：SNAT规则的状态。
 
         :param status: The status of this NatGatewaySnatRuleResponseBody.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -281,7 +310,7 @@ class NatGatewaySnatRuleResponseBody:
         SNAT规则的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
 
         :param created_at: The created_at of this NatGatewaySnatRuleResponseBody.
-        :type: datetime
+        :type created_at: datetime
         """
         self._created_at = created_at
 
@@ -303,7 +332,7 @@ class NatGatewaySnatRuleResponseBody:
         规则使用的网络id。与cidr参数二选一。
 
         :param network_id: The network_id of this NatGatewaySnatRuleResponseBody.
-        :type: str
+        :type network_id: str
         """
         self._network_id = network_id
 
@@ -325,7 +354,7 @@ class NatGatewaySnatRuleResponseBody:
         解冻/冻结状态。 取值范围： - \"true\"：解冻 - \"false\"：冻结
 
         :param admin_state_up: The admin_state_up of this NatGatewaySnatRuleResponseBody.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 
@@ -347,7 +376,7 @@ class NatGatewaySnatRuleResponseBody:
         功能说明：弹性公网IP，多个弹性公网IP使用逗号分隔。 取值范围：最大长度1024字节。
 
         :param floating_ip_address: The floating_ip_address of this NatGatewaySnatRuleResponseBody.
-        :type: str
+        :type floating_ip_address: str
         """
         self._floating_ip_address = floating_ip_address
 
@@ -369,7 +398,7 @@ class NatGatewaySnatRuleResponseBody:
         功能说明：冻结的弹性公网IP，多个冻结的弹性公网IP使用逗号分隔。 取值范围：最大长度1024字节。
 
         :param freezed_ip_address: The freezed_ip_address of this NatGatewaySnatRuleResponseBody.
-        :type: str
+        :type freezed_ip_address: str
         """
         self._freezed_ip_address = freezed_ip_address
 

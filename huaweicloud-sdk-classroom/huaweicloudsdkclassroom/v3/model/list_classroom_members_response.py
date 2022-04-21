@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListClassroomMembersResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListClassroomMembersResponse(SdkResponse):
     }
 
     def __init__(self, members=None, total=None):
-        """ListClassroomMembersResponse - a model defined in huaweicloud sdk"""
+        """ListClassroomMembersResponse
+
+        The model defined in huaweicloud sdk
+
+        :param members: 课堂成员列表
+        :type members: list[:class:`huaweicloudsdkclassroom.v3.ClassroomMember`]
+        :param total: 课堂成员总数
+        :type total: int
+        """
         
         super(ListClassroomMembersResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListClassroomMembersResponse(SdkResponse):
         课堂成员列表
 
         :return: The members of this ListClassroomMembersResponse.
-        :rtype: list[ClassroomMember]
+        :rtype: list[:class:`huaweicloudsdkclassroom.v3.ClassroomMember`]
         """
         return self._members
 
@@ -63,7 +70,7 @@ class ListClassroomMembersResponse(SdkResponse):
         课堂成员列表
 
         :param members: The members of this ListClassroomMembersResponse.
-        :type: list[ClassroomMember]
+        :type members: list[:class:`huaweicloudsdkclassroom.v3.ClassroomMember`]
         """
         self._members = members
 
@@ -85,7 +92,7 @@ class ListClassroomMembersResponse(SdkResponse):
         课堂成员总数
 
         :param total: The total of this ListClassroomMembersResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 

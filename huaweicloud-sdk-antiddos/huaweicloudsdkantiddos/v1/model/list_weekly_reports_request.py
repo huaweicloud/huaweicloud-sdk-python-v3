@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListWeeklyReportsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListWeeklyReportsRequest:
     }
 
     def __init__(self, period_start_date=None):
-        """ListWeeklyReportsRequest - a model defined in huaweicloud sdk"""
+        """ListWeeklyReportsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param period_start_date: 每周的起始时间
+        :type period_start_date: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class ListWeeklyReportsRequest:
         每周的起始时间
 
         :param period_start_date: The period_start_date of this ListWeeklyReportsRequest.
-        :type: str
+        :type period_start_date: str
         """
         self._period_start_date = period_start_date
 

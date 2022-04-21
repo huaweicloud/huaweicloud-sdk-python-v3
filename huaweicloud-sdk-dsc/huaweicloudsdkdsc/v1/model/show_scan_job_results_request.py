@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowScanJobResultsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ShowScanJobResultsRequest:
     }
 
     def __init__(self, job_id=None, offset=None, limit=None, type=None, start_time=None, end_time=None):
-        """ShowScanJobResultsRequest - a model defined in huaweicloud sdk"""
+        """ShowScanJobResultsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 任务ID
+        :type job_id: str
+        :param offset: 页码
+        :type offset: int
+        :param limit: 分页大小
+        :type limit: int
+        :param type: 资产类型
+        :type type: str
+        :param start_time: 预留，待启用
+        :type start_time: str
+        :param end_time: 预留，待启用
+        :type end_time: str
+        """
         
         
 
@@ -82,7 +97,7 @@ class ShowScanJobResultsRequest:
         任务ID
 
         :param job_id: The job_id of this ShowScanJobResultsRequest.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -104,7 +119,7 @@ class ShowScanJobResultsRequest:
         页码
 
         :param offset: The offset of this ShowScanJobResultsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -126,7 +141,7 @@ class ShowScanJobResultsRequest:
         分页大小
 
         :param limit: The limit of this ShowScanJobResultsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -148,7 +163,7 @@ class ShowScanJobResultsRequest:
         资产类型
 
         :param type: The type of this ShowScanJobResultsRequest.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -170,7 +185,7 @@ class ShowScanJobResultsRequest:
         预留，待启用
 
         :param start_time: The start_time of this ShowScanJobResultsRequest.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -192,7 +207,7 @@ class ShowScanJobResultsRequest:
         预留，待启用
 
         :param end_time: The end_time of this ShowScanJobResultsRequest.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 

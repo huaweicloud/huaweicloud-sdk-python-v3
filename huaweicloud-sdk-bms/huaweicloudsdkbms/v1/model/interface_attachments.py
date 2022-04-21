@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InterfaceAttachments:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class InterfaceAttachments:
     }
 
     def __init__(self, port_state=None, fixed_ips=None, net_id=None, port_id=None, mac_addr=None, driver_mode=None, pci_address=None):
-        """InterfaceAttachments - a model defined in huaweicloud sdk"""
+        """InterfaceAttachments
+
+        The model defined in huaweicloud sdk
+
+        :param port_state: 网卡端口状态。取值为：ACTIVE、BUILD、DOWN
+        :type port_state: str
+        :param fixed_ips: 网卡私网IP信息列表，详情请参见表3 fixed_ips字段数据结构说明。
+        :type fixed_ips: list[:class:`huaweicloudsdkbms.v1.FixedIps`]
+        :param net_id: 网卡端口所属子网的网络ID（network_id）。
+        :type net_id: str
+        :param port_id: 网卡端口ID。
+        :type port_id: str
+        :param mac_addr: 网卡Mac地址信息
+        :type mac_addr: str
+        :param driver_mode: 从guest os中，网卡的驱动类型
+        :type driver_mode: str
+        :param pci_address: 弹性网卡在Linux GuestOS里的BDF号
+        :type pci_address: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class InterfaceAttachments:
         网卡端口状态。取值为：ACTIVE、BUILD、DOWN
 
         :param port_state: The port_state of this InterfaceAttachments.
-        :type: str
+        :type port_state: str
         """
         self._port_state = port_state
 
@@ -99,7 +116,7 @@ class InterfaceAttachments:
         网卡私网IP信息列表，详情请参见表3 fixed_ips字段数据结构说明。
 
         :return: The fixed_ips of this InterfaceAttachments.
-        :rtype: list[FixedIps]
+        :rtype: list[:class:`huaweicloudsdkbms.v1.FixedIps`]
         """
         return self._fixed_ips
 
@@ -110,7 +127,7 @@ class InterfaceAttachments:
         网卡私网IP信息列表，详情请参见表3 fixed_ips字段数据结构说明。
 
         :param fixed_ips: The fixed_ips of this InterfaceAttachments.
-        :type: list[FixedIps]
+        :type fixed_ips: list[:class:`huaweicloudsdkbms.v1.FixedIps`]
         """
         self._fixed_ips = fixed_ips
 
@@ -132,7 +149,7 @@ class InterfaceAttachments:
         网卡端口所属子网的网络ID（network_id）。
 
         :param net_id: The net_id of this InterfaceAttachments.
-        :type: str
+        :type net_id: str
         """
         self._net_id = net_id
 
@@ -154,7 +171,7 @@ class InterfaceAttachments:
         网卡端口ID。
 
         :param port_id: The port_id of this InterfaceAttachments.
-        :type: str
+        :type port_id: str
         """
         self._port_id = port_id
 
@@ -176,7 +193,7 @@ class InterfaceAttachments:
         网卡Mac地址信息
 
         :param mac_addr: The mac_addr of this InterfaceAttachments.
-        :type: str
+        :type mac_addr: str
         """
         self._mac_addr = mac_addr
 
@@ -198,7 +215,7 @@ class InterfaceAttachments:
         从guest os中，网卡的驱动类型
 
         :param driver_mode: The driver_mode of this InterfaceAttachments.
-        :type: str
+        :type driver_mode: str
         """
         self._driver_mode = driver_mode
 
@@ -220,7 +237,7 @@ class InterfaceAttachments:
         弹性网卡在Linux GuestOS里的BDF号
 
         :param pci_address: The pci_address of this InterfaceAttachments.
-        :type: str
+        :type pci_address: str
         """
         self._pci_address = pci_address
 

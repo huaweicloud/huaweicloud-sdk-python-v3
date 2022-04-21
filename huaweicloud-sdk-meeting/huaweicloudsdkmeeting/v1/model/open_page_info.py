@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OpenPageInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class OpenPageInfo:
     }
 
     def __init__(self, offset=None, limit=None, count=None):
-        """OpenPageInfo - a model defined in huaweicloud sdk"""
+        """OpenPageInfo
+
+        The model defined in huaweicloud sdk
+
+        :param offset: 偏移量。
+        :type offset: int
+        :param limit: 查询个数。
+        :type limit: int
+        :param count: 总记录数
+        :type count: int
+        """
         
         
 
@@ -65,7 +74,7 @@ class OpenPageInfo:
         偏移量。
 
         :param offset: The offset of this OpenPageInfo.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -87,7 +96,7 @@ class OpenPageInfo:
         查询个数。
 
         :param limit: The limit of this OpenPageInfo.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -109,7 +118,7 @@ class OpenPageInfo:
         总记录数
 
         :param count: The count of this OpenPageInfo.
-        :type: int
+        :type count: int
         """
         self._count = count
 

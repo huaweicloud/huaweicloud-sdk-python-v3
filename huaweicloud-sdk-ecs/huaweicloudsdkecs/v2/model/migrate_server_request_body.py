@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MigrateServerRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class MigrateServerRequestBody:
     }
 
     def __init__(self, migrate=None):
-        """MigrateServerRequestBody - a model defined in huaweicloud sdk"""
+        """MigrateServerRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param migrate: 
+        :type migrate: :class:`huaweicloudsdkecs.v2.MigrateServerOption`
+        """
         
         
 
@@ -45,7 +50,7 @@ class MigrateServerRequestBody:
 
 
         :return: The migrate of this MigrateServerRequestBody.
-        :rtype: MigrateServerOption
+        :rtype: :class:`huaweicloudsdkecs.v2.MigrateServerOption`
         """
         return self._migrate
 
@@ -55,7 +60,7 @@ class MigrateServerRequestBody:
 
 
         :param migrate: The migrate of this MigrateServerRequestBody.
-        :type: MigrateServerOption
+        :type migrate: :class:`huaweicloudsdkecs.v2.MigrateServerOption`
         """
         self._migrate = migrate
 

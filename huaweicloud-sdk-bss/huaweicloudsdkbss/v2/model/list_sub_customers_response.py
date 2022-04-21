@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSubCustomersResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListSubCustomersResponse(SdkResponse):
     }
 
     def __init__(self, customer_infos=None, count=None):
-        """ListSubCustomersResponse - a model defined in huaweicloud sdk"""
+        """ListSubCustomersResponse
+
+        The model defined in huaweicloud sdk
+
+        :param customer_infos: 客户信息列表。 具体请参见表1。
+        :type customer_infos: list[:class:`huaweicloudsdkbss.v2.CustomerInformation`]
+        :param count: 总记录数。
+        :type count: int
+        """
         
         super(ListSubCustomersResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListSubCustomersResponse(SdkResponse):
         客户信息列表。 具体请参见表1。
 
         :return: The customer_infos of this ListSubCustomersResponse.
-        :rtype: list[CustomerInformation]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.CustomerInformation`]
         """
         return self._customer_infos
 
@@ -63,7 +70,7 @@ class ListSubCustomersResponse(SdkResponse):
         客户信息列表。 具体请参见表1。
 
         :param customer_infos: The customer_infos of this ListSubCustomersResponse.
-        :type: list[CustomerInformation]
+        :type customer_infos: list[:class:`huaweicloudsdkbss.v2.CustomerInformation`]
         """
         self._customer_infos = customer_infos
 
@@ -85,7 +92,7 @@ class ListSubCustomersResponse(SdkResponse):
         总记录数。
 
         :param count: The count of this ListSubCustomersResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

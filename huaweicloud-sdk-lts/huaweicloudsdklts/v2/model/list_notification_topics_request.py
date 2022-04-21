@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListNotificationTopicsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListNotificationTopicsRequest:
     }
 
     def __init__(self, offset=None, limit=None):
-        """ListNotificationTopicsRequest - a model defined in huaweicloud sdk"""
+        """ListNotificationTopicsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param offset: 查询游标，初始传入0，后续从上一次的返回值中获取
+        :type offset: int
+        :param limit: 每页数据量，最大值为100
+        :type limit: int
+        """
         
         
 
@@ -61,7 +68,7 @@ class ListNotificationTopicsRequest:
         查询游标，初始传入0，后续从上一次的返回值中获取
 
         :param offset: The offset of this ListNotificationTopicsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -83,7 +90,7 @@ class ListNotificationTopicsRequest:
         每页数据量，最大值为100
 
         :param limit: The limit of this ListNotificationTopicsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

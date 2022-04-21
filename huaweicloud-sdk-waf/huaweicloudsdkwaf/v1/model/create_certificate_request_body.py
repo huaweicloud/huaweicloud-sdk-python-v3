@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateCertificateRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateCertificateRequestBody:
     }
 
     def __init__(self, name=None, content=None, key=None):
-        """CreateCertificateRequestBody - a model defined in huaweicloud sdk"""
+        """CreateCertificateRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param name: 证书名称，证书名称只能由数字、字母、中划线、下划线和英文句点组成，长度不能超过64位字符
+        :type name: str
+        :param content: 证书文件，仅支持PEM格式的证书和私钥文件，且文件中的换行符应以\\n替换
+        :type content: str
+        :param key: 证书私钥，仅支持PEM格式的证书和私钥文件，且文件中的换行符应以\\n替换
+        :type key: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class CreateCertificateRequestBody:
         证书名称，证书名称只能由数字、字母、中划线、下划线和英文句点组成，长度不能超过64位字符
 
         :param name: The name of this CreateCertificateRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -87,7 +96,7 @@ class CreateCertificateRequestBody:
         证书文件，仅支持PEM格式的证书和私钥文件，且文件中的换行符应以\\n替换
 
         :param content: The content of this CreateCertificateRequestBody.
-        :type: str
+        :type content: str
         """
         self._content = content
 
@@ -109,7 +118,7 @@ class CreateCertificateRequestBody:
         证书私钥，仅支持PEM格式的证书和私钥文件，且文件中的换行符应以\\n替换
 
         :param key: The key of this CreateCertificateRequestBody.
-        :type: str
+        :type key: str
         """
         self._key = key
 

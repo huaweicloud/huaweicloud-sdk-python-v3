@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPostpaidBillSumResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ListPostpaidBillSumResponse(SdkResponse):
     }
 
     def __init__(self, bill_cycle=None, initial_amount_due=None, consume_amount=None, refunds=None, adjustments=None, tax_amount=None, currency=None):
-        """ListPostpaidBillSumResponse - a model defined in huaweicloud sdk"""
+        """ListPostpaidBillSumResponse
+
+        The model defined in huaweicloud sdk
+
+        :param bill_cycle: 账单所归属的月份。只有成功才返回这个参数。 格式：YYYY-MM
+        :type bill_cycle: str
+        :param initial_amount_due: 账单中的应还金额（含税）。 应还金额（包含销项税）&#x3D;消费金额+退款金额+调账金额
+        :type initial_amount_due: float
+        :param consume_amount: 账单中的消费金额。
+        :type consume_amount: float
+        :param refunds: 账单中的退款金额。
+        :type refunds: float
+        :param adjustments: 账单中的调账金额，即伙伴在账期内的调账信息如：欠款核销金额等。
+        :type adjustments: float
+        :param tax_amount: 账单中的销项税金额，销项税不计入应还金额。
+        :type tax_amount: float
+        :param currency: 只有成功才返回这个参数。 美金：USD
+        :type currency: str
+        """
         
         super(ListPostpaidBillSumResponse, self).__init__()
 
@@ -88,7 +105,7 @@ class ListPostpaidBillSumResponse(SdkResponse):
         账单所归属的月份。只有成功才返回这个参数。 格式：YYYY-MM
 
         :param bill_cycle: The bill_cycle of this ListPostpaidBillSumResponse.
-        :type: str
+        :type bill_cycle: str
         """
         self._bill_cycle = bill_cycle
 
@@ -110,7 +127,7 @@ class ListPostpaidBillSumResponse(SdkResponse):
         账单中的应还金额（含税）。 应还金额（包含销项税）=消费金额+退款金额+调账金额
 
         :param initial_amount_due: The initial_amount_due of this ListPostpaidBillSumResponse.
-        :type: float
+        :type initial_amount_due: float
         """
         self._initial_amount_due = initial_amount_due
 
@@ -132,7 +149,7 @@ class ListPostpaidBillSumResponse(SdkResponse):
         账单中的消费金额。
 
         :param consume_amount: The consume_amount of this ListPostpaidBillSumResponse.
-        :type: float
+        :type consume_amount: float
         """
         self._consume_amount = consume_amount
 
@@ -154,7 +171,7 @@ class ListPostpaidBillSumResponse(SdkResponse):
         账单中的退款金额。
 
         :param refunds: The refunds of this ListPostpaidBillSumResponse.
-        :type: float
+        :type refunds: float
         """
         self._refunds = refunds
 
@@ -176,7 +193,7 @@ class ListPostpaidBillSumResponse(SdkResponse):
         账单中的调账金额，即伙伴在账期内的调账信息如：欠款核销金额等。
 
         :param adjustments: The adjustments of this ListPostpaidBillSumResponse.
-        :type: float
+        :type adjustments: float
         """
         self._adjustments = adjustments
 
@@ -198,7 +215,7 @@ class ListPostpaidBillSumResponse(SdkResponse):
         账单中的销项税金额，销项税不计入应还金额。
 
         :param tax_amount: The tax_amount of this ListPostpaidBillSumResponse.
-        :type: float
+        :type tax_amount: float
         """
         self._tax_amount = tax_amount
 
@@ -220,7 +237,7 @@ class ListPostpaidBillSumResponse(SdkResponse):
         只有成功才返回这个参数。 美金：USD
 
         :param currency: The currency of this ListPostpaidBillSumResponse.
-        :type: str
+        :type currency: str
         """
         self._currency = currency
 

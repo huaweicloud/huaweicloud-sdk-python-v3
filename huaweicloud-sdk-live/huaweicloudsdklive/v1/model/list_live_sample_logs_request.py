@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListLiveSampleLogsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListLiveSampleLogsRequest:
     }
 
     def __init__(self, play_domain=None, start_time=None, end_time=None):
-        """ListLiveSampleLogsRequest - a model defined in huaweicloud sdk"""
+        """ListLiveSampleLogsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param play_domain: 播放域名。
+        :type play_domain: str
+        :param start_time: 查询开始时间，UTC时间：YYYY-MM-DDTHH:mm:ssZ，如北京时间2020年3月4日16点00分00秒可表示为2020-03-04T08:00:00Z。仅支持查询最近3个月内的数据。
+        :type start_time: datetime
+        :param end_time: 查询结束时间，UTC时间：YYYY-MM-DDTHH:mm:ssZ，如北京时间2020年3月4日16点00分00秒可表示为2020-03-04T08:00:00Z。查询时间跨度不能大于7天。
+        :type end_time: datetime
+        """
         
         
 
@@ -65,7 +74,7 @@ class ListLiveSampleLogsRequest:
         播放域名。
 
         :param play_domain: The play_domain of this ListLiveSampleLogsRequest.
-        :type: str
+        :type play_domain: str
         """
         self._play_domain = play_domain
 
@@ -87,7 +96,7 @@ class ListLiveSampleLogsRequest:
         查询开始时间，UTC时间：YYYY-MM-DDTHH:mm:ssZ，如北京时间2020年3月4日16点00分00秒可表示为2020-03-04T08:00:00Z。仅支持查询最近3个月内的数据。
 
         :param start_time: The start_time of this ListLiveSampleLogsRequest.
-        :type: datetime
+        :type start_time: datetime
         """
         self._start_time = start_time
 
@@ -109,7 +118,7 @@ class ListLiveSampleLogsRequest:
         查询结束时间，UTC时间：YYYY-MM-DDTHH:mm:ssZ，如北京时间2020年3月4日16点00分00秒可表示为2020-03-04T08:00:00Z。查询时间跨度不能大于7天。
 
         :param end_time: The end_time of this ListLiveSampleLogsRequest.
-        :type: datetime
+        :type end_time: datetime
         """
         self._end_time = end_time
 

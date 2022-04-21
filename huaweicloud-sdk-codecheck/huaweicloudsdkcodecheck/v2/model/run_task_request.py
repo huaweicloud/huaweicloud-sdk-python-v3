@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunTaskRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RunTaskRequest:
     }
 
     def __init__(self, task_id=None, body=None):
-        """RunTaskRequest - a model defined in huaweicloud sdk"""
+        """RunTaskRequest
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 任务ID
+        :type task_id: str
+        :param body: Body of the RunTaskRequest
+        :type body: :class:`huaweicloudsdkcodecheck.v2.RunRequestV2`
+        """
         
         
 
@@ -62,7 +69,7 @@ class RunTaskRequest:
         任务ID
 
         :param task_id: The task_id of this RunTaskRequest.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -72,7 +79,7 @@ class RunTaskRequest:
 
 
         :return: The body of this RunTaskRequest.
-        :rtype: RunRequestV2
+        :rtype: :class:`huaweicloudsdkcodecheck.v2.RunRequestV2`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class RunTaskRequest:
 
 
         :param body: The body of this RunTaskRequest.
-        :type: RunRequestV2
+        :type body: :class:`huaweicloudsdkcodecheck.v2.RunRequestV2`
         """
         self._body = body
 

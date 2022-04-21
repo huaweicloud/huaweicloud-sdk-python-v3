@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InstanceHangingInfos:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class InstanceHangingInfos:
     }
 
     def __init__(self, lifecycle_hook_name=None, lifecycle_action_key=None, instance_id=None, scaling_group_id=None, lifecycle_hook_status=None, timeout=None, default_result=None):
-        """InstanceHangingInfos - a model defined in huaweicloud sdk"""
+        """InstanceHangingInfos
+
+        The model defined in huaweicloud sdk
+
+        :param lifecycle_hook_name: 生命周期挂钩名称。
+        :type lifecycle_hook_name: str
+        :param lifecycle_action_key: 生命周期操作令牌，用于指定生命周期回调对象。
+        :type lifecycle_action_key: str
+        :param instance_id: 伸缩实例ID。
+        :type instance_id: str
+        :param scaling_group_id: 伸缩组ID。
+        :type scaling_group_id: str
+        :param lifecycle_hook_status: 伸缩实例挂钩的挂起状态。HANGING：挂起。CONTINUE：继续。ABANDON：终止。
+        :type lifecycle_hook_status: str
+        :param timeout: 超时时间，遵循UTC时间，格式为：YYYY-MM-DDThh:mm:ssZZ。
+        :type timeout: str
+        :param default_result: 生命周期挂钩默认回调操作。
+        :type default_result: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class InstanceHangingInfos:
         生命周期挂钩名称。
 
         :param lifecycle_hook_name: The lifecycle_hook_name of this InstanceHangingInfos.
-        :type: str
+        :type lifecycle_hook_name: str
         """
         self._lifecycle_hook_name = lifecycle_hook_name
 
@@ -110,7 +127,7 @@ class InstanceHangingInfos:
         生命周期操作令牌，用于指定生命周期回调对象。
 
         :param lifecycle_action_key: The lifecycle_action_key of this InstanceHangingInfos.
-        :type: str
+        :type lifecycle_action_key: str
         """
         self._lifecycle_action_key = lifecycle_action_key
 
@@ -132,7 +149,7 @@ class InstanceHangingInfos:
         伸缩实例ID。
 
         :param instance_id: The instance_id of this InstanceHangingInfos.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -154,7 +171,7 @@ class InstanceHangingInfos:
         伸缩组ID。
 
         :param scaling_group_id: The scaling_group_id of this InstanceHangingInfos.
-        :type: str
+        :type scaling_group_id: str
         """
         self._scaling_group_id = scaling_group_id
 
@@ -176,7 +193,7 @@ class InstanceHangingInfos:
         伸缩实例挂钩的挂起状态。HANGING：挂起。CONTINUE：继续。ABANDON：终止。
 
         :param lifecycle_hook_status: The lifecycle_hook_status of this InstanceHangingInfos.
-        :type: str
+        :type lifecycle_hook_status: str
         """
         self._lifecycle_hook_status = lifecycle_hook_status
 
@@ -198,7 +215,7 @@ class InstanceHangingInfos:
         超时时间，遵循UTC时间，格式为：YYYY-MM-DDThh:mm:ssZZ。
 
         :param timeout: The timeout of this InstanceHangingInfos.
-        :type: str
+        :type timeout: str
         """
         self._timeout = timeout
 
@@ -220,7 +237,7 @@ class InstanceHangingInfos:
         生命周期挂钩默认回调操作。
 
         :param default_result: The default_result of this InstanceHangingInfos.
-        :type: str
+        :type default_result: str
         """
         self._default_result = default_result
 

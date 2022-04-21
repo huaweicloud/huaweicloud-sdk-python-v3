@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SmnContentReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class SmnContentReq:
     }
 
     def __init__(self, project_id=None, ak=None, sk=None):
-        """SmnContentReq - a model defined in huaweicloud sdk"""
+        """SmnContentReq
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: 项目id
+        :type project_id: str
+        :param ak: 租户的AK
+        :type ak: str
+        :param sk: 租户的SK
+        :type sk: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class SmnContentReq:
         项目id
 
         :param project_id: The project_id of this SmnContentReq.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -87,7 +96,7 @@ class SmnContentReq:
         租户的AK
 
         :param ak: The ak of this SmnContentReq.
-        :type: str
+        :type ak: str
         """
         self._ak = ak
 
@@ -109,7 +118,7 @@ class SmnContentReq:
         租户的SK
 
         :param sk: The sk of this SmnContentReq.
-        :type: str
+        :type sk: str
         """
         self._sk = sk
 

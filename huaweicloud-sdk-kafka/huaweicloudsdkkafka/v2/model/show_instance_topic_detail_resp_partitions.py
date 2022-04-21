@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowInstanceTopicDetailRespPartitions:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ShowInstanceTopicDetailRespPartitions:
     }
 
     def __init__(self, partition=None, leader=None, leo=None, hw=None, lso=None, last_update_timestamp=None, replicas=None):
-        """ShowInstanceTopicDetailRespPartitions - a model defined in huaweicloud sdk"""
+        """ShowInstanceTopicDetailRespPartitions
+
+        The model defined in huaweicloud sdk
+
+        :param partition: 分区ID。
+        :type partition: int
+        :param leader: leader副本所在节点的id。
+        :type leader: int
+        :param leo: 分区leader副本的LEO（Log End Offset）。
+        :type leo: int
+        :param hw: 分区高水位（HW，High Watermark）。
+        :type hw: int
+        :param lso: 分区leader副本的LSO（Log Start Offset）。
+        :type lso: int
+        :param last_update_timestamp: 分区上次写入消息的时间。  格式为Unix时间戳。  单位：毫秒。
+        :type last_update_timestamp: int
+        :param replicas: 副本列表。
+        :type replicas: list[:class:`huaweicloudsdkkafka.v2.ShowInstanceTopicDetailRespReplicas`]
+        """
         
         
 
@@ -88,7 +105,7 @@ class ShowInstanceTopicDetailRespPartitions:
         分区ID。
 
         :param partition: The partition of this ShowInstanceTopicDetailRespPartitions.
-        :type: int
+        :type partition: int
         """
         self._partition = partition
 
@@ -110,7 +127,7 @@ class ShowInstanceTopicDetailRespPartitions:
         leader副本所在节点的id。
 
         :param leader: The leader of this ShowInstanceTopicDetailRespPartitions.
-        :type: int
+        :type leader: int
         """
         self._leader = leader
 
@@ -132,7 +149,7 @@ class ShowInstanceTopicDetailRespPartitions:
         分区leader副本的LEO（Log End Offset）。
 
         :param leo: The leo of this ShowInstanceTopicDetailRespPartitions.
-        :type: int
+        :type leo: int
         """
         self._leo = leo
 
@@ -154,7 +171,7 @@ class ShowInstanceTopicDetailRespPartitions:
         分区高水位（HW，High Watermark）。
 
         :param hw: The hw of this ShowInstanceTopicDetailRespPartitions.
-        :type: int
+        :type hw: int
         """
         self._hw = hw
 
@@ -176,7 +193,7 @@ class ShowInstanceTopicDetailRespPartitions:
         分区leader副本的LSO（Log Start Offset）。
 
         :param lso: The lso of this ShowInstanceTopicDetailRespPartitions.
-        :type: int
+        :type lso: int
         """
         self._lso = lso
 
@@ -198,7 +215,7 @@ class ShowInstanceTopicDetailRespPartitions:
         分区上次写入消息的时间。  格式为Unix时间戳。  单位：毫秒。
 
         :param last_update_timestamp: The last_update_timestamp of this ShowInstanceTopicDetailRespPartitions.
-        :type: int
+        :type last_update_timestamp: int
         """
         self._last_update_timestamp = last_update_timestamp
 
@@ -209,7 +226,7 @@ class ShowInstanceTopicDetailRespPartitions:
         副本列表。
 
         :return: The replicas of this ShowInstanceTopicDetailRespPartitions.
-        :rtype: list[ShowInstanceTopicDetailRespReplicas]
+        :rtype: list[:class:`huaweicloudsdkkafka.v2.ShowInstanceTopicDetailRespReplicas`]
         """
         return self._replicas
 
@@ -220,7 +237,7 @@ class ShowInstanceTopicDetailRespPartitions:
         副本列表。
 
         :param replicas: The replicas of this ShowInstanceTopicDetailRespPartitions.
-        :type: list[ShowInstanceTopicDetailRespReplicas]
+        :type replicas: list[:class:`huaweicloudsdkkafka.v2.ShowInstanceTopicDetailRespReplicas`]
         """
         self._replicas = replicas
 

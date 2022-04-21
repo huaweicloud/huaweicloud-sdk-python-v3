@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateIpGroupResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateIpGroupResponse(SdkResponse):
     }
 
     def __init__(self, ipgroup=None, request_id=None):
-        """UpdateIpGroupResponse - a model defined in huaweicloud sdk"""
+        """UpdateIpGroupResponse
+
+        The model defined in huaweicloud sdk
+
+        :param ipgroup: 
+        :type ipgroup: :class:`huaweicloudsdkelb.v3.IpGroup`
+        :param request_id: 请求ID。  注：自动生成 。
+        :type request_id: str
+        """
         
         super(UpdateIpGroupResponse, self).__init__()
 
@@ -51,7 +58,7 @@ class UpdateIpGroupResponse(SdkResponse):
 
 
         :return: The ipgroup of this UpdateIpGroupResponse.
-        :rtype: IpGroup
+        :rtype: :class:`huaweicloudsdkelb.v3.IpGroup`
         """
         return self._ipgroup
 
@@ -61,7 +68,7 @@ class UpdateIpGroupResponse(SdkResponse):
 
 
         :param ipgroup: The ipgroup of this UpdateIpGroupResponse.
-        :type: IpGroup
+        :type ipgroup: :class:`huaweicloudsdkelb.v3.IpGroup`
         """
         self._ipgroup = ipgroup
 
@@ -83,7 +90,7 @@ class UpdateIpGroupResponse(SdkResponse):
         请求ID。  注：自动生成 。
 
         :param request_id: The request_id of this UpdateIpGroupResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DiscountInfoV3:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class DiscountInfoV3:
     }
 
     def __init__(self, discount_id=None, discount_value=None, discount_type=None, orders=None):
-        """DiscountInfoV3 - a model defined in huaweicloud sdk"""
+        """DiscountInfoV3
+
+        The model defined in huaweicloud sdk
+
+        :param discount_id: 订单的可用折扣ID。 支付订单时，输入该参数的值，即可使用折扣。
+        :type discount_id: str
+        :param discount_value: 折扣率或者满减值，如果折扣模式是一口价，这个值为空。
+        :type discount_value: str
+        :param discount_type: 折扣类型，取值为 0：促销折扣1：合同折扣2：商务优惠3：合作伙伴授予折扣609：订单调价折扣
+        :type discount_type: int
+        :param orders: 可使用折扣的订单列表。 具体请参见表3。
+        :type orders: list[:class:`huaweicloudsdkbss.v2.OrderV3`]
+        """
         
         
 
@@ -69,7 +80,7 @@ class DiscountInfoV3:
         订单的可用折扣ID。 支付订单时，输入该参数的值，即可使用折扣。
 
         :param discount_id: The discount_id of this DiscountInfoV3.
-        :type: str
+        :type discount_id: str
         """
         self._discount_id = discount_id
 
@@ -91,7 +102,7 @@ class DiscountInfoV3:
         折扣率或者满减值，如果折扣模式是一口价，这个值为空。
 
         :param discount_value: The discount_value of this DiscountInfoV3.
-        :type: str
+        :type discount_value: str
         """
         self._discount_value = discount_value
 
@@ -113,7 +124,7 @@ class DiscountInfoV3:
         折扣类型，取值为 0：促销折扣1：合同折扣2：商务优惠3：合作伙伴授予折扣609：订单调价折扣
 
         :param discount_type: The discount_type of this DiscountInfoV3.
-        :type: int
+        :type discount_type: int
         """
         self._discount_type = discount_type
 
@@ -124,7 +135,7 @@ class DiscountInfoV3:
         可使用折扣的订单列表。 具体请参见表3。
 
         :return: The orders of this DiscountInfoV3.
-        :rtype: list[OrderV3]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.OrderV3`]
         """
         return self._orders
 
@@ -135,7 +146,7 @@ class DiscountInfoV3:
         可使用折扣的订单列表。 具体请参见表3。
 
         :param orders: The orders of this DiscountInfoV3.
-        :type: list[OrderV3]
+        :type orders: list[:class:`huaweicloudsdkbss.v2.OrderV3`]
         """
         self._orders = orders
 

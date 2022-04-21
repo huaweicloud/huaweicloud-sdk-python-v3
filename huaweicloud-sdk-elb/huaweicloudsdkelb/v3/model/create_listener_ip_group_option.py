@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateListenerIpGroupOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateListenerIpGroupOption:
     }
 
     def __init__(self, ipgroup_id=None, enable_ipgroup=None, type=None):
-        """CreateListenerIpGroupOption - a model defined in huaweicloud sdk"""
+        """CreateListenerIpGroupOption
+
+        The model defined in huaweicloud sdk
+
+        :param ipgroup_id: 监听器关联的访问控制组的id。  当关联的ipgroup中的ip_list为[]，且类型为白名单时，表示禁止所有ip的访问。  当关联的ipgroup中的ip_list为[]，且类型为黑名单时，表示允许所有ip的访问。
+        :type ipgroup_id: str
+        :param enable_ipgroup: 访问控制组的状态。取值： - true：开启访问控制，默认值。 - false：关闭访问控制。
+        :type enable_ipgroup: bool
+        :param type: 访问控制组的类型。 - white：白名单，只允许指定ip访问，默认值。 - black：黑名单，不允许指定ip访问。
+        :type type: str
+        """
         
         
 
@@ -67,7 +76,7 @@ class CreateListenerIpGroupOption:
         监听器关联的访问控制组的id。  当关联的ipgroup中的ip_list为[]，且类型为白名单时，表示禁止所有ip的访问。  当关联的ipgroup中的ip_list为[]，且类型为黑名单时，表示允许所有ip的访问。
 
         :param ipgroup_id: The ipgroup_id of this CreateListenerIpGroupOption.
-        :type: str
+        :type ipgroup_id: str
         """
         self._ipgroup_id = ipgroup_id
 
@@ -89,7 +98,7 @@ class CreateListenerIpGroupOption:
         访问控制组的状态。取值： - true：开启访问控制，默认值。 - false：关闭访问控制。
 
         :param enable_ipgroup: The enable_ipgroup of this CreateListenerIpGroupOption.
-        :type: bool
+        :type enable_ipgroup: bool
         """
         self._enable_ipgroup = enable_ipgroup
 
@@ -111,7 +120,7 @@ class CreateListenerIpGroupOption:
         访问控制组的类型。 - white：白名单，只允许指定ip访问，默认值。 - black：黑名单，不允许指定ip访问。
 
         :param type: The type of this CreateListenerIpGroupOption.
-        :type: str
+        :type type: str
         """
         self._type = type
 

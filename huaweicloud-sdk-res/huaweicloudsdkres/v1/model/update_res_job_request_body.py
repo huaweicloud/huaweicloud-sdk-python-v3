@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateResJobRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class UpdateResJobRequestBody:
     }
 
     def __init__(self, category=None, description=None, job_config=None, job_name=None, job_type=None, schedule=None):
-        """UpdateResJobRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateResJobRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param category: 类别： - RECALL，召回作业 - DATASOURCE，数据源作业 - FILTER，过滤作业 - SORTING，排序作业 - EVALUATE，效果评估作业
+        :type category: str
+        :param description: 描述
+        :type description: str
+        :param job_config: 
+        :type job_config: :class:`huaweicloudsdkres.v1.JobConfig`
+        :param job_name: 作业名称
+        :type job_name: str
+        :param job_type: 作业类型： - WriteUserProfile，用户画像实时导入作业 - WriteItemProfile，物品画像实时导入作业 - UniversalProcess，行为数据实时导入作业 - NearlineRecall，近线召回作业 - EncodeProfile，近线特征工程作业 - AttributeMatch，属性匹配召回作业 - AlsCF，交替最小二乘协同过滤作业 - BhvHistory，历史行为记忆召回作业 - ItemCf，物品协同过滤召回作业 - MenEdit，人工配置候选集作业 - Ucb，UCB召回作业 - UserCf，用户协同过滤召回作业 - WeightBehavior，综合行为热度召回作业 - Filter，历史行为过滤作业 - AutoPreRank，智能ETL参数生成作业 - ETL，离线特征工程作业 - LR，LR作业 - DEEPFM，DEEPFM作业 - AutoGroup，AutoGroup作业 - StreamRank，在线训练作业 - DataStruct，识别数据结构作业 - DataExploration，数据探索作业 - DataImport，离线数据导入作业 - Evaluate，效果评估作业
+        :type job_type: str
+        :param schedule: 调度参数
+        :type schedule: str
+        """
         
         
 
@@ -79,7 +94,7 @@ class UpdateResJobRequestBody:
         类别： - RECALL，召回作业 - DATASOURCE，数据源作业 - FILTER，过滤作业 - SORTING，排序作业 - EVALUATE，效果评估作业
 
         :param category: The category of this UpdateResJobRequestBody.
-        :type: str
+        :type category: str
         """
         self._category = category
 
@@ -101,7 +116,7 @@ class UpdateResJobRequestBody:
         描述
 
         :param description: The description of this UpdateResJobRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -111,7 +126,7 @@ class UpdateResJobRequestBody:
 
 
         :return: The job_config of this UpdateResJobRequestBody.
-        :rtype: JobConfig
+        :rtype: :class:`huaweicloudsdkres.v1.JobConfig`
         """
         return self._job_config
 
@@ -121,7 +136,7 @@ class UpdateResJobRequestBody:
 
 
         :param job_config: The job_config of this UpdateResJobRequestBody.
-        :type: JobConfig
+        :type job_config: :class:`huaweicloudsdkres.v1.JobConfig`
         """
         self._job_config = job_config
 
@@ -143,7 +158,7 @@ class UpdateResJobRequestBody:
         作业名称
 
         :param job_name: The job_name of this UpdateResJobRequestBody.
-        :type: str
+        :type job_name: str
         """
         self._job_name = job_name
 
@@ -165,7 +180,7 @@ class UpdateResJobRequestBody:
         作业类型： - WriteUserProfile，用户画像实时导入作业 - WriteItemProfile，物品画像实时导入作业 - UniversalProcess，行为数据实时导入作业 - NearlineRecall，近线召回作业 - EncodeProfile，近线特征工程作业 - AttributeMatch，属性匹配召回作业 - AlsCF，交替最小二乘协同过滤作业 - BhvHistory，历史行为记忆召回作业 - ItemCf，物品协同过滤召回作业 - MenEdit，人工配置候选集作业 - Ucb，UCB召回作业 - UserCf，用户协同过滤召回作业 - WeightBehavior，综合行为热度召回作业 - Filter，历史行为过滤作业 - AutoPreRank，智能ETL参数生成作业 - ETL，离线特征工程作业 - LR，LR作业 - DEEPFM，DEEPFM作业 - AutoGroup，AutoGroup作业 - StreamRank，在线训练作业 - DataStruct，识别数据结构作业 - DataExploration，数据探索作业 - DataImport，离线数据导入作业 - Evaluate，效果评估作业
 
         :param job_type: The job_type of this UpdateResJobRequestBody.
-        :type: str
+        :type job_type: str
         """
         self._job_type = job_type
 
@@ -187,7 +202,7 @@ class UpdateResJobRequestBody:
         调度参数
 
         :param schedule: The schedule of this UpdateResJobRequestBody.
-        :type: str
+        :type schedule: str
         """
         self._schedule = schedule
 

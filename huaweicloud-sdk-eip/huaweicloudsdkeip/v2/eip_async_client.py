@@ -52,21 +52,17 @@ class EipAsyncClient(Client):
         """共享带宽插入弹性公网IP
 
         共享带宽插入弹性公网IP。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param AddPublicipsIntoSharedBandwidthRequest request
-        :return: AddPublicipsIntoSharedBandwidthResponse
+        :param request: Request instance for AddPublicipsIntoSharedBandwidth
+        :type request: :class:`huaweicloudsdkeip.v2.AddPublicipsIntoSharedBandwidthRequest`
+        :rtype: :class:`huaweicloudsdkeip.v2.AddPublicipsIntoSharedBandwidthResponse`
         """
         return self.add_publicips_into_shared_bandwidth_with_http_info(request)
 
     def add_publicips_into_shared_bandwidth_with_http_info(self, request):
-        """共享带宽插入弹性公网IP
-
-        共享带宽插入弹性公网IP。
-
-        :param AddPublicipsIntoSharedBandwidthRequest request
-        :return: AddPublicipsIntoSharedBandwidthResponse
-        """
-
         all_params = ['bandwidth_id', 'bandwidth']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -112,26 +108,21 @@ class EipAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_create_shared_bandwidths_async(self, request):
         """批量创建共享带宽
 
         批量创建共享带宽。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchCreateSharedBandwidthsRequest request
-        :return: BatchCreateSharedBandwidthsResponse
+        :param request: Request instance for BatchCreateSharedBandwidths
+        :type request: :class:`huaweicloudsdkeip.v2.BatchCreateSharedBandwidthsRequest`
+        :rtype: :class:`huaweicloudsdkeip.v2.BatchCreateSharedBandwidthsResponse`
         """
         return self.batch_create_shared_bandwidths_with_http_info(request)
 
     def batch_create_shared_bandwidths_with_http_info(self, request):
-        """批量创建共享带宽
-
-        批量创建共享带宽。
-
-        :param BatchCreateSharedBandwidthsRequest request
-        :return: BatchCreateSharedBandwidthsResponse
-        """
-
         all_params = ['bandwidth']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -175,26 +166,21 @@ class EipAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_shared_bandwidth_async(self, request):
         """创建共享带宽
 
         创建共享带宽。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateSharedBandwidthRequest request
-        :return: CreateSharedBandwidthResponse
+        :param request: Request instance for CreateSharedBandwidth
+        :type request: :class:`huaweicloudsdkeip.v2.CreateSharedBandwidthRequest`
+        :rtype: :class:`huaweicloudsdkeip.v2.CreateSharedBandwidthResponse`
         """
         return self.create_shared_bandwidth_with_http_info(request)
 
     def create_shared_bandwidth_with_http_info(self, request):
-        """创建共享带宽
-
-        创建共享带宽。
-
-        :param CreateSharedBandwidthRequest request
-        :return: CreateSharedBandwidthResponse
-        """
-
         all_params = ['bandwidth']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -238,26 +224,21 @@ class EipAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_shared_bandwidth_async(self, request):
         """删除共享带宽
 
         删除共享带宽。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteSharedBandwidthRequest request
-        :return: DeleteSharedBandwidthResponse
+        :param request: Request instance for DeleteSharedBandwidth
+        :type request: :class:`huaweicloudsdkeip.v2.DeleteSharedBandwidthRequest`
+        :rtype: :class:`huaweicloudsdkeip.v2.DeleteSharedBandwidthResponse`
         """
         return self.delete_shared_bandwidth_with_http_info(request)
 
     def delete_shared_bandwidth_with_http_info(self, request):
-        """删除共享带宽
-
-        删除共享带宽。
-
-        :param DeleteSharedBandwidthRequest request
-        :return: DeleteSharedBandwidthResponse
-        """
-
         all_params = ['bandwidth_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -301,26 +282,21 @@ class EipAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_bandwidths_async(self, request):
         """查询带宽列表
 
         查询带宽列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListBandwidthsRequest request
-        :return: ListBandwidthsResponse
+        :param request: Request instance for ListBandwidths
+        :type request: :class:`huaweicloudsdkeip.v2.ListBandwidthsRequest`
+        :rtype: :class:`huaweicloudsdkeip.v2.ListBandwidthsResponse`
         """
         return self.list_bandwidths_with_http_info(request)
 
     def list_bandwidths_with_http_info(self, request):
-        """查询带宽列表
-
-        查询带宽列表。
-
-        :param ListBandwidthsRequest request
-        :return: ListBandwidthsResponse
-        """
-
         all_params = ['marker', 'limit', 'enterprise_project_id', 'share_type']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -370,26 +346,21 @@ class EipAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_quotas_async(self, request):
         """查询配额接口
 
         查询配额
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListQuotasRequest request
-        :return: ListQuotasResponse
+        :param request: Request instance for ListQuotas
+        :type request: :class:`huaweicloudsdkeip.v2.ListQuotasRequest`
+        :rtype: :class:`huaweicloudsdkeip.v2.ListQuotasResponse`
         """
         return self.list_quotas_with_http_info(request)
 
     def list_quotas_with_http_info(self, request):
-        """查询配额接口
-
-        查询配额
-
-        :param ListQuotasRequest request
-        :return: ListQuotasResponse
-        """
-
         all_params = ['type']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -433,26 +404,21 @@ class EipAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def remove_publicips_from_shared_bandwidth_async(self, request):
         """共享带宽移除弹性公网IP
 
         共享带宽移除弹性公网IP。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param RemovePublicipsFromSharedBandwidthRequest request
-        :return: RemovePublicipsFromSharedBandwidthResponse
+        :param request: Request instance for RemovePublicipsFromSharedBandwidth
+        :type request: :class:`huaweicloudsdkeip.v2.RemovePublicipsFromSharedBandwidthRequest`
+        :rtype: :class:`huaweicloudsdkeip.v2.RemovePublicipsFromSharedBandwidthResponse`
         """
         return self.remove_publicips_from_shared_bandwidth_with_http_info(request)
 
     def remove_publicips_from_shared_bandwidth_with_http_info(self, request):
-        """共享带宽移除弹性公网IP
-
-        共享带宽移除弹性公网IP。
-
-        :param RemovePublicipsFromSharedBandwidthRequest request
-        :return: RemovePublicipsFromSharedBandwidthResponse
-        """
-
         all_params = ['bandwidth_id', 'bandwidth']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -498,26 +464,21 @@ class EipAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_bandwidth_async(self, request):
         """查询带宽
 
         查询带宽
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowBandwidthRequest request
-        :return: ShowBandwidthResponse
+        :param request: Request instance for ShowBandwidth
+        :type request: :class:`huaweicloudsdkeip.v2.ShowBandwidthRequest`
+        :rtype: :class:`huaweicloudsdkeip.v2.ShowBandwidthResponse`
         """
         return self.show_bandwidth_with_http_info(request)
 
     def show_bandwidth_with_http_info(self, request):
-        """查询带宽
-
-        查询带宽
-
-        :param ShowBandwidthRequest request
-        :return: ShowBandwidthResponse
-        """
-
         all_params = ['bandwidth_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -561,26 +522,21 @@ class EipAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_bandwidth_async(self, request):
         """更新带宽
 
         更新带宽。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateBandwidthRequest request
-        :return: UpdateBandwidthResponse
+        :param request: Request instance for UpdateBandwidth
+        :type request: :class:`huaweicloudsdkeip.v2.UpdateBandwidthRequest`
+        :rtype: :class:`huaweicloudsdkeip.v2.UpdateBandwidthResponse`
         """
         return self.update_bandwidth_with_http_info(request)
 
     def update_bandwidth_with_http_info(self, request):
-        """更新带宽
-
-        更新带宽。
-
-        :param UpdateBandwidthRequest request
-        :return: UpdateBandwidthResponse
-        """
-
         all_params = ['bandwidth_id', 'bandwidth']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -626,26 +582,21 @@ class EipAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_pre_paid_bandwidth_async(self, request):
         """更新包周期带宽
 
         更新带宽。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdatePrePaidBandwidthRequest request
-        :return: UpdatePrePaidBandwidthResponse
+        :param request: Request instance for UpdatePrePaidBandwidth
+        :type request: :class:`huaweicloudsdkeip.v2.UpdatePrePaidBandwidthRequest`
+        :rtype: :class:`huaweicloudsdkeip.v2.UpdatePrePaidBandwidthResponse`
         """
         return self.update_pre_paid_bandwidth_with_http_info(request)
 
     def update_pre_paid_bandwidth_with_http_info(self, request):
-        """更新包周期带宽
-
-        更新带宽。
-
-        :param UpdatePrePaidBandwidthRequest request
-        :return: UpdatePrePaidBandwidthResponse
-        """
-
         all_params = ['bandwidth_id', 'update_bandwidth_information']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -691,26 +642,21 @@ class EipAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_create_publicip_tags_async(self, request):
         """批量创建弹性公网IP资源标签
 
         为指定的弹性公网IP资源实例批量添加标签。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchCreatePublicipTagsRequest request
-        :return: BatchCreatePublicipTagsResponse
+        :param request: Request instance for BatchCreatePublicipTags
+        :type request: :class:`huaweicloudsdkeip.v2.BatchCreatePublicipTagsRequest`
+        :rtype: :class:`huaweicloudsdkeip.v2.BatchCreatePublicipTagsResponse`
         """
         return self.batch_create_publicip_tags_with_http_info(request)
 
     def batch_create_publicip_tags_with_http_info(self, request):
-        """批量创建弹性公网IP资源标签
-
-        为指定的弹性公网IP资源实例批量添加标签。
-
-        :param BatchCreatePublicipTagsRequest request
-        :return: BatchCreatePublicipTagsResponse
-        """
-
         all_params = ['publicip_id', 'resource_tag_action']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -756,26 +702,21 @@ class EipAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_delete_publicip_tags_async(self, request):
         """批量删除弹性公网IP资源标签
 
         为指定的弹性公网IP资源实例批量删除标签。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchDeletePublicipTagsRequest request
-        :return: BatchDeletePublicipTagsResponse
+        :param request: Request instance for BatchDeletePublicipTags
+        :type request: :class:`huaweicloudsdkeip.v2.BatchDeletePublicipTagsRequest`
+        :rtype: :class:`huaweicloudsdkeip.v2.BatchDeletePublicipTagsResponse`
         """
         return self.batch_delete_publicip_tags_with_http_info(request)
 
     def batch_delete_publicip_tags_with_http_info(self, request):
-        """批量删除弹性公网IP资源标签
-
-        为指定的弹性公网IP资源实例批量删除标签。
-
-        :param BatchDeletePublicipTagsRequest request
-        :return: BatchDeletePublicipTagsResponse
-        """
-
         all_params = ['publicip_id', 'resource_tag_action']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -821,26 +762,21 @@ class EipAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_pre_paid_publicip_async(self, request):
         """申请包周期弹性公网IP
 
         申请包年包月的弹性公网IP。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreatePrePaidPublicipRequest request
-        :return: CreatePrePaidPublicipResponse
+        :param request: Request instance for CreatePrePaidPublicip
+        :type request: :class:`huaweicloudsdkeip.v2.CreatePrePaidPublicipRequest`
+        :rtype: :class:`huaweicloudsdkeip.v2.CreatePrePaidPublicipResponse`
         """
         return self.create_pre_paid_publicip_with_http_info(request)
 
     def create_pre_paid_publicip_with_http_info(self, request):
-        """申请包周期弹性公网IP
-
-        申请包年包月的弹性公网IP。
-
-        :param CreatePrePaidPublicipRequest request
-        :return: CreatePrePaidPublicipResponse
-        """
-
         all_params = ['create_period_publicip']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -884,26 +820,22 @@ class EipAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_publicip_async(self, request):
         """申请弹性公网IP
 
-        申请弹性公网IP，支持IPv4和IPv6。  弹性公网IP（Elastic IP）提供独立的公网IP资源，包括公网IP地址与公网出口带宽服务。可以与弹性云服务器、裸金属服务器、虚拟IP、弹性负载均衡、NAT网关等资源灵活地绑定及解绑。拥有多种灵活的计费方式，可以满足各种业务场景的需要。
+        申请弹性公网IP，支持IPv4和IPv6。
+         弹性公网IP（Elastic IP）提供独立的公网IP资源，包括公网IP地址与公网出口带宽服务。可以与弹性云服务器、裸金属服务器、虚拟IP、弹性负载均衡、NAT网关等资源灵活地绑定及解绑。拥有多种灵活的计费方式，可以满足各种业务场景的需要。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreatePublicipRequest request
-        :return: CreatePublicipResponse
+        :param request: Request instance for CreatePublicip
+        :type request: :class:`huaweicloudsdkeip.v2.CreatePublicipRequest`
+        :rtype: :class:`huaweicloudsdkeip.v2.CreatePublicipResponse`
         """
         return self.create_publicip_with_http_info(request)
 
     def create_publicip_with_http_info(self, request):
-        """申请弹性公网IP
-
-        申请弹性公网IP，支持IPv4和IPv6。  弹性公网IP（Elastic IP）提供独立的公网IP资源，包括公网IP地址与公网出口带宽服务。可以与弹性云服务器、裸金属服务器、虚拟IP、弹性负载均衡、NAT网关等资源灵活地绑定及解绑。拥有多种灵活的计费方式，可以满足各种业务场景的需要。
-
-        :param CreatePublicipRequest request
-        :return: CreatePublicipResponse
-        """
-
         all_params = ['create_publicip']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -947,26 +879,21 @@ class EipAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_publicip_tag_async(self, request):
         """创建弹性公网IP资源标签
 
         给指定弹性IP资源实例增加标签信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreatePublicipTagRequest request
-        :return: CreatePublicipTagResponse
+        :param request: Request instance for CreatePublicipTag
+        :type request: :class:`huaweicloudsdkeip.v2.CreatePublicipTagRequest`
+        :rtype: :class:`huaweicloudsdkeip.v2.CreatePublicipTagResponse`
         """
         return self.create_publicip_tag_with_http_info(request)
 
     def create_publicip_tag_with_http_info(self, request):
-        """创建弹性公网IP资源标签
-
-        给指定弹性IP资源实例增加标签信息。
-
-        :param CreatePublicipTagRequest request
-        :return: CreatePublicipTagResponse
-        """
-
         all_params = ['publicip_id', 'tag']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1012,26 +939,21 @@ class EipAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_publicip_async(self, request):
         """删除弹性公网IP
 
         删除弹性公网IP,绑定状态eip不允许直接删除。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeletePublicipRequest request
-        :return: DeletePublicipResponse
+        :param request: Request instance for DeletePublicip
+        :type request: :class:`huaweicloudsdkeip.v2.DeletePublicipRequest`
+        :rtype: :class:`huaweicloudsdkeip.v2.DeletePublicipResponse`
         """
         return self.delete_publicip_with_http_info(request)
 
     def delete_publicip_with_http_info(self, request):
-        """删除弹性公网IP
-
-        删除弹性公网IP,绑定状态eip不允许直接删除。
-
-        :param DeletePublicipRequest request
-        :return: DeletePublicipResponse
-        """
-
         all_params = ['publicip_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1075,26 +997,21 @@ class EipAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_publicip_tag_async(self, request):
         """删除弹性公网IP的标签
 
         删除指定弹性公网IP的标签信息。其中project_id是项目ID，publicip_id 是要操作的弹性公网IP的id。key是要删除标签的键。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeletePublicipTagRequest request
-        :return: DeletePublicipTagResponse
+        :param request: Request instance for DeletePublicipTag
+        :type request: :class:`huaweicloudsdkeip.v2.DeletePublicipTagRequest`
+        :rtype: :class:`huaweicloudsdkeip.v2.DeletePublicipTagResponse`
         """
         return self.delete_publicip_tag_with_http_info(request)
 
     def delete_publicip_tag_with_http_info(self, request):
-        """删除弹性公网IP的标签
-
-        删除指定弹性公网IP的标签信息。其中project_id是项目ID，publicip_id 是要操作的弹性公网IP的id。key是要删除标签的键。
-
-        :param DeletePublicipTagRequest request
-        :return: DeletePublicipTagResponse
-        """
-
         all_params = ['publicip_id', 'key']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1140,26 +1057,21 @@ class EipAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_publicip_tags_async(self, request):
         """查询租户的弹性公网IP标签
 
         查询租户在指定区域和实例类型的所有标签集合。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListPublicipTagsRequest request
-        :return: ListPublicipTagsResponse
+        :param request: Request instance for ListPublicipTags
+        :type request: :class:`huaweicloudsdkeip.v2.ListPublicipTagsRequest`
+        :rtype: :class:`huaweicloudsdkeip.v2.ListPublicipTagsResponse`
         """
         return self.list_publicip_tags_with_http_info(request)
 
     def list_publicip_tags_with_http_info(self, request):
-        """查询租户的弹性公网IP标签
-
-        查询租户在指定区域和实例类型的所有标签集合。
-
-        :param ListPublicipTagsRequest request
-        :return: ListPublicipTagsResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1201,26 +1113,21 @@ class EipAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_publicips_async(self, request):
         """查询弹性公网IP列表
 
         查询弹性公网IP列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListPublicipsRequest request
-        :return: ListPublicipsResponse
+        :param request: Request instance for ListPublicips
+        :type request: :class:`huaweicloudsdkeip.v2.ListPublicipsRequest`
+        :rtype: :class:`huaweicloudsdkeip.v2.ListPublicipsResponse`
         """
         return self.list_publicips_with_http_info(request)
 
     def list_publicips_with_http_info(self, request):
-        """查询弹性公网IP列表
-
-        查询弹性公网IP列表
-
-        :param ListPublicipsRequest request
-        :return: ListPublicipsResponse
-        """
-
         all_params = ['marker', 'limit', 'ip_version', 'enterprise_project_id', 'port_id', 'public_ip_address', 'private_ip_address', 'id', 'allow_share_bandwidth_type_any']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1285,26 +1192,21 @@ class EipAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_publicips_by_tags_async(self, request):
         """按标签查询弹性公网IP列表
 
         使用标签过滤弹性公网IP。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListPublicipsByTagsRequest request
-        :return: ListPublicipsByTagsResponse
+        :param request: Request instance for ListPublicipsByTags
+        :type request: :class:`huaweicloudsdkeip.v2.ListPublicipsByTagsRequest`
+        :rtype: :class:`huaweicloudsdkeip.v2.ListPublicipsByTagsResponse`
         """
         return self.list_publicips_by_tags_with_http_info(request)
 
     def list_publicips_by_tags_with_http_info(self, request):
-        """按标签查询弹性公网IP列表
-
-        使用标签过滤弹性公网IP。
-
-        :param ListPublicipsByTagsRequest request
-        :return: ListPublicipsByTagsResponse
-        """
-
         all_params = ['show_publicip_resource_instance']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1348,26 +1250,21 @@ class EipAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_publicip_async(self, request):
         """查询弹性公网IP
 
         查询指定的弹性公网IP。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowPublicipRequest request
-        :return: ShowPublicipResponse
+        :param request: Request instance for ShowPublicip
+        :type request: :class:`huaweicloudsdkeip.v2.ShowPublicipRequest`
+        :rtype: :class:`huaweicloudsdkeip.v2.ShowPublicipResponse`
         """
         return self.show_publicip_with_http_info(request)
 
     def show_publicip_with_http_info(self, request):
-        """查询弹性公网IP
-
-        查询指定的弹性公网IP。
-
-        :param ShowPublicipRequest request
-        :return: ShowPublicipResponse
-        """
-
         all_params = ['publicip_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1411,26 +1308,21 @@ class EipAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_publicip_tags_async(self, request):
         """查询弹性公网IP的标签
 
         查询指定弹性IP实例的标签信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowPublicipTagsRequest request
-        :return: ShowPublicipTagsResponse
+        :param request: Request instance for ShowPublicipTags
+        :type request: :class:`huaweicloudsdkeip.v2.ShowPublicipTagsRequest`
+        :rtype: :class:`huaweicloudsdkeip.v2.ShowPublicipTagsResponse`
         """
         return self.show_publicip_tags_with_http_info(request)
 
     def show_publicip_tags_with_http_info(self, request):
-        """查询弹性公网IP的标签
-
-        查询指定弹性IP实例的标签信息。
-
-        :param ShowPublicipTagsRequest request
-        :return: ShowPublicipTagsResponse
-        """
-
         all_params = ['publicip_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1474,26 +1366,21 @@ class EipAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_publicip_async(self, request):
         """更新弹性公网IP
 
         更新弹性公网IP，将弹性公网IP跟一个网卡绑定或者解绑定，转换IP地址版本类型。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdatePublicipRequest request
-        :return: UpdatePublicipResponse
+        :param request: Request instance for UpdatePublicip
+        :type request: :class:`huaweicloudsdkeip.v2.UpdatePublicipRequest`
+        :rtype: :class:`huaweicloudsdkeip.v2.UpdatePublicipResponse`
         """
         return self.update_publicip_with_http_info(request)
 
     def update_publicip_with_http_info(self, request):
-        """更新弹性公网IP
-
-        更新弹性公网IP，将弹性公网IP跟一个网卡绑定或者解绑定，转换IP地址版本类型。
-
-        :param UpdatePublicipRequest request
-        :return: UpdatePublicipResponse
-        """
-
         all_params = ['publicip_id', 'publicip']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1539,26 +1426,21 @@ class EipAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def neutron_create_floating_ip_async(self, request):
         """创建浮动IP
 
-        创建浮动IP的外部网络UUID，请使用GET /v2.0/networks?router:external=True或neutron net-external-list方式获取。
+        创建浮动IP的外部网络UUID，请使用GET /v2.0/networks?router:external&#x3D;True或neutron net-external-list方式获取。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param NeutronCreateFloatingIpRequest request
-        :return: NeutronCreateFloatingIpResponse
+        :param request: Request instance for NeutronCreateFloatingIp
+        :type request: :class:`huaweicloudsdkeip.v2.NeutronCreateFloatingIpRequest`
+        :rtype: :class:`huaweicloudsdkeip.v2.NeutronCreateFloatingIpResponse`
         """
         return self.neutron_create_floating_ip_with_http_info(request)
 
     def neutron_create_floating_ip_with_http_info(self, request):
-        """创建浮动IP
-
-        创建浮动IP的外部网络UUID，请使用GET /v2.0/networks?router:external=True或neutron net-external-list方式获取。
-
-        :param NeutronCreateFloatingIpRequest request
-        :return: NeutronCreateFloatingIpResponse
-        """
-
         all_params = ['floatingip']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1602,26 +1484,21 @@ class EipAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def neutron_delete_floating_ip_async(self, request):
         """删除浮动IP
 
         删除指定的浮动IP。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param NeutronDeleteFloatingIpRequest request
-        :return: NeutronDeleteFloatingIpResponse
+        :param request: Request instance for NeutronDeleteFloatingIp
+        :type request: :class:`huaweicloudsdkeip.v2.NeutronDeleteFloatingIpRequest`
+        :rtype: :class:`huaweicloudsdkeip.v2.NeutronDeleteFloatingIpResponse`
         """
         return self.neutron_delete_floating_ip_with_http_info(request)
 
     def neutron_delete_floating_ip_with_http_info(self, request):
-        """删除浮动IP
-
-        删除指定的浮动IP。
-
-        :param NeutronDeleteFloatingIpRequest request
-        :return: NeutronDeleteFloatingIpResponse
-        """
-
         all_params = ['floatingip_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1665,26 +1542,21 @@ class EipAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def neutron_list_floating_ips_async(self, request):
         """查询浮动IP列表
 
         查询提交请求的租户有权限操作的所有浮动IP地址。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param NeutronListFloatingIpsRequest request
-        :return: NeutronListFloatingIpsResponse
+        :param request: Request instance for NeutronListFloatingIps
+        :type request: :class:`huaweicloudsdkeip.v2.NeutronListFloatingIpsRequest`
+        :rtype: :class:`huaweicloudsdkeip.v2.NeutronListFloatingIpsResponse`
         """
         return self.neutron_list_floating_ips_with_http_info(request)
 
     def neutron_list_floating_ips_with_http_info(self, request):
-        """查询浮动IP列表
-
-        查询提交请求的租户有权限操作的所有浮动IP地址。
-
-        :param NeutronListFloatingIpsRequest request
-        :return: NeutronListFloatingIpsResponse
-        """
-
         all_params = ['limit', 'marker', 'page_reverse', 'id', 'floating_ip_address', 'router_id', 'port_id', 'fixed_ip_address', 'tenant_id', 'floating_network_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1746,26 +1618,21 @@ class EipAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def neutron_show_floating_ip_async(self, request):
         """查询浮动IP
 
         查询浮动IP详情，包括浮动IP状态，浮动IP所属路由器ID，浮动IP的外部网络ID等等。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param NeutronShowFloatingIpRequest request
-        :return: NeutronShowFloatingIpResponse
+        :param request: Request instance for NeutronShowFloatingIp
+        :type request: :class:`huaweicloudsdkeip.v2.NeutronShowFloatingIpRequest`
+        :rtype: :class:`huaweicloudsdkeip.v2.NeutronShowFloatingIpResponse`
         """
         return self.neutron_show_floating_ip_with_http_info(request)
 
     def neutron_show_floating_ip_with_http_info(self, request):
-        """查询浮动IP
-
-        查询浮动IP详情，包括浮动IP状态，浮动IP所属路由器ID，浮动IP的外部网络ID等等。
-
-        :param NeutronShowFloatingIpRequest request
-        :return: NeutronShowFloatingIpResponse
-        """
-
         all_params = ['floatingip_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1809,26 +1676,23 @@ class EipAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def neutron_update_floating_ip_async(self, request):
         """更新浮动IP
 
-        更新浮动IP。  更新时需在URL中给出浮动IP地址的ID。  port_id 为空，则表示浮动IP从端口解绑。
+        更新浮动IP。
+         更新时需在URL中给出浮动IP地址的ID。
+         port_id 为空，则表示浮动IP从端口解绑。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param NeutronUpdateFloatingIpRequest request
-        :return: NeutronUpdateFloatingIpResponse
+        :param request: Request instance for NeutronUpdateFloatingIp
+        :type request: :class:`huaweicloudsdkeip.v2.NeutronUpdateFloatingIpRequest`
+        :rtype: :class:`huaweicloudsdkeip.v2.NeutronUpdateFloatingIpResponse`
         """
         return self.neutron_update_floating_ip_with_http_info(request)
 
     def neutron_update_floating_ip_with_http_info(self, request):
-        """更新浮动IP
-
-        更新浮动IP。  更新时需在URL中给出浮动IP地址的ID。  port_id 为空，则表示浮动IP从端口解绑。
-
-        :param NeutronUpdateFloatingIpRequest request
-        :return: NeutronUpdateFloatingIpResponse
-        """
-
         all_params = ['floatingip_id', 'neutron_update_floating_ip_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1873,7 +1737,6 @@ class EipAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

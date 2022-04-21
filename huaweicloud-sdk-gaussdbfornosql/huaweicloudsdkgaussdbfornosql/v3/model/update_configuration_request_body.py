@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateConfigurationRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateConfigurationRequestBody:
     }
 
     def __init__(self, name=None, description=None, values=None):
-        """UpdateConfigurationRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateConfigurationRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param name: 参数模板名称。最长64个字符，只允许大写字母、小写字母、数字和特殊字符中划线、下划线和点。
+        :type name: str
+        :param description: 参数模板描述。最长256个字符，不支持!&lt;&gt;&#x3D;&amp;\&quot;&#39;特殊字符。默认为空。
+        :type description: str
+        :param values: 参数值对象，用户基于默认参数模板自定义的参数值。为空时不修改参数值。
+        :type values: dict(str, str)
+        """
         
         
 
@@ -68,7 +77,7 @@ class UpdateConfigurationRequestBody:
         参数模板名称。最长64个字符，只允许大写字母、小写字母、数字和特殊字符中划线、下划线和点。
 
         :param name: The name of this UpdateConfigurationRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -90,7 +99,7 @@ class UpdateConfigurationRequestBody:
         参数模板描述。最长256个字符，不支持!<>=&\"'特殊字符。默认为空。
 
         :param description: The description of this UpdateConfigurationRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -112,7 +121,7 @@ class UpdateConfigurationRequestBody:
         参数值对象，用户基于默认参数模板自定义的参数值。为空时不修改参数值。
 
         :param values: The values of this UpdateConfigurationRequestBody.
-        :type: dict(str, str)
+        :type values: dict(str, str)
         """
         self._values = values
 

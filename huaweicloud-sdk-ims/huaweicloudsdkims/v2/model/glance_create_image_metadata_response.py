@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GlanceCreateImageMetadataResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -88,7 +87,71 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
     }
 
     def __init__(self, visibility=None, name=None, protected=None, container_format=None, disk_format=None, tags=None, min_ram=None, min_disk=None, status=None, created_at=None, updated_at=None, _self=None, id=None, file=None, schema=None, image_source_type=None, image_size=None, isregistered=None, os_version=None, os_type=None, platform=None, os_bit=None, imagetype=None, virtual_env_type=None, owner=None, virtual_size=None, properties=None, root_origin=None, checksum=None, size=None):
-        """GlanceCreateImageMetadataResponse - a model defined in huaweicloud sdk"""
+        """GlanceCreateImageMetadataResponse
+
+        The model defined in huaweicloud sdk
+
+        :param visibility: 其他租户是否可见。取值为private。
+        :type visibility: str
+        :param name: 镜像名称，如果未指定name的取值，则默认为空，但是使用该镜像创建虚拟机会失败。名称的长度为1～128位。
+        :type name: str
+        :param protected: 镜像是否被保护，保护后的镜像不可删除。取值为false
+        :type protected: bool
+        :param container_format: 容器格式。取值为bare。
+        :type container_format: str
+        :param disk_format: 镜像文件格式。目前支持vhd、zvhd、raw、qcow2。默认值是vhd。
+        :type disk_format: str
+        :param tags: 镜像标签列表。长度为1～255位。
+        :type tags: list[str]
+        :param min_ram: 镜像运行最小内存，单位为MB。取值参考ECS规格限制，一般设置为0。云服务器的规格限制，请参见规格清单。
+        :type min_ram: int
+        :param min_disk: 镜像运行需要的最小磁盘容量，单位为GB 。取值为40～1024GB。必须大于镜像系统盘容量，否则创建云主机云服务器可能失败。
+        :type min_disk: int
+        :param status: 镜像状态。取值如下：queued：表示镜像元数据已经创建成功，等待上传镜像文件。saving：表示镜像正在上传文件到后端存储。deleted：表示镜像已经删除。killed：表示镜像上传错误。active：表示镜像可以正常使用。
+        :type status: str
+        :param created_at: 创建时间。格式为UTC时间。
+        :type created_at: str
+        :param updated_at: 更新时间。格式为UTC时间。
+        :type updated_at: str
+        :param _self: 本镜像链接。
+        :type _self: str
+        :param id: 镜像ID，用户调用创建镜像接口后，需保存该镜像的ID，用来调用上传镜像接口完成镜像上传。
+        :type id: str
+        :param file: 上传下载镜像文件的地址链接。
+        :type file: str
+        :param schema: 视图链接。
+        :type schema: str
+        :param image_source_type: 镜像后端存储类型，目前支持uds。
+        :type image_source_type: str
+        :param image_size: 镜像大小。单位为字节。
+        :type image_size: str
+        :param isregistered: 镜像是否注册。只有已注册的镜像才能在Portal界面上查询到。取值为true。
+        :type isregistered: str
+        :param os_version: 镜像的操作系统具体版本。
+        :type os_version: str
+        :param os_type: 镜像的操作系统类型，取值由__os_version确定。支持Windows、Linux和other。
+        :type os_type: str
+        :param platform: 表示镜像支持的操作系统平台。取值由__os_version确定
+        :type platform: str
+        :param os_bit: 表示操作系统位数。取值由__os_version确定，取值为32或64。
+        :type os_bit: str
+        :param imagetype: 镜像类型。取值为private，表示私有镜像。
+        :type imagetype: str
+        :param virtual_env_type: 平台类型。镜像使用环境类型：FusionCompute、Ironic、DataImage。如果是云主机云服务器镜像，则取值为FusionCompute。如果是数据卷镜像则取值是DataImage。如果是物理机裸金属服务器镜像，则取值是Ironic。
+        :type virtual_env_type: str
+        :param owner: 镜像所属项目ID。
+        :type owner: str
+        :param virtual_size: 镜像虚拟大小。单位为字节。
+        :type virtual_size: int
+        :param properties: 镜像属性的集合，不表示具体的镜像属性
+        :type properties: object
+        :param root_origin: 表示当前镜像来源是从外部导入。取值：file
+        :type root_origin: str
+        :param checksum: 镜像文件md5值。
+        :type checksum: str
+        :param size: 目前暂时不使用。
+        :type size: int
+        """
         
         super(GlanceCreateImageMetadataResponse, self).__init__()
 
@@ -203,7 +266,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
         其他租户是否可见。取值为private。
 
         :param visibility: The visibility of this GlanceCreateImageMetadataResponse.
-        :type: str
+        :type visibility: str
         """
         self._visibility = visibility
 
@@ -225,7 +288,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
         镜像名称，如果未指定name的取值，则默认为空，但是使用该镜像创建虚拟机会失败。名称的长度为1～128位。
 
         :param name: The name of this GlanceCreateImageMetadataResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -247,7 +310,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
         镜像是否被保护，保护后的镜像不可删除。取值为false
 
         :param protected: The protected of this GlanceCreateImageMetadataResponse.
-        :type: bool
+        :type protected: bool
         """
         self._protected = protected
 
@@ -269,7 +332,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
         容器格式。取值为bare。
 
         :param container_format: The container_format of this GlanceCreateImageMetadataResponse.
-        :type: str
+        :type container_format: str
         """
         self._container_format = container_format
 
@@ -291,7 +354,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
         镜像文件格式。目前支持vhd、zvhd、raw、qcow2。默认值是vhd。
 
         :param disk_format: The disk_format of this GlanceCreateImageMetadataResponse.
-        :type: str
+        :type disk_format: str
         """
         self._disk_format = disk_format
 
@@ -313,7 +376,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
         镜像标签列表。长度为1～255位。
 
         :param tags: The tags of this GlanceCreateImageMetadataResponse.
-        :type: list[str]
+        :type tags: list[str]
         """
         self._tags = tags
 
@@ -335,7 +398,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
         镜像运行最小内存，单位为MB。取值参考ECS规格限制，一般设置为0。云服务器的规格限制，请参见规格清单。
 
         :param min_ram: The min_ram of this GlanceCreateImageMetadataResponse.
-        :type: int
+        :type min_ram: int
         """
         self._min_ram = min_ram
 
@@ -357,7 +420,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
         镜像运行需要的最小磁盘容量，单位为GB 。取值为40～1024GB。必须大于镜像系统盘容量，否则创建云主机云服务器可能失败。
 
         :param min_disk: The min_disk of this GlanceCreateImageMetadataResponse.
-        :type: int
+        :type min_disk: int
         """
         self._min_disk = min_disk
 
@@ -379,7 +442,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
         镜像状态。取值如下：queued：表示镜像元数据已经创建成功，等待上传镜像文件。saving：表示镜像正在上传文件到后端存储。deleted：表示镜像已经删除。killed：表示镜像上传错误。active：表示镜像可以正常使用。
 
         :param status: The status of this GlanceCreateImageMetadataResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -401,7 +464,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
         创建时间。格式为UTC时间。
 
         :param created_at: The created_at of this GlanceCreateImageMetadataResponse.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -423,7 +486,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
         更新时间。格式为UTC时间。
 
         :param updated_at: The updated_at of this GlanceCreateImageMetadataResponse.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 
@@ -445,7 +508,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
         本镜像链接。
 
         :param _self: The _self of this GlanceCreateImageMetadataResponse.
-        :type: str
+        :type _self: str
         """
         self.__self = _self
 
@@ -467,7 +530,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
         镜像ID，用户调用创建镜像接口后，需保存该镜像的ID，用来调用上传镜像接口完成镜像上传。
 
         :param id: The id of this GlanceCreateImageMetadataResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -489,7 +552,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
         上传下载镜像文件的地址链接。
 
         :param file: The file of this GlanceCreateImageMetadataResponse.
-        :type: str
+        :type file: str
         """
         self._file = file
 
@@ -511,7 +574,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
         视图链接。
 
         :param schema: The schema of this GlanceCreateImageMetadataResponse.
-        :type: str
+        :type schema: str
         """
         self._schema = schema
 
@@ -533,7 +596,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
         镜像后端存储类型，目前支持uds。
 
         :param image_source_type: The image_source_type of this GlanceCreateImageMetadataResponse.
-        :type: str
+        :type image_source_type: str
         """
         self._image_source_type = image_source_type
 
@@ -555,7 +618,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
         镜像大小。单位为字节。
 
         :param image_size: The image_size of this GlanceCreateImageMetadataResponse.
-        :type: str
+        :type image_size: str
         """
         self._image_size = image_size
 
@@ -577,7 +640,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
         镜像是否注册。只有已注册的镜像才能在Portal界面上查询到。取值为true。
 
         :param isregistered: The isregistered of this GlanceCreateImageMetadataResponse.
-        :type: str
+        :type isregistered: str
         """
         self._isregistered = isregistered
 
@@ -599,7 +662,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
         镜像的操作系统具体版本。
 
         :param os_version: The os_version of this GlanceCreateImageMetadataResponse.
-        :type: str
+        :type os_version: str
         """
         self._os_version = os_version
 
@@ -621,7 +684,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
         镜像的操作系统类型，取值由__os_version确定。支持Windows、Linux和other。
 
         :param os_type: The os_type of this GlanceCreateImageMetadataResponse.
-        :type: str
+        :type os_type: str
         """
         self._os_type = os_type
 
@@ -643,7 +706,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
         表示镜像支持的操作系统平台。取值由__os_version确定
 
         :param platform: The platform of this GlanceCreateImageMetadataResponse.
-        :type: str
+        :type platform: str
         """
         self._platform = platform
 
@@ -665,7 +728,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
         表示操作系统位数。取值由__os_version确定，取值为32或64。
 
         :param os_bit: The os_bit of this GlanceCreateImageMetadataResponse.
-        :type: str
+        :type os_bit: str
         """
         self._os_bit = os_bit
 
@@ -687,7 +750,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
         镜像类型。取值为private，表示私有镜像。
 
         :param imagetype: The imagetype of this GlanceCreateImageMetadataResponse.
-        :type: str
+        :type imagetype: str
         """
         self._imagetype = imagetype
 
@@ -709,7 +772,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
         平台类型。镜像使用环境类型：FusionCompute、Ironic、DataImage。如果是云主机云服务器镜像，则取值为FusionCompute。如果是数据卷镜像则取值是DataImage。如果是物理机裸金属服务器镜像，则取值是Ironic。
 
         :param virtual_env_type: The virtual_env_type of this GlanceCreateImageMetadataResponse.
-        :type: str
+        :type virtual_env_type: str
         """
         self._virtual_env_type = virtual_env_type
 
@@ -731,7 +794,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
         镜像所属项目ID。
 
         :param owner: The owner of this GlanceCreateImageMetadataResponse.
-        :type: str
+        :type owner: str
         """
         self._owner = owner
 
@@ -753,7 +816,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
         镜像虚拟大小。单位为字节。
 
         :param virtual_size: The virtual_size of this GlanceCreateImageMetadataResponse.
-        :type: int
+        :type virtual_size: int
         """
         self._virtual_size = virtual_size
 
@@ -775,7 +838,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
         镜像属性的集合，不表示具体的镜像属性
 
         :param properties: The properties of this GlanceCreateImageMetadataResponse.
-        :type: object
+        :type properties: object
         """
         self._properties = properties
 
@@ -797,7 +860,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
         表示当前镜像来源是从外部导入。取值：file
 
         :param root_origin: The root_origin of this GlanceCreateImageMetadataResponse.
-        :type: str
+        :type root_origin: str
         """
         self._root_origin = root_origin
 
@@ -819,7 +882,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
         镜像文件md5值。
 
         :param checksum: The checksum of this GlanceCreateImageMetadataResponse.
-        :type: str
+        :type checksum: str
         """
         self._checksum = checksum
 
@@ -841,7 +904,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
         目前暂时不使用。
 
         :param size: The size of this GlanceCreateImageMetadataResponse.
-        :type: int
+        :type size: int
         """
         self._size = size
 

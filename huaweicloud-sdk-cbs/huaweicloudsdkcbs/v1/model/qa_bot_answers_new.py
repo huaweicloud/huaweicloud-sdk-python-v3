@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QaBotAnswersNew:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class QaBotAnswersNew:
     }
 
     def __init__(self, answers=None, recommend_answers=None):
-        """QaBotAnswersNew - a model defined in huaweicloud sdk"""
+        """QaBotAnswersNew
+
+        The model defined in huaweicloud sdk
+
+        :param answers: 问答机器人回复。
+        :type answers: list[:class:`huaweicloudsdkcbs.v1.QaBotAnswer`]
+        :param recommend_answers: 问答机器人推荐问题
+        :type recommend_answers: list[:class:`huaweicloudsdkcbs.v1.RecomendAnswer`]
+        """
         
         
 
@@ -52,7 +59,7 @@ class QaBotAnswersNew:
         问答机器人回复。
 
         :return: The answers of this QaBotAnswersNew.
-        :rtype: list[QaBotAnswer]
+        :rtype: list[:class:`huaweicloudsdkcbs.v1.QaBotAnswer`]
         """
         return self._answers
 
@@ -63,7 +70,7 @@ class QaBotAnswersNew:
         问答机器人回复。
 
         :param answers: The answers of this QaBotAnswersNew.
-        :type: list[QaBotAnswer]
+        :type answers: list[:class:`huaweicloudsdkcbs.v1.QaBotAnswer`]
         """
         self._answers = answers
 
@@ -74,7 +81,7 @@ class QaBotAnswersNew:
         问答机器人推荐问题
 
         :return: The recommend_answers of this QaBotAnswersNew.
-        :rtype: list[RecomendAnswer]
+        :rtype: list[:class:`huaweicloudsdkcbs.v1.RecomendAnswer`]
         """
         return self._recommend_answers
 
@@ -85,7 +92,7 @@ class QaBotAnswersNew:
         问答机器人推荐问题
 
         :param recommend_answers: The recommend_answers of this QaBotAnswersNew.
-        :type: list[RecomendAnswer]
+        :type recommend_answers: list[:class:`huaweicloudsdkcbs.v1.RecomendAnswer`]
         """
         self._recommend_answers = recommend_answers
 

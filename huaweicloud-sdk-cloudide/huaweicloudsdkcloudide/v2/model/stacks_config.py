@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StacksConfig:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class StacksConfig:
     }
 
     def __init__(self, attributes=None, recipe=None):
-        """StacksConfig - a model defined in huaweicloud sdk"""
+        """StacksConfig
+
+        The model defined in huaweicloud sdk
+
+        :param attributes: 
+        :type attributes: :class:`huaweicloudsdkcloudide.v2.StacksAttribute`
+        :param recipe: 
+        :type recipe: :class:`huaweicloudsdkcloudide.v2.Recipe`
+        """
         
         
 
@@ -51,7 +58,7 @@ class StacksConfig:
 
 
         :return: The attributes of this StacksConfig.
-        :rtype: StacksAttribute
+        :rtype: :class:`huaweicloudsdkcloudide.v2.StacksAttribute`
         """
         return self._attributes
 
@@ -61,7 +68,7 @@ class StacksConfig:
 
 
         :param attributes: The attributes of this StacksConfig.
-        :type: StacksAttribute
+        :type attributes: :class:`huaweicloudsdkcloudide.v2.StacksAttribute`
         """
         self._attributes = attributes
 
@@ -71,7 +78,7 @@ class StacksConfig:
 
 
         :return: The recipe of this StacksConfig.
-        :rtype: Recipe
+        :rtype: :class:`huaweicloudsdkcloudide.v2.Recipe`
         """
         return self._recipe
 
@@ -81,7 +88,7 @@ class StacksConfig:
 
 
         :param recipe: The recipe of this StacksConfig.
-        :type: Recipe
+        :type recipe: :class:`huaweicloudsdkcloudide.v2.Recipe`
         """
         self._recipe = recipe
 

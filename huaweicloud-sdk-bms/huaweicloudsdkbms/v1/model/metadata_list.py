@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MetadataList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class MetadataList:
     }
 
     def __init__(self, charging_mode=None, metering_order_id=None, metering_product_id=None, vpc_id=None, metering_image_id=None, metering_imagetype=None, baremetal_port_id_list=None, metering_resourcespeccode=None, metering_resourcetype=None, image_name=None, op_svc_userid=None, os_type=None, bms_support_evs=None, os_bit=None):
-        """MetadataList - a model defined in huaweicloud sdk"""
+        """MetadataList
+
+        The model defined in huaweicloud sdk
+
+        :param charging_mode: 裸金属服务器的计费类型。1：按包年包月计费（即prePaid：预付费方式）。
+        :type charging_mode: str
+        :param metering_order_id: 按“包年/包月”计费的裸金属服务器对应的订单ID。
+        :type metering_order_id: str
+        :param metering_product_id: 按“包年/包月”计费的裸金属服务器对应的产品ID
+        :type metering_product_id: str
+        :param vpc_id: 裸金属服务器所属的虚拟私有云ID
+        :type vpc_id: str
+        :param metering_image_id: 裸金属服务器操作系统对应的镜像ID
+        :type metering_image_id: str
+        :param metering_imagetype: 镜像类型，目前支持：公共镜像（gold）私有镜像（private）共享镜像（shared）
+        :type metering_imagetype: str
+        :param baremetal_port_id_list: 裸金属服务器的网卡列表。
+        :type baremetal_port_id_list: str
+        :param metering_resourcespeccode: 裸金属服务器对应的资源规格编码，格式为：{规格ID}.{os_type}，例如physical.o2.medium.linux。
+        :type metering_resourcespeccode: str
+        :param metering_resourcetype: 裸金属服务器对应的资源类型，取值为：hws.resource.type.pm
+        :type metering_resourcetype: str
+        :param image_name: 裸金属服务器操作系统对应的镜像名称
+        :type image_name: str
+        :param op_svc_userid: 用户ID（登录管理控制台，进入我的凭证，即可看到“用户ID”）
+        :type op_svc_userid: str
+        :param os_type: 操作系统类型，取值为：Linux、Windows
+        :type os_type: str
+        :param bms_support_evs: 裸金属服务器是否支持EVS卷。
+        :type bms_support_evs: str
+        :param os_bit: 操作系统位数，一般取值为“32”或者“64”。
+        :type os_bit: str
+        """
         
         
 
@@ -123,7 +154,7 @@ class MetadataList:
         裸金属服务器的计费类型。1：按包年包月计费（即prePaid：预付费方式）。
 
         :param charging_mode: The charging_mode of this MetadataList.
-        :type: str
+        :type charging_mode: str
         """
         self._charging_mode = charging_mode
 
@@ -145,7 +176,7 @@ class MetadataList:
         按“包年/包月”计费的裸金属服务器对应的订单ID。
 
         :param metering_order_id: The metering_order_id of this MetadataList.
-        :type: str
+        :type metering_order_id: str
         """
         self._metering_order_id = metering_order_id
 
@@ -167,7 +198,7 @@ class MetadataList:
         按“包年/包月”计费的裸金属服务器对应的产品ID
 
         :param metering_product_id: The metering_product_id of this MetadataList.
-        :type: str
+        :type metering_product_id: str
         """
         self._metering_product_id = metering_product_id
 
@@ -189,7 +220,7 @@ class MetadataList:
         裸金属服务器所属的虚拟私有云ID
 
         :param vpc_id: The vpc_id of this MetadataList.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -211,7 +242,7 @@ class MetadataList:
         裸金属服务器操作系统对应的镜像ID
 
         :param metering_image_id: The metering_image_id of this MetadataList.
-        :type: str
+        :type metering_image_id: str
         """
         self._metering_image_id = metering_image_id
 
@@ -233,7 +264,7 @@ class MetadataList:
         镜像类型，目前支持：公共镜像（gold）私有镜像（private）共享镜像（shared）
 
         :param metering_imagetype: The metering_imagetype of this MetadataList.
-        :type: str
+        :type metering_imagetype: str
         """
         self._metering_imagetype = metering_imagetype
 
@@ -255,7 +286,7 @@ class MetadataList:
         裸金属服务器的网卡列表。
 
         :param baremetal_port_id_list: The baremetal_port_id_list of this MetadataList.
-        :type: str
+        :type baremetal_port_id_list: str
         """
         self._baremetal_port_id_list = baremetal_port_id_list
 
@@ -277,7 +308,7 @@ class MetadataList:
         裸金属服务器对应的资源规格编码，格式为：{规格ID}.{os_type}，例如physical.o2.medium.linux。
 
         :param metering_resourcespeccode: The metering_resourcespeccode of this MetadataList.
-        :type: str
+        :type metering_resourcespeccode: str
         """
         self._metering_resourcespeccode = metering_resourcespeccode
 
@@ -299,7 +330,7 @@ class MetadataList:
         裸金属服务器对应的资源类型，取值为：hws.resource.type.pm
 
         :param metering_resourcetype: The metering_resourcetype of this MetadataList.
-        :type: str
+        :type metering_resourcetype: str
         """
         self._metering_resourcetype = metering_resourcetype
 
@@ -321,7 +352,7 @@ class MetadataList:
         裸金属服务器操作系统对应的镜像名称
 
         :param image_name: The image_name of this MetadataList.
-        :type: str
+        :type image_name: str
         """
         self._image_name = image_name
 
@@ -343,7 +374,7 @@ class MetadataList:
         用户ID（登录管理控制台，进入我的凭证，即可看到“用户ID”）
 
         :param op_svc_userid: The op_svc_userid of this MetadataList.
-        :type: str
+        :type op_svc_userid: str
         """
         self._op_svc_userid = op_svc_userid
 
@@ -365,7 +396,7 @@ class MetadataList:
         操作系统类型，取值为：Linux、Windows
 
         :param os_type: The os_type of this MetadataList.
-        :type: str
+        :type os_type: str
         """
         self._os_type = os_type
 
@@ -387,7 +418,7 @@ class MetadataList:
         裸金属服务器是否支持EVS卷。
 
         :param bms_support_evs: The bms_support_evs of this MetadataList.
-        :type: str
+        :type bms_support_evs: str
         """
         self._bms_support_evs = bms_support_evs
 
@@ -409,7 +440,7 @@ class MetadataList:
         操作系统位数，一般取值为“32”或者“64”。
 
         :param os_bit: The os_bit of this MetadataList.
-        :type: str
+        :type os_bit: str
         """
         self._os_bit = os_bit
 

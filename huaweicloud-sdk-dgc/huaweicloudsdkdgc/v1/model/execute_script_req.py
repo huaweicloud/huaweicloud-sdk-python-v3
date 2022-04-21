@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExecuteScriptReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ExecuteScriptReq:
     }
 
     def __init__(self, params=None):
-        """ExecuteScriptReq - a model defined in huaweicloud sdk"""
+        """ExecuteScriptReq
+
+        The model defined in huaweicloud sdk
+
+        :param params: 脚本的执行参数
+        :type params: object
+        """
         
         
 
@@ -58,7 +63,7 @@ class ExecuteScriptReq:
         脚本的执行参数
 
         :param params: The params of this ExecuteScriptReq.
-        :type: object
+        :type params: object
         """
         self._params = params
 

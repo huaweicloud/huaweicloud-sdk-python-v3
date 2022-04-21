@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowJobStatusResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ShowJobStatusResponse(SdkResponse):
     }
 
     def __init__(self, name=None, status=None, starttime=None, end_time=None, last_update_time=None, nodes=None):
-        """ShowJobStatusResponse - a model defined in huaweicloud sdk"""
+        """ShowJobStatusResponse
+
+        The model defined in huaweicloud sdk
+
+        :param name: 
+        :type name: str
+        :param status: 
+        :type status: str
+        :param starttime: 
+        :type starttime: str
+        :param end_time: 
+        :type end_time: str
+        :param last_update_time: 状态最后更新时间
+        :type last_update_time: str
+        :param nodes: 
+        :type nodes: list[:class:`huaweicloudsdkdgc.v1.RealTimeNodeStatus`]
+        """
         
         super(ShowJobStatusResponse, self).__init__()
 
@@ -81,7 +96,7 @@ class ShowJobStatusResponse(SdkResponse):
 
 
         :param name: The name of this ShowJobStatusResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -101,7 +116,7 @@ class ShowJobStatusResponse(SdkResponse):
 
 
         :param status: The status of this ShowJobStatusResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -121,7 +136,7 @@ class ShowJobStatusResponse(SdkResponse):
 
 
         :param starttime: The starttime of this ShowJobStatusResponse.
-        :type: str
+        :type starttime: str
         """
         self._starttime = starttime
 
@@ -141,7 +156,7 @@ class ShowJobStatusResponse(SdkResponse):
 
 
         :param end_time: The end_time of this ShowJobStatusResponse.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -163,7 +178,7 @@ class ShowJobStatusResponse(SdkResponse):
         状态最后更新时间
 
         :param last_update_time: The last_update_time of this ShowJobStatusResponse.
-        :type: str
+        :type last_update_time: str
         """
         self._last_update_time = last_update_time
 
@@ -173,7 +188,7 @@ class ShowJobStatusResponse(SdkResponse):
 
 
         :return: The nodes of this ShowJobStatusResponse.
-        :rtype: list[RealTimeNodeStatus]
+        :rtype: list[:class:`huaweicloudsdkdgc.v1.RealTimeNodeStatus`]
         """
         return self._nodes
 
@@ -183,7 +198,7 @@ class ShowJobStatusResponse(SdkResponse):
 
 
         :param nodes: The nodes of this ShowJobStatusResponse.
-        :type: list[RealTimeNodeStatus]
+        :type nodes: list[:class:`huaweicloudsdkdgc.v1.RealTimeNodeStatus`]
         """
         self._nodes = nodes
 

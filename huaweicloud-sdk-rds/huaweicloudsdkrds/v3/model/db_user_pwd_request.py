@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DbUserPwdRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DbUserPwdRequest:
     }
 
     def __init__(self, name=None, password=None):
-        """DbUserPwdRequest - a model defined in huaweicloud sdk"""
+        """DbUserPwdRequest
+
+        The model defined in huaweicloud sdk
+
+        :param name: 数据库帐号名称。
+        :type name: str
+        :param password: 数据库帐号密码。  取值范围：  非空，至少包含以下字符中的三种：大写字母、小写字母、数字和特殊符号~!@#%^*-_&#x3D;+?,组成，长度8~32个字符，不能和数据库帐号“name”或“name”的逆序相同。  建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。
+        :type password: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class DbUserPwdRequest:
         数据库帐号名称。
 
         :param name: The name of this DbUserPwdRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -83,7 +90,7 @@ class DbUserPwdRequest:
         数据库帐号密码。  取值范围：  非空，至少包含以下字符中的三种：大写字母、小写字母、数字和特殊符号~!@#%^*-_=+?,组成，长度8~32个字符，不能和数据库帐号“name”或“name”的逆序相同。  建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。
 
         :param password: The password of this DbUserPwdRequest.
-        :type: str
+        :type password: str
         """
         self._password = password
 

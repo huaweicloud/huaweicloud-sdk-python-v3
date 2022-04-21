@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListProPricePlansRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ListProPricePlansRequest:
     }
 
     def __init__(self, limit=None, offset=None, main_search_key=None, flow_total=None, network_type=None, location_type=None, carrier_type=None, country_type=None):
-        """ListProPricePlansRequest - a model defined in huaweicloud sdk"""
+        """ListProPricePlansRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 分页查询时每页显示的记录数，默认值为10，取值范围为10-500的整数
+        :type limit: int
+        :param offset: 分页查询时的页码数，默认值为1，取值范围为1-1000000的整数
+        :type offset: int
+        :param main_search_key: 查询关键标识类型：套餐名称 例如中国香港每月10M联接服务
+        :type main_search_key: str
+        :param flow_total: 流量总量(MB)
+        :type flow_total: int
+        :param network_type: 网络制式 1.2g,3g,4g 2.NB
+        :type network_type: int
+        :param location_type: 覆盖区域:1.  中国 2.  欧洲 3.  大洋洲 4.  非洲 5.  亚太
+        :type location_type: int
+        :param carrier_type: 运营商 101/1 中国移动/中国移动（实体卡） 102/2中国电信/中国电信（实体卡） 3中国联通（实体卡） 201.欧洲 501.中国香港 502.中国澳门 503.泰国 504.日本 505.柬埔寨 506.印度尼西亚 507.马来西亚 508.新加坡 509.斯里兰卡 510.中国台湾 511.孟加拉 
+        :type carrier_type: int
+        :param country_type: 国家/地区 1中国香港，2中国澳门，3泰国，4日本，5，柬埔寨，6印尼，7马来西亚，8新加坡，9斯里兰卡，10中国台湾，11孟加拉
+        :type country_type: int
+        """
         
         
 
@@ -93,7 +112,7 @@ class ListProPricePlansRequest:
         分页查询时每页显示的记录数，默认值为10，取值范围为10-500的整数
 
         :param limit: The limit of this ListProPricePlansRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -115,7 +134,7 @@ class ListProPricePlansRequest:
         分页查询时的页码数，默认值为1，取值范围为1-1000000的整数
 
         :param offset: The offset of this ListProPricePlansRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -137,7 +156,7 @@ class ListProPricePlansRequest:
         查询关键标识类型：套餐名称 例如中国香港每月10M联接服务
 
         :param main_search_key: The main_search_key of this ListProPricePlansRequest.
-        :type: str
+        :type main_search_key: str
         """
         self._main_search_key = main_search_key
 
@@ -159,7 +178,7 @@ class ListProPricePlansRequest:
         流量总量(MB)
 
         :param flow_total: The flow_total of this ListProPricePlansRequest.
-        :type: int
+        :type flow_total: int
         """
         self._flow_total = flow_total
 
@@ -181,7 +200,7 @@ class ListProPricePlansRequest:
         网络制式 1.2g,3g,4g 2.NB
 
         :param network_type: The network_type of this ListProPricePlansRequest.
-        :type: int
+        :type network_type: int
         """
         self._network_type = network_type
 
@@ -203,7 +222,7 @@ class ListProPricePlansRequest:
         覆盖区域:1.  中国 2.  欧洲 3.  大洋洲 4.  非洲 5.  亚太
 
         :param location_type: The location_type of this ListProPricePlansRequest.
-        :type: int
+        :type location_type: int
         """
         self._location_type = location_type
 
@@ -225,7 +244,7 @@ class ListProPricePlansRequest:
         运营商 101/1 中国移动/中国移动（实体卡） 102/2中国电信/中国电信（实体卡） 3中国联通（实体卡） 201.欧洲 501.中国香港 502.中国澳门 503.泰国 504.日本 505.柬埔寨 506.印度尼西亚 507.马来西亚 508.新加坡 509.斯里兰卡 510.中国台湾 511.孟加拉 
 
         :param carrier_type: The carrier_type of this ListProPricePlansRequest.
-        :type: int
+        :type carrier_type: int
         """
         self._carrier_type = carrier_type
 
@@ -247,7 +266,7 @@ class ListProPricePlansRequest:
         国家/地区 1中国香港，2中国澳门，3泰国，4日本，5，柬埔寨，6印尼，7马来西亚，8新加坡，9斯里兰卡，10中国台湾，11孟加拉
 
         :param country_type: The country_type of this ListProPricePlansRequest.
-        :type: int
+        :type country_type: int
         """
         self._country_type = country_type
 

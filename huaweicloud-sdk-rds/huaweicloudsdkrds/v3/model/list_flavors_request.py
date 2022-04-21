@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListFlavorsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListFlavorsRequest:
     }
 
     def __init__(self, x_language=None, database_name=None, version_name=None, spec_code=None):
-        """ListFlavorsRequest - a model defined in huaweicloud sdk"""
+        """ListFlavorsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言
+        :type x_language: str
+        :param database_name: 数据库引擎。支持的引擎如下，不区分大小写： MySQL PostgreSQL SQLServer
+        :type database_name: str
+        :param version_name: 数据库版本号，获取方法请参见5.1查询数据库引擎的版本。（可输入小版本号）
+        :type version_name: str
+        :param spec_code: 规格编码
+        :type spec_code: str
+        """
         
         
 
@@ -72,7 +83,7 @@ class ListFlavorsRequest:
         语言
 
         :param x_language: The x_language of this ListFlavorsRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -94,7 +105,7 @@ class ListFlavorsRequest:
         数据库引擎。支持的引擎如下，不区分大小写： MySQL PostgreSQL SQLServer
 
         :param database_name: The database_name of this ListFlavorsRequest.
-        :type: str
+        :type database_name: str
         """
         self._database_name = database_name
 
@@ -116,7 +127,7 @@ class ListFlavorsRequest:
         数据库版本号，获取方法请参见5.1查询数据库引擎的版本。（可输入小版本号）
 
         :param version_name: The version_name of this ListFlavorsRequest.
-        :type: str
+        :type version_name: str
         """
         self._version_name = version_name
 
@@ -138,7 +149,7 @@ class ListFlavorsRequest:
         规格编码
 
         :param spec_code: The spec_code of this ListFlavorsRequest.
-        :type: str
+        :type spec_code: str
         """
         self._spec_code = spec_code
 

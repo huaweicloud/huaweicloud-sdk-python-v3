@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TaskCheckSettingsItem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class TaskCheckSettingsItem:
     }
 
     def __init__(self, cfg_key=None, status=None, cfg_value=None):
-        """TaskCheckSettingsItem - a model defined in huaweicloud sdk"""
+        """TaskCheckSettingsItem
+
+        The model defined in huaweicloud sdk
+
+        :param cfg_key: 检查参数对应的key值
+        :type cfg_key: str
+        :param status: 参数状态
+        :type status: str
+        :param cfg_value: 检查参数值
+        :type cfg_value: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class TaskCheckSettingsItem:
         检查参数对应的key值
 
         :param cfg_key: The cfg_key of this TaskCheckSettingsItem.
-        :type: str
+        :type cfg_key: str
         """
         self._cfg_key = cfg_key
 
@@ -88,7 +97,7 @@ class TaskCheckSettingsItem:
         参数状态
 
         :param status: The status of this TaskCheckSettingsItem.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -110,7 +119,7 @@ class TaskCheckSettingsItem:
         检查参数值
 
         :param cfg_value: The cfg_value of this TaskCheckSettingsItem.
-        :type: str
+        :type cfg_value: str
         """
         self._cfg_value = cfg_value
 

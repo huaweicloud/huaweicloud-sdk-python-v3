@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateCnfRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateCnfRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """UpdateCnfRequest - a model defined in huaweicloud sdk"""
+        """UpdateCnfRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 指定待更新的集群ID。
+        :type cluster_id: str
+        :param body: Body of the UpdateCnfRequest
+        :type body: :class:`huaweicloudsdkcss.v1.CreateCnfReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateCnfRequest:
         指定待更新的集群ID。
 
         :param cluster_id: The cluster_id of this UpdateCnfRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -72,7 +79,7 @@ class UpdateCnfRequest:
 
 
         :return: The body of this UpdateCnfRequest.
-        :rtype: CreateCnfReq
+        :rtype: :class:`huaweicloudsdkcss.v1.CreateCnfReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateCnfRequest:
 
 
         :param body: The body of this UpdateCnfRequest.
-        :type: CreateCnfReq
+        :type body: :class:`huaweicloudsdkcss.v1.CreateCnfReq`
         """
         self._body = body
 

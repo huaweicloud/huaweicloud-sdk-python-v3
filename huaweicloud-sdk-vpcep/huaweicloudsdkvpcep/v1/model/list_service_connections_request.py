@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListServiceConnectionsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ListServiceConnectionsRequest:
     }
 
     def __init__(self, vpc_endpoint_service_id=None, id=None, marker_id=None, status=None, sort_key=None, sort_dir=None, limit=None, offset=None):
-        """ListServiceConnectionsRequest - a model defined in huaweicloud sdk"""
+        """ListServiceConnectionsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param vpc_endpoint_service_id: 终端节点服务的ID。
+        :type vpc_endpoint_service_id: str
+        :param id: 终端节点的ID，唯一标识。
+        :type id: str
+        :param marker_id: 终端节点的报文标识。
+        :type marker_id: str
+        :param status: 终端节点的连接状态。 ● pendingAcceptance：待接受 ● accepted：已接受 ● rejected：已拒绝 ● failed：失败
+        :type status: str
+        :param sort_key: 查询结果中终端节点列表的排序字段，取值为： ● create_at：终端节点的创建时间 ● update_at：终端节点的更新时间 默认值为create_at。
+        :type sort_key: str
+        :param sort_dir: 查询结果中终端节点列表的排序方 式，取值为： ● desc：降序排序 ● asc：升序排序 默认值为desc。
+        :type sort_dir: str
+        :param limit: 查询返回终端节点服务的连接列表限制每页个数，即每页返回的个数。 取值范围：0~1000，取值一般为10，20或者50，默认为10。
+        :type limit: int
+        :param offset: 偏移量。 偏移量为一个大于0小于终端节点 服务总个数的整数，表示从偏移量 后面的终端节点服务开始查询。
+        :type offset: int
+        """
         
         
 
@@ -92,7 +111,7 @@ class ListServiceConnectionsRequest:
         终端节点服务的ID。
 
         :param vpc_endpoint_service_id: The vpc_endpoint_service_id of this ListServiceConnectionsRequest.
-        :type: str
+        :type vpc_endpoint_service_id: str
         """
         self._vpc_endpoint_service_id = vpc_endpoint_service_id
 
@@ -114,7 +133,7 @@ class ListServiceConnectionsRequest:
         终端节点的ID，唯一标识。
 
         :param id: The id of this ListServiceConnectionsRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -136,7 +155,7 @@ class ListServiceConnectionsRequest:
         终端节点的报文标识。
 
         :param marker_id: The marker_id of this ListServiceConnectionsRequest.
-        :type: str
+        :type marker_id: str
         """
         self._marker_id = marker_id
 
@@ -158,7 +177,7 @@ class ListServiceConnectionsRequest:
         终端节点的连接状态。 ● pendingAcceptance：待接受 ● accepted：已接受 ● rejected：已拒绝 ● failed：失败
 
         :param status: The status of this ListServiceConnectionsRequest.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -180,7 +199,7 @@ class ListServiceConnectionsRequest:
         查询结果中终端节点列表的排序字段，取值为： ● create_at：终端节点的创建时间 ● update_at：终端节点的更新时间 默认值为create_at。
 
         :param sort_key: The sort_key of this ListServiceConnectionsRequest.
-        :type: str
+        :type sort_key: str
         """
         self._sort_key = sort_key
 
@@ -202,7 +221,7 @@ class ListServiceConnectionsRequest:
         查询结果中终端节点列表的排序方 式，取值为： ● desc：降序排序 ● asc：升序排序 默认值为desc。
 
         :param sort_dir: The sort_dir of this ListServiceConnectionsRequest.
-        :type: str
+        :type sort_dir: str
         """
         self._sort_dir = sort_dir
 
@@ -224,7 +243,7 @@ class ListServiceConnectionsRequest:
         查询返回终端节点服务的连接列表限制每页个数，即每页返回的个数。 取值范围：0~1000，取值一般为10，20或者50，默认为10。
 
         :param limit: The limit of this ListServiceConnectionsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -246,7 +265,7 @@ class ListServiceConnectionsRequest:
         偏移量。 偏移量为一个大于0小于终端节点 服务总个数的整数，表示从偏移量 后面的终端节点服务开始查询。
 
         :param offset: The offset of this ListServiceConnectionsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 

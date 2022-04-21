@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchRestartOrDeleteInstancesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchRestartOrDeleteInstancesResponse(SdkResponse):
     }
 
     def __init__(self, results=None):
-        """BatchRestartOrDeleteInstancesResponse - a model defined in huaweicloud sdk"""
+        """BatchRestartOrDeleteInstancesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param results: 修改实例的结果。
+        :type results: list[:class:`huaweicloudsdkrabbitmq.v2.BatchRestartOrDeleteInstanceRespResults`]
+        """
         
         super(BatchRestartOrDeleteInstancesResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class BatchRestartOrDeleteInstancesResponse(SdkResponse):
         修改实例的结果。
 
         :return: The results of this BatchRestartOrDeleteInstancesResponse.
-        :rtype: list[BatchRestartOrDeleteInstanceRespResults]
+        :rtype: list[:class:`huaweicloudsdkrabbitmq.v2.BatchRestartOrDeleteInstanceRespResults`]
         """
         return self._results
 
@@ -58,7 +63,7 @@ class BatchRestartOrDeleteInstancesResponse(SdkResponse):
         修改实例的结果。
 
         :param results: The results of this BatchRestartOrDeleteInstancesResponse.
-        :type: list[BatchRestartOrDeleteInstanceRespResults]
+        :type results: list[:class:`huaweicloudsdkrabbitmq.v2.BatchRestartOrDeleteInstanceRespResults`]
         """
         self._results = results
 

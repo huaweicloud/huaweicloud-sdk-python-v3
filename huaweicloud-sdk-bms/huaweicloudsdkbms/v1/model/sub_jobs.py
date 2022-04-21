@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SubJobs:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class SubJobs:
     }
 
     def __init__(self, status=None, entities=None, job_id=None, job_type=None, begin_time=None, end_time=None, error_code=None, fail_reason=None, message=None, code=None):
-        """SubJobs - a model defined in huaweicloud sdk"""
+        """SubJobs
+
+        The model defined in huaweicloud sdk
+
+        :param status: Job的状态。SUCCESS：成功RUNNING：运行中FAIL：失败INIT：正在初始化
+        :type status: str
+        :param entities: 
+        :type entities: :class:`huaweicloudsdkbms.v1.Entitie`
+        :param job_id: Job ID
+        :type job_id: str
+        :param job_type: Job的类型，包含以下类型：baremetalSingleCreate：创建单个裸金属服务器；baremetalSingleOperate：修改单个裸金属服务器电源状态；baremetalAttachSingleVolume：挂载单个共享磁盘
+        :type job_type: str
+        :param begin_time: 开始时间。时间戳格式为ISO 8601，例如：2019-04-25T20:04:47.591Z
+        :type begin_time: datetime
+        :param end_time: 结束时间。时间戳格式为ISO 8601，例如：2019-04-26T20:04:47.591Z
+        :type end_time: datetime
+        :param error_code: Job执行失败时的错误码
+        :type error_code: str
+        :param fail_reason: Job执行失败时的错误原因
+        :type fail_reason: str
+        :param message: 出现错误时，返回的错误消息
+        :type message: str
+        :param code: 出现错误时，返回的错误码
+        :type code: str
+        """
         
         
 
@@ -103,7 +126,7 @@ class SubJobs:
         Job的状态。SUCCESS：成功RUNNING：运行中FAIL：失败INIT：正在初始化
 
         :param status: The status of this SubJobs.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -113,7 +136,7 @@ class SubJobs:
 
 
         :return: The entities of this SubJobs.
-        :rtype: Entitie
+        :rtype: :class:`huaweicloudsdkbms.v1.Entitie`
         """
         return self._entities
 
@@ -123,7 +146,7 @@ class SubJobs:
 
 
         :param entities: The entities of this SubJobs.
-        :type: Entitie
+        :type entities: :class:`huaweicloudsdkbms.v1.Entitie`
         """
         self._entities = entities
 
@@ -145,7 +168,7 @@ class SubJobs:
         Job ID
 
         :param job_id: The job_id of this SubJobs.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -167,7 +190,7 @@ class SubJobs:
         Job的类型，包含以下类型：baremetalSingleCreate：创建单个裸金属服务器；baremetalSingleOperate：修改单个裸金属服务器电源状态；baremetalAttachSingleVolume：挂载单个共享磁盘
 
         :param job_type: The job_type of this SubJobs.
-        :type: str
+        :type job_type: str
         """
         self._job_type = job_type
 
@@ -189,7 +212,7 @@ class SubJobs:
         开始时间。时间戳格式为ISO 8601，例如：2019-04-25T20:04:47.591Z
 
         :param begin_time: The begin_time of this SubJobs.
-        :type: datetime
+        :type begin_time: datetime
         """
         self._begin_time = begin_time
 
@@ -211,7 +234,7 @@ class SubJobs:
         结束时间。时间戳格式为ISO 8601，例如：2019-04-26T20:04:47.591Z
 
         :param end_time: The end_time of this SubJobs.
-        :type: datetime
+        :type end_time: datetime
         """
         self._end_time = end_time
 
@@ -233,7 +256,7 @@ class SubJobs:
         Job执行失败时的错误码
 
         :param error_code: The error_code of this SubJobs.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -255,7 +278,7 @@ class SubJobs:
         Job执行失败时的错误原因
 
         :param fail_reason: The fail_reason of this SubJobs.
-        :type: str
+        :type fail_reason: str
         """
         self._fail_reason = fail_reason
 
@@ -277,7 +300,7 @@ class SubJobs:
         出现错误时，返回的错误消息
 
         :param message: The message of this SubJobs.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -299,7 +322,7 @@ class SubJobs:
         出现错误时，返回的错误码
 
         :param code: The code of this SubJobs.
-        :type: str
+        :type code: str
         """
         self._code = code
 

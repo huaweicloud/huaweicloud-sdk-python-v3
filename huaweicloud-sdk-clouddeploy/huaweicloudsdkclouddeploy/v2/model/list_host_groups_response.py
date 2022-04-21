@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListHostGroupsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListHostGroupsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, host_groups=None):
-        """ListHostGroupsResponse - a model defined in huaweicloud sdk"""
+        """ListHostGroupsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 主机组个数
+        :type total: int
+        :param host_groups: 主机组详情响应体
+        :type host_groups: list[:class:`huaweicloudsdkclouddeploy.v2.DeploymentGroupDetail`]
+        """
         
         super(ListHostGroupsResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListHostGroupsResponse(SdkResponse):
         主机组个数
 
         :param total: The total of this ListHostGroupsResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -74,7 +81,7 @@ class ListHostGroupsResponse(SdkResponse):
         主机组详情响应体
 
         :return: The host_groups of this ListHostGroupsResponse.
-        :rtype: list[DeploymentGroupDetail]
+        :rtype: list[:class:`huaweicloudsdkclouddeploy.v2.DeploymentGroupDetail`]
         """
         return self._host_groups
 
@@ -85,7 +92,7 @@ class ListHostGroupsResponse(SdkResponse):
         主机组详情响应体
 
         :param host_groups: The host_groups of this ListHostGroupsResponse.
-        :type: list[DeploymentGroupDetail]
+        :type host_groups: list[:class:`huaweicloudsdkclouddeploy.v2.DeploymentGroupDetail`]
         """
         self._host_groups = host_groups
 

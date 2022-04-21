@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddRuleReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class AddRuleReq:
     }
 
     def __init__(self, rule_name=None, description=None, subject=None, app_type=None, app_id=None, select=None, where=None):
-        """AddRuleReq - a model defined in huaweicloud sdk"""
+        """AddRuleReq
+
+        The model defined in huaweicloud sdk
+
+        :param rule_name: **参数说明**：规则名称。 **取值范围**：长度不超过256，只允许中文、字母、数字、以及_?&#39;#().,&amp;%@!-等字符的组合
+        :type rule_name: str
+        :param description: **参数说明**：用户自定义的规则描述。
+        :type description: str
+        :param subject: 
+        :type subject: :class:`huaweicloudsdkiotda.v5.RoutingRuleSubject`
+        :param app_type: **参数说明**：租户规则的生效范围，默认GLOBAL，。 **取值范围**： - GLOBAL：生效范围为租户级。 - APP：生效范围为资源空间级。如果类型为APP，创建的规则生效范围为携带的app_id指定的资源空间，不携带app_id则创建规则生效范围为[默认资源空间](https://support.huaweicloud.com/usermanual-iothub/iot_01_0006.html#section0)。
+        :type app_type: str
+        :param app_id: **参数说明**：资源空间ID。。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
+        :type app_id: str
+        :param select: **参数说明**：用户自定义sql select语句，最大长度500，该参数仅供标准版和企业版用户使用。
+        :type select: str
+        :param where: **参数说明**：用户自定义sql where语句，最大长度500，该参数仅供标准版和企业版用户使用。
+        :type where: str
+        """
         
         
 
@@ -87,7 +104,7 @@ class AddRuleReq:
         **参数说明**：规则名称。 **取值范围**：长度不超过256，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合
 
         :param rule_name: The rule_name of this AddRuleReq.
-        :type: str
+        :type rule_name: str
         """
         self._rule_name = rule_name
 
@@ -109,7 +126,7 @@ class AddRuleReq:
         **参数说明**：用户自定义的规则描述。
 
         :param description: The description of this AddRuleReq.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -119,7 +136,7 @@ class AddRuleReq:
 
 
         :return: The subject of this AddRuleReq.
-        :rtype: RoutingRuleSubject
+        :rtype: :class:`huaweicloudsdkiotda.v5.RoutingRuleSubject`
         """
         return self._subject
 
@@ -129,7 +146,7 @@ class AddRuleReq:
 
 
         :param subject: The subject of this AddRuleReq.
-        :type: RoutingRuleSubject
+        :type subject: :class:`huaweicloudsdkiotda.v5.RoutingRuleSubject`
         """
         self._subject = subject
 
@@ -151,7 +168,7 @@ class AddRuleReq:
         **参数说明**：租户规则的生效范围，默认GLOBAL，。 **取值范围**： - GLOBAL：生效范围为租户级。 - APP：生效范围为资源空间级。如果类型为APP，创建的规则生效范围为携带的app_id指定的资源空间，不携带app_id则创建规则生效范围为[默认资源空间](https://support.huaweicloud.com/usermanual-iothub/iot_01_0006.html#section0)。
 
         :param app_type: The app_type of this AddRuleReq.
-        :type: str
+        :type app_type: str
         """
         self._app_type = app_type
 
@@ -173,7 +190,7 @@ class AddRuleReq:
         **参数说明**：资源空间ID。。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :param app_id: The app_id of this AddRuleReq.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -195,7 +212,7 @@ class AddRuleReq:
         **参数说明**：用户自定义sql select语句，最大长度500，该参数仅供标准版和企业版用户使用。
 
         :param select: The select of this AddRuleReq.
-        :type: str
+        :type select: str
         """
         self._select = select
 
@@ -217,7 +234,7 @@ class AddRuleReq:
         **参数说明**：用户自定义sql where语句，最大长度500，该参数仅供标准版和企业版用户使用。
 
         :param where: The where of this AddRuleReq.
-        :type: str
+        :type where: str
         """
         self._where = where
 

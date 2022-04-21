@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FileTreeNode:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class FileTreeNode:
     }
 
     def __init__(self, file_path=None, file_name=None, file_type=None):
-        """FileTreeNode - a model defined in huaweicloud sdk"""
+        """FileTreeNode
+
+        The model defined in huaweicloud sdk
+
+        :param file_path: 文件路径
+        :type file_path: str
+        :param file_name: 文件名称
+        :type file_name: str
+        :param file_type: 是否文件夹
+        :type file_type: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class FileTreeNode:
         文件路径
 
         :param file_path: The file_path of this FileTreeNode.
-        :type: str
+        :type file_path: str
         """
         self._file_path = file_path
 
@@ -90,7 +99,7 @@ class FileTreeNode:
         文件名称
 
         :param file_name: The file_name of this FileTreeNode.
-        :type: str
+        :type file_name: str
         """
         self._file_name = file_name
 
@@ -112,7 +121,7 @@ class FileTreeNode:
         是否文件夹
 
         :param file_type: The file_type of this FileTreeNode.
-        :type: str
+        :type file_type: str
         """
         self._file_type = file_type
 

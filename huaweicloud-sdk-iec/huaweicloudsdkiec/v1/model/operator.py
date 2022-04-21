@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Operator:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class Operator:
     }
 
     def __init__(self, id=None, name=None, i18n_name=None, sa=None):
-        """Operator - a model defined in huaweicloud sdk"""
+        """Operator
+
+        The model defined in huaweicloud sdk
+
+        :param id: 运营商ID。
+        :type id: str
+        :param name: 运营商名称。  取值范围： - chinamobile：中国移动； - chinaunicom：中国联通； - chinatelecom：中国电信。
+        :type name: str
+        :param i18n_name: 运营商国际化名称。
+        :type i18n_name: str
+        :param sa: 运营商的简写。
+        :type sa: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class Operator:
         运营商ID。
 
         :param id: The id of this Operator.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -95,7 +106,7 @@ class Operator:
         运营商名称。  取值范围： - chinamobile：中国移动； - chinaunicom：中国联通； - chinatelecom：中国电信。
 
         :param name: The name of this Operator.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -117,7 +128,7 @@ class Operator:
         运营商国际化名称。
 
         :param i18n_name: The i18n_name of this Operator.
-        :type: str
+        :type i18n_name: str
         """
         self._i18n_name = i18n_name
 
@@ -139,7 +150,7 @@ class Operator:
         运营商的简写。
 
         :param sa: The sa of this Operator.
-        :type: str
+        :type sa: str
         """
         self._sa = sa
 

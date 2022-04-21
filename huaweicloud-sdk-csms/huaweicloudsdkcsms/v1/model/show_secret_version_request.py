@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowSecretVersionRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowSecretVersionRequest:
     }
 
     def __init__(self, secret_name=None, version_id=None):
-        """ShowSecretVersionRequest - a model defined in huaweicloud sdk"""
+        """ShowSecretVersionRequest
+
+        The model defined in huaweicloud sdk
+
+        :param secret_name: 凭据名称。
+        :type secret_name: str
+        :param version_id: 凭据的版本标识符。
+        :type version_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ShowSecretVersionRequest:
         凭据名称。
 
         :param secret_name: The secret_name of this ShowSecretVersionRequest.
-        :type: str
+        :type secret_name: str
         """
         self._secret_name = secret_name
 
@@ -83,7 +90,7 @@ class ShowSecretVersionRequest:
         凭据的版本标识符。
 
         :param version_id: The version_id of this ShowSecretVersionRequest.
-        :type: str
+        :type version_id: str
         """
         self._version_id = version_id
 

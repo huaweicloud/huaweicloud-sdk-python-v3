@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VerifyCodeCheckDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class VerifyCodeCheckDTO:
     }
 
     def __init__(self, user=None, code=None):
-        """VerifyCodeCheckDTO - a model defined in huaweicloud sdk"""
+        """VerifyCodeCheckDTO
+
+        The model defined in huaweicloud sdk
+
+        :param user: 必须和发送验证码时带的用户身份信息相同 maxLength：255 minLength：1 
+        :type user: str
+        :param code: 验证码 maxLength：32 minLength：1 
+        :type code: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class VerifyCodeCheckDTO:
         必须和发送验证码时带的用户身份信息相同 maxLength：255 minLength：1 
 
         :param user: The user of this VerifyCodeCheckDTO.
-        :type: str
+        :type user: str
         """
         self._user = user
 
@@ -83,7 +90,7 @@ class VerifyCodeCheckDTO:
         验证码 maxLength：32 minLength：1 
 
         :param code: The code of this VerifyCodeCheckDTO.
-        :type: str
+        :type code: str
         """
         self._code = code
 

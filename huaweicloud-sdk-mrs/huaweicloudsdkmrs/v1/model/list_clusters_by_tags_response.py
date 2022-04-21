@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListClustersByTagsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListClustersByTagsResponse(SdkResponse):
     }
 
     def __init__(self, resources=None, total_count=None):
-        """ListClustersByTagsResponse - a model defined in huaweicloud sdk"""
+        """ListClustersByTagsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param resources: 资源列表
+        :type resources: list[:class:`huaweicloudsdkmrs.v1.MRSResource`]
+        :param total_count: 资源总数
+        :type total_count: int
+        """
         
         super(ListClustersByTagsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListClustersByTagsResponse(SdkResponse):
         资源列表
 
         :return: The resources of this ListClustersByTagsResponse.
-        :rtype: list[MRSResource]
+        :rtype: list[:class:`huaweicloudsdkmrs.v1.MRSResource`]
         """
         return self._resources
 
@@ -63,7 +70,7 @@ class ListClustersByTagsResponse(SdkResponse):
         资源列表
 
         :param resources: The resources of this ListClustersByTagsResponse.
-        :type: list[MRSResource]
+        :type resources: list[:class:`huaweicloudsdkmrs.v1.MRSResource`]
         """
         self._resources = resources
 
@@ -85,7 +92,7 @@ class ListClustersByTagsResponse(SdkResponse):
         资源总数
 
         :param total_count: The total_count of this ListClustersByTagsResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 

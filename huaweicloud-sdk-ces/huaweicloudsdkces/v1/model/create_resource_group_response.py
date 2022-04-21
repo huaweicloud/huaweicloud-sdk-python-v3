@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateResourceGroupResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateResourceGroupResponse(SdkResponse):
     }
 
     def __init__(self, group_id=None):
-        """CreateResourceGroupResponse - a model defined in huaweicloud sdk"""
+        """CreateResourceGroupResponse
+
+        The model defined in huaweicloud sdk
+
+        :param group_id: 创建的资源分组ID，如：rg1606377637506DmVOENVyL。
+        :type group_id: str
+        """
         
         super(CreateResourceGroupResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class CreateResourceGroupResponse(SdkResponse):
         创建的资源分组ID，如：rg1606377637506DmVOENVyL。
 
         :param group_id: The group_id of this CreateResourceGroupResponse.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSampleResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListSampleResponse(SdkResponse):
     }
 
     def __init__(self, samples=None):
-        """ListSampleResponse - a model defined in huaweicloud sdk"""
+        """ListSampleResponse
+
+        The model defined in huaweicloud sdk
+
+        :param samples: 时间序列对象列表。
+        :type samples: list[:class:`huaweicloudsdkaom.v2.SampleDataValue`]
+        """
         
         super(ListSampleResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListSampleResponse(SdkResponse):
         时间序列对象列表。
 
         :return: The samples of this ListSampleResponse.
-        :rtype: list[SampleDataValue]
+        :rtype: list[:class:`huaweicloudsdkaom.v2.SampleDataValue`]
         """
         return self._samples
 
@@ -58,7 +63,7 @@ class ListSampleResponse(SdkResponse):
         时间序列对象列表。
 
         :param samples: The samples of this ListSampleResponse.
-        :type: list[SampleDataValue]
+        :type samples: list[:class:`huaweicloudsdkaom.v2.SampleDataValue`]
         """
         self._samples = samples
 

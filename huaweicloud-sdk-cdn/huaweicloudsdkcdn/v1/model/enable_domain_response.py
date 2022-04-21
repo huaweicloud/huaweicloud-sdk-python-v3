@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EnableDomainResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class EnableDomainResponse(SdkResponse):
     }
 
     def __init__(self, domain=None):
-        """EnableDomainResponse - a model defined in huaweicloud sdk"""
+        """EnableDomainResponse
+
+        The model defined in huaweicloud sdk
+
+        :param domain: 
+        :type domain: :class:`huaweicloudsdkcdn.v1.DomainsWithPort`
+        """
         
         super(EnableDomainResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class EnableDomainResponse(SdkResponse):
 
 
         :return: The domain of this EnableDomainResponse.
-        :rtype: DomainsWithPort
+        :rtype: :class:`huaweicloudsdkcdn.v1.DomainsWithPort`
         """
         return self._domain
 
@@ -56,7 +61,7 @@ class EnableDomainResponse(SdkResponse):
 
 
         :param domain: The domain of this EnableDomainResponse.
-        :type: DomainsWithPort
+        :type domain: :class:`huaweicloudsdkcdn.v1.DomainsWithPort`
         """
         self._domain = domain
 

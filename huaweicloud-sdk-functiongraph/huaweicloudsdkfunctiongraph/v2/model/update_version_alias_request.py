@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateVersionAliasRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateVersionAliasRequest:
     }
 
     def __init__(self, function_urn=None, alias_name=None, body=None):
-        """UpdateVersionAliasRequest - a model defined in huaweicloud sdk"""
+        """UpdateVersionAliasRequest
+
+        The model defined in huaweicloud sdk
+
+        :param function_urn: 函数的URN，详细解释见FunctionGraph函数模型的描述。
+        :type function_urn: str
+        :param alias_name: 要更新的别名名称。
+        :type alias_name: str
+        :param body: Body of the UpdateVersionAliasRequest
+        :type body: :class:`huaweicloudsdkfunctiongraph.v2.UpdateVersionAliasRequestBody`
+        """
         
         
 
@@ -66,7 +75,7 @@ class UpdateVersionAliasRequest:
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
         :param function_urn: The function_urn of this UpdateVersionAliasRequest.
-        :type: str
+        :type function_urn: str
         """
         self._function_urn = function_urn
 
@@ -88,7 +97,7 @@ class UpdateVersionAliasRequest:
         要更新的别名名称。
 
         :param alias_name: The alias_name of this UpdateVersionAliasRequest.
-        :type: str
+        :type alias_name: str
         """
         self._alias_name = alias_name
 
@@ -98,7 +107,7 @@ class UpdateVersionAliasRequest:
 
 
         :return: The body of this UpdateVersionAliasRequest.
-        :rtype: UpdateVersionAliasRequestBody
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.UpdateVersionAliasRequestBody`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class UpdateVersionAliasRequest:
 
 
         :param body: The body of this UpdateVersionAliasRequest.
-        :type: UpdateVersionAliasRequestBody
+        :type body: :class:`huaweicloudsdkfunctiongraph.v2.UpdateVersionAliasRequestBody`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateInstallCmdRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateInstallCmdRequest:
     }
 
     def __init__(self, edge_node_id=None, arch=None):
-        """CreateInstallCmdRequest - a model defined in huaweicloud sdk"""
+        """CreateInstallCmdRequest
+
+        The model defined in huaweicloud sdk
+
+        :param edge_node_id: 边缘节点ID
+        :type edge_node_id: str
+        :param arch: 节点架构
+        :type arch: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class CreateInstallCmdRequest:
         边缘节点ID
 
         :param edge_node_id: The edge_node_id of this CreateInstallCmdRequest.
-        :type: str
+        :type edge_node_id: str
         """
         self._edge_node_id = edge_node_id
 
@@ -83,7 +90,7 @@ class CreateInstallCmdRequest:
         节点架构
 
         :param arch: The arch of this CreateInstallCmdRequest.
-        :type: str
+        :type arch: str
         """
         self._arch = arch
 

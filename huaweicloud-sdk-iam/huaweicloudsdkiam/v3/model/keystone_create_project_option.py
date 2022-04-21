@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneCreateProjectOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class KeystoneCreateProjectOption:
     }
 
     def __init__(self, name=None, parent_id=None, domain_id=None, description=None):
-        """KeystoneCreateProjectOption - a model defined in huaweicloud sdk"""
+        """KeystoneCreateProjectOption
+
+        The model defined in huaweicloud sdk
+
+        :param name: 项目名称。必须以存在的\&quot;区域ID_\&quot;开头，长度小于等于64字符。例如区域“华北-北京一”的区域ID为“cn-north-1”，在其下创建项目时，项目名应填“cn-north-1_IAMProject”
+        :type name: str
+        :param parent_id: 区域对应的项目ID，例如区域“华北-北京一”区域对应的项目ID为：04dd42abe48026ad2fa3c01ad7fa.....，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
+        :type parent_id: str
+        :param domain_id: 项目所属账号ID。
+        :type domain_id: str
+        :param description: 项目描述信息，长度小于等于255字符。
+        :type description: str
+        """
         
         
 
@@ -71,7 +82,7 @@ class KeystoneCreateProjectOption:
         项目名称。必须以存在的\"区域ID_\"开头，长度小于等于64字符。例如区域“华北-北京一”的区域ID为“cn-north-1”，在其下创建项目时，项目名应填“cn-north-1_IAMProject”
 
         :param name: The name of this KeystoneCreateProjectOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -93,7 +104,7 @@ class KeystoneCreateProjectOption:
         区域对应的项目ID，例如区域“华北-北京一”区域对应的项目ID为：04dd42abe48026ad2fa3c01ad7fa.....，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param parent_id: The parent_id of this KeystoneCreateProjectOption.
-        :type: str
+        :type parent_id: str
         """
         self._parent_id = parent_id
 
@@ -115,7 +126,7 @@ class KeystoneCreateProjectOption:
         项目所属账号ID。
 
         :param domain_id: The domain_id of this KeystoneCreateProjectOption.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -137,7 +148,7 @@ class KeystoneCreateProjectOption:
         项目描述信息，长度小于等于255字符。
 
         :param description: The description of this KeystoneCreateProjectOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 

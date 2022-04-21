@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCustomersBalancesDetailResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListCustomersBalancesDetailResponse(SdkResponse):
     }
 
     def __init__(self, customer_balances=None):
-        """ListCustomersBalancesDetailResponse - a model defined in huaweicloud sdk"""
+        """ListCustomersBalancesDetailResponse
+
+        The model defined in huaweicloud sdk
+
+        :param customer_balances: 账户余额列表。只有成功的时候才返回。 具体请参见表2。
+        :type customer_balances: list[:class:`huaweicloudsdkbss.v2.CustomerBalancesV2`]
+        """
         
         super(ListCustomersBalancesDetailResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListCustomersBalancesDetailResponse(SdkResponse):
         账户余额列表。只有成功的时候才返回。 具体请参见表2。
 
         :return: The customer_balances of this ListCustomersBalancesDetailResponse.
-        :rtype: list[CustomerBalancesV2]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.CustomerBalancesV2`]
         """
         return self._customer_balances
 
@@ -58,7 +63,7 @@ class ListCustomersBalancesDetailResponse(SdkResponse):
         账户余额列表。只有成功的时候才返回。 具体请参见表2。
 
         :param customer_balances: The customer_balances of this ListCustomersBalancesDetailResponse.
-        :type: list[CustomerBalancesV2]
+        :type customer_balances: list[:class:`huaweicloudsdkbss.v2.CustomerBalancesV2`]
         """
         self._customer_balances = customer_balances
 

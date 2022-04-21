@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateSlavePriorityResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class UpdateSlavePriorityResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateSlavePriorityResponse - a model defined in huaweicloud sdk"""
+        """UpdateSlavePriorityResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(UpdateSlavePriorityResponse, self).__init__()
         self.discriminator = None

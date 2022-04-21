@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IssueRecordV4:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class IssueRecordV4:
     }
 
     def __init__(self, id=None, created_time=None, user=None, details=None):
-        """IssueRecordV4 - a model defined in huaweicloud sdk"""
+        """IssueRecordV4
+
+        The model defined in huaweicloud sdk
+
+        :param id: 操作记录id
+        :type id: int
+        :param created_time: 操作记录创建时间
+        :type created_time: int
+        :param user: 
+        :type user: :class:`huaweicloudsdkprojectman.v4.IssueRecordV4User`
+        :param details: 操作的记录
+        :type details: list[:class:`huaweicloudsdkprojectman.v4.IssueRecordV4Details`]
+        """
         
         
 
@@ -73,7 +84,7 @@ class IssueRecordV4:
         操作记录id
 
         :param id: The id of this IssueRecordV4.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -95,7 +106,7 @@ class IssueRecordV4:
         操作记录创建时间
 
         :param created_time: The created_time of this IssueRecordV4.
-        :type: int
+        :type created_time: int
         """
         self._created_time = created_time
 
@@ -105,7 +116,7 @@ class IssueRecordV4:
 
 
         :return: The user of this IssueRecordV4.
-        :rtype: IssueRecordV4User
+        :rtype: :class:`huaweicloudsdkprojectman.v4.IssueRecordV4User`
         """
         return self._user
 
@@ -115,7 +126,7 @@ class IssueRecordV4:
 
 
         :param user: The user of this IssueRecordV4.
-        :type: IssueRecordV4User
+        :type user: :class:`huaweicloudsdkprojectman.v4.IssueRecordV4User`
         """
         self._user = user
 
@@ -126,7 +137,7 @@ class IssueRecordV4:
         操作的记录
 
         :return: The details of this IssueRecordV4.
-        :rtype: list[IssueRecordV4Details]
+        :rtype: list[:class:`huaweicloudsdkprojectman.v4.IssueRecordV4Details`]
         """
         return self._details
 
@@ -137,7 +148,7 @@ class IssueRecordV4:
         操作的记录
 
         :param details: The details of this IssueRecordV4.
-        :type: list[IssueRecordV4Details]
+        :type details: list[:class:`huaweicloudsdkprojectman.v4.IssueRecordV4Details`]
         """
         self._details = details
 

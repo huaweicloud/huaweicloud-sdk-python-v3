@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UploadProductRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UploadProductRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """UploadProductRequest - a model defined in huaweicloud sdk"""
+        """UploadProductRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param body: Body of the UploadProductRequest
+        :type body: :class:`huaweicloudsdkroma.v2.UploadProductRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UploadProductRequest:
         实例ID
 
         :param instance_id: The instance_id of this UploadProductRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -72,7 +79,7 @@ class UploadProductRequest:
 
 
         :return: The body of this UploadProductRequest.
-        :rtype: UploadProductRequestBody
+        :rtype: :class:`huaweicloudsdkroma.v2.UploadProductRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UploadProductRequest:
 
 
         :param body: The body of this UploadProductRequest.
-        :type: UploadProductRequestBody
+        :type body: :class:`huaweicloudsdkroma.v2.UploadProductRequestBody`
         """
         self._body = body
 

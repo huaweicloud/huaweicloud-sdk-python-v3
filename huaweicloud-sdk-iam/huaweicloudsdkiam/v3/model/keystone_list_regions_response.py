@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneListRegionsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class KeystoneListRegionsResponse(SdkResponse):
     }
 
     def __init__(self, links=None, regions=None):
-        """KeystoneListRegionsResponse - a model defined in huaweicloud sdk"""
+        """KeystoneListRegionsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param links: 
+        :type links: :class:`huaweicloudsdkiam.v3.Links`
+        :param regions: 区域信息列表。
+        :type regions: list[:class:`huaweicloudsdkiam.v3.Region`]
+        """
         
         super(KeystoneListRegionsResponse, self).__init__()
 
@@ -51,7 +58,7 @@ class KeystoneListRegionsResponse(SdkResponse):
 
 
         :return: The links of this KeystoneListRegionsResponse.
-        :rtype: Links
+        :rtype: :class:`huaweicloudsdkiam.v3.Links`
         """
         return self._links
 
@@ -61,7 +68,7 @@ class KeystoneListRegionsResponse(SdkResponse):
 
 
         :param links: The links of this KeystoneListRegionsResponse.
-        :type: Links
+        :type links: :class:`huaweicloudsdkiam.v3.Links`
         """
         self._links = links
 
@@ -72,7 +79,7 @@ class KeystoneListRegionsResponse(SdkResponse):
         区域信息列表。
 
         :return: The regions of this KeystoneListRegionsResponse.
-        :rtype: list[Region]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.Region`]
         """
         return self._regions
 
@@ -83,7 +90,7 @@ class KeystoneListRegionsResponse(SdkResponse):
         区域信息列表。
 
         :param regions: The regions of this KeystoneListRegionsResponse.
-        :type: list[Region]
+        :type regions: list[:class:`huaweicloudsdkiam.v3.Region`]
         """
         self._regions = regions
 

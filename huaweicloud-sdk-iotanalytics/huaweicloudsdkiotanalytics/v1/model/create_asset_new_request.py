@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateAssetNewRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateAssetNewRequest:
     }
 
     def __init__(self, body=None):
-        """CreateAssetNewRequest - a model defined in huaweicloud sdk"""
+        """CreateAssetNewRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateAssetNewRequest
+        :type body: :class:`huaweicloudsdkiotanalytics.v1.AssetAddRequest`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateAssetNewRequest:
 
 
         :return: The body of this CreateAssetNewRequest.
-        :rtype: AssetAddRequest
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.AssetAddRequest`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateAssetNewRequest:
 
 
         :param body: The body of this CreateAssetNewRequest.
-        :type: AssetAddRequest
+        :type body: :class:`huaweicloudsdkiotanalytics.v1.AssetAddRequest`
         """
         self._body = body
 

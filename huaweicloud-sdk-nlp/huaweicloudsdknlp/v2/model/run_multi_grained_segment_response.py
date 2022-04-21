@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunMultiGrainedSegmentResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class RunMultiGrainedSegmentResponse(SdkResponse):
     }
 
     def __init__(self, result=None, error_code=None, error_msg=None):
-        """RunMultiGrainedSegmentResponse - a model defined in huaweicloud sdk"""
+        """RunMultiGrainedSegmentResponse
+
+        The model defined in huaweicloud sdk
+
+        :param result: 多粒度分词结果列表。调用失败时无此字段。
+        :type result: list[:class:`huaweicloudsdknlp.v2.PostMultiGainedSegmentResponseItem`]
+        :param error_code: 调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
+        :type error_code: str
+        :param error_msg: 调用失败时的错误信息。调用成功时无此字段。
+        :type error_msg: str
+        """
         
         super(RunMultiGrainedSegmentResponse, self).__init__()
 
@@ -57,7 +66,7 @@ class RunMultiGrainedSegmentResponse(SdkResponse):
         多粒度分词结果列表。调用失败时无此字段。
 
         :return: The result of this RunMultiGrainedSegmentResponse.
-        :rtype: list[PostMultiGainedSegmentResponseItem]
+        :rtype: list[:class:`huaweicloudsdknlp.v2.PostMultiGainedSegmentResponseItem`]
         """
         return self._result
 
@@ -68,7 +77,7 @@ class RunMultiGrainedSegmentResponse(SdkResponse):
         多粒度分词结果列表。调用失败时无此字段。
 
         :param result: The result of this RunMultiGrainedSegmentResponse.
-        :type: list[PostMultiGainedSegmentResponseItem]
+        :type result: list[:class:`huaweicloudsdknlp.v2.PostMultiGainedSegmentResponseItem`]
         """
         self._result = result
 
@@ -90,7 +99,7 @@ class RunMultiGrainedSegmentResponse(SdkResponse):
         调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
 
         :param error_code: The error_code of this RunMultiGrainedSegmentResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -112,7 +121,7 @@ class RunMultiGrainedSegmentResponse(SdkResponse):
         调用失败时的错误信息。调用成功时无此字段。
 
         :param error_msg: The error_msg of this RunMultiGrainedSegmentResponse.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 

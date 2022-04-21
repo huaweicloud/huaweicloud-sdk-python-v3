@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateStreamForbiddenResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class CreateStreamForbiddenResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateStreamForbiddenResponse - a model defined in huaweicloud sdk"""
+        """CreateStreamForbiddenResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(CreateStreamForbiddenResponse, self).__init__()
         self.discriminator = None

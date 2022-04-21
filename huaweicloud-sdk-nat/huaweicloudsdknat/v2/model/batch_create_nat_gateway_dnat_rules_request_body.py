@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchCreateNatGatewayDnatRulesRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchCreateNatGatewayDnatRulesRequestBody:
     }
 
     def __init__(self, dnat_rules=None):
-        """BatchCreateNatGatewayDnatRulesRequestBody - a model defined in huaweicloud sdk"""
+        """BatchCreateNatGatewayDnatRulesRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param dnat_rules: DNAT规则批量创建对象的请求体。
+        :type dnat_rules: list[:class:`huaweicloudsdknat.v2.CreateNatGatewayDnatOption`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class BatchCreateNatGatewayDnatRulesRequestBody:
         DNAT规则批量创建对象的请求体。
 
         :return: The dnat_rules of this BatchCreateNatGatewayDnatRulesRequestBody.
-        :rtype: list[CreateNatGatewayDnatOption]
+        :rtype: list[:class:`huaweicloudsdknat.v2.CreateNatGatewayDnatOption`]
         """
         return self._dnat_rules
 
@@ -57,7 +62,7 @@ class BatchCreateNatGatewayDnatRulesRequestBody:
         DNAT规则批量创建对象的请求体。
 
         :param dnat_rules: The dnat_rules of this BatchCreateNatGatewayDnatRulesRequestBody.
-        :type: list[CreateNatGatewayDnatOption]
+        :type dnat_rules: list[:class:`huaweicloudsdknat.v2.CreateNatGatewayDnatOption`]
         """
         self._dnat_rules = dnat_rules
 

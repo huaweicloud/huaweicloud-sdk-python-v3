@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteWhiteBlackIpRuleResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class DeleteWhiteBlackIpRuleResponse(SdkResponse):
     }
 
     def __init__(self, id=None, policyid=None, name=None, timestamp=None, description=None, status=None, addr=None, white=None):
-        """DeleteWhiteBlackIpRuleResponse - a model defined in huaweicloud sdk"""
+        """DeleteWhiteBlackIpRuleResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 黑白名单规则id
+        :type id: str
+        :param policyid: 策略id
+        :type policyid: str
+        :param name: 黑白名单规则名称
+        :type name: str
+        :param timestamp: 删除规则时间，13位毫秒时间戳
+        :type timestamp: int
+        :param description: 描述
+        :type description: str
+        :param status: 规则状态，0：关闭，1：开启
+        :type status: int
+        :param addr: 黑白名单ip地址，标准的ip地址或地址段，例如：42.123.120.66或42.123.120.0/16
+        :type addr: str
+        :param white: 防护动作：  - 0 拦截  - 1 放行  - 2 仅记录
+        :type white: int
+        """
         
         super(DeleteWhiteBlackIpRuleResponse, self).__init__()
 
@@ -93,7 +112,7 @@ class DeleteWhiteBlackIpRuleResponse(SdkResponse):
         黑白名单规则id
 
         :param id: The id of this DeleteWhiteBlackIpRuleResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -115,7 +134,7 @@ class DeleteWhiteBlackIpRuleResponse(SdkResponse):
         策略id
 
         :param policyid: The policyid of this DeleteWhiteBlackIpRuleResponse.
-        :type: str
+        :type policyid: str
         """
         self._policyid = policyid
 
@@ -137,7 +156,7 @@ class DeleteWhiteBlackIpRuleResponse(SdkResponse):
         黑白名单规则名称
 
         :param name: The name of this DeleteWhiteBlackIpRuleResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -159,7 +178,7 @@ class DeleteWhiteBlackIpRuleResponse(SdkResponse):
         删除规则时间，13位毫秒时间戳
 
         :param timestamp: The timestamp of this DeleteWhiteBlackIpRuleResponse.
-        :type: int
+        :type timestamp: int
         """
         self._timestamp = timestamp
 
@@ -181,7 +200,7 @@ class DeleteWhiteBlackIpRuleResponse(SdkResponse):
         描述
 
         :param description: The description of this DeleteWhiteBlackIpRuleResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -203,7 +222,7 @@ class DeleteWhiteBlackIpRuleResponse(SdkResponse):
         规则状态，0：关闭，1：开启
 
         :param status: The status of this DeleteWhiteBlackIpRuleResponse.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -225,7 +244,7 @@ class DeleteWhiteBlackIpRuleResponse(SdkResponse):
         黑白名单ip地址，标准的ip地址或地址段，例如：42.123.120.66或42.123.120.0/16
 
         :param addr: The addr of this DeleteWhiteBlackIpRuleResponse.
-        :type: str
+        :type addr: str
         """
         self._addr = addr
 
@@ -247,7 +266,7 @@ class DeleteWhiteBlackIpRuleResponse(SdkResponse):
         防护动作：  - 0 拦截  - 1 放行  - 2 仅记录
 
         :param white: The white of this DeleteWhiteBlackIpRuleResponse.
-        :type: int
+        :type white: int
         """
         self._white = white
 

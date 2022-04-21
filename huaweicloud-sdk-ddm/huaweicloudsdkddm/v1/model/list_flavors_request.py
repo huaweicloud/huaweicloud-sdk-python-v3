@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListFlavorsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListFlavorsRequest:
     }
 
     def __init__(self, engine_id=None, offset=None, limit=None):
-        """ListFlavorsRequest - a model defined in huaweicloud sdk"""
+        """ListFlavorsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param engine_id: 引擎id,通过查询DDM引擎信息接口获取。
+        :type engine_id: str
+        :param offset: 分页参数：起始值 [大于等于0] 。默认值是0。
+        :type offset: int
+        :param limit: 分页参数：每页多少条 [大于0且小于等于128]。默认值是128。
+        :type limit: int
+        """
         
         
 
@@ -67,7 +76,7 @@ class ListFlavorsRequest:
         引擎id,通过查询DDM引擎信息接口获取。
 
         :param engine_id: The engine_id of this ListFlavorsRequest.
-        :type: str
+        :type engine_id: str
         """
         self._engine_id = engine_id
 
@@ -89,7 +98,7 @@ class ListFlavorsRequest:
         分页参数：起始值 [大于等于0] 。默认值是0。
 
         :param offset: The offset of this ListFlavorsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -111,7 +120,7 @@ class ListFlavorsRequest:
         分页参数：每页多少条 [大于0且小于等于128]。默认值是128。
 
         :param limit: The limit of this ListFlavorsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

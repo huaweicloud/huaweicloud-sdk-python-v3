@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListVolumesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListVolumesResponse(SdkResponse):
     }
 
     def __init__(self, count=None, volumes_links=None, volumes=None):
-        """ListVolumesResponse - a model defined in huaweicloud sdk"""
+        """ListVolumesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 查询到的云硬盘总数量，不受分页影响。
+        :type count: int
+        :param volumes_links: 云硬盘列表查询位置标记。如果本次查询只返回部分列表信息时，会返回查询到的当前磁盘mark标记的url，可以继续使用这个url查询剩余列表信息。
+        :type volumes_links: list[:class:`huaweicloudsdkevs.v2.Link`]
+        :param volumes: 查询请求返回的云硬盘列表。
+        :type volumes: list[:class:`huaweicloudsdkevs.v2.VolumeDetail`]
+        """
         
         super(ListVolumesResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListVolumesResponse(SdkResponse):
         查询到的云硬盘总数量，不受分页影响。
 
         :param count: The count of this ListVolumesResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -79,7 +88,7 @@ class ListVolumesResponse(SdkResponse):
         云硬盘列表查询位置标记。如果本次查询只返回部分列表信息时，会返回查询到的当前磁盘mark标记的url，可以继续使用这个url查询剩余列表信息。
 
         :return: The volumes_links of this ListVolumesResponse.
-        :rtype: list[Link]
+        :rtype: list[:class:`huaweicloudsdkevs.v2.Link`]
         """
         return self._volumes_links
 
@@ -90,7 +99,7 @@ class ListVolumesResponse(SdkResponse):
         云硬盘列表查询位置标记。如果本次查询只返回部分列表信息时，会返回查询到的当前磁盘mark标记的url，可以继续使用这个url查询剩余列表信息。
 
         :param volumes_links: The volumes_links of this ListVolumesResponse.
-        :type: list[Link]
+        :type volumes_links: list[:class:`huaweicloudsdkevs.v2.Link`]
         """
         self._volumes_links = volumes_links
 
@@ -101,7 +110,7 @@ class ListVolumesResponse(SdkResponse):
         查询请求返回的云硬盘列表。
 
         :return: The volumes of this ListVolumesResponse.
-        :rtype: list[VolumeDetail]
+        :rtype: list[:class:`huaweicloudsdkevs.v2.VolumeDetail`]
         """
         return self._volumes
 
@@ -112,7 +121,7 @@ class ListVolumesResponse(SdkResponse):
         查询请求返回的云硬盘列表。
 
         :param volumes: The volumes of this ListVolumesResponse.
-        :type: list[VolumeDetail]
+        :type volumes: list[:class:`huaweicloudsdkevs.v2.VolumeDetail`]
         """
         self._volumes = volumes
 

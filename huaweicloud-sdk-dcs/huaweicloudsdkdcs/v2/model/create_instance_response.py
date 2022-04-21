@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateInstanceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateInstanceResponse(SdkResponse):
     }
 
     def __init__(self, order_id=None, instances=None):
-        """CreateInstanceResponse - a model defined in huaweicloud sdk"""
+        """CreateInstanceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param order_id: 订单ID，仅在创建包周期实例时返回。
+        :type order_id: str
+        :param instances: 缓存实例ID和名称，如果批量创建实例，则会返回多个。
+        :type instances: list[:class:`huaweicloudsdkdcs.v2.Instances`]
+        """
         
         super(CreateInstanceResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class CreateInstanceResponse(SdkResponse):
         订单ID，仅在创建包周期实例时返回。
 
         :param order_id: The order_id of this CreateInstanceResponse.
-        :type: str
+        :type order_id: str
         """
         self._order_id = order_id
 
@@ -74,7 +81,7 @@ class CreateInstanceResponse(SdkResponse):
         缓存实例ID和名称，如果批量创建实例，则会返回多个。
 
         :return: The instances of this CreateInstanceResponse.
-        :rtype: list[Instances]
+        :rtype: list[:class:`huaweicloudsdkdcs.v2.Instances`]
         """
         return self._instances
 
@@ -85,7 +92,7 @@ class CreateInstanceResponse(SdkResponse):
         缓存实例ID和名称，如果批量创建实例，则会返回多个。
 
         :param instances: The instances of this CreateInstanceResponse.
-        :type: list[Instances]
+        :type instances: list[:class:`huaweicloudsdkdcs.v2.Instances`]
         """
         self._instances = instances
 

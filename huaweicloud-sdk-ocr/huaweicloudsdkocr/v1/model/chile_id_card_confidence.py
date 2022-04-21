@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ChileIdCardConfidence:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class ChileIdCardConfidence:
     }
 
     def __init__(self, surname=None, given_name=None, nationality=None, sex=None, birth=None, issue_date=None, expiry_date=None, document_number=None, number=None):
-        """ChileIdCardConfidence - a model defined in huaweicloud sdk"""
+        """ChileIdCardConfidence
+
+        The model defined in huaweicloud sdk
+
+        :param surname: 姓氏置信度。 
+        :type surname: float
+        :param given_name: 名置信度。 
+        :type given_name: float
+        :param nationality: 国籍置信度。 
+        :type nationality: float
+        :param sex: 性别置信度。 
+        :type sex: float
+        :param birth: 出生日置信度。 
+        :type birth: float
+        :param issue_date: 发行日置信度。 
+        :type issue_date: float
+        :param expiry_date: 有效期置信度。 
+        :type expiry_date: float
+        :param document_number: 文档编号置信度。 
+        :type document_number: float
+        :param number: 身份证号置信度。 
+        :type number: float
+        """
         
         
 
@@ -98,7 +119,7 @@ class ChileIdCardConfidence:
         姓氏置信度。 
 
         :param surname: The surname of this ChileIdCardConfidence.
-        :type: float
+        :type surname: float
         """
         self._surname = surname
 
@@ -120,7 +141,7 @@ class ChileIdCardConfidence:
         名置信度。 
 
         :param given_name: The given_name of this ChileIdCardConfidence.
-        :type: float
+        :type given_name: float
         """
         self._given_name = given_name
 
@@ -142,7 +163,7 @@ class ChileIdCardConfidence:
         国籍置信度。 
 
         :param nationality: The nationality of this ChileIdCardConfidence.
-        :type: float
+        :type nationality: float
         """
         self._nationality = nationality
 
@@ -164,7 +185,7 @@ class ChileIdCardConfidence:
         性别置信度。 
 
         :param sex: The sex of this ChileIdCardConfidence.
-        :type: float
+        :type sex: float
         """
         self._sex = sex
 
@@ -186,7 +207,7 @@ class ChileIdCardConfidence:
         出生日置信度。 
 
         :param birth: The birth of this ChileIdCardConfidence.
-        :type: float
+        :type birth: float
         """
         self._birth = birth
 
@@ -208,7 +229,7 @@ class ChileIdCardConfidence:
         发行日置信度。 
 
         :param issue_date: The issue_date of this ChileIdCardConfidence.
-        :type: float
+        :type issue_date: float
         """
         self._issue_date = issue_date
 
@@ -230,7 +251,7 @@ class ChileIdCardConfidence:
         有效期置信度。 
 
         :param expiry_date: The expiry_date of this ChileIdCardConfidence.
-        :type: float
+        :type expiry_date: float
         """
         self._expiry_date = expiry_date
 
@@ -252,7 +273,7 @@ class ChileIdCardConfidence:
         文档编号置信度。 
 
         :param document_number: The document_number of this ChileIdCardConfidence.
-        :type: float
+        :type document_number: float
         """
         self._document_number = document_number
 
@@ -274,7 +295,7 @@ class ChileIdCardConfidence:
         身份证号置信度。 
 
         :param number: The number of this ChileIdCardConfidence.
-        :type: float
+        :type number: float
         """
         self._number = number
 

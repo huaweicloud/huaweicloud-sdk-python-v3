@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdatePolicyRuleStatusRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class UpdatePolicyRuleStatusRequest:
     }
 
     def __init__(self, enterprise_project_id=None, policy_id=None, ruletype=None, rule_id=None, body=None):
-        """UpdatePolicyRuleStatusRequest - a model defined in huaweicloud sdk"""
+        """UpdatePolicyRuleStatusRequest
+
+        The model defined in huaweicloud sdk
+
+        :param enterprise_project_id: 企业项目id
+        :type enterprise_project_id: str
+        :param policy_id: 策略id（策略id从查询防护策略列表接口获取）
+        :type policy_id: str
+        :param ruletype: 策略类型
+        :type ruletype: str
+        :param rule_id: 规则id，根据不同的规则类型（ruletype）调用规则列表接口获取规则id，例如黑白名单（whiteblackip）规则id，您可以通过调用查询黑白名单规则列表（ListWhiteblackipRule）获取规则id
+        :type rule_id: str
+        :param body: Body of the UpdatePolicyRuleStatusRequest
+        :type body: :class:`huaweicloudsdkwaf.v1.UpdatePolicyRuleStatusRequestBody`
+        """
         
         
 
@@ -75,7 +88,7 @@ class UpdatePolicyRuleStatusRequest:
         企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this UpdatePolicyRuleStatusRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -97,7 +110,7 @@ class UpdatePolicyRuleStatusRequest:
         策略id（策略id从查询防护策略列表接口获取）
 
         :param policy_id: The policy_id of this UpdatePolicyRuleStatusRequest.
-        :type: str
+        :type policy_id: str
         """
         self._policy_id = policy_id
 
@@ -119,7 +132,7 @@ class UpdatePolicyRuleStatusRequest:
         策略类型
 
         :param ruletype: The ruletype of this UpdatePolicyRuleStatusRequest.
-        :type: str
+        :type ruletype: str
         """
         self._ruletype = ruletype
 
@@ -141,7 +154,7 @@ class UpdatePolicyRuleStatusRequest:
         规则id，根据不同的规则类型（ruletype）调用规则列表接口获取规则id，例如黑白名单（whiteblackip）规则id，您可以通过调用查询黑白名单规则列表（ListWhiteblackipRule）获取规则id
 
         :param rule_id: The rule_id of this UpdatePolicyRuleStatusRequest.
-        :type: str
+        :type rule_id: str
         """
         self._rule_id = rule_id
 
@@ -151,7 +164,7 @@ class UpdatePolicyRuleStatusRequest:
 
 
         :return: The body of this UpdatePolicyRuleStatusRequest.
-        :rtype: UpdatePolicyRuleStatusRequestBody
+        :rtype: :class:`huaweicloudsdkwaf.v1.UpdatePolicyRuleStatusRequestBody`
         """
         return self._body
 
@@ -161,7 +174,7 @@ class UpdatePolicyRuleStatusRequest:
 
 
         :param body: The body of this UpdatePolicyRuleStatusRequest.
-        :type: UpdatePolicyRuleStatusRequestBody
+        :type body: :class:`huaweicloudsdkwaf.v1.UpdatePolicyRuleStatusRequestBody`
         """
         self._body = body
 

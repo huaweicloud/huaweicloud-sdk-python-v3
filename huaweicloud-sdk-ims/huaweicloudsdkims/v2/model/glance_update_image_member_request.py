@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GlanceUpdateImageMemberRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class GlanceUpdateImageMemberRequest:
     }
 
     def __init__(self, image_id=None, member_id=None, body=None):
-        """GlanceUpdateImageMemberRequest - a model defined in huaweicloud sdk"""
+        """GlanceUpdateImageMemberRequest
+
+        The model defined in huaweicloud sdk
+
+        :param image_id: 镜像id
+        :type image_id: str
+        :param member_id: 成员id
+        :type member_id: str
+        :param body: Body of the GlanceUpdateImageMemberRequest
+        :type body: :class:`huaweicloudsdkims.v2.GlanceUpdateImageMemberRequestBody`
+        """
         
         
 
@@ -66,7 +75,7 @@ class GlanceUpdateImageMemberRequest:
         镜像id
 
         :param image_id: The image_id of this GlanceUpdateImageMemberRequest.
-        :type: str
+        :type image_id: str
         """
         self._image_id = image_id
 
@@ -88,7 +97,7 @@ class GlanceUpdateImageMemberRequest:
         成员id
 
         :param member_id: The member_id of this GlanceUpdateImageMemberRequest.
-        :type: str
+        :type member_id: str
         """
         self._member_id = member_id
 
@@ -98,7 +107,7 @@ class GlanceUpdateImageMemberRequest:
 
 
         :return: The body of this GlanceUpdateImageMemberRequest.
-        :rtype: GlanceUpdateImageMemberRequestBody
+        :rtype: :class:`huaweicloudsdkims.v2.GlanceUpdateImageMemberRequestBody`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class GlanceUpdateImageMemberRequest:
 
 
         :param body: The body of this GlanceUpdateImageMemberRequest.
-        :type: GlanceUpdateImageMemberRequestBody
+        :type body: :class:`huaweicloudsdkims.v2.GlanceUpdateImageMemberRequestBody`
         """
         self._body = body
 

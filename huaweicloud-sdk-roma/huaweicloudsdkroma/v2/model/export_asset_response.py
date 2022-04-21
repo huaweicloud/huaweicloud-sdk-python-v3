@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExportAssetResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ExportAssetResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """ExportAssetResponse - a model defined in huaweicloud sdk"""
+        """ExportAssetResponse
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 资产导出作业的ID，可用于查询作业进度，获取导出作业进度
+        :type job_id: str
+        """
         
         super(ExportAssetResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class ExportAssetResponse(SdkResponse):
         资产导出作业的ID，可用于查询作业进度，获取导出作业进度
 
         :param job_id: The job_id of this ExportAssetResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteHealthmonitorRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteHealthmonitorRequest:
     }
 
     def __init__(self, healthmonitor_id=None):
-        """DeleteHealthmonitorRequest - a model defined in huaweicloud sdk"""
+        """DeleteHealthmonitorRequest
+
+        The model defined in huaweicloud sdk
+
+        :param healthmonitor_id: 健康检查id
+        :type healthmonitor_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteHealthmonitorRequest:
         健康检查id
 
         :param healthmonitor_id: The healthmonitor_id of this DeleteHealthmonitorRequest.
-        :type: str
+        :type healthmonitor_id: str
         """
         self._healthmonitor_id = healthmonitor_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAlarmHistoriesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListAlarmHistoriesResponse(SdkResponse):
     }
 
     def __init__(self, alarm_histories=None, meta_data=None):
-        """ListAlarmHistoriesResponse - a model defined in huaweicloud sdk"""
+        """ListAlarmHistoriesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param alarm_histories: 一条或者多条告警历史详细信息
+        :type alarm_histories: list[:class:`huaweicloudsdkces.v1.AlarmHistoryInfo`]
+        :param meta_data: 
+        :type meta_data: :class:`huaweicloudsdkces.v1.MetaDataForAlarmHistory`
+        """
         
         super(ListAlarmHistoriesResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListAlarmHistoriesResponse(SdkResponse):
         一条或者多条告警历史详细信息
 
         :return: The alarm_histories of this ListAlarmHistoriesResponse.
-        :rtype: list[AlarmHistoryInfo]
+        :rtype: list[:class:`huaweicloudsdkces.v1.AlarmHistoryInfo`]
         """
         return self._alarm_histories
 
@@ -63,7 +70,7 @@ class ListAlarmHistoriesResponse(SdkResponse):
         一条或者多条告警历史详细信息
 
         :param alarm_histories: The alarm_histories of this ListAlarmHistoriesResponse.
-        :type: list[AlarmHistoryInfo]
+        :type alarm_histories: list[:class:`huaweicloudsdkces.v1.AlarmHistoryInfo`]
         """
         self._alarm_histories = alarm_histories
 
@@ -73,7 +80,7 @@ class ListAlarmHistoriesResponse(SdkResponse):
 
 
         :return: The meta_data of this ListAlarmHistoriesResponse.
-        :rtype: MetaDataForAlarmHistory
+        :rtype: :class:`huaweicloudsdkces.v1.MetaDataForAlarmHistory`
         """
         return self._meta_data
 
@@ -83,7 +90,7 @@ class ListAlarmHistoriesResponse(SdkResponse):
 
 
         :param meta_data: The meta_data of this ListAlarmHistoriesResponse.
-        :type: MetaDataForAlarmHistory
+        :type meta_data: :class:`huaweicloudsdkces.v1.MetaDataForAlarmHistory`
         """
         self._meta_data = meta_data
 

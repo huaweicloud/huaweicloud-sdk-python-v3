@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NeutronUpdateSecurityGroupRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class NeutronUpdateSecurityGroupRequest:
     }
 
     def __init__(self, security_group_id=None, body=None):
-        """NeutronUpdateSecurityGroupRequest - a model defined in huaweicloud sdk"""
+        """NeutronUpdateSecurityGroupRequest
+
+        The model defined in huaweicloud sdk
+
+        :param security_group_id: 安全组ID
+        :type security_group_id: str
+        :param body: Body of the NeutronUpdateSecurityGroupRequest
+        :type body: :class:`huaweicloudsdkvpc.v2.NeutronUpdateSecurityGroupRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class NeutronUpdateSecurityGroupRequest:
         安全组ID
 
         :param security_group_id: The security_group_id of this NeutronUpdateSecurityGroupRequest.
-        :type: str
+        :type security_group_id: str
         """
         self._security_group_id = security_group_id
 
@@ -72,7 +79,7 @@ class NeutronUpdateSecurityGroupRequest:
 
 
         :return: The body of this NeutronUpdateSecurityGroupRequest.
-        :rtype: NeutronUpdateSecurityGroupRequestBody
+        :rtype: :class:`huaweicloudsdkvpc.v2.NeutronUpdateSecurityGroupRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class NeutronUpdateSecurityGroupRequest:
 
 
         :param body: The body of this NeutronUpdateSecurityGroupRequest.
-        :type: NeutronUpdateSecurityGroupRequestBody
+        :type body: :class:`huaweicloudsdkvpc.v2.NeutronUpdateSecurityGroupRequestBody`
         """
         self._body = body
 

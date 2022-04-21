@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BackupExtendInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class BackupExtendInfo:
     }
 
     def __init__(self, auto_trigger=None, bootable=None, incremental=None, snapshot_id=None, support_lld=None, supported_restore_mode=None, os_images_data=None, contain_system_disk=None, encrypted=None, system_disk=None, is_multi_az=None):
-        """BackupExtendInfo - a model defined in huaweicloud sdk"""
+        """BackupExtendInfo
+
+        The model defined in huaweicloud sdk
+
+        :param auto_trigger: 是否是自动生成的备份副本
+        :type auto_trigger: bool
+        :param bootable: 是否系统盘备份
+        :type bootable: bool
+        :param incremental: 是否是增备
+        :type incremental: bool
+        :param snapshot_id: 卷备份副本的快照id
+        :type snapshot_id: str
+        :param support_lld: 是否支持lazyloading快速恢复
+        :type support_lld: bool
+        :param supported_restore_mode: 备份支持恢复的方式，当前取值包含na,snapshot和backup。如果该字段取值为snapshot，代表备份此时已经支持创建整机镜像；如果该字段取值为backup，备份支持通过云服务器上硬盘的备份进行恢复；如果该字段取值为na，备份不支持恢复。
+        :type supported_restore_mode: str
+        :param os_images_data: 备份注册镜像ID列表
+        :type os_images_data: list[:class:`huaweicloudsdkcbr.v1.ImageData`]
+        :param contain_system_disk: 整机备份是否包含系统盘
+        :type contain_system_disk: bool
+        :param encrypted: 是否加密
+        :type encrypted: bool
+        :param system_disk: 是否是系统盘
+        :type system_disk: bool
+        :param is_multi_az: 备份类型是否为多AZ
+        :type is_multi_az: bool
+        """
         
         
 
@@ -108,7 +133,7 @@ class BackupExtendInfo:
         是否是自动生成的备份副本
 
         :param auto_trigger: The auto_trigger of this BackupExtendInfo.
-        :type: bool
+        :type auto_trigger: bool
         """
         self._auto_trigger = auto_trigger
 
@@ -130,7 +155,7 @@ class BackupExtendInfo:
         是否系统盘备份
 
         :param bootable: The bootable of this BackupExtendInfo.
-        :type: bool
+        :type bootable: bool
         """
         self._bootable = bootable
 
@@ -152,7 +177,7 @@ class BackupExtendInfo:
         是否是增备
 
         :param incremental: The incremental of this BackupExtendInfo.
-        :type: bool
+        :type incremental: bool
         """
         self._incremental = incremental
 
@@ -174,7 +199,7 @@ class BackupExtendInfo:
         卷备份副本的快照id
 
         :param snapshot_id: The snapshot_id of this BackupExtendInfo.
-        :type: str
+        :type snapshot_id: str
         """
         self._snapshot_id = snapshot_id
 
@@ -196,7 +221,7 @@ class BackupExtendInfo:
         是否支持lazyloading快速恢复
 
         :param support_lld: The support_lld of this BackupExtendInfo.
-        :type: bool
+        :type support_lld: bool
         """
         self._support_lld = support_lld
 
@@ -218,7 +243,7 @@ class BackupExtendInfo:
         备份支持恢复的方式，当前取值包含na,snapshot和backup。如果该字段取值为snapshot，代表备份此时已经支持创建整机镜像；如果该字段取值为backup，备份支持通过云服务器上硬盘的备份进行恢复；如果该字段取值为na，备份不支持恢复。
 
         :param supported_restore_mode: The supported_restore_mode of this BackupExtendInfo.
-        :type: str
+        :type supported_restore_mode: str
         """
         self._supported_restore_mode = supported_restore_mode
 
@@ -229,7 +254,7 @@ class BackupExtendInfo:
         备份注册镜像ID列表
 
         :return: The os_images_data of this BackupExtendInfo.
-        :rtype: list[ImageData]
+        :rtype: list[:class:`huaweicloudsdkcbr.v1.ImageData`]
         """
         return self._os_images_data
 
@@ -240,7 +265,7 @@ class BackupExtendInfo:
         备份注册镜像ID列表
 
         :param os_images_data: The os_images_data of this BackupExtendInfo.
-        :type: list[ImageData]
+        :type os_images_data: list[:class:`huaweicloudsdkcbr.v1.ImageData`]
         """
         self._os_images_data = os_images_data
 
@@ -262,7 +287,7 @@ class BackupExtendInfo:
         整机备份是否包含系统盘
 
         :param contain_system_disk: The contain_system_disk of this BackupExtendInfo.
-        :type: bool
+        :type contain_system_disk: bool
         """
         self._contain_system_disk = contain_system_disk
 
@@ -284,7 +309,7 @@ class BackupExtendInfo:
         是否加密
 
         :param encrypted: The encrypted of this BackupExtendInfo.
-        :type: bool
+        :type encrypted: bool
         """
         self._encrypted = encrypted
 
@@ -306,7 +331,7 @@ class BackupExtendInfo:
         是否是系统盘
 
         :param system_disk: The system_disk of this BackupExtendInfo.
-        :type: bool
+        :type system_disk: bool
         """
         self._system_disk = system_disk
 
@@ -328,7 +353,7 @@ class BackupExtendInfo:
         备份类型是否为多AZ
 
         :param is_multi_az: The is_multi_az of this BackupExtendInfo.
-        :type: bool
+        :type is_multi_az: bool
         """
         self._is_multi_az = is_multi_az
 

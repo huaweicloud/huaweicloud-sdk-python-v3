@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Route:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Route:
     }
 
     def __init__(self, destination=None, nexthop=None):
-        """Route - a model defined in huaweicloud sdk"""
+        """Route
+
+        The model defined in huaweicloud sdk
+
+        :param destination: 功能说明：路由目的地 取值范围：IP地址段 约束：仅支持配置默认路由，且其取值只能是0.0.0.0/0
+        :type destination: str
+        :param nexthop: 功能说明：路由下一跳IP地址 取值范围：ipv4地址格式 约束：nexthop仅支持所关联的子网范围内IP地址
+        :type nexthop: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class Route:
         功能说明：路由目的地 取值范围：IP地址段 约束：仅支持配置默认路由，且其取值只能是0.0.0.0/0
 
         :param destination: The destination of this Route.
-        :type: str
+        :type destination: str
         """
         self._destination = destination
 
@@ -85,7 +92,7 @@ class Route:
         功能说明：路由下一跳IP地址 取值范围：ipv4地址格式 约束：nexthop仅支持所关联的子网范围内IP地址
 
         :param nexthop: The nexthop of this Route.
-        :type: str
+        :type nexthop: str
         """
         self._nexthop = nexthop
 

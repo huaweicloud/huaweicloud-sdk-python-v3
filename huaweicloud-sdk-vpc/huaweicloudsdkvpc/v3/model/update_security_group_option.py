@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateSecurityGroupOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateSecurityGroupOption:
     }
 
     def __init__(self, name=None, description=None):
-        """UpdateSecurityGroupOption - a model defined in huaweicloud sdk"""
+        """UpdateSecurityGroupOption
+
+        The model defined in huaweicloud sdk
+
+        :param name: 功能说明：安全组名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
+        :type name: str
+        :param description: 功能说明：安全组描述 取值范围：0-255个字符，不能包含“&lt;”和“&gt;”
+        :type description: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class UpdateSecurityGroupOption:
         功能说明：安全组名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
         :param name: The name of this UpdateSecurityGroupOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -85,7 +92,7 @@ class UpdateSecurityGroupOption:
         功能说明：安全组描述 取值范围：0-255个字符，不能包含“<”和“>”
 
         :param description: The description of this UpdateSecurityGroupOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 

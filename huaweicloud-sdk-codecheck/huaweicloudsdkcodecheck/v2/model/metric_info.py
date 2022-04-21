@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MetricInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -114,7 +113,97 @@ class MetricInfo:
     }
 
     def __init__(self, code_size=None, raw_lines=None, methods_total=None, cyclomatic_complexity_total=None, cyclomatic_complexity_per_method=None, maximum_cyclomatic_complexity=None, huge_cyclomatic_complexity_total=None, huge_cyclomatic_complexity_ratio=None, cca_cyclomatic_complexity_total=None, cca_cyclomatic_complexity_per_method=None, maximum_cca_cyclomatic_complexity=None, huge_cca_cyclomatic_complexity_total=None, cyclomatic_complexity_adequacy=None, maximum_depth=None, huge_depth_total=None, huge_depth_ratio=None, method_lines=None, lines_per_method=None, huge_method_total=None, huge_method_ratio=None, files_total=None, folders_total=None, lines_per_file=None, huge_headerfile_total=None, huge_headerfile_ratio=None, huge_non_headerfile_total=None, huge_non_headerfile_ratio=None, huge_folder_total=None, huge_folder_ratio=None, file_duplication_total=None, file_duplication_ratio=None, non_hfile_duplication_total=None, non_hfile_duplication_ratio=None, code_duplication_total=None, code_duplication_ratio=None, non_hfile_code_duplication_total=None, non_hfile_code_duplication_ratio=None, unsafe_functions_total=None, unsafe_functions_kloc=None, redundant_code_total=None, redundant_code_kloc=None, warning_suppression_total=None, warning_suppression_kloc=None):
-        """MetricInfo - a model defined in huaweicloud sdk"""
+        """MetricInfo
+
+        The model defined in huaweicloud sdk
+
+        :param code_size: 代码规模
+        :type code_size: str
+        :param raw_lines: 原始代码行数
+        :type raw_lines: str
+        :param methods_total: 函数总数
+        :type methods_total: str
+        :param cyclomatic_complexity_total: 圈复杂度总数
+        :type cyclomatic_complexity_total: str
+        :param cyclomatic_complexity_per_method: 平均圈复杂度
+        :type cyclomatic_complexity_per_method: str
+        :param maximum_cyclomatic_complexity: 最大圈复杂度
+        :type maximum_cyclomatic_complexity: str
+        :param huge_cyclomatic_complexity_total: 超大圈复杂度数
+        :type huge_cyclomatic_complexity_total: str
+        :param huge_cyclomatic_complexity_ratio: 超大圈复杂度比例
+        :type huge_cyclomatic_complexity_ratio: str
+        :param cca_cyclomatic_complexity_total: cca圈复杂度总数
+        :type cca_cyclomatic_complexity_total: str
+        :param cca_cyclomatic_complexity_per_method: cca平均圈复杂度
+        :type cca_cyclomatic_complexity_per_method: str
+        :param maximum_cca_cyclomatic_complexity: cca最大圈复杂度
+        :type maximum_cca_cyclomatic_complexity: str
+        :param huge_cca_cyclomatic_complexity_total: 超大圈复杂度函数总数
+        :type huge_cca_cyclomatic_complexity_total: str
+        :param cyclomatic_complexity_adequacy: 圈复杂度满足度
+        :type cyclomatic_complexity_adequacy: str
+        :param maximum_depth: 最大深度
+        :type maximum_depth: str
+        :param huge_depth_total: 超大深度数
+        :type huge_depth_total: str
+        :param huge_depth_ratio: 超大深度占比
+        :type huge_depth_ratio: str
+        :param method_lines: 函数总行数
+        :type method_lines: str
+        :param lines_per_method: 函数平均代码行
+        :type lines_per_method: str
+        :param huge_method_total: 超大函数数
+        :type huge_method_total: str
+        :param huge_method_ratio: 超大函数占比
+        :type huge_method_ratio: str
+        :param files_total: 文件总数
+        :type files_total: str
+        :param folders_total: 目录总数
+        :type folders_total: str
+        :param lines_per_file: 文件平均代码行
+        :type lines_per_file: str
+        :param huge_headerfile_total: 超大头文件数
+        :type huge_headerfile_total: str
+        :param huge_headerfile_ratio: 超大头文件占比
+        :type huge_headerfile_ratio: str
+        :param huge_non_headerfile_total: 超大源文件数
+        :type huge_non_headerfile_total: str
+        :param huge_non_headerfile_ratio: 超大源文件占比
+        :type huge_non_headerfile_ratio: str
+        :param huge_folder_total: 超大目录数
+        :type huge_folder_total: str
+        :param huge_folder_ratio: 超大目录占比
+        :type huge_folder_ratio: str
+        :param file_duplication_total: 重复文件数
+        :type file_duplication_total: str
+        :param file_duplication_ratio: 文件重复率
+        :type file_duplication_ratio: str
+        :param non_hfile_duplication_total: 重复源文件数
+        :type non_hfile_duplication_total: str
+        :param non_hfile_duplication_ratio: 源文件重复率
+        :type non_hfile_duplication_ratio: str
+        :param code_duplication_total: 代码重复数
+        :type code_duplication_total: str
+        :param code_duplication_ratio: 代码重复率
+        :type code_duplication_ratio: str
+        :param non_hfile_code_duplication_total: 源文件代码重复数
+        :type non_hfile_code_duplication_total: str
+        :param non_hfile_code_duplication_ratio: 源文件代码重复率
+        :type non_hfile_code_duplication_ratio: str
+        :param unsafe_functions_total: 危险函数总数
+        :type unsafe_functions_total: str
+        :param unsafe_functions_kloc: 危险函数密度
+        :type unsafe_functions_kloc: str
+        :param redundant_code_total: 冗余代码数
+        :type redundant_code_total: str
+        :param redundant_code_kloc: 冗余代码块密度
+        :type redundant_code_kloc: str
+        :param warning_suppression_total: 抑制告警数
+        :type warning_suppression_total: str
+        :param warning_suppression_kloc: 抑制告警密度
+        :type warning_suppression_kloc: str
+        """
         
         
 
@@ -268,7 +357,7 @@ class MetricInfo:
         代码规模
 
         :param code_size: The code_size of this MetricInfo.
-        :type: str
+        :type code_size: str
         """
         self._code_size = code_size
 
@@ -290,7 +379,7 @@ class MetricInfo:
         原始代码行数
 
         :param raw_lines: The raw_lines of this MetricInfo.
-        :type: str
+        :type raw_lines: str
         """
         self._raw_lines = raw_lines
 
@@ -312,7 +401,7 @@ class MetricInfo:
         函数总数
 
         :param methods_total: The methods_total of this MetricInfo.
-        :type: str
+        :type methods_total: str
         """
         self._methods_total = methods_total
 
@@ -334,7 +423,7 @@ class MetricInfo:
         圈复杂度总数
 
         :param cyclomatic_complexity_total: The cyclomatic_complexity_total of this MetricInfo.
-        :type: str
+        :type cyclomatic_complexity_total: str
         """
         self._cyclomatic_complexity_total = cyclomatic_complexity_total
 
@@ -356,7 +445,7 @@ class MetricInfo:
         平均圈复杂度
 
         :param cyclomatic_complexity_per_method: The cyclomatic_complexity_per_method of this MetricInfo.
-        :type: str
+        :type cyclomatic_complexity_per_method: str
         """
         self._cyclomatic_complexity_per_method = cyclomatic_complexity_per_method
 
@@ -378,7 +467,7 @@ class MetricInfo:
         最大圈复杂度
 
         :param maximum_cyclomatic_complexity: The maximum_cyclomatic_complexity of this MetricInfo.
-        :type: str
+        :type maximum_cyclomatic_complexity: str
         """
         self._maximum_cyclomatic_complexity = maximum_cyclomatic_complexity
 
@@ -400,7 +489,7 @@ class MetricInfo:
         超大圈复杂度数
 
         :param huge_cyclomatic_complexity_total: The huge_cyclomatic_complexity_total of this MetricInfo.
-        :type: str
+        :type huge_cyclomatic_complexity_total: str
         """
         self._huge_cyclomatic_complexity_total = huge_cyclomatic_complexity_total
 
@@ -422,7 +511,7 @@ class MetricInfo:
         超大圈复杂度比例
 
         :param huge_cyclomatic_complexity_ratio: The huge_cyclomatic_complexity_ratio of this MetricInfo.
-        :type: str
+        :type huge_cyclomatic_complexity_ratio: str
         """
         self._huge_cyclomatic_complexity_ratio = huge_cyclomatic_complexity_ratio
 
@@ -444,7 +533,7 @@ class MetricInfo:
         cca圈复杂度总数
 
         :param cca_cyclomatic_complexity_total: The cca_cyclomatic_complexity_total of this MetricInfo.
-        :type: str
+        :type cca_cyclomatic_complexity_total: str
         """
         self._cca_cyclomatic_complexity_total = cca_cyclomatic_complexity_total
 
@@ -466,7 +555,7 @@ class MetricInfo:
         cca平均圈复杂度
 
         :param cca_cyclomatic_complexity_per_method: The cca_cyclomatic_complexity_per_method of this MetricInfo.
-        :type: str
+        :type cca_cyclomatic_complexity_per_method: str
         """
         self._cca_cyclomatic_complexity_per_method = cca_cyclomatic_complexity_per_method
 
@@ -488,7 +577,7 @@ class MetricInfo:
         cca最大圈复杂度
 
         :param maximum_cca_cyclomatic_complexity: The maximum_cca_cyclomatic_complexity of this MetricInfo.
-        :type: str
+        :type maximum_cca_cyclomatic_complexity: str
         """
         self._maximum_cca_cyclomatic_complexity = maximum_cca_cyclomatic_complexity
 
@@ -510,7 +599,7 @@ class MetricInfo:
         超大圈复杂度函数总数
 
         :param huge_cca_cyclomatic_complexity_total: The huge_cca_cyclomatic_complexity_total of this MetricInfo.
-        :type: str
+        :type huge_cca_cyclomatic_complexity_total: str
         """
         self._huge_cca_cyclomatic_complexity_total = huge_cca_cyclomatic_complexity_total
 
@@ -532,7 +621,7 @@ class MetricInfo:
         圈复杂度满足度
 
         :param cyclomatic_complexity_adequacy: The cyclomatic_complexity_adequacy of this MetricInfo.
-        :type: str
+        :type cyclomatic_complexity_adequacy: str
         """
         self._cyclomatic_complexity_adequacy = cyclomatic_complexity_adequacy
 
@@ -554,7 +643,7 @@ class MetricInfo:
         最大深度
 
         :param maximum_depth: The maximum_depth of this MetricInfo.
-        :type: str
+        :type maximum_depth: str
         """
         self._maximum_depth = maximum_depth
 
@@ -576,7 +665,7 @@ class MetricInfo:
         超大深度数
 
         :param huge_depth_total: The huge_depth_total of this MetricInfo.
-        :type: str
+        :type huge_depth_total: str
         """
         self._huge_depth_total = huge_depth_total
 
@@ -598,7 +687,7 @@ class MetricInfo:
         超大深度占比
 
         :param huge_depth_ratio: The huge_depth_ratio of this MetricInfo.
-        :type: str
+        :type huge_depth_ratio: str
         """
         self._huge_depth_ratio = huge_depth_ratio
 
@@ -620,7 +709,7 @@ class MetricInfo:
         函数总行数
 
         :param method_lines: The method_lines of this MetricInfo.
-        :type: str
+        :type method_lines: str
         """
         self._method_lines = method_lines
 
@@ -642,7 +731,7 @@ class MetricInfo:
         函数平均代码行
 
         :param lines_per_method: The lines_per_method of this MetricInfo.
-        :type: str
+        :type lines_per_method: str
         """
         self._lines_per_method = lines_per_method
 
@@ -664,7 +753,7 @@ class MetricInfo:
         超大函数数
 
         :param huge_method_total: The huge_method_total of this MetricInfo.
-        :type: str
+        :type huge_method_total: str
         """
         self._huge_method_total = huge_method_total
 
@@ -686,7 +775,7 @@ class MetricInfo:
         超大函数占比
 
         :param huge_method_ratio: The huge_method_ratio of this MetricInfo.
-        :type: str
+        :type huge_method_ratio: str
         """
         self._huge_method_ratio = huge_method_ratio
 
@@ -708,7 +797,7 @@ class MetricInfo:
         文件总数
 
         :param files_total: The files_total of this MetricInfo.
-        :type: str
+        :type files_total: str
         """
         self._files_total = files_total
 
@@ -730,7 +819,7 @@ class MetricInfo:
         目录总数
 
         :param folders_total: The folders_total of this MetricInfo.
-        :type: str
+        :type folders_total: str
         """
         self._folders_total = folders_total
 
@@ -752,7 +841,7 @@ class MetricInfo:
         文件平均代码行
 
         :param lines_per_file: The lines_per_file of this MetricInfo.
-        :type: str
+        :type lines_per_file: str
         """
         self._lines_per_file = lines_per_file
 
@@ -774,7 +863,7 @@ class MetricInfo:
         超大头文件数
 
         :param huge_headerfile_total: The huge_headerfile_total of this MetricInfo.
-        :type: str
+        :type huge_headerfile_total: str
         """
         self._huge_headerfile_total = huge_headerfile_total
 
@@ -796,7 +885,7 @@ class MetricInfo:
         超大头文件占比
 
         :param huge_headerfile_ratio: The huge_headerfile_ratio of this MetricInfo.
-        :type: str
+        :type huge_headerfile_ratio: str
         """
         self._huge_headerfile_ratio = huge_headerfile_ratio
 
@@ -818,7 +907,7 @@ class MetricInfo:
         超大源文件数
 
         :param huge_non_headerfile_total: The huge_non_headerfile_total of this MetricInfo.
-        :type: str
+        :type huge_non_headerfile_total: str
         """
         self._huge_non_headerfile_total = huge_non_headerfile_total
 
@@ -840,7 +929,7 @@ class MetricInfo:
         超大源文件占比
 
         :param huge_non_headerfile_ratio: The huge_non_headerfile_ratio of this MetricInfo.
-        :type: str
+        :type huge_non_headerfile_ratio: str
         """
         self._huge_non_headerfile_ratio = huge_non_headerfile_ratio
 
@@ -862,7 +951,7 @@ class MetricInfo:
         超大目录数
 
         :param huge_folder_total: The huge_folder_total of this MetricInfo.
-        :type: str
+        :type huge_folder_total: str
         """
         self._huge_folder_total = huge_folder_total
 
@@ -884,7 +973,7 @@ class MetricInfo:
         超大目录占比
 
         :param huge_folder_ratio: The huge_folder_ratio of this MetricInfo.
-        :type: str
+        :type huge_folder_ratio: str
         """
         self._huge_folder_ratio = huge_folder_ratio
 
@@ -906,7 +995,7 @@ class MetricInfo:
         重复文件数
 
         :param file_duplication_total: The file_duplication_total of this MetricInfo.
-        :type: str
+        :type file_duplication_total: str
         """
         self._file_duplication_total = file_duplication_total
 
@@ -928,7 +1017,7 @@ class MetricInfo:
         文件重复率
 
         :param file_duplication_ratio: The file_duplication_ratio of this MetricInfo.
-        :type: str
+        :type file_duplication_ratio: str
         """
         self._file_duplication_ratio = file_duplication_ratio
 
@@ -950,7 +1039,7 @@ class MetricInfo:
         重复源文件数
 
         :param non_hfile_duplication_total: The non_hfile_duplication_total of this MetricInfo.
-        :type: str
+        :type non_hfile_duplication_total: str
         """
         self._non_hfile_duplication_total = non_hfile_duplication_total
 
@@ -972,7 +1061,7 @@ class MetricInfo:
         源文件重复率
 
         :param non_hfile_duplication_ratio: The non_hfile_duplication_ratio of this MetricInfo.
-        :type: str
+        :type non_hfile_duplication_ratio: str
         """
         self._non_hfile_duplication_ratio = non_hfile_duplication_ratio
 
@@ -994,7 +1083,7 @@ class MetricInfo:
         代码重复数
 
         :param code_duplication_total: The code_duplication_total of this MetricInfo.
-        :type: str
+        :type code_duplication_total: str
         """
         self._code_duplication_total = code_duplication_total
 
@@ -1016,7 +1105,7 @@ class MetricInfo:
         代码重复率
 
         :param code_duplication_ratio: The code_duplication_ratio of this MetricInfo.
-        :type: str
+        :type code_duplication_ratio: str
         """
         self._code_duplication_ratio = code_duplication_ratio
 
@@ -1038,7 +1127,7 @@ class MetricInfo:
         源文件代码重复数
 
         :param non_hfile_code_duplication_total: The non_hfile_code_duplication_total of this MetricInfo.
-        :type: str
+        :type non_hfile_code_duplication_total: str
         """
         self._non_hfile_code_duplication_total = non_hfile_code_duplication_total
 
@@ -1060,7 +1149,7 @@ class MetricInfo:
         源文件代码重复率
 
         :param non_hfile_code_duplication_ratio: The non_hfile_code_duplication_ratio of this MetricInfo.
-        :type: str
+        :type non_hfile_code_duplication_ratio: str
         """
         self._non_hfile_code_duplication_ratio = non_hfile_code_duplication_ratio
 
@@ -1082,7 +1171,7 @@ class MetricInfo:
         危险函数总数
 
         :param unsafe_functions_total: The unsafe_functions_total of this MetricInfo.
-        :type: str
+        :type unsafe_functions_total: str
         """
         self._unsafe_functions_total = unsafe_functions_total
 
@@ -1104,7 +1193,7 @@ class MetricInfo:
         危险函数密度
 
         :param unsafe_functions_kloc: The unsafe_functions_kloc of this MetricInfo.
-        :type: str
+        :type unsafe_functions_kloc: str
         """
         self._unsafe_functions_kloc = unsafe_functions_kloc
 
@@ -1126,7 +1215,7 @@ class MetricInfo:
         冗余代码数
 
         :param redundant_code_total: The redundant_code_total of this MetricInfo.
-        :type: str
+        :type redundant_code_total: str
         """
         self._redundant_code_total = redundant_code_total
 
@@ -1148,7 +1237,7 @@ class MetricInfo:
         冗余代码块密度
 
         :param redundant_code_kloc: The redundant_code_kloc of this MetricInfo.
-        :type: str
+        :type redundant_code_kloc: str
         """
         self._redundant_code_kloc = redundant_code_kloc
 
@@ -1170,7 +1259,7 @@ class MetricInfo:
         抑制告警数
 
         :param warning_suppression_total: The warning_suppression_total of this MetricInfo.
-        :type: str
+        :type warning_suppression_total: str
         """
         self._warning_suppression_total = warning_suppression_total
 
@@ -1192,7 +1281,7 @@ class MetricInfo:
         抑制告警密度
 
         :param warning_suppression_kloc: The warning_suppression_kloc of this MetricInfo.
-        :type: str
+        :type warning_suppression_kloc: str
         """
         self._warning_suppression_kloc = warning_suppression_kloc
 

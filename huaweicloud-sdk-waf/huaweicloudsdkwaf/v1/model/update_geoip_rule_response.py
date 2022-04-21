@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateGeoipRuleResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UpdateGeoipRuleResponse(SdkResponse):
     }
 
     def __init__(self, id=None, policyid=None, geoip=None, white=None):
-        """UpdateGeoipRuleResponse - a model defined in huaweicloud sdk"""
+        """UpdateGeoipRuleResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 规则id
+        :type id: str
+        :param policyid: 策略id
+        :type policyid: str
+        :param geoip: 地理位置封禁区域： (CN： 中国,AB2： 海外,AB： 海外及港澳台,RU： 俄罗斯,CA： 加拿大,US： 美国,AU： 澳大利亚,IN： 印度,JP： 日本,UK： 英国,FR： 法国,DE： 德国,BR： 巴西,Ukraine： 乌克兰,North Korea： 朝鲜,The Republic of Korea： 韩国,Iran： 伊朗,Cuba： 古巴,Sultan： 苏丹,Syria： 叙利亚,Pakistan： 巴基斯坦,Palestine： 巴勒斯坦,Israel： 以色列,Iraq： 伊拉克,Afghanistan： 阿富汗,Libya： 利比亚,Turkey： 土耳其,Thailand： 泰国,Singapore： 新加坡,South Africa： 南非,Mexico： 墨西哥,Peru： 秘鲁,Indonesia： 印度尼西亚,GD： 广东,FJ： 福建,JL： 吉林,LN： 辽宁,TW： 台湾,GZ： 贵州,AH： 安徽,HL： 黑龙江,HA： 河南,SC： 四川,HE： 河北,YN： 云南,HB： 湖北,HI： 海南,QH： 青海,HN： 湖南,JX： 江西,SX： 山西,SN： 陕西,ZJ： 浙江,GS： 甘肃,JS： 江苏,SD： 山东,BJ： 北京,SH： 上海,TJ： 天津,CQ： 重庆,MO： 澳门,HK： 香港,NX： 宁夏,GX： 广西,XJ： 新疆,XZ： 西藏,NM： 内蒙古)
+        :type geoip: str
+        :param white: 防护动作：  - 0 拦截  - 1 放行  - 2 仅记录
+        :type white: int
+        """
         
         super(UpdateGeoipRuleResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class UpdateGeoipRuleResponse(SdkResponse):
         规则id
 
         :param id: The id of this UpdateGeoipRuleResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -95,7 +106,7 @@ class UpdateGeoipRuleResponse(SdkResponse):
         策略id
 
         :param policyid: The policyid of this UpdateGeoipRuleResponse.
-        :type: str
+        :type policyid: str
         """
         self._policyid = policyid
 
@@ -117,7 +128,7 @@ class UpdateGeoipRuleResponse(SdkResponse):
         地理位置封禁区域： (CN： 中国,AB2： 海外,AB： 海外及港澳台,RU： 俄罗斯,CA： 加拿大,US： 美国,AU： 澳大利亚,IN： 印度,JP： 日本,UK： 英国,FR： 法国,DE： 德国,BR： 巴西,Ukraine： 乌克兰,North Korea： 朝鲜,The Republic of Korea： 韩国,Iran： 伊朗,Cuba： 古巴,Sultan： 苏丹,Syria： 叙利亚,Pakistan： 巴基斯坦,Palestine： 巴勒斯坦,Israel： 以色列,Iraq： 伊拉克,Afghanistan： 阿富汗,Libya： 利比亚,Turkey： 土耳其,Thailand： 泰国,Singapore： 新加坡,South Africa： 南非,Mexico： 墨西哥,Peru： 秘鲁,Indonesia： 印度尼西亚,GD： 广东,FJ： 福建,JL： 吉林,LN： 辽宁,TW： 台湾,GZ： 贵州,AH： 安徽,HL： 黑龙江,HA： 河南,SC： 四川,HE： 河北,YN： 云南,HB： 湖北,HI： 海南,QH： 青海,HN： 湖南,JX： 江西,SX： 山西,SN： 陕西,ZJ： 浙江,GS： 甘肃,JS： 江苏,SD： 山东,BJ： 北京,SH： 上海,TJ： 天津,CQ： 重庆,MO： 澳门,HK： 香港,NX： 宁夏,GX： 广西,XJ： 新疆,XZ： 西藏,NM： 内蒙古)
 
         :param geoip: The geoip of this UpdateGeoipRuleResponse.
-        :type: str
+        :type geoip: str
         """
         self._geoip = geoip
 
@@ -139,7 +150,7 @@ class UpdateGeoipRuleResponse(SdkResponse):
         防护动作：  - 0 拦截  - 1 放行  - 2 仅记录
 
         :param white: The white of this UpdateGeoipRuleResponse.
-        :type: int
+        :type white: int
         """
         self._white = white
 

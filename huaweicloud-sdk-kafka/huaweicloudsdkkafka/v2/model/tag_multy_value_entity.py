@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TagMultyValueEntity:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class TagMultyValueEntity:
     }
 
     def __init__(self, key=None, values=None):
-        """TagMultyValueEntity - a model defined in huaweicloud sdk"""
+        """TagMultyValueEntity
+
+        The model defined in huaweicloud sdk
+
+        :param key: 键。最大长度36个unicode字符。  key不能为空，不能为空字符串。  不能包含下列字符：非打印字符ASCII(0-31)，“&#x3D;”,“*”,“&lt;”,“&gt;”,“\\”,“,”,“|”,“/”。
+        :type key: str
+        :param values: 值。每个值最大长度43个unicode字符。  value不能为空，可以空字符串。  不能包含下列字符：非打印字符ASCII(0-31), “&#x3D;”,“*”,“&lt;”,“&gt;”,“\\”,“,”,“|”,“/”。
+        :type values: list[str]
+        """
         
         
 
@@ -63,7 +70,7 @@ class TagMultyValueEntity:
         键。最大长度36个unicode字符。  key不能为空，不能为空字符串。  不能包含下列字符：非打印字符ASCII(0-31)，“=”,“*”,“<”,“>”,“\\”,“,”,“|”,“/”。
 
         :param key: The key of this TagMultyValueEntity.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -85,7 +92,7 @@ class TagMultyValueEntity:
         值。每个值最大长度43个unicode字符。  value不能为空，可以空字符串。  不能包含下列字符：非打印字符ASCII(0-31), “=”,“*”,“<”,“>”,“\\”,“,”,“|”,“/”。
 
         :param values: The values of this TagMultyValueEntity.
-        :type: list[str]
+        :type values: list[str]
         """
         self._values = values
 

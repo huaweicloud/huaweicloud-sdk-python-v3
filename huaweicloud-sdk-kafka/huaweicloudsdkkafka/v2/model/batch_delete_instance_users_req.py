@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchDeleteInstanceUsersReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchDeleteInstanceUsersReq:
     }
 
     def __init__(self, action=None, users=None):
-        """BatchDeleteInstanceUsersReq - a model defined in huaweicloud sdk"""
+        """BatchDeleteInstanceUsersReq
+
+        The model defined in huaweicloud sdk
+
+        :param action: 删除类型。当前只支持delete。
+        :type action: str
+        :param users: 用户列表。
+        :type users: list[str]
+        """
         
         
 
@@ -63,7 +70,7 @@ class BatchDeleteInstanceUsersReq:
         删除类型。当前只支持delete。
 
         :param action: The action of this BatchDeleteInstanceUsersReq.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -85,7 +92,7 @@ class BatchDeleteInstanceUsersReq:
         用户列表。
 
         :param users: The users of this BatchDeleteInstanceUsersReq.
-        :type: list[str]
+        :type users: list[str]
         """
         self._users = users
 

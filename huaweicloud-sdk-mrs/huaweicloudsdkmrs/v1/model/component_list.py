@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ComponentList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ComponentList:
     }
 
     def __init__(self, component_name=None):
-        """ComponentList - a model defined in huaweicloud sdk"""
+        """ComponentList
+
+        The model defined in huaweicloud sdk
+
+        :param component_name: 组件名称
+        :type component_name: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ComponentList:
         组件名称
 
         :param component_name: The component_name of this ComponentList.
-        :type: str
+        :type component_name: str
         """
         self._component_name = component_name
 

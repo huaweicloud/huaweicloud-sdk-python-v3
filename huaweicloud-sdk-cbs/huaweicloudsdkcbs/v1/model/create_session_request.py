@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateSessionRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateSessionRequest:
     }
 
     def __init__(self, qabot_id=None):
-        """CreateSessionRequest - a model defined in huaweicloud sdk"""
+        """CreateSessionRequest
+
+        The model defined in huaweicloud sdk
+
+        :param qabot_id: 机器人标识符。
+        :type qabot_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class CreateSessionRequest:
         机器人标识符。
 
         :param qabot_id: The qabot_id of this CreateSessionRequest.
-        :type: str
+        :type qabot_id: str
         """
         self._qabot_id = qabot_id
 

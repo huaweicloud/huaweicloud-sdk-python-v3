@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QuotaResourceParams:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class QuotaResourceParams:
     }
 
     def __init__(self, type=None, used=None, quota=None, min=None, max=None):
-        """QuotaResourceParams - a model defined in huaweicloud sdk"""
+        """QuotaResourceParams
+
+        The model defined in huaweicloud sdk
+
+        :param type: 资源类型server_groups：表示保护组资源类型。replications：表示复制对资源类型。
+        :type type: str
+        :param used: 已经使用的资源个数。
+        :type used: int
+        :param quota: 资源配额。-1：表示无穷大。
+        :type quota: int
+        :param min: 设置该资源配额允许的最小值。
+        :type min: int
+        :param max: 设置该资源配额允许的最大值。-1：表示无穷大。
+        :type max: int
+        """
         
         
 
@@ -73,7 +86,7 @@ class QuotaResourceParams:
         资源类型server_groups：表示保护组资源类型。replications：表示复制对资源类型。
 
         :param type: The type of this QuotaResourceParams.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -95,7 +108,7 @@ class QuotaResourceParams:
         已经使用的资源个数。
 
         :param used: The used of this QuotaResourceParams.
-        :type: int
+        :type used: int
         """
         self._used = used
 
@@ -117,7 +130,7 @@ class QuotaResourceParams:
         资源配额。-1：表示无穷大。
 
         :param quota: The quota of this QuotaResourceParams.
-        :type: int
+        :type quota: int
         """
         self._quota = quota
 
@@ -139,7 +152,7 @@ class QuotaResourceParams:
         设置该资源配额允许的最小值。
 
         :param min: The min of this QuotaResourceParams.
-        :type: int
+        :type min: int
         """
         self._min = min
 
@@ -161,7 +174,7 @@ class QuotaResourceParams:
         设置该资源配额允许的最大值。-1：表示无穷大。
 
         :param max: The max of this QuotaResourceParams.
-        :type: int
+        :type max: int
         """
         self._max = max
 

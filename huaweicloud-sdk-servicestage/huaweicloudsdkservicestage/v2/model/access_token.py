@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AccessToken:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class AccessToken:
     }
 
     def __init__(self, name=None, token=None, host=None):
-        """AccessToken - a model defined in huaweicloud sdk"""
+        """AccessToken
+
+        The model defined in huaweicloud sdk
+
+        :param name: 授权名称。
+        :type name: str
+        :param token: git仓库设置中创建的私有token。
+        :type token: str
+        :param host: git仓库的主机地址，如https://192.168.1.1:8080/gitlab，默认为官方主机。
+        :type host: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class AccessToken:
         授权名称。
 
         :param name: The name of this AccessToken.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -88,7 +97,7 @@ class AccessToken:
         git仓库设置中创建的私有token。
 
         :param token: The token of this AccessToken.
-        :type: str
+        :type token: str
         """
         self._token = token
 
@@ -110,7 +119,7 @@ class AccessToken:
         git仓库的主机地址，如https://192.168.1.1:8080/gitlab，默认为官方主机。
 
         :param host: The host of this AccessToken.
-        :type: str
+        :type host: str
         """
         self._host = host
 

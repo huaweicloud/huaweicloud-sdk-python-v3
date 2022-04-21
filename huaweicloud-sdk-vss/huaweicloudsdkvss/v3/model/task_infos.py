@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TaskInfos:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class TaskInfos:
     }
 
     def __init__(self, task_name=None, url=None, task_type=None):
-        """TaskInfos - a model defined in huaweicloud sdk"""
+        """TaskInfos
+
+        The model defined in huaweicloud sdk
+
+        :param task_name: 任务名称
+        :type task_name: str
+        :param url: 待扫描的目标网址
+        :type url: str
+        :param task_type: 扫描任务类型:   * normal - 普通任务   * monitor - 监测任务 
+        :type task_type: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class TaskInfos:
         任务名称
 
         :param task_name: The task_name of this TaskInfos.
-        :type: str
+        :type task_name: str
         """
         self._task_name = task_name
 
@@ -88,7 +97,7 @@ class TaskInfos:
         待扫描的目标网址
 
         :param url: The url of this TaskInfos.
-        :type: str
+        :type url: str
         """
         self._url = url
 
@@ -110,7 +119,7 @@ class TaskInfos:
         扫描任务类型:   * normal - 普通任务   * monitor - 监测任务 
 
         :param task_type: The task_type of this TaskInfos.
-        :type: str
+        :type task_type: str
         """
         self._task_type = task_type
 

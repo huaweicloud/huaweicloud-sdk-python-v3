@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteProcessReqBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class DeleteProcessReqBody:
     }
 
     def __init__(self, db_user_id=None, process_ids=None, user=None, database=None):
-        """DeleteProcessReqBody - a model defined in huaweicloud sdk"""
+        """DeleteProcessReqBody
+
+        The model defined in huaweicloud sdk
+
+        :param db_user_id: 数据库用户ID
+        :type db_user_id: str
+        :param process_ids: 会话ID列表。process_ids、user、database至少指定一个参数。
+        :type process_ids: list[str]
+        :param user: 用户
+        :type user: str
+        :param database: 数据库名称
+        :type database: str
+        """
         
         
 
@@ -72,7 +83,7 @@ class DeleteProcessReqBody:
         数据库用户ID
 
         :param db_user_id: The db_user_id of this DeleteProcessReqBody.
-        :type: str
+        :type db_user_id: str
         """
         self._db_user_id = db_user_id
 
@@ -94,7 +105,7 @@ class DeleteProcessReqBody:
         会话ID列表。process_ids、user、database至少指定一个参数。
 
         :param process_ids: The process_ids of this DeleteProcessReqBody.
-        :type: list[str]
+        :type process_ids: list[str]
         """
         self._process_ids = process_ids
 
@@ -116,7 +127,7 @@ class DeleteProcessReqBody:
         用户
 
         :param user: The user of this DeleteProcessReqBody.
-        :type: str
+        :type user: str
         """
         self._user = user
 
@@ -138,7 +149,7 @@ class DeleteProcessReqBody:
         数据库名称
 
         :param database: The database of this DeleteProcessReqBody.
-        :type: str
+        :type database: str
         """
         self._database = database
 

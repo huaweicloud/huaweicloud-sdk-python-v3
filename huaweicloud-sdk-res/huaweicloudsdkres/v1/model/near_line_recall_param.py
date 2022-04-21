@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NearLineRecallParam:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class NearLineRecallParam:
     }
 
     def __init__(self, time_limit=None, time_feature=None, retain_days=None, recall_fileds=None, item_cf_job_name=None):
-        """NearLineRecallParam - a model defined in huaweicloud sdk"""
+        """NearLineRecallParam
+
+        The model defined in huaweicloud sdk
+
+        :param time_limit: 时间过滤。
+        :type time_limit: bool
+        :param time_feature: 时间特征。
+        :type time_feature: str
+        :param retain_days: 保留期(天)。
+        :type retain_days: int
+        :param recall_fileds: 召回字段。
+        :type recall_fileds: list[:class:`huaweicloudsdkres.v1.RecallFiled`]
+        :param item_cf_job_name: 物品协同过滤作业名称。
+        :type item_cf_job_name: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class NearLineRecallParam:
         时间过滤。
 
         :param time_limit: The time_limit of this NearLineRecallParam.
-        :type: bool
+        :type time_limit: bool
         """
         self._time_limit = time_limit
 
@@ -100,7 +113,7 @@ class NearLineRecallParam:
         时间特征。
 
         :param time_feature: The time_feature of this NearLineRecallParam.
-        :type: str
+        :type time_feature: str
         """
         self._time_feature = time_feature
 
@@ -122,7 +135,7 @@ class NearLineRecallParam:
         保留期(天)。
 
         :param retain_days: The retain_days of this NearLineRecallParam.
-        :type: int
+        :type retain_days: int
         """
         self._retain_days = retain_days
 
@@ -133,7 +146,7 @@ class NearLineRecallParam:
         召回字段。
 
         :return: The recall_fileds of this NearLineRecallParam.
-        :rtype: list[RecallFiled]
+        :rtype: list[:class:`huaweicloudsdkres.v1.RecallFiled`]
         """
         return self._recall_fileds
 
@@ -144,7 +157,7 @@ class NearLineRecallParam:
         召回字段。
 
         :param recall_fileds: The recall_fileds of this NearLineRecallParam.
-        :type: list[RecallFiled]
+        :type recall_fileds: list[:class:`huaweicloudsdkres.v1.RecallFiled`]
         """
         self._recall_fileds = recall_fileds
 
@@ -166,7 +179,7 @@ class NearLineRecallParam:
         物品协同过滤作业名称。
 
         :param item_cf_job_name: The item_cf_job_name of this NearLineRecallParam.
-        :type: str
+        :type item_cf_job_name: str
         """
         self._item_cf_job_name = item_cf_job_name
 

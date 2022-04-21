@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowWebHookConfigRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowWebHookConfigRequest:
     }
 
     def __init__(self, corp_id=None, sp_id=None):
-        """ShowWebHookConfigRequest - a model defined in huaweicloud sdk"""
+        """ShowWebHookConfigRequest
+
+        The model defined in huaweicloud sdk
+
+        :param corp_id: 企业ID，与spId二者必填一个
+        :type corp_id: str
+        :param sp_id: sp管理员ID，与corpId二者必填一个
+        :type sp_id: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class ShowWebHookConfigRequest:
         企业ID，与spId二者必填一个
 
         :param corp_id: The corp_id of this ShowWebHookConfigRequest.
-        :type: str
+        :type corp_id: str
         """
         self._corp_id = corp_id
 
@@ -85,7 +92,7 @@ class ShowWebHookConfigRequest:
         sp管理员ID，与corpId二者必填一个
 
         :param sp_id: The sp_id of this ShowWebHookConfigRequest.
-        :type: str
+        :type sp_id: str
         """
         self._sp_id = sp_id
 

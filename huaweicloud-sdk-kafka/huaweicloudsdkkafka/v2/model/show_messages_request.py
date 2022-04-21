@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowMessagesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ShowMessagesRequest:
     }
 
     def __init__(self, instance_id=None, topic=None, start_time=None, end_time=None, limit=None, offset=None, partition=None):
-        """ShowMessagesRequest - a model defined in huaweicloud sdk"""
+        """ShowMessagesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param topic: Topic名称。
+        :type topic: str
+        :param start_time: 查询起始时间，为unix时间戳格式，默认值为0。
+        :type start_time: str
+        :param end_time: 查询结束时间，为unix时间戳格式，默认值为系统当前时间。
+        :type end_time: str
+        :param limit: 单页返回消息数，默认值为10。
+        :type limit: int
+        :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0。
+        :type offset: int
+        :param partition: 分区编号，默认值为-1，若传入值为-1，则查询所有分区。
+        :type partition: str
+        """
         
         
 
@@ -86,7 +103,7 @@ class ShowMessagesRequest:
         实例ID。
 
         :param instance_id: The instance_id of this ShowMessagesRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -108,7 +125,7 @@ class ShowMessagesRequest:
         Topic名称。
 
         :param topic: The topic of this ShowMessagesRequest.
-        :type: str
+        :type topic: str
         """
         self._topic = topic
 
@@ -130,7 +147,7 @@ class ShowMessagesRequest:
         查询起始时间，为unix时间戳格式，默认值为0。
 
         :param start_time: The start_time of this ShowMessagesRequest.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -152,7 +169,7 @@ class ShowMessagesRequest:
         查询结束时间，为unix时间戳格式，默认值为系统当前时间。
 
         :param end_time: The end_time of this ShowMessagesRequest.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -174,7 +191,7 @@ class ShowMessagesRequest:
         单页返回消息数，默认值为10。
 
         :param limit: The limit of this ShowMessagesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -196,7 +213,7 @@ class ShowMessagesRequest:
         偏移量，表示从此偏移量开始查询， offset大于等于0。
 
         :param offset: The offset of this ShowMessagesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -218,7 +235,7 @@ class ShowMessagesRequest:
         分区编号，默认值为-1，若传入值为-1，则查询所有分区。
 
         :param partition: The partition of this ShowMessagesRequest.
-        :type: str
+        :type partition: str
         """
         self._partition = partition
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NumFeatureReport:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class NumFeatureReport:
     }
 
     def __init__(self, avg=None, min=None, max=None, median=None, percents_agg=None, name=None, data_type=None):
-        """NumFeatureReport - a model defined in huaweicloud sdk"""
+        """NumFeatureReport
+
+        The model defined in huaweicloud sdk
+
+        :param avg: 平均值。
+        :type avg: float
+        :param min: 最小值。
+        :type min: float
+        :param max: 最大值。
+        :type max: float
+        :param median: 中位数。
+        :type median: float
+        :param percents_agg: 百分位统计。
+        :type percents_agg: str
+        :param name: 特征名。
+        :type name: str
+        :param data_type: 特征类型。
+        :type data_type: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class NumFeatureReport:
         平均值。
 
         :param avg: The avg of this NumFeatureReport.
-        :type: float
+        :type avg: float
         """
         self._avg = avg
 
@@ -110,7 +127,7 @@ class NumFeatureReport:
         最小值。
 
         :param min: The min of this NumFeatureReport.
-        :type: float
+        :type min: float
         """
         self._min = min
 
@@ -132,7 +149,7 @@ class NumFeatureReport:
         最大值。
 
         :param max: The max of this NumFeatureReport.
-        :type: float
+        :type max: float
         """
         self._max = max
 
@@ -154,7 +171,7 @@ class NumFeatureReport:
         中位数。
 
         :param median: The median of this NumFeatureReport.
-        :type: float
+        :type median: float
         """
         self._median = median
 
@@ -176,7 +193,7 @@ class NumFeatureReport:
         百分位统计。
 
         :param percents_agg: The percents_agg of this NumFeatureReport.
-        :type: str
+        :type percents_agg: str
         """
         self._percents_agg = percents_agg
 
@@ -198,7 +215,7 @@ class NumFeatureReport:
         特征名。
 
         :param name: The name of this NumFeatureReport.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -220,7 +237,7 @@ class NumFeatureReport:
         特征类型。
 
         :param data_type: The data_type of this NumFeatureReport.
-        :type: str
+        :type data_type: str
         """
         self._data_type = data_type
 

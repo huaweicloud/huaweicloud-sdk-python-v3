@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTrackersResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListTrackersResponse(SdkResponse):
     }
 
     def __init__(self, trackers=None):
-        """ListTrackersResponse - a model defined in huaweicloud sdk"""
+        """ListTrackersResponse
+
+        The model defined in huaweicloud sdk
+
+        :param trackers: 本次查询追踪器列表返回的追踪器数组。
+        :type trackers: list[:class:`huaweicloudsdkcts.v3.TrackerResponseBody`]
+        """
         
         super(ListTrackersResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListTrackersResponse(SdkResponse):
         本次查询追踪器列表返回的追踪器数组。
 
         :return: The trackers of this ListTrackersResponse.
-        :rtype: list[TrackerResponseBody]
+        :rtype: list[:class:`huaweicloudsdkcts.v3.TrackerResponseBody`]
         """
         return self._trackers
 
@@ -58,7 +63,7 @@ class ListTrackersResponse(SdkResponse):
         本次查询追踪器列表返回的追踪器数组。
 
         :param trackers: The trackers of this ListTrackersResponse.
-        :type: list[TrackerResponseBody]
+        :type trackers: list[:class:`huaweicloudsdkcts.v3.TrackerResponseBody`]
         """
         self._trackers = trackers
 

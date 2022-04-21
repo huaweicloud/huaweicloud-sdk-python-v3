@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowFunctionAsyncInvokeConfigResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ShowFunctionAsyncInvokeConfigResponse(SdkResponse):
     }
 
     def __init__(self, func_urn=None, max_async_event_age_in_seconds=None, max_async_retry_attempts=None, destination_config=None, created_time=None, last_modified=None):
-        """ShowFunctionAsyncInvokeConfigResponse - a model defined in huaweicloud sdk"""
+        """ShowFunctionAsyncInvokeConfigResponse
+
+        The model defined in huaweicloud sdk
+
+        :param func_urn: 函数URN。
+        :type func_urn: str
+        :param max_async_event_age_in_seconds: 消息最大存活时长，取值范围[60，86400]。单位：秒。
+        :type max_async_event_age_in_seconds: int
+        :param max_async_retry_attempts: 异步调用失败后的最大重试次数，默认值为3。取值范围[0，8]。
+        :type max_async_retry_attempts: int
+        :param destination_config: 
+        :type destination_config: :class:`huaweicloudsdkfunctiongraph.v2.FuncAsyncDestinationConfig`
+        :param created_time: 异步调用配置的创建时间。
+        :type created_time: str
+        :param last_modified: 异步调用配置的最后更改时间。
+        :type last_modified: str
+        """
         
         super(ShowFunctionAsyncInvokeConfigResponse, self).__init__()
 
@@ -83,7 +98,7 @@ class ShowFunctionAsyncInvokeConfigResponse(SdkResponse):
         函数URN。
 
         :param func_urn: The func_urn of this ShowFunctionAsyncInvokeConfigResponse.
-        :type: str
+        :type func_urn: str
         """
         self._func_urn = func_urn
 
@@ -105,7 +120,7 @@ class ShowFunctionAsyncInvokeConfigResponse(SdkResponse):
         消息最大存活时长，取值范围[60，86400]。单位：秒。
 
         :param max_async_event_age_in_seconds: The max_async_event_age_in_seconds of this ShowFunctionAsyncInvokeConfigResponse.
-        :type: int
+        :type max_async_event_age_in_seconds: int
         """
         self._max_async_event_age_in_seconds = max_async_event_age_in_seconds
 
@@ -127,7 +142,7 @@ class ShowFunctionAsyncInvokeConfigResponse(SdkResponse):
         异步调用失败后的最大重试次数，默认值为3。取值范围[0，8]。
 
         :param max_async_retry_attempts: The max_async_retry_attempts of this ShowFunctionAsyncInvokeConfigResponse.
-        :type: int
+        :type max_async_retry_attempts: int
         """
         self._max_async_retry_attempts = max_async_retry_attempts
 
@@ -137,7 +152,7 @@ class ShowFunctionAsyncInvokeConfigResponse(SdkResponse):
 
 
         :return: The destination_config of this ShowFunctionAsyncInvokeConfigResponse.
-        :rtype: FuncAsyncDestinationConfig
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.FuncAsyncDestinationConfig`
         """
         return self._destination_config
 
@@ -147,7 +162,7 @@ class ShowFunctionAsyncInvokeConfigResponse(SdkResponse):
 
 
         :param destination_config: The destination_config of this ShowFunctionAsyncInvokeConfigResponse.
-        :type: FuncAsyncDestinationConfig
+        :type destination_config: :class:`huaweicloudsdkfunctiongraph.v2.FuncAsyncDestinationConfig`
         """
         self._destination_config = destination_config
 
@@ -169,7 +184,7 @@ class ShowFunctionAsyncInvokeConfigResponse(SdkResponse):
         异步调用配置的创建时间。
 
         :param created_time: The created_time of this ShowFunctionAsyncInvokeConfigResponse.
-        :type: str
+        :type created_time: str
         """
         self._created_time = created_time
 
@@ -191,7 +206,7 @@ class ShowFunctionAsyncInvokeConfigResponse(SdkResponse):
         异步调用配置的最后更改时间。
 
         :param last_modified: The last_modified of this ShowFunctionAsyncInvokeConfigResponse.
-        :type: str
+        :type last_modified: str
         """
         self._last_modified = last_modified
 

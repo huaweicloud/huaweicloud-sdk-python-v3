@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateFirewallRuleOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateFirewallRuleOption:
     }
 
     def __init__(self, egress_firewall_policy=None, ingress_firewall_policy=None):
-        """UpdateFirewallRuleOption - a model defined in huaweicloud sdk"""
+        """UpdateFirewallRuleOption
+
+        The model defined in huaweicloud sdk
+
+        :param egress_firewall_policy: 
+        :type egress_firewall_policy: :class:`huaweicloudsdkiec.v1.FirewallPolicy`
+        :param ingress_firewall_policy: 
+        :type ingress_firewall_policy: :class:`huaweicloudsdkiec.v1.FirewallPolicy`
+        """
         
         
 
@@ -49,7 +56,7 @@ class UpdateFirewallRuleOption:
 
 
         :return: The egress_firewall_policy of this UpdateFirewallRuleOption.
-        :rtype: FirewallPolicy
+        :rtype: :class:`huaweicloudsdkiec.v1.FirewallPolicy`
         """
         return self._egress_firewall_policy
 
@@ -59,7 +66,7 @@ class UpdateFirewallRuleOption:
 
 
         :param egress_firewall_policy: The egress_firewall_policy of this UpdateFirewallRuleOption.
-        :type: FirewallPolicy
+        :type egress_firewall_policy: :class:`huaweicloudsdkiec.v1.FirewallPolicy`
         """
         self._egress_firewall_policy = egress_firewall_policy
 
@@ -69,7 +76,7 @@ class UpdateFirewallRuleOption:
 
 
         :return: The ingress_firewall_policy of this UpdateFirewallRuleOption.
-        :rtype: FirewallPolicy
+        :rtype: :class:`huaweicloudsdkiec.v1.FirewallPolicy`
         """
         return self._ingress_firewall_policy
 
@@ -79,7 +86,7 @@ class UpdateFirewallRuleOption:
 
 
         :param ingress_firewall_policy: The ingress_firewall_policy of this UpdateFirewallRuleOption.
-        :type: FirewallPolicy
+        :type ingress_firewall_policy: :class:`huaweicloudsdkiec.v1.FirewallPolicy`
         """
         self._ingress_firewall_policy = ingress_firewall_policy
 

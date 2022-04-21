@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchDeleteWorkflowsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchDeleteWorkflowsResponse(SdkResponse):
     }
 
     def __init__(self, success=None, fail=None):
-        """BatchDeleteWorkflowsResponse - a model defined in huaweicloud sdk"""
+        """BatchDeleteWorkflowsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param success: 成功流程URN列表
+        :type success: list[str]
+        :param fail: 错误流程详情
+        :type fail: list[:class:`huaweicloudsdkfunctiongraph.v2.OperateErrorInfo`]
+        """
         
         super(BatchDeleteWorkflowsResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class BatchDeleteWorkflowsResponse(SdkResponse):
         成功流程URN列表
 
         :param success: The success of this BatchDeleteWorkflowsResponse.
-        :type: list[str]
+        :type success: list[str]
         """
         self._success = success
 
@@ -74,7 +81,7 @@ class BatchDeleteWorkflowsResponse(SdkResponse):
         错误流程详情
 
         :return: The fail of this BatchDeleteWorkflowsResponse.
-        :rtype: list[OperateErrorInfo]
+        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.OperateErrorInfo`]
         """
         return self._fail
 
@@ -85,7 +92,7 @@ class BatchDeleteWorkflowsResponse(SdkResponse):
         错误流程详情
 
         :param fail: The fail of this BatchDeleteWorkflowsResponse.
-        :type: list[OperateErrorInfo]
+        :type fail: list[:class:`huaweicloudsdkfunctiongraph.v2.OperateErrorInfo`]
         """
         self._fail = fail
 

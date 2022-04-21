@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DatapointForBatchMetric:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class DatapointForBatchMetric:
     }
 
     def __init__(self, max=None, min=None, average=None, sum=None, variance=None, timestamp=None):
-        """DatapointForBatchMetric - a model defined in huaweicloud sdk"""
+        """DatapointForBatchMetric
+
+        The model defined in huaweicloud sdk
+
+        :param max: 聚合周期内指标数据的最大值。
+        :type max: float
+        :param min: 聚合周期内指标数据的最小值。
+        :type min: float
+        :param average: 聚合周期内指标数据的平均值。
+        :type average: float
+        :param sum: 聚合周期内指标数据的求和值。
+        :type sum: float
+        :param variance: 聚合周期内指标数据的方差。
+        :type variance: float
+        :param timestamp: 指标采集时间，UNIX时间戳，单位毫秒。
+        :type timestamp: int
+        """
         
         
 
@@ -82,7 +97,7 @@ class DatapointForBatchMetric:
         聚合周期内指标数据的最大值。
 
         :param max: The max of this DatapointForBatchMetric.
-        :type: float
+        :type max: float
         """
         self._max = max
 
@@ -104,7 +119,7 @@ class DatapointForBatchMetric:
         聚合周期内指标数据的最小值。
 
         :param min: The min of this DatapointForBatchMetric.
-        :type: float
+        :type min: float
         """
         self._min = min
 
@@ -126,7 +141,7 @@ class DatapointForBatchMetric:
         聚合周期内指标数据的平均值。
 
         :param average: The average of this DatapointForBatchMetric.
-        :type: float
+        :type average: float
         """
         self._average = average
 
@@ -148,7 +163,7 @@ class DatapointForBatchMetric:
         聚合周期内指标数据的求和值。
 
         :param sum: The sum of this DatapointForBatchMetric.
-        :type: float
+        :type sum: float
         """
         self._sum = sum
 
@@ -170,7 +185,7 @@ class DatapointForBatchMetric:
         聚合周期内指标数据的方差。
 
         :param variance: The variance of this DatapointForBatchMetric.
-        :type: float
+        :type variance: float
         """
         self._variance = variance
 
@@ -192,7 +207,7 @@ class DatapointForBatchMetric:
         指标采集时间，UNIX时间戳，单位毫秒。
 
         :param timestamp: The timestamp of this DatapointForBatchMetric.
-        :type: int
+        :type timestamp: int
         """
         self._timestamp = timestamp
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowResourceRelationsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowResourceRelationsRequest:
     }
 
     def __init__(self, resource_id=None, direction=None, limit=None, marker=None):
-        """ShowResourceRelationsRequest - a model defined in huaweicloud sdk"""
+        """ShowResourceRelationsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param resource_id: 资源ID
+        :type resource_id: str
+        :param direction: 资源关系的指向
+        :type direction: str
+        :param limit: 最大的返回数量
+        :type limit: int
+        :param marker: 分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
+        :type marker: str
+        """
         
         
 
@@ -71,7 +82,7 @@ class ShowResourceRelationsRequest:
         资源ID
 
         :param resource_id: The resource_id of this ShowResourceRelationsRequest.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -93,7 +104,7 @@ class ShowResourceRelationsRequest:
         资源关系的指向
 
         :param direction: The direction of this ShowResourceRelationsRequest.
-        :type: str
+        :type direction: str
         """
         self._direction = direction
 
@@ -115,7 +126,7 @@ class ShowResourceRelationsRequest:
         最大的返回数量
 
         :param limit: The limit of this ShowResourceRelationsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -137,7 +148,7 @@ class ShowResourceRelationsRequest:
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
         :param marker: The marker of this ShowResourceRelationsRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 

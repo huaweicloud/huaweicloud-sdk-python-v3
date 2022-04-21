@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCommonPoolsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListCommonPoolsResponse(SdkResponse):
     }
 
     def __init__(self, common_pools=None, request_id=None):
-        """ListCommonPoolsResponse - a model defined in huaweicloud sdk"""
+        """ListCommonPoolsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param common_pools: 功能说明：公共池对象
+        :type common_pools: list[:class:`huaweicloudsdkeip.v3.CommonPoolDict`]
+        :param request_id: 本次请求的编号
+        :type request_id: str
+        """
         
         super(ListCommonPoolsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListCommonPoolsResponse(SdkResponse):
         功能说明：公共池对象
 
         :return: The common_pools of this ListCommonPoolsResponse.
-        :rtype: list[CommonPoolDict]
+        :rtype: list[:class:`huaweicloudsdkeip.v3.CommonPoolDict`]
         """
         return self._common_pools
 
@@ -63,7 +70,7 @@ class ListCommonPoolsResponse(SdkResponse):
         功能说明：公共池对象
 
         :param common_pools: The common_pools of this ListCommonPoolsResponse.
-        :type: list[CommonPoolDict]
+        :type common_pools: list[:class:`huaweicloudsdkeip.v3.CommonPoolDict`]
         """
         self._common_pools = common_pools
 
@@ -85,7 +92,7 @@ class ListCommonPoolsResponse(SdkResponse):
         本次请求的编号
 
         :param request_id: The request_id of this ListCommonPoolsResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 

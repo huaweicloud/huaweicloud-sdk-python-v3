@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BalanceTypePay:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BalanceTypePay:
     }
 
     def __init__(self, balance_type_id=None, deduct_amount=None):
-        """BalanceTypePay - a model defined in huaweicloud sdk"""
+        """BalanceTypePay
+
+        The model defined in huaweicloud sdk
+
+        :param balance_type_id: 账户类型。 BALANCE_TYPE_DEBIT：现金账户BALANCE_TYPE_CREDIT：信用账户BALANCE_TYPE_BONUS：奖励账户（该账户已下线）BALANCE_TYPE_COUPON：代金券账户BALANCE_TYPE_DEBIT_RATE：折扣账户
+        :type balance_type_id: str
+        :param deduct_amount: 支出金额。 单位：分
+        :type deduct_amount: float
+        """
         
         
 
@@ -63,7 +70,7 @@ class BalanceTypePay:
         账户类型。 BALANCE_TYPE_DEBIT：现金账户BALANCE_TYPE_CREDIT：信用账户BALANCE_TYPE_BONUS：奖励账户（该账户已下线）BALANCE_TYPE_COUPON：代金券账户BALANCE_TYPE_DEBIT_RATE：折扣账户
 
         :param balance_type_id: The balance_type_id of this BalanceTypePay.
-        :type: str
+        :type balance_type_id: str
         """
         self._balance_type_id = balance_type_id
 
@@ -85,7 +92,7 @@ class BalanceTypePay:
         支出金额。 单位：分
 
         :param deduct_amount: The deduct_amount of this BalanceTypePay.
-        :type: float
+        :type deduct_amount: float
         """
         self._deduct_amount = deduct_amount
 

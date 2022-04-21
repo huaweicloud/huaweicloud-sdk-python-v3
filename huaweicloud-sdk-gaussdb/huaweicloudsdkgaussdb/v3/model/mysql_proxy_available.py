@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MysqlProxyAvailable:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class MysqlProxyAvailable:
     }
 
     def __init__(self, code=None, description=None):
-        """MysqlProxyAvailable - a model defined in huaweicloud sdk"""
+        """MysqlProxyAvailable
+
+        The model defined in huaweicloud sdk
+
+        :param code: 可用区编码。
+        :type code: str
+        :param description: 可用区描述。
+        :type description: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class MysqlProxyAvailable:
         可用区编码。
 
         :param code: The code of this MysqlProxyAvailable.
-        :type: str
+        :type code: str
         """
         self._code = code
 
@@ -85,7 +92,7 @@ class MysqlProxyAvailable:
         可用区描述。
 
         :param description: The description of this MysqlProxyAvailable.
-        :type: str
+        :type description: str
         """
         self._description = description
 

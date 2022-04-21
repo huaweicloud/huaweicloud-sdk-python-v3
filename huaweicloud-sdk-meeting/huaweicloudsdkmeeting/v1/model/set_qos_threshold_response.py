@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SetQosThresholdResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class SetQosThresholdResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None):
-        """SetQosThresholdResponse - a model defined in huaweicloud sdk"""
+        """SetQosThresholdResponse
+
+        The model defined in huaweicloud sdk
+
+        :param code: 返回码
+        :type code: str
+        :param message: 返回信息
+        :type message: str
+        """
         
         super(SetQosThresholdResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class SetQosThresholdResponse(SdkResponse):
         返回码
 
         :param code: The code of this SetQosThresholdResponse.
-        :type: str
+        :type code: str
         """
         self._code = code
 
@@ -85,7 +92,7 @@ class SetQosThresholdResponse(SdkResponse):
         返回信息
 
         :param message: The message of this SetQosThresholdResponse.
-        :type: str
+        :type message: str
         """
         self._message = message
 

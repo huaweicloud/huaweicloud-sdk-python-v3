@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Resource:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class Resource:
     }
 
     def __init__(self, id=None, name=None, type=None, provider=None, region_id=None, domain_id=None, project_id=None, ep_id=None, ep_name=None, tags=None):
-        """Resource - a model defined in huaweicloud sdk"""
+        """Resource
+
+        The model defined in huaweicloud sdk
+
+        :param id: 资源ID。
+        :type id: str
+        :param name: 资源名称；最大长度255个字符。
+        :type name: str
+        :param type: 资源类型。
+        :type type: str
+        :param provider: 云服务名称。
+        :type provider: str
+        :param region_id: 区域。
+        :type region_id: str
+        :param domain_id: 资源所属租户账号ID。
+        :type domain_id: str
+        :param project_id: 资源所属项目ID。
+        :type project_id: str
+        :param ep_id: 企业项目ID。
+        :type ep_id: str
+        :param ep_name: 企业项目名称。
+        :type ep_name: str
+        :param tags: 资源标签 1、最多50个key/values对。 2、values：最大255字符。 3、取值范围：字母数字、空格、“+”、“-”、“&#x3D;”、“.”、“_”、“:”、“/”、“@”。
+        :type tags: object
+        """
         
         
 
@@ -98,7 +121,7 @@ class Resource:
         资源ID。
 
         :param id: The id of this Resource.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -120,7 +143,7 @@ class Resource:
         资源名称；最大长度255个字符。
 
         :param name: The name of this Resource.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -142,7 +165,7 @@ class Resource:
         资源类型。
 
         :param type: The type of this Resource.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -164,7 +187,7 @@ class Resource:
         云服务名称。
 
         :param provider: The provider of this Resource.
-        :type: str
+        :type provider: str
         """
         self._provider = provider
 
@@ -186,7 +209,7 @@ class Resource:
         区域。
 
         :param region_id: The region_id of this Resource.
-        :type: str
+        :type region_id: str
         """
         self._region_id = region_id
 
@@ -208,7 +231,7 @@ class Resource:
         资源所属租户账号ID。
 
         :param domain_id: The domain_id of this Resource.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -230,7 +253,7 @@ class Resource:
         资源所属项目ID。
 
         :param project_id: The project_id of this Resource.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -252,7 +275,7 @@ class Resource:
         企业项目ID。
 
         :param ep_id: The ep_id of this Resource.
-        :type: str
+        :type ep_id: str
         """
         self._ep_id = ep_id
 
@@ -274,7 +297,7 @@ class Resource:
         企业项目名称。
 
         :param ep_name: The ep_name of this Resource.
-        :type: str
+        :type ep_name: str
         """
         self._ep_name = ep_name
 
@@ -296,7 +319,7 @@ class Resource:
         资源标签 1、最多50个key/values对。 2、values：最大255字符。 3、取值范围：字母数字、空格、“+”、“-”、“=”、“.”、“_”、“:”、“/”、“@”。
 
         :param tags: The tags of this Resource.
-        :type: object
+        :type tags: object
         """
         self._tags = tags
 

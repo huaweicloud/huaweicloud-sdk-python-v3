@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowIpWhitelistResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowIpWhitelistResponse(SdkResponse):
     }
 
     def __init__(self, enable_whitelist=None, whitelist=None):
-        """ShowIpWhitelistResponse - a model defined in huaweicloud sdk"""
+        """ShowIpWhitelistResponse
+
+        The model defined in huaweicloud sdk
+
+        :param enable_whitelist: 是否启用白名单（true/false）。
+        :type enable_whitelist: bool
+        :param whitelist: IP白名单分组列表。
+        :type whitelist: list[:class:`huaweicloudsdkdcs.v2.Whitelist`]
+        """
         
         super(ShowIpWhitelistResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ShowIpWhitelistResponse(SdkResponse):
         是否启用白名单（true/false）。
 
         :param enable_whitelist: The enable_whitelist of this ShowIpWhitelistResponse.
-        :type: bool
+        :type enable_whitelist: bool
         """
         self._enable_whitelist = enable_whitelist
 
@@ -74,7 +81,7 @@ class ShowIpWhitelistResponse(SdkResponse):
         IP白名单分组列表。
 
         :return: The whitelist of this ShowIpWhitelistResponse.
-        :rtype: list[Whitelist]
+        :rtype: list[:class:`huaweicloudsdkdcs.v2.Whitelist`]
         """
         return self._whitelist
 
@@ -85,7 +92,7 @@ class ShowIpWhitelistResponse(SdkResponse):
         IP白名单分组列表。
 
         :param whitelist: The whitelist of this ShowIpWhitelistResponse.
-        :type: list[Whitelist]
+        :type whitelist: list[:class:`huaweicloudsdkdcs.v2.Whitelist`]
         """
         self._whitelist = whitelist
 

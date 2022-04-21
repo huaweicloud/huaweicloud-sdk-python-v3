@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListHookInstancesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListHookInstancesResponse(SdkResponse):
     }
 
     def __init__(self, instance_hanging_info=None):
-        """ListHookInstancesResponse - a model defined in huaweicloud sdk"""
+        """ListHookInstancesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param instance_hanging_info: 伸缩实例生命周期挂钩列表。
+        :type instance_hanging_info: list[:class:`huaweicloudsdkas.v1.InstanceHangingInfos`]
+        """
         
         super(ListHookInstancesResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListHookInstancesResponse(SdkResponse):
         伸缩实例生命周期挂钩列表。
 
         :return: The instance_hanging_info of this ListHookInstancesResponse.
-        :rtype: list[InstanceHangingInfos]
+        :rtype: list[:class:`huaweicloudsdkas.v1.InstanceHangingInfos`]
         """
         return self._instance_hanging_info
 
@@ -58,7 +63,7 @@ class ListHookInstancesResponse(SdkResponse):
         伸缩实例生命周期挂钩列表。
 
         :param instance_hanging_info: The instance_hanging_info of this ListHookInstancesResponse.
-        :type: list[InstanceHangingInfos]
+        :type instance_hanging_info: list[:class:`huaweicloudsdkas.v1.InstanceHangingInfos`]
         """
         self._instance_hanging_info = instance_hanging_info
 

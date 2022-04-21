@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdatePrePaidBandwidthResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdatePrePaidBandwidthResponse(SdkResponse):
     }
 
     def __init__(self, bandwidth=None, order_id=None):
-        """UpdatePrePaidBandwidthResponse - a model defined in huaweicloud sdk"""
+        """UpdatePrePaidBandwidthResponse
+
+        The model defined in huaweicloud sdk
+
+        :param bandwidth: 
+        :type bandwidth: :class:`huaweicloudsdkeip.v2.BandwidthResp`
+        :param order_id: 订单号（包周期场景返回该字段）
+        :type order_id: str
+        """
         
         super(UpdatePrePaidBandwidthResponse, self).__init__()
 
@@ -51,7 +58,7 @@ class UpdatePrePaidBandwidthResponse(SdkResponse):
 
 
         :return: The bandwidth of this UpdatePrePaidBandwidthResponse.
-        :rtype: BandwidthResp
+        :rtype: :class:`huaweicloudsdkeip.v2.BandwidthResp`
         """
         return self._bandwidth
 
@@ -61,7 +68,7 @@ class UpdatePrePaidBandwidthResponse(SdkResponse):
 
 
         :param bandwidth: The bandwidth of this UpdatePrePaidBandwidthResponse.
-        :type: BandwidthResp
+        :type bandwidth: :class:`huaweicloudsdkeip.v2.BandwidthResp`
         """
         self._bandwidth = bandwidth
 
@@ -83,7 +90,7 @@ class UpdatePrePaidBandwidthResponse(SdkResponse):
         订单号（包周期场景返回该字段）
 
         :param order_id: The order_id of this UpdatePrePaidBandwidthResponse.
-        :type: str
+        :type order_id: str
         """
         self._order_id = order_id
 

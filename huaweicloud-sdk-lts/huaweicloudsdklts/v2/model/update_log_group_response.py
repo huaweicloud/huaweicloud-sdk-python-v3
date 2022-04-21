@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateLogGroupResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UpdateLogGroupResponse(SdkResponse):
     }
 
     def __init__(self, creation_time=None, log_group_name=None, log_group_id=None, ttl_in_days=None):
-        """UpdateLogGroupResponse - a model defined in huaweicloud sdk"""
+        """UpdateLogGroupResponse
+
+        The model defined in huaweicloud sdk
+
+        :param creation_time: 创建该日志组的时间， 毫秒级。
+        :type creation_time: int
+        :param log_group_name: 日志组的名称。
+        :type log_group_name: str
+        :param log_group_id: 日志组ID。
+        :type log_group_id: str
+        :param ttl_in_days: 日志存储时间（天）。
+        :type ttl_in_days: int
+        """
         
         super(UpdateLogGroupResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class UpdateLogGroupResponse(SdkResponse):
         创建该日志组的时间， 毫秒级。
 
         :param creation_time: The creation_time of this UpdateLogGroupResponse.
-        :type: int
+        :type creation_time: int
         """
         self._creation_time = creation_time
 
@@ -95,7 +106,7 @@ class UpdateLogGroupResponse(SdkResponse):
         日志组的名称。
 
         :param log_group_name: The log_group_name of this UpdateLogGroupResponse.
-        :type: str
+        :type log_group_name: str
         """
         self._log_group_name = log_group_name
 
@@ -117,7 +128,7 @@ class UpdateLogGroupResponse(SdkResponse):
         日志组ID。
 
         :param log_group_id: The log_group_id of this UpdateLogGroupResponse.
-        :type: str
+        :type log_group_id: str
         """
         self._log_group_id = log_group_id
 
@@ -139,7 +150,7 @@ class UpdateLogGroupResponse(SdkResponse):
         日志存储时间（天）。
 
         :param ttl_in_days: The ttl_in_days of this UpdateLogGroupResponse.
-        :type: int
+        :type ttl_in_days: int
         """
         self._ttl_in_days = ttl_in_days
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IssueCompletionRateResponseV4:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class IssueCompletionRateResponseV4:
     }
 
     def __init__(self, issue_status=None, tracker_id=None):
-        """IssueCompletionRateResponseV4 - a model defined in huaweicloud sdk"""
+        """IssueCompletionRateResponseV4
+
+        The model defined in huaweicloud sdk
+
+        :param issue_status: 
+        :type issue_status: :class:`huaweicloudsdkprojectman.v4.IssueStatusResponseV4`
+        :param tracker_id: 工作项类型,2任务/task,3缺陷/bug,5epic,6feature,7story
+        :type tracker_id: int
+        """
         
         
 
@@ -51,7 +58,7 @@ class IssueCompletionRateResponseV4:
 
 
         :return: The issue_status of this IssueCompletionRateResponseV4.
-        :rtype: IssueStatusResponseV4
+        :rtype: :class:`huaweicloudsdkprojectman.v4.IssueStatusResponseV4`
         """
         return self._issue_status
 
@@ -61,7 +68,7 @@ class IssueCompletionRateResponseV4:
 
 
         :param issue_status: The issue_status of this IssueCompletionRateResponseV4.
-        :type: IssueStatusResponseV4
+        :type issue_status: :class:`huaweicloudsdkprojectman.v4.IssueStatusResponseV4`
         """
         self._issue_status = issue_status
 
@@ -83,7 +90,7 @@ class IssueCompletionRateResponseV4:
         工作项类型,2任务/task,3缺陷/bug,5epic,6feature,7story
 
         :param tracker_id: The tracker_id of this IssueCompletionRateResponseV4.
-        :type: int
+        :type tracker_id: int
         """
         self._tracker_id = tracker_id
 

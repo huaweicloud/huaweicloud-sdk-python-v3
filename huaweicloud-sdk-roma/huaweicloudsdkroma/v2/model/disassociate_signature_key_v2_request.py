@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DisassociateSignatureKeyV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DisassociateSignatureKeyV2Request:
     }
 
     def __init__(self, instance_id=None, sign_bindings_id=None):
-        """DisassociateSignatureKeyV2Request - a model defined in huaweicloud sdk"""
+        """DisassociateSignatureKeyV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param sign_bindings_id: API与签名密钥的绑定关系编号
+        :type sign_bindings_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class DisassociateSignatureKeyV2Request:
         实例ID
 
         :param instance_id: The instance_id of this DisassociateSignatureKeyV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -83,7 +90,7 @@ class DisassociateSignatureKeyV2Request:
         API与签名密钥的绑定关系编号
 
         :param sign_bindings_id: The sign_bindings_id of this DisassociateSignatureKeyV2Request.
-        :type: str
+        :type sign_bindings_id: str
         """
         self._sign_bindings_id = sign_bindings_id
 

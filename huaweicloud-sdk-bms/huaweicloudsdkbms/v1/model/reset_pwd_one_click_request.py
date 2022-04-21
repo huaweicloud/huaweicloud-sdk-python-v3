@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResetPwdOneClickRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ResetPwdOneClickRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """ResetPwdOneClickRequest - a model defined in huaweicloud sdk"""
+        """ResetPwdOneClickRequest
+
+        The model defined in huaweicloud sdk
+
+        :param server_id: 裸金属服务器ID。可以从裸金属服务器控制台查询，或者通过调用7.3.4-查询裸金属服务器列表（OpenStack原生）API获取。
+        :type server_id: str
+        :param body: Body of the ResetPwdOneClickRequest
+        :type body: :class:`huaweicloudsdkbms.v1.ResetPasswordBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class ResetPwdOneClickRequest:
         裸金属服务器ID。可以从裸金属服务器控制台查询，或者通过调用7.3.4-查询裸金属服务器列表（OpenStack原生）API获取。
 
         :param server_id: The server_id of this ResetPwdOneClickRequest.
-        :type: str
+        :type server_id: str
         """
         self._server_id = server_id
 
@@ -72,7 +79,7 @@ class ResetPwdOneClickRequest:
 
 
         :return: The body of this ResetPwdOneClickRequest.
-        :rtype: ResetPasswordBody
+        :rtype: :class:`huaweicloudsdkbms.v1.ResetPasswordBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class ResetPwdOneClickRequest:
 
 
         :param body: The body of this ResetPwdOneClickRequest.
-        :type: ResetPasswordBody
+        :type body: :class:`huaweicloudsdkbms.v1.ResetPasswordBody`
         """
         self._body = body
 

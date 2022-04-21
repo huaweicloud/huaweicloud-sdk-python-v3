@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AggregateMetric:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class AggregateMetric:
     }
 
     def __init__(self, inputs=None, metric_name=None, expression=None):
-        """AggregateMetric - a model defined in huaweicloud sdk"""
+        """AggregateMetric
+
+        The model defined in huaweicloud sdk
+
+        :param inputs: 声明属性作为表达式参数
+        :type inputs: list[:class:`huaweicloudsdkiotanalytics.v1.InputParam`]
+        :param metric_name: 指标名称
+        :type metric_name: str
+        :param expression: 表达式
+        :type expression: str
+        """
         
         
 
@@ -54,7 +63,7 @@ class AggregateMetric:
         声明属性作为表达式参数
 
         :return: The inputs of this AggregateMetric.
-        :rtype: list[InputParam]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.InputParam`]
         """
         return self._inputs
 
@@ -65,7 +74,7 @@ class AggregateMetric:
         声明属性作为表达式参数
 
         :param inputs: The inputs of this AggregateMetric.
-        :type: list[InputParam]
+        :type inputs: list[:class:`huaweicloudsdkiotanalytics.v1.InputParam`]
         """
         self._inputs = inputs
 
@@ -87,7 +96,7 @@ class AggregateMetric:
         指标名称
 
         :param metric_name: The metric_name of this AggregateMetric.
-        :type: str
+        :type metric_name: str
         """
         self._metric_name = metric_name
 
@@ -109,7 +118,7 @@ class AggregateMetric:
         表达式
 
         :param expression: The expression of this AggregateMetric.
-        :type: str
+        :type expression: str
         """
         self._expression = expression
 

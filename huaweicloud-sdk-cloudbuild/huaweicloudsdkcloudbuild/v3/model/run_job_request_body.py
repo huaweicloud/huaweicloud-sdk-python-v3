@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunJobRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class RunJobRequestBody:
     }
 
     def __init__(self, job_id=None, parameter=None, scm=None):
-        """RunJobRequestBody - a model defined in huaweicloud sdk"""
+        """RunJobRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 构建任务ID；编辑构建任务时，浏览器URL末尾的32位数字、字母组合的字符串
+        :type job_id: str
+        :param parameter: 自定义参数
+        :type parameter: list[:class:`huaweicloudsdkcloudbuild.v3.ParameterItem`]
+        :param scm: 
+        :type scm: :class:`huaweicloudsdkcloudbuild.v3.Scm`
+        """
         
         
 
@@ -67,7 +76,7 @@ class RunJobRequestBody:
         构建任务ID；编辑构建任务时，浏览器URL末尾的32位数字、字母组合的字符串
 
         :param job_id: The job_id of this RunJobRequestBody.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -78,7 +87,7 @@ class RunJobRequestBody:
         自定义参数
 
         :return: The parameter of this RunJobRequestBody.
-        :rtype: list[ParameterItem]
+        :rtype: list[:class:`huaweicloudsdkcloudbuild.v3.ParameterItem`]
         """
         return self._parameter
 
@@ -89,7 +98,7 @@ class RunJobRequestBody:
         自定义参数
 
         :param parameter: The parameter of this RunJobRequestBody.
-        :type: list[ParameterItem]
+        :type parameter: list[:class:`huaweicloudsdkcloudbuild.v3.ParameterItem`]
         """
         self._parameter = parameter
 
@@ -99,7 +108,7 @@ class RunJobRequestBody:
 
 
         :return: The scm of this RunJobRequestBody.
-        :rtype: Scm
+        :rtype: :class:`huaweicloudsdkcloudbuild.v3.Scm`
         """
         return self._scm
 
@@ -109,7 +118,7 @@ class RunJobRequestBody:
 
 
         :param scm: The scm of this RunJobRequestBody.
-        :type: Scm
+        :type scm: :class:`huaweicloudsdkcloudbuild.v3.Scm`
         """
         self._scm = scm
 

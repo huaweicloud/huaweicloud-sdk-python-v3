@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListServerGroupsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListServerGroupsResponse(SdkResponse):
     }
 
     def __init__(self, server_groups=None, page_info=None):
-        """ListServerGroupsResponse - a model defined in huaweicloud sdk"""
+        """ListServerGroupsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param server_groups: 弹性云服务器组信息
+        :type server_groups: list[:class:`huaweicloudsdkecs.v2.ListServerGroupsResult`]
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkecs.v2.ListServerGroupsPageInfoResult`
+        """
         
         super(ListServerGroupsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListServerGroupsResponse(SdkResponse):
         弹性云服务器组信息
 
         :return: The server_groups of this ListServerGroupsResponse.
-        :rtype: list[ListServerGroupsResult]
+        :rtype: list[:class:`huaweicloudsdkecs.v2.ListServerGroupsResult`]
         """
         return self._server_groups
 
@@ -63,7 +70,7 @@ class ListServerGroupsResponse(SdkResponse):
         弹性云服务器组信息
 
         :param server_groups: The server_groups of this ListServerGroupsResponse.
-        :type: list[ListServerGroupsResult]
+        :type server_groups: list[:class:`huaweicloudsdkecs.v2.ListServerGroupsResult`]
         """
         self._server_groups = server_groups
 
@@ -73,7 +80,7 @@ class ListServerGroupsResponse(SdkResponse):
 
 
         :return: The page_info of this ListServerGroupsResponse.
-        :rtype: ListServerGroupsPageInfoResult
+        :rtype: :class:`huaweicloudsdkecs.v2.ListServerGroupsPageInfoResult`
         """
         return self._page_info
 
@@ -83,7 +90,7 @@ class ListServerGroupsResponse(SdkResponse):
 
 
         :param page_info: The page_info of this ListServerGroupsResponse.
-        :type: ListServerGroupsPageInfoResult
+        :type page_info: :class:`huaweicloudsdkecs.v2.ListServerGroupsPageInfoResult`
         """
         self._page_info = page_info
 

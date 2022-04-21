@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunModifyPictureReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RunModifyPictureReq:
     }
 
     def __init__(self, path=None, tags=None):
-        """RunModifyPictureReq - a model defined in huaweicloud sdk"""
+        """RunModifyPictureReq
+
+        The model defined in huaweicloud sdk
+
+        :param path: 图片URL路径，作为图片库中索引图片的ID。
+        :type path: str
+        :param tags: 自定义标签，格式为key:value对，其中： - 标签名（key值）须存在于实例中； - 标签内容（value值）为自定义标签值。 
+        :type tags: object
+        """
         
         
 
@@ -61,7 +68,7 @@ class RunModifyPictureReq:
         图片URL路径，作为图片库中索引图片的ID。
 
         :param path: The path of this RunModifyPictureReq.
-        :type: str
+        :type path: str
         """
         self._path = path
 
@@ -83,7 +90,7 @@ class RunModifyPictureReq:
         自定义标签，格式为key:value对，其中： - 标签名（key值）须存在于实例中； - 标签内容（value值）为自定义标签值。 
 
         :param tags: The tags of this RunModifyPictureReq.
-        :type: object
+        :type tags: object
         """
         self._tags = tags
 

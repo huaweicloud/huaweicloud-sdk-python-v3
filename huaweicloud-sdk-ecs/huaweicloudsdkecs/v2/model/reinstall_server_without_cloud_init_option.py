@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ReinstallServerWithoutCloudInitOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ReinstallServerWithoutCloudInitOption:
     }
 
     def __init__(self, adminpass=None, keyname=None, userid=None, mode=None):
-        """ReinstallServerWithoutCloudInitOption - a model defined in huaweicloud sdk"""
+        """ReinstallServerWithoutCloudInitOption
+
+        The model defined in huaweicloud sdk
+
+        :param adminpass: 云服务器管理员帐户的初始登录密码。  其中，Windows管理员帐户的用户名为Administrator。  建议密码复杂度如下：  - 长度为8-26位。 - 密码至少必须包含大写字母、小写字母、数字和特殊字符（!@$%^-_&#x3D;+[{}]:,./?）中的三种。  &gt; 说明： &gt;  - 对于Windows弹性云服务器，密码不能包含用户名或用户名的逆序，不能包含用户名中超过两个连续字符的部分。 - adminpass和keyname不能同时为空。
+        :type adminpass: str
+        :param keyname: 密钥名称。  密钥可以通过密钥创建接口进行创建（请参见[创建和导入SSH密钥](https://support.huaweicloud.com/api-ecs/zh-cn_topic_0020212678.html)），或使用SSH密钥查询接口查询已有的密钥（请参见[查询SSH密钥列表](https://support.huaweicloud.com/api-ecs/ecs_03_1201.html) ）。
+        :type keyname: str
+        :param userid: 用户ID。当传入keyname参数时，此参数为必选。
+        :type userid: str
+        :param mode: 取值为withStopServer ，支持开机状态下切换弹性云服务器操作系统。 mode取值为withStopServer时，对开机状态的弹性云服务器执行切换操作系统操作，系统自动对云服务器先执行关机，再切换操作系统。
+        :type mode: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class ReinstallServerWithoutCloudInitOption:
         云服务器管理员帐户的初始登录密码。  其中，Windows管理员帐户的用户名为Administrator。  建议密码复杂度如下：  - 长度为8-26位。 - 密码至少必须包含大写字母、小写字母、数字和特殊字符（!@$%^-_=+[{}]:,./?）中的三种。  > 说明： >  - 对于Windows弹性云服务器，密码不能包含用户名或用户名的逆序，不能包含用户名中超过两个连续字符的部分。 - adminpass和keyname不能同时为空。
 
         :param adminpass: The adminpass of this ReinstallServerWithoutCloudInitOption.
-        :type: str
+        :type adminpass: str
         """
         self._adminpass = adminpass
 
@@ -95,7 +106,7 @@ class ReinstallServerWithoutCloudInitOption:
         密钥名称。  密钥可以通过密钥创建接口进行创建（请参见[创建和导入SSH密钥](https://support.huaweicloud.com/api-ecs/zh-cn_topic_0020212678.html)），或使用SSH密钥查询接口查询已有的密钥（请参见[查询SSH密钥列表](https://support.huaweicloud.com/api-ecs/ecs_03_1201.html) ）。
 
         :param keyname: The keyname of this ReinstallServerWithoutCloudInitOption.
-        :type: str
+        :type keyname: str
         """
         self._keyname = keyname
 
@@ -117,7 +128,7 @@ class ReinstallServerWithoutCloudInitOption:
         用户ID。当传入keyname参数时，此参数为必选。
 
         :param userid: The userid of this ReinstallServerWithoutCloudInitOption.
-        :type: str
+        :type userid: str
         """
         self._userid = userid
 
@@ -139,7 +150,7 @@ class ReinstallServerWithoutCloudInitOption:
         取值为withStopServer ，支持开机状态下切换弹性云服务器操作系统。 mode取值为withStopServer时，对开机状态的弹性云服务器执行切换操作系统操作，系统自动对云服务器先执行关机，再切换操作系统。
 
         :param mode: The mode of this ReinstallServerWithoutCloudInitOption.
-        :type: str
+        :type mode: str
         """
         self._mode = mode
 

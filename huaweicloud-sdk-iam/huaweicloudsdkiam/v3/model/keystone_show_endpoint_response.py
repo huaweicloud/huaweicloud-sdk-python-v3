@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneShowEndpointResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class KeystoneShowEndpointResponse(SdkResponse):
     }
 
     def __init__(self, endpoint=None):
-        """KeystoneShowEndpointResponse - a model defined in huaweicloud sdk"""
+        """KeystoneShowEndpointResponse
+
+        The model defined in huaweicloud sdk
+
+        :param endpoint: 
+        :type endpoint: :class:`huaweicloudsdkiam.v3.Endpoint`
+        """
         
         super(KeystoneShowEndpointResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class KeystoneShowEndpointResponse(SdkResponse):
 
 
         :return: The endpoint of this KeystoneShowEndpointResponse.
-        :rtype: Endpoint
+        :rtype: :class:`huaweicloudsdkiam.v3.Endpoint`
         """
         return self._endpoint
 
@@ -56,7 +61,7 @@ class KeystoneShowEndpointResponse(SdkResponse):
 
 
         :param endpoint: The endpoint of this KeystoneShowEndpointResponse.
-        :type: Endpoint
+        :type endpoint: :class:`huaweicloudsdkiam.v3.Endpoint`
         """
         self._endpoint = endpoint
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TemplateArgs:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class TemplateArgs:
     }
 
     def __init__(self, key=None, value=None):
-        """TemplateArgs - a model defined in huaweicloud sdk"""
+        """TemplateArgs
+
+        The model defined in huaweicloud sdk
+
+        :param key: 模板参数名。 目前仅支持sub_customer_name：表明企业主创建企业子的名字
+        :type key: str
+        :param value: 模板参数值。 key对应的取值。
+        :type value: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class TemplateArgs:
         模板参数名。 目前仅支持sub_customer_name：表明企业主创建企业子的名字
 
         :param key: The key of this TemplateArgs.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -83,7 +90,7 @@ class TemplateArgs:
         模板参数值。 key对应的取值。
 
         :param value: The value of this TemplateArgs.
-        :type: str
+        :type value: str
         """
         self._value = value
 

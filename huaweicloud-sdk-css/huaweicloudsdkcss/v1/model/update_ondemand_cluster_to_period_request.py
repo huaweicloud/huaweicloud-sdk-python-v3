@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateOndemandClusterToPeriodRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateOndemandClusterToPeriodRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """UpdateOndemandClusterToPeriodRequest - a model defined in huaweicloud sdk"""
+        """UpdateOndemandClusterToPeriodRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 指定待更改的集群ID。
+        :type cluster_id: str
+        :param body: Body of the UpdateOndemandClusterToPeriodRequest
+        :type body: :class:`huaweicloudsdkcss.v1.PeriodReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateOndemandClusterToPeriodRequest:
         指定待更改的集群ID。
 
         :param cluster_id: The cluster_id of this UpdateOndemandClusterToPeriodRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -72,7 +79,7 @@ class UpdateOndemandClusterToPeriodRequest:
 
 
         :return: The body of this UpdateOndemandClusterToPeriodRequest.
-        :rtype: PeriodReq
+        :rtype: :class:`huaweicloudsdkcss.v1.PeriodReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateOndemandClusterToPeriodRequest:
 
 
         :param body: The body of this UpdateOndemandClusterToPeriodRequest.
-        :type: PeriodReq
+        :type body: :class:`huaweicloudsdkcss.v1.PeriodReq`
         """
         self._body = body
 

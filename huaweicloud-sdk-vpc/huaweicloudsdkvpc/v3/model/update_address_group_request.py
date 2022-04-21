@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateAddressGroupRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateAddressGroupRequest:
     }
 
     def __init__(self, address_group_id=None, body=None):
-        """UpdateAddressGroupRequest - a model defined in huaweicloud sdk"""
+        """UpdateAddressGroupRequest
+
+        The model defined in huaweicloud sdk
+
+        :param address_group_id: 地址组的唯一标识
+        :type address_group_id: str
+        :param body: Body of the UpdateAddressGroupRequest
+        :type body: :class:`huaweicloudsdkvpc.v3.UpdateAddressGroupRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateAddressGroupRequest:
         地址组的唯一标识
 
         :param address_group_id: The address_group_id of this UpdateAddressGroupRequest.
-        :type: str
+        :type address_group_id: str
         """
         self._address_group_id = address_group_id
 
@@ -72,7 +79,7 @@ class UpdateAddressGroupRequest:
 
 
         :return: The body of this UpdateAddressGroupRequest.
-        :rtype: UpdateAddressGroupRequestBody
+        :rtype: :class:`huaweicloudsdkvpc.v3.UpdateAddressGroupRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateAddressGroupRequest:
 
 
         :param body: The body of this UpdateAddressGroupRequest.
-        :type: UpdateAddressGroupRequestBody
+        :type body: :class:`huaweicloudsdkvpc.v3.UpdateAddressGroupRequestBody`
         """
         self._body = body
 

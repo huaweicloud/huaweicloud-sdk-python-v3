@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPermanentAccessKeysRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListPermanentAccessKeysRequest:
     }
 
     def __init__(self, user_id=None):
-        """ListPermanentAccessKeysRequest - a model defined in huaweicloud sdk"""
+        """ListPermanentAccessKeysRequest
+
+        The model defined in huaweicloud sdk
+
+        :param user_id: 待查询的IAM用户ID。
+        :type user_id: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class ListPermanentAccessKeysRequest:
         待查询的IAM用户ID。
 
         :param user_id: The user_id of this ListPermanentAccessKeysRequest.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 

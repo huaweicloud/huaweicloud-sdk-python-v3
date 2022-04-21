@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IssueRecordV4User:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class IssueRecordV4User:
     }
 
     def __init__(self, user_num_id=None, user_name=None, nick_name=None, user_id=None):
-        """IssueRecordV4User - a model defined in huaweicloud sdk"""
+        """IssueRecordV4User
+
+        The model defined in huaweicloud sdk
+
+        :param user_num_id: 用户数字id
+        :type user_num_id: int
+        :param user_name: 登录名
+        :type user_name: str
+        :param nick_name: 昵称
+        :type nick_name: str
+        :param user_id: 用户32位的uuid
+        :type user_id: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class IssueRecordV4User:
         用户数字id
 
         :param user_num_id: The user_num_id of this IssueRecordV4User.
-        :type: int
+        :type user_num_id: int
         """
         self._user_num_id = user_num_id
 
@@ -95,7 +106,7 @@ class IssueRecordV4User:
         登录名
 
         :param user_name: The user_name of this IssueRecordV4User.
-        :type: str
+        :type user_name: str
         """
         self._user_name = user_name
 
@@ -117,7 +128,7 @@ class IssueRecordV4User:
         昵称
 
         :param nick_name: The nick_name of this IssueRecordV4User.
-        :type: str
+        :type nick_name: str
         """
         self._nick_name = nick_name
 
@@ -139,7 +150,7 @@ class IssueRecordV4User:
         用户32位的uuid
 
         :param user_id: The user_id of this IssueRecordV4User.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 

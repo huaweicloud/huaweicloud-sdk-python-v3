@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DownloadApplicationCodeRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DownloadApplicationCodeRequest:
     }
 
     def __init__(self, x_language=None, job_id=None):
-        """DownloadApplicationCodeRequest - a model defined in huaweicloud sdk"""
+        """DownloadApplicationCodeRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言类型，缺省值为“zh-cn”。  枚举值： - zh-cn：中文 - en-us：英文 
+        :type x_language: str
+        :param job_id: 任务id。
+        :type job_id: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class DownloadApplicationCodeRequest:
         语言类型，缺省值为“zh-cn”。  枚举值： - zh-cn：中文 - en-us：英文 
 
         :param x_language: The x_language of this DownloadApplicationCodeRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -84,7 +91,7 @@ class DownloadApplicationCodeRequest:
         任务id。
 
         :param job_id: The job_id of this DownloadApplicationCodeRequest.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 

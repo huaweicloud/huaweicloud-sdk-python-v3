@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowGaussMySqlFlavorsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowGaussMySqlFlavorsResponse(SdkResponse):
     }
 
     def __init__(self, flavors=None):
-        """ShowGaussMySqlFlavorsResponse - a model defined in huaweicloud sdk"""
+        """ShowGaussMySqlFlavorsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param flavors: 实例规格信息列表
+        :type flavors: list[:class:`huaweicloudsdkgaussdb.v3.MysqlFlavorsInfo`]
+        """
         
         super(ShowGaussMySqlFlavorsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ShowGaussMySqlFlavorsResponse(SdkResponse):
         实例规格信息列表
 
         :return: The flavors of this ShowGaussMySqlFlavorsResponse.
-        :rtype: list[MysqlFlavorsInfo]
+        :rtype: list[:class:`huaweicloudsdkgaussdb.v3.MysqlFlavorsInfo`]
         """
         return self._flavors
 
@@ -58,7 +63,7 @@ class ShowGaussMySqlFlavorsResponse(SdkResponse):
         实例规格信息列表
 
         :param flavors: The flavors of this ShowGaussMySqlFlavorsResponse.
-        :type: list[MysqlFlavorsInfo]
+        :type flavors: list[:class:`huaweicloudsdkgaussdb.v3.MysqlFlavorsInfo`]
         """
         self._flavors = flavors
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DTAggregateRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DTAggregateRequest:
     }
 
     def __init__(self, inputs=None, outputs=None):
-        """DTAggregateRequest - a model defined in huaweicloud sdk"""
+        """DTAggregateRequest
+
+        The model defined in huaweicloud sdk
+
+        :param inputs: 输入参数，最多支持10个
+        :type inputs: list[:class:`huaweicloudsdkiotanalytics.v1.InputRequest`]
+        :param outputs: 
+        :type outputs: list[:class:`huaweicloudsdkiotanalytics.v1.OutputRequest`]
+        """
         
         
 
@@ -52,7 +59,7 @@ class DTAggregateRequest:
         输入参数，最多支持10个
 
         :return: The inputs of this DTAggregateRequest.
-        :rtype: list[InputRequest]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.InputRequest`]
         """
         return self._inputs
 
@@ -63,7 +70,7 @@ class DTAggregateRequest:
         输入参数，最多支持10个
 
         :param inputs: The inputs of this DTAggregateRequest.
-        :type: list[InputRequest]
+        :type inputs: list[:class:`huaweicloudsdkiotanalytics.v1.InputRequest`]
         """
         self._inputs = inputs
 
@@ -73,7 +80,7 @@ class DTAggregateRequest:
 
 
         :return: The outputs of this DTAggregateRequest.
-        :rtype: list[OutputRequest]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.OutputRequest`]
         """
         return self._outputs
 
@@ -83,7 +90,7 @@ class DTAggregateRequest:
 
 
         :param outputs: The outputs of this DTAggregateRequest.
-        :type: list[OutputRequest]
+        :type outputs: list[:class:`huaweicloudsdkiotanalytics.v1.OutputRequest`]
         """
         self._outputs = outputs
 

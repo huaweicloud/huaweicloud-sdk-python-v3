@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListKeysResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListKeysResponse(SdkResponse):
     }
 
     def __init__(self, keys=None, key_details=None, next_marker=None, truncated=None, total=None):
-        """ListKeysResponse - a model defined in huaweicloud sdk"""
+        """ListKeysResponse
+
+        The model defined in huaweicloud sdk
+
+        :param keys: key_id列表。
+        :type keys: list[str]
+        :param key_details: 密钥详情列表。详情参见KeyDetails
+        :type key_details: list[:class:`huaweicloudsdkkms.v1.KeyDetails`]
+        :param next_marker: 获取下一页所需要传递的“marker”值。当“truncated”为“false”时，“next_marker”为空。
+        :type next_marker: str
+        :param truncated: 是否还有下一页： - “true”表示还有数据。 - “false”表示已经是最后一页。
+        :type truncated: str
+        :param total: 密钥总条数。
+        :type total: int
+        """
         
         super(ListKeysResponse, self).__init__()
 
@@ -78,7 +91,7 @@ class ListKeysResponse(SdkResponse):
         key_id列表。
 
         :param keys: The keys of this ListKeysResponse.
-        :type: list[str]
+        :type keys: list[str]
         """
         self._keys = keys
 
@@ -89,7 +102,7 @@ class ListKeysResponse(SdkResponse):
         密钥详情列表。详情参见KeyDetails
 
         :return: The key_details of this ListKeysResponse.
-        :rtype: list[KeyDetails]
+        :rtype: list[:class:`huaweicloudsdkkms.v1.KeyDetails`]
         """
         return self._key_details
 
@@ -100,7 +113,7 @@ class ListKeysResponse(SdkResponse):
         密钥详情列表。详情参见KeyDetails
 
         :param key_details: The key_details of this ListKeysResponse.
-        :type: list[KeyDetails]
+        :type key_details: list[:class:`huaweicloudsdkkms.v1.KeyDetails`]
         """
         self._key_details = key_details
 
@@ -122,7 +135,7 @@ class ListKeysResponse(SdkResponse):
         获取下一页所需要传递的“marker”值。当“truncated”为“false”时，“next_marker”为空。
 
         :param next_marker: The next_marker of this ListKeysResponse.
-        :type: str
+        :type next_marker: str
         """
         self._next_marker = next_marker
 
@@ -144,7 +157,7 @@ class ListKeysResponse(SdkResponse):
         是否还有下一页： - “true”表示还有数据。 - “false”表示已经是最后一页。
 
         :param truncated: The truncated of this ListKeysResponse.
-        :type: str
+        :type truncated: str
         """
         self._truncated = truncated
 
@@ -166,7 +179,7 @@ class ListKeysResponse(SdkResponse):
         密钥总条数。
 
         :param total: The total of this ListKeysResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 

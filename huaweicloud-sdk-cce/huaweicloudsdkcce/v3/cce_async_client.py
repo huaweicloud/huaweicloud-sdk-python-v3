@@ -51,22 +51,19 @@ class CceAsyncClient(Client):
     def add_node_async(self, request):
         """纳管节点
 
-        该API用于在指定集群下纳管节点。 >集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。 
+        该API用于在指定集群下纳管节点。
+        &gt;集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param AddNodeRequest request
-        :return: AddNodeResponse
+        :param request: Request instance for AddNode
+        :type request: :class:`huaweicloudsdkcce.v3.AddNodeRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.AddNodeResponse`
         """
         return self.add_node_with_http_info(request)
 
     def add_node_with_http_info(self, request):
-        """纳管节点
-
-        该API用于在指定集群下纳管节点。 >集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。 
-
-        :param AddNodeRequest request
-        :return: AddNodeResponse
-        """
-
         all_params = ['cluster_id', 'add_node_list']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -112,26 +109,21 @@ class CceAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def awake_cluster_async(self, request):
         """集群唤醒
 
         集群唤醒用于唤醒已休眠的集群，唤醒后，将继续收取控制节点资源费用。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param AwakeClusterRequest request
-        :return: AwakeClusterResponse
+        :param request: Request instance for AwakeCluster
+        :type request: :class:`huaweicloudsdkcce.v3.AwakeClusterRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.AwakeClusterResponse`
         """
         return self.awake_cluster_with_http_info(request)
 
     def awake_cluster_with_http_info(self, request):
-        """集群唤醒
-
-        集群唤醒用于唤醒已休眠的集群，唤醒后，将继续收取控制节点资源费用。
-
-        :param AwakeClusterRequest request
-        :return: AwakeClusterResponse
-        """
-
         all_params = ['cluster_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -175,26 +167,21 @@ class CceAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_addon_instance_async(self, request):
         """创建AddonInstance
 
-        根据提供的插件模板，安装插件实例。 
+        根据提供的插件模板，安装插件实例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateAddonInstanceRequest request
-        :return: CreateAddonInstanceResponse
+        :param request: Request instance for CreateAddonInstance
+        :type request: :class:`huaweicloudsdkcce.v3.CreateAddonInstanceRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.CreateAddonInstanceResponse`
         """
         return self.create_addon_instance_with_http_info(request)
 
     def create_addon_instance_with_http_info(self, request):
-        """创建AddonInstance
-
-        根据提供的插件模板，安装插件实例。 
-
-        :param CreateAddonInstanceRequest request
-        :return: CreateAddonInstanceResponse
-        """
-
         all_params = ['create_addon_instance_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -238,26 +225,23 @@ class CceAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_cloud_persistent_volume_claims_async(self, request):
         """创建PVC
 
-        该API用于在指定的Namespace下通过云存储服务中的云存储（EVS、SFS、OBS）去创建PVC（PersistentVolumeClaim）。  >存储管理的URL格式为：https://{clusterid}.Endpoint/uri。其中{clusterid}为集群ID，uri为资源路径，也即API访问的路径。如果使用https://Endpoint/uri，则必须指定请求header中的X-Cluster-ID参数。 
+        该API用于在指定的Namespace下通过云存储服务中的云存储（EVS、SFS、OBS）去创建PVC（PersistentVolumeClaim）。
+        
+        &gt;存储管理的URL格式为：https://{clusterid}.Endpoint/uri。其中{clusterid}为集群ID，uri为资源路径，也即API访问的路径。如果使用https://Endpoint/uri，则必须指定请求header中的X-Cluster-ID参数。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateCloudPersistentVolumeClaimsRequest request
-        :return: CreateCloudPersistentVolumeClaimsResponse
+        :param request: Request instance for CreateCloudPersistentVolumeClaims
+        :type request: :class:`huaweicloudsdkcce.v3.CreateCloudPersistentVolumeClaimsRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.CreateCloudPersistentVolumeClaimsResponse`
         """
         return self.create_cloud_persistent_volume_claims_with_http_info(request)
 
     def create_cloud_persistent_volume_claims_with_http_info(self, request):
-        """创建PVC
-
-        该API用于在指定的Namespace下通过云存储服务中的云存储（EVS、SFS、OBS）去创建PVC（PersistentVolumeClaim）。  >存储管理的URL格式为：https://{clusterid}.Endpoint/uri。其中{clusterid}为集群ID，uri为资源路径，也即API访问的路径。如果使用https://Endpoint/uri，则必须指定请求header中的X-Cluster-ID参数。 
-
-        :param CreateCloudPersistentVolumeClaimsRequest request
-        :return: CreateCloudPersistentVolumeClaimsResponse
-        """
-
         all_params = ['namespace', 'create_cloud_persistent_volume_claims_request_body', 'x_cluster_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -305,26 +289,24 @@ class CceAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_cluster_async(self, request):
         """创建集群
 
-        该API用于创建一个空集群（即只有控制节点Master，没有工作节点Node）。请在调用本接口完成集群创建之后，通过[创建节点](cce_02_0242.xml)添加节点。  >   - 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。 >   - 调用该接口创建集群时，默认不安装ICAgent，若需安装ICAgent，可在请求Body参数的annotations中加入\"cluster.install.addons.external/install\": \"[{\"addonTemplateName\":\"icagent\"}]\"的集群注解，将在创建集群时自动安装ICAgent。ICAgent是应用性能管理APM的采集代理，运行在应用所在的服务器上，用于实时采集探针所获取的数据，安装ICAgent是使用应用性能管理APM的前提。
+        该API用于创建一个空集群（即只有控制节点Master，没有工作节点Node）。请在调用本接口完成集群创建之后，通过[创建节点](cce_02_0242.xml)添加节点。
+        
+        &gt;   - 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        &gt;   - 调用该接口创建集群时，默认不安装ICAgent，若需安装ICAgent，可在请求Body参数的annotations中加入\&quot;cluster.install.addons.external/install\&quot;: \&quot;[{\&quot;addonTemplateName\&quot;:\&quot;icagent\&quot;}]\&quot;的集群注解，将在创建集群时自动安装ICAgent。ICAgent是应用性能管理APM的采集代理，运行在应用所在的服务器上，用于实时采集探针所获取的数据，安装ICAgent是使用应用性能管理APM的前提。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateClusterRequest request
-        :return: CreateClusterResponse
+        :param request: Request instance for CreateCluster
+        :type request: :class:`huaweicloudsdkcce.v3.CreateClusterRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.CreateClusterResponse`
         """
         return self.create_cluster_with_http_info(request)
 
     def create_cluster_with_http_info(self, request):
-        """创建集群
-
-        该API用于创建一个空集群（即只有控制节点Master，没有工作节点Node）。请在调用本接口完成集群创建之后，通过[创建节点](cce_02_0242.xml)添加节点。  >   - 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。 >   - 调用该接口创建集群时，默认不安装ICAgent，若需安装ICAgent，可在请求Body参数的annotations中加入\"cluster.install.addons.external/install\": \"[{\"addonTemplateName\":\"icagent\"}]\"的集群注解，将在创建集群时自动安装ICAgent。ICAgent是应用性能管理APM的采集代理，运行在应用所在的服务器上，用于实时采集探针所获取的数据，安装ICAgent是使用应用性能管理APM的前提。
-
-        :param CreateClusterRequest request
-        :return: CreateClusterResponse
-        """
-
         all_params = ['create_cluster_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -368,26 +350,21 @@ class CceAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_kubernetes_cluster_cert_async(self, request):
         """获取集群证书
 
         该API用于获取指定集群的证书信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateKubernetesClusterCertRequest request
-        :return: CreateKubernetesClusterCertResponse
+        :param request: Request instance for CreateKubernetesClusterCert
+        :type request: :class:`huaweicloudsdkcce.v3.CreateKubernetesClusterCertRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.CreateKubernetesClusterCertResponse`
         """
         return self.create_kubernetes_cluster_cert_with_http_info(request)
 
     def create_kubernetes_cluster_cert_with_http_info(self, request):
-        """获取集群证书
-
-        该API用于获取指定集群的证书信息。
-
-        :param CreateKubernetesClusterCertRequest request
-        :return: CreateKubernetesClusterCertResponse
-        """
-
         all_params = ['cluster_id', 'create_kubernetes_cluster_cert_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -433,26 +410,23 @@ class CceAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_node_async(self, request):
         """创建节点
 
-        该API用于在指定集群下创建节点。 > - 若无集群，请先[创建集群](cce_02_0236.xml)。 > - 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        该API用于在指定集群下创建节点。
+        &gt; - 若无集群，请先[创建集群](cce_02_0236.xml)。
+        &gt; - 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateNodeRequest request
-        :return: CreateNodeResponse
+        :param request: Request instance for CreateNode
+        :type request: :class:`huaweicloudsdkcce.v3.CreateNodeRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.CreateNodeResponse`
         """
         return self.create_node_with_http_info(request)
 
     def create_node_with_http_info(self, request):
-        """创建节点
-
-        该API用于在指定集群下创建节点。 > - 若无集群，请先[创建集群](cce_02_0236.xml)。 > - 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
-
-        :param CreateNodeRequest request
-        :return: CreateNodeResponse
-        """
-
         all_params = ['cluster_id', 'create_node_request_body', 'nodepool_scale_up']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -500,26 +474,25 @@ class CceAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_node_pool_async(self, request):
         """创建节点池
 
-        该API用于在指定集群下创建节点池。仅支持集群在处于可用、扩容、缩容状态时调用。1.21版本的集群创建节点池时支持绑定安全组，每个节点池最多绑定五个安全组。更新节点池的安全组后，只针对新创的pod生效，建议驱逐节点上原有的pod。  > 若无集群，请先[创建集群](cce_02_0236.xml)。  > 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径 
+        该API用于在指定集群下创建节点池。仅支持集群在处于可用、扩容、缩容状态时调用。1.21版本的集群创建节点池时支持绑定安全组，每个节点池最多绑定五个安全组。更新节点池的安全组后，只针对新创的pod生效，建议驱逐节点上原有的pod。
+        
+        &gt; 若无集群，请先[创建集群](cce_02_0236.xml)。
+        
+        &gt; 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateNodePoolRequest request
-        :return: CreateNodePoolResponse
+        :param request: Request instance for CreateNodePool
+        :type request: :class:`huaweicloudsdkcce.v3.CreateNodePoolRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.CreateNodePoolResponse`
         """
         return self.create_node_pool_with_http_info(request)
 
     def create_node_pool_with_http_info(self, request):
-        """创建节点池
-
-        该API用于在指定集群下创建节点池。仅支持集群在处于可用、扩容、缩容状态时调用。1.21版本的集群创建节点池时支持绑定安全组，每个节点池最多绑定五个安全组。更新节点池的安全组后，只针对新创的pod生效，建议驱逐节点上原有的pod。  > 若无集群，请先[创建集群](cce_02_0236.xml)。  > 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径 
-
-        :param CreateNodePoolRequest request
-        :return: CreateNodePoolResponse
-        """
-
         all_params = ['cluster_id', 'create_node_pool_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -565,26 +538,21 @@ class CceAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_addon_instance_async(self, request):
         """删除AddonInstance
 
-        删除插件实例的功能。 
+        删除插件实例的功能。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteAddonInstanceRequest request
-        :return: DeleteAddonInstanceResponse
+        :param request: Request instance for DeleteAddonInstance
+        :type request: :class:`huaweicloudsdkcce.v3.DeleteAddonInstanceRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.DeleteAddonInstanceResponse`
         """
         return self.delete_addon_instance_with_http_info(request)
 
     def delete_addon_instance_with_http_info(self, request):
-        """删除AddonInstance
-
-        删除插件实例的功能。 
-
-        :param DeleteAddonInstanceRequest request
-        :return: DeleteAddonInstanceResponse
-        """
-
         all_params = ['id', 'cluster_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -630,26 +598,23 @@ class CceAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_cloud_persistent_volume_claims_async(self, request):
         """删除PVC
 
-        该API用于删除指定Namespace下的PVC（PersistentVolumeClaim）对象，并可以选择保留后端的云存储。  >存储管理的URL格式为：https://{clusterid}.Endpoint/uri。其中{clusterid}为集群ID，uri为资源路径，也即API访问的路径。如果使用https://Endpoint/uri，则必须指定请求header中的X-Cluster-ID参数。 
+        该API用于删除指定Namespace下的PVC（PersistentVolumeClaim）对象，并可以选择保留后端的云存储。
+        
+        &gt;存储管理的URL格式为：https://{clusterid}.Endpoint/uri。其中{clusterid}为集群ID，uri为资源路径，也即API访问的路径。如果使用https://Endpoint/uri，则必须指定请求header中的X-Cluster-ID参数。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteCloudPersistentVolumeClaimsRequest request
-        :return: DeleteCloudPersistentVolumeClaimsResponse
+        :param request: Request instance for DeleteCloudPersistentVolumeClaims
+        :type request: :class:`huaweicloudsdkcce.v3.DeleteCloudPersistentVolumeClaimsRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.DeleteCloudPersistentVolumeClaimsResponse`
         """
         return self.delete_cloud_persistent_volume_claims_with_http_info(request)
 
     def delete_cloud_persistent_volume_claims_with_http_info(self, request):
-        """删除PVC
-
-        该API用于删除指定Namespace下的PVC（PersistentVolumeClaim）对象，并可以选择保留后端的云存储。  >存储管理的URL格式为：https://{clusterid}.Endpoint/uri。其中{clusterid}为集群ID，uri为资源路径，也即API访问的路径。如果使用https://Endpoint/uri，则必须指定请求header中的X-Cluster-ID参数。 
-
-        :param DeleteCloudPersistentVolumeClaimsRequest request
-        :return: DeleteCloudPersistentVolumeClaimsResponse
-        """
-
         all_params = ['name', 'namespace', 'delete_volume', 'storage_type', 'x_cluster_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -701,26 +666,22 @@ class CceAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_cluster_async(self, request):
         """删除集群
 
-        该API用于删除一个指定的集群。 >集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        该API用于删除一个指定的集群。
+        &gt;集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteClusterRequest request
-        :return: DeleteClusterResponse
+        :param request: Request instance for DeleteCluster
+        :type request: :class:`huaweicloudsdkcce.v3.DeleteClusterRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.DeleteClusterResponse`
         """
         return self.delete_cluster_with_http_info(request)
 
     def delete_cluster_with_http_info(self, request):
-        """删除集群
-
-        该API用于删除一个指定的集群。 >集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
-
-        :param DeleteClusterRequest request
-        :return: DeleteClusterResponse
-        """
-
         all_params = ['cluster_id', 'delete_efs', 'delete_eni', 'delete_evs', 'delete_net', 'delete_obs', 'delete_sfs', 'tobedeleted']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -778,26 +739,22 @@ class CceAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_node_async(self, request):
         """删除节点
 
-        该API用于删除指定的节点。 >集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径 
+        该API用于删除指定的节点。
+        &gt;集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteNodeRequest request
-        :return: DeleteNodeResponse
+        :param request: Request instance for DeleteNode
+        :type request: :class:`huaweicloudsdkcce.v3.DeleteNodeRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.DeleteNodeResponse`
         """
         return self.delete_node_with_http_info(request)
 
     def delete_node_with_http_info(self, request):
-        """删除节点
-
-        该API用于删除指定的节点。 >集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径 
-
-        :param DeleteNodeRequest request
-        :return: DeleteNodeResponse
-        """
-
         all_params = ['cluster_id', 'node_id', 'nodepool_scale_down']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -845,26 +802,22 @@ class CceAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_node_pool_async(self, request):
         """删除节点池
 
-        该API用于删除指定的节点池。 > 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径 
+        该API用于删除指定的节点池。
+        &gt; 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteNodePoolRequest request
-        :return: DeleteNodePoolResponse
+        :param request: Request instance for DeleteNodePool
+        :type request: :class:`huaweicloudsdkcce.v3.DeleteNodePoolRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.DeleteNodePoolResponse`
         """
         return self.delete_node_pool_with_http_info(request)
 
     def delete_node_pool_with_http_info(self, request):
-        """删除节点池
-
-        该API用于删除指定的节点池。 > 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径 
-
-        :param DeleteNodePoolRequest request
-        :return: DeleteNodePoolResponse
-        """
-
         all_params = ['cluster_id', 'nodepool_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -910,26 +863,21 @@ class CceAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def hibernate_cluster_async(self, request):
         """集群休眠
 
         集群休眠用于将运行中的集群置于休眠状态，休眠后，将不再收取控制节点资源费用。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param HibernateClusterRequest request
-        :return: HibernateClusterResponse
+        :param request: Request instance for HibernateCluster
+        :type request: :class:`huaweicloudsdkcce.v3.HibernateClusterRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.HibernateClusterResponse`
         """
         return self.hibernate_cluster_with_http_info(request)
 
     def hibernate_cluster_with_http_info(self, request):
-        """集群休眠
-
-        集群休眠用于将运行中的集群置于休眠状态，休眠后，将不再收取控制节点资源费用。
-
-        :param HibernateClusterRequest request
-        :return: HibernateClusterResponse
-        """
-
         all_params = ['cluster_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -973,26 +921,21 @@ class CceAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_addon_instances_async(self, request):
         """获取AddonInstance列表
 
-        获取集群所有已安装插件实例 
+        获取集群所有已安装插件实例
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListAddonInstancesRequest request
-        :return: ListAddonInstancesResponse
+        :param request: Request instance for ListAddonInstances
+        :type request: :class:`huaweicloudsdkcce.v3.ListAddonInstancesRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ListAddonInstancesResponse`
         """
         return self.list_addon_instances_with_http_info(request)
 
     def list_addon_instances_with_http_info(self, request):
-        """获取AddonInstance列表
-
-        获取集群所有已安装插件实例 
-
-        :param ListAddonInstancesRequest request
-        :return: ListAddonInstancesResponse
-        """
-
         all_params = ['cluster_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1036,26 +979,21 @@ class CceAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_addon_templates_async(self, request):
         """查询AddonTemplates列表
 
-        插件模板查询接口，查询插件信息。 
+        插件模板查询接口，查询插件信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListAddonTemplatesRequest request
-        :return: ListAddonTemplatesResponse
+        :param request: Request instance for ListAddonTemplates
+        :type request: :class:`huaweicloudsdkcce.v3.ListAddonTemplatesRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ListAddonTemplatesResponse`
         """
         return self.list_addon_templates_with_http_info(request)
 
     def list_addon_templates_with_http_info(self, request):
-        """查询AddonTemplates列表
-
-        插件模板查询接口，查询插件信息。 
-
-        :param ListAddonTemplatesRequest request
-        :return: ListAddonTemplatesResponse
-        """
-
         all_params = ['addon_template_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1099,26 +1037,21 @@ class CceAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_clusters_async(self, request):
         """获取指定项目下的集群
 
         该API用于获取指定项目下所有集群的详细信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListClustersRequest request
-        :return: ListClustersResponse
+        :param request: Request instance for ListClusters
+        :type request: :class:`huaweicloudsdkcce.v3.ListClustersRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ListClustersResponse`
         """
         return self.list_clusters_with_http_info(request)
 
     def list_clusters_with_http_info(self, request):
-        """获取指定项目下的集群
-
-        该API用于获取指定项目下所有集群的详细信息。
-
-        :param ListClustersRequest request
-        :return: ListClustersResponse
-        """
-
         all_params = ['detail', 'status', 'type', 'version']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1168,26 +1101,23 @@ class CceAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_node_pools_async(self, request):
         """获取集群下所有节点池
 
-        该API用于获取集群下所有节点池。 > - 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径 > - nodepool是集群中具有相同配置的节点实例的子集。 
+        该API用于获取集群下所有节点池。
+        &gt; - 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径
+        &gt; - nodepool是集群中具有相同配置的节点实例的子集。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListNodePoolsRequest request
-        :return: ListNodePoolsResponse
+        :param request: Request instance for ListNodePools
+        :type request: :class:`huaweicloudsdkcce.v3.ListNodePoolsRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ListNodePoolsResponse`
         """
         return self.list_node_pools_with_http_info(request)
 
     def list_node_pools_with_http_info(self, request):
-        """获取集群下所有节点池
-
-        该API用于获取集群下所有节点池。 > - 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径 > - nodepool是集群中具有相同配置的节点实例的子集。 
-
-        :param ListNodePoolsRequest request
-        :return: ListNodePoolsResponse
-        """
-
         all_params = ['cluster_id', 'show_default_node_pool']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1233,26 +1163,22 @@ class CceAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_nodes_async(self, request):
         """获取集群下所有节点
 
-        该API用于通过集群ID获取指定集群下所有节点的详细信息。 >集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        该API用于通过集群ID获取指定集群下所有节点的详细信息。
+        &gt;集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListNodesRequest request
-        :return: ListNodesResponse
+        :param request: Request instance for ListNodes
+        :type request: :class:`huaweicloudsdkcce.v3.ListNodesRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ListNodesResponse`
         """
         return self.list_nodes_with_http_info(request)
 
     def list_nodes_with_http_info(self, request):
-        """获取集群下所有节点
-
-        该API用于通过集群ID获取指定集群下所有节点的详细信息。 >集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
-
-        :param ListNodesRequest request
-        :return: ListNodesResponse
-        """
-
         all_params = ['cluster_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1296,26 +1222,22 @@ class CceAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def migrate_node_async(self, request):
         """节点迁移
 
-        该API用于在指定集群下迁移节点到另一集群。 >集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。 
+        该API用于在指定集群下迁移节点到另一集群。
+        &gt;集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param MigrateNodeRequest request
-        :return: MigrateNodeResponse
+        :param request: Request instance for MigrateNode
+        :type request: :class:`huaweicloudsdkcce.v3.MigrateNodeRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.MigrateNodeResponse`
         """
         return self.migrate_node_with_http_info(request)
 
     def migrate_node_with_http_info(self, request):
-        """节点迁移
-
-        该API用于在指定集群下迁移节点到另一集群。 >集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。 
-
-        :param MigrateNodeRequest request
-        :return: MigrateNodeResponse
-        """
-
         all_params = ['cluster_id', 'target_cluster_id', 'migrate_nodes_task']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1363,26 +1285,22 @@ class CceAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def remove_node_async(self, request):
         """节点移除
 
-        该API用于在指定集群下移除节点。 >集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。 
+        该API用于在指定集群下移除节点。
+        &gt;集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param RemoveNodeRequest request
-        :return: RemoveNodeResponse
+        :param request: Request instance for RemoveNode
+        :type request: :class:`huaweicloudsdkcce.v3.RemoveNodeRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.RemoveNodeResponse`
         """
         return self.remove_node_with_http_info(request)
 
     def remove_node_with_http_info(self, request):
-        """节点移除
-
-        该API用于在指定集群下移除节点。 >集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。 
-
-        :param RemoveNodeRequest request
-        :return: RemoveNodeResponse
-        """
-
         all_params = ['cluster_id', 'remove_nodes_task']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1428,26 +1346,22 @@ class CceAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def reset_node_async(self, request):
         """重置节点
 
-        该API用于在指定集群下重置节点。 >集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。 
+        该API用于在指定集群下重置节点。
+        &gt;集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ResetNodeRequest request
-        :return: ResetNodeResponse
+        :param request: Request instance for ResetNode
+        :type request: :class:`huaweicloudsdkcce.v3.ResetNodeRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ResetNodeResponse`
         """
         return self.reset_node_with_http_info(request)
 
     def reset_node_with_http_info(self, request):
-        """重置节点
-
-        该API用于在指定集群下重置节点。 >集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。 
-
-        :param ResetNodeRequest request
-        :return: ResetNodeResponse
-        """
-
         all_params = ['cluster_id', 'reset_node_list']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1493,26 +1407,21 @@ class CceAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_addon_instance_async(self, request):
         """获取AddonInstance详情
 
-        获取插件实例详情。 
+        获取插件实例详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowAddonInstanceRequest request
-        :return: ShowAddonInstanceResponse
+        :param request: Request instance for ShowAddonInstance
+        :type request: :class:`huaweicloudsdkcce.v3.ShowAddonInstanceRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ShowAddonInstanceResponse`
         """
         return self.show_addon_instance_with_http_info(request)
 
     def show_addon_instance_with_http_info(self, request):
-        """获取AddonInstance详情
-
-        获取插件实例详情。 
-
-        :param ShowAddonInstanceRequest request
-        :return: ShowAddonInstanceResponse
-        """
-
         all_params = ['id', 'cluster_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1558,26 +1467,22 @@ class CceAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_cluster_async(self, request):
         """获取指定的集群
 
-        该API用于获取指定集群的详细信息。 >集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        该API用于获取指定集群的详细信息。
+        &gt;集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowClusterRequest request
-        :return: ShowClusterResponse
+        :param request: Request instance for ShowCluster
+        :type request: :class:`huaweicloudsdkcce.v3.ShowClusterRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ShowClusterResponse`
         """
         return self.show_cluster_with_http_info(request)
 
     def show_cluster_with_http_info(self, request):
-        """获取指定的集群
-
-        该API用于获取指定集群的详细信息。 >集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
-
-        :param ShowClusterRequest request
-        :return: ShowClusterResponse
-        """
-
         all_params = ['cluster_id', 'detail']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1623,26 +1528,25 @@ class CceAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_job_async(self, request):
         """获取任务信息
 
-        该API用于获取任务信息。通过某一任务请求下发后返回的jobID来查询指定任务的进度。 > - 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径 > - 该接口通常使用场景为： >   - 创建、删除集群时，查询相应任务的进度。 >   - 创建、删除节点时，查询相应任务的进度。 
+        该API用于获取任务信息。通过某一任务请求下发后返回的jobID来查询指定任务的进度。
+        &gt; - 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径
+        &gt; - 该接口通常使用场景为：
+        &gt;   - 创建、删除集群时，查询相应任务的进度。
+        &gt;   - 创建、删除节点时，查询相应任务的进度。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowJobRequest request
-        :return: ShowJobResponse
+        :param request: Request instance for ShowJob
+        :type request: :class:`huaweicloudsdkcce.v3.ShowJobRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ShowJobResponse`
         """
         return self.show_job_with_http_info(request)
 
     def show_job_with_http_info(self, request):
-        """获取任务信息
-
-        该API用于获取任务信息。通过某一任务请求下发后返回的jobID来查询指定任务的进度。 > - 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径 > - 该接口通常使用场景为： >   - 创建、删除集群时，查询相应任务的进度。 >   - 创建、删除节点时，查询相应任务的进度。 
-
-        :param ShowJobRequest request
-        :return: ShowJobResponse
-        """
-
         all_params = ['job_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1686,26 +1590,22 @@ class CceAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_node_async(self, request):
         """获取指定的节点
 
-        该API用于通过节点ID获取指定节点的详细信息。 >集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        该API用于通过节点ID获取指定节点的详细信息。
+        &gt;集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowNodeRequest request
-        :return: ShowNodeResponse
+        :param request: Request instance for ShowNode
+        :type request: :class:`huaweicloudsdkcce.v3.ShowNodeRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ShowNodeResponse`
         """
         return self.show_node_with_http_info(request)
 
     def show_node_with_http_info(self, request):
-        """获取指定的节点
-
-        该API用于通过节点ID获取指定节点的详细信息。 >集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
-
-        :param ShowNodeRequest request
-        :return: ShowNodeResponse
-        """
-
         all_params = ['cluster_id', 'node_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1751,26 +1651,22 @@ class CceAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_node_pool_async(self, request):
         """获取指定的节点池
 
-        该API用于获取指定节点池的详细信息。 > 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径 
+        该API用于获取指定节点池的详细信息。
+        &gt; 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowNodePoolRequest request
-        :return: ShowNodePoolResponse
+        :param request: Request instance for ShowNodePool
+        :type request: :class:`huaweicloudsdkcce.v3.ShowNodePoolRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ShowNodePoolResponse`
         """
         return self.show_node_pool_with_http_info(request)
 
     def show_node_pool_with_http_info(self, request):
-        """获取指定的节点池
-
-        该API用于获取指定节点池的详细信息。 > 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径 
-
-        :param ShowNodePoolRequest request
-        :return: ShowNodePoolResponse
-        """
-
         all_params = ['cluster_id', 'nodepool_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1816,26 +1712,21 @@ class CceAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_quotas_async(self, request):
         """查询CCE服务下的资源配额。
 
         该API用于查询CCE服务下的资源配额。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowQuotasRequest request
-        :return: ShowQuotasResponse
+        :param request: Request instance for ShowQuotas
+        :type request: :class:`huaweicloudsdkcce.v3.ShowQuotasRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ShowQuotasResponse`
         """
         return self.show_quotas_with_http_info(request)
 
     def show_quotas_with_http_info(self, request):
-        """查询CCE服务下的资源配额。
-
-        该API用于查询CCE服务下的资源配额。
-
-        :param ShowQuotasRequest request
-        :return: ShowQuotasResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1877,26 +1768,21 @@ class CceAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_addon_instance_async(self, request):
         """更新AddonInstance
 
-        更新插件实例的功能。 
+        更新插件实例的功能。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateAddonInstanceRequest request
-        :return: UpdateAddonInstanceResponse
+        :param request: Request instance for UpdateAddonInstance
+        :type request: :class:`huaweicloudsdkcce.v3.UpdateAddonInstanceRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.UpdateAddonInstanceResponse`
         """
         return self.update_addon_instance_with_http_info(request)
 
     def update_addon_instance_with_http_info(self, request):
-        """更新AddonInstance
-
-        更新插件实例的功能。 
-
-        :param UpdateAddonInstanceRequest request
-        :return: UpdateAddonInstanceResponse
-        """
-
         all_params = ['id', 'update_addon_instance_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1942,26 +1828,22 @@ class CceAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_cluster_async(self, request):
         """更新指定的集群
 
-        该API用于更新指定的集群。 >集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        该API用于更新指定的集群。
+        &gt;集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateClusterRequest request
-        :return: UpdateClusterResponse
+        :param request: Request instance for UpdateCluster
+        :type request: :class:`huaweicloudsdkcce.v3.UpdateClusterRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.UpdateClusterResponse`
         """
         return self.update_cluster_with_http_info(request)
 
     def update_cluster_with_http_info(self, request):
-        """更新指定的集群
-
-        该API用于更新指定的集群。 >集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
-
-        :param UpdateClusterRequest request
-        :return: UpdateClusterResponse
-        """
-
         all_params = ['cluster_id', 'update_cluster_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2007,26 +1889,23 @@ class CceAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_node_async(self, request):
         """更新指定的节点
 
-        该API用于更新指定的节点。 > - 当前仅支持更新metadata下的name字段，即节点的名字。 > - 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。 
+        该API用于更新指定的节点。
+        &gt; - 当前仅支持更新metadata下的name字段，即节点的名字。
+        &gt; - 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateNodeRequest request
-        :return: UpdateNodeResponse
+        :param request: Request instance for UpdateNode
+        :type request: :class:`huaweicloudsdkcce.v3.UpdateNodeRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.UpdateNodeResponse`
         """
         return self.update_node_with_http_info(request)
 
     def update_node_with_http_info(self, request):
-        """更新指定的节点
-
-        该API用于更新指定的节点。 > - 当前仅支持更新metadata下的name字段，即节点的名字。 > - 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。 
-
-        :param UpdateNodeRequest request
-        :return: UpdateNodeResponse
-        """
-
         all_params = ['cluster_id', 'node_id', 'update_node_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2074,26 +1953,26 @@ class CceAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_node_pool_async(self, request):
         """更新指定节点池
 
-        该API用于更新指定的节点池。仅支持集群在处于可用、扩容、缩容状态时调用。  > - 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径  > - 当前仅支持更新节点池名称，spec下的initialNodeCount，k8sTags， taints，login，userTags与节点池的扩缩容配置相关字段。若此次更新未设置相关值，默认更新为初始值。
+        该API用于更新指定的节点池。仅支持集群在处于可用、扩容、缩容状态时调用。
+        
+        &gt; - 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径
+        
+        &gt; - 当前仅支持更新节点池名称，spec下的initialNodeCount，k8sTags，
+        taints，login，userTags与节点池的扩缩容配置相关字段。若此次更新未设置相关值，默认更新为初始值。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateNodePoolRequest request
-        :return: UpdateNodePoolResponse
+        :param request: Request instance for UpdateNodePool
+        :type request: :class:`huaweicloudsdkcce.v3.UpdateNodePoolRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.UpdateNodePoolResponse`
         """
         return self.update_node_pool_with_http_info(request)
 
     def update_node_pool_with_http_info(self, request):
-        """更新指定节点池
-
-        该API用于更新指定的节点池。仅支持集群在处于可用、扩容、缩容状态时调用。  > - 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径  > - 当前仅支持更新节点池名称，spec下的initialNodeCount，k8sTags， taints，login，userTags与节点池的扩缩容配置相关字段。若此次更新未设置相关值，默认更新为初始值。
-
-        :param UpdateNodePoolRequest request
-        :return: UpdateNodePoolResponse
-        """
-
         all_params = ['cluster_id', 'nodepool_id', 'update_node_pool_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2140,7 +2019,6 @@ class CceAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

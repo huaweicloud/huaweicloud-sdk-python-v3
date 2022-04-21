@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EnvValueFrom:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class EnvValueFrom:
     }
 
     def __init__(self, secret=None, configmap=None):
-        """EnvValueFrom - a model defined in huaweicloud sdk"""
+        """EnvValueFrom
+
+        The model defined in huaweicloud sdk
+
+        :param secret: 
+        :type secret: :class:`huaweicloudsdkief.v1.Secrets`
+        :param configmap: 
+        :type configmap: :class:`huaweicloudsdkief.v1.ConfigsMap`
+        """
         
         
 
@@ -51,7 +58,7 @@ class EnvValueFrom:
 
 
         :return: The secret of this EnvValueFrom.
-        :rtype: Secrets
+        :rtype: :class:`huaweicloudsdkief.v1.Secrets`
         """
         return self._secret
 
@@ -61,7 +68,7 @@ class EnvValueFrom:
 
 
         :param secret: The secret of this EnvValueFrom.
-        :type: Secrets
+        :type secret: :class:`huaweicloudsdkief.v1.Secrets`
         """
         self._secret = secret
 
@@ -71,7 +78,7 @@ class EnvValueFrom:
 
 
         :return: The configmap of this EnvValueFrom.
-        :rtype: ConfigsMap
+        :rtype: :class:`huaweicloudsdkief.v1.ConfigsMap`
         """
         return self._configmap
 
@@ -81,7 +88,7 @@ class EnvValueFrom:
 
 
         :param configmap: The configmap of this EnvValueFrom.
-        :type: ConfigsMap
+        :type configmap: :class:`huaweicloudsdkief.v1.ConfigsMap`
         """
         self._configmap = configmap
 

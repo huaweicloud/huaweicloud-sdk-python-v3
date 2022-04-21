@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ChangeSqlSwitchRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ChangeSqlSwitchRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, body=None):
-        """ChangeSqlSwitchRequest - a model defined in huaweicloud sdk"""
+        """ChangeSqlSwitchRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param x_language: 请求语言类型。
+        :type x_language: str
+        :param body: Body of the ChangeSqlSwitchRequest
+        :type body: :class:`huaweicloudsdkdas.v3.ChangeSqlSwitchBody`
+        """
         
         
 
@@ -67,7 +76,7 @@ class ChangeSqlSwitchRequest:
         实例ID
 
         :param instance_id: The instance_id of this ChangeSqlSwitchRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -89,7 +98,7 @@ class ChangeSqlSwitchRequest:
         请求语言类型。
 
         :param x_language: The x_language of this ChangeSqlSwitchRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -99,7 +108,7 @@ class ChangeSqlSwitchRequest:
 
 
         :return: The body of this ChangeSqlSwitchRequest.
-        :rtype: ChangeSqlSwitchBody
+        :rtype: :class:`huaweicloudsdkdas.v3.ChangeSqlSwitchBody`
         """
         return self._body
 
@@ -109,7 +118,7 @@ class ChangeSqlSwitchRequest:
 
 
         :param body: The body of this ChangeSqlSwitchRequest.
-        :type: ChangeSqlSwitchBody
+        :type body: :class:`huaweicloudsdkdas.v3.ChangeSqlSwitchBody`
         """
         self._body = body
 

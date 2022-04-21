@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NeutronFirewallGroup:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class NeutronFirewallGroup:
     }
 
     def __init__(self, id=None, name=None, description=None, admin_state_up=None, egress_firewall_policy_id=None, ingress_firewall_policy_id=None, ports=None, public=None, status=None, tenant_id=None, project_id=None, created_at=None, updated_at=None):
-        """NeutronFirewallGroup - a model defined in huaweicloud sdk"""
+        """NeutronFirewallGroup
+
+        The model defined in huaweicloud sdk
+
+        :param id: 功能说明：网络ACL组的ID
+        :type id: str
+        :param name: 功能说明：网络ACL组名称 取值范围：0-255个字符
+        :type name: str
+        :param description: 功能说明：网络ACL组描述 取值范围：0-255个字符
+        :type description: str
+        :param admin_state_up: 网络ACL防火墙是否受管理员控制。
+        :type admin_state_up: bool
+        :param egress_firewall_policy_id: 功能说明：出方向网络ACL策略ID
+        :type egress_firewall_policy_id: str
+        :param ingress_firewall_policy_id: 功能说明：入方向网络ACL策略ID
+        :type ingress_firewall_policy_id: str
+        :param ports: 取值范围：网络ACL组绑定的端口列表
+        :type ports: list[str]
+        :param public: 功能说明：是否支持跨租户共享 取值范围：true/false
+        :type public: bool
+        :param status: 功能说明：网络ACL组状态
+        :type status: str
+        :param tenant_id: 功能说明：网络ACL组所属项目ID
+        :type tenant_id: str
+        :param project_id: 功能说明：网络ACL组所属项目ID
+        :type project_id: str
+        :param created_at: 功能说明：资源创建时间，UTC时间 格式：yyyy-MM-ddTHH:mm:ss
+        :type created_at: datetime
+        :param updated_at: 功能说明：资源更新时间，UTC时间 格式：yyyy-MM-ddTHH:mm:ss
+        :type updated_at: datetime
+        """
         
         
 
@@ -105,7 +134,7 @@ class NeutronFirewallGroup:
         功能说明：网络ACL组的ID
 
         :param id: The id of this NeutronFirewallGroup.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -127,7 +156,7 @@ class NeutronFirewallGroup:
         功能说明：网络ACL组名称 取值范围：0-255个字符
 
         :param name: The name of this NeutronFirewallGroup.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -149,7 +178,7 @@ class NeutronFirewallGroup:
         功能说明：网络ACL组描述 取值范围：0-255个字符
 
         :param description: The description of this NeutronFirewallGroup.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -171,7 +200,7 @@ class NeutronFirewallGroup:
         网络ACL防火墙是否受管理员控制。
 
         :param admin_state_up: The admin_state_up of this NeutronFirewallGroup.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 
@@ -193,7 +222,7 @@ class NeutronFirewallGroup:
         功能说明：出方向网络ACL策略ID
 
         :param egress_firewall_policy_id: The egress_firewall_policy_id of this NeutronFirewallGroup.
-        :type: str
+        :type egress_firewall_policy_id: str
         """
         self._egress_firewall_policy_id = egress_firewall_policy_id
 
@@ -215,7 +244,7 @@ class NeutronFirewallGroup:
         功能说明：入方向网络ACL策略ID
 
         :param ingress_firewall_policy_id: The ingress_firewall_policy_id of this NeutronFirewallGroup.
-        :type: str
+        :type ingress_firewall_policy_id: str
         """
         self._ingress_firewall_policy_id = ingress_firewall_policy_id
 
@@ -237,7 +266,7 @@ class NeutronFirewallGroup:
         取值范围：网络ACL组绑定的端口列表
 
         :param ports: The ports of this NeutronFirewallGroup.
-        :type: list[str]
+        :type ports: list[str]
         """
         self._ports = ports
 
@@ -259,7 +288,7 @@ class NeutronFirewallGroup:
         功能说明：是否支持跨租户共享 取值范围：true/false
 
         :param public: The public of this NeutronFirewallGroup.
-        :type: bool
+        :type public: bool
         """
         self._public = public
 
@@ -281,7 +310,7 @@ class NeutronFirewallGroup:
         功能说明：网络ACL组状态
 
         :param status: The status of this NeutronFirewallGroup.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -303,7 +332,7 @@ class NeutronFirewallGroup:
         功能说明：网络ACL组所属项目ID
 
         :param tenant_id: The tenant_id of this NeutronFirewallGroup.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 
@@ -325,7 +354,7 @@ class NeutronFirewallGroup:
         功能说明：网络ACL组所属项目ID
 
         :param project_id: The project_id of this NeutronFirewallGroup.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -347,7 +376,7 @@ class NeutronFirewallGroup:
         功能说明：资源创建时间，UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 
         :param created_at: The created_at of this NeutronFirewallGroup.
-        :type: datetime
+        :type created_at: datetime
         """
         self._created_at = created_at
 
@@ -369,7 +398,7 @@ class NeutronFirewallGroup:
         功能说明：资源更新时间，UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 
         :param updated_at: The updated_at of this NeutronFirewallGroup.
-        :type: datetime
+        :type updated_at: datetime
         """
         self._updated_at = updated_at
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListInstancesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListInstancesResponse(SdkResponse):
     }
 
     def __init__(self, instance_num=None, instances=None):
-        """ListInstancesResponse - a model defined in huaweicloud sdk"""
+        """ListInstancesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param instance_num: 实例个数。
+        :type instance_num: int
+        :param instances: 实例的详情数组。
+        :type instances: list[:class:`huaweicloudsdkdcs.v2.InstanceListInfo`]
+        """
         
         super(ListInstancesResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListInstancesResponse(SdkResponse):
         实例个数。
 
         :param instance_num: The instance_num of this ListInstancesResponse.
-        :type: int
+        :type instance_num: int
         """
         self._instance_num = instance_num
 
@@ -74,7 +81,7 @@ class ListInstancesResponse(SdkResponse):
         实例的详情数组。
 
         :return: The instances of this ListInstancesResponse.
-        :rtype: list[InstanceListInfo]
+        :rtype: list[:class:`huaweicloudsdkdcs.v2.InstanceListInfo`]
         """
         return self._instances
 
@@ -85,7 +92,7 @@ class ListInstancesResponse(SdkResponse):
         实例的详情数组。
 
         :param instances: The instances of this ListInstancesResponse.
-        :type: list[InstanceListInfo]
+        :type instances: list[:class:`huaweicloudsdkdcs.v2.InstanceListInfo`]
         """
         self._instances = instances
 

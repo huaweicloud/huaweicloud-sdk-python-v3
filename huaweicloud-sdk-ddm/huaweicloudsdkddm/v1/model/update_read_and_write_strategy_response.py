@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateReadAndWriteStrategyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateReadAndWriteStrategyResponse(SdkResponse):
     }
 
     def __init__(self, success=None, instance_id=None):
-        """UpdateReadAndWriteStrategyResponse - a model defined in huaweicloud sdk"""
+        """UpdateReadAndWriteStrategyResponse
+
+        The model defined in huaweicloud sdk
+
+        :param success: 操作是否成功。
+        :type success: bool
+        :param instance_id: DDM实例ID。
+        :type instance_id: str
+        """
         
         super(UpdateReadAndWriteStrategyResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class UpdateReadAndWriteStrategyResponse(SdkResponse):
         操作是否成功。
 
         :param success: The success of this UpdateReadAndWriteStrategyResponse.
-        :type: bool
+        :type success: bool
         """
         self._success = success
 
@@ -85,7 +92,7 @@ class UpdateReadAndWriteStrategyResponse(SdkResponse):
         DDM实例ID。
 
         :param instance_id: The instance_id of this UpdateReadAndWriteStrategyResponse.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 

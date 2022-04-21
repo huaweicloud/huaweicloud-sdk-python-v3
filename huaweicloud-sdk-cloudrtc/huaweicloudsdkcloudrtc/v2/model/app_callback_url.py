@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AppCallbackUrl:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class AppCallbackUrl:
     }
 
     def __init__(self, url=None, auth_key=None, notify_event_subscription=None, update_time=None):
-        """AppCallbackUrl - a model defined in huaweicloud sdk"""
+        """AppCallbackUrl
+
+        The model defined in huaweicloud sdk
+
+        :param url: 回调通知url地址，url必须以http://或https://开头，需要支持POST调用。
+        :type url: str
+        :param auth_key: 回调秘钥，主要用于鉴权。如果不设置或者为空，则回调不会增加鉴权头域字段。 
+        :type auth_key: str
+        :param notify_event_subscription: 订阅云端录制通知消息。  取值如下：  - RECORD_NEW_FILE_START：录制模块开始创建新的录制文件。  - RECORD_FILE_COMPLETE：录制模块已经生成录制文件。 
+        :type notify_event_subscription: list[str]
+        :param update_time: 更新时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC。 
+        :type update_time: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class AppCallbackUrl:
         回调通知url地址，url必须以http://或https://开头，需要支持POST调用。
 
         :param url: The url of this AppCallbackUrl.
-        :type: str
+        :type url: str
         """
         self._url = url
 
@@ -95,7 +106,7 @@ class AppCallbackUrl:
         回调秘钥，主要用于鉴权。如果不设置或者为空，则回调不会增加鉴权头域字段。 
 
         :param auth_key: The auth_key of this AppCallbackUrl.
-        :type: str
+        :type auth_key: str
         """
         self._auth_key = auth_key
 
@@ -117,7 +128,7 @@ class AppCallbackUrl:
         订阅云端录制通知消息。  取值如下：  - RECORD_NEW_FILE_START：录制模块开始创建新的录制文件。  - RECORD_FILE_COMPLETE：录制模块已经生成录制文件。 
 
         :param notify_event_subscription: The notify_event_subscription of this AppCallbackUrl.
-        :type: list[str]
+        :type notify_event_subscription: list[str]
         """
         self._notify_event_subscription = notify_event_subscription
 
@@ -139,7 +150,7 @@ class AppCallbackUrl:
         更新时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC。 
 
         :param update_time: The update_time of this AppCallbackUrl.
-        :type: str
+        :type update_time: str
         """
         self._update_time = update_time
 

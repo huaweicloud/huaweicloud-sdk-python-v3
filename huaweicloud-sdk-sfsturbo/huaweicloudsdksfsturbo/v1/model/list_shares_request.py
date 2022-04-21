@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSharesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListSharesRequest:
     }
 
     def __init__(self, limit=None, offset=None):
-        """ListSharesRequest - a model defined in huaweicloud sdk"""
+        """ListSharesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 返回的文件系统个数，最大值为200。
+        :type limit: int
+        :param offset: 文件系统查询个数的偏移量。
+        :type offset: int
+        """
         
         
 
@@ -63,7 +70,7 @@ class ListSharesRequest:
         返回的文件系统个数，最大值为200。
 
         :param limit: The limit of this ListSharesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -85,7 +92,7 @@ class ListSharesRequest:
         文件系统查询个数的偏移量。
 
         :param offset: The offset of this ListSharesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 

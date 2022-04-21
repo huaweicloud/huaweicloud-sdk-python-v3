@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAvailableZonesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListAvailableZonesResponse(SdkResponse):
     }
 
     def __init__(self, region_id=None, available_zones=None):
-        """ListAvailableZonesResponse - a model defined in huaweicloud sdk"""
+        """ListAvailableZonesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param region_id: 区域ID。
+        :type region_id: str
+        :param available_zones: 可用区数组。
+        :type available_zones: list[:class:`huaweicloudsdkkafka.v2.ListAvailableZonesRespAvailableZones`]
+        """
         
         super(ListAvailableZonesResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListAvailableZonesResponse(SdkResponse):
         区域ID。
 
         :param region_id: The region_id of this ListAvailableZonesResponse.
-        :type: str
+        :type region_id: str
         """
         self._region_id = region_id
 
@@ -74,7 +81,7 @@ class ListAvailableZonesResponse(SdkResponse):
         可用区数组。
 
         :return: The available_zones of this ListAvailableZonesResponse.
-        :rtype: list[ListAvailableZonesRespAvailableZones]
+        :rtype: list[:class:`huaweicloudsdkkafka.v2.ListAvailableZonesRespAvailableZones`]
         """
         return self._available_zones
 
@@ -85,7 +92,7 @@ class ListAvailableZonesResponse(SdkResponse):
         可用区数组。
 
         :param available_zones: The available_zones of this ListAvailableZonesResponse.
-        :type: list[ListAvailableZonesRespAvailableZones]
+        :type available_zones: list[:class:`huaweicloudsdkkafka.v2.ListAvailableZonesRespAvailableZones`]
         """
         self._available_zones = available_zones
 

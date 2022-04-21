@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowSubNetworkInterfacesQuantityRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class ShowSubNetworkInterfacesQuantityRequest:
     }
 
     def __init__(self):
-        """ShowSubNetworkInterfacesQuantityRequest - a model defined in huaweicloud sdk"""
+        """ShowSubNetworkInterfacesQuantityRequest
+
+        The model defined in huaweicloud sdk
+
+        """
         
         
         self.discriminator = None

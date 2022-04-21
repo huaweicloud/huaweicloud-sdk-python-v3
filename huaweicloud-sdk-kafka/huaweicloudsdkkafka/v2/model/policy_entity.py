@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PolicyEntity:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class PolicyEntity:
     }
 
     def __init__(self, owner=None, user_name=None, access_policy=None):
-        """PolicyEntity - a model defined in huaweicloud sdk"""
+        """PolicyEntity
+
+        The model defined in huaweicloud sdk
+
+        :param owner: 是否为创建topic时所选择的用户。
+        :type owner: bool
+        :param user_name: 用户名。
+        :type user_name: str
+        :param access_policy: 权限类型。 - all：拥有发布、订阅权限; - pub：拥有发布权限; - sub：拥有订阅权限。
+        :type access_policy: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class PolicyEntity:
         是否为创建topic时所选择的用户。
 
         :param owner: The owner of this PolicyEntity.
-        :type: bool
+        :type owner: bool
         """
         self._owner = owner
 
@@ -90,7 +99,7 @@ class PolicyEntity:
         用户名。
 
         :param user_name: The user_name of this PolicyEntity.
-        :type: str
+        :type user_name: str
         """
         self._user_name = user_name
 
@@ -112,7 +121,7 @@ class PolicyEntity:
         权限类型。 - all：拥有发布、订阅权限; - pub：拥有发布权限; - sub：拥有订阅权限。
 
         :param access_policy: The access_policy of this PolicyEntity.
-        :type: str
+        :type access_policy: str
         """
         self._access_policy = access_policy
 

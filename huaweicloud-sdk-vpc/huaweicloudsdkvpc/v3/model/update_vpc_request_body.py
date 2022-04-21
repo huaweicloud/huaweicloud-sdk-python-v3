@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateVpcRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateVpcRequestBody:
     }
 
     def __init__(self, dry_run=None, vpc=None):
-        """UpdateVpcRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateVpcRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param dry_run: 功能说明：是否只预检此次请求 取值范围： -true：发送检查请求，不会更新VPC。检查项包括是否填写了必需参数、请求格式、业务限制。如果检查不通过，则返回对应错误。如果检查通过，则返回响应码202。 -false（默认值）：发送正常请求，并直接更新VPC。
+        :type dry_run: bool
+        :param vpc: 
+        :type vpc: :class:`huaweicloudsdkvpc.v3.UpdateVpcOption`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateVpcRequestBody:
         功能说明：是否只预检此次请求 取值范围： -true：发送检查请求，不会更新VPC。检查项包括是否填写了必需参数、请求格式、业务限制。如果检查不通过，则返回对应错误。如果检查通过，则返回响应码202。 -false（默认值）：发送正常请求，并直接更新VPC。
 
         :param dry_run: The dry_run of this UpdateVpcRequestBody.
-        :type: bool
+        :type dry_run: bool
         """
         self._dry_run = dry_run
 
@@ -72,7 +79,7 @@ class UpdateVpcRequestBody:
 
 
         :return: The vpc of this UpdateVpcRequestBody.
-        :rtype: UpdateVpcOption
+        :rtype: :class:`huaweicloudsdkvpc.v3.UpdateVpcOption`
         """
         return self._vpc
 
@@ -82,7 +89,7 @@ class UpdateVpcRequestBody:
 
 
         :param vpc: The vpc of this UpdateVpcRequestBody.
-        :type: UpdateVpcOption
+        :type vpc: :class:`huaweicloudsdkvpc.v3.UpdateVpcOption`
         """
         self._vpc = vpc
 

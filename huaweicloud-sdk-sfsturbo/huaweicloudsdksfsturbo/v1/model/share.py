@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Share:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class Share:
     }
 
     def __init__(self, availability_zone=None, description=None, enterprise_project_id=None, metadata=None, name=None, security_group_id=None, share_proto=None, share_type=None, size=None, subnet_id=None, vpc_id=None, backup_id=None):
-        """Share - a model defined in huaweicloud sdk"""
+        """Share
+
+        The model defined in huaweicloud sdk
+
+        :param availability_zone: 文件系统所在可用区(az)的编码
+        :type availability_zone: str
+        :param description: 文件系统描述信息，长度为0~255。当前不支持。
+        :type description: str
+        :param enterprise_project_id: 创建文件系统时，给文件系统绑定的企业项目ID。
+        :type enterprise_project_id: str
+        :param metadata: 
+        :type metadata: :class:`huaweicloudsdksfsturbo.v1.Metadata`
+        :param name: SFS Turbo文件系统的名称。长度为4~64位，必须以字母开头，可以包含字母、数字、中划线、下划线，不能包含其他的特殊字符，不区分大小写。
+        :type name: str
+        :param security_group_id: 用户在某一区域下的安全组ID。
+        :type security_group_id: str
+        :param share_proto: 文件系统共享协议，有效值为NFS。NFS（Network File System），即网络文件系统。一种使用于分散式文件系统的协议，通过网络让不同的机器、不同的操作系统能够彼此分享数据。
+        :type share_proto: str
+        :param share_type: 文件系统类型，有效值为STANDARD或者PERFORMANCE。
+        :type share_type: str
+        :param size: 普通文件系统容量，单位GB，取值范围500~32768。 增强型文件系统，即在“metadata”字段中设置了expand_type字段，则容量范围是10240~327680
+        :type size: int
+        :param subnet_id: 用户在VPC下面的子网的网络ID。
+        :type subnet_id: str
+        :param vpc_id: 用户在某一区域下的VPC ID。
+        :type vpc_id: str
+        :param backup_id: 备份ID，从备份创建文件系统时为必选。
+        :type backup_id: str
+        """
         
         
 
@@ -105,7 +132,7 @@ class Share:
         文件系统所在可用区(az)的编码
 
         :param availability_zone: The availability_zone of this Share.
-        :type: str
+        :type availability_zone: str
         """
         self._availability_zone = availability_zone
 
@@ -127,7 +154,7 @@ class Share:
         文件系统描述信息，长度为0~255。当前不支持。
 
         :param description: The description of this Share.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -149,7 +176,7 @@ class Share:
         创建文件系统时，给文件系统绑定的企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this Share.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -159,7 +186,7 @@ class Share:
 
 
         :return: The metadata of this Share.
-        :rtype: Metadata
+        :rtype: :class:`huaweicloudsdksfsturbo.v1.Metadata`
         """
         return self._metadata
 
@@ -169,7 +196,7 @@ class Share:
 
 
         :param metadata: The metadata of this Share.
-        :type: Metadata
+        :type metadata: :class:`huaweicloudsdksfsturbo.v1.Metadata`
         """
         self._metadata = metadata
 
@@ -191,7 +218,7 @@ class Share:
         SFS Turbo文件系统的名称。长度为4~64位，必须以字母开头，可以包含字母、数字、中划线、下划线，不能包含其他的特殊字符，不区分大小写。
 
         :param name: The name of this Share.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -213,7 +240,7 @@ class Share:
         用户在某一区域下的安全组ID。
 
         :param security_group_id: The security_group_id of this Share.
-        :type: str
+        :type security_group_id: str
         """
         self._security_group_id = security_group_id
 
@@ -235,7 +262,7 @@ class Share:
         文件系统共享协议，有效值为NFS。NFS（Network File System），即网络文件系统。一种使用于分散式文件系统的协议，通过网络让不同的机器、不同的操作系统能够彼此分享数据。
 
         :param share_proto: The share_proto of this Share.
-        :type: str
+        :type share_proto: str
         """
         self._share_proto = share_proto
 
@@ -257,7 +284,7 @@ class Share:
         文件系统类型，有效值为STANDARD或者PERFORMANCE。
 
         :param share_type: The share_type of this Share.
-        :type: str
+        :type share_type: str
         """
         self._share_type = share_type
 
@@ -279,7 +306,7 @@ class Share:
         普通文件系统容量，单位GB，取值范围500~32768。 增强型文件系统，即在“metadata”字段中设置了expand_type字段，则容量范围是10240~327680
 
         :param size: The size of this Share.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -301,7 +328,7 @@ class Share:
         用户在VPC下面的子网的网络ID。
 
         :param subnet_id: The subnet_id of this Share.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -323,7 +350,7 @@ class Share:
         用户在某一区域下的VPC ID。
 
         :param vpc_id: The vpc_id of this Share.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -345,7 +372,7 @@ class Share:
         备份ID，从备份创建文件系统时为必选。
 
         :param backup_id: The backup_id of this Share.
-        :type: str
+        :type backup_id: str
         """
         self._backup_id = backup_id
 

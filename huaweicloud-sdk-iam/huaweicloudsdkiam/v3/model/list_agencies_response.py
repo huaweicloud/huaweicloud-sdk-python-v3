@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAgenciesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListAgenciesResponse(SdkResponse):
     }
 
     def __init__(self, agencies=None):
-        """ListAgenciesResponse - a model defined in huaweicloud sdk"""
+        """ListAgenciesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param agencies: 委托信息列表。
+        :type agencies: list[:class:`huaweicloudsdkiam.v3.AgencyResult`]
+        """
         
         super(ListAgenciesResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListAgenciesResponse(SdkResponse):
         委托信息列表。
 
         :return: The agencies of this ListAgenciesResponse.
-        :rtype: list[AgencyResult]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.AgencyResult`]
         """
         return self._agencies
 
@@ -58,7 +63,7 @@ class ListAgenciesResponse(SdkResponse):
         委托信息列表。
 
         :param agencies: The agencies of this ListAgenciesResponse.
-        :type: list[AgencyResult]
+        :type agencies: list[:class:`huaweicloudsdkiam.v3.AgencyResult`]
         """
         self._agencies = agencies
 

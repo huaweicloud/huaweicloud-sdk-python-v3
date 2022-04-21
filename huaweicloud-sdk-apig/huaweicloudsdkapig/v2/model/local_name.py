@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LocalName:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class LocalName:
     }
 
     def __init__(self, en_us=None, zh_cn=None):
-        """LocalName - a model defined in huaweicloud sdk"""
+        """LocalName
+
+        The model defined in huaweicloud sdk
+
+        :param en_us: 可用区英文名称。
+        :type en_us: str
+        :param zh_cn: 可用区中文名称。
+        :type zh_cn: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class LocalName:
         可用区英文名称。
 
         :param en_us: The en_us of this LocalName.
-        :type: str
+        :type en_us: str
         """
         self._en_us = en_us
 
@@ -85,7 +92,7 @@ class LocalName:
         可用区中文名称。
 
         :param zh_cn: The zh_cn of this LocalName.
-        :type: str
+        :type zh_cn: str
         """
         self._zh_cn = zh_cn
 

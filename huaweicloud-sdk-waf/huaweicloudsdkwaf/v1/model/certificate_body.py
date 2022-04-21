@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CertificateBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class CertificateBody:
     }
 
     def __init__(self, id=None, name=None, content=None, key=None, expire_time=None, exp_status=None, timestamp=None, bind_host=None):
-        """CertificateBody - a model defined in huaweicloud sdk"""
+        """CertificateBody
+
+        The model defined in huaweicloud sdk
+
+        :param id: 证书id
+        :type id: str
+        :param name: 证书名
+        :type name: str
+        :param content: 证书文件，PEM编码
+        :type content: str
+        :param key: 证书私钥，PEM编码
+        :type key: str
+        :param expire_time: 证书过期时间戳
+        :type expire_time: int
+        :param exp_status: 证书过期状态，0-未过期，1-已过期，2-即将过期（一个月内即将过期）
+        :type exp_status: int
+        :param timestamp: 证书上传时间戳
+        :type timestamp: int
+        :param bind_host: 证书关联的域名信息
+        :type bind_host: list[:class:`huaweicloudsdkwaf.v1.BindHost`]
+        """
         
         
 
@@ -90,7 +109,7 @@ class CertificateBody:
         证书id
 
         :param id: The id of this CertificateBody.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -112,7 +131,7 @@ class CertificateBody:
         证书名
 
         :param name: The name of this CertificateBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -134,7 +153,7 @@ class CertificateBody:
         证书文件，PEM编码
 
         :param content: The content of this CertificateBody.
-        :type: str
+        :type content: str
         """
         self._content = content
 
@@ -156,7 +175,7 @@ class CertificateBody:
         证书私钥，PEM编码
 
         :param key: The key of this CertificateBody.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -178,7 +197,7 @@ class CertificateBody:
         证书过期时间戳
 
         :param expire_time: The expire_time of this CertificateBody.
-        :type: int
+        :type expire_time: int
         """
         self._expire_time = expire_time
 
@@ -200,7 +219,7 @@ class CertificateBody:
         证书过期状态，0-未过期，1-已过期，2-即将过期（一个月内即将过期）
 
         :param exp_status: The exp_status of this CertificateBody.
-        :type: int
+        :type exp_status: int
         """
         self._exp_status = exp_status
 
@@ -222,7 +241,7 @@ class CertificateBody:
         证书上传时间戳
 
         :param timestamp: The timestamp of this CertificateBody.
-        :type: int
+        :type timestamp: int
         """
         self._timestamp = timestamp
 
@@ -233,7 +252,7 @@ class CertificateBody:
         证书关联的域名信息
 
         :return: The bind_host of this CertificateBody.
-        :rtype: list[BindHost]
+        :rtype: list[:class:`huaweicloudsdkwaf.v1.BindHost`]
         """
         return self._bind_host
 
@@ -244,7 +263,7 @@ class CertificateBody:
         证书关联的域名信息
 
         :param bind_host: The bind_host of this CertificateBody.
-        :type: list[BindHost]
+        :type bind_host: list[:class:`huaweicloudsdkwaf.v1.BindHost`]
         """
         self._bind_host = bind_host
 

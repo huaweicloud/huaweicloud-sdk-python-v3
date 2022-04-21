@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRoutesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListRoutesResponse(SdkResponse):
     }
 
     def __init__(self, routes=None, update_time=None):
-        """ListRoutesResponse - a model defined in huaweicloud sdk"""
+        """ListRoutesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param routes: 路由列表
+        :type routes: list[:class:`huaweicloudsdkiotedge.v2.RouterDetailRespDTO`]
+        :param update_time: 最后一次修改时间
+        :type update_time: str
+        """
         
         super(ListRoutesResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListRoutesResponse(SdkResponse):
         路由列表
 
         :return: The routes of this ListRoutesResponse.
-        :rtype: list[RouterDetailRespDTO]
+        :rtype: list[:class:`huaweicloudsdkiotedge.v2.RouterDetailRespDTO`]
         """
         return self._routes
 
@@ -63,7 +70,7 @@ class ListRoutesResponse(SdkResponse):
         路由列表
 
         :param routes: The routes of this ListRoutesResponse.
-        :type: list[RouterDetailRespDTO]
+        :type routes: list[:class:`huaweicloudsdkiotedge.v2.RouterDetailRespDTO`]
         """
         self._routes = routes
 
@@ -85,7 +92,7 @@ class ListRoutesResponse(SdkResponse):
         最后一次修改时间
 
         :param update_time: The update_time of this ListRoutesResponse.
-        :type: str
+        :type update_time: str
         """
         self._update_time = update_time
 

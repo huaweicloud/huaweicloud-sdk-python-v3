@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PersonalityResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class PersonalityResult:
     }
 
     def __init__(self, path=None, content=None):
-        """PersonalityResult - a model defined in huaweicloud sdk"""
+        """PersonalityResult
+
+        The model defined in huaweicloud sdk
+
+        :param path: 注入文件路径信息。
+        :type path: str
+        :param content: 注入文件内容，base64格式编码。
+        :type content: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class PersonalityResult:
         注入文件路径信息。
 
         :param path: The path of this PersonalityResult.
-        :type: str
+        :type path: str
         """
         self._path = path
 
@@ -85,7 +92,7 @@ class PersonalityResult:
         注入文件内容，base64格式编码。
 
         :param content: The content of this PersonalityResult.
-        :type: str
+        :type content: str
         """
         self._content = content
 

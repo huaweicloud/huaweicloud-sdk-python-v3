@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateGraphReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateGraphReq:
     }
 
     def __init__(self, graph=None):
-        """CreateGraphReq - a model defined in huaweicloud sdk"""
+        """CreateGraphReq
+
+        The model defined in huaweicloud sdk
+
+        :param graph: 
+        :type graph: :class:`huaweicloudsdkges.v1.Graph`
+        """
         
         
 
@@ -45,7 +50,7 @@ class CreateGraphReq:
 
 
         :return: The graph of this CreateGraphReq.
-        :rtype: Graph
+        :rtype: :class:`huaweicloudsdkges.v1.Graph`
         """
         return self._graph
 
@@ -55,7 +60,7 @@ class CreateGraphReq:
 
 
         :param graph: The graph of this CreateGraphReq.
-        :type: Graph
+        :type graph: :class:`huaweicloudsdkges.v1.Graph`
         """
         self._graph = graph
 

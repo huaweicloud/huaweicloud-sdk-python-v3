@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MfaAuth:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class MfaAuth:
     }
 
     def __init__(self, identity=None, scope=None):
-        """MfaAuth - a model defined in huaweicloud sdk"""
+        """MfaAuth
+
+        The model defined in huaweicloud sdk
+
+        :param identity: 
+        :type identity: :class:`huaweicloudsdkiam.v3.MfaIdentity`
+        :param scope: 
+        :type scope: :class:`huaweicloudsdkiam.v3.AuthScope`
+        """
         
         
 
@@ -49,7 +56,7 @@ class MfaAuth:
 
 
         :return: The identity of this MfaAuth.
-        :rtype: MfaIdentity
+        :rtype: :class:`huaweicloudsdkiam.v3.MfaIdentity`
         """
         return self._identity
 
@@ -59,7 +66,7 @@ class MfaAuth:
 
 
         :param identity: The identity of this MfaAuth.
-        :type: MfaIdentity
+        :type identity: :class:`huaweicloudsdkiam.v3.MfaIdentity`
         """
         self._identity = identity
 
@@ -69,7 +76,7 @@ class MfaAuth:
 
 
         :return: The scope of this MfaAuth.
-        :rtype: AuthScope
+        :rtype: :class:`huaweicloudsdkiam.v3.AuthScope`
         """
         return self._scope
 
@@ -79,7 +86,7 @@ class MfaAuth:
 
 
         :param scope: The scope of this MfaAuth.
-        :type: AuthScope
+        :type scope: :class:`huaweicloudsdkiam.v3.AuthScope`
         """
         self._scope = scope
 

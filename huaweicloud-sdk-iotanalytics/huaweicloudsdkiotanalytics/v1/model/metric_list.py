@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MetricList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class MetricList:
     }
 
     def __init__(self, metric_name=None, values=None):
-        """MetricList - a model defined in huaweicloud sdk"""
+        """MetricList
+
+        The model defined in huaweicloud sdk
+
+        :param metric_name: metric 名称
+        :type metric_name: str
+        :param values: 计算结果
+        :type values: list[object]
+        """
         
         
 
@@ -63,7 +70,7 @@ class MetricList:
         metric 名称
 
         :param metric_name: The metric_name of this MetricList.
-        :type: str
+        :type metric_name: str
         """
         self._metric_name = metric_name
 
@@ -85,7 +92,7 @@ class MetricList:
         计算结果
 
         :param values: The values of this MetricList.
-        :type: list[object]
+        :type values: list[object]
         """
         self._values = values
 

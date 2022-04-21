@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowIkThesaurusRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowIkThesaurusRequest:
     }
 
     def __init__(self, cluster_id=None):
-        """ShowIkThesaurusRequest - a model defined in huaweicloud sdk"""
+        """ShowIkThesaurusRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 指定需查询词库状态的集群ID。
+        :type cluster_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowIkThesaurusRequest:
         指定需查询词库状态的集群ID。
 
         :param cluster_id: The cluster_id of this ShowIkThesaurusRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 

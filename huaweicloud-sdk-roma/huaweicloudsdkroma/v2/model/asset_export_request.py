@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AssetExportRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AssetExportRequest:
     }
 
     def __init__(self, apps=None, tasks=None):
-        """AssetExportRequest - a model defined in huaweicloud sdk"""
+        """AssetExportRequest
+
+        The model defined in huaweicloud sdk
+
+        :param apps: 应用列表
+        :type apps: list[:class:`huaweicloudsdkroma.v2.AssetExportRequestApps`]
+        :param tasks: 任务列表
+        :type tasks: list[:class:`huaweicloudsdkroma.v2.AssetExportRequestTasks`]
+        """
         
         
 
@@ -51,7 +58,7 @@ class AssetExportRequest:
         应用列表
 
         :return: The apps of this AssetExportRequest.
-        :rtype: list[AssetExportRequestApps]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.AssetExportRequestApps`]
         """
         return self._apps
 
@@ -62,7 +69,7 @@ class AssetExportRequest:
         应用列表
 
         :param apps: The apps of this AssetExportRequest.
-        :type: list[AssetExportRequestApps]
+        :type apps: list[:class:`huaweicloudsdkroma.v2.AssetExportRequestApps`]
         """
         self._apps = apps
 
@@ -73,7 +80,7 @@ class AssetExportRequest:
         任务列表
 
         :return: The tasks of this AssetExportRequest.
-        :rtype: list[AssetExportRequestTasks]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.AssetExportRequestTasks`]
         """
         return self._tasks
 
@@ -84,7 +91,7 @@ class AssetExportRequest:
         任务列表
 
         :param tasks: The tasks of this AssetExportRequest.
-        :type: list[AssetExportRequestTasks]
+        :type tasks: list[:class:`huaweicloudsdkroma.v2.AssetExportRequestTasks`]
         """
         self._tasks = tasks
 

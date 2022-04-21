@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UserInstantIncidentMsgV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UserInstantIncidentMsgV2:
     }
 
     def __init__(self, incident_id=None, message_list=None):
-        """UserInstantIncidentMsgV2 - a model defined in huaweicloud sdk"""
+        """UserInstantIncidentMsgV2
+
+        The model defined in huaweicloud sdk
+
+        :param incident_id: 工单id
+        :type incident_id: str
+        :param message_list: 留言列表
+        :type message_list: list[:class:`huaweicloudsdkosm.v2.QueryMessageInfoV2`]
+        """
         
         
 
@@ -63,7 +70,7 @@ class UserInstantIncidentMsgV2:
         工单id
 
         :param incident_id: The incident_id of this UserInstantIncidentMsgV2.
-        :type: str
+        :type incident_id: str
         """
         self._incident_id = incident_id
 
@@ -74,7 +81,7 @@ class UserInstantIncidentMsgV2:
         留言列表
 
         :return: The message_list of this UserInstantIncidentMsgV2.
-        :rtype: list[QueryMessageInfoV2]
+        :rtype: list[:class:`huaweicloudsdkosm.v2.QueryMessageInfoV2`]
         """
         return self._message_list
 
@@ -85,7 +92,7 @@ class UserInstantIncidentMsgV2:
         留言列表
 
         :param message_list: The message_list of this UserInstantIncidentMsgV2.
-        :type: list[QueryMessageInfoV2]
+        :type message_list: list[:class:`huaweicloudsdkosm.v2.QueryMessageInfoV2`]
         """
         self._message_list = message_list
 

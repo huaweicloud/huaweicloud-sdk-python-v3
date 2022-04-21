@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchSetSpeedRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchSetSpeedRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """BatchSetSpeedRequest - a model defined in huaweicloud sdk"""
+        """BatchSetSpeedRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 请求语言类型
+        :type x_language: str
+        :param body: Body of the BatchSetSpeedRequest
+        :type body: :class:`huaweicloudsdkdrs.v3.BatchLimitSpeedReq`
+        """
         
         
 
@@ -63,7 +70,7 @@ class BatchSetSpeedRequest:
         请求语言类型
 
         :param x_language: The x_language of this BatchSetSpeedRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -73,7 +80,7 @@ class BatchSetSpeedRequest:
 
 
         :return: The body of this BatchSetSpeedRequest.
-        :rtype: BatchLimitSpeedReq
+        :rtype: :class:`huaweicloudsdkdrs.v3.BatchLimitSpeedReq`
         """
         return self._body
 
@@ -83,7 +90,7 @@ class BatchSetSpeedRequest:
 
 
         :param body: The body of this BatchSetSpeedRequest.
-        :type: BatchLimitSpeedReq
+        :type body: :class:`huaweicloudsdkdrs.v3.BatchLimitSpeedReq`
         """
         self._body = body
 

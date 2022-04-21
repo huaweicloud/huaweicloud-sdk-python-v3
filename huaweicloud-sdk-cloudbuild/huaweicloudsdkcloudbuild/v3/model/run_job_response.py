@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunJobResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class RunJobResponse(SdkResponse):
     }
 
     def __init__(self, octopus_job_name=None, actual_build_number=None, daily_build_number=None):
-        """RunJobResponse - a model defined in huaweicloud sdk"""
+        """RunJobResponse
+
+        The model defined in huaweicloud sdk
+
+        :param octopus_job_name: 临时任务名称
+        :type octopus_job_name: str
+        :param actual_build_number: 实际构建次数
+        :type actual_build_number: str
+        :param daily_build_number: 构建每日编号
+        :type daily_build_number: str
+        """
         
         super(RunJobResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class RunJobResponse(SdkResponse):
         临时任务名称
 
         :param octopus_job_name: The octopus_job_name of this RunJobResponse.
-        :type: str
+        :type octopus_job_name: str
         """
         self._octopus_job_name = octopus_job_name
 
@@ -90,7 +99,7 @@ class RunJobResponse(SdkResponse):
         实际构建次数
 
         :param actual_build_number: The actual_build_number of this RunJobResponse.
-        :type: str
+        :type actual_build_number: str
         """
         self._actual_build_number = actual_build_number
 
@@ -112,7 +121,7 @@ class RunJobResponse(SdkResponse):
         构建每日编号
 
         :param daily_build_number: The daily_build_number of this RunJobResponse.
-        :type: str
+        :type daily_build_number: str
         """
         self._daily_build_number = daily_build_number
 

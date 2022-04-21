@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TagLaborRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class TagLaborRequest:
     }
 
     def __init__(self, qabot_id=None, request_id=None):
-        """TagLaborRequest - a model defined in huaweicloud sdk"""
+        """TagLaborRequest
+
+        The model defined in huaweicloud sdk
+
+        :param qabot_id: qabot编号，UUID格式。
+        :type qabot_id: str
+        :param request_id: 请求ID，由问答机器人会话生成。
+        :type request_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class TagLaborRequest:
         qabot编号，UUID格式。
 
         :param qabot_id: The qabot_id of this TagLaborRequest.
-        :type: str
+        :type qabot_id: str
         """
         self._qabot_id = qabot_id
 
@@ -83,7 +90,7 @@ class TagLaborRequest:
         请求ID，由问答机器人会话生成。
 
         :param request_id: The request_id of this TagLaborRequest.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 

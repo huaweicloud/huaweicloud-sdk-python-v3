@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowWindowsBaremetalServerPwdResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowWindowsBaremetalServerPwdResponse(SdkResponse):
     }
 
     def __init__(self, password=None):
-        """ShowWindowsBaremetalServerPwdResponse - a model defined in huaweicloud sdk"""
+        """ShowWindowsBaremetalServerPwdResponse
+
+        The model defined in huaweicloud sdk
+
+        :param password: 加密后的密码
+        :type password: str
+        """
         
         super(ShowWindowsBaremetalServerPwdResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class ShowWindowsBaremetalServerPwdResponse(SdkResponse):
         加密后的密码
 
         :param password: The password of this ShowWindowsBaremetalServerPwdResponse.
-        :type: str
+        :type password: str
         """
         self._password = password
 

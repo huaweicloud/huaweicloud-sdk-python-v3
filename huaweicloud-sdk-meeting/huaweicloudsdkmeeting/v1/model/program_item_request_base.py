@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ProgramItemRequestBase:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ProgramItemRequestBase:
     }
 
     def __init__(self, material_id=None, play_time=None):
-        """ProgramItemRequestBase - a model defined in huaweicloud sdk"""
+        """ProgramItemRequestBase
+
+        The model defined in huaweicloud sdk
+
+        :param material_id: 素材ID
+        :type material_id: str
+        :param play_time: 播放时长
+        :type play_time: int
+        """
         
         
 
@@ -61,7 +68,7 @@ class ProgramItemRequestBase:
         素材ID
 
         :param material_id: The material_id of this ProgramItemRequestBase.
-        :type: str
+        :type material_id: str
         """
         self._material_id = material_id
 
@@ -83,7 +90,7 @@ class ProgramItemRequestBase:
         播放时长
 
         :param play_time: The play_time of this ProgramItemRequestBase.
-        :type: int
+        :type play_time: int
         """
         self._play_time = play_time
 

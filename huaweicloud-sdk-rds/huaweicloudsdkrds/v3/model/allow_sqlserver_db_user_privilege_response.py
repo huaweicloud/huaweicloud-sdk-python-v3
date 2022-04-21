@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AllowSqlserverDbUserPrivilegeResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class AllowSqlserverDbUserPrivilegeResponse(SdkResponse):
     }
 
     def __init__(self, resp=None):
-        """AllowSqlserverDbUserPrivilegeResponse - a model defined in huaweicloud sdk"""
+        """AllowSqlserverDbUserPrivilegeResponse
+
+        The model defined in huaweicloud sdk
+
+        :param resp: 操作结果。
+        :type resp: str
+        """
         
         super(AllowSqlserverDbUserPrivilegeResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class AllowSqlserverDbUserPrivilegeResponse(SdkResponse):
         操作结果。
 
         :param resp: The resp of this AllowSqlserverDbUserPrivilegeResponse.
-        :type: str
+        :type resp: str
         """
         self._resp = resp
 

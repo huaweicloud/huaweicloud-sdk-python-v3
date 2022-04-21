@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPartnerAccountChangeRecordsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ListPartnerAccountChangeRecordsRequest:
     }
 
     def __init__(self, balance_type=None, trade_type=None, trade_time_begin=None, trade_time_end=None, offset=None, limit=None, indirect_partner_id=None):
-        """ListPartnerAccountChangeRecordsRequest - a model defined in huaweicloud sdk"""
+        """ListPartnerAccountChangeRecordsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param balance_type: 账户类型。BALANCE_TYPE_DEBIT：现金账户BALANCE_TYPE_CREDIT：信用账户
+        :type balance_type: str
+        :param trade_type: 交易类型。RECHARGE：充值DEDEUCT：消费REFUND：退款RFROZEN：冻结TRANS：转账，余额和保证金互换（老商务模式，当前已无保证金账户）ADJUST：调账（华为核销等）BEADJUST：经销商拨款BERETRIEVE：经销商回收BEUNBIND：解绑/关联模式切换导致的回收EXPIRED：过期清零BONUSCONVERT：奖励金转换（老商务模式，当前已无奖励金账户）TRADE_MODE_TRANSFER：交易模式变更SYSTEM：系统操作（购买标销合同的伙伴涉及该模式）COUPONCANCEL：代金券回收
+        :type trade_type: str
+        :param trade_time_begin: 查询收支明细的开始日期。 说明： 东八区时间，格式为YYYY-MM-DD，如“2017-10-21”。默认值为一年前的当天日期。
+        :type trade_time_begin: str
+        :param trade_time_end: 查询收支明细的结束日期。 说明： 东八区时间，格式为YYYY-MM-DD，如“2017-12-21”。默认值为当前日期。
+        :type trade_time_end: str
+        :param offset: 偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset &#x3D; 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
+        :type offset: int
+        :param limit: 每次查询的数量，默认值为10。
+        :type limit: int
+        :param indirect_partner_id: 精英服务商ID。获取方法请参见查询精英服务商列表。 说明： 华为云伙伴能力中心（一级经销商）查询精英服务商（二级经销商）的收支明细时，需携带此参数；否则只能查询自身的收支明细。
+        :type indirect_partner_id: str
+        """
         
         
 
@@ -87,7 +104,7 @@ class ListPartnerAccountChangeRecordsRequest:
         账户类型。BALANCE_TYPE_DEBIT：现金账户BALANCE_TYPE_CREDIT：信用账户
 
         :param balance_type: The balance_type of this ListPartnerAccountChangeRecordsRequest.
-        :type: str
+        :type balance_type: str
         """
         self._balance_type = balance_type
 
@@ -109,7 +126,7 @@ class ListPartnerAccountChangeRecordsRequest:
         交易类型。RECHARGE：充值DEDEUCT：消费REFUND：退款RFROZEN：冻结TRANS：转账，余额和保证金互换（老商务模式，当前已无保证金账户）ADJUST：调账（华为核销等）BEADJUST：经销商拨款BERETRIEVE：经销商回收BEUNBIND：解绑/关联模式切换导致的回收EXPIRED：过期清零BONUSCONVERT：奖励金转换（老商务模式，当前已无奖励金账户）TRADE_MODE_TRANSFER：交易模式变更SYSTEM：系统操作（购买标销合同的伙伴涉及该模式）COUPONCANCEL：代金券回收
 
         :param trade_type: The trade_type of this ListPartnerAccountChangeRecordsRequest.
-        :type: str
+        :type trade_type: str
         """
         self._trade_type = trade_type
 
@@ -131,7 +148,7 @@ class ListPartnerAccountChangeRecordsRequest:
         查询收支明细的开始日期。 说明： 东八区时间，格式为YYYY-MM-DD，如“2017-10-21”。默认值为一年前的当天日期。
 
         :param trade_time_begin: The trade_time_begin of this ListPartnerAccountChangeRecordsRequest.
-        :type: str
+        :type trade_time_begin: str
         """
         self._trade_time_begin = trade_time_begin
 
@@ -153,7 +170,7 @@ class ListPartnerAccountChangeRecordsRequest:
         查询收支明细的结束日期。 说明： 东八区时间，格式为YYYY-MM-DD，如“2017-12-21”。默认值为当前日期。
 
         :param trade_time_end: The trade_time_end of this ListPartnerAccountChangeRecordsRequest.
-        :type: str
+        :type trade_time_end: str
         """
         self._trade_time_end = trade_time_end
 
@@ -175,7 +192,7 @@ class ListPartnerAccountChangeRecordsRequest:
         偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
         :param offset: The offset of this ListPartnerAccountChangeRecordsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -197,7 +214,7 @@ class ListPartnerAccountChangeRecordsRequest:
         每次查询的数量，默认值为10。
 
         :param limit: The limit of this ListPartnerAccountChangeRecordsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -219,7 +236,7 @@ class ListPartnerAccountChangeRecordsRequest:
         精英服务商ID。获取方法请参见查询精英服务商列表。 说明： 华为云伙伴能力中心（一级经销商）查询精英服务商（二级经销商）的收支明细时，需携带此参数；否则只能查询自身的收支明细。
 
         :param indirect_partner_id: The indirect_partner_id of this ListPartnerAccountChangeRecordsRequest.
-        :type: str
+        :type indirect_partner_id: str
         """
         self._indirect_partner_id = indirect_partner_id
 

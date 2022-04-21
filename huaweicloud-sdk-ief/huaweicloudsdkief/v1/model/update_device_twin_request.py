@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDeviceTwinRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateDeviceTwinRequest:
     }
 
     def __init__(self, ief_instance_id=None, device_id=None, body=None):
-        """UpdateDeviceTwinRequest - a model defined in huaweicloud sdk"""
+        """UpdateDeviceTwinRequest
+
+        The model defined in huaweicloud sdk
+
+        :param ief_instance_id: 铂金版实例ID，专业版实例为空值
+        :type ief_instance_id: str
+        :param device_id: 设备ID
+        :type device_id: str
+        :param body: Body of the UpdateDeviceTwinRequest
+        :type body: :class:`huaweicloudsdkief.v1.TwinUpdateDetail`
+        """
         
         
 
@@ -67,7 +76,7 @@ class UpdateDeviceTwinRequest:
         铂金版实例ID，专业版实例为空值
 
         :param ief_instance_id: The ief_instance_id of this UpdateDeviceTwinRequest.
-        :type: str
+        :type ief_instance_id: str
         """
         self._ief_instance_id = ief_instance_id
 
@@ -89,7 +98,7 @@ class UpdateDeviceTwinRequest:
         设备ID
 
         :param device_id: The device_id of this UpdateDeviceTwinRequest.
-        :type: str
+        :type device_id: str
         """
         self._device_id = device_id
 
@@ -99,7 +108,7 @@ class UpdateDeviceTwinRequest:
 
 
         :return: The body of this UpdateDeviceTwinRequest.
-        :rtype: TwinUpdateDetail
+        :rtype: :class:`huaweicloudsdkief.v1.TwinUpdateDetail`
         """
         return self._body
 
@@ -109,7 +118,7 @@ class UpdateDeviceTwinRequest:
 
 
         :param body: The body of this UpdateDeviceTwinRequest.
-        :type: TwinUpdateDetail
+        :type body: :class:`huaweicloudsdkief.v1.TwinUpdateDetail`
         """
         self._body = body
 

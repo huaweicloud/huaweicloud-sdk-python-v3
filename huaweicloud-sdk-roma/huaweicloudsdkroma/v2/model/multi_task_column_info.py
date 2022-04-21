@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MultiTaskColumnInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class MultiTaskColumnInfo:
     }
 
     def __init__(self, field_name=None, field_type=None, field_length=None):
-        """MultiTaskColumnInfo - a model defined in huaweicloud sdk"""
+        """MultiTaskColumnInfo
+
+        The model defined in huaweicloud sdk
+
+        :param field_name: 字段名
+        :type field_name: str
+        :param field_type: 字段类型
+        :type field_type: str
+        :param field_length: 字段长度
+        :type field_length: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class MultiTaskColumnInfo:
         字段名
 
         :param field_name: The field_name of this MultiTaskColumnInfo.
-        :type: str
+        :type field_name: str
         """
         self._field_name = field_name
 
@@ -90,7 +99,7 @@ class MultiTaskColumnInfo:
         字段类型
 
         :param field_type: The field_type of this MultiTaskColumnInfo.
-        :type: str
+        :type field_type: str
         """
         self._field_type = field_type
 
@@ -112,7 +121,7 @@ class MultiTaskColumnInfo:
         字段长度
 
         :param field_length: The field_length of this MultiTaskColumnInfo.
-        :type: str
+        :type field_length: str
         """
         self._field_length = field_length
 

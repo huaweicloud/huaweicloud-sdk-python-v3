@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListEnvironmentsV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListEnvironmentsV2Response(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, envs=None):
-        """ListEnvironmentsV2Response - a model defined in huaweicloud sdk"""
+        """ListEnvironmentsV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param size: 本次返回的列表长度
+        :type size: int
+        :param total: 满足条件的记录数
+        :type total: int
+        :param envs: 本次返回的环境列表
+        :type envs: list[:class:`huaweicloudsdkapig.v2.EnvInfo`]
+        """
         
         super(ListEnvironmentsV2Response, self).__init__()
 
@@ -66,7 +75,7 @@ class ListEnvironmentsV2Response(SdkResponse):
         本次返回的列表长度
 
         :param size: The size of this ListEnvironmentsV2Response.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -88,7 +97,7 @@ class ListEnvironmentsV2Response(SdkResponse):
         满足条件的记录数
 
         :param total: The total of this ListEnvironmentsV2Response.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -99,7 +108,7 @@ class ListEnvironmentsV2Response(SdkResponse):
         本次返回的环境列表
 
         :return: The envs of this ListEnvironmentsV2Response.
-        :rtype: list[EnvInfo]
+        :rtype: list[:class:`huaweicloudsdkapig.v2.EnvInfo`]
         """
         return self._envs
 
@@ -110,7 +119,7 @@ class ListEnvironmentsV2Response(SdkResponse):
         本次返回的环境列表
 
         :param envs: The envs of this ListEnvironmentsV2Response.
-        :type: list[EnvInfo]
+        :type envs: list[:class:`huaweicloudsdkapig.v2.EnvInfo`]
         """
         self._envs = envs
 

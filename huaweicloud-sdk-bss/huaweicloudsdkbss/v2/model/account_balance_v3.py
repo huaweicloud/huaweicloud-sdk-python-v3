@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AccountBalanceV3:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class AccountBalanceV3:
     }
 
     def __init__(self, account_id=None, account_type=None, amount=None, currency=None, designated_amount=None, credit_amount=None, measure_id=None):
-        """AccountBalanceV3 - a model defined in huaweicloud sdk"""
+        """AccountBalanceV3
+
+        The model defined in huaweicloud sdk
+
+        :param account_id: 账户标识。
+        :type account_id: str
+        :param account_type: 账户类型。 1：余额2：信用5：奖励金7：保证金
+        :type account_type: int
+        :param amount: 账户余额。
+        :type amount: float
+        :param currency: 币种。 CNY：人民币。
+        :type currency: str
+        :param designated_amount: 专款专用余额。
+        :type designated_amount: float
+        :param credit_amount: 总信用额度，仅信用账户存在该字段。
+        :type credit_amount: float
+        :param measure_id: 度量单位。 1：元
+        :type measure_id: int
+        """
         
         
 
@@ -83,7 +100,7 @@ class AccountBalanceV3:
         账户标识。
 
         :param account_id: The account_id of this AccountBalanceV3.
-        :type: str
+        :type account_id: str
         """
         self._account_id = account_id
 
@@ -105,7 +122,7 @@ class AccountBalanceV3:
         账户类型。 1：余额2：信用5：奖励金7：保证金
 
         :param account_type: The account_type of this AccountBalanceV3.
-        :type: int
+        :type account_type: int
         """
         self._account_type = account_type
 
@@ -127,7 +144,7 @@ class AccountBalanceV3:
         账户余额。
 
         :param amount: The amount of this AccountBalanceV3.
-        :type: float
+        :type amount: float
         """
         self._amount = amount
 
@@ -149,7 +166,7 @@ class AccountBalanceV3:
         币种。 CNY：人民币。
 
         :param currency: The currency of this AccountBalanceV3.
-        :type: str
+        :type currency: str
         """
         self._currency = currency
 
@@ -171,7 +188,7 @@ class AccountBalanceV3:
         专款专用余额。
 
         :param designated_amount: The designated_amount of this AccountBalanceV3.
-        :type: float
+        :type designated_amount: float
         """
         self._designated_amount = designated_amount
 
@@ -193,7 +210,7 @@ class AccountBalanceV3:
         总信用额度，仅信用账户存在该字段。
 
         :param credit_amount: The credit_amount of this AccountBalanceV3.
-        :type: float
+        :type credit_amount: float
         """
         self._credit_amount = credit_amount
 
@@ -215,7 +232,7 @@ class AccountBalanceV3:
         度量单位。 1：元
 
         :param measure_id: The measure_id of this AccountBalanceV3.
-        :type: int
+        :type measure_id: int
         """
         self._measure_id = measure_id
 

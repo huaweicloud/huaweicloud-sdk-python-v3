@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowAssetDetailRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowAssetDetailRequest:
     }
 
     def __init__(self, asset_id=None, categories=None):
-        """ShowAssetDetailRequest - a model defined in huaweicloud sdk"""
+        """ShowAssetDetailRequest
+
+        The model defined in huaweicloud sdk
+
+        :param asset_id: 媒资ID。
+        :type asset_id: str
+        :param categories: 查询的信息类型。 - 为空时表示查询所有信息。 - 不为空时支持同时查询一个或者多个类型的信息，取值如下： - - base_info：媒资基本信息。 - - transcode_info：转码结果信息。 - - thumbnail_info：截图结果信息。 - - review_info：审核结果信息。
+        :type categories: list[str]
+        """
         
         
 
@@ -62,7 +69,7 @@ class ShowAssetDetailRequest:
         媒资ID。
 
         :param asset_id: The asset_id of this ShowAssetDetailRequest.
-        :type: str
+        :type asset_id: str
         """
         self._asset_id = asset_id
 
@@ -84,7 +91,7 @@ class ShowAssetDetailRequest:
         查询的信息类型。 - 为空时表示查询所有信息。 - 不为空时支持同时查询一个或者多个类型的信息，取值如下： - - base_info：媒资基本信息。 - - transcode_info：转码结果信息。 - - thumbnail_info：截图结果信息。 - - review_info：审核结果信息。
 
         :param categories: The categories of this ShowAssetDetailRequest.
-        :type: list[str]
+        :type categories: list[str]
         """
         self._categories = categories
 

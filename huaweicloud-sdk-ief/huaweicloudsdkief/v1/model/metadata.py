@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Metadata:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class Metadata:
     }
 
     def __init__(self, type=None):
-        """Metadata - a model defined in huaweicloud sdk"""
+        """Metadata
+
+        The model defined in huaweicloud sdk
+
+        :param type: 属性类型标识，string|int|float|boolean（boolean类型为true或false），默认为string
+        :type type: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class Metadata:
         属性类型标识，string|int|float|boolean（boolean类型为true或false），默认为string
 
         :param type: The type of this Metadata.
-        :type: str
+        :type type: str
         """
         self._type = type
 

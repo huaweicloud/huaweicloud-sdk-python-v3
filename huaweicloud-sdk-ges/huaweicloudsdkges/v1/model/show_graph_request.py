@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowGraphRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowGraphRequest:
     }
 
     def __init__(self, graph_id=None):
-        """ShowGraphRequest - a model defined in huaweicloud sdk"""
+        """ShowGraphRequest
+
+        The model defined in huaweicloud sdk
+
+        :param graph_id: 图ID。
+        :type graph_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowGraphRequest:
         图ID。
 
         :param graph_id: The graph_id of this ShowGraphRequest.
-        :type: str
+        :type graph_id: str
         """
         self._graph_id = graph_id
 

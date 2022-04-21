@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RealTimeParticipant:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class RealTimeParticipant:
     }
 
     def __init__(self, pid=None, name=None, phone=None, state=None, video=None, mute=None, hand=None):
-        """RealTimeParticipant - a model defined in huaweicloud sdk"""
+        """RealTimeParticipant
+
+        The model defined in huaweicloud sdk
+
+        :param pid: 与会者标识。
+        :type pid: str
+        :param name: 与会者名称或昵称，长度限制为96个字符。
+        :type name: str
+        :param phone: 与会者设备的注册号码（可支持SIP、TEL号码格式）。最大不超过127个字符。。
+        :type phone: str
+        :param state: 用户状态。若会场未入会或已离会，则不会显示于在线会场列表。 - 0: 会议中。 - 1: 正在呼叫。 - 2: 正在加入会议。
+        :type state: int
+        :param video: 音视频能力。 - 0: 音频。 - 1: 视频。
+        :type video: int
+        :param mute: 麦克风状态。 - 0: 麦克风打开。 - 1: 麦克风关闭。
+        :type mute: int
+        :param hand: 与会者举手状态。 - 0: 未举手。 - 1: 举手。
+        :type hand: int
+        """
         
         
 
@@ -88,7 +105,7 @@ class RealTimeParticipant:
         与会者标识。
 
         :param pid: The pid of this RealTimeParticipant.
-        :type: str
+        :type pid: str
         """
         self._pid = pid
 
@@ -110,7 +127,7 @@ class RealTimeParticipant:
         与会者名称或昵称，长度限制为96个字符。
 
         :param name: The name of this RealTimeParticipant.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -132,7 +149,7 @@ class RealTimeParticipant:
         与会者设备的注册号码（可支持SIP、TEL号码格式）。最大不超过127个字符。。
 
         :param phone: The phone of this RealTimeParticipant.
-        :type: str
+        :type phone: str
         """
         self._phone = phone
 
@@ -154,7 +171,7 @@ class RealTimeParticipant:
         用户状态。若会场未入会或已离会，则不会显示于在线会场列表。 - 0: 会议中。 - 1: 正在呼叫。 - 2: 正在加入会议。
 
         :param state: The state of this RealTimeParticipant.
-        :type: int
+        :type state: int
         """
         self._state = state
 
@@ -176,7 +193,7 @@ class RealTimeParticipant:
         音视频能力。 - 0: 音频。 - 1: 视频。
 
         :param video: The video of this RealTimeParticipant.
-        :type: int
+        :type video: int
         """
         self._video = video
 
@@ -198,7 +215,7 @@ class RealTimeParticipant:
         麦克风状态。 - 0: 麦克风打开。 - 1: 麦克风关闭。
 
         :param mute: The mute of this RealTimeParticipant.
-        :type: int
+        :type mute: int
         """
         self._mute = mute
 
@@ -220,7 +237,7 @@ class RealTimeParticipant:
         与会者举手状态。 - 0: 未举手。 - 1: 举手。
 
         :param hand: The hand of this RealTimeParticipant.
-        :type: int
+        :type hand: int
         """
         self._hand = hand
 

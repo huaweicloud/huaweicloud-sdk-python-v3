@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowWorkFlowRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowWorkFlowRequest:
     }
 
     def __init__(self, workflow_id=None):
-        """ShowWorkFlowRequest - a model defined in huaweicloud sdk"""
+        """ShowWorkFlowRequest
+
+        The model defined in huaweicloud sdk
+
+        :param workflow_id: 函数工作流ID
+        :type workflow_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowWorkFlowRequest:
         函数工作流ID
 
         :param workflow_id: The workflow_id of this ShowWorkFlowRequest.
-        :type: str
+        :type workflow_id: str
         """
         self._workflow_id = workflow_id
 

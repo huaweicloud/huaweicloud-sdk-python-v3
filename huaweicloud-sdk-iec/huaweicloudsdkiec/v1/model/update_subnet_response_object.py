@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateSubnetResponseObject:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateSubnetResponseObject:
     }
 
     def __init__(self, id=None, status=None):
-        """UpdateSubnetResponseObject - a model defined in huaweicloud sdk"""
+        """UpdateSubnetResponseObject
+
+        The model defined in huaweicloud sdk
+
+        :param id: 子网ID
+        :type id: str
+        :param status: 子网的状态  取值范围： - ACTIVE：表示子网已挂载到ROUTER上 - UNKNOWN：表示子网还未挂载到ROUTER上 - ERROR：表示子网状态故障
+        :type status: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class UpdateSubnetResponseObject:
         子网ID
 
         :param id: The id of this UpdateSubnetResponseObject.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -85,7 +92,7 @@ class UpdateSubnetResponseObject:
         子网的状态  取值范围： - ACTIVE：表示子网已挂载到ROUTER上 - UNKNOWN：表示子网还未挂载到ROUTER上 - ERROR：表示子网状态故障
 
         :param status: The status of this UpdateSubnetResponseObject.
-        :type: str
+        :type status: str
         """
         self._status = status
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ConfirmConsumptionMessagesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ConfirmConsumptionMessagesResponse(SdkResponse):
     }
 
     def __init__(self, success=None, fail=None):
-        """ConfirmConsumptionMessagesResponse - a model defined in huaweicloud sdk"""
+        """ConfirmConsumptionMessagesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param success: 确认成功的数目（如果为N，则表示前N条消息确认成功）。
+        :type success: int
+        :param fail: 确认失败的数目（如果为N，则表示后N条消息确认失败）。
+        :type fail: int
+        """
         
         super(ConfirmConsumptionMessagesResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ConfirmConsumptionMessagesResponse(SdkResponse):
         确认成功的数目（如果为N，则表示前N条消息确认成功）。
 
         :param success: The success of this ConfirmConsumptionMessagesResponse.
-        :type: int
+        :type success: int
         """
         self._success = success
 
@@ -85,7 +92,7 @@ class ConfirmConsumptionMessagesResponse(SdkResponse):
         确认失败的数目（如果为N，则表示后N条消息确认失败）。
 
         :param fail: The fail of this ConfirmConsumptionMessagesResponse.
-        :type: int
+        :type fail: int
         """
         self._fail = fail
 

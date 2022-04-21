@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAuthorizedSqlserverDbUsersRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListAuthorizedSqlserverDbUsersRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, db_name=None, page=None, limit=None):
-        """ListAuthorizedSqlserverDbUsersRequest - a model defined in huaweicloud sdk"""
+        """ListAuthorizedSqlserverDbUsersRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言
+        :type x_language: str
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param db_name: 数据库名。
+        :type db_name: str
+        :param page: 分页页码，从1开始。
+        :type page: int
+        :param limit: 每页数据条数。取值范围[1, 100]。
+        :type limit: int
+        """
         
         
 
@@ -74,7 +87,7 @@ class ListAuthorizedSqlserverDbUsersRequest:
         语言
 
         :param x_language: The x_language of this ListAuthorizedSqlserverDbUsersRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -96,7 +109,7 @@ class ListAuthorizedSqlserverDbUsersRequest:
         实例ID。
 
         :param instance_id: The instance_id of this ListAuthorizedSqlserverDbUsersRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -118,7 +131,7 @@ class ListAuthorizedSqlserverDbUsersRequest:
         数据库名。
 
         :param db_name: The db_name of this ListAuthorizedSqlserverDbUsersRequest.
-        :type: str
+        :type db_name: str
         """
         self._db_name = db_name
 
@@ -140,7 +153,7 @@ class ListAuthorizedSqlserverDbUsersRequest:
         分页页码，从1开始。
 
         :param page: The page of this ListAuthorizedSqlserverDbUsersRequest.
-        :type: int
+        :type page: int
         """
         self._page = page
 
@@ -162,7 +175,7 @@ class ListAuthorizedSqlserverDbUsersRequest:
         每页数据条数。取值范围[1, 100]。
 
         :param limit: The limit of this ListAuthorizedSqlserverDbUsersRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

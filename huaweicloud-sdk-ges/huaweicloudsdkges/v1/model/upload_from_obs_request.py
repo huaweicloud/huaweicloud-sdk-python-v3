@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UploadFromObsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UploadFromObsRequest:
     }
 
     def __init__(self, body=None):
-        """UploadFromObsRequest - a model defined in huaweicloud sdk"""
+        """UploadFromObsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the UploadFromObsRequest
+        :type body: :class:`huaweicloudsdkges.v1.UploadFromOBSReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class UploadFromObsRequest:
 
 
         :return: The body of this UploadFromObsRequest.
-        :rtype: UploadFromOBSReq
+        :rtype: :class:`huaweicloudsdkges.v1.UploadFromOBSReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class UploadFromObsRequest:
 
 
         :param body: The body of this UploadFromObsRequest.
-        :type: UploadFromOBSReq
+        :type body: :class:`huaweicloudsdkges.v1.UploadFromOBSReq`
         """
         self._body = body
 

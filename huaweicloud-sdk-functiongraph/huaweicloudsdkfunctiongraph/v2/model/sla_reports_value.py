@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SlaReportsValue:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class SlaReportsValue:
     }
 
     def __init__(self, timestamp=None, value=None):
-        """SlaReportsValue - a model defined in huaweicloud sdk"""
+        """SlaReportsValue
+
+        The model defined in huaweicloud sdk
+
+        :param timestamp: 时间戳
+        :type timestamp: int
+        :param value: 值
+        :type value: int
+        """
         
         
 
@@ -63,7 +70,7 @@ class SlaReportsValue:
         时间戳
 
         :param timestamp: The timestamp of this SlaReportsValue.
-        :type: int
+        :type timestamp: int
         """
         self._timestamp = timestamp
 
@@ -85,7 +92,7 @@ class SlaReportsValue:
         值
 
         :param value: The value of this SlaReportsValue.
-        :type: int
+        :type value: int
         """
         self._value = value
 

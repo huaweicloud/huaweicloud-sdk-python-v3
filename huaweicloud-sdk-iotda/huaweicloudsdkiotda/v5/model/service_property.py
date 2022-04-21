@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ServiceProperty:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class ServiceProperty:
     }
 
     def __init__(self, property_name=None, data_type=None, required=None, enum_list=None, min=None, max=None, max_length=None, step=None, unit=None, method=None, description=None, default_value=None):
-        """ServiceProperty - a model defined in huaweicloud sdk"""
+        """ServiceProperty
+
+        The model defined in huaweicloud sdk
+
+        :param property_name: **参数说明**：设备属性名称。注：设备服务内不允许重复。属性名称作为设备影子JSON文档中的key不支持特殊字符：点(.)、dollar符号($)、空char(十六进制的ASCII码为00)，如果包含了以上特殊字符则无法正常刷新影子文档。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_?&#39;#().,&amp;%@!-等字符的组合。
+        :type property_name: str
+        :param data_type: **参数说明**：设备属性的数据类型。 **取值范围**：int，long，decimal，string，DateTime，jsonObject，enum，boolean，string list。
+        :type data_type: str
+        :param required: **参数说明**：设备属性是否必选。默认为false。
+        :type required: bool
+        :param enum_list: **参数说明**：设备属性的枚举值列表。
+        :type enum_list: list[str]
+        :param min: **参数说明**：设备属性的最小值。 **取值范围**：长度1-16。
+        :type min: str
+        :param max: **参数说明**：设备属性的最大值。 **取值范围**：长度1-16。
+        :type max: str
+        :param max_length: **参数说明**：设备属性的最大长度。
+        :type max_length: int
+        :param step: **参数说明**：设备属性的步长。
+        :type step: float
+        :param unit: **参数说明**：设备属性的单位。 **取值范围**：长度不超过16。
+        :type unit: str
+        :param method: **参数说明**：设备属性的访问模式。 **取值范围**：RWE，RW，RE，WE，E，W，R。 - R：属性值可读 - W：属性值可写 - E：属性值可订阅，即属性值变化时上报事件
+        :type method: str
+        :param description: **参数说明**：设备属性的描述。 **取值范围**：长度不超过128，只允许中文、字母、数字、空白字符、以及_?&#39;#().,;&amp;%@!- ，、：；。/等字符的组合。
+        :type description: str
+        :param default_value: **参数说明**：设备属性的默认值。如果设置了默认值，使用该产品创建设备时，会将该属性的默认值写入到该设备的设备影子预期数据中，待设备上线时将该属性默认值下发给设备。
+        :type default_value: object
+        """
         
         
 
@@ -110,7 +137,7 @@ class ServiceProperty:
         **参数说明**：设备属性名称。注：设备服务内不允许重复。属性名称作为设备影子JSON文档中的key不支持特殊字符：点(.)、dollar符号($)、空char(十六进制的ASCII码为00)，如果包含了以上特殊字符则无法正常刷新影子文档。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
         :param property_name: The property_name of this ServiceProperty.
-        :type: str
+        :type property_name: str
         """
         self._property_name = property_name
 
@@ -132,7 +159,7 @@ class ServiceProperty:
         **参数说明**：设备属性的数据类型。 **取值范围**：int，long，decimal，string，DateTime，jsonObject，enum，boolean，string list。
 
         :param data_type: The data_type of this ServiceProperty.
-        :type: str
+        :type data_type: str
         """
         self._data_type = data_type
 
@@ -154,7 +181,7 @@ class ServiceProperty:
         **参数说明**：设备属性是否必选。默认为false。
 
         :param required: The required of this ServiceProperty.
-        :type: bool
+        :type required: bool
         """
         self._required = required
 
@@ -176,7 +203,7 @@ class ServiceProperty:
         **参数说明**：设备属性的枚举值列表。
 
         :param enum_list: The enum_list of this ServiceProperty.
-        :type: list[str]
+        :type enum_list: list[str]
         """
         self._enum_list = enum_list
 
@@ -198,7 +225,7 @@ class ServiceProperty:
         **参数说明**：设备属性的最小值。 **取值范围**：长度1-16。
 
         :param min: The min of this ServiceProperty.
-        :type: str
+        :type min: str
         """
         self._min = min
 
@@ -220,7 +247,7 @@ class ServiceProperty:
         **参数说明**：设备属性的最大值。 **取值范围**：长度1-16。
 
         :param max: The max of this ServiceProperty.
-        :type: str
+        :type max: str
         """
         self._max = max
 
@@ -242,7 +269,7 @@ class ServiceProperty:
         **参数说明**：设备属性的最大长度。
 
         :param max_length: The max_length of this ServiceProperty.
-        :type: int
+        :type max_length: int
         """
         self._max_length = max_length
 
@@ -264,7 +291,7 @@ class ServiceProperty:
         **参数说明**：设备属性的步长。
 
         :param step: The step of this ServiceProperty.
-        :type: float
+        :type step: float
         """
         self._step = step
 
@@ -286,7 +313,7 @@ class ServiceProperty:
         **参数说明**：设备属性的单位。 **取值范围**：长度不超过16。
 
         :param unit: The unit of this ServiceProperty.
-        :type: str
+        :type unit: str
         """
         self._unit = unit
 
@@ -308,7 +335,7 @@ class ServiceProperty:
         **参数说明**：设备属性的访问模式。 **取值范围**：RWE，RW，RE，WE，E，W，R。 - R：属性值可读 - W：属性值可写 - E：属性值可订阅，即属性值变化时上报事件
 
         :param method: The method of this ServiceProperty.
-        :type: str
+        :type method: str
         """
         self._method = method
 
@@ -330,7 +357,7 @@ class ServiceProperty:
         **参数说明**：设备属性的描述。 **取值范围**：长度不超过128，只允许中文、字母、数字、空白字符、以及_?'#().,;&%@!- ，、：；。/等字符的组合。
 
         :param description: The description of this ServiceProperty.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -352,7 +379,7 @@ class ServiceProperty:
         **参数说明**：设备属性的默认值。如果设置了默认值，使用该产品创建设备时，会将该属性的默认值写入到该设备的设备影子预期数据中，待设备上线时将该属性默认值下发给设备。
 
         :param default_value: The default_value of this ServiceProperty.
-        :type: object
+        :type default_value: object
         """
         self._default_value = default_value
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ModUserDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class ModUserDTO:
     }
 
     def __init__(self, name=None, english_name=None, phone=None, country=None, email=None, vmr_id=None, dept_code=None, signature=None, title=None, desc=None, status=None, sort_level=None, hide_phone=None):
-        """ModUserDTO - a model defined in huaweicloud sdk"""
+        """ModUserDTO
+
+        The model defined in huaweicloud sdk
+
+        :param name: 企业用户姓名。 maxLength：64 minLength：1
+        :type name: str
+        :param english_name: 企业用户的英文姓名。 maxLength：64 minLength：0
+        :type english_name: str
+        :param phone: 手机号，必须加上国家码。 例如中国大陆手机为“+86xxxxxxxxxxx”。当填写手机号时 “country”参数必填。 手机号只允许输入纯数字。 说明：手机号或者邮箱至少填写一个。 maxLength：32 minLength：0
+        :type phone: str
+        :param country: 若smsNumber为手机号,则需带上手机号所属的国家。 例如国家为中国大陆则country参数取值为chinaPR 国家和国家码的对应关系请参考：https://support.huaweicloud.com/api-meeting/meeting_21_0109.html 
+        :type country: str
+        :param email: 邮箱 maxLength：255 minLength：0
+        :type email: str
+        :param vmr_id: 虚拟会议室ID，若不携带则后台默认生成。 maxLength：32 minLength：0
+        :type vmr_id: str
+        :param dept_code: 部门编号，若不携带则默认根部门 默认值：1 maxLength：32 minLength：0
+        :type dept_code: str
+        :param signature: 签名 maxLength：512 minLength：0
+        :type signature: str
+        :param title: 职位 maxLength：32 minLength：0
+        :type title: str
+        :param desc: 备注 maxLength：128 minLength：0
+        :type desc: str
+        :param status: 用户状态 * 0、正常 * 1、停用 默认值：0
+        :type status: int
+        :param sort_level: 通讯录排序等级，序号越低优先级越高。 默认值：10000 maximum：10000 minimum：1
+        :type sort_level: int
+        :param hide_phone: 是否隐藏手机号码 默认值：false 
+        :type hide_phone: bool
+        """
         
         
 
@@ -118,7 +147,7 @@ class ModUserDTO:
         企业用户姓名。 maxLength：64 minLength：1
 
         :param name: The name of this ModUserDTO.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -140,7 +169,7 @@ class ModUserDTO:
         企业用户的英文姓名。 maxLength：64 minLength：0
 
         :param english_name: The english_name of this ModUserDTO.
-        :type: str
+        :type english_name: str
         """
         self._english_name = english_name
 
@@ -162,7 +191,7 @@ class ModUserDTO:
         手机号，必须加上国家码。 例如中国大陆手机为“+86xxxxxxxxxxx”。当填写手机号时 “country”参数必填。 手机号只允许输入纯数字。 说明：手机号或者邮箱至少填写一个。 maxLength：32 minLength：0
 
         :param phone: The phone of this ModUserDTO.
-        :type: str
+        :type phone: str
         """
         self._phone = phone
 
@@ -184,7 +213,7 @@ class ModUserDTO:
         若smsNumber为手机号,则需带上手机号所属的国家。 例如国家为中国大陆则country参数取值为chinaPR 国家和国家码的对应关系请参考：https://support.huaweicloud.com/api-meeting/meeting_21_0109.html 
 
         :param country: The country of this ModUserDTO.
-        :type: str
+        :type country: str
         """
         self._country = country
 
@@ -206,7 +235,7 @@ class ModUserDTO:
         邮箱 maxLength：255 minLength：0
 
         :param email: The email of this ModUserDTO.
-        :type: str
+        :type email: str
         """
         self._email = email
 
@@ -228,7 +257,7 @@ class ModUserDTO:
         虚拟会议室ID，若不携带则后台默认生成。 maxLength：32 minLength：0
 
         :param vmr_id: The vmr_id of this ModUserDTO.
-        :type: str
+        :type vmr_id: str
         """
         self._vmr_id = vmr_id
 
@@ -250,7 +279,7 @@ class ModUserDTO:
         部门编号，若不携带则默认根部门 默认值：1 maxLength：32 minLength：0
 
         :param dept_code: The dept_code of this ModUserDTO.
-        :type: str
+        :type dept_code: str
         """
         self._dept_code = dept_code
 
@@ -272,7 +301,7 @@ class ModUserDTO:
         签名 maxLength：512 minLength：0
 
         :param signature: The signature of this ModUserDTO.
-        :type: str
+        :type signature: str
         """
         self._signature = signature
 
@@ -294,7 +323,7 @@ class ModUserDTO:
         职位 maxLength：32 minLength：0
 
         :param title: The title of this ModUserDTO.
-        :type: str
+        :type title: str
         """
         self._title = title
 
@@ -316,7 +345,7 @@ class ModUserDTO:
         备注 maxLength：128 minLength：0
 
         :param desc: The desc of this ModUserDTO.
-        :type: str
+        :type desc: str
         """
         self._desc = desc
 
@@ -338,7 +367,7 @@ class ModUserDTO:
         用户状态 * 0、正常 * 1、停用 默认值：0
 
         :param status: The status of this ModUserDTO.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -360,7 +389,7 @@ class ModUserDTO:
         通讯录排序等级，序号越低优先级越高。 默认值：10000 maximum：10000 minimum：1
 
         :param sort_level: The sort_level of this ModUserDTO.
-        :type: int
+        :type sort_level: int
         """
         self._sort_level = sort_level
 
@@ -382,7 +411,7 @@ class ModUserDTO:
         是否隐藏手机号码 默认值：false 
 
         :param hide_phone: The hide_phone of this ModUserDTO.
-        :type: bool
+        :type hide_phone: bool
         """
         self._hide_phone = hide_phone
 

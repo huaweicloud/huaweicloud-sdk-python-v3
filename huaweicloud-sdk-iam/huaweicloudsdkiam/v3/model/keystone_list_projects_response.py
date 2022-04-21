@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneListProjectsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class KeystoneListProjectsResponse(SdkResponse):
     }
 
     def __init__(self, links=None, projects=None):
-        """KeystoneListProjectsResponse - a model defined in huaweicloud sdk"""
+        """KeystoneListProjectsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param links: 
+        :type links: :class:`huaweicloudsdkiam.v3.Links`
+        :param projects: 项目信息列表。
+        :type projects: list[:class:`huaweicloudsdkiam.v3.ProjectResult`]
+        """
         
         super(KeystoneListProjectsResponse, self).__init__()
 
@@ -51,7 +58,7 @@ class KeystoneListProjectsResponse(SdkResponse):
 
 
         :return: The links of this KeystoneListProjectsResponse.
-        :rtype: Links
+        :rtype: :class:`huaweicloudsdkiam.v3.Links`
         """
         return self._links
 
@@ -61,7 +68,7 @@ class KeystoneListProjectsResponse(SdkResponse):
 
 
         :param links: The links of this KeystoneListProjectsResponse.
-        :type: Links
+        :type links: :class:`huaweicloudsdkiam.v3.Links`
         """
         self._links = links
 
@@ -72,7 +79,7 @@ class KeystoneListProjectsResponse(SdkResponse):
         项目信息列表。
 
         :return: The projects of this KeystoneListProjectsResponse.
-        :rtype: list[ProjectResult]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.ProjectResult`]
         """
         return self._projects
 
@@ -83,7 +90,7 @@ class KeystoneListProjectsResponse(SdkResponse):
         项目信息列表。
 
         :param projects: The projects of this KeystoneListProjectsResponse.
-        :type: list[ProjectResult]
+        :type projects: list[:class:`huaweicloudsdkiam.v3.ProjectResult`]
         """
         self._projects = projects
 

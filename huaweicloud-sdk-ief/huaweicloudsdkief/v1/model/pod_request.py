@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PodRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class PodRequest:
     }
 
     def __init__(self, configs=None, affinity=None, init_containers=None, containers=None):
-        """PodRequest - a model defined in huaweicloud sdk"""
+        """PodRequest
+
+        The model defined in huaweicloud sdk
+
+        :param configs: 
+        :type configs: :class:`huaweicloudsdkief.v1.PodConfigs`
+        :param affinity: 
+        :type affinity: :class:`huaweicloudsdkief.v1.Affinity`
+        :param init_containers: 应用部署init业务容器
+        :type init_containers: list[:class:`huaweicloudsdkief.v1.ContainerDef`]
+        :param containers: 应用部署业务容器
+        :type containers: list[:class:`huaweicloudsdkief.v1.ContainerDef`]
+        """
         
         
 
@@ -59,7 +70,7 @@ class PodRequest:
 
 
         :return: The configs of this PodRequest.
-        :rtype: PodConfigs
+        :rtype: :class:`huaweicloudsdkief.v1.PodConfigs`
         """
         return self._configs
 
@@ -69,7 +80,7 @@ class PodRequest:
 
 
         :param configs: The configs of this PodRequest.
-        :type: PodConfigs
+        :type configs: :class:`huaweicloudsdkief.v1.PodConfigs`
         """
         self._configs = configs
 
@@ -79,7 +90,7 @@ class PodRequest:
 
 
         :return: The affinity of this PodRequest.
-        :rtype: Affinity
+        :rtype: :class:`huaweicloudsdkief.v1.Affinity`
         """
         return self._affinity
 
@@ -89,7 +100,7 @@ class PodRequest:
 
 
         :param affinity: The affinity of this PodRequest.
-        :type: Affinity
+        :type affinity: :class:`huaweicloudsdkief.v1.Affinity`
         """
         self._affinity = affinity
 
@@ -100,7 +111,7 @@ class PodRequest:
         应用部署init业务容器
 
         :return: The init_containers of this PodRequest.
-        :rtype: list[ContainerDef]
+        :rtype: list[:class:`huaweicloudsdkief.v1.ContainerDef`]
         """
         return self._init_containers
 
@@ -111,7 +122,7 @@ class PodRequest:
         应用部署init业务容器
 
         :param init_containers: The init_containers of this PodRequest.
-        :type: list[ContainerDef]
+        :type init_containers: list[:class:`huaweicloudsdkief.v1.ContainerDef`]
         """
         self._init_containers = init_containers
 
@@ -122,7 +133,7 @@ class PodRequest:
         应用部署业务容器
 
         :return: The containers of this PodRequest.
-        :rtype: list[ContainerDef]
+        :rtype: list[:class:`huaweicloudsdkief.v1.ContainerDef`]
         """
         return self._containers
 
@@ -133,7 +144,7 @@ class PodRequest:
         应用部署业务容器
 
         :param containers: The containers of this PodRequest.
-        :type: list[ContainerDef]
+        :type containers: list[:class:`huaweicloudsdkief.v1.ContainerDef`]
         """
         self._containers = containers
 

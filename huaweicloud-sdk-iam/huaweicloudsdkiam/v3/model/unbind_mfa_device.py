@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UnbindMfaDevice:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UnbindMfaDevice:
     }
 
     def __init__(self, user_id=None, authentication_code=None, serial_number=None):
-        """UnbindMfaDevice - a model defined in huaweicloud sdk"""
+        """UnbindMfaDevice
+
+        The model defined in huaweicloud sdk
+
+        :param user_id: 待解绑MFA设备的IAM用户ID。
+        :type user_id: str
+        :param authentication_code: • 管理员为IAM用户解绑MFA设备：填写6位任意验证码，不做校验。 • IAM用户为自己解绑MFA设备：填写虚拟MFA验证码。
+        :type authentication_code: str
+        :param serial_number: MFA设备序列号。
+        :type serial_number: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class UnbindMfaDevice:
         待解绑MFA设备的IAM用户ID。
 
         :param user_id: The user_id of this UnbindMfaDevice.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -87,7 +96,7 @@ class UnbindMfaDevice:
         • 管理员为IAM用户解绑MFA设备：填写6位任意验证码，不做校验。 • IAM用户为自己解绑MFA设备：填写虚拟MFA验证码。
 
         :param authentication_code: The authentication_code of this UnbindMfaDevice.
-        :type: str
+        :type authentication_code: str
         """
         self._authentication_code = authentication_code
 
@@ -109,7 +118,7 @@ class UnbindMfaDevice:
         MFA设备序列号。
 
         :param serial_number: The serial_number of this UnbindMfaDevice.
-        :type: str
+        :type serial_number: str
         """
         self._serial_number = serial_number
 

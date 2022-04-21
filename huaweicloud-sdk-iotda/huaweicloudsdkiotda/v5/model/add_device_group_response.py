@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddDeviceGroupResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class AddDeviceGroupResponse(SdkResponse):
     }
 
     def __init__(self, group_id=None, name=None, description=None, super_group_id=None):
-        """AddDeviceGroupResponse - a model defined in huaweicloud sdk"""
+        """AddDeviceGroupResponse
+
+        The model defined in huaweicloud sdk
+
+        :param group_id: 设备组ID，用于唯一标识一个设备组，在创建设备组时由物联网平台分配。
+        :type group_id: str
+        :param name: 设备组名称，单个资源空间下不可重复。
+        :type name: str
+        :param description: 设备组描述。
+        :type description: str
+        :param super_group_id: 父设备组ID，该设备组的父设备组ID。
+        :type super_group_id: str
+        """
         
         super(AddDeviceGroupResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class AddDeviceGroupResponse(SdkResponse):
         设备组ID，用于唯一标识一个设备组，在创建设备组时由物联网平台分配。
 
         :param group_id: The group_id of this AddDeviceGroupResponse.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -95,7 +106,7 @@ class AddDeviceGroupResponse(SdkResponse):
         设备组名称，单个资源空间下不可重复。
 
         :param name: The name of this AddDeviceGroupResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -117,7 +128,7 @@ class AddDeviceGroupResponse(SdkResponse):
         设备组描述。
 
         :param description: The description of this AddDeviceGroupResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -139,7 +150,7 @@ class AddDeviceGroupResponse(SdkResponse):
         父设备组ID，该设备组的父设备组ID。
 
         :param super_group_id: The super_group_id of this AddDeviceGroupResponse.
-        :type: str
+        :type super_group_id: str
         """
         self._super_group_id = super_group_id
 

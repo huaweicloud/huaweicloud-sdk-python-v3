@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDeploymentsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListDeploymentsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, deployments=None):
-        """ListDeploymentsResponse - a model defined in huaweicloud sdk"""
+        """ListDeploymentsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 部署计划列表的总和。
+        :type count: int
+        :param deployments: 部署计划列表。
+        :type deployments: list[:class:`huaweicloudsdkiec.v1.Deployment`]
+        """
         
         super(ListDeploymentsResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListDeploymentsResponse(SdkResponse):
         部署计划列表的总和。
 
         :param count: The count of this ListDeploymentsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -74,7 +81,7 @@ class ListDeploymentsResponse(SdkResponse):
         部署计划列表。
 
         :return: The deployments of this ListDeploymentsResponse.
-        :rtype: list[Deployment]
+        :rtype: list[:class:`huaweicloudsdkiec.v1.Deployment`]
         """
         return self._deployments
 
@@ -85,7 +92,7 @@ class ListDeploymentsResponse(SdkResponse):
         部署计划列表。
 
         :param deployments: The deployments of this ListDeploymentsResponse.
-        :type: list[Deployment]
+        :type deployments: list[:class:`huaweicloudsdkiec.v1.Deployment`]
         """
         self._deployments = deployments
 

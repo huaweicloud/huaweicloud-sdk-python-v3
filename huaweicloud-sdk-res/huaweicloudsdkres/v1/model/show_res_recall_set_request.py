@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowResRecallSetRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowResRecallSetRequest:
     }
 
     def __init__(self, content_type=None, workspace_id=None, resource_id=None, use_type=None):
-        """ShowResRecallSetRequest - a model defined in huaweicloud sdk"""
+        """ShowResRecallSetRequest
+
+        The model defined in huaweicloud sdk
+
+        :param content_type: 内容类型，取值为application/json
+        :type content_type: str
+        :param workspace_id: 工作空间id
+        :type workspace_id: str
+        :param resource_id: 资源id
+        :type resource_id: str
+        :param use_type: 使用类型： - UI，基于用户推荐物品 - UU，基于用户推荐用户 - II，基于物品推荐物品 - IU，基于物品推荐用户
+        :type use_type: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class ShowResRecallSetRequest:
         内容类型，取值为application/json
 
         :param content_type: The content_type of this ShowResRecallSetRequest.
-        :type: str
+        :type content_type: str
         """
         self._content_type = content_type
 
@@ -91,7 +102,7 @@ class ShowResRecallSetRequest:
         工作空间id
 
         :param workspace_id: The workspace_id of this ShowResRecallSetRequest.
-        :type: str
+        :type workspace_id: str
         """
         self._workspace_id = workspace_id
 
@@ -113,7 +124,7 @@ class ShowResRecallSetRequest:
         资源id
 
         :param resource_id: The resource_id of this ShowResRecallSetRequest.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -135,7 +146,7 @@ class ShowResRecallSetRequest:
         使用类型： - UI，基于用户推荐物品 - UU，基于用户推荐用户 - II，基于物品推荐物品 - IU，基于物品推荐用户
 
         :param use_type: The use_type of this ShowResRecallSetRequest.
-        :type: str
+        :type use_type: str
         """
         self._use_type = use_type
 

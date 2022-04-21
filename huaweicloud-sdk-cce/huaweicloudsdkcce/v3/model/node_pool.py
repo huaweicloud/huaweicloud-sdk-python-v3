@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NodePool:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class NodePool:
     }
 
     def __init__(self, kind=None, api_version=None, metadata=None, spec=None, status=None):
-        """NodePool - a model defined in huaweicloud sdk"""
+        """NodePool
+
+        The model defined in huaweicloud sdk
+
+        :param kind: API类型，固定值“NodePool”。
+        :type kind: str
+        :param api_version: API版本，固定值“v3”。
+        :type api_version: str
+        :param metadata: 
+        :type metadata: :class:`huaweicloudsdkcce.v3.NodePoolMetadata`
+        :param spec: 
+        :type spec: :class:`huaweicloudsdkcce.v3.NodePoolSpec`
+        :param status: 
+        :type status: :class:`huaweicloudsdkcce.v3.NodePoolStatus`
+        """
         
         
 
@@ -74,7 +87,7 @@ class NodePool:
         API类型，固定值“NodePool”。
 
         :param kind: The kind of this NodePool.
-        :type: str
+        :type kind: str
         """
         self._kind = kind
 
@@ -96,7 +109,7 @@ class NodePool:
         API版本，固定值“v3”。
 
         :param api_version: The api_version of this NodePool.
-        :type: str
+        :type api_version: str
         """
         self._api_version = api_version
 
@@ -106,7 +119,7 @@ class NodePool:
 
 
         :return: The metadata of this NodePool.
-        :rtype: NodePoolMetadata
+        :rtype: :class:`huaweicloudsdkcce.v3.NodePoolMetadata`
         """
         return self._metadata
 
@@ -116,7 +129,7 @@ class NodePool:
 
 
         :param metadata: The metadata of this NodePool.
-        :type: NodePoolMetadata
+        :type metadata: :class:`huaweicloudsdkcce.v3.NodePoolMetadata`
         """
         self._metadata = metadata
 
@@ -126,7 +139,7 @@ class NodePool:
 
 
         :return: The spec of this NodePool.
-        :rtype: NodePoolSpec
+        :rtype: :class:`huaweicloudsdkcce.v3.NodePoolSpec`
         """
         return self._spec
 
@@ -136,7 +149,7 @@ class NodePool:
 
 
         :param spec: The spec of this NodePool.
-        :type: NodePoolSpec
+        :type spec: :class:`huaweicloudsdkcce.v3.NodePoolSpec`
         """
         self._spec = spec
 
@@ -146,7 +159,7 @@ class NodePool:
 
 
         :return: The status of this NodePool.
-        :rtype: NodePoolStatus
+        :rtype: :class:`huaweicloudsdkcce.v3.NodePoolStatus`
         """
         return self._status
 
@@ -156,7 +169,7 @@ class NodePool:
 
 
         :param status: The status of this NodePool.
-        :type: NodePoolStatus
+        :type status: :class:`huaweicloudsdkcce.v3.NodePoolStatus`
         """
         self._status = status
 

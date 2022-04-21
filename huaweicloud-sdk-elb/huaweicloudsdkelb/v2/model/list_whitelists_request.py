@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListWhitelistsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ListWhitelistsRequest:
     }
 
     def __init__(self, limit=None, marker=None, page_reverse=None, id=None, enable_whitelist=None, listener_id=None, whitelist=None):
-        """ListWhitelistsRequest - a model defined in huaweicloud sdk"""
+        """ListWhitelistsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 分页查询中每页的白名单个数
+        :type limit: int
+        :param marker: 分页查询的起始的资源id，表示上一页最后一条查询记录的白名单的id。不指定时表示查询第一页。
+        :type marker: str
+        :param page_reverse: 分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。
+        :type page_reverse: bool
+        :param id: 白名单ID。
+        :type id: str
+        :param enable_whitelist: 是否开启访问控制开关。true：打开false：关闭
+        :type enable_whitelist: bool
+        :param listener_id: 白名单关联的监听器ID。
+        :type listener_id: str
+        :param whitelist: 白名单IP的字符串。
+        :type whitelist: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class ListWhitelistsRequest:
         分页查询中每页的白名单个数
 
         :param limit: The limit of this ListWhitelistsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -110,7 +127,7 @@ class ListWhitelistsRequest:
         分页查询的起始的资源id，表示上一页最后一条查询记录的白名单的id。不指定时表示查询第一页。
 
         :param marker: The marker of this ListWhitelistsRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -132,7 +149,7 @@ class ListWhitelistsRequest:
         分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。
 
         :param page_reverse: The page_reverse of this ListWhitelistsRequest.
-        :type: bool
+        :type page_reverse: bool
         """
         self._page_reverse = page_reverse
 
@@ -154,7 +171,7 @@ class ListWhitelistsRequest:
         白名单ID。
 
         :param id: The id of this ListWhitelistsRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -176,7 +193,7 @@ class ListWhitelistsRequest:
         是否开启访问控制开关。true：打开false：关闭
 
         :param enable_whitelist: The enable_whitelist of this ListWhitelistsRequest.
-        :type: bool
+        :type enable_whitelist: bool
         """
         self._enable_whitelist = enable_whitelist
 
@@ -198,7 +215,7 @@ class ListWhitelistsRequest:
         白名单关联的监听器ID。
 
         :param listener_id: The listener_id of this ListWhitelistsRequest.
-        :type: str
+        :type listener_id: str
         """
         self._listener_id = listener_id
 
@@ -220,7 +237,7 @@ class ListWhitelistsRequest:
         白名单IP的字符串。
 
         :param whitelist: The whitelist of this ListWhitelistsRequest.
-        :type: str
+        :type whitelist: str
         """
         self._whitelist = whitelist
 

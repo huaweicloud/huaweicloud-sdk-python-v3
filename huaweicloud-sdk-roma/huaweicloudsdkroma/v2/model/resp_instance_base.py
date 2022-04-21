@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RespInstanceBase:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class RespInstanceBase:
     }
 
     def __init__(self, id=None, project_id=None, instance_name=None, status=None, instance_status=None, type=None, spec=None, create_time=None, enterprise_project_id=None, eip_address=None, charging_mode=None, cbc_metadata=None):
-        """RespInstanceBase - a model defined in huaweicloud sdk"""
+        """RespInstanceBase
+
+        The model defined in huaweicloud sdk
+
+        :param id: 实例编号
+        :type id: str
+        :param project_id: 实例所属项目编号
+        :type project_id: str
+        :param instance_name: 实例名称
+        :type instance_name: str
+        :param status: 实例状态： - Creating：创建中 - CreateSuccess：创建成功 - CreateFail：创建失败 - Initing：初始化中 - Registering：注册中 - Running：运行中 - InitingFailed：初始化失败 - RegisterFailed：注册失败 - Installing：安装中 - InstallFailed：安装失败 - Updating：升级中 - UpdateFailed：升级失败 - Rollbacking：回滚中 - RollbackSuccess：回滚成功 - RollbackFailed：回滚失败 - Deleting：删除中 - DeleteFailed：删除失败 - Unregistering：注销中 - UnRegisterFailed：注销失败 - CreateTimeout：创建超时 - InitTimeout：初始化超时 - RegisterTimeout：注册超时 - InstallTimeout：安装超时 - UpdateTimeout：升级超时 - RollbackTimeout：回滚超时 - DeleteTimeout：删除超时 - UnregisterTimeout：注销超时 - Starting：启动中 - Freezing：冻结中 - Frozen：已冻结 - Restarting：重启中 - RestartFail：重启失败 - Unhealthy：实例异常 - RestartTimeout：重启超时
+        :type status: str
+        :param instance_status: 实例状态对应编号 - 1：创建中 - 2：创建成功 - 3：创建失败 - 4：初始化中 - 5：注册中 - 6：运行中 - 7：初始化失败 - 8：注册失败 - 10：安装中 - 11：安装失败 - 12：升级中 - 13：升级失败 - 20：回滚中 - 21：回滚成功 - 22：回滚失败 - 23：删除中 - 24：删除失败 - 25：注销中 - 26：注销失败 - 27：创建超时 - 28：初始化超时 - 29：注册超时 - 30：安装超时 - 31：升级超时 - 32：回滚超时 - 33：删除超时 - 34：注销超时 - 35：启动中 - 36：冻结中 - 37：已冻结 - 38：重启中 - 39：重启失败 - 40：实例异常 - 41：重启超时
+        :type instance_status: int
+        :param type: 实例类型  暂不支持
+        :type type: str
+        :param spec: 实例规格： - ROMA_BASIC：基础版实例 - ROMA_PROFESSIONAL：专业版实例 - ROMA_ENTERPRISE：企业版实例 - ROMA_PLATINUM：铂金版实例 [- ROMA_BASIC_IPV6：基础版IPV6实例](tag:hcs) [- ROMA_PROFESSIONAL_IPV6：专业版IPV6实例](tag:hcs) [- ROMA_ENTERPRISE_IPV6：企业版IPV6实例](tag:hcs) [- ROMA_PLATINUM_IPV6：铂金版IPV6实例](tag:hcs)
+        :type spec: str
+        :param create_time: 实例创建时间。unix时间戳格式。
+        :type create_time: int
+        :param enterprise_project_id: 企业项目ID，企业帐号必填
+        :type enterprise_project_id: str
+        :param eip_address: 实例绑定的弹性IP地址
+        :type eip_address: str
+        :param charging_mode: 实例计费方式： - 0：按需计费 - 1：包周期计费
+        :type charging_mode: int
+        :param cbc_metadata: 包周期计费订单编号
+        :type cbc_metadata: str
+        """
         
         
 
@@ -113,7 +140,7 @@ class RespInstanceBase:
         实例编号
 
         :param id: The id of this RespInstanceBase.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -135,7 +162,7 @@ class RespInstanceBase:
         实例所属项目编号
 
         :param project_id: The project_id of this RespInstanceBase.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -157,7 +184,7 @@ class RespInstanceBase:
         实例名称
 
         :param instance_name: The instance_name of this RespInstanceBase.
-        :type: str
+        :type instance_name: str
         """
         self._instance_name = instance_name
 
@@ -179,7 +206,7 @@ class RespInstanceBase:
         实例状态： - Creating：创建中 - CreateSuccess：创建成功 - CreateFail：创建失败 - Initing：初始化中 - Registering：注册中 - Running：运行中 - InitingFailed：初始化失败 - RegisterFailed：注册失败 - Installing：安装中 - InstallFailed：安装失败 - Updating：升级中 - UpdateFailed：升级失败 - Rollbacking：回滚中 - RollbackSuccess：回滚成功 - RollbackFailed：回滚失败 - Deleting：删除中 - DeleteFailed：删除失败 - Unregistering：注销中 - UnRegisterFailed：注销失败 - CreateTimeout：创建超时 - InitTimeout：初始化超时 - RegisterTimeout：注册超时 - InstallTimeout：安装超时 - UpdateTimeout：升级超时 - RollbackTimeout：回滚超时 - DeleteTimeout：删除超时 - UnregisterTimeout：注销超时 - Starting：启动中 - Freezing：冻结中 - Frozen：已冻结 - Restarting：重启中 - RestartFail：重启失败 - Unhealthy：实例异常 - RestartTimeout：重启超时
 
         :param status: The status of this RespInstanceBase.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -201,7 +228,7 @@ class RespInstanceBase:
         实例状态对应编号 - 1：创建中 - 2：创建成功 - 3：创建失败 - 4：初始化中 - 5：注册中 - 6：运行中 - 7：初始化失败 - 8：注册失败 - 10：安装中 - 11：安装失败 - 12：升级中 - 13：升级失败 - 20：回滚中 - 21：回滚成功 - 22：回滚失败 - 23：删除中 - 24：删除失败 - 25：注销中 - 26：注销失败 - 27：创建超时 - 28：初始化超时 - 29：注册超时 - 30：安装超时 - 31：升级超时 - 32：回滚超时 - 33：删除超时 - 34：注销超时 - 35：启动中 - 36：冻结中 - 37：已冻结 - 38：重启中 - 39：重启失败 - 40：实例异常 - 41：重启超时
 
         :param instance_status: The instance_status of this RespInstanceBase.
-        :type: int
+        :type instance_status: int
         """
         self._instance_status = instance_status
 
@@ -223,7 +250,7 @@ class RespInstanceBase:
         实例类型  暂不支持
 
         :param type: The type of this RespInstanceBase.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -245,7 +272,7 @@ class RespInstanceBase:
         实例规格： - ROMA_BASIC：基础版实例 - ROMA_PROFESSIONAL：专业版实例 - ROMA_ENTERPRISE：企业版实例 - ROMA_PLATINUM：铂金版实例 [- ROMA_BASIC_IPV6：基础版IPV6实例](tag:hcs) [- ROMA_PROFESSIONAL_IPV6：专业版IPV6实例](tag:hcs) [- ROMA_ENTERPRISE_IPV6：企业版IPV6实例](tag:hcs) [- ROMA_PLATINUM_IPV6：铂金版IPV6实例](tag:hcs)
 
         :param spec: The spec of this RespInstanceBase.
-        :type: str
+        :type spec: str
         """
         self._spec = spec
 
@@ -267,7 +294,7 @@ class RespInstanceBase:
         实例创建时间。unix时间戳格式。
 
         :param create_time: The create_time of this RespInstanceBase.
-        :type: int
+        :type create_time: int
         """
         self._create_time = create_time
 
@@ -289,7 +316,7 @@ class RespInstanceBase:
         企业项目ID，企业帐号必填
 
         :param enterprise_project_id: The enterprise_project_id of this RespInstanceBase.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -311,7 +338,7 @@ class RespInstanceBase:
         实例绑定的弹性IP地址
 
         :param eip_address: The eip_address of this RespInstanceBase.
-        :type: str
+        :type eip_address: str
         """
         self._eip_address = eip_address
 
@@ -333,7 +360,7 @@ class RespInstanceBase:
         实例计费方式： - 0：按需计费 - 1：包周期计费
 
         :param charging_mode: The charging_mode of this RespInstanceBase.
-        :type: int
+        :type charging_mode: int
         """
         self._charging_mode = charging_mode
 
@@ -355,7 +382,7 @@ class RespInstanceBase:
         包周期计费订单编号
 
         :param cbc_metadata: The cbc_metadata of this RespInstanceBase.
-        :type: str
+        :type cbc_metadata: str
         """
         self._cbc_metadata = cbc_metadata
 

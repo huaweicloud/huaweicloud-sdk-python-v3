@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Subnet:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -68,7 +67,51 @@ class Subnet:
     }
 
     def __init__(self, id=None, name=None, description=None, cidr=None, gateway_ip=None, ipv6_enable=None, cidr_v6=None, gateway_ip_v6=None, dhcp_enable=None, primary_dns=None, secondary_dns=None, dns_list=None, availability_zone=None, vpc_id=None, status=None, neutron_network_id=None, neutron_subnet_id=None, neutron_subnet_id_v6=None, extra_dhcp_opts=None, scope=None):
-        """Subnet - a model defined in huaweicloud sdk"""
+        """Subnet
+
+        The model defined in huaweicloud sdk
+
+        :param id: 子网ID
+        :type id: str
+        :param name: 功能说明：子网名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
+        :type name: str
+        :param description: 功能说明：子网描述 取值范围：0-255个字符，不能包含“&lt;”和“&gt;”。
+        :type description: str
+        :param cidr: 功能说明：子网的网段 取值范围：必须在vpc对应cidr范围内 约束：必须是cidr格式。掩码长度不能大于28
+        :type cidr: str
+        :param gateway_ip: 功能说明：子网的网关 取值范围：子网网段中的IP地址 约束：必须是ip格式
+        :type gateway_ip: str
+        :param ipv6_enable: 功能说明：是否创建cidr_v6 取值范围：true（开启），false（关闭）
+        :type ipv6_enable: bool
+        :param cidr_v6: IPv6子网的网段，如果子网为IPv4子网，则不返回此参数
+        :type cidr_v6: str
+        :param gateway_ip_v6: IPv6子网的网关，如果子网为IPv4子网，则不返回此参数
+        :type gateway_ip_v6: str
+        :param dhcp_enable: 子网是否开启dhcp功能
+        :type dhcp_enable: bool
+        :param primary_dns: 子网dns服务器地址1
+        :type primary_dns: str
+        :param secondary_dns: 子网dns服务器地址2
+        :type secondary_dns: str
+        :param dns_list: 子网dns服务器地址列表
+        :type dns_list: list[str]
+        :param availability_zone: 子网所在的可用区标识
+        :type availability_zone: str
+        :param vpc_id: 子网所在VPC标识
+        :type vpc_id: str
+        :param status: 功能说明：子网的状态 取值范围： - ACTIVE：表示子网已挂载到ROUTER上 - UNKNOWN：表示子网还未挂载到ROUTER上 - ERROR：表示子网状态故障
+        :type status: str
+        :param neutron_network_id: 对应网络（OpenStack Neutron接口）id
+        :type neutron_network_id: str
+        :param neutron_subnet_id: 对应子网（OpenStack Neutron接口）id
+        :type neutron_subnet_id: str
+        :param neutron_subnet_id_v6: 对应IPv6子网（OpenStack Neutron接口）id，如果子网为IPv4子网，则不返回此参数
+        :type neutron_subnet_id_v6: str
+        :param extra_dhcp_opts: 子网配置的NTP地址
+        :type extra_dhcp_opts: list[:class:`huaweicloudsdkvpc.v2.ExtraDhcpOption`]
+        :param scope: 功能说明：子网作用域 取值范围：center-表示作用域为中心；{azId}表示作用域为具体的AZ
+        :type scope: str
+        """
         
         
 
@@ -134,7 +177,7 @@ class Subnet:
         子网ID
 
         :param id: The id of this Subnet.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -156,7 +199,7 @@ class Subnet:
         功能说明：子网名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
         :param name: The name of this Subnet.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -178,7 +221,7 @@ class Subnet:
         功能说明：子网描述 取值范围：0-255个字符，不能包含“<”和“>”。
 
         :param description: The description of this Subnet.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -200,7 +243,7 @@ class Subnet:
         功能说明：子网的网段 取值范围：必须在vpc对应cidr范围内 约束：必须是cidr格式。掩码长度不能大于28
 
         :param cidr: The cidr of this Subnet.
-        :type: str
+        :type cidr: str
         """
         self._cidr = cidr
 
@@ -222,7 +265,7 @@ class Subnet:
         功能说明：子网的网关 取值范围：子网网段中的IP地址 约束：必须是ip格式
 
         :param gateway_ip: The gateway_ip of this Subnet.
-        :type: str
+        :type gateway_ip: str
         """
         self._gateway_ip = gateway_ip
 
@@ -244,7 +287,7 @@ class Subnet:
         功能说明：是否创建cidr_v6 取值范围：true（开启），false（关闭）
 
         :param ipv6_enable: The ipv6_enable of this Subnet.
-        :type: bool
+        :type ipv6_enable: bool
         """
         self._ipv6_enable = ipv6_enable
 
@@ -266,7 +309,7 @@ class Subnet:
         IPv6子网的网段，如果子网为IPv4子网，则不返回此参数
 
         :param cidr_v6: The cidr_v6 of this Subnet.
-        :type: str
+        :type cidr_v6: str
         """
         self._cidr_v6 = cidr_v6
 
@@ -288,7 +331,7 @@ class Subnet:
         IPv6子网的网关，如果子网为IPv4子网，则不返回此参数
 
         :param gateway_ip_v6: The gateway_ip_v6 of this Subnet.
-        :type: str
+        :type gateway_ip_v6: str
         """
         self._gateway_ip_v6 = gateway_ip_v6
 
@@ -310,7 +353,7 @@ class Subnet:
         子网是否开启dhcp功能
 
         :param dhcp_enable: The dhcp_enable of this Subnet.
-        :type: bool
+        :type dhcp_enable: bool
         """
         self._dhcp_enable = dhcp_enable
 
@@ -332,7 +375,7 @@ class Subnet:
         子网dns服务器地址1
 
         :param primary_dns: The primary_dns of this Subnet.
-        :type: str
+        :type primary_dns: str
         """
         self._primary_dns = primary_dns
 
@@ -354,7 +397,7 @@ class Subnet:
         子网dns服务器地址2
 
         :param secondary_dns: The secondary_dns of this Subnet.
-        :type: str
+        :type secondary_dns: str
         """
         self._secondary_dns = secondary_dns
 
@@ -376,7 +419,7 @@ class Subnet:
         子网dns服务器地址列表
 
         :param dns_list: The dns_list of this Subnet.
-        :type: list[str]
+        :type dns_list: list[str]
         """
         self._dns_list = dns_list
 
@@ -398,7 +441,7 @@ class Subnet:
         子网所在的可用区标识
 
         :param availability_zone: The availability_zone of this Subnet.
-        :type: str
+        :type availability_zone: str
         """
         self._availability_zone = availability_zone
 
@@ -420,7 +463,7 @@ class Subnet:
         子网所在VPC标识
 
         :param vpc_id: The vpc_id of this Subnet.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -442,7 +485,7 @@ class Subnet:
         功能说明：子网的状态 取值范围： - ACTIVE：表示子网已挂载到ROUTER上 - UNKNOWN：表示子网还未挂载到ROUTER上 - ERROR：表示子网状态故障
 
         :param status: The status of this Subnet.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -464,7 +507,7 @@ class Subnet:
         对应网络（OpenStack Neutron接口）id
 
         :param neutron_network_id: The neutron_network_id of this Subnet.
-        :type: str
+        :type neutron_network_id: str
         """
         self._neutron_network_id = neutron_network_id
 
@@ -486,7 +529,7 @@ class Subnet:
         对应子网（OpenStack Neutron接口）id
 
         :param neutron_subnet_id: The neutron_subnet_id of this Subnet.
-        :type: str
+        :type neutron_subnet_id: str
         """
         self._neutron_subnet_id = neutron_subnet_id
 
@@ -508,7 +551,7 @@ class Subnet:
         对应IPv6子网（OpenStack Neutron接口）id，如果子网为IPv4子网，则不返回此参数
 
         :param neutron_subnet_id_v6: The neutron_subnet_id_v6 of this Subnet.
-        :type: str
+        :type neutron_subnet_id_v6: str
         """
         self._neutron_subnet_id_v6 = neutron_subnet_id_v6
 
@@ -519,7 +562,7 @@ class Subnet:
         子网配置的NTP地址
 
         :return: The extra_dhcp_opts of this Subnet.
-        :rtype: list[ExtraDhcpOption]
+        :rtype: list[:class:`huaweicloudsdkvpc.v2.ExtraDhcpOption`]
         """
         return self._extra_dhcp_opts
 
@@ -530,7 +573,7 @@ class Subnet:
         子网配置的NTP地址
 
         :param extra_dhcp_opts: The extra_dhcp_opts of this Subnet.
-        :type: list[ExtraDhcpOption]
+        :type extra_dhcp_opts: list[:class:`huaweicloudsdkvpc.v2.ExtraDhcpOption`]
         """
         self._extra_dhcp_opts = extra_dhcp_opts
 
@@ -552,7 +595,7 @@ class Subnet:
         功能说明：子网作用域 取值范围：center-表示作用域为中心；{azId}表示作用域为具体的AZ
 
         :param scope: The scope of this Subnet.
-        :type: str
+        :type scope: str
         """
         self._scope = scope
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SeriesAPIQueryItemParam:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class SeriesAPIQueryItemParam:
     }
 
     def __init__(self, series=None):
-        """SeriesAPIQueryItemParam - a model defined in huaweicloud sdk"""
+        """SeriesAPIQueryItemParam
+
+        The model defined in huaweicloud sdk
+
+        :param series: 通过该数组传递的参数信息进行时间序列查询。
+        :type series: list[:class:`huaweicloudsdkaom.v2.QuerySeriesOptionParam`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class SeriesAPIQueryItemParam:
         通过该数组传递的参数信息进行时间序列查询。
 
         :return: The series of this SeriesAPIQueryItemParam.
-        :rtype: list[QuerySeriesOptionParam]
+        :rtype: list[:class:`huaweicloudsdkaom.v2.QuerySeriesOptionParam`]
         """
         return self._series
 
@@ -57,7 +62,7 @@ class SeriesAPIQueryItemParam:
         通过该数组传递的参数信息进行时间序列查询。
 
         :param series: The series of this SeriesAPIQueryItemParam.
-        :type: list[QuerySeriesOptionParam]
+        :type series: list[:class:`huaweicloudsdkaom.v2.QuerySeriesOptionParam`]
         """
         self._series = series
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTagValuesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListTagValuesRequest:
     }
 
     def __init__(self, data_store_id=None, tag_name=None, filters=None, offset=None, limit=None):
-        """ListTagValuesRequest - a model defined in huaweicloud sdk"""
+        """ListTagValuesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param data_store_id: 存储ID
+        :type data_store_id: str
+        :param tag_name: tag 名称
+        :type tag_name: str
+        :param filters: 查询标签的值的过滤条件，例如: {\&quot;deviceCategory\&quot;: \&quot;class1\&quot;}，注意特殊字符需要 urlencode
+        :type filters: str
+        :param offset: 查询起始元素的偏移
+        :type offset: int
+        :param limit: 返回的元素列表大小限制,默认为 100
+        :type limit: int
+        """
         
         
 
@@ -76,7 +89,7 @@ class ListTagValuesRequest:
         存储ID
 
         :param data_store_id: The data_store_id of this ListTagValuesRequest.
-        :type: str
+        :type data_store_id: str
         """
         self._data_store_id = data_store_id
 
@@ -98,7 +111,7 @@ class ListTagValuesRequest:
         tag 名称
 
         :param tag_name: The tag_name of this ListTagValuesRequest.
-        :type: str
+        :type tag_name: str
         """
         self._tag_name = tag_name
 
@@ -120,7 +133,7 @@ class ListTagValuesRequest:
         查询标签的值的过滤条件，例如: {\"deviceCategory\": \"class1\"}，注意特殊字符需要 urlencode
 
         :param filters: The filters of this ListTagValuesRequest.
-        :type: str
+        :type filters: str
         """
         self._filters = filters
 
@@ -142,7 +155,7 @@ class ListTagValuesRequest:
         查询起始元素的偏移
 
         :param offset: The offset of this ListTagValuesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -164,7 +177,7 @@ class ListTagValuesRequest:
         返回的元素列表大小限制,默认为 100
 
         :param limit: The limit of this ListTagValuesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

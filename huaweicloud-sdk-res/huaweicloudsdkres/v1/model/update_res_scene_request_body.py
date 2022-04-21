@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateResSceneRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class UpdateResSceneRequestBody:
     }
 
     def __init__(self, category=None, datasource_id=None, ds_config=None, scene_name=None, specs_config=None, type=None, service_type=None):
-        """UpdateResSceneRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateResSceneRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param category: 场景类型： - customize，自定义推荐 - popularity，热门推荐 - relation，关联推荐 - personalization，猜你喜欢
+        :type category: str
+        :param datasource_id: 数据源id，字母、数字、下划线、减号组合32位。
+        :type datasource_id: str
+        :param ds_config: 
+        :type ds_config: :class:`huaweicloudsdkres.v1.DsConfig`
+        :param scene_name: 场景名称，1-64位的字母、数字、下划线、中划线组合。
+        :type scene_name: str
+        :param specs_config: 
+        :type specs_config: :class:`huaweicloudsdkres.v1.SpecsConfig`
+        :param type: 场景类型： - UI，基于用户推荐物品 - UU，基于用户推荐用户 - II，基于物品推荐物品 - IU，基于物品推荐用户
+        :type type: str
+        :param service_type: 服务类型： - rank，排序服务 - rec，推荐服务
+        :type service_type: str
+        """
         
         
 
@@ -81,7 +98,7 @@ class UpdateResSceneRequestBody:
         场景类型： - customize，自定义推荐 - popularity，热门推荐 - relation，关联推荐 - personalization，猜你喜欢
 
         :param category: The category of this UpdateResSceneRequestBody.
-        :type: str
+        :type category: str
         """
         self._category = category
 
@@ -103,7 +120,7 @@ class UpdateResSceneRequestBody:
         数据源id，字母、数字、下划线、减号组合32位。
 
         :param datasource_id: The datasource_id of this UpdateResSceneRequestBody.
-        :type: str
+        :type datasource_id: str
         """
         self._datasource_id = datasource_id
 
@@ -113,7 +130,7 @@ class UpdateResSceneRequestBody:
 
 
         :return: The ds_config of this UpdateResSceneRequestBody.
-        :rtype: DsConfig
+        :rtype: :class:`huaweicloudsdkres.v1.DsConfig`
         """
         return self._ds_config
 
@@ -123,7 +140,7 @@ class UpdateResSceneRequestBody:
 
 
         :param ds_config: The ds_config of this UpdateResSceneRequestBody.
-        :type: DsConfig
+        :type ds_config: :class:`huaweicloudsdkres.v1.DsConfig`
         """
         self._ds_config = ds_config
 
@@ -145,7 +162,7 @@ class UpdateResSceneRequestBody:
         场景名称，1-64位的字母、数字、下划线、中划线组合。
 
         :param scene_name: The scene_name of this UpdateResSceneRequestBody.
-        :type: str
+        :type scene_name: str
         """
         self._scene_name = scene_name
 
@@ -155,7 +172,7 @@ class UpdateResSceneRequestBody:
 
 
         :return: The specs_config of this UpdateResSceneRequestBody.
-        :rtype: SpecsConfig
+        :rtype: :class:`huaweicloudsdkres.v1.SpecsConfig`
         """
         return self._specs_config
 
@@ -165,7 +182,7 @@ class UpdateResSceneRequestBody:
 
 
         :param specs_config: The specs_config of this UpdateResSceneRequestBody.
-        :type: SpecsConfig
+        :type specs_config: :class:`huaweicloudsdkres.v1.SpecsConfig`
         """
         self._specs_config = specs_config
 
@@ -187,7 +204,7 @@ class UpdateResSceneRequestBody:
         场景类型： - UI，基于用户推荐物品 - UU，基于用户推荐用户 - II，基于物品推荐物品 - IU，基于物品推荐用户
 
         :param type: The type of this UpdateResSceneRequestBody.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -209,7 +226,7 @@ class UpdateResSceneRequestBody:
         服务类型： - rank，排序服务 - rec，推荐服务
 
         :param service_type: The service_type of this UpdateResSceneRequestBody.
-        :type: str
+        :type service_type: str
         """
         self._service_type = service_type
 

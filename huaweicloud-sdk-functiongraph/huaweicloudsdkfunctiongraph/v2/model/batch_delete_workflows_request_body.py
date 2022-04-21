@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchDeleteWorkflowsRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchDeleteWorkflowsRequestBody:
     }
 
     def __init__(self, workflow_urns=None):
-        """BatchDeleteWorkflowsRequestBody - a model defined in huaweicloud sdk"""
+        """BatchDeleteWorkflowsRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param workflow_urns: 流程URN列表
+        :type workflow_urns: list[str]
+        """
         
         
 
@@ -58,7 +63,7 @@ class BatchDeleteWorkflowsRequestBody:
         流程URN列表
 
         :param workflow_urns: The workflow_urns of this BatchDeleteWorkflowsRequestBody.
-        :type: list[str]
+        :type workflow_urns: list[str]
         """
         self._workflow_urns = workflow_urns
 

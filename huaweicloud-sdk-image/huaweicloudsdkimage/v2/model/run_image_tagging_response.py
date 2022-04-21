@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunImageTaggingResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RunImageTaggingResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """RunImageTaggingResponse - a model defined in huaweicloud sdk"""
+        """RunImageTaggingResponse
+
+        The model defined in huaweicloud sdk
+
+        :param result: 
+        :type result: :class:`huaweicloudsdkimage.v2.ImageTaggingResponseResult`
+        """
         
         super(RunImageTaggingResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class RunImageTaggingResponse(SdkResponse):
 
 
         :return: The result of this RunImageTaggingResponse.
-        :rtype: ImageTaggingResponseResult
+        :rtype: :class:`huaweicloudsdkimage.v2.ImageTaggingResponseResult`
         """
         return self._result
 
@@ -56,7 +61,7 @@ class RunImageTaggingResponse(SdkResponse):
 
 
         :param result: The result of this RunImageTaggingResponse.
-        :type: ImageTaggingResponseResult
+        :type result: :class:`huaweicloudsdkimage.v2.ImageTaggingResponseResult`
         """
         self._result = result
 

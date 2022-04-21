@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateDataImage:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CreateDataImage:
     }
 
     def __init__(self, name=None, volume_id=None, description=None, tags=None):
-        """CreateDataImage - a model defined in huaweicloud sdk"""
+        """CreateDataImage
+
+        The model defined in huaweicloud sdk
+
+        :param name: 数据盘镜像名称。
+        :type name: str
+        :param volume_id: 数据盘ID。
+        :type volume_id: str
+        :param description: 数据盘描述。
+        :type description: str
+        :param tags: 数据盘镜像标签。
+        :type tags: list[str]
+        """
         
         
 
@@ -71,7 +82,7 @@ class CreateDataImage:
         数据盘镜像名称。
 
         :param name: The name of this CreateDataImage.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -93,7 +104,7 @@ class CreateDataImage:
         数据盘ID。
 
         :param volume_id: The volume_id of this CreateDataImage.
-        :type: str
+        :type volume_id: str
         """
         self._volume_id = volume_id
 
@@ -115,7 +126,7 @@ class CreateDataImage:
         数据盘描述。
 
         :param description: The description of this CreateDataImage.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -137,7 +148,7 @@ class CreateDataImage:
         数据盘镜像标签。
 
         :param tags: The tags of this CreateDataImage.
-        :type: list[str]
+        :type tags: list[str]
         """
         self._tags = tags
 

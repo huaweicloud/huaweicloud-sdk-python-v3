@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TransferAmountInfoV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class TransferAmountInfoV2:
     }
 
     def __init__(self, avail_transfer_amount=None, measure_id=None, currency=None, amount=None, credit_amount=None, expire_time=None):
-        """TransferAmountInfoV2 - a model defined in huaweicloud sdk"""
+        """TransferAmountInfoV2
+
+        The model defined in huaweicloud sdk
+
+        :param avail_transfer_amount: 可拨款的金额。
+        :type avail_transfer_amount: float
+        :param measure_id: 金额单位。 1：元
+        :type measure_id: int
+        :param currency: 币种。 CNY：人民币
+        :type currency: str
+        :param amount: 账户余额（仅balance_type&#x3D;信用账户时才有这个字段）。
+        :type amount: float
+        :param credit_amount: 信用额度（仅balance_type&#x3D;信用账户时才有这个字段）。
+        :type credit_amount: float
+        :param expire_time: 信用额度过期时间。 UTC时间，格式为：2016-03-28T14:45:38Z。 （仅balance_type&#x3D;信用账户时才有这个字段）。 如果查询信用账户可拨款余额的查询结果没有失效时间，表示永久有效。
+        :type expire_time: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class TransferAmountInfoV2:
         可拨款的金额。
 
         :param avail_transfer_amount: The avail_transfer_amount of this TransferAmountInfoV2.
-        :type: float
+        :type avail_transfer_amount: float
         """
         self._avail_transfer_amount = avail_transfer_amount
 
@@ -105,7 +120,7 @@ class TransferAmountInfoV2:
         金额单位。 1：元
 
         :param measure_id: The measure_id of this TransferAmountInfoV2.
-        :type: int
+        :type measure_id: int
         """
         self._measure_id = measure_id
 
@@ -127,7 +142,7 @@ class TransferAmountInfoV2:
         币种。 CNY：人民币
 
         :param currency: The currency of this TransferAmountInfoV2.
-        :type: str
+        :type currency: str
         """
         self._currency = currency
 
@@ -149,7 +164,7 @@ class TransferAmountInfoV2:
         账户余额（仅balance_type=信用账户时才有这个字段）。
 
         :param amount: The amount of this TransferAmountInfoV2.
-        :type: float
+        :type amount: float
         """
         self._amount = amount
 
@@ -171,7 +186,7 @@ class TransferAmountInfoV2:
         信用额度（仅balance_type=信用账户时才有这个字段）。
 
         :param credit_amount: The credit_amount of this TransferAmountInfoV2.
-        :type: float
+        :type credit_amount: float
         """
         self._credit_amount = credit_amount
 
@@ -193,7 +208,7 @@ class TransferAmountInfoV2:
         信用额度过期时间。 UTC时间，格式为：2016-03-28T14:45:38Z。 （仅balance_type=信用账户时才有这个字段）。 如果查询信用账户可拨款余额的查询结果没有失效时间，表示永久有效。
 
         :param expire_time: The expire_time of this TransferAmountInfoV2.
-        :type: str
+        :type expire_time: str
         """
         self._expire_time = expire_time
 

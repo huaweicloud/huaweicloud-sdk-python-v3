@@ -12,10 +12,8 @@ class DictionaryType:
     """
     allowed enum values
     """
-
     SYSTEM = "system"
     USER = "user"
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -33,7 +31,11 @@ class DictionaryType:
     }
 
     def __init__(self):
-        """DictionaryType - a model defined in huaweicloud sdk"""
+        """DictionaryType
+
+        The model defined in huaweicloud sdk
+
+        """
         
         
         self.discriminator = None

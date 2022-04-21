@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteSqlserverDatabaseExResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteSqlserverDatabaseExResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """DeleteSqlserverDatabaseExResponse - a model defined in huaweicloud sdk"""
+        """DeleteSqlserverDatabaseExResponse
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 任务ID。
+        :type job_id: str
+        """
         
         super(DeleteSqlserverDatabaseExResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class DeleteSqlserverDatabaseExResponse(SdkResponse):
         任务ID。
 
         :param job_id: The job_id of this DeleteSqlserverDatabaseExResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 

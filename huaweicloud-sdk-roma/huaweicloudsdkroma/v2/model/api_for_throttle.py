@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApiForThrottle:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class ApiForThrottle:
     }
 
     def __init__(self, auth_type=None, run_env_name=None, group_name=None, publish_id=None, group_id=None, name=None, remark=None, run_env_id=None, id=None, req_uri=None, type=None, throttle_apply_id=None, throttle_name=None, apply_time=None):
-        """ApiForThrottle - a model defined in huaweicloud sdk"""
+        """ApiForThrottle
+
+        The model defined in huaweicloud sdk
+
+        :param auth_type: API的认证方式
+        :type auth_type: str
+        :param run_env_name: 发布的环境名
+        :type run_env_name: str
+        :param group_name: API所属分组的名称
+        :type group_name: str
+        :param publish_id: 发布记录的编号
+        :type publish_id: str
+        :param group_id: API所属分组的编号
+        :type group_id: str
+        :param name: API名称
+        :type name: str
+        :param remark: API描述
+        :type remark: str
+        :param run_env_id: 发布的环境id
+        :type run_env_id: str
+        :param id: API编号
+        :type id: str
+        :param req_uri: API的请求地址
+        :type req_uri: str
+        :param type: API类型
+        :type type: int
+        :param throttle_apply_id: 与流控策略的绑定关系编号
+        :type throttle_apply_id: str
+        :param throttle_name: 绑定的流控策略名称
+        :type throttle_name: str
+        :param apply_time: 已绑定的流控策略的绑定时间
+        :type apply_time: datetime
+        """
         
         
 
@@ -123,7 +154,7 @@ class ApiForThrottle:
         API的认证方式
 
         :param auth_type: The auth_type of this ApiForThrottle.
-        :type: str
+        :type auth_type: str
         """
         self._auth_type = auth_type
 
@@ -145,7 +176,7 @@ class ApiForThrottle:
         发布的环境名
 
         :param run_env_name: The run_env_name of this ApiForThrottle.
-        :type: str
+        :type run_env_name: str
         """
         self._run_env_name = run_env_name
 
@@ -167,7 +198,7 @@ class ApiForThrottle:
         API所属分组的名称
 
         :param group_name: The group_name of this ApiForThrottle.
-        :type: str
+        :type group_name: str
         """
         self._group_name = group_name
 
@@ -189,7 +220,7 @@ class ApiForThrottle:
         发布记录的编号
 
         :param publish_id: The publish_id of this ApiForThrottle.
-        :type: str
+        :type publish_id: str
         """
         self._publish_id = publish_id
 
@@ -211,7 +242,7 @@ class ApiForThrottle:
         API所属分组的编号
 
         :param group_id: The group_id of this ApiForThrottle.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -233,7 +264,7 @@ class ApiForThrottle:
         API名称
 
         :param name: The name of this ApiForThrottle.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -255,7 +286,7 @@ class ApiForThrottle:
         API描述
 
         :param remark: The remark of this ApiForThrottle.
-        :type: str
+        :type remark: str
         """
         self._remark = remark
 
@@ -277,7 +308,7 @@ class ApiForThrottle:
         发布的环境id
 
         :param run_env_id: The run_env_id of this ApiForThrottle.
-        :type: str
+        :type run_env_id: str
         """
         self._run_env_id = run_env_id
 
@@ -299,7 +330,7 @@ class ApiForThrottle:
         API编号
 
         :param id: The id of this ApiForThrottle.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -321,7 +352,7 @@ class ApiForThrottle:
         API的请求地址
 
         :param req_uri: The req_uri of this ApiForThrottle.
-        :type: str
+        :type req_uri: str
         """
         self._req_uri = req_uri
 
@@ -343,7 +374,7 @@ class ApiForThrottle:
         API类型
 
         :param type: The type of this ApiForThrottle.
-        :type: int
+        :type type: int
         """
         self._type = type
 
@@ -365,7 +396,7 @@ class ApiForThrottle:
         与流控策略的绑定关系编号
 
         :param throttle_apply_id: The throttle_apply_id of this ApiForThrottle.
-        :type: str
+        :type throttle_apply_id: str
         """
         self._throttle_apply_id = throttle_apply_id
 
@@ -387,7 +418,7 @@ class ApiForThrottle:
         绑定的流控策略名称
 
         :param throttle_name: The throttle_name of this ApiForThrottle.
-        :type: str
+        :type throttle_name: str
         """
         self._throttle_name = throttle_name
 
@@ -409,7 +440,7 @@ class ApiForThrottle:
         已绑定的流控策略的绑定时间
 
         :param apply_time: The apply_time of this ApiForThrottle.
-        :type: datetime
+        :type apply_time: datetime
         """
         self._apply_time = apply_time
 

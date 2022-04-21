@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateClusterPublicKibanaElbWhiteList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateClusterPublicKibanaElbWhiteList:
     }
 
     def __init__(self, white_list=None, enable_white_list=None):
-        """CreateClusterPublicKibanaElbWhiteList - a model defined in huaweicloud sdk"""
+        """CreateClusterPublicKibanaElbWhiteList
+
+        The model defined in huaweicloud sdk
+
+        :param white_list: 白名单。
+        :type white_list: str
+        :param enable_white_list: 是否开启访问控制。
+        :type enable_white_list: bool
+        """
         
         
 
@@ -61,7 +68,7 @@ class CreateClusterPublicKibanaElbWhiteList:
         白名单。
 
         :param white_list: The white_list of this CreateClusterPublicKibanaElbWhiteList.
-        :type: str
+        :type white_list: str
         """
         self._white_list = white_list
 
@@ -83,7 +90,7 @@ class CreateClusterPublicKibanaElbWhiteList:
         是否开启访问控制。
 
         :param enable_white_list: The enable_white_list of this CreateClusterPublicKibanaElbWhiteList.
-        :type: bool
+        :type enable_white_list: bool
         """
         self._enable_white_list = enable_white_list
 

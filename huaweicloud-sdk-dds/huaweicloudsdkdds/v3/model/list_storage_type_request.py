@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListStorageTypeRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListStorageTypeRequest:
     }
 
     def __init__(self, engine_name=None):
-        """ListStorageTypeRequest - a model defined in huaweicloud sdk"""
+        """ListStorageTypeRequest
+
+        The model defined in huaweicloud sdk
+
+        :param engine_name: 数据库版本类型： - 取值为“DDS-Community”。
+        :type engine_name: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class ListStorageTypeRequest:
         数据库版本类型： - 取值为“DDS-Community”。
 
         :param engine_name: The engine_name of this ListStorageTypeRequest.
-        :type: str
+        :type engine_name: str
         """
         self._engine_name = engine_name
 

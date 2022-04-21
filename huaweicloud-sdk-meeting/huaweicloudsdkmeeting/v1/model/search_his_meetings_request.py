@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SearchHisMeetingsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class SearchHisMeetingsRequest:
     }
 
     def __init__(self, user_uuid=None, offset=None, limit=None, search_key=None, query_all=None, start_date=None, end_date=None, sort_type=None, x_authorization_type=None, x_site_id=None):
-        """SearchHisMeetingsRequest - a model defined in huaweicloud sdk"""
+        """SearchHisMeetingsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param user_uuid: 用户UUID。 管理员有权限查询权限范围内的所有帐号，普通帐号仅能查询自己的。
+        :type user_uuid: str
+        :param offset: 指定返回的与会者列表的记录索引。该值必须大于等于0； 默认为0。
+        :type offset: int
+        :param limit: 指定返回的记录数。默认值为20，最大值为500。 当pageSize大于最大值500时，系统会默认设置为500。
+        :type limit: int
+        :param search_key: 根据会议主题，预定人和会议id关键词的字符串，查询历史会议。
+        :type search_key: str
+        :param query_all: 指定是否查询企业下所有用户的会议记录，如果登录帐号不是企业管理员，则该字段无效。如果该字段为true，则userUUID字段无效。 default: false
+        :type query_all: bool
+        :param start_date: 查询的起始日期毫秒数。例如：1583078400000
+        :type start_date: int
+        :param end_date: 查询的截止日期毫秒数。例如：1585756799000
+        :type end_date: int
+        :param sort_type: - ASC_StartTIME：根据会议开始时间升序排序。 - DSC_StartTIME：根据会议开始时间降序排序。 - ASC_RecordTYPE：根据是否具有录播文件排序，之后默认按照会议开始时间升序排序。 - DSC_RecordTYPE：根据是否含有录播文件排序，之后默认按照会议开始时间降序排序。
+        :type sort_type: str
+        :param x_authorization_type: 标识是否为第三方portal过来的请求。
+        :type x_authorization_type: str
+        :param x_site_id: 用于区分到哪个HCSO站点鉴权。
+        :type x_site_id: str
+        """
         
         
 
@@ -101,7 +124,7 @@ class SearchHisMeetingsRequest:
         用户UUID。 管理员有权限查询权限范围内的所有帐号，普通帐号仅能查询自己的。
 
         :param user_uuid: The user_uuid of this SearchHisMeetingsRequest.
-        :type: str
+        :type user_uuid: str
         """
         self._user_uuid = user_uuid
 
@@ -123,7 +146,7 @@ class SearchHisMeetingsRequest:
         指定返回的与会者列表的记录索引。该值必须大于等于0； 默认为0。
 
         :param offset: The offset of this SearchHisMeetingsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -145,7 +168,7 @@ class SearchHisMeetingsRequest:
         指定返回的记录数。默认值为20，最大值为500。 当pageSize大于最大值500时，系统会默认设置为500。
 
         :param limit: The limit of this SearchHisMeetingsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -167,7 +190,7 @@ class SearchHisMeetingsRequest:
         根据会议主题，预定人和会议id关键词的字符串，查询历史会议。
 
         :param search_key: The search_key of this SearchHisMeetingsRequest.
-        :type: str
+        :type search_key: str
         """
         self._search_key = search_key
 
@@ -189,7 +212,7 @@ class SearchHisMeetingsRequest:
         指定是否查询企业下所有用户的会议记录，如果登录帐号不是企业管理员，则该字段无效。如果该字段为true，则userUUID字段无效。 default: false
 
         :param query_all: The query_all of this SearchHisMeetingsRequest.
-        :type: bool
+        :type query_all: bool
         """
         self._query_all = query_all
 
@@ -211,7 +234,7 @@ class SearchHisMeetingsRequest:
         查询的起始日期毫秒数。例如：1583078400000
 
         :param start_date: The start_date of this SearchHisMeetingsRequest.
-        :type: int
+        :type start_date: int
         """
         self._start_date = start_date
 
@@ -233,7 +256,7 @@ class SearchHisMeetingsRequest:
         查询的截止日期毫秒数。例如：1585756799000
 
         :param end_date: The end_date of this SearchHisMeetingsRequest.
-        :type: int
+        :type end_date: int
         """
         self._end_date = end_date
 
@@ -255,7 +278,7 @@ class SearchHisMeetingsRequest:
         - ASC_StartTIME：根据会议开始时间升序排序。 - DSC_StartTIME：根据会议开始时间降序排序。 - ASC_RecordTYPE：根据是否具有录播文件排序，之后默认按照会议开始时间升序排序。 - DSC_RecordTYPE：根据是否含有录播文件排序，之后默认按照会议开始时间降序排序。
 
         :param sort_type: The sort_type of this SearchHisMeetingsRequest.
-        :type: str
+        :type sort_type: str
         """
         self._sort_type = sort_type
 
@@ -277,7 +300,7 @@ class SearchHisMeetingsRequest:
         标识是否为第三方portal过来的请求。
 
         :param x_authorization_type: The x_authorization_type of this SearchHisMeetingsRequest.
-        :type: str
+        :type x_authorization_type: str
         """
         self._x_authorization_type = x_authorization_type
 
@@ -299,7 +322,7 @@ class SearchHisMeetingsRequest:
         用于区分到哪个HCSO站点鉴权。
 
         :param x_site_id: The x_site_id of this SearchHisMeetingsRequest.
-        :type: str
+        :type x_site_id: str
         """
         self._x_site_id = x_site_id
 

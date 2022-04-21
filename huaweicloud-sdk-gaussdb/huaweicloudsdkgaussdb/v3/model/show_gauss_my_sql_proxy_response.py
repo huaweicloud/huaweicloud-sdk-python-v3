@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowGaussMySqlProxyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowGaussMySqlProxyResponse(SdkResponse):
     }
 
     def __init__(self, proxy=None, master_node=None, readonly_nodes=None):
-        """ShowGaussMySqlProxyResponse - a model defined in huaweicloud sdk"""
+        """ShowGaussMySqlProxyResponse
+
+        The model defined in huaweicloud sdk
+
+        :param proxy: 
+        :type proxy: :class:`huaweicloudsdkgaussdb.v3.MysqlProxy`
+        :param master_node: 
+        :type master_node: :class:`huaweicloudsdkgaussdb.v3.MysqlProxyNode`
+        :param readonly_nodes: 只读节点信息。
+        :type readonly_nodes: list[:class:`huaweicloudsdkgaussdb.v3.MysqlProxyNode`]
+        """
         
         super(ShowGaussMySqlProxyResponse, self).__init__()
 
@@ -56,7 +65,7 @@ class ShowGaussMySqlProxyResponse(SdkResponse):
 
 
         :return: The proxy of this ShowGaussMySqlProxyResponse.
-        :rtype: MysqlProxy
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlProxy`
         """
         return self._proxy
 
@@ -66,7 +75,7 @@ class ShowGaussMySqlProxyResponse(SdkResponse):
 
 
         :param proxy: The proxy of this ShowGaussMySqlProxyResponse.
-        :type: MysqlProxy
+        :type proxy: :class:`huaweicloudsdkgaussdb.v3.MysqlProxy`
         """
         self._proxy = proxy
 
@@ -76,7 +85,7 @@ class ShowGaussMySqlProxyResponse(SdkResponse):
 
 
         :return: The master_node of this ShowGaussMySqlProxyResponse.
-        :rtype: MysqlProxyNode
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlProxyNode`
         """
         return self._master_node
 
@@ -86,7 +95,7 @@ class ShowGaussMySqlProxyResponse(SdkResponse):
 
 
         :param master_node: The master_node of this ShowGaussMySqlProxyResponse.
-        :type: MysqlProxyNode
+        :type master_node: :class:`huaweicloudsdkgaussdb.v3.MysqlProxyNode`
         """
         self._master_node = master_node
 
@@ -97,7 +106,7 @@ class ShowGaussMySqlProxyResponse(SdkResponse):
         只读节点信息。
 
         :return: The readonly_nodes of this ShowGaussMySqlProxyResponse.
-        :rtype: list[MysqlProxyNode]
+        :rtype: list[:class:`huaweicloudsdkgaussdb.v3.MysqlProxyNode`]
         """
         return self._readonly_nodes
 
@@ -108,7 +117,7 @@ class ShowGaussMySqlProxyResponse(SdkResponse):
         只读节点信息。
 
         :param readonly_nodes: The readonly_nodes of this ShowGaussMySqlProxyResponse.
-        :type: list[MysqlProxyNode]
+        :type readonly_nodes: list[:class:`huaweicloudsdkgaussdb.v3.MysqlProxyNode`]
         """
         self._readonly_nodes = readonly_nodes
 

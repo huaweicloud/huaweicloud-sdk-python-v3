@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdatePublicKibanaWhitelistRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdatePublicKibanaWhitelistRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """UpdatePublicKibanaWhitelistRequest - a model defined in huaweicloud sdk"""
+        """UpdatePublicKibanaWhitelistRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 指定待更改的集群ID。
+        :type cluster_id: str
+        :param body: Body of the UpdatePublicKibanaWhitelistRequest
+        :type body: :class:`huaweicloudsdkcss.v1.UpdatePublicKibanaWhitelistReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdatePublicKibanaWhitelistRequest:
         指定待更改的集群ID。
 
         :param cluster_id: The cluster_id of this UpdatePublicKibanaWhitelistRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -72,7 +79,7 @@ class UpdatePublicKibanaWhitelistRequest:
 
 
         :return: The body of this UpdatePublicKibanaWhitelistRequest.
-        :rtype: UpdatePublicKibanaWhitelistReq
+        :rtype: :class:`huaweicloudsdkcss.v1.UpdatePublicKibanaWhitelistReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdatePublicKibanaWhitelistRequest:
 
 
         :param body: The body of this UpdatePublicKibanaWhitelistRequest.
-        :type: UpdatePublicKibanaWhitelistReq
+        :type body: :class:`huaweicloudsdkcss.v1.UpdatePublicKibanaWhitelistReq`
         """
         self._body = body
 

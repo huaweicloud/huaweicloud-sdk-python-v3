@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CancelEipResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CancelEipResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, node_id=None, node_name=None):
-        """CancelEipResponse - a model defined in huaweicloud sdk"""
+        """CancelEipResponse
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 任务ID。
+        :type job_id: str
+        :param node_id: 节点ID。
+        :type node_id: str
+        :param node_name: 节点名称。
+        :type node_name: str
+        """
         
         super(CancelEipResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class CancelEipResponse(SdkResponse):
         任务ID。
 
         :param job_id: The job_id of this CancelEipResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -90,7 +99,7 @@ class CancelEipResponse(SdkResponse):
         节点ID。
 
         :param node_id: The node_id of this CancelEipResponse.
-        :type: str
+        :type node_id: str
         """
         self._node_id = node_id
 
@@ -112,7 +121,7 @@ class CancelEipResponse(SdkResponse):
         节点名称。
 
         :param node_name: The node_name of this CancelEipResponse.
-        :type: str
+        :type node_name: str
         """
         self._node_name = node_name
 

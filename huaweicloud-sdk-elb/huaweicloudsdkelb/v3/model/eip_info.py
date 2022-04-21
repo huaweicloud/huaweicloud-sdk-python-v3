@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EipInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class EipInfo:
     }
 
     def __init__(self, eip_id=None, eip_address=None, ip_version=None):
-        """EipInfo - a model defined in huaweicloud sdk"""
+        """EipInfo
+
+        The model defined in huaweicloud sdk
+
+        :param eip_id: eip_id
+        :type eip_id: str
+        :param eip_address: eip_address
+        :type eip_address: str
+        :param ip_version: IP版本号，取值：4表示IPv4,6表示IPv6。  [不支持IPv6，请勿设置为6。](tag:dt,dt_test)
+        :type ip_version: int
+        """
         
         
 
@@ -68,7 +77,7 @@ class EipInfo:
         eip_id
 
         :param eip_id: The eip_id of this EipInfo.
-        :type: str
+        :type eip_id: str
         """
         self._eip_id = eip_id
 
@@ -90,7 +99,7 @@ class EipInfo:
         eip_address
 
         :param eip_address: The eip_address of this EipInfo.
-        :type: str
+        :type eip_address: str
         """
         self._eip_address = eip_address
 
@@ -112,7 +121,7 @@ class EipInfo:
         IP版本号，取值：4表示IPv4,6表示IPv6。  [不支持IPv6，请勿设置为6。](tag:dt,dt_test)
 
         :param ip_version: The ip_version of this EipInfo.
-        :type: int
+        :type ip_version: int
         """
         self._ip_version = ip_version
 

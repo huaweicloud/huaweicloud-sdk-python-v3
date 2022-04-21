@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SearchStatisticResourceInfoResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class SearchStatisticResourceInfoResponse(SdkResponse):
     }
 
     def __init__(self, count=None, limit=None, offset=None, data=None):
-        """SearchStatisticResourceInfoResponse - a model defined in huaweicloud sdk"""
+        """SearchStatisticResourceInfoResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 总记录数。
+        :type count: int
+        :param limit: 查询条目数量。
+        :type limit: int
+        :param offset: 查询偏移量。
+        :type offset: int
+        :param data: 会议已购资源使用数据按时间点统计的查询结果数组。
+        :type data: list[:class:`huaweicloudsdkmeeting.v1.StatisticResourceDataItem`]
+        """
         
         super(SearchStatisticResourceInfoResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class SearchStatisticResourceInfoResponse(SdkResponse):
         总记录数。
 
         :param count: The count of this SearchStatisticResourceInfoResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -95,7 +106,7 @@ class SearchStatisticResourceInfoResponse(SdkResponse):
         查询条目数量。
 
         :param limit: The limit of this SearchStatisticResourceInfoResponse.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -117,7 +128,7 @@ class SearchStatisticResourceInfoResponse(SdkResponse):
         查询偏移量。
 
         :param offset: The offset of this SearchStatisticResourceInfoResponse.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -128,7 +139,7 @@ class SearchStatisticResourceInfoResponse(SdkResponse):
         会议已购资源使用数据按时间点统计的查询结果数组。
 
         :return: The data of this SearchStatisticResourceInfoResponse.
-        :rtype: list[StatisticResourceDataItem]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.StatisticResourceDataItem`]
         """
         return self._data
 
@@ -139,7 +150,7 @@ class SearchStatisticResourceInfoResponse(SdkResponse):
         会议已购资源使用数据按时间点统计的查询结果数组。
 
         :param data: The data of this SearchStatisticResourceInfoResponse.
-        :type: list[StatisticResourceDataItem]
+        :type data: list[:class:`huaweicloudsdkmeeting.v1.StatisticResourceDataItem`]
         """
         self._data = data
 

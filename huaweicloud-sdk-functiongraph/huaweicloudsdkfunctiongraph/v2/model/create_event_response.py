@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateEventResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CreateEventResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, content=None, last_modified=None):
-        """CreateEventResponse - a model defined in huaweicloud sdk"""
+        """CreateEventResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 测试事件ID。
+        :type id: str
+        :param name: 测试事件名称。
+        :type name: str
+        :param content: 测试事件content。
+        :type content: str
+        :param last_modified: 上次修改的时间。
+        :type last_modified: float
+        """
         
         super(CreateEventResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class CreateEventResponse(SdkResponse):
         测试事件ID。
 
         :param id: The id of this CreateEventResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -95,7 +106,7 @@ class CreateEventResponse(SdkResponse):
         测试事件名称。
 
         :param name: The name of this CreateEventResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -117,7 +128,7 @@ class CreateEventResponse(SdkResponse):
         测试事件content。
 
         :param content: The content of this CreateEventResponse.
-        :type: str
+        :type content: str
         """
         self._content = content
 
@@ -139,7 +150,7 @@ class CreateEventResponse(SdkResponse):
         上次修改的时间。
 
         :param last_modified: The last_modified of this CreateEventResponse.
-        :type: float
+        :type last_modified: float
         """
         self._last_modified = last_modified
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DTStreamRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DTStreamRequest:
     }
 
     def __init__(self, inputs=None):
-        """DTStreamRequest - a model defined in huaweicloud sdk"""
+        """DTStreamRequest
+
+        The model defined in huaweicloud sdk
+
+        :param inputs: 输入参数，最多支持10个
+        :type inputs: list[:class:`huaweicloudsdkiotanalytics.v1.InputRequest`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class DTStreamRequest:
         输入参数，最多支持10个
 
         :return: The inputs of this DTStreamRequest.
-        :rtype: list[InputRequest]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.InputRequest`]
         """
         return self._inputs
 
@@ -57,7 +62,7 @@ class DTStreamRequest:
         输入参数，最多支持10个
 
         :param inputs: The inputs of this DTStreamRequest.
-        :type: list[InputRequest]
+        :type inputs: list[:class:`huaweicloudsdkiotanalytics.v1.InputRequest`]
         """
         self._inputs = inputs
 

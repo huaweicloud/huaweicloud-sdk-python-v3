@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateCommitResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateCommitResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """CreateCommitResponse - a model defined in huaweicloud sdk"""
+        """CreateCommitResponse
+
+        The model defined in huaweicloud sdk
+
+        :param error: 
+        :type error: :class:`huaweicloudsdkcodehub.v3.Error`
+        :param result: 差异列表
+        :type result: list[:class:`huaweicloudsdkcodehub.v3.CreateCommitResponseBody`]
+        :param status: 响应状态
+        :type status: str
+        """
         
         super(CreateCommitResponse, self).__init__()
 
@@ -56,7 +65,7 @@ class CreateCommitResponse(SdkResponse):
 
 
         :return: The error of this CreateCommitResponse.
-        :rtype: Error
+        :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
         """
         return self._error
 
@@ -66,7 +75,7 @@ class CreateCommitResponse(SdkResponse):
 
 
         :param error: The error of this CreateCommitResponse.
-        :type: Error
+        :type error: :class:`huaweicloudsdkcodehub.v3.Error`
         """
         self._error = error
 
@@ -77,7 +86,7 @@ class CreateCommitResponse(SdkResponse):
         差异列表
 
         :return: The result of this CreateCommitResponse.
-        :rtype: list[CreateCommitResponseBody]
+        :rtype: list[:class:`huaweicloudsdkcodehub.v3.CreateCommitResponseBody`]
         """
         return self._result
 
@@ -88,7 +97,7 @@ class CreateCommitResponse(SdkResponse):
         差异列表
 
         :param result: The result of this CreateCommitResponse.
-        :type: list[CreateCommitResponseBody]
+        :type result: list[:class:`huaweicloudsdkcodehub.v3.CreateCommitResponseBody`]
         """
         self._result = result
 
@@ -110,7 +119,7 @@ class CreateCommitResponse(SdkResponse):
         响应状态
 
         :param status: The status of this CreateCommitResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 

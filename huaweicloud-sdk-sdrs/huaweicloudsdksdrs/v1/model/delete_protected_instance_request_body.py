@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteProtectedInstanceRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteProtectedInstanceRequestBody:
     }
 
     def __init__(self, delete_target_server=None, delete_target_eip=None):
-        """DeleteProtectedInstanceRequestBody - a model defined in huaweicloud sdk"""
+        """DeleteProtectedInstanceRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param delete_target_server: 是否删除容灾站点服务器，默认值为false。
+        :type delete_target_server: bool
+        :param delete_target_eip: 是否删除容灾站点弹性IP，默认值为false。
+        :type delete_target_eip: bool
+        """
         
         
 
@@ -63,7 +70,7 @@ class DeleteProtectedInstanceRequestBody:
         是否删除容灾站点服务器，默认值为false。
 
         :param delete_target_server: The delete_target_server of this DeleteProtectedInstanceRequestBody.
-        :type: bool
+        :type delete_target_server: bool
         """
         self._delete_target_server = delete_target_server
 
@@ -85,7 +92,7 @@ class DeleteProtectedInstanceRequestBody:
         是否删除容灾站点弹性IP，默认值为false。
 
         :param delete_target_eip: The delete_target_eip of this DeleteProtectedInstanceRequestBody.
-        :type: bool
+        :type delete_target_eip: bool
         """
         self._delete_target_eip = delete_target_eip
 

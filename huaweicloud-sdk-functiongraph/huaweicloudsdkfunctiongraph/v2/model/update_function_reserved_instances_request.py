@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateFunctionReservedInstancesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateFunctionReservedInstancesRequest:
     }
 
     def __init__(self, function_urn=None, body=None):
-        """UpdateFunctionReservedInstancesRequest - a model defined in huaweicloud sdk"""
+        """UpdateFunctionReservedInstancesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param function_urn: 函数的URN（Uniform Resource Name），唯一标识函数。
+        :type function_urn: str
+        :param body: Body of the UpdateFunctionReservedInstancesRequest
+        :type body: :class:`huaweicloudsdkfunctiongraph.v2.UpdateFunctionReservedInstancesRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateFunctionReservedInstancesRequest:
         函数的URN（Uniform Resource Name），唯一标识函数。
 
         :param function_urn: The function_urn of this UpdateFunctionReservedInstancesRequest.
-        :type: str
+        :type function_urn: str
         """
         self._function_urn = function_urn
 
@@ -72,7 +79,7 @@ class UpdateFunctionReservedInstancesRequest:
 
 
         :return: The body of this UpdateFunctionReservedInstancesRequest.
-        :rtype: UpdateFunctionReservedInstancesRequestBody
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.UpdateFunctionReservedInstancesRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateFunctionReservedInstancesRequest:
 
 
         :param body: The body of this UpdateFunctionReservedInstancesRequest.
-        :type: UpdateFunctionReservedInstancesRequestBody
+        :type body: :class:`huaweicloudsdkfunctiongraph.v2.UpdateFunctionReservedInstancesRequestBody`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ModifyPrefineTag:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ModifyPrefineTag:
     }
 
     def __init__(self, new_tag=None, old_tag=None):
-        """ModifyPrefineTag - a model defined in huaweicloud sdk"""
+        """ModifyPrefineTag
+
+        The model defined in huaweicloud sdk
+
+        :param new_tag: 
+        :type new_tag: :class:`huaweicloudsdktms.v1.PredefineTagRequest`
+        :param old_tag: 
+        :type old_tag: :class:`huaweicloudsdktms.v1.PredefineTagRequest`
+        """
         
         
 
@@ -49,7 +56,7 @@ class ModifyPrefineTag:
 
 
         :return: The new_tag of this ModifyPrefineTag.
-        :rtype: PredefineTagRequest
+        :rtype: :class:`huaweicloudsdktms.v1.PredefineTagRequest`
         """
         return self._new_tag
 
@@ -59,7 +66,7 @@ class ModifyPrefineTag:
 
 
         :param new_tag: The new_tag of this ModifyPrefineTag.
-        :type: PredefineTagRequest
+        :type new_tag: :class:`huaweicloudsdktms.v1.PredefineTagRequest`
         """
         self._new_tag = new_tag
 
@@ -69,7 +76,7 @@ class ModifyPrefineTag:
 
 
         :return: The old_tag of this ModifyPrefineTag.
-        :rtype: PredefineTagRequest
+        :rtype: :class:`huaweicloudsdktms.v1.PredefineTagRequest`
         """
         return self._old_tag
 
@@ -79,7 +86,7 @@ class ModifyPrefineTag:
 
 
         :param old_tag: The old_tag of this ModifyPrefineTag.
-        :type: PredefineTagRequest
+        :type old_tag: :class:`huaweicloudsdktms.v1.PredefineTagRequest`
         """
         self._old_tag = old_tag
 

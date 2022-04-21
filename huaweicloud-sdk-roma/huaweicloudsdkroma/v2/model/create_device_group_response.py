@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateDeviceGroupResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class CreateDeviceGroupResponse(SdkResponse):
     }
 
     def __init__(self, permissions=None, parent_id=None, id=None, name=None, description=None, app_id=None, created_user=None, last_updated_user=None, created_datetime=None, last_updated_datetime=None, app_name=None):
-        """CreateDeviceGroupResponse - a model defined in huaweicloud sdk"""
+        """CreateDeviceGroupResponse
+
+        The model defined in huaweicloud sdk
+
+        :param permissions: 权限
+        :type permissions: list[str]
+        :param parent_id: 父分组ID
+        :type parent_id: int
+        :param id: 分组ID
+        :type id: int
+        :param name: 分组名称，支持中文，英文大小写，数字，下划线和中划线,长度2-64
+        :type name: str
+        :param description: 分组描述，长度0-200
+        :type description: str
+        :param app_id: 分组归属应用ID
+        :type app_id: str
+        :param created_user: 
+        :type created_user: :class:`huaweicloudsdkroma.v2.CreatedUser`
+        :param last_updated_user: 
+        :type last_updated_user: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
+        :param created_datetime: 创建时间
+        :type created_datetime: str
+        :param last_updated_datetime: 最后修改时间
+        :type last_updated_datetime: str
+        :param app_name: 应用名称
+        :type app_name: str
+        """
         
         super(CreateDeviceGroupResponse, self).__init__()
 
@@ -108,7 +133,7 @@ class CreateDeviceGroupResponse(SdkResponse):
         权限
 
         :param permissions: The permissions of this CreateDeviceGroupResponse.
-        :type: list[str]
+        :type permissions: list[str]
         """
         self._permissions = permissions
 
@@ -130,7 +155,7 @@ class CreateDeviceGroupResponse(SdkResponse):
         父分组ID
 
         :param parent_id: The parent_id of this CreateDeviceGroupResponse.
-        :type: int
+        :type parent_id: int
         """
         self._parent_id = parent_id
 
@@ -152,7 +177,7 @@ class CreateDeviceGroupResponse(SdkResponse):
         分组ID
 
         :param id: The id of this CreateDeviceGroupResponse.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -174,7 +199,7 @@ class CreateDeviceGroupResponse(SdkResponse):
         分组名称，支持中文，英文大小写，数字，下划线和中划线,长度2-64
 
         :param name: The name of this CreateDeviceGroupResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -196,7 +221,7 @@ class CreateDeviceGroupResponse(SdkResponse):
         分组描述，长度0-200
 
         :param description: The description of this CreateDeviceGroupResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -218,7 +243,7 @@ class CreateDeviceGroupResponse(SdkResponse):
         分组归属应用ID
 
         :param app_id: The app_id of this CreateDeviceGroupResponse.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -228,7 +253,7 @@ class CreateDeviceGroupResponse(SdkResponse):
 
 
         :return: The created_user of this CreateDeviceGroupResponse.
-        :rtype: CreatedUser
+        :rtype: :class:`huaweicloudsdkroma.v2.CreatedUser`
         """
         return self._created_user
 
@@ -238,7 +263,7 @@ class CreateDeviceGroupResponse(SdkResponse):
 
 
         :param created_user: The created_user of this CreateDeviceGroupResponse.
-        :type: CreatedUser
+        :type created_user: :class:`huaweicloudsdkroma.v2.CreatedUser`
         """
         self._created_user = created_user
 
@@ -248,7 +273,7 @@ class CreateDeviceGroupResponse(SdkResponse):
 
 
         :return: The last_updated_user of this CreateDeviceGroupResponse.
-        :rtype: LastUpdatedUser
+        :rtype: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
         """
         return self._last_updated_user
 
@@ -258,7 +283,7 @@ class CreateDeviceGroupResponse(SdkResponse):
 
 
         :param last_updated_user: The last_updated_user of this CreateDeviceGroupResponse.
-        :type: LastUpdatedUser
+        :type last_updated_user: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
         """
         self._last_updated_user = last_updated_user
 
@@ -280,7 +305,7 @@ class CreateDeviceGroupResponse(SdkResponse):
         创建时间
 
         :param created_datetime: The created_datetime of this CreateDeviceGroupResponse.
-        :type: str
+        :type created_datetime: str
         """
         self._created_datetime = created_datetime
 
@@ -302,7 +327,7 @@ class CreateDeviceGroupResponse(SdkResponse):
         最后修改时间
 
         :param last_updated_datetime: The last_updated_datetime of this CreateDeviceGroupResponse.
-        :type: str
+        :type last_updated_datetime: str
         """
         self._last_updated_datetime = last_updated_datetime
 
@@ -324,7 +349,7 @@ class CreateDeviceGroupResponse(SdkResponse):
         应用名称
 
         :param app_name: The app_name of this CreateDeviceGroupResponse.
-        :type: str
+        :type app_name: str
         """
         self._app_name = app_name
 

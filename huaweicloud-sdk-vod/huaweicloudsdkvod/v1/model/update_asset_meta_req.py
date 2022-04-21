@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateAssetMetaReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class UpdateAssetMetaReq:
     }
 
     def __init__(self, asset_id=None, title=None, description=None, category_id=None, tags=None):
-        """UpdateAssetMetaReq - a model defined in huaweicloud sdk"""
+        """UpdateAssetMetaReq
+
+        The model defined in huaweicloud sdk
+
+        :param asset_id: 媒资ID。
+        :type asset_id: str
+        :param title: 媒资标题，长度不超过128个字节，UTF-8编码。
+        :type title: str
+        :param description: 媒资描述，长度不超过1024个字节。
+        :type description: str
+        :param category_id: 媒资分类id。
+        :type category_id: int
+        :param tags: 媒资标签。  单个标签不超过16个字节，最多不超过16个标签。  多个用逗号分隔，UTF-8编码。
+        :type tags: str
+        """
         
         
 
@@ -77,7 +90,7 @@ class UpdateAssetMetaReq:
         媒资ID。
 
         :param asset_id: The asset_id of this UpdateAssetMetaReq.
-        :type: str
+        :type asset_id: str
         """
         self._asset_id = asset_id
 
@@ -99,7 +112,7 @@ class UpdateAssetMetaReq:
         媒资标题，长度不超过128个字节，UTF-8编码。
 
         :param title: The title of this UpdateAssetMetaReq.
-        :type: str
+        :type title: str
         """
         self._title = title
 
@@ -121,7 +134,7 @@ class UpdateAssetMetaReq:
         媒资描述，长度不超过1024个字节。
 
         :param description: The description of this UpdateAssetMetaReq.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -143,7 +156,7 @@ class UpdateAssetMetaReq:
         媒资分类id。
 
         :param category_id: The category_id of this UpdateAssetMetaReq.
-        :type: int
+        :type category_id: int
         """
         self._category_id = category_id
 
@@ -165,7 +178,7 @@ class UpdateAssetMetaReq:
         媒资标签。  单个标签不超过16个字节，最多不超过16个标签。  多个用逗号分隔，UTF-8编码。
 
         :param tags: The tags of this UpdateAssetMetaReq.
-        :type: str
+        :type tags: str
         """
         self._tags = tags
 

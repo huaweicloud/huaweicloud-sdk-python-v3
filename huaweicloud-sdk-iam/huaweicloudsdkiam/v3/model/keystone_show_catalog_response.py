@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneShowCatalogResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class KeystoneShowCatalogResponse(SdkResponse):
     }
 
     def __init__(self, catalog=None, links=None):
-        """KeystoneShowCatalogResponse - a model defined in huaweicloud sdk"""
+        """KeystoneShowCatalogResponse
+
+        The model defined in huaweicloud sdk
+
+        :param catalog: 服务目录信息列表。
+        :type catalog: list[:class:`huaweicloudsdkiam.v3.Catalog`]
+        :param links: 
+        :type links: :class:`huaweicloudsdkiam.v3.LinksSelf`
+        """
         
         super(KeystoneShowCatalogResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class KeystoneShowCatalogResponse(SdkResponse):
         服务目录信息列表。
 
         :return: The catalog of this KeystoneShowCatalogResponse.
-        :rtype: list[Catalog]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.Catalog`]
         """
         return self._catalog
 
@@ -63,7 +70,7 @@ class KeystoneShowCatalogResponse(SdkResponse):
         服务目录信息列表。
 
         :param catalog: The catalog of this KeystoneShowCatalogResponse.
-        :type: list[Catalog]
+        :type catalog: list[:class:`huaweicloudsdkiam.v3.Catalog`]
         """
         self._catalog = catalog
 
@@ -73,7 +80,7 @@ class KeystoneShowCatalogResponse(SdkResponse):
 
 
         :return: The links of this KeystoneShowCatalogResponse.
-        :rtype: LinksSelf
+        :rtype: :class:`huaweicloudsdkiam.v3.LinksSelf`
         """
         return self._links
 
@@ -83,7 +90,7 @@ class KeystoneShowCatalogResponse(SdkResponse):
 
 
         :param links: The links of this KeystoneShowCatalogResponse.
-        :type: LinksSelf
+        :type links: :class:`huaweicloudsdkiam.v3.LinksSelf`
         """
         self._links = links
 

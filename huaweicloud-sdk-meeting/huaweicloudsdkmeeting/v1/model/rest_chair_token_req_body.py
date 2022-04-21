@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestChairTokenReqBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RestChairTokenReqBody:
     }
 
     def __init__(self, apply_chair=None, chairman_pwd=None):
-        """RestChairTokenReqBody - a model defined in huaweicloud sdk"""
+        """RestChairTokenReqBody
+
+        The model defined in huaweicloud sdk
+
+        :param apply_chair: - 0: 释放主持人。 - 1: 申请主持人。
+        :type apply_chair: int
+        :param chairman_pwd: 当申请主持人时，携带主持人密码。
+        :type chairman_pwd: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class RestChairTokenReqBody:
         - 0: 释放主持人。 - 1: 申请主持人。
 
         :param apply_chair: The apply_chair of this RestChairTokenReqBody.
-        :type: int
+        :type apply_chair: int
         """
         self._apply_chair = apply_chair
 
@@ -84,7 +91,7 @@ class RestChairTokenReqBody:
         当申请主持人时，携带主持人密码。
 
         :param chairman_pwd: The chairman_pwd of this RestChairTokenReqBody.
-        :type: str
+        :type chairman_pwd: str
         """
         self._chairman_pwd = chairman_pwd
 

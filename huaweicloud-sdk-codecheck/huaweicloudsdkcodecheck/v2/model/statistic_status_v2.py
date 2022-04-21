@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StatisticStatusV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class StatisticStatusV2:
     }
 
     def __init__(self, unresolved=None, resolved=None, dismissed=None):
-        """StatisticStatusV2 - a model defined in huaweicloud sdk"""
+        """StatisticStatusV2
+
+        The model defined in huaweicloud sdk
+
+        :param unresolved: 未解决
+        :type unresolved: int
+        :param resolved: 已解决
+        :type resolved: int
+        :param dismissed: 已忽略
+        :type dismissed: int
+        """
         
         
 
@@ -68,7 +77,7 @@ class StatisticStatusV2:
         未解决
 
         :param unresolved: The unresolved of this StatisticStatusV2.
-        :type: int
+        :type unresolved: int
         """
         self._unresolved = unresolved
 
@@ -90,7 +99,7 @@ class StatisticStatusV2:
         已解决
 
         :param resolved: The resolved of this StatisticStatusV2.
-        :type: int
+        :type resolved: int
         """
         self._resolved = resolved
 
@@ -112,7 +121,7 @@ class StatisticStatusV2:
         已忽略
 
         :param dismissed: The dismissed of this StatisticStatusV2.
-        :type: int
+        :type dismissed: int
         """
         self._dismissed = dismissed
 

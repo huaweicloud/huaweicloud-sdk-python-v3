@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Attachment:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class Attachment:
     }
 
     def __init__(self, attached_at=None, attachment_id=None, device=None, host_name=None, id=None, server_id=None, volume_id=None):
-        """Attachment - a model defined in huaweicloud sdk"""
+        """Attachment
+
+        The model defined in huaweicloud sdk
+
+        :param attached_at: 挂载的时间信息。  时间格式：UTC YYYY-MM-DDTHH:MM:SS.XXXXXX
+        :type attached_at: str
+        :param attachment_id: 挂载信息对应的ID。
+        :type attachment_id: str
+        :param device: 挂载点。
+        :type device: str
+        :param host_name: 云硬盘挂载到的云服务器对应的物理主机的名称。
+        :type host_name: str
+        :param id: 挂载的资源ID。
+        :type id: str
+        :param server_id: 云硬盘挂载到的云服务器的 ID。
+        :type server_id: str
+        :param volume_id: 云硬盘ID。
+        :type volume_id: str
+        """
         
         
 
@@ -81,7 +98,7 @@ class Attachment:
         挂载的时间信息。  时间格式：UTC YYYY-MM-DDTHH:MM:SS.XXXXXX
 
         :param attached_at: The attached_at of this Attachment.
-        :type: str
+        :type attached_at: str
         """
         self._attached_at = attached_at
 
@@ -103,7 +120,7 @@ class Attachment:
         挂载信息对应的ID。
 
         :param attachment_id: The attachment_id of this Attachment.
-        :type: str
+        :type attachment_id: str
         """
         self._attachment_id = attachment_id
 
@@ -125,7 +142,7 @@ class Attachment:
         挂载点。
 
         :param device: The device of this Attachment.
-        :type: str
+        :type device: str
         """
         self._device = device
 
@@ -147,7 +164,7 @@ class Attachment:
         云硬盘挂载到的云服务器对应的物理主机的名称。
 
         :param host_name: The host_name of this Attachment.
-        :type: str
+        :type host_name: str
         """
         self._host_name = host_name
 
@@ -169,7 +186,7 @@ class Attachment:
         挂载的资源ID。
 
         :param id: The id of this Attachment.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -191,7 +208,7 @@ class Attachment:
         云硬盘挂载到的云服务器的 ID。
 
         :param server_id: The server_id of this Attachment.
-        :type: str
+        :type server_id: str
         """
         self._server_id = server_id
 
@@ -213,7 +230,7 @@ class Attachment:
         云硬盘ID。
 
         :param volume_id: The volume_id of this Attachment.
-        :type: str
+        :type volume_id: str
         """
         self._volume_id = volume_id
 

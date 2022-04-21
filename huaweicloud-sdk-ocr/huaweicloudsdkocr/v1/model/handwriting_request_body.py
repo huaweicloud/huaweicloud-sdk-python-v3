@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class HandwritingRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class HandwritingRequestBody:
     }
 
     def __init__(self, image=None, url=None, quick_mode=None, char_set=None, detect_direction=None):
-        """HandwritingRequestBody - a model defined in huaweicloud sdk"""
+        """HandwritingRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param image: 与url二选一  图像数据，base64编码，要求base64编码后大小不超过10MB。图片最小边不小于8px，最长边不超过8192px，支持JPEG、JPG、PNG、BMP、TIFF格式。  图片文件Base64编码字符串，点击[这里](https://support.huaweicloud.com/ocr_faq/ocr_01_0032.html)查看详细获取方式。   
+        :type image: str
+        :param url: 与image二选一  图片的URL路径，目前支持：  - 公网http/https url  - OBS提供的url，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权，详情参见[配置OBS访问权限](https://support.huaweicloud.com/api-ocr/ocr_03_0132.html)。  &gt; 说明：  - 接口响应时间依赖于图片的下载时间，如果图片下载时间过长，会返回接口调用失败。  - 请保证被检测图片所在的存储服务稳定可靠，推荐使用OBS服务存储图片数据。 
+        :type url: str
+        :param quick_mode: 快速模式开关，针对单行文字图片（要求图片只包含一行文字，且文字区域占比超过50%），打开时可以更快返回识别内容。可选值包括：  - true：打开快速模式；  - false：关闭快速模式。  &gt; 说明：  - 未传入该参数时默认为false，即关闭快速模式 
+        :type quick_mode: bool
+        :param char_set: 字符集设置，用户可以根据实际需要限定输出字符集范围。可选值如下所示。  - \&quot;digit\&quot;: 数字模式；  - \&quot;letter\&quot;: 大小写字母模式；  - \&quot;digit_letter\&quot;: 数字+字母模式；  - \&quot;general\&quot;: 数字+字母+中文模式；  &gt; 说明：  - 未传入该参数时，默认为“general”模式。 
+        :type char_set: str
+        :param detect_direction: 校正图片的倾斜角度开关，可选值如下所示。  - true：校正图片的倾斜角度；  - false：不校正图片的倾斜角度。  &gt; 说明：  - 支持任意角度的校正，未传入该参数时默认为“false”。 
+        :type detect_direction: bool
+        """
         
         
 
@@ -78,7 +91,7 @@ class HandwritingRequestBody:
         与url二选一  图像数据，base64编码，要求base64编码后大小不超过10MB。图片最小边不小于8px，最长边不超过8192px，支持JPEG、JPG、PNG、BMP、TIFF格式。  图片文件Base64编码字符串，点击[这里](https://support.huaweicloud.com/ocr_faq/ocr_01_0032.html)查看详细获取方式。   
 
         :param image: The image of this HandwritingRequestBody.
-        :type: str
+        :type image: str
         """
         self._image = image
 
@@ -100,7 +113,7 @@ class HandwritingRequestBody:
         与image二选一  图片的URL路径，目前支持：  - 公网http/https url  - OBS提供的url，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权，详情参见[配置OBS访问权限](https://support.huaweicloud.com/api-ocr/ocr_03_0132.html)。  > 说明：  - 接口响应时间依赖于图片的下载时间，如果图片下载时间过长，会返回接口调用失败。  - 请保证被检测图片所在的存储服务稳定可靠，推荐使用OBS服务存储图片数据。 
 
         :param url: The url of this HandwritingRequestBody.
-        :type: str
+        :type url: str
         """
         self._url = url
 
@@ -122,7 +135,7 @@ class HandwritingRequestBody:
         快速模式开关，针对单行文字图片（要求图片只包含一行文字，且文字区域占比超过50%），打开时可以更快返回识别内容。可选值包括：  - true：打开快速模式；  - false：关闭快速模式。  > 说明：  - 未传入该参数时默认为false，即关闭快速模式 
 
         :param quick_mode: The quick_mode of this HandwritingRequestBody.
-        :type: bool
+        :type quick_mode: bool
         """
         self._quick_mode = quick_mode
 
@@ -144,7 +157,7 @@ class HandwritingRequestBody:
         字符集设置，用户可以根据实际需要限定输出字符集范围。可选值如下所示。  - \"digit\": 数字模式；  - \"letter\": 大小写字母模式；  - \"digit_letter\": 数字+字母模式；  - \"general\": 数字+字母+中文模式；  > 说明：  - 未传入该参数时，默认为“general”模式。 
 
         :param char_set: The char_set of this HandwritingRequestBody.
-        :type: str
+        :type char_set: str
         """
         self._char_set = char_set
 
@@ -166,7 +179,7 @@ class HandwritingRequestBody:
         校正图片的倾斜角度开关，可选值如下所示。  - true：校正图片的倾斜角度；  - false：不校正图片的倾斜角度。  > 说明：  - 支持任意角度的校正，未传入该参数时默认为“false”。 
 
         :param detect_direction: The detect_direction of this HandwritingRequestBody.
-        :type: bool
+        :type detect_direction: bool
         """
         self._detect_direction = detect_direction
 

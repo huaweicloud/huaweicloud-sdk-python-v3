@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpgradeGraphReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpgradeGraphReq:
     }
 
     def __init__(self, upgrade_version=None, force_upgrade=None):
-        """UpgradeGraphReq - a model defined in huaweicloud sdk"""
+        """UpgradeGraphReq
+
+        The model defined in huaweicloud sdk
+
+        :param upgrade_version: 升级到的版本，必须大于当前图版本。
+        :type upgrade_version: str
+        :param force_upgrade: 是否强制升级。取值为true或false，默认为false。 - true：强制升级，会中断升级时已经在处理的任务，比如运行算法长任务，可能会造成少量请求失败。 - false：非强制升级，会等待已经运行的业务，升级过程可能较慢。
+        :type force_upgrade: bool
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpgradeGraphReq:
         升级到的版本，必须大于当前图版本。
 
         :param upgrade_version: The upgrade_version of this UpgradeGraphReq.
-        :type: str
+        :type upgrade_version: str
         """
         self._upgrade_version = upgrade_version
 
@@ -84,7 +91,7 @@ class UpgradeGraphReq:
         是否强制升级。取值为true或false，默认为false。 - true：强制升级，会中断升级时已经在处理的任务，比如运行算法长任务，可能会造成少量请求失败。 - false：非强制升级，会等待已经运行的业务，升级过程可能较慢。
 
         :param force_upgrade: The force_upgrade of this UpgradeGraphReq.
-        :type: bool
+        :type force_upgrade: bool
         """
         self._force_upgrade = force_upgrade
 

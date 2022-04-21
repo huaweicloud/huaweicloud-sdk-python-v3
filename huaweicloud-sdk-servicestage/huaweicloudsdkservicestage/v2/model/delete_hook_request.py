@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteHookRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class DeleteHookRequest:
     }
 
     def __init__(self, x_repo_auth=None, namespace=None, project=None, hook_id=None):
-        """DeleteHookRequest - a model defined in huaweicloud sdk"""
+        """DeleteHookRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_repo_auth: 授权名称。
+        :type x_repo_auth: str
+        :param namespace: 组织ID。
+        :type namespace: str
+        :param project: 仓库项目ID，如果含有“/”，需要将“/”替换为“:”。
+        :type project: str
+        :param hook_id: hook ID。
+        :type hook_id: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class DeleteHookRequest:
         授权名称。
 
         :param x_repo_auth: The x_repo_auth of this DeleteHookRequest.
-        :type: str
+        :type x_repo_auth: str
         """
         self._x_repo_auth = x_repo_auth
 
@@ -91,7 +102,7 @@ class DeleteHookRequest:
         组织ID。
 
         :param namespace: The namespace of this DeleteHookRequest.
-        :type: str
+        :type namespace: str
         """
         self._namespace = namespace
 
@@ -113,7 +124,7 @@ class DeleteHookRequest:
         仓库项目ID，如果含有“/”，需要将“/”替换为“:”。
 
         :param project: The project of this DeleteHookRequest.
-        :type: str
+        :type project: str
         """
         self._project = project
 
@@ -135,7 +146,7 @@ class DeleteHookRequest:
         hook ID。
 
         :param hook_id: The hook_id of this DeleteHookRequest.
-        :type: str
+        :type hook_id: str
         """
         self._hook_id = hook_id
 

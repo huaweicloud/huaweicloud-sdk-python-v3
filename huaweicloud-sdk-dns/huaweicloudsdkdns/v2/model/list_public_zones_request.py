@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPublicZonesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ListPublicZonesRequest:
     }
 
     def __init__(self, type=None, limit=None, marker=None, offset=None, tags=None, name=None, status=None, enterprise_project_id=None):
-        """ListPublicZonesRequest - a model defined in huaweicloud sdk"""
+        """ListPublicZonesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param type: 待查询的zone的类型。  取值范围：public、private  如果为空，表示查询公网类型的zone。 如果为public，表示查询公网类型的zone。 如果为private，表示查询内网类型的zone。 搜索模式默认为模糊搜索。  默认值为空。
+        :type type: str
+        :param limit: 每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
+        :type limit: int
+        :param marker: 分页查询起始的资源ID，为空时为查询第一页。
+        :type marker: str
+        :param offset: 分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0-2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
+        :type offset: int
+        :param tags: 资源标签。  取值格式：key1,value1|key2,value2  多个标签之间用\&quot;|\&quot;分开，每个标签的键值用英文逗号\&quot;,\&quot;相隔。  多个标签之间为“与”的关系。  关于资源标签，请参见添加资源标签。  搜索模式为精确搜索。如果资源标签值value是以*开头时，则按照*后面的值全模糊匹配。  默认值为空。
+        :type tags: str
+        :param name: zone名称。  搜索模式默认为模糊搜索。
+        :type name: str
+        :param status: 资源状态。
+        :type status: str
+        :param enterprise_project_id: 域名关联的企业项目ID，长度不超过36个字符。  默认值为0。
+        :type enterprise_project_id: str
+        """
         
         
 
@@ -93,7 +112,7 @@ class ListPublicZonesRequest:
         待查询的zone的类型。  取值范围：public、private  如果为空，表示查询公网类型的zone。 如果为public，表示查询公网类型的zone。 如果为private，表示查询内网类型的zone。 搜索模式默认为模糊搜索。  默认值为空。
 
         :param type: The type of this ListPublicZonesRequest.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -115,7 +134,7 @@ class ListPublicZonesRequest:
         每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
 
         :param limit: The limit of this ListPublicZonesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -137,7 +156,7 @@ class ListPublicZonesRequest:
         分页查询起始的资源ID，为空时为查询第一页。
 
         :param marker: The marker of this ListPublicZonesRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -159,7 +178,7 @@ class ListPublicZonesRequest:
         分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0-2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
 
         :param offset: The offset of this ListPublicZonesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -181,7 +200,7 @@ class ListPublicZonesRequest:
         资源标签。  取值格式：key1,value1|key2,value2  多个标签之间用\"|\"分开，每个标签的键值用英文逗号\",\"相隔。  多个标签之间为“与”的关系。  关于资源标签，请参见添加资源标签。  搜索模式为精确搜索。如果资源标签值value是以*开头时，则按照*后面的值全模糊匹配。  默认值为空。
 
         :param tags: The tags of this ListPublicZonesRequest.
-        :type: str
+        :type tags: str
         """
         self._tags = tags
 
@@ -203,7 +222,7 @@ class ListPublicZonesRequest:
         zone名称。  搜索模式默认为模糊搜索。
 
         :param name: The name of this ListPublicZonesRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -225,7 +244,7 @@ class ListPublicZonesRequest:
         资源状态。
 
         :param status: The status of this ListPublicZonesRequest.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -247,7 +266,7 @@ class ListPublicZonesRequest:
         域名关联的企业项目ID，长度不超过36个字符。  默认值为0。
 
         :param enterprise_project_id: The enterprise_project_id of this ListPublicZonesRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 

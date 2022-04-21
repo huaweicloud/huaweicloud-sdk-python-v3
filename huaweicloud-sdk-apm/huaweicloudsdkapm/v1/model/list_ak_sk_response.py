@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAkSkResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListAkSkResponse(SdkResponse):
     }
 
     def __init__(self, access_ak_sk_models=None):
-        """ListAkSkResponse - a model defined in huaweicloud sdk"""
+        """ListAkSkResponse
+
+        The model defined in huaweicloud sdk
+
+        :param access_ak_sk_models: 
+        :type access_ak_sk_models: list[:class:`huaweicloudsdkapm.v1.AccessAkskVO`]
+        """
         
         super(ListAkSkResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class ListAkSkResponse(SdkResponse):
 
 
         :return: The access_ak_sk_models of this ListAkSkResponse.
-        :rtype: list[AccessAkskVO]
+        :rtype: list[:class:`huaweicloudsdkapm.v1.AccessAkskVO`]
         """
         return self._access_ak_sk_models
 
@@ -56,7 +61,7 @@ class ListAkSkResponse(SdkResponse):
 
 
         :param access_ak_sk_models: The access_ak_sk_models of this ListAkSkResponse.
-        :type: list[AccessAkskVO]
+        :type access_ak_sk_models: list[:class:`huaweicloudsdkapm.v1.AccessAkskVO`]
         """
         self._access_ak_sk_models = access_ak_sk_models
 

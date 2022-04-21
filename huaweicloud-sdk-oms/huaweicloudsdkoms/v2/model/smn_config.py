@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SmnConfig:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class SmnConfig:
     }
 
     def __init__(self, language=None, topic_urn=None, trigger_conditions=None):
-        """SmnConfig - a model defined in huaweicloud sdk"""
+        """SmnConfig
+
+        The model defined in huaweicloud sdk
+
+        :param language: 当前用户所使用的管理控制台的语言。  可以选择zh-cn或者en-us。
+        :type language: str
+        :param topic_urn: 迁移任务所绑定的SMN消息主题的urn号。
+        :type topic_urn: str
+        :param trigger_conditions:   SMN消息的触发条件，取决于迁移任务状态。  迁移任务状态的取值范围为SUCCESS或者FAILURE。  - FAILURE表示任务失败后发送SMN消息。 - SUCCESS表示任务成功后发送SMN消息。
+        :type trigger_conditions: list[str]
+        """
         
         
 
@@ -66,7 +75,7 @@ class SmnConfig:
         当前用户所使用的管理控制台的语言。  可以选择zh-cn或者en-us。
 
         :param language: The language of this SmnConfig.
-        :type: str
+        :type language: str
         """
         self._language = language
 
@@ -88,7 +97,7 @@ class SmnConfig:
         迁移任务所绑定的SMN消息主题的urn号。
 
         :param topic_urn: The topic_urn of this SmnConfig.
-        :type: str
+        :type topic_urn: str
         """
         self._topic_urn = topic_urn
 
@@ -110,7 +119,7 @@ class SmnConfig:
           SMN消息的触发条件，取决于迁移任务状态。  迁移任务状态的取值范围为SUCCESS或者FAILURE。  - FAILURE表示任务失败后发送SMN消息。 - SUCCESS表示任务成功后发送SMN消息。
 
         :param trigger_conditions: The trigger_conditions of this SmnConfig.
-        :type: list[str]
+        :type trigger_conditions: list[str]
         """
         self._trigger_conditions = trigger_conditions
 

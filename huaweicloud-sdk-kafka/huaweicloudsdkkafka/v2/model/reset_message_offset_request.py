@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResetMessageOffsetRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ResetMessageOffsetRequest:
     }
 
     def __init__(self, instance_id=None, group=None, body=None):
-        """ResetMessageOffsetRequest - a model defined in huaweicloud sdk"""
+        """ResetMessageOffsetRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param group: 消费组名称。
+        :type group: str
+        :param body: Body of the ResetMessageOffsetRequest
+        :type body: :class:`huaweicloudsdkkafka.v2.ResetMessageOffsetReq`
+        """
         
         
 
@@ -66,7 +75,7 @@ class ResetMessageOffsetRequest:
         实例ID。
 
         :param instance_id: The instance_id of this ResetMessageOffsetRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -88,7 +97,7 @@ class ResetMessageOffsetRequest:
         消费组名称。
 
         :param group: The group of this ResetMessageOffsetRequest.
-        :type: str
+        :type group: str
         """
         self._group = group
 
@@ -98,7 +107,7 @@ class ResetMessageOffsetRequest:
 
 
         :return: The body of this ResetMessageOffsetRequest.
-        :rtype: ResetMessageOffsetReq
+        :rtype: :class:`huaweicloudsdkkafka.v2.ResetMessageOffsetReq`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class ResetMessageOffsetRequest:
 
 
         :param body: The body of this ResetMessageOffsetRequest.
-        :type: ResetMessageOffsetReq
+        :type body: :class:`huaweicloudsdkkafka.v2.ResetMessageOffsetReq`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateNatGatewayOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateNatGatewayOption:
     }
 
     def __init__(self, name=None, description=None, spec=None):
-        """UpdateNatGatewayOption - a model defined in huaweicloud sdk"""
+        """UpdateNatGatewayOption
+
+        The model defined in huaweicloud sdk
+
+        :param name: 公网NAT网关实例的名字，长度限制为64。 公网NAT网关实例的名字仅支持数字、字母、_（下划线）、-（中划线）、中文。
+        :type name: str
+        :param description: 公网NAT网关的描述，长度限制为255。
+        :type description: str
+        :param spec: 公网NAT网关的规格。 取值为： \&quot;1\&quot;：小型，SNAT最大连接数10000 \&quot;2\&quot;：中型，SNAT最大连接数50000 \&quot;3\&quot;：大型，SNAT最大连接数200000 \&quot;4\&quot;：超大型，SNAT最大连接数1000000 
+        :type spec: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class UpdateNatGatewayOption:
         公网NAT网关实例的名字，长度限制为64。 公网NAT网关实例的名字仅支持数字、字母、_（下划线）、-（中划线）、中文。
 
         :param name: The name of this UpdateNatGatewayOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -90,7 +99,7 @@ class UpdateNatGatewayOption:
         公网NAT网关的描述，长度限制为255。
 
         :param description: The description of this UpdateNatGatewayOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -112,7 +121,7 @@ class UpdateNatGatewayOption:
         公网NAT网关的规格。 取值为： \"1\"：小型，SNAT最大连接数10000 \"2\"：中型，SNAT最大连接数50000 \"3\"：大型，SNAT最大连接数200000 \"4\"：超大型，SNAT最大连接数1000000 
 
         :param spec: The spec of this UpdateNatGatewayOption.
-        :type: str
+        :type spec: str
         """
         self._spec = spec
 

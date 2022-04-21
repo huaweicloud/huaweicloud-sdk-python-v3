@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RegisterAgentResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class RegisterAgentResponse(SdkResponse):
     }
 
     def __init__(self, status=None, result=None, error=None):
-        """RegisterAgentResponse - a model defined in huaweicloud sdk"""
+        """RegisterAgentResponse
+
+        The model defined in huaweicloud sdk
+
+        :param status: 状态信息
+        :type status: str
+        :param result: 返回结果
+        :type result: object
+        :param error: 返回错误
+        :type error: object
+        """
         
         super(RegisterAgentResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class RegisterAgentResponse(SdkResponse):
         状态信息
 
         :param status: The status of this RegisterAgentResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -90,7 +99,7 @@ class RegisterAgentResponse(SdkResponse):
         返回结果
 
         :param result: The result of this RegisterAgentResponse.
-        :type: object
+        :type result: object
         """
         self._result = result
 
@@ -112,7 +121,7 @@ class RegisterAgentResponse(SdkResponse):
         返回错误
 
         :param error: The error of this RegisterAgentResponse.
-        :type: object
+        :type error: object
         """
         self._error = error
 

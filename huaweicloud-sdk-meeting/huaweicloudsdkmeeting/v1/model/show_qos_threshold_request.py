@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowQosThresholdRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowQosThresholdRequest:
     }
 
     def __init__(self, threshold_type=None):
-        """ShowQosThresholdRequest - a model defined in huaweicloud sdk"""
+        """ShowQosThresholdRequest
+
+        The model defined in huaweicloud sdk
+
+        :param threshold_type: 阈值类型。 * AUDIO：音频相关阈值。 * VIDEO：视频相关阈值。 * SCREEN：屏幕共享相关阈值。 * CPU：CPU相关阈值。
+        :type threshold_type: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowQosThresholdRequest:
         阈值类型。 * AUDIO：音频相关阈值。 * VIDEO：视频相关阈值。 * SCREEN：屏幕共享相关阈值。 * CPU：CPU相关阈值。
 
         :param threshold_type: The threshold_type of this ShowQosThresholdRequest.
-        :type: str
+        :type threshold_type: str
         """
         self._threshold_type = threshold_type
 

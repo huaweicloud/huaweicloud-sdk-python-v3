@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LdDatasourceInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class LdDatasourceInfo:
     }
 
     def __init__(self, name=None, type=None, description=None, url=None, user=None, password=None, remotepath=None, id=None, status=None, created_time=None, modified_time=None):
-        """LdDatasourceInfo - a model defined in huaweicloud sdk"""
+        """LdDatasourceInfo
+
+        The model defined in huaweicloud sdk
+
+        :param name: 数据源名称
+        :type name: str
+        :param type: 数据源类型： - oracle：oracle数据源类型 - mysql：mysql数据源类型 - mongodb：mongodb数据源类型 - redis：redis数据源类型 - postgresql：postgresql数据源类型 - hive：hive数据源类型 - mssql：sqlserver数据源类型 - sqlserver：sqlserver数据源类型 - gauss200：gauss200数据源类型 - dws：dws数据源类型 - gauss100：gauss100数据源类型 - zenith：zenith数据源类型
+        :type type: str
+        :param description: 数据源描述
+        :type description: str
+        :param url: 数据源连接字符串
+        :type url: str
+        :param user: 用户名
+        :type user: str
+        :param password: 密码。  敏感信息不作为响应返回
+        :type password: str
+        :param remotepath: ftp上传路径  预留字段，暂不支持。
+        :type remotepath: str
+        :param id: 数据源ID
+        :type id: str
+        :param status: 数据源状态： - old：存量数据源 - new：roma数据源
+        :type status: str
+        :param created_time: 数据源创建时间
+        :type created_time: datetime
+        :param modified_time: 数据源更新时间
+        :type modified_time: datetime
+        """
         
         
 
@@ -108,7 +133,7 @@ class LdDatasourceInfo:
         数据源名称
 
         :param name: The name of this LdDatasourceInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -130,7 +155,7 @@ class LdDatasourceInfo:
         数据源类型： - oracle：oracle数据源类型 - mysql：mysql数据源类型 - mongodb：mongodb数据源类型 - redis：redis数据源类型 - postgresql：postgresql数据源类型 - hive：hive数据源类型 - mssql：sqlserver数据源类型 - sqlserver：sqlserver数据源类型 - gauss200：gauss200数据源类型 - dws：dws数据源类型 - gauss100：gauss100数据源类型 - zenith：zenith数据源类型
 
         :param type: The type of this LdDatasourceInfo.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -152,7 +177,7 @@ class LdDatasourceInfo:
         数据源描述
 
         :param description: The description of this LdDatasourceInfo.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -174,7 +199,7 @@ class LdDatasourceInfo:
         数据源连接字符串
 
         :param url: The url of this LdDatasourceInfo.
-        :type: str
+        :type url: str
         """
         self._url = url
 
@@ -196,7 +221,7 @@ class LdDatasourceInfo:
         用户名
 
         :param user: The user of this LdDatasourceInfo.
-        :type: str
+        :type user: str
         """
         self._user = user
 
@@ -218,7 +243,7 @@ class LdDatasourceInfo:
         密码。  敏感信息不作为响应返回
 
         :param password: The password of this LdDatasourceInfo.
-        :type: str
+        :type password: str
         """
         self._password = password
 
@@ -240,7 +265,7 @@ class LdDatasourceInfo:
         ftp上传路径  预留字段，暂不支持。
 
         :param remotepath: The remotepath of this LdDatasourceInfo.
-        :type: str
+        :type remotepath: str
         """
         self._remotepath = remotepath
 
@@ -262,7 +287,7 @@ class LdDatasourceInfo:
         数据源ID
 
         :param id: The id of this LdDatasourceInfo.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -284,7 +309,7 @@ class LdDatasourceInfo:
         数据源状态： - old：存量数据源 - new：roma数据源
 
         :param status: The status of this LdDatasourceInfo.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -306,7 +331,7 @@ class LdDatasourceInfo:
         数据源创建时间
 
         :param created_time: The created_time of this LdDatasourceInfo.
-        :type: datetime
+        :type created_time: datetime
         """
         self._created_time = created_time
 
@@ -328,7 +353,7 @@ class LdDatasourceInfo:
         数据源更新时间
 
         :param modified_time: The modified_time of this LdDatasourceInfo.
-        :type: datetime
+        :type modified_time: datetime
         """
         self._modified_time = modified_time
 

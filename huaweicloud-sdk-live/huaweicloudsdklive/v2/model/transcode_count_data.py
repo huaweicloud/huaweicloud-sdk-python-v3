@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TranscodeCountData:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class TranscodeCountData:
     }
 
     def __init__(self, spec_list=None, time=None):
-        """TranscodeCountData - a model defined in huaweicloud sdk"""
+        """TranscodeCountData
+
+        The model defined in huaweicloud sdk
+
+        :param spec_list: 每个采样时间中的转码任务数信息。
+        :type spec_list: list[:class:`huaweicloudsdklive.v2.TranscodeSpecCount`]
+        :param time: 采样时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ 。
+        :type time: str
+        """
         
         
 
@@ -52,7 +59,7 @@ class TranscodeCountData:
         每个采样时间中的转码任务数信息。
 
         :return: The spec_list of this TranscodeCountData.
-        :rtype: list[TranscodeSpecCount]
+        :rtype: list[:class:`huaweicloudsdklive.v2.TranscodeSpecCount`]
         """
         return self._spec_list
 
@@ -63,7 +70,7 @@ class TranscodeCountData:
         每个采样时间中的转码任务数信息。
 
         :param spec_list: The spec_list of this TranscodeCountData.
-        :type: list[TranscodeSpecCount]
+        :type spec_list: list[:class:`huaweicloudsdklive.v2.TranscodeSpecCount`]
         """
         self._spec_list = spec_list
 
@@ -85,7 +92,7 @@ class TranscodeCountData:
         采样时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ 。
 
         :param time: The time of this TranscodeCountData.
-        :type: str
+        :type time: str
         """
         self._time = time
 

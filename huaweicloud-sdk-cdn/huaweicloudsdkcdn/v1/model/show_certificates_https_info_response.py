@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowCertificatesHttpsInfoResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowCertificatesHttpsInfoResponse(SdkResponse):
     }
 
     def __init__(self, total=None, https=None):
-        """ShowCertificatesHttpsInfoResponse - a model defined in huaweicloud sdk"""
+        """ShowCertificatesHttpsInfoResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 查询结果总数
+        :type total: int
+        :param https: https对象。
+        :type https: list[:class:`huaweicloudsdkcdn.v1.HttpsDetail`]
+        """
         
         super(ShowCertificatesHttpsInfoResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ShowCertificatesHttpsInfoResponse(SdkResponse):
         查询结果总数
 
         :param total: The total of this ShowCertificatesHttpsInfoResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -74,7 +81,7 @@ class ShowCertificatesHttpsInfoResponse(SdkResponse):
         https对象。
 
         :return: The https of this ShowCertificatesHttpsInfoResponse.
-        :rtype: list[HttpsDetail]
+        :rtype: list[:class:`huaweicloudsdkcdn.v1.HttpsDetail`]
         """
         return self._https
 
@@ -85,7 +92,7 @@ class ShowCertificatesHttpsInfoResponse(SdkResponse):
         https对象。
 
         :param https: The https of this ShowCertificatesHttpsInfoResponse.
-        :type: list[HttpsDetail]
+        :type https: list[:class:`huaweicloudsdkcdn.v1.HttpsDetail`]
         """
         self._https = https
 

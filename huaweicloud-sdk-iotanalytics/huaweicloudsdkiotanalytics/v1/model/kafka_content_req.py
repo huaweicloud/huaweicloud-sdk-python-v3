@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KafkaContentReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class KafkaContentReq:
     }
 
     def __init__(self, connection_type=None, instance_id=None, vpcep_infos=None, broker_infos=None, auth_info=None):
-        """KafkaContentReq - a model defined in huaweicloud sdk"""
+        """KafkaContentReq
+
+        The model defined in huaweicloud sdk
+
+        :param connection_type: KAFKA连接方式
+        :type connection_type: str
+        :param instance_id: Kafka实例ID
+        :type instance_id: str
+        :param vpcep_infos: Kafka的VPCEP信息包括service_id,service_name,client_port
+        :type vpcep_infos: list[:class:`huaweicloudsdkiotanalytics.v1.VpcepInfo`]
+        :param broker_infos: Kafka的broker信息包括broker_ip, broker_port
+        :type broker_infos: list[:class:`huaweicloudsdkiotanalytics.v1.KafkaBrokerInfo`]
+        :param auth_info: 
+        :type auth_info: :class:`huaweicloudsdkiotanalytics.v1.KafkaAuthInfo`
+        """
         
         
 
@@ -77,7 +90,7 @@ class KafkaContentReq:
         KAFKA连接方式
 
         :param connection_type: The connection_type of this KafkaContentReq.
-        :type: str
+        :type connection_type: str
         """
         self._connection_type = connection_type
 
@@ -99,7 +112,7 @@ class KafkaContentReq:
         Kafka实例ID
 
         :param instance_id: The instance_id of this KafkaContentReq.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -110,7 +123,7 @@ class KafkaContentReq:
         Kafka的VPCEP信息包括service_id,service_name,client_port
 
         :return: The vpcep_infos of this KafkaContentReq.
-        :rtype: list[VpcepInfo]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.VpcepInfo`]
         """
         return self._vpcep_infos
 
@@ -121,7 +134,7 @@ class KafkaContentReq:
         Kafka的VPCEP信息包括service_id,service_name,client_port
 
         :param vpcep_infos: The vpcep_infos of this KafkaContentReq.
-        :type: list[VpcepInfo]
+        :type vpcep_infos: list[:class:`huaweicloudsdkiotanalytics.v1.VpcepInfo`]
         """
         self._vpcep_infos = vpcep_infos
 
@@ -132,7 +145,7 @@ class KafkaContentReq:
         Kafka的broker信息包括broker_ip, broker_port
 
         :return: The broker_infos of this KafkaContentReq.
-        :rtype: list[KafkaBrokerInfo]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.KafkaBrokerInfo`]
         """
         return self._broker_infos
 
@@ -143,7 +156,7 @@ class KafkaContentReq:
         Kafka的broker信息包括broker_ip, broker_port
 
         :param broker_infos: The broker_infos of this KafkaContentReq.
-        :type: list[KafkaBrokerInfo]
+        :type broker_infos: list[:class:`huaweicloudsdkiotanalytics.v1.KafkaBrokerInfo`]
         """
         self._broker_infos = broker_infos
 
@@ -153,7 +166,7 @@ class KafkaContentReq:
 
 
         :return: The auth_info of this KafkaContentReq.
-        :rtype: KafkaAuthInfo
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.KafkaAuthInfo`
         """
         return self._auth_info
 
@@ -163,7 +176,7 @@ class KafkaContentReq:
 
 
         :param auth_info: The auth_info of this KafkaContentReq.
-        :type: KafkaAuthInfo
+        :type auth_info: :class:`huaweicloudsdkiotanalytics.v1.KafkaAuthInfo`
         """
         self._auth_info = auth_info
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListMonitoredObjectsOfInstanceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListMonitoredObjectsOfInstanceRequest:
     }
 
     def __init__(self, instance_id=None, dim_name=None):
-        """ListMonitoredObjectsOfInstanceRequest - a model defined in huaweicloud sdk"""
+        """ListMonitoredObjectsOfInstanceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 主维度对象ID，与DCS实例列表中实例ID相同。
+        :type instance_id: str
+        :param dim_name: 主维度ID，当前支持子维度的主维度ID的有dcs_instance_id。
+        :type dim_name: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ListMonitoredObjectsOfInstanceRequest:
         主维度对象ID，与DCS实例列表中实例ID相同。
 
         :param instance_id: The instance_id of this ListMonitoredObjectsOfInstanceRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -83,7 +90,7 @@ class ListMonitoredObjectsOfInstanceRequest:
         主维度ID，当前支持子维度的主维度ID的有dcs_instance_id。
 
         :param dim_name: The dim_name of this ListMonitoredObjectsOfInstanceRequest.
-        :type: str
+        :type dim_name: str
         """
         self._dim_name = dim_name
 

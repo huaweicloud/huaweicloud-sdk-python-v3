@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SearchKey:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class SearchKey:
     }
 
     def __init__(self, app_name=None, cluster_id=None, host_ip=None, name_space=None, path_file=None, pod_name=None):
-        """SearchKey - a model defined in huaweicloud sdk"""
+        """SearchKey
+
+        The model defined in huaweicloud sdk
+
+        :param app_name: 应用名称。
+        :type app_name: str
+        :param cluster_id: CCE集群ID。
+        :type cluster_id: str
+        :param host_ip: 日志所在虚拟机IP。
+        :type host_ip: str
+        :param name_space: CCE容器集群的命名空间。
+        :type name_space: str
+        :param path_file: 日志文件名称。
+        :type path_file: str
+        :param pod_name: 容器实例名称。
+        :type pod_name: str
+        """
         
         
 
@@ -82,7 +97,7 @@ class SearchKey:
         应用名称。
 
         :param app_name: The app_name of this SearchKey.
-        :type: str
+        :type app_name: str
         """
         self._app_name = app_name
 
@@ -104,7 +119,7 @@ class SearchKey:
         CCE集群ID。
 
         :param cluster_id: The cluster_id of this SearchKey.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -126,7 +141,7 @@ class SearchKey:
         日志所在虚拟机IP。
 
         :param host_ip: The host_ip of this SearchKey.
-        :type: str
+        :type host_ip: str
         """
         self._host_ip = host_ip
 
@@ -148,7 +163,7 @@ class SearchKey:
         CCE容器集群的命名空间。
 
         :param name_space: The name_space of this SearchKey.
-        :type: str
+        :type name_space: str
         """
         self._name_space = name_space
 
@@ -170,7 +185,7 @@ class SearchKey:
         日志文件名称。
 
         :param path_file: The path_file of this SearchKey.
-        :type: str
+        :type path_file: str
         """
         self._path_file = path_file
 
@@ -192,7 +207,7 @@ class SearchKey:
         容器实例名称。
 
         :param pod_name: The pod_name of this SearchKey.
-        :type: str
+        :type pod_name: str
         """
         self._pod_name = pod_name
 

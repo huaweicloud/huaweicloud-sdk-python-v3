@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Project:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class Project:
     }
 
     def __init__(self, create_time=None, description=None, group=None, id=None, name=None, source=None, update_time=None):
-        """Project - a model defined in huaweicloud sdk"""
+        """Project
+
+        The model defined in huaweicloud sdk
+
+        :param create_time: create_time
+        :type create_time: str
+        :param description: description
+        :type description: str
+        :param group: group
+        :type group: str
+        :param id: id
+        :type id: int
+        :param name: name
+        :type name: str
+        :param source: source
+        :type source: int
+        :param update_time: update_time
+        :type update_time: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class Project:
         create_time
 
         :param create_time: The create_time of this Project.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -110,7 +127,7 @@ class Project:
         description
 
         :param description: The description of this Project.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -132,7 +149,7 @@ class Project:
         group
 
         :param group: The group of this Project.
-        :type: str
+        :type group: str
         """
         self._group = group
 
@@ -154,7 +171,7 @@ class Project:
         id
 
         :param id: The id of this Project.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -176,7 +193,7 @@ class Project:
         name
 
         :param name: The name of this Project.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -198,7 +215,7 @@ class Project:
         source
 
         :param source: The source of this Project.
-        :type: int
+        :type source: int
         """
         self._source = source
 
@@ -220,7 +237,7 @@ class Project:
         update_time
 
         :param update_time: The update_time of this Project.
-        :type: str
+        :type update_time: str
         """
         self._update_time = update_time
 

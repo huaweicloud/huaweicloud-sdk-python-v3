@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LineCompareDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class LineCompareDetail:
     }
 
     def __init__(self, source_table_name=None, target_table_name=None, source_row_num=None, target_row_num=None, diff_row_num=None, line_compare_result=None, message=None):
-        """LineCompareDetail - a model defined in huaweicloud sdk"""
+        """LineCompareDetail
+
+        The model defined in huaweicloud sdk
+
+        :param source_table_name: 源库的表名称。
+        :type source_table_name: str
+        :param target_table_name: 目标库的表名称。
+        :type target_table_name: str
+        :param source_row_num: 源库的表行数。
+        :type source_row_num: int
+        :param target_row_num: 目标库的表行数。
+        :type target_row_num: int
+        :param diff_row_num: 源库的表和目标库的表的差异值。
+        :type diff_row_num: int
+        :param line_compare_result: 对比结果。
+        :type line_compare_result: str
+        :param message: 附加信息。
+        :type message: str
+        """
         
         
 
@@ -82,7 +99,7 @@ class LineCompareDetail:
         源库的表名称。
 
         :param source_table_name: The source_table_name of this LineCompareDetail.
-        :type: str
+        :type source_table_name: str
         """
         self._source_table_name = source_table_name
 
@@ -104,7 +121,7 @@ class LineCompareDetail:
         目标库的表名称。
 
         :param target_table_name: The target_table_name of this LineCompareDetail.
-        :type: str
+        :type target_table_name: str
         """
         self._target_table_name = target_table_name
 
@@ -126,7 +143,7 @@ class LineCompareDetail:
         源库的表行数。
 
         :param source_row_num: The source_row_num of this LineCompareDetail.
-        :type: int
+        :type source_row_num: int
         """
         self._source_row_num = source_row_num
 
@@ -148,7 +165,7 @@ class LineCompareDetail:
         目标库的表行数。
 
         :param target_row_num: The target_row_num of this LineCompareDetail.
-        :type: int
+        :type target_row_num: int
         """
         self._target_row_num = target_row_num
 
@@ -170,7 +187,7 @@ class LineCompareDetail:
         源库的表和目标库的表的差异值。
 
         :param diff_row_num: The diff_row_num of this LineCompareDetail.
-        :type: int
+        :type diff_row_num: int
         """
         self._diff_row_num = diff_row_num
 
@@ -192,7 +209,7 @@ class LineCompareDetail:
         对比结果。
 
         :param line_compare_result: The line_compare_result of this LineCompareDetail.
-        :type: str
+        :type line_compare_result: str
         """
         self._line_compare_result = line_compare_result
 
@@ -214,7 +231,7 @@ class LineCompareDetail:
         附加信息。
 
         :param message: The message of this LineCompareDetail.
-        :type: str
+        :type message: str
         """
         self._message = message
 

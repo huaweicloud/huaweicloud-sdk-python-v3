@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VatInvoiceResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -92,7 +91,75 @@ class VatInvoiceResult:
     }
 
     def __init__(self, type=None, serial_number=None, attribution=None, supervision_seal=None, code=None, print_code=None, machine_number=None, print_number=None, check_code=None, number=None, issue_date=None, encryption_block=None, buyer_name=None, buyer_id=None, buyer_address=None, buyer_bank=None, seller_name=None, seller_id=None, seller_address=None, seller_bank=None, subtotal_amount=None, subtotal_tax=None, total=None, total_in_words=None, remarks=None, receiver=None, reviewer=None, issuer=None, seller_seal=None, item_list=None, confidence=None, text_location=None):
-        """VatInvoiceResult - a model defined in huaweicloud sdk"""
+        """VatInvoiceResult
+
+        The model defined in huaweicloud sdk
+
+        :param type: 增值税发票类型，可选值包括：  - special: 增值税专用发票  - normal: 增值税普通发票  - electronic: 增值税电子普通发票  - roll：增值税普通发票（卷票） 
+        :type type: str
+        :param serial_number: 发票联次。 当“advanced_mode”设置为“true”时才返回。 
+        :type serial_number: str
+        :param attribution: 发票归属地。 当“advanced_mode”设置为“true”时才返回。 
+        :type attribution: str
+        :param supervision_seal: 发票监制章。 当“advanced_mode”设置为“true”时才返回。 
+        :type supervision_seal: list[str]
+        :param code: 发票代码。 
+        :type code: str
+        :param print_code: 打印发票代码。普通发票和专用发票在右上角，电子发票、通行费发票、卷票无此字段。 
+        :type print_code: str
+        :param machine_number: 机器编号。 当“advanced_mode”设置为“true”时才返回。 
+        :type machine_number: str
+        :param print_number: 机打号码。 当“advanced_mode”设置为“true”时才返回 
+        :type print_number: str
+        :param check_code: 发票校验码，特定类型增值税发票内不存在该信息时返回空字符串。 
+        :type check_code: str
+        :param number: 发票号码。 
+        :type number: str
+        :param issue_date: 开票日期。 
+        :type issue_date: str
+        :param encryption_block: 密码区。 
+        :type encryption_block: str
+        :param buyer_name: 购买方名称。 
+        :type buyer_name: str
+        :param buyer_id: 购买方纳税人识别号。 
+        :type buyer_id: str
+        :param buyer_address: 购买方地址、电话。 
+        :type buyer_address: str
+        :param buyer_bank: 购买方开户行及帐号。 
+        :type buyer_bank: str
+        :param seller_name: 销售方名称。 
+        :type seller_name: str
+        :param seller_id: 销售方纳税人识别号。 
+        :type seller_id: str
+        :param seller_address: 销售方地址、电话。 
+        :type seller_address: str
+        :param seller_bank: 销售方开户行及帐号。 
+        :type seller_bank: str
+        :param subtotal_amount: 合计金额。 
+        :type subtotal_amount: str
+        :param subtotal_tax: 合计税额。 
+        :type subtotal_tax: str
+        :param total: 价税合计。 
+        :type total: str
+        :param total_in_words: 价税合计（大写）。 当“advanced_mode”设置为“true”时才返回。 
+        :type total_in_words: str
+        :param remarks: 备注。 当“advanced_mode”设置为“true”时才返回。 
+        :type remarks: str
+        :param receiver: 收款人。 当“advanced_mode”设置为“true”时才返回。 
+        :type receiver: str
+        :param reviewer: 复核。 当“advanced_mode”设置为“true”时才返回。 
+        :type reviewer: str
+        :param issuer: 开票人。 当“advanced_mode”设置为“true”时才返回。 
+        :type issuer: str
+        :param seller_seal: 销售方发票专用章。 当“advanced_mode”设置为“true”时才返回。 
+        :type seller_seal: list[str]
+        :param item_list: 货物或应税劳务列表。 
+        :type item_list: list[:class:`huaweicloudsdkocr.v1.ItemList`]
+        :param confidence: 各个字段的置信度。 当“advanced_mode”设置为“true”时才返回。 
+        :type confidence: object
+        :param text_location: 文本框在原图位置。输出左上、右上、右下、左下四个点坐标。当“return_text_location”设置为“true”时才返回。 
+        :type text_location: object
+        """
         
         
 
@@ -213,7 +280,7 @@ class VatInvoiceResult:
         增值税发票类型，可选值包括：  - special: 增值税专用发票  - normal: 增值税普通发票  - electronic: 增值税电子普通发票  - roll：增值税普通发票（卷票） 
 
         :param type: The type of this VatInvoiceResult.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -235,7 +302,7 @@ class VatInvoiceResult:
         发票联次。 当“advanced_mode”设置为“true”时才返回。 
 
         :param serial_number: The serial_number of this VatInvoiceResult.
-        :type: str
+        :type serial_number: str
         """
         self._serial_number = serial_number
 
@@ -257,7 +324,7 @@ class VatInvoiceResult:
         发票归属地。 当“advanced_mode”设置为“true”时才返回。 
 
         :param attribution: The attribution of this VatInvoiceResult.
-        :type: str
+        :type attribution: str
         """
         self._attribution = attribution
 
@@ -279,7 +346,7 @@ class VatInvoiceResult:
         发票监制章。 当“advanced_mode”设置为“true”时才返回。 
 
         :param supervision_seal: The supervision_seal of this VatInvoiceResult.
-        :type: list[str]
+        :type supervision_seal: list[str]
         """
         self._supervision_seal = supervision_seal
 
@@ -301,7 +368,7 @@ class VatInvoiceResult:
         发票代码。 
 
         :param code: The code of this VatInvoiceResult.
-        :type: str
+        :type code: str
         """
         self._code = code
 
@@ -323,7 +390,7 @@ class VatInvoiceResult:
         打印发票代码。普通发票和专用发票在右上角，电子发票、通行费发票、卷票无此字段。 
 
         :param print_code: The print_code of this VatInvoiceResult.
-        :type: str
+        :type print_code: str
         """
         self._print_code = print_code
 
@@ -345,7 +412,7 @@ class VatInvoiceResult:
         机器编号。 当“advanced_mode”设置为“true”时才返回。 
 
         :param machine_number: The machine_number of this VatInvoiceResult.
-        :type: str
+        :type machine_number: str
         """
         self._machine_number = machine_number
 
@@ -367,7 +434,7 @@ class VatInvoiceResult:
         机打号码。 当“advanced_mode”设置为“true”时才返回 
 
         :param print_number: The print_number of this VatInvoiceResult.
-        :type: str
+        :type print_number: str
         """
         self._print_number = print_number
 
@@ -389,7 +456,7 @@ class VatInvoiceResult:
         发票校验码，特定类型增值税发票内不存在该信息时返回空字符串。 
 
         :param check_code: The check_code of this VatInvoiceResult.
-        :type: str
+        :type check_code: str
         """
         self._check_code = check_code
 
@@ -411,7 +478,7 @@ class VatInvoiceResult:
         发票号码。 
 
         :param number: The number of this VatInvoiceResult.
-        :type: str
+        :type number: str
         """
         self._number = number
 
@@ -433,7 +500,7 @@ class VatInvoiceResult:
         开票日期。 
 
         :param issue_date: The issue_date of this VatInvoiceResult.
-        :type: str
+        :type issue_date: str
         """
         self._issue_date = issue_date
 
@@ -455,7 +522,7 @@ class VatInvoiceResult:
         密码区。 
 
         :param encryption_block: The encryption_block of this VatInvoiceResult.
-        :type: str
+        :type encryption_block: str
         """
         self._encryption_block = encryption_block
 
@@ -477,7 +544,7 @@ class VatInvoiceResult:
         购买方名称。 
 
         :param buyer_name: The buyer_name of this VatInvoiceResult.
-        :type: str
+        :type buyer_name: str
         """
         self._buyer_name = buyer_name
 
@@ -499,7 +566,7 @@ class VatInvoiceResult:
         购买方纳税人识别号。 
 
         :param buyer_id: The buyer_id of this VatInvoiceResult.
-        :type: str
+        :type buyer_id: str
         """
         self._buyer_id = buyer_id
 
@@ -521,7 +588,7 @@ class VatInvoiceResult:
         购买方地址、电话。 
 
         :param buyer_address: The buyer_address of this VatInvoiceResult.
-        :type: str
+        :type buyer_address: str
         """
         self._buyer_address = buyer_address
 
@@ -543,7 +610,7 @@ class VatInvoiceResult:
         购买方开户行及帐号。 
 
         :param buyer_bank: The buyer_bank of this VatInvoiceResult.
-        :type: str
+        :type buyer_bank: str
         """
         self._buyer_bank = buyer_bank
 
@@ -565,7 +632,7 @@ class VatInvoiceResult:
         销售方名称。 
 
         :param seller_name: The seller_name of this VatInvoiceResult.
-        :type: str
+        :type seller_name: str
         """
         self._seller_name = seller_name
 
@@ -587,7 +654,7 @@ class VatInvoiceResult:
         销售方纳税人识别号。 
 
         :param seller_id: The seller_id of this VatInvoiceResult.
-        :type: str
+        :type seller_id: str
         """
         self._seller_id = seller_id
 
@@ -609,7 +676,7 @@ class VatInvoiceResult:
         销售方地址、电话。 
 
         :param seller_address: The seller_address of this VatInvoiceResult.
-        :type: str
+        :type seller_address: str
         """
         self._seller_address = seller_address
 
@@ -631,7 +698,7 @@ class VatInvoiceResult:
         销售方开户行及帐号。 
 
         :param seller_bank: The seller_bank of this VatInvoiceResult.
-        :type: str
+        :type seller_bank: str
         """
         self._seller_bank = seller_bank
 
@@ -653,7 +720,7 @@ class VatInvoiceResult:
         合计金额。 
 
         :param subtotal_amount: The subtotal_amount of this VatInvoiceResult.
-        :type: str
+        :type subtotal_amount: str
         """
         self._subtotal_amount = subtotal_amount
 
@@ -675,7 +742,7 @@ class VatInvoiceResult:
         合计税额。 
 
         :param subtotal_tax: The subtotal_tax of this VatInvoiceResult.
-        :type: str
+        :type subtotal_tax: str
         """
         self._subtotal_tax = subtotal_tax
 
@@ -697,7 +764,7 @@ class VatInvoiceResult:
         价税合计。 
 
         :param total: The total of this VatInvoiceResult.
-        :type: str
+        :type total: str
         """
         self._total = total
 
@@ -719,7 +786,7 @@ class VatInvoiceResult:
         价税合计（大写）。 当“advanced_mode”设置为“true”时才返回。 
 
         :param total_in_words: The total_in_words of this VatInvoiceResult.
-        :type: str
+        :type total_in_words: str
         """
         self._total_in_words = total_in_words
 
@@ -741,7 +808,7 @@ class VatInvoiceResult:
         备注。 当“advanced_mode”设置为“true”时才返回。 
 
         :param remarks: The remarks of this VatInvoiceResult.
-        :type: str
+        :type remarks: str
         """
         self._remarks = remarks
 
@@ -763,7 +830,7 @@ class VatInvoiceResult:
         收款人。 当“advanced_mode”设置为“true”时才返回。 
 
         :param receiver: The receiver of this VatInvoiceResult.
-        :type: str
+        :type receiver: str
         """
         self._receiver = receiver
 
@@ -785,7 +852,7 @@ class VatInvoiceResult:
         复核。 当“advanced_mode”设置为“true”时才返回。 
 
         :param reviewer: The reviewer of this VatInvoiceResult.
-        :type: str
+        :type reviewer: str
         """
         self._reviewer = reviewer
 
@@ -807,7 +874,7 @@ class VatInvoiceResult:
         开票人。 当“advanced_mode”设置为“true”时才返回。 
 
         :param issuer: The issuer of this VatInvoiceResult.
-        :type: str
+        :type issuer: str
         """
         self._issuer = issuer
 
@@ -829,7 +896,7 @@ class VatInvoiceResult:
         销售方发票专用章。 当“advanced_mode”设置为“true”时才返回。 
 
         :param seller_seal: The seller_seal of this VatInvoiceResult.
-        :type: list[str]
+        :type seller_seal: list[str]
         """
         self._seller_seal = seller_seal
 
@@ -840,7 +907,7 @@ class VatInvoiceResult:
         货物或应税劳务列表。 
 
         :return: The item_list of this VatInvoiceResult.
-        :rtype: list[ItemList]
+        :rtype: list[:class:`huaweicloudsdkocr.v1.ItemList`]
         """
         return self._item_list
 
@@ -851,7 +918,7 @@ class VatInvoiceResult:
         货物或应税劳务列表。 
 
         :param item_list: The item_list of this VatInvoiceResult.
-        :type: list[ItemList]
+        :type item_list: list[:class:`huaweicloudsdkocr.v1.ItemList`]
         """
         self._item_list = item_list
 
@@ -873,7 +940,7 @@ class VatInvoiceResult:
         各个字段的置信度。 当“advanced_mode”设置为“true”时才返回。 
 
         :param confidence: The confidence of this VatInvoiceResult.
-        :type: object
+        :type confidence: object
         """
         self._confidence = confidence
 
@@ -895,7 +962,7 @@ class VatInvoiceResult:
         文本框在原图位置。输出左上、右上、右下、左下四个点坐标。当“return_text_location”设置为“true”时才返回。 
 
         :param text_location: The text_location of this VatInvoiceResult.
-        :type: object
+        :type text_location: object
         """
         self._text_location = text_location
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDomainPermissionsForAgencyRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListDomainPermissionsForAgencyRequest:
     }
 
     def __init__(self, domain_id=None, agency_id=None):
-        """ListDomainPermissionsForAgencyRequest - a model defined in huaweicloud sdk"""
+        """ListDomainPermissionsForAgencyRequest
+
+        The model defined in huaweicloud sdk
+
+        :param domain_id: 委托方账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
+        :type domain_id: str
+        :param agency_id: 委托ID，获取方式请参见：[获取委托名、委托ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
+        :type agency_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ListDomainPermissionsForAgencyRequest:
         委托方账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param domain_id: The domain_id of this ListDomainPermissionsForAgencyRequest.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -83,7 +90,7 @@ class ListDomainPermissionsForAgencyRequest:
         委托ID，获取方式请参见：[获取委托名、委托ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param agency_id: The agency_id of this ListDomainPermissionsForAgencyRequest.
-        :type: str
+        :type agency_id: str
         """
         self._agency_id = agency_id
 

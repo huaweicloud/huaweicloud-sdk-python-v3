@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateVariableResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateVariableResponse(SdkResponse):
     }
 
     def __init__(self, code=None, json=None, message=None):
-        """UpdateVariableResponse - a model defined in huaweicloud sdk"""
+        """UpdateVariableResponse
+
+        The model defined in huaweicloud sdk
+
+        :param code: code
+        :type code: str
+        :param json: 
+        :type json: :class:`huaweicloudsdkcpts.v1.CreateVariableResultJson`
+        :param message: message
+        :type message: str
+        """
         
         super(UpdateVariableResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class UpdateVariableResponse(SdkResponse):
         code
 
         :param code: The code of this UpdateVariableResponse.
-        :type: str
+        :type code: str
         """
         self._code = code
 
@@ -78,7 +87,7 @@ class UpdateVariableResponse(SdkResponse):
 
 
         :return: The json of this UpdateVariableResponse.
-        :rtype: CreateVariableResultJson
+        :rtype: :class:`huaweicloudsdkcpts.v1.CreateVariableResultJson`
         """
         return self._json
 
@@ -88,7 +97,7 @@ class UpdateVariableResponse(SdkResponse):
 
 
         :param json: The json of this UpdateVariableResponse.
-        :type: CreateVariableResultJson
+        :type json: :class:`huaweicloudsdkcpts.v1.CreateVariableResultJson`
         """
         self._json = json
 
@@ -110,7 +119,7 @@ class UpdateVariableResponse(SdkResponse):
         message
 
         :param message: The message of this UpdateVariableResponse.
-        :type: str
+        :type message: str
         """
         self._message = message
 

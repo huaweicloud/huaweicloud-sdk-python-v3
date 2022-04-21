@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DetectLiveByBase64Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DetectLiveByBase64Request:
     }
 
     def __init__(self, body=None):
-        """DetectLiveByBase64Request - a model defined in huaweicloud sdk"""
+        """DetectLiveByBase64Request
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the DetectLiveByBase64Request
+        :type body: :class:`huaweicloudsdkfrs.v2.LiveDetectBase64Req`
+        """
         
         
 
@@ -46,7 +51,7 @@ class DetectLiveByBase64Request:
 
 
         :return: The body of this DetectLiveByBase64Request.
-        :rtype: LiveDetectBase64Req
+        :rtype: :class:`huaweicloudsdkfrs.v2.LiveDetectBase64Req`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class DetectLiveByBase64Request:
 
 
         :param body: The body of this DetectLiveByBase64Request.
-        :type: LiveDetectBase64Req
+        :type body: :class:`huaweicloudsdkfrs.v2.LiveDetectBase64Req`
         """
         self._body = body
 

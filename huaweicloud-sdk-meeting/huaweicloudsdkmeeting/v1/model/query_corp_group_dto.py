@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryCorpGroupDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class QueryCorpGroupDTO:
     }
 
     def __init__(self, group_id=None, group_name=None, group_type=None, remarks=None, region_id=None, status=None):
-        """QueryCorpGroupDTO - a model defined in huaweicloud sdk"""
+        """QueryCorpGroupDTO
+
+        The model defined in huaweicloud sdk
+
+        :param group_id: 分组Id
+        :type group_id: str
+        :param group_name: 分组名称
+        :type group_name: str
+        :param group_type: 分组类型
+        :type group_type: int
+        :param remarks: 分组备注信息
+        :type remarks: str
+        :param region_id: 区域ID，仅服务列表类型场景必填
+        :type region_id: str
+        :param status: 分组状态 - 0: 正常 - 1: 停用，服务列表类型停用后创建企业就不会再自动分配到该分组 
+        :type status: int
+        """
         
         
 
@@ -83,7 +98,7 @@ class QueryCorpGroupDTO:
         分组Id
 
         :param group_id: The group_id of this QueryCorpGroupDTO.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -105,7 +120,7 @@ class QueryCorpGroupDTO:
         分组名称
 
         :param group_name: The group_name of this QueryCorpGroupDTO.
-        :type: str
+        :type group_name: str
         """
         self._group_name = group_name
 
@@ -127,7 +142,7 @@ class QueryCorpGroupDTO:
         分组类型
 
         :param group_type: The group_type of this QueryCorpGroupDTO.
-        :type: int
+        :type group_type: int
         """
         self._group_type = group_type
 
@@ -149,7 +164,7 @@ class QueryCorpGroupDTO:
         分组备注信息
 
         :param remarks: The remarks of this QueryCorpGroupDTO.
-        :type: str
+        :type remarks: str
         """
         self._remarks = remarks
 
@@ -171,7 +186,7 @@ class QueryCorpGroupDTO:
         区域ID，仅服务列表类型场景必填
 
         :param region_id: The region_id of this QueryCorpGroupDTO.
-        :type: str
+        :type region_id: str
         """
         self._region_id = region_id
 
@@ -193,7 +208,7 @@ class QueryCorpGroupDTO:
         分组状态 - 0: 正常 - 1: 停用，服务列表类型停用后创建企业就不会再自动分配到该分组 
 
         :param status: The status of this QueryCorpGroupDTO.
-        :type: int
+        :type status: int
         """
         self._status = status
 

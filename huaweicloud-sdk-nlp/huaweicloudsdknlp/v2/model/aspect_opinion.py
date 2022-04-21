@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AspectOpinion:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class AspectOpinion:
     }
 
     def __init__(self, aspect_category=None, aspect_term=None, opinion_term=None, span=None, label=None, confidence=None, tag=None):
-        """AspectOpinion - a model defined in huaweicloud sdk"""
+        """AspectOpinion
+
+        The model defined in huaweicloud sdk
+
+        :param aspect_category: 属性类别 手机领域：[&#39;整体&#39;,&#39;性价比&#39;, &#39;赠品&#39;,&#39;分期&#39;, &#39;配件&#39;, &#39;活动&#39;, &#39;品牌&#39;, &#39;物流派送&#39;, &#39;包装&#39;, &#39;游戏性能&#39;, &#39;系统性能&#39;, &#39;芯片&#39;, &#39;屏幕&#39;, &#39;电池&#39;, &#39;自拍&#39;, &#39;拍照&#39;, &#39;音质&#39;, &#39;散热&#39;, &#39;防水&#39;, &#39;信号&#39;, &#39;解锁&#39;, &#39;外形设计&#39;, &#39;握持手感&#39;, &#39;质感&#39;, &#39;颜色&#39;, &#39;内存/容量&#39;, &#39;客服/售后&#39;, &#39;其他&#39;]
+        :type aspect_category: str
+        :param aspect_term: 属性词，与对应的描述词至少出现其中之一，可能为null。
+        :type aspect_term: str
+        :param opinion_term: 描述词，与对应的属性词至少出现其中之一，可能为null。
+        :type opinion_term: str
+        :param span: 共4个数字，分别表示属性词和描述词在文本中的起始位置和结束位置。若属性词为null，则1, 2两位不展示；若描述词为null，则3, 4位不展示。
+        :type span: list[int]
+        :param label: 情感标签，0：负向，1：正向
+        :type label: int
+        :param confidence: 情感标签置信度
+        :type confidence: float
+        :param tag: 属性-描述词片段所对应的标签。若分类为&#39;其他&#39;，则不给出标签，返回null。
+        :type tag: str
+        """
         
         
 
@@ -83,7 +100,7 @@ class AspectOpinion:
         属性类别 手机领域：['整体','性价比', '赠品','分期', '配件', '活动', '品牌', '物流派送', '包装', '游戏性能', '系统性能', '芯片', '屏幕', '电池', '自拍', '拍照', '音质', '散热', '防水', '信号', '解锁', '外形设计', '握持手感', '质感', '颜色', '内存/容量', '客服/售后', '其他']
 
         :param aspect_category: The aspect_category of this AspectOpinion.
-        :type: str
+        :type aspect_category: str
         """
         self._aspect_category = aspect_category
 
@@ -105,7 +122,7 @@ class AspectOpinion:
         属性词，与对应的描述词至少出现其中之一，可能为null。
 
         :param aspect_term: The aspect_term of this AspectOpinion.
-        :type: str
+        :type aspect_term: str
         """
         self._aspect_term = aspect_term
 
@@ -127,7 +144,7 @@ class AspectOpinion:
         描述词，与对应的属性词至少出现其中之一，可能为null。
 
         :param opinion_term: The opinion_term of this AspectOpinion.
-        :type: str
+        :type opinion_term: str
         """
         self._opinion_term = opinion_term
 
@@ -149,7 +166,7 @@ class AspectOpinion:
         共4个数字，分别表示属性词和描述词在文本中的起始位置和结束位置。若属性词为null，则1, 2两位不展示；若描述词为null，则3, 4位不展示。
 
         :param span: The span of this AspectOpinion.
-        :type: list[int]
+        :type span: list[int]
         """
         self._span = span
 
@@ -171,7 +188,7 @@ class AspectOpinion:
         情感标签，0：负向，1：正向
 
         :param label: The label of this AspectOpinion.
-        :type: int
+        :type label: int
         """
         self._label = label
 
@@ -193,7 +210,7 @@ class AspectOpinion:
         情感标签置信度
 
         :param confidence: The confidence of this AspectOpinion.
-        :type: float
+        :type confidence: float
         """
         self._confidence = confidence
 
@@ -215,7 +232,7 @@ class AspectOpinion:
         属性-描述词片段所对应的标签。若分类为'其他'，则不给出标签，返回null。
 
         :param tag: The tag of this AspectOpinion.
-        :type: str
+        :type tag: str
         """
         self._tag = tag
 

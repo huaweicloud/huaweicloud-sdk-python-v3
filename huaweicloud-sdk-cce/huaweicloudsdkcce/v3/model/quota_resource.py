@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QuotaResource:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class QuotaResource:
     }
 
     def __init__(self, quota_key=None, quota_limit=None, used=None, unit=None, region_id=None, availability_zone_id=None):
-        """QuotaResource - a model defined in huaweicloud sdk"""
+        """QuotaResource
+
+        The model defined in huaweicloud sdk
+
+        :param quota_key: 资源类型
+        :type quota_key: str
+        :param quota_limit: 配额值
+        :type quota_limit: int
+        :param used: 已创建的资源个数
+        :type used: int
+        :param unit: 单位
+        :type unit: str
+        :param region_id: 局点ID。若资源不涉及此参数，则不返回该参数。
+        :type region_id: str
+        :param availability_zone_id: 可用区ID。若资源不涉及此参数，则不返回该参数。
+        :type availability_zone_id: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class QuotaResource:
         资源类型
 
         :param quota_key: The quota_key of this QuotaResource.
-        :type: str
+        :type quota_key: str
         """
         self._quota_key = quota_key
 
@@ -105,7 +120,7 @@ class QuotaResource:
         配额值
 
         :param quota_limit: The quota_limit of this QuotaResource.
-        :type: int
+        :type quota_limit: int
         """
         self._quota_limit = quota_limit
 
@@ -127,7 +142,7 @@ class QuotaResource:
         已创建的资源个数
 
         :param used: The used of this QuotaResource.
-        :type: int
+        :type used: int
         """
         self._used = used
 
@@ -149,7 +164,7 @@ class QuotaResource:
         单位
 
         :param unit: The unit of this QuotaResource.
-        :type: str
+        :type unit: str
         """
         self._unit = unit
 
@@ -171,7 +186,7 @@ class QuotaResource:
         局点ID。若资源不涉及此参数，则不返回该参数。
 
         :param region_id: The region_id of this QuotaResource.
-        :type: str
+        :type region_id: str
         """
         self._region_id = region_id
 
@@ -193,7 +208,7 @@ class QuotaResource:
         可用区ID。若资源不涉及此参数，则不返回该参数。
 
         :param availability_zone_id: The availability_zone_id of this QuotaResource.
-        :type: str
+        :type availability_zone_id: str
         """
         self._availability_zone_id = availability_zone_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ClusterInstance:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ClusterInstance:
     }
 
     def __init__(self, id=None, name=None, type=None, shard_id=None):
-        """ClusterInstance - a model defined in huaweicloud sdk"""
+        """ClusterInstance
+
+        The model defined in huaweicloud sdk
+
+        :param id: 节点的虚拟机ID。
+        :type id: str
+        :param name: 节点的虚拟机名称。
+        :type name: str
+        :param type: 节点类型，只支持一种类型“cdm”。
+        :type type: str
+        :param shard_id: 分片ID
+        :type shard_id: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class ClusterInstance:
         节点的虚拟机ID。
 
         :param id: The id of this ClusterInstance.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -95,7 +106,7 @@ class ClusterInstance:
         节点的虚拟机名称。
 
         :param name: The name of this ClusterInstance.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -117,7 +128,7 @@ class ClusterInstance:
         节点类型，只支持一种类型“cdm”。
 
         :param type: The type of this ClusterInstance.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -139,7 +150,7 @@ class ClusterInstance:
         分片ID
 
         :param shard_id: The shard_id of this ClusterInstance.
-        :type: str
+        :type shard_id: str
         """
         self._shard_id = shard_id
 

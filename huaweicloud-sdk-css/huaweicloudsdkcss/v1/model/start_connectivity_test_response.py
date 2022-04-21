@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StartConnectivityTestResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class StartConnectivityTestResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """StartConnectivityTestResponse - a model defined in huaweicloud sdk"""
+        """StartConnectivityTestResponse
+
+        The model defined in huaweicloud sdk
+
+        :param result: 连通性测试结果。
+        :type result: list[:class:`huaweicloudsdkcss.v1.Result`]
+        """
         
         super(StartConnectivityTestResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class StartConnectivityTestResponse(SdkResponse):
         连通性测试结果。
 
         :return: The result of this StartConnectivityTestResponse.
-        :rtype: list[Result]
+        :rtype: list[:class:`huaweicloudsdkcss.v1.Result`]
         """
         return self._result
 
@@ -58,7 +63,7 @@ class StartConnectivityTestResponse(SdkResponse):
         连通性测试结果。
 
         :param result: The result of this StartConnectivityTestResponse.
-        :type: list[Result]
+        :type result: list[:class:`huaweicloudsdkcss.v1.Result`]
         """
         self._result = result
 

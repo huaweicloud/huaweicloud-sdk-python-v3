@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CheckCertificateResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CheckCertificateResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """CheckCertificateResponse - a model defined in huaweicloud sdk"""
+        """CheckCertificateResponse
+
+        The model defined in huaweicloud sdk
+
+        :param body: 
+        :type body: str
+        """
         
         super(CheckCertificateResponse, self).__init__()
 
@@ -56,7 +61,7 @@ class CheckCertificateResponse(SdkResponse):
 
 
         :param body: The body of this CheckCertificateResponse.
-        :type: str
+        :type body: str
         """
         self._body = body
 

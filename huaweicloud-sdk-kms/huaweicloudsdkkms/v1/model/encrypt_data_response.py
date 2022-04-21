@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EncryptDataResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class EncryptDataResponse(SdkResponse):
     }
 
     def __init__(self, key_id=None, cipher_text=None):
-        """EncryptDataResponse - a model defined in huaweicloud sdk"""
+        """EncryptDataResponse
+
+        The model defined in huaweicloud sdk
+
+        :param key_id: 密钥ID。
+        :type key_id: str
+        :param cipher_text: DEK密文16进制，两位表示1byte。
+        :type cipher_text: str
+        """
         
         super(EncryptDataResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class EncryptDataResponse(SdkResponse):
         密钥ID。
 
         :param key_id: The key_id of this EncryptDataResponse.
-        :type: str
+        :type key_id: str
         """
         self._key_id = key_id
 
@@ -85,7 +92,7 @@ class EncryptDataResponse(SdkResponse):
         DEK密文16进制，两位表示1byte。
 
         :param cipher_text: The cipher_text of this EncryptDataResponse.
-        :type: str
+        :type cipher_text: str
         """
         self._cipher_text = cipher_text
 

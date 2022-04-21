@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowAppBoundAppQuotaRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowAppBoundAppQuotaRequest:
     }
 
     def __init__(self, instance_id=None, app_id=None):
-        """ShowAppBoundAppQuotaRequest - a model defined in huaweicloud sdk"""
+        """ShowAppBoundAppQuotaRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param app_id: 应用编号
+        :type app_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ShowAppBoundAppQuotaRequest:
         实例ID
 
         :param instance_id: The instance_id of this ShowAppBoundAppQuotaRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -83,7 +90,7 @@ class ShowAppBoundAppQuotaRequest:
         应用编号
 
         :param app_id: The app_id of this ShowAppBoundAppQuotaRequest.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 

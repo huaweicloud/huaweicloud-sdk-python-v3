@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRomaAppResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListRomaAppResponse(SdkResponse):
     }
 
     def __init__(self, total=None, size=None, apps=None):
-        """ListRomaAppResponse - a model defined in huaweicloud sdk"""
+        """ListRomaAppResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 总的数量
+        :type total: int
+        :param size: 当前页数量
+        :type size: int
+        :param apps: 创建用户信息
+        :type apps: list[:class:`huaweicloudsdkroma.v2.ServerAppInfo`]
+        """
         
         super(ListRomaAppResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListRomaAppResponse(SdkResponse):
         总的数量
 
         :param total: The total of this ListRomaAppResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -90,7 +99,7 @@ class ListRomaAppResponse(SdkResponse):
         当前页数量
 
         :param size: The size of this ListRomaAppResponse.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -101,7 +110,7 @@ class ListRomaAppResponse(SdkResponse):
         创建用户信息
 
         :return: The apps of this ListRomaAppResponse.
-        :rtype: list[ServerAppInfo]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.ServerAppInfo`]
         """
         return self._apps
 
@@ -112,7 +121,7 @@ class ListRomaAppResponse(SdkResponse):
         创建用户信息
 
         :param apps: The apps of this ListRomaAppResponse.
-        :type: list[ServerAppInfo]
+        :type apps: list[:class:`huaweicloudsdkroma.v2.ServerAppInfo`]
         """
         self._apps = apps
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateDomainMappingResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateDomainMappingResponse(SdkResponse):
     }
 
     def __init__(self, pull_domain=None, push_domain=None):
-        """CreateDomainMappingResponse - a model defined in huaweicloud sdk"""
+        """CreateDomainMappingResponse
+
+        The model defined in huaweicloud sdk
+
+        :param pull_domain: 直播播放域名
+        :type pull_domain: str
+        :param push_domain: 直播播放域名关联的推流域名
+        :type push_domain: str
+        """
         
         super(CreateDomainMappingResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class CreateDomainMappingResponse(SdkResponse):
         直播播放域名
 
         :param pull_domain: The pull_domain of this CreateDomainMappingResponse.
-        :type: str
+        :type pull_domain: str
         """
         self._pull_domain = pull_domain
 
@@ -85,7 +92,7 @@ class CreateDomainMappingResponse(SdkResponse):
         直播播放域名关联的推流域名
 
         :param push_domain: The push_domain of this CreateDomainMappingResponse.
-        :type: str
+        :type push_domain: str
         """
         self._push_domain = push_domain
 

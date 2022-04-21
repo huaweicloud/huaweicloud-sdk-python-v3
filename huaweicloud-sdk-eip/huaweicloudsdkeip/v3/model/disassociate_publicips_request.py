@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DisassociatePublicipsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DisassociatePublicipsRequest:
     }
 
     def __init__(self, publicip_id=None, body=None):
-        """DisassociatePublicipsRequest - a model defined in huaweicloud sdk"""
+        """DisassociatePublicipsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param publicip_id: 弹性公网IP的ID
+        :type publicip_id: str
+        :param body: Body of the DisassociatePublicipsRequest
+        :type body: :class:`huaweicloudsdkeip.v3.DisassociatePublicipsRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class DisassociatePublicipsRequest:
         弹性公网IP的ID
 
         :param publicip_id: The publicip_id of this DisassociatePublicipsRequest.
-        :type: str
+        :type publicip_id: str
         """
         self._publicip_id = publicip_id
 
@@ -72,7 +79,7 @@ class DisassociatePublicipsRequest:
 
 
         :return: The body of this DisassociatePublicipsRequest.
-        :rtype: DisassociatePublicipsRequestBody
+        :rtype: :class:`huaweicloudsdkeip.v3.DisassociatePublicipsRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class DisassociatePublicipsRequest:
 
 
         :param body: The body of this DisassociatePublicipsRequest.
-        :type: DisassociatePublicipsRequestBody
+        :type body: :class:`huaweicloudsdkeip.v3.DisassociatePublicipsRequestBody`
         """
         self._body = body
 

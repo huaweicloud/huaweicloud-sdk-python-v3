@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowEvaluationStateByAssignmentIdResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ShowEvaluationStateByAssignmentIdResponse(SdkResponse):
     }
 
     def __init__(self, policy_assignment_id=None, state=None, start_time=None, end_time=None, error_message=None):
-        """ShowEvaluationStateByAssignmentIdResponse - a model defined in huaweicloud sdk"""
+        """ShowEvaluationStateByAssignmentIdResponse
+
+        The model defined in huaweicloud sdk
+
+        :param policy_assignment_id: 规则ID
+        :type policy_assignment_id: str
+        :param state: 评估任务执行状态
+        :type state: str
+        :param start_time: 评估任务开始时间
+        :type start_time: str
+        :param end_time: 评估任务结束时间
+        :type end_time: str
+        :param error_message: 评估任务失败信息
+        :type error_message: str
+        """
         
         super(ShowEvaluationStateByAssignmentIdResponse, self).__init__()
 
@@ -78,7 +91,7 @@ class ShowEvaluationStateByAssignmentIdResponse(SdkResponse):
         规则ID
 
         :param policy_assignment_id: The policy_assignment_id of this ShowEvaluationStateByAssignmentIdResponse.
-        :type: str
+        :type policy_assignment_id: str
         """
         self._policy_assignment_id = policy_assignment_id
 
@@ -100,7 +113,7 @@ class ShowEvaluationStateByAssignmentIdResponse(SdkResponse):
         评估任务执行状态
 
         :param state: The state of this ShowEvaluationStateByAssignmentIdResponse.
-        :type: str
+        :type state: str
         """
         self._state = state
 
@@ -122,7 +135,7 @@ class ShowEvaluationStateByAssignmentIdResponse(SdkResponse):
         评估任务开始时间
 
         :param start_time: The start_time of this ShowEvaluationStateByAssignmentIdResponse.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -144,7 +157,7 @@ class ShowEvaluationStateByAssignmentIdResponse(SdkResponse):
         评估任务结束时间
 
         :param end_time: The end_time of this ShowEvaluationStateByAssignmentIdResponse.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -166,7 +179,7 @@ class ShowEvaluationStateByAssignmentIdResponse(SdkResponse):
         评估任务失败信息
 
         :param error_message: The error_message of this ShowEvaluationStateByAssignmentIdResponse.
-        :type: str
+        :type error_message: str
         """
         self._error_message = error_message
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SummaryDomainReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class SummaryDomainReq:
     }
 
     def __init__(self, length_limit=None, title=None, lang=None, content=None, type=None):
-        """SummaryDomainReq - a model defined in huaweicloud sdk"""
+        """SummaryDomainReq
+
+        The model defined in huaweicloud sdk
+
+        :param length_limit: 生成摘要的长度限制。length_limit &gt; 1，则返回结果为字数不小于该值且最接近该值的摘要。 0 &lt;&#x3D; length_limit &lt;&#x3D; 1，则返回结果为长度百分比不小于该值且最接近该值的摘要。
+        :type length_limit: float
+        :param title: 文本标题（目前仅支持UTF-8编码），长度不超过1000字。
+        :type title: str
+        :param lang: 支持的文本语言类型，目前支持中文（zh）。
+        :type lang: str
+        :param content: 文本正文（目前仅支持UTF-8编码），长度不超过1000字。
+        :type content: str
+        :param type: 支持的领域类型，取值如下（目前只支持通用领域），默认为通用领域： 0：通用领域
+        :type type: int
+        """
         
         
 
@@ -77,7 +90,7 @@ class SummaryDomainReq:
         生成摘要的长度限制。length_limit > 1，则返回结果为字数不小于该值且最接近该值的摘要。 0 <= length_limit <= 1，则返回结果为长度百分比不小于该值且最接近该值的摘要。
 
         :param length_limit: The length_limit of this SummaryDomainReq.
-        :type: float
+        :type length_limit: float
         """
         self._length_limit = length_limit
 
@@ -99,7 +112,7 @@ class SummaryDomainReq:
         文本标题（目前仅支持UTF-8编码），长度不超过1000字。
 
         :param title: The title of this SummaryDomainReq.
-        :type: str
+        :type title: str
         """
         self._title = title
 
@@ -121,7 +134,7 @@ class SummaryDomainReq:
         支持的文本语言类型，目前支持中文（zh）。
 
         :param lang: The lang of this SummaryDomainReq.
-        :type: str
+        :type lang: str
         """
         self._lang = lang
 
@@ -143,7 +156,7 @@ class SummaryDomainReq:
         文本正文（目前仅支持UTF-8编码），长度不超过1000字。
 
         :param content: The content of this SummaryDomainReq.
-        :type: str
+        :type content: str
         """
         self._content = content
 
@@ -165,7 +178,7 @@ class SummaryDomainReq:
         支持的领域类型，取值如下（目前只支持通用领域），默认为通用领域： 0：通用领域
 
         :param type: The type of this SummaryDomainReq.
-        :type: int
+        :type type: int
         """
         self._type = type
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GetDatabaseUsedRds:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class GetDatabaseUsedRds:
     }
 
     def __init__(self, id=None, name=None, status=None, error_msg=None):
-        """GetDatabaseUsedRds - a model defined in huaweicloud sdk"""
+        """GetDatabaseUsedRds
+
+        The model defined in huaweicloud sdk
+
+        :param id: 关联RDS节点ID。
+        :type id: str
+        :param name: 关联RDS名称
+        :type name: str
+        :param status: 关联RDS状态。
+        :type status: str
+        :param error_msg: 响应信息，若无异常信息则不返回该参数。
+        :type error_msg: str
+        """
         
         
 
@@ -70,7 +81,7 @@ class GetDatabaseUsedRds:
         关联RDS节点ID。
 
         :param id: The id of this GetDatabaseUsedRds.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -92,7 +103,7 @@ class GetDatabaseUsedRds:
         关联RDS名称
 
         :param name: The name of this GetDatabaseUsedRds.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -114,7 +125,7 @@ class GetDatabaseUsedRds:
         关联RDS状态。
 
         :param status: The status of this GetDatabaseUsedRds.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -136,7 +147,7 @@ class GetDatabaseUsedRds:
         响应信息，若无异常信息则不返回该参数。
 
         :param error_msg: The error_msg of this GetDatabaseUsedRds.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 

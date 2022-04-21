@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Event:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class Event:
     }
 
     def __init__(self, event_type=None, channel=None, fail_policy=None, concurrent=None, read_policy=None):
-        """Event - a model defined in huaweicloud sdk"""
+        """Event
+
+        The model defined in huaweicloud sdk
+
+        :param event_type: 事件类型
+        :type event_type: str
+        :param channel: DIS通道名称
+        :type channel: str
+        :param fail_policy: 执行失败处理策略
+        :type fail_policy: str
+        :param concurrent: 调度并发数
+        :type concurrent: int
+        :param read_policy: 读取策略
+        :type read_policy: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class Event:
         事件类型
 
         :param event_type: The event_type of this Event.
-        :type: str
+        :type event_type: str
         """
         self._event_type = event_type
 
@@ -100,7 +113,7 @@ class Event:
         DIS通道名称
 
         :param channel: The channel of this Event.
-        :type: str
+        :type channel: str
         """
         self._channel = channel
 
@@ -122,7 +135,7 @@ class Event:
         执行失败处理策略
 
         :param fail_policy: The fail_policy of this Event.
-        :type: str
+        :type fail_policy: str
         """
         self._fail_policy = fail_policy
 
@@ -144,7 +157,7 @@ class Event:
         调度并发数
 
         :param concurrent: The concurrent of this Event.
-        :type: int
+        :type concurrent: int
         """
         self._concurrent = concurrent
 
@@ -166,7 +179,7 @@ class Event:
         读取策略
 
         :param read_policy: The read_policy of this Event.
-        :type: str
+        :type read_policy: str
         """
         self._read_policy = read_policy
 

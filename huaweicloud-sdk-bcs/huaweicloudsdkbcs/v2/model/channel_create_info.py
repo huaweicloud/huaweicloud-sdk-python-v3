@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ChannelCreateInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ChannelCreateInfo:
     }
 
     def __init__(self, channel_name=None, channel_description=None):
-        """ChannelCreateInfo - a model defined in huaweicloud sdk"""
+        """ChannelCreateInfo
+
+        The model defined in huaweicloud sdk
+
+        :param channel_name: 通道名称，字符串长度4-24，必须包含a-z，0-9，以小写字母开头，以小写字母或者数字结尾
+        :type channel_name: str
+        :param channel_description: 通道描述
+        :type channel_description: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ChannelCreateInfo:
         通道名称，字符串长度4-24，必须包含a-z，0-9，以小写字母开头，以小写字母或者数字结尾
 
         :param channel_name: The channel_name of this ChannelCreateInfo.
-        :type: str
+        :type channel_name: str
         """
         self._channel_name = channel_name
 
@@ -84,7 +91,7 @@ class ChannelCreateInfo:
         通道描述
 
         :param channel_description: The channel_description of this ChannelCreateInfo.
-        :type: str
+        :type channel_description: str
         """
         self._channel_description = channel_description
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowPlansRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ShowPlansRequest:
     }
 
     def __init__(self, project_id=None, name=None, current_stage=None, offset=None, limit=None):
-        """ShowPlansRequest - a model defined in huaweicloud sdk"""
+        """ShowPlansRequest
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: DevCloud项目id，项目唯一标识，固定长度32位字符
+        :type project_id: str
+        :param name: 模糊查询使用(针对测试计划名称)
+        :type name: str
+        :param current_stage: 测试计划所处阶段（create,design,execute,report）
+        :type current_stage: str
+        :param offset: 页号，取值范围为1-20000
+        :type offset: int
+        :param limit: 每页显示的条目数量，取值范围为1-200
+        :type limit: int
+        """
         
         
 
@@ -75,7 +88,7 @@ class ShowPlansRequest:
         DevCloud项目id，项目唯一标识，固定长度32位字符
 
         :param project_id: The project_id of this ShowPlansRequest.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -97,7 +110,7 @@ class ShowPlansRequest:
         模糊查询使用(针对测试计划名称)
 
         :param name: The name of this ShowPlansRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -119,7 +132,7 @@ class ShowPlansRequest:
         测试计划所处阶段（create,design,execute,report）
 
         :param current_stage: The current_stage of this ShowPlansRequest.
-        :type: str
+        :type current_stage: str
         """
         self._current_stage = current_stage
 
@@ -141,7 +154,7 @@ class ShowPlansRequest:
         页号，取值范围为1-20000
 
         :param offset: The offset of this ShowPlansRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -163,7 +176,7 @@ class ShowPlansRequest:
         每页显示的条目数量，取值范围为1-200
 
         :param limit: The limit of this ShowPlansRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StartGraphReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class StartGraphReq:
     }
 
     def __init__(self, graph_backup_id=None):
-        """StartGraphReq - a model defined in huaweicloud sdk"""
+        """StartGraphReq
+
+        The model defined in huaweicloud sdk
+
+        :param graph_backup_id: 启动图时关联的备份ID，设置此参数时，表示从备份进行启动；如果为空，表示从上次关闭图时的状态启动。
+        :type graph_backup_id: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class StartGraphReq:
         启动图时关联的备份ID，设置此参数时，表示从备份进行启动；如果为空，表示从上次关闭图时的状态启动。
 
         :param graph_backup_id: The graph_backup_id of this StartGraphReq.
-        :type: str
+        :type graph_backup_id: str
         """
         self._graph_backup_id = graph_backup_id
 

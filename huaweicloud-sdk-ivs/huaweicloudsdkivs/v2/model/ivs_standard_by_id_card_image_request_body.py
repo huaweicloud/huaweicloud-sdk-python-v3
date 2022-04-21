@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IvsStandardByIdCardImageRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class IvsStandardByIdCardImageRequestBody:
     }
 
     def __init__(self, meta=None, data=None):
-        """IvsStandardByIdCardImageRequestBody - a model defined in huaweicloud sdk"""
+        """IvsStandardByIdCardImageRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param meta: 
+        :type meta: :class:`huaweicloudsdkivs.v2.Meta`
+        :param data: 
+        :type data: :class:`huaweicloudsdkivs.v2.IvsStandardByIdCardImageRequestBodyData`
+        """
         
         
 
@@ -49,7 +56,7 @@ class IvsStandardByIdCardImageRequestBody:
 
 
         :return: The meta of this IvsStandardByIdCardImageRequestBody.
-        :rtype: Meta
+        :rtype: :class:`huaweicloudsdkivs.v2.Meta`
         """
         return self._meta
 
@@ -59,7 +66,7 @@ class IvsStandardByIdCardImageRequestBody:
 
 
         :param meta: The meta of this IvsStandardByIdCardImageRequestBody.
-        :type: Meta
+        :type meta: :class:`huaweicloudsdkivs.v2.Meta`
         """
         self._meta = meta
 
@@ -69,7 +76,7 @@ class IvsStandardByIdCardImageRequestBody:
 
 
         :return: The data of this IvsStandardByIdCardImageRequestBody.
-        :rtype: IvsStandardByIdCardImageRequestBodyData
+        :rtype: :class:`huaweicloudsdkivs.v2.IvsStandardByIdCardImageRequestBodyData`
         """
         return self._data
 
@@ -79,7 +86,7 @@ class IvsStandardByIdCardImageRequestBody:
 
 
         :param data: The data of this IvsStandardByIdCardImageRequestBody.
-        :type: IvsStandardByIdCardImageRequestBodyData
+        :type data: :class:`huaweicloudsdkivs.v2.IvsStandardByIdCardImageRequestBodyData`
         """
         self._data = data
 

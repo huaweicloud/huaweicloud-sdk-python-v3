@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FreezeCertRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class FreezeCertRequest:
     }
 
     def __init__(self, user_name=None, blockchain_id=None, org_name=None):
-        """FreezeCertRequest - a model defined in huaweicloud sdk"""
+        """FreezeCertRequest
+
+        The model defined in huaweicloud sdk
+
+        :param user_name: userName
+        :type user_name: str
+        :param blockchain_id: blockchainID
+        :type blockchain_id: str
+        :param org_name: orgName
+        :type org_name: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class FreezeCertRequest:
         userName
 
         :param user_name: The user_name of this FreezeCertRequest.
-        :type: str
+        :type user_name: str
         """
         self._user_name = user_name
 
@@ -87,7 +96,7 @@ class FreezeCertRequest:
         blockchainID
 
         :param blockchain_id: The blockchain_id of this FreezeCertRequest.
-        :type: str
+        :type blockchain_id: str
         """
         self._blockchain_id = blockchain_id
 
@@ -109,7 +118,7 @@ class FreezeCertRequest:
         orgName
 
         :param org_name: The org_name of this FreezeCertRequest.
-        :type: str
+        :type org_name: str
         """
         self._org_name = org_name
 

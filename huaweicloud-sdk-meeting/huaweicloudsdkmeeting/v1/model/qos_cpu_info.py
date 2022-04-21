@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QosCpuInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class QosCpuInfo:
     }
 
     def __init__(self, client_cpu_max=None, system_cpu_max=None):
-        """QosCpuInfo - a model defined in huaweicloud sdk"""
+        """QosCpuInfo
+
+        The model defined in huaweicloud sdk
+
+        :param client_cpu_max: 华为云会议最大CPU使用率。
+        :type client_cpu_max: list[:class:`huaweicloudsdkmeeting.v1.QosDataElement`]
+        :param system_cpu_max: 系统最大CPU使用率。
+        :type system_cpu_max: list[:class:`huaweicloudsdkmeeting.v1.QosDataElement`]
+        """
         
         
 
@@ -52,7 +59,7 @@ class QosCpuInfo:
         华为云会议最大CPU使用率。
 
         :return: The client_cpu_max of this QosCpuInfo.
-        :rtype: list[QosDataElement]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.QosDataElement`]
         """
         return self._client_cpu_max
 
@@ -63,7 +70,7 @@ class QosCpuInfo:
         华为云会议最大CPU使用率。
 
         :param client_cpu_max: The client_cpu_max of this QosCpuInfo.
-        :type: list[QosDataElement]
+        :type client_cpu_max: list[:class:`huaweicloudsdkmeeting.v1.QosDataElement`]
         """
         self._client_cpu_max = client_cpu_max
 
@@ -74,7 +81,7 @@ class QosCpuInfo:
         系统最大CPU使用率。
 
         :return: The system_cpu_max of this QosCpuInfo.
-        :rtype: list[QosDataElement]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.QosDataElement`]
         """
         return self._system_cpu_max
 
@@ -85,7 +92,7 @@ class QosCpuInfo:
         系统最大CPU使用率。
 
         :param system_cpu_max: The system_cpu_max of this QosCpuInfo.
-        :type: list[QosDataElement]
+        :type system_cpu_max: list[:class:`huaweicloudsdkmeeting.v1.QosDataElement`]
         """
         self._system_cpu_max = system_cpu_max
 

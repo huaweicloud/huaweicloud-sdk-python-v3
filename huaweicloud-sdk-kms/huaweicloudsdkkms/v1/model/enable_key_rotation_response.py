@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EnableKeyRotationResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class EnableKeyRotationResponse(SdkResponse):
     }
 
     def __init__(self):
-        """EnableKeyRotationResponse - a model defined in huaweicloud sdk"""
+        """EnableKeyRotationResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(EnableKeyRotationResponse, self).__init__()
         self.discriminator = None

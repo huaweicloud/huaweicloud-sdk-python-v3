@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OpExtendInfoDelete:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class OpExtendInfoDelete:
     }
 
     def __init__(self, backup_id=None, backup_name=None):
-        """OpExtendInfoDelete - a model defined in huaweicloud sdk"""
+        """OpExtendInfoDelete
+
+        The model defined in huaweicloud sdk
+
+        :param backup_id: 备份副本ID
+        :type backup_id: str
+        :param backup_name: 备份名称
+        :type backup_name: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class OpExtendInfoDelete:
         备份副本ID
 
         :param backup_id: The backup_id of this OpExtendInfoDelete.
-        :type: str
+        :type backup_id: str
         """
         self._backup_id = backup_id
 
@@ -83,7 +90,7 @@ class OpExtendInfoDelete:
         备份名称
 
         :param backup_name: The backup_name of this OpExtendInfoDelete.
-        :type: str
+        :type backup_name: str
         """
         self._backup_name = backup_name
 

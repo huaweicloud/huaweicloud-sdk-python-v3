@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AggregateModel:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class AggregateModel:
     }
 
     def __init__(self, inputs=None, expression=None, schedule=None, output_property=None, outputs=None):
-        """AggregateModel - a model defined in huaweicloud sdk"""
+        """AggregateModel
+
+        The model defined in huaweicloud sdk
+
+        :param inputs: 输入参数，最多支持10个
+        :type inputs: list[:class:`huaweicloudsdkiotanalytics.v1.InputModel`]
+        :param expression: 
+        :type expression: :class:`huaweicloudsdkiotanalytics.v1.Expression`
+        :param schedule: 
+        :type schedule: :class:`huaweicloudsdkiotanalytics.v1.DTSchedule`
+        :param output_property: 输出属性名(分析任务单输出场景，配合expression的formula使用)
+        :type output_property: str
+        :param outputs: 输出属性，最多支持10个
+        :type outputs: list[:class:`huaweicloudsdkiotanalytics.v1.OutputWithModel`]
+        """
         
         
 
@@ -64,7 +77,7 @@ class AggregateModel:
         输入参数，最多支持10个
 
         :return: The inputs of this AggregateModel.
-        :rtype: list[InputModel]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.InputModel`]
         """
         return self._inputs
 
@@ -75,7 +88,7 @@ class AggregateModel:
         输入参数，最多支持10个
 
         :param inputs: The inputs of this AggregateModel.
-        :type: list[InputModel]
+        :type inputs: list[:class:`huaweicloudsdkiotanalytics.v1.InputModel`]
         """
         self._inputs = inputs
 
@@ -85,7 +98,7 @@ class AggregateModel:
 
 
         :return: The expression of this AggregateModel.
-        :rtype: Expression
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.Expression`
         """
         return self._expression
 
@@ -95,7 +108,7 @@ class AggregateModel:
 
 
         :param expression: The expression of this AggregateModel.
-        :type: Expression
+        :type expression: :class:`huaweicloudsdkiotanalytics.v1.Expression`
         """
         self._expression = expression
 
@@ -105,7 +118,7 @@ class AggregateModel:
 
 
         :return: The schedule of this AggregateModel.
-        :rtype: DTSchedule
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.DTSchedule`
         """
         return self._schedule
 
@@ -115,7 +128,7 @@ class AggregateModel:
 
 
         :param schedule: The schedule of this AggregateModel.
-        :type: DTSchedule
+        :type schedule: :class:`huaweicloudsdkiotanalytics.v1.DTSchedule`
         """
         self._schedule = schedule
 
@@ -137,7 +150,7 @@ class AggregateModel:
         输出属性名(分析任务单输出场景，配合expression的formula使用)
 
         :param output_property: The output_property of this AggregateModel.
-        :type: str
+        :type output_property: str
         """
         self._output_property = output_property
 
@@ -148,7 +161,7 @@ class AggregateModel:
         输出属性，最多支持10个
 
         :return: The outputs of this AggregateModel.
-        :rtype: list[OutputWithModel]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.OutputWithModel`]
         """
         return self._outputs
 
@@ -159,7 +172,7 @@ class AggregateModel:
         输出属性，最多支持10个
 
         :param outputs: The outputs of this AggregateModel.
-        :type: list[OutputWithModel]
+        :type outputs: list[:class:`huaweicloudsdkiotanalytics.v1.OutputWithModel`]
         """
         self._outputs = outputs
 

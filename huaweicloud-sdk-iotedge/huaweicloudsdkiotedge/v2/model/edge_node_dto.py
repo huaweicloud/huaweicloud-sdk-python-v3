@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EdgeNodeDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class EdgeNodeDTO:
     }
 
     def __init__(self, edge_node_id=None, name=None, state=None, instance_id=None, space_id=None, type=None, resource_ids=None, resource_spec_types=None, ips=None, create_time=None):
-        """EdgeNodeDTO - a model defined in huaweicloud sdk"""
+        """EdgeNodeDTO
+
+        The model defined in huaweicloud sdk
+
+        :param edge_node_id: 边缘节点ID
+        :type edge_node_id: str
+        :param name: 边缘节点名称
+        :type name: str
+        :param state: 边缘节点状态UNINSTALLED|INSTALLED|OFFLINE|ONLINE|DELETING|UPGRADING
+        :type state: str
+        :param instance_id: 实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
+        :type instance_id: str
+        :param space_id: 资源空间id，对应IOTDA云服务接口参数中的app_id。
+        :type space_id: str
+        :param type: 节点所属资源类型：advanced|standard
+        :type type: str
+        :param resource_ids: 节点所购买的资源类型的列表
+        :type resource_ids: list[str]
+        :param resource_spec_types: 节点所购买的资源类型的列表
+        :type resource_spec_types: list[str]
+        :param ips: 边缘节点ip列表
+        :type ips: list[str]
+        :param create_time: 边缘节点创建时间
+        :type create_time: str
+        """
         
         
 
@@ -103,7 +126,7 @@ class EdgeNodeDTO:
         边缘节点ID
 
         :param edge_node_id: The edge_node_id of this EdgeNodeDTO.
-        :type: str
+        :type edge_node_id: str
         """
         self._edge_node_id = edge_node_id
 
@@ -125,7 +148,7 @@ class EdgeNodeDTO:
         边缘节点名称
 
         :param name: The name of this EdgeNodeDTO.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -147,7 +170,7 @@ class EdgeNodeDTO:
         边缘节点状态UNINSTALLED|INSTALLED|OFFLINE|ONLINE|DELETING|UPGRADING
 
         :param state: The state of this EdgeNodeDTO.
-        :type: str
+        :type state: str
         """
         self._state = state
 
@@ -169,7 +192,7 @@ class EdgeNodeDTO:
         实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
         :param instance_id: The instance_id of this EdgeNodeDTO.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -191,7 +214,7 @@ class EdgeNodeDTO:
         资源空间id，对应IOTDA云服务接口参数中的app_id。
 
         :param space_id: The space_id of this EdgeNodeDTO.
-        :type: str
+        :type space_id: str
         """
         self._space_id = space_id
 
@@ -213,7 +236,7 @@ class EdgeNodeDTO:
         节点所属资源类型：advanced|standard
 
         :param type: The type of this EdgeNodeDTO.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -235,7 +258,7 @@ class EdgeNodeDTO:
         节点所购买的资源类型的列表
 
         :param resource_ids: The resource_ids of this EdgeNodeDTO.
-        :type: list[str]
+        :type resource_ids: list[str]
         """
         self._resource_ids = resource_ids
 
@@ -257,7 +280,7 @@ class EdgeNodeDTO:
         节点所购买的资源类型的列表
 
         :param resource_spec_types: The resource_spec_types of this EdgeNodeDTO.
-        :type: list[str]
+        :type resource_spec_types: list[str]
         """
         self._resource_spec_types = resource_spec_types
 
@@ -279,7 +302,7 @@ class EdgeNodeDTO:
         边缘节点ip列表
 
         :param ips: The ips of this EdgeNodeDTO.
-        :type: list[str]
+        :type ips: list[str]
         """
         self._ips = ips
 
@@ -301,7 +324,7 @@ class EdgeNodeDTO:
         边缘节点创建时间
 
         :param create_time: The create_time of this EdgeNodeDTO.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RootVolume:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RootVolume:
     }
 
     def __init__(self, size=None, volume_type=None):
-        """RootVolume - a model defined in huaweicloud sdk"""
+        """RootVolume
+
+        The model defined in huaweicloud sdk
+
+        :param size: 系统盘大小，容量单位为GB，输入大小范围为[40,100]。
+        :type size: int
+        :param volume_type: 边缘实例系统盘对应的磁盘类型，需要与站点所提供的磁盘类型相匹配。
+        :type volume_type: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class RootVolume:
         系统盘大小，容量单位为GB，输入大小范围为[40,100]。
 
         :param size: The size of this RootVolume.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -83,7 +90,7 @@ class RootVolume:
         边缘实例系统盘对应的磁盘类型，需要与站点所提供的磁盘类型相匹配。
 
         :param volume_type: The volume_type of this RootVolume.
-        :type: str
+        :type volume_type: str
         """
         self._volume_type = volume_type
 

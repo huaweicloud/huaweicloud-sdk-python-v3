@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowServerLimitsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class ShowServerLimitsRequest:
     }
 
     def __init__(self):
-        """ShowServerLimitsRequest - a model defined in huaweicloud sdk"""
+        """ShowServerLimitsRequest
+
+        The model defined in huaweicloud sdk
+
+        """
         
         
         self.discriminator = None

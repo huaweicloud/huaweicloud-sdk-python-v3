@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CommandTimeTakenList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CommandTimeTakenList:
     }
 
     def __init__(self, total_num=None, total_usec_sum=None, result=None, command_list=None):
-        """CommandTimeTakenList - a model defined in huaweicloud sdk"""
+        """CommandTimeTakenList
+
+        The model defined in huaweicloud sdk
+
+        :param total_num: 执行命令的总次数
+        :type total_num: int
+        :param total_usec_sum: 执行命令的总耗时
+        :type total_usec_sum: float
+        :param result: 命令耗时统计结果
+        :type result: str
+        :param command_list: 命令耗时统计
+        :type command_list: list[:class:`huaweicloudsdkdcs.v2.CommandTimeTaken`]
+        """
         
         
 
@@ -69,7 +80,7 @@ class CommandTimeTakenList:
         执行命令的总次数
 
         :param total_num: The total_num of this CommandTimeTakenList.
-        :type: int
+        :type total_num: int
         """
         self._total_num = total_num
 
@@ -91,7 +102,7 @@ class CommandTimeTakenList:
         执行命令的总耗时
 
         :param total_usec_sum: The total_usec_sum of this CommandTimeTakenList.
-        :type: float
+        :type total_usec_sum: float
         """
         self._total_usec_sum = total_usec_sum
 
@@ -113,7 +124,7 @@ class CommandTimeTakenList:
         命令耗时统计结果
 
         :param result: The result of this CommandTimeTakenList.
-        :type: str
+        :type result: str
         """
         self._result = result
 
@@ -124,7 +135,7 @@ class CommandTimeTakenList:
         命令耗时统计
 
         :return: The command_list of this CommandTimeTakenList.
-        :rtype: list[CommandTimeTaken]
+        :rtype: list[:class:`huaweicloudsdkdcs.v2.CommandTimeTaken`]
         """
         return self._command_list
 
@@ -135,7 +146,7 @@ class CommandTimeTakenList:
         命令耗时统计
 
         :param command_list: The command_list of this CommandTimeTakenList.
-        :type: list[CommandTimeTaken]
+        :type command_list: list[:class:`huaweicloudsdkdcs.v2.CommandTimeTaken`]
         """
         self._command_list = command_list
 

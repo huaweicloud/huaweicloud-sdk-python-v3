@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ContentDetailReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class ContentDetailReq:
     }
 
     def __init__(self, iotda_content=None, obs_content=None, dis_content=None, smn_content=None, function_graph_content=None, model_arts_content=None, dcs_content=None, kafka_content=None, api_content=None, node_content=None, edge_content=None):
-        """ContentDetailReq - a model defined in huaweicloud sdk"""
+        """ContentDetailReq
+
+        The model defined in huaweicloud sdk
+
+        :param iotda_content: 
+        :type iotda_content: :class:`huaweicloudsdkiotanalytics.v1.IotdaContentReq`
+        :param obs_content: 
+        :type obs_content: :class:`huaweicloudsdkiotanalytics.v1.ObsContentReq`
+        :param dis_content: 
+        :type dis_content: :class:`huaweicloudsdkiotanalytics.v1.DisContentReq`
+        :param smn_content: 
+        :type smn_content: :class:`huaweicloudsdkiotanalytics.v1.SmnContentReq`
+        :param function_graph_content: 
+        :type function_graph_content: :class:`huaweicloudsdkiotanalytics.v1.FunctionGraphContentReq`
+        :param model_arts_content: 
+        :type model_arts_content: :class:`huaweicloudsdkiotanalytics.v1.ModelArtsContentReq`
+        :param dcs_content: 
+        :type dcs_content: :class:`huaweicloudsdkiotanalytics.v1.DcsContentReq`
+        :param kafka_content: 
+        :type kafka_content: :class:`huaweicloudsdkiotanalytics.v1.KafkaContentReq`
+        :param api_content: 
+        :type api_content: :class:`huaweicloudsdkiotanalytics.v1.ApiContentReq`
+        :param node_content: 
+        :type node_content: :class:`huaweicloudsdkiotanalytics.v1.NodeContentReq`
+        :param edge_content: 
+        :type edge_content: :class:`huaweicloudsdkiotanalytics.v1.EdgeContentReq`
+        """
         
         
 
@@ -96,7 +121,7 @@ class ContentDetailReq:
 
 
         :return: The iotda_content of this ContentDetailReq.
-        :rtype: IotdaContentReq
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.IotdaContentReq`
         """
         return self._iotda_content
 
@@ -106,7 +131,7 @@ class ContentDetailReq:
 
 
         :param iotda_content: The iotda_content of this ContentDetailReq.
-        :type: IotdaContentReq
+        :type iotda_content: :class:`huaweicloudsdkiotanalytics.v1.IotdaContentReq`
         """
         self._iotda_content = iotda_content
 
@@ -116,7 +141,7 @@ class ContentDetailReq:
 
 
         :return: The obs_content of this ContentDetailReq.
-        :rtype: ObsContentReq
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.ObsContentReq`
         """
         return self._obs_content
 
@@ -126,7 +151,7 @@ class ContentDetailReq:
 
 
         :param obs_content: The obs_content of this ContentDetailReq.
-        :type: ObsContentReq
+        :type obs_content: :class:`huaweicloudsdkiotanalytics.v1.ObsContentReq`
         """
         self._obs_content = obs_content
 
@@ -136,7 +161,7 @@ class ContentDetailReq:
 
 
         :return: The dis_content of this ContentDetailReq.
-        :rtype: DisContentReq
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.DisContentReq`
         """
         return self._dis_content
 
@@ -146,7 +171,7 @@ class ContentDetailReq:
 
 
         :param dis_content: The dis_content of this ContentDetailReq.
-        :type: DisContentReq
+        :type dis_content: :class:`huaweicloudsdkiotanalytics.v1.DisContentReq`
         """
         self._dis_content = dis_content
 
@@ -156,7 +181,7 @@ class ContentDetailReq:
 
 
         :return: The smn_content of this ContentDetailReq.
-        :rtype: SmnContentReq
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.SmnContentReq`
         """
         return self._smn_content
 
@@ -166,7 +191,7 @@ class ContentDetailReq:
 
 
         :param smn_content: The smn_content of this ContentDetailReq.
-        :type: SmnContentReq
+        :type smn_content: :class:`huaweicloudsdkiotanalytics.v1.SmnContentReq`
         """
         self._smn_content = smn_content
 
@@ -176,7 +201,7 @@ class ContentDetailReq:
 
 
         :return: The function_graph_content of this ContentDetailReq.
-        :rtype: FunctionGraphContentReq
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.FunctionGraphContentReq`
         """
         return self._function_graph_content
 
@@ -186,7 +211,7 @@ class ContentDetailReq:
 
 
         :param function_graph_content: The function_graph_content of this ContentDetailReq.
-        :type: FunctionGraphContentReq
+        :type function_graph_content: :class:`huaweicloudsdkiotanalytics.v1.FunctionGraphContentReq`
         """
         self._function_graph_content = function_graph_content
 
@@ -196,7 +221,7 @@ class ContentDetailReq:
 
 
         :return: The model_arts_content of this ContentDetailReq.
-        :rtype: ModelArtsContentReq
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.ModelArtsContentReq`
         """
         return self._model_arts_content
 
@@ -206,7 +231,7 @@ class ContentDetailReq:
 
 
         :param model_arts_content: The model_arts_content of this ContentDetailReq.
-        :type: ModelArtsContentReq
+        :type model_arts_content: :class:`huaweicloudsdkiotanalytics.v1.ModelArtsContentReq`
         """
         self._model_arts_content = model_arts_content
 
@@ -216,7 +241,7 @@ class ContentDetailReq:
 
 
         :return: The dcs_content of this ContentDetailReq.
-        :rtype: DcsContentReq
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.DcsContentReq`
         """
         return self._dcs_content
 
@@ -226,7 +251,7 @@ class ContentDetailReq:
 
 
         :param dcs_content: The dcs_content of this ContentDetailReq.
-        :type: DcsContentReq
+        :type dcs_content: :class:`huaweicloudsdkiotanalytics.v1.DcsContentReq`
         """
         self._dcs_content = dcs_content
 
@@ -236,7 +261,7 @@ class ContentDetailReq:
 
 
         :return: The kafka_content of this ContentDetailReq.
-        :rtype: KafkaContentReq
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.KafkaContentReq`
         """
         return self._kafka_content
 
@@ -246,7 +271,7 @@ class ContentDetailReq:
 
 
         :param kafka_content: The kafka_content of this ContentDetailReq.
-        :type: KafkaContentReq
+        :type kafka_content: :class:`huaweicloudsdkiotanalytics.v1.KafkaContentReq`
         """
         self._kafka_content = kafka_content
 
@@ -256,7 +281,7 @@ class ContentDetailReq:
 
 
         :return: The api_content of this ContentDetailReq.
-        :rtype: ApiContentReq
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.ApiContentReq`
         """
         return self._api_content
 
@@ -266,7 +291,7 @@ class ContentDetailReq:
 
 
         :param api_content: The api_content of this ContentDetailReq.
-        :type: ApiContentReq
+        :type api_content: :class:`huaweicloudsdkiotanalytics.v1.ApiContentReq`
         """
         self._api_content = api_content
 
@@ -276,7 +301,7 @@ class ContentDetailReq:
 
 
         :return: The node_content of this ContentDetailReq.
-        :rtype: NodeContentReq
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.NodeContentReq`
         """
         return self._node_content
 
@@ -286,7 +311,7 @@ class ContentDetailReq:
 
 
         :param node_content: The node_content of this ContentDetailReq.
-        :type: NodeContentReq
+        :type node_content: :class:`huaweicloudsdkiotanalytics.v1.NodeContentReq`
         """
         self._node_content = node_content
 
@@ -296,7 +321,7 @@ class ContentDetailReq:
 
 
         :return: The edge_content of this ContentDetailReq.
-        :rtype: EdgeContentReq
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.EdgeContentReq`
         """
         return self._edge_content
 
@@ -306,7 +331,7 @@ class ContentDetailReq:
 
 
         :param edge_content: The edge_content of this ContentDetailReq.
-        :type: EdgeContentReq
+        :type edge_content: :class:`huaweicloudsdkiotanalytics.v1.EdgeContentReq`
         """
         self._edge_content = edge_content
 

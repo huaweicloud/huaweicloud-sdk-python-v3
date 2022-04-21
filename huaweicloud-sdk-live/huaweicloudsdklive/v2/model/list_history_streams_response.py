@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListHistoryStreamsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListHistoryStreamsResponse(SdkResponse):
     }
 
     def __init__(self, history_stream_list=None, total=None, x_request_id=None):
-        """ListHistoryStreamsResponse - a model defined in huaweicloud sdk"""
+        """ListHistoryStreamsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param history_stream_list: 历史流信息列表。
+        :type history_stream_list: list[:class:`huaweicloudsdklive.v2.HistoryStreamInfo`]
+        :param total: 总记录数。
+        :type total: int
+        :param x_request_id: 
+        :type x_request_id: str
+        """
         
         super(ListHistoryStreamsResponse, self).__init__()
 
@@ -57,7 +66,7 @@ class ListHistoryStreamsResponse(SdkResponse):
         历史流信息列表。
 
         :return: The history_stream_list of this ListHistoryStreamsResponse.
-        :rtype: list[HistoryStreamInfo]
+        :rtype: list[:class:`huaweicloudsdklive.v2.HistoryStreamInfo`]
         """
         return self._history_stream_list
 
@@ -68,7 +77,7 @@ class ListHistoryStreamsResponse(SdkResponse):
         历史流信息列表。
 
         :param history_stream_list: The history_stream_list of this ListHistoryStreamsResponse.
-        :type: list[HistoryStreamInfo]
+        :type history_stream_list: list[:class:`huaweicloudsdklive.v2.HistoryStreamInfo`]
         """
         self._history_stream_list = history_stream_list
 
@@ -90,7 +99,7 @@ class ListHistoryStreamsResponse(SdkResponse):
         总记录数。
 
         :param total: The total of this ListHistoryStreamsResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -110,7 +119,7 @@ class ListHistoryStreamsResponse(SdkResponse):
 
 
         :param x_request_id: The x_request_id of this ListHistoryStreamsResponse.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 

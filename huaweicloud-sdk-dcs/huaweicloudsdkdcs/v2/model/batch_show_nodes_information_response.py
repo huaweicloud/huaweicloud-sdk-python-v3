@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchShowNodesInformationResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchShowNodesInformationResponse(SdkResponse):
     }
 
     def __init__(self, count=None, instances=None):
-        """BatchShowNodesInformationResponse - a model defined in huaweicloud sdk"""
+        """BatchShowNodesInformationResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 查询结果的实例总数
+        :type count: int
+        :param instances: 实例列表。
+        :type instances: list[:class:`huaweicloudsdkdcs.v2.InstanceNodesInfoResp`]
+        """
         
         super(BatchShowNodesInformationResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class BatchShowNodesInformationResponse(SdkResponse):
         查询结果的实例总数
 
         :param count: The count of this BatchShowNodesInformationResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -74,7 +81,7 @@ class BatchShowNodesInformationResponse(SdkResponse):
         实例列表。
 
         :return: The instances of this BatchShowNodesInformationResponse.
-        :rtype: list[InstanceNodesInfoResp]
+        :rtype: list[:class:`huaweicloudsdkdcs.v2.InstanceNodesInfoResp`]
         """
         return self._instances
 
@@ -85,7 +92,7 @@ class BatchShowNodesInformationResponse(SdkResponse):
         实例列表。
 
         :param instances: The instances of this BatchShowNodesInformationResponse.
-        :type: list[InstanceNodesInfoResp]
+        :type instances: list[:class:`huaweicloudsdkdcs.v2.InstanceNodesInfoResp`]
         """
         self._instances = instances
 

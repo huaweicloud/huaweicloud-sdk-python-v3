@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchAddServerNicsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchAddServerNicsRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """BatchAddServerNicsRequest - a model defined in huaweicloud sdk"""
+        """BatchAddServerNicsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param server_id: 云服务器ID。
+        :type server_id: str
+        :param body: Body of the BatchAddServerNicsRequest
+        :type body: :class:`huaweicloudsdkecs.v2.BatchAddServerNicsRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class BatchAddServerNicsRequest:
         云服务器ID。
 
         :param server_id: The server_id of this BatchAddServerNicsRequest.
-        :type: str
+        :type server_id: str
         """
         self._server_id = server_id
 
@@ -72,7 +79,7 @@ class BatchAddServerNicsRequest:
 
 
         :return: The body of this BatchAddServerNicsRequest.
-        :rtype: BatchAddServerNicsRequestBody
+        :rtype: :class:`huaweicloudsdkecs.v2.BatchAddServerNicsRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class BatchAddServerNicsRequest:
 
 
         :param body: The body of this BatchAddServerNicsRequest.
-        :type: BatchAddServerNicsRequestBody
+        :type body: :class:`huaweicloudsdkecs.v2.BatchAddServerNicsRequestBody`
         """
         self._body = body
 

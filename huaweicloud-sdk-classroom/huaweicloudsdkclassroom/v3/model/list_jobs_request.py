@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListJobsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListJobsRequest:
     }
 
     def __init__(self, source_from=None, source_id=None, offset=None, limit=None):
-        """ListJobsRequest - a model defined in huaweicloud sdk"""
+        """ListJobsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param source_from: 作业来源于课堂或课程。 取值范围： classroom:课堂作业 course:课程作业
+        :type source_from: str
+        :param source_id: 课堂ID或者课程ID。
+        :type source_id: str
+        :param offset: 信息记录的起始编号
+        :type offset: int
+        :param limit: 每页包含的信息记录数
+        :type limit: int
+        """
         
         
 
@@ -71,7 +82,7 @@ class ListJobsRequest:
         作业来源于课堂或课程。 取值范围： classroom:课堂作业 course:课程作业
 
         :param source_from: The source_from of this ListJobsRequest.
-        :type: str
+        :type source_from: str
         """
         self._source_from = source_from
 
@@ -93,7 +104,7 @@ class ListJobsRequest:
         课堂ID或者课程ID。
 
         :param source_id: The source_id of this ListJobsRequest.
-        :type: str
+        :type source_id: str
         """
         self._source_id = source_id
 
@@ -115,7 +126,7 @@ class ListJobsRequest:
         信息记录的起始编号
 
         :param offset: The offset of this ListJobsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -137,7 +148,7 @@ class ListJobsRequest:
         每页包含的信息记录数
 
         :param limit: The limit of this ListJobsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

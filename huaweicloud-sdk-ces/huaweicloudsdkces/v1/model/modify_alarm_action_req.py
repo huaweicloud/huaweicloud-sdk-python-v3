@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ModifyAlarmActionReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ModifyAlarmActionReq:
     }
 
     def __init__(self, alarm_enabled=None):
-        """ModifyAlarmActionReq - a model defined in huaweicloud sdk"""
+        """ModifyAlarmActionReq
+
+        The model defined in huaweicloud sdk
+
+        :param alarm_enabled: 告警是否启用。true：启动。false：停止
+        :type alarm_enabled: bool
+        """
         
         
 
@@ -57,7 +62,7 @@ class ModifyAlarmActionReq:
         告警是否启用。true：启动。false：停止
 
         :param alarm_enabled: The alarm_enabled of this ModifyAlarmActionReq.
-        :type: bool
+        :type alarm_enabled: bool
         """
         self._alarm_enabled = alarm_enabled
 

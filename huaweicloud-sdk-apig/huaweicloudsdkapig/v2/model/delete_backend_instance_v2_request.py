@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteBackendInstanceV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class DeleteBackendInstanceV2Request:
     }
 
     def __init__(self, instance_id=None, vpc_channel_id=None, member_id=None):
-        """DeleteBackendInstanceV2Request - a model defined in huaweicloud sdk"""
+        """DeleteBackendInstanceV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param vpc_channel_id: VPC通道的编号
+        :type vpc_channel_id: str
+        :param member_id: 后端实例对象的编号
+        :type member_id: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class DeleteBackendInstanceV2Request:
         实例ID
 
         :param instance_id: The instance_id of this DeleteBackendInstanceV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -87,7 +96,7 @@ class DeleteBackendInstanceV2Request:
         VPC通道的编号
 
         :param vpc_channel_id: The vpc_channel_id of this DeleteBackendInstanceV2Request.
-        :type: str
+        :type vpc_channel_id: str
         """
         self._vpc_channel_id = vpc_channel_id
 
@@ -109,7 +118,7 @@ class DeleteBackendInstanceV2Request:
         后端实例对象的编号
 
         :param member_id: The member_id of this DeleteBackendInstanceV2Request.
-        :type: str
+        :type member_id: str
         """
         self._member_id = member_id
 

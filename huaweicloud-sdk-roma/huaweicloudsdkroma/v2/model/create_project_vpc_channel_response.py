@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateProjectVpcChannelResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateProjectVpcChannelResponse(SdkResponse):
     }
 
     def __init__(self, project_vpc_channels=None):
-        """CreateProjectVpcChannelResponse - a model defined in huaweicloud sdk"""
+        """CreateProjectVpcChannelResponse
+
+        The model defined in huaweicloud sdk
+
+        :param project_vpc_channels: 项目VPC通道列表
+        :type project_vpc_channels: list[:class:`huaweicloudsdkroma.v2.ProjectVpcChannelInfo`]
+        """
         
         super(CreateProjectVpcChannelResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class CreateProjectVpcChannelResponse(SdkResponse):
         项目VPC通道列表
 
         :return: The project_vpc_channels of this CreateProjectVpcChannelResponse.
-        :rtype: list[ProjectVpcChannelInfo]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.ProjectVpcChannelInfo`]
         """
         return self._project_vpc_channels
 
@@ -58,7 +63,7 @@ class CreateProjectVpcChannelResponse(SdkResponse):
         项目VPC通道列表
 
         :param project_vpc_channels: The project_vpc_channels of this CreateProjectVpcChannelResponse.
-        :type: list[ProjectVpcChannelInfo]
+        :type project_vpc_channels: list[:class:`huaweicloudsdkroma.v2.ProjectVpcChannelInfo`]
         """
         self._project_vpc_channels = project_vpc_channels
 

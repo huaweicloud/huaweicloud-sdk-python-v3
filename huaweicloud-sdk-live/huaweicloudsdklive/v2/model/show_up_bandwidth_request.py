@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowUpBandwidthRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ShowUpBandwidthRequest:
     }
 
     def __init__(self, publish_domains=None, app=None, stream=None, region=None, isp=None, interval=None, start_time=None, end_time=None):
-        """ShowUpBandwidthRequest - a model defined in huaweicloud sdk"""
+        """ShowUpBandwidthRequest
+
+        The model defined in huaweicloud sdk
+
+        :param publish_domains: 推流域名列表，最多支持查询100个域名，多个域名以逗号分隔，若查询多个域名，则返回的是多个域名合并数据。 
+        :type publish_domains: list[str]
+        :param app: 应用名称。 
+        :type app: str
+        :param stream: 流名。 
+        :type stream: str
+        :param region: 区域列表。具体取值请参考[省份名称缩写](live_03_0043.xml)，不填写查询所有区域。 
+        :type region: list[str]
+        :param isp: 运营商列表，取值如下： - CMCC ：移动 - CTCC ： 电信 - CUCC ：联通 - OTHER ：其他  不填写查询所有运营商。 
+        :type isp: list[str]
+        :param interval: 查询数据的时间粒度。支持300（默认值），3600和86400秒。不传值时，使用默认值300秒。 
+        :type interval: int
+        :param start_time: 起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。 最大查询跨度31天，最大查询周期1年。  若参数为空，默认查询7天数据。 
+        :type start_time: str
+        :param end_time: 结束时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。  若参数为空，默认为当前时间，最大查询跨度31天，最大查询周期1年。结束时间需大于起始时间。 
+        :type end_time: str
+        """
         
         
 
@@ -92,7 +111,7 @@ class ShowUpBandwidthRequest:
         推流域名列表，最多支持查询100个域名，多个域名以逗号分隔，若查询多个域名，则返回的是多个域名合并数据。 
 
         :param publish_domains: The publish_domains of this ShowUpBandwidthRequest.
-        :type: list[str]
+        :type publish_domains: list[str]
         """
         self._publish_domains = publish_domains
 
@@ -114,7 +133,7 @@ class ShowUpBandwidthRequest:
         应用名称。 
 
         :param app: The app of this ShowUpBandwidthRequest.
-        :type: str
+        :type app: str
         """
         self._app = app
 
@@ -136,7 +155,7 @@ class ShowUpBandwidthRequest:
         流名。 
 
         :param stream: The stream of this ShowUpBandwidthRequest.
-        :type: str
+        :type stream: str
         """
         self._stream = stream
 
@@ -158,7 +177,7 @@ class ShowUpBandwidthRequest:
         区域列表。具体取值请参考[省份名称缩写](live_03_0043.xml)，不填写查询所有区域。 
 
         :param region: The region of this ShowUpBandwidthRequest.
-        :type: list[str]
+        :type region: list[str]
         """
         self._region = region
 
@@ -180,7 +199,7 @@ class ShowUpBandwidthRequest:
         运营商列表，取值如下： - CMCC ：移动 - CTCC ： 电信 - CUCC ：联通 - OTHER ：其他  不填写查询所有运营商。 
 
         :param isp: The isp of this ShowUpBandwidthRequest.
-        :type: list[str]
+        :type isp: list[str]
         """
         self._isp = isp
 
@@ -202,7 +221,7 @@ class ShowUpBandwidthRequest:
         查询数据的时间粒度。支持300（默认值），3600和86400秒。不传值时，使用默认值300秒。 
 
         :param interval: The interval of this ShowUpBandwidthRequest.
-        :type: int
+        :type interval: int
         """
         self._interval = interval
 
@@ -224,7 +243,7 @@ class ShowUpBandwidthRequest:
         起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。 最大查询跨度31天，最大查询周期1年。  若参数为空，默认查询7天数据。 
 
         :param start_time: The start_time of this ShowUpBandwidthRequest.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -246,7 +265,7 @@ class ShowUpBandwidthRequest:
         结束时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。  若参数为空，默认为当前时间，最大查询跨度31天，最大查询周期1年。结束时间需大于起始时间。 
 
         :param end_time: The end_time of this ShowUpBandwidthRequest.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CorpAdminDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CorpAdminDTO:
     }
 
     def __init__(self, account=None):
-        """CorpAdminDTO - a model defined in huaweicloud sdk"""
+        """CorpAdminDTO
+
+        The model defined in huaweicloud sdk
+
+        :param account: 企业用户账号。 maxLength：64 minLength：1
+        :type account: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class CorpAdminDTO:
         企业用户账号。 maxLength：64 minLength：1
 
         :param account: The account of this CorpAdminDTO.
-        :type: str
+        :type account: str
         """
         self._account = account
 

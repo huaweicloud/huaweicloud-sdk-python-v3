@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDocWatermarkResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowDocWatermarkResponse(SdkResponse):
     }
 
     def __init__(self, watermark=None):
-        """ShowDocWatermarkResponse - a model defined in huaweicloud sdk"""
+        """ShowDocWatermarkResponse
+
+        The model defined in huaweicloud sdk
+
+        :param watermark: 暗水印内容，长度不超过32个字节
+        :type watermark: str
+        """
         
         super(ShowDocWatermarkResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class ShowDocWatermarkResponse(SdkResponse):
         暗水印内容，长度不超过32个字节
 
         :param watermark: The watermark of this ShowDocWatermarkResponse.
-        :type: str
+        :type watermark: str
         """
         self._watermark = watermark
 

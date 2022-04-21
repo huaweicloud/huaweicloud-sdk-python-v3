@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class HealthmonitorsInStatusResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class HealthmonitorsInStatusResp:
     }
 
     def __init__(self, id=None, name=None, type=None, provisioning_status=None):
-        """HealthmonitorsInStatusResp - a model defined in huaweicloud sdk"""
+        """HealthmonitorsInStatusResp
+
+        The model defined in huaweicloud sdk
+
+        :param id: 健康检查ID
+        :type id: str
+        :param name: 健康检查名称
+        :type name: str
+        :param type: 健康检查类型
+        :type type: str
+        :param provisioning_status: 健康检查的配置状态；该字段为预留字段，暂未启用。默认为ACTIVE。
+        :type provisioning_status: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class HealthmonitorsInStatusResp:
         健康检查ID
 
         :param id: The id of this HealthmonitorsInStatusResp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -91,7 +102,7 @@ class HealthmonitorsInStatusResp:
         健康检查名称
 
         :param name: The name of this HealthmonitorsInStatusResp.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -113,7 +124,7 @@ class HealthmonitorsInStatusResp:
         健康检查类型
 
         :param type: The type of this HealthmonitorsInStatusResp.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -135,7 +146,7 @@ class HealthmonitorsInStatusResp:
         健康检查的配置状态；该字段为预留字段，暂未启用。默认为ACTIVE。
 
         :param provisioning_status: The provisioning_status of this HealthmonitorsInStatusResp.
-        :type: str
+        :type provisioning_status: str
         """
         self._provisioning_status = provisioning_status
 

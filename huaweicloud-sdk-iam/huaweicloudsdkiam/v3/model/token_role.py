@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TokenRole:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class TokenRole:
     }
 
     def __init__(self, name=None, id=None):
-        """TokenRole - a model defined in huaweicloud sdk"""
+        """TokenRole
+
+        The model defined in huaweicloud sdk
+
+        :param name: 权限名称。
+        :type name: str
+        :param id: 权限ID。默认显示为0，非真实权限ID。
+        :type id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class TokenRole:
         权限名称。
 
         :param name: The name of this TokenRole.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -83,7 +90,7 @@ class TokenRole:
         权限ID。默认显示为0，非真实权限ID。
 
         :param id: The id of this TokenRole.
-        :type: str
+        :type id: str
         """
         self._id = id
 

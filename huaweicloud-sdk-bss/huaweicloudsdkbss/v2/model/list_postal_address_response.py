@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPostalAddressResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListPostalAddressResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, postal_address=None):
-        """ListPostalAddressResponse - a model defined in huaweicloud sdk"""
+        """ListPostalAddressResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total_count: 邮寄地址的个数，只有成功的时候才返回。
+        :type total_count: int
+        :param postal_address: 邮寄地址，具体参见表2。
+        :type postal_address: list[:class:`huaweicloudsdkbss.v2.CustomerPostalAddressV2`]
+        """
         
         super(ListPostalAddressResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListPostalAddressResponse(SdkResponse):
         邮寄地址的个数，只有成功的时候才返回。
 
         :param total_count: The total_count of this ListPostalAddressResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 
@@ -74,7 +81,7 @@ class ListPostalAddressResponse(SdkResponse):
         邮寄地址，具体参见表2。
 
         :return: The postal_address of this ListPostalAddressResponse.
-        :rtype: list[CustomerPostalAddressV2]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.CustomerPostalAddressV2`]
         """
         return self._postal_address
 
@@ -85,7 +92,7 @@ class ListPostalAddressResponse(SdkResponse):
         邮寄地址，具体参见表2。
 
         :param postal_address: The postal_address of this ListPostalAddressResponse.
-        :type: list[CustomerPostalAddressV2]
+        :type postal_address: list[:class:`huaweicloudsdkbss.v2.CustomerPostalAddressV2`]
         """
         self._postal_address = postal_address
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TemplateRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -58,7 +57,41 @@ class TemplateRequest:
     }
 
     def __init__(self, name=None, is_template=None, region=None, projectid=None, target_server_name=None, availability_zone=None, volumetype=None, flavor=None, vpc=None, nics=None, security_groups=None, publicip=None, disk=None, data_volume_type=None, target_password=None):
-        """TemplateRequest - a model defined in huaweicloud sdk"""
+        """TemplateRequest
+
+        The model defined in huaweicloud sdk
+
+        :param name: 模板名称
+        :type name: str
+        :param is_template: 是否是通用模板，如果模板关联一个任务，则不算通用模板
+        :type is_template: bool
+        :param region: Region信息
+        :type region: str
+        :param projectid: 项目ID
+        :type projectid: str
+        :param target_server_name: 目标端服务器名称
+        :type target_server_name: str
+        :param availability_zone: 可用区
+        :type availability_zone: str
+        :param volumetype: 磁盘类型
+        :type volumetype: str
+        :param flavor: 虚拟机规格
+        :type flavor: str
+        :param vpc: 
+        :type vpc: :class:`huaweicloudsdksms.v3.VpcObject`
+        :param nics: 网卡信息，支持多个网卡，如果是自动创建，只填一个，id使用“autoCreate”
+        :type nics: list[:class:`huaweicloudsdksms.v3.Nics`]
+        :param security_groups: 安全组，支持多个安全组，如果是自动创建，只填一个，id使用“autoCreate”
+        :type security_groups: list[:class:`huaweicloudsdksms.v3.SgObject`]
+        :param publicip: 
+        :type publicip: :class:`huaweicloudsdksms.v3.PublicIp`
+        :param disk: 磁盘信息
+        :type disk: list[:class:`huaweicloudsdksms.v3.TemplateDisk`]
+        :param data_volume_type: 数据盘磁盘类型
+        :type data_volume_type: str
+        :param target_password: 目的端密码
+        :type target_password: str
+        """
         
         
 
@@ -124,7 +157,7 @@ class TemplateRequest:
         模板名称
 
         :param name: The name of this TemplateRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -146,7 +179,7 @@ class TemplateRequest:
         是否是通用模板，如果模板关联一个任务，则不算通用模板
 
         :param is_template: The is_template of this TemplateRequest.
-        :type: bool
+        :type is_template: bool
         """
         self._is_template = is_template
 
@@ -168,7 +201,7 @@ class TemplateRequest:
         Region信息
 
         :param region: The region of this TemplateRequest.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -190,7 +223,7 @@ class TemplateRequest:
         项目ID
 
         :param projectid: The projectid of this TemplateRequest.
-        :type: str
+        :type projectid: str
         """
         self._projectid = projectid
 
@@ -212,7 +245,7 @@ class TemplateRequest:
         目标端服务器名称
 
         :param target_server_name: The target_server_name of this TemplateRequest.
-        :type: str
+        :type target_server_name: str
         """
         self._target_server_name = target_server_name
 
@@ -234,7 +267,7 @@ class TemplateRequest:
         可用区
 
         :param availability_zone: The availability_zone of this TemplateRequest.
-        :type: str
+        :type availability_zone: str
         """
         self._availability_zone = availability_zone
 
@@ -256,7 +289,7 @@ class TemplateRequest:
         磁盘类型
 
         :param volumetype: The volumetype of this TemplateRequest.
-        :type: str
+        :type volumetype: str
         """
         self._volumetype = volumetype
 
@@ -278,7 +311,7 @@ class TemplateRequest:
         虚拟机规格
 
         :param flavor: The flavor of this TemplateRequest.
-        :type: str
+        :type flavor: str
         """
         self._flavor = flavor
 
@@ -288,7 +321,7 @@ class TemplateRequest:
 
 
         :return: The vpc of this TemplateRequest.
-        :rtype: VpcObject
+        :rtype: :class:`huaweicloudsdksms.v3.VpcObject`
         """
         return self._vpc
 
@@ -298,7 +331,7 @@ class TemplateRequest:
 
 
         :param vpc: The vpc of this TemplateRequest.
-        :type: VpcObject
+        :type vpc: :class:`huaweicloudsdksms.v3.VpcObject`
         """
         self._vpc = vpc
 
@@ -309,7 +342,7 @@ class TemplateRequest:
         网卡信息，支持多个网卡，如果是自动创建，只填一个，id使用“autoCreate”
 
         :return: The nics of this TemplateRequest.
-        :rtype: list[Nics]
+        :rtype: list[:class:`huaweicloudsdksms.v3.Nics`]
         """
         return self._nics
 
@@ -320,7 +353,7 @@ class TemplateRequest:
         网卡信息，支持多个网卡，如果是自动创建，只填一个，id使用“autoCreate”
 
         :param nics: The nics of this TemplateRequest.
-        :type: list[Nics]
+        :type nics: list[:class:`huaweicloudsdksms.v3.Nics`]
         """
         self._nics = nics
 
@@ -331,7 +364,7 @@ class TemplateRequest:
         安全组，支持多个安全组，如果是自动创建，只填一个，id使用“autoCreate”
 
         :return: The security_groups of this TemplateRequest.
-        :rtype: list[SgObject]
+        :rtype: list[:class:`huaweicloudsdksms.v3.SgObject`]
         """
         return self._security_groups
 
@@ -342,7 +375,7 @@ class TemplateRequest:
         安全组，支持多个安全组，如果是自动创建，只填一个，id使用“autoCreate”
 
         :param security_groups: The security_groups of this TemplateRequest.
-        :type: list[SgObject]
+        :type security_groups: list[:class:`huaweicloudsdksms.v3.SgObject`]
         """
         self._security_groups = security_groups
 
@@ -352,7 +385,7 @@ class TemplateRequest:
 
 
         :return: The publicip of this TemplateRequest.
-        :rtype: PublicIp
+        :rtype: :class:`huaweicloudsdksms.v3.PublicIp`
         """
         return self._publicip
 
@@ -362,7 +395,7 @@ class TemplateRequest:
 
 
         :param publicip: The publicip of this TemplateRequest.
-        :type: PublicIp
+        :type publicip: :class:`huaweicloudsdksms.v3.PublicIp`
         """
         self._publicip = publicip
 
@@ -373,7 +406,7 @@ class TemplateRequest:
         磁盘信息
 
         :return: The disk of this TemplateRequest.
-        :rtype: list[TemplateDisk]
+        :rtype: list[:class:`huaweicloudsdksms.v3.TemplateDisk`]
         """
         return self._disk
 
@@ -384,7 +417,7 @@ class TemplateRequest:
         磁盘信息
 
         :param disk: The disk of this TemplateRequest.
-        :type: list[TemplateDisk]
+        :type disk: list[:class:`huaweicloudsdksms.v3.TemplateDisk`]
         """
         self._disk = disk
 
@@ -406,7 +439,7 @@ class TemplateRequest:
         数据盘磁盘类型
 
         :param data_volume_type: The data_volume_type of this TemplateRequest.
-        :type: str
+        :type data_volume_type: str
         """
         self._data_volume_type = data_volume_type
 
@@ -428,7 +461,7 @@ class TemplateRequest:
         目的端密码
 
         :param target_password: The target_password of this TemplateRequest.
-        :type: str
+        :type target_password: str
         """
         self._target_password = target_password
 

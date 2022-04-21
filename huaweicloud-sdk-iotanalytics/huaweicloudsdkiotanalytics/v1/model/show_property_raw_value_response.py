@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowPropertyRawValueResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowPropertyRawValueResponse(SdkResponse):
     }
 
     def __init__(self, timestamps=None, properties=None):
-        """ShowPropertyRawValueResponse - a model defined in huaweicloud sdk"""
+        """ShowPropertyRawValueResponse
+
+        The model defined in huaweicloud sdk
+
+        :param timestamps: 时间序列,使用UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS&#39;Z&#39;,示例：2021-02-01T00:00:00.123Z
+        :type timestamps: list[str]
+        :param properties: 响应属性列表
+        :type properties: list[:class:`huaweicloudsdkiotanalytics.v1.RawValue`]
+        """
         
         super(ShowPropertyRawValueResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ShowPropertyRawValueResponse(SdkResponse):
         时间序列,使用UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss.SSS'Z',示例：2021-02-01T00:00:00.123Z
 
         :param timestamps: The timestamps of this ShowPropertyRawValueResponse.
-        :type: list[str]
+        :type timestamps: list[str]
         """
         self._timestamps = timestamps
 
@@ -74,7 +81,7 @@ class ShowPropertyRawValueResponse(SdkResponse):
         响应属性列表
 
         :return: The properties of this ShowPropertyRawValueResponse.
-        :rtype: list[RawValue]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.RawValue`]
         """
         return self._properties
 
@@ -85,7 +92,7 @@ class ShowPropertyRawValueResponse(SdkResponse):
         响应属性列表
 
         :param properties: The properties of this ShowPropertyRawValueResponse.
-        :type: list[RawValue]
+        :type properties: list[:class:`huaweicloudsdkiotanalytics.v1.RawValue`]
         """
         self._properties = properties
 

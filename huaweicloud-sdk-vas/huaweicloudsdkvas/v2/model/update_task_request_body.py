@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateTaskRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class UpdateTaskRequestBody:
     }
 
     def __init__(self, name=None, description=None, timing=None, input=None, output=None, service_config=None):
-        """UpdateTaskRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateTaskRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param name: 作业的名称，必填。仅能包含汉字、字母、数字、中划线和下划线，长度介于1~100之间。
+        :type name: str
+        :param description: 作业的描述，选填。长度不超过500。
+        :type description: str
+        :param timing: 
+        :type timing: :class:`huaweicloudsdkvas.v2.TaskTiming`
+        :param input: 
+        :type input: :class:`huaweicloudsdkvas.v2.TaskInput`
+        :param output: 
+        :type output: :class:`huaweicloudsdkvas.v2.TaskOutput`
+        :param service_config: 
+        :type service_config: :class:`huaweicloudsdkvas.v2.TaskServiceConfig`
+        """
         
         
 
@@ -83,7 +98,7 @@ class UpdateTaskRequestBody:
         作业的名称，必填。仅能包含汉字、字母、数字、中划线和下划线，长度介于1~100之间。
 
         :param name: The name of this UpdateTaskRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -105,7 +120,7 @@ class UpdateTaskRequestBody:
         作业的描述，选填。长度不超过500。
 
         :param description: The description of this UpdateTaskRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -115,7 +130,7 @@ class UpdateTaskRequestBody:
 
 
         :return: The timing of this UpdateTaskRequestBody.
-        :rtype: TaskTiming
+        :rtype: :class:`huaweicloudsdkvas.v2.TaskTiming`
         """
         return self._timing
 
@@ -125,7 +140,7 @@ class UpdateTaskRequestBody:
 
 
         :param timing: The timing of this UpdateTaskRequestBody.
-        :type: TaskTiming
+        :type timing: :class:`huaweicloudsdkvas.v2.TaskTiming`
         """
         self._timing = timing
 
@@ -135,7 +150,7 @@ class UpdateTaskRequestBody:
 
 
         :return: The input of this UpdateTaskRequestBody.
-        :rtype: TaskInput
+        :rtype: :class:`huaweicloudsdkvas.v2.TaskInput`
         """
         return self._input
 
@@ -145,7 +160,7 @@ class UpdateTaskRequestBody:
 
 
         :param input: The input of this UpdateTaskRequestBody.
-        :type: TaskInput
+        :type input: :class:`huaweicloudsdkvas.v2.TaskInput`
         """
         self._input = input
 
@@ -155,7 +170,7 @@ class UpdateTaskRequestBody:
 
 
         :return: The output of this UpdateTaskRequestBody.
-        :rtype: TaskOutput
+        :rtype: :class:`huaweicloudsdkvas.v2.TaskOutput`
         """
         return self._output
 
@@ -165,7 +180,7 @@ class UpdateTaskRequestBody:
 
 
         :param output: The output of this UpdateTaskRequestBody.
-        :type: TaskOutput
+        :type output: :class:`huaweicloudsdkvas.v2.TaskOutput`
         """
         self._output = output
 
@@ -175,7 +190,7 @@ class UpdateTaskRequestBody:
 
 
         :return: The service_config of this UpdateTaskRequestBody.
-        :rtype: TaskServiceConfig
+        :rtype: :class:`huaweicloudsdkvas.v2.TaskServiceConfig`
         """
         return self._service_config
 
@@ -185,7 +200,7 @@ class UpdateTaskRequestBody:
 
 
         :param service_config: The service_config of this UpdateTaskRequestBody.
-        :type: TaskServiceConfig
+        :type service_config: :class:`huaweicloudsdkvas.v2.TaskServiceConfig`
         """
         self._service_config = service_config
 

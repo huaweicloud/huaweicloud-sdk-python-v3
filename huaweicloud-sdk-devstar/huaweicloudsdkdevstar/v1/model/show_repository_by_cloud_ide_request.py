@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowRepositoryByCloudIdeRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ShowRepositoryByCloudIdeRequest:
     }
 
     def __init__(self, x_language=None, repository_id=None, repository_ssh_url=None, region_id=None, space_prefix=None, is_open_last=None, is_free=None):
-        """ShowRepositoryByCloudIdeRequest - a model defined in huaweicloud sdk"""
+        """ShowRepositoryByCloudIdeRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言类型 中文:zh-cn 英文:en-us
+        :type x_language: str
+        :param repository_id: 仓库id。
+        :type repository_id: str
+        :param repository_ssh_url: 仓库下载地址。
+        :type repository_ssh_url: str
+        :param region_id: 区域ID，目前仅支持北京四：cn-north-4及北京一：cn-north-1。
+        :type region_id: str
+        :param space_prefix: 工作空间名称前缀，仅在is_open_last为false时生效，由用户自定义，支持大小写字母、中文、_、-，长度1-256。
+        :type space_prefix: str
+        :param is_open_last: 是否打开上一次的工作空间，true表示打开上一次工作空间，如果没有上一次工作空间会返回空，false代表打开一个全新的工作空间。
+        :type is_open_last: bool
+        :param is_free: 是否创建 CloudIDE 免费实例链接，true表示创建一个 CloudIDE 免费实例链接，false表示创建一个 CloudIDE 收费实例链接。
+        :type is_free: bool
+        """
         
         
 
@@ -86,7 +103,7 @@ class ShowRepositoryByCloudIdeRequest:
         语言类型 中文:zh-cn 英文:en-us
 
         :param x_language: The x_language of this ShowRepositoryByCloudIdeRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -108,7 +125,7 @@ class ShowRepositoryByCloudIdeRequest:
         仓库id。
 
         :param repository_id: The repository_id of this ShowRepositoryByCloudIdeRequest.
-        :type: str
+        :type repository_id: str
         """
         self._repository_id = repository_id
 
@@ -130,7 +147,7 @@ class ShowRepositoryByCloudIdeRequest:
         仓库下载地址。
 
         :param repository_ssh_url: The repository_ssh_url of this ShowRepositoryByCloudIdeRequest.
-        :type: str
+        :type repository_ssh_url: str
         """
         self._repository_ssh_url = repository_ssh_url
 
@@ -152,7 +169,7 @@ class ShowRepositoryByCloudIdeRequest:
         区域ID，目前仅支持北京四：cn-north-4及北京一：cn-north-1。
 
         :param region_id: The region_id of this ShowRepositoryByCloudIdeRequest.
-        :type: str
+        :type region_id: str
         """
         self._region_id = region_id
 
@@ -174,7 +191,7 @@ class ShowRepositoryByCloudIdeRequest:
         工作空间名称前缀，仅在is_open_last为false时生效，由用户自定义，支持大小写字母、中文、_、-，长度1-256。
 
         :param space_prefix: The space_prefix of this ShowRepositoryByCloudIdeRequest.
-        :type: str
+        :type space_prefix: str
         """
         self._space_prefix = space_prefix
 
@@ -196,7 +213,7 @@ class ShowRepositoryByCloudIdeRequest:
         是否打开上一次的工作空间，true表示打开上一次工作空间，如果没有上一次工作空间会返回空，false代表打开一个全新的工作空间。
 
         :param is_open_last: The is_open_last of this ShowRepositoryByCloudIdeRequest.
-        :type: bool
+        :type is_open_last: bool
         """
         self._is_open_last = is_open_last
 
@@ -218,7 +235,7 @@ class ShowRepositoryByCloudIdeRequest:
         是否创建 CloudIDE 免费实例链接，true表示创建一个 CloudIDE 免费实例链接，false表示创建一个 CloudIDE 收费实例链接。
 
         :param is_free: The is_free of this ShowRepositoryByCloudIdeRequest.
-        :type: bool
+        :type is_free: bool
         """
         self._is_free = is_free
 

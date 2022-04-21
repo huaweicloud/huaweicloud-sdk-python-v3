@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VpcInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class VpcInfo:
     }
 
     def __init__(self, ecs_id=None, ecs_name=None, cascade_flag=None, vpc_channel_proxy_host=None, vpc_channel_id=None, vpc_channel_port=None):
-        """VpcInfo - a model defined in huaweicloud sdk"""
+        """VpcInfo
+
+        The model defined in huaweicloud sdk
+
+        :param ecs_id: 云服务器ID
+        :type ecs_id: str
+        :param ecs_name: 云服务器名称
+        :type ecs_name: str
+        :param cascade_flag: 是否使用级联方式  暂不支持
+        :type cascade_flag: bool
+        :param vpc_channel_proxy_host: 代理主机
+        :type vpc_channel_proxy_host: str
+        :param vpc_channel_id: VPC通道编号
+        :type vpc_channel_id: str
+        :param vpc_channel_port: VPC通道端口
+        :type vpc_channel_port: int
+        """
         
         
 
@@ -83,7 +98,7 @@ class VpcInfo:
         云服务器ID
 
         :param ecs_id: The ecs_id of this VpcInfo.
-        :type: str
+        :type ecs_id: str
         """
         self._ecs_id = ecs_id
 
@@ -105,7 +120,7 @@ class VpcInfo:
         云服务器名称
 
         :param ecs_name: The ecs_name of this VpcInfo.
-        :type: str
+        :type ecs_name: str
         """
         self._ecs_name = ecs_name
 
@@ -127,7 +142,7 @@ class VpcInfo:
         是否使用级联方式  暂不支持
 
         :param cascade_flag: The cascade_flag of this VpcInfo.
-        :type: bool
+        :type cascade_flag: bool
         """
         self._cascade_flag = cascade_flag
 
@@ -149,7 +164,7 @@ class VpcInfo:
         代理主机
 
         :param vpc_channel_proxy_host: The vpc_channel_proxy_host of this VpcInfo.
-        :type: str
+        :type vpc_channel_proxy_host: str
         """
         self._vpc_channel_proxy_host = vpc_channel_proxy_host
 
@@ -171,7 +186,7 @@ class VpcInfo:
         VPC通道编号
 
         :param vpc_channel_id: The vpc_channel_id of this VpcInfo.
-        :type: str
+        :type vpc_channel_id: str
         """
         self._vpc_channel_id = vpc_channel_id
 
@@ -193,7 +208,7 @@ class VpcInfo:
         VPC通道端口
 
         :param vpc_channel_port: The vpc_channel_port of this VpcInfo.
-        :type: int
+        :type vpc_channel_port: int
         """
         self._vpc_channel_port = vpc_channel_port
 

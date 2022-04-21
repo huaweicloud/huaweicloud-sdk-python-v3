@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UserForList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UserForList:
     }
 
     def __init__(self, name=None):
-        """UserForList - a model defined in huaweicloud sdk"""
+        """UserForList
+
+        The model defined in huaweicloud sdk
+
+        :param name: 数据库用户名称。
+        :type name: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class UserForList:
         数据库用户名称。
 
         :param name: The name of this UserForList.
-        :type: str
+        :type name: str
         """
         self._name = name
 

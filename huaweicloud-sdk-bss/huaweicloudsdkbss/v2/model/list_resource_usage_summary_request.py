@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListResourceUsageSummaryRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ListResourceUsageSummaryRequest:
     }
 
     def __init__(self, x_language=None, bill_cycle=None, service_type_code=None, resource_type_code=None, usage_type=None, offset=None, limit=None):
-        """ListResourceUsageSummaryRequest - a model defined in huaweicloud sdk"""
+        """ListResourceUsageSummaryRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: |语言。en_US：英文；zh_CN：中文。默认：zh_CN：中文|
+        :type x_language: str
+        :param bill_cycle: 账期，格式为yyyy-MM。
+        :type bill_cycle: str
+        :param service_type_code: 云服务类型，当前仅支持：hws.service.type.cdn：内容分发网络hws.service.type.obs：对象存储服务
+        :type service_type_code: str
+        :param resource_type_code: 资源类型编码，当前仅支持：hws.resource.type.cdn：CDNhws.resource.type.obs：云存储资源类型和云服务类型的对应关系可调用根据云服务类型查询资源列表接口获取。
+        :type resource_type_code: str
+        :param usage_type: 使用量类型编码，目前仅支持：95Peak：中国大陆月95峰值带宽_1024进制95peak_1000：中国大陆月95峰值带宽_1000进制bandwidth95peak：95峰值带宽资源类型和使用量类型的对应关系可调用查询使用量类型列表接口获取。
+        :type usage_type: str
+        :param offset: 偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset &#x3D; 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
+        :type offset: int
+        :param limit: 每次查询的数量限制。默认值为10。
+        :type limit: int
+        """
         
         
 
@@ -84,7 +101,7 @@ class ListResourceUsageSummaryRequest:
         |语言。en_US：英文；zh_CN：中文。默认：zh_CN：中文|
 
         :param x_language: The x_language of this ListResourceUsageSummaryRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -106,7 +123,7 @@ class ListResourceUsageSummaryRequest:
         账期，格式为yyyy-MM。
 
         :param bill_cycle: The bill_cycle of this ListResourceUsageSummaryRequest.
-        :type: str
+        :type bill_cycle: str
         """
         self._bill_cycle = bill_cycle
 
@@ -128,7 +145,7 @@ class ListResourceUsageSummaryRequest:
         云服务类型，当前仅支持：hws.service.type.cdn：内容分发网络hws.service.type.obs：对象存储服务
 
         :param service_type_code: The service_type_code of this ListResourceUsageSummaryRequest.
-        :type: str
+        :type service_type_code: str
         """
         self._service_type_code = service_type_code
 
@@ -150,7 +167,7 @@ class ListResourceUsageSummaryRequest:
         资源类型编码，当前仅支持：hws.resource.type.cdn：CDNhws.resource.type.obs：云存储资源类型和云服务类型的对应关系可调用根据云服务类型查询资源列表接口获取。
 
         :param resource_type_code: The resource_type_code of this ListResourceUsageSummaryRequest.
-        :type: str
+        :type resource_type_code: str
         """
         self._resource_type_code = resource_type_code
 
@@ -172,7 +189,7 @@ class ListResourceUsageSummaryRequest:
         使用量类型编码，目前仅支持：95Peak：中国大陆月95峰值带宽_1024进制95peak_1000：中国大陆月95峰值带宽_1000进制bandwidth95peak：95峰值带宽资源类型和使用量类型的对应关系可调用查询使用量类型列表接口获取。
 
         :param usage_type: The usage_type of this ListResourceUsageSummaryRequest.
-        :type: str
+        :type usage_type: str
         """
         self._usage_type = usage_type
 
@@ -194,7 +211,7 @@ class ListResourceUsageSummaryRequest:
         偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
         :param offset: The offset of this ListResourceUsageSummaryRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -216,7 +233,7 @@ class ListResourceUsageSummaryRequest:
         每次查询的数量限制。默认值为10。
 
         :param limit: The limit of this ListResourceUsageSummaryRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

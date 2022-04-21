@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MetricItemResultAPI:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class MetricItemResultAPI:
     }
 
     def __init__(self, metric=None, data_points=None):
-        """MetricItemResultAPI - a model defined in huaweicloud sdk"""
+        """MetricItemResultAPI
+
+        The model defined in huaweicloud sdk
+
+        :param metric: 
+        :type metric: :class:`huaweicloudsdkbcs.v2.MetricDemision`
+        :param data_points: 监控数据信息
+        :type data_points: list[:class:`huaweicloudsdkbcs.v2.MetricDataPoints`]
+        """
         
         
 
@@ -51,7 +58,7 @@ class MetricItemResultAPI:
 
 
         :return: The metric of this MetricItemResultAPI.
-        :rtype: MetricDemision
+        :rtype: :class:`huaweicloudsdkbcs.v2.MetricDemision`
         """
         return self._metric
 
@@ -61,7 +68,7 @@ class MetricItemResultAPI:
 
 
         :param metric: The metric of this MetricItemResultAPI.
-        :type: MetricDemision
+        :type metric: :class:`huaweicloudsdkbcs.v2.MetricDemision`
         """
         self._metric = metric
 
@@ -72,7 +79,7 @@ class MetricItemResultAPI:
         监控数据信息
 
         :return: The data_points of this MetricItemResultAPI.
-        :rtype: list[MetricDataPoints]
+        :rtype: list[:class:`huaweicloudsdkbcs.v2.MetricDataPoints`]
         """
         return self._data_points
 
@@ -83,7 +90,7 @@ class MetricItemResultAPI:
         监控数据信息
 
         :param data_points: The data_points of this MetricItemResultAPI.
-        :type: list[MetricDataPoints]
+        :type data_points: list[:class:`huaweicloudsdkbcs.v2.MetricDataPoints`]
         """
         self._data_points = data_points
 

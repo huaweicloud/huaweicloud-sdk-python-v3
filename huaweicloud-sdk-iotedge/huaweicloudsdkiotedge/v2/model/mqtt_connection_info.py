@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MqttConnectionInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class MqttConnectionInfo:
     }
 
     def __init__(self, server_address=None, client_id=None, auth_type=None, private_key=None, certificate=None, user_name=None, password=None, qos=None):
-        """MqttConnectionInfo - a model defined in huaweicloud sdk"""
+        """MqttConnectionInfo
+
+        The model defined in huaweicloud sdk
+
+        :param server_address: 采用cleint方式连接时，mqtt服务器地址
+        :type server_address: str
+        :param client_id: mqtt连接时，client_id
+        :type client_id: str
+        :param auth_type: 鉴权类型。支持密钥认证接入(SECRET)和证书认证接入(CERTIFICATES)两种方式。使用密钥认证接入方式(SECRET)填写user_name和user_name字段，使用证书认证接入方式(CERTIFICATES)填写privateKey和certificate字段
+        :type auth_type: str
+        :param private_key: 证书秘钥
+        :type private_key: str
+        :param certificate: 证书
+        :type certificate: str
+        :param user_name: 用户名
+        :type user_name: str
+        :param password: 密码
+        :type password: str
+        :param qos: 服务质量,默认为0,表示最多一次的传输,1表示至少一次,2表示仅一次.
+        :type qos: int
+        """
         
         
 
@@ -93,7 +112,7 @@ class MqttConnectionInfo:
         采用cleint方式连接时，mqtt服务器地址
 
         :param server_address: The server_address of this MqttConnectionInfo.
-        :type: str
+        :type server_address: str
         """
         self._server_address = server_address
 
@@ -115,7 +134,7 @@ class MqttConnectionInfo:
         mqtt连接时，client_id
 
         :param client_id: The client_id of this MqttConnectionInfo.
-        :type: str
+        :type client_id: str
         """
         self._client_id = client_id
 
@@ -137,7 +156,7 @@ class MqttConnectionInfo:
         鉴权类型。支持密钥认证接入(SECRET)和证书认证接入(CERTIFICATES)两种方式。使用密钥认证接入方式(SECRET)填写user_name和user_name字段，使用证书认证接入方式(CERTIFICATES)填写privateKey和certificate字段
 
         :param auth_type: The auth_type of this MqttConnectionInfo.
-        :type: str
+        :type auth_type: str
         """
         self._auth_type = auth_type
 
@@ -159,7 +178,7 @@ class MqttConnectionInfo:
         证书秘钥
 
         :param private_key: The private_key of this MqttConnectionInfo.
-        :type: str
+        :type private_key: str
         """
         self._private_key = private_key
 
@@ -181,7 +200,7 @@ class MqttConnectionInfo:
         证书
 
         :param certificate: The certificate of this MqttConnectionInfo.
-        :type: str
+        :type certificate: str
         """
         self._certificate = certificate
 
@@ -203,7 +222,7 @@ class MqttConnectionInfo:
         用户名
 
         :param user_name: The user_name of this MqttConnectionInfo.
-        :type: str
+        :type user_name: str
         """
         self._user_name = user_name
 
@@ -225,7 +244,7 @@ class MqttConnectionInfo:
         密码
 
         :param password: The password of this MqttConnectionInfo.
-        :type: str
+        :type password: str
         """
         self._password = password
 
@@ -247,7 +266,7 @@ class MqttConnectionInfo:
         服务质量,默认为0,表示最多一次的传输,1表示至少一次,2表示仅一次.
 
         :param qos: The qos of this MqttConnectionInfo.
-        :type: int
+        :type qos: int
         """
         self._qos = qos
 

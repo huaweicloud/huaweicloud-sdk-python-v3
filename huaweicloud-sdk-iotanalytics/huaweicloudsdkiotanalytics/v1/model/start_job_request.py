@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StartJobRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class StartJobRequest:
     }
 
     def __init__(self, job_id=None, parallel=None, rtu=None, resume_savepoint=None):
-        """StartJobRequest - a model defined in huaweicloud sdk"""
+        """StartJobRequest
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 作业ID
+        :type job_id: str
+        :param parallel: 运行作业的并发度
+        :type parallel: int
+        :param rtu: 运行作业的RTU个数
+        :type rtu: int
+        :param resume_savepoint: 运行作业使用历史缓存数据
+        :type resume_savepoint: bool
+        """
         
         
 
@@ -72,7 +83,7 @@ class StartJobRequest:
         作业ID
 
         :param job_id: The job_id of this StartJobRequest.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -94,7 +105,7 @@ class StartJobRequest:
         运行作业的并发度
 
         :param parallel: The parallel of this StartJobRequest.
-        :type: int
+        :type parallel: int
         """
         self._parallel = parallel
 
@@ -116,7 +127,7 @@ class StartJobRequest:
         运行作业的RTU个数
 
         :param rtu: The rtu of this StartJobRequest.
-        :type: int
+        :type rtu: int
         """
         self._rtu = rtu
 
@@ -138,7 +149,7 @@ class StartJobRequest:
         运行作业使用历史缓存数据
 
         :param resume_savepoint: The resume_savepoint of this StartJobRequest.
-        :type: bool
+        :type resume_savepoint: bool
         """
         self._resume_savepoint = resume_savepoint
 

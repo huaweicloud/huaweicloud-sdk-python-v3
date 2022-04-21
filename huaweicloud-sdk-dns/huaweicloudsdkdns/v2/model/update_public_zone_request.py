@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdatePublicZoneRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdatePublicZoneRequest:
     }
 
     def __init__(self, zone_id=None, body=None):
-        """UpdatePublicZoneRequest - a model defined in huaweicloud sdk"""
+        """UpdatePublicZoneRequest
+
+        The model defined in huaweicloud sdk
+
+        :param zone_id: 待修改zone的ID
+        :type zone_id: str
+        :param body: Body of the UpdatePublicZoneRequest
+        :type body: :class:`huaweicloudsdkdns.v2.UpdatePublicZoneInfo`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdatePublicZoneRequest:
         待修改zone的ID
 
         :param zone_id: The zone_id of this UpdatePublicZoneRequest.
-        :type: str
+        :type zone_id: str
         """
         self._zone_id = zone_id
 
@@ -72,7 +79,7 @@ class UpdatePublicZoneRequest:
 
 
         :return: The body of this UpdatePublicZoneRequest.
-        :rtype: UpdatePublicZoneInfo
+        :rtype: :class:`huaweicloudsdkdns.v2.UpdatePublicZoneInfo`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdatePublicZoneRequest:
 
 
         :param body: The body of this UpdatePublicZoneRequest.
-        :type: UpdatePublicZoneInfo
+        :type body: :class:`huaweicloudsdkdns.v2.UpdatePublicZoneInfo`
         """
         self._body = body
 

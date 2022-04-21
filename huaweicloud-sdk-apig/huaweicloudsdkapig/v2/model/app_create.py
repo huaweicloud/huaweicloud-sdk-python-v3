@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AppCreate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class AppCreate:
     }
 
     def __init__(self, name=None, remark=None, app_key=None, app_secret=None):
-        """AppCreate - a model defined in huaweicloud sdk"""
+        """AppCreate
+
+        The model defined in huaweicloud sdk
+
+        :param name: APP的名称。支持汉字，英文，数字，下划线，且只能以英文和汉字开头，3 ~ 64个字符。 &gt; 中文字符必须为UTF-8或者unicode编码。
+        :type name: str
+        :param remark: APP描述。字符长度不能大于255。 &gt; 中文字符必须为UTF-8或者unicode编码。
+        :type remark: str
+        :param app_key: APP的key。支持英文，数字，“_”,“-”,且只能以英文或数字开头，8 ~ 64个字符。
+        :type app_key: str
+        :param app_secret: 密钥。支持英文，数字，“_”,“-”,“_”,“!”,“@”,“#”,“$”,“%”且只能以英文或数字开头，8 ~ 64个字符。
+        :type app_secret: str
+        """
         
         
 
@@ -72,7 +83,7 @@ class AppCreate:
         APP的名称。支持汉字，英文，数字，下划线，且只能以英文和汉字开头，3 ~ 64个字符。 > 中文字符必须为UTF-8或者unicode编码。
 
         :param name: The name of this AppCreate.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -94,7 +105,7 @@ class AppCreate:
         APP描述。字符长度不能大于255。 > 中文字符必须为UTF-8或者unicode编码。
 
         :param remark: The remark of this AppCreate.
-        :type: str
+        :type remark: str
         """
         self._remark = remark
 
@@ -116,7 +127,7 @@ class AppCreate:
         APP的key。支持英文，数字，“_”,“-”,且只能以英文或数字开头，8 ~ 64个字符。
 
         :param app_key: The app_key of this AppCreate.
-        :type: str
+        :type app_key: str
         """
         self._app_key = app_key
 
@@ -138,7 +149,7 @@ class AppCreate:
         密钥。支持英文，数字，“_”,“-”,“_”,“!”,“@”,“#”,“$”,“%”且只能以英文或数字开头，8 ~ 64个字符。
 
         :param app_secret: The app_secret of this AppCreate.
-        :type: str
+        :type app_secret: str
         """
         self._app_secret = app_secret
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MigrateNodeResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class MigrateNodeResponse(SdkResponse):
     }
 
     def __init__(self, api_version=None, kind=None, spec=None, status=None):
-        """MigrateNodeResponse - a model defined in huaweicloud sdk"""
+        """MigrateNodeResponse
+
+        The model defined in huaweicloud sdk
+
+        :param api_version: API版本，固定值“v3”。
+        :type api_version: str
+        :param kind: API类型，固定值“MigrateNodesTask”。
+        :type kind: str
+        :param spec: 
+        :type spec: :class:`huaweicloudsdkcce.v3.MigrateNodesSpec`
+        :param status: 
+        :type status: :class:`huaweicloudsdkcce.v3.TaskStatus`
+        """
         
         super(MigrateNodeResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class MigrateNodeResponse(SdkResponse):
         API版本，固定值“v3”。
 
         :param api_version: The api_version of this MigrateNodeResponse.
-        :type: str
+        :type api_version: str
         """
         self._api_version = api_version
 
@@ -95,7 +106,7 @@ class MigrateNodeResponse(SdkResponse):
         API类型，固定值“MigrateNodesTask”。
 
         :param kind: The kind of this MigrateNodeResponse.
-        :type: str
+        :type kind: str
         """
         self._kind = kind
 
@@ -105,7 +116,7 @@ class MigrateNodeResponse(SdkResponse):
 
 
         :return: The spec of this MigrateNodeResponse.
-        :rtype: MigrateNodesSpec
+        :rtype: :class:`huaweicloudsdkcce.v3.MigrateNodesSpec`
         """
         return self._spec
 
@@ -115,7 +126,7 @@ class MigrateNodeResponse(SdkResponse):
 
 
         :param spec: The spec of this MigrateNodeResponse.
-        :type: MigrateNodesSpec
+        :type spec: :class:`huaweicloudsdkcce.v3.MigrateNodesSpec`
         """
         self._spec = spec
 
@@ -125,7 +136,7 @@ class MigrateNodeResponse(SdkResponse):
 
 
         :return: The status of this MigrateNodeResponse.
-        :rtype: TaskStatus
+        :rtype: :class:`huaweicloudsdkcce.v3.TaskStatus`
         """
         return self._status
 
@@ -135,7 +146,7 @@ class MigrateNodeResponse(SdkResponse):
 
 
         :param status: The status of this MigrateNodeResponse.
-        :type: TaskStatus
+        :type status: :class:`huaweicloudsdkcce.v3.TaskStatus`
         """
         self._status = status
 

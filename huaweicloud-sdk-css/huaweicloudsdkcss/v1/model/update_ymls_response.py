@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateYmlsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateYmlsResponse(SdkResponse):
     }
 
     def __init__(self, acknowledged=None, external_message=None, http_error_response=None):
-        """UpdateYmlsResponse - a model defined in huaweicloud sdk"""
+        """UpdateYmlsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param acknowledged: 返回值。
+        :type acknowledged: bool
+        :param external_message: 返回信息。
+        :type external_message: str
+        :param http_error_response: 返回错误信息。
+        :type http_error_response: str
+        """
         
         super(UpdateYmlsResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class UpdateYmlsResponse(SdkResponse):
         返回值。
 
         :param acknowledged: The acknowledged of this UpdateYmlsResponse.
-        :type: bool
+        :type acknowledged: bool
         """
         self._acknowledged = acknowledged
 
@@ -90,7 +99,7 @@ class UpdateYmlsResponse(SdkResponse):
         返回信息。
 
         :param external_message: The external_message of this UpdateYmlsResponse.
-        :type: str
+        :type external_message: str
         """
         self._external_message = external_message
 
@@ -112,7 +121,7 @@ class UpdateYmlsResponse(SdkResponse):
         返回错误信息。
 
         :param http_error_response: The http_error_response of this UpdateYmlsResponse.
-        :type: str
+        :type http_error_response: str
         """
         self._http_error_response = http_error_response
 

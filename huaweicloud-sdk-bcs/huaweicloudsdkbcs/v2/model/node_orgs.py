@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NodeOrgs:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class NodeOrgs:
     }
 
     def __init__(self, name=None, node_count=None, pvc_name=None):
-        """NodeOrgs - a model defined in huaweicloud sdk"""
+        """NodeOrgs
+
+        The model defined in huaweicloud sdk
+
+        :param name: 组织名称，IEF节点绑定模式下组织名与IEF节点名称保持一致。支持英文，数字，中文字符和中划线(-), 不能以中划线(-)开头，长度4-24个字符
+        :type name: str
+        :param node_count: 组织目标节点数, 1-2的正整数
+        :type node_count: int
+        :param pvc_name: pvc名称，添加组织时需要提供pvc_name。CCE模式必填
+        :type pvc_name: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class NodeOrgs:
         组织名称，IEF节点绑定模式下组织名与IEF节点名称保持一致。支持英文，数字，中文字符和中划线(-), 不能以中划线(-)开头，长度4-24个字符
 
         :param name: The name of this NodeOrgs.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -88,7 +97,7 @@ class NodeOrgs:
         组织目标节点数, 1-2的正整数
 
         :param node_count: The node_count of this NodeOrgs.
-        :type: int
+        :type node_count: int
         """
         self._node_count = node_count
 
@@ -110,7 +119,7 @@ class NodeOrgs:
         pvc名称，添加组织时需要提供pvc_name。CCE模式必填
 
         :param pvc_name: The pvc_name of this NodeOrgs.
-        :type: str
+        :type pvc_name: str
         """
         self._pvc_name = pvc_name
 

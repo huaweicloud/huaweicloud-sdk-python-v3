@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CodehubJobInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class CodehubJobInfo:
     }
 
     def __init__(self, application_name=None, privately=None, short_id=None, code_url=None, region_id=None, repo_type=None, properties=None, repo_info=None):
-        """CodehubJobInfo - a model defined in huaweicloud sdk"""
+        """CodehubJobInfo
+
+        The model defined in huaweicloud sdk
+
+        :param application_name: 应用名称。
+        :type application_name: str
+        :param privately: 仓库是否私有
+        :type privately: bool
+        :param short_id: 仓库短id
+        :type short_id: str
+        :param code_url: 代码存放的ssh地址。
+        :type code_url: str
+        :param region_id: CodeHub 仓库所在的 Region ID： - 华南-广州：cn-south-1 - 华东-上海二：cn-east-2 - 华北-北京一：cn-north-1 - 华北-北京四：cn-north-4 
+        :type region_id: str
+        :param repo_type: - 0 - 将生成的应用代码存储于 repo_info 指定的 CodeHub 仓库中。 - 1 - 将生成的应用代码存储到华为云，任务创建人可以通过 ExportApplicationCode 下载代码压缩包。 
+        :type repo_type: int
+        :param properties: 可以根据 template-metadata.json 获取动态参数 ID 以及规则。
+        :type properties: dict(str, str)
+        :param repo_info: 
+        :type repo_info: :class:`huaweicloudsdkdevstar.v1.RepositoryInfo`
+        """
         
         
 
@@ -89,7 +108,7 @@ class CodehubJobInfo:
         应用名称。
 
         :param application_name: The application_name of this CodehubJobInfo.
-        :type: str
+        :type application_name: str
         """
         self._application_name = application_name
 
@@ -111,7 +130,7 @@ class CodehubJobInfo:
         仓库是否私有
 
         :param privately: The privately of this CodehubJobInfo.
-        :type: bool
+        :type privately: bool
         """
         self._privately = privately
 
@@ -133,7 +152,7 @@ class CodehubJobInfo:
         仓库短id
 
         :param short_id: The short_id of this CodehubJobInfo.
-        :type: str
+        :type short_id: str
         """
         self._short_id = short_id
 
@@ -155,7 +174,7 @@ class CodehubJobInfo:
         代码存放的ssh地址。
 
         :param code_url: The code_url of this CodehubJobInfo.
-        :type: str
+        :type code_url: str
         """
         self._code_url = code_url
 
@@ -177,7 +196,7 @@ class CodehubJobInfo:
         CodeHub 仓库所在的 Region ID： - 华南-广州：cn-south-1 - 华东-上海二：cn-east-2 - 华北-北京一：cn-north-1 - 华北-北京四：cn-north-4 
 
         :param region_id: The region_id of this CodehubJobInfo.
-        :type: str
+        :type region_id: str
         """
         self._region_id = region_id
 
@@ -199,7 +218,7 @@ class CodehubJobInfo:
         - 0 - 将生成的应用代码存储于 repo_info 指定的 CodeHub 仓库中。 - 1 - 将生成的应用代码存储到华为云，任务创建人可以通过 ExportApplicationCode 下载代码压缩包。 
 
         :param repo_type: The repo_type of this CodehubJobInfo.
-        :type: int
+        :type repo_type: int
         """
         self._repo_type = repo_type
 
@@ -221,7 +240,7 @@ class CodehubJobInfo:
         可以根据 template-metadata.json 获取动态参数 ID 以及规则。
 
         :param properties: The properties of this CodehubJobInfo.
-        :type: dict(str, str)
+        :type properties: dict(str, str)
         """
         self._properties = properties
 
@@ -231,7 +250,7 @@ class CodehubJobInfo:
 
 
         :return: The repo_info of this CodehubJobInfo.
-        :rtype: RepositoryInfo
+        :rtype: :class:`huaweicloudsdkdevstar.v1.RepositoryInfo`
         """
         return self._repo_info
 
@@ -241,7 +260,7 @@ class CodehubJobInfo:
 
 
         :param repo_info: The repo_info of this CodehubJobInfo.
-        :type: RepositoryInfo
+        :type repo_info: :class:`huaweicloudsdkdevstar.v1.RepositoryInfo`
         """
         self._repo_info = repo_info
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListEnterpriseOrganizationsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListEnterpriseOrganizationsRequest:
     }
 
     def __init__(self, recursive_query=None, parent_id=None):
-        """ListEnterpriseOrganizationsRequest - a model defined in huaweicloud sdk"""
+        """ListEnterpriseOrganizationsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param recursive_query: 是否递归查询。0：不递归（默认）1：递归如果不递归，只返回起始节点的直接子节点。
+        :type recursive_query: int
+        :param parent_id: 指定的节点ID。为空则从根节点查起。
+        :type parent_id: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class ListEnterpriseOrganizationsRequest:
         是否递归查询。0：不递归（默认）1：递归如果不递归，只返回起始节点的直接子节点。
 
         :param recursive_query: The recursive_query of this ListEnterpriseOrganizationsRequest.
-        :type: int
+        :type recursive_query: int
         """
         self._recursive_query = recursive_query
 
@@ -85,7 +92,7 @@ class ListEnterpriseOrganizationsRequest:
         指定的节点ID。为空则从根节点查起。
 
         :param parent_id: The parent_id of this ListEnterpriseOrganizationsRequest.
-        :type: str
+        :type parent_id: str
         """
         self._parent_id = parent_id
 

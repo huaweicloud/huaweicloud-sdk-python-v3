@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryDataGuardMonitorAndChartResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class QueryDataGuardMonitorAndChartResp:
     }
 
     def __init__(self, id=None, data_guard_minitor=None):
-        """QueryDataGuardMonitorAndChartResp - a model defined in huaweicloud sdk"""
+        """QueryDataGuardMonitorAndChartResp
+
+        The model defined in huaweicloud sdk
+
+        :param id: 任务id
+        :type id: str
+        :param data_guard_minitor: 
+        :type data_guard_minitor: :class:`huaweicloudsdkdrs.v3.QueryDataGuardMonitorResponse`
+        """
         
         
 
@@ -61,7 +68,7 @@ class QueryDataGuardMonitorAndChartResp:
         任务id
 
         :param id: The id of this QueryDataGuardMonitorAndChartResp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -71,7 +78,7 @@ class QueryDataGuardMonitorAndChartResp:
 
 
         :return: The data_guard_minitor of this QueryDataGuardMonitorAndChartResp.
-        :rtype: QueryDataGuardMonitorResponse
+        :rtype: :class:`huaweicloudsdkdrs.v3.QueryDataGuardMonitorResponse`
         """
         return self._data_guard_minitor
 
@@ -81,7 +88,7 @@ class QueryDataGuardMonitorAndChartResp:
 
 
         :param data_guard_minitor: The data_guard_minitor of this QueryDataGuardMonitorAndChartResp.
-        :type: QueryDataGuardMonitorResponse
+        :type data_guard_minitor: :class:`huaweicloudsdkdrs.v3.QueryDataGuardMonitorResponse`
         """
         self._data_guard_minitor = data_guard_minitor
 

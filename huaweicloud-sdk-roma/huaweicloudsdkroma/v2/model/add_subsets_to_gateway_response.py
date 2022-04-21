@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddSubsetsToGatewayResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class AddSubsetsToGatewayResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """AddSubsetsToGatewayResponse - a model defined in huaweicloud sdk"""
+        """AddSubsetsToGatewayResponse
+
+        The model defined in huaweicloud sdk
+
+        :param body: 
+        :type body: list[:class:`huaweicloudsdkroma.v2.Device`]
+        """
         
         super(AddSubsetsToGatewayResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class AddSubsetsToGatewayResponse(SdkResponse):
 
 
         :return: The body of this AddSubsetsToGatewayResponse.
-        :rtype: list[Device]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.Device`]
         """
         return self._body
 
@@ -56,7 +61,7 @@ class AddSubsetsToGatewayResponse(SdkResponse):
 
 
         :param body: The body of this AddSubsetsToGatewayResponse.
-        :type: list[Device]
+        :type body: list[:class:`huaweicloudsdkroma.v2.Device`]
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SvcSpec:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class SvcSpec:
     }
 
     def __init__(self, cluster_ip=None, external_ips=None, external_name=None, ports=None, selector=None, type=None):
-        """SvcSpec - a model defined in huaweicloud sdk"""
+        """SvcSpec
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_ip: 虚拟服务IP地址
+        :type cluster_ip: str
+        :param external_ips: 外部IP列表 --- 暂不支持
+        :type external_ips: list[str]
+        :param external_name: 外部域名 --- 暂不支持
+        :type external_name: str
+        :param ports: 服务需要暴露的端口列表
+        :type ports: list[:class:`huaweicloudsdkief.v1.SvcPort`]
+        :param selector: 标签选择器，将选择具有指定Label标签的Pod作为管理范围
+        :type selector: dict(str, str)
+        :param type: 服务的类型
+        :type type: str
+        """
         
         
 
@@ -82,7 +97,7 @@ class SvcSpec:
         虚拟服务IP地址
 
         :param cluster_ip: The cluster_ip of this SvcSpec.
-        :type: str
+        :type cluster_ip: str
         """
         self._cluster_ip = cluster_ip
 
@@ -104,7 +119,7 @@ class SvcSpec:
         外部IP列表 --- 暂不支持
 
         :param external_ips: The external_ips of this SvcSpec.
-        :type: list[str]
+        :type external_ips: list[str]
         """
         self._external_ips = external_ips
 
@@ -126,7 +141,7 @@ class SvcSpec:
         外部域名 --- 暂不支持
 
         :param external_name: The external_name of this SvcSpec.
-        :type: str
+        :type external_name: str
         """
         self._external_name = external_name
 
@@ -137,7 +152,7 @@ class SvcSpec:
         服务需要暴露的端口列表
 
         :return: The ports of this SvcSpec.
-        :rtype: list[SvcPort]
+        :rtype: list[:class:`huaweicloudsdkief.v1.SvcPort`]
         """
         return self._ports
 
@@ -148,7 +163,7 @@ class SvcSpec:
         服务需要暴露的端口列表
 
         :param ports: The ports of this SvcSpec.
-        :type: list[SvcPort]
+        :type ports: list[:class:`huaweicloudsdkief.v1.SvcPort`]
         """
         self._ports = ports
 
@@ -170,7 +185,7 @@ class SvcSpec:
         标签选择器，将选择具有指定Label标签的Pod作为管理范围
 
         :param selector: The selector of this SvcSpec.
-        :type: dict(str, str)
+        :type selector: dict(str, str)
         """
         self._selector = selector
 
@@ -192,7 +207,7 @@ class SvcSpec:
         服务的类型
 
         :param type: The type of this SvcSpec.
-        :type: str
+        :type type: str
         """
         self._type = type
 

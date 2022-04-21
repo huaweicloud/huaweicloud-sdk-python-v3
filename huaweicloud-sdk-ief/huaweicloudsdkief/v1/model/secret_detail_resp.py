@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SecretDetailResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class SecretDetailResp:
     }
 
     def __init__(self, id=None, name=None, description=None, secrets=None, project_id=None, created_at=None, updated_at=None, type=None):
-        """SecretDetailResp - a model defined in huaweicloud sdk"""
+        """SecretDetailResp
+
+        The model defined in huaweicloud sdk
+
+        :param id: 密钥ID
+        :type id: str
+        :param name: 密钥名称，以小写英文字母开头，4-64位，可以使用小写英文、数字、中划线（-），不能以中划线结尾
+        :type name: str
+        :param description: 密钥描述,最大长度255，不允许^ ~ # $ % &amp; * &lt; &gt; ( ) [ ] { } &#39; \&quot; \\
+        :type description: str
+        :param secrets: secrets是一个字典，由多个键值对组成，json化后最大总长度为1048576，key和value均为字符串。键值对中key由大小写字母或中划线开头，由数字、大小写字母、点号（.）、中划线（-）、下划线（_）组成，最小长度为1，最大长度63个字符, 键值对中的value必须为base64字符。 注：secrets字典的长度即字典转为标准的字符串后的长度，例如字典{\&quot;a\&quot;: \&quot;b\&quot;}转为标准字符串后为&#39;{\&quot;a\&quot;: \&quot;b\&quot;}&#39;，长度为10
+        :type secrets: dict(str, str)
+        :param project_id: 项目ID
+        :type project_id: str
+        :param created_at: 创建时间
+        :type created_at: str
+        :param updated_at: 更新时间
+        :type updated_at: str
+        :param type: 密钥类型，目前只支持“Opaque”类型
+        :type type: str
+        """
         
         
 
@@ -85,7 +104,7 @@ class SecretDetailResp:
         密钥ID
 
         :param id: The id of this SecretDetailResp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -107,7 +126,7 @@ class SecretDetailResp:
         密钥名称，以小写英文字母开头，4-64位，可以使用小写英文、数字、中划线（-），不能以中划线结尾
 
         :param name: The name of this SecretDetailResp.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -129,7 +148,7 @@ class SecretDetailResp:
         密钥描述,最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
         :param description: The description of this SecretDetailResp.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -151,7 +170,7 @@ class SecretDetailResp:
         secrets是一个字典，由多个键值对组成，json化后最大总长度为1048576，key和value均为字符串。键值对中key由大小写字母或中划线开头，由数字、大小写字母、点号（.）、中划线（-）、下划线（_）组成，最小长度为1，最大长度63个字符, 键值对中的value必须为base64字符。 注：secrets字典的长度即字典转为标准的字符串后的长度，例如字典{\"a\": \"b\"}转为标准字符串后为'{\"a\": \"b\"}'，长度为10
 
         :param secrets: The secrets of this SecretDetailResp.
-        :type: dict(str, str)
+        :type secrets: dict(str, str)
         """
         self._secrets = secrets
 
@@ -173,7 +192,7 @@ class SecretDetailResp:
         项目ID
 
         :param project_id: The project_id of this SecretDetailResp.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -195,7 +214,7 @@ class SecretDetailResp:
         创建时间
 
         :param created_at: The created_at of this SecretDetailResp.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -217,7 +236,7 @@ class SecretDetailResp:
         更新时间
 
         :param updated_at: The updated_at of this SecretDetailResp.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 
@@ -239,7 +258,7 @@ class SecretDetailResp:
         密钥类型，目前只支持“Opaque”类型
 
         :param type: The type of this SecretDetailResp.
-        :type: str
+        :type type: str
         """
         self._type = type
 

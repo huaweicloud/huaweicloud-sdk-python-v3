@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCustomPoliciesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListCustomPoliciesRequest:
     }
 
     def __init__(self, page=None, per_page=None):
-        """ListCustomPoliciesRequest - a model defined in huaweicloud sdk"""
+        """ListCustomPoliciesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param page: 分页查询时数据的页数，查询值最小为1。需要与per_page同时存在。
+        :type page: int
+        :param per_page: 分页查询时每页的数据个数，取值范围为[1,300]。需要与page同时存在。
+        :type per_page: int
+        """
         
         
 
@@ -63,7 +70,7 @@ class ListCustomPoliciesRequest:
         分页查询时数据的页数，查询值最小为1。需要与per_page同时存在。
 
         :param page: The page of this ListCustomPoliciesRequest.
-        :type: int
+        :type page: int
         """
         self._page = page
 
@@ -85,7 +92,7 @@ class ListCustomPoliciesRequest:
         分页查询时每页的数据个数，取值范围为[1,300]。需要与page同时存在。
 
         :param per_page: The per_page of this ListCustomPoliciesRequest.
-        :type: int
+        :type per_page: int
         """
         self._per_page = per_page
 

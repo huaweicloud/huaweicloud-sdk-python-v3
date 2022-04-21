@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListWorkflowExecutionResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ListWorkflowExecutionResult:
     }
 
     def __init__(self, workflow_id=None, workflow_urn=None, execution_id=None, status=None, begin_time=None, end_time=None, last_update_time=None, created_by=None):
-        """ListWorkflowExecutionResult - a model defined in huaweicloud sdk"""
+        """ListWorkflowExecutionResult
+
+        The model defined in huaweicloud sdk
+
+        :param workflow_id: 流程定义ID
+        :type workflow_id: str
+        :param workflow_urn: 唯一标识ID，流程URN
+        :type workflow_urn: str
+        :param execution_id: 流程执行实例ID
+        :type execution_id: str
+        :param status: 流程实例执行状态
+        :type status: str
+        :param begin_time: 流程实例创建时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
+        :type begin_time: str
+        :param end_time: 流程实例结束时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
+        :type end_time: str
+        :param last_update_time: 流程实例上次更新时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
+        :type last_update_time: str
+        :param created_by: 流程实例创建者
+        :type created_by: str
+        """
         
         
 
@@ -93,7 +112,7 @@ class ListWorkflowExecutionResult:
         流程定义ID
 
         :param workflow_id: The workflow_id of this ListWorkflowExecutionResult.
-        :type: str
+        :type workflow_id: str
         """
         self._workflow_id = workflow_id
 
@@ -115,7 +134,7 @@ class ListWorkflowExecutionResult:
         唯一标识ID，流程URN
 
         :param workflow_urn: The workflow_urn of this ListWorkflowExecutionResult.
-        :type: str
+        :type workflow_urn: str
         """
         self._workflow_urn = workflow_urn
 
@@ -137,7 +156,7 @@ class ListWorkflowExecutionResult:
         流程执行实例ID
 
         :param execution_id: The execution_id of this ListWorkflowExecutionResult.
-        :type: str
+        :type execution_id: str
         """
         self._execution_id = execution_id
 
@@ -159,7 +178,7 @@ class ListWorkflowExecutionResult:
         流程实例执行状态
 
         :param status: The status of this ListWorkflowExecutionResult.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -181,7 +200,7 @@ class ListWorkflowExecutionResult:
         流程实例创建时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
 
         :param begin_time: The begin_time of this ListWorkflowExecutionResult.
-        :type: str
+        :type begin_time: str
         """
         self._begin_time = begin_time
 
@@ -203,7 +222,7 @@ class ListWorkflowExecutionResult:
         流程实例结束时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
 
         :param end_time: The end_time of this ListWorkflowExecutionResult.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -225,7 +244,7 @@ class ListWorkflowExecutionResult:
         流程实例上次更新时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
 
         :param last_update_time: The last_update_time of this ListWorkflowExecutionResult.
-        :type: str
+        :type last_update_time: str
         """
         self._last_update_time = last_update_time
 
@@ -247,7 +266,7 @@ class ListWorkflowExecutionResult:
         流程实例创建者
 
         :param created_by: The created_by of this ListWorkflowExecutionResult.
-        :type: str
+        :type created_by: str
         """
         self._created_by = created_by
 

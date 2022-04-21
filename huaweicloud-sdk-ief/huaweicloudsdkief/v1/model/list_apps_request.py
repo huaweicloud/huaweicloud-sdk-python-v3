@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAppsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListAppsRequest:
     }
 
     def __init__(self, ief_instance_id=None, name=None, limit=None, offset=None, alias=None, visibility=None):
-        """ListAppsRequest - a model defined in huaweicloud sdk"""
+        """ListAppsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param ief_instance_id: 铂金版实例ID，专业版实例为空值
+        :type ief_instance_id: str
+        :param name: 应用模板名称，模糊匹配
+        :type name: str
+        :param limit: 每页显示的条目数量，取值范围1~1000，默认为1000
+        :type limit: str
+        :param offset: 查询的起始位置，取值范围为非负整数，默认为0
+        :type offset: str
+        :param alias: 通过别名过滤，模糊匹配
+        :type alias: str
+        :param visibility: public：公共模板，只有管理员才能创建 private：用户创建的应用模板，默认 shared：第三方应用，其他用户共享类型的模板（保留，未实现）
+        :type visibility: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class ListAppsRequest:
         铂金版实例ID，专业版实例为空值
 
         :param ief_instance_id: The ief_instance_id of this ListAppsRequest.
-        :type: str
+        :type ief_instance_id: str
         """
         self._ief_instance_id = ief_instance_id
 
@@ -105,7 +120,7 @@ class ListAppsRequest:
         应用模板名称，模糊匹配
 
         :param name: The name of this ListAppsRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -127,7 +142,7 @@ class ListAppsRequest:
         每页显示的条目数量，取值范围1~1000，默认为1000
 
         :param limit: The limit of this ListAppsRequest.
-        :type: str
+        :type limit: str
         """
         self._limit = limit
 
@@ -149,7 +164,7 @@ class ListAppsRequest:
         查询的起始位置，取值范围为非负整数，默认为0
 
         :param offset: The offset of this ListAppsRequest.
-        :type: str
+        :type offset: str
         """
         self._offset = offset
 
@@ -171,7 +186,7 @@ class ListAppsRequest:
         通过别名过滤，模糊匹配
 
         :param alias: The alias of this ListAppsRequest.
-        :type: str
+        :type alias: str
         """
         self._alias = alias
 
@@ -193,7 +208,7 @@ class ListAppsRequest:
         public：公共模板，只有管理员才能创建 private：用户创建的应用模板，默认 shared：第三方应用，其他用户共享类型的模板（保留，未实现）
 
         :param visibility: The visibility of this ListAppsRequest.
-        :type: str
+        :type visibility: str
         """
         self._visibility = visibility
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchAddDataMaskRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchAddDataMaskRequest:
     }
 
     def __init__(self, body=None):
-        """BatchAddDataMaskRequest - a model defined in huaweicloud sdk"""
+        """BatchAddDataMaskRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the BatchAddDataMaskRequest
+        :type body: :class:`huaweicloudsdkdsc.v1.DynamicDataMask`
+        """
         
         
 
@@ -46,7 +51,7 @@ class BatchAddDataMaskRequest:
 
 
         :return: The body of this BatchAddDataMaskRequest.
-        :rtype: DynamicDataMask
+        :rtype: :class:`huaweicloudsdkdsc.v1.DynamicDataMask`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class BatchAddDataMaskRequest:
 
 
         :param body: The body of this BatchAddDataMaskRequest.
-        :type: DynamicDataMask
+        :type body: :class:`huaweicloudsdkdsc.v1.DynamicDataMask`
         """
         self._body = body
 

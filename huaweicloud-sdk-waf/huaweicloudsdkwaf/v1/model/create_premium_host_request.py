@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreatePremiumHostRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreatePremiumHostRequest:
     }
 
     def __init__(self, enterprise_project_id=None, body=None):
-        """CreatePremiumHostRequest - a model defined in huaweicloud sdk"""
+        """CreatePremiumHostRequest
+
+        The model defined in huaweicloud sdk
+
+        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        :type enterprise_project_id: str
+        :param body: Body of the CreatePremiumHostRequest
+        :type body: :class:`huaweicloudsdkwaf.v1.CreatePremiumHostRequestBody`
+        """
         
         
 
@@ -63,7 +70,7 @@ class CreatePremiumHostRequest:
         您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this CreatePremiumHostRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -73,7 +80,7 @@ class CreatePremiumHostRequest:
 
 
         :return: The body of this CreatePremiumHostRequest.
-        :rtype: CreatePremiumHostRequestBody
+        :rtype: :class:`huaweicloudsdkwaf.v1.CreatePremiumHostRequestBody`
         """
         return self._body
 
@@ -83,7 +90,7 @@ class CreatePremiumHostRequest:
 
 
         :param body: The body of this CreatePremiumHostRequest.
-        :type: CreatePremiumHostRequestBody
+        :type body: :class:`huaweicloudsdkwaf.v1.CreatePremiumHostRequestBody`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchResetServersPasswordRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchResetServersPasswordRequest:
     }
 
     def __init__(self, body=None):
-        """BatchResetServersPasswordRequest - a model defined in huaweicloud sdk"""
+        """BatchResetServersPasswordRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the BatchResetServersPasswordRequest
+        :type body: :class:`huaweicloudsdkecs.v2.BatchResetServersPasswordRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class BatchResetServersPasswordRequest:
 
 
         :return: The body of this BatchResetServersPasswordRequest.
-        :rtype: BatchResetServersPasswordRequestBody
+        :rtype: :class:`huaweicloudsdkecs.v2.BatchResetServersPasswordRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class BatchResetServersPasswordRequest:
 
 
         :param body: The body of this BatchResetServersPasswordRequest.
-        :type: BatchResetServersPasswordRequestBody
+        :type body: :class:`huaweicloudsdkecs.v2.BatchResetServersPasswordRequestBody`
         """
         self._body = body
 

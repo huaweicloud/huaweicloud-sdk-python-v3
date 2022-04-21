@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NodePoolUpdate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class NodePoolUpdate:
     }
 
     def __init__(self, metadata=None, spec=None):
-        """NodePoolUpdate - a model defined in huaweicloud sdk"""
+        """NodePoolUpdate
+
+        The model defined in huaweicloud sdk
+
+        :param metadata: 
+        :type metadata: :class:`huaweicloudsdkcce.v3.NodePoolMetadataUpdate`
+        :param spec: 
+        :type spec: :class:`huaweicloudsdkcce.v3.NodePoolSpecUpdate`
+        """
         
         
 
@@ -49,7 +56,7 @@ class NodePoolUpdate:
 
 
         :return: The metadata of this NodePoolUpdate.
-        :rtype: NodePoolMetadataUpdate
+        :rtype: :class:`huaweicloudsdkcce.v3.NodePoolMetadataUpdate`
         """
         return self._metadata
 
@@ -59,7 +66,7 @@ class NodePoolUpdate:
 
 
         :param metadata: The metadata of this NodePoolUpdate.
-        :type: NodePoolMetadataUpdate
+        :type metadata: :class:`huaweicloudsdkcce.v3.NodePoolMetadataUpdate`
         """
         self._metadata = metadata
 
@@ -69,7 +76,7 @@ class NodePoolUpdate:
 
 
         :return: The spec of this NodePoolUpdate.
-        :rtype: NodePoolSpecUpdate
+        :rtype: :class:`huaweicloudsdkcce.v3.NodePoolSpecUpdate`
         """
         return self._spec
 
@@ -79,7 +86,7 @@ class NodePoolUpdate:
 
 
         :param spec: The spec of this NodePoolUpdate.
-        :type: NodePoolSpecUpdate
+        :type spec: :class:`huaweicloudsdkcce.v3.NodePoolSpecUpdate`
         """
         self._spec = spec
 

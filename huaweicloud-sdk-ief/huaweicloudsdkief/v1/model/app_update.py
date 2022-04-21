@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AppUpdate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AppUpdate:
     }
 
     def __init__(self, alias=None, description=None):
-        """AppUpdate - a model defined in huaweicloud sdk"""
+        """AppUpdate
+
+        The model defined in huaweicloud sdk
+
+        :param alias: 应用模板别名，中文、英文字母、数字、中划线、下划线，最大64字符
+        :type alias: str
+        :param description: 应用模板描述，最大长度255，不允许^ ~ # $ % &amp; * &lt; &gt; ( ) [ ] { } &#39; \&quot; \\
+        :type description: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class AppUpdate:
         应用模板别名，中文、英文字母、数字、中划线、下划线，最大64字符
 
         :param alias: The alias of this AppUpdate.
-        :type: str
+        :type alias: str
         """
         self._alias = alias
 
@@ -85,7 +92,7 @@ class AppUpdate:
         应用模板描述，最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
         :param description: The description of this AppUpdate.
-        :type: str
+        :type description: str
         """
         self._description = description
 

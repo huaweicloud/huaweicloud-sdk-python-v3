@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FaceSearchBase64Req:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class FaceSearchBase64Req:
     }
 
     def __init__(self, filter=None, top_n=None, image_base64=None, return_fields=None, threshold=None, sort=None):
-        """FaceSearchBase64Req - a model defined in huaweicloud sdk"""
+        """FaceSearchBase64Req
+
+        The model defined in huaweicloud sdk
+
+        :param filter: 过滤条件，参考[filter语法](https://support.huaweicloud.com/api-face/face_02_0014.html)。
+        :type filter: str
+        :param top_n: 返回查询到的最相似的N张人脸，N默认为10。
+        :type top_n: int
+        :param image_base64: 图像数据，Base64编码，要求： • Base64编码后大小不超过8MB，建议小于MB。 • 图片为JPG/JPEG/BMP/PNG格式。
+        :type image_base64: str
+        :param return_fields: 指定返回的自定义字段。
+        :type return_fields: list[str]
+        :param threshold: 人脸相似度阈值，低于这个阈值则不返回，取值范围0~1，一般情况下建议取值0.93，默认为0。
+        :type threshold: float
+        :param sort: 支持字段排序，参考[sort语法](https://support.huaweicloud.com/api-face/face_02_0013.html)。
+        :type sort: list[dict(str, str)]
+        """
         
         
 
@@ -82,7 +97,7 @@ class FaceSearchBase64Req:
         过滤条件，参考[filter语法](https://support.huaweicloud.com/api-face/face_02_0014.html)。
 
         :param filter: The filter of this FaceSearchBase64Req.
-        :type: str
+        :type filter: str
         """
         self._filter = filter
 
@@ -104,7 +119,7 @@ class FaceSearchBase64Req:
         返回查询到的最相似的N张人脸，N默认为10。
 
         :param top_n: The top_n of this FaceSearchBase64Req.
-        :type: int
+        :type top_n: int
         """
         self._top_n = top_n
 
@@ -126,7 +141,7 @@ class FaceSearchBase64Req:
         图像数据，Base64编码，要求： • Base64编码后大小不超过8MB，建议小于MB。 • 图片为JPG/JPEG/BMP/PNG格式。
 
         :param image_base64: The image_base64 of this FaceSearchBase64Req.
-        :type: str
+        :type image_base64: str
         """
         self._image_base64 = image_base64
 
@@ -148,7 +163,7 @@ class FaceSearchBase64Req:
         指定返回的自定义字段。
 
         :param return_fields: The return_fields of this FaceSearchBase64Req.
-        :type: list[str]
+        :type return_fields: list[str]
         """
         self._return_fields = return_fields
 
@@ -170,7 +185,7 @@ class FaceSearchBase64Req:
         人脸相似度阈值，低于这个阈值则不返回，取值范围0~1，一般情况下建议取值0.93，默认为0。
 
         :param threshold: The threshold of this FaceSearchBase64Req.
-        :type: float
+        :type threshold: float
         """
         self._threshold = threshold
 
@@ -192,7 +207,7 @@ class FaceSearchBase64Req:
         支持字段排序，参考[sort语法](https://support.huaweicloud.com/api-face/face_02_0013.html)。
 
         :param sort: The sort of this FaceSearchBase64Req.
-        :type: list[dict(str, str)]
+        :type sort: list[dict(str, str)]
         """
         self._sort = sort
 

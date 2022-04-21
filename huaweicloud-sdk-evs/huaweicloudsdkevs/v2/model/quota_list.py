@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QuotaList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -66,7 +65,49 @@ class QuotaList:
     }
 
     def __init__(self, backup_gigabytes=None, backups=None, gigabytes=None, id=None, snapshots=None, volumes=None, gigabytes_sata=None, snapshots_sata=None, volumes_sata=None, gigabytes_sas=None, snapshots_sas=None, volumes_sas=None, gigabytes_ssd=None, snapshots_ssd=None, volumes_ssd=None, gigabytes_gpssd=None, snapshots_gpssd=None, volumes_gpssd=None, per_volume_gigabytes=None):
-        """QuotaList - a model defined in huaweicloud sdk"""
+        """QuotaList
+
+        The model defined in huaweicloud sdk
+
+        :param backup_gigabytes: 
+        :type backup_gigabytes: :class:`huaweicloudsdkevs.v2.QuotaDetailBackupGigabytes`
+        :param backups: 
+        :type backups: :class:`huaweicloudsdkevs.v2.QuotaDetailBackups`
+        :param gigabytes: 
+        :type gigabytes: :class:`huaweicloudsdkevs.v2.QuotaDetailGigabytes`
+        :param id: 项目ID。
+        :type id: str
+        :param snapshots: 
+        :type snapshots: :class:`huaweicloudsdkevs.v2.QuotaDetailSnapshots`
+        :param volumes: 
+        :type volumes: :class:`huaweicloudsdkevs.v2.QuotaDetailVolumes`
+        :param gigabytes_sata: 
+        :type gigabytes_sata: :class:`huaweicloudsdkevs.v2.QuotaDetailGigabytesSATA`
+        :param snapshots_sata: 
+        :type snapshots_sata: :class:`huaweicloudsdkevs.v2.QuotaDetailSnapshotsSATA`
+        :param volumes_sata: 
+        :type volumes_sata: :class:`huaweicloudsdkevs.v2.QuotaDetailVolumesSATA`
+        :param gigabytes_sas: 
+        :type gigabytes_sas: :class:`huaweicloudsdkevs.v2.QuotaDetailGigabytesSAS`
+        :param snapshots_sas: 
+        :type snapshots_sas: :class:`huaweicloudsdkevs.v2.QuotaDetailSnapshotsSAS`
+        :param volumes_sas: 
+        :type volumes_sas: :class:`huaweicloudsdkevs.v2.QuotaDetailVolumesSAS`
+        :param gigabytes_ssd: 
+        :type gigabytes_ssd: :class:`huaweicloudsdkevs.v2.QuotaDetailGigabytesSSD`
+        :param snapshots_ssd: 
+        :type snapshots_ssd: :class:`huaweicloudsdkevs.v2.QuotaDetailSnapshotsSSD`
+        :param volumes_ssd: 
+        :type volumes_ssd: :class:`huaweicloudsdkevs.v2.QuotaDetailVolumesSSD`
+        :param gigabytes_gpssd: 
+        :type gigabytes_gpssd: :class:`huaweicloudsdkevs.v2.QuotaDetailGigabytesGPSSD`
+        :param snapshots_gpssd: 
+        :type snapshots_gpssd: :class:`huaweicloudsdkevs.v2.QuotaDetailSnapshotsGPSSD`
+        :param volumes_gpssd: 
+        :type volumes_gpssd: :class:`huaweicloudsdkevs.v2.QuotaDetailVolumesGPSSD`
+        :param per_volume_gigabytes: 
+        :type per_volume_gigabytes: :class:`huaweicloudsdkevs.v2.QuotaDetailPerVolumeGigabytes`
+        """
         
         
 
@@ -130,7 +171,7 @@ class QuotaList:
 
 
         :return: The backup_gigabytes of this QuotaList.
-        :rtype: QuotaDetailBackupGigabytes
+        :rtype: :class:`huaweicloudsdkevs.v2.QuotaDetailBackupGigabytes`
         """
         return self._backup_gigabytes
 
@@ -140,7 +181,7 @@ class QuotaList:
 
 
         :param backup_gigabytes: The backup_gigabytes of this QuotaList.
-        :type: QuotaDetailBackupGigabytes
+        :type backup_gigabytes: :class:`huaweicloudsdkevs.v2.QuotaDetailBackupGigabytes`
         """
         self._backup_gigabytes = backup_gigabytes
 
@@ -150,7 +191,7 @@ class QuotaList:
 
 
         :return: The backups of this QuotaList.
-        :rtype: QuotaDetailBackups
+        :rtype: :class:`huaweicloudsdkevs.v2.QuotaDetailBackups`
         """
         return self._backups
 
@@ -160,7 +201,7 @@ class QuotaList:
 
 
         :param backups: The backups of this QuotaList.
-        :type: QuotaDetailBackups
+        :type backups: :class:`huaweicloudsdkevs.v2.QuotaDetailBackups`
         """
         self._backups = backups
 
@@ -170,7 +211,7 @@ class QuotaList:
 
 
         :return: The gigabytes of this QuotaList.
-        :rtype: QuotaDetailGigabytes
+        :rtype: :class:`huaweicloudsdkevs.v2.QuotaDetailGigabytes`
         """
         return self._gigabytes
 
@@ -180,7 +221,7 @@ class QuotaList:
 
 
         :param gigabytes: The gigabytes of this QuotaList.
-        :type: QuotaDetailGigabytes
+        :type gigabytes: :class:`huaweicloudsdkevs.v2.QuotaDetailGigabytes`
         """
         self._gigabytes = gigabytes
 
@@ -202,7 +243,7 @@ class QuotaList:
         项目ID。
 
         :param id: The id of this QuotaList.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -212,7 +253,7 @@ class QuotaList:
 
 
         :return: The snapshots of this QuotaList.
-        :rtype: QuotaDetailSnapshots
+        :rtype: :class:`huaweicloudsdkevs.v2.QuotaDetailSnapshots`
         """
         return self._snapshots
 
@@ -222,7 +263,7 @@ class QuotaList:
 
 
         :param snapshots: The snapshots of this QuotaList.
-        :type: QuotaDetailSnapshots
+        :type snapshots: :class:`huaweicloudsdkevs.v2.QuotaDetailSnapshots`
         """
         self._snapshots = snapshots
 
@@ -232,7 +273,7 @@ class QuotaList:
 
 
         :return: The volumes of this QuotaList.
-        :rtype: QuotaDetailVolumes
+        :rtype: :class:`huaweicloudsdkevs.v2.QuotaDetailVolumes`
         """
         return self._volumes
 
@@ -242,7 +283,7 @@ class QuotaList:
 
 
         :param volumes: The volumes of this QuotaList.
-        :type: QuotaDetailVolumes
+        :type volumes: :class:`huaweicloudsdkevs.v2.QuotaDetailVolumes`
         """
         self._volumes = volumes
 
@@ -252,7 +293,7 @@ class QuotaList:
 
 
         :return: The gigabytes_sata of this QuotaList.
-        :rtype: QuotaDetailGigabytesSATA
+        :rtype: :class:`huaweicloudsdkevs.v2.QuotaDetailGigabytesSATA`
         """
         return self._gigabytes_sata
 
@@ -262,7 +303,7 @@ class QuotaList:
 
 
         :param gigabytes_sata: The gigabytes_sata of this QuotaList.
-        :type: QuotaDetailGigabytesSATA
+        :type gigabytes_sata: :class:`huaweicloudsdkevs.v2.QuotaDetailGigabytesSATA`
         """
         self._gigabytes_sata = gigabytes_sata
 
@@ -272,7 +313,7 @@ class QuotaList:
 
 
         :return: The snapshots_sata of this QuotaList.
-        :rtype: QuotaDetailSnapshotsSATA
+        :rtype: :class:`huaweicloudsdkevs.v2.QuotaDetailSnapshotsSATA`
         """
         return self._snapshots_sata
 
@@ -282,7 +323,7 @@ class QuotaList:
 
 
         :param snapshots_sata: The snapshots_sata of this QuotaList.
-        :type: QuotaDetailSnapshotsSATA
+        :type snapshots_sata: :class:`huaweicloudsdkevs.v2.QuotaDetailSnapshotsSATA`
         """
         self._snapshots_sata = snapshots_sata
 
@@ -292,7 +333,7 @@ class QuotaList:
 
 
         :return: The volumes_sata of this QuotaList.
-        :rtype: QuotaDetailVolumesSATA
+        :rtype: :class:`huaweicloudsdkevs.v2.QuotaDetailVolumesSATA`
         """
         return self._volumes_sata
 
@@ -302,7 +343,7 @@ class QuotaList:
 
 
         :param volumes_sata: The volumes_sata of this QuotaList.
-        :type: QuotaDetailVolumesSATA
+        :type volumes_sata: :class:`huaweicloudsdkevs.v2.QuotaDetailVolumesSATA`
         """
         self._volumes_sata = volumes_sata
 
@@ -312,7 +353,7 @@ class QuotaList:
 
 
         :return: The gigabytes_sas of this QuotaList.
-        :rtype: QuotaDetailGigabytesSAS
+        :rtype: :class:`huaweicloudsdkevs.v2.QuotaDetailGigabytesSAS`
         """
         return self._gigabytes_sas
 
@@ -322,7 +363,7 @@ class QuotaList:
 
 
         :param gigabytes_sas: The gigabytes_sas of this QuotaList.
-        :type: QuotaDetailGigabytesSAS
+        :type gigabytes_sas: :class:`huaweicloudsdkevs.v2.QuotaDetailGigabytesSAS`
         """
         self._gigabytes_sas = gigabytes_sas
 
@@ -332,7 +373,7 @@ class QuotaList:
 
 
         :return: The snapshots_sas of this QuotaList.
-        :rtype: QuotaDetailSnapshotsSAS
+        :rtype: :class:`huaweicloudsdkevs.v2.QuotaDetailSnapshotsSAS`
         """
         return self._snapshots_sas
 
@@ -342,7 +383,7 @@ class QuotaList:
 
 
         :param snapshots_sas: The snapshots_sas of this QuotaList.
-        :type: QuotaDetailSnapshotsSAS
+        :type snapshots_sas: :class:`huaweicloudsdkevs.v2.QuotaDetailSnapshotsSAS`
         """
         self._snapshots_sas = snapshots_sas
 
@@ -352,7 +393,7 @@ class QuotaList:
 
 
         :return: The volumes_sas of this QuotaList.
-        :rtype: QuotaDetailVolumesSAS
+        :rtype: :class:`huaweicloudsdkevs.v2.QuotaDetailVolumesSAS`
         """
         return self._volumes_sas
 
@@ -362,7 +403,7 @@ class QuotaList:
 
 
         :param volumes_sas: The volumes_sas of this QuotaList.
-        :type: QuotaDetailVolumesSAS
+        :type volumes_sas: :class:`huaweicloudsdkevs.v2.QuotaDetailVolumesSAS`
         """
         self._volumes_sas = volumes_sas
 
@@ -372,7 +413,7 @@ class QuotaList:
 
 
         :return: The gigabytes_ssd of this QuotaList.
-        :rtype: QuotaDetailGigabytesSSD
+        :rtype: :class:`huaweicloudsdkevs.v2.QuotaDetailGigabytesSSD`
         """
         return self._gigabytes_ssd
 
@@ -382,7 +423,7 @@ class QuotaList:
 
 
         :param gigabytes_ssd: The gigabytes_ssd of this QuotaList.
-        :type: QuotaDetailGigabytesSSD
+        :type gigabytes_ssd: :class:`huaweicloudsdkevs.v2.QuotaDetailGigabytesSSD`
         """
         self._gigabytes_ssd = gigabytes_ssd
 
@@ -392,7 +433,7 @@ class QuotaList:
 
 
         :return: The snapshots_ssd of this QuotaList.
-        :rtype: QuotaDetailSnapshotsSSD
+        :rtype: :class:`huaweicloudsdkevs.v2.QuotaDetailSnapshotsSSD`
         """
         return self._snapshots_ssd
 
@@ -402,7 +443,7 @@ class QuotaList:
 
 
         :param snapshots_ssd: The snapshots_ssd of this QuotaList.
-        :type: QuotaDetailSnapshotsSSD
+        :type snapshots_ssd: :class:`huaweicloudsdkevs.v2.QuotaDetailSnapshotsSSD`
         """
         self._snapshots_ssd = snapshots_ssd
 
@@ -412,7 +453,7 @@ class QuotaList:
 
 
         :return: The volumes_ssd of this QuotaList.
-        :rtype: QuotaDetailVolumesSSD
+        :rtype: :class:`huaweicloudsdkevs.v2.QuotaDetailVolumesSSD`
         """
         return self._volumes_ssd
 
@@ -422,7 +463,7 @@ class QuotaList:
 
 
         :param volumes_ssd: The volumes_ssd of this QuotaList.
-        :type: QuotaDetailVolumesSSD
+        :type volumes_ssd: :class:`huaweicloudsdkevs.v2.QuotaDetailVolumesSSD`
         """
         self._volumes_ssd = volumes_ssd
 
@@ -432,7 +473,7 @@ class QuotaList:
 
 
         :return: The gigabytes_gpssd of this QuotaList.
-        :rtype: QuotaDetailGigabytesGPSSD
+        :rtype: :class:`huaweicloudsdkevs.v2.QuotaDetailGigabytesGPSSD`
         """
         return self._gigabytes_gpssd
 
@@ -442,7 +483,7 @@ class QuotaList:
 
 
         :param gigabytes_gpssd: The gigabytes_gpssd of this QuotaList.
-        :type: QuotaDetailGigabytesGPSSD
+        :type gigabytes_gpssd: :class:`huaweicloudsdkevs.v2.QuotaDetailGigabytesGPSSD`
         """
         self._gigabytes_gpssd = gigabytes_gpssd
 
@@ -452,7 +493,7 @@ class QuotaList:
 
 
         :return: The snapshots_gpssd of this QuotaList.
-        :rtype: QuotaDetailSnapshotsGPSSD
+        :rtype: :class:`huaweicloudsdkevs.v2.QuotaDetailSnapshotsGPSSD`
         """
         return self._snapshots_gpssd
 
@@ -462,7 +503,7 @@ class QuotaList:
 
 
         :param snapshots_gpssd: The snapshots_gpssd of this QuotaList.
-        :type: QuotaDetailSnapshotsGPSSD
+        :type snapshots_gpssd: :class:`huaweicloudsdkevs.v2.QuotaDetailSnapshotsGPSSD`
         """
         self._snapshots_gpssd = snapshots_gpssd
 
@@ -472,7 +513,7 @@ class QuotaList:
 
 
         :return: The volumes_gpssd of this QuotaList.
-        :rtype: QuotaDetailVolumesGPSSD
+        :rtype: :class:`huaweicloudsdkevs.v2.QuotaDetailVolumesGPSSD`
         """
         return self._volumes_gpssd
 
@@ -482,7 +523,7 @@ class QuotaList:
 
 
         :param volumes_gpssd: The volumes_gpssd of this QuotaList.
-        :type: QuotaDetailVolumesGPSSD
+        :type volumes_gpssd: :class:`huaweicloudsdkevs.v2.QuotaDetailVolumesGPSSD`
         """
         self._volumes_gpssd = volumes_gpssd
 
@@ -492,7 +533,7 @@ class QuotaList:
 
 
         :return: The per_volume_gigabytes of this QuotaList.
-        :rtype: QuotaDetailPerVolumeGigabytes
+        :rtype: :class:`huaweicloudsdkevs.v2.QuotaDetailPerVolumeGigabytes`
         """
         return self._per_volume_gigabytes
 
@@ -502,7 +543,7 @@ class QuotaList:
 
 
         :param per_volume_gigabytes: The per_volume_gigabytes of this QuotaList.
-        :type: QuotaDetailPerVolumeGigabytes
+        :type per_volume_gigabytes: :class:`huaweicloudsdkevs.v2.QuotaDetailPerVolumeGigabytes`
         """
         self._per_volume_gigabytes = per_volume_gigabytes
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DiscountItemV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DiscountItemV2:
     }
 
     def __init__(self, discount_type=None, discount_amount=None):
-        """DiscountItemV2 - a model defined in huaweicloud sdk"""
+        """DiscountItemV2
+
+        The model defined in huaweicloud sdk
+
+        :param discount_type: 折扣类型： 200：促销产品折扣300：促销折扣券301：促销代金券302：促销现金券500：代理订购指定折扣501：代理订购指定减免502：代理订购指定一口价600：折扣返利合同601：渠道框架合同602：专款专用合同603：线下直签合同604：电销授权合同605：商务合同折扣606：渠道商务合同折扣607：合作伙伴授权折扣609：订单调价折扣610：免单金额700：促销折扣800：充值帐户折扣900：产品本身折扣901：基准价一口价的折扣
+        :type discount_type: str
+        :param discount_amount: 折扣金额。
+        :type discount_amount: float
+        """
         
         
 
@@ -63,7 +70,7 @@ class DiscountItemV2:
         折扣类型： 200：促销产品折扣300：促销折扣券301：促销代金券302：促销现金券500：代理订购指定折扣501：代理订购指定减免502：代理订购指定一口价600：折扣返利合同601：渠道框架合同602：专款专用合同603：线下直签合同604：电销授权合同605：商务合同折扣606：渠道商务合同折扣607：合作伙伴授权折扣609：订单调价折扣610：免单金额700：促销折扣800：充值帐户折扣900：产品本身折扣901：基准价一口价的折扣
 
         :param discount_type: The discount_type of this DiscountItemV2.
-        :type: str
+        :type discount_type: str
         """
         self._discount_type = discount_type
 
@@ -85,7 +92,7 @@ class DiscountItemV2:
         折扣金额。
 
         :param discount_amount: The discount_amount of this DiscountItemV2.
-        :type: float
+        :type discount_amount: float
         """
         self._discount_amount = discount_amount
 

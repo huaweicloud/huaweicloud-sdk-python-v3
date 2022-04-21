@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TrackerConfigBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class TrackerConfigBody:
     }
 
     def __init__(self, channel=None, selector=None, agency_name=None):
-        """TrackerConfigBody - a model defined in huaweicloud sdk"""
+        """TrackerConfigBody
+
+        The model defined in huaweicloud sdk
+
+        :param channel: 
+        :type channel: :class:`huaweicloudsdkrms.v1.ChannelConfigBody`
+        :param selector: 
+        :type selector: :class:`huaweicloudsdkrms.v1.SelectorConfigBody`
+        :param agency_name: IAM委托名称
+        :type agency_name: str
+        """
         
         
 
@@ -53,7 +62,7 @@ class TrackerConfigBody:
 
 
         :return: The channel of this TrackerConfigBody.
-        :rtype: ChannelConfigBody
+        :rtype: :class:`huaweicloudsdkrms.v1.ChannelConfigBody`
         """
         return self._channel
 
@@ -63,7 +72,7 @@ class TrackerConfigBody:
 
 
         :param channel: The channel of this TrackerConfigBody.
-        :type: ChannelConfigBody
+        :type channel: :class:`huaweicloudsdkrms.v1.ChannelConfigBody`
         """
         self._channel = channel
 
@@ -73,7 +82,7 @@ class TrackerConfigBody:
 
 
         :return: The selector of this TrackerConfigBody.
-        :rtype: SelectorConfigBody
+        :rtype: :class:`huaweicloudsdkrms.v1.SelectorConfigBody`
         """
         return self._selector
 
@@ -83,7 +92,7 @@ class TrackerConfigBody:
 
 
         :param selector: The selector of this TrackerConfigBody.
-        :type: SelectorConfigBody
+        :type selector: :class:`huaweicloudsdkrms.v1.SelectorConfigBody`
         """
         self._selector = selector
 
@@ -105,7 +114,7 @@ class TrackerConfigBody:
         IAM委托名称
 
         :param agency_name: The agency_name of this TrackerConfigBody.
-        :type: str
+        :type agency_name: str
         """
         self._agency_name = agency_name
 

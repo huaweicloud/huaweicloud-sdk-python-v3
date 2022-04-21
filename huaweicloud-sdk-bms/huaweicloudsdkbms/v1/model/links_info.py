@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LinksInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class LinksInfo:
     }
 
     def __init__(self, rel=None, href=None, type=None):
-        """LinksInfo - a model defined in huaweicloud sdk"""
+        """LinksInfo
+
+        The model defined in huaweicloud sdk
+
+        :param rel: 快捷链接标记名称。取值为：self：包含版本号的资源链接，需要立即跟踪时使用此类链接。bookmark：提供了适合长期存储的资源链接。
+        :type rel: str
+        :param href: 对应快捷链接
+        :type href: str
+        :param type: 快捷链接类型
+        :type type: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class LinksInfo:
         快捷链接标记名称。取值为：self：包含版本号的资源链接，需要立即跟踪时使用此类链接。bookmark：提供了适合长期存储的资源链接。
 
         :param rel: The rel of this LinksInfo.
-        :type: str
+        :type rel: str
         """
         self._rel = rel
 
@@ -90,7 +99,7 @@ class LinksInfo:
         对应快捷链接
 
         :param href: The href of this LinksInfo.
-        :type: str
+        :type href: str
         """
         self._href = href
 
@@ -112,7 +121,7 @@ class LinksInfo:
         快捷链接类型
 
         :param type: The type of this LinksInfo.
-        :type: str
+        :type type: str
         """
         self._type = type
 

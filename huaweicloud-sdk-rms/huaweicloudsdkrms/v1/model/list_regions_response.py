@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRegionsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListRegionsResponse(SdkResponse):
     }
 
     def __init__(self, value=None):
-        """ListRegionsResponse - a model defined in huaweicloud sdk"""
+        """ListRegionsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param value: 区域信息项列表
+        :type value: list[:class:`huaweicloudsdkrms.v1.Region`]
+        """
         
         super(ListRegionsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListRegionsResponse(SdkResponse):
         区域信息项列表
 
         :return: The value of this ListRegionsResponse.
-        :rtype: list[Region]
+        :rtype: list[:class:`huaweicloudsdkrms.v1.Region`]
         """
         return self._value
 
@@ -58,7 +63,7 @@ class ListRegionsResponse(SdkResponse):
         区域信息项列表
 
         :param value: The value of this ListRegionsResponse.
-        :type: list[Region]
+        :type value: list[:class:`huaweicloudsdkrms.v1.Region`]
         """
         self._value = value
 

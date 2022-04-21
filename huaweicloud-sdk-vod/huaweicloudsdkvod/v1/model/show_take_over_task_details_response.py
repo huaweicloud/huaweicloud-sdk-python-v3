@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowTakeOverTaskDetailsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowTakeOverTaskDetailsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, task_id=None, task_status=None, assets=None):
-        """ShowTakeOverTaskDetailsResponse - a model defined in huaweicloud sdk"""
+        """ShowTakeOverTaskDetailsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 总数。
+        :type total: int
+        :param task_id: 任务ID。
+        :type task_id: str
+        :param task_status: 任务状态。
+        :type task_status: str
+        :param assets: 媒资信息。
+        :type assets: list[:class:`huaweicloudsdkvod.v1.AssetDetails`]
+        """
         
         super(ShowTakeOverTaskDetailsResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class ShowTakeOverTaskDetailsResponse(SdkResponse):
         总数。
 
         :param total: The total of this ShowTakeOverTaskDetailsResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -95,7 +106,7 @@ class ShowTakeOverTaskDetailsResponse(SdkResponse):
         任务ID。
 
         :param task_id: The task_id of this ShowTakeOverTaskDetailsResponse.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -117,7 +128,7 @@ class ShowTakeOverTaskDetailsResponse(SdkResponse):
         任务状态。
 
         :param task_status: The task_status of this ShowTakeOverTaskDetailsResponse.
-        :type: str
+        :type task_status: str
         """
         self._task_status = task_status
 
@@ -128,7 +139,7 @@ class ShowTakeOverTaskDetailsResponse(SdkResponse):
         媒资信息。
 
         :return: The assets of this ShowTakeOverTaskDetailsResponse.
-        :rtype: list[AssetDetails]
+        :rtype: list[:class:`huaweicloudsdkvod.v1.AssetDetails`]
         """
         return self._assets
 
@@ -139,7 +150,7 @@ class ShowTakeOverTaskDetailsResponse(SdkResponse):
         媒资信息。
 
         :param assets: The assets of this ShowTakeOverTaskDetailsResponse.
-        :type: list[AssetDetails]
+        :type assets: list[:class:`huaweicloudsdkvod.v1.AssetDetails`]
         """
         self._assets = assets
 

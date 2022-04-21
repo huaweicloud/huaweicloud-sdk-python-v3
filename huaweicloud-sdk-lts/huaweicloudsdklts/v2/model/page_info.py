@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PageInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class PageInfo:
     }
 
     def __init__(self, next_marker=None, previous_marker=None, current_count=None):
-        """PageInfo - a model defined in huaweicloud sdk"""
+        """PageInfo
+
+        The model defined in huaweicloud sdk
+
+        :param next_marker: 返回下一页查询地址(为空时，代表后面没有数据)
+        :type next_marker: str
+        :param previous_marker: 返回前一页查询地址
+        :type previous_marker: str
+        :param current_count: 本页返回条目数量
+        :type current_count: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class PageInfo:
         返回下一页查询地址(为空时，代表后面没有数据)
 
         :param next_marker: The next_marker of this PageInfo.
-        :type: str
+        :type next_marker: str
         """
         self._next_marker = next_marker
 
@@ -87,7 +96,7 @@ class PageInfo:
         返回前一页查询地址
 
         :param previous_marker: The previous_marker of this PageInfo.
-        :type: str
+        :type previous_marker: str
         """
         self._previous_marker = previous_marker
 
@@ -109,7 +118,7 @@ class PageInfo:
         本页返回条目数量
 
         :param current_count: The current_count of this PageInfo.
-        :type: str
+        :type current_count: str
         """
         self._current_count = current_count
 

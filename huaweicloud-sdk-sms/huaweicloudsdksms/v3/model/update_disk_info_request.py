@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDiskInfoRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateDiskInfoRequest:
     }
 
     def __init__(self, source_id=None, body=None):
-        """UpdateDiskInfoRequest - a model defined in huaweicloud sdk"""
+        """UpdateDiskInfoRequest
+
+        The model defined in huaweicloud sdk
+
+        :param source_id: 源端服务器id
+        :type source_id: str
+        :param body: Body of the UpdateDiskInfoRequest
+        :type body: :class:`huaweicloudsdksms.v3.PutDiskInfoReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateDiskInfoRequest:
         源端服务器id
 
         :param source_id: The source_id of this UpdateDiskInfoRequest.
-        :type: str
+        :type source_id: str
         """
         self._source_id = source_id
 
@@ -72,7 +79,7 @@ class UpdateDiskInfoRequest:
 
 
         :return: The body of this UpdateDiskInfoRequest.
-        :rtype: PutDiskInfoReq
+        :rtype: :class:`huaweicloudsdksms.v3.PutDiskInfoReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateDiskInfoRequest:
 
 
         :param body: The body of this UpdateDiskInfoRequest.
-        :type: PutDiskInfoReq
+        :type body: :class:`huaweicloudsdksms.v3.PutDiskInfoReq`
         """
         self._body = body
 

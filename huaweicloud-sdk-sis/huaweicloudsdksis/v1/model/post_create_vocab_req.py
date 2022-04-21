@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PostCreateVocabReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class PostCreateVocabReq:
     }
 
     def __init__(self, name=None, description=None, language=None, contents=None):
-        """PostCreateVocabReq - a model defined in huaweicloud sdk"""
+        """PostCreateVocabReq
+
+        The model defined in huaweicloud sdk
+
+        :param name: 热词表名，不可重复。内容限制为字母，数字，下中划线和井号，长度不超过32字节。
+        :type name: str
+        :param description: 热词表描述，长度不超过255字节。
+        :type description: str
+        :param language: 热词表语言类型。  language取值范围： chinese_mandarin  汉语普通话
+        :type language: str
+        :param contents: 支持中英混编热词，单个热词只能由英文字母和unicode编码的汉字组成，不能有其他符号，包括空格。 阿拉伯数字需写成汉字或英文（如“一”、“one”）。  单词库支持热词数上限1024。 单个热词长度上限32字节。
+        :type contents: list[str]
+        """
         
         
 
@@ -70,7 +81,7 @@ class PostCreateVocabReq:
         热词表名，不可重复。内容限制为字母，数字，下中划线和井号，长度不超过32字节。
 
         :param name: The name of this PostCreateVocabReq.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -92,7 +103,7 @@ class PostCreateVocabReq:
         热词表描述，长度不超过255字节。
 
         :param description: The description of this PostCreateVocabReq.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -114,7 +125,7 @@ class PostCreateVocabReq:
         热词表语言类型。  language取值范围： chinese_mandarin  汉语普通话
 
         :param language: The language of this PostCreateVocabReq.
-        :type: str
+        :type language: str
         """
         self._language = language
 
@@ -136,7 +147,7 @@ class PostCreateVocabReq:
         支持中英混编热词，单个热词只能由英文字母和unicode编码的汉字组成，不能有其他符号，包括空格。 阿拉伯数字需写成汉字或英文（如“一”、“one”）。  单词库支持热词数上限1024。 单个热词长度上限32字节。
 
         :param contents: The contents of this PostCreateVocabReq.
-        :type: list[str]
+        :type contents: list[str]
         """
         self._contents = contents
 

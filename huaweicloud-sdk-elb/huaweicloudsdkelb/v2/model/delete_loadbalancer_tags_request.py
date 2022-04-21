@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteLoadbalancerTagsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteLoadbalancerTagsRequest:
     }
 
     def __init__(self, loadbalancer_id=None, key=None):
-        """DeleteLoadbalancerTagsRequest - a model defined in huaweicloud sdk"""
+        """DeleteLoadbalancerTagsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param loadbalancer_id: 负载均衡器ID。
+        :type loadbalancer_id: str
+        :param key: 待删除标签的key值
+        :type key: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class DeleteLoadbalancerTagsRequest:
         负载均衡器ID。
 
         :param loadbalancer_id: The loadbalancer_id of this DeleteLoadbalancerTagsRequest.
-        :type: str
+        :type loadbalancer_id: str
         """
         self._loadbalancer_id = loadbalancer_id
 
@@ -83,7 +90,7 @@ class DeleteLoadbalancerTagsRequest:
         待删除标签的key值
 
         :param key: The key of this DeleteLoadbalancerTagsRequest.
-        :type: str
+        :type key: str
         """
         self._key = key
 

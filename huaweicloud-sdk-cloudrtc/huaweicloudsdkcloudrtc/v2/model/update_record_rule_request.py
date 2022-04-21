@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateRecordRuleRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class UpdateRecordRuleRequest:
     }
 
     def __init__(self, content_type=None, authorization=None, x_sdk_date=None, x_project_id=None, app_id=None, rule_id=None, body=None):
-        """UpdateRecordRuleRequest - a model defined in huaweicloud sdk"""
+        """UpdateRecordRuleRequest
+
+        The model defined in huaweicloud sdk
+
+        :param content_type: 内容类型。
+        :type content_type: str
+        :param authorization: 使用AK/SK方式认证时必选，携带的鉴权信息。
+        :type authorization: str
+        :param x_sdk_date: 使用AK/SK方式认证时必选，请求的发生时间。
+        :type x_sdk_date: str
+        :param x_project_id: 使用AK/SK方式认证时必选，携带项目ID信息。
+        :type x_project_id: str
+        :param app_id: 应用id
+        :type app_id: str
+        :param rule_id: 规则id
+        :type rule_id: str
+        :param body: Body of the UpdateRecordRuleRequest
+        :type body: :class:`huaweicloudsdkcloudrtc.v2.RecordRuleReq`
+        """
         
         
 
@@ -85,7 +102,7 @@ class UpdateRecordRuleRequest:
         内容类型。
 
         :param content_type: The content_type of this UpdateRecordRuleRequest.
-        :type: str
+        :type content_type: str
         """
         self._content_type = content_type
 
@@ -107,7 +124,7 @@ class UpdateRecordRuleRequest:
         使用AK/SK方式认证时必选，携带的鉴权信息。
 
         :param authorization: The authorization of this UpdateRecordRuleRequest.
-        :type: str
+        :type authorization: str
         """
         self._authorization = authorization
 
@@ -129,7 +146,7 @@ class UpdateRecordRuleRequest:
         使用AK/SK方式认证时必选，请求的发生时间。
 
         :param x_sdk_date: The x_sdk_date of this UpdateRecordRuleRequest.
-        :type: str
+        :type x_sdk_date: str
         """
         self._x_sdk_date = x_sdk_date
 
@@ -151,7 +168,7 @@ class UpdateRecordRuleRequest:
         使用AK/SK方式认证时必选，携带项目ID信息。
 
         :param x_project_id: The x_project_id of this UpdateRecordRuleRequest.
-        :type: str
+        :type x_project_id: str
         """
         self._x_project_id = x_project_id
 
@@ -173,7 +190,7 @@ class UpdateRecordRuleRequest:
         应用id
 
         :param app_id: The app_id of this UpdateRecordRuleRequest.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -195,7 +212,7 @@ class UpdateRecordRuleRequest:
         规则id
 
         :param rule_id: The rule_id of this UpdateRecordRuleRequest.
-        :type: str
+        :type rule_id: str
         """
         self._rule_id = rule_id
 
@@ -205,7 +222,7 @@ class UpdateRecordRuleRequest:
 
 
         :return: The body of this UpdateRecordRuleRequest.
-        :rtype: RecordRuleReq
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.RecordRuleReq`
         """
         return self._body
 
@@ -215,7 +232,7 @@ class UpdateRecordRuleRequest:
 
 
         :param body: The body of this UpdateRecordRuleRequest.
-        :type: RecordRuleReq
+        :type body: :class:`huaweicloudsdkcloudrtc.v2.RecordRuleReq`
         """
         self._body = body
 

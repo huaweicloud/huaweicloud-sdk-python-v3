@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowHisMeetingDetailResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowHisMeetingDetailResponse(SdkResponse):
     }
 
     def __init__(self, conference_data=None, data=None):
-        """ShowHisMeetingDetailResponse - a model defined in huaweicloud sdk"""
+        """ShowHisMeetingDetailResponse
+
+        The model defined in huaweicloud sdk
+
+        :param conference_data: 
+        :type conference_data: :class:`huaweicloudsdkmeeting.v1.ConferenceInfo`
+        :param data: 
+        :type data: :class:`huaweicloudsdkmeeting.v1.PageParticipant`
+        """
         
         super(ShowHisMeetingDetailResponse, self).__init__()
 
@@ -51,7 +58,7 @@ class ShowHisMeetingDetailResponse(SdkResponse):
 
 
         :return: The conference_data of this ShowHisMeetingDetailResponse.
-        :rtype: ConferenceInfo
+        :rtype: :class:`huaweicloudsdkmeeting.v1.ConferenceInfo`
         """
         return self._conference_data
 
@@ -61,7 +68,7 @@ class ShowHisMeetingDetailResponse(SdkResponse):
 
 
         :param conference_data: The conference_data of this ShowHisMeetingDetailResponse.
-        :type: ConferenceInfo
+        :type conference_data: :class:`huaweicloudsdkmeeting.v1.ConferenceInfo`
         """
         self._conference_data = conference_data
 
@@ -71,7 +78,7 @@ class ShowHisMeetingDetailResponse(SdkResponse):
 
 
         :return: The data of this ShowHisMeetingDetailResponse.
-        :rtype: PageParticipant
+        :rtype: :class:`huaweicloudsdkmeeting.v1.PageParticipant`
         """
         return self._data
 
@@ -81,7 +88,7 @@ class ShowHisMeetingDetailResponse(SdkResponse):
 
 
         :param data: The data of this ShowHisMeetingDetailResponse.
-        :type: PageParticipant
+        :type data: :class:`huaweicloudsdkmeeting.v1.PageParticipant`
         """
         self._data = data
 

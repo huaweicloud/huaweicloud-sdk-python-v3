@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class JobSpec:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class JobSpec:
     }
 
     def __init__(self, type=None, cluster_uid=None, resource_id=None, resource_name=None, extend_param=None, sub_jobs=None):
-        """JobSpec - a model defined in huaweicloud sdk"""
+        """JobSpec
+
+        The model defined in huaweicloud sdk
+
+        :param type: 任务的类型，例：“CreateCluster”- 创建集群。
+        :type type: str
+        :param cluster_uid: 任务所在的集群的ID。
+        :type cluster_uid: str
+        :param resource_id: 任务操作的资源ID。
+        :type resource_id: str
+        :param resource_name: 任务操作的资源名称。
+        :type resource_name: str
+        :param extend_param: 扩展参数。
+        :type extend_param: dict(str, str)
+        :param sub_jobs: 子任务的列表。  - 包含了所有子任务的详细信息 - 在创建集群、节点等场景下，通常会由多个子任务共同组成创建任务，在子任务都完成后，任务才会完成 
+        :type sub_jobs: list[:class:`huaweicloudsdkcce.v3.Job`]
+        """
         
         
 
@@ -83,7 +98,7 @@ class JobSpec:
         任务的类型，例：“CreateCluster”- 创建集群。
 
         :param type: The type of this JobSpec.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -105,7 +120,7 @@ class JobSpec:
         任务所在的集群的ID。
 
         :param cluster_uid: The cluster_uid of this JobSpec.
-        :type: str
+        :type cluster_uid: str
         """
         self._cluster_uid = cluster_uid
 
@@ -127,7 +142,7 @@ class JobSpec:
         任务操作的资源ID。
 
         :param resource_id: The resource_id of this JobSpec.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -149,7 +164,7 @@ class JobSpec:
         任务操作的资源名称。
 
         :param resource_name: The resource_name of this JobSpec.
-        :type: str
+        :type resource_name: str
         """
         self._resource_name = resource_name
 
@@ -171,7 +186,7 @@ class JobSpec:
         扩展参数。
 
         :param extend_param: The extend_param of this JobSpec.
-        :type: dict(str, str)
+        :type extend_param: dict(str, str)
         """
         self._extend_param = extend_param
 
@@ -182,7 +197,7 @@ class JobSpec:
         子任务的列表。  - 包含了所有子任务的详细信息 - 在创建集群、节点等场景下，通常会由多个子任务共同组成创建任务，在子任务都完成后，任务才会完成 
 
         :return: The sub_jobs of this JobSpec.
-        :rtype: list[Job]
+        :rtype: list[:class:`huaweicloudsdkcce.v3.Job`]
         """
         return self._sub_jobs
 
@@ -193,7 +208,7 @@ class JobSpec:
         子任务的列表。  - 包含了所有子任务的详细信息 - 在创建集群、节点等场景下，通常会由多个子任务共同组成创建任务，在子任务都完成后，任务才会完成 
 
         :param sub_jobs: The sub_jobs of this JobSpec.
-        :type: list[Job]
+        :type sub_jobs: list[:class:`huaweicloudsdkcce.v3.Job`]
         """
         self._sub_jobs = sub_jobs
 

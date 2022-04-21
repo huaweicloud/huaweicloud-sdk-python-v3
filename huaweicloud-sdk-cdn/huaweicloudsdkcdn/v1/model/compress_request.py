@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CompressRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CompressRequest:
     }
 
     def __init__(self, compress_switch=None):
-        """CompressRequest - a model defined in huaweicloud sdk"""
+        """CompressRequest
+
+        The model defined in huaweicloud sdk
+
+        :param compress_switch: GZIP压缩开关。0关闭。1打开
+        :type compress_switch: int
+        """
         
         
 
@@ -58,7 +63,7 @@ class CompressRequest:
         GZIP压缩开关。0关闭。1打开
 
         :param compress_switch: The compress_switch of this CompressRequest.
-        :type: int
+        :type compress_switch: int
         """
         self._compress_switch = compress_switch
 

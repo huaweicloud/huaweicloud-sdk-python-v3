@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowPolicyAssignmentResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class ShowPolicyAssignmentResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, policy_filter=None, state=None, created=None, updated=None, policy_definition_id=None, parameters=None):
-        """ShowPolicyAssignmentResponse - a model defined in huaweicloud sdk"""
+        """ShowPolicyAssignmentResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 规则ID
+        :type id: str
+        :param name: 规则名字
+        :type name: str
+        :param description: 规则描述
+        :type description: str
+        :param policy_filter: 
+        :type policy_filter: :class:`huaweicloudsdkrms.v1.PolicyFilterDefinition`
+        :param state: 规则状态
+        :type state: str
+        :param created: 规则创建时间
+        :type created: str
+        :param updated: 规则更新时间
+        :type updated: str
+        :param policy_definition_id: 规则的策略ID
+        :type policy_definition_id: str
+        :param parameters: 规则参数
+        :type parameters: dict(str, PolicyParameterValue)
+        """
         
         super(ShowPolicyAssignmentResponse, self).__init__()
 
@@ -98,7 +119,7 @@ class ShowPolicyAssignmentResponse(SdkResponse):
         规则ID
 
         :param id: The id of this ShowPolicyAssignmentResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -120,7 +141,7 @@ class ShowPolicyAssignmentResponse(SdkResponse):
         规则名字
 
         :param name: The name of this ShowPolicyAssignmentResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -142,7 +163,7 @@ class ShowPolicyAssignmentResponse(SdkResponse):
         规则描述
 
         :param description: The description of this ShowPolicyAssignmentResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -152,7 +173,7 @@ class ShowPolicyAssignmentResponse(SdkResponse):
 
 
         :return: The policy_filter of this ShowPolicyAssignmentResponse.
-        :rtype: PolicyFilterDefinition
+        :rtype: :class:`huaweicloudsdkrms.v1.PolicyFilterDefinition`
         """
         return self._policy_filter
 
@@ -162,7 +183,7 @@ class ShowPolicyAssignmentResponse(SdkResponse):
 
 
         :param policy_filter: The policy_filter of this ShowPolicyAssignmentResponse.
-        :type: PolicyFilterDefinition
+        :type policy_filter: :class:`huaweicloudsdkrms.v1.PolicyFilterDefinition`
         """
         self._policy_filter = policy_filter
 
@@ -184,7 +205,7 @@ class ShowPolicyAssignmentResponse(SdkResponse):
         规则状态
 
         :param state: The state of this ShowPolicyAssignmentResponse.
-        :type: str
+        :type state: str
         """
         self._state = state
 
@@ -206,7 +227,7 @@ class ShowPolicyAssignmentResponse(SdkResponse):
         规则创建时间
 
         :param created: The created of this ShowPolicyAssignmentResponse.
-        :type: str
+        :type created: str
         """
         self._created = created
 
@@ -228,7 +249,7 @@ class ShowPolicyAssignmentResponse(SdkResponse):
         规则更新时间
 
         :param updated: The updated of this ShowPolicyAssignmentResponse.
-        :type: str
+        :type updated: str
         """
         self._updated = updated
 
@@ -250,7 +271,7 @@ class ShowPolicyAssignmentResponse(SdkResponse):
         规则的策略ID
 
         :param policy_definition_id: The policy_definition_id of this ShowPolicyAssignmentResponse.
-        :type: str
+        :type policy_definition_id: str
         """
         self._policy_definition_id = policy_definition_id
 
@@ -272,7 +293,7 @@ class ShowPolicyAssignmentResponse(SdkResponse):
         规则参数
 
         :param parameters: The parameters of this ShowPolicyAssignmentResponse.
-        :type: dict(str, PolicyParameterValue)
+        :type parameters: dict(str, PolicyParameterValue)
         """
         self._parameters = parameters
 

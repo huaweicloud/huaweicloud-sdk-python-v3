@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ReplicationAttachment:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ReplicationAttachment:
     }
 
     def __init__(self, protected_instance=None, device=None):
-        """ReplicationAttachment - a model defined in huaweicloud sdk"""
+        """ReplicationAttachment
+
+        The model defined in huaweicloud sdk
+
+        :param protected_instance: 该复制对挂载的保护实例ID。
+        :type protected_instance: str
+        :param device: 挂载点。
+        :type device: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ReplicationAttachment:
         该复制对挂载的保护实例ID。
 
         :param protected_instance: The protected_instance of this ReplicationAttachment.
-        :type: str
+        :type protected_instance: str
         """
         self._protected_instance = protected_instance
 
@@ -83,7 +90,7 @@ class ReplicationAttachment:
         挂载点。
 
         :param device: The device of this ReplicationAttachment.
-        :type: str
+        :type device: str
         """
         self._device = device
 

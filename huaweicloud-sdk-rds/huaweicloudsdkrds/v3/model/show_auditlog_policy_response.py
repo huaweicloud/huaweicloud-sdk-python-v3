@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowAuditlogPolicyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowAuditlogPolicyResponse(SdkResponse):
     }
 
     def __init__(self, keep_days=None):
-        """ShowAuditlogPolicyResponse - a model defined in huaweicloud sdk"""
+        """ShowAuditlogPolicyResponse
+
+        The model defined in huaweicloud sdk
+
+        :param keep_days: 审计日志保存天数，取值范围0~732。0表示关闭审计日志策略。
+        :type keep_days: int
+        """
         
         super(ShowAuditlogPolicyResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class ShowAuditlogPolicyResponse(SdkResponse):
         审计日志保存天数，取值范围0~732。0表示关闭审计日志策略。
 
         :param keep_days: The keep_days of this ShowAuditlogPolicyResponse.
-        :type: int
+        :type keep_days: int
         """
         self._keep_days = keep_days
 

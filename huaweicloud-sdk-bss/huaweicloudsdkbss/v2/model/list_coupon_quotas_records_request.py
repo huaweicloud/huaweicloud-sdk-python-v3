@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCouponQuotasRecordsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ListCouponQuotasRecordsRequest:
     }
 
     def __init__(self, indirect_partner_id=None, quota_id=None, operation_time_begin=None, operation_time_end=None, parent_quota_id=None, operation_type=None, offset=None, limit=None):
-        """ListCouponQuotasRecordsRequest - a model defined in huaweicloud sdk"""
+        """ListCouponQuotasRecordsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param indirect_partner_id: 精英服务商ID。获取方法请参见查询精英服务商列表。为空表示查询所有的代金券额度发放回收记录。不为空表示仅查询与该精英服务商相关的代金券额度发放回收记录。默认查询所有精英服务商的代金券额度发放回收记录。
+        :type indirect_partner_id: str
+        :param quota_id: 精英服务商的代金券额度ID。获取方法请参见查询优惠券额度。即华为云伙伴能力中心给精英服务商发放代金券额度时，产生的精英服务商的代金券额度ID，或者从精英服务商回收代金券额度时，精英服务商的代金券额度ID。
+        :type quota_id: str
+        :param operation_time_begin: 查询条件：操作起始时间。UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。
+        :type operation_time_begin: str
+        :param operation_time_end: 查询条件：操作截止时间。UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。
+        :type operation_time_end: str
+        :param parent_quota_id: 父额度ID。这即华为云伙伴能力中心给精英服务商发放代金券额度时，华为云伙伴能力中心的额度ID，或者从精英服务商回收代金券额度时，回收的华为云伙伴能力中心的额度ID。
+        :type parent_quota_id: str
+        :param operation_type: 操作类型。10：发放额度11：回收额度
+        :type operation_type: str
+        :param offset: 偏移量，从0开始，默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset &#x3D; 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
+        :type offset: int
+        :param limit: 每次查询的数目。默认值为10。
+        :type limit: int
+        """
         
         
 
@@ -93,7 +112,7 @@ class ListCouponQuotasRecordsRequest:
         精英服务商ID。获取方法请参见查询精英服务商列表。为空表示查询所有的代金券额度发放回收记录。不为空表示仅查询与该精英服务商相关的代金券额度发放回收记录。默认查询所有精英服务商的代金券额度发放回收记录。
 
         :param indirect_partner_id: The indirect_partner_id of this ListCouponQuotasRecordsRequest.
-        :type: str
+        :type indirect_partner_id: str
         """
         self._indirect_partner_id = indirect_partner_id
 
@@ -115,7 +134,7 @@ class ListCouponQuotasRecordsRequest:
         精英服务商的代金券额度ID。获取方法请参见查询优惠券额度。即华为云伙伴能力中心给精英服务商发放代金券额度时，产生的精英服务商的代金券额度ID，或者从精英服务商回收代金券额度时，精英服务商的代金券额度ID。
 
         :param quota_id: The quota_id of this ListCouponQuotasRecordsRequest.
-        :type: str
+        :type quota_id: str
         """
         self._quota_id = quota_id
 
@@ -137,7 +156,7 @@ class ListCouponQuotasRecordsRequest:
         查询条件：操作起始时间。UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。
 
         :param operation_time_begin: The operation_time_begin of this ListCouponQuotasRecordsRequest.
-        :type: str
+        :type operation_time_begin: str
         """
         self._operation_time_begin = operation_time_begin
 
@@ -159,7 +178,7 @@ class ListCouponQuotasRecordsRequest:
         查询条件：操作截止时间。UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。
 
         :param operation_time_end: The operation_time_end of this ListCouponQuotasRecordsRequest.
-        :type: str
+        :type operation_time_end: str
         """
         self._operation_time_end = operation_time_end
 
@@ -181,7 +200,7 @@ class ListCouponQuotasRecordsRequest:
         父额度ID。这即华为云伙伴能力中心给精英服务商发放代金券额度时，华为云伙伴能力中心的额度ID，或者从精英服务商回收代金券额度时，回收的华为云伙伴能力中心的额度ID。
 
         :param parent_quota_id: The parent_quota_id of this ListCouponQuotasRecordsRequest.
-        :type: str
+        :type parent_quota_id: str
         """
         self._parent_quota_id = parent_quota_id
 
@@ -203,7 +222,7 @@ class ListCouponQuotasRecordsRequest:
         操作类型。10：发放额度11：回收额度
 
         :param operation_type: The operation_type of this ListCouponQuotasRecordsRequest.
-        :type: str
+        :type operation_type: str
         """
         self._operation_type = operation_type
 
@@ -225,7 +244,7 @@ class ListCouponQuotasRecordsRequest:
         偏移量，从0开始，默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
         :param offset: The offset of this ListCouponQuotasRecordsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -247,7 +266,7 @@ class ListCouponQuotasRecordsRequest:
         每次查询的数目。默认值为10。
 
         :param limit: The limit of this ListCouponQuotasRecordsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

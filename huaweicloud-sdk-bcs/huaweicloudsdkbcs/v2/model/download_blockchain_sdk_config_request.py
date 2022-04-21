@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DownloadBlockchainSdkConfigRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DownloadBlockchainSdkConfigRequest:
     }
 
     def __init__(self, blockchain_id=None, body=None):
-        """DownloadBlockchainSdkConfigRequest - a model defined in huaweicloud sdk"""
+        """DownloadBlockchainSdkConfigRequest
+
+        The model defined in huaweicloud sdk
+
+        :param blockchain_id: blockchainID
+        :type blockchain_id: str
+        :param body: Body of the DownloadBlockchainSdkConfigRequest
+        :type body: :class:`huaweicloudsdkbcs.v2.CfgRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class DownloadBlockchainSdkConfigRequest:
         blockchainID
 
         :param blockchain_id: The blockchain_id of this DownloadBlockchainSdkConfigRequest.
-        :type: str
+        :type blockchain_id: str
         """
         self._blockchain_id = blockchain_id
 
@@ -72,7 +79,7 @@ class DownloadBlockchainSdkConfigRequest:
 
 
         :return: The body of this DownloadBlockchainSdkConfigRequest.
-        :rtype: CfgRequestBody
+        :rtype: :class:`huaweicloudsdkbcs.v2.CfgRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class DownloadBlockchainSdkConfigRequest:
 
 
         :param body: The body of this DownloadBlockchainSdkConfigRequest.
-        :type: CfgRequestBody
+        :type body: :class:`huaweicloudsdkbcs.v2.CfgRequestBody`
         """
         self._body = body
 

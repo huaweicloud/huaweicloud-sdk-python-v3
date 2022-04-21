@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MultiConcatInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class MultiConcatInfo:
     }
 
     def __init__(self, inputs=None, trans_template_ids=None, av_parameters=None, output=None, image_watermark_settings=None):
-        """MultiConcatInfo - a model defined in huaweicloud sdk"""
+        """MultiConcatInfo
+
+        The model defined in huaweicloud sdk
+
+        :param inputs: 拼接任务输入源地址。
+        :type inputs: list[:class:`huaweicloudsdkmpc.v1.ObsObjInfo`]
+        :param trans_template_ids: 拼接完成后转码对应的转码模板ID 
+        :type trans_template_ids: list[int]
+        :param av_parameters: 转码参数。 设置“trans_template_id”和此参数，则优先使用此参数进行转码。 
+        :type av_parameters: list[:class:`huaweicloudsdkmpc.v1.AvParameters`]
+        :param output: 
+        :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        :param image_watermark_settings: 水印信息。
+        :type image_watermark_settings: list[:class:`huaweicloudsdkmpc.v1.ImageWatermarkSetting`]
+        """
         
         
 
@@ -65,7 +78,7 @@ class MultiConcatInfo:
         拼接任务输入源地址。
 
         :return: The inputs of this MultiConcatInfo.
-        :rtype: list[ObsObjInfo]
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.ObsObjInfo`]
         """
         return self._inputs
 
@@ -76,7 +89,7 @@ class MultiConcatInfo:
         拼接任务输入源地址。
 
         :param inputs: The inputs of this MultiConcatInfo.
-        :type: list[ObsObjInfo]
+        :type inputs: list[:class:`huaweicloudsdkmpc.v1.ObsObjInfo`]
         """
         self._inputs = inputs
 
@@ -98,7 +111,7 @@ class MultiConcatInfo:
         拼接完成后转码对应的转码模板ID 
 
         :param trans_template_ids: The trans_template_ids of this MultiConcatInfo.
-        :type: list[int]
+        :type trans_template_ids: list[int]
         """
         self._trans_template_ids = trans_template_ids
 
@@ -109,7 +122,7 @@ class MultiConcatInfo:
         转码参数。 设置“trans_template_id”和此参数，则优先使用此参数进行转码。 
 
         :return: The av_parameters of this MultiConcatInfo.
-        :rtype: list[AvParameters]
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.AvParameters`]
         """
         return self._av_parameters
 
@@ -120,7 +133,7 @@ class MultiConcatInfo:
         转码参数。 设置“trans_template_id”和此参数，则优先使用此参数进行转码。 
 
         :param av_parameters: The av_parameters of this MultiConcatInfo.
-        :type: list[AvParameters]
+        :type av_parameters: list[:class:`huaweicloudsdkmpc.v1.AvParameters`]
         """
         self._av_parameters = av_parameters
 
@@ -130,7 +143,7 @@ class MultiConcatInfo:
 
 
         :return: The output of this MultiConcatInfo.
-        :rtype: ObsObjInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         return self._output
 
@@ -140,7 +153,7 @@ class MultiConcatInfo:
 
 
         :param output: The output of this MultiConcatInfo.
-        :type: ObsObjInfo
+        :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         self._output = output
 
@@ -151,7 +164,7 @@ class MultiConcatInfo:
         水印信息。
 
         :return: The image_watermark_settings of this MultiConcatInfo.
-        :rtype: list[ImageWatermarkSetting]
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.ImageWatermarkSetting`]
         """
         return self._image_watermark_settings
 
@@ -162,7 +175,7 @@ class MultiConcatInfo:
         水印信息。
 
         :param image_watermark_settings: The image_watermark_settings of this MultiConcatInfo.
-        :type: list[ImageWatermarkSetting]
+        :type image_watermark_settings: list[:class:`huaweicloudsdkmpc.v1.ImageWatermarkSetting`]
         """
         self._image_watermark_settings = image_watermark_settings
 

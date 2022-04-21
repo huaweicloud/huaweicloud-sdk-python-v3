@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAclPolicyBindedToApiV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ListAclPolicyBindedToApiV2Request:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, api_id=None, env_id=None, env_name=None, acl_id=None, acl_name=None):
-        """ListAclPolicyBindedToApiV2Request - a model defined in huaweicloud sdk"""
+        """ListAclPolicyBindedToApiV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param offset: 偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
+        :type offset: int
+        :param limit: 每页显示的条目数量
+        :type limit: int
+        :param api_id: API编号
+        :type api_id: str
+        :param env_id: 环境编号
+        :type env_id: str
+        :param env_name: 环境名称
+        :type env_name: str
+        :param acl_id: ACL策略编号
+        :type acl_id: str
+        :param acl_name: ACL策略名称
+        :type acl_name: str
+        """
         
         
 
@@ -91,7 +110,7 @@ class ListAclPolicyBindedToApiV2Request:
         实例ID
 
         :param instance_id: The instance_id of this ListAclPolicyBindedToApiV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -113,7 +132,7 @@ class ListAclPolicyBindedToApiV2Request:
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
         :param offset: The offset of this ListAclPolicyBindedToApiV2Request.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -135,7 +154,7 @@ class ListAclPolicyBindedToApiV2Request:
         每页显示的条目数量
 
         :param limit: The limit of this ListAclPolicyBindedToApiV2Request.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -157,7 +176,7 @@ class ListAclPolicyBindedToApiV2Request:
         API编号
 
         :param api_id: The api_id of this ListAclPolicyBindedToApiV2Request.
-        :type: str
+        :type api_id: str
         """
         self._api_id = api_id
 
@@ -179,7 +198,7 @@ class ListAclPolicyBindedToApiV2Request:
         环境编号
 
         :param env_id: The env_id of this ListAclPolicyBindedToApiV2Request.
-        :type: str
+        :type env_id: str
         """
         self._env_id = env_id
 
@@ -201,7 +220,7 @@ class ListAclPolicyBindedToApiV2Request:
         环境名称
 
         :param env_name: The env_name of this ListAclPolicyBindedToApiV2Request.
-        :type: str
+        :type env_name: str
         """
         self._env_name = env_name
 
@@ -223,7 +242,7 @@ class ListAclPolicyBindedToApiV2Request:
         ACL策略编号
 
         :param acl_id: The acl_id of this ListAclPolicyBindedToApiV2Request.
-        :type: str
+        :type acl_id: str
         """
         self._acl_id = acl_id
 
@@ -245,7 +264,7 @@ class ListAclPolicyBindedToApiV2Request:
         ACL策略名称
 
         :param acl_name: The acl_name of this ListAclPolicyBindedToApiV2Request.
-        :type: str
+        :type acl_name: str
         """
         self._acl_name = acl_name
 

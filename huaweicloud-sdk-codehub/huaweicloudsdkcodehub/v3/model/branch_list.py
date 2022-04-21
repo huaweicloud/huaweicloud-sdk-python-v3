@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BranchList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BranchList:
     }
 
     def __init__(self, branches=None, total=None):
-        """BranchList - a model defined in huaweicloud sdk"""
+        """BranchList
+
+        The model defined in huaweicloud sdk
+
+        :param branches: 指定仓库的分支列表
+        :type branches: list[:class:`huaweicloudsdkcodehub.v3.Branch`]
+        :param total: 指定仓库的分支总数
+        :type total: int
+        """
         
         
 
@@ -52,7 +59,7 @@ class BranchList:
         指定仓库的分支列表
 
         :return: The branches of this BranchList.
-        :rtype: list[Branch]
+        :rtype: list[:class:`huaweicloudsdkcodehub.v3.Branch`]
         """
         return self._branches
 
@@ -63,7 +70,7 @@ class BranchList:
         指定仓库的分支列表
 
         :param branches: The branches of this BranchList.
-        :type: list[Branch]
+        :type branches: list[:class:`huaweicloudsdkcodehub.v3.Branch`]
         """
         self._branches = branches
 
@@ -85,7 +92,7 @@ class BranchList:
         指定仓库的分支总数
 
         :param total: The total of this BranchList.
-        :type: int
+        :type total: int
         """
         self._total = total
 

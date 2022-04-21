@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class HlsEncrypt:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class HlsEncrypt:
     }
 
     def __init__(self, key=None, url=None, iv=None, algorithm=None):
-        """HlsEncrypt - a model defined in huaweicloud sdk"""
+        """HlsEncrypt
+
+        The model defined in huaweicloud sdk
+
+        :param key: 内容加密秘钥 
+        :type key: str
+        :param url: 秘钥获取服务的地址 
+        :type url: str
+        :param iv: 初始向量，base64binary，随机数 
+        :type iv: str
+        :param algorithm: 加密算法。 - AES-128-CTR - AES-128-CBC - SM4CBC  默认值：AES-128-CTR 
+        :type algorithm: str
+        """
         
         
 
@@ -71,7 +82,7 @@ class HlsEncrypt:
         内容加密秘钥 
 
         :param key: The key of this HlsEncrypt.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -93,7 +104,7 @@ class HlsEncrypt:
         秘钥获取服务的地址 
 
         :param url: The url of this HlsEncrypt.
-        :type: str
+        :type url: str
         """
         self._url = url
 
@@ -115,7 +126,7 @@ class HlsEncrypt:
         初始向量，base64binary，随机数 
 
         :param iv: The iv of this HlsEncrypt.
-        :type: str
+        :type iv: str
         """
         self._iv = iv
 
@@ -137,7 +148,7 @@ class HlsEncrypt:
         加密算法。 - AES-128-CTR - AES-128-CBC - SM4CBC  默认值：AES-128-CTR 
 
         :param algorithm: The algorithm of this HlsEncrypt.
-        :type: str
+        :type algorithm: str
         """
         self._algorithm = algorithm
 

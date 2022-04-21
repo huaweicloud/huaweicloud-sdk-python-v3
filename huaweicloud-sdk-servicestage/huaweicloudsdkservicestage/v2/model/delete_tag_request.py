@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteTagRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class DeleteTagRequest:
     }
 
     def __init__(self, x_repo_auth=None, namespace=None, project=None, tag_name=None):
-        """DeleteTagRequest - a model defined in huaweicloud sdk"""
+        """DeleteTagRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_repo_auth: 授权名称。
+        :type x_repo_auth: str
+        :param namespace: 组织ID。
+        :type namespace: str
+        :param project: 仓库项目ID，如果含有“/”，需要将“/”替换为“:”。
+        :type project: str
+        :param tag_name: tag标签名称。
+        :type tag_name: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class DeleteTagRequest:
         授权名称。
 
         :param x_repo_auth: The x_repo_auth of this DeleteTagRequest.
-        :type: str
+        :type x_repo_auth: str
         """
         self._x_repo_auth = x_repo_auth
 
@@ -91,7 +102,7 @@ class DeleteTagRequest:
         组织ID。
 
         :param namespace: The namespace of this DeleteTagRequest.
-        :type: str
+        :type namespace: str
         """
         self._namespace = namespace
 
@@ -113,7 +124,7 @@ class DeleteTagRequest:
         仓库项目ID，如果含有“/”，需要将“/”替换为“:”。
 
         :param project: The project of this DeleteTagRequest.
-        :type: str
+        :type project: str
         """
         self._project = project
 
@@ -135,7 +146,7 @@ class DeleteTagRequest:
         tag标签名称。
 
         :param tag_name: The tag_name of this DeleteTagRequest.
-        :type: str
+        :type tag_name: str
         """
         self._tag_name = tag_name
 

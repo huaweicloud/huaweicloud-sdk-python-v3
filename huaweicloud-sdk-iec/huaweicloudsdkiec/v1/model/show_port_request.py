@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowPortRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowPortRequest:
     }
 
     def __init__(self, port_id=None):
-        """ShowPortRequest - a model defined in huaweicloud sdk"""
+        """ShowPortRequest
+
+        The model defined in huaweicloud sdk
+
+        :param port_id: 端口ID。
+        :type port_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowPortRequest:
         端口ID。
 
         :param port_id: The port_id of this ShowPortRequest.
-        :type: str
+        :type port_id: str
         """
         self._port_id = port_id
 

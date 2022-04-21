@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InviteShareDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class InviteShareDTO:
     }
 
     def __init__(self, share=None):
-        """InviteShareDTO - a model defined in huaweicloud sdk"""
+        """InviteShareDTO
+
+        The model defined in huaweicloud sdk
+
+        :param share: 0:取消邀请 1:邀请 
+        :type share: int
+        """
         
         
 
@@ -57,7 +62,7 @@ class InviteShareDTO:
         0:取消邀请 1:邀请 
 
         :param share: The share of this InviteShareDTO.
-        :type: int
+        :type share: int
         """
         self._share = share
 

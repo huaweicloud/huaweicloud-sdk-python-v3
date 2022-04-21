@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApiGroupInfoPage:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ApiGroupInfoPage:
     }
 
     def __init__(self, size=None, total=None, groups=None):
-        """ApiGroupInfoPage - a model defined in huaweicloud sdk"""
+        """ApiGroupInfoPage
+
+        The model defined in huaweicloud sdk
+
+        :param size: 本次返回的列表长度
+        :type size: int
+        :param total: 满足条件的记录数
+        :type total: int
+        :param groups: 分组列表
+        :type groups: list[:class:`huaweicloudsdkapig.v2.ApiGroupInfoPage`]
+        """
         
         
 
@@ -66,7 +75,7 @@ class ApiGroupInfoPage:
         本次返回的列表长度
 
         :param size: The size of this ApiGroupInfoPage.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -88,7 +97,7 @@ class ApiGroupInfoPage:
         满足条件的记录数
 
         :param total: The total of this ApiGroupInfoPage.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -99,7 +108,7 @@ class ApiGroupInfoPage:
         分组列表
 
         :return: The groups of this ApiGroupInfoPage.
-        :rtype: list[ApiGroupInfoPage]
+        :rtype: list[:class:`huaweicloudsdkapig.v2.ApiGroupInfoPage`]
         """
         return self._groups
 
@@ -110,7 +119,7 @@ class ApiGroupInfoPage:
         分组列表
 
         :param groups: The groups of this ApiGroupInfoPage.
-        :type: list[ApiGroupInfoPage]
+        :type groups: list[:class:`huaweicloudsdkapig.v2.ApiGroupInfoPage`]
         """
         self._groups = groups
 

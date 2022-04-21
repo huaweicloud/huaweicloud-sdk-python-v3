@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Recipe:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Recipe:
     }
 
     def __init__(self, content=None, type=None):
-        """Recipe - a model defined in huaweicloud sdk"""
+        """Recipe
+
+        The model defined in huaweicloud sdk
+
+        :param content: 镜像内容
+        :type content: str
+        :param type: 镜像类型
+        :type type: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class Recipe:
         镜像内容
 
         :param content: The content of this Recipe.
-        :type: str
+        :type content: str
         """
         self._content = content
 
@@ -85,7 +92,7 @@ class Recipe:
         镜像类型
 
         :param type: The type of this Recipe.
-        :type: str
+        :type type: str
         """
         self._type = type
 

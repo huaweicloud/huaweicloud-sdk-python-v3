@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowModuleRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowModuleRequest:
     }
 
     def __init__(self, edge_node_id=None, module_id=None):
-        """ShowModuleRequest - a model defined in huaweicloud sdk"""
+        """ShowModuleRequest
+
+        The model defined in huaweicloud sdk
+
+        :param edge_node_id: 边缘节点ID
+        :type edge_node_id: str
+        :param module_id: 边缘模块ID
+        :type module_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ShowModuleRequest:
         边缘节点ID
 
         :param edge_node_id: The edge_node_id of this ShowModuleRequest.
-        :type: str
+        :type edge_node_id: str
         """
         self._edge_node_id = edge_node_id
 
@@ -83,7 +90,7 @@ class ShowModuleRequest:
         边缘模块ID
 
         :param module_id: The module_id of this ShowModuleRequest.
-        :type: str
+        :type module_id: str
         """
         self._module_id = module_id
 

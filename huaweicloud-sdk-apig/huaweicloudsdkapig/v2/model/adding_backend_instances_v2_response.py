@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddingBackendInstancesV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class AddingBackendInstancesV2Response(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, members=None):
-        """AddingBackendInstancesV2Response - a model defined in huaweicloud sdk"""
+        """AddingBackendInstancesV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param size: 本次返回的列表长度
+        :type size: int
+        :param total: 满足条件的记录数
+        :type total: int
+        :param members: 本次查询到的云服务器列表
+        :type members: list[:class:`huaweicloudsdkapig.v2.VpcMemberInfo`]
+        """
         
         super(AddingBackendInstancesV2Response, self).__init__()
 
@@ -66,7 +75,7 @@ class AddingBackendInstancesV2Response(SdkResponse):
         本次返回的列表长度
 
         :param size: The size of this AddingBackendInstancesV2Response.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -88,7 +97,7 @@ class AddingBackendInstancesV2Response(SdkResponse):
         满足条件的记录数
 
         :param total: The total of this AddingBackendInstancesV2Response.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -99,7 +108,7 @@ class AddingBackendInstancesV2Response(SdkResponse):
         本次查询到的云服务器列表
 
         :return: The members of this AddingBackendInstancesV2Response.
-        :rtype: list[VpcMemberInfo]
+        :rtype: list[:class:`huaweicloudsdkapig.v2.VpcMemberInfo`]
         """
         return self._members
 
@@ -110,7 +119,7 @@ class AddingBackendInstancesV2Response(SdkResponse):
         本次查询到的云服务器列表
 
         :param members: The members of this AddingBackendInstancesV2Response.
-        :type: list[VpcMemberInfo]
+        :type members: list[:class:`huaweicloudsdkapig.v2.VpcMemberInfo`]
         """
         self._members = members
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateNotificationRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CreateNotificationRequestBody:
     }
 
     def __init__(self, app_id=None, type=None, topic=None, status=None):
-        """CreateNotificationRequestBody - a model defined in huaweicloud sdk"""
+        """CreateNotificationRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param app_id: 通知归属的应用ID
+        :type app_id: str
+        :param type: 通知类型 0-设备上线通知 1-设备下线通知 2-设备添加通知 3-设备删除通知 4-设备变更通知
+        :type type: int
+        :param topic: 通知发送的主题名，该主题需要在MQS存在
+        :type topic: str
+        :param status: 启停状态 0-启用 1-停用
+        :type status: int
+        """
         
         
 
@@ -69,7 +80,7 @@ class CreateNotificationRequestBody:
         通知归属的应用ID
 
         :param app_id: The app_id of this CreateNotificationRequestBody.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -91,7 +102,7 @@ class CreateNotificationRequestBody:
         通知类型 0-设备上线通知 1-设备下线通知 2-设备添加通知 3-设备删除通知 4-设备变更通知
 
         :param type: The type of this CreateNotificationRequestBody.
-        :type: int
+        :type type: int
         """
         self._type = type
 
@@ -113,7 +124,7 @@ class CreateNotificationRequestBody:
         通知发送的主题名，该主题需要在MQS存在
 
         :param topic: The topic of this CreateNotificationRequestBody.
-        :type: str
+        :type topic: str
         """
         self._topic = topic
 
@@ -135,7 +146,7 @@ class CreateNotificationRequestBody:
         启停状态 0-启用 1-停用
 
         :param status: The status of this CreateNotificationRequestBody.
-        :type: int
+        :type status: int
         """
         self._status = status
 

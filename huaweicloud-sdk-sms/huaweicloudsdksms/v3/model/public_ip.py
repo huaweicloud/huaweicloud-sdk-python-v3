@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PublicIp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class PublicIp:
     }
 
     def __init__(self, type=None, bandwidth_size=None):
-        """PublicIp - a model defined in huaweicloud sdk"""
+        """PublicIp
+
+        The model defined in huaweicloud sdk
+
+        :param type: 弹性公网IP类型，默认为5_bgp
+        :type type: str
+        :param bandwidth_size: 带宽大小，单位：Mbit/s  调整带宽时的最小单位会根据带宽范围不同存在差异。  小于等于300Mbit/s，默认最小单位为1Mbit/s。300Mbit/s~1000Mbit/s，默认最小单位为50Mbit/s。大于1000Mbit/s：默认最小单位为500Mbit/s。 
+        :type bandwidth_size: int
+        """
         
         
 
@@ -61,7 +68,7 @@ class PublicIp:
         弹性公网IP类型，默认为5_bgp
 
         :param type: The type of this PublicIp.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -83,7 +90,7 @@ class PublicIp:
         带宽大小，单位：Mbit/s  调整带宽时的最小单位会根据带宽范围不同存在差异。  小于等于300Mbit/s，默认最小单位为1Mbit/s。300Mbit/s~1000Mbit/s，默认最小单位为50Mbit/s。大于1000Mbit/s：默认最小单位为500Mbit/s。 
 
         :param bandwidth_size: The bandwidth_size of this PublicIp.
-        :type: int
+        :type bandwidth_size: int
         """
         self._bandwidth_size = bandwidth_size
 

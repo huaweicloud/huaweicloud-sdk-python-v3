@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StatisticsGroup:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class StatisticsGroup:
     }
 
     def __init__(self, max_latency=None, avg_latency=None, req_count=None, req_count2xx=None, req_count4xx=None, req_count5xx=None, req_count_error=None, output_throughput=None, input_throughput=None, current_minute=None, group_id=None, provider=None, req_time=None, register_time=None):
-        """StatisticsGroup - a model defined in huaweicloud sdk"""
+        """StatisticsGroup
+
+        The model defined in huaweicloud sdk
+
+        :param max_latency: 最大延时  单位：ms
+        :type max_latency: int
+        :param avg_latency: 平均延时  单位：ms
+        :type avg_latency: float
+        :param req_count: 请求总次数
+        :type req_count: int
+        :param req_count2xx: 2xx响应码总次数
+        :type req_count2xx: int
+        :param req_count4xx: 4xx响应码总次数
+        :type req_count4xx: int
+        :param req_count5xx: 5xx响应码总次数
+        :type req_count5xx: int
+        :param req_count_error: 错误次数
+        :type req_count_error: int
+        :param output_throughput: 下行吞吐量（byte）
+        :type output_throughput: int
+        :param input_throughput: 上行吞吐量（byte）
+        :type input_throughput: int
+        :param current_minute: API访问的UTC时间戳
+        :type current_minute: int
+        :param group_id: API分组编号
+        :type group_id: str
+        :param provider: API拥有者
+        :type provider: str
+        :param req_time: API请求时间
+        :type req_time: datetime
+        :param register_time: 记录时间
+        :type register_time: datetime
+        """
         
         
 
@@ -123,7 +154,7 @@ class StatisticsGroup:
         最大延时  单位：ms
 
         :param max_latency: The max_latency of this StatisticsGroup.
-        :type: int
+        :type max_latency: int
         """
         self._max_latency = max_latency
 
@@ -145,7 +176,7 @@ class StatisticsGroup:
         平均延时  单位：ms
 
         :param avg_latency: The avg_latency of this StatisticsGroup.
-        :type: float
+        :type avg_latency: float
         """
         self._avg_latency = avg_latency
 
@@ -167,7 +198,7 @@ class StatisticsGroup:
         请求总次数
 
         :param req_count: The req_count of this StatisticsGroup.
-        :type: int
+        :type req_count: int
         """
         self._req_count = req_count
 
@@ -189,7 +220,7 @@ class StatisticsGroup:
         2xx响应码总次数
 
         :param req_count2xx: The req_count2xx of this StatisticsGroup.
-        :type: int
+        :type req_count2xx: int
         """
         self._req_count2xx = req_count2xx
 
@@ -211,7 +242,7 @@ class StatisticsGroup:
         4xx响应码总次数
 
         :param req_count4xx: The req_count4xx of this StatisticsGroup.
-        :type: int
+        :type req_count4xx: int
         """
         self._req_count4xx = req_count4xx
 
@@ -233,7 +264,7 @@ class StatisticsGroup:
         5xx响应码总次数
 
         :param req_count5xx: The req_count5xx of this StatisticsGroup.
-        :type: int
+        :type req_count5xx: int
         """
         self._req_count5xx = req_count5xx
 
@@ -255,7 +286,7 @@ class StatisticsGroup:
         错误次数
 
         :param req_count_error: The req_count_error of this StatisticsGroup.
-        :type: int
+        :type req_count_error: int
         """
         self._req_count_error = req_count_error
 
@@ -277,7 +308,7 @@ class StatisticsGroup:
         下行吞吐量（byte）
 
         :param output_throughput: The output_throughput of this StatisticsGroup.
-        :type: int
+        :type output_throughput: int
         """
         self._output_throughput = output_throughput
 
@@ -299,7 +330,7 @@ class StatisticsGroup:
         上行吞吐量（byte）
 
         :param input_throughput: The input_throughput of this StatisticsGroup.
-        :type: int
+        :type input_throughput: int
         """
         self._input_throughput = input_throughput
 
@@ -321,7 +352,7 @@ class StatisticsGroup:
         API访问的UTC时间戳
 
         :param current_minute: The current_minute of this StatisticsGroup.
-        :type: int
+        :type current_minute: int
         """
         self._current_minute = current_minute
 
@@ -343,7 +374,7 @@ class StatisticsGroup:
         API分组编号
 
         :param group_id: The group_id of this StatisticsGroup.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -365,7 +396,7 @@ class StatisticsGroup:
         API拥有者
 
         :param provider: The provider of this StatisticsGroup.
-        :type: str
+        :type provider: str
         """
         self._provider = provider
 
@@ -387,7 +418,7 @@ class StatisticsGroup:
         API请求时间
 
         :param req_time: The req_time of this StatisticsGroup.
-        :type: datetime
+        :type req_time: datetime
         """
         self._req_time = req_time
 
@@ -409,7 +440,7 @@ class StatisticsGroup:
         记录时间
 
         :param register_time: The register_time of this StatisticsGroup.
-        :type: datetime
+        :type register_time: datetime
         """
         self._register_time = register_time
 

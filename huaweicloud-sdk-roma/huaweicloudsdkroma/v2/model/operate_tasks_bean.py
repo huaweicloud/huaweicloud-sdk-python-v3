@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OperateTasksBean:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class OperateTasksBean:
     }
 
     def __init__(self, action_id=None, list=None):
-        """OperateTasksBean - a model defined in huaweicloud sdk"""
+        """OperateTasksBean
+
+        The model defined in huaweicloud sdk
+
+        :param action_id: 操作类型 - start (启动) - stop (停止)
+        :type action_id: str
+        :param list: 需要启动或者停止的任务ID列表
+        :type list: list[:class:`huaweicloudsdkroma.v2.TaskBean`]
+        """
         
         
 
@@ -63,7 +70,7 @@ class OperateTasksBean:
         操作类型 - start (启动) - stop (停止)
 
         :param action_id: The action_id of this OperateTasksBean.
-        :type: str
+        :type action_id: str
         """
         self._action_id = action_id
 
@@ -74,7 +81,7 @@ class OperateTasksBean:
         需要启动或者停止的任务ID列表
 
         :return: The list of this OperateTasksBean.
-        :rtype: list[TaskBean]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.TaskBean`]
         """
         return self._list
 
@@ -85,7 +92,7 @@ class OperateTasksBean:
         需要启动或者停止的任务ID列表
 
         :param list: The list of this OperateTasksBean.
-        :type: list[TaskBean]
+        :type list: list[:class:`huaweicloudsdkroma.v2.TaskBean`]
         """
         self._list = list
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateVaultTagsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateVaultTagsRequest:
     }
 
     def __init__(self, vault_id=None, body=None):
-        """CreateVaultTagsRequest - a model defined in huaweicloud sdk"""
+        """CreateVaultTagsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param vault_id: 资源id
+        :type vault_id: str
+        :param body: Body of the CreateVaultTagsRequest
+        :type body: :class:`huaweicloudsdkcbr.v1.VaultTagsCreateReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateVaultTagsRequest:
         资源id
 
         :param vault_id: The vault_id of this CreateVaultTagsRequest.
-        :type: str
+        :type vault_id: str
         """
         self._vault_id = vault_id
 
@@ -72,7 +79,7 @@ class CreateVaultTagsRequest:
 
 
         :return: The body of this CreateVaultTagsRequest.
-        :rtype: VaultTagsCreateReq
+        :rtype: :class:`huaweicloudsdkcbr.v1.VaultTagsCreateReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CreateVaultTagsRequest:
 
 
         :param body: The body of this CreateVaultTagsRequest.
-        :type: VaultTagsCreateReq
+        :type body: :class:`huaweicloudsdkcbr.v1.VaultTagsCreateReq`
         """
         self._body = body
 

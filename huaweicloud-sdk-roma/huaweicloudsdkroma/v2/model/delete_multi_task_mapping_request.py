@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteMultiTaskMappingRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class DeleteMultiTaskMappingRequest:
     }
 
     def __init__(self, instance_id=None, task_id=None, mapping_id=None):
-        """DeleteMultiTaskMappingRequest - a model defined in huaweicloud sdk"""
+        """DeleteMultiTaskMappingRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param task_id: 任务ID
+        :type task_id: str
+        :param mapping_id: 组合任务映射唯一标识
+        :type mapping_id: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class DeleteMultiTaskMappingRequest:
         实例ID
 
         :param instance_id: The instance_id of this DeleteMultiTaskMappingRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -87,7 +96,7 @@ class DeleteMultiTaskMappingRequest:
         任务ID
 
         :param task_id: The task_id of this DeleteMultiTaskMappingRequest.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -109,7 +118,7 @@ class DeleteMultiTaskMappingRequest:
         组合任务映射唯一标识
 
         :param mapping_id: The mapping_id of this DeleteMultiTaskMappingRequest.
-        :type: str
+        :type mapping_id: str
         """
         self._mapping_id = mapping_id
 

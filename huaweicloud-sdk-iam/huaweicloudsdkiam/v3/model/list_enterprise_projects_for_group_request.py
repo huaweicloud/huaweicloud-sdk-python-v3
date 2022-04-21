@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListEnterpriseProjectsForGroupRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListEnterpriseProjectsForGroupRequest:
     }
 
     def __init__(self, group_id=None):
-        """ListEnterpriseProjectsForGroupRequest - a model defined in huaweicloud sdk"""
+        """ListEnterpriseProjectsForGroupRequest
+
+        The model defined in huaweicloud sdk
+
+        :param group_id: 待查询用户组ID。
+        :type group_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ListEnterpriseProjectsForGroupRequest:
         待查询用户组ID。
 
         :param group_id: The group_id of this ListEnterpriseProjectsForGroupRequest.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 

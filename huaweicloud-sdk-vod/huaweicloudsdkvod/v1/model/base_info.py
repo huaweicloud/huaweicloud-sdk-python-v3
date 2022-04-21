@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BaseInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -58,7 +57,41 @@ class BaseInfo:
     }
 
     def __init__(self, title=None, video_name=None, description=None, category_id=None, category_name=None, create_time=None, last_modified=None, video_type=None, tags=None, meta_data=None, video_url=None, cover_info_array=None, subtitle_info=None, source_path=None, output_path=None):
-        """BaseInfo - a model defined in huaweicloud sdk"""
+        """BaseInfo
+
+        The model defined in huaweicloud sdk
+
+        :param title: 媒资标题。  长度不超过128个字节，UTF8编码。
+        :type title: str
+        :param video_name: 媒资文件名。
+        :type video_name: str
+        :param description: 媒资描述。  长度不超过1024个字节。
+        :type description: str
+        :param category_id: 媒资分类id。
+        :type category_id: int
+        :param category_name: 媒资分类名称。
+        :type category_name: str
+        :param create_time: 媒资创建时间。  格式为yyyymmddhhmmss。必须是与时区无关的UTC时间。
+        :type create_time: str
+        :param last_modified: 媒资最近修改时间。  格式为yyyymmddhhmmss。必须是与时区无关的UTC时间。
+        :type last_modified: str
+        :param video_type: 音视频文件类型。  取值如下： - 视频文件：MP4、TS、MOV、MXF、MPG、FLV、WMV、AVI、M4V、F4V、MPEG、3GP、ASF、MKV。 - 音频文件：MP3、OGG、WAV、WMA、APE、FLAC、AAC、AC3、MMF、AMR、M4A、M4R、WV、MP2。
+        :type video_type: str
+        :param tags: 媒资标签。  单个标签不超过16个字节，最多不超过16个标签。  多个用逗号分隔，UTF8编码。
+        :type tags: str
+        :param meta_data: 
+        :type meta_data: :class:`huaweicloudsdkvod.v1.MetaData`
+        :param video_url: 原始视频文件的访问地址。
+        :type video_url: str
+        :param cover_info_array: 封面信息。
+        :type cover_info_array: list[:class:`huaweicloudsdkvod.v1.CoverInfo`]
+        :param subtitle_info: 字幕信息数组
+        :type subtitle_info: list[:class:`huaweicloudsdkvod.v1.SubtitleInfo`]
+        :param source_path: 
+        :type source_path: :class:`huaweicloudsdkvod.v1.FileAddr`
+        :param output_path: 
+        :type output_path: :class:`huaweicloudsdkvod.v1.FileAddr`
+        """
         
         
 
@@ -128,7 +161,7 @@ class BaseInfo:
         媒资标题。  长度不超过128个字节，UTF8编码。
 
         :param title: The title of this BaseInfo.
-        :type: str
+        :type title: str
         """
         self._title = title
 
@@ -150,7 +183,7 @@ class BaseInfo:
         媒资文件名。
 
         :param video_name: The video_name of this BaseInfo.
-        :type: str
+        :type video_name: str
         """
         self._video_name = video_name
 
@@ -172,7 +205,7 @@ class BaseInfo:
         媒资描述。  长度不超过1024个字节。
 
         :param description: The description of this BaseInfo.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -194,7 +227,7 @@ class BaseInfo:
         媒资分类id。
 
         :param category_id: The category_id of this BaseInfo.
-        :type: int
+        :type category_id: int
         """
         self._category_id = category_id
 
@@ -216,7 +249,7 @@ class BaseInfo:
         媒资分类名称。
 
         :param category_name: The category_name of this BaseInfo.
-        :type: str
+        :type category_name: str
         """
         self._category_name = category_name
 
@@ -238,7 +271,7 @@ class BaseInfo:
         媒资创建时间。  格式为yyyymmddhhmmss。必须是与时区无关的UTC时间。
 
         :param create_time: The create_time of this BaseInfo.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -260,7 +293,7 @@ class BaseInfo:
         媒资最近修改时间。  格式为yyyymmddhhmmss。必须是与时区无关的UTC时间。
 
         :param last_modified: The last_modified of this BaseInfo.
-        :type: str
+        :type last_modified: str
         """
         self._last_modified = last_modified
 
@@ -282,7 +315,7 @@ class BaseInfo:
         音视频文件类型。  取值如下： - 视频文件：MP4、TS、MOV、MXF、MPG、FLV、WMV、AVI、M4V、F4V、MPEG、3GP、ASF、MKV。 - 音频文件：MP3、OGG、WAV、WMA、APE、FLAC、AAC、AC3、MMF、AMR、M4A、M4R、WV、MP2。
 
         :param video_type: The video_type of this BaseInfo.
-        :type: str
+        :type video_type: str
         """
         self._video_type = video_type
 
@@ -304,7 +337,7 @@ class BaseInfo:
         媒资标签。  单个标签不超过16个字节，最多不超过16个标签。  多个用逗号分隔，UTF8编码。
 
         :param tags: The tags of this BaseInfo.
-        :type: str
+        :type tags: str
         """
         self._tags = tags
 
@@ -314,7 +347,7 @@ class BaseInfo:
 
 
         :return: The meta_data of this BaseInfo.
-        :rtype: MetaData
+        :rtype: :class:`huaweicloudsdkvod.v1.MetaData`
         """
         return self._meta_data
 
@@ -324,7 +357,7 @@ class BaseInfo:
 
 
         :param meta_data: The meta_data of this BaseInfo.
-        :type: MetaData
+        :type meta_data: :class:`huaweicloudsdkvod.v1.MetaData`
         """
         self._meta_data = meta_data
 
@@ -346,7 +379,7 @@ class BaseInfo:
         原始视频文件的访问地址。
 
         :param video_url: The video_url of this BaseInfo.
-        :type: str
+        :type video_url: str
         """
         self._video_url = video_url
 
@@ -357,7 +390,7 @@ class BaseInfo:
         封面信息。
 
         :return: The cover_info_array of this BaseInfo.
-        :rtype: list[CoverInfo]
+        :rtype: list[:class:`huaweicloudsdkvod.v1.CoverInfo`]
         """
         return self._cover_info_array
 
@@ -368,7 +401,7 @@ class BaseInfo:
         封面信息。
 
         :param cover_info_array: The cover_info_array of this BaseInfo.
-        :type: list[CoverInfo]
+        :type cover_info_array: list[:class:`huaweicloudsdkvod.v1.CoverInfo`]
         """
         self._cover_info_array = cover_info_array
 
@@ -379,7 +412,7 @@ class BaseInfo:
         字幕信息数组
 
         :return: The subtitle_info of this BaseInfo.
-        :rtype: list[SubtitleInfo]
+        :rtype: list[:class:`huaweicloudsdkvod.v1.SubtitleInfo`]
         """
         return self._subtitle_info
 
@@ -390,7 +423,7 @@ class BaseInfo:
         字幕信息数组
 
         :param subtitle_info: The subtitle_info of this BaseInfo.
-        :type: list[SubtitleInfo]
+        :type subtitle_info: list[:class:`huaweicloudsdkvod.v1.SubtitleInfo`]
         """
         self._subtitle_info = subtitle_info
 
@@ -400,7 +433,7 @@ class BaseInfo:
 
 
         :return: The source_path of this BaseInfo.
-        :rtype: FileAddr
+        :rtype: :class:`huaweicloudsdkvod.v1.FileAddr`
         """
         return self._source_path
 
@@ -410,7 +443,7 @@ class BaseInfo:
 
 
         :param source_path: The source_path of this BaseInfo.
-        :type: FileAddr
+        :type source_path: :class:`huaweicloudsdkvod.v1.FileAddr`
         """
         self._source_path = source_path
 
@@ -420,7 +453,7 @@ class BaseInfo:
 
 
         :return: The output_path of this BaseInfo.
-        :rtype: FileAddr
+        :rtype: :class:`huaweicloudsdkvod.v1.FileAddr`
         """
         return self._output_path
 
@@ -430,7 +463,7 @@ class BaseInfo:
 
 
         :param output_path: The output_path of this BaseInfo.
-        :type: FileAddr
+        :type output_path: :class:`huaweicloudsdkvod.v1.FileAddr`
         """
         self._output_path = output_path
 

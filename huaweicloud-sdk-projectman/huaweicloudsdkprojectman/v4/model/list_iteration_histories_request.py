@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListIterationHistoriesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListIterationHistoriesRequest:
     }
 
     def __init__(self, iteration_id=None, offset=None, limit=None):
-        """ListIterationHistoriesRequest - a model defined in huaweicloud sdk"""
+        """ListIterationHistoriesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param iteration_id: 迭代id
+        :type iteration_id: int
+        :param offset: 偏移量
+        :type offset: int
+        :param limit: 每页数量，最大为100
+        :type limit: int
+        """
         
         
 
@@ -67,7 +76,7 @@ class ListIterationHistoriesRequest:
         迭代id
 
         :param iteration_id: The iteration_id of this ListIterationHistoriesRequest.
-        :type: int
+        :type iteration_id: int
         """
         self._iteration_id = iteration_id
 
@@ -89,7 +98,7 @@ class ListIterationHistoriesRequest:
         偏移量
 
         :param offset: The offset of this ListIterationHistoriesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -111,7 +120,7 @@ class ListIterationHistoriesRequest:
         每页数量，最大为100
 
         :param limit: The limit of this ListIterationHistoriesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

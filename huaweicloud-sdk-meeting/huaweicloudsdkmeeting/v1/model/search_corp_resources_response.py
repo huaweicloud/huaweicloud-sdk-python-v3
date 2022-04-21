@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SearchCorpResourcesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class SearchCorpResourcesResponse(SdkResponse):
     }
 
     def __init__(self, offset=None, limit=None, count=None, data=None):
-        """SearchCorpResourcesResponse - a model defined in huaweicloud sdk"""
+        """SearchCorpResourcesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param offset: 页面起始页，从0开始
+        :type offset: int
+        :param limit: 每页显示的条目数量。 默认值：10。 
+        :type limit: int
+        :param count: 总数量。
+        :type count: int
+        :param data: 分页查询企业的资源项
+        :type data: list[:class:`huaweicloudsdkmeeting.v1.QueryResourceResultDTO`]
+        """
         
         super(SearchCorpResourcesResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class SearchCorpResourcesResponse(SdkResponse):
         页面起始页，从0开始
 
         :param offset: The offset of this SearchCorpResourcesResponse.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -95,7 +106,7 @@ class SearchCorpResourcesResponse(SdkResponse):
         每页显示的条目数量。 默认值：10。 
 
         :param limit: The limit of this SearchCorpResourcesResponse.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -117,7 +128,7 @@ class SearchCorpResourcesResponse(SdkResponse):
         总数量。
 
         :param count: The count of this SearchCorpResourcesResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -128,7 +139,7 @@ class SearchCorpResourcesResponse(SdkResponse):
         分页查询企业的资源项
 
         :return: The data of this SearchCorpResourcesResponse.
-        :rtype: list[QueryResourceResultDTO]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.QueryResourceResultDTO`]
         """
         return self._data
 
@@ -139,7 +150,7 @@ class SearchCorpResourcesResponse(SdkResponse):
         分页查询企业的资源项
 
         :param data: The data of this SearchCorpResourcesResponse.
-        :type: list[QueryResourceResultDTO]
+        :type data: list[:class:`huaweicloudsdkmeeting.v1.QueryResourceResultDTO`]
         """
         self._data = data
 

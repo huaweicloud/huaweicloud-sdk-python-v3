@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListApplicationEndpointsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListApplicationEndpointsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, next_page_flag=None, endpoints=None):
-        """ListApplicationEndpointsResponse - a model defined in huaweicloud sdk"""
+        """ListApplicationEndpointsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param request_id: 请求的唯一标识ID。
+        :type request_id: str
+        :param next_page_flag: 是否有下一页标识。
+        :type next_page_flag: bool
+        :param endpoints: Application_endpoint结构体数。
+        :type endpoints: list[:class:`huaweicloudsdksmn.v2.ApplicationEndpoint`]
+        """
         
         super(ListApplicationEndpointsResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListApplicationEndpointsResponse(SdkResponse):
         请求的唯一标识ID。
 
         :param request_id: The request_id of this ListApplicationEndpointsResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 
@@ -90,7 +99,7 @@ class ListApplicationEndpointsResponse(SdkResponse):
         是否有下一页标识。
 
         :param next_page_flag: The next_page_flag of this ListApplicationEndpointsResponse.
-        :type: bool
+        :type next_page_flag: bool
         """
         self._next_page_flag = next_page_flag
 
@@ -101,7 +110,7 @@ class ListApplicationEndpointsResponse(SdkResponse):
         Application_endpoint结构体数。
 
         :return: The endpoints of this ListApplicationEndpointsResponse.
-        :rtype: list[ApplicationEndpoint]
+        :rtype: list[:class:`huaweicloudsdksmn.v2.ApplicationEndpoint`]
         """
         return self._endpoints
 
@@ -112,7 +121,7 @@ class ListApplicationEndpointsResponse(SdkResponse):
         Application_endpoint结构体数。
 
         :param endpoints: The endpoints of this ListApplicationEndpointsResponse.
-        :type: list[ApplicationEndpoint]
+        :type endpoints: list[:class:`huaweicloudsdksmn.v2.ApplicationEndpoint`]
         """
         self._endpoints = endpoints
 

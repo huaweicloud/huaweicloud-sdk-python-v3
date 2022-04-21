@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateDeviceTemplateResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateDeviceTemplateResponse(SdkResponse):
     }
 
     def __init__(self, device_template=None):
-        """CreateDeviceTemplateResponse - a model defined in huaweicloud sdk"""
+        """CreateDeviceTemplateResponse
+
+        The model defined in huaweicloud sdk
+
+        :param device_template: 
+        :type device_template: :class:`huaweicloudsdkief.v1.EdgemgrDevice`
+        """
         
         super(CreateDeviceTemplateResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class CreateDeviceTemplateResponse(SdkResponse):
 
 
         :return: The device_template of this CreateDeviceTemplateResponse.
-        :rtype: EdgemgrDevice
+        :rtype: :class:`huaweicloudsdkief.v1.EdgemgrDevice`
         """
         return self._device_template
 
@@ -56,7 +61,7 @@ class CreateDeviceTemplateResponse(SdkResponse):
 
 
         :param device_template: The device_template of this CreateDeviceTemplateResponse.
-        :type: EdgemgrDevice
+        :type device_template: :class:`huaweicloudsdkief.v1.EdgemgrDevice`
         """
         self._device_template = device_template
 

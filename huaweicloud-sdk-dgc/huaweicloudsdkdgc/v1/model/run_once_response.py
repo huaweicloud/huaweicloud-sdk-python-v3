@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunOnceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RunOnceResponse(SdkResponse):
     }
 
     def __init__(self, instance_id=None):
-        """RunOnceResponse - a model defined in huaweicloud sdk"""
+        """RunOnceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 作业实例id
+        :type instance_id: str
+        """
         
         super(RunOnceResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class RunOnceResponse(SdkResponse):
         作业实例id
 
         :param instance_id: The instance_id of this RunOnceResponse.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 

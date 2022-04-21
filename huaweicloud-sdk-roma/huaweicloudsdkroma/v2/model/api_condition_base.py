@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApiConditionBase:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ApiConditionBase:
     }
 
     def __init__(self, req_param_name=None, sys_param_name=None, condition_type=None, condition_origin=None, condition_value=None):
-        """ApiConditionBase - a model defined in huaweicloud sdk"""
+        """ApiConditionBase
+
+        The model defined in huaweicloud sdk
+
+        :param req_param_name: 关联的请求参数对象名称。策略类型为param时必选
+        :type req_param_name: str
+        :param sys_param_name: 系统参数名称。策略类型为system时必选。支持以下系统参数 - req_path：请求路径。如 /a/b - req_method：请求方法。如 GET 
+        :type sys_param_name: str
+        :param condition_type: 策略条件 - exact：绝对匹配 - enum：枚举 - pattern：正则  策略类型为param时必选 
+        :type condition_type: str
+        :param condition_origin: 策略类型 - param：参数 - source：源IP - system：系统参数
+        :type condition_origin: str
+        :param condition_value: 策略值
+        :type condition_value: str
+        """
         
         
 
@@ -76,7 +89,7 @@ class ApiConditionBase:
         关联的请求参数对象名称。策略类型为param时必选
 
         :param req_param_name: The req_param_name of this ApiConditionBase.
-        :type: str
+        :type req_param_name: str
         """
         self._req_param_name = req_param_name
 
@@ -98,7 +111,7 @@ class ApiConditionBase:
         系统参数名称。策略类型为system时必选。支持以下系统参数 - req_path：请求路径。如 /a/b - req_method：请求方法。如 GET 
 
         :param sys_param_name: The sys_param_name of this ApiConditionBase.
-        :type: str
+        :type sys_param_name: str
         """
         self._sys_param_name = sys_param_name
 
@@ -120,7 +133,7 @@ class ApiConditionBase:
         策略条件 - exact：绝对匹配 - enum：枚举 - pattern：正则  策略类型为param时必选 
 
         :param condition_type: The condition_type of this ApiConditionBase.
-        :type: str
+        :type condition_type: str
         """
         self._condition_type = condition_type
 
@@ -142,7 +155,7 @@ class ApiConditionBase:
         策略类型 - param：参数 - source：源IP - system：系统参数
 
         :param condition_origin: The condition_origin of this ApiConditionBase.
-        :type: str
+        :type condition_origin: str
         """
         self._condition_origin = condition_origin
 
@@ -164,7 +177,7 @@ class ApiConditionBase:
         策略值
 
         :param condition_value: The condition_value of this ApiConditionBase.
-        :type: str
+        :type condition_value: str
         """
         self._condition_value = condition_value
 

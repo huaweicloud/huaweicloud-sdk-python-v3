@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateVersionAliasRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateVersionAliasRequestBody:
     }
 
     def __init__(self, version=None, description=None, additional_version_weights=None):
-        """UpdateVersionAliasRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateVersionAliasRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param version: 别名对应的版本名称。
+        :type version: str
+        :param description: 别名描述信息。
+        :type description: str
+        :param additional_version_weights: 灰度版本信息
+        :type additional_version_weights: dict(str, int)
+        """
         
         
 
@@ -67,7 +76,7 @@ class UpdateVersionAliasRequestBody:
         别名对应的版本名称。
 
         :param version: The version of this UpdateVersionAliasRequestBody.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -89,7 +98,7 @@ class UpdateVersionAliasRequestBody:
         别名描述信息。
 
         :param description: The description of this UpdateVersionAliasRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -111,7 +120,7 @@ class UpdateVersionAliasRequestBody:
         灰度版本信息
 
         :param additional_version_weights: The additional_version_weights of this UpdateVersionAliasRequestBody.
-        :type: dict(str, int)
+        :type additional_version_weights: dict(str, int)
         """
         self._additional_version_weights = additional_version_weights
 

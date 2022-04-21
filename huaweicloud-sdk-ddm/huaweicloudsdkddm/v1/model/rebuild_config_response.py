@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RebuildConfigResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RebuildConfigResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """RebuildConfigResponse - a model defined in huaweicloud sdk"""
+        """RebuildConfigResponse
+
+        The model defined in huaweicloud sdk
+
+        :param body: 
+        :type body: str
+        """
         
         super(RebuildConfigResponse, self).__init__()
 
@@ -56,7 +61,7 @@ class RebuildConfigResponse(SdkResponse):
 
 
         :param body: The body of this RebuildConfigResponse.
-        :type: str
+        :type body: str
         """
         self._body = body
 

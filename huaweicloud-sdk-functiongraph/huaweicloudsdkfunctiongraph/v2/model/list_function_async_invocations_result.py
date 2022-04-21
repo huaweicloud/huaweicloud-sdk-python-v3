@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListFunctionAsyncInvocationsResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListFunctionAsyncInvocationsResult:
     }
 
     def __init__(self, request_id=None, status=None, error_message=None, start_time=None, end_time=None):
-        """ListFunctionAsyncInvocationsResult - a model defined in huaweicloud sdk"""
+        """ListFunctionAsyncInvocationsResult
+
+        The model defined in huaweicloud sdk
+
+        :param request_id: 异步调用请求ID
+        :type request_id: str
+        :param status: 异步调用状态，支持5种状态 WAIT: 等待 RUNNING: 执行中 SUCCESS: 执行成功 FAIL: 执行失败 DISCARD: 请求丢弃
+        :type status: str
+        :param error_message: 异步调用错误信息，如果执行成功，则返回空
+        :type error_message: str
+        :param start_time: 异步调用开始时间（格式为YYYY-MM-DD&#39;T&#39;HH:mm:ss,UTC时间）。
+        :type start_time: datetime
+        :param end_time: 异步调用结束时间（格式为YYYY-MM-DD&#39;T&#39;HH:mm:ss,UTC时间）。
+        :type end_time: datetime
+        """
         
         
 
@@ -78,7 +91,7 @@ class ListFunctionAsyncInvocationsResult:
         异步调用请求ID
 
         :param request_id: The request_id of this ListFunctionAsyncInvocationsResult.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 
@@ -100,7 +113,7 @@ class ListFunctionAsyncInvocationsResult:
         异步调用状态，支持5种状态 WAIT: 等待 RUNNING: 执行中 SUCCESS: 执行成功 FAIL: 执行失败 DISCARD: 请求丢弃
 
         :param status: The status of this ListFunctionAsyncInvocationsResult.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -122,7 +135,7 @@ class ListFunctionAsyncInvocationsResult:
         异步调用错误信息，如果执行成功，则返回空
 
         :param error_message: The error_message of this ListFunctionAsyncInvocationsResult.
-        :type: str
+        :type error_message: str
         """
         self._error_message = error_message
 
@@ -144,7 +157,7 @@ class ListFunctionAsyncInvocationsResult:
         异步调用开始时间（格式为YYYY-MM-DD'T'HH:mm:ss,UTC时间）。
 
         :param start_time: The start_time of this ListFunctionAsyncInvocationsResult.
-        :type: datetime
+        :type start_time: datetime
         """
         self._start_time = start_time
 
@@ -166,7 +179,7 @@ class ListFunctionAsyncInvocationsResult:
         异步调用结束时间（格式为YYYY-MM-DD'T'HH:mm:ss,UTC时间）。
 
         :param end_time: The end_time of this ListFunctionAsyncInvocationsResult.
-        :type: datetime
+        :type end_time: datetime
         """
         self._end_time = end_time
 

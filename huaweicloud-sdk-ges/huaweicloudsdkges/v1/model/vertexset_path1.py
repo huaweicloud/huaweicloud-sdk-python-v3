@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VertexsetPath1:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class VertexsetPath1:
     }
 
     def __init__(self, job_id=None, path=None, status=None):
-        """VertexsetPath1 - a model defined in huaweicloud sdk"""
+        """VertexsetPath1
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 导入OBS文件对应的jobId。
+        :type job_id: str
+        :param path: OBS存储路径，不包含OBS Endpoint。
+        :type path: str
+        :param status: OBS文件导入状态。  - success：完全导入成功 - partiallyFailed：部分失败 - failed：完全导入失败
+        :type status: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class VertexsetPath1:
         导入OBS文件对应的jobId。
 
         :param job_id: The job_id of this VertexsetPath1.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -87,7 +96,7 @@ class VertexsetPath1:
         OBS存储路径，不包含OBS Endpoint。
 
         :param path: The path of this VertexsetPath1.
-        :type: str
+        :type path: str
         """
         self._path = path
 
@@ -109,7 +118,7 @@ class VertexsetPath1:
         OBS文件导入状态。  - success：完全导入成功 - partiallyFailed：部分失败 - failed：完全导入失败
 
         :param status: The status of this VertexsetPath1.
-        :type: str
+        :type status: str
         """
         self._status = status
 

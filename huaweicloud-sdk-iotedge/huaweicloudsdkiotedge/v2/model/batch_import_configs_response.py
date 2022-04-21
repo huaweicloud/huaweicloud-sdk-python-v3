@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchImportConfigsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchImportConfigsResponse(SdkResponse):
     }
 
     def __init__(self, ids=None):
-        """BatchImportConfigsResponse - a model defined in huaweicloud sdk"""
+        """BatchImportConfigsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param ids: 已成功导入的配置项id
+        :type ids: object
+        """
         
         super(BatchImportConfigsResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class BatchImportConfigsResponse(SdkResponse):
         已成功导入的配置项id
 
         :param ids: The ids of this BatchImportConfigsResponse.
-        :type: object
+        :type ids: object
         """
         self._ids = ids
 

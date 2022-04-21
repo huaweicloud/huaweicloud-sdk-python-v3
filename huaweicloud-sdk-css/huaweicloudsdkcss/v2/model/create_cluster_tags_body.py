@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateClusterTagsBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateClusterTagsBody:
     }
 
     def __init__(self, key=None, value=None):
-        """CreateClusterTagsBody - a model defined in huaweicloud sdk"""
+        """CreateClusterTagsBody
+
+        The model defined in huaweicloud sdk
+
+        :param key: 集群标签的key值。可输入的字符串长度为1~36个字符。只能包含数字、字母、中划线\&quot;-\&quot;和下划线\&quot;_\&quot;。
+        :type key: str
+        :param value: 集群标签的value值。可输入的字符串长度为0~43个字符。只能包含数字、字母、中划线\&quot;-\&quot;和下划线\&quot;_\&quot;。
+        :type value: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class CreateClusterTagsBody:
         集群标签的key值。可输入的字符串长度为1~36个字符。只能包含数字、字母、中划线\"-\"和下划线\"_\"。
 
         :param key: The key of this CreateClusterTagsBody.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -83,7 +90,7 @@ class CreateClusterTagsBody:
         集群标签的value值。可输入的字符串长度为0~43个字符。只能包含数字、字母、中划线\"-\"和下划线\"_\"。
 
         :param value: The value of this CreateClusterTagsBody.
-        :type: str
+        :type value: str
         """
         self._value = value
 

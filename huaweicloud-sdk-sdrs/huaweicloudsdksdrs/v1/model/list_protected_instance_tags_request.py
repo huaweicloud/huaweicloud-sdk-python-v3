@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListProtectedInstanceTagsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListProtectedInstanceTagsRequest:
     }
 
     def __init__(self, protected_instance_id=None):
-        """ListProtectedInstanceTagsRequest - a model defined in huaweicloud sdk"""
+        """ListProtectedInstanceTagsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param protected_instance_id: 保护实例的ID。
+        :type protected_instance_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ListProtectedInstanceTagsRequest:
         保护实例的ID。
 
         :param protected_instance_id: The protected_instance_id of this ListProtectedInstanceTagsRequest.
-        :type: str
+        :type protected_instance_id: str
         """
         self._protected_instance_id = protected_instance_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateMessageResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateMessageResponse(SdkResponse):
     }
 
     def __init__(self, message_id=None, result=None):
-        """CreateMessageResponse - a model defined in huaweicloud sdk"""
+        """CreateMessageResponse
+
+        The model defined in huaweicloud sdk
+
+        :param message_id: 消息id，由用户生成（推荐使用UUID），同一个设备下唯一， 如果用户不填写，则由物联网平台生成。
+        :type message_id: str
+        :param result: 
+        :type result: :class:`huaweicloudsdkiotda.v5.MessageResult`
+        """
         
         super(CreateMessageResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class CreateMessageResponse(SdkResponse):
         消息id，由用户生成（推荐使用UUID），同一个设备下唯一， 如果用户不填写，则由物联网平台生成。
 
         :param message_id: The message_id of this CreateMessageResponse.
-        :type: str
+        :type message_id: str
         """
         self._message_id = message_id
 
@@ -73,7 +80,7 @@ class CreateMessageResponse(SdkResponse):
 
 
         :return: The result of this CreateMessageResponse.
-        :rtype: MessageResult
+        :rtype: :class:`huaweicloudsdkiotda.v5.MessageResult`
         """
         return self._result
 
@@ -83,7 +90,7 @@ class CreateMessageResponse(SdkResponse):
 
 
         :param result: The result of this CreateMessageResponse.
-        :type: MessageResult
+        :type result: :class:`huaweicloudsdkiotda.v5.MessageResult`
         """
         self._result = result
 

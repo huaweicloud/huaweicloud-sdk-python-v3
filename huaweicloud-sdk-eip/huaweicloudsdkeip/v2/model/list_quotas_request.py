@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListQuotasRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListQuotasRequest:
     }
 
     def __init__(self, type=None):
-        """ListQuotasRequest - a model defined in huaweicloud sdk"""
+        """ListQuotasRequest
+
+        The model defined in huaweicloud sdk
+
+        :param type: 功能说明：根据type过滤查询指定类型的配额 取值范围：vpc，subnet，securityGroup，securityGroupRule，publicIp，vpn，vpngw，vpcPeer，firewall，shareBandwidth，shareBandwidthIP，loadbalancer，listener
+        :type type: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class ListQuotasRequest:
         功能说明：根据type过滤查询指定类型的配额 取值范围：vpc，subnet，securityGroup，securityGroupRule，publicIp，vpn，vpngw，vpcPeer，firewall，shareBandwidth，shareBandwidthIP，loadbalancer，listener
 
         :param type: The type of this ListQuotasRequest.
-        :type: str
+        :type type: str
         """
         self._type = type
 

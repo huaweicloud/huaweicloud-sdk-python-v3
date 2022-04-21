@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestoreInstanceBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RestoreInstanceBody:
     }
 
     def __init__(self, backup_id=None, remark=None):
-        """RestoreInstanceBody - a model defined in huaweicloud sdk"""
+        """RestoreInstanceBody
+
+        The model defined in huaweicloud sdk
+
+        :param backup_id: 备份记录ID。
+        :type backup_id: str
+        :param remark: 恢复缓存实例的备注信息。
+        :type remark: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class RestoreInstanceBody:
         备份记录ID。
 
         :param backup_id: The backup_id of this RestoreInstanceBody.
-        :type: str
+        :type backup_id: str
         """
         self._backup_id = backup_id
 
@@ -84,7 +91,7 @@ class RestoreInstanceBody:
         恢复缓存实例的备注信息。
 
         :param remark: The remark of this RestoreInstanceBody.
-        :type: str
+        :type remark: str
         """
         self._remark = remark
 

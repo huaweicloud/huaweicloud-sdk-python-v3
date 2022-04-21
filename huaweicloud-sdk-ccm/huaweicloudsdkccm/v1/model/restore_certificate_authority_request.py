@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestoreCertificateAuthorityRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RestoreCertificateAuthorityRequest:
     }
 
     def __init__(self, ca_id=None):
-        """RestoreCertificateAuthorityRequest - a model defined in huaweicloud sdk"""
+        """RestoreCertificateAuthorityRequest
+
+        The model defined in huaweicloud sdk
+
+        :param ca_id: 所需要恢复的CA证书ID。
+        :type ca_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class RestoreCertificateAuthorityRequest:
         所需要恢复的CA证书ID。
 
         :param ca_id: The ca_id of this RestoreCertificateAuthorityRequest.
-        :type: str
+        :type ca_id: str
         """
         self._ca_id = ca_id
 

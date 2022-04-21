@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CheckAppV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CheckAppV2Response(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, remark=None):
-        """CheckAppV2Response - a model defined in huaweicloud sdk"""
+        """CheckAppV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param id: 编号
+        :type id: str
+        :param name: 名称
+        :type name: str
+        :param remark: 描述
+        :type remark: str
+        """
         
         super(CheckAppV2Response, self).__init__()
 
@@ -68,7 +77,7 @@ class CheckAppV2Response(SdkResponse):
         编号
 
         :param id: The id of this CheckAppV2Response.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -90,7 +99,7 @@ class CheckAppV2Response(SdkResponse):
         名称
 
         :param name: The name of this CheckAppV2Response.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -112,7 +121,7 @@ class CheckAppV2Response(SdkResponse):
         描述
 
         :param remark: The remark of this CheckAppV2Response.
-        :type: str
+        :type remark: str
         """
         self._remark = remark
 

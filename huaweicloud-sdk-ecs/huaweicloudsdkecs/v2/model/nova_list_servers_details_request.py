@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NovaListServersDetailsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class NovaListServersDetailsRequest:
     }
 
     def __init__(self, changes_since=None, flavor=None, image=None, ip=None, limit=None, marker=None, name=None, not_tags=None, reservation_id=None, sort_key=None, status=None, tags=None, open_stack_api_version=None):
-        """NovaListServersDetailsRequest - a model defined in huaweicloud sdk"""
+        """NovaListServersDetailsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param changes_since: 云服务器上次更新状态的时间戳信息。时间戳为UTC格式。
+        :type changes_since: str
+        :param flavor: 云服务器规格ID。
+        :type flavor: str
+        :param image: 镜像ID  在使用image作为条件过滤时，不能同时支持其他过滤条件和分页条件。如果同时指定image及其他条件，则以image条件为准；当条件不含image时，接口功能不受限制。
+        :type image: str
+        :param ip: IPv4地址过滤结果，匹配规则为模糊匹配。
+        :type ip: str
+        :param limit: 查询返回云服务器数量限制。
+        :type limit: int
+        :param marker: 从marker指定的云服务器ID的下一条数据开始查询。
+        :type marker: str
+        :param name: 云服务器名称。
+        :type name: str
+        :param not_tags: 查询tag字段中不包含该值的云服务器，值为标签的Key。  &gt; 说明： &gt;  &gt; 系统近期对标签功能进行了升级。如果之前添加的Tag为“Key.Value”的形式，则查询的时候需要使用“Key”来查询。 &gt;  &gt; 例如：之前添加的tag为“a.b”,则升级后，查询时需使用“not-tags&#x3D;a”。
+        :type not_tags: str
+        :param reservation_id: 批量创建弹性云服务器时，指定返回的ID，用于查询本次批量创建的弹性云服务器。
+        :type reservation_id: str
+        :param sort_key: 查询结果按弹性云服务器属性排序，默认排序顺序为created_at逆序。
+        :type sort_key: str
+        :param status: 云服务器状态。  取值范围： ACTIVE， BUILD，DELETED，ERROR，HARD_REBOOT，MIGRATING，REBOOT，RESIZE，REVERT_RESIZE，SHELVED，SHELVED_OFFLOADED，SHUTOFF，UNKNOWN，VERIFY_RESIZE  直到2.37微版本，非上面范围的status字段将返回空列表，2.38之后的微版本，将返回400错误。  云服务器状态说明请参考[云服务器状态](https://support.huaweicloud.com/api-ecs/ecs_08_0002.html)。
+        :type status: str
+        :param tags: 查询tag字段中包含该值的云服务器。
+        :type tags: str
+        :param open_stack_api_version: 微版本头
+        :type open_stack_api_version: str
+        """
         
         
 
@@ -118,7 +147,7 @@ class NovaListServersDetailsRequest:
         云服务器上次更新状态的时间戳信息。时间戳为UTC格式。
 
         :param changes_since: The changes_since of this NovaListServersDetailsRequest.
-        :type: str
+        :type changes_since: str
         """
         self._changes_since = changes_since
 
@@ -140,7 +169,7 @@ class NovaListServersDetailsRequest:
         云服务器规格ID。
 
         :param flavor: The flavor of this NovaListServersDetailsRequest.
-        :type: str
+        :type flavor: str
         """
         self._flavor = flavor
 
@@ -162,7 +191,7 @@ class NovaListServersDetailsRequest:
         镜像ID  在使用image作为条件过滤时，不能同时支持其他过滤条件和分页条件。如果同时指定image及其他条件，则以image条件为准；当条件不含image时，接口功能不受限制。
 
         :param image: The image of this NovaListServersDetailsRequest.
-        :type: str
+        :type image: str
         """
         self._image = image
 
@@ -184,7 +213,7 @@ class NovaListServersDetailsRequest:
         IPv4地址过滤结果，匹配规则为模糊匹配。
 
         :param ip: The ip of this NovaListServersDetailsRequest.
-        :type: str
+        :type ip: str
         """
         self._ip = ip
 
@@ -206,7 +235,7 @@ class NovaListServersDetailsRequest:
         查询返回云服务器数量限制。
 
         :param limit: The limit of this NovaListServersDetailsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -228,7 +257,7 @@ class NovaListServersDetailsRequest:
         从marker指定的云服务器ID的下一条数据开始查询。
 
         :param marker: The marker of this NovaListServersDetailsRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -250,7 +279,7 @@ class NovaListServersDetailsRequest:
         云服务器名称。
 
         :param name: The name of this NovaListServersDetailsRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -272,7 +301,7 @@ class NovaListServersDetailsRequest:
         查询tag字段中不包含该值的云服务器，值为标签的Key。  > 说明： >  > 系统近期对标签功能进行了升级。如果之前添加的Tag为“Key.Value”的形式，则查询的时候需要使用“Key”来查询。 >  > 例如：之前添加的tag为“a.b”,则升级后，查询时需使用“not-tags=a”。
 
         :param not_tags: The not_tags of this NovaListServersDetailsRequest.
-        :type: str
+        :type not_tags: str
         """
         self._not_tags = not_tags
 
@@ -294,7 +323,7 @@ class NovaListServersDetailsRequest:
         批量创建弹性云服务器时，指定返回的ID，用于查询本次批量创建的弹性云服务器。
 
         :param reservation_id: The reservation_id of this NovaListServersDetailsRequest.
-        :type: str
+        :type reservation_id: str
         """
         self._reservation_id = reservation_id
 
@@ -316,7 +345,7 @@ class NovaListServersDetailsRequest:
         查询结果按弹性云服务器属性排序，默认排序顺序为created_at逆序。
 
         :param sort_key: The sort_key of this NovaListServersDetailsRequest.
-        :type: str
+        :type sort_key: str
         """
         self._sort_key = sort_key
 
@@ -338,7 +367,7 @@ class NovaListServersDetailsRequest:
         云服务器状态。  取值范围： ACTIVE， BUILD，DELETED，ERROR，HARD_REBOOT，MIGRATING，REBOOT，RESIZE，REVERT_RESIZE，SHELVED，SHELVED_OFFLOADED，SHUTOFF，UNKNOWN，VERIFY_RESIZE  直到2.37微版本，非上面范围的status字段将返回空列表，2.38之后的微版本，将返回400错误。  云服务器状态说明请参考[云服务器状态](https://support.huaweicloud.com/api-ecs/ecs_08_0002.html)。
 
         :param status: The status of this NovaListServersDetailsRequest.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -360,7 +389,7 @@ class NovaListServersDetailsRequest:
         查询tag字段中包含该值的云服务器。
 
         :param tags: The tags of this NovaListServersDetailsRequest.
-        :type: str
+        :type tags: str
         """
         self._tags = tags
 
@@ -382,7 +411,7 @@ class NovaListServersDetailsRequest:
         微版本头
 
         :param open_stack_api_version: The open_stack_api_version of this NovaListServersDetailsRequest.
-        :type: str
+        :type open_stack_api_version: str
         """
         self._open_stack_api_version = open_stack_api_version
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowSubNetworkInterfaceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowSubNetworkInterfaceRequest:
     }
 
     def __init__(self, sub_network_interface_id=None):
-        """ShowSubNetworkInterfaceRequest - a model defined in huaweicloud sdk"""
+        """ShowSubNetworkInterfaceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param sub_network_interface_id: 辅助弹性网卡的唯一标识
+        :type sub_network_interface_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowSubNetworkInterfaceRequest:
         辅助弹性网卡的唯一标识
 
         :param sub_network_interface_id: The sub_network_interface_id of this ShowSubNetworkInterfaceRequest.
-        :type: str
+        :type sub_network_interface_id: str
         """
         self._sub_network_interface_id = sub_network_interface_id
 

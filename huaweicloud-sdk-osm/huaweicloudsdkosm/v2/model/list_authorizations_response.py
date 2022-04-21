@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAuthorizationsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListAuthorizationsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, incident_auth_list=None):
-        """ListAuthorizationsResponse - a model defined in huaweicloud sdk"""
+        """ListAuthorizationsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 总数
+        :type total: int
+        :param incident_auth_list: 授权列表
+        :type incident_auth_list: list[:class:`huaweicloudsdkosm.v2.IncidentOrderAuthV2`]
+        """
         
         super(ListAuthorizationsResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListAuthorizationsResponse(SdkResponse):
         总数
 
         :param total: The total of this ListAuthorizationsResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -74,7 +81,7 @@ class ListAuthorizationsResponse(SdkResponse):
         授权列表
 
         :return: The incident_auth_list of this ListAuthorizationsResponse.
-        :rtype: list[IncidentOrderAuthV2]
+        :rtype: list[:class:`huaweicloudsdkosm.v2.IncidentOrderAuthV2`]
         """
         return self._incident_auth_list
 
@@ -85,7 +92,7 @@ class ListAuthorizationsResponse(SdkResponse):
         授权列表
 
         :param incident_auth_list: The incident_auth_list of this ListAuthorizationsResponse.
-        :type: list[IncidentOrderAuthV2]
+        :type incident_auth_list: list[:class:`huaweicloudsdkosm.v2.IncidentOrderAuthV2`]
         """
         self._incident_auth_list = incident_auth_list
 

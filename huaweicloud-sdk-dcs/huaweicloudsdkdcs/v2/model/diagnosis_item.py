@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DiagnosisItem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class DiagnosisItem:
     }
 
     def __init__(self, name=None, cause_ids=None, impact_ids=None, advice_ids=None, result=None):
-        """DiagnosisItem - a model defined in huaweicloud sdk"""
+        """DiagnosisItem
+
+        The model defined in huaweicloud sdk
+
+        :param name: 诊断项名称
+        :type name: str
+        :param cause_ids: 原因ID列表
+        :type cause_ids: list[:class:`huaweicloudsdkdcs.v2.ConclusionItem`]
+        :param impact_ids: 影响ID列表
+        :type impact_ids: list[:class:`huaweicloudsdkdcs.v2.ConclusionItem`]
+        :param advice_ids: 建议ID列表
+        :type advice_ids: list[:class:`huaweicloudsdkdcs.v2.ConclusionItem`]
+        :param result: 诊断结果
+        :type result: str
+        """
         
         
 
@@ -76,7 +89,7 @@ class DiagnosisItem:
         诊断项名称
 
         :param name: The name of this DiagnosisItem.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -87,7 +100,7 @@ class DiagnosisItem:
         原因ID列表
 
         :return: The cause_ids of this DiagnosisItem.
-        :rtype: list[ConclusionItem]
+        :rtype: list[:class:`huaweicloudsdkdcs.v2.ConclusionItem`]
         """
         return self._cause_ids
 
@@ -98,7 +111,7 @@ class DiagnosisItem:
         原因ID列表
 
         :param cause_ids: The cause_ids of this DiagnosisItem.
-        :type: list[ConclusionItem]
+        :type cause_ids: list[:class:`huaweicloudsdkdcs.v2.ConclusionItem`]
         """
         self._cause_ids = cause_ids
 
@@ -109,7 +122,7 @@ class DiagnosisItem:
         影响ID列表
 
         :return: The impact_ids of this DiagnosisItem.
-        :rtype: list[ConclusionItem]
+        :rtype: list[:class:`huaweicloudsdkdcs.v2.ConclusionItem`]
         """
         return self._impact_ids
 
@@ -120,7 +133,7 @@ class DiagnosisItem:
         影响ID列表
 
         :param impact_ids: The impact_ids of this DiagnosisItem.
-        :type: list[ConclusionItem]
+        :type impact_ids: list[:class:`huaweicloudsdkdcs.v2.ConclusionItem`]
         """
         self._impact_ids = impact_ids
 
@@ -131,7 +144,7 @@ class DiagnosisItem:
         建议ID列表
 
         :return: The advice_ids of this DiagnosisItem.
-        :rtype: list[ConclusionItem]
+        :rtype: list[:class:`huaweicloudsdkdcs.v2.ConclusionItem`]
         """
         return self._advice_ids
 
@@ -142,7 +155,7 @@ class DiagnosisItem:
         建议ID列表
 
         :param advice_ids: The advice_ids of this DiagnosisItem.
-        :type: list[ConclusionItem]
+        :type advice_ids: list[:class:`huaweicloudsdkdcs.v2.ConclusionItem`]
         """
         self._advice_ids = advice_ids
 
@@ -164,7 +177,7 @@ class DiagnosisItem:
         诊断结果
 
         :param result: The result of this DiagnosisItem.
-        :type: str
+        :type result: str
         """
         self._result = result
 

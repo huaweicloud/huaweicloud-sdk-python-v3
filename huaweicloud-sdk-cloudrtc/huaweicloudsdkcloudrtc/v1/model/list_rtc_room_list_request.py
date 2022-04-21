@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRtcRoomListRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class ListRtcRoomListRequest:
     }
 
     def __init__(self, authorization=None, x_sdk_date=None, x_project_id=None, project_id=None, app=None, room_id=None, state=None, start_time=None, end_time=None, limit=None, offset=None):
-        """ListRtcRoomListRequest - a model defined in huaweicloud sdk"""
+        """ListRtcRoomListRequest
+
+        The model defined in huaweicloud sdk
+
+        :param authorization: 使用AK/SK方式认证时必选，携带的鉴权信息。 
+        :type authorization: str
+        :param x_sdk_date: 使用AK/SK方式认证时必选，请求的发生时间。 
+        :type x_sdk_date: str
+        :param x_project_id: 使用AK/SK方式认证时必选，携带项目ID信息，与路径参数中的项目ID相同。 
+        :type x_project_id: str
+        :param project_id: 项目ID，获取方法请参考[获取项目ID](rtc_07_0015.xml)。 
+        :type project_id: str
+        :param app: 应用标识 
+        :type app: str
+        :param room_id: 房间id 
+        :type room_id: str
+        :param state: 房间状态，取值如下： - RUNNING：开启中 - CLOSED：已关闭 
+        :type state: str
+        :param start_time: 查询起始时间。UTC时间，格式：YYYY-MM-DDThh:mm:ssZ，如2020-04-23T06:00:00Z，不写默认读取过去1小时数据数据。 
+        :type start_time: str
+        :param end_time: 查询结束时间。UTC时间，格式：YYYY-MM-DDThh:mm:ssZ，如2020-04-23T07:00:00Z，不写默认为当前时间。 
+        :type end_time: str
+        :param limit: 查询结果条数 
+        :type limit: int
+        :param offset: 查询偏移量 
+        :type offset: int
+        """
         
         
 
@@ -106,7 +131,7 @@ class ListRtcRoomListRequest:
         使用AK/SK方式认证时必选，携带的鉴权信息。 
 
         :param authorization: The authorization of this ListRtcRoomListRequest.
-        :type: str
+        :type authorization: str
         """
         self._authorization = authorization
 
@@ -128,7 +153,7 @@ class ListRtcRoomListRequest:
         使用AK/SK方式认证时必选，请求的发生时间。 
 
         :param x_sdk_date: The x_sdk_date of this ListRtcRoomListRequest.
-        :type: str
+        :type x_sdk_date: str
         """
         self._x_sdk_date = x_sdk_date
 
@@ -150,7 +175,7 @@ class ListRtcRoomListRequest:
         使用AK/SK方式认证时必选，携带项目ID信息，与路径参数中的项目ID相同。 
 
         :param x_project_id: The x_project_id of this ListRtcRoomListRequest.
-        :type: str
+        :type x_project_id: str
         """
         self._x_project_id = x_project_id
 
@@ -172,7 +197,7 @@ class ListRtcRoomListRequest:
         项目ID，获取方法请参考[获取项目ID](rtc_07_0015.xml)。 
 
         :param project_id: The project_id of this ListRtcRoomListRequest.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -194,7 +219,7 @@ class ListRtcRoomListRequest:
         应用标识 
 
         :param app: The app of this ListRtcRoomListRequest.
-        :type: str
+        :type app: str
         """
         self._app = app
 
@@ -216,7 +241,7 @@ class ListRtcRoomListRequest:
         房间id 
 
         :param room_id: The room_id of this ListRtcRoomListRequest.
-        :type: str
+        :type room_id: str
         """
         self._room_id = room_id
 
@@ -238,7 +263,7 @@ class ListRtcRoomListRequest:
         房间状态，取值如下： - RUNNING：开启中 - CLOSED：已关闭 
 
         :param state: The state of this ListRtcRoomListRequest.
-        :type: str
+        :type state: str
         """
         self._state = state
 
@@ -260,7 +285,7 @@ class ListRtcRoomListRequest:
         查询起始时间。UTC时间，格式：YYYY-MM-DDThh:mm:ssZ，如2020-04-23T06:00:00Z，不写默认读取过去1小时数据数据。 
 
         :param start_time: The start_time of this ListRtcRoomListRequest.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -282,7 +307,7 @@ class ListRtcRoomListRequest:
         查询结束时间。UTC时间，格式：YYYY-MM-DDThh:mm:ssZ，如2020-04-23T07:00:00Z，不写默认为当前时间。 
 
         :param end_time: The end_time of this ListRtcRoomListRequest.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -304,7 +329,7 @@ class ListRtcRoomListRequest:
         查询结果条数 
 
         :param limit: The limit of this ListRtcRoomListRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -326,7 +351,7 @@ class ListRtcRoomListRequest:
         查询偏移量 
 
         :param offset: The offset of this ListRtcRoomListRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 

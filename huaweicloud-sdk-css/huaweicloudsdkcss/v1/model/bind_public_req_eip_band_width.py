@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BindPublicReqEipBandWidth:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BindPublicReqEipBandWidth:
     }
 
     def __init__(self, size=None):
-        """BindPublicReqEipBandWidth - a model defined in huaweicloud sdk"""
+        """BindPublicReqEipBandWidth
+
+        The model defined in huaweicloud sdk
+
+        :param size: 带宽大小。
+        :type size: int
+        """
         
         
 
@@ -57,7 +62,7 @@ class BindPublicReqEipBandWidth:
         带宽大小。
 
         :param size: The size of this BindPublicReqEipBandWidth.
-        :type: int
+        :type size: int
         """
         self._size = size
 

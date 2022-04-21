@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateAppsInDeploymentV3:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateAppsInDeploymentV3:
     }
 
     def __init__(self, replicas=None, template=None, annotations=None):
-        """CreateAppsInDeploymentV3 - a model defined in huaweicloud sdk"""
+        """CreateAppsInDeploymentV3
+
+        The model defined in huaweicloud sdk
+
+        :param replicas: 副本数量
+        :type replicas: int
+        :param template: 
+        :type template: :class:`huaweicloudsdkief.v1.PodRequest`
+        :param annotations: 
+        :type annotations: :class:`huaweicloudsdkief.v1.Annotations`
+        """
         
         
 
@@ -66,7 +75,7 @@ class CreateAppsInDeploymentV3:
         副本数量
 
         :param replicas: The replicas of this CreateAppsInDeploymentV3.
-        :type: int
+        :type replicas: int
         """
         self._replicas = replicas
 
@@ -76,7 +85,7 @@ class CreateAppsInDeploymentV3:
 
 
         :return: The template of this CreateAppsInDeploymentV3.
-        :rtype: PodRequest
+        :rtype: :class:`huaweicloudsdkief.v1.PodRequest`
         """
         return self._template
 
@@ -86,7 +95,7 @@ class CreateAppsInDeploymentV3:
 
 
         :param template: The template of this CreateAppsInDeploymentV3.
-        :type: PodRequest
+        :type template: :class:`huaweicloudsdkief.v1.PodRequest`
         """
         self._template = template
 
@@ -96,7 +105,7 @@ class CreateAppsInDeploymentV3:
 
 
         :return: The annotations of this CreateAppsInDeploymentV3.
-        :rtype: Annotations
+        :rtype: :class:`huaweicloudsdkief.v1.Annotations`
         """
         return self._annotations
 
@@ -106,7 +115,7 @@ class CreateAppsInDeploymentV3:
 
 
         :param annotations: The annotations of this CreateAppsInDeploymentV3.
-        :type: Annotations
+        :type annotations: :class:`huaweicloudsdkief.v1.Annotations`
         """
         self._annotations = annotations
 

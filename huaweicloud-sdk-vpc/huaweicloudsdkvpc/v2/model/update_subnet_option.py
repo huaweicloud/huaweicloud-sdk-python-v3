@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateSubnetOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class UpdateSubnetOption:
     }
 
     def __init__(self, name=None, description=None, ipv6_enable=None, dhcp_enable=None, primary_dns=None, secondary_dns=None, dns_list=None, extra_dhcp_opts=None):
-        """UpdateSubnetOption - a model defined in huaweicloud sdk"""
+        """UpdateSubnetOption
+
+        The model defined in huaweicloud sdk
+
+        :param name: 功能说明：子网名称 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
+        :type name: str
+        :param description: 功能说明：子网描述 取值范围：0-255个字符，不能包含“&lt;”和“&gt;”。
+        :type description: str
+        :param ipv6_enable: 功能说明：是否创建ipv6子网 取值范围：true（开启），false（关闭）
+        :type ipv6_enable: bool
+        :param dhcp_enable: 功能说明：子网是否开启dhcp功能 取值范围：true（开启），false（关闭） 约束：不填时默认为true。当设置为false时，会导致新创建的ECS无法获取IP地址，cloudinit无法注入账号密码，请谨慎操作。
+        :type dhcp_enable: bool
+        :param primary_dns: 功能说明：子网dns服务器地址1 约束：ip格式 默认值：不填时为空 [内网DNS地址请参见](https://support.huaweicloud.com/dns_faq/dns_faq_002.html) [通过API获取请参见](https://support.huaweicloud.com/api-dns/dns_api_69001.html)
+        :type primary_dns: str
+        :param secondary_dns: 功能说明：子网dns服务器地址2 约束：ip格式 默认值：不填时为空 [内网DNS地址请参见](https://support.huaweicloud.com/dns_faq/dns_faq_002.html) [通过API获取请参见](https://support.huaweicloud.com/api-dns/dns_api_69001.html)
+        :type secondary_dns: str
+        :param dns_list: 功能说明：子网dns服务器地址的集合；如果想使用两个以上dns服务器，请使用该字段。 约束：是子网dns服务器地址1跟子网dns服务器地址2的合集的父集 默认值：不填时为空，无法使用云内网DNS功能 [内网DNS地址请参见](https://support.huaweicloud.com/dns_faq/dns_faq_002.html) [通过API获取请参见](https://support.huaweicloud.com/api-dns/dns_api_69001.html)
+        :type dns_list: list[str]
+        :param extra_dhcp_opts: 子网配置的NTP地址
+        :type extra_dhcp_opts: list[:class:`huaweicloudsdkvpc.v2.ExtraDhcpOption`]
+        """
         
         
 
@@ -92,7 +111,7 @@ class UpdateSubnetOption:
         功能说明：子网名称 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
         :param name: The name of this UpdateSubnetOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -114,7 +133,7 @@ class UpdateSubnetOption:
         功能说明：子网描述 取值范围：0-255个字符，不能包含“<”和“>”。
 
         :param description: The description of this UpdateSubnetOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -136,7 +155,7 @@ class UpdateSubnetOption:
         功能说明：是否创建ipv6子网 取值范围：true（开启），false（关闭）
 
         :param ipv6_enable: The ipv6_enable of this UpdateSubnetOption.
-        :type: bool
+        :type ipv6_enable: bool
         """
         self._ipv6_enable = ipv6_enable
 
@@ -158,7 +177,7 @@ class UpdateSubnetOption:
         功能说明：子网是否开启dhcp功能 取值范围：true（开启），false（关闭） 约束：不填时默认为true。当设置为false时，会导致新创建的ECS无法获取IP地址，cloudinit无法注入账号密码，请谨慎操作。
 
         :param dhcp_enable: The dhcp_enable of this UpdateSubnetOption.
-        :type: bool
+        :type dhcp_enable: bool
         """
         self._dhcp_enable = dhcp_enable
 
@@ -180,7 +199,7 @@ class UpdateSubnetOption:
         功能说明：子网dns服务器地址1 约束：ip格式 默认值：不填时为空 [内网DNS地址请参见](https://support.huaweicloud.com/dns_faq/dns_faq_002.html) [通过API获取请参见](https://support.huaweicloud.com/api-dns/dns_api_69001.html)
 
         :param primary_dns: The primary_dns of this UpdateSubnetOption.
-        :type: str
+        :type primary_dns: str
         """
         self._primary_dns = primary_dns
 
@@ -202,7 +221,7 @@ class UpdateSubnetOption:
         功能说明：子网dns服务器地址2 约束：ip格式 默认值：不填时为空 [内网DNS地址请参见](https://support.huaweicloud.com/dns_faq/dns_faq_002.html) [通过API获取请参见](https://support.huaweicloud.com/api-dns/dns_api_69001.html)
 
         :param secondary_dns: The secondary_dns of this UpdateSubnetOption.
-        :type: str
+        :type secondary_dns: str
         """
         self._secondary_dns = secondary_dns
 
@@ -224,7 +243,7 @@ class UpdateSubnetOption:
         功能说明：子网dns服务器地址的集合；如果想使用两个以上dns服务器，请使用该字段。 约束：是子网dns服务器地址1跟子网dns服务器地址2的合集的父集 默认值：不填时为空，无法使用云内网DNS功能 [内网DNS地址请参见](https://support.huaweicloud.com/dns_faq/dns_faq_002.html) [通过API获取请参见](https://support.huaweicloud.com/api-dns/dns_api_69001.html)
 
         :param dns_list: The dns_list of this UpdateSubnetOption.
-        :type: list[str]
+        :type dns_list: list[str]
         """
         self._dns_list = dns_list
 
@@ -235,7 +254,7 @@ class UpdateSubnetOption:
         子网配置的NTP地址
 
         :return: The extra_dhcp_opts of this UpdateSubnetOption.
-        :rtype: list[ExtraDhcpOption]
+        :rtype: list[:class:`huaweicloudsdkvpc.v2.ExtraDhcpOption`]
         """
         return self._extra_dhcp_opts
 
@@ -246,7 +265,7 @@ class UpdateSubnetOption:
         子网配置的NTP地址
 
         :param extra_dhcp_opts: The extra_dhcp_opts of this UpdateSubnetOption.
-        :type: list[ExtraDhcpOption]
+        :type extra_dhcp_opts: list[:class:`huaweicloudsdkvpc.v2.ExtraDhcpOption`]
         """
         self._extra_dhcp_opts = extra_dhcp_opts
 

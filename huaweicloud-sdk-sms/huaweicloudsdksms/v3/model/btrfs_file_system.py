@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BtrfsFileSystem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -60,7 +59,43 @@ class BtrfsFileSystem:
     }
 
     def __init__(self, name=None, label=None, uuid=None, device=None, size=None, nodesize=None, sectorsize=None, data_profile=None, system_profile=None, metadata_profile=None, global_reserve1=None, g_vol_used_size=None, default_subvolid=None, default_subvol_name=None, default_subvol_mountpath=None, subvolumn=None):
-        """BtrfsFileSystem - a model defined in huaweicloud sdk"""
+        """BtrfsFileSystem
+
+        The model defined in huaweicloud sdk
+
+        :param name: 文件系统名称
+        :type name: str
+        :param label: 文件系统标签，若无标签为空字符串
+        :type label: str
+        :param uuid: 文件系统的uuid
+        :type uuid: str
+        :param device: btrfs包含的设备名称
+        :type device: str
+        :param size: 文件系统数据占用大小
+        :type size: int
+        :param nodesize: btrfs节点大小
+        :type nodesize: int
+        :param sectorsize: 扇区大小
+        :type sectorsize: int
+        :param data_profile: 数据配置（RAD）
+        :type data_profile: str
+        :param system_profile: 文件系统配置（RAD）
+        :type system_profile: str
+        :param metadata_profile: 元数据配置（RAD）
+        :type metadata_profile: str
+        :param global_reserve1: Btrfs文件系统信息
+        :type global_reserve1: str
+        :param g_vol_used_size: Btrfs卷已使用空间大小
+        :type g_vol_used_size: int
+        :param default_subvolid: 默认子卷ID
+        :type default_subvolid: str
+        :param default_subvol_name: 默认子卷名称
+        :type default_subvol_name: str
+        :param default_subvol_mountpath: 默认子卷挂载路径/BTRFS文件系统的挂载路径
+        :type default_subvol_mountpath: str
+        :param subvolumn: 子卷信息
+        :type subvolumn: list[:class:`huaweicloudsdksms.v3.BtrfsSubvolumn`]
+        """
         
         
 
@@ -117,7 +152,7 @@ class BtrfsFileSystem:
         文件系统名称
 
         :param name: The name of this BtrfsFileSystem.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -139,7 +174,7 @@ class BtrfsFileSystem:
         文件系统标签，若无标签为空字符串
 
         :param label: The label of this BtrfsFileSystem.
-        :type: str
+        :type label: str
         """
         self._label = label
 
@@ -161,7 +196,7 @@ class BtrfsFileSystem:
         文件系统的uuid
 
         :param uuid: The uuid of this BtrfsFileSystem.
-        :type: str
+        :type uuid: str
         """
         self._uuid = uuid
 
@@ -183,7 +218,7 @@ class BtrfsFileSystem:
         btrfs包含的设备名称
 
         :param device: The device of this BtrfsFileSystem.
-        :type: str
+        :type device: str
         """
         self._device = device
 
@@ -205,7 +240,7 @@ class BtrfsFileSystem:
         文件系统数据占用大小
 
         :param size: The size of this BtrfsFileSystem.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -227,7 +262,7 @@ class BtrfsFileSystem:
         btrfs节点大小
 
         :param nodesize: The nodesize of this BtrfsFileSystem.
-        :type: int
+        :type nodesize: int
         """
         self._nodesize = nodesize
 
@@ -249,7 +284,7 @@ class BtrfsFileSystem:
         扇区大小
 
         :param sectorsize: The sectorsize of this BtrfsFileSystem.
-        :type: int
+        :type sectorsize: int
         """
         self._sectorsize = sectorsize
 
@@ -271,7 +306,7 @@ class BtrfsFileSystem:
         数据配置（RAD）
 
         :param data_profile: The data_profile of this BtrfsFileSystem.
-        :type: str
+        :type data_profile: str
         """
         self._data_profile = data_profile
 
@@ -293,7 +328,7 @@ class BtrfsFileSystem:
         文件系统配置（RAD）
 
         :param system_profile: The system_profile of this BtrfsFileSystem.
-        :type: str
+        :type system_profile: str
         """
         self._system_profile = system_profile
 
@@ -315,7 +350,7 @@ class BtrfsFileSystem:
         元数据配置（RAD）
 
         :param metadata_profile: The metadata_profile of this BtrfsFileSystem.
-        :type: str
+        :type metadata_profile: str
         """
         self._metadata_profile = metadata_profile
 
@@ -337,7 +372,7 @@ class BtrfsFileSystem:
         Btrfs文件系统信息
 
         :param global_reserve1: The global_reserve1 of this BtrfsFileSystem.
-        :type: str
+        :type global_reserve1: str
         """
         self._global_reserve1 = global_reserve1
 
@@ -359,7 +394,7 @@ class BtrfsFileSystem:
         Btrfs卷已使用空间大小
 
         :param g_vol_used_size: The g_vol_used_size of this BtrfsFileSystem.
-        :type: int
+        :type g_vol_used_size: int
         """
         self._g_vol_used_size = g_vol_used_size
 
@@ -381,7 +416,7 @@ class BtrfsFileSystem:
         默认子卷ID
 
         :param default_subvolid: The default_subvolid of this BtrfsFileSystem.
-        :type: str
+        :type default_subvolid: str
         """
         self._default_subvolid = default_subvolid
 
@@ -403,7 +438,7 @@ class BtrfsFileSystem:
         默认子卷名称
 
         :param default_subvol_name: The default_subvol_name of this BtrfsFileSystem.
-        :type: str
+        :type default_subvol_name: str
         """
         self._default_subvol_name = default_subvol_name
 
@@ -425,7 +460,7 @@ class BtrfsFileSystem:
         默认子卷挂载路径/BTRFS文件系统的挂载路径
 
         :param default_subvol_mountpath: The default_subvol_mountpath of this BtrfsFileSystem.
-        :type: str
+        :type default_subvol_mountpath: str
         """
         self._default_subvol_mountpath = default_subvol_mountpath
 
@@ -436,7 +471,7 @@ class BtrfsFileSystem:
         子卷信息
 
         :return: The subvolumn of this BtrfsFileSystem.
-        :rtype: list[BtrfsSubvolumn]
+        :rtype: list[:class:`huaweicloudsdksms.v3.BtrfsSubvolumn`]
         """
         return self._subvolumn
 
@@ -447,7 +482,7 @@ class BtrfsFileSystem:
         子卷信息
 
         :param subvolumn: The subvolumn of this BtrfsFileSystem.
-        :type: list[BtrfsSubvolumn]
+        :type subvolumn: list[:class:`huaweicloudsdksms.v3.BtrfsSubvolumn`]
         """
         self._subvolumn = subvolumn
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TaskInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class TaskInfo:
     }
 
     def __init__(self, created_at=None, last_health_check=None, messages=None, owner_id=None, task_id=None, task_index=None, task_name=None, task_status=None, task_type=None):
-        """TaskInfo - a model defined in huaweicloud sdk"""
+        """TaskInfo
+
+        The model defined in huaweicloud sdk
+
+        :param created_at: 创建时间。
+        :type created_at: str
+        :param last_health_check: 健康检查时间。
+        :type last_health_check: str
+        :param messages: 消息。
+        :type messages: str
+        :param owner_id: 创建用户ID。
+        :type owner_id: str
+        :param task_id: 任务ID。
+        :type task_id: str
+        :param task_index: 任务序号。
+        :type task_index: int
+        :param task_name: 任务名称。
+        :type task_name: str
+        :param task_status: 任务状态。
+        :type task_status: str
+        :param task_type: 任务类型。
+        :type task_type: str
+        """
         
         
 
@@ -98,7 +119,7 @@ class TaskInfo:
         创建时间。
 
         :param created_at: The created_at of this TaskInfo.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -120,7 +141,7 @@ class TaskInfo:
         健康检查时间。
 
         :param last_health_check: The last_health_check of this TaskInfo.
-        :type: str
+        :type last_health_check: str
         """
         self._last_health_check = last_health_check
 
@@ -142,7 +163,7 @@ class TaskInfo:
         消息。
 
         :param messages: The messages of this TaskInfo.
-        :type: str
+        :type messages: str
         """
         self._messages = messages
 
@@ -164,7 +185,7 @@ class TaskInfo:
         创建用户ID。
 
         :param owner_id: The owner_id of this TaskInfo.
-        :type: str
+        :type owner_id: str
         """
         self._owner_id = owner_id
 
@@ -186,7 +207,7 @@ class TaskInfo:
         任务ID。
 
         :param task_id: The task_id of this TaskInfo.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -208,7 +229,7 @@ class TaskInfo:
         任务序号。
 
         :param task_index: The task_index of this TaskInfo.
-        :type: int
+        :type task_index: int
         """
         self._task_index = task_index
 
@@ -230,7 +251,7 @@ class TaskInfo:
         任务名称。
 
         :param task_name: The task_name of this TaskInfo.
-        :type: str
+        :type task_name: str
         """
         self._task_name = task_name
 
@@ -252,7 +273,7 @@ class TaskInfo:
         任务状态。
 
         :param task_status: The task_status of this TaskInfo.
-        :type: str
+        :type task_status: str
         """
         self._task_status = task_status
 
@@ -274,7 +295,7 @@ class TaskInfo:
         任务类型。
 
         :param task_type: The task_type of this TaskInfo.
-        :type: str
+        :type task_type: str
         """
         self._task_type = task_type
 

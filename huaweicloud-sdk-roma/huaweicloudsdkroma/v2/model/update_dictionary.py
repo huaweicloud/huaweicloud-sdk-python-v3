@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDictionary:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class UpdateDictionary:
     }
 
     def __init__(self, name=None, remark=None, order=None, extend_one=None, extend_two=None):
-        """UpdateDictionary - a model defined in huaweicloud sdk"""
+        """UpdateDictionary
+
+        The model defined in huaweicloud sdk
+
+        :param name: 字典名称 - 字符集：中文、英文字母、数字、下划线和空格 - 约束：实例下唯一
+        :type name: str
+        :param remark: 字典描述
+        :type remark: str
+        :param order: 字典排序，值越小顺序越靠前
+        :type order: int
+        :param extend_one: 字典扩展字段1 - 字符集：中文、英文字母、数字、下划线和空格
+        :type extend_one: str
+        :param extend_two: 字典扩展字段2 - 字符集：中文、英文字母、数字、下划线和空格
+        :type extend_two: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class UpdateDictionary:
         字典名称 - 字符集：中文、英文字母、数字、下划线和空格 - 约束：实例下唯一
 
         :param name: The name of this UpdateDictionary.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -100,7 +113,7 @@ class UpdateDictionary:
         字典描述
 
         :param remark: The remark of this UpdateDictionary.
-        :type: str
+        :type remark: str
         """
         self._remark = remark
 
@@ -122,7 +135,7 @@ class UpdateDictionary:
         字典排序，值越小顺序越靠前
 
         :param order: The order of this UpdateDictionary.
-        :type: int
+        :type order: int
         """
         self._order = order
 
@@ -144,7 +157,7 @@ class UpdateDictionary:
         字典扩展字段1 - 字符集：中文、英文字母、数字、下划线和空格
 
         :param extend_one: The extend_one of this UpdateDictionary.
-        :type: str
+        :type extend_one: str
         """
         self._extend_one = extend_one
 
@@ -166,7 +179,7 @@ class UpdateDictionary:
         字典扩展字段2 - 字符集：中文、英文字母、数字、下划线和空格
 
         :param extend_two: The extend_two of this UpdateDictionary.
-        :type: str
+        :type extend_two: str
         """
         self._extend_two = extend_two
 

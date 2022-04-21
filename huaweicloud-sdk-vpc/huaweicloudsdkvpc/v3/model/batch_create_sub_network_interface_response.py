@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchCreateSubNetworkInterfaceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchCreateSubNetworkInterfaceResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, sub_network_interfaces=None):
-        """BatchCreateSubNetworkInterfaceResponse - a model defined in huaweicloud sdk"""
+        """BatchCreateSubNetworkInterfaceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param request_id: 请求ID
+        :type request_id: str
+        :param sub_network_interfaces: 批量创建辅助弹性网卡的响应体
+        :type sub_network_interfaces: list[:class:`huaweicloudsdkvpc.v3.SubNetworkInterface`]
+        """
         
         super(BatchCreateSubNetworkInterfaceResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class BatchCreateSubNetworkInterfaceResponse(SdkResponse):
         请求ID
 
         :param request_id: The request_id of this BatchCreateSubNetworkInterfaceResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 
@@ -74,7 +81,7 @@ class BatchCreateSubNetworkInterfaceResponse(SdkResponse):
         批量创建辅助弹性网卡的响应体
 
         :return: The sub_network_interfaces of this BatchCreateSubNetworkInterfaceResponse.
-        :rtype: list[SubNetworkInterface]
+        :rtype: list[:class:`huaweicloudsdkvpc.v3.SubNetworkInterface`]
         """
         return self._sub_network_interfaces
 
@@ -85,7 +92,7 @@ class BatchCreateSubNetworkInterfaceResponse(SdkResponse):
         批量创建辅助弹性网卡的响应体
 
         :param sub_network_interfaces: The sub_network_interfaces of this BatchCreateSubNetworkInterfaceResponse.
-        :type: list[SubNetworkInterface]
+        :type sub_network_interfaces: list[:class:`huaweicloudsdkvpc.v3.SubNetworkInterface`]
         """
         self._sub_network_interfaces = sub_network_interfaces
 

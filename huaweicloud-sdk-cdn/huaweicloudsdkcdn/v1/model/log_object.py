@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LogObject:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class LogObject:
     }
 
     def __init__(self, domain_name=None, start_time=None, end_time=None, name=None, size=None, link=None):
-        """LogObject - a model defined in huaweicloud sdk"""
+        """LogObject
+
+        The model defined in huaweicloud sdk
+
+        :param domain_name: 域名名称。
+        :type domain_name: str
+        :param start_time: 查询起始时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
+        :type start_time: int
+        :param end_time: 查询结束时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
+        :type end_time: int
+        :param name: 日志文件名字。
+        :type name: str
+        :param size: 文件大小(Byte)。
+        :type size: int
+        :param link: 下载链接。
+        :type link: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class LogObject:
         域名名称。
 
         :param domain_name: The domain_name of this LogObject.
-        :type: str
+        :type domain_name: str
         """
         self._domain_name = domain_name
 
@@ -105,7 +120,7 @@ class LogObject:
         查询起始时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
 
         :param start_time: The start_time of this LogObject.
-        :type: int
+        :type start_time: int
         """
         self._start_time = start_time
 
@@ -127,7 +142,7 @@ class LogObject:
         查询结束时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
 
         :param end_time: The end_time of this LogObject.
-        :type: int
+        :type end_time: int
         """
         self._end_time = end_time
 
@@ -149,7 +164,7 @@ class LogObject:
         日志文件名字。
 
         :param name: The name of this LogObject.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -171,7 +186,7 @@ class LogObject:
         文件大小(Byte)。
 
         :param size: The size of this LogObject.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -193,7 +208,7 @@ class LogObject:
         下载链接。
 
         :param link: The link of this LogObject.
-        :type: str
+        :type link: str
         """
         self._link = link
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListFunctionAsyncInvocationsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListFunctionAsyncInvocationsResponse(SdkResponse):
     }
 
     def __init__(self, invocations=None):
-        """ListFunctionAsyncInvocationsResponse - a model defined in huaweicloud sdk"""
+        """ListFunctionAsyncInvocationsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param invocations: 异步调用记录列表。
+        :type invocations: list[:class:`huaweicloudsdkfunctiongraph.v2.ListFunctionAsyncInvocationsResult`]
+        """
         
         super(ListFunctionAsyncInvocationsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListFunctionAsyncInvocationsResponse(SdkResponse):
         异步调用记录列表。
 
         :return: The invocations of this ListFunctionAsyncInvocationsResponse.
-        :rtype: list[ListFunctionAsyncInvocationsResult]
+        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.ListFunctionAsyncInvocationsResult`]
         """
         return self._invocations
 
@@ -58,7 +63,7 @@ class ListFunctionAsyncInvocationsResponse(SdkResponse):
         异步调用记录列表。
 
         :param invocations: The invocations of this ListFunctionAsyncInvocationsResponse.
-        :type: list[ListFunctionAsyncInvocationsResult]
+        :type invocations: list[:class:`huaweicloudsdkfunctiongraph.v2.ListFunctionAsyncInvocationsResult`]
         """
         self._invocations = invocations
 

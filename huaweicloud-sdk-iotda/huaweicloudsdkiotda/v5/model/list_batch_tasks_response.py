@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListBatchTasksResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListBatchTasksResponse(SdkResponse):
     }
 
     def __init__(self, batchtasks=None, page=None):
-        """ListBatchTasksResponse - a model defined in huaweicloud sdk"""
+        """ListBatchTasksResponse
+
+        The model defined in huaweicloud sdk
+
+        :param batchtasks: 批量任务列表。
+        :type batchtasks: list[:class:`huaweicloudsdkiotda.v5.Task`]
+        :param page: 
+        :type page: :class:`huaweicloudsdkiotda.v5.Page`
+        """
         
         super(ListBatchTasksResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListBatchTasksResponse(SdkResponse):
         批量任务列表。
 
         :return: The batchtasks of this ListBatchTasksResponse.
-        :rtype: list[Task]
+        :rtype: list[:class:`huaweicloudsdkiotda.v5.Task`]
         """
         return self._batchtasks
 
@@ -63,7 +70,7 @@ class ListBatchTasksResponse(SdkResponse):
         批量任务列表。
 
         :param batchtasks: The batchtasks of this ListBatchTasksResponse.
-        :type: list[Task]
+        :type batchtasks: list[:class:`huaweicloudsdkiotda.v5.Task`]
         """
         self._batchtasks = batchtasks
 
@@ -73,7 +80,7 @@ class ListBatchTasksResponse(SdkResponse):
 
 
         :return: The page of this ListBatchTasksResponse.
-        :rtype: Page
+        :rtype: :class:`huaweicloudsdkiotda.v5.Page`
         """
         return self._page
 
@@ -83,7 +90,7 @@ class ListBatchTasksResponse(SdkResponse):
 
 
         :param page: The page of this ListBatchTasksResponse.
-        :type: Page
+        :type page: :class:`huaweicloudsdkiotda.v5.Page`
         """
         self._page = page
 

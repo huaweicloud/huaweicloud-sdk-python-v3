@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteCustomAuthorizerV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteCustomAuthorizerV2Request:
     }
 
     def __init__(self, instance_id=None, authorizer_id=None):
-        """DeleteCustomAuthorizerV2Request - a model defined in huaweicloud sdk"""
+        """DeleteCustomAuthorizerV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param authorizer_id: 自定义认证的编号
+        :type authorizer_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class DeleteCustomAuthorizerV2Request:
         实例ID
 
         :param instance_id: The instance_id of this DeleteCustomAuthorizerV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -83,7 +90,7 @@ class DeleteCustomAuthorizerV2Request:
         自定义认证的编号
 
         :param authorizer_id: The authorizer_id of this DeleteCustomAuthorizerV2Request.
-        :type: str
+        :type authorizer_id: str
         """
         self._authorizer_id = authorizer_id
 

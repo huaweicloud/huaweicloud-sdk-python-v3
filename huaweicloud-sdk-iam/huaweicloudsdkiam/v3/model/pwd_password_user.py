@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PwdPasswordUser:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class PwdPasswordUser:
     }
 
     def __init__(self, domain=None, name=None, password=None):
-        """PwdPasswordUser - a model defined in huaweicloud sdk"""
+        """PwdPasswordUser
+
+        The model defined in huaweicloud sdk
+
+        :param domain: 
+        :type domain: :class:`huaweicloudsdkiam.v3.PwdPasswordUserDomain`
+        :param name: IAM用户名，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
+        :type name: str
+        :param password: IAM用户的登录密码。
+        :type password: str
+        """
         
         
 
@@ -53,7 +62,7 @@ class PwdPasswordUser:
 
 
         :return: The domain of this PwdPasswordUser.
-        :rtype: PwdPasswordUserDomain
+        :rtype: :class:`huaweicloudsdkiam.v3.PwdPasswordUserDomain`
         """
         return self._domain
 
@@ -63,7 +72,7 @@ class PwdPasswordUser:
 
 
         :param domain: The domain of this PwdPasswordUser.
-        :type: PwdPasswordUserDomain
+        :type domain: :class:`huaweicloudsdkiam.v3.PwdPasswordUserDomain`
         """
         self._domain = domain
 
@@ -85,7 +94,7 @@ class PwdPasswordUser:
         IAM用户名，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param name: The name of this PwdPasswordUser.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -107,7 +116,7 @@ class PwdPasswordUser:
         IAM用户的登录密码。
 
         :param password: The password of this PwdPasswordUser.
-        :type: str
+        :type password: str
         """
         self._password = password
 

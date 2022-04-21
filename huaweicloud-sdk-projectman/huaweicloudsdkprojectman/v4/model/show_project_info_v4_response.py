@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowProjectInfoV4Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowProjectInfoV4Response(SdkResponse):
     }
 
     def __init__(self, project=None):
-        """ShowProjectInfoV4Response - a model defined in huaweicloud sdk"""
+        """ShowProjectInfoV4Response
+
+        The model defined in huaweicloud sdk
+
+        :param project: 
+        :type project: :class:`huaweicloudsdkprojectman.v4.GetProjectInfoV4ResultProject`
+        """
         
         super(ShowProjectInfoV4Response, self).__init__()
 
@@ -46,7 +51,7 @@ class ShowProjectInfoV4Response(SdkResponse):
 
 
         :return: The project of this ShowProjectInfoV4Response.
-        :rtype: GetProjectInfoV4ResultProject
+        :rtype: :class:`huaweicloudsdkprojectman.v4.GetProjectInfoV4ResultProject`
         """
         return self._project
 
@@ -56,7 +61,7 @@ class ShowProjectInfoV4Response(SdkResponse):
 
 
         :param project: The project of this ShowProjectInfoV4Response.
-        :type: GetProjectInfoV4ResultProject
+        :type project: :class:`huaweicloudsdkprojectman.v4.GetProjectInfoV4ResultProject`
         """
         self._project = project
 

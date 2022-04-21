@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PictureReviewRet:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class PictureReviewRet:
     }
 
     def __init__(self, suggestion=None, offset=None, url=None, politics=None, terrorism=None, porn=None):
-        """PictureReviewRet - a model defined in huaweicloud sdk"""
+        """PictureReviewRet
+
+        The model defined in huaweicloud sdk
+
+        :param suggestion: 检测结果是否通过。  取值如下： - block：包含敏感信息，不通过。 - pass：不包含敏感信息，通过。 - review：需要人工复检。
+        :type suggestion: str
+        :param offset: 截图在视频中的时间偏移值。封面不涉及此字段  单位：秒。
+        :type offset: int
+        :param url: 对应截图/封面的访问URL。
+        :type url: str
+        :param politics: 政治因素审核结果。
+        :type politics: list[:class:`huaweicloudsdkvod.v1.ReviewDetail`]
+        :param terrorism: 暴恐元素审核结果。
+        :type terrorism: list[:class:`huaweicloudsdkvod.v1.ReviewDetail`]
+        :param porn: 涉黄内容审核结果。
+        :type porn: list[:class:`huaweicloudsdkvod.v1.ReviewDetail`]
+        """
         
         
 
@@ -82,7 +97,7 @@ class PictureReviewRet:
         检测结果是否通过。  取值如下： - block：包含敏感信息，不通过。 - pass：不包含敏感信息，通过。 - review：需要人工复检。
 
         :param suggestion: The suggestion of this PictureReviewRet.
-        :type: str
+        :type suggestion: str
         """
         self._suggestion = suggestion
 
@@ -104,7 +119,7 @@ class PictureReviewRet:
         截图在视频中的时间偏移值。封面不涉及此字段  单位：秒。
 
         :param offset: The offset of this PictureReviewRet.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -126,7 +141,7 @@ class PictureReviewRet:
         对应截图/封面的访问URL。
 
         :param url: The url of this PictureReviewRet.
-        :type: str
+        :type url: str
         """
         self._url = url
 
@@ -137,7 +152,7 @@ class PictureReviewRet:
         政治因素审核结果。
 
         :return: The politics of this PictureReviewRet.
-        :rtype: list[ReviewDetail]
+        :rtype: list[:class:`huaweicloudsdkvod.v1.ReviewDetail`]
         """
         return self._politics
 
@@ -148,7 +163,7 @@ class PictureReviewRet:
         政治因素审核结果。
 
         :param politics: The politics of this PictureReviewRet.
-        :type: list[ReviewDetail]
+        :type politics: list[:class:`huaweicloudsdkvod.v1.ReviewDetail`]
         """
         self._politics = politics
 
@@ -159,7 +174,7 @@ class PictureReviewRet:
         暴恐元素审核结果。
 
         :return: The terrorism of this PictureReviewRet.
-        :rtype: list[ReviewDetail]
+        :rtype: list[:class:`huaweicloudsdkvod.v1.ReviewDetail`]
         """
         return self._terrorism
 
@@ -170,7 +185,7 @@ class PictureReviewRet:
         暴恐元素审核结果。
 
         :param terrorism: The terrorism of this PictureReviewRet.
-        :type: list[ReviewDetail]
+        :type terrorism: list[:class:`huaweicloudsdkvod.v1.ReviewDetail`]
         """
         self._terrorism = terrorism
 
@@ -181,7 +196,7 @@ class PictureReviewRet:
         涉黄内容审核结果。
 
         :return: The porn of this PictureReviewRet.
-        :rtype: list[ReviewDetail]
+        :rtype: list[:class:`huaweicloudsdkvod.v1.ReviewDetail`]
         """
         return self._porn
 
@@ -192,7 +207,7 @@ class PictureReviewRet:
         涉黄内容审核结果。
 
         :param porn: The porn of this PictureReviewRet.
-        :type: list[ReviewDetail]
+        :type porn: list[:class:`huaweicloudsdkvod.v1.ReviewDetail`]
         """
         self._porn = porn
 

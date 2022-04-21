@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FollowerMigrateRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class FollowerMigrateRequest:
     }
 
     def __init__(self, node_id=None, az_code=None):
-        """FollowerMigrateRequest - a model defined in huaweicloud sdk"""
+        """FollowerMigrateRequest
+
+        The model defined in huaweicloud sdk
+
+        :param node_id: 备机节点Id
+        :type node_id: str
+        :param az_code: 要迁入的可用区code
+        :type az_code: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class FollowerMigrateRequest:
         备机节点Id
 
         :param node_id: The node_id of this FollowerMigrateRequest.
-        :type: str
+        :type node_id: str
         """
         self._node_id = node_id
 
@@ -83,7 +90,7 @@ class FollowerMigrateRequest:
         要迁入的可用区code
 
         :param az_code: The az_code of this FollowerMigrateRequest.
-        :type: str
+        :type az_code: str
         """
         self._az_code = az_code
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ClusterListInstances:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ClusterListInstances:
     }
 
     def __init__(self, status=None, type=None, id=None, name=None, spec_code=None, az_code=None):
-        """ClusterListInstances - a model defined in huaweicloud sdk"""
+        """ClusterListInstances
+
+        The model defined in huaweicloud sdk
+
+        :param status: 状态。  - 100：创建中。 - 200：可用。 - 303：不可用，如创建失败。
+        :type status: str
+        :param type: 支持类型：ess（Elasticsearch节点）。
+        :type type: str
+        :param id: 实例ID。
+        :type id: str
+        :param name: 实例名字。
+        :type name: str
+        :param spec_code: 节点规格名称。
+        :type spec_code: str
+        :param az_code: 节点所属AZ信息。
+        :type az_code: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class ClusterListInstances:
         状态。  - 100：创建中。 - 200：可用。 - 303：不可用，如创建失败。
 
         :param status: The status of this ClusterListInstances.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -105,7 +120,7 @@ class ClusterListInstances:
         支持类型：ess（Elasticsearch节点）。
 
         :param type: The type of this ClusterListInstances.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -127,7 +142,7 @@ class ClusterListInstances:
         实例ID。
 
         :param id: The id of this ClusterListInstances.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -149,7 +164,7 @@ class ClusterListInstances:
         实例名字。
 
         :param name: The name of this ClusterListInstances.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -171,7 +186,7 @@ class ClusterListInstances:
         节点规格名称。
 
         :param spec_code: The spec_code of this ClusterListInstances.
-        :type: str
+        :type spec_code: str
         """
         self._spec_code = spec_code
 
@@ -193,7 +208,7 @@ class ClusterListInstances:
         节点所属AZ信息。
 
         :param az_code: The az_code of this ClusterListInstances.
-        :type: str
+        :type az_code: str
         """
         self._az_code = az_code
 

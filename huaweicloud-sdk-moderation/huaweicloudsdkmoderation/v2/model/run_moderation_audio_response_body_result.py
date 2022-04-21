@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunModerationAudioResponseBodyResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RunModerationAudioResponseBodyResult:
     }
 
     def __init__(self, detail=None, suggestion=None):
-        """RunModerationAudioResponseBodyResult - a model defined in huaweicloud sdk"""
+        """RunModerationAudioResponseBodyResult
+
+        The model defined in huaweicloud sdk
+
+        :param detail: 
+        :type detail: :class:`huaweicloudsdkmoderation.v2.RunModerationAudioResponseBodyResultDetail`
+        :param suggestion: 检测结果是否通过。 block：包含敏感信息，不通过。 pass：不包含敏感信息，通过。 review：需要人工复查 
+        :type suggestion: str
+        """
         
         
 
@@ -51,7 +58,7 @@ class RunModerationAudioResponseBodyResult:
 
 
         :return: The detail of this RunModerationAudioResponseBodyResult.
-        :rtype: RunModerationAudioResponseBodyResultDetail
+        :rtype: :class:`huaweicloudsdkmoderation.v2.RunModerationAudioResponseBodyResultDetail`
         """
         return self._detail
 
@@ -61,7 +68,7 @@ class RunModerationAudioResponseBodyResult:
 
 
         :param detail: The detail of this RunModerationAudioResponseBodyResult.
-        :type: RunModerationAudioResponseBodyResultDetail
+        :type detail: :class:`huaweicloudsdkmoderation.v2.RunModerationAudioResponseBodyResultDetail`
         """
         self._detail = detail
 
@@ -83,7 +90,7 @@ class RunModerationAudioResponseBodyResult:
         检测结果是否通过。 block：包含敏感信息，不通过。 pass：不包含敏感信息，通过。 review：需要人工复查 
 
         :param suggestion: The suggestion of this RunModerationAudioResponseBodyResult.
-        :type: str
+        :type suggestion: str
         """
         self._suggestion = suggestion
 

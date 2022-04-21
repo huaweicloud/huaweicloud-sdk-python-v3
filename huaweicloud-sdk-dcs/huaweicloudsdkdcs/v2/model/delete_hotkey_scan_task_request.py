@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteHotkeyScanTaskRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteHotkeyScanTaskRequest:
     }
 
     def __init__(self, instance_id=None, hotkey_id=None):
-        """DeleteHotkeyScanTaskRequest - a model defined in huaweicloud sdk"""
+        """DeleteHotkeyScanTaskRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param hotkey_id: 热key分析任务ID。
+        :type hotkey_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class DeleteHotkeyScanTaskRequest:
         实例ID。
 
         :param instance_id: The instance_id of this DeleteHotkeyScanTaskRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -83,7 +90,7 @@ class DeleteHotkeyScanTaskRequest:
         热key分析任务ID。
 
         :param hotkey_id: The hotkey_id of this DeleteHotkeyScanTaskRequest.
-        :type: str
+        :type hotkey_id: str
         """
         self._hotkey_id = hotkey_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LastAssetPropertyValueRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class LastAssetPropertyValueRequest:
     }
 
     def __init__(self, tags=None, property_filter=None, property_names=None):
-        """LastAssetPropertyValueRequest - a model defined in huaweicloud sdk"""
+        """LastAssetPropertyValueRequest
+
+        The model defined in huaweicloud sdk
+
+        :param tags: 对property按指定tags标签进行过滤查询，填入资产标签属性的属性名与属性值，不可为空，例如 {\&quot;tagPropertyA\&quot;: \&quot;id0001\&quot;}；注意，标签过滤只对打上标签时刻之后的数据生效，打标签之前的数据不能通过标签过滤
+        :type tags: dict(str, object)
+        :param property_filter: 属性过滤器，最多5个
+        :type property_filter: list[:class:`huaweicloudsdkiotanalytics.v1.PropertyFilter`]
+        :param property_names: 待查询的资产属性名列表,不携带该字段表示查询全部
+        :type property_names: list[str]
+        """
         
         
 
@@ -68,7 +77,7 @@ class LastAssetPropertyValueRequest:
         对property按指定tags标签进行过滤查询，填入资产标签属性的属性名与属性值，不可为空，例如 {\"tagPropertyA\": \"id0001\"}；注意，标签过滤只对打上标签时刻之后的数据生效，打标签之前的数据不能通过标签过滤
 
         :param tags: The tags of this LastAssetPropertyValueRequest.
-        :type: dict(str, object)
+        :type tags: dict(str, object)
         """
         self._tags = tags
 
@@ -79,7 +88,7 @@ class LastAssetPropertyValueRequest:
         属性过滤器，最多5个
 
         :return: The property_filter of this LastAssetPropertyValueRequest.
-        :rtype: list[PropertyFilter]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.PropertyFilter`]
         """
         return self._property_filter
 
@@ -90,7 +99,7 @@ class LastAssetPropertyValueRequest:
         属性过滤器，最多5个
 
         :param property_filter: The property_filter of this LastAssetPropertyValueRequest.
-        :type: list[PropertyFilter]
+        :type property_filter: list[:class:`huaweicloudsdkiotanalytics.v1.PropertyFilter`]
         """
         self._property_filter = property_filter
 
@@ -112,7 +121,7 @@ class LastAssetPropertyValueRequest:
         待查询的资产属性名列表,不携带该字段表示查询全部
 
         :param property_names: The property_names of this LastAssetPropertyValueRequest.
-        :type: list[str]
+        :type property_names: list[str]
         """
         self._property_names = property_names
 

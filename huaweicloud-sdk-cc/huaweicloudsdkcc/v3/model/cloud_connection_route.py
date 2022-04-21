@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CloudConnectionRoute:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class CloudConnectionRoute:
     }
 
     def __init__(self, id=None, cloud_connection_id=None, domain_id=None, project_id=None, instance_id=None, type=None, region_id=None, destination=None):
-        """CloudConnectionRoute - a model defined in huaweicloud sdk"""
+        """CloudConnectionRoute
+
+        The model defined in huaweicloud sdk
+
+        :param id: 云连接实例路由的ID。
+        :type id: str
+        :param cloud_connection_id: 云连接实例的ID。
+        :type cloud_connection_id: str
+        :param domain_id: 帐号ID。
+        :type domain_id: str
+        :param project_id: 网络实例的项目ID。
+        :type project_id: str
+        :param instance_id: 路由条目下一跳指向的网络实例的ID。
+        :type instance_id: str
+        :param type: 路由条目下一跳指向的网络实例的类型。 |- VPC：虚拟私有云。 VGW：虚拟网关。
+        :type type: str
+        :param region_id: Region的ID。
+        :type region_id: str
+        :param destination: 目的地址。
+        :type destination: str
+        """
         
         
 
@@ -93,7 +112,7 @@ class CloudConnectionRoute:
         云连接实例路由的ID。
 
         :param id: The id of this CloudConnectionRoute.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -115,7 +134,7 @@ class CloudConnectionRoute:
         云连接实例的ID。
 
         :param cloud_connection_id: The cloud_connection_id of this CloudConnectionRoute.
-        :type: str
+        :type cloud_connection_id: str
         """
         self._cloud_connection_id = cloud_connection_id
 
@@ -137,7 +156,7 @@ class CloudConnectionRoute:
         帐号ID。
 
         :param domain_id: The domain_id of this CloudConnectionRoute.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -159,7 +178,7 @@ class CloudConnectionRoute:
         网络实例的项目ID。
 
         :param project_id: The project_id of this CloudConnectionRoute.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -181,7 +200,7 @@ class CloudConnectionRoute:
         路由条目下一跳指向的网络实例的ID。
 
         :param instance_id: The instance_id of this CloudConnectionRoute.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -203,7 +222,7 @@ class CloudConnectionRoute:
         路由条目下一跳指向的网络实例的类型。 |- VPC：虚拟私有云。 VGW：虚拟网关。
 
         :param type: The type of this CloudConnectionRoute.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -225,7 +244,7 @@ class CloudConnectionRoute:
         Region的ID。
 
         :param region_id: The region_id of this CloudConnectionRoute.
-        :type: str
+        :type region_id: str
         """
         self._region_id = region_id
 
@@ -247,7 +266,7 @@ class CloudConnectionRoute:
         目的地址。
 
         :param destination: The destination of this CloudConnectionRoute.
-        :type: str
+        :type destination: str
         """
         self._destination = destination
 

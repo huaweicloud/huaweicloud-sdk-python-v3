@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchCreateVpcTagsRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchCreateVpcTagsRequestBody:
     }
 
     def __init__(self, action=None, tags=None):
-        """BatchCreateVpcTagsRequestBody - a model defined in huaweicloud sdk"""
+        """BatchCreateVpcTagsRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param action: 功能说明：操作标识 取值范围：create
+        :type action: str
+        :param tags: 功能说明：标签列表
+        :type tags: list[:class:`huaweicloudsdkvpc.v2.ResourceTag`]
+        """
         
         
 
@@ -61,7 +68,7 @@ class BatchCreateVpcTagsRequestBody:
         功能说明：操作标识 取值范围：create
 
         :param action: The action of this BatchCreateVpcTagsRequestBody.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -72,7 +79,7 @@ class BatchCreateVpcTagsRequestBody:
         功能说明：标签列表
 
         :return: The tags of this BatchCreateVpcTagsRequestBody.
-        :rtype: list[ResourceTag]
+        :rtype: list[:class:`huaweicloudsdkvpc.v2.ResourceTag`]
         """
         return self._tags
 
@@ -83,7 +90,7 @@ class BatchCreateVpcTagsRequestBody:
         功能说明：标签列表
 
         :param tags: The tags of this BatchCreateVpcTagsRequestBody.
-        :type: list[ResourceTag]
+        :type tags: list[:class:`huaweicloudsdkvpc.v2.ResourceTag`]
         """
         self._tags = tags
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResourcePrice:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ResourcePrice:
     }
 
     def __init__(self, arch=None, price=None, size=None, type=None):
-        """ResourcePrice - a model defined in huaweicloud sdk"""
+        """ResourcePrice
+
+        The model defined in huaweicloud sdk
+
+        :param arch: cpu架构 x86|arm
+        :type arch: str
+        :param price: 价格
+        :type price: float
+        :param size: 规格。 类型为&#39;storage&#39;时，size值可以为5GB，10GB，20GB。 类型为&#39;cpuMemory&#39;时，arch为&#39;x86&#39;，size值可以为1U1G，2U4G，4U8G；arch为&#39;arm&#39;，size值可以为4U8G。
+        :type size: str
+        :param type: 类型。目前可以取值storage，cpuMemory
+        :type type: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class ResourcePrice:
         cpu架构 x86|arm
 
         :param arch: The arch of this ResourcePrice.
-        :type: str
+        :type arch: str
         """
         self._arch = arch
 
@@ -95,7 +106,7 @@ class ResourcePrice:
         价格
 
         :param price: The price of this ResourcePrice.
-        :type: float
+        :type price: float
         """
         self._price = price
 
@@ -117,7 +128,7 @@ class ResourcePrice:
         规格。 类型为'storage'时，size值可以为5GB，10GB，20GB。 类型为'cpuMemory'时，arch为'x86'，size值可以为1U1G，2U4G，4U8G；arch为'arm'，size值可以为4U8G。
 
         :param size: The size of this ResourcePrice.
-        :type: str
+        :type size: str
         """
         self._size = size
 
@@ -139,7 +150,7 @@ class ResourcePrice:
         类型。目前可以取值storage，cpuMemory
 
         :param type: The type of this ResourcePrice.
-        :type: str
+        :type type: str
         """
         self._type = type
 

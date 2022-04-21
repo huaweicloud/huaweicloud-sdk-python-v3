@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MpcMultiAudio:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class MpcMultiAudio:
     }
 
     def __init__(self, output=None, audio_files=None, output_filename=None):
-        """MpcMultiAudio - a model defined in huaweicloud sdk"""
+        """MpcMultiAudio
+
+        The model defined in huaweicloud sdk
+
+        :param output: 
+        :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        :param audio_files: 音频文件列表
+        :type audio_files: list[:class:`huaweicloudsdkmpc.v1.AudioFile`]
+        :param output_filename: 输出文件名。 
+        :type output_filename: str
+        """
         
         
 
@@ -56,7 +65,7 @@ class MpcMultiAudio:
 
 
         :return: The output of this MpcMultiAudio.
-        :rtype: ObsObjInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         return self._output
 
@@ -66,7 +75,7 @@ class MpcMultiAudio:
 
 
         :param output: The output of this MpcMultiAudio.
-        :type: ObsObjInfo
+        :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         self._output = output
 
@@ -77,7 +86,7 @@ class MpcMultiAudio:
         音频文件列表
 
         :return: The audio_files of this MpcMultiAudio.
-        :rtype: list[AudioFile]
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.AudioFile`]
         """
         return self._audio_files
 
@@ -88,7 +97,7 @@ class MpcMultiAudio:
         音频文件列表
 
         :param audio_files: The audio_files of this MpcMultiAudio.
-        :type: list[AudioFile]
+        :type audio_files: list[:class:`huaweicloudsdkmpc.v1.AudioFile`]
         """
         self._audio_files = audio_files
 
@@ -110,7 +119,7 @@ class MpcMultiAudio:
         输出文件名。 
 
         :param output_filename: The output_filename of this MpcMultiAudio.
-        :type: str
+        :type output_filename: str
         """
         self._output_filename = output_filename
 

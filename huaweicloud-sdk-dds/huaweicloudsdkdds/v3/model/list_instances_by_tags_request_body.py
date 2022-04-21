@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListInstancesByTagsRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListInstancesByTagsRequestBody:
     }
 
     def __init__(self, offset=None, limit=None, action=None, matches=None, tags=None):
-        """ListInstancesByTagsRequestBody - a model defined in huaweicloud sdk"""
+        """ListInstancesByTagsRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param offset: 索引位置偏移量，表示从第一条数据偏移offset条数据后开始查询。 - “action”值为“count”时，不传该参数。 - “action”值为“filter”时，取值必须为数字，不能为负数。默认取0值，表示从第一条数据开始查询。&#39;
+        :type offset: str
+        :param limit: 查询记录数。   - “action”值为“count”时，不传该参数。   - “action”值为“filter”时，取值范围：1~100。不传该参数时，默认查询前100条实例信息。
+        :type limit: str
+        :param action: 操作标识。   - 取值为“filter”，表示根据标签过滤条件查询实例。   - 取值为“count”，表示仅返回总记录数，禁止返回其他字段。
+        :type action: str
+        :param matches: 搜索字段。   - 该字段值为空，表示不按照实例名称或实例ID查询。   - 该字段值不为空
+        :type matches: list[:class:`huaweicloudsdkdds.v3.QueryMatchItem`]
+        :param tags: 包含标签，最多包含10个key。
+        :type tags: list[:class:`huaweicloudsdkdds.v3.QueryTagItem`]
+        """
         
         
 
@@ -77,7 +90,7 @@ class ListInstancesByTagsRequestBody:
         索引位置偏移量，表示从第一条数据偏移offset条数据后开始查询。 - “action”值为“count”时，不传该参数。 - “action”值为“filter”时，取值必须为数字，不能为负数。默认取0值，表示从第一条数据开始查询。'
 
         :param offset: The offset of this ListInstancesByTagsRequestBody.
-        :type: str
+        :type offset: str
         """
         self._offset = offset
 
@@ -99,7 +112,7 @@ class ListInstancesByTagsRequestBody:
         查询记录数。   - “action”值为“count”时，不传该参数。   - “action”值为“filter”时，取值范围：1~100。不传该参数时，默认查询前100条实例信息。
 
         :param limit: The limit of this ListInstancesByTagsRequestBody.
-        :type: str
+        :type limit: str
         """
         self._limit = limit
 
@@ -121,7 +134,7 @@ class ListInstancesByTagsRequestBody:
         操作标识。   - 取值为“filter”，表示根据标签过滤条件查询实例。   - 取值为“count”，表示仅返回总记录数，禁止返回其他字段。
 
         :param action: The action of this ListInstancesByTagsRequestBody.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -132,7 +145,7 @@ class ListInstancesByTagsRequestBody:
         搜索字段。   - 该字段值为空，表示不按照实例名称或实例ID查询。   - 该字段值不为空
 
         :return: The matches of this ListInstancesByTagsRequestBody.
-        :rtype: list[QueryMatchItem]
+        :rtype: list[:class:`huaweicloudsdkdds.v3.QueryMatchItem`]
         """
         return self._matches
 
@@ -143,7 +156,7 @@ class ListInstancesByTagsRequestBody:
         搜索字段。   - 该字段值为空，表示不按照实例名称或实例ID查询。   - 该字段值不为空
 
         :param matches: The matches of this ListInstancesByTagsRequestBody.
-        :type: list[QueryMatchItem]
+        :type matches: list[:class:`huaweicloudsdkdds.v3.QueryMatchItem`]
         """
         self._matches = matches
 
@@ -154,7 +167,7 @@ class ListInstancesByTagsRequestBody:
         包含标签，最多包含10个key。
 
         :return: The tags of this ListInstancesByTagsRequestBody.
-        :rtype: list[QueryTagItem]
+        :rtype: list[:class:`huaweicloudsdkdds.v3.QueryTagItem`]
         """
         return self._tags
 
@@ -165,7 +178,7 @@ class ListInstancesByTagsRequestBody:
         包含标签，最多包含10个key。
 
         :param tags: The tags of this ListInstancesByTagsRequestBody.
-        :type: list[QueryTagItem]
+        :type tags: list[:class:`huaweicloudsdkdds.v3.QueryTagItem`]
         """
         self._tags = tags
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunClassificationRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RunClassificationRequest:
     }
 
     def __init__(self, body=None):
-        """RunClassificationRequest - a model defined in huaweicloud sdk"""
+        """RunClassificationRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the RunClassificationRequest
+        :type body: :class:`huaweicloudsdknlp.v2.ClassificationReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class RunClassificationRequest:
 
 
         :return: The body of this RunClassificationRequest.
-        :rtype: ClassificationReq
+        :rtype: :class:`huaweicloudsdknlp.v2.ClassificationReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class RunClassificationRequest:
 
 
         :param body: The body of this RunClassificationRequest.
-        :type: ClassificationReq
+        :type body: :class:`huaweicloudsdknlp.v2.ClassificationReq`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchQueryProgressReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchQueryProgressReq:
     }
 
     def __init__(self, jobs=None):
-        """BatchQueryProgressReq - a model defined in huaweicloud sdk"""
+        """BatchQueryProgressReq
+
+        The model defined in huaweicloud sdk
+
+        :param jobs: 批量查询进度任务ID请求列表
+        :type jobs: list[str]
+        """
         
         
 
@@ -57,7 +62,7 @@ class BatchQueryProgressReq:
         批量查询进度任务ID请求列表
 
         :param jobs: The jobs of this BatchQueryProgressReq.
-        :type: list[str]
+        :type jobs: list[str]
         """
         self._jobs = jobs
 

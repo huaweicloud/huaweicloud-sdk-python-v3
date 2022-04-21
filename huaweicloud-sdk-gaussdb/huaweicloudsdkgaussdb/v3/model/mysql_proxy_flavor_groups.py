@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MysqlProxyFlavorGroups:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class MysqlProxyFlavorGroups:
     }
 
     def __init__(self, group_type=None, proxy_flavors=None):
-        """MysqlProxyFlavorGroups - a model defined in huaweicloud sdk"""
+        """MysqlProxyFlavorGroups
+
+        The model defined in huaweicloud sdk
+
+        :param group_type: 规格组类型,如x86，arm。
+        :type group_type: str
+        :param proxy_flavors: 规格信息。
+        :type proxy_flavors: list[:class:`huaweicloudsdkgaussdb.v3.MysqlProxyComputeFlavor`]
+        """
         
         
 
@@ -63,7 +70,7 @@ class MysqlProxyFlavorGroups:
         规格组类型,如x86，arm。
 
         :param group_type: The group_type of this MysqlProxyFlavorGroups.
-        :type: str
+        :type group_type: str
         """
         self._group_type = group_type
 
@@ -74,7 +81,7 @@ class MysqlProxyFlavorGroups:
         规格信息。
 
         :return: The proxy_flavors of this MysqlProxyFlavorGroups.
-        :rtype: list[MysqlProxyComputeFlavor]
+        :rtype: list[:class:`huaweicloudsdkgaussdb.v3.MysqlProxyComputeFlavor`]
         """
         return self._proxy_flavors
 
@@ -85,7 +92,7 @@ class MysqlProxyFlavorGroups:
         规格信息。
 
         :param proxy_flavors: The proxy_flavors of this MysqlProxyFlavorGroups.
-        :type: list[MysqlProxyComputeFlavor]
+        :type proxy_flavors: list[:class:`huaweicloudsdkgaussdb.v3.MysqlProxyComputeFlavor`]
         """
         self._proxy_flavors = proxy_flavors
 

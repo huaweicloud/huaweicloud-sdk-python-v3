@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDeviceGroupRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateDeviceGroupRequest:
     }
 
     def __init__(self, instance_id=None, group_id=None, body=None):
-        """UpdateDeviceGroupRequest - a model defined in huaweicloud sdk"""
+        """UpdateDeviceGroupRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param group_id: 设备分组ID
+        :type group_id: int
+        :param body: Body of the UpdateDeviceGroupRequest
+        :type body: :class:`huaweicloudsdkroma.v2.UpdateDeviceGroupRequestBody`
+        """
         
         
 
@@ -66,7 +75,7 @@ class UpdateDeviceGroupRequest:
         实例ID
 
         :param instance_id: The instance_id of this UpdateDeviceGroupRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -88,7 +97,7 @@ class UpdateDeviceGroupRequest:
         设备分组ID
 
         :param group_id: The group_id of this UpdateDeviceGroupRequest.
-        :type: int
+        :type group_id: int
         """
         self._group_id = group_id
 
@@ -98,7 +107,7 @@ class UpdateDeviceGroupRequest:
 
 
         :return: The body of this UpdateDeviceGroupRequest.
-        :rtype: UpdateDeviceGroupRequestBody
+        :rtype: :class:`huaweicloudsdkroma.v2.UpdateDeviceGroupRequestBody`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class UpdateDeviceGroupRequest:
 
 
         :param body: The body of this UpdateDeviceGroupRequest.
-        :type: UpdateDeviceGroupRequestBody
+        :type body: :class:`huaweicloudsdkroma.v2.UpdateDeviceGroupRequestBody`
         """
         self._body = body
 

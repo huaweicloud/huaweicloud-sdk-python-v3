@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DstNodeReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class DstNodeReq:
     }
 
     def __init__(self, ak=None, sk=None, security_token=None, bucket=None, save_prefix=None, region=None):
-        """DstNodeReq - a model defined in huaweicloud sdk"""
+        """DstNodeReq
+
+        The model defined in huaweicloud sdk
+
+        :param ak: 目的端桶的AK（最大长度100个字符）。
+        :type ak: str
+        :param sk: 目的端桶的SK（最大长度100个字符）。
+        :type sk: str
+        :param security_token: 目的端的临时Token（最大长度16384个字符）。
+        :type security_token: str
+        :param bucket: 目的端桶的名称。
+        :type bucket: str
+        :param save_prefix: 目的端桶内路径前缀（拼接在对象key前面,组成新的key,拼接后不能超过1024个字符）。
+        :type save_prefix: str
+        :param region: 目的端桶所处的区域。  请与Endpoint对应的区域保持一致。
+        :type region: str
+        """
         
         
 
@@ -79,7 +94,7 @@ class DstNodeReq:
         目的端桶的AK（最大长度100个字符）。
 
         :param ak: The ak of this DstNodeReq.
-        :type: str
+        :type ak: str
         """
         self._ak = ak
 
@@ -101,7 +116,7 @@ class DstNodeReq:
         目的端桶的SK（最大长度100个字符）。
 
         :param sk: The sk of this DstNodeReq.
-        :type: str
+        :type sk: str
         """
         self._sk = sk
 
@@ -123,7 +138,7 @@ class DstNodeReq:
         目的端的临时Token（最大长度16384个字符）。
 
         :param security_token: The security_token of this DstNodeReq.
-        :type: str
+        :type security_token: str
         """
         self._security_token = security_token
 
@@ -145,7 +160,7 @@ class DstNodeReq:
         目的端桶的名称。
 
         :param bucket: The bucket of this DstNodeReq.
-        :type: str
+        :type bucket: str
         """
         self._bucket = bucket
 
@@ -167,7 +182,7 @@ class DstNodeReq:
         目的端桶内路径前缀（拼接在对象key前面,组成新的key,拼接后不能超过1024个字符）。
 
         :param save_prefix: The save_prefix of this DstNodeReq.
-        :type: str
+        :type save_prefix: str
         """
         self._save_prefix = save_prefix
 
@@ -189,7 +204,7 @@ class DstNodeReq:
         目的端桶所处的区域。  请与Endpoint对应的区域保持一致。
 
         :param region: The region of this DstNodeReq.
-        :type: str
+        :type region: str
         """
         self._region = region
 

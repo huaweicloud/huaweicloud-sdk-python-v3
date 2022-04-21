@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSubfilesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListSubfilesResponse(SdkResponse):
     }
 
     def __init__(self, trees=None, total=None):
-        """ListSubfilesResponse - a model defined in huaweicloud sdk"""
+        """ListSubfilesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param trees: 文件日志树
+        :type trees: list[:class:`huaweicloudsdkcodehub.v3.LogsTree`]
+        :param total: 记录总数
+        :type total: int
+        """
         
         super(ListSubfilesResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListSubfilesResponse(SdkResponse):
         文件日志树
 
         :return: The trees of this ListSubfilesResponse.
-        :rtype: list[LogsTree]
+        :rtype: list[:class:`huaweicloudsdkcodehub.v3.LogsTree`]
         """
         return self._trees
 
@@ -63,7 +70,7 @@ class ListSubfilesResponse(SdkResponse):
         文件日志树
 
         :param trees: The trees of this ListSubfilesResponse.
-        :type: list[LogsTree]
+        :type trees: list[:class:`huaweicloudsdkcodehub.v3.LogsTree`]
         """
         self._trees = trees
 
@@ -85,7 +92,7 @@ class ListSubfilesResponse(SdkResponse):
         记录总数
 
         :param total: The total of this ListSubfilesResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 

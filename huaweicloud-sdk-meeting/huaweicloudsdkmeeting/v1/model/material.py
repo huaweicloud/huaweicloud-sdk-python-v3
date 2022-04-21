@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Material:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class Material:
     }
 
     def __init__(self, id=None, last_updated_by=None, update_time=None, material_name=None, material_resolution=None, material_size_str=None, file_path=None):
-        """Material - a model defined in huaweicloud sdk"""
+        """Material
+
+        The model defined in huaweicloud sdk
+
+        :param id: 素材ID
+        :type id: str
+        :param last_updated_by: 更新者
+        :type last_updated_by: str
+        :param update_time: 更新时间
+        :type update_time: int
+        :param material_name: 素材名称
+        :type material_name: str
+        :param material_resolution: 素材分辨率
+        :type material_resolution: str
+        :param material_size_str: 素材大小（含单位）
+        :type material_size_str: str
+        :param file_path: 素材云盘存储文件下载地址
+        :type file_path: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class Material:
         素材ID
 
         :param id: The id of this Material.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -110,7 +127,7 @@ class Material:
         更新者
 
         :param last_updated_by: The last_updated_by of this Material.
-        :type: str
+        :type last_updated_by: str
         """
         self._last_updated_by = last_updated_by
 
@@ -132,7 +149,7 @@ class Material:
         更新时间
 
         :param update_time: The update_time of this Material.
-        :type: int
+        :type update_time: int
         """
         self._update_time = update_time
 
@@ -154,7 +171,7 @@ class Material:
         素材名称
 
         :param material_name: The material_name of this Material.
-        :type: str
+        :type material_name: str
         """
         self._material_name = material_name
 
@@ -176,7 +193,7 @@ class Material:
         素材分辨率
 
         :param material_resolution: The material_resolution of this Material.
-        :type: str
+        :type material_resolution: str
         """
         self._material_resolution = material_resolution
 
@@ -198,7 +215,7 @@ class Material:
         素材大小（含单位）
 
         :param material_size_str: The material_size_str of this Material.
-        :type: str
+        :type material_size_str: str
         """
         self._material_size_str = material_size_str
 
@@ -220,7 +237,7 @@ class Material:
         素材云盘存储文件下载地址
 
         :param file_path: The file_path of this Material.
-        :type: str
+        :type file_path: str
         """
         self._file_path = file_path
 

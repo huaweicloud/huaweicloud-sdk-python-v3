@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateClusterInstanceNicsBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateClusterInstanceNicsBody:
     }
 
     def __init__(self, vpc_id=None, net_id=None, security_group_id=None):
-        """CreateClusterInstanceNicsBody - a model defined in huaweicloud sdk"""
+        """CreateClusterInstanceNicsBody
+
+        The model defined in huaweicloud sdk
+
+        :param vpc_id: 指定虚拟私有云ID，用于集群网络配置。
+        :type vpc_id: str
+        :param net_id: 子网ID(网络ID)，其中一个搜索集群所有实例的子网和安全组必须相同。
+        :type net_id: str
+        :param security_group_id: 安全组ID，其中一个搜索集群所有实例的子网和安全组必须相同。
+        :type security_group_id: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class CreateClusterInstanceNicsBody:
         指定虚拟私有云ID，用于集群网络配置。
 
         :param vpc_id: The vpc_id of this CreateClusterInstanceNicsBody.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -87,7 +96,7 @@ class CreateClusterInstanceNicsBody:
         子网ID(网络ID)，其中一个搜索集群所有实例的子网和安全组必须相同。
 
         :param net_id: The net_id of this CreateClusterInstanceNicsBody.
-        :type: str
+        :type net_id: str
         """
         self._net_id = net_id
 
@@ -109,7 +118,7 @@ class CreateClusterInstanceNicsBody:
         安全组ID，其中一个搜索集群所有实例的子网和安全组必须相同。
 
         :param security_group_id: The security_group_id of this CreateClusterInstanceNicsBody.
-        :type: str
+        :type security_group_id: str
         """
         self._security_group_id = security_group_id
 

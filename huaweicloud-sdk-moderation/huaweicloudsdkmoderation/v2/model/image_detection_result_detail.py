@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ImageDetectionResultDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ImageDetectionResultDetail:
     }
 
     def __init__(self, politics=None, porn=None, terrorism=None, ad=None):
-        """ImageDetectionResultDetail - a model defined in huaweicloud sdk"""
+        """ImageDetectionResultDetail
+
+        The model defined in huaweicloud sdk
+
+        :param politics: 涉政敏感人物检测结果。
+        :type politics: list[:class:`huaweicloudsdkmoderation.v2.ImageDetectionResultDetailPolitics`]
+        :param porn: 涉黄检测结果。
+        :type porn: list[:class:`huaweicloudsdkmoderation.v2.ImageDetectionResultSimpleDetail`]
+        :param terrorism: 涉政、暴恐检测结果。
+        :type terrorism: list[:class:`huaweicloudsdkmoderation.v2.ImageDetectionResultSimpleDetail`]
+        :param ad: 广告检测结果。
+        :type ad: list[:class:`huaweicloudsdkmoderation.v2.ImageDetectionResultAdDetail`]
+        """
         
         
 
@@ -62,7 +73,7 @@ class ImageDetectionResultDetail:
         涉政敏感人物检测结果。
 
         :return: The politics of this ImageDetectionResultDetail.
-        :rtype: list[ImageDetectionResultDetailPolitics]
+        :rtype: list[:class:`huaweicloudsdkmoderation.v2.ImageDetectionResultDetailPolitics`]
         """
         return self._politics
 
@@ -73,7 +84,7 @@ class ImageDetectionResultDetail:
         涉政敏感人物检测结果。
 
         :param politics: The politics of this ImageDetectionResultDetail.
-        :type: list[ImageDetectionResultDetailPolitics]
+        :type politics: list[:class:`huaweicloudsdkmoderation.v2.ImageDetectionResultDetailPolitics`]
         """
         self._politics = politics
 
@@ -84,7 +95,7 @@ class ImageDetectionResultDetail:
         涉黄检测结果。
 
         :return: The porn of this ImageDetectionResultDetail.
-        :rtype: list[ImageDetectionResultSimpleDetail]
+        :rtype: list[:class:`huaweicloudsdkmoderation.v2.ImageDetectionResultSimpleDetail`]
         """
         return self._porn
 
@@ -95,7 +106,7 @@ class ImageDetectionResultDetail:
         涉黄检测结果。
 
         :param porn: The porn of this ImageDetectionResultDetail.
-        :type: list[ImageDetectionResultSimpleDetail]
+        :type porn: list[:class:`huaweicloudsdkmoderation.v2.ImageDetectionResultSimpleDetail`]
         """
         self._porn = porn
 
@@ -106,7 +117,7 @@ class ImageDetectionResultDetail:
         涉政、暴恐检测结果。
 
         :return: The terrorism of this ImageDetectionResultDetail.
-        :rtype: list[ImageDetectionResultSimpleDetail]
+        :rtype: list[:class:`huaweicloudsdkmoderation.v2.ImageDetectionResultSimpleDetail`]
         """
         return self._terrorism
 
@@ -117,7 +128,7 @@ class ImageDetectionResultDetail:
         涉政、暴恐检测结果。
 
         :param terrorism: The terrorism of this ImageDetectionResultDetail.
-        :type: list[ImageDetectionResultSimpleDetail]
+        :type terrorism: list[:class:`huaweicloudsdkmoderation.v2.ImageDetectionResultSimpleDetail`]
         """
         self._terrorism = terrorism
 
@@ -128,7 +139,7 @@ class ImageDetectionResultDetail:
         广告检测结果。
 
         :return: The ad of this ImageDetectionResultDetail.
-        :rtype: list[ImageDetectionResultAdDetail]
+        :rtype: list[:class:`huaweicloudsdkmoderation.v2.ImageDetectionResultAdDetail`]
         """
         return self._ad
 
@@ -139,7 +150,7 @@ class ImageDetectionResultDetail:
         广告检测结果。
 
         :param ad: The ad of this ImageDetectionResultDetail.
-        :type: list[ImageDetectionResultAdDetail]
+        :type ad: list[:class:`huaweicloudsdkmoderation.v2.ImageDetectionResultAdDetail`]
         """
         self._ad = ad
 

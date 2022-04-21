@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListImageByTagsRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class ListImageByTagsRequestBody:
     }
 
     def __init__(self, action=None, tags=None, tags_any=None, not_tags=None, not_tags_any=None, limit=None, offset=None, matches=None, without_any_tag=None):
-        """ListImageByTagsRequestBody - a model defined in huaweicloud sdk"""
+        """ListImageByTagsRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param action: 操作标识（区分大小写），支持filter、count。filter就是分页查询；count是只需按照条件将总条数返回即可。
+        :type action: str
+        :param tags: 包含标签，最多包含10个key，每个key对应的values最多包含10个值，且key和values都不能重复。不能为空列表。
+        :type tags: list[:class:`huaweicloudsdkims.v2.Tags`]
+        :param tags_any: 包含任意标签，最多包含10个key，每个key对应的values最多包含10个值，且key和values都不能重复。不允许为空列表，但可以不传递参数。
+        :type tags_any: list[:class:`huaweicloudsdkims.v2.Tags`]
+        :param not_tags: 不包含标签，最多包含10个key，每个key对应的values最多包含10个值，且key和values都不能重复。不能为空列表。
+        :type not_tags: list[:class:`huaweicloudsdkims.v2.Tags`]
+        :param not_tags_any: 不包含任意标签，最多包含10个key，每个key对应的values最多包含10个值，且key和values都不能重复。不能为空列表。
+        :type not_tags_any: list[:class:`huaweicloudsdkims.v2.Tags`]
+        :param limit: 最大查询记录数(action为count，时此参数无效）如果action为filter默认为10，limit最多为1000，不能为负数，最小值为1。
+        :type limit: str
+        :param offset: 索引位置， 从offset指定的下一条数据开始查询。 查询第一页数据时，不需要传入此参数（action为count时，此参数无效），如果action为filter默认为0，不能为负数。
+        :type offset: str
+        :param matches: 搜索字段，key为要匹配的字段，如resource_name、resource_id等。value为匹配的值。多个matches的key不允许重复。不允许为空列表，但可以不传递参数。
+        :type matches: list[:class:`huaweicloudsdkims.v2.TagKeyValue`]
+        :param without_any_tag: 不包含任意一个标签，该字段为true时查询所有不带标签的资源，此时忽略tag、not_tags、tags_any、not_tags_any字段。
+        :type without_any_tag: bool
+        """
         
         
 
@@ -97,7 +118,7 @@ class ListImageByTagsRequestBody:
         操作标识（区分大小写），支持filter、count。filter就是分页查询；count是只需按照条件将总条数返回即可。
 
         :param action: The action of this ListImageByTagsRequestBody.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -108,7 +129,7 @@ class ListImageByTagsRequestBody:
         包含标签，最多包含10个key，每个key对应的values最多包含10个值，且key和values都不能重复。不能为空列表。
 
         :return: The tags of this ListImageByTagsRequestBody.
-        :rtype: list[Tags]
+        :rtype: list[:class:`huaweicloudsdkims.v2.Tags`]
         """
         return self._tags
 
@@ -119,7 +140,7 @@ class ListImageByTagsRequestBody:
         包含标签，最多包含10个key，每个key对应的values最多包含10个值，且key和values都不能重复。不能为空列表。
 
         :param tags: The tags of this ListImageByTagsRequestBody.
-        :type: list[Tags]
+        :type tags: list[:class:`huaweicloudsdkims.v2.Tags`]
         """
         self._tags = tags
 
@@ -130,7 +151,7 @@ class ListImageByTagsRequestBody:
         包含任意标签，最多包含10个key，每个key对应的values最多包含10个值，且key和values都不能重复。不允许为空列表，但可以不传递参数。
 
         :return: The tags_any of this ListImageByTagsRequestBody.
-        :rtype: list[Tags]
+        :rtype: list[:class:`huaweicloudsdkims.v2.Tags`]
         """
         return self._tags_any
 
@@ -141,7 +162,7 @@ class ListImageByTagsRequestBody:
         包含任意标签，最多包含10个key，每个key对应的values最多包含10个值，且key和values都不能重复。不允许为空列表，但可以不传递参数。
 
         :param tags_any: The tags_any of this ListImageByTagsRequestBody.
-        :type: list[Tags]
+        :type tags_any: list[:class:`huaweicloudsdkims.v2.Tags`]
         """
         self._tags_any = tags_any
 
@@ -152,7 +173,7 @@ class ListImageByTagsRequestBody:
         不包含标签，最多包含10个key，每个key对应的values最多包含10个值，且key和values都不能重复。不能为空列表。
 
         :return: The not_tags of this ListImageByTagsRequestBody.
-        :rtype: list[Tags]
+        :rtype: list[:class:`huaweicloudsdkims.v2.Tags`]
         """
         return self._not_tags
 
@@ -163,7 +184,7 @@ class ListImageByTagsRequestBody:
         不包含标签，最多包含10个key，每个key对应的values最多包含10个值，且key和values都不能重复。不能为空列表。
 
         :param not_tags: The not_tags of this ListImageByTagsRequestBody.
-        :type: list[Tags]
+        :type not_tags: list[:class:`huaweicloudsdkims.v2.Tags`]
         """
         self._not_tags = not_tags
 
@@ -174,7 +195,7 @@ class ListImageByTagsRequestBody:
         不包含任意标签，最多包含10个key，每个key对应的values最多包含10个值，且key和values都不能重复。不能为空列表。
 
         :return: The not_tags_any of this ListImageByTagsRequestBody.
-        :rtype: list[Tags]
+        :rtype: list[:class:`huaweicloudsdkims.v2.Tags`]
         """
         return self._not_tags_any
 
@@ -185,7 +206,7 @@ class ListImageByTagsRequestBody:
         不包含任意标签，最多包含10个key，每个key对应的values最多包含10个值，且key和values都不能重复。不能为空列表。
 
         :param not_tags_any: The not_tags_any of this ListImageByTagsRequestBody.
-        :type: list[Tags]
+        :type not_tags_any: list[:class:`huaweicloudsdkims.v2.Tags`]
         """
         self._not_tags_any = not_tags_any
 
@@ -207,7 +228,7 @@ class ListImageByTagsRequestBody:
         最大查询记录数(action为count，时此参数无效）如果action为filter默认为10，limit最多为1000，不能为负数，最小值为1。
 
         :param limit: The limit of this ListImageByTagsRequestBody.
-        :type: str
+        :type limit: str
         """
         self._limit = limit
 
@@ -229,7 +250,7 @@ class ListImageByTagsRequestBody:
         索引位置， 从offset指定的下一条数据开始查询。 查询第一页数据时，不需要传入此参数（action为count时，此参数无效），如果action为filter默认为0，不能为负数。
 
         :param offset: The offset of this ListImageByTagsRequestBody.
-        :type: str
+        :type offset: str
         """
         self._offset = offset
 
@@ -240,7 +261,7 @@ class ListImageByTagsRequestBody:
         搜索字段，key为要匹配的字段，如resource_name、resource_id等。value为匹配的值。多个matches的key不允许重复。不允许为空列表，但可以不传递参数。
 
         :return: The matches of this ListImageByTagsRequestBody.
-        :rtype: list[TagKeyValue]
+        :rtype: list[:class:`huaweicloudsdkims.v2.TagKeyValue`]
         """
         return self._matches
 
@@ -251,7 +272,7 @@ class ListImageByTagsRequestBody:
         搜索字段，key为要匹配的字段，如resource_name、resource_id等。value为匹配的值。多个matches的key不允许重复。不允许为空列表，但可以不传递参数。
 
         :param matches: The matches of this ListImageByTagsRequestBody.
-        :type: list[TagKeyValue]
+        :type matches: list[:class:`huaweicloudsdkims.v2.TagKeyValue`]
         """
         self._matches = matches
 
@@ -273,7 +294,7 @@ class ListImageByTagsRequestBody:
         不包含任意一个标签，该字段为true时查询所有不带标签的资源，此时忽略tag、not_tags、tags_any、not_tags_any字段。
 
         :param without_any_tag: The without_any_tag of this ListImageByTagsRequestBody.
-        :type: bool
+        :type without_any_tag: bool
         """
         self._without_any_tag = without_any_tag
 

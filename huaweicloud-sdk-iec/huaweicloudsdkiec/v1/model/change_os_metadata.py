@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ChangeOsMetadata:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ChangeOsMetadata:
     }
 
     def __init__(self, user_data=None):
-        """ChangeOsMetadata - a model defined in huaweicloud sdk"""
+        """ChangeOsMetadata
+
+        The model defined in huaweicloud sdk
+
+        :param user_data: 切换边缘实例操作系统过程中注入的用户数据。
+        :type user_data: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class ChangeOsMetadata:
         切换边缘实例操作系统过程中注入的用户数据。
 
         :param user_data: The user_data of this ChangeOsMetadata.
-        :type: str
+        :type user_data: str
         """
         self._user_data = user_data
 

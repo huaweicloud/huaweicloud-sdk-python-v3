@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PipelineExecuteStates:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class PipelineExecuteStates:
     }
 
     def __init__(self, result=None, status=None, stages=None, executor=None, pipeline_name=None, pipeline_id=None, detail_url=None, modify_url=None, start_time=None, end_time=None):
-        """PipelineExecuteStates - a model defined in huaweicloud sdk"""
+        """PipelineExecuteStates
+
+        The model defined in huaweicloud sdk
+
+        :param result: 流水线执行结果
+        :type result: str
+        :param status: 流水线执行状态
+        :type status: str
+        :param stages: 阶段执行情况
+        :type stages: list[:class:`huaweicloudsdkcloudpipeline.v2.Stages`]
+        :param executor: 执行人
+        :type executor: str
+        :param pipeline_name: 流水线名字
+        :type pipeline_name: str
+        :param pipeline_id: 流水线ID
+        :type pipeline_id: str
+        :param detail_url: 流水线详情页URL
+        :type detail_url: str
+        :param modify_url: 流水线编辑页URL
+        :type modify_url: str
+        :param start_time: 开始执行时间
+        :type start_time: str
+        :param end_time: 结束执行时间
+        :type end_time: str
+        """
         
         
 
@@ -93,7 +116,7 @@ class PipelineExecuteStates:
         流水线执行结果
 
         :param result: The result of this PipelineExecuteStates.
-        :type: str
+        :type result: str
         """
         self._result = result
 
@@ -115,7 +138,7 @@ class PipelineExecuteStates:
         流水线执行状态
 
         :param status: The status of this PipelineExecuteStates.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -126,7 +149,7 @@ class PipelineExecuteStates:
         阶段执行情况
 
         :return: The stages of this PipelineExecuteStates.
-        :rtype: list[Stages]
+        :rtype: list[:class:`huaweicloudsdkcloudpipeline.v2.Stages`]
         """
         return self._stages
 
@@ -137,7 +160,7 @@ class PipelineExecuteStates:
         阶段执行情况
 
         :param stages: The stages of this PipelineExecuteStates.
-        :type: list[Stages]
+        :type stages: list[:class:`huaweicloudsdkcloudpipeline.v2.Stages`]
         """
         self._stages = stages
 
@@ -159,7 +182,7 @@ class PipelineExecuteStates:
         执行人
 
         :param executor: The executor of this PipelineExecuteStates.
-        :type: str
+        :type executor: str
         """
         self._executor = executor
 
@@ -181,7 +204,7 @@ class PipelineExecuteStates:
         流水线名字
 
         :param pipeline_name: The pipeline_name of this PipelineExecuteStates.
-        :type: str
+        :type pipeline_name: str
         """
         self._pipeline_name = pipeline_name
 
@@ -203,7 +226,7 @@ class PipelineExecuteStates:
         流水线ID
 
         :param pipeline_id: The pipeline_id of this PipelineExecuteStates.
-        :type: str
+        :type pipeline_id: str
         """
         self._pipeline_id = pipeline_id
 
@@ -225,7 +248,7 @@ class PipelineExecuteStates:
         流水线详情页URL
 
         :param detail_url: The detail_url of this PipelineExecuteStates.
-        :type: str
+        :type detail_url: str
         """
         self._detail_url = detail_url
 
@@ -247,7 +270,7 @@ class PipelineExecuteStates:
         流水线编辑页URL
 
         :param modify_url: The modify_url of this PipelineExecuteStates.
-        :type: str
+        :type modify_url: str
         """
         self._modify_url = modify_url
 
@@ -269,7 +292,7 @@ class PipelineExecuteStates:
         开始执行时间
 
         :param start_time: The start_time of this PipelineExecuteStates.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -291,7 +314,7 @@ class PipelineExecuteStates:
         结束执行时间
 
         :param end_time: The end_time of this PipelineExecuteStates.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 

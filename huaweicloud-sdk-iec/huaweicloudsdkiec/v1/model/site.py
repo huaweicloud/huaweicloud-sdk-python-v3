@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Site:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class Site:
     }
 
     def __init__(self, id=None, name=None, city=None, i18n_city=None, province=None, i18n_province=None, area=None, i18n_area=None, country=None, i18n_country=None, status=None, pools=None, city_short_name=None):
-        """Site - a model defined in huaweicloud sdk"""
+        """Site
+
+        The model defined in huaweicloud sdk
+
+        :param id: 边缘站点ID。
+        :type id: str
+        :param name: 边缘站点名称。
+        :type name: str
+        :param city: 站点所在城市。
+        :type city: str
+        :param i18n_city: 城市的国际化名称。
+        :type i18n_city: str
+        :param province: 站点所在省份。
+        :type province: str
+        :param i18n_province: 省份的国际化名称。
+        :type i18n_province: str
+        :param area: 所在大区。
+        :type area: str
+        :param i18n_area: 大区的国际化名称。
+        :type i18n_area: str
+        :param country: 站点所在的国家。
+        :type country: str
+        :param i18n_country: 国家的国际化名称。
+        :type i18n_country: str
+        :param status: 站点当前的状态。  取值范围： - Normal(正常商用) - Obt(公测) - Gray(灰度) - Offline(下线) - Promotion(推荐，也是商用) - sellout(售罄)
+        :type status: str
+        :param pools: 站点IP线路列表。
+        :type pools: list[:class:`huaweicloudsdkiec.v1.IpPool`]
+        :param city_short_name: 城市名称缩写。
+        :type city_short_name: str
+        """
         
         
 
@@ -118,7 +147,7 @@ class Site:
         边缘站点ID。
 
         :param id: The id of this Site.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -140,7 +169,7 @@ class Site:
         边缘站点名称。
 
         :param name: The name of this Site.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -162,7 +191,7 @@ class Site:
         站点所在城市。
 
         :param city: The city of this Site.
-        :type: str
+        :type city: str
         """
         self._city = city
 
@@ -184,7 +213,7 @@ class Site:
         城市的国际化名称。
 
         :param i18n_city: The i18n_city of this Site.
-        :type: str
+        :type i18n_city: str
         """
         self._i18n_city = i18n_city
 
@@ -206,7 +235,7 @@ class Site:
         站点所在省份。
 
         :param province: The province of this Site.
-        :type: str
+        :type province: str
         """
         self._province = province
 
@@ -228,7 +257,7 @@ class Site:
         省份的国际化名称。
 
         :param i18n_province: The i18n_province of this Site.
-        :type: str
+        :type i18n_province: str
         """
         self._i18n_province = i18n_province
 
@@ -250,7 +279,7 @@ class Site:
         所在大区。
 
         :param area: The area of this Site.
-        :type: str
+        :type area: str
         """
         self._area = area
 
@@ -272,7 +301,7 @@ class Site:
         大区的国际化名称。
 
         :param i18n_area: The i18n_area of this Site.
-        :type: str
+        :type i18n_area: str
         """
         self._i18n_area = i18n_area
 
@@ -294,7 +323,7 @@ class Site:
         站点所在的国家。
 
         :param country: The country of this Site.
-        :type: str
+        :type country: str
         """
         self._country = country
 
@@ -316,7 +345,7 @@ class Site:
         国家的国际化名称。
 
         :param i18n_country: The i18n_country of this Site.
-        :type: str
+        :type i18n_country: str
         """
         self._i18n_country = i18n_country
 
@@ -338,7 +367,7 @@ class Site:
         站点当前的状态。  取值范围： - Normal(正常商用) - Obt(公测) - Gray(灰度) - Offline(下线) - Promotion(推荐，也是商用) - sellout(售罄)
 
         :param status: The status of this Site.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -349,7 +378,7 @@ class Site:
         站点IP线路列表。
 
         :return: The pools of this Site.
-        :rtype: list[IpPool]
+        :rtype: list[:class:`huaweicloudsdkiec.v1.IpPool`]
         """
         return self._pools
 
@@ -360,7 +389,7 @@ class Site:
         站点IP线路列表。
 
         :param pools: The pools of this Site.
-        :type: list[IpPool]
+        :type pools: list[:class:`huaweicloudsdkiec.v1.IpPool`]
         """
         self._pools = pools
 
@@ -382,7 +411,7 @@ class Site:
         城市名称缩写。
 
         :param city_short_name: The city_short_name of this Site.
-        :type: str
+        :type city_short_name: str
         """
         self._city_short_name = city_short_name
 

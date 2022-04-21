@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ZoneState:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ZoneState:
     }
 
     def __init__(self, available=None):
-        """ZoneState - a model defined in huaweicloud sdk"""
+        """ZoneState
+
+        The model defined in huaweicloud sdk
+
+        :param available: 可用分区是否可用。
+        :type available: bool
+        """
         
         
 
@@ -58,7 +63,7 @@ class ZoneState:
         可用分区是否可用。
 
         :param available: The available of this ZoneState.
-        :type: bool
+        :type available: bool
         """
         self._available = available
 

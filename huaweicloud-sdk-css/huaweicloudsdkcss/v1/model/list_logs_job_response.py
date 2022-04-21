@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListLogsJobResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListLogsJobResponse(SdkResponse):
     }
 
     def __init__(self, cluster_log_record=None):
-        """ListLogsJobResponse - a model defined in huaweicloud sdk"""
+        """ListLogsJobResponse
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_log_record: 
+        :type cluster_log_record: list[:class:`huaweicloudsdkcss.v1.ClusterLogRecord`]
+        """
         
         super(ListLogsJobResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class ListLogsJobResponse(SdkResponse):
 
 
         :return: The cluster_log_record of this ListLogsJobResponse.
-        :rtype: list[ClusterLogRecord]
+        :rtype: list[:class:`huaweicloudsdkcss.v1.ClusterLogRecord`]
         """
         return self._cluster_log_record
 
@@ -56,7 +61,7 @@ class ListLogsJobResponse(SdkResponse):
 
 
         :param cluster_log_record: The cluster_log_record of this ListLogsJobResponse.
-        :type: list[ClusterLogRecord]
+        :type cluster_log_record: list[:class:`huaweicloudsdkcss.v1.ClusterLogRecord`]
         """
         self._cluster_log_record = cluster_log_record
 

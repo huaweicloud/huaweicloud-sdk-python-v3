@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowMembersDetailResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowMembersDetailResponse(SdkResponse):
     }
 
     def __init__(self, members=None, count=None):
-        """ShowMembersDetailResponse - a model defined in huaweicloud sdk"""
+        """ShowMembersDetailResponse
+
+        The model defined in huaweicloud sdk
+
+        :param members: 添加备份共享成员响应信息
+        :type members: list[:class:`huaweicloudsdkcbr.v1.Member`]
+        :param count: 备份共享成员数量
+        :type count: int
+        """
         
         super(ShowMembersDetailResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ShowMembersDetailResponse(SdkResponse):
         添加备份共享成员响应信息
 
         :return: The members of this ShowMembersDetailResponse.
-        :rtype: list[Member]
+        :rtype: list[:class:`huaweicloudsdkcbr.v1.Member`]
         """
         return self._members
 
@@ -63,7 +70,7 @@ class ShowMembersDetailResponse(SdkResponse):
         添加备份共享成员响应信息
 
         :param members: The members of this ShowMembersDetailResponse.
-        :type: list[Member]
+        :type members: list[:class:`huaweicloudsdkcbr.v1.Member`]
         """
         self._members = members
 
@@ -85,7 +92,7 @@ class ShowMembersDetailResponse(SdkResponse):
         备份共享成员数量
 
         :param count: The count of this ShowMembersDetailResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

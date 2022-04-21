@@ -52,21 +52,17 @@ class WafClient(Client):
         """绑定证书到域名
 
         绑定证书到域名
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ApplyCertificateToHostRequest request
-        :return: ApplyCertificateToHostResponse
+        :param request: Request instance for ApplyCertificateToHost
+        :type request: :class:`huaweicloudsdkwaf.v1.ApplyCertificateToHostRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ApplyCertificateToHostResponse`
         """
         return self.apply_certificate_to_host_with_http_info(request)
 
     def apply_certificate_to_host_with_http_info(self, request):
-        """绑定证书到域名
-
-        绑定证书到域名
-
-        :param ApplyCertificateToHostRequest request
-        :return: ApplyCertificateToHostResponse
-        """
-
         all_params = ['certificate_id', 'enterprise_project_id', 'apply_certificate_to_host_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -114,26 +110,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_anti_tamper_rule(self, request):
         """创建防篡改规则
 
         创建防篡改规则
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateAntiTamperRuleRequest request
-        :return: CreateAntiTamperRuleResponse
+        :param request: Request instance for CreateAntiTamperRule
+        :type request: :class:`huaweicloudsdkwaf.v1.CreateAntiTamperRuleRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.CreateAntiTamperRuleResponse`
         """
         return self.create_anti_tamper_rule_with_http_info(request)
 
     def create_anti_tamper_rule_with_http_info(self, request):
-        """创建防篡改规则
-
-        创建防篡改规则
-
-        :param CreateAntiTamperRuleRequest request
-        :return: CreateAntiTamperRuleResponse
-        """
-
         all_params = ['policy_id', 'create_anti_tamper_rule_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -181,26 +172,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_certificate(self, request):
         """创建证书
 
         创建证书
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateCertificateRequest request
-        :return: CreateCertificateResponse
+        :param request: Request instance for CreateCertificate
+        :type request: :class:`huaweicloudsdkwaf.v1.CreateCertificateRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.CreateCertificateResponse`
         """
         return self.create_certificate_with_http_info(request)
 
     def create_certificate_with_http_info(self, request):
-        """创建证书
-
-        创建证书
-
-        :param CreateCertificateRequest request
-        :return: CreateCertificateResponse
-        """
-
         all_params = ['create_certificate_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -246,26 +232,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_geoip_rule(self, request):
         """创建地理位置规则
 
         创建地理位置规则
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateGeoipRuleRequest request
-        :return: CreateGeoipRuleResponse
+        :param request: Request instance for CreateGeoipRule
+        :type request: :class:`huaweicloudsdkwaf.v1.CreateGeoipRuleRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.CreateGeoipRuleResponse`
         """
         return self.create_geoip_rule_with_http_info(request)
 
     def create_geoip_rule_with_http_info(self, request):
-        """创建地理位置规则
-
-        创建地理位置规则
-
-        :param CreateGeoipRuleRequest request
-        :return: CreateGeoipRuleResponse
-        """
-
         all_params = ['policy_id', 'create_geo_ip_rule_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -313,26 +294,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_host(self, request):
         """创建云模式防护域名
 
         创建云模式防护域名
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateHostRequest request
-        :return: CreateHostResponse
+        :param request: Request instance for CreateHost
+        :type request: :class:`huaweicloudsdkwaf.v1.CreateHostRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.CreateHostResponse`
         """
         return self.create_host_with_http_info(request)
 
     def create_host_with_http_info(self, request):
-        """创建云模式防护域名
-
-        创建云模式防护域名
-
-        :param CreateHostRequest request
-        :return: CreateHostResponse
-        """
-
         all_params = ['create_host_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -378,26 +354,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_policy(self, request):
         """创建防护策略
 
         创建防护策略
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreatePolicyRequest request
-        :return: CreatePolicyResponse
+        :param request: Request instance for CreatePolicy
+        :type request: :class:`huaweicloudsdkwaf.v1.CreatePolicyRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.CreatePolicyResponse`
         """
         return self.create_policy_with_http_info(request)
 
     def create_policy_with_http_info(self, request):
-        """创建防护策略
-
-        创建防护策略
-
-        :param CreatePolicyRequest request
-        :return: CreatePolicyResponse
-        """
-
         all_params = ['create_policy_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -443,26 +414,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_premium_host(self, request):
         """创建独享模式域名
 
         创建独享模式域名
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreatePremiumHostRequest request
-        :return: CreatePremiumHostResponse
+        :param request: Request instance for CreatePremiumHost
+        :type request: :class:`huaweicloudsdkwaf.v1.CreatePremiumHostRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.CreatePremiumHostResponse`
         """
         return self.create_premium_host_with_http_info(request)
 
     def create_premium_host_with_http_info(self, request):
-        """创建独享模式域名
-
-        创建独享模式域名
-
-        :param CreatePremiumHostRequest request
-        :return: CreatePremiumHostResponse
-        """
-
         all_params = ['enterprise_project_id', 'create_premium_host_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -508,26 +474,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_privacy_rule(self, request):
         """创建隐私屏蔽防护规则
 
         创建隐私屏蔽防护规则
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreatePrivacyRuleRequest request
-        :return: CreatePrivacyRuleResponse
+        :param request: Request instance for CreatePrivacyRule
+        :type request: :class:`huaweicloudsdkwaf.v1.CreatePrivacyRuleRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.CreatePrivacyRuleResponse`
         """
         return self.create_privacy_rule_with_http_info(request)
 
     def create_privacy_rule_with_http_info(self, request):
-        """创建隐私屏蔽防护规则
-
-        创建隐私屏蔽防护规则
-
-        :param CreatePrivacyRuleRequest request
-        :return: CreatePrivacyRuleResponse
-        """
-
         all_params = ['policy_id', 'create_privacy_rule_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -575,26 +536,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_value_list(self, request):
         """创建引用表
 
         创建引用表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateValueListRequest request
-        :return: CreateValueListResponse
+        :param request: Request instance for CreateValueList
+        :type request: :class:`huaweicloudsdkwaf.v1.CreateValueListRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.CreateValueListResponse`
         """
         return self.create_value_list_with_http_info(request)
 
     def create_value_list_with_http_info(self, request):
-        """创建引用表
-
-        创建引用表
-
-        :param CreateValueListRequest request
-        :return: CreateValueListResponse
-        """
-
         all_params = ['create_value_list_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -640,26 +596,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_whiteblackip_rule(self, request):
         """创建黑白名单规则
 
         创建黑白名单规则
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateWhiteblackipRuleRequest request
-        :return: CreateWhiteblackipRuleResponse
+        :param request: Request instance for CreateWhiteblackipRule
+        :type request: :class:`huaweicloudsdkwaf.v1.CreateWhiteblackipRuleRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.CreateWhiteblackipRuleResponse`
         """
         return self.create_whiteblackip_rule_with_http_info(request)
 
     def create_whiteblackip_rule_with_http_info(self, request):
-        """创建黑白名单规则
-
-        创建黑白名单规则
-
-        :param CreateWhiteblackipRuleRequest request
-        :return: CreateWhiteblackipRuleResponse
-        """
-
         all_params = ['policy_id', 'create_whiteblackip_rule_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -707,26 +658,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_antitamper_rule(self, request):
         """删除防篡改防护规则
 
         删除防篡改防护规则
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteAntitamperRuleRequest request
-        :return: DeleteAntitamperRuleResponse
+        :param request: Request instance for DeleteAntitamperRule
+        :type request: :class:`huaweicloudsdkwaf.v1.DeleteAntitamperRuleRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.DeleteAntitamperRuleResponse`
         """
         return self.delete_antitamper_rule_with_http_info(request)
 
     def delete_antitamper_rule_with_http_info(self, request):
-        """删除防篡改防护规则
-
-        删除防篡改防护规则
-
-        :param DeleteAntitamperRuleRequest request
-        :return: DeleteAntitamperRuleResponse
-        """
-
         all_params = ['policy_id', 'rule_id', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -774,26 +720,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_certificate(self, request):
         """删除证书
 
         删除证书
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteCertificateRequest request
-        :return: DeleteCertificateResponse
+        :param request: Request instance for DeleteCertificate
+        :type request: :class:`huaweicloudsdkwaf.v1.DeleteCertificateRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.DeleteCertificateResponse`
         """
         return self.delete_certificate_with_http_info(request)
 
     def delete_certificate_with_http_info(self, request):
-        """删除证书
-
-        删除证书
-
-        :param DeleteCertificateRequest request
-        :return: DeleteCertificateResponse
-        """
-
         all_params = ['certificate_id', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -839,26 +780,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_geoip_rule(self, request):
         """删除地理位置防护规则
 
         删除地理位置防护规则
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteGeoipRuleRequest request
-        :return: DeleteGeoipRuleResponse
+        :param request: Request instance for DeleteGeoipRule
+        :type request: :class:`huaweicloudsdkwaf.v1.DeleteGeoipRuleRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.DeleteGeoipRuleResponse`
         """
         return self.delete_geoip_rule_with_http_info(request)
 
     def delete_geoip_rule_with_http_info(self, request):
-        """删除地理位置防护规则
-
-        删除地理位置防护规则
-
-        :param DeleteGeoipRuleRequest request
-        :return: DeleteGeoipRuleResponse
-        """
-
         all_params = ['policy_id', 'rule_id', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -906,26 +842,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_host(self, request):
         """删除云模式防护域名
 
         删除云模式防护域名
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteHostRequest request
-        :return: DeleteHostResponse
+        :param request: Request instance for DeleteHost
+        :type request: :class:`huaweicloudsdkwaf.v1.DeleteHostRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.DeleteHostResponse`
         """
         return self.delete_host_with_http_info(request)
 
     def delete_host_with_http_info(self, request):
-        """删除云模式防护域名
-
-        删除云模式防护域名
-
-        :param DeleteHostRequest request
-        :return: DeleteHostResponse
-        """
-
         all_params = ['instance_id', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -971,26 +902,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_policy(self, request):
         """删除防护策略
 
         删除防护策略
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeletePolicyRequest request
-        :return: DeletePolicyResponse
+        :param request: Request instance for DeletePolicy
+        :type request: :class:`huaweicloudsdkwaf.v1.DeletePolicyRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.DeletePolicyResponse`
         """
         return self.delete_policy_with_http_info(request)
 
     def delete_policy_with_http_info(self, request):
-        """删除防护策略
-
-        删除防护策略
-
-        :param DeletePolicyRequest request
-        :return: DeletePolicyResponse
-        """
-
         all_params = ['policy_id', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1036,26 +962,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_premium_host(self, request):
         """删除独享模式域名
 
         删除独享模式域名
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeletePremiumHostRequest request
-        :return: DeletePremiumHostResponse
+        :param request: Request instance for DeletePremiumHost
+        :type request: :class:`huaweicloudsdkwaf.v1.DeletePremiumHostRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.DeletePremiumHostResponse`
         """
         return self.delete_premium_host_with_http_info(request)
 
     def delete_premium_host_with_http_info(self, request):
-        """删除独享模式域名
-
-        删除独享模式域名
-
-        :param DeletePremiumHostRequest request
-        :return: DeletePremiumHostResponse
-        """
-
         all_params = ['host_id', 'enterprise_project_id', 'keep_policy']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1103,26 +1024,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_privacy_rule(self, request):
         """删除隐私屏蔽防护规则
 
         删除隐私屏蔽防护规则
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeletePrivacyRuleRequest request
-        :return: DeletePrivacyRuleResponse
+        :param request: Request instance for DeletePrivacyRule
+        :type request: :class:`huaweicloudsdkwaf.v1.DeletePrivacyRuleRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.DeletePrivacyRuleResponse`
         """
         return self.delete_privacy_rule_with_http_info(request)
 
     def delete_privacy_rule_with_http_info(self, request):
-        """删除隐私屏蔽防护规则
-
-        删除隐私屏蔽防护规则
-
-        :param DeletePrivacyRuleRequest request
-        :return: DeletePrivacyRuleResponse
-        """
-
         all_params = ['policy_id', 'rule_id', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1170,26 +1086,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_value_list(self, request):
         """删除引用表
 
         删除引用表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteValueListRequest request
-        :return: DeleteValueListResponse
+        :param request: Request instance for DeleteValueList
+        :type request: :class:`huaweicloudsdkwaf.v1.DeleteValueListRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.DeleteValueListResponse`
         """
         return self.delete_value_list_with_http_info(request)
 
     def delete_value_list_with_http_info(self, request):
-        """删除引用表
-
-        删除引用表
-
-        :param DeleteValueListRequest request
-        :return: DeleteValueListResponse
-        """
-
         all_params = ['valuelistid', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1235,26 +1146,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_white_black_ip_rule(self, request):
         """删除黑白名单防护规则
 
         删除黑白名单防护规则
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteWhiteBlackIpRuleRequest request
-        :return: DeleteWhiteBlackIpRuleResponse
+        :param request: Request instance for DeleteWhiteBlackIpRule
+        :type request: :class:`huaweicloudsdkwaf.v1.DeleteWhiteBlackIpRuleRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.DeleteWhiteBlackIpRuleResponse`
         """
         return self.delete_white_black_ip_rule_with_http_info(request)
 
     def delete_white_black_ip_rule_with_http_info(self, request):
-        """删除黑白名单防护规则
-
-        删除黑白名单防护规则
-
-        :param DeleteWhiteBlackIpRuleRequest request
-        :return: DeleteWhiteBlackIpRuleResponse
-        """
-
         all_params = ['policy_id', 'rule_id', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1302,26 +1208,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_antitamper_rule(self, request):
         """查询防篡改规则列表
 
         查询防篡改规则列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListAntitamperRuleRequest request
-        :return: ListAntitamperRuleResponse
+        :param request: Request instance for ListAntitamperRule
+        :type request: :class:`huaweicloudsdkwaf.v1.ListAntitamperRuleRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ListAntitamperRuleResponse`
         """
         return self.list_antitamper_rule_with_http_info(request)
 
     def list_antitamper_rule_with_http_info(self, request):
-        """查询防篡改规则列表
-
-        查询防篡改规则列表
-
-        :param ListAntitamperRuleRequest request
-        :return: ListAntitamperRuleResponse
-        """
-
         all_params = ['policy_id', 'enterprise_project_id', 'page', 'pagesize']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1371,26 +1272,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_bandwidth_timeline(self, request):
         """查询安全统计带宽数据
 
         查询安全统计带宽数据
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListBandwidthTimelineRequest request
-        :return: ListBandwidthTimelineResponse
+        :param request: Request instance for ListBandwidthTimeline
+        :type request: :class:`huaweicloudsdkwaf.v1.ListBandwidthTimelineRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ListBandwidthTimelineResponse`
         """
         return self.list_bandwidth_timeline_with_http_info(request)
 
     def list_bandwidth_timeline_with_http_info(self, request):
-        """查询安全统计带宽数据
-
-        查询安全统计带宽数据
-
-        :param ListBandwidthTimelineRequest request
-        :return: ListBandwidthTimelineResponse
-        """
-
         all_params = ['_from', 'to', 'enterprise_project_id', 'hosts', 'instances', 'group_by']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1444,26 +1340,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_certificates(self, request):
         """查询证书列表
 
         查询证书列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListCertificatesRequest request
-        :return: ListCertificatesResponse
+        :param request: Request instance for ListCertificates
+        :type request: :class:`huaweicloudsdkwaf.v1.ListCertificatesRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ListCertificatesResponse`
         """
         return self.list_certificates_with_http_info(request)
 
     def list_certificates_with_http_info(self, request):
-        """查询证书列表
-
-        查询证书列表
-
-        :param ListCertificatesRequest request
-        :return: ListCertificatesResponse
-        """
-
         all_params = ['enterprise_project_id', 'page', 'pagesize', 'name', 'host', 'exp_status']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1517,26 +1408,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_composite_hosts(self, request):
         """查询全部防护域名列表
 
         查询全部防护域名列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListCompositeHostsRequest request
-        :return: ListCompositeHostsResponse
+        :param request: Request instance for ListCompositeHosts
+        :type request: :class:`huaweicloudsdkwaf.v1.ListCompositeHostsRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ListCompositeHostsResponse`
         """
         return self.list_composite_hosts_with_http_info(request)
 
     def list_composite_hosts_with_http_info(self, request):
-        """查询全部防护域名列表
-
-        查询全部防护域名列表
-
-        :param ListCompositeHostsRequest request
-        :return: ListCompositeHostsResponse
-        """
-
         all_params = ['enterprise_project_id', 'page', 'pagesize', 'hostname', 'policyname', 'protect_status', 'waf_type', 'is_https']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1594,26 +1480,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_event(self, request):
         """查询攻击事件列表
 
         查询攻击事件列表，该API暂时不支持查询全部防护事件，pagesize参数不可设为-1，由于性能原因，数据量越大消耗的内存越大，后端最多限制查询10000条数据，例如：自定义时间段内的数据超过了10000条，就无法查出page为101，pagesize为100之后的数据，需要调整时间区间，再进行查询
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListEventRequest request
-        :return: ListEventResponse
+        :param request: Request instance for ListEvent
+        :type request: :class:`huaweicloudsdkwaf.v1.ListEventRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ListEventResponse`
         """
         return self.list_event_with_http_info(request)
 
     def list_event_with_http_info(self, request):
-        """查询攻击事件列表
-
-        查询攻击事件列表，该API暂时不支持查询全部防护事件，pagesize参数不可设为-1，由于性能原因，数据量越大消耗的内存越大，后端最多限制查询10000条数据，例如：自定义时间段内的数据超过了10000条，就无法查出page为101，pagesize为100之后的数据，需要调整时间区间，再进行查询
-
-        :param ListEventRequest request
-        :return: ListEventResponse
-        """
-
         all_params = ['enterprise_project_id', 'recent', 'attacks', '_from', 'to', 'hosts', 'page', 'pagesize']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1673,26 +1554,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_geoip_rule(self, request):
         """查询地理位置规则列表
 
         查询地理位置规则列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListGeoipRuleRequest request
-        :return: ListGeoipRuleResponse
+        :param request: Request instance for ListGeoipRule
+        :type request: :class:`huaweicloudsdkwaf.v1.ListGeoipRuleRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ListGeoipRuleResponse`
         """
         return self.list_geoip_rule_with_http_info(request)
 
     def list_geoip_rule_with_http_info(self, request):
-        """查询地理位置规则列表
-
-        查询地理位置规则列表
-
-        :param ListGeoipRuleRequest request
-        :return: ListGeoipRuleResponse
-        """
-
         all_params = ['policy_id', 'enterprise_project_id', 'page', 'pagesize']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1742,26 +1618,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_host(self, request):
         """查询云模式防护域名列表
 
         查询云模式防护域名列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListHostRequest request
-        :return: ListHostResponse
+        :param request: Request instance for ListHost
+        :type request: :class:`huaweicloudsdkwaf.v1.ListHostRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ListHostResponse`
         """
         return self.list_host_with_http_info(request)
 
     def list_host_with_http_info(self, request):
-        """查询云模式防护域名列表
-
-        查询云模式防护域名列表
-
-        :param ListHostRequest request
-        :return: ListHostResponse
-        """
-
         all_params = ['enterprise_project_id', 'page', 'pagesize', 'hostname', 'policyname']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1813,26 +1684,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_host_route(self, request):
         """获取云模式域名路由信息
 
         返回路由信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListHostRouteRequest request
-        :return: ListHostRouteResponse
+        :param request: Request instance for ListHostRoute
+        :type request: :class:`huaweicloudsdkwaf.v1.ListHostRouteRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ListHostRouteResponse`
         """
         return self.list_host_route_with_http_info(request)
 
     def list_host_route_with_http_info(self, request):
-        """获取云模式域名路由信息
-
-        返回路由信息
-
-        :param ListHostRouteRequest request
-        :return: ListHostRouteResponse
-        """
-
         all_params = ['instance_id', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1878,26 +1744,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_ignore_rule(self, request):
         """查询误报屏蔽规则列表
 
         查询误报屏蔽规则列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListIgnoreRuleRequest request
-        :return: ListIgnoreRuleResponse
+        :param request: Request instance for ListIgnoreRule
+        :type request: :class:`huaweicloudsdkwaf.v1.ListIgnoreRuleRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ListIgnoreRuleResponse`
         """
         return self.list_ignore_rule_with_http_info(request)
 
     def list_ignore_rule_with_http_info(self, request):
-        """查询误报屏蔽规则列表
-
-        查询误报屏蔽规则列表
-
-        :param ListIgnoreRuleRequest request
-        :return: ListIgnoreRuleResponse
-        """
-
         all_params = ['policy_id', 'enterprise_project_id', 'page', 'pagesize']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1947,26 +1808,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_policy(self, request):
         """查询防护策略列表
 
         查询防护策略列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListPolicyRequest request
-        :return: ListPolicyResponse
+        :param request: Request instance for ListPolicy
+        :type request: :class:`huaweicloudsdkwaf.v1.ListPolicyRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ListPolicyResponse`
         """
         return self.list_policy_with_http_info(request)
 
     def list_policy_with_http_info(self, request):
-        """查询防护策略列表
-
-        查询防护策略列表
-
-        :param ListPolicyRequest request
-        :return: ListPolicyResponse
-        """
-
         all_params = ['enterprise_project_id', 'page', 'pagesize', 'name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2016,26 +1872,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_premium_host(self, request):
         """独享模式域名列表
 
         独享模式域名列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListPremiumHostRequest request
-        :return: ListPremiumHostResponse
+        :param request: Request instance for ListPremiumHost
+        :type request: :class:`huaweicloudsdkwaf.v1.ListPremiumHostRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ListPremiumHostResponse`
         """
         return self.list_premium_host_with_http_info(request)
 
     def list_premium_host_with_http_info(self, request):
-        """独享模式域名列表
-
-        独享模式域名列表
-
-        :param ListPremiumHostRequest request
-        :return: ListPremiumHostResponse
-        """
-
         all_params = ['enterprise_project_id', 'page', 'pagesize', 'hostname', 'policyname', 'protect_status']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2089,26 +1940,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_privacy_rule(self, request):
         """查询隐私屏蔽防护规则
 
         查询隐私屏蔽防护规则
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListPrivacyRuleRequest request
-        :return: ListPrivacyRuleResponse
+        :param request: Request instance for ListPrivacyRule
+        :type request: :class:`huaweicloudsdkwaf.v1.ListPrivacyRuleRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ListPrivacyRuleResponse`
         """
         return self.list_privacy_rule_with_http_info(request)
 
     def list_privacy_rule_with_http_info(self, request):
-        """查询隐私屏蔽防护规则
-
-        查询隐私屏蔽防护规则
-
-        :param ListPrivacyRuleRequest request
-        :return: ListPrivacyRuleResponse
-        """
-
         all_params = ['policy_id', 'enterprise_project_id', 'page', 'pagesize']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2158,26 +2004,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_qps_timeline(self, request):
         """查询安全统计qps次数
 
         查询安全统计qps次数
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListQpsTimelineRequest request
-        :return: ListQpsTimelineResponse
+        :param request: Request instance for ListQpsTimeline
+        :type request: :class:`huaweicloudsdkwaf.v1.ListQpsTimelineRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ListQpsTimelineResponse`
         """
         return self.list_qps_timeline_with_http_info(request)
 
     def list_qps_timeline_with_http_info(self, request):
-        """查询安全统计qps次数
-
-        查询安全统计qps次数
-
-        :param ListQpsTimelineRequest request
-        :return: ListQpsTimelineResponse
-        """
-
         all_params = ['_from', 'to', 'enterprise_project_id', 'hosts', 'instances', 'group_by']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2231,26 +2072,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_statistics(self, request):
         """查询安全总览请求数据
 
         查询安全总览请求数据
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListStatisticsRequest request
-        :return: ListStatisticsResponse
+        :param request: Request instance for ListStatistics
+        :type request: :class:`huaweicloudsdkwaf.v1.ListStatisticsRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ListStatisticsResponse`
         """
         return self.list_statistics_with_http_info(request)
 
     def list_statistics_with_http_info(self, request):
-        """查询安全总览请求数据
-
-        查询安全总览请求数据
-
-        :param ListStatisticsRequest request
-        :return: ListStatisticsResponse
-        """
-
         all_params = ['_from', 'to', 'enterprise_project_id', 'hosts', 'instances']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2302,26 +2138,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_top_abnormal(self, request):
         """查询业务异常数量
 
         查询业务异常数量
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListTopAbnormalRequest request
-        :return: ListTopAbnormalResponse
+        :param request: Request instance for ListTopAbnormal
+        :type request: :class:`huaweicloudsdkwaf.v1.ListTopAbnormalRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ListTopAbnormalResponse`
         """
         return self.list_top_abnormal_with_http_info(request)
 
     def list_top_abnormal_with_http_info(self, request):
-        """查询业务异常数量
-
-        查询业务异常数量
-
-        :param ListTopAbnormalRequest request
-        :return: ListTopAbnormalResponse
-        """
-
         all_params = ['_from', 'to', 'enterprise_project_id', 'top', 'code', 'hosts', 'instances']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2377,26 +2208,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_value_list(self, request):
         """查询引用表列表
 
         查询引用表列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListValueListRequest request
-        :return: ListValueListResponse
+        :param request: Request instance for ListValueList
+        :type request: :class:`huaweicloudsdkwaf.v1.ListValueListRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ListValueListResponse`
         """
         return self.list_value_list_with_http_info(request)
 
     def list_value_list_with_http_info(self, request):
-        """查询引用表列表
-
-        查询引用表列表
-
-        :param ListValueListRequest request
-        :return: ListValueListResponse
-        """
-
         all_params = ['page', 'pagesize', 'name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2444,26 +2270,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_whiteblackip_rule(self, request):
         """查询黑白名单规则列表
 
         查询黑白名单规则列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListWhiteblackipRuleRequest request
-        :return: ListWhiteblackipRuleResponse
+        :param request: Request instance for ListWhiteblackipRule
+        :type request: :class:`huaweicloudsdkwaf.v1.ListWhiteblackipRuleRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ListWhiteblackipRuleResponse`
         """
         return self.list_whiteblackip_rule_with_http_info(request)
 
     def list_whiteblackip_rule_with_http_info(self, request):
-        """查询黑白名单规则列表
-
-        查询黑白名单规则列表
-
-        :param ListWhiteblackipRuleRequest request
-        :return: ListWhiteblackipRuleResponse
-        """
-
         all_params = ['policy_id', 'enterprise_project_id', 'page', 'pagesize', 'name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2515,26 +2336,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_certificate(self, request):
         """查询证书
 
         查询证书
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowCertificateRequest request
-        :return: ShowCertificateResponse
+        :param request: Request instance for ShowCertificate
+        :type request: :class:`huaweicloudsdkwaf.v1.ShowCertificateRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ShowCertificateResponse`
         """
         return self.show_certificate_with_http_info(request)
 
     def show_certificate_with_http_info(self, request):
-        """查询证书
-
-        查询证书
-
-        :param ShowCertificateRequest request
-        :return: ShowCertificateResponse
-        """
-
         all_params = ['certificate_id', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2580,26 +2396,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_composite_host(self, request):
         """根据Id查询防护域名
 
         根据Id查询防护域名
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowCompositeHostRequest request
-        :return: ShowCompositeHostResponse
+        :param request: Request instance for ShowCompositeHost
+        :type request: :class:`huaweicloudsdkwaf.v1.ShowCompositeHostRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ShowCompositeHostResponse`
         """
         return self.show_composite_host_with_http_info(request)
 
     def show_composite_host_with_http_info(self, request):
-        """根据Id查询防护域名
-
-        根据Id查询防护域名
-
-        :param ShowCompositeHostRequest request
-        :return: ShowCompositeHostResponse
-        """
-
         all_params = ['host_id', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2645,26 +2456,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_console_config(self, request):
         """局点支持特性查询
 
         局点支持特性查询
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowConsoleConfigRequest request
-        :return: ShowConsoleConfigResponse
+        :param request: Request instance for ShowConsoleConfig
+        :type request: :class:`huaweicloudsdkwaf.v1.ShowConsoleConfigRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ShowConsoleConfigResponse`
         """
         return self.show_console_config_with_http_info(request)
 
     def show_console_config_with_http_info(self, request):
-        """局点支持特性查询
-
-        局点支持特性查询
-
-        :param ShowConsoleConfigRequest request
-        :return: ShowConsoleConfigResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2706,26 +2512,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_event(self, request):
         """查询攻击事件详情
 
         查询攻击事件详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowEventRequest request
-        :return: ShowEventResponse
+        :param request: Request instance for ShowEvent
+        :type request: :class:`huaweicloudsdkwaf.v1.ShowEventRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ShowEventResponse`
         """
         return self.show_event_with_http_info(request)
 
     def show_event_with_http_info(self, request):
-        """查询攻击事件详情
-
-        查询攻击事件详情
-
-        :param ShowEventRequest request
-        :return: ShowEventResponse
-        """
-
         all_params = ['eventid', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2771,26 +2572,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_host(self, request):
         """根据Id查询云模式防护域名
 
         根据Id查询云模式防护域名
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowHostRequest request
-        :return: ShowHostResponse
+        :param request: Request instance for ShowHost
+        :type request: :class:`huaweicloudsdkwaf.v1.ShowHostRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ShowHostResponse`
         """
         return self.show_host_with_http_info(request)
 
     def show_host_with_http_info(self, request):
-        """根据Id查询云模式防护域名
-
-        根据Id查询云模式防护域名
-
-        :param ShowHostRequest request
-        :return: ShowHostResponse
-        """
-
         all_params = ['instance_id', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2836,26 +2632,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_policy(self, request):
         """根据Id查询防护策略
 
         根据Id查询防护策略
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowPolicyRequest request
-        :return: ShowPolicyResponse
+        :param request: Request instance for ShowPolicy
+        :type request: :class:`huaweicloudsdkwaf.v1.ShowPolicyRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ShowPolicyResponse`
         """
         return self.show_policy_with_http_info(request)
 
     def show_policy_with_http_info(self, request):
-        """根据Id查询防护策略
-
-        根据Id查询防护策略
-
-        :param ShowPolicyRequest request
-        :return: ShowPolicyResponse
-        """
-
         all_params = ['policy_id', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2901,26 +2692,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_premium_host(self, request):
         """查看独享模式域名配置
 
         查看独享模式域名配置
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowPremiumHostRequest request
-        :return: ShowPremiumHostResponse
+        :param request: Request instance for ShowPremiumHost
+        :type request: :class:`huaweicloudsdkwaf.v1.ShowPremiumHostRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ShowPremiumHostResponse`
         """
         return self.show_premium_host_with_http_info(request)
 
     def show_premium_host_with_http_info(self, request):
-        """查看独享模式域名配置
-
-        查看独享模式域名配置
-
-        :param ShowPremiumHostRequest request
-        :return: ShowPremiumHostResponse
-        """
-
         all_params = ['host_id', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2966,26 +2752,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_certificate(self, request):
         """修改证书
 
         修改证书
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateCertificateRequest request
-        :return: UpdateCertificateResponse
+        :param request: Request instance for UpdateCertificate
+        :type request: :class:`huaweicloudsdkwaf.v1.UpdateCertificateRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.UpdateCertificateResponse`
         """
         return self.update_certificate_with_http_info(request)
 
     def update_certificate_with_http_info(self, request):
-        """修改证书
-
-        修改证书
-
-        :param UpdateCertificateRequest request
-        :return: UpdateCertificateResponse
-        """
-
         all_params = ['certificate_id', 'enterprise_project_id', 'update_certificate_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3033,26 +2814,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_geoip_rule(self, request):
         """更新地理位置防护规则
 
         更新地理位置防护规则
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateGeoipRuleRequest request
-        :return: UpdateGeoipRuleResponse
+        :param request: Request instance for UpdateGeoipRule
+        :type request: :class:`huaweicloudsdkwaf.v1.UpdateGeoipRuleRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.UpdateGeoipRuleResponse`
         """
         return self.update_geoip_rule_with_http_info(request)
 
     def update_geoip_rule_with_http_info(self, request):
-        """更新地理位置防护规则
-
-        更新地理位置防护规则
-
-        :param UpdateGeoipRuleRequest request
-        :return: UpdateGeoipRuleResponse
-        """
-
         all_params = ['policy_id', 'rule_id', 'update_geoip_rule_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3102,26 +2878,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_host(self, request):
         """更新云模式防护域名
 
         更新云模式防护域名配置，在没有填入源站信息server的原始数据的情况下，则新的源站信息server会覆盖源站信息，而不是新增源站
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateHostRequest request
-        :return: UpdateHostResponse
+        :param request: Request instance for UpdateHost
+        :type request: :class:`huaweicloudsdkwaf.v1.UpdateHostRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.UpdateHostResponse`
         """
         return self.update_host_with_http_info(request)
 
     def update_host_with_http_info(self, request):
-        """更新云模式防护域名
-
-        更新云模式防护域名配置，在没有填入源站信息server的原始数据的情况下，则新的源站信息server会覆盖源站信息，而不是新增源站
-
-        :param UpdateHostRequest request
-        :return: UpdateHostResponse
-        """
-
         all_params = ['instance_id', 'enterprise_project_id', 'update_host_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3169,26 +2940,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_host_protect_status(self, request):
         """修改域名防护状态
 
         返回路由信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateHostProtectStatusRequest request
-        :return: UpdateHostProtectStatusResponse
+        :param request: Request instance for UpdateHostProtectStatus
+        :type request: :class:`huaweicloudsdkwaf.v1.UpdateHostProtectStatusRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.UpdateHostProtectStatusResponse`
         """
         return self.update_host_protect_status_with_http_info(request)
 
     def update_host_protect_status_with_http_info(self, request):
-        """修改域名防护状态
-
-        返回路由信息
-
-        :param UpdateHostProtectStatusRequest request
-        :return: UpdateHostProtectStatusResponse
-        """
-
         all_params = ['instance_id', 'enterprise_project_id', 'update_host_protect_status_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3236,26 +3002,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_policy(self, request):
         """更新防护策略
 
         更新防护策略，请求体可只传需要更新的部分
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdatePolicyRequest request
-        :return: UpdatePolicyResponse
+        :param request: Request instance for UpdatePolicy
+        :type request: :class:`huaweicloudsdkwaf.v1.UpdatePolicyRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.UpdatePolicyResponse`
         """
         return self.update_policy_with_http_info(request)
 
     def update_policy_with_http_info(self, request):
-        """更新防护策略
-
-        更新防护策略，请求体可只传需要更新的部分
-
-        :param UpdatePolicyRequest request
-        :return: UpdatePolicyResponse
-        """
-
         all_params = ['policy_id', 'update_policy_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3303,26 +3064,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_policy_protect_host(self, request):
         """更新防护策略的域名
 
         更新防护策略的防护域名
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdatePolicyProtectHostRequest request
-        :return: UpdatePolicyProtectHostResponse
+        :param request: Request instance for UpdatePolicyProtectHost
+        :type request: :class:`huaweicloudsdkwaf.v1.UpdatePolicyProtectHostRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.UpdatePolicyProtectHostResponse`
         """
         return self.update_policy_protect_host_with_http_info(request)
 
     def update_policy_protect_host_with_http_info(self, request):
-        """更新防护策略的域名
-
-        更新防护策略的防护域名
-
-        :param UpdatePolicyProtectHostRequest request
-        :return: UpdatePolicyProtectHostResponse
-        """
-
         all_params = ['policy_id', 'hosts', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3370,26 +3126,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_policy_rule_status(self, request):
         """修改单条规则的状态
 
         修改单条规则的状态
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdatePolicyRuleStatusRequest request
-        :return: UpdatePolicyRuleStatusResponse
+        :param request: Request instance for UpdatePolicyRuleStatus
+        :type request: :class:`huaweicloudsdkwaf.v1.UpdatePolicyRuleStatusRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.UpdatePolicyRuleStatusResponse`
         """
         return self.update_policy_rule_status_with_http_info(request)
 
     def update_policy_rule_status_with_http_info(self, request):
-        """修改单条规则的状态
-
-        修改单条规则的状态
-
-        :param UpdatePolicyRuleStatusRequest request
-        :return: UpdatePolicyRuleStatusResponse
-        """
-
         all_params = ['policy_id', 'ruletype', 'rule_id', 'update_policy_rule_status_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3441,26 +3192,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_premium_host(self, request):
         """修改独享模式域名配置
 
         修改独享模式域名配置
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdatePremiumHostRequest request
-        :return: UpdatePremiumHostResponse
+        :param request: Request instance for UpdatePremiumHost
+        :type request: :class:`huaweicloudsdkwaf.v1.UpdatePremiumHostRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.UpdatePremiumHostResponse`
         """
         return self.update_premium_host_with_http_info(request)
 
     def update_premium_host_with_http_info(self, request):
-        """修改独享模式域名配置
-
-        修改独享模式域名配置
-
-        :param UpdatePremiumHostRequest request
-        :return: UpdatePremiumHostResponse
-        """
-
         all_params = ['host_id', 'enterprise_project_id', 'update_premium_host_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3508,26 +3254,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_premium_host_protect_status(self, request):
         """修改独享模式域名防护状态
 
         修改独享模式域名防护状态
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdatePremiumHostProtectStatusRequest request
-        :return: UpdatePremiumHostProtectStatusResponse
+        :param request: Request instance for UpdatePremiumHostProtectStatus
+        :type request: :class:`huaweicloudsdkwaf.v1.UpdatePremiumHostProtectStatusRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.UpdatePremiumHostProtectStatusResponse`
         """
         return self.update_premium_host_protect_status_with_http_info(request)
 
     def update_premium_host_protect_status_with_http_info(self, request):
-        """修改独享模式域名防护状态
-
-        修改独享模式域名防护状态
-
-        :param UpdatePremiumHostProtectStatusRequest request
-        :return: UpdatePremiumHostProtectStatusResponse
-        """
-
         all_params = ['host_id', 'enterprise_project_id', 'update_premium_host_protect_status_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3575,26 +3316,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_privacy_rule(self, request):
         """更新隐私屏蔽防护规则
 
         更新隐私屏蔽防护规则
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdatePrivacyRuleRequest request
-        :return: UpdatePrivacyRuleResponse
+        :param request: Request instance for UpdatePrivacyRule
+        :type request: :class:`huaweicloudsdkwaf.v1.UpdatePrivacyRuleRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.UpdatePrivacyRuleResponse`
         """
         return self.update_privacy_rule_with_http_info(request)
 
     def update_privacy_rule_with_http_info(self, request):
-        """更新隐私屏蔽防护规则
-
-        更新隐私屏蔽防护规则
-
-        :param UpdatePrivacyRuleRequest request
-        :return: UpdatePrivacyRuleResponse
-        """
-
         all_params = ['policy_id', 'rule_id', 'update_privacy_rule_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3644,26 +3380,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_value_list(self, request):
         """修改引用表
 
         修改引用表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateValueListRequest request
-        :return: UpdateValueListResponse
+        :param request: Request instance for UpdateValueList
+        :type request: :class:`huaweicloudsdkwaf.v1.UpdateValueListRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.UpdateValueListResponse`
         """
         return self.update_value_list_with_http_info(request)
 
     def update_value_list_with_http_info(self, request):
-        """修改引用表
-
-        修改引用表
-
-        :param UpdateValueListRequest request
-        :return: UpdateValueListResponse
-        """
-
         all_params = ['valuelistid', 'enterprise_project_id', 'update_value_list_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3711,26 +3442,21 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_whiteblackip_rule(self, request):
         """更新黑白名单防护规则
 
         更新黑白名单防护规则
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateWhiteblackipRuleRequest request
-        :return: UpdateWhiteblackipRuleResponse
+        :param request: Request instance for UpdateWhiteblackipRule
+        :type request: :class:`huaweicloudsdkwaf.v1.UpdateWhiteblackipRuleRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.UpdateWhiteblackipRuleResponse`
         """
         return self.update_whiteblackip_rule_with_http_info(request)
 
     def update_whiteblackip_rule_with_http_info(self, request):
-        """更新黑白名单防护规则
-
-        更新黑白名单防护规则
-
-        :param UpdateWhiteblackipRuleRequest request
-        :return: UpdateWhiteblackipRuleResponse
-        """
-
         all_params = ['policy_id', 'rule_id', 'update_whiteblackip_rule_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -3779,7 +3505,6 @@ class WafClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

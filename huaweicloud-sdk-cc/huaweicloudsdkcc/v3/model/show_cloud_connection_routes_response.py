@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowCloudConnectionRoutesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowCloudConnectionRoutesResponse(SdkResponse):
     }
 
     def __init__(self, cloud_connection_route=None, request_id=None):
-        """ShowCloudConnectionRoutesResponse - a model defined in huaweicloud sdk"""
+        """ShowCloudConnectionRoutesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param cloud_connection_route: 
+        :type cloud_connection_route: :class:`huaweicloudsdkcc.v3.CloudConnectionRoute`
+        :param request_id: 请求ID。
+        :type request_id: str
+        """
         
         super(ShowCloudConnectionRoutesResponse, self).__init__()
 
@@ -51,7 +58,7 @@ class ShowCloudConnectionRoutesResponse(SdkResponse):
 
 
         :return: The cloud_connection_route of this ShowCloudConnectionRoutesResponse.
-        :rtype: CloudConnectionRoute
+        :rtype: :class:`huaweicloudsdkcc.v3.CloudConnectionRoute`
         """
         return self._cloud_connection_route
 
@@ -61,7 +68,7 @@ class ShowCloudConnectionRoutesResponse(SdkResponse):
 
 
         :param cloud_connection_route: The cloud_connection_route of this ShowCloudConnectionRoutesResponse.
-        :type: CloudConnectionRoute
+        :type cloud_connection_route: :class:`huaweicloudsdkcc.v3.CloudConnectionRoute`
         """
         self._cloud_connection_route = cloud_connection_route
 
@@ -83,7 +90,7 @@ class ShowCloudConnectionRoutesResponse(SdkResponse):
         请求ID。
 
         :param request_id: The request_id of this ShowCloudConnectionRoutesResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 

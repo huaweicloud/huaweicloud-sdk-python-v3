@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PipelineBasicInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class PipelineBasicInfo:
     }
 
     def __init__(self, project_id=None, project_name=None, pipeline_id=None, pipeline_name=None, creator_id=None, creator_name=None, executor_id=None, executor_name=None, start_time=None, create_time=None, watched=None):
-        """PipelineBasicInfo - a model defined in huaweicloud sdk"""
+        """PipelineBasicInfo
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: devCloud项目id
+        :type project_id: str
+        :param project_name: devCloud项目名字
+        :type project_name: str
+        :param pipeline_id: 流水线id
+        :type pipeline_id: str
+        :param pipeline_name: 流水线名字
+        :type pipeline_name: str
+        :param creator_id: 流水线创建人id
+        :type creator_id: str
+        :param creator_name: 流水线创建人名字
+        :type creator_name: str
+        :param executor_id: 流水线创建人id
+        :type executor_id: str
+        :param executor_name: 流水线执行人名字
+        :type executor_name: str
+        :param start_time: 启动时间
+        :type start_time: str
+        :param create_time: 创建时间
+        :type create_time: str
+        :param watched: 用户是否关注流水线：true（关注），false（未关注）
+        :type watched: str
+        """
         
         
 
@@ -97,7 +122,7 @@ class PipelineBasicInfo:
         devCloud项目id
 
         :param project_id: The project_id of this PipelineBasicInfo.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -119,7 +144,7 @@ class PipelineBasicInfo:
         devCloud项目名字
 
         :param project_name: The project_name of this PipelineBasicInfo.
-        :type: str
+        :type project_name: str
         """
         self._project_name = project_name
 
@@ -141,7 +166,7 @@ class PipelineBasicInfo:
         流水线id
 
         :param pipeline_id: The pipeline_id of this PipelineBasicInfo.
-        :type: str
+        :type pipeline_id: str
         """
         self._pipeline_id = pipeline_id
 
@@ -163,7 +188,7 @@ class PipelineBasicInfo:
         流水线名字
 
         :param pipeline_name: The pipeline_name of this PipelineBasicInfo.
-        :type: str
+        :type pipeline_name: str
         """
         self._pipeline_name = pipeline_name
 
@@ -185,7 +210,7 @@ class PipelineBasicInfo:
         流水线创建人id
 
         :param creator_id: The creator_id of this PipelineBasicInfo.
-        :type: str
+        :type creator_id: str
         """
         self._creator_id = creator_id
 
@@ -207,7 +232,7 @@ class PipelineBasicInfo:
         流水线创建人名字
 
         :param creator_name: The creator_name of this PipelineBasicInfo.
-        :type: str
+        :type creator_name: str
         """
         self._creator_name = creator_name
 
@@ -229,7 +254,7 @@ class PipelineBasicInfo:
         流水线创建人id
 
         :param executor_id: The executor_id of this PipelineBasicInfo.
-        :type: str
+        :type executor_id: str
         """
         self._executor_id = executor_id
 
@@ -251,7 +276,7 @@ class PipelineBasicInfo:
         流水线执行人名字
 
         :param executor_name: The executor_name of this PipelineBasicInfo.
-        :type: str
+        :type executor_name: str
         """
         self._executor_name = executor_name
 
@@ -273,7 +298,7 @@ class PipelineBasicInfo:
         启动时间
 
         :param start_time: The start_time of this PipelineBasicInfo.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -295,7 +320,7 @@ class PipelineBasicInfo:
         创建时间
 
         :param create_time: The create_time of this PipelineBasicInfo.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -317,7 +342,7 @@ class PipelineBasicInfo:
         用户是否关注流水线：true（关注），false（未关注）
 
         :param watched: The watched of this PipelineBasicInfo.
-        :type: str
+        :type watched: str
         """
         self._watched = watched
 

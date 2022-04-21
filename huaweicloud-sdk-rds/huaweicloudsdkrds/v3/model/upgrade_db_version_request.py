@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpgradeDbVersionRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpgradeDbVersionRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """UpgradeDbVersionRequest - a model defined in huaweicloud sdk"""
+        """UpgradeDbVersionRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言
+        :type x_language: str
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param body: Body of the UpgradeDbVersionRequest
+        :type body: :class:`huaweicloudsdkrds.v3.CustomerUpgradeDatabaseVersionReq`
+        """
         
         
 
@@ -67,7 +76,7 @@ class UpgradeDbVersionRequest:
         语言
 
         :param x_language: The x_language of this UpgradeDbVersionRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -89,7 +98,7 @@ class UpgradeDbVersionRequest:
         实例ID。
 
         :param instance_id: The instance_id of this UpgradeDbVersionRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -99,7 +108,7 @@ class UpgradeDbVersionRequest:
 
 
         :return: The body of this UpgradeDbVersionRequest.
-        :rtype: CustomerUpgradeDatabaseVersionReq
+        :rtype: :class:`huaweicloudsdkrds.v3.CustomerUpgradeDatabaseVersionReq`
         """
         return self._body
 
@@ -109,7 +118,7 @@ class UpgradeDbVersionRequest:
 
 
         :param body: The body of this UpgradeDbVersionRequest.
-        :type: CustomerUpgradeDatabaseVersionReq
+        :type body: :class:`huaweicloudsdkrds.v3.CustomerUpgradeDatabaseVersionReq`
         """
         self._body = body
 

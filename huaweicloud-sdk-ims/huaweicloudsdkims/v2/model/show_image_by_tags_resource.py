@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowImageByTagsResource:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowImageByTagsResource:
     }
 
     def __init__(self, resource_id=None, resource_detail=None, tags=None, resource_name=None):
-        """ShowImageByTagsResource - a model defined in huaweicloud sdk"""
+        """ShowImageByTagsResource
+
+        The model defined in huaweicloud sdk
+
+        :param resource_id: 镜像ID
+        :type resource_id: str
+        :param resource_detail: 
+        :type resource_detail: :class:`huaweicloudsdkims.v2.QueryImageByTagsResourceDetail`
+        :param tags: 镜像的标签列表
+        :type tags: list[:class:`huaweicloudsdkims.v2.TagKeyValue`]
+        :param resource_name: 镜像名称
+        :type resource_name: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class ShowImageByTagsResource:
         镜像ID
 
         :param resource_id: The resource_id of this ShowImageByTagsResource.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -79,7 +90,7 @@ class ShowImageByTagsResource:
 
 
         :return: The resource_detail of this ShowImageByTagsResource.
-        :rtype: QueryImageByTagsResourceDetail
+        :rtype: :class:`huaweicloudsdkims.v2.QueryImageByTagsResourceDetail`
         """
         return self._resource_detail
 
@@ -89,7 +100,7 @@ class ShowImageByTagsResource:
 
 
         :param resource_detail: The resource_detail of this ShowImageByTagsResource.
-        :type: QueryImageByTagsResourceDetail
+        :type resource_detail: :class:`huaweicloudsdkims.v2.QueryImageByTagsResourceDetail`
         """
         self._resource_detail = resource_detail
 
@@ -100,7 +111,7 @@ class ShowImageByTagsResource:
         镜像的标签列表
 
         :return: The tags of this ShowImageByTagsResource.
-        :rtype: list[TagKeyValue]
+        :rtype: list[:class:`huaweicloudsdkims.v2.TagKeyValue`]
         """
         return self._tags
 
@@ -111,7 +122,7 @@ class ShowImageByTagsResource:
         镜像的标签列表
 
         :param tags: The tags of this ShowImageByTagsResource.
-        :type: list[TagKeyValue]
+        :type tags: list[:class:`huaweicloudsdkims.v2.TagKeyValue`]
         """
         self._tags = tags
 
@@ -133,7 +144,7 @@ class ShowImageByTagsResource:
         镜像名称
 
         :param resource_name: The resource_name of this ShowImageByTagsResource.
-        :type: str
+        :type resource_name: str
         """
         self._resource_name = resource_name
 

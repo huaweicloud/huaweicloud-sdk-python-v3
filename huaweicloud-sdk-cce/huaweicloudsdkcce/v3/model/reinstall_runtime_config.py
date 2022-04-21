@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ReinstallRuntimeConfig:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ReinstallRuntimeConfig:
     }
 
     def __init__(self, docker_base_size=None, runtime=None):
-        """ReinstallRuntimeConfig - a model defined in huaweicloud sdk"""
+        """ReinstallRuntimeConfig
+
+        The model defined in huaweicloud sdk
+
+        :param docker_base_size: Device mapper模式下，节点上Docker单容器的可用磁盘空间大小，OverlayFS模式(CCE Turbo集群中CentOS 7.6和Ubuntu 18.04节点，以及混合集群中Ubuntu 18.04节点)下不支持此字段。Device mapper模式下建议dockerBaseSize配置不超过80G，设置过大时可能会导致docker初始化时间过长而启动失败，若对容器磁盘大小有特殊要求，可考虑使用挂载外部或本地存储方式代替。 
+        :type docker_base_size: int
+        :param runtime: 
+        :type runtime: :class:`huaweicloudsdkcce.v3.Runtime`
+        """
         
         
 
@@ -63,7 +70,7 @@ class ReinstallRuntimeConfig:
         Device mapper模式下，节点上Docker单容器的可用磁盘空间大小，OverlayFS模式(CCE Turbo集群中CentOS 7.6和Ubuntu 18.04节点，以及混合集群中Ubuntu 18.04节点)下不支持此字段。Device mapper模式下建议dockerBaseSize配置不超过80G，设置过大时可能会导致docker初始化时间过长而启动失败，若对容器磁盘大小有特殊要求，可考虑使用挂载外部或本地存储方式代替。 
 
         :param docker_base_size: The docker_base_size of this ReinstallRuntimeConfig.
-        :type: int
+        :type docker_base_size: int
         """
         self._docker_base_size = docker_base_size
 
@@ -73,7 +80,7 @@ class ReinstallRuntimeConfig:
 
 
         :return: The runtime of this ReinstallRuntimeConfig.
-        :rtype: Runtime
+        :rtype: :class:`huaweicloudsdkcce.v3.Runtime`
         """
         return self._runtime
 
@@ -83,7 +90,7 @@ class ReinstallRuntimeConfig:
 
 
         :param runtime: The runtime of this ReinstallRuntimeConfig.
-        :type: Runtime
+        :type runtime: :class:`huaweicloudsdkcce.v3.Runtime`
         """
         self._runtime = runtime
 

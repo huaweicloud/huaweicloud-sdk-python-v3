@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDomainApiAclPolicyRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateDomainApiAclPolicyRequestBody:
     }
 
     def __init__(self, api_acl_policy=None):
-        """UpdateDomainApiAclPolicyRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateDomainApiAclPolicyRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param api_acl_policy: 
+        :type api_acl_policy: :class:`huaweicloudsdkiam.v3.AclPolicyOption`
+        """
         
         
 
@@ -45,7 +50,7 @@ class UpdateDomainApiAclPolicyRequestBody:
 
 
         :return: The api_acl_policy of this UpdateDomainApiAclPolicyRequestBody.
-        :rtype: AclPolicyOption
+        :rtype: :class:`huaweicloudsdkiam.v3.AclPolicyOption`
         """
         return self._api_acl_policy
 
@@ -55,7 +60,7 @@ class UpdateDomainApiAclPolicyRequestBody:
 
 
         :param api_acl_policy: The api_acl_policy of this UpdateDomainApiAclPolicyRequestBody.
-        :type: AclPolicyOption
+        :type api_acl_policy: :class:`huaweicloudsdkiam.v3.AclPolicyOption`
         """
         self._api_acl_policy = api_acl_policy
 

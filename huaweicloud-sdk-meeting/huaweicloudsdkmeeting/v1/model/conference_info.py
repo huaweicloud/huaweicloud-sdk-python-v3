@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ConferenceInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -120,7 +119,103 @@ class ConferenceInfo:
     }
 
     def __init__(self, conference_id=None, subject=None, size=None, time_zone_id=None, start_time=None, end_time=None, media_types=None, conference_state=None, language=None, access_number=None, password_entry=None, user_uuid=None, scheduser_name=None, conference_type=None, conf_type=None, cycle_params=None, is_auto_mute=None, is_auto_record=None, chair_join_uri=None, guest_join_uri=None, audience_join_uri=None, record_type=None, aux_address=None, live_address=None, record_aux_stream=None, record_auth_type=None, live_url=None, conf_config_info=None, vmr_flag=None, is_has_record_file=None, vmr_conference_id=None, conf_uuid=None, part_attendee_info=None, terminl_count=None, normal_count=None, dept_name=None, vmr_id=None, role=None, webinar=None, multi_stream_flag=None, conf_mode=None, schedule_vmr=None, concurrent_participants=None, pic_display=None, sub_confs=None, cycle_sub_conf_id=None):
-        """ConferenceInfo - a model defined in huaweicloud sdk"""
+        """ConferenceInfo
+
+        The model defined in huaweicloud sdk
+
+        :param conference_id: 会议ID。长度限制为32个字符。
+        :type conference_id: str
+        :param subject: 会议主题。长度限制为128个字符。
+        :type subject: str
+        :param size: 会议方数。
+        :type size: int
+        :param time_zone_id: 时区参考。
+        :type time_zone_id: str
+        :param start_time: 会议起始时间 (YYYY-MM-DD HH:MM )。
+        :type start_time: str
+        :param end_time: 会议结束时间 (YYYY-MM-DD HH:MM )。
+        :type end_time: str
+        :param media_types: 会议的媒体类型。 由1个或多个枚举String组成，多个枚举时，每个枚举值之间通过”,”逗号分隔。 - Voice: 语音。 - Video: 标清视频。 - HDVideo: 高清视频（与Video互斥，如果同时选择Video、HDVideo，则系统默认选择Video）。 - Telepresence: 智真(与HDVideo、Video互斥，如果同时选择，系统使用Telepresence)。（预留字段） - Data: 多媒体。
+        :type media_types: str
+        :param conference_state: 目前只会返回Created和Schedule状态， 如果会议已经召开返回Created状态，否则返回Schedule状态。 - Schedule: 预定状态。 - Creating: 正在创建状态。 - Created: 会议已经被创建，并正在召开。 - Destroyed: 会议已经关闭。
+        :type conference_state: str
+        :param language: 会议语言。
+        :type language: str
+        :param access_number: 会议接入码。
+        :type access_number: str
+        :param password_entry: 会议密码条目。预订者返回主持人密码和来宾密码。 - 主持人查询时返回主持人密码。 - 来宾查询时返回来宾密码。
+        :type password_entry: list[:class:`huaweicloudsdkmeeting.v1.PasswordEntry`]
+        :param user_uuid: 会议预订者UUID。
+        :type user_uuid: str
+        :param scheduser_name: 会议预订者帐号名称。长度最大限制为96个字符。
+        :type scheduser_name: str
+        :param conference_type: - 0: 普通会议。 - 2: 周期性会议。
+        :type conference_type: int
+        :param conf_type: 会议类型。 - FUTURE - IMMEDIATELY - CYCLE
+        :type conf_type: str
+        :param cycle_params: 
+        :type cycle_params: :class:`huaweicloudsdkmeeting.v1.CycleParams`
+        :param is_auto_mute: 是否入会自动静音。 - 0: 不自动静音 - 1: 自动静音
+        :type is_auto_mute: int
+        :param is_auto_record: 是否自动开启录音。 - 0: 不自动启动。 - 1: 自动启动。
+        :type is_auto_record: int
+        :param chair_join_uri: 主持人会议链接地址。
+        :type chair_join_uri: str
+        :param guest_join_uri: 普通与会者会议链接地址。最大长度1024。
+        :type guest_join_uri: str
+        :param audience_join_uri: 旁听者会议链接地址。最大长度1024。（预留字段）
+        :type audience_join_uri: str
+        :param record_type: 录播类型。 - 0: 禁用 。 - 1: 直播 。 - 2: 录播 。 - 3: 直播+录播。
+        :type record_type: int
+        :param aux_address: 辅流直播地址。
+        :type aux_address: str
+        :param live_address: 主流直播地址。
+        :type live_address: str
+        :param record_aux_stream: 是否录制辅流。  - 0: 否。  - 1: 是。
+        :type record_aux_stream: int
+        :param record_auth_type: 录播鉴权方式。录播类型为:录播、直播+录播时有效。  - 0: 老的鉴权方式，url中携带token鉴权。  - 1: 企业内会议用户鉴权。  - 2: 会议内会议用户鉴权。
+        :type record_auth_type: int
+        :param live_url: 直播地址。（配置直播房间时会返回）
+        :type live_url: str
+        :param conf_config_info: 
+        :type conf_config_info: :class:`huaweicloudsdkmeeting.v1.RestConfConfigDTO`
+        :param vmr_flag: 是否使用云会议室召开预约会议。 - 0: 不使用云会议室; - 1: 使用云会议室。 界面显示会议ID需要使用vmrConferenceID作为会议ID；查询会议详情、登录会控、一键入会等会议业务操作依然使用conferenceID字段。
+        :type vmr_flag: int
+        :param is_has_record_file: 仅历史会议返回值有效。默认没有录制文件。 - True: 有录制文件。 - False: 没有录制文件。
+        :type is_has_record_file: bool
+        :param vmr_conference_id: 云会议室id，如果vmrFlag为1，则该字段不为空。
+        :type vmr_conference_id: str
+        :param conf_uuid: 会议的UUID。
+        :type conf_uuid: str
+        :param part_attendee_info: 与会方信息。硬件终端/与会人最多各显示20条记录。
+        :type part_attendee_info: list[:class:`huaweicloudsdkmeeting.v1.PartAttendee`]
+        :param terminl_count: 硬终端个数。
+        :type terminl_count: int
+        :param normal_count: 普通终端个数。
+        :type normal_count: int
+        :param dept_name: 会议预定者的企业名称。最大长度96。
+        :type dept_name: str
+        :param vmr_id: 云会议室的ID。
+        :type vmr_id: str
+        :param role: 会议角色
+        :type role: str
+        :param webinar: 是否网络研讨会
+        :type webinar: bool
+        :param multi_stream_flag: 标识是否为多流视频会议。 枚举值如下 1：多流会议
+        :type multi_stream_flag: int
+        :param conf_mode: 会议类型
+        :type conf_mode: str
+        :param schedule_vmr: True: VMR预约记录（如果为true则该记录不支持根据会议ID查询会议详情） False：普通会议
+        :type schedule_vmr: bool
+        :param concurrent_participants: 会议方数，会议最大与会人数限制
+        :type concurrent_participants: int
+        :param pic_display: 
+        :type pic_display: :class:`huaweicloudsdkmeeting.v1.MultiPicDisplayDO`
+        :param sub_confs: 周期子会议列表
+        :type sub_confs: list[:class:`huaweicloudsdkmeeting.v1.CycleSubConf`]
+        :param cycle_sub_conf_id: 周期子会议UUID, 用于查询在线会议和历史会议详情时标识
+        :type cycle_sub_conf_id: str
+        """
         
         
 
@@ -283,7 +378,7 @@ class ConferenceInfo:
         会议ID。长度限制为32个字符。
 
         :param conference_id: The conference_id of this ConferenceInfo.
-        :type: str
+        :type conference_id: str
         """
         self._conference_id = conference_id
 
@@ -305,7 +400,7 @@ class ConferenceInfo:
         会议主题。长度限制为128个字符。
 
         :param subject: The subject of this ConferenceInfo.
-        :type: str
+        :type subject: str
         """
         self._subject = subject
 
@@ -327,7 +422,7 @@ class ConferenceInfo:
         会议方数。
 
         :param size: The size of this ConferenceInfo.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -349,7 +444,7 @@ class ConferenceInfo:
         时区参考。
 
         :param time_zone_id: The time_zone_id of this ConferenceInfo.
-        :type: str
+        :type time_zone_id: str
         """
         self._time_zone_id = time_zone_id
 
@@ -371,7 +466,7 @@ class ConferenceInfo:
         会议起始时间 (YYYY-MM-DD HH:MM )。
 
         :param start_time: The start_time of this ConferenceInfo.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -393,7 +488,7 @@ class ConferenceInfo:
         会议结束时间 (YYYY-MM-DD HH:MM )。
 
         :param end_time: The end_time of this ConferenceInfo.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -415,7 +510,7 @@ class ConferenceInfo:
         会议的媒体类型。 由1个或多个枚举String组成，多个枚举时，每个枚举值之间通过”,”逗号分隔。 - Voice: 语音。 - Video: 标清视频。 - HDVideo: 高清视频（与Video互斥，如果同时选择Video、HDVideo，则系统默认选择Video）。 - Telepresence: 智真(与HDVideo、Video互斥，如果同时选择，系统使用Telepresence)。（预留字段） - Data: 多媒体。
 
         :param media_types: The media_types of this ConferenceInfo.
-        :type: str
+        :type media_types: str
         """
         self._media_types = media_types
 
@@ -437,7 +532,7 @@ class ConferenceInfo:
         目前只会返回Created和Schedule状态， 如果会议已经召开返回Created状态，否则返回Schedule状态。 - Schedule: 预定状态。 - Creating: 正在创建状态。 - Created: 会议已经被创建，并正在召开。 - Destroyed: 会议已经关闭。
 
         :param conference_state: The conference_state of this ConferenceInfo.
-        :type: str
+        :type conference_state: str
         """
         self._conference_state = conference_state
 
@@ -459,7 +554,7 @@ class ConferenceInfo:
         会议语言。
 
         :param language: The language of this ConferenceInfo.
-        :type: str
+        :type language: str
         """
         self._language = language
 
@@ -481,7 +576,7 @@ class ConferenceInfo:
         会议接入码。
 
         :param access_number: The access_number of this ConferenceInfo.
-        :type: str
+        :type access_number: str
         """
         self._access_number = access_number
 
@@ -492,7 +587,7 @@ class ConferenceInfo:
         会议密码条目。预订者返回主持人密码和来宾密码。 - 主持人查询时返回主持人密码。 - 来宾查询时返回来宾密码。
 
         :return: The password_entry of this ConferenceInfo.
-        :rtype: list[PasswordEntry]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.PasswordEntry`]
         """
         return self._password_entry
 
@@ -503,7 +598,7 @@ class ConferenceInfo:
         会议密码条目。预订者返回主持人密码和来宾密码。 - 主持人查询时返回主持人密码。 - 来宾查询时返回来宾密码。
 
         :param password_entry: The password_entry of this ConferenceInfo.
-        :type: list[PasswordEntry]
+        :type password_entry: list[:class:`huaweicloudsdkmeeting.v1.PasswordEntry`]
         """
         self._password_entry = password_entry
 
@@ -525,7 +620,7 @@ class ConferenceInfo:
         会议预订者UUID。
 
         :param user_uuid: The user_uuid of this ConferenceInfo.
-        :type: str
+        :type user_uuid: str
         """
         self._user_uuid = user_uuid
 
@@ -547,7 +642,7 @@ class ConferenceInfo:
         会议预订者帐号名称。长度最大限制为96个字符。
 
         :param scheduser_name: The scheduser_name of this ConferenceInfo.
-        :type: str
+        :type scheduser_name: str
         """
         self._scheduser_name = scheduser_name
 
@@ -569,7 +664,7 @@ class ConferenceInfo:
         - 0: 普通会议。 - 2: 周期性会议。
 
         :param conference_type: The conference_type of this ConferenceInfo.
-        :type: int
+        :type conference_type: int
         """
         self._conference_type = conference_type
 
@@ -591,7 +686,7 @@ class ConferenceInfo:
         会议类型。 - FUTURE - IMMEDIATELY - CYCLE
 
         :param conf_type: The conf_type of this ConferenceInfo.
-        :type: str
+        :type conf_type: str
         """
         self._conf_type = conf_type
 
@@ -601,7 +696,7 @@ class ConferenceInfo:
 
 
         :return: The cycle_params of this ConferenceInfo.
-        :rtype: CycleParams
+        :rtype: :class:`huaweicloudsdkmeeting.v1.CycleParams`
         """
         return self._cycle_params
 
@@ -611,7 +706,7 @@ class ConferenceInfo:
 
 
         :param cycle_params: The cycle_params of this ConferenceInfo.
-        :type: CycleParams
+        :type cycle_params: :class:`huaweicloudsdkmeeting.v1.CycleParams`
         """
         self._cycle_params = cycle_params
 
@@ -633,7 +728,7 @@ class ConferenceInfo:
         是否入会自动静音。 - 0: 不自动静音 - 1: 自动静音
 
         :param is_auto_mute: The is_auto_mute of this ConferenceInfo.
-        :type: int
+        :type is_auto_mute: int
         """
         self._is_auto_mute = is_auto_mute
 
@@ -655,7 +750,7 @@ class ConferenceInfo:
         是否自动开启录音。 - 0: 不自动启动。 - 1: 自动启动。
 
         :param is_auto_record: The is_auto_record of this ConferenceInfo.
-        :type: int
+        :type is_auto_record: int
         """
         self._is_auto_record = is_auto_record
 
@@ -677,7 +772,7 @@ class ConferenceInfo:
         主持人会议链接地址。
 
         :param chair_join_uri: The chair_join_uri of this ConferenceInfo.
-        :type: str
+        :type chair_join_uri: str
         """
         self._chair_join_uri = chair_join_uri
 
@@ -699,7 +794,7 @@ class ConferenceInfo:
         普通与会者会议链接地址。最大长度1024。
 
         :param guest_join_uri: The guest_join_uri of this ConferenceInfo.
-        :type: str
+        :type guest_join_uri: str
         """
         self._guest_join_uri = guest_join_uri
 
@@ -721,7 +816,7 @@ class ConferenceInfo:
         旁听者会议链接地址。最大长度1024。（预留字段）
 
         :param audience_join_uri: The audience_join_uri of this ConferenceInfo.
-        :type: str
+        :type audience_join_uri: str
         """
         self._audience_join_uri = audience_join_uri
 
@@ -743,7 +838,7 @@ class ConferenceInfo:
         录播类型。 - 0: 禁用 。 - 1: 直播 。 - 2: 录播 。 - 3: 直播+录播。
 
         :param record_type: The record_type of this ConferenceInfo.
-        :type: int
+        :type record_type: int
         """
         self._record_type = record_type
 
@@ -765,7 +860,7 @@ class ConferenceInfo:
         辅流直播地址。
 
         :param aux_address: The aux_address of this ConferenceInfo.
-        :type: str
+        :type aux_address: str
         """
         self._aux_address = aux_address
 
@@ -787,7 +882,7 @@ class ConferenceInfo:
         主流直播地址。
 
         :param live_address: The live_address of this ConferenceInfo.
-        :type: str
+        :type live_address: str
         """
         self._live_address = live_address
 
@@ -809,7 +904,7 @@ class ConferenceInfo:
         是否录制辅流。  - 0: 否。  - 1: 是。
 
         :param record_aux_stream: The record_aux_stream of this ConferenceInfo.
-        :type: int
+        :type record_aux_stream: int
         """
         self._record_aux_stream = record_aux_stream
 
@@ -831,7 +926,7 @@ class ConferenceInfo:
         录播鉴权方式。录播类型为:录播、直播+录播时有效。  - 0: 老的鉴权方式，url中携带token鉴权。  - 1: 企业内会议用户鉴权。  - 2: 会议内会议用户鉴权。
 
         :param record_auth_type: The record_auth_type of this ConferenceInfo.
-        :type: int
+        :type record_auth_type: int
         """
         self._record_auth_type = record_auth_type
 
@@ -853,7 +948,7 @@ class ConferenceInfo:
         直播地址。（配置直播房间时会返回）
 
         :param live_url: The live_url of this ConferenceInfo.
-        :type: str
+        :type live_url: str
         """
         self._live_url = live_url
 
@@ -863,7 +958,7 @@ class ConferenceInfo:
 
 
         :return: The conf_config_info of this ConferenceInfo.
-        :rtype: RestConfConfigDTO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.RestConfConfigDTO`
         """
         return self._conf_config_info
 
@@ -873,7 +968,7 @@ class ConferenceInfo:
 
 
         :param conf_config_info: The conf_config_info of this ConferenceInfo.
-        :type: RestConfConfigDTO
+        :type conf_config_info: :class:`huaweicloudsdkmeeting.v1.RestConfConfigDTO`
         """
         self._conf_config_info = conf_config_info
 
@@ -895,7 +990,7 @@ class ConferenceInfo:
         是否使用云会议室召开预约会议。 - 0: 不使用云会议室; - 1: 使用云会议室。 界面显示会议ID需要使用vmrConferenceID作为会议ID；查询会议详情、登录会控、一键入会等会议业务操作依然使用conferenceID字段。
 
         :param vmr_flag: The vmr_flag of this ConferenceInfo.
-        :type: int
+        :type vmr_flag: int
         """
         self._vmr_flag = vmr_flag
 
@@ -917,7 +1012,7 @@ class ConferenceInfo:
         仅历史会议返回值有效。默认没有录制文件。 - True: 有录制文件。 - False: 没有录制文件。
 
         :param is_has_record_file: The is_has_record_file of this ConferenceInfo.
-        :type: bool
+        :type is_has_record_file: bool
         """
         self._is_has_record_file = is_has_record_file
 
@@ -939,7 +1034,7 @@ class ConferenceInfo:
         云会议室id，如果vmrFlag为1，则该字段不为空。
 
         :param vmr_conference_id: The vmr_conference_id of this ConferenceInfo.
-        :type: str
+        :type vmr_conference_id: str
         """
         self._vmr_conference_id = vmr_conference_id
 
@@ -961,7 +1056,7 @@ class ConferenceInfo:
         会议的UUID。
 
         :param conf_uuid: The conf_uuid of this ConferenceInfo.
-        :type: str
+        :type conf_uuid: str
         """
         self._conf_uuid = conf_uuid
 
@@ -972,7 +1067,7 @@ class ConferenceInfo:
         与会方信息。硬件终端/与会人最多各显示20条记录。
 
         :return: The part_attendee_info of this ConferenceInfo.
-        :rtype: list[PartAttendee]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.PartAttendee`]
         """
         return self._part_attendee_info
 
@@ -983,7 +1078,7 @@ class ConferenceInfo:
         与会方信息。硬件终端/与会人最多各显示20条记录。
 
         :param part_attendee_info: The part_attendee_info of this ConferenceInfo.
-        :type: list[PartAttendee]
+        :type part_attendee_info: list[:class:`huaweicloudsdkmeeting.v1.PartAttendee`]
         """
         self._part_attendee_info = part_attendee_info
 
@@ -1005,7 +1100,7 @@ class ConferenceInfo:
         硬终端个数。
 
         :param terminl_count: The terminl_count of this ConferenceInfo.
-        :type: int
+        :type terminl_count: int
         """
         self._terminl_count = terminl_count
 
@@ -1027,7 +1122,7 @@ class ConferenceInfo:
         普通终端个数。
 
         :param normal_count: The normal_count of this ConferenceInfo.
-        :type: int
+        :type normal_count: int
         """
         self._normal_count = normal_count
 
@@ -1049,7 +1144,7 @@ class ConferenceInfo:
         会议预定者的企业名称。最大长度96。
 
         :param dept_name: The dept_name of this ConferenceInfo.
-        :type: str
+        :type dept_name: str
         """
         self._dept_name = dept_name
 
@@ -1071,7 +1166,7 @@ class ConferenceInfo:
         云会议室的ID。
 
         :param vmr_id: The vmr_id of this ConferenceInfo.
-        :type: str
+        :type vmr_id: str
         """
         self._vmr_id = vmr_id
 
@@ -1093,7 +1188,7 @@ class ConferenceInfo:
         会议角色
 
         :param role: The role of this ConferenceInfo.
-        :type: str
+        :type role: str
         """
         self._role = role
 
@@ -1115,7 +1210,7 @@ class ConferenceInfo:
         是否网络研讨会
 
         :param webinar: The webinar of this ConferenceInfo.
-        :type: bool
+        :type webinar: bool
         """
         self._webinar = webinar
 
@@ -1137,7 +1232,7 @@ class ConferenceInfo:
         标识是否为多流视频会议。 枚举值如下 1：多流会议
 
         :param multi_stream_flag: The multi_stream_flag of this ConferenceInfo.
-        :type: int
+        :type multi_stream_flag: int
         """
         self._multi_stream_flag = multi_stream_flag
 
@@ -1159,7 +1254,7 @@ class ConferenceInfo:
         会议类型
 
         :param conf_mode: The conf_mode of this ConferenceInfo.
-        :type: str
+        :type conf_mode: str
         """
         self._conf_mode = conf_mode
 
@@ -1181,7 +1276,7 @@ class ConferenceInfo:
         True: VMR预约记录（如果为true则该记录不支持根据会议ID查询会议详情） False：普通会议
 
         :param schedule_vmr: The schedule_vmr of this ConferenceInfo.
-        :type: bool
+        :type schedule_vmr: bool
         """
         self._schedule_vmr = schedule_vmr
 
@@ -1203,7 +1298,7 @@ class ConferenceInfo:
         会议方数，会议最大与会人数限制
 
         :param concurrent_participants: The concurrent_participants of this ConferenceInfo.
-        :type: int
+        :type concurrent_participants: int
         """
         self._concurrent_participants = concurrent_participants
 
@@ -1213,7 +1308,7 @@ class ConferenceInfo:
 
 
         :return: The pic_display of this ConferenceInfo.
-        :rtype: MultiPicDisplayDO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.MultiPicDisplayDO`
         """
         return self._pic_display
 
@@ -1223,7 +1318,7 @@ class ConferenceInfo:
 
 
         :param pic_display: The pic_display of this ConferenceInfo.
-        :type: MultiPicDisplayDO
+        :type pic_display: :class:`huaweicloudsdkmeeting.v1.MultiPicDisplayDO`
         """
         self._pic_display = pic_display
 
@@ -1234,7 +1329,7 @@ class ConferenceInfo:
         周期子会议列表
 
         :return: The sub_confs of this ConferenceInfo.
-        :rtype: list[CycleSubConf]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.CycleSubConf`]
         """
         return self._sub_confs
 
@@ -1245,7 +1340,7 @@ class ConferenceInfo:
         周期子会议列表
 
         :param sub_confs: The sub_confs of this ConferenceInfo.
-        :type: list[CycleSubConf]
+        :type sub_confs: list[:class:`huaweicloudsdkmeeting.v1.CycleSubConf`]
         """
         self._sub_confs = sub_confs
 
@@ -1267,7 +1362,7 @@ class ConferenceInfo:
         周期子会议UUID, 用于查询在线会议和历史会议详情时标识
 
         :param cycle_sub_conf_id: The cycle_sub_conf_id of this ConferenceInfo.
-        :type: str
+        :type cycle_sub_conf_id: str
         """
         self._cycle_sub_conf_id = cycle_sub_conf_id
 

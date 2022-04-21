@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SchedulerHints:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class SchedulerHints:
     }
 
     def __init__(self, dec_baremetal=None):
-        """SchedulerHints - a model defined in huaweicloud sdk"""
+        """SchedulerHints
+
+        The model defined in huaweicloud sdk
+
+        :param dec_baremetal: 是否在专属云中创建裸金属服务器，参数值为share或dedicate。约束：该值不传时默认为share。在专属云中创建裸金属服务器时，必须指定该字段为dedicate。
+        :type dec_baremetal: list[str]
+        """
         
         
 
@@ -58,7 +63,7 @@ class SchedulerHints:
         是否在专属云中创建裸金属服务器，参数值为share或dedicate。约束：该值不传时默认为share。在专属云中创建裸金属服务器时，必须指定该字段为dedicate。
 
         :param dec_baremetal: The dec_baremetal of this SchedulerHints.
-        :type: list[str]
+        :type dec_baremetal: list[str]
         """
         self._dec_baremetal = dec_baremetal
 

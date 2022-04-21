@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteEnvironmentRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteEnvironmentRequest:
     }
 
     def __init__(self, environment_id=None):
-        """DeleteEnvironmentRequest - a model defined in huaweicloud sdk"""
+        """DeleteEnvironmentRequest
+
+        The model defined in huaweicloud sdk
+
+        :param environment_id: 环境ID。
+        :type environment_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteEnvironmentRequest:
         环境ID。
 
         :param environment_id: The environment_id of this DeleteEnvironmentRequest.
-        :type: str
+        :type environment_id: str
         """
         self._environment_id = environment_id
 

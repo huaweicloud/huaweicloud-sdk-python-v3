@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateMigprojectResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateMigprojectResponse(SdkResponse):
     }
 
     def __init__(self, id=None):
-        """CreateMigprojectResponse - a model defined in huaweicloud sdk"""
+        """CreateMigprojectResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 创建迁移项目返回的新添加的迁移项目的id
+        :type id: str
+        """
         
         super(CreateMigprojectResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class CreateMigprojectResponse(SdkResponse):
         创建迁移项目返回的新添加的迁移项目的id
 
         :param id: The id of this CreateMigprojectResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 

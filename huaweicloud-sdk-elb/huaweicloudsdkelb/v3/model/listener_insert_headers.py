@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListenerInsertHeaders:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListenerInsertHeaders:
     }
 
     def __init__(self, x_forwarded_elb_ip=None, x_forwarded_port=None, x_forwarded_for_port=None, x_forwarded_host=None):
-        """ListenerInsertHeaders - a model defined in huaweicloud sdk"""
+        """ListenerInsertHeaders
+
+        The model defined in huaweicloud sdk
+
+        :param x_forwarded_elb_ip: X-Forwarded-ELB-IP设为true可以将ELB实例的eip地址从报文的http头中带到后端云服务器。
+        :type x_forwarded_elb_ip: bool
+        :param x_forwarded_port: X-Forwarded-Port设为true可以将ELB实例的监听端口从报文的http头中带到后端云服务器。
+        :type x_forwarded_port: bool
+        :param x_forwarded_for_port: X-Forwarded-For-Port设为true可以将客户端的源端口从报文的http头中带到后端云服务器。
+        :type x_forwarded_for_port: bool
+        :param x_forwarded_host: X-Forwarded-Host设为true可以将客户请求头的X-Forwarded-Host设置为请求头的Host带到后端云服务器。
+        :type x_forwarded_host: bool
+        """
         
         
 
@@ -73,7 +84,7 @@ class ListenerInsertHeaders:
         X-Forwarded-ELB-IP设为true可以将ELB实例的eip地址从报文的http头中带到后端云服务器。
 
         :param x_forwarded_elb_ip: The x_forwarded_elb_ip of this ListenerInsertHeaders.
-        :type: bool
+        :type x_forwarded_elb_ip: bool
         """
         self._x_forwarded_elb_ip = x_forwarded_elb_ip
 
@@ -95,7 +106,7 @@ class ListenerInsertHeaders:
         X-Forwarded-Port设为true可以将ELB实例的监听端口从报文的http头中带到后端云服务器。
 
         :param x_forwarded_port: The x_forwarded_port of this ListenerInsertHeaders.
-        :type: bool
+        :type x_forwarded_port: bool
         """
         self._x_forwarded_port = x_forwarded_port
 
@@ -117,7 +128,7 @@ class ListenerInsertHeaders:
         X-Forwarded-For-Port设为true可以将客户端的源端口从报文的http头中带到后端云服务器。
 
         :param x_forwarded_for_port: The x_forwarded_for_port of this ListenerInsertHeaders.
-        :type: bool
+        :type x_forwarded_for_port: bool
         """
         self._x_forwarded_for_port = x_forwarded_for_port
 
@@ -139,7 +150,7 @@ class ListenerInsertHeaders:
         X-Forwarded-Host设为true可以将客户请求头的X-Forwarded-Host设置为请求头的Host带到后端云服务器。
 
         :param x_forwarded_host: The x_forwarded_host of this ListenerInsertHeaders.
-        :type: bool
+        :type x_forwarded_host: bool
         """
         self._x_forwarded_host = x_forwarded_host
 

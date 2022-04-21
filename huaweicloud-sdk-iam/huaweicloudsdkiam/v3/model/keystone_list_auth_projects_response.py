@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneListAuthProjectsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class KeystoneListAuthProjectsResponse(SdkResponse):
     }
 
     def __init__(self, links=None, projects=None):
-        """KeystoneListAuthProjectsResponse - a model defined in huaweicloud sdk"""
+        """KeystoneListAuthProjectsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param links: 
+        :type links: :class:`huaweicloudsdkiam.v3.LinksSelf`
+        :param projects: 项目信息列表。
+        :type projects: list[:class:`huaweicloudsdkiam.v3.AuthProjectResult`]
+        """
         
         super(KeystoneListAuthProjectsResponse, self).__init__()
 
@@ -51,7 +58,7 @@ class KeystoneListAuthProjectsResponse(SdkResponse):
 
 
         :return: The links of this KeystoneListAuthProjectsResponse.
-        :rtype: LinksSelf
+        :rtype: :class:`huaweicloudsdkiam.v3.LinksSelf`
         """
         return self._links
 
@@ -61,7 +68,7 @@ class KeystoneListAuthProjectsResponse(SdkResponse):
 
 
         :param links: The links of this KeystoneListAuthProjectsResponse.
-        :type: LinksSelf
+        :type links: :class:`huaweicloudsdkiam.v3.LinksSelf`
         """
         self._links = links
 
@@ -72,7 +79,7 @@ class KeystoneListAuthProjectsResponse(SdkResponse):
         项目信息列表。
 
         :return: The projects of this KeystoneListAuthProjectsResponse.
-        :rtype: list[AuthProjectResult]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.AuthProjectResult`]
         """
         return self._projects
 
@@ -83,7 +90,7 @@ class KeystoneListAuthProjectsResponse(SdkResponse):
         项目信息列表。
 
         :param projects: The projects of this KeystoneListAuthProjectsResponse.
-        :type: list[AuthProjectResult]
+        :type projects: list[:class:`huaweicloudsdkiam.v3.AuthProjectResult`]
         """
         self._projects = projects
 

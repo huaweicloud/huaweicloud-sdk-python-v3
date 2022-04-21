@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSitesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ListSitesRequest:
     }
 
     def __init__(self, limit=None, offset=None, id=None, area=None, province=None, city=None, flavor=None, volume_type=None):
-        """ListSitesRequest - a model defined in huaweicloud sdk"""
+        """ListSitesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 查询返回边缘站点列表当前页面的数量。 取值范围：0~1000。
+        :type limit: int
+        :param offset: 查询的偏移量。默认为0。
+        :type offset: int
+        :param id: 查询条件，站点ID。
+        :type id: str
+        :param area: 边缘实例所在大区。   大小写通用，皆支持。 支持多个查询，中间使用&#39;,&#39;分隔。
+        :type area: str
+        :param province: 边缘实例所在省份。  大小写通用，皆支持。 支持多个查询，中间使用“,”分隔。
+        :type province: str
+        :param city: 边缘实例所在城市。  大小写通用，皆支持。 支持多个查询，中间使用“,”分隔。
+        :type city: str
+        :param flavor: 边缘实例规格。
+        :type flavor: str
+        :param volume_type: 过滤支持磁盘类型的站点，多个类型之间用“,”分割。
+        :type volume_type: str
+        """
         
         
 
@@ -93,7 +112,7 @@ class ListSitesRequest:
         查询返回边缘站点列表当前页面的数量。 取值范围：0~1000。
 
         :param limit: The limit of this ListSitesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -115,7 +134,7 @@ class ListSitesRequest:
         查询的偏移量。默认为0。
 
         :param offset: The offset of this ListSitesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -137,7 +156,7 @@ class ListSitesRequest:
         查询条件，站点ID。
 
         :param id: The id of this ListSitesRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -159,7 +178,7 @@ class ListSitesRequest:
         边缘实例所在大区。   大小写通用，皆支持。 支持多个查询，中间使用','分隔。
 
         :param area: The area of this ListSitesRequest.
-        :type: str
+        :type area: str
         """
         self._area = area
 
@@ -181,7 +200,7 @@ class ListSitesRequest:
         边缘实例所在省份。  大小写通用，皆支持。 支持多个查询，中间使用“,”分隔。
 
         :param province: The province of this ListSitesRequest.
-        :type: str
+        :type province: str
         """
         self._province = province
 
@@ -203,7 +222,7 @@ class ListSitesRequest:
         边缘实例所在城市。  大小写通用，皆支持。 支持多个查询，中间使用“,”分隔。
 
         :param city: The city of this ListSitesRequest.
-        :type: str
+        :type city: str
         """
         self._city = city
 
@@ -225,7 +244,7 @@ class ListSitesRequest:
         边缘实例规格。
 
         :param flavor: The flavor of this ListSitesRequest.
-        :type: str
+        :type flavor: str
         """
         self._flavor = flavor
 
@@ -247,7 +266,7 @@ class ListSitesRequest:
         过滤支持磁盘类型的站点，多个类型之间用“,”分割。
 
         :param volume_type: The volume_type of this ListSitesRequest.
-        :type: str
+        :type volume_type: str
         """
         self._volume_type = volume_type
 

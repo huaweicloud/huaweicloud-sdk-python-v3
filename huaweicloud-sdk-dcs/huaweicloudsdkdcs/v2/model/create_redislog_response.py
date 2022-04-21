@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateRedislogResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class CreateRedislogResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateRedislogResponse - a model defined in huaweicloud sdk"""
+        """CreateRedislogResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(CreateRedislogResponse, self).__init__()
         self.discriminator = None

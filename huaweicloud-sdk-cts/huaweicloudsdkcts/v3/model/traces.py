@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Traces:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -70,7 +69,53 @@ class Traces:
     }
 
     def __init__(self, resource_id=None, trace_name=None, trace_rating=None, trace_type=None, request=None, response=None, code=None, api_version=None, message=None, record_time=None, trace_id=None, time=None, user=None, service_type=None, resource_type=None, source_ip=None, resource_name=None, request_id=None, location_info=None, endpoint=None, resource_url=None):
-        """Traces - a model defined in huaweicloud sdk"""
+        """Traces
+
+        The model defined in huaweicloud sdk
+
+        :param resource_id: 标识事件对应的云服务资源ID。
+        :type resource_id: str
+        :param trace_name: 标识查询事件列表对应的事件名称。由0-9,a-z,A-Z,&#39;-&#39;,&#39;.&#39;,&#39;_&#39;,组成，长度为1～64个字符，且以首字符必须为字母。
+        :type trace_name: str
+        :param trace_rating: 标识事件等级，目前有三种：正常（normal），警告（warning），事故（incident）。
+        :type trace_rating: str
+        :param trace_type: 标识事件发生源头类型，管理类事件主要包括API调用（ApiCall），Console页面调用（ConsoleAction）和系统间调用（SystemAction）。 数据类事件主要包括ObsSDK，ObsAPI。
+        :type trace_type: str
+        :param request: 标识事件对应接口请求内容，即资源操作请求体。
+        :type request: str
+        :param response: 记录用户请求的响应，标识事件对应接口响应内容，即资源操作结果返回体。
+        :type response: str
+        :param code: 记录用户请求的响应，标识事件对应接口返回的HTTP状态码。
+        :type code: str
+        :param api_version: 标识事件对应的云服务接口版本。
+        :type api_version: str
+        :param message: 标识其他云服务为此条事件添加的备注信息。
+        :type message: str
+        :param record_time: 标识云审计服务记录本次事件的时间戳。
+        :type record_time: int
+        :param trace_id: 标识事件的ID，由系统生成的UUID。
+        :type trace_id: str
+        :param time: 标识事件产生的时间戳。
+        :type time: int
+        :param user: 
+        :type user: :class:`huaweicloudsdkcts.v3.UserInfo`
+        :param service_type: 标识查询事件列表对应的云服务类型。必须为已对接CTS的云服务的英文缩写，且服务类型一般为大写字母。
+        :type service_type: str
+        :param resource_type: 查询事件列表对应的资源类型。
+        :type resource_type: str
+        :param source_ip: 标识触发事件的租户IP。
+        :type source_ip: str
+        :param resource_name: 标识事件对应的资源名称。
+        :type resource_name: str
+        :param request_id: 记录本次请求的request id
+        :type request_id: str
+        :param location_info: 记录本次请求出错后，问题定位所需要的辅助信息。
+        :type location_info: str
+        :param endpoint: 云资源的详情页面
+        :type endpoint: str
+        :param resource_url: 云资源的详情页面的访问链接（不含endpoint）
+        :type resource_url: str
+        """
         
         
 
@@ -158,7 +203,7 @@ class Traces:
         标识事件对应的云服务资源ID。
 
         :param resource_id: The resource_id of this Traces.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -180,7 +225,7 @@ class Traces:
         标识查询事件列表对应的事件名称。由0-9,a-z,A-Z,'-','.','_',组成，长度为1～64个字符，且以首字符必须为字母。
 
         :param trace_name: The trace_name of this Traces.
-        :type: str
+        :type trace_name: str
         """
         self._trace_name = trace_name
 
@@ -202,7 +247,7 @@ class Traces:
         标识事件等级，目前有三种：正常（normal），警告（warning），事故（incident）。
 
         :param trace_rating: The trace_rating of this Traces.
-        :type: str
+        :type trace_rating: str
         """
         self._trace_rating = trace_rating
 
@@ -224,7 +269,7 @@ class Traces:
         标识事件发生源头类型，管理类事件主要包括API调用（ApiCall），Console页面调用（ConsoleAction）和系统间调用（SystemAction）。 数据类事件主要包括ObsSDK，ObsAPI。
 
         :param trace_type: The trace_type of this Traces.
-        :type: str
+        :type trace_type: str
         """
         self._trace_type = trace_type
 
@@ -246,7 +291,7 @@ class Traces:
         标识事件对应接口请求内容，即资源操作请求体。
 
         :param request: The request of this Traces.
-        :type: str
+        :type request: str
         """
         self._request = request
 
@@ -268,7 +313,7 @@ class Traces:
         记录用户请求的响应，标识事件对应接口响应内容，即资源操作结果返回体。
 
         :param response: The response of this Traces.
-        :type: str
+        :type response: str
         """
         self._response = response
 
@@ -290,7 +335,7 @@ class Traces:
         记录用户请求的响应，标识事件对应接口返回的HTTP状态码。
 
         :param code: The code of this Traces.
-        :type: str
+        :type code: str
         """
         self._code = code
 
@@ -312,7 +357,7 @@ class Traces:
         标识事件对应的云服务接口版本。
 
         :param api_version: The api_version of this Traces.
-        :type: str
+        :type api_version: str
         """
         self._api_version = api_version
 
@@ -334,7 +379,7 @@ class Traces:
         标识其他云服务为此条事件添加的备注信息。
 
         :param message: The message of this Traces.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -356,7 +401,7 @@ class Traces:
         标识云审计服务记录本次事件的时间戳。
 
         :param record_time: The record_time of this Traces.
-        :type: int
+        :type record_time: int
         """
         self._record_time = record_time
 
@@ -378,7 +423,7 @@ class Traces:
         标识事件的ID，由系统生成的UUID。
 
         :param trace_id: The trace_id of this Traces.
-        :type: str
+        :type trace_id: str
         """
         self._trace_id = trace_id
 
@@ -400,7 +445,7 @@ class Traces:
         标识事件产生的时间戳。
 
         :param time: The time of this Traces.
-        :type: int
+        :type time: int
         """
         self._time = time
 
@@ -410,7 +455,7 @@ class Traces:
 
 
         :return: The user of this Traces.
-        :rtype: UserInfo
+        :rtype: :class:`huaweicloudsdkcts.v3.UserInfo`
         """
         return self._user
 
@@ -420,7 +465,7 @@ class Traces:
 
 
         :param user: The user of this Traces.
-        :type: UserInfo
+        :type user: :class:`huaweicloudsdkcts.v3.UserInfo`
         """
         self._user = user
 
@@ -442,7 +487,7 @@ class Traces:
         标识查询事件列表对应的云服务类型。必须为已对接CTS的云服务的英文缩写，且服务类型一般为大写字母。
 
         :param service_type: The service_type of this Traces.
-        :type: str
+        :type service_type: str
         """
         self._service_type = service_type
 
@@ -464,7 +509,7 @@ class Traces:
         查询事件列表对应的资源类型。
 
         :param resource_type: The resource_type of this Traces.
-        :type: str
+        :type resource_type: str
         """
         self._resource_type = resource_type
 
@@ -486,7 +531,7 @@ class Traces:
         标识触发事件的租户IP。
 
         :param source_ip: The source_ip of this Traces.
-        :type: str
+        :type source_ip: str
         """
         self._source_ip = source_ip
 
@@ -508,7 +553,7 @@ class Traces:
         标识事件对应的资源名称。
 
         :param resource_name: The resource_name of this Traces.
-        :type: str
+        :type resource_name: str
         """
         self._resource_name = resource_name
 
@@ -530,7 +575,7 @@ class Traces:
         记录本次请求的request id
 
         :param request_id: The request_id of this Traces.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 
@@ -552,7 +597,7 @@ class Traces:
         记录本次请求出错后，问题定位所需要的辅助信息。
 
         :param location_info: The location_info of this Traces.
-        :type: str
+        :type location_info: str
         """
         self._location_info = location_info
 
@@ -574,7 +619,7 @@ class Traces:
         云资源的详情页面
 
         :param endpoint: The endpoint of this Traces.
-        :type: str
+        :type endpoint: str
         """
         self._endpoint = endpoint
 
@@ -596,7 +641,7 @@ class Traces:
         云资源的详情页面的访问链接（不含endpoint）
 
         :param resource_url: The resource_url of this Traces.
-        :type: str
+        :type resource_url: str
         """
         self._resource_url = resource_url
 

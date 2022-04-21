@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IncidentOperateLogV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class IncidentOperateLogV2:
     }
 
     def __init__(self, incident_log_id=None, incident_id=None, operate_type=None, operator_type=None, operator_id=None, operator_name=None, operate_desc=None, operate_time=None, timestamp_operate_time=None):
-        """IncidentOperateLogV2 - a model defined in huaweicloud sdk"""
+        """IncidentOperateLogV2
+
+        The model defined in huaweicloud sdk
+
+        :param incident_log_id: 工单日志id
+        :type incident_log_id: str
+        :param incident_id: 工单id
+        :type incident_id: str
+        :param operate_type: 操作类型
+        :type operate_type: int
+        :param operator_type: 操作员类型
+        :type operator_type: int
+        :param operator_id: 操作员id
+        :type operator_id: str
+        :param operator_name: 操作员名称
+        :type operator_name: str
+        :param operate_desc: 操作描述
+        :type operate_desc: str
+        :param operate_time: 操作时间
+        :type operate_time: str
+        :param timestamp_operate_time: 工单操作时间
+        :type timestamp_operate_time: datetime
+        """
         
         
 
@@ -98,7 +119,7 @@ class IncidentOperateLogV2:
         工单日志id
 
         :param incident_log_id: The incident_log_id of this IncidentOperateLogV2.
-        :type: str
+        :type incident_log_id: str
         """
         self._incident_log_id = incident_log_id
 
@@ -120,7 +141,7 @@ class IncidentOperateLogV2:
         工单id
 
         :param incident_id: The incident_id of this IncidentOperateLogV2.
-        :type: str
+        :type incident_id: str
         """
         self._incident_id = incident_id
 
@@ -142,7 +163,7 @@ class IncidentOperateLogV2:
         操作类型
 
         :param operate_type: The operate_type of this IncidentOperateLogV2.
-        :type: int
+        :type operate_type: int
         """
         self._operate_type = operate_type
 
@@ -164,7 +185,7 @@ class IncidentOperateLogV2:
         操作员类型
 
         :param operator_type: The operator_type of this IncidentOperateLogV2.
-        :type: int
+        :type operator_type: int
         """
         self._operator_type = operator_type
 
@@ -186,7 +207,7 @@ class IncidentOperateLogV2:
         操作员id
 
         :param operator_id: The operator_id of this IncidentOperateLogV2.
-        :type: str
+        :type operator_id: str
         """
         self._operator_id = operator_id
 
@@ -208,7 +229,7 @@ class IncidentOperateLogV2:
         操作员名称
 
         :param operator_name: The operator_name of this IncidentOperateLogV2.
-        :type: str
+        :type operator_name: str
         """
         self._operator_name = operator_name
 
@@ -230,7 +251,7 @@ class IncidentOperateLogV2:
         操作描述
 
         :param operate_desc: The operate_desc of this IncidentOperateLogV2.
-        :type: str
+        :type operate_desc: str
         """
         self._operate_desc = operate_desc
 
@@ -252,7 +273,7 @@ class IncidentOperateLogV2:
         操作时间
 
         :param operate_time: The operate_time of this IncidentOperateLogV2.
-        :type: str
+        :type operate_time: str
         """
         self._operate_time = operate_time
 
@@ -274,7 +295,7 @@ class IncidentOperateLogV2:
         工单操作时间
 
         :param timestamp_operate_time: The timestamp_operate_time of this IncidentOperateLogV2.
-        :type: datetime
+        :type timestamp_operate_time: datetime
         """
         self._timestamp_operate_time = timestamp_operate_time
 

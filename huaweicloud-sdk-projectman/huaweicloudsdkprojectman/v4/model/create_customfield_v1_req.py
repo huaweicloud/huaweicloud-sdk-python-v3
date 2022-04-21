@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateCustomfieldV1Req:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class CreateCustomfieldV1Req:
     }
 
     def __init__(self, name=None, type=None, options=None, memo=None, scrum_type=None):
-        """CreateCustomfieldV1Req - a model defined in huaweicloud sdk"""
+        """CreateCustomfieldV1Req
+
+        The model defined in huaweicloud sdk
+
+        :param name: 字段名称
+        :type name: str
+        :param type: 自定义字段类型 可选类型  textArea|select|radio|text|checkbox|date|time_date|number
+        :type type: str
+        :param options: 字段选项
+        :type options: str
+        :param memo: 描述
+        :type memo: str
+        :param scrum_type: 工作项类型
+        :type scrum_type: str
+        """
         
         
 
@@ -73,7 +86,7 @@ class CreateCustomfieldV1Req:
         字段名称
 
         :param name: The name of this CreateCustomfieldV1Req.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -95,7 +108,7 @@ class CreateCustomfieldV1Req:
         自定义字段类型 可选类型  textArea|select|radio|text|checkbox|date|time_date|number
 
         :param type: The type of this CreateCustomfieldV1Req.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -117,7 +130,7 @@ class CreateCustomfieldV1Req:
         字段选项
 
         :param options: The options of this CreateCustomfieldV1Req.
-        :type: str
+        :type options: str
         """
         self._options = options
 
@@ -139,7 +152,7 @@ class CreateCustomfieldV1Req:
         描述
 
         :param memo: The memo of this CreateCustomfieldV1Req.
-        :type: str
+        :type memo: str
         """
         self._memo = memo
 
@@ -161,7 +174,7 @@ class CreateCustomfieldV1Req:
         工作项类型
 
         :param scrum_type: The scrum_type of this CreateCustomfieldV1Req.
-        :type: str
+        :type scrum_type: str
         """
         self._scrum_type = scrum_type
 

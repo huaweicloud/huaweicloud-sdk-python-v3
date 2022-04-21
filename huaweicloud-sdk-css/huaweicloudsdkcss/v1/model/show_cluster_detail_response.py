@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowClusterDetailResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -58,7 +57,41 @@ class ShowClusterDetailResponse(SdkResponse):
     }
 
     def __init__(self, datastore=None, instances=None, updated=None, name=None, created=None, id=None, status=None, endpoint=None, action_progress=None, actions=None, failed_reasons=None, authority_enable=None, https_enable=None, enterprise_project_id=None, tags=None):
-        """ShowClusterDetailResponse - a model defined in huaweicloud sdk"""
+        """ShowClusterDetailResponse
+
+        The model defined in huaweicloud sdk
+
+        :param datastore: 
+        :type datastore: :class:`huaweicloudsdkcss.v1.ClusterDetailDatastore`
+        :param instances: 节点对象列表。
+        :type instances: list[:class:`huaweicloudsdkcss.v1.ClusterDetailInstances`]
+        :param updated: 集群上次修改时间，格式为ISO8601: CCYY-MM-DDThh:mm:ss。
+        :type updated: str
+        :param name: 集群名称。
+        :type name: str
+        :param created: 集群创建时间，格式为ISO8601: CCYY-MM-DDThh:mm:ss。
+        :type created: str
+        :param id: 集群ID。
+        :type id: str
+        :param status: 查询返回值。  - 100：操作进行中，如创建中。 - 200：可用。 - 303：不可用，如创建失败。
+        :type status: str
+        :param endpoint: 用户VPC访问IP地址和端口号。
+        :type endpoint: str
+        :param action_progress: 
+        :type action_progress: :class:`huaweicloudsdkcss.v1.ClusterDetailActionProgress`
+        :param actions: 集群当前行为集合。
+        :type actions: list[:class:`huaweicloudsdkcss.v1.ActionReq`]
+        :param failed_reasons: 
+        :type failed_reasons: :class:`huaweicloudsdkcss.v1.ClusterDetailFailedReasons`
+        :param authority_enable: 是否开启认证，取值范围为true或false。默认关闭认证功能。当开启认证时，httpsEnable需要设置为true。 - true：表示集群开启认证。 - false：表示集群不开启认证。
+        :type authority_enable: bool
+        :param https_enable: 
+        :type https_enable: bool
+        :param enterprise_project_id: 集群所属的企业项目ID。  如果集群所属用户没有开通企业项目，则不会返回该参数。
+        :type enterprise_project_id: str
+        :param tags: 集群标签。
+        :type tags: list[:class:`huaweicloudsdkcss.v1.ClusterDetailTags`]
+        """
         
         super(ShowClusterDetailResponse, self).__init__()
 
@@ -116,7 +149,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
 
         :return: The datastore of this ShowClusterDetailResponse.
-        :rtype: ClusterDetailDatastore
+        :rtype: :class:`huaweicloudsdkcss.v1.ClusterDetailDatastore`
         """
         return self._datastore
 
@@ -126,7 +159,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
 
         :param datastore: The datastore of this ShowClusterDetailResponse.
-        :type: ClusterDetailDatastore
+        :type datastore: :class:`huaweicloudsdkcss.v1.ClusterDetailDatastore`
         """
         self._datastore = datastore
 
@@ -137,7 +170,7 @@ class ShowClusterDetailResponse(SdkResponse):
         节点对象列表。
 
         :return: The instances of this ShowClusterDetailResponse.
-        :rtype: list[ClusterDetailInstances]
+        :rtype: list[:class:`huaweicloudsdkcss.v1.ClusterDetailInstances`]
         """
         return self._instances
 
@@ -148,7 +181,7 @@ class ShowClusterDetailResponse(SdkResponse):
         节点对象列表。
 
         :param instances: The instances of this ShowClusterDetailResponse.
-        :type: list[ClusterDetailInstances]
+        :type instances: list[:class:`huaweicloudsdkcss.v1.ClusterDetailInstances`]
         """
         self._instances = instances
 
@@ -170,7 +203,7 @@ class ShowClusterDetailResponse(SdkResponse):
         集群上次修改时间，格式为ISO8601: CCYY-MM-DDThh:mm:ss。
 
         :param updated: The updated of this ShowClusterDetailResponse.
-        :type: str
+        :type updated: str
         """
         self._updated = updated
 
@@ -192,7 +225,7 @@ class ShowClusterDetailResponse(SdkResponse):
         集群名称。
 
         :param name: The name of this ShowClusterDetailResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -214,7 +247,7 @@ class ShowClusterDetailResponse(SdkResponse):
         集群创建时间，格式为ISO8601: CCYY-MM-DDThh:mm:ss。
 
         :param created: The created of this ShowClusterDetailResponse.
-        :type: str
+        :type created: str
         """
         self._created = created
 
@@ -236,7 +269,7 @@ class ShowClusterDetailResponse(SdkResponse):
         集群ID。
 
         :param id: The id of this ShowClusterDetailResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -258,7 +291,7 @@ class ShowClusterDetailResponse(SdkResponse):
         查询返回值。  - 100：操作进行中，如创建中。 - 200：可用。 - 303：不可用，如创建失败。
 
         :param status: The status of this ShowClusterDetailResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -280,7 +313,7 @@ class ShowClusterDetailResponse(SdkResponse):
         用户VPC访问IP地址和端口号。
 
         :param endpoint: The endpoint of this ShowClusterDetailResponse.
-        :type: str
+        :type endpoint: str
         """
         self._endpoint = endpoint
 
@@ -290,7 +323,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
 
         :return: The action_progress of this ShowClusterDetailResponse.
-        :rtype: ClusterDetailActionProgress
+        :rtype: :class:`huaweicloudsdkcss.v1.ClusterDetailActionProgress`
         """
         return self._action_progress
 
@@ -300,7 +333,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
 
         :param action_progress: The action_progress of this ShowClusterDetailResponse.
-        :type: ClusterDetailActionProgress
+        :type action_progress: :class:`huaweicloudsdkcss.v1.ClusterDetailActionProgress`
         """
         self._action_progress = action_progress
 
@@ -311,7 +344,7 @@ class ShowClusterDetailResponse(SdkResponse):
         集群当前行为集合。
 
         :return: The actions of this ShowClusterDetailResponse.
-        :rtype: list[ActionReq]
+        :rtype: list[:class:`huaweicloudsdkcss.v1.ActionReq`]
         """
         return self._actions
 
@@ -322,7 +355,7 @@ class ShowClusterDetailResponse(SdkResponse):
         集群当前行为集合。
 
         :param actions: The actions of this ShowClusterDetailResponse.
-        :type: list[ActionReq]
+        :type actions: list[:class:`huaweicloudsdkcss.v1.ActionReq`]
         """
         self._actions = actions
 
@@ -332,7 +365,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
 
         :return: The failed_reasons of this ShowClusterDetailResponse.
-        :rtype: ClusterDetailFailedReasons
+        :rtype: :class:`huaweicloudsdkcss.v1.ClusterDetailFailedReasons`
         """
         return self._failed_reasons
 
@@ -342,7 +375,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
 
         :param failed_reasons: The failed_reasons of this ShowClusterDetailResponse.
-        :type: ClusterDetailFailedReasons
+        :type failed_reasons: :class:`huaweicloudsdkcss.v1.ClusterDetailFailedReasons`
         """
         self._failed_reasons = failed_reasons
 
@@ -364,7 +397,7 @@ class ShowClusterDetailResponse(SdkResponse):
         是否开启认证，取值范围为true或false。默认关闭认证功能。当开启认证时，httpsEnable需要设置为true。 - true：表示集群开启认证。 - false：表示集群不开启认证。
 
         :param authority_enable: The authority_enable of this ShowClusterDetailResponse.
-        :type: bool
+        :type authority_enable: bool
         """
         self._authority_enable = authority_enable
 
@@ -384,7 +417,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
 
         :param https_enable: The https_enable of this ShowClusterDetailResponse.
-        :type: bool
+        :type https_enable: bool
         """
         self._https_enable = https_enable
 
@@ -406,7 +439,7 @@ class ShowClusterDetailResponse(SdkResponse):
         集群所属的企业项目ID。  如果集群所属用户没有开通企业项目，则不会返回该参数。
 
         :param enterprise_project_id: The enterprise_project_id of this ShowClusterDetailResponse.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -417,7 +450,7 @@ class ShowClusterDetailResponse(SdkResponse):
         集群标签。
 
         :return: The tags of this ShowClusterDetailResponse.
-        :rtype: list[ClusterDetailTags]
+        :rtype: list[:class:`huaweicloudsdkcss.v1.ClusterDetailTags`]
         """
         return self._tags
 
@@ -428,7 +461,7 @@ class ShowClusterDetailResponse(SdkResponse):
         集群标签。
 
         :param tags: The tags of this ShowClusterDetailResponse.
-        :type: list[ClusterDetailTags]
+        :type tags: list[:class:`huaweicloudsdkcss.v1.ClusterDetailTags`]
         """
         self._tags = tags
 

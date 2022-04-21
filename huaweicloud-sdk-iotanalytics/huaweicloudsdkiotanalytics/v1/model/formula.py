@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Formula:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Formula:
     }
 
     def __init__(self, formula=None, formulas=None):
-        """Formula - a model defined in huaweicloud sdk"""
+        """Formula
+
+        The model defined in huaweicloud sdk
+
+        :param formula: 公式，最多1024个字符(分析任务单输出场景，配合TransformModel或AggregateModel的output_property使用)
+        :type formula: str
+        :param formulas: 带名称的公式
+        :type formulas: list[:class:`huaweicloudsdkiotanalytics.v1.NamedFormula`]
+        """
         
         
 
@@ -63,7 +70,7 @@ class Formula:
         公式，最多1024个字符(分析任务单输出场景，配合TransformModel或AggregateModel的output_property使用)
 
         :param formula: The formula of this Formula.
-        :type: str
+        :type formula: str
         """
         self._formula = formula
 
@@ -74,7 +81,7 @@ class Formula:
         带名称的公式
 
         :return: The formulas of this Formula.
-        :rtype: list[NamedFormula]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.NamedFormula`]
         """
         return self._formulas
 
@@ -85,7 +92,7 @@ class Formula:
         带名称的公式
 
         :param formulas: The formulas of this Formula.
-        :type: list[NamedFormula]
+        :type formulas: list[:class:`huaweicloudsdkiotanalytics.v1.NamedFormula`]
         """
         self._formulas = formulas
 

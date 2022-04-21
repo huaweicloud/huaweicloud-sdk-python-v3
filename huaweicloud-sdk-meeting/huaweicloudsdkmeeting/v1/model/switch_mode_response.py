@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SwitchModeResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class SwitchModeResponse(SdkResponse):
     }
 
     def __init__(self):
-        """SwitchModeResponse - a model defined in huaweicloud sdk"""
+        """SwitchModeResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(SwitchModeResponse, self).__init__()
         self.discriminator = None

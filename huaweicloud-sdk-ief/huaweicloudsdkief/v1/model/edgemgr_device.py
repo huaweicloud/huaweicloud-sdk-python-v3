@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EdgemgrDevice:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class EdgemgrDevice:
     }
 
     def __init__(self, id=None, name=None, access_protocol=None, description=None, attributes=None, twin=None, project_id=None, created_at=None, property_visitors=None, tags=None):
-        """EdgemgrDevice - a model defined in huaweicloud sdk"""
+        """EdgemgrDevice
+
+        The model defined in huaweicloud sdk
+
+        :param id: 终端设备ID，只允许英文字母、数字、下划线、中划线，必须以英文字母和数字开头，长度限制为24~64之间
+        :type id: str
+        :param name: 终端设备名称，只允许中文字符、英文字母、数字、下划线、中划线，长度限制为1~64
+        :type name: str
+        :param access_protocol: 访问协议，有如下选项： - userdefine：自定义协议 - modbus：modbus协议 - opc-ua：opc-ua协议 默认为userdefine
+        :type access_protocol: str
+        :param description: 终端设备描述，最大长度255，不允许^ ~ # $ % &amp; * &lt; &gt; ( ) [ ] { } &#39; \&quot; \\
+        :type description: str
+        :param attributes: 静态属性
+        :type attributes: dict(str, ValueInAttributes)
+        :param twin: 终端设备静态属性信息
+        :type twin: dict(str, ValueInTwinResponse)
+        :param project_id: 项目ID
+        :type project_id: str
+        :param created_at: 创建时间
+        :type created_at: str
+        :param property_visitors: 孪生属性配置
+        :type property_visitors: dict(str, ValueInPropertyVisitors)
+        :param tags: 
+        :type tags: :class:`huaweicloudsdkief.v1.ResourceTag`
+        """
         
         
 
@@ -93,7 +116,7 @@ class EdgemgrDevice:
         终端设备ID，只允许英文字母、数字、下划线、中划线，必须以英文字母和数字开头，长度限制为24~64之间
 
         :param id: The id of this EdgemgrDevice.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -115,7 +138,7 @@ class EdgemgrDevice:
         终端设备名称，只允许中文字符、英文字母、数字、下划线、中划线，长度限制为1~64
 
         :param name: The name of this EdgemgrDevice.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -137,7 +160,7 @@ class EdgemgrDevice:
         访问协议，有如下选项： - userdefine：自定义协议 - modbus：modbus协议 - opc-ua：opc-ua协议 默认为userdefine
 
         :param access_protocol: The access_protocol of this EdgemgrDevice.
-        :type: str
+        :type access_protocol: str
         """
         self._access_protocol = access_protocol
 
@@ -159,7 +182,7 @@ class EdgemgrDevice:
         终端设备描述，最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
         :param description: The description of this EdgemgrDevice.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -181,7 +204,7 @@ class EdgemgrDevice:
         静态属性
 
         :param attributes: The attributes of this EdgemgrDevice.
-        :type: dict(str, ValueInAttributes)
+        :type attributes: dict(str, ValueInAttributes)
         """
         self._attributes = attributes
 
@@ -203,7 +226,7 @@ class EdgemgrDevice:
         终端设备静态属性信息
 
         :param twin: The twin of this EdgemgrDevice.
-        :type: dict(str, ValueInTwinResponse)
+        :type twin: dict(str, ValueInTwinResponse)
         """
         self._twin = twin
 
@@ -225,7 +248,7 @@ class EdgemgrDevice:
         项目ID
 
         :param project_id: The project_id of this EdgemgrDevice.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -247,7 +270,7 @@ class EdgemgrDevice:
         创建时间
 
         :param created_at: The created_at of this EdgemgrDevice.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -269,7 +292,7 @@ class EdgemgrDevice:
         孪生属性配置
 
         :param property_visitors: The property_visitors of this EdgemgrDevice.
-        :type: dict(str, ValueInPropertyVisitors)
+        :type property_visitors: dict(str, ValueInPropertyVisitors)
         """
         self._property_visitors = property_visitors
 
@@ -279,7 +302,7 @@ class EdgemgrDevice:
 
 
         :return: The tags of this EdgemgrDevice.
-        :rtype: ResourceTag
+        :rtype: :class:`huaweicloudsdkief.v1.ResourceTag`
         """
         return self._tags
 
@@ -289,7 +312,7 @@ class EdgemgrDevice:
 
 
         :param tags: The tags of this EdgemgrDevice.
-        :type: ResourceTag
+        :type tags: :class:`huaweicloudsdkief.v1.ResourceTag`
         """
         self._tags = tags
 

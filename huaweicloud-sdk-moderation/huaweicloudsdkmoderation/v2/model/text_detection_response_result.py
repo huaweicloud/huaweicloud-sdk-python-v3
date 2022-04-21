@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TextDetectionResponseResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class TextDetectionResponseResult:
     }
 
     def __init__(self, suggestion=None, detail=None):
-        """TextDetectionResponseResult - a model defined in huaweicloud sdk"""
+        """TextDetectionResponseResult
+
+        The model defined in huaweicloud sdk
+
+        :param suggestion: 检测结果是否通过。  block：包含敏感信息，不通过。  pass：不包含敏感信息，通过。  review：需要人工复查。
+        :type suggestion: str
+        :param detail: 返回的相关检测结果详细信息：  - politics：涉政敏感词列表。  - porn：涉黄敏感词列表。  - ad：广告敏感词列表。  - abuse：辱骂敏感词列表。  - contraband：违禁品敏感词列表。  - flood：灌水文本。  &gt; - 灌水文本最多显示200个字符。 &gt; - 每个场景的返回结果的详细信息是指命中词，不是返回全部文本。
+        :type detail: object
+        """
         
         
 
@@ -63,7 +70,7 @@ class TextDetectionResponseResult:
         检测结果是否通过。  block：包含敏感信息，不通过。  pass：不包含敏感信息，通过。  review：需要人工复查。
 
         :param suggestion: The suggestion of this TextDetectionResponseResult.
-        :type: str
+        :type suggestion: str
         """
         self._suggestion = suggestion
 
@@ -85,7 +92,7 @@ class TextDetectionResponseResult:
         返回的相关检测结果详细信息：  - politics：涉政敏感词列表。  - porn：涉黄敏感词列表。  - ad：广告敏感词列表。  - abuse：辱骂敏感词列表。  - contraband：违禁品敏感词列表。  - flood：灌水文本。  > - 灌水文本最多显示200个字符。 > - 每个场景的返回结果的详细信息是指命中词，不是返回全部文本。
 
         :param detail: The detail of this TextDetectionResponseResult.
-        :type: object
+        :type detail: object
         """
         self._detail = detail
 

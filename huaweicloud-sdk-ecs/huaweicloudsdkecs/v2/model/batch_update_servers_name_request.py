@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchUpdateServersNameRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchUpdateServersNameRequest:
     }
 
     def __init__(self, body=None):
-        """BatchUpdateServersNameRequest - a model defined in huaweicloud sdk"""
+        """BatchUpdateServersNameRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the BatchUpdateServersNameRequest
+        :type body: :class:`huaweicloudsdkecs.v2.BatchUpdateServersNameRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class BatchUpdateServersNameRequest:
 
 
         :return: The body of this BatchUpdateServersNameRequest.
-        :rtype: BatchUpdateServersNameRequestBody
+        :rtype: :class:`huaweicloudsdkecs.v2.BatchUpdateServersNameRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class BatchUpdateServersNameRequest:
 
 
         :param body: The body of this BatchUpdateServersNameRequest.
-        :type: BatchUpdateServersNameRequestBody
+        :type body: :class:`huaweicloudsdkecs.v2.BatchUpdateServersNameRequestBody`
         """
         self._body = body
 

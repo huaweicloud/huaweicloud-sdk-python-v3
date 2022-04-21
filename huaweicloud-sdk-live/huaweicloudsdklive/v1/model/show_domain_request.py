@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDomainRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowDomainRequest:
     }
 
     def __init__(self, domain=None):
-        """ShowDomainRequest - a model defined in huaweicloud sdk"""
+        """ShowDomainRequest
+
+        The model defined in huaweicloud sdk
+
+        :param domain: 直播域名，如果不设置此字段，则返回租户所有的域名信息
+        :type domain: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class ShowDomainRequest:
         直播域名，如果不设置此字段，则返回租户所有的域名信息
 
         :param domain: The domain of this ShowDomainRequest.
-        :type: str
+        :type domain: str
         """
         self._domain = domain
 

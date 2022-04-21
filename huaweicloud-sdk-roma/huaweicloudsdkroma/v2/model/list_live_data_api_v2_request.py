@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListLiveDataApiV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class ListLiveDataApiV2Request:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, app_id=None, app_name=None, name=None, status=None, path=None, precise_search=None):
-        """ListLiveDataApiV2Request - a model defined in huaweicloud sdk"""
+        """ListLiveDataApiV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param offset: 偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
+        :type offset: int
+        :param limit: 每页显示的条目数量
+        :type limit: int
+        :param app_id: 后端API归属的集成应用编号
+        :type app_id: str
+        :param app_name: 后端API归属的集成应用名称
+        :type app_name: str
+        :param name: 后端API名称
+        :type name: str
+        :param status: 后端API状态，支持1，3，4，分别表示待开发，开发中和已部署状态
+        :type status: str
+        :param path: 后端API请求路径
+        :type path: str
+        :param precise_search: 指定需要精确匹配查找的参数名称，多个参数需要支持精确匹配时参数之间使用“,”隔开。  当前支持name，path，status。
+        :type precise_search: str
+        """
         
         
 
@@ -97,7 +118,7 @@ class ListLiveDataApiV2Request:
         实例ID
 
         :param instance_id: The instance_id of this ListLiveDataApiV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -119,7 +140,7 @@ class ListLiveDataApiV2Request:
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
         :param offset: The offset of this ListLiveDataApiV2Request.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -141,7 +162,7 @@ class ListLiveDataApiV2Request:
         每页显示的条目数量
 
         :param limit: The limit of this ListLiveDataApiV2Request.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -163,7 +184,7 @@ class ListLiveDataApiV2Request:
         后端API归属的集成应用编号
 
         :param app_id: The app_id of this ListLiveDataApiV2Request.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -185,7 +206,7 @@ class ListLiveDataApiV2Request:
         后端API归属的集成应用名称
 
         :param app_name: The app_name of this ListLiveDataApiV2Request.
-        :type: str
+        :type app_name: str
         """
         self._app_name = app_name
 
@@ -207,7 +228,7 @@ class ListLiveDataApiV2Request:
         后端API名称
 
         :param name: The name of this ListLiveDataApiV2Request.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -229,7 +250,7 @@ class ListLiveDataApiV2Request:
         后端API状态，支持1，3，4，分别表示待开发，开发中和已部署状态
 
         :param status: The status of this ListLiveDataApiV2Request.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -251,7 +272,7 @@ class ListLiveDataApiV2Request:
         后端API请求路径
 
         :param path: The path of this ListLiveDataApiV2Request.
-        :type: str
+        :type path: str
         """
         self._path = path
 
@@ -273,7 +294,7 @@ class ListLiveDataApiV2Request:
         指定需要精确匹配查找的参数名称，多个参数需要支持精确匹配时参数之间使用“,”隔开。  当前支持name，path，status。
 
         :param precise_search: The precise_search of this ListLiveDataApiV2Request.
-        :type: str
+        :type precise_search: str
         """
         self._precise_search = precise_search
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EventQueryParam2Sort:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class EventQueryParam2Sort:
     }
 
     def __init__(self, order_by=None, order=None):
-        """EventQueryParam2Sort - a model defined in huaweicloud sdk"""
+        """EventQueryParam2Sort
+
+        The model defined in huaweicloud sdk
+
+        :param order_by: 排序字段列表。会根据列表中定义顺序对返回列表最排序。
+        :type order_by: list[str]
+        :param order: 排序方式枚举值。asc代表正序，desc代表倒叙。
+        :type order: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class EventQueryParam2Sort:
         排序字段列表。会根据列表中定义顺序对返回列表最排序。
 
         :param order_by: The order_by of this EventQueryParam2Sort.
-        :type: list[str]
+        :type order_by: list[str]
         """
         self._order_by = order_by
 
@@ -85,7 +92,7 @@ class EventQueryParam2Sort:
         排序方式枚举值。asc代表正序，desc代表倒叙。
 
         :param order: The order of this EventQueryParam2Sort.
-        :type: str
+        :type order: str
         """
         self._order = order
 

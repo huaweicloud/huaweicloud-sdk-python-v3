@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CurrentSlot:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CurrentSlot:
     }
 
     def __init__(self, slot_id=None, slot_name=None, slot_values=None, slot_identification=None):
-        """CurrentSlot - a model defined in huaweicloud sdk"""
+        """CurrentSlot
+
+        The model defined in huaweicloud sdk
+
+        :param slot_id: 槽位ID。
+        :type slot_id: str
+        :param slot_name: 槽位名称。
+        :type slot_name: str
+        :param slot_values: 槽位值。
+        :type slot_values: list[:class:`huaweicloudsdkcbs.v1.SlotValue`]
+        :param slot_identification: 槽位标识。
+        :type slot_identification: str
+        """
         
         
 
@@ -70,7 +81,7 @@ class CurrentSlot:
         槽位ID。
 
         :param slot_id: The slot_id of this CurrentSlot.
-        :type: str
+        :type slot_id: str
         """
         self._slot_id = slot_id
 
@@ -92,7 +103,7 @@ class CurrentSlot:
         槽位名称。
 
         :param slot_name: The slot_name of this CurrentSlot.
-        :type: str
+        :type slot_name: str
         """
         self._slot_name = slot_name
 
@@ -103,7 +114,7 @@ class CurrentSlot:
         槽位值。
 
         :return: The slot_values of this CurrentSlot.
-        :rtype: list[SlotValue]
+        :rtype: list[:class:`huaweicloudsdkcbs.v1.SlotValue`]
         """
         return self._slot_values
 
@@ -114,7 +125,7 @@ class CurrentSlot:
         槽位值。
 
         :param slot_values: The slot_values of this CurrentSlot.
-        :type: list[SlotValue]
+        :type slot_values: list[:class:`huaweicloudsdkcbs.v1.SlotValue`]
         """
         self._slot_values = slot_values
 
@@ -136,7 +147,7 @@ class CurrentSlot:
         槽位标识。
 
         :param slot_identification: The slot_identification of this CurrentSlot.
-        :type: str
+        :type slot_identification: str
         """
         self._slot_identification = slot_identification
 

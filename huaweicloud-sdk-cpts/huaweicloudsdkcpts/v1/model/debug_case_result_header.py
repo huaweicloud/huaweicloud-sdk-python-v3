@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DebugCaseResultHeader:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class DebugCaseResultHeader:
     }
 
     def __init__(self, connection=None, content_type=None, host=None):
-        """DebugCaseResultHeader - a model defined in huaweicloud sdk"""
+        """DebugCaseResultHeader
+
+        The model defined in huaweicloud sdk
+
+        :param connection: Connection
+        :type connection: str
+        :param content_type: Content-Type
+        :type content_type: str
+        :param host: Host
+        :type host: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class DebugCaseResultHeader:
         Connection
 
         :param connection: The connection of this DebugCaseResultHeader.
-        :type: str
+        :type connection: str
         """
         self._connection = connection
 
@@ -90,7 +99,7 @@ class DebugCaseResultHeader:
         Content-Type
 
         :param content_type: The content_type of this DebugCaseResultHeader.
-        :type: str
+        :type content_type: str
         """
         self._content_type = content_type
 
@@ -112,7 +121,7 @@ class DebugCaseResultHeader:
         Host
 
         :param host: The host of this DebugCaseResultHeader.
-        :type: str
+        :type host: str
         """
         self._host = host
 

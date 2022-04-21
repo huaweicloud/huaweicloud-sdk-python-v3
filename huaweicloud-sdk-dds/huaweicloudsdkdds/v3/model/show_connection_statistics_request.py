@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowConnectionStatisticsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowConnectionStatisticsRequest:
     }
 
     def __init__(self, instance_id=None, node_id=None):
-        """ShowConnectionStatisticsRequest - a model defined in huaweicloud sdk"""
+        """ShowConnectionStatisticsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
+        :type instance_id: str
+        :param node_id: 节点ID。 - 如取空值，则默认查询实例下所有允许连接的节点的连接数信息。
+        :type node_id: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ShowConnectionStatisticsRequest:
         实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
         :param instance_id: The instance_id of this ShowConnectionStatisticsRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -84,7 +91,7 @@ class ShowConnectionStatisticsRequest:
         节点ID。 - 如取空值，则默认查询实例下所有允许连接的节点的连接数信息。
 
         :param node_id: The node_id of this ShowConnectionStatisticsRequest.
-        :type: str
+        :type node_id: str
         """
         self._node_id = node_id
 

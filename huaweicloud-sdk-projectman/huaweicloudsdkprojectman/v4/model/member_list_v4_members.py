@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MemberListV4Members:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class MemberListV4Members:
     }
 
     def __init__(self, domain_id=None, domain_name=None, user_id=None, user_name=None, user_num_id=None, role_id=None, nick_name=None, role_name=None, user_type=None, forbidden=None):
-        """MemberListV4Members - a model defined in huaweicloud sdk"""
+        """MemberListV4Members
+
+        The model defined in huaweicloud sdk
+
+        :param domain_id: 租户id
+        :type domain_id: str
+        :param domain_name: 租户名
+        :type domain_name: str
+        :param user_id: 用户id
+        :type user_id: str
+        :param user_name: 用户名
+        :type user_name: str
+        :param user_num_id: 创建人numId
+        :type user_num_id: int
+        :param role_id: 成员角色, -1 项目创建者, 3 项目经理, 4 开发人员, 5 测试经理, 6 测试人员, 7 参与者, 8 浏览者, 9 运维经理
+        :type role_id: int
+        :param nick_name: 用户昵称
+        :type nick_name: str
+        :param role_name: 用户角色
+        :type role_name: str
+        :param user_type: 用户类型, User iam用户, Federation 联邦账号,
+        :type user_type: str
+        :param forbidden: 是否是禁用账号，1 禁用账号， 0非禁用账号
+        :type forbidden: int
+        """
         
         
 
@@ -103,7 +126,7 @@ class MemberListV4Members:
         租户id
 
         :param domain_id: The domain_id of this MemberListV4Members.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -125,7 +148,7 @@ class MemberListV4Members:
         租户名
 
         :param domain_name: The domain_name of this MemberListV4Members.
-        :type: str
+        :type domain_name: str
         """
         self._domain_name = domain_name
 
@@ -147,7 +170,7 @@ class MemberListV4Members:
         用户id
 
         :param user_id: The user_id of this MemberListV4Members.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -169,7 +192,7 @@ class MemberListV4Members:
         用户名
 
         :param user_name: The user_name of this MemberListV4Members.
-        :type: str
+        :type user_name: str
         """
         self._user_name = user_name
 
@@ -191,7 +214,7 @@ class MemberListV4Members:
         创建人numId
 
         :param user_num_id: The user_num_id of this MemberListV4Members.
-        :type: int
+        :type user_num_id: int
         """
         self._user_num_id = user_num_id
 
@@ -213,7 +236,7 @@ class MemberListV4Members:
         成员角色, -1 项目创建者, 3 项目经理, 4 开发人员, 5 测试经理, 6 测试人员, 7 参与者, 8 浏览者, 9 运维经理
 
         :param role_id: The role_id of this MemberListV4Members.
-        :type: int
+        :type role_id: int
         """
         self._role_id = role_id
 
@@ -235,7 +258,7 @@ class MemberListV4Members:
         用户昵称
 
         :param nick_name: The nick_name of this MemberListV4Members.
-        :type: str
+        :type nick_name: str
         """
         self._nick_name = nick_name
 
@@ -257,7 +280,7 @@ class MemberListV4Members:
         用户角色
 
         :param role_name: The role_name of this MemberListV4Members.
-        :type: str
+        :type role_name: str
         """
         self._role_name = role_name
 
@@ -279,7 +302,7 @@ class MemberListV4Members:
         用户类型, User iam用户, Federation 联邦账号,
 
         :param user_type: The user_type of this MemberListV4Members.
-        :type: str
+        :type user_type: str
         """
         self._user_type = user_type
 
@@ -301,7 +324,7 @@ class MemberListV4Members:
         是否是禁用账号，1 禁用账号， 0非禁用账号
 
         :param forbidden: The forbidden of this MemberListV4Members.
-        :type: int
+        :type forbidden: int
         """
         self._forbidden = forbidden
 

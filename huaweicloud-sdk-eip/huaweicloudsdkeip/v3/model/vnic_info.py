@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VnicInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class VnicInfo:
     }
 
     def __init__(self, private_ip_address=None, device_id=None, device_owner=None, vpc_id=None, port_id=None, port_profile=None, mac=None, vtep=None, vni=None, instance_id=None, instance_type=None):
-        """VnicInfo - a model defined in huaweicloud sdk"""
+        """VnicInfo
+
+        The model defined in huaweicloud sdk
+
+        :param private_ip_address: 功能说明：私网IP地址
+        :type private_ip_address: str
+        :param device_id: 功能说明：端口所属设备ID 约束：不支持设置和更新,由系统自动维护
+        :type device_id: str
+        :param device_owner: 功能说明：设备所属 取值范围：合法设备所属,如network:dhcp、network:VIP_PORT、network:router_interface_distributed、network:router_centralized_snat 约束：不支持设置和更新,由系统自动维护
+        :type device_owner: str
+        :param vpc_id: 功能说明：虚拟私有云ID
+        :type vpc_id: str
+        :param port_id: 功能说明：端口ID
+        :type port_id: str
+        :param port_profile: 功能说明：端口profile信息
+        :type port_profile: str
+        :param mac: 功能说明：端口MAC地址 约束：由系统分配,不支持指定
+        :type mac: str
+        :param vtep: 功能说明：VTEP IP
+        :type vtep: str
+        :param vni: 功能说明：VXLAN ID
+        :type vni: str
+        :param instance_id: 功能说明：端口所属实例ID,例如RDS实例ID 约束：不支持设置和更新,由系统自动维护
+        :type instance_id: str
+        :param instance_type: 功能说明：端口所属实例类型,例如“RDS” 约束：不支持设置和更新,由系统自动维护
+        :type instance_type: str
+        """
         
         
 
@@ -108,7 +133,7 @@ class VnicInfo:
         功能说明：私网IP地址
 
         :param private_ip_address: The private_ip_address of this VnicInfo.
-        :type: str
+        :type private_ip_address: str
         """
         self._private_ip_address = private_ip_address
 
@@ -130,7 +155,7 @@ class VnicInfo:
         功能说明：端口所属设备ID 约束：不支持设置和更新,由系统自动维护
 
         :param device_id: The device_id of this VnicInfo.
-        :type: str
+        :type device_id: str
         """
         self._device_id = device_id
 
@@ -152,7 +177,7 @@ class VnicInfo:
         功能说明：设备所属 取值范围：合法设备所属,如network:dhcp、network:VIP_PORT、network:router_interface_distributed、network:router_centralized_snat 约束：不支持设置和更新,由系统自动维护
 
         :param device_owner: The device_owner of this VnicInfo.
-        :type: str
+        :type device_owner: str
         """
         self._device_owner = device_owner
 
@@ -174,7 +199,7 @@ class VnicInfo:
         功能说明：虚拟私有云ID
 
         :param vpc_id: The vpc_id of this VnicInfo.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -196,7 +221,7 @@ class VnicInfo:
         功能说明：端口ID
 
         :param port_id: The port_id of this VnicInfo.
-        :type: str
+        :type port_id: str
         """
         self._port_id = port_id
 
@@ -218,7 +243,7 @@ class VnicInfo:
         功能说明：端口profile信息
 
         :param port_profile: The port_profile of this VnicInfo.
-        :type: str
+        :type port_profile: str
         """
         self._port_profile = port_profile
 
@@ -240,7 +265,7 @@ class VnicInfo:
         功能说明：端口MAC地址 约束：由系统分配,不支持指定
 
         :param mac: The mac of this VnicInfo.
-        :type: str
+        :type mac: str
         """
         self._mac = mac
 
@@ -262,7 +287,7 @@ class VnicInfo:
         功能说明：VTEP IP
 
         :param vtep: The vtep of this VnicInfo.
-        :type: str
+        :type vtep: str
         """
         self._vtep = vtep
 
@@ -284,7 +309,7 @@ class VnicInfo:
         功能说明：VXLAN ID
 
         :param vni: The vni of this VnicInfo.
-        :type: str
+        :type vni: str
         """
         self._vni = vni
 
@@ -306,7 +331,7 @@ class VnicInfo:
         功能说明：端口所属实例ID,例如RDS实例ID 约束：不支持设置和更新,由系统自动维护
 
         :param instance_id: The instance_id of this VnicInfo.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -328,7 +353,7 @@ class VnicInfo:
         功能说明：端口所属实例类型,例如“RDS” 约束：不支持设置和更新,由系统自动维护
 
         :param instance_type: The instance_type of this VnicInfo.
-        :type: str
+        :type instance_type: str
         """
         self._instance_type = instance_type
 

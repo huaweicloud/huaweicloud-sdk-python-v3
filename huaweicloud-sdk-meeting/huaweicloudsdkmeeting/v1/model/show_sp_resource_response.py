@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowSpResourceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class ShowSpResourceResponse(SdkResponse):
     }
 
     def __init__(self, te1080p_hard_count=None, te720p_hard_count=None, te_soft_count=None, room_count=None, record_capability=None, conf_call_count=None, live_count=None, corp_count=None, third_party_hard_count=None, hw_vision_count=None, idea_hub_count=None, enable_pstn=None, enable_sms=None, group_list=None):
-        """ShowSpResourceResponse - a model defined in huaweicloud sdk"""
+        """ShowSpResourceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param te1080p_hard_count: 
+        :type te1080p_hard_count: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
+        :param te720p_hard_count: 
+        :type te720p_hard_count: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
+        :param te_soft_count: 
+        :type te_soft_count: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
+        :param room_count: 
+        :type room_count: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
+        :param record_capability: 
+        :type record_capability: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
+        :param conf_call_count: 
+        :type conf_call_count: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
+        :param live_count: 
+        :type live_count: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
+        :param corp_count: 
+        :type corp_count: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
+        :param third_party_hard_count: 
+        :type third_party_hard_count: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
+        :param hw_vision_count: 
+        :type hw_vision_count: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
+        :param idea_hub_count: 
+        :type idea_hub_count: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
+        :param enable_pstn: 在创建SP的时候设置的pstn权限开关
+        :type enable_pstn: bool
+        :param enable_sms: 在创建SP的时候设置发送短信开关
+        :type enable_sms: bool
+        :param group_list: sp管理员绑定的分组列表
+        :type group_list: list[:class:`huaweicloudsdkmeeting.v1.QueryCorpGroupDTO`]
+        """
         
         super(ShowSpResourceResponse, self).__init__()
 
@@ -111,7 +142,7 @@ class ShowSpResourceResponse(SdkResponse):
 
 
         :return: The te1080p_hard_count of this ShowSpResourceResponse.
-        :rtype: ResDetailDTO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         """
         return self._te1080p_hard_count
 
@@ -121,7 +152,7 @@ class ShowSpResourceResponse(SdkResponse):
 
 
         :param te1080p_hard_count: The te1080p_hard_count of this ShowSpResourceResponse.
-        :type: ResDetailDTO
+        :type te1080p_hard_count: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         """
         self._te1080p_hard_count = te1080p_hard_count
 
@@ -131,7 +162,7 @@ class ShowSpResourceResponse(SdkResponse):
 
 
         :return: The te720p_hard_count of this ShowSpResourceResponse.
-        :rtype: ResDetailDTO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         """
         return self._te720p_hard_count
 
@@ -141,7 +172,7 @@ class ShowSpResourceResponse(SdkResponse):
 
 
         :param te720p_hard_count: The te720p_hard_count of this ShowSpResourceResponse.
-        :type: ResDetailDTO
+        :type te720p_hard_count: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         """
         self._te720p_hard_count = te720p_hard_count
 
@@ -151,7 +182,7 @@ class ShowSpResourceResponse(SdkResponse):
 
 
         :return: The te_soft_count of this ShowSpResourceResponse.
-        :rtype: ResDetailDTO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         """
         return self._te_soft_count
 
@@ -161,7 +192,7 @@ class ShowSpResourceResponse(SdkResponse):
 
 
         :param te_soft_count: The te_soft_count of this ShowSpResourceResponse.
-        :type: ResDetailDTO
+        :type te_soft_count: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         """
         self._te_soft_count = te_soft_count
 
@@ -171,7 +202,7 @@ class ShowSpResourceResponse(SdkResponse):
 
 
         :return: The room_count of this ShowSpResourceResponse.
-        :rtype: ResDetailDTO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         """
         return self._room_count
 
@@ -181,7 +212,7 @@ class ShowSpResourceResponse(SdkResponse):
 
 
         :param room_count: The room_count of this ShowSpResourceResponse.
-        :type: ResDetailDTO
+        :type room_count: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         """
         self._room_count = room_count
 
@@ -191,7 +222,7 @@ class ShowSpResourceResponse(SdkResponse):
 
 
         :return: The record_capability of this ShowSpResourceResponse.
-        :rtype: ResDetailDTO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         """
         return self._record_capability
 
@@ -201,7 +232,7 @@ class ShowSpResourceResponse(SdkResponse):
 
 
         :param record_capability: The record_capability of this ShowSpResourceResponse.
-        :type: ResDetailDTO
+        :type record_capability: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         """
         self._record_capability = record_capability
 
@@ -211,7 +242,7 @@ class ShowSpResourceResponse(SdkResponse):
 
 
         :return: The conf_call_count of this ShowSpResourceResponse.
-        :rtype: ResDetailDTO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         """
         return self._conf_call_count
 
@@ -221,7 +252,7 @@ class ShowSpResourceResponse(SdkResponse):
 
 
         :param conf_call_count: The conf_call_count of this ShowSpResourceResponse.
-        :type: ResDetailDTO
+        :type conf_call_count: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         """
         self._conf_call_count = conf_call_count
 
@@ -231,7 +262,7 @@ class ShowSpResourceResponse(SdkResponse):
 
 
         :return: The live_count of this ShowSpResourceResponse.
-        :rtype: ResDetailDTO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         """
         return self._live_count
 
@@ -241,7 +272,7 @@ class ShowSpResourceResponse(SdkResponse):
 
 
         :param live_count: The live_count of this ShowSpResourceResponse.
-        :type: ResDetailDTO
+        :type live_count: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         """
         self._live_count = live_count
 
@@ -251,7 +282,7 @@ class ShowSpResourceResponse(SdkResponse):
 
 
         :return: The corp_count of this ShowSpResourceResponse.
-        :rtype: ResDetailDTO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         """
         return self._corp_count
 
@@ -261,7 +292,7 @@ class ShowSpResourceResponse(SdkResponse):
 
 
         :param corp_count: The corp_count of this ShowSpResourceResponse.
-        :type: ResDetailDTO
+        :type corp_count: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         """
         self._corp_count = corp_count
 
@@ -271,7 +302,7 @@ class ShowSpResourceResponse(SdkResponse):
 
 
         :return: The third_party_hard_count of this ShowSpResourceResponse.
-        :rtype: ResDetailDTO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         """
         return self._third_party_hard_count
 
@@ -281,7 +312,7 @@ class ShowSpResourceResponse(SdkResponse):
 
 
         :param third_party_hard_count: The third_party_hard_count of this ShowSpResourceResponse.
-        :type: ResDetailDTO
+        :type third_party_hard_count: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         """
         self._third_party_hard_count = third_party_hard_count
 
@@ -291,7 +322,7 @@ class ShowSpResourceResponse(SdkResponse):
 
 
         :return: The hw_vision_count of this ShowSpResourceResponse.
-        :rtype: ResDetailDTO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         """
         return self._hw_vision_count
 
@@ -301,7 +332,7 @@ class ShowSpResourceResponse(SdkResponse):
 
 
         :param hw_vision_count: The hw_vision_count of this ShowSpResourceResponse.
-        :type: ResDetailDTO
+        :type hw_vision_count: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         """
         self._hw_vision_count = hw_vision_count
 
@@ -311,7 +342,7 @@ class ShowSpResourceResponse(SdkResponse):
 
 
         :return: The idea_hub_count of this ShowSpResourceResponse.
-        :rtype: ResDetailDTO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         """
         return self._idea_hub_count
 
@@ -321,7 +352,7 @@ class ShowSpResourceResponse(SdkResponse):
 
 
         :param idea_hub_count: The idea_hub_count of this ShowSpResourceResponse.
-        :type: ResDetailDTO
+        :type idea_hub_count: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         """
         self._idea_hub_count = idea_hub_count
 
@@ -343,7 +374,7 @@ class ShowSpResourceResponse(SdkResponse):
         在创建SP的时候设置的pstn权限开关
 
         :param enable_pstn: The enable_pstn of this ShowSpResourceResponse.
-        :type: bool
+        :type enable_pstn: bool
         """
         self._enable_pstn = enable_pstn
 
@@ -365,7 +396,7 @@ class ShowSpResourceResponse(SdkResponse):
         在创建SP的时候设置发送短信开关
 
         :param enable_sms: The enable_sms of this ShowSpResourceResponse.
-        :type: bool
+        :type enable_sms: bool
         """
         self._enable_sms = enable_sms
 
@@ -376,7 +407,7 @@ class ShowSpResourceResponse(SdkResponse):
         sp管理员绑定的分组列表
 
         :return: The group_list of this ShowSpResourceResponse.
-        :rtype: list[QueryCorpGroupDTO]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.QueryCorpGroupDTO`]
         """
         return self._group_list
 
@@ -387,7 +418,7 @@ class ShowSpResourceResponse(SdkResponse):
         sp管理员绑定的分组列表
 
         :param group_list: The group_list of this ShowSpResourceResponse.
-        :type: list[QueryCorpGroupDTO]
+        :type group_list: list[:class:`huaweicloudsdkmeeting.v1.QueryCorpGroupDTO`]
         """
         self._group_list = group_list
 

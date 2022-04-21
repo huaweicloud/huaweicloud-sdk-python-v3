@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListStacksResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListStacksResponse(SdkResponse):
     }
 
     def __init__(self, stack=None, status=None):
-        """ListStacksResponse - a model defined in huaweicloud sdk"""
+        """ListStacksResponse
+
+        The model defined in huaweicloud sdk
+
+        :param stack: 
+        :type stack: :class:`huaweicloudsdkcloudide.v2.StacksTags`
+        :param status: 状态
+        :type status: str
+        """
         
         super(ListStacksResponse, self).__init__()
 
@@ -51,7 +58,7 @@ class ListStacksResponse(SdkResponse):
 
 
         :return: The stack of this ListStacksResponse.
-        :rtype: StacksTags
+        :rtype: :class:`huaweicloudsdkcloudide.v2.StacksTags`
         """
         return self._stack
 
@@ -61,7 +68,7 @@ class ListStacksResponse(SdkResponse):
 
 
         :param stack: The stack of this ListStacksResponse.
-        :type: StacksTags
+        :type stack: :class:`huaweicloudsdkcloudide.v2.StacksTags`
         """
         self._stack = stack
 
@@ -83,7 +90,7 @@ class ListStacksResponse(SdkResponse):
         状态
 
         :param status: The status of this ListStacksResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 

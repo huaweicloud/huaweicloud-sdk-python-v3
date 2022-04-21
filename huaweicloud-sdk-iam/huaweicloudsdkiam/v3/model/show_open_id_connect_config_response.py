@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowOpenIdConnectConfigResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowOpenIdConnectConfigResponse(SdkResponse):
     }
 
     def __init__(self, openid_connect_config=None):
-        """ShowOpenIdConnectConfigResponse - a model defined in huaweicloud sdk"""
+        """ShowOpenIdConnectConfigResponse
+
+        The model defined in huaweicloud sdk
+
+        :param openid_connect_config: 
+        :type openid_connect_config: :class:`huaweicloudsdkiam.v3.OpenIdConnectConfig`
+        """
         
         super(ShowOpenIdConnectConfigResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class ShowOpenIdConnectConfigResponse(SdkResponse):
 
 
         :return: The openid_connect_config of this ShowOpenIdConnectConfigResponse.
-        :rtype: OpenIdConnectConfig
+        :rtype: :class:`huaweicloudsdkiam.v3.OpenIdConnectConfig`
         """
         return self._openid_connect_config
 
@@ -56,7 +61,7 @@ class ShowOpenIdConnectConfigResponse(SdkResponse):
 
 
         :param openid_connect_config: The openid_connect_config of this ShowOpenIdConnectConfigResponse.
-        :type: OpenIdConnectConfig
+        :type openid_connect_config: :class:`huaweicloudsdkiam.v3.OpenIdConnectConfig`
         """
         self._openid_connect_config = openid_connect_config
 

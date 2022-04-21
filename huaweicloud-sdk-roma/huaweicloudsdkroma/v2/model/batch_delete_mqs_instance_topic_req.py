@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchDeleteMqsInstanceTopicReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchDeleteMqsInstanceTopicReq:
     }
 
     def __init__(self, topics=None):
-        """BatchDeleteMqsInstanceTopicReq - a model defined in huaweicloud sdk"""
+        """BatchDeleteMqsInstanceTopicReq
+
+        The model defined in huaweicloud sdk
+
+        :param topics: 待删除的topic列表。
+        :type topics: list[str]
+        """
         
         
 
@@ -57,7 +62,7 @@ class BatchDeleteMqsInstanceTopicReq:
         待删除的topic列表。
 
         :param topics: The topics of this BatchDeleteMqsInstanceTopicReq.
-        :type: list[str]
+        :type topics: list[str]
         """
         self._topics = topics
 

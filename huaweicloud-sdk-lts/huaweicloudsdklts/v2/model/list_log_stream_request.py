@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListLogStreamRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListLogStreamRequest:
     }
 
     def __init__(self, log_group_id=None, tag=None):
-        """ListLogStreamRequest - a model defined in huaweicloud sdk"""
+        """ListLogStreamRequest
+
+        The model defined in huaweicloud sdk
+
+        :param log_group_id: 租户想查询的日志流所在的日志组的groupid，一般为36位字符串。 
+        :type log_group_id: str
+        :param tag: 按条件搜索，内容设置为日志流的tag键值对，比如k1&#x3D;v1； 
+        :type tag: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ListLogStreamRequest:
         租户想查询的日志流所在的日志组的groupid，一般为36位字符串。 
 
         :param log_group_id: The log_group_id of this ListLogStreamRequest.
-        :type: str
+        :type log_group_id: str
         """
         self._log_group_id = log_group_id
 
@@ -84,7 +91,7 @@ class ListLogStreamRequest:
         按条件搜索，内容设置为日志流的tag键值对，比如k1=v1； 
 
         :param tag: The tag of this ListLogStreamRequest.
-        :type: str
+        :type tag: str
         """
         self._tag = tag
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListWhiteblackipRuleResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListWhiteblackipRuleResponse(SdkResponse):
     }
 
     def __init__(self, total=None, items=None):
-        """ListWhiteblackipRuleResponse - a model defined in huaweicloud sdk"""
+        """ListWhiteblackipRuleResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 规则条数
+        :type total: int
+        :param items: 规则
+        :type items: list[:class:`huaweicloudsdkwaf.v1.WhiteBlackIpResponseBody`]
+        """
         
         super(ListWhiteblackipRuleResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListWhiteblackipRuleResponse(SdkResponse):
         规则条数
 
         :param total: The total of this ListWhiteblackipRuleResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -74,7 +81,7 @@ class ListWhiteblackipRuleResponse(SdkResponse):
         规则
 
         :return: The items of this ListWhiteblackipRuleResponse.
-        :rtype: list[WhiteBlackIpResponseBody]
+        :rtype: list[:class:`huaweicloudsdkwaf.v1.WhiteBlackIpResponseBody`]
         """
         return self._items
 
@@ -85,7 +92,7 @@ class ListWhiteblackipRuleResponse(SdkResponse):
         规则
 
         :param items: The items of this ListWhiteblackipRuleResponse.
-        :type: list[WhiteBlackIpResponseBody]
+        :type items: list[:class:`huaweicloudsdkwaf.v1.WhiteBlackIpResponseBody`]
         """
         self._items = items
 

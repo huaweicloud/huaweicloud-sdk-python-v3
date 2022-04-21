@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SparkCalcSpec:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class SparkCalcSpec:
     }
 
     def __init__(self, driver_memory=None, driver_cores=None, executor_memory=None, executor_cores=None, num_executors=None):
-        """SparkCalcSpec - a model defined in huaweicloud sdk"""
+        """SparkCalcSpec
+
+        The model defined in huaweicloud sdk
+
+        :param driver_memory: driver内存
+        :type driver_memory: str
+        :param driver_cores: driver核数
+        :type driver_cores: int
+        :param executor_memory: executor内存
+        :type executor_memory: str
+        :param executor_cores: executor核数
+        :type executor_cores: int
+        :param num_executors: executor个数
+        :type num_executors: int
+        """
         
         
 
@@ -73,7 +86,7 @@ class SparkCalcSpec:
         driver内存
 
         :param driver_memory: The driver_memory of this SparkCalcSpec.
-        :type: str
+        :type driver_memory: str
         """
         self._driver_memory = driver_memory
 
@@ -95,7 +108,7 @@ class SparkCalcSpec:
         driver核数
 
         :param driver_cores: The driver_cores of this SparkCalcSpec.
-        :type: int
+        :type driver_cores: int
         """
         self._driver_cores = driver_cores
 
@@ -117,7 +130,7 @@ class SparkCalcSpec:
         executor内存
 
         :param executor_memory: The executor_memory of this SparkCalcSpec.
-        :type: str
+        :type executor_memory: str
         """
         self._executor_memory = executor_memory
 
@@ -139,7 +152,7 @@ class SparkCalcSpec:
         executor核数
 
         :param executor_cores: The executor_cores of this SparkCalcSpec.
-        :type: int
+        :type executor_cores: int
         """
         self._executor_cores = executor_cores
 
@@ -161,7 +174,7 @@ class SparkCalcSpec:
         executor个数
 
         :param num_executors: The num_executors of this SparkCalcSpec.
-        :type: int
+        :type num_executors: int
         """
         self._num_executors = num_executors
 

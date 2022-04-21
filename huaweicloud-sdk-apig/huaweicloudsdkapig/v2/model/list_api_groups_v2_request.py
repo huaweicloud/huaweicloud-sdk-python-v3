@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListApiGroupsV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListApiGroupsV2Request:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, id=None, name=None, precise_search=None):
-        """ListApiGroupsV2Request - a model defined in huaweicloud sdk"""
+        """ListApiGroupsV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param offset: 偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
+        :type offset: int
+        :param limit: 每页显示的条目数量
+        :type limit: int
+        :param id: API分组编号
+        :type id: str
+        :param name: API分组名称
+        :type name: str
+        :param precise_search: 指定需要精确匹配查找的参数名称，目前仅支持API分组名称
+        :type precise_search: str
+        """
         
         
 
@@ -82,7 +97,7 @@ class ListApiGroupsV2Request:
         实例ID
 
         :param instance_id: The instance_id of this ListApiGroupsV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -104,7 +119,7 @@ class ListApiGroupsV2Request:
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
         :param offset: The offset of this ListApiGroupsV2Request.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -126,7 +141,7 @@ class ListApiGroupsV2Request:
         每页显示的条目数量
 
         :param limit: The limit of this ListApiGroupsV2Request.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -148,7 +163,7 @@ class ListApiGroupsV2Request:
         API分组编号
 
         :param id: The id of this ListApiGroupsV2Request.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -170,7 +185,7 @@ class ListApiGroupsV2Request:
         API分组名称
 
         :param name: The name of this ListApiGroupsV2Request.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -192,7 +207,7 @@ class ListApiGroupsV2Request:
         指定需要精确匹配查找的参数名称，目前仅支持API分组名称
 
         :param precise_search: The precise_search of this ListApiGroupsV2Request.
-        :type: str
+        :type precise_search: str
         """
         self._precise_search = precise_search
 

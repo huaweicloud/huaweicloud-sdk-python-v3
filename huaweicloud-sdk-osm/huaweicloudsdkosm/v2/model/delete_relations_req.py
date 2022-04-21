@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteRelationsReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteRelationsReq:
     }
 
     def __init__(self, related_id=None, group_id=None):
-        """DeleteRelationsReq - a model defined in huaweicloud sdk"""
+        """DeleteRelationsReq
+
+        The model defined in huaweicloud sdk
+
+        :param related_id: 要解除关联的工单id
+        :type related_id: str
+        :param group_id: 组id
+        :type group_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class DeleteRelationsReq:
         要解除关联的工单id
 
         :param related_id: The related_id of this DeleteRelationsReq.
-        :type: str
+        :type related_id: str
         """
         self._related_id = related_id
 
@@ -83,7 +90,7 @@ class DeleteRelationsReq:
         组id
 
         :param group_id: The group_id of this DeleteRelationsReq.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 

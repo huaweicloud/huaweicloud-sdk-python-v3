@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListExecuteJobResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListExecuteJobResponse(SdkResponse):
     }
 
     def __init__(self, total_record=None, job_executions=None):
-        """ListExecuteJobResponse - a model defined in huaweicloud sdk"""
+        """ListExecuteJobResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total_record: 作业列表总数。
+        :type total_record: int
+        :param job_executions: 作业列表。
+        :type job_executions: list[:class:`huaweicloudsdkmrs.v1.JobExeResult`]
+        """
         
         super(ListExecuteJobResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListExecuteJobResponse(SdkResponse):
         作业列表总数。
 
         :param total_record: The total_record of this ListExecuteJobResponse.
-        :type: int
+        :type total_record: int
         """
         self._total_record = total_record
 
@@ -74,7 +81,7 @@ class ListExecuteJobResponse(SdkResponse):
         作业列表。
 
         :return: The job_executions of this ListExecuteJobResponse.
-        :rtype: list[JobExeResult]
+        :rtype: list[:class:`huaweicloudsdkmrs.v1.JobExeResult`]
         """
         return self._job_executions
 
@@ -85,7 +92,7 @@ class ListExecuteJobResponse(SdkResponse):
         作业列表。
 
         :param job_executions: The job_executions of this ListExecuteJobResponse.
-        :type: list[JobExeResult]
+        :type job_executions: list[:class:`huaweicloudsdkmrs.v1.JobExeResult`]
         """
         self._job_executions = job_executions
 

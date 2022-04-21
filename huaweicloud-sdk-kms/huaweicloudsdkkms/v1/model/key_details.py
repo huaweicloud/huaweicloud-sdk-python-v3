@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeyDetails:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -60,7 +59,43 @@ class KeyDetails:
     }
 
     def __init__(self, key_id=None, domain_id=None, key_alias=None, realm=None, key_spec=None, key_usage=None, key_description=None, creation_date=None, scheduled_deletion_date=None, key_state=None, default_key_flag=None, key_type=None, expiration_time=None, origin=None, key_rotation_enabled=None, sys_enterprise_project_id=None):
-        """KeyDetails - a model defined in huaweicloud sdk"""
+        """KeyDetails
+
+        The model defined in huaweicloud sdk
+
+        :param key_id: 密钥ID。
+        :type key_id: str
+        :param domain_id: 用户域ID。
+        :type domain_id: str
+        :param key_alias: 密钥别名。
+        :type key_alias: str
+        :param realm: 密钥区域。
+        :type realm: str
+        :param key_spec: 密钥生成算法。  - AES_256  - SM4  - RSA_2048  - RSA_3072  - RSA_4096  - EC_P256  - EC_P384  - SM2
+        :type key_spec: str
+        :param key_usage: 密钥用途。 - ENCRYPT_DECRYPT - SIGN_VERIFY
+        :type key_usage: str
+        :param key_description: 密钥描述。
+        :type key_description: str
+        :param creation_date: 密钥创建时间，时间戳，即从1970年1月1日至该时间的总秒数。
+        :type creation_date: str
+        :param scheduled_deletion_date: 密钥计划删除时间，时间戳，即从1970年1月1日至该时间的总秒数。
+        :type scheduled_deletion_date: str
+        :param key_state: 密钥状态，满足正则匹配“^[1-5]{1}$”，枚举如下：  - “1”表示待激活状态  - “2”表示启用状态  - “3”表示禁用状态  - “4”表示计划删除状态  - “5”表示等待导入状态
+        :type key_state: str
+        :param default_key_flag: 默认主密钥标识，默认主密钥标识为1，非默认标识为0。
+        :type default_key_flag: str
+        :param key_type: 密钥类型。
+        :type key_type: str
+        :param expiration_time: 密钥材料失效时间，时间戳，即从1970年1月1日至该时间的总秒数。
+        :type expiration_time: str
+        :param origin: 密钥来源，默认为“kms”，枚举如下：  - kms表示密钥材料由kms生成kms表示密钥材料由kms生成  - external表示密钥材料由外部导入
+        :type origin: str
+        :param key_rotation_enabled: 密钥轮换状态，默认为“false”，表示关闭密钥轮换功能。
+        :type key_rotation_enabled: str
+        :param sys_enterprise_project_id: 企业项目ID，默认为“0”。  - 对于开通企业项目的用户，表示资源处于默认企业项目下。  - 对于未开通企业项目的用户，表示资源未处于企业项目下。
+        :type sys_enterprise_project_id: str
+        """
         
         
 
@@ -133,7 +168,7 @@ class KeyDetails:
         密钥ID。
 
         :param key_id: The key_id of this KeyDetails.
-        :type: str
+        :type key_id: str
         """
         self._key_id = key_id
 
@@ -155,7 +190,7 @@ class KeyDetails:
         用户域ID。
 
         :param domain_id: The domain_id of this KeyDetails.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -177,7 +212,7 @@ class KeyDetails:
         密钥别名。
 
         :param key_alias: The key_alias of this KeyDetails.
-        :type: str
+        :type key_alias: str
         """
         self._key_alias = key_alias
 
@@ -199,7 +234,7 @@ class KeyDetails:
         密钥区域。
 
         :param realm: The realm of this KeyDetails.
-        :type: str
+        :type realm: str
         """
         self._realm = realm
 
@@ -221,7 +256,7 @@ class KeyDetails:
         密钥生成算法。  - AES_256  - SM4  - RSA_2048  - RSA_3072  - RSA_4096  - EC_P256  - EC_P384  - SM2
 
         :param key_spec: The key_spec of this KeyDetails.
-        :type: str
+        :type key_spec: str
         """
         self._key_spec = key_spec
 
@@ -243,7 +278,7 @@ class KeyDetails:
         密钥用途。 - ENCRYPT_DECRYPT - SIGN_VERIFY
 
         :param key_usage: The key_usage of this KeyDetails.
-        :type: str
+        :type key_usage: str
         """
         self._key_usage = key_usage
 
@@ -265,7 +300,7 @@ class KeyDetails:
         密钥描述。
 
         :param key_description: The key_description of this KeyDetails.
-        :type: str
+        :type key_description: str
         """
         self._key_description = key_description
 
@@ -287,7 +322,7 @@ class KeyDetails:
         密钥创建时间，时间戳，即从1970年1月1日至该时间的总秒数。
 
         :param creation_date: The creation_date of this KeyDetails.
-        :type: str
+        :type creation_date: str
         """
         self._creation_date = creation_date
 
@@ -309,7 +344,7 @@ class KeyDetails:
         密钥计划删除时间，时间戳，即从1970年1月1日至该时间的总秒数。
 
         :param scheduled_deletion_date: The scheduled_deletion_date of this KeyDetails.
-        :type: str
+        :type scheduled_deletion_date: str
         """
         self._scheduled_deletion_date = scheduled_deletion_date
 
@@ -331,7 +366,7 @@ class KeyDetails:
         密钥状态，满足正则匹配“^[1-5]{1}$”，枚举如下：  - “1”表示待激活状态  - “2”表示启用状态  - “3”表示禁用状态  - “4”表示计划删除状态  - “5”表示等待导入状态
 
         :param key_state: The key_state of this KeyDetails.
-        :type: str
+        :type key_state: str
         """
         self._key_state = key_state
 
@@ -353,7 +388,7 @@ class KeyDetails:
         默认主密钥标识，默认主密钥标识为1，非默认标识为0。
 
         :param default_key_flag: The default_key_flag of this KeyDetails.
-        :type: str
+        :type default_key_flag: str
         """
         self._default_key_flag = default_key_flag
 
@@ -375,7 +410,7 @@ class KeyDetails:
         密钥类型。
 
         :param key_type: The key_type of this KeyDetails.
-        :type: str
+        :type key_type: str
         """
         self._key_type = key_type
 
@@ -397,7 +432,7 @@ class KeyDetails:
         密钥材料失效时间，时间戳，即从1970年1月1日至该时间的总秒数。
 
         :param expiration_time: The expiration_time of this KeyDetails.
-        :type: str
+        :type expiration_time: str
         """
         self._expiration_time = expiration_time
 
@@ -419,7 +454,7 @@ class KeyDetails:
         密钥来源，默认为“kms”，枚举如下：  - kms表示密钥材料由kms生成kms表示密钥材料由kms生成  - external表示密钥材料由外部导入
 
         :param origin: The origin of this KeyDetails.
-        :type: str
+        :type origin: str
         """
         self._origin = origin
 
@@ -441,7 +476,7 @@ class KeyDetails:
         密钥轮换状态，默认为“false”，表示关闭密钥轮换功能。
 
         :param key_rotation_enabled: The key_rotation_enabled of this KeyDetails.
-        :type: str
+        :type key_rotation_enabled: str
         """
         self._key_rotation_enabled = key_rotation_enabled
 
@@ -463,7 +498,7 @@ class KeyDetails:
         企业项目ID，默认为“0”。  - 对于开通企业项目的用户，表示资源处于默认企业项目下。  - 对于未开通企业项目的用户，表示资源未处于企业项目下。
 
         :param sys_enterprise_project_id: The sys_enterprise_project_id of this KeyDetails.
-        :type: str
+        :type sys_enterprise_project_id: str
         """
         self._sys_enterprise_project_id = sys_enterprise_project_id
 

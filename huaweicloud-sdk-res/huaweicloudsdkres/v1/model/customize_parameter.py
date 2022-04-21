@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CustomizeParameter:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CustomizeParameter:
     }
 
     def __init__(self, alias=None, behavior_type=None, threshold=None, deduplication=None):
-        """CustomizeParameter - a model defined in huaweicloud sdk"""
+        """CustomizeParameter
+
+        The model defined in huaweicloud sdk
+
+        :param alias: 别名。
+        :type alias: str
+        :param behavior_type: 行为类型。
+        :type behavior_type: str
+        :param threshold: 阈值。
+        :type threshold: float
+        :param deduplication: 去重。
+        :type deduplication: str
+        """
         
         
 
@@ -70,7 +81,7 @@ class CustomizeParameter:
         别名。
 
         :param alias: The alias of this CustomizeParameter.
-        :type: str
+        :type alias: str
         """
         self._alias = alias
 
@@ -92,7 +103,7 @@ class CustomizeParameter:
         行为类型。
 
         :param behavior_type: The behavior_type of this CustomizeParameter.
-        :type: str
+        :type behavior_type: str
         """
         self._behavior_type = behavior_type
 
@@ -114,7 +125,7 @@ class CustomizeParameter:
         阈值。
 
         :param threshold: The threshold of this CustomizeParameter.
-        :type: float
+        :type threshold: float
         """
         self._threshold = threshold
 
@@ -136,7 +147,7 @@ class CustomizeParameter:
         去重。
 
         :param deduplication: The deduplication of this CustomizeParameter.
-        :type: str
+        :type deduplication: str
         """
         self._deduplication = deduplication
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BillbingCreateExtraInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BillbingCreateExtraInfo:
     }
 
     def __init__(self, combined_order_id=None, combined_order_ecs_num=None):
-        """BillbingCreateExtraInfo - a model defined in huaweicloud sdk"""
+        """BillbingCreateExtraInfo
+
+        The model defined in huaweicloud sdk
+
+        :param combined_order_id: 组合创建ID，组合创建时必传。
+        :type combined_order_id: str
+        :param combined_order_ecs_num: 组合创建数量，组合创建时必填。
+        :type combined_order_ecs_num: int
+        """
         
         
 
@@ -63,7 +70,7 @@ class BillbingCreateExtraInfo:
         组合创建ID，组合创建时必传。
 
         :param combined_order_id: The combined_order_id of this BillbingCreateExtraInfo.
-        :type: str
+        :type combined_order_id: str
         """
         self._combined_order_id = combined_order_id
 
@@ -85,7 +92,7 @@ class BillbingCreateExtraInfo:
         组合创建数量，组合创建时必填。
 
         :param combined_order_ecs_num: The combined_order_ecs_num of this BillbingCreateExtraInfo.
-        :type: int
+        :type combined_order_ecs_num: int
         """
         self._combined_order_ecs_num = combined_order_ecs_num
 

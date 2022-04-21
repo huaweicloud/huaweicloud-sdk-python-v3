@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCommandsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListCommandsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, size=None, items=None):
-        """ListCommandsResponse - a model defined in huaweicloud sdk"""
+        """ListCommandsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 总数
+        :type total: int
+        :param size: 本次返回数量
+        :type size: int
+        :param items: 命令列表
+        :type items: list[:class:`huaweicloudsdkroma.v2.Command`]
+        """
         
         super(ListCommandsResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListCommandsResponse(SdkResponse):
         总数
 
         :param total: The total of this ListCommandsResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -90,7 +99,7 @@ class ListCommandsResponse(SdkResponse):
         本次返回数量
 
         :param size: The size of this ListCommandsResponse.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -101,7 +110,7 @@ class ListCommandsResponse(SdkResponse):
         命令列表
 
         :return: The items of this ListCommandsResponse.
-        :rtype: list[Command]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.Command`]
         """
         return self._items
 
@@ -112,7 +121,7 @@ class ListCommandsResponse(SdkResponse):
         命令列表
 
         :param items: The items of this ListCommandsResponse.
-        :type: list[Command]
+        :type items: list[:class:`huaweicloudsdkroma.v2.Command`]
         """
         self._items = items
 

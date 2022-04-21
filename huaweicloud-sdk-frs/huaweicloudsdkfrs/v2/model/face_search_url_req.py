@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FaceSearchUrlReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class FaceSearchUrlReq:
     }
 
     def __init__(self, filter=None, top_n=None, image_url=None, return_fields=None, threshold=None, sort=None):
-        """FaceSearchUrlReq - a model defined in huaweicloud sdk"""
+        """FaceSearchUrlReq
+
+        The model defined in huaweicloud sdk
+
+        :param filter: 过滤条件，参考[filter语法](https://support.huaweicloud.com/api-face/face_02_0014.html)。
+        :type filter: str
+        :param top_n: 返回查询到的最相似的N张人脸，N默认为10。
+        :type top_n: int
+        :param image_url: 图片的URL路径，目前仅支持华为云上OBS的URL，且人脸识别服务有权限读取该OBS桶的数据。 开通读取权限的操作请参见[服务授权](https://support.huaweicloud.com/api-face/face_02_0006.html)。
+        :type image_url: str
+        :param return_fields: 指定返回的自定义字段。
+        :type return_fields: list[str]
+        :param threshold: 人脸相似度阈值，低于这个阈值则不返回，取值范围0~1，一般情况下建议取值0.93，默认为0。
+        :type threshold: float
+        :param sort: 支持字段排序，参考[sort语法](https://support.huaweicloud.com/api-face/face_02_0013.html)。
+        :type sort: list[dict(str, str)]
+        """
         
         
 
@@ -82,7 +97,7 @@ class FaceSearchUrlReq:
         过滤条件，参考[filter语法](https://support.huaweicloud.com/api-face/face_02_0014.html)。
 
         :param filter: The filter of this FaceSearchUrlReq.
-        :type: str
+        :type filter: str
         """
         self._filter = filter
 
@@ -104,7 +119,7 @@ class FaceSearchUrlReq:
         返回查询到的最相似的N张人脸，N默认为10。
 
         :param top_n: The top_n of this FaceSearchUrlReq.
-        :type: int
+        :type top_n: int
         """
         self._top_n = top_n
 
@@ -126,7 +141,7 @@ class FaceSearchUrlReq:
         图片的URL路径，目前仅支持华为云上OBS的URL，且人脸识别服务有权限读取该OBS桶的数据。 开通读取权限的操作请参见[服务授权](https://support.huaweicloud.com/api-face/face_02_0006.html)。
 
         :param image_url: The image_url of this FaceSearchUrlReq.
-        :type: str
+        :type image_url: str
         """
         self._image_url = image_url
 
@@ -148,7 +163,7 @@ class FaceSearchUrlReq:
         指定返回的自定义字段。
 
         :param return_fields: The return_fields of this FaceSearchUrlReq.
-        :type: list[str]
+        :type return_fields: list[str]
         """
         self._return_fields = return_fields
 
@@ -170,7 +185,7 @@ class FaceSearchUrlReq:
         人脸相似度阈值，低于这个阈值则不返回，取值范围0~1，一般情况下建议取值0.93，默认为0。
 
         :param threshold: The threshold of this FaceSearchUrlReq.
-        :type: float
+        :type threshold: float
         """
         self._threshold = threshold
 
@@ -192,7 +207,7 @@ class FaceSearchUrlReq:
         支持字段排序，参考[sort语法](https://support.huaweicloud.com/api-face/face_02_0013.html)。
 
         :param sort: The sort of this FaceSearchUrlReq.
-        :type: list[dict(str, str)]
+        :type sort: list[dict(str, str)]
         """
         self._sort = sort
 

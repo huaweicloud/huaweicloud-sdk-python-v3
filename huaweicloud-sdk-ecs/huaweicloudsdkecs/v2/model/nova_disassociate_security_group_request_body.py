@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NovaDisassociateSecurityGroupRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class NovaDisassociateSecurityGroupRequestBody:
     }
 
     def __init__(self, remove_security_group=None):
-        """NovaDisassociateSecurityGroupRequestBody - a model defined in huaweicloud sdk"""
+        """NovaDisassociateSecurityGroupRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param remove_security_group: 
+        :type remove_security_group: :class:`huaweicloudsdkecs.v2.NovaRemoveSecurityGroupOption`
+        """
         
         
 
@@ -45,7 +50,7 @@ class NovaDisassociateSecurityGroupRequestBody:
 
 
         :return: The remove_security_group of this NovaDisassociateSecurityGroupRequestBody.
-        :rtype: NovaRemoveSecurityGroupOption
+        :rtype: :class:`huaweicloudsdkecs.v2.NovaRemoveSecurityGroupOption`
         """
         return self._remove_security_group
 
@@ -55,7 +60,7 @@ class NovaDisassociateSecurityGroupRequestBody:
 
 
         :param remove_security_group: The remove_security_group of this NovaDisassociateSecurityGroupRequestBody.
-        :type: NovaRemoveSecurityGroupOption
+        :type remove_security_group: :class:`huaweicloudsdkecs.v2.NovaRemoveSecurityGroupOption`
         """
         self._remove_security_group = remove_security_group
 

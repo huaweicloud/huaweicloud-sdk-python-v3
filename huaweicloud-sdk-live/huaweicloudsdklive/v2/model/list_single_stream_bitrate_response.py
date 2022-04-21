@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSingleStreamBitrateResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListSingleStreamBitrateResponse(SdkResponse):
     }
 
     def __init__(self, bitrate_info_list=None, x_request_id=None):
-        """ListSingleStreamBitrateResponse - a model defined in huaweicloud sdk"""
+        """ListSingleStreamBitrateResponse
+
+        The model defined in huaweicloud sdk
+
+        :param bitrate_info_list: 用量详情。
+        :type bitrate_info_list: list[:class:`huaweicloudsdklive.v2.V2BitrateInfo`]
+        :param x_request_id: 
+        :type x_request_id: str
+        """
         
         super(ListSingleStreamBitrateResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListSingleStreamBitrateResponse(SdkResponse):
         用量详情。
 
         :return: The bitrate_info_list of this ListSingleStreamBitrateResponse.
-        :rtype: list[V2BitrateInfo]
+        :rtype: list[:class:`huaweicloudsdklive.v2.V2BitrateInfo`]
         """
         return self._bitrate_info_list
 
@@ -63,7 +70,7 @@ class ListSingleStreamBitrateResponse(SdkResponse):
         用量详情。
 
         :param bitrate_info_list: The bitrate_info_list of this ListSingleStreamBitrateResponse.
-        :type: list[V2BitrateInfo]
+        :type bitrate_info_list: list[:class:`huaweicloudsdklive.v2.V2BitrateInfo`]
         """
         self._bitrate_info_list = bitrate_info_list
 
@@ -83,7 +90,7 @@ class ListSingleStreamBitrateResponse(SdkResponse):
 
 
         :param x_request_id: The x_request_id of this ListSingleStreamBitrateResponse.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 

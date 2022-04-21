@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MatchFeaturePair:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class MatchFeaturePair:
     }
 
     def __init__(self, user_feature_name=None, item_feature_name=None, weight=None, match_count=None):
-        """MatchFeaturePair - a model defined in huaweicloud sdk"""
+        """MatchFeaturePair
+
+        The model defined in huaweicloud sdk
+
+        :param user_feature_name: 用户特征。
+        :type user_feature_name: str
+        :param item_feature_name: 物品特征。
+        :type item_feature_name: str
+        :param weight: 权重。
+        :type weight: float
+        :param match_count: 匹配个数度量。
+        :type match_count: bool
+        """
         
         
 
@@ -73,7 +84,7 @@ class MatchFeaturePair:
         用户特征。
 
         :param user_feature_name: The user_feature_name of this MatchFeaturePair.
-        :type: str
+        :type user_feature_name: str
         """
         self._user_feature_name = user_feature_name
 
@@ -95,7 +106,7 @@ class MatchFeaturePair:
         物品特征。
 
         :param item_feature_name: The item_feature_name of this MatchFeaturePair.
-        :type: str
+        :type item_feature_name: str
         """
         self._item_feature_name = item_feature_name
 
@@ -117,7 +128,7 @@ class MatchFeaturePair:
         权重。
 
         :param weight: The weight of this MatchFeaturePair.
-        :type: float
+        :type weight: float
         """
         self._weight = weight
 
@@ -139,7 +150,7 @@ class MatchFeaturePair:
         匹配个数度量。
 
         :param match_count: The match_count of this MatchFeaturePair.
-        :type: bool
+        :type match_count: bool
         """
         self._match_count = match_count
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AclBindingBatchFailure:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class AclBindingBatchFailure:
     }
 
     def __init__(self, bind_id=None, error_code=None, error_msg=None, api_id=None, api_name=None):
-        """AclBindingBatchFailure - a model defined in huaweicloud sdk"""
+        """AclBindingBatchFailure
+
+        The model defined in huaweicloud sdk
+
+        :param bind_id: 解除绑定失败的API和ACL绑定关系ID
+        :type bind_id: str
+        :param error_code: 解除绑定失败的错误码
+        :type error_code: str
+        :param error_msg: 解除绑定失败的错误信息
+        :type error_msg: str
+        :param api_id: 解除绑定失败的API的ID
+        :type api_id: str
+        :param api_name: 解除绑定失败的API的名称
+        :type api_name: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class AclBindingBatchFailure:
         解除绑定失败的API和ACL绑定关系ID
 
         :param bind_id: The bind_id of this AclBindingBatchFailure.
-        :type: str
+        :type bind_id: str
         """
         self._bind_id = bind_id
 
@@ -100,7 +113,7 @@ class AclBindingBatchFailure:
         解除绑定失败的错误码
 
         :param error_code: The error_code of this AclBindingBatchFailure.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -122,7 +135,7 @@ class AclBindingBatchFailure:
         解除绑定失败的错误信息
 
         :param error_msg: The error_msg of this AclBindingBatchFailure.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 
@@ -144,7 +157,7 @@ class AclBindingBatchFailure:
         解除绑定失败的API的ID
 
         :param api_id: The api_id of this AclBindingBatchFailure.
-        :type: str
+        :type api_id: str
         """
         self._api_id = api_id
 
@@ -166,7 +179,7 @@ class AclBindingBatchFailure:
         解除绑定失败的API的名称
 
         :param api_name: The api_name of this AclBindingBatchFailure.
-        :type: str
+        :type api_name: str
         """
         self._api_name = api_name
 

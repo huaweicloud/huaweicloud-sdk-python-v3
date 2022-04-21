@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DataBucketQuery:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class DataBucketQuery:
     }
 
     def __init__(self, data_bucket_name=None, search_enabled=None, data_event=None):
-        """DataBucketQuery - a model defined in huaweicloud sdk"""
+        """DataBucketQuery
+
+        The model defined in huaweicloud sdk
+
+        :param data_bucket_name: 标识OBS桶名称。由数字或字母开头，支持小写字母、数字、“-”、“.”，长度为3～63个字符。
+        :type data_bucket_name: str
+        :param search_enabled: 追踪桶日志是否支持搜索。
+        :type search_enabled: bool
+        :param data_event: 数据类追踪器追踪对象的桶名。 - 当启用或者停用数据类追踪器时，该参数为必选。 - 管理类追踪器无此参数。 - 追踪器一旦创建追踪桶无法修改。
+        :type data_event: list[str]
+        """
         
         
 
@@ -68,7 +77,7 @@ class DataBucketQuery:
         标识OBS桶名称。由数字或字母开头，支持小写字母、数字、“-”、“.”，长度为3～63个字符。
 
         :param data_bucket_name: The data_bucket_name of this DataBucketQuery.
-        :type: str
+        :type data_bucket_name: str
         """
         self._data_bucket_name = data_bucket_name
 
@@ -90,7 +99,7 @@ class DataBucketQuery:
         追踪桶日志是否支持搜索。
 
         :param search_enabled: The search_enabled of this DataBucketQuery.
-        :type: bool
+        :type search_enabled: bool
         """
         self._search_enabled = search_enabled
 
@@ -112,7 +121,7 @@ class DataBucketQuery:
         数据类追踪器追踪对象的桶名。 - 当启用或者停用数据类追踪器时，该参数为必选。 - 管理类追踪器无此参数。 - 追踪器一旦创建追踪桶无法修改。
 
         :param data_event: The data_event of this DataBucketQuery.
-        :type: list[str]
+        :type data_event: list[str]
         """
         self._data_event = data_event
 

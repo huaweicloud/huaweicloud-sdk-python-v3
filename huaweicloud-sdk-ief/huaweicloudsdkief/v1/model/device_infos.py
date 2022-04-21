@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeviceInfos:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class DeviceInfos:
     }
 
     def __init__(self, relation=None, comment=None, device_ids=None):
-        """DeviceInfos - a model defined in huaweicloud sdk"""
+        """DeviceInfos
+
+        The model defined in huaweicloud sdk
+
+        :param relation: 设备和节点关系的名称，只允许中文字符、英文字母、数字、下划线、中划线，最大长度64
+        :type relation: str
+        :param comment: 设备和节点关系的描述，最大长度64，不允许^ ~ # $ % &amp; * &lt; &gt; ( ) [ ] { } &#39; \&quot; \\
+        :type comment: str
+        :param device_ids: 设备ID列表
+        :type device_ids: list[str]
+        """
         
         
 
@@ -66,7 +75,7 @@ class DeviceInfos:
         设备和节点关系的名称，只允许中文字符、英文字母、数字、下划线、中划线，最大长度64
 
         :param relation: The relation of this DeviceInfos.
-        :type: str
+        :type relation: str
         """
         self._relation = relation
 
@@ -88,7 +97,7 @@ class DeviceInfos:
         设备和节点关系的描述，最大长度64，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
         :param comment: The comment of this DeviceInfos.
-        :type: str
+        :type comment: str
         """
         self._comment = comment
 
@@ -110,7 +119,7 @@ class DeviceInfos:
         设备ID列表
 
         :param device_ids: The device_ids of this DeviceInfos.
-        :type: list[str]
+        :type device_ids: list[str]
         """
         self._device_ids = device_ids
 

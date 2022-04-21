@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EsMatchInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class EsMatchInfo:
     }
 
     def __init__(self, field_name=None, rule_name=None, rule_id=None, rule_risk_level=None):
-        """EsMatchInfo - a model defined in huaweicloud sdk"""
+        """EsMatchInfo
+
+        The model defined in huaweicloud sdk
+
+        :param field_name: 数据字段名
+        :type field_name: str
+        :param rule_name: 规则名
+        :type rule_name: str
+        :param rule_id: 规则ID
+        :type rule_id: str
+        :param rule_risk_level: 规则风险等级
+        :type rule_risk_level: int
+        """
         
         
 
@@ -73,7 +84,7 @@ class EsMatchInfo:
         数据字段名
 
         :param field_name: The field_name of this EsMatchInfo.
-        :type: str
+        :type field_name: str
         """
         self._field_name = field_name
 
@@ -95,7 +106,7 @@ class EsMatchInfo:
         规则名
 
         :param rule_name: The rule_name of this EsMatchInfo.
-        :type: str
+        :type rule_name: str
         """
         self._rule_name = rule_name
 
@@ -117,7 +128,7 @@ class EsMatchInfo:
         规则ID
 
         :param rule_id: The rule_id of this EsMatchInfo.
-        :type: str
+        :type rule_id: str
         """
         self._rule_id = rule_id
 
@@ -139,7 +150,7 @@ class EsMatchInfo:
         规则风险等级
 
         :param rule_risk_level: The rule_risk_level of this EsMatchInfo.
-        :type: int
+        :type rule_risk_level: int
         """
         self._rule_risk_level = rule_risk_level
 

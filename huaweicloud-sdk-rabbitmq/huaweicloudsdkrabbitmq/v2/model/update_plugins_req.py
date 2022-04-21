@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdatePluginsReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdatePluginsReq:
     }
 
     def __init__(self, enable=None, plugins=None):
-        """UpdatePluginsReq - a model defined in huaweicloud sdk"""
+        """UpdatePluginsReq
+
+        The model defined in huaweicloud sdk
+
+        :param enable: 是否开启改插件。
+        :type enable: bool
+        :param plugins: 插件列表，多个插件中间用“,”隔开。
+        :type plugins: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class UpdatePluginsReq:
         是否开启改插件。
 
         :param enable: The enable of this UpdatePluginsReq.
-        :type: bool
+        :type enable: bool
         """
         self._enable = enable
 
@@ -85,7 +92,7 @@ class UpdatePluginsReq:
         插件列表，多个插件中间用“,”隔开。
 
         :param plugins: The plugins of this UpdatePluginsReq.
-        :type: str
+        :type plugins: str
         """
         self._plugins = plugins
 

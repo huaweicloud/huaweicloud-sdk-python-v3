@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDatabaseResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowDatabaseResponse(SdkResponse):
     }
 
     def __init__(self, database=None):
-        """ShowDatabaseResponse - a model defined in huaweicloud sdk"""
+        """ShowDatabaseResponse
+
+        The model defined in huaweicloud sdk
+
+        :param database: 
+        :type database: :class:`huaweicloudsdkddm.v1.GetDatabaseResponseBean`
+        """
         
         super(ShowDatabaseResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class ShowDatabaseResponse(SdkResponse):
 
 
         :return: The database of this ShowDatabaseResponse.
-        :rtype: GetDatabaseResponseBean
+        :rtype: :class:`huaweicloudsdkddm.v1.GetDatabaseResponseBean`
         """
         return self._database
 
@@ -56,7 +61,7 @@ class ShowDatabaseResponse(SdkResponse):
 
 
         :param database: The database of this ShowDatabaseResponse.
-        :type: GetDatabaseResponseBean
+        :type database: :class:`huaweicloudsdkddm.v1.GetDatabaseResponseBean`
         """
         self._database = database
 

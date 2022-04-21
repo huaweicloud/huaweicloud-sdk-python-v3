@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateTestCaseResultRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateTestCaseResultRequestBody:
     }
 
     def __init__(self, service_id=None, execute_list=None):
-        """UpdateTestCaseResultRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateTestCaseResultRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param service_id: 注册测试类型服务接口返回的服务id
+        :type service_id: int
+        :param execute_list: 测试用例状态信息，数组长度小于等于50
+        :type execute_list: list[:class:`huaweicloudsdkcloudtest.v1.UpdateTestCaseResultBean`]
+        """
         
         
 
@@ -61,7 +68,7 @@ class UpdateTestCaseResultRequestBody:
         注册测试类型服务接口返回的服务id
 
         :param service_id: The service_id of this UpdateTestCaseResultRequestBody.
-        :type: int
+        :type service_id: int
         """
         self._service_id = service_id
 
@@ -72,7 +79,7 @@ class UpdateTestCaseResultRequestBody:
         测试用例状态信息，数组长度小于等于50
 
         :return: The execute_list of this UpdateTestCaseResultRequestBody.
-        :rtype: list[UpdateTestCaseResultBean]
+        :rtype: list[:class:`huaweicloudsdkcloudtest.v1.UpdateTestCaseResultBean`]
         """
         return self._execute_list
 
@@ -83,7 +90,7 @@ class UpdateTestCaseResultRequestBody:
         测试用例状态信息，数组长度小于等于50
 
         :param execute_list: The execute_list of this UpdateTestCaseResultRequestBody.
-        :type: list[UpdateTestCaseResultBean]
+        :type execute_list: list[:class:`huaweicloudsdkcloudtest.v1.UpdateTestCaseResultBean`]
         """
         self._execute_list = execute_list
 

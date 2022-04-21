@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCompositeHostsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListCompositeHostsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, cloud_total=None, premium_total=None, items=None):
-        """ListCompositeHostsResponse - a model defined in huaweicloud sdk"""
+        """ListCompositeHostsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 所有防护域名的数量
+        :type total: int
+        :param cloud_total: 云模式防护域名的数量
+        :type cloud_total: int
+        :param premium_total: 独享防护域名的数量
+        :type premium_total: int
+        :param items: 详细的防护域名信息
+        :type items: list[:class:`huaweicloudsdkwaf.v1.CompositeHostResponse`]
+        """
         
         super(ListCompositeHostsResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class ListCompositeHostsResponse(SdkResponse):
         所有防护域名的数量
 
         :param total: The total of this ListCompositeHostsResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -95,7 +106,7 @@ class ListCompositeHostsResponse(SdkResponse):
         云模式防护域名的数量
 
         :param cloud_total: The cloud_total of this ListCompositeHostsResponse.
-        :type: int
+        :type cloud_total: int
         """
         self._cloud_total = cloud_total
 
@@ -117,7 +128,7 @@ class ListCompositeHostsResponse(SdkResponse):
         独享防护域名的数量
 
         :param premium_total: The premium_total of this ListCompositeHostsResponse.
-        :type: int
+        :type premium_total: int
         """
         self._premium_total = premium_total
 
@@ -128,7 +139,7 @@ class ListCompositeHostsResponse(SdkResponse):
         详细的防护域名信息
 
         :return: The items of this ListCompositeHostsResponse.
-        :rtype: list[CompositeHostResponse]
+        :rtype: list[:class:`huaweicloudsdkwaf.v1.CompositeHostResponse`]
         """
         return self._items
 
@@ -139,7 +150,7 @@ class ListCompositeHostsResponse(SdkResponse):
         详细的防护域名信息
 
         :param items: The items of this ListCompositeHostsResponse.
-        :type: list[CompositeHostResponse]
+        :type items: list[:class:`huaweicloudsdkwaf.v1.CompositeHostResponse`]
         """
         self._items = items
 

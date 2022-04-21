@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StartKibanaPublicRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class StartKibanaPublicRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """StartKibanaPublicRequest - a model defined in huaweicloud sdk"""
+        """StartKibanaPublicRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 指定待开启的集群ID。
+        :type cluster_id: str
+        :param body: Body of the StartKibanaPublicRequest
+        :type body: :class:`huaweicloudsdkcss.v1.StartKibanaPublicReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class StartKibanaPublicRequest:
         指定待开启的集群ID。
 
         :param cluster_id: The cluster_id of this StartKibanaPublicRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -72,7 +79,7 @@ class StartKibanaPublicRequest:
 
 
         :return: The body of this StartKibanaPublicRequest.
-        :rtype: StartKibanaPublicReq
+        :rtype: :class:`huaweicloudsdkcss.v1.StartKibanaPublicReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class StartKibanaPublicRequest:
 
 
         :param body: The body of this StartKibanaPublicRequest.
-        :type: StartKibanaPublicReq
+        :type body: :class:`huaweicloudsdkcss.v1.StartKibanaPublicReq`
         """
         self._body = body
 

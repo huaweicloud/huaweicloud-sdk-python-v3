@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ModifyReadAndWriteStrategyReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ModifyReadAndWriteStrategyReq:
     }
 
     def __init__(self, read_weight=None):
-        """ModifyReadAndWriteStrategyReq - a model defined in huaweicloud sdk"""
+        """ModifyReadAndWriteStrategyReq
+
+        The model defined in huaweicloud sdk
+
+        :param read_weight: 主数据库实例与只读数据库实例的读权重集合。
+        :type read_weight: object
+        """
         
         
 
@@ -57,7 +62,7 @@ class ModifyReadAndWriteStrategyReq:
         主数据库实例与只读数据库实例的读权重集合。
 
         :param read_weight: The read_weight of this ModifyReadAndWriteStrategyReq.
-        :type: object
+        :type read_weight: object
         """
         self._read_weight = read_weight
 

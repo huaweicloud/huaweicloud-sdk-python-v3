@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateGraphResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CreateGraphResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, error_message=None, error_code=None):
-        """CreateGraphResponse - a model defined in huaweicloud sdk"""
+        """CreateGraphResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 图ID。
+        :type id: str
+        :param name: 图名称。
+        :type name: str
+        :param error_message: 系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误信息。
+        :type error_message: str
+        :param error_code: 系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误码。
+        :type error_code: str
+        """
         
         super(CreateGraphResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class CreateGraphResponse(SdkResponse):
         图ID。
 
         :param id: The id of this CreateGraphResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -95,7 +106,7 @@ class CreateGraphResponse(SdkResponse):
         图名称。
 
         :param name: The name of this CreateGraphResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -117,7 +128,7 @@ class CreateGraphResponse(SdkResponse):
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误信息。
 
         :param error_message: The error_message of this CreateGraphResponse.
-        :type: str
+        :type error_message: str
         """
         self._error_message = error_message
 
@@ -139,7 +150,7 @@ class CreateGraphResponse(SdkResponse):
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误码。
 
         :param error_code: The error_code of this CreateGraphResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 

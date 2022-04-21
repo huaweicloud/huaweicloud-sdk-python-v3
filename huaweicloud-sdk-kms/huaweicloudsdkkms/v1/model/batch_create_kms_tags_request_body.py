@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchCreateKmsTagsRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class BatchCreateKmsTagsRequestBody:
     }
 
     def __init__(self, tags=None, action=None, sequence=None):
-        """BatchCreateKmsTagsRequestBody - a model defined in huaweicloud sdk"""
+        """BatchCreateKmsTagsRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param tags: 标签列表，key和value键值对的集合。
+        :type tags: list[:class:`huaweicloudsdkkms.v1.TagItem`]
+        :param action: 操作标识： 仅限于“create”和“delete”。
+        :type action: str
+        :param sequence: 请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
+        :type sequence: str
+        """
         
         
 
@@ -57,7 +66,7 @@ class BatchCreateKmsTagsRequestBody:
         标签列表，key和value键值对的集合。
 
         :return: The tags of this BatchCreateKmsTagsRequestBody.
-        :rtype: list[TagItem]
+        :rtype: list[:class:`huaweicloudsdkkms.v1.TagItem`]
         """
         return self._tags
 
@@ -68,7 +77,7 @@ class BatchCreateKmsTagsRequestBody:
         标签列表，key和value键值对的集合。
 
         :param tags: The tags of this BatchCreateKmsTagsRequestBody.
-        :type: list[TagItem]
+        :type tags: list[:class:`huaweicloudsdkkms.v1.TagItem`]
         """
         self._tags = tags
 
@@ -90,7 +99,7 @@ class BatchCreateKmsTagsRequestBody:
         操作标识： 仅限于“create”和“delete”。
 
         :param action: The action of this BatchCreateKmsTagsRequestBody.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -112,7 +121,7 @@ class BatchCreateKmsTagsRequestBody:
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
 
         :param sequence: The sequence of this BatchCreateKmsTagsRequestBody.
-        :type: str
+        :type sequence: str
         """
         self._sequence = sequence
 

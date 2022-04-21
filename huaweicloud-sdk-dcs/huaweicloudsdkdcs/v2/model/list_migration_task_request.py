@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListMigrationTaskRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListMigrationTaskRequest:
     }
 
     def __init__(self, offset=None, limit=None, name=None):
-        """ListMigrationTaskRequest - a model defined in huaweicloud sdk"""
+        """ListMigrationTaskRequest
+
+        The model defined in huaweicloud sdk
+
+        :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0。
+        :type offset: int
+        :param limit: 每页显示的条目数量。
+        :type limit: int
+        :param name: 迁移任务名称。
+        :type name: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class ListMigrationTaskRequest:
         偏移量，表示从此偏移量开始查询， offset大于等于0。
 
         :param offset: The offset of this ListMigrationTaskRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -90,7 +99,7 @@ class ListMigrationTaskRequest:
         每页显示的条目数量。
 
         :param limit: The limit of this ListMigrationTaskRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -112,7 +121,7 @@ class ListMigrationTaskRequest:
         迁移任务名称。
 
         :param name: The name of this ListMigrationTaskRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 

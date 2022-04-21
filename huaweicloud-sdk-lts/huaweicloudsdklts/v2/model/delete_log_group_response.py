@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteLogGroupResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteLogGroupResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """DeleteLogGroupResponse - a model defined in huaweicloud sdk"""
+        """DeleteLogGroupResponse
+
+        The model defined in huaweicloud sdk
+
+        :param body: 
+        :type body: str
+        """
         
         super(DeleteLogGroupResponse, self).__init__()
 
@@ -56,7 +61,7 @@ class DeleteLogGroupResponse(SdkResponse):
 
 
         :param body: The body of this DeleteLogGroupResponse.
-        :type: str
+        :type body: str
         """
         self._body = body
 

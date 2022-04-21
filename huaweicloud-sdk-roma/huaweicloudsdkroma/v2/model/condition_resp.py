@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ConditionResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ConditionResp:
     }
 
     def __init__(self, req_param_name=None, sys_param_name=None, condition_type=None, condition_origin=None, condition_value=None, id=None, req_param_id=None, req_param_location=None):
-        """ConditionResp - a model defined in huaweicloud sdk"""
+        """ConditionResp
+
+        The model defined in huaweicloud sdk
+
+        :param req_param_name: 关联的请求参数对象名称。策略类型为param时必选
+        :type req_param_name: str
+        :param sys_param_name: 系统参数名称。策略类型为system时必选。支持以下系统参数 - req_path：请求路径。如 /a/b - req_method：请求方法。如 GET 
+        :type sys_param_name: str
+        :param condition_type: 策略条件 - exact：绝对匹配 - enum：枚举 - pattern：正则  策略类型为param时必选 
+        :type condition_type: str
+        :param condition_origin: 策略类型 - param：参数 - source：源IP - system：系统参数
+        :type condition_origin: str
+        :param condition_value: 策略值
+        :type condition_value: str
+        :param id: 编号
+        :type id: str
+        :param req_param_id: 关联的请求参数对象编号
+        :type req_param_id: str
+        :param req_param_location: 关联的请求参数对象位置
+        :type req_param_location: str
+        """
         
         
 
@@ -91,7 +110,7 @@ class ConditionResp:
         关联的请求参数对象名称。策略类型为param时必选
 
         :param req_param_name: The req_param_name of this ConditionResp.
-        :type: str
+        :type req_param_name: str
         """
         self._req_param_name = req_param_name
 
@@ -113,7 +132,7 @@ class ConditionResp:
         系统参数名称。策略类型为system时必选。支持以下系统参数 - req_path：请求路径。如 /a/b - req_method：请求方法。如 GET 
 
         :param sys_param_name: The sys_param_name of this ConditionResp.
-        :type: str
+        :type sys_param_name: str
         """
         self._sys_param_name = sys_param_name
 
@@ -135,7 +154,7 @@ class ConditionResp:
         策略条件 - exact：绝对匹配 - enum：枚举 - pattern：正则  策略类型为param时必选 
 
         :param condition_type: The condition_type of this ConditionResp.
-        :type: str
+        :type condition_type: str
         """
         self._condition_type = condition_type
 
@@ -157,7 +176,7 @@ class ConditionResp:
         策略类型 - param：参数 - source：源IP - system：系统参数
 
         :param condition_origin: The condition_origin of this ConditionResp.
-        :type: str
+        :type condition_origin: str
         """
         self._condition_origin = condition_origin
 
@@ -179,7 +198,7 @@ class ConditionResp:
         策略值
 
         :param condition_value: The condition_value of this ConditionResp.
-        :type: str
+        :type condition_value: str
         """
         self._condition_value = condition_value
 
@@ -201,7 +220,7 @@ class ConditionResp:
         编号
 
         :param id: The id of this ConditionResp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -223,7 +242,7 @@ class ConditionResp:
         关联的请求参数对象编号
 
         :param req_param_id: The req_param_id of this ConditionResp.
-        :type: str
+        :type req_param_id: str
         """
         self._req_param_id = req_param_id
 
@@ -245,7 +264,7 @@ class ConditionResp:
         关联的请求参数对象位置
 
         :param req_param_location: The req_param_location of this ConditionResp.
-        :type: str
+        :type req_param_location: str
         """
         self._req_param_location = req_param_location
 

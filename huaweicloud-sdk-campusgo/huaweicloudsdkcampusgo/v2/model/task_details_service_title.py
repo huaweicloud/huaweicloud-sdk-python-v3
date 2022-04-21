@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TaskDetailsServiceTitle:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class TaskDetailsServiceTitle:
     }
 
     def __init__(self, zh=None, en=None):
-        """TaskDetailsServiceTitle - a model defined in huaweicloud sdk"""
+        """TaskDetailsServiceTitle
+
+        The model defined in huaweicloud sdk
+
+        :param zh: 作业对应服务的中文标题
+        :type zh: str
+        :param en: 作业对应服务的英文标题
+        :type en: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class TaskDetailsServiceTitle:
         作业对应服务的中文标题
 
         :param zh: The zh of this TaskDetailsServiceTitle.
-        :type: str
+        :type zh: str
         """
         self._zh = zh
 
@@ -85,7 +92,7 @@ class TaskDetailsServiceTitle:
         作业对应服务的英文标题
 
         :param en: The en of this TaskDetailsServiceTitle.
-        :type: str
+        :type en: str
         """
         self._en = en
 

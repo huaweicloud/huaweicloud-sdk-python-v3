@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListServicesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class ListServicesRequest:
     }
 
     def __init__(self, instance_id=None, limit=None, service_id=None, service_name=None, product_template_id=None, product_id=None, created_user_name=None, created_date_start=None, created_date_end=None, offset=None):
-        """ListServicesRequest - a model defined in huaweicloud sdk"""
+        """ListServicesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param limit: 每页显示条目数量，最大数量999，超过999后只返回999
+        :type limit: int
+        :param service_id: 服务ID
+        :type service_id: int
+        :param service_name: 服务名称
+        :type service_name: str
+        :param product_template_id: 归属产品模板ID，product_template_id和product_id二选一
+        :type product_template_id: int
+        :param product_id: 归属产品ID，product_template_id和product_id二选一
+        :type product_id: int
+        :param created_user_name: 创建用户名
+        :type created_user_name: str
+        :param created_date_start: 创建时间起始，格式timestamp(ms)，使用UTC时区
+        :type created_date_start: int
+        :param created_date_end: 创建时间截止，格式timestamp(ms)。使用UTC时区
+        :type created_date_end: int
+        :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0
+        :type offset: int
+        """
         
         
 
@@ -102,7 +125,7 @@ class ListServicesRequest:
         实例ID
 
         :param instance_id: The instance_id of this ListServicesRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -124,7 +147,7 @@ class ListServicesRequest:
         每页显示条目数量，最大数量999，超过999后只返回999
 
         :param limit: The limit of this ListServicesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -146,7 +169,7 @@ class ListServicesRequest:
         服务ID
 
         :param service_id: The service_id of this ListServicesRequest.
-        :type: int
+        :type service_id: int
         """
         self._service_id = service_id
 
@@ -168,7 +191,7 @@ class ListServicesRequest:
         服务名称
 
         :param service_name: The service_name of this ListServicesRequest.
-        :type: str
+        :type service_name: str
         """
         self._service_name = service_name
 
@@ -190,7 +213,7 @@ class ListServicesRequest:
         归属产品模板ID，product_template_id和product_id二选一
 
         :param product_template_id: The product_template_id of this ListServicesRequest.
-        :type: int
+        :type product_template_id: int
         """
         self._product_template_id = product_template_id
 
@@ -212,7 +235,7 @@ class ListServicesRequest:
         归属产品ID，product_template_id和product_id二选一
 
         :param product_id: The product_id of this ListServicesRequest.
-        :type: int
+        :type product_id: int
         """
         self._product_id = product_id
 
@@ -234,7 +257,7 @@ class ListServicesRequest:
         创建用户名
 
         :param created_user_name: The created_user_name of this ListServicesRequest.
-        :type: str
+        :type created_user_name: str
         """
         self._created_user_name = created_user_name
 
@@ -256,7 +279,7 @@ class ListServicesRequest:
         创建时间起始，格式timestamp(ms)，使用UTC时区
 
         :param created_date_start: The created_date_start of this ListServicesRequest.
-        :type: int
+        :type created_date_start: int
         """
         self._created_date_start = created_date_start
 
@@ -278,7 +301,7 @@ class ListServicesRequest:
         创建时间截止，格式timestamp(ms)。使用UTC时区
 
         :param created_date_end: The created_date_end of this ListServicesRequest.
-        :type: int
+        :type created_date_end: int
         """
         self._created_date_end = created_date_end
 
@@ -300,7 +323,7 @@ class ListServicesRequest:
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
         :param offset: The offset of this ListServicesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 

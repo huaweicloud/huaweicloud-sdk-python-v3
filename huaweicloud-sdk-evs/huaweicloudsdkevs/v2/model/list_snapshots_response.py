@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSnapshotsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListSnapshotsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, snapshots=None, snapshots_links=None):
-        """ListSnapshotsResponse - a model defined in huaweicloud sdk"""
+        """ListSnapshotsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 快照的总数量，不受limi参数的影响。
+        :type count: int
+        :param snapshots: 快照信息。
+        :type snapshots: list[:class:`huaweicloudsdkevs.v2.SnapshotList`]
+        :param snapshots_links: 云硬盘快照列表查询位置标记。当查询时指定limit时会返回该字段，返回该字段表示本次查询只查出了部分云硬盘快照信息。
+        :type snapshots_links: list[:class:`huaweicloudsdkevs.v2.Link`]
+        """
         
         super(ListSnapshotsResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListSnapshotsResponse(SdkResponse):
         快照的总数量，不受limi参数的影响。
 
         :param count: The count of this ListSnapshotsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -79,7 +88,7 @@ class ListSnapshotsResponse(SdkResponse):
         快照信息。
 
         :return: The snapshots of this ListSnapshotsResponse.
-        :rtype: list[SnapshotList]
+        :rtype: list[:class:`huaweicloudsdkevs.v2.SnapshotList`]
         """
         return self._snapshots
 
@@ -90,7 +99,7 @@ class ListSnapshotsResponse(SdkResponse):
         快照信息。
 
         :param snapshots: The snapshots of this ListSnapshotsResponse.
-        :type: list[SnapshotList]
+        :type snapshots: list[:class:`huaweicloudsdkevs.v2.SnapshotList`]
         """
         self._snapshots = snapshots
 
@@ -101,7 +110,7 @@ class ListSnapshotsResponse(SdkResponse):
         云硬盘快照列表查询位置标记。当查询时指定limit时会返回该字段，返回该字段表示本次查询只查出了部分云硬盘快照信息。
 
         :return: The snapshots_links of this ListSnapshotsResponse.
-        :rtype: list[Link]
+        :rtype: list[:class:`huaweicloudsdkevs.v2.Link`]
         """
         return self._snapshots_links
 
@@ -112,7 +121,7 @@ class ListSnapshotsResponse(SdkResponse):
         云硬盘快照列表查询位置标记。当查询时指定limit时会返回该字段，返回该字段表示本次查询只查出了部分云硬盘快照信息。
 
         :param snapshots_links: The snapshots_links of this ListSnapshotsResponse.
-        :type: list[Link]
+        :type snapshots_links: list[:class:`huaweicloudsdkevs.v2.Link`]
         """
         self._snapshots_links = snapshots_links
 

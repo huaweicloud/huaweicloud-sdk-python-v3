@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowInstanceUsersResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowInstanceUsersResponse(SdkResponse):
     }
 
     def __init__(self, users=None):
-        """ShowInstanceUsersResponse - a model defined in huaweicloud sdk"""
+        """ShowInstanceUsersResponse
+
+        The model defined in huaweicloud sdk
+
+        :param users: 用户列表。
+        :type users: list[:class:`huaweicloudsdkkafka.v2.ShowInstanceUsersEntity`]
+        """
         
         super(ShowInstanceUsersResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ShowInstanceUsersResponse(SdkResponse):
         用户列表。
 
         :return: The users of this ShowInstanceUsersResponse.
-        :rtype: list[ShowInstanceUsersEntity]
+        :rtype: list[:class:`huaweicloudsdkkafka.v2.ShowInstanceUsersEntity`]
         """
         return self._users
 
@@ -58,7 +63,7 @@ class ShowInstanceUsersResponse(SdkResponse):
         用户列表。
 
         :param users: The users of this ShowInstanceUsersResponse.
-        :type: list[ShowInstanceUsersEntity]
+        :type users: list[:class:`huaweicloudsdkkafka.v2.ShowInstanceUsersEntity`]
         """
         self._users = users
 

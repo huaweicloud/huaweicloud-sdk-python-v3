@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AgencyTokenIdentity:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AgencyTokenIdentity:
     }
 
     def __init__(self, methods=None, assume_role=None):
-        """AgencyTokenIdentity - a model defined in huaweicloud sdk"""
+        """AgencyTokenIdentity
+
+        The model defined in huaweicloud sdk
+
+        :param methods: token的获取方式，该字段内容为[\&quot;assume_role\&quot;]。
+        :type methods: list[str]
+        :param assume_role: 
+        :type assume_role: :class:`huaweicloudsdkiam.v3.AgencyTokenAssumerole`
+        """
         
         
 
@@ -61,7 +68,7 @@ class AgencyTokenIdentity:
         token的获取方式，该字段内容为[\"assume_role\"]。
 
         :param methods: The methods of this AgencyTokenIdentity.
-        :type: list[str]
+        :type methods: list[str]
         """
         self._methods = methods
 
@@ -71,7 +78,7 @@ class AgencyTokenIdentity:
 
 
         :return: The assume_role of this AgencyTokenIdentity.
-        :rtype: AgencyTokenAssumerole
+        :rtype: :class:`huaweicloudsdkiam.v3.AgencyTokenAssumerole`
         """
         return self._assume_role
 
@@ -81,7 +88,7 @@ class AgencyTokenIdentity:
 
 
         :param assume_role: The assume_role of this AgencyTokenIdentity.
-        :type: AgencyTokenAssumerole
+        :type assume_role: :class:`huaweicloudsdkiam.v3.AgencyTokenAssumerole`
         """
         self._assume_role = assume_role
 

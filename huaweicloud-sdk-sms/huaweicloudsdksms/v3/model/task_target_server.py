@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TaskTargetServer:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class TaskTargetServer:
     }
 
     def __init__(self, id=None, vm_id=None, name=None, ip=None, os_type=None, os_version=None, system_dir=None, disks=None, volume_groups=None, btrfs_list=None, image_disk_id=None, cutovered_snapshot_ids=None):
-        """TaskTargetServer - a model defined in huaweicloud sdk"""
+        """TaskTargetServer
+
+        The model defined in huaweicloud sdk
+
+        :param id: 目的端在SMS数据库中的ID
+        :type id: str
+        :param vm_id: 目的端服务器ID，自动创建虚拟机不需要这个参数
+        :type vm_id: str
+        :param name: 目的端服务器的名称
+        :type name: str
+        :param ip: 目的端服务器ip
+        :type ip: str
+        :param os_type: 源端服务器的OS类型，分为Windows和Linux，注册必选，更新非必选
+        :type os_type: str
+        :param os_version: 操作系统版本，注册必选，更新非必选
+        :type os_version: str
+        :param system_dir: Windows必选，系统目录
+        :type system_dir: str
+        :param disks: 目的端磁盘信息，一般和源端保持一致
+        :type disks: list[:class:`huaweicloudsdksms.v3.TargetDisk`]
+        :param volume_groups: lvm信息，一般和源端保持一致
+        :type volume_groups: list[:class:`huaweicloudsdksms.v3.VolumeGroups`]
+        :param btrfs_list: Linux 必选，源端的Btrfs信息。如果源端不存在Btrfs，则为[]
+        :type btrfs_list: list[str]
+        :param image_disk_id: 目的端代理镜像磁盘id
+        :type image_disk_id: str
+        :param cutovered_snapshot_ids: 目的端回滚快照id
+        :type cutovered_snapshot_ids: str
+        """
         
         
 
@@ -112,7 +139,7 @@ class TaskTargetServer:
         目的端在SMS数据库中的ID
 
         :param id: The id of this TaskTargetServer.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -134,7 +161,7 @@ class TaskTargetServer:
         目的端服务器ID，自动创建虚拟机不需要这个参数
 
         :param vm_id: The vm_id of this TaskTargetServer.
-        :type: str
+        :type vm_id: str
         """
         self._vm_id = vm_id
 
@@ -156,7 +183,7 @@ class TaskTargetServer:
         目的端服务器的名称
 
         :param name: The name of this TaskTargetServer.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -178,7 +205,7 @@ class TaskTargetServer:
         目的端服务器ip
 
         :param ip: The ip of this TaskTargetServer.
-        :type: str
+        :type ip: str
         """
         self._ip = ip
 
@@ -200,7 +227,7 @@ class TaskTargetServer:
         源端服务器的OS类型，分为Windows和Linux，注册必选，更新非必选
 
         :param os_type: The os_type of this TaskTargetServer.
-        :type: str
+        :type os_type: str
         """
         self._os_type = os_type
 
@@ -222,7 +249,7 @@ class TaskTargetServer:
         操作系统版本，注册必选，更新非必选
 
         :param os_version: The os_version of this TaskTargetServer.
-        :type: str
+        :type os_version: str
         """
         self._os_version = os_version
 
@@ -244,7 +271,7 @@ class TaskTargetServer:
         Windows必选，系统目录
 
         :param system_dir: The system_dir of this TaskTargetServer.
-        :type: str
+        :type system_dir: str
         """
         self._system_dir = system_dir
 
@@ -255,7 +282,7 @@ class TaskTargetServer:
         目的端磁盘信息，一般和源端保持一致
 
         :return: The disks of this TaskTargetServer.
-        :rtype: list[TargetDisk]
+        :rtype: list[:class:`huaweicloudsdksms.v3.TargetDisk`]
         """
         return self._disks
 
@@ -266,7 +293,7 @@ class TaskTargetServer:
         目的端磁盘信息，一般和源端保持一致
 
         :param disks: The disks of this TaskTargetServer.
-        :type: list[TargetDisk]
+        :type disks: list[:class:`huaweicloudsdksms.v3.TargetDisk`]
         """
         self._disks = disks
 
@@ -277,7 +304,7 @@ class TaskTargetServer:
         lvm信息，一般和源端保持一致
 
         :return: The volume_groups of this TaskTargetServer.
-        :rtype: list[VolumeGroups]
+        :rtype: list[:class:`huaweicloudsdksms.v3.VolumeGroups`]
         """
         return self._volume_groups
 
@@ -288,7 +315,7 @@ class TaskTargetServer:
         lvm信息，一般和源端保持一致
 
         :param volume_groups: The volume_groups of this TaskTargetServer.
-        :type: list[VolumeGroups]
+        :type volume_groups: list[:class:`huaweicloudsdksms.v3.VolumeGroups`]
         """
         self._volume_groups = volume_groups
 
@@ -310,7 +337,7 @@ class TaskTargetServer:
         Linux 必选，源端的Btrfs信息。如果源端不存在Btrfs，则为[]
 
         :param btrfs_list: The btrfs_list of this TaskTargetServer.
-        :type: list[str]
+        :type btrfs_list: list[str]
         """
         self._btrfs_list = btrfs_list
 
@@ -332,7 +359,7 @@ class TaskTargetServer:
         目的端代理镜像磁盘id
 
         :param image_disk_id: The image_disk_id of this TaskTargetServer.
-        :type: str
+        :type image_disk_id: str
         """
         self._image_disk_id = image_disk_id
 
@@ -354,7 +381,7 @@ class TaskTargetServer:
         目的端回滚快照id
 
         :param cutovered_snapshot_ids: The cutovered_snapshot_ids of this TaskTargetServer.
-        :type: str
+        :type cutovered_snapshot_ids: str
         """
         self._cutovered_snapshot_ids = cutovered_snapshot_ids
 

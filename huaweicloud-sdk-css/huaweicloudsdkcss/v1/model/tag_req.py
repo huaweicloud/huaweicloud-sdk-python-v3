@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TagReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class TagReq:
     }
 
     def __init__(self, tag=None):
-        """TagReq - a model defined in huaweicloud sdk"""
+        """TagReq
+
+        The model defined in huaweicloud sdk
+
+        :param tag: 
+        :type tag: :class:`huaweicloudsdkcss.v1.Tag`
+        """
         
         
 
@@ -45,7 +50,7 @@ class TagReq:
 
 
         :return: The tag of this TagReq.
-        :rtype: Tag
+        :rtype: :class:`huaweicloudsdkcss.v1.Tag`
         """
         return self._tag
 
@@ -55,7 +60,7 @@ class TagReq:
 
 
         :param tag: The tag of this TagReq.
-        :type: Tag
+        :type tag: :class:`huaweicloudsdkcss.v1.Tag`
         """
         self._tag = tag
 

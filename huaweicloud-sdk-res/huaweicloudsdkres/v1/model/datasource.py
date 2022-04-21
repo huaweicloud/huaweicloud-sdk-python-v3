@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Datasource:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class Datasource:
     }
 
     def __init__(self, datasource_name=None, workspace_id=None, datasource_id=None, status=None, created_at=None):
-        """Datasource - a model defined in huaweicloud sdk"""
+        """Datasource
+
+        The model defined in huaweicloud sdk
+
+        :param datasource_name: 数据源名称。
+        :type datasource_name: str
+        :param workspace_id: 工作空间id。
+        :type workspace_id: str
+        :param datasource_id: 数据源id。
+        :type datasource_id: str
+        :param status: 状态。
+        :type status: str
+        :param created_at: 创建时间。
+        :type created_at: int
+        """
         
         
 
@@ -76,7 +89,7 @@ class Datasource:
         数据源名称。
 
         :param datasource_name: The datasource_name of this Datasource.
-        :type: str
+        :type datasource_name: str
         """
         self._datasource_name = datasource_name
 
@@ -98,7 +111,7 @@ class Datasource:
         工作空间id。
 
         :param workspace_id: The workspace_id of this Datasource.
-        :type: str
+        :type workspace_id: str
         """
         self._workspace_id = workspace_id
 
@@ -120,7 +133,7 @@ class Datasource:
         数据源id。
 
         :param datasource_id: The datasource_id of this Datasource.
-        :type: str
+        :type datasource_id: str
         """
         self._datasource_id = datasource_id
 
@@ -142,7 +155,7 @@ class Datasource:
         状态。
 
         :param status: The status of this Datasource.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -164,7 +177,7 @@ class Datasource:
         创建时间。
 
         :param created_at: The created_at of this Datasource.
-        :type: int
+        :type created_at: int
         """
         self._created_at = created_at
 

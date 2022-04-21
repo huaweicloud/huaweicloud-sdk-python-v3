@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ContentInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -58,7 +57,41 @@ class ContentInfo:
     }
 
     def __init__(self, body_type=None, bodys=None, check_end_length=None, check_end_str=None, check_end_type=None, connect_timeout=None, connect_type=None, headers=None, http_version=None, method=None, name=None, protocol_type=None, return_timeout=None, return_timeout_param=None, url=None):
-        """ContentInfo - a model defined in huaweicloud sdk"""
+        """ContentInfo
+
+        The model defined in huaweicloud sdk
+
+        :param body_type: body_type
+        :type body_type: int
+        :param bodys: bodys
+        :type bodys: str
+        :param check_end_length: check_end_length
+        :type check_end_length: str
+        :param check_end_str: check_end_str
+        :type check_end_str: str
+        :param check_end_type: check_end_type
+        :type check_end_type: str
+        :param connect_timeout: connect_timeout
+        :type connect_timeout: int
+        :param connect_type: connect_type
+        :type connect_type: int
+        :param headers: headers
+        :type headers: list[:class:`huaweicloudsdkcpts.v1.ContentHeader`]
+        :param http_version: http_version
+        :type http_version: str
+        :param method: method
+        :type method: str
+        :param name: name
+        :type name: str
+        :param protocol_type: protocol_type
+        :type protocol_type: int
+        :param return_timeout: return_timeout
+        :type return_timeout: int
+        :param return_timeout_param: return_timeout_param
+        :type return_timeout_param: str
+        :param url: url
+        :type url: str
+        """
         
         
 
@@ -128,7 +161,7 @@ class ContentInfo:
         body_type
 
         :param body_type: The body_type of this ContentInfo.
-        :type: int
+        :type body_type: int
         """
         self._body_type = body_type
 
@@ -150,7 +183,7 @@ class ContentInfo:
         bodys
 
         :param bodys: The bodys of this ContentInfo.
-        :type: str
+        :type bodys: str
         """
         self._bodys = bodys
 
@@ -172,7 +205,7 @@ class ContentInfo:
         check_end_length
 
         :param check_end_length: The check_end_length of this ContentInfo.
-        :type: str
+        :type check_end_length: str
         """
         self._check_end_length = check_end_length
 
@@ -194,7 +227,7 @@ class ContentInfo:
         check_end_str
 
         :param check_end_str: The check_end_str of this ContentInfo.
-        :type: str
+        :type check_end_str: str
         """
         self._check_end_str = check_end_str
 
@@ -216,7 +249,7 @@ class ContentInfo:
         check_end_type
 
         :param check_end_type: The check_end_type of this ContentInfo.
-        :type: str
+        :type check_end_type: str
         """
         self._check_end_type = check_end_type
 
@@ -238,7 +271,7 @@ class ContentInfo:
         connect_timeout
 
         :param connect_timeout: The connect_timeout of this ContentInfo.
-        :type: int
+        :type connect_timeout: int
         """
         self._connect_timeout = connect_timeout
 
@@ -260,7 +293,7 @@ class ContentInfo:
         connect_type
 
         :param connect_type: The connect_type of this ContentInfo.
-        :type: int
+        :type connect_type: int
         """
         self._connect_type = connect_type
 
@@ -271,7 +304,7 @@ class ContentInfo:
         headers
 
         :return: The headers of this ContentInfo.
-        :rtype: list[ContentHeader]
+        :rtype: list[:class:`huaweicloudsdkcpts.v1.ContentHeader`]
         """
         return self._headers
 
@@ -282,7 +315,7 @@ class ContentInfo:
         headers
 
         :param headers: The headers of this ContentInfo.
-        :type: list[ContentHeader]
+        :type headers: list[:class:`huaweicloudsdkcpts.v1.ContentHeader`]
         """
         self._headers = headers
 
@@ -304,7 +337,7 @@ class ContentInfo:
         http_version
 
         :param http_version: The http_version of this ContentInfo.
-        :type: str
+        :type http_version: str
         """
         self._http_version = http_version
 
@@ -326,7 +359,7 @@ class ContentInfo:
         method
 
         :param method: The method of this ContentInfo.
-        :type: str
+        :type method: str
         """
         self._method = method
 
@@ -348,7 +381,7 @@ class ContentInfo:
         name
 
         :param name: The name of this ContentInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -370,7 +403,7 @@ class ContentInfo:
         protocol_type
 
         :param protocol_type: The protocol_type of this ContentInfo.
-        :type: int
+        :type protocol_type: int
         """
         self._protocol_type = protocol_type
 
@@ -392,7 +425,7 @@ class ContentInfo:
         return_timeout
 
         :param return_timeout: The return_timeout of this ContentInfo.
-        :type: int
+        :type return_timeout: int
         """
         self._return_timeout = return_timeout
 
@@ -414,7 +447,7 @@ class ContentInfo:
         return_timeout_param
 
         :param return_timeout_param: The return_timeout_param of this ContentInfo.
-        :type: str
+        :type return_timeout_param: str
         """
         self._return_timeout_param = return_timeout_param
 
@@ -436,7 +469,7 @@ class ContentInfo:
         url
 
         :param url: The url of this ContentInfo.
-        :type: str
+        :type url: str
         """
         self._url = url
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListHostGroupsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ListHostGroupsRequest:
     }
 
     def __init__(self, project_id=None, region_name=None, os=None, offset=None, limit=None, name=None, sort_key=None, sort_dir=None):
-        """ListHostGroupsRequest - a model defined in huaweicloud sdk"""
+        """ListHostGroupsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: devcloud创建的项目id
+        :type project_id: str
+        :param region_name: 局点信息
+        :type region_name: str
+        :param os: 操作系统：windows|linux
+        :type os: str
+        :param offset: 偏移量,表示从此偏移量开始查询,offset大于等于0
+        :type offset: int
+        :param limit: 每页显示的条目数量，默认为1000
+        :type limit: int
+        :param name: 主机组名
+        :type name: str
+        :param sort_key: 排序字段：nickName|NAME|OWNER_NAME|CREATE_TIME|name|owner_name|create_time，不传使用默认排序
+        :type sort_key: str
+        :param sort_dir: 排序方式：DESC、ASC，默认为DESC
+        :type sort_dir: str
+        """
         
         
 
@@ -92,7 +111,7 @@ class ListHostGroupsRequest:
         devcloud创建的项目id
 
         :param project_id: The project_id of this ListHostGroupsRequest.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -114,7 +133,7 @@ class ListHostGroupsRequest:
         局点信息
 
         :param region_name: The region_name of this ListHostGroupsRequest.
-        :type: str
+        :type region_name: str
         """
         self._region_name = region_name
 
@@ -136,7 +155,7 @@ class ListHostGroupsRequest:
         操作系统：windows|linux
 
         :param os: The os of this ListHostGroupsRequest.
-        :type: str
+        :type os: str
         """
         self._os = os
 
@@ -158,7 +177,7 @@ class ListHostGroupsRequest:
         偏移量,表示从此偏移量开始查询,offset大于等于0
 
         :param offset: The offset of this ListHostGroupsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -180,7 +199,7 @@ class ListHostGroupsRequest:
         每页显示的条目数量，默认为1000
 
         :param limit: The limit of this ListHostGroupsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -202,7 +221,7 @@ class ListHostGroupsRequest:
         主机组名
 
         :param name: The name of this ListHostGroupsRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -224,7 +243,7 @@ class ListHostGroupsRequest:
         排序字段：nickName|NAME|OWNER_NAME|CREATE_TIME|name|owner_name|create_time，不传使用默认排序
 
         :param sort_key: The sort_key of this ListHostGroupsRequest.
-        :type: str
+        :type sort_key: str
         """
         self._sort_key = sort_key
 
@@ -232,7 +251,7 @@ class ListHostGroupsRequest:
     def sort_dir(self):
         """Gets the sort_dir of this ListHostGroupsRequest.
 
-        排序方式：DESC|ASC，默认为DESC
+        排序方式：DESC、ASC，默认为DESC
 
         :return: The sort_dir of this ListHostGroupsRequest.
         :rtype: str
@@ -243,10 +262,10 @@ class ListHostGroupsRequest:
     def sort_dir(self, sort_dir):
         """Sets the sort_dir of this ListHostGroupsRequest.
 
-        排序方式：DESC|ASC，默认为DESC
+        排序方式：DESC、ASC，默认为DESC
 
         :param sort_dir: The sort_dir of this ListHostGroupsRequest.
-        :type: str
+        :type sort_dir: str
         """
         self._sort_dir = sort_dir
 

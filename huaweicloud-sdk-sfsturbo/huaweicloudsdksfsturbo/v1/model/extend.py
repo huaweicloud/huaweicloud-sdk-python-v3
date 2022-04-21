@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Extend:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class Extend:
     }
 
     def __init__(self, new_size=None):
-        """Extend - a model defined in huaweicloud sdk"""
+        """Extend
+
+        The model defined in huaweicloud sdk
+
+        :param new_size: 扩容后文件系统的新容量，以GB为单位。扩容步长大于等于100GB。  普通文件系统容量，取值范围500~32768。  带宽型文件系统，容量范围是10240~327680
+        :type new_size: int
+        """
         
         
 
@@ -57,7 +62,7 @@ class Extend:
         扩容后文件系统的新容量，以GB为单位。扩容步长大于等于100GB。  普通文件系统容量，取值范围500~32768。  带宽型文件系统，容量范围是10240~327680
 
         :param new_size: The new_size of this Extend.
-        :type: int
+        :type new_size: int
         """
         self._new_size = new_size
 

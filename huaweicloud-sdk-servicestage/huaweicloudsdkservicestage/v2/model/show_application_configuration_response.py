@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowApplicationConfigurationResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowApplicationConfigurationResponse(SdkResponse):
     }
 
     def __init__(self, configuration=None):
-        """ShowApplicationConfigurationResponse - a model defined in huaweicloud sdk"""
+        """ShowApplicationConfigurationResponse
+
+        The model defined in huaweicloud sdk
+
+        :param configuration: 应用配置列表。
+        :type configuration: list[:class:`huaweicloudsdkservicestage.v2.ApplicationListConfigConfiguration1`]
+        """
         
         super(ShowApplicationConfigurationResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ShowApplicationConfigurationResponse(SdkResponse):
         应用配置列表。
 
         :return: The configuration of this ShowApplicationConfigurationResponse.
-        :rtype: list[ApplicationListConfigConfiguration1]
+        :rtype: list[:class:`huaweicloudsdkservicestage.v2.ApplicationListConfigConfiguration1`]
         """
         return self._configuration
 
@@ -58,7 +63,7 @@ class ShowApplicationConfigurationResponse(SdkResponse):
         应用配置列表。
 
         :param configuration: The configuration of this ShowApplicationConfigurationResponse.
-        :type: list[ApplicationListConfigConfiguration1]
+        :type configuration: list[:class:`huaweicloudsdkservicestage.v2.ApplicationListConfigConfiguration1`]
         """
         self._configuration = configuration
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowVolumeResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowVolumeResponse(SdkResponse):
     }
 
     def __init__(self, volume=None):
-        """ShowVolumeResponse - a model defined in huaweicloud sdk"""
+        """ShowVolumeResponse
+
+        The model defined in huaweicloud sdk
+
+        :param volume: 
+        :type volume: :class:`huaweicloudsdkiec.v1.Volume`
+        """
         
         super(ShowVolumeResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class ShowVolumeResponse(SdkResponse):
 
 
         :return: The volume of this ShowVolumeResponse.
-        :rtype: Volume
+        :rtype: :class:`huaweicloudsdkiec.v1.Volume`
         """
         return self._volume
 
@@ -56,7 +61,7 @@ class ShowVolumeResponse(SdkResponse):
 
 
         :param volume: The volume of this ShowVolumeResponse.
-        :type: Volume
+        :type volume: :class:`huaweicloudsdkiec.v1.Volume`
         """
         self._volume = volume
 

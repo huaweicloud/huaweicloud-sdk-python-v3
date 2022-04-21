@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateFloatingIpOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateFloatingIpOption:
     }
 
     def __init__(self, port_id=None):
-        """UpdateFloatingIpOption - a model defined in huaweicloud sdk"""
+        """UpdateFloatingIpOption
+
+        The model defined in huaweicloud sdk
+
+        :param port_id: 端口id。
+        :type port_id: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class UpdateFloatingIpOption:
         端口id。
 
         :param port_id: The port_id of this UpdateFloatingIpOption.
-        :type: str
+        :type port_id: str
         """
         self._port_id = port_id
 

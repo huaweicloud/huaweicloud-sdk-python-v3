@@ -51,8 +51,8 @@ from huaweicloudsdkdws.v2.model.restore_cluster_request import RestoreClusterReq
 from huaweicloudsdkdws.v2.model.restore_cluster_request_body import RestoreClusterRequestBody
 from huaweicloudsdkdws.v2.model.restore_cluster_response import RestoreClusterResponse
 from huaweicloudsdkdws.v2.model.scale_out import ScaleOut
-from huaweicloudsdkdws.v2.model.snapsho_detail import SnapshoDetail
 from huaweicloudsdkdws.v2.model.snapshot import Snapshot
+from huaweicloudsdkdws.v2.model.snapshot_detail import SnapshotDetail
 from huaweicloudsdkdws.v2.model.snapshot_resp import SnapshotResp
 from huaweicloudsdkdws.v2.model.snapshots import Snapshots
 from huaweicloudsdkdws.v2.model.tags import Tags

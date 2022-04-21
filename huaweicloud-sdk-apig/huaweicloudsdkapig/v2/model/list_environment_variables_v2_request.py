@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListEnvironmentVariablesV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListEnvironmentVariablesV2Request:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, env_id=None, variable_name=None, precise_search=None):
-        """ListEnvironmentVariablesV2Request - a model defined in huaweicloud sdk"""
+        """ListEnvironmentVariablesV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param offset: 偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
+        :type offset: int
+        :param limit: 每页显示的条目数量
+        :type limit: int
+        :param env_id: 环境编号
+        :type env_id: str
+        :param variable_name: 变量名
+        :type variable_name: str
+        :param precise_search: 指定需要精确匹配查找的参数名称，目前仅支持name
+        :type precise_search: str
+        """
         
         
 
@@ -82,7 +97,7 @@ class ListEnvironmentVariablesV2Request:
         实例ID
 
         :param instance_id: The instance_id of this ListEnvironmentVariablesV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -104,7 +119,7 @@ class ListEnvironmentVariablesV2Request:
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
         :param offset: The offset of this ListEnvironmentVariablesV2Request.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -126,7 +141,7 @@ class ListEnvironmentVariablesV2Request:
         每页显示的条目数量
 
         :param limit: The limit of this ListEnvironmentVariablesV2Request.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -148,7 +163,7 @@ class ListEnvironmentVariablesV2Request:
         环境编号
 
         :param env_id: The env_id of this ListEnvironmentVariablesV2Request.
-        :type: str
+        :type env_id: str
         """
         self._env_id = env_id
 
@@ -170,7 +185,7 @@ class ListEnvironmentVariablesV2Request:
         变量名
 
         :param variable_name: The variable_name of this ListEnvironmentVariablesV2Request.
-        :type: str
+        :type variable_name: str
         """
         self._variable_name = variable_name
 
@@ -192,7 +207,7 @@ class ListEnvironmentVariablesV2Request:
         指定需要精确匹配查找的参数名称，目前仅支持name
 
         :param precise_search: The precise_search of this ListEnvironmentVariablesV2Request.
-        :type: str
+        :type precise_search: str
         """
         self._precise_search = precise_search
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DevicesDevices:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DevicesDevices:
     }
 
     def __init__(self, added=None, removed=None):
-        """DevicesDevices - a model defined in huaweicloud sdk"""
+        """DevicesDevices
+
+        The model defined in huaweicloud sdk
+
+        :param added: 
+        :type added: :class:`huaweicloudsdkief.v1.DevicesDevicesAdded`
+        :param removed: 要解绑的终端设备ID
+        :type removed: list[str]
+        """
         
         
 
@@ -51,7 +58,7 @@ class DevicesDevices:
 
 
         :return: The added of this DevicesDevices.
-        :rtype: DevicesDevicesAdded
+        :rtype: :class:`huaweicloudsdkief.v1.DevicesDevicesAdded`
         """
         return self._added
 
@@ -61,7 +68,7 @@ class DevicesDevices:
 
 
         :param added: The added of this DevicesDevices.
-        :type: DevicesDevicesAdded
+        :type added: :class:`huaweicloudsdkief.v1.DevicesDevicesAdded`
         """
         self._added = added
 
@@ -83,7 +90,7 @@ class DevicesDevices:
         要解绑的终端设备ID
 
         :param removed: The removed of this DevicesDevices.
-        :type: list[str]
+        :type removed: list[str]
         """
         self._removed = removed
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResizeServerRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ResizeServerRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """ResizeServerRequest - a model defined in huaweicloud sdk"""
+        """ResizeServerRequest
+
+        The model defined in huaweicloud sdk
+
+        :param server_id: 云服务器ID。
+        :type server_id: str
+        :param body: Body of the ResizeServerRequest
+        :type body: :class:`huaweicloudsdkecs.v2.ResizeServerRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class ResizeServerRequest:
         云服务器ID。
 
         :param server_id: The server_id of this ResizeServerRequest.
-        :type: str
+        :type server_id: str
         """
         self._server_id = server_id
 
@@ -72,7 +79,7 @@ class ResizeServerRequest:
 
 
         :return: The body of this ResizeServerRequest.
-        :rtype: ResizeServerRequestBody
+        :rtype: :class:`huaweicloudsdkecs.v2.ResizeServerRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class ResizeServerRequest:
 
 
         :param body: The body of this ResizeServerRequest.
-        :type: ResizeServerRequestBody
+        :type body: :class:`huaweicloudsdkecs.v2.ResizeServerRequestBody`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SyncObjectReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class SyncObjectReq:
     }
 
     def __init__(self, object_keys=None):
-        """SyncObjectReq - a model defined in huaweicloud sdk"""
+        """SyncObjectReq
+
+        The model defined in huaweicloud sdk
+
+        :param object_keys: 待同步对象的列表,其中待同步对象最大数量为10,列表中object_key为URL编码处理后的结果
+        :type object_keys: list[str]
+        """
         
         
 
@@ -57,7 +62,7 @@ class SyncObjectReq:
         待同步对象的列表,其中待同步对象最大数量为10,列表中object_key为URL编码处理后的结果
 
         :param object_keys: The object_keys of this SyncObjectReq.
-        :type: list[str]
+        :type object_keys: list[str]
         """
         self._object_keys = object_keys
 

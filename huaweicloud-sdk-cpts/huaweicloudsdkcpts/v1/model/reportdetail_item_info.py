@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ReportdetailItemInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ReportdetailItemInfo:
     }
 
     def __init__(self, custom_transactions=None, detail_datas=None, performance=None):
-        """ReportdetailItemInfo - a model defined in huaweicloud sdk"""
+        """ReportdetailItemInfo
+
+        The model defined in huaweicloud sdk
+
+        :param custom_transactions: 自定义事务数据
+        :type custom_transactions: list[str]
+        :param detail_datas: aw数据
+        :type detail_datas: list[:class:`huaweicloudsdkcpts.v1.DetailDataInfo`]
+        :param performance: 
+        :type performance: :class:`huaweicloudsdkcpts.v1.PerformanceInfo`
+        """
         
         
 
@@ -68,7 +77,7 @@ class ReportdetailItemInfo:
         自定义事务数据
 
         :param custom_transactions: The custom_transactions of this ReportdetailItemInfo.
-        :type: list[str]
+        :type custom_transactions: list[str]
         """
         self._custom_transactions = custom_transactions
 
@@ -79,7 +88,7 @@ class ReportdetailItemInfo:
         aw数据
 
         :return: The detail_datas of this ReportdetailItemInfo.
-        :rtype: list[DetailDataInfo]
+        :rtype: list[:class:`huaweicloudsdkcpts.v1.DetailDataInfo`]
         """
         return self._detail_datas
 
@@ -90,7 +99,7 @@ class ReportdetailItemInfo:
         aw数据
 
         :param detail_datas: The detail_datas of this ReportdetailItemInfo.
-        :type: list[DetailDataInfo]
+        :type detail_datas: list[:class:`huaweicloudsdkcpts.v1.DetailDataInfo`]
         """
         self._detail_datas = detail_datas
 
@@ -100,7 +109,7 @@ class ReportdetailItemInfo:
 
 
         :return: The performance of this ReportdetailItemInfo.
-        :rtype: PerformanceInfo
+        :rtype: :class:`huaweicloudsdkcpts.v1.PerformanceInfo`
         """
         return self._performance
 
@@ -110,7 +119,7 @@ class ReportdetailItemInfo:
 
 
         :param performance: The performance of this ReportdetailItemInfo.
-        :type: PerformanceInfo
+        :type performance: :class:`huaweicloudsdkcpts.v1.PerformanceInfo`
         """
         self._performance = performance
 

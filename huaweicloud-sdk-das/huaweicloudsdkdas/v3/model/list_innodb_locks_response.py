@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListInnodbLocksResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListInnodbLocksResponse(SdkResponse):
     }
 
     def __init__(self, innodb_trx=None, innodb_lock_waits=None, count=None):
-        """ListInnodbLocksResponse - a model defined in huaweicloud sdk"""
+        """ListInnodbLocksResponse
+
+        The model defined in huaweicloud sdk
+
+        :param innodb_trx: 当前持有或等待锁的事务信息
+        :type innodb_trx: list[:class:`huaweicloudsdkdas.v3.InnodbTrx`]
+        :param innodb_lock_waits: 每个事务请求的锁以及阻塞该请求的锁的对应关系
+        :type innodb_lock_waits: list[:class:`huaweicloudsdkdas.v3.InnodbLockWaits`]
+        :param count: 当前持有或等待锁的事务数量
+        :type count: int
+        """
         
         super(ListInnodbLocksResponse, self).__init__()
 
@@ -57,7 +66,7 @@ class ListInnodbLocksResponse(SdkResponse):
         当前持有或等待锁的事务信息
 
         :return: The innodb_trx of this ListInnodbLocksResponse.
-        :rtype: list[InnodbTrx]
+        :rtype: list[:class:`huaweicloudsdkdas.v3.InnodbTrx`]
         """
         return self._innodb_trx
 
@@ -68,7 +77,7 @@ class ListInnodbLocksResponse(SdkResponse):
         当前持有或等待锁的事务信息
 
         :param innodb_trx: The innodb_trx of this ListInnodbLocksResponse.
-        :type: list[InnodbTrx]
+        :type innodb_trx: list[:class:`huaweicloudsdkdas.v3.InnodbTrx`]
         """
         self._innodb_trx = innodb_trx
 
@@ -79,7 +88,7 @@ class ListInnodbLocksResponse(SdkResponse):
         每个事务请求的锁以及阻塞该请求的锁的对应关系
 
         :return: The innodb_lock_waits of this ListInnodbLocksResponse.
-        :rtype: list[InnodbLockWaits]
+        :rtype: list[:class:`huaweicloudsdkdas.v3.InnodbLockWaits`]
         """
         return self._innodb_lock_waits
 
@@ -90,7 +99,7 @@ class ListInnodbLocksResponse(SdkResponse):
         每个事务请求的锁以及阻塞该请求的锁的对应关系
 
         :param innodb_lock_waits: The innodb_lock_waits of this ListInnodbLocksResponse.
-        :type: list[InnodbLockWaits]
+        :type innodb_lock_waits: list[:class:`huaweicloudsdkdas.v3.InnodbLockWaits`]
         """
         self._innodb_lock_waits = innodb_lock_waits
 
@@ -112,7 +121,7 @@ class ListInnodbLocksResponse(SdkResponse):
         当前持有或等待锁的事务数量
 
         :param count: The count of this ListInnodbLocksResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDictionaryResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListDictionaryResponse(SdkResponse):
     }
 
     def __init__(self, total=None, size=None, dictionaries=None):
-        """ListDictionaryResponse - a model defined in huaweicloud sdk"""
+        """ListDictionaryResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 总数，与分页无关
+        :type total: int
+        :param size: 当前页的数量，小于等于请求里指定的limit
+        :type size: int
+        :param dictionaries: 字典列表
+        :type dictionaries: list[:class:`huaweicloudsdkroma.v2.Dictionary`]
+        """
         
         super(ListDictionaryResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListDictionaryResponse(SdkResponse):
         总数，与分页无关
 
         :param total: The total of this ListDictionaryResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -90,7 +99,7 @@ class ListDictionaryResponse(SdkResponse):
         当前页的数量，小于等于请求里指定的limit
 
         :param size: The size of this ListDictionaryResponse.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -101,7 +110,7 @@ class ListDictionaryResponse(SdkResponse):
         字典列表
 
         :return: The dictionaries of this ListDictionaryResponse.
-        :rtype: list[Dictionary]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.Dictionary`]
         """
         return self._dictionaries
 
@@ -112,7 +121,7 @@ class ListDictionaryResponse(SdkResponse):
         字典列表
 
         :param dictionaries: The dictionaries of this ListDictionaryResponse.
-        :type: list[Dictionary]
+        :type dictionaries: list[:class:`huaweicloudsdkroma.v2.Dictionary`]
         """
         self._dictionaries = dictionaries
 

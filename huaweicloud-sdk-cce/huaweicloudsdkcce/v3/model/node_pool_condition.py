@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NodePoolCondition:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class NodePoolCondition:
     }
 
     def __init__(self, type=None, status=None, last_probe_time=None, last_transit_time=None, reason=None, message=None):
-        """NodePoolCondition - a model defined in huaweicloud sdk"""
+        """NodePoolCondition
+
+        The model defined in huaweicloud sdk
+
+        :param type: Condition类型，当前支持类型如下 - \&quot;Scalable\&quot;：节点池实际的可扩容状态，如果状态为\&quot;False\&quot;时则不会再次触发节点池扩容行为。 - \&quot;QuotaInsufficient\&quot;：节点池扩容依赖的配额不足，影响节点池可扩容状态。 - \&quot;ResourceInsufficient\&quot;：节点池扩容依赖的资源不足，影响节点池可扩容状态。 - \&quot;UnexpectedError\&quot;：节点池非预期扩容失败，影响节点池可扩容状态。 - \&quot;LockedByOrder\&quot;：包周期节点池被订单锁定，此时Reason为待支付订单ID。 - \&quot;Error\&quot;：节点池错误，通常由于删除失败触发。 
+        :type type: str
+        :param status: Condition当前状态，取值如下 - \&quot;True\&quot; - \&quot;False\&quot; 
+        :type status: str
+        :param last_probe_time: 上次状态检查时间。
+        :type last_probe_time: str
+        :param last_transit_time: 上次状态变更时间。
+        :type last_transit_time: str
+        :param reason: 上次状态变更原因。
+        :type reason: str
+        :param message: Condition详细描述。
+        :type message: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class NodePoolCondition:
         Condition类型，当前支持类型如下 - \"Scalable\"：节点池实际的可扩容状态，如果状态为\"False\"时则不会再次触发节点池扩容行为。 - \"QuotaInsufficient\"：节点池扩容依赖的配额不足，影响节点池可扩容状态。 - \"ResourceInsufficient\"：节点池扩容依赖的资源不足，影响节点池可扩容状态。 - \"UnexpectedError\"：节点池非预期扩容失败，影响节点池可扩容状态。 - \"LockedByOrder\"：包周期节点池被订单锁定，此时Reason为待支付订单ID。 - \"Error\"：节点池错误，通常由于删除失败触发。 
 
         :param type: The type of this NodePoolCondition.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -105,7 +120,7 @@ class NodePoolCondition:
         Condition当前状态，取值如下 - \"True\" - \"False\" 
 
         :param status: The status of this NodePoolCondition.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -127,7 +142,7 @@ class NodePoolCondition:
         上次状态检查时间。
 
         :param last_probe_time: The last_probe_time of this NodePoolCondition.
-        :type: str
+        :type last_probe_time: str
         """
         self._last_probe_time = last_probe_time
 
@@ -149,7 +164,7 @@ class NodePoolCondition:
         上次状态变更时间。
 
         :param last_transit_time: The last_transit_time of this NodePoolCondition.
-        :type: str
+        :type last_transit_time: str
         """
         self._last_transit_time = last_transit_time
 
@@ -171,7 +186,7 @@ class NodePoolCondition:
         上次状态变更原因。
 
         :param reason: The reason of this NodePoolCondition.
-        :type: str
+        :type reason: str
         """
         self._reason = reason
 
@@ -193,7 +208,7 @@ class NodePoolCondition:
         Condition详细描述。
 
         :param message: The message of this NodePoolCondition.
-        :type: str
+        :type message: str
         """
         self._message = message
 

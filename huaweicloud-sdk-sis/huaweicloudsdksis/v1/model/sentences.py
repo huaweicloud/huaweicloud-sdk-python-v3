@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Sentences:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class Sentences:
     }
 
     def __init__(self, end_time=None, result=None, start_time=None):
-        """Sentences - a model defined in huaweicloud sdk"""
+        """Sentences
+
+        The model defined in huaweicloud sdk
+
+        :param end_time: 分句结果信息
+        :type end_time: int
+        :param result: 
+        :type result: :class:`huaweicloudsdksis.v1.FlashScoreResult`
+        :param start_time: 一句话开始时间，单位毫秒
+        :type start_time: int
+        """
         
         
 
@@ -68,7 +77,7 @@ class Sentences:
         分句结果信息
 
         :param end_time: The end_time of this Sentences.
-        :type: int
+        :type end_time: int
         """
         self._end_time = end_time
 
@@ -78,7 +87,7 @@ class Sentences:
 
 
         :return: The result of this Sentences.
-        :rtype: FlashScoreResult
+        :rtype: :class:`huaweicloudsdksis.v1.FlashScoreResult`
         """
         return self._result
 
@@ -88,7 +97,7 @@ class Sentences:
 
 
         :param result: The result of this Sentences.
-        :type: FlashScoreResult
+        :type result: :class:`huaweicloudsdksis.v1.FlashScoreResult`
         """
         self._result = result
 
@@ -110,7 +119,7 @@ class Sentences:
         一句话开始时间，单位毫秒
 
         :param start_time: The start_time of this Sentences.
-        :type: int
+        :type start_time: int
         """
         self._start_time = start_time
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IvsExtentionByNameAndIdRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class IvsExtentionByNameAndIdRequestBody:
     }
 
     def __init__(self, meta=None, data=None):
-        """IvsExtentionByNameAndIdRequestBody - a model defined in huaweicloud sdk"""
+        """IvsExtentionByNameAndIdRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param meta: 
+        :type meta: :class:`huaweicloudsdkivs.v2.Meta`
+        :param data: 
+        :type data: :class:`huaweicloudsdkivs.v2.IvsExtentionByNameAndIdRequestBodyData`
+        """
         
         
 
@@ -49,7 +56,7 @@ class IvsExtentionByNameAndIdRequestBody:
 
 
         :return: The meta of this IvsExtentionByNameAndIdRequestBody.
-        :rtype: Meta
+        :rtype: :class:`huaweicloudsdkivs.v2.Meta`
         """
         return self._meta
 
@@ -59,7 +66,7 @@ class IvsExtentionByNameAndIdRequestBody:
 
 
         :param meta: The meta of this IvsExtentionByNameAndIdRequestBody.
-        :type: Meta
+        :type meta: :class:`huaweicloudsdkivs.v2.Meta`
         """
         self._meta = meta
 
@@ -69,7 +76,7 @@ class IvsExtentionByNameAndIdRequestBody:
 
 
         :return: The data of this IvsExtentionByNameAndIdRequestBody.
-        :rtype: IvsExtentionByNameAndIdRequestBodyData
+        :rtype: :class:`huaweicloudsdkivs.v2.IvsExtentionByNameAndIdRequestBodyData`
         """
         return self._data
 
@@ -79,7 +86,7 @@ class IvsExtentionByNameAndIdRequestBody:
 
 
         :param data: The data of this IvsExtentionByNameAndIdRequestBody.
-        :type: IvsExtentionByNameAndIdRequestBodyData
+        :type data: :class:`huaweicloudsdkivs.v2.IvsExtentionByNameAndIdRequestBodyData`
         """
         self._data = data
 

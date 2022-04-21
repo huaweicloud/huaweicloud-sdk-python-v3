@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ClearGraphRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ClearGraphRequest:
     }
 
     def __init__(self, graph_id=None, action_id=None, clear_metadata=None):
-        """ClearGraphRequest - a model defined in huaweicloud sdk"""
+        """ClearGraphRequest
+
+        The model defined in huaweicloud sdk
+
+        :param graph_id: 图ID。
+        :type graph_id: str
+        :param action_id: 图actionId
+        :type action_id: str
+        :param clear_metadata: 是否清空图关联的元数据。建议清除。
+        :type clear_metadata: bool
+        """
         
         
 
@@ -66,7 +75,7 @@ class ClearGraphRequest:
         图ID。
 
         :param graph_id: The graph_id of this ClearGraphRequest.
-        :type: str
+        :type graph_id: str
         """
         self._graph_id = graph_id
 
@@ -88,7 +97,7 @@ class ClearGraphRequest:
         图actionId
 
         :param action_id: The action_id of this ClearGraphRequest.
-        :type: str
+        :type action_id: str
         """
         self._action_id = action_id
 
@@ -110,7 +119,7 @@ class ClearGraphRequest:
         是否清空图关联的元数据。建议清除。
 
         :param clear_metadata: The clear_metadata of this ClearGraphRequest.
-        :type: bool
+        :type clear_metadata: bool
         """
         self._clear_metadata = clear_metadata
 

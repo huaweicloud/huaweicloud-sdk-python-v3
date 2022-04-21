@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SystemSecurityPolicy:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class SystemSecurityPolicy:
     }
 
     def __init__(self, name=None, protocols=None, ciphers=None, project_id=None):
-        """SystemSecurityPolicy - a model defined in huaweicloud sdk"""
+        """SystemSecurityPolicy
+
+        The model defined in huaweicloud sdk
+
+        :param name: 系统安全策略的名称。
+        :type name: str
+        :param protocols: 系统安全策略的TLS协议列表。
+        :type protocols: list[str]
+        :param ciphers: 系统安全策略的加密套件列表。
+        :type ciphers: list[str]
+        :param project_id: 项目id。
+        :type project_id: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class SystemSecurityPolicy:
         系统安全策略的名称。
 
         :param name: The name of this SystemSecurityPolicy.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -91,7 +102,7 @@ class SystemSecurityPolicy:
         系统安全策略的TLS协议列表。
 
         :param protocols: The protocols of this SystemSecurityPolicy.
-        :type: list[str]
+        :type protocols: list[str]
         """
         self._protocols = protocols
 
@@ -113,7 +124,7 @@ class SystemSecurityPolicy:
         系统安全策略的加密套件列表。
 
         :param ciphers: The ciphers of this SystemSecurityPolicy.
-        :type: list[str]
+        :type ciphers: list[str]
         """
         self._ciphers = ciphers
 
@@ -135,7 +146,7 @@ class SystemSecurityPolicy:
         项目id。
 
         :param project_id: The project_id of this SystemSecurityPolicy.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 

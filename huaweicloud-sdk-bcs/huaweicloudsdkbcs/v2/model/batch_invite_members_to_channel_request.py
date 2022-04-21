@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchInviteMembersToChannelRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchInviteMembersToChannelRequest:
     }
 
     def __init__(self, body=None):
-        """BatchInviteMembersToChannelRequest - a model defined in huaweicloud sdk"""
+        """BatchInviteMembersToChannelRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the BatchInviteMembersToChannelRequest
+        :type body: :class:`huaweicloudsdkbcs.v2.BatchInviteMembersToChannelRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class BatchInviteMembersToChannelRequest:
 
 
         :return: The body of this BatchInviteMembersToChannelRequest.
-        :rtype: BatchInviteMembersToChannelRequestBody
+        :rtype: :class:`huaweicloudsdkbcs.v2.BatchInviteMembersToChannelRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class BatchInviteMembersToChannelRequest:
 
 
         :param body: The body of this BatchInviteMembersToChannelRequest.
-        :type: BatchInviteMembersToChannelRequestBody
+        :type body: :class:`huaweicloudsdkbcs.v2.BatchInviteMembersToChannelRequestBody`
         """
         self._body = body
 

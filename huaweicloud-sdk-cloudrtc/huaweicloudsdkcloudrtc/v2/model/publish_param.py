@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PublishParam:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class PublishParam:
     }
 
     def __init__(self, rtmp_urls=None):
-        """PublishParam - a model defined in huaweicloud sdk"""
+        """PublishParam
+
+        The model defined in huaweicloud sdk
+
+        :param rtmp_urls: 合流任务完成后，转推的RTMP推流地址。
+        :type rtmp_urls: list[str]
+        """
         
         
 
@@ -57,7 +62,7 @@ class PublishParam:
         合流任务完成后，转推的RTMP推流地址。
 
         :param rtmp_urls: The rtmp_urls of this PublishParam.
-        :type: list[str]
+        :type rtmp_urls: list[str]
         """
         self._rtmp_urls = rtmp_urls
 

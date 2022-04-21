@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MyanmarDriverLicenseConfidence:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class MyanmarDriverLicenseConfidence:
     }
 
     def __init__(self, card_number=None, card_number_en=None, name=None, name_en=None, nrc_id=None, nrc_id_en=None, birth=None, birth_en=None, blood_group=None, blood_group_en=None, expiried_date=None, expiried_date_en=None):
-        """MyanmarDriverLicenseConfidence - a model defined in huaweicloud sdk"""
+        """MyanmarDriverLicenseConfidence
+
+        The model defined in huaweicloud sdk
+
+        :param card_number: 缅文驾驶证号置信度。 
+        :type card_number: float
+        :param card_number_en: 英文驾驶证号置信度。 
+        :type card_number_en: float
+        :param name: 缅文名字置信度。 
+        :type name: float
+        :param name_en: 英文名字置信度。 
+        :type name_en: float
+        :param nrc_id: 缅文nrc号码置信度。 
+        :type nrc_id: float
+        :param nrc_id_en: 英文nrc号码置信度。 
+        :type nrc_id_en: float
+        :param birth: 缅文出生日期置信度。 
+        :type birth: float
+        :param birth_en: 英文出生日期置信度。 
+        :type birth_en: float
+        :param blood_group: 缅文血型置信度。 
+        :type blood_group: float
+        :param blood_group_en: 英文血型置信度。 
+        :type blood_group_en: float
+        :param expiried_date: 缅文有效期置信度。 
+        :type expiried_date: float
+        :param expiried_date_en: 英文有效期置信度。 
+        :type expiried_date_en: float
+        """
         
         
 
@@ -113,7 +140,7 @@ class MyanmarDriverLicenseConfidence:
         缅文驾驶证号置信度。 
 
         :param card_number: The card_number of this MyanmarDriverLicenseConfidence.
-        :type: float
+        :type card_number: float
         """
         self._card_number = card_number
 
@@ -135,7 +162,7 @@ class MyanmarDriverLicenseConfidence:
         英文驾驶证号置信度。 
 
         :param card_number_en: The card_number_en of this MyanmarDriverLicenseConfidence.
-        :type: float
+        :type card_number_en: float
         """
         self._card_number_en = card_number_en
 
@@ -157,7 +184,7 @@ class MyanmarDriverLicenseConfidence:
         缅文名字置信度。 
 
         :param name: The name of this MyanmarDriverLicenseConfidence.
-        :type: float
+        :type name: float
         """
         self._name = name
 
@@ -179,7 +206,7 @@ class MyanmarDriverLicenseConfidence:
         英文名字置信度。 
 
         :param name_en: The name_en of this MyanmarDriverLicenseConfidence.
-        :type: float
+        :type name_en: float
         """
         self._name_en = name_en
 
@@ -201,7 +228,7 @@ class MyanmarDriverLicenseConfidence:
         缅文nrc号码置信度。 
 
         :param nrc_id: The nrc_id of this MyanmarDriverLicenseConfidence.
-        :type: float
+        :type nrc_id: float
         """
         self._nrc_id = nrc_id
 
@@ -223,7 +250,7 @@ class MyanmarDriverLicenseConfidence:
         英文nrc号码置信度。 
 
         :param nrc_id_en: The nrc_id_en of this MyanmarDriverLicenseConfidence.
-        :type: float
+        :type nrc_id_en: float
         """
         self._nrc_id_en = nrc_id_en
 
@@ -245,7 +272,7 @@ class MyanmarDriverLicenseConfidence:
         缅文出生日期置信度。 
 
         :param birth: The birth of this MyanmarDriverLicenseConfidence.
-        :type: float
+        :type birth: float
         """
         self._birth = birth
 
@@ -267,7 +294,7 @@ class MyanmarDriverLicenseConfidence:
         英文出生日期置信度。 
 
         :param birth_en: The birth_en of this MyanmarDriverLicenseConfidence.
-        :type: float
+        :type birth_en: float
         """
         self._birth_en = birth_en
 
@@ -289,7 +316,7 @@ class MyanmarDriverLicenseConfidence:
         缅文血型置信度。 
 
         :param blood_group: The blood_group of this MyanmarDriverLicenseConfidence.
-        :type: float
+        :type blood_group: float
         """
         self._blood_group = blood_group
 
@@ -311,7 +338,7 @@ class MyanmarDriverLicenseConfidence:
         英文血型置信度。 
 
         :param blood_group_en: The blood_group_en of this MyanmarDriverLicenseConfidence.
-        :type: float
+        :type blood_group_en: float
         """
         self._blood_group_en = blood_group_en
 
@@ -333,7 +360,7 @@ class MyanmarDriverLicenseConfidence:
         缅文有效期置信度。 
 
         :param expiried_date: The expiried_date of this MyanmarDriverLicenseConfidence.
-        :type: float
+        :type expiried_date: float
         """
         self._expiried_date = expiried_date
 
@@ -355,7 +382,7 @@ class MyanmarDriverLicenseConfidence:
         英文有效期置信度。 
 
         :param expiried_date_en: The expiried_date_en of this MyanmarDriverLicenseConfidence.
-        :type: float
+        :type expiried_date_en: float
         """
         self._expiried_date_en = expiried_date_en
 

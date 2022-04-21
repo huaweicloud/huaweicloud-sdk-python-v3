@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowBlockchainStatusResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ShowBlockchainStatusResponse(SdkResponse):
     }
 
     def __init__(self, bcs=None, eip=None, sfs=None, obs=None, kafka=None, cce=None):
-        """ShowBlockchainStatusResponse - a model defined in huaweicloud sdk"""
+        """ShowBlockchainStatusResponse
+
+        The model defined in huaweicloud sdk
+
+        :param bcs: 
+        :type bcs: :class:`huaweicloudsdkbcs.v2.Detail`
+        :param eip: 
+        :type eip: :class:`huaweicloudsdkbcs.v2.Detail`
+        :param sfs: 
+        :type sfs: :class:`huaweicloudsdkbcs.v2.Detail`
+        :param obs: 
+        :type obs: :class:`huaweicloudsdkbcs.v2.Detail`
+        :param kafka: 
+        :type kafka: :class:`huaweicloudsdkbcs.v2.Detail`
+        :param cce: 
+        :type cce: :class:`huaweicloudsdkbcs.v2.ComCCE`
+        """
         
         super(ShowBlockchainStatusResponse, self).__init__()
 
@@ -71,7 +86,7 @@ class ShowBlockchainStatusResponse(SdkResponse):
 
 
         :return: The bcs of this ShowBlockchainStatusResponse.
-        :rtype: Detail
+        :rtype: :class:`huaweicloudsdkbcs.v2.Detail`
         """
         return self._bcs
 
@@ -81,7 +96,7 @@ class ShowBlockchainStatusResponse(SdkResponse):
 
 
         :param bcs: The bcs of this ShowBlockchainStatusResponse.
-        :type: Detail
+        :type bcs: :class:`huaweicloudsdkbcs.v2.Detail`
         """
         self._bcs = bcs
 
@@ -91,7 +106,7 @@ class ShowBlockchainStatusResponse(SdkResponse):
 
 
         :return: The eip of this ShowBlockchainStatusResponse.
-        :rtype: Detail
+        :rtype: :class:`huaweicloudsdkbcs.v2.Detail`
         """
         return self._eip
 
@@ -101,7 +116,7 @@ class ShowBlockchainStatusResponse(SdkResponse):
 
 
         :param eip: The eip of this ShowBlockchainStatusResponse.
-        :type: Detail
+        :type eip: :class:`huaweicloudsdkbcs.v2.Detail`
         """
         self._eip = eip
 
@@ -111,7 +126,7 @@ class ShowBlockchainStatusResponse(SdkResponse):
 
 
         :return: The sfs of this ShowBlockchainStatusResponse.
-        :rtype: Detail
+        :rtype: :class:`huaweicloudsdkbcs.v2.Detail`
         """
         return self._sfs
 
@@ -121,7 +136,7 @@ class ShowBlockchainStatusResponse(SdkResponse):
 
 
         :param sfs: The sfs of this ShowBlockchainStatusResponse.
-        :type: Detail
+        :type sfs: :class:`huaweicloudsdkbcs.v2.Detail`
         """
         self._sfs = sfs
 
@@ -131,7 +146,7 @@ class ShowBlockchainStatusResponse(SdkResponse):
 
 
         :return: The obs of this ShowBlockchainStatusResponse.
-        :rtype: Detail
+        :rtype: :class:`huaweicloudsdkbcs.v2.Detail`
         """
         return self._obs
 
@@ -141,7 +156,7 @@ class ShowBlockchainStatusResponse(SdkResponse):
 
 
         :param obs: The obs of this ShowBlockchainStatusResponse.
-        :type: Detail
+        :type obs: :class:`huaweicloudsdkbcs.v2.Detail`
         """
         self._obs = obs
 
@@ -151,7 +166,7 @@ class ShowBlockchainStatusResponse(SdkResponse):
 
 
         :return: The kafka of this ShowBlockchainStatusResponse.
-        :rtype: Detail
+        :rtype: :class:`huaweicloudsdkbcs.v2.Detail`
         """
         return self._kafka
 
@@ -161,7 +176,7 @@ class ShowBlockchainStatusResponse(SdkResponse):
 
 
         :param kafka: The kafka of this ShowBlockchainStatusResponse.
-        :type: Detail
+        :type kafka: :class:`huaweicloudsdkbcs.v2.Detail`
         """
         self._kafka = kafka
 
@@ -171,7 +186,7 @@ class ShowBlockchainStatusResponse(SdkResponse):
 
 
         :return: The cce of this ShowBlockchainStatusResponse.
-        :rtype: ComCCE
+        :rtype: :class:`huaweicloudsdkbcs.v2.ComCCE`
         """
         return self._cce
 
@@ -181,7 +196,7 @@ class ShowBlockchainStatusResponse(SdkResponse):
 
 
         :param cce: The cce of this ShowBlockchainStatusResponse.
-        :type: ComCCE
+        :type cce: :class:`huaweicloudsdkbcs.v2.ComCCE`
         """
         self._cce = cce
 

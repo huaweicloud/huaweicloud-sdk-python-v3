@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TaskOutputHostingForDisplayObs:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class TaskOutputHostingForDisplayObs:
     }
 
     def __init__(self, bucket=None, path=None):
-        """TaskOutputHostingForDisplayObs - a model defined in huaweicloud sdk"""
+        """TaskOutputHostingForDisplayObs
+
+        The model defined in huaweicloud sdk
+
+        :param bucket: 结果文件result.json所在的OBS桶
+        :type bucket: str
+        :param path: 结果文件result.json所在的路径
+        :type path: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class TaskOutputHostingForDisplayObs:
         结果文件result.json所在的OBS桶
 
         :param bucket: The bucket of this TaskOutputHostingForDisplayObs.
-        :type: str
+        :type bucket: str
         """
         self._bucket = bucket
 
@@ -85,7 +92,7 @@ class TaskOutputHostingForDisplayObs:
         结果文件result.json所在的路径
 
         :param path: The path of this TaskOutputHostingForDisplayObs.
-        :type: str
+        :type path: str
         """
         self._path = path
 

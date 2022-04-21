@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OutputResponse:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class OutputResponse:
     }
 
     def __init__(self, name=None, output_static_asset_id=None, output_dynamic_asset_id=None, output_asset_model_id=None, output_property=None):
-        """OutputResponse - a model defined in huaweicloud sdk"""
+        """OutputResponse
+
+        The model defined in huaweicloud sdk
+
+        :param name: 输出参数名称,formulas中定义的name
+        :type name: str
+        :param output_static_asset_id: 输出资产ID，填写模型中定义的输出模型对应的某资产ID；创建资产时，如果是输出到本资产的模型，且output_static_asset_id和output_dynamic_asset_id都未配置，则后台自动配置output_static_asset_id为本资产ID；修改资产时，如果output_static_asset_id为null则表示置空
+        :type output_static_asset_id: str
+        :param output_dynamic_asset_id: 输出资产ID，填写公式动态生成资产ID，可根据入参获取资产ID，如：GetAssetId(\&quot;assetmodelName1\&quot;,\&quot;staticPropertyName1\&quot;,paramA)；修改资产时，如果output_static_asset_id为null则表示置空
+        :type output_dynamic_asset_id: str
+        :param output_asset_model_id: 输出模型ID，如果输出到本模型可以不携带
+        :type output_asset_model_id: str
+        :param output_property: 输出属性名
+        :type output_property: str
+        """
         
         
 
@@ -77,7 +90,7 @@ class OutputResponse:
         输出参数名称,formulas中定义的name
 
         :param name: The name of this OutputResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -99,7 +112,7 @@ class OutputResponse:
         输出资产ID，填写模型中定义的输出模型对应的某资产ID；创建资产时，如果是输出到本资产的模型，且output_static_asset_id和output_dynamic_asset_id都未配置，则后台自动配置output_static_asset_id为本资产ID；修改资产时，如果output_static_asset_id为null则表示置空
 
         :param output_static_asset_id: The output_static_asset_id of this OutputResponse.
-        :type: str
+        :type output_static_asset_id: str
         """
         self._output_static_asset_id = output_static_asset_id
 
@@ -121,7 +134,7 @@ class OutputResponse:
         输出资产ID，填写公式动态生成资产ID，可根据入参获取资产ID，如：GetAssetId(\"assetmodelName1\",\"staticPropertyName1\",paramA)；修改资产时，如果output_static_asset_id为null则表示置空
 
         :param output_dynamic_asset_id: The output_dynamic_asset_id of this OutputResponse.
-        :type: str
+        :type output_dynamic_asset_id: str
         """
         self._output_dynamic_asset_id = output_dynamic_asset_id
 
@@ -143,7 +156,7 @@ class OutputResponse:
         输出模型ID，如果输出到本模型可以不携带
 
         :param output_asset_model_id: The output_asset_model_id of this OutputResponse.
-        :type: str
+        :type output_asset_model_id: str
         """
         self._output_asset_model_id = output_asset_model_id
 
@@ -165,7 +178,7 @@ class OutputResponse:
         输出属性名
 
         :param output_property: The output_property of this OutputResponse.
-        :type: str
+        :type output_property: str
         """
         self._output_property = output_property
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowProgressDetailResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowProgressDetailResponse(SdkResponse):
     }
 
     def __init__(self, task_status=None, progress=None):
-        """ShowProgressDetailResponse - a model defined in huaweicloud sdk"""
+        """ShowProgressDetailResponse
+
+        The model defined in huaweicloud sdk
+
+        :param task_status: 任务状态,0表示检查中，1表示检查失败，2表示检查成功，3表示任务中止
+        :type task_status: int
+        :param progress: 
+        :type progress: :class:`huaweicloudsdkcodecheck.v2.ProgressDetailV2`
+        """
         
         super(ShowProgressDetailResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ShowProgressDetailResponse(SdkResponse):
         任务状态,0表示检查中，1表示检查失败，2表示检查成功，3表示任务中止
 
         :param task_status: The task_status of this ShowProgressDetailResponse.
-        :type: int
+        :type task_status: int
         """
         self._task_status = task_status
 
@@ -73,7 +80,7 @@ class ShowProgressDetailResponse(SdkResponse):
 
 
         :return: The progress of this ShowProgressDetailResponse.
-        :rtype: ProgressDetailV2
+        :rtype: :class:`huaweicloudsdkcodecheck.v2.ProgressDetailV2`
         """
         return self._progress
 
@@ -83,7 +90,7 @@ class ShowProgressDetailResponse(SdkResponse):
 
 
         :param progress: The progress of this ShowProgressDetailResponse.
-        :type: ProgressDetailV2
+        :type progress: :class:`huaweicloudsdkcodecheck.v2.ProgressDetailV2`
         """
         self._progress = progress
 

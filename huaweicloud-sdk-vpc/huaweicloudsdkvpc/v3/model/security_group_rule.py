@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SecurityGroupRule:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -58,7 +57,41 @@ class SecurityGroupRule:
     }
 
     def __init__(self, id=None, description=None, security_group_id=None, direction=None, protocol=None, ethertype=None, multiport=None, action=None, priority=None, remote_group_id=None, remote_ip_prefix=None, remote_address_group_id=None, created_at=None, updated_at=None, project_id=None):
-        """SecurityGroupRule - a model defined in huaweicloud sdk"""
+        """SecurityGroupRule
+
+        The model defined in huaweicloud sdk
+
+        :param id: 功能描述：安全组规则对应的唯一标识 取值范围：带“-”的标准UUID格式
+        :type id: str
+        :param description: 功能说明：安全组的描述信息 取值范围：0-255个字符，不能包含“&lt;”和“&gt;”
+        :type description: str
+        :param security_group_id: 功能说明：安全组规则所属的安全组ID
+        :type security_group_id: str
+        :param direction: 功能说明：安全组规则的出入控制方向 取值范围：ingress 表示入方向；egress 表示出方向
+        :type direction: str
+        :param protocol: 功能说明：协议类型 取值范围：icmp、tcp、udp、icmpv6或IP协议号 约束：为空表示支持所有协议。协议为icmpv6时，网络类型应该为IPv6；协议为icmp时，网络类型应该为IPv4
+        :type protocol: str
+        :param ethertype: 功能说明：IP地址协议类型 取值范围：IPv4，IPv6 约束：不填默认值为IPv4
+        :type ethertype: str
+        :param multiport: 功能说明：端口取值范围 取值范围：支持单端口(80)，连续端口(1-30)以及不连续端口(22,3389,80)
+        :type multiport: str
+        :param action: 功能说明：安全组规则生效策略 取值范围：allow 允许，deny 拒绝 约束：默认值为deny
+        :type action: str
+        :param priority: 功能说明：优先级 取值范围：1~100，1代表最高优先级
+        :type priority: int
+        :param remote_group_id: 功能说明：远端安全组ID，表示该安全组内的流量允许或拒绝 取值范围：租户下存在的安全组ID 约束：与remote_ip_prefix，remote_address_group_id功能互斥
+        :type remote_group_id: str
+        :param remote_ip_prefix: 功能说明：远端IP地址，当direction是egress时为虚拟机访问端的地址，当direction是ingress时为访问虚拟机的地址 取值范围：IP地址，或者cidr格式 约束：与remote_group_id、remote_address_group_id互斥
+        :type remote_ip_prefix: str
+        :param remote_address_group_id: 功能说明：远端地址组ID 取值范围：租户下存在的地址组ID 约束：与remote_ip_prefix，remote_group_id功能互斥
+        :type remote_address_group_id: str
+        :param created_at: 功能说明：安全组规则创建时间 取值范围：UTC时间格式：yyyy-MM-ddTHH:mm:ss
+        :type created_at: datetime
+        :param updated_at: 功能说明：安全组规则更新时间 取值范围：UTC时间格式：yyyy-MM-ddTHH:mm:ss
+        :type updated_at: datetime
+        :param project_id: 功能说明：安全组规则所属项目ID
+        :type project_id: str
+        """
         
         
 
@@ -113,7 +146,7 @@ class SecurityGroupRule:
         功能描述：安全组规则对应的唯一标识 取值范围：带“-”的标准UUID格式
 
         :param id: The id of this SecurityGroupRule.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -135,7 +168,7 @@ class SecurityGroupRule:
         功能说明：安全组的描述信息 取值范围：0-255个字符，不能包含“<”和“>”
 
         :param description: The description of this SecurityGroupRule.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -157,7 +190,7 @@ class SecurityGroupRule:
         功能说明：安全组规则所属的安全组ID
 
         :param security_group_id: The security_group_id of this SecurityGroupRule.
-        :type: str
+        :type security_group_id: str
         """
         self._security_group_id = security_group_id
 
@@ -179,7 +212,7 @@ class SecurityGroupRule:
         功能说明：安全组规则的出入控制方向 取值范围：ingress 表示入方向；egress 表示出方向
 
         :param direction: The direction of this SecurityGroupRule.
-        :type: str
+        :type direction: str
         """
         self._direction = direction
 
@@ -201,7 +234,7 @@ class SecurityGroupRule:
         功能说明：协议类型 取值范围：icmp、tcp、udp、icmpv6或IP协议号 约束：为空表示支持所有协议。协议为icmpv6时，网络类型应该为IPv6；协议为icmp时，网络类型应该为IPv4
 
         :param protocol: The protocol of this SecurityGroupRule.
-        :type: str
+        :type protocol: str
         """
         self._protocol = protocol
 
@@ -223,7 +256,7 @@ class SecurityGroupRule:
         功能说明：IP地址协议类型 取值范围：IPv4，IPv6 约束：不填默认值为IPv4
 
         :param ethertype: The ethertype of this SecurityGroupRule.
-        :type: str
+        :type ethertype: str
         """
         self._ethertype = ethertype
 
@@ -245,7 +278,7 @@ class SecurityGroupRule:
         功能说明：端口取值范围 取值范围：支持单端口(80)，连续端口(1-30)以及不连续端口(22,3389,80)
 
         :param multiport: The multiport of this SecurityGroupRule.
-        :type: str
+        :type multiport: str
         """
         self._multiport = multiport
 
@@ -267,7 +300,7 @@ class SecurityGroupRule:
         功能说明：安全组规则生效策略 取值范围：allow 允许，deny 拒绝 约束：默认值为deny
 
         :param action: The action of this SecurityGroupRule.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -289,7 +322,7 @@ class SecurityGroupRule:
         功能说明：优先级 取值范围：1~100，1代表最高优先级
 
         :param priority: The priority of this SecurityGroupRule.
-        :type: int
+        :type priority: int
         """
         self._priority = priority
 
@@ -311,7 +344,7 @@ class SecurityGroupRule:
         功能说明：远端安全组ID，表示该安全组内的流量允许或拒绝 取值范围：租户下存在的安全组ID 约束：与remote_ip_prefix，remote_address_group_id功能互斥
 
         :param remote_group_id: The remote_group_id of this SecurityGroupRule.
-        :type: str
+        :type remote_group_id: str
         """
         self._remote_group_id = remote_group_id
 
@@ -333,7 +366,7 @@ class SecurityGroupRule:
         功能说明：远端IP地址，当direction是egress时为虚拟机访问端的地址，当direction是ingress时为访问虚拟机的地址 取值范围：IP地址，或者cidr格式 约束：与remote_group_id、remote_address_group_id互斥
 
         :param remote_ip_prefix: The remote_ip_prefix of this SecurityGroupRule.
-        :type: str
+        :type remote_ip_prefix: str
         """
         self._remote_ip_prefix = remote_ip_prefix
 
@@ -355,7 +388,7 @@ class SecurityGroupRule:
         功能说明：远端地址组ID 取值范围：租户下存在的地址组ID 约束：与remote_ip_prefix，remote_group_id功能互斥
 
         :param remote_address_group_id: The remote_address_group_id of this SecurityGroupRule.
-        :type: str
+        :type remote_address_group_id: str
         """
         self._remote_address_group_id = remote_address_group_id
 
@@ -377,7 +410,7 @@ class SecurityGroupRule:
         功能说明：安全组规则创建时间 取值范围：UTC时间格式：yyyy-MM-ddTHH:mm:ss
 
         :param created_at: The created_at of this SecurityGroupRule.
-        :type: datetime
+        :type created_at: datetime
         """
         self._created_at = created_at
 
@@ -399,7 +432,7 @@ class SecurityGroupRule:
         功能说明：安全组规则更新时间 取值范围：UTC时间格式：yyyy-MM-ddTHH:mm:ss
 
         :param updated_at: The updated_at of this SecurityGroupRule.
-        :type: datetime
+        :type updated_at: datetime
         """
         self._updated_at = updated_at
 
@@ -421,7 +454,7 @@ class SecurityGroupRule:
         功能说明：安全组规则所属项目ID
 
         :param project_id: The project_id of this SecurityGroupRule.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryCustomerOnDemandResourcesReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class QueryCustomerOnDemandResourcesReq:
     }
 
     def __init__(self, customer_id=None, region_code=None, service_type_code=None, resource_ids=None, effective_time_begin=None, effective_time_end=None, offset=None, limit=None, status=None, indirect_partner_id=None):
-        """QueryCustomerOnDemandResourcesReq - a model defined in huaweicloud sdk"""
+        """QueryCustomerOnDemandResourcesReq
+
+        The model defined in huaweicloud sdk
+
+        :param customer_id: 客户账号ID。 您可以调用查询客户列表接口获取customer_id。
+        :type customer_id: str
+        :param region_code: 云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
+        :type region_code: str
+        :param service_type_code: 云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
+        :type service_type_code: str
+        :param resource_ids: 资源ID批量查询。 用于查询指定资源ID对应的资源。 最多支持同时传递50个ID的列表。
+        :type resource_ids: list[str]
+        :param effective_time_begin: 生效时间的开始时间。 UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。
+        :type effective_time_begin: str
+        :param effective_time_end: 生效时间的结束时间 UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。
+        :type effective_time_end: str
+        :param offset: 偏移量，从0开始。默认值为0。  说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset &#x3D; 1，则返回满足条件的第二个数据至最后一个数据。 例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
+        :type offset: int
+        :param limit: 一次查询的条数，默认值为10。
+        :type limit: int
+        :param status: 资源状态： 1：正常（已开通）2：宽限期3：冻结中4：变更中5：正在关闭6：已关闭
+        :type status: int
+        :param indirect_partner_id: 精英服务商ID。获取方法请参见查询精英服务商列表。如果需要查询精英服务商子客户的按需资源列表，必须携带该字段，否则只能查询自己的子客户按需资源。
+        :type indirect_partner_id: str
+        """
         
         
 
@@ -102,7 +125,7 @@ class QueryCustomerOnDemandResourcesReq:
         客户账号ID。 您可以调用查询客户列表接口获取customer_id。
 
         :param customer_id: The customer_id of this QueryCustomerOnDemandResourcesReq.
-        :type: str
+        :type customer_id: str
         """
         self._customer_id = customer_id
 
@@ -124,7 +147,7 @@ class QueryCustomerOnDemandResourcesReq:
         云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
         :param region_code: The region_code of this QueryCustomerOnDemandResourcesReq.
-        :type: str
+        :type region_code: str
         """
         self._region_code = region_code
 
@@ -146,7 +169,7 @@ class QueryCustomerOnDemandResourcesReq:
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
         :param service_type_code: The service_type_code of this QueryCustomerOnDemandResourcesReq.
-        :type: str
+        :type service_type_code: str
         """
         self._service_type_code = service_type_code
 
@@ -168,7 +191,7 @@ class QueryCustomerOnDemandResourcesReq:
         资源ID批量查询。 用于查询指定资源ID对应的资源。 最多支持同时传递50个ID的列表。
 
         :param resource_ids: The resource_ids of this QueryCustomerOnDemandResourcesReq.
-        :type: list[str]
+        :type resource_ids: list[str]
         """
         self._resource_ids = resource_ids
 
@@ -190,7 +213,7 @@ class QueryCustomerOnDemandResourcesReq:
         生效时间的开始时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。
 
         :param effective_time_begin: The effective_time_begin of this QueryCustomerOnDemandResourcesReq.
-        :type: str
+        :type effective_time_begin: str
         """
         self._effective_time_begin = effective_time_begin
 
@@ -212,7 +235,7 @@ class QueryCustomerOnDemandResourcesReq:
         生效时间的结束时间 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。
 
         :param effective_time_end: The effective_time_end of this QueryCustomerOnDemandResourcesReq.
-        :type: str
+        :type effective_time_end: str
         """
         self._effective_time_end = effective_time_end
 
@@ -234,7 +257,7 @@ class QueryCustomerOnDemandResourcesReq:
         偏移量，从0开始。默认值为0。  说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。 例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
         :param offset: The offset of this QueryCustomerOnDemandResourcesReq.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -256,7 +279,7 @@ class QueryCustomerOnDemandResourcesReq:
         一次查询的条数，默认值为10。
 
         :param limit: The limit of this QueryCustomerOnDemandResourcesReq.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -278,7 +301,7 @@ class QueryCustomerOnDemandResourcesReq:
         资源状态： 1：正常（已开通）2：宽限期3：冻结中4：变更中5：正在关闭6：已关闭
 
         :param status: The status of this QueryCustomerOnDemandResourcesReq.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -300,7 +323,7 @@ class QueryCustomerOnDemandResourcesReq:
         精英服务商ID。获取方法请参见查询精英服务商列表。如果需要查询精英服务商子客户的按需资源列表，必须携带该字段，否则只能查询自己的子客户按需资源。
 
         :param indirect_partner_id: The indirect_partner_id of this QueryCustomerOnDemandResourcesReq.
-        :type: str
+        :type indirect_partner_id: str
         """
         self._indirect_partner_id = indirect_partner_id
 

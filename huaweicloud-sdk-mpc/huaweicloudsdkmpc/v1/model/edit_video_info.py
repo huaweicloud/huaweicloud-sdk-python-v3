@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EditVideoInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class EditVideoInfo:
     }
 
     def __init__(self, reference=None, width=None, height=None, codec=None, bitrate=None, frame_rate=None):
-        """EditVideoInfo - a model defined in huaweicloud sdk"""
+        """EditVideoInfo
+
+        The model defined in huaweicloud sdk
+
+        :param reference: 剪辑输出视频参数的参照物。取值如下： - MAX，以输入片源中最大分辨率的视频参数作为输出参照。 - MIN，以输入片源中最小分辨率的视频参数作为输出参照。 - CUSTOM，自定义视频输出参数，使用该参数时，所有视频参数必填。- SHORT_HEIGHT_SHORT_WIDTH，当edit_type为MIX时，只能使用该值。
+        :type reference: str
+        :param width: 视频宽度。
+        :type width: int
+        :param height: 视频高度。
+        :type height: int
+        :param codec: 视频频编码格式。
+        :type codec: str
+        :param bitrate: 视频码率，单位: bit/s 
+        :type bitrate: int
+        :param frame_rate: 帧率。 
+        :type frame_rate: int
+        """
         
         
 
@@ -83,7 +98,7 @@ class EditVideoInfo:
         剪辑输出视频参数的参照物。取值如下： - MAX，以输入片源中最大分辨率的视频参数作为输出参照。 - MIN，以输入片源中最小分辨率的视频参数作为输出参照。 - CUSTOM，自定义视频输出参数，使用该参数时，所有视频参数必填。- SHORT_HEIGHT_SHORT_WIDTH，当edit_type为MIX时，只能使用该值。
 
         :param reference: The reference of this EditVideoInfo.
-        :type: str
+        :type reference: str
         """
         self._reference = reference
 
@@ -105,7 +120,7 @@ class EditVideoInfo:
         视频宽度。
 
         :param width: The width of this EditVideoInfo.
-        :type: int
+        :type width: int
         """
         self._width = width
 
@@ -127,7 +142,7 @@ class EditVideoInfo:
         视频高度。
 
         :param height: The height of this EditVideoInfo.
-        :type: int
+        :type height: int
         """
         self._height = height
 
@@ -149,7 +164,7 @@ class EditVideoInfo:
         视频频编码格式。
 
         :param codec: The codec of this EditVideoInfo.
-        :type: str
+        :type codec: str
         """
         self._codec = codec
 
@@ -171,7 +186,7 @@ class EditVideoInfo:
         视频码率，单位: bit/s 
 
         :param bitrate: The bitrate of this EditVideoInfo.
-        :type: int
+        :type bitrate: int
         """
         self._bitrate = bitrate
 
@@ -193,7 +208,7 @@ class EditVideoInfo:
         帧率。 
 
         :param frame_rate: The frame_rate of this EditVideoInfo.
-        :type: int
+        :type frame_rate: int
         """
         self._frame_rate = frame_rate
 

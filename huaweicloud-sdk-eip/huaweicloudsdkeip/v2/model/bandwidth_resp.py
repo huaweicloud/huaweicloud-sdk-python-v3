@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BandwidthResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -62,7 +61,45 @@ class BandwidthResp:
     }
 
     def __init__(self, bandwidth_type=None, billing_info=None, charge_mode=None, id=None, name=None, publicip_info=None, share_type=None, size=None, tenant_id=None, enterprise_project_id=None, status=None, enable_bandwidth_rules=None, rule_quota=None, bandwidth_rules=None, created_at=None, updated_at=None, public_border_group=None):
-        """BandwidthResp - a model defined in huaweicloud sdk"""
+        """BandwidthResp
+
+        The model defined in huaweicloud sdk
+
+        :param bandwidth_type: 功能说明：带宽类型，共享带宽默认为share。  取值范围：share，bgp，telcom，sbgp等。  share：共享带宽  bgp：动态bgp  telcom ：联通  sbgp：静态bgp
+        :type bandwidth_type: str
+        :param billing_info: 功能说明：账单信息  如果billinginfo不为空，说明是包周期的带宽
+        :type billing_info: str
+        :param charge_mode: 功能说明：按流量计费,按带宽计费还是按增强型95计费。  取值范围：bandwidth，traffic，95peak_plus(按增强型95计费)不返回或者为空时表示是bandwidth。  约束：只有共享带宽支持95peak_plus（按增强型95计费），按增强型95计费时需要指定保底百分比，默认是20%。
+        :type charge_mode: str
+        :param id: 功能说明：带宽唯一标识
+        :type id: str
+        :param name: 功能说明：带宽名称  取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
+        :type name: str
+        :param publicip_info: 功能说明：带宽对应的弹性公网IP信息  约束：WHOLE类型的带宽支持多个弹性公网IP，PER类型的带宽只能对应一个弹性公网IP
+        :type publicip_info: list[:class:`huaweicloudsdkeip.v2.PublicipInfoResp`]
+        :param share_type: 功能说明：带宽类型，标识是否是共享带宽  取值范围：WHOLE，PER  WHOLE表示共享带宽；PER，表示独享带宽
+        :type share_type: str
+        :param size: 功能说明：带宽大小  取值范围：默认5Mbit/s~2000Mbit/s（具体范围以各区域配置为准，请参见控制台对应页面显示）。
+        :type size: int
+        :param tenant_id: 功能说明：用户所属租户ID
+        :type tenant_id: str
+        :param enterprise_project_id: 企业项目ID。最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。  创建带宽时，给带宽绑定企业项目ID。
+        :type enterprise_project_id: str
+        :param status: 功能说明：带宽的状态  取值范围：  FREEZED：冻结  NORMAL：正常
+        :type status: str
+        :param enable_bandwidth_rules: 功能说明：是否开启企业级qos，仅共享带宽支持开启。（该字段仅在上海1局点返回）
+        :type enable_bandwidth_rules: bool
+        :param rule_quota: 功能说明：带宽支持的最大分组规则数。（该字段仅在上海1局点返回）
+        :type rule_quota: int
+        :param bandwidth_rules: 功能说明：带宽规则对象（该字段仅在上海1局点返回）
+        :type bandwidth_rules: list[:class:`huaweicloudsdkeip.v2.BandWidthRules`]
+        :param created_at: 功能说明：资源创建时间，UTC时间  格式： yyyy-MM-ddTHH:mm:ss
+        :type created_at: str
+        :param updated_at: 功能说明：资源更新时间，UTC时间  格式： yyyy-MM-ddTHH:mm:ss
+        :type updated_at: str
+        :param public_border_group: 功能说明：表示中心站点资源或者边缘站点资源 取值范围： center、边缘站点名称 约束：共享带宽只能绑定与该字段相同的publicip
+        :type public_border_group: str
+        """
         
         
 
@@ -138,7 +175,7 @@ class BandwidthResp:
         功能说明：带宽类型，共享带宽默认为share。  取值范围：share，bgp，telcom，sbgp等。  share：共享带宽  bgp：动态bgp  telcom ：联通  sbgp：静态bgp
 
         :param bandwidth_type: The bandwidth_type of this BandwidthResp.
-        :type: str
+        :type bandwidth_type: str
         """
         self._bandwidth_type = bandwidth_type
 
@@ -160,7 +197,7 @@ class BandwidthResp:
         功能说明：账单信息  如果billinginfo不为空，说明是包周期的带宽
 
         :param billing_info: The billing_info of this BandwidthResp.
-        :type: str
+        :type billing_info: str
         """
         self._billing_info = billing_info
 
@@ -182,7 +219,7 @@ class BandwidthResp:
         功能说明：按流量计费,按带宽计费还是按增强型95计费。  取值范围：bandwidth，traffic，95peak_plus(按增强型95计费)不返回或者为空时表示是bandwidth。  约束：只有共享带宽支持95peak_plus（按增强型95计费），按增强型95计费时需要指定保底百分比，默认是20%。
 
         :param charge_mode: The charge_mode of this BandwidthResp.
-        :type: str
+        :type charge_mode: str
         """
         self._charge_mode = charge_mode
 
@@ -204,7 +241,7 @@ class BandwidthResp:
         功能说明：带宽唯一标识
 
         :param id: The id of this BandwidthResp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -226,7 +263,7 @@ class BandwidthResp:
         功能说明：带宽名称  取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
         :param name: The name of this BandwidthResp.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -237,7 +274,7 @@ class BandwidthResp:
         功能说明：带宽对应的弹性公网IP信息  约束：WHOLE类型的带宽支持多个弹性公网IP，PER类型的带宽只能对应一个弹性公网IP
 
         :return: The publicip_info of this BandwidthResp.
-        :rtype: list[PublicipInfoResp]
+        :rtype: list[:class:`huaweicloudsdkeip.v2.PublicipInfoResp`]
         """
         return self._publicip_info
 
@@ -248,7 +285,7 @@ class BandwidthResp:
         功能说明：带宽对应的弹性公网IP信息  约束：WHOLE类型的带宽支持多个弹性公网IP，PER类型的带宽只能对应一个弹性公网IP
 
         :param publicip_info: The publicip_info of this BandwidthResp.
-        :type: list[PublicipInfoResp]
+        :type publicip_info: list[:class:`huaweicloudsdkeip.v2.PublicipInfoResp`]
         """
         self._publicip_info = publicip_info
 
@@ -270,7 +307,7 @@ class BandwidthResp:
         功能说明：带宽类型，标识是否是共享带宽  取值范围：WHOLE，PER  WHOLE表示共享带宽；PER，表示独享带宽
 
         :param share_type: The share_type of this BandwidthResp.
-        :type: str
+        :type share_type: str
         """
         self._share_type = share_type
 
@@ -292,7 +329,7 @@ class BandwidthResp:
         功能说明：带宽大小  取值范围：默认5Mbit/s~2000Mbit/s（具体范围以各区域配置为准，请参见控制台对应页面显示）。
 
         :param size: The size of this BandwidthResp.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -314,7 +351,7 @@ class BandwidthResp:
         功能说明：用户所属租户ID
 
         :param tenant_id: The tenant_id of this BandwidthResp.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 
@@ -336,7 +373,7 @@ class BandwidthResp:
         企业项目ID。最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。  创建带宽时，给带宽绑定企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this BandwidthResp.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -358,7 +395,7 @@ class BandwidthResp:
         功能说明：带宽的状态  取值范围：  FREEZED：冻结  NORMAL：正常
 
         :param status: The status of this BandwidthResp.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -380,7 +417,7 @@ class BandwidthResp:
         功能说明：是否开启企业级qos，仅共享带宽支持开启。（该字段仅在上海1局点返回）
 
         :param enable_bandwidth_rules: The enable_bandwidth_rules of this BandwidthResp.
-        :type: bool
+        :type enable_bandwidth_rules: bool
         """
         self._enable_bandwidth_rules = enable_bandwidth_rules
 
@@ -402,7 +439,7 @@ class BandwidthResp:
         功能说明：带宽支持的最大分组规则数。（该字段仅在上海1局点返回）
 
         :param rule_quota: The rule_quota of this BandwidthResp.
-        :type: int
+        :type rule_quota: int
         """
         self._rule_quota = rule_quota
 
@@ -413,7 +450,7 @@ class BandwidthResp:
         功能说明：带宽规则对象（该字段仅在上海1局点返回）
 
         :return: The bandwidth_rules of this BandwidthResp.
-        :rtype: list[BandWidthRules]
+        :rtype: list[:class:`huaweicloudsdkeip.v2.BandWidthRules`]
         """
         return self._bandwidth_rules
 
@@ -424,7 +461,7 @@ class BandwidthResp:
         功能说明：带宽规则对象（该字段仅在上海1局点返回）
 
         :param bandwidth_rules: The bandwidth_rules of this BandwidthResp.
-        :type: list[BandWidthRules]
+        :type bandwidth_rules: list[:class:`huaweicloudsdkeip.v2.BandWidthRules`]
         """
         self._bandwidth_rules = bandwidth_rules
 
@@ -446,7 +483,7 @@ class BandwidthResp:
         功能说明：资源创建时间，UTC时间  格式： yyyy-MM-ddTHH:mm:ss
 
         :param created_at: The created_at of this BandwidthResp.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -468,7 +505,7 @@ class BandwidthResp:
         功能说明：资源更新时间，UTC时间  格式： yyyy-MM-ddTHH:mm:ss
 
         :param updated_at: The updated_at of this BandwidthResp.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 
@@ -490,7 +527,7 @@ class BandwidthResp:
         功能说明：表示中心站点资源或者边缘站点资源 取值范围： center、边缘站点名称 约束：共享带宽只能绑定与该字段相同的publicip
 
         :param public_border_group: The public_border_group of this BandwidthResp.
-        :type: str
+        :type public_border_group: str
         """
         self._public_border_group = public_border_group
 

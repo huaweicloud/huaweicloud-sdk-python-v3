@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ConsumeMessagesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ConsumeMessagesResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ConsumeMessagesResponse - a model defined in huaweicloud sdk"""
+        """ConsumeMessagesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param body: 消息数组。
+        :type body: list[:class:`huaweicloudsdkdms.v2.ConsumeMessage`]
+        """
         
         super(ConsumeMessagesResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ConsumeMessagesResponse(SdkResponse):
         消息数组。
 
         :return: The body of this ConsumeMessagesResponse.
-        :rtype: list[ConsumeMessage]
+        :rtype: list[:class:`huaweicloudsdkdms.v2.ConsumeMessage`]
         """
         return self._body
 
@@ -58,7 +63,7 @@ class ConsumeMessagesResponse(SdkResponse):
         消息数组。
 
         :param body: The body of this ConsumeMessagesResponse.
-        :type: list[ConsumeMessage]
+        :type body: list[:class:`huaweicloudsdkdms.v2.ConsumeMessage`]
         """
         self._body = body
 

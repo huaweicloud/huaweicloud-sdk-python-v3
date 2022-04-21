@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateUserResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -64,7 +63,47 @@ class CreateUserResult:
     }
 
     def __init__(self, access_mode=None, status=None, pwd_status=None, xuser_id=None, xuser_type=None, description=None, name=None, phone=None, is_domain_owner=None, domain_id=None, enabled=None, areacode=None, email=None, create_time=None, xdomain_id=None, xdomain_type=None, id=None, password_expires_at=None):
-        """CreateUserResult - a model defined in huaweicloud sdk"""
+        """CreateUserResult
+
+        The model defined in huaweicloud sdk
+
+        :param access_mode: IAM用户访问方式。 - default：默认访问模式，编程访问和管理控制台访问。 - programmatic：编程访问。 - console：管理控制台访问。
+        :type access_mode: str
+        :param status: IAM用户状态信息。
+        :type status: int
+        :param pwd_status: IAM用户首次登录是否重置密码。
+        :type pwd_status: bool
+        :param xuser_id: IAM用户在外部系统中的ID。 &gt;外部系统指与华为云对接的外部企业管理系统，xaccount_type、xaccount_id、xdomain_type、xdomain_id、xuser_type、xuser_id等参数值，无法在华为云获取，请咨询企业管理员。
+        :type xuser_id: str
+        :param xuser_type: 用户在外部系统中的类型。 &gt;外部系统指与华为云对接的外部企业管理系统，xaccount_type、xaccount_id、xdomain_type、xdomain_id、xuser_type、xuser_id等参数值，无法在华为云获取，请咨询企业管理员。
+        :type xuser_type: str
+        :param description: IAM用户描述信息。
+        :type description: str
+        :param name: IAM用户名，长度5~32字符之间，首位不能为数字，特殊字符只能包含下划线“_”、中划线“-”和空格。
+        :type name: str
+        :param phone: IAM用户手机号，纯数字，长度小于等于32字符。必须与国家码同时存在。
+        :type phone: str
+        :param is_domain_owner: IAM用户是否为账号管理员。
+        :type is_domain_owner: bool
+        :param domain_id: IAM用户所属账号ID。
+        :type domain_id: str
+        :param enabled: 是否启用IAM用户。true为启用，false为停用，默认为true。
+        :type enabled: bool
+        :param areacode: 国家码。中国大陆为“0086”。
+        :type areacode: str
+        :param email: IAM用户邮箱。
+        :type email: str
+        :param create_time: IAM用户创建时间。
+        :type create_time: str
+        :param xdomain_id: 运营主体的客户编码。
+        :type xdomain_id: str
+        :param xdomain_type: 运营主体。
+        :type xdomain_type: str
+        :param id: IAM用户ID。
+        :type id: str
+        :param password_expires_at: 密码过期时间（UTC时间），“null”表示密码不过期。
+        :type password_expires_at: str
+        """
         
         
 
@@ -139,7 +178,7 @@ class CreateUserResult:
         IAM用户访问方式。 - default：默认访问模式，编程访问和管理控制台访问。 - programmatic：编程访问。 - console：管理控制台访问。
 
         :param access_mode: The access_mode of this CreateUserResult.
-        :type: str
+        :type access_mode: str
         """
         self._access_mode = access_mode
 
@@ -161,7 +200,7 @@ class CreateUserResult:
         IAM用户状态信息。
 
         :param status: The status of this CreateUserResult.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -183,7 +222,7 @@ class CreateUserResult:
         IAM用户首次登录是否重置密码。
 
         :param pwd_status: The pwd_status of this CreateUserResult.
-        :type: bool
+        :type pwd_status: bool
         """
         self._pwd_status = pwd_status
 
@@ -205,7 +244,7 @@ class CreateUserResult:
         IAM用户在外部系统中的ID。 >外部系统指与华为云对接的外部企业管理系统，xaccount_type、xaccount_id、xdomain_type、xdomain_id、xuser_type、xuser_id等参数值，无法在华为云获取，请咨询企业管理员。
 
         :param xuser_id: The xuser_id of this CreateUserResult.
-        :type: str
+        :type xuser_id: str
         """
         self._xuser_id = xuser_id
 
@@ -227,7 +266,7 @@ class CreateUserResult:
         用户在外部系统中的类型。 >外部系统指与华为云对接的外部企业管理系统，xaccount_type、xaccount_id、xdomain_type、xdomain_id、xuser_type、xuser_id等参数值，无法在华为云获取，请咨询企业管理员。
 
         :param xuser_type: The xuser_type of this CreateUserResult.
-        :type: str
+        :type xuser_type: str
         """
         self._xuser_type = xuser_type
 
@@ -249,7 +288,7 @@ class CreateUserResult:
         IAM用户描述信息。
 
         :param description: The description of this CreateUserResult.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -271,7 +310,7 @@ class CreateUserResult:
         IAM用户名，长度5~32字符之间，首位不能为数字，特殊字符只能包含下划线“_”、中划线“-”和空格。
 
         :param name: The name of this CreateUserResult.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -293,7 +332,7 @@ class CreateUserResult:
         IAM用户手机号，纯数字，长度小于等于32字符。必须与国家码同时存在。
 
         :param phone: The phone of this CreateUserResult.
-        :type: str
+        :type phone: str
         """
         self._phone = phone
 
@@ -315,7 +354,7 @@ class CreateUserResult:
         IAM用户是否为账号管理员。
 
         :param is_domain_owner: The is_domain_owner of this CreateUserResult.
-        :type: bool
+        :type is_domain_owner: bool
         """
         self._is_domain_owner = is_domain_owner
 
@@ -337,7 +376,7 @@ class CreateUserResult:
         IAM用户所属账号ID。
 
         :param domain_id: The domain_id of this CreateUserResult.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -359,7 +398,7 @@ class CreateUserResult:
         是否启用IAM用户。true为启用，false为停用，默认为true。
 
         :param enabled: The enabled of this CreateUserResult.
-        :type: bool
+        :type enabled: bool
         """
         self._enabled = enabled
 
@@ -381,7 +420,7 @@ class CreateUserResult:
         国家码。中国大陆为“0086”。
 
         :param areacode: The areacode of this CreateUserResult.
-        :type: str
+        :type areacode: str
         """
         self._areacode = areacode
 
@@ -403,7 +442,7 @@ class CreateUserResult:
         IAM用户邮箱。
 
         :param email: The email of this CreateUserResult.
-        :type: str
+        :type email: str
         """
         self._email = email
 
@@ -425,7 +464,7 @@ class CreateUserResult:
         IAM用户创建时间。
 
         :param create_time: The create_time of this CreateUserResult.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -447,7 +486,7 @@ class CreateUserResult:
         运营主体的客户编码。
 
         :param xdomain_id: The xdomain_id of this CreateUserResult.
-        :type: str
+        :type xdomain_id: str
         """
         self._xdomain_id = xdomain_id
 
@@ -469,7 +508,7 @@ class CreateUserResult:
         运营主体。
 
         :param xdomain_type: The xdomain_type of this CreateUserResult.
-        :type: str
+        :type xdomain_type: str
         """
         self._xdomain_type = xdomain_type
 
@@ -491,7 +530,7 @@ class CreateUserResult:
         IAM用户ID。
 
         :param id: The id of this CreateUserResult.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -513,7 +552,7 @@ class CreateUserResult:
         密码过期时间（UTC时间），“null”表示密码不过期。
 
         :param password_expires_at: The password_expires_at of this CreateUserResult.
-        :type: str
+        :type password_expires_at: str
         """
         self._password_expires_at = password_expires_at
 

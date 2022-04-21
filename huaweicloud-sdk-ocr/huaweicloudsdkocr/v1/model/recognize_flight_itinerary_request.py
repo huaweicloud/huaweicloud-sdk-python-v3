@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RecognizeFlightItineraryRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RecognizeFlightItineraryRequest:
     }
 
     def __init__(self, body=None):
-        """RecognizeFlightItineraryRequest - a model defined in huaweicloud sdk"""
+        """RecognizeFlightItineraryRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the RecognizeFlightItineraryRequest
+        :type body: :class:`huaweicloudsdkocr.v1.FlightItineraryRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class RecognizeFlightItineraryRequest:
 
 
         :return: The body of this RecognizeFlightItineraryRequest.
-        :rtype: FlightItineraryRequestBody
+        :rtype: :class:`huaweicloudsdkocr.v1.FlightItineraryRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class RecognizeFlightItineraryRequest:
 
 
         :param body: The body of this RecognizeFlightItineraryRequest.
-        :type: FlightItineraryRequestBody
+        :type body: :class:`huaweicloudsdkocr.v1.FlightItineraryRequestBody`
         """
         self._body = body
 

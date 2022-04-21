@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EnvVariableCreate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class EnvVariableCreate:
     }
 
     def __init__(self, variable_value=None, env_id=None, group_id=None, variable_name=None):
-        """EnvVariableCreate - a model defined in huaweicloud sdk"""
+        """EnvVariableCreate
+
+        The model defined in huaweicloud sdk
+
+        :param variable_value: 变量值支持英文字母、数字、英文格式的下划线、中划线，斜线（/）、点、冒号，1 ~ 255个字符。
+        :type variable_value: str
+        :param env_id: 环境编号
+        :type env_id: str
+        :param group_id: API分组编号
+        :type group_id: str
+        :param variable_name: 变量名，支持英文字母、数字、英文格式的下划线、中划线，必须以英文字母开头，3~32个字符。在API定义中等于#Name的值#部分（区分大小写），发布到环境里的API被变量值换。 &gt; 中文字符必须为UTF-8或者unicode编码。
+        :type variable_name: str
+        """
         
         
 
@@ -72,7 +83,7 @@ class EnvVariableCreate:
         变量值支持英文字母、数字、英文格式的下划线、中划线，斜线（/）、点、冒号，1 ~ 255个字符。
 
         :param variable_value: The variable_value of this EnvVariableCreate.
-        :type: str
+        :type variable_value: str
         """
         self._variable_value = variable_value
 
@@ -94,7 +105,7 @@ class EnvVariableCreate:
         环境编号
 
         :param env_id: The env_id of this EnvVariableCreate.
-        :type: str
+        :type env_id: str
         """
         self._env_id = env_id
 
@@ -116,7 +127,7 @@ class EnvVariableCreate:
         API分组编号
 
         :param group_id: The group_id of this EnvVariableCreate.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -138,7 +149,7 @@ class EnvVariableCreate:
         变量名，支持英文字母、数字、英文格式的下划线、中划线，必须以英文字母开头，3~32个字符。在API定义中等于#Name的值#部分（区分大小写），发布到环境里的API被变量值换。 > 中文字符必须为UTF-8或者unicode编码。
 
         :param variable_name: The variable_name of this EnvVariableCreate.
-        :type: str
+        :type variable_name: str
         """
         self._variable_name = variable_name
 

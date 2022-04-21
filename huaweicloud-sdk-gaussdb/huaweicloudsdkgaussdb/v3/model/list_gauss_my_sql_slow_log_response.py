@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListGaussMySqlSlowLogResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListGaussMySqlSlowLogResponse(SdkResponse):
     }
 
     def __init__(self, slow_log_list=None, long_query_time=None, total_record=None):
-        """ListGaussMySqlSlowLogResponse - a model defined in huaweicloud sdk"""
+        """ListGaussMySqlSlowLogResponse
+
+        The model defined in huaweicloud sdk
+
+        :param slow_log_list: 错误日志具体信息。
+        :type slow_log_list: list[:class:`huaweicloudsdkgaussdb.v3.MysqlSlowLogList`]
+        :param long_query_time: 慢日志阈值。
+        :type long_query_time: str
+        :param total_record: 总记录数。
+        :type total_record: int
+        """
         
         super(ListGaussMySqlSlowLogResponse, self).__init__()
 
@@ -57,7 +66,7 @@ class ListGaussMySqlSlowLogResponse(SdkResponse):
         错误日志具体信息。
 
         :return: The slow_log_list of this ListGaussMySqlSlowLogResponse.
-        :rtype: list[MysqlSlowLogList]
+        :rtype: list[:class:`huaweicloudsdkgaussdb.v3.MysqlSlowLogList`]
         """
         return self._slow_log_list
 
@@ -68,7 +77,7 @@ class ListGaussMySqlSlowLogResponse(SdkResponse):
         错误日志具体信息。
 
         :param slow_log_list: The slow_log_list of this ListGaussMySqlSlowLogResponse.
-        :type: list[MysqlSlowLogList]
+        :type slow_log_list: list[:class:`huaweicloudsdkgaussdb.v3.MysqlSlowLogList`]
         """
         self._slow_log_list = slow_log_list
 
@@ -90,7 +99,7 @@ class ListGaussMySqlSlowLogResponse(SdkResponse):
         慢日志阈值。
 
         :param long_query_time: The long_query_time of this ListGaussMySqlSlowLogResponse.
-        :type: str
+        :type long_query_time: str
         """
         self._long_query_time = long_query_time
 
@@ -112,7 +121,7 @@ class ListGaussMySqlSlowLogResponse(SdkResponse):
         总记录数。
 
         :param total_record: The total_record of this ListGaussMySqlSlowLogResponse.
-        :type: int
+        :type total_record: int
         """
         self._total_record = total_record
 

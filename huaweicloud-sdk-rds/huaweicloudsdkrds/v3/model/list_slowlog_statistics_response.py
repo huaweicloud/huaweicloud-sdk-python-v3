@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSlowlogStatisticsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListSlowlogStatisticsResponse(SdkResponse):
     }
 
     def __init__(self, page_number=None, page_record=None, slow_log_list=None, total_record=None, start_time=None, end_time=None):
-        """ListSlowlogStatisticsResponse - a model defined in huaweicloud sdk"""
+        """ListSlowlogStatisticsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param page_number: 当前页码
+        :type page_number: int
+        :param page_record: 每页条数
+        :type page_record: int
+        :param slow_log_list: 慢日志列表
+        :type slow_log_list: list[:class:`huaweicloudsdkrds.v3.SlowLogStatistics`]
+        :param total_record: 总条数
+        :type total_record: int
+        :param start_time: 开始时间
+        :type start_time: int
+        :param end_time: 结束时间
+        :type end_time: int
+        """
         
         super(ListSlowlogStatisticsResponse, self).__init__()
 
@@ -83,7 +98,7 @@ class ListSlowlogStatisticsResponse(SdkResponse):
         当前页码
 
         :param page_number: The page_number of this ListSlowlogStatisticsResponse.
-        :type: int
+        :type page_number: int
         """
         self._page_number = page_number
 
@@ -105,7 +120,7 @@ class ListSlowlogStatisticsResponse(SdkResponse):
         每页条数
 
         :param page_record: The page_record of this ListSlowlogStatisticsResponse.
-        :type: int
+        :type page_record: int
         """
         self._page_record = page_record
 
@@ -116,7 +131,7 @@ class ListSlowlogStatisticsResponse(SdkResponse):
         慢日志列表
 
         :return: The slow_log_list of this ListSlowlogStatisticsResponse.
-        :rtype: list[SlowLogStatistics]
+        :rtype: list[:class:`huaweicloudsdkrds.v3.SlowLogStatistics`]
         """
         return self._slow_log_list
 
@@ -127,7 +142,7 @@ class ListSlowlogStatisticsResponse(SdkResponse):
         慢日志列表
 
         :param slow_log_list: The slow_log_list of this ListSlowlogStatisticsResponse.
-        :type: list[SlowLogStatistics]
+        :type slow_log_list: list[:class:`huaweicloudsdkrds.v3.SlowLogStatistics`]
         """
         self._slow_log_list = slow_log_list
 
@@ -149,7 +164,7 @@ class ListSlowlogStatisticsResponse(SdkResponse):
         总条数
 
         :param total_record: The total_record of this ListSlowlogStatisticsResponse.
-        :type: int
+        :type total_record: int
         """
         self._total_record = total_record
 
@@ -171,7 +186,7 @@ class ListSlowlogStatisticsResponse(SdkResponse):
         开始时间
 
         :param start_time: The start_time of this ListSlowlogStatisticsResponse.
-        :type: int
+        :type start_time: int
         """
         self._start_time = start_time
 
@@ -193,7 +208,7 @@ class ListSlowlogStatisticsResponse(SdkResponse):
         结束时间
 
         :param end_time: The end_time of this ListSlowlogStatisticsResponse.
-        :type: int
+        :type end_time: int
         """
         self._end_time = end_time
 

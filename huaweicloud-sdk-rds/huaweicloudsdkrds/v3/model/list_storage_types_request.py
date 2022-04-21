@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListStorageTypesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListStorageTypesRequest:
     }
 
     def __init__(self, x_language=None, database_name=None, version_name=None, ha_mode=None):
-        """ListStorageTypesRequest - a model defined in huaweicloud sdk"""
+        """ListStorageTypesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言
+        :type x_language: str
+        :param database_name: 数据库引擎。支持的引擎如下，不区分大小写： MySQL PostgreSQL SQLServer
+        :type database_name: str
+        :param version_name: 数据库版本号。
+        :type version_name: str
+        :param ha_mode: 主备模式： single：单机模式。 ha：主备模式。 replica：只读模式。
+        :type ha_mode: str
+        """
         
         
 
@@ -71,7 +82,7 @@ class ListStorageTypesRequest:
         语言
 
         :param x_language: The x_language of this ListStorageTypesRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -93,7 +104,7 @@ class ListStorageTypesRequest:
         数据库引擎。支持的引擎如下，不区分大小写： MySQL PostgreSQL SQLServer
 
         :param database_name: The database_name of this ListStorageTypesRequest.
-        :type: str
+        :type database_name: str
         """
         self._database_name = database_name
 
@@ -115,7 +126,7 @@ class ListStorageTypesRequest:
         数据库版本号。
 
         :param version_name: The version_name of this ListStorageTypesRequest.
-        :type: str
+        :type version_name: str
         """
         self._version_name = version_name
 
@@ -137,7 +148,7 @@ class ListStorageTypesRequest:
         主备模式： single：单机模式。 ha：主备模式。 replica：只读模式。
 
         :param ha_mode: The ha_mode of this ListStorageTypesRequest.
-        :type: str
+        :type ha_mode: str
         """
         self._ha_mode = ha_mode
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AttachEipResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class AttachEipResponse(SdkResponse):
     }
 
     def __init__(self):
-        """AttachEipResponse - a model defined in huaweicloud sdk"""
+        """AttachEipResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(AttachEipResponse, self).__init__()
         self.discriminator = None

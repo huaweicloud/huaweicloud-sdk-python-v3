@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExportCertificateRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ExportCertificateRequestBody:
     }
 
     def __init__(self, is_compressed=None, type=None):
-        """ExportCertificateRequestBody - a model defined in huaweicloud sdk"""
+        """ExportCertificateRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param is_compressed: 是否压缩。   - **true**   - **false**
+        :type is_compressed: str
+        :param type: 根据服务器类型选择下载证书的形式，支持以下五种类型：   - **APACHE** : apache服务器推荐使用此参数；   - **NGINX** : nginx服务器推荐使用此参数；   - **IIS** : windows服务器推荐使用此参数；   - **TOMCAT** : tomcat服务器推荐使用此参数；   - **OTHER** : 下载PEM格式证书，推荐使用此参数。
+        :type type: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ExportCertificateRequestBody:
         是否压缩。   - **true**   - **false**
 
         :param is_compressed: The is_compressed of this ExportCertificateRequestBody.
-        :type: str
+        :type is_compressed: str
         """
         self._is_compressed = is_compressed
 
@@ -83,7 +90,7 @@ class ExportCertificateRequestBody:
         根据服务器类型选择下载证书的形式，支持以下五种类型：   - **APACHE** : apache服务器推荐使用此参数；   - **NGINX** : nginx服务器推荐使用此参数；   - **IIS** : windows服务器推荐使用此参数；   - **TOMCAT** : tomcat服务器推荐使用此参数；   - **OTHER** : 下载PEM格式证书，推荐使用此参数。
 
         :param type: The type of this ExportCertificateRequestBody.
-        :type: str
+        :type type: str
         """
         self._type = type
 

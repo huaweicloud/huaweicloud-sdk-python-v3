@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExtraInfoList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ExtraInfoList:
     }
 
     def __init__(self, item=None, value=None, note=None):
-        """ExtraInfoList - a model defined in huaweicloud sdk"""
+        """ExtraInfoList
+
+        The model defined in huaweicloud sdk
+
+        :param item: 表示key值，可能是qq, wechat, alipay及bank等。 
+        :type item: str
+        :param value: 表示value值，对应qq, wechat, alipay及bank等的账号。 
+        :type value: str
+        :param note: 对应item关联的额外信息，为bank时第一个默认为户名，第二个为开户行，为alipay时第一个默认为账号名。 
+        :type note: list[str]
+        """
         
         
 
@@ -68,7 +77,7 @@ class ExtraInfoList:
         表示key值，可能是qq, wechat, alipay及bank等。 
 
         :param item: The item of this ExtraInfoList.
-        :type: str
+        :type item: str
         """
         self._item = item
 
@@ -90,7 +99,7 @@ class ExtraInfoList:
         表示value值，对应qq, wechat, alipay及bank等的账号。 
 
         :param value: The value of this ExtraInfoList.
-        :type: str
+        :type value: str
         """
         self._value = value
 
@@ -112,7 +121,7 @@ class ExtraInfoList:
         对应item关联的额外信息，为bank时第一个默认为户名，第二个为开户行，为alipay时第一个默认为账号名。 
 
         :param note: The note of this ExtraInfoList.
-        :type: list[str]
+        :type note: list[str]
         """
         self._note = note
 

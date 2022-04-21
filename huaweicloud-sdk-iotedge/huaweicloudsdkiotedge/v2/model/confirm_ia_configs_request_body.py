@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ConfirmIaConfigsRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ConfirmIaConfigsRequestBody:
     }
 
     def __init__(self, configs=None):
-        """ConfirmIaConfigsRequestBody - a model defined in huaweicloud sdk"""
+        """ConfirmIaConfigsRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param configs: 确认配置项列表
+        :type configs: list[:class:`huaweicloudsdkiotedge.v2.ConfirmIaConfigRequestBody`]
+        """
         
         
 
@@ -47,7 +52,7 @@ class ConfirmIaConfigsRequestBody:
         确认配置项列表
 
         :return: The configs of this ConfirmIaConfigsRequestBody.
-        :rtype: list[ConfirmIaConfigRequestBody]
+        :rtype: list[:class:`huaweicloudsdkiotedge.v2.ConfirmIaConfigRequestBody`]
         """
         return self._configs
 
@@ -58,7 +63,7 @@ class ConfirmIaConfigsRequestBody:
         确认配置项列表
 
         :param configs: The configs of this ConfirmIaConfigsRequestBody.
-        :type: list[ConfirmIaConfigRequestBody]
+        :type configs: list[:class:`huaweicloudsdkiotedge.v2.ConfirmIaConfigRequestBody`]
         """
         self._configs = configs
 

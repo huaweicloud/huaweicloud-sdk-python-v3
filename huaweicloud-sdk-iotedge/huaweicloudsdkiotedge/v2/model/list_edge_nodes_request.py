@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListEdgeNodesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ListEdgeNodesRequest:
     }
 
     def __init__(self, name=None, state=None, type=None, instance_id=None, space_id=None, node_ids=None, offset=None, limit=None):
-        """ListEdgeNodesRequest - a model defined in huaweicloud sdk"""
+        """ListEdgeNodesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param name: 节点名称
+        :type name: str
+        :param state: 节点状态,OFFLINE|ONLINE|UNINSTALLED|INSTALLED|DELETING|UPGRADING
+        :type state: str
+        :param type: 节点所属资源类型，advanced|standard
+        :type type: str
+        :param instance_id: 实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
+        :type instance_id: str
+        :param space_id: 资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，可以携带该参数查询指定资源空间下的设备列表，不携带该参数则会查询该用户下所有设备列表。
+        :type space_id: str
+        :param node_ids: 节点id列表,查询ID在给的节点ID列表内的节点信息
+        :type node_ids: list[str]
+        :param offset: 查询的起始位置，取值范围为非负整数，默认为0
+        :type offset: int
+        :param limit: 每页记录数，默认值为10，取值区间为1-1000
+        :type limit: int
+        """
         
         
 
@@ -93,7 +112,7 @@ class ListEdgeNodesRequest:
         节点名称
 
         :param name: The name of this ListEdgeNodesRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -115,7 +134,7 @@ class ListEdgeNodesRequest:
         节点状态,OFFLINE|ONLINE|UNINSTALLED|INSTALLED|DELETING|UPGRADING
 
         :param state: The state of this ListEdgeNodesRequest.
-        :type: str
+        :type state: str
         """
         self._state = state
 
@@ -137,7 +156,7 @@ class ListEdgeNodesRequest:
         节点所属资源类型，advanced|standard
 
         :param type: The type of this ListEdgeNodesRequest.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -159,7 +178,7 @@ class ListEdgeNodesRequest:
         实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
         :param instance_id: The instance_id of this ListEdgeNodesRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -181,7 +200,7 @@ class ListEdgeNodesRequest:
         资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，可以携带该参数查询指定资源空间下的设备列表，不携带该参数则会查询该用户下所有设备列表。
 
         :param space_id: The space_id of this ListEdgeNodesRequest.
-        :type: str
+        :type space_id: str
         """
         self._space_id = space_id
 
@@ -203,7 +222,7 @@ class ListEdgeNodesRequest:
         节点id列表,查询ID在给的节点ID列表内的节点信息
 
         :param node_ids: The node_ids of this ListEdgeNodesRequest.
-        :type: list[str]
+        :type node_ids: list[str]
         """
         self._node_ids = node_ids
 
@@ -225,7 +244,7 @@ class ListEdgeNodesRequest:
         查询的起始位置，取值范围为非负整数，默认为0
 
         :param offset: The offset of this ListEdgeNodesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -247,7 +266,7 @@ class ListEdgeNodesRequest:
         每页记录数，默认值为10，取值区间为1-1000
 
         :param limit: The limit of this ListEdgeNodesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowTemplateRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowTemplateRequest:
     }
 
     def __init__(self, id=None):
-        """ShowTemplateRequest - a model defined in huaweicloud sdk"""
+        """ShowTemplateRequest
+
+        The model defined in huaweicloud sdk
+
+        :param id: 需要查询的模板信息的id
+        :type id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowTemplateRequest:
         需要查询的模板信息的id
 
         :param id: The id of this ShowTemplateRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 

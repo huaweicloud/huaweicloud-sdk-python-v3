@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UploadProtocolMappingsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UploadProtocolMappingsRequest:
     }
 
     def __init__(self, product_id=None, body=None):
-        """UploadProtocolMappingsRequest - a model defined in huaweicloud sdk"""
+        """UploadProtocolMappingsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param product_id: 设备关联的产品ID，用于唯一标识一个产品模型，在管理门户导入产品模型后由平台分配获得。
+        :type product_id: str
+        :param body: Body of the UploadProtocolMappingsRequest
+        :type body: :class:`huaweicloudsdkiotedge.v2.UploadProtocolMappingsRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UploadProtocolMappingsRequest:
         设备关联的产品ID，用于唯一标识一个产品模型，在管理门户导入产品模型后由平台分配获得。
 
         :param product_id: The product_id of this UploadProtocolMappingsRequest.
-        :type: str
+        :type product_id: str
         """
         self._product_id = product_id
 
@@ -72,7 +79,7 @@ class UploadProtocolMappingsRequest:
 
 
         :return: The body of this UploadProtocolMappingsRequest.
-        :rtype: UploadProtocolMappingsRequestBody
+        :rtype: :class:`huaweicloudsdkiotedge.v2.UploadProtocolMappingsRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UploadProtocolMappingsRequest:
 
 
         :param body: The body of this UploadProtocolMappingsRequest.
-        :type: UploadProtocolMappingsRequestBody
+        :type body: :class:`huaweicloudsdkiotedge.v2.UploadProtocolMappingsRequestBody`
         """
         self._body = body
 

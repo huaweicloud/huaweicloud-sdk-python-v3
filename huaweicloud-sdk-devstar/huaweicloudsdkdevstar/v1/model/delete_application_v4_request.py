@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteApplicationV4Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class DeleteApplicationV4Request:
     }
 
     def __init__(self, application_id=None, is_delete_repository=None, pipeline_ids=None):
-        """DeleteApplicationV4Request - a model defined in huaweicloud sdk"""
+        """DeleteApplicationV4Request
+
+        The model defined in huaweicloud sdk
+
+        :param application_id: 应用id
+        :type application_id: str
+        :param is_delete_repository: 是否删除代码仓
+        :type is_delete_repository: bool
+        :param pipeline_ids: 删除流水线ID,多流水线逗号隔开
+        :type pipeline_ids: str
+        """
         
         
 
@@ -67,7 +76,7 @@ class DeleteApplicationV4Request:
         应用id
 
         :param application_id: The application_id of this DeleteApplicationV4Request.
-        :type: str
+        :type application_id: str
         """
         self._application_id = application_id
 
@@ -89,7 +98,7 @@ class DeleteApplicationV4Request:
         是否删除代码仓
 
         :param is_delete_repository: The is_delete_repository of this DeleteApplicationV4Request.
-        :type: bool
+        :type is_delete_repository: bool
         """
         self._is_delete_repository = is_delete_repository
 
@@ -111,7 +120,7 @@ class DeleteApplicationV4Request:
         删除流水线ID,多流水线逗号隔开
 
         :param pipeline_ids: The pipeline_ids of this DeleteApplicationV4Request.
-        :type: str
+        :type pipeline_ids: str
         """
         self._pipeline_ids = pipeline_ids
 

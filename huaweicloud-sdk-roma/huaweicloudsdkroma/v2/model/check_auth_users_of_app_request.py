@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CheckAuthUsersOfAppRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CheckAuthUsersOfAppRequest:
     }
 
     def __init__(self, app_id=None, instance_id=None, user_name=None):
-        """CheckAuthUsersOfAppRequest - a model defined in huaweicloud sdk"""
+        """CheckAuthUsersOfAppRequest
+
+        The model defined in huaweicloud sdk
+
+        :param app_id: 应用ID
+        :type app_id: str
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param user_name: 查询应用的指定名称的成员，精确匹配
+        :type user_name: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class CheckAuthUsersOfAppRequest:
         应用ID
 
         :param app_id: The app_id of this CheckAuthUsersOfAppRequest.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -88,7 +97,7 @@ class CheckAuthUsersOfAppRequest:
         实例ID
 
         :param instance_id: The instance_id of this CheckAuthUsersOfAppRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -110,7 +119,7 @@ class CheckAuthUsersOfAppRequest:
         查询应用的指定名称的成员，精确匹配
 
         :param user_name: The user_name of this CheckAuthUsersOfAppRequest.
-        :type: str
+        :type user_name: str
         """
         self._user_name = user_name
 

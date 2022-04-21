@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UploadProductRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UploadProductRequestBody:
     }
 
     def __init__(self, file=None):
-        """UploadProductRequestBody - a model defined in huaweicloud sdk"""
+        """UploadProductRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param file: 上传产品文件(.csv格式)
+        :type file: :class:`huaweicloudsdkcore.http.formdata.FormFile`
+        """
         
         
 
@@ -47,7 +52,7 @@ class UploadProductRequestBody:
         上传产品文件(.csv格式)
 
         :return: The file of this UploadProductRequestBody.
-        :rtype: file
+        :rtype: :class:`huaweicloudsdkcore.http.formdata.FormFile`
         """
         return self._file
 
@@ -58,7 +63,7 @@ class UploadProductRequestBody:
         上传产品文件(.csv格式)
 
         :param file: The file of this UploadProductRequestBody.
-        :type: file
+        :type file: :class:`huaweicloudsdkcore.http.formdata.FormFile`
         """
         self._file = file
 

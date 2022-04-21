@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OutputVideoPara:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class OutputVideoPara:
     }
 
     def __init__(self, template_id=None, size=None, pack=None, video=None, audio=None, file_name=None, conver_duration=None, error=None):
-        """OutputVideoPara - a model defined in huaweicloud sdk"""
+        """OutputVideoPara
+
+        The model defined in huaweicloud sdk
+
+        :param template_id: 输出视频对应的模板ID 
+        :type template_id: int
+        :param size: 视频大小 
+        :type size: int
+        :param pack: 视频封装格式 
+        :type pack: str
+        :param video: 
+        :type video: :class:`huaweicloudsdkmpc.v1.VideoInfo`
+        :param audio: 
+        :type audio: :class:`huaweicloudsdkmpc.v1.AudioInfo`
+        :param file_name: 输出片源文件名 
+        :type file_name: str
+        :param conver_duration: 折算后视频时长 
+        :type conver_duration: float
+        :param error: 
+        :type error: :class:`huaweicloudsdkmpc.v1.XCodeError`
+        """
         
         
 
@@ -93,7 +112,7 @@ class OutputVideoPara:
         输出视频对应的模板ID 
 
         :param template_id: The template_id of this OutputVideoPara.
-        :type: int
+        :type template_id: int
         """
         self._template_id = template_id
 
@@ -115,7 +134,7 @@ class OutputVideoPara:
         视频大小 
 
         :param size: The size of this OutputVideoPara.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -137,7 +156,7 @@ class OutputVideoPara:
         视频封装格式 
 
         :param pack: The pack of this OutputVideoPara.
-        :type: str
+        :type pack: str
         """
         self._pack = pack
 
@@ -147,7 +166,7 @@ class OutputVideoPara:
 
 
         :return: The video of this OutputVideoPara.
-        :rtype: VideoInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.VideoInfo`
         """
         return self._video
 
@@ -157,7 +176,7 @@ class OutputVideoPara:
 
 
         :param video: The video of this OutputVideoPara.
-        :type: VideoInfo
+        :type video: :class:`huaweicloudsdkmpc.v1.VideoInfo`
         """
         self._video = video
 
@@ -167,7 +186,7 @@ class OutputVideoPara:
 
 
         :return: The audio of this OutputVideoPara.
-        :rtype: AudioInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.AudioInfo`
         """
         return self._audio
 
@@ -177,7 +196,7 @@ class OutputVideoPara:
 
 
         :param audio: The audio of this OutputVideoPara.
-        :type: AudioInfo
+        :type audio: :class:`huaweicloudsdkmpc.v1.AudioInfo`
         """
         self._audio = audio
 
@@ -199,7 +218,7 @@ class OutputVideoPara:
         输出片源文件名 
 
         :param file_name: The file_name of this OutputVideoPara.
-        :type: str
+        :type file_name: str
         """
         self._file_name = file_name
 
@@ -221,7 +240,7 @@ class OutputVideoPara:
         折算后视频时长 
 
         :param conver_duration: The conver_duration of this OutputVideoPara.
-        :type: float
+        :type conver_duration: float
         """
         self._conver_duration = conver_duration
 
@@ -231,7 +250,7 @@ class OutputVideoPara:
 
 
         :return: The error of this OutputVideoPara.
-        :rtype: XCodeError
+        :rtype: :class:`huaweicloudsdkmpc.v1.XCodeError`
         """
         return self._error
 
@@ -241,7 +260,7 @@ class OutputVideoPara:
 
 
         :param error: The error of this OutputVideoPara.
-        :type: XCodeError
+        :type error: :class:`huaweicloudsdkmpc.v1.XCodeError`
         """
         self._error = error
 

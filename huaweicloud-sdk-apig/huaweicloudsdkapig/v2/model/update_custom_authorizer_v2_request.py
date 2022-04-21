@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateCustomAuthorizerV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateCustomAuthorizerV2Request:
     }
 
     def __init__(self, instance_id=None, authorizer_id=None, body=None):
-        """UpdateCustomAuthorizerV2Request - a model defined in huaweicloud sdk"""
+        """UpdateCustomAuthorizerV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param authorizer_id: 自定义认证的编号
+        :type authorizer_id: str
+        :param body: Body of the UpdateCustomAuthorizerV2Request
+        :type body: :class:`huaweicloudsdkapig.v2.AuthorizerCreate`
+        """
         
         
 
@@ -66,7 +75,7 @@ class UpdateCustomAuthorizerV2Request:
         实例ID
 
         :param instance_id: The instance_id of this UpdateCustomAuthorizerV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -88,7 +97,7 @@ class UpdateCustomAuthorizerV2Request:
         自定义认证的编号
 
         :param authorizer_id: The authorizer_id of this UpdateCustomAuthorizerV2Request.
-        :type: str
+        :type authorizer_id: str
         """
         self._authorizer_id = authorizer_id
 
@@ -98,7 +107,7 @@ class UpdateCustomAuthorizerV2Request:
 
 
         :return: The body of this UpdateCustomAuthorizerV2Request.
-        :rtype: AuthorizerCreate
+        :rtype: :class:`huaweicloudsdkapig.v2.AuthorizerCreate`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class UpdateCustomAuthorizerV2Request:
 
 
         :param body: The body of this UpdateCustomAuthorizerV2Request.
-        :type: AuthorizerCreate
+        :type body: :class:`huaweicloudsdkapig.v2.AuthorizerCreate`
         """
         self._body = body
 

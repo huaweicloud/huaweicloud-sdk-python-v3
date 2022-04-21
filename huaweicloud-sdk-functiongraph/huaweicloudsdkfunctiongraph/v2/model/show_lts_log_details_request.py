@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowLtsLogDetailsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowLtsLogDetailsRequest:
     }
 
     def __init__(self, function_urn=None):
-        """ShowLtsLogDetailsRequest - a model defined in huaweicloud sdk"""
+        """ShowLtsLogDetailsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param function_urn: 函数的URN（Uniform Resource Name），唯一标识函数。
+        :type function_urn: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowLtsLogDetailsRequest:
         函数的URN（Uniform Resource Name），唯一标识函数。
 
         :param function_urn: The function_urn of this ShowLtsLogDetailsRequest.
-        :type: str
+        :type function_urn: str
         """
         self._function_urn = function_urn
 

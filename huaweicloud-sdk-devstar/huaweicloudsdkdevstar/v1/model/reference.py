@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Reference:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class Reference:
     }
 
     def __init__(self, title=None, url=None, type=None, productshort=None, is_valid=None):
-        """Reference - a model defined in huaweicloud sdk"""
+        """Reference
+
+        The model defined in huaweicloud sdk
+
+        :param title: 标题名称。
+        :type title: str
+        :param url: 链接地址。
+        :type url: str
+        :param type: 关联类型。
+        :type type: int
+        :param productshort: 产品短名。
+        :type productshort: str
+        :param is_valid: 是否有效
+        :type is_valid: bool
+        """
         
         
 
@@ -78,7 +91,7 @@ class Reference:
         标题名称。
 
         :param title: The title of this Reference.
-        :type: str
+        :type title: str
         """
         self._title = title
 
@@ -100,7 +113,7 @@ class Reference:
         链接地址。
 
         :param url: The url of this Reference.
-        :type: str
+        :type url: str
         """
         self._url = url
 
@@ -122,7 +135,7 @@ class Reference:
         关联类型。
 
         :param type: The type of this Reference.
-        :type: int
+        :type type: int
         """
         self._type = type
 
@@ -144,7 +157,7 @@ class Reference:
         产品短名。
 
         :param productshort: The productshort of this Reference.
-        :type: str
+        :type productshort: str
         """
         self._productshort = productshort
 
@@ -166,7 +179,7 @@ class Reference:
         是否有效
 
         :param is_valid: The is_valid of this Reference.
-        :type: bool
+        :type is_valid: bool
         """
         self._is_valid = is_valid
 

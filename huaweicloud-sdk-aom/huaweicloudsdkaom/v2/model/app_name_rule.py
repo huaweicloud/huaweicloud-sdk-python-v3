@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AppNameRule:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class AppNameRule:
     }
 
     def __init__(self, name_type=None, args=None, value=None):
-        """AppNameRule - a model defined in huaweicloud sdk"""
+        """AppNameRule
+
+        The model defined in huaweicloud sdk
+
+        :param name_type: 取值类型。 从cmdLineHash、cmdLine、env、str里面选取。
+        :type name_type: str
+        :param args: 输入值。
+        :type args: list[str]
+        :param value: 服务名(仅nameType为cmdLineHash时填写)。
+        :type value: list[str]
+        """
         
         
 
@@ -66,7 +75,7 @@ class AppNameRule:
         取值类型。 从cmdLineHash、cmdLine、env、str里面选取。
 
         :param name_type: The name_type of this AppNameRule.
-        :type: str
+        :type name_type: str
         """
         self._name_type = name_type
 
@@ -88,7 +97,7 @@ class AppNameRule:
         输入值。
 
         :param args: The args of this AppNameRule.
-        :type: list[str]
+        :type args: list[str]
         """
         self._args = args
 
@@ -110,7 +119,7 @@ class AppNameRule:
         服务名(仅nameType为cmdLineHash时填写)。
 
         :param value: The value of this AppNameRule.
-        :type: list[str]
+        :type value: list[str]
         """
         self._value = value
 

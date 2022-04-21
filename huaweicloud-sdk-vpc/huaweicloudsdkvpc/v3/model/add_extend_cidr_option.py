@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddExtendCidrOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class AddExtendCidrOption:
     }
 
     def __init__(self, extend_cidrs=None):
-        """AddExtendCidrOption - a model defined in huaweicloud sdk"""
+        """AddExtendCidrOption
+
+        The model defined in huaweicloud sdk
+
+        :param extend_cidrs: 功能说明：扩展cidr列表 取值范围：不能包含以下网段，100.64.0.0/10,214.0.0.0/7,198.18.0.0/15,169.254.0.0/16,0.0.0.0/8,127.0.0.0/8,240.0.0.0/4,172.31.0.0/16,192.168.0.0/16  约束：当前只支持添加一个
+        :type extend_cidrs: list[str]
+        """
         
         
 
@@ -57,7 +62,7 @@ class AddExtendCidrOption:
         功能说明：扩展cidr列表 取值范围：不能包含以下网段，100.64.0.0/10,214.0.0.0/7,198.18.0.0/15,169.254.0.0/16,0.0.0.0/8,127.0.0.0/8,240.0.0.0/4,172.31.0.0/16,192.168.0.0/16  约束：当前只支持添加一个
 
         :param extend_cidrs: The extend_cidrs of this AddExtendCidrOption.
-        :type: list[str]
+        :type extend_cidrs: list[str]
         """
         self._extend_cidrs = extend_cidrs
 

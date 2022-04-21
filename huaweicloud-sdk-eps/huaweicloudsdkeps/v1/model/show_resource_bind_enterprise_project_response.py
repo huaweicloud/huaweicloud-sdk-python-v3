@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowResourceBindEnterpriseProjectResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowResourceBindEnterpriseProjectResponse(SdkResponse):
     }
 
     def __init__(self, resources=None, errors=None, total_count=None):
-        """ShowResourceBindEnterpriseProjectResponse - a model defined in huaweicloud sdk"""
+        """ShowResourceBindEnterpriseProjectResponse
+
+        The model defined in huaweicloud sdk
+
+        :param resources: 资源列表
+        :type resources: list[:class:`huaweicloudsdkeps.v1.Resources`]
+        :param errors: 查询失败的企业项目下的资源
+        :type errors: list[:class:`huaweicloudsdkeps.v1.Errors`]
+        :param total_count: 企业项目下的资源总数
+        :type total_count: int
+        """
         
         super(ShowResourceBindEnterpriseProjectResponse, self).__init__()
 
@@ -57,7 +66,7 @@ class ShowResourceBindEnterpriseProjectResponse(SdkResponse):
         资源列表
 
         :return: The resources of this ShowResourceBindEnterpriseProjectResponse.
-        :rtype: list[Resources]
+        :rtype: list[:class:`huaweicloudsdkeps.v1.Resources`]
         """
         return self._resources
 
@@ -68,7 +77,7 @@ class ShowResourceBindEnterpriseProjectResponse(SdkResponse):
         资源列表
 
         :param resources: The resources of this ShowResourceBindEnterpriseProjectResponse.
-        :type: list[Resources]
+        :type resources: list[:class:`huaweicloudsdkeps.v1.Resources`]
         """
         self._resources = resources
 
@@ -79,7 +88,7 @@ class ShowResourceBindEnterpriseProjectResponse(SdkResponse):
         查询失败的企业项目下的资源
 
         :return: The errors of this ShowResourceBindEnterpriseProjectResponse.
-        :rtype: list[Errors]
+        :rtype: list[:class:`huaweicloudsdkeps.v1.Errors`]
         """
         return self._errors
 
@@ -90,7 +99,7 @@ class ShowResourceBindEnterpriseProjectResponse(SdkResponse):
         查询失败的企业项目下的资源
 
         :param errors: The errors of this ShowResourceBindEnterpriseProjectResponse.
-        :type: list[Errors]
+        :type errors: list[:class:`huaweicloudsdkeps.v1.Errors`]
         """
         self._errors = errors
 
@@ -112,7 +121,7 @@ class ShowResourceBindEnterpriseProjectResponse(SdkResponse):
         企业项目下的资源总数
 
         :param total_count: The total_count of this ShowResourceBindEnterpriseProjectResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 

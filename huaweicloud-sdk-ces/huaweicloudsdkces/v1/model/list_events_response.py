@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListEventsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListEventsResponse(SdkResponse):
     }
 
     def __init__(self, events=None, meta_data=None):
-        """ListEventsResponse - a model defined in huaweicloud sdk"""
+        """ListEventsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param events: 一条或者多条事件数据。
+        :type events: list[:class:`huaweicloudsdkces.v1.EventInfo`]
+        :param meta_data: 
+        :type meta_data: :class:`huaweicloudsdkces.v1.TotalMetaData`
+        """
         
         super(ListEventsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListEventsResponse(SdkResponse):
         一条或者多条事件数据。
 
         :return: The events of this ListEventsResponse.
-        :rtype: list[EventInfo]
+        :rtype: list[:class:`huaweicloudsdkces.v1.EventInfo`]
         """
         return self._events
 
@@ -63,7 +70,7 @@ class ListEventsResponse(SdkResponse):
         一条或者多条事件数据。
 
         :param events: The events of this ListEventsResponse.
-        :type: list[EventInfo]
+        :type events: list[:class:`huaweicloudsdkces.v1.EventInfo`]
         """
         self._events = events
 
@@ -73,7 +80,7 @@ class ListEventsResponse(SdkResponse):
 
 
         :return: The meta_data of this ListEventsResponse.
-        :rtype: TotalMetaData
+        :rtype: :class:`huaweicloudsdkces.v1.TotalMetaData`
         """
         return self._meta_data
 
@@ -83,7 +90,7 @@ class ListEventsResponse(SdkResponse):
 
 
         :param meta_data: The meta_data of this ListEventsResponse.
-        :type: TotalMetaData
+        :type meta_data: :class:`huaweicloudsdkces.v1.TotalMetaData`
         """
         self._meta_data = meta_data
 

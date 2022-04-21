@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ImageDetectionResultAdDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ImageDetectionResultAdDetail:
     }
 
     def __init__(self, confidence=None, label=None, hit_contexts=None):
-        """ImageDetectionResultAdDetail - a model defined in huaweicloud sdk"""
+        """ImageDetectionResultAdDetail
+
+        The model defined in huaweicloud sdk
+
+        :param confidence: 置信度，取值范围 0-1。
+        :type confidence: float
+        :param label: ad：label为对应的广告识别结果信息 - 广告场景当前支持label列表如下：   - normal：正常   - ad：广告 - 图文审核场景当前支持label列表如下：   - normal：正常   - qr_code：二维   - politics：涉政   - porn：涉黄   - ad：广告   - abuse：辱骂   - contraband：违禁品   - 其他自定义黑库名称 
+        :type label: str
+        :param hit_contexts: 图文审核场景命中的文本列表。
+        :type hit_contexts: list[str]
+        """
         
         
 
@@ -68,7 +77,7 @@ class ImageDetectionResultAdDetail:
         置信度，取值范围 0-1。
 
         :param confidence: The confidence of this ImageDetectionResultAdDetail.
-        :type: float
+        :type confidence: float
         """
         self._confidence = confidence
 
@@ -90,7 +99,7 @@ class ImageDetectionResultAdDetail:
         ad：label为对应的广告识别结果信息 - 广告场景当前支持label列表如下：   - normal：正常   - ad：广告 - 图文审核场景当前支持label列表如下：   - normal：正常   - qr_code：二维   - politics：涉政   - porn：涉黄   - ad：广告   - abuse：辱骂   - contraband：违禁品   - 其他自定义黑库名称 
 
         :param label: The label of this ImageDetectionResultAdDetail.
-        :type: str
+        :type label: str
         """
         self._label = label
 
@@ -112,7 +121,7 @@ class ImageDetectionResultAdDetail:
         图文审核场景命中的文本列表。
 
         :param hit_contexts: The hit_contexts of this ImageDetectionResultAdDetail.
-        :type: list[str]
+        :type hit_contexts: list[str]
         """
         self._hit_contexts = hit_contexts
 

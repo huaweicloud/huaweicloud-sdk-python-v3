@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Schedule:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class Schedule:
     }
 
     def __init__(self, start_time=None, end_time=None, cron_expression=None, computing_resource_id=None, enable=None, conf=None, schedule_status=None, next_fire_time=None, prev_fire_time=None):
-        """Schedule - a model defined in huaweicloud sdk"""
+        """Schedule
+
+        The model defined in huaweicloud sdk
+
+        :param start_time: 调度开始时间。时间格式为ISO时区日期时间。例如2021-03-03T10:15:30+08:00
+        :type start_time: str
+        :param end_time: 调度结束时间。时间格式为ISO时区日期时间。例如2021-03-03T10:15:30+08:00
+        :type end_time: str
+        :param cron_expression: Cron表达式，格式为&lt;秒&gt; &lt;分&gt; &lt;时&gt; &lt;天&gt; &lt;月&gt; &lt;星期&gt;
+        :type cron_expression: str
+        :param computing_resource_id: 计算资源ID。
+        :type computing_resource_id: str
+        :param enable: 调度启用状态. true: 调度中；false：停止调度。
+        :type enable: bool
+        :param conf: 作业运行配置信息。
+        :type conf: list[str]
+        :param schedule_status: 仅在查询作业和查询所有作业接口的响应返回。调度状态。1:NORMAL, 2:PAUSED, 3:COMPLETE, 4:ERROR, 5:BLOCKED
+        :type schedule_status: str
+        :param next_fire_time: 仅在查询作业和查询所有作业接口的响应返回。上一次调度开始时间。
+        :type next_fire_time: str
+        :param prev_fire_time: 仅在查询作业和查询所有作业接口的响应返回。下一次调度开始时间。
+        :type prev_fire_time: str
+        """
         
         
 
@@ -93,7 +114,7 @@ class Schedule:
         调度开始时间。时间格式为ISO时区日期时间。例如2021-03-03T10:15:30+08:00
 
         :param start_time: The start_time of this Schedule.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -115,7 +136,7 @@ class Schedule:
         调度结束时间。时间格式为ISO时区日期时间。例如2021-03-03T10:15:30+08:00
 
         :param end_time: The end_time of this Schedule.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -137,7 +158,7 @@ class Schedule:
         Cron表达式，格式为<秒> <分> <时> <天> <月> <星期>
 
         :param cron_expression: The cron_expression of this Schedule.
-        :type: str
+        :type cron_expression: str
         """
         self._cron_expression = cron_expression
 
@@ -159,7 +180,7 @@ class Schedule:
         计算资源ID。
 
         :param computing_resource_id: The computing_resource_id of this Schedule.
-        :type: str
+        :type computing_resource_id: str
         """
         self._computing_resource_id = computing_resource_id
 
@@ -181,7 +202,7 @@ class Schedule:
         调度启用状态. true: 调度中；false：停止调度。
 
         :param enable: The enable of this Schedule.
-        :type: bool
+        :type enable: bool
         """
         self._enable = enable
 
@@ -203,7 +224,7 @@ class Schedule:
         作业运行配置信息。
 
         :param conf: The conf of this Schedule.
-        :type: list[str]
+        :type conf: list[str]
         """
         self._conf = conf
 
@@ -225,7 +246,7 @@ class Schedule:
         仅在查询作业和查询所有作业接口的响应返回。调度状态。1:NORMAL, 2:PAUSED, 3:COMPLETE, 4:ERROR, 5:BLOCKED
 
         :param schedule_status: The schedule_status of this Schedule.
-        :type: str
+        :type schedule_status: str
         """
         self._schedule_status = schedule_status
 
@@ -247,7 +268,7 @@ class Schedule:
         仅在查询作业和查询所有作业接口的响应返回。上一次调度开始时间。
 
         :param next_fire_time: The next_fire_time of this Schedule.
-        :type: str
+        :type next_fire_time: str
         """
         self._next_fire_time = next_fire_time
 
@@ -269,7 +290,7 @@ class Schedule:
         仅在查询作业和查询所有作业接口的响应返回。下一次调度开始时间。
 
         :param prev_fire_time: The prev_fire_time of this Schedule.
-        :type: str
+        :type prev_fire_time: str
         """
         self._prev_fire_time = prev_fire_time
 

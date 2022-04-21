@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchTagDelActionRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class BatchTagDelActionRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """BatchTagDelActionRequest - a model defined in huaweicloud sdk"""
+        """BatchTagDelActionRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言
+        :type x_language: str
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param body: Body of the BatchTagDelActionRequest
+        :type body: :class:`huaweicloudsdkrds.v3.BatchTagActionDelRequestBody`
+        """
         
         
 
@@ -67,7 +76,7 @@ class BatchTagDelActionRequest:
         语言
 
         :param x_language: The x_language of this BatchTagDelActionRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -89,7 +98,7 @@ class BatchTagDelActionRequest:
         实例ID。
 
         :param instance_id: The instance_id of this BatchTagDelActionRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -99,7 +108,7 @@ class BatchTagDelActionRequest:
 
 
         :return: The body of this BatchTagDelActionRequest.
-        :rtype: BatchTagActionDelRequestBody
+        :rtype: :class:`huaweicloudsdkrds.v3.BatchTagActionDelRequestBody`
         """
         return self._body
 
@@ -109,7 +118,7 @@ class BatchTagDelActionRequest:
 
 
         :param body: The body of this BatchTagDelActionRequest.
-        :type: BatchTagActionDelRequestBody
+        :type body: :class:`huaweicloudsdkrds.v3.BatchTagActionDelRequestBody`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeywordExtractReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class KeywordExtractReq:
     }
 
     def __init__(self, text=None, limit=None, lang=None):
-        """KeywordExtractReq - a model defined in huaweicloud sdk"""
+        """KeywordExtractReq
+
+        The model defined in huaweicloud sdk
+
+        :param text: 待分析文本，长度为1~512，文本编码为UTF-8。
+        :type text: str
+        :param limit: 返回关键词的最大数量，默认为5。
+        :type limit: int
+        :param lang: 支持的文本语言类型，目前只支持中文，默认为zh。
+        :type lang: str
+        """
         
         
 
@@ -67,7 +76,7 @@ class KeywordExtractReq:
         待分析文本，长度为1~512，文本编码为UTF-8。
 
         :param text: The text of this KeywordExtractReq.
-        :type: str
+        :type text: str
         """
         self._text = text
 
@@ -89,7 +98,7 @@ class KeywordExtractReq:
         返回关键词的最大数量，默认为5。
 
         :param limit: The limit of this KeywordExtractReq.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -111,7 +120,7 @@ class KeywordExtractReq:
         支持的文本语言类型，目前只支持中文，默认为zh。
 
         :param lang: The lang of this KeywordExtractReq.
-        :type: str
+        :type lang: str
         """
         self._lang = lang
 

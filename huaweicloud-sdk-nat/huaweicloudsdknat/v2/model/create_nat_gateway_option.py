@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateNatGatewayOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class CreateNatGatewayOption:
     }
 
     def __init__(self, name=None, router_id=None, internal_network_id=None, description=None, spec=None, enterprise_project_id=None):
-        """CreateNatGatewayOption - a model defined in huaweicloud sdk"""
+        """CreateNatGatewayOption
+
+        The model defined in huaweicloud sdk
+
+        :param name: 公网NAT网关实例的名字，长度限制为64。 公网NAT网关实例的名字仅支持数字、字母、_（下划线）、-（中划线）、中文。 
+        :type name: str
+        :param router_id: VPC的id。
+        :type router_id: str
+        :param internal_network_id: 公网NAT网关下行口（DVR的下一跳）所属的network id。
+        :type internal_network_id: str
+        :param description: 公网NAT网关实例的描述，长度限制为255。
+        :type description: str
+        :param spec: 公网NAT网关的规格。 取值为： “1”：小型，SNAT最大连接数10000 “2”：中型，SNAT最大连接数50000 “3”：大型，SNAT最大连接数200000 “4”：超大型，SNAT最大连接数1000000 
+        :type spec: str
+        :param enterprise_project_id: 企业项目ID 创建公网NAT网关实例时，关联的企业项目ID。 关于企业项目ID的获取及企业项目特性的详细信息，请参考《企业管理用户指南》。
+        :type enterprise_project_id: str
+        """
         
         
 
@@ -79,7 +94,7 @@ class CreateNatGatewayOption:
         公网NAT网关实例的名字，长度限制为64。 公网NAT网关实例的名字仅支持数字、字母、_（下划线）、-（中划线）、中文。 
 
         :param name: The name of this CreateNatGatewayOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -101,7 +116,7 @@ class CreateNatGatewayOption:
         VPC的id。
 
         :param router_id: The router_id of this CreateNatGatewayOption.
-        :type: str
+        :type router_id: str
         """
         self._router_id = router_id
 
@@ -123,7 +138,7 @@ class CreateNatGatewayOption:
         公网NAT网关下行口（DVR的下一跳）所属的network id。
 
         :param internal_network_id: The internal_network_id of this CreateNatGatewayOption.
-        :type: str
+        :type internal_network_id: str
         """
         self._internal_network_id = internal_network_id
 
@@ -145,7 +160,7 @@ class CreateNatGatewayOption:
         公网NAT网关实例的描述，长度限制为255。
 
         :param description: The description of this CreateNatGatewayOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -167,7 +182,7 @@ class CreateNatGatewayOption:
         公网NAT网关的规格。 取值为： “1”：小型，SNAT最大连接数10000 “2”：中型，SNAT最大连接数50000 “3”：大型，SNAT最大连接数200000 “4”：超大型，SNAT最大连接数1000000 
 
         :param spec: The spec of this CreateNatGatewayOption.
-        :type: str
+        :type spec: str
         """
         self._spec = spec
 
@@ -189,7 +204,7 @@ class CreateNatGatewayOption:
         企业项目ID 创建公网NAT网关实例时，关联的企业项目ID。 关于企业项目ID的获取及企业项目特性的详细信息，请参考《企业管理用户指南》。
 
         :param enterprise_project_id: The enterprise_project_id of this CreateNatGatewayOption.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 

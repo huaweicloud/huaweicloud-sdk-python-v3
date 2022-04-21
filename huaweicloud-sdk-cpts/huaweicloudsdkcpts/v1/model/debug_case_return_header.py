@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DebugCaseReturnHeader:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class DebugCaseReturnHeader:
     }
 
     def __init__(self, connection=None, content_length=None, content_type=None, date=None, vary=None):
-        """DebugCaseReturnHeader - a model defined in huaweicloud sdk"""
+        """DebugCaseReturnHeader
+
+        The model defined in huaweicloud sdk
+
+        :param connection: Connection
+        :type connection: str
+        :param content_length: Content-Length
+        :type content_length: str
+        :param content_type: Content-Type
+        :type content_type: str
+        :param date: Date
+        :type date: str
+        :param vary: Vary
+        :type vary: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class DebugCaseReturnHeader:
         Connection
 
         :param connection: The connection of this DebugCaseReturnHeader.
-        :type: str
+        :type connection: str
         """
         self._connection = connection
 
@@ -100,7 +113,7 @@ class DebugCaseReturnHeader:
         Content-Length
 
         :param content_length: The content_length of this DebugCaseReturnHeader.
-        :type: str
+        :type content_length: str
         """
         self._content_length = content_length
 
@@ -122,7 +135,7 @@ class DebugCaseReturnHeader:
         Content-Type
 
         :param content_type: The content_type of this DebugCaseReturnHeader.
-        :type: str
+        :type content_type: str
         """
         self._content_type = content_type
 
@@ -144,7 +157,7 @@ class DebugCaseReturnHeader:
         Date
 
         :param date: The date of this DebugCaseReturnHeader.
-        :type: str
+        :type date: str
         """
         self._date = date
 
@@ -166,7 +179,7 @@ class DebugCaseReturnHeader:
         Vary
 
         :param vary: The vary of this DebugCaseReturnHeader.
-        :type: str
+        :type vary: str
         """
         self._vary = vary
 

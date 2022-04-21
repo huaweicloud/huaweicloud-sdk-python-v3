@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RecordRule:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class RecordRule:
     }
 
     def __init__(self, rule_id=None, app_id=None, obs_addr=None, record_formats=None, hls_config=None, mp4_config=None, create_time=None, update_time=None):
-        """RecordRule - a model defined in huaweicloud sdk"""
+        """RecordRule
+
+        The model defined in huaweicloud sdk
+
+        :param rule_id: 规则id，由服务端返回。创建或修改规则的时候不携带
+        :type rule_id: str
+        :param app_id: 应用id
+        :type app_id: str
+        :param obs_addr: 
+        :type obs_addr: :class:`huaweicloudsdkcloudrtc.v2.RecordObsFileAddr`
+        :param record_formats: 录制格式：hls格式或者mp4格式
+        :type record_formats: list[str]
+        :param hls_config: 
+        :type hls_config: :class:`huaweicloudsdkcloudrtc.v2.HLSRecordConfig`
+        :param mp4_config: 
+        :type mp4_config: :class:`huaweicloudsdkcloudrtc.v2.MP4RecordConfig`
+        :param create_time: 创建时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
+        :type create_time: str
+        :param update_time: 更新时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
+        :type update_time: str
+        """
         
         
 
@@ -93,7 +112,7 @@ class RecordRule:
         规则id，由服务端返回。创建或修改规则的时候不携带
 
         :param rule_id: The rule_id of this RecordRule.
-        :type: str
+        :type rule_id: str
         """
         self._rule_id = rule_id
 
@@ -115,7 +134,7 @@ class RecordRule:
         应用id
 
         :param app_id: The app_id of this RecordRule.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -125,7 +144,7 @@ class RecordRule:
 
 
         :return: The obs_addr of this RecordRule.
-        :rtype: RecordObsFileAddr
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.RecordObsFileAddr`
         """
         return self._obs_addr
 
@@ -135,7 +154,7 @@ class RecordRule:
 
 
         :param obs_addr: The obs_addr of this RecordRule.
-        :type: RecordObsFileAddr
+        :type obs_addr: :class:`huaweicloudsdkcloudrtc.v2.RecordObsFileAddr`
         """
         self._obs_addr = obs_addr
 
@@ -157,7 +176,7 @@ class RecordRule:
         录制格式：hls格式或者mp4格式
 
         :param record_formats: The record_formats of this RecordRule.
-        :type: list[str]
+        :type record_formats: list[str]
         """
         self._record_formats = record_formats
 
@@ -167,7 +186,7 @@ class RecordRule:
 
 
         :return: The hls_config of this RecordRule.
-        :rtype: HLSRecordConfig
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.HLSRecordConfig`
         """
         return self._hls_config
 
@@ -177,7 +196,7 @@ class RecordRule:
 
 
         :param hls_config: The hls_config of this RecordRule.
-        :type: HLSRecordConfig
+        :type hls_config: :class:`huaweicloudsdkcloudrtc.v2.HLSRecordConfig`
         """
         self._hls_config = hls_config
 
@@ -187,7 +206,7 @@ class RecordRule:
 
 
         :return: The mp4_config of this RecordRule.
-        :rtype: MP4RecordConfig
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.MP4RecordConfig`
         """
         return self._mp4_config
 
@@ -197,7 +216,7 @@ class RecordRule:
 
 
         :param mp4_config: The mp4_config of this RecordRule.
-        :type: MP4RecordConfig
+        :type mp4_config: :class:`huaweicloudsdkcloudrtc.v2.MP4RecordConfig`
         """
         self._mp4_config = mp4_config
 
@@ -219,7 +238,7 @@ class RecordRule:
         创建时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
 
         :param create_time: The create_time of this RecordRule.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -241,7 +260,7 @@ class RecordRule:
         更新时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
 
         :param update_time: The update_time of this RecordRule.
-        :type: str
+        :type update_time: str
         """
         self._update_time = update_time
 

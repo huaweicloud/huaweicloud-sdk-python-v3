@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CustomizedExtension:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CustomizedExtension:
     }
 
     def __init__(self, object_identifier=None, value=None):
-        """CustomizedExtension - a model defined in huaweicloud sdk"""
+        """CustomizedExtension
+
+        The model defined in huaweicloud sdk
+
+        :param object_identifier: 对象标识符。 &gt; 本参数需要满足ASN1规范的点分十进制符号格式的字符串，如1.3.6.1.4.1.2011.4.99。
+        :type object_identifier: str
+        :param value: 自定义属性内容。
+        :type value: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class CustomizedExtension:
         对象标识符。 > 本参数需要满足ASN1规范的点分十进制符号格式的字符串，如1.3.6.1.4.1.2011.4.99。
 
         :param object_identifier: The object_identifier of this CustomizedExtension.
-        :type: str
+        :type object_identifier: str
         """
         self._object_identifier = object_identifier
 
@@ -85,7 +92,7 @@ class CustomizedExtension:
         自定义属性内容。
 
         :param value: The value of this CustomizedExtension.
-        :type: str
+        :type value: str
         """
         self._value = value
 

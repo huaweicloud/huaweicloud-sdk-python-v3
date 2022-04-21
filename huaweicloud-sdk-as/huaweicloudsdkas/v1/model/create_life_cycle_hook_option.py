@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateLifeCycleHookOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class CreateLifeCycleHookOption:
     }
 
     def __init__(self, lifecycle_hook_name=None, lifecycle_hook_type=None, default_result=None, default_timeout=None, notification_topic_urn=None, notification_metadata=None):
-        """CreateLifeCycleHookOption - a model defined in huaweicloud sdk"""
+        """CreateLifeCycleHookOption
+
+        The model defined in huaweicloud sdk
+
+        :param lifecycle_hook_name: 生命周期挂钩名称(1-32个字符)，只能包含字母、数字、下划线或中划线。
+        :type lifecycle_hook_name: str
+        :param lifecycle_hook_type: 生命周期挂钩类型。INSTANCE_TERMINATING。INSTANCE_LAUNCHING。INSTANCE_TERMINATING 类型的挂钩负责在实例终止时将实例挂起，INSTANCE_LAUNCHING 类型的挂钩则是在实例启动时将实例挂起。
+        :type lifecycle_hook_type: str
+        :param default_result: 生命周期挂钩默认回调操作。默认情况下，到达超时时间后执行的操作。ABANDON；CONTINUE；如果实例正在启动，则 CONTINUE 表示用户自定义操作已成功，可将实例投入使用。否则，ABANDON 表示用户自定义操作未成功，终止实例，伸缩活动置为失败，重新创建新实例。如果实例正在终止，则 ABANDON 和 CONTINUE 都允许终止实例。不过，ABANDON 将停止其他生命周期挂钩，而 CONTINUE 将允许完成其他生命周期挂钩。该字段缺省时默认为 ABANDON。
+        :type default_result: str
+        :param default_timeout: 生命周期挂钩超时时间，取值范围300-86400，默认为3600，单位是秒。默认情况下，实例保持等待状态的时间。您可以延长超时时间，也可以在超时时间结束前进行 CONTINUE 或 ABANDON 操作。
+        :type default_timeout: int
+        :param notification_topic_urn: SMN 服务中 Topic 的唯一的资源标识。为生命周期挂钩定义一个通知目标，当实例被生命周期挂钩挂起时向该通知目标发送消息。该消息包含实例的基本信息、用户自定义通知消息，以及可用于控制生命周期操作的令牌信息。
+        :type notification_topic_urn: str
+        :param notification_metadata: 自定义通知消息，长度不超过256位，不能包含字符&lt; &gt; &amp; &#39; ( )当配置了通知目标时，可向其发送用户自定义的通知内容。
+        :type notification_metadata: str
+        """
         
         
 
@@ -80,7 +95,7 @@ class CreateLifeCycleHookOption:
         生命周期挂钩名称(1-32个字符)，只能包含字母、数字、下划线或中划线。
 
         :param lifecycle_hook_name: The lifecycle_hook_name of this CreateLifeCycleHookOption.
-        :type: str
+        :type lifecycle_hook_name: str
         """
         self._lifecycle_hook_name = lifecycle_hook_name
 
@@ -102,7 +117,7 @@ class CreateLifeCycleHookOption:
         生命周期挂钩类型。INSTANCE_TERMINATING。INSTANCE_LAUNCHING。INSTANCE_TERMINATING 类型的挂钩负责在实例终止时将实例挂起，INSTANCE_LAUNCHING 类型的挂钩则是在实例启动时将实例挂起。
 
         :param lifecycle_hook_type: The lifecycle_hook_type of this CreateLifeCycleHookOption.
-        :type: str
+        :type lifecycle_hook_type: str
         """
         self._lifecycle_hook_type = lifecycle_hook_type
 
@@ -124,7 +139,7 @@ class CreateLifeCycleHookOption:
         生命周期挂钩默认回调操作。默认情况下，到达超时时间后执行的操作。ABANDON；CONTINUE；如果实例正在启动，则 CONTINUE 表示用户自定义操作已成功，可将实例投入使用。否则，ABANDON 表示用户自定义操作未成功，终止实例，伸缩活动置为失败，重新创建新实例。如果实例正在终止，则 ABANDON 和 CONTINUE 都允许终止实例。不过，ABANDON 将停止其他生命周期挂钩，而 CONTINUE 将允许完成其他生命周期挂钩。该字段缺省时默认为 ABANDON。
 
         :param default_result: The default_result of this CreateLifeCycleHookOption.
-        :type: str
+        :type default_result: str
         """
         self._default_result = default_result
 
@@ -146,7 +161,7 @@ class CreateLifeCycleHookOption:
         生命周期挂钩超时时间，取值范围300-86400，默认为3600，单位是秒。默认情况下，实例保持等待状态的时间。您可以延长超时时间，也可以在超时时间结束前进行 CONTINUE 或 ABANDON 操作。
 
         :param default_timeout: The default_timeout of this CreateLifeCycleHookOption.
-        :type: int
+        :type default_timeout: int
         """
         self._default_timeout = default_timeout
 
@@ -168,7 +183,7 @@ class CreateLifeCycleHookOption:
         SMN 服务中 Topic 的唯一的资源标识。为生命周期挂钩定义一个通知目标，当实例被生命周期挂钩挂起时向该通知目标发送消息。该消息包含实例的基本信息、用户自定义通知消息，以及可用于控制生命周期操作的令牌信息。
 
         :param notification_topic_urn: The notification_topic_urn of this CreateLifeCycleHookOption.
-        :type: str
+        :type notification_topic_urn: str
         """
         self._notification_topic_urn = notification_topic_urn
 
@@ -190,7 +205,7 @@ class CreateLifeCycleHookOption:
         自定义通知消息，长度不超过256位，不能包含字符< > & ' ( )当配置了通知目标时，可向其发送用户自定义的通知内容。
 
         :param notification_metadata: The notification_metadata of this CreateLifeCycleHookOption.
-        :type: str
+        :type notification_metadata: str
         """
         self._notification_metadata = notification_metadata
 

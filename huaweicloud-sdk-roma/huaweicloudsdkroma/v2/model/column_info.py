@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ColumnInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ColumnInfo:
     }
 
     def __init__(self, field_name=None, field_type=None, field_length=None, null_able=None, is_partition=None, primary=None, unique=None, decimal_digits=None):
-        """ColumnInfo - a model defined in huaweicloud sdk"""
+        """ColumnInfo
+
+        The model defined in huaweicloud sdk
+
+        :param field_name: 字段名称
+        :type field_name: str
+        :param field_type: 字段类型
+        :type field_type: str
+        :param field_length: 字段长度
+        :type field_length: str
+        :param null_able: 是否允许为空
+        :type null_able: str
+        :param is_partition: 是否是分区字段
+        :type is_partition: bool
+        :param primary: 是否是主键字段
+        :type primary: str
+        :param unique: 是否是唯一键字段
+        :type unique: str
+        :param decimal_digits: 小数部分位数，非数字类型返回null
+        :type decimal_digits: str
+        """
         
         
 
@@ -93,7 +112,7 @@ class ColumnInfo:
         字段名称
 
         :param field_name: The field_name of this ColumnInfo.
-        :type: str
+        :type field_name: str
         """
         self._field_name = field_name
 
@@ -115,7 +134,7 @@ class ColumnInfo:
         字段类型
 
         :param field_type: The field_type of this ColumnInfo.
-        :type: str
+        :type field_type: str
         """
         self._field_type = field_type
 
@@ -137,7 +156,7 @@ class ColumnInfo:
         字段长度
 
         :param field_length: The field_length of this ColumnInfo.
-        :type: str
+        :type field_length: str
         """
         self._field_length = field_length
 
@@ -159,7 +178,7 @@ class ColumnInfo:
         是否允许为空
 
         :param null_able: The null_able of this ColumnInfo.
-        :type: str
+        :type null_able: str
         """
         self._null_able = null_able
 
@@ -181,7 +200,7 @@ class ColumnInfo:
         是否是分区字段
 
         :param is_partition: The is_partition of this ColumnInfo.
-        :type: bool
+        :type is_partition: bool
         """
         self._is_partition = is_partition
 
@@ -203,7 +222,7 @@ class ColumnInfo:
         是否是主键字段
 
         :param primary: The primary of this ColumnInfo.
-        :type: str
+        :type primary: str
         """
         self._primary = primary
 
@@ -225,7 +244,7 @@ class ColumnInfo:
         是否是唯一键字段
 
         :param unique: The unique of this ColumnInfo.
-        :type: str
+        :type unique: str
         """
         self._unique = unique
 
@@ -247,7 +266,7 @@ class ColumnInfo:
         小数部分位数，非数字类型返回null
 
         :param decimal_digits: The decimal_digits of this ColumnInfo.
-        :type: str
+        :type decimal_digits: str
         """
         self._decimal_digits = decimal_digits
 

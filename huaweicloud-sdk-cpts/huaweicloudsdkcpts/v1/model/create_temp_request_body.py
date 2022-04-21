@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateTempRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class CreateTempRequestBody:
     }
 
     def __init__(self, project_id=None, temp_type=None, name=None, description=None, contents=None):
-        """CreateTempRequestBody - a model defined in huaweicloud sdk"""
+        """CreateTempRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: project_id
+        :type project_id: int
+        :param temp_type: temp_type
+        :type temp_type: int
+        :param name: name
+        :type name: str
+        :param description: description
+        :type description: str
+        :param contents: contents
+        :type contents: list[object]
+        """
         
         
 
@@ -75,7 +88,7 @@ class CreateTempRequestBody:
         project_id
 
         :param project_id: The project_id of this CreateTempRequestBody.
-        :type: int
+        :type project_id: int
         """
         self._project_id = project_id
 
@@ -97,7 +110,7 @@ class CreateTempRequestBody:
         temp_type
 
         :param temp_type: The temp_type of this CreateTempRequestBody.
-        :type: int
+        :type temp_type: int
         """
         self._temp_type = temp_type
 
@@ -119,7 +132,7 @@ class CreateTempRequestBody:
         name
 
         :param name: The name of this CreateTempRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -141,7 +154,7 @@ class CreateTempRequestBody:
         description
 
         :param description: The description of this CreateTempRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -163,7 +176,7 @@ class CreateTempRequestBody:
         contents
 
         :param contents: The contents of this CreateTempRequestBody.
-        :type: list[object]
+        :type contents: list[object]
         """
         self._contents = contents
 

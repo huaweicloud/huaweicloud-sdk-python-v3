@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InviteWithPwdRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class InviteWithPwdRequest:
     }
 
     def __init__(self, conference_id=None, body=None):
-        """InviteWithPwdRequest - a model defined in huaweicloud sdk"""
+        """InviteWithPwdRequest
+
+        The model defined in huaweicloud sdk
+
+        :param conference_id: 会议ID
+        :type conference_id: str
+        :param body: Body of the InviteWithPwdRequest
+        :type body: :class:`huaweicloudsdkmeeting.v1.RestInviteWithPwdReqBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class InviteWithPwdRequest:
         会议ID
 
         :param conference_id: The conference_id of this InviteWithPwdRequest.
-        :type: str
+        :type conference_id: str
         """
         self._conference_id = conference_id
 
@@ -72,7 +79,7 @@ class InviteWithPwdRequest:
 
 
         :return: The body of this InviteWithPwdRequest.
-        :rtype: RestInviteWithPwdReqBody
+        :rtype: :class:`huaweicloudsdkmeeting.v1.RestInviteWithPwdReqBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class InviteWithPwdRequest:
 
 
         :param body: The body of this InviteWithPwdRequest.
-        :type: RestInviteWithPwdReqBody
+        :type body: :class:`huaweicloudsdkmeeting.v1.RestInviteWithPwdReqBody`
         """
         self._body = body
 

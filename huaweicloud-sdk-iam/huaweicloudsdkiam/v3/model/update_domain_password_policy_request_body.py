@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDomainPasswordPolicyRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateDomainPasswordPolicyRequestBody:
     }
 
     def __init__(self, password_policy=None):
-        """UpdateDomainPasswordPolicyRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateDomainPasswordPolicyRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param password_policy: 
+        :type password_policy: :class:`huaweicloudsdkiam.v3.PasswordPolicyOption`
+        """
         
         
 
@@ -45,7 +50,7 @@ class UpdateDomainPasswordPolicyRequestBody:
 
 
         :return: The password_policy of this UpdateDomainPasswordPolicyRequestBody.
-        :rtype: PasswordPolicyOption
+        :rtype: :class:`huaweicloudsdkiam.v3.PasswordPolicyOption`
         """
         return self._password_policy
 
@@ -55,7 +60,7 @@ class UpdateDomainPasswordPolicyRequestBody:
 
 
         :param password_policy: The password_policy of this UpdateDomainPasswordPolicyRequestBody.
-        :type: PasswordPolicyOption
+        :type password_policy: :class:`huaweicloudsdkiam.v3.PasswordPolicyOption`
         """
         self._password_policy = password_policy
 

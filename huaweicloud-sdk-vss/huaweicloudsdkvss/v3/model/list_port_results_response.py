@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPortResultsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListPortResultsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, data=None):
-        """ListPortResultsResponse - a model defined in huaweicloud sdk"""
+        """ListPortResultsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 端口总数
+        :type total: int
+        :param data: 端口信息列表
+        :type data: list[:class:`huaweicloudsdkvss.v3.PortItem`]
+        """
         
         super(ListPortResultsResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListPortResultsResponse(SdkResponse):
         端口总数
 
         :param total: The total of this ListPortResultsResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -74,7 +81,7 @@ class ListPortResultsResponse(SdkResponse):
         端口信息列表
 
         :return: The data of this ListPortResultsResponse.
-        :rtype: list[PortItem]
+        :rtype: list[:class:`huaweicloudsdkvss.v3.PortItem`]
         """
         return self._data
 
@@ -85,7 +92,7 @@ class ListPortResultsResponse(SdkResponse):
         端口信息列表
 
         :param data: The data of this ListPortResultsResponse.
-        :type: list[PortItem]
+        :type data: list[:class:`huaweicloudsdkvss.v3.PortItem`]
         """
         self._data = data
 

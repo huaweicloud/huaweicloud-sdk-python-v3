@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AccessPolicyEntity:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AccessPolicyEntity:
     }
 
     def __init__(self, user_name=None, access_policy=None):
-        """AccessPolicyEntity - a model defined in huaweicloud sdk"""
+        """AccessPolicyEntity
+
+        The model defined in huaweicloud sdk
+
+        :param user_name: 用户名称。
+        :type user_name: str
+        :param access_policy: 权限类型。 - all：拥有发布、订阅权限; - pub：拥有发布权限; - sub：拥有订阅权限。
+        :type access_policy: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class AccessPolicyEntity:
         用户名称。
 
         :param user_name: The user_name of this AccessPolicyEntity.
-        :type: str
+        :type user_name: str
         """
         self._user_name = user_name
 
@@ -85,7 +92,7 @@ class AccessPolicyEntity:
         权限类型。 - all：拥有发布、订阅权限; - pub：拥有发布权限; - sub：拥有订阅权限。
 
         :param access_policy: The access_policy of this AccessPolicyEntity.
-        :type: str
+        :type access_policy: str
         """
         self._access_policy = access_policy
 

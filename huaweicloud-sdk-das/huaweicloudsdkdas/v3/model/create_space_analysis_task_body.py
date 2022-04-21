@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateSpaceAnalysisTaskBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateSpaceAnalysisTaskBody:
     }
 
     def __init__(self, operate=None, datastore_type=None):
-        """CreateSpaceAnalysisTaskBody - a model defined in huaweicloud sdk"""
+        """CreateSpaceAnalysisTaskBody
+
+        The model defined in huaweicloud sdk
+
+        :param operate: 操作类型
+        :type operate: str
+        :param datastore_type: 引擎类型
+        :type datastore_type: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class CreateSpaceAnalysisTaskBody:
         操作类型
 
         :param operate: The operate of this CreateSpaceAnalysisTaskBody.
-        :type: str
+        :type operate: str
         """
         self._operate = operate
 
@@ -83,7 +90,7 @@ class CreateSpaceAnalysisTaskBody:
         引擎类型
 
         :param datastore_type: The datastore_type of this CreateSpaceAnalysisTaskBody.
-        :type: str
+        :type datastore_type: str
         """
         self._datastore_type = datastore_type
 

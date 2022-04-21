@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NeutronListFirewallGroupsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class NeutronListFirewallGroupsRequest:
     }
 
     def __init__(self, marker=None, limit=None, id=None, name=None, description=None, ingress_firewall_policy_id=None, egress_firewall_policy_id=None):
-        """NeutronListFirewallGroupsRequest - a model defined in huaweicloud sdk"""
+        """NeutronListFirewallGroupsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param marker: 分页查询起始的资源ID，为空时查询第一页
+        :type marker: str
+        :param limit: 每页返回的个数
+        :type limit: int
+        :param id: 使用id过滤网络ACL组
+        :type id: list[str]
+        :param name: 使用name过滤ACL组
+        :type name: list[str]
+        :param description: 使用description过滤ACL组
+        :type description: list[str]
+        :param ingress_firewall_policy_id: 使用入方向的网络ACL策略ID过滤网络ACL组
+        :type ingress_firewall_policy_id: str
+        :param egress_firewall_policy_id: 使用出方向的网络ACL策略过滤查询网络ACL组
+        :type egress_firewall_policy_id: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class NeutronListFirewallGroupsRequest:
         分页查询起始的资源ID，为空时查询第一页
 
         :param marker: The marker of this NeutronListFirewallGroupsRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -110,7 +127,7 @@ class NeutronListFirewallGroupsRequest:
         每页返回的个数
 
         :param limit: The limit of this NeutronListFirewallGroupsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -132,7 +149,7 @@ class NeutronListFirewallGroupsRequest:
         使用id过滤网络ACL组
 
         :param id: The id of this NeutronListFirewallGroupsRequest.
-        :type: list[str]
+        :type id: list[str]
         """
         self._id = id
 
@@ -154,7 +171,7 @@ class NeutronListFirewallGroupsRequest:
         使用name过滤ACL组
 
         :param name: The name of this NeutronListFirewallGroupsRequest.
-        :type: list[str]
+        :type name: list[str]
         """
         self._name = name
 
@@ -176,7 +193,7 @@ class NeutronListFirewallGroupsRequest:
         使用description过滤ACL组
 
         :param description: The description of this NeutronListFirewallGroupsRequest.
-        :type: list[str]
+        :type description: list[str]
         """
         self._description = description
 
@@ -198,7 +215,7 @@ class NeutronListFirewallGroupsRequest:
         使用入方向的网络ACL策略ID过滤网络ACL组
 
         :param ingress_firewall_policy_id: The ingress_firewall_policy_id of this NeutronListFirewallGroupsRequest.
-        :type: str
+        :type ingress_firewall_policy_id: str
         """
         self._ingress_firewall_policy_id = ingress_firewall_policy_id
 
@@ -220,7 +237,7 @@ class NeutronListFirewallGroupsRequest:
         使用出方向的网络ACL策略过滤查询网络ACL组
 
         :param egress_firewall_policy_id: The egress_firewall_policy_id of this NeutronListFirewallGroupsRequest.
-        :type: str
+        :type egress_firewall_policy_id: str
         """
         self._egress_firewall_policy_id = egress_firewall_policy_id
 

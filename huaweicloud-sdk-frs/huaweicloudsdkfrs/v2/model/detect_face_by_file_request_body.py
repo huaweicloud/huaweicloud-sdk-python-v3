@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DetectFaceByFileRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DetectFaceByFileRequestBody:
     }
 
     def __init__(self, image_file=None, attributes=None):
-        """DetectFaceByFileRequestBody - a model defined in huaweicloud sdk"""
+        """DetectFaceByFileRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param image_file: 本地图片文件，图片不能超过8MB。上传文件时，请求格式为multipart。
+        :type image_file: :class:`huaweicloudsdkcore.http.formdata.FormFile`
+        :param attributes: 是否返回人脸属性，希望获取的属性列表，多个属性间使用逗号（,）隔开。目前支持的属性有： • 2：年龄 • 4：装束（帽子、眼镜） • 6：口罩 • 7：发型 • 8：胡须 • 11：图片类型 • 12：质量 • 13：表情 • 21：人脸图片旋转角（顺时针偏转角度），支持0°、90°、180°和270°图片旋转
+        :type attributes: str
+        """
         
         
 
@@ -51,7 +58,7 @@ class DetectFaceByFileRequestBody:
         本地图片文件，图片不能超过8MB。上传文件时，请求格式为multipart。
 
         :return: The image_file of this DetectFaceByFileRequestBody.
-        :rtype: file
+        :rtype: :class:`huaweicloudsdkcore.http.formdata.FormFile`
         """
         return self._image_file
 
@@ -62,7 +69,7 @@ class DetectFaceByFileRequestBody:
         本地图片文件，图片不能超过8MB。上传文件时，请求格式为multipart。
 
         :param image_file: The image_file of this DetectFaceByFileRequestBody.
-        :type: file
+        :type image_file: :class:`huaweicloudsdkcore.http.formdata.FormFile`
         """
         self._image_file = image_file
 
@@ -84,7 +91,7 @@ class DetectFaceByFileRequestBody:
         是否返回人脸属性，希望获取的属性列表，多个属性间使用逗号（,）隔开。目前支持的属性有： • 2：年龄 • 4：装束（帽子、眼镜） • 6：口罩 • 7：发型 • 8：胡须 • 11：图片类型 • 12：质量 • 13：表情 • 21：人脸图片旋转角（顺时针偏转角度），支持0°、90°、180°和270°图片旋转
 
         :param attributes: The attributes of this DetectFaceByFileRequestBody.
-        :type: str
+        :type attributes: str
         """
         self._attributes = attributes
 

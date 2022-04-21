@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateMetricDataRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateMetricDataRequest:
     }
 
     def __init__(self, body=None):
-        """CreateMetricDataRequest - a model defined in huaweicloud sdk"""
+        """CreateMetricDataRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: 添加一条或多条自定义指标监控数据，请求参数。
+        :type body: list[:class:`huaweicloudsdkces.v1.MetricDataItem`]
+        """
         
         
 
@@ -47,7 +52,7 @@ class CreateMetricDataRequest:
         添加一条或多条自定义指标监控数据，请求参数。
 
         :return: The body of this CreateMetricDataRequest.
-        :rtype: list[MetricDataItem]
+        :rtype: list[:class:`huaweicloudsdkces.v1.MetricDataItem`]
         """
         return self._body
 
@@ -58,7 +63,7 @@ class CreateMetricDataRequest:
         添加一条或多条自定义指标监控数据，请求参数。
 
         :param body: The body of this CreateMetricDataRequest.
-        :type: list[MetricDataItem]
+        :type body: list[:class:`huaweicloudsdkces.v1.MetricDataItem`]
         """
         self._body = body
 

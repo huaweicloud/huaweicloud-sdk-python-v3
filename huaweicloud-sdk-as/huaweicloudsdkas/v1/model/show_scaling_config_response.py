@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowScalingConfigResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowScalingConfigResponse(SdkResponse):
     }
 
     def __init__(self, scaling_configuration=None):
-        """ShowScalingConfigResponse - a model defined in huaweicloud sdk"""
+        """ShowScalingConfigResponse
+
+        The model defined in huaweicloud sdk
+
+        :param scaling_configuration: 
+        :type scaling_configuration: :class:`huaweicloudsdkas.v1.ScalingConfiguration`
+        """
         
         super(ShowScalingConfigResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class ShowScalingConfigResponse(SdkResponse):
 
 
         :return: The scaling_configuration of this ShowScalingConfigResponse.
-        :rtype: ScalingConfiguration
+        :rtype: :class:`huaweicloudsdkas.v1.ScalingConfiguration`
         """
         return self._scaling_configuration
 
@@ -56,7 +61,7 @@ class ShowScalingConfigResponse(SdkResponse):
 
 
         :param scaling_configuration: The scaling_configuration of this ShowScalingConfigResponse.
-        :type: ScalingConfiguration
+        :type scaling_configuration: :class:`huaweicloudsdkas.v1.ScalingConfiguration`
         """
         self._scaling_configuration = scaling_configuration
 

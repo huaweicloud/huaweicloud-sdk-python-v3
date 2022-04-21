@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FixedIp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class FixedIp:
     }
 
     def __init__(self, subnet_id=None, ip_address=None):
-        """FixedIp - a model defined in huaweicloud sdk"""
+        """FixedIp
+
+        The model defined in huaweicloud sdk
+
+        :param subnet_id: 所属子网ID
+        :type subnet_id: str
+        :param ip_address: 端口IP地址
+        :type ip_address: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class FixedIp:
         所属子网ID
 
         :param subnet_id: The subnet_id of this FixedIp.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -85,7 +92,7 @@ class FixedIp:
         端口IP地址
 
         :param ip_address: The ip_address of this FixedIp.
-        :type: str
+        :type ip_address: str
         """
         self._ip_address = ip_address
 

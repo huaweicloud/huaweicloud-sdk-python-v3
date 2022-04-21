@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SetCustomMultiPictureRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class SetCustomMultiPictureRequest:
     }
 
     def __init__(self, conference_id=None, x_conference_authorization=None, body=None):
-        """SetCustomMultiPictureRequest - a model defined in huaweicloud sdk"""
+        """SetCustomMultiPictureRequest
+
+        The model defined in huaweicloud sdk
+
+        :param conference_id: 会议ID。
+        :type conference_id: str
+        :param x_conference_authorization: 会控授权令牌，通过获取会控token接口获得。
+        :type x_conference_authorization: str
+        :param body: Body of the SetCustomMultiPictureRequest
+        :type body: :class:`huaweicloudsdkmeeting.v1.RestCustomMultiPictureBody`
+        """
         
         
 
@@ -66,7 +75,7 @@ class SetCustomMultiPictureRequest:
         会议ID。
 
         :param conference_id: The conference_id of this SetCustomMultiPictureRequest.
-        :type: str
+        :type conference_id: str
         """
         self._conference_id = conference_id
 
@@ -88,7 +97,7 @@ class SetCustomMultiPictureRequest:
         会控授权令牌，通过获取会控token接口获得。
 
         :param x_conference_authorization: The x_conference_authorization of this SetCustomMultiPictureRequest.
-        :type: str
+        :type x_conference_authorization: str
         """
         self._x_conference_authorization = x_conference_authorization
 
@@ -98,7 +107,7 @@ class SetCustomMultiPictureRequest:
 
 
         :return: The body of this SetCustomMultiPictureRequest.
-        :rtype: RestCustomMultiPictureBody
+        :rtype: :class:`huaweicloudsdkmeeting.v1.RestCustomMultiPictureBody`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class SetCustomMultiPictureRequest:
 
 
         :param body: The body of this SetCustomMultiPictureRequest.
-        :type: RestCustomMultiPictureBody
+        :type body: :class:`huaweicloudsdkmeeting.v1.RestCustomMultiPictureBody`
         """
         self._body = body
 

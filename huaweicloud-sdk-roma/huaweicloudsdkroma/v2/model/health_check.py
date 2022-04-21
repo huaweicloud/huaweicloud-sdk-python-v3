@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class HealthCheck:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class HealthCheck:
     }
 
     def __init__(self, protocol=None, port=None, unhealthy=None, timeout=None, interval=None):
-        """HealthCheck - a model defined in huaweicloud sdk"""
+        """HealthCheck
+
+        The model defined in huaweicloud sdk
+
+        :param protocol: 当前LVS只支持TCP_CHECK
+        :type protocol: str
+        :param port: 健康检查端口
+        :type port: int
+        :param unhealthy: 判定后端不健康的阈值，连续探测失败次数
+        :type unhealthy: int
+        :param timeout: 探测后端的超时时间，单位秒
+        :type timeout: int
+        :param interval: 探测后端的间隔时间，单位秒
+        :type interval: int
+        """
         
         
 
@@ -78,7 +91,7 @@ class HealthCheck:
         当前LVS只支持TCP_CHECK
 
         :param protocol: The protocol of this HealthCheck.
-        :type: str
+        :type protocol: str
         """
         self._protocol = protocol
 
@@ -100,7 +113,7 @@ class HealthCheck:
         健康检查端口
 
         :param port: The port of this HealthCheck.
-        :type: int
+        :type port: int
         """
         self._port = port
 
@@ -122,7 +135,7 @@ class HealthCheck:
         判定后端不健康的阈值，连续探测失败次数
 
         :param unhealthy: The unhealthy of this HealthCheck.
-        :type: int
+        :type unhealthy: int
         """
         self._unhealthy = unhealthy
 
@@ -144,7 +157,7 @@ class HealthCheck:
         探测后端的超时时间，单位秒
 
         :param timeout: The timeout of this HealthCheck.
-        :type: int
+        :type timeout: int
         """
         self._timeout = timeout
 
@@ -166,7 +179,7 @@ class HealthCheck:
         探测后端的间隔时间，单位秒
 
         :param interval: The interval of this HealthCheck.
-        :type: int
+        :type interval: int
         """
         self._interval = interval
 

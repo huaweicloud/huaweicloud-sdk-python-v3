@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TaskBeanFacade:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class TaskBeanFacade:
     }
 
     def __init__(self, task_id=None, task_name=None, error_code=None, error_msg=None):
-        """TaskBeanFacade - a model defined in huaweicloud sdk"""
+        """TaskBeanFacade
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 任务ID
+        :type task_id: str
+        :param task_name: 任务名称
+        :type task_name: str
+        :param error_code: 失败的错误码
+        :type error_code: str
+        :param error_msg: 错误详情
+        :type error_msg: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class TaskBeanFacade:
         任务ID
 
         :param task_id: The task_id of this TaskBeanFacade.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -95,7 +106,7 @@ class TaskBeanFacade:
         任务名称
 
         :param task_name: The task_name of this TaskBeanFacade.
-        :type: str
+        :type task_name: str
         """
         self._task_name = task_name
 
@@ -117,7 +128,7 @@ class TaskBeanFacade:
         失败的错误码
 
         :param error_code: The error_code of this TaskBeanFacade.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -139,7 +150,7 @@ class TaskBeanFacade:
         错误详情
 
         :param error_msg: The error_msg of this TaskBeanFacade.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 

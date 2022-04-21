@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDedicatedHostTypesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListDedicatedHostTypesRequest:
     }
 
     def __init__(self, availability_zone=None):
-        """ListDedicatedHostTypesRequest - a model defined in huaweicloud sdk"""
+        """ListDedicatedHostTypesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param availability_zone: AZ。
+        :type availability_zone: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ListDedicatedHostTypesRequest:
         AZ。
 
         :param availability_zone: The availability_zone of this ListDedicatedHostTypesRequest.
-        :type: str
+        :type availability_zone: str
         """
         self._availability_zone = availability_zone
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExpandInstanceNodeRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ExpandInstanceNodeRequestBody:
     }
 
     def __init__(self, num=None, is_auto_pay=None):
-        """ExpandInstanceNodeRequestBody - a model defined in huaweicloud sdk"""
+        """ExpandInstanceNodeRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param num: 新增加的节点数量。
+        :type num: int
+        :param is_auto_pay: 创建包周期实例时可指定，表示是否自动从账户中支付，此字段不影响自动续订的支付方式。 - true，表示自动从账户中支付。 - false，表示手动从账户中支付，默认为该方式。
+        :type is_auto_pay: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ExpandInstanceNodeRequestBody:
         新增加的节点数量。
 
         :param num: The num of this ExpandInstanceNodeRequestBody.
-        :type: int
+        :type num: int
         """
         self._num = num
 
@@ -84,7 +91,7 @@ class ExpandInstanceNodeRequestBody:
         创建包周期实例时可指定，表示是否自动从账户中支付，此字段不影响自动续订的支付方式。 - true，表示自动从账户中支付。 - false，表示手动从账户中支付，默认为该方式。
 
         :param is_auto_pay: The is_auto_pay of this ExpandInstanceNodeRequestBody.
-        :type: str
+        :type is_auto_pay: str
         """
         self._is_auto_pay = is_auto_pay
 

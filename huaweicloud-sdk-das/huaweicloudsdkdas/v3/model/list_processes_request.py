@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListProcessesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ListProcessesRequest:
     }
 
     def __init__(self, instance_id=None, db_user_id=None, user=None, database=None, offset=None, limit=None, x_language=None):
-        """ListProcessesRequest - a model defined in huaweicloud sdk"""
+        """ListProcessesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param db_user_id: 数据库用户ID
+        :type db_user_id: str
+        :param user: 用户
+        :type user: str
+        :param database: 数据库
+        :type database: str
+        :param offset: 偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
+        :type offset: int
+        :param limit: 每页记录数，默认为20，最大取值100。
+        :type limit: int
+        :param x_language: 语言
+        :type x_language: str
+        """
         
         
 
@@ -86,7 +103,7 @@ class ListProcessesRequest:
         实例ID
 
         :param instance_id: The instance_id of this ListProcessesRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -108,7 +125,7 @@ class ListProcessesRequest:
         数据库用户ID
 
         :param db_user_id: The db_user_id of this ListProcessesRequest.
-        :type: str
+        :type db_user_id: str
         """
         self._db_user_id = db_user_id
 
@@ -130,7 +147,7 @@ class ListProcessesRequest:
         用户
 
         :param user: The user of this ListProcessesRequest.
-        :type: str
+        :type user: str
         """
         self._user = user
 
@@ -152,7 +169,7 @@ class ListProcessesRequest:
         数据库
 
         :param database: The database of this ListProcessesRequest.
-        :type: str
+        :type database: str
         """
         self._database = database
 
@@ -174,7 +191,7 @@ class ListProcessesRequest:
         偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
         :param offset: The offset of this ListProcessesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -196,7 +213,7 @@ class ListProcessesRequest:
         每页记录数，默认为20，最大取值100。
 
         :param limit: The limit of this ListProcessesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -218,7 +235,7 @@ class ListProcessesRequest:
         语言
 
         :param x_language: The x_language of this ListProcessesRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 

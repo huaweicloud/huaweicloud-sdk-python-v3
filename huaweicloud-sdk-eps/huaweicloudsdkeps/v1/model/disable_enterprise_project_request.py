@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DisableEnterpriseProjectRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DisableEnterpriseProjectRequest:
     }
 
     def __init__(self, enterprise_project_id=None, body=None):
-        """DisableEnterpriseProjectRequest - a model defined in huaweicloud sdk"""
+        """DisableEnterpriseProjectRequest
+
+        The model defined in huaweicloud sdk
+
+        :param enterprise_project_id: 
+        :type enterprise_project_id: str
+        :param body: Body of the DisableEnterpriseProjectRequest
+        :type body: :class:`huaweicloudsdkeps.v1.DisableAction`
+        """
         
         
 
@@ -60,7 +67,7 @@ class DisableEnterpriseProjectRequest:
 
 
         :param enterprise_project_id: The enterprise_project_id of this DisableEnterpriseProjectRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -70,7 +77,7 @@ class DisableEnterpriseProjectRequest:
 
 
         :return: The body of this DisableEnterpriseProjectRequest.
-        :rtype: DisableAction
+        :rtype: :class:`huaweicloudsdkeps.v1.DisableAction`
         """
         return self._body
 
@@ -80,7 +87,7 @@ class DisableEnterpriseProjectRequest:
 
 
         :param body: The body of this DisableEnterpriseProjectRequest.
-        :type: DisableAction
+        :type body: :class:`huaweicloudsdkeps.v1.DisableAction`
         """
         self._body = body
 

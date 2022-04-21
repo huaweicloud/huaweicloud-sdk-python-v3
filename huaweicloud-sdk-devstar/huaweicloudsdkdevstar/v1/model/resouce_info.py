@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResouceInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ResouceInfo:
     }
 
     def __init__(self, name=None, description=None, home_link=None, subscribe_link=None, type=None, reference_price=None, price_details_link=None, specifications=None):
-        """ResouceInfo - a model defined in huaweicloud sdk"""
+        """ResouceInfo
+
+        The model defined in huaweicloud sdk
+
+        :param name: 云服务名称。
+        :type name: str
+        :param description: 描述。
+        :type description: str
+        :param home_link: 首页链接。
+        :type home_link: str
+        :param subscribe_link: 开通链接。
+        :type subscribe_link: str
+        :param type: 服务类型。
+        :type type: str
+        :param reference_price: 参考价格。
+        :type reference_price: str
+        :param price_details_link: 价格详情链接。
+        :type price_details_link: str
+        :param specifications: 规格,例如: {\&quot;cpu\&quot; : \&quot;0.5\&quot;,\&quot;ram\&quot; : 1GB}。
+        :type specifications: object
+        """
         
         
 
@@ -93,7 +112,7 @@ class ResouceInfo:
         云服务名称。
 
         :param name: The name of this ResouceInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -115,7 +134,7 @@ class ResouceInfo:
         描述。
 
         :param description: The description of this ResouceInfo.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -137,7 +156,7 @@ class ResouceInfo:
         首页链接。
 
         :param home_link: The home_link of this ResouceInfo.
-        :type: str
+        :type home_link: str
         """
         self._home_link = home_link
 
@@ -159,7 +178,7 @@ class ResouceInfo:
         开通链接。
 
         :param subscribe_link: The subscribe_link of this ResouceInfo.
-        :type: str
+        :type subscribe_link: str
         """
         self._subscribe_link = subscribe_link
 
@@ -181,7 +200,7 @@ class ResouceInfo:
         服务类型。
 
         :param type: The type of this ResouceInfo.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -203,7 +222,7 @@ class ResouceInfo:
         参考价格。
 
         :param reference_price: The reference_price of this ResouceInfo.
-        :type: str
+        :type reference_price: str
         """
         self._reference_price = reference_price
 
@@ -225,7 +244,7 @@ class ResouceInfo:
         价格详情链接。
 
         :param price_details_link: The price_details_link of this ResouceInfo.
-        :type: str
+        :type price_details_link: str
         """
         self._price_details_link = price_details_link
 
@@ -247,7 +266,7 @@ class ResouceInfo:
         规格,例如: {\"cpu\" : \"0.5\",\"ram\" : 1GB}。
 
         :param specifications: The specifications of this ResouceInfo.
-        :type: object
+        :type specifications: object
         """
         self._specifications = specifications
 

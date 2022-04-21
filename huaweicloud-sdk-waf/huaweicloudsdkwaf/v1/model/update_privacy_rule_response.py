@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdatePrivacyRuleResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class UpdatePrivacyRuleResponse(SdkResponse):
     }
 
     def __init__(self, id=None, policyid=None, url=None, category=None, index=None):
-        """UpdatePrivacyRuleResponse - a model defined in huaweicloud sdk"""
+        """UpdatePrivacyRuleResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 规则id
+        :type id: str
+        :param policyid: 策略id
+        :type policyid: str
+        :param url: 隐私屏蔽规则应用的url
+        :type url: str
+        :param category: 屏蔽字段
+        :type category: str
+        :param index: 屏蔽字段名
+        :type index: str
+        """
         
         super(UpdatePrivacyRuleResponse, self).__init__()
 
@@ -78,7 +91,7 @@ class UpdatePrivacyRuleResponse(SdkResponse):
         规则id
 
         :param id: The id of this UpdatePrivacyRuleResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -100,7 +113,7 @@ class UpdatePrivacyRuleResponse(SdkResponse):
         策略id
 
         :param policyid: The policyid of this UpdatePrivacyRuleResponse.
-        :type: str
+        :type policyid: str
         """
         self._policyid = policyid
 
@@ -122,7 +135,7 @@ class UpdatePrivacyRuleResponse(SdkResponse):
         隐私屏蔽规则应用的url
 
         :param url: The url of this UpdatePrivacyRuleResponse.
-        :type: str
+        :type url: str
         """
         self._url = url
 
@@ -144,7 +157,7 @@ class UpdatePrivacyRuleResponse(SdkResponse):
         屏蔽字段
 
         :param category: The category of this UpdatePrivacyRuleResponse.
-        :type: str
+        :type category: str
         """
         self._category = category
 
@@ -166,7 +179,7 @@ class UpdatePrivacyRuleResponse(SdkResponse):
         屏蔽字段名
 
         :param index: The index of this UpdatePrivacyRuleResponse.
-        :type: str
+        :type index: str
         """
         self._index = index
 

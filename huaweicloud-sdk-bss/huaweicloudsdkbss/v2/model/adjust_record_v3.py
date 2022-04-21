@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AdjustRecordV3:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class AdjustRecordV3:
     }
 
     def __init__(self, customer_id=None, customer_name=None, operation_type=None, amount=None, currency=None, apply_scene=None, operation_time=None, measure_id=None, trans_id=None):
-        """AdjustRecordV3 - a model defined in huaweicloud sdk"""
+        """AdjustRecordV3
+
+        The model defined in huaweicloud sdk
+
+        :param customer_id: 客户账号ID。
+        :type customer_id: str
+        :param customer_name: 客户名称。
+        :type customer_name: str
+        :param operation_type: 调账类型。 SOURCE_OPERATION_BEADJUST：拨款SOURCE_OPERATION_BERETRIEVE：回收SOURCE_OPERATION_BEUNBIND：解绑回收
+        :type operation_type: str
+        :param amount: 调账的总金额。
+        :type amount: str
+        :param currency: 币种。 CNY：人民币
+        :type currency: str
+        :param apply_scene: 使用场景。
+        :type apply_scene: str
+        :param operation_time: 调账操作的时间。 UTC时间，格式为：2016-03-28T14:45:38Z
+        :type operation_time: str
+        :param measure_id: 调账单位。 1：元
+        :type measure_id: int
+        :param trans_id: 事务ID。
+        :type trans_id: str
+        """
         
         
 
@@ -98,7 +119,7 @@ class AdjustRecordV3:
         客户账号ID。
 
         :param customer_id: The customer_id of this AdjustRecordV3.
-        :type: str
+        :type customer_id: str
         """
         self._customer_id = customer_id
 
@@ -120,7 +141,7 @@ class AdjustRecordV3:
         客户名称。
 
         :param customer_name: The customer_name of this AdjustRecordV3.
-        :type: str
+        :type customer_name: str
         """
         self._customer_name = customer_name
 
@@ -142,7 +163,7 @@ class AdjustRecordV3:
         调账类型。 SOURCE_OPERATION_BEADJUST：拨款SOURCE_OPERATION_BERETRIEVE：回收SOURCE_OPERATION_BEUNBIND：解绑回收
 
         :param operation_type: The operation_type of this AdjustRecordV3.
-        :type: str
+        :type operation_type: str
         """
         self._operation_type = operation_type
 
@@ -164,7 +185,7 @@ class AdjustRecordV3:
         调账的总金额。
 
         :param amount: The amount of this AdjustRecordV3.
-        :type: str
+        :type amount: str
         """
         self._amount = amount
 
@@ -186,7 +207,7 @@ class AdjustRecordV3:
         币种。 CNY：人民币
 
         :param currency: The currency of this AdjustRecordV3.
-        :type: str
+        :type currency: str
         """
         self._currency = currency
 
@@ -208,7 +229,7 @@ class AdjustRecordV3:
         使用场景。
 
         :param apply_scene: The apply_scene of this AdjustRecordV3.
-        :type: str
+        :type apply_scene: str
         """
         self._apply_scene = apply_scene
 
@@ -230,7 +251,7 @@ class AdjustRecordV3:
         调账操作的时间。 UTC时间，格式为：2016-03-28T14:45:38Z
 
         :param operation_time: The operation_time of this AdjustRecordV3.
-        :type: str
+        :type operation_time: str
         """
         self._operation_time = operation_time
 
@@ -252,7 +273,7 @@ class AdjustRecordV3:
         调账单位。 1：元
 
         :param measure_id: The measure_id of this AdjustRecordV3.
-        :type: int
+        :type measure_id: int
         """
         self._measure_id = measure_id
 
@@ -274,7 +295,7 @@ class AdjustRecordV3:
         事务ID。
 
         :param trans_id: The trans_id of this AdjustRecordV3.
-        :type: str
+        :type trans_id: str
         """
         self._trans_id = trans_id
 

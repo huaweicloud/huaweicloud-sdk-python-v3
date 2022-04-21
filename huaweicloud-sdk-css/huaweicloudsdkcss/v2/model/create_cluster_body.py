@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateClusterBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class CreateClusterBody:
     }
 
     def __init__(self, name=None, backup_strategy=None, roles=None, nics=None, enterprise_project_id=None, tags=None, availability_zone=None, datastore=None, authority_enable=None, https_enable=None, admin_pwd=None, public_ip_req=None, load_balance=None, public_kibana_req=None):
-        """CreateClusterBody - a model defined in huaweicloud sdk"""
+        """CreateClusterBody
+
+        The model defined in huaweicloud sdk
+
+        :param name: 集群名称。4～32个字符，只能包含数字、字母、中划线和下划线，且必须以字母开头。
+        :type name: str
+        :param backup_strategy: 
+        :type backup_strategy: :class:`huaweicloudsdkcss.v2.CreateClusterBackupStrategyBody`
+        :param roles: 
+        :type roles: list[:class:`huaweicloudsdkcss.v2.CreateClusterRolesBody`]
+        :param nics: 
+        :type nics: :class:`huaweicloudsdkcss.v2.CreateClusterInstanceNicsBody`
+        :param enterprise_project_id: 企业项目ID。创建集群时，给集群绑定企业项目ID。最大长度36个字符，带\&quot;-\&quot;连字符的UUID格式，或者是字符串\&quot;0\&quot;。\&quot;0\&quot;表示默认企业项目。 说明：关于企业项目ID的获取及企业项目特性的详细信息，请参见[《企业管理服务用户指南》](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0123692049.html)。
+        :type enterprise_project_id: str
+        :param tags: 集群标签。   关于标签特性的详细信息，请参见[《标签管理产品介绍》](https://support.huaweicloud.com/productdesc-tms/zh-cn_topic_0071335169.html)。
+        :type tags: list[:class:`huaweicloudsdkcss.v2.CreateClusterTagsBody`]
+        :param availability_zone: 可用区。
+        :type availability_zone: str
+        :param datastore: 
+        :type datastore: :class:`huaweicloudsdkcss.v2.CreateClusterDatastoreBody`
+        :param authority_enable: 是否开启认证，取值范围为true或false。默认关闭认证功能。当开启认证时，httpsEnable需要设置为true。  - true：表示集群开启认证。 - false：表示集群不开启认证。  此参数只有6.5.4及之后版本支持。
+        :type authority_enable: bool
+        :param https_enable: 设置是否进行通信加密。取值范围为true或false。默认关闭通信加密功能。当httpsEnable设置为true时，authorityEnable字段需要设置为true。  - true：表示集群进行通信加密。 - false：表示集群不进行通信加密。  此参数只有6.5.4及之后版本支持。
+        :type https_enable: bool
+        :param admin_pwd: 安全模式下集群管理员admin的密码，只有当authorityEnable设置为true时需要设置此参数。
+        :type admin_pwd: str
+        :param public_ip_req: 
+        :type public_ip_req: :class:`huaweicloudsdkcss.v2.CreateClusterPublicIpReq`
+        :param load_balance: 
+        :type load_balance: :class:`huaweicloudsdkcss.v2.CreateClusterLoadBalance`
+        :param public_kibana_req: 
+        :type public_kibana_req: :class:`huaweicloudsdkcss.v2.CreateClusterPublicKibanaReq`
+        """
         
         
 
@@ -119,7 +150,7 @@ class CreateClusterBody:
         集群名称。4～32个字符，只能包含数字、字母、中划线和下划线，且必须以字母开头。
 
         :param name: The name of this CreateClusterBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -129,7 +160,7 @@ class CreateClusterBody:
 
 
         :return: The backup_strategy of this CreateClusterBody.
-        :rtype: CreateClusterBackupStrategyBody
+        :rtype: :class:`huaweicloudsdkcss.v2.CreateClusterBackupStrategyBody`
         """
         return self._backup_strategy
 
@@ -139,7 +170,7 @@ class CreateClusterBody:
 
 
         :param backup_strategy: The backup_strategy of this CreateClusterBody.
-        :type: CreateClusterBackupStrategyBody
+        :type backup_strategy: :class:`huaweicloudsdkcss.v2.CreateClusterBackupStrategyBody`
         """
         self._backup_strategy = backup_strategy
 
@@ -149,7 +180,7 @@ class CreateClusterBody:
 
 
         :return: The roles of this CreateClusterBody.
-        :rtype: list[CreateClusterRolesBody]
+        :rtype: list[:class:`huaweicloudsdkcss.v2.CreateClusterRolesBody`]
         """
         return self._roles
 
@@ -159,7 +190,7 @@ class CreateClusterBody:
 
 
         :param roles: The roles of this CreateClusterBody.
-        :type: list[CreateClusterRolesBody]
+        :type roles: list[:class:`huaweicloudsdkcss.v2.CreateClusterRolesBody`]
         """
         self._roles = roles
 
@@ -169,7 +200,7 @@ class CreateClusterBody:
 
 
         :return: The nics of this CreateClusterBody.
-        :rtype: CreateClusterInstanceNicsBody
+        :rtype: :class:`huaweicloudsdkcss.v2.CreateClusterInstanceNicsBody`
         """
         return self._nics
 
@@ -179,7 +210,7 @@ class CreateClusterBody:
 
 
         :param nics: The nics of this CreateClusterBody.
-        :type: CreateClusterInstanceNicsBody
+        :type nics: :class:`huaweicloudsdkcss.v2.CreateClusterInstanceNicsBody`
         """
         self._nics = nics
 
@@ -201,7 +232,7 @@ class CreateClusterBody:
         企业项目ID。创建集群时，给集群绑定企业项目ID。最大长度36个字符，带\"-\"连字符的UUID格式，或者是字符串\"0\"。\"0\"表示默认企业项目。 说明：关于企业项目ID的获取及企业项目特性的详细信息，请参见[《企业管理服务用户指南》](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0123692049.html)。
 
         :param enterprise_project_id: The enterprise_project_id of this CreateClusterBody.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -212,7 +243,7 @@ class CreateClusterBody:
         集群标签。   关于标签特性的详细信息，请参见[《标签管理产品介绍》](https://support.huaweicloud.com/productdesc-tms/zh-cn_topic_0071335169.html)。
 
         :return: The tags of this CreateClusterBody.
-        :rtype: list[CreateClusterTagsBody]
+        :rtype: list[:class:`huaweicloudsdkcss.v2.CreateClusterTagsBody`]
         """
         return self._tags
 
@@ -223,7 +254,7 @@ class CreateClusterBody:
         集群标签。   关于标签特性的详细信息，请参见[《标签管理产品介绍》](https://support.huaweicloud.com/productdesc-tms/zh-cn_topic_0071335169.html)。
 
         :param tags: The tags of this CreateClusterBody.
-        :type: list[CreateClusterTagsBody]
+        :type tags: list[:class:`huaweicloudsdkcss.v2.CreateClusterTagsBody`]
         """
         self._tags = tags
 
@@ -245,7 +276,7 @@ class CreateClusterBody:
         可用区。
 
         :param availability_zone: The availability_zone of this CreateClusterBody.
-        :type: str
+        :type availability_zone: str
         """
         self._availability_zone = availability_zone
 
@@ -255,7 +286,7 @@ class CreateClusterBody:
 
 
         :return: The datastore of this CreateClusterBody.
-        :rtype: CreateClusterDatastoreBody
+        :rtype: :class:`huaweicloudsdkcss.v2.CreateClusterDatastoreBody`
         """
         return self._datastore
 
@@ -265,7 +296,7 @@ class CreateClusterBody:
 
 
         :param datastore: The datastore of this CreateClusterBody.
-        :type: CreateClusterDatastoreBody
+        :type datastore: :class:`huaweicloudsdkcss.v2.CreateClusterDatastoreBody`
         """
         self._datastore = datastore
 
@@ -287,7 +318,7 @@ class CreateClusterBody:
         是否开启认证，取值范围为true或false。默认关闭认证功能。当开启认证时，httpsEnable需要设置为true。  - true：表示集群开启认证。 - false：表示集群不开启认证。  此参数只有6.5.4及之后版本支持。
 
         :param authority_enable: The authority_enable of this CreateClusterBody.
-        :type: bool
+        :type authority_enable: bool
         """
         self._authority_enable = authority_enable
 
@@ -309,7 +340,7 @@ class CreateClusterBody:
         设置是否进行通信加密。取值范围为true或false。默认关闭通信加密功能。当httpsEnable设置为true时，authorityEnable字段需要设置为true。  - true：表示集群进行通信加密。 - false：表示集群不进行通信加密。  此参数只有6.5.4及之后版本支持。
 
         :param https_enable: The https_enable of this CreateClusterBody.
-        :type: bool
+        :type https_enable: bool
         """
         self._https_enable = https_enable
 
@@ -331,7 +362,7 @@ class CreateClusterBody:
         安全模式下集群管理员admin的密码，只有当authorityEnable设置为true时需要设置此参数。
 
         :param admin_pwd: The admin_pwd of this CreateClusterBody.
-        :type: str
+        :type admin_pwd: str
         """
         self._admin_pwd = admin_pwd
 
@@ -341,7 +372,7 @@ class CreateClusterBody:
 
 
         :return: The public_ip_req of this CreateClusterBody.
-        :rtype: CreateClusterPublicIpReq
+        :rtype: :class:`huaweicloudsdkcss.v2.CreateClusterPublicIpReq`
         """
         return self._public_ip_req
 
@@ -351,7 +382,7 @@ class CreateClusterBody:
 
 
         :param public_ip_req: The public_ip_req of this CreateClusterBody.
-        :type: CreateClusterPublicIpReq
+        :type public_ip_req: :class:`huaweicloudsdkcss.v2.CreateClusterPublicIpReq`
         """
         self._public_ip_req = public_ip_req
 
@@ -361,7 +392,7 @@ class CreateClusterBody:
 
 
         :return: The load_balance of this CreateClusterBody.
-        :rtype: CreateClusterLoadBalance
+        :rtype: :class:`huaweicloudsdkcss.v2.CreateClusterLoadBalance`
         """
         return self._load_balance
 
@@ -371,7 +402,7 @@ class CreateClusterBody:
 
 
         :param load_balance: The load_balance of this CreateClusterBody.
-        :type: CreateClusterLoadBalance
+        :type load_balance: :class:`huaweicloudsdkcss.v2.CreateClusterLoadBalance`
         """
         self._load_balance = load_balance
 
@@ -381,7 +412,7 @@ class CreateClusterBody:
 
 
         :return: The public_kibana_req of this CreateClusterBody.
-        :rtype: CreateClusterPublicKibanaReq
+        :rtype: :class:`huaweicloudsdkcss.v2.CreateClusterPublicKibanaReq`
         """
         return self._public_kibana_req
 
@@ -391,7 +422,7 @@ class CreateClusterBody:
 
 
         :param public_kibana_req: The public_kibana_req of this CreateClusterBody.
-        :type: CreateClusterPublicKibanaReq
+        :type public_kibana_req: :class:`huaweicloudsdkcss.v2.CreateClusterPublicKibanaReq`
         """
         self._public_kibana_req = public_kibana_req
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StopJobRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class StopJobRequest:
     }
 
     def __init__(self, job_id=None, trigger_savepoint=None):
-        """StopJobRequest - a model defined in huaweicloud sdk"""
+        """StopJobRequest
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 作业ID
+        :type job_id: str
+        :param trigger_savepoint: 停止作业触发savepoint
+        :type trigger_savepoint: bool
+        """
         
         
 
@@ -62,7 +69,7 @@ class StopJobRequest:
         作业ID
 
         :param job_id: The job_id of this StopJobRequest.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -84,7 +91,7 @@ class StopJobRequest:
         停止作业触发savepoint
 
         :param trigger_savepoint: The trigger_savepoint of this StopJobRequest.
-        :type: bool
+        :type trigger_savepoint: bool
         """
         self._trigger_savepoint = trigger_savepoint
 

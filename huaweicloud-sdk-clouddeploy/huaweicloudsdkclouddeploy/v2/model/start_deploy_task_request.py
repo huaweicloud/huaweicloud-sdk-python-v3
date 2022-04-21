@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StartDeployTaskRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class StartDeployTaskRequest:
     }
 
     def __init__(self, task_id=None, body=None):
-        """StartDeployTaskRequest - a model defined in huaweicloud sdk"""
+        """StartDeployTaskRequest
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 部署任务id
+        :type task_id: str
+        :param body: Body of the StartDeployTaskRequest
+        :type body: :class:`huaweicloudsdkclouddeploy.v2.EnvExecutionBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class StartDeployTaskRequest:
         部署任务id
 
         :param task_id: The task_id of this StartDeployTaskRequest.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -72,7 +79,7 @@ class StartDeployTaskRequest:
 
 
         :return: The body of this StartDeployTaskRequest.
-        :rtype: EnvExecutionBody
+        :rtype: :class:`huaweicloudsdkclouddeploy.v2.EnvExecutionBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class StartDeployTaskRequest:
 
 
         :param body: The body of this StartDeployTaskRequest.
-        :type: EnvExecutionBody
+        :type body: :class:`huaweicloudsdkclouddeploy.v2.EnvExecutionBody`
         """
         self._body = body
 

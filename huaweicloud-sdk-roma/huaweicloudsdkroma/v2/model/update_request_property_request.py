@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateRequestPropertyRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class UpdateRequestPropertyRequest:
     }
 
     def __init__(self, instance_id=None, service_id=None, command_id=None, property_id=None, body=None):
-        """UpdateRequestPropertyRequest - a model defined in huaweicloud sdk"""
+        """UpdateRequestPropertyRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param service_id: 服务ID
+        :type service_id: str
+        :param command_id: 命令ID
+        :type command_id: int
+        :param property_id: 属性/请求属性/响应属性ID
+        :type property_id: int
+        :param body: Body of the UpdateRequestPropertyRequest
+        :type body: :class:`huaweicloudsdkroma.v2.UpdatePropertyRequestBody`
+        """
         
         
 
@@ -74,7 +87,7 @@ class UpdateRequestPropertyRequest:
         实例ID
 
         :param instance_id: The instance_id of this UpdateRequestPropertyRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -96,7 +109,7 @@ class UpdateRequestPropertyRequest:
         服务ID
 
         :param service_id: The service_id of this UpdateRequestPropertyRequest.
-        :type: str
+        :type service_id: str
         """
         self._service_id = service_id
 
@@ -118,7 +131,7 @@ class UpdateRequestPropertyRequest:
         命令ID
 
         :param command_id: The command_id of this UpdateRequestPropertyRequest.
-        :type: int
+        :type command_id: int
         """
         self._command_id = command_id
 
@@ -140,7 +153,7 @@ class UpdateRequestPropertyRequest:
         属性/请求属性/响应属性ID
 
         :param property_id: The property_id of this UpdateRequestPropertyRequest.
-        :type: int
+        :type property_id: int
         """
         self._property_id = property_id
 
@@ -150,7 +163,7 @@ class UpdateRequestPropertyRequest:
 
 
         :return: The body of this UpdateRequestPropertyRequest.
-        :rtype: UpdatePropertyRequestBody
+        :rtype: :class:`huaweicloudsdkroma.v2.UpdatePropertyRequestBody`
         """
         return self._body
 
@@ -160,7 +173,7 @@ class UpdateRequestPropertyRequest:
 
 
         :param body: The body of this UpdateRequestPropertyRequest.
-        :type: UpdatePropertyRequestBody
+        :type body: :class:`huaweicloudsdkroma.v2.UpdatePropertyRequestBody`
         """
         self._body = body
 

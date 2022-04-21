@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDataIpRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateDataIpRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """UpdateDataIpRequest - a model defined in huaweicloud sdk"""
+        """UpdateDataIpRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言
+        :type x_language: str
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param body: Body of the UpdateDataIpRequest
+        :type body: :class:`huaweicloudsdkrds.v3.DataIpRequest`
+        """
         
         
 
@@ -67,7 +76,7 @@ class UpdateDataIpRequest:
         语言
 
         :param x_language: The x_language of this UpdateDataIpRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -89,7 +98,7 @@ class UpdateDataIpRequest:
         实例ID。
 
         :param instance_id: The instance_id of this UpdateDataIpRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -99,7 +108,7 @@ class UpdateDataIpRequest:
 
 
         :return: The body of this UpdateDataIpRequest.
-        :rtype: DataIpRequest
+        :rtype: :class:`huaweicloudsdkrds.v3.DataIpRequest`
         """
         return self._body
 
@@ -109,7 +118,7 @@ class UpdateDataIpRequest:
 
 
         :param body: The body of this UpdateDataIpRequest.
-        :type: DataIpRequest
+        :type body: :class:`huaweicloudsdkrds.v3.DataIpRequest`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FailReason:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class FailReason:
     }
 
     def __init__(self, fail_code=None, fail_message=None):
-        """FailReason - a model defined in huaweicloud sdk"""
+        """FailReason
+
+        The model defined in huaweicloud sdk
+
+        :param fail_code: 错误码
+        :type fail_code: str
+        :param fail_message: 边缘云失败原因列表。包含所边缘云的失败原因。
+        :type fail_message: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class FailReason:
         错误码
 
         :param fail_code: The fail_code of this FailReason.
-        :type: str
+        :type fail_code: str
         """
         self._fail_code = fail_code
 
@@ -85,7 +92,7 @@ class FailReason:
         边缘云失败原因列表。包含所边缘云的失败原因。
 
         :param fail_message: The fail_message of this FailReason.
-        :type: str
+        :type fail_message: str
         """
         self._fail_message = fail_message
 

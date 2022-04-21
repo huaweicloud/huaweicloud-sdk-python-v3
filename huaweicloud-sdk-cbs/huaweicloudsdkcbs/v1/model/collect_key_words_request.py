@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CollectKeyWordsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CollectKeyWordsRequest:
     }
 
     def __init__(self, qabot_id=None, start_time=None, end_time=None, top=None):
-        """CollectKeyWordsRequest - a model defined in huaweicloud sdk"""
+        """CollectKeyWordsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param qabot_id: qabot编号，UUID格式。
+        :type qabot_id: str
+        :param start_time: 查询的起始时间，long，UTC时间，默认值为0。
+        :type start_time: str
+        :param end_time: 查询的结束时间，long，UTC时间，默认值为当前时间的毫秒数。
+        :type end_time: str
+        :param top: 关键词最多显示的个数，默认值为10，取值范围0-50。
+        :type top: int
+        """
         
         
 
@@ -72,7 +83,7 @@ class CollectKeyWordsRequest:
         qabot编号，UUID格式。
 
         :param qabot_id: The qabot_id of this CollectKeyWordsRequest.
-        :type: str
+        :type qabot_id: str
         """
         self._qabot_id = qabot_id
 
@@ -94,7 +105,7 @@ class CollectKeyWordsRequest:
         查询的起始时间，long，UTC时间，默认值为0。
 
         :param start_time: The start_time of this CollectKeyWordsRequest.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -116,7 +127,7 @@ class CollectKeyWordsRequest:
         查询的结束时间，long，UTC时间，默认值为当前时间的毫秒数。
 
         :param end_time: The end_time of this CollectKeyWordsRequest.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -138,7 +149,7 @@ class CollectKeyWordsRequest:
         关键词最多显示的个数，默认值为10，取值范围0-50。
 
         :param top: The top of this CollectKeyWordsRequest.
-        :type: int
+        :type top: int
         """
         self._top = top
 

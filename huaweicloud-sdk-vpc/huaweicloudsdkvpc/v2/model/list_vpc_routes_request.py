@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListVpcRoutesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ListVpcRoutesRequest:
     }
 
     def __init__(self, limit=None, marker=None, id=None, type=None, vpc_id=None, destination=None, tenant_id=None):
-        """ListVpcRoutesRequest - a model defined in huaweicloud sdk"""
+        """ListVpcRoutesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 每页返回的个数
+        :type limit: int
+        :param marker: 分页查询起始的资源ID，为空时查询第一页
+        :type marker: str
+        :param id: 按照routes_id过滤查询
+        :type id: str
+        :param type: 功能说明：按照路由类型过滤查询  取值范围：peering
+        :type type: str
+        :param vpc_id: 按照vpc_id过滤查询
+        :type vpc_id: str
+        :param destination: 按照路由目的地址CIDR过滤查询
+        :type destination: str
+        :param tenant_id: 按照项目ID过滤查询
+        :type tenant_id: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class ListVpcRoutesRequest:
         每页返回的个数
 
         :param limit: The limit of this ListVpcRoutesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -110,7 +127,7 @@ class ListVpcRoutesRequest:
         分页查询起始的资源ID，为空时查询第一页
 
         :param marker: The marker of this ListVpcRoutesRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -132,7 +149,7 @@ class ListVpcRoutesRequest:
         按照routes_id过滤查询
 
         :param id: The id of this ListVpcRoutesRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -154,7 +171,7 @@ class ListVpcRoutesRequest:
         功能说明：按照路由类型过滤查询  取值范围：peering
 
         :param type: The type of this ListVpcRoutesRequest.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -176,7 +193,7 @@ class ListVpcRoutesRequest:
         按照vpc_id过滤查询
 
         :param vpc_id: The vpc_id of this ListVpcRoutesRequest.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -198,7 +215,7 @@ class ListVpcRoutesRequest:
         按照路由目的地址CIDR过滤查询
 
         :param destination: The destination of this ListVpcRoutesRequest.
-        :type: str
+        :type destination: str
         """
         self._destination = destination
 
@@ -220,7 +237,7 @@ class ListVpcRoutesRequest:
         按照项目ID过滤查询
 
         :param tenant_id: The tenant_id of this ListVpcRoutesRequest.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 

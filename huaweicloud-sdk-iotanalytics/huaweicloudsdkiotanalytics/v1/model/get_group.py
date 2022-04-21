@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GetGroup:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class GetGroup:
     }
 
     def __init__(self, group_id=None, name=None, description=None, warm_data_usage=None, data_store_count=None, cold_data_usage=None, warm_data_retention_policy=None, cold_data_retention_policy=None, created_time=None, modified_time=None, type=None):
-        """GetGroup - a model defined in huaweicloud sdk"""
+        """GetGroup
+
+        The model defined in huaweicloud sdk
+
+        :param group_id: 存储组 ID
+        :type group_id: str
+        :param name: 存储组名称
+        :type name: str
+        :param description: 描述
+        :type description: str
+        :param warm_data_usage: 温数据存储用量
+        :type warm_data_usage: int
+        :param data_store_count: 此存储组下存储实例的个数
+        :type data_store_count: int
+        :param cold_data_usage: 冷数据存储用量
+        :type cold_data_usage: int
+        :param warm_data_retention_policy: 温数据老化策略，单位只支持d（天），且只支持整数，如365天则可配置为“365d”，如“365h”或“360.5d”等均不被支持
+        :type warm_data_retention_policy: str
+        :param cold_data_retention_policy: 冷数据老化策略，单位只支持d（天），且只支持整数，如365天则可配置为“365d”，如“365h”或“360.5d”等均不被支持
+        :type cold_data_retention_policy: str
+        :param created_time: 创建时间
+        :type created_time: str
+        :param modified_time: 修改时间
+        :type modified_time: str
+        :param type: 存储类型，有资产存储(取值:AssetStorage)、设备存储(取值:DeviceStorage)两种类型
+        :type type: str
+        """
         
         
 
@@ -108,7 +133,7 @@ class GetGroup:
         存储组 ID
 
         :param group_id: The group_id of this GetGroup.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -130,7 +155,7 @@ class GetGroup:
         存储组名称
 
         :param name: The name of this GetGroup.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -152,7 +177,7 @@ class GetGroup:
         描述
 
         :param description: The description of this GetGroup.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -174,7 +199,7 @@ class GetGroup:
         温数据存储用量
 
         :param warm_data_usage: The warm_data_usage of this GetGroup.
-        :type: int
+        :type warm_data_usage: int
         """
         self._warm_data_usage = warm_data_usage
 
@@ -196,7 +221,7 @@ class GetGroup:
         此存储组下存储实例的个数
 
         :param data_store_count: The data_store_count of this GetGroup.
-        :type: int
+        :type data_store_count: int
         """
         self._data_store_count = data_store_count
 
@@ -218,7 +243,7 @@ class GetGroup:
         冷数据存储用量
 
         :param cold_data_usage: The cold_data_usage of this GetGroup.
-        :type: int
+        :type cold_data_usage: int
         """
         self._cold_data_usage = cold_data_usage
 
@@ -240,7 +265,7 @@ class GetGroup:
         温数据老化策略，单位只支持d（天），且只支持整数，如365天则可配置为“365d”，如“365h”或“360.5d”等均不被支持
 
         :param warm_data_retention_policy: The warm_data_retention_policy of this GetGroup.
-        :type: str
+        :type warm_data_retention_policy: str
         """
         self._warm_data_retention_policy = warm_data_retention_policy
 
@@ -262,7 +287,7 @@ class GetGroup:
         冷数据老化策略，单位只支持d（天），且只支持整数，如365天则可配置为“365d”，如“365h”或“360.5d”等均不被支持
 
         :param cold_data_retention_policy: The cold_data_retention_policy of this GetGroup.
-        :type: str
+        :type cold_data_retention_policy: str
         """
         self._cold_data_retention_policy = cold_data_retention_policy
 
@@ -284,7 +309,7 @@ class GetGroup:
         创建时间
 
         :param created_time: The created_time of this GetGroup.
-        :type: str
+        :type created_time: str
         """
         self._created_time = created_time
 
@@ -306,7 +331,7 @@ class GetGroup:
         修改时间
 
         :param modified_time: The modified_time of this GetGroup.
-        :type: str
+        :type modified_time: str
         """
         self._modified_time = modified_time
 
@@ -328,7 +353,7 @@ class GetGroup:
         存储类型，有资产存储(取值:AssetStorage)、设备存储(取值:DeviceStorage)两种类型
 
         :param type: The type of this GetGroup.
-        :type: str
+        :type type: str
         """
         self._type = type
 

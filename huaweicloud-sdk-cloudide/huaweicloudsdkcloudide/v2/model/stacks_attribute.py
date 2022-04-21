@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StacksAttribute:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class StacksAttribute:
     }
 
     def __init__(self, specs=None, suggest=None, suggest_title=None, volumes=None):
-        """StacksAttribute - a model defined in huaweicloud sdk"""
+        """StacksAttribute
+
+        The model defined in huaweicloud sdk
+
+        :param specs: 规格列表
+        :type specs: list[str]
+        :param suggest: 提示id
+        :type suggest: str
+        :param suggest_title: 提示信息
+        :type suggest_title: str
+        :param volumes: 卷容量列表
+        :type volumes: list[str]
+        """
         
         
 
@@ -73,7 +84,7 @@ class StacksAttribute:
         规格列表
 
         :param specs: The specs of this StacksAttribute.
-        :type: list[str]
+        :type specs: list[str]
         """
         self._specs = specs
 
@@ -95,7 +106,7 @@ class StacksAttribute:
         提示id
 
         :param suggest: The suggest of this StacksAttribute.
-        :type: str
+        :type suggest: str
         """
         self._suggest = suggest
 
@@ -117,7 +128,7 @@ class StacksAttribute:
         提示信息
 
         :param suggest_title: The suggest_title of this StacksAttribute.
-        :type: str
+        :type suggest_title: str
         """
         self._suggest_title = suggest_title
 
@@ -139,7 +150,7 @@ class StacksAttribute:
         卷容量列表
 
         :param volumes: The volumes of this StacksAttribute.
-        :type: list[str]
+        :type volumes: list[str]
         """
         self._volumes = volumes
 

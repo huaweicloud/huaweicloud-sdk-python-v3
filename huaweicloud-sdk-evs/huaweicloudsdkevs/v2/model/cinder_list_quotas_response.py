@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CinderListQuotasResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CinderListQuotasResponse(SdkResponse):
     }
 
     def __init__(self, quota_set=None):
-        """CinderListQuotasResponse - a model defined in huaweicloud sdk"""
+        """CinderListQuotasResponse
+
+        The model defined in huaweicloud sdk
+
+        :param quota_set: 
+        :type quota_set: :class:`huaweicloudsdkevs.v2.QuotaList`
+        """
         
         super(CinderListQuotasResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class CinderListQuotasResponse(SdkResponse):
 
 
         :return: The quota_set of this CinderListQuotasResponse.
-        :rtype: QuotaList
+        :rtype: :class:`huaweicloudsdkevs.v2.QuotaList`
         """
         return self._quota_set
 
@@ -56,7 +61,7 @@ class CinderListQuotasResponse(SdkResponse):
 
 
         :param quota_set: The quota_set of this CinderListQuotasResponse.
-        :type: QuotaList
+        :type quota_set: :class:`huaweicloudsdkevs.v2.QuotaList`
         """
         self._quota_set = quota_set
 

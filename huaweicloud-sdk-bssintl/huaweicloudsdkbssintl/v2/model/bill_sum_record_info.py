@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BillSumRecordInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class BillSumRecordInfo:
     }
 
     def __init__(self, customer_id=None, resource_type_code=None, region_code=None, cloud_service_type_code=None, consume_time=None, pay_method=None, consume_amount=None, debt=None, discount=None, measure_id=None, bill_type=None, account_details=None, discount_detail_infos=None, enterprise_project_id=None):
-        """BillSumRecordInfo - a model defined in huaweicloud sdk"""
+        """BillSumRecordInfo
+
+        The model defined in huaweicloud sdk
+
+        :param customer_id: 客户账号ID。
+        :type customer_id: str
+        :param resource_type_code: 资源类型编码，例如ECS的VM为“hws.resource.type.vm”。  说明： 当请求消息中不传递“cloud_service_type_code”参数时，此值返回“null”。
+        :type resource_type_code: str
+        :param region_code: 云服务区，该字段预留，先不使用。
+        :type region_code: str
+        :param cloud_service_type_code: 云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。
+        :type cloud_service_type_code: str
+        :param consume_time: 消费统计的时期。 格式为YYYY-MM。 示例：2018-05
+        :type consume_time: str
+        :param pay_method: 消费类型。 当请求消息中不传递“cloud_service_type_code”参数时，如果此值返回“0”表示此服务类型下所有的资源类型都是包年/包月计费模式，如果此值返回空字符串表示此服务类型下有资源类型为按需计费模式。当请求消息中传递“cloud_service_type_code”参数时，如果此值返回“0”表示此资源类型是包年/包月计费模式，如果此值返回“1”表示此资源类型为按需计费模式。
+        :type pay_method: str
+        :param consume_amount: 消费的金额，即从客户账户实际扣除的金额。包含代金券支付的金额。
+        :type consume_amount: float
+        :param debt: 欠费金额，即从客户账户扣费的时候，客户账户金额不足，欠费的金额。
+        :type debt: float
+        :param discount: 折扣金额。
+        :type discount: float
+        :param measure_id: 金额单位。 1：元3：分 默认值为3。
+        :type measure_id: int
+        :param bill_type: 账单类型。 0：消费1：退订
+        :type bill_type: int
+        :param account_details: 按不同账户消费类型和付费方式区分的支付总金额。 具体请参见表4。
+        :type account_details: list[:class:`huaweicloudsdkbssintl.v2.BalanceTypePay`]
+        :param discount_detail_infos: 折扣金额详情。 具体请参见表5。 当bill_type为1时，不返回此参数。
+        :type discount_detail_infos: list[:class:`huaweicloudsdkbssintl.v2.DiscountDetailInfo`]
+        :param enterprise_project_id: 企业项目ID。 当请求参数中传递了“enterpriseProjectId”，响应参数“bill_sums”返回以企业项目ID为维度的账单记录。
+        :type enterprise_project_id: str
+        """
         
         
 
@@ -123,7 +154,7 @@ class BillSumRecordInfo:
         客户账号ID。
 
         :param customer_id: The customer_id of this BillSumRecordInfo.
-        :type: str
+        :type customer_id: str
         """
         self._customer_id = customer_id
 
@@ -145,7 +176,7 @@ class BillSumRecordInfo:
         资源类型编码，例如ECS的VM为“hws.resource.type.vm”。  说明： 当请求消息中不传递“cloud_service_type_code”参数时，此值返回“null”。
 
         :param resource_type_code: The resource_type_code of this BillSumRecordInfo.
-        :type: str
+        :type resource_type_code: str
         """
         self._resource_type_code = resource_type_code
 
@@ -167,7 +198,7 @@ class BillSumRecordInfo:
         云服务区，该字段预留，先不使用。
 
         :param region_code: The region_code of this BillSumRecordInfo.
-        :type: str
+        :type region_code: str
         """
         self._region_code = region_code
 
@@ -189,7 +220,7 @@ class BillSumRecordInfo:
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。
 
         :param cloud_service_type_code: The cloud_service_type_code of this BillSumRecordInfo.
-        :type: str
+        :type cloud_service_type_code: str
         """
         self._cloud_service_type_code = cloud_service_type_code
 
@@ -211,7 +242,7 @@ class BillSumRecordInfo:
         消费统计的时期。 格式为YYYY-MM。 示例：2018-05
 
         :param consume_time: The consume_time of this BillSumRecordInfo.
-        :type: str
+        :type consume_time: str
         """
         self._consume_time = consume_time
 
@@ -233,7 +264,7 @@ class BillSumRecordInfo:
         消费类型。 当请求消息中不传递“cloud_service_type_code”参数时，如果此值返回“0”表示此服务类型下所有的资源类型都是包年/包月计费模式，如果此值返回空字符串表示此服务类型下有资源类型为按需计费模式。当请求消息中传递“cloud_service_type_code”参数时，如果此值返回“0”表示此资源类型是包年/包月计费模式，如果此值返回“1”表示此资源类型为按需计费模式。
 
         :param pay_method: The pay_method of this BillSumRecordInfo.
-        :type: str
+        :type pay_method: str
         """
         self._pay_method = pay_method
 
@@ -255,7 +286,7 @@ class BillSumRecordInfo:
         消费的金额，即从客户账户实际扣除的金额。包含代金券支付的金额。
 
         :param consume_amount: The consume_amount of this BillSumRecordInfo.
-        :type: float
+        :type consume_amount: float
         """
         self._consume_amount = consume_amount
 
@@ -277,7 +308,7 @@ class BillSumRecordInfo:
         欠费金额，即从客户账户扣费的时候，客户账户金额不足，欠费的金额。
 
         :param debt: The debt of this BillSumRecordInfo.
-        :type: float
+        :type debt: float
         """
         self._debt = debt
 
@@ -299,7 +330,7 @@ class BillSumRecordInfo:
         折扣金额。
 
         :param discount: The discount of this BillSumRecordInfo.
-        :type: float
+        :type discount: float
         """
         self._discount = discount
 
@@ -321,7 +352,7 @@ class BillSumRecordInfo:
         金额单位。 1：元3：分 默认值为3。
 
         :param measure_id: The measure_id of this BillSumRecordInfo.
-        :type: int
+        :type measure_id: int
         """
         self._measure_id = measure_id
 
@@ -343,7 +374,7 @@ class BillSumRecordInfo:
         账单类型。 0：消费1：退订
 
         :param bill_type: The bill_type of this BillSumRecordInfo.
-        :type: int
+        :type bill_type: int
         """
         self._bill_type = bill_type
 
@@ -354,7 +385,7 @@ class BillSumRecordInfo:
         按不同账户消费类型和付费方式区分的支付总金额。 具体请参见表4。
 
         :return: The account_details of this BillSumRecordInfo.
-        :rtype: list[BalanceTypePay]
+        :rtype: list[:class:`huaweicloudsdkbssintl.v2.BalanceTypePay`]
         """
         return self._account_details
 
@@ -365,7 +396,7 @@ class BillSumRecordInfo:
         按不同账户消费类型和付费方式区分的支付总金额。 具体请参见表4。
 
         :param account_details: The account_details of this BillSumRecordInfo.
-        :type: list[BalanceTypePay]
+        :type account_details: list[:class:`huaweicloudsdkbssintl.v2.BalanceTypePay`]
         """
         self._account_details = account_details
 
@@ -376,7 +407,7 @@ class BillSumRecordInfo:
         折扣金额详情。 具体请参见表5。 当bill_type为1时，不返回此参数。
 
         :return: The discount_detail_infos of this BillSumRecordInfo.
-        :rtype: list[DiscountDetailInfo]
+        :rtype: list[:class:`huaweicloudsdkbssintl.v2.DiscountDetailInfo`]
         """
         return self._discount_detail_infos
 
@@ -387,7 +418,7 @@ class BillSumRecordInfo:
         折扣金额详情。 具体请参见表5。 当bill_type为1时，不返回此参数。
 
         :param discount_detail_infos: The discount_detail_infos of this BillSumRecordInfo.
-        :type: list[DiscountDetailInfo]
+        :type discount_detail_infos: list[:class:`huaweicloudsdkbssintl.v2.DiscountDetailInfo`]
         """
         self._discount_detail_infos = discount_detail_infos
 
@@ -409,7 +440,7 @@ class BillSumRecordInfo:
         企业项目ID。 当请求参数中传递了“enterpriseProjectId”，响应参数“bill_sums”返回以企业项目ID为维度的账单记录。
 
         :param enterprise_project_id: The enterprise_project_id of this BillSumRecordInfo.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 

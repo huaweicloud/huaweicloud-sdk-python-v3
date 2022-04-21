@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RouterWithStatus:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class RouterWithStatus:
     }
 
     def __init__(self, status=None, router_id=None, router_region=None):
-        """RouterWithStatus - a model defined in huaweicloud sdk"""
+        """RouterWithStatus
+
+        The model defined in huaweicloud sdk
+
+        :param status: 资源状态。
+        :type status: str
+        :param router_id: Router(VPC)所属VPC的ID。
+        :type router_id: str
+        :param router_region: Router(VPC)所在的region。
+        :type router_region: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class RouterWithStatus:
         资源状态。
 
         :param status: The status of this RouterWithStatus.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -90,7 +99,7 @@ class RouterWithStatus:
         Router(VPC)所属VPC的ID。
 
         :param router_id: The router_id of this RouterWithStatus.
-        :type: str
+        :type router_id: str
         """
         self._router_id = router_id
 
@@ -112,7 +121,7 @@ class RouterWithStatus:
         Router(VPC)所在的region。
 
         :param router_region: The router_region of this RouterWithStatus.
-        :type: str
+        :type router_region: str
         """
         self._router_region = router_region
 

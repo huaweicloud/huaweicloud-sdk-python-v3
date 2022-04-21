@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateSpecialThrottlingConfigurationV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class CreateSpecialThrottlingConfigurationV2Response(SdkResponse):
     }
 
     def __init__(self, id=None, call_limits=None, apply_time=None, app_name=None, app_id=None, object_id=None, object_type=None, object_name=None, throttle_id=None):
-        """CreateSpecialThrottlingConfigurationV2Response - a model defined in huaweicloud sdk"""
+        """CreateSpecialThrottlingConfigurationV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param id: 特殊配置的编号
+        :type id: str
+        :param call_limits: 特殊对象在流控时间内能够访问API的最大次数限制
+        :type call_limits: int
+        :param apply_time: 设置时间
+        :type apply_time: datetime
+        :param app_name: 作用的APP名称
+        :type app_name: str
+        :param app_id: 作用的APP编号
+        :type app_id: str
+        :param object_id: 特殊对象的身份标识
+        :type object_id: str
+        :param object_type: 特殊对象类型：APP、USER
+        :type object_type: str
+        :param object_name: [作用的APP或租户的名称](tag:hws;hws_hk;hcs;fcs;g42;)[作用的APP或租户ID](tag:Site)
+        :type object_name: str
+        :param throttle_id: 流控策略编号
+        :type throttle_id: str
+        """
         
         super(CreateSpecialThrottlingConfigurationV2Response, self).__init__()
 
@@ -98,7 +119,7 @@ class CreateSpecialThrottlingConfigurationV2Response(SdkResponse):
         特殊配置的编号
 
         :param id: The id of this CreateSpecialThrottlingConfigurationV2Response.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -120,7 +141,7 @@ class CreateSpecialThrottlingConfigurationV2Response(SdkResponse):
         特殊对象在流控时间内能够访问API的最大次数限制
 
         :param call_limits: The call_limits of this CreateSpecialThrottlingConfigurationV2Response.
-        :type: int
+        :type call_limits: int
         """
         self._call_limits = call_limits
 
@@ -142,7 +163,7 @@ class CreateSpecialThrottlingConfigurationV2Response(SdkResponse):
         设置时间
 
         :param apply_time: The apply_time of this CreateSpecialThrottlingConfigurationV2Response.
-        :type: datetime
+        :type apply_time: datetime
         """
         self._apply_time = apply_time
 
@@ -164,7 +185,7 @@ class CreateSpecialThrottlingConfigurationV2Response(SdkResponse):
         作用的APP名称
 
         :param app_name: The app_name of this CreateSpecialThrottlingConfigurationV2Response.
-        :type: str
+        :type app_name: str
         """
         self._app_name = app_name
 
@@ -186,7 +207,7 @@ class CreateSpecialThrottlingConfigurationV2Response(SdkResponse):
         作用的APP编号
 
         :param app_id: The app_id of this CreateSpecialThrottlingConfigurationV2Response.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -208,7 +229,7 @@ class CreateSpecialThrottlingConfigurationV2Response(SdkResponse):
         特殊对象的身份标识
 
         :param object_id: The object_id of this CreateSpecialThrottlingConfigurationV2Response.
-        :type: str
+        :type object_id: str
         """
         self._object_id = object_id
 
@@ -230,7 +251,7 @@ class CreateSpecialThrottlingConfigurationV2Response(SdkResponse):
         特殊对象类型：APP、USER
 
         :param object_type: The object_type of this CreateSpecialThrottlingConfigurationV2Response.
-        :type: str
+        :type object_type: str
         """
         self._object_type = object_type
 
@@ -252,7 +273,7 @@ class CreateSpecialThrottlingConfigurationV2Response(SdkResponse):
         [作用的APP或租户的名称](tag:hws;hws_hk;hcs;fcs;g42;)[作用的APP或租户ID](tag:Site)
 
         :param object_name: The object_name of this CreateSpecialThrottlingConfigurationV2Response.
-        :type: str
+        :type object_name: str
         """
         self._object_name = object_name
 
@@ -274,7 +295,7 @@ class CreateSpecialThrottlingConfigurationV2Response(SdkResponse):
         流控策略编号
 
         :param throttle_id: The throttle_id of this CreateSpecialThrottlingConfigurationV2Response.
-        :type: str
+        :type throttle_id: str
         """
         self._throttle_id = throttle_id
 

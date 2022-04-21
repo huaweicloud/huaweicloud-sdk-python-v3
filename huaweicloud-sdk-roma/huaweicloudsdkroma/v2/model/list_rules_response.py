@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRulesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListRulesResponse(SdkResponse):
     }
 
     def __init__(self, total=None, size=None, items=None):
-        """ListRulesResponse - a model defined in huaweicloud sdk"""
+        """ListRulesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 总数
+        :type total: int
+        :param size: 本次返回数量
+        :type size: int
+        :param items: 规则列表
+        :type items: list[:class:`huaweicloudsdkroma.v2.Rule`]
+        """
         
         super(ListRulesResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListRulesResponse(SdkResponse):
         总数
 
         :param total: The total of this ListRulesResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -90,7 +99,7 @@ class ListRulesResponse(SdkResponse):
         本次返回数量
 
         :param size: The size of this ListRulesResponse.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -101,7 +110,7 @@ class ListRulesResponse(SdkResponse):
         规则列表
 
         :return: The items of this ListRulesResponse.
-        :rtype: list[Rule]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.Rule`]
         """
         return self._items
 
@@ -112,7 +121,7 @@ class ListRulesResponse(SdkResponse):
         规则列表
 
         :param items: The items of this ListRulesResponse.
-        :type: list[Rule]
+        :type items: list[:class:`huaweicloudsdkroma.v2.Rule`]
         """
         self._items = items
 

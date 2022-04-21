@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListLogHistogramRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListLogHistogramRequest:
     }
 
     def __init__(self, body=None):
-        """ListLogHistogramRequest - a model defined in huaweicloud sdk"""
+        """ListLogHistogramRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the ListLogHistogramRequest
+        :type body: :class:`huaweicloudsdklts.v2.QueryLogKeyWordCountRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class ListLogHistogramRequest:
 
 
         :return: The body of this ListLogHistogramRequest.
-        :rtype: QueryLogKeyWordCountRequestBody
+        :rtype: :class:`huaweicloudsdklts.v2.QueryLogKeyWordCountRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class ListLogHistogramRequest:
 
 
         :param body: The body of this ListLogHistogramRequest.
-        :type: QueryLogKeyWordCountRequestBody
+        :type body: :class:`huaweicloudsdklts.v2.QueryLogKeyWordCountRequestBody`
         """
         self._body = body
 

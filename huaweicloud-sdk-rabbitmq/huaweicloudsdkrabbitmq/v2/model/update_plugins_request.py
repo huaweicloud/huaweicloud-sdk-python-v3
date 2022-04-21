@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdatePluginsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdatePluginsRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """UpdatePluginsRequest - a model defined in huaweicloud sdk"""
+        """UpdatePluginsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param body: Body of the UpdatePluginsRequest
+        :type body: :class:`huaweicloudsdkrabbitmq.v2.UpdatePluginsReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdatePluginsRequest:
         实例ID。
 
         :param instance_id: The instance_id of this UpdatePluginsRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -72,7 +79,7 @@ class UpdatePluginsRequest:
 
 
         :return: The body of this UpdatePluginsRequest.
-        :rtype: UpdatePluginsReq
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.UpdatePluginsReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdatePluginsRequest:
 
 
         :param body: The body of this UpdatePluginsRequest.
-        :type: UpdatePluginsReq
+        :type body: :class:`huaweicloudsdkrabbitmq.v2.UpdatePluginsReq`
         """
         self._body = body
 

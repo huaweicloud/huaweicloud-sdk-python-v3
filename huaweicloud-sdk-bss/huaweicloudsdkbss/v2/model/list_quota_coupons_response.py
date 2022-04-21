@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListQuotaCouponsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListQuotaCouponsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, quotas=None):
-        """ListQuotaCouponsResponse - a model defined in huaweicloud sdk"""
+        """ListQuotaCouponsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total_count: 查询总数。
+        :type total_count: int
+        :param quotas: 额度记录列表。 具体请参见表1。
+        :type quotas: list[:class:`huaweicloudsdkbss.v2.CouponQuotaV2`]
+        """
         
         super(ListQuotaCouponsResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListQuotaCouponsResponse(SdkResponse):
         查询总数。
 
         :param total_count: The total_count of this ListQuotaCouponsResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 
@@ -74,7 +81,7 @@ class ListQuotaCouponsResponse(SdkResponse):
         额度记录列表。 具体请参见表1。
 
         :return: The quotas of this ListQuotaCouponsResponse.
-        :rtype: list[CouponQuotaV2]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.CouponQuotaV2`]
         """
         return self._quotas
 
@@ -85,7 +92,7 @@ class ListQuotaCouponsResponse(SdkResponse):
         额度记录列表。 具体请参见表1。
 
         :param quotas: The quotas of this ListQuotaCouponsResponse.
-        :type: list[CouponQuotaV2]
+        :type quotas: list[:class:`huaweicloudsdkbss.v2.CouponQuotaV2`]
         """
         self._quotas = quotas
 

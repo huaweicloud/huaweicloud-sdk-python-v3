@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestInviteReqBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RestInviteReqBody:
     }
 
     def __init__(self, attendees=None):
-        """RestInviteReqBody - a model defined in huaweicloud sdk"""
+        """RestInviteReqBody
+
+        The model defined in huaweicloud sdk
+
+        :param attendees: 邀请的与会者列表。
+        :type attendees: list[:class:`huaweicloudsdkmeeting.v1.Attendee`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class RestInviteReqBody:
         邀请的与会者列表。
 
         :return: The attendees of this RestInviteReqBody.
-        :rtype: list[Attendee]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.Attendee`]
         """
         return self._attendees
 
@@ -57,7 +62,7 @@ class RestInviteReqBody:
         邀请的与会者列表。
 
         :param attendees: The attendees of this RestInviteReqBody.
-        :type: list[Attendee]
+        :type attendees: list[:class:`huaweicloudsdkmeeting.v1.Attendee`]
         """
         self._attendees = attendees
 

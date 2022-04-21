@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Server:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -72,7 +71,55 @@ class Server:
     }
 
     def __init__(self, id=None, ip=None, name=None, hostname=None, os_type=None, os_version=None, firmware=None, cpu_quantity=None, memory=None, disks=None, btrfs_list=None, networks=None, domain_id=None, has_rsync=None, paravirtualization=None, raw_devices=None, driver_files=None, system_services=None, account_rights=None, boot_loader=None, system_dir=None, volume_groups=None):
-        """Server - a model defined in huaweicloud sdk"""
+        """Server
+
+        The model defined in huaweicloud sdk
+
+        :param id: 源端在SMS数据库中的ID
+        :type id: str
+        :param ip: 源端服务器ip，注册源端时必选，更新非必选
+        :type ip: str
+        :param name: 用来区分不同源端服务器的名称
+        :type name: str
+        :param hostname: 源端主机名，注册源端必选，更新非必选
+        :type hostname: str
+        :param os_type: 源端服务器的OS类型，分为Windows和Linux，注册必选，更新非必选
+        :type os_type: str
+        :param os_version: 操作系统版本，注册必选，更新非必选
+        :type os_version: str
+        :param firmware: 源端服务器启动类型，如BIOS或者UEFI
+        :type firmware: str
+        :param cpu_quantity: CPU个数，单位vCPU
+        :type cpu_quantity: int
+        :param memory: 内存大小，单位MB
+        :type memory: int
+        :param disks: 源端服务器的磁盘信息
+        :type disks: list[:class:`huaweicloudsdksms.v3.Disk`]
+        :param btrfs_list: Linux 必选，源端的Btrfs信息。如果源端不存在Btrfs，则为[]
+        :type btrfs_list: list[:class:`huaweicloudsdksms.v3.BtrfsFileSystem`]
+        :param networks: 源端服务器的网卡信息
+        :type networks: list[:class:`huaweicloudsdksms.v3.NetWork`]
+        :param domain_id: 租户的domainId
+        :type domain_id: str
+        :param has_rsync: 是否安装rsync组件，Linux系统此参数为必选
+        :type has_rsync: bool
+        :param paravirtualization: Linux场景必选，源端是否是半虚拟化
+        :type paravirtualization: bool
+        :param raw_devices: Linux必选，裸设备列表
+        :type raw_devices: str
+        :param driver_files: Windows 必选，是否缺少驱动文件
+        :type driver_files: bool
+        :param system_services: Windows必选，是否存在不正常服务
+        :type system_services: bool
+        :param account_rights: Windows必选，权限是否满足要求
+        :type account_rights: bool
+        :param boot_loader: Linux必选，系统引导类型，BOOT_LOADER(GRUB/LILO)
+        :type boot_loader: str
+        :param system_dir: Windows必选，系统目录
+        :type system_dir: str
+        :param volume_groups: Linux必选，如果没有卷组，输入[]
+        :type volume_groups: list[:class:`huaweicloudsdksms.v3.VolumeGroups`]
+        """
         
         
 
@@ -160,7 +207,7 @@ class Server:
         源端在SMS数据库中的ID
 
         :param id: The id of this Server.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -182,7 +229,7 @@ class Server:
         源端服务器ip，注册源端时必选，更新非必选
 
         :param ip: The ip of this Server.
-        :type: str
+        :type ip: str
         """
         self._ip = ip
 
@@ -204,7 +251,7 @@ class Server:
         用来区分不同源端服务器的名称
 
         :param name: The name of this Server.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -226,7 +273,7 @@ class Server:
         源端主机名，注册源端必选，更新非必选
 
         :param hostname: The hostname of this Server.
-        :type: str
+        :type hostname: str
         """
         self._hostname = hostname
 
@@ -248,7 +295,7 @@ class Server:
         源端服务器的OS类型，分为Windows和Linux，注册必选，更新非必选
 
         :param os_type: The os_type of this Server.
-        :type: str
+        :type os_type: str
         """
         self._os_type = os_type
 
@@ -270,7 +317,7 @@ class Server:
         操作系统版本，注册必选，更新非必选
 
         :param os_version: The os_version of this Server.
-        :type: str
+        :type os_version: str
         """
         self._os_version = os_version
 
@@ -292,7 +339,7 @@ class Server:
         源端服务器启动类型，如BIOS或者UEFI
 
         :param firmware: The firmware of this Server.
-        :type: str
+        :type firmware: str
         """
         self._firmware = firmware
 
@@ -314,7 +361,7 @@ class Server:
         CPU个数，单位vCPU
 
         :param cpu_quantity: The cpu_quantity of this Server.
-        :type: int
+        :type cpu_quantity: int
         """
         self._cpu_quantity = cpu_quantity
 
@@ -336,7 +383,7 @@ class Server:
         内存大小，单位MB
 
         :param memory: The memory of this Server.
-        :type: int
+        :type memory: int
         """
         self._memory = memory
 
@@ -347,7 +394,7 @@ class Server:
         源端服务器的磁盘信息
 
         :return: The disks of this Server.
-        :rtype: list[Disk]
+        :rtype: list[:class:`huaweicloudsdksms.v3.Disk`]
         """
         return self._disks
 
@@ -358,7 +405,7 @@ class Server:
         源端服务器的磁盘信息
 
         :param disks: The disks of this Server.
-        :type: list[Disk]
+        :type disks: list[:class:`huaweicloudsdksms.v3.Disk`]
         """
         self._disks = disks
 
@@ -369,7 +416,7 @@ class Server:
         Linux 必选，源端的Btrfs信息。如果源端不存在Btrfs，则为[]
 
         :return: The btrfs_list of this Server.
-        :rtype: list[BtrfsFileSystem]
+        :rtype: list[:class:`huaweicloudsdksms.v3.BtrfsFileSystem`]
         """
         return self._btrfs_list
 
@@ -380,7 +427,7 @@ class Server:
         Linux 必选，源端的Btrfs信息。如果源端不存在Btrfs，则为[]
 
         :param btrfs_list: The btrfs_list of this Server.
-        :type: list[BtrfsFileSystem]
+        :type btrfs_list: list[:class:`huaweicloudsdksms.v3.BtrfsFileSystem`]
         """
         self._btrfs_list = btrfs_list
 
@@ -391,7 +438,7 @@ class Server:
         源端服务器的网卡信息
 
         :return: The networks of this Server.
-        :rtype: list[NetWork]
+        :rtype: list[:class:`huaweicloudsdksms.v3.NetWork`]
         """
         return self._networks
 
@@ -402,7 +449,7 @@ class Server:
         源端服务器的网卡信息
 
         :param networks: The networks of this Server.
-        :type: list[NetWork]
+        :type networks: list[:class:`huaweicloudsdksms.v3.NetWork`]
         """
         self._networks = networks
 
@@ -424,7 +471,7 @@ class Server:
         租户的domainId
 
         :param domain_id: The domain_id of this Server.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -446,7 +493,7 @@ class Server:
         是否安装rsync组件，Linux系统此参数为必选
 
         :param has_rsync: The has_rsync of this Server.
-        :type: bool
+        :type has_rsync: bool
         """
         self._has_rsync = has_rsync
 
@@ -468,7 +515,7 @@ class Server:
         Linux场景必选，源端是否是半虚拟化
 
         :param paravirtualization: The paravirtualization of this Server.
-        :type: bool
+        :type paravirtualization: bool
         """
         self._paravirtualization = paravirtualization
 
@@ -490,7 +537,7 @@ class Server:
         Linux必选，裸设备列表
 
         :param raw_devices: The raw_devices of this Server.
-        :type: str
+        :type raw_devices: str
         """
         self._raw_devices = raw_devices
 
@@ -512,7 +559,7 @@ class Server:
         Windows 必选，是否缺少驱动文件
 
         :param driver_files: The driver_files of this Server.
-        :type: bool
+        :type driver_files: bool
         """
         self._driver_files = driver_files
 
@@ -534,7 +581,7 @@ class Server:
         Windows必选，是否存在不正常服务
 
         :param system_services: The system_services of this Server.
-        :type: bool
+        :type system_services: bool
         """
         self._system_services = system_services
 
@@ -556,7 +603,7 @@ class Server:
         Windows必选，权限是否满足要求
 
         :param account_rights: The account_rights of this Server.
-        :type: bool
+        :type account_rights: bool
         """
         self._account_rights = account_rights
 
@@ -578,7 +625,7 @@ class Server:
         Linux必选，系统引导类型，BOOT_LOADER(GRUB/LILO)
 
         :param boot_loader: The boot_loader of this Server.
-        :type: str
+        :type boot_loader: str
         """
         self._boot_loader = boot_loader
 
@@ -600,7 +647,7 @@ class Server:
         Windows必选，系统目录
 
         :param system_dir: The system_dir of this Server.
-        :type: str
+        :type system_dir: str
         """
         self._system_dir = system_dir
 
@@ -611,7 +658,7 @@ class Server:
         Linux必选，如果没有卷组，输入[]
 
         :return: The volume_groups of this Server.
-        :rtype: list[VolumeGroups]
+        :rtype: list[:class:`huaweicloudsdksms.v3.VolumeGroups`]
         """
         return self._volume_groups
 
@@ -622,7 +669,7 @@ class Server:
         Linux必选，如果没有卷组，输入[]
 
         :param volume_groups: The volume_groups of this Server.
-        :type: list[VolumeGroups]
+        :type volume_groups: list[:class:`huaweicloudsdksms.v3.VolumeGroups`]
         """
         self._volume_groups = volume_groups
 

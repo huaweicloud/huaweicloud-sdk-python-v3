@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Vpc:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class Vpc:
     }
 
     def __init__(self, id=None, name=None, cidr=None, mode=None, subnet_num=None):
-        """Vpc - a model defined in huaweicloud sdk"""
+        """Vpc
+
+        The model defined in huaweicloud sdk
+
+        :param id: 虚拟私有云的ID。
+        :type id: str
+        :param name: 虚拟私有云名称  取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）  约束：同一个帐号下的名称不能重复
+        :type name: str
+        :param cidr: 虚拟私有云下可用子网的范围  取值范围： 10.0.0.0/8~24 172.16.0.0/12~24 192.168.0.0/16~24  约束：必须是cidr格式，例如:192.168.0.0/16
+        :type cidr: str
+        :param mode: 虚拟私有云的模式。
+        :type mode: str
+        :param subnet_num: 子网的数目。
+        :type subnet_num: int
+        """
         
         
 
@@ -78,7 +91,7 @@ class Vpc:
         虚拟私有云的ID。
 
         :param id: The id of this Vpc.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -100,7 +113,7 @@ class Vpc:
         虚拟私有云名称  取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）  约束：同一个帐号下的名称不能重复
 
         :param name: The name of this Vpc.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -122,7 +135,7 @@ class Vpc:
         虚拟私有云下可用子网的范围  取值范围： 10.0.0.0/8~24 172.16.0.0/12~24 192.168.0.0/16~24  约束：必须是cidr格式，例如:192.168.0.0/16
 
         :param cidr: The cidr of this Vpc.
-        :type: str
+        :type cidr: str
         """
         self._cidr = cidr
 
@@ -144,7 +157,7 @@ class Vpc:
         虚拟私有云的模式。
 
         :param mode: The mode of this Vpc.
-        :type: str
+        :type mode: str
         """
         self._mode = mode
 
@@ -166,7 +179,7 @@ class Vpc:
         子网的数目。
 
         :param subnet_num: The subnet_num of this Vpc.
-        :type: int
+        :type subnet_num: int
         """
         self._subnet_num = subnet_num
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApplyConfigurationAsyncResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ApplyConfigurationAsyncResponse(SdkResponse):
     }
 
     def __init__(self, configuration_id=None, configuration_name=None, success=None, job_id=None):
-        """ApplyConfigurationAsyncResponse - a model defined in huaweicloud sdk"""
+        """ApplyConfigurationAsyncResponse
+
+        The model defined in huaweicloud sdk
+
+        :param configuration_id: 参数组ID。
+        :type configuration_id: str
+        :param configuration_name: 参数组名称。
+        :type configuration_name: str
+        :param success: 参数模板是否都应用成功。 - “true”表示参数模板都应用成功。 - “false”表示存在应用失败的参数模板。
+        :type success: bool
+        :param job_id: 任务流id
+        :type job_id: str
+        """
         
         super(ApplyConfigurationAsyncResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class ApplyConfigurationAsyncResponse(SdkResponse):
         参数组ID。
 
         :param configuration_id: The configuration_id of this ApplyConfigurationAsyncResponse.
-        :type: str
+        :type configuration_id: str
         """
         self._configuration_id = configuration_id
 
@@ -95,7 +106,7 @@ class ApplyConfigurationAsyncResponse(SdkResponse):
         参数组名称。
 
         :param configuration_name: The configuration_name of this ApplyConfigurationAsyncResponse.
-        :type: str
+        :type configuration_name: str
         """
         self._configuration_name = configuration_name
 
@@ -117,7 +128,7 @@ class ApplyConfigurationAsyncResponse(SdkResponse):
         参数模板是否都应用成功。 - “true”表示参数模板都应用成功。 - “false”表示存在应用失败的参数模板。
 
         :param success: The success of this ApplyConfigurationAsyncResponse.
-        :type: bool
+        :type success: bool
         """
         self._success = success
 
@@ -139,7 +150,7 @@ class ApplyConfigurationAsyncResponse(SdkResponse):
         任务流id
 
         :param job_id: The job_id of this ApplyConfigurationAsyncResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 

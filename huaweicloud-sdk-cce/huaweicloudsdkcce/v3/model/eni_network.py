@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EniNetwork:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class EniNetwork:
     }
 
     def __init__(self, eni_subnet_id=None, eni_subnet_cidr=None, subnets=None):
-        """EniNetwork - a model defined in huaweicloud sdk"""
+        """EniNetwork
+
+        The model defined in huaweicloud sdk
+
+        :param eni_subnet_id: 用于创建控制节点的subnet的IPv4网络ID(暂不支持IPv6,废弃中)。获取方法如下：  - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找IPv4子网ID。 - 方法2：通过虚拟私有云服务的查询子网列表接口查询。   [链接请参见[查询子网列表](https://support.huaweicloud.com/api-vpc/vpc_subnet01_0003.html)](tag:hws)   [链接请参见[查询子网列表](https://support.huaweicloud.com/intl/zh-cn/api-vpc/vpc_subnet01_0003.html)](tag:hws_hk)
+        :type eni_subnet_id: str
+        :param eni_subnet_cidr: ENI子网CIDR(废弃中)
+        :type eni_subnet_cidr: str
+        :param subnets: IPv4子网ID列表
+        :type subnets: list[:class:`huaweicloudsdkcce.v3.NetworkSubnet`]
+        """
         
         
 
@@ -65,7 +74,7 @@ class EniNetwork:
         用于创建控制节点的subnet的IPv4网络ID(暂不支持IPv6,废弃中)。获取方法如下：  - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找IPv4子网ID。 - 方法2：通过虚拟私有云服务的查询子网列表接口查询。   [链接请参见[查询子网列表](https://support.huaweicloud.com/api-vpc/vpc_subnet01_0003.html)](tag:hws)   [链接请参见[查询子网列表](https://support.huaweicloud.com/intl/zh-cn/api-vpc/vpc_subnet01_0003.html)](tag:hws_hk)
 
         :param eni_subnet_id: The eni_subnet_id of this EniNetwork.
-        :type: str
+        :type eni_subnet_id: str
         """
         self._eni_subnet_id = eni_subnet_id
 
@@ -87,7 +96,7 @@ class EniNetwork:
         ENI子网CIDR(废弃中)
 
         :param eni_subnet_cidr: The eni_subnet_cidr of this EniNetwork.
-        :type: str
+        :type eni_subnet_cidr: str
         """
         self._eni_subnet_cidr = eni_subnet_cidr
 
@@ -98,7 +107,7 @@ class EniNetwork:
         IPv4子网ID列表
 
         :return: The subnets of this EniNetwork.
-        :rtype: list[NetworkSubnet]
+        :rtype: list[:class:`huaweicloudsdkcce.v3.NetworkSubnet`]
         """
         return self._subnets
 
@@ -109,7 +118,7 @@ class EniNetwork:
         IPv4子网ID列表
 
         :param subnets: The subnets of this EniNetwork.
-        :type: list[NetworkSubnet]
+        :type subnets: list[:class:`huaweicloudsdkcce.v3.NetworkSubnet`]
         """
         self._subnets = subnets
 

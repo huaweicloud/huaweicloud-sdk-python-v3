@@ -51,22 +51,22 @@ class SFSTurboAsyncClient(Client):
     def batch_add_shared_tags_async(self, request):
         """批量添加共享标签
 
-        指定共享批量添加标签。  一个共享上最多有10个标签。 一个共享上的多个标签的key不允许重复。 此接口为幂等接口：如果要添加的key在共享上已存在，则覆盖更新标签。
+        指定共享批量添加标签。
+        
+        一个共享上最多有10个标签。
+        一个共享上的多个标签的key不允许重复。
+        此接口为幂等接口：如果要添加的key在共享上已存在，则覆盖更新标签。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchAddSharedTagsRequest request
-        :return: BatchAddSharedTagsResponse
+        :param request: Request instance for BatchAddSharedTags
+        :type request: :class:`huaweicloudsdksfsturbo.v1.BatchAddSharedTagsRequest`
+        :rtype: :class:`huaweicloudsdksfsturbo.v1.BatchAddSharedTagsResponse`
         """
         return self.batch_add_shared_tags_with_http_info(request)
 
     def batch_add_shared_tags_with_http_info(self, request):
-        """批量添加共享标签
-
-        指定共享批量添加标签。  一个共享上最多有10个标签。 一个共享上的多个标签的key不允许重复。 此接口为幂等接口：如果要添加的key在共享上已存在，则覆盖更新标签。
-
-        :param BatchAddSharedTagsRequest request
-        :return: BatchAddSharedTagsResponse
-        """
-
         all_params = ['share_id', 'add_shareed_tags']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -112,26 +112,21 @@ class SFSTurboAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def change_security_group_async(self, request):
         """修改文件系统绑定的安全组
 
         修改SFS Turbo文件系统绑定的安全组。修改安全组为异步任务，可以通过“查询单个文件系统”返回的子状态字段“sub_status”来判断是否修改安全组状态，子状态为“232”即为修改安全组成功。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ChangeSecurityGroupRequest request
-        :return: ChangeSecurityGroupResponse
+        :param request: Request instance for ChangeSecurityGroup
+        :type request: :class:`huaweicloudsdksfsturbo.v1.ChangeSecurityGroupRequest`
+        :rtype: :class:`huaweicloudsdksfsturbo.v1.ChangeSecurityGroupResponse`
         """
         return self.change_security_group_with_http_info(request)
 
     def change_security_group_with_http_info(self, request):
-        """修改文件系统绑定的安全组
-
-        修改SFS Turbo文件系统绑定的安全组。修改安全组为异步任务，可以通过“查询单个文件系统”返回的子状态字段“sub_status”来判断是否修改安全组状态，子状态为“232”即为修改安全组成功。
-
-        :param ChangeSecurityGroupRequest request
-        :return: ChangeSecurityGroupResponse
-        """
-
         all_params = ['share_id', 'change_security_group']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -177,26 +172,21 @@ class SFSTurboAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_share_async(self, request):
         """创建文件系统
 
         创建文件系统。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateShareRequest request
-        :return: CreateShareResponse
+        :param request: Request instance for CreateShare
+        :type request: :class:`huaweicloudsdksfsturbo.v1.CreateShareRequest`
+        :rtype: :class:`huaweicloudsdksfsturbo.v1.CreateShareResponse`
         """
         return self.create_share_with_http_info(request)
 
     def create_share_with_http_info(self, request):
-        """创建文件系统
-
-        创建文件系统。
-
-        :param CreateShareRequest request
-        :return: CreateShareResponse
-        """
-
         all_params = ['share']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -240,26 +230,24 @@ class SFSTurboAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_shared_tag_async(self, request):
         """创建共享标签
 
-        指定共享添加一个标签。 一个共享上最多有10个标签。 一个共享上的多个标签的key不允许重复。 此接口为幂等接口：如果要添加的key在共享上已存在，则覆盖更新标签。
+        指定共享添加一个标签。
+        一个共享上最多有10个标签。
+        一个共享上的多个标签的key不允许重复。
+        此接口为幂等接口：如果要添加的key在共享上已存在，则覆盖更新标签。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateSharedTagRequest request
-        :return: CreateSharedTagResponse
+        :param request: Request instance for CreateSharedTag
+        :type request: :class:`huaweicloudsdksfsturbo.v1.CreateSharedTagRequest`
+        :rtype: :class:`huaweicloudsdksfsturbo.v1.CreateSharedTagResponse`
         """
         return self.create_shared_tag_with_http_info(request)
 
     def create_shared_tag_with_http_info(self, request):
-        """创建共享标签
-
-        指定共享添加一个标签。 一个共享上最多有10个标签。 一个共享上的多个标签的key不允许重复。 此接口为幂等接口：如果要添加的key在共享上已存在，则覆盖更新标签。
-
-        :param CreateSharedTagRequest request
-        :return: CreateSharedTagResponse
-        """
-
         all_params = ['share_id', 'tag']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -305,26 +293,21 @@ class SFSTurboAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_share_async(self, request):
         """删除文件系统
 
         删除文件系统。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteShareRequest request
-        :return: DeleteShareResponse
+        :param request: Request instance for DeleteShare
+        :type request: :class:`huaweicloudsdksfsturbo.v1.DeleteShareRequest`
+        :rtype: :class:`huaweicloudsdksfsturbo.v1.DeleteShareResponse`
         """
         return self.delete_share_with_http_info(request)
 
     def delete_share_with_http_info(self, request):
-        """删除文件系统
-
-        删除文件系统。
-
-        :param DeleteShareRequest request
-        :return: DeleteShareResponse
-        """
-
         all_params = ['share_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -368,26 +351,21 @@ class SFSTurboAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_shared_tag_async(self, request):
         """删除共享标签
 
         指定共享删除一个标签。当共享中不存在指定要删除的key时，接口调用将会返回404错误。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteSharedTagRequest request
-        :return: DeleteSharedTagResponse
+        :param request: Request instance for DeleteSharedTag
+        :type request: :class:`huaweicloudsdksfsturbo.v1.DeleteSharedTagRequest`
+        :rtype: :class:`huaweicloudsdksfsturbo.v1.DeleteSharedTagResponse`
         """
         return self.delete_shared_tag_with_http_info(request)
 
     def delete_shared_tag_with_http_info(self, request):
-        """删除共享标签
-
-        指定共享删除一个标签。当共享中不存在指定要删除的key时，接口调用将会返回404错误。
-
-        :param DeleteSharedTagRequest request
-        :return: DeleteSharedTagResponse
-        """
-
         all_params = ['share_id', 'key']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -433,26 +411,21 @@ class SFSTurboAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def expand_share_async(self, request):
         """扩容文件系统
 
         扩容文件系统。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ExpandShareRequest request
-        :return: ExpandShareResponse
+        :param request: Request instance for ExpandShare
+        :type request: :class:`huaweicloudsdksfsturbo.v1.ExpandShareRequest`
+        :rtype: :class:`huaweicloudsdksfsturbo.v1.ExpandShareResponse`
         """
         return self.expand_share_with_http_info(request)
 
     def expand_share_with_http_info(self, request):
-        """扩容文件系统
-
-        扩容文件系统。
-
-        :param ExpandShareRequest request
-        :return: ExpandShareResponse
-        """
-
         all_params = ['share_id', 'extend']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -498,26 +471,21 @@ class SFSTurboAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_shared_tags_async(self, request):
         """查询租户所有共享的标签
 
         查询租户所有共享的标签集合。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListSharedTagsRequest request
-        :return: ListSharedTagsResponse
+        :param request: Request instance for ListSharedTags
+        :type request: :class:`huaweicloudsdksfsturbo.v1.ListSharedTagsRequest`
+        :rtype: :class:`huaweicloudsdksfsturbo.v1.ListSharedTagsResponse`
         """
         return self.list_shared_tags_with_http_info(request)
 
     def list_shared_tags_with_http_info(self, request):
-        """查询租户所有共享的标签
-
-        查询租户所有共享的标签集合。
-
-        :param ListSharedTagsRequest request
-        :return: ListSharedTagsResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -559,26 +527,21 @@ class SFSTurboAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_shares_async(self, request):
         """获取文件系统列表
 
         获取文件系统列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListSharesRequest request
-        :return: ListSharesResponse
+        :param request: Request instance for ListShares
+        :type request: :class:`huaweicloudsdksfsturbo.v1.ListSharesRequest`
+        :rtype: :class:`huaweicloudsdksfsturbo.v1.ListSharesResponse`
         """
         return self.list_shares_with_http_info(request)
 
     def list_shares_with_http_info(self, request):
-        """获取文件系统列表
-
-        获取文件系统列表
-
-        :param ListSharesRequest request
-        :return: ListSharesResponse
-        """
-
         all_params = ['limit', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -624,26 +587,21 @@ class SFSTurboAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_share_async(self, request):
         """查询文件系统详细信息
 
         查询SFS Turbo文件系统详细信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowShareRequest request
-        :return: ShowShareResponse
+        :param request: Request instance for ShowShare
+        :type request: :class:`huaweicloudsdksfsturbo.v1.ShowShareRequest`
+        :rtype: :class:`huaweicloudsdksfsturbo.v1.ShowShareResponse`
         """
         return self.show_share_with_http_info(request)
 
     def show_share_with_http_info(self, request):
-        """查询文件系统详细信息
-
-        查询SFS Turbo文件系统详细信息。
-
-        :param ShowShareRequest request
-        :return: ShowShareResponse
-        """
-
         all_params = ['share_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -687,26 +645,21 @@ class SFSTurboAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_shared_tags_async(self, request):
         """查询共享标签
 
         查询指定共享的所有标签信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowSharedTagsRequest request
-        :return: ShowSharedTagsResponse
+        :param request: Request instance for ShowSharedTags
+        :type request: :class:`huaweicloudsdksfsturbo.v1.ShowSharedTagsRequest`
+        :rtype: :class:`huaweicloudsdksfsturbo.v1.ShowSharedTagsResponse`
         """
         return self.show_shared_tags_with_http_info(request)
 
     def show_shared_tags_with_http_info(self, request):
-        """查询共享标签
-
-        查询指定共享的所有标签信息。
-
-        :param ShowSharedTagsRequest request
-        :return: ShowSharedTagsResponse
-        """
-
         all_params = ['share_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -749,7 +702,6 @@ class SFSTurboAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

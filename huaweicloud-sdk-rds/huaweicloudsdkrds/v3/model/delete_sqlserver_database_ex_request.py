@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteSqlserverDatabaseExRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class DeleteSqlserverDatabaseExRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, db_name=None, body=None):
-        """DeleteSqlserverDatabaseExRequest - a model defined in huaweicloud sdk"""
+        """DeleteSqlserverDatabaseExRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言
+        :type x_language: str
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param db_name: 需要删除的数据库名。
+        :type db_name: str
+        :param body: Body of the DeleteSqlserverDatabaseExRequest
+        :type body: :class:`huaweicloudsdkrds.v3.DropDatabaseV3Req`
+        """
         
         
 
@@ -71,7 +82,7 @@ class DeleteSqlserverDatabaseExRequest:
         语言
 
         :param x_language: The x_language of this DeleteSqlserverDatabaseExRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -93,7 +104,7 @@ class DeleteSqlserverDatabaseExRequest:
         实例ID。
 
         :param instance_id: The instance_id of this DeleteSqlserverDatabaseExRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -115,7 +126,7 @@ class DeleteSqlserverDatabaseExRequest:
         需要删除的数据库名。
 
         :param db_name: The db_name of this DeleteSqlserverDatabaseExRequest.
-        :type: str
+        :type db_name: str
         """
         self._db_name = db_name
 
@@ -125,7 +136,7 @@ class DeleteSqlserverDatabaseExRequest:
 
 
         :return: The body of this DeleteSqlserverDatabaseExRequest.
-        :rtype: DropDatabaseV3Req
+        :rtype: :class:`huaweicloudsdkrds.v3.DropDatabaseV3Req`
         """
         return self._body
 
@@ -135,7 +146,7 @@ class DeleteSqlserverDatabaseExRequest:
 
 
         :param body: The body of this DeleteSqlserverDatabaseExRequest.
-        :type: DropDatabaseV3Req
+        :type body: :class:`huaweicloudsdkrds.v3.DropDatabaseV3Req`
         """
         self._body = body
 

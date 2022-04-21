@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreatePolicyRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreatePolicyRequestBody:
     }
 
     def __init__(self, name=None):
-        """CreatePolicyRequestBody - a model defined in huaweicloud sdk"""
+        """CreatePolicyRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param name: 策略名称（策略名称只能由数字、字母和下划线组成，长度不能超过64为字符）
+        :type name: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class CreatePolicyRequestBody:
         策略名称（策略名称只能由数字、字母和下划线组成，长度不能超过64为字符）
 
         :param name: The name of this CreatePolicyRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 

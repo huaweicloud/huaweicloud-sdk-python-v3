@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDatasourcesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class ListDatasourcesRequest:
     }
 
     def __init__(self, instance_id=None, limit=None, offset=None, datasource_type=None, sort_field=None, sort_type=None, name=None, app_id=None, custom_plugin_id=None):
-        """ListDatasourcesRequest - a model defined in huaweicloud sdk"""
+        """ListDatasourcesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param limit: 每页显示条目数量，最大数量999，超过999后只返回999
+        :type limit: int
+        :param offset: 分页查询，分页的偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
+        :type offset: int
+        :param datasource_type: 数据源类型 - DWS - MYSQL - KAFKA - API - OBS - SAP - MRSHBASE - MRSHDFS - MRSHIVE - WEBSOCKET - SQLSERVER - ORACLE - POSTGRESQL - REDIS - MONGODB - DIS - HL7 - RABBITMQ - SNMP - IBMMQ - CUSTOMIZED (自定义类型) - ACTIVEMQ - ARTEMISMQ - FTP - HIVE - HANA - FIKAFKA - MRSKAFKA - FIHDFS - FIHIVE - GAUSS200 - GAUSS100 - LDAP - DB2 - TAURUS
+        :type datasource_type: str
+        :param sort_field: 排序字段（CREATED_DATE）
+        :type sort_field: str
+        :param sort_type: 查询数据源排序的类型，增序还是降序，可为空
+        :type sort_type: str
+        :param name: 数据源名称,支持模糊匹配
+        :type name: str
+        :param app_id: 集成应用ID
+        :type app_id: str
+        :param custom_plugin_id: 连接器ID
+        :type custom_plugin_id: str
+        """
         
         
 
@@ -97,7 +118,7 @@ class ListDatasourcesRequest:
         实例ID
 
         :param instance_id: The instance_id of this ListDatasourcesRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -119,7 +140,7 @@ class ListDatasourcesRequest:
         每页显示条目数量，最大数量999，超过999后只返回999
 
         :param limit: The limit of this ListDatasourcesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -141,7 +162,7 @@ class ListDatasourcesRequest:
         分页查询，分页的偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
         :param offset: The offset of this ListDatasourcesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -163,7 +184,7 @@ class ListDatasourcesRequest:
         数据源类型 - DWS - MYSQL - KAFKA - API - OBS - SAP - MRSHBASE - MRSHDFS - MRSHIVE - WEBSOCKET - SQLSERVER - ORACLE - POSTGRESQL - REDIS - MONGODB - DIS - HL7 - RABBITMQ - SNMP - IBMMQ - CUSTOMIZED (自定义类型) - ACTIVEMQ - ARTEMISMQ - FTP - HIVE - HANA - FIKAFKA - MRSKAFKA - FIHDFS - FIHIVE - GAUSS200 - GAUSS100 - LDAP - DB2 - TAURUS
 
         :param datasource_type: The datasource_type of this ListDatasourcesRequest.
-        :type: str
+        :type datasource_type: str
         """
         self._datasource_type = datasource_type
 
@@ -185,7 +206,7 @@ class ListDatasourcesRequest:
         排序字段（CREATED_DATE）
 
         :param sort_field: The sort_field of this ListDatasourcesRequest.
-        :type: str
+        :type sort_field: str
         """
         self._sort_field = sort_field
 
@@ -207,7 +228,7 @@ class ListDatasourcesRequest:
         查询数据源排序的类型，增序还是降序，可为空
 
         :param sort_type: The sort_type of this ListDatasourcesRequest.
-        :type: str
+        :type sort_type: str
         """
         self._sort_type = sort_type
 
@@ -229,7 +250,7 @@ class ListDatasourcesRequest:
         数据源名称,支持模糊匹配
 
         :param name: The name of this ListDatasourcesRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -251,7 +272,7 @@ class ListDatasourcesRequest:
         集成应用ID
 
         :param app_id: The app_id of this ListDatasourcesRequest.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -273,7 +294,7 @@ class ListDatasourcesRequest:
         连接器ID
 
         :param custom_plugin_id: The custom_plugin_id of this ListDatasourcesRequest.
-        :type: str
+        :type custom_plugin_id: str
         """
         self._custom_plugin_id = custom_plugin_id
 

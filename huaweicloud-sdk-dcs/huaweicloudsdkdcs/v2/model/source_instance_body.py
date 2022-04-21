@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SourceInstanceBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class SourceInstanceBody:
     }
 
     def __init__(self, addrs=None, password=None):
-        """SourceInstanceBody - a model defined in huaweicloud sdk"""
+        """SourceInstanceBody
+
+        The model defined in huaweicloud sdk
+
+        :param addrs: Redis实例名称(source_instance信息中填写)。
+        :type addrs: str
+        :param password: Redis密码，如果设置了密码，则必须填写。
+        :type password: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class SourceInstanceBody:
         Redis实例名称(source_instance信息中填写)。
 
         :param addrs: The addrs of this SourceInstanceBody.
-        :type: str
+        :type addrs: str
         """
         self._addrs = addrs
 
@@ -84,7 +91,7 @@ class SourceInstanceBody:
         Redis密码，如果设置了密码，则必须填写。
 
         :param password: The password of this SourceInstanceBody.
-        :type: str
+        :type password: str
         """
         self._password = password
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ProtectablesResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ProtectablesResp:
     }
 
     def __init__(self, children=None, detail=None, id=None, name=None, protectable=None, size=None, status=None, type=None):
-        """ProtectablesResp - a model defined in huaweicloud sdk"""
+        """ProtectablesResp
+
+        The model defined in huaweicloud sdk
+
+        :param children: 子资源
+        :type children: list[object]
+        :param detail: 资源详情
+        :type detail: object
+        :param id: id
+        :type id: str
+        :param name: 名称
+        :type name: str
+        :param protectable: 
+        :type protectable: :class:`huaweicloudsdkcbr.v1.ProtectableResult`
+        :param size: 大小，单位GB
+        :type size: int
+        :param status: 资源状态
+        :type status: str
+        :param type: 待备份资源的类型, 云服务器: OS::Nova::Server, 云硬盘: OS::Cinder::Volume, 裸金属服务器: OS::Ironic::BareMetalServer, 线下本地服务器: OS::Native::Server, 弹性文件系统: OS::Sfs::Turbo
+        :type type: str
+        """
         
         
 
@@ -88,7 +107,7 @@ class ProtectablesResp:
         子资源
 
         :param children: The children of this ProtectablesResp.
-        :type: list[object]
+        :type children: list[object]
         """
         self._children = children
 
@@ -110,7 +129,7 @@ class ProtectablesResp:
         资源详情
 
         :param detail: The detail of this ProtectablesResp.
-        :type: object
+        :type detail: object
         """
         self._detail = detail
 
@@ -132,7 +151,7 @@ class ProtectablesResp:
         id
 
         :param id: The id of this ProtectablesResp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -154,7 +173,7 @@ class ProtectablesResp:
         名称
 
         :param name: The name of this ProtectablesResp.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -164,7 +183,7 @@ class ProtectablesResp:
 
 
         :return: The protectable of this ProtectablesResp.
-        :rtype: ProtectableResult
+        :rtype: :class:`huaweicloudsdkcbr.v1.ProtectableResult`
         """
         return self._protectable
 
@@ -174,7 +193,7 @@ class ProtectablesResp:
 
 
         :param protectable: The protectable of this ProtectablesResp.
-        :type: ProtectableResult
+        :type protectable: :class:`huaweicloudsdkcbr.v1.ProtectableResult`
         """
         self._protectable = protectable
 
@@ -196,7 +215,7 @@ class ProtectablesResp:
         大小，单位GB
 
         :param size: The size of this ProtectablesResp.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -218,7 +237,7 @@ class ProtectablesResp:
         资源状态
 
         :param status: The status of this ProtectablesResp.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -240,7 +259,7 @@ class ProtectablesResp:
         待备份资源的类型, 云服务器: OS::Nova::Server, 云硬盘: OS::Cinder::Volume, 裸金属服务器: OS::Ironic::BareMetalServer, 线下本地服务器: OS::Native::Server, 弹性文件系统: OS::Sfs::Turbo
 
         :param type: The type of this ProtectablesResp.
-        :type: str
+        :type type: str
         """
         self._type = type
 

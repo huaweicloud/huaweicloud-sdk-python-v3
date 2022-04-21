@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MigrateSubNetworkInterfaceOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class MigrateSubNetworkInterfaceOption:
     }
 
     def __init__(self, parent_id=None, sub_network_interfaces=None):
-        """MigrateSubNetworkInterfaceOption - a model defined in huaweicloud sdk"""
+        """MigrateSubNetworkInterfaceOption
+
+        The model defined in huaweicloud sdk
+
+        :param parent_id: 目的宿主网卡ID
+        :type parent_id: str
+        :param sub_network_interfaces: 待迁移辅助弹性网卡列表
+        :type sub_network_interfaces: list[dict(str, str)]
+        """
         
         
 
@@ -61,7 +68,7 @@ class MigrateSubNetworkInterfaceOption:
         目的宿主网卡ID
 
         :param parent_id: The parent_id of this MigrateSubNetworkInterfaceOption.
-        :type: str
+        :type parent_id: str
         """
         self._parent_id = parent_id
 
@@ -83,7 +90,7 @@ class MigrateSubNetworkInterfaceOption:
         待迁移辅助弹性网卡列表
 
         :param sub_network_interfaces: The sub_network_interfaces of this MigrateSubNetworkInterfaceOption.
-        :type: list[dict(str, str)]
+        :type sub_network_interfaces: list[dict(str, str)]
         """
         self._sub_network_interfaces = sub_network_interfaces
 

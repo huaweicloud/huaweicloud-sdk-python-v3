@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InviteParticipantRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class InviteParticipantRequest:
     }
 
     def __init__(self, conference_id=None, x_conference_authorization=None, body=None):
-        """InviteParticipantRequest - a model defined in huaweicloud sdk"""
+        """InviteParticipantRequest
+
+        The model defined in huaweicloud sdk
+
+        :param conference_id: 会议ID。
+        :type conference_id: str
+        :param x_conference_authorization: 会控授权令牌，通过获取会控token接口获得。
+        :type x_conference_authorization: str
+        :param body: Body of the InviteParticipantRequest
+        :type body: :class:`huaweicloudsdkmeeting.v1.RestInviteReqBody`
+        """
         
         
 
@@ -66,7 +75,7 @@ class InviteParticipantRequest:
         会议ID。
 
         :param conference_id: The conference_id of this InviteParticipantRequest.
-        :type: str
+        :type conference_id: str
         """
         self._conference_id = conference_id
 
@@ -88,7 +97,7 @@ class InviteParticipantRequest:
         会控授权令牌，通过获取会控token接口获得。
 
         :param x_conference_authorization: The x_conference_authorization of this InviteParticipantRequest.
-        :type: str
+        :type x_conference_authorization: str
         """
         self._x_conference_authorization = x_conference_authorization
 
@@ -98,7 +107,7 @@ class InviteParticipantRequest:
 
 
         :return: The body of this InviteParticipantRequest.
-        :rtype: RestInviteReqBody
+        :rtype: :class:`huaweicloudsdkmeeting.v1.RestInviteReqBody`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class InviteParticipantRequest:
 
 
         :param body: The body of this InviteParticipantRequest.
-        :type: RestInviteReqBody
+        :type body: :class:`huaweicloudsdkmeeting.v1.RestInviteReqBody`
         """
         self._body = body
 

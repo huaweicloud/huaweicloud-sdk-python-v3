@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunModerationAudioResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RunModerationAudioResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """RunModerationAudioResponse - a model defined in huaweicloud sdk"""
+        """RunModerationAudioResponse
+
+        The model defined in huaweicloud sdk
+
+        :param result: 
+        :type result: :class:`huaweicloudsdkmoderation.v2.RunModerationAudioResponseBodyResult`
+        """
         
         super(RunModerationAudioResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class RunModerationAudioResponse(SdkResponse):
 
 
         :return: The result of this RunModerationAudioResponse.
-        :rtype: RunModerationAudioResponseBodyResult
+        :rtype: :class:`huaweicloudsdkmoderation.v2.RunModerationAudioResponseBodyResult`
         """
         return self._result
 
@@ -56,7 +61,7 @@ class RunModerationAudioResponse(SdkResponse):
 
 
         :param result: The result of this RunModerationAudioResponse.
-        :type: RunModerationAudioResponseBodyResult
+        :type result: :class:`huaweicloudsdkmoderation.v2.RunModerationAudioResponseBodyResult`
         """
         self._result = result
 

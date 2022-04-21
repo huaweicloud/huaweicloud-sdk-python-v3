@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowOnlineMeetingDetailRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class ShowOnlineMeetingDetailRequest:
     }
 
     def __init__(self, conference_id=None, offset=None, limit=None, search_key=None, user_uuid=None, x_type=None, x_query_type=None, x_authorization_type=None, x_site_id=None):
-        """ShowOnlineMeetingDetailRequest - a model defined in huaweicloud sdk"""
+        """ShowOnlineMeetingDetailRequest
+
+        The model defined in huaweicloud sdk
+
+        :param conference_id: 会议ID。
+        :type conference_id: str
+        :param offset: 指定返回的记录索引。该值必须大于等于0； 默认为0。
+        :type offset: int
+        :param limit: 指定返回的记录数。
+        :type limit: int
+        :param search_key: 用来作关键词查询的字符串。
+        :type search_key: str
+        :param user_uuid: 用户的UUID（已在USG注册过的）。
+        :type user_uuid: str
+        :param x_type: 默认值为0。 - 0: 不区分终端和与会人。 - 1: 分页查询区分终端和与会人，结果合并返回。 - 2: 单独查询终端和与会人，结果单独返回。
+        :type x_type: str
+        :param x_query_type: 当X-Type为2时，该字段有效。默认值为0。 - 0: 查询与会人。 - 1: 查询终端。
+        :type x_query_type: str
+        :param x_authorization_type: 标识是否为第三方portal过来的请求。
+        :type x_authorization_type: str
+        :param x_site_id: 用于区分到哪个HCSO站点鉴权。
+        :type x_site_id: str
+        """
         
         
 
@@ -97,7 +118,7 @@ class ShowOnlineMeetingDetailRequest:
         会议ID。
 
         :param conference_id: The conference_id of this ShowOnlineMeetingDetailRequest.
-        :type: str
+        :type conference_id: str
         """
         self._conference_id = conference_id
 
@@ -119,7 +140,7 @@ class ShowOnlineMeetingDetailRequest:
         指定返回的记录索引。该值必须大于等于0； 默认为0。
 
         :param offset: The offset of this ShowOnlineMeetingDetailRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -141,7 +162,7 @@ class ShowOnlineMeetingDetailRequest:
         指定返回的记录数。
 
         :param limit: The limit of this ShowOnlineMeetingDetailRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -163,7 +184,7 @@ class ShowOnlineMeetingDetailRequest:
         用来作关键词查询的字符串。
 
         :param search_key: The search_key of this ShowOnlineMeetingDetailRequest.
-        :type: str
+        :type search_key: str
         """
         self._search_key = search_key
 
@@ -185,7 +206,7 @@ class ShowOnlineMeetingDetailRequest:
         用户的UUID（已在USG注册过的）。
 
         :param user_uuid: The user_uuid of this ShowOnlineMeetingDetailRequest.
-        :type: str
+        :type user_uuid: str
         """
         self._user_uuid = user_uuid
 
@@ -207,7 +228,7 @@ class ShowOnlineMeetingDetailRequest:
         默认值为0。 - 0: 不区分终端和与会人。 - 1: 分页查询区分终端和与会人，结果合并返回。 - 2: 单独查询终端和与会人，结果单独返回。
 
         :param x_type: The x_type of this ShowOnlineMeetingDetailRequest.
-        :type: str
+        :type x_type: str
         """
         self._x_type = x_type
 
@@ -229,7 +250,7 @@ class ShowOnlineMeetingDetailRequest:
         当X-Type为2时，该字段有效。默认值为0。 - 0: 查询与会人。 - 1: 查询终端。
 
         :param x_query_type: The x_query_type of this ShowOnlineMeetingDetailRequest.
-        :type: str
+        :type x_query_type: str
         """
         self._x_query_type = x_query_type
 
@@ -251,7 +272,7 @@ class ShowOnlineMeetingDetailRequest:
         标识是否为第三方portal过来的请求。
 
         :param x_authorization_type: The x_authorization_type of this ShowOnlineMeetingDetailRequest.
-        :type: str
+        :type x_authorization_type: str
         """
         self._x_authorization_type = x_authorization_type
 
@@ -273,7 +294,7 @@ class ShowOnlineMeetingDetailRequest:
         用于区分到哪个HCSO站点鉴权。
 
         :param x_site_id: The x_site_id of this ShowOnlineMeetingDetailRequest.
-        :type: str
+        :type x_site_id: str
         """
         self._x_site_id = x_site_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateYmlsReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateYmlsReq:
     }
 
     def __init__(self, edit=None):
-        """UpdateYmlsReq - a model defined in huaweicloud sdk"""
+        """UpdateYmlsReq
+
+        The model defined in huaweicloud sdk
+
+        :param edit: 
+        :type edit: :class:`huaweicloudsdkcss.v1.UpdateYmlsReqEdit`
+        """
         
         
 
@@ -45,7 +50,7 @@ class UpdateYmlsReq:
 
 
         :return: The edit of this UpdateYmlsReq.
-        :rtype: UpdateYmlsReqEdit
+        :rtype: :class:`huaweicloudsdkcss.v1.UpdateYmlsReqEdit`
         """
         return self._edit
 
@@ -55,7 +60,7 @@ class UpdateYmlsReq:
 
 
         :param edit: The edit of this UpdateYmlsReq.
-        :type: UpdateYmlsReqEdit
+        :type edit: :class:`huaweicloudsdkcss.v1.UpdateYmlsReqEdit`
         """
         self._edit = edit
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchDeleteMqsInstanceTopicRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchDeleteMqsInstanceTopicRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """BatchDeleteMqsInstanceTopicRequest - a model defined in huaweicloud sdk"""
+        """BatchDeleteMqsInstanceTopicRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param body: Body of the BatchDeleteMqsInstanceTopicRequest
+        :type body: :class:`huaweicloudsdkroma.v2.BatchDeleteMqsInstanceTopicReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class BatchDeleteMqsInstanceTopicRequest:
         实例ID。
 
         :param instance_id: The instance_id of this BatchDeleteMqsInstanceTopicRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -72,7 +79,7 @@ class BatchDeleteMqsInstanceTopicRequest:
 
 
         :return: The body of this BatchDeleteMqsInstanceTopicRequest.
-        :rtype: BatchDeleteMqsInstanceTopicReq
+        :rtype: :class:`huaweicloudsdkroma.v2.BatchDeleteMqsInstanceTopicReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class BatchDeleteMqsInstanceTopicRequest:
 
 
         :param body: The body of this BatchDeleteMqsInstanceTopicRequest.
-        :type: BatchDeleteMqsInstanceTopicReq
+        :type body: :class:`huaweicloudsdkroma.v2.BatchDeleteMqsInstanceTopicReq`
         """
         self._body = body
 

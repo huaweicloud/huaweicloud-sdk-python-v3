@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SrcNodeResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class SrcNodeResp:
     }
 
     def __init__(self, bucket=None, cloud_type=None, region=None, app_id=None, object_key=None, list_file=None):
-        """SrcNodeResp - a model defined in huaweicloud sdk"""
+        """SrcNodeResp
+
+        The model defined in huaweicloud sdk
+
+        :param bucket: 源端桶的名称。
+        :type bucket: str
+        :param cloud_type: 源端云服务提供商。  可选值有AWS、Azure、Aliyun、Tencent、HuaweiCloud、QingCloud、KingsoftCloud、Baidu、Qiniu、URLSource或者UCloud。默认值为Aliyun。
+        :type cloud_type: str
+        :param region: 源端桶所处的区域。
+        :type region: str
+        :param app_id: 当源端为腾讯云时，会返回此参数。
+        :type app_id: str
+        :param object_key: 任务类型为对象迁移任务时，表示待迁移对象名称； 任务类型为前缀迁移任务时，表示待迁移前缀。
+        :type object_key: list[str]
+        :param list_file: 
+        :type list_file: :class:`huaweicloudsdkoms.v2.ListFile`
+        """
         
         
 
@@ -83,7 +98,7 @@ class SrcNodeResp:
         源端桶的名称。
 
         :param bucket: The bucket of this SrcNodeResp.
-        :type: str
+        :type bucket: str
         """
         self._bucket = bucket
 
@@ -105,7 +120,7 @@ class SrcNodeResp:
         源端云服务提供商。  可选值有AWS、Azure、Aliyun、Tencent、HuaweiCloud、QingCloud、KingsoftCloud、Baidu、Qiniu、URLSource或者UCloud。默认值为Aliyun。
 
         :param cloud_type: The cloud_type of this SrcNodeResp.
-        :type: str
+        :type cloud_type: str
         """
         self._cloud_type = cloud_type
 
@@ -127,7 +142,7 @@ class SrcNodeResp:
         源端桶所处的区域。
 
         :param region: The region of this SrcNodeResp.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -149,7 +164,7 @@ class SrcNodeResp:
         当源端为腾讯云时，会返回此参数。
 
         :param app_id: The app_id of this SrcNodeResp.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -171,7 +186,7 @@ class SrcNodeResp:
         任务类型为对象迁移任务时，表示待迁移对象名称； 任务类型为前缀迁移任务时，表示待迁移前缀。
 
         :param object_key: The object_key of this SrcNodeResp.
-        :type: list[str]
+        :type object_key: list[str]
         """
         self._object_key = object_key
 
@@ -181,7 +196,7 @@ class SrcNodeResp:
 
 
         :return: The list_file of this SrcNodeResp.
-        :rtype: ListFile
+        :rtype: :class:`huaweicloudsdkoms.v2.ListFile`
         """
         return self._list_file
 
@@ -191,7 +206,7 @@ class SrcNodeResp:
 
 
         :param list_file: The list_file of this SrcNodeResp.
-        :type: ListFile
+        :type list_file: :class:`huaweicloudsdkoms.v2.ListFile`
         """
         self._list_file = list_file
 

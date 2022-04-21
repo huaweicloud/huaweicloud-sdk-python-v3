@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PrepaidCreateOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class PrepaidCreateOption:
     }
 
     def __init__(self, period_type=None, period_num=None, auto_renew=None, auto_pay=None):
-        """PrepaidCreateOption - a model defined in huaweicloud sdk"""
+        """PrepaidCreateOption
+
+        The model defined in huaweicloud sdk
+
+        :param period_type: 订购周期类型，仅在change_mode为delay时有效。取值： - month：月（默认）。 - year：年。
+        :type period_type: str
+        :param period_num: 订购周期数，仅在change_mode为delay时有效。取值： - period_type为month时，为[1,9]，默认1。 - period_type为year时，为[1,3]，默认1。
+        :type period_num: int
+        :param auto_renew: 是否自动续订； true：自动续订 false：不自动续订
+        :type auto_renew: bool
+        :param auto_pay: 下单订购后，是否自动从客户的账户中支付； true：自动支付； false：不自动支付。 自动支付时，只能使用账户的现金支付；如果要使用代金券，请选择不自动支付，然后在用户费用中心，选择代金券支付。
+        :type auto_pay: bool
+        """
         
         
 
@@ -72,7 +83,7 @@ class PrepaidCreateOption:
         订购周期类型，仅在change_mode为delay时有效。取值： - month：月（默认）。 - year：年。
 
         :param period_type: The period_type of this PrepaidCreateOption.
-        :type: str
+        :type period_type: str
         """
         self._period_type = period_type
 
@@ -94,7 +105,7 @@ class PrepaidCreateOption:
         订购周期数，仅在change_mode为delay时有效。取值： - period_type为month时，为[1,9]，默认1。 - period_type为year时，为[1,3]，默认1。
 
         :param period_num: The period_num of this PrepaidCreateOption.
-        :type: int
+        :type period_num: int
         """
         self._period_num = period_num
 
@@ -116,7 +127,7 @@ class PrepaidCreateOption:
         是否自动续订； true：自动续订 false：不自动续订
 
         :param auto_renew: The auto_renew of this PrepaidCreateOption.
-        :type: bool
+        :type auto_renew: bool
         """
         self._auto_renew = auto_renew
 
@@ -138,7 +149,7 @@ class PrepaidCreateOption:
         下单订购后，是否自动从客户的账户中支付； true：自动支付； false：不自动支付。 自动支付时，只能使用账户的现金支付；如果要使用代金券，请选择不自动支付，然后在用户费用中心，选择代金券支付。
 
         :param auto_pay: The auto_pay of this PrepaidCreateOption.
-        :type: bool
+        :type auto_pay: bool
         """
         self._auto_pay = auto_pay
 

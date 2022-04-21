@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowTemplateDetailRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowTemplateDetailRequest:
     }
 
     def __init__(self, x_language=None, template_id=None, template_type=None, source=None):
-        """ShowTemplateDetailRequest - a model defined in huaweicloud sdk"""
+        """ShowTemplateDetailRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言类型 中文:zh-cn 英文:en-us，默认en-us
+        :type x_language: str
+        :param template_id: 模板ID
+        :type template_id: str
+        :param template_type: 模板类型
+        :type template_type: str
+        :param source: 接口调用方
+        :type source: str
+        """
         
         
 
@@ -71,7 +82,7 @@ class ShowTemplateDetailRequest:
         语言类型 中文:zh-cn 英文:en-us，默认en-us
 
         :param x_language: The x_language of this ShowTemplateDetailRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -93,7 +104,7 @@ class ShowTemplateDetailRequest:
         模板ID
 
         :param template_id: The template_id of this ShowTemplateDetailRequest.
-        :type: str
+        :type template_id: str
         """
         self._template_id = template_id
 
@@ -115,7 +126,7 @@ class ShowTemplateDetailRequest:
         模板类型
 
         :param template_type: The template_type of this ShowTemplateDetailRequest.
-        :type: str
+        :type template_type: str
         """
         self._template_type = template_type
 
@@ -137,7 +148,7 @@ class ShowTemplateDetailRequest:
         接口调用方
 
         :param source: The source of this ShowTemplateDetailRequest.
-        :type: str
+        :type source: str
         """
         self._source = source
 

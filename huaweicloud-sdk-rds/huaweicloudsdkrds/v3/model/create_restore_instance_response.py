@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateRestoreInstanceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateRestoreInstanceResponse(SdkResponse):
     }
 
     def __init__(self, instance=None, job_id=None, order_id=None):
-        """CreateRestoreInstanceResponse - a model defined in huaweicloud sdk"""
+        """CreateRestoreInstanceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param instance: 
+        :type instance: :class:`huaweicloudsdkrds.v3.CreateInstanceRespItem`
+        :param job_id: 实例创建的任务id。  仅创建按需实例时会返回该参数。
+        :type job_id: str
+        :param order_id: 订单号，创建包年包月时返回该参数。
+        :type order_id: str
+        """
         
         super(CreateRestoreInstanceResponse, self).__init__()
 
@@ -56,7 +65,7 @@ class CreateRestoreInstanceResponse(SdkResponse):
 
 
         :return: The instance of this CreateRestoreInstanceResponse.
-        :rtype: CreateInstanceRespItem
+        :rtype: :class:`huaweicloudsdkrds.v3.CreateInstanceRespItem`
         """
         return self._instance
 
@@ -66,7 +75,7 @@ class CreateRestoreInstanceResponse(SdkResponse):
 
 
         :param instance: The instance of this CreateRestoreInstanceResponse.
-        :type: CreateInstanceRespItem
+        :type instance: :class:`huaweicloudsdkrds.v3.CreateInstanceRespItem`
         """
         self._instance = instance
 
@@ -88,7 +97,7 @@ class CreateRestoreInstanceResponse(SdkResponse):
         实例创建的任务id。  仅创建按需实例时会返回该参数。
 
         :param job_id: The job_id of this CreateRestoreInstanceResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -110,7 +119,7 @@ class CreateRestoreInstanceResponse(SdkResponse):
         订单号，创建包年包月时返回该参数。
 
         :param order_id: The order_id of this CreateRestoreInstanceResponse.
-        :type: str
+        :type order_id: str
         """
         self._order_id = order_id
 

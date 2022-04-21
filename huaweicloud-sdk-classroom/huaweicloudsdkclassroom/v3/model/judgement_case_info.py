@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class JudgementCaseInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class JudgementCaseInfo:
     }
 
     def __init__(self, input=None, output=None):
-        """JudgementCaseInfo - a model defined in huaweicloud sdk"""
+        """JudgementCaseInfo
+
+        The model defined in huaweicloud sdk
+
+        :param input: 用例数据输入
+        :type input: str
+        :param output: 用例数据期望输出
+        :type output: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class JudgementCaseInfo:
         用例数据输入
 
         :param input: The input of this JudgementCaseInfo.
-        :type: str
+        :type input: str
         """
         self._input = input
 
@@ -84,7 +91,7 @@ class JudgementCaseInfo:
         用例数据期望输出
 
         :param output: The output of this JudgementCaseInfo.
-        :type: str
+        :type output: str
         """
         self._output = output
 

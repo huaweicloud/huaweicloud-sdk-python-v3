@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RecordCallbackConfig:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class RecordCallbackConfig:
     }
 
     def __init__(self, id=None, publish_domain=None, app=None, notify_callback_url=None, notify_event_subscription=None, sign_type=None, create_time=None, update_time=None):
-        """RecordCallbackConfig - a model defined in huaweicloud sdk"""
+        """RecordCallbackConfig
+
+        The model defined in huaweicloud sdk
+
+        :param id: 配置id，由服务端返回。创建或修改的时候不携带
+        :type id: str
+        :param publish_domain: 直播推流域名
+        :type publish_domain: str
+        :param app: app名称。如果匹配任意需填写为*。录制规则匹配的时候，优先精确app匹配，如果匹配不到，则匹配*
+        :type app: str
+        :param notify_callback_url: 录制回调通知url地址
+        :type notify_callback_url: str
+        :param notify_event_subscription: 订阅录制通知消息。消息类型。RECORD_NEW_FILE_START开始创建新的录制文件。RECORD_FILE_COMPLETE录制文件生成完成。RECORD_OVER录制结束。RECORD_FAILED表示录制失败。如果不填写,默认订阅RECORD_FILE_COMPLETE
+        :type notify_event_subscription: list[str]
+        :param sign_type: 加密类型
+        :type sign_type: str
+        :param create_time: 创建时间，格式：yyyy-mm-ddThh:mm:ssZ，UTC时间。 在查询的时候返回
+        :type create_time: date
+        :param update_time: 修改时间，格式：yyyy-mm-ddThh:mm:ssZ，UTC时间。 在查询的时候返回
+        :type update_time: date
+        """
         
         
 
@@ -91,7 +110,7 @@ class RecordCallbackConfig:
         配置id，由服务端返回。创建或修改的时候不携带
 
         :param id: The id of this RecordCallbackConfig.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -113,7 +132,7 @@ class RecordCallbackConfig:
         直播推流域名
 
         :param publish_domain: The publish_domain of this RecordCallbackConfig.
-        :type: str
+        :type publish_domain: str
         """
         self._publish_domain = publish_domain
 
@@ -135,7 +154,7 @@ class RecordCallbackConfig:
         app名称。如果匹配任意需填写为*。录制规则匹配的时候，优先精确app匹配，如果匹配不到，则匹配*
 
         :param app: The app of this RecordCallbackConfig.
-        :type: str
+        :type app: str
         """
         self._app = app
 
@@ -157,7 +176,7 @@ class RecordCallbackConfig:
         录制回调通知url地址
 
         :param notify_callback_url: The notify_callback_url of this RecordCallbackConfig.
-        :type: str
+        :type notify_callback_url: str
         """
         self._notify_callback_url = notify_callback_url
 
@@ -179,7 +198,7 @@ class RecordCallbackConfig:
         订阅录制通知消息。消息类型。RECORD_NEW_FILE_START开始创建新的录制文件。RECORD_FILE_COMPLETE录制文件生成完成。RECORD_OVER录制结束。RECORD_FAILED表示录制失败。如果不填写,默认订阅RECORD_FILE_COMPLETE
 
         :param notify_event_subscription: The notify_event_subscription of this RecordCallbackConfig.
-        :type: list[str]
+        :type notify_event_subscription: list[str]
         """
         self._notify_event_subscription = notify_event_subscription
 
@@ -201,7 +220,7 @@ class RecordCallbackConfig:
         加密类型
 
         :param sign_type: The sign_type of this RecordCallbackConfig.
-        :type: str
+        :type sign_type: str
         """
         self._sign_type = sign_type
 
@@ -223,7 +242,7 @@ class RecordCallbackConfig:
         创建时间，格式：yyyy-mm-ddThh:mm:ssZ，UTC时间。 在查询的时候返回
 
         :param create_time: The create_time of this RecordCallbackConfig.
-        :type: date
+        :type create_time: date
         """
         self._create_time = create_time
 
@@ -245,7 +264,7 @@ class RecordCallbackConfig:
         修改时间，格式：yyyy-mm-ddThh:mm:ssZ，UTC时间。 在查询的时候返回
 
         :param update_time: The update_time of this RecordCallbackConfig.
-        :type: date
+        :type update_time: date
         """
         self._update_time = update_time
 

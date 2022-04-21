@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPipelineTemplatesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListPipelineTemplatesRequest:
     }
 
     def __init__(self, x_language=None, region_id=None, offset=None, limit=None):
-        """ListPipelineTemplatesRequest - a model defined in huaweicloud sdk"""
+        """ListPipelineTemplatesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言类型 中文:zh-cn 英文:en-us
+        :type x_language: str
+        :param region_id: 区域id
+        :type region_id: str
+        :param offset: 偏移量，表示从此偏移量开始查询，默认0
+        :type offset: int
+        :param limit: 每页显示的条目数量，默认10
+        :type limit: int
+        """
         
         
 
@@ -72,7 +83,7 @@ class ListPipelineTemplatesRequest:
         语言类型 中文:zh-cn 英文:en-us
 
         :param x_language: The x_language of this ListPipelineTemplatesRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -94,7 +105,7 @@ class ListPipelineTemplatesRequest:
         区域id
 
         :param region_id: The region_id of this ListPipelineTemplatesRequest.
-        :type: str
+        :type region_id: str
         """
         self._region_id = region_id
 
@@ -116,7 +127,7 @@ class ListPipelineTemplatesRequest:
         偏移量，表示从此偏移量开始查询，默认0
 
         :param offset: The offset of this ListPipelineTemplatesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -138,7 +149,7 @@ class ListPipelineTemplatesRequest:
         每页显示的条目数量，默认10
 
         :param limit: The limit of this ListPipelineTemplatesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

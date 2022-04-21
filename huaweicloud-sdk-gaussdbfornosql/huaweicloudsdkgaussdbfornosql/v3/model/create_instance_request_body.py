@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateInstanceRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -60,7 +59,43 @@ class CreateInstanceRequestBody:
     }
 
     def __init__(self, name=None, datastore=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, password=None, mode=None, flavor=None, configuration_id=None, backup_strategy=None, enterprise_project_id=None, dedicated_resource_id=None, ssl_option=None, charge_info=None):
-        """CreateInstanceRequestBody - a model defined in huaweicloud sdk"""
+        """CreateInstanceRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param name: 实例名称，允许和已有名称重复。 取值范围：长度为4~64位，必须以字母开头（A~Z或a~z），区分大小写，可以包含字母、数字（0~9）、中划线（-）或者下划线（_），不能包含其他特殊字符。
+        :type name: str
+        :param datastore: 
+        :type datastore: :class:`huaweicloudsdkgaussdbfornosql.v3.DatastoreOption`
+        :param region: - 区域ID - 取值：非空。
+        :type region: str
+        :param availability_zone: 可用区ID。 取值：请参见查询所有实例规格信息中返回的“az_status” ，支持创建3可用区实例，中间以逗号隔开。
+        :type availability_zone: str
+        :param vpc_id: 虚拟私有云ID，获取方法如下：   - 方法1：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。   - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考查询VPC列表。
+        :type vpc_id: str
+        :param subnet_id: 子网的网络ID，获取方法如下：   - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。   - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考查询子网列表。
+        :type subnet_id: str
+        :param security_group_id: 安全组ID，获取方法如下：   - 方法1：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。   - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考查询安全组列表。
+        :type security_group_id: str
+        :param password: 数据库密码。 取值范围：长度为8~32位，必须是大写字母（A~Z）、小写字母（a~z）、数字（0~9）、特殊字符~!@#%^*-_&#x3D;+?的组合。 建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。
+        :type password: str
+        :param mode: 实例类型。   - GaussDB(for Cassandra)支持集群类型，取值为“Cluster”。   - GaussDB(for Mongo)4.0版本支持副本集类型，取值为“ReplicaSet”。   - GaussDB(for Influx)支持集群类型，取值为“Cluster”。
+        :type mode: str
+        :param flavor: 实例规格详情。获取方法请参见查询所有实例规格信息中响应“flavors”字段下参数的值。
+        :type flavor: list[:class:`huaweicloudsdkgaussdbfornosql.v3.CreateInstanceFlavorOption`]
+        :param configuration_id: 参数模板ID。
+        :type configuration_id: str
+        :param backup_strategy: 
+        :type backup_strategy: :class:`huaweicloudsdkgaussdbfornosql.v3.BackupStrategyOption`
+        :param enterprise_project_id: 企业项目ID。
+        :type enterprise_project_id: str
+        :param dedicated_resource_id: 专属资源ID，只有开通专属资源池后才可以下发此参数。
+        :type dedicated_resource_id: str
+        :param ssl_option: SSL开关选项。 取值： - 取“0”，表示DDS实例默认不启用SSL连接。 - 取“1”，表示DDS实例默认启用SSL连接。 - 不传该参数时，默认不启用SSL连接。
+        :type ssl_option: str
+        :param charge_info: 
+        :type charge_info: :class:`huaweicloudsdkgaussdbfornosql.v3.ChargeInfoOption`
+        """
         
         
 
@@ -123,7 +158,7 @@ class CreateInstanceRequestBody:
         实例名称，允许和已有名称重复。 取值范围：长度为4~64位，必须以字母开头（A~Z或a~z），区分大小写，可以包含字母、数字（0~9）、中划线（-）或者下划线（_），不能包含其他特殊字符。
 
         :param name: The name of this CreateInstanceRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -133,7 +168,7 @@ class CreateInstanceRequestBody:
 
 
         :return: The datastore of this CreateInstanceRequestBody.
-        :rtype: DatastoreOption
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.DatastoreOption`
         """
         return self._datastore
 
@@ -143,7 +178,7 @@ class CreateInstanceRequestBody:
 
 
         :param datastore: The datastore of this CreateInstanceRequestBody.
-        :type: DatastoreOption
+        :type datastore: :class:`huaweicloudsdkgaussdbfornosql.v3.DatastoreOption`
         """
         self._datastore = datastore
 
@@ -165,7 +200,7 @@ class CreateInstanceRequestBody:
         - 区域ID - 取值：非空。
 
         :param region: The region of this CreateInstanceRequestBody.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -187,7 +222,7 @@ class CreateInstanceRequestBody:
         可用区ID。 取值：请参见查询所有实例规格信息中返回的“az_status” ，支持创建3可用区实例，中间以逗号隔开。
 
         :param availability_zone: The availability_zone of this CreateInstanceRequestBody.
-        :type: str
+        :type availability_zone: str
         """
         self._availability_zone = availability_zone
 
@@ -209,7 +244,7 @@ class CreateInstanceRequestBody:
         虚拟私有云ID，获取方法如下：   - 方法1：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。   - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考查询VPC列表。
 
         :param vpc_id: The vpc_id of this CreateInstanceRequestBody.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -231,7 +266,7 @@ class CreateInstanceRequestBody:
         子网的网络ID，获取方法如下：   - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。   - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考查询子网列表。
 
         :param subnet_id: The subnet_id of this CreateInstanceRequestBody.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -253,7 +288,7 @@ class CreateInstanceRequestBody:
         安全组ID，获取方法如下：   - 方法1：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。   - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考查询安全组列表。
 
         :param security_group_id: The security_group_id of this CreateInstanceRequestBody.
-        :type: str
+        :type security_group_id: str
         """
         self._security_group_id = security_group_id
 
@@ -275,7 +310,7 @@ class CreateInstanceRequestBody:
         数据库密码。 取值范围：长度为8~32位，必须是大写字母（A~Z）、小写字母（a~z）、数字（0~9）、特殊字符~!@#%^*-_=+?的组合。 建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。
 
         :param password: The password of this CreateInstanceRequestBody.
-        :type: str
+        :type password: str
         """
         self._password = password
 
@@ -297,7 +332,7 @@ class CreateInstanceRequestBody:
         实例类型。   - GaussDB(for Cassandra)支持集群类型，取值为“Cluster”。   - GaussDB(for Mongo)4.0版本支持副本集类型，取值为“ReplicaSet”。   - GaussDB(for Influx)支持集群类型，取值为“Cluster”。
 
         :param mode: The mode of this CreateInstanceRequestBody.
-        :type: str
+        :type mode: str
         """
         self._mode = mode
 
@@ -308,7 +343,7 @@ class CreateInstanceRequestBody:
         实例规格详情。获取方法请参见查询所有实例规格信息中响应“flavors”字段下参数的值。
 
         :return: The flavor of this CreateInstanceRequestBody.
-        :rtype: list[CreateInstanceFlavorOption]
+        :rtype: list[:class:`huaweicloudsdkgaussdbfornosql.v3.CreateInstanceFlavorOption`]
         """
         return self._flavor
 
@@ -319,7 +354,7 @@ class CreateInstanceRequestBody:
         实例规格详情。获取方法请参见查询所有实例规格信息中响应“flavors”字段下参数的值。
 
         :param flavor: The flavor of this CreateInstanceRequestBody.
-        :type: list[CreateInstanceFlavorOption]
+        :type flavor: list[:class:`huaweicloudsdkgaussdbfornosql.v3.CreateInstanceFlavorOption`]
         """
         self._flavor = flavor
 
@@ -341,7 +376,7 @@ class CreateInstanceRequestBody:
         参数模板ID。
 
         :param configuration_id: The configuration_id of this CreateInstanceRequestBody.
-        :type: str
+        :type configuration_id: str
         """
         self._configuration_id = configuration_id
 
@@ -351,7 +386,7 @@ class CreateInstanceRequestBody:
 
 
         :return: The backup_strategy of this CreateInstanceRequestBody.
-        :rtype: BackupStrategyOption
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.BackupStrategyOption`
         """
         return self._backup_strategy
 
@@ -361,7 +396,7 @@ class CreateInstanceRequestBody:
 
 
         :param backup_strategy: The backup_strategy of this CreateInstanceRequestBody.
-        :type: BackupStrategyOption
+        :type backup_strategy: :class:`huaweicloudsdkgaussdbfornosql.v3.BackupStrategyOption`
         """
         self._backup_strategy = backup_strategy
 
@@ -383,7 +418,7 @@ class CreateInstanceRequestBody:
         企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this CreateInstanceRequestBody.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -405,7 +440,7 @@ class CreateInstanceRequestBody:
         专属资源ID，只有开通专属资源池后才可以下发此参数。
 
         :param dedicated_resource_id: The dedicated_resource_id of this CreateInstanceRequestBody.
-        :type: str
+        :type dedicated_resource_id: str
         """
         self._dedicated_resource_id = dedicated_resource_id
 
@@ -427,7 +462,7 @@ class CreateInstanceRequestBody:
         SSL开关选项。 取值： - 取“0”，表示DDS实例默认不启用SSL连接。 - 取“1”，表示DDS实例默认启用SSL连接。 - 不传该参数时，默认不启用SSL连接。
 
         :param ssl_option: The ssl_option of this CreateInstanceRequestBody.
-        :type: str
+        :type ssl_option: str
         """
         self._ssl_option = ssl_option
 
@@ -437,7 +472,7 @@ class CreateInstanceRequestBody:
 
 
         :return: The charge_info of this CreateInstanceRequestBody.
-        :rtype: ChargeInfoOption
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ChargeInfoOption`
         """
         return self._charge_info
 
@@ -447,7 +482,7 @@ class CreateInstanceRequestBody:
 
 
         :param charge_info: The charge_info of this CreateInstanceRequestBody.
-        :type: ChargeInfoOption
+        :type charge_info: :class:`huaweicloudsdkgaussdbfornosql.v3.ChargeInfoOption`
         """
         self._charge_info = charge_info
 

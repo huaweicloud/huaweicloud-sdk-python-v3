@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateUserDetailReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateUserDetailReq:
     }
 
     def __init__(self, base_authority=None, description=None, databases=None):
-        """UpdateUserDetailReq - a model defined in huaweicloud sdk"""
+        """UpdateUserDetailReq
+
+        The model defined in huaweicloud sdk
+
+        :param base_authority: DDM实例帐号的基础权限，默认值为原DDM帐号权限。  取值为：CREATE、DROP、ALTER、INDEX、INSERT、DELETE、UPDATE、SELECT
+        :type base_authority: list[str]
+        :param description: DDM实例帐号的描述信息，长度不能超过256个字符。  默认值为空。
+        :type description: str
+        :param databases: DDM实例帐号相关信息的集合。
+        :type databases: list[:class:`huaweicloudsdkddm.v1.UpdateUsersDatabases`]
+        """
         
         
 
@@ -68,7 +77,7 @@ class UpdateUserDetailReq:
         DDM实例帐号的基础权限，默认值为原DDM帐号权限。  取值为：CREATE、DROP、ALTER、INDEX、INSERT、DELETE、UPDATE、SELECT
 
         :param base_authority: The base_authority of this UpdateUserDetailReq.
-        :type: list[str]
+        :type base_authority: list[str]
         """
         self._base_authority = base_authority
 
@@ -90,7 +99,7 @@ class UpdateUserDetailReq:
         DDM实例帐号的描述信息，长度不能超过256个字符。  默认值为空。
 
         :param description: The description of this UpdateUserDetailReq.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -101,7 +110,7 @@ class UpdateUserDetailReq:
         DDM实例帐号相关信息的集合。
 
         :return: The databases of this UpdateUserDetailReq.
-        :rtype: list[UpdateUsersDatabases]
+        :rtype: list[:class:`huaweicloudsdkddm.v1.UpdateUsersDatabases`]
         """
         return self._databases
 
@@ -112,7 +121,7 @@ class UpdateUserDetailReq:
         DDM实例帐号相关信息的集合。
 
         :param databases: The databases of this UpdateUserDetailReq.
-        :type: list[UpdateUsersDatabases]
+        :type databases: list[:class:`huaweicloudsdkddm.v1.UpdateUsersDatabases`]
         """
         self._databases = databases
 

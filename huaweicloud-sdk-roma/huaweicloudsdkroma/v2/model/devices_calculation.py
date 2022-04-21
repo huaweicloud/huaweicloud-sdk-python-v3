@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DevicesCalculation:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class DevicesCalculation:
     }
 
     def __init__(self, normal_devices=None, gateway_devices=None, subsets_devices=None):
-        """DevicesCalculation - a model defined in huaweicloud sdk"""
+        """DevicesCalculation
+
+        The model defined in huaweicloud sdk
+
+        :param normal_devices: 
+        :type normal_devices: :class:`huaweicloudsdkroma.v2.Calculation`
+        :param gateway_devices: 
+        :type gateway_devices: :class:`huaweicloudsdkroma.v2.Calculation`
+        :param subsets_devices: 
+        :type subsets_devices: :class:`huaweicloudsdkroma.v2.Calculation`
+        """
         
         
 
@@ -56,7 +65,7 @@ class DevicesCalculation:
 
 
         :return: The normal_devices of this DevicesCalculation.
-        :rtype: Calculation
+        :rtype: :class:`huaweicloudsdkroma.v2.Calculation`
         """
         return self._normal_devices
 
@@ -66,7 +75,7 @@ class DevicesCalculation:
 
 
         :param normal_devices: The normal_devices of this DevicesCalculation.
-        :type: Calculation
+        :type normal_devices: :class:`huaweicloudsdkroma.v2.Calculation`
         """
         self._normal_devices = normal_devices
 
@@ -76,7 +85,7 @@ class DevicesCalculation:
 
 
         :return: The gateway_devices of this DevicesCalculation.
-        :rtype: Calculation
+        :rtype: :class:`huaweicloudsdkroma.v2.Calculation`
         """
         return self._gateway_devices
 
@@ -86,7 +95,7 @@ class DevicesCalculation:
 
 
         :param gateway_devices: The gateway_devices of this DevicesCalculation.
-        :type: Calculation
+        :type gateway_devices: :class:`huaweicloudsdkroma.v2.Calculation`
         """
         self._gateway_devices = gateway_devices
 
@@ -96,7 +105,7 @@ class DevicesCalculation:
 
 
         :return: The subsets_devices of this DevicesCalculation.
-        :rtype: Calculation
+        :rtype: :class:`huaweicloudsdkroma.v2.Calculation`
         """
         return self._subsets_devices
 
@@ -106,7 +115,7 @@ class DevicesCalculation:
 
 
         :param subsets_devices: The subsets_devices of this DevicesCalculation.
-        :type: Calculation
+        :type subsets_devices: :class:`huaweicloudsdkroma.v2.Calculation`
         """
         self._subsets_devices = subsets_devices
 

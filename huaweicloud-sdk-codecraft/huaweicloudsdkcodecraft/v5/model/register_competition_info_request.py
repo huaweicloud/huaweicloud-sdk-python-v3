@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RegisterCompetitionInfoRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RegisterCompetitionInfoRequest:
     }
 
     def __init__(self, body=None):
-        """RegisterCompetitionInfoRequest - a model defined in huaweicloud sdk"""
+        """RegisterCompetitionInfoRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the RegisterCompetitionInfoRequest
+        :type body: :class:`huaweicloudsdkcodecraft.v5.RegisterInfoRequestModel`
+        """
         
         
 
@@ -46,7 +51,7 @@ class RegisterCompetitionInfoRequest:
 
 
         :return: The body of this RegisterCompetitionInfoRequest.
-        :rtype: RegisterInfoRequestModel
+        :rtype: :class:`huaweicloudsdkcodecraft.v5.RegisterInfoRequestModel`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class RegisterCompetitionInfoRequest:
 
 
         :param body: The body of this RegisterCompetitionInfoRequest.
-        :type: RegisterInfoRequestModel
+        :type body: :class:`huaweicloudsdkcodecraft.v5.RegisterInfoRequestModel`
         """
         self._body = body
 

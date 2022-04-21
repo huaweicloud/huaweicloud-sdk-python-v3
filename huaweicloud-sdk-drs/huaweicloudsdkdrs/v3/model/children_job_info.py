@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ChildrenJobInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class ChildrenJobInfo:
     }
 
     def __init__(self, billing_tag=None, create_time=None, db_use_type=None, description=None, engine_type=None, error_msg=None, id=None, job_direction=None, name=None, net_type=None, node_new_framework=None, status=None, task_type=None):
-        """ChildrenJobInfo - a model defined in huaweicloud sdk"""
+        """ChildrenJobInfo
+
+        The model defined in huaweicloud sdk
+
+        :param billing_tag: 计费字段
+        :type billing_tag: bool
+        :param create_time: 任务创建时间
+        :type create_time: str
+        :param db_use_type: 复制场景
+        :type db_use_type: str
+        :param description: 任务描述
+        :type description: str
+        :param engine_type: 引擎类型
+        :type engine_type: str
+        :param error_msg: 任务失败原因
+        :type error_msg: str
+        :param id: 任务id
+        :type id: str
+        :param job_direction: 迁移方向
+        :type job_direction: str
+        :param name: 任务名称
+        :type name: str
+        :param net_type: 网络类型
+        :type net_type: str
+        :param node_new_framework: 新框架
+        :type node_new_framework: bool
+        :param status: 任务状态
+        :type status: str
+        :param task_type: 迁移模式
+        :type task_type: str
+        """
         
         
 
@@ -105,7 +134,7 @@ class ChildrenJobInfo:
         计费字段
 
         :param billing_tag: The billing_tag of this ChildrenJobInfo.
-        :type: bool
+        :type billing_tag: bool
         """
         self._billing_tag = billing_tag
 
@@ -127,7 +156,7 @@ class ChildrenJobInfo:
         任务创建时间
 
         :param create_time: The create_time of this ChildrenJobInfo.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -149,7 +178,7 @@ class ChildrenJobInfo:
         复制场景
 
         :param db_use_type: The db_use_type of this ChildrenJobInfo.
-        :type: str
+        :type db_use_type: str
         """
         self._db_use_type = db_use_type
 
@@ -171,7 +200,7 @@ class ChildrenJobInfo:
         任务描述
 
         :param description: The description of this ChildrenJobInfo.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -193,7 +222,7 @@ class ChildrenJobInfo:
         引擎类型
 
         :param engine_type: The engine_type of this ChildrenJobInfo.
-        :type: str
+        :type engine_type: str
         """
         self._engine_type = engine_type
 
@@ -215,7 +244,7 @@ class ChildrenJobInfo:
         任务失败原因
 
         :param error_msg: The error_msg of this ChildrenJobInfo.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 
@@ -237,7 +266,7 @@ class ChildrenJobInfo:
         任务id
 
         :param id: The id of this ChildrenJobInfo.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -259,7 +288,7 @@ class ChildrenJobInfo:
         迁移方向
 
         :param job_direction: The job_direction of this ChildrenJobInfo.
-        :type: str
+        :type job_direction: str
         """
         self._job_direction = job_direction
 
@@ -281,7 +310,7 @@ class ChildrenJobInfo:
         任务名称
 
         :param name: The name of this ChildrenJobInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -303,7 +332,7 @@ class ChildrenJobInfo:
         网络类型
 
         :param net_type: The net_type of this ChildrenJobInfo.
-        :type: str
+        :type net_type: str
         """
         self._net_type = net_type
 
@@ -325,7 +354,7 @@ class ChildrenJobInfo:
         新框架
 
         :param node_new_framework: The node_new_framework of this ChildrenJobInfo.
-        :type: bool
+        :type node_new_framework: bool
         """
         self._node_new_framework = node_new_framework
 
@@ -347,7 +376,7 @@ class ChildrenJobInfo:
         任务状态
 
         :param status: The status of this ChildrenJobInfo.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -369,7 +398,7 @@ class ChildrenJobInfo:
         迁移模式
 
         :param task_type: The task_type of this ChildrenJobInfo.
-        :type: str
+        :type task_type: str
         """
         self._task_type = task_type
 

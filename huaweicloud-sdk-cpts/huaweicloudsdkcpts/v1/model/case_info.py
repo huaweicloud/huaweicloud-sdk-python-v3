@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CaseInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class CaseInfo:
     }
 
     def __init__(self, case_id=None, case_name=None, case_type=None, contents=None, for_loop_params=None, increase_setting=None, stages=None, status=None, temp_id=None, sort=None):
-        """CaseInfo - a model defined in huaweicloud sdk"""
+        """CaseInfo
+
+        The model defined in huaweicloud sdk
+
+        :param case_id: case_id
+        :type case_id: int
+        :param case_name: case_name
+        :type case_name: str
+        :param case_type: case_type
+        :type case_type: int
+        :param contents: contents
+        :type contents: list[:class:`huaweicloudsdkcpts.v1.Contents`]
+        :param for_loop_params: for_loop_params
+        :type for_loop_params: list[object]
+        :param increase_setting: increase_setting
+        :type increase_setting: list[object]
+        :param stages: stages
+        :type stages: list[object]
+        :param status: status
+        :type status: int
+        :param temp_id: temp_id
+        :type temp_id: int
+        :param sort: sort
+        :type sort: int
+        """
         
         
 
@@ -103,7 +126,7 @@ class CaseInfo:
         case_id
 
         :param case_id: The case_id of this CaseInfo.
-        :type: int
+        :type case_id: int
         """
         self._case_id = case_id
 
@@ -125,7 +148,7 @@ class CaseInfo:
         case_name
 
         :param case_name: The case_name of this CaseInfo.
-        :type: str
+        :type case_name: str
         """
         self._case_name = case_name
 
@@ -147,7 +170,7 @@ class CaseInfo:
         case_type
 
         :param case_type: The case_type of this CaseInfo.
-        :type: int
+        :type case_type: int
         """
         self._case_type = case_type
 
@@ -158,7 +181,7 @@ class CaseInfo:
         contents
 
         :return: The contents of this CaseInfo.
-        :rtype: list[Contents]
+        :rtype: list[:class:`huaweicloudsdkcpts.v1.Contents`]
         """
         return self._contents
 
@@ -169,7 +192,7 @@ class CaseInfo:
         contents
 
         :param contents: The contents of this CaseInfo.
-        :type: list[Contents]
+        :type contents: list[:class:`huaweicloudsdkcpts.v1.Contents`]
         """
         self._contents = contents
 
@@ -191,7 +214,7 @@ class CaseInfo:
         for_loop_params
 
         :param for_loop_params: The for_loop_params of this CaseInfo.
-        :type: list[object]
+        :type for_loop_params: list[object]
         """
         self._for_loop_params = for_loop_params
 
@@ -213,7 +236,7 @@ class CaseInfo:
         increase_setting
 
         :param increase_setting: The increase_setting of this CaseInfo.
-        :type: list[object]
+        :type increase_setting: list[object]
         """
         self._increase_setting = increase_setting
 
@@ -235,7 +258,7 @@ class CaseInfo:
         stages
 
         :param stages: The stages of this CaseInfo.
-        :type: list[object]
+        :type stages: list[object]
         """
         self._stages = stages
 
@@ -257,7 +280,7 @@ class CaseInfo:
         status
 
         :param status: The status of this CaseInfo.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -279,7 +302,7 @@ class CaseInfo:
         temp_id
 
         :param temp_id: The temp_id of this CaseInfo.
-        :type: int
+        :type temp_id: int
         """
         self._temp_id = temp_id
 
@@ -301,7 +324,7 @@ class CaseInfo:
         sort
 
         :param sort: The sort of this CaseInfo.
-        :type: int
+        :type sort: int
         """
         self._sort = sort
 

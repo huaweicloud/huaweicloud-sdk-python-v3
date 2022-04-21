@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateConfigurationResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateConfigurationResponse(SdkResponse):
     }
 
     def __init__(self, configuration=None):
-        """CreateConfigurationResponse - a model defined in huaweicloud sdk"""
+        """CreateConfigurationResponse
+
+        The model defined in huaweicloud sdk
+
+        :param configuration: 
+        :type configuration: :class:`huaweicloudsdkgaussdbfornosql.v3.CreateConfigurationResult`
+        """
         
         super(CreateConfigurationResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class CreateConfigurationResponse(SdkResponse):
 
 
         :return: The configuration of this CreateConfigurationResponse.
-        :rtype: CreateConfigurationResult
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.CreateConfigurationResult`
         """
         return self._configuration
 
@@ -56,7 +61,7 @@ class CreateConfigurationResponse(SdkResponse):
 
 
         :param configuration: The configuration of this CreateConfigurationResponse.
-        :type: CreateConfigurationResult
+        :type configuration: :class:`huaweicloudsdkgaussdbfornosql.v3.CreateConfigurationResult`
         """
         self._configuration = configuration
 

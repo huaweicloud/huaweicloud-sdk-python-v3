@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteCertificateRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteCertificateRequest:
     }
 
     def __init__(self, certificate_id=None):
-        """DeleteCertificateRequest - a model defined in huaweicloud sdk"""
+        """DeleteCertificateRequest
+
+        The model defined in huaweicloud sdk
+
+        :param certificate_id: 所要删除的私有证书ID。
+        :type certificate_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteCertificateRequest:
         所要删除的私有证书ID。
 
         :param certificate_id: The certificate_id of this DeleteCertificateRequest.
-        :type: str
+        :type certificate_id: str
         """
         self._certificate_id = certificate_id
 

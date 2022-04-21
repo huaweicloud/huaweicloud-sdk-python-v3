@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateSpecialThrottlingConfigurationV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UpdateSpecialThrottlingConfigurationV2Request:
     }
 
     def __init__(self, instance_id=None, throttle_id=None, strategy_id=None, body=None):
-        """UpdateSpecialThrottlingConfigurationV2Request - a model defined in huaweicloud sdk"""
+        """UpdateSpecialThrottlingConfigurationV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param throttle_id: 流控策略的编号
+        :type throttle_id: str
+        :param strategy_id: 特殊配置的编号
+        :type strategy_id: str
+        :param body: Body of the UpdateSpecialThrottlingConfigurationV2Request
+        :type body: :class:`huaweicloudsdkapig.v2.ThrottleSpecialUpdate`
+        """
         
         
 
@@ -70,7 +81,7 @@ class UpdateSpecialThrottlingConfigurationV2Request:
         实例ID
 
         :param instance_id: The instance_id of this UpdateSpecialThrottlingConfigurationV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -92,7 +103,7 @@ class UpdateSpecialThrottlingConfigurationV2Request:
         流控策略的编号
 
         :param throttle_id: The throttle_id of this UpdateSpecialThrottlingConfigurationV2Request.
-        :type: str
+        :type throttle_id: str
         """
         self._throttle_id = throttle_id
 
@@ -114,7 +125,7 @@ class UpdateSpecialThrottlingConfigurationV2Request:
         特殊配置的编号
 
         :param strategy_id: The strategy_id of this UpdateSpecialThrottlingConfigurationV2Request.
-        :type: str
+        :type strategy_id: str
         """
         self._strategy_id = strategy_id
 
@@ -124,7 +135,7 @@ class UpdateSpecialThrottlingConfigurationV2Request:
 
 
         :return: The body of this UpdateSpecialThrottlingConfigurationV2Request.
-        :rtype: ThrottleSpecialUpdate
+        :rtype: :class:`huaweicloudsdkapig.v2.ThrottleSpecialUpdate`
         """
         return self._body
 
@@ -134,7 +145,7 @@ class UpdateSpecialThrottlingConfigurationV2Request:
 
 
         :param body: The body of this UpdateSpecialThrottlingConfigurationV2Request.
-        :type: ThrottleSpecialUpdate
+        :type body: :class:`huaweicloudsdkapig.v2.ThrottleSpecialUpdate`
         """
         self._body = body
 

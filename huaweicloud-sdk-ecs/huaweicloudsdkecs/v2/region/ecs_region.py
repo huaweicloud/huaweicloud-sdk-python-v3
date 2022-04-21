@@ -34,6 +34,12 @@ class EcsRegion:
 
     LA_NORTH_2 = Region(id="la-north-2", endpoint="https://ecs.la-north-2.myhuaweicloud.com")
 
+    CN_SOUTH_4 = Region(id="cn-south-4", endpoint="https://ecs.cn-south-4.myhuaweicloud.com")
+
+    NA_MEXICO_1 = Region(id="na-mexico-1", endpoint="https://ecs.na-mexico-1.myhuaweicloud.com")
+
+    LA_SOUTH_2 = Region(id="la-south-2", endpoint="https://ecs.la-south-2.myhuaweicloud.com")
+
     static_fields = {
         "cn-north-1": CN_NORTH_1,
         "cn-north-4": CN_NORTH_4,
@@ -47,6 +53,9 @@ class EcsRegion:
         "af-south-1": AF_SOUTH_1,
         "sa-brazil-1": SA_BRAZIL_1,
         "la-north-2": LA_NORTH_2,
+        "cn-south-4": CN_SOUTH_4,
+        "na-mexico-1": NA_MEXICO_1,
+        "la-south-2": LA_SOUTH_2,
     }
 
     @staticmethod

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateAccessConfigRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UpdateAccessConfigRequestBody:
     }
 
     def __init__(self, access_config_id=None, access_config_detail=None, host_group_info=None, access_config_tag=None):
-        """UpdateAccessConfigRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateAccessConfigRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param access_config_id: 日志接入ID
+        :type access_config_id: str
+        :param access_config_detail: 
+        :type access_config_detail: :class:`huaweicloudsdklts.v2.AccessConfigDeatil`
+        :param host_group_info: 
+        :type host_group_info: :class:`huaweicloudsdklts.v2.AccessConfigHostGroupIdList`
+        :param access_config_tag: 
+        :type access_config_tag: list[:class:`huaweicloudsdklts.v2.AccessConfigTag`]
+        """
         
         
 
@@ -72,7 +83,7 @@ class UpdateAccessConfigRequestBody:
         日志接入ID
 
         :param access_config_id: The access_config_id of this UpdateAccessConfigRequestBody.
-        :type: str
+        :type access_config_id: str
         """
         self._access_config_id = access_config_id
 
@@ -82,7 +93,7 @@ class UpdateAccessConfigRequestBody:
 
 
         :return: The access_config_detail of this UpdateAccessConfigRequestBody.
-        :rtype: AccessConfigDeatil
+        :rtype: :class:`huaweicloudsdklts.v2.AccessConfigDeatil`
         """
         return self._access_config_detail
 
@@ -92,7 +103,7 @@ class UpdateAccessConfigRequestBody:
 
 
         :param access_config_detail: The access_config_detail of this UpdateAccessConfigRequestBody.
-        :type: AccessConfigDeatil
+        :type access_config_detail: :class:`huaweicloudsdklts.v2.AccessConfigDeatil`
         """
         self._access_config_detail = access_config_detail
 
@@ -102,7 +113,7 @@ class UpdateAccessConfigRequestBody:
 
 
         :return: The host_group_info of this UpdateAccessConfigRequestBody.
-        :rtype: AccessConfigHostGroupIdList
+        :rtype: :class:`huaweicloudsdklts.v2.AccessConfigHostGroupIdList`
         """
         return self._host_group_info
 
@@ -112,7 +123,7 @@ class UpdateAccessConfigRequestBody:
 
 
         :param host_group_info: The host_group_info of this UpdateAccessConfigRequestBody.
-        :type: AccessConfigHostGroupIdList
+        :type host_group_info: :class:`huaweicloudsdklts.v2.AccessConfigHostGroupIdList`
         """
         self._host_group_info = host_group_info
 
@@ -122,7 +133,7 @@ class UpdateAccessConfigRequestBody:
 
 
         :return: The access_config_tag of this UpdateAccessConfigRequestBody.
-        :rtype: list[AccessConfigTag]
+        :rtype: list[:class:`huaweicloudsdklts.v2.AccessConfigTag`]
         """
         return self._access_config_tag
 
@@ -132,7 +143,7 @@ class UpdateAccessConfigRequestBody:
 
 
         :param access_config_tag: The access_config_tag of this UpdateAccessConfigRequestBody.
-        :type: list[AccessConfigTag]
+        :type access_config_tag: list[:class:`huaweicloudsdklts.v2.AccessConfigTag`]
         """
         self._access_config_tag = access_config_tag
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CheckAssetJobStatusRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CheckAssetJobStatusRequest:
     }
 
     def __init__(self, instance_id=None, job_id=None):
-        """CheckAssetJobStatusRequest - a model defined in huaweicloud sdk"""
+        """CheckAssetJobStatusRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param job_id: 作业ID
+        :type job_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class CheckAssetJobStatusRequest:
         实例ID
 
         :param instance_id: The instance_id of this CheckAssetJobStatusRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -83,7 +90,7 @@ class CheckAssetJobStatusRequest:
         作业ID
 
         :param job_id: The job_id of this CheckAssetJobStatusRequest.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateServiceRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateServiceRequestBody:
     }
 
     def __init__(self, service_name=None, description=None, status=None):
-        """UpdateServiceRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateServiceRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param service_name: 服务名称，支持中文,英文大小写，数字，下划线和中划线,长度2-64
+        :type service_name: str
+        :param description: 服务描述，长度0-200
+        :type description: str
+        :param status: 服务状态 0-启用 1-停用
+        :type status: int
+        """
         
         
 
@@ -66,7 +75,7 @@ class UpdateServiceRequestBody:
         服务名称，支持中文,英文大小写，数字，下划线和中划线,长度2-64
 
         :param service_name: The service_name of this UpdateServiceRequestBody.
-        :type: str
+        :type service_name: str
         """
         self._service_name = service_name
 
@@ -88,7 +97,7 @@ class UpdateServiceRequestBody:
         服务描述，长度0-200
 
         :param description: The description of this UpdateServiceRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -110,7 +119,7 @@ class UpdateServiceRequestBody:
         服务状态 0-启用 1-停用
 
         :param status: The status of this UpdateServiceRequestBody.
-        :type: int
+        :type status: int
         """
         self._status = status
 

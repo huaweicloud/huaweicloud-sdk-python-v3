@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSubCustomersResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListSubCustomersResponse(SdkResponse):
     }
 
     def __init__(self, sub_customer_infos=None):
-        """ListSubCustomersResponse - a model defined in huaweicloud sdk"""
+        """ListSubCustomersResponse
+
+        The model defined in huaweicloud sdk
+
+        :param sub_customer_infos: 子用户列表
+        :type sub_customer_infos: list[:class:`huaweicloudsdkosm.v2.SubCutomerInfoV2`]
+        """
         
         super(ListSubCustomersResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListSubCustomersResponse(SdkResponse):
         子用户列表
 
         :return: The sub_customer_infos of this ListSubCustomersResponse.
-        :rtype: list[SubCutomerInfoV2]
+        :rtype: list[:class:`huaweicloudsdkosm.v2.SubCutomerInfoV2`]
         """
         return self._sub_customer_infos
 
@@ -58,7 +63,7 @@ class ListSubCustomersResponse(SdkResponse):
         子用户列表
 
         :param sub_customer_infos: The sub_customer_infos of this ListSubCustomersResponse.
-        :type: list[SubCutomerInfoV2]
+        :type sub_customer_infos: list[:class:`huaweicloudsdkosm.v2.SubCutomerInfoV2`]
         """
         self._sub_customer_infos = sub_customer_infos
 

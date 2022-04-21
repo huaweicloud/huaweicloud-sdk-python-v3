@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDuplicateApisForAppV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListDuplicateApisForAppV2Response(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, apis=None):
-        """ListDuplicateApisForAppV2Response - a model defined in huaweicloud sdk"""
+        """ListDuplicateApisForAppV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param size: 本次返回的列表长度
+        :type size: int
+        :param total: 满足条件的记录数
+        :type total: int
+        :param apis: 应用下所有路径冲突的api信息列表
+        :type apis: list[:class:`huaweicloudsdkroma.v2.ApiDuplicationInfo`]
+        """
         
         super(ListDuplicateApisForAppV2Response, self).__init__()
 
@@ -66,7 +75,7 @@ class ListDuplicateApisForAppV2Response(SdkResponse):
         本次返回的列表长度
 
         :param size: The size of this ListDuplicateApisForAppV2Response.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -88,7 +97,7 @@ class ListDuplicateApisForAppV2Response(SdkResponse):
         满足条件的记录数
 
         :param total: The total of this ListDuplicateApisForAppV2Response.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -99,7 +108,7 @@ class ListDuplicateApisForAppV2Response(SdkResponse):
         应用下所有路径冲突的api信息列表
 
         :return: The apis of this ListDuplicateApisForAppV2Response.
-        :rtype: list[ApiDuplicationInfo]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.ApiDuplicationInfo`]
         """
         return self._apis
 
@@ -110,7 +119,7 @@ class ListDuplicateApisForAppV2Response(SdkResponse):
         应用下所有路径冲突的api信息列表
 
         :param apis: The apis of this ListDuplicateApisForAppV2Response.
-        :type: list[ApiDuplicationInfo]
+        :type apis: list[:class:`huaweicloudsdkroma.v2.ApiDuplicationInfo`]
         """
         self._apis = apis
 

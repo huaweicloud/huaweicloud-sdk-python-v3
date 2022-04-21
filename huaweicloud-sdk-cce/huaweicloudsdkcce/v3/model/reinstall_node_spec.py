@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ReinstallNodeSpec:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class ReinstallNodeSpec:
     }
 
     def __init__(self, os=None, login=None, name=None, server_config=None, volume_config=None, runtime_config=None, k8s_options=None, lifecycle=None, extend_param=None):
-        """ReinstallNodeSpec - a model defined in huaweicloud sdk"""
+        """ReinstallNodeSpec
+
+        The model defined in huaweicloud sdk
+
+        :param os: 操作系统。指定自定义镜像场景将以IMS镜像的实际操作系统版本为准。请选择当前集群支持的操作系统版本，例如EulerOS 2.5、CentOS 7.6、EulerOS 2.8。
+        :type os: str
+        :param login: 
+        :type login: :class:`huaweicloudsdkcce.v3.Login`
+        :param name: 节点名称  &gt; 重装时指定将修改节点名称，且服务器名称会同步修改。默认以服务器当前名称作为节点名称。 &gt; &gt; 命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围1-56位，且不能以中划线(-)结尾。
+        :type name: str
+        :param server_config: 
+        :type server_config: :class:`huaweicloudsdkcce.v3.ReinstallServerConfig`
+        :param volume_config: 
+        :type volume_config: :class:`huaweicloudsdkcce.v3.ReinstallVolumeConfig`
+        :param runtime_config: 
+        :type runtime_config: :class:`huaweicloudsdkcce.v3.ReinstallRuntimeConfig`
+        :param k8s_options: 
+        :type k8s_options: :class:`huaweicloudsdkcce.v3.ReinstallK8sOptionsConfig`
+        :param lifecycle: 
+        :type lifecycle: :class:`huaweicloudsdkcce.v3.NodeLifecycleConfig`
+        :param extend_param: 
+        :type extend_param: :class:`huaweicloudsdkcce.v3.ReinstallExtendParam`
+        """
         
         
 
@@ -96,7 +117,7 @@ class ReinstallNodeSpec:
         操作系统。指定自定义镜像场景将以IMS镜像的实际操作系统版本为准。请选择当前集群支持的操作系统版本，例如EulerOS 2.5、CentOS 7.6、EulerOS 2.8。
 
         :param os: The os of this ReinstallNodeSpec.
-        :type: str
+        :type os: str
         """
         self._os = os
 
@@ -106,7 +127,7 @@ class ReinstallNodeSpec:
 
 
         :return: The login of this ReinstallNodeSpec.
-        :rtype: Login
+        :rtype: :class:`huaweicloudsdkcce.v3.Login`
         """
         return self._login
 
@@ -116,7 +137,7 @@ class ReinstallNodeSpec:
 
 
         :param login: The login of this ReinstallNodeSpec.
-        :type: Login
+        :type login: :class:`huaweicloudsdkcce.v3.Login`
         """
         self._login = login
 
@@ -138,7 +159,7 @@ class ReinstallNodeSpec:
         节点名称  > 重装时指定将修改节点名称，且服务器名称会同步修改。默认以服务器当前名称作为节点名称。 > > 命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围1-56位，且不能以中划线(-)结尾。
 
         :param name: The name of this ReinstallNodeSpec.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -148,7 +169,7 @@ class ReinstallNodeSpec:
 
 
         :return: The server_config of this ReinstallNodeSpec.
-        :rtype: ReinstallServerConfig
+        :rtype: :class:`huaweicloudsdkcce.v3.ReinstallServerConfig`
         """
         return self._server_config
 
@@ -158,7 +179,7 @@ class ReinstallNodeSpec:
 
 
         :param server_config: The server_config of this ReinstallNodeSpec.
-        :type: ReinstallServerConfig
+        :type server_config: :class:`huaweicloudsdkcce.v3.ReinstallServerConfig`
         """
         self._server_config = server_config
 
@@ -168,7 +189,7 @@ class ReinstallNodeSpec:
 
 
         :return: The volume_config of this ReinstallNodeSpec.
-        :rtype: ReinstallVolumeConfig
+        :rtype: :class:`huaweicloudsdkcce.v3.ReinstallVolumeConfig`
         """
         return self._volume_config
 
@@ -178,7 +199,7 @@ class ReinstallNodeSpec:
 
 
         :param volume_config: The volume_config of this ReinstallNodeSpec.
-        :type: ReinstallVolumeConfig
+        :type volume_config: :class:`huaweicloudsdkcce.v3.ReinstallVolumeConfig`
         """
         self._volume_config = volume_config
 
@@ -188,7 +209,7 @@ class ReinstallNodeSpec:
 
 
         :return: The runtime_config of this ReinstallNodeSpec.
-        :rtype: ReinstallRuntimeConfig
+        :rtype: :class:`huaweicloudsdkcce.v3.ReinstallRuntimeConfig`
         """
         return self._runtime_config
 
@@ -198,7 +219,7 @@ class ReinstallNodeSpec:
 
 
         :param runtime_config: The runtime_config of this ReinstallNodeSpec.
-        :type: ReinstallRuntimeConfig
+        :type runtime_config: :class:`huaweicloudsdkcce.v3.ReinstallRuntimeConfig`
         """
         self._runtime_config = runtime_config
 
@@ -208,7 +229,7 @@ class ReinstallNodeSpec:
 
 
         :return: The k8s_options of this ReinstallNodeSpec.
-        :rtype: ReinstallK8sOptionsConfig
+        :rtype: :class:`huaweicloudsdkcce.v3.ReinstallK8sOptionsConfig`
         """
         return self._k8s_options
 
@@ -218,7 +239,7 @@ class ReinstallNodeSpec:
 
 
         :param k8s_options: The k8s_options of this ReinstallNodeSpec.
-        :type: ReinstallK8sOptionsConfig
+        :type k8s_options: :class:`huaweicloudsdkcce.v3.ReinstallK8sOptionsConfig`
         """
         self._k8s_options = k8s_options
 
@@ -228,7 +249,7 @@ class ReinstallNodeSpec:
 
 
         :return: The lifecycle of this ReinstallNodeSpec.
-        :rtype: NodeLifecycleConfig
+        :rtype: :class:`huaweicloudsdkcce.v3.NodeLifecycleConfig`
         """
         return self._lifecycle
 
@@ -238,7 +259,7 @@ class ReinstallNodeSpec:
 
 
         :param lifecycle: The lifecycle of this ReinstallNodeSpec.
-        :type: NodeLifecycleConfig
+        :type lifecycle: :class:`huaweicloudsdkcce.v3.NodeLifecycleConfig`
         """
         self._lifecycle = lifecycle
 
@@ -248,7 +269,7 @@ class ReinstallNodeSpec:
 
 
         :return: The extend_param of this ReinstallNodeSpec.
-        :rtype: ReinstallExtendParam
+        :rtype: :class:`huaweicloudsdkcce.v3.ReinstallExtendParam`
         """
         return self._extend_param
 
@@ -258,7 +279,7 @@ class ReinstallNodeSpec:
 
 
         :param extend_param: The extend_param of this ReinstallNodeSpec.
-        :type: ReinstallExtendParam
+        :type extend_param: :class:`huaweicloudsdkcce.v3.ReinstallExtendParam`
         """
         self._extend_param = extend_param
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListLiveDataDataSourcesV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListLiveDataDataSourcesV2Response(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, data_sources=None):
-        """ListLiveDataDataSourcesV2Response - a model defined in huaweicloud sdk"""
+        """ListLiveDataDataSourcesV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param size: 本次返回的列表长度
+        :type size: int
+        :param total: 满足条件的记录数
+        :type total: int
+        :param data_sources: 数据源列表
+        :type data_sources: list[:class:`huaweicloudsdkroma.v2.LdDatasourceInfo`]
+        """
         
         super(ListLiveDataDataSourcesV2Response, self).__init__()
 
@@ -66,7 +75,7 @@ class ListLiveDataDataSourcesV2Response(SdkResponse):
         本次返回的列表长度
 
         :param size: The size of this ListLiveDataDataSourcesV2Response.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -88,7 +97,7 @@ class ListLiveDataDataSourcesV2Response(SdkResponse):
         满足条件的记录数
 
         :param total: The total of this ListLiveDataDataSourcesV2Response.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -99,7 +108,7 @@ class ListLiveDataDataSourcesV2Response(SdkResponse):
         数据源列表
 
         :return: The data_sources of this ListLiveDataDataSourcesV2Response.
-        :rtype: list[LdDatasourceInfo]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.LdDatasourceInfo`]
         """
         return self._data_sources
 
@@ -110,7 +119,7 @@ class ListLiveDataDataSourcesV2Response(SdkResponse):
         数据源列表
 
         :param data_sources: The data_sources of this ListLiveDataDataSourcesV2Response.
-        :type: list[LdDatasourceInfo]
+        :type data_sources: list[:class:`huaweicloudsdkroma.v2.LdDatasourceInfo`]
         """
         self._data_sources = data_sources
 

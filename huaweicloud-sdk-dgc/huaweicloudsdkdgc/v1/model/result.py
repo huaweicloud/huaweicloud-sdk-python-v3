@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Result:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class Result:
     }
 
     def __init__(self, message=None, row_count=None, rows=None, schema=None):
-        """Result - a model defined in huaweicloud sdk"""
+        """Result
+
+        The model defined in huaweicloud sdk
+
+        :param message: 
+        :type message: str
+        :param row_count: 
+        :type row_count: int
+        :param rows: 
+        :type rows: str
+        :param schema: 
+        :type schema: str
+        """
         
         
 
@@ -71,7 +82,7 @@ class Result:
 
 
         :param message: The message of this Result.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -91,7 +102,7 @@ class Result:
 
 
         :param row_count: The row_count of this Result.
-        :type: int
+        :type row_count: int
         """
         self._row_count = row_count
 
@@ -111,7 +122,7 @@ class Result:
 
 
         :param rows: The rows of this Result.
-        :type: str
+        :type rows: str
         """
         self._rows = rows
 
@@ -131,7 +142,7 @@ class Result:
 
 
         :param schema: The schema of this Result.
-        :type: str
+        :type schema: str
         """
         self._schema = schema
 

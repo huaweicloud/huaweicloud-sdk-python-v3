@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateRequestThrottlingPolicyV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateRequestThrottlingPolicyV2Request:
     }
 
     def __init__(self, instance_id=None, throttle_id=None, body=None):
-        """UpdateRequestThrottlingPolicyV2Request - a model defined in huaweicloud sdk"""
+        """UpdateRequestThrottlingPolicyV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param throttle_id: 流控策略的编号
+        :type throttle_id: str
+        :param body: Body of the UpdateRequestThrottlingPolicyV2Request
+        :type body: :class:`huaweicloudsdkapig.v2.ThrottleBaseInfo`
+        """
         
         
 
@@ -66,7 +75,7 @@ class UpdateRequestThrottlingPolicyV2Request:
         实例ID
 
         :param instance_id: The instance_id of this UpdateRequestThrottlingPolicyV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -88,7 +97,7 @@ class UpdateRequestThrottlingPolicyV2Request:
         流控策略的编号
 
         :param throttle_id: The throttle_id of this UpdateRequestThrottlingPolicyV2Request.
-        :type: str
+        :type throttle_id: str
         """
         self._throttle_id = throttle_id
 
@@ -98,7 +107,7 @@ class UpdateRequestThrottlingPolicyV2Request:
 
 
         :return: The body of this UpdateRequestThrottlingPolicyV2Request.
-        :rtype: ThrottleBaseInfo
+        :rtype: :class:`huaweicloudsdkapig.v2.ThrottleBaseInfo`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class UpdateRequestThrottlingPolicyV2Request:
 
 
         :param body: The body of this UpdateRequestThrottlingPolicyV2Request.
-        :type: ThrottleBaseInfo
+        :type body: :class:`huaweicloudsdkapig.v2.ThrottleBaseInfo`
         """
         self._body = body
 

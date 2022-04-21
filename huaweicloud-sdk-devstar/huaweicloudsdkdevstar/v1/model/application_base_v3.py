@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApplicationBaseV3:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ApplicationBaseV3:
     }
 
     def __init__(self, id=None, name=None, description=None, region_id=None, region_name=None, project_id=None, project_name=None, icon=None):
-        """ApplicationBaseV3 - a model defined in huaweicloud sdk"""
+        """ApplicationBaseV3
+
+        The model defined in huaweicloud sdk
+
+        :param id: 应用id
+        :type id: str
+        :param name: 应用名称
+        :type name: str
+        :param description: 应用描述
+        :type description: str
+        :param region_id: 区域id
+        :type region_id: str
+        :param region_name: 区域名称
+        :type region_name: str
+        :param project_id: 所属项目id
+        :type project_id: str
+        :param project_name: 项目名称
+        :type project_name: str
+        :param icon: 应用图标
+        :type icon: str
+        """
         
         
 
@@ -88,7 +107,7 @@ class ApplicationBaseV3:
         应用id
 
         :param id: The id of this ApplicationBaseV3.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -110,7 +129,7 @@ class ApplicationBaseV3:
         应用名称
 
         :param name: The name of this ApplicationBaseV3.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -132,7 +151,7 @@ class ApplicationBaseV3:
         应用描述
 
         :param description: The description of this ApplicationBaseV3.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -154,7 +173,7 @@ class ApplicationBaseV3:
         区域id
 
         :param region_id: The region_id of this ApplicationBaseV3.
-        :type: str
+        :type region_id: str
         """
         self._region_id = region_id
 
@@ -176,7 +195,7 @@ class ApplicationBaseV3:
         区域名称
 
         :param region_name: The region_name of this ApplicationBaseV3.
-        :type: str
+        :type region_name: str
         """
         self._region_name = region_name
 
@@ -198,7 +217,7 @@ class ApplicationBaseV3:
         所属项目id
 
         :param project_id: The project_id of this ApplicationBaseV3.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -220,7 +239,7 @@ class ApplicationBaseV3:
         项目名称
 
         :param project_name: The project_name of this ApplicationBaseV3.
-        :type: str
+        :type project_name: str
         """
         self._project_name = project_name
 
@@ -242,7 +261,7 @@ class ApplicationBaseV3:
         应用图标
 
         :param icon: The icon of this ApplicationBaseV3.
-        :type: str
+        :type icon: str
         """
         self._icon = icon
 

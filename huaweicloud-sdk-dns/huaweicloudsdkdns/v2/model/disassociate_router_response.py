@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DisassociateRouterResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class DisassociateRouterResponse(SdkResponse):
     }
 
     def __init__(self, router_id=None, router_region=None, status=None):
-        """DisassociateRouterResponse - a model defined in huaweicloud sdk"""
+        """DisassociateRouterResponse
+
+        The model defined in huaweicloud sdk
+
+        :param router_id: Router(VPC)的ID。
+        :type router_id: str
+        :param router_region: Router(VPC)所在的region。
+        :type router_region: str
+        :param status: 资源状态。
+        :type status: str
+        """
         
         super(DisassociateRouterResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class DisassociateRouterResponse(SdkResponse):
         Router(VPC)的ID。
 
         :param router_id: The router_id of this DisassociateRouterResponse.
-        :type: str
+        :type router_id: str
         """
         self._router_id = router_id
 
@@ -90,7 +99,7 @@ class DisassociateRouterResponse(SdkResponse):
         Router(VPC)所在的region。
 
         :param router_region: The router_region of this DisassociateRouterResponse.
-        :type: str
+        :type router_region: str
         """
         self._router_region = router_region
 
@@ -112,7 +121,7 @@ class DisassociateRouterResponse(SdkResponse):
         资源状态。
 
         :param status: The status of this DisassociateRouterResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 

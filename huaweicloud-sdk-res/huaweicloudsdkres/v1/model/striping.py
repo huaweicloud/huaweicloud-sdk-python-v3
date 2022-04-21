@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Striping:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class Striping:
     }
 
     def __init__(self, nearest_neighborhood=None, band=None, row=None):
-        """Striping - a model defined in huaweicloud sdk"""
+        """Striping
+
+        The model defined in huaweicloud sdk
+
+        :param nearest_neighborhood: 最近领域个数。
+        :type nearest_neighborhood: int
+        :param band: 相似程度。
+        :type band: int
+        :param row: 相似距离。
+        :type row: int
+        """
         
         
 
@@ -65,7 +74,7 @@ class Striping:
         最近领域个数。
 
         :param nearest_neighborhood: The nearest_neighborhood of this Striping.
-        :type: int
+        :type nearest_neighborhood: int
         """
         self._nearest_neighborhood = nearest_neighborhood
 
@@ -87,7 +96,7 @@ class Striping:
         相似程度。
 
         :param band: The band of this Striping.
-        :type: int
+        :type band: int
         """
         self._band = band
 
@@ -109,7 +118,7 @@ class Striping:
         相似距离。
 
         :param row: The row of this Striping.
-        :type: int
+        :type row: int
         """
         self._row = row
 

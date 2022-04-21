@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ImageTaggingItemBodyI18nType:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ImageTaggingItemBodyI18nType:
     }
 
     def __init__(self, zh=None, en=None):
-        """ImageTaggingItemBodyI18nType - a model defined in huaweicloud sdk"""
+        """ImageTaggingItemBodyI18nType
+
+        The model defined in huaweicloud sdk
+
+        :param zh: 中文标签类别
+        :type zh: str
+        :param en: 英文标签类别
+        :type en: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class ImageTaggingItemBodyI18nType:
         中文标签类别
 
         :param zh: The zh of this ImageTaggingItemBodyI18nType.
-        :type: str
+        :type zh: str
         """
         self._zh = zh
 
@@ -85,7 +92,7 @@ class ImageTaggingItemBodyI18nType:
         英文标签类别
 
         :param en: The en of this ImageTaggingItemBodyI18nType.
-        :type: str
+        :type en: str
         """
         self._en = en
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RespHostType:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RespHostType:
     }
 
     def __init__(self, host_type=None, host_type_name=None):
-        """RespHostType - a model defined in huaweicloud sdk"""
+        """RespHostType
+
+        The model defined in huaweicloud sdk
+
+        :param host_type: 专属主机类型。
+        :type host_type: str
+        :param host_type_name: 专属主机类型名字。
+        :type host_type_name: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class RespHostType:
         专属主机类型。
 
         :param host_type: The host_type of this RespHostType.
-        :type: str
+        :type host_type: str
         """
         self._host_type = host_type
 
@@ -83,7 +90,7 @@ class RespHostType:
         专属主机类型名字。
 
         :param host_type_name: The host_type_name of this RespHostType.
-        :type: str
+        :type host_type_name: str
         """
         self._host_type_name = host_type_name
 

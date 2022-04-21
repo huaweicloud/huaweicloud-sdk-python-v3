@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddDeployKeyV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AddDeployKeyV2Request:
     }
 
     def __init__(self, repository_id=None, body=None):
-        """AddDeployKeyV2Request - a model defined in huaweicloud sdk"""
+        """AddDeployKeyV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param repository_id: 仓库主键id
+        :type repository_id: int
+        :param body: Body of the AddDeployKeyV2Request
+        :type body: :class:`huaweicloudsdkcodehub.v3.AddDeployKeyRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class AddDeployKeyV2Request:
         仓库主键id
 
         :param repository_id: The repository_id of this AddDeployKeyV2Request.
-        :type: int
+        :type repository_id: int
         """
         self._repository_id = repository_id
 
@@ -72,7 +79,7 @@ class AddDeployKeyV2Request:
 
 
         :return: The body of this AddDeployKeyV2Request.
-        :rtype: AddDeployKeyRequestBody
+        :rtype: :class:`huaweicloudsdkcodehub.v3.AddDeployKeyRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class AddDeployKeyV2Request:
 
 
         :param body: The body of this AddDeployKeyV2Request.
-        :type: AddDeployKeyRequestBody
+        :type body: :class:`huaweicloudsdkcodehub.v3.AddDeployKeyRequestBody`
         """
         self._body = body
 

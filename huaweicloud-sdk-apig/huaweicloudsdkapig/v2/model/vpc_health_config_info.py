@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VpcHealthConfigInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class VpcHealthConfigInfo:
     }
 
     def __init__(self, protocol=None, path=None, method=None, port=None, threshold_normal=None, threshold_abnormal=None, time_interval=None, http_code=None, enable_client_ssl=None, status=None, timeout=None, vpc_channel_id=None, id=None, create_time=None):
-        """VpcHealthConfigInfo - a model defined in huaweicloud sdk"""
+        """VpcHealthConfigInfo
+
+        The model defined in huaweicloud sdk
+
+        :param protocol: 使用以下协议，对VPC中主机执行健康检查。
+        :type protocol: str
+        :param path: 健康检查时的目标路径。protocol &#x3D; http时必选
+        :type path: str
+        :param method: 健康检查时的请求方法
+        :type method: str
+        :param port: 健康检查的目标端口，缺省时为VPC中主机的端口号。
+        :type port: int
+        :param threshold_normal: 正常阈值。判定VPC通道中主机正常的依据为：连续检查x成功，x为您设置的正常阈值。
+        :type threshold_normal: int
+        :param threshold_abnormal: 异常阙值。判定VPC通道中主机异常的依据为：连续检查x失败，x为您设置的异常阈值。
+        :type threshold_abnormal: int
+        :param time_interval: 间隔时间：连续两次检查的间隔时间，单位为秒。必须大于timeout字段取值。
+        :type time_interval: int
+        :param http_code: 检查目标HTTP响应时，判断成功使用的HTTP响应码。取值范围为100到599之前的任意整数值，支持如下三种格式： - 多个值，如：200,201,202 - 一系列值，如：200-299 - 组合值，如：201,202,210-299 protocol &#x3D; http时必选
+        :type http_code: str
+        :param enable_client_ssl: 是否开启双向认证。若开启，则使用实例配置中的backend_client_certificate配置项的证书
+        :type enable_client_ssl: bool
+        :param status: 健康检查状态   - 1：可用   - 2：不可用
+        :type status: int
+        :param timeout: 超时时间：检查期间，无响应的时间，单位为秒。必须小于time_interval字段取值。
+        :type timeout: int
+        :param vpc_channel_id: VPC通道的编号
+        :type vpc_channel_id: str
+        :param id: 健康检查的编号
+        :type id: str
+        :param create_time: 创建时间
+        :type create_time: datetime
+        """
         
         
 
@@ -119,7 +150,7 @@ class VpcHealthConfigInfo:
         使用以下协议，对VPC中主机执行健康检查。
 
         :param protocol: The protocol of this VpcHealthConfigInfo.
-        :type: str
+        :type protocol: str
         """
         self._protocol = protocol
 
@@ -141,7 +172,7 @@ class VpcHealthConfigInfo:
         健康检查时的目标路径。protocol = http时必选
 
         :param path: The path of this VpcHealthConfigInfo.
-        :type: str
+        :type path: str
         """
         self._path = path
 
@@ -163,7 +194,7 @@ class VpcHealthConfigInfo:
         健康检查时的请求方法
 
         :param method: The method of this VpcHealthConfigInfo.
-        :type: str
+        :type method: str
         """
         self._method = method
 
@@ -185,7 +216,7 @@ class VpcHealthConfigInfo:
         健康检查的目标端口，缺省时为VPC中主机的端口号。
 
         :param port: The port of this VpcHealthConfigInfo.
-        :type: int
+        :type port: int
         """
         self._port = port
 
@@ -207,7 +238,7 @@ class VpcHealthConfigInfo:
         正常阈值。判定VPC通道中主机正常的依据为：连续检查x成功，x为您设置的正常阈值。
 
         :param threshold_normal: The threshold_normal of this VpcHealthConfigInfo.
-        :type: int
+        :type threshold_normal: int
         """
         self._threshold_normal = threshold_normal
 
@@ -229,7 +260,7 @@ class VpcHealthConfigInfo:
         异常阙值。判定VPC通道中主机异常的依据为：连续检查x失败，x为您设置的异常阈值。
 
         :param threshold_abnormal: The threshold_abnormal of this VpcHealthConfigInfo.
-        :type: int
+        :type threshold_abnormal: int
         """
         self._threshold_abnormal = threshold_abnormal
 
@@ -251,7 +282,7 @@ class VpcHealthConfigInfo:
         间隔时间：连续两次检查的间隔时间，单位为秒。必须大于timeout字段取值。
 
         :param time_interval: The time_interval of this VpcHealthConfigInfo.
-        :type: int
+        :type time_interval: int
         """
         self._time_interval = time_interval
 
@@ -273,7 +304,7 @@ class VpcHealthConfigInfo:
         检查目标HTTP响应时，判断成功使用的HTTP响应码。取值范围为100到599之前的任意整数值，支持如下三种格式： - 多个值，如：200,201,202 - 一系列值，如：200-299 - 组合值，如：201,202,210-299 protocol = http时必选
 
         :param http_code: The http_code of this VpcHealthConfigInfo.
-        :type: str
+        :type http_code: str
         """
         self._http_code = http_code
 
@@ -295,7 +326,7 @@ class VpcHealthConfigInfo:
         是否开启双向认证。若开启，则使用实例配置中的backend_client_certificate配置项的证书
 
         :param enable_client_ssl: The enable_client_ssl of this VpcHealthConfigInfo.
-        :type: bool
+        :type enable_client_ssl: bool
         """
         self._enable_client_ssl = enable_client_ssl
 
@@ -317,7 +348,7 @@ class VpcHealthConfigInfo:
         健康检查状态   - 1：可用   - 2：不可用
 
         :param status: The status of this VpcHealthConfigInfo.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -339,7 +370,7 @@ class VpcHealthConfigInfo:
         超时时间：检查期间，无响应的时间，单位为秒。必须小于time_interval字段取值。
 
         :param timeout: The timeout of this VpcHealthConfigInfo.
-        :type: int
+        :type timeout: int
         """
         self._timeout = timeout
 
@@ -361,7 +392,7 @@ class VpcHealthConfigInfo:
         VPC通道的编号
 
         :param vpc_channel_id: The vpc_channel_id of this VpcHealthConfigInfo.
-        :type: str
+        :type vpc_channel_id: str
         """
         self._vpc_channel_id = vpc_channel_id
 
@@ -383,7 +414,7 @@ class VpcHealthConfigInfo:
         健康检查的编号
 
         :param id: The id of this VpcHealthConfigInfo.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -405,7 +436,7 @@ class VpcHealthConfigInfo:
         创建时间
 
         :param create_time: The create_time of this VpcHealthConfigInfo.
-        :type: datetime
+        :type create_time: datetime
         """
         self._create_time = create_time
 

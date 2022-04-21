@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Flow:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -60,7 +59,43 @@ class Flow:
     }
 
     def __init__(self, flow_id=None, attr_pair_rules_filter=None, attr_pair_rules_reserve=None, deduplication_list=None, attribute_info=None, bloom_filter_conf=None, group_attr=None, pre_deal=None, rank_setting=None, rules=None, filter_sets=None, attr_value_rules_filter=None, attr_value_rules_reserve=None, ctr_job=None, ratio=None, toppings=None):
-        """Flow - a model defined in huaweicloud sdk"""
+        """Flow
+
+        The model defined in huaweicloud sdk
+
+        :param flow_id: 流程id。
+        :type flow_id: str
+        :param attr_pair_rules_filter: 属性对过滤。
+        :type attr_pair_rules_filter: list[:class:`huaweicloudsdkres.v1.AttrPairRules`]
+        :param attr_pair_rules_reserve: 属性对保留。
+        :type attr_pair_rules_reserve: list[:class:`huaweicloudsdkres.v1.AttrPairRules`]
+        :param deduplication_list: 属性去重。
+        :type deduplication_list: list[:class:`huaweicloudsdkres.v1.Deduplication`]
+        :param attribute_info: 
+        :type attribute_info: :class:`huaweicloudsdkres.v1.AttributeInfo`
+        :param bloom_filter_conf: 
+        :type bloom_filter_conf: :class:`huaweicloudsdkres.v1.BloomFilterConf`
+        :param group_attr: 分组打散属性。
+        :type group_attr: str
+        :param pre_deal: 在排序前去重。
+        :type pre_deal: bool
+        :param rank_setting: 排序配置信息。
+        :type rank_setting: str
+        :param rules: 
+        :type rules: :class:`huaweicloudsdkres.v1.Rule`
+        :param filter_sets: 过滤配置信息。
+        :type filter_sets: list[str]
+        :param attr_value_rules_filter: 属性值过滤。
+        :type attr_value_rules_filter: list[:class:`huaweicloudsdkres.v1.AttrValueRules`]
+        :param attr_value_rules_reserve: 属性值保留。
+        :type attr_value_rules_reserve: list[:class:`huaweicloudsdkres.v1.AttrValueRules`]
+        :param ctr_job: 排序作业（使用点击率预估时需要提供此参数）。
+        :type ctr_job: str
+        :param ratio: 流量占比。
+        :type ratio: int
+        :param toppings: 需要置顶的候选集列表。
+        :type toppings: list[str]
+        """
         
         
 
@@ -132,7 +167,7 @@ class Flow:
         流程id。
 
         :param flow_id: The flow_id of this Flow.
-        :type: str
+        :type flow_id: str
         """
         self._flow_id = flow_id
 
@@ -143,7 +178,7 @@ class Flow:
         属性对过滤。
 
         :return: The attr_pair_rules_filter of this Flow.
-        :rtype: list[AttrPairRules]
+        :rtype: list[:class:`huaweicloudsdkres.v1.AttrPairRules`]
         """
         return self._attr_pair_rules_filter
 
@@ -154,7 +189,7 @@ class Flow:
         属性对过滤。
 
         :param attr_pair_rules_filter: The attr_pair_rules_filter of this Flow.
-        :type: list[AttrPairRules]
+        :type attr_pair_rules_filter: list[:class:`huaweicloudsdkres.v1.AttrPairRules`]
         """
         self._attr_pair_rules_filter = attr_pair_rules_filter
 
@@ -165,7 +200,7 @@ class Flow:
         属性对保留。
 
         :return: The attr_pair_rules_reserve of this Flow.
-        :rtype: list[AttrPairRules]
+        :rtype: list[:class:`huaweicloudsdkres.v1.AttrPairRules`]
         """
         return self._attr_pair_rules_reserve
 
@@ -176,7 +211,7 @@ class Flow:
         属性对保留。
 
         :param attr_pair_rules_reserve: The attr_pair_rules_reserve of this Flow.
-        :type: list[AttrPairRules]
+        :type attr_pair_rules_reserve: list[:class:`huaweicloudsdkres.v1.AttrPairRules`]
         """
         self._attr_pair_rules_reserve = attr_pair_rules_reserve
 
@@ -187,7 +222,7 @@ class Flow:
         属性去重。
 
         :return: The deduplication_list of this Flow.
-        :rtype: list[Deduplication]
+        :rtype: list[:class:`huaweicloudsdkres.v1.Deduplication`]
         """
         return self._deduplication_list
 
@@ -198,7 +233,7 @@ class Flow:
         属性去重。
 
         :param deduplication_list: The deduplication_list of this Flow.
-        :type: list[Deduplication]
+        :type deduplication_list: list[:class:`huaweicloudsdkres.v1.Deduplication`]
         """
         self._deduplication_list = deduplication_list
 
@@ -208,7 +243,7 @@ class Flow:
 
 
         :return: The attribute_info of this Flow.
-        :rtype: AttributeInfo
+        :rtype: :class:`huaweicloudsdkres.v1.AttributeInfo`
         """
         return self._attribute_info
 
@@ -218,7 +253,7 @@ class Flow:
 
 
         :param attribute_info: The attribute_info of this Flow.
-        :type: AttributeInfo
+        :type attribute_info: :class:`huaweicloudsdkres.v1.AttributeInfo`
         """
         self._attribute_info = attribute_info
 
@@ -228,7 +263,7 @@ class Flow:
 
 
         :return: The bloom_filter_conf of this Flow.
-        :rtype: BloomFilterConf
+        :rtype: :class:`huaweicloudsdkres.v1.BloomFilterConf`
         """
         return self._bloom_filter_conf
 
@@ -238,7 +273,7 @@ class Flow:
 
 
         :param bloom_filter_conf: The bloom_filter_conf of this Flow.
-        :type: BloomFilterConf
+        :type bloom_filter_conf: :class:`huaweicloudsdkres.v1.BloomFilterConf`
         """
         self._bloom_filter_conf = bloom_filter_conf
 
@@ -260,7 +295,7 @@ class Flow:
         分组打散属性。
 
         :param group_attr: The group_attr of this Flow.
-        :type: str
+        :type group_attr: str
         """
         self._group_attr = group_attr
 
@@ -282,7 +317,7 @@ class Flow:
         在排序前去重。
 
         :param pre_deal: The pre_deal of this Flow.
-        :type: bool
+        :type pre_deal: bool
         """
         self._pre_deal = pre_deal
 
@@ -304,7 +339,7 @@ class Flow:
         排序配置信息。
 
         :param rank_setting: The rank_setting of this Flow.
-        :type: str
+        :type rank_setting: str
         """
         self._rank_setting = rank_setting
 
@@ -314,7 +349,7 @@ class Flow:
 
 
         :return: The rules of this Flow.
-        :rtype: Rule
+        :rtype: :class:`huaweicloudsdkres.v1.Rule`
         """
         return self._rules
 
@@ -324,7 +359,7 @@ class Flow:
 
 
         :param rules: The rules of this Flow.
-        :type: Rule
+        :type rules: :class:`huaweicloudsdkres.v1.Rule`
         """
         self._rules = rules
 
@@ -346,7 +381,7 @@ class Flow:
         过滤配置信息。
 
         :param filter_sets: The filter_sets of this Flow.
-        :type: list[str]
+        :type filter_sets: list[str]
         """
         self._filter_sets = filter_sets
 
@@ -357,7 +392,7 @@ class Flow:
         属性值过滤。
 
         :return: The attr_value_rules_filter of this Flow.
-        :rtype: list[AttrValueRules]
+        :rtype: list[:class:`huaweicloudsdkres.v1.AttrValueRules`]
         """
         return self._attr_value_rules_filter
 
@@ -368,7 +403,7 @@ class Flow:
         属性值过滤。
 
         :param attr_value_rules_filter: The attr_value_rules_filter of this Flow.
-        :type: list[AttrValueRules]
+        :type attr_value_rules_filter: list[:class:`huaweicloudsdkres.v1.AttrValueRules`]
         """
         self._attr_value_rules_filter = attr_value_rules_filter
 
@@ -379,7 +414,7 @@ class Flow:
         属性值保留。
 
         :return: The attr_value_rules_reserve of this Flow.
-        :rtype: list[AttrValueRules]
+        :rtype: list[:class:`huaweicloudsdkres.v1.AttrValueRules`]
         """
         return self._attr_value_rules_reserve
 
@@ -390,7 +425,7 @@ class Flow:
         属性值保留。
 
         :param attr_value_rules_reserve: The attr_value_rules_reserve of this Flow.
-        :type: list[AttrValueRules]
+        :type attr_value_rules_reserve: list[:class:`huaweicloudsdkres.v1.AttrValueRules`]
         """
         self._attr_value_rules_reserve = attr_value_rules_reserve
 
@@ -412,7 +447,7 @@ class Flow:
         排序作业（使用点击率预估时需要提供此参数）。
 
         :param ctr_job: The ctr_job of this Flow.
-        :type: str
+        :type ctr_job: str
         """
         self._ctr_job = ctr_job
 
@@ -434,7 +469,7 @@ class Flow:
         流量占比。
 
         :param ratio: The ratio of this Flow.
-        :type: int
+        :type ratio: int
         """
         self._ratio = ratio
 
@@ -456,7 +491,7 @@ class Flow:
         需要置顶的候选集列表。
 
         :param toppings: The toppings of this Flow.
-        :type: list[str]
+        :type toppings: list[str]
         """
         self._toppings = toppings
 

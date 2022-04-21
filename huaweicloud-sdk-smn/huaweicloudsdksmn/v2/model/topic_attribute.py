@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TopicAttribute:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class TopicAttribute:
     }
 
     def __init__(self, version=None, id=None, statement=None):
-        """TopicAttribute - a model defined in huaweicloud sdk"""
+        """TopicAttribute
+
+        The model defined in huaweicloud sdk
+
+        :param version: 访问策略规范版本。目前只支持“2016-09-07”。
+        :type version: str
+        :param id: 策略的唯一标识。不能为空。
+        :type id: str
+        :param statement: 访问策略是通过Statement语句来定义的。一个访问策略可包含一条或多条Statement语句。通过Statement语句向其他用户或云服务授权对主题的操作。
+        :type statement: list[:class:`huaweicloudsdksmn.v2.Statement`]
+        """
         
         
 
@@ -65,7 +74,7 @@ class TopicAttribute:
         访问策略规范版本。目前只支持“2016-09-07”。
 
         :param version: The version of this TopicAttribute.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -87,7 +96,7 @@ class TopicAttribute:
         策略的唯一标识。不能为空。
 
         :param id: The id of this TopicAttribute.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -98,7 +107,7 @@ class TopicAttribute:
         访问策略是通过Statement语句来定义的。一个访问策略可包含一条或多条Statement语句。通过Statement语句向其他用户或云服务授权对主题的操作。
 
         :return: The statement of this TopicAttribute.
-        :rtype: list[Statement]
+        :rtype: list[:class:`huaweicloudsdksmn.v2.Statement`]
         """
         return self._statement
 
@@ -109,7 +118,7 @@ class TopicAttribute:
         访问策略是通过Statement语句来定义的。一个访问策略可包含一条或多条Statement语句。通过Statement语句向其他用户或云服务授权对主题的操作。
 
         :param statement: The statement of this TopicAttribute.
-        :type: list[Statement]
+        :type statement: list[:class:`huaweicloudsdksmn.v2.Statement`]
         """
         self._statement = statement
 

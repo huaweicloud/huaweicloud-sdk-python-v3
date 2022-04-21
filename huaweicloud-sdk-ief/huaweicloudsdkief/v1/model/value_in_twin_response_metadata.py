@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ValueInTwinResponseMetadata:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ValueInTwinResponseMetadata:
     }
 
     def __init__(self, timestamp=None):
-        """ValueInTwinResponseMetadata - a model defined in huaweicloud sdk"""
+        """ValueInTwinResponseMetadata
+
+        The model defined in huaweicloud sdk
+
+        :param timestamp: 修改时间，UNIX timestamp格式
+        :type timestamp: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class ValueInTwinResponseMetadata:
         修改时间，UNIX timestamp格式
 
         :param timestamp: The timestamp of this ValueInTwinResponseMetadata.
-        :type: str
+        :type timestamp: str
         """
         self._timestamp = timestamp
 

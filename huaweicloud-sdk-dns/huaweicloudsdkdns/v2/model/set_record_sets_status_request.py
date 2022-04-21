@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SetRecordSetsStatusRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class SetRecordSetsStatusRequest:
     }
 
     def __init__(self, recordset_id=None, body=None):
-        """SetRecordSetsStatusRequest - a model defined in huaweicloud sdk"""
+        """SetRecordSetsStatusRequest
+
+        The model defined in huaweicloud sdk
+
+        :param recordset_id: 
+        :type recordset_id: str
+        :param body: Body of the SetRecordSetsStatusRequest
+        :type body: :class:`huaweicloudsdkdns.v2.SetRecordSetsStatusReq`
+        """
         
         
 
@@ -60,7 +67,7 @@ class SetRecordSetsStatusRequest:
 
 
         :param recordset_id: The recordset_id of this SetRecordSetsStatusRequest.
-        :type: str
+        :type recordset_id: str
         """
         self._recordset_id = recordset_id
 
@@ -70,7 +77,7 @@ class SetRecordSetsStatusRequest:
 
 
         :return: The body of this SetRecordSetsStatusRequest.
-        :rtype: SetRecordSetsStatusReq
+        :rtype: :class:`huaweicloudsdkdns.v2.SetRecordSetsStatusReq`
         """
         return self._body
 
@@ -80,7 +87,7 @@ class SetRecordSetsStatusRequest:
 
 
         :param body: The body of this SetRecordSetsStatusRequest.
-        :type: SetRecordSetsStatusReq
+        :type body: :class:`huaweicloudsdkdns.v2.SetRecordSetsStatusReq`
         """
         self._body = body
 

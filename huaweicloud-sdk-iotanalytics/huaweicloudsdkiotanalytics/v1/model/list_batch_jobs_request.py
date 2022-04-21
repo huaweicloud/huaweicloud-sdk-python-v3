@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListBatchJobsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ListBatchJobsRequest:
     }
 
     def __init__(self, offset=None, limit=None, has_schedule=None, job_name=None, schedule_status=None, order_by=None, order=None):
-        """ListBatchJobsRequest - a model defined in huaweicloud sdk"""
+        """ListBatchJobsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param offset: 当前偏移量，默认为0。
+        :type offset: int
+        :param limit: 每页显示的最大作业个数，范围: [1, 100]。默认值：10。
+        :type limit: int
+        :param has_schedule: 是否定时作业。true：定时作业：false：不是定时作业。为空时：所有作业。
+        :type has_schedule: bool
+        :param job_name: 作业名称
+        :type job_name: str
+        :param schedule_status: 调度状态。1:NORMAL, 2:PAUSED, 3:COMPLETE, 4:ERROR, 5:BLOCKED
+        :type schedule_status: str
+        :param order_by: 指定作业排序字段，默认为created_time（作业创建时间），支持created_time(作业创建时间)、modified_time（作业更新时间） 、job_name（作业名称）三种排序字段。
+        :type order_by: str
+        :param order: 指定作业排序的升降序，默认为desc（降序），支持asc（升序）、desc（降序）两种排序方式。
+        :type order: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class ListBatchJobsRequest:
         当前偏移量，默认为0。
 
         :param offset: The offset of this ListBatchJobsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -110,7 +127,7 @@ class ListBatchJobsRequest:
         每页显示的最大作业个数，范围: [1, 100]。默认值：10。
 
         :param limit: The limit of this ListBatchJobsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -132,7 +149,7 @@ class ListBatchJobsRequest:
         是否定时作业。true：定时作业：false：不是定时作业。为空时：所有作业。
 
         :param has_schedule: The has_schedule of this ListBatchJobsRequest.
-        :type: bool
+        :type has_schedule: bool
         """
         self._has_schedule = has_schedule
 
@@ -154,7 +171,7 @@ class ListBatchJobsRequest:
         作业名称
 
         :param job_name: The job_name of this ListBatchJobsRequest.
-        :type: str
+        :type job_name: str
         """
         self._job_name = job_name
 
@@ -176,7 +193,7 @@ class ListBatchJobsRequest:
         调度状态。1:NORMAL, 2:PAUSED, 3:COMPLETE, 4:ERROR, 5:BLOCKED
 
         :param schedule_status: The schedule_status of this ListBatchJobsRequest.
-        :type: str
+        :type schedule_status: str
         """
         self._schedule_status = schedule_status
 
@@ -198,7 +215,7 @@ class ListBatchJobsRequest:
         指定作业排序字段，默认为created_time（作业创建时间），支持created_time(作业创建时间)、modified_time（作业更新时间） 、job_name（作业名称）三种排序字段。
 
         :param order_by: The order_by of this ListBatchJobsRequest.
-        :type: str
+        :type order_by: str
         """
         self._order_by = order_by
 
@@ -220,7 +237,7 @@ class ListBatchJobsRequest:
         指定作业排序的升降序，默认为desc（降序），支持asc（升序）、desc（降序）两种排序方式。
 
         :param order: The order of this ListBatchJobsRequest.
-        :type: str
+        :type order: str
         """
         self._order = order
 

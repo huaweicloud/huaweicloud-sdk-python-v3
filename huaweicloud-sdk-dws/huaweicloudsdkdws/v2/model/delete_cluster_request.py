@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteClusterRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteClusterRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """DeleteClusterRequest - a model defined in huaweicloud sdk"""
+        """DeleteClusterRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 指定待删除集群的ID
+        :type cluster_id: str
+        :param body: Body of the DeleteClusterRequest
+        :type body: :class:`huaweicloudsdkdws.v2.DeleteClusterRequestBody`
+        """
         
         
 
@@ -48,7 +55,7 @@ class DeleteClusterRequest:
     def cluster_id(self):
         """Gets the cluster_id of this DeleteClusterRequest.
 
-        指定待删除集群的ID。
+        指定待删除集群的ID
 
         :return: The cluster_id of this DeleteClusterRequest.
         :rtype: str
@@ -59,10 +66,10 @@ class DeleteClusterRequest:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this DeleteClusterRequest.
 
-        指定待删除集群的ID。
+        指定待删除集群的ID
 
         :param cluster_id: The cluster_id of this DeleteClusterRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -72,7 +79,7 @@ class DeleteClusterRequest:
 
 
         :return: The body of this DeleteClusterRequest.
-        :rtype: DeleteClusterRequestBody
+        :rtype: :class:`huaweicloudsdkdws.v2.DeleteClusterRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class DeleteClusterRequest:
 
 
         :param body: The body of this DeleteClusterRequest.
-        :type: DeleteClusterRequestBody
+        :type body: :class:`huaweicloudsdkdws.v2.DeleteClusterRequestBody`
         """
         self._body = body
 

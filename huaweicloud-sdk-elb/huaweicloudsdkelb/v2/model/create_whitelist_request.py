@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateWhitelistRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateWhitelistRequest:
     }
 
     def __init__(self, body=None):
-        """CreateWhitelistRequest - a model defined in huaweicloud sdk"""
+        """CreateWhitelistRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateWhitelistRequest
+        :type body: :class:`huaweicloudsdkelb.v2.CreateWhitelistRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateWhitelistRequest:
 
 
         :return: The body of this CreateWhitelistRequest.
-        :rtype: CreateWhitelistRequestBody
+        :rtype: :class:`huaweicloudsdkelb.v2.CreateWhitelistRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateWhitelistRequest:
 
 
         :param body: The body of this CreateWhitelistRequest.
-        :type: CreateWhitelistRequestBody
+        :type body: :class:`huaweicloudsdkelb.v2.CreateWhitelistRequestBody`
         """
         self._body = body
 

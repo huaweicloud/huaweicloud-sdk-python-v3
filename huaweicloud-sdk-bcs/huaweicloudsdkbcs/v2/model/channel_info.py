@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ChannelInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ChannelInfo:
     }
 
     def __init__(self, name=None, org_names=None, org_name_hash=None, peers=None):
-        """ChannelInfo - a model defined in huaweicloud sdk"""
+        """ChannelInfo
+
+        The model defined in huaweicloud sdk
+
+        :param name: 通道名
+        :type name: str
+        :param org_names: 通道中组织名
+        :type org_names: list[str]
+        :param org_name_hash: 通道中组织名的哈希值
+        :type org_name_hash: list[str]
+        :param peers: key:组织名，value:peer节点数组
+        :type peers: dict(str, list[str])
+        """
         
         
 
@@ -73,7 +84,7 @@ class ChannelInfo:
         通道名
 
         :param name: The name of this ChannelInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -95,7 +106,7 @@ class ChannelInfo:
         通道中组织名
 
         :param org_names: The org_names of this ChannelInfo.
-        :type: list[str]
+        :type org_names: list[str]
         """
         self._org_names = org_names
 
@@ -117,7 +128,7 @@ class ChannelInfo:
         通道中组织名的哈希值
 
         :param org_name_hash: The org_name_hash of this ChannelInfo.
-        :type: list[str]
+        :type org_name_hash: list[str]
         """
         self._org_name_hash = org_name_hash
 
@@ -139,7 +150,7 @@ class ChannelInfo:
         key:组织名，value:peer节点数组
 
         :param peers: The peers of this ChannelInfo.
-        :type: dict(str, list[str])
+        :type peers: dict(str, list[str])
         """
         self._peers = peers
 

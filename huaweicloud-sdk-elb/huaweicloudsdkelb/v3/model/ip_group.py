@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IpGroup:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class IpGroup:
     }
 
     def __init__(self, created_at=None, description=None, id=None, ip_list=None, listeners=None, name=None, project_id=None, updated_at=None):
-        """IpGroup - a model defined in huaweicloud sdk"""
+        """IpGroup
+
+        The model defined in huaweicloud sdk
+
+        :param created_at: IP地址组的创建时间。
+        :type created_at: str
+        :param description: IP地址组的描述。
+        :type description: str
+        :param id: IP地址组的ID。
+        :type id: str
+        :param ip_list: IP地址组中包含的IP或网段列表。[]表示任意IP。
+        :type ip_list: list[:class:`huaweicloudsdkelb.v3.IpInfo`]
+        :param listeners: 与IP地址组关联的监听器的ID列表。
+        :type listeners: list[:class:`huaweicloudsdkelb.v3.ListenerRef`]
+        :param name: IP地址组的名称。
+        :type name: str
+        :param project_id: IP地址组的项目ID。
+        :type project_id: str
+        :param updated_at: IP地址组的更新时间。
+        :type updated_at: str
+        """
         
         
 
@@ -85,7 +104,7 @@ class IpGroup:
         IP地址组的创建时间。
 
         :param created_at: The created_at of this IpGroup.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -107,7 +126,7 @@ class IpGroup:
         IP地址组的描述。
 
         :param description: The description of this IpGroup.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -129,7 +148,7 @@ class IpGroup:
         IP地址组的ID。
 
         :param id: The id of this IpGroup.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -140,7 +159,7 @@ class IpGroup:
         IP地址组中包含的IP或网段列表。[]表示任意IP。
 
         :return: The ip_list of this IpGroup.
-        :rtype: list[IpInfo]
+        :rtype: list[:class:`huaweicloudsdkelb.v3.IpInfo`]
         """
         return self._ip_list
 
@@ -151,7 +170,7 @@ class IpGroup:
         IP地址组中包含的IP或网段列表。[]表示任意IP。
 
         :param ip_list: The ip_list of this IpGroup.
-        :type: list[IpInfo]
+        :type ip_list: list[:class:`huaweicloudsdkelb.v3.IpInfo`]
         """
         self._ip_list = ip_list
 
@@ -162,7 +181,7 @@ class IpGroup:
         与IP地址组关联的监听器的ID列表。
 
         :return: The listeners of this IpGroup.
-        :rtype: list[ListenerRef]
+        :rtype: list[:class:`huaweicloudsdkelb.v3.ListenerRef`]
         """
         return self._listeners
 
@@ -173,7 +192,7 @@ class IpGroup:
         与IP地址组关联的监听器的ID列表。
 
         :param listeners: The listeners of this IpGroup.
-        :type: list[ListenerRef]
+        :type listeners: list[:class:`huaweicloudsdkelb.v3.ListenerRef`]
         """
         self._listeners = listeners
 
@@ -195,7 +214,7 @@ class IpGroup:
         IP地址组的名称。
 
         :param name: The name of this IpGroup.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -217,7 +236,7 @@ class IpGroup:
         IP地址组的项目ID。
 
         :param project_id: The project_id of this IpGroup.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -239,7 +258,7 @@ class IpGroup:
         IP地址组的更新时间。
 
         :param updated_at: The updated_at of this IpGroup.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowCacheRulesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowCacheRulesResponse(SdkResponse):
     }
 
     def __init__(self, cache_config=None):
-        """ShowCacheRulesResponse - a model defined in huaweicloud sdk"""
+        """ShowCacheRulesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param cache_config: 
+        :type cache_config: :class:`huaweicloudsdkcdn.v1.CacheConfig`
+        """
         
         super(ShowCacheRulesResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class ShowCacheRulesResponse(SdkResponse):
 
 
         :return: The cache_config of this ShowCacheRulesResponse.
-        :rtype: CacheConfig
+        :rtype: :class:`huaweicloudsdkcdn.v1.CacheConfig`
         """
         return self._cache_config
 
@@ -56,7 +61,7 @@ class ShowCacheRulesResponse(SdkResponse):
 
 
         :param cache_config: The cache_config of this ShowCacheRulesResponse.
-        :type: CacheConfig
+        :type cache_config: :class:`huaweicloudsdkcdn.v1.CacheConfig`
         """
         self._cache_config = cache_config
 

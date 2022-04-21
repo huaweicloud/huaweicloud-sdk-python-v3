@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchDisassociateThrottlingPolicyV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchDisassociateThrottlingPolicyV2Response(SdkResponse):
     }
 
     def __init__(self, success_count=None, failure=None):
-        """BatchDisassociateThrottlingPolicyV2Response - a model defined in huaweicloud sdk"""
+        """BatchDisassociateThrottlingPolicyV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param success_count: 成功解除绑定的API和流控策略绑定关系的数量
+        :type success_count: int
+        :param failure: 解除绑定失败的API和流控绑定关系及错误信息
+        :type failure: list[:class:`huaweicloudsdkroma.v2.ThrottleBindingBatchFailure`]
+        """
         
         super(BatchDisassociateThrottlingPolicyV2Response, self).__init__()
 
@@ -63,7 +70,7 @@ class BatchDisassociateThrottlingPolicyV2Response(SdkResponse):
         成功解除绑定的API和流控策略绑定关系的数量
 
         :param success_count: The success_count of this BatchDisassociateThrottlingPolicyV2Response.
-        :type: int
+        :type success_count: int
         """
         self._success_count = success_count
 
@@ -74,7 +81,7 @@ class BatchDisassociateThrottlingPolicyV2Response(SdkResponse):
         解除绑定失败的API和流控绑定关系及错误信息
 
         :return: The failure of this BatchDisassociateThrottlingPolicyV2Response.
-        :rtype: list[ThrottleBindingBatchFailure]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.ThrottleBindingBatchFailure`]
         """
         return self._failure
 
@@ -85,7 +92,7 @@ class BatchDisassociateThrottlingPolicyV2Response(SdkResponse):
         解除绑定失败的API和流控绑定关系及错误信息
 
         :param failure: The failure of this BatchDisassociateThrottlingPolicyV2Response.
-        :type: list[ThrottleBindingBatchFailure]
+        :type failure: list[:class:`huaweicloudsdkroma.v2.ThrottleBindingBatchFailure`]
         """
         self._failure = failure
 

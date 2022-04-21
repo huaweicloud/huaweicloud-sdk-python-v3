@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CheckConfigInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class CheckConfigInfo:
     }
 
     def __init__(self, name=None, cfg_key=None, default_value=None, option_value=None, is_required=None, description=None, type=None, status=None):
-        """CheckConfigInfo - a model defined in huaweicloud sdk"""
+        """CheckConfigInfo
+
+        The model defined in huaweicloud sdk
+
+        :param name: 检查参数名称
+        :type name: str
+        :param cfg_key: 检查参数对应的key值
+        :type cfg_key: str
+        :param default_value: 检查参数默认值
+        :type default_value: str
+        :param option_value: 检查参数可选项
+        :type option_value: str
+        :param is_required: 0：非必填，1：必填
+        :type is_required: int
+        :param description: 检查参数说明
+        :type description: str
+        :param type: 参数类型，0：文本，2：有可选项
+        :type type: int
+        :param status: 参数状态，on：启用，off：未启用
+        :type status: str
+        """
         
         
 
@@ -93,7 +112,7 @@ class CheckConfigInfo:
         检查参数名称
 
         :param name: The name of this CheckConfigInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -115,7 +134,7 @@ class CheckConfigInfo:
         检查参数对应的key值
 
         :param cfg_key: The cfg_key of this CheckConfigInfo.
-        :type: str
+        :type cfg_key: str
         """
         self._cfg_key = cfg_key
 
@@ -137,7 +156,7 @@ class CheckConfigInfo:
         检查参数默认值
 
         :param default_value: The default_value of this CheckConfigInfo.
-        :type: str
+        :type default_value: str
         """
         self._default_value = default_value
 
@@ -159,7 +178,7 @@ class CheckConfigInfo:
         检查参数可选项
 
         :param option_value: The option_value of this CheckConfigInfo.
-        :type: str
+        :type option_value: str
         """
         self._option_value = option_value
 
@@ -181,7 +200,7 @@ class CheckConfigInfo:
         0：非必填，1：必填
 
         :param is_required: The is_required of this CheckConfigInfo.
-        :type: int
+        :type is_required: int
         """
         self._is_required = is_required
 
@@ -203,7 +222,7 @@ class CheckConfigInfo:
         检查参数说明
 
         :param description: The description of this CheckConfigInfo.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -225,7 +244,7 @@ class CheckConfigInfo:
         参数类型，0：文本，2：有可选项
 
         :param type: The type of this CheckConfigInfo.
-        :type: int
+        :type type: int
         """
         self._type = type
 
@@ -247,7 +266,7 @@ class CheckConfigInfo:
         参数状态，on：启用，off：未启用
 
         :param status: The status of this CheckConfigInfo.
-        :type: str
+        :type status: str
         """
         self._status = status
 

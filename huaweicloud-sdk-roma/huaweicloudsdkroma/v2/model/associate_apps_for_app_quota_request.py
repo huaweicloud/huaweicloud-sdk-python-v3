@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AssociateAppsForAppQuotaRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class AssociateAppsForAppQuotaRequest:
     }
 
     def __init__(self, instance_id=None, app_quota_id=None, body=None):
-        """AssociateAppsForAppQuotaRequest - a model defined in huaweicloud sdk"""
+        """AssociateAppsForAppQuotaRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param app_quota_id: 客户端配额编号
+        :type app_quota_id: str
+        :param body: Body of the AssociateAppsForAppQuotaRequest
+        :type body: :class:`huaweicloudsdkroma.v2.CreateAppQuotaBindingApp`
+        """
         
         
 
@@ -66,7 +75,7 @@ class AssociateAppsForAppQuotaRequest:
         实例ID
 
         :param instance_id: The instance_id of this AssociateAppsForAppQuotaRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -88,7 +97,7 @@ class AssociateAppsForAppQuotaRequest:
         客户端配额编号
 
         :param app_quota_id: The app_quota_id of this AssociateAppsForAppQuotaRequest.
-        :type: str
+        :type app_quota_id: str
         """
         self._app_quota_id = app_quota_id
 
@@ -98,7 +107,7 @@ class AssociateAppsForAppQuotaRequest:
 
 
         :return: The body of this AssociateAppsForAppQuotaRequest.
-        :rtype: CreateAppQuotaBindingApp
+        :rtype: :class:`huaweicloudsdkroma.v2.CreateAppQuotaBindingApp`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class AssociateAppsForAppQuotaRequest:
 
 
         :param body: The body of this AssociateAppsForAppQuotaRequest.
-        :type: CreateAppQuotaBindingApp
+        :type body: :class:`huaweicloudsdkroma.v2.CreateAppQuotaBindingApp`
         """
         self._body = body
 

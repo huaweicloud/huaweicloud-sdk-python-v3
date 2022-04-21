@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SimplePremiumWafHost:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class SimplePremiumWafHost:
     }
 
     def __init__(self, id=None, hostname=None, policyid=None, protect_status=None, access_status=None, flag=None, mode=None, pool_ids=None):
-        """SimplePremiumWafHost - a model defined in huaweicloud sdk"""
+        """SimplePremiumWafHost
+
+        The model defined in huaweicloud sdk
+
+        :param id: 域名id
+        :type id: str
+        :param hostname: 域名
+        :type hostname: str
+        :param policyid: 策略id
+        :type policyid: str
+        :param protect_status: 域名防护状态：  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
+        :type protect_status: int
+        :param access_status: 接入状态
+        :type access_status: int
+        :param flag: 特殊标识
+        :type flag: dict(str, str)
+        :param mode: 特殊模式独享引擎的标识（如elb）
+        :type mode: str
+        :param pool_ids: 特殊模式域名所属独享引擎组
+        :type pool_ids: list[str]
+        """
         
         
 
@@ -93,7 +112,7 @@ class SimplePremiumWafHost:
         域名id
 
         :param id: The id of this SimplePremiumWafHost.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -115,7 +134,7 @@ class SimplePremiumWafHost:
         域名
 
         :param hostname: The hostname of this SimplePremiumWafHost.
-        :type: str
+        :type hostname: str
         """
         self._hostname = hostname
 
@@ -137,7 +156,7 @@ class SimplePremiumWafHost:
         策略id
 
         :param policyid: The policyid of this SimplePremiumWafHost.
-        :type: str
+        :type policyid: str
         """
         self._policyid = policyid
 
@@ -159,7 +178,7 @@ class SimplePremiumWafHost:
         域名防护状态：  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
 
         :param protect_status: The protect_status of this SimplePremiumWafHost.
-        :type: int
+        :type protect_status: int
         """
         self._protect_status = protect_status
 
@@ -181,7 +200,7 @@ class SimplePremiumWafHost:
         接入状态
 
         :param access_status: The access_status of this SimplePremiumWafHost.
-        :type: int
+        :type access_status: int
         """
         self._access_status = access_status
 
@@ -203,7 +222,7 @@ class SimplePremiumWafHost:
         特殊标识
 
         :param flag: The flag of this SimplePremiumWafHost.
-        :type: dict(str, str)
+        :type flag: dict(str, str)
         """
         self._flag = flag
 
@@ -225,7 +244,7 @@ class SimplePremiumWafHost:
         特殊模式独享引擎的标识（如elb）
 
         :param mode: The mode of this SimplePremiumWafHost.
-        :type: str
+        :type mode: str
         """
         self._mode = mode
 
@@ -247,7 +266,7 @@ class SimplePremiumWafHost:
         特殊模式域名所属独享引擎组
 
         :param pool_ids: The pool_ids of this SimplePremiumWafHost.
-        :type: list[str]
+        :type pool_ids: list[str]
         """
         self._pool_ids = pool_ids
 

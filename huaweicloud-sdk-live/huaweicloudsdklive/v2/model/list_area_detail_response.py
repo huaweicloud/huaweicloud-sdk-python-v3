@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAreaDetailResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListAreaDetailResponse(SdkResponse):
     }
 
     def __init__(self, data_list=None, x_request_id=None):
-        """ListAreaDetailResponse - a model defined in huaweicloud sdk"""
+        """ListAreaDetailResponse
+
+        The model defined in huaweicloud sdk
+
+        :param data_list: 时间戳及相应时间的指标数值
+        :type data_list: list[:class:`huaweicloudsdklive.v2.AreaDetail`]
+        :param x_request_id: 
+        :type x_request_id: str
+        """
         
         super(ListAreaDetailResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListAreaDetailResponse(SdkResponse):
         时间戳及相应时间的指标数值
 
         :return: The data_list of this ListAreaDetailResponse.
-        :rtype: list[AreaDetail]
+        :rtype: list[:class:`huaweicloudsdklive.v2.AreaDetail`]
         """
         return self._data_list
 
@@ -63,7 +70,7 @@ class ListAreaDetailResponse(SdkResponse):
         时间戳及相应时间的指标数值
 
         :param data_list: The data_list of this ListAreaDetailResponse.
-        :type: list[AreaDetail]
+        :type data_list: list[:class:`huaweicloudsdklive.v2.AreaDetail`]
         """
         self._data_list = data_list
 
@@ -83,7 +90,7 @@ class ListAreaDetailResponse(SdkResponse):
 
 
         :param x_request_id: The x_request_id of this ListAreaDetailResponse.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 

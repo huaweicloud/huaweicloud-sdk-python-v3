@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DiscountSimpleInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DiscountSimpleInfo:
     }
 
     def __init__(self, id=None, type=None):
-        """DiscountSimpleInfo - a model defined in huaweicloud sdk"""
+        """DiscountSimpleInfo
+
+        The model defined in huaweicloud sdk
+
+        :param id: 折扣ID。
+        :type id: str
+        :param type: 折扣类型： 0：促销折扣 1：合同折扣2：商务优惠3：合作伙伴授予折扣609：订单调价折扣 说明： 订单支付时，如果包含609折扣（订单调价折扣），则必须使用，不能再更换折扣类型。
+        :type type: int
+        """
         
         
 
@@ -61,7 +68,7 @@ class DiscountSimpleInfo:
         折扣ID。
 
         :param id: The id of this DiscountSimpleInfo.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -83,7 +90,7 @@ class DiscountSimpleInfo:
         折扣类型： 0：促销折扣 1：合同折扣2：商务优惠3：合作伙伴授予折扣609：订单调价折扣 说明： 订单支付时，如果包含609折扣（订单调价折扣），则必须使用，不能再更换折扣类型。
 
         :param type: The type of this DiscountSimpleInfo.
-        :type: int
+        :type type: int
         """
         self._type = type
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GlanceUpdateImageMemberResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class GlanceUpdateImageMemberResponse(SdkResponse):
     }
 
     def __init__(self, status=None, created_at=None, updated_at=None, image_id=None, member_id=None, schema=None):
-        """GlanceUpdateImageMemberResponse - a model defined in huaweicloud sdk"""
+        """GlanceUpdateImageMemberResponse
+
+        The model defined in huaweicloud sdk
+
+        :param status: 共享状态
+        :type status: str
+        :param created_at: 共享时间，格式为UTC时间
+        :type created_at: str
+        :param updated_at: 更新时间，格式为UTC时间
+        :type updated_at: str
+        :param image_id: 镜像ID
+        :type image_id: str
+        :param member_id: 成员ID
+        :type member_id: str
+        :param schema: 共享视图
+        :type schema: str
+        """
         
         super(GlanceUpdateImageMemberResponse, self).__init__()
 
@@ -83,7 +98,7 @@ class GlanceUpdateImageMemberResponse(SdkResponse):
         共享状态
 
         :param status: The status of this GlanceUpdateImageMemberResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -105,7 +120,7 @@ class GlanceUpdateImageMemberResponse(SdkResponse):
         共享时间，格式为UTC时间
 
         :param created_at: The created_at of this GlanceUpdateImageMemberResponse.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -127,7 +142,7 @@ class GlanceUpdateImageMemberResponse(SdkResponse):
         更新时间，格式为UTC时间
 
         :param updated_at: The updated_at of this GlanceUpdateImageMemberResponse.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 
@@ -149,7 +164,7 @@ class GlanceUpdateImageMemberResponse(SdkResponse):
         镜像ID
 
         :param image_id: The image_id of this GlanceUpdateImageMemberResponse.
-        :type: str
+        :type image_id: str
         """
         self._image_id = image_id
 
@@ -171,7 +186,7 @@ class GlanceUpdateImageMemberResponse(SdkResponse):
         成员ID
 
         :param member_id: The member_id of this GlanceUpdateImageMemberResponse.
-        :type: str
+        :type member_id: str
         """
         self._member_id = member_id
 
@@ -193,7 +208,7 @@ class GlanceUpdateImageMemberResponse(SdkResponse):
         共享视图
 
         :param schema: The schema of this GlanceUpdateImageMemberResponse.
-        :type: str
+        :type schema: str
         """
         self._schema = schema
 

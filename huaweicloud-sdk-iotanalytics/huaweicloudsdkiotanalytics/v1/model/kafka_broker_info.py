@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KafkaBrokerInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class KafkaBrokerInfo:
     }
 
     def __init__(self, ip=None, port=None):
-        """KafkaBrokerInfo - a model defined in huaweicloud sdk"""
+        """KafkaBrokerInfo
+
+        The model defined in huaweicloud sdk
+
+        :param ip: IP
+        :type ip: str
+        :param port: Port
+        :type port: int
+        """
         
         
 
@@ -61,7 +68,7 @@ class KafkaBrokerInfo:
         IP
 
         :param ip: The ip of this KafkaBrokerInfo.
-        :type: str
+        :type ip: str
         """
         self._ip = ip
 
@@ -83,7 +90,7 @@ class KafkaBrokerInfo:
         Port
 
         :param port: The port of this KafkaBrokerInfo.
-        :type: int
+        :type port: int
         """
         self._port = port
 

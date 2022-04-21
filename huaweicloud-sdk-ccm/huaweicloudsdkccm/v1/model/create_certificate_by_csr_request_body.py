@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateCertificateByCsrRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class CreateCertificateByCsrRequestBody:
     }
 
     def __init__(self, issuer_id=None, csr=None, validity=None, type=None, path_length=None, subject_alternative_names=None):
-        """CreateCertificateByCsrRequestBody - a model defined in huaweicloud sdk"""
+        """CreateCertificateByCsrRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param issuer_id: 父CA证书ID。
+        :type issuer_id: str
+        :param csr: 证书签名请求。请使用“\\r\\n”或“\\n”替代证书签名请求中的换行符，若通过console端请求此接口，则无需做符号转换。
+        :type csr: str
+        :param validity: 
+        :type validity: :class:`huaweicloudsdkccm.v1.Validity`
+        :param type: 证书类型，用于区分从属CA与私有证书。   - **ENTITY_CERT** : 签发私有证书，为缺省值；   - **INTERMEDIATE_CA** : 签发从属CA。
+        :type type: str
+        :param path_length: 路径长度，仅当签发从属CA时有效。
+        :type path_length: int
+        :param subject_alternative_names: 主体备用名称(本接口预留参数，当前在后端被忽略)，详情请参见**SubjectAlternativeName**字段数据结构说明。
+        :type subject_alternative_names: list[:class:`huaweicloudsdkccm.v1.SubjectAlternativeName`]
+        """
         
         
 
@@ -80,7 +95,7 @@ class CreateCertificateByCsrRequestBody:
         父CA证书ID。
 
         :param issuer_id: The issuer_id of this CreateCertificateByCsrRequestBody.
-        :type: str
+        :type issuer_id: str
         """
         self._issuer_id = issuer_id
 
@@ -102,7 +117,7 @@ class CreateCertificateByCsrRequestBody:
         证书签名请求。请使用“\\r\\n”或“\\n”替代证书签名请求中的换行符，若通过console端请求此接口，则无需做符号转换。
 
         :param csr: The csr of this CreateCertificateByCsrRequestBody.
-        :type: str
+        :type csr: str
         """
         self._csr = csr
 
@@ -112,7 +127,7 @@ class CreateCertificateByCsrRequestBody:
 
 
         :return: The validity of this CreateCertificateByCsrRequestBody.
-        :rtype: Validity
+        :rtype: :class:`huaweicloudsdkccm.v1.Validity`
         """
         return self._validity
 
@@ -122,7 +137,7 @@ class CreateCertificateByCsrRequestBody:
 
 
         :param validity: The validity of this CreateCertificateByCsrRequestBody.
-        :type: Validity
+        :type validity: :class:`huaweicloudsdkccm.v1.Validity`
         """
         self._validity = validity
 
@@ -144,7 +159,7 @@ class CreateCertificateByCsrRequestBody:
         证书类型，用于区分从属CA与私有证书。   - **ENTITY_CERT** : 签发私有证书，为缺省值；   - **INTERMEDIATE_CA** : 签发从属CA。
 
         :param type: The type of this CreateCertificateByCsrRequestBody.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -166,7 +181,7 @@ class CreateCertificateByCsrRequestBody:
         路径长度，仅当签发从属CA时有效。
 
         :param path_length: The path_length of this CreateCertificateByCsrRequestBody.
-        :type: int
+        :type path_length: int
         """
         self._path_length = path_length
 
@@ -177,7 +192,7 @@ class CreateCertificateByCsrRequestBody:
         主体备用名称(本接口预留参数，当前在后端被忽略)，详情请参见**SubjectAlternativeName**字段数据结构说明。
 
         :return: The subject_alternative_names of this CreateCertificateByCsrRequestBody.
-        :rtype: list[SubjectAlternativeName]
+        :rtype: list[:class:`huaweicloudsdkccm.v1.SubjectAlternativeName`]
         """
         return self._subject_alternative_names
 
@@ -188,7 +203,7 @@ class CreateCertificateByCsrRequestBody:
         主体备用名称(本接口预留参数，当前在后端被忽略)，详情请参见**SubjectAlternativeName**字段数据结构说明。
 
         :param subject_alternative_names: The subject_alternative_names of this CreateCertificateByCsrRequestBody.
-        :type: list[SubjectAlternativeName]
+        :type subject_alternative_names: list[:class:`huaweicloudsdkccm.v1.SubjectAlternativeName`]
         """
         self._subject_alternative_names = subject_alternative_names
 

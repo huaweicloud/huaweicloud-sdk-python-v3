@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TagLaborResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class TagLaborResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, updated_time=None):
-        """TagLaborResponse - a model defined in huaweicloud sdk"""
+        """TagLaborResponse
+
+        The model defined in huaweicloud sdk
+
+        :param request_id: 调用成功时的返回请求ID。  调用失败时无此字段。
+        :type request_id: str
+        :param updated_time: 转人工的时间。格式为“yyyy-MM-dd THH:mm:ssZ”。其中，T指某个时间的开始；Z指UTC时间。  调用失败时无此字段。
+        :type updated_time: str
+        """
         
         super(TagLaborResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class TagLaborResponse(SdkResponse):
         调用成功时的返回请求ID。  调用失败时无此字段。
 
         :param request_id: The request_id of this TagLaborResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 
@@ -85,7 +92,7 @@ class TagLaborResponse(SdkResponse):
         转人工的时间。格式为“yyyy-MM-dd THH:mm:ssZ”。其中，T指某个时间的开始；Z指UTC时间。  调用失败时无此字段。
 
         :param updated_time: The updated_time of this TagLaborResponse.
-        :type: str
+        :type updated_time: str
         """
         self._updated_time = updated_time
 

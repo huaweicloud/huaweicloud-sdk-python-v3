@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RedisConfig:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class RedisConfig:
     }
 
     def __init__(self, param_value=None, param_name=None, param_id=None):
-        """RedisConfig - a model defined in huaweicloud sdk"""
+        """RedisConfig
+
+        The model defined in huaweicloud sdk
+
+        :param param_value: 实例配置项的值。
+        :type param_value: str
+        :param param_name: 实例配置项名。
+        :type param_name: str
+        :param param_id: 实例配置项ID。
+        :type param_id: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class RedisConfig:
         实例配置项的值。
 
         :param param_value: The param_value of this RedisConfig.
-        :type: str
+        :type param_value: str
         """
         self._param_value = param_value
 
@@ -87,7 +96,7 @@ class RedisConfig:
         实例配置项名。
 
         :param param_name: The param_name of this RedisConfig.
-        :type: str
+        :type param_name: str
         """
         self._param_name = param_name
 
@@ -109,7 +118,7 @@ class RedisConfig:
         实例配置项ID。
 
         :param param_id: The param_id of this RedisConfig.
-        :type: str
+        :type param_id: str
         """
         self._param_id = param_id
 

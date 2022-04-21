@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteActiveAlarmsRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteActiveAlarmsRequestBody:
     }
 
     def __init__(self, events=None):
-        """DeleteActiveAlarmsRequestBody - a model defined in huaweicloud sdk"""
+        """DeleteActiveAlarmsRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param events: 主题信息
+        :type events: list[:class:`huaweicloudsdklts.v2.Event`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class DeleteActiveAlarmsRequestBody:
         主题信息
 
         :return: The events of this DeleteActiveAlarmsRequestBody.
-        :rtype: list[Event]
+        :rtype: list[:class:`huaweicloudsdklts.v2.Event`]
         """
         return self._events
 
@@ -57,7 +62,7 @@ class DeleteActiveAlarmsRequestBody:
         主题信息
 
         :param events: The events of this DeleteActiveAlarmsRequestBody.
-        :type: list[Event]
+        :type events: list[:class:`huaweicloudsdklts.v2.Event`]
         """
         self._events = events
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PrepaidChangeChargeModeOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class PrepaidChangeChargeModeOption:
     }
 
     def __init__(self, include_publicip=None, period_type=None, period_num=None, auto_renew=None, auto_pay=None):
-        """PrepaidChangeChargeModeOption - a model defined in huaweicloud sdk"""
+        """PrepaidChangeChargeModeOption
+
+        The model defined in huaweicloud sdk
+
+        :param include_publicip: 是否连同独享按带宽计费的弹性公网IP一起转包周期。 1. 弹性公网IP转包周期之后可以单独解绑，绑定到其他实例，删除 2. 只有独享且按带宽计费的弹性公网IP才被允许转包周期 默认值：false
+        :type include_publicip: bool
+        :param period_type: 订购周期类型，仅在change_mode为delay时有效。取值： - month：月（默认）。 - year：年。
+        :type period_type: str
+        :param period_num: 订购周期数，仅在change_mode为delay时有效。取值： - period_type为month时，为[1,9]，默认1。 - period_type为year时，为[1,3]，默认1。
+        :type period_num: int
+        :param auto_renew: 是否自动续订。取值： - true：自动续订 - false：不自动续订（默认）
+        :type auto_renew: bool
+        :param auto_pay: 下单订购后，是否自动从客户的账户中支付。取值： - true：自动支付； - false：不自动支付（默认）。  自动支付时，只能使用账户的现金支付；如果要使用代金券，请选择不自动支付，然后在用户费用中心，选择代金券支付。
+        :type auto_pay: bool
+        """
         
         
 
@@ -77,7 +90,7 @@ class PrepaidChangeChargeModeOption:
         是否连同独享按带宽计费的弹性公网IP一起转包周期。 1. 弹性公网IP转包周期之后可以单独解绑，绑定到其他实例，删除 2. 只有独享且按带宽计费的弹性公网IP才被允许转包周期 默认值：false
 
         :param include_publicip: The include_publicip of this PrepaidChangeChargeModeOption.
-        :type: bool
+        :type include_publicip: bool
         """
         self._include_publicip = include_publicip
 
@@ -99,7 +112,7 @@ class PrepaidChangeChargeModeOption:
         订购周期类型，仅在change_mode为delay时有效。取值： - month：月（默认）。 - year：年。
 
         :param period_type: The period_type of this PrepaidChangeChargeModeOption.
-        :type: str
+        :type period_type: str
         """
         self._period_type = period_type
 
@@ -121,7 +134,7 @@ class PrepaidChangeChargeModeOption:
         订购周期数，仅在change_mode为delay时有效。取值： - period_type为month时，为[1,9]，默认1。 - period_type为year时，为[1,3]，默认1。
 
         :param period_num: The period_num of this PrepaidChangeChargeModeOption.
-        :type: int
+        :type period_num: int
         """
         self._period_num = period_num
 
@@ -143,7 +156,7 @@ class PrepaidChangeChargeModeOption:
         是否自动续订。取值： - true：自动续订 - false：不自动续订（默认）
 
         :param auto_renew: The auto_renew of this PrepaidChangeChargeModeOption.
-        :type: bool
+        :type auto_renew: bool
         """
         self._auto_renew = auto_renew
 
@@ -165,7 +178,7 @@ class PrepaidChangeChargeModeOption:
         下单订购后，是否自动从客户的账户中支付。取值： - true：自动支付； - false：不自动支付（默认）。  自动支付时，只能使用账户的现金支付；如果要使用代金券，请选择不自动支付，然后在用户费用中心，选择代金券支付。
 
         :param auto_pay: The auto_pay of this PrepaidChangeChargeModeOption.
-        :type: bool
+        :type auto_pay: bool
         """
         self._auto_pay = auto_pay
 

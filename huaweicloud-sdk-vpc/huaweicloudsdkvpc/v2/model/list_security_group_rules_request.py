@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSecurityGroupRulesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListSecurityGroupRulesRequest:
     }
 
     def __init__(self, marker=None, limit=None, security_group_id=None):
-        """ListSecurityGroupRulesRequest - a model defined in huaweicloud sdk"""
+        """ListSecurityGroupRulesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param marker: 功能说明：分页查询起始的资源ID，为空时查询第一页
+        :type marker: str
+        :param limit: 每页返回的个数
+        :type limit: int
+        :param security_group_id: 安全组ID
+        :type security_group_id: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class ListSecurityGroupRulesRequest:
         功能说明：分页查询起始的资源ID，为空时查询第一页
 
         :param marker: The marker of this ListSecurityGroupRulesRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -90,7 +99,7 @@ class ListSecurityGroupRulesRequest:
         每页返回的个数
 
         :param limit: The limit of this ListSecurityGroupRulesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -112,7 +121,7 @@ class ListSecurityGroupRulesRequest:
         安全组ID
 
         :param security_group_id: The security_group_id of this ListSecurityGroupRulesRequest.
-        :type: str
+        :type security_group_id: str
         """
         self._security_group_id = security_group_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MysqlInstanceResponse:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -62,7 +61,45 @@ class MysqlInstanceResponse:
     }
 
     def __init__(self, id=None, name=None, status=None, datastore=None, mode=None, configuration_id=None, port=None, backup_strategy=None, enterprise_project_id=None, region=None, availability_zone_mode=None, master_availability_zone=None, vpc_id=None, security_group_id=None, subnet_id=None, flavor_ref=None, charge_info=None):
-        """MysqlInstanceResponse - a model defined in huaweicloud sdk"""
+        """MysqlInstanceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 实例ID。
+        :type id: str
+        :param name: 实例名称。用于表示实例的名称，同一租户下，同类型的实例名称可相同。 取值范围：4~64个字符之间，必须以字母开头，不区分大小写，可以包含字母、数字、中划线或者下划线, 不能包含其它的特殊字符。
+        :type name: str
+        :param status: 实例状态。
+        :type status: str
+        :param datastore: 
+        :type datastore: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastore`
+        :param mode: 实例类型，仅支持Cluster。
+        :type mode: str
+        :param configuration_id: 参数组ID。
+        :type configuration_id: str
+        :param port: 数据库端口信息。
+        :type port: str
+        :param backup_strategy: 
+        :type backup_strategy: :class:`huaweicloudsdkgaussdb.v3.MysqlBackupStrategy`
+        :param enterprise_project_id: 企业项目ID。
+        :type enterprise_project_id: str
+        :param region: 区域ID，与请求参数相同。
+        :type region: str
+        :param availability_zone_mode: 可用区模式，与请求参数相同。
+        :type availability_zone_mode: str
+        :param master_availability_zone: 主可用区ID。
+        :type master_availability_zone: str
+        :param vpc_id: 虚拟私有云ID，与请求参数相同。
+        :type vpc_id: str
+        :param security_group_id: 安全组ID，与请求参数相同。
+        :type security_group_id: str
+        :param subnet_id: 子网ID，与请求参数相同。
+        :type subnet_id: str
+        :param flavor_ref: 规格码，与请求参数相同。
+        :type flavor_ref: str
+        :param charge_info: 
+        :type charge_info: :class:`huaweicloudsdkgaussdb.v3.MysqlChargeInfo`
+        """
         
         
 
@@ -136,7 +173,7 @@ class MysqlInstanceResponse:
         实例ID。
 
         :param id: The id of this MysqlInstanceResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -158,7 +195,7 @@ class MysqlInstanceResponse:
         实例名称。用于表示实例的名称，同一租户下，同类型的实例名称可相同。 取值范围：4~64个字符之间，必须以字母开头，不区分大小写，可以包含字母、数字、中划线或者下划线, 不能包含其它的特殊字符。
 
         :param name: The name of this MysqlInstanceResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -180,7 +217,7 @@ class MysqlInstanceResponse:
         实例状态。
 
         :param status: The status of this MysqlInstanceResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -190,7 +227,7 @@ class MysqlInstanceResponse:
 
 
         :return: The datastore of this MysqlInstanceResponse.
-        :rtype: MysqlDatastore
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastore`
         """
         return self._datastore
 
@@ -200,7 +237,7 @@ class MysqlInstanceResponse:
 
 
         :param datastore: The datastore of this MysqlInstanceResponse.
-        :type: MysqlDatastore
+        :type datastore: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastore`
         """
         self._datastore = datastore
 
@@ -222,7 +259,7 @@ class MysqlInstanceResponse:
         实例类型，仅支持Cluster。
 
         :param mode: The mode of this MysqlInstanceResponse.
-        :type: str
+        :type mode: str
         """
         self._mode = mode
 
@@ -244,7 +281,7 @@ class MysqlInstanceResponse:
         参数组ID。
 
         :param configuration_id: The configuration_id of this MysqlInstanceResponse.
-        :type: str
+        :type configuration_id: str
         """
         self._configuration_id = configuration_id
 
@@ -266,7 +303,7 @@ class MysqlInstanceResponse:
         数据库端口信息。
 
         :param port: The port of this MysqlInstanceResponse.
-        :type: str
+        :type port: str
         """
         self._port = port
 
@@ -276,7 +313,7 @@ class MysqlInstanceResponse:
 
 
         :return: The backup_strategy of this MysqlInstanceResponse.
-        :rtype: MysqlBackupStrategy
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlBackupStrategy`
         """
         return self._backup_strategy
 
@@ -286,7 +323,7 @@ class MysqlInstanceResponse:
 
 
         :param backup_strategy: The backup_strategy of this MysqlInstanceResponse.
-        :type: MysqlBackupStrategy
+        :type backup_strategy: :class:`huaweicloudsdkgaussdb.v3.MysqlBackupStrategy`
         """
         self._backup_strategy = backup_strategy
 
@@ -308,7 +345,7 @@ class MysqlInstanceResponse:
         企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this MysqlInstanceResponse.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -330,7 +367,7 @@ class MysqlInstanceResponse:
         区域ID，与请求参数相同。
 
         :param region: The region of this MysqlInstanceResponse.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -352,7 +389,7 @@ class MysqlInstanceResponse:
         可用区模式，与请求参数相同。
 
         :param availability_zone_mode: The availability_zone_mode of this MysqlInstanceResponse.
-        :type: str
+        :type availability_zone_mode: str
         """
         self._availability_zone_mode = availability_zone_mode
 
@@ -374,7 +411,7 @@ class MysqlInstanceResponse:
         主可用区ID。
 
         :param master_availability_zone: The master_availability_zone of this MysqlInstanceResponse.
-        :type: str
+        :type master_availability_zone: str
         """
         self._master_availability_zone = master_availability_zone
 
@@ -396,7 +433,7 @@ class MysqlInstanceResponse:
         虚拟私有云ID，与请求参数相同。
 
         :param vpc_id: The vpc_id of this MysqlInstanceResponse.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -418,7 +455,7 @@ class MysqlInstanceResponse:
         安全组ID，与请求参数相同。
 
         :param security_group_id: The security_group_id of this MysqlInstanceResponse.
-        :type: str
+        :type security_group_id: str
         """
         self._security_group_id = security_group_id
 
@@ -440,7 +477,7 @@ class MysqlInstanceResponse:
         子网ID，与请求参数相同。
 
         :param subnet_id: The subnet_id of this MysqlInstanceResponse.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -462,7 +499,7 @@ class MysqlInstanceResponse:
         规格码，与请求参数相同。
 
         :param flavor_ref: The flavor_ref of this MysqlInstanceResponse.
-        :type: str
+        :type flavor_ref: str
         """
         self._flavor_ref = flavor_ref
 
@@ -472,7 +509,7 @@ class MysqlInstanceResponse:
 
 
         :return: The charge_info of this MysqlInstanceResponse.
-        :rtype: MysqlChargeInfo
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlChargeInfo`
         """
         return self._charge_info
 
@@ -482,7 +519,7 @@ class MysqlInstanceResponse:
 
 
         :param charge_info: The charge_info of this MysqlInstanceResponse.
-        :type: MysqlChargeInfo
+        :type charge_info: :class:`huaweicloudsdkgaussdb.v3.MysqlChargeInfo`
         """
         self._charge_info = charge_info
 

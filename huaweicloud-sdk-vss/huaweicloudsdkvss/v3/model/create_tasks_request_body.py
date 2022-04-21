@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateTasksRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class CreateTasksRequestBody:
     }
 
     def __init__(self, task_name=None, url=None, task_type=None, timer=None, trigger_time=None, task_period=None, task_config=None):
-        """CreateTasksRequestBody - a model defined in huaweicloud sdk"""
+        """CreateTasksRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param task_name: 任务名称
+        :type task_name: str
+        :param url: 待扫描的目标网址
+        :type url: str
+        :param task_type: 扫描任务类型:   * normal - 普通任务   * monitor - 监测任务 
+        :type task_type: str
+        :param timer: 普通任务的定时启动时间
+        :type timer: str
+        :param trigger_time: 监测任务的定时触发时间
+        :type trigger_time: str
+        :param task_period: 监测任务的定时触发周期:   * everyday - 每日   * threedays - 每三天   * everyweek - 每星期   * everymonth - 每月 
+        :type task_period: str
+        :param task_config: 
+        :type task_config: :class:`huaweicloudsdkvss.v3.TaskSettingsTaskConfig`
+        """
         
         
 
@@ -86,7 +103,7 @@ class CreateTasksRequestBody:
         任务名称
 
         :param task_name: The task_name of this CreateTasksRequestBody.
-        :type: str
+        :type task_name: str
         """
         self._task_name = task_name
 
@@ -108,7 +125,7 @@ class CreateTasksRequestBody:
         待扫描的目标网址
 
         :param url: The url of this CreateTasksRequestBody.
-        :type: str
+        :type url: str
         """
         self._url = url
 
@@ -130,7 +147,7 @@ class CreateTasksRequestBody:
         扫描任务类型:   * normal - 普通任务   * monitor - 监测任务 
 
         :param task_type: The task_type of this CreateTasksRequestBody.
-        :type: str
+        :type task_type: str
         """
         self._task_type = task_type
 
@@ -152,7 +169,7 @@ class CreateTasksRequestBody:
         普通任务的定时启动时间
 
         :param timer: The timer of this CreateTasksRequestBody.
-        :type: str
+        :type timer: str
         """
         self._timer = timer
 
@@ -174,7 +191,7 @@ class CreateTasksRequestBody:
         监测任务的定时触发时间
 
         :param trigger_time: The trigger_time of this CreateTasksRequestBody.
-        :type: str
+        :type trigger_time: str
         """
         self._trigger_time = trigger_time
 
@@ -196,7 +213,7 @@ class CreateTasksRequestBody:
         监测任务的定时触发周期:   * everyday - 每日   * threedays - 每三天   * everyweek - 每星期   * everymonth - 每月 
 
         :param task_period: The task_period of this CreateTasksRequestBody.
-        :type: str
+        :type task_period: str
         """
         self._task_period = task_period
 
@@ -206,7 +223,7 @@ class CreateTasksRequestBody:
 
 
         :return: The task_config of this CreateTasksRequestBody.
-        :rtype: TaskSettingsTaskConfig
+        :rtype: :class:`huaweicloudsdkvss.v3.TaskSettingsTaskConfig`
         """
         return self._task_config
 
@@ -216,7 +233,7 @@ class CreateTasksRequestBody:
 
 
         :param task_config: The task_config of this CreateTasksRequestBody.
-        :type: TaskSettingsTaskConfig
+        :type task_config: :class:`huaweicloudsdkvss.v3.TaskSettingsTaskConfig`
         """
         self._task_config = task_config
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DatabaseForCreation:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class DatabaseForCreation:
     }
 
     def __init__(self, name=None, character_set=None, comment=None):
-        """DatabaseForCreation - a model defined in huaweicloud sdk"""
+        """DatabaseForCreation
+
+        The model defined in huaweicloud sdk
+
+        :param name: 数据库名称。 数据库名称长度可在1～64个字符之间，由字母、数字、中划线、下划线或$组成，$累计总长度小于等于10个字符，（MySQL 8.0不可包含$）。
+        :type name: str
+        :param character_set: 数据库使用的字符集，例如utf8、gbk、ascii等MySQL支持的字符集。
+        :type character_set: str
+        :param comment: 数据库备注，最大长度512
+        :type comment: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class DatabaseForCreation:
         数据库名称。 数据库名称长度可在1～64个字符之间，由字母、数字、中划线、下划线或$组成，$累计总长度小于等于10个字符，（MySQL 8.0不可包含$）。
 
         :param name: The name of this DatabaseForCreation.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -88,7 +97,7 @@ class DatabaseForCreation:
         数据库使用的字符集，例如utf8、gbk、ascii等MySQL支持的字符集。
 
         :param character_set: The character_set of this DatabaseForCreation.
-        :type: str
+        :type character_set: str
         """
         self._character_set = character_set
 
@@ -110,7 +119,7 @@ class DatabaseForCreation:
         数据库备注，最大长度512
 
         :param comment: The comment of this DatabaseForCreation.
-        :type: str
+        :type comment: str
         """
         self._comment = comment
 

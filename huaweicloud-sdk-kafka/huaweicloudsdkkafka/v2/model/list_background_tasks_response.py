@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListBackgroundTasksResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListBackgroundTasksResponse(SdkResponse):
     }
 
     def __init__(self, task_count=None, tasks=None):
-        """ListBackgroundTasksResponse - a model defined in huaweicloud sdk"""
+        """ListBackgroundTasksResponse
+
+        The model defined in huaweicloud sdk
+
+        :param task_count: 任务数量。
+        :type task_count: str
+        :param tasks: 任务列表。
+        :type tasks: list[:class:`huaweicloudsdkkafka.v2.ListBackgroundTasksRespTasks`]
+        """
         
         super(ListBackgroundTasksResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListBackgroundTasksResponse(SdkResponse):
         任务数量。
 
         :param task_count: The task_count of this ListBackgroundTasksResponse.
-        :type: str
+        :type task_count: str
         """
         self._task_count = task_count
 
@@ -74,7 +81,7 @@ class ListBackgroundTasksResponse(SdkResponse):
         任务列表。
 
         :return: The tasks of this ListBackgroundTasksResponse.
-        :rtype: list[ListBackgroundTasksRespTasks]
+        :rtype: list[:class:`huaweicloudsdkkafka.v2.ListBackgroundTasksRespTasks`]
         """
         return self._tasks
 
@@ -85,7 +92,7 @@ class ListBackgroundTasksResponse(SdkResponse):
         任务列表。
 
         :param tasks: The tasks of this ListBackgroundTasksResponse.
-        :type: list[ListBackgroundTasksRespTasks]
+        :type tasks: list[:class:`huaweicloudsdkkafka.v2.ListBackgroundTasksRespTasks`]
         """
         self._tasks = tasks
 

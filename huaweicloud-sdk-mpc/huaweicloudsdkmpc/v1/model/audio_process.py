@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AudioProcess:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AudioProcess:
     }
 
     def __init__(self, volume=None, volume_expr=None):
-        """AudioProcess - a model defined in huaweicloud sdk"""
+        """AudioProcess
+
+        The model defined in huaweicloud sdk
+
+        :param volume: 音量调整方式： - auto：表示自动调整音量。 - dynamic：表示人为调整，需设定音量调整幅值。 
+        :type volume: str
+        :param volume_expr: 音量调整幅值，需指定volume为dynamic。  取值范围：[-15,15]  单位：dB 
+        :type volume_expr: int
+        """
         
         
 
@@ -63,7 +70,7 @@ class AudioProcess:
         音量调整方式： - auto：表示自动调整音量。 - dynamic：表示人为调整，需设定音量调整幅值。 
 
         :param volume: The volume of this AudioProcess.
-        :type: str
+        :type volume: str
         """
         self._volume = volume
 
@@ -85,7 +92,7 @@ class AudioProcess:
         音量调整幅值，需指定volume为dynamic。  取值范围：[-15,15]  单位：dB 
 
         :param volume_expr: The volume_expr of this AudioProcess.
-        :type: int
+        :type volume_expr: int
         """
         self._volume_expr = volume_expr
 

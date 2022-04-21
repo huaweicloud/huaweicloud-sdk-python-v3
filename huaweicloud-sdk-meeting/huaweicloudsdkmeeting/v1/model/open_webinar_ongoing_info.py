@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OpenWebinarOngoingInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -64,7 +63,47 @@ class OpenWebinarOngoingInfo:
     }
 
     def __init__(self, online_attendee_count=None, conf_uuid=None, dept_name=None, conference_id=None, corp_id=None, subject=None, description=None, start_time=None, time_zone_id=None, scheduser_id=None, scheduser_name=None, vmr_pkg_name=None, chair_join_uri=None, chair_passwd=None, guest_join_uri=None, guest_passwd=None, audience_join_uri=None, audience_passwd=None):
-        """OpenWebinarOngoingInfo - a model defined in huaweicloud sdk"""
+        """OpenWebinarOngoingInfo
+
+        The model defined in huaweicloud sdk
+
+        :param online_attendee_count: 实时在线人数
+        :type online_attendee_count: int
+        :param conf_uuid: 会议UUID
+        :type conf_uuid: str
+        :param dept_name: 预订人部门
+        :type dept_name: str
+        :param conference_id: 会议ID。长度限制为32个字符。
+        :type conference_id: str
+        :param corp_id: 企业id
+        :type corp_id: str
+        :param subject: 主题
+        :type subject: str
+        :param description: 描述
+        :type description: str
+        :param start_time: 会议召开时间
+        :type start_time: str
+        :param time_zone_id: 时区ID
+        :type time_zone_id: int
+        :param scheduser_id: 会议预订者ID
+        :type scheduser_id: str
+        :param scheduser_name: 会议预订者帐号名称。长度最大限制为96个字符。
+        :type scheduser_name: str
+        :param vmr_pkg_name: 网络研讨会资源名
+        :type vmr_pkg_name: str
+        :param chair_join_uri: 主持人入会地址。
+        :type chair_join_uri: str
+        :param chair_passwd: 主持人密码。
+        :type chair_passwd: str
+        :param guest_join_uri: 嘉宾入会地址。
+        :type guest_join_uri: str
+        :param guest_passwd: 嘉宾密码。
+        :type guest_passwd: str
+        :param audience_join_uri: 观众入会地址。
+        :type audience_join_uri: str
+        :param audience_passwd: 观众密码。
+        :type audience_passwd: str
+        """
         
         
 
@@ -143,7 +182,7 @@ class OpenWebinarOngoingInfo:
         实时在线人数
 
         :param online_attendee_count: The online_attendee_count of this OpenWebinarOngoingInfo.
-        :type: int
+        :type online_attendee_count: int
         """
         self._online_attendee_count = online_attendee_count
 
@@ -165,7 +204,7 @@ class OpenWebinarOngoingInfo:
         会议UUID
 
         :param conf_uuid: The conf_uuid of this OpenWebinarOngoingInfo.
-        :type: str
+        :type conf_uuid: str
         """
         self._conf_uuid = conf_uuid
 
@@ -187,7 +226,7 @@ class OpenWebinarOngoingInfo:
         预订人部门
 
         :param dept_name: The dept_name of this OpenWebinarOngoingInfo.
-        :type: str
+        :type dept_name: str
         """
         self._dept_name = dept_name
 
@@ -209,7 +248,7 @@ class OpenWebinarOngoingInfo:
         会议ID。长度限制为32个字符。
 
         :param conference_id: The conference_id of this OpenWebinarOngoingInfo.
-        :type: str
+        :type conference_id: str
         """
         self._conference_id = conference_id
 
@@ -231,7 +270,7 @@ class OpenWebinarOngoingInfo:
         企业id
 
         :param corp_id: The corp_id of this OpenWebinarOngoingInfo.
-        :type: str
+        :type corp_id: str
         """
         self._corp_id = corp_id
 
@@ -253,7 +292,7 @@ class OpenWebinarOngoingInfo:
         主题
 
         :param subject: The subject of this OpenWebinarOngoingInfo.
-        :type: str
+        :type subject: str
         """
         self._subject = subject
 
@@ -275,7 +314,7 @@ class OpenWebinarOngoingInfo:
         描述
 
         :param description: The description of this OpenWebinarOngoingInfo.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -297,7 +336,7 @@ class OpenWebinarOngoingInfo:
         会议召开时间
 
         :param start_time: The start_time of this OpenWebinarOngoingInfo.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -319,7 +358,7 @@ class OpenWebinarOngoingInfo:
         时区ID
 
         :param time_zone_id: The time_zone_id of this OpenWebinarOngoingInfo.
-        :type: int
+        :type time_zone_id: int
         """
         self._time_zone_id = time_zone_id
 
@@ -341,7 +380,7 @@ class OpenWebinarOngoingInfo:
         会议预订者ID
 
         :param scheduser_id: The scheduser_id of this OpenWebinarOngoingInfo.
-        :type: str
+        :type scheduser_id: str
         """
         self._scheduser_id = scheduser_id
 
@@ -363,7 +402,7 @@ class OpenWebinarOngoingInfo:
         会议预订者帐号名称。长度最大限制为96个字符。
 
         :param scheduser_name: The scheduser_name of this OpenWebinarOngoingInfo.
-        :type: str
+        :type scheduser_name: str
         """
         self._scheduser_name = scheduser_name
 
@@ -385,7 +424,7 @@ class OpenWebinarOngoingInfo:
         网络研讨会资源名
 
         :param vmr_pkg_name: The vmr_pkg_name of this OpenWebinarOngoingInfo.
-        :type: str
+        :type vmr_pkg_name: str
         """
         self._vmr_pkg_name = vmr_pkg_name
 
@@ -407,7 +446,7 @@ class OpenWebinarOngoingInfo:
         主持人入会地址。
 
         :param chair_join_uri: The chair_join_uri of this OpenWebinarOngoingInfo.
-        :type: str
+        :type chair_join_uri: str
         """
         self._chair_join_uri = chair_join_uri
 
@@ -429,7 +468,7 @@ class OpenWebinarOngoingInfo:
         主持人密码。
 
         :param chair_passwd: The chair_passwd of this OpenWebinarOngoingInfo.
-        :type: str
+        :type chair_passwd: str
         """
         self._chair_passwd = chair_passwd
 
@@ -451,7 +490,7 @@ class OpenWebinarOngoingInfo:
         嘉宾入会地址。
 
         :param guest_join_uri: The guest_join_uri of this OpenWebinarOngoingInfo.
-        :type: str
+        :type guest_join_uri: str
         """
         self._guest_join_uri = guest_join_uri
 
@@ -473,7 +512,7 @@ class OpenWebinarOngoingInfo:
         嘉宾密码。
 
         :param guest_passwd: The guest_passwd of this OpenWebinarOngoingInfo.
-        :type: str
+        :type guest_passwd: str
         """
         self._guest_passwd = guest_passwd
 
@@ -495,7 +534,7 @@ class OpenWebinarOngoingInfo:
         观众入会地址。
 
         :param audience_join_uri: The audience_join_uri of this OpenWebinarOngoingInfo.
-        :type: str
+        :type audience_join_uri: str
         """
         self._audience_join_uri = audience_join_uri
 
@@ -517,7 +556,7 @@ class OpenWebinarOngoingInfo:
         观众密码。
 
         :param audience_passwd: The audience_passwd of this OpenWebinarOngoingInfo.
-        :type: str
+        :type audience_passwd: str
         """
         self._audience_passwd = audience_passwd
 

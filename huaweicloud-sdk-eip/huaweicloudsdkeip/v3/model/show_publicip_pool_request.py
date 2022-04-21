@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowPublicipPoolRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowPublicipPoolRequest:
     }
 
     def __init__(self, publicip_pool_id=None, fields=None):
-        """ShowPublicipPoolRequest - a model defined in huaweicloud sdk"""
+        """ShowPublicipPoolRequest
+
+        The model defined in huaweicloud sdk
+
+        :param publicip_pool_id: 公网IP池ID唯一标识
+        :type publicip_pool_id: str
+        :param fields: 显示，形式为\&quot;fields&#x3D;id&amp;fields&#x3D;name&amp;...\&quot;  支持字段：id/name/size/used/project_id/status/billing_info/created_at/updated_at/type/shared/is_common/description/tags/enterprise_project_id/allow_share_bandwidth_types/public_border_group
+        :type fields: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ShowPublicipPoolRequest:
         公网IP池ID唯一标识
 
         :param publicip_pool_id: The publicip_pool_id of this ShowPublicipPoolRequest.
-        :type: str
+        :type publicip_pool_id: str
         """
         self._publicip_pool_id = publicip_pool_id
 
@@ -84,7 +91,7 @@ class ShowPublicipPoolRequest:
         显示，形式为\"fields=id&fields=name&...\"  支持字段：id/name/size/used/project_id/status/billing_info/created_at/updated_at/type/shared/is_common/description/tags/enterprise_project_id/allow_share_bandwidth_types/public_border_group
 
         :param fields: The fields of this ShowPublicipPoolRequest.
-        :type: str
+        :type fields: str
         """
         self._fields = fields
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NeutronListFirewallPoliciesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class NeutronListFirewallPoliciesRequest:
     }
 
     def __init__(self, limit=None, marker=None, id=None, name=None, description=None, tenant_id=None):
-        """NeutronListFirewallPoliciesRequest - a model defined in huaweicloud sdk"""
+        """NeutronListFirewallPoliciesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 每页返回的个数
+        :type limit: int
+        :param marker: 分页查询起始的资源ID，为空时查询第一页
+        :type marker: str
+        :param id: 使用网络ACL策略ID过滤网络ACL策略
+        :type id: list[str]
+        :param name: 使用name过滤网络ACL策略
+        :type name: list[str]
+        :param description: 使用网络ACL策略描述过滤查询网络ACL策略
+        :type description: list[str]
+        :param tenant_id: 使用tenant_id过滤查询网络ACL策略
+        :type tenant_id: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class NeutronListFirewallPoliciesRequest:
         每页返回的个数
 
         :param limit: The limit of this NeutronListFirewallPoliciesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -105,7 +120,7 @@ class NeutronListFirewallPoliciesRequest:
         分页查询起始的资源ID，为空时查询第一页
 
         :param marker: The marker of this NeutronListFirewallPoliciesRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -127,7 +142,7 @@ class NeutronListFirewallPoliciesRequest:
         使用网络ACL策略ID过滤网络ACL策略
 
         :param id: The id of this NeutronListFirewallPoliciesRequest.
-        :type: list[str]
+        :type id: list[str]
         """
         self._id = id
 
@@ -149,7 +164,7 @@ class NeutronListFirewallPoliciesRequest:
         使用name过滤网络ACL策略
 
         :param name: The name of this NeutronListFirewallPoliciesRequest.
-        :type: list[str]
+        :type name: list[str]
         """
         self._name = name
 
@@ -171,7 +186,7 @@ class NeutronListFirewallPoliciesRequest:
         使用网络ACL策略描述过滤查询网络ACL策略
 
         :param description: The description of this NeutronListFirewallPoliciesRequest.
-        :type: list[str]
+        :type description: list[str]
         """
         self._description = description
 
@@ -193,7 +208,7 @@ class NeutronListFirewallPoliciesRequest:
         使用tenant_id过滤查询网络ACL策略
 
         :param tenant_id: The tenant_id of this NeutronListFirewallPoliciesRequest.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 

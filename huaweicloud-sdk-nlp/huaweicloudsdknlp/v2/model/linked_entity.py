@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LinkedEntity:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class LinkedEntity:
     }
 
     def __init__(self, mention=None, offset=None, entity_title=None):
-        """LinkedEntity - a model defined in huaweicloud sdk"""
+        """LinkedEntity
+
+        The model defined in huaweicloud sdk
+
+        :param mention: 实体指称
+        :type mention: str
+        :param offset: 偏移量
+        :type offset: int
+        :param entity_title: 实体名称
+        :type entity_title: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class LinkedEntity:
         实体指称
 
         :param mention: The mention of this LinkedEntity.
-        :type: str
+        :type mention: str
         """
         self._mention = mention
 
@@ -87,7 +96,7 @@ class LinkedEntity:
         偏移量
 
         :param offset: The offset of this LinkedEntity.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -109,7 +118,7 @@ class LinkedEntity:
         实体名称
 
         :param entity_title: The entity_title of this LinkedEntity.
-        :type: str
+        :type entity_title: str
         """
         self._entity_title = entity_title
 

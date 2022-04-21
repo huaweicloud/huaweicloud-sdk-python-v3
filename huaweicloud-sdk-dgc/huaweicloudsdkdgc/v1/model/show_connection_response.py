@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowConnectionResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowConnectionResponse(SdkResponse):
     }
 
     def __init__(self, name=None, type=None, config=None, description=None):
-        """ShowConnectionResponse - a model defined in huaweicloud sdk"""
+        """ShowConnectionResponse
+
+        The model defined in huaweicloud sdk
+
+        :param name: 
+        :type name: str
+        :param type: 
+        :type type: str
+        :param config: 
+        :type config: object
+        :param description: 
+        :type description: str
+        """
         
         super(ShowConnectionResponse, self).__init__()
 
@@ -71,7 +82,7 @@ class ShowConnectionResponse(SdkResponse):
 
 
         :param name: The name of this ShowConnectionResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -91,7 +102,7 @@ class ShowConnectionResponse(SdkResponse):
 
 
         :param type: The type of this ShowConnectionResponse.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -111,7 +122,7 @@ class ShowConnectionResponse(SdkResponse):
 
 
         :param config: The config of this ShowConnectionResponse.
-        :type: object
+        :type config: object
         """
         self._config = config
 
@@ -131,7 +142,7 @@ class ShowConnectionResponse(SdkResponse):
 
 
         :param description: The description of this ShowConnectionResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 

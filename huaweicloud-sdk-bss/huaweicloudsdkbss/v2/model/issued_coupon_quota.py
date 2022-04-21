@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IssuedCouponQuota:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -60,7 +59,43 @@ class IssuedCouponQuota:
     }
 
     def __init__(self, quota_id=None, quota_type=None, create_time=None, last_update_time=None, quota_value=None, quota_status=None, balance=None, measure_id=None, currency=None, effective_time=None, expire_time=None, limit_infos=None, indirect_partner_id=None, indirect_partner_account_name=None, indirect_partner_name=None, parent_quota_id=None):
-        """IssuedCouponQuota - a model defined in huaweicloud sdk"""
+        """IssuedCouponQuota
+
+        The model defined in huaweicloud sdk
+
+        :param quota_id: 已发放的代金券额度ID。
+        :type quota_id: str
+        :param quota_type: 额度类型： 0：代金券额度
+        :type quota_type: int
+        :param create_time: 创建时间。 UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。
+        :type create_time: str
+        :param last_update_time: 最后一次更新时间。 UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。
+        :type last_update_time: str
+        :param quota_value: 代金券额度的值，精确到小数点后2位。
+        :type quota_value: float
+        :param quota_status: 代金券额度的状态： 0：正常3：失效（包括过期失效和人工设置失效）4：额度调整中（伙伴可以查看该额度，但不能使用该额度发放代金券）5：冻结6：回收
+        :type quota_status: int
+        :param balance: 剩余的代金券额度，精确到小数点后2位。
+        :type balance: float
+        :param measure_id: 代金券额度的单位。 1：元。
+        :type measure_id: int
+        :param currency: 币种。 CNY：人民币
+        :type currency: str
+        :param effective_time: 生效时间。 UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。
+        :type effective_time: str
+        :param expire_time: 失效时间。 UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。
+        :type expire_time: str
+        :param limit_infos: 代金券额度上的限制属性，具体参见表3。
+        :type limit_infos: list[:class:`huaweicloudsdkbss.v2.QuotaLimitInfo`]
+        :param indirect_partner_id: 精英服务商ID。
+        :type indirect_partner_id: str
+        :param indirect_partner_account_name: 精英服务商账号名。
+        :type indirect_partner_account_name: str
+        :param indirect_partner_name: 精英服务商名称。
+        :type indirect_partner_name: str
+        :param parent_quota_id: 父额度ID，即华为云伙伴能力中心用于发放给精英服务商代金券额度的额度ID。
+        :type parent_quota_id: str
+        """
         
         
 
@@ -133,7 +168,7 @@ class IssuedCouponQuota:
         已发放的代金券额度ID。
 
         :param quota_id: The quota_id of this IssuedCouponQuota.
-        :type: str
+        :type quota_id: str
         """
         self._quota_id = quota_id
 
@@ -155,7 +190,7 @@ class IssuedCouponQuota:
         额度类型： 0：代金券额度
 
         :param quota_type: The quota_type of this IssuedCouponQuota.
-        :type: int
+        :type quota_type: int
         """
         self._quota_type = quota_type
 
@@ -177,7 +212,7 @@ class IssuedCouponQuota:
         创建时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :param create_time: The create_time of this IssuedCouponQuota.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -199,7 +234,7 @@ class IssuedCouponQuota:
         最后一次更新时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :param last_update_time: The last_update_time of this IssuedCouponQuota.
-        :type: str
+        :type last_update_time: str
         """
         self._last_update_time = last_update_time
 
@@ -221,7 +256,7 @@ class IssuedCouponQuota:
         代金券额度的值，精确到小数点后2位。
 
         :param quota_value: The quota_value of this IssuedCouponQuota.
-        :type: float
+        :type quota_value: float
         """
         self._quota_value = quota_value
 
@@ -243,7 +278,7 @@ class IssuedCouponQuota:
         代金券额度的状态： 0：正常3：失效（包括过期失效和人工设置失效）4：额度调整中（伙伴可以查看该额度，但不能使用该额度发放代金券）5：冻结6：回收
 
         :param quota_status: The quota_status of this IssuedCouponQuota.
-        :type: int
+        :type quota_status: int
         """
         self._quota_status = quota_status
 
@@ -265,7 +300,7 @@ class IssuedCouponQuota:
         剩余的代金券额度，精确到小数点后2位。
 
         :param balance: The balance of this IssuedCouponQuota.
-        :type: float
+        :type balance: float
         """
         self._balance = balance
 
@@ -287,7 +322,7 @@ class IssuedCouponQuota:
         代金券额度的单位。 1：元。
 
         :param measure_id: The measure_id of this IssuedCouponQuota.
-        :type: int
+        :type measure_id: int
         """
         self._measure_id = measure_id
 
@@ -309,7 +344,7 @@ class IssuedCouponQuota:
         币种。 CNY：人民币
 
         :param currency: The currency of this IssuedCouponQuota.
-        :type: str
+        :type currency: str
         """
         self._currency = currency
 
@@ -331,7 +366,7 @@ class IssuedCouponQuota:
         生效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :param effective_time: The effective_time of this IssuedCouponQuota.
-        :type: str
+        :type effective_time: str
         """
         self._effective_time = effective_time
 
@@ -353,7 +388,7 @@ class IssuedCouponQuota:
         失效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :param expire_time: The expire_time of this IssuedCouponQuota.
-        :type: str
+        :type expire_time: str
         """
         self._expire_time = expire_time
 
@@ -364,7 +399,7 @@ class IssuedCouponQuota:
         代金券额度上的限制属性，具体参见表3。
 
         :return: The limit_infos of this IssuedCouponQuota.
-        :rtype: list[QuotaLimitInfo]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.QuotaLimitInfo`]
         """
         return self._limit_infos
 
@@ -375,7 +410,7 @@ class IssuedCouponQuota:
         代金券额度上的限制属性，具体参见表3。
 
         :param limit_infos: The limit_infos of this IssuedCouponQuota.
-        :type: list[QuotaLimitInfo]
+        :type limit_infos: list[:class:`huaweicloudsdkbss.v2.QuotaLimitInfo`]
         """
         self._limit_infos = limit_infos
 
@@ -397,7 +432,7 @@ class IssuedCouponQuota:
         精英服务商ID。
 
         :param indirect_partner_id: The indirect_partner_id of this IssuedCouponQuota.
-        :type: str
+        :type indirect_partner_id: str
         """
         self._indirect_partner_id = indirect_partner_id
 
@@ -419,7 +454,7 @@ class IssuedCouponQuota:
         精英服务商账号名。
 
         :param indirect_partner_account_name: The indirect_partner_account_name of this IssuedCouponQuota.
-        :type: str
+        :type indirect_partner_account_name: str
         """
         self._indirect_partner_account_name = indirect_partner_account_name
 
@@ -441,7 +476,7 @@ class IssuedCouponQuota:
         精英服务商名称。
 
         :param indirect_partner_name: The indirect_partner_name of this IssuedCouponQuota.
-        :type: str
+        :type indirect_partner_name: str
         """
         self._indirect_partner_name = indirect_partner_name
 
@@ -463,7 +498,7 @@ class IssuedCouponQuota:
         父额度ID，即华为云伙伴能力中心用于发放给精英服务商代金券额度的额度ID。
 
         :param parent_quota_id: The parent_quota_id of this IssuedCouponQuota.
-        :type: str
+        :type parent_quota_id: str
         """
         self._parent_quota_id = parent_quota_id
 

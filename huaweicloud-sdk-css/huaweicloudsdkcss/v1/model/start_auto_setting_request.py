@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StartAutoSettingRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class StartAutoSettingRequest:
     }
 
     def __init__(self, cluster_id=None):
-        """StartAutoSettingRequest - a model defined in huaweicloud sdk"""
+        """StartAutoSettingRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 指定要备份的集群ID。
+        :type cluster_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class StartAutoSettingRequest:
         指定要备份的集群ID。
 
         :param cluster_id: The cluster_id of this StartAutoSettingRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 

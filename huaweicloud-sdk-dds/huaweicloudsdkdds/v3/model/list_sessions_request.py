@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSessionsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ListSessionsRequest:
     }
 
     def __init__(self, node_id=None, offset=None, limit=None, plan_summary=None, type=None, namespace=None, cost_time=None):
-        """ListSessionsRequest - a model defined in huaweicloud sdk"""
+        """ListSessionsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param node_id: 节点ID。允许查询的节点如下： 集群下面的 mongos节点以及 副本集、单节点实例下面的所有节点。
+        :type node_id: str
+        :param offset: 索引位置，偏移量。 从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
+        :type offset: int
+        :param limit: 查询记录数。取值范围[1, 20]，默认10 （表示返回10条数据）。
+        :type limit: int
+        :param plan_summary: 执行计划描述。取空值表示查询所有语句类型，也可指定执行计划，例如： COLLSCAN IXSCAN FETCH SORT LIMIT SKIP COUNT COUNT_SCAN TEXT PROJECTION 等
+        :type plan_summary: str
+        :param type: 操作类型。取空值表示查询所有操作类型。也可指定操作类型，例如： none update insert query command getmore remove killcursors等
+        :type type: str
+        :param namespace: 命名空间。取空值表示查询所有命名空间。也可根据当前业务进行指定。
+        :type namespace: str
+        :param cost_time: 运行时间，单位为 ms。取空值表示查询所有的运行时间。也可根据当前业务需要进行配置，表示查询超出 cost_time 的会话。
+        :type cost_time: int
+        """
         
         
 
@@ -87,7 +104,7 @@ class ListSessionsRequest:
         节点ID。允许查询的节点如下： 集群下面的 mongos节点以及 副本集、单节点实例下面的所有节点。
 
         :param node_id: The node_id of this ListSessionsRequest.
-        :type: str
+        :type node_id: str
         """
         self._node_id = node_id
 
@@ -109,7 +126,7 @@ class ListSessionsRequest:
         索引位置，偏移量。 从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
         :param offset: The offset of this ListSessionsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -131,7 +148,7 @@ class ListSessionsRequest:
         查询记录数。取值范围[1, 20]，默认10 （表示返回10条数据）。
 
         :param limit: The limit of this ListSessionsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -153,7 +170,7 @@ class ListSessionsRequest:
         执行计划描述。取空值表示查询所有语句类型，也可指定执行计划，例如： COLLSCAN IXSCAN FETCH SORT LIMIT SKIP COUNT COUNT_SCAN TEXT PROJECTION 等
 
         :param plan_summary: The plan_summary of this ListSessionsRequest.
-        :type: str
+        :type plan_summary: str
         """
         self._plan_summary = plan_summary
 
@@ -175,7 +192,7 @@ class ListSessionsRequest:
         操作类型。取空值表示查询所有操作类型。也可指定操作类型，例如： none update insert query command getmore remove killcursors等
 
         :param type: The type of this ListSessionsRequest.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -197,7 +214,7 @@ class ListSessionsRequest:
         命名空间。取空值表示查询所有命名空间。也可根据当前业务进行指定。
 
         :param namespace: The namespace of this ListSessionsRequest.
-        :type: str
+        :type namespace: str
         """
         self._namespace = namespace
 
@@ -219,7 +236,7 @@ class ListSessionsRequest:
         运行时间，单位为 ms。取空值表示查询所有的运行时间。也可根据当前业务需要进行配置，表示查询超出 cost_time 的会话。
 
         :param cost_time: The cost_time of this ListSessionsRequest.
-        :type: int
+        :type cost_time: int
         """
         self._cost_time = cost_time
 

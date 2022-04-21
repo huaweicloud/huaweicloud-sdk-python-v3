@@ -52,21 +52,17 @@ class CssAsyncClient(Client):
         """创建集群V2
 
         该接口用于创建集群V2。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateClusterRequest request
-        :return: CreateClusterResponse
+        :param request: Request instance for CreateCluster
+        :type request: :class:`huaweicloudsdkcss.v2.CreateClusterRequest`
+        :rtype: :class:`huaweicloudsdkcss.v2.CreateClusterResponse`
         """
         return self.create_cluster_with_http_info(request)
 
     def create_cluster_with_http_info(self, request):
-        """创建集群V2
-
-        该接口用于创建集群V2。
-
-        :param CreateClusterRequest request
-        :return: CreateClusterResponse
-        """
-
         all_params = ['create_cluster_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -110,26 +106,21 @@ class CssAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def restart_cluster_async(self, request):
         """重启集群V2
 
         该接口用于重启集群。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param RestartClusterRequest request
-        :return: RestartClusterResponse
+        :param request: Request instance for RestartCluster
+        :type request: :class:`huaweicloudsdkcss.v2.RestartClusterRequest`
+        :rtype: :class:`huaweicloudsdkcss.v2.RestartClusterResponse`
         """
         return self.restart_cluster_with_http_info(request)
 
     def restart_cluster_with_http_info(self, request):
-        """重启集群V2
-
-        该接口用于重启集群。
-
-        :param RestartClusterRequest request
-        :return: RestartClusterResponse
-        """
-
         all_params = ['cluster_id', 'rolling_restart_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -175,26 +166,21 @@ class CssAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def rolling_restart_async(self, request):
         """滚动重启
 
         该接口用于滚动重启。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param RollingRestartRequest request
-        :return: RollingRestartResponse
+        :param request: Request instance for RollingRestart
+        :type request: :class:`huaweicloudsdkcss.v2.RollingRestartRequest`
+        :rtype: :class:`huaweicloudsdkcss.v2.RollingRestartResponse`
         """
         return self.rolling_restart_with_http_info(request)
 
     def rolling_restart_with_http_info(self, request):
-        """滚动重启
-
-        该接口用于滚动重启。
-
-        :param RollingRestartRequest request
-        :return: RollingRestartResponse
-        """
-
         all_params = ['cluster_id', 'rolling_restart_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -240,26 +226,21 @@ class CssAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def start_auto_create_snapshots_async(self, request):
         """开启自动创建快照功能
 
         该接口用于打开自动创建快照功能。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param StartAutoCreateSnapshotsRequest request
-        :return: StartAutoCreateSnapshotsResponse
+        :param request: Request instance for StartAutoCreateSnapshots
+        :type request: :class:`huaweicloudsdkcss.v2.StartAutoCreateSnapshotsRequest`
+        :rtype: :class:`huaweicloudsdkcss.v2.StartAutoCreateSnapshotsResponse`
         """
         return self.start_auto_create_snapshots_with_http_info(request)
 
     def start_auto_create_snapshots_with_http_info(self, request):
-        """开启自动创建快照功能
-
-        该接口用于打开自动创建快照功能。
-
-        :param StartAutoCreateSnapshotsRequest request
-        :return: StartAutoCreateSnapshotsResponse
-        """
-
         all_params = ['cluster_id', 'start_auto_create_snapshots_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -305,26 +286,21 @@ class CssAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def stop_auto_create_snapshots_async(self, request):
         """关闭自动创建快照功能
 
         该接口用于关闭自动创建快照功能。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param StopAutoCreateSnapshotsRequest request
-        :return: StopAutoCreateSnapshotsResponse
+        :param request: Request instance for StopAutoCreateSnapshots
+        :type request: :class:`huaweicloudsdkcss.v2.StopAutoCreateSnapshotsRequest`
+        :rtype: :class:`huaweicloudsdkcss.v2.StopAutoCreateSnapshotsResponse`
         """
         return self.stop_auto_create_snapshots_with_http_info(request)
 
     def stop_auto_create_snapshots_with_http_info(self, request):
-        """关闭自动创建快照功能
-
-        该接口用于关闭自动创建快照功能。
-
-        :param StopAutoCreateSnapshotsRequest request
-        :return: StopAutoCreateSnapshotsResponse
-        """
-
         all_params = ['cluster_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -367,7 +343,6 @@ class CssAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

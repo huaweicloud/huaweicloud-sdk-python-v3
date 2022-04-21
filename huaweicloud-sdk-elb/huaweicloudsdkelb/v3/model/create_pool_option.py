@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreatePoolOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class CreatePoolOption:
     }
 
     def __init__(self, admin_state_up=None, description=None, lb_algorithm=None, listener_id=None, loadbalancer_id=None, name=None, project_id=None, protocol=None, session_persistence=None, slow_start=None, member_deletion_protection_enable=None):
-        """CreatePoolOption - a model defined in huaweicloud sdk"""
+        """CreatePoolOption
+
+        The model defined in huaweicloud sdk
+
+        :param admin_state_up: 后端云服务器组的管理状态，只支持更新为true。  不支持该字段，请勿使用。
+        :type admin_state_up: bool
+        :param description: 后端云服务器组的描述信息。
+        :type description: str
+        :param lb_algorithm: 后端云服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。  使用说明： - 当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。 - 只有pool的protocol为QUIC时，才支持QUIC_CID算法。
+        :type lb_algorithm: str
+        :param listener_id: 后端云服务器组关联的监听器的ID。  使用说明： - listener_id和loadbalancer_id至少指定一个。
+        :type listener_id: str
+        :param loadbalancer_id: 后端云服务器组关联的负载均衡器ID。  使用说明： - listener_id和loadbalancer_id中至少指定一个。
+        :type loadbalancer_id: str
+        :param name: 后端云服务器组的名称。
+        :type name: str
+        :param project_id: 后端云服务器组所属的项目ID。
+        :type project_id: str
+        :param protocol: 后端云服务器组的后端协议。  取值：TCP、UDP、HTTP、HTTPS和QUIC。  使用说明： - listener的protocol为UDP时，pool的protocol必须为UDP或QUIC； - listener的protocol为TCP时pool的protocol必须为TCP； - listener的protocol为HTTP时，pool的protocol必须为HTTP。 - listener的protocol为HTTPS时，pool的protocol必须为HTTP或HTTPS。 - listener的protocol为TERMINATED_HTTPS时，pool的protocol必须为HTTP。
+        :type protocol: str
+        :param session_persistence: 
+        :type session_persistence: :class:`huaweicloudsdkelb.v3.CreatePoolSessionPersistenceOption`
+        :param slow_start: 
+        :type slow_start: :class:`huaweicloudsdkelb.v3.CreatePoolSlowStartOption`
+        :param member_deletion_protection_enable: 是否开启删除保护。取值：false不开启，true开启，默认false。 &gt; 退场时需要先关闭所有资源的删除保护开关。
+        :type member_deletion_protection_enable: bool
+        """
         
         
 
@@ -106,7 +131,7 @@ class CreatePoolOption:
         后端云服务器组的管理状态，只支持更新为true。  不支持该字段，请勿使用。
 
         :param admin_state_up: The admin_state_up of this CreatePoolOption.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 
@@ -128,7 +153,7 @@ class CreatePoolOption:
         后端云服务器组的描述信息。
 
         :param description: The description of this CreatePoolOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -150,7 +175,7 @@ class CreatePoolOption:
         后端云服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。  使用说明： - 当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。 - 只有pool的protocol为QUIC时，才支持QUIC_CID算法。
 
         :param lb_algorithm: The lb_algorithm of this CreatePoolOption.
-        :type: str
+        :type lb_algorithm: str
         """
         self._lb_algorithm = lb_algorithm
 
@@ -172,7 +197,7 @@ class CreatePoolOption:
         后端云服务器组关联的监听器的ID。  使用说明： - listener_id和loadbalancer_id至少指定一个。
 
         :param listener_id: The listener_id of this CreatePoolOption.
-        :type: str
+        :type listener_id: str
         """
         self._listener_id = listener_id
 
@@ -194,7 +219,7 @@ class CreatePoolOption:
         后端云服务器组关联的负载均衡器ID。  使用说明： - listener_id和loadbalancer_id中至少指定一个。
 
         :param loadbalancer_id: The loadbalancer_id of this CreatePoolOption.
-        :type: str
+        :type loadbalancer_id: str
         """
         self._loadbalancer_id = loadbalancer_id
 
@@ -216,7 +241,7 @@ class CreatePoolOption:
         后端云服务器组的名称。
 
         :param name: The name of this CreatePoolOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -238,7 +263,7 @@ class CreatePoolOption:
         后端云服务器组所属的项目ID。
 
         :param project_id: The project_id of this CreatePoolOption.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -260,7 +285,7 @@ class CreatePoolOption:
         后端云服务器组的后端协议。  取值：TCP、UDP、HTTP、HTTPS和QUIC。  使用说明： - listener的protocol为UDP时，pool的protocol必须为UDP或QUIC； - listener的protocol为TCP时pool的protocol必须为TCP； - listener的protocol为HTTP时，pool的protocol必须为HTTP。 - listener的protocol为HTTPS时，pool的protocol必须为HTTP或HTTPS。 - listener的protocol为TERMINATED_HTTPS时，pool的protocol必须为HTTP。
 
         :param protocol: The protocol of this CreatePoolOption.
-        :type: str
+        :type protocol: str
         """
         self._protocol = protocol
 
@@ -270,7 +295,7 @@ class CreatePoolOption:
 
 
         :return: The session_persistence of this CreatePoolOption.
-        :rtype: CreatePoolSessionPersistenceOption
+        :rtype: :class:`huaweicloudsdkelb.v3.CreatePoolSessionPersistenceOption`
         """
         return self._session_persistence
 
@@ -280,7 +305,7 @@ class CreatePoolOption:
 
 
         :param session_persistence: The session_persistence of this CreatePoolOption.
-        :type: CreatePoolSessionPersistenceOption
+        :type session_persistence: :class:`huaweicloudsdkelb.v3.CreatePoolSessionPersistenceOption`
         """
         self._session_persistence = session_persistence
 
@@ -290,7 +315,7 @@ class CreatePoolOption:
 
 
         :return: The slow_start of this CreatePoolOption.
-        :rtype: CreatePoolSlowStartOption
+        :rtype: :class:`huaweicloudsdkelb.v3.CreatePoolSlowStartOption`
         """
         return self._slow_start
 
@@ -300,7 +325,7 @@ class CreatePoolOption:
 
 
         :param slow_start: The slow_start of this CreatePoolOption.
-        :type: CreatePoolSlowStartOption
+        :type slow_start: :class:`huaweicloudsdkelb.v3.CreatePoolSlowStartOption`
         """
         self._slow_start = slow_start
 
@@ -322,7 +347,7 @@ class CreatePoolOption:
         是否开启删除保护。取值：false不开启，true开启，默认false。 > 退场时需要先关闭所有资源的删除保护开关。
 
         :param member_deletion_protection_enable: The member_deletion_protection_enable of this CreatePoolOption.
-        :type: bool
+        :type member_deletion_protection_enable: bool
         """
         self._member_deletion_protection_enable = member_deletion_protection_enable
 

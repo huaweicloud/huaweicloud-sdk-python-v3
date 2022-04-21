@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateGaussMySqlBackupResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateGaussMySqlBackupResponse(SdkResponse):
     }
 
     def __init__(self, backup=None, job_id=None):
-        """CreateGaussMySqlBackupResponse - a model defined in huaweicloud sdk"""
+        """CreateGaussMySqlBackupResponse
+
+        The model defined in huaweicloud sdk
+
+        :param backup: 
+        :type backup: :class:`huaweicloudsdkgaussdb.v3.Backup`
+        :param job_id: 任务ID。
+        :type job_id: str
+        """
         
         super(CreateGaussMySqlBackupResponse, self).__init__()
 
@@ -51,7 +58,7 @@ class CreateGaussMySqlBackupResponse(SdkResponse):
 
 
         :return: The backup of this CreateGaussMySqlBackupResponse.
-        :rtype: Backup
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.Backup`
         """
         return self._backup
 
@@ -61,7 +68,7 @@ class CreateGaussMySqlBackupResponse(SdkResponse):
 
 
         :param backup: The backup of this CreateGaussMySqlBackupResponse.
-        :type: Backup
+        :type backup: :class:`huaweicloudsdkgaussdb.v3.Backup`
         """
         self._backup = backup
 
@@ -83,7 +90,7 @@ class CreateGaussMySqlBackupResponse(SdkResponse):
         任务ID。
 
         :param job_id: The job_id of this CreateGaussMySqlBackupResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 

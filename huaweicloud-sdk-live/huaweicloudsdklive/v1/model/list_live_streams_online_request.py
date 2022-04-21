@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListLiveStreamsOnlineRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListLiveStreamsOnlineRequest:
     }
 
     def __init__(self, publish_domain=None, app=None, offset=None, limit=None, stream=None):
-        """ListLiveStreamsOnlineRequest - a model defined in huaweicloud sdk"""
+        """ListLiveStreamsOnlineRequest
+
+        The model defined in huaweicloud sdk
+
+        :param publish_domain: 推流域名
+        :type publish_domain: str
+        :param app: 应用名
+        :type app: str
+        :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0
+        :type offset: int
+        :param limit: 每页记录数，取值范围[1,100]，默认值10
+        :type limit: int
+        :param stream: 流名，用于单流查询，携带stream参数时app不能缺省
+        :type stream: str
+        """
         
         
 
@@ -77,7 +90,7 @@ class ListLiveStreamsOnlineRequest:
         推流域名
 
         :param publish_domain: The publish_domain of this ListLiveStreamsOnlineRequest.
-        :type: str
+        :type publish_domain: str
         """
         self._publish_domain = publish_domain
 
@@ -99,7 +112,7 @@ class ListLiveStreamsOnlineRequest:
         应用名
 
         :param app: The app of this ListLiveStreamsOnlineRequest.
-        :type: str
+        :type app: str
         """
         self._app = app
 
@@ -121,7 +134,7 @@ class ListLiveStreamsOnlineRequest:
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
         :param offset: The offset of this ListLiveStreamsOnlineRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -143,7 +156,7 @@ class ListLiveStreamsOnlineRequest:
         每页记录数，取值范围[1,100]，默认值10
 
         :param limit: The limit of this ListLiveStreamsOnlineRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -165,7 +178,7 @@ class ListLiveStreamsOnlineRequest:
         流名，用于单流查询，携带stream参数时app不能缺省
 
         :param stream: The stream of this ListLiveStreamsOnlineRequest.
-        :type: str
+        :type stream: str
         """
         self._stream = stream
 

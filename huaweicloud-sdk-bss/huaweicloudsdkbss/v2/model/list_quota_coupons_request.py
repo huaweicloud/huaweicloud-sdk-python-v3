@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListQuotaCouponsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListQuotaCouponsRequest:
     }
 
     def __init__(self, body=None):
-        """ListQuotaCouponsRequest - a model defined in huaweicloud sdk"""
+        """ListQuotaCouponsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the ListQuotaCouponsRequest
+        :type body: :class:`huaweicloudsdkbss.v2.QueryCouponQuotasReqExt`
+        """
         
         
 
@@ -46,7 +51,7 @@ class ListQuotaCouponsRequest:
 
 
         :return: The body of this ListQuotaCouponsRequest.
-        :rtype: QueryCouponQuotasReqExt
+        :rtype: :class:`huaweicloudsdkbss.v2.QueryCouponQuotasReqExt`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class ListQuotaCouponsRequest:
 
 
         :param body: The body of this ListQuotaCouponsRequest.
-        :type: QueryCouponQuotasReqExt
+        :type body: :class:`huaweicloudsdkbss.v2.QueryCouponQuotasReqExt`
         """
         self._body = body
 

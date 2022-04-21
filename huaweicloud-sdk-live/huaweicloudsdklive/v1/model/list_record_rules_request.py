@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRecordRulesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListRecordRulesRequest:
     }
 
     def __init__(self, publish_domain=None, app=None, stream=None, record_type=None, offset=None, limit=None):
-        """ListRecordRulesRequest - a model defined in huaweicloud sdk"""
+        """ListRecordRulesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param publish_domain: 直播推流域名
+        :type publish_domain: str
+        :param app: 流应用名称
+        :type app: str
+        :param stream: 流名称
+        :type stream: str
+        :param record_type: 录制类型，如果不填写则查询所有录制类型，包括：CONTINUOUS_RECORD，COMMAND_RECORD，PLAN_RECORD，ON_DEMAND_RECORD。默认CONTINUOUS_RECORD。 - CONTINUOUS_RECORD：持续录制，在该规则类型配置后，只要有流到推送到录制系统，就触发录制。 - COMMAND_RECORD：命令录制，在该规则类型配置后，在流推送到录制系统后，租户需要通过命令控制该流的录制开始和结束。 - PLAN_RECORD：计划录制，在该规则类型配置后，推的流如果在计划录制的时间区间则触发录制。 - ON_DEMAND_RECORD：按需录制，在该规则类型配置后，录制系统收到推流后，需要调用租户提供的接口查询录制规则，并根据规则录制。 
+        :type record_type: str
+        :param offset: 偏移量，表示从此偏移量开始查询，offset大于等于0
+        :type offset: int
+        :param limit: 每页记录数，取值范围[1,100]，默认值10
+        :type limit: int
+        """
         
         
 
@@ -83,7 +98,7 @@ class ListRecordRulesRequest:
         直播推流域名
 
         :param publish_domain: The publish_domain of this ListRecordRulesRequest.
-        :type: str
+        :type publish_domain: str
         """
         self._publish_domain = publish_domain
 
@@ -105,7 +120,7 @@ class ListRecordRulesRequest:
         流应用名称
 
         :param app: The app of this ListRecordRulesRequest.
-        :type: str
+        :type app: str
         """
         self._app = app
 
@@ -127,7 +142,7 @@ class ListRecordRulesRequest:
         流名称
 
         :param stream: The stream of this ListRecordRulesRequest.
-        :type: str
+        :type stream: str
         """
         self._stream = stream
 
@@ -149,7 +164,7 @@ class ListRecordRulesRequest:
         录制类型，如果不填写则查询所有录制类型，包括：CONTINUOUS_RECORD，COMMAND_RECORD，PLAN_RECORD，ON_DEMAND_RECORD。默认CONTINUOUS_RECORD。 - CONTINUOUS_RECORD：持续录制，在该规则类型配置后，只要有流到推送到录制系统，就触发录制。 - COMMAND_RECORD：命令录制，在该规则类型配置后，在流推送到录制系统后，租户需要通过命令控制该流的录制开始和结束。 - PLAN_RECORD：计划录制，在该规则类型配置后，推的流如果在计划录制的时间区间则触发录制。 - ON_DEMAND_RECORD：按需录制，在该规则类型配置后，录制系统收到推流后，需要调用租户提供的接口查询录制规则，并根据规则录制。 
 
         :param record_type: The record_type of this ListRecordRulesRequest.
-        :type: str
+        :type record_type: str
         """
         self._record_type = record_type
 
@@ -171,7 +186,7 @@ class ListRecordRulesRequest:
         偏移量，表示从此偏移量开始查询，offset大于等于0
 
         :param offset: The offset of this ListRecordRulesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -193,7 +208,7 @@ class ListRecordRulesRequest:
         每页记录数，取值范围[1,100]，默认值10
 
         :param limit: The limit of this ListRecordRulesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

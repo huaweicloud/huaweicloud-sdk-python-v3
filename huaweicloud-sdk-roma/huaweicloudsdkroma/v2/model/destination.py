@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Destination:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class Destination:
     }
 
     def __init__(self, destination_id=None, destination_type=None, app_id=None, destination_name=None, topic=None, server=None, token=None, tag=None, mqs_sasl_ssl=None, user_name=None, password=None):
-        """Destination - a model defined in huaweicloud sdk"""
+        """Destination
+
+        The model defined in huaweicloud sdk
+
+        :param destination_id: 目标数据源ID
+        :type destination_id: int
+        :param destination_type: 操作类型，枚举值:0-目标端为本ROMA实例内MQS； 7-目标端为设备
+        :type destination_type: int
+        :param app_id: 应用ID，目标端为0时需明确对方的APP_ID
+        :type app_id: str
+        :param destination_name: 目标数据源名称
+        :type destination_name: str
+        :param topic: 目标数据源主题
+        :type topic: str
+        :param server: 目标端数据源服务
+        :type server: str
+        :param token: 目标端数据源token
+        :type token: str
+        :param tag: 目标数据源标签
+        :type tag: str
+        :param mqs_sasl_ssl: 目标端数据源MQS的SASL字段是否需要支持SSL加密
+        :type mqs_sasl_ssl: bool
+        :param user_name: 目标数据源用户名
+        :type user_name: str
+        :param password: 目标数据源密码
+        :type password: str
+        """
         
         
 
@@ -108,7 +133,7 @@ class Destination:
         目标数据源ID
 
         :param destination_id: The destination_id of this Destination.
-        :type: int
+        :type destination_id: int
         """
         self._destination_id = destination_id
 
@@ -130,7 +155,7 @@ class Destination:
         操作类型，枚举值:0-目标端为本ROMA实例内MQS； 7-目标端为设备
 
         :param destination_type: The destination_type of this Destination.
-        :type: int
+        :type destination_type: int
         """
         self._destination_type = destination_type
 
@@ -152,7 +177,7 @@ class Destination:
         应用ID，目标端为0时需明确对方的APP_ID
 
         :param app_id: The app_id of this Destination.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -174,7 +199,7 @@ class Destination:
         目标数据源名称
 
         :param destination_name: The destination_name of this Destination.
-        :type: str
+        :type destination_name: str
         """
         self._destination_name = destination_name
 
@@ -196,7 +221,7 @@ class Destination:
         目标数据源主题
 
         :param topic: The topic of this Destination.
-        :type: str
+        :type topic: str
         """
         self._topic = topic
 
@@ -218,7 +243,7 @@ class Destination:
         目标端数据源服务
 
         :param server: The server of this Destination.
-        :type: str
+        :type server: str
         """
         self._server = server
 
@@ -240,7 +265,7 @@ class Destination:
         目标端数据源token
 
         :param token: The token of this Destination.
-        :type: str
+        :type token: str
         """
         self._token = token
 
@@ -262,7 +287,7 @@ class Destination:
         目标数据源标签
 
         :param tag: The tag of this Destination.
-        :type: str
+        :type tag: str
         """
         self._tag = tag
 
@@ -284,7 +309,7 @@ class Destination:
         目标端数据源MQS的SASL字段是否需要支持SSL加密
 
         :param mqs_sasl_ssl: The mqs_sasl_ssl of this Destination.
-        :type: bool
+        :type mqs_sasl_ssl: bool
         """
         self._mqs_sasl_ssl = mqs_sasl_ssl
 
@@ -306,7 +331,7 @@ class Destination:
         目标数据源用户名
 
         :param user_name: The user_name of this Destination.
-        :type: str
+        :type user_name: str
         """
         self._user_name = user_name
 
@@ -328,7 +353,7 @@ class Destination:
         目标数据源密码
 
         :param password: The password of this Destination.
-        :type: str
+        :type password: str
         """
         self._password = password
 

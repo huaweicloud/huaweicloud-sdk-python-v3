@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListProvidersResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListProvidersResponse(SdkResponse):
     }
 
     def __init__(self, resource_providers=None, total_count=None):
-        """ListProvidersResponse - a model defined in huaweicloud sdk"""
+        """ListProvidersResponse
+
+        The model defined in huaweicloud sdk
+
+        :param resource_providers: 云服务详情列表
+        :type resource_providers: list[:class:`huaweicloudsdkrms.v1.ResourceProviderResponse`]
+        :param total_count: 当前支持的云服务总数
+        :type total_count: int
+        """
         
         super(ListProvidersResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListProvidersResponse(SdkResponse):
         云服务详情列表
 
         :return: The resource_providers of this ListProvidersResponse.
-        :rtype: list[ResourceProviderResponse]
+        :rtype: list[:class:`huaweicloudsdkrms.v1.ResourceProviderResponse`]
         """
         return self._resource_providers
 
@@ -63,7 +70,7 @@ class ListProvidersResponse(SdkResponse):
         云服务详情列表
 
         :param resource_providers: The resource_providers of this ListProvidersResponse.
-        :type: list[ResourceProviderResponse]
+        :type resource_providers: list[:class:`huaweicloudsdkrms.v1.ResourceProviderResponse`]
         """
         self._resource_providers = resource_providers
 
@@ -85,7 +92,7 @@ class ListProvidersResponse(SdkResponse):
         当前支持的云服务总数
 
         :param total_count: The total_count of this ListProvidersResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 

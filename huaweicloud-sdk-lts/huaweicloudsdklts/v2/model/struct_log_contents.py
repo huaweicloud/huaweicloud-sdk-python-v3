@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StructLogContents:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class StructLogContents:
     }
 
     def __init__(self, log_content=None, line_num=None):
-        """StructLogContents - a model defined in huaweicloud sdk"""
+        """StructLogContents
+
+        The model defined in huaweicloud sdk
+
+        :param log_content: 日志原数据。
+        :type log_content: str
+        :param line_num: 日志单行序列号。
+        :type line_num: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class StructLogContents:
         日志原数据。
 
         :param log_content: The log_content of this StructLogContents.
-        :type: str
+        :type log_content: str
         """
         self._log_content = log_content
 
@@ -85,7 +92,7 @@ class StructLogContents:
         日志单行序列号。
 
         :param line_num: The line_num of this StructLogContents.
-        :type: str
+        :type line_num: str
         """
         self._line_num = line_num
 

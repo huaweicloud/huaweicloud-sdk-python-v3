@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AppRules:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class AppRules:
     }
 
     def __init__(self, create_time=None, enable=None, event_name=None, hostid=None, id=None, name=None, projectid=None, spec=None):
-        """AppRules - a model defined in huaweicloud sdk"""
+        """AppRules
+
+        The model defined in huaweicloud sdk
+
+        :param create_time: 规则创建时间(创建时不传,修改时传查询返回的createTime)。
+        :type create_time: str
+        :param enable: true、false 规则是否启用。
+        :type enable: bool
+        :param event_name: aom_inventory_rules_event 规则事件名称,对于服务发现固定 为\&quot;aom_inventory_rules_event\&quot;。
+        :type event_name: str
+        :param hostid: 主机ID(暂不使用,传空即可)。
+        :type hostid: list[str]
+        :param id: 创建时填空，修改时填规则ID。
+        :type id: str
+        :param name: 规则名称。 字符长度小于64位,以小写字母(a-z)开头,只能包含0-9/a-z/-,不能以-结尾。
+        :type name: str
+        :param projectid: 租户从IAM申请到的projectid,一般为32位字符串。
+        :type projectid: str
+        :param spec: 
+        :type spec: :class:`huaweicloudsdkaom.v2.AppRulesSpec`
+        """
         
         
 
@@ -87,7 +106,7 @@ class AppRules:
         规则创建时间(创建时不传,修改时传查询返回的createTime)。
 
         :param create_time: The create_time of this AppRules.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -109,7 +128,7 @@ class AppRules:
         true、false 规则是否启用。
 
         :param enable: The enable of this AppRules.
-        :type: bool
+        :type enable: bool
         """
         self._enable = enable
 
@@ -131,7 +150,7 @@ class AppRules:
         aom_inventory_rules_event 规则事件名称,对于服务发现固定 为\"aom_inventory_rules_event\"。
 
         :param event_name: The event_name of this AppRules.
-        :type: str
+        :type event_name: str
         """
         self._event_name = event_name
 
@@ -153,7 +172,7 @@ class AppRules:
         主机ID(暂不使用,传空即可)。
 
         :param hostid: The hostid of this AppRules.
-        :type: list[str]
+        :type hostid: list[str]
         """
         self._hostid = hostid
 
@@ -175,7 +194,7 @@ class AppRules:
         创建时填空，修改时填规则ID。
 
         :param id: The id of this AppRules.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -197,7 +216,7 @@ class AppRules:
         规则名称。 字符长度小于64位,以小写字母(a-z)开头,只能包含0-9/a-z/-,不能以-结尾。
 
         :param name: The name of this AppRules.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -219,7 +238,7 @@ class AppRules:
         租户从IAM申请到的projectid,一般为32位字符串。
 
         :param projectid: The projectid of this AppRules.
-        :type: str
+        :type projectid: str
         """
         self._projectid = projectid
 
@@ -229,7 +248,7 @@ class AppRules:
 
 
         :return: The spec of this AppRules.
-        :rtype: AppRulesSpec
+        :rtype: :class:`huaweicloudsdkaom.v2.AppRulesSpec`
         """
         return self._spec
 
@@ -239,7 +258,7 @@ class AppRules:
 
 
         :param spec: The spec of this AppRules.
-        :type: AppRulesSpec
+        :type spec: :class:`huaweicloudsdkaom.v2.AppRulesSpec`
         """
         self._spec = spec
 

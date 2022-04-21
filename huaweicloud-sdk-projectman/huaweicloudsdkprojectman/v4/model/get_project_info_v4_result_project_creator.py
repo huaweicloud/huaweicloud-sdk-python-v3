@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GetProjectInfoV4ResultProjectCreator:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class GetProjectInfoV4ResultProjectCreator:
     }
 
     def __init__(self, user_num_id=None, user_id=None, user_name=None, domain_id=None, domain_name=None, nick_name=None):
-        """GetProjectInfoV4ResultProjectCreator - a model defined in huaweicloud sdk"""
+        """GetProjectInfoV4ResultProjectCreator
+
+        The model defined in huaweicloud sdk
+
+        :param user_num_id: 创建人num_id
+        :type user_num_id: int
+        :param user_id: 创建人uuid
+        :type user_id: str
+        :param user_name: 创建人姓名
+        :type user_name: str
+        :param domain_id: 创建人租户id
+        :type domain_id: str
+        :param domain_name: 创建人租户名称
+        :type domain_name: str
+        :param nick_name: 创建人昵称
+        :type nick_name: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class GetProjectInfoV4ResultProjectCreator:
         创建人num_id
 
         :param user_num_id: The user_num_id of this GetProjectInfoV4ResultProjectCreator.
-        :type: int
+        :type user_num_id: int
         """
         self._user_num_id = user_num_id
 
@@ -105,7 +120,7 @@ class GetProjectInfoV4ResultProjectCreator:
         创建人uuid
 
         :param user_id: The user_id of this GetProjectInfoV4ResultProjectCreator.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -127,7 +142,7 @@ class GetProjectInfoV4ResultProjectCreator:
         创建人姓名
 
         :param user_name: The user_name of this GetProjectInfoV4ResultProjectCreator.
-        :type: str
+        :type user_name: str
         """
         self._user_name = user_name
 
@@ -149,7 +164,7 @@ class GetProjectInfoV4ResultProjectCreator:
         创建人租户id
 
         :param domain_id: The domain_id of this GetProjectInfoV4ResultProjectCreator.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -171,7 +186,7 @@ class GetProjectInfoV4ResultProjectCreator:
         创建人租户名称
 
         :param domain_name: The domain_name of this GetProjectInfoV4ResultProjectCreator.
-        :type: str
+        :type domain_name: str
         """
         self._domain_name = domain_name
 
@@ -193,7 +208,7 @@ class GetProjectInfoV4ResultProjectCreator:
         创建人昵称
 
         :param nick_name: The nick_name of this GetProjectInfoV4ResultProjectCreator.
-        :type: str
+        :type nick_name: str
         """
         self._nick_name = nick_name
 

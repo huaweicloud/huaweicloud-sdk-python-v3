@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MasterSpec:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class MasterSpec:
     }
 
     def __init__(self, availability_zone=None):
-        """MasterSpec - a model defined in huaweicloud sdk"""
+        """MasterSpec
+
+        The model defined in huaweicloud sdk
+
+        :param availability_zone: 可用区
+        :type availability_zone: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class MasterSpec:
         可用区
 
         :param availability_zone: The availability_zone of this MasterSpec.
-        :type: str
+        :type availability_zone: str
         """
         self._availability_zone = availability_zone
 

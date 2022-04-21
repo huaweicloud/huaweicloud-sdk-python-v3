@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteVolumeRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteVolumeRequest:
     }
 
     def __init__(self, volume_id=None):
-        """DeleteVolumeRequest - a model defined in huaweicloud sdk"""
+        """DeleteVolumeRequest
+
+        The model defined in huaweicloud sdk
+
+        :param volume_id: 云硬盘ID。
+        :type volume_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteVolumeRequest:
         云硬盘ID。
 
         :param volume_id: The volume_id of this DeleteVolumeRequest.
-        :type: str
+        :type volume_id: str
         """
         self._volume_id = volume_id
 

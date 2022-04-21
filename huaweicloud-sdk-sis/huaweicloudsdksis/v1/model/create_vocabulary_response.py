@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateVocabularyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateVocabularyResponse(SdkResponse):
     }
 
     def __init__(self, vocabulary_id=None):
-        """CreateVocabularyResponse - a model defined in huaweicloud sdk"""
+        """CreateVocabularyResponse
+
+        The model defined in huaweicloud sdk
+
+        :param vocabulary_id: 调用成功返回热词表ID，调用失败时无此字段。
+        :type vocabulary_id: str
+        """
         
         super(CreateVocabularyResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class CreateVocabularyResponse(SdkResponse):
         调用成功返回热词表ID，调用失败时无此字段。
 
         :param vocabulary_id: The vocabulary_id of this CreateVocabularyResponse.
-        :type: str
+        :type vocabulary_id: str
         """
         self._vocabulary_id = vocabulary_id
 

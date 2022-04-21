@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteDeviceGroupRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteDeviceGroupRequest:
     }
 
     def __init__(self, instance_id=None, group_id=None):
-        """DeleteDeviceGroupRequest - a model defined in huaweicloud sdk"""
+        """DeleteDeviceGroupRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param group_id: 设备分组ID
+        :type group_id: int
+        """
         
         
 
@@ -61,7 +68,7 @@ class DeleteDeviceGroupRequest:
         实例ID
 
         :param instance_id: The instance_id of this DeleteDeviceGroupRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -83,7 +90,7 @@ class DeleteDeviceGroupRequest:
         设备分组ID
 
         :param group_id: The group_id of this DeleteDeviceGroupRequest.
-        :type: int
+        :type group_id: int
         """
         self._group_id = group_id
 

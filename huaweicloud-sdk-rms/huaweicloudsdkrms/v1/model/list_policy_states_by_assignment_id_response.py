@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPolicyStatesByAssignmentIdResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListPolicyStatesByAssignmentIdResponse(SdkResponse):
     }
 
     def __init__(self, value=None, page_info=None):
-        """ListPolicyStatesByAssignmentIdResponse - a model defined in huaweicloud sdk"""
+        """ListPolicyStatesByAssignmentIdResponse
+
+        The model defined in huaweicloud sdk
+
+        :param value: 合规结果查询返回值
+        :type value: list[:class:`huaweicloudsdkrms.v1.PolicyState`]
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkrms.v1.PageInfo`
+        """
         
         super(ListPolicyStatesByAssignmentIdResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListPolicyStatesByAssignmentIdResponse(SdkResponse):
         合规结果查询返回值
 
         :return: The value of this ListPolicyStatesByAssignmentIdResponse.
-        :rtype: list[PolicyState]
+        :rtype: list[:class:`huaweicloudsdkrms.v1.PolicyState`]
         """
         return self._value
 
@@ -63,7 +70,7 @@ class ListPolicyStatesByAssignmentIdResponse(SdkResponse):
         合规结果查询返回值
 
         :param value: The value of this ListPolicyStatesByAssignmentIdResponse.
-        :type: list[PolicyState]
+        :type value: list[:class:`huaweicloudsdkrms.v1.PolicyState`]
         """
         self._value = value
 
@@ -73,7 +80,7 @@ class ListPolicyStatesByAssignmentIdResponse(SdkResponse):
 
 
         :return: The page_info of this ListPolicyStatesByAssignmentIdResponse.
-        :rtype: PageInfo
+        :rtype: :class:`huaweicloudsdkrms.v1.PageInfo`
         """
         return self._page_info
 
@@ -83,7 +90,7 @@ class ListPolicyStatesByAssignmentIdResponse(SdkResponse):
 
 
         :param page_info: The page_info of this ListPolicyStatesByAssignmentIdResponse.
-        :type: PageInfo
+        :type page_info: :class:`huaweicloudsdkrms.v1.PageInfo`
         """
         self._page_info = page_info
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UserRoleVO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class UserRoleVO:
     }
 
     def __init__(self, role=None, comment=None, is_transfer=None, privileges=None, inherits_roles=None, selected=None):
-        """UserRoleVO - a model defined in huaweicloud sdk"""
+        """UserRoleVO
+
+        The model defined in huaweicloud sdk
+
+        :param role: 角色
+        :type role: str
+        :param comment: 说明
+        :type comment: str
+        :param is_transfer: 是否支持迁移。
+        :type is_transfer: bool
+        :param privileges: 权限
+        :type privileges: str
+        :param inherits_roles: 继承角色列表
+        :type inherits_roles: list[str]
+        :param selected: 是否选择。
+        :type selected: bool
+        """
         
         
 
@@ -80,7 +95,7 @@ class UserRoleVO:
         角色
 
         :param role: The role of this UserRoleVO.
-        :type: str
+        :type role: str
         """
         self._role = role
 
@@ -102,7 +117,7 @@ class UserRoleVO:
         说明
 
         :param comment: The comment of this UserRoleVO.
-        :type: str
+        :type comment: str
         """
         self._comment = comment
 
@@ -124,7 +139,7 @@ class UserRoleVO:
         是否支持迁移。
 
         :param is_transfer: The is_transfer of this UserRoleVO.
-        :type: bool
+        :type is_transfer: bool
         """
         self._is_transfer = is_transfer
 
@@ -146,7 +161,7 @@ class UserRoleVO:
         权限
 
         :param privileges: The privileges of this UserRoleVO.
-        :type: str
+        :type privileges: str
         """
         self._privileges = privileges
 
@@ -168,7 +183,7 @@ class UserRoleVO:
         继承角色列表
 
         :param inherits_roles: The inherits_roles of this UserRoleVO.
-        :type: list[str]
+        :type inherits_roles: list[str]
         """
         self._inherits_roles = inherits_roles
 
@@ -190,7 +205,7 @@ class UserRoleVO:
         是否选择。
 
         :param selected: The selected of this UserRoleVO.
-        :type: bool
+        :type selected: bool
         """
         self._selected = selected
 

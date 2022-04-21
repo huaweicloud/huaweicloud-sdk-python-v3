@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteTrackerRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteTrackerRequest:
     }
 
     def __init__(self, tracker_name=None, tracker_type=None):
-        """DeleteTrackerRequest - a model defined in huaweicloud sdk"""
+        """DeleteTrackerRequest
+
+        The model defined in huaweicloud sdk
+
+        :param tracker_name: 标识追踪器名称。 在不传入该字段的情况下，将删除当前租户所有的数据类追踪器。
+        :type tracker_name: str
+        :param tracker_type: 标识追踪器类型。 目前仅支持数据类追踪器（data）的删除，默认值为\&quot;data\&quot;。
+        :type tracker_type: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class DeleteTrackerRequest:
         标识追踪器名称。 在不传入该字段的情况下，将删除当前租户所有的数据类追踪器。
 
         :param tracker_name: The tracker_name of this DeleteTrackerRequest.
-        :type: str
+        :type tracker_name: str
         """
         self._tracker_name = tracker_name
 
@@ -85,7 +92,7 @@ class DeleteTrackerRequest:
         标识追踪器类型。 目前仅支持数据类追踪器（data）的删除，默认值为\"data\"。
 
         :param tracker_type: The tracker_type of this DeleteTrackerRequest.
-        :type: str
+        :type tracker_type: str
         """
         self._tracker_type = tracker_type
 

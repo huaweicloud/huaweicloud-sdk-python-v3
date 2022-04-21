@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateTransferRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateTransferRequestBody:
     }
 
     def __init__(self, log_transfer_id=None, log_transfer_info=None):
-        """UpdateTransferRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateTransferRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param log_transfer_id: 日志转储ID
+        :type log_transfer_id: str
+        :param log_transfer_info: 
+        :type log_transfer_info: :class:`huaweicloudsdklts.v2.UpdateTransferRequestBodyLogTransferInfo`
+        """
         
         
 
@@ -61,7 +68,7 @@ class UpdateTransferRequestBody:
         日志转储ID
 
         :param log_transfer_id: The log_transfer_id of this UpdateTransferRequestBody.
-        :type: str
+        :type log_transfer_id: str
         """
         self._log_transfer_id = log_transfer_id
 
@@ -71,7 +78,7 @@ class UpdateTransferRequestBody:
 
 
         :return: The log_transfer_info of this UpdateTransferRequestBody.
-        :rtype: UpdateTransferRequestBodyLogTransferInfo
+        :rtype: :class:`huaweicloudsdklts.v2.UpdateTransferRequestBodyLogTransferInfo`
         """
         return self._log_transfer_info
 
@@ -81,7 +88,7 @@ class UpdateTransferRequestBody:
 
 
         :param log_transfer_info: The log_transfer_info of this UpdateTransferRequestBody.
-        :type: UpdateTransferRequestBodyLogTransferInfo
+        :type log_transfer_info: :class:`huaweicloudsdklts.v2.UpdateTransferRequestBodyLogTransferInfo`
         """
         self._log_transfer_info = log_transfer_info
 

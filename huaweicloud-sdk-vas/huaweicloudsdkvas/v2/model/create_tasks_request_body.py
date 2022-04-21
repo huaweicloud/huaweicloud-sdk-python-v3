@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateTasksRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class CreateTasksRequestBody:
     }
 
     def __init__(self, name=None, description=None, service_version=None, edge_pool_id=None, resource_order_id=None, timing=None, input=None, output=None, service_config=None):
-        """CreateTasksRequestBody - a model defined in huaweicloud sdk"""
+        """CreateTasksRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param name: 作业的名称，必填。仅能包含汉字、字母、数字、中划线和下划线，长度介于1~100之间。
+        :type name: str
+        :param description: 作业的描述，选填。长度不超过500。
+        :type description: str
+        :param service_version: 作业对应服务的版本号，必填。由两个介于0~999的整数和一个点号分隔符组成。
+        :type service_version: str
+        :param edge_pool_id: 作业运行指定的边缘运行池ID，仅边缘场景需填且必填。
+        :type edge_pool_id: str
+        :param resource_order_id: 作业指定的算法能力包包周期订单ID，仅部分服务需填且必填。
+        :type resource_order_id: str
+        :param timing: 
+        :type timing: :class:`huaweicloudsdkvas.v2.TaskTiming`
+        :param input: 
+        :type input: :class:`huaweicloudsdkvas.v2.TaskInput`
+        :param output: 
+        :type output: :class:`huaweicloudsdkvas.v2.TaskOutput`
+        :param service_config: 
+        :type service_config: :class:`huaweicloudsdkvas.v2.TaskServiceConfig`
+        """
         
         
 
@@ -94,7 +115,7 @@ class CreateTasksRequestBody:
         作业的名称，必填。仅能包含汉字、字母、数字、中划线和下划线，长度介于1~100之间。
 
         :param name: The name of this CreateTasksRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -116,7 +137,7 @@ class CreateTasksRequestBody:
         作业的描述，选填。长度不超过500。
 
         :param description: The description of this CreateTasksRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -138,7 +159,7 @@ class CreateTasksRequestBody:
         作业对应服务的版本号，必填。由两个介于0~999的整数和一个点号分隔符组成。
 
         :param service_version: The service_version of this CreateTasksRequestBody.
-        :type: str
+        :type service_version: str
         """
         self._service_version = service_version
 
@@ -160,7 +181,7 @@ class CreateTasksRequestBody:
         作业运行指定的边缘运行池ID，仅边缘场景需填且必填。
 
         :param edge_pool_id: The edge_pool_id of this CreateTasksRequestBody.
-        :type: str
+        :type edge_pool_id: str
         """
         self._edge_pool_id = edge_pool_id
 
@@ -182,7 +203,7 @@ class CreateTasksRequestBody:
         作业指定的算法能力包包周期订单ID，仅部分服务需填且必填。
 
         :param resource_order_id: The resource_order_id of this CreateTasksRequestBody.
-        :type: str
+        :type resource_order_id: str
         """
         self._resource_order_id = resource_order_id
 
@@ -192,7 +213,7 @@ class CreateTasksRequestBody:
 
 
         :return: The timing of this CreateTasksRequestBody.
-        :rtype: TaskTiming
+        :rtype: :class:`huaweicloudsdkvas.v2.TaskTiming`
         """
         return self._timing
 
@@ -202,7 +223,7 @@ class CreateTasksRequestBody:
 
 
         :param timing: The timing of this CreateTasksRequestBody.
-        :type: TaskTiming
+        :type timing: :class:`huaweicloudsdkvas.v2.TaskTiming`
         """
         self._timing = timing
 
@@ -212,7 +233,7 @@ class CreateTasksRequestBody:
 
 
         :return: The input of this CreateTasksRequestBody.
-        :rtype: TaskInput
+        :rtype: :class:`huaweicloudsdkvas.v2.TaskInput`
         """
         return self._input
 
@@ -222,7 +243,7 @@ class CreateTasksRequestBody:
 
 
         :param input: The input of this CreateTasksRequestBody.
-        :type: TaskInput
+        :type input: :class:`huaweicloudsdkvas.v2.TaskInput`
         """
         self._input = input
 
@@ -232,7 +253,7 @@ class CreateTasksRequestBody:
 
 
         :return: The output of this CreateTasksRequestBody.
-        :rtype: TaskOutput
+        :rtype: :class:`huaweicloudsdkvas.v2.TaskOutput`
         """
         return self._output
 
@@ -242,7 +263,7 @@ class CreateTasksRequestBody:
 
 
         :param output: The output of this CreateTasksRequestBody.
-        :type: TaskOutput
+        :type output: :class:`huaweicloudsdkvas.v2.TaskOutput`
         """
         self._output = output
 
@@ -252,7 +273,7 @@ class CreateTasksRequestBody:
 
 
         :return: The service_config of this CreateTasksRequestBody.
-        :rtype: TaskServiceConfig
+        :rtype: :class:`huaweicloudsdkvas.v2.TaskServiceConfig`
         """
         return self._service_config
 
@@ -262,7 +283,7 @@ class CreateTasksRequestBody:
 
 
         :param service_config: The service_config of this CreateTasksRequestBody.
-        :type: TaskServiceConfig
+        :type service_config: :class:`huaweicloudsdkvas.v2.TaskServiceConfig`
         """
         self._service_config = service_config
 

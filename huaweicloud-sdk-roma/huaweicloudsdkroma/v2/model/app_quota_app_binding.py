@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AppQuotaAppBinding:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class AppQuotaAppBinding:
     }
 
     def __init__(self, app_quota_id=None, app_id=None, bound_time=None):
-        """AppQuotaAppBinding - a model defined in huaweicloud sdk"""
+        """AppQuotaAppBinding
+
+        The model defined in huaweicloud sdk
+
+        :param app_quota_id: 客户端配额编号
+        :type app_quota_id: str
+        :param app_id: 客户端应用编号
+        :type app_id: str
+        :param bound_time: 绑定时间
+        :type bound_time: datetime
+        """
         
         
 
@@ -68,7 +77,7 @@ class AppQuotaAppBinding:
         客户端配额编号
 
         :param app_quota_id: The app_quota_id of this AppQuotaAppBinding.
-        :type: str
+        :type app_quota_id: str
         """
         self._app_quota_id = app_quota_id
 
@@ -90,7 +99,7 @@ class AppQuotaAppBinding:
         客户端应用编号
 
         :param app_id: The app_id of this AppQuotaAppBinding.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -112,7 +121,7 @@ class AppQuotaAppBinding:
         绑定时间
 
         :param bound_time: The bound_time of this AppQuotaAppBinding.
-        :type: datetime
+        :type bound_time: datetime
         """
         self._bound_time = bound_time
 

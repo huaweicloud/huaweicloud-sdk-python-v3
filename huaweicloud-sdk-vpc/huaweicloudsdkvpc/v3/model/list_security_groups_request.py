@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSecurityGroupsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListSecurityGroupsRequest:
     }
 
     def __init__(self, limit=None, marker=None, id=None, name=None, description=None, enterprise_project_id=None):
-        """ListSecurityGroupsRequest - a model defined in huaweicloud sdk"""
+        """ListSecurityGroupsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 功能说明：每页返回的个数 取值范围：0-2000
+        :type limit: int
+        :param marker: 分页查询起始的资源ID，为空时查询第一页
+        :type marker: str
+        :param id: 功能说明：安全组资源ID。可以使用该字段精确过滤安全组，支持多个ID
+        :type id: list[str]
+        :param name: 功能说明：安全组名称。可以使用该字段精确过滤满足条件的安全组，支持传入多个name过滤
+        :type name: list[str]
+        :param description: 功能说明：安全组描述新增。可以使用该字段精确过滤安全组，支持传入多个描述进行过滤
+        :type description: list[str]
+        :param enterprise_project_id: 功能说明：企业项目ID。可以使用该字段过滤某个企业项目下的安全组。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。 约束：若需要查询当前用户所有有权限查看企业项目绑定的安全组，请传参all_granted_eps。
+        :type enterprise_project_id: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class ListSecurityGroupsRequest:
         功能说明：每页返回的个数 取值范围：0-2000
 
         :param limit: The limit of this ListSecurityGroupsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -105,7 +120,7 @@ class ListSecurityGroupsRequest:
         分页查询起始的资源ID，为空时查询第一页
 
         :param marker: The marker of this ListSecurityGroupsRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -127,7 +142,7 @@ class ListSecurityGroupsRequest:
         功能说明：安全组资源ID。可以使用该字段精确过滤安全组，支持多个ID
 
         :param id: The id of this ListSecurityGroupsRequest.
-        :type: list[str]
+        :type id: list[str]
         """
         self._id = id
 
@@ -149,7 +164,7 @@ class ListSecurityGroupsRequest:
         功能说明：安全组名称。可以使用该字段精确过滤满足条件的安全组，支持传入多个name过滤
 
         :param name: The name of this ListSecurityGroupsRequest.
-        :type: list[str]
+        :type name: list[str]
         """
         self._name = name
 
@@ -171,7 +186,7 @@ class ListSecurityGroupsRequest:
         功能说明：安全组描述新增。可以使用该字段精确过滤安全组，支持传入多个描述进行过滤
 
         :param description: The description of this ListSecurityGroupsRequest.
-        :type: list[str]
+        :type description: list[str]
         """
         self._description = description
 
@@ -193,7 +208,7 @@ class ListSecurityGroupsRequest:
         功能说明：企业项目ID。可以使用该字段过滤某个企业项目下的安全组。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。 约束：若需要查询当前用户所有有权限查看企业项目绑定的安全组，请传参all_granted_eps。
 
         :param enterprise_project_id: The enterprise_project_id of this ListSecurityGroupsRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 

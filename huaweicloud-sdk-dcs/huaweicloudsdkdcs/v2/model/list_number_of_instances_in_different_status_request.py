@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListNumberOfInstancesInDifferentStatusRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListNumberOfInstancesInDifferentStatusRequest:
     }
 
     def __init__(self, include_failure=None):
-        """ListNumberOfInstancesInDifferentStatusRequest - a model defined in huaweicloud sdk"""
+        """ListNumberOfInstancesInDifferentStatusRequest
+
+        The model defined in huaweicloud sdk
+
+        :param include_failure: 是否返回创建失败的实例数。   - 当参数值为“true”时，返回的统计包括创建失败的实例数。   - 参数值为“false”或者其他值，返回的统计不包括创建失败的实例数。 
+        :type include_failure: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class ListNumberOfInstancesInDifferentStatusRequest:
         是否返回创建失败的实例数。   - 当参数值为“true”时，返回的统计包括创建失败的实例数。   - 参数值为“false”或者其他值，返回的统计不包括创建失败的实例数。 
 
         :param include_failure: The include_failure of this ListNumberOfInstancesInDifferentStatusRequest.
-        :type: str
+        :type include_failure: str
         """
         self._include_failure = include_failure
 

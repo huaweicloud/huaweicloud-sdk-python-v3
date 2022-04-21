@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ScalingGroups:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,6 +51,7 @@ class ScalingGroups:
         'enterprise_project_id': 'str',
         'activity_type': 'str',
         'multi_az_priority_policy': 'str',
+        'iam_agency_name': 'str',
         'description': 'str'
     }
 
@@ -86,11 +86,80 @@ class ScalingGroups:
         'enterprise_project_id': 'enterprise_project_id',
         'activity_type': 'activity_type',
         'multi_az_priority_policy': 'multi_az_priority_policy',
+        'iam_agency_name': 'iam_agency_name',
         'description': 'description'
     }
 
-    def __init__(self, scaling_group_name=None, scaling_group_id=None, scaling_group_status=None, scaling_configuration_id=None, scaling_configuration_name=None, current_instance_number=None, desire_instance_number=None, min_instance_number=None, max_instance_number=None, cool_down_time=None, lb_listener_id=None, lbaas_listeners=None, available_zones=None, networks=None, security_groups=None, create_time=None, vpc_id=None, detail=None, is_scaling=None, health_periodic_audit_method=None, health_periodic_audit_time=None, health_periodic_audit_grace_period=None, instance_terminate_policy=None, notifications=None, delete_publicip=None, delete_volume=None, cloud_location_id=None, enterprise_project_id=None, activity_type=None, multi_az_priority_policy=None, description=None):
-        """ScalingGroups - a model defined in huaweicloud sdk"""
+    def __init__(self, scaling_group_name=None, scaling_group_id=None, scaling_group_status=None, scaling_configuration_id=None, scaling_configuration_name=None, current_instance_number=None, desire_instance_number=None, min_instance_number=None, max_instance_number=None, cool_down_time=None, lb_listener_id=None, lbaas_listeners=None, available_zones=None, networks=None, security_groups=None, create_time=None, vpc_id=None, detail=None, is_scaling=None, health_periodic_audit_method=None, health_periodic_audit_time=None, health_periodic_audit_grace_period=None, instance_terminate_policy=None, notifications=None, delete_publicip=None, delete_volume=None, cloud_location_id=None, enterprise_project_id=None, activity_type=None, multi_az_priority_policy=None, iam_agency_name=None, description=None):
+        """ScalingGroups
+
+        The model defined in huaweicloud sdk
+
+        :param scaling_group_name: 伸缩组名称。
+        :type scaling_group_name: str
+        :param scaling_group_id: 伸缩组ID。
+        :type scaling_group_id: str
+        :param scaling_group_status: 伸缩组状态。
+        :type scaling_group_status: str
+        :param scaling_configuration_id: 伸缩配置ID。
+        :type scaling_configuration_id: str
+        :param scaling_configuration_name: 伸缩配置名称。
+        :type scaling_configuration_name: str
+        :param current_instance_number: 伸缩组中当前实例数。
+        :type current_instance_number: int
+        :param desire_instance_number: 伸缩组期望实例数。
+        :type desire_instance_number: int
+        :param min_instance_number: 伸缩组最小实例数。
+        :type min_instance_number: int
+        :param max_instance_number: 伸缩组最大实例数
+        :type max_instance_number: int
+        :param cool_down_time: 冷却时间，单位是秒。
+        :type cool_down_time: int
+        :param lb_listener_id: 经典型负载均衡监听器ID，多个负载均衡监听器ID以逗号分隔。
+        :type lb_listener_id: str
+        :param lbaas_listeners: 增强型负载均衡器信息，该参数为预留字段。
+        :type lbaas_listeners: list[:class:`huaweicloudsdkas.v1.LbaasListenersResult`]
+        :param available_zones: 可用分区信息
+        :type available_zones: list[str]
+        :param networks: 网络信息
+        :type networks: list[:class:`huaweicloudsdkas.v1.NetworksResult`]
+        :param security_groups: 安全组信息
+        :type security_groups: list[:class:`huaweicloudsdkas.v1.SecurityGroupsResult`]
+        :param create_time: 创建伸缩组时间，遵循UTC时间。
+        :type create_time: datetime
+        :param vpc_id: 伸缩组所在的VPC ID。
+        :type vpc_id: str
+        :param detail: 伸缩组详情。
+        :type detail: str
+        :param is_scaling: 伸缩组伸缩标志。
+        :type is_scaling: bool
+        :param health_periodic_audit_method: 健康检查方式。
+        :type health_periodic_audit_method: str
+        :param health_periodic_audit_time: 健康检查的间隔时间。
+        :type health_periodic_audit_time: int
+        :param health_periodic_audit_grace_period: 健康状况检查宽限期。
+        :type health_periodic_audit_grace_period: int
+        :param instance_terminate_policy: 移除策略。
+        :type instance_terminate_policy: str
+        :param notifications: 通知方式：  EMAIL为发送邮件通知。  该通知方式已经被废除，建议给弹性伸缩组配置通知功能。请参考[通知](https://support.huaweicloud.com/api-as/as_06_0800.html)。
+        :type notifications: list[str]
+        :param delete_publicip: 删除云服务器是否删除云服务器绑定的弹性IP。
+        :type delete_publicip: bool
+        :param delete_volume: 删除云服务器是否删除云服务器绑定的数据盘
+        :type delete_volume: bool
+        :param cloud_location_id: 该参数为预留字段
+        :type cloud_location_id: str
+        :param enterprise_project_id: 企业项目ID
+        :type enterprise_project_id: str
+        :param activity_type: 伸缩组活动类型
+        :type activity_type: str
+        :param multi_az_priority_policy: 伸缩组扩缩容时目标AZ选择的优先级策略
+        :type multi_az_priority_policy: str
+        :param iam_agency_name: 委托的名称委托是由租户管理员在统一身份认证服务（Identity and Access Management，IAM）上创建的，可以为弹性云服务器提供访问云服务的临时凭证。
+        :type iam_agency_name: str
+        :param description: 伸缩组描述信息
+        :type description: str
+        """
         
         
 
@@ -124,6 +193,7 @@ class ScalingGroups:
         self._enterprise_project_id = None
         self._activity_type = None
         self._multi_az_priority_policy = None
+        self._iam_agency_name = None
         self._description = None
         self.discriminator = None
 
@@ -187,6 +257,8 @@ class ScalingGroups:
             self.activity_type = activity_type
         if multi_az_priority_policy is not None:
             self.multi_az_priority_policy = multi_az_priority_policy
+        if iam_agency_name is not None:
+            self.iam_agency_name = iam_agency_name
         if description is not None:
             self.description = description
 
@@ -208,7 +280,7 @@ class ScalingGroups:
         伸缩组名称。
 
         :param scaling_group_name: The scaling_group_name of this ScalingGroups.
-        :type: str
+        :type scaling_group_name: str
         """
         self._scaling_group_name = scaling_group_name
 
@@ -230,7 +302,7 @@ class ScalingGroups:
         伸缩组ID。
 
         :param scaling_group_id: The scaling_group_id of this ScalingGroups.
-        :type: str
+        :type scaling_group_id: str
         """
         self._scaling_group_id = scaling_group_id
 
@@ -252,7 +324,7 @@ class ScalingGroups:
         伸缩组状态。
 
         :param scaling_group_status: The scaling_group_status of this ScalingGroups.
-        :type: str
+        :type scaling_group_status: str
         """
         self._scaling_group_status = scaling_group_status
 
@@ -274,7 +346,7 @@ class ScalingGroups:
         伸缩配置ID。
 
         :param scaling_configuration_id: The scaling_configuration_id of this ScalingGroups.
-        :type: str
+        :type scaling_configuration_id: str
         """
         self._scaling_configuration_id = scaling_configuration_id
 
@@ -296,7 +368,7 @@ class ScalingGroups:
         伸缩配置名称。
 
         :param scaling_configuration_name: The scaling_configuration_name of this ScalingGroups.
-        :type: str
+        :type scaling_configuration_name: str
         """
         self._scaling_configuration_name = scaling_configuration_name
 
@@ -318,7 +390,7 @@ class ScalingGroups:
         伸缩组中当前实例数。
 
         :param current_instance_number: The current_instance_number of this ScalingGroups.
-        :type: int
+        :type current_instance_number: int
         """
         self._current_instance_number = current_instance_number
 
@@ -340,7 +412,7 @@ class ScalingGroups:
         伸缩组期望实例数。
 
         :param desire_instance_number: The desire_instance_number of this ScalingGroups.
-        :type: int
+        :type desire_instance_number: int
         """
         self._desire_instance_number = desire_instance_number
 
@@ -362,7 +434,7 @@ class ScalingGroups:
         伸缩组最小实例数。
 
         :param min_instance_number: The min_instance_number of this ScalingGroups.
-        :type: int
+        :type min_instance_number: int
         """
         self._min_instance_number = min_instance_number
 
@@ -384,7 +456,7 @@ class ScalingGroups:
         伸缩组最大实例数
 
         :param max_instance_number: The max_instance_number of this ScalingGroups.
-        :type: int
+        :type max_instance_number: int
         """
         self._max_instance_number = max_instance_number
 
@@ -406,7 +478,7 @@ class ScalingGroups:
         冷却时间，单位是秒。
 
         :param cool_down_time: The cool_down_time of this ScalingGroups.
-        :type: int
+        :type cool_down_time: int
         """
         self._cool_down_time = cool_down_time
 
@@ -428,7 +500,7 @@ class ScalingGroups:
         经典型负载均衡监听器ID，多个负载均衡监听器ID以逗号分隔。
 
         :param lb_listener_id: The lb_listener_id of this ScalingGroups.
-        :type: str
+        :type lb_listener_id: str
         """
         self._lb_listener_id = lb_listener_id
 
@@ -439,7 +511,7 @@ class ScalingGroups:
         增强型负载均衡器信息，该参数为预留字段。
 
         :return: The lbaas_listeners of this ScalingGroups.
-        :rtype: list[LbaasListenersResult]
+        :rtype: list[:class:`huaweicloudsdkas.v1.LbaasListenersResult`]
         """
         return self._lbaas_listeners
 
@@ -450,7 +522,7 @@ class ScalingGroups:
         增强型负载均衡器信息，该参数为预留字段。
 
         :param lbaas_listeners: The lbaas_listeners of this ScalingGroups.
-        :type: list[LbaasListenersResult]
+        :type lbaas_listeners: list[:class:`huaweicloudsdkas.v1.LbaasListenersResult`]
         """
         self._lbaas_listeners = lbaas_listeners
 
@@ -472,7 +544,7 @@ class ScalingGroups:
         可用分区信息
 
         :param available_zones: The available_zones of this ScalingGroups.
-        :type: list[str]
+        :type available_zones: list[str]
         """
         self._available_zones = available_zones
 
@@ -483,7 +555,7 @@ class ScalingGroups:
         网络信息
 
         :return: The networks of this ScalingGroups.
-        :rtype: list[NetworksResult]
+        :rtype: list[:class:`huaweicloudsdkas.v1.NetworksResult`]
         """
         return self._networks
 
@@ -494,7 +566,7 @@ class ScalingGroups:
         网络信息
 
         :param networks: The networks of this ScalingGroups.
-        :type: list[NetworksResult]
+        :type networks: list[:class:`huaweicloudsdkas.v1.NetworksResult`]
         """
         self._networks = networks
 
@@ -505,7 +577,7 @@ class ScalingGroups:
         安全组信息
 
         :return: The security_groups of this ScalingGroups.
-        :rtype: list[SecurityGroupsResult]
+        :rtype: list[:class:`huaweicloudsdkas.v1.SecurityGroupsResult`]
         """
         return self._security_groups
 
@@ -516,7 +588,7 @@ class ScalingGroups:
         安全组信息
 
         :param security_groups: The security_groups of this ScalingGroups.
-        :type: list[SecurityGroupsResult]
+        :type security_groups: list[:class:`huaweicloudsdkas.v1.SecurityGroupsResult`]
         """
         self._security_groups = security_groups
 
@@ -538,7 +610,7 @@ class ScalingGroups:
         创建伸缩组时间，遵循UTC时间。
 
         :param create_time: The create_time of this ScalingGroups.
-        :type: datetime
+        :type create_time: datetime
         """
         self._create_time = create_time
 
@@ -560,7 +632,7 @@ class ScalingGroups:
         伸缩组所在的VPC ID。
 
         :param vpc_id: The vpc_id of this ScalingGroups.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -582,7 +654,7 @@ class ScalingGroups:
         伸缩组详情。
 
         :param detail: The detail of this ScalingGroups.
-        :type: str
+        :type detail: str
         """
         self._detail = detail
 
@@ -604,7 +676,7 @@ class ScalingGroups:
         伸缩组伸缩标志。
 
         :param is_scaling: The is_scaling of this ScalingGroups.
-        :type: bool
+        :type is_scaling: bool
         """
         self._is_scaling = is_scaling
 
@@ -626,7 +698,7 @@ class ScalingGroups:
         健康检查方式。
 
         :param health_periodic_audit_method: The health_periodic_audit_method of this ScalingGroups.
-        :type: str
+        :type health_periodic_audit_method: str
         """
         self._health_periodic_audit_method = health_periodic_audit_method
 
@@ -648,7 +720,7 @@ class ScalingGroups:
         健康检查的间隔时间。
 
         :param health_periodic_audit_time: The health_periodic_audit_time of this ScalingGroups.
-        :type: int
+        :type health_periodic_audit_time: int
         """
         self._health_periodic_audit_time = health_periodic_audit_time
 
@@ -670,7 +742,7 @@ class ScalingGroups:
         健康状况检查宽限期。
 
         :param health_periodic_audit_grace_period: The health_periodic_audit_grace_period of this ScalingGroups.
-        :type: int
+        :type health_periodic_audit_grace_period: int
         """
         self._health_periodic_audit_grace_period = health_periodic_audit_grace_period
 
@@ -692,7 +764,7 @@ class ScalingGroups:
         移除策略。
 
         :param instance_terminate_policy: The instance_terminate_policy of this ScalingGroups.
-        :type: str
+        :type instance_terminate_policy: str
         """
         self._instance_terminate_policy = instance_terminate_policy
 
@@ -714,7 +786,7 @@ class ScalingGroups:
         通知方式：  EMAIL为发送邮件通知。  该通知方式已经被废除，建议给弹性伸缩组配置通知功能。请参考[通知](https://support.huaweicloud.com/api-as/as_06_0800.html)。
 
         :param notifications: The notifications of this ScalingGroups.
-        :type: list[str]
+        :type notifications: list[str]
         """
         self._notifications = notifications
 
@@ -736,7 +808,7 @@ class ScalingGroups:
         删除云服务器是否删除云服务器绑定的弹性IP。
 
         :param delete_publicip: The delete_publicip of this ScalingGroups.
-        :type: bool
+        :type delete_publicip: bool
         """
         self._delete_publicip = delete_publicip
 
@@ -758,7 +830,7 @@ class ScalingGroups:
         删除云服务器是否删除云服务器绑定的数据盘
 
         :param delete_volume: The delete_volume of this ScalingGroups.
-        :type: bool
+        :type delete_volume: bool
         """
         self._delete_volume = delete_volume
 
@@ -780,7 +852,7 @@ class ScalingGroups:
         该参数为预留字段
 
         :param cloud_location_id: The cloud_location_id of this ScalingGroups.
-        :type: str
+        :type cloud_location_id: str
         """
         self._cloud_location_id = cloud_location_id
 
@@ -802,7 +874,7 @@ class ScalingGroups:
         企业项目ID
 
         :param enterprise_project_id: The enterprise_project_id of this ScalingGroups.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -824,7 +896,7 @@ class ScalingGroups:
         伸缩组活动类型
 
         :param activity_type: The activity_type of this ScalingGroups.
-        :type: str
+        :type activity_type: str
         """
         self._activity_type = activity_type
 
@@ -846,9 +918,31 @@ class ScalingGroups:
         伸缩组扩缩容时目标AZ选择的优先级策略
 
         :param multi_az_priority_policy: The multi_az_priority_policy of this ScalingGroups.
-        :type: str
+        :type multi_az_priority_policy: str
         """
         self._multi_az_priority_policy = multi_az_priority_policy
+
+    @property
+    def iam_agency_name(self):
+        """Gets the iam_agency_name of this ScalingGroups.
+
+        委托的名称委托是由租户管理员在统一身份认证服务（Identity and Access Management，IAM）上创建的，可以为弹性云服务器提供访问云服务的临时凭证。
+
+        :return: The iam_agency_name of this ScalingGroups.
+        :rtype: str
+        """
+        return self._iam_agency_name
+
+    @iam_agency_name.setter
+    def iam_agency_name(self, iam_agency_name):
+        """Sets the iam_agency_name of this ScalingGroups.
+
+        委托的名称委托是由租户管理员在统一身份认证服务（Identity and Access Management，IAM）上创建的，可以为弹性云服务器提供访问云服务的临时凭证。
+
+        :param iam_agency_name: The iam_agency_name of this ScalingGroups.
+        :type iam_agency_name: str
+        """
+        self._iam_agency_name = iam_agency_name
 
     @property
     def description(self):
@@ -868,7 +962,7 @@ class ScalingGroups:
         伸缩组描述信息
 
         :param description: The description of this ScalingGroups.
-        :type: str
+        :type description: str
         """
         self._description = description
 

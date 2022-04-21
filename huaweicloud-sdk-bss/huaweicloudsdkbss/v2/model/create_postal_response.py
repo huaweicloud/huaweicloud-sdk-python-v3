@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreatePostalResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreatePostalResponse(SdkResponse):
     }
 
     def __init__(self, address_id=None):
-        """CreatePostalResponse - a model defined in huaweicloud sdk"""
+        """CreatePostalResponse
+
+        The model defined in huaweicloud sdk
+
+        :param address_id: 邮寄地址ID。
+        :type address_id: str
+        """
         
         super(CreatePostalResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class CreatePostalResponse(SdkResponse):
         邮寄地址ID。
 
         :param address_id: The address_id of this CreatePostalResponse.
-        :type: str
+        :type address_id: str
         """
         self._address_id = address_id
 

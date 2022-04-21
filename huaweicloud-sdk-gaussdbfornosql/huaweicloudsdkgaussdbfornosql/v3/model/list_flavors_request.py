@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListFlavorsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListFlavorsRequest:
     }
 
     def __init__(self, region=None, engine_name=None):
-        """ListFlavorsRequest - a model defined in huaweicloud sdk"""
+        """ListFlavorsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param region: 实例所在区域。
+        :type region: str
+        :param engine_name: 数据库类型。   - 取值为“cassandra”，表示查询GaussDB(for Cassandra)数据库实例支持的规格。   - 取值为“mongodb”，表示查询GaussDB(for Mongo)数据库实例支持的规格。   - 取值为“influxdb”，表示查询GaussDB(for Influx)数据库实例支持的规格。   - 如果不传该参数，默认为“cassandra”。
+        :type engine_name: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ListFlavorsRequest:
         实例所在区域。
 
         :param region: The region of this ListFlavorsRequest.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -84,7 +91,7 @@ class ListFlavorsRequest:
         数据库类型。   - 取值为“cassandra”，表示查询GaussDB(for Cassandra)数据库实例支持的规格。   - 取值为“mongodb”，表示查询GaussDB(for Mongo)数据库实例支持的规格。   - 取值为“influxdb”，表示查询GaussDB(for Influx)数据库实例支持的规格。   - 如果不传该参数，默认为“cassandra”。
 
         :param engine_name: The engine_name of this ListFlavorsRequest.
-        :type: str
+        :type engine_name: str
         """
         self._engine_name = engine_name
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchTaskFile:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class BatchTaskFile:
     }
 
     def __init__(self, file_id=None, file_name=None, upload_time=None):
-        """BatchTaskFile - a model defined in huaweicloud sdk"""
+        """BatchTaskFile
+
+        The model defined in huaweicloud sdk
+
+        :param file_id: 上传的批量任务文件ID，由平台自动生成。
+        :type file_id: str
+        :param file_name: 上传的批量任务文件名称。
+        :type file_name: str
+        :param upload_time: 在物联网平台上传文件的时间。格式：yyyyMMdd&#39;T&#39;HHmmss&#39;Z&#39;，如20151212T121212Z。
+        :type upload_time: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class BatchTaskFile:
         上传的批量任务文件ID，由平台自动生成。
 
         :param file_id: The file_id of this BatchTaskFile.
-        :type: str
+        :type file_id: str
         """
         self._file_id = file_id
 
@@ -90,7 +99,7 @@ class BatchTaskFile:
         上传的批量任务文件名称。
 
         :param file_name: The file_name of this BatchTaskFile.
-        :type: str
+        :type file_name: str
         """
         self._file_name = file_name
 
@@ -112,7 +121,7 @@ class BatchTaskFile:
         在物联网平台上传文件的时间。格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
         :param upload_time: The upload_time of this BatchTaskFile.
-        :type: str
+        :type upload_time: str
         """
         self._upload_time = upload_time
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateUnbindPublicRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateUnbindPublicRequest:
     }
 
     def __init__(self, cluster_id=None):
-        """UpdateUnbindPublicRequest - a model defined in huaweicloud sdk"""
+        """UpdateUnbindPublicRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 指定查询集群ID。
+        :type cluster_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class UpdateUnbindPublicRequest:
         指定查询集群ID。
 
         :param cluster_id: The cluster_id of this UpdateUnbindPublicRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 

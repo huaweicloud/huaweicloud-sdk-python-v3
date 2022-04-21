@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ChangeSecurityGroupResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ChangeSecurityGroupResponse(SdkResponse):
     }
 
     def __init__(self, id=None):
-        """ChangeSecurityGroupResponse - a model defined in huaweicloud sdk"""
+        """ChangeSecurityGroupResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: SFS Turbo文件系统ID。
+        :type id: str
+        """
         
         super(ChangeSecurityGroupResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class ChangeSecurityGroupResponse(SdkResponse):
         SFS Turbo文件系统ID。
 
         :param id: The id of this ChangeSecurityGroupResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListEndpointServiceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ListEndpointServiceRequest:
     }
 
     def __init__(self, endpoint_service_name=None, id=None, status=None, sort_key=None, sort_dir=None, limit=None, offset=None):
-        """ListEndpointServiceRequest - a model defined in huaweicloud sdk"""
+        """ListEndpointServiceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param endpoint_service_name: 终端节点服务的名称，支持大小写，前后模糊匹配。
+        :type endpoint_service_name: str
+        :param id: 终端节点服务的ID，唯一标识。
+        :type id: str
+        :param status: 终端节点服务的状态。 ● creating：创建中 ● available：可连接 ● failed：失败 ● deleting：删除中
+        :type status: str
+        :param sort_key: 查询结果中终端节点服务列表的排序字段，取值为： ● create_at：终端节点服务的创建时间 ● update_at：终端节点服务的更新时间 默认值为create_at。
+        :type sort_key: str
+        :param sort_dir: 查询结果中终端节点服务列表的排 序方式，取值为： ● desc：降序排序 ● asc：升序排序 默认值为desc。
+        :type sort_dir: str
+        :param limit: 查询返回的终端节点服务数量限制，即每页返回的终端节点服务的个数。 取值范围：0~1000，取值一般为10，20或者50，默认为10。
+        :type limit: int
+        :param offset: 偏移量。 偏移量为一个大于0小于终端节点服务总个数的整数，表示从偏移量后面的终端节点服务开始查询。
+        :type offset: int
+        """
         
         
 
@@ -88,7 +105,7 @@ class ListEndpointServiceRequest:
         终端节点服务的名称，支持大小写，前后模糊匹配。
 
         :param endpoint_service_name: The endpoint_service_name of this ListEndpointServiceRequest.
-        :type: str
+        :type endpoint_service_name: str
         """
         self._endpoint_service_name = endpoint_service_name
 
@@ -110,7 +127,7 @@ class ListEndpointServiceRequest:
         终端节点服务的ID，唯一标识。
 
         :param id: The id of this ListEndpointServiceRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -132,7 +149,7 @@ class ListEndpointServiceRequest:
         终端节点服务的状态。 ● creating：创建中 ● available：可连接 ● failed：失败 ● deleting：删除中
 
         :param status: The status of this ListEndpointServiceRequest.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -154,7 +171,7 @@ class ListEndpointServiceRequest:
         查询结果中终端节点服务列表的排序字段，取值为： ● create_at：终端节点服务的创建时间 ● update_at：终端节点服务的更新时间 默认值为create_at。
 
         :param sort_key: The sort_key of this ListEndpointServiceRequest.
-        :type: str
+        :type sort_key: str
         """
         self._sort_key = sort_key
 
@@ -176,7 +193,7 @@ class ListEndpointServiceRequest:
         查询结果中终端节点服务列表的排 序方式，取值为： ● desc：降序排序 ● asc：升序排序 默认值为desc。
 
         :param sort_dir: The sort_dir of this ListEndpointServiceRequest.
-        :type: str
+        :type sort_dir: str
         """
         self._sort_dir = sort_dir
 
@@ -198,7 +215,7 @@ class ListEndpointServiceRequest:
         查询返回的终端节点服务数量限制，即每页返回的终端节点服务的个数。 取值范围：0~1000，取值一般为10，20或者50，默认为10。
 
         :param limit: The limit of this ListEndpointServiceRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -220,7 +237,7 @@ class ListEndpointServiceRequest:
         偏移量。 偏移量为一个大于0小于终端节点服务总个数的整数，表示从偏移量后面的终端节点服务开始查询。
 
         :param offset: The offset of this ListEndpointServiceRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 

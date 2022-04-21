@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SearchMaterialsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class SearchMaterialsResponse(SdkResponse):
     }
 
     def __init__(self, offset=None, limit=None, count=None, data=None):
-        """SearchMaterialsResponse - a model defined in huaweicloud sdk"""
+        """SearchMaterialsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param offset: 页面起始页，从0开始
+        :type offset: int
+        :param limit: 每页显示的条目数量。 默认值：10。 
+        :type limit: int
+        :param count: 总数量。
+        :type count: int
+        :param data: 素材信息
+        :type data: list[:class:`huaweicloudsdkmeeting.v1.Material`]
+        """
         
         super(SearchMaterialsResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class SearchMaterialsResponse(SdkResponse):
         页面起始页，从0开始
 
         :param offset: The offset of this SearchMaterialsResponse.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -95,7 +106,7 @@ class SearchMaterialsResponse(SdkResponse):
         每页显示的条目数量。 默认值：10。 
 
         :param limit: The limit of this SearchMaterialsResponse.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -117,7 +128,7 @@ class SearchMaterialsResponse(SdkResponse):
         总数量。
 
         :param count: The count of this SearchMaterialsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -128,7 +139,7 @@ class SearchMaterialsResponse(SdkResponse):
         素材信息
 
         :return: The data of this SearchMaterialsResponse.
-        :rtype: list[Material]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.Material`]
         """
         return self._data
 
@@ -139,7 +150,7 @@ class SearchMaterialsResponse(SdkResponse):
         素材信息
 
         :param data: The data of this SearchMaterialsResponse.
-        :type: list[Material]
+        :type data: list[:class:`huaweicloudsdkmeeting.v1.Material`]
         """
         self._data = data
 

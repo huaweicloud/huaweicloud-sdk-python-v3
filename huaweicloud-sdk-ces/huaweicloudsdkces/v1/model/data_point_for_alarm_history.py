@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DataPointForAlarmHistory:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DataPointForAlarmHistory:
     }
 
     def __init__(self, time=None, value=None):
-        """DataPointForAlarmHistory - a model defined in huaweicloud sdk"""
+        """DataPointForAlarmHistory
+
+        The model defined in huaweicloud sdk
+
+        :param time: 计算出该条告警历史的资源监控数据上报时间，UNIX时间戳，单位毫秒，如：1603131028000。
+        :type time: int
+        :param value: 计算出该条告警历史的资源监控数据在该时间点的监控数值，如：7.019。
+        :type value: float
+        """
         
         
 
@@ -63,7 +70,7 @@ class DataPointForAlarmHistory:
         计算出该条告警历史的资源监控数据上报时间，UNIX时间戳，单位毫秒，如：1603131028000。
 
         :param time: The time of this DataPointForAlarmHistory.
-        :type: int
+        :type time: int
         """
         self._time = time
 
@@ -85,7 +92,7 @@ class DataPointForAlarmHistory:
         计算出该条告警历史的资源监控数据在该时间点的监控数值，如：7.019。
 
         :param value: The value of this DataPointForAlarmHistory.
-        :type: float
+        :type value: float
         """
         self._value = value
 

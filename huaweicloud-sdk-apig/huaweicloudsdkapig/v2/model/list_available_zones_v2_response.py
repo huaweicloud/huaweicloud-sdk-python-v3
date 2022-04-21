@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAvailableZonesV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListAvailableZonesV2Response(SdkResponse):
     }
 
     def __init__(self, available_zones=None):
-        """ListAvailableZonesV2Response - a model defined in huaweicloud sdk"""
+        """ListAvailableZonesV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param available_zones: 可用区列表
+        :type available_zones: list[:class:`huaweicloudsdkapig.v2.AvailableZone`]
+        """
         
         super(ListAvailableZonesV2Response, self).__init__()
 
@@ -47,7 +52,7 @@ class ListAvailableZonesV2Response(SdkResponse):
         可用区列表
 
         :return: The available_zones of this ListAvailableZonesV2Response.
-        :rtype: list[AvailableZone]
+        :rtype: list[:class:`huaweicloudsdkapig.v2.AvailableZone`]
         """
         return self._available_zones
 
@@ -58,7 +63,7 @@ class ListAvailableZonesV2Response(SdkResponse):
         可用区列表
 
         :param available_zones: The available_zones of this ListAvailableZonesV2Response.
-        :type: list[AvailableZone]
+        :type available_zones: list[:class:`huaweicloudsdkapig.v2.AvailableZone`]
         """
         self._available_zones = available_zones
 

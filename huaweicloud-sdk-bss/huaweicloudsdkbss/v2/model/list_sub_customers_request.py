@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSubCustomersRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListSubCustomersRequest:
     }
 
     def __init__(self, body=None):
-        """ListSubCustomersRequest - a model defined in huaweicloud sdk"""
+        """ListSubCustomersRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the ListSubCustomersRequest
+        :type body: :class:`huaweicloudsdkbss.v2.QuerySubCustomerListReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class ListSubCustomersRequest:
 
 
         :return: The body of this ListSubCustomersRequest.
-        :rtype: QuerySubCustomerListReq
+        :rtype: :class:`huaweicloudsdkbss.v2.QuerySubCustomerListReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class ListSubCustomersRequest:
 
 
         :param body: The body of this ListSubCustomersRequest.
-        :type: QuerySubCustomerListReq
+        :type body: :class:`huaweicloudsdkbss.v2.QuerySubCustomerListReq`
         """
         self._body = body
 

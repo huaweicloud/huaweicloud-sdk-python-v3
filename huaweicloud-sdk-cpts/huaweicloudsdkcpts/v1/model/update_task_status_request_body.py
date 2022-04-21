@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateTaskStatusRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class UpdateTaskStatusRequestBody:
     }
 
     def __init__(self, cluster_id=None, cluster_type=None, without_package=None, network_info=None, status=None):
-        """UpdateTaskStatusRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateTaskStatusRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: cluster_id
+        :type cluster_id: int
+        :param cluster_type: cluster_type
+        :type cluster_type: str
+        :param without_package: without_package
+        :type without_package: int
+        :param network_info: 
+        :type network_info: :class:`huaweicloudsdkcpts.v1.NetworkInfo`
+        :param status: status
+        :type status: int
+        """
         
         
 
@@ -73,7 +86,7 @@ class UpdateTaskStatusRequestBody:
         cluster_id
 
         :param cluster_id: The cluster_id of this UpdateTaskStatusRequestBody.
-        :type: int
+        :type cluster_id: int
         """
         self._cluster_id = cluster_id
 
@@ -95,7 +108,7 @@ class UpdateTaskStatusRequestBody:
         cluster_type
 
         :param cluster_type: The cluster_type of this UpdateTaskStatusRequestBody.
-        :type: str
+        :type cluster_type: str
         """
         self._cluster_type = cluster_type
 
@@ -117,7 +130,7 @@ class UpdateTaskStatusRequestBody:
         without_package
 
         :param without_package: The without_package of this UpdateTaskStatusRequestBody.
-        :type: int
+        :type without_package: int
         """
         self._without_package = without_package
 
@@ -127,7 +140,7 @@ class UpdateTaskStatusRequestBody:
 
 
         :return: The network_info of this UpdateTaskStatusRequestBody.
-        :rtype: NetworkInfo
+        :rtype: :class:`huaweicloudsdkcpts.v1.NetworkInfo`
         """
         return self._network_info
 
@@ -137,7 +150,7 @@ class UpdateTaskStatusRequestBody:
 
 
         :param network_info: The network_info of this UpdateTaskStatusRequestBody.
-        :type: NetworkInfo
+        :type network_info: :class:`huaweicloudsdkcpts.v1.NetworkInfo`
         """
         self._network_info = network_info
 
@@ -159,7 +172,7 @@ class UpdateTaskStatusRequestBody:
         status
 
         :param status: The status of this UpdateTaskStatusRequestBody.
-        :type: int
+        :type status: int
         """
         self._status = status
 

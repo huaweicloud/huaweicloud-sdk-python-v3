@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreatePermanentAccessKeyRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreatePermanentAccessKeyRequestBody:
     }
 
     def __init__(self, credential=None):
-        """CreatePermanentAccessKeyRequestBody - a model defined in huaweicloud sdk"""
+        """CreatePermanentAccessKeyRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param credential: 
+        :type credential: :class:`huaweicloudsdkiam.v3.CreateCredentialOption`
+        """
         
         
 
@@ -45,7 +50,7 @@ class CreatePermanentAccessKeyRequestBody:
 
 
         :return: The credential of this CreatePermanentAccessKeyRequestBody.
-        :rtype: CreateCredentialOption
+        :rtype: :class:`huaweicloudsdkiam.v3.CreateCredentialOption`
         """
         return self._credential
 
@@ -55,7 +60,7 @@ class CreatePermanentAccessKeyRequestBody:
 
 
         :param credential: The credential of this CreatePermanentAccessKeyRequestBody.
-        :type: CreateCredentialOption
+        :type credential: :class:`huaweicloudsdkiam.v3.CreateCredentialOption`
         """
         self._credential = credential
 

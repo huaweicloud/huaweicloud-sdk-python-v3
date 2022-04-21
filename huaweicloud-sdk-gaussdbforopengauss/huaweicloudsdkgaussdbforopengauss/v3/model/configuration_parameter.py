@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ConfigurationParameter:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ConfigurationParameter:
     }
 
     def __init__(self, name=None, value=None, restart_required=None, value_range=None, type=None, description=None):
-        """ConfigurationParameter - a model defined in huaweicloud sdk"""
+        """ConfigurationParameter
+
+        The model defined in huaweicloud sdk
+
+        :param name: 参数名称。
+        :type name: str
+        :param value: 参数值。
+        :type value: str
+        :param restart_required: 修改该参数是否需要重启实例。
+        :type restart_required: bool
+        :param value_range: 参数取值范围。
+        :type value_range: str
+        :param type: 参数类型，取值为“string”、“integer”、“boolean”、“list”或“float”之一。
+        :type type: str
+        :param description: 参数描述。
+        :type description: str
+        """
         
         
 
@@ -77,7 +92,7 @@ class ConfigurationParameter:
         参数名称。
 
         :param name: The name of this ConfigurationParameter.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -99,7 +114,7 @@ class ConfigurationParameter:
         参数值。
 
         :param value: The value of this ConfigurationParameter.
-        :type: str
+        :type value: str
         """
         self._value = value
 
@@ -121,7 +136,7 @@ class ConfigurationParameter:
         修改该参数是否需要重启实例。
 
         :param restart_required: The restart_required of this ConfigurationParameter.
-        :type: bool
+        :type restart_required: bool
         """
         self._restart_required = restart_required
 
@@ -143,7 +158,7 @@ class ConfigurationParameter:
         参数取值范围。
 
         :param value_range: The value_range of this ConfigurationParameter.
-        :type: str
+        :type value_range: str
         """
         self._value_range = value_range
 
@@ -165,7 +180,7 @@ class ConfigurationParameter:
         参数类型，取值为“string”、“integer”、“boolean”、“list”或“float”之一。
 
         :param type: The type of this ConfigurationParameter.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -187,7 +202,7 @@ class ConfigurationParameter:
         参数描述。
 
         :param description: The description of this ConfigurationParameter.
-        :type: str
+        :type description: str
         """
         self._description = description
 

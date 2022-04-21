@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListInstancesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ListInstancesRequest:
     }
 
     def __init__(self, engine=None, name=None, instance_id=None, status=None, include_failure=None, exact_match_name=None, enterprise_project_id=None):
-        """ListInstancesRequest - a model defined in huaweicloud sdk"""
+        """ListInstancesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param engine: 消息引擎：kafka。
+        :type engine: str
+        :param name: 实例名称。
+        :type name: str
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param status: 实例状态。
+        :type status: str
+        :param include_failure: 是否返回创建失败的实例数。  当参数值为“true”时，返回创建失败的实例数。参数值为“false”或者其他值，不返回创建失败的实例数。
+        :type include_failure: str
+        :param exact_match_name: 是否按照实例名称进行精确匹配查询。  默认为“false”，表示模糊匹配实例名称查询。若参数值为“true”表示按照实例名称进行精确匹配查询。
+        :type exact_match_name: str
+        :param enterprise_project_id: 企业项目ID。
+        :type enterprise_project_id: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class ListInstancesRequest:
         消息引擎：kafka。
 
         :param engine: The engine of this ListInstancesRequest.
-        :type: str
+        :type engine: str
         """
         self._engine = engine
 
@@ -110,7 +127,7 @@ class ListInstancesRequest:
         实例名称。
 
         :param name: The name of this ListInstancesRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -132,7 +149,7 @@ class ListInstancesRequest:
         实例ID。
 
         :param instance_id: The instance_id of this ListInstancesRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -154,7 +171,7 @@ class ListInstancesRequest:
         实例状态。
 
         :param status: The status of this ListInstancesRequest.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -176,7 +193,7 @@ class ListInstancesRequest:
         是否返回创建失败的实例数。  当参数值为“true”时，返回创建失败的实例数。参数值为“false”或者其他值，不返回创建失败的实例数。
 
         :param include_failure: The include_failure of this ListInstancesRequest.
-        :type: str
+        :type include_failure: str
         """
         self._include_failure = include_failure
 
@@ -198,7 +215,7 @@ class ListInstancesRequest:
         是否按照实例名称进行精确匹配查询。  默认为“false”，表示模糊匹配实例名称查询。若参数值为“true”表示按照实例名称进行精确匹配查询。
 
         :param exact_match_name: The exact_match_name of this ListInstancesRequest.
-        :type: str
+        :type exact_match_name: str
         """
         self._exact_match_name = exact_match_name
 
@@ -220,7 +237,7 @@ class ListInstancesRequest:
         企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this ListInstancesRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 

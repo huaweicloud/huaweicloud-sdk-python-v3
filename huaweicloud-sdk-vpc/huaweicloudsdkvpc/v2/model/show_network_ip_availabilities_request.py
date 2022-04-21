@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowNetworkIpAvailabilitiesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowNetworkIpAvailabilitiesRequest:
     }
 
     def __init__(self, network_id=None):
-        """ShowNetworkIpAvailabilitiesRequest - a model defined in huaweicloud sdk"""
+        """ShowNetworkIpAvailabilitiesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param network_id: 网络ID
+        :type network_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowNetworkIpAvailabilitiesRequest:
         网络ID
 
         :param network_id: The network_id of this ShowNetworkIpAvailabilitiesRequest.
-        :type: str
+        :type network_id: str
         """
         self._network_id = network_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResetUserPasswordRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ResetUserPasswordRequest:
     }
 
     def __init__(self, instance_id=None, username=None, body=None):
-        """ResetUserPasswordRequest - a model defined in huaweicloud sdk"""
+        """ResetUserPasswordRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: DDM实例ID。
+        :type instance_id: str
+        :param username: 需要修改的DDM帐号名称。
+        :type username: str
+        :param body: Body of the ResetUserPasswordRequest
+        :type body: :class:`huaweicloudsdkddm.v1.ResetUserPasswordReq`
+        """
         
         
 
@@ -66,7 +75,7 @@ class ResetUserPasswordRequest:
         DDM实例ID。
 
         :param instance_id: The instance_id of this ResetUserPasswordRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -88,7 +97,7 @@ class ResetUserPasswordRequest:
         需要修改的DDM帐号名称。
 
         :param username: The username of this ResetUserPasswordRequest.
-        :type: str
+        :type username: str
         """
         self._username = username
 
@@ -98,7 +107,7 @@ class ResetUserPasswordRequest:
 
 
         :return: The body of this ResetUserPasswordRequest.
-        :rtype: ResetUserPasswordReq
+        :rtype: :class:`huaweicloudsdkddm.v1.ResetUserPasswordReq`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class ResetUserPasswordRequest:
 
 
         :param body: The body of this ResetUserPasswordRequest.
-        :type: ResetUserPasswordReq
+        :type body: :class:`huaweicloudsdkddm.v1.ResetUserPasswordReq`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FunctionRef:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class FunctionRef:
     }
 
     def __init__(self, ref_name=None, invoke_mode=None, arguments=None):
-        """FunctionRef - a model defined in huaweicloud sdk"""
+        """FunctionRef
+
+        The model defined in huaweicloud sdk
+
+        :param ref_name: 函数引用名称，需要和外层functions中的name对应
+        :type ref_name: str
+        :param invoke_mode: 函数调用模式，目前只支持同步调用
+        :type invoke_mode: str
+        :param arguments: 函数执行时的入参，支持引用constants中的常量 定义方式：参数路径 | 常量值/常量路径 参数路径指输入参数的JsonPath路径，如$.a.b[0].c 常量值可以为数字类型，字符串类型(需要用单引号括起来)，布尔类型 常量路径为常量的JsonPath路径，但是根节点需要用$CONST表示，示例：$CONST.a.b
+        :type arguments: object
+        """
         
         
 
@@ -68,7 +77,7 @@ class FunctionRef:
         函数引用名称，需要和外层functions中的name对应
 
         :param ref_name: The ref_name of this FunctionRef.
-        :type: str
+        :type ref_name: str
         """
         self._ref_name = ref_name
 
@@ -90,7 +99,7 @@ class FunctionRef:
         函数调用模式，目前只支持同步调用
 
         :param invoke_mode: The invoke_mode of this FunctionRef.
-        :type: str
+        :type invoke_mode: str
         """
         self._invoke_mode = invoke_mode
 
@@ -112,7 +121,7 @@ class FunctionRef:
         函数执行时的入参，支持引用constants中的常量 定义方式：参数路径 | 常量值/常量路径 参数路径指输入参数的JsonPath路径，如$.a.b[0].c 常量值可以为数字类型，字符串类型(需要用单引号括起来)，布尔类型 常量路径为常量的JsonPath路径，但是根节点需要用$CONST表示，示例：$CONST.a.b
 
         :param arguments: The arguments of this FunctionRef.
-        :type: object
+        :type arguments: object
         """
         self._arguments = arguments
 

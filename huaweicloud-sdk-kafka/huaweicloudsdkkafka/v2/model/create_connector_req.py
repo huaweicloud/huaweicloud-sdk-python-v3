@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateConnectorReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateConnectorReq:
     }
 
     def __init__(self, specification=None, node_cnt=None, spec_code=None):
-        """CreateConnectorReq - a model defined in huaweicloud sdk"""
+        """CreateConnectorReq
+
+        The model defined in huaweicloud sdk
+
+        :param specification: 部署connector的规格，基准带宽，表示单位时间内传送的最大数据量，单位Byte/秒。  取值范围：   - 100MB   - 300MB   - 600MB   - 1200MB  可以不填，则默认跟当前实例的规格是一致。  第一阶段实现先不填，保持和当前实例规格一致，后面再扩展可以选择不同的规格。
+        :type specification: str
+        :param node_cnt: 转储节点数量。不能小于2个。 默认是2个。 
+        :type node_cnt: str
+        :param spec_code: 转储节点规格编码。 
+        :type spec_code: str
+        """
         
         
 
@@ -67,7 +76,7 @@ class CreateConnectorReq:
         部署connector的规格，基准带宽，表示单位时间内传送的最大数据量，单位Byte/秒。  取值范围：   - 100MB   - 300MB   - 600MB   - 1200MB  可以不填，则默认跟当前实例的规格是一致。  第一阶段实现先不填，保持和当前实例规格一致，后面再扩展可以选择不同的规格。
 
         :param specification: The specification of this CreateConnectorReq.
-        :type: str
+        :type specification: str
         """
         self._specification = specification
 
@@ -89,7 +98,7 @@ class CreateConnectorReq:
         转储节点数量。不能小于2个。 默认是2个。 
 
         :param node_cnt: The node_cnt of this CreateConnectorReq.
-        :type: str
+        :type node_cnt: str
         """
         self._node_cnt = node_cnt
 
@@ -111,7 +120,7 @@ class CreateConnectorReq:
         转储节点规格编码。 
 
         :param spec_code: The spec_code of this CreateConnectorReq.
-        :type: str
+        :type spec_code: str
         """
         self._spec_code = spec_code
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteCertificateRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteCertificateRequest:
     }
 
     def __init__(self, instance_id=None, certificate_id=None):
-        """DeleteCertificateRequest - a model defined in huaweicloud sdk"""
+        """DeleteCertificateRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
+        :type instance_id: str
+        :param certificate_id: **参数说明**：设备CA证书ID，在上传设备CA证书时由平台分配的唯一标识。
+        :type certificate_id: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class DeleteCertificateRequest:
         **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
         :param instance_id: The instance_id of this DeleteCertificateRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -84,7 +91,7 @@ class DeleteCertificateRequest:
         **参数说明**：设备CA证书ID，在上传设备CA证书时由平台分配的唯一标识。
 
         :param certificate_id: The certificate_id of this DeleteCertificateRequest.
-        :type: str
+        :type certificate_id: str
         """
         self._certificate_id = certificate_id
 

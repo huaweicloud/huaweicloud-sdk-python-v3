@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateFunctionAsyncInvokeConfigRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateFunctionAsyncInvokeConfigRequest:
     }
 
     def __init__(self, function_urn=None, body=None):
-        """UpdateFunctionAsyncInvokeConfigRequest - a model defined in huaweicloud sdk"""
+        """UpdateFunctionAsyncInvokeConfigRequest
+
+        The model defined in huaweicloud sdk
+
+        :param function_urn: 函数的URN（Uniform Resource Name），唯一标识函数。
+        :type function_urn: str
+        :param body: Body of the UpdateFunctionAsyncInvokeConfigRequest
+        :type body: :class:`huaweicloudsdkfunctiongraph.v2.UpdateFunctionAsyncInvokeConfigRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateFunctionAsyncInvokeConfigRequest:
         函数的URN（Uniform Resource Name），唯一标识函数。
 
         :param function_urn: The function_urn of this UpdateFunctionAsyncInvokeConfigRequest.
-        :type: str
+        :type function_urn: str
         """
         self._function_urn = function_urn
 
@@ -72,7 +79,7 @@ class UpdateFunctionAsyncInvokeConfigRequest:
 
 
         :return: The body of this UpdateFunctionAsyncInvokeConfigRequest.
-        :rtype: UpdateFunctionAsyncInvokeConfigRequestBody
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.UpdateFunctionAsyncInvokeConfigRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateFunctionAsyncInvokeConfigRequest:
 
 
         :param body: The body of this UpdateFunctionAsyncInvokeConfigRequest.
-        :type: UpdateFunctionAsyncInvokeConfigRequestBody
+        :type body: :class:`huaweicloudsdkfunctiongraph.v2.UpdateFunctionAsyncInvokeConfigRequestBody`
         """
         self._body = body
 

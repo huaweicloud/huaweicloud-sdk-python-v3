@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PublicEndpoints:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class PublicEndpoints:
     }
 
     def __init__(self, public_connect_info=None, jdbc_url=None):
-        """PublicEndpoints - a model defined in huaweicloud sdk"""
+        """PublicEndpoints
+
+        The model defined in huaweicloud sdk
+
+        :param public_connect_info: 公网连接信息
+        :type public_connect_info: str
+        :param jdbc_url: 公网JDBC URL，默认格式如下： jdbc:postgresql://&lt;public_connect_info&gt;/&lt;YOUR_DATABASE_name&gt;
+        :type jdbc_url: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class PublicEndpoints:
         公网连接信息
 
         :param public_connect_info: The public_connect_info of this PublicEndpoints.
-        :type: str
+        :type public_connect_info: str
         """
         self._public_connect_info = public_connect_info
 
@@ -71,7 +78,7 @@ class PublicEndpoints:
     def jdbc_url(self):
         """Gets the jdbc_url of this PublicEndpoints.
 
-        公网JDBC URL
+        公网JDBC URL，默认格式如下： jdbc:postgresql://<public_connect_info>/<YOUR_DATABASE_name>
 
         :return: The jdbc_url of this PublicEndpoints.
         :rtype: str
@@ -82,10 +89,10 @@ class PublicEndpoints:
     def jdbc_url(self, jdbc_url):
         """Sets the jdbc_url of this PublicEndpoints.
 
-        公网JDBC URL
+        公网JDBC URL，默认格式如下： jdbc:postgresql://<public_connect_info>/<YOUR_DATABASE_name>
 
         :param jdbc_url: The jdbc_url of this PublicEndpoints.
-        :type: str
+        :type jdbc_url: str
         """
         self._jdbc_url = jdbc_url
 

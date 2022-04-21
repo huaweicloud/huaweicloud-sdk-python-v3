@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MysqlErrorLogList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class MysqlErrorLogList:
     }
 
     def __init__(self, node_id=None, time=None, level=None, content=None):
-        """MysqlErrorLogList - a model defined in huaweicloud sdk"""
+        """MysqlErrorLogList
+
+        The model defined in huaweicloud sdk
+
+        :param node_id: 节点ID。
+        :type node_id: str
+        :param time: 日期时间UTC时间。
+        :type time: str
+        :param level: 日志级别。
+        :type level: str
+        :param content: 错误日志内容。
+        :type content: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class MysqlErrorLogList:
         节点ID。
 
         :param node_id: The node_id of this MysqlErrorLogList.
-        :type: str
+        :type node_id: str
         """
         self._node_id = node_id
 
@@ -95,7 +106,7 @@ class MysqlErrorLogList:
         日期时间UTC时间。
 
         :param time: The time of this MysqlErrorLogList.
-        :type: str
+        :type time: str
         """
         self._time = time
 
@@ -117,7 +128,7 @@ class MysqlErrorLogList:
         日志级别。
 
         :param level: The level of this MysqlErrorLogList.
-        :type: str
+        :type level: str
         """
         self._level = level
 
@@ -139,7 +150,7 @@ class MysqlErrorLogList:
         错误日志内容。
 
         :param content: The content of this MysqlErrorLogList.
-        :type: str
+        :type content: str
         """
         self._content = content
 

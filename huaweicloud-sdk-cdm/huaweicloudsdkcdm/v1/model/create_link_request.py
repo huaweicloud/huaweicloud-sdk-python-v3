@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateLinkRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateLinkRequest:
     }
 
     def __init__(self, cluster_id=None, validate=None, body=None):
-        """CreateLinkRequest - a model defined in huaweicloud sdk"""
+        """CreateLinkRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 集群ID
+        :type cluster_id: str
+        :param validate: 为“true”时，此API仅校验参数是否正确，不创建连接
+        :type validate: str
+        :param body: Body of the CreateLinkRequest
+        :type body: :class:`huaweicloudsdkcdm.v1.CdmCreateAndUpdateLinkReq`
+        """
         
         
 
@@ -67,7 +76,7 @@ class CreateLinkRequest:
         集群ID
 
         :param cluster_id: The cluster_id of this CreateLinkRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -89,7 +98,7 @@ class CreateLinkRequest:
         为“true”时，此API仅校验参数是否正确，不创建连接
 
         :param validate: The validate of this CreateLinkRequest.
-        :type: str
+        :type validate: str
         """
         self._validate = validate
 
@@ -99,7 +108,7 @@ class CreateLinkRequest:
 
 
         :return: The body of this CreateLinkRequest.
-        :rtype: CdmCreateAndUpdateLinkReq
+        :rtype: :class:`huaweicloudsdkcdm.v1.CdmCreateAndUpdateLinkReq`
         """
         return self._body
 
@@ -109,7 +118,7 @@ class CreateLinkRequest:
 
 
         :param body: The body of this CreateLinkRequest.
-        :type: CdmCreateAndUpdateLinkReq
+        :type body: :class:`huaweicloudsdkcdm.v1.CdmCreateAndUpdateLinkReq`
         """
         self._body = body
 

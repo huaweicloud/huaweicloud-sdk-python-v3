@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LdApiParameter:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class LdApiParameter:
     }
 
     def __init__(self, name=None, _in=None, default=None, description=None, required=None):
-        """LdApiParameter - a model defined in huaweicloud sdk"""
+        """LdApiParameter
+
+        The model defined in huaweicloud sdk
+
+        :param name: 参数名称： - 参数位于Headers、 Parameters时，用户自行定义，支持英文、数字、点、中划线、下划线，且需要英文开头，不区分大小写。 - 参数位于Body时候，参数以application/json、application/xml、application/text为名，但实际是以请求body里的键值对作为参数名和参数值，比如请求消息样例，参数名为application/json，参数值为{\\\&quot;table\\\&quot;:\\\&quot;apic01\\\&quot;,\\\&quot;id\\\&quot;:\\\&quot;1\\\&quot;}，后端取table：apic01，id：1这两个键值对作为入参。 - 注意：定义参数不要重名，否则会覆盖掉，当Headers、Parameters重复时候，Parameters会被覆盖，当Parameters和Body里的键值对重复时候，Parameters会被覆盖。
+        :type name: str
+        :param _in: 该参数在调用API时候所放的位置： - Headers ：放于请求头 - Parameters ：放于请求参数 - Body：放于请求体
+        :type _in: str
+        :param default: 参数默认值
+        :type default: str
+        :param description: 参数描述  不支持&lt;，&gt;字符
+        :type description: str
+        :param required: 参数是否必须。true：必须，false：不必须
+        :type required: bool
+        """
         
         
 
@@ -76,7 +89,7 @@ class LdApiParameter:
         参数名称： - 参数位于Headers、 Parameters时，用户自行定义，支持英文、数字、点、中划线、下划线，且需要英文开头，不区分大小写。 - 参数位于Body时候，参数以application/json、application/xml、application/text为名，但实际是以请求body里的键值对作为参数名和参数值，比如请求消息样例，参数名为application/json，参数值为{\\\"table\\\":\\\"apic01\\\",\\\"id\\\":\\\"1\\\"}，后端取table：apic01，id：1这两个键值对作为入参。 - 注意：定义参数不要重名，否则会覆盖掉，当Headers、Parameters重复时候，Parameters会被覆盖，当Parameters和Body里的键值对重复时候，Parameters会被覆盖。
 
         :param name: The name of this LdApiParameter.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -98,7 +111,7 @@ class LdApiParameter:
         该参数在调用API时候所放的位置： - Headers ：放于请求头 - Parameters ：放于请求参数 - Body：放于请求体
 
         :param _in: The _in of this LdApiParameter.
-        :type: str
+        :type _in: str
         """
         self.__in = _in
 
@@ -120,7 +133,7 @@ class LdApiParameter:
         参数默认值
 
         :param default: The default of this LdApiParameter.
-        :type: str
+        :type default: str
         """
         self._default = default
 
@@ -142,7 +155,7 @@ class LdApiParameter:
         参数描述  不支持<，>字符
 
         :param description: The description of this LdApiParameter.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -164,7 +177,7 @@ class LdApiParameter:
         参数是否必须。true：必须，false：不必须
 
         :param required: The required of this LdApiParameter.
-        :type: bool
+        :type required: bool
         """
         self._required = required
 

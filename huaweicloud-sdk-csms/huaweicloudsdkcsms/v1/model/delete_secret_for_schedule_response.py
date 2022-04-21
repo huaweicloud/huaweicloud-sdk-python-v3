@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteSecretForScheduleResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteSecretForScheduleResponse(SdkResponse):
     }
 
     def __init__(self, secret=None):
-        """DeleteSecretForScheduleResponse - a model defined in huaweicloud sdk"""
+        """DeleteSecretForScheduleResponse
+
+        The model defined in huaweicloud sdk
+
+        :param secret: 
+        :type secret: :class:`huaweicloudsdkcsms.v1.Secret`
+        """
         
         super(DeleteSecretForScheduleResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class DeleteSecretForScheduleResponse(SdkResponse):
 
 
         :return: The secret of this DeleteSecretForScheduleResponse.
-        :rtype: Secret
+        :rtype: :class:`huaweicloudsdkcsms.v1.Secret`
         """
         return self._secret
 
@@ -56,7 +61,7 @@ class DeleteSecretForScheduleResponse(SdkResponse):
 
 
         :param secret: The secret of this DeleteSecretForScheduleResponse.
-        :type: Secret
+        :type secret: :class:`huaweicloudsdkcsms.v1.Secret`
         """
         self._secret = secret
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowTasksRulesetsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowTasksRulesetsRequest:
     }
 
     def __init__(self, project_id=None, task_id=None, offset=None, limit=None):
-        """ShowTasksRulesetsRequest - a model defined in huaweicloud sdk"""
+        """ShowTasksRulesetsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: 项目ID
+        :type project_id: str
+        :param task_id: 任务ID
+        :type task_id: str
+        :param offset: 分页索引，偏移量
+        :type offset: int
+        :param limit: 每页显示的数量,每页最多显示1000条
+        :type limit: int
+        """
         
         
 
@@ -71,7 +82,7 @@ class ShowTasksRulesetsRequest:
         项目ID
 
         :param project_id: The project_id of this ShowTasksRulesetsRequest.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -93,7 +104,7 @@ class ShowTasksRulesetsRequest:
         任务ID
 
         :param task_id: The task_id of this ShowTasksRulesetsRequest.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -115,7 +126,7 @@ class ShowTasksRulesetsRequest:
         分页索引，偏移量
 
         :param offset: The offset of this ShowTasksRulesetsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -137,7 +148,7 @@ class ShowTasksRulesetsRequest:
         每页显示的数量,每页最多显示1000条
 
         :param limit: The limit of this ShowTasksRulesetsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDomainDetailRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowDomainDetailRequest:
     }
 
     def __init__(self, domain_id=None, enterprise_project_id=None):
-        """ShowDomainDetailRequest - a model defined in huaweicloud sdk"""
+        """ShowDomainDetailRequest
+
+        The model defined in huaweicloud sdk
+
+        :param domain_id: 加速域名ID。获取方法请参见查询加速域名。
+        :type domain_id: str
+        :param enterprise_project_id: 企业项目ID。该参数仅对开启了企业项目功能的用户生效，不传表示查询default项目。注意：当使用子账号调用接口时，该参数必传。
+        :type enterprise_project_id: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ShowDomainDetailRequest:
         加速域名ID。获取方法请参见查询加速域名。
 
         :param domain_id: The domain_id of this ShowDomainDetailRequest.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -84,7 +91,7 @@ class ShowDomainDetailRequest:
         企业项目ID。该参数仅对开启了企业项目功能的用户生效，不传表示查询default项目。注意：当使用子账号调用接口时，该参数必传。
 
         :param enterprise_project_id: The enterprise_project_id of this ShowDomainDetailRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 

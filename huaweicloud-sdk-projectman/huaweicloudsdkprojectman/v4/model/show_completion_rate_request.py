@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowCompletionRateRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowCompletionRateRequest:
     }
 
     def __init__(self, project_id=None, body=None):
-        """ShowCompletionRateRequest - a model defined in huaweicloud sdk"""
+        """ShowCompletionRateRequest
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: devcloud的项目ID
+        :type project_id: str
+        :param body: Body of the ShowCompletionRateRequest
+        :type body: :class:`huaweicloudsdkprojectman.v4.MetricRequest3`
+        """
         
         
 
@@ -62,7 +69,7 @@ class ShowCompletionRateRequest:
         devcloud的项目ID
 
         :param project_id: The project_id of this ShowCompletionRateRequest.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -72,7 +79,7 @@ class ShowCompletionRateRequest:
 
 
         :return: The body of this ShowCompletionRateRequest.
-        :rtype: MetricRequest3
+        :rtype: :class:`huaweicloudsdkprojectman.v4.MetricRequest3`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class ShowCompletionRateRequest:
 
 
         :param body: The body of this ShowCompletionRateRequest.
-        :type: MetricRequest3
+        :type body: :class:`huaweicloudsdkprojectman.v4.MetricRequest3`
         """
         self._body = body
 

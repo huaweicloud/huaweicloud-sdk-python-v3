@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListServicePermissionsDetailsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListServicePermissionsDetailsResponse(SdkResponse):
     }
 
     def __init__(self, permissions=None, total_count=None):
-        """ListServicePermissionsDetailsResponse - a model defined in huaweicloud sdk"""
+        """ListServicePermissionsDetailsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param permissions: permission列表。
+        :type permissions: list[:class:`huaweicloudsdkvpcep.v1.Permission`]
+        :param total_count: 满足查询条件的终端节点服务的白名单总条数，不受分页（即limit、offset参数）影响。
+        :type total_count: int
+        """
         
         super(ListServicePermissionsDetailsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListServicePermissionsDetailsResponse(SdkResponse):
         permission列表。
 
         :return: The permissions of this ListServicePermissionsDetailsResponse.
-        :rtype: list[Permission]
+        :rtype: list[:class:`huaweicloudsdkvpcep.v1.Permission`]
         """
         return self._permissions
 
@@ -63,7 +70,7 @@ class ListServicePermissionsDetailsResponse(SdkResponse):
         permission列表。
 
         :param permissions: The permissions of this ListServicePermissionsDetailsResponse.
-        :type: list[Permission]
+        :type permissions: list[:class:`huaweicloudsdkvpcep.v1.Permission`]
         """
         self._permissions = permissions
 
@@ -85,7 +92,7 @@ class ListServicePermissionsDetailsResponse(SdkResponse):
         满足查询条件的终端节点服务的白名单总条数，不受分页（即limit、offset参数）影响。
 
         :param total_count: The total_count of this ListServicePermissionsDetailsResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ModifyTransTemplateGroup:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ModifyTransTemplateGroup:
     }
 
     def __init__(self, group_id=None, name=None, videos=None, audio=None, video_common=None, common=None):
-        """ModifyTransTemplateGroup - a model defined in huaweicloud sdk"""
+        """ModifyTransTemplateGroup
+
+        The model defined in huaweicloud sdk
+
+        :param group_id: 模板组ID 
+        :type group_id: str
+        :param name: 模板组名称 
+        :type name: str
+        :param videos: 视频信息列表 
+        :type videos: list[:class:`huaweicloudsdkmpc.v1.VideoObj`]
+        :param audio: 
+        :type audio: :class:`huaweicloudsdkmpc.v1.Audio`
+        :param video_common: 
+        :type video_common: :class:`huaweicloudsdkmpc.v1.VideoCommon`
+        :param common: 
+        :type common: :class:`huaweicloudsdkmpc.v1.Common`
+        """
         
         
 
@@ -83,7 +98,7 @@ class ModifyTransTemplateGroup:
         模板组ID 
 
         :param group_id: The group_id of this ModifyTransTemplateGroup.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -105,7 +120,7 @@ class ModifyTransTemplateGroup:
         模板组名称 
 
         :param name: The name of this ModifyTransTemplateGroup.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -116,7 +131,7 @@ class ModifyTransTemplateGroup:
         视频信息列表 
 
         :return: The videos of this ModifyTransTemplateGroup.
-        :rtype: list[VideoObj]
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.VideoObj`]
         """
         return self._videos
 
@@ -127,7 +142,7 @@ class ModifyTransTemplateGroup:
         视频信息列表 
 
         :param videos: The videos of this ModifyTransTemplateGroup.
-        :type: list[VideoObj]
+        :type videos: list[:class:`huaweicloudsdkmpc.v1.VideoObj`]
         """
         self._videos = videos
 
@@ -137,7 +152,7 @@ class ModifyTransTemplateGroup:
 
 
         :return: The audio of this ModifyTransTemplateGroup.
-        :rtype: Audio
+        :rtype: :class:`huaweicloudsdkmpc.v1.Audio`
         """
         return self._audio
 
@@ -147,7 +162,7 @@ class ModifyTransTemplateGroup:
 
 
         :param audio: The audio of this ModifyTransTemplateGroup.
-        :type: Audio
+        :type audio: :class:`huaweicloudsdkmpc.v1.Audio`
         """
         self._audio = audio
 
@@ -157,7 +172,7 @@ class ModifyTransTemplateGroup:
 
 
         :return: The video_common of this ModifyTransTemplateGroup.
-        :rtype: VideoCommon
+        :rtype: :class:`huaweicloudsdkmpc.v1.VideoCommon`
         """
         return self._video_common
 
@@ -167,7 +182,7 @@ class ModifyTransTemplateGroup:
 
 
         :param video_common: The video_common of this ModifyTransTemplateGroup.
-        :type: VideoCommon
+        :type video_common: :class:`huaweicloudsdkmpc.v1.VideoCommon`
         """
         self._video_common = video_common
 
@@ -177,7 +192,7 @@ class ModifyTransTemplateGroup:
 
 
         :return: The common of this ModifyTransTemplateGroup.
-        :rtype: Common
+        :rtype: :class:`huaweicloudsdkmpc.v1.Common`
         """
         return self._common
 
@@ -187,7 +202,7 @@ class ModifyTransTemplateGroup:
 
 
         :param common: The common of this ModifyTransTemplateGroup.
-        :type: Common
+        :type common: :class:`huaweicloudsdkmpc.v1.Common`
         """
         self._common = common
 

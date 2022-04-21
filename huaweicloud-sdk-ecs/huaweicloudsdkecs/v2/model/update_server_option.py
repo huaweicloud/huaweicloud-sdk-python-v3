@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateServerOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateServerOption:
     }
 
     def __init__(self, name=None, description=None, hostname=None):
-        """UpdateServerOption - a model defined in huaweicloud sdk"""
+        """UpdateServerOption
+
+        The model defined in huaweicloud sdk
+
+        :param name: 修改后的云服务器名称。  只能由中文字符、英文字母、数字及“_”、“-”、“.”组成，且长度为[1-64]个字符。
+        :type name: str
+        :param description: 对弹性云服务器的任意描述。  不能包含“&lt;”,“&gt;”，且长度范围为[0-85]个字符。
+        :type description: str
+        :param hostname: 修改云服务hostname。  命令规范：长度为 [1-64] 个字符，允许使用点号(.)分隔字符成多段，每段允许使用大小写字母、数字或连字符(-)，但不能连续使用点号(.)或连字符(-),不能以点号(.)或连字符(-)开头或结尾，不能出现（.-）和（-.）。
+        :type hostname: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class UpdateServerOption:
         修改后的云服务器名称。  只能由中文字符、英文字母、数字及“_”、“-”、“.”组成，且长度为[1-64]个字符。
 
         :param name: The name of this UpdateServerOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -90,7 +99,7 @@ class UpdateServerOption:
         对弹性云服务器的任意描述。  不能包含“<”,“>”，且长度范围为[0-85]个字符。
 
         :param description: The description of this UpdateServerOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -112,7 +121,7 @@ class UpdateServerOption:
         修改云服务hostname。  命令规范：长度为 [1-64] 个字符，允许使用点号(.)分隔字符成多段，每段允许使用大小写字母、数字或连字符(-)，但不能连续使用点号(.)或连字符(-),不能以点号(.)或连字符(-)开头或结尾，不能出现（.-）和（-.）。
 
         :param hostname: The hostname of this UpdateServerOption.
-        :type: str
+        :type hostname: str
         """
         self._hostname = hostname
 

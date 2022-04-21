@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateMfaDeviceReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateMfaDeviceReq:
     }
 
     def __init__(self, virtual_mfa_device=None):
-        """CreateMfaDeviceReq - a model defined in huaweicloud sdk"""
+        """CreateMfaDeviceReq
+
+        The model defined in huaweicloud sdk
+
+        :param virtual_mfa_device: 
+        :type virtual_mfa_device: :class:`huaweicloudsdkiam.v3.CreateMfaDevice`
+        """
         
         
 
@@ -45,7 +50,7 @@ class CreateMfaDeviceReq:
 
 
         :return: The virtual_mfa_device of this CreateMfaDeviceReq.
-        :rtype: CreateMfaDevice
+        :rtype: :class:`huaweicloudsdkiam.v3.CreateMfaDevice`
         """
         return self._virtual_mfa_device
 
@@ -55,7 +60,7 @@ class CreateMfaDeviceReq:
 
 
         :param virtual_mfa_device: The virtual_mfa_device of this CreateMfaDeviceReq.
-        :type: CreateMfaDevice
+        :type virtual_mfa_device: :class:`huaweicloudsdkiam.v3.CreateMfaDevice`
         """
         self._virtual_mfa_device = virtual_mfa_device
 

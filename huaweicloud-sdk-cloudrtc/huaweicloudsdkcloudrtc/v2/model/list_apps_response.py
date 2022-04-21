@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAppsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListAppsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, apps=None, x_request_id=None):
-        """ListAppsResponse - a model defined in huaweicloud sdk"""
+        """ListAppsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: app的总数
+        :type count: int
+        :param apps: app的列表
+        :type apps: list[:class:`huaweicloudsdkcloudrtc.v2.App`]
+        :param x_request_id: 
+        :type x_request_id: str
+        """
         
         super(ListAppsResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListAppsResponse(SdkResponse):
         app的总数
 
         :param count: The count of this ListAppsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -79,7 +88,7 @@ class ListAppsResponse(SdkResponse):
         app的列表
 
         :return: The apps of this ListAppsResponse.
-        :rtype: list[App]
+        :rtype: list[:class:`huaweicloudsdkcloudrtc.v2.App`]
         """
         return self._apps
 
@@ -90,7 +99,7 @@ class ListAppsResponse(SdkResponse):
         app的列表
 
         :param apps: The apps of this ListAppsResponse.
-        :type: list[App]
+        :type apps: list[:class:`huaweicloudsdkcloudrtc.v2.App`]
         """
         self._apps = apps
 
@@ -110,7 +119,7 @@ class ListAppsResponse(SdkResponse):
 
 
         :param x_request_id: The x_request_id of this ListAppsResponse.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 

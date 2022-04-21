@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExtendsParamV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class ExtendsParamV2:
     }
 
     def __init__(self, tips=None, required=None, length=None, language=None, param_key=None, param_name=None, param_type=None, param_desc=None, default_value=None, max_value=None, min_value=None, select_item=None, is_show=None, is_sensitive=None):
-        """ExtendsParamV2 - a model defined in huaweicloud sdk"""
+        """ExtendsParamV2
+
+        The model defined in huaweicloud sdk
+
+        :param tips: 提示
+        :type tips: str
+        :param required: 是否必填
+        :type required: int
+        :param length: 限制长度
+        :type length: int
+        :param language: 语言
+        :type language: str
+        :param param_key: 参数标识
+        :type param_key: str
+        :param param_name: 参数名称
+        :type param_name: str
+        :param param_type: 参数类型
+        :type param_type: int
+        :param param_desc: 参数描述
+        :type param_desc: str
+        :param default_value: 默认值
+        :type default_value: str
+        :param max_value: 最大值
+        :type max_value: int
+        :param min_value: 最小值
+        :type min_value: int
+        :param select_item: 选项值
+        :type select_item: str
+        :param is_show: 是否展示
+        :type is_show: int
+        :param is_sensitive: 是否敏感
+        :type is_sensitive: int
+        """
         
         
 
@@ -123,7 +154,7 @@ class ExtendsParamV2:
         提示
 
         :param tips: The tips of this ExtendsParamV2.
-        :type: str
+        :type tips: str
         """
         self._tips = tips
 
@@ -145,7 +176,7 @@ class ExtendsParamV2:
         是否必填
 
         :param required: The required of this ExtendsParamV2.
-        :type: int
+        :type required: int
         """
         self._required = required
 
@@ -167,7 +198,7 @@ class ExtendsParamV2:
         限制长度
 
         :param length: The length of this ExtendsParamV2.
-        :type: int
+        :type length: int
         """
         self._length = length
 
@@ -189,7 +220,7 @@ class ExtendsParamV2:
         语言
 
         :param language: The language of this ExtendsParamV2.
-        :type: str
+        :type language: str
         """
         self._language = language
 
@@ -211,7 +242,7 @@ class ExtendsParamV2:
         参数标识
 
         :param param_key: The param_key of this ExtendsParamV2.
-        :type: str
+        :type param_key: str
         """
         self._param_key = param_key
 
@@ -233,7 +264,7 @@ class ExtendsParamV2:
         参数名称
 
         :param param_name: The param_name of this ExtendsParamV2.
-        :type: str
+        :type param_name: str
         """
         self._param_name = param_name
 
@@ -255,7 +286,7 @@ class ExtendsParamV2:
         参数类型
 
         :param param_type: The param_type of this ExtendsParamV2.
-        :type: int
+        :type param_type: int
         """
         self._param_type = param_type
 
@@ -277,7 +308,7 @@ class ExtendsParamV2:
         参数描述
 
         :param param_desc: The param_desc of this ExtendsParamV2.
-        :type: str
+        :type param_desc: str
         """
         self._param_desc = param_desc
 
@@ -299,7 +330,7 @@ class ExtendsParamV2:
         默认值
 
         :param default_value: The default_value of this ExtendsParamV2.
-        :type: str
+        :type default_value: str
         """
         self._default_value = default_value
 
@@ -321,7 +352,7 @@ class ExtendsParamV2:
         最大值
 
         :param max_value: The max_value of this ExtendsParamV2.
-        :type: int
+        :type max_value: int
         """
         self._max_value = max_value
 
@@ -343,7 +374,7 @@ class ExtendsParamV2:
         最小值
 
         :param min_value: The min_value of this ExtendsParamV2.
-        :type: int
+        :type min_value: int
         """
         self._min_value = min_value
 
@@ -365,7 +396,7 @@ class ExtendsParamV2:
         选项值
 
         :param select_item: The select_item of this ExtendsParamV2.
-        :type: str
+        :type select_item: str
         """
         self._select_item = select_item
 
@@ -387,7 +418,7 @@ class ExtendsParamV2:
         是否展示
 
         :param is_show: The is_show of this ExtendsParamV2.
-        :type: int
+        :type is_show: int
         """
         self._is_show = is_show
 
@@ -409,7 +440,7 @@ class ExtendsParamV2:
         是否敏感
 
         :param is_sensitive: The is_sensitive of this ExtendsParamV2.
-        :type: int
+        :type is_sensitive: int
         """
         self._is_sensitive = is_sensitive
 

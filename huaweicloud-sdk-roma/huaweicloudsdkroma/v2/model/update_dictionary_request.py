@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDictionaryRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateDictionaryRequest:
     }
 
     def __init__(self, dict_id=None, instance_id=None, body=None):
-        """UpdateDictionaryRequest - a model defined in huaweicloud sdk"""
+        """UpdateDictionaryRequest
+
+        The model defined in huaweicloud sdk
+
+        :param dict_id: 字典ID
+        :type dict_id: str
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param body: Body of the UpdateDictionaryRequest
+        :type body: :class:`huaweicloudsdkroma.v2.UpdateDictionary`
+        """
         
         
 
@@ -66,7 +75,7 @@ class UpdateDictionaryRequest:
         字典ID
 
         :param dict_id: The dict_id of this UpdateDictionaryRequest.
-        :type: str
+        :type dict_id: str
         """
         self._dict_id = dict_id
 
@@ -88,7 +97,7 @@ class UpdateDictionaryRequest:
         实例ID
 
         :param instance_id: The instance_id of this UpdateDictionaryRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -98,7 +107,7 @@ class UpdateDictionaryRequest:
 
 
         :return: The body of this UpdateDictionaryRequest.
-        :rtype: UpdateDictionary
+        :rtype: :class:`huaweicloudsdkroma.v2.UpdateDictionary`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class UpdateDictionaryRequest:
 
 
         :param body: The body of this UpdateDictionaryRequest.
-        :type: UpdateDictionary
+        :type body: :class:`huaweicloudsdkroma.v2.UpdateDictionary`
         """
         self._body = body
 

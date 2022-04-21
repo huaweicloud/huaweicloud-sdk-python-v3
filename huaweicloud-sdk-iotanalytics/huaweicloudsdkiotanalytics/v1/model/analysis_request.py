@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AnalysisRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class AnalysisRequest:
     }
 
     def __init__(self, name=None, transform=None, aggregate=None, stream=None):
-        """AnalysisRequest - a model defined in huaweicloud sdk"""
+        """AnalysisRequest
+
+        The model defined in huaweicloud sdk
+
+        :param name: 分析任务名，必须是模型中已存在的
+        :type name: str
+        :param transform: 
+        :type transform: :class:`huaweicloudsdkiotanalytics.v1.DTTransformRequest`
+        :param aggregate: 
+        :type aggregate: :class:`huaweicloudsdkiotanalytics.v1.DTAggregateRequest`
+        :param stream: 
+        :type stream: :class:`huaweicloudsdkiotanalytics.v1.DTStreamRequest`
+        """
         
         
 
@@ -72,7 +83,7 @@ class AnalysisRequest:
         分析任务名，必须是模型中已存在的
 
         :param name: The name of this AnalysisRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -82,7 +93,7 @@ class AnalysisRequest:
 
 
         :return: The transform of this AnalysisRequest.
-        :rtype: DTTransformRequest
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.DTTransformRequest`
         """
         return self._transform
 
@@ -92,7 +103,7 @@ class AnalysisRequest:
 
 
         :param transform: The transform of this AnalysisRequest.
-        :type: DTTransformRequest
+        :type transform: :class:`huaweicloudsdkiotanalytics.v1.DTTransformRequest`
         """
         self._transform = transform
 
@@ -102,7 +113,7 @@ class AnalysisRequest:
 
 
         :return: The aggregate of this AnalysisRequest.
-        :rtype: DTAggregateRequest
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.DTAggregateRequest`
         """
         return self._aggregate
 
@@ -112,7 +123,7 @@ class AnalysisRequest:
 
 
         :param aggregate: The aggregate of this AnalysisRequest.
-        :type: DTAggregateRequest
+        :type aggregate: :class:`huaweicloudsdkiotanalytics.v1.DTAggregateRequest`
         """
         self._aggregate = aggregate
 
@@ -122,7 +133,7 @@ class AnalysisRequest:
 
 
         :return: The stream of this AnalysisRequest.
-        :rtype: DTStreamRequest
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.DTStreamRequest`
         """
         return self._stream
 
@@ -132,7 +143,7 @@ class AnalysisRequest:
 
 
         :param stream: The stream of this AnalysisRequest.
-        :type: DTStreamRequest
+        :type stream: :class:`huaweicloudsdkiotanalytics.v1.DTStreamRequest`
         """
         self._stream = stream
 

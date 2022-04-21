@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LogList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class LogList:
     }
 
     def __init__(self, content=None, date=None, level=None):
-        """LogList - a model defined in huaweicloud sdk"""
+        """LogList
+
+        The model defined in huaweicloud sdk
+
+        :param content: 日志内容。
+        :type content: str
+        :param date: 日期。
+        :type date: str
+        :param level: 日志级别。
+        :type level: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class LogList:
         日志内容。
 
         :param content: The content of this LogList.
-        :type: str
+        :type content: str
         """
         self._content = content
 
@@ -90,7 +99,7 @@ class LogList:
         日期。
 
         :param date: The date of this LogList.
-        :type: str
+        :type date: str
         """
         self._date = date
 
@@ -112,7 +121,7 @@ class LogList:
         日志级别。
 
         :param level: The level of this LogList.
-        :type: str
+        :type level: str
         """
         self._level = level
 

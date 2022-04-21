@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KafkaSecurity:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class KafkaSecurity:
     }
 
     def __init__(self, trust_store_key_name=None, trust_store_key=None, trust_store_password=None, type=None):
-        """KafkaSecurity - a model defined in huaweicloud sdk"""
+        """KafkaSecurity
+
+        The model defined in huaweicloud sdk
+
+        :param trust_store_key_name: 证书名称，使用安全认证时必填。
+        :type trust_store_key_name: str
+        :param trust_store_key: 安全证书base64转码后的值，使用安全认证时必填。
+        :type trust_store_key: str
+        :param trust_store_password: 证书密码，使用安全认证时必填。
+        :type trust_store_password: str
+        :param type: 认证类型，PLAINTEXT为无认证，，使用安全认证时必填。
+        :type type: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class KafkaSecurity:
         证书名称，使用安全认证时必填。
 
         :param trust_store_key_name: The trust_store_key_name of this KafkaSecurity.
-        :type: str
+        :type trust_store_key_name: str
         """
         self._trust_store_key_name = trust_store_key_name
 
@@ -95,7 +106,7 @@ class KafkaSecurity:
         安全证书base64转码后的值，使用安全认证时必填。
 
         :param trust_store_key: The trust_store_key of this KafkaSecurity.
-        :type: str
+        :type trust_store_key: str
         """
         self._trust_store_key = trust_store_key
 
@@ -117,7 +128,7 @@ class KafkaSecurity:
         证书密码，使用安全认证时必填。
 
         :param trust_store_password: The trust_store_password of this KafkaSecurity.
-        :type: str
+        :type trust_store_password: str
         """
         self._trust_store_password = trust_store_password
 
@@ -139,7 +150,7 @@ class KafkaSecurity:
         认证类型，PLAINTEXT为无认证，，使用安全认证时必填。
 
         :param type: The type of this KafkaSecurity.
-        :type: str
+        :type type: str
         """
         self._type = type
 

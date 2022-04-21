@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SchemaPath:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class SchemaPath:
     }
 
     def __init__(self, path=None, log=None, status=None, cause=None):
-        """SchemaPath - a model defined in huaweicloud sdk"""
+        """SchemaPath
+
+        The model defined in huaweicloud sdk
+
+        :param path: OBS文件路径
+        :type path: str
+        :param log: OBS文件导入日志存储文件
+        :type log: str
+        :param status: - OBS文件导入状态。 - success：完全成功 - failed：完全失败 - partFailed：部分成功
+        :type status: str
+        :param cause: 导入失败原因
+        :type cause: str
+        """
         
         
 
@@ -71,7 +82,7 @@ class SchemaPath:
         OBS文件路径
 
         :param path: The path of this SchemaPath.
-        :type: str
+        :type path: str
         """
         self._path = path
 
@@ -93,7 +104,7 @@ class SchemaPath:
         OBS文件导入日志存储文件
 
         :param log: The log of this SchemaPath.
-        :type: str
+        :type log: str
         """
         self._log = log
 
@@ -115,7 +126,7 @@ class SchemaPath:
         - OBS文件导入状态。 - success：完全成功 - failed：完全失败 - partFailed：部分成功
 
         :param status: The status of this SchemaPath.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -137,7 +148,7 @@ class SchemaPath:
         导入失败原因
 
         :param cause: The cause of this SchemaPath.
-        :type: str
+        :type cause: str
         """
         self._cause = cause
 

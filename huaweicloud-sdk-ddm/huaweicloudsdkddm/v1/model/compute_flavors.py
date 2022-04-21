@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ComputeFlavors:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class ComputeFlavors:
     }
 
     def __init__(self, id=None, type_code=None, code=None, iaas_code=None, cpu=None, mem=None, max_connections=None, server_type=None, architecture=None, az_status=None, region_status=None, group_type=None, db_type=None, extend_fields=None):
-        """ComputeFlavors - a model defined in huaweicloud sdk"""
+        """ComputeFlavors
+
+        The model defined in huaweicloud sdk
+
+        :param id: 规格id。
+        :type id: str
+        :param type_code: 资源类型编码。
+        :type type_code: str
+        :param code: DDM内部记录的虚机规格类型。
+        :type code: str
+        :param iaas_code: iaas记录的虚机规格类型。
+        :type iaas_code: str
+        :param cpu: cpu核数。
+        :type cpu: str
+        :param mem: 内存大小,单位:G。
+        :type mem: str
+        :param max_connections: 最大连接数。
+        :type max_connections: str
+        :param server_type: 计算资源服务类型。
+        :type server_type: str
+        :param architecture: 计算资源架构类型，目前分X86和ARM两种。
+        :type architecture: str
+        :param az_status: 可用区状态。
+        :type az_status: object
+        :param region_status: 局点状态。
+        :type region_status: str
+        :param group_type: 计算资源架构类型，目前分X86和ARM两种。
+        :type group_type: str
+        :param db_type: 服务引擎类型。
+        :type db_type: str
+        :param extend_fields: 扩展字段，目前存储可用区相关信息。
+        :type extend_fields: object
+        """
         
         
 
@@ -123,7 +154,7 @@ class ComputeFlavors:
         规格id。
 
         :param id: The id of this ComputeFlavors.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -145,7 +176,7 @@ class ComputeFlavors:
         资源类型编码。
 
         :param type_code: The type_code of this ComputeFlavors.
-        :type: str
+        :type type_code: str
         """
         self._type_code = type_code
 
@@ -167,7 +198,7 @@ class ComputeFlavors:
         DDM内部记录的虚机规格类型。
 
         :param code: The code of this ComputeFlavors.
-        :type: str
+        :type code: str
         """
         self._code = code
 
@@ -189,7 +220,7 @@ class ComputeFlavors:
         iaas记录的虚机规格类型。
 
         :param iaas_code: The iaas_code of this ComputeFlavors.
-        :type: str
+        :type iaas_code: str
         """
         self._iaas_code = iaas_code
 
@@ -211,7 +242,7 @@ class ComputeFlavors:
         cpu核数。
 
         :param cpu: The cpu of this ComputeFlavors.
-        :type: str
+        :type cpu: str
         """
         self._cpu = cpu
 
@@ -233,7 +264,7 @@ class ComputeFlavors:
         内存大小,单位:G。
 
         :param mem: The mem of this ComputeFlavors.
-        :type: str
+        :type mem: str
         """
         self._mem = mem
 
@@ -255,7 +286,7 @@ class ComputeFlavors:
         最大连接数。
 
         :param max_connections: The max_connections of this ComputeFlavors.
-        :type: str
+        :type max_connections: str
         """
         self._max_connections = max_connections
 
@@ -277,7 +308,7 @@ class ComputeFlavors:
         计算资源服务类型。
 
         :param server_type: The server_type of this ComputeFlavors.
-        :type: str
+        :type server_type: str
         """
         self._server_type = server_type
 
@@ -299,7 +330,7 @@ class ComputeFlavors:
         计算资源架构类型，目前分X86和ARM两种。
 
         :param architecture: The architecture of this ComputeFlavors.
-        :type: str
+        :type architecture: str
         """
         self._architecture = architecture
 
@@ -321,7 +352,7 @@ class ComputeFlavors:
         可用区状态。
 
         :param az_status: The az_status of this ComputeFlavors.
-        :type: object
+        :type az_status: object
         """
         self._az_status = az_status
 
@@ -343,7 +374,7 @@ class ComputeFlavors:
         局点状态。
 
         :param region_status: The region_status of this ComputeFlavors.
-        :type: str
+        :type region_status: str
         """
         self._region_status = region_status
 
@@ -365,7 +396,7 @@ class ComputeFlavors:
         计算资源架构类型，目前分X86和ARM两种。
 
         :param group_type: The group_type of this ComputeFlavors.
-        :type: str
+        :type group_type: str
         """
         self._group_type = group_type
 
@@ -387,7 +418,7 @@ class ComputeFlavors:
         服务引擎类型。
 
         :param db_type: The db_type of this ComputeFlavors.
-        :type: str
+        :type db_type: str
         """
         self._db_type = db_type
 
@@ -409,7 +440,7 @@ class ComputeFlavors:
         扩展字段，目前存储可用区相关信息。
 
         :param extend_fields: The extend_fields of this ComputeFlavors.
-        :type: object
+        :type extend_fields: object
         """
         self._extend_fields = extend_fields
 

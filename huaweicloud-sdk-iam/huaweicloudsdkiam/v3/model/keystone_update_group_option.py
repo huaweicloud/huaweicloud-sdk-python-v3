@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneUpdateGroupOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class KeystoneUpdateGroupOption:
     }
 
     def __init__(self, description=None, domain_id=None, name=None):
-        """KeystoneUpdateGroupOption - a model defined in huaweicloud sdk"""
+        """KeystoneUpdateGroupOption
+
+        The model defined in huaweicloud sdk
+
+        :param description: 用户组描述信息，长度小于等于255字节。name与description至少填写一个。
+        :type description: str
+        :param domain_id: 用户组所属账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
+        :type domain_id: str
+        :param name: 用户组名，长度小于等于64字节。name与description至少填写一个。
+        :type name: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class KeystoneUpdateGroupOption:
         用户组描述信息，长度小于等于255字节。name与description至少填写一个。
 
         :param description: The description of this KeystoneUpdateGroupOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -90,7 +99,7 @@ class KeystoneUpdateGroupOption:
         用户组所属账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param domain_id: The domain_id of this KeystoneUpdateGroupOption.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -112,7 +121,7 @@ class KeystoneUpdateGroupOption:
         用户组名，长度小于等于64字节。name与description至少填写一个。
 
         :param name: The name of this KeystoneUpdateGroupOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 

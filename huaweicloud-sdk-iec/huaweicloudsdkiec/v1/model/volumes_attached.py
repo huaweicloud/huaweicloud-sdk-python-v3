@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VolumesAttached:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class VolumesAttached:
     }
 
     def __init__(self, id=None, boot_index=None, delete_on_termination=None, device=None):
-        """VolumesAttached - a model defined in huaweicloud sdk"""
+        """VolumesAttached
+
+        The model defined in huaweicloud sdk
+
+        :param id: 磁盘ID，格式为UUID。
+        :type id: str
+        :param boot_index: 启动标识。  - “0”代表系统盘 - 非“0”为数据盘。
+        :type boot_index: str
+        :param delete_on_termination: 删边缘实例时是否一并删除该磁盘。  - true：是 - false：否
+        :type delete_on_termination: str
+        :param device: 硬盘挂载盘符，即磁盘挂载点。
+        :type device: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class VolumesAttached:
         磁盘ID，格式为UUID。
 
         :param id: The id of this VolumesAttached.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -95,7 +106,7 @@ class VolumesAttached:
         启动标识。  - “0”代表系统盘 - 非“0”为数据盘。
 
         :param boot_index: The boot_index of this VolumesAttached.
-        :type: str
+        :type boot_index: str
         """
         self._boot_index = boot_index
 
@@ -117,7 +128,7 @@ class VolumesAttached:
         删边缘实例时是否一并删除该磁盘。  - true：是 - false：否
 
         :param delete_on_termination: The delete_on_termination of this VolumesAttached.
-        :type: str
+        :type delete_on_termination: str
         """
         self._delete_on_termination = delete_on_termination
 
@@ -139,7 +150,7 @@ class VolumesAttached:
         硬盘挂载盘符，即磁盘挂载点。
 
         :param device: The device of this VolumesAttached.
-        :type: str
+        :type device: str
         """
         self._device = device
 

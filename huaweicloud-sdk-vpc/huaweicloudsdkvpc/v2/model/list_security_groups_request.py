@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSecurityGroupsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListSecurityGroupsRequest:
     }
 
     def __init__(self, limit=None, marker=None, vpc_id=None, enterprise_project_id=None):
-        """ListSecurityGroupsRequest - a model defined in huaweicloud sdk"""
+        """ListSecurityGroupsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 每页返回的个数
+        :type limit: int
+        :param marker: 分页查询起始的资源ID，为空时查询第一页
+        :type marker: str
+        :param vpc_id: 按照vpc_id过滤查询
+        :type vpc_id: str
+        :param enterprise_project_id: 功能说明：企业项目ID。可以使用该字段过滤某个企业项目下的安全组。  取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。若需要查询当前用户所有企业项目绑定的安全组，或者企业项目子账号需要进行安全组列表展示，请传参all_granted_eps。
+        :type enterprise_project_id: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class ListSecurityGroupsRequest:
         每页返回的个数
 
         :param limit: The limit of this ListSecurityGroupsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -95,7 +106,7 @@ class ListSecurityGroupsRequest:
         分页查询起始的资源ID，为空时查询第一页
 
         :param marker: The marker of this ListSecurityGroupsRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -117,7 +128,7 @@ class ListSecurityGroupsRequest:
         按照vpc_id过滤查询
 
         :param vpc_id: The vpc_id of this ListSecurityGroupsRequest.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -139,7 +150,7 @@ class ListSecurityGroupsRequest:
         功能说明：企业项目ID。可以使用该字段过滤某个企业项目下的安全组。  取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。若需要查询当前用户所有企业项目绑定的安全组，或者企业项目子账号需要进行安全组列表展示，请传参all_granted_eps。
 
         :param enterprise_project_id: The enterprise_project_id of this ListSecurityGroupsRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 

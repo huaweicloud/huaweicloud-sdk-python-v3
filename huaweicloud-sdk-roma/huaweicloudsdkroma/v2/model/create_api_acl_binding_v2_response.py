@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateApiAclBindingV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateApiAclBindingV2Response(SdkResponse):
     }
 
     def __init__(self, acl_bindings=None):
-        """CreateApiAclBindingV2Response - a model defined in huaweicloud sdk"""
+        """CreateApiAclBindingV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param acl_bindings: API与ACL的绑定关系列表
+        :type acl_bindings: list[:class:`huaweicloudsdkroma.v2.AclApiBindingInfo`]
+        """
         
         super(CreateApiAclBindingV2Response, self).__init__()
 
@@ -47,7 +52,7 @@ class CreateApiAclBindingV2Response(SdkResponse):
         API与ACL的绑定关系列表
 
         :return: The acl_bindings of this CreateApiAclBindingV2Response.
-        :rtype: list[AclApiBindingInfo]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.AclApiBindingInfo`]
         """
         return self._acl_bindings
 
@@ -58,7 +63,7 @@ class CreateApiAclBindingV2Response(SdkResponse):
         API与ACL的绑定关系列表
 
         :param acl_bindings: The acl_bindings of this CreateApiAclBindingV2Response.
-        :type: list[AclApiBindingInfo]
+        :type acl_bindings: list[:class:`huaweicloudsdkroma.v2.AclApiBindingInfo`]
         """
         self._acl_bindings = acl_bindings
 

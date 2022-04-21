@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListHostsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ListHostsRequest:
     }
 
     def __init__(self, group_id=None, as_proxy=None, offset=None, limit=None, name=None, sort_key=None, sort_dir=None, with_auth=None):
-        """ListHostsRequest - a model defined in huaweicloud sdk"""
+        """ListHostsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param group_id: 主机组id
+        :type group_id: str
+        :param as_proxy: 是否为代理机
+        :type as_proxy: bool
+        :param offset: 偏移量,表示从此偏移量开始查询,offset大于等于0
+        :type offset: int
+        :param limit: 每页显示的条目数量，默认为1000
+        :type limit: int
+        :param name: 主机名，可输入中英文，数字和符号(-_.)
+        :type name: str
+        :param sort_key: 排序字段，支持：AS_PROXY|HOST_NAME|OS|OWNER_NAME|as_proxy|host_name|os|owner_name|nickName。不填默认为：as_proxy
+        :type sort_key: str
+        :param sort_dir: 排序方式,默认为：DESC。DESC：降序排序。ASC：升序排序
+        :type sort_dir: str
+        :param with_auth: 返回结果是否加密
+        :type with_auth: bool
+        """
         
         
 
@@ -92,7 +111,7 @@ class ListHostsRequest:
         主机组id
 
         :param group_id: The group_id of this ListHostsRequest.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -114,7 +133,7 @@ class ListHostsRequest:
         是否为代理机
 
         :param as_proxy: The as_proxy of this ListHostsRequest.
-        :type: bool
+        :type as_proxy: bool
         """
         self._as_proxy = as_proxy
 
@@ -136,7 +155,7 @@ class ListHostsRequest:
         偏移量,表示从此偏移量开始查询,offset大于等于0
 
         :param offset: The offset of this ListHostsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -158,7 +177,7 @@ class ListHostsRequest:
         每页显示的条目数量，默认为1000
 
         :param limit: The limit of this ListHostsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -180,7 +199,7 @@ class ListHostsRequest:
         主机名，可输入中英文，数字和符号(-_.)
 
         :param name: The name of this ListHostsRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -202,7 +221,7 @@ class ListHostsRequest:
         排序字段，支持：AS_PROXY|HOST_NAME|OS|OWNER_NAME|as_proxy|host_name|os|owner_name|nickName。不填默认为：as_proxy
 
         :param sort_key: The sort_key of this ListHostsRequest.
-        :type: str
+        :type sort_key: str
         """
         self._sort_key = sort_key
 
@@ -210,7 +229,7 @@ class ListHostsRequest:
     def sort_dir(self):
         """Gets the sort_dir of this ListHostsRequest.
 
-        排序方式,默认为：DESC
+        排序方式,默认为：DESC。DESC：降序排序。ASC：升序排序
 
         :return: The sort_dir of this ListHostsRequest.
         :rtype: str
@@ -221,10 +240,10 @@ class ListHostsRequest:
     def sort_dir(self, sort_dir):
         """Sets the sort_dir of this ListHostsRequest.
 
-        排序方式,默认为：DESC
+        排序方式,默认为：DESC。DESC：降序排序。ASC：升序排序
 
         :param sort_dir: The sort_dir of this ListHostsRequest.
-        :type: str
+        :type sort_dir: str
         """
         self._sort_dir = sort_dir
 
@@ -246,7 +265,7 @@ class ListHostsRequest:
         返回结果是否加密
 
         :param with_auth: The with_auth of this ListHostsRequest.
-        :type: bool
+        :type with_auth: bool
         """
         self._with_auth = with_auth
 

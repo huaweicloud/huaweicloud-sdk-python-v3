@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TimeRange:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class TimeRange:
     }
 
     def __init__(self, start_time=None, end_time=None, days_of_week=None):
-        """TimeRange - a model defined in huaweicloud sdk"""
+        """TimeRange
+
+        The model defined in huaweicloud sdk
+
+        :param start_time: **参数说明**：规则条件触发的开始时间，格式：HH:mm。
+        :type start_time: str
+        :param end_time: **参数说明**：规则条件触发的结束时间，格式：HH:mm。若结束时间与开始时间一致，则时间为全天。
+        :type end_time: str
+        :param days_of_week: **参数说明**：星期列表，以逗号分隔。1代表周日，2代表周一，依次类推，默认为每天。星期列表中的日期为开始时间的日期。 **取值范围**：只允许数字和逗号的组合，数字不小于1不大于7，数量不超过7个，以逗号隔开
+        :type days_of_week: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class TimeRange:
         **参数说明**：规则条件触发的开始时间，格式：HH:mm。
 
         :param start_time: The start_time of this TimeRange.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -88,7 +97,7 @@ class TimeRange:
         **参数说明**：规则条件触发的结束时间，格式：HH:mm。若结束时间与开始时间一致，则时间为全天。
 
         :param end_time: The end_time of this TimeRange.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -110,7 +119,7 @@ class TimeRange:
         **参数说明**：星期列表，以逗号分隔。1代表周日，2代表周一，依次类推，默认为每天。星期列表中的日期为开始时间的日期。 **取值范围**：只允许数字和逗号的组合，数字不小于1不大于7，数量不超过7个，以逗号隔开
 
         :param days_of_week: The days_of_week of this TimeRange.
-        :type: str
+        :type days_of_week: str
         """
         self._days_of_week = days_of_week
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TemplateProductExt:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class TemplateProductExt:
     }
 
     def __init__(self, id=None, productshort=None, product_name=None, home_link=None, api_link=None, sdk_link=None, doc_link=None, logo_link=None):
-        """TemplateProductExt - a model defined in huaweicloud sdk"""
+        """TemplateProductExt
+
+        The model defined in huaweicloud sdk
+
+        :param id: 产品id。
+        :type id: str
+        :param productshort: 产品短名。
+        :type productshort: str
+        :param product_name: 产品名。
+        :type product_name: str
+        :param home_link: 首页链接。
+        :type home_link: str
+        :param api_link: api调试链接。
+        :type api_link: str
+        :param sdk_link: sdk下载链接。
+        :type sdk_link: str
+        :param doc_link: 文档链接。
+        :type doc_link: str
+        :param logo_link: logo链接。
+        :type logo_link: str
+        """
         
         
 
@@ -93,7 +112,7 @@ class TemplateProductExt:
         产品id。
 
         :param id: The id of this TemplateProductExt.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -115,7 +134,7 @@ class TemplateProductExt:
         产品短名。
 
         :param productshort: The productshort of this TemplateProductExt.
-        :type: str
+        :type productshort: str
         """
         self._productshort = productshort
 
@@ -137,7 +156,7 @@ class TemplateProductExt:
         产品名。
 
         :param product_name: The product_name of this TemplateProductExt.
-        :type: str
+        :type product_name: str
         """
         self._product_name = product_name
 
@@ -159,7 +178,7 @@ class TemplateProductExt:
         首页链接。
 
         :param home_link: The home_link of this TemplateProductExt.
-        :type: str
+        :type home_link: str
         """
         self._home_link = home_link
 
@@ -181,7 +200,7 @@ class TemplateProductExt:
         api调试链接。
 
         :param api_link: The api_link of this TemplateProductExt.
-        :type: str
+        :type api_link: str
         """
         self._api_link = api_link
 
@@ -203,7 +222,7 @@ class TemplateProductExt:
         sdk下载链接。
 
         :param sdk_link: The sdk_link of this TemplateProductExt.
-        :type: str
+        :type sdk_link: str
         """
         self._sdk_link = sdk_link
 
@@ -225,7 +244,7 @@ class TemplateProductExt:
         文档链接。
 
         :param doc_link: The doc_link of this TemplateProductExt.
-        :type: str
+        :type doc_link: str
         """
         self._doc_link = doc_link
 
@@ -247,7 +266,7 @@ class TemplateProductExt:
         logo链接。
 
         :param logo_link: The logo_link of this TemplateProductExt.
-        :type: str
+        :type logo_link: str
         """
         self._logo_link = logo_link
 

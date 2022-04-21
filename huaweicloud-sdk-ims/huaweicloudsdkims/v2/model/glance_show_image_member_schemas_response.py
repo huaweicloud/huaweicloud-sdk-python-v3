@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GlanceShowImageMemberSchemasResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class GlanceShowImageMemberSchemasResponse(SdkResponse):
     }
 
     def __init__(self, name=None, properties=None):
-        """GlanceShowImageMemberSchemasResponse - a model defined in huaweicloud sdk"""
+        """GlanceShowImageMemberSchemasResponse
+
+        The model defined in huaweicloud sdk
+
+        :param name: 视图名称。
+        :type name: str
+        :param properties: 镜像成员属性说明，主要是对基础属性的说明，包含每个属性的取值类型、用途等。
+        :type properties: object
+        """
         
         super(GlanceShowImageMemberSchemasResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class GlanceShowImageMemberSchemasResponse(SdkResponse):
         视图名称。
 
         :param name: The name of this GlanceShowImageMemberSchemasResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -85,7 +92,7 @@ class GlanceShowImageMemberSchemasResponse(SdkResponse):
         镜像成员属性说明，主要是对基础属性的说明，包含每个属性的取值类型、用途等。
 
         :param properties: The properties of this GlanceShowImageMemberSchemasResponse.
-        :type: object
+        :type properties: object
         """
         self._properties = properties
 

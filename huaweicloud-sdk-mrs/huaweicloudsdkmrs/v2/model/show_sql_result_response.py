@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowSqlResultResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ShowSqlResultResponse(SdkResponse):
     }
 
     def __init__(self, id=None, message=None, statement=None, status=None, result_location=None, content=None):
-        """ShowSqlResultResponse - a model defined in huaweicloud sdk"""
+        """ShowSqlResultResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: SQL的执行id。执行select、show和desc语句时才会生成id，其他操作id为空
+        :type id: str
+        :param message: 错误信息。
+        :type message: str
+        :param statement: 执行的SQL语句。
+        :type statement: str
+        :param status: SQL的执行状态。  - QUEUED - WAITING_FOR_RESOURCES - PLANNING - STARTING - RUNNING - FINISHING - FINISHED - FAILED
+        :type status: str
+        :param result_location: SQL查询语句的最终结果归档路径。  说明： 只有select的语句才会在将SQL的执行结果转储到result_location中。
+        :type result_location: str
+        :param content: SQL的执行结果。  说明： 只有非select的语句才会在content中返回结果，如果SQL中没有结果，content为空。
+        :type content: list[list[str]]
+        """
         
         super(ShowSqlResultResponse, self).__init__()
 
@@ -83,7 +98,7 @@ class ShowSqlResultResponse(SdkResponse):
         SQL的执行id。执行select、show和desc语句时才会生成id，其他操作id为空
 
         :param id: The id of this ShowSqlResultResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -105,7 +120,7 @@ class ShowSqlResultResponse(SdkResponse):
         错误信息。
 
         :param message: The message of this ShowSqlResultResponse.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -127,7 +142,7 @@ class ShowSqlResultResponse(SdkResponse):
         执行的SQL语句。
 
         :param statement: The statement of this ShowSqlResultResponse.
-        :type: str
+        :type statement: str
         """
         self._statement = statement
 
@@ -149,7 +164,7 @@ class ShowSqlResultResponse(SdkResponse):
         SQL的执行状态。  - QUEUED - WAITING_FOR_RESOURCES - PLANNING - STARTING - RUNNING - FINISHING - FINISHED - FAILED
 
         :param status: The status of this ShowSqlResultResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -171,7 +186,7 @@ class ShowSqlResultResponse(SdkResponse):
         SQL查询语句的最终结果归档路径。  说明： 只有select的语句才会在将SQL的执行结果转储到result_location中。
 
         :param result_location: The result_location of this ShowSqlResultResponse.
-        :type: str
+        :type result_location: str
         """
         self._result_location = result_location
 
@@ -193,7 +208,7 @@ class ShowSqlResultResponse(SdkResponse):
         SQL的执行结果。  说明： 只有非select的语句才会在content中返回结果，如果SQL中没有结果，content为空。
 
         :param content: The content of this ShowSqlResultResponse.
-        :type: list[list[str]]
+        :type content: list[list[str]]
         """
         self._content = content
 

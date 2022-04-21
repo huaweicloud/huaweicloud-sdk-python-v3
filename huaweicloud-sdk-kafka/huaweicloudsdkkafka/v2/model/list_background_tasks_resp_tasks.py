@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListBackgroundTasksRespTasks:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ListBackgroundTasksRespTasks:
     }
 
     def __init__(self, id=None, name=None, user_name=None, user_id=None, params=None, status=None, created_at=None, updated_at=None):
-        """ListBackgroundTasksRespTasks - a model defined in huaweicloud sdk"""
+        """ListBackgroundTasksRespTasks
+
+        The model defined in huaweicloud sdk
+
+        :param id: 任务ID。
+        :type id: str
+        :param name: 任务名称。
+        :type name: str
+        :param user_name: 用户名。
+        :type user_name: str
+        :param user_id: 用户ID。
+        :type user_id: str
+        :param params: 任务参数。
+        :type params: str
+        :param status: 任务状态。
+        :type status: str
+        :param created_at: 启动时间。
+        :type created_at: str
+        :param updated_at: 结束时间。
+        :type updated_at: str
+        """
         
         
 
@@ -93,7 +112,7 @@ class ListBackgroundTasksRespTasks:
         任务ID。
 
         :param id: The id of this ListBackgroundTasksRespTasks.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -115,7 +134,7 @@ class ListBackgroundTasksRespTasks:
         任务名称。
 
         :param name: The name of this ListBackgroundTasksRespTasks.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -137,7 +156,7 @@ class ListBackgroundTasksRespTasks:
         用户名。
 
         :param user_name: The user_name of this ListBackgroundTasksRespTasks.
-        :type: str
+        :type user_name: str
         """
         self._user_name = user_name
 
@@ -159,7 +178,7 @@ class ListBackgroundTasksRespTasks:
         用户ID。
 
         :param user_id: The user_id of this ListBackgroundTasksRespTasks.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -181,7 +200,7 @@ class ListBackgroundTasksRespTasks:
         任务参数。
 
         :param params: The params of this ListBackgroundTasksRespTasks.
-        :type: str
+        :type params: str
         """
         self._params = params
 
@@ -203,7 +222,7 @@ class ListBackgroundTasksRespTasks:
         任务状态。
 
         :param status: The status of this ListBackgroundTasksRespTasks.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -225,7 +244,7 @@ class ListBackgroundTasksRespTasks:
         启动时间。
 
         :param created_at: The created_at of this ListBackgroundTasksRespTasks.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -247,7 +266,7 @@ class ListBackgroundTasksRespTasks:
         结束时间。
 
         :param updated_at: The updated_at of this ListBackgroundTasksRespTasks.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 

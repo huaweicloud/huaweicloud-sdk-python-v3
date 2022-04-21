@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RegisterImeiReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RegisterImeiReq:
     }
 
     def __init__(self, bind_type=None, imei=None):
-        """RegisterImeiReq - a model defined in huaweicloud sdk"""
+        """RegisterImeiReq
+
+        The model defined in huaweicloud sdk
+
+        :param bind_type: 绑定类型(1:普通机卡重绑，2：固定机卡重绑)
+        :type bind_type: int
+        :param imei: 设备IMEI,84584xxxxxx
+        :type imei: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class RegisterImeiReq:
         绑定类型(1:普通机卡重绑，2：固定机卡重绑)
 
         :param bind_type: The bind_type of this RegisterImeiReq.
-        :type: int
+        :type bind_type: int
         """
         self._bind_type = bind_type
 
@@ -84,7 +91,7 @@ class RegisterImeiReq:
         设备IMEI,84584xxxxxx
 
         :param imei: The imei of this RegisterImeiReq.
-        :type: str
+        :type imei: str
         """
         self._imei = imei
 

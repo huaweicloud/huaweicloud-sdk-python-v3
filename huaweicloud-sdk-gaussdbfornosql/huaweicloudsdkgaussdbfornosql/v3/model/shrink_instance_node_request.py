@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShrinkInstanceNodeRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShrinkInstanceNodeRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """ShrinkInstanceNodeRequest - a model defined in huaweicloud sdk"""
+        """ShrinkInstanceNodeRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param body: Body of the ShrinkInstanceNodeRequest
+        :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.ShrinkInstanceNodeRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class ShrinkInstanceNodeRequest:
         实例ID。
 
         :param instance_id: The instance_id of this ShrinkInstanceNodeRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -72,7 +79,7 @@ class ShrinkInstanceNodeRequest:
 
 
         :return: The body of this ShrinkInstanceNodeRequest.
-        :rtype: ShrinkInstanceNodeRequestBody
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ShrinkInstanceNodeRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class ShrinkInstanceNodeRequest:
 
 
         :param body: The body of this ShrinkInstanceNodeRequest.
-        :type: ShrinkInstanceNodeRequestBody
+        :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.ShrinkInstanceNodeRequestBody`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RecognizeMyanmarDriverLicenseResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RecognizeMyanmarDriverLicenseResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """RecognizeMyanmarDriverLicenseResponse - a model defined in huaweicloud sdk"""
+        """RecognizeMyanmarDriverLicenseResponse
+
+        The model defined in huaweicloud sdk
+
+        :param result: 
+        :type result: :class:`huaweicloudsdkocr.v1.MyanmarDriverLicenseResult`
+        """
         
         super(RecognizeMyanmarDriverLicenseResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class RecognizeMyanmarDriverLicenseResponse(SdkResponse):
 
 
         :return: The result of this RecognizeMyanmarDriverLicenseResponse.
-        :rtype: MyanmarDriverLicenseResult
+        :rtype: :class:`huaweicloudsdkocr.v1.MyanmarDriverLicenseResult`
         """
         return self._result
 
@@ -56,7 +61,7 @@ class RecognizeMyanmarDriverLicenseResponse(SdkResponse):
 
 
         :param result: The result of this RecognizeMyanmarDriverLicenseResponse.
-        :type: MyanmarDriverLicenseResult
+        :type result: :class:`huaweicloudsdkocr.v1.MyanmarDriverLicenseResult`
         """
         self._result = result
 

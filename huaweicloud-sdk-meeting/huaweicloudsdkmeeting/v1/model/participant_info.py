@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ParticipantInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -62,7 +61,45 @@ class ParticipantInfo:
     }
 
     def __init__(self, participant_id=None, name=None, subscriber_id=None, role=None, state=None, address=None, attendee_type=None, account_id=None, phone2=None, phone3=None, email=None, sms=None, dept_name=None, user_uuid=None, app_id=None, is_auto_invite=None, is_not_overlay_pid_name=None):
-        """ParticipantInfo - a model defined in huaweicloud sdk"""
+        """ParticipantInfo
+
+        The model defined in huaweicloud sdk
+
+        :param participant_id: 与会者的号码。
+        :type participant_id: str
+        :param name: 与会者的名称（昵称）。
+        :type name: str
+        :param subscriber_id: 与会者的号码（预留字段）。
+        :type subscriber_id: str
+        :param role: 会议中的角色。 - 1: 会议主持人。 - 0: 普通与会者。
+        :type role: int
+        :param state: 用户状态。目前固定返回MEETTING。
+        :type state: str
+        :param address: 终端所在会议室信息。（预留字段）
+        :type address: str
+        :param attendee_type: - normal: 软终端。 - telepresence: 智真。单屏、三屏智真均属此类。（预留字段） - terminal: 会议室或硬终端。 - outside: 外部与会人。 - mobile: 用户手机号码。 - telephone: 用户固定电话。（预留字段）
+        :type attendee_type: str
+        :param account_id: 预订者的账号ID。
+        :type account_id: str
+        :param phone2: 当attendeeType为telepresence时，且设备为三屏智真，则该字段填写左屏号码。（预留字段）
+        :type phone2: str
+        :param phone3: 当attendeeType为telepresence时，且设备为三屏智真，则该字段填写右屏号码。（预留字段）
+        :type phone3: str
+        :param email: 邮件地址。最大不超过255个字符。
+        :type email: str
+        :param sms: 短信通知的手机号码。最大不超过127个字符。
+        :type sms: str
+        :param dept_name: 部门名称。最大不超过96个字符。
+        :type dept_name: str
+        :param user_uuid: 预订者的用户UUID。
+        :type user_uuid: str
+        :param app_id: 第三方应用ID。
+        :type app_id: str
+        :param is_auto_invite: 会议开始时是否自动邀请该与会者。
+        :type is_auto_invite: int
+        :param is_not_overlay_pid_name: 是否不叠加会场名。
+        :type is_not_overlay_pid_name: bool
+        """
         
         
 
@@ -138,7 +175,7 @@ class ParticipantInfo:
         与会者的号码。
 
         :param participant_id: The participant_id of this ParticipantInfo.
-        :type: str
+        :type participant_id: str
         """
         self._participant_id = participant_id
 
@@ -160,7 +197,7 @@ class ParticipantInfo:
         与会者的名称（昵称）。
 
         :param name: The name of this ParticipantInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -182,7 +219,7 @@ class ParticipantInfo:
         与会者的号码（预留字段）。
 
         :param subscriber_id: The subscriber_id of this ParticipantInfo.
-        :type: str
+        :type subscriber_id: str
         """
         self._subscriber_id = subscriber_id
 
@@ -204,7 +241,7 @@ class ParticipantInfo:
         会议中的角色。 - 1: 会议主持人。 - 0: 普通与会者。
 
         :param role: The role of this ParticipantInfo.
-        :type: int
+        :type role: int
         """
         self._role = role
 
@@ -226,7 +263,7 @@ class ParticipantInfo:
         用户状态。目前固定返回MEETTING。
 
         :param state: The state of this ParticipantInfo.
-        :type: str
+        :type state: str
         """
         self._state = state
 
@@ -248,7 +285,7 @@ class ParticipantInfo:
         终端所在会议室信息。（预留字段）
 
         :param address: The address of this ParticipantInfo.
-        :type: str
+        :type address: str
         """
         self._address = address
 
@@ -270,7 +307,7 @@ class ParticipantInfo:
         - normal: 软终端。 - telepresence: 智真。单屏、三屏智真均属此类。（预留字段） - terminal: 会议室或硬终端。 - outside: 外部与会人。 - mobile: 用户手机号码。 - telephone: 用户固定电话。（预留字段）
 
         :param attendee_type: The attendee_type of this ParticipantInfo.
-        :type: str
+        :type attendee_type: str
         """
         self._attendee_type = attendee_type
 
@@ -292,7 +329,7 @@ class ParticipantInfo:
         预订者的账号ID。
 
         :param account_id: The account_id of this ParticipantInfo.
-        :type: str
+        :type account_id: str
         """
         self._account_id = account_id
 
@@ -314,7 +351,7 @@ class ParticipantInfo:
         当attendeeType为telepresence时，且设备为三屏智真，则该字段填写左屏号码。（预留字段）
 
         :param phone2: The phone2 of this ParticipantInfo.
-        :type: str
+        :type phone2: str
         """
         self._phone2 = phone2
 
@@ -336,7 +373,7 @@ class ParticipantInfo:
         当attendeeType为telepresence时，且设备为三屏智真，则该字段填写右屏号码。（预留字段）
 
         :param phone3: The phone3 of this ParticipantInfo.
-        :type: str
+        :type phone3: str
         """
         self._phone3 = phone3
 
@@ -358,7 +395,7 @@ class ParticipantInfo:
         邮件地址。最大不超过255个字符。
 
         :param email: The email of this ParticipantInfo.
-        :type: str
+        :type email: str
         """
         self._email = email
 
@@ -380,7 +417,7 @@ class ParticipantInfo:
         短信通知的手机号码。最大不超过127个字符。
 
         :param sms: The sms of this ParticipantInfo.
-        :type: str
+        :type sms: str
         """
         self._sms = sms
 
@@ -402,7 +439,7 @@ class ParticipantInfo:
         部门名称。最大不超过96个字符。
 
         :param dept_name: The dept_name of this ParticipantInfo.
-        :type: str
+        :type dept_name: str
         """
         self._dept_name = dept_name
 
@@ -424,7 +461,7 @@ class ParticipantInfo:
         预订者的用户UUID。
 
         :param user_uuid: The user_uuid of this ParticipantInfo.
-        :type: str
+        :type user_uuid: str
         """
         self._user_uuid = user_uuid
 
@@ -446,7 +483,7 @@ class ParticipantInfo:
         第三方应用ID。
 
         :param app_id: The app_id of this ParticipantInfo.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -468,7 +505,7 @@ class ParticipantInfo:
         会议开始时是否自动邀请该与会者。
 
         :param is_auto_invite: The is_auto_invite of this ParticipantInfo.
-        :type: int
+        :type is_auto_invite: int
         """
         self._is_auto_invite = is_auto_invite
 
@@ -490,7 +527,7 @@ class ParticipantInfo:
         是否不叠加会场名。
 
         :param is_not_overlay_pid_name: The is_not_overlay_pid_name of this ParticipantInfo.
-        :type: bool
+        :type is_not_overlay_pid_name: bool
         """
         self._is_not_overlay_pid_name = is_not_overlay_pid_name
 

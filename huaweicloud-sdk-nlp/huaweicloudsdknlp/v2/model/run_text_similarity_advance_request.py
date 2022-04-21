@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunTextSimilarityAdvanceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RunTextSimilarityAdvanceRequest:
     }
 
     def __init__(self, body=None):
-        """RunTextSimilarityAdvanceRequest - a model defined in huaweicloud sdk"""
+        """RunTextSimilarityAdvanceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the RunTextSimilarityAdvanceRequest
+        :type body: :class:`huaweicloudsdknlp.v2.TextSimilarityAdvanceRequest`
+        """
         
         
 
@@ -46,7 +51,7 @@ class RunTextSimilarityAdvanceRequest:
 
 
         :return: The body of this RunTextSimilarityAdvanceRequest.
-        :rtype: TextSimilarityAdvanceRequest
+        :rtype: :class:`huaweicloudsdknlp.v2.TextSimilarityAdvanceRequest`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class RunTextSimilarityAdvanceRequest:
 
 
         :param body: The body of this RunTextSimilarityAdvanceRequest.
-        :type: TextSimilarityAdvanceRequest
+        :type body: :class:`huaweicloudsdknlp.v2.TextSimilarityAdvanceRequest`
         """
         self._body = body
 

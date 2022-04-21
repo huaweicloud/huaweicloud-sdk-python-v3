@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApiBatchPublish:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ApiBatchPublish:
     }
 
     def __init__(self, apis=None, env_id=None, remark=None):
-        """ApiBatchPublish - a model defined in huaweicloud sdk"""
+        """ApiBatchPublish
+
+        The model defined in huaweicloud sdk
+
+        :param apis: 需要发布或下线的API ID列表，单次更新上限为1000个API
+        :type apis: list[str]
+        :param env_id: 环境ID
+        :type env_id: str
+        :param remark: 对本次发布的描述信息  字符长度不超过255 &gt; 中文字符必须为UTF-8或者unicode编码。
+        :type remark: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class ApiBatchPublish:
         需要发布或下线的API ID列表，单次更新上限为1000个API
 
         :param apis: The apis of this ApiBatchPublish.
-        :type: list[str]
+        :type apis: list[str]
         """
         self._apis = apis
 
@@ -90,7 +99,7 @@ class ApiBatchPublish:
         环境ID
 
         :param env_id: The env_id of this ApiBatchPublish.
-        :type: str
+        :type env_id: str
         """
         self._env_id = env_id
 
@@ -112,7 +121,7 @@ class ApiBatchPublish:
         对本次发布的描述信息  字符长度不超过255 > 中文字符必须为UTF-8或者unicode编码。
 
         :param remark: The remark of this ApiBatchPublish.
-        :type: str
+        :type remark: str
         """
         self._remark = remark
 

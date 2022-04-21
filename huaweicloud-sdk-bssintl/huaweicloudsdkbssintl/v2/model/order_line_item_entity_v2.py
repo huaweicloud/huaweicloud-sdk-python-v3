@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OrderLineItemEntityV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -62,7 +61,45 @@ class OrderLineItemEntityV2:
     }
 
     def __init__(self, order_line_item_id=None, service_type_code=None, service_type_name=None, product_id=None, product_spec_desc=None, period_type=None, period_num=None, effective_time=None, expire_time=None, subscription_num=None, amount_after_discount=None, official_amount=None, amount_info=None, currency=None, category_code=None, product_owner_service=None, commercial_resource=None):
-        """OrderLineItemEntityV2 - a model defined in huaweicloud sdk"""
+        """OrderLineItemEntityV2
+
+        The model defined in huaweicloud sdk
+
+        :param order_line_item_id: 订单项ID。
+        :type order_line_item_id: str
+        :param service_type_code: 云服务类型编码。例如OBS的云服务类型编码为“hws.service.type.obs”。
+        :type service_type_code: str
+        :param service_type_name: 云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
+        :type service_type_name: str
+        :param product_id: 产品ID。
+        :type product_id: str
+        :param product_spec_desc: 产品规格描述。
+        :type product_spec_desc: str
+        :param period_type: 周期类型。 0：天1：周2：月3：年4：小时5：一次性6：按需（预留）7：按用量报表使用（预留）
+        :type period_type: int
+        :param period_num: 周期数量。  说明： 当订单为退订资源的订单时，参数取值为null。
+        :type period_num: int
+        :param effective_time: 生效时间。 UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。
+        :type effective_time: str
+        :param expire_time: 失效时间。 UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。
+        :type expire_time: str
+        :param subscription_num: 订购数量。
+        :type subscription_num: int
+        :param amount_after_discount: 订单优惠后金额（实付价格，不含券不含卡）。
+        :type amount_after_discount: float
+        :param official_amount: 订单金额（官网价）。 退订订单中，该金额等于currencyAfterDiscount。
+        :type official_amount: float
+        :param amount_info: 
+        :type amount_info: :class:`huaweicloudsdkbssintl.v2.AmountInfomationV2`
+        :param currency: 货币编码。
+        :type currency: str
+        :param category_code: 产品目录编码。
+        :type category_code: str
+        :param product_owner_service: 产品归属的云服务类型编码。 云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
+        :type product_owner_service: str
+        :param commercial_resource: 商务归属的资源类型编码。 资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
+        :type commercial_resource: str
+        """
         
         
 
@@ -138,7 +175,7 @@ class OrderLineItemEntityV2:
         订单项ID。
 
         :param order_line_item_id: The order_line_item_id of this OrderLineItemEntityV2.
-        :type: str
+        :type order_line_item_id: str
         """
         self._order_line_item_id = order_line_item_id
 
@@ -160,7 +197,7 @@ class OrderLineItemEntityV2:
         云服务类型编码。例如OBS的云服务类型编码为“hws.service.type.obs”。
 
         :param service_type_code: The service_type_code of this OrderLineItemEntityV2.
-        :type: str
+        :type service_type_code: str
         """
         self._service_type_code = service_type_code
 
@@ -182,7 +219,7 @@ class OrderLineItemEntityV2:
         云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
 
         :param service_type_name: The service_type_name of this OrderLineItemEntityV2.
-        :type: str
+        :type service_type_name: str
         """
         self._service_type_name = service_type_name
 
@@ -204,7 +241,7 @@ class OrderLineItemEntityV2:
         产品ID。
 
         :param product_id: The product_id of this OrderLineItemEntityV2.
-        :type: str
+        :type product_id: str
         """
         self._product_id = product_id
 
@@ -226,7 +263,7 @@ class OrderLineItemEntityV2:
         产品规格描述。
 
         :param product_spec_desc: The product_spec_desc of this OrderLineItemEntityV2.
-        :type: str
+        :type product_spec_desc: str
         """
         self._product_spec_desc = product_spec_desc
 
@@ -248,7 +285,7 @@ class OrderLineItemEntityV2:
         周期类型。 0：天1：周2：月3：年4：小时5：一次性6：按需（预留）7：按用量报表使用（预留）
 
         :param period_type: The period_type of this OrderLineItemEntityV2.
-        :type: int
+        :type period_type: int
         """
         self._period_type = period_type
 
@@ -270,7 +307,7 @@ class OrderLineItemEntityV2:
         周期数量。  说明： 当订单为退订资源的订单时，参数取值为null。
 
         :param period_num: The period_num of this OrderLineItemEntityV2.
-        :type: int
+        :type period_num: int
         """
         self._period_num = period_num
 
@@ -292,7 +329,7 @@ class OrderLineItemEntityV2:
         生效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。
 
         :param effective_time: The effective_time of this OrderLineItemEntityV2.
-        :type: str
+        :type effective_time: str
         """
         self._effective_time = effective_time
 
@@ -314,7 +351,7 @@ class OrderLineItemEntityV2:
         失效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。
 
         :param expire_time: The expire_time of this OrderLineItemEntityV2.
-        :type: str
+        :type expire_time: str
         """
         self._expire_time = expire_time
 
@@ -336,7 +373,7 @@ class OrderLineItemEntityV2:
         订购数量。
 
         :param subscription_num: The subscription_num of this OrderLineItemEntityV2.
-        :type: int
+        :type subscription_num: int
         """
         self._subscription_num = subscription_num
 
@@ -358,7 +395,7 @@ class OrderLineItemEntityV2:
         订单优惠后金额（实付价格，不含券不含卡）。
 
         :param amount_after_discount: The amount_after_discount of this OrderLineItemEntityV2.
-        :type: float
+        :type amount_after_discount: float
         """
         self._amount_after_discount = amount_after_discount
 
@@ -380,7 +417,7 @@ class OrderLineItemEntityV2:
         订单金额（官网价）。 退订订单中，该金额等于currencyAfterDiscount。
 
         :param official_amount: The official_amount of this OrderLineItemEntityV2.
-        :type: float
+        :type official_amount: float
         """
         self._official_amount = official_amount
 
@@ -390,7 +427,7 @@ class OrderLineItemEntityV2:
 
 
         :return: The amount_info of this OrderLineItemEntityV2.
-        :rtype: AmountInfomationV2
+        :rtype: :class:`huaweicloudsdkbssintl.v2.AmountInfomationV2`
         """
         return self._amount_info
 
@@ -400,7 +437,7 @@ class OrderLineItemEntityV2:
 
 
         :param amount_info: The amount_info of this OrderLineItemEntityV2.
-        :type: AmountInfomationV2
+        :type amount_info: :class:`huaweicloudsdkbssintl.v2.AmountInfomationV2`
         """
         self._amount_info = amount_info
 
@@ -422,7 +459,7 @@ class OrderLineItemEntityV2:
         货币编码。
 
         :param currency: The currency of this OrderLineItemEntityV2.
-        :type: str
+        :type currency: str
         """
         self._currency = currency
 
@@ -444,7 +481,7 @@ class OrderLineItemEntityV2:
         产品目录编码。
 
         :param category_code: The category_code of this OrderLineItemEntityV2.
-        :type: str
+        :type category_code: str
         """
         self._category_code = category_code
 
@@ -466,7 +503,7 @@ class OrderLineItemEntityV2:
         产品归属的云服务类型编码。 云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
         :param product_owner_service: The product_owner_service of this OrderLineItemEntityV2.
-        :type: str
+        :type product_owner_service: str
         """
         self._product_owner_service = product_owner_service
 
@@ -488,7 +525,7 @@ class OrderLineItemEntityV2:
         商务归属的资源类型编码。 资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
 
         :param commercial_resource: The commercial_resource of this OrderLineItemEntityV2.
-        :type: str
+        :type commercial_resource: str
         """
         self._commercial_resource = commercial_resource
 

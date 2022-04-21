@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DemandProductRatingResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class DemandProductRatingResult:
     }
 
     def __init__(self, id=None, product_id=None, amount=None, discount_amount=None, official_website_amount=None, measure_id=None, discount_rating_results=None):
-        """DemandProductRatingResult - a model defined in huaweicloud sdk"""
+        """DemandProductRatingResult
+
+        The model defined in huaweicloud sdk
+
+        :param id: 同一次询价中不能重复，用于标识返回询价结果和请求的映射关系。
+        :type id: str
+        :param product_id: 按需产品的ID。
+        :type product_id: str
+        :param amount: 折扣的金额。
+        :type amount: float
+        :param discount_amount: 优惠额（官网价和总价的差）。
+        :type discount_amount: float
+        :param official_website_amount: 按需产品的官网价。
+        :type official_website_amount: float
+        :param measure_id: 度量单位标识。 1：元
+        :type measure_id: int
+        :param discount_rating_results: 折扣优惠明细，包含产品本身的促销信息，同时包含商务或者伙伴折扣的优惠信息，具体参见表3。
+        :type discount_rating_results: list[:class:`huaweicloudsdkbss.v2.DemandDiscountRatingResult`]
+        """
         
         
 
@@ -88,7 +105,7 @@ class DemandProductRatingResult:
         同一次询价中不能重复，用于标识返回询价结果和请求的映射关系。
 
         :param id: The id of this DemandProductRatingResult.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -110,7 +127,7 @@ class DemandProductRatingResult:
         按需产品的ID。
 
         :param product_id: The product_id of this DemandProductRatingResult.
-        :type: str
+        :type product_id: str
         """
         self._product_id = product_id
 
@@ -132,7 +149,7 @@ class DemandProductRatingResult:
         折扣的金额。
 
         :param amount: The amount of this DemandProductRatingResult.
-        :type: float
+        :type amount: float
         """
         self._amount = amount
 
@@ -154,7 +171,7 @@ class DemandProductRatingResult:
         优惠额（官网价和总价的差）。
 
         :param discount_amount: The discount_amount of this DemandProductRatingResult.
-        :type: float
+        :type discount_amount: float
         """
         self._discount_amount = discount_amount
 
@@ -176,7 +193,7 @@ class DemandProductRatingResult:
         按需产品的官网价。
 
         :param official_website_amount: The official_website_amount of this DemandProductRatingResult.
-        :type: float
+        :type official_website_amount: float
         """
         self._official_website_amount = official_website_amount
 
@@ -198,7 +215,7 @@ class DemandProductRatingResult:
         度量单位标识。 1：元
 
         :param measure_id: The measure_id of this DemandProductRatingResult.
-        :type: int
+        :type measure_id: int
         """
         self._measure_id = measure_id
 
@@ -209,7 +226,7 @@ class DemandProductRatingResult:
         折扣优惠明细，包含产品本身的促销信息，同时包含商务或者伙伴折扣的优惠信息，具体参见表3。
 
         :return: The discount_rating_results of this DemandProductRatingResult.
-        :rtype: list[DemandDiscountRatingResult]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.DemandDiscountRatingResult`]
         """
         return self._discount_rating_results
 
@@ -220,7 +237,7 @@ class DemandProductRatingResult:
         折扣优惠明细，包含产品本身的促销信息，同时包含商务或者伙伴折扣的优惠信息，具体参见表3。
 
         :param discount_rating_results: The discount_rating_results of this DemandProductRatingResult.
-        :type: list[DemandDiscountRatingResult]
+        :type discount_rating_results: list[:class:`huaweicloudsdkbss.v2.DemandDiscountRatingResult`]
         """
         self._discount_rating_results = discount_rating_results
 

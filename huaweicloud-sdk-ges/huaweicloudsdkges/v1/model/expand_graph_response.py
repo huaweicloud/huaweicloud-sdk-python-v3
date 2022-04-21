@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExpandGraphResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ExpandGraphResponse(SdkResponse):
     }
 
     def __init__(self, error_message=None, error_code=None, job_id=None):
-        """ExpandGraphResponse - a model defined in huaweicloud sdk"""
+        """ExpandGraphResponse
+
+        The model defined in huaweicloud sdk
+
+        :param error_message: 系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误信息。
+        :type error_message: str
+        :param error_code: 系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误码。
+        :type error_code: str
+        :param job_id: 扩副本任务ID。请求失败时字段为空。 &gt;可以查询jobId查看任务执行状态、获取返回结果
+        :type job_id: str
+        """
         
         super(ExpandGraphResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ExpandGraphResponse(SdkResponse):
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误信息。
 
         :param error_message: The error_message of this ExpandGraphResponse.
-        :type: str
+        :type error_message: str
         """
         self._error_message = error_message
 
@@ -90,7 +99,7 @@ class ExpandGraphResponse(SdkResponse):
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误码。
 
         :param error_code: The error_code of this ExpandGraphResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -112,7 +121,7 @@ class ExpandGraphResponse(SdkResponse):
         扩副本任务ID。请求失败时字段为空。 >可以查询jobId查看任务执行状态、获取返回结果
 
         :param job_id: The job_id of this ExpandGraphResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 

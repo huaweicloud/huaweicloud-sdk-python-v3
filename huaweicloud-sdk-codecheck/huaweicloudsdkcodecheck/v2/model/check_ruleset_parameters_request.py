@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CheckRulesetParametersRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class CheckRulesetParametersRequest:
     }
 
     def __init__(self, project_id=None, task_id=None, ruleset_id=None, language=None, offset=None, limit=None):
-        """CheckRulesetParametersRequest - a model defined in huaweicloud sdk"""
+        """CheckRulesetParametersRequest
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: 项目ID
+        :type project_id: str
+        :param task_id: 任务ID
+        :type task_id: str
+        :param ruleset_id: 规则集ID
+        :type ruleset_id: str
+        :param language: 规则集语言
+        :type language: str
+        :param offset: 分页索引，偏移量，非必填
+        :type offset: int
+        :param limit: 每页显示的数量，非必填
+        :type limit: int
+        """
         
         
 
@@ -79,7 +94,7 @@ class CheckRulesetParametersRequest:
         项目ID
 
         :param project_id: The project_id of this CheckRulesetParametersRequest.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -101,7 +116,7 @@ class CheckRulesetParametersRequest:
         任务ID
 
         :param task_id: The task_id of this CheckRulesetParametersRequest.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -123,7 +138,7 @@ class CheckRulesetParametersRequest:
         规则集ID
 
         :param ruleset_id: The ruleset_id of this CheckRulesetParametersRequest.
-        :type: str
+        :type ruleset_id: str
         """
         self._ruleset_id = ruleset_id
 
@@ -145,7 +160,7 @@ class CheckRulesetParametersRequest:
         规则集语言
 
         :param language: The language of this CheckRulesetParametersRequest.
-        :type: str
+        :type language: str
         """
         self._language = language
 
@@ -167,7 +182,7 @@ class CheckRulesetParametersRequest:
         分页索引，偏移量，非必填
 
         :param offset: The offset of this CheckRulesetParametersRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -189,7 +204,7 @@ class CheckRulesetParametersRequest:
         每页显示的数量，非必填
 
         :param limit: The limit of this CheckRulesetParametersRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

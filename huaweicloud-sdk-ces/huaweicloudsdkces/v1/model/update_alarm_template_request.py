@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateAlarmTemplateRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateAlarmTemplateRequest:
     }
 
     def __init__(self, template_id=None, body=None):
-        """UpdateAlarmTemplateRequest - a model defined in huaweicloud sdk"""
+        """UpdateAlarmTemplateRequest
+
+        The model defined in huaweicloud sdk
+
+        :param template_id: 需要更新的自定义告警模板ID。
+        :type template_id: str
+        :param body: Body of the UpdateAlarmTemplateRequest
+        :type body: :class:`huaweicloudsdkces.v1.UpdateAlarmTemplateRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateAlarmTemplateRequest:
         需要更新的自定义告警模板ID。
 
         :param template_id: The template_id of this UpdateAlarmTemplateRequest.
-        :type: str
+        :type template_id: str
         """
         self._template_id = template_id
 
@@ -72,7 +79,7 @@ class UpdateAlarmTemplateRequest:
 
 
         :return: The body of this UpdateAlarmTemplateRequest.
-        :rtype: UpdateAlarmTemplateRequestBody
+        :rtype: :class:`huaweicloudsdkces.v1.UpdateAlarmTemplateRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateAlarmTemplateRequest:
 
 
         :param body: The body of this UpdateAlarmTemplateRequest.
-        :type: UpdateAlarmTemplateRequestBody
+        :type body: :class:`huaweicloudsdkces.v1.UpdateAlarmTemplateRequestBody`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SendCommandRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class SendCommandRequest:
     }
 
     def __init__(self, instance_id=None, device_id=None, body=None):
-        """SendCommandRequest - a model defined in huaweicloud sdk"""
+        """SendCommandRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param device_id: 设备ID
+        :type device_id: int
+        :param body: Body of the SendCommandRequest
+        :type body: :class:`huaweicloudsdkroma.v2.SendCommandRequestBody`
+        """
         
         
 
@@ -66,7 +75,7 @@ class SendCommandRequest:
         实例ID
 
         :param instance_id: The instance_id of this SendCommandRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -88,7 +97,7 @@ class SendCommandRequest:
         设备ID
 
         :param device_id: The device_id of this SendCommandRequest.
-        :type: int
+        :type device_id: int
         """
         self._device_id = device_id
 
@@ -98,7 +107,7 @@ class SendCommandRequest:
 
 
         :return: The body of this SendCommandRequest.
-        :rtype: SendCommandRequestBody
+        :rtype: :class:`huaweicloudsdkroma.v2.SendCommandRequestBody`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class SendCommandRequest:
 
 
         :param body: The body of this SendCommandRequest.
-        :type: SendCommandRequestBody
+        :type body: :class:`huaweicloudsdkroma.v2.SendCommandRequestBody`
         """
         self._body = body
 

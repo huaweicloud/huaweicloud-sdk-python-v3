@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TwinUpdateDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class TwinUpdateDetail:
     }
 
     def __init__(self, twin=None, property_visitors=None):
-        """TwinUpdateDetail - a model defined in huaweicloud sdk"""
+        """TwinUpdateDetail
+
+        The model defined in huaweicloud sdk
+
+        :param twin: 
+        :type twin: :class:`huaweicloudsdkief.v1.ValueInTwin`
+        :param property_visitors: 
+        :type property_visitors: :class:`huaweicloudsdkief.v1.TwinUpdateDetailPropertyVisitors`
+        """
         
         
 
@@ -51,7 +58,7 @@ class TwinUpdateDetail:
 
 
         :return: The twin of this TwinUpdateDetail.
-        :rtype: ValueInTwin
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInTwin`
         """
         return self._twin
 
@@ -61,7 +68,7 @@ class TwinUpdateDetail:
 
 
         :param twin: The twin of this TwinUpdateDetail.
-        :type: ValueInTwin
+        :type twin: :class:`huaweicloudsdkief.v1.ValueInTwin`
         """
         self._twin = twin
 
@@ -71,7 +78,7 @@ class TwinUpdateDetail:
 
 
         :return: The property_visitors of this TwinUpdateDetail.
-        :rtype: TwinUpdateDetailPropertyVisitors
+        :rtype: :class:`huaweicloudsdkief.v1.TwinUpdateDetailPropertyVisitors`
         """
         return self._property_visitors
 
@@ -81,7 +88,7 @@ class TwinUpdateDetail:
 
 
         :param property_visitors: The property_visitors of this TwinUpdateDetail.
-        :type: TwinUpdateDetailPropertyVisitors
+        :type property_visitors: :class:`huaweicloudsdkief.v1.TwinUpdateDetailPropertyVisitors`
         """
         self._property_visitors = property_visitors
 

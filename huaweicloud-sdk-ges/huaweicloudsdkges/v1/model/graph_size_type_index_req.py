@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GraphSizeTypeIndexReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class GraphSizeTypeIndexReq:
     }
 
     def __init__(self, graph_size_type_index=None):
-        """GraphSizeTypeIndexReq - a model defined in huaweicloud sdk"""
+        """GraphSizeTypeIndexReq
+
+        The model defined in huaweicloud sdk
+
+        :param graph_size_type_index: 图规格类型，当前支持取值为\&quot;2\&quot;,\&quot;3\&quot;,\&quot;4\&quot;,\&quot;5\&quot;分别代表扩容成千万边、一亿边、十亿边、百亿边规格的图
+        :type graph_size_type_index: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class GraphSizeTypeIndexReq:
         图规格类型，当前支持取值为\"2\",\"3\",\"4\",\"5\"分别代表扩容成千万边、一亿边、十亿边、百亿边规格的图
 
         :param graph_size_type_index: The graph_size_type_index of this GraphSizeTypeIndexReq.
-        :type: str
+        :type graph_size_type_index: str
         """
         self._graph_size_type_index = graph_size_type_index
 

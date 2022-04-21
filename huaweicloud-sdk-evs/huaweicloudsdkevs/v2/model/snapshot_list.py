@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SnapshotList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class SnapshotList:
     }
 
     def __init__(self, id=None, status=None, name=None, description=None, created_at=None, updated_at=None, metadata=None, volume_id=None, size=None, os_extended_snapshot_attributesproject_id=None, os_extended_snapshot_attributesprogress=None, dedicated_storage_id=None, dedicated_storage_name=None, service_type=None):
-        """SnapshotList - a model defined in huaweicloud sdk"""
+        """SnapshotList
+
+        The model defined in huaweicloud sdk
+
+        :param id: 云硬盘快照ID。
+        :type id: str
+        :param status: 云硬盘快照的状态。
+        :type status: str
+        :param name: 云硬盘快照名称。
+        :type name: str
+        :param description: 云硬盘快照描述信息。
+        :type description: str
+        :param created_at: 云硬盘快照创建时间。
+        :type created_at: str
+        :param updated_at: 云硬盘快照更新时间。
+        :type updated_at: str
+        :param metadata: 云硬盘快照的元数据信息。
+        :type metadata: dict(str, str)
+        :param volume_id: 快照所属的云硬盘。
+        :type volume_id: str
+        :param size: 云硬盘快照大小。
+        :type size: int
+        :param os_extended_snapshot_attributesproject_id: 项目ID。
+        :type os_extended_snapshot_attributesproject_id: str
+        :param os_extended_snapshot_attributesprogress: 快照进度。
+        :type os_extended_snapshot_attributesprogress: str
+        :param dedicated_storage_id: 专属存储ID。
+        :type dedicated_storage_id: str
+        :param dedicated_storage_name: 专属存储名称。
+        :type dedicated_storage_name: str
+        :param service_type: 服务类型。
+        :type service_type: str
+        """
         
         
 
@@ -115,7 +146,7 @@ class SnapshotList:
         云硬盘快照ID。
 
         :param id: The id of this SnapshotList.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -137,7 +168,7 @@ class SnapshotList:
         云硬盘快照的状态。
 
         :param status: The status of this SnapshotList.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -159,7 +190,7 @@ class SnapshotList:
         云硬盘快照名称。
 
         :param name: The name of this SnapshotList.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -181,7 +212,7 @@ class SnapshotList:
         云硬盘快照描述信息。
 
         :param description: The description of this SnapshotList.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -203,7 +234,7 @@ class SnapshotList:
         云硬盘快照创建时间。
 
         :param created_at: The created_at of this SnapshotList.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -225,7 +256,7 @@ class SnapshotList:
         云硬盘快照更新时间。
 
         :param updated_at: The updated_at of this SnapshotList.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 
@@ -247,7 +278,7 @@ class SnapshotList:
         云硬盘快照的元数据信息。
 
         :param metadata: The metadata of this SnapshotList.
-        :type: dict(str, str)
+        :type metadata: dict(str, str)
         """
         self._metadata = metadata
 
@@ -269,7 +300,7 @@ class SnapshotList:
         快照所属的云硬盘。
 
         :param volume_id: The volume_id of this SnapshotList.
-        :type: str
+        :type volume_id: str
         """
         self._volume_id = volume_id
 
@@ -291,7 +322,7 @@ class SnapshotList:
         云硬盘快照大小。
 
         :param size: The size of this SnapshotList.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -313,7 +344,7 @@ class SnapshotList:
         项目ID。
 
         :param os_extended_snapshot_attributesproject_id: The os_extended_snapshot_attributesproject_id of this SnapshotList.
-        :type: str
+        :type os_extended_snapshot_attributesproject_id: str
         """
         self._os_extended_snapshot_attributesproject_id = os_extended_snapshot_attributesproject_id
 
@@ -335,7 +366,7 @@ class SnapshotList:
         快照进度。
 
         :param os_extended_snapshot_attributesprogress: The os_extended_snapshot_attributesprogress of this SnapshotList.
-        :type: str
+        :type os_extended_snapshot_attributesprogress: str
         """
         self._os_extended_snapshot_attributesprogress = os_extended_snapshot_attributesprogress
 
@@ -357,7 +388,7 @@ class SnapshotList:
         专属存储ID。
 
         :param dedicated_storage_id: The dedicated_storage_id of this SnapshotList.
-        :type: str
+        :type dedicated_storage_id: str
         """
         self._dedicated_storage_id = dedicated_storage_id
 
@@ -379,7 +410,7 @@ class SnapshotList:
         专属存储名称。
 
         :param dedicated_storage_name: The dedicated_storage_name of this SnapshotList.
-        :type: str
+        :type dedicated_storage_name: str
         """
         self._dedicated_storage_name = dedicated_storage_name
 
@@ -401,7 +432,7 @@ class SnapshotList:
         服务类型。
 
         :param service_type: The service_type of this SnapshotList.
-        :type: str
+        :type service_type: str
         """
         self._service_type = service_type
 

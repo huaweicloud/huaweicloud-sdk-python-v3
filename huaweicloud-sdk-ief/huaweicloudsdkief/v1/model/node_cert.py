@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NodeCert:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class NodeCert:
     }
 
     def __init__(self, id=None, name=None, description=None, created_at=None, node_id=None, type=None, serial_num=None):
-        """NodeCert - a model defined in huaweicloud sdk"""
+        """NodeCert
+
+        The model defined in huaweicloud sdk
+
+        :param id: 证书id
+        :type id: str
+        :param name: 证书名称
+        :type name: str
+        :param description: 证书的描述
+        :type description: str
+        :param created_at: 证书的创建时间
+        :type created_at: datetime
+        :param node_id: 节点id
+        :type node_id: str
+        :param type: 证书类型，包含： - system：创建节点时会默认创建一套系统证书； - application：应用证书； - device：设备证书；
+        :type type: str
+        :param serial_num: 证书序列号
+        :type serial_num: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class NodeCert:
         证书id
 
         :param id: The id of this NodeCert.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -110,7 +127,7 @@ class NodeCert:
         证书名称
 
         :param name: The name of this NodeCert.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -132,7 +149,7 @@ class NodeCert:
         证书的描述
 
         :param description: The description of this NodeCert.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -154,7 +171,7 @@ class NodeCert:
         证书的创建时间
 
         :param created_at: The created_at of this NodeCert.
-        :type: datetime
+        :type created_at: datetime
         """
         self._created_at = created_at
 
@@ -176,7 +193,7 @@ class NodeCert:
         节点id
 
         :param node_id: The node_id of this NodeCert.
-        :type: str
+        :type node_id: str
         """
         self._node_id = node_id
 
@@ -198,7 +215,7 @@ class NodeCert:
         证书类型，包含： - system：创建节点时会默认创建一套系统证书； - application：应用证书； - device：设备证书；
 
         :param type: The type of this NodeCert.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -220,7 +237,7 @@ class NodeCert:
         证书序列号
 
         :param serial_num: The serial_num of this NodeCert.
-        :type: str
+        :type serial_num: str
         """
         self._serial_num = serial_num
 

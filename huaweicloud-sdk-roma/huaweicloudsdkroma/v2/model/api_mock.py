@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApiMock:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class ApiMock:
     }
 
     def __init__(self, remark=None, result_content=None, version=None, authorizer_id=None, status_code=None, header=None, id=None, register_time=None, status=None, update_time=None):
-        """ApiMock - a model defined in huaweicloud sdk"""
+        """ApiMock
+
+        The model defined in huaweicloud sdk
+
+        :param remark: 描述信息。 &gt; 中文字符必须为UTF-8或者unicode编码。
+        :type remark: str
+        :param result_content: 返回结果
+        :type result_content: str
+        :param version: 版本。字符长度不超过64
+        :type version: str
+        :param authorizer_id: 后端自定义认证ID
+        :type authorizer_id: str
+        :param status_code: mock后端自定义状态码： \&quot;200\&quot;: \&quot;OK\&quot;, \&quot;201\&quot;: \&quot;Created\&quot;, \&quot;202\&quot;: \&quot;Accepted\&quot;, \&quot;203\&quot;: \&quot;NonAuthoritativeInformation\&quot;, \&quot;204\&quot;: \&quot;NoContent\&quot;, \&quot;205\&quot;: \&quot;ResetContent\&quot;, \&quot;206\&quot;: \&quot;PartialContent\&quot;, \&quot;300\&quot;: \&quot;MultipleChoices\&quot;, \&quot;301\&quot;: \&quot;MovedPermanently\&quot;, \&quot;302\&quot;: \&quot;Found\&quot;, \&quot;303\&quot;: \&quot;SeeOther\&quot;, \&quot;304\&quot;: \&quot;NotModified\&quot;, \&quot;305\&quot;: \&quot;UseProxy\&quot;, \&quot;306\&quot;: \&quot;Unused\&quot;, \&quot;307\&quot;: \&quot;TemporaryRedirect\&quot;, \&quot;400\&quot;: \&quot;BadRequest\&quot;, \&quot;401\&quot;: \&quot;Unauthorized\&quot;, \&quot;402\&quot;: \&quot;PaymentRequired\&quot;, \&quot;403\&quot;: \&quot;Forbidden\&quot;, \&quot;404\&quot;: \&quot;NotFound\&quot;, \&quot;405\&quot;: \&quot;MethodNotAllowed\&quot;, \&quot;406\&quot;: \&quot;NotAcceptable\&quot;, \&quot;407\&quot;: \&quot;ProxyAuthenticationRequired\&quot;, \&quot;408\&quot;: \&quot;RequestTimeout\&quot;, \&quot;409\&quot;: \&quot;Conflict\&quot;, \&quot;410\&quot;: \&quot;Gone\&quot;, \&quot;411\&quot;: \&quot;LengthRequired\&quot;, \&quot;412\&quot;: \&quot;PreconditionFailed\&quot;, \&quot;413\&quot;: \&quot;RequestEntityTooLarge\&quot;, \&quot;414\&quot;: \&quot;RequestURITooLong\&quot;, \&quot;415\&quot;: \&quot;UnsupportedMediaType\&quot;, \&quot;416\&quot;: \&quot;RequestedRangeNotSatisfiable\&quot;, \&quot;417\&quot;: \&quot;ExpectationFailed\&quot;, \&quot;450\&quot;: \&quot;ParameterRequried\&quot;, \&quot;451\&quot;: \&quot;MethodConnectException\&quot;, \&quot;500\&quot;: \&quot;InternalServerError\&quot;, \&quot;501\&quot;: \&quot;NotImplemented\&quot;, \&quot;502\&quot;: \&quot;BadGateway\&quot;, \&quot;503\&quot;: \&quot;ServiceUnavailable\&quot;, \&quot;504\&quot;: \&quot;GatewayTimeout\&quot;, \&quot;505\&quot;: \&quot;HTTPVersionNotSupported\&quot;,
+        :type status_code: int
+        :param header: mock后端自定义响应头header
+        :type header: list[:class:`huaweicloudsdkroma.v2.MockApiBaseInfoHeader`]
+        :param id: 编号
+        :type id: str
+        :param register_time: 注册时间
+        :type register_time: datetime
+        :param status: 后端状态   - 1： 有效
+        :type status: int
+        :param update_time: 修改时间
+        :type update_time: datetime
+        """
         
         
 
@@ -103,7 +126,7 @@ class ApiMock:
         描述信息。 > 中文字符必须为UTF-8或者unicode编码。
 
         :param remark: The remark of this ApiMock.
-        :type: str
+        :type remark: str
         """
         self._remark = remark
 
@@ -125,7 +148,7 @@ class ApiMock:
         返回结果
 
         :param result_content: The result_content of this ApiMock.
-        :type: str
+        :type result_content: str
         """
         self._result_content = result_content
 
@@ -147,7 +170,7 @@ class ApiMock:
         版本。字符长度不超过64
 
         :param version: The version of this ApiMock.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -169,7 +192,7 @@ class ApiMock:
         后端自定义认证ID
 
         :param authorizer_id: The authorizer_id of this ApiMock.
-        :type: str
+        :type authorizer_id: str
         """
         self._authorizer_id = authorizer_id
 
@@ -191,7 +214,7 @@ class ApiMock:
         mock后端自定义状态码： \"200\": \"OK\", \"201\": \"Created\", \"202\": \"Accepted\", \"203\": \"NonAuthoritativeInformation\", \"204\": \"NoContent\", \"205\": \"ResetContent\", \"206\": \"PartialContent\", \"300\": \"MultipleChoices\", \"301\": \"MovedPermanently\", \"302\": \"Found\", \"303\": \"SeeOther\", \"304\": \"NotModified\", \"305\": \"UseProxy\", \"306\": \"Unused\", \"307\": \"TemporaryRedirect\", \"400\": \"BadRequest\", \"401\": \"Unauthorized\", \"402\": \"PaymentRequired\", \"403\": \"Forbidden\", \"404\": \"NotFound\", \"405\": \"MethodNotAllowed\", \"406\": \"NotAcceptable\", \"407\": \"ProxyAuthenticationRequired\", \"408\": \"RequestTimeout\", \"409\": \"Conflict\", \"410\": \"Gone\", \"411\": \"LengthRequired\", \"412\": \"PreconditionFailed\", \"413\": \"RequestEntityTooLarge\", \"414\": \"RequestURITooLong\", \"415\": \"UnsupportedMediaType\", \"416\": \"RequestedRangeNotSatisfiable\", \"417\": \"ExpectationFailed\", \"450\": \"ParameterRequried\", \"451\": \"MethodConnectException\", \"500\": \"InternalServerError\", \"501\": \"NotImplemented\", \"502\": \"BadGateway\", \"503\": \"ServiceUnavailable\", \"504\": \"GatewayTimeout\", \"505\": \"HTTPVersionNotSupported\",
 
         :param status_code: The status_code of this ApiMock.
-        :type: int
+        :type status_code: int
         """
         self._status_code = status_code
 
@@ -202,7 +225,7 @@ class ApiMock:
         mock后端自定义响应头header
 
         :return: The header of this ApiMock.
-        :rtype: list[MockApiBaseInfoHeader]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.MockApiBaseInfoHeader`]
         """
         return self._header
 
@@ -213,7 +236,7 @@ class ApiMock:
         mock后端自定义响应头header
 
         :param header: The header of this ApiMock.
-        :type: list[MockApiBaseInfoHeader]
+        :type header: list[:class:`huaweicloudsdkroma.v2.MockApiBaseInfoHeader`]
         """
         self._header = header
 
@@ -235,7 +258,7 @@ class ApiMock:
         编号
 
         :param id: The id of this ApiMock.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -257,7 +280,7 @@ class ApiMock:
         注册时间
 
         :param register_time: The register_time of this ApiMock.
-        :type: datetime
+        :type register_time: datetime
         """
         self._register_time = register_time
 
@@ -279,7 +302,7 @@ class ApiMock:
         后端状态   - 1： 有效
 
         :param status: The status of this ApiMock.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -301,7 +324,7 @@ class ApiMock:
         修改时间
 
         :param update_time: The update_time of this ApiMock.
-        :type: datetime
+        :type update_time: datetime
         """
         self._update_time = update_time
 

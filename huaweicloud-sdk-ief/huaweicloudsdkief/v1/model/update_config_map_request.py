@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateConfigMapRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateConfigMapRequest:
     }
 
     def __init__(self, ief_instance_id=None, configmap_id=None, body=None):
-        """UpdateConfigMapRequest - a model defined in huaweicloud sdk"""
+        """UpdateConfigMapRequest
+
+        The model defined in huaweicloud sdk
+
+        :param ief_instance_id: 铂金版实例ID，专业版实例为空值
+        :type ief_instance_id: str
+        :param configmap_id: 配置项ID
+        :type configmap_id: str
+        :param body: Body of the UpdateConfigMapRequest
+        :type body: :class:`huaweicloudsdkief.v1.UpdateConfigMaps`
+        """
         
         
 
@@ -67,7 +76,7 @@ class UpdateConfigMapRequest:
         铂金版实例ID，专业版实例为空值
 
         :param ief_instance_id: The ief_instance_id of this UpdateConfigMapRequest.
-        :type: str
+        :type ief_instance_id: str
         """
         self._ief_instance_id = ief_instance_id
 
@@ -89,7 +98,7 @@ class UpdateConfigMapRequest:
         配置项ID
 
         :param configmap_id: The configmap_id of this UpdateConfigMapRequest.
-        :type: str
+        :type configmap_id: str
         """
         self._configmap_id = configmap_id
 
@@ -99,7 +108,7 @@ class UpdateConfigMapRequest:
 
 
         :return: The body of this UpdateConfigMapRequest.
-        :rtype: UpdateConfigMaps
+        :rtype: :class:`huaweicloudsdkief.v1.UpdateConfigMaps`
         """
         return self._body
 
@@ -109,7 +118,7 @@ class UpdateConfigMapRequest:
 
 
         :param body: The body of this UpdateConfigMapRequest.
-        :type: UpdateConfigMaps
+        :type body: :class:`huaweicloudsdkief.v1.UpdateConfigMaps`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ProxyNode:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ProxyNode:
     }
 
     def __init__(self, id=None, name=None, role=None, az_code=None, status=None, frozen_flag=None):
-        """ProxyNode - a model defined in huaweicloud sdk"""
+        """ProxyNode
+
+        The model defined in huaweicloud sdk
+
+        :param id: Proxy节点ID。
+        :type id: str
+        :param name: Proxy节点名称。
+        :type name: str
+        :param role: Proxy节点角色。 - master：主节点。 - slave：备节点。
+        :type role: str
+        :param az_code: 可用区。
+        :type az_code: str
+        :param status: Proxy节点状态。 - normal：正常。 - abnormal：异常。 - creating：创建中。 - deleted：已删除。
+        :type status: str
+        :param frozen_flag: Proxy节点是否被冻结。 - 0：未冻结。 - 1：冻结。 - 2：冻结删除。
+        :type frozen_flag: int
+        """
         
         
 
@@ -77,7 +92,7 @@ class ProxyNode:
         Proxy节点ID。
 
         :param id: The id of this ProxyNode.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -99,7 +114,7 @@ class ProxyNode:
         Proxy节点名称。
 
         :param name: The name of this ProxyNode.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -121,7 +136,7 @@ class ProxyNode:
         Proxy节点角色。 - master：主节点。 - slave：备节点。
 
         :param role: The role of this ProxyNode.
-        :type: str
+        :type role: str
         """
         self._role = role
 
@@ -143,7 +158,7 @@ class ProxyNode:
         可用区。
 
         :param az_code: The az_code of this ProxyNode.
-        :type: str
+        :type az_code: str
         """
         self._az_code = az_code
 
@@ -165,7 +180,7 @@ class ProxyNode:
         Proxy节点状态。 - normal：正常。 - abnormal：异常。 - creating：创建中。 - deleted：已删除。
 
         :param status: The status of this ProxyNode.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -187,7 +202,7 @@ class ProxyNode:
         Proxy节点是否被冻结。 - 0：未冻结。 - 1：冻结。 - 2：冻结删除。
 
         :param frozen_flag: The frozen_flag of this ProxyNode.
-        :type: int
+        :type frozen_flag: int
         """
         self._frozen_flag = frozen_flag
 

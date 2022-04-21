@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Creator:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class Creator:
     }
 
     def __init__(self, user_id=None):
-        """Creator - a model defined in huaweicloud sdk"""
+        """Creator
+
+        The model defined in huaweicloud sdk
+
+        :param user_id: 指定工作项的创建者用户id
+        :type user_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class Creator:
         指定工作项的创建者用户id
 
         :param user_id: The user_id of this Creator.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 

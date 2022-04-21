@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateTranscodingReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -60,7 +59,43 @@ class CreateTranscodingReq:
     }
 
     def __init__(self, input=None, output=None, trans_template_id=None, av_parameters=None, output_filenames=None, user_data=None, watermarks=None, thumbnail=None, priority=None, subtitle=None, encryption=None, crop=None, audio_track=None, multi_audio=None, video_process=None, audio_process=None):
-        """CreateTranscodingReq - a model defined in huaweicloud sdk"""
+        """CreateTranscodingReq
+
+        The model defined in huaweicloud sdk
+
+        :param input: 
+        :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        :param output: 
+        :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        :param trans_template_id: 转码模板ID，没带av_parameter参数时，必须带该参数，数组，每一路转码输出对应一个转码配置模板ID，最多支持9个模板ID。  多个转码模板中如下参数可变，其他都必须一致：  - 视频bitrate，height，width。 
+        :type trans_template_id: list[int]
+        :param av_parameters: 转码参数。  若同时设置“trans_template_id”和此参数，则优先使用此参数进行转码，不带trans_template_id时，该参数必选。 
+        :type av_parameters: list[:class:`huaweicloudsdkmpc.v1.AvParameters`]
+        :param output_filenames: 输出文件名称，每一路转码输出对应一个名称，需要与转码模板ID数组的顺序对应。  - 若设置该参数，表示输出文件按该参数命名。 - 若不设置该参数，表示输出文件按默认方式命名。 
+        :type output_filenames: list[str]
+        :param user_data: 用户自定义数据，该字段可在查询接口或消息通知中按原内容透传给用户。 
+        :type user_data: str
+        :param watermarks: 图片水印参数，数组，最多支持20个成员。 
+        :type watermarks: list[:class:`huaweicloudsdkmpc.v1.WatermarkRequest`]
+        :param thumbnail: 
+        :type thumbnail: :class:`huaweicloudsdkmpc.v1.Thumbnail`
+        :param priority: 任务优先级，取值如下： - 9代表高优先级。 - 6代表中优先级，默认为6。  暂时只支持6和9。 
+        :type priority: int
+        :param subtitle: 
+        :type subtitle: :class:`huaweicloudsdkmpc.v1.Subtitle`
+        :param encryption: 
+        :type encryption: :class:`huaweicloudsdkmpc.v1.Encryption`
+        :param crop: 
+        :type crop: :class:`huaweicloudsdkmpc.v1.Crop`
+        :param audio_track: 
+        :type audio_track: :class:`huaweicloudsdkmpc.v1.AudioTrack`
+        :param multi_audio: 
+        :type multi_audio: :class:`huaweicloudsdkmpc.v1.MultiAudio`
+        :param video_process: 
+        :type video_process: :class:`huaweicloudsdkmpc.v1.VideoProcess`
+        :param audio_process: 
+        :type audio_process: :class:`huaweicloudsdkmpc.v1.AudioProcess`
+        """
         
         
 
@@ -120,7 +155,7 @@ class CreateTranscodingReq:
 
 
         :return: The input of this CreateTranscodingReq.
-        :rtype: ObsObjInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         return self._input
 
@@ -130,7 +165,7 @@ class CreateTranscodingReq:
 
 
         :param input: The input of this CreateTranscodingReq.
-        :type: ObsObjInfo
+        :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         self._input = input
 
@@ -140,7 +175,7 @@ class CreateTranscodingReq:
 
 
         :return: The output of this CreateTranscodingReq.
-        :rtype: ObsObjInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         return self._output
 
@@ -150,7 +185,7 @@ class CreateTranscodingReq:
 
 
         :param output: The output of this CreateTranscodingReq.
-        :type: ObsObjInfo
+        :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         self._output = output
 
@@ -172,7 +207,7 @@ class CreateTranscodingReq:
         转码模板ID，没带av_parameter参数时，必须带该参数，数组，每一路转码输出对应一个转码配置模板ID，最多支持9个模板ID。  多个转码模板中如下参数可变，其他都必须一致：  - 视频bitrate，height，width。 
 
         :param trans_template_id: The trans_template_id of this CreateTranscodingReq.
-        :type: list[int]
+        :type trans_template_id: list[int]
         """
         self._trans_template_id = trans_template_id
 
@@ -183,7 +218,7 @@ class CreateTranscodingReq:
         转码参数。  若同时设置“trans_template_id”和此参数，则优先使用此参数进行转码，不带trans_template_id时，该参数必选。 
 
         :return: The av_parameters of this CreateTranscodingReq.
-        :rtype: list[AvParameters]
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.AvParameters`]
         """
         return self._av_parameters
 
@@ -194,7 +229,7 @@ class CreateTranscodingReq:
         转码参数。  若同时设置“trans_template_id”和此参数，则优先使用此参数进行转码，不带trans_template_id时，该参数必选。 
 
         :param av_parameters: The av_parameters of this CreateTranscodingReq.
-        :type: list[AvParameters]
+        :type av_parameters: list[:class:`huaweicloudsdkmpc.v1.AvParameters`]
         """
         self._av_parameters = av_parameters
 
@@ -216,7 +251,7 @@ class CreateTranscodingReq:
         输出文件名称，每一路转码输出对应一个名称，需要与转码模板ID数组的顺序对应。  - 若设置该参数，表示输出文件按该参数命名。 - 若不设置该参数，表示输出文件按默认方式命名。 
 
         :param output_filenames: The output_filenames of this CreateTranscodingReq.
-        :type: list[str]
+        :type output_filenames: list[str]
         """
         self._output_filenames = output_filenames
 
@@ -238,7 +273,7 @@ class CreateTranscodingReq:
         用户自定义数据，该字段可在查询接口或消息通知中按原内容透传给用户。 
 
         :param user_data: The user_data of this CreateTranscodingReq.
-        :type: str
+        :type user_data: str
         """
         self._user_data = user_data
 
@@ -249,7 +284,7 @@ class CreateTranscodingReq:
         图片水印参数，数组，最多支持20个成员。 
 
         :return: The watermarks of this CreateTranscodingReq.
-        :rtype: list[WatermarkRequest]
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.WatermarkRequest`]
         """
         return self._watermarks
 
@@ -260,7 +295,7 @@ class CreateTranscodingReq:
         图片水印参数，数组，最多支持20个成员。 
 
         :param watermarks: The watermarks of this CreateTranscodingReq.
-        :type: list[WatermarkRequest]
+        :type watermarks: list[:class:`huaweicloudsdkmpc.v1.WatermarkRequest`]
         """
         self._watermarks = watermarks
 
@@ -270,7 +305,7 @@ class CreateTranscodingReq:
 
 
         :return: The thumbnail of this CreateTranscodingReq.
-        :rtype: Thumbnail
+        :rtype: :class:`huaweicloudsdkmpc.v1.Thumbnail`
         """
         return self._thumbnail
 
@@ -280,7 +315,7 @@ class CreateTranscodingReq:
 
 
         :param thumbnail: The thumbnail of this CreateTranscodingReq.
-        :type: Thumbnail
+        :type thumbnail: :class:`huaweicloudsdkmpc.v1.Thumbnail`
         """
         self._thumbnail = thumbnail
 
@@ -302,7 +337,7 @@ class CreateTranscodingReq:
         任务优先级，取值如下： - 9代表高优先级。 - 6代表中优先级，默认为6。  暂时只支持6和9。 
 
         :param priority: The priority of this CreateTranscodingReq.
-        :type: int
+        :type priority: int
         """
         self._priority = priority
 
@@ -312,7 +347,7 @@ class CreateTranscodingReq:
 
 
         :return: The subtitle of this CreateTranscodingReq.
-        :rtype: Subtitle
+        :rtype: :class:`huaweicloudsdkmpc.v1.Subtitle`
         """
         return self._subtitle
 
@@ -322,7 +357,7 @@ class CreateTranscodingReq:
 
 
         :param subtitle: The subtitle of this CreateTranscodingReq.
-        :type: Subtitle
+        :type subtitle: :class:`huaweicloudsdkmpc.v1.Subtitle`
         """
         self._subtitle = subtitle
 
@@ -332,7 +367,7 @@ class CreateTranscodingReq:
 
 
         :return: The encryption of this CreateTranscodingReq.
-        :rtype: Encryption
+        :rtype: :class:`huaweicloudsdkmpc.v1.Encryption`
         """
         return self._encryption
 
@@ -342,7 +377,7 @@ class CreateTranscodingReq:
 
 
         :param encryption: The encryption of this CreateTranscodingReq.
-        :type: Encryption
+        :type encryption: :class:`huaweicloudsdkmpc.v1.Encryption`
         """
         self._encryption = encryption
 
@@ -352,7 +387,7 @@ class CreateTranscodingReq:
 
 
         :return: The crop of this CreateTranscodingReq.
-        :rtype: Crop
+        :rtype: :class:`huaweicloudsdkmpc.v1.Crop`
         """
         return self._crop
 
@@ -362,7 +397,7 @@ class CreateTranscodingReq:
 
 
         :param crop: The crop of this CreateTranscodingReq.
-        :type: Crop
+        :type crop: :class:`huaweicloudsdkmpc.v1.Crop`
         """
         self._crop = crop
 
@@ -372,7 +407,7 @@ class CreateTranscodingReq:
 
 
         :return: The audio_track of this CreateTranscodingReq.
-        :rtype: AudioTrack
+        :rtype: :class:`huaweicloudsdkmpc.v1.AudioTrack`
         """
         return self._audio_track
 
@@ -382,7 +417,7 @@ class CreateTranscodingReq:
 
 
         :param audio_track: The audio_track of this CreateTranscodingReq.
-        :type: AudioTrack
+        :type audio_track: :class:`huaweicloudsdkmpc.v1.AudioTrack`
         """
         self._audio_track = audio_track
 
@@ -392,7 +427,7 @@ class CreateTranscodingReq:
 
 
         :return: The multi_audio of this CreateTranscodingReq.
-        :rtype: MultiAudio
+        :rtype: :class:`huaweicloudsdkmpc.v1.MultiAudio`
         """
         return self._multi_audio
 
@@ -402,7 +437,7 @@ class CreateTranscodingReq:
 
 
         :param multi_audio: The multi_audio of this CreateTranscodingReq.
-        :type: MultiAudio
+        :type multi_audio: :class:`huaweicloudsdkmpc.v1.MultiAudio`
         """
         self._multi_audio = multi_audio
 
@@ -412,7 +447,7 @@ class CreateTranscodingReq:
 
 
         :return: The video_process of this CreateTranscodingReq.
-        :rtype: VideoProcess
+        :rtype: :class:`huaweicloudsdkmpc.v1.VideoProcess`
         """
         return self._video_process
 
@@ -422,7 +457,7 @@ class CreateTranscodingReq:
 
 
         :param video_process: The video_process of this CreateTranscodingReq.
-        :type: VideoProcess
+        :type video_process: :class:`huaweicloudsdkmpc.v1.VideoProcess`
         """
         self._video_process = video_process
 
@@ -432,7 +467,7 @@ class CreateTranscodingReq:
 
 
         :return: The audio_process of this CreateTranscodingReq.
-        :rtype: AudioProcess
+        :rtype: :class:`huaweicloudsdkmpc.v1.AudioProcess`
         """
         return self._audio_process
 
@@ -442,7 +477,7 @@ class CreateTranscodingReq:
 
 
         :param audio_process: The audio_process of this CreateTranscodingReq.
-        :type: AudioProcess
+        :type audio_process: :class:`huaweicloudsdkmpc.v1.AudioProcess`
         """
         self._audio_process = audio_process
 

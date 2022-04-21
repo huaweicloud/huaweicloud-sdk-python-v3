@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowAllFaceSetsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowAllFaceSetsResponse(SdkResponse):
     }
 
     def __init__(self, face_sets_info=None):
-        """ShowAllFaceSetsResponse - a model defined in huaweicloud sdk"""
+        """ShowAllFaceSetsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param face_sets_info: 人脸库信息集合，详见[FaceSetInfo](https://support.huaweicloud.com/api-face/face_02_0020.html)。 调用失败时无此字段。
+        :type face_sets_info: list[:class:`huaweicloudsdkfrs.v2.FaceSetInfo`]
+        """
         
         super(ShowAllFaceSetsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ShowAllFaceSetsResponse(SdkResponse):
         人脸库信息集合，详见[FaceSetInfo](https://support.huaweicloud.com/api-face/face_02_0020.html)。 调用失败时无此字段。
 
         :return: The face_sets_info of this ShowAllFaceSetsResponse.
-        :rtype: list[FaceSetInfo]
+        :rtype: list[:class:`huaweicloudsdkfrs.v2.FaceSetInfo`]
         """
         return self._face_sets_info
 
@@ -58,7 +63,7 @@ class ShowAllFaceSetsResponse(SdkResponse):
         人脸库信息集合，详见[FaceSetInfo](https://support.huaweicloud.com/api-face/face_02_0020.html)。 调用失败时无此字段。
 
         :param face_sets_info: The face_sets_info of this ShowAllFaceSetsResponse.
-        :type: list[FaceSetInfo]
+        :type face_sets_info: list[:class:`huaweicloudsdkfrs.v2.FaceSetInfo`]
         """
         self._face_sets_info = face_sets_info
 

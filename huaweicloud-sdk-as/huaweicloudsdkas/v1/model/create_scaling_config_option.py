@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateScalingConfigOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateScalingConfigOption:
     }
 
     def __init__(self, scaling_configuration_name=None, instance_config=None):
-        """CreateScalingConfigOption - a model defined in huaweicloud sdk"""
+        """CreateScalingConfigOption
+
+        The model defined in huaweicloud sdk
+
+        :param scaling_configuration_name: 伸缩配置名称(1-64个字符)，只能包含中文、字母、数字、下划线或中划线。
+        :type scaling_configuration_name: str
+        :param instance_config: 
+        :type instance_config: :class:`huaweicloudsdkas.v1.InstanceConfig`
+        """
         
         
 
@@ -61,7 +68,7 @@ class CreateScalingConfigOption:
         伸缩配置名称(1-64个字符)，只能包含中文、字母、数字、下划线或中划线。
 
         :param scaling_configuration_name: The scaling_configuration_name of this CreateScalingConfigOption.
-        :type: str
+        :type scaling_configuration_name: str
         """
         self._scaling_configuration_name = scaling_configuration_name
 
@@ -71,7 +78,7 @@ class CreateScalingConfigOption:
 
 
         :return: The instance_config of this CreateScalingConfigOption.
-        :rtype: InstanceConfig
+        :rtype: :class:`huaweicloudsdkas.v1.InstanceConfig`
         """
         return self._instance_config
 
@@ -81,7 +88,7 @@ class CreateScalingConfigOption:
 
 
         :param instance_config: The instance_config of this CreateScalingConfigOption.
-        :type: InstanceConfig
+        :type instance_config: :class:`huaweicloudsdkas.v1.InstanceConfig`
         """
         self._instance_config = instance_config
 

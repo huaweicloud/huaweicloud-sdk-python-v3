@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResetMultiTaskOffsetResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ResetMultiTaskOffsetResponse(SdkResponse):
     }
 
     def __init__(self, message=None):
-        """ResetMultiTaskOffsetResponse - a model defined in huaweicloud sdk"""
+        """ResetMultiTaskOffsetResponse
+
+        The model defined in huaweicloud sdk
+
+        :param message: 任务重置结果
+        :type message: str
+        """
         
         super(ResetMultiTaskOffsetResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class ResetMultiTaskOffsetResponse(SdkResponse):
         任务重置结果
 
         :param message: The message of this ResetMultiTaskOffsetResponse.
-        :type: str
+        :type message: str
         """
         self._message = message
 

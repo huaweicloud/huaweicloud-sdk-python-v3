@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateExtractAudioTaskResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateExtractAudioTaskResponse(SdkResponse):
     }
 
     def __init__(self, asset_id=None, audio_asset_id=None):
-        """CreateExtractAudioTaskResponse - a model defined in huaweicloud sdk"""
+        """CreateExtractAudioTaskResponse
+
+        The model defined in huaweicloud sdk
+
+        :param asset_id: 视频源媒资ID。
+        :type asset_id: str
+        :param audio_asset_id: 提取的音频媒资ID。
+        :type audio_asset_id: str
+        """
         
         super(CreateExtractAudioTaskResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class CreateExtractAudioTaskResponse(SdkResponse):
         视频源媒资ID。
 
         :param asset_id: The asset_id of this CreateExtractAudioTaskResponse.
-        :type: str
+        :type asset_id: str
         """
         self._asset_id = asset_id
 
@@ -85,7 +92,7 @@ class CreateExtractAudioTaskResponse(SdkResponse):
         提取的音频媒资ID。
 
         :param audio_asset_id: The audio_asset_id of this CreateExtractAudioTaskResponse.
-        :type: str
+        :type audio_asset_id: str
         """
         self._audio_asset_id = audio_asset_id
 

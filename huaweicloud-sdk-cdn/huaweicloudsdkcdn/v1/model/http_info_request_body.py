@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class HttpInfoRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class HttpInfoRequestBody:
     }
 
     def __init__(self, cert_name=None, https_status=None, certificate=None, private_key=None, http2=None, certificate_type=None, force_redirect_https=None, force_redirect_config=None):
-        """HttpInfoRequestBody - a model defined in huaweicloud sdk"""
+        """HttpInfoRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param cert_name: 证书名字。（长度限制为3-32字符）。
+        :type cert_name: str
+        :param https_status: HTTPS证书是否启用。0：不启用，此时无需填写证书及私钥参数；1：启用HTTPS加速并协议跟随回源；2：启用HTTPS加速并HTTP回源；3：启用HTTPS加速并HTTPS回源，首次配置证书需要传递证书及私钥，如已有证书可不用传证书及私钥。
+        :type https_status: int
+        :param certificate: 功能说明：HTTPS协议使用的证书内容，不启用证书则无需输入。取值范围：PEM编码格式。初次配置证书时必传。
+        :type certificate: str
+        :param private_key: 功能说明： HTTPS协议使用的私钥，不启用证书则无需输入。取值范围：PEM编码格式。初次配置证书时必传。
+        :type private_key: str
+        :param http2: 是否使用HTTP2.0。（1：是，0：否。）
+        :type http2: int
+        :param certificate_type: 证书类型。1：代表华为云托管证书；0：表示自有证书。 默认值0。
+        :type certificate_type: int
+        :param force_redirect_https: 强制跳转HTTPS（0：不强制；1：强制） 为空值时默认设置为关闭。（建议使用force_redirect_config修改配置）
+        :type force_redirect_https: int
+        :param force_redirect_config: 
+        :type force_redirect_config: :class:`huaweicloudsdkcdn.v1.ForceRedirect`
+        """
         
         
 
@@ -91,7 +110,7 @@ class HttpInfoRequestBody:
         证书名字。（长度限制为3-32字符）。
 
         :param cert_name: The cert_name of this HttpInfoRequestBody.
-        :type: str
+        :type cert_name: str
         """
         self._cert_name = cert_name
 
@@ -113,7 +132,7 @@ class HttpInfoRequestBody:
         HTTPS证书是否启用。0：不启用，此时无需填写证书及私钥参数；1：启用HTTPS加速并协议跟随回源；2：启用HTTPS加速并HTTP回源；3：启用HTTPS加速并HTTPS回源，首次配置证书需要传递证书及私钥，如已有证书可不用传证书及私钥。
 
         :param https_status: The https_status of this HttpInfoRequestBody.
-        :type: int
+        :type https_status: int
         """
         self._https_status = https_status
 
@@ -135,7 +154,7 @@ class HttpInfoRequestBody:
         功能说明：HTTPS协议使用的证书内容，不启用证书则无需输入。取值范围：PEM编码格式。初次配置证书时必传。
 
         :param certificate: The certificate of this HttpInfoRequestBody.
-        :type: str
+        :type certificate: str
         """
         self._certificate = certificate
 
@@ -157,7 +176,7 @@ class HttpInfoRequestBody:
         功能说明： HTTPS协议使用的私钥，不启用证书则无需输入。取值范围：PEM编码格式。初次配置证书时必传。
 
         :param private_key: The private_key of this HttpInfoRequestBody.
-        :type: str
+        :type private_key: str
         """
         self._private_key = private_key
 
@@ -179,7 +198,7 @@ class HttpInfoRequestBody:
         是否使用HTTP2.0。（1：是，0：否。）
 
         :param http2: The http2 of this HttpInfoRequestBody.
-        :type: int
+        :type http2: int
         """
         self._http2 = http2
 
@@ -201,7 +220,7 @@ class HttpInfoRequestBody:
         证书类型。1：代表华为云托管证书；0：表示自有证书。 默认值0。
 
         :param certificate_type: The certificate_type of this HttpInfoRequestBody.
-        :type: int
+        :type certificate_type: int
         """
         self._certificate_type = certificate_type
 
@@ -223,7 +242,7 @@ class HttpInfoRequestBody:
         强制跳转HTTPS（0：不强制；1：强制） 为空值时默认设置为关闭。（建议使用force_redirect_config修改配置）
 
         :param force_redirect_https: The force_redirect_https of this HttpInfoRequestBody.
-        :type: int
+        :type force_redirect_https: int
         """
         self._force_redirect_https = force_redirect_https
 
@@ -233,7 +252,7 @@ class HttpInfoRequestBody:
 
 
         :return: The force_redirect_config of this HttpInfoRequestBody.
-        :rtype: ForceRedirect
+        :rtype: :class:`huaweicloudsdkcdn.v1.ForceRedirect`
         """
         return self._force_redirect_config
 
@@ -243,7 +262,7 @@ class HttpInfoRequestBody:
 
 
         :param force_redirect_config: The force_redirect_config of this HttpInfoRequestBody.
-        :type: ForceRedirect
+        :type force_redirect_config: :class:`huaweicloudsdkcdn.v1.ForceRedirect`
         """
         self._force_redirect_config = force_redirect_config
 

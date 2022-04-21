@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowQuotaSetsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowQuotaSetsResponse(SdkResponse):
     }
 
     def __init__(self, quota_set=None):
-        """ShowQuotaSetsResponse - a model defined in huaweicloud sdk"""
+        """ShowQuotaSetsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param quota_set: 专属主机的配额。
+        :type quota_set: list[:class:`huaweicloudsdkdeh.v1.RespQuotaSet`]
+        """
         
         super(ShowQuotaSetsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ShowQuotaSetsResponse(SdkResponse):
         专属主机的配额。
 
         :return: The quota_set of this ShowQuotaSetsResponse.
-        :rtype: list[RespQuotaSet]
+        :rtype: list[:class:`huaweicloudsdkdeh.v1.RespQuotaSet`]
         """
         return self._quota_set
 
@@ -58,7 +63,7 @@ class ShowQuotaSetsResponse(SdkResponse):
         专属主机的配额。
 
         :param quota_set: The quota_set of this ShowQuotaSetsResponse.
-        :type: list[RespQuotaSet]
+        :type quota_set: list[:class:`huaweicloudsdkdeh.v1.RespQuotaSet`]
         """
         self._quota_set = quota_set
 

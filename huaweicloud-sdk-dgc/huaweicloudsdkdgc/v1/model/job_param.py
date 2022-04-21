@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class JobParam:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class JobParam:
     }
 
     def __init__(self, name=None, value=None, param_type=None):
-        """JobParam - a model defined in huaweicloud sdk"""
+        """JobParam
+
+        The model defined in huaweicloud sdk
+
+        :param name: 
+        :type name: str
+        :param value: 
+        :type value: str
+        :param param_type: 
+        :type param_type: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class JobParam:
 
 
         :param name: The name of this JobParam.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -86,7 +95,7 @@ class JobParam:
 
 
         :param value: The value of this JobParam.
-        :type: str
+        :type value: str
         """
         self._value = value
 
@@ -106,7 +115,7 @@ class JobParam:
 
 
         :param param_type: The param_type of this JobParam.
-        :type: str
+        :type param_type: str
         """
         self._param_type = param_type
 

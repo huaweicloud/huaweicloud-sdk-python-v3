@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RuntimeTypeView:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class RuntimeTypeView:
     }
 
     def __init__(self, type_name=None, display_name=None, container_default_port=None, type_desc=None):
-        """RuntimeTypeView - a model defined in huaweicloud sdk"""
+        """RuntimeTypeView
+
+        The model defined in huaweicloud sdk
+
+        :param type_name: 类型名称。
+        :type type_name: str
+        :param display_name: 显示名称。
+        :type display_name: str
+        :param container_default_port: 容器默认端口。
+        :type container_default_port: int
+        :param type_desc: 类型描述。
+        :type type_desc: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class RuntimeTypeView:
         类型名称。
 
         :param type_name: The type_name of this RuntimeTypeView.
-        :type: str
+        :type type_name: str
         """
         self._type_name = type_name
 
@@ -95,7 +106,7 @@ class RuntimeTypeView:
         显示名称。
 
         :param display_name: The display_name of this RuntimeTypeView.
-        :type: str
+        :type display_name: str
         """
         self._display_name = display_name
 
@@ -117,7 +128,7 @@ class RuntimeTypeView:
         容器默认端口。
 
         :param container_default_port: The container_default_port of this RuntimeTypeView.
-        :type: int
+        :type container_default_port: int
         """
         self._container_default_port = container_default_port
 
@@ -139,7 +150,7 @@ class RuntimeTypeView:
         类型描述。
 
         :param type_desc: The type_desc of this RuntimeTypeView.
-        :type: str
+        :type type_desc: str
         """
         self._type_desc = type_desc
 

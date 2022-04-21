@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Line:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class Line:
     }
 
     def __init__(self, line_id=None, name=None, ip_segments=None, created_at=None, updated_at=None, status=None, description=None):
-        """Line - a model defined in huaweicloud sdk"""
+        """Line
+
+        The model defined in huaweicloud sdk
+
+        :param line_id: 解析线路ID。
+        :type line_id: str
+        :param name: 解析线路名称。
+        :type name: str
+        :param ip_segments: IP地址段。
+        :type ip_segments: list[str]
+        :param created_at: 创建时间。
+        :type created_at: str
+        :param updated_at: 更新时间。
+        :type updated_at: str
+        :param status: 资源状态。
+        :type status: str
+        :param description: 自定义线路的描述信息。
+        :type description: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class Line:
         解析线路ID。
 
         :param line_id: The line_id of this Line.
-        :type: str
+        :type line_id: str
         """
         self._line_id = line_id
 
@@ -110,7 +127,7 @@ class Line:
         解析线路名称。
 
         :param name: The name of this Line.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -132,7 +149,7 @@ class Line:
         IP地址段。
 
         :param ip_segments: The ip_segments of this Line.
-        :type: list[str]
+        :type ip_segments: list[str]
         """
         self._ip_segments = ip_segments
 
@@ -154,7 +171,7 @@ class Line:
         创建时间。
 
         :param created_at: The created_at of this Line.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -176,7 +193,7 @@ class Line:
         更新时间。
 
         :param updated_at: The updated_at of this Line.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 
@@ -198,7 +215,7 @@ class Line:
         资源状态。
 
         :param status: The status of this Line.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -220,7 +237,7 @@ class Line:
         自定义线路的描述信息。
 
         :param description: The description of this Line.
-        :type: str
+        :type description: str
         """
         self._description = description
 

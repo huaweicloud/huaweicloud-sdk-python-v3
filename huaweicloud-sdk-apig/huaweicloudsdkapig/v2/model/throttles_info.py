@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ThrottlesInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class ThrottlesInfo:
     }
 
     def __init__(self, app_call_limits=None, name=None, time_unit=None, remark=None, api_call_limits=None, type=None, enable_adaptive_control=None, user_call_limits=None, time_interval=None, ip_call_limits=None, id=None, bind_num=None, is_inclu_special_throttle=None, create_time=None):
-        """ThrottlesInfo - a model defined in huaweicloud sdk"""
+        """ThrottlesInfo
+
+        The model defined in huaweicloud sdk
+
+        :param app_call_limits: APP流量限制是指一个API在时长之内被每个APP访问的次数上限，该数值不超过用户流量限制值。输入的值不超过2147483647。正整数。 
+        :type app_call_limits: int
+        :param name: 流控策略名称。支持汉字，英文，数字，下划线，且只能以英文和汉字开头，3 ~ 64字符。 &gt; 中文字符必须为UTF-8或者unicode编码。
+        :type name: str
+        :param time_unit: 流控的时间单位
+        :type time_unit: str
+        :param remark: 流控策略描述字符长度不超过255。 &gt; 中文字符必须为UTF-8或者unicode编码。
+        :type remark: str
+        :param api_call_limits: API流量限制是指时长内一个API能够被访问的次数上限。该值不超过系统默认配额限制，系统默认配额为200tps，用户可根据实际情况修改该系统默认配额。输入的值不超过2147483647。正整数。 
+        :type api_call_limits: int
+        :param type: 流控策略的类型 - 1：基础，表示绑定到流控策略的单个API流控时间内能够被调用多少次。 - 2：共享，表示绑定到流控策略的所有API流控时间内能够被调用多少次。
+        :type type: int
+        :param enable_adaptive_control: 是否开启动态流控： - TRUE - FALSE  暂不支持
+        :type enable_adaptive_control: str
+        :param user_call_limits: [用户流量限制是指一个API在时长之内每一个用户能访问的次数上限，该数值不超过API流量限制值。输入的值不超过2147483647。正整数。](tag:hws,hws_hk,hcs,fcs,g42)[site不支持用户流量限制,输入值为0](tag:Site)
+        :type user_call_limits: int
+        :param time_interval: 流量控制的时长单位。与“流量限制次数”配合使用，表示单位时间内的API请求次数上限。输入的值不超过2147483647。正整数。
+        :type time_interval: int
+        :param ip_call_limits: 源IP流量限制是指一个API在时长之内被每个IP访问的次数上限，该数值不超过API流量限制值。输入的值不超过2147483647。正整数。
+        :type ip_call_limits: int
+        :param id: 流控策略的ID
+        :type id: str
+        :param bind_num: 流控绑定的API数量
+        :type bind_num: int
+        :param is_inclu_special_throttle: 是否包含特殊流控配置 - 1：包含 - 2：不包含
+        :type is_inclu_special_throttle: int
+        :param create_time: 创建时间
+        :type create_time: datetime
+        """
         
         
 
@@ -119,7 +150,7 @@ class ThrottlesInfo:
         APP流量限制是指一个API在时长之内被每个APP访问的次数上限，该数值不超过用户流量限制值。输入的值不超过2147483647。正整数。 
 
         :param app_call_limits: The app_call_limits of this ThrottlesInfo.
-        :type: int
+        :type app_call_limits: int
         """
         self._app_call_limits = app_call_limits
 
@@ -141,7 +172,7 @@ class ThrottlesInfo:
         流控策略名称。支持汉字，英文，数字，下划线，且只能以英文和汉字开头，3 ~ 64字符。 > 中文字符必须为UTF-8或者unicode编码。
 
         :param name: The name of this ThrottlesInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -163,7 +194,7 @@ class ThrottlesInfo:
         流控的时间单位
 
         :param time_unit: The time_unit of this ThrottlesInfo.
-        :type: str
+        :type time_unit: str
         """
         self._time_unit = time_unit
 
@@ -185,7 +216,7 @@ class ThrottlesInfo:
         流控策略描述字符长度不超过255。 > 中文字符必须为UTF-8或者unicode编码。
 
         :param remark: The remark of this ThrottlesInfo.
-        :type: str
+        :type remark: str
         """
         self._remark = remark
 
@@ -207,7 +238,7 @@ class ThrottlesInfo:
         API流量限制是指时长内一个API能够被访问的次数上限。该值不超过系统默认配额限制，系统默认配额为200tps，用户可根据实际情况修改该系统默认配额。输入的值不超过2147483647。正整数。 
 
         :param api_call_limits: The api_call_limits of this ThrottlesInfo.
-        :type: int
+        :type api_call_limits: int
         """
         self._api_call_limits = api_call_limits
 
@@ -229,7 +260,7 @@ class ThrottlesInfo:
         流控策略的类型 - 1：基础，表示绑定到流控策略的单个API流控时间内能够被调用多少次。 - 2：共享，表示绑定到流控策略的所有API流控时间内能够被调用多少次。
 
         :param type: The type of this ThrottlesInfo.
-        :type: int
+        :type type: int
         """
         self._type = type
 
@@ -251,7 +282,7 @@ class ThrottlesInfo:
         是否开启动态流控： - TRUE - FALSE  暂不支持
 
         :param enable_adaptive_control: The enable_adaptive_control of this ThrottlesInfo.
-        :type: str
+        :type enable_adaptive_control: str
         """
         self._enable_adaptive_control = enable_adaptive_control
 
@@ -273,7 +304,7 @@ class ThrottlesInfo:
         [用户流量限制是指一个API在时长之内每一个用户能访问的次数上限，该数值不超过API流量限制值。输入的值不超过2147483647。正整数。](tag:hws,hws_hk,hcs,fcs,g42)[site不支持用户流量限制,输入值为0](tag:Site)
 
         :param user_call_limits: The user_call_limits of this ThrottlesInfo.
-        :type: int
+        :type user_call_limits: int
         """
         self._user_call_limits = user_call_limits
 
@@ -295,7 +326,7 @@ class ThrottlesInfo:
         流量控制的时长单位。与“流量限制次数”配合使用，表示单位时间内的API请求次数上限。输入的值不超过2147483647。正整数。
 
         :param time_interval: The time_interval of this ThrottlesInfo.
-        :type: int
+        :type time_interval: int
         """
         self._time_interval = time_interval
 
@@ -317,7 +348,7 @@ class ThrottlesInfo:
         源IP流量限制是指一个API在时长之内被每个IP访问的次数上限，该数值不超过API流量限制值。输入的值不超过2147483647。正整数。
 
         :param ip_call_limits: The ip_call_limits of this ThrottlesInfo.
-        :type: int
+        :type ip_call_limits: int
         """
         self._ip_call_limits = ip_call_limits
 
@@ -339,7 +370,7 @@ class ThrottlesInfo:
         流控策略的ID
 
         :param id: The id of this ThrottlesInfo.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -361,7 +392,7 @@ class ThrottlesInfo:
         流控绑定的API数量
 
         :param bind_num: The bind_num of this ThrottlesInfo.
-        :type: int
+        :type bind_num: int
         """
         self._bind_num = bind_num
 
@@ -383,7 +414,7 @@ class ThrottlesInfo:
         是否包含特殊流控配置 - 1：包含 - 2：不包含
 
         :param is_inclu_special_throttle: The is_inclu_special_throttle of this ThrottlesInfo.
-        :type: int
+        :type is_inclu_special_throttle: int
         """
         self._is_inclu_special_throttle = is_inclu_special_throttle
 
@@ -405,7 +436,7 @@ class ThrottlesInfo:
         创建时间
 
         :param create_time: The create_time of this ThrottlesInfo.
-        :type: datetime
+        :type create_time: datetime
         """
         self._create_time = create_time
 

@@ -52,21 +52,17 @@ class DbssAsyncClient(Client):
         """开启关闭Agent
 
         用于开启和关闭agent的功能，当开启后，开始抓取用户的访问信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param SwitchAgentRequest request
-        :return: SwitchAgentResponse
+        :param request: Request instance for SwitchAgent
+        :type request: :class:`huaweicloudsdkdbss.v1.SwitchAgentRequest`
+        :rtype: :class:`huaweicloudsdkdbss.v1.SwitchAgentResponse`
         """
         return self.switch_agent_with_http_info(request)
 
     def switch_agent_with_http_info(self, request):
-        """开启关闭Agent
-
-        用于开启和关闭agent的功能，当开启后，开始抓取用户的访问信息。
-
-        :param SwitchAgentRequest request
-        :return: SwitchAgentResponse
-        """
-
         all_params = ['instance_id', 'switch_agent_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -112,26 +108,21 @@ class DbssAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def switch_risk_rule_async(self, request):
         """开启关闭风险规则
 
         开启关闭风险规则
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param SwitchRiskRuleRequest request
-        :return: SwitchRiskRuleResponse
+        :param request: Request instance for SwitchRiskRule
+        :type request: :class:`huaweicloudsdkdbss.v1.SwitchRiskRuleRequest`
+        :rtype: :class:`huaweicloudsdkdbss.v1.SwitchRiskRuleResponse`
         """
         return self.switch_risk_rule_with_http_info(request)
 
     def switch_risk_rule_with_http_info(self, request):
-        """开启关闭风险规则
-
-        开启关闭风险规则
-
-        :param SwitchRiskRuleRequest request
-        :return: SwitchRiskRuleResponse
-        """
-
         all_params = ['instance_id', 'switch_risk_rule_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -176,7 +167,6 @@ class DbssAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

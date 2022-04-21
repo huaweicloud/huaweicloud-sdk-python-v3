@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateAutoCreatePolicyRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateAutoCreatePolicyRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """CreateAutoCreatePolicyRequest - a model defined in huaweicloud sdk"""
+        """CreateAutoCreatePolicyRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 指定要自动创建快照的集群ID。
+        :type cluster_id: str
+        :param body: Body of the CreateAutoCreatePolicyRequest
+        :type body: :class:`huaweicloudsdkcss.v1.SetRDSBackupCnfReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateAutoCreatePolicyRequest:
         指定要自动创建快照的集群ID。
 
         :param cluster_id: The cluster_id of this CreateAutoCreatePolicyRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -72,7 +79,7 @@ class CreateAutoCreatePolicyRequest:
 
 
         :return: The body of this CreateAutoCreatePolicyRequest.
-        :rtype: SetRDSBackupCnfReq
+        :rtype: :class:`huaweicloudsdkcss.v1.SetRDSBackupCnfReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CreateAutoCreatePolicyRequest:
 
 
         :param body: The body of this CreateAutoCreatePolicyRequest.
-        :type: SetRDSBackupCnfReq
+        :type body: :class:`huaweicloudsdkcss.v1.SetRDSBackupCnfReq`
         """
         self._body = body
 

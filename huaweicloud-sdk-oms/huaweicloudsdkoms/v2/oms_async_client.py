@@ -52,21 +52,17 @@ class OmsAsyncClient(Client):
         """创建同步事件
 
         源端有对象需要进行同步时，调用该接口创建一个同步事件，系统将根据同步事件中包含的对象名称进行同步
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateSyncEventsRequest request
-        :return: CreateSyncEventsResponse
+        :param request: Request instance for CreateSyncEvents
+        :type request: :class:`huaweicloudsdkoms.v2.CreateSyncEventsRequest`
+        :rtype: :class:`huaweicloudsdkoms.v2.CreateSyncEventsResponse`
         """
         return self.create_sync_events_with_http_info(request)
 
     def create_sync_events_with_http_info(self, request):
-        """创建同步事件
-
-        源端有对象需要进行同步时，调用该接口创建一个同步事件，系统将根据同步事件中包含的对象名称进行同步
-
-        :param CreateSyncEventsRequest request
-        :return: CreateSyncEventsResponse
-        """
-
         all_params = ['sync_task_id', 'create_sync_events_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -112,26 +108,21 @@ class OmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_task_async(self, request):
         """创建迁移任务
 
         创建迁移任务，创建成功后，任务会被自动启动，不需要额外调用启动任务命令。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateTaskRequest request
-        :return: CreateTaskResponse
+        :param request: Request instance for CreateTask
+        :type request: :class:`huaweicloudsdkoms.v2.CreateTaskRequest`
+        :rtype: :class:`huaweicloudsdkoms.v2.CreateTaskResponse`
         """
         return self.create_task_with_http_info(request)
 
     def create_task_with_http_info(self, request):
-        """创建迁移任务
-
-        创建迁移任务，创建成功后，任务会被自动启动，不需要额外调用启动任务命令。
-
-        :param CreateTaskRequest request
-        :return: CreateTaskResponse
-        """
-
         all_params = ['create_task_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -175,26 +166,22 @@ class OmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_task_async(self, request):
         """删除迁移任务
 
-        调用该接口删除迁移任务。 正在运行的任务不允许删除，如果删除会返回失败；若要删除，请先行暂停任务。
+        调用该接口删除迁移任务。
+        正在运行的任务不允许删除，如果删除会返回失败；若要删除，请先行暂停任务。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteTaskRequest request
-        :return: DeleteTaskResponse
+        :param request: Request instance for DeleteTask
+        :type request: :class:`huaweicloudsdkoms.v2.DeleteTaskRequest`
+        :rtype: :class:`huaweicloudsdkoms.v2.DeleteTaskResponse`
         """
         return self.delete_task_with_http_info(request)
 
     def delete_task_with_http_info(self, request):
-        """删除迁移任务
-
-        调用该接口删除迁移任务。 正在运行的任务不允许删除，如果删除会返回失败；若要删除，请先行暂停任务。
-
-        :param DeleteTaskRequest request
-        :return: DeleteTaskResponse
-        """
-
         all_params = ['task_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -238,26 +225,21 @@ class OmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_tasks_async(self, request):
         """查询迁移任务列表
 
         查询用户账户下的所有任务信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListTasksRequest request
-        :return: ListTasksResponse
+        :param request: Request instance for ListTasks
+        :type request: :class:`huaweicloudsdkoms.v2.ListTasksRequest`
+        :rtype: :class:`huaweicloudsdkoms.v2.ListTasksResponse`
         """
         return self.list_tasks_with_http_info(request)
 
     def list_tasks_with_http_info(self, request):
-        """查询迁移任务列表
-
-        查询用户账户下的所有任务信息。
-
-        :param ListTasksRequest request
-        :return: ListTasksResponse
-        """
-
         all_params = ['group_id', 'limit', 'offset', 'status']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -307,26 +289,21 @@ class OmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_task_async(self, request):
         """查询指定ID的任务详情
 
         查询指定ID的任务详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowTaskRequest request
-        :return: ShowTaskResponse
+        :param request: Request instance for ShowTask
+        :type request: :class:`huaweicloudsdkoms.v2.ShowTaskRequest`
+        :rtype: :class:`huaweicloudsdkoms.v2.ShowTaskResponse`
         """
         return self.show_task_with_http_info(request)
 
     def show_task_with_http_info(self, request):
-        """查询指定ID的任务详情
-
-        查询指定ID的任务详情。
-
-        :param ShowTaskRequest request
-        :return: ShowTaskResponse
-        """
-
         all_params = ['task_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -370,26 +347,21 @@ class OmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def start_task_async(self, request):
         """启动迁移任务
 
         迁移任务暂停或失败后，调用该接口以启动任务。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param StartTaskRequest request
-        :return: StartTaskResponse
+        :param request: Request instance for StartTask
+        :type request: :class:`huaweicloudsdkoms.v2.StartTaskRequest`
+        :rtype: :class:`huaweicloudsdkoms.v2.StartTaskResponse`
         """
         return self.start_task_with_http_info(request)
 
     def start_task_with_http_info(self, request):
-        """启动迁移任务
-
-        迁移任务暂停或失败后，调用该接口以启动任务。
-
-        :param StartTaskRequest request
-        :return: StartTaskResponse
-        """
-
         all_params = ['task_id', 'start_task_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -435,26 +407,21 @@ class OmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def stop_task_async(self, request):
         """暂停迁移任务
 
         当迁移任务处于迁移中时，调用该接口停止任务。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param StopTaskRequest request
-        :return: StopTaskResponse
+        :param request: Request instance for StopTask
+        :type request: :class:`huaweicloudsdkoms.v2.StopTaskRequest`
+        :rtype: :class:`huaweicloudsdkoms.v2.StopTaskResponse`
         """
         return self.stop_task_with_http_info(request)
 
     def stop_task_with_http_info(self, request):
-        """暂停迁移任务
-
-        当迁移任务处于迁移中时，调用该接口停止任务。
-
-        :param StopTaskRequest request
-        :return: StopTaskResponse
-        """
-
         all_params = ['task_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -498,26 +465,21 @@ class OmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_bandwidth_policy_async(self, request):
         """更新任务带宽策略
 
         当迁移任务未执行完成时，修改迁移任务的流量控制策略。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateBandwidthPolicyRequest request
-        :return: UpdateBandwidthPolicyResponse
+        :param request: Request instance for UpdateBandwidthPolicy
+        :type request: :class:`huaweicloudsdkoms.v2.UpdateBandwidthPolicyRequest`
+        :rtype: :class:`huaweicloudsdkoms.v2.UpdateBandwidthPolicyResponse`
         """
         return self.update_bandwidth_policy_with_http_info(request)
 
     def update_bandwidth_policy_with_http_info(self, request):
-        """更新任务带宽策略
-
-        当迁移任务未执行完成时，修改迁移任务的流量控制策略。
-
-        :param UpdateBandwidthPolicyRequest request
-        :return: UpdateBandwidthPolicyResponse
-        """
-
         all_params = ['task_id', 'update_bandwidth_policy_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -563,26 +525,21 @@ class OmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_api_versions_async(self, request):
         """查询API版本信息列表
 
         查询对象存储迁移服务的API版本信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListApiVersionsRequest request
-        :return: ListApiVersionsResponse
+        :param request: Request instance for ListApiVersions
+        :type request: :class:`huaweicloudsdkoms.v2.ListApiVersionsRequest`
+        :rtype: :class:`huaweicloudsdkoms.v2.ListApiVersionsResponse`
         """
         return self.list_api_versions_with_http_info(request)
 
     def list_api_versions_with_http_info(self, request):
-        """查询API版本信息列表
-
-        查询对象存储迁移服务的API版本信息。
-
-        :param ListApiVersionsRequest request
-        :return: ListApiVersionsResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -624,26 +581,21 @@ class OmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_api_info_async(self, request):
         """查询指定API版本信息
 
         查询对象存储迁移服务指定API版本信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowApiInfoRequest request
-        :return: ShowApiInfoResponse
+        :param request: Request instance for ShowApiInfo
+        :type request: :class:`huaweicloudsdkoms.v2.ShowApiInfoRequest`
+        :rtype: :class:`huaweicloudsdkoms.v2.ShowApiInfoResponse`
         """
         return self.show_api_info_with_http_info(request)
 
     def show_api_info_with_http_info(self, request):
-        """查询指定API版本信息
-
-        查询对象存储迁移服务指定API版本信息。
-
-        :param ShowApiInfoRequest request
-        :return: ShowApiInfoResponse
-        """
-
         all_params = ['version']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -686,7 +638,6 @@ class OmsAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

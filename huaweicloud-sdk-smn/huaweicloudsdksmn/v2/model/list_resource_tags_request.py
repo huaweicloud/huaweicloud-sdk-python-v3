@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListResourceTagsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListResourceTagsRequest:
     }
 
     def __init__(self, resource_type=None, resource_id=None):
-        """ListResourceTagsRequest - a model defined in huaweicloud sdk"""
+        """ListResourceTagsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param resource_type: 资源类型 目前有: smn_topic，主题 smn_sms，短信 smn_application，移动推送
+        :type resource_type: str
+        :param resource_id: 资源ID。  获取resource_id的方法：  当resource_type为“smn_topic”时， 手动添加请求消息头“X-SMN-RESOURCEID-TYPE&#x3D;name”，资源ID即为topic名称。 不添加请求消息头，通过“查询资源实例”，获取资源ID。 当resource_type为“smn_sms”时，resource_id为签名ID。您可在控制台获取。
+        :type resource_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ListResourceTagsRequest:
         资源类型 目前有: smn_topic，主题 smn_sms，短信 smn_application，移动推送
 
         :param resource_type: The resource_type of this ListResourceTagsRequest.
-        :type: str
+        :type resource_type: str
         """
         self._resource_type = resource_type
 
@@ -83,7 +90,7 @@ class ListResourceTagsRequest:
         资源ID。  获取resource_id的方法：  当resource_type为“smn_topic”时， 手动添加请求消息头“X-SMN-RESOURCEID-TYPE=name”，资源ID即为topic名称。 不添加请求消息头，通过“查询资源实例”，获取资源ID。 当resource_type为“smn_sms”时，resource_id为签名ID。您可在控制台获取。
 
         :param resource_id: The resource_id of this ListResourceTagsRequest.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 

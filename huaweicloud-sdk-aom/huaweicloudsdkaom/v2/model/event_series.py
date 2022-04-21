@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EventSeries:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class EventSeries:
     }
 
     def __init__(self, event_severity=None, values=None):
-        """EventSeries - a model defined in huaweicloud sdk"""
+        """EventSeries
+
+        The model defined in huaweicloud sdk
+
+        :param event_severity: 事件或者告警级别枚举类型。
+        :type event_severity: str
+        :param values: 事件或者告警统计结果。
+        :type values: list[int]
+        """
         
         
 
@@ -63,7 +70,7 @@ class EventSeries:
         事件或者告警级别枚举类型。
 
         :param event_severity: The event_severity of this EventSeries.
-        :type: str
+        :type event_severity: str
         """
         self._event_severity = event_severity
 
@@ -85,7 +92,7 @@ class EventSeries:
         事件或者告警统计结果。
 
         :param values: The values of this EventSeries.
-        :type: list[int]
+        :type values: list[int]
         """
         self._values = values
 

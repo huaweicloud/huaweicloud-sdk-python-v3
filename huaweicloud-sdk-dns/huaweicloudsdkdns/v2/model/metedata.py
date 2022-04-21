@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Metedata:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class Metedata:
     }
 
     def __init__(self, total_count=None):
-        """Metedata - a model defined in huaweicloud sdk"""
+        """Metedata
+
+        The model defined in huaweicloud sdk
+
+        :param total_count: 满足查询条件的资源总数，不受分页（即limit、offset参数）影响。
+        :type total_count: int
+        """
         
         
 
@@ -58,7 +63,7 @@ class Metedata:
         满足查询条件的资源总数，不受分页（即limit、offset参数）影响。
 
         :param total_count: The total_count of this Metedata.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 

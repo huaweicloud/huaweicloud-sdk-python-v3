@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateRecordSetRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateRecordSetRequest:
     }
 
     def __init__(self, zone_id=None, body=None):
-        """CreateRecordSetRequest - a model defined in huaweicloud sdk"""
+        """CreateRecordSetRequest
+
+        The model defined in huaweicloud sdk
+
+        :param zone_id: 所属zone的ID。
+        :type zone_id: str
+        :param body: Body of the CreateRecordSetRequest
+        :type body: :class:`huaweicloudsdkdns.v2.CreateRecordSetReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateRecordSetRequest:
         所属zone的ID。
 
         :param zone_id: The zone_id of this CreateRecordSetRequest.
-        :type: str
+        :type zone_id: str
         """
         self._zone_id = zone_id
 
@@ -72,7 +79,7 @@ class CreateRecordSetRequest:
 
 
         :return: The body of this CreateRecordSetRequest.
-        :rtype: CreateRecordSetReq
+        :rtype: :class:`huaweicloudsdkdns.v2.CreateRecordSetReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CreateRecordSetRequest:
 
 
         :param body: The body of this CreateRecordSetRequest.
-        :type: CreateRecordSetReq
+        :type body: :class:`huaweicloudsdkdns.v2.CreateRecordSetReq`
         """
         self._body = body
 

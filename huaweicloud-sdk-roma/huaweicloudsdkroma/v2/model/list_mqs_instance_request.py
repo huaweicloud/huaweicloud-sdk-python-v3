@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListMqsInstanceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListMqsInstanceRequest:
     }
 
     def __init__(self, include_internal=None):
-        """ListMqsInstanceRequest - a model defined in huaweicloud sdk"""
+        """ListMqsInstanceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param include_internal: 是否包含内部的实例。include_internal参数必须为true。
+        :type include_internal: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ListMqsInstanceRequest:
         是否包含内部的实例。include_internal参数必须为true。
 
         :param include_internal: The include_internal of this ListMqsInstanceRequest.
-        :type: str
+        :type include_internal: str
         """
         self._include_internal = include_internal
 

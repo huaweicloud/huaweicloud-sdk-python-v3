@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ObsScanResultInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ObsScanResultInfo:
     }
 
     def __init__(self, task_id=None, bucket_id=None, bucket_name=None, file_path=None, file_name=None, md5=None, risk_level=None, sensitive_data_type=None):
-        """ObsScanResultInfo - a model defined in huaweicloud sdk"""
+        """ObsScanResultInfo
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 任务ID
+        :type task_id: str
+        :param bucket_id: OBS桶ID
+        :type bucket_id: str
+        :param bucket_name: OBS桶名称
+        :type bucket_name: str
+        :param file_path: 文件路径
+        :type file_path: str
+        :param file_name: 文件名
+        :type file_name: str
+        :param md5: 文件md5值
+        :type md5: str
+        :param risk_level: 风险等级
+        :type risk_level: int
+        :param sensitive_data_type: 风险数据类型
+        :type sensitive_data_type: list[str]
+        """
         
         
 
@@ -93,7 +112,7 @@ class ObsScanResultInfo:
         任务ID
 
         :param task_id: The task_id of this ObsScanResultInfo.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -115,7 +134,7 @@ class ObsScanResultInfo:
         OBS桶ID
 
         :param bucket_id: The bucket_id of this ObsScanResultInfo.
-        :type: str
+        :type bucket_id: str
         """
         self._bucket_id = bucket_id
 
@@ -137,7 +156,7 @@ class ObsScanResultInfo:
         OBS桶名称
 
         :param bucket_name: The bucket_name of this ObsScanResultInfo.
-        :type: str
+        :type bucket_name: str
         """
         self._bucket_name = bucket_name
 
@@ -159,7 +178,7 @@ class ObsScanResultInfo:
         文件路径
 
         :param file_path: The file_path of this ObsScanResultInfo.
-        :type: str
+        :type file_path: str
         """
         self._file_path = file_path
 
@@ -181,7 +200,7 @@ class ObsScanResultInfo:
         文件名
 
         :param file_name: The file_name of this ObsScanResultInfo.
-        :type: str
+        :type file_name: str
         """
         self._file_name = file_name
 
@@ -203,7 +222,7 @@ class ObsScanResultInfo:
         文件md5值
 
         :param md5: The md5 of this ObsScanResultInfo.
-        :type: str
+        :type md5: str
         """
         self._md5 = md5
 
@@ -225,7 +244,7 @@ class ObsScanResultInfo:
         风险等级
 
         :param risk_level: The risk_level of this ObsScanResultInfo.
-        :type: int
+        :type risk_level: int
         """
         self._risk_level = risk_level
 
@@ -247,7 +266,7 @@ class ObsScanResultInfo:
         风险数据类型
 
         :param sensitive_data_type: The sensitive_data_type of this ObsScanResultInfo.
-        :type: list[str]
+        :type sensitive_data_type: list[str]
         """
         self._sensitive_data_type = sensitive_data_type
 

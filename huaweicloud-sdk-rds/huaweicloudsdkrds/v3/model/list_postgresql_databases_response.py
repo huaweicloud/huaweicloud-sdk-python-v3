@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPostgresqlDatabasesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListPostgresqlDatabasesResponse(SdkResponse):
     }
 
     def __init__(self, databases=None, total_count=None):
-        """ListPostgresqlDatabasesResponse - a model defined in huaweicloud sdk"""
+        """ListPostgresqlDatabasesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param databases: 列表中每个元素表示一个数据库。
+        :type databases: list[:class:`huaweicloudsdkrds.v3.PostgresqlListDatabase`]
+        :param total_count: 数据库总数。
+        :type total_count: int
+        """
         
         super(ListPostgresqlDatabasesResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListPostgresqlDatabasesResponse(SdkResponse):
         列表中每个元素表示一个数据库。
 
         :return: The databases of this ListPostgresqlDatabasesResponse.
-        :rtype: list[PostgresqlListDatabase]
+        :rtype: list[:class:`huaweicloudsdkrds.v3.PostgresqlListDatabase`]
         """
         return self._databases
 
@@ -63,7 +70,7 @@ class ListPostgresqlDatabasesResponse(SdkResponse):
         列表中每个元素表示一个数据库。
 
         :param databases: The databases of this ListPostgresqlDatabasesResponse.
-        :type: list[PostgresqlListDatabase]
+        :type databases: list[:class:`huaweicloudsdkrds.v3.PostgresqlListDatabase`]
         """
         self._databases = databases
 
@@ -85,7 +92,7 @@ class ListPostgresqlDatabasesResponse(SdkResponse):
         数据库总数。
 
         :param total_count: The total_count of this ListPostgresqlDatabasesResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 

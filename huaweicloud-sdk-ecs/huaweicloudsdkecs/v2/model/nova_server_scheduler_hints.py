@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NovaServerSchedulerHints:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class NovaServerSchedulerHints:
     }
 
     def __init__(self, tenancy=None, dedicated_host_id=None):
-        """NovaServerSchedulerHints - a model defined in huaweicloud sdk"""
+        """NovaServerSchedulerHints
+
+        The model defined in huaweicloud sdk
+
+        :param tenancy: 在指定的专属主机或者共享主机上创建弹性云服务器。 参数值为shared或者dedicated。
+        :type tenancy: list[str]
+        :param dedicated_host_id: 专属主机ID。 此属性仅在tenancy值为dedicated时有效。
+        :type dedicated_host_id: list[str]
+        """
         
         
 
@@ -63,7 +70,7 @@ class NovaServerSchedulerHints:
         在指定的专属主机或者共享主机上创建弹性云服务器。 参数值为shared或者dedicated。
 
         :param tenancy: The tenancy of this NovaServerSchedulerHints.
-        :type: list[str]
+        :type tenancy: list[str]
         """
         self._tenancy = tenancy
 
@@ -85,7 +92,7 @@ class NovaServerSchedulerHints:
         专属主机ID。 此属性仅在tenancy值为dedicated时有效。
 
         :param dedicated_host_id: The dedicated_host_id of this NovaServerSchedulerHints.
-        :type: list[str]
+        :type dedicated_host_id: list[str]
         """
         self._dedicated_host_id = dedicated_host_id
 

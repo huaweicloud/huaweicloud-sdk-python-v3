@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteResourceGroupResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class DeleteResourceGroupResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteResourceGroupResponse - a model defined in huaweicloud sdk"""
+        """DeleteResourceGroupResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(DeleteResourceGroupResponse, self).__init__()
         self.discriminator = None

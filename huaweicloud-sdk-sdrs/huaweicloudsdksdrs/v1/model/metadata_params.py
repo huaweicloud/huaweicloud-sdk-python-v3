@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MetadataParams:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class MetadataParams:
     }
 
     def __init__(self, system__frozen=None):
-        """MetadataParams - a model defined in huaweicloud sdk"""
+        """MetadataParams
+
+        The model defined in huaweicloud sdk
+
+        :param system__frozen: 保护实例元数据中资源冻结的字段。 true：表示资源被冻结。 空：表示资源没有被冻结。
+        :type system__frozen: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class MetadataParams:
         保护实例元数据中资源冻结的字段。 true：表示资源被冻结。 空：表示资源没有被冻结。
 
         :param system__frozen: The system__frozen of this MetadataParams.
-        :type: str
+        :type system__frozen: str
         """
         self._system__frozen = system__frozen
 

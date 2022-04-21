@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CdmQueryClusterDetailsRepsonsePublicEndpointStatus:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CdmQueryClusterDetailsRepsonsePublicEndpointStatus:
     }
 
     def __init__(self, status=None, error_message=None):
-        """CdmQueryClusterDetailsRepsonsePublicEndpointStatus - a model defined in huaweicloud sdk"""
+        """CdmQueryClusterDetailsRepsonsePublicEndpointStatus
+
+        The model defined in huaweicloud sdk
+
+        :param status: 状态
+        :type status: str
+        :param error_message: 错误信息
+        :type error_message: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class CdmQueryClusterDetailsRepsonsePublicEndpointStatus:
         状态
 
         :param status: The status of this CdmQueryClusterDetailsRepsonsePublicEndpointStatus.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -85,7 +92,7 @@ class CdmQueryClusterDetailsRepsonsePublicEndpointStatus:
         错误信息
 
         :param error_message: The error_message of this CdmQueryClusterDetailsRepsonsePublicEndpointStatus.
-        :type: str
+        :type error_message: str
         """
         self._error_message = error_message
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddProtectedInstanceNicRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AddProtectedInstanceNicRequest:
     }
 
     def __init__(self, protected_instance_id=None, body=None):
-        """AddProtectedInstanceNicRequest - a model defined in huaweicloud sdk"""
+        """AddProtectedInstanceNicRequest
+
+        The model defined in huaweicloud sdk
+
+        :param protected_instance_id: 保护实例的ID。
+        :type protected_instance_id: str
+        :param body: Body of the AddProtectedInstanceNicRequest
+        :type body: :class:`huaweicloudsdksdrs.v1.ProtectedInstanceAddNicRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class AddProtectedInstanceNicRequest:
         保护实例的ID。
 
         :param protected_instance_id: The protected_instance_id of this AddProtectedInstanceNicRequest.
-        :type: str
+        :type protected_instance_id: str
         """
         self._protected_instance_id = protected_instance_id
 
@@ -72,7 +79,7 @@ class AddProtectedInstanceNicRequest:
 
 
         :return: The body of this AddProtectedInstanceNicRequest.
-        :rtype: ProtectedInstanceAddNicRequestBody
+        :rtype: :class:`huaweicloudsdksdrs.v1.ProtectedInstanceAddNicRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class AddProtectedInstanceNicRequest:
 
 
         :param body: The body of this AddProtectedInstanceNicRequest.
-        :type: ProtectedInstanceAddNicRequestBody
+        :type body: :class:`huaweicloudsdksdrs.v1.ProtectedInstanceAddNicRequestBody`
         """
         self._body = body
 

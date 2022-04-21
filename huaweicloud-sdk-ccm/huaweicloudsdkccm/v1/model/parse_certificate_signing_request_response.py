@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ParseCertificateSigningRequestResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ParseCertificateSigningRequestResponse(SdkResponse):
     }
 
     def __init__(self, key_algorithm=None, key_algorithm_length=None, signature_algorithm=None, public_key=None, distinguished_name=None):
-        """ParseCertificateSigningRequestResponse - a model defined in huaweicloud sdk"""
+        """ParseCertificateSigningRequestResponse
+
+        The model defined in huaweicloud sdk
+
+        :param key_algorithm: 密钥算法。
+        :type key_algorithm: str
+        :param key_algorithm_length: 密钥算法长度，单位为bit。
+        :type key_algorithm_length: str
+        :param signature_algorithm: 签名算法，带具体的签名与哈希算法，如\&quot;SHA256withRSA\&quot;。
+        :type signature_algorithm: str
+        :param public_key: 公钥内容。 &gt; 其中，换行符已被“\\r\\n”替代；
+        :type public_key: str
+        :param distinguished_name: 
+        :type distinguished_name: :class:`huaweicloudsdkccm.v1.DistinguishedName`
+        """
         
         super(ParseCertificateSigningRequestResponse, self).__init__()
 
@@ -78,7 +91,7 @@ class ParseCertificateSigningRequestResponse(SdkResponse):
         密钥算法。
 
         :param key_algorithm: The key_algorithm of this ParseCertificateSigningRequestResponse.
-        :type: str
+        :type key_algorithm: str
         """
         self._key_algorithm = key_algorithm
 
@@ -100,7 +113,7 @@ class ParseCertificateSigningRequestResponse(SdkResponse):
         密钥算法长度，单位为bit。
 
         :param key_algorithm_length: The key_algorithm_length of this ParseCertificateSigningRequestResponse.
-        :type: str
+        :type key_algorithm_length: str
         """
         self._key_algorithm_length = key_algorithm_length
 
@@ -122,7 +135,7 @@ class ParseCertificateSigningRequestResponse(SdkResponse):
         签名算法，带具体的签名与哈希算法，如\"SHA256withRSA\"。
 
         :param signature_algorithm: The signature_algorithm of this ParseCertificateSigningRequestResponse.
-        :type: str
+        :type signature_algorithm: str
         """
         self._signature_algorithm = signature_algorithm
 
@@ -144,7 +157,7 @@ class ParseCertificateSigningRequestResponse(SdkResponse):
         公钥内容。 > 其中，换行符已被“\\r\\n”替代；
 
         :param public_key: The public_key of this ParseCertificateSigningRequestResponse.
-        :type: str
+        :type public_key: str
         """
         self._public_key = public_key
 
@@ -154,7 +167,7 @@ class ParseCertificateSigningRequestResponse(SdkResponse):
 
 
         :return: The distinguished_name of this ParseCertificateSigningRequestResponse.
-        :rtype: DistinguishedName
+        :rtype: :class:`huaweicloudsdkccm.v1.DistinguishedName`
         """
         return self._distinguished_name
 
@@ -164,7 +177,7 @@ class ParseCertificateSigningRequestResponse(SdkResponse):
 
 
         :param distinguished_name: The distinguished_name of this ParseCertificateSigningRequestResponse.
-        :type: DistinguishedName
+        :type distinguished_name: :class:`huaweicloudsdkccm.v1.DistinguishedName`
         """
         self._distinguished_name = distinguished_name
 

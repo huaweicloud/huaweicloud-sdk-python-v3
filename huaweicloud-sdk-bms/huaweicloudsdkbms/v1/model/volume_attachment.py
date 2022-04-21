@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VolumeAttachment:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class VolumeAttachment:
     }
 
     def __init__(self, volume_id=None, device=None):
-        """VolumeAttachment - a model defined in huaweicloud sdk"""
+        """VolumeAttachment
+
+        The model defined in huaweicloud sdk
+
+        :param volume_id: 要挂卷的卷ID。可以从云硬盘控制台查询，或者通过调用“查询云硬盘列表”API获取。
+        :type volume_id: str
+        :param device: 磁盘挂载点，如/dev/sda、/dev/sdb。新增加的磁盘挂载点不能和已有的磁盘挂载点相同。需要根据已有设备名称顺序指定，否则不写device或device的值为空时，由系统自动生成。
+        :type device: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class VolumeAttachment:
         要挂卷的卷ID。可以从云硬盘控制台查询，或者通过调用“查询云硬盘列表”API获取。
 
         :param volume_id: The volume_id of this VolumeAttachment.
-        :type: str
+        :type volume_id: str
         """
         self._volume_id = volume_id
 
@@ -84,7 +91,7 @@ class VolumeAttachment:
         磁盘挂载点，如/dev/sda、/dev/sdb。新增加的磁盘挂载点不能和已有的磁盘挂载点相同。需要根据已有设备名称顺序指定，否则不写device或device的值为空时，由系统自动生成。
 
         :param device: The device of this VolumeAttachment.
-        :type: str
+        :type device: str
         """
         self._device = device
 

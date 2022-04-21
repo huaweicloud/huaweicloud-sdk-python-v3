@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ServerDetails:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -116,7 +115,99 @@ class ServerDetails:
     }
 
     def __init__(self, id=None, user_id=None, name=None, created=None, updated=None, tenant_id=None, host_id=None, addresses=None, key_name=None, image=None, flavor=None, security_groups=None, access_i_pv4=None, access_i_pv6=None, status=None, progress=None, config_drive=None, metadata=None, os_ext_st_stask_state=None, os_ext_st_svm_state=None, os_ext_srv_att_rhost=None, os_ext_srv_att_rinstance_name=None, os_ext_st_spower_state=None, os_ext_srv_att_rhypervisor_hostname=None, os_ext_a_zavailability_zone=None, os_dc_fdisk_config=None, fault=None, os_srv_us_glaunched_at=None, os_srv_us_gterminated_at=None, os_extended_volumesvolumes_attached=None, description=None, host_status=None, os_ext_srv_att_rhostname=None, os_ext_srv_att_rreservation_id=None, os_ext_srv_att_rlaunch_index=None, os_ext_srv_att_rkernel_id=None, os_ext_srv_att_rramdisk_id=None, os_ext_srv_att_rroot_device_name=None, os_ext_srv_att_ruser_data=None, locked=None, tags=None, osscheduler_hints=None, enterprise_project_id=None, sys_tags=None):
-        """ServerDetails - a model defined in huaweicloud sdk"""
+        """ServerDetails
+
+        The model defined in huaweicloud sdk
+
+        :param id: 裸金属服务器ID，格式为UUID
+        :type id: str
+        :param user_id: 创建裸金属服务器的用户ID，格式为UUID。
+        :type user_id: str
+        :param name: 裸金属服务器名称
+        :type name: str
+        :param created: 裸金属服务器创建时间。时间戳格式为ISO 8601：YYYY-MM-DDTHH:MM:SSZ，例如：2019-05-22T03:30:52Z
+        :type created: datetime
+        :param updated: 裸金属服务器更新时间。时间戳格式为ISO 8601：YYYY-MM-DDTHH:MM:SSZ，例如：2019-05-22T04:30:52Z
+        :type updated: datetime
+        :param tenant_id: 裸金属服务器所属租户ID，格式为UUID。该参数和project_id表示相同的概念。
+        :type tenant_id: str
+        :param host_id: 裸金属服务器对应的主机ID
+        :type host_id: str
+        :param addresses: 裸金属服务器的网络属性。详情请参见表3 addresses数据结构说明。
+        :type addresses: dict(str, list[AddressInfo])
+        :param key_name: 裸金属服务器使用的密钥对名称
+        :type key_name: str
+        :param image: 
+        :type image: :class:`huaweicloudsdkbms.v1.ImageInfo`
+        :param flavor: 
+        :type flavor: :class:`huaweicloudsdkbms.v1.FlavorInfos`
+        :param security_groups: 裸金属服务器所属安全组。详情请参见表7 security_groups数据结构说明。
+        :type security_groups: list[:class:`huaweicloudsdkbms.v1.SecurityGroupsList`]
+        :param access_i_pv4: 预留属性
+        :type access_i_pv4: str
+        :param access_i_pv6: 预留属性
+        :type access_i_pv6: str
+        :param status: 裸金属服务器当前状态信息。取值范围：ACTIVE：运行中/正在关机/删除中BUILD：创建中ERROR：故障HARD_REBOOT：强制重启中REBOOT：重启中裸金属服务器当前状态信息。取值范围：ACTIVE：运行中/正在关机/删除中BUILD：创建中ERROR：故障HARD_REBOOT：强制重启中REBOOT：重启中
+        :type status: str
+        :param progress: 预留属性
+        :type progress: int
+        :param config_drive: 是否为裸金属服务器配置config drive分区。取值为：True或空字符串
+        :type config_drive: str
+        :param metadata: 
+        :type metadata: :class:`huaweicloudsdkbms.v1.MetadataList`
+        :param os_ext_st_stask_state: 扩展属性，裸金属服务器当前的任务状态。例如：rebooting：重启中reboot_started：普通重启reboot_started_hard：强制重启powering-off：关机中powering-on：开机中rebuilding：重建中scheduling：调度中deleting：删除中
+        :type os_ext_st_stask_state: str
+        :param os_ext_st_svm_state: 扩展属性，裸金属服务器的稳定状态。例如：active：运行中shutoff：关机suspended：暂停reboot：重启
+        :type os_ext_st_svm_state: str
+        :param os_ext_srv_att_rhost: 扩展属性，裸金属服务器宿主名称
+        :type os_ext_srv_att_rhost: str
+        :param os_ext_srv_att_rinstance_name: 扩展属性，裸金属服务器实例ID
+        :type os_ext_srv_att_rinstance_name: str
+        :param os_ext_st_spower_state: 扩展属性，裸金属服务器电源状态。例如：0表示“NO STATE”1表示“RUNNING”4表示“SHUTDOWN”
+        :type os_ext_st_spower_state: int
+        :param os_ext_srv_att_rhypervisor_hostname: 扩展属性，裸金属服务器所在虚拟化主机名。
+        :type os_ext_srv_att_rhypervisor_hostname: str
+        :param os_ext_a_zavailability_zone: 扩展属性，裸金属服务器所在可用分区名称。
+        :type os_ext_a_zavailability_zone: str
+        :param os_dc_fdisk_config: 扩展属性，磁盘配置，取值为以下两种：MANUAL：API使用镜像中的分区方案和文件系统创建裸金属服务器。如果目标flavor磁盘较大，则API不会对剩余磁盘空间进行分区。AUTO：API使用与目标flavor磁盘大小相同的单个分区创建裸金属服务器，API会自动调整文件系统以适应整个分区。
+        :type os_dc_fdisk_config: str
+        :param fault: 
+        :type fault: :class:`huaweicloudsdkbms.v1.Fault`
+        :param os_srv_us_glaunched_at: 裸金属服务器启动时间。时间戳格式为ISO 8601，例如：2019-05-22T03:23:59.000000
+        :type os_srv_us_glaunched_at: datetime
+        :param os_srv_us_gterminated_at: 裸金属服务器删除时间。时间戳格式为ISO 8601，例如：2019-05-22T04:23:59.000000
+        :type os_srv_us_gterminated_at: datetime
+        :param os_extended_volumesvolumes_attached: 挂载到裸金属服务器上的磁盘。详情请参见表9 os-extended-volumes:volumes_attached 数据结构说明。
+        :type os_extended_volumesvolumes_attached: list[:class:`huaweicloudsdkbms.v1.OsExtendedVolumesInfo`]
+        :param description: 裸金属服务器的描述信息
+        :type description: str
+        :param host_status: 裸金属服务器宿主机状态。UP：服务正常UNKNOWN：状态未知DOWN：服务异常MAINTENANCE：维护状态空字符串：裸金属服务器无主机信息
+        :type host_status: str
+        :param os_ext_srv_att_rhostname: 裸金属服务器的主机名
+        :type os_ext_srv_att_rhostname: str
+        :param os_ext_srv_att_rreservation_id: 批量创建场景，裸金属服务器的预留ID。当批量创建裸金属服务器时，这些服务器将拥有相同的reservation_id。您可以使用6.3.3-查询裸金属服务器详情列表API并指定reservation_id来过滤查询同一批创建的所有裸金属服务器。
+        :type os_ext_srv_att_rreservation_id: str
+        :param os_ext_srv_att_rlaunch_index: 批量创建场景，裸金属服务器的启动顺序
+        :type os_ext_srv_att_rlaunch_index: int
+        :param os_ext_srv_att_rkernel_id: 若使用AMI格式的镜像，则表示kernel image的UUID；否则，留空
+        :type os_ext_srv_att_rkernel_id: str
+        :param os_ext_srv_att_rramdisk_id: 若使用AMI格式镜像，则表示ramdisk image的UUID；否则，留空。
+        :type os_ext_srv_att_rramdisk_id: str
+        :param os_ext_srv_att_rroot_device_name: 裸金属服务器系统盘的设备名称，例如“/dev/sda”。
+        :type os_ext_srv_att_rroot_device_name: str
+        :param os_ext_srv_att_ruser_data: 创建裸金属服务器时指定的user_data，取值为base64编码后的结果或空字符串。
+        :type os_ext_srv_att_ruser_data: str
+        :param locked: 裸金属服务器是否为锁定状态。true：锁定false：未锁定
+        :type locked: bool
+        :param tags: 裸金属服务器标签。
+        :type tags: list[str]
+        :param osscheduler_hints: 
+        :type osscheduler_hints: :class:`huaweicloudsdkbms.v1.SchedulerHints`
+        :param enterprise_project_id: 裸金属服务器所属的企业项目ID
+        :type enterprise_project_id: str
+        :param sys_tags: 裸金属服务器系统标签。详情请参见表12 sys_tags数据结构说明。
+        :type sys_tags: list[:class:`huaweicloudsdkbms.v1.SystemTags`]
+        """
         
         
 
@@ -268,7 +359,7 @@ class ServerDetails:
         裸金属服务器ID，格式为UUID
 
         :param id: The id of this ServerDetails.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -290,7 +381,7 @@ class ServerDetails:
         创建裸金属服务器的用户ID，格式为UUID。
 
         :param user_id: The user_id of this ServerDetails.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -312,7 +403,7 @@ class ServerDetails:
         裸金属服务器名称
 
         :param name: The name of this ServerDetails.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -334,7 +425,7 @@ class ServerDetails:
         裸金属服务器创建时间。时间戳格式为ISO 8601：YYYY-MM-DDTHH:MM:SSZ，例如：2019-05-22T03:30:52Z
 
         :param created: The created of this ServerDetails.
-        :type: datetime
+        :type created: datetime
         """
         self._created = created
 
@@ -356,7 +447,7 @@ class ServerDetails:
         裸金属服务器更新时间。时间戳格式为ISO 8601：YYYY-MM-DDTHH:MM:SSZ，例如：2019-05-22T04:30:52Z
 
         :param updated: The updated of this ServerDetails.
-        :type: datetime
+        :type updated: datetime
         """
         self._updated = updated
 
@@ -378,7 +469,7 @@ class ServerDetails:
         裸金属服务器所属租户ID，格式为UUID。该参数和project_id表示相同的概念。
 
         :param tenant_id: The tenant_id of this ServerDetails.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 
@@ -400,7 +491,7 @@ class ServerDetails:
         裸金属服务器对应的主机ID
 
         :param host_id: The host_id of this ServerDetails.
-        :type: str
+        :type host_id: str
         """
         self._host_id = host_id
 
@@ -422,7 +513,7 @@ class ServerDetails:
         裸金属服务器的网络属性。详情请参见表3 addresses数据结构说明。
 
         :param addresses: The addresses of this ServerDetails.
-        :type: dict(str, list[AddressInfo])
+        :type addresses: dict(str, list[AddressInfo])
         """
         self._addresses = addresses
 
@@ -444,7 +535,7 @@ class ServerDetails:
         裸金属服务器使用的密钥对名称
 
         :param key_name: The key_name of this ServerDetails.
-        :type: str
+        :type key_name: str
         """
         self._key_name = key_name
 
@@ -454,7 +545,7 @@ class ServerDetails:
 
 
         :return: The image of this ServerDetails.
-        :rtype: ImageInfo
+        :rtype: :class:`huaweicloudsdkbms.v1.ImageInfo`
         """
         return self._image
 
@@ -464,7 +555,7 @@ class ServerDetails:
 
 
         :param image: The image of this ServerDetails.
-        :type: ImageInfo
+        :type image: :class:`huaweicloudsdkbms.v1.ImageInfo`
         """
         self._image = image
 
@@ -474,7 +565,7 @@ class ServerDetails:
 
 
         :return: The flavor of this ServerDetails.
-        :rtype: FlavorInfos
+        :rtype: :class:`huaweicloudsdkbms.v1.FlavorInfos`
         """
         return self._flavor
 
@@ -484,7 +575,7 @@ class ServerDetails:
 
 
         :param flavor: The flavor of this ServerDetails.
-        :type: FlavorInfos
+        :type flavor: :class:`huaweicloudsdkbms.v1.FlavorInfos`
         """
         self._flavor = flavor
 
@@ -495,7 +586,7 @@ class ServerDetails:
         裸金属服务器所属安全组。详情请参见表7 security_groups数据结构说明。
 
         :return: The security_groups of this ServerDetails.
-        :rtype: list[SecurityGroupsList]
+        :rtype: list[:class:`huaweicloudsdkbms.v1.SecurityGroupsList`]
         """
         return self._security_groups
 
@@ -506,7 +597,7 @@ class ServerDetails:
         裸金属服务器所属安全组。详情请参见表7 security_groups数据结构说明。
 
         :param security_groups: The security_groups of this ServerDetails.
-        :type: list[SecurityGroupsList]
+        :type security_groups: list[:class:`huaweicloudsdkbms.v1.SecurityGroupsList`]
         """
         self._security_groups = security_groups
 
@@ -528,7 +619,7 @@ class ServerDetails:
         预留属性
 
         :param access_i_pv4: The access_i_pv4 of this ServerDetails.
-        :type: str
+        :type access_i_pv4: str
         """
         self._access_i_pv4 = access_i_pv4
 
@@ -550,7 +641,7 @@ class ServerDetails:
         预留属性
 
         :param access_i_pv6: The access_i_pv6 of this ServerDetails.
-        :type: str
+        :type access_i_pv6: str
         """
         self._access_i_pv6 = access_i_pv6
 
@@ -572,7 +663,7 @@ class ServerDetails:
         裸金属服务器当前状态信息。取值范围：ACTIVE：运行中/正在关机/删除中BUILD：创建中ERROR：故障HARD_REBOOT：强制重启中REBOOT：重启中裸金属服务器当前状态信息。取值范围：ACTIVE：运行中/正在关机/删除中BUILD：创建中ERROR：故障HARD_REBOOT：强制重启中REBOOT：重启中
 
         :param status: The status of this ServerDetails.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -594,7 +685,7 @@ class ServerDetails:
         预留属性
 
         :param progress: The progress of this ServerDetails.
-        :type: int
+        :type progress: int
         """
         self._progress = progress
 
@@ -616,7 +707,7 @@ class ServerDetails:
         是否为裸金属服务器配置config drive分区。取值为：True或空字符串
 
         :param config_drive: The config_drive of this ServerDetails.
-        :type: str
+        :type config_drive: str
         """
         self._config_drive = config_drive
 
@@ -626,7 +717,7 @@ class ServerDetails:
 
 
         :return: The metadata of this ServerDetails.
-        :rtype: MetadataList
+        :rtype: :class:`huaweicloudsdkbms.v1.MetadataList`
         """
         return self._metadata
 
@@ -636,7 +727,7 @@ class ServerDetails:
 
 
         :param metadata: The metadata of this ServerDetails.
-        :type: MetadataList
+        :type metadata: :class:`huaweicloudsdkbms.v1.MetadataList`
         """
         self._metadata = metadata
 
@@ -658,7 +749,7 @@ class ServerDetails:
         扩展属性，裸金属服务器当前的任务状态。例如：rebooting：重启中reboot_started：普通重启reboot_started_hard：强制重启powering-off：关机中powering-on：开机中rebuilding：重建中scheduling：调度中deleting：删除中
 
         :param os_ext_st_stask_state: The os_ext_st_stask_state of this ServerDetails.
-        :type: str
+        :type os_ext_st_stask_state: str
         """
         self._os_ext_st_stask_state = os_ext_st_stask_state
 
@@ -680,7 +771,7 @@ class ServerDetails:
         扩展属性，裸金属服务器的稳定状态。例如：active：运行中shutoff：关机suspended：暂停reboot：重启
 
         :param os_ext_st_svm_state: The os_ext_st_svm_state of this ServerDetails.
-        :type: str
+        :type os_ext_st_svm_state: str
         """
         self._os_ext_st_svm_state = os_ext_st_svm_state
 
@@ -702,7 +793,7 @@ class ServerDetails:
         扩展属性，裸金属服务器宿主名称
 
         :param os_ext_srv_att_rhost: The os_ext_srv_att_rhost of this ServerDetails.
-        :type: str
+        :type os_ext_srv_att_rhost: str
         """
         self._os_ext_srv_att_rhost = os_ext_srv_att_rhost
 
@@ -724,7 +815,7 @@ class ServerDetails:
         扩展属性，裸金属服务器实例ID
 
         :param os_ext_srv_att_rinstance_name: The os_ext_srv_att_rinstance_name of this ServerDetails.
-        :type: str
+        :type os_ext_srv_att_rinstance_name: str
         """
         self._os_ext_srv_att_rinstance_name = os_ext_srv_att_rinstance_name
 
@@ -746,7 +837,7 @@ class ServerDetails:
         扩展属性，裸金属服务器电源状态。例如：0表示“NO STATE”1表示“RUNNING”4表示“SHUTDOWN”
 
         :param os_ext_st_spower_state: The os_ext_st_spower_state of this ServerDetails.
-        :type: int
+        :type os_ext_st_spower_state: int
         """
         self._os_ext_st_spower_state = os_ext_st_spower_state
 
@@ -768,7 +859,7 @@ class ServerDetails:
         扩展属性，裸金属服务器所在虚拟化主机名。
 
         :param os_ext_srv_att_rhypervisor_hostname: The os_ext_srv_att_rhypervisor_hostname of this ServerDetails.
-        :type: str
+        :type os_ext_srv_att_rhypervisor_hostname: str
         """
         self._os_ext_srv_att_rhypervisor_hostname = os_ext_srv_att_rhypervisor_hostname
 
@@ -790,7 +881,7 @@ class ServerDetails:
         扩展属性，裸金属服务器所在可用分区名称。
 
         :param os_ext_a_zavailability_zone: The os_ext_a_zavailability_zone of this ServerDetails.
-        :type: str
+        :type os_ext_a_zavailability_zone: str
         """
         self._os_ext_a_zavailability_zone = os_ext_a_zavailability_zone
 
@@ -812,7 +903,7 @@ class ServerDetails:
         扩展属性，磁盘配置，取值为以下两种：MANUAL：API使用镜像中的分区方案和文件系统创建裸金属服务器。如果目标flavor磁盘较大，则API不会对剩余磁盘空间进行分区。AUTO：API使用与目标flavor磁盘大小相同的单个分区创建裸金属服务器，API会自动调整文件系统以适应整个分区。
 
         :param os_dc_fdisk_config: The os_dc_fdisk_config of this ServerDetails.
-        :type: str
+        :type os_dc_fdisk_config: str
         """
         self._os_dc_fdisk_config = os_dc_fdisk_config
 
@@ -822,7 +913,7 @@ class ServerDetails:
 
 
         :return: The fault of this ServerDetails.
-        :rtype: Fault
+        :rtype: :class:`huaweicloudsdkbms.v1.Fault`
         """
         return self._fault
 
@@ -832,7 +923,7 @@ class ServerDetails:
 
 
         :param fault: The fault of this ServerDetails.
-        :type: Fault
+        :type fault: :class:`huaweicloudsdkbms.v1.Fault`
         """
         self._fault = fault
 
@@ -854,7 +945,7 @@ class ServerDetails:
         裸金属服务器启动时间。时间戳格式为ISO 8601，例如：2019-05-22T03:23:59.000000
 
         :param os_srv_us_glaunched_at: The os_srv_us_glaunched_at of this ServerDetails.
-        :type: datetime
+        :type os_srv_us_glaunched_at: datetime
         """
         self._os_srv_us_glaunched_at = os_srv_us_glaunched_at
 
@@ -876,7 +967,7 @@ class ServerDetails:
         裸金属服务器删除时间。时间戳格式为ISO 8601，例如：2019-05-22T04:23:59.000000
 
         :param os_srv_us_gterminated_at: The os_srv_us_gterminated_at of this ServerDetails.
-        :type: datetime
+        :type os_srv_us_gterminated_at: datetime
         """
         self._os_srv_us_gterminated_at = os_srv_us_gterminated_at
 
@@ -887,7 +978,7 @@ class ServerDetails:
         挂载到裸金属服务器上的磁盘。详情请参见表9 os-extended-volumes:volumes_attached 数据结构说明。
 
         :return: The os_extended_volumesvolumes_attached of this ServerDetails.
-        :rtype: list[OsExtendedVolumesInfo]
+        :rtype: list[:class:`huaweicloudsdkbms.v1.OsExtendedVolumesInfo`]
         """
         return self._os_extended_volumesvolumes_attached
 
@@ -898,7 +989,7 @@ class ServerDetails:
         挂载到裸金属服务器上的磁盘。详情请参见表9 os-extended-volumes:volumes_attached 数据结构说明。
 
         :param os_extended_volumesvolumes_attached: The os_extended_volumesvolumes_attached of this ServerDetails.
-        :type: list[OsExtendedVolumesInfo]
+        :type os_extended_volumesvolumes_attached: list[:class:`huaweicloudsdkbms.v1.OsExtendedVolumesInfo`]
         """
         self._os_extended_volumesvolumes_attached = os_extended_volumesvolumes_attached
 
@@ -920,7 +1011,7 @@ class ServerDetails:
         裸金属服务器的描述信息
 
         :param description: The description of this ServerDetails.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -942,7 +1033,7 @@ class ServerDetails:
         裸金属服务器宿主机状态。UP：服务正常UNKNOWN：状态未知DOWN：服务异常MAINTENANCE：维护状态空字符串：裸金属服务器无主机信息
 
         :param host_status: The host_status of this ServerDetails.
-        :type: str
+        :type host_status: str
         """
         self._host_status = host_status
 
@@ -964,7 +1055,7 @@ class ServerDetails:
         裸金属服务器的主机名
 
         :param os_ext_srv_att_rhostname: The os_ext_srv_att_rhostname of this ServerDetails.
-        :type: str
+        :type os_ext_srv_att_rhostname: str
         """
         self._os_ext_srv_att_rhostname = os_ext_srv_att_rhostname
 
@@ -986,7 +1077,7 @@ class ServerDetails:
         批量创建场景，裸金属服务器的预留ID。当批量创建裸金属服务器时，这些服务器将拥有相同的reservation_id。您可以使用6.3.3-查询裸金属服务器详情列表API并指定reservation_id来过滤查询同一批创建的所有裸金属服务器。
 
         :param os_ext_srv_att_rreservation_id: The os_ext_srv_att_rreservation_id of this ServerDetails.
-        :type: str
+        :type os_ext_srv_att_rreservation_id: str
         """
         self._os_ext_srv_att_rreservation_id = os_ext_srv_att_rreservation_id
 
@@ -1008,7 +1099,7 @@ class ServerDetails:
         批量创建场景，裸金属服务器的启动顺序
 
         :param os_ext_srv_att_rlaunch_index: The os_ext_srv_att_rlaunch_index of this ServerDetails.
-        :type: int
+        :type os_ext_srv_att_rlaunch_index: int
         """
         self._os_ext_srv_att_rlaunch_index = os_ext_srv_att_rlaunch_index
 
@@ -1030,7 +1121,7 @@ class ServerDetails:
         若使用AMI格式的镜像，则表示kernel image的UUID；否则，留空
 
         :param os_ext_srv_att_rkernel_id: The os_ext_srv_att_rkernel_id of this ServerDetails.
-        :type: str
+        :type os_ext_srv_att_rkernel_id: str
         """
         self._os_ext_srv_att_rkernel_id = os_ext_srv_att_rkernel_id
 
@@ -1052,7 +1143,7 @@ class ServerDetails:
         若使用AMI格式镜像，则表示ramdisk image的UUID；否则，留空。
 
         :param os_ext_srv_att_rramdisk_id: The os_ext_srv_att_rramdisk_id of this ServerDetails.
-        :type: str
+        :type os_ext_srv_att_rramdisk_id: str
         """
         self._os_ext_srv_att_rramdisk_id = os_ext_srv_att_rramdisk_id
 
@@ -1074,7 +1165,7 @@ class ServerDetails:
         裸金属服务器系统盘的设备名称，例如“/dev/sda”。
 
         :param os_ext_srv_att_rroot_device_name: The os_ext_srv_att_rroot_device_name of this ServerDetails.
-        :type: str
+        :type os_ext_srv_att_rroot_device_name: str
         """
         self._os_ext_srv_att_rroot_device_name = os_ext_srv_att_rroot_device_name
 
@@ -1096,7 +1187,7 @@ class ServerDetails:
         创建裸金属服务器时指定的user_data，取值为base64编码后的结果或空字符串。
 
         :param os_ext_srv_att_ruser_data: The os_ext_srv_att_ruser_data of this ServerDetails.
-        :type: str
+        :type os_ext_srv_att_ruser_data: str
         """
         self._os_ext_srv_att_ruser_data = os_ext_srv_att_ruser_data
 
@@ -1118,7 +1209,7 @@ class ServerDetails:
         裸金属服务器是否为锁定状态。true：锁定false：未锁定
 
         :param locked: The locked of this ServerDetails.
-        :type: bool
+        :type locked: bool
         """
         self._locked = locked
 
@@ -1140,7 +1231,7 @@ class ServerDetails:
         裸金属服务器标签。
 
         :param tags: The tags of this ServerDetails.
-        :type: list[str]
+        :type tags: list[str]
         """
         self._tags = tags
 
@@ -1150,7 +1241,7 @@ class ServerDetails:
 
 
         :return: The osscheduler_hints of this ServerDetails.
-        :rtype: SchedulerHints
+        :rtype: :class:`huaweicloudsdkbms.v1.SchedulerHints`
         """
         return self._osscheduler_hints
 
@@ -1160,7 +1251,7 @@ class ServerDetails:
 
 
         :param osscheduler_hints: The osscheduler_hints of this ServerDetails.
-        :type: SchedulerHints
+        :type osscheduler_hints: :class:`huaweicloudsdkbms.v1.SchedulerHints`
         """
         self._osscheduler_hints = osscheduler_hints
 
@@ -1182,7 +1273,7 @@ class ServerDetails:
         裸金属服务器所属的企业项目ID
 
         :param enterprise_project_id: The enterprise_project_id of this ServerDetails.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -1193,7 +1284,7 @@ class ServerDetails:
         裸金属服务器系统标签。详情请参见表12 sys_tags数据结构说明。
 
         :return: The sys_tags of this ServerDetails.
-        :rtype: list[SystemTags]
+        :rtype: list[:class:`huaweicloudsdkbms.v1.SystemTags`]
         """
         return self._sys_tags
 
@@ -1204,7 +1295,7 @@ class ServerDetails:
         裸金属服务器系统标签。详情请参见表12 sys_tags数据结构说明。
 
         :param sys_tags: The sys_tags of this ServerDetails.
-        :type: list[SystemTags]
+        :type sys_tags: list[:class:`huaweicloudsdkbms.v1.SystemTags`]
         """
         self._sys_tags = sys_tags
 

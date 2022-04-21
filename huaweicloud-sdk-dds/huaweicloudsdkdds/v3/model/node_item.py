@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NodeItem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class NodeItem:
     }
 
     def __init__(self, id=None, name=None, status=None, role=None, private_ip=None, public_ip=None, spec_code=None, availability_zone=None):
-        """NodeItem - a model defined in huaweicloud sdk"""
+        """NodeItem
+
+        The model defined in huaweicloud sdk
+
+        :param id: 节点ID。
+        :type id: str
+        :param name: 节点名称。
+        :type name: str
+        :param status: 节点状态。
+        :type status: str
+        :param role: 节点角色。 取值： - master，mongos节点返回该值。 - Primary，shard组主节点、config组主节点、副本集主节点、单节点返回该值。 - Secondary，shard组备节点、config组备节点、副本集备节点返回该值。 - Hidden，shard组隐藏节点、config组隐藏节点、副本集隐藏节点返回该值。 - unknown，节点异常时返回该值。
+        :type role: str
+        :param private_ip: 节点内网IP。该参数仅针对集群实例的mongos节点、副本集实例、以及单节点实例有效，且在弹性云服务器创建成功后参数值存在，否则，值为\&quot;\&quot;。
+        :type private_ip: str
+        :param public_ip: 绑定的外网IP。该参数值为\&quot;\&quot;。该参数仅针对集群实例的mongos节点、副本集实例的主节点和备节点、以及单节点实例有效。
+        :type public_ip: str
+        :param spec_code: 资源规格编码。
+        :type spec_code: str
+        :param availability_zone: 可用区。
+        :type availability_zone: str
+        """
         
         
 
@@ -85,7 +104,7 @@ class NodeItem:
         节点ID。
 
         :param id: The id of this NodeItem.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -107,7 +126,7 @@ class NodeItem:
         节点名称。
 
         :param name: The name of this NodeItem.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -129,7 +148,7 @@ class NodeItem:
         节点状态。
 
         :param status: The status of this NodeItem.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -151,7 +170,7 @@ class NodeItem:
         节点角色。 取值： - master，mongos节点返回该值。 - Primary，shard组主节点、config组主节点、副本集主节点、单节点返回该值。 - Secondary，shard组备节点、config组备节点、副本集备节点返回该值。 - Hidden，shard组隐藏节点、config组隐藏节点、副本集隐藏节点返回该值。 - unknown，节点异常时返回该值。
 
         :param role: The role of this NodeItem.
-        :type: str
+        :type role: str
         """
         self._role = role
 
@@ -173,7 +192,7 @@ class NodeItem:
         节点内网IP。该参数仅针对集群实例的mongos节点、副本集实例、以及单节点实例有效，且在弹性云服务器创建成功后参数值存在，否则，值为\"\"。
 
         :param private_ip: The private_ip of this NodeItem.
-        :type: str
+        :type private_ip: str
         """
         self._private_ip = private_ip
 
@@ -195,7 +214,7 @@ class NodeItem:
         绑定的外网IP。该参数值为\"\"。该参数仅针对集群实例的mongos节点、副本集实例的主节点和备节点、以及单节点实例有效。
 
         :param public_ip: The public_ip of this NodeItem.
-        :type: str
+        :type public_ip: str
         """
         self._public_ip = public_ip
 
@@ -217,7 +236,7 @@ class NodeItem:
         资源规格编码。
 
         :param spec_code: The spec_code of this NodeItem.
-        :type: str
+        :type spec_code: str
         """
         self._spec_code = spec_code
 
@@ -239,7 +258,7 @@ class NodeItem:
         可用区。
 
         :param availability_zone: The availability_zone of this NodeItem.
-        :type: str
+        :type availability_zone: str
         """
         self._availability_zone = availability_zone
 

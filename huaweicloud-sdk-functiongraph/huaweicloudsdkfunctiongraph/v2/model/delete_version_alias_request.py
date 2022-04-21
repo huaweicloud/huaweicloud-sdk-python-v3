@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteVersionAliasRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteVersionAliasRequest:
     }
 
     def __init__(self, function_urn=None, alias_name=None):
-        """DeleteVersionAliasRequest - a model defined in huaweicloud sdk"""
+        """DeleteVersionAliasRequest
+
+        The model defined in huaweicloud sdk
+
+        :param function_urn: 函数的URN，详细解释见FunctionGraph函数模型的描述。
+        :type function_urn: str
+        :param alias_name: 要删除的别名名称。
+        :type alias_name: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class DeleteVersionAliasRequest:
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
         :param function_urn: The function_urn of this DeleteVersionAliasRequest.
-        :type: str
+        :type function_urn: str
         """
         self._function_urn = function_urn
 
@@ -83,7 +90,7 @@ class DeleteVersionAliasRequest:
         要删除的别名名称。
 
         :param alias_name: The alias_name of this DeleteVersionAliasRequest.
-        :type: str
+        :type alias_name: str
         """
         self._alias_name = alias_name
 

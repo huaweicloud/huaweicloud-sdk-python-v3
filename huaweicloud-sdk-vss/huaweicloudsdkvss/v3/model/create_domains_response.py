@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateDomainsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateDomainsResponse(SdkResponse):
     }
 
     def __init__(self, info_code=None, info_description=None, domain_id=None):
-        """CreateDomainsResponse - a model defined in huaweicloud sdk"""
+        """CreateDomainsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param info_code: 状态码:   * success - 成功   * failure - 失败 
+        :type info_code: str
+        :param info_description: 返回的提示信息
+        :type info_description: str
+        :param domain_id: 域名ID
+        :type domain_id: str
+        """
         
         super(CreateDomainsResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class CreateDomainsResponse(SdkResponse):
         状态码:   * success - 成功   * failure - 失败 
 
         :param info_code: The info_code of this CreateDomainsResponse.
-        :type: str
+        :type info_code: str
         """
         self._info_code = info_code
 
@@ -90,7 +99,7 @@ class CreateDomainsResponse(SdkResponse):
         返回的提示信息
 
         :param info_description: The info_description of this CreateDomainsResponse.
-        :type: str
+        :type info_description: str
         """
         self._info_description = info_description
 
@@ -112,7 +121,7 @@ class CreateDomainsResponse(SdkResponse):
         域名ID
 
         :param domain_id: The domain_id of this CreateDomainsResponse.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 

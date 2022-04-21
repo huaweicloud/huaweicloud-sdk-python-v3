@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CoverageResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CoverageResp:
     }
 
     def __init__(self, coverage_policy=None, coverage_level=None, coverage_sites=None):
-        """CoverageResp - a model defined in huaweicloud sdk"""
+        """CoverageResp
+
+        The model defined in huaweicloud sdk
+
+        :param coverage_policy: 区域调度策略，只支持centralize/discrete。  - centralize：代表城市集中策略，指定该策略，边缘业务创建时会保证将所有实例都发放在同一个站点。 - discrete：代表城市分散，指定该策略，边缘业务创建时，尽量保证所有实例都分散发放在不同站点。
+        :type coverage_policy: str
+        :param coverage_level: 区域分布层级，只支持area/prov/city/site。  - area:大区，用户的资源会在指定大区下发放。 - prov:省份，用户的资源会在指定省份下发放。 - city:城市，用户的资源会在指定城市下发放。 - site:站点级别。  约束：  站点层级，coverage_policy上仅支持&#39;centralize&#39;，coverage_sites中&#39;site&#39;字段仅支持使用ID(站点ID，通过“查询边缘站点列表”获取)，不支持name。
+        :type coverage_level: str
+        :param coverage_sites: 区域及购买数量列表。
+        :type coverage_sites: list[:class:`huaweicloudsdkiec.v1.CoverageSiteResp`]
+        """
         
         
 
@@ -65,7 +74,7 @@ class CoverageResp:
         区域调度策略，只支持centralize/discrete。  - centralize：代表城市集中策略，指定该策略，边缘业务创建时会保证将所有实例都发放在同一个站点。 - discrete：代表城市分散，指定该策略，边缘业务创建时，尽量保证所有实例都分散发放在不同站点。
 
         :param coverage_policy: The coverage_policy of this CoverageResp.
-        :type: str
+        :type coverage_policy: str
         """
         self._coverage_policy = coverage_policy
 
@@ -87,7 +96,7 @@ class CoverageResp:
         区域分布层级，只支持area/prov/city/site。  - area:大区，用户的资源会在指定大区下发放。 - prov:省份，用户的资源会在指定省份下发放。 - city:城市，用户的资源会在指定城市下发放。 - site:站点级别。  约束：  站点层级，coverage_policy上仅支持'centralize'，coverage_sites中'site'字段仅支持使用ID(站点ID，通过“查询边缘站点列表”获取)，不支持name。
 
         :param coverage_level: The coverage_level of this CoverageResp.
-        :type: str
+        :type coverage_level: str
         """
         self._coverage_level = coverage_level
 
@@ -98,7 +107,7 @@ class CoverageResp:
         区域及购买数量列表。
 
         :return: The coverage_sites of this CoverageResp.
-        :rtype: list[CoverageSiteResp]
+        :rtype: list[:class:`huaweicloudsdkiec.v1.CoverageSiteResp`]
         """
         return self._coverage_sites
 
@@ -109,7 +118,7 @@ class CoverageResp:
         区域及购买数量列表。
 
         :param coverage_sites: The coverage_sites of this CoverageResp.
-        :type: list[CoverageSiteResp]
+        :type coverage_sites: list[:class:`huaweicloudsdkiec.v1.CoverageSiteResp`]
         """
         self._coverage_sites = coverage_sites
 

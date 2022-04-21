@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchModifyJobReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchModifyJobReq:
     }
 
     def __init__(self, jobs=None):
-        """BatchModifyJobReq - a model defined in huaweicloud sdk"""
+        """BatchModifyJobReq
+
+        The model defined in huaweicloud sdk
+
+        :param jobs: 修改任务请求体
+        :type jobs: list[:class:`huaweicloudsdkdrs.v3.ModifyJobReq`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class BatchModifyJobReq:
         修改任务请求体
 
         :return: The jobs of this BatchModifyJobReq.
-        :rtype: list[ModifyJobReq]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.ModifyJobReq`]
         """
         return self._jobs
 
@@ -57,7 +62,7 @@ class BatchModifyJobReq:
         修改任务请求体
 
         :param jobs: The jobs of this BatchModifyJobReq.
-        :type: list[ModifyJobReq]
+        :type jobs: list[:class:`huaweicloudsdkdrs.v3.ModifyJobReq`]
         """
         self._jobs = jobs
 

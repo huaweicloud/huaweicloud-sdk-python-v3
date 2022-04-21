@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class WorkOrderOperateV2Req:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class WorkOrderOperateV2Req:
     }
 
     def __init__(self, judgement=None, operate_desc=None, group_id=None, incident_satisfaction_list=None):
-        """WorkOrderOperateV2Req - a model defined in huaweicloud sdk"""
+        """WorkOrderOperateV2Req
+
+        The model defined in huaweicloud sdk
+
+        :param judgement: 评价内容
+        :type judgement: str
+        :param operate_desc: 操作描述
+        :type operate_desc: str
+        :param group_id: 组id
+        :type group_id: str
+        :param incident_satisfaction_list: 工单满意度列表
+        :type incident_satisfaction_list: list[:class:`huaweicloudsdkosm.v2.IncidentSatisfactionV2Do`]
+        """
         
         
 
@@ -73,7 +84,7 @@ class WorkOrderOperateV2Req:
         评价内容
 
         :param judgement: The judgement of this WorkOrderOperateV2Req.
-        :type: str
+        :type judgement: str
         """
         self._judgement = judgement
 
@@ -95,7 +106,7 @@ class WorkOrderOperateV2Req:
         操作描述
 
         :param operate_desc: The operate_desc of this WorkOrderOperateV2Req.
-        :type: str
+        :type operate_desc: str
         """
         self._operate_desc = operate_desc
 
@@ -117,7 +128,7 @@ class WorkOrderOperateV2Req:
         组id
 
         :param group_id: The group_id of this WorkOrderOperateV2Req.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -128,7 +139,7 @@ class WorkOrderOperateV2Req:
         工单满意度列表
 
         :return: The incident_satisfaction_list of this WorkOrderOperateV2Req.
-        :rtype: list[IncidentSatisfactionV2Do]
+        :rtype: list[:class:`huaweicloudsdkosm.v2.IncidentSatisfactionV2Do`]
         """
         return self._incident_satisfaction_list
 
@@ -139,7 +150,7 @@ class WorkOrderOperateV2Req:
         工单满意度列表
 
         :param incident_satisfaction_list: The incident_satisfaction_list of this WorkOrderOperateV2Req.
-        :type: list[IncidentSatisfactionV2Do]
+        :type incident_satisfaction_list: list[:class:`huaweicloudsdkosm.v2.IncidentSatisfactionV2Do`]
         """
         self._incident_satisfaction_list = incident_satisfaction_list
 

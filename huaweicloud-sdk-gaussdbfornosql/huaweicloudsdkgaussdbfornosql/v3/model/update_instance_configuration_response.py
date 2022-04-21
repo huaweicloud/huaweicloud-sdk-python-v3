@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateInstanceConfigurationResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateInstanceConfigurationResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, restart_required=None):
-        """UpdateInstanceConfigurationResponse - a model defined in huaweicloud sdk"""
+        """UpdateInstanceConfigurationResponse
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 修改实例参数的异步任务ID。
+        :type job_id: str
+        :param restart_required: 实例是否需要重启。 - “true”需要重启。 - “false”不需要重启。
+        :type restart_required: bool
+        """
         
         super(UpdateInstanceConfigurationResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class UpdateInstanceConfigurationResponse(SdkResponse):
         修改实例参数的异步任务ID。
 
         :param job_id: The job_id of this UpdateInstanceConfigurationResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -85,7 +92,7 @@ class UpdateInstanceConfigurationResponse(SdkResponse):
         实例是否需要重启。 - “true”需要重启。 - “false”不需要重启。
 
         :param restart_required: The restart_required of this UpdateInstanceConfigurationResponse.
-        :type: bool
+        :type restart_required: bool
         """
         self._restart_required = restart_required
 

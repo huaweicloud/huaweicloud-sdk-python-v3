@@ -52,21 +52,17 @@ class CampusGoAsyncClient(Client):
         """创建服务作业
 
         该接口用于创建服务作业
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateTasksRequest request
-        :return: CreateTasksResponse
+        :param request: Request instance for CreateTasks
+        :type request: :class:`huaweicloudsdkcampusgo.v2.CreateTasksRequest`
+        :rtype: :class:`huaweicloudsdkcampusgo.v2.CreateTasksResponse`
         """
         return self.create_tasks_with_http_info(request)
 
     def create_tasks_with_http_info(self, request):
-        """创建服务作业
-
-        该接口用于创建服务作业
-
-        :param CreateTasksRequest request
-        :return: CreateTasksResponse
-        """
-
         all_params = ['service_name', 'create_tasks_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -112,26 +108,21 @@ class CampusGoAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_task_async(self, request):
         """删除服务作业
 
         该接口用于删除服务作业
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteTaskRequest request
-        :return: DeleteTaskResponse
+        :param request: Request instance for DeleteTask
+        :type request: :class:`huaweicloudsdkcampusgo.v2.DeleteTaskRequest`
+        :rtype: :class:`huaweicloudsdkcampusgo.v2.DeleteTaskResponse`
         """
         return self.delete_task_with_http_info(request)
 
     def delete_task_with_http_info(self, request):
-        """删除服务作业
-
-        该接口用于删除服务作业
-
-        :param DeleteTaskRequest request
-        :return: DeleteTaskResponse
-        """
-
         all_params = ['service_name', 'task_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -177,26 +168,21 @@ class CampusGoAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_tasks_details_async(self, request):
         """获取服务作业列表
 
         该接口用于获取服务作业列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListTasksDetailsRequest request
-        :return: ListTasksDetailsResponse
+        :param request: Request instance for ListTasksDetails
+        :type request: :class:`huaweicloudsdkcampusgo.v2.ListTasksDetailsRequest`
+        :rtype: :class:`huaweicloudsdkcampusgo.v2.ListTasksDetailsResponse`
         """
         return self.list_tasks_details_with_http_info(request)
 
     def list_tasks_details_with_http_info(self, request):
-        """获取服务作业列表
-
-        该接口用于获取服务作业列表
-
-        :param ListTasksDetailsRequest request
-        :return: ListTasksDetailsResponse
-        """
-
         all_params = ['service_name', 'service_version', 'state', 'name_like', 'id_like', 'created_since', 'created_until', 'order', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -258,26 +244,21 @@ class CampusGoAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_task_async(self, request):
         """查询服务作业
 
         该接口用于查询服务作业
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowTaskRequest request
-        :return: ShowTaskResponse
+        :param request: Request instance for ShowTask
+        :type request: :class:`huaweicloudsdkcampusgo.v2.ShowTaskRequest`
+        :rtype: :class:`huaweicloudsdkcampusgo.v2.ShowTaskResponse`
         """
         return self.show_task_with_http_info(request)
 
     def show_task_with_http_info(self, request):
-        """查询服务作业
-
-        该接口用于查询服务作业
-
-        :param ShowTaskRequest request
-        :return: ShowTaskResponse
-        """
-
         all_params = ['service_name', 'task_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -322,7 +303,6 @@ class CampusGoAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

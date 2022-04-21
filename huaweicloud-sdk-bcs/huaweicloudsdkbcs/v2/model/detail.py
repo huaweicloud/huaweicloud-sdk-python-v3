@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Detail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class Detail:
     }
 
     def __init__(self, start_time=None, end_time=None, status=None, detail=None):
-        """Detail - a model defined in huaweicloud sdk"""
+        """Detail
+
+        The model defined in huaweicloud sdk
+
+        :param start_time: 开始时间
+        :type start_time: str
+        :param end_time: 结束时间
+        :type end_time: str
+        :param status: 状态
+        :type status: str
+        :param detail: 细节描述
+        :type detail: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class Detail:
         开始时间
 
         :param start_time: The start_time of this Detail.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -95,7 +106,7 @@ class Detail:
         结束时间
 
         :param end_time: The end_time of this Detail.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -117,7 +128,7 @@ class Detail:
         状态
 
         :param status: The status of this Detail.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -139,7 +150,7 @@ class Detail:
         细节描述
 
         :param detail: The detail of this Detail.
-        :type: str
+        :type detail: str
         """
         self._detail = detail
 

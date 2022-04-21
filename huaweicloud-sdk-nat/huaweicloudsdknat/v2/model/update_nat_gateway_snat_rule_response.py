@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateNatGatewaySnatRuleResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateNatGatewaySnatRuleResponse(SdkResponse):
     }
 
     def __init__(self, snat_rule=None):
-        """UpdateNatGatewaySnatRuleResponse - a model defined in huaweicloud sdk"""
+        """UpdateNatGatewaySnatRuleResponse
+
+        The model defined in huaweicloud sdk
+
+        :param snat_rule: 
+        :type snat_rule: :class:`huaweicloudsdknat.v2.NatGatewaySnatRuleResponseBody`
+        """
         
         super(UpdateNatGatewaySnatRuleResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class UpdateNatGatewaySnatRuleResponse(SdkResponse):
 
 
         :return: The snat_rule of this UpdateNatGatewaySnatRuleResponse.
-        :rtype: NatGatewaySnatRuleResponseBody
+        :rtype: :class:`huaweicloudsdknat.v2.NatGatewaySnatRuleResponseBody`
         """
         return self._snat_rule
 
@@ -56,7 +61,7 @@ class UpdateNatGatewaySnatRuleResponse(SdkResponse):
 
 
         :param snat_rule: The snat_rule of this UpdateNatGatewaySnatRuleResponse.
-        :type: NatGatewaySnatRuleResponseBody
+        :type snat_rule: :class:`huaweicloudsdknat.v2.NatGatewaySnatRuleResponseBody`
         """
         self._snat_rule = snat_rule
 

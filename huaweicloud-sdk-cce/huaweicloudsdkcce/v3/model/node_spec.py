@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NodeSpec:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -64,7 +63,47 @@ class NodeSpec:
     }
 
     def __init__(self, flavor=None, az=None, os=None, login=None, root_volume=None, data_volumes=None, storage=None, public_ip=None, node_nic_spec=None, count=None, billing_mode=None, taints=None, k8s_tags=None, ecs_group_id=None, dedicated_host_id=None, user_tags=None, runtime=None, extend_param=None):
-        """NodeSpec - a model defined in huaweicloud sdk"""
+        """NodeSpec
+
+        The model defined in huaweicloud sdk
+
+        :param flavor: 节点的规格，CCE支持的节点规格请参考[节点规格说明](cce_02_0368.xml)获取。 
+        :type flavor: str
+        :param az: 待创建节点所在的可用区，需要指定可用区（AZ）的名称。 [CCE支持的可用区请参考[地区和终端节点](https://developer.huaweicloud.com/endpoint?CCE)](tag:hws) [CCE支持的可用区请参考[地区和终端节点](https://developer.huaweicloud.com/intl/zh-cn/endpoint?CCE)](tag:hws_hk) 
+        :type az: str
+        :param os: 节点的操作系统类型。  - 对于虚拟机节点，可以配置为“EulerOS”、“CentOS”、“Debian”、“Ubuntu”。默认为\&quot;EulerOS\&quot;。  &gt; 系统会根据集群版本自动选择支持的系统版本。当前集群版本不支持该系统类型，则会报错。  - 对于自动付费包周期的裸金属节点，只支持EulerOS 2.3、EulerOS 2.5、EulerOS 2.8。  - 若在创建节点时指定了extendParam中的alpha.cce/NodeImageID参数，可以不填写此参数。
+        :type os: str
+        :param login: 
+        :type login: :class:`huaweicloudsdkcce.v3.Login`
+        :param root_volume: 
+        :type root_volume: :class:`huaweicloudsdkcce.v3.Volume`
+        :param data_volumes: 节点的数据盘参数（目前已支持通过控制台为CCE节点添加第二块数据盘）。  针对专属云节点，参数解释与rootVolume一致
+        :type data_volumes: list[:class:`huaweicloudsdkcce.v3.Volume`]
+        :param storage: 
+        :type storage: :class:`huaweicloudsdkcce.v3.Storage`
+        :param public_ip: 
+        :type public_ip: :class:`huaweicloudsdkcce.v3.NodePublicIP`
+        :param node_nic_spec: 
+        :type node_nic_spec: :class:`huaweicloudsdkcce.v3.NodeNicSpec`
+        :param count: 批量创建时节点的个数，必须为大于等于1，小于等于最大限额的正整数。作用于节点池时该项可以不填写。
+        :type count: int
+        :param billing_mode: 节点的计费模式：取值为 0（按需付费）、1（包周期）、2（已废弃：自动付费包周期）
+        :type billing_mode: int
+        :param taints: 支持给创建出来的节点加Taints来设置反亲和性，taints配置不超过20条。每条Taints包含以下3个参数：  - Key：必须以字母或数字开头，可以包含字母、数字、连字符、下划线和点，最长63个字符；另外可以使用DNS子域作为前缀。 - Value：必须以字符或数字开头，可以包含字母、数字、连字符、下划线和点，最长63个字符。 - Effect：只可选NoSchedule，PreferNoSchedule或NoExecute。  示例：  &#x60;&#x60;&#x60; \&quot;taints\&quot;: [{   \&quot;key\&quot;: \&quot;status\&quot;,   \&quot;value\&quot;: \&quot;unavailable\&quot;,   \&quot;effect\&quot;: \&quot;NoSchedule\&quot; }, {   \&quot;key\&quot;: \&quot;looks\&quot;,   \&quot;value\&quot;: \&quot;bad\&quot;,   \&quot;effect\&quot;: \&quot;NoSchedule\&quot; }] &#x60;&#x60;&#x60; 
+        :type taints: list[:class:`huaweicloudsdkcce.v3.Taint`]
+        :param k8s_tags: 格式为key/value键值对。键值对个数不超过20条。  - Key：必须以字母或数字开头，可以包含字母、数字、连字符、下划线和点，最长63个字符；另外可以使用DNS子域作为前缀，例如example.com/my-key， DNS子域最长253个字符。 - Value：可以为空或者非空字符串，非空字符串必须以字符或数字开头，可以包含字母、数字、连字符、下划线和点，最长63个字符。  示例：  &#x60;&#x60;&#x60; \&quot;k8sTags\&quot;: {   \&quot;key\&quot;: \&quot;value\&quot; } &#x60;&#x60;&#x60; 
+        :type k8s_tags: dict(str, str)
+        :param ecs_group_id: 云服务器组ID，若指定，将节点创建在该云服务器组下
+        :type ecs_group_id: str
+        :param dedicated_host_id: 指定DeH主机的ID，将节点调度到自己的DeH上。\\n&gt;创建节点池添加节点时不支持该参数。 
+        :type dedicated_host_id: str
+        :param user_tags: 云服务器标签，键必须唯一，CCE支持的最大用户自定义标签数量依region而定，自定义标签数上限为8个。
+        :type user_tags: list[:class:`huaweicloudsdkcce.v3.UserTag`]
+        :param runtime: 
+        :type runtime: :class:`huaweicloudsdkcce.v3.Runtime`
+        :param extend_param: 
+        :type extend_param: :class:`huaweicloudsdkcce.v3.NodeExtendParam`
+        """
         
         
 
@@ -138,7 +177,7 @@ class NodeSpec:
         节点的规格，CCE支持的节点规格请参考[节点规格说明](cce_02_0368.xml)获取。 
 
         :param flavor: The flavor of this NodeSpec.
-        :type: str
+        :type flavor: str
         """
         self._flavor = flavor
 
@@ -160,7 +199,7 @@ class NodeSpec:
         待创建节点所在的可用区，需要指定可用区（AZ）的名称。 [CCE支持的可用区请参考[地区和终端节点](https://developer.huaweicloud.com/endpoint?CCE)](tag:hws) [CCE支持的可用区请参考[地区和终端节点](https://developer.huaweicloud.com/intl/zh-cn/endpoint?CCE)](tag:hws_hk) 
 
         :param az: The az of this NodeSpec.
-        :type: str
+        :type az: str
         """
         self._az = az
 
@@ -182,7 +221,7 @@ class NodeSpec:
         节点的操作系统类型。  - 对于虚拟机节点，可以配置为“EulerOS”、“CentOS”、“Debian”、“Ubuntu”。默认为\"EulerOS\"。  > 系统会根据集群版本自动选择支持的系统版本。当前集群版本不支持该系统类型，则会报错。  - 对于自动付费包周期的裸金属节点，只支持EulerOS 2.3、EulerOS 2.5、EulerOS 2.8。  - 若在创建节点时指定了extendParam中的alpha.cce/NodeImageID参数，可以不填写此参数。
 
         :param os: The os of this NodeSpec.
-        :type: str
+        :type os: str
         """
         self._os = os
 
@@ -192,7 +231,7 @@ class NodeSpec:
 
 
         :return: The login of this NodeSpec.
-        :rtype: Login
+        :rtype: :class:`huaweicloudsdkcce.v3.Login`
         """
         return self._login
 
@@ -202,7 +241,7 @@ class NodeSpec:
 
 
         :param login: The login of this NodeSpec.
-        :type: Login
+        :type login: :class:`huaweicloudsdkcce.v3.Login`
         """
         self._login = login
 
@@ -212,7 +251,7 @@ class NodeSpec:
 
 
         :return: The root_volume of this NodeSpec.
-        :rtype: Volume
+        :rtype: :class:`huaweicloudsdkcce.v3.Volume`
         """
         return self._root_volume
 
@@ -222,7 +261,7 @@ class NodeSpec:
 
 
         :param root_volume: The root_volume of this NodeSpec.
-        :type: Volume
+        :type root_volume: :class:`huaweicloudsdkcce.v3.Volume`
         """
         self._root_volume = root_volume
 
@@ -233,7 +272,7 @@ class NodeSpec:
         节点的数据盘参数（目前已支持通过控制台为CCE节点添加第二块数据盘）。  针对专属云节点，参数解释与rootVolume一致
 
         :return: The data_volumes of this NodeSpec.
-        :rtype: list[Volume]
+        :rtype: list[:class:`huaweicloudsdkcce.v3.Volume`]
         """
         return self._data_volumes
 
@@ -244,7 +283,7 @@ class NodeSpec:
         节点的数据盘参数（目前已支持通过控制台为CCE节点添加第二块数据盘）。  针对专属云节点，参数解释与rootVolume一致
 
         :param data_volumes: The data_volumes of this NodeSpec.
-        :type: list[Volume]
+        :type data_volumes: list[:class:`huaweicloudsdkcce.v3.Volume`]
         """
         self._data_volumes = data_volumes
 
@@ -254,7 +293,7 @@ class NodeSpec:
 
 
         :return: The storage of this NodeSpec.
-        :rtype: Storage
+        :rtype: :class:`huaweicloudsdkcce.v3.Storage`
         """
         return self._storage
 
@@ -264,7 +303,7 @@ class NodeSpec:
 
 
         :param storage: The storage of this NodeSpec.
-        :type: Storage
+        :type storage: :class:`huaweicloudsdkcce.v3.Storage`
         """
         self._storage = storage
 
@@ -274,7 +313,7 @@ class NodeSpec:
 
 
         :return: The public_ip of this NodeSpec.
-        :rtype: NodePublicIP
+        :rtype: :class:`huaweicloudsdkcce.v3.NodePublicIP`
         """
         return self._public_ip
 
@@ -284,7 +323,7 @@ class NodeSpec:
 
 
         :param public_ip: The public_ip of this NodeSpec.
-        :type: NodePublicIP
+        :type public_ip: :class:`huaweicloudsdkcce.v3.NodePublicIP`
         """
         self._public_ip = public_ip
 
@@ -294,7 +333,7 @@ class NodeSpec:
 
 
         :return: The node_nic_spec of this NodeSpec.
-        :rtype: NodeNicSpec
+        :rtype: :class:`huaweicloudsdkcce.v3.NodeNicSpec`
         """
         return self._node_nic_spec
 
@@ -304,7 +343,7 @@ class NodeSpec:
 
 
         :param node_nic_spec: The node_nic_spec of this NodeSpec.
-        :type: NodeNicSpec
+        :type node_nic_spec: :class:`huaweicloudsdkcce.v3.NodeNicSpec`
         """
         self._node_nic_spec = node_nic_spec
 
@@ -326,7 +365,7 @@ class NodeSpec:
         批量创建时节点的个数，必须为大于等于1，小于等于最大限额的正整数。作用于节点池时该项可以不填写。
 
         :param count: The count of this NodeSpec.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -348,7 +387,7 @@ class NodeSpec:
         节点的计费模式：取值为 0（按需付费）、1（包周期）、2（已废弃：自动付费包周期）
 
         :param billing_mode: The billing_mode of this NodeSpec.
-        :type: int
+        :type billing_mode: int
         """
         self._billing_mode = billing_mode
 
@@ -359,7 +398,7 @@ class NodeSpec:
         支持给创建出来的节点加Taints来设置反亲和性，taints配置不超过20条。每条Taints包含以下3个参数：  - Key：必须以字母或数字开头，可以包含字母、数字、连字符、下划线和点，最长63个字符；另外可以使用DNS子域作为前缀。 - Value：必须以字符或数字开头，可以包含字母、数字、连字符、下划线和点，最长63个字符。 - Effect：只可选NoSchedule，PreferNoSchedule或NoExecute。  示例：  ``` \"taints\": [{   \"key\": \"status\",   \"value\": \"unavailable\",   \"effect\": \"NoSchedule\" }, {   \"key\": \"looks\",   \"value\": \"bad\",   \"effect\": \"NoSchedule\" }] ``` 
 
         :return: The taints of this NodeSpec.
-        :rtype: list[Taint]
+        :rtype: list[:class:`huaweicloudsdkcce.v3.Taint`]
         """
         return self._taints
 
@@ -370,7 +409,7 @@ class NodeSpec:
         支持给创建出来的节点加Taints来设置反亲和性，taints配置不超过20条。每条Taints包含以下3个参数：  - Key：必须以字母或数字开头，可以包含字母、数字、连字符、下划线和点，最长63个字符；另外可以使用DNS子域作为前缀。 - Value：必须以字符或数字开头，可以包含字母、数字、连字符、下划线和点，最长63个字符。 - Effect：只可选NoSchedule，PreferNoSchedule或NoExecute。  示例：  ``` \"taints\": [{   \"key\": \"status\",   \"value\": \"unavailable\",   \"effect\": \"NoSchedule\" }, {   \"key\": \"looks\",   \"value\": \"bad\",   \"effect\": \"NoSchedule\" }] ``` 
 
         :param taints: The taints of this NodeSpec.
-        :type: list[Taint]
+        :type taints: list[:class:`huaweicloudsdkcce.v3.Taint`]
         """
         self._taints = taints
 
@@ -392,7 +431,7 @@ class NodeSpec:
         格式为key/value键值对。键值对个数不超过20条。  - Key：必须以字母或数字开头，可以包含字母、数字、连字符、下划线和点，最长63个字符；另外可以使用DNS子域作为前缀，例如example.com/my-key， DNS子域最长253个字符。 - Value：可以为空或者非空字符串，非空字符串必须以字符或数字开头，可以包含字母、数字、连字符、下划线和点，最长63个字符。  示例：  ``` \"k8sTags\": {   \"key\": \"value\" } ``` 
 
         :param k8s_tags: The k8s_tags of this NodeSpec.
-        :type: dict(str, str)
+        :type k8s_tags: dict(str, str)
         """
         self._k8s_tags = k8s_tags
 
@@ -414,7 +453,7 @@ class NodeSpec:
         云服务器组ID，若指定，将节点创建在该云服务器组下
 
         :param ecs_group_id: The ecs_group_id of this NodeSpec.
-        :type: str
+        :type ecs_group_id: str
         """
         self._ecs_group_id = ecs_group_id
 
@@ -436,7 +475,7 @@ class NodeSpec:
         指定DeH主机的ID，将节点调度到自己的DeH上。\\n>创建节点池添加节点时不支持该参数。 
 
         :param dedicated_host_id: The dedicated_host_id of this NodeSpec.
-        :type: str
+        :type dedicated_host_id: str
         """
         self._dedicated_host_id = dedicated_host_id
 
@@ -447,7 +486,7 @@ class NodeSpec:
         云服务器标签，键必须唯一，CCE支持的最大用户自定义标签数量依region而定，自定义标签数上限为8个。
 
         :return: The user_tags of this NodeSpec.
-        :rtype: list[UserTag]
+        :rtype: list[:class:`huaweicloudsdkcce.v3.UserTag`]
         """
         return self._user_tags
 
@@ -458,7 +497,7 @@ class NodeSpec:
         云服务器标签，键必须唯一，CCE支持的最大用户自定义标签数量依region而定，自定义标签数上限为8个。
 
         :param user_tags: The user_tags of this NodeSpec.
-        :type: list[UserTag]
+        :type user_tags: list[:class:`huaweicloudsdkcce.v3.UserTag`]
         """
         self._user_tags = user_tags
 
@@ -468,7 +507,7 @@ class NodeSpec:
 
 
         :return: The runtime of this NodeSpec.
-        :rtype: Runtime
+        :rtype: :class:`huaweicloudsdkcce.v3.Runtime`
         """
         return self._runtime
 
@@ -478,7 +517,7 @@ class NodeSpec:
 
 
         :param runtime: The runtime of this NodeSpec.
-        :type: Runtime
+        :type runtime: :class:`huaweicloudsdkcce.v3.Runtime`
         """
         self._runtime = runtime
 
@@ -488,7 +527,7 @@ class NodeSpec:
 
 
         :return: The extend_param of this NodeSpec.
-        :rtype: NodeExtendParam
+        :rtype: :class:`huaweicloudsdkcce.v3.NodeExtendParam`
         """
         return self._extend_param
 
@@ -498,7 +537,7 @@ class NodeSpec:
 
 
         :param extend_param: The extend_param of this NodeSpec.
-        :type: NodeExtendParam
+        :type extend_param: :class:`huaweicloudsdkcce.v3.NodeExtendParam`
         """
         self._extend_param = extend_param
 

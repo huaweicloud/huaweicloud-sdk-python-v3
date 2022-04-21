@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowOpLogRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowOpLogRequest:
     }
 
     def __init__(self, operation_log_id=None):
-        """ShowOpLogRequest - a model defined in huaweicloud sdk"""
+        """ShowOpLogRequest
+
+        The model defined in huaweicloud sdk
+
+        :param operation_log_id: 任务ID
+        :type operation_log_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowOpLogRequest:
         任务ID
 
         :param operation_log_id: The operation_log_id of this ShowOpLogRequest.
-        :type: str
+        :type operation_log_id: str
         """
         self._operation_log_id = operation_log_id
 

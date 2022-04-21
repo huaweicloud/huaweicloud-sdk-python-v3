@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BandwidthResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class BandwidthResult:
     }
 
     def __init__(self, size=None, share_type=None, charging_mode=None, id=None):
-        """BandwidthResult - a model defined in huaweicloud sdk"""
+        """BandwidthResult
+
+        The model defined in huaweicloud sdk
+
+        :param size: 带宽（Mbit/s）。
+        :type size: int
+        :param share_type: 带宽的共享类型。共享类型枚举：PER，表示独享。目前只支持独享。
+        :type share_type: str
+        :param charging_mode: 带宽的计费类型。字段值为“bandwidth”，表示按带宽计费。字段值为“traffic”，表示按流量计费。
+        :type charging_mode: str
+        :param id: 带宽ID，创建WHOLE类型带宽的弹性IP时指定的共享带宽。
+        :type id: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class BandwidthResult:
         带宽（Mbit/s）。
 
         :param size: The size of this BandwidthResult.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -95,7 +106,7 @@ class BandwidthResult:
         带宽的共享类型。共享类型枚举：PER，表示独享。目前只支持独享。
 
         :param share_type: The share_type of this BandwidthResult.
-        :type: str
+        :type share_type: str
         """
         self._share_type = share_type
 
@@ -117,7 +128,7 @@ class BandwidthResult:
         带宽的计费类型。字段值为“bandwidth”，表示按带宽计费。字段值为“traffic”，表示按流量计费。
 
         :param charging_mode: The charging_mode of this BandwidthResult.
-        :type: str
+        :type charging_mode: str
         """
         self._charging_mode = charging_mode
 
@@ -139,7 +150,7 @@ class BandwidthResult:
         带宽ID，创建WHOLE类型带宽的弹性IP时指定的共享带宽。
 
         :param id: The id of this BandwidthResult.
-        :type: str
+        :type id: str
         """
         self._id = id
 

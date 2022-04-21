@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RepositoryTemplateVO2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class RepositoryTemplateVO2:
     }
 
     def __init__(self, template_type=None, code_title=None, creator_name=None, code_description=None, languages=None, plateform=None, entertype=None):
-        """RepositoryTemplateVO2 - a model defined in huaweicloud sdk"""
+        """RepositoryTemplateVO2
+
+        The model defined in huaweicloud sdk
+
+        :param template_type: 模板类型
+        :type template_type: str
+        :param code_title: 代码模板名称
+        :type code_title: str
+        :param creator_name: 创建者名称
+        :type creator_name: str
+        :param code_description: 代码模板描述
+        :type code_description: str
+        :param languages: 模板语言
+        :type languages: list[str]
+        :param plateform: 模板平台
+        :type plateform: list[str]
+        :param entertype: 模板类型
+        :type entertype: list[str]
+        """
         
         
 
@@ -87,7 +104,7 @@ class RepositoryTemplateVO2:
         模板类型
 
         :param template_type: The template_type of this RepositoryTemplateVO2.
-        :type: str
+        :type template_type: str
         """
         self._template_type = template_type
 
@@ -109,7 +126,7 @@ class RepositoryTemplateVO2:
         代码模板名称
 
         :param code_title: The code_title of this RepositoryTemplateVO2.
-        :type: str
+        :type code_title: str
         """
         self._code_title = code_title
 
@@ -131,7 +148,7 @@ class RepositoryTemplateVO2:
         创建者名称
 
         :param creator_name: The creator_name of this RepositoryTemplateVO2.
-        :type: str
+        :type creator_name: str
         """
         self._creator_name = creator_name
 
@@ -153,7 +170,7 @@ class RepositoryTemplateVO2:
         代码模板描述
 
         :param code_description: The code_description of this RepositoryTemplateVO2.
-        :type: str
+        :type code_description: str
         """
         self._code_description = code_description
 
@@ -175,7 +192,7 @@ class RepositoryTemplateVO2:
         模板语言
 
         :param languages: The languages of this RepositoryTemplateVO2.
-        :type: list[str]
+        :type languages: list[str]
         """
         self._languages = languages
 
@@ -197,7 +214,7 @@ class RepositoryTemplateVO2:
         模板平台
 
         :param plateform: The plateform of this RepositoryTemplateVO2.
-        :type: list[str]
+        :type plateform: list[str]
         """
         self._plateform = plateform
 
@@ -219,7 +236,7 @@ class RepositoryTemplateVO2:
         模板类型
 
         :param entertype: The entertype of this RepositoryTemplateVO2.
-        :type: list[str]
+        :type entertype: list[str]
         """
         self._entertype = entertype
 

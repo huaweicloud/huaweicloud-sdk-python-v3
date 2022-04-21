@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListReplicationsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListReplicationsResponse(SdkResponse):
     }
 
     def __init__(self, replications=None, count=None):
-        """ListReplicationsResponse - a model defined in huaweicloud sdk"""
+        """ListReplicationsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param replications: 复制对列表。
+        :type replications: list[:class:`huaweicloudsdksdrs.v1.ShowReplicationParams`]
+        :param count: 列表中包含的复制对个数。
+        :type count: int
+        """
         
         super(ListReplicationsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListReplicationsResponse(SdkResponse):
         复制对列表。
 
         :return: The replications of this ListReplicationsResponse.
-        :rtype: list[ShowReplicationParams]
+        :rtype: list[:class:`huaweicloudsdksdrs.v1.ShowReplicationParams`]
         """
         return self._replications
 
@@ -63,7 +70,7 @@ class ListReplicationsResponse(SdkResponse):
         复制对列表。
 
         :param replications: The replications of this ListReplicationsResponse.
-        :type: list[ShowReplicationParams]
+        :type replications: list[:class:`huaweicloudsdksdrs.v1.ShowReplicationParams`]
         """
         self._replications = replications
 
@@ -85,7 +92,7 @@ class ListReplicationsResponse(SdkResponse):
         列表中包含的复制对个数。
 
         :param count: The count of this ListReplicationsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

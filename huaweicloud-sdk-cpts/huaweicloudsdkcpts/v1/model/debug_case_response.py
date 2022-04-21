@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DebugCaseResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class DebugCaseResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, extend=None, result=None):
-        """DebugCaseResponse - a model defined in huaweicloud sdk"""
+        """DebugCaseResponse
+
+        The model defined in huaweicloud sdk
+
+        :param code: code
+        :type code: str
+        :param message: message
+        :type message: str
+        :param extend: extend
+        :type extend: str
+        :param result: result
+        :type result: list[:class:`huaweicloudsdkcpts.v1.DebugCaseResult`]
+        """
         
         super(DebugCaseResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class DebugCaseResponse(SdkResponse):
         code
 
         :param code: The code of this DebugCaseResponse.
-        :type: str
+        :type code: str
         """
         self._code = code
 
@@ -95,7 +106,7 @@ class DebugCaseResponse(SdkResponse):
         message
 
         :param message: The message of this DebugCaseResponse.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -117,7 +128,7 @@ class DebugCaseResponse(SdkResponse):
         extend
 
         :param extend: The extend of this DebugCaseResponse.
-        :type: str
+        :type extend: str
         """
         self._extend = extend
 
@@ -128,7 +139,7 @@ class DebugCaseResponse(SdkResponse):
         result
 
         :return: The result of this DebugCaseResponse.
-        :rtype: list[DebugCaseResult]
+        :rtype: list[:class:`huaweicloudsdkcpts.v1.DebugCaseResult`]
         """
         return self._result
 
@@ -139,7 +150,7 @@ class DebugCaseResponse(SdkResponse):
         result
 
         :param result: The result of this DebugCaseResponse.
-        :type: list[DebugCaseResult]
+        :type result: list[:class:`huaweicloudsdkcpts.v1.DebugCaseResult`]
         """
         self._result = result
 

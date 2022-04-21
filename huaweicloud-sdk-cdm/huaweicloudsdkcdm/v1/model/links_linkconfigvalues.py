@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LinksLinkconfigvalues:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class LinksLinkconfigvalues:
     }
 
     def __init__(self, configs=None, extended_configs=None, validators=None):
-        """LinksLinkconfigvalues - a model defined in huaweicloud sdk"""
+        """LinksLinkconfigvalues
+
+        The model defined in huaweicloud sdk
+
+        :param configs: 连接配置参数数据结构，请参见configs参数说明。
+        :type configs: list[:class:`huaweicloudsdkcdm.v1.Configs`]
+        :param extended_configs: 
+        :type extended_configs: :class:`huaweicloudsdkcdm.v1.LinksLinkconfigvaluesExtendedconfigs`
+        :param validators: 校验器
+        :type validators: list[str]
+        """
         
         
 
@@ -56,7 +65,7 @@ class LinksLinkconfigvalues:
         连接配置参数数据结构，请参见configs参数说明。
 
         :return: The configs of this LinksLinkconfigvalues.
-        :rtype: list[Configs]
+        :rtype: list[:class:`huaweicloudsdkcdm.v1.Configs`]
         """
         return self._configs
 
@@ -67,7 +76,7 @@ class LinksLinkconfigvalues:
         连接配置参数数据结构，请参见configs参数说明。
 
         :param configs: The configs of this LinksLinkconfigvalues.
-        :type: list[Configs]
+        :type configs: list[:class:`huaweicloudsdkcdm.v1.Configs`]
         """
         self._configs = configs
 
@@ -77,7 +86,7 @@ class LinksLinkconfigvalues:
 
 
         :return: The extended_configs of this LinksLinkconfigvalues.
-        :rtype: LinksLinkconfigvaluesExtendedconfigs
+        :rtype: :class:`huaweicloudsdkcdm.v1.LinksLinkconfigvaluesExtendedconfigs`
         """
         return self._extended_configs
 
@@ -87,7 +96,7 @@ class LinksLinkconfigvalues:
 
 
         :param extended_configs: The extended_configs of this LinksLinkconfigvalues.
-        :type: LinksLinkconfigvaluesExtendedconfigs
+        :type extended_configs: :class:`huaweicloudsdkcdm.v1.LinksLinkconfigvaluesExtendedconfigs`
         """
         self._extended_configs = extended_configs
 
@@ -109,7 +118,7 @@ class LinksLinkconfigvalues:
         校验器
 
         :param validators: The validators of this LinksLinkconfigvalues.
-        :type: list[str]
+        :type validators: list[str]
         """
         self._validators = validators
 

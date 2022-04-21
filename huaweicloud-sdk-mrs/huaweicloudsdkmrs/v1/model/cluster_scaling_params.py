@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ClusterScalingParams:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class ClusterScalingParams:
     }
 
     def __init__(self, order_id=None, scale_type=None, node_id=None, node_group=None, skip_bootstrap_scripts=None, scale_without_start=None, server_ids=None, instances=None, task_node_info=None):
-        """ClusterScalingParams - a model defined in huaweicloud sdk"""
+        """ClusterScalingParams
+
+        The model defined in huaweicloud sdk
+
+        :param order_id: 扩容/缩容时系统获取的订单号，用户不需要配置。
+        :type order_id: str
+        :param scale_type: - scale_in：缩容 - scale_out：扩容
+        :type scale_type: str
+        :param node_id: 扩容/缩容时新增或者减少节点的ID标识,参数值固定为node_orderadd。
+        :type node_id: str
+        :param node_group: 扩容或缩容的节点组。 - 如果node_group为core_node_default_group，表示Core节点组。 - 如果node_group为task_node_default_group，表示Task节点组。  该字段可以为空，为空时，系统默认值为core_node_default_group。
+        :type node_group: str
+        :param skip_bootstrap_scripts: 是否跳过引导操作，默认为false，即执行引导操作。 仅在创建集群时配置了引导操作且扩容时有意义，表示扩容时是否在新增节点上执行创建集群时指定的引导操作。
+        :type skip_bootstrap_scripts: str
+        :param scale_without_start: 扩容后是否启动扩容节点上的组件。  - true：扩容后不启动组件。 - false：扩容后启动组件。
+        :type scale_without_start: bool
+        :param server_ids: 缩容Task节点时指定待删除Task节点的ID列表。  - 当scale_type为扩容时，该参数不生效。 - 当scale_type为缩容且该参数不为空时，删除指定的Task节点。 - 当scale_type为缩容且server_ids为空时，按照系统规则自动选择删除Task节点。
+        :type server_ids: list[str]
+        :param instances: 扩容或缩容的节点数。  - 扩容时的最大节点数为（500 - 集群Core/Task节点数）。例如，当前集群Core节点数为3，此处扩容的节点数必须小于等于497。     Core和Task节点总数最大值为500，如果用户需要的Core/Task节点数大于500，可以联系技术支持人员或者调用后台接口修改数据库。   - 缩容时Core节点数大于3或者Task节点数大于0可以进行节点删除。例如，当前集群Core节点和Task节点数均为5，Core节点可缩容的节点数为2（5减去3），Task节点可缩容节点数为小于等于5。
+        :type instances: int
+        :param task_node_info: 
+        :type task_node_info: :class:`huaweicloudsdkmrs.v1.TaskNodeInfo`
+        """
         
         
 
@@ -95,7 +116,7 @@ class ClusterScalingParams:
         扩容/缩容时系统获取的订单号，用户不需要配置。
 
         :param order_id: The order_id of this ClusterScalingParams.
-        :type: str
+        :type order_id: str
         """
         self._order_id = order_id
 
@@ -117,7 +138,7 @@ class ClusterScalingParams:
         - scale_in：缩容 - scale_out：扩容
 
         :param scale_type: The scale_type of this ClusterScalingParams.
-        :type: str
+        :type scale_type: str
         """
         self._scale_type = scale_type
 
@@ -139,7 +160,7 @@ class ClusterScalingParams:
         扩容/缩容时新增或者减少节点的ID标识,参数值固定为node_orderadd。
 
         :param node_id: The node_id of this ClusterScalingParams.
-        :type: str
+        :type node_id: str
         """
         self._node_id = node_id
 
@@ -161,7 +182,7 @@ class ClusterScalingParams:
         扩容或缩容的节点组。 - 如果node_group为core_node_default_group，表示Core节点组。 - 如果node_group为task_node_default_group，表示Task节点组。  该字段可以为空，为空时，系统默认值为core_node_default_group。
 
         :param node_group: The node_group of this ClusterScalingParams.
-        :type: str
+        :type node_group: str
         """
         self._node_group = node_group
 
@@ -183,7 +204,7 @@ class ClusterScalingParams:
         是否跳过引导操作，默认为false，即执行引导操作。 仅在创建集群时配置了引导操作且扩容时有意义，表示扩容时是否在新增节点上执行创建集群时指定的引导操作。
 
         :param skip_bootstrap_scripts: The skip_bootstrap_scripts of this ClusterScalingParams.
-        :type: str
+        :type skip_bootstrap_scripts: str
         """
         self._skip_bootstrap_scripts = skip_bootstrap_scripts
 
@@ -205,7 +226,7 @@ class ClusterScalingParams:
         扩容后是否启动扩容节点上的组件。  - true：扩容后不启动组件。 - false：扩容后启动组件。
 
         :param scale_without_start: The scale_without_start of this ClusterScalingParams.
-        :type: bool
+        :type scale_without_start: bool
         """
         self._scale_without_start = scale_without_start
 
@@ -227,7 +248,7 @@ class ClusterScalingParams:
         缩容Task节点时指定待删除Task节点的ID列表。  - 当scale_type为扩容时，该参数不生效。 - 当scale_type为缩容且该参数不为空时，删除指定的Task节点。 - 当scale_type为缩容且server_ids为空时，按照系统规则自动选择删除Task节点。
 
         :param server_ids: The server_ids of this ClusterScalingParams.
-        :type: list[str]
+        :type server_ids: list[str]
         """
         self._server_ids = server_ids
 
@@ -249,7 +270,7 @@ class ClusterScalingParams:
         扩容或缩容的节点数。  - 扩容时的最大节点数为（500 - 集群Core/Task节点数）。例如，当前集群Core节点数为3，此处扩容的节点数必须小于等于497。     Core和Task节点总数最大值为500，如果用户需要的Core/Task节点数大于500，可以联系技术支持人员或者调用后台接口修改数据库。   - 缩容时Core节点数大于3或者Task节点数大于0可以进行节点删除。例如，当前集群Core节点和Task节点数均为5，Core节点可缩容的节点数为2（5减去3），Task节点可缩容节点数为小于等于5。
 
         :param instances: The instances of this ClusterScalingParams.
-        :type: int
+        :type instances: int
         """
         self._instances = instances
 
@@ -259,7 +280,7 @@ class ClusterScalingParams:
 
 
         :return: The task_node_info of this ClusterScalingParams.
-        :rtype: TaskNodeInfo
+        :rtype: :class:`huaweicloudsdkmrs.v1.TaskNodeInfo`
         """
         return self._task_node_info
 
@@ -269,7 +290,7 @@ class ClusterScalingParams:
 
 
         :param task_node_info: The task_node_info of this ClusterScalingParams.
-        :type: TaskNodeInfo
+        :type task_node_info: :class:`huaweicloudsdkmrs.v1.TaskNodeInfo`
         """
         self._task_node_info = task_node_info
 

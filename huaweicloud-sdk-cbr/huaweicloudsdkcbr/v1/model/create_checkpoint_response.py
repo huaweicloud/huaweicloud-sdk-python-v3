@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateCheckpointResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateCheckpointResponse(SdkResponse):
     }
 
     def __init__(self, checkpoint=None):
-        """CreateCheckpointResponse - a model defined in huaweicloud sdk"""
+        """CreateCheckpointResponse
+
+        The model defined in huaweicloud sdk
+
+        :param checkpoint: 
+        :type checkpoint: :class:`huaweicloudsdkcbr.v1.CheckpointCreate`
+        """
         
         super(CreateCheckpointResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class CreateCheckpointResponse(SdkResponse):
 
 
         :return: The checkpoint of this CreateCheckpointResponse.
-        :rtype: CheckpointCreate
+        :rtype: :class:`huaweicloudsdkcbr.v1.CheckpointCreate`
         """
         return self._checkpoint
 
@@ -56,7 +61,7 @@ class CreateCheckpointResponse(SdkResponse):
 
 
         :param checkpoint: The checkpoint of this CreateCheckpointResponse.
-        :type: CheckpointCreate
+        :type checkpoint: :class:`huaweicloudsdkcbr.v1.CheckpointCreate`
         """
         self._checkpoint = checkpoint
 

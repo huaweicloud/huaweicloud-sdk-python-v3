@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowTrackerConfigResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowTrackerConfigResponse(SdkResponse):
     }
 
     def __init__(self, channel=None, selector=None, agency_name=None):
-        """ShowTrackerConfigResponse - a model defined in huaweicloud sdk"""
+        """ShowTrackerConfigResponse
+
+        The model defined in huaweicloud sdk
+
+        :param channel: 
+        :type channel: :class:`huaweicloudsdkrms.v1.ChannelConfigBody`
+        :param selector: 
+        :type selector: :class:`huaweicloudsdkrms.v1.SelectorConfigBody`
+        :param agency_name: IAM委托名称
+        :type agency_name: str
+        """
         
         super(ShowTrackerConfigResponse, self).__init__()
 
@@ -56,7 +65,7 @@ class ShowTrackerConfigResponse(SdkResponse):
 
 
         :return: The channel of this ShowTrackerConfigResponse.
-        :rtype: ChannelConfigBody
+        :rtype: :class:`huaweicloudsdkrms.v1.ChannelConfigBody`
         """
         return self._channel
 
@@ -66,7 +75,7 @@ class ShowTrackerConfigResponse(SdkResponse):
 
 
         :param channel: The channel of this ShowTrackerConfigResponse.
-        :type: ChannelConfigBody
+        :type channel: :class:`huaweicloudsdkrms.v1.ChannelConfigBody`
         """
         self._channel = channel
 
@@ -76,7 +85,7 @@ class ShowTrackerConfigResponse(SdkResponse):
 
 
         :return: The selector of this ShowTrackerConfigResponse.
-        :rtype: SelectorConfigBody
+        :rtype: :class:`huaweicloudsdkrms.v1.SelectorConfigBody`
         """
         return self._selector
 
@@ -86,7 +95,7 @@ class ShowTrackerConfigResponse(SdkResponse):
 
 
         :param selector: The selector of this ShowTrackerConfigResponse.
-        :type: SelectorConfigBody
+        :type selector: :class:`huaweicloudsdkrms.v1.SelectorConfigBody`
         """
         self._selector = selector
 
@@ -108,7 +117,7 @@ class ShowTrackerConfigResponse(SdkResponse):
         IAM委托名称
 
         :param agency_name: The agency_name of this ShowTrackerConfigResponse.
-        :type: str
+        :type agency_name: str
         """
         self._agency_name = agency_name
 

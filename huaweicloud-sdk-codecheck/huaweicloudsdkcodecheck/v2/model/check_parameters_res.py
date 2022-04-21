@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CheckParametersRes:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CheckParametersRes:
     }
 
     def __init__(self, check_id=None, name=None, checker_configs=None):
-        """CheckParametersRes - a model defined in huaweicloud sdk"""
+        """CheckParametersRes
+
+        The model defined in huaweicloud sdk
+
+        :param check_id: 检查工具ID
+        :type check_id: int
+        :param name: 编译参数名称
+        :type name: str
+        :param checker_configs: 检查参数配置信息
+        :type checker_configs: list[:class:`huaweicloudsdkcodecheck.v2.CheckConfigsItem`]
+        """
         
         
 
@@ -68,7 +77,7 @@ class CheckParametersRes:
         检查工具ID
 
         :param check_id: The check_id of this CheckParametersRes.
-        :type: int
+        :type check_id: int
         """
         self._check_id = check_id
 
@@ -90,7 +99,7 @@ class CheckParametersRes:
         编译参数名称
 
         :param name: The name of this CheckParametersRes.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -101,7 +110,7 @@ class CheckParametersRes:
         检查参数配置信息
 
         :return: The checker_configs of this CheckParametersRes.
-        :rtype: list[CheckConfigsItem]
+        :rtype: list[:class:`huaweicloudsdkcodecheck.v2.CheckConfigsItem`]
         """
         return self._checker_configs
 
@@ -112,7 +121,7 @@ class CheckParametersRes:
         检查参数配置信息
 
         :param checker_configs: The checker_configs of this CheckParametersRes.
-        :type: list[CheckConfigsItem]
+        :type checker_configs: list[:class:`huaweicloudsdkcodecheck.v2.CheckConfigsItem`]
         """
         self._checker_configs = checker_configs
 

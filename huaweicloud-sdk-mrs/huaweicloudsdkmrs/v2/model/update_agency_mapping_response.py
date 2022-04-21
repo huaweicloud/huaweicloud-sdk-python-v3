@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateAgencyMappingResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateAgencyMappingResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """UpdateAgencyMappingResponse - a model defined in huaweicloud sdk"""
+        """UpdateAgencyMappingResponse
+
+        The model defined in huaweicloud sdk
+
+        :param result: 更新映射请求操作结果，succeeded为操作成功，failed为操作失败
+        :type result: str
+        """
         
         super(UpdateAgencyMappingResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class UpdateAgencyMappingResponse(SdkResponse):
         更新映射请求操作结果，succeeded为操作成功，failed为操作失败
 
         :param result: The result of this UpdateAgencyMappingResponse.
-        :type: str
+        :type result: str
         """
         self._result = result
 

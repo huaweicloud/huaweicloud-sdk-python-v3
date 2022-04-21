@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListApplicationAttributesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListApplicationAttributesResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, application_id=None, attributes=None):
-        """ListApplicationAttributesResponse - a model defined in huaweicloud sdk"""
+        """ListApplicationAttributesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param request_id: 请求的唯一标识ID。
+        :type request_id: str
+        :param application_id: Application的唯一标识ID。
+        :type application_id: str
+        :param attributes: 
+        :type attributes: :class:`huaweicloudsdksmn.v2.ListApplicationAttributesResponseBodyAttributes`
+        """
         
         super(ListApplicationAttributesResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListApplicationAttributesResponse(SdkResponse):
         请求的唯一标识ID。
 
         :param request_id: The request_id of this ListApplicationAttributesResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 
@@ -90,7 +99,7 @@ class ListApplicationAttributesResponse(SdkResponse):
         Application的唯一标识ID。
 
         :param application_id: The application_id of this ListApplicationAttributesResponse.
-        :type: str
+        :type application_id: str
         """
         self._application_id = application_id
 
@@ -100,7 +109,7 @@ class ListApplicationAttributesResponse(SdkResponse):
 
 
         :return: The attributes of this ListApplicationAttributesResponse.
-        :rtype: ListApplicationAttributesResponseBodyAttributes
+        :rtype: :class:`huaweicloudsdksmn.v2.ListApplicationAttributesResponseBodyAttributes`
         """
         return self._attributes
 
@@ -110,7 +119,7 @@ class ListApplicationAttributesResponse(SdkResponse):
 
 
         :param attributes: The attributes of this ListApplicationAttributesResponse.
-        :type: ListApplicationAttributesResponseBodyAttributes
+        :type attributes: :class:`huaweicloudsdksmn.v2.ListApplicationAttributesResponseBodyAttributes`
         """
         self._attributes = attributes
 

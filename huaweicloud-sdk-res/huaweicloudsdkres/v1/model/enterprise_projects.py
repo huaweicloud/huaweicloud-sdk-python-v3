@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EnterpriseProjects:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class EnterpriseProjects:
     }
 
     def __init__(self, created_at=None, description=None, id=None, name=None, status=None, updated_at=None):
-        """EnterpriseProjects - a model defined in huaweicloud sdk"""
+        """EnterpriseProjects
+
+        The model defined in huaweicloud sdk
+
+        :param created_at: 创建时间。
+        :type created_at: str
+        :param description: 描述。
+        :type description: str
+        :param id: 企业项目id。
+        :type id: str
+        :param name: 企业项目名称。
+        :type name: str
+        :param status: 状态。
+        :type status: int
+        :param updated_at: 更新时间。
+        :type updated_at: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class EnterpriseProjects:
         创建时间。
 
         :param created_at: The created_at of this EnterpriseProjects.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -105,7 +120,7 @@ class EnterpriseProjects:
         描述。
 
         :param description: The description of this EnterpriseProjects.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -127,7 +142,7 @@ class EnterpriseProjects:
         企业项目id。
 
         :param id: The id of this EnterpriseProjects.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -149,7 +164,7 @@ class EnterpriseProjects:
         企业项目名称。
 
         :param name: The name of this EnterpriseProjects.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -171,7 +186,7 @@ class EnterpriseProjects:
         状态。
 
         :param status: The status of this EnterpriseProjects.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -193,7 +208,7 @@ class EnterpriseProjects:
         更新时间。
 
         :param updated_at: The updated_at of this EnterpriseProjects.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 

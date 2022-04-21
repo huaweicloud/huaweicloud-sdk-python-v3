@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowResourceRelationsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowResourceRelationsResponse(SdkResponse):
     }
 
     def __init__(self, relations=None, page_info=None):
-        """ShowResourceRelationsResponse - a model defined in huaweicloud sdk"""
+        """ShowResourceRelationsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param relations: 资源关系列表
+        :type relations: list[:class:`huaweicloudsdkrms.v1.ResourceRelation`]
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkrms.v1.PageInfo`
+        """
         
         super(ShowResourceRelationsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ShowResourceRelationsResponse(SdkResponse):
         资源关系列表
 
         :return: The relations of this ShowResourceRelationsResponse.
-        :rtype: list[ResourceRelation]
+        :rtype: list[:class:`huaweicloudsdkrms.v1.ResourceRelation`]
         """
         return self._relations
 
@@ -63,7 +70,7 @@ class ShowResourceRelationsResponse(SdkResponse):
         资源关系列表
 
         :param relations: The relations of this ShowResourceRelationsResponse.
-        :type: list[ResourceRelation]
+        :type relations: list[:class:`huaweicloudsdkrms.v1.ResourceRelation`]
         """
         self._relations = relations
 
@@ -73,7 +80,7 @@ class ShowResourceRelationsResponse(SdkResponse):
 
 
         :return: The page_info of this ShowResourceRelationsResponse.
-        :rtype: PageInfo
+        :rtype: :class:`huaweicloudsdkrms.v1.PageInfo`
         """
         return self._page_info
 
@@ -83,7 +90,7 @@ class ShowResourceRelationsResponse(SdkResponse):
 
 
         :param page_info: The page_info of this ShowResourceRelationsResponse.
-        :type: PageInfo
+        :type page_info: :class:`huaweicloudsdkrms.v1.PageInfo`
         """
         self._page_info = page_info
 

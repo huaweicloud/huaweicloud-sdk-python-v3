@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResourceDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ResourceDTO:
     }
 
     def __init__(self, limits=None, requests=None):
-        """ResourceDTO - a model defined in huaweicloud sdk"""
+        """ResourceDTO
+
+        The model defined in huaweicloud sdk
+
+        :param limits: 
+        :type limits: :class:`huaweicloudsdkiotedge.v2.ResourceConfigDTO`
+        :param requests: 
+        :type requests: :class:`huaweicloudsdkiotedge.v2.ResourceConfigDTO`
+        """
         
         
 
@@ -51,7 +58,7 @@ class ResourceDTO:
 
 
         :return: The limits of this ResourceDTO.
-        :rtype: ResourceConfigDTO
+        :rtype: :class:`huaweicloudsdkiotedge.v2.ResourceConfigDTO`
         """
         return self._limits
 
@@ -61,7 +68,7 @@ class ResourceDTO:
 
 
         :param limits: The limits of this ResourceDTO.
-        :type: ResourceConfigDTO
+        :type limits: :class:`huaweicloudsdkiotedge.v2.ResourceConfigDTO`
         """
         self._limits = limits
 
@@ -71,7 +78,7 @@ class ResourceDTO:
 
 
         :return: The requests of this ResourceDTO.
-        :rtype: ResourceConfigDTO
+        :rtype: :class:`huaweicloudsdkiotedge.v2.ResourceConfigDTO`
         """
         return self._requests
 
@@ -81,7 +88,7 @@ class ResourceDTO:
 
 
         :param requests: The requests of this ResourceDTO.
-        :type: ResourceConfigDTO
+        :type requests: :class:`huaweicloudsdkiotedge.v2.ResourceConfigDTO`
         """
         self._requests = requests
 

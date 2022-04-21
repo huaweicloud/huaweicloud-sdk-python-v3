@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddApplyJoinProjectForAgcRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class AddApplyJoinProjectForAgcRequest:
     }
 
     def __init__(self, domain_id=None, user_id=None, project_id=None):
-        """AddApplyJoinProjectForAgcRequest - a model defined in huaweicloud sdk"""
+        """AddApplyJoinProjectForAgcRequest
+
+        The model defined in huaweicloud sdk
+
+        :param domain_id: 租户id
+        :type domain_id: str
+        :param user_id: 用户id
+        :type user_id: str
+        :param project_id: devcloud的项目id
+        :type project_id: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class AddApplyJoinProjectForAgcRequest:
         租户id
 
         :param domain_id: The domain_id of this AddApplyJoinProjectForAgcRequest.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -87,7 +96,7 @@ class AddApplyJoinProjectForAgcRequest:
         用户id
 
         :param user_id: The user_id of this AddApplyJoinProjectForAgcRequest.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -109,7 +118,7 @@ class AddApplyJoinProjectForAgcRequest:
         devcloud的项目id
 
         :param project_id: The project_id of this AddApplyJoinProjectForAgcRequest.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 

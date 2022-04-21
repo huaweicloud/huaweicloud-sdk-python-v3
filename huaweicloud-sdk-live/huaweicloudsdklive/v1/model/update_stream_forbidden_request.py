@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateStreamForbiddenRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateStreamForbiddenRequest:
     }
 
     def __init__(self, specify_project=None, body=None):
-        """UpdateStreamForbiddenRequest - a model defined in huaweicloud sdk"""
+        """UpdateStreamForbiddenRequest
+
+        The model defined in huaweicloud sdk
+
+        :param specify_project: op账号需要携带的特定project_id，当使用op账号时该值为所操作租户的project_id
+        :type specify_project: str
+        :param body: Body of the UpdateStreamForbiddenRequest
+        :type body: :class:`huaweicloudsdklive.v1.StreamForbiddenSetting`
+        """
         
         
 
@@ -63,7 +70,7 @@ class UpdateStreamForbiddenRequest:
         op账号需要携带的特定project_id，当使用op账号时该值为所操作租户的project_id
 
         :param specify_project: The specify_project of this UpdateStreamForbiddenRequest.
-        :type: str
+        :type specify_project: str
         """
         self._specify_project = specify_project
 
@@ -73,7 +80,7 @@ class UpdateStreamForbiddenRequest:
 
 
         :return: The body of this UpdateStreamForbiddenRequest.
-        :rtype: StreamForbiddenSetting
+        :rtype: :class:`huaweicloudsdklive.v1.StreamForbiddenSetting`
         """
         return self._body
 
@@ -83,7 +90,7 @@ class UpdateStreamForbiddenRequest:
 
 
         :param body: The body of this UpdateStreamForbiddenRequest.
-        :type: StreamForbiddenSetting
+        :type body: :class:`huaweicloudsdklive.v1.StreamForbiddenSetting`
         """
         self._body = body
 

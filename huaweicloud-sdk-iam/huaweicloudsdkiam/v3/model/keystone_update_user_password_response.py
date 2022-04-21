@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneUpdateUserPasswordResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class KeystoneUpdateUserPasswordResponse(SdkResponse):
     }
 
     def __init__(self):
-        """KeystoneUpdateUserPasswordResponse - a model defined in huaweicloud sdk"""
+        """KeystoneUpdateUserPasswordResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(KeystoneUpdateUserPasswordResponse, self).__init__()
         self.discriminator = None

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Initial:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class Initial:
     }
 
     def __init__(self, initial_method=None, mean_value=None, standard_deviation=None, min_value=None, max_value=None):
-        """Initial - a model defined in huaweicloud sdk"""
+        """Initial
+
+        The model defined in huaweicloud sdk
+
+        :param initial_method: 初始化方法。
+        :type initial_method: str
+        :param mean_value: 平均值。
+        :type mean_value: float
+        :param standard_deviation: 标准差。
+        :type standard_deviation: float
+        :param min_value: 最小值。
+        :type min_value: float
+        :param max_value: 最大值。
+        :type max_value: float
+        """
         
         
 
@@ -77,7 +90,7 @@ class Initial:
         初始化方法。
 
         :param initial_method: The initial_method of this Initial.
-        :type: str
+        :type initial_method: str
         """
         self._initial_method = initial_method
 
@@ -99,7 +112,7 @@ class Initial:
         平均值。
 
         :param mean_value: The mean_value of this Initial.
-        :type: float
+        :type mean_value: float
         """
         self._mean_value = mean_value
 
@@ -121,7 +134,7 @@ class Initial:
         标准差。
 
         :param standard_deviation: The standard_deviation of this Initial.
-        :type: float
+        :type standard_deviation: float
         """
         self._standard_deviation = standard_deviation
 
@@ -143,7 +156,7 @@ class Initial:
         最小值。
 
         :param min_value: The min_value of this Initial.
-        :type: float
+        :type min_value: float
         """
         self._min_value = min_value
 
@@ -165,7 +178,7 @@ class Initial:
         最大值。
 
         :param max_value: The max_value of this Initial.
-        :type: float
+        :type max_value: float
         """
         self._max_value = max_value
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListClustersResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListClustersResponse(SdkResponse):
     }
 
     def __init__(self, clusters=None, count=None):
-        """ListClustersResponse - a model defined in huaweicloud sdk"""
+        """ListClustersResponse
+
+        The model defined in huaweicloud sdk
+
+        :param clusters: 查询到的集群详细列表，每个json体表示一个集群的详情。
+        :type clusters: list[:class:`huaweicloudsdkcloudtable.v2.ClusterDetail`]
+        :param count: 查询到的集群数量。
+        :type count: int
+        """
         
         super(ListClustersResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListClustersResponse(SdkResponse):
         查询到的集群详细列表，每个json体表示一个集群的详情。
 
         :return: The clusters of this ListClustersResponse.
-        :rtype: list[ClusterDetail]
+        :rtype: list[:class:`huaweicloudsdkcloudtable.v2.ClusterDetail`]
         """
         return self._clusters
 
@@ -63,7 +70,7 @@ class ListClustersResponse(SdkResponse):
         查询到的集群详细列表，每个json体表示一个集群的详情。
 
         :param clusters: The clusters of this ListClustersResponse.
-        :type: list[ClusterDetail]
+        :type clusters: list[:class:`huaweicloudsdkcloudtable.v2.ClusterDetail`]
         """
         self._clusters = clusters
 
@@ -85,7 +92,7 @@ class ListClustersResponse(SdkResponse):
         查询到的集群数量。
 
         :param count: The count of this ListClustersResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

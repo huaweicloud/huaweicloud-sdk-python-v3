@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateFalsePositiveRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UpdateFalsePositiveRequestBody:
     }
 
     def __init__(self, vuln_id=None, provider=None, reason=None, vuln_status=None):
-        """UpdateFalsePositiveRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateFalsePositiveRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param vuln_id: 漏洞ID
+        :type vuln_id: str
+        :param provider: 误报确认人
+        :type provider: str
+        :param reason: 误报确认理由
+        :type reason: str
+        :param vuln_status: 对漏洞的操作:   * false_report - 更新漏洞状态为误报，并忽略   * repairing - 更新漏洞状态未修复 
+        :type vuln_status: str
+        """
         
         
 
@@ -72,7 +83,7 @@ class UpdateFalsePositiveRequestBody:
         漏洞ID
 
         :param vuln_id: The vuln_id of this UpdateFalsePositiveRequestBody.
-        :type: str
+        :type vuln_id: str
         """
         self._vuln_id = vuln_id
 
@@ -94,7 +105,7 @@ class UpdateFalsePositiveRequestBody:
         误报确认人
 
         :param provider: The provider of this UpdateFalsePositiveRequestBody.
-        :type: str
+        :type provider: str
         """
         self._provider = provider
 
@@ -116,7 +127,7 @@ class UpdateFalsePositiveRequestBody:
         误报确认理由
 
         :param reason: The reason of this UpdateFalsePositiveRequestBody.
-        :type: str
+        :type reason: str
         """
         self._reason = reason
 
@@ -138,7 +149,7 @@ class UpdateFalsePositiveRequestBody:
         对漏洞的操作:   * false_report - 更新漏洞状态为误报，并忽略   * repairing - 更新漏洞状态未修复 
 
         :param vuln_status: The vuln_status of this UpdateFalsePositiveRequestBody.
-        :type: str
+        :type vuln_status: str
         """
         self._vuln_status = vuln_status
 

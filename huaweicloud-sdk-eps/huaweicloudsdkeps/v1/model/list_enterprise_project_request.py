@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListEnterpriseProjectRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ListEnterpriseProjectRequest:
     }
 
     def __init__(self, id=None, limit=None, name=None, offset=None, sort_dir=None, sort_key=None, status=None):
-        """ListEnterpriseProjectRequest - a model defined in huaweicloud sdk"""
+        """ListEnterpriseProjectRequest
+
+        The model defined in huaweicloud sdk
+
+        :param id: 企业项目ID，0表示默认企业项目
+        :type id: str
+        :param limit: 查询记录数默认为1000，limit最多为1000, 最小值为1
+        :type limit: int
+        :param name: 企业项目名称，支持模糊搜索
+        :type name: str
+        :param offset: 索引位置，从offset指定的下一条数据开始查询，必须为数字，不能为负数，默认为0
+        :type offset: int
+        :param sort_dir: 降序或升序,默认为“desc” 。desc表示降序 。asc 表示升序
+        :type sort_dir: str
+        :param sort_key: 返回结果按该关键字排序（支持updated_at等关键字，默认为“created_at”）
+        :type sort_key: str
+        :param status: 企业项目状态。 1--启用，2--停用
+        :type status: int
+        """
         
         
 
@@ -88,7 +105,7 @@ class ListEnterpriseProjectRequest:
         企业项目ID，0表示默认企业项目
 
         :param id: The id of this ListEnterpriseProjectRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -110,7 +127,7 @@ class ListEnterpriseProjectRequest:
         查询记录数默认为1000，limit最多为1000, 最小值为1
 
         :param limit: The limit of this ListEnterpriseProjectRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -132,7 +149,7 @@ class ListEnterpriseProjectRequest:
         企业项目名称，支持模糊搜索
 
         :param name: The name of this ListEnterpriseProjectRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -154,7 +171,7 @@ class ListEnterpriseProjectRequest:
         索引位置，从offset指定的下一条数据开始查询，必须为数字，不能为负数，默认为0
 
         :param offset: The offset of this ListEnterpriseProjectRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -176,7 +193,7 @@ class ListEnterpriseProjectRequest:
         降序或升序,默认为“desc” 。desc表示降序 。asc 表示升序
 
         :param sort_dir: The sort_dir of this ListEnterpriseProjectRequest.
-        :type: str
+        :type sort_dir: str
         """
         self._sort_dir = sort_dir
 
@@ -198,7 +215,7 @@ class ListEnterpriseProjectRequest:
         返回结果按该关键字排序（支持updated_at等关键字，默认为“created_at”）
 
         :param sort_key: The sort_key of this ListEnterpriseProjectRequest.
-        :type: str
+        :type sort_key: str
         """
         self._sort_key = sort_key
 
@@ -220,7 +237,7 @@ class ListEnterpriseProjectRequest:
         企业项目状态。 1--启用，2--停用
 
         :param status: The status of this ListEnterpriseProjectRequest.
-        :type: int
+        :type status: int
         """
         self._status = status
 

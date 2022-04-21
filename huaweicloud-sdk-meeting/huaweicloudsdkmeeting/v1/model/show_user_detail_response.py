@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowUserDetailResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -82,7 +81,65 @@ class ShowUserDetailResponse(SdkResponse):
     }
 
     def __init__(self, id=None, user_account=None, name=None, english_name=None, phone=None, country=None, email=None, sip_num=None, vmr_list=None, dept_code=None, dept_name=None, dept_name_path=None, user_type=None, admin_type=None, signature=None, title=None, desc=None, corp=None, function=None, dev_type=None, status=None, sort_level=None, hide_phone=None, vision_account=None, third_account=None, license=None, active_time=None):
-        """ShowUserDetailResponse - a model defined in huaweicloud sdk"""
+        """ShowUserDetailResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 用户id
+        :type id: str
+        :param user_account: 账号
+        :type user_account: str
+        :param name: 姓名
+        :type name: str
+        :param english_name: 英文名称
+        :type english_name: str
+        :param phone: 联系电话
+        :type phone: str
+        :param country: 联系电话所属的国家
+        :type country: str
+        :param email: 邮箱
+        :type email: str
+        :param sip_num: SIP号码
+        :type sip_num: str
+        :param vmr_list: 云会议室列表
+        :type vmr_list: list[:class:`huaweicloudsdkmeeting.v1.UserVmrDTO`]
+        :param dept_code: 部门编码
+        :type dept_code: str
+        :param dept_name: 部门名称
+        :type dept_name: str
+        :param dept_name_path: 部门完整名称
+        :type dept_name_path: str
+        :param user_type: 用户类型 - 2：企业成员账户
+        :type user_type: int
+        :param admin_type: 管理员类型 - 0：默认（超级）管理员 - 1：普通管理员 - 2：非管理员（即为普通企业成员，UserType是2时有效）
+        :type admin_type: int
+        :param signature: 签名
+        :type signature: str
+        :param title: 职位
+        :type title: str
+        :param desc: 备注
+        :type desc: str
+        :param corp: 
+        :type corp: :class:`huaweicloudsdkmeeting.v1.CorpBasicInfoDTO`
+        :param function: 
+        :type function: :class:`huaweicloudsdkmeeting.v1.UserFunctionDTO`
+        :param dev_type: 
+        :type dev_type: :class:`huaweicloudsdkmeeting.v1.QueryDeviceInfoResultDTO`
+        :param status: 用户状态 * 0、正常 * 1、停用 
+        :type status: int
+        :param sort_level: 通讯录排序等级，序号越低优先级越高
+        :type sort_level: int
+        :param hide_phone: 是否隐藏手机号码
+        :type hide_phone: bool
+        :param vision_account: 智慧屏唯一账号
+        :type vision_account: str
+        :param third_account: 第三方账号，自动开户的第三方账号、Ideahub账号的sn等
+        :type third_account: str
+        :param license: 许可证 * 0：商用； * 1：免费试用。 
+        :type license: int
+        :param active_time: 激活时间，utc时间戳
+        :type active_time: int
+        """
         
         super(ShowUserDetailResponse, self).__init__()
 
@@ -188,7 +245,7 @@ class ShowUserDetailResponse(SdkResponse):
         用户id
 
         :param id: The id of this ShowUserDetailResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -210,7 +267,7 @@ class ShowUserDetailResponse(SdkResponse):
         账号
 
         :param user_account: The user_account of this ShowUserDetailResponse.
-        :type: str
+        :type user_account: str
         """
         self._user_account = user_account
 
@@ -232,7 +289,7 @@ class ShowUserDetailResponse(SdkResponse):
         姓名
 
         :param name: The name of this ShowUserDetailResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -254,7 +311,7 @@ class ShowUserDetailResponse(SdkResponse):
         英文名称
 
         :param english_name: The english_name of this ShowUserDetailResponse.
-        :type: str
+        :type english_name: str
         """
         self._english_name = english_name
 
@@ -276,7 +333,7 @@ class ShowUserDetailResponse(SdkResponse):
         联系电话
 
         :param phone: The phone of this ShowUserDetailResponse.
-        :type: str
+        :type phone: str
         """
         self._phone = phone
 
@@ -298,7 +355,7 @@ class ShowUserDetailResponse(SdkResponse):
         联系电话所属的国家
 
         :param country: The country of this ShowUserDetailResponse.
-        :type: str
+        :type country: str
         """
         self._country = country
 
@@ -320,7 +377,7 @@ class ShowUserDetailResponse(SdkResponse):
         邮箱
 
         :param email: The email of this ShowUserDetailResponse.
-        :type: str
+        :type email: str
         """
         self._email = email
 
@@ -342,7 +399,7 @@ class ShowUserDetailResponse(SdkResponse):
         SIP号码
 
         :param sip_num: The sip_num of this ShowUserDetailResponse.
-        :type: str
+        :type sip_num: str
         """
         self._sip_num = sip_num
 
@@ -353,7 +410,7 @@ class ShowUserDetailResponse(SdkResponse):
         云会议室列表
 
         :return: The vmr_list of this ShowUserDetailResponse.
-        :rtype: list[UserVmrDTO]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.UserVmrDTO`]
         """
         return self._vmr_list
 
@@ -364,7 +421,7 @@ class ShowUserDetailResponse(SdkResponse):
         云会议室列表
 
         :param vmr_list: The vmr_list of this ShowUserDetailResponse.
-        :type: list[UserVmrDTO]
+        :type vmr_list: list[:class:`huaweicloudsdkmeeting.v1.UserVmrDTO`]
         """
         self._vmr_list = vmr_list
 
@@ -386,7 +443,7 @@ class ShowUserDetailResponse(SdkResponse):
         部门编码
 
         :param dept_code: The dept_code of this ShowUserDetailResponse.
-        :type: str
+        :type dept_code: str
         """
         self._dept_code = dept_code
 
@@ -408,7 +465,7 @@ class ShowUserDetailResponse(SdkResponse):
         部门名称
 
         :param dept_name: The dept_name of this ShowUserDetailResponse.
-        :type: str
+        :type dept_name: str
         """
         self._dept_name = dept_name
 
@@ -430,7 +487,7 @@ class ShowUserDetailResponse(SdkResponse):
         部门完整名称
 
         :param dept_name_path: The dept_name_path of this ShowUserDetailResponse.
-        :type: str
+        :type dept_name_path: str
         """
         self._dept_name_path = dept_name_path
 
@@ -452,7 +509,7 @@ class ShowUserDetailResponse(SdkResponse):
         用户类型 - 2：企业成员账户
 
         :param user_type: The user_type of this ShowUserDetailResponse.
-        :type: int
+        :type user_type: int
         """
         self._user_type = user_type
 
@@ -474,7 +531,7 @@ class ShowUserDetailResponse(SdkResponse):
         管理员类型 - 0：默认（超级）管理员 - 1：普通管理员 - 2：非管理员（即为普通企业成员，UserType是2时有效）
 
         :param admin_type: The admin_type of this ShowUserDetailResponse.
-        :type: int
+        :type admin_type: int
         """
         self._admin_type = admin_type
 
@@ -496,7 +553,7 @@ class ShowUserDetailResponse(SdkResponse):
         签名
 
         :param signature: The signature of this ShowUserDetailResponse.
-        :type: str
+        :type signature: str
         """
         self._signature = signature
 
@@ -518,7 +575,7 @@ class ShowUserDetailResponse(SdkResponse):
         职位
 
         :param title: The title of this ShowUserDetailResponse.
-        :type: str
+        :type title: str
         """
         self._title = title
 
@@ -540,7 +597,7 @@ class ShowUserDetailResponse(SdkResponse):
         备注
 
         :param desc: The desc of this ShowUserDetailResponse.
-        :type: str
+        :type desc: str
         """
         self._desc = desc
 
@@ -550,7 +607,7 @@ class ShowUserDetailResponse(SdkResponse):
 
 
         :return: The corp of this ShowUserDetailResponse.
-        :rtype: CorpBasicInfoDTO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.CorpBasicInfoDTO`
         """
         return self._corp
 
@@ -560,7 +617,7 @@ class ShowUserDetailResponse(SdkResponse):
 
 
         :param corp: The corp of this ShowUserDetailResponse.
-        :type: CorpBasicInfoDTO
+        :type corp: :class:`huaweicloudsdkmeeting.v1.CorpBasicInfoDTO`
         """
         self._corp = corp
 
@@ -570,7 +627,7 @@ class ShowUserDetailResponse(SdkResponse):
 
 
         :return: The function of this ShowUserDetailResponse.
-        :rtype: UserFunctionDTO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.UserFunctionDTO`
         """
         return self._function
 
@@ -580,7 +637,7 @@ class ShowUserDetailResponse(SdkResponse):
 
 
         :param function: The function of this ShowUserDetailResponse.
-        :type: UserFunctionDTO
+        :type function: :class:`huaweicloudsdkmeeting.v1.UserFunctionDTO`
         """
         self._function = function
 
@@ -590,7 +647,7 @@ class ShowUserDetailResponse(SdkResponse):
 
 
         :return: The dev_type of this ShowUserDetailResponse.
-        :rtype: QueryDeviceInfoResultDTO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.QueryDeviceInfoResultDTO`
         """
         return self._dev_type
 
@@ -600,7 +657,7 @@ class ShowUserDetailResponse(SdkResponse):
 
 
         :param dev_type: The dev_type of this ShowUserDetailResponse.
-        :type: QueryDeviceInfoResultDTO
+        :type dev_type: :class:`huaweicloudsdkmeeting.v1.QueryDeviceInfoResultDTO`
         """
         self._dev_type = dev_type
 
@@ -622,7 +679,7 @@ class ShowUserDetailResponse(SdkResponse):
         用户状态 * 0、正常 * 1、停用 
 
         :param status: The status of this ShowUserDetailResponse.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -644,7 +701,7 @@ class ShowUserDetailResponse(SdkResponse):
         通讯录排序等级，序号越低优先级越高
 
         :param sort_level: The sort_level of this ShowUserDetailResponse.
-        :type: int
+        :type sort_level: int
         """
         self._sort_level = sort_level
 
@@ -666,7 +723,7 @@ class ShowUserDetailResponse(SdkResponse):
         是否隐藏手机号码
 
         :param hide_phone: The hide_phone of this ShowUserDetailResponse.
-        :type: bool
+        :type hide_phone: bool
         """
         self._hide_phone = hide_phone
 
@@ -688,7 +745,7 @@ class ShowUserDetailResponse(SdkResponse):
         智慧屏唯一账号
 
         :param vision_account: The vision_account of this ShowUserDetailResponse.
-        :type: str
+        :type vision_account: str
         """
         self._vision_account = vision_account
 
@@ -710,7 +767,7 @@ class ShowUserDetailResponse(SdkResponse):
         第三方账号，自动开户的第三方账号、Ideahub账号的sn等
 
         :param third_account: The third_account of this ShowUserDetailResponse.
-        :type: str
+        :type third_account: str
         """
         self._third_account = third_account
 
@@ -732,7 +789,7 @@ class ShowUserDetailResponse(SdkResponse):
         许可证 * 0：商用； * 1：免费试用。 
 
         :param license: The license of this ShowUserDetailResponse.
-        :type: int
+        :type license: int
         """
         self._license = license
 
@@ -754,7 +811,7 @@ class ShowUserDetailResponse(SdkResponse):
         激活时间，utc时间戳
 
         :param active_time: The active_time of this ShowUserDetailResponse.
-        :type: int
+        :type active_time: int
         """
         self._active_time = active_time
 

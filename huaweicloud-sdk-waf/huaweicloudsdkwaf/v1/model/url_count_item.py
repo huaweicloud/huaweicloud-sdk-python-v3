@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UrlCountItem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UrlCountItem:
     }
 
     def __init__(self, key=None, num=None, host=None):
-        """UrlCountItem - a model defined in huaweicloud sdk"""
+        """UrlCountItem
+
+        The model defined in huaweicloud sdk
+
+        :param key: 攻击类型
+        :type key: str
+        :param num: 数量
+        :type num: int
+        :param host: 域名
+        :type host: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class UrlCountItem:
         攻击类型
 
         :param key: The key of this UrlCountItem.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -90,7 +99,7 @@ class UrlCountItem:
         数量
 
         :param num: The num of this UrlCountItem.
-        :type: int
+        :type num: int
         """
         self._num = num
 
@@ -112,7 +121,7 @@ class UrlCountItem:
         域名
 
         :param host: The host of this UrlCountItem.
-        :type: str
+        :type host: str
         """
         self._host = host
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RoutetableInfoError:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RoutetableInfoError:
     }
 
     def __init__(self, bind_failed=None, unbind_failed=None):
-        """RoutetableInfoError - a model defined in huaweicloud sdk"""
+        """RoutetableInfoError
+
+        The model defined in huaweicloud sdk
+
+        :param bind_failed: 绑定终端节点子网路由表失败信息。
+        :type bind_failed: list[:class:`huaweicloudsdkvpcep.v1.RoutetableInfoErrorDetial`]
+        :param unbind_failed: 解绑终端节点子网路由表失败信息。
+        :type unbind_failed: list[:class:`huaweicloudsdkvpcep.v1.RoutetableInfoErrorDetial`]
+        """
         
         
 
@@ -52,7 +59,7 @@ class RoutetableInfoError:
         绑定终端节点子网路由表失败信息。
 
         :return: The bind_failed of this RoutetableInfoError.
-        :rtype: list[RoutetableInfoErrorDetial]
+        :rtype: list[:class:`huaweicloudsdkvpcep.v1.RoutetableInfoErrorDetial`]
         """
         return self._bind_failed
 
@@ -63,7 +70,7 @@ class RoutetableInfoError:
         绑定终端节点子网路由表失败信息。
 
         :param bind_failed: The bind_failed of this RoutetableInfoError.
-        :type: list[RoutetableInfoErrorDetial]
+        :type bind_failed: list[:class:`huaweicloudsdkvpcep.v1.RoutetableInfoErrorDetial`]
         """
         self._bind_failed = bind_failed
 
@@ -74,7 +81,7 @@ class RoutetableInfoError:
         解绑终端节点子网路由表失败信息。
 
         :return: The unbind_failed of this RoutetableInfoError.
-        :rtype: list[RoutetableInfoErrorDetial]
+        :rtype: list[:class:`huaweicloudsdkvpcep.v1.RoutetableInfoErrorDetial`]
         """
         return self._unbind_failed
 
@@ -85,7 +92,7 @@ class RoutetableInfoError:
         解绑终端节点子网路由表失败信息。
 
         :param unbind_failed: The unbind_failed of this RoutetableInfoError.
-        :type: list[RoutetableInfoErrorDetial]
+        :type unbind_failed: list[:class:`huaweicloudsdkvpcep.v1.RoutetableInfoErrorDetial`]
         """
         self._unbind_failed = unbind_failed
 

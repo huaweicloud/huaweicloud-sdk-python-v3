@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateCertificateAuthorityObsAgencyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateCertificateAuthorityObsAgencyResponse(SdkResponse):
     }
 
     def __init__(self, agency_id=None):
-        """CreateCertificateAuthorityObsAgencyResponse - a model defined in huaweicloud sdk"""
+        """CreateCertificateAuthorityObsAgencyResponse
+
+        The model defined in huaweicloud sdk
+
+        :param agency_id: 创建OBS委托，由IAM返回的授权ID。
+        :type agency_id: str
+        """
         
         super(CreateCertificateAuthorityObsAgencyResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class CreateCertificateAuthorityObsAgencyResponse(SdkResponse):
         创建OBS委托，由IAM返回的授权ID。
 
         :param agency_id: The agency_id of this CreateCertificateAuthorityObsAgencyResponse.
-        :type: str
+        :type agency_id: str
         """
         self._agency_id = agency_id
 

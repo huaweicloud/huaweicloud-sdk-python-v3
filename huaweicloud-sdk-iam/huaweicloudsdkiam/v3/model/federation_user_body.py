@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FederationUserBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class FederationUserBody:
     }
 
     def __init__(self, os_federation=None, domain=None, id=None, name=None):
-        """FederationUserBody - a model defined in huaweicloud sdk"""
+        """FederationUserBody
+
+        The model defined in huaweicloud sdk
+
+        :param os_federation: 
+        :type os_federation: :class:`huaweicloudsdkiam.v3.OsFederationInfo`
+        :param domain: 
+        :type domain: :class:`huaweicloudsdkiam.v3.DomainInfo`
+        :param id: user id。
+        :type id: str
+        :param name: user name。
+        :type name: str
+        """
         
         
 
@@ -59,7 +70,7 @@ class FederationUserBody:
 
 
         :return: The os_federation of this FederationUserBody.
-        :rtype: OsFederationInfo
+        :rtype: :class:`huaweicloudsdkiam.v3.OsFederationInfo`
         """
         return self._os_federation
 
@@ -69,7 +80,7 @@ class FederationUserBody:
 
 
         :param os_federation: The os_federation of this FederationUserBody.
-        :type: OsFederationInfo
+        :type os_federation: :class:`huaweicloudsdkiam.v3.OsFederationInfo`
         """
         self._os_federation = os_federation
 
@@ -79,7 +90,7 @@ class FederationUserBody:
 
 
         :return: The domain of this FederationUserBody.
-        :rtype: DomainInfo
+        :rtype: :class:`huaweicloudsdkiam.v3.DomainInfo`
         """
         return self._domain
 
@@ -89,7 +100,7 @@ class FederationUserBody:
 
 
         :param domain: The domain of this FederationUserBody.
-        :type: DomainInfo
+        :type domain: :class:`huaweicloudsdkiam.v3.DomainInfo`
         """
         self._domain = domain
 
@@ -111,7 +122,7 @@ class FederationUserBody:
         user id。
 
         :param id: The id of this FederationUserBody.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -133,7 +144,7 @@ class FederationUserBody:
         user name。
 
         :param name: The name of this FederationUserBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 

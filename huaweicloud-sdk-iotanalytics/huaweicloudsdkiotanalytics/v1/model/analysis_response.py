@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AnalysisResponse:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class AnalysisResponse:
     }
 
     def __init__(self, analysis_id=None, name=None, display_name=None, type=None, transform=None, aggregate=None, stream=None):
-        """AnalysisResponse - a model defined in huaweicloud sdk"""
+        """AnalysisResponse
+
+        The model defined in huaweicloud sdk
+
+        :param analysis_id: 分析任务ID
+        :type analysis_id: str
+        :param name: 分析任务名称
+        :type name: str
+        :param display_name: 分析任务显示名称
+        :type display_name: str
+        :param type: 分析任务类型，转换计算（transform）、聚合计算（aggregate）、流计算（stream）
+        :type type: str
+        :param transform: 
+        :type transform: :class:`huaweicloudsdkiotanalytics.v1.TransformResponse`
+        :param aggregate: 
+        :type aggregate: :class:`huaweicloudsdkiotanalytics.v1.AggregateResponse`
+        :param stream: 
+        :type stream: :class:`huaweicloudsdkiotanalytics.v1.StreamResponse`
+        """
         
         
 
@@ -88,7 +105,7 @@ class AnalysisResponse:
         分析任务ID
 
         :param analysis_id: The analysis_id of this AnalysisResponse.
-        :type: str
+        :type analysis_id: str
         """
         self._analysis_id = analysis_id
 
@@ -110,7 +127,7 @@ class AnalysisResponse:
         分析任务名称
 
         :param name: The name of this AnalysisResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -132,7 +149,7 @@ class AnalysisResponse:
         分析任务显示名称
 
         :param display_name: The display_name of this AnalysisResponse.
-        :type: str
+        :type display_name: str
         """
         self._display_name = display_name
 
@@ -154,7 +171,7 @@ class AnalysisResponse:
         分析任务类型，转换计算（transform）、聚合计算（aggregate）、流计算（stream）
 
         :param type: The type of this AnalysisResponse.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -164,7 +181,7 @@ class AnalysisResponse:
 
 
         :return: The transform of this AnalysisResponse.
-        :rtype: TransformResponse
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.TransformResponse`
         """
         return self._transform
 
@@ -174,7 +191,7 @@ class AnalysisResponse:
 
 
         :param transform: The transform of this AnalysisResponse.
-        :type: TransformResponse
+        :type transform: :class:`huaweicloudsdkiotanalytics.v1.TransformResponse`
         """
         self._transform = transform
 
@@ -184,7 +201,7 @@ class AnalysisResponse:
 
 
         :return: The aggregate of this AnalysisResponse.
-        :rtype: AggregateResponse
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.AggregateResponse`
         """
         return self._aggregate
 
@@ -194,7 +211,7 @@ class AnalysisResponse:
 
 
         :param aggregate: The aggregate of this AnalysisResponse.
-        :type: AggregateResponse
+        :type aggregate: :class:`huaweicloudsdkiotanalytics.v1.AggregateResponse`
         """
         self._aggregate = aggregate
 
@@ -204,7 +221,7 @@ class AnalysisResponse:
 
 
         :return: The stream of this AnalysisResponse.
-        :rtype: StreamResponse
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.StreamResponse`
         """
         return self._stream
 
@@ -214,7 +231,7 @@ class AnalysisResponse:
 
 
         :param stream: The stream of this AnalysisResponse.
-        :type: StreamResponse
+        :type stream: :class:`huaweicloudsdkiotanalytics.v1.StreamResponse`
         """
         self._stream = stream
 

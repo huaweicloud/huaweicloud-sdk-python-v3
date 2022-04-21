@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListNotificationsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class ListNotificationsRequest:
     }
 
     def __init__(self):
-        """ListNotificationsRequest - a model defined in huaweicloud sdk"""
+        """ListNotificationsRequest
+
+        The model defined in huaweicloud sdk
+
+        """
         
         
         self.discriminator = None

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OAuth:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class OAuth:
     }
 
     def __init__(self, name=None, code=None, state=None):
-        """OAuth - a model defined in huaweicloud sdk"""
+        """OAuth
+
+        The model defined in huaweicloud sdk
+
+        :param name: 授权名称。
+        :type name: str
+        :param code: git仓库授权后，重定向回来的url里面的query参数。
+        :type code: str
+        :param state: git仓库授权后，一次性的认证编码和随机串。
+        :type state: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class OAuth:
         授权名称。
 
         :param name: The name of this OAuth.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -87,7 +96,7 @@ class OAuth:
         git仓库授权后，重定向回来的url里面的query参数。
 
         :param code: The code of this OAuth.
-        :type: str
+        :type code: str
         """
         self._code = code
 
@@ -109,7 +118,7 @@ class OAuth:
         git仓库授权后，一次性的认证编码和随机串。
 
         :param state: The state of this OAuth.
-        :type: str
+        :type state: str
         """
         self._state = state
 

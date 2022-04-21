@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateCertificateRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateCertificateRequestBody:
     }
 
     def __init__(self, name=None):
-        """UpdateCertificateRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateCertificateRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param name: 证书名称，证书名称只能由数字、字母、中划线、下划线和英文句点组成，长度不能超过64位字符
+        :type name: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class UpdateCertificateRequestBody:
         证书名称，证书名称只能由数字、字母、中划线、下划线和英文句点组成，长度不能超过64位字符
 
         :param name: The name of this UpdateCertificateRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 

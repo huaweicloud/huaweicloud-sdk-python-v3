@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CopyImageCrossRegionResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CopyImageCrossRegionResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """CopyImageCrossRegionResponse - a model defined in huaweicloud sdk"""
+        """CopyImageCrossRegionResponse
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 异步任务ID。
+        :type job_id: str
+        """
         
         super(CopyImageCrossRegionResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class CopyImageCrossRegionResponse(SdkResponse):
         异步任务ID。
 
         :param job_id: The job_id of this CopyImageCrossRegionResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 

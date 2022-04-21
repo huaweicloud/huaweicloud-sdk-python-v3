@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ComponentModify:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ComponentModify:
     }
 
     def __init__(self, name=None, description=None, source=None, build=None):
-        """ComponentModify - a model defined in huaweicloud sdk"""
+        """ComponentModify
+
+        The model defined in huaweicloud sdk
+
+        :param name: 应用组件名称。
+        :type name: str
+        :param description: 描述。
+        :type description: str
+        :param source: 
+        :type source: :class:`huaweicloudsdkservicestage.v2.SourceObject`
+        :param build: 
+        :type build: :class:`huaweicloudsdkservicestage.v2.Build`
+        """
         
         
 
@@ -73,7 +84,7 @@ class ComponentModify:
         应用组件名称。
 
         :param name: The name of this ComponentModify.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -95,7 +106,7 @@ class ComponentModify:
         描述。
 
         :param description: The description of this ComponentModify.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -105,7 +116,7 @@ class ComponentModify:
 
 
         :return: The source of this ComponentModify.
-        :rtype: SourceObject
+        :rtype: :class:`huaweicloudsdkservicestage.v2.SourceObject`
         """
         return self._source
 
@@ -115,7 +126,7 @@ class ComponentModify:
 
 
         :param source: The source of this ComponentModify.
-        :type: SourceObject
+        :type source: :class:`huaweicloudsdkservicestage.v2.SourceObject`
         """
         self._source = source
 
@@ -125,7 +136,7 @@ class ComponentModify:
 
 
         :return: The build of this ComponentModify.
-        :rtype: Build
+        :rtype: :class:`huaweicloudsdkservicestage.v2.Build`
         """
         return self._build
 
@@ -135,7 +146,7 @@ class ComponentModify:
 
 
         :param build: The build of this ComponentModify.
-        :type: Build
+        :type build: :class:`huaweicloudsdkservicestage.v2.Build`
         """
         self._build = build
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRuleErrorsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListRuleErrorsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, errors=None):
-        """ListRuleErrorsResponse - a model defined in huaweicloud sdk"""
+        """ListRuleErrorsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 满足条件的错误个数
+        :type count: int
+        :param errors: 错误列表
+        :type errors: list[:class:`huaweicloudsdkief.v1.Error`]
+        """
         
         super(ListRuleErrorsResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListRuleErrorsResponse(SdkResponse):
         满足条件的错误个数
 
         :param count: The count of this ListRuleErrorsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -74,7 +81,7 @@ class ListRuleErrorsResponse(SdkResponse):
         错误列表
 
         :return: The errors of this ListRuleErrorsResponse.
-        :rtype: list[Error]
+        :rtype: list[:class:`huaweicloudsdkief.v1.Error`]
         """
         return self._errors
 
@@ -85,7 +92,7 @@ class ListRuleErrorsResponse(SdkResponse):
         错误列表
 
         :param errors: The errors of this ListRuleErrorsResponse.
-        :type: list[Error]
+        :type errors: list[:class:`huaweicloudsdkief.v1.Error`]
         """
         self._errors = errors
 

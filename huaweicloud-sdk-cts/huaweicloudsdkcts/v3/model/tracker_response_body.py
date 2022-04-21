@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TrackerResponseBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class TrackerResponseBody:
     }
 
     def __init__(self, id=None, create_time=None, kms_id=None, is_support_validate=None, lts=None, tracker_type=None, domain_id=None, project_id=None, tracker_name=None, status=None, detail=None, is_support_trace_files_encryption=None, obs_info=None, data_bucket=None):
-        """TrackerResponseBody - a model defined in huaweicloud sdk"""
+        """TrackerResponseBody
+
+        The model defined in huaweicloud sdk
+
+        :param id: 追踪器唯一标识。
+        :type id: str
+        :param create_time: 追踪器创建时间戳。
+        :type create_time: int
+        :param kms_id: 事件文件转储加密所采用的秘钥id（从KMS获取）。 当\&quot;tracker_type\&quot;参数值为\&quot;system\&quot;和\&quot;is_support_trace_files_encryption\&quot;参数值为“是”时，此参数为必选项。
+        :type kms_id: str
+        :param is_support_validate: 是否打开事件文件校验。当前环境仅\&quot;tracker_type\&quot;参数值为\&quot;system\&quot;时支持该功能。
+        :type is_support_validate: bool
+        :param lts: 
+        :type lts: :class:`huaweicloudsdkcts.v3.Lts`
+        :param tracker_type: 标识追踪器类型。 目前支持系统追踪器类型有管理类追踪器（system）和数据类追踪器（data）。
+        :type tracker_type: str
+        :param domain_id: 账号ID，参见《云审计服务API参考》“获取账号ID和项目ID”章节。
+        :type domain_id: str
+        :param project_id: 项目ID。
+        :type project_id: str
+        :param tracker_name: 标识追踪器名称，当前版本默认为“system”。
+        :type tracker_name: str
+        :param status: 标识追踪器状态，包括正常（enabled），停止（disabled）和异常（error）三种状态，状态为异常时需通过明细（detail）字段说明错误来源。
+        :type status: str
+        :param detail: 该参数仅在追踪器状态异常时返回，用于标识追踪器异常的原因，包括桶策略异常（bucketPolicyError），桶不存在（noBucket）和欠费或冻结（arrears）三种原因。
+        :type detail: str
+        :param is_support_trace_files_encryption: 事件文件转储加密功能开关。 该参数必须与kms_id参数同时使用。 当前环境仅\&quot;tracker_type\&quot;参数值为\&quot;system\&quot;时支持该功能。
+        :type is_support_trace_files_encryption: bool
+        :param obs_info: 
+        :type obs_info: :class:`huaweicloudsdkcts.v3.ObsInfo`
+        :param data_bucket: 
+        :type data_bucket: :class:`huaweicloudsdkcts.v3.DataBucketQuery`
+        """
         
         
 
@@ -123,7 +154,7 @@ class TrackerResponseBody:
         追踪器唯一标识。
 
         :param id: The id of this TrackerResponseBody.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -145,7 +176,7 @@ class TrackerResponseBody:
         追踪器创建时间戳。
 
         :param create_time: The create_time of this TrackerResponseBody.
-        :type: int
+        :type create_time: int
         """
         self._create_time = create_time
 
@@ -167,7 +198,7 @@ class TrackerResponseBody:
         事件文件转储加密所采用的秘钥id（从KMS获取）。 当\"tracker_type\"参数值为\"system\"和\"is_support_trace_files_encryption\"参数值为“是”时，此参数为必选项。
 
         :param kms_id: The kms_id of this TrackerResponseBody.
-        :type: str
+        :type kms_id: str
         """
         self._kms_id = kms_id
 
@@ -189,7 +220,7 @@ class TrackerResponseBody:
         是否打开事件文件校验。当前环境仅\"tracker_type\"参数值为\"system\"时支持该功能。
 
         :param is_support_validate: The is_support_validate of this TrackerResponseBody.
-        :type: bool
+        :type is_support_validate: bool
         """
         self._is_support_validate = is_support_validate
 
@@ -199,7 +230,7 @@ class TrackerResponseBody:
 
 
         :return: The lts of this TrackerResponseBody.
-        :rtype: Lts
+        :rtype: :class:`huaweicloudsdkcts.v3.Lts`
         """
         return self._lts
 
@@ -209,7 +240,7 @@ class TrackerResponseBody:
 
 
         :param lts: The lts of this TrackerResponseBody.
-        :type: Lts
+        :type lts: :class:`huaweicloudsdkcts.v3.Lts`
         """
         self._lts = lts
 
@@ -231,7 +262,7 @@ class TrackerResponseBody:
         标识追踪器类型。 目前支持系统追踪器类型有管理类追踪器（system）和数据类追踪器（data）。
 
         :param tracker_type: The tracker_type of this TrackerResponseBody.
-        :type: str
+        :type tracker_type: str
         """
         self._tracker_type = tracker_type
 
@@ -253,7 +284,7 @@ class TrackerResponseBody:
         账号ID，参见《云审计服务API参考》“获取账号ID和项目ID”章节。
 
         :param domain_id: The domain_id of this TrackerResponseBody.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -275,7 +306,7 @@ class TrackerResponseBody:
         项目ID。
 
         :param project_id: The project_id of this TrackerResponseBody.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -297,7 +328,7 @@ class TrackerResponseBody:
         标识追踪器名称，当前版本默认为“system”。
 
         :param tracker_name: The tracker_name of this TrackerResponseBody.
-        :type: str
+        :type tracker_name: str
         """
         self._tracker_name = tracker_name
 
@@ -319,7 +350,7 @@ class TrackerResponseBody:
         标识追踪器状态，包括正常（enabled），停止（disabled）和异常（error）三种状态，状态为异常时需通过明细（detail）字段说明错误来源。
 
         :param status: The status of this TrackerResponseBody.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -341,7 +372,7 @@ class TrackerResponseBody:
         该参数仅在追踪器状态异常时返回，用于标识追踪器异常的原因，包括桶策略异常（bucketPolicyError），桶不存在（noBucket）和欠费或冻结（arrears）三种原因。
 
         :param detail: The detail of this TrackerResponseBody.
-        :type: str
+        :type detail: str
         """
         self._detail = detail
 
@@ -363,7 +394,7 @@ class TrackerResponseBody:
         事件文件转储加密功能开关。 该参数必须与kms_id参数同时使用。 当前环境仅\"tracker_type\"参数值为\"system\"时支持该功能。
 
         :param is_support_trace_files_encryption: The is_support_trace_files_encryption of this TrackerResponseBody.
-        :type: bool
+        :type is_support_trace_files_encryption: bool
         """
         self._is_support_trace_files_encryption = is_support_trace_files_encryption
 
@@ -373,7 +404,7 @@ class TrackerResponseBody:
 
 
         :return: The obs_info of this TrackerResponseBody.
-        :rtype: ObsInfo
+        :rtype: :class:`huaweicloudsdkcts.v3.ObsInfo`
         """
         return self._obs_info
 
@@ -383,7 +414,7 @@ class TrackerResponseBody:
 
 
         :param obs_info: The obs_info of this TrackerResponseBody.
-        :type: ObsInfo
+        :type obs_info: :class:`huaweicloudsdkcts.v3.ObsInfo`
         """
         self._obs_info = obs_info
 
@@ -393,7 +424,7 @@ class TrackerResponseBody:
 
 
         :return: The data_bucket of this TrackerResponseBody.
-        :rtype: DataBucketQuery
+        :rtype: :class:`huaweicloudsdkcts.v3.DataBucketQuery`
         """
         return self._data_bucket
 
@@ -403,7 +434,7 @@ class TrackerResponseBody:
 
 
         :param data_bucket: The data_bucket of this TrackerResponseBody.
-        :type: DataBucketQuery
+        :type data_bucket: :class:`huaweicloudsdkcts.v3.DataBucketQuery`
         """
         self._data_bucket = data_bucket
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ImportJobRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ImportJobRequest:
     }
 
     def __init__(self, body=None):
-        """ImportJobRequest - a model defined in huaweicloud sdk"""
+        """ImportJobRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the ImportJobRequest
+        :type body: :class:`huaweicloudsdkdgc.v1.ImportFileReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class ImportJobRequest:
 
 
         :return: The body of this ImportJobRequest.
-        :rtype: ImportFileReq
+        :rtype: :class:`huaweicloudsdkdgc.v1.ImportFileReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class ImportJobRequest:
 
 
         :param body: The body of this ImportJobRequest.
-        :type: ImportFileReq
+        :type body: :class:`huaweicloudsdkdgc.v1.ImportFileReq`
         """
         self._body = body
 

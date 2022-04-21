@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PublicIp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -58,7 +57,41 @@ class PublicIp:
     }
 
     def __init__(self, id=None, status=None, port_id=None, public_ip_address=None, private_ip_address=None, create_time=None, bandwidth_id=None, bandwidth_name=None, bandwidth_share_type=None, bandwidth_size=None, ip_version=None, site_id=None, site_info=None, operator=None, type=None):
-        """PublicIp - a model defined in huaweicloud sdk"""
+        """PublicIp
+
+        The model defined in huaweicloud sdk
+
+        :param id: 弹性公网IP唯一标识。
+        :type id: str
+        :param status: 弹性公网IP的状态。
+        :type status: str
+        :param port_id: 端口的ID。
+        :type port_id: str
+        :param public_ip_address: 弹性公网IP的地址。
+        :type public_ip_address: str
+        :param private_ip_address: 绑定弹性公网IP的私有IP地址。
+        :type private_ip_address: str
+        :param create_time: 创建时间。
+        :type create_time: str
+        :param bandwidth_id: 带宽的ID。
+        :type bandwidth_id: str
+        :param bandwidth_name: 带宽的名称。
+        :type bandwidth_name: str
+        :param bandwidth_share_type: 带宽的类型。
+        :type bandwidth_share_type: str
+        :param bandwidth_size: 带宽的大小。
+        :type bandwidth_size: int
+        :param ip_version: IP版本的信息。
+        :type ip_version: int
+        :param site_id: 子网所属的站点ID。
+        :type site_id: str
+        :param site_info: 子网所属的站点信息。
+        :type site_info: str
+        :param operator: 
+        :type operator: :class:`huaweicloudsdkiec.v1.Operator`
+        :param type: 弹性公网IP的类型。
+        :type type: str
+        """
         
         
 
@@ -128,7 +161,7 @@ class PublicIp:
         弹性公网IP唯一标识。
 
         :param id: The id of this PublicIp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -150,7 +183,7 @@ class PublicIp:
         弹性公网IP的状态。
 
         :param status: The status of this PublicIp.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -172,7 +205,7 @@ class PublicIp:
         端口的ID。
 
         :param port_id: The port_id of this PublicIp.
-        :type: str
+        :type port_id: str
         """
         self._port_id = port_id
 
@@ -194,7 +227,7 @@ class PublicIp:
         弹性公网IP的地址。
 
         :param public_ip_address: The public_ip_address of this PublicIp.
-        :type: str
+        :type public_ip_address: str
         """
         self._public_ip_address = public_ip_address
 
@@ -216,7 +249,7 @@ class PublicIp:
         绑定弹性公网IP的私有IP地址。
 
         :param private_ip_address: The private_ip_address of this PublicIp.
-        :type: str
+        :type private_ip_address: str
         """
         self._private_ip_address = private_ip_address
 
@@ -238,7 +271,7 @@ class PublicIp:
         创建时间。
 
         :param create_time: The create_time of this PublicIp.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -260,7 +293,7 @@ class PublicIp:
         带宽的ID。
 
         :param bandwidth_id: The bandwidth_id of this PublicIp.
-        :type: str
+        :type bandwidth_id: str
         """
         self._bandwidth_id = bandwidth_id
 
@@ -282,7 +315,7 @@ class PublicIp:
         带宽的名称。
 
         :param bandwidth_name: The bandwidth_name of this PublicIp.
-        :type: str
+        :type bandwidth_name: str
         """
         self._bandwidth_name = bandwidth_name
 
@@ -304,7 +337,7 @@ class PublicIp:
         带宽的类型。
 
         :param bandwidth_share_type: The bandwidth_share_type of this PublicIp.
-        :type: str
+        :type bandwidth_share_type: str
         """
         self._bandwidth_share_type = bandwidth_share_type
 
@@ -326,7 +359,7 @@ class PublicIp:
         带宽的大小。
 
         :param bandwidth_size: The bandwidth_size of this PublicIp.
-        :type: int
+        :type bandwidth_size: int
         """
         self._bandwidth_size = bandwidth_size
 
@@ -348,7 +381,7 @@ class PublicIp:
         IP版本的信息。
 
         :param ip_version: The ip_version of this PublicIp.
-        :type: int
+        :type ip_version: int
         """
         self._ip_version = ip_version
 
@@ -370,7 +403,7 @@ class PublicIp:
         子网所属的站点ID。
 
         :param site_id: The site_id of this PublicIp.
-        :type: str
+        :type site_id: str
         """
         self._site_id = site_id
 
@@ -392,7 +425,7 @@ class PublicIp:
         子网所属的站点信息。
 
         :param site_info: The site_info of this PublicIp.
-        :type: str
+        :type site_info: str
         """
         self._site_info = site_info
 
@@ -402,7 +435,7 @@ class PublicIp:
 
 
         :return: The operator of this PublicIp.
-        :rtype: Operator
+        :rtype: :class:`huaweicloudsdkiec.v1.Operator`
         """
         return self._operator
 
@@ -412,7 +445,7 @@ class PublicIp:
 
 
         :param operator: The operator of this PublicIp.
-        :type: Operator
+        :type operator: :class:`huaweicloudsdkiec.v1.Operator`
         """
         self._operator = operator
 
@@ -434,7 +467,7 @@ class PublicIp:
         弹性公网IP的类型。
 
         :param type: The type of this PublicIp.
-        :type: str
+        :type type: str
         """
         self._type = type
 

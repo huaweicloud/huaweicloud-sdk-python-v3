@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PublicipResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class PublicipResult:
     }
 
     def __init__(self, eip=None):
-        """PublicipResult - a model defined in huaweicloud sdk"""
+        """PublicipResult
+
+        The model defined in huaweicloud sdk
+
+        :param eip: 
+        :type eip: :class:`huaweicloudsdkas.v1.EipResult`
+        """
         
         
 
@@ -46,7 +51,7 @@ class PublicipResult:
 
 
         :return: The eip of this PublicipResult.
-        :rtype: EipResult
+        :rtype: :class:`huaweicloudsdkas.v1.EipResult`
         """
         return self._eip
 
@@ -56,7 +61,7 @@ class PublicipResult:
 
 
         :param eip: The eip of this PublicipResult.
-        :type: EipResult
+        :type eip: :class:`huaweicloudsdkas.v1.EipResult`
         """
         self._eip = eip
 

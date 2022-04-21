@@ -51,22 +51,19 @@ class VpcepClient(Client):
     def accept_or_reject_endpoint(self, request):
         """接受或拒绝终端节点的连接
 
-        功能介绍 接受或者拒绝终端节点连接到当前的终端节点服务。
+        功能介绍
+        接受或者拒绝终端节点连接到当前的终端节点服务。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param AcceptOrRejectEndpointRequest request
-        :return: AcceptOrRejectEndpointResponse
+        :param request: Request instance for AcceptOrRejectEndpoint
+        :type request: :class:`huaweicloudsdkvpcep.v1.AcceptOrRejectEndpointRequest`
+        :rtype: :class:`huaweicloudsdkvpcep.v1.AcceptOrRejectEndpointResponse`
         """
         return self.accept_or_reject_endpoint_with_http_info(request)
 
     def accept_or_reject_endpoint_with_http_info(self, request):
-        """接受或拒绝终端节点的连接
-
-        功能介绍 接受或者拒绝终端节点连接到当前的终端节点服务。
-
-        :param AcceptOrRejectEndpointRequest request
-        :return: AcceptOrRejectEndpointResponse
-        """
-
         all_params = ['vpc_endpoint_service_id', 'accept_or_reject_endpoint_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -112,26 +109,24 @@ class VpcepClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def add_or_remove_service_permissions(self, request):
         """批量添加或移除终端节点服务的白名单
 
-        功能介绍 批量添加或移除当前用户下终端节点服务的白名单。 说明 本帐号默认在自身用户的终端节点服务的白名单中。
+        功能介绍
+        批量添加或移除当前用户下终端节点服务的白名单。
+        说明
+        本帐号默认在自身用户的终端节点服务的白名单中。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param AddOrRemoveServicePermissionsRequest request
-        :return: AddOrRemoveServicePermissionsResponse
+        :param request: Request instance for AddOrRemoveServicePermissions
+        :type request: :class:`huaweicloudsdkvpcep.v1.AddOrRemoveServicePermissionsRequest`
+        :rtype: :class:`huaweicloudsdkvpcep.v1.AddOrRemoveServicePermissionsResponse`
         """
         return self.add_or_remove_service_permissions_with_http_info(request)
 
     def add_or_remove_service_permissions_with_http_info(self, request):
-        """批量添加或移除终端节点服务的白名单
-
-        功能介绍 批量添加或移除当前用户下终端节点服务的白名单。 说明 本帐号默认在自身用户的终端节点服务的白名单中。
-
-        :param AddOrRemoveServicePermissionsRequest request
-        :return: AddOrRemoveServicePermissionsResponse
-        """
-
         all_params = ['vpc_endpoint_service_id', 'add_or_remove_service_permissions_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -177,26 +172,22 @@ class VpcepClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_endpoint(self, request):
         """创建终端节点
 
-        功能介绍 创建终端节点，以便访问终端节点服务。
+        功能介绍
+        创建终端节点，以便访问终端节点服务。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateEndpointRequest request
-        :return: CreateEndpointResponse
+        :param request: Request instance for CreateEndpoint
+        :type request: :class:`huaweicloudsdkvpcep.v1.CreateEndpointRequest`
+        :rtype: :class:`huaweicloudsdkvpcep.v1.CreateEndpointResponse`
         """
         return self.create_endpoint_with_http_info(request)
 
     def create_endpoint_with_http_info(self, request):
-        """创建终端节点
-
-        功能介绍 创建终端节点，以便访问终端节点服务。
-
-        :param CreateEndpointRequest request
-        :return: CreateEndpointResponse
-        """
-
         all_params = ['create_endpoint_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -240,26 +231,24 @@ class VpcepClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_endpoint_service(self, request):
         """创建终端节点服务
 
-        功能介绍 创建终端节点服务，允许其他用户创建终端节点连接您创建的终端节点服务，使用您所提供的服务。 说明 该接口为异步接口，调用成功会返回200状态码，说明请求已正常下发。通常创建终端节点服务需要1~2分钟，可以通过查询终端节点服务详情查看创建结果。
+        功能介绍
+        创建终端节点服务，允许其他用户创建终端节点连接您创建的终端节点服务，使用您所提供的服务。
+        说明
+        该接口为异步接口，调用成功会返回200状态码，说明请求已正常下发。通常创建终端节点服务需要1~2分钟，可以通过查询终端节点服务详情查看创建结果。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateEndpointServiceRequest request
-        :return: CreateEndpointServiceResponse
+        :param request: Request instance for CreateEndpointService
+        :type request: :class:`huaweicloudsdkvpcep.v1.CreateEndpointServiceRequest`
+        :rtype: :class:`huaweicloudsdkvpcep.v1.CreateEndpointServiceResponse`
         """
         return self.create_endpoint_service_with_http_info(request)
 
     def create_endpoint_service_with_http_info(self, request):
-        """创建终端节点服务
-
-        功能介绍 创建终端节点服务，允许其他用户创建终端节点连接您创建的终端节点服务，使用您所提供的服务。 说明 该接口为异步接口，调用成功会返回200状态码，说明请求已正常下发。通常创建终端节点服务需要1~2分钟，可以通过查询终端节点服务详情查看创建结果。
-
-        :param CreateEndpointServiceRequest request
-        :return: CreateEndpointServiceResponse
-        """
-
         all_params = ['create_endpoint_service_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -303,26 +292,22 @@ class VpcepClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_endpoint(self, request):
         """删除终端节点
 
-        功能介绍 删除终端节点。
+        功能介绍
+        删除终端节点。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteEndpointRequest request
-        :return: DeleteEndpointResponse
+        :param request: Request instance for DeleteEndpoint
+        :type request: :class:`huaweicloudsdkvpcep.v1.DeleteEndpointRequest`
+        :rtype: :class:`huaweicloudsdkvpcep.v1.DeleteEndpointResponse`
         """
         return self.delete_endpoint_with_http_info(request)
 
     def delete_endpoint_with_http_info(self, request):
-        """删除终端节点
-
-        功能介绍 删除终端节点。
-
-        :param DeleteEndpointRequest request
-        :return: DeleteEndpointResponse
-        """
-
         all_params = ['vpc_endpoint_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -366,26 +351,22 @@ class VpcepClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_endpoint_service(self, request):
         """删除终端节点服务
 
-        功能介绍 删除终端节点服务。
+        功能介绍
+        删除终端节点服务。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteEndpointServiceRequest request
-        :return: DeleteEndpointServiceResponse
+        :param request: Request instance for DeleteEndpointService
+        :type request: :class:`huaweicloudsdkvpcep.v1.DeleteEndpointServiceRequest`
+        :rtype: :class:`huaweicloudsdkvpcep.v1.DeleteEndpointServiceResponse`
         """
         return self.delete_endpoint_service_with_http_info(request)
 
     def delete_endpoint_service_with_http_info(self, request):
-        """删除终端节点服务
-
-        功能介绍 删除终端节点服务。
-
-        :param DeleteEndpointServiceRequest request
-        :return: DeleteEndpointServiceResponse
-        """
-
         all_params = ['vpc_endpoint_service_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -429,26 +410,22 @@ class VpcepClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_endpoint_info_details(self, request):
         """查询终端节点详情
 
-        功能介绍 查询终端节点的详细信息。
+        功能介绍
+        查询终端节点的详细信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListEndpointInfoDetailsRequest request
-        :return: ListEndpointInfoDetailsResponse
+        :param request: Request instance for ListEndpointInfoDetails
+        :type request: :class:`huaweicloudsdkvpcep.v1.ListEndpointInfoDetailsRequest`
+        :rtype: :class:`huaweicloudsdkvpcep.v1.ListEndpointInfoDetailsResponse`
         """
         return self.list_endpoint_info_details_with_http_info(request)
 
     def list_endpoint_info_details_with_http_info(self, request):
-        """查询终端节点详情
-
-        功能介绍 查询终端节点的详细信息。
-
-        :param ListEndpointInfoDetailsRequest request
-        :return: ListEndpointInfoDetailsResponse
-        """
-
         all_params = ['vpc_endpoint_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -492,26 +469,22 @@ class VpcepClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_endpoint_service(self, request):
         """查询终端节点服务列表
 
-        功能介绍 查询当前用户下的终端节点服务的列表。
+        功能介绍
+        查询当前用户下的终端节点服务的列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListEndpointServiceRequest request
-        :return: ListEndpointServiceResponse
+        :param request: Request instance for ListEndpointService
+        :type request: :class:`huaweicloudsdkvpcep.v1.ListEndpointServiceRequest`
+        :rtype: :class:`huaweicloudsdkvpcep.v1.ListEndpointServiceResponse`
         """
         return self.list_endpoint_service_with_http_info(request)
 
     def list_endpoint_service_with_http_info(self, request):
-        """查询终端节点服务列表
-
-        功能介绍 查询当前用户下的终端节点服务的列表。
-
-        :param ListEndpointServiceRequest request
-        :return: ListEndpointServiceResponse
-        """
-
         all_params = ['endpoint_service_name', 'id', 'status', 'sort_key', 'sort_dir', 'limit', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -567,26 +540,22 @@ class VpcepClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_endpoints(self, request):
         """查询终端节点列表
 
-        功能介绍 查询当前用户下的终端节点的列表。
+        功能介绍
+        查询当前用户下的终端节点的列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListEndpointsRequest request
-        :return: ListEndpointsResponse
+        :param request: Request instance for ListEndpoints
+        :type request: :class:`huaweicloudsdkvpcep.v1.ListEndpointsRequest`
+        :rtype: :class:`huaweicloudsdkvpcep.v1.ListEndpointsResponse`
         """
         return self.list_endpoints_with_http_info(request)
 
     def list_endpoints_with_http_info(self, request):
-        """查询终端节点列表
-
-        功能介绍 查询当前用户下的终端节点的列表。
-
-        :param ListEndpointsRequest request
-        :return: ListEndpointsResponse
-        """
-
         all_params = ['endpoint_service_name', 'vpc_id', 'id', 'limit', 'offset', 'sort_key', 'sort_dir']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -642,26 +611,22 @@ class VpcepClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_quota_details(self, request):
         """查询配额
 
-        功能介绍 查询用户的资源配额，包括终端节点服务和终端节点。
+        功能介绍
+        查询用户的资源配额，包括终端节点服务和终端节点。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListQuotaDetailsRequest request
-        :return: ListQuotaDetailsResponse
+        :param request: Request instance for ListQuotaDetails
+        :type request: :class:`huaweicloudsdkvpcep.v1.ListQuotaDetailsRequest`
+        :rtype: :class:`huaweicloudsdkvpcep.v1.ListQuotaDetailsResponse`
         """
         return self.list_quota_details_with_http_info(request)
 
     def list_quota_details_with_http_info(self, request):
-        """查询配额
-
-        功能介绍 查询用户的资源配额，包括终端节点服务和终端节点。
-
-        :param ListQuotaDetailsRequest request
-        :return: ListQuotaDetailsResponse
-        """
-
         all_params = ['type']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -705,26 +670,22 @@ class VpcepClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_service_connections(self, request):
         """查询连接终端节点服务的连接列表
 
-        功能介绍 查询连接当前用户下的某一个终端节点服务的连接列表。marker_id是连接的唯一标识。
+        功能介绍
+        查询连接当前用户下的某一个终端节点服务的连接列表。marker_id是连接的唯一标识。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListServiceConnectionsRequest request
-        :return: ListServiceConnectionsResponse
+        :param request: Request instance for ListServiceConnections
+        :type request: :class:`huaweicloudsdkvpcep.v1.ListServiceConnectionsRequest`
+        :rtype: :class:`huaweicloudsdkvpcep.v1.ListServiceConnectionsResponse`
         """
         return self.list_service_connections_with_http_info(request)
 
     def list_service_connections_with_http_info(self, request):
-        """查询连接终端节点服务的连接列表
-
-        功能介绍 查询连接当前用户下的某一个终端节点服务的连接列表。marker_id是连接的唯一标识。
-
-        :param ListServiceConnectionsRequest request
-        :return: ListServiceConnectionsResponse
-        """
-
         all_params = ['vpc_endpoint_service_id', 'id', 'marker_id', 'status', 'sort_key', 'sort_dir', 'limit', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -782,26 +743,22 @@ class VpcepClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_service_describe_details(self, request):
         """查询终端节点服务概要
 
-        功能介绍 查询终端节点服务的概要信息，此接口是供创建终端节点的用户来查询需要连接的终端节点服务信息。此接口既可以方便其他用户查询到您的终端节点服务概要信息又可以避免您的终端节点服务的细节信息暴露给其他用户。
+        功能介绍
+        查询终端节点服务的概要信息，此接口是供创建终端节点的用户来查询需要连接的终端节点服务信息。此接口既可以方便其他用户查询到您的终端节点服务概要信息又可以避免您的终端节点服务的细节信息暴露给其他用户。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListServiceDescribeDetailsRequest request
-        :return: ListServiceDescribeDetailsResponse
+        :param request: Request instance for ListServiceDescribeDetails
+        :type request: :class:`huaweicloudsdkvpcep.v1.ListServiceDescribeDetailsRequest`
+        :rtype: :class:`huaweicloudsdkvpcep.v1.ListServiceDescribeDetailsResponse`
         """
         return self.list_service_describe_details_with_http_info(request)
 
     def list_service_describe_details_with_http_info(self, request):
-        """查询终端节点服务概要
-
-        功能介绍 查询终端节点服务的概要信息，此接口是供创建终端节点的用户来查询需要连接的终端节点服务信息。此接口既可以方便其他用户查询到您的终端节点服务概要信息又可以避免您的终端节点服务的细节信息暴露给其他用户。
-
-        :param ListServiceDescribeDetailsRequest request
-        :return: ListServiceDescribeDetailsResponse
-        """
-
         all_params = ['endpoint_service_name', 'id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -847,26 +804,22 @@ class VpcepClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_service_details(self, request):
         """查询终端节点服务详情
 
-        功能介绍 查询终端节点服务的详细信息。
+        功能介绍
+        查询终端节点服务的详细信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListServiceDetailsRequest request
-        :return: ListServiceDetailsResponse
+        :param request: Request instance for ListServiceDetails
+        :type request: :class:`huaweicloudsdkvpcep.v1.ListServiceDetailsRequest`
+        :rtype: :class:`huaweicloudsdkvpcep.v1.ListServiceDetailsResponse`
         """
         return self.list_service_details_with_http_info(request)
 
     def list_service_details_with_http_info(self, request):
-        """查询终端节点服务详情
-
-        功能介绍 查询终端节点服务的详细信息。
-
-        :param ListServiceDetailsRequest request
-        :return: ListServiceDetailsResponse
-        """
-
         all_params = ['vpc_endpoint_service_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -910,26 +863,24 @@ class VpcepClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_service_permissions_details(self, request):
         """查询终端节点服务的白名单列表
 
-        功能介绍 查询当前用户下终端节点服务的白名单列表。 说明 本帐号默认在当前用户下终端节点服务的白名单中。
+        功能介绍
+        查询当前用户下终端节点服务的白名单列表。
+        说明
+        本帐号默认在当前用户下终端节点服务的白名单中。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListServicePermissionsDetailsRequest request
-        :return: ListServicePermissionsDetailsResponse
+        :param request: Request instance for ListServicePermissionsDetails
+        :type request: :class:`huaweicloudsdkvpcep.v1.ListServicePermissionsDetailsRequest`
+        :rtype: :class:`huaweicloudsdkvpcep.v1.ListServicePermissionsDetailsResponse`
         """
         return self.list_service_permissions_details_with_http_info(request)
 
     def list_service_permissions_details_with_http_info(self, request):
-        """查询终端节点服务的白名单列表
-
-        功能介绍 查询当前用户下终端节点服务的白名单列表。 说明 本帐号默认在当前用户下终端节点服务的白名单中。
-
-        :param ListServicePermissionsDetailsRequest request
-        :return: ListServicePermissionsDetailsResponse
-        """
-
         all_params = ['vpc_endpoint_service_id', 'permission', 'limit', 'offset', 'sort_key', 'sort_dir']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -983,26 +934,22 @@ class VpcepClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_service_public_details(self, request):
         """查询公共终端节点服务列表
 
-        功能介绍 查询公共终端节点服务的列表，公共终端节点服务是所有用户可见且可连接的终端节点服务，由运维人员创建，用户可直接使用，但无权创建。
+        功能介绍
+        查询公共终端节点服务的列表，公共终端节点服务是所有用户可见且可连接的终端节点服务，由运维人员创建，用户可直接使用，但无权创建。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListServicePublicDetailsRequest request
-        :return: ListServicePublicDetailsResponse
+        :param request: Request instance for ListServicePublicDetails
+        :type request: :class:`huaweicloudsdkvpcep.v1.ListServicePublicDetailsRequest`
+        :rtype: :class:`huaweicloudsdkvpcep.v1.ListServicePublicDetailsResponse`
         """
         return self.list_service_public_details_with_http_info(request)
 
     def list_service_public_details_with_http_info(self, request):
-        """查询公共终端节点服务列表
-
-        功能介绍 查询公共终端节点服务的列表，公共终端节点服务是所有用户可见且可连接的终端节点服务，由运维人员创建，用户可直接使用，但无权创建。
-
-        :param ListServicePublicDetailsRequest request
-        :return: ListServicePublicDetailsResponse
-        """
-
         all_params = ['limit', 'offset', 'endpoint_service_name', 'id', 'sort_key', 'sort_dir']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1056,26 +1003,22 @@ class VpcepClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_specified_version_details(self, request):
         """查询指定VPC终端节点接口版本信息
 
-        功能介绍 查询指定VPC终端节点接口版本信息。
+        功能介绍
+        查询指定VPC终端节点接口版本信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListSpecifiedVersionDetailsRequest request
-        :return: ListSpecifiedVersionDetailsResponse
+        :param request: Request instance for ListSpecifiedVersionDetails
+        :type request: :class:`huaweicloudsdkvpcep.v1.ListSpecifiedVersionDetailsRequest`
+        :rtype: :class:`huaweicloudsdkvpcep.v1.ListSpecifiedVersionDetailsResponse`
         """
         return self.list_specified_version_details_with_http_info(request)
 
     def list_specified_version_details_with_http_info(self, request):
-        """查询指定VPC终端节点接口版本信息
-
-        功能介绍 查询指定VPC终端节点接口版本信息。
-
-        :param ListSpecifiedVersionDetailsRequest request
-        :return: ListSpecifiedVersionDetailsResponse
-        """
-
         all_params = ['version']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1119,26 +1062,22 @@ class VpcepClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_version_details(self, request):
         """查询VPC终端节点接口版本列表
 
-        功能介绍 查询VPC终端节点接口版本列表。
+        功能介绍
+        查询VPC终端节点接口版本列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListVersionDetailsRequest request
-        :return: ListVersionDetailsResponse
+        :param request: Request instance for ListVersionDetails
+        :type request: :class:`huaweicloudsdkvpcep.v1.ListVersionDetailsRequest`
+        :rtype: :class:`huaweicloudsdkvpcep.v1.ListVersionDetailsResponse`
         """
         return self.list_version_details_with_http_info(request)
 
     def list_version_details_with_http_info(self, request):
-        """查询VPC终端节点接口版本列表
-
-        功能介绍 查询VPC终端节点接口版本列表。
-
-        :param ListVersionDetailsRequest request
-        :return: ListVersionDetailsResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1180,26 +1119,22 @@ class VpcepClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_endpoint_routetable(self, request):
         """修改终端节点路由表
 
-        功能介绍 修改终端节点路由表。
+        功能介绍
+        修改终端节点路由表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateEndpointRoutetableRequest request
-        :return: UpdateEndpointRoutetableResponse
+        :param request: Request instance for UpdateEndpointRoutetable
+        :type request: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointRoutetableRequest`
+        :rtype: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointRoutetableResponse`
         """
         return self.update_endpoint_routetable_with_http_info(request)
 
     def update_endpoint_routetable_with_http_info(self, request):
-        """修改终端节点路由表
-
-        功能介绍 修改终端节点路由表。
-
-        :param UpdateEndpointRoutetableRequest request
-        :return: UpdateEndpointRoutetableResponse
-        """
-
         all_params = ['vpc_endpoint_id', 'update_endpoint_routetable_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1245,26 +1180,22 @@ class VpcepClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_endpoint_service(self, request):
         """修改终端节点服务
 
-        功能介绍 修改终端节点服务。
+        功能介绍
+        修改终端节点服务。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateEndpointServiceRequest request
-        :return: UpdateEndpointServiceResponse
+        :param request: Request instance for UpdateEndpointService
+        :type request: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointServiceRequest`
+        :rtype: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointServiceResponse`
         """
         return self.update_endpoint_service_with_http_info(request)
 
     def update_endpoint_service_with_http_info(self, request):
-        """修改终端节点服务
-
-        功能介绍 修改终端节点服务。
-
-        :param UpdateEndpointServiceRequest request
-        :return: UpdateEndpointServiceResponse
-        """
-
         all_params = ['vpc_endpoint_service_id', 'update_endpoint_service_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1310,26 +1241,22 @@ class VpcepClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_endpoint_white(self, request):
         """更新终端节点的白名单
 
-        功能介绍 更新或删除允许访问终端节点的白名单。
+        功能介绍
+        更新或删除允许访问终端节点的白名单。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateEndpointWhiteRequest request
-        :return: UpdateEndpointWhiteResponse
+        :param request: Request instance for UpdateEndpointWhite
+        :type request: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointWhiteRequest`
+        :rtype: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointWhiteResponse`
         """
         return self.update_endpoint_white_with_http_info(request)
 
     def update_endpoint_white_with_http_info(self, request):
-        """更新终端节点的白名单
-
-        功能介绍 更新或删除允许访问终端节点的白名单。
-
-        :param UpdateEndpointWhiteRequest request
-        :return: UpdateEndpointWhiteResponse
-        """
-
         all_params = ['vpc_endpoint_id', 'update_endpoint_white_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1375,26 +1302,23 @@ class VpcepClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_add_or_remove_resource_instance(self, request):
         """批量添加或删除资源标签接口
 
-        功能介绍 为指定Endpoint Service或Endpoint批量添加或删除标签。 ● 一个资源上最多有10个标签。
+        功能介绍
+        为指定Endpoint Service或Endpoint批量添加或删除标签。
+        ● 一个资源上最多有10个标签。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchAddOrRemoveResourceInstanceRequest request
-        :return: BatchAddOrRemoveResourceInstanceResponse
+        :param request: Request instance for BatchAddOrRemoveResourceInstance
+        :type request: :class:`huaweicloudsdkvpcep.v1.BatchAddOrRemoveResourceInstanceRequest`
+        :rtype: :class:`huaweicloudsdkvpcep.v1.BatchAddOrRemoveResourceInstanceResponse`
         """
         return self.batch_add_or_remove_resource_instance_with_http_info(request)
 
     def batch_add_or_remove_resource_instance_with_http_info(self, request):
-        """批量添加或删除资源标签接口
-
-        功能介绍 为指定Endpoint Service或Endpoint批量添加或删除标签。 ● 一个资源上最多有10个标签。
-
-        :param BatchAddOrRemoveResourceInstanceRequest request
-        :return: BatchAddOrRemoveResourceInstanceResponse
-        """
-
         all_params = ['resource_type', 'resource_id', 'batch_add_or_remove_resource_instance_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1442,26 +1366,22 @@ class VpcepClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_query_project_resource_tags(self, request):
         """查询租户资源标签接口
 
-        功能介绍 根据租户ID和资源类型，获取租户下资源的标签。
+        功能介绍
+        根据租户ID和资源类型，获取租户下资源的标签。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListQueryProjectResourceTagsRequest request
-        :return: ListQueryProjectResourceTagsResponse
+        :param request: Request instance for ListQueryProjectResourceTags
+        :type request: :class:`huaweicloudsdkvpcep.v1.ListQueryProjectResourceTagsRequest`
+        :rtype: :class:`huaweicloudsdkvpcep.v1.ListQueryProjectResourceTagsResponse`
         """
         return self.list_query_project_resource_tags_with_http_info(request)
 
     def list_query_project_resource_tags_with_http_info(self, request):
-        """查询租户资源标签接口
-
-        功能介绍 根据租户ID和资源类型，获取租户下资源的标签。
-
-        :param ListQueryProjectResourceTagsRequest request
-        :return: ListQueryProjectResourceTagsResponse
-        """
-
         all_params = ['resource_type']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1505,26 +1425,22 @@ class VpcepClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_resource_instances(self, request):
         """查询资源实例接口
 
-        功能介绍 使用标签过滤查询租户下资源的实例。
+        功能介绍
+        使用标签过滤查询租户下资源的实例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListResourceInstancesRequest request
-        :return: ListResourceInstancesResponse
+        :param request: Request instance for ListResourceInstances
+        :type request: :class:`huaweicloudsdkvpcep.v1.ListResourceInstancesRequest`
+        :rtype: :class:`huaweicloudsdkvpcep.v1.ListResourceInstancesResponse`
         """
         return self.list_resource_instances_with_http_info(request)
 
     def list_resource_instances_with_http_info(self, request):
-        """查询资源实例接口
-
-        功能介绍 使用标签过滤查询租户下资源的实例。
-
-        :param ListResourceInstancesRequest request
-        :return: ListResourceInstancesResponse
-        """
-
         all_params = ['resource_type', 'query_resource_instance_tags_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1569,7 +1485,6 @@ class VpcepClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

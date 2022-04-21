@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateInstancePortResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateInstancePortResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, port=None):
-        """UpdateInstancePortResponse - a model defined in huaweicloud sdk"""
+        """UpdateInstancePortResponse
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 任务ID。
+        :type job_id: str
+        :param port: 实例当前端口号。
+        :type port: int
+        """
         
         super(UpdateInstancePortResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class UpdateInstancePortResponse(SdkResponse):
         任务ID。
 
         :param job_id: The job_id of this UpdateInstancePortResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -85,7 +92,7 @@ class UpdateInstancePortResponse(SdkResponse):
         实例当前端口号。
 
         :param port: The port of this UpdateInstancePortResponse.
-        :type: int
+        :type port: int
         """
         self._port = port
 

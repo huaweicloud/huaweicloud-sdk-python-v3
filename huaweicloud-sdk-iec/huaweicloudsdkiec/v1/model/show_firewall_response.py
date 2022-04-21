@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowFirewallResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowFirewallResponse(SdkResponse):
     }
 
     def __init__(self, firewall=None):
-        """ShowFirewallResponse - a model defined in huaweicloud sdk"""
+        """ShowFirewallResponse
+
+        The model defined in huaweicloud sdk
+
+        :param firewall: 
+        :type firewall: :class:`huaweicloudsdkiec.v1.Firewall`
+        """
         
         super(ShowFirewallResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class ShowFirewallResponse(SdkResponse):
 
 
         :return: The firewall of this ShowFirewallResponse.
-        :rtype: Firewall
+        :rtype: :class:`huaweicloudsdkiec.v1.Firewall`
         """
         return self._firewall
 
@@ -56,7 +61,7 @@ class ShowFirewallResponse(SdkResponse):
 
 
         :param firewall: The firewall of this ShowFirewallResponse.
-        :type: Firewall
+        :type firewall: :class:`huaweicloudsdkiec.v1.Firewall`
         """
         self._firewall = firewall
 

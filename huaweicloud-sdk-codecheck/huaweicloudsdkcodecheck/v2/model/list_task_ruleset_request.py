@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTaskRulesetRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListTaskRulesetRequest:
     }
 
     def __init__(self, project_id=None, task_id=None):
-        """ListTaskRulesetRequest - a model defined in huaweicloud sdk"""
+        """ListTaskRulesetRequest
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: 项目ID
+        :type project_id: str
+        :param task_id: 任务ID
+        :type task_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ListTaskRulesetRequest:
         项目ID
 
         :param project_id: The project_id of this ListTaskRulesetRequest.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -83,7 +90,7 @@ class ListTaskRulesetRequest:
         任务ID
 
         :param task_id: The task_id of this ListTaskRulesetRequest.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 

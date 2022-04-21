@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowConfOrgResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowConfOrgResponse(SdkResponse):
     }
 
     def __init__(self, org_id=None):
-        """ShowConfOrgResponse - a model defined in huaweicloud sdk"""
+        """ShowConfOrgResponse
+
+        The model defined in huaweicloud sdk
+
+        :param org_id: 企业ID
+        :type org_id: str
+        """
         
         super(ShowConfOrgResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class ShowConfOrgResponse(SdkResponse):
         企业ID
 
         :param org_id: The org_id of this ShowConfOrgResponse.
-        :type: str
+        :type org_id: str
         """
         self._org_id = org_id
 

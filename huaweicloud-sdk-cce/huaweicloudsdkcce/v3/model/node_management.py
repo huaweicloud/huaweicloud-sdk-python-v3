@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NodeManagement:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class NodeManagement:
     }
 
     def __init__(self, server_group_reference=None):
-        """NodeManagement - a model defined in huaweicloud sdk"""
+        """NodeManagement
+
+        The model defined in huaweicloud sdk
+
+        :param server_group_reference: 云服务器组ID，若指定，节点池中所有节点将创建在该云服务器组下，节点池的云服务器组只能在创建时指定，无法修改。指定云服务器组时节点池中的节点数量不允许超出云服务器组的配额限制。 
+        :type server_group_reference: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class NodeManagement:
         云服务器组ID，若指定，节点池中所有节点将创建在该云服务器组下，节点池的云服务器组只能在创建时指定，无法修改。指定云服务器组时节点池中的节点数量不允许超出云服务器组的配额限制。 
 
         :param server_group_reference: The server_group_reference of this NodeManagement.
-        :type: str
+        :type server_group_reference: str
         """
         self._server_group_reference = server_group_reference
 

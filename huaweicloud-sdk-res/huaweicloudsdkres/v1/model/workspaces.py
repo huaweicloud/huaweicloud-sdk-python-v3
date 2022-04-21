@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Workspaces:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class Workspaces:
     }
 
     def __init__(self, created_at=None, description=None, enterprise_project_id=None, enterprise_project_name=None, id=None, name=None, owner=None, status=None, update_at=None, user_id=None, project_id=None):
-        """Workspaces - a model defined in huaweicloud sdk"""
+        """Workspaces
+
+        The model defined in huaweicloud sdk
+
+        :param created_at: 创建时间。
+        :type created_at: int
+        :param description: 描述。
+        :type description: str
+        :param enterprise_project_id: 企业项目id。
+        :type enterprise_project_id: str
+        :param enterprise_project_name: 企业项目名称。
+        :type enterprise_project_name: str
+        :param id: 工作空间id。
+        :type id: str
+        :param name: 工作空间名称。
+        :type name: str
+        :param owner: 创建者。
+        :type owner: str
+        :param status: 状态。
+        :type status: str
+        :param update_at: 更新时间。
+        :type update_at: int
+        :param user_id: 用户id。
+        :type user_id: str
+        :param project_id: 调用账户的项目Id
+        :type project_id: str
+        """
         
         
 
@@ -98,7 +123,7 @@ class Workspaces:
         创建时间。
 
         :param created_at: The created_at of this Workspaces.
-        :type: int
+        :type created_at: int
         """
         self._created_at = created_at
 
@@ -120,7 +145,7 @@ class Workspaces:
         描述。
 
         :param description: The description of this Workspaces.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -142,7 +167,7 @@ class Workspaces:
         企业项目id。
 
         :param enterprise_project_id: The enterprise_project_id of this Workspaces.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -164,7 +189,7 @@ class Workspaces:
         企业项目名称。
 
         :param enterprise_project_name: The enterprise_project_name of this Workspaces.
-        :type: str
+        :type enterprise_project_name: str
         """
         self._enterprise_project_name = enterprise_project_name
 
@@ -186,7 +211,7 @@ class Workspaces:
         工作空间id。
 
         :param id: The id of this Workspaces.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -208,7 +233,7 @@ class Workspaces:
         工作空间名称。
 
         :param name: The name of this Workspaces.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -230,7 +255,7 @@ class Workspaces:
         创建者。
 
         :param owner: The owner of this Workspaces.
-        :type: str
+        :type owner: str
         """
         self._owner = owner
 
@@ -252,7 +277,7 @@ class Workspaces:
         状态。
 
         :param status: The status of this Workspaces.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -274,7 +299,7 @@ class Workspaces:
         更新时间。
 
         :param update_at: The update_at of this Workspaces.
-        :type: int
+        :type update_at: int
         """
         self._update_at = update_at
 
@@ -296,7 +321,7 @@ class Workspaces:
         用户id。
 
         :param user_id: The user_id of this Workspaces.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -318,7 +343,7 @@ class Workspaces:
         调用账户的项目Id
 
         :param project_id: The project_id of this Workspaces.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 

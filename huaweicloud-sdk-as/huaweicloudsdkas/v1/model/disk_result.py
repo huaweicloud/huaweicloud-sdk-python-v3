@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DiskResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class DiskResult:
     }
 
     def __init__(self, size=None, volume_type=None, disk_type=None, dedicated_storage_id=None, data_disk_image_id=None, snapshot_id=None, metadata=None):
-        """DiskResult - a model defined in huaweicloud sdk"""
+        """DiskResult
+
+        The model defined in huaweicloud sdk
+
+        :param size: 磁盘大小，容量单位为GB。
+        :type size: int
+        :param volume_type: 磁盘类型。
+        :type volume_type: str
+        :param disk_type: 系统盘还是数据盘，DATA表示为数据盘，SYS表示为系统盘。
+        :type disk_type: str
+        :param dedicated_storage_id: 磁盘所属的专属存储ID。
+        :type dedicated_storage_id: str
+        :param data_disk_image_id: 导入数据盘的数据盘镜像ID。
+        :type data_disk_image_id: str
+        :param snapshot_id: 磁盘备份的快照ID。
+        :type snapshot_id: str
+        :param metadata: 
+        :type metadata: :class:`huaweicloudsdkas.v1.MetaData`
+        """
         
         
 
@@ -88,7 +105,7 @@ class DiskResult:
         磁盘大小，容量单位为GB。
 
         :param size: The size of this DiskResult.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -110,7 +127,7 @@ class DiskResult:
         磁盘类型。
 
         :param volume_type: The volume_type of this DiskResult.
-        :type: str
+        :type volume_type: str
         """
         self._volume_type = volume_type
 
@@ -132,7 +149,7 @@ class DiskResult:
         系统盘还是数据盘，DATA表示为数据盘，SYS表示为系统盘。
 
         :param disk_type: The disk_type of this DiskResult.
-        :type: str
+        :type disk_type: str
         """
         self._disk_type = disk_type
 
@@ -154,7 +171,7 @@ class DiskResult:
         磁盘所属的专属存储ID。
 
         :param dedicated_storage_id: The dedicated_storage_id of this DiskResult.
-        :type: str
+        :type dedicated_storage_id: str
         """
         self._dedicated_storage_id = dedicated_storage_id
 
@@ -176,7 +193,7 @@ class DiskResult:
         导入数据盘的数据盘镜像ID。
 
         :param data_disk_image_id: The data_disk_image_id of this DiskResult.
-        :type: str
+        :type data_disk_image_id: str
         """
         self._data_disk_image_id = data_disk_image_id
 
@@ -198,7 +215,7 @@ class DiskResult:
         磁盘备份的快照ID。
 
         :param snapshot_id: The snapshot_id of this DiskResult.
-        :type: str
+        :type snapshot_id: str
         """
         self._snapshot_id = snapshot_id
 
@@ -208,7 +225,7 @@ class DiskResult:
 
 
         :return: The metadata of this DiskResult.
-        :rtype: MetaData
+        :rtype: :class:`huaweicloudsdkas.v1.MetaData`
         """
         return self._metadata
 
@@ -218,7 +235,7 @@ class DiskResult:
 
 
         :param metadata: The metadata of this DiskResult.
-        :type: MetaData
+        :type metadata: :class:`huaweicloudsdkas.v1.MetaData`
         """
         self._metadata = metadata
 

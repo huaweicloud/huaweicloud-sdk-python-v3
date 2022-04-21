@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class L7rulesInStatusResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class L7rulesInStatusResp:
     }
 
     def __init__(self, type=None, id=None, provisioning_status=None):
-        """L7rulesInStatusResp - a model defined in huaweicloud sdk"""
+        """L7rulesInStatusResp
+
+        The model defined in huaweicloud sdk
+
+        :param type: 转发规则的匹配内容。PATH：匹配请求中的路径；HOST_NAME：匹配请求中的域名
+        :type type: str
+        :param id: 转发规则ID
+        :type id: str
+        :param provisioning_status: 转发规则的配置状态；该字段为预留字段，暂未启用。默认为ACTIVE。
+        :type provisioning_status: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class L7rulesInStatusResp:
         转发规则的匹配内容。PATH：匹配请求中的路径；HOST_NAME：匹配请求中的域名
 
         :param type: The type of this L7rulesInStatusResp.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -87,7 +96,7 @@ class L7rulesInStatusResp:
         转发规则ID
 
         :param id: The id of this L7rulesInStatusResp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -109,7 +118,7 @@ class L7rulesInStatusResp:
         转发规则的配置状态；该字段为预留字段，暂未启用。默认为ACTIVE。
 
         :param provisioning_status: The provisioning_status of this L7rulesInStatusResp.
-        :type: str
+        :type provisioning_status: str
         """
         self._provisioning_status = provisioning_status
 

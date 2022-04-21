@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NotificationSaveRule:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class NotificationSaveRule:
     }
 
     def __init__(self, language=None, timezone=None, user_name=None, topics=None):
-        """NotificationSaveRule - a model defined in huaweicloud sdk"""
+        """NotificationSaveRule
+
+        The model defined in huaweicloud sdk
+
+        :param language: 首选项对应的语言
+        :type language: str
+        :param timezone: 首选项对应的时区信息
+        :type timezone: str
+        :param user_name: 用户名
+        :type user_name: str
+        :param topics: 主题信息
+        :type topics: list[:class:`huaweicloudsdklts.v2.Topics`]
+        """
         
         
 
@@ -70,7 +81,7 @@ class NotificationSaveRule:
         首选项对应的语言
 
         :param language: The language of this NotificationSaveRule.
-        :type: str
+        :type language: str
         """
         self._language = language
 
@@ -92,7 +103,7 @@ class NotificationSaveRule:
         首选项对应的时区信息
 
         :param timezone: The timezone of this NotificationSaveRule.
-        :type: str
+        :type timezone: str
         """
         self._timezone = timezone
 
@@ -114,7 +125,7 @@ class NotificationSaveRule:
         用户名
 
         :param user_name: The user_name of this NotificationSaveRule.
-        :type: str
+        :type user_name: str
         """
         self._user_name = user_name
 
@@ -125,7 +136,7 @@ class NotificationSaveRule:
         主题信息
 
         :return: The topics of this NotificationSaveRule.
-        :rtype: list[Topics]
+        :rtype: list[:class:`huaweicloudsdklts.v2.Topics`]
         """
         return self._topics
 
@@ -136,7 +147,7 @@ class NotificationSaveRule:
         主题信息
 
         :param topics: The topics of this NotificationSaveRule.
-        :type: list[Topics]
+        :type topics: list[:class:`huaweicloudsdklts.v2.Topics`]
         """
         self._topics = topics
 

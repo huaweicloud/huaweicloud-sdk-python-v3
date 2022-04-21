@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResizeInstanceOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ResizeInstanceOption:
     }
 
     def __init__(self, target_spec_code=None):
-        """ResizeInstanceOption - a model defined in huaweicloud sdk"""
+        """ResizeInstanceOption
+
+        The model defined in huaweicloud sdk
+
+        :param target_spec_code: 变更至新规格的资源规格编码。获取方法请参见查询所有实例规格信息中响应参数“flavors.spec_code”的值。
+        :type target_spec_code: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ResizeInstanceOption:
         变更至新规格的资源规格编码。获取方法请参见查询所有实例规格信息中响应参数“flavors.spec_code”的值。
 
         :param target_spec_code: The target_spec_code of this ResizeInstanceOption.
-        :type: str
+        :type target_spec_code: str
         """
         self._target_spec_code = target_spec_code
 

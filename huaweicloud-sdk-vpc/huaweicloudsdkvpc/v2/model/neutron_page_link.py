@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NeutronPageLink:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class NeutronPageLink:
     }
 
     def __init__(self, href=None, rel=None):
-        """NeutronPageLink - a model defined in huaweicloud sdk"""
+        """NeutronPageLink
+
+        The model defined in huaweicloud sdk
+
+        :param href: API链接
+        :type href: str
+        :param rel: API链接与该API版本的关系
+        :type rel: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class NeutronPageLink:
         API链接
 
         :param href: The href of this NeutronPageLink.
-        :type: str
+        :type href: str
         """
         self._href = href
 
@@ -83,7 +90,7 @@ class NeutronPageLink:
         API链接与该API版本的关系
 
         :param rel: The rel of this NeutronPageLink.
-        :type: str
+        :type rel: str
         """
         self._rel = rel
 

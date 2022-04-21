@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateCustomsLineReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateCustomsLineReq:
     }
 
     def __init__(self, name=None, ip_segments=None, description=None):
-        """UpdateCustomsLineReq - a model defined in huaweicloud sdk"""
+        """UpdateCustomsLineReq
+
+        The model defined in huaweicloud sdk
+
+        :param name: 解析线路名称。
+        :type name: str
+        :param ip_segments: P地址段。  以“-”分隔，小IP地址在前，大IP地址在后。IP段之间不能有交叉。当只有一个IP时，填写IP1-IP1。 目前只支持IPV4。
+        :type ip_segments: list[str]
+        :param description: 自定义线路的描述信息。长度不超过255个字符。
+        :type description: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class UpdateCustomsLineReq:
         解析线路名称。
 
         :param name: The name of this UpdateCustomsLineReq.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -90,7 +99,7 @@ class UpdateCustomsLineReq:
         P地址段。  以“-”分隔，小IP地址在前，大IP地址在后。IP段之间不能有交叉。当只有一个IP时，填写IP1-IP1。 目前只支持IPV4。
 
         :param ip_segments: The ip_segments of this UpdateCustomsLineReq.
-        :type: list[str]
+        :type ip_segments: list[str]
         """
         self._ip_segments = ip_segments
 
@@ -112,7 +121,7 @@ class UpdateCustomsLineReq:
         自定义线路的描述信息。长度不超过255个字符。
 
         :param description: The description of this UpdateCustomsLineReq.
-        :type: str
+        :type description: str
         """
         self._description = description
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DomainOriginHost:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class DomainOriginHost:
     }
 
     def __init__(self, domain_id=None, origin_host_type=None, customize_domain=None):
-        """DomainOriginHost - a model defined in huaweicloud sdk"""
+        """DomainOriginHost
+
+        The model defined in huaweicloud sdk
+
+        :param domain_id: 域名ID。获取方法请参见查询加速域名。
+        :type domain_id: str
+        :param origin_host_type: 回源host的类型。
+        :type origin_host_type: str
+        :param customize_domain: 自定义回源host域名。
+        :type customize_domain: str
+        """
         
         
 
@@ -67,7 +76,7 @@ class DomainOriginHost:
         域名ID。获取方法请参见查询加速域名。
 
         :param domain_id: The domain_id of this DomainOriginHost.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -89,7 +98,7 @@ class DomainOriginHost:
         回源host的类型。
 
         :param origin_host_type: The origin_host_type of this DomainOriginHost.
-        :type: str
+        :type origin_host_type: str
         """
         self._origin_host_type = origin_host_type
 
@@ -111,7 +120,7 @@ class DomainOriginHost:
         自定义回源host域名。
 
         :param customize_domain: The customize_domain of this DomainOriginHost.
-        :type: str
+        :type customize_domain: str
         """
         self._customize_domain = customize_domain
 

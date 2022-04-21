@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PutCopyStateReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class PutCopyStateReq:
     }
 
     def __init__(self, copystate=None, migrationcycle=None):
-        """PutCopyStateReq - a model defined in huaweicloud sdk"""
+        """PutCopyStateReq
+
+        The model defined in huaweicloud sdk
+
+        :param copystate: 源端服务器状
+        :type copystate: str
+        :param migrationcycle: 迁移周期
+        :type migrationcycle: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class PutCopyStateReq:
         源端服务器状
 
         :param copystate: The copystate of this PutCopyStateReq.
-        :type: str
+        :type copystate: str
         """
         self._copystate = copystate
 
@@ -85,7 +92,7 @@ class PutCopyStateReq:
         迁移周期
 
         :param migrationcycle: The migrationcycle of this PutCopyStateReq.
-        :type: str
+        :type migrationcycle: str
         """
         self._migrationcycle = migrationcycle
 

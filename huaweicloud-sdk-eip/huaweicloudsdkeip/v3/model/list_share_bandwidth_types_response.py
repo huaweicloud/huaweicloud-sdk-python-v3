@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListShareBandwidthTypesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListShareBandwidthTypesResponse(SdkResponse):
     }
 
     def __init__(self, share_bandwidth_types=None, request_id=None, page_info=None):
-        """ListShareBandwidthTypesResponse - a model defined in huaweicloud sdk"""
+        """ListShareBandwidthTypesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param share_bandwidth_types: 功能说明：共享带宽类型对象
+        :type share_bandwidth_types: list[:class:`huaweicloudsdkeip.v3.ShareBandwidthTypeShowResp`]
+        :param request_id: 本次请求的编号
+        :type request_id: str
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkeip.v3.PageInfoOption`
+        """
         
         super(ListShareBandwidthTypesResponse, self).__init__()
 
@@ -57,7 +66,7 @@ class ListShareBandwidthTypesResponse(SdkResponse):
         功能说明：共享带宽类型对象
 
         :return: The share_bandwidth_types of this ListShareBandwidthTypesResponse.
-        :rtype: list[ShareBandwidthTypeShowResp]
+        :rtype: list[:class:`huaweicloudsdkeip.v3.ShareBandwidthTypeShowResp`]
         """
         return self._share_bandwidth_types
 
@@ -68,7 +77,7 @@ class ListShareBandwidthTypesResponse(SdkResponse):
         功能说明：共享带宽类型对象
 
         :param share_bandwidth_types: The share_bandwidth_types of this ListShareBandwidthTypesResponse.
-        :type: list[ShareBandwidthTypeShowResp]
+        :type share_bandwidth_types: list[:class:`huaweicloudsdkeip.v3.ShareBandwidthTypeShowResp`]
         """
         self._share_bandwidth_types = share_bandwidth_types
 
@@ -90,7 +99,7 @@ class ListShareBandwidthTypesResponse(SdkResponse):
         本次请求的编号
 
         :param request_id: The request_id of this ListShareBandwidthTypesResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 
@@ -100,7 +109,7 @@ class ListShareBandwidthTypesResponse(SdkResponse):
 
 
         :return: The page_info of this ListShareBandwidthTypesResponse.
-        :rtype: PageInfoOption
+        :rtype: :class:`huaweicloudsdkeip.v3.PageInfoOption`
         """
         return self._page_info
 
@@ -110,7 +119,7 @@ class ListShareBandwidthTypesResponse(SdkResponse):
 
 
         :param page_info: The page_info of this ListShareBandwidthTypesResponse.
-        :type: PageInfoOption
+        :type page_info: :class:`huaweicloudsdkeip.v3.PageInfoOption`
         """
         self._page_info = page_info
 

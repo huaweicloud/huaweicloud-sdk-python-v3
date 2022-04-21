@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListQueryStructuredLogsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListQueryStructuredLogsResponse(SdkResponse):
     }
 
     def __init__(self, struct_logs=None):
-        """ListQueryStructuredLogsResponse - a model defined in huaweicloud sdk"""
+        """ListQueryStructuredLogsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param struct_logs: 日志信息。
+        :type struct_logs: list[:class:`huaweicloudsdklts.v2.StructLogContents`]
+        """
         
         super(ListQueryStructuredLogsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListQueryStructuredLogsResponse(SdkResponse):
         日志信息。
 
         :return: The struct_logs of this ListQueryStructuredLogsResponse.
-        :rtype: list[StructLogContents]
+        :rtype: list[:class:`huaweicloudsdklts.v2.StructLogContents`]
         """
         return self._struct_logs
 
@@ -58,7 +63,7 @@ class ListQueryStructuredLogsResponse(SdkResponse):
         日志信息。
 
         :param struct_logs: The struct_logs of this ListQueryStructuredLogsResponse.
-        :type: list[StructLogContents]
+        :type struct_logs: list[:class:`huaweicloudsdklts.v2.StructLogContents`]
         """
         self._struct_logs = struct_logs
 

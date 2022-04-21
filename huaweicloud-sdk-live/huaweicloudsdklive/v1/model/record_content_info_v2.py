@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RecordContentInfoV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class RecordContentInfoV2:
     }
 
     def __init__(self, publish_domain=None, file_name=None, app=None, stream=None, record_format=None, record_type=None, obs_addr=None, vod_info=None, download_url=None, start_time=None, end_time=None, duration=None):
-        """RecordContentInfoV2 - a model defined in huaweicloud sdk"""
+        """RecordContentInfoV2
+
+        The model defined in huaweicloud sdk
+
+        :param publish_domain: 直播推流域名
+        :type publish_domain: str
+        :param file_name: 录制文件名
+        :type file_name: str
+        :param app: 应用名
+        :type app: str
+        :param stream: 录制的流名
+        :type stream: str
+        :param record_format: 录制格式flv，hls，mp4
+        :type record_format: str
+        :param record_type: 录制类型，CONTINUOUS_RECORD，COMMAND_RECORD，PLAN_RECORD, ON_DEMAND_RECORD。默认CONTINUOUS_RECORD。 - CONTINUOUS_RECORD：持续录制，在该规则类型配置后，只要有流到推送到录制系统，就触发录制。 - COMMAND_RECORD：命令录制，在该规则类型配置后，在流推送到录制系统后，租户需要通过命令控制该流的录制开始和结束。 - PLAN_RECORD：计划录制，在该规则类型配置后，推的流如果在计划录制的时间区间则触发录制。 - ON_DEMAND_RECORD：按需录制，在该规则类型配置后，录制系统收到推流后，需要调用租户提供的接口查询录制规则，并根据规则录制。 
+        :type record_type: str
+        :param obs_addr: 
+        :type obs_addr: :class:`huaweicloudsdklive.v1.RecordObsFileAddr`
+        :param vod_info: 
+        :type vod_info: :class:`huaweicloudsdklive.v1.VodInfoV2`
+        :param download_url: OBS下载地址
+        :type download_url: str
+        :param start_time: 录制开始时间，格式：yyyy-mm-ddThh:mm:ssZ，UTC时间。对record_type为PLAN_RECORD有效
+        :type start_time: date
+        :param end_time: 录制结束时间，格式：yyyy-mm-ddThh:mm:ssZ，UTC时间。对record_type为PLAN_RECORD有效
+        :type end_time: date
+        :param duration: 该录制文件时长，单位为秒
+        :type duration: int
+        """
         
         
 
@@ -113,7 +140,7 @@ class RecordContentInfoV2:
         直播推流域名
 
         :param publish_domain: The publish_domain of this RecordContentInfoV2.
-        :type: str
+        :type publish_domain: str
         """
         self._publish_domain = publish_domain
 
@@ -135,7 +162,7 @@ class RecordContentInfoV2:
         录制文件名
 
         :param file_name: The file_name of this RecordContentInfoV2.
-        :type: str
+        :type file_name: str
         """
         self._file_name = file_name
 
@@ -157,7 +184,7 @@ class RecordContentInfoV2:
         应用名
 
         :param app: The app of this RecordContentInfoV2.
-        :type: str
+        :type app: str
         """
         self._app = app
 
@@ -179,7 +206,7 @@ class RecordContentInfoV2:
         录制的流名
 
         :param stream: The stream of this RecordContentInfoV2.
-        :type: str
+        :type stream: str
         """
         self._stream = stream
 
@@ -201,7 +228,7 @@ class RecordContentInfoV2:
         录制格式flv，hls，mp4
 
         :param record_format: The record_format of this RecordContentInfoV2.
-        :type: str
+        :type record_format: str
         """
         self._record_format = record_format
 
@@ -223,7 +250,7 @@ class RecordContentInfoV2:
         录制类型，CONTINUOUS_RECORD，COMMAND_RECORD，PLAN_RECORD, ON_DEMAND_RECORD。默认CONTINUOUS_RECORD。 - CONTINUOUS_RECORD：持续录制，在该规则类型配置后，只要有流到推送到录制系统，就触发录制。 - COMMAND_RECORD：命令录制，在该规则类型配置后，在流推送到录制系统后，租户需要通过命令控制该流的录制开始和结束。 - PLAN_RECORD：计划录制，在该规则类型配置后，推的流如果在计划录制的时间区间则触发录制。 - ON_DEMAND_RECORD：按需录制，在该规则类型配置后，录制系统收到推流后，需要调用租户提供的接口查询录制规则，并根据规则录制。 
 
         :param record_type: The record_type of this RecordContentInfoV2.
-        :type: str
+        :type record_type: str
         """
         self._record_type = record_type
 
@@ -233,7 +260,7 @@ class RecordContentInfoV2:
 
 
         :return: The obs_addr of this RecordContentInfoV2.
-        :rtype: RecordObsFileAddr
+        :rtype: :class:`huaweicloudsdklive.v1.RecordObsFileAddr`
         """
         return self._obs_addr
 
@@ -243,7 +270,7 @@ class RecordContentInfoV2:
 
 
         :param obs_addr: The obs_addr of this RecordContentInfoV2.
-        :type: RecordObsFileAddr
+        :type obs_addr: :class:`huaweicloudsdklive.v1.RecordObsFileAddr`
         """
         self._obs_addr = obs_addr
 
@@ -253,7 +280,7 @@ class RecordContentInfoV2:
 
 
         :return: The vod_info of this RecordContentInfoV2.
-        :rtype: VodInfoV2
+        :rtype: :class:`huaweicloudsdklive.v1.VodInfoV2`
         """
         return self._vod_info
 
@@ -263,7 +290,7 @@ class RecordContentInfoV2:
 
 
         :param vod_info: The vod_info of this RecordContentInfoV2.
-        :type: VodInfoV2
+        :type vod_info: :class:`huaweicloudsdklive.v1.VodInfoV2`
         """
         self._vod_info = vod_info
 
@@ -285,7 +312,7 @@ class RecordContentInfoV2:
         OBS下载地址
 
         :param download_url: The download_url of this RecordContentInfoV2.
-        :type: str
+        :type download_url: str
         """
         self._download_url = download_url
 
@@ -307,7 +334,7 @@ class RecordContentInfoV2:
         录制开始时间，格式：yyyy-mm-ddThh:mm:ssZ，UTC时间。对record_type为PLAN_RECORD有效
 
         :param start_time: The start_time of this RecordContentInfoV2.
-        :type: date
+        :type start_time: date
         """
         self._start_time = start_time
 
@@ -329,7 +356,7 @@ class RecordContentInfoV2:
         录制结束时间，格式：yyyy-mm-ddThh:mm:ssZ，UTC时间。对record_type为PLAN_RECORD有效
 
         :param end_time: The end_time of this RecordContentInfoV2.
-        :type: date
+        :type end_time: date
         """
         self._end_time = end_time
 
@@ -351,7 +378,7 @@ class RecordContentInfoV2:
         该录制文件时长，单位为秒
 
         :param duration: The duration of this RecordContentInfoV2.
-        :type: int
+        :type duration: int
         """
         self._duration = duration
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OpenRoomSettingVO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class OpenRoomSettingVO:
     }
 
     def __init__(self, room_introduce=None, crop_logo_id=None, cover_picture_id=None, show_audience_mode=None, is_redouble_open=None, base_audience_count=None, multiple=None):
-        """OpenRoomSettingVO - a model defined in huaweicloud sdk"""
+        """OpenRoomSettingVO
+
+        The model defined in huaweicloud sdk
+
+        :param room_introduce: 直播介绍, 最大不超过500个字符
+        :type room_introduce: str
+        :param crop_logo_id: 企业Logo（文件id）,不超过32字符
+        :type crop_logo_id: str
+        :param cover_picture_id: 封面内容(文件id)，不超过32字符
+        :type cover_picture_id: str
+        :param show_audience_mode: 显示观众人数的模式。默认值为real_time - none:不显示 - real_time:实时显示 
+        :type show_audience_mode: str
+        :param is_redouble_open: 智能倍增开关。默认值为Y - Y 开启智能倍增 - N 关闭智能倍增 
+        :type is_redouble_open: str
+        :param base_audience_count: 基础设置人数(直播间没人时显示的人数). 取值范围为[0, 10000]。默认值为0
+        :type base_audience_count: int
+        :param multiple: 设置倍数(基础人数+真实人数*倍数). 取值范围为[0, 10]，取1位小数。默认值为1.0
+        :type multiple: float
+        """
         
         
 
@@ -88,7 +105,7 @@ class OpenRoomSettingVO:
         直播介绍, 最大不超过500个字符
 
         :param room_introduce: The room_introduce of this OpenRoomSettingVO.
-        :type: str
+        :type room_introduce: str
         """
         self._room_introduce = room_introduce
 
@@ -110,7 +127,7 @@ class OpenRoomSettingVO:
         企业Logo（文件id）,不超过32字符
 
         :param crop_logo_id: The crop_logo_id of this OpenRoomSettingVO.
-        :type: str
+        :type crop_logo_id: str
         """
         self._crop_logo_id = crop_logo_id
 
@@ -132,7 +149,7 @@ class OpenRoomSettingVO:
         封面内容(文件id)，不超过32字符
 
         :param cover_picture_id: The cover_picture_id of this OpenRoomSettingVO.
-        :type: str
+        :type cover_picture_id: str
         """
         self._cover_picture_id = cover_picture_id
 
@@ -154,7 +171,7 @@ class OpenRoomSettingVO:
         显示观众人数的模式。默认值为real_time - none:不显示 - real_time:实时显示 
 
         :param show_audience_mode: The show_audience_mode of this OpenRoomSettingVO.
-        :type: str
+        :type show_audience_mode: str
         """
         self._show_audience_mode = show_audience_mode
 
@@ -176,7 +193,7 @@ class OpenRoomSettingVO:
         智能倍增开关。默认值为Y - Y 开启智能倍增 - N 关闭智能倍增 
 
         :param is_redouble_open: The is_redouble_open of this OpenRoomSettingVO.
-        :type: str
+        :type is_redouble_open: str
         """
         self._is_redouble_open = is_redouble_open
 
@@ -198,7 +215,7 @@ class OpenRoomSettingVO:
         基础设置人数(直播间没人时显示的人数). 取值范围为[0, 10000]。默认值为0
 
         :param base_audience_count: The base_audience_count of this OpenRoomSettingVO.
-        :type: int
+        :type base_audience_count: int
         """
         self._base_audience_count = base_audience_count
 
@@ -220,7 +237,7 @@ class OpenRoomSettingVO:
         设置倍数(基础人数+真实人数*倍数). 取值范围为[0, 10]，取1位小数。默认值为1.0
 
         :param multiple: The multiple of this OpenRoomSettingVO.
-        :type: float
+        :type multiple: float
         """
         self._multiple = multiple
 

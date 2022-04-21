@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResetVisionActiveCodeResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ResetVisionActiveCodeResponse(SdkResponse):
     }
 
     def __init__(self, active_code=None):
-        """ResetVisionActiveCodeResponse - a model defined in huaweicloud sdk"""
+        """ResetVisionActiveCodeResponse
+
+        The model defined in huaweicloud sdk
+
+        :param active_code: 激活码
+        :type active_code: str
+        """
         
         super(ResetVisionActiveCodeResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class ResetVisionActiveCodeResponse(SdkResponse):
         激活码
 
         :param active_code: The active_code of this ResetVisionActiveCodeResponse.
-        :type: str
+        :type active_code: str
         """
         self._active_code = active_code
 

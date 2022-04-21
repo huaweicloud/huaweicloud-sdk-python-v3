@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateLogStreamParams:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateLogStreamParams:
     }
 
     def __init__(self, log_stream_name=None, enterprise_project_name=None):
-        """CreateLogStreamParams - a model defined in huaweicloud sdk"""
+        """CreateLogStreamParams
+
+        The model defined in huaweicloud sdk
+
+        :param log_stream_name: 需要创建的日志流名称。
+        :type log_stream_name: str
+        :param enterprise_project_name: 企业项目名称。
+        :type enterprise_project_name: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateLogStreamParams:
         需要创建的日志流名称。
 
         :param log_stream_name: The log_stream_name of this CreateLogStreamParams.
-        :type: str
+        :type log_stream_name: str
         """
         self._log_stream_name = log_stream_name
 
@@ -84,7 +91,7 @@ class CreateLogStreamParams:
         企业项目名称。
 
         :param enterprise_project_name: The enterprise_project_name of this CreateLogStreamParams.
-        :type: str
+        :type enterprise_project_name: str
         """
         self._enterprise_project_name = enterprise_project_name
 

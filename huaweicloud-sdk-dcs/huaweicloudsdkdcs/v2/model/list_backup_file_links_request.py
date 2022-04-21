@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListBackupFileLinksRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListBackupFileLinksRequest:
     }
 
     def __init__(self, instance_id=None, backup_id=None, body=None):
-        """ListBackupFileLinksRequest - a model defined in huaweicloud sdk"""
+        """ListBackupFileLinksRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param backup_id: 备份记录ID。
+        :type backup_id: str
+        :param body: Body of the ListBackupFileLinksRequest
+        :type body: :class:`huaweicloudsdkdcs.v2.DownloadBackupFilesReq`
+        """
         
         
 
@@ -66,7 +75,7 @@ class ListBackupFileLinksRequest:
         实例ID。
 
         :param instance_id: The instance_id of this ListBackupFileLinksRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -88,7 +97,7 @@ class ListBackupFileLinksRequest:
         备份记录ID。
 
         :param backup_id: The backup_id of this ListBackupFileLinksRequest.
-        :type: str
+        :type backup_id: str
         """
         self._backup_id = backup_id
 
@@ -98,7 +107,7 @@ class ListBackupFileLinksRequest:
 
 
         :return: The body of this ListBackupFileLinksRequest.
-        :rtype: DownloadBackupFilesReq
+        :rtype: :class:`huaweicloudsdkdcs.v2.DownloadBackupFilesReq`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class ListBackupFileLinksRequest:
 
 
         :param body: The body of this ListBackupFileLinksRequest.
-        :type: DownloadBackupFilesReq
+        :type body: :class:`huaweicloudsdkdcs.v2.DownloadBackupFilesReq`
         """
         self._body = body
 

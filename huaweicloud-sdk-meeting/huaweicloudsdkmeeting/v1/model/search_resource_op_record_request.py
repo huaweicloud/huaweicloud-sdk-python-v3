@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SearchResourceOpRecordRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class SearchResourceOpRecordRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, offset=None, limit=None, search_key=None, corp_id=None, start_expire_date=None, end_expire_date=None, start_operate_date=None, end_operate_date=None, type=None, type_id=None, operate_type=None):
-        """SearchResourceOpRecordRequest - a model defined in huaweicloud sdk"""
+        """SearchResourceOpRecordRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        :type x_request_id: str
+        :param accept_language: 语言参数，默认为中文zh-CN, 英文为en-US
+        :type accept_language: str
+        :param offset: 查询偏移量,若超过最大数量，则返回最后一页的数据 默认值：0 
+        :type offset: int
+        :param limit: 查询数量 默认值：0 
+        :type limit: int
+        :param search_key: 搜索条件
+        :type search_key: str
+        :param corp_id: 企业id
+        :type corp_id: str
+        :param start_expire_date: 查询过期时间在该时间戳之后的订单操作记录
+        :type start_expire_date: int
+        :param end_expire_date: 查询过期时间在该时间戳之前的订单操作记录
+        :type end_expire_date: int
+        :param start_operate_date: 查询操作时间在该时间戳之后的订单操作记录
+        :type start_operate_date: int
+        :param end_operate_date: 查询操作时间在该时间戳之前的订单操作记录
+        :type end_operate_date: int
+        :param type: 订单资源类型
+        :type type: str
+        :param type_id: 当前仅当资源类型为vmr时生效
+        :type type_id: str
+        :param operate_type: 操作类型 - 0：添加 - 1：删除 - 2：修改 - 3：停用 - 4：启用
+        :type operate_type: int
+        """
         
         
 
@@ -117,7 +146,7 @@ class SearchResourceOpRecordRequest:
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
 
         :param x_request_id: The x_request_id of this SearchResourceOpRecordRequest.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 
@@ -139,7 +168,7 @@ class SearchResourceOpRecordRequest:
         语言参数，默认为中文zh-CN, 英文为en-US
 
         :param accept_language: The accept_language of this SearchResourceOpRecordRequest.
-        :type: str
+        :type accept_language: str
         """
         self._accept_language = accept_language
 
@@ -161,7 +190,7 @@ class SearchResourceOpRecordRequest:
         查询偏移量,若超过最大数量，则返回最后一页的数据 默认值：0 
 
         :param offset: The offset of this SearchResourceOpRecordRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -183,7 +212,7 @@ class SearchResourceOpRecordRequest:
         查询数量 默认值：0 
 
         :param limit: The limit of this SearchResourceOpRecordRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -205,7 +234,7 @@ class SearchResourceOpRecordRequest:
         搜索条件
 
         :param search_key: The search_key of this SearchResourceOpRecordRequest.
-        :type: str
+        :type search_key: str
         """
         self._search_key = search_key
 
@@ -227,7 +256,7 @@ class SearchResourceOpRecordRequest:
         企业id
 
         :param corp_id: The corp_id of this SearchResourceOpRecordRequest.
-        :type: str
+        :type corp_id: str
         """
         self._corp_id = corp_id
 
@@ -249,7 +278,7 @@ class SearchResourceOpRecordRequest:
         查询过期时间在该时间戳之后的订单操作记录
 
         :param start_expire_date: The start_expire_date of this SearchResourceOpRecordRequest.
-        :type: int
+        :type start_expire_date: int
         """
         self._start_expire_date = start_expire_date
 
@@ -271,7 +300,7 @@ class SearchResourceOpRecordRequest:
         查询过期时间在该时间戳之前的订单操作记录
 
         :param end_expire_date: The end_expire_date of this SearchResourceOpRecordRequest.
-        :type: int
+        :type end_expire_date: int
         """
         self._end_expire_date = end_expire_date
 
@@ -293,7 +322,7 @@ class SearchResourceOpRecordRequest:
         查询操作时间在该时间戳之后的订单操作记录
 
         :param start_operate_date: The start_operate_date of this SearchResourceOpRecordRequest.
-        :type: int
+        :type start_operate_date: int
         """
         self._start_operate_date = start_operate_date
 
@@ -315,7 +344,7 @@ class SearchResourceOpRecordRequest:
         查询操作时间在该时间戳之前的订单操作记录
 
         :param end_operate_date: The end_operate_date of this SearchResourceOpRecordRequest.
-        :type: int
+        :type end_operate_date: int
         """
         self._end_operate_date = end_operate_date
 
@@ -337,7 +366,7 @@ class SearchResourceOpRecordRequest:
         订单资源类型
 
         :param type: The type of this SearchResourceOpRecordRequest.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -359,7 +388,7 @@ class SearchResourceOpRecordRequest:
         当前仅当资源类型为vmr时生效
 
         :param type_id: The type_id of this SearchResourceOpRecordRequest.
-        :type: str
+        :type type_id: str
         """
         self._type_id = type_id
 
@@ -381,7 +410,7 @@ class SearchResourceOpRecordRequest:
         操作类型 - 0：添加 - 1：删除 - 2：修改 - 3：停用 - 4：启用
 
         :param operate_type: The operate_type of this SearchResourceOpRecordRequest.
-        :type: int
+        :type operate_type: int
         """
         self._operate_type = operate_type
 

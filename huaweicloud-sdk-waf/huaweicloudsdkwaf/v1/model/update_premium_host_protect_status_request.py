@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdatePremiumHostProtectStatusRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdatePremiumHostProtectStatusRequest:
     }
 
     def __init__(self, enterprise_project_id=None, host_id=None, body=None):
-        """UpdatePremiumHostProtectStatusRequest - a model defined in huaweicloud sdk"""
+        """UpdatePremiumHostProtectStatusRequest
+
+        The model defined in huaweicloud sdk
+
+        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        :type enterprise_project_id: str
+        :param host_id: 独享模式域名ID
+        :type host_id: str
+        :param body: Body of the UpdatePremiumHostProtectStatusRequest
+        :type body: :class:`huaweicloudsdkwaf.v1.UpdatePremiumHostProtectStatusRequestBody`
+        """
         
         
 
@@ -67,7 +76,7 @@ class UpdatePremiumHostProtectStatusRequest:
         您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this UpdatePremiumHostProtectStatusRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -89,7 +98,7 @@ class UpdatePremiumHostProtectStatusRequest:
         独享模式域名ID
 
         :param host_id: The host_id of this UpdatePremiumHostProtectStatusRequest.
-        :type: str
+        :type host_id: str
         """
         self._host_id = host_id
 
@@ -99,7 +108,7 @@ class UpdatePremiumHostProtectStatusRequest:
 
 
         :return: The body of this UpdatePremiumHostProtectStatusRequest.
-        :rtype: UpdatePremiumHostProtectStatusRequestBody
+        :rtype: :class:`huaweicloudsdkwaf.v1.UpdatePremiumHostProtectStatusRequestBody`
         """
         return self._body
 
@@ -109,7 +118,7 @@ class UpdatePremiumHostProtectStatusRequest:
 
 
         :param body: The body of this UpdatePremiumHostProtectStatusRequest.
-        :type: UpdatePremiumHostProtectStatusRequestBody
+        :type body: :class:`huaweicloudsdkwaf.v1.UpdatePremiumHostProtectStatusRequestBody`
         """
         self._body = body
 

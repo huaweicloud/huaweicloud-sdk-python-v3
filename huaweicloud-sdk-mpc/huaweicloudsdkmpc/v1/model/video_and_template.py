@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VideoAndTemplate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class VideoAndTemplate:
     }
 
     def __init__(self, template_id=None, width=None, height=None, bitrate=None):
-        """VideoAndTemplate - a model defined in huaweicloud sdk"""
+        """VideoAndTemplate
+
+        The model defined in huaweicloud sdk
+
+        :param template_id: 模板ID 
+        :type template_id: int
+        :param width: 视频宽度（单位：像素） - H264：范围[32,4096]，必须为2的倍数 - H265：范围[320,4096]，必须是4的倍数 
+        :type width: int
+        :param height: 视频高度（单位：像素） - H264：范围[32,2880]，必须为2的倍数 - H265：范围[240,2880]，必须是4的倍数 
+        :type height: int
+        :param bitrate: 输出平均码率。  取值范围：0或[40,30000]之间的整数。  单位：kbit/s  若设置为0，则输出平均码率为自适应值。 
+        :type bitrate: int
+        """
         
         
 
@@ -73,7 +84,7 @@ class VideoAndTemplate:
         模板ID 
 
         :param template_id: The template_id of this VideoAndTemplate.
-        :type: int
+        :type template_id: int
         """
         self._template_id = template_id
 
@@ -95,7 +106,7 @@ class VideoAndTemplate:
         视频宽度（单位：像素） - H264：范围[32,4096]，必须为2的倍数 - H265：范围[320,4096]，必须是4的倍数 
 
         :param width: The width of this VideoAndTemplate.
-        :type: int
+        :type width: int
         """
         self._width = width
 
@@ -117,7 +128,7 @@ class VideoAndTemplate:
         视频高度（单位：像素） - H264：范围[32,2880]，必须为2的倍数 - H265：范围[240,2880]，必须是4的倍数 
 
         :param height: The height of this VideoAndTemplate.
-        :type: int
+        :type height: int
         """
         self._height = height
 
@@ -139,7 +150,7 @@ class VideoAndTemplate:
         输出平均码率。  取值范围：0或[40,30000]之间的整数。  单位：kbit/s  若设置为0，则输出平均码率为自适应值。 
 
         :param bitrate: The bitrate of this VideoAndTemplate.
-        :type: int
+        :type bitrate: int
         """
         self._bitrate = bitrate
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AgencyTokenScopeProject:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AgencyTokenScopeProject:
     }
 
     def __init__(self, id=None, name=None):
-        """AgencyTokenScopeProject - a model defined in huaweicloud sdk"""
+        """AgencyTokenScopeProject
+
+        The model defined in huaweicloud sdk
+
+        :param id: 委托方A项目的ID，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
+        :type id: str
+        :param name: 委托方A项目的名称，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
+        :type name: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class AgencyTokenScopeProject:
         委托方A项目的ID，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param id: The id of this AgencyTokenScopeProject.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -85,7 +92,7 @@ class AgencyTokenScopeProject:
         委托方A项目的名称，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param name: The name of this AgencyTokenScopeProject.
-        :type: str
+        :type name: str
         """
         self._name = name
 

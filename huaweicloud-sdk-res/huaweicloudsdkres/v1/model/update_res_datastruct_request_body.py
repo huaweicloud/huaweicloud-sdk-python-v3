@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateResDatastructRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateResDatastructRequestBody:
     }
 
     def __init__(self, name=None, data_config=None, specs_config=None):
-        """UpdateResDatastructRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateResDatastructRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param name: 数据源名称:，1-64位字母、数字、下划线、中划线组合。
+        :type name: str
+        :param data_config: 
+        :type data_config: :class:`huaweicloudsdkres.v1.DataConfig`
+        :param specs_config: 
+        :type specs_config: :class:`huaweicloudsdkres.v1.SpecsConfig`
+        """
         
         
 
@@ -65,7 +74,7 @@ class UpdateResDatastructRequestBody:
         数据源名称:，1-64位字母、数字、下划线、中划线组合。
 
         :param name: The name of this UpdateResDatastructRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -75,7 +84,7 @@ class UpdateResDatastructRequestBody:
 
 
         :return: The data_config of this UpdateResDatastructRequestBody.
-        :rtype: DataConfig
+        :rtype: :class:`huaweicloudsdkres.v1.DataConfig`
         """
         return self._data_config
 
@@ -85,7 +94,7 @@ class UpdateResDatastructRequestBody:
 
 
         :param data_config: The data_config of this UpdateResDatastructRequestBody.
-        :type: DataConfig
+        :type data_config: :class:`huaweicloudsdkres.v1.DataConfig`
         """
         self._data_config = data_config
 
@@ -95,7 +104,7 @@ class UpdateResDatastructRequestBody:
 
 
         :return: The specs_config of this UpdateResDatastructRequestBody.
-        :rtype: SpecsConfig
+        :rtype: :class:`huaweicloudsdkres.v1.SpecsConfig`
         """
         return self._specs_config
 
@@ -105,7 +114,7 @@ class UpdateResDatastructRequestBody:
 
 
         :param specs_config: The specs_config of this UpdateResDatastructRequestBody.
-        :type: SpecsConfig
+        :type specs_config: :class:`huaweicloudsdkres.v1.SpecsConfig`
         """
         self._specs_config = specs_config
 

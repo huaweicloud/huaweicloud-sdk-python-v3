@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteSnapshotRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteSnapshotRequest:
     }
 
     def __init__(self, cluster_id=None, snapshot_id=None):
-        """DeleteSnapshotRequest - a model defined in huaweicloud sdk"""
+        """DeleteSnapshotRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 快照所属的集群的ID。
+        :type cluster_id: str
+        :param snapshot_id: 要删除快照的ID。
+        :type snapshot_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class DeleteSnapshotRequest:
         快照所属的集群的ID。
 
         :param cluster_id: The cluster_id of this DeleteSnapshotRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -83,7 +90,7 @@ class DeleteSnapshotRequest:
         要删除快照的ID。
 
         :param snapshot_id: The snapshot_id of this DeleteSnapshotRequest.
-        :type: str
+        :type snapshot_id: str
         """
         self._snapshot_id = snapshot_id
 

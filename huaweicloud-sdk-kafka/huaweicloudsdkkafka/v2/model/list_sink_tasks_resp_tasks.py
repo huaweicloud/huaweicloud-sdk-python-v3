@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSinkTasksRespTasks:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListSinkTasksRespTasks:
     }
 
     def __init__(self, task_id=None, task_name=None, destination_type=None, create_time=None, status=None, topics=None):
-        """ListSinkTasksRespTasks - a model defined in huaweicloud sdk"""
+        """ListSinkTasksRespTasks
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 任务ID。
+        :type task_id: str
+        :param task_name: 转储任务名称。
+        :type task_name: str
+        :param destination_type: 转储任务类型。
+        :type destination_type: str
+        :param create_time: 转储任务创建时间戳。
+        :type create_time: int
+        :param status: 转储任务状态。
+        :type status: str
+        :param topics: 返回任务转存的topics列表或者正则表达式。
+        :type topics: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class ListSinkTasksRespTasks:
         任务ID。
 
         :param task_id: The task_id of this ListSinkTasksRespTasks.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -105,7 +120,7 @@ class ListSinkTasksRespTasks:
         转储任务名称。
 
         :param task_name: The task_name of this ListSinkTasksRespTasks.
-        :type: str
+        :type task_name: str
         """
         self._task_name = task_name
 
@@ -127,7 +142,7 @@ class ListSinkTasksRespTasks:
         转储任务类型。
 
         :param destination_type: The destination_type of this ListSinkTasksRespTasks.
-        :type: str
+        :type destination_type: str
         """
         self._destination_type = destination_type
 
@@ -149,7 +164,7 @@ class ListSinkTasksRespTasks:
         转储任务创建时间戳。
 
         :param create_time: The create_time of this ListSinkTasksRespTasks.
-        :type: int
+        :type create_time: int
         """
         self._create_time = create_time
 
@@ -171,7 +186,7 @@ class ListSinkTasksRespTasks:
         转储任务状态。
 
         :param status: The status of this ListSinkTasksRespTasks.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -193,7 +208,7 @@ class ListSinkTasksRespTasks:
         返回任务转存的topics列表或者正则表达式。
 
         :param topics: The topics of this ListSinkTasksRespTasks.
-        :type: str
+        :type topics: str
         """
         self._topics = topics
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryEdgeAppVersionBriefResponseDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class QueryEdgeAppVersionBriefResponseDTO:
     }
 
     def __init__(self, edge_app_id=None, version=None, description=None, deploy_type=None, create_time=None, update_time=None, state=None, arch=None, publish_time=None, off_shelf_time=None):
-        """QueryEdgeAppVersionBriefResponseDTO - a model defined in huaweicloud sdk"""
+        """QueryEdgeAppVersionBriefResponseDTO
+
+        The model defined in huaweicloud sdk
+
+        :param edge_app_id: 应用ID
+        :type edge_app_id: str
+        :param version: 应用名称
+        :type version: str
+        :param description: 应用描述
+        :type description: str
+        :param deploy_type: 部署类型docker|process
+        :type deploy_type: str
+        :param create_time: 创建时间
+        :type create_time: str
+        :param update_time: 最后一次修改时间
+        :type update_time: str
+        :param state: 应用版本状态
+        :type state: str
+        :param arch: 架构
+        :type arch: list[str]
+        :param publish_time: 发布时间
+        :type publish_time: str
+        :param off_shelf_time: 下线时间
+        :type off_shelf_time: str
+        """
         
         
 
@@ -103,7 +126,7 @@ class QueryEdgeAppVersionBriefResponseDTO:
         应用ID
 
         :param edge_app_id: The edge_app_id of this QueryEdgeAppVersionBriefResponseDTO.
-        :type: str
+        :type edge_app_id: str
         """
         self._edge_app_id = edge_app_id
 
@@ -125,7 +148,7 @@ class QueryEdgeAppVersionBriefResponseDTO:
         应用名称
 
         :param version: The version of this QueryEdgeAppVersionBriefResponseDTO.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -147,7 +170,7 @@ class QueryEdgeAppVersionBriefResponseDTO:
         应用描述
 
         :param description: The description of this QueryEdgeAppVersionBriefResponseDTO.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -169,7 +192,7 @@ class QueryEdgeAppVersionBriefResponseDTO:
         部署类型docker|process
 
         :param deploy_type: The deploy_type of this QueryEdgeAppVersionBriefResponseDTO.
-        :type: str
+        :type deploy_type: str
         """
         self._deploy_type = deploy_type
 
@@ -191,7 +214,7 @@ class QueryEdgeAppVersionBriefResponseDTO:
         创建时间
 
         :param create_time: The create_time of this QueryEdgeAppVersionBriefResponseDTO.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -213,7 +236,7 @@ class QueryEdgeAppVersionBriefResponseDTO:
         最后一次修改时间
 
         :param update_time: The update_time of this QueryEdgeAppVersionBriefResponseDTO.
-        :type: str
+        :type update_time: str
         """
         self._update_time = update_time
 
@@ -235,7 +258,7 @@ class QueryEdgeAppVersionBriefResponseDTO:
         应用版本状态
 
         :param state: The state of this QueryEdgeAppVersionBriefResponseDTO.
-        :type: str
+        :type state: str
         """
         self._state = state
 
@@ -257,7 +280,7 @@ class QueryEdgeAppVersionBriefResponseDTO:
         架构
 
         :param arch: The arch of this QueryEdgeAppVersionBriefResponseDTO.
-        :type: list[str]
+        :type arch: list[str]
         """
         self._arch = arch
 
@@ -279,7 +302,7 @@ class QueryEdgeAppVersionBriefResponseDTO:
         发布时间
 
         :param publish_time: The publish_time of this QueryEdgeAppVersionBriefResponseDTO.
-        :type: str
+        :type publish_time: str
         """
         self._publish_time = publish_time
 
@@ -301,7 +324,7 @@ class QueryEdgeAppVersionBriefResponseDTO:
         下线时间
 
         :param off_shelf_time: The off_shelf_time of this QueryEdgeAppVersionBriefResponseDTO.
-        :type: str
+        :type off_shelf_time: str
         """
         self._off_shelf_time = off_shelf_time
 

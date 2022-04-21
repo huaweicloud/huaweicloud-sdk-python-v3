@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResourceProviderResponse:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ResourceProviderResponse:
     }
 
     def __init__(self, provider=None, display_name=None, category_display_name=None, resource_types=None):
-        """ResourceProviderResponse - a model defined in huaweicloud sdk"""
+        """ResourceProviderResponse
+
+        The model defined in huaweicloud sdk
+
+        :param provider: 云服务名称
+        :type provider: str
+        :param display_name: 云服务显示名称，可以通过请求Header中的&#39;X-Language&#39;设置语言
+        :type display_name: str
+        :param category_display_name: 云服务类别显示名称，可以通过请求Header中的&#39;X-Language&#39;设置语言
+        :type category_display_name: str
+        :param resource_types: 资源类型列表
+        :type resource_types: list[:class:`huaweicloudsdkrms.v1.ResourceTypeResponse`]
+        """
         
         
 
@@ -73,7 +84,7 @@ class ResourceProviderResponse:
         云服务名称
 
         :param provider: The provider of this ResourceProviderResponse.
-        :type: str
+        :type provider: str
         """
         self._provider = provider
 
@@ -95,7 +106,7 @@ class ResourceProviderResponse:
         云服务显示名称，可以通过请求Header中的'X-Language'设置语言
 
         :param display_name: The display_name of this ResourceProviderResponse.
-        :type: str
+        :type display_name: str
         """
         self._display_name = display_name
 
@@ -117,7 +128,7 @@ class ResourceProviderResponse:
         云服务类别显示名称，可以通过请求Header中的'X-Language'设置语言
 
         :param category_display_name: The category_display_name of this ResourceProviderResponse.
-        :type: str
+        :type category_display_name: str
         """
         self._category_display_name = category_display_name
 
@@ -128,7 +139,7 @@ class ResourceProviderResponse:
         资源类型列表
 
         :return: The resource_types of this ResourceProviderResponse.
-        :rtype: list[ResourceTypeResponse]
+        :rtype: list[:class:`huaweicloudsdkrms.v1.ResourceTypeResponse`]
         """
         return self._resource_types
 
@@ -139,7 +150,7 @@ class ResourceProviderResponse:
         资源类型列表
 
         :param resource_types: The resource_types of this ResourceProviderResponse.
-        :type: list[ResourceTypeResponse]
+        :type resource_types: list[:class:`huaweicloudsdkrms.v1.ResourceTypeResponse`]
         """
         self._resource_types = resource_types
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SignResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class SignResponse(SdkResponse):
     }
 
     def __init__(self, key_id=None, signature=None):
-        """SignResponse - a model defined in huaweicloud sdk"""
+        """SignResponse
+
+        The model defined in huaweicloud sdk
+
+        :param key_id: 密钥ID。
+        :type key_id: str
+        :param signature: 签名值，使用base64编码。
+        :type signature: str
+        """
         
         super(SignResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class SignResponse(SdkResponse):
         密钥ID。
 
         :param key_id: The key_id of this SignResponse.
-        :type: str
+        :type key_id: str
         """
         self._key_id = key_id
 
@@ -85,7 +92,7 @@ class SignResponse(SdkResponse):
         签名值，使用base64编码。
 
         :param signature: The signature of this SignResponse.
-        :type: str
+        :type signature: str
         """
         self._signature = signature
 

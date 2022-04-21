@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ConsumeDeadlettersMessageMessage:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ConsumeDeadlettersMessageMessage:
     }
 
     def __init__(self, body=None, attributes=None):
-        """ConsumeDeadlettersMessageMessage - a model defined in huaweicloud sdk"""
+        """ConsumeDeadlettersMessageMessage
+
+        The model defined in huaweicloud sdk
+
+        :param body: 消息体的内容。
+        :type body: object
+        :param attributes: 属性的列表。
+        :type attributes: object
+        """
         
         
 
@@ -63,7 +70,7 @@ class ConsumeDeadlettersMessageMessage:
         消息体的内容。
 
         :param body: The body of this ConsumeDeadlettersMessageMessage.
-        :type: object
+        :type body: object
         """
         self._body = body
 
@@ -85,7 +92,7 @@ class ConsumeDeadlettersMessageMessage:
         属性的列表。
 
         :param attributes: The attributes of this ConsumeDeadlettersMessageMessage.
-        :type: object
+        :type attributes: object
         """
         self._attributes = attributes
 

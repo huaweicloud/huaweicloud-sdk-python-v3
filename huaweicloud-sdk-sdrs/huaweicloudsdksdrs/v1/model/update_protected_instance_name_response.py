@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateProtectedInstanceNameResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateProtectedInstanceNameResponse(SdkResponse):
     }
 
     def __init__(self, protected_instance=None):
-        """UpdateProtectedInstanceNameResponse - a model defined in huaweicloud sdk"""
+        """UpdateProtectedInstanceNameResponse
+
+        The model defined in huaweicloud sdk
+
+        :param protected_instance: 
+        :type protected_instance: :class:`huaweicloudsdksdrs.v1.ShowProtectedInstanceParams`
+        """
         
         super(UpdateProtectedInstanceNameResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class UpdateProtectedInstanceNameResponse(SdkResponse):
 
 
         :return: The protected_instance of this UpdateProtectedInstanceNameResponse.
-        :rtype: ShowProtectedInstanceParams
+        :rtype: :class:`huaweicloudsdksdrs.v1.ShowProtectedInstanceParams`
         """
         return self._protected_instance
 
@@ -56,7 +61,7 @@ class UpdateProtectedInstanceNameResponse(SdkResponse):
 
 
         :param protected_instance: The protected_instance of this UpdateProtectedInstanceNameResponse.
-        :type: ShowProtectedInstanceParams
+        :type protected_instance: :class:`huaweicloudsdksdrs.v1.ShowProtectedInstanceParams`
         """
         self._protected_instance = protected_instance
 

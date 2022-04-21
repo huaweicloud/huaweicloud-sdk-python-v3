@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowNatGatewayDnatRuleRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowNatGatewayDnatRuleRequest:
     }
 
     def __init__(self, dnat_rule_id=None):
-        """ShowNatGatewayDnatRuleRequest - a model defined in huaweicloud sdk"""
+        """ShowNatGatewayDnatRuleRequest
+
+        The model defined in huaweicloud sdk
+
+        :param dnat_rule_id: DNAT规则的ID。
+        :type dnat_rule_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowNatGatewayDnatRuleRequest:
         DNAT规则的ID。
 
         :param dnat_rule_id: The dnat_rule_id of this ShowNatGatewayDnatRuleRequest.
-        :type: str
+        :type dnat_rule_id: str
         """
         self._dnat_rule_id = dnat_rule_id
 

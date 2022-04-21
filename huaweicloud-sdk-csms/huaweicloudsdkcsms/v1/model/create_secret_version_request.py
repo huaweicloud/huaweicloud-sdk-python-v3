@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateSecretVersionRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateSecretVersionRequest:
     }
 
     def __init__(self, secret_name=None, body=None):
-        """CreateSecretVersionRequest - a model defined in huaweicloud sdk"""
+        """CreateSecretVersionRequest
+
+        The model defined in huaweicloud sdk
+
+        :param secret_name: 凭据名称。
+        :type secret_name: str
+        :param body: Body of the CreateSecretVersionRequest
+        :type body: :class:`huaweicloudsdkcsms.v1.CreateSecretVersionRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateSecretVersionRequest:
         凭据名称。
 
         :param secret_name: The secret_name of this CreateSecretVersionRequest.
-        :type: str
+        :type secret_name: str
         """
         self._secret_name = secret_name
 
@@ -72,7 +79,7 @@ class CreateSecretVersionRequest:
 
 
         :return: The body of this CreateSecretVersionRequest.
-        :rtype: CreateSecretVersionRequestBody
+        :rtype: :class:`huaweicloudsdkcsms.v1.CreateSecretVersionRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CreateSecretVersionRequest:
 
 
         :param body: The body of this CreateSecretVersionRequest.
-        :type: CreateSecretVersionRequestBody
+        :type body: :class:`huaweicloudsdkcsms.v1.CreateSecretVersionRequestBody`
         """
         self._body = body
 

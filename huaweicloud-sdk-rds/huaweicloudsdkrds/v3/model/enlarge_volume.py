@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EnlargeVolume:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class EnlargeVolume:
     }
 
     def __init__(self, enlarge_volume=None):
-        """EnlargeVolume - a model defined in huaweicloud sdk"""
+        """EnlargeVolume
+
+        The model defined in huaweicloud sdk
+
+        :param enlarge_volume: 
+        :type enlarge_volume: :class:`huaweicloudsdkrds.v3.EnlargeVolumeObject`
+        """
         
         
 
@@ -45,7 +50,7 @@ class EnlargeVolume:
 
 
         :return: The enlarge_volume of this EnlargeVolume.
-        :rtype: EnlargeVolumeObject
+        :rtype: :class:`huaweicloudsdkrds.v3.EnlargeVolumeObject`
         """
         return self._enlarge_volume
 
@@ -55,7 +60,7 @@ class EnlargeVolume:
 
 
         :param enlarge_volume: The enlarge_volume of this EnlargeVolume.
-        :type: EnlargeVolumeObject
+        :type enlarge_volume: :class:`huaweicloudsdkrds.v3.EnlargeVolumeObject`
         """
         self._enlarge_volume = enlarge_volume
 

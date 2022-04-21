@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StatisticValue:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class StatisticValue:
     }
 
     def __init__(self, statistic=None, value=None):
-        """StatisticValue - a model defined in huaweicloud sdk"""
+        """StatisticValue
+
+        The model defined in huaweicloud sdk
+
+        :param statistic: 统计方式。
+        :type statistic: str
+        :param value: 统计结果。
+        :type value: float
+        """
         
         
 
@@ -63,7 +70,7 @@ class StatisticValue:
         统计方式。
 
         :param statistic: The statistic of this StatisticValue.
-        :type: str
+        :type statistic: str
         """
         self._statistic = statistic
 
@@ -85,7 +92,7 @@ class StatisticValue:
         统计结果。
 
         :param value: The value of this StatisticValue.
-        :type: float
+        :type value: float
         """
         self._value = value
 

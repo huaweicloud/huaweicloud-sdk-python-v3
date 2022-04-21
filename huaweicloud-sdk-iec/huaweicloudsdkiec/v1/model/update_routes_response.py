@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateRoutesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateRoutesResponse(SdkResponse):
     }
 
     def __init__(self, routes=None):
-        """UpdateRoutesResponse - a model defined in huaweicloud sdk"""
+        """UpdateRoutesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param routes: 路由列表
+        :type routes: list[:class:`huaweicloudsdkiec.v1.Route`]
+        """
         
         super(UpdateRoutesResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class UpdateRoutesResponse(SdkResponse):
         路由列表
 
         :return: The routes of this UpdateRoutesResponse.
-        :rtype: list[Route]
+        :rtype: list[:class:`huaweicloudsdkiec.v1.Route`]
         """
         return self._routes
 
@@ -58,7 +63,7 @@ class UpdateRoutesResponse(SdkResponse):
         路由列表
 
         :param routes: The routes of this UpdateRoutesResponse.
-        :type: list[Route]
+        :type routes: list[:class:`huaweicloudsdkiec.v1.Route`]
         """
         self._routes = routes
 

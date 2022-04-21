@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class User:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class User:
     }
 
     def __init__(self, id=None, roles=None):
-        """User - a model defined in huaweicloud sdk"""
+        """User
+
+        The model defined in huaweicloud sdk
+
+        :param id: 用户ID
+        :type id: str
+        :param roles: 应用权限角色 - read：应用下资源只读权限，至少要存在此权限，包括API调试 - access：应用下资源的访问管理权限 - delete：应用下资源的删除权限 - modify：应用下资源的修改权限，包括API发布、下线 - admin：应用和应用下资源的权限 - 仅提供admin时，会自动应用其它所有权限 - 未提供read时会自动应用read权限
+        :type roles: list[str]
+        """
         
         
 
@@ -63,7 +70,7 @@ class User:
         用户ID
 
         :param id: The id of this User.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -85,7 +92,7 @@ class User:
         应用权限角色 - read：应用下资源只读权限，至少要存在此权限，包括API调试 - access：应用下资源的访问管理权限 - delete：应用下资源的删除权限 - modify：应用下资源的修改权限，包括API发布、下线 - admin：应用和应用下资源的权限 - 仅提供admin时，会自动应用其它所有权限 - 未提供read时会自动应用read权限
 
         :param roles: The roles of this User.
-        :type: list[str]
+        :type roles: list[str]
         """
         self._roles = roles
 

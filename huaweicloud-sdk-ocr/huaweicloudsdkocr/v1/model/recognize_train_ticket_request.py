@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RecognizeTrainTicketRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RecognizeTrainTicketRequest:
     }
 
     def __init__(self, body=None):
-        """RecognizeTrainTicketRequest - a model defined in huaweicloud sdk"""
+        """RecognizeTrainTicketRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the RecognizeTrainTicketRequest
+        :type body: :class:`huaweicloudsdkocr.v1.TrainTicketRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class RecognizeTrainTicketRequest:
 
 
         :return: The body of this RecognizeTrainTicketRequest.
-        :rtype: TrainTicketRequestBody
+        :rtype: :class:`huaweicloudsdkocr.v1.TrainTicketRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class RecognizeTrainTicketRequest:
 
 
         :param body: The body of this RecognizeTrainTicketRequest.
-        :type: TrainTicketRequestBody
+        :type body: :class:`huaweicloudsdkocr.v1.TrainTicketRequestBody`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateCommonTaskRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateCommonTaskRequestBody:
     }
 
     def __init__(self, task=None, task_detail=None):
-        """CreateCommonTaskRequestBody - a model defined in huaweicloud sdk"""
+        """CreateCommonTaskRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param task: 
+        :type task: :class:`huaweicloudsdkroma.v2.TaskBasicRequestBody`
+        :param task_detail: 参数类型为string，参数结构参照附录中“数据集成参数说明&gt;RawFormDataRequest”章节
+        :type task_detail: str
+        """
         
         
 
@@ -51,7 +58,7 @@ class CreateCommonTaskRequestBody:
 
 
         :return: The task of this CreateCommonTaskRequestBody.
-        :rtype: TaskBasicRequestBody
+        :rtype: :class:`huaweicloudsdkroma.v2.TaskBasicRequestBody`
         """
         return self._task
 
@@ -61,7 +68,7 @@ class CreateCommonTaskRequestBody:
 
 
         :param task: The task of this CreateCommonTaskRequestBody.
-        :type: TaskBasicRequestBody
+        :type task: :class:`huaweicloudsdkroma.v2.TaskBasicRequestBody`
         """
         self._task = task
 
@@ -83,7 +90,7 @@ class CreateCommonTaskRequestBody:
         参数类型为string，参数结构参照附录中“数据集成参数说明>RawFormDataRequest”章节
 
         :param task_detail: The task_detail of this CreateCommonTaskRequestBody.
-        :type: str
+        :type task_detail: str
         """
         self._task_detail = task_detail
 

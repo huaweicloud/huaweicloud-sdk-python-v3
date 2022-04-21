@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StopJobResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class StopJobResponse(SdkResponse):
     }
 
     def __init__(self, submissions=None):
-        """StopJobResponse - a model defined in huaweicloud sdk"""
+        """StopJobResponse
+
+        The model defined in huaweicloud sdk
+
+        :param submissions: 作业运行信息，请参见submission参数说明
+        :type submissions: list[:class:`huaweicloudsdkcdm.v1.StartJobSubmission`]
+        """
         
         super(StopJobResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class StopJobResponse(SdkResponse):
         作业运行信息，请参见submission参数说明
 
         :return: The submissions of this StopJobResponse.
-        :rtype: list[StartJobSubmission]
+        :rtype: list[:class:`huaweicloudsdkcdm.v1.StartJobSubmission`]
         """
         return self._submissions
 
@@ -58,7 +63,7 @@ class StopJobResponse(SdkResponse):
         作业运行信息，请参见submission参数说明
 
         :param submissions: The submissions of this StopJobResponse.
-        :type: list[StartJobSubmission]
+        :type submissions: list[:class:`huaweicloudsdkcdm.v1.StartJobSubmission`]
         """
         self._submissions = submissions
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TaskDetailsError:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class TaskDetailsError:
     }
 
     def __init__(self, code=None, message=None):
-        """TaskDetailsError - a model defined in huaweicloud sdk"""
+        """TaskDetailsError
+
+        The model defined in huaweicloud sdk
+
+        :param code: 算法服务定义的错误码
+        :type code: str
+        :param message: 算法服务反馈的错误信息
+        :type message: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class TaskDetailsError:
         算法服务定义的错误码
 
         :param code: The code of this TaskDetailsError.
-        :type: str
+        :type code: str
         """
         self._code = code
 
@@ -83,7 +90,7 @@ class TaskDetailsError:
         算法服务反馈的错误信息
 
         :param message: The message of this TaskDetailsError.
-        :type: str
+        :type message: str
         """
         self._message = message
 

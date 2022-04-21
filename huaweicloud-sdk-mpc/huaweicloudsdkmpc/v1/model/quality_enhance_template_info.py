@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QualityEnhanceTemplateInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class QualityEnhanceTemplateInfo:
     }
 
     def __init__(self, template_id=None, template=None, error=None):
-        """QualityEnhanceTemplateInfo - a model defined in huaweicloud sdk"""
+        """QualityEnhanceTemplateInfo
+
+        The model defined in huaweicloud sdk
+
+        :param template_id: 模板ID。 
+        :type template_id: int
+        :param template: 
+        :type template: :class:`huaweicloudsdkmpc.v1.QualityEnhanceTemplate`
+        :param error: 
+        :type error: :class:`huaweicloudsdkmpc.v1.XCodeError`
+        """
         
         
 
@@ -68,7 +77,7 @@ class QualityEnhanceTemplateInfo:
         模板ID。 
 
         :param template_id: The template_id of this QualityEnhanceTemplateInfo.
-        :type: int
+        :type template_id: int
         """
         self._template_id = template_id
 
@@ -78,7 +87,7 @@ class QualityEnhanceTemplateInfo:
 
 
         :return: The template of this QualityEnhanceTemplateInfo.
-        :rtype: QualityEnhanceTemplate
+        :rtype: :class:`huaweicloudsdkmpc.v1.QualityEnhanceTemplate`
         """
         return self._template
 
@@ -88,7 +97,7 @@ class QualityEnhanceTemplateInfo:
 
 
         :param template: The template of this QualityEnhanceTemplateInfo.
-        :type: QualityEnhanceTemplate
+        :type template: :class:`huaweicloudsdkmpc.v1.QualityEnhanceTemplate`
         """
         self._template = template
 
@@ -98,7 +107,7 @@ class QualityEnhanceTemplateInfo:
 
 
         :return: The error of this QualityEnhanceTemplateInfo.
-        :rtype: XCodeError
+        :rtype: :class:`huaweicloudsdkmpc.v1.XCodeError`
         """
         return self._error
 
@@ -108,7 +117,7 @@ class QualityEnhanceTemplateInfo:
 
 
         :param error: The error of this QualityEnhanceTemplateInfo.
-        :type: XCodeError
+        :type error: :class:`huaweicloudsdkmpc.v1.XCodeError`
         """
         self._error = error
 

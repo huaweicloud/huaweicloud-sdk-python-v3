@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateCustomfieldsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class CreateCustomfieldsResponse(SdkResponse):
     }
 
     def __init__(self, options=None, region=None, id=None, identifier=None, project_id=None, tracker_id=None, custom_field=None, type=None, name=None, sort=None, memo=None, created=None, modified=None, is_delete=None):
-        """CreateCustomfieldsResponse - a model defined in huaweicloud sdk"""
+        """CreateCustomfieldsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param options: 字段选项
+        :type options: str
+        :param region: 系统字段
+        :type region: str
+        :param id: 字段ID
+        :type id: int
+        :param identifier: 字段ID
+        :type identifier: str
+        :param project_id: 项目ID
+        :type project_id: int
+        :param tracker_id: 工作项类型id
+        :type tracker_id: int
+        :param custom_field: 系统字段名
+        :type custom_field: str
+        :param type: 字段类型
+        :type type: str
+        :param name: 字段名称
+        :type name: str
+        :param sort: 系统字段
+        :type sort: int
+        :param memo: 字段描述
+        :type memo: str
+        :param created: 创建时间
+        :type created: str
+        :param modified: 修改时间
+        :type modified: str
+        :param is_delete: 是否被删除
+        :type is_delete: bool
+        """
         
         super(CreateCustomfieldsResponse, self).__init__()
 
@@ -123,7 +154,7 @@ class CreateCustomfieldsResponse(SdkResponse):
         字段选项
 
         :param options: The options of this CreateCustomfieldsResponse.
-        :type: str
+        :type options: str
         """
         self._options = options
 
@@ -145,7 +176,7 @@ class CreateCustomfieldsResponse(SdkResponse):
         系统字段
 
         :param region: The region of this CreateCustomfieldsResponse.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -167,7 +198,7 @@ class CreateCustomfieldsResponse(SdkResponse):
         字段ID
 
         :param id: The id of this CreateCustomfieldsResponse.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -189,7 +220,7 @@ class CreateCustomfieldsResponse(SdkResponse):
         字段ID
 
         :param identifier: The identifier of this CreateCustomfieldsResponse.
-        :type: str
+        :type identifier: str
         """
         self._identifier = identifier
 
@@ -211,7 +242,7 @@ class CreateCustomfieldsResponse(SdkResponse):
         项目ID
 
         :param project_id: The project_id of this CreateCustomfieldsResponse.
-        :type: int
+        :type project_id: int
         """
         self._project_id = project_id
 
@@ -233,7 +264,7 @@ class CreateCustomfieldsResponse(SdkResponse):
         工作项类型id
 
         :param tracker_id: The tracker_id of this CreateCustomfieldsResponse.
-        :type: int
+        :type tracker_id: int
         """
         self._tracker_id = tracker_id
 
@@ -255,7 +286,7 @@ class CreateCustomfieldsResponse(SdkResponse):
         系统字段名
 
         :param custom_field: The custom_field of this CreateCustomfieldsResponse.
-        :type: str
+        :type custom_field: str
         """
         self._custom_field = custom_field
 
@@ -277,7 +308,7 @@ class CreateCustomfieldsResponse(SdkResponse):
         字段类型
 
         :param type: The type of this CreateCustomfieldsResponse.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -299,7 +330,7 @@ class CreateCustomfieldsResponse(SdkResponse):
         字段名称
 
         :param name: The name of this CreateCustomfieldsResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -321,7 +352,7 @@ class CreateCustomfieldsResponse(SdkResponse):
         系统字段
 
         :param sort: The sort of this CreateCustomfieldsResponse.
-        :type: int
+        :type sort: int
         """
         self._sort = sort
 
@@ -343,7 +374,7 @@ class CreateCustomfieldsResponse(SdkResponse):
         字段描述
 
         :param memo: The memo of this CreateCustomfieldsResponse.
-        :type: str
+        :type memo: str
         """
         self._memo = memo
 
@@ -365,7 +396,7 @@ class CreateCustomfieldsResponse(SdkResponse):
         创建时间
 
         :param created: The created of this CreateCustomfieldsResponse.
-        :type: str
+        :type created: str
         """
         self._created = created
 
@@ -387,7 +418,7 @@ class CreateCustomfieldsResponse(SdkResponse):
         修改时间
 
         :param modified: The modified of this CreateCustomfieldsResponse.
-        :type: str
+        :type modified: str
         """
         self._modified = modified
 
@@ -409,7 +440,7 @@ class CreateCustomfieldsResponse(SdkResponse):
         是否被删除
 
         :param is_delete: The is_delete of this CreateCustomfieldsResponse.
-        :type: bool
+        :type is_delete: bool
         """
         self._is_delete = is_delete
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowResultsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowResultsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, data=None, statistics=None):
-        """ShowResultsResponse - a model defined in huaweicloud sdk"""
+        """ShowResultsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 漏洞总数
+        :type total: int
+        :param data: 漏洞信息列表
+        :type data: list[:class:`huaweicloudsdkvss.v3.VulnItem`]
+        :param statistics: 
+        :type statistics: :class:`huaweicloudsdkvss.v3.VulnsLevel`
+        """
         
         super(ShowResultsResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ShowResultsResponse(SdkResponse):
         漏洞总数
 
         :param total: The total of this ShowResultsResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -79,7 +88,7 @@ class ShowResultsResponse(SdkResponse):
         漏洞信息列表
 
         :return: The data of this ShowResultsResponse.
-        :rtype: list[VulnItem]
+        :rtype: list[:class:`huaweicloudsdkvss.v3.VulnItem`]
         """
         return self._data
 
@@ -90,7 +99,7 @@ class ShowResultsResponse(SdkResponse):
         漏洞信息列表
 
         :param data: The data of this ShowResultsResponse.
-        :type: list[VulnItem]
+        :type data: list[:class:`huaweicloudsdkvss.v3.VulnItem`]
         """
         self._data = data
 
@@ -100,7 +109,7 @@ class ShowResultsResponse(SdkResponse):
 
 
         :return: The statistics of this ShowResultsResponse.
-        :rtype: VulnsLevel
+        :rtype: :class:`huaweicloudsdkvss.v3.VulnsLevel`
         """
         return self._statistics
 
@@ -110,7 +119,7 @@ class ShowResultsResponse(SdkResponse):
 
 
         :param statistics: The statistics of this ShowResultsResponse.
-        :type: VulnsLevel
+        :type statistics: :class:`huaweicloudsdkvss.v3.VulnsLevel`
         """
         self._statistics = statistics
 

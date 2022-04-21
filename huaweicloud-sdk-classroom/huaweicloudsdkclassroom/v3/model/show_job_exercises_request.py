@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowJobExercisesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ShowJobExercisesRequest:
     }
 
     def __init__(self, job_id=None, source_from=None, source_id=None, offset=None, limit=None):
-        """ShowJobExercisesRequest - a model defined in huaweicloud sdk"""
+        """ShowJobExercisesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 作业ID。
+        :type job_id: str
+        :param source_from: 作业来源于课堂或课程。 取值范围： classroom:课堂作业 course:课程作业
+        :type source_from: str
+        :param source_id: 课堂ID或者课程ID。
+        :type source_id: str
+        :param offset: 信息记录的起始编号
+        :type offset: int
+        :param limit: 每页包含的信息记录数
+        :type limit: int
+        """
         
         
 
@@ -75,7 +88,7 @@ class ShowJobExercisesRequest:
         作业ID。
 
         :param job_id: The job_id of this ShowJobExercisesRequest.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -97,7 +110,7 @@ class ShowJobExercisesRequest:
         作业来源于课堂或课程。 取值范围： classroom:课堂作业 course:课程作业
 
         :param source_from: The source_from of this ShowJobExercisesRequest.
-        :type: str
+        :type source_from: str
         """
         self._source_from = source_from
 
@@ -119,7 +132,7 @@ class ShowJobExercisesRequest:
         课堂ID或者课程ID。
 
         :param source_id: The source_id of this ShowJobExercisesRequest.
-        :type: str
+        :type source_id: str
         """
         self._source_id = source_id
 
@@ -141,7 +154,7 @@ class ShowJobExercisesRequest:
         信息记录的起始编号
 
         :param offset: The offset of this ShowJobExercisesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -163,7 +176,7 @@ class ShowJobExercisesRequest:
         每页包含的信息记录数
 
         :param limit: The limit of this ShowJobExercisesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

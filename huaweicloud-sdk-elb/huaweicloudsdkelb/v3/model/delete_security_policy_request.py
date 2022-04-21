@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteSecurityPolicyRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteSecurityPolicyRequest:
     }
 
     def __init__(self, security_policy_id=None):
-        """DeleteSecurityPolicyRequest - a model defined in huaweicloud sdk"""
+        """DeleteSecurityPolicyRequest
+
+        The model defined in huaweicloud sdk
+
+        :param security_policy_id: 自定义安全策略的ID。
+        :type security_policy_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteSecurityPolicyRequest:
         自定义安全策略的ID。
 
         :param security_policy_id: The security_policy_id of this DeleteSecurityPolicyRequest.
-        :type: str
+        :type security_policy_id: str
         """
         self._security_policy_id = security_policy_id
 

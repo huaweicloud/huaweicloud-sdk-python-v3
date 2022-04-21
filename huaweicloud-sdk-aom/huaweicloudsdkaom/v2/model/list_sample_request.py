@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSampleRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListSampleRequest:
     }
 
     def __init__(self, fill_value=None, body=None):
-        """ListSampleRequest - a model defined in huaweicloud sdk"""
+        """ListSampleRequest
+
+        The model defined in huaweicloud sdk
+
+        :param fill_value: 用于对查询到的时序数据进行断点插值，默认值为-1。 -1：断点处使用-1进行表示。 0 ：断点处使用0进行表示。 null：断点处使用null进行表示。 average：断点处使用前后邻近的有效数据的平均值进行表示，如果不存在有效数据则使用null进行表示。
+        :type fill_value: str
+        :param body: Body of the ListSampleRequest
+        :type body: :class:`huaweicloudsdkaom.v2.QuerySampleParam`
+        """
         
         
 
@@ -63,7 +70,7 @@ class ListSampleRequest:
         用于对查询到的时序数据进行断点插值，默认值为-1。 -1：断点处使用-1进行表示。 0 ：断点处使用0进行表示。 null：断点处使用null进行表示。 average：断点处使用前后邻近的有效数据的平均值进行表示，如果不存在有效数据则使用null进行表示。
 
         :param fill_value: The fill_value of this ListSampleRequest.
-        :type: str
+        :type fill_value: str
         """
         self._fill_value = fill_value
 
@@ -73,7 +80,7 @@ class ListSampleRequest:
 
 
         :return: The body of this ListSampleRequest.
-        :rtype: QuerySampleParam
+        :rtype: :class:`huaweicloudsdkaom.v2.QuerySampleParam`
         """
         return self._body
 
@@ -83,7 +90,7 @@ class ListSampleRequest:
 
 
         :param body: The body of this ListSampleRequest.
-        :type: QuerySampleParam
+        :type body: :class:`huaweicloudsdkaom.v2.QuerySampleParam`
         """
         self._body = body
 

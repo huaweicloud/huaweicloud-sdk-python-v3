@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EnterpriseProject:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class EnterpriseProject:
     }
 
     def __init__(self, name=None, description=None, type=None):
-        """EnterpriseProject - a model defined in huaweicloud sdk"""
+        """EnterpriseProject
+
+        The model defined in huaweicloud sdk
+
+        :param name: 只能由中文字符、英文字母（a~zA~Z）、数字（0~9）、下划线（_）、中划线（-）组成，且长度为[1-64]个字符。名称不能为大小写混合的default，且在租户账号内唯一。
+        :type name: str
+        :param description: 最大长度512个字符。
+        :type description: str
+        :param type: 企业项目类型
+        :type type: str
+        """
         
         
 
@@ -67,7 +76,7 @@ class EnterpriseProject:
         只能由中文字符、英文字母（a~zA~Z）、数字（0~9）、下划线（_）、中划线（-）组成，且长度为[1-64]个字符。名称不能为大小写混合的default，且在租户账号内唯一。
 
         :param name: The name of this EnterpriseProject.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -89,7 +98,7 @@ class EnterpriseProject:
         最大长度512个字符。
 
         :param description: The description of this EnterpriseProject.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -111,7 +120,7 @@ class EnterpriseProject:
         企业项目类型
 
         :param type: The type of this EnterpriseProject.
-        :type: str
+        :type type: str
         """
         self._type = type
 

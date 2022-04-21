@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreatePostPaidInstanceReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -84,7 +83,67 @@ class CreatePostPaidInstanceReq:
     }
 
     def __init__(self, name=None, description=None, engine=None, engine_version=None, specification=None, storage_space=None, partition_num=None, access_user=None, password=None, vpc_id=None, security_group_id=None, subnet_id=None, available_zones=None, product_id=None, kafka_manager_user=None, kafka_manager_password=None, maintain_begin=None, maintain_end=None, enable_publicip=None, public_bandwidth=None, publicip_id=None, ssl_enable=None, retention_policy=None, connector_enable=None, enable_auto_topic=None, storage_spec_code=None, enterprise_project_id=None, tags=None):
-        """CreatePostPaidInstanceReq - a model defined in huaweicloud sdk"""
+        """CreatePostPaidInstanceReq
+
+        The model defined in huaweicloud sdk
+
+        :param name: 实例名称。  由英文字符开头，只能由英文字母、数字、中划线、下划线组成，长度为4~64的字符。
+        :type name: str
+        :param description: 实例的描述信息。  长度不超过1024的字符串。  &gt; \\与\&quot;在json报文中属于特殊字符，如果参数值中需要显示\\或者\&quot;字符，请在字符前增加转义字符\\，比如\\\\或者\\\&quot;。
+        :type description: str
+        :param engine: 消息引擎。取值填写为：kafka。
+        :type engine: str
+        :param engine_version: 消息引擎的版本。取值填写为：1.1.0和2.3.0。
+        :type engine_version: str
+        :param specification: Kafka实例的基准带宽，表示单位时间内传送的最大数据量，单位MB。 取值范围：   - 100MB   - 300MB   - 600MB   - 1200MB
+        :type specification: str
+        :param storage_space: 消息存储空间，单位GB。   - Kafka实例规格为100MB时，存储空间取值范围600GB ~ 90000GB。   - Kafka实例规格为300MB时，存储空间取值范围1200GB ~ 90000GB。   - Kafka实例规格为600MB时，存储空间取值范围2400GB ~ 90000GB。   - Kafka实例规格为1200MB，存储空间取值范围4800GB ~ 90000GB。
+        :type storage_space: int
+        :param partition_num: Kafka实例的最大分区数量。   - 参数specification为100MB时，取值300   - 参数specification为300MB时，取值900   - 参数specification为600MB时，取值1800   - 参数specification为1200MB时，取值1800
+        :type partition_num: int
+        :param access_user: 当ssl_enable为true时，该参数必选，ssl_enable为false时，该参数无效。  认证用户名，只能由英文字母、数字、中划线组成，长度为4~64的字符。
+        :type access_user: str
+        :param password: 当ssl_enable为true时，该参数必选，ssl_enable为false时，该参数无效。  实例的认证密码。  复杂度要求： - 输入长度为8到32位的字符串。 - 必须包含如下四种字符中的两种组合：   - 小写字母   - 大写字母   - 数字   - 特殊字符包括（&#x60;~!@#$%^&amp;*()-_&#x3D;+\\|[{}]:&#39;\&quot;,&lt;.&gt;/?）
+        :type password: str
+        :param vpc_id: 虚拟私有云ID。  获取方法如下：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。
+        :type vpc_id: str
+        :param security_group_id: 指定实例所属的安全组。  获取方法如下：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。
+        :type security_group_id: str
+        :param subnet_id: 子网信息。  获取方法如下：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。
+        :type subnet_id: str
+        :param available_zones: 创建节点到指定且有资源的可用区ID。该参数不能为空数组或者数组的值为空。 创建Kafka实例，支持节点部署在1个或3个及3个以上的可用区。在为节点指定可用区时，用逗号分隔开。
+        :type available_zones: list[str]
+        :param product_id: 产品标识。
+        :type product_id: str
+        :param kafka_manager_user: 表示登录Kafka Manager的用户名。只能由英文字母、数字、中划线组成，长度为4~64的字符。
+        :type kafka_manager_user: str
+        :param kafka_manager_password: 表示登录Kafka Manager的密码。  复杂度要求：   - 输入长度为8到32位的字符串。   - 必须包含如下四种字符中的两种组合：       - 小写字母       - 大写字母       - 数字       - 特殊字符包括（&#x60;~!@#$%^&amp;*()-_&#x3D;+\\|[{}]:&#39;\&quot;,&lt;.&gt;/?）
+        :type kafka_manager_password: str
+        :param maintain_begin: 维护时间窗开始时间，格式为HH:mm。 - 维护时间窗开始和结束时间必须为指定的时间段。 - 开始时间必须为22:00、02:00、06:00、10:00、14:00和18:00。 - 该参数不能单独为空，若该值为空，则结束时间也为空。系统分配一个默认开始时间02:00。
+        :type maintain_begin: str
+        :param maintain_end: 维护时间窗结束时间，格式为HH:mm。 - 维护时间窗开始和结束时间必须为指定的时间段。 - 结束时间在开始时间基础上加四个小时，即当开始时间为22:00时，结束时间为02:00。 - 该参数不能单独为空，若该值为空，则开始时间也为空，系统分配一个默认结束时间06:00。
+        :type maintain_end: str
+        :param enable_publicip: 是否开启公网访问功能。默认不开启公网。 - true：开启 - false：不开启
+        :type enable_publicip: bool
+        :param public_bandwidth: 表示公网带宽，单位是Mbit/s。 取值范围： - Kafka实例规格为100MB时，公网带宽取值范围3到900，且必须为实例节点个数的倍数。 - Kafka实例规格为300MB时，公网带宽取值范围3到900，且必须为实例节点个数的倍数。 - Kafka实例规格为600MB时，公网带宽取值范围4到1200，且必须为实例节点个数的倍数。 - Kafka实例规格为1200MB时，公网带宽取值范围8到2400，且必须为实例节点个数的倍数。
+        :type public_bandwidth: int
+        :param publicip_id: 实例绑定的弹性IP地址的ID。  以英文逗号隔开多个弹性IP地址的ID。  如果开启了公网访问功能（即enable_publicip为true），该字段为必选。
+        :type publicip_id: str
+        :param ssl_enable: 是否打开SSL加密访问。 - true：打开SSL加密访问。 - false：不打开SSL加密访问。
+        :type ssl_enable: bool
+        :param retention_policy: 磁盘的容量到达容量阈值后，对于消息的处理策略。  取值如下： - produce_reject：表示拒绝消息写入。 - time_base：表示自动删除最老消息。
+        :type retention_policy: str
+        :param connector_enable: 是否开启消息转储功能。  默认不开启消息转储。
+        :type connector_enable: bool
+        :param enable_auto_topic: 是否打开kafka自动创建topic功能。 - true：开启 - false：关闭  当您选择开启，表示生产或消费一个未创建的Topic时，会自动创建一个包含3个分区和3个副本的Topic。
+        :type enable_auto_topic: bool
+        :param storage_spec_code: 存储IO规格。 取值范围：   - 参数specification为100MB时，取值dms.physical.storage.high或者dms.physical.storage.ultra   - 参数specification为300MB时，取值dms.physical.storage.high或者dms.physical.storage.ultra   - 参数specification为600MB时，取值dms.physical.storage.ultra   - 参数specification为1200MB时，取值dms.physical.storage.ultra存储IO规格。如何选择磁盘类型请参考磁盘类型及性能介绍。
+        :type storage_spec_code: str
+        :param enterprise_project_id: 企业项目ID。若为企业项目帐号，该参数必填。
+        :type enterprise_project_id: str
+        :param tags: 标签列表。
+        :type tags: list[:class:`huaweicloudsdkkafka.v2.TagEntity`]
+        """
         
         
 
@@ -180,7 +239,7 @@ class CreatePostPaidInstanceReq:
         实例名称。  由英文字符开头，只能由英文字母、数字、中划线、下划线组成，长度为4~64的字符。
 
         :param name: The name of this CreatePostPaidInstanceReq.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -202,7 +261,7 @@ class CreatePostPaidInstanceReq:
         实例的描述信息。  长度不超过1024的字符串。  > \\与\"在json报文中属于特殊字符，如果参数值中需要显示\\或者\"字符，请在字符前增加转义字符\\，比如\\\\或者\\\"。
 
         :param description: The description of this CreatePostPaidInstanceReq.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -224,7 +283,7 @@ class CreatePostPaidInstanceReq:
         消息引擎。取值填写为：kafka。
 
         :param engine: The engine of this CreatePostPaidInstanceReq.
-        :type: str
+        :type engine: str
         """
         self._engine = engine
 
@@ -246,7 +305,7 @@ class CreatePostPaidInstanceReq:
         消息引擎的版本。取值填写为：1.1.0和2.3.0。
 
         :param engine_version: The engine_version of this CreatePostPaidInstanceReq.
-        :type: str
+        :type engine_version: str
         """
         self._engine_version = engine_version
 
@@ -268,7 +327,7 @@ class CreatePostPaidInstanceReq:
         Kafka实例的基准带宽，表示单位时间内传送的最大数据量，单位MB。 取值范围：   - 100MB   - 300MB   - 600MB   - 1200MB
 
         :param specification: The specification of this CreatePostPaidInstanceReq.
-        :type: str
+        :type specification: str
         """
         self._specification = specification
 
@@ -290,7 +349,7 @@ class CreatePostPaidInstanceReq:
         消息存储空间，单位GB。   - Kafka实例规格为100MB时，存储空间取值范围600GB ~ 90000GB。   - Kafka实例规格为300MB时，存储空间取值范围1200GB ~ 90000GB。   - Kafka实例规格为600MB时，存储空间取值范围2400GB ~ 90000GB。   - Kafka实例规格为1200MB，存储空间取值范围4800GB ~ 90000GB。
 
         :param storage_space: The storage_space of this CreatePostPaidInstanceReq.
-        :type: int
+        :type storage_space: int
         """
         self._storage_space = storage_space
 
@@ -312,7 +371,7 @@ class CreatePostPaidInstanceReq:
         Kafka实例的最大分区数量。   - 参数specification为100MB时，取值300   - 参数specification为300MB时，取值900   - 参数specification为600MB时，取值1800   - 参数specification为1200MB时，取值1800
 
         :param partition_num: The partition_num of this CreatePostPaidInstanceReq.
-        :type: int
+        :type partition_num: int
         """
         self._partition_num = partition_num
 
@@ -334,7 +393,7 @@ class CreatePostPaidInstanceReq:
         当ssl_enable为true时，该参数必选，ssl_enable为false时，该参数无效。  认证用户名，只能由英文字母、数字、中划线组成，长度为4~64的字符。
 
         :param access_user: The access_user of this CreatePostPaidInstanceReq.
-        :type: str
+        :type access_user: str
         """
         self._access_user = access_user
 
@@ -356,7 +415,7 @@ class CreatePostPaidInstanceReq:
         当ssl_enable为true时，该参数必选，ssl_enable为false时，该参数无效。  实例的认证密码。  复杂度要求： - 输入长度为8到32位的字符串。 - 必须包含如下四种字符中的两种组合：   - 小写字母   - 大写字母   - 数字   - 特殊字符包括（`~!@#$%^&*()-_=+\\|[{}]:'\",<.>/?）
 
         :param password: The password of this CreatePostPaidInstanceReq.
-        :type: str
+        :type password: str
         """
         self._password = password
 
@@ -378,7 +437,7 @@ class CreatePostPaidInstanceReq:
         虚拟私有云ID。  获取方法如下：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。
 
         :param vpc_id: The vpc_id of this CreatePostPaidInstanceReq.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -400,7 +459,7 @@ class CreatePostPaidInstanceReq:
         指定实例所属的安全组。  获取方法如下：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。
 
         :param security_group_id: The security_group_id of this CreatePostPaidInstanceReq.
-        :type: str
+        :type security_group_id: str
         """
         self._security_group_id = security_group_id
 
@@ -422,7 +481,7 @@ class CreatePostPaidInstanceReq:
         子网信息。  获取方法如下：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。
 
         :param subnet_id: The subnet_id of this CreatePostPaidInstanceReq.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -444,7 +503,7 @@ class CreatePostPaidInstanceReq:
         创建节点到指定且有资源的可用区ID。该参数不能为空数组或者数组的值为空。 创建Kafka实例，支持节点部署在1个或3个及3个以上的可用区。在为节点指定可用区时，用逗号分隔开。
 
         :param available_zones: The available_zones of this CreatePostPaidInstanceReq.
-        :type: list[str]
+        :type available_zones: list[str]
         """
         self._available_zones = available_zones
 
@@ -466,7 +525,7 @@ class CreatePostPaidInstanceReq:
         产品标识。
 
         :param product_id: The product_id of this CreatePostPaidInstanceReq.
-        :type: str
+        :type product_id: str
         """
         self._product_id = product_id
 
@@ -488,7 +547,7 @@ class CreatePostPaidInstanceReq:
         表示登录Kafka Manager的用户名。只能由英文字母、数字、中划线组成，长度为4~64的字符。
 
         :param kafka_manager_user: The kafka_manager_user of this CreatePostPaidInstanceReq.
-        :type: str
+        :type kafka_manager_user: str
         """
         self._kafka_manager_user = kafka_manager_user
 
@@ -510,7 +569,7 @@ class CreatePostPaidInstanceReq:
         表示登录Kafka Manager的密码。  复杂度要求：   - 输入长度为8到32位的字符串。   - 必须包含如下四种字符中的两种组合：       - 小写字母       - 大写字母       - 数字       - 特殊字符包括（`~!@#$%^&*()-_=+\\|[{}]:'\",<.>/?）
 
         :param kafka_manager_password: The kafka_manager_password of this CreatePostPaidInstanceReq.
-        :type: str
+        :type kafka_manager_password: str
         """
         self._kafka_manager_password = kafka_manager_password
 
@@ -532,7 +591,7 @@ class CreatePostPaidInstanceReq:
         维护时间窗开始时间，格式为HH:mm。 - 维护时间窗开始和结束时间必须为指定的时间段。 - 开始时间必须为22:00、02:00、06:00、10:00、14:00和18:00。 - 该参数不能单独为空，若该值为空，则结束时间也为空。系统分配一个默认开始时间02:00。
 
         :param maintain_begin: The maintain_begin of this CreatePostPaidInstanceReq.
-        :type: str
+        :type maintain_begin: str
         """
         self._maintain_begin = maintain_begin
 
@@ -554,7 +613,7 @@ class CreatePostPaidInstanceReq:
         维护时间窗结束时间，格式为HH:mm。 - 维护时间窗开始和结束时间必须为指定的时间段。 - 结束时间在开始时间基础上加四个小时，即当开始时间为22:00时，结束时间为02:00。 - 该参数不能单独为空，若该值为空，则开始时间也为空，系统分配一个默认结束时间06:00。
 
         :param maintain_end: The maintain_end of this CreatePostPaidInstanceReq.
-        :type: str
+        :type maintain_end: str
         """
         self._maintain_end = maintain_end
 
@@ -576,7 +635,7 @@ class CreatePostPaidInstanceReq:
         是否开启公网访问功能。默认不开启公网。 - true：开启 - false：不开启
 
         :param enable_publicip: The enable_publicip of this CreatePostPaidInstanceReq.
-        :type: bool
+        :type enable_publicip: bool
         """
         self._enable_publicip = enable_publicip
 
@@ -598,7 +657,7 @@ class CreatePostPaidInstanceReq:
         表示公网带宽，单位是Mbit/s。 取值范围： - Kafka实例规格为100MB时，公网带宽取值范围3到900，且必须为实例节点个数的倍数。 - Kafka实例规格为300MB时，公网带宽取值范围3到900，且必须为实例节点个数的倍数。 - Kafka实例规格为600MB时，公网带宽取值范围4到1200，且必须为实例节点个数的倍数。 - Kafka实例规格为1200MB时，公网带宽取值范围8到2400，且必须为实例节点个数的倍数。
 
         :param public_bandwidth: The public_bandwidth of this CreatePostPaidInstanceReq.
-        :type: int
+        :type public_bandwidth: int
         """
         self._public_bandwidth = public_bandwidth
 
@@ -620,7 +679,7 @@ class CreatePostPaidInstanceReq:
         实例绑定的弹性IP地址的ID。  以英文逗号隔开多个弹性IP地址的ID。  如果开启了公网访问功能（即enable_publicip为true），该字段为必选。
 
         :param publicip_id: The publicip_id of this CreatePostPaidInstanceReq.
-        :type: str
+        :type publicip_id: str
         """
         self._publicip_id = publicip_id
 
@@ -642,7 +701,7 @@ class CreatePostPaidInstanceReq:
         是否打开SSL加密访问。 - true：打开SSL加密访问。 - false：不打开SSL加密访问。
 
         :param ssl_enable: The ssl_enable of this CreatePostPaidInstanceReq.
-        :type: bool
+        :type ssl_enable: bool
         """
         self._ssl_enable = ssl_enable
 
@@ -664,7 +723,7 @@ class CreatePostPaidInstanceReq:
         磁盘的容量到达容量阈值后，对于消息的处理策略。  取值如下： - produce_reject：表示拒绝消息写入。 - time_base：表示自动删除最老消息。
 
         :param retention_policy: The retention_policy of this CreatePostPaidInstanceReq.
-        :type: str
+        :type retention_policy: str
         """
         self._retention_policy = retention_policy
 
@@ -686,7 +745,7 @@ class CreatePostPaidInstanceReq:
         是否开启消息转储功能。  默认不开启消息转储。
 
         :param connector_enable: The connector_enable of this CreatePostPaidInstanceReq.
-        :type: bool
+        :type connector_enable: bool
         """
         self._connector_enable = connector_enable
 
@@ -708,7 +767,7 @@ class CreatePostPaidInstanceReq:
         是否打开kafka自动创建topic功能。 - true：开启 - false：关闭  当您选择开启，表示生产或消费一个未创建的Topic时，会自动创建一个包含3个分区和3个副本的Topic。
 
         :param enable_auto_topic: The enable_auto_topic of this CreatePostPaidInstanceReq.
-        :type: bool
+        :type enable_auto_topic: bool
         """
         self._enable_auto_topic = enable_auto_topic
 
@@ -730,7 +789,7 @@ class CreatePostPaidInstanceReq:
         存储IO规格。 取值范围：   - 参数specification为100MB时，取值dms.physical.storage.high或者dms.physical.storage.ultra   - 参数specification为300MB时，取值dms.physical.storage.high或者dms.physical.storage.ultra   - 参数specification为600MB时，取值dms.physical.storage.ultra   - 参数specification为1200MB时，取值dms.physical.storage.ultra存储IO规格。如何选择磁盘类型请参考磁盘类型及性能介绍。
 
         :param storage_spec_code: The storage_spec_code of this CreatePostPaidInstanceReq.
-        :type: str
+        :type storage_spec_code: str
         """
         self._storage_spec_code = storage_spec_code
 
@@ -752,7 +811,7 @@ class CreatePostPaidInstanceReq:
         企业项目ID。若为企业项目帐号，该参数必填。
 
         :param enterprise_project_id: The enterprise_project_id of this CreatePostPaidInstanceReq.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -763,7 +822,7 @@ class CreatePostPaidInstanceReq:
         标签列表。
 
         :return: The tags of this CreatePostPaidInstanceReq.
-        :rtype: list[TagEntity]
+        :rtype: list[:class:`huaweicloudsdkkafka.v2.TagEntity`]
         """
         return self._tags
 
@@ -774,7 +833,7 @@ class CreatePostPaidInstanceReq:
         标签列表。
 
         :param tags: The tags of this CreatePostPaidInstanceReq.
-        :type: list[TagEntity]
+        :type tags: list[:class:`huaweicloudsdkkafka.v2.TagEntity`]
         """
         self._tags = tags
 

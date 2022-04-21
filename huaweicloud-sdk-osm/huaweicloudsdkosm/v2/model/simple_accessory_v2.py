@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SimpleAccessoryV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class SimpleAccessoryV2:
     }
 
     def __init__(self, accessory_id=None, file_actual_name=None):
-        """SimpleAccessoryV2 - a model defined in huaweicloud sdk"""
+        """SimpleAccessoryV2
+
+        The model defined in huaweicloud sdk
+
+        :param accessory_id: 附件id
+        :type accessory_id: str
+        :param file_actual_name: 附件实际名称
+        :type file_actual_name: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class SimpleAccessoryV2:
         附件id
 
         :param accessory_id: The accessory_id of this SimpleAccessoryV2.
-        :type: str
+        :type accessory_id: str
         """
         self._accessory_id = accessory_id
 
@@ -85,7 +92,7 @@ class SimpleAccessoryV2:
         附件实际名称
 
         :param file_actual_name: The file_actual_name of this SimpleAccessoryV2.
-        :type: str
+        :type file_actual_name: str
         """
         self._file_actual_name = file_actual_name
 

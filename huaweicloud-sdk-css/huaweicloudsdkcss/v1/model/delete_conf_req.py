@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteConfReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteConfReq:
     }
 
     def __init__(self, name=None):
-        """DeleteConfReq - a model defined in huaweicloud sdk"""
+        """DeleteConfReq
+
+        The model defined in huaweicloud sdk
+
+        :param name: 配置文件名称。
+        :type name: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteConfReq:
         配置文件名称。
 
         :param name: The name of this DeleteConfReq.
-        :type: str
+        :type name: str
         """
         self._name = name
 

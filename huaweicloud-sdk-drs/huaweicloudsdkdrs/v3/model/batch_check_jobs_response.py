@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchCheckJobsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchCheckJobsResponse(SdkResponse):
     }
 
     def __init__(self, results=None, count=None):
-        """BatchCheckJobsResponse - a model defined in huaweicloud sdk"""
+        """BatchCheckJobsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param results: 预检查响应体
+        :type results: list[:class:`huaweicloudsdkdrs.v3.PostPreCheckResp`]
+        :param count: 总数
+        :type count: int
+        """
         
         super(BatchCheckJobsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class BatchCheckJobsResponse(SdkResponse):
         预检查响应体
 
         :return: The results of this BatchCheckJobsResponse.
-        :rtype: list[PostPreCheckResp]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.PostPreCheckResp`]
         """
         return self._results
 
@@ -63,7 +70,7 @@ class BatchCheckJobsResponse(SdkResponse):
         预检查响应体
 
         :param results: The results of this BatchCheckJobsResponse.
-        :type: list[PostPreCheckResp]
+        :type results: list[:class:`huaweicloudsdkdrs.v3.PostPreCheckResp`]
         """
         self._results = results
 
@@ -85,7 +92,7 @@ class BatchCheckJobsResponse(SdkResponse):
         总数
 
         :param count: The count of this BatchCheckJobsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

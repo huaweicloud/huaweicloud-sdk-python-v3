@@ -52,21 +52,17 @@ class TmsAsyncClient(Client):
         """创建预定义标签
 
         用于创建预定标签。用户创建预定义标签后，可以使用预定义标签来给资源创建标签。该接口支持幂等特性和处理批量数据。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreatePredefineTagsRequest request
-        :return: CreatePredefineTagsResponse
+        :param request: Request instance for CreatePredefineTags
+        :type request: :class:`huaweicloudsdktms.v1.CreatePredefineTagsRequest`
+        :rtype: :class:`huaweicloudsdktms.v1.CreatePredefineTagsResponse`
         """
         return self.create_predefine_tags_with_http_info(request)
 
     def create_predefine_tags_with_http_info(self, request):
-        """创建预定义标签
-
-        用于创建预定标签。用户创建预定义标签后，可以使用预定义标签来给资源创建标签。该接口支持幂等特性和处理批量数据。
-
-        :param CreatePredefineTagsRequest request
-        :return: CreatePredefineTagsResponse
-        """
-
         all_params = ['req_create_predefine_tag']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -110,26 +106,21 @@ class TmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_predefine_tags_async(self, request):
         """删除预定义标签
 
         用于删除预定标签。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeletePredefineTagsRequest request
-        :return: DeletePredefineTagsResponse
+        :param request: Request instance for DeletePredefineTags
+        :type request: :class:`huaweicloudsdktms.v1.DeletePredefineTagsRequest`
+        :rtype: :class:`huaweicloudsdktms.v1.DeletePredefineTagsResponse`
         """
         return self.delete_predefine_tags_with_http_info(request)
 
     def delete_predefine_tags_with_http_info(self, request):
-        """删除预定义标签
-
-        用于删除预定标签。
-
-        :param DeletePredefineTagsRequest request
-        :return: DeletePredefineTagsResponse
-        """
-
         all_params = ['req_delete_predefine_tag']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -173,26 +164,21 @@ class TmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_api_versions_async(self, request):
         """查询API版本列表
 
         查询标签管理服务的API版本列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListApiVersionsRequest request
-        :return: ListApiVersionsResponse
+        :param request: Request instance for ListApiVersions
+        :type request: :class:`huaweicloudsdktms.v1.ListApiVersionsRequest`
+        :rtype: :class:`huaweicloudsdktms.v1.ListApiVersionsResponse`
         """
         return self.list_api_versions_with_http_info(request)
 
     def list_api_versions_with_http_info(self, request):
-        """查询API版本列表
-
-        查询标签管理服务的API版本列表。
-
-        :param ListApiVersionsRequest request
-        :return: ListApiVersionsResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -234,26 +220,21 @@ class TmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_predefine_tags_async(self, request):
         """查询预定义标签列表
 
         用于查询预定义标签列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListPredefineTagsRequest request
-        :return: ListPredefineTagsResponse
+        :param request: Request instance for ListPredefineTags
+        :type request: :class:`huaweicloudsdktms.v1.ListPredefineTagsRequest`
+        :rtype: :class:`huaweicloudsdktms.v1.ListPredefineTagsResponse`
         """
         return self.list_predefine_tags_with_http_info(request)
 
     def list_predefine_tags_with_http_info(self, request):
-        """查询预定义标签列表
-
-        用于查询预定义标签列表。
-
-        :param ListPredefineTagsRequest request
-        :return: ListPredefineTagsResponse
-        """
-
         all_params = ['key', 'value', 'limit', 'marker', 'order_field', 'order_method']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -307,26 +288,21 @@ class TmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_api_version_async(self, request):
         """查询API版本号详情
 
         查询指定的标签管理服务API版本号详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowApiVersionRequest request
-        :return: ShowApiVersionResponse
+        :param request: Request instance for ShowApiVersion
+        :type request: :class:`huaweicloudsdktms.v1.ShowApiVersionRequest`
+        :rtype: :class:`huaweicloudsdktms.v1.ShowApiVersionResponse`
         """
         return self.show_api_version_with_http_info(request)
 
     def show_api_version_with_http_info(self, request):
-        """查询API版本号详情
-
-        查询指定的标签管理服务API版本号详情。
-
-        :param ShowApiVersionRequest request
-        :return: ShowApiVersionResponse
-        """
-
         all_params = ['api_version']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -370,26 +346,21 @@ class TmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_tag_quota_async(self, request):
         """查询标签配额
 
         查询标签的配额信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowTagQuotaRequest request
-        :return: ShowTagQuotaResponse
+        :param request: Request instance for ShowTagQuota
+        :type request: :class:`huaweicloudsdktms.v1.ShowTagQuotaRequest`
+        :rtype: :class:`huaweicloudsdktms.v1.ShowTagQuotaResponse`
         """
         return self.show_tag_quota_with_http_info(request)
 
     def show_tag_quota_with_http_info(self, request):
-        """查询标签配额
-
-        查询标签的配额信息。
-
-        :param ShowTagQuotaRequest request
-        :return: ShowTagQuotaResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -431,26 +402,21 @@ class TmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_predefine_tags_async(self, request):
         """修改预定义标签
 
         修改预定义标签。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdatePredefineTagsRequest request
-        :return: UpdatePredefineTagsResponse
+        :param request: Request instance for UpdatePredefineTags
+        :type request: :class:`huaweicloudsdktms.v1.UpdatePredefineTagsRequest`
+        :rtype: :class:`huaweicloudsdktms.v1.UpdatePredefineTagsResponse`
         """
         return self.update_predefine_tags_with_http_info(request)
 
     def update_predefine_tags_with_http_info(self, request):
-        """修改预定义标签
-
-        修改预定义标签。
-
-        :param UpdatePredefineTagsRequest request
-        :return: UpdatePredefineTagsResponse
-        """
-
         all_params = ['req_modify_predefine_tag']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -493,7 +459,6 @@ class TmsAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

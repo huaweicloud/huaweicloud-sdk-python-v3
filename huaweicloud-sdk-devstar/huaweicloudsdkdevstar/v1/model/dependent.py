@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Dependent:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Dependent:
     }
 
     def __init__(self, name=None, dependent_services=None):
-        """Dependent - a model defined in huaweicloud sdk"""
+        """Dependent
+
+        The model defined in huaweicloud sdk
+
+        :param name: 部署方式。
+        :type name: str
+        :param dependent_services: 依赖云资源信息
+        :type dependent_services: list[:class:`huaweicloudsdkdevstar.v1.ResouceInfo`]
+        """
         
         
 
@@ -63,7 +70,7 @@ class Dependent:
         部署方式。
 
         :param name: The name of this Dependent.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -74,7 +81,7 @@ class Dependent:
         依赖云资源信息
 
         :return: The dependent_services of this Dependent.
-        :rtype: list[ResouceInfo]
+        :rtype: list[:class:`huaweicloudsdkdevstar.v1.ResouceInfo`]
         """
         return self._dependent_services
 
@@ -85,7 +92,7 @@ class Dependent:
         依赖云资源信息
 
         :param dependent_services: The dependent_services of this Dependent.
-        :type: list[ResouceInfo]
+        :type dependent_services: list[:class:`huaweicloudsdkdevstar.v1.ResouceInfo`]
         """
         self._dependent_services = dependent_services
 

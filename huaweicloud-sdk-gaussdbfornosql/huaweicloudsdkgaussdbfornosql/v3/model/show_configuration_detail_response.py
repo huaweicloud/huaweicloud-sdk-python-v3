@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowConfigurationDetailResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ShowConfigurationDetailResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, datastore_version_name=None, datastore_name=None, created=None, updated=None, configuration_parameters=None):
-        """ShowConfigurationDetailResponse - a model defined in huaweicloud sdk"""
+        """ShowConfigurationDetailResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 参数模板ID。
+        :type id: str
+        :param name: 参数模板名称。
+        :type name: str
+        :param description: 参数模板描述。
+        :type description: str
+        :param datastore_version_name: 数据库版本名称。
+        :type datastore_version_name: str
+        :param datastore_name: 数据库名称。
+        :type datastore_name: str
+        :param created: 创建时间，格式为\&quot;yyyy-MM-ddTHH:mm:ssZ\&quot;。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        :type created: str
+        :param updated: 更新时间，格式为\&quot;yyyy-MM-ddTHH:mm:ssZ\&quot;。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        :type updated: str
+        :param configuration_parameters: 参数对象，用户基于默认参数模板自定义的参数配置。
+        :type configuration_parameters: list[:class:`huaweicloudsdkgaussdbfornosql.v3.ConfigurationParameterResult`]
+        """
         
         super(ShowConfigurationDetailResponse, self).__init__()
 
@@ -93,7 +112,7 @@ class ShowConfigurationDetailResponse(SdkResponse):
         参数模板ID。
 
         :param id: The id of this ShowConfigurationDetailResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -115,7 +134,7 @@ class ShowConfigurationDetailResponse(SdkResponse):
         参数模板名称。
 
         :param name: The name of this ShowConfigurationDetailResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -137,7 +156,7 @@ class ShowConfigurationDetailResponse(SdkResponse):
         参数模板描述。
 
         :param description: The description of this ShowConfigurationDetailResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -159,7 +178,7 @@ class ShowConfigurationDetailResponse(SdkResponse):
         数据库版本名称。
 
         :param datastore_version_name: The datastore_version_name of this ShowConfigurationDetailResponse.
-        :type: str
+        :type datastore_version_name: str
         """
         self._datastore_version_name = datastore_version_name
 
@@ -181,7 +200,7 @@ class ShowConfigurationDetailResponse(SdkResponse):
         数据库名称。
 
         :param datastore_name: The datastore_name of this ShowConfigurationDetailResponse.
-        :type: str
+        :type datastore_name: str
         """
         self._datastore_name = datastore_name
 
@@ -203,7 +222,7 @@ class ShowConfigurationDetailResponse(SdkResponse):
         创建时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
         :param created: The created of this ShowConfigurationDetailResponse.
-        :type: str
+        :type created: str
         """
         self._created = created
 
@@ -225,7 +244,7 @@ class ShowConfigurationDetailResponse(SdkResponse):
         更新时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
         :param updated: The updated of this ShowConfigurationDetailResponse.
-        :type: str
+        :type updated: str
         """
         self._updated = updated
 
@@ -236,7 +255,7 @@ class ShowConfigurationDetailResponse(SdkResponse):
         参数对象，用户基于默认参数模板自定义的参数配置。
 
         :return: The configuration_parameters of this ShowConfigurationDetailResponse.
-        :rtype: list[ConfigurationParameterResult]
+        :rtype: list[:class:`huaweicloudsdkgaussdbfornosql.v3.ConfigurationParameterResult`]
         """
         return self._configuration_parameters
 
@@ -247,7 +266,7 @@ class ShowConfigurationDetailResponse(SdkResponse):
         参数对象，用户基于默认参数模板自定义的参数配置。
 
         :param configuration_parameters: The configuration_parameters of this ShowConfigurationDetailResponse.
-        :type: list[ConfigurationParameterResult]
+        :type configuration_parameters: list[:class:`huaweicloudsdkgaussdbfornosql.v3.ConfigurationParameterResult`]
         """
         self._configuration_parameters = configuration_parameters
 

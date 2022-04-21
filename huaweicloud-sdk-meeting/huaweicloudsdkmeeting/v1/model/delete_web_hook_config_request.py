@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteWebHookConfigRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteWebHookConfigRequest:
     }
 
     def __init__(self, id=None):
-        """DeleteWebHookConfigRequest - a model defined in huaweicloud sdk"""
+        """DeleteWebHookConfigRequest
+
+        The model defined in huaweicloud sdk
+
+        :param id: 订阅配置记录id
+        :type id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteWebHookConfigRequest:
         订阅配置记录id
 
         :param id: The id of this DeleteWebHookConfigRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 

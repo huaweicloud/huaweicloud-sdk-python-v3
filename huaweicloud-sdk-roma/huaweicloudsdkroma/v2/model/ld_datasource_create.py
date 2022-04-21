@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LdDatasourceCreate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class LdDatasourceCreate:
     }
 
     def __init__(self, name=None, type=None, description=None, url=None, user=None, password=None, remotepath=None):
-        """LdDatasourceCreate - a model defined in huaweicloud sdk"""
+        """LdDatasourceCreate
+
+        The model defined in huaweicloud sdk
+
+        :param name: 数据源名称
+        :type name: str
+        :param type: 数据源类型： - oracle：oracle数据源类型 - mysql：mysql数据源类型 - mongodb：mongodb数据源类型 - redis：redis数据源类型 - postgresql：postgresql数据源类型 - hive：hive数据源类型 - mssql：sqlserver数据源类型 - sqlserver：sqlserver数据源类型 - gauss200：gauss200数据源类型 - dws：dws数据源类型 - gauss100：gauss100数据源类型 - zenith：zenith数据源类型
+        :type type: str
+        :param description: 数据源描述
+        :type description: str
+        :param url: 数据源连接字符串
+        :type url: str
+        :param user: 用户名
+        :type user: str
+        :param password: 密码。  敏感信息不作为响应返回
+        :type password: str
+        :param remotepath: ftp上传路径  预留字段，暂不支持。
+        :type remotepath: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class LdDatasourceCreate:
         数据源名称
 
         :param name: The name of this LdDatasourceCreate.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -110,7 +127,7 @@ class LdDatasourceCreate:
         数据源类型： - oracle：oracle数据源类型 - mysql：mysql数据源类型 - mongodb：mongodb数据源类型 - redis：redis数据源类型 - postgresql：postgresql数据源类型 - hive：hive数据源类型 - mssql：sqlserver数据源类型 - sqlserver：sqlserver数据源类型 - gauss200：gauss200数据源类型 - dws：dws数据源类型 - gauss100：gauss100数据源类型 - zenith：zenith数据源类型
 
         :param type: The type of this LdDatasourceCreate.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -132,7 +149,7 @@ class LdDatasourceCreate:
         数据源描述
 
         :param description: The description of this LdDatasourceCreate.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -154,7 +171,7 @@ class LdDatasourceCreate:
         数据源连接字符串
 
         :param url: The url of this LdDatasourceCreate.
-        :type: str
+        :type url: str
         """
         self._url = url
 
@@ -176,7 +193,7 @@ class LdDatasourceCreate:
         用户名
 
         :param user: The user of this LdDatasourceCreate.
-        :type: str
+        :type user: str
         """
         self._user = user
 
@@ -198,7 +215,7 @@ class LdDatasourceCreate:
         密码。  敏感信息不作为响应返回
 
         :param password: The password of this LdDatasourceCreate.
-        :type: str
+        :type password: str
         """
         self._password = password
 
@@ -220,7 +237,7 @@ class LdDatasourceCreate:
         ftp上传路径  预留字段，暂不支持。
 
         :param remotepath: The remotepath of this LdDatasourceCreate.
-        :type: str
+        :type remotepath: str
         """
         self._remotepath = remotepath
 

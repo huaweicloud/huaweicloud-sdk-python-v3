@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowInstanceMessagesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class ShowInstanceMessagesRequest:
     }
 
     def __init__(self, instance_id=None, topic=None, asc=None, start_time=None, end_time=None, limit=None, offset=None, download=None, message_offset=None, partition=None):
-        """ShowInstanceMessagesRequest - a model defined in huaweicloud sdk"""
+        """ShowInstanceMessagesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param topic: topic名称。
+        :type topic: str
+        :param asc: 是否按照时间排序。
+        :type asc: bool
+        :param start_time: 开始时间。  Unix毫秒时间戳。  查询消息偏移量时，为必选参数。
+        :type start_time: str
+        :param end_time: 结束时间。  Unix毫秒时间戳。  查询消息偏移量时，为必选参数。
+        :type end_time: str
+        :param limit: 分页大小。
+        :type limit: str
+        :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0。
+        :type offset: str
+        :param download: 是否下载。
+        :type download: bool
+        :param message_offset: 消息偏移量。  **查询消息内容时，为必选参数。**  若start_time、end_time参数不为空，该参数无效。
+        :type message_offset: str
+        :param partition: 分区。  **查询消息内容时，为必选参数。**  若start_time、end_time参数不为空，该参数无效。
+        :type partition: str
+        """
         
         
 
@@ -101,7 +124,7 @@ class ShowInstanceMessagesRequest:
         实例ID。
 
         :param instance_id: The instance_id of this ShowInstanceMessagesRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -123,7 +146,7 @@ class ShowInstanceMessagesRequest:
         topic名称。
 
         :param topic: The topic of this ShowInstanceMessagesRequest.
-        :type: str
+        :type topic: str
         """
         self._topic = topic
 
@@ -145,7 +168,7 @@ class ShowInstanceMessagesRequest:
         是否按照时间排序。
 
         :param asc: The asc of this ShowInstanceMessagesRequest.
-        :type: bool
+        :type asc: bool
         """
         self._asc = asc
 
@@ -167,7 +190,7 @@ class ShowInstanceMessagesRequest:
         开始时间。  Unix毫秒时间戳。  查询消息偏移量时，为必选参数。
 
         :param start_time: The start_time of this ShowInstanceMessagesRequest.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -189,7 +212,7 @@ class ShowInstanceMessagesRequest:
         结束时间。  Unix毫秒时间戳。  查询消息偏移量时，为必选参数。
 
         :param end_time: The end_time of this ShowInstanceMessagesRequest.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -211,7 +234,7 @@ class ShowInstanceMessagesRequest:
         分页大小。
 
         :param limit: The limit of this ShowInstanceMessagesRequest.
-        :type: str
+        :type limit: str
         """
         self._limit = limit
 
@@ -233,7 +256,7 @@ class ShowInstanceMessagesRequest:
         偏移量，表示从此偏移量开始查询， offset大于等于0。
 
         :param offset: The offset of this ShowInstanceMessagesRequest.
-        :type: str
+        :type offset: str
         """
         self._offset = offset
 
@@ -255,7 +278,7 @@ class ShowInstanceMessagesRequest:
         是否下载。
 
         :param download: The download of this ShowInstanceMessagesRequest.
-        :type: bool
+        :type download: bool
         """
         self._download = download
 
@@ -277,7 +300,7 @@ class ShowInstanceMessagesRequest:
         消息偏移量。  **查询消息内容时，为必选参数。**  若start_time、end_time参数不为空，该参数无效。
 
         :param message_offset: The message_offset of this ShowInstanceMessagesRequest.
-        :type: str
+        :type message_offset: str
         """
         self._message_offset = message_offset
 
@@ -299,7 +322,7 @@ class ShowInstanceMessagesRequest:
         分区。  **查询消息内容时，为必选参数。**  若start_time、end_time参数不为空，该参数无效。
 
         :param partition: The partition of this ShowInstanceMessagesRequest.
-        :type: str
+        :type partition: str
         """
         self._partition = partition
 

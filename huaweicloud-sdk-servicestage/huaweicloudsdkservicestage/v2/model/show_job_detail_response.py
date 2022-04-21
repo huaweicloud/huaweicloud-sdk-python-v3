@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowJobDetailResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowJobDetailResponse(SdkResponse):
     }
 
     def __init__(self, task_count=None, job=None, tasks=None):
-        """ShowJobDetailResponse - a model defined in huaweicloud sdk"""
+        """ShowJobDetailResponse
+
+        The model defined in huaweicloud sdk
+
+        :param task_count: 部署任务数量。
+        :type task_count: int
+        :param job: 
+        :type job: :class:`huaweicloudsdkservicestage.v2.JobInfo`
+        :param tasks: 部署任务列表。
+        :type tasks: list[:class:`huaweicloudsdkservicestage.v2.TaskInfo`]
+        """
         
         super(ShowJobDetailResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ShowJobDetailResponse(SdkResponse):
         部署任务数量。
 
         :param task_count: The task_count of this ShowJobDetailResponse.
-        :type: int
+        :type task_count: int
         """
         self._task_count = task_count
 
@@ -78,7 +87,7 @@ class ShowJobDetailResponse(SdkResponse):
 
 
         :return: The job of this ShowJobDetailResponse.
-        :rtype: JobInfo
+        :rtype: :class:`huaweicloudsdkservicestage.v2.JobInfo`
         """
         return self._job
 
@@ -88,7 +97,7 @@ class ShowJobDetailResponse(SdkResponse):
 
 
         :param job: The job of this ShowJobDetailResponse.
-        :type: JobInfo
+        :type job: :class:`huaweicloudsdkservicestage.v2.JobInfo`
         """
         self._job = job
 
@@ -99,7 +108,7 @@ class ShowJobDetailResponse(SdkResponse):
         部署任务列表。
 
         :return: The tasks of this ShowJobDetailResponse.
-        :rtype: list[TaskInfo]
+        :rtype: list[:class:`huaweicloudsdkservicestage.v2.TaskInfo`]
         """
         return self._tasks
 
@@ -110,7 +119,7 @@ class ShowJobDetailResponse(SdkResponse):
         部署任务列表。
 
         :param tasks: The tasks of this ShowJobDetailResponse.
-        :type: list[TaskInfo]
+        :type tasks: list[:class:`huaweicloudsdkservicestage.v2.TaskInfo`]
         """
         self._tasks = tasks
 

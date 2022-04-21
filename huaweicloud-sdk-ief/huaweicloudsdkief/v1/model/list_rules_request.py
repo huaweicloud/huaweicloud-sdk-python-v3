@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRulesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListRulesRequest:
     }
 
     def __init__(self, ief_instance_id=None, name=None, limit=None, offset=None):
-        """ListRulesRequest - a model defined in huaweicloud sdk"""
+        """ListRulesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param ief_instance_id: 铂金版实例ID，专业版实例为空值
+        :type ief_instance_id: str
+        :param name: 规则名称
+        :type name: str
+        :param limit: 查询返回记录的数量限制
+        :type limit: int
+        :param offset: 偏移量，表示查询该偏移量后面的记录
+        :type offset: int
+        """
         
         
 
@@ -73,7 +84,7 @@ class ListRulesRequest:
         铂金版实例ID，专业版实例为空值
 
         :param ief_instance_id: The ief_instance_id of this ListRulesRequest.
-        :type: str
+        :type ief_instance_id: str
         """
         self._ief_instance_id = ief_instance_id
 
@@ -95,7 +106,7 @@ class ListRulesRequest:
         规则名称
 
         :param name: The name of this ListRulesRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -117,7 +128,7 @@ class ListRulesRequest:
         查询返回记录的数量限制
 
         :param limit: The limit of this ListRulesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -139,7 +150,7 @@ class ListRulesRequest:
         偏移量，表示查询该偏移量后面的记录
 
         :param offset: The offset of this ListRulesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 

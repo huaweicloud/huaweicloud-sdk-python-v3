@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListStatisticsApiRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ListStatisticsApiRequest:
     }
 
     def __init__(self, instance_id=None, mode=None, roma_app_id=None, api_id=None, cycle=None, start_time=None, end_time=None, duration=None):
-        """ListStatisticsApiRequest - a model defined in huaweicloud sdk"""
+        """ListStatisticsApiRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param mode: 查询模式，默认为INSTANCE * ALL：实例下所有调用应用，要求主帐号权限 * APP：指定集成应用 * API：指定API * INSTANCE：实例，默认值  注意：mode &#x3D; APP或ALL时，接口响应中不返回cycle，api_id，group_id，provider，register_time，status字段
+        :type mode: str
+        :param roma_app_id: 集成应用编号，查询模式为APP时必填
+        :type roma_app_id: str
+        :param api_id: API编号，查询模式为API时必填
+        :type api_id: str
+        :param cycle: 查询统计周期 * minute：分钟 * hour：小时 * day：天
+        :type cycle: str
+        :param start_time: 开始时间，格式：2020-06-18 10:00:01
+        :type start_time: str
+        :param end_time: 结束时间，格式：2020-06-18 23:00:00
+        :type end_time: str
+        :param duration: 统计时长格式：整数+单位（m、h），m：分钟，h：小时，可支持小时与分钟的组合。例如：1h或2h45m * 同时给定start_time和end_time优先查询[start_time, end_time] * start_time不存在，end_time和duration存在且合法，则查询区间为[end_time - duration, end_time] * start_time和end_time不存在，duration存在且合法，令end_time&#x3D;now，则查询区间为[end_time - duration, end_time] * start_time，end_time和duration都不存在，报错missing time range parameters。 * duration最长查询范围：小时最长支持72小时，分钟最长支持90分钟。
+        :type duration: str
+        """
         
         
 
@@ -92,7 +111,7 @@ class ListStatisticsApiRequest:
         实例ID
 
         :param instance_id: The instance_id of this ListStatisticsApiRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -114,7 +133,7 @@ class ListStatisticsApiRequest:
         查询模式，默认为INSTANCE * ALL：实例下所有调用应用，要求主帐号权限 * APP：指定集成应用 * API：指定API * INSTANCE：实例，默认值  注意：mode = APP或ALL时，接口响应中不返回cycle，api_id，group_id，provider，register_time，status字段
 
         :param mode: The mode of this ListStatisticsApiRequest.
-        :type: str
+        :type mode: str
         """
         self._mode = mode
 
@@ -136,7 +155,7 @@ class ListStatisticsApiRequest:
         集成应用编号，查询模式为APP时必填
 
         :param roma_app_id: The roma_app_id of this ListStatisticsApiRequest.
-        :type: str
+        :type roma_app_id: str
         """
         self._roma_app_id = roma_app_id
 
@@ -158,7 +177,7 @@ class ListStatisticsApiRequest:
         API编号，查询模式为API时必填
 
         :param api_id: The api_id of this ListStatisticsApiRequest.
-        :type: str
+        :type api_id: str
         """
         self._api_id = api_id
 
@@ -180,7 +199,7 @@ class ListStatisticsApiRequest:
         查询统计周期 * minute：分钟 * hour：小时 * day：天
 
         :param cycle: The cycle of this ListStatisticsApiRequest.
-        :type: str
+        :type cycle: str
         """
         self._cycle = cycle
 
@@ -202,7 +221,7 @@ class ListStatisticsApiRequest:
         开始时间，格式：2020-06-18 10:00:01
 
         :param start_time: The start_time of this ListStatisticsApiRequest.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -224,7 +243,7 @@ class ListStatisticsApiRequest:
         结束时间，格式：2020-06-18 23:00:00
 
         :param end_time: The end_time of this ListStatisticsApiRequest.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -246,7 +265,7 @@ class ListStatisticsApiRequest:
         统计时长格式：整数+单位（m、h），m：分钟，h：小时，可支持小时与分钟的组合。例如：1h或2h45m * 同时给定start_time和end_time优先查询[start_time, end_time] * start_time不存在，end_time和duration存在且合法，则查询区间为[end_time - duration, end_time] * start_time和end_time不存在，duration存在且合法，令end_time=now，则查询区间为[end_time - duration, end_time] * start_time，end_time和duration都不存在，报错missing time range parameters。 * duration最长查询范围：小时最长支持72小时，分钟最长支持90分钟。
 
         :param duration: The duration of this ListStatisticsApiRequest.
-        :type: str
+        :type duration: str
         """
         self._duration = duration
 

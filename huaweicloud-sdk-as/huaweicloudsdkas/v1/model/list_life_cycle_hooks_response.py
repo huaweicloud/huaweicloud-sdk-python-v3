@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListLifeCycleHooksResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListLifeCycleHooksResponse(SdkResponse):
     }
 
     def __init__(self, lifecycle_hooks=None):
-        """ListLifeCycleHooksResponse - a model defined in huaweicloud sdk"""
+        """ListLifeCycleHooksResponse
+
+        The model defined in huaweicloud sdk
+
+        :param lifecycle_hooks: 生命周期挂钩列表。
+        :type lifecycle_hooks: list[:class:`huaweicloudsdkas.v1.LifecycleHookList`]
+        """
         
         super(ListLifeCycleHooksResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListLifeCycleHooksResponse(SdkResponse):
         生命周期挂钩列表。
 
         :return: The lifecycle_hooks of this ListLifeCycleHooksResponse.
-        :rtype: list[LifecycleHookList]
+        :rtype: list[:class:`huaweicloudsdkas.v1.LifecycleHookList`]
         """
         return self._lifecycle_hooks
 
@@ -58,7 +63,7 @@ class ListLifeCycleHooksResponse(SdkResponse):
         生命周期挂钩列表。
 
         :param lifecycle_hooks: The lifecycle_hooks of this ListLifeCycleHooksResponse.
-        :type: list[LifecycleHookList]
+        :type lifecycle_hooks: list[:class:`huaweicloudsdkas.v1.LifecycleHookList`]
         """
         self._lifecycle_hooks = lifecycle_hooks
 

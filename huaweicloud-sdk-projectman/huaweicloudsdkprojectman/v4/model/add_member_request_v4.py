@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddMemberRequestV4:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class AddMemberRequestV4:
     }
 
     def __init__(self, domain_name=None, domain_id=None, role_id=None, user_id=None):
-        """AddMemberRequestV4 - a model defined in huaweicloud sdk"""
+        """AddMemberRequestV4
+
+        The model defined in huaweicloud sdk
+
+        :param domain_name: 租户名称（跨租户添加用户时，填写正确的租户名称，可将未授权的租户主动授权，将用户添加为项目成员）
+        :type domain_name: str
+        :param domain_id: 租户id
+        :type domain_id: str
+        :param role_id: &#39;用户在项目中的角色ID&#39; 成员角色, -1 项目创建者, 3 项目经理, 4 开发人员, 5 测试经理, 6 测试人员, 7 参与者, 8 浏览者, 9 运维经理
+        :type role_id: int
+        :param user_id: 用户32位uuid
+        :type user_id: str
+        """
         
         
 
@@ -71,7 +82,7 @@ class AddMemberRequestV4:
         租户名称（跨租户添加用户时，填写正确的租户名称，可将未授权的租户主动授权，将用户添加为项目成员）
 
         :param domain_name: The domain_name of this AddMemberRequestV4.
-        :type: str
+        :type domain_name: str
         """
         self._domain_name = domain_name
 
@@ -93,7 +104,7 @@ class AddMemberRequestV4:
         租户id
 
         :param domain_id: The domain_id of this AddMemberRequestV4.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -115,7 +126,7 @@ class AddMemberRequestV4:
         '用户在项目中的角色ID' 成员角色, -1 项目创建者, 3 项目经理, 4 开发人员, 5 测试经理, 6 测试人员, 7 参与者, 8 浏览者, 9 运维经理
 
         :param role_id: The role_id of this AddMemberRequestV4.
-        :type: int
+        :type role_id: int
         """
         self._role_id = role_id
 
@@ -137,7 +148,7 @@ class AddMemberRequestV4:
         用户32位uuid
 
         :param user_id: The user_id of this AddMemberRequestV4.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 

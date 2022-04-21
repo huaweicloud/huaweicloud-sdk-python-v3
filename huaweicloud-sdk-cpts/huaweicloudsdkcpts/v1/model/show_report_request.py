@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowReportRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowReportRequest:
     }
 
     def __init__(self, task_run_id=None, case_run_id=None, brokens_limit_count=None):
-        """ShowReportRequest - a model defined in huaweicloud sdk"""
+        """ShowReportRequest
+
+        The model defined in huaweicloud sdk
+
+        :param task_run_id: 运行任务id
+        :type task_run_id: int
+        :param case_run_id: 运行用例id
+        :type case_run_id: int
+        :param brokens_limit_count: 曲线图点数
+        :type brokens_limit_count: int
+        """
         
         
 
@@ -65,7 +74,7 @@ class ShowReportRequest:
         运行任务id
 
         :param task_run_id: The task_run_id of this ShowReportRequest.
-        :type: int
+        :type task_run_id: int
         """
         self._task_run_id = task_run_id
 
@@ -87,7 +96,7 @@ class ShowReportRequest:
         运行用例id
 
         :param case_run_id: The case_run_id of this ShowReportRequest.
-        :type: int
+        :type case_run_id: int
         """
         self._case_run_id = case_run_id
 
@@ -109,7 +118,7 @@ class ShowReportRequest:
         曲线图点数
 
         :param brokens_limit_count: The brokens_limit_count of this ShowReportRequest.
-        :type: int
+        :type brokens_limit_count: int
         """
         self._brokens_limit_count = brokens_limit_count
 

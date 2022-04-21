@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PlanCycle:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class PlanCycle:
     }
 
     def __init__(self, start_date=None, end_date=None):
-        """PlanCycle - a model defined in huaweicloud sdk"""
+        """PlanCycle
+
+        The model defined in huaweicloud sdk
+
+        :param start_date: 计划开始时间，要求用UTC时间表示。如2020-03-04
+        :type start_date: str
+        :param end_date: 计划结束时间，要求用UTC时间表示。如2020-03-31
+        :type end_date: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class PlanCycle:
         计划开始时间，要求用UTC时间表示。如2020-03-04
 
         :param start_date: The start_date of this PlanCycle.
-        :type: str
+        :type start_date: str
         """
         self._start_date = start_date
 
@@ -85,7 +92,7 @@ class PlanCycle:
         计划结束时间，要求用UTC时间表示。如2020-03-31
 
         :param end_date: The end_date of this PlanCycle.
-        :type: str
+        :type end_date: str
         """
         self._end_date = end_date
 

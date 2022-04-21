@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDevicesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListDevicesResponse(SdkResponse):
     }
 
     def __init__(self, devices=None, count=None):
-        """ListDevicesResponse - a model defined in huaweicloud sdk"""
+        """ListDevicesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param devices: 终端设备属性
+        :type devices: list[:class:`huaweicloudsdkief.v1.Device`]
+        :param count: 满足条件的终端设备个数
+        :type count: int
+        """
         
         super(ListDevicesResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListDevicesResponse(SdkResponse):
         终端设备属性
 
         :return: The devices of this ListDevicesResponse.
-        :rtype: list[Device]
+        :rtype: list[:class:`huaweicloudsdkief.v1.Device`]
         """
         return self._devices
 
@@ -63,7 +70,7 @@ class ListDevicesResponse(SdkResponse):
         终端设备属性
 
         :param devices: The devices of this ListDevicesResponse.
-        :type: list[Device]
+        :type devices: list[:class:`huaweicloudsdkief.v1.Device`]
         """
         self._devices = devices
 
@@ -85,7 +92,7 @@ class ListDevicesResponse(SdkResponse):
         满足条件的终端设备个数
 
         :param count: The count of this ListDevicesResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RegisterServerRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RegisterServerRequest:
     }
 
     def __init__(self, body=None):
-        """RegisterServerRequest - a model defined in huaweicloud sdk"""
+        """RegisterServerRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the RegisterServerRequest
+        :type body: :class:`huaweicloudsdksms.v3.PostSourceServerBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class RegisterServerRequest:
 
 
         :return: The body of this RegisterServerRequest.
-        :rtype: PostSourceServerBody
+        :rtype: :class:`huaweicloudsdksms.v3.PostSourceServerBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class RegisterServerRequest:
 
 
         :param body: The body of this RegisterServerRequest.
-        :type: PostSourceServerBody
+        :type body: :class:`huaweicloudsdksms.v3.PostSourceServerBody`
         """
         self._body = body
 

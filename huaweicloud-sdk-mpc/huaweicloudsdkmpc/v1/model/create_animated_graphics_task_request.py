@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateAnimatedGraphicsTaskRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateAnimatedGraphicsTaskRequest:
     }
 
     def __init__(self, body=None):
-        """CreateAnimatedGraphicsTaskRequest - a model defined in huaweicloud sdk"""
+        """CreateAnimatedGraphicsTaskRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateAnimatedGraphicsTaskRequest
+        :type body: :class:`huaweicloudsdkmpc.v1.CreateAnimatedGraphicsTaskReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateAnimatedGraphicsTaskRequest:
 
 
         :return: The body of this CreateAnimatedGraphicsTaskRequest.
-        :rtype: CreateAnimatedGraphicsTaskReq
+        :rtype: :class:`huaweicloudsdkmpc.v1.CreateAnimatedGraphicsTaskReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateAnimatedGraphicsTaskRequest:
 
 
         :param body: The body of this CreateAnimatedGraphicsTaskRequest.
-        :type: CreateAnimatedGraphicsTaskReq
+        :type body: :class:`huaweicloudsdkmpc.v1.CreateAnimatedGraphicsTaskReq`
         """
         self._body = body
 

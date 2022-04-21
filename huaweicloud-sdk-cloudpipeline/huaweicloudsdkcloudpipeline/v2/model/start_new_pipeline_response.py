@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StartNewPipelineResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class StartNewPipelineResponse(SdkResponse):
     }
 
     def __init__(self, pipeline_id=None, build_id=None):
-        """StartNewPipelineResponse - a model defined in huaweicloud sdk"""
+        """StartNewPipelineResponse
+
+        The model defined in huaweicloud sdk
+
+        :param pipeline_id: 流水线ID
+        :type pipeline_id: str
+        :param build_id: 流水线构建ID
+        :type build_id: str
+        """
         
         super(StartNewPipelineResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class StartNewPipelineResponse(SdkResponse):
         流水线ID
 
         :param pipeline_id: The pipeline_id of this StartNewPipelineResponse.
-        :type: str
+        :type pipeline_id: str
         """
         self._pipeline_id = pipeline_id
 
@@ -85,7 +92,7 @@ class StartNewPipelineResponse(SdkResponse):
         流水线构建ID
 
         :param build_id: The build_id of this StartNewPipelineResponse.
-        :type: str
+        :type build_id: str
         """
         self._build_id = build_id
 

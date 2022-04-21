@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListInstantQueryAomPromGetRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListInstantQueryAomPromGetRequest:
     }
 
     def __init__(self, query=None, time=None):
-        """ListInstantQueryAomPromGetRequest - a model defined in huaweicloud sdk"""
+        """ListInstantQueryAomPromGetRequest
+
+        The model defined in huaweicloud sdk
+
+        :param query: PromQL表达式(参考https://prometheus.io/docs/prometheus/latest/querying/basics/)。
+        :type query: str
+        :param time: 指定用于计算 PromQL 的时间戳，(Unix时间戳格式，单位：秒）。
+        :type time: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ListInstantQueryAomPromGetRequest:
         PromQL表达式(参考https://prometheus.io/docs/prometheus/latest/querying/basics/)。
 
         :param query: The query of this ListInstantQueryAomPromGetRequest.
-        :type: str
+        :type query: str
         """
         self._query = query
 
@@ -84,7 +91,7 @@ class ListInstantQueryAomPromGetRequest:
         指定用于计算 PromQL 的时间戳，(Unix时间戳格式，单位：秒）。
 
         :param time: The time of this ListInstantQueryAomPromGetRequest.
-        :type: str
+        :type time: str
         """
         self._time = time
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ChangeFailoverModeResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ChangeFailoverModeResponse(SdkResponse):
     }
 
     def __init__(self, instance_id=None, replication_mode=None, workflow_id=None):
-        """ChangeFailoverModeResponse - a model defined in huaweicloud sdk"""
+        """ChangeFailoverModeResponse
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例Id
+        :type instance_id: str
+        :param replication_mode: 同步模式
+        :type replication_mode: str
+        :param workflow_id: 任务id
+        :type workflow_id: str
+        """
         
         super(ChangeFailoverModeResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ChangeFailoverModeResponse(SdkResponse):
         实例Id
 
         :param instance_id: The instance_id of this ChangeFailoverModeResponse.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -90,7 +99,7 @@ class ChangeFailoverModeResponse(SdkResponse):
         同步模式
 
         :param replication_mode: The replication_mode of this ChangeFailoverModeResponse.
-        :type: str
+        :type replication_mode: str
         """
         self._replication_mode = replication_mode
 
@@ -112,7 +121,7 @@ class ChangeFailoverModeResponse(SdkResponse):
         任务id
 
         :param workflow_id: The workflow_id of this ChangeFailoverModeResponse.
-        :type: str
+        :type workflow_id: str
         """
         self._workflow_id = workflow_id
 

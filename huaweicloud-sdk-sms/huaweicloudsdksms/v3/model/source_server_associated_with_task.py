@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SourceServerAssociatedWithTask:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class SourceServerAssociatedWithTask:
     }
 
     def __init__(self, id=None, ip=None, name=None, os_type=None, os_version=None, oem_system=None, state=None):
-        """SourceServerAssociatedWithTask - a model defined in huaweicloud sdk"""
+        """SourceServerAssociatedWithTask
+
+        The model defined in huaweicloud sdk
+
+        :param id: 源端在SMS数据库中的ID
+        :type id: str
+        :param ip: 源端服务器ip，注册源端时必选，更新非必选
+        :type ip: str
+        :param name: 用来区分不同源端服务器的名称
+        :type name: str
+        :param os_type: 源端服务器的OS类型，分为Windows和Linux，注册必选，更新非必选
+        :type os_type: str
+        :param os_version: 操作系统版本，注册必选，更新非必选
+        :type os_version: str
+        :param oem_system: 是否是OEM操作系统(Windows)
+        :type oem_system: bool
+        :param state: 当前源端服务器状态
+        :type state: str
+        """
         
         
 
@@ -85,7 +102,7 @@ class SourceServerAssociatedWithTask:
         源端在SMS数据库中的ID
 
         :param id: The id of this SourceServerAssociatedWithTask.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -107,7 +124,7 @@ class SourceServerAssociatedWithTask:
         源端服务器ip，注册源端时必选，更新非必选
 
         :param ip: The ip of this SourceServerAssociatedWithTask.
-        :type: str
+        :type ip: str
         """
         self._ip = ip
 
@@ -129,7 +146,7 @@ class SourceServerAssociatedWithTask:
         用来区分不同源端服务器的名称
 
         :param name: The name of this SourceServerAssociatedWithTask.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -151,7 +168,7 @@ class SourceServerAssociatedWithTask:
         源端服务器的OS类型，分为Windows和Linux，注册必选，更新非必选
 
         :param os_type: The os_type of this SourceServerAssociatedWithTask.
-        :type: str
+        :type os_type: str
         """
         self._os_type = os_type
 
@@ -173,7 +190,7 @@ class SourceServerAssociatedWithTask:
         操作系统版本，注册必选，更新非必选
 
         :param os_version: The os_version of this SourceServerAssociatedWithTask.
-        :type: str
+        :type os_version: str
         """
         self._os_version = os_version
 
@@ -195,7 +212,7 @@ class SourceServerAssociatedWithTask:
         是否是OEM操作系统(Windows)
 
         :param oem_system: The oem_system of this SourceServerAssociatedWithTask.
-        :type: bool
+        :type oem_system: bool
         """
         self._oem_system = oem_system
 
@@ -217,7 +234,7 @@ class SourceServerAssociatedWithTask:
         当前源端服务器状态
 
         :param state: The state of this SourceServerAssociatedWithTask.
-        :type: str
+        :type state: str
         """
         self._state = state
 

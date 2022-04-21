@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InputSetting:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class InputSetting:
     }
 
     def __init__(self, input=None, pane_id=None, audio_policy=None):
-        """InputSetting - a model defined in huaweicloud sdk"""
+        """InputSetting
+
+        The model defined in huaweicloud sdk
+
+        :param input: 
+        :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        :param pane_id: 原视频的id,为整数类型数值字符串。用于匹配后面的布局配置。
+        :type pane_id: str
+        :param audio_policy: 该视频采取的音频策略。DISCARD表示丢弃音频，合成的视频中不会出现该视频的音频。 RESERVE表示保留音频，合成的视频中会出现该视频音频。如果多个原视频配置了RESERVE，合成的视频文件的音频，是多个原 视频音频的混合。默认会丢弃音频。
+        :type audio_policy: str
+        """
         
         
 
@@ -54,7 +63,7 @@ class InputSetting:
 
 
         :return: The input of this InputSetting.
-        :rtype: ObsObjInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         return self._input
 
@@ -64,7 +73,7 @@ class InputSetting:
 
 
         :param input: The input of this InputSetting.
-        :type: ObsObjInfo
+        :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         self._input = input
 
@@ -86,7 +95,7 @@ class InputSetting:
         原视频的id,为整数类型数值字符串。用于匹配后面的布局配置。
 
         :param pane_id: The pane_id of this InputSetting.
-        :type: str
+        :type pane_id: str
         """
         self._pane_id = pane_id
 
@@ -108,7 +117,7 @@ class InputSetting:
         该视频采取的音频策略。DISCARD表示丢弃音频，合成的视频中不会出现该视频的音频。 RESERVE表示保留音频，合成的视频中会出现该视频音频。如果多个原视频配置了RESERVE，合成的视频文件的音频，是多个原 视频音频的混合。默认会丢弃音频。
 
         :param audio_policy: The audio_policy of this InputSetting.
-        :type: str
+        :type audio_policy: str
         """
         self._audio_policy = audio_policy
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ImportFunctionRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ImportFunctionRequestBody:
     }
 
     def __init__(self, func_name=None, file_name=None, file_type=None, file_code=None):
-        """ImportFunctionRequestBody - a model defined in huaweicloud sdk"""
+        """ImportFunctionRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param func_name: 函数名
+        :type func_name: str
+        :param file_name: 文件名
+        :type file_name: str
+        :param file_type: 文件类型
+        :type file_type: str
+        :param file_code: 函数代码。代码必须要进行base64编码
+        :type file_code: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class ImportFunctionRequestBody:
         函数名
 
         :param func_name: The func_name of this ImportFunctionRequestBody.
-        :type: str
+        :type func_name: str
         """
         self._func_name = func_name
 
@@ -91,7 +102,7 @@ class ImportFunctionRequestBody:
         文件名
 
         :param file_name: The file_name of this ImportFunctionRequestBody.
-        :type: str
+        :type file_name: str
         """
         self._file_name = file_name
 
@@ -113,7 +124,7 @@ class ImportFunctionRequestBody:
         文件类型
 
         :param file_type: The file_type of this ImportFunctionRequestBody.
-        :type: str
+        :type file_type: str
         """
         self._file_type = file_type
 
@@ -135,7 +146,7 @@ class ImportFunctionRequestBody:
         函数代码。代码必须要进行base64编码
 
         :param file_code: The file_code of this ImportFunctionRequestBody.
-        :type: str
+        :type file_code: str
         """
         self._file_code = file_code
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NeutronSecurityGroup:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class NeutronSecurityGroup:
     }
 
     def __init__(self, description=None, id=None, name=None, security_group_rules=None, tenant_id=None, project_id=None, created_at=None, updated_at=None):
-        """NeutronSecurityGroup - a model defined in huaweicloud sdk"""
+        """NeutronSecurityGroup
+
+        The model defined in huaweicloud sdk
+
+        :param description: 功能说明：安全组描述 取值范围：0-255个字符
+        :type description: str
+        :param id: 安全组ID
+        :type id: str
+        :param name: 功能说明：安全组名称 取值范围：0-255个字符
+        :type name: str
+        :param security_group_rules: 安全组规则，详情参见Security Group Rule对象
+        :type security_group_rules: list[:class:`huaweicloudsdkvpc.v2.NeutronSecurityGroupRule`]
+        :param tenant_id: 项目ID
+        :type tenant_id: str
+        :param project_id: 项目ID
+        :type project_id: str
+        :param created_at: 功能说明：资源创建UTC时间 格式：yyyy-MM-ddTHH:mm:ss
+        :type created_at: datetime
+        :param updated_at: 功能说明：资源更新UTC时间 格式：yyyy-MM-ddTHH:mm:ss
+        :type updated_at: datetime
+        """
         
         
 
@@ -85,7 +104,7 @@ class NeutronSecurityGroup:
         功能说明：安全组描述 取值范围：0-255个字符
 
         :param description: The description of this NeutronSecurityGroup.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -107,7 +126,7 @@ class NeutronSecurityGroup:
         安全组ID
 
         :param id: The id of this NeutronSecurityGroup.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -129,7 +148,7 @@ class NeutronSecurityGroup:
         功能说明：安全组名称 取值范围：0-255个字符
 
         :param name: The name of this NeutronSecurityGroup.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -140,7 +159,7 @@ class NeutronSecurityGroup:
         安全组规则，详情参见Security Group Rule对象
 
         :return: The security_group_rules of this NeutronSecurityGroup.
-        :rtype: list[NeutronSecurityGroupRule]
+        :rtype: list[:class:`huaweicloudsdkvpc.v2.NeutronSecurityGroupRule`]
         """
         return self._security_group_rules
 
@@ -151,7 +170,7 @@ class NeutronSecurityGroup:
         安全组规则，详情参见Security Group Rule对象
 
         :param security_group_rules: The security_group_rules of this NeutronSecurityGroup.
-        :type: list[NeutronSecurityGroupRule]
+        :type security_group_rules: list[:class:`huaweicloudsdkvpc.v2.NeutronSecurityGroupRule`]
         """
         self._security_group_rules = security_group_rules
 
@@ -173,7 +192,7 @@ class NeutronSecurityGroup:
         项目ID
 
         :param tenant_id: The tenant_id of this NeutronSecurityGroup.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 
@@ -195,7 +214,7 @@ class NeutronSecurityGroup:
         项目ID
 
         :param project_id: The project_id of this NeutronSecurityGroup.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -217,7 +236,7 @@ class NeutronSecurityGroup:
         功能说明：资源创建UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 
         :param created_at: The created_at of this NeutronSecurityGroup.
-        :type: datetime
+        :type created_at: datetime
         """
         self._created_at = created_at
 
@@ -239,7 +258,7 @@ class NeutronSecurityGroup:
         功能说明：资源更新UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 
         :param updated_at: The updated_at of this NeutronSecurityGroup.
-        :type: datetime
+        :type updated_at: datetime
         """
         self._updated_at = updated_at
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BuildInfoParameters:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class BuildInfoParameters:
     }
 
     def __init__(self, build_cmd=None, dockerfile_path=None, artifact_namespace=None):
-        """BuildInfoParameters - a model defined in huaweicloud sdk"""
+        """BuildInfoParameters
+
+        The model defined in huaweicloud sdk
+
+        :param build_cmd: 编译命令。默认：  1、根目录存在build.sh：./build.sh  2、根据运行系统，示例如下：  Java和Tomcat：mvn clean package  Nodejs: npm build 
+        :type build_cmd: str
+        :param dockerfile_path: dockerfile地址。默认是根目录./。
+        :type dockerfile_path: str
+        :param artifact_namespace: 构建归档组织，默认cas_{project_id}。
+        :type artifact_namespace: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class BuildInfoParameters:
         编译命令。默认：  1、根目录存在build.sh：./build.sh  2、根据运行系统，示例如下：  Java和Tomcat：mvn clean package  Nodejs: npm build 
 
         :param build_cmd: The build_cmd of this BuildInfoParameters.
-        :type: str
+        :type build_cmd: str
         """
         self._build_cmd = build_cmd
 
@@ -90,7 +99,7 @@ class BuildInfoParameters:
         dockerfile地址。默认是根目录./。
 
         :param dockerfile_path: The dockerfile_path of this BuildInfoParameters.
-        :type: str
+        :type dockerfile_path: str
         """
         self._dockerfile_path = dockerfile_path
 
@@ -112,7 +121,7 @@ class BuildInfoParameters:
         构建归档组织，默认cas_{project_id}。
 
         :param artifact_namespace: The artifact_namespace of this BuildInfoParameters.
-        :type: str
+        :type artifact_namespace: str
         """
         self._artifact_namespace = artifact_namespace
 

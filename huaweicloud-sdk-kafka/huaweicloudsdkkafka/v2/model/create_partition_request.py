@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreatePartitionRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreatePartitionRequest:
     }
 
     def __init__(self, instance_id=None, topic=None, body=None):
-        """CreatePartitionRequest - a model defined in huaweicloud sdk"""
+        """CreatePartitionRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param topic: Topic名称。
+        :type topic: str
+        :param body: Body of the CreatePartitionRequest
+        :type body: :class:`huaweicloudsdkkafka.v2.CreatePartitionReq`
+        """
         
         
 
@@ -66,7 +75,7 @@ class CreatePartitionRequest:
         实例ID。
 
         :param instance_id: The instance_id of this CreatePartitionRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -88,7 +97,7 @@ class CreatePartitionRequest:
         Topic名称。
 
         :param topic: The topic of this CreatePartitionRequest.
-        :type: str
+        :type topic: str
         """
         self._topic = topic
 
@@ -98,7 +107,7 @@ class CreatePartitionRequest:
 
 
         :return: The body of this CreatePartitionRequest.
-        :rtype: CreatePartitionReq
+        :rtype: :class:`huaweicloudsdkkafka.v2.CreatePartitionReq`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class CreatePartitionRequest:
 
 
         :param body: The body of this CreatePartitionRequest.
-        :type: CreatePartitionReq
+        :type body: :class:`huaweicloudsdkkafka.v2.CreatePartitionReq`
         """
         self._body = body
 

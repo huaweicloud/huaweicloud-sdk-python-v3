@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EnableDisableEdgeNodesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class EnableDisableEdgeNodesResponse(SdkResponse):
     }
 
     def __init__(self, node=None):
-        """EnableDisableEdgeNodesResponse - a model defined in huaweicloud sdk"""
+        """EnableDisableEdgeNodesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param node: 
+        :type node: :class:`huaweicloudsdkief.v1.Action`
+        """
         
         super(EnableDisableEdgeNodesResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class EnableDisableEdgeNodesResponse(SdkResponse):
 
 
         :return: The node of this EnableDisableEdgeNodesResponse.
-        :rtype: Action
+        :rtype: :class:`huaweicloudsdkief.v1.Action`
         """
         return self._node
 
@@ -56,7 +61,7 @@ class EnableDisableEdgeNodesResponse(SdkResponse):
 
 
         :param node: The node of this EnableDisableEdgeNodesResponse.
-        :type: Action
+        :type node: :class:`huaweicloudsdkief.v1.Action`
         """
         self._node = node
 

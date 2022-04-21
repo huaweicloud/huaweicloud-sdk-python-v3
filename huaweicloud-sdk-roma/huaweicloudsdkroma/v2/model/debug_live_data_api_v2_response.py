@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DebugLiveDataApiV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class DebugLiveDataApiV2Response(SdkResponse):
     }
 
     def __init__(self, test_status_code=None, test_request=None, test_used_time=None, test_operator=None, test_response=None, test_method=None, test_id=None, test_date=None, ld_api_id=None, debug_log=None):
-        """DebugLiveDataApiV2Response - a model defined in huaweicloud sdk"""
+        """DebugLiveDataApiV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param test_status_code: 测试返回的状态码
+        :type test_status_code: str
+        :param test_request: 测试的请求内容
+        :type test_request: str
+        :param test_used_time: 测试耗时
+        :type test_used_time: int
+        :param test_operator: 测试者的项目编号
+        :type test_operator: str
+        :param test_response: 测试的响应内容
+        :type test_response: str
+        :param test_method: 测试的请求方法
+        :type test_method: str
+        :param test_id: 测试编号
+        :type test_id: int
+        :param test_date: 测试时间
+        :type test_date: datetime
+        :param ld_api_id: 后端API编号
+        :type ld_api_id: str
+        :param debug_log: 本次测试日志列表
+        :type debug_log: list[str]
+        """
         
         super(DebugLiveDataApiV2Response, self).__init__()
 
@@ -103,7 +126,7 @@ class DebugLiveDataApiV2Response(SdkResponse):
         测试返回的状态码
 
         :param test_status_code: The test_status_code of this DebugLiveDataApiV2Response.
-        :type: str
+        :type test_status_code: str
         """
         self._test_status_code = test_status_code
 
@@ -125,7 +148,7 @@ class DebugLiveDataApiV2Response(SdkResponse):
         测试的请求内容
 
         :param test_request: The test_request of this DebugLiveDataApiV2Response.
-        :type: str
+        :type test_request: str
         """
         self._test_request = test_request
 
@@ -147,7 +170,7 @@ class DebugLiveDataApiV2Response(SdkResponse):
         测试耗时
 
         :param test_used_time: The test_used_time of this DebugLiveDataApiV2Response.
-        :type: int
+        :type test_used_time: int
         """
         self._test_used_time = test_used_time
 
@@ -169,7 +192,7 @@ class DebugLiveDataApiV2Response(SdkResponse):
         测试者的项目编号
 
         :param test_operator: The test_operator of this DebugLiveDataApiV2Response.
-        :type: str
+        :type test_operator: str
         """
         self._test_operator = test_operator
 
@@ -191,7 +214,7 @@ class DebugLiveDataApiV2Response(SdkResponse):
         测试的响应内容
 
         :param test_response: The test_response of this DebugLiveDataApiV2Response.
-        :type: str
+        :type test_response: str
         """
         self._test_response = test_response
 
@@ -213,7 +236,7 @@ class DebugLiveDataApiV2Response(SdkResponse):
         测试的请求方法
 
         :param test_method: The test_method of this DebugLiveDataApiV2Response.
-        :type: str
+        :type test_method: str
         """
         self._test_method = test_method
 
@@ -235,7 +258,7 @@ class DebugLiveDataApiV2Response(SdkResponse):
         测试编号
 
         :param test_id: The test_id of this DebugLiveDataApiV2Response.
-        :type: int
+        :type test_id: int
         """
         self._test_id = test_id
 
@@ -257,7 +280,7 @@ class DebugLiveDataApiV2Response(SdkResponse):
         测试时间
 
         :param test_date: The test_date of this DebugLiveDataApiV2Response.
-        :type: datetime
+        :type test_date: datetime
         """
         self._test_date = test_date
 
@@ -279,7 +302,7 @@ class DebugLiveDataApiV2Response(SdkResponse):
         后端API编号
 
         :param ld_api_id: The ld_api_id of this DebugLiveDataApiV2Response.
-        :type: str
+        :type ld_api_id: str
         """
         self._ld_api_id = ld_api_id
 
@@ -301,7 +324,7 @@ class DebugLiveDataApiV2Response(SdkResponse):
         本次测试日志列表
 
         :param debug_log: The debug_log of this DebugLiveDataApiV2Response.
-        :type: list[str]
+        :type debug_log: list[str]
         """
         self._debug_log = debug_log
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowJobInfosResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class ShowJobInfosResponse(SdkResponse):
     }
 
     def __init__(self, status=None, entities=None, job_id=None, job_type=None, begin_time=None, end_time=None, error_code=None, fail_reason=None, message=None, code=None):
-        """ShowJobInfosResponse - a model defined in huaweicloud sdk"""
+        """ShowJobInfosResponse
+
+        The model defined in huaweicloud sdk
+
+        :param status: Job的状态。SUCCESS：成功RUNNING：运行中FAIL：失败INIT：正在初始化
+        :type status: str
+        :param entities: 
+        :type entities: :class:`huaweicloudsdkbms.v1.Entities`
+        :param job_id: Job ID
+        :type job_id: str
+        :param job_type: Job的类型，包含以下类型：baremetalBatchCreate：批量创建裸金属服务器baremetalBatchOperate：批量修改裸金属服务器电源状态baremetalBatchCreate：批量创建裸金属服务器baremetalChangeOsVolumeBoot：切换快速发放裸金属服务器操作系统baremetalChangeOsLocalDisk：切换本地盘裸金属服务器操作系统baremetalVolumeBootReinstallOs：重装快速发放裸金属服务器操作系统baremetalReinstallOs：重装本地盘裸金属服务器操作系统baremetalAttachVolume：挂载单个磁盘baremetalDetachVolume：卸载单个磁盘baremetalBatchAttachVolume：裸金属服务器批量挂载共享磁盘
+        :type job_type: str
+        :param begin_time: 开始时间。时间戳格式为ISO 8601，例如：2019-04-25T20:04:47.591Z
+        :type begin_time: datetime
+        :param end_time: 结束时间。时间戳格式为ISO 8601，例如：2019-04-26T20:04:47.591Z
+        :type end_time: datetime
+        :param error_code: Job执行失败时的错误码
+        :type error_code: str
+        :param fail_reason: Job执行失败时的错误原因
+        :type fail_reason: str
+        :param message: 出现错误时，返回的错误消息
+        :type message: str
+        :param code: 出现错误时，返回的错误码。错误码和其对应的含义请参考8.1-状态码。
+        :type code: str
+        """
         
         super(ShowJobInfosResponse, self).__init__()
 
@@ -103,7 +126,7 @@ class ShowJobInfosResponse(SdkResponse):
         Job的状态。SUCCESS：成功RUNNING：运行中FAIL：失败INIT：正在初始化
 
         :param status: The status of this ShowJobInfosResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -113,7 +136,7 @@ class ShowJobInfosResponse(SdkResponse):
 
 
         :return: The entities of this ShowJobInfosResponse.
-        :rtype: Entities
+        :rtype: :class:`huaweicloudsdkbms.v1.Entities`
         """
         return self._entities
 
@@ -123,7 +146,7 @@ class ShowJobInfosResponse(SdkResponse):
 
 
         :param entities: The entities of this ShowJobInfosResponse.
-        :type: Entities
+        :type entities: :class:`huaweicloudsdkbms.v1.Entities`
         """
         self._entities = entities
 
@@ -145,7 +168,7 @@ class ShowJobInfosResponse(SdkResponse):
         Job ID
 
         :param job_id: The job_id of this ShowJobInfosResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -167,7 +190,7 @@ class ShowJobInfosResponse(SdkResponse):
         Job的类型，包含以下类型：baremetalBatchCreate：批量创建裸金属服务器baremetalBatchOperate：批量修改裸金属服务器电源状态baremetalBatchCreate：批量创建裸金属服务器baremetalChangeOsVolumeBoot：切换快速发放裸金属服务器操作系统baremetalChangeOsLocalDisk：切换本地盘裸金属服务器操作系统baremetalVolumeBootReinstallOs：重装快速发放裸金属服务器操作系统baremetalReinstallOs：重装本地盘裸金属服务器操作系统baremetalAttachVolume：挂载单个磁盘baremetalDetachVolume：卸载单个磁盘baremetalBatchAttachVolume：裸金属服务器批量挂载共享磁盘
 
         :param job_type: The job_type of this ShowJobInfosResponse.
-        :type: str
+        :type job_type: str
         """
         self._job_type = job_type
 
@@ -189,7 +212,7 @@ class ShowJobInfosResponse(SdkResponse):
         开始时间。时间戳格式为ISO 8601，例如：2019-04-25T20:04:47.591Z
 
         :param begin_time: The begin_time of this ShowJobInfosResponse.
-        :type: datetime
+        :type begin_time: datetime
         """
         self._begin_time = begin_time
 
@@ -211,7 +234,7 @@ class ShowJobInfosResponse(SdkResponse):
         结束时间。时间戳格式为ISO 8601，例如：2019-04-26T20:04:47.591Z
 
         :param end_time: The end_time of this ShowJobInfosResponse.
-        :type: datetime
+        :type end_time: datetime
         """
         self._end_time = end_time
 
@@ -233,7 +256,7 @@ class ShowJobInfosResponse(SdkResponse):
         Job执行失败时的错误码
 
         :param error_code: The error_code of this ShowJobInfosResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -255,7 +278,7 @@ class ShowJobInfosResponse(SdkResponse):
         Job执行失败时的错误原因
 
         :param fail_reason: The fail_reason of this ShowJobInfosResponse.
-        :type: str
+        :type fail_reason: str
         """
         self._fail_reason = fail_reason
 
@@ -277,7 +300,7 @@ class ShowJobInfosResponse(SdkResponse):
         出现错误时，返回的错误消息
 
         :param message: The message of this ShowJobInfosResponse.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -299,7 +322,7 @@ class ShowJobInfosResponse(SdkResponse):
         出现错误时，返回的错误码。错误码和其对应的含义请参考8.1-状态码。
 
         :param code: The code of this ShowJobInfosResponse.
-        :type: str
+        :type code: str
         """
         self._code = code
 

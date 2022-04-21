@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowAgentStatusResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowAgentStatusResponse(SdkResponse):
     }
 
     def __init__(self, status=None, agent_id=None):
-        """ShowAgentStatusResponse - a model defined in huaweicloud sdk"""
+        """ShowAgentStatusResponse
+
+        The model defined in huaweicloud sdk
+
+        :param status: Agent状态
+        :type status: str
+        :param agent_id: AgentID
+        :type agent_id: str
+        """
         
         super(ShowAgentStatusResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ShowAgentStatusResponse(SdkResponse):
         Agent状态
 
         :param status: The status of this ShowAgentStatusResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -85,7 +92,7 @@ class ShowAgentStatusResponse(SdkResponse):
         AgentID
 
         :param agent_id: The agent_id of this ShowAgentStatusResponse.
-        :type: str
+        :type agent_id: str
         """
         self._agent_id = agent_id
 

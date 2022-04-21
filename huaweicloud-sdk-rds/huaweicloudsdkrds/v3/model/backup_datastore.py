@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BackupDatastore:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BackupDatastore:
     }
 
     def __init__(self, type=None, version=None):
-        """BackupDatastore - a model defined in huaweicloud sdk"""
+        """BackupDatastore
+
+        The model defined in huaweicloud sdk
+
+        :param type: 数据库引擎，不区分大小写：  - MySQL - PostgreSQL - SQLServer
+        :type type: str
+        :param version: 数据库版本。
+        :type version: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class BackupDatastore:
         数据库引擎，不区分大小写：  - MySQL - PostgreSQL - SQLServer
 
         :param type: The type of this BackupDatastore.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -83,7 +90,7 @@ class BackupDatastore:
         数据库版本。
 
         :param version: The version of this BackupDatastore.
-        :type: str
+        :type version: str
         """
         self._version = version
 

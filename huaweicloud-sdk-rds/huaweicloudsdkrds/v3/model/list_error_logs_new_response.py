@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListErrorLogsNewResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListErrorLogsNewResponse(SdkResponse):
     }
 
     def __init__(self, error_log_list=None, total_record=None):
-        """ListErrorLogsNewResponse - a model defined in huaweicloud sdk"""
+        """ListErrorLogsNewResponse
+
+        The model defined in huaweicloud sdk
+
+        :param error_log_list: 
+        :type error_log_list: list[:class:`huaweicloudsdkrds.v3.ErrorLog`]
+        :param total_record: 总记录数。
+        :type total_record: int
+        """
         
         super(ListErrorLogsNewResponse, self).__init__()
 
@@ -51,7 +58,7 @@ class ListErrorLogsNewResponse(SdkResponse):
 
 
         :return: The error_log_list of this ListErrorLogsNewResponse.
-        :rtype: list[ErrorLog]
+        :rtype: list[:class:`huaweicloudsdkrds.v3.ErrorLog`]
         """
         return self._error_log_list
 
@@ -61,7 +68,7 @@ class ListErrorLogsNewResponse(SdkResponse):
 
 
         :param error_log_list: The error_log_list of this ListErrorLogsNewResponse.
-        :type: list[ErrorLog]
+        :type error_log_list: list[:class:`huaweicloudsdkrds.v3.ErrorLog`]
         """
         self._error_log_list = error_log_list
 
@@ -83,7 +90,7 @@ class ListErrorLogsNewResponse(SdkResponse):
         总记录数。
 
         :param total_record: The total_record of this ListErrorLogsNewResponse.
-        :type: int
+        :type total_record: int
         """
         self._total_record = total_record
 

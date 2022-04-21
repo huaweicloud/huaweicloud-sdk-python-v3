@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeviceMessageRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class DeviceMessageRequest:
     }
 
     def __init__(self, message_id=None, name=None, message=None, encoding=None, payload_format=None, topic=None, topic_full_name=None):
-        """DeviceMessageRequest - a model defined in huaweicloud sdk"""
+        """DeviceMessageRequest
+
+        The model defined in huaweicloud sdk
+
+        :param message_id: **参数说明**：消息id，由用户生成（推荐使用UUID），同一个设备下唯一， 如果用户填写的id在设备下不唯一， 则接口返回错误。 **取值范围**：长度不超过100，只允许字母、数字、下划线（_）、连接符（-）的组合。
+        :type message_id: str
+        :param name: **参数说明**：消息名称。 **取值范围**：长度不超过128，只允许中文、字母、数字、以及_?&#39;#().,&amp;%@!-等字符的组合。
+        :type name: str
+        :param message: **参数说明**：消息内容，支持string和json格式。
+        :type message: object
+        :param encoding: **参数说明**：消息内容编码格式。默认值none。 **取值范围**： - none  - base64：只能通过topic_full_name字段自定义的topic发送消息,否则会发送失败。
+        :type encoding: str
+        :param payload_format: **参数说明**：有效负载格式，在消息内容编码格式为none时有效。默认值standard（平台封装的标准格式）。 **取值范围**： - standard  - raw：时直接将消息内容作为有效负载下发， 注意： 取值为raw时，只能通过topic_full_name字段自定义的topic发送消息，否则会发送失败。
+        :type payload_format: str
+        :param topic: **参数说明**：消息下行到设备的topic, 可选， 仅适用于MQTT协议接入的设备。 用户只能填写在租户产品界面配置的topic, 否则会校验不通过。 平台给消息topic添加的前缀为$oc/devices/{device_id}/user/， 用户可以在前缀的基础上增加自定义部分， 如增加messageDown，则平台拼接前缀后完整的topic为 $oc/devices/{device_id}/user/messageDown，其中device_id以实际设备的网关id替代。 如果用户指定该topic，消息会通过该topic下行到设备，如果用户不指定， 则消息通过系统默认的topic下行到设备,系统默认的topic格式为： $oc/devices/{device_id}/sys/messages/down。此字段与topic_full_name字段只可填写一个。
+        :type topic: str
+        :param topic_full_name: **参数说明**：消息下行到设备的完整topic名称, 可选。用户需要下发用户自定义的topic给设备时，可以使用该参数指定完整的topic名称，物联网平台不校验该topic是否在平台定义，直接透传给设备。设备需要提前订阅该topic。此字段与topic字段只可填写一个。
+        :type topic_full_name: str
+        """
         
         
 
@@ -87,7 +104,7 @@ class DeviceMessageRequest:
         **参数说明**：消息id，由用户生成（推荐使用UUID），同一个设备下唯一， 如果用户填写的id在设备下不唯一， 则接口返回错误。 **取值范围**：长度不超过100，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :param message_id: The message_id of this DeviceMessageRequest.
-        :type: str
+        :type message_id: str
         """
         self._message_id = message_id
 
@@ -109,7 +126,7 @@ class DeviceMessageRequest:
         **参数说明**：消息名称。 **取值范围**：长度不超过128，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
         :param name: The name of this DeviceMessageRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -131,7 +148,7 @@ class DeviceMessageRequest:
         **参数说明**：消息内容，支持string和json格式。
 
         :param message: The message of this DeviceMessageRequest.
-        :type: object
+        :type message: object
         """
         self._message = message
 
@@ -153,7 +170,7 @@ class DeviceMessageRequest:
         **参数说明**：消息内容编码格式。默认值none。 **取值范围**： - none  - base64：只能通过topic_full_name字段自定义的topic发送消息,否则会发送失败。
 
         :param encoding: The encoding of this DeviceMessageRequest.
-        :type: str
+        :type encoding: str
         """
         self._encoding = encoding
 
@@ -175,7 +192,7 @@ class DeviceMessageRequest:
         **参数说明**：有效负载格式，在消息内容编码格式为none时有效。默认值standard（平台封装的标准格式）。 **取值范围**： - standard  - raw：时直接将消息内容作为有效负载下发， 注意： 取值为raw时，只能通过topic_full_name字段自定义的topic发送消息，否则会发送失败。
 
         :param payload_format: The payload_format of this DeviceMessageRequest.
-        :type: str
+        :type payload_format: str
         """
         self._payload_format = payload_format
 
@@ -197,7 +214,7 @@ class DeviceMessageRequest:
         **参数说明**：消息下行到设备的topic, 可选， 仅适用于MQTT协议接入的设备。 用户只能填写在租户产品界面配置的topic, 否则会校验不通过。 平台给消息topic添加的前缀为$oc/devices/{device_id}/user/， 用户可以在前缀的基础上增加自定义部分， 如增加messageDown，则平台拼接前缀后完整的topic为 $oc/devices/{device_id}/user/messageDown，其中device_id以实际设备的网关id替代。 如果用户指定该topic，消息会通过该topic下行到设备，如果用户不指定， 则消息通过系统默认的topic下行到设备,系统默认的topic格式为： $oc/devices/{device_id}/sys/messages/down。此字段与topic_full_name字段只可填写一个。
 
         :param topic: The topic of this DeviceMessageRequest.
-        :type: str
+        :type topic: str
         """
         self._topic = topic
 
@@ -219,7 +236,7 @@ class DeviceMessageRequest:
         **参数说明**：消息下行到设备的完整topic名称, 可选。用户需要下发用户自定义的topic给设备时，可以使用该参数指定完整的topic名称，物联网平台不校验该topic是否在平台定义，直接透传给设备。设备需要提前订阅该topic。此字段与topic字段只可填写一个。
 
         :param topic_full_name: The topic_full_name of this DeviceMessageRequest.
-        :type: str
+        :type topic_full_name: str
         """
         self._topic_full_name = topic_full_name
 

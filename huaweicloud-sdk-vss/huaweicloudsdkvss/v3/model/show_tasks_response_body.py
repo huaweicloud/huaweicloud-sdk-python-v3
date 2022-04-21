@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowTasksResponseBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -62,7 +61,45 @@ class ShowTasksResponseBody:
     }
 
     def __init__(self, task_name=None, url=None, task_type=None, task_id=None, domain_name=None, task_settings=None, create_time=None, start_time=None, end_time=None, task_status=None, schedule_status=None, progress=None, reason=None, pack_num=None, score=None, safe_level=None, statistics=None):
-        """ShowTasksResponseBody - a model defined in huaweicloud sdk"""
+        """ShowTasksResponseBody
+
+        The model defined in huaweicloud sdk
+
+        :param task_name: 任务名称
+        :type task_name: str
+        :param url: 待扫描的目标网址
+        :type url: str
+        :param task_type: 扫描任务类型:   * normal - 普通任务   * monitor - 监测任务 
+        :type task_type: str
+        :param task_id: 任务ID
+        :type task_id: str
+        :param domain_name: 域名
+        :type domain_name: str
+        :param task_settings: 
+        :type task_settings: :class:`huaweicloudsdkvss.v3.TaskSettings`
+        :param create_time: 创建任务的时间
+        :type create_time: str
+        :param start_time: 任务启动的时间
+        :type start_time: str
+        :param end_time: 任务结束的时间
+        :type end_time: str
+        :param task_status: 任务状态:   * running - 正在运行   * success - 成功   * canceled - 已取消   * waiting - 正在等待   * failure - 失败 
+        :type task_status: str
+        :param schedule_status: 监测任务状态:   * running - 正在运行   * waiting - 正在等待   * finished - 已完成 
+        :type schedule_status: str
+        :param progress: 任务进度
+        :type progress: int
+        :param reason: 任务状态描述
+        :type reason: str
+        :param pack_num: 包总数
+        :type pack_num: int
+        :param score: 安全分数
+        :type score: int
+        :param safe_level: 安全等级:   * - safety  : 安全   * - average : 中风险   * - highrisk: 高风险 
+        :type safe_level: str
+        :param statistics: 
+        :type statistics: :class:`huaweicloudsdkvss.v3.VulnsLevel`
+        """
         
         
 
@@ -136,7 +173,7 @@ class ShowTasksResponseBody:
         任务名称
 
         :param task_name: The task_name of this ShowTasksResponseBody.
-        :type: str
+        :type task_name: str
         """
         self._task_name = task_name
 
@@ -158,7 +195,7 @@ class ShowTasksResponseBody:
         待扫描的目标网址
 
         :param url: The url of this ShowTasksResponseBody.
-        :type: str
+        :type url: str
         """
         self._url = url
 
@@ -180,7 +217,7 @@ class ShowTasksResponseBody:
         扫描任务类型:   * normal - 普通任务   * monitor - 监测任务 
 
         :param task_type: The task_type of this ShowTasksResponseBody.
-        :type: str
+        :type task_type: str
         """
         self._task_type = task_type
 
@@ -202,7 +239,7 @@ class ShowTasksResponseBody:
         任务ID
 
         :param task_id: The task_id of this ShowTasksResponseBody.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -224,7 +261,7 @@ class ShowTasksResponseBody:
         域名
 
         :param domain_name: The domain_name of this ShowTasksResponseBody.
-        :type: str
+        :type domain_name: str
         """
         self._domain_name = domain_name
 
@@ -234,7 +271,7 @@ class ShowTasksResponseBody:
 
 
         :return: The task_settings of this ShowTasksResponseBody.
-        :rtype: TaskSettings
+        :rtype: :class:`huaweicloudsdkvss.v3.TaskSettings`
         """
         return self._task_settings
 
@@ -244,7 +281,7 @@ class ShowTasksResponseBody:
 
 
         :param task_settings: The task_settings of this ShowTasksResponseBody.
-        :type: TaskSettings
+        :type task_settings: :class:`huaweicloudsdkvss.v3.TaskSettings`
         """
         self._task_settings = task_settings
 
@@ -266,7 +303,7 @@ class ShowTasksResponseBody:
         创建任务的时间
 
         :param create_time: The create_time of this ShowTasksResponseBody.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -288,7 +325,7 @@ class ShowTasksResponseBody:
         任务启动的时间
 
         :param start_time: The start_time of this ShowTasksResponseBody.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -310,7 +347,7 @@ class ShowTasksResponseBody:
         任务结束的时间
 
         :param end_time: The end_time of this ShowTasksResponseBody.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -332,7 +369,7 @@ class ShowTasksResponseBody:
         任务状态:   * running - 正在运行   * success - 成功   * canceled - 已取消   * waiting - 正在等待   * failure - 失败 
 
         :param task_status: The task_status of this ShowTasksResponseBody.
-        :type: str
+        :type task_status: str
         """
         self._task_status = task_status
 
@@ -354,7 +391,7 @@ class ShowTasksResponseBody:
         监测任务状态:   * running - 正在运行   * waiting - 正在等待   * finished - 已完成 
 
         :param schedule_status: The schedule_status of this ShowTasksResponseBody.
-        :type: str
+        :type schedule_status: str
         """
         self._schedule_status = schedule_status
 
@@ -376,7 +413,7 @@ class ShowTasksResponseBody:
         任务进度
 
         :param progress: The progress of this ShowTasksResponseBody.
-        :type: int
+        :type progress: int
         """
         self._progress = progress
 
@@ -398,7 +435,7 @@ class ShowTasksResponseBody:
         任务状态描述
 
         :param reason: The reason of this ShowTasksResponseBody.
-        :type: str
+        :type reason: str
         """
         self._reason = reason
 
@@ -420,7 +457,7 @@ class ShowTasksResponseBody:
         包总数
 
         :param pack_num: The pack_num of this ShowTasksResponseBody.
-        :type: int
+        :type pack_num: int
         """
         self._pack_num = pack_num
 
@@ -442,7 +479,7 @@ class ShowTasksResponseBody:
         安全分数
 
         :param score: The score of this ShowTasksResponseBody.
-        :type: int
+        :type score: int
         """
         self._score = score
 
@@ -464,7 +501,7 @@ class ShowTasksResponseBody:
         安全等级:   * - safety  : 安全   * - average : 中风险   * - highrisk: 高风险 
 
         :param safe_level: The safe_level of this ShowTasksResponseBody.
-        :type: str
+        :type safe_level: str
         """
         self._safe_level = safe_level
 
@@ -474,7 +511,7 @@ class ShowTasksResponseBody:
 
 
         :return: The statistics of this ShowTasksResponseBody.
-        :rtype: VulnsLevel
+        :rtype: :class:`huaweicloudsdkvss.v3.VulnsLevel`
         """
         return self._statistics
 
@@ -484,7 +521,7 @@ class ShowTasksResponseBody:
 
 
         :param statistics: The statistics of this ShowTasksResponseBody.
-        :type: VulnsLevel
+        :type statistics: :class:`huaweicloudsdkvss.v3.VulnsLevel`
         """
         self._statistics = statistics
 

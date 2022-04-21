@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryLogKeyWordCountRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class QueryLogKeyWordCountRequestBody:
     }
 
     def __init__(self, start_time=None, end_time=None, step_interval=None, group_id=None, stream_id=None, key_word=None):
-        """QueryLogKeyWordCountRequestBody - a model defined in huaweicloud sdk"""
+        """QueryLogKeyWordCountRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param start_time: 开始时间
+        :type start_time: str
+        :param end_time: 结束时间
+        :type end_time: str
+        :param step_interval: 步长间隔
+        :type step_interval: int
+        :param group_id: 日志组ID
+        :type group_id: str
+        :param stream_id: 日志流ID
+        :type stream_id: str
+        :param key_word: 关键词
+        :type key_word: str
+        """
         
         
 
@@ -77,7 +92,7 @@ class QueryLogKeyWordCountRequestBody:
         开始时间
 
         :param start_time: The start_time of this QueryLogKeyWordCountRequestBody.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -99,7 +114,7 @@ class QueryLogKeyWordCountRequestBody:
         结束时间
 
         :param end_time: The end_time of this QueryLogKeyWordCountRequestBody.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -121,7 +136,7 @@ class QueryLogKeyWordCountRequestBody:
         步长间隔
 
         :param step_interval: The step_interval of this QueryLogKeyWordCountRequestBody.
-        :type: int
+        :type step_interval: int
         """
         self._step_interval = step_interval
 
@@ -143,7 +158,7 @@ class QueryLogKeyWordCountRequestBody:
         日志组ID
 
         :param group_id: The group_id of this QueryLogKeyWordCountRequestBody.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -165,7 +180,7 @@ class QueryLogKeyWordCountRequestBody:
         日志流ID
 
         :param stream_id: The stream_id of this QueryLogKeyWordCountRequestBody.
-        :type: str
+        :type stream_id: str
         """
         self._stream_id = stream_id
 
@@ -187,7 +202,7 @@ class QueryLogKeyWordCountRequestBody:
         关键词
 
         :param key_word: The key_word of this QueryLogKeyWordCountRequestBody.
-        :type: str
+        :type key_word: str
         """
         self._key_word = key_word
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Calculation:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class Calculation:
     }
 
     def __init__(self, never_connected=None, online=None, offline=None):
-        """Calculation - a model defined in huaweicloud sdk"""
+        """Calculation
+
+        The model defined in huaweicloud sdk
+
+        :param never_connected: 从未连接过的设备数量
+        :type never_connected: int
+        :param online: 在线设备数量
+        :type online: int
+        :param offline: 离线设备数量
+        :type offline: int
+        """
         
         
 
@@ -68,7 +77,7 @@ class Calculation:
         从未连接过的设备数量
 
         :param never_connected: The never_connected of this Calculation.
-        :type: int
+        :type never_connected: int
         """
         self._never_connected = never_connected
 
@@ -90,7 +99,7 @@ class Calculation:
         在线设备数量
 
         :param online: The online of this Calculation.
-        :type: int
+        :type online: int
         """
         self._online = online
 
@@ -112,7 +121,7 @@ class Calculation:
         离线设备数量
 
         :param offline: The offline of this Calculation.
-        :type: int
+        :type offline: int
         """
         self._offline = offline
 

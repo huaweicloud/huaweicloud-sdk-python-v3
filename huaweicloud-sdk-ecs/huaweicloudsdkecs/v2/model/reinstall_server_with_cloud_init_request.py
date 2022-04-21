@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ReinstallServerWithCloudInitRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ReinstallServerWithCloudInitRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """ReinstallServerWithCloudInitRequest - a model defined in huaweicloud sdk"""
+        """ReinstallServerWithCloudInitRequest
+
+        The model defined in huaweicloud sdk
+
+        :param server_id: 云服务器ID。
+        :type server_id: str
+        :param body: Body of the ReinstallServerWithCloudInitRequest
+        :type body: :class:`huaweicloudsdkecs.v2.ReinstallServerWithCloudInitRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class ReinstallServerWithCloudInitRequest:
         云服务器ID。
 
         :param server_id: The server_id of this ReinstallServerWithCloudInitRequest.
-        :type: str
+        :type server_id: str
         """
         self._server_id = server_id
 
@@ -72,7 +79,7 @@ class ReinstallServerWithCloudInitRequest:
 
 
         :return: The body of this ReinstallServerWithCloudInitRequest.
-        :rtype: ReinstallServerWithCloudInitRequestBody
+        :rtype: :class:`huaweicloudsdkecs.v2.ReinstallServerWithCloudInitRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class ReinstallServerWithCloudInitRequest:
 
 
         :param body: The body of this ReinstallServerWithCloudInitRequest.
-        :type: ReinstallServerWithCloudInitRequestBody
+        :type body: :class:`huaweicloudsdkecs.v2.ReinstallServerWithCloudInitRequestBody`
         """
         self._body = body
 

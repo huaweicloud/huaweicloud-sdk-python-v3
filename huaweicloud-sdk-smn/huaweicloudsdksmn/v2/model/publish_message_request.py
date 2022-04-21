@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PublishMessageRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class PublishMessageRequest:
     }
 
     def __init__(self, topic_urn=None, body=None):
-        """PublishMessageRequest - a model defined in huaweicloud sdk"""
+        """PublishMessageRequest
+
+        The model defined in huaweicloud sdk
+
+        :param topic_urn: Topic的唯一的资源标识，可通过[查询主题列表](https://support.huaweicloud.com/api-smn/smn_api_51004.html)获取该标识。
+        :type topic_urn: str
+        :param body: Body of the PublishMessageRequest
+        :type body: :class:`huaweicloudsdksmn.v2.PublishMessageRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class PublishMessageRequest:
         Topic的唯一的资源标识，可通过[查询主题列表](https://support.huaweicloud.com/api-smn/smn_api_51004.html)获取该标识。
 
         :param topic_urn: The topic_urn of this PublishMessageRequest.
-        :type: str
+        :type topic_urn: str
         """
         self._topic_urn = topic_urn
 
@@ -72,7 +79,7 @@ class PublishMessageRequest:
 
 
         :return: The body of this PublishMessageRequest.
-        :rtype: PublishMessageRequestBody
+        :rtype: :class:`huaweicloudsdksmn.v2.PublishMessageRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class PublishMessageRequest:
 
 
         :param body: The body of this PublishMessageRequest.
-        :type: PublishMessageRequestBody
+        :type body: :class:`huaweicloudsdksmn.v2.PublishMessageRequestBody`
         """
         self._body = body
 

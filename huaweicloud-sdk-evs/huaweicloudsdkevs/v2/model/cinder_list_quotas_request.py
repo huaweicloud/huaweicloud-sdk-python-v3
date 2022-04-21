@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CinderListQuotasRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CinderListQuotasRequest:
     }
 
     def __init__(self, target_project_id=None, usage=None):
-        """CinderListQuotasRequest - a model defined in huaweicloud sdk"""
+        """CinderListQuotasRequest
+
+        The model defined in huaweicloud sdk
+
+        :param target_project_id: 目标的项目ID。与project_id保持一致即可。
+        :type target_project_id: str
+        :param usage: 是否查询配额详细信息。当前只支持传true。
+        :type usage: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class CinderListQuotasRequest:
         目标的项目ID。与project_id保持一致即可。
 
         :param target_project_id: The target_project_id of this CinderListQuotasRequest.
-        :type: str
+        :type target_project_id: str
         """
         self._target_project_id = target_project_id
 
@@ -83,7 +90,7 @@ class CinderListQuotasRequest:
         是否查询配额详细信息。当前只支持传true。
 
         :param usage: The usage of this CinderListQuotasRequest.
-        :type: str
+        :type usage: str
         """
         self._usage = usage
 

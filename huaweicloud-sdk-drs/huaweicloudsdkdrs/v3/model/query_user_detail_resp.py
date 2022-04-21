@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryUserDetailResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class QueryUserDetailResp:
     }
 
     def __init__(self, id=None, account=None, comment=None, is_transfer=None, privileges=None, password=None, roles=None, selected=None, no_privileges=None, parent_account=None, no_parent_account=None):
-        """QueryUserDetailResp - a model defined in huaweicloud sdk"""
+        """QueryUserDetailResp
+
+        The model defined in huaweicloud sdk
+
+        :param id: 用户账户id。
+        :type id: str
+        :param account: 账户。
+        :type account: str
+        :param comment: 说明。
+        :type comment: str
+        :param is_transfer: 是否支持迁移
+        :type is_transfer: bool
+        :param privileges: 权限
+        :type privileges: list[str]
+        :param password: 密码。
+        :type password: str
+        :param roles: 账号拥有的角色
+        :type roles: list[str]
+        :param selected: 是否选择。
+        :type selected: bool
+        :param no_privileges: 无法同步的用户权限
+        :type no_privileges: str
+        :param parent_account: 父用户
+        :type parent_account: str
+        :param no_parent_account: 无法同步父子关系的父用户
+        :type no_parent_account: str
+        """
         
         
 
@@ -108,7 +133,7 @@ class QueryUserDetailResp:
         用户账户id。
 
         :param id: The id of this QueryUserDetailResp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -130,7 +155,7 @@ class QueryUserDetailResp:
         账户。
 
         :param account: The account of this QueryUserDetailResp.
-        :type: str
+        :type account: str
         """
         self._account = account
 
@@ -152,7 +177,7 @@ class QueryUserDetailResp:
         说明。
 
         :param comment: The comment of this QueryUserDetailResp.
-        :type: str
+        :type comment: str
         """
         self._comment = comment
 
@@ -174,7 +199,7 @@ class QueryUserDetailResp:
         是否支持迁移
 
         :param is_transfer: The is_transfer of this QueryUserDetailResp.
-        :type: bool
+        :type is_transfer: bool
         """
         self._is_transfer = is_transfer
 
@@ -196,7 +221,7 @@ class QueryUserDetailResp:
         权限
 
         :param privileges: The privileges of this QueryUserDetailResp.
-        :type: list[str]
+        :type privileges: list[str]
         """
         self._privileges = privileges
 
@@ -218,7 +243,7 @@ class QueryUserDetailResp:
         密码。
 
         :param password: The password of this QueryUserDetailResp.
-        :type: str
+        :type password: str
         """
         self._password = password
 
@@ -240,7 +265,7 @@ class QueryUserDetailResp:
         账号拥有的角色
 
         :param roles: The roles of this QueryUserDetailResp.
-        :type: list[str]
+        :type roles: list[str]
         """
         self._roles = roles
 
@@ -262,7 +287,7 @@ class QueryUserDetailResp:
         是否选择。
 
         :param selected: The selected of this QueryUserDetailResp.
-        :type: bool
+        :type selected: bool
         """
         self._selected = selected
 
@@ -284,7 +309,7 @@ class QueryUserDetailResp:
         无法同步的用户权限
 
         :param no_privileges: The no_privileges of this QueryUserDetailResp.
-        :type: str
+        :type no_privileges: str
         """
         self._no_privileges = no_privileges
 
@@ -306,7 +331,7 @@ class QueryUserDetailResp:
         父用户
 
         :param parent_account: The parent_account of this QueryUserDetailResp.
-        :type: str
+        :type parent_account: str
         """
         self._parent_account = parent_account
 
@@ -328,7 +353,7 @@ class QueryUserDetailResp:
         无法同步父子关系的父用户
 
         :param no_parent_account: The no_parent_account of this QueryUserDetailResp.
-        :type: str
+        :type no_parent_account: str
         """
         self._no_parent_account = no_parent_account
 

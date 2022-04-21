@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowVaultResourceInstancesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowVaultResourceInstancesRequest:
     }
 
     def __init__(self, body=None):
-        """ShowVaultResourceInstancesRequest - a model defined in huaweicloud sdk"""
+        """ShowVaultResourceInstancesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the ShowVaultResourceInstancesRequest
+        :type body: :class:`huaweicloudsdkcbr.v1.VaultResourceInstancesReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class ShowVaultResourceInstancesRequest:
 
 
         :return: The body of this ShowVaultResourceInstancesRequest.
-        :rtype: VaultResourceInstancesReq
+        :rtype: :class:`huaweicloudsdkcbr.v1.VaultResourceInstancesReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class ShowVaultResourceInstancesRequest:
 
 
         :param body: The body of this ShowVaultResourceInstancesRequest.
-        :type: VaultResourceInstancesReq
+        :type body: :class:`huaweicloudsdkcbr.v1.VaultResourceInstancesReq`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FailedObjectRecordDto:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class FailedObjectRecordDto:
     }
 
     def __init__(self, result=None, list_file_key=None, error_code=None):
-        """FailedObjectRecordDto - a model defined in huaweicloud sdk"""
+        """FailedObjectRecordDto
+
+        The model defined in huaweicloud sdk
+
+        :param result: 是否支持失败对象重传。
+        :type result: bool
+        :param list_file_key: 失败对象列表文件路径。
+        :type list_file_key: str
+        :param error_code: 失败对象列表上传失败的错误码。
+        :type error_code: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class FailedObjectRecordDto:
         是否支持失败对象重传。
 
         :param result: The result of this FailedObjectRecordDto.
-        :type: bool
+        :type result: bool
         """
         self._result = result
 
@@ -90,7 +99,7 @@ class FailedObjectRecordDto:
         失败对象列表文件路径。
 
         :param list_file_key: The list_file_key of this FailedObjectRecordDto.
-        :type: str
+        :type list_file_key: str
         """
         self._list_file_key = list_file_key
 
@@ -112,7 +121,7 @@ class FailedObjectRecordDto:
         失败对象列表上传失败的错误码。
 
         :param error_code: The error_code of this FailedObjectRecordDto.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 

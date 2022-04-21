@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DiskusageTopicEntity:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class DiskusageTopicEntity:
     }
 
     def __init__(self, size=None, topic_name=None, topic_partition=None, percentage=None):
-        """DiskusageTopicEntity - a model defined in huaweicloud sdk"""
+        """DiskusageTopicEntity
+
+        The model defined in huaweicloud sdk
+
+        :param size: 磁盘使用量。
+        :type size: str
+        :param topic_name: topic名称。
+        :type topic_name: str
+        :param topic_partition: 分区。
+        :type topic_partition: str
+        :param percentage: 磁盘使用量的占比。
+        :type percentage: float
+        """
         
         
 
@@ -73,7 +84,7 @@ class DiskusageTopicEntity:
         磁盘使用量。
 
         :param size: The size of this DiskusageTopicEntity.
-        :type: str
+        :type size: str
         """
         self._size = size
 
@@ -95,7 +106,7 @@ class DiskusageTopicEntity:
         topic名称。
 
         :param topic_name: The topic_name of this DiskusageTopicEntity.
-        :type: str
+        :type topic_name: str
         """
         self._topic_name = topic_name
 
@@ -117,7 +128,7 @@ class DiskusageTopicEntity:
         分区。
 
         :param topic_partition: The topic_partition of this DiskusageTopicEntity.
-        :type: str
+        :type topic_partition: str
         """
         self._topic_partition = topic_partition
 
@@ -139,7 +150,7 @@ class DiskusageTopicEntity:
         磁盘使用量的占比。
 
         :param percentage: The percentage of this DiskusageTopicEntity.
-        :type: float
+        :type percentage: float
         """
         self._percentage = percentage
 

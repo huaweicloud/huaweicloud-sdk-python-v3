@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UnsubscribeResourcesReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UnsubscribeResourcesReq:
     }
 
     def __init__(self, resource_ids=None, unsubscribe_type=None, unsubscribe_reason_type=None, unsubscribe_reason=None):
-        """UnsubscribeResourcesReq - a model defined in huaweicloud sdk"""
+        """UnsubscribeResourcesReq
+
+        The model defined in huaweicloud sdk
+
+        :param resource_ids: 资源ID列表。 最大支持1次性输入10个资源ID，只能输入主资源ID。 哪些资源是主资源请根据“查询客户包年/包月资源列表”接口响应参数中的“is_main_resource”来标识。
+        :type resource_ids: list[str]
+        :param unsubscribe_type: 退订类型，取值如下： 1：退订资源及其已续费周期。2：只退订资源已续费周期，不退订资源。
+        :type unsubscribe_type: int
+        :param unsubscribe_reason_type: 退订理由分类，取值如下： 1：产品不好用2：产品功能无法满足需求3：不会操作/操作过于复杂4：对服务不满意5：其他
+        :type unsubscribe_reason_type: int
+        :param unsubscribe_reason: 退订原因，一般由客户输入。
+        :type unsubscribe_reason: str
+        """
         
         
 
@@ -71,7 +82,7 @@ class UnsubscribeResourcesReq:
         资源ID列表。 最大支持1次性输入10个资源ID，只能输入主资源ID。 哪些资源是主资源请根据“查询客户包年/包月资源列表”接口响应参数中的“is_main_resource”来标识。
 
         :param resource_ids: The resource_ids of this UnsubscribeResourcesReq.
-        :type: list[str]
+        :type resource_ids: list[str]
         """
         self._resource_ids = resource_ids
 
@@ -93,7 +104,7 @@ class UnsubscribeResourcesReq:
         退订类型，取值如下： 1：退订资源及其已续费周期。2：只退订资源已续费周期，不退订资源。
 
         :param unsubscribe_type: The unsubscribe_type of this UnsubscribeResourcesReq.
-        :type: int
+        :type unsubscribe_type: int
         """
         self._unsubscribe_type = unsubscribe_type
 
@@ -115,7 +126,7 @@ class UnsubscribeResourcesReq:
         退订理由分类，取值如下： 1：产品不好用2：产品功能无法满足需求3：不会操作/操作过于复杂4：对服务不满意5：其他
 
         :param unsubscribe_reason_type: The unsubscribe_reason_type of this UnsubscribeResourcesReq.
-        :type: int
+        :type unsubscribe_reason_type: int
         """
         self._unsubscribe_reason_type = unsubscribe_reason_type
 
@@ -137,7 +148,7 @@ class UnsubscribeResourcesReq:
         退订原因，一般由客户输入。
 
         :param unsubscribe_reason: The unsubscribe_reason of this UnsubscribeResourcesReq.
-        :type: str
+        :type unsubscribe_reason: str
         """
         self._unsubscribe_reason = unsubscribe_reason
 

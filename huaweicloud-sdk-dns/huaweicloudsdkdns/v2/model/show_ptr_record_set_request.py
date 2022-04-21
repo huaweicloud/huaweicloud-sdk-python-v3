@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowPtrRecordSetRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowPtrRecordSetRequest:
     }
 
     def __init__(self, region=None, floatingip_id=None):
-        """ShowPtrRecordSetRequest - a model defined in huaweicloud sdk"""
+        """ShowPtrRecordSetRequest
+
+        The model defined in huaweicloud sdk
+
+        :param region: 租户的区域信息。 
+        :type region: str
+        :param floatingip_id: 弹性IP的ID。
+        :type floatingip_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ShowPtrRecordSetRequest:
         租户的区域信息。 
 
         :param region: The region of this ShowPtrRecordSetRequest.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -83,7 +90,7 @@ class ShowPtrRecordSetRequest:
         弹性IP的ID。
 
         :param floatingip_id: The floatingip_id of this ShowPtrRecordSetRequest.
-        :type: str
+        :type floatingip_id: str
         """
         self._floatingip_id = floatingip_id
 

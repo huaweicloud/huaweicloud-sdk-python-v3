@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AuthenticatingProxy:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class AuthenticatingProxy:
     }
 
     def __init__(self, ca=None, cert=None, private_key=None):
-        """AuthenticatingProxy - a model defined in huaweicloud sdk"""
+        """AuthenticatingProxy
+
+        The model defined in huaweicloud sdk
+
+        :param ca: authenticating_proxy模式配置的x509格式CA证书(base64编码)。当集群认证模式为authenticating_proxy时，此项必须填写。  最大长度：1M
+        :type ca: str
+        :param cert: authenticating_proxy模式配置的x509格式CA证书签发的客户端证书，用于kube-apiserver到扩展apiserver的认证。(base64编码)。当集群认证模式为authenticating_proxy时，此项必须填写。
+        :type cert: str
+        :param private_key: authenticating_proxy模式配置的x509格式CA证书签发的客户端证书时对应的私钥，用于kube-apiserver到扩展apiserver的认证。Kubernetes集群使用的私钥尚不支持密码加密，请使用未加密的私钥。(base64编码)。当集群认证模式为authenticating_proxy时，此项必须填写。
+        :type private_key: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class AuthenticatingProxy:
         authenticating_proxy模式配置的x509格式CA证书(base64编码)。当集群认证模式为authenticating_proxy时，此项必须填写。  最大长度：1M
 
         :param ca: The ca of this AuthenticatingProxy.
-        :type: str
+        :type ca: str
         """
         self._ca = ca
 
@@ -90,7 +99,7 @@ class AuthenticatingProxy:
         authenticating_proxy模式配置的x509格式CA证书签发的客户端证书，用于kube-apiserver到扩展apiserver的认证。(base64编码)。当集群认证模式为authenticating_proxy时，此项必须填写。
 
         :param cert: The cert of this AuthenticatingProxy.
-        :type: str
+        :type cert: str
         """
         self._cert = cert
 
@@ -112,7 +121,7 @@ class AuthenticatingProxy:
         authenticating_proxy模式配置的x509格式CA证书签发的客户端证书时对应的私钥，用于kube-apiserver到扩展apiserver的认证。Kubernetes集群使用的私钥尚不支持密码加密，请使用未加密的私钥。(base64编码)。当集群认证模式为authenticating_proxy时，此项必须填写。
 
         :param private_key: The private_key of this AuthenticatingProxy.
-        :type: str
+        :type private_key: str
         """
         self._private_key = private_key
 

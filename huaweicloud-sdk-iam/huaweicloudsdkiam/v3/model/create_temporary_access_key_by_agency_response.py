@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateTemporaryAccessKeyByAgencyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateTemporaryAccessKeyByAgencyResponse(SdkResponse):
     }
 
     def __init__(self, credential=None):
-        """CreateTemporaryAccessKeyByAgencyResponse - a model defined in huaweicloud sdk"""
+        """CreateTemporaryAccessKeyByAgencyResponse
+
+        The model defined in huaweicloud sdk
+
+        :param credential: 
+        :type credential: :class:`huaweicloudsdkiam.v3.Credential`
+        """
         
         super(CreateTemporaryAccessKeyByAgencyResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class CreateTemporaryAccessKeyByAgencyResponse(SdkResponse):
 
 
         :return: The credential of this CreateTemporaryAccessKeyByAgencyResponse.
-        :rtype: Credential
+        :rtype: :class:`huaweicloudsdkiam.v3.Credential`
         """
         return self._credential
 
@@ -56,7 +61,7 @@ class CreateTemporaryAccessKeyByAgencyResponse(SdkResponse):
 
 
         :param credential: The credential of this CreateTemporaryAccessKeyByAgencyResponse.
-        :type: Credential
+        :type credential: :class:`huaweicloudsdkiam.v3.Credential`
         """
         self._credential = credential
 

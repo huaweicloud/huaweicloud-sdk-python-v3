@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ScopedTokenUser:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ScopedTokenUser:
     }
 
     def __init__(self, domain=None, os_federation=None, id=None, name=None, password_expires_at=None):
-        """ScopedTokenUser - a model defined in huaweicloud sdk"""
+        """ScopedTokenUser
+
+        The model defined in huaweicloud sdk
+
+        :param domain: 
+        :type domain: :class:`huaweicloudsdkiam.v3.TokenDomainResult`
+        :param os_federation: 
+        :type os_federation: :class:`huaweicloudsdkiam.v3.TokenUserOsfederation`
+        :param id: 用户ID。
+        :type id: str
+        :param name: 用户名。
+        :type name: str
+        :param password_expires_at: 密码过期时间（UTC时间），“”表示密码不过期。
+        :type password_expires_at: str
+        """
         
         
 
@@ -61,7 +74,7 @@ class ScopedTokenUser:
 
 
         :return: The domain of this ScopedTokenUser.
-        :rtype: TokenDomainResult
+        :rtype: :class:`huaweicloudsdkiam.v3.TokenDomainResult`
         """
         return self._domain
 
@@ -71,7 +84,7 @@ class ScopedTokenUser:
 
 
         :param domain: The domain of this ScopedTokenUser.
-        :type: TokenDomainResult
+        :type domain: :class:`huaweicloudsdkiam.v3.TokenDomainResult`
         """
         self._domain = domain
 
@@ -81,7 +94,7 @@ class ScopedTokenUser:
 
 
         :return: The os_federation of this ScopedTokenUser.
-        :rtype: TokenUserOsfederation
+        :rtype: :class:`huaweicloudsdkiam.v3.TokenUserOsfederation`
         """
         return self._os_federation
 
@@ -91,7 +104,7 @@ class ScopedTokenUser:
 
 
         :param os_federation: The os_federation of this ScopedTokenUser.
-        :type: TokenUserOsfederation
+        :type os_federation: :class:`huaweicloudsdkiam.v3.TokenUserOsfederation`
         """
         self._os_federation = os_federation
 
@@ -113,7 +126,7 @@ class ScopedTokenUser:
         用户ID。
 
         :param id: The id of this ScopedTokenUser.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -135,7 +148,7 @@ class ScopedTokenUser:
         用户名。
 
         :param name: The name of this ScopedTokenUser.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -157,7 +170,7 @@ class ScopedTokenUser:
         密码过期时间（UTC时间），“”表示密码不过期。
 
         :param password_expires_at: The password_expires_at of this ScopedTokenUser.
-        :type: str
+        :type password_expires_at: str
         """
         self._password_expires_at = password_expires_at
 

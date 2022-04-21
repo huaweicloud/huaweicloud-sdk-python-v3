@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UploadAsset:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UploadAsset:
     }
 
     def __init__(self, url=None, asset_id=None, error_code=None, error_msg=None):
-        """UploadAsset - a model defined in huaweicloud sdk"""
+        """UploadAsset
+
+        The model defined in huaweicloud sdk
+
+        :param url: 媒资所在url 
+        :type url: str
+        :param asset_id: 新创建媒资的媒资id 
+        :type asset_id: str
+        :param error_code: 错误码。 
+        :type error_code: str
+        :param error_msg: 错误描述。 
+        :type error_msg: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class UploadAsset:
         媒资所在url 
 
         :param url: The url of this UploadAsset.
-        :type: str
+        :type url: str
         """
         self._url = url
 
@@ -95,7 +106,7 @@ class UploadAsset:
         新创建媒资的媒资id 
 
         :param asset_id: The asset_id of this UploadAsset.
-        :type: str
+        :type asset_id: str
         """
         self._asset_id = asset_id
 
@@ -117,7 +128,7 @@ class UploadAsset:
         错误码。 
 
         :param error_code: The error_code of this UploadAsset.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -139,7 +150,7 @@ class UploadAsset:
         错误描述。 
 
         :param error_msg: The error_msg of this UploadAsset.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 

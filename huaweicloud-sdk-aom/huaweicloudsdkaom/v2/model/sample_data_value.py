@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SampleDataValue:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class SampleDataValue:
     }
 
     def __init__(self, sample=None, data_points=None):
-        """SampleDataValue - a model defined in huaweicloud sdk"""
+        """SampleDataValue
+
+        The model defined in huaweicloud sdk
+
+        :param sample: 
+        :type sample: :class:`huaweicloudsdkaom.v2.QuerySample`
+        :param data_points: 时序数据。
+        :type data_points: list[:class:`huaweicloudsdkaom.v2.MetricDataPoints`]
+        """
         
         
 
@@ -51,7 +58,7 @@ class SampleDataValue:
 
 
         :return: The sample of this SampleDataValue.
-        :rtype: QuerySample
+        :rtype: :class:`huaweicloudsdkaom.v2.QuerySample`
         """
         return self._sample
 
@@ -61,7 +68,7 @@ class SampleDataValue:
 
 
         :param sample: The sample of this SampleDataValue.
-        :type: QuerySample
+        :type sample: :class:`huaweicloudsdkaom.v2.QuerySample`
         """
         self._sample = sample
 
@@ -72,7 +79,7 @@ class SampleDataValue:
         时序数据。
 
         :return: The data_points of this SampleDataValue.
-        :rtype: list[MetricDataPoints]
+        :rtype: list[:class:`huaweicloudsdkaom.v2.MetricDataPoints`]
         """
         return self._data_points
 
@@ -83,7 +90,7 @@ class SampleDataValue:
         时序数据。
 
         :param data_points: The data_points of this SampleDataValue.
-        :type: list[MetricDataPoints]
+        :type data_points: list[:class:`huaweicloudsdkaom.v2.MetricDataPoints`]
         """
         self._data_points = data_points
 

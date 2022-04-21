@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneListUsersRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -37,7 +36,19 @@ class KeystoneListUsersRequest:
     }
 
     def __init__(self, domain_id=None, enabled=None, name=None, password_expires_at=None):
-        """KeystoneListUsersRequest - a model defined in huaweicloud sdk"""
+        """KeystoneListUsersRequest
+
+        The model defined in huaweicloud sdk
+
+        :param domain_id: IAM用户所属账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
+        :type domain_id: str
+        :param enabled: 是否启IAM用户，true为启用，false为停用，默认为true。
+        :type enabled: bool
+        :param name: IAM用户名。
+        :type name: str
+        :param password_expires_at: 密码过期时间，格式为：password_expires_at&#x3D;{operator}:{timestamp}。timestamp格式为：YYYY-MM-DDTHH:mm:ssZ。示例：  &#x60;&#x60;&#x60; password_expires_at&#x3D;lt:2016-12-08T22:02:00Z &#x60;&#x60;&#x60; &gt; - operator取值范围：lt，lte，gt，gte，eq，neq。 &gt; - lt：过期时间小于timestamp。 &gt; - lte：过期时间小于等于timestamp。 &gt; - gt：过期时间大于timestamp。 &gt; - gte：过期时间大于等于timestamp。 &gt; - eq：过期时间等于timestamp。 &gt; - neq：过期时间不等于timestamp。
+        :type password_expires_at: str
+        """
         
         
 
@@ -74,7 +85,7 @@ class KeystoneListUsersRequest:
         IAM用户所属账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param domain_id: The domain_id of this KeystoneListUsersRequest.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -96,7 +107,7 @@ class KeystoneListUsersRequest:
         是否启IAM用户，true为启用，false为停用，默认为true。
 
         :param enabled: The enabled of this KeystoneListUsersRequest.
-        :type: bool
+        :type enabled: bool
         """
         self._enabled = enabled
 
@@ -118,7 +129,7 @@ class KeystoneListUsersRequest:
         IAM用户名。
 
         :param name: The name of this KeystoneListUsersRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -140,7 +151,7 @@ class KeystoneListUsersRequest:
         密码过期时间，格式为：password_expires_at={operator}:{timestamp}。timestamp格式为：YYYY-MM-DDTHH:mm:ssZ。示例：  ``` password_expires_at=lt:2016-12-08T22:02:00Z ``` > - operator取值范围：lt，lte，gt，gte，eq，neq。 > - lt：过期时间小于timestamp。 > - lte：过期时间小于等于timestamp。 > - gt：过期时间大于timestamp。 > - gte：过期时间大于等于timestamp。 > - eq：过期时间等于timestamp。 > - neq：过期时间不等于timestamp。
 
         :param password_expires_at: The password_expires_at of this KeystoneListUsersRequest.
-        :type: str
+        :type password_expires_at: str
         """
         self._password_expires_at = password_expires_at
 

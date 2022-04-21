@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OrgGroupDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class OrgGroupDTO:
     }
 
     def __init__(self, group_id=None, group_name=None):
-        """OrgGroupDTO - a model defined in huaweicloud sdk"""
+        """OrgGroupDTO
+
+        The model defined in huaweicloud sdk
+
+        :param group_id: 分组Id
+        :type group_id: str
+        :param group_name: 分组名称
+        :type group_name: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class OrgGroupDTO:
         分组Id
 
         :param group_id: The group_id of this OrgGroupDTO.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -85,7 +92,7 @@ class OrgGroupDTO:
         分组名称
 
         :param group_name: The group_name of this OrgGroupDTO.
-        :type: str
+        :type group_name: str
         """
         self._group_name = group_name
 

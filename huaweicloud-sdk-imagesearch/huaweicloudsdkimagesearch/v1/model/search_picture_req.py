@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SearchPictureReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class SearchPictureReq:
     }
 
     def __init__(self, file=None, path=None, limit=None, offset=None, tags=None, is_crop=None, box=None):
-        """SearchPictureReq - a model defined in huaweicloud sdk"""
+        """SearchPictureReq
+
+        The model defined in huaweicloud sdk
+
+        :param file: 图片文件Base64编码字符串，仅支持JPEG/JPG/PNG/BMP格式，图片最小边不小于100px，最大边不超过2048px。该参数与path二选一，如果两个参数都存在，则以file为主。 
+        :type file: str
+        :param path: 图片的URL路径，图片库中的图片索引ID。该参数与file二选一，如果两个参数都存在，则以file为主。 
+        :type path: str
+        :param limit: 返回被检索图像的数量，取值为1~100的整数，默认为10。
+        :type limit: int
+        :param offset: 偏移量，指定搜索结果返回起始位置，取值为大于或等于0的整数，默认为0。
+        :type offset: int
+        :param tags: 图片自定义标签，最多不超过10个，格式为key：value对。 标签名（key）添加方式：   - 登录管理控制台，单击“创建实例”，自定义标签名。   - 登录管理控制台，在“实例管理”页签，单击实例名称，进入“基础信息”页添加自定义标签。 使用图片标签搜索时该参数必选。
+        :type tags: object
+        :param is_crop: 是否用图片中指定区域（参数box）进行搜索。默认为false，该参数目前仅对某些特定模型有效，其他模型暂不支持目标检测。 - true：用图片中指定区域（参数box）进行搜索。 - false：用全图进行搜索。
+        :type is_crop: bool
+        :param box: 
+        :type box: :class:`huaweicloudsdkimagesearch.v1.SearchBoxDetail`
+        """
         
         
 
@@ -88,7 +105,7 @@ class SearchPictureReq:
         图片文件Base64编码字符串，仅支持JPEG/JPG/PNG/BMP格式，图片最小边不小于100px，最大边不超过2048px。该参数与path二选一，如果两个参数都存在，则以file为主。 
 
         :param file: The file of this SearchPictureReq.
-        :type: str
+        :type file: str
         """
         self._file = file
 
@@ -110,7 +127,7 @@ class SearchPictureReq:
         图片的URL路径，图片库中的图片索引ID。该参数与file二选一，如果两个参数都存在，则以file为主。 
 
         :param path: The path of this SearchPictureReq.
-        :type: str
+        :type path: str
         """
         self._path = path
 
@@ -132,7 +149,7 @@ class SearchPictureReq:
         返回被检索图像的数量，取值为1~100的整数，默认为10。
 
         :param limit: The limit of this SearchPictureReq.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -154,7 +171,7 @@ class SearchPictureReq:
         偏移量，指定搜索结果返回起始位置，取值为大于或等于0的整数，默认为0。
 
         :param offset: The offset of this SearchPictureReq.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -176,7 +193,7 @@ class SearchPictureReq:
         图片自定义标签，最多不超过10个，格式为key：value对。 标签名（key）添加方式：   - 登录管理控制台，单击“创建实例”，自定义标签名。   - 登录管理控制台，在“实例管理”页签，单击实例名称，进入“基础信息”页添加自定义标签。 使用图片标签搜索时该参数必选。
 
         :param tags: The tags of this SearchPictureReq.
-        :type: object
+        :type tags: object
         """
         self._tags = tags
 
@@ -198,7 +215,7 @@ class SearchPictureReq:
         是否用图片中指定区域（参数box）进行搜索。默认为false，该参数目前仅对某些特定模型有效，其他模型暂不支持目标检测。 - true：用图片中指定区域（参数box）进行搜索。 - false：用全图进行搜索。
 
         :param is_crop: The is_crop of this SearchPictureReq.
-        :type: bool
+        :type is_crop: bool
         """
         self._is_crop = is_crop
 
@@ -208,7 +225,7 @@ class SearchPictureReq:
 
 
         :return: The box of this SearchPictureReq.
-        :rtype: SearchBoxDetail
+        :rtype: :class:`huaweicloudsdkimagesearch.v1.SearchBoxDetail`
         """
         return self._box
 
@@ -218,7 +235,7 @@ class SearchPictureReq:
 
 
         :param box: The box of this SearchPictureReq.
-        :type: SearchBoxDetail
+        :type box: :class:`huaweicloudsdkimagesearch.v1.SearchBoxDetail`
         """
         self._box = box
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDeviceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UpdateDeviceRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, sn=None, body=None):
-        """UpdateDeviceRequest - a model defined in huaweicloud sdk"""
+        """UpdateDeviceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        :type x_request_id: str
+        :param accept_language: 语言参数，默认为中文zh-CN, 英文为en-US
+        :type accept_language: str
+        :param sn: 终端SN号，仅可包含数字、字母和下划线。 maxLength：30 minLength：1
+        :type sn: str
+        :param body: Body of the UpdateDeviceRequest
+        :type body: :class:`huaweicloudsdkmeeting.v1.ModDeviceDTO`
+        """
         
         
 
@@ -72,7 +83,7 @@ class UpdateDeviceRequest:
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
 
         :param x_request_id: The x_request_id of this UpdateDeviceRequest.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 
@@ -94,7 +105,7 @@ class UpdateDeviceRequest:
         语言参数，默认为中文zh-CN, 英文为en-US
 
         :param accept_language: The accept_language of this UpdateDeviceRequest.
-        :type: str
+        :type accept_language: str
         """
         self._accept_language = accept_language
 
@@ -116,7 +127,7 @@ class UpdateDeviceRequest:
         终端SN号，仅可包含数字、字母和下划线。 maxLength：30 minLength：1
 
         :param sn: The sn of this UpdateDeviceRequest.
-        :type: str
+        :type sn: str
         """
         self._sn = sn
 
@@ -126,7 +137,7 @@ class UpdateDeviceRequest:
 
 
         :return: The body of this UpdateDeviceRequest.
-        :rtype: ModDeviceDTO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.ModDeviceDTO`
         """
         return self._body
 
@@ -136,7 +147,7 @@ class UpdateDeviceRequest:
 
 
         :param body: The body of this UpdateDeviceRequest.
-        :type: ModDeviceDTO
+        :type body: :class:`huaweicloudsdkmeeting.v1.ModDeviceDTO`
         """
         self._body = body
 

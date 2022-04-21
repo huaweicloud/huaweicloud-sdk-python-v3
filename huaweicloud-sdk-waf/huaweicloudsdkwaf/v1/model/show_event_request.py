@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowEventRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowEventRequest:
     }
 
     def __init__(self, enterprise_project_id=None, eventid=None):
-        """ShowEventRequest - a model defined in huaweicloud sdk"""
+        """ShowEventRequest
+
+        The model defined in huaweicloud sdk
+
+        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        :type enterprise_project_id: str
+        :param eventid: 防护事件id,通过调用查询攻击事件列表(ListEvent)接口获取防护事件id
+        :type eventid: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ShowEventRequest:
         您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this ShowEventRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -84,7 +91,7 @@ class ShowEventRequest:
         防护事件id,通过调用查询攻击事件列表(ListEvent)接口获取防护事件id
 
         :param eventid: The eventid of this ShowEventRequest.
-        :type: str
+        :type eventid: str
         """
         self._eventid = eventid
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchPauseJobReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchPauseJobReq:
     }
 
     def __init__(self, jobs=None):
-        """BatchPauseJobReq - a model defined in huaweicloud sdk"""
+        """BatchPauseJobReq
+
+        The model defined in huaweicloud sdk
+
+        :param jobs: 不能包含空对象。 集合中的job_id取值严格匹配UUID规则。
+        :type jobs: list[:class:`huaweicloudsdkdrs.v3.PauseInfo`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class BatchPauseJobReq:
         不能包含空对象。 集合中的job_id取值严格匹配UUID规则。
 
         :return: The jobs of this BatchPauseJobReq.
-        :rtype: list[PauseInfo]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.PauseInfo`]
         """
         return self._jobs
 
@@ -57,7 +62,7 @@ class BatchPauseJobReq:
         不能包含空对象。 集合中的job_id取值严格匹配UUID规则。
 
         :param jobs: The jobs of this BatchPauseJobReq.
-        :type: list[PauseInfo]
+        :type jobs: list[:class:`huaweicloudsdkdrs.v3.PauseInfo`]
         """
         self._jobs = jobs
 

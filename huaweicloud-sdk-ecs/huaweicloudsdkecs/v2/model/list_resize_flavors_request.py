@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListResizeFlavorsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ListResizeFlavorsRequest:
     }
 
     def __init__(self, instance_uuid=None, limit=None, marker=None, sort_dir=None, sort_key=None, source_flavor_id=None, source_flavor_name=None):
-        """ListResizeFlavorsRequest - a model defined in huaweicloud sdk"""
+        """ListResizeFlavorsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_uuid: 进行规格切换的云服务器ID，UUID格式。
+        :type instance_uuid: str
+        :param limit: 单页面可显示的flavor条数最大值，默认是1000。
+        :type limit: int
+        :param marker: 以单页最后一条flavor的ID作为分页标记。
+        :type marker: str
+        :param sort_dir: 升序/降序排序，默认值为：asc。  取值范围：  - asc：表示升序。 - desc：表示降序
+        :type sort_dir: str
+        :param sort_key: 排序字段。  key的取值范围：  - flavorid：表示规格ID。 - sort_key的默认值为“flavorid”。 - name：表示规格名称。 - memory_mb：表示内存大小。 - vcpus：表示CPU大小。 - root_gb：表示系统盘大小。
+        :type sort_key: str
+        :param source_flavor_id: 进行规格切换的云服务器源规格ID。
+        :type source_flavor_id: str
+        :param source_flavor_name: 进行规格切换的云服务器源规格名称。
+        :type source_flavor_name: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class ListResizeFlavorsRequest:
         进行规格切换的云服务器ID，UUID格式。
 
         :param instance_uuid: The instance_uuid of this ListResizeFlavorsRequest.
-        :type: str
+        :type instance_uuid: str
         """
         self._instance_uuid = instance_uuid
 
@@ -110,7 +127,7 @@ class ListResizeFlavorsRequest:
         单页面可显示的flavor条数最大值，默认是1000。
 
         :param limit: The limit of this ListResizeFlavorsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -132,7 +149,7 @@ class ListResizeFlavorsRequest:
         以单页最后一条flavor的ID作为分页标记。
 
         :param marker: The marker of this ListResizeFlavorsRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 
@@ -154,7 +171,7 @@ class ListResizeFlavorsRequest:
         升序/降序排序，默认值为：asc。  取值范围：  - asc：表示升序。 - desc：表示降序
 
         :param sort_dir: The sort_dir of this ListResizeFlavorsRequest.
-        :type: str
+        :type sort_dir: str
         """
         self._sort_dir = sort_dir
 
@@ -176,7 +193,7 @@ class ListResizeFlavorsRequest:
         排序字段。  key的取值范围：  - flavorid：表示规格ID。 - sort_key的默认值为“flavorid”。 - name：表示规格名称。 - memory_mb：表示内存大小。 - vcpus：表示CPU大小。 - root_gb：表示系统盘大小。
 
         :param sort_key: The sort_key of this ListResizeFlavorsRequest.
-        :type: str
+        :type sort_key: str
         """
         self._sort_key = sort_key
 
@@ -198,7 +215,7 @@ class ListResizeFlavorsRequest:
         进行规格切换的云服务器源规格ID。
 
         :param source_flavor_id: The source_flavor_id of this ListResizeFlavorsRequest.
-        :type: str
+        :type source_flavor_id: str
         """
         self._source_flavor_id = source_flavor_id
 
@@ -220,7 +237,7 @@ class ListResizeFlavorsRequest:
         进行规格切换的云服务器源规格名称。
 
         :param source_flavor_name: The source_flavor_name of this ListResizeFlavorsRequest.
-        :type: str
+        :type source_flavor_name: str
         """
         self._source_flavor_name = source_flavor_name
 

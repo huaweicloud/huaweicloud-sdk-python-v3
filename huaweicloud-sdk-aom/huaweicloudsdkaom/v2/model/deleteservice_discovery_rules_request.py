@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteserviceDiscoveryRulesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteserviceDiscoveryRulesRequest:
     }
 
     def __init__(self, app_rules_ids=None):
-        """DeleteserviceDiscoveryRulesRequest - a model defined in huaweicloud sdk"""
+        """DeleteserviceDiscoveryRulesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param app_rules_ids: 发现规则ID,传多个时以逗号分隔。
+        :type app_rules_ids: list[str]
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteserviceDiscoveryRulesRequest:
         发现规则ID,传多个时以逗号分隔。
 
         :param app_rules_ids: The app_rules_ids of this DeleteserviceDiscoveryRulesRequest.
-        :type: list[str]
+        :type app_rules_ids: list[str]
         """
         self._app_rules_ids = app_rules_ids
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowTableSchemaResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class ShowTableSchemaResponse(SdkResponse):
     }
 
     def __init__(self, table_id=None, table_name=None, table_alias=None, tags=None, column_count=None, columns=None, table_type=None, data_type=None, data_location=None, storage_properties=None):
-        """ShowTableSchemaResponse - a model defined in huaweicloud sdk"""
+        """ShowTableSchemaResponse
+
+        The model defined in huaweicloud sdk
+
+        :param table_id: 表ID。
+        :type table_id: str
+        :param table_name: 表名。
+        :type table_name: str
+        :param table_alias: 表别名。
+        :type table_alias: str
+        :param tags: 标签。
+        :type tags: str
+        :param column_count: 表的总列数。
+        :type column_count: int
+        :param columns: 表的列信息，包含列名称、类型和描述信息。
+        :type columns: list[:class:`huaweicloudsdkiotanalytics.v1.Column`]
+        :param table_type: 表类型，包括“MANAGED”，“EXTERNAL”和“VIEW”。
+        :type table_type: str
+        :param data_type: 数据类型，包括“csv”，“parquet”。
+        :type data_type: str
+        :param data_location: 数据存储的路径，以“s3a”开头。
+        :type data_location: str
+        :param storage_properties: 
+        :type storage_properties: list[:class:`huaweicloudsdkiotanalytics.v1.KeyValue`]
+        """
         
         super(ShowTableSchemaResponse, self).__init__()
 
@@ -103,7 +126,7 @@ class ShowTableSchemaResponse(SdkResponse):
         表ID。
 
         :param table_id: The table_id of this ShowTableSchemaResponse.
-        :type: str
+        :type table_id: str
         """
         self._table_id = table_id
 
@@ -125,7 +148,7 @@ class ShowTableSchemaResponse(SdkResponse):
         表名。
 
         :param table_name: The table_name of this ShowTableSchemaResponse.
-        :type: str
+        :type table_name: str
         """
         self._table_name = table_name
 
@@ -147,7 +170,7 @@ class ShowTableSchemaResponse(SdkResponse):
         表别名。
 
         :param table_alias: The table_alias of this ShowTableSchemaResponse.
-        :type: str
+        :type table_alias: str
         """
         self._table_alias = table_alias
 
@@ -169,7 +192,7 @@ class ShowTableSchemaResponse(SdkResponse):
         标签。
 
         :param tags: The tags of this ShowTableSchemaResponse.
-        :type: str
+        :type tags: str
         """
         self._tags = tags
 
@@ -191,7 +214,7 @@ class ShowTableSchemaResponse(SdkResponse):
         表的总列数。
 
         :param column_count: The column_count of this ShowTableSchemaResponse.
-        :type: int
+        :type column_count: int
         """
         self._column_count = column_count
 
@@ -202,7 +225,7 @@ class ShowTableSchemaResponse(SdkResponse):
         表的列信息，包含列名称、类型和描述信息。
 
         :return: The columns of this ShowTableSchemaResponse.
-        :rtype: list[Column]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.Column`]
         """
         return self._columns
 
@@ -213,7 +236,7 @@ class ShowTableSchemaResponse(SdkResponse):
         表的列信息，包含列名称、类型和描述信息。
 
         :param columns: The columns of this ShowTableSchemaResponse.
-        :type: list[Column]
+        :type columns: list[:class:`huaweicloudsdkiotanalytics.v1.Column`]
         """
         self._columns = columns
 
@@ -235,7 +258,7 @@ class ShowTableSchemaResponse(SdkResponse):
         表类型，包括“MANAGED”，“EXTERNAL”和“VIEW”。
 
         :param table_type: The table_type of this ShowTableSchemaResponse.
-        :type: str
+        :type table_type: str
         """
         self._table_type = table_type
 
@@ -257,7 +280,7 @@ class ShowTableSchemaResponse(SdkResponse):
         数据类型，包括“csv”，“parquet”。
 
         :param data_type: The data_type of this ShowTableSchemaResponse.
-        :type: str
+        :type data_type: str
         """
         self._data_type = data_type
 
@@ -279,7 +302,7 @@ class ShowTableSchemaResponse(SdkResponse):
         数据存储的路径，以“s3a”开头。
 
         :param data_location: The data_location of this ShowTableSchemaResponse.
-        :type: str
+        :type data_location: str
         """
         self._data_location = data_location
 
@@ -289,7 +312,7 @@ class ShowTableSchemaResponse(SdkResponse):
 
 
         :return: The storage_properties of this ShowTableSchemaResponse.
-        :rtype: list[KeyValue]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.KeyValue`]
         """
         return self._storage_properties
 
@@ -299,7 +322,7 @@ class ShowTableSchemaResponse(SdkResponse):
 
 
         :param storage_properties: The storage_properties of this ShowTableSchemaResponse.
-        :type: list[KeyValue]
+        :type storage_properties: list[:class:`huaweicloudsdkiotanalytics.v1.KeyValue`]
         """
         self._storage_properties = storage_properties
 

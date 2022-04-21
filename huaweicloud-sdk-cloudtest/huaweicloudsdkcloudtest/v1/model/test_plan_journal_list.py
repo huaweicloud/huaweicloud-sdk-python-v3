@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TestPlanJournalList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class TestPlanJournalList:
     }
 
     def __init__(self, project_id=None, plan_id=None, operate_time=None, operator=None, detail=None):
-        """TestPlanJournalList - a model defined in huaweicloud sdk"""
+        """TestPlanJournalList
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: DevCloud项目id，项目唯一标识，固定长度32位字符
+        :type project_id: str
+        :param plan_id: 测试计划id
+        :type plan_id: str
+        :param operate_time: 变更时间
+        :type operate_time: date
+        :param operator: 
+        :type operator: :class:`huaweicloudsdkcloudtest.v1.NameAndId`
+        :param detail: 历史记录详情
+        :type detail: list[:class:`huaweicloudsdkcloudtest.v1.TestPlanJournalDetail`]
+        """
         
         
 
@@ -78,7 +91,7 @@ class TestPlanJournalList:
         DevCloud项目id，项目唯一标识，固定长度32位字符
 
         :param project_id: The project_id of this TestPlanJournalList.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -100,7 +113,7 @@ class TestPlanJournalList:
         测试计划id
 
         :param plan_id: The plan_id of this TestPlanJournalList.
-        :type: str
+        :type plan_id: str
         """
         self._plan_id = plan_id
 
@@ -122,7 +135,7 @@ class TestPlanJournalList:
         变更时间
 
         :param operate_time: The operate_time of this TestPlanJournalList.
-        :type: date
+        :type operate_time: date
         """
         self._operate_time = operate_time
 
@@ -132,7 +145,7 @@ class TestPlanJournalList:
 
 
         :return: The operator of this TestPlanJournalList.
-        :rtype: NameAndId
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.NameAndId`
         """
         return self._operator
 
@@ -142,7 +155,7 @@ class TestPlanJournalList:
 
 
         :param operator: The operator of this TestPlanJournalList.
-        :type: NameAndId
+        :type operator: :class:`huaweicloudsdkcloudtest.v1.NameAndId`
         """
         self._operator = operator
 
@@ -153,7 +166,7 @@ class TestPlanJournalList:
         历史记录详情
 
         :return: The detail of this TestPlanJournalList.
-        :rtype: list[TestPlanJournalDetail]
+        :rtype: list[:class:`huaweicloudsdkcloudtest.v1.TestPlanJournalDetail`]
         """
         return self._detail
 
@@ -164,7 +177,7 @@ class TestPlanJournalList:
         历史记录详情
 
         :param detail: The detail of this TestPlanJournalList.
-        :type: list[TestPlanJournalDetail]
+        :type detail: list[:class:`huaweicloudsdkcloudtest.v1.TestPlanJournalDetail`]
         """
         self._detail = detail
 

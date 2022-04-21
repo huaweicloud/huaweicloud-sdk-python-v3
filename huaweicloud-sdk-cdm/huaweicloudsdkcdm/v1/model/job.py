@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Job:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -94,7 +93,77 @@ class Job:
     }
 
     def __init__(self, job_type=None, from_connector_name=None, to_config_values=None, to_link_name=None, driver_config_values=None, from_config_values=None, to_connector_name=None, name=None, from_link_name=None, creation_user=None, creation_date=None, update_date=None, is_incre_job=None, flag=None, files_read=None, update_user=None, external_id=None, type=None, execute_start_date=None, delete_rows=None, enabled=None, bytes_written=None, id=None, is_use_sql=None, update_rows=None, group_name=None, bytes_read=None, execute_update_date=None, write_rows=None, files_writte=None, is_incrementing=None, execute_create_date=None, status=None):
-        """Job - a model defined in huaweicloud sdk"""
+        """Job
+
+        The model defined in huaweicloud sdk
+
+        :param job_type: 作业类型： - NORMAL_JOB：表/文件迁移。 - BATCH_JOB：整库迁移。 - SCENARIO_JOB：场景迁移。
+        :type job_type: str
+        :param from_connector_name: 源端连接类型
+        :type from_connector_name: str
+        :param to_config_values: 
+        :type to_config_values: :class:`huaweicloudsdkcdm.v1.ConfigValues`
+        :param to_link_name: 目的端连接名称
+        :type to_link_name: str
+        :param driver_config_values: 
+        :type driver_config_values: :class:`huaweicloudsdkcdm.v1.ConfigValues`
+        :param from_config_values: 
+        :type from_config_values: :class:`huaweicloudsdkcdm.v1.ConfigValues`
+        :param to_connector_name: 目的端连接类型
+        :type to_connector_name: str
+        :param name: 作业名称，长度在1到240个字符之间
+        :type name: str
+        :param from_link_name: 源连接名称
+        :type from_link_name: str
+        :param creation_user: 创建的用户。
+        :type creation_user: str
+        :param creation_date: 作业创建的时间，单位：毫秒。
+        :type creation_date: int
+        :param update_date: 作业最后更新的时间，单位：毫秒。
+        :type update_date: int
+        :param is_incre_job: 是否增量
+        :type is_incre_job: bool
+        :param flag: 标记
+        :type flag: int
+        :param files_read: 已读文件数
+        :type files_read: int
+        :param update_user: 作业最后更新的用户。
+        :type update_user: str
+        :param external_id: 外部ID。
+        :type external_id: str
+        :param type: 作业类型
+        :type type: str
+        :param execute_start_date: 执行_开始_日期。
+        :type execute_start_date: int
+        :param delete_rows: 删除行数
+        :type delete_rows: int
+        :param enabled: 是否激活连接
+        :type enabled: bool
+        :param bytes_written: 写入字节
+        :type bytes_written: int
+        :param id: 作业ID
+        :type id: int
+        :param is_use_sql: 用户是否使用sql
+        :type is_use_sql: bool
+        :param update_rows: 更新行数
+        :type update_rows: int
+        :param group_name: 组_名称
+        :type group_name: str
+        :param bytes_read: 读取字节
+        :type bytes_read: int
+        :param execute_update_date: 执行_更新_日期。
+        :type execute_update_date: int
+        :param write_rows: 写入行数
+        :type write_rows: int
+        :param files_writte: 写入文件数
+        :type files_writte: int
+        :param is_incrementing: 是否增量
+        :type is_incrementing: bool
+        :param execute_create_date: 执行_创建_日期
+        :type execute_create_date: int
+        :param status: 作业最后的执行状态： - BOOTING：启动中。 - RUNNING：运行中。 - SUCCEEDED：成功。 - FAILED：失败。 - NEW：未被执行。
+        :type status: str
+        """
         
         
 
@@ -213,7 +282,7 @@ class Job:
         作业类型： - NORMAL_JOB：表/文件迁移。 - BATCH_JOB：整库迁移。 - SCENARIO_JOB：场景迁移。
 
         :param job_type: The job_type of this Job.
-        :type: str
+        :type job_type: str
         """
         self._job_type = job_type
 
@@ -235,7 +304,7 @@ class Job:
         源端连接类型
 
         :param from_connector_name: The from_connector_name of this Job.
-        :type: str
+        :type from_connector_name: str
         """
         self._from_connector_name = from_connector_name
 
@@ -245,7 +314,7 @@ class Job:
 
 
         :return: The to_config_values of this Job.
-        :rtype: ConfigValues
+        :rtype: :class:`huaweicloudsdkcdm.v1.ConfigValues`
         """
         return self._to_config_values
 
@@ -255,7 +324,7 @@ class Job:
 
 
         :param to_config_values: The to_config_values of this Job.
-        :type: ConfigValues
+        :type to_config_values: :class:`huaweicloudsdkcdm.v1.ConfigValues`
         """
         self._to_config_values = to_config_values
 
@@ -277,7 +346,7 @@ class Job:
         目的端连接名称
 
         :param to_link_name: The to_link_name of this Job.
-        :type: str
+        :type to_link_name: str
         """
         self._to_link_name = to_link_name
 
@@ -287,7 +356,7 @@ class Job:
 
 
         :return: The driver_config_values of this Job.
-        :rtype: ConfigValues
+        :rtype: :class:`huaweicloudsdkcdm.v1.ConfigValues`
         """
         return self._driver_config_values
 
@@ -297,7 +366,7 @@ class Job:
 
 
         :param driver_config_values: The driver_config_values of this Job.
-        :type: ConfigValues
+        :type driver_config_values: :class:`huaweicloudsdkcdm.v1.ConfigValues`
         """
         self._driver_config_values = driver_config_values
 
@@ -307,7 +376,7 @@ class Job:
 
 
         :return: The from_config_values of this Job.
-        :rtype: ConfigValues
+        :rtype: :class:`huaweicloudsdkcdm.v1.ConfigValues`
         """
         return self._from_config_values
 
@@ -317,7 +386,7 @@ class Job:
 
 
         :param from_config_values: The from_config_values of this Job.
-        :type: ConfigValues
+        :type from_config_values: :class:`huaweicloudsdkcdm.v1.ConfigValues`
         """
         self._from_config_values = from_config_values
 
@@ -339,7 +408,7 @@ class Job:
         目的端连接类型
 
         :param to_connector_name: The to_connector_name of this Job.
-        :type: str
+        :type to_connector_name: str
         """
         self._to_connector_name = to_connector_name
 
@@ -361,7 +430,7 @@ class Job:
         作业名称，长度在1到240个字符之间
 
         :param name: The name of this Job.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -383,7 +452,7 @@ class Job:
         源连接名称
 
         :param from_link_name: The from_link_name of this Job.
-        :type: str
+        :type from_link_name: str
         """
         self._from_link_name = from_link_name
 
@@ -405,7 +474,7 @@ class Job:
         创建的用户。
 
         :param creation_user: The creation_user of this Job.
-        :type: str
+        :type creation_user: str
         """
         self._creation_user = creation_user
 
@@ -427,7 +496,7 @@ class Job:
         作业创建的时间，单位：毫秒。
 
         :param creation_date: The creation_date of this Job.
-        :type: int
+        :type creation_date: int
         """
         self._creation_date = creation_date
 
@@ -449,7 +518,7 @@ class Job:
         作业最后更新的时间，单位：毫秒。
 
         :param update_date: The update_date of this Job.
-        :type: int
+        :type update_date: int
         """
         self._update_date = update_date
 
@@ -471,7 +540,7 @@ class Job:
         是否增量
 
         :param is_incre_job: The is_incre_job of this Job.
-        :type: bool
+        :type is_incre_job: bool
         """
         self._is_incre_job = is_incre_job
 
@@ -493,7 +562,7 @@ class Job:
         标记
 
         :param flag: The flag of this Job.
-        :type: int
+        :type flag: int
         """
         self._flag = flag
 
@@ -515,7 +584,7 @@ class Job:
         已读文件数
 
         :param files_read: The files_read of this Job.
-        :type: int
+        :type files_read: int
         """
         self._files_read = files_read
 
@@ -537,7 +606,7 @@ class Job:
         作业最后更新的用户。
 
         :param update_user: The update_user of this Job.
-        :type: str
+        :type update_user: str
         """
         self._update_user = update_user
 
@@ -559,7 +628,7 @@ class Job:
         外部ID。
 
         :param external_id: The external_id of this Job.
-        :type: str
+        :type external_id: str
         """
         self._external_id = external_id
 
@@ -581,7 +650,7 @@ class Job:
         作业类型
 
         :param type: The type of this Job.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -603,7 +672,7 @@ class Job:
         执行_开始_日期。
 
         :param execute_start_date: The execute_start_date of this Job.
-        :type: int
+        :type execute_start_date: int
         """
         self._execute_start_date = execute_start_date
 
@@ -625,7 +694,7 @@ class Job:
         删除行数
 
         :param delete_rows: The delete_rows of this Job.
-        :type: int
+        :type delete_rows: int
         """
         self._delete_rows = delete_rows
 
@@ -647,7 +716,7 @@ class Job:
         是否激活连接
 
         :param enabled: The enabled of this Job.
-        :type: bool
+        :type enabled: bool
         """
         self._enabled = enabled
 
@@ -669,7 +738,7 @@ class Job:
         写入字节
 
         :param bytes_written: The bytes_written of this Job.
-        :type: int
+        :type bytes_written: int
         """
         self._bytes_written = bytes_written
 
@@ -691,7 +760,7 @@ class Job:
         作业ID
 
         :param id: The id of this Job.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -713,7 +782,7 @@ class Job:
         用户是否使用sql
 
         :param is_use_sql: The is_use_sql of this Job.
-        :type: bool
+        :type is_use_sql: bool
         """
         self._is_use_sql = is_use_sql
 
@@ -735,7 +804,7 @@ class Job:
         更新行数
 
         :param update_rows: The update_rows of this Job.
-        :type: int
+        :type update_rows: int
         """
         self._update_rows = update_rows
 
@@ -757,7 +826,7 @@ class Job:
         组_名称
 
         :param group_name: The group_name of this Job.
-        :type: str
+        :type group_name: str
         """
         self._group_name = group_name
 
@@ -779,7 +848,7 @@ class Job:
         读取字节
 
         :param bytes_read: The bytes_read of this Job.
-        :type: int
+        :type bytes_read: int
         """
         self._bytes_read = bytes_read
 
@@ -801,7 +870,7 @@ class Job:
         执行_更新_日期。
 
         :param execute_update_date: The execute_update_date of this Job.
-        :type: int
+        :type execute_update_date: int
         """
         self._execute_update_date = execute_update_date
 
@@ -823,7 +892,7 @@ class Job:
         写入行数
 
         :param write_rows: The write_rows of this Job.
-        :type: int
+        :type write_rows: int
         """
         self._write_rows = write_rows
 
@@ -845,7 +914,7 @@ class Job:
         写入文件数
 
         :param files_writte: The files_writte of this Job.
-        :type: int
+        :type files_writte: int
         """
         self._files_writte = files_writte
 
@@ -867,7 +936,7 @@ class Job:
         是否增量
 
         :param is_incrementing: The is_incrementing of this Job.
-        :type: bool
+        :type is_incrementing: bool
         """
         self._is_incrementing = is_incrementing
 
@@ -889,7 +958,7 @@ class Job:
         执行_创建_日期
 
         :param execute_create_date: The execute_create_date of this Job.
-        :type: int
+        :type execute_create_date: int
         """
         self._execute_create_date = execute_create_date
 
@@ -911,7 +980,7 @@ class Job:
         作业最后的执行状态： - BOOTING：启动中。 - RUNNING：运行中。 - SUCCEEDED：成功。 - FAILED：失败。 - NEW：未被执行。
 
         :param status: The status of this Job.
-        :type: str
+        :type status: str
         """
         self._status = status
 

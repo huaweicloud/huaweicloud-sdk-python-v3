@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddHooksRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class AddHooksRequest:
     }
 
     def __init__(self, group_name=None, repository_name=None, body=None):
-        """AddHooksRequest - a model defined in huaweicloud sdk"""
+        """AddHooksRequest
+
+        The model defined in huaweicloud sdk
+
+        :param group_name: 组名
+        :type group_name: str
+        :param repository_name: 仓库名
+        :type repository_name: str
+        :param body: Body of the AddHooksRequest
+        :type body: :class:`huaweicloudsdkcodehub.v3.RepositoryHookRequest`
+        """
         
         
 
@@ -66,7 +75,7 @@ class AddHooksRequest:
         组名
 
         :param group_name: The group_name of this AddHooksRequest.
-        :type: str
+        :type group_name: str
         """
         self._group_name = group_name
 
@@ -88,7 +97,7 @@ class AddHooksRequest:
         仓库名
 
         :param repository_name: The repository_name of this AddHooksRequest.
-        :type: str
+        :type repository_name: str
         """
         self._repository_name = repository_name
 
@@ -98,7 +107,7 @@ class AddHooksRequest:
 
 
         :return: The body of this AddHooksRequest.
-        :rtype: RepositoryHookRequest
+        :rtype: :class:`huaweicloudsdkcodehub.v3.RepositoryHookRequest`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class AddHooksRequest:
 
 
         :param body: The body of this AddHooksRequest.
-        :type: RepositoryHookRequest
+        :type body: :class:`huaweicloudsdkcodehub.v3.RepositoryHookRequest`
         """
         self._body = body
 

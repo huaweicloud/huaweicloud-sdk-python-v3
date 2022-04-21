@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSqlAlarmRulesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class ListSqlAlarmRulesRequest:
     }
 
     def __init__(self):
-        """ListSqlAlarmRulesRequest - a model defined in huaweicloud sdk"""
+        """ListSqlAlarmRulesRequest
+
+        The model defined in huaweicloud sdk
+
+        """
         
         
         self.discriminator = None

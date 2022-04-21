@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BtrfsSubvolumn:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class BtrfsSubvolumn:
     }
 
     def __init__(self, uuid=None, is_snapshot=None, subvol_id=None, parent_id=None, subvol_name=None, subvol_mount_path=None):
-        """BtrfsSubvolumn - a model defined in huaweicloud sdk"""
+        """BtrfsSubvolumn
+
+        The model defined in huaweicloud sdk
+
+        :param uuid: 父卷的uuid
+        :type uuid: str
+        :param is_snapshot: 子卷是否为快照
+        :type is_snapshot: str
+        :param subvol_id: 子卷的id
+        :type subvol_id: str
+        :param parent_id: 父卷id
+        :type parent_id: str
+        :param subvol_name: 子卷的名称
+        :type subvol_name: str
+        :param subvol_mount_path: 子卷的挂载路径
+        :type subvol_mount_path: str
+        """
         
         
 
@@ -77,7 +92,7 @@ class BtrfsSubvolumn:
         父卷的uuid
 
         :param uuid: The uuid of this BtrfsSubvolumn.
-        :type: str
+        :type uuid: str
         """
         self._uuid = uuid
 
@@ -99,7 +114,7 @@ class BtrfsSubvolumn:
         子卷是否为快照
 
         :param is_snapshot: The is_snapshot of this BtrfsSubvolumn.
-        :type: str
+        :type is_snapshot: str
         """
         self._is_snapshot = is_snapshot
 
@@ -121,7 +136,7 @@ class BtrfsSubvolumn:
         子卷的id
 
         :param subvol_id: The subvol_id of this BtrfsSubvolumn.
-        :type: str
+        :type subvol_id: str
         """
         self._subvol_id = subvol_id
 
@@ -143,7 +158,7 @@ class BtrfsSubvolumn:
         父卷id
 
         :param parent_id: The parent_id of this BtrfsSubvolumn.
-        :type: str
+        :type parent_id: str
         """
         self._parent_id = parent_id
 
@@ -165,7 +180,7 @@ class BtrfsSubvolumn:
         子卷的名称
 
         :param subvol_name: The subvol_name of this BtrfsSubvolumn.
-        :type: str
+        :type subvol_name: str
         """
         self._subvol_name = subvol_name
 
@@ -187,7 +202,7 @@ class BtrfsSubvolumn:
         子卷的挂载路径
 
         :param subvol_mount_path: The subvol_mount_path of this BtrfsSubvolumn.
-        :type: str
+        :type subvol_mount_path: str
         """
         self._subvol_mount_path = subvol_mount_path
 

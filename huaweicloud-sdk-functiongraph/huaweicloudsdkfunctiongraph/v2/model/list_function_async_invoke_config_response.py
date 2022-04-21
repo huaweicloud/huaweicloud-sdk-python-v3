@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListFunctionAsyncInvokeConfigResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListFunctionAsyncInvokeConfigResponse(SdkResponse):
     }
 
     def __init__(self, async_invoke_configs=None, count=None, page_info=None):
-        """ListFunctionAsyncInvokeConfigResponse - a model defined in huaweicloud sdk"""
+        """ListFunctionAsyncInvokeConfigResponse
+
+        The model defined in huaweicloud sdk
+
+        :param async_invoke_configs: 函数异步配置列表。
+        :type async_invoke_configs: list[:class:`huaweicloudsdkfunctiongraph.v2.ListFunctionAsyncInvokeConfigResult`]
+        :param count: 列表总数。
+        :type count: int
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkfunctiongraph.v2.PageInfo`
+        """
         
         super(ListFunctionAsyncInvokeConfigResponse, self).__init__()
 
@@ -57,7 +66,7 @@ class ListFunctionAsyncInvokeConfigResponse(SdkResponse):
         函数异步配置列表。
 
         :return: The async_invoke_configs of this ListFunctionAsyncInvokeConfigResponse.
-        :rtype: list[ListFunctionAsyncInvokeConfigResult]
+        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.ListFunctionAsyncInvokeConfigResult`]
         """
         return self._async_invoke_configs
 
@@ -68,7 +77,7 @@ class ListFunctionAsyncInvokeConfigResponse(SdkResponse):
         函数异步配置列表。
 
         :param async_invoke_configs: The async_invoke_configs of this ListFunctionAsyncInvokeConfigResponse.
-        :type: list[ListFunctionAsyncInvokeConfigResult]
+        :type async_invoke_configs: list[:class:`huaweicloudsdkfunctiongraph.v2.ListFunctionAsyncInvokeConfigResult`]
         """
         self._async_invoke_configs = async_invoke_configs
 
@@ -90,7 +99,7 @@ class ListFunctionAsyncInvokeConfigResponse(SdkResponse):
         列表总数。
 
         :param count: The count of this ListFunctionAsyncInvokeConfigResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -100,7 +109,7 @@ class ListFunctionAsyncInvokeConfigResponse(SdkResponse):
 
 
         :return: The page_info of this ListFunctionAsyncInvokeConfigResponse.
-        :rtype: PageInfo
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.PageInfo`
         """
         return self._page_info
 
@@ -110,7 +119,7 @@ class ListFunctionAsyncInvokeConfigResponse(SdkResponse):
 
 
         :param page_info: The page_info of this ListFunctionAsyncInvokeConfigResponse.
-        :type: PageInfo
+        :type page_info: :class:`huaweicloudsdkfunctiongraph.v2.PageInfo`
         """
         self._page_info = page_info
 

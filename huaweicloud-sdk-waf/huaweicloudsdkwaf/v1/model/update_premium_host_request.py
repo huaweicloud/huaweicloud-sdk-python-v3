@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdatePremiumHostRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdatePremiumHostRequest:
     }
 
     def __init__(self, enterprise_project_id=None, host_id=None, body=None):
-        """UpdatePremiumHostRequest - a model defined in huaweicloud sdk"""
+        """UpdatePremiumHostRequest
+
+        The model defined in huaweicloud sdk
+
+        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        :type enterprise_project_id: str
+        :param host_id: 独享模式域名ID
+        :type host_id: str
+        :param body: Body of the UpdatePremiumHostRequest
+        :type body: :class:`huaweicloudsdkwaf.v1.UpdatePremiumHostRequestBody`
+        """
         
         
 
@@ -67,7 +76,7 @@ class UpdatePremiumHostRequest:
         您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this UpdatePremiumHostRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -89,7 +98,7 @@ class UpdatePremiumHostRequest:
         独享模式域名ID
 
         :param host_id: The host_id of this UpdatePremiumHostRequest.
-        :type: str
+        :type host_id: str
         """
         self._host_id = host_id
 
@@ -99,7 +108,7 @@ class UpdatePremiumHostRequest:
 
 
         :return: The body of this UpdatePremiumHostRequest.
-        :rtype: UpdatePremiumHostRequestBody
+        :rtype: :class:`huaweicloudsdkwaf.v1.UpdatePremiumHostRequestBody`
         """
         return self._body
 
@@ -109,7 +118,7 @@ class UpdatePremiumHostRequest:
 
 
         :param body: The body of this UpdatePremiumHostRequest.
-        :type: UpdatePremiumHostRequestBody
+        :type body: :class:`huaweicloudsdkwaf.v1.UpdatePremiumHostRequestBody`
         """
         self._body = body
 

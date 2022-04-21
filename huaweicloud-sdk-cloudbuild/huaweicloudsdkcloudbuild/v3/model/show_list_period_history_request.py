@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowListPeriodHistoryRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ShowListPeriodHistoryRequest:
     }
 
     def __init__(self, job_id=None, offset=None, limit=None, start_time=None, end_time=None):
-        """ShowListPeriodHistoryRequest - a model defined in huaweicloud sdk"""
+        """ShowListPeriodHistoryRequest
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 构建的任务ID [获取项目下构建任务列表](https://support.huaweicloud.com/api-codeci/ShowJobListByProjectId.html)； 编辑构建任务时，浏览器URL末尾的32位数字、字母组合的字符串。
+        :type job_id: str
+        :param offset: 分页页码， 表示从此页开始查询， offset大于等于0
+        :type offset: int
+        :param limit: 每页显示的条目数量，limit小于等于100
+        :type limit: int
+        :param start_time: 区间开始时间，格式yyyy-MM-dd。 开始时间和结束时间间隔不能超过30天
+        :type start_time: str
+        :param end_time: 区间结束时间，格式yyyy-MM-dd。 开始时间和结束时间间隔不能超过30天
+        :type end_time: str
+        """
         
         
 
@@ -73,7 +86,7 @@ class ShowListPeriodHistoryRequest:
         构建的任务ID [获取项目下构建任务列表](https://support.huaweicloud.com/api-codeci/ShowJobListByProjectId.html)； 编辑构建任务时，浏览器URL末尾的32位数字、字母组合的字符串。
 
         :param job_id: The job_id of this ShowListPeriodHistoryRequest.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -95,7 +108,7 @@ class ShowListPeriodHistoryRequest:
         分页页码， 表示从此页开始查询， offset大于等于0
 
         :param offset: The offset of this ShowListPeriodHistoryRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -117,7 +130,7 @@ class ShowListPeriodHistoryRequest:
         每页显示的条目数量，limit小于等于100
 
         :param limit: The limit of this ShowListPeriodHistoryRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -139,7 +152,7 @@ class ShowListPeriodHistoryRequest:
         区间开始时间，格式yyyy-MM-dd。 开始时间和结束时间间隔不能超过30天
 
         :param start_time: The start_time of this ShowListPeriodHistoryRequest.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -161,7 +174,7 @@ class ShowListPeriodHistoryRequest:
         区间结束时间，格式yyyy-MM-dd。 开始时间和结束时间间隔不能超过30天
 
         :param end_time: The end_time of this ShowListPeriodHistoryRequest.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListProblemTypesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListProblemTypesResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, incident_business_type_list=None):
-        """ListProblemTypesResponse - a model defined in huaweicloud sdk"""
+        """ListProblemTypesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total_count: 总数
+        :type total_count: int
+        :param incident_business_type_list: 问题类型列表
+        :type incident_business_type_list: list[:class:`huaweicloudsdkosm.v2.SimpleIncidentBusinessTypeV2`]
+        """
         
         super(ListProblemTypesResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListProblemTypesResponse(SdkResponse):
         总数
 
         :param total_count: The total_count of this ListProblemTypesResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 
@@ -74,7 +81,7 @@ class ListProblemTypesResponse(SdkResponse):
         问题类型列表
 
         :return: The incident_business_type_list of this ListProblemTypesResponse.
-        :rtype: list[SimpleIncidentBusinessTypeV2]
+        :rtype: list[:class:`huaweicloudsdkosm.v2.SimpleIncidentBusinessTypeV2`]
         """
         return self._incident_business_type_list
 
@@ -85,7 +92,7 @@ class ListProblemTypesResponse(SdkResponse):
         问题类型列表
 
         :param incident_business_type_list: The incident_business_type_list of this ListProblemTypesResponse.
-        :type: list[SimpleIncidentBusinessTypeV2]
+        :type incident_business_type_list: list[:class:`huaweicloudsdkosm.v2.SimpleIncidentBusinessTypeV2`]
         """
         self._incident_business_type_list = incident_business_type_list
 

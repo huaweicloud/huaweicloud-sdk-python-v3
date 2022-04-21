@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SourceCdnResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class SourceCdnResp:
     }
 
     def __init__(self, domain=None, protocol=None, authentication_type=None):
-        """SourceCdnResp - a model defined in huaweicloud sdk"""
+        """SourceCdnResp
+
+        The model defined in huaweicloud sdk
+
+        :param domain:   从指定域名获取对象。
+        :type domain: str
+        :param protocol: 协议类型，支持http和https协议。
+        :type protocol: str
+        :param authentication_type: 鉴权类型: NONE, QINIU_PRIVATE_AUTHENTICATION, ALIYUN_OSS_A, ALIYUN_OSS_B, ALIYUN_OSS_C, KSYUN_PRIVATE_AUTHENTICATION, AZURE_SAS_TOKEN
+        :type authentication_type: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class SourceCdnResp:
           从指定域名获取对象。
 
         :param domain: The domain of this SourceCdnResp.
-        :type: str
+        :type domain: str
         """
         self._domain = domain
 
@@ -88,7 +97,7 @@ class SourceCdnResp:
         协议类型，支持http和https协议。
 
         :param protocol: The protocol of this SourceCdnResp.
-        :type: str
+        :type protocol: str
         """
         self._protocol = protocol
 
@@ -110,7 +119,7 @@ class SourceCdnResp:
         鉴权类型: NONE, QINIU_PRIVATE_AUTHENTICATION, ALIYUN_OSS_A, ALIYUN_OSS_B, ALIYUN_OSS_C, KSYUN_PRIVATE_AUTHENTICATION, AZURE_SAS_TOKEN
 
         :param authentication_type: The authentication_type of this SourceCdnResp.
-        :type: str
+        :type authentication_type: str
         """
         self._authentication_type = authentication_type
 

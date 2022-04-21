@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListHostsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListHostsResponse(SdkResponse):
     }
 
     def __init__(self, total_num=None, data_list=None):
-        """ListHostsResponse - a model defined in huaweicloud sdk"""
+        """ListHostsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total_num: 总数
+        :type total_num: int
+        :param data_list: 查询弹性云服务器状态列表
+        :type data_list: list[:class:`huaweicloudsdkhss.v1.Host`]
+        """
         
         super(ListHostsResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListHostsResponse(SdkResponse):
         总数
 
         :param total_num: The total_num of this ListHostsResponse.
-        :type: int
+        :type total_num: int
         """
         self._total_num = total_num
 
@@ -74,7 +81,7 @@ class ListHostsResponse(SdkResponse):
         查询弹性云服务器状态列表
 
         :return: The data_list of this ListHostsResponse.
-        :rtype: list[Host]
+        :rtype: list[:class:`huaweicloudsdkhss.v1.Host`]
         """
         return self._data_list
 
@@ -85,7 +92,7 @@ class ListHostsResponse(SdkResponse):
         查询弹性云服务器状态列表
 
         :param data_list: The data_list of this ListHostsResponse.
-        :type: list[Host]
+        :type data_list: list[:class:`huaweicloudsdkhss.v1.Host`]
         """
         self._data_list = data_list
 

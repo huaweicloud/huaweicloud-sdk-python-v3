@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RoleExtendGrowReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class RoleExtendGrowReq:
     }
 
     def __init__(self, type=None, nodesize=None, disksize=None):
-        """RoleExtendGrowReq - a model defined in huaweicloud sdk"""
+        """RoleExtendGrowReq
+
+        The model defined in huaweicloud sdk
+
+        :param type: 扩容实例类型。取值为ess、ess-master或ess-client，请至少选择一个。  ess-master、ess-client节点只支持扩容实例个数。
+        :type type: str
+        :param nodesize: 扩容实例个数。集群已有实例个数和扩容实例个数总和不能超过32。
+        :type nodesize: int
+        :param disksize: 扩容实例存储容量。集群原实例存储容量和扩容实例存储容量之和不能超过创建集群时对应的实例存储容量上限，且同一个集群实例存储容量扩容不能超过6次。 单位：GB。
+        :type disksize: int
+        """
         
         
 
@@ -65,7 +74,7 @@ class RoleExtendGrowReq:
         扩容实例类型。取值为ess、ess-master或ess-client，请至少选择一个。  ess-master、ess-client节点只支持扩容实例个数。
 
         :param type: The type of this RoleExtendGrowReq.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -87,7 +96,7 @@ class RoleExtendGrowReq:
         扩容实例个数。集群已有实例个数和扩容实例个数总和不能超过32。
 
         :param nodesize: The nodesize of this RoleExtendGrowReq.
-        :type: int
+        :type nodesize: int
         """
         self._nodesize = nodesize
 
@@ -109,7 +118,7 @@ class RoleExtendGrowReq:
         扩容实例存储容量。集群原实例存储容量和扩容实例存储容量之和不能超过创建集群时对应的实例存储容量上限，且同一个集群实例存储容量扩容不能超过6次。 单位：GB。
 
         :param disksize: The disksize of this RoleExtendGrowReq.
-        :type: int
+        :type disksize: int
         """
         self._disksize = disksize
 

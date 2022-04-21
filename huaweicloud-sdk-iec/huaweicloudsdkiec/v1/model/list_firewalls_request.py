@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListFirewallsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListFirewallsRequest:
     }
 
     def __init__(self, limit=None, offset=None, id=None, name=None):
-        """ListFirewallsRequest - a model defined in huaweicloud sdk"""
+        """ListFirewallsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 每页返回的个数  取值范围：0~1000
+        :type limit: int
+        :param offset: 查询的偏移量。
+        :type offset: int
+        :param id: 通过ID过滤网络ACL。
+        :type id: str
+        :param name: 通过name模糊匹配网络ACL。
+        :type name: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class ListFirewallsRequest:
         每页返回的个数  取值范围：0~1000
 
         :param limit: The limit of this ListFirewallsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -95,7 +106,7 @@ class ListFirewallsRequest:
         查询的偏移量。
 
         :param offset: The offset of this ListFirewallsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -117,7 +128,7 @@ class ListFirewallsRequest:
         通过ID过滤网络ACL。
 
         :param id: The id of this ListFirewallsRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -139,7 +150,7 @@ class ListFirewallsRequest:
         通过name模糊匹配网络ACL。
 
         :param name: The name of this ListFirewallsRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 

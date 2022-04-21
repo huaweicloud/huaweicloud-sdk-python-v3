@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SearchMemberVmrResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class SearchMemberVmrResponse(SdkResponse):
     }
 
     def __init__(self, offset=None, limit=None, count=None, data=None):
-        """SearchMemberVmrResponse - a model defined in huaweicloud sdk"""
+        """SearchMemberVmrResponse
+
+        The model defined in huaweicloud sdk
+
+        :param offset: 页面起始页，从0开始
+        :type offset: int
+        :param limit: 每页显示的条目数量。 默认值：10。 
+        :type limit: int
+        :param count: 总数量。
+        :type count: int
+        :param data: 查询到的用户云会议室列表
+        :type data: list[:class:`huaweicloudsdkmeeting.v1.QueryVmrResultDTO`]
+        """
         
         super(SearchMemberVmrResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class SearchMemberVmrResponse(SdkResponse):
         页面起始页，从0开始
 
         :param offset: The offset of this SearchMemberVmrResponse.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -95,7 +106,7 @@ class SearchMemberVmrResponse(SdkResponse):
         每页显示的条目数量。 默认值：10。 
 
         :param limit: The limit of this SearchMemberVmrResponse.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -117,7 +128,7 @@ class SearchMemberVmrResponse(SdkResponse):
         总数量。
 
         :param count: The count of this SearchMemberVmrResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -128,7 +139,7 @@ class SearchMemberVmrResponse(SdkResponse):
         查询到的用户云会议室列表
 
         :return: The data of this SearchMemberVmrResponse.
-        :rtype: list[QueryVmrResultDTO]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.QueryVmrResultDTO`]
         """
         return self._data
 
@@ -139,7 +150,7 @@ class SearchMemberVmrResponse(SdkResponse):
         查询到的用户云会议室列表
 
         :param data: The data of this SearchMemberVmrResponse.
-        :type: list[QueryVmrResultDTO]
+        :type data: list[:class:`huaweicloudsdkmeeting.v1.QueryVmrResultDTO`]
         """
         self._data = data
 

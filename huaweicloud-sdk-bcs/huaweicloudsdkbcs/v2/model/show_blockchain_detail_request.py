@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowBlockchainDetailRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowBlockchainDetailRequest:
     }
 
     def __init__(self, blockchain_id=None):
-        """ShowBlockchainDetailRequest - a model defined in huaweicloud sdk"""
+        """ShowBlockchainDetailRequest
+
+        The model defined in huaweicloud sdk
+
+        :param blockchain_id: blockchainID
+        :type blockchain_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowBlockchainDetailRequest:
         blockchainID
 
         :param blockchain_id: The blockchain_id of this ShowBlockchainDetailRequest.
-        :type: str
+        :type blockchain_id: str
         """
         self._blockchain_id = blockchain_id
 

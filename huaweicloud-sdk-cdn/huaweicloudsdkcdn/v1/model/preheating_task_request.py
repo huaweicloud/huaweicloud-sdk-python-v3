@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PreheatingTaskRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class PreheatingTaskRequest:
     }
 
     def __init__(self, preheating_task=None):
-        """PreheatingTaskRequest - a model defined in huaweicloud sdk"""
+        """PreheatingTaskRequest
+
+        The model defined in huaweicloud sdk
+
+        :param preheating_task: 
+        :type preheating_task: :class:`huaweicloudsdkcdn.v1.PreheatingTaskRequestBody`
+        """
         
         
 
@@ -45,7 +50,7 @@ class PreheatingTaskRequest:
 
 
         :return: The preheating_task of this PreheatingTaskRequest.
-        :rtype: PreheatingTaskRequestBody
+        :rtype: :class:`huaweicloudsdkcdn.v1.PreheatingTaskRequestBody`
         """
         return self._preheating_task
 
@@ -55,7 +60,7 @@ class PreheatingTaskRequest:
 
 
         :param preheating_task: The preheating_task of this PreheatingTaskRequest.
-        :type: PreheatingTaskRequestBody
+        :type preheating_task: :class:`huaweicloudsdkcdn.v1.PreheatingTaskRequestBody`
         """
         self._preheating_task = preheating_task
 

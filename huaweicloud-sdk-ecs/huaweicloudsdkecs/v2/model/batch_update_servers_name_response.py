@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchUpdateServersNameResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchUpdateServersNameResponse(SdkResponse):
     }
 
     def __init__(self, response=None):
-        """BatchUpdateServersNameResponse - a model defined in huaweicloud sdk"""
+        """BatchUpdateServersNameResponse
+
+        The model defined in huaweicloud sdk
+
+        :param response: 提交请求成功后返回的响应列表。
+        :type response: list[:class:`huaweicloudsdkecs.v2.ServerId`]
+        """
         
         super(BatchUpdateServersNameResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class BatchUpdateServersNameResponse(SdkResponse):
         提交请求成功后返回的响应列表。
 
         :return: The response of this BatchUpdateServersNameResponse.
-        :rtype: list[ServerId]
+        :rtype: list[:class:`huaweicloudsdkecs.v2.ServerId`]
         """
         return self._response
 
@@ -58,7 +63,7 @@ class BatchUpdateServersNameResponse(SdkResponse):
         提交请求成功后返回的响应列表。
 
         :param response: The response of this BatchUpdateServersNameResponse.
-        :type: list[ServerId]
+        :type response: list[:class:`huaweicloudsdkecs.v2.ServerId`]
         """
         self._response = response
 

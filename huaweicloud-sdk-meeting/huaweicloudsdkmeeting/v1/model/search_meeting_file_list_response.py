@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SearchMeetingFileListResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class SearchMeetingFileListResponse(SdkResponse):
     }
 
     def __init__(self, offset=None, limit=None, count=None, data=None):
-        """SearchMeetingFileListResponse - a model defined in huaweicloud sdk"""
+        """SearchMeetingFileListResponse
+
+        The model defined in huaweicloud sdk
+
+        :param offset: 页面起始页，从0开始
+        :type offset: int
+        :param limit: 每页显示的条目数量。 默认值：10。 
+        :type limit: int
+        :param count: 总数量。
+        :type count: int
+        :param data: IdeaHub、终端“查看会议纪要列表”响应
+        :type data: list[:class:`huaweicloudsdkmeeting.v1.ListMeetingFileResponseDTO`]
+        """
         
         super(SearchMeetingFileListResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class SearchMeetingFileListResponse(SdkResponse):
         页面起始页，从0开始
 
         :param offset: The offset of this SearchMeetingFileListResponse.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -95,7 +106,7 @@ class SearchMeetingFileListResponse(SdkResponse):
         每页显示的条目数量。 默认值：10。 
 
         :param limit: The limit of this SearchMeetingFileListResponse.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -117,7 +128,7 @@ class SearchMeetingFileListResponse(SdkResponse):
         总数量。
 
         :param count: The count of this SearchMeetingFileListResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -128,7 +139,7 @@ class SearchMeetingFileListResponse(SdkResponse):
         IdeaHub、终端“查看会议纪要列表”响应
 
         :return: The data of this SearchMeetingFileListResponse.
-        :rtype: list[ListMeetingFileResponseDTO]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.ListMeetingFileResponseDTO`]
         """
         return self._data
 
@@ -139,7 +150,7 @@ class SearchMeetingFileListResponse(SdkResponse):
         IdeaHub、终端“查看会议纪要列表”响应
 
         :param data: The data of this SearchMeetingFileListResponse.
-        :type: list[ListMeetingFileResponseDTO]
+        :type data: list[:class:`huaweicloudsdkmeeting.v1.ListMeetingFileResponseDTO`]
         """
         self._data = data
 

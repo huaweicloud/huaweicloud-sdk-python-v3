@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CustomerInfoV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CustomerInfoV2:
     }
 
     def __init__(self, customer_id=None):
-        """CustomerInfoV2 - a model defined in huaweicloud sdk"""
+        """CustomerInfoV2
+
+        The model defined in huaweicloud sdk
+
+        :param customer_id: 客户账号ID。您可以调用查询客户列表接口获取customer_id。
+        :type customer_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class CustomerInfoV2:
         客户账号ID。您可以调用查询客户列表接口获取customer_id。
 
         :param customer_id: The customer_id of this CustomerInfoV2.
-        :type: str
+        :type customer_id: str
         """
         self._customer_id = customer_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteDbUserRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class DeleteDbUserRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, user_name=None):
-        """DeleteDbUserRequest - a model defined in huaweicloud sdk"""
+        """DeleteDbUserRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言
+        :type x_language: str
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param user_name: 需要删除的帐号名。
+        :type user_name: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class DeleteDbUserRequest:
         语言
 
         :param x_language: The x_language of this DeleteDbUserRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -88,7 +97,7 @@ class DeleteDbUserRequest:
         实例ID。
 
         :param instance_id: The instance_id of this DeleteDbUserRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -110,7 +119,7 @@ class DeleteDbUserRequest:
         需要删除的帐号名。
 
         :param user_name: The user_name of this DeleteDbUserRequest.
-        :type: str
+        :type user_name: str
         """
         self._user_name = user_name
 

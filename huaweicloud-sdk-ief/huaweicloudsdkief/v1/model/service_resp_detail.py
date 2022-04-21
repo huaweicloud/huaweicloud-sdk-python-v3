@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ServiceRespDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ServiceRespDetail:
     }
 
     def __init__(self, created_at=None, id=None, meta_data=None, project_id=None, spec=None, updated_at=None):
-        """ServiceRespDetail - a model defined in huaweicloud sdk"""
+        """ServiceRespDetail
+
+        The model defined in huaweicloud sdk
+
+        :param created_at: 创建时间
+        :type created_at: str
+        :param id: 服务ID
+        :type id: str
+        :param meta_data: 
+        :type meta_data: :class:`huaweicloudsdkief.v1.SvcMetadata`
+        :param project_id: 租户ID
+        :type project_id: str
+        :param spec: 
+        :type spec: :class:`huaweicloudsdkief.v1.SvcSpec`
+        :param updated_at: 更新时间
+        :type updated_at: str
+        """
         
         
 
@@ -77,7 +92,7 @@ class ServiceRespDetail:
         创建时间
 
         :param created_at: The created_at of this ServiceRespDetail.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -99,7 +114,7 @@ class ServiceRespDetail:
         服务ID
 
         :param id: The id of this ServiceRespDetail.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -109,7 +124,7 @@ class ServiceRespDetail:
 
 
         :return: The meta_data of this ServiceRespDetail.
-        :rtype: SvcMetadata
+        :rtype: :class:`huaweicloudsdkief.v1.SvcMetadata`
         """
         return self._meta_data
 
@@ -119,7 +134,7 @@ class ServiceRespDetail:
 
 
         :param meta_data: The meta_data of this ServiceRespDetail.
-        :type: SvcMetadata
+        :type meta_data: :class:`huaweicloudsdkief.v1.SvcMetadata`
         """
         self._meta_data = meta_data
 
@@ -141,7 +156,7 @@ class ServiceRespDetail:
         租户ID
 
         :param project_id: The project_id of this ServiceRespDetail.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -151,7 +166,7 @@ class ServiceRespDetail:
 
 
         :return: The spec of this ServiceRespDetail.
-        :rtype: SvcSpec
+        :rtype: :class:`huaweicloudsdkief.v1.SvcSpec`
         """
         return self._spec
 
@@ -161,7 +176,7 @@ class ServiceRespDetail:
 
 
         :param spec: The spec of this ServiceRespDetail.
-        :type: SvcSpec
+        :type spec: :class:`huaweicloudsdkief.v1.SvcSpec`
         """
         self._spec = spec
 
@@ -183,7 +198,7 @@ class ServiceRespDetail:
         更新时间
 
         :param updated_at: The updated_at of this ServiceRespDetail.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 

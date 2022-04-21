@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateMixJobReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateMixJobReq:
     }
 
     def __init__(self, mix_param=None):
-        """UpdateMixJobReq - a model defined in huaweicloud sdk"""
+        """UpdateMixJobReq
+
+        The model defined in huaweicloud sdk
+
+        :param mix_param: 
+        :type mix_param: :class:`huaweicloudsdkcloudrtc.v2.UpdateMixParam`
+        """
         
         
 
@@ -45,7 +50,7 @@ class UpdateMixJobReq:
 
 
         :return: The mix_param of this UpdateMixJobReq.
-        :rtype: UpdateMixParam
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.UpdateMixParam`
         """
         return self._mix_param
 
@@ -55,7 +60,7 @@ class UpdateMixJobReq:
 
 
         :param mix_param: The mix_param of this UpdateMixJobReq.
-        :type: UpdateMixParam
+        :type mix_param: :class:`huaweicloudsdkcloudrtc.v2.UpdateMixParam`
         """
         self._mix_param = mix_param
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateRangeSwitchResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateRangeSwitchResponse(SdkResponse):
     }
 
     def __init__(self, origin_range=None):
-        """UpdateRangeSwitchResponse - a model defined in huaweicloud sdk"""
+        """UpdateRangeSwitchResponse
+
+        The model defined in huaweicloud sdk
+
+        :param origin_range: 
+        :type origin_range: :class:`huaweicloudsdkcdn.v1.OriginRangeBody`
+        """
         
         super(UpdateRangeSwitchResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class UpdateRangeSwitchResponse(SdkResponse):
 
 
         :return: The origin_range of this UpdateRangeSwitchResponse.
-        :rtype: OriginRangeBody
+        :rtype: :class:`huaweicloudsdkcdn.v1.OriginRangeBody`
         """
         return self._origin_range
 
@@ -56,7 +61,7 @@ class UpdateRangeSwitchResponse(SdkResponse):
 
 
         :param origin_range: The origin_range of this UpdateRangeSwitchResponse.
-        :type: OriginRangeBody
+        :type origin_range: :class:`huaweicloudsdkcdn.v1.OriginRangeBody`
         """
         self._origin_range = origin_range
 

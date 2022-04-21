@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RulesLocalAdditional:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RulesLocalAdditional:
     }
 
     def __init__(self, name=None):
-        """RulesLocalAdditional - a model defined in huaweicloud sdk"""
+        """RulesLocalAdditional
+
+        The model defined in huaweicloud sdk
+
+        :param name: user：联邦用户在本系统中的用户名称。 &#x60;&#x60;&#x60; \&quot;user\&quot;:{\&quot;name\&quot;:\&quot;{0}\&quot;} &#x60;&#x60;&#x60;  group：联邦用户在本系统中所属用户组。 &#x60;&#x60;&#x60; \&quot;group\&quot;:{\&quot;name\&quot;:\&quot;0cd5e9\&quot;} &#x60;&#x60;&#x60;
+        :type name: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class RulesLocalAdditional:
         user：联邦用户在本系统中的用户名称。 ``` \"user\":{\"name\":\"{0}\"} ```  group：联邦用户在本系统中所属用户组。 ``` \"group\":{\"name\":\"0cd5e9\"} ```
 
         :param name: The name of this RulesLocalAdditional.
-        :type: str
+        :type name: str
         """
         self._name = name
 

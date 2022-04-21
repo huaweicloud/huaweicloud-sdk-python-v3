@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TemplateParam:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class TemplateParam:
     }
 
     def __init__(self, required=None, visible=None, name=None, value=None, description=None, paramtype=None, display_type=None, display_name=None, is_static=None, is_default=None, limits=None, constraints=None):
-        """TemplateParam - a model defined in huaweicloud sdk"""
+        """TemplateParam
+
+        The model defined in huaweicloud sdk
+
+        :param required: 是否必须
+        :type required: str
+        :param visible: 是否可见
+        :type visible: str
+        :param name: 流水线参数名字
+        :type name: str
+        :param value: 流水线参数值
+        :type value: str
+        :param description: 流水线参数描述
+        :type description: str
+        :param paramtype: 流水线参数类型
+        :type paramtype: str
+        :param display_type: 流水线参数展示类型
+        :type display_type: str
+        :param display_name: 流水线参数展示名字
+        :type display_name: str
+        :param is_static: 是否静态参数
+        :type is_static: bool
+        :param is_default: 是否默认参数
+        :type is_default: bool
+        :param limits: array类型数据
+        :type limits: list[:class:`huaweicloudsdkcloudpipeline.v2.ParamTypeLimits`]
+        :param constraints: array类型数据
+        :type constraints: list[:class:`huaweicloudsdkcloudpipeline.v2.Constraint`]
+        """
         
         
 
@@ -101,7 +128,7 @@ class TemplateParam:
         是否必须
 
         :param required: The required of this TemplateParam.
-        :type: str
+        :type required: str
         """
         self._required = required
 
@@ -123,7 +150,7 @@ class TemplateParam:
         是否可见
 
         :param visible: The visible of this TemplateParam.
-        :type: str
+        :type visible: str
         """
         self._visible = visible
 
@@ -145,7 +172,7 @@ class TemplateParam:
         流水线参数名字
 
         :param name: The name of this TemplateParam.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -167,7 +194,7 @@ class TemplateParam:
         流水线参数值
 
         :param value: The value of this TemplateParam.
-        :type: str
+        :type value: str
         """
         self._value = value
 
@@ -189,7 +216,7 @@ class TemplateParam:
         流水线参数描述
 
         :param description: The description of this TemplateParam.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -211,7 +238,7 @@ class TemplateParam:
         流水线参数类型
 
         :param paramtype: The paramtype of this TemplateParam.
-        :type: str
+        :type paramtype: str
         """
         self._paramtype = paramtype
 
@@ -233,7 +260,7 @@ class TemplateParam:
         流水线参数展示类型
 
         :param display_type: The display_type of this TemplateParam.
-        :type: str
+        :type display_type: str
         """
         self._display_type = display_type
 
@@ -255,7 +282,7 @@ class TemplateParam:
         流水线参数展示名字
 
         :param display_name: The display_name of this TemplateParam.
-        :type: str
+        :type display_name: str
         """
         self._display_name = display_name
 
@@ -277,7 +304,7 @@ class TemplateParam:
         是否静态参数
 
         :param is_static: The is_static of this TemplateParam.
-        :type: bool
+        :type is_static: bool
         """
         self._is_static = is_static
 
@@ -299,7 +326,7 @@ class TemplateParam:
         是否默认参数
 
         :param is_default: The is_default of this TemplateParam.
-        :type: bool
+        :type is_default: bool
         """
         self._is_default = is_default
 
@@ -310,7 +337,7 @@ class TemplateParam:
         array类型数据
 
         :return: The limits of this TemplateParam.
-        :rtype: list[ParamTypeLimits]
+        :rtype: list[:class:`huaweicloudsdkcloudpipeline.v2.ParamTypeLimits`]
         """
         return self._limits
 
@@ -321,7 +348,7 @@ class TemplateParam:
         array类型数据
 
         :param limits: The limits of this TemplateParam.
-        :type: list[ParamTypeLimits]
+        :type limits: list[:class:`huaweicloudsdkcloudpipeline.v2.ParamTypeLimits`]
         """
         self._limits = limits
 
@@ -332,7 +359,7 @@ class TemplateParam:
         array类型数据
 
         :return: The constraints of this TemplateParam.
-        :rtype: list[Constraint]
+        :rtype: list[:class:`huaweicloudsdkcloudpipeline.v2.Constraint`]
         """
         return self._constraints
 
@@ -343,7 +370,7 @@ class TemplateParam:
         array类型数据
 
         :param constraints: The constraints of this TemplateParam.
-        :type: list[Constraint]
+        :type constraints: list[:class:`huaweicloudsdkcloudpipeline.v2.Constraint`]
         """
         self._constraints = constraints
 

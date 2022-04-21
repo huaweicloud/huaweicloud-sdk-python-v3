@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class HttpsDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class HttpsDetail:
     }
 
     def __init__(self, domain_id=None, domain_name=None, cert_name=None, certificate=None, private_key=None, certificate_type=None, expiration_time=None, https_status=None, force_redirect_https=None, force_redirect_config=None, http2=None):
-        """HttpsDetail - a model defined in huaweicloud sdk"""
+        """HttpsDetail
+
+        The model defined in huaweicloud sdk
+
+        :param domain_id: 域名id
+        :type domain_id: str
+        :param domain_name: 绑定该证书的域名
+        :type domain_name: str
+        :param cert_name: 证书名字。（长度限制为3-32字符）。
+        :type cert_name: str
+        :param certificate: 证书内容
+        :type certificate: str
+        :param private_key: 私钥内容
+        :type private_key: str
+        :param certificate_type: 0：自有证书  1：云托管证书
+        :type certificate_type: int
+        :param expiration_time: 证书过期时间
+        :type expiration_time: int
+        :param https_status: HTTPS证书是否启用，取值0：不启用，此时无需填写证书及私钥参数；1：启用HTTPS加速并协议跟随回源；2：启用HTTPS加速并HTTP回源，开启时需要传递证书及私钥。
+        :type https_status: int
+        :param force_redirect_https: 客户端请求是否强制重定向。1是，0否。（如果为2，表示强制跳转HTTP）
+        :type force_redirect_https: int
+        :param force_redirect_config: 
+        :type force_redirect_config: :class:`huaweicloudsdkcdn.v1.ForceRedirect`
+        :param http2: 是否使用HTTP2.0。（1是，0否。）
+        :type http2: int
+        """
         
         
 
@@ -108,7 +133,7 @@ class HttpsDetail:
         域名id
 
         :param domain_id: The domain_id of this HttpsDetail.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -130,7 +155,7 @@ class HttpsDetail:
         绑定该证书的域名
 
         :param domain_name: The domain_name of this HttpsDetail.
-        :type: str
+        :type domain_name: str
         """
         self._domain_name = domain_name
 
@@ -152,7 +177,7 @@ class HttpsDetail:
         证书名字。（长度限制为3-32字符）。
 
         :param cert_name: The cert_name of this HttpsDetail.
-        :type: str
+        :type cert_name: str
         """
         self._cert_name = cert_name
 
@@ -174,7 +199,7 @@ class HttpsDetail:
         证书内容
 
         :param certificate: The certificate of this HttpsDetail.
-        :type: str
+        :type certificate: str
         """
         self._certificate = certificate
 
@@ -196,7 +221,7 @@ class HttpsDetail:
         私钥内容
 
         :param private_key: The private_key of this HttpsDetail.
-        :type: str
+        :type private_key: str
         """
         self._private_key = private_key
 
@@ -218,7 +243,7 @@ class HttpsDetail:
         0：自有证书  1：云托管证书
 
         :param certificate_type: The certificate_type of this HttpsDetail.
-        :type: int
+        :type certificate_type: int
         """
         self._certificate_type = certificate_type
 
@@ -240,7 +265,7 @@ class HttpsDetail:
         证书过期时间
 
         :param expiration_time: The expiration_time of this HttpsDetail.
-        :type: int
+        :type expiration_time: int
         """
         self._expiration_time = expiration_time
 
@@ -262,7 +287,7 @@ class HttpsDetail:
         HTTPS证书是否启用，取值0：不启用，此时无需填写证书及私钥参数；1：启用HTTPS加速并协议跟随回源；2：启用HTTPS加速并HTTP回源，开启时需要传递证书及私钥。
 
         :param https_status: The https_status of this HttpsDetail.
-        :type: int
+        :type https_status: int
         """
         self._https_status = https_status
 
@@ -284,7 +309,7 @@ class HttpsDetail:
         客户端请求是否强制重定向。1是，0否。（如果为2，表示强制跳转HTTP）
 
         :param force_redirect_https: The force_redirect_https of this HttpsDetail.
-        :type: int
+        :type force_redirect_https: int
         """
         self._force_redirect_https = force_redirect_https
 
@@ -294,7 +319,7 @@ class HttpsDetail:
 
 
         :return: The force_redirect_config of this HttpsDetail.
-        :rtype: ForceRedirect
+        :rtype: :class:`huaweicloudsdkcdn.v1.ForceRedirect`
         """
         return self._force_redirect_config
 
@@ -304,7 +329,7 @@ class HttpsDetail:
 
 
         :param force_redirect_config: The force_redirect_config of this HttpsDetail.
-        :type: ForceRedirect
+        :type force_redirect_config: :class:`huaweicloudsdkcdn.v1.ForceRedirect`
         """
         self._force_redirect_config = force_redirect_config
 
@@ -326,7 +351,7 @@ class HttpsDetail:
         是否使用HTTP2.0。（1是，0否。）
 
         :param http2: The http2 of this HttpsDetail.
-        :type: int
+        :type http2: int
         """
         self._http2 = http2
 

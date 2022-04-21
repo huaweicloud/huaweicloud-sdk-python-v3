@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VaultUpdateReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class VaultUpdateReq:
     }
 
     def __init__(self, vault=None):
-        """VaultUpdateReq - a model defined in huaweicloud sdk"""
+        """VaultUpdateReq
+
+        The model defined in huaweicloud sdk
+
+        :param vault: 
+        :type vault: :class:`huaweicloudsdkcbr.v1.VaultUpdate`
+        """
         
         
 
@@ -45,7 +50,7 @@ class VaultUpdateReq:
 
 
         :return: The vault of this VaultUpdateReq.
-        :rtype: VaultUpdate
+        :rtype: :class:`huaweicloudsdkcbr.v1.VaultUpdate`
         """
         return self._vault
 
@@ -55,7 +60,7 @@ class VaultUpdateReq:
 
 
         :param vault: The vault of this VaultUpdateReq.
-        :type: VaultUpdate
+        :type vault: :class:`huaweicloudsdkcbr.v1.VaultUpdate`
         """
         self._vault = vault
 

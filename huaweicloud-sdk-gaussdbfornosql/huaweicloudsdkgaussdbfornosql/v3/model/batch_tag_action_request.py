@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchTagActionRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchTagActionRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """BatchTagActionRequest - a model defined in huaweicloud sdk"""
+        """BatchTagActionRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param body: Body of the BatchTagActionRequest
+        :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.BatchTagActionRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class BatchTagActionRequest:
         实例ID。
 
         :param instance_id: The instance_id of this BatchTagActionRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -72,7 +79,7 @@ class BatchTagActionRequest:
 
 
         :return: The body of this BatchTagActionRequest.
-        :rtype: BatchTagActionRequestBody
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.BatchTagActionRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class BatchTagActionRequest:
 
 
         :param body: The body of this BatchTagActionRequest.
-        :type: BatchTagActionRequestBody
+        :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.BatchTagActionRequestBody`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateVpcOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UpdateVpcOption:
     }
 
     def __init__(self, name=None, description=None, cidr=None, routes=None):
-        """UpdateVpcOption - a model defined in huaweicloud sdk"""
+        """UpdateVpcOption
+
+        The model defined in huaweicloud sdk
+
+        :param name: 功能说明：虚拟私有云名称  取值范围：0-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）  约束：如果名称不为空，则同一个租户下的VPC不允许重名。
+        :type name: str
+        :param description: 功能说明：虚拟私有云的描述  取值范围：0-255个字符，不能包含“&lt;”和“&gt;”。
+        :type description: str
+        :param cidr: 功能说明：虚拟私有云下可用子网的范围  取值范围：  - 10.0.0.0/8 ~ 10.255.255.240/28 - 172.16.0.0/12 ~ 172.31.255.240/28 - 192.168.0.0/16 ~ 192.168.255.240/28  约束：必须是ipv4 cidr格式，例如：192.168.0.0/16
+        :type cidr: str
+        :param routes: 功能说明：路由信息列表，详情参见route对象
+        :type routes: list[:class:`huaweicloudsdkvpc.v2.Route`]
+        """
         
         
 
@@ -73,7 +84,7 @@ class UpdateVpcOption:
         功能说明：虚拟私有云名称  取值范围：0-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）  约束：如果名称不为空，则同一个租户下的VPC不允许重名。
 
         :param name: The name of this UpdateVpcOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -95,7 +106,7 @@ class UpdateVpcOption:
         功能说明：虚拟私有云的描述  取值范围：0-255个字符，不能包含“<”和“>”。
 
         :param description: The description of this UpdateVpcOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -117,7 +128,7 @@ class UpdateVpcOption:
         功能说明：虚拟私有云下可用子网的范围  取值范围：  - 10.0.0.0/8 ~ 10.255.255.240/28 - 172.16.0.0/12 ~ 172.31.255.240/28 - 192.168.0.0/16 ~ 192.168.255.240/28  约束：必须是ipv4 cidr格式，例如：192.168.0.0/16
 
         :param cidr: The cidr of this UpdateVpcOption.
-        :type: str
+        :type cidr: str
         """
         self._cidr = cidr
 
@@ -128,7 +139,7 @@ class UpdateVpcOption:
         功能说明：路由信息列表，详情参见route对象
 
         :return: The routes of this UpdateVpcOption.
-        :rtype: list[Route]
+        :rtype: list[:class:`huaweicloudsdkvpc.v2.Route`]
         """
         return self._routes
 
@@ -139,7 +150,7 @@ class UpdateVpcOption:
         功能说明：路由信息列表，详情参见route对象
 
         :param routes: The routes of this UpdateVpcOption.
-        :type: list[Route]
+        :type routes: list[:class:`huaweicloudsdkvpc.v2.Route`]
         """
         self._routes = routes
 

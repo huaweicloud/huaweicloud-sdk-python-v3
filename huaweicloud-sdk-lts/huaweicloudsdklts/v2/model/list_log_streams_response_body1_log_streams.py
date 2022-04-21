@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListLogStreamsResponseBody1LogStreams:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListLogStreamsResponseBody1LogStreams:
     }
 
     def __init__(self, creation_time=None, log_stream_id=None, log_stream_name=None, tag=None, filter_count=None):
-        """ListLogStreamsResponseBody1LogStreams - a model defined in huaweicloud sdk"""
+        """ListLogStreamsResponseBody1LogStreams
+
+        The model defined in huaweicloud sdk
+
+        :param creation_time: 日志流创建时间
+        :type creation_time: int
+        :param log_stream_id: 日志流ID
+        :type log_stream_id: str
+        :param log_stream_name: 日志流名称
+        :type log_stream_name: str
+        :param tag: 日志流所属标签
+        :type tag: dict(str, str)
+        :param filter_count: 过滤器个数
+        :type filter_count: int
+        """
         
         
 
@@ -73,7 +86,7 @@ class ListLogStreamsResponseBody1LogStreams:
         日志流创建时间
 
         :param creation_time: The creation_time of this ListLogStreamsResponseBody1LogStreams.
-        :type: int
+        :type creation_time: int
         """
         self._creation_time = creation_time
 
@@ -95,7 +108,7 @@ class ListLogStreamsResponseBody1LogStreams:
         日志流ID
 
         :param log_stream_id: The log_stream_id of this ListLogStreamsResponseBody1LogStreams.
-        :type: str
+        :type log_stream_id: str
         """
         self._log_stream_id = log_stream_id
 
@@ -117,7 +130,7 @@ class ListLogStreamsResponseBody1LogStreams:
         日志流名称
 
         :param log_stream_name: The log_stream_name of this ListLogStreamsResponseBody1LogStreams.
-        :type: str
+        :type log_stream_name: str
         """
         self._log_stream_name = log_stream_name
 
@@ -139,7 +152,7 @@ class ListLogStreamsResponseBody1LogStreams:
         日志流所属标签
 
         :param tag: The tag of this ListLogStreamsResponseBody1LogStreams.
-        :type: dict(str, str)
+        :type tag: dict(str, str)
         """
         self._tag = tag
 
@@ -161,7 +174,7 @@ class ListLogStreamsResponseBody1LogStreams:
         过滤器个数
 
         :param filter_count: The filter_count of this ListLogStreamsResponseBody1LogStreams.
-        :type: int
+        :type filter_count: int
         """
         self._filter_count = filter_count
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PropertyFilter:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class PropertyFilter:
     }
 
     def __init__(self, property_name=None, operator=None, value=None):
-        """PropertyFilter - a model defined in huaweicloud sdk"""
+        """PropertyFilter
+
+        The model defined in huaweicloud sdk
+
+        :param property_name: 过滤属性名称，正则：\&quot;^[a-zA-Z0-9_]{1,64}$\&quot;
+        :type property_name: str
+        :param operator: 过滤操作方式,当前仅支持“&#x3D;”
+        :type operator: str
+        :param value: 过滤属性值
+        :type value: object
+        """
         
         
 
@@ -65,7 +74,7 @@ class PropertyFilter:
         过滤属性名称，正则：\"^[a-zA-Z0-9_]{1,64}$\"
 
         :param property_name: The property_name of this PropertyFilter.
-        :type: str
+        :type property_name: str
         """
         self._property_name = property_name
 
@@ -87,7 +96,7 @@ class PropertyFilter:
         过滤操作方式,当前仅支持“=”
 
         :param operator: The operator of this PropertyFilter.
-        :type: str
+        :type operator: str
         """
         self._operator = operator
 
@@ -109,7 +118,7 @@ class PropertyFilter:
         过滤属性值
 
         :param value: The value of this PropertyFilter.
-        :type: object
+        :type value: object
         """
         self._value = value
 

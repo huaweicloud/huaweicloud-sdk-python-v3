@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ChangeBaremetalServerNameRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ChangeBaremetalServerNameRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """ChangeBaremetalServerNameRequest - a model defined in huaweicloud sdk"""
+        """ChangeBaremetalServerNameRequest
+
+        The model defined in huaweicloud sdk
+
+        :param server_id: 裸金属服务器ID
+        :type server_id: str
+        :param body: Body of the ChangeBaremetalServerNameRequest
+        :type body: :class:`huaweicloudsdkbms.v1.ChangeBaremetalNameBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class ChangeBaremetalServerNameRequest:
         裸金属服务器ID
 
         :param server_id: The server_id of this ChangeBaremetalServerNameRequest.
-        :type: str
+        :type server_id: str
         """
         self._server_id = server_id
 
@@ -72,7 +79,7 @@ class ChangeBaremetalServerNameRequest:
 
 
         :return: The body of this ChangeBaremetalServerNameRequest.
-        :rtype: ChangeBaremetalNameBody
+        :rtype: :class:`huaweicloudsdkbms.v1.ChangeBaremetalNameBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class ChangeBaremetalServerNameRequest:
 
 
         :param body: The body of this ChangeBaremetalServerNameRequest.
-        :type: ChangeBaremetalNameBody
+        :type body: :class:`huaweicloudsdkbms.v1.ChangeBaremetalNameBody`
         """
         self._body = body
 

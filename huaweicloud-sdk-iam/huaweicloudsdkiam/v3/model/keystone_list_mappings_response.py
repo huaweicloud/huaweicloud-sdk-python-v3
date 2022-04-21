@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneListMappingsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class KeystoneListMappingsResponse(SdkResponse):
     }
 
     def __init__(self, links=None, mappings=None):
-        """KeystoneListMappingsResponse - a model defined in huaweicloud sdk"""
+        """KeystoneListMappingsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param links: 
+        :type links: :class:`huaweicloudsdkiam.v3.Links`
+        :param mappings: 映射信息列表。
+        :type mappings: list[:class:`huaweicloudsdkiam.v3.MappingResult`]
+        """
         
         super(KeystoneListMappingsResponse, self).__init__()
 
@@ -51,7 +58,7 @@ class KeystoneListMappingsResponse(SdkResponse):
 
 
         :return: The links of this KeystoneListMappingsResponse.
-        :rtype: Links
+        :rtype: :class:`huaweicloudsdkiam.v3.Links`
         """
         return self._links
 
@@ -61,7 +68,7 @@ class KeystoneListMappingsResponse(SdkResponse):
 
 
         :param links: The links of this KeystoneListMappingsResponse.
-        :type: Links
+        :type links: :class:`huaweicloudsdkiam.v3.Links`
         """
         self._links = links
 
@@ -72,7 +79,7 @@ class KeystoneListMappingsResponse(SdkResponse):
         映射信息列表。
 
         :return: The mappings of this KeystoneListMappingsResponse.
-        :rtype: list[MappingResult]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.MappingResult`]
         """
         return self._mappings
 
@@ -83,7 +90,7 @@ class KeystoneListMappingsResponse(SdkResponse):
         映射信息列表。
 
         :param mappings: The mappings of this KeystoneListMappingsResponse.
-        :type: list[MappingResult]
+        :type mappings: list[:class:`huaweicloudsdkiam.v3.MappingResult`]
         """
         self._mappings = mappings
 

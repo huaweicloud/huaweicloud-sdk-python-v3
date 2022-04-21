@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SecurityID:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class SecurityID:
     }
 
     def __init__(self, id=None):
-        """SecurityID - a model defined in huaweicloud sdk"""
+        """SecurityID
+
+        The model defined in huaweicloud sdk
+
+        :param id: 安全组ID。
+        :type id: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class SecurityID:
         安全组ID。
 
         :param id: The id of this SecurityID.
-        :type: str
+        :type id: str
         """
         self._id = id
 

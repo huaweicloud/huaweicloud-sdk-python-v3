@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchResumeScalingPoliciesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchResumeScalingPoliciesRequest:
     }
 
     def __init__(self, body=None):
-        """BatchResumeScalingPoliciesRequest - a model defined in huaweicloud sdk"""
+        """BatchResumeScalingPoliciesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the BatchResumeScalingPoliciesRequest
+        :type body: :class:`huaweicloudsdkas.v1.BatchResumeScalingPoliciesOption`
+        """
         
         
 
@@ -46,7 +51,7 @@ class BatchResumeScalingPoliciesRequest:
 
 
         :return: The body of this BatchResumeScalingPoliciesRequest.
-        :rtype: BatchResumeScalingPoliciesOption
+        :rtype: :class:`huaweicloudsdkas.v1.BatchResumeScalingPoliciesOption`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class BatchResumeScalingPoliciesRequest:
 
 
         :param body: The body of this BatchResumeScalingPoliciesRequest.
-        :type: BatchResumeScalingPoliciesOption
+        :type body: :class:`huaweicloudsdkas.v1.BatchResumeScalingPoliciesOption`
         """
         self._body = body
 

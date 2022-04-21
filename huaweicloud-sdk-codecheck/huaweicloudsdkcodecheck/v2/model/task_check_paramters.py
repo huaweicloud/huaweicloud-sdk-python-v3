@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TaskCheckParamters:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class TaskCheckParamters:
     }
 
     def __init__(self, check_id=None, name=None, checker_configs=None):
-        """TaskCheckParamters - a model defined in huaweicloud sdk"""
+        """TaskCheckParamters
+
+        The model defined in huaweicloud sdk
+
+        :param check_id: 检查工具ID
+        :type check_id: int
+        :param name: 编译参数名称
+        :type name: str
+        :param checker_configs: 检查参数配置信息
+        :type checker_configs: list[:class:`huaweicloudsdkcodecheck.v2.CheckConfigInfo`]
+        """
         
         
 
@@ -68,7 +77,7 @@ class TaskCheckParamters:
         检查工具ID
 
         :param check_id: The check_id of this TaskCheckParamters.
-        :type: int
+        :type check_id: int
         """
         self._check_id = check_id
 
@@ -90,7 +99,7 @@ class TaskCheckParamters:
         编译参数名称
 
         :param name: The name of this TaskCheckParamters.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -101,7 +110,7 @@ class TaskCheckParamters:
         检查参数配置信息
 
         :return: The checker_configs of this TaskCheckParamters.
-        :rtype: list[CheckConfigInfo]
+        :rtype: list[:class:`huaweicloudsdkcodecheck.v2.CheckConfigInfo`]
         """
         return self._checker_configs
 
@@ -112,7 +121,7 @@ class TaskCheckParamters:
         检查参数配置信息
 
         :param checker_configs: The checker_configs of this TaskCheckParamters.
-        :type: list[CheckConfigInfo]
+        :type checker_configs: list[:class:`huaweicloudsdkcodecheck.v2.CheckConfigInfo`]
         """
         self._checker_configs = checker_configs
 

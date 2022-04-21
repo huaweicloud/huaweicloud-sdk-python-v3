@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateMediaProcessTaskRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateMediaProcessTaskRequest:
     }
 
     def __init__(self, body=None):
-        """CreateMediaProcessTaskRequest - a model defined in huaweicloud sdk"""
+        """CreateMediaProcessTaskRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateMediaProcessTaskRequest
+        :type body: :class:`huaweicloudsdkmpc.v1.CreateMediaProcessReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateMediaProcessTaskRequest:
 
 
         :return: The body of this CreateMediaProcessTaskRequest.
-        :rtype: CreateMediaProcessReq
+        :rtype: :class:`huaweicloudsdkmpc.v1.CreateMediaProcessReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateMediaProcessTaskRequest:
 
 
         :param body: The body of this CreateMediaProcessTaskRequest.
-        :type: CreateMediaProcessReq
+        :type body: :class:`huaweicloudsdkmpc.v1.CreateMediaProcessReq`
         """
         self._body = body
 

@@ -52,21 +52,17 @@ class DscAsyncClient(Client):
         """对数据进行脱敏
 
         对数据进行脱敏
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchAddDataMaskRequest request
-        :return: BatchAddDataMaskResponse
+        :param request: Request instance for BatchAddDataMask
+        :type request: :class:`huaweicloudsdkdsc.v1.BatchAddDataMaskRequest`
+        :rtype: :class:`huaweicloudsdkdsc.v1.BatchAddDataMaskResponse`
         """
         return self.batch_add_data_mask_with_http_info(request)
 
     def batch_add_data_mask_with_http_info(self, request):
-        """对数据进行脱敏
-
-        对数据进行脱敏
-
-        :param BatchAddDataMaskRequest request
-        :return: BatchAddDataMaskResponse
-        """
-
         all_params = ['batch_add_data_mask_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -110,26 +106,21 @@ class DscAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_database_water_mark_async(self, request):
         """嵌入数据水印
 
         对json体中数据动态添加水印
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateDatabaseWaterMarkRequest request
-        :return: CreateDatabaseWaterMarkResponse
+        :param request: Request instance for CreateDatabaseWaterMark
+        :type request: :class:`huaweicloudsdkdsc.v1.CreateDatabaseWaterMarkRequest`
+        :rtype: :class:`huaweicloudsdkdsc.v1.CreateDatabaseWaterMarkResponse`
         """
         return self.create_database_water_mark_with_http_info(request)
 
     def create_database_water_mark_with_http_info(self, request):
-        """嵌入数据水印
-
-        对json体中数据动态添加水印
-
-        :param CreateDatabaseWaterMarkRequest request
-        :return: CreateDatabaseWaterMarkResponse
-        """
-
         all_params = ['create_database_water_mark_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -173,26 +164,21 @@ class DscAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_doc_watermark_async(self, request):
         """文档嵌入水印
 
         对WORD(.docx)，PPT(.pptx)，EXCEL(.xlsx)，PDF(.pdf) 类型的文件嵌入文字暗水印、文字明水印或者图片明水印，用户以formData的格式传入待加水印的文件和水印相关信息，DSC服务给文件加完水印后返回给用户已嵌入水印的文件的二进制流。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateDocWatermarkRequest request
-        :return: CreateDocWatermarkResponse
+        :param request: Request instance for CreateDocWatermark
+        :type request: :class:`huaweicloudsdkdsc.v1.CreateDocWatermarkRequest`
+        :rtype: :class:`huaweicloudsdkdsc.v1.CreateDocWatermarkResponse`
         """
         return self.create_doc_watermark_with_http_info(request)
 
     def create_doc_watermark_with_http_info(self, request):
-        """文档嵌入水印
-
-        对WORD(.docx)，PPT(.pptx)，EXCEL(.xlsx)，PDF(.pdf) 类型的文件嵌入文字暗水印、文字明水印或者图片明水印，用户以formData的格式传入待加水印的文件和水印相关信息，DSC服务给文件加完水印后返回给用户已嵌入水印的文件的二进制流。
-
-        :param CreateDocWatermarkRequest request
-        :return: CreateDocWatermarkResponse
-        """
-
         all_params = ['doc_type', 'file', 'file_password', 'marked_file_password', 'readonly_password', 'visible_watermark', 'font_size', 'rotation', 'opacity', 'blind_watermark', 'image_mark', 'visible_type']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -260,26 +246,21 @@ class DscAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_doc_watermark_by_address_async(self, request):
         """文档嵌入水印（文件地址版本）
 
         对WORD(.docx)，PPT(.pptx)，EXCEL(.xlsx)，PDF(.pdf)*类型的文档嵌入文字暗水印、文字明水印或者图片明水印，用户传入待加水印的文档地址（目前支持OBS)和水印相关信息，DSC服务对文档加完水印后返回给用户已嵌入水印的文档的存放地址。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateDocWatermarkByAddressRequest request
-        :return: CreateDocWatermarkByAddressResponse
+        :param request: Request instance for CreateDocWatermarkByAddress
+        :type request: :class:`huaweicloudsdkdsc.v1.CreateDocWatermarkByAddressRequest`
+        :rtype: :class:`huaweicloudsdkdsc.v1.CreateDocWatermarkByAddressResponse`
         """
         return self.create_doc_watermark_by_address_with_http_info(request)
 
     def create_doc_watermark_by_address_with_http_info(self, request):
-        """文档嵌入水印（文件地址版本）
-
-        对WORD(.docx)，PPT(.pptx)，EXCEL(.xlsx)，PDF(.pdf)*类型的文档嵌入文字暗水印、文字明水印或者图片明水印，用户传入待加水印的文档地址（目前支持OBS)和水印相关信息，DSC服务对文档加完水印后返回给用户已嵌入水印的文档的存放地址。
-
-        :param CreateDocWatermarkByAddressRequest request
-        :return: CreateDocWatermarkByAddressResponse
-        """
-
         all_params = ['create_doc_watermark_by_address_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -323,26 +304,21 @@ class DscAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_image_watermark_async(self, request):
         """图片嵌入暗水印
 
         对图片嵌入文字暗水印或者图片暗水印，用户以formData的格式传入待加水印图片和水印相关信息，DSC服务对图片加完水印后返回给用户已嵌入水印的图片二进制流，目前支持的图片格式为：*.jpg, *.jpeg, *.jpe, *.png, *.bmp, *.dib, *.rle, *.tiff, *.tif, *.ppm, *.webp, *.tga, *.tpic, *.gif。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateImageWatermarkRequest request
-        :return: CreateImageWatermarkResponse
+        :param request: Request instance for CreateImageWatermark
+        :type request: :class:`huaweicloudsdkdsc.v1.CreateImageWatermarkRequest`
+        :rtype: :class:`huaweicloudsdkdsc.v1.CreateImageWatermarkResponse`
         """
         return self.create_image_watermark_with_http_info(request)
 
     def create_image_watermark_with_http_info(self, request):
-        """图片嵌入暗水印
-
-        对图片嵌入文字暗水印或者图片暗水印，用户以formData的格式传入待加水印图片和水印相关信息，DSC服务对图片加完水印后返回给用户已嵌入水印的图片二进制流，目前支持的图片格式为：*.jpg, *.jpeg, *.jpe, *.png, *.bmp, *.dib, *.rle, *.tiff, *.tif, *.ppm, *.webp, *.tga, *.tpic, *.gif。
-
-        :param CreateImageWatermarkRequest request
-        :return: CreateImageWatermarkResponse
-        """
-
         all_params = ['file', 'blind_watermark', 'image_watermark']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -392,26 +368,21 @@ class DscAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_image_watermark_by_address_async(self, request):
         """图片嵌入暗水印（文件地址版本）
 
         对指定存储地址信息（目前支持华为云OBS）的图片嵌入文字暗水印或者图片暗水印，已嵌入的水印的图片将存放在用户指定的位置（目前支持华为云OBS），支持的图片格式为：*.jpg, *.jpeg, *.jpe, *.png, *.bmp, *.dib, *.rle, *.tiff, *.tif, *.ppm, *.webp, *.tga, *.tpic, *.gif。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateImageWatermarkByAddressRequest request
-        :return: CreateImageWatermarkByAddressResponse
+        :param request: Request instance for CreateImageWatermarkByAddress
+        :type request: :class:`huaweicloudsdkdsc.v1.CreateImageWatermarkByAddressRequest`
+        :rtype: :class:`huaweicloudsdkdsc.v1.CreateImageWatermarkByAddressResponse`
         """
         return self.create_image_watermark_by_address_with_http_info(request)
 
     def create_image_watermark_by_address_with_http_info(self, request):
-        """图片嵌入暗水印（文件地址版本）
-
-        对指定存储地址信息（目前支持华为云OBS）的图片嵌入文字暗水印或者图片暗水印，已嵌入的水印的图片将存放在用户指定的位置（目前支持华为云OBS），支持的图片格式为：*.jpg, *.jpeg, *.jpe, *.png, *.bmp, *.dib, *.rle, *.tiff, *.tif, *.ppm, *.webp, *.tga, *.tpic, *.gif。
-
-        :param CreateImageWatermarkByAddressRequest request
-        :return: CreateImageWatermarkByAddressResponse
-        """
-
         all_params = ['create_image_watermark_by_address_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -455,26 +426,21 @@ class DscAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_database_water_mark_async(self, request):
         """提取数据水印
 
         提取请求数据中水印内容
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowDatabaseWaterMarkRequest request
-        :return: ShowDatabaseWaterMarkResponse
+        :param request: Request instance for ShowDatabaseWaterMark
+        :type request: :class:`huaweicloudsdkdsc.v1.ShowDatabaseWaterMarkRequest`
+        :rtype: :class:`huaweicloudsdkdsc.v1.ShowDatabaseWaterMarkResponse`
         """
         return self.show_database_water_mark_with_http_info(request)
 
     def show_database_water_mark_with_http_info(self, request):
-        """提取数据水印
-
-        提取请求数据中水印内容
-
-        :param ShowDatabaseWaterMarkRequest request
-        :return: ShowDatabaseWaterMarkResponse
-        """
-
         all_params = ['show_database_water_mark_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -518,26 +484,21 @@ class DscAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_doc_watermark_async(self, request):
         """文档提取暗水印
 
         对已嵌入文字暗水印的WORD(.docx)，PPT(.pptx)，EXCEL(.xlsx)，PDF(.pdf)类型的文档进行文字暗水印提取，用户以formData的格式传入待提取水印的文件，DSC服务以JSON的格式返回从文档里提取的出的文字暗水印内容。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowDocWatermarkRequest request
-        :return: ShowDocWatermarkResponse
+        :param request: Request instance for ShowDocWatermark
+        :type request: :class:`huaweicloudsdkdsc.v1.ShowDocWatermarkRequest`
+        :rtype: :class:`huaweicloudsdkdsc.v1.ShowDocWatermarkResponse`
         """
         return self.show_doc_watermark_with_http_info(request)
 
     def show_doc_watermark_with_http_info(self, request):
-        """文档提取暗水印
-
-        对已嵌入文字暗水印的WORD(.docx)，PPT(.pptx)，EXCEL(.xlsx)，PDF(.pdf)类型的文档进行文字暗水印提取，用户以formData的格式传入待提取水印的文件，DSC服务以JSON的格式返回从文档里提取的出的文字暗水印内容。
-
-        :param ShowDocWatermarkRequest request
-        :return: ShowDocWatermarkResponse
-        """
-
         all_params = ['doc_type', 'file', 'file_password']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -587,26 +548,21 @@ class DscAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_doc_watermark_by_address_async(self, request):
         """文档提取暗水印（文档地址版本）
 
         支持对已嵌入文字暗水印的WORD(.docx)，PPT(.pptx)，EXCEL(.xlsx)，PDF(.pdf)类型的文档进行水印提取，用户传入待提取水印的文档地址（目前支持OBS），DSC服务以JSON的格式返回从文档里提取的出的文字暗水印内容。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowDocWatermarkByAddressRequest request
-        :return: ShowDocWatermarkByAddressResponse
+        :param request: Request instance for ShowDocWatermarkByAddress
+        :type request: :class:`huaweicloudsdkdsc.v1.ShowDocWatermarkByAddressRequest`
+        :rtype: :class:`huaweicloudsdkdsc.v1.ShowDocWatermarkByAddressResponse`
         """
         return self.show_doc_watermark_by_address_with_http_info(request)
 
     def show_doc_watermark_by_address_with_http_info(self, request):
-        """文档提取暗水印（文档地址版本）
-
-        支持对已嵌入文字暗水印的WORD(.docx)，PPT(.pptx)，EXCEL(.xlsx)，PDF(.pdf)类型的文档进行水印提取，用户传入待提取水印的文档地址（目前支持OBS），DSC服务以JSON的格式返回从文档里提取的出的文字暗水印内容。
-
-        :param ShowDocWatermarkByAddressRequest request
-        :return: ShowDocWatermarkByAddressResponse
-        """
-
         all_params = ['show_doc_watermark_by_address_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -650,26 +606,21 @@ class DscAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_image_watermark_async(self, request):
         """提取图片中的文字暗水印
 
         对已嵌入文字暗水印的图片进行水印提取，用户以formData的格式传入待提取水印的图片，DSC服务以JSON的格式返回从图片里提取的出的文字暗水印。目前支持的图片格式为：*.jpg, *.jpeg, *.jpe, *.png, *.bmp, *.dib, *.rle, *.tiff, *.tif, *.ppm, *.webp, *.tga, *.tpic, *.gif。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowImageWatermarkRequest request
-        :return: ShowImageWatermarkResponse
+        :param request: Request instance for ShowImageWatermark
+        :type request: :class:`huaweicloudsdkdsc.v1.ShowImageWatermarkRequest`
+        :rtype: :class:`huaweicloudsdkdsc.v1.ShowImageWatermarkResponse`
         """
         return self.show_image_watermark_with_http_info(request)
 
     def show_image_watermark_with_http_info(self, request):
-        """提取图片中的文字暗水印
-
-        对已嵌入文字暗水印的图片进行水印提取，用户以formData的格式传入待提取水印的图片，DSC服务以JSON的格式返回从图片里提取的出的文字暗水印。目前支持的图片格式为：*.jpg, *.jpeg, *.jpe, *.png, *.bmp, *.dib, *.rle, *.tiff, *.tif, *.ppm, *.webp, *.tga, *.tpic, *.gif。
-
-        :param ShowImageWatermarkRequest request
-        :return: ShowImageWatermarkResponse
-        """
-
         all_params = ['file', 'mark_len']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -717,26 +668,21 @@ class DscAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_image_watermark_by_address_async(self, request):
         """提取图片中的文字暗水印（文件地址版本）
 
         对指定存储地址信息（目前支持华为云OBS）的已嵌入文字暗水印的图片提取文字暗水印，支持的图片格式为：*.jpg, *.jpeg, *.jpe, *.png, *.bmp, *.dib, *.rle, *.tiff, *.tif, *.ppm, *.webp, *.tga, *.tpic, *.gif。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowImageWatermarkByAddressRequest request
-        :return: ShowImageWatermarkByAddressResponse
+        :param request: Request instance for ShowImageWatermarkByAddress
+        :type request: :class:`huaweicloudsdkdsc.v1.ShowImageWatermarkByAddressRequest`
+        :rtype: :class:`huaweicloudsdkdsc.v1.ShowImageWatermarkByAddressResponse`
         """
         return self.show_image_watermark_by_address_with_http_info(request)
 
     def show_image_watermark_by_address_with_http_info(self, request):
-        """提取图片中的文字暗水印（文件地址版本）
-
-        对指定存储地址信息（目前支持华为云OBS）的已嵌入文字暗水印的图片提取文字暗水印，支持的图片格式为：*.jpg, *.jpeg, *.jpe, *.png, *.bmp, *.dib, *.rle, *.tiff, *.tif, *.ppm, *.webp, *.tga, *.tpic, *.gif。
-
-        :param ShowImageWatermarkByAddressRequest request
-        :return: ShowImageWatermarkByAddressResponse
-        """
-
         all_params = ['show_image_watermark_by_address_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -780,26 +726,21 @@ class DscAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_image_watermark_with_image_async(self, request):
         """提取图片中的图片暗水印
 
         对已嵌入图片暗水印的图片进行水印提取，用户以formData的格式传入待提取水印的图片，DSC服务以图片二进制流的格式返回从图片里提取的出的图片暗水印。目前支持的图片格式为：*.jpg, *.jpeg, *.jpe, *.png, *.bmp, *.dib, *.rle, *.tiff, *.tif, *.ppm, *.webp, *.tga, *.tpic, *.gif。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowImageWatermarkWithImageRequest request
-        :return: ShowImageWatermarkWithImageResponse
+        :param request: Request instance for ShowImageWatermarkWithImage
+        :type request: :class:`huaweicloudsdkdsc.v1.ShowImageWatermarkWithImageRequest`
+        :rtype: :class:`huaweicloudsdkdsc.v1.ShowImageWatermarkWithImageResponse`
         """
         return self.show_image_watermark_with_image_with_http_info(request)
 
     def show_image_watermark_with_image_with_http_info(self, request):
-        """提取图片中的图片暗水印
-
-        对已嵌入图片暗水印的图片进行水印提取，用户以formData的格式传入待提取水印的图片，DSC服务以图片二进制流的格式返回从图片里提取的出的图片暗水印。目前支持的图片格式为：*.jpg, *.jpeg, *.jpe, *.png, *.bmp, *.dib, *.rle, *.tiff, *.tif, *.ppm, *.webp, *.tga, *.tpic, *.gif。
-
-        :param ShowImageWatermarkWithImageRequest request
-        :return: ShowImageWatermarkWithImageResponse
-        """
-
         all_params = ['file']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -845,26 +786,21 @@ class DscAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_image_watermark_with_image_by_address_async(self, request):
         """提取图片中的图片暗水印（文件地址版本）
 
         对指定存储地址信息（目前支持华为云OBS）的已嵌入图片暗水印的图片提取图片暗水印，提取出的水印图片将存放在用户指定的位置（目前支持华为云OBS），支持的图片格式为：*.jpg, *.jpeg, *.jpe, *.png, *.bmp, *.dib, *.rle, *.tiff, *.tif, *.ppm, *.webp, *.tga, *.tpic, *.gif。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowImageWatermarkWithImageByAddressRequest request
-        :return: ShowImageWatermarkWithImageByAddressResponse
+        :param request: Request instance for ShowImageWatermarkWithImageByAddress
+        :type request: :class:`huaweicloudsdkdsc.v1.ShowImageWatermarkWithImageByAddressRequest`
+        :rtype: :class:`huaweicloudsdkdsc.v1.ShowImageWatermarkWithImageByAddressResponse`
         """
         return self.show_image_watermark_with_image_by_address_with_http_info(request)
 
     def show_image_watermark_with_image_by_address_with_http_info(self, request):
-        """提取图片中的图片暗水印（文件地址版本）
-
-        对指定存储地址信息（目前支持华为云OBS）的已嵌入图片暗水印的图片提取图片暗水印，提取出的水印图片将存放在用户指定的位置（目前支持华为云OBS），支持的图片格式为：*.jpg, *.jpeg, *.jpe, *.png, *.bmp, *.dib, *.rle, *.tiff, *.tif, *.ppm, *.webp, *.tga, *.tpic, *.gif。
-
-        :param ShowImageWatermarkWithImageByAddressRequest request
-        :return: ShowImageWatermarkWithImageByAddressResponse
-        """
-
         all_params = ['show_image_watermark_with_image_by_address_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -908,26 +844,21 @@ class DscAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_scan_job_results_async(self, request):
         """查询指定任务扫描结果
 
         查询指定任务扫描结果
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowScanJobResultsRequest request
-        :return: ShowScanJobResultsResponse
+        :param request: Request instance for ShowScanJobResults
+        :type request: :class:`huaweicloudsdkdsc.v1.ShowScanJobResultsRequest`
+        :rtype: :class:`huaweicloudsdkdsc.v1.ShowScanJobResultsResponse`
         """
         return self.show_scan_job_results_with_http_info(request)
 
     def show_scan_job_results_with_http_info(self, request):
-        """查询指定任务扫描结果
-
-        查询指定任务扫描结果
-
-        :param ShowScanJobResultsRequest request
-        :return: ShowScanJobResultsResponse
-        """
-
         all_params = ['job_id', 'offset', 'limit', 'type', 'start_time', 'end_time']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -981,26 +912,21 @@ class DscAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_scan_jobs_async(self, request):
         """查询扫描任务列表
 
         查询扫描任务列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowScanJobsRequest request
-        :return: ShowScanJobsResponse
+        :param request: Request instance for ShowScanJobs
+        :type request: :class:`huaweicloudsdkdsc.v1.ShowScanJobsRequest`
+        :rtype: :class:`huaweicloudsdkdsc.v1.ShowScanJobsResponse`
         """
         return self.show_scan_jobs_with_http_info(request)
 
     def show_scan_jobs_with_http_info(self, request):
-        """查询扫描任务列表
-
-        查询扫描任务列表
-
-        :param ShowScanJobsRequest request
-        :return: ShowScanJobsResponse
-        """
-
         all_params = ['offset', 'limit', 'content', 'start_time', 'end_time']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1052,26 +978,21 @@ class DscAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_open_api_called_records_async(self, request):
         """查询OpenApi调用记录
 
         查询OpenApi调用记录
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowOpenApiCalledRecordsRequest request
-        :return: ShowOpenApiCalledRecordsResponse
+        :param request: Request instance for ShowOpenApiCalledRecords
+        :type request: :class:`huaweicloudsdkdsc.v1.ShowOpenApiCalledRecordsRequest`
+        :rtype: :class:`huaweicloudsdkdsc.v1.ShowOpenApiCalledRecordsResponse`
         """
         return self.show_open_api_called_records_with_http_info(request)
 
     def show_open_api_called_records_with_http_info(self, request):
-        """查询OpenApi调用记录
-
-        查询OpenApi调用记录
-
-        :param ShowOpenApiCalledRecordsRequest request
-        :return: ShowOpenApiCalledRecordsResponse
-        """
-
         all_params = ['limit', 'called_url', 'start_time', 'end_time', 'marker']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1122,7 +1043,6 @@ class DscAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VolumeDetailForTag:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -94,7 +93,77 @@ class VolumeDetailForTag:
     }
 
     def __init__(self, id=None, links=None, name=None, status=None, attachments=None, availability_zone=None, os_vol_host_attrhost=None, source_volid=None, snapshot_id=None, description=None, created_at=None, os_vol_tenant_attrtenant_id=None, volume_image_metadata=None, volume_type=None, size=None, consistencygroup_id=None, bootable=None, metadata=None, updated_at=None, encrypted=None, replication_status=None, os_volume_replicationextended_status=None, os_vol_mig_status_attrmigstat=None, os_vol_mig_status_attrname_id=None, shareable=None, user_id=None, service_type=None, multiattach=None, dedicated_storage_id=None, dedicated_storage_name=None, tags=None, wwn=None, enterprise_project_id=None):
-        """VolumeDetailForTag - a model defined in huaweicloud sdk"""
+        """VolumeDetailForTag
+
+        The model defined in huaweicloud sdk
+
+        :param id: 云硬盘的ID。
+        :type id: str
+        :param links: 云硬盘URI自描述信息。请参见 [links参数说明](https://support.huaweicloud.com/api-evs/evs_04_2006.html#evs_04_2006__evs_04_2010_li1077125119136)。
+        :type links: list[:class:`huaweicloudsdkevs.v2.Link`]
+        :param name: 云硬盘名称。
+        :type name: str
+        :param status: 云硬盘状态，请参见[云硬盘状态](https://support.huaweicloud.com/api-evs/evs_04_0040.html)。
+        :type status: str
+        :param attachments: 云硬盘的挂载信息，请参见•[attachments参数说明](https://support.huaweicloud.com/api-evs/evs_04_2006.html#evs_04_2006__evs_04_2010_li12430153610291)。
+        :type attachments: list[:class:`huaweicloudsdkevs.v2.Attachment`]
+        :param availability_zone: 云硬盘所属的AZ信息。
+        :type availability_zone: str
+        :param os_vol_host_attrhost: 预留属性。
+        :type os_vol_host_attrhost: str
+        :param source_volid: 源云硬盘ID，如果是从源云硬盘创建，则有值。  当前云硬盘服务不支持该字段。
+        :type source_volid: str
+        :param snapshot_id: 快照ID，如果是从快照创建，则有值。
+        :type snapshot_id: str
+        :param description: 云硬盘描述。
+        :type description: str
+        :param created_at: 云硬盘创建时间。 时间格式：UTC YYYY-MM-DDTHH:MM:SS.XXXXXX
+        :type created_at: str
+        :param os_vol_tenant_attrtenant_id: 云硬盘所属的租户ID。租户ID就是项目ID。
+        :type os_vol_tenant_attrtenant_id: str
+        :param volume_image_metadata: 云硬盘镜像的元数据。 &gt; 说明： &gt;  &gt; 关于“volume_image_metadata”字段的详细说明，具体请参见：\&quot;[查询镜像详情](https://support.huaweicloud.com/api-ims/ims_03_0703.html)\&quot;。
+        :type volume_image_metadata: dict(str, object)
+        :param volume_type: 云硬盘类型。 目前支持“SSD”，“SAS”和“SATA”三种。 “SSD”为超高IO云硬盘 “SAS”为高IO云硬盘 “SATA”为普通IO云硬盘
+        :type volume_type: str
+        :param size: 云硬盘大小，单位为GB。
+        :type size: int
+        :param consistencygroup_id: 预留属性。
+        :type consistencygroup_id: str
+        :param bootable: 是否为启动云硬盘。 true：表示为启动云硬盘。 false：表示为非启动云硬盘。
+        :type bootable: str
+        :param metadata: 
+        :type metadata: :class:`huaweicloudsdkevs.v2.VolumeMetadata`
+        :param updated_at: 云硬盘更新时间。 时间格式：UTC YYYY-MM-DDTHH:MM:SS.XXXXXX
+        :type updated_at: str
+        :param encrypted: 当前云硬盘服务不支持该字段。
+        :type encrypted: bool
+        :param replication_status: 预留属性。
+        :type replication_status: str
+        :param os_volume_replicationextended_status: 预留属性。
+        :type os_volume_replicationextended_status: str
+        :param os_vol_mig_status_attrmigstat: 预留属性。
+        :type os_vol_mig_status_attrmigstat: str
+        :param os_vol_mig_status_attrname_id: 预留属性。
+        :type os_vol_mig_status_attrname_id: str
+        :param shareable: 是否为共享云硬盘。true为共享盘，false为普通云硬盘。 该字段已经废弃，请使用multiattach。
+        :type shareable: bool
+        :param user_id: 预留属性。
+        :type user_id: str
+        :param service_type: 服务类型，结果为EVS、DSS、DESS。
+        :type service_type: str
+        :param multiattach: 是否为共享云硬盘。
+        :type multiattach: bool
+        :param dedicated_storage_id: 云硬盘所属的专属存储池ID。
+        :type dedicated_storage_id: str
+        :param dedicated_storage_name: 云硬盘所属的专属存储池的名称。
+        :type dedicated_storage_name: str
+        :param tags: 云硬盘的标签。 如果云硬盘有标签，则会有该字段，否则该字段为空。
+        :type tags: dict(str, str)
+        :param wwn: 云硬盘挂载时的唯一标识。
+        :type wwn: str
+        :param enterprise_project_id: 云硬盘上绑定的企业项目ID。 &gt; 说明： &gt;  &gt; 关于企业项目ID的获取及企业项目特性的详细信息，请参见：\&quot;[企业管理用户指南](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0123692049.html)\&quot;。
+        :type enterprise_project_id: str
+        """
         
         
 
@@ -192,7 +261,7 @@ class VolumeDetailForTag:
         云硬盘的ID。
 
         :param id: The id of this VolumeDetailForTag.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -203,7 +272,7 @@ class VolumeDetailForTag:
         云硬盘URI自描述信息。请参见 [links参数说明](https://support.huaweicloud.com/api-evs/evs_04_2006.html#evs_04_2006__evs_04_2010_li1077125119136)。
 
         :return: The links of this VolumeDetailForTag.
-        :rtype: list[Link]
+        :rtype: list[:class:`huaweicloudsdkevs.v2.Link`]
         """
         return self._links
 
@@ -214,7 +283,7 @@ class VolumeDetailForTag:
         云硬盘URI自描述信息。请参见 [links参数说明](https://support.huaweicloud.com/api-evs/evs_04_2006.html#evs_04_2006__evs_04_2010_li1077125119136)。
 
         :param links: The links of this VolumeDetailForTag.
-        :type: list[Link]
+        :type links: list[:class:`huaweicloudsdkevs.v2.Link`]
         """
         self._links = links
 
@@ -236,7 +305,7 @@ class VolumeDetailForTag:
         云硬盘名称。
 
         :param name: The name of this VolumeDetailForTag.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -258,7 +327,7 @@ class VolumeDetailForTag:
         云硬盘状态，请参见[云硬盘状态](https://support.huaweicloud.com/api-evs/evs_04_0040.html)。
 
         :param status: The status of this VolumeDetailForTag.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -269,7 +338,7 @@ class VolumeDetailForTag:
         云硬盘的挂载信息，请参见•[attachments参数说明](https://support.huaweicloud.com/api-evs/evs_04_2006.html#evs_04_2006__evs_04_2010_li12430153610291)。
 
         :return: The attachments of this VolumeDetailForTag.
-        :rtype: list[Attachment]
+        :rtype: list[:class:`huaweicloudsdkevs.v2.Attachment`]
         """
         return self._attachments
 
@@ -280,7 +349,7 @@ class VolumeDetailForTag:
         云硬盘的挂载信息，请参见•[attachments参数说明](https://support.huaweicloud.com/api-evs/evs_04_2006.html#evs_04_2006__evs_04_2010_li12430153610291)。
 
         :param attachments: The attachments of this VolumeDetailForTag.
-        :type: list[Attachment]
+        :type attachments: list[:class:`huaweicloudsdkevs.v2.Attachment`]
         """
         self._attachments = attachments
 
@@ -302,7 +371,7 @@ class VolumeDetailForTag:
         云硬盘所属的AZ信息。
 
         :param availability_zone: The availability_zone of this VolumeDetailForTag.
-        :type: str
+        :type availability_zone: str
         """
         self._availability_zone = availability_zone
 
@@ -324,7 +393,7 @@ class VolumeDetailForTag:
         预留属性。
 
         :param os_vol_host_attrhost: The os_vol_host_attrhost of this VolumeDetailForTag.
-        :type: str
+        :type os_vol_host_attrhost: str
         """
         self._os_vol_host_attrhost = os_vol_host_attrhost
 
@@ -346,7 +415,7 @@ class VolumeDetailForTag:
         源云硬盘ID，如果是从源云硬盘创建，则有值。  当前云硬盘服务不支持该字段。
 
         :param source_volid: The source_volid of this VolumeDetailForTag.
-        :type: str
+        :type source_volid: str
         """
         self._source_volid = source_volid
 
@@ -368,7 +437,7 @@ class VolumeDetailForTag:
         快照ID，如果是从快照创建，则有值。
 
         :param snapshot_id: The snapshot_id of this VolumeDetailForTag.
-        :type: str
+        :type snapshot_id: str
         """
         self._snapshot_id = snapshot_id
 
@@ -390,7 +459,7 @@ class VolumeDetailForTag:
         云硬盘描述。
 
         :param description: The description of this VolumeDetailForTag.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -412,7 +481,7 @@ class VolumeDetailForTag:
         云硬盘创建时间。 时间格式：UTC YYYY-MM-DDTHH:MM:SS.XXXXXX
 
         :param created_at: The created_at of this VolumeDetailForTag.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -434,7 +503,7 @@ class VolumeDetailForTag:
         云硬盘所属的租户ID。租户ID就是项目ID。
 
         :param os_vol_tenant_attrtenant_id: The os_vol_tenant_attrtenant_id of this VolumeDetailForTag.
-        :type: str
+        :type os_vol_tenant_attrtenant_id: str
         """
         self._os_vol_tenant_attrtenant_id = os_vol_tenant_attrtenant_id
 
@@ -456,7 +525,7 @@ class VolumeDetailForTag:
         云硬盘镜像的元数据。 > 说明： >  > 关于“volume_image_metadata”字段的详细说明，具体请参见：\"[查询镜像详情](https://support.huaweicloud.com/api-ims/ims_03_0703.html)\"。
 
         :param volume_image_metadata: The volume_image_metadata of this VolumeDetailForTag.
-        :type: dict(str, object)
+        :type volume_image_metadata: dict(str, object)
         """
         self._volume_image_metadata = volume_image_metadata
 
@@ -478,7 +547,7 @@ class VolumeDetailForTag:
         云硬盘类型。 目前支持“SSD”，“SAS”和“SATA”三种。 “SSD”为超高IO云硬盘 “SAS”为高IO云硬盘 “SATA”为普通IO云硬盘
 
         :param volume_type: The volume_type of this VolumeDetailForTag.
-        :type: str
+        :type volume_type: str
         """
         self._volume_type = volume_type
 
@@ -500,7 +569,7 @@ class VolumeDetailForTag:
         云硬盘大小，单位为GB。
 
         :param size: The size of this VolumeDetailForTag.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -522,7 +591,7 @@ class VolumeDetailForTag:
         预留属性。
 
         :param consistencygroup_id: The consistencygroup_id of this VolumeDetailForTag.
-        :type: str
+        :type consistencygroup_id: str
         """
         self._consistencygroup_id = consistencygroup_id
 
@@ -544,7 +613,7 @@ class VolumeDetailForTag:
         是否为启动云硬盘。 true：表示为启动云硬盘。 false：表示为非启动云硬盘。
 
         :param bootable: The bootable of this VolumeDetailForTag.
-        :type: str
+        :type bootable: str
         """
         self._bootable = bootable
 
@@ -554,7 +623,7 @@ class VolumeDetailForTag:
 
 
         :return: The metadata of this VolumeDetailForTag.
-        :rtype: VolumeMetadata
+        :rtype: :class:`huaweicloudsdkevs.v2.VolumeMetadata`
         """
         return self._metadata
 
@@ -564,7 +633,7 @@ class VolumeDetailForTag:
 
 
         :param metadata: The metadata of this VolumeDetailForTag.
-        :type: VolumeMetadata
+        :type metadata: :class:`huaweicloudsdkevs.v2.VolumeMetadata`
         """
         self._metadata = metadata
 
@@ -586,7 +655,7 @@ class VolumeDetailForTag:
         云硬盘更新时间。 时间格式：UTC YYYY-MM-DDTHH:MM:SS.XXXXXX
 
         :param updated_at: The updated_at of this VolumeDetailForTag.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 
@@ -608,7 +677,7 @@ class VolumeDetailForTag:
         当前云硬盘服务不支持该字段。
 
         :param encrypted: The encrypted of this VolumeDetailForTag.
-        :type: bool
+        :type encrypted: bool
         """
         self._encrypted = encrypted
 
@@ -630,7 +699,7 @@ class VolumeDetailForTag:
         预留属性。
 
         :param replication_status: The replication_status of this VolumeDetailForTag.
-        :type: str
+        :type replication_status: str
         """
         self._replication_status = replication_status
 
@@ -652,7 +721,7 @@ class VolumeDetailForTag:
         预留属性。
 
         :param os_volume_replicationextended_status: The os_volume_replicationextended_status of this VolumeDetailForTag.
-        :type: str
+        :type os_volume_replicationextended_status: str
         """
         self._os_volume_replicationextended_status = os_volume_replicationextended_status
 
@@ -674,7 +743,7 @@ class VolumeDetailForTag:
         预留属性。
 
         :param os_vol_mig_status_attrmigstat: The os_vol_mig_status_attrmigstat of this VolumeDetailForTag.
-        :type: str
+        :type os_vol_mig_status_attrmigstat: str
         """
         self._os_vol_mig_status_attrmigstat = os_vol_mig_status_attrmigstat
 
@@ -696,7 +765,7 @@ class VolumeDetailForTag:
         预留属性。
 
         :param os_vol_mig_status_attrname_id: The os_vol_mig_status_attrname_id of this VolumeDetailForTag.
-        :type: str
+        :type os_vol_mig_status_attrname_id: str
         """
         self._os_vol_mig_status_attrname_id = os_vol_mig_status_attrname_id
 
@@ -718,7 +787,7 @@ class VolumeDetailForTag:
         是否为共享云硬盘。true为共享盘，false为普通云硬盘。 该字段已经废弃，请使用multiattach。
 
         :param shareable: The shareable of this VolumeDetailForTag.
-        :type: bool
+        :type shareable: bool
         """
         self._shareable = shareable
 
@@ -740,7 +809,7 @@ class VolumeDetailForTag:
         预留属性。
 
         :param user_id: The user_id of this VolumeDetailForTag.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -762,7 +831,7 @@ class VolumeDetailForTag:
         服务类型，结果为EVS、DSS、DESS。
 
         :param service_type: The service_type of this VolumeDetailForTag.
-        :type: str
+        :type service_type: str
         """
         self._service_type = service_type
 
@@ -784,7 +853,7 @@ class VolumeDetailForTag:
         是否为共享云硬盘。
 
         :param multiattach: The multiattach of this VolumeDetailForTag.
-        :type: bool
+        :type multiattach: bool
         """
         self._multiattach = multiattach
 
@@ -806,7 +875,7 @@ class VolumeDetailForTag:
         云硬盘所属的专属存储池ID。
 
         :param dedicated_storage_id: The dedicated_storage_id of this VolumeDetailForTag.
-        :type: str
+        :type dedicated_storage_id: str
         """
         self._dedicated_storage_id = dedicated_storage_id
 
@@ -828,7 +897,7 @@ class VolumeDetailForTag:
         云硬盘所属的专属存储池的名称。
 
         :param dedicated_storage_name: The dedicated_storage_name of this VolumeDetailForTag.
-        :type: str
+        :type dedicated_storage_name: str
         """
         self._dedicated_storage_name = dedicated_storage_name
 
@@ -850,7 +919,7 @@ class VolumeDetailForTag:
         云硬盘的标签。 如果云硬盘有标签，则会有该字段，否则该字段为空。
 
         :param tags: The tags of this VolumeDetailForTag.
-        :type: dict(str, str)
+        :type tags: dict(str, str)
         """
         self._tags = tags
 
@@ -872,7 +941,7 @@ class VolumeDetailForTag:
         云硬盘挂载时的唯一标识。
 
         :param wwn: The wwn of this VolumeDetailForTag.
-        :type: str
+        :type wwn: str
         """
         self._wwn = wwn
 
@@ -894,7 +963,7 @@ class VolumeDetailForTag:
         云硬盘上绑定的企业项目ID。 > 说明： >  > 关于企业项目ID的获取及企业项目特性的详细信息，请参见：\"[企业管理用户指南](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0123692049.html)\"。
 
         :param enterprise_project_id: The enterprise_project_id of this VolumeDetailForTag.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 

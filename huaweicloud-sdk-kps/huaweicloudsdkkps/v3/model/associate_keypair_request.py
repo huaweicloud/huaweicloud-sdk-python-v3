@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AssociateKeypairRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class AssociateKeypairRequest:
     }
 
     def __init__(self, body=None):
-        """AssociateKeypairRequest - a model defined in huaweicloud sdk"""
+        """AssociateKeypairRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the AssociateKeypairRequest
+        :type body: :class:`huaweicloudsdkkps.v3.AssociateKeypairRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class AssociateKeypairRequest:
 
 
         :return: The body of this AssociateKeypairRequest.
-        :rtype: AssociateKeypairRequestBody
+        :rtype: :class:`huaweicloudsdkkps.v3.AssociateKeypairRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class AssociateKeypairRequest:
 
 
         :param body: The body of this AssociateKeypairRequest.
-        :type: AssociateKeypairRequestBody
+        :type body: :class:`huaweicloudsdkkps.v3.AssociateKeypairRequestBody`
         """
         self._body = body
 

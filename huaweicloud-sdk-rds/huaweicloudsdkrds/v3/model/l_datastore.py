@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LDatastore:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class LDatastore:
     }
 
     def __init__(self, id=None, name=None):
-        """LDatastore - a model defined in huaweicloud sdk"""
+        """LDatastore
+
+        The model defined in huaweicloud sdk
+
+        :param id: 数据库版本ID。
+        :type id: str
+        :param name: 数据库版本号。 - 对于MySQL引擎可以返回小版本号，例如MySQL 5.6.51版本，将返回5.6.51。 - 对于PostgreSQL和SQL Server引擎，只返回两位数的大版本号，例如PostgreSQL 9.6.X版本，仅返回9.6。
+        :type name: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class LDatastore:
         数据库版本ID。
 
         :param id: The id of this LDatastore.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -83,7 +90,7 @@ class LDatastore:
         数据库版本号。 - 对于MySQL引擎可以返回小版本号，例如MySQL 5.6.51版本，将返回5.6.51。 - 对于PostgreSQL和SQL Server引擎，只返回两位数的大版本号，例如PostgreSQL 9.6.X版本，仅返回9.6。
 
         :param name: The name of this LDatastore.
-        :type: str
+        :type name: str
         """
         self._name = name
 

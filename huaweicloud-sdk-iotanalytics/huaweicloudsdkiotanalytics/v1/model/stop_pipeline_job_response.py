@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StopPipelineJobResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class StopPipelineJobResponse(SdkResponse):
     }
 
     def __init__(self, pipeline_id=None):
-        """StopPipelineJobResponse - a model defined in huaweicloud sdk"""
+        """StopPipelineJobResponse
+
+        The model defined in huaweicloud sdk
+
+        :param pipeline_id: 管道ID
+        :type pipeline_id: str
+        """
         
         super(StopPipelineJobResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class StopPipelineJobResponse(SdkResponse):
         管道ID
 
         :param pipeline_id: The pipeline_id of this StopPipelineJobResponse.
-        :type: str
+        :type pipeline_id: str
         """
         self._pipeline_id = pipeline_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AgencyAuthIdentity:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class AgencyAuthIdentity:
     }
 
     def __init__(self, methods=None, assume_role=None, policy=None):
-        """AgencyAuthIdentity - a model defined in huaweicloud sdk"""
+        """AgencyAuthIdentity
+
+        The model defined in huaweicloud sdk
+
+        :param methods: 认证方法，该字段内容为[\&quot;assume_role\&quot;]。
+        :type methods: list[str]
+        :param assume_role: 
+        :type assume_role: :class:`huaweicloudsdkiam.v3.IdentityAssumerole`
+        :param policy: 
+        :type policy: :class:`huaweicloudsdkiam.v3.ServicePolicy`
+        """
         
         
 
@@ -66,7 +75,7 @@ class AgencyAuthIdentity:
         认证方法，该字段内容为[\"assume_role\"]。
 
         :param methods: The methods of this AgencyAuthIdentity.
-        :type: list[str]
+        :type methods: list[str]
         """
         self._methods = methods
 
@@ -76,7 +85,7 @@ class AgencyAuthIdentity:
 
 
         :return: The assume_role of this AgencyAuthIdentity.
-        :rtype: IdentityAssumerole
+        :rtype: :class:`huaweicloudsdkiam.v3.IdentityAssumerole`
         """
         return self._assume_role
 
@@ -86,7 +95,7 @@ class AgencyAuthIdentity:
 
 
         :param assume_role: The assume_role of this AgencyAuthIdentity.
-        :type: IdentityAssumerole
+        :type assume_role: :class:`huaweicloudsdkiam.v3.IdentityAssumerole`
         """
         self._assume_role = assume_role
 
@@ -96,7 +105,7 @@ class AgencyAuthIdentity:
 
 
         :return: The policy of this AgencyAuthIdentity.
-        :rtype: ServicePolicy
+        :rtype: :class:`huaweicloudsdkiam.v3.ServicePolicy`
         """
         return self._policy
 
@@ -106,7 +115,7 @@ class AgencyAuthIdentity:
 
 
         :param policy: The policy of this AgencyAuthIdentity.
-        :type: ServicePolicy
+        :type policy: :class:`huaweicloudsdkiam.v3.ServicePolicy`
         """
         self._policy = policy
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchUpdateSrcUserReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchUpdateSrcUserReq:
     }
 
     def __init__(self, jobs=None):
-        """BatchUpdateSrcUserReq - a model defined in huaweicloud sdk"""
+        """BatchUpdateSrcUserReq
+
+        The model defined in huaweicloud sdk
+
+        :param jobs: 批量更新迁移用户请求列表
+        :type jobs: list[:class:`huaweicloudsdkdrs.v3.UpdateUserReq`]
+        """
         
         
 
@@ -46,7 +51,7 @@ class BatchUpdateSrcUserReq:
         批量更新迁移用户请求列表
 
         :return: The jobs of this BatchUpdateSrcUserReq.
-        :rtype: list[UpdateUserReq]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.UpdateUserReq`]
         """
         return self._jobs
 
@@ -57,7 +62,7 @@ class BatchUpdateSrcUserReq:
         批量更新迁移用户请求列表
 
         :param jobs: The jobs of this BatchUpdateSrcUserReq.
-        :type: list[UpdateUserReq]
+        :type jobs: list[:class:`huaweicloudsdkdrs.v3.UpdateUserReq`]
         """
         self._jobs = jobs
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StartWorkflowExecutionResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class StartWorkflowExecutionResponse(SdkResponse):
     }
 
     def __init__(self, execution_id=None):
-        """StartWorkflowExecutionResponse - a model defined in huaweicloud sdk"""
+        """StartWorkflowExecutionResponse
+
+        The model defined in huaweicloud sdk
+
+        :param execution_id: 错误码
+        :type execution_id: str
+        """
         
         super(StartWorkflowExecutionResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class StartWorkflowExecutionResponse(SdkResponse):
         错误码
 
         :param execution_id: The execution_id of this StartWorkflowExecutionResponse.
-        :type: str
+        :type execution_id: str
         """
         self._execution_id = execution_id
 

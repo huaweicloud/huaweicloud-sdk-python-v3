@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListUsageTypesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListUsageTypesResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, usage_types=None):
-        """ListUsageTypesResponse - a model defined in huaweicloud sdk"""
+        """ListUsageTypesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total_count: 总数。
+        :type total_count: int
+        :param usage_types: 使用量类型列表，具体请参见表3。
+        :type usage_types: list[:class:`huaweicloudsdkbss.v2.UsageType`]
+        """
         
         super(ListUsageTypesResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListUsageTypesResponse(SdkResponse):
         总数。
 
         :param total_count: The total_count of this ListUsageTypesResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 
@@ -74,7 +81,7 @@ class ListUsageTypesResponse(SdkResponse):
         使用量类型列表，具体请参见表3。
 
         :return: The usage_types of this ListUsageTypesResponse.
-        :rtype: list[UsageType]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.UsageType`]
         """
         return self._usage_types
 
@@ -85,7 +92,7 @@ class ListUsageTypesResponse(SdkResponse):
         使用量类型列表，具体请参见表3。
 
         :param usage_types: The usage_types of this ListUsageTypesResponse.
-        :type: list[UsageType]
+        :type usage_types: list[:class:`huaweicloudsdkbss.v2.UsageType`]
         """
         self._usage_types = usage_types
 

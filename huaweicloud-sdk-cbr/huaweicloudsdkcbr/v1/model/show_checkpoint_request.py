@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowCheckpointRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowCheckpointRequest:
     }
 
     def __init__(self, checkpoint_id=None):
-        """ShowCheckpointRequest - a model defined in huaweicloud sdk"""
+        """ShowCheckpointRequest
+
+        The model defined in huaweicloud sdk
+
+        :param checkpoint_id: 还原点ID
+        :type checkpoint_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowCheckpointRequest:
         还原点ID
 
         :param checkpoint_id: The checkpoint_id of this ShowCheckpointRequest.
-        :type: str
+        :type checkpoint_id: str
         """
         self._checkpoint_id = checkpoint_id
 

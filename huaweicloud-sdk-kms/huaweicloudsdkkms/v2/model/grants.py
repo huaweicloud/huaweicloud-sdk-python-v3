@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Grants:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class Grants:
     }
 
     def __init__(self, key_id=None, grant_id=None, grantee_principal=None, grantee_principal_type=None, operations=None, issuing_principal=None, creation_date=None, name=None, retiring_principal=None):
-        """Grants - a model defined in huaweicloud sdk"""
+        """Grants
+
+        The model defined in huaweicloud sdk
+
+        :param key_id: 密钥ID。
+        :type key_id: str
+        :param grant_id: 授权ID，64字节。
+        :type grant_id: str
+        :param grantee_principal: 被授权用户ID，1~64字节，满足正则匹配“^[a-zA-Z0-9]{1，64}$”。 例如：0d0466b00d0466b00d0466b00d0466b0
+        :type grantee_principal: str
+        :param grantee_principal_type: 授权类型。 有效值：“user”，“domain”。
+        :type grantee_principal_type: str
+        :param operations: 授权允许的操作列表。 有效的值：“create-datakey”，“create-datakey-without-plaintext”，“encrypt-datakey”，“decrypt-datakey”，“describe-key”，“create-grant”，“retire-grant”，“encrypt-data”，“decrypt-data”。 有效值不能仅为“create-grant”。
+        :type operations: list[str]
+        :param issuing_principal: 创建授权用户ID，1~64字节，满足正则匹配“^[a-zA-Z0-9]{1，64}$”。 例如：0d0466b00d0466b00d0466b00d0466b0
+        :type issuing_principal: str
+        :param creation_date: 创建时间，时间戳，即从1970年1月1日至该时间的总秒数。 例如：1497341531000
+        :type creation_date: str
+        :param name: 授权名字，取值1到255字符，满足正则匹配“^[a-zA-Z0-9:/_-]{1,255}$”。
+        :type name: str
+        :param retiring_principal: 可退役授权的用户ID，1~64字节，满足正则匹配“^[a-zA-Z0-9]{1，64}$”。 例如：0d0466b00d0466b00d0466b00d0466b0
+        :type retiring_principal: str
+        """
         
         
 
@@ -98,7 +119,7 @@ class Grants:
         密钥ID。
 
         :param key_id: The key_id of this Grants.
-        :type: str
+        :type key_id: str
         """
         self._key_id = key_id
 
@@ -120,7 +141,7 @@ class Grants:
         授权ID，64字节。
 
         :param grant_id: The grant_id of this Grants.
-        :type: str
+        :type grant_id: str
         """
         self._grant_id = grant_id
 
@@ -142,7 +163,7 @@ class Grants:
         被授权用户ID，1~64字节，满足正则匹配“^[a-zA-Z0-9]{1，64}$”。 例如：0d0466b00d0466b00d0466b00d0466b0
 
         :param grantee_principal: The grantee_principal of this Grants.
-        :type: str
+        :type grantee_principal: str
         """
         self._grantee_principal = grantee_principal
 
@@ -164,7 +185,7 @@ class Grants:
         授权类型。 有效值：“user”，“domain”。
 
         :param grantee_principal_type: The grantee_principal_type of this Grants.
-        :type: str
+        :type grantee_principal_type: str
         """
         self._grantee_principal_type = grantee_principal_type
 
@@ -186,7 +207,7 @@ class Grants:
         授权允许的操作列表。 有效的值：“create-datakey”，“create-datakey-without-plaintext”，“encrypt-datakey”，“decrypt-datakey”，“describe-key”，“create-grant”，“retire-grant”，“encrypt-data”，“decrypt-data”。 有效值不能仅为“create-grant”。
 
         :param operations: The operations of this Grants.
-        :type: list[str]
+        :type operations: list[str]
         """
         self._operations = operations
 
@@ -208,7 +229,7 @@ class Grants:
         创建授权用户ID，1~64字节，满足正则匹配“^[a-zA-Z0-9]{1，64}$”。 例如：0d0466b00d0466b00d0466b00d0466b0
 
         :param issuing_principal: The issuing_principal of this Grants.
-        :type: str
+        :type issuing_principal: str
         """
         self._issuing_principal = issuing_principal
 
@@ -230,7 +251,7 @@ class Grants:
         创建时间，时间戳，即从1970年1月1日至该时间的总秒数。 例如：1497341531000
 
         :param creation_date: The creation_date of this Grants.
-        :type: str
+        :type creation_date: str
         """
         self._creation_date = creation_date
 
@@ -252,7 +273,7 @@ class Grants:
         授权名字，取值1到255字符，满足正则匹配“^[a-zA-Z0-9:/_-]{1,255}$”。
 
         :param name: The name of this Grants.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -274,7 +295,7 @@ class Grants:
         可退役授权的用户ID，1~64字节，满足正则匹配“^[a-zA-Z0-9]{1，64}$”。 例如：0d0466b00d0466b00d0466b00d0466b0
 
         :param retiring_principal: The retiring_principal of this Grants.
-        :type: str
+        :type retiring_principal: str
         """
         self._retiring_principal = retiring_principal
 

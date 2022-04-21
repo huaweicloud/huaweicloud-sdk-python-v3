@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FileContentInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class FileContentInfo:
     }
 
     def __init__(self, file_name=None, file_path=None, size=None, encoding=None, content_sha256=None, ref=None, blob_id=None, commit_id=None, last_commit_id=None, content=None):
-        """FileContentInfo - a model defined in huaweicloud sdk"""
+        """FileContentInfo
+
+        The model defined in huaweicloud sdk
+
+        :param file_name: 文件名
+        :type file_name: str
+        :param file_path: 文件路径
+        :type file_path: str
+        :param size: 文件大小
+        :type size: int
+        :param encoding: 文件编码
+        :type encoding: str
+        :param content_sha256: sha256编码的文件内容
+        :type content_sha256: str
+        :param ref: 分支名
+        :type ref: str
+        :param blob_id: blob sha
+        :type blob_id: str
+        :param commit_id: 提交对应的SHA id
+        :type commit_id: str
+        :param last_commit_id: 最后一个提交对应的SHA id
+        :type last_commit_id: str
+        :param content: base64编码的文件内容
+        :type content: str
+        """
         
         
 
@@ -103,7 +126,7 @@ class FileContentInfo:
         文件名
 
         :param file_name: The file_name of this FileContentInfo.
-        :type: str
+        :type file_name: str
         """
         self._file_name = file_name
 
@@ -125,7 +148,7 @@ class FileContentInfo:
         文件路径
 
         :param file_path: The file_path of this FileContentInfo.
-        :type: str
+        :type file_path: str
         """
         self._file_path = file_path
 
@@ -147,7 +170,7 @@ class FileContentInfo:
         文件大小
 
         :param size: The size of this FileContentInfo.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -169,7 +192,7 @@ class FileContentInfo:
         文件编码
 
         :param encoding: The encoding of this FileContentInfo.
-        :type: str
+        :type encoding: str
         """
         self._encoding = encoding
 
@@ -191,7 +214,7 @@ class FileContentInfo:
         sha256编码的文件内容
 
         :param content_sha256: The content_sha256 of this FileContentInfo.
-        :type: str
+        :type content_sha256: str
         """
         self._content_sha256 = content_sha256
 
@@ -213,7 +236,7 @@ class FileContentInfo:
         分支名
 
         :param ref: The ref of this FileContentInfo.
-        :type: str
+        :type ref: str
         """
         self._ref = ref
 
@@ -235,7 +258,7 @@ class FileContentInfo:
         blob sha
 
         :param blob_id: The blob_id of this FileContentInfo.
-        :type: str
+        :type blob_id: str
         """
         self._blob_id = blob_id
 
@@ -257,7 +280,7 @@ class FileContentInfo:
         提交对应的SHA id
 
         :param commit_id: The commit_id of this FileContentInfo.
-        :type: str
+        :type commit_id: str
         """
         self._commit_id = commit_id
 
@@ -279,7 +302,7 @@ class FileContentInfo:
         最后一个提交对应的SHA id
 
         :param last_commit_id: The last_commit_id of this FileContentInfo.
-        :type: str
+        :type last_commit_id: str
         """
         self._last_commit_id = last_commit_id
 
@@ -301,7 +324,7 @@ class FileContentInfo:
         base64编码的文件内容
 
         :param content: The content of this FileContentInfo.
-        :type: str
+        :type content: str
         """
         self._content = content
 

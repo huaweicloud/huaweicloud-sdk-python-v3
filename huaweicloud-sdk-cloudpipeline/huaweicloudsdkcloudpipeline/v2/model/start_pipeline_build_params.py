@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StartPipelineBuildParams:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class StartPipelineBuildParams:
     }
 
     def __init__(self, name=None, value=None):
-        """StartPipelineBuildParams - a model defined in huaweicloud sdk"""
+        """StartPipelineBuildParams
+
+        The model defined in huaweicloud sdk
+
+        :param name: 构建参数名
+        :type name: str
+        :param value: 构建参数值，最大长度为8192
+        :type value: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class StartPipelineBuildParams:
         构建参数名
 
         :param name: The name of this StartPipelineBuildParams.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -83,7 +90,7 @@ class StartPipelineBuildParams:
         构建参数值，最大长度为8192
 
         :param value: The value of this StartPipelineBuildParams.
-        :type: str
+        :type value: str
         """
         self._value = value
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateMigrationTaskRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateMigrationTaskRequest:
     }
 
     def __init__(self, body=None):
-        """CreateMigrationTaskRequest - a model defined in huaweicloud sdk"""
+        """CreateMigrationTaskRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateMigrationTaskRequest
+        :type body: :class:`huaweicloudsdkdcs.v2.CreateMigrationTaskBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateMigrationTaskRequest:
 
 
         :return: The body of this CreateMigrationTaskRequest.
-        :rtype: CreateMigrationTaskBody
+        :rtype: :class:`huaweicloudsdkdcs.v2.CreateMigrationTaskBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateMigrationTaskRequest:
 
 
         :param body: The body of this CreateMigrationTaskRequest.
-        :type: CreateMigrationTaskBody
+        :type body: :class:`huaweicloudsdkdcs.v2.CreateMigrationTaskBody`
         """
         self._body = body
 

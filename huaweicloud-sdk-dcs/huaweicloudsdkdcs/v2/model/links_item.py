@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LinksItem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class LinksItem:
     }
 
     def __init__(self, file_name=None, link=None):
-        """LinksItem - a model defined in huaweicloud sdk"""
+        """LinksItem
+
+        The model defined in huaweicloud sdk
+
+        :param file_name: 备份文件名称。
+        :type file_name: str
+        :param link: 备份文件下载链接地址。
+        :type link: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class LinksItem:
         备份文件名称。
 
         :param file_name: The file_name of this LinksItem.
-        :type: str
+        :type file_name: str
         """
         self._file_name = file_name
 
@@ -85,7 +92,7 @@ class LinksItem:
         备份文件下载链接地址。
 
         :param link: The link of this LinksItem.
-        :type: str
+        :type link: str
         """
         self._link = link
 

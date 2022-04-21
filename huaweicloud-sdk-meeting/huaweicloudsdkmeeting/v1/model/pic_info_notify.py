@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PicInfoNotify:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class PicInfoNotify:
     }
 
     def __init__(self, index=None, id=None, share=None):
-        """PicInfoNotify - a model defined in huaweicloud sdk"""
+        """PicInfoNotify
+
+        The model defined in huaweicloud sdk
+
+        :param index: 多画面中每个画面的编号，编号从1开始
+        :type index: int
+        :param id: 每个画面中会话标识，即callNumber。
+        :type id: list[str]
+        :param share: 是否为辅流 0： 不是辅流 1： 是辅流
+        :type share: int
+        """
         
         
 
@@ -68,7 +77,7 @@ class PicInfoNotify:
         多画面中每个画面的编号，编号从1开始
 
         :param index: The index of this PicInfoNotify.
-        :type: int
+        :type index: int
         """
         self._index = index
 
@@ -90,7 +99,7 @@ class PicInfoNotify:
         每个画面中会话标识，即callNumber。
 
         :param id: The id of this PicInfoNotify.
-        :type: list[str]
+        :type id: list[str]
         """
         self._id = id
 
@@ -112,7 +121,7 @@ class PicInfoNotify:
         是否为辅流 0： 不是辅流 1： 是辅流
 
         :param share: The share of this PicInfoNotify.
-        :type: int
+        :type share: int
         """
         self._share = share
 

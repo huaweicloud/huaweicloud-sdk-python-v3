@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchDeleteVolumeTagsRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchDeleteVolumeTagsRequestBody:
     }
 
     def __init__(self, action=None, tags=None):
-        """BatchDeleteVolumeTagsRequestBody - a model defined in huaweicloud sdk"""
+        """BatchDeleteVolumeTagsRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param action: 操作标识，当前支持的取值如下：  删除标签：delete
+        :type action: str
+        :param tags: 标签列表。
+        :type tags: list[:class:`huaweicloudsdkevs.v2.DeleteTagsOption`]
+        """
         
         
 
@@ -61,7 +68,7 @@ class BatchDeleteVolumeTagsRequestBody:
         操作标识，当前支持的取值如下：  删除标签：delete
 
         :param action: The action of this BatchDeleteVolumeTagsRequestBody.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -72,7 +79,7 @@ class BatchDeleteVolumeTagsRequestBody:
         标签列表。
 
         :return: The tags of this BatchDeleteVolumeTagsRequestBody.
-        :rtype: list[DeleteTagsOption]
+        :rtype: list[:class:`huaweicloudsdkevs.v2.DeleteTagsOption`]
         """
         return self._tags
 
@@ -83,7 +90,7 @@ class BatchDeleteVolumeTagsRequestBody:
         标签列表。
 
         :param tags: The tags of this BatchDeleteVolumeTagsRequestBody.
-        :type: list[DeleteTagsOption]
+        :type tags: list[:class:`huaweicloudsdkevs.v2.DeleteTagsOption`]
         """
         self._tags = tags
 

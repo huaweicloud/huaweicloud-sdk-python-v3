@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowGaussMySqlBackupListRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ShowGaussMySqlBackupListRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, backup_id=None, backup_type=None, offset=None, limit=None, begin_time=None, end_time=None):
-        """ShowGaussMySqlBackupListRequest - a model defined in huaweicloud sdk"""
+        """ShowGaussMySqlBackupListRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言
+        :type x_language: str
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param backup_id: 备份ID。
+        :type backup_id: str
+        :param backup_type: 备份类型，取值：   \&quot;auto\&quot;：自动全量备份   \&quot;manual\&quot;：手动全量备份
+        :type backup_type: str
+        :param offset: 索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
+        :type offset: str
+        :param limit: 查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
+        :type limit: str
+        :param begin_time: 查询开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        :type begin_time: str
+        :param end_time: 查询结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”，且大于查询开始时间。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        :type end_time: str
+        """
         
         
 
@@ -93,7 +112,7 @@ class ShowGaussMySqlBackupListRequest:
         语言
 
         :param x_language: The x_language of this ShowGaussMySqlBackupListRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -115,7 +134,7 @@ class ShowGaussMySqlBackupListRequest:
         实例ID。
 
         :param instance_id: The instance_id of this ShowGaussMySqlBackupListRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -137,7 +156,7 @@ class ShowGaussMySqlBackupListRequest:
         备份ID。
 
         :param backup_id: The backup_id of this ShowGaussMySqlBackupListRequest.
-        :type: str
+        :type backup_id: str
         """
         self._backup_id = backup_id
 
@@ -159,7 +178,7 @@ class ShowGaussMySqlBackupListRequest:
         备份类型，取值：   \"auto\"：自动全量备份   \"manual\"：手动全量备份
 
         :param backup_type: The backup_type of this ShowGaussMySqlBackupListRequest.
-        :type: str
+        :type backup_type: str
         """
         self._backup_type = backup_type
 
@@ -181,7 +200,7 @@ class ShowGaussMySqlBackupListRequest:
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
         :param offset: The offset of this ShowGaussMySqlBackupListRequest.
-        :type: str
+        :type offset: str
         """
         self._offset = offset
 
@@ -203,7 +222,7 @@ class ShowGaussMySqlBackupListRequest:
         查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
 
         :param limit: The limit of this ShowGaussMySqlBackupListRequest.
-        :type: str
+        :type limit: str
         """
         self._limit = limit
 
@@ -225,7 +244,7 @@ class ShowGaussMySqlBackupListRequest:
         查询开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
         :param begin_time: The begin_time of this ShowGaussMySqlBackupListRequest.
-        :type: str
+        :type begin_time: str
         """
         self._begin_time = begin_time
 
@@ -247,7 +266,7 @@ class ShowGaussMySqlBackupListRequest:
         查询结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”，且大于查询开始时间。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
         :param end_time: The end_time of this ShowGaussMySqlBackupListRequest.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MultiTaskUpdateBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class MultiTaskUpdateBody:
     }
 
     def __init__(self, description=None, task_tag=None, operation_types=None, repulling_snapshot=None):
-        """MultiTaskUpdateBody - a model defined in huaweicloud sdk"""
+        """MultiTaskUpdateBody
+
+        The model defined in huaweicloud sdk
+
+        :param description: 描述信息
+        :type description: str
+        :param task_tag: 任务标签,只能包含字母、数字、中划线、下划线
+        :type task_tag: str
+        :param operation_types: 需要支持的操作类型，支持多选，至少需要选择以下一种： - INSERT - UPDATE - DELETE
+        :type operation_types: list[str]
+        :param repulling_snapshot: 是否同步已有数据，仅在编辑任务时生效
+        :type repulling_snapshot: bool
+        """
         
         
 
@@ -73,7 +84,7 @@ class MultiTaskUpdateBody:
         描述信息
 
         :param description: The description of this MultiTaskUpdateBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -95,7 +106,7 @@ class MultiTaskUpdateBody:
         任务标签,只能包含字母、数字、中划线、下划线
 
         :param task_tag: The task_tag of this MultiTaskUpdateBody.
-        :type: str
+        :type task_tag: str
         """
         self._task_tag = task_tag
 
@@ -117,7 +128,7 @@ class MultiTaskUpdateBody:
         需要支持的操作类型，支持多选，至少需要选择以下一种： - INSERT - UPDATE - DELETE
 
         :param operation_types: The operation_types of this MultiTaskUpdateBody.
-        :type: list[str]
+        :type operation_types: list[str]
         """
         self._operation_types = operation_types
 
@@ -139,7 +150,7 @@ class MultiTaskUpdateBody:
         是否同步已有数据，仅在编辑任务时生效
 
         :param repulling_snapshot: The repulling_snapshot of this MultiTaskUpdateBody.
-        :type: bool
+        :type repulling_snapshot: bool
         """
         self._repulling_snapshot = repulling_snapshot
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TemplateView:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class TemplateView:
     }
 
     def __init__(self, template_name=None, template_desc=None, source_type=None, source_repo_url=None, runtime=None):
-        """TemplateView - a model defined in huaweicloud sdk"""
+        """TemplateView
+
+        The model defined in huaweicloud sdk
+
+        :param template_name: 
+        :type template_name: :class:`huaweicloudsdkservicestage.v2.Template`
+        :param template_desc: 模板描述。
+        :type template_desc: str
+        :param source_type: 模板类别。
+        :type source_type: str
+        :param source_repo_url: 源码仓库URL
+        :type source_repo_url: str
+        :param runtime: 
+        :type runtime: :class:`huaweicloudsdkservicestage.v2.RuntimeType`
+        """
         
         
 
@@ -66,7 +79,7 @@ class TemplateView:
 
 
         :return: The template_name of this TemplateView.
-        :rtype: Template
+        :rtype: :class:`huaweicloudsdkservicestage.v2.Template`
         """
         return self._template_name
 
@@ -76,7 +89,7 @@ class TemplateView:
 
 
         :param template_name: The template_name of this TemplateView.
-        :type: Template
+        :type template_name: :class:`huaweicloudsdkservicestage.v2.Template`
         """
         self._template_name = template_name
 
@@ -98,7 +111,7 @@ class TemplateView:
         模板描述。
 
         :param template_desc: The template_desc of this TemplateView.
-        :type: str
+        :type template_desc: str
         """
         self._template_desc = template_desc
 
@@ -120,7 +133,7 @@ class TemplateView:
         模板类别。
 
         :param source_type: The source_type of this TemplateView.
-        :type: str
+        :type source_type: str
         """
         self._source_type = source_type
 
@@ -142,7 +155,7 @@ class TemplateView:
         源码仓库URL
 
         :param source_repo_url: The source_repo_url of this TemplateView.
-        :type: str
+        :type source_repo_url: str
         """
         self._source_repo_url = source_repo_url
 
@@ -152,7 +165,7 @@ class TemplateView:
 
 
         :return: The runtime of this TemplateView.
-        :rtype: RuntimeType
+        :rtype: :class:`huaweicloudsdkservicestage.v2.RuntimeType`
         """
         return self._runtime
 
@@ -162,7 +175,7 @@ class TemplateView:
 
 
         :param runtime: The runtime of this TemplateView.
-        :type: RuntimeType
+        :type runtime: :class:`huaweicloudsdkservicestage.v2.RuntimeType`
         """
         self._runtime = runtime
 

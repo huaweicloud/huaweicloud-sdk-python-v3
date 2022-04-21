@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class HostGroupTag:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class HostGroupTag:
     }
 
     def __init__(self, key=None, value=None):
-        """HostGroupTag - a model defined in huaweicloud sdk"""
+        """HostGroupTag
+
+        The model defined in huaweicloud sdk
+
+        :param key: 标签Key
+        :type key: str
+        :param value: 标签Value
+        :type value: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class HostGroupTag:
         标签Key
 
         :param key: The key of this HostGroupTag.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -85,7 +92,7 @@ class HostGroupTag:
         标签Value
 
         :param value: The value of this HostGroupTag.
-        :type: str
+        :type value: str
         """
         self._value = value
 

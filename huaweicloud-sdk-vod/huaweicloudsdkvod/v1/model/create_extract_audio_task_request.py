@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateExtractAudioTaskRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateExtractAudioTaskRequest:
     }
 
     def __init__(self, body=None):
-        """CreateExtractAudioTaskRequest - a model defined in huaweicloud sdk"""
+        """CreateExtractAudioTaskRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateExtractAudioTaskRequest
+        :type body: :class:`huaweicloudsdkvod.v1.ExtractAudioTaskReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateExtractAudioTaskRequest:
 
 
         :return: The body of this CreateExtractAudioTaskRequest.
-        :rtype: ExtractAudioTaskReq
+        :rtype: :class:`huaweicloudsdkvod.v1.ExtractAudioTaskReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateExtractAudioTaskRequest:
 
 
         :param body: The body of this CreateExtractAudioTaskRequest.
-        :type: ExtractAudioTaskReq
+        :type body: :class:`huaweicloudsdkvod.v1.ExtractAudioTaskReq`
         """
         self._body = body
 

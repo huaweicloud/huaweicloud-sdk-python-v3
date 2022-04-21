@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchImportConfigsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class BatchImportConfigsRequest:
     }
 
     def __init__(self, node_id=None, ia_id=None, body=None):
-        """BatchImportConfigsRequest - a model defined in huaweicloud sdk"""
+        """BatchImportConfigsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param node_id: 边缘节点ID
+        :type node_id: str
+        :param ia_id: 边侧第三方应用的模块ID
+        :type ia_id: str
+        :param body: Body of the BatchImportConfigsRequest
+        :type body: :class:`huaweicloudsdkiotedge.v2.BatchImportConfigsRequestBody`
+        """
         
         
 
@@ -66,7 +75,7 @@ class BatchImportConfigsRequest:
         边缘节点ID
 
         :param node_id: The node_id of this BatchImportConfigsRequest.
-        :type: str
+        :type node_id: str
         """
         self._node_id = node_id
 
@@ -88,7 +97,7 @@ class BatchImportConfigsRequest:
         边侧第三方应用的模块ID
 
         :param ia_id: The ia_id of this BatchImportConfigsRequest.
-        :type: str
+        :type ia_id: str
         """
         self._ia_id = ia_id
 
@@ -98,7 +107,7 @@ class BatchImportConfigsRequest:
 
 
         :return: The body of this BatchImportConfigsRequest.
-        :rtype: BatchImportConfigsRequestBody
+        :rtype: :class:`huaweicloudsdkiotedge.v2.BatchImportConfigsRequestBody`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class BatchImportConfigsRequest:
 
 
         :param body: The body of this BatchImportConfigsRequest.
-        :type: BatchImportConfigsRequestBody
+        :type body: :class:`huaweicloudsdkiotedge.v2.BatchImportConfigsRequestBody`
         """
         self._body = body
 

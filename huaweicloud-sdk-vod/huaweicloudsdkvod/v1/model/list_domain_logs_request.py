@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDomainLogsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListDomainLogsRequest:
     }
 
     def __init__(self, domain_name=None, query_date=None, page_size=None, page_number=None):
-        """ListDomainLogsRequest - a model defined in huaweicloud sdk"""
+        """ListDomainLogsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param domain_name: 加速域名，参考格式：www.test1.com。
+        :type domain_name: str
+        :param query_date: 查询日期，yyyyMMddHHmmss。 - 查询结果为开始时间之后24小时内的日志数据 - 只能查最近一个月内的数据
+        :type query_date: str
+        :param page_size: 每页显示日志数量。 
+        :type page_size: int
+        :param page_number: 当前页数。 
+        :type page_number: int
+        """
         
         
 
@@ -71,7 +82,7 @@ class ListDomainLogsRequest:
         加速域名，参考格式：www.test1.com。
 
         :param domain_name: The domain_name of this ListDomainLogsRequest.
-        :type: str
+        :type domain_name: str
         """
         self._domain_name = domain_name
 
@@ -93,7 +104,7 @@ class ListDomainLogsRequest:
         查询日期，yyyyMMddHHmmss。 - 查询结果为开始时间之后24小时内的日志数据 - 只能查最近一个月内的数据
 
         :param query_date: The query_date of this ListDomainLogsRequest.
-        :type: str
+        :type query_date: str
         """
         self._query_date = query_date
 
@@ -115,7 +126,7 @@ class ListDomainLogsRequest:
         每页显示日志数量。 
 
         :param page_size: The page_size of this ListDomainLogsRequest.
-        :type: int
+        :type page_size: int
         """
         self._page_size = page_size
 
@@ -137,7 +148,7 @@ class ListDomainLogsRequest:
         当前页数。 
 
         :param page_number: The page_number of this ListDomainLogsRequest.
-        :type: int
+        :type page_number: int
         """
         self._page_number = page_number
 

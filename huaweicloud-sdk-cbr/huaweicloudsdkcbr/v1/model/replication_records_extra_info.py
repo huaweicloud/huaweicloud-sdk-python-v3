@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ReplicationRecordsExtraInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ReplicationRecordsExtraInfo:
     }
 
     def __init__(self, progress=None, fail_code=None, fail_reason=None, auto_trigger=None, destinatio_vault_id=None):
-        """ReplicationRecordsExtraInfo - a model defined in huaweicloud sdk"""
+        """ReplicationRecordsExtraInfo
+
+        The model defined in huaweicloud sdk
+
+        :param progress: 复制进度
+        :type progress: int
+        :param fail_code: 失败错误码，成功时为空
+        :type fail_code: str
+        :param fail_reason: 错误原因
+        :type fail_reason: str
+        :param auto_trigger: 是否为自动调度复制
+        :type auto_trigger: bool
+        :param destinatio_vault_id: 目标端的存储库id
+        :type destinatio_vault_id: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class ReplicationRecordsExtraInfo:
         复制进度
 
         :param progress: The progress of this ReplicationRecordsExtraInfo.
-        :type: int
+        :type progress: int
         """
         self._progress = progress
 
@@ -100,7 +113,7 @@ class ReplicationRecordsExtraInfo:
         失败错误码，成功时为空
 
         :param fail_code: The fail_code of this ReplicationRecordsExtraInfo.
-        :type: str
+        :type fail_code: str
         """
         self._fail_code = fail_code
 
@@ -122,7 +135,7 @@ class ReplicationRecordsExtraInfo:
         错误原因
 
         :param fail_reason: The fail_reason of this ReplicationRecordsExtraInfo.
-        :type: str
+        :type fail_reason: str
         """
         self._fail_reason = fail_reason
 
@@ -144,7 +157,7 @@ class ReplicationRecordsExtraInfo:
         是否为自动调度复制
 
         :param auto_trigger: The auto_trigger of this ReplicationRecordsExtraInfo.
-        :type: bool
+        :type auto_trigger: bool
         """
         self._auto_trigger = auto_trigger
 
@@ -166,7 +179,7 @@ class ReplicationRecordsExtraInfo:
         目标端的存储库id
 
         :param destinatio_vault_id: The destinatio_vault_id of this ReplicationRecordsExtraInfo.
-        :type: str
+        :type destinatio_vault_id: str
         """
         self._destinatio_vault_id = destinatio_vault_id
 

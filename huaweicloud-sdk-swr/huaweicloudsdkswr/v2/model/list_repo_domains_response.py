@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRepoDomainsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListRepoDomainsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListRepoDomainsResponse - a model defined in huaweicloud sdk"""
+        """ListRepoDomainsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param body: 共享租户列表
+        :type body: list[:class:`huaweicloudsdkswr.v2.ShowRepoDomainsResponse`]
+        """
         
         super(ListRepoDomainsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListRepoDomainsResponse(SdkResponse):
         共享租户列表
 
         :return: The body of this ListRepoDomainsResponse.
-        :rtype: list[ShowRepoDomainsResponse]
+        :rtype: list[:class:`huaweicloudsdkswr.v2.ShowRepoDomainsResponse`]
         """
         return self._body
 
@@ -58,7 +63,7 @@ class ListRepoDomainsResponse(SdkResponse):
         共享租户列表
 
         :param body: The body of this ListRepoDomainsResponse.
-        :type: list[ShowRepoDomainsResponse]
+        :type body: list[:class:`huaweicloudsdkswr.v2.ShowRepoDomainsResponse`]
         """
         self._body = body
 

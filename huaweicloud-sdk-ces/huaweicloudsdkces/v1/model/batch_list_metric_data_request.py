@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchListMetricDataRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchListMetricDataRequest:
     }
 
     def __init__(self, body=None):
-        """BatchListMetricDataRequest - a model defined in huaweicloud sdk"""
+        """BatchListMetricDataRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the BatchListMetricDataRequest
+        :type body: :class:`huaweicloudsdkces.v1.BatchListMetricDataRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class BatchListMetricDataRequest:
 
 
         :return: The body of this BatchListMetricDataRequest.
-        :rtype: BatchListMetricDataRequestBody
+        :rtype: :class:`huaweicloudsdkces.v1.BatchListMetricDataRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class BatchListMetricDataRequest:
 
 
         :param body: The body of this BatchListMetricDataRequest.
-        :type: BatchListMetricDataRequestBody
+        :type body: :class:`huaweicloudsdkces.v1.BatchListMetricDataRequestBody`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowReposTagResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -62,7 +61,45 @@ class ShowReposTagResp:
     }
 
     def __init__(self, id=None, repo_id=None, tag=None, image_id=None, manifest=None, digest=None, schema=None, path=None, internal_path=None, size=None, is_trusted=None, created=None, updated=None, deleted=None, domain_id=None, scanned=None, tag_type=None):
-        """ShowReposTagResp - a model defined in huaweicloud sdk"""
+        """ShowReposTagResp
+
+        The model defined in huaweicloud sdk
+
+        :param id: tag编号
+        :type id: int
+        :param repo_id: 仓库编号
+        :type repo_id: int
+        :param tag: Tag版本名称
+        :type tag: str
+        :param image_id: 镜像id
+        :type image_id: str
+        :param manifest: 镜像manifest
+        :type manifest: str
+        :param digest: 镜像hash值
+        :type digest: str
+        :param schema: docker协议版本，值为1或2
+        :type schema: int
+        :param path: 镜像pull地址，格式为swr.cn-north-1.myhuaweicloud.com/namespace/repository:tag
+        :type path: str
+        :param internal_path: cce集群内镜像pull路径，格式为 10.125.0.198:20202/namespace/repository:tag
+        :type internal_path: str
+        :param size: 镜像大小，0 ~ 9223372036854775807
+        :type size: int
+        :param is_trusted: 默认值为false
+        :type is_trusted: bool
+        :param created: 镜像创建时间，UTC时间格式，时间为UTC标准时间，用户需要根据本地时间计算偏移量；如东8区需要+8:00
+        :type created: str
+        :param updated: 镜像更新时间，UTC时间格式，时间为UTC标准时间，用户需要根据本地时间计算偏移量；如东8区需要+8:00
+        :type updated: str
+        :param deleted: 镜像删除时间，UTC时间格式，时间为UTC标准时间，用户需要根据本地时间计算偏移量；如东8区需要+8:00
+        :type deleted: str
+        :param domain_id: 帐号ID
+        :type domain_id: str
+        :param scanned: 镜像是否被扫描过
+        :type scanned: bool
+        :param tag_type: 0：manifest类型；1：manifest list类型
+        :type tag_type: int
+        """
         
         
 
@@ -121,7 +158,7 @@ class ShowReposTagResp:
         tag编号
 
         :param id: The id of this ShowReposTagResp.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -143,7 +180,7 @@ class ShowReposTagResp:
         仓库编号
 
         :param repo_id: The repo_id of this ShowReposTagResp.
-        :type: int
+        :type repo_id: int
         """
         self._repo_id = repo_id
 
@@ -165,7 +202,7 @@ class ShowReposTagResp:
         Tag版本名称
 
         :param tag: The tag of this ShowReposTagResp.
-        :type: str
+        :type tag: str
         """
         self._tag = tag
 
@@ -187,7 +224,7 @@ class ShowReposTagResp:
         镜像id
 
         :param image_id: The image_id of this ShowReposTagResp.
-        :type: str
+        :type image_id: str
         """
         self._image_id = image_id
 
@@ -209,7 +246,7 @@ class ShowReposTagResp:
         镜像manifest
 
         :param manifest: The manifest of this ShowReposTagResp.
-        :type: str
+        :type manifest: str
         """
         self._manifest = manifest
 
@@ -231,7 +268,7 @@ class ShowReposTagResp:
         镜像hash值
 
         :param digest: The digest of this ShowReposTagResp.
-        :type: str
+        :type digest: str
         """
         self._digest = digest
 
@@ -253,7 +290,7 @@ class ShowReposTagResp:
         docker协议版本，值为1或2
 
         :param schema: The schema of this ShowReposTagResp.
-        :type: int
+        :type schema: int
         """
         self._schema = schema
 
@@ -275,7 +312,7 @@ class ShowReposTagResp:
         镜像pull地址，格式为swr.cn-north-1.myhuaweicloud.com/namespace/repository:tag
 
         :param path: The path of this ShowReposTagResp.
-        :type: str
+        :type path: str
         """
         self._path = path
 
@@ -297,7 +334,7 @@ class ShowReposTagResp:
         cce集群内镜像pull路径，格式为 10.125.0.198:20202/namespace/repository:tag
 
         :param internal_path: The internal_path of this ShowReposTagResp.
-        :type: str
+        :type internal_path: str
         """
         self._internal_path = internal_path
 
@@ -319,7 +356,7 @@ class ShowReposTagResp:
         镜像大小，0 ~ 9223372036854775807
 
         :param size: The size of this ShowReposTagResp.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -341,7 +378,7 @@ class ShowReposTagResp:
         默认值为false
 
         :param is_trusted: The is_trusted of this ShowReposTagResp.
-        :type: bool
+        :type is_trusted: bool
         """
         self._is_trusted = is_trusted
 
@@ -363,7 +400,7 @@ class ShowReposTagResp:
         镜像创建时间，UTC时间格式，时间为UTC标准时间，用户需要根据本地时间计算偏移量；如东8区需要+8:00
 
         :param created: The created of this ShowReposTagResp.
-        :type: str
+        :type created: str
         """
         self._created = created
 
@@ -385,7 +422,7 @@ class ShowReposTagResp:
         镜像更新时间，UTC时间格式，时间为UTC标准时间，用户需要根据本地时间计算偏移量；如东8区需要+8:00
 
         :param updated: The updated of this ShowReposTagResp.
-        :type: str
+        :type updated: str
         """
         self._updated = updated
 
@@ -407,7 +444,7 @@ class ShowReposTagResp:
         镜像删除时间，UTC时间格式，时间为UTC标准时间，用户需要根据本地时间计算偏移量；如东8区需要+8:00
 
         :param deleted: The deleted of this ShowReposTagResp.
-        :type: str
+        :type deleted: str
         """
         self._deleted = deleted
 
@@ -429,7 +466,7 @@ class ShowReposTagResp:
         帐号ID
 
         :param domain_id: The domain_id of this ShowReposTagResp.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -451,7 +488,7 @@ class ShowReposTagResp:
         镜像是否被扫描过
 
         :param scanned: The scanned of this ShowReposTagResp.
-        :type: bool
+        :type scanned: bool
         """
         self._scanned = scanned
 
@@ -473,7 +510,7 @@ class ShowReposTagResp:
         0：manifest类型；1：manifest list类型
 
         :param tag_type: The tag_type of this ShowReposTagResp.
-        :type: int
+        :type tag_type: int
         """
         self._tag_type = tag_type
 

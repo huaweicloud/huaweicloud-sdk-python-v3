@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdatePremiumHostRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class UpdatePremiumHostRequestBody:
     }
 
     def __init__(self, proxy=None, certificateid=None, certificatename=None, tls=None, cipher=None):
-        """UpdatePremiumHostRequestBody - a model defined in huaweicloud sdk"""
+        """UpdatePremiumHostRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param proxy: 是否使用代理
+        :type proxy: bool
+        :param certificateid: https证书id，通过查询证书列表接口（ListCertificates）接口获取证书id
+        :type certificateid: str
+        :param certificatename: https证书名称，通过查询证书列表接口（ListCertificates）接口获取证书id
+        :type certificatename: str
+        :param tls: 支持最低的TLS版本
+        :type tls: str
+        :param cipher: 加密套件（cipher_1，cipher_2，cipher_3，cipher_4，cipher_default）：  cipher_1： 加密算法为ECDHE-ECDSA-AES256-GCM-SHA384:HIGH:!MEDIUM:!LOW:!aNULL:!eNULL:!DES:!MD5:!PSK:!RC4:!kRSA:!SRP:!3DES:!DSS:!EXP:!CAMELLIA:@STRENGTH   cipher_2：加密算法为EECDH+AESGCM:EDH+AESGCM    cipher_3：加密算法为ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH    cipher_4：加密算法为ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!EDH    cipher_default： 加密算法为ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH:!AESGCM
+        :type cipher: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class UpdatePremiumHostRequestBody:
         是否使用代理
 
         :param proxy: The proxy of this UpdatePremiumHostRequestBody.
-        :type: bool
+        :type proxy: bool
         """
         self._proxy = proxy
 
@@ -100,7 +113,7 @@ class UpdatePremiumHostRequestBody:
         https证书id，通过查询证书列表接口（ListCertificates）接口获取证书id
 
         :param certificateid: The certificateid of this UpdatePremiumHostRequestBody.
-        :type: str
+        :type certificateid: str
         """
         self._certificateid = certificateid
 
@@ -122,7 +135,7 @@ class UpdatePremiumHostRequestBody:
         https证书名称，通过查询证书列表接口（ListCertificates）接口获取证书id
 
         :param certificatename: The certificatename of this UpdatePremiumHostRequestBody.
-        :type: str
+        :type certificatename: str
         """
         self._certificatename = certificatename
 
@@ -144,7 +157,7 @@ class UpdatePremiumHostRequestBody:
         支持最低的TLS版本
 
         :param tls: The tls of this UpdatePremiumHostRequestBody.
-        :type: str
+        :type tls: str
         """
         self._tls = tls
 
@@ -166,7 +179,7 @@ class UpdatePremiumHostRequestBody:
         加密套件（cipher_1，cipher_2，cipher_3，cipher_4，cipher_default）：  cipher_1： 加密算法为ECDHE-ECDSA-AES256-GCM-SHA384:HIGH:!MEDIUM:!LOW:!aNULL:!eNULL:!DES:!MD5:!PSK:!RC4:!kRSA:!SRP:!3DES:!DSS:!EXP:!CAMELLIA:@STRENGTH   cipher_2：加密算法为EECDH+AESGCM:EDH+AESGCM    cipher_3：加密算法为ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH    cipher_4：加密算法为ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!EDH    cipher_default： 加密算法为ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH:!AESGCM
 
         :param cipher: The cipher of this UpdatePremiumHostRequestBody.
-        :type: str
+        :type cipher: str
         """
         self._cipher = cipher
 

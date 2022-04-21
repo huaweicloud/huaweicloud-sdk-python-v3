@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneCreateScopedTokenRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class KeystoneCreateScopedTokenRequestBody:
     }
 
     def __init__(self, auth=None):
-        """KeystoneCreateScopedTokenRequestBody - a model defined in huaweicloud sdk"""
+        """KeystoneCreateScopedTokenRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param auth: 
+        :type auth: :class:`huaweicloudsdkiam.v3.ScopedTokenAuth`
+        """
         
         
 
@@ -45,7 +50,7 @@ class KeystoneCreateScopedTokenRequestBody:
 
 
         :return: The auth of this KeystoneCreateScopedTokenRequestBody.
-        :rtype: ScopedTokenAuth
+        :rtype: :class:`huaweicloudsdkiam.v3.ScopedTokenAuth`
         """
         return self._auth
 
@@ -55,7 +60,7 @@ class KeystoneCreateScopedTokenRequestBody:
 
 
         :param auth: The auth of this KeystoneCreateScopedTokenRequestBody.
-        :type: ScopedTokenAuth
+        :type auth: :class:`huaweicloudsdkiam.v3.ScopedTokenAuth`
         """
         self._auth = auth
 

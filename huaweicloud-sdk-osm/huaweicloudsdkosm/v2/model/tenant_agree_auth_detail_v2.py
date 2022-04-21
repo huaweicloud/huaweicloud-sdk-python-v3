@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TenantAgreeAuthDetailV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class TenantAgreeAuthDetailV2:
     }
 
     def __init__(self, port=None, account=None, password=None, auth_detail_id=None):
-        """TenantAgreeAuthDetailV2 - a model defined in huaweicloud sdk"""
+        """TenantAgreeAuthDetailV2
+
+        The model defined in huaweicloud sdk
+
+        :param port: 端口
+        :type port: int
+        :param account: 账号
+        :type account: str
+        :param password: 密码
+        :type password: str
+        :param auth_detail_id: 授权详情id
+        :type auth_detail_id: int
+        """
         
         
 
@@ -72,7 +83,7 @@ class TenantAgreeAuthDetailV2:
         端口
 
         :param port: The port of this TenantAgreeAuthDetailV2.
-        :type: int
+        :type port: int
         """
         self._port = port
 
@@ -94,7 +105,7 @@ class TenantAgreeAuthDetailV2:
         账号
 
         :param account: The account of this TenantAgreeAuthDetailV2.
-        :type: str
+        :type account: str
         """
         self._account = account
 
@@ -116,7 +127,7 @@ class TenantAgreeAuthDetailV2:
         密码
 
         :param password: The password of this TenantAgreeAuthDetailV2.
-        :type: str
+        :type password: str
         """
         self._password = password
 
@@ -138,7 +149,7 @@ class TenantAgreeAuthDetailV2:
         授权详情id
 
         :param auth_detail_id: The auth_detail_id of this TenantAgreeAuthDetailV2.
-        :type: int
+        :type auth_detail_id: int
         """
         self._auth_detail_id = auth_detail_id
 

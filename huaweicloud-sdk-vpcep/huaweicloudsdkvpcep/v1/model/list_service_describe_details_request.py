@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListServiceDescribeDetailsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListServiceDescribeDetailsRequest:
     }
 
     def __init__(self, endpoint_service_name=None, id=None):
-        """ListServiceDescribeDetailsRequest - a model defined in huaweicloud sdk"""
+        """ListServiceDescribeDetailsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param endpoint_service_name: 终端节点服务的名称。说明：该字段和id字段必须二选一，否则会出现错误。
+        :type endpoint_service_name: str
+        :param id: 终端节点服务的ID，唯一标识。说明：该字段必须和endpoint_service_name字段二选一，否则会出现错误。
+        :type id: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class ListServiceDescribeDetailsRequest:
         终端节点服务的名称。说明：该字段和id字段必须二选一，否则会出现错误。
 
         :param endpoint_service_name: The endpoint_service_name of this ListServiceDescribeDetailsRequest.
-        :type: str
+        :type endpoint_service_name: str
         """
         self._endpoint_service_name = endpoint_service_name
 
@@ -85,7 +92,7 @@ class ListServiceDescribeDetailsRequest:
         终端节点服务的ID，唯一标识。说明：该字段必须和endpoint_service_name字段二选一，否则会出现错误。
 
         :param id: The id of this ListServiceDescribeDetailsRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 

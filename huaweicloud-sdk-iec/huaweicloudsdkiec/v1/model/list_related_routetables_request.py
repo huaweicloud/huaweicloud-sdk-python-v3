@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRelatedRoutetablesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListRelatedRoutetablesRequest:
     }
 
     def __init__(self, subnet_id=None):
-        """ListRelatedRoutetablesRequest - a model defined in huaweicloud sdk"""
+        """ListRelatedRoutetablesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param subnet_id: 子网ID
+        :type subnet_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ListRelatedRoutetablesRequest:
         子网ID
 
         :param subnet_id: The subnet_id of this ListRelatedRoutetablesRequest.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 

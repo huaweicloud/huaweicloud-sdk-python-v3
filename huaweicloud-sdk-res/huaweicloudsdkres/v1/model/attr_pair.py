@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AttrPair:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AttrPair:
     }
 
     def __init__(self, party_a=None, party_b=None):
-        """AttrPair - a model defined in huaweicloud sdk"""
+        """AttrPair
+
+        The model defined in huaweicloud sdk
+
+        :param party_a: 被推荐对象的属性名。
+        :type party_a: str
+        :param party_b: 被推荐对象的属性名。
+        :type party_b: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class AttrPair:
         被推荐对象的属性名。
 
         :param party_a: The party_a of this AttrPair.
-        :type: str
+        :type party_a: str
         """
         self._party_a = party_a
 
@@ -85,7 +92,7 @@ class AttrPair:
         被推荐对象的属性名。
 
         :param party_b: The party_b of this AttrPair.
-        :type: str
+        :type party_b: str
         """
         self._party_b = party_b
 

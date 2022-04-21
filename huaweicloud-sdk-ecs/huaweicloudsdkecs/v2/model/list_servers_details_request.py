@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListServersDetailsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class ListServersDetailsRequest:
     }
 
     def __init__(self, enterprise_project_id=None, flavor=None, ip=None, limit=None, name=None, not_tags=None, offset=None, reservation_id=None, status=None, tags=None, ip_eq=None):
-        """ListServersDetailsRequest - a model defined in huaweicloud sdk"""
+        """ListServersDetailsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param enterprise_project_id: 查询绑定某个企业项目的弹性云服务器。  若需要查询当前用户所有企业项目绑定的弹性云服务，请传参all_granted_eps。
+        :type enterprise_project_id: str
+        :param flavor: 云服务器规格ID,已上线的规格请参见《弹性云服务器用户指南》的“实例和应用场景”章节。
+        :type flavor: str
+        :param ip: IPv4地址过滤结果，匹配规则为模糊匹配。
+        :type ip: str
+        :param limit: 查询返回云服务器当前页面的大小。每页最多返回1000台云服务器的信息。
+        :type limit: int
+        :param name: 云服务器名称，匹配规则为模糊匹配。
+        :type name: str
+        :param not_tags: 查询tag字段中不包含该值的云服务器。
+        :type not_tags: str
+        :param offset: 页码。 当前页面数，默认为1。  取值大于等于0，取值为0时返回第1页。
+        :type offset: int
+        :param reservation_id: 批量创建弹性云服务器时，指定返回的ID，用于查询本次批量创建的弹性云服务器。
+        :type reservation_id: str
+        :param status: 云服务器状态。  取值范围：  ACTIVE， BUILD，DELETED，ERROR，HARD_REBOOT，MIGRATING，REBOOT，RESIZE，REVERT_RESIZE，SHELVED，SHELVED_OFFLOADED，SHUTOFF，UNKNOWN，VERIFY_RESIZE  只有管理员可以使用“deleted”状态过滤查询已经删除的弹性云服务器。  弹性云服务器状态说明请参考[云服务器状态](https://support.huaweicloud.com/api-ecs/ecs_08_0002.html)
+        :type status: str
+        :param tags: 查询tag字段中包含该值的云服务器。
+        :type tags: str
+        :param ip_eq: IPv4地址过滤结果，匹配规则为精确匹配。
+        :type ip_eq: str
+        """
         
         
 
@@ -108,7 +133,7 @@ class ListServersDetailsRequest:
         查询绑定某个企业项目的弹性云服务器。  若需要查询当前用户所有企业项目绑定的弹性云服务，请传参all_granted_eps。
 
         :param enterprise_project_id: The enterprise_project_id of this ListServersDetailsRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -130,7 +155,7 @@ class ListServersDetailsRequest:
         云服务器规格ID,已上线的规格请参见《弹性云服务器用户指南》的“实例和应用场景”章节。
 
         :param flavor: The flavor of this ListServersDetailsRequest.
-        :type: str
+        :type flavor: str
         """
         self._flavor = flavor
 
@@ -152,7 +177,7 @@ class ListServersDetailsRequest:
         IPv4地址过滤结果，匹配规则为模糊匹配。
 
         :param ip: The ip of this ListServersDetailsRequest.
-        :type: str
+        :type ip: str
         """
         self._ip = ip
 
@@ -174,7 +199,7 @@ class ListServersDetailsRequest:
         查询返回云服务器当前页面的大小。每页最多返回1000台云服务器的信息。
 
         :param limit: The limit of this ListServersDetailsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -196,7 +221,7 @@ class ListServersDetailsRequest:
         云服务器名称，匹配规则为模糊匹配。
 
         :param name: The name of this ListServersDetailsRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -218,7 +243,7 @@ class ListServersDetailsRequest:
         查询tag字段中不包含该值的云服务器。
 
         :param not_tags: The not_tags of this ListServersDetailsRequest.
-        :type: str
+        :type not_tags: str
         """
         self._not_tags = not_tags
 
@@ -240,7 +265,7 @@ class ListServersDetailsRequest:
         页码。 当前页面数，默认为1。  取值大于等于0，取值为0时返回第1页。
 
         :param offset: The offset of this ListServersDetailsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -262,7 +287,7 @@ class ListServersDetailsRequest:
         批量创建弹性云服务器时，指定返回的ID，用于查询本次批量创建的弹性云服务器。
 
         :param reservation_id: The reservation_id of this ListServersDetailsRequest.
-        :type: str
+        :type reservation_id: str
         """
         self._reservation_id = reservation_id
 
@@ -284,7 +309,7 @@ class ListServersDetailsRequest:
         云服务器状态。  取值范围：  ACTIVE， BUILD，DELETED，ERROR，HARD_REBOOT，MIGRATING，REBOOT，RESIZE，REVERT_RESIZE，SHELVED，SHELVED_OFFLOADED，SHUTOFF，UNKNOWN，VERIFY_RESIZE  只有管理员可以使用“deleted”状态过滤查询已经删除的弹性云服务器。  弹性云服务器状态说明请参考[云服务器状态](https://support.huaweicloud.com/api-ecs/ecs_08_0002.html)
 
         :param status: The status of this ListServersDetailsRequest.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -306,7 +331,7 @@ class ListServersDetailsRequest:
         查询tag字段中包含该值的云服务器。
 
         :param tags: The tags of this ListServersDetailsRequest.
-        :type: str
+        :type tags: str
         """
         self._tags = tags
 
@@ -328,7 +353,7 @@ class ListServersDetailsRequest:
         IPv4地址过滤结果，匹配规则为精确匹配。
 
         :param ip_eq: The ip_eq of this ListServersDetailsRequest.
-        :type: str
+        :type ip_eq: str
         """
         self._ip_eq = ip_eq
 

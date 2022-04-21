@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateExtendInstanceStorageRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateExtendInstanceStorageRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """UpdateExtendInstanceStorageRequest - a model defined in huaweicloud sdk"""
+        """UpdateExtendInstanceStorageRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 指定待扩容的集群ID。
+        :type cluster_id: str
+        :param body: Body of the UpdateExtendInstanceStorageRequest
+        :type body: :class:`huaweicloudsdkcss.v1.RoleExtendReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateExtendInstanceStorageRequest:
         指定待扩容的集群ID。
 
         :param cluster_id: The cluster_id of this UpdateExtendInstanceStorageRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -72,7 +79,7 @@ class UpdateExtendInstanceStorageRequest:
 
 
         :return: The body of this UpdateExtendInstanceStorageRequest.
-        :rtype: RoleExtendReq
+        :rtype: :class:`huaweicloudsdkcss.v1.RoleExtendReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateExtendInstanceStorageRequest:
 
 
         :param body: The body of this UpdateExtendInstanceStorageRequest.
-        :type: RoleExtendReq
+        :type body: :class:`huaweicloudsdkcss.v1.RoleExtendReq`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RulesRemote:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class RulesRemote:
     }
 
     def __init__(self, type=None, any_one_of=None, not_any_of=None):
-        """RulesRemote - a model defined in huaweicloud sdk"""
+        """RulesRemote
+
+        The model defined in huaweicloud sdk
+
+        :param type: 表示IdP断言中的属性。
+        :type type: str
+        :param any_one_of: 输入属性值中包含指定值才生效，并返回布尔值，返回值不能用于local块中的占位符。在同一个remote数组元素中，any_one_of与not_any_of互斥，两者至多填写一个，不能同时填写。
+        :type any_one_of: list[str]
+        :param not_any_of: 输入属性值中不包含指定值才生效，并返回布尔值，返回值不能用于local块中的占位符。在同一个remote数组元素中，any_one_of与not_any_of互斥，两者至多填写一个，不能同时填写。
+        :type not_any_of: list[str]
+        """
         
         
 
@@ -67,7 +76,7 @@ class RulesRemote:
         表示IdP断言中的属性。
 
         :param type: The type of this RulesRemote.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -89,7 +98,7 @@ class RulesRemote:
         输入属性值中包含指定值才生效，并返回布尔值，返回值不能用于local块中的占位符。在同一个remote数组元素中，any_one_of与not_any_of互斥，两者至多填写一个，不能同时填写。
 
         :param any_one_of: The any_one_of of this RulesRemote.
-        :type: list[str]
+        :type any_one_of: list[str]
         """
         self._any_one_of = any_one_of
 
@@ -111,7 +120,7 @@ class RulesRemote:
         输入属性值中不包含指定值才生效，并返回布尔值，返回值不能用于local块中的占位符。在同一个remote数组元素中，any_one_of与not_any_of互斥，两者至多填写一个，不能同时填写。
 
         :param not_any_of: The not_any_of of this RulesRemote.
-        :type: list[str]
+        :type not_any_of: list[str]
         """
         self._not_any_of = not_any_of
 

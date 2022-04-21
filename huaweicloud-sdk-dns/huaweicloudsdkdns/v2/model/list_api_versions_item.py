@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListApiVersionsItem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListApiVersionsItem:
     }
 
     def __init__(self, status=None, id=None, links=None):
-        """ListApiVersionsItem - a model defined in huaweicloud sdk"""
+        """ListApiVersionsItem
+
+        The model defined in huaweicloud sdk
+
+        :param status: 版本状态，包含：  CURRENT：表示该版本为主推版本。 SUPPORTED：表示为老版本，但是现在还在继续支持。 DEPRECATED：表示为废弃版本，存在后续删除的可能。
+        :type status: str
+        :param id: 版本号。
+        :type id: str
+        :param links: 指向当前版本的url。
+        :type links: list[:class:`huaweicloudsdkdns.v2.LinksItem`]
+        """
         
         
 
@@ -68,7 +77,7 @@ class ListApiVersionsItem:
         版本状态，包含：  CURRENT：表示该版本为主推版本。 SUPPORTED：表示为老版本，但是现在还在继续支持。 DEPRECATED：表示为废弃版本，存在后续删除的可能。
 
         :param status: The status of this ListApiVersionsItem.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -90,7 +99,7 @@ class ListApiVersionsItem:
         版本号。
 
         :param id: The id of this ListApiVersionsItem.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -101,7 +110,7 @@ class ListApiVersionsItem:
         指向当前版本的url。
 
         :return: The links of this ListApiVersionsItem.
-        :rtype: list[LinksItem]
+        :rtype: list[:class:`huaweicloudsdkdns.v2.LinksItem`]
         """
         return self._links
 
@@ -112,7 +121,7 @@ class ListApiVersionsItem:
         指向当前版本的url。
 
         :param links: The links of this ListApiVersionsItem.
-        :type: list[LinksItem]
+        :type links: list[:class:`huaweicloudsdkdns.v2.LinksItem`]
         """
         self._links = links
 

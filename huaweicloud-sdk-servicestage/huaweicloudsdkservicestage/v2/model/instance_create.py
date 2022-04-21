@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InstanceCreate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class InstanceCreate:
     }
 
     def __init__(self, name=None, environment_id=None, flavor_id=None, replica=None, artifacts=None, version=None, configuration=None, description=None, external_accesses=None, refer_resources=None):
-        """InstanceCreate - a model defined in huaweicloud sdk"""
+        """InstanceCreate
+
+        The model defined in huaweicloud sdk
+
+        :param name: 应用组件实例名称。
+        :type name: str
+        :param environment_id: 环境ID。
+        :type environment_id: str
+        :param flavor_id: 
+        :type flavor_id: :class:`huaweicloudsdkservicestage.v2.FlavorId`
+        :param replica: 实例副本数。
+        :type replica: int
+        :param artifacts: 组件部署件。key为组件component_name，对于Docker多容器场景，key为容器名称。
+        :type artifacts: dict(str, object)
+        :param version: 应用组件版本号，满足版本语义，如1.0.0。。
+        :type version: str
+        :param configuration: 应用配置，环境变量等，如{“env”: [{“name”: “log-level”: “warn”}]}, 默认空。
+        :type configuration: object
+        :param description: 描述。
+        :type description: str
+        :param external_accesses: 访问方式。
+        :type external_accesses: list[:class:`huaweicloudsdkservicestage.v2.ExternalAccessesCreate`]
+        :param refer_resources: 部署资源。
+        :type refer_resources: list[:class:`huaweicloudsdkservicestage.v2.ReferResourceCreate`]
+        """
         
         
 
@@ -96,7 +119,7 @@ class InstanceCreate:
         应用组件实例名称。
 
         :param name: The name of this InstanceCreate.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -118,7 +141,7 @@ class InstanceCreate:
         环境ID。
 
         :param environment_id: The environment_id of this InstanceCreate.
-        :type: str
+        :type environment_id: str
         """
         self._environment_id = environment_id
 
@@ -128,7 +151,7 @@ class InstanceCreate:
 
 
         :return: The flavor_id of this InstanceCreate.
-        :rtype: FlavorId
+        :rtype: :class:`huaweicloudsdkservicestage.v2.FlavorId`
         """
         return self._flavor_id
 
@@ -138,7 +161,7 @@ class InstanceCreate:
 
 
         :param flavor_id: The flavor_id of this InstanceCreate.
-        :type: FlavorId
+        :type flavor_id: :class:`huaweicloudsdkservicestage.v2.FlavorId`
         """
         self._flavor_id = flavor_id
 
@@ -160,7 +183,7 @@ class InstanceCreate:
         实例副本数。
 
         :param replica: The replica of this InstanceCreate.
-        :type: int
+        :type replica: int
         """
         self._replica = replica
 
@@ -182,7 +205,7 @@ class InstanceCreate:
         组件部署件。key为组件component_name，对于Docker多容器场景，key为容器名称。
 
         :param artifacts: The artifacts of this InstanceCreate.
-        :type: dict(str, object)
+        :type artifacts: dict(str, object)
         """
         self._artifacts = artifacts
 
@@ -204,7 +227,7 @@ class InstanceCreate:
         应用组件版本号，满足版本语义，如1.0.0。。
 
         :param version: The version of this InstanceCreate.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -226,7 +249,7 @@ class InstanceCreate:
         应用配置，环境变量等，如{“env”: [{“name”: “log-level”: “warn”}]}, 默认空。
 
         :param configuration: The configuration of this InstanceCreate.
-        :type: object
+        :type configuration: object
         """
         self._configuration = configuration
 
@@ -248,7 +271,7 @@ class InstanceCreate:
         描述。
 
         :param description: The description of this InstanceCreate.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -259,7 +282,7 @@ class InstanceCreate:
         访问方式。
 
         :return: The external_accesses of this InstanceCreate.
-        :rtype: list[ExternalAccessesCreate]
+        :rtype: list[:class:`huaweicloudsdkservicestage.v2.ExternalAccessesCreate`]
         """
         return self._external_accesses
 
@@ -270,7 +293,7 @@ class InstanceCreate:
         访问方式。
 
         :param external_accesses: The external_accesses of this InstanceCreate.
-        :type: list[ExternalAccessesCreate]
+        :type external_accesses: list[:class:`huaweicloudsdkservicestage.v2.ExternalAccessesCreate`]
         """
         self._external_accesses = external_accesses
 
@@ -281,7 +304,7 @@ class InstanceCreate:
         部署资源。
 
         :return: The refer_resources of this InstanceCreate.
-        :rtype: list[ReferResourceCreate]
+        :rtype: list[:class:`huaweicloudsdkservicestage.v2.ReferResourceCreate`]
         """
         return self._refer_resources
 
@@ -292,7 +315,7 @@ class InstanceCreate:
         部署资源。
 
         :param refer_resources: The refer_resources of this InstanceCreate.
-        :type: list[ReferResourceCreate]
+        :type refer_resources: list[:class:`huaweicloudsdkservicestage.v2.ReferResourceCreate`]
         """
         self._refer_resources = refer_resources
 

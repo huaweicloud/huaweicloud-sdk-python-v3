@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DecoupledLiveDomainInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class DecoupledLiveDomainInfo:
     }
 
     def __init__(self, domain=None, domain_type=None, vendor=None, region=None, domain_cname=None, status=None, related_domain=None, create_time=None, status_describe=None, service_area=None):
-        """DecoupledLiveDomainInfo - a model defined in huaweicloud sdk"""
+        """DecoupledLiveDomainInfo
+
+        The model defined in huaweicloud sdk
+
+        :param domain: 直播域名
+        :type domain: str
+        :param domain_type: 域名类型
+        :type domain_type: str
+        :param vendor: CDN厂商
+        :type vendor: str
+        :param region: 直播所属直播中心
+        :type region: str
+        :param domain_cname: 直播域名的CName
+        :type domain_cname: str
+        :param status: 直播域名的状态
+        :type status: str
+        :param related_domain: 播放域名关联的推流域名（只有domain_type为pull的时候有效）
+        :type related_domain: str
+        :param create_time: 域名创建时间，格式：yyyy-mm-ddThh:mm:ssZ，UTC时间
+        :type create_time: datetime
+        :param status_describe: 状态描述
+        :type status_describe: str
+        :param service_area: 域名应用区域 - mainland_china表示中国大陆区域 - outside_mainland_china表示中国大陆以外区域 - global表示全球区域 
+        :type service_area: str
+        """
         
         
 
@@ -95,7 +118,7 @@ class DecoupledLiveDomainInfo:
         直播域名
 
         :param domain: The domain of this DecoupledLiveDomainInfo.
-        :type: str
+        :type domain: str
         """
         self._domain = domain
 
@@ -117,7 +140,7 @@ class DecoupledLiveDomainInfo:
         域名类型
 
         :param domain_type: The domain_type of this DecoupledLiveDomainInfo.
-        :type: str
+        :type domain_type: str
         """
         self._domain_type = domain_type
 
@@ -139,7 +162,7 @@ class DecoupledLiveDomainInfo:
         CDN厂商
 
         :param vendor: The vendor of this DecoupledLiveDomainInfo.
-        :type: str
+        :type vendor: str
         """
         self._vendor = vendor
 
@@ -161,7 +184,7 @@ class DecoupledLiveDomainInfo:
         直播所属直播中心
 
         :param region: The region of this DecoupledLiveDomainInfo.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -183,7 +206,7 @@ class DecoupledLiveDomainInfo:
         直播域名的CName
 
         :param domain_cname: The domain_cname of this DecoupledLiveDomainInfo.
-        :type: str
+        :type domain_cname: str
         """
         self._domain_cname = domain_cname
 
@@ -205,7 +228,7 @@ class DecoupledLiveDomainInfo:
         直播域名的状态
 
         :param status: The status of this DecoupledLiveDomainInfo.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -227,7 +250,7 @@ class DecoupledLiveDomainInfo:
         播放域名关联的推流域名（只有domain_type为pull的时候有效）
 
         :param related_domain: The related_domain of this DecoupledLiveDomainInfo.
-        :type: str
+        :type related_domain: str
         """
         self._related_domain = related_domain
 
@@ -249,7 +272,7 @@ class DecoupledLiveDomainInfo:
         域名创建时间，格式：yyyy-mm-ddThh:mm:ssZ，UTC时间
 
         :param create_time: The create_time of this DecoupledLiveDomainInfo.
-        :type: datetime
+        :type create_time: datetime
         """
         self._create_time = create_time
 
@@ -271,7 +294,7 @@ class DecoupledLiveDomainInfo:
         状态描述
 
         :param status_describe: The status_describe of this DecoupledLiveDomainInfo.
-        :type: str
+        :type status_describe: str
         """
         self._status_describe = status_describe
 
@@ -293,7 +316,7 @@ class DecoupledLiveDomainInfo:
         域名应用区域 - mainland_china表示中国大陆区域 - outside_mainland_china表示中国大陆以外区域 - global表示全球区域 
 
         :param service_area: The service_area of this DecoupledLiveDomainInfo.
-        :type: str
+        :type service_area: str
         """
         self._service_area = service_area
 

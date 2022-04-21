@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowMemberRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowMemberRequest:
     }
 
     def __init__(self, pool_id=None, member_id=None):
-        """ShowMemberRequest - a model defined in huaweicloud sdk"""
+        """ShowMemberRequest
+
+        The model defined in huaweicloud sdk
+
+        :param pool_id: 后端云服务器组id
+        :type pool_id: str
+        :param member_id: 后端云服务器id
+        :type member_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ShowMemberRequest:
         后端云服务器组id
 
         :param pool_id: The pool_id of this ShowMemberRequest.
-        :type: str
+        :type pool_id: str
         """
         self._pool_id = pool_id
 
@@ -83,7 +90,7 @@ class ShowMemberRequest:
         后端云服务器id
 
         :param member_id: The member_id of this ShowMemberRequest.
-        :type: str
+        :type member_id: str
         """
         self._member_id = member_id
 

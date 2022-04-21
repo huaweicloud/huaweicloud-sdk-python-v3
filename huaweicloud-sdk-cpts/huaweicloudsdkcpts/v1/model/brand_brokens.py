@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BrandBrokens:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BrandBrokens:
     }
 
     def __init__(self, rec_bytes=None, sent_bytes=None):
-        """BrandBrokens - a model defined in huaweicloud sdk"""
+        """BrandBrokens
+
+        The model defined in huaweicloud sdk
+
+        :param rec_bytes: 接收字节数
+        :type rec_bytes: list[float]
+        :param sent_bytes: 发送字节数
+        :type sent_bytes: list[float]
+        """
         
         
 
@@ -63,7 +70,7 @@ class BrandBrokens:
         接收字节数
 
         :param rec_bytes: The rec_bytes of this BrandBrokens.
-        :type: list[float]
+        :type rec_bytes: list[float]
         """
         self._rec_bytes = rec_bytes
 
@@ -85,7 +92,7 @@ class BrandBrokens:
         发送字节数
 
         :param sent_bytes: The sent_bytes of this BrandBrokens.
-        :type: list[float]
+        :type sent_bytes: list[float]
         """
         self._sent_bytes = sent_bytes
 

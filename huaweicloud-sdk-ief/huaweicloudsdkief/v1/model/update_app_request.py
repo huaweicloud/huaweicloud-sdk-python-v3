@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateAppRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateAppRequest:
     }
 
     def __init__(self, ief_instance_id=None, app_id=None, body=None):
-        """UpdateAppRequest - a model defined in huaweicloud sdk"""
+        """UpdateAppRequest
+
+        The model defined in huaweicloud sdk
+
+        :param ief_instance_id: 铂金版实例ID，专业版实例为空值
+        :type ief_instance_id: str
+        :param app_id: 应用模板ID
+        :type app_id: str
+        :param body: Body of the UpdateAppRequest
+        :type body: :class:`huaweicloudsdkief.v1.AppUpdate`
+        """
         
         
 
@@ -67,7 +76,7 @@ class UpdateAppRequest:
         铂金版实例ID，专业版实例为空值
 
         :param ief_instance_id: The ief_instance_id of this UpdateAppRequest.
-        :type: str
+        :type ief_instance_id: str
         """
         self._ief_instance_id = ief_instance_id
 
@@ -89,7 +98,7 @@ class UpdateAppRequest:
         应用模板ID
 
         :param app_id: The app_id of this UpdateAppRequest.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -99,7 +108,7 @@ class UpdateAppRequest:
 
 
         :return: The body of this UpdateAppRequest.
-        :rtype: AppUpdate
+        :rtype: :class:`huaweicloudsdkief.v1.AppUpdate`
         """
         return self._body
 
@@ -109,7 +118,7 @@ class UpdateAppRequest:
 
 
         :param body: The body of this UpdateAppRequest.
-        :type: AppUpdate
+        :type body: :class:`huaweicloudsdkief.v1.AppUpdate`
         """
         self._body = body
 

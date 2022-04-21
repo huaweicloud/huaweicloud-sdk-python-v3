@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPropertiesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -37,7 +36,19 @@ class ListPropertiesRequest:
     }
 
     def __init__(self, device_id=None, sp_auth_token=None, instance_id=None, service_id=None):
-        """ListPropertiesRequest - a model defined in huaweicloud sdk"""
+        """ListPropertiesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param device_id: **参数说明**：下发属性的设备ID，用于唯一标识一个设备，在注册设备时由物联网平台分配获得。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
+        :type device_id: str
+        :param sp_auth_token: Sp用户Token。通过调用IoBPS服务获取SP用户Token
+        :type sp_auth_token: str
+        :param instance_id: **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
+        :type instance_id: str
+        :param service_id: **参数说明**：设备的服务ID，在设备关联的产品模型中定义。
+        :type service_id: str
+        """
         
         
 
@@ -72,7 +83,7 @@ class ListPropertiesRequest:
         **参数说明**：下发属性的设备ID，用于唯一标识一个设备，在注册设备时由物联网平台分配获得。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :param device_id: The device_id of this ListPropertiesRequest.
-        :type: str
+        :type device_id: str
         """
         self._device_id = device_id
 
@@ -94,7 +105,7 @@ class ListPropertiesRequest:
         Sp用户Token。通过调用IoBPS服务获取SP用户Token
 
         :param sp_auth_token: The sp_auth_token of this ListPropertiesRequest.
-        :type: str
+        :type sp_auth_token: str
         """
         self._sp_auth_token = sp_auth_token
 
@@ -116,7 +127,7 @@ class ListPropertiesRequest:
         **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
         :param instance_id: The instance_id of this ListPropertiesRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -138,7 +149,7 @@ class ListPropertiesRequest:
         **参数说明**：设备的服务ID，在设备关联的产品模型中定义。
 
         :param service_id: The service_id of this ListPropertiesRequest.
-        :type: str
+        :type service_id: str
         """
         self._service_id = service_id
 

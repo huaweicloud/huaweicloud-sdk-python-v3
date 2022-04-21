@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPolicyStatesByAssignmentIdRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListPolicyStatesByAssignmentIdRequest:
     }
 
     def __init__(self, policy_assignment_id=None, compliance_state=None, resource_id=None, resource_name=None, limit=None, marker=None):
-        """ListPolicyStatesByAssignmentIdRequest - a model defined in huaweicloud sdk"""
+        """ListPolicyStatesByAssignmentIdRequest
+
+        The model defined in huaweicloud sdk
+
+        :param policy_assignment_id: 规则ID
+        :type policy_assignment_id: str
+        :param compliance_state: 合规状态
+        :type compliance_state: str
+        :param resource_id: 资源ID
+        :type resource_id: str
+        :param resource_name: 资源名称
+        :type resource_name: str
+        :param limit: 最大的返回数量
+        :type limit: int
+        :param marker: 分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
+        :type marker: str
+        """
         
         
 
@@ -82,7 +97,7 @@ class ListPolicyStatesByAssignmentIdRequest:
         规则ID
 
         :param policy_assignment_id: The policy_assignment_id of this ListPolicyStatesByAssignmentIdRequest.
-        :type: str
+        :type policy_assignment_id: str
         """
         self._policy_assignment_id = policy_assignment_id
 
@@ -104,7 +119,7 @@ class ListPolicyStatesByAssignmentIdRequest:
         合规状态
 
         :param compliance_state: The compliance_state of this ListPolicyStatesByAssignmentIdRequest.
-        :type: str
+        :type compliance_state: str
         """
         self._compliance_state = compliance_state
 
@@ -126,7 +141,7 @@ class ListPolicyStatesByAssignmentIdRequest:
         资源ID
 
         :param resource_id: The resource_id of this ListPolicyStatesByAssignmentIdRequest.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -148,7 +163,7 @@ class ListPolicyStatesByAssignmentIdRequest:
         资源名称
 
         :param resource_name: The resource_name of this ListPolicyStatesByAssignmentIdRequest.
-        :type: str
+        :type resource_name: str
         """
         self._resource_name = resource_name
 
@@ -170,7 +185,7 @@ class ListPolicyStatesByAssignmentIdRequest:
         最大的返回数量
 
         :param limit: The limit of this ListPolicyStatesByAssignmentIdRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -192,7 +207,7 @@ class ListPolicyStatesByAssignmentIdRequest:
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
         :param marker: The marker of this ListPolicyStatesByAssignmentIdRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 

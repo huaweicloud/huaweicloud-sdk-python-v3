@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DatabaseWithPrivilege:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DatabaseWithPrivilege:
     }
 
     def __init__(self, name=None, readonly=None):
-        """DatabaseWithPrivilege - a model defined in huaweicloud sdk"""
+        """DatabaseWithPrivilege
+
+        The model defined in huaweicloud sdk
+
+        :param name: 数据库名称。
+        :type name: str
+        :param readonly: 是否为只读权限。
+        :type readonly: bool
+        """
         
         
 
@@ -61,7 +68,7 @@ class DatabaseWithPrivilege:
         数据库名称。
 
         :param name: The name of this DatabaseWithPrivilege.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -83,7 +90,7 @@ class DatabaseWithPrivilege:
         是否为只读权限。
 
         :param readonly: The readonly of this DatabaseWithPrivilege.
-        :type: bool
+        :type readonly: bool
         """
         self._readonly = readonly
 

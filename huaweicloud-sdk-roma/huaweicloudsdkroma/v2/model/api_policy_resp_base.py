@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApiPolicyRespBase:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ApiPolicyRespBase:
     }
 
     def __init__(self, id=None, name=None, conditions=None, backend_params=None, effect_mode=None, authorizer_id=None):
-        """ApiPolicyRespBase - a model defined in huaweicloud sdk"""
+        """ApiPolicyRespBase
+
+        The model defined in huaweicloud sdk
+
+        :param id: 编号
+        :type id: str
+        :param name: 策略后端名称。字符串由中文、英文字母、数字、下划线组成，且只能以中文或英文开头。
+        :type name: str
+        :param conditions: 策略条件列表
+        :type conditions: list[:class:`huaweicloudsdkroma.v2.ConditionResp`]
+        :param backend_params: 后端参数列表
+        :type backend_params: list[:class:`huaweicloudsdkroma.v2.BackendParam`]
+        :param effect_mode: 关联的策略组合模式： - ALL：满足全部条件 - ANY：满足任一条件
+        :type effect_mode: str
+        :param authorizer_id: 后端自定义认证对象的ID
+        :type authorizer_id: str
+        """
         
         
 
@@ -80,7 +95,7 @@ class ApiPolicyRespBase:
         编号
 
         :param id: The id of this ApiPolicyRespBase.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -102,7 +117,7 @@ class ApiPolicyRespBase:
         策略后端名称。字符串由中文、英文字母、数字、下划线组成，且只能以中文或英文开头。
 
         :param name: The name of this ApiPolicyRespBase.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -113,7 +128,7 @@ class ApiPolicyRespBase:
         策略条件列表
 
         :return: The conditions of this ApiPolicyRespBase.
-        :rtype: list[ConditionResp]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.ConditionResp`]
         """
         return self._conditions
 
@@ -124,7 +139,7 @@ class ApiPolicyRespBase:
         策略条件列表
 
         :param conditions: The conditions of this ApiPolicyRespBase.
-        :type: list[ConditionResp]
+        :type conditions: list[:class:`huaweicloudsdkroma.v2.ConditionResp`]
         """
         self._conditions = conditions
 
@@ -135,7 +150,7 @@ class ApiPolicyRespBase:
         后端参数列表
 
         :return: The backend_params of this ApiPolicyRespBase.
-        :rtype: list[BackendParam]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.BackendParam`]
         """
         return self._backend_params
 
@@ -146,7 +161,7 @@ class ApiPolicyRespBase:
         后端参数列表
 
         :param backend_params: The backend_params of this ApiPolicyRespBase.
-        :type: list[BackendParam]
+        :type backend_params: list[:class:`huaweicloudsdkroma.v2.BackendParam`]
         """
         self._backend_params = backend_params
 
@@ -168,7 +183,7 @@ class ApiPolicyRespBase:
         关联的策略组合模式： - ALL：满足全部条件 - ANY：满足任一条件
 
         :param effect_mode: The effect_mode of this ApiPolicyRespBase.
-        :type: str
+        :type effect_mode: str
         """
         self._effect_mode = effect_mode
 
@@ -190,7 +205,7 @@ class ApiPolicyRespBase:
         后端自定义认证对象的ID
 
         :param authorizer_id: The authorizer_id of this ApiPolicyRespBase.
-        :type: str
+        :type authorizer_id: str
         """
         self._authorizer_id = authorizer_id
 

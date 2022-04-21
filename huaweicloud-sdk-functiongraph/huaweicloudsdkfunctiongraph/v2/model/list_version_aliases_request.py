@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListVersionAliasesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListVersionAliasesRequest:
     }
 
     def __init__(self, function_urn=None):
-        """ListVersionAliasesRequest - a model defined in huaweicloud sdk"""
+        """ListVersionAliasesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param function_urn: 函数的URN。
+        :type function_urn: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ListVersionAliasesRequest:
         函数的URN。
 
         :param function_urn: The function_urn of this ListVersionAliasesRequest.
-        :type: str
+        :type function_urn: str
         """
         self._function_urn = function_urn
 

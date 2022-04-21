@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PostSatisfactionReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class PostSatisfactionReq:
     }
 
     def __init__(self, degree=None):
-        """PostSatisfactionReq - a model defined in huaweicloud sdk"""
+        """PostSatisfactionReq
+
+        The model defined in huaweicloud sdk
+
+        :param degree: 满意度评分，当前仅支持二级评分，1表示满意，-1表示不满意。
+        :type degree: int
+        """
         
         
 
@@ -57,7 +62,7 @@ class PostSatisfactionReq:
         满意度评分，当前仅支持二级评分，1表示满意，-1表示不满意。
 
         :param degree: The degree of this PostSatisfactionReq.
-        :type: int
+        :type degree: int
         """
         self._degree = degree
 

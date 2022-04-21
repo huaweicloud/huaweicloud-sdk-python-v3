@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StorageGroup:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class StorageGroup:
     }
 
     def __init__(self, name=None, description=None, warm_data_retention_policy=None, cold_data_retention_policy=None):
-        """StorageGroup - a model defined in huaweicloud sdk"""
+        """StorageGroup
+
+        The model defined in huaweicloud sdk
+
+        :param name: 存储组名称
+        :type name: str
+        :param description: 描述
+        :type description: str
+        :param warm_data_retention_policy: 温数据老化策略，单位只支持d（天），且只支持整数，如365天则可配置为“365d”，如“365h”或“360.5d”等均不被支持
+        :type warm_data_retention_policy: str
+        :param cold_data_retention_policy: 冷数据老化策略，单位只支持d（天），且只支持整数，如365天则可配置为“365d”，如“365h”或“360.5d”等均不被支持
+        :type cold_data_retention_policy: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class StorageGroup:
         存储组名称
 
         :param name: The name of this StorageGroup.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -95,7 +106,7 @@ class StorageGroup:
         描述
 
         :param description: The description of this StorageGroup.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -117,7 +128,7 @@ class StorageGroup:
         温数据老化策略，单位只支持d（天），且只支持整数，如365天则可配置为“365d”，如“365h”或“360.5d”等均不被支持
 
         :param warm_data_retention_policy: The warm_data_retention_policy of this StorageGroup.
-        :type: str
+        :type warm_data_retention_policy: str
         """
         self._warm_data_retention_policy = warm_data_retention_policy
 
@@ -139,7 +150,7 @@ class StorageGroup:
         冷数据老化策略，单位只支持d（天），且只支持整数，如365天则可配置为“365d”，如“365h”或“360.5d”等均不被支持
 
         :param cold_data_retention_policy: The cold_data_retention_policy of this StorageGroup.
-        :type: str
+        :type cold_data_retention_policy: str
         """
         self._cold_data_retention_policy = cold_data_retention_policy
 

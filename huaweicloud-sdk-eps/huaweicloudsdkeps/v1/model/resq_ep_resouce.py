@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResqEpResouce:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ResqEpResouce:
     }
 
     def __init__(self, projects=None, resource_types=None, offset=None, limit=None, matches=None):
-        """ResqEpResouce - a model defined in huaweicloud sdk"""
+        """ResqEpResouce
+
+        The model defined in huaweicloud sdk
+
+        :param projects: 项目ID列表。resource_types中包含region级别服务时为必选项。
+        :type projects: list[str]
+        :param resource_types: 资源类型列表， 此参数为可输入的值（区分大小写）。例如：ecs,scaling_group, images, disk, vpcs,security-groups, shared_bandwidth, eip, cdn等。
+        :type resource_types: list[str]
+        :param offset: 索引位置， 从offset指定的下一条数据开始查询，必须为数字，不能为负数，默认为0。
+        :type offset: int
+        :param limit: 查询记录数，不传默认为1000，limit最多为1000, 最小值为1。
+        :type limit: int
+        :param matches: 搜索字段，key为要匹配的字段，固定为resource_name，value为匹配的值，不传则表示无匹配条件。
+        :type matches: list[:class:`huaweicloudsdkeps.v1.Match`]
+        """
         
         
 
@@ -77,7 +90,7 @@ class ResqEpResouce:
         项目ID列表。resource_types中包含region级别服务时为必选项。
 
         :param projects: The projects of this ResqEpResouce.
-        :type: list[str]
+        :type projects: list[str]
         """
         self._projects = projects
 
@@ -99,7 +112,7 @@ class ResqEpResouce:
         资源类型列表， 此参数为可输入的值（区分大小写）。例如：ecs,scaling_group, images, disk, vpcs,security-groups, shared_bandwidth, eip, cdn等。
 
         :param resource_types: The resource_types of this ResqEpResouce.
-        :type: list[str]
+        :type resource_types: list[str]
         """
         self._resource_types = resource_types
 
@@ -121,7 +134,7 @@ class ResqEpResouce:
         索引位置， 从offset指定的下一条数据开始查询，必须为数字，不能为负数，默认为0。
 
         :param offset: The offset of this ResqEpResouce.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -143,7 +156,7 @@ class ResqEpResouce:
         查询记录数，不传默认为1000，limit最多为1000, 最小值为1。
 
         :param limit: The limit of this ResqEpResouce.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -154,7 +167,7 @@ class ResqEpResouce:
         搜索字段，key为要匹配的字段，固定为resource_name，value为匹配的值，不传则表示无匹配条件。
 
         :return: The matches of this ResqEpResouce.
-        :rtype: list[Match]
+        :rtype: list[:class:`huaweicloudsdkeps.v1.Match`]
         """
         return self._matches
 
@@ -165,7 +178,7 @@ class ResqEpResouce:
         搜索字段，key为要匹配的字段，固定为resource_name，value为匹配的值，不传则表示无匹配条件。
 
         :param matches: The matches of this ResqEpResouce.
-        :type: list[Match]
+        :type matches: list[:class:`huaweicloudsdkeps.v1.Match`]
         """
         self._matches = matches
 

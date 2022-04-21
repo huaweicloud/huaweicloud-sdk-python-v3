@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ProductsCalculation:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ProductsCalculation:
     }
 
     def __init__(self, normal_products_numbers=None, gateway_products_numbers=None):
-        """ProductsCalculation - a model defined in huaweicloud sdk"""
+        """ProductsCalculation
+
+        The model defined in huaweicloud sdk
+
+        :param normal_products_numbers: 普通产品数量
+        :type normal_products_numbers: int
+        :param gateway_products_numbers: 网关产品数量
+        :type gateway_products_numbers: int
+        """
         
         
 
@@ -63,7 +70,7 @@ class ProductsCalculation:
         普通产品数量
 
         :param normal_products_numbers: The normal_products_numbers of this ProductsCalculation.
-        :type: int
+        :type normal_products_numbers: int
         """
         self._normal_products_numbers = normal_products_numbers
 
@@ -85,7 +92,7 @@ class ProductsCalculation:
         网关产品数量
 
         :param gateway_products_numbers: The gateway_products_numbers of this ProductsCalculation.
-        :type: int
+        :type gateway_products_numbers: int
         """
         self._gateway_products_numbers = gateway_products_numbers
 

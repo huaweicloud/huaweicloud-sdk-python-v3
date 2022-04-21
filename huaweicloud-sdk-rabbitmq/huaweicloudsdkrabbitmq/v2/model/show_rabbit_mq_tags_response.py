@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowRabbitMqTagsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowRabbitMqTagsResponse(SdkResponse):
     }
 
     def __init__(self, tags=None):
-        """ShowRabbitMqTagsResponse - a model defined in huaweicloud sdk"""
+        """ShowRabbitMqTagsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param tags: 标签列表
+        :type tags: list[:class:`huaweicloudsdkrabbitmq.v2.TagEntity`]
+        """
         
         super(ShowRabbitMqTagsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ShowRabbitMqTagsResponse(SdkResponse):
         标签列表
 
         :return: The tags of this ShowRabbitMqTagsResponse.
-        :rtype: list[TagEntity]
+        :rtype: list[:class:`huaweicloudsdkrabbitmq.v2.TagEntity`]
         """
         return self._tags
 
@@ -58,7 +63,7 @@ class ShowRabbitMqTagsResponse(SdkResponse):
         标签列表
 
         :param tags: The tags of this ShowRabbitMqTagsResponse.
-        :type: list[TagEntity]
+        :type tags: list[:class:`huaweicloudsdkrabbitmq.v2.TagEntity`]
         """
         self._tags = tags
 

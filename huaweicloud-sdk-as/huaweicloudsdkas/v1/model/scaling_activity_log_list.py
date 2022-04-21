@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ScalingActivityLogList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class ScalingActivityLogList:
     }
 
     def __init__(self, status=None, start_time=None, end_time=None, id=None, instance_removed_list=None, instance_deleted_list=None, instance_added_list=None, scaling_value=None, description=None, instance_value=None, desire_value=None):
-        """ScalingActivityLogList - a model defined in huaweicloud sdk"""
+        """ScalingActivityLogList
+
+        The model defined in huaweicloud sdk
+
+        :param status: 伸缩活动状态：SUCCESS：成功。FAIL：失败。DOING：伸缩过程中。
+        :type status: str
+        :param start_time: 伸缩活动触发时间，遵循UTC时间。
+        :type start_time: datetime
+        :param end_time: 伸缩活动结束时间，遵循UTC时间。
+        :type end_time: datetime
+        :param id: 伸缩活动日志ID。
+        :type id: str
+        :param instance_removed_list: 完成伸缩活动且只被移出弹性伸缩组的云服务器名称列表，云服务器名之间以逗号分隔。
+        :type instance_removed_list: str
+        :param instance_deleted_list: 完成伸缩活动且被移出弹性伸缩组并删除的云服务器名称列表，云服务器名之间以逗号分隔。
+        :type instance_deleted_list: str
+        :param instance_added_list: 完成伸缩活动且被加入弹性伸缩组的云服务器名称列表，云服务器名之间以逗号分割。
+        :type instance_added_list: str
+        :param scaling_value: 伸缩活动中变化（增加或减少）的云服务器数量。
+        :type scaling_value: str
+        :param description: 伸缩活动的描述信息。
+        :type description: str
+        :param instance_value: 伸缩组当前instance值。
+        :type instance_value: int
+        :param desire_value: 伸缩活动最终desire值。
+        :type desire_value: int
+        """
         
         
 
@@ -108,7 +133,7 @@ class ScalingActivityLogList:
         伸缩活动状态：SUCCESS：成功。FAIL：失败。DOING：伸缩过程中。
 
         :param status: The status of this ScalingActivityLogList.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -130,7 +155,7 @@ class ScalingActivityLogList:
         伸缩活动触发时间，遵循UTC时间。
 
         :param start_time: The start_time of this ScalingActivityLogList.
-        :type: datetime
+        :type start_time: datetime
         """
         self._start_time = start_time
 
@@ -152,7 +177,7 @@ class ScalingActivityLogList:
         伸缩活动结束时间，遵循UTC时间。
 
         :param end_time: The end_time of this ScalingActivityLogList.
-        :type: datetime
+        :type end_time: datetime
         """
         self._end_time = end_time
 
@@ -174,7 +199,7 @@ class ScalingActivityLogList:
         伸缩活动日志ID。
 
         :param id: The id of this ScalingActivityLogList.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -196,7 +221,7 @@ class ScalingActivityLogList:
         完成伸缩活动且只被移出弹性伸缩组的云服务器名称列表，云服务器名之间以逗号分隔。
 
         :param instance_removed_list: The instance_removed_list of this ScalingActivityLogList.
-        :type: str
+        :type instance_removed_list: str
         """
         self._instance_removed_list = instance_removed_list
 
@@ -218,7 +243,7 @@ class ScalingActivityLogList:
         完成伸缩活动且被移出弹性伸缩组并删除的云服务器名称列表，云服务器名之间以逗号分隔。
 
         :param instance_deleted_list: The instance_deleted_list of this ScalingActivityLogList.
-        :type: str
+        :type instance_deleted_list: str
         """
         self._instance_deleted_list = instance_deleted_list
 
@@ -240,7 +265,7 @@ class ScalingActivityLogList:
         完成伸缩活动且被加入弹性伸缩组的云服务器名称列表，云服务器名之间以逗号分割。
 
         :param instance_added_list: The instance_added_list of this ScalingActivityLogList.
-        :type: str
+        :type instance_added_list: str
         """
         self._instance_added_list = instance_added_list
 
@@ -262,7 +287,7 @@ class ScalingActivityLogList:
         伸缩活动中变化（增加或减少）的云服务器数量。
 
         :param scaling_value: The scaling_value of this ScalingActivityLogList.
-        :type: str
+        :type scaling_value: str
         """
         self._scaling_value = scaling_value
 
@@ -284,7 +309,7 @@ class ScalingActivityLogList:
         伸缩活动的描述信息。
 
         :param description: The description of this ScalingActivityLogList.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -306,7 +331,7 @@ class ScalingActivityLogList:
         伸缩组当前instance值。
 
         :param instance_value: The instance_value of this ScalingActivityLogList.
-        :type: int
+        :type instance_value: int
         """
         self._instance_value = instance_value
 
@@ -328,7 +353,7 @@ class ScalingActivityLogList:
         伸缩活动最终desire值。
 
         :param desire_value: The desire_value of this ScalingActivityLogList.
-        :type: int
+        :type desire_value: int
         """
         self._desire_value = desire_value
 

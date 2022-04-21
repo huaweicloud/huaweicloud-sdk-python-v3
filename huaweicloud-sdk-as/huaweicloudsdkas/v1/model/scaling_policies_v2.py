@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ScalingPoliciesV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class ScalingPoliciesV2:
     }
 
     def __init__(self, scaling_policy_name=None, scaling_policy_id=None, scaling_resource_id=None, scaling_resource_type=None, policy_status=None, scaling_policy_type=None, alarm_id=None, scheduled_policy=None, scaling_policy_action=None, cool_down_time=None, create_time=None, meta_data=None, description=None):
-        """ScalingPoliciesV2 - a model defined in huaweicloud sdk"""
+        """ScalingPoliciesV2
+
+        The model defined in huaweicloud sdk
+
+        :param scaling_policy_name: 伸缩策略名称。
+        :type scaling_policy_name: str
+        :param scaling_policy_id: 伸缩策略ID。
+        :type scaling_policy_id: str
+        :param scaling_resource_id: 伸缩资源ID。
+        :type scaling_resource_id: str
+        :param scaling_resource_type: 伸缩资源类型。伸缩组：SCALING_GROUP。带宽：BANDWIDTH。
+        :type scaling_resource_type: str
+        :param policy_status: 伸缩策略状态。INSERVICE：使用中。PAUSED：停止。EXECUTING：执行中。
+        :type policy_status: str
+        :param scaling_policy_type: 伸缩策略类型：ALARM：告警策略，此时alarm_id有返回，scheduled_policy不会返回。SCHEDULED：定时策略，此时alarm_id不会返回，scheduled_policy有返回，并且recurrence_type、recurrence_value、start_time和end_time不会返回。RECURRENCE：周期策略，此时alarm_id不会返回，scheduled_policy有返回，并且recurrence_type、recurrence_value、start_time和end_time有返回。
+        :type scaling_policy_type: str
+        :param alarm_id: 告警ID。
+        :type alarm_id: str
+        :param scheduled_policy: 
+        :type scheduled_policy: :class:`huaweicloudsdkas.v1.ScheduledPolicy`
+        :param scaling_policy_action: 
+        :type scaling_policy_action: :class:`huaweicloudsdkas.v1.ScalingPolicyActionV2`
+        :param cool_down_time: 冷却时间，取值范围0-86400，默认为300，单位是秒。
+        :type cool_down_time: int
+        :param create_time: 创建伸缩策略时间，遵循UTC时间
+        :type create_time: datetime
+        :param meta_data: 
+        :type meta_data: :class:`huaweicloudsdkas.v1.ScalingPolicyV2MetaData`
+        :param description: 伸缩策略描述（1-256个字符）
+        :type description: str
+        """
         
         
 
@@ -118,7 +147,7 @@ class ScalingPoliciesV2:
         伸缩策略名称。
 
         :param scaling_policy_name: The scaling_policy_name of this ScalingPoliciesV2.
-        :type: str
+        :type scaling_policy_name: str
         """
         self._scaling_policy_name = scaling_policy_name
 
@@ -140,7 +169,7 @@ class ScalingPoliciesV2:
         伸缩策略ID。
 
         :param scaling_policy_id: The scaling_policy_id of this ScalingPoliciesV2.
-        :type: str
+        :type scaling_policy_id: str
         """
         self._scaling_policy_id = scaling_policy_id
 
@@ -162,7 +191,7 @@ class ScalingPoliciesV2:
         伸缩资源ID。
 
         :param scaling_resource_id: The scaling_resource_id of this ScalingPoliciesV2.
-        :type: str
+        :type scaling_resource_id: str
         """
         self._scaling_resource_id = scaling_resource_id
 
@@ -184,7 +213,7 @@ class ScalingPoliciesV2:
         伸缩资源类型。伸缩组：SCALING_GROUP。带宽：BANDWIDTH。
 
         :param scaling_resource_type: The scaling_resource_type of this ScalingPoliciesV2.
-        :type: str
+        :type scaling_resource_type: str
         """
         self._scaling_resource_type = scaling_resource_type
 
@@ -206,7 +235,7 @@ class ScalingPoliciesV2:
         伸缩策略状态。INSERVICE：使用中。PAUSED：停止。EXECUTING：执行中。
 
         :param policy_status: The policy_status of this ScalingPoliciesV2.
-        :type: str
+        :type policy_status: str
         """
         self._policy_status = policy_status
 
@@ -228,7 +257,7 @@ class ScalingPoliciesV2:
         伸缩策略类型：ALARM：告警策略，此时alarm_id有返回，scheduled_policy不会返回。SCHEDULED：定时策略，此时alarm_id不会返回，scheduled_policy有返回，并且recurrence_type、recurrence_value、start_time和end_time不会返回。RECURRENCE：周期策略，此时alarm_id不会返回，scheduled_policy有返回，并且recurrence_type、recurrence_value、start_time和end_time有返回。
 
         :param scaling_policy_type: The scaling_policy_type of this ScalingPoliciesV2.
-        :type: str
+        :type scaling_policy_type: str
         """
         self._scaling_policy_type = scaling_policy_type
 
@@ -250,7 +279,7 @@ class ScalingPoliciesV2:
         告警ID。
 
         :param alarm_id: The alarm_id of this ScalingPoliciesV2.
-        :type: str
+        :type alarm_id: str
         """
         self._alarm_id = alarm_id
 
@@ -260,7 +289,7 @@ class ScalingPoliciesV2:
 
 
         :return: The scheduled_policy of this ScalingPoliciesV2.
-        :rtype: ScheduledPolicy
+        :rtype: :class:`huaweicloudsdkas.v1.ScheduledPolicy`
         """
         return self._scheduled_policy
 
@@ -270,7 +299,7 @@ class ScalingPoliciesV2:
 
 
         :param scheduled_policy: The scheduled_policy of this ScalingPoliciesV2.
-        :type: ScheduledPolicy
+        :type scheduled_policy: :class:`huaweicloudsdkas.v1.ScheduledPolicy`
         """
         self._scheduled_policy = scheduled_policy
 
@@ -280,7 +309,7 @@ class ScalingPoliciesV2:
 
 
         :return: The scaling_policy_action of this ScalingPoliciesV2.
-        :rtype: ScalingPolicyActionV2
+        :rtype: :class:`huaweicloudsdkas.v1.ScalingPolicyActionV2`
         """
         return self._scaling_policy_action
 
@@ -290,7 +319,7 @@ class ScalingPoliciesV2:
 
 
         :param scaling_policy_action: The scaling_policy_action of this ScalingPoliciesV2.
-        :type: ScalingPolicyActionV2
+        :type scaling_policy_action: :class:`huaweicloudsdkas.v1.ScalingPolicyActionV2`
         """
         self._scaling_policy_action = scaling_policy_action
 
@@ -312,7 +341,7 @@ class ScalingPoliciesV2:
         冷却时间，取值范围0-86400，默认为300，单位是秒。
 
         :param cool_down_time: The cool_down_time of this ScalingPoliciesV2.
-        :type: int
+        :type cool_down_time: int
         """
         self._cool_down_time = cool_down_time
 
@@ -334,7 +363,7 @@ class ScalingPoliciesV2:
         创建伸缩策略时间，遵循UTC时间
 
         :param create_time: The create_time of this ScalingPoliciesV2.
-        :type: datetime
+        :type create_time: datetime
         """
         self._create_time = create_time
 
@@ -344,7 +373,7 @@ class ScalingPoliciesV2:
 
 
         :return: The meta_data of this ScalingPoliciesV2.
-        :rtype: ScalingPolicyV2MetaData
+        :rtype: :class:`huaweicloudsdkas.v1.ScalingPolicyV2MetaData`
         """
         return self._meta_data
 
@@ -354,7 +383,7 @@ class ScalingPoliciesV2:
 
 
         :param meta_data: The meta_data of this ScalingPoliciesV2.
-        :type: ScalingPolicyV2MetaData
+        :type meta_data: :class:`huaweicloudsdkas.v1.ScalingPolicyV2MetaData`
         """
         self._meta_data = meta_data
 
@@ -376,7 +405,7 @@ class ScalingPoliciesV2:
         伸缩策略描述（1-256个字符）
 
         :param description: The description of this ScalingPoliciesV2.
-        :type: str
+        :type description: str
         """
         self._description = description
 

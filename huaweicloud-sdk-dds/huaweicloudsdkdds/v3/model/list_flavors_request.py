@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListFlavorsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListFlavorsRequest:
     }
 
     def __init__(self, region=None, engine_name=None):
-        """ListFlavorsRequest - a model defined in huaweicloud sdk"""
+        """ListFlavorsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param region: 实例所在区域。
+        :type region: str
+        :param engine_name: 数据库版本类型。取值为“DDS-Community”。
+        :type engine_name: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class ListFlavorsRequest:
         实例所在区域。
 
         :param region: The region of this ListFlavorsRequest.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -85,7 +92,7 @@ class ListFlavorsRequest:
         数据库版本类型。取值为“DDS-Community”。
 
         :param engine_name: The engine_name of this ListFlavorsRequest.
-        :type: str
+        :type engine_name: str
         """
         self._engine_name = engine_name
 

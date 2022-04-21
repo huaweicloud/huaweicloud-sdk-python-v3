@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ValueData:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ValueData:
     }
 
     def __init__(self, metric_name=None, type=None, unit=None, value=None):
-        """ValueData - a model defined in huaweicloud sdk"""
+        """ValueData
+
+        The model defined in huaweicloud sdk
+
+        :param metric_name: 指标名称。长度1~255。
+        :type metric_name: str
+        :param type: 数据的类型。 取值范围 只能是\&quot;int\&quot;或\&quot;float\&quot;。
+        :type type: str
+        :param unit: 数据的单位。长度不超过32个字符。
+        :type unit: str
+        :param value: 指标数据的值。 取值范围 有效的数值类型。
+        :type value: float
+        """
         
         
 
@@ -71,7 +82,7 @@ class ValueData:
         指标名称。长度1~255。
 
         :param metric_name: The metric_name of this ValueData.
-        :type: str
+        :type metric_name: str
         """
         self._metric_name = metric_name
 
@@ -93,7 +104,7 @@ class ValueData:
         数据的类型。 取值范围 只能是\"int\"或\"float\"。
 
         :param type: The type of this ValueData.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -115,7 +126,7 @@ class ValueData:
         数据的单位。长度不超过32个字符。
 
         :param unit: The unit of this ValueData.
-        :type: str
+        :type unit: str
         """
         self._unit = unit
 
@@ -137,7 +148,7 @@ class ValueData:
         指标数据的值。 取值范围 有效的数值类型。
 
         :param value: The value of this ValueData.
-        :type: float
+        :type value: float
         """
         self._value = value
 

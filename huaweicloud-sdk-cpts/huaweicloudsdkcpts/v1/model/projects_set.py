@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ProjectsSet:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ProjectsSet:
     }
 
     def __init__(self, create_time=None, update_time=None, description=None, id=None, name=None, status=None, external_params=None, variables_no_file=None):
-        """ProjectsSet - a model defined in huaweicloud sdk"""
+        """ProjectsSet
+
+        The model defined in huaweicloud sdk
+
+        :param create_time: 创建时间
+        :type create_time: datetime
+        :param update_time: 更新时间
+        :type update_time: datetime
+        :param description: 描述
+        :type description: str
+        :param id: 工程id
+        :type id: int
+        :param name: 工程名字
+        :type name: str
+        :param status: 工程状态
+        :type status: int
+        :param external_params: 外部参数
+        :type external_params: object
+        :param variables_no_file: 文件变量
+        :type variables_no_file: list[str]
+        """
         
         
 
@@ -93,7 +112,7 @@ class ProjectsSet:
         创建时间
 
         :param create_time: The create_time of this ProjectsSet.
-        :type: datetime
+        :type create_time: datetime
         """
         self._create_time = create_time
 
@@ -115,7 +134,7 @@ class ProjectsSet:
         更新时间
 
         :param update_time: The update_time of this ProjectsSet.
-        :type: datetime
+        :type update_time: datetime
         """
         self._update_time = update_time
 
@@ -137,7 +156,7 @@ class ProjectsSet:
         描述
 
         :param description: The description of this ProjectsSet.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -159,7 +178,7 @@ class ProjectsSet:
         工程id
 
         :param id: The id of this ProjectsSet.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -181,7 +200,7 @@ class ProjectsSet:
         工程名字
 
         :param name: The name of this ProjectsSet.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -203,7 +222,7 @@ class ProjectsSet:
         工程状态
 
         :param status: The status of this ProjectsSet.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -225,7 +244,7 @@ class ProjectsSet:
         外部参数
 
         :param external_params: The external_params of this ProjectsSet.
-        :type: object
+        :type external_params: object
         """
         self._external_params = external_params
 
@@ -247,7 +266,7 @@ class ProjectsSet:
         文件变量
 
         :param variables_no_file: The variables_no_file of this ProjectsSet.
-        :type: list[str]
+        :type variables_no_file: list[str]
         """
         self._variables_no_file = variables_no_file
 

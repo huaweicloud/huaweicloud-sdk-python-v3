@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ServiceCommandPara:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class ServiceCommandPara:
     }
 
     def __init__(self, para_name=None, data_type=None, required=None, enum_list=None, min=None, max=None, max_length=None, step=None, unit=None, description=None):
-        """ServiceCommandPara - a model defined in huaweicloud sdk"""
+        """ServiceCommandPara
+
+        The model defined in huaweicloud sdk
+
+        :param para_name: **参数说明**：参数的名称。 **取值范围**：长度不超过32，只允许中文、字母、数字、以及_?&#39;#().,&amp;%@!-等字符的组合。
+        :type para_name: str
+        :param data_type: **参数说明**：参数的数据类型。 **取值范围**：int，long，decimal，string，DateTime，jsonObject，enum，boolean，string list。
+        :type data_type: str
+        :param required: **参数说明**：参数是否必选。默认为false。
+        :type required: bool
+        :param enum_list: **参数说明**：参数的枚举值列表。
+        :type enum_list: list[str]
+        :param min: **参数说明**：参数的最小值。 **取值范围**：长度1-16。
+        :type min: str
+        :param max: **参数说明**：参数的最大值。 **取值范围**：长度1-16。
+        :type max: str
+        :param max_length: **参数说明**：参数的最大长度。
+        :type max_length: int
+        :param step: **参数说明**：参数的步长。
+        :type step: float
+        :param unit: **参数说明**：参数的单位。 **取值范围**：长度不超过16。
+        :type unit: str
+        :param description: **参数说明**：参数的描述。 **取值范围**：长度不超过128，只允许中文、字母、数字、空白字符、以及_?&#39;#().,;&amp;%@!- ，、：；。/等字符的组合。
+        :type description: str
+        """
         
         
 
@@ -101,7 +124,7 @@ class ServiceCommandPara:
         **参数说明**：参数的名称。 **取值范围**：长度不超过32，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
         :param para_name: The para_name of this ServiceCommandPara.
-        :type: str
+        :type para_name: str
         """
         self._para_name = para_name
 
@@ -123,7 +146,7 @@ class ServiceCommandPara:
         **参数说明**：参数的数据类型。 **取值范围**：int，long，decimal，string，DateTime，jsonObject，enum，boolean，string list。
 
         :param data_type: The data_type of this ServiceCommandPara.
-        :type: str
+        :type data_type: str
         """
         self._data_type = data_type
 
@@ -145,7 +168,7 @@ class ServiceCommandPara:
         **参数说明**：参数是否必选。默认为false。
 
         :param required: The required of this ServiceCommandPara.
-        :type: bool
+        :type required: bool
         """
         self._required = required
 
@@ -167,7 +190,7 @@ class ServiceCommandPara:
         **参数说明**：参数的枚举值列表。
 
         :param enum_list: The enum_list of this ServiceCommandPara.
-        :type: list[str]
+        :type enum_list: list[str]
         """
         self._enum_list = enum_list
 
@@ -189,7 +212,7 @@ class ServiceCommandPara:
         **参数说明**：参数的最小值。 **取值范围**：长度1-16。
 
         :param min: The min of this ServiceCommandPara.
-        :type: str
+        :type min: str
         """
         self._min = min
 
@@ -211,7 +234,7 @@ class ServiceCommandPara:
         **参数说明**：参数的最大值。 **取值范围**：长度1-16。
 
         :param max: The max of this ServiceCommandPara.
-        :type: str
+        :type max: str
         """
         self._max = max
 
@@ -233,7 +256,7 @@ class ServiceCommandPara:
         **参数说明**：参数的最大长度。
 
         :param max_length: The max_length of this ServiceCommandPara.
-        :type: int
+        :type max_length: int
         """
         self._max_length = max_length
 
@@ -255,7 +278,7 @@ class ServiceCommandPara:
         **参数说明**：参数的步长。
 
         :param step: The step of this ServiceCommandPara.
-        :type: float
+        :type step: float
         """
         self._step = step
 
@@ -277,7 +300,7 @@ class ServiceCommandPara:
         **参数说明**：参数的单位。 **取值范围**：长度不超过16。
 
         :param unit: The unit of this ServiceCommandPara.
-        :type: str
+        :type unit: str
         """
         self._unit = unit
 
@@ -299,7 +322,7 @@ class ServiceCommandPara:
         **参数说明**：参数的描述。 **取值范围**：长度不超过128，只允许中文、字母、数字、空白字符、以及_?'#().,;&%@!- ，、：；。/等字符的组合。
 
         :param description: The description of this ServiceCommandPara.
-        :type: str
+        :type description: str
         """
         self._description = description
 

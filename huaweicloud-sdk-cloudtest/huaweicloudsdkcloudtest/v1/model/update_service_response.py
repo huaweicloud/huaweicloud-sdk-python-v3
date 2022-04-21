@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateServiceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UpdateServiceResponse(SdkResponse):
     }
 
     def __init__(self, service_name=None, service_id=None, error_code=None, error_msg=None):
-        """UpdateServiceResponse - a model defined in huaweicloud sdk"""
+        """UpdateServiceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param service_name: 接口调用成功返回的服务名
+        :type service_name: str
+        :param service_id: 接口调用成功返回的服务id
+        :type service_id: int
+        :param error_code: 接口调用成功不返回，调用失败错误码
+        :type error_code: str
+        :param error_msg: 接口调用成功不返回，调用失败错误信息
+        :type error_msg: str
+        """
         
         super(UpdateServiceResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class UpdateServiceResponse(SdkResponse):
         接口调用成功返回的服务名
 
         :param service_name: The service_name of this UpdateServiceResponse.
-        :type: str
+        :type service_name: str
         """
         self._service_name = service_name
 
@@ -95,7 +106,7 @@ class UpdateServiceResponse(SdkResponse):
         接口调用成功返回的服务id
 
         :param service_id: The service_id of this UpdateServiceResponse.
-        :type: int
+        :type service_id: int
         """
         self._service_id = service_id
 
@@ -117,7 +128,7 @@ class UpdateServiceResponse(SdkResponse):
         接口调用成功不返回，调用失败错误码
 
         :param error_code: The error_code of this UpdateServiceResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -139,7 +150,7 @@ class UpdateServiceResponse(SdkResponse):
         接口调用成功不返回，调用失败错误信息
 
         :param error_msg: The error_msg of this UpdateServiceResponse.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateTransTemplateRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateTransTemplateRequest:
     }
 
     def __init__(self, body=None):
-        """CreateTransTemplateRequest - a model defined in huaweicloud sdk"""
+        """CreateTransTemplateRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateTransTemplateRequest
+        :type body: :class:`huaweicloudsdkmpc.v1.TransTemplate`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateTransTemplateRequest:
 
 
         :return: The body of this CreateTransTemplateRequest.
-        :rtype: TransTemplate
+        :rtype: :class:`huaweicloudsdkmpc.v1.TransTemplate`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateTransTemplateRequest:
 
 
         :param body: The body of this CreateTransTemplateRequest.
-        :type: TransTemplate
+        :type body: :class:`huaweicloudsdkmpc.v1.TransTemplate`
         """
         self._body = body
 

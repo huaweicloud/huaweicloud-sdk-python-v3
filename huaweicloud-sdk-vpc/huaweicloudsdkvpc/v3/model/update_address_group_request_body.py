@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateAddressGroupRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateAddressGroupRequestBody:
     }
 
     def __init__(self, dry_run=None, address_group=None):
-        """UpdateAddressGroupRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateAddressGroupRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param dry_run: 功能说明：是否只预检此次请求 取值范围： -true：发送检查请求，不会更新地址组内容。检查项包括是否填写了必需参数、请求格式、业务限制。如果检查不通过，则返回对应错误。如果检查通过，则返回响应码202。 -false（默认值）：发送正常请求，并直接更新地址组。
+        :type dry_run: bool
+        :param address_group: 
+        :type address_group: :class:`huaweicloudsdkvpc.v3.UpdateAddressGroupOption`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateAddressGroupRequestBody:
         功能说明：是否只预检此次请求 取值范围： -true：发送检查请求，不会更新地址组内容。检查项包括是否填写了必需参数、请求格式、业务限制。如果检查不通过，则返回对应错误。如果检查通过，则返回响应码202。 -false（默认值）：发送正常请求，并直接更新地址组。
 
         :param dry_run: The dry_run of this UpdateAddressGroupRequestBody.
-        :type: bool
+        :type dry_run: bool
         """
         self._dry_run = dry_run
 
@@ -72,7 +79,7 @@ class UpdateAddressGroupRequestBody:
 
 
         :return: The address_group of this UpdateAddressGroupRequestBody.
-        :rtype: UpdateAddressGroupOption
+        :rtype: :class:`huaweicloudsdkvpc.v3.UpdateAddressGroupOption`
         """
         return self._address_group
 
@@ -82,7 +89,7 @@ class UpdateAddressGroupRequestBody:
 
 
         :param address_group: The address_group of this UpdateAddressGroupRequestBody.
-        :type: UpdateAddressGroupOption
+        :type address_group: :class:`huaweicloudsdkvpc.v3.UpdateAddressGroupOption`
         """
         self._address_group = address_group
 

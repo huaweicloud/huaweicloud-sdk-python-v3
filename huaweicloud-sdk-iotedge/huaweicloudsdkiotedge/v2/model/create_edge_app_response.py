@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateEdgeAppResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class CreateEdgeAppResponse(SdkResponse):
     }
 
     def __init__(self, edge_app_id=None, description=None, create_time=None, update_time=None, last_published_version=None, app_type=None, function_type=None, deploy_type=None):
-        """CreateEdgeAppResponse - a model defined in huaweicloud sdk"""
+        """CreateEdgeAppResponse
+
+        The model defined in huaweicloud sdk
+
+        :param edge_app_id: 应用名称
+        :type edge_app_id: str
+        :param description: 应用描述
+        :type description: str
+        :param create_time: 创建时间
+        :type create_time: str
+        :param update_time: 最后一次修改时间
+        :type update_time: str
+        :param last_published_version: 最新发布版本
+        :type last_published_version: str
+        :param app_type: 应用类型SYSTEM_REQUIRED|SYSTEM_OPTIONAL|USER
+        :type app_type: str
+        :param function_type: 应用类型DATA_PROCESSING|PROTOCOL_PARSING
+        :type function_type: str
+        :param deploy_type: 部署类型docker|process
+        :type deploy_type: str
+        """
         
         super(CreateEdgeAppResponse, self).__init__()
 
@@ -93,7 +112,7 @@ class CreateEdgeAppResponse(SdkResponse):
         应用名称
 
         :param edge_app_id: The edge_app_id of this CreateEdgeAppResponse.
-        :type: str
+        :type edge_app_id: str
         """
         self._edge_app_id = edge_app_id
 
@@ -115,7 +134,7 @@ class CreateEdgeAppResponse(SdkResponse):
         应用描述
 
         :param description: The description of this CreateEdgeAppResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -137,7 +156,7 @@ class CreateEdgeAppResponse(SdkResponse):
         创建时间
 
         :param create_time: The create_time of this CreateEdgeAppResponse.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -159,7 +178,7 @@ class CreateEdgeAppResponse(SdkResponse):
         最后一次修改时间
 
         :param update_time: The update_time of this CreateEdgeAppResponse.
-        :type: str
+        :type update_time: str
         """
         self._update_time = update_time
 
@@ -181,7 +200,7 @@ class CreateEdgeAppResponse(SdkResponse):
         最新发布版本
 
         :param last_published_version: The last_published_version of this CreateEdgeAppResponse.
-        :type: str
+        :type last_published_version: str
         """
         self._last_published_version = last_published_version
 
@@ -203,7 +222,7 @@ class CreateEdgeAppResponse(SdkResponse):
         应用类型SYSTEM_REQUIRED|SYSTEM_OPTIONAL|USER
 
         :param app_type: The app_type of this CreateEdgeAppResponse.
-        :type: str
+        :type app_type: str
         """
         self._app_type = app_type
 
@@ -225,7 +244,7 @@ class CreateEdgeAppResponse(SdkResponse):
         应用类型DATA_PROCESSING|PROTOCOL_PARSING
 
         :param function_type: The function_type of this CreateEdgeAppResponse.
-        :type: str
+        :type function_type: str
         """
         self._function_type = function_type
 
@@ -247,7 +266,7 @@ class CreateEdgeAppResponse(SdkResponse):
         部署类型docker|process
 
         :param deploy_type: The deploy_type of this CreateEdgeAppResponse.
-        :type: str
+        :type deploy_type: str
         """
         self._deploy_type = deploy_type
 

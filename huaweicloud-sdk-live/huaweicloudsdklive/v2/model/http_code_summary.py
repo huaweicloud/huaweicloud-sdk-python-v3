@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class HttpCodeSummary:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class HttpCodeSummary:
     }
 
     def __init__(self, http_codes=None, time=None):
-        """HttpCodeSummary - a model defined in huaweicloud sdk"""
+        """HttpCodeSummary
+
+        The model defined in huaweicloud sdk
+
+        :param http_codes: 状态码信息
+        :type http_codes: list[:class:`huaweicloudsdklive.v2.HttpCode`]
+        :param time: 采样时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ 。
+        :type time: str
+        """
         
         
 
@@ -52,7 +59,7 @@ class HttpCodeSummary:
         状态码信息
 
         :return: The http_codes of this HttpCodeSummary.
-        :rtype: list[HttpCode]
+        :rtype: list[:class:`huaweicloudsdklive.v2.HttpCode`]
         """
         return self._http_codes
 
@@ -63,7 +70,7 @@ class HttpCodeSummary:
         状态码信息
 
         :param http_codes: The http_codes of this HttpCodeSummary.
-        :type: list[HttpCode]
+        :type http_codes: list[:class:`huaweicloudsdklive.v2.HttpCode`]
         """
         self._http_codes = http_codes
 
@@ -85,7 +92,7 @@ class HttpCodeSummary:
         采样时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ 。
 
         :param time: The time of this HttpCodeSummary.
-        :type: str
+        :type time: str
         """
         self._time = time
 

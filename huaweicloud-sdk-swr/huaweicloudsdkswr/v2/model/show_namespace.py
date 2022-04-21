@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowNamespace:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowNamespace:
     }
 
     def __init__(self, id=None, name=None, creator_name=None, auth=None):
-        """ShowNamespace - a model defined in huaweicloud sdk"""
+        """ShowNamespace
+
+        The model defined in huaweicloud sdk
+
+        :param id: id
+        :type id: int
+        :param name: 组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
+        :type name: str
+        :param creator_name: IAM用户名
+        :type creator_name: str
+        :param auth: 用户权限。7表示管理权限，3表示编辑权限，1表示读取权限。
+        :type auth: int
+        """
         
         
 
@@ -69,7 +80,7 @@ class ShowNamespace:
         id
 
         :param id: The id of this ShowNamespace.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -91,7 +102,7 @@ class ShowNamespace:
         组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
 
         :param name: The name of this ShowNamespace.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -113,7 +124,7 @@ class ShowNamespace:
         IAM用户名
 
         :param creator_name: The creator_name of this ShowNamespace.
-        :type: str
+        :type creator_name: str
         """
         self._creator_name = creator_name
 
@@ -135,7 +146,7 @@ class ShowNamespace:
         用户权限。7表示管理权限，3表示编辑权限，1表示读取权限。
 
         :param auth: The auth of this ShowNamespace.
-        :type: int
+        :type auth: int
         """
         self._auth = auth
 

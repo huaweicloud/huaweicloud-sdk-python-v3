@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DictionaryExtendTwo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class DictionaryExtendTwo:
     }
 
     def __init__(self):
-        """DictionaryExtendTwo - a model defined in huaweicloud sdk"""
+        """DictionaryExtendTwo
+
+        The model defined in huaweicloud sdk
+
+        """
         
         
         self.discriminator = None

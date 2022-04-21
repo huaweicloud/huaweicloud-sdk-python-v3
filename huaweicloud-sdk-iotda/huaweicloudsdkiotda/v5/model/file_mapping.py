@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FileMapping:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class FileMapping:
     }
 
     def __init__(self, csv_mappings=None):
-        """FileMapping - a model defined in huaweicloud sdk"""
+        """FileMapping
+
+        The model defined in huaweicloud sdk
+
+        :param csv_mappings: **参数说明**：csv文件格式转换列表。当file_type为csv时，必填。
+        :type csv_mappings: list[:class:`huaweicloudsdkiotda.v5.CsvMappings`]
+        """
         
         
 
@@ -47,7 +52,7 @@ class FileMapping:
         **参数说明**：csv文件格式转换列表。当file_type为csv时，必填。
 
         :return: The csv_mappings of this FileMapping.
-        :rtype: list[CsvMappings]
+        :rtype: list[:class:`huaweicloudsdkiotda.v5.CsvMappings`]
         """
         return self._csv_mappings
 
@@ -58,7 +63,7 @@ class FileMapping:
         **参数说明**：csv文件格式转换列表。当file_type为csv时，必填。
 
         :param csv_mappings: The csv_mappings of this FileMapping.
-        :type: list[CsvMappings]
+        :type csv_mappings: list[:class:`huaweicloudsdkiotda.v5.CsvMappings`]
         """
         self._csv_mappings = csv_mappings
 

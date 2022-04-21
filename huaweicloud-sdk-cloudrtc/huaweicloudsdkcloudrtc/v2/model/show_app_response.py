@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowAppResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class ShowAppResponse(SdkResponse):
     }
 
     def __init__(self, app_name=None, app_id=None, state=None, scope=None, tenant_name=None, domain=None, create_time=None, authentication=None, callbacks=None, auto_record_mode=None, x_request_id=None):
-        """ShowAppResponse - a model defined in huaweicloud sdk"""
+        """ShowAppResponse
+
+        The model defined in huaweicloud sdk
+
+        :param app_name: app名称
+        :type app_name: str
+        :param app_id: 应用id
+        :type app_id: str
+        :param state: 
+        :type state: :class:`huaweicloudsdkcloudrtc.v2.AppState`
+        :param scope: RTC覆盖范围。  取值如下：    - DOMESTIC：国内范围。   - OVERSEA：海外范围。   - GLOBAL：全球范围。 
+        :type scope: str
+        :param tenant_name: 账号名
+        :type tenant_name: str
+        :param domain: 域名，App对应域名
+        :type domain: str
+        :param create_time: 创建时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
+        :type create_time: str
+        :param authentication: 
+        :type authentication: :class:`huaweicloudsdkcloudrtc.v2.AppAuth`
+        :param callbacks: 
+        :type callbacks: :class:`huaweicloudsdkcloudrtc.v2.AppCallbacks`
+        :param auto_record_mode: 
+        :type auto_record_mode: :class:`huaweicloudsdkcloudrtc.v2.AppAutoRecordMode`
+        :param x_request_id: 
+        :type x_request_id: str
+        """
         
         super(ShowAppResponse, self).__init__()
 
@@ -108,7 +133,7 @@ class ShowAppResponse(SdkResponse):
         app名称
 
         :param app_name: The app_name of this ShowAppResponse.
-        :type: str
+        :type app_name: str
         """
         self._app_name = app_name
 
@@ -130,7 +155,7 @@ class ShowAppResponse(SdkResponse):
         应用id
 
         :param app_id: The app_id of this ShowAppResponse.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -140,7 +165,7 @@ class ShowAppResponse(SdkResponse):
 
 
         :return: The state of this ShowAppResponse.
-        :rtype: AppState
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.AppState`
         """
         return self._state
 
@@ -150,7 +175,7 @@ class ShowAppResponse(SdkResponse):
 
 
         :param state: The state of this ShowAppResponse.
-        :type: AppState
+        :type state: :class:`huaweicloudsdkcloudrtc.v2.AppState`
         """
         self._state = state
 
@@ -172,7 +197,7 @@ class ShowAppResponse(SdkResponse):
         RTC覆盖范围。  取值如下：    - DOMESTIC：国内范围。   - OVERSEA：海外范围。   - GLOBAL：全球范围。 
 
         :param scope: The scope of this ShowAppResponse.
-        :type: str
+        :type scope: str
         """
         self._scope = scope
 
@@ -194,7 +219,7 @@ class ShowAppResponse(SdkResponse):
         账号名
 
         :param tenant_name: The tenant_name of this ShowAppResponse.
-        :type: str
+        :type tenant_name: str
         """
         self._tenant_name = tenant_name
 
@@ -216,7 +241,7 @@ class ShowAppResponse(SdkResponse):
         域名，App对应域名
 
         :param domain: The domain of this ShowAppResponse.
-        :type: str
+        :type domain: str
         """
         self._domain = domain
 
@@ -238,7 +263,7 @@ class ShowAppResponse(SdkResponse):
         创建时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
 
         :param create_time: The create_time of this ShowAppResponse.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -248,7 +273,7 @@ class ShowAppResponse(SdkResponse):
 
 
         :return: The authentication of this ShowAppResponse.
-        :rtype: AppAuth
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.AppAuth`
         """
         return self._authentication
 
@@ -258,7 +283,7 @@ class ShowAppResponse(SdkResponse):
 
 
         :param authentication: The authentication of this ShowAppResponse.
-        :type: AppAuth
+        :type authentication: :class:`huaweicloudsdkcloudrtc.v2.AppAuth`
         """
         self._authentication = authentication
 
@@ -268,7 +293,7 @@ class ShowAppResponse(SdkResponse):
 
 
         :return: The callbacks of this ShowAppResponse.
-        :rtype: AppCallbacks
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.AppCallbacks`
         """
         return self._callbacks
 
@@ -278,7 +303,7 @@ class ShowAppResponse(SdkResponse):
 
 
         :param callbacks: The callbacks of this ShowAppResponse.
-        :type: AppCallbacks
+        :type callbacks: :class:`huaweicloudsdkcloudrtc.v2.AppCallbacks`
         """
         self._callbacks = callbacks
 
@@ -288,7 +313,7 @@ class ShowAppResponse(SdkResponse):
 
 
         :return: The auto_record_mode of this ShowAppResponse.
-        :rtype: AppAutoRecordMode
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.AppAutoRecordMode`
         """
         return self._auto_record_mode
 
@@ -298,7 +323,7 @@ class ShowAppResponse(SdkResponse):
 
 
         :param auto_record_mode: The auto_record_mode of this ShowAppResponse.
-        :type: AppAutoRecordMode
+        :type auto_record_mode: :class:`huaweicloudsdkcloudrtc.v2.AppAutoRecordMode`
         """
         self._auto_record_mode = auto_record_mode
 
@@ -318,7 +343,7 @@ class ShowAppResponse(SdkResponse):
 
 
         :param x_request_id: The x_request_id of this ShowAppResponse.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 

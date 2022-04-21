@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DDosStatus:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class DDosStatus:
     }
 
     def __init__(self, floating_ip_id=None, floating_ip_address=None, network_type=None, status=None, blackhole_endtime=None, protect_type=None, traffic_threshold=None, http_threshold=None):
-        """DDosStatus - a model defined in huaweicloud sdk"""
+        """DDosStatus
+
+        The model defined in huaweicloud sdk
+
+        :param floating_ip_id: EIP的ID
+        :type floating_ip_id: str
+        :param floating_ip_address: 浮动IP地址
+        :type floating_ip_address: str
+        :param network_type: EIP所属类型，可选范围： - EIP：未绑定到ECS的EIP或绑定到ECS的EIP - ELB：绑定到ELB的EIP
+        :type network_type: str
+        :param status: 防护状态，可选范围： - normal：表示正常 - configging：表示设置中 - notConfig：表示未设置 - packetcleaning：表示清洗 - packetdropping：表示黑洞
+        :type status: str
+        :param blackhole_endtime: 黑洞结束时间
+        :type blackhole_endtime: int
+        :param protect_type: 防护类型
+        :type protect_type: str
+        :param traffic_threshold: 流量阈值
+        :type traffic_threshold: int
+        :param http_threshold: http流量阈值
+        :type http_threshold: int
+        """
         
         
 
@@ -85,7 +104,7 @@ class DDosStatus:
         EIP的ID
 
         :param floating_ip_id: The floating_ip_id of this DDosStatus.
-        :type: str
+        :type floating_ip_id: str
         """
         self._floating_ip_id = floating_ip_id
 
@@ -107,7 +126,7 @@ class DDosStatus:
         浮动IP地址
 
         :param floating_ip_address: The floating_ip_address of this DDosStatus.
-        :type: str
+        :type floating_ip_address: str
         """
         self._floating_ip_address = floating_ip_address
 
@@ -129,7 +148,7 @@ class DDosStatus:
         EIP所属类型，可选范围： - EIP：未绑定到ECS的EIP或绑定到ECS的EIP - ELB：绑定到ELB的EIP
 
         :param network_type: The network_type of this DDosStatus.
-        :type: str
+        :type network_type: str
         """
         self._network_type = network_type
 
@@ -151,7 +170,7 @@ class DDosStatus:
         防护状态，可选范围： - normal：表示正常 - configging：表示设置中 - notConfig：表示未设置 - packetcleaning：表示清洗 - packetdropping：表示黑洞
 
         :param status: The status of this DDosStatus.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -173,7 +192,7 @@ class DDosStatus:
         黑洞结束时间
 
         :param blackhole_endtime: The blackhole_endtime of this DDosStatus.
-        :type: int
+        :type blackhole_endtime: int
         """
         self._blackhole_endtime = blackhole_endtime
 
@@ -195,7 +214,7 @@ class DDosStatus:
         防护类型
 
         :param protect_type: The protect_type of this DDosStatus.
-        :type: str
+        :type protect_type: str
         """
         self._protect_type = protect_type
 
@@ -217,7 +236,7 @@ class DDosStatus:
         流量阈值
 
         :param traffic_threshold: The traffic_threshold of this DDosStatus.
-        :type: int
+        :type traffic_threshold: int
         """
         self._traffic_threshold = traffic_threshold
 
@@ -239,7 +258,7 @@ class DDosStatus:
         http流量阈值
 
         :param http_threshold: The http_threshold of this DDosStatus.
-        :type: int
+        :type http_threshold: int
         """
         self._http_threshold = http_threshold
 

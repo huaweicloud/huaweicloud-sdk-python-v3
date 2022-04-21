@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteIpFromDomainNameRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class DeleteIpFromDomainNameRequest:
     }
 
     def __init__(self, instance_id=None, group_id=None, node_id=None):
-        """DeleteIpFromDomainNameRequest - a model defined in huaweicloud sdk"""
+        """DeleteIpFromDomainNameRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param group_id: 分片ID。
+        :type group_id: str
+        :param node_id: 节点ID。
+        :type node_id: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class DeleteIpFromDomainNameRequest:
         实例ID。
 
         :param instance_id: The instance_id of this DeleteIpFromDomainNameRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -87,7 +96,7 @@ class DeleteIpFromDomainNameRequest:
         分片ID。
 
         :param group_id: The group_id of this DeleteIpFromDomainNameRequest.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -109,7 +118,7 @@ class DeleteIpFromDomainNameRequest:
         节点ID。
 
         :param node_id: The node_id of this DeleteIpFromDomainNameRequest.
-        :type: str
+        :type node_id: str
         """
         self._node_id = node_id
 

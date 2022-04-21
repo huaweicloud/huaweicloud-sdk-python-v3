@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPrivilegesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListPrivilegesResponse(SdkResponse):
     }
 
     def __init__(self, has_privilege=None):
-        """ListPrivilegesResponse - a model defined in huaweicloud sdk"""
+        """ListPrivilegesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param has_privilege: 是否有权限
+        :type has_privilege: int
+        """
         
         super(ListPrivilegesResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class ListPrivilegesResponse(SdkResponse):
         是否有权限
 
         :param has_privilege: The has_privilege of this ListPrivilegesResponse.
-        :type: int
+        :type has_privilege: int
         """
         self._has_privilege = has_privilege
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListQuotaDetailsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListQuotaDetailsRequest:
     }
 
     def __init__(self, type=None):
-        """ListQuotaDetailsRequest - a model defined in huaweicloud sdk"""
+        """ListQuotaDetailsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param type: 资源类型，取值：loadbalancer、listener、ipgroup、pool、member、members_per_pool、healthmonitor、l7policy、certificate、security_policy，其中members_per_pool表示一个pool下最多可关联的member数量。
+        :type type: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class ListQuotaDetailsRequest:
         资源类型，取值：loadbalancer、listener、ipgroup、pool、member、members_per_pool、healthmonitor、l7policy、certificate、security_policy，其中members_per_pool表示一个pool下最多可关联的member数量。
 
         :param type: The type of this ListQuotaDetailsRequest.
-        :type: str
+        :type type: str
         """
         self._type = type
 

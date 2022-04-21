@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateSubCustomerReqV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class CreateSubCustomerReqV2:
     }
 
     def __init__(self, party_id=None, display_name=None, sub_customer_association_type=None, permission_ids=None, new_sub_customer=None):
-        """CreateSubCustomerReqV2 - a model defined in huaweicloud sdk"""
+        """CreateSubCustomerReqV2
+
+        The model defined in huaweicloud sdk
+
+        :param party_id: 企业子账号挂载的组织单元。 组织单元的Party ID，通过查询企业组织结构接口的响应获得。
+        :type party_id: str
+        :param display_name: 企业子账号的显示名称，不限制特殊字符。
+        :type display_name: str
+        :param sub_customer_association_type: 子账号关联类型：1：同一法人。 关联类型目前只能是同一法人。
+        :type sub_customer_association_type: int
+        :param permission_ids: 申请的权限列表。 支持的权限项请参见下表。
+        :type permission_ids: list[str]
+        :param new_sub_customer: 
+        :type new_sub_customer: :class:`huaweicloudsdkbss.v2.NewCustomerV2`
+        """
         
         
 
@@ -76,7 +89,7 @@ class CreateSubCustomerReqV2:
         企业子账号挂载的组织单元。 组织单元的Party ID，通过查询企业组织结构接口的响应获得。
 
         :param party_id: The party_id of this CreateSubCustomerReqV2.
-        :type: str
+        :type party_id: str
         """
         self._party_id = party_id
 
@@ -98,7 +111,7 @@ class CreateSubCustomerReqV2:
         企业子账号的显示名称，不限制特殊字符。
 
         :param display_name: The display_name of this CreateSubCustomerReqV2.
-        :type: str
+        :type display_name: str
         """
         self._display_name = display_name
 
@@ -120,7 +133,7 @@ class CreateSubCustomerReqV2:
         子账号关联类型：1：同一法人。 关联类型目前只能是同一法人。
 
         :param sub_customer_association_type: The sub_customer_association_type of this CreateSubCustomerReqV2.
-        :type: int
+        :type sub_customer_association_type: int
         """
         self._sub_customer_association_type = sub_customer_association_type
 
@@ -142,7 +155,7 @@ class CreateSubCustomerReqV2:
         申请的权限列表。 支持的权限项请参见下表。
 
         :param permission_ids: The permission_ids of this CreateSubCustomerReqV2.
-        :type: list[str]
+        :type permission_ids: list[str]
         """
         self._permission_ids = permission_ids
 
@@ -152,7 +165,7 @@ class CreateSubCustomerReqV2:
 
 
         :return: The new_sub_customer of this CreateSubCustomerReqV2.
-        :rtype: NewCustomerV2
+        :rtype: :class:`huaweicloudsdkbss.v2.NewCustomerV2`
         """
         return self._new_sub_customer
 
@@ -162,7 +175,7 @@ class CreateSubCustomerReqV2:
 
 
         :param new_sub_customer: The new_sub_customer of this CreateSubCustomerReqV2.
-        :type: NewCustomerV2
+        :type new_sub_customer: :class:`huaweicloudsdkbss.v2.NewCustomerV2`
         """
         self._new_sub_customer = new_sub_customer
 

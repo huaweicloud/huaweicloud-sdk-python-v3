@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDomainNotAddedProjectsV4Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListDomainNotAddedProjectsV4Request:
     }
 
     def __init__(self, offset=None, limit=None):
-        """ListDomainNotAddedProjectsV4Request - a model defined in huaweicloud sdk"""
+        """ListDomainNotAddedProjectsV4Request
+
+        The model defined in huaweicloud sdk
+
+        :param offset: 分页索引，偏移量,offset是limit的整数倍，limit&#x3D;10,offset&#x3D;0,10,20...
+        :type offset: int
+        :param limit: 每页显示的数量,每页最多显示100条
+        :type limit: int
+        """
         
         
 
@@ -63,7 +70,7 @@ class ListDomainNotAddedProjectsV4Request:
         分页索引，偏移量,offset是limit的整数倍，limit=10,offset=0,10,20...
 
         :param offset: The offset of this ListDomainNotAddedProjectsV4Request.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -85,7 +92,7 @@ class ListDomainNotAddedProjectsV4Request:
         每页显示的数量,每页最多显示100条
 
         :param limit: The limit of this ListDomainNotAddedProjectsV4Request.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

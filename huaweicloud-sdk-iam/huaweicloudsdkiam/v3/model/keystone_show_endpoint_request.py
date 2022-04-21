@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneShowEndpointRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class KeystoneShowEndpointRequest:
     }
 
     def __init__(self, endpoint_id=None):
-        """KeystoneShowEndpointRequest - a model defined in huaweicloud sdk"""
+        """KeystoneShowEndpointRequest
+
+        The model defined in huaweicloud sdk
+
+        :param endpoint_id: 待查询的终端节点ID。
+        :type endpoint_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class KeystoneShowEndpointRequest:
         待查询的终端节点ID。
 
         :param endpoint_id: The endpoint_id of this KeystoneShowEndpointRequest.
-        :type: str
+        :type endpoint_id: str
         """
         self._endpoint_id = endpoint_id
 

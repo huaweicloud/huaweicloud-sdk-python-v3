@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NovaAssociateSecurityGroupRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class NovaAssociateSecurityGroupRequestBody:
     }
 
     def __init__(self, add_security_group=None):
-        """NovaAssociateSecurityGroupRequestBody - a model defined in huaweicloud sdk"""
+        """NovaAssociateSecurityGroupRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param add_security_group: 
+        :type add_security_group: :class:`huaweicloudsdkecs.v2.NovaAddSecurityGroupOption`
+        """
         
         
 
@@ -45,7 +50,7 @@ class NovaAssociateSecurityGroupRequestBody:
 
 
         :return: The add_security_group of this NovaAssociateSecurityGroupRequestBody.
-        :rtype: NovaAddSecurityGroupOption
+        :rtype: :class:`huaweicloudsdkecs.v2.NovaAddSecurityGroupOption`
         """
         return self._add_security_group
 
@@ -55,7 +60,7 @@ class NovaAssociateSecurityGroupRequestBody:
 
 
         :param add_security_group: The add_security_group of this NovaAssociateSecurityGroupRequestBody.
-        :type: NovaAddSecurityGroupOption
+        :type add_security_group: :class:`huaweicloudsdkecs.v2.NovaAddSecurityGroupOption`
         """
         self._add_security_group = add_security_group
 

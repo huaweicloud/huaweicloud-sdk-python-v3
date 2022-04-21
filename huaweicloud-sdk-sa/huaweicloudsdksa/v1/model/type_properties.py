@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TypeProperties:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class TypeProperties:
     }
 
     def __init__(self, killchain=None, ttps=None, effects=None):
-        """TypeProperties - a model defined in huaweicloud sdk"""
+        """TypeProperties
+
+        The model defined in huaweicloud sdk
+
+        :param killchain: Kill chain事件分类，仅当business为attack有效
+        :type killchain: str
+        :param ttps: Mitre Array 事件分类，仅当business为attack有效
+        :type ttps: str
+        :param effects: 影响，适用全部类型
+        :type effects: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class TypeProperties:
         Kill chain事件分类，仅当business为attack有效
 
         :param killchain: The killchain of this TypeProperties.
-        :type: str
+        :type killchain: str
         """
         self._killchain = killchain
 
@@ -90,7 +99,7 @@ class TypeProperties:
         Mitre Array 事件分类，仅当business为attack有效
 
         :param ttps: The ttps of this TypeProperties.
-        :type: str
+        :type ttps: str
         """
         self._ttps = ttps
 
@@ -112,7 +121,7 @@ class TypeProperties:
         影响，适用全部类型
 
         :param effects: The effects of this TypeProperties.
-        :type: str
+        :type effects: str
         """
         self._effects = effects
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RepoStatisticsLaunch:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class RepoStatisticsLaunch:
     }
 
     def __init__(self, can_statistics=None, join_id=None, message=None):
-        """RepoStatisticsLaunch - a model defined in huaweicloud sdk"""
+        """RepoStatisticsLaunch
+
+        The model defined in huaweicloud sdk
+
+        :param can_statistics: 仓库是否可以统计
+        :type can_statistics: bool
+        :param join_id: sidekiq任务的 id
+        :type join_id: str
+        :param message: 启动仓库统计返回的信息
+        :type message: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class RepoStatisticsLaunch:
         仓库是否可以统计
 
         :param can_statistics: The can_statistics of this RepoStatisticsLaunch.
-        :type: bool
+        :type can_statistics: bool
         """
         self._can_statistics = can_statistics
 
@@ -90,7 +99,7 @@ class RepoStatisticsLaunch:
         sidekiq任务的 id
 
         :param join_id: The join_id of this RepoStatisticsLaunch.
-        :type: str
+        :type join_id: str
         """
         self._join_id = join_id
 
@@ -112,7 +121,7 @@ class RepoStatisticsLaunch:
         启动仓库统计返回的信息
 
         :param message: The message of this RepoStatisticsLaunch.
-        :type: str
+        :type message: str
         """
         self._message = message
 

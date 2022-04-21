@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FlavorLink:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class FlavorLink:
     }
 
     def __init__(self, href=None, rel=None, type=None):
-        """FlavorLink - a model defined in huaweicloud sdk"""
+        """FlavorLink
+
+        The model defined in huaweicloud sdk
+
+        :param href: 对应快捷链接。
+        :type href: str
+        :param rel: 快捷链接标记名称。
+        :type rel: str
+        :param type: 快捷链接类型，当前接口未使用，缺省值为null。
+        :type type: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class FlavorLink:
         对应快捷链接。
 
         :param href: The href of this FlavorLink.
-        :type: str
+        :type href: str
         """
         self._href = href
 
@@ -87,7 +96,7 @@ class FlavorLink:
         快捷链接标记名称。
 
         :param rel: The rel of this FlavorLink.
-        :type: str
+        :type rel: str
         """
         self._rel = rel
 
@@ -109,7 +118,7 @@ class FlavorLink:
         快捷链接类型，当前接口未使用，缺省值为null。
 
         :param type: The type of this FlavorLink.
-        :type: str
+        :type type: str
         """
         self._type = type
 

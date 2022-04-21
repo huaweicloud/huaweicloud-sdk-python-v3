@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateResDatastructRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UpdateResDatastructRequest:
     }
 
     def __init__(self, content_type=None, datasource_id=None, workspace_id=None, body=None):
-        """UpdateResDatastructRequest - a model defined in huaweicloud sdk"""
+        """UpdateResDatastructRequest
+
+        The model defined in huaweicloud sdk
+
+        :param content_type: 内容类型，取值为application/json。
+        :type content_type: str
+        :param datasource_id: 数据源id。
+        :type datasource_id: str
+        :param workspace_id: 工作空间id。
+        :type workspace_id: str
+        :param body: Body of the UpdateResDatastructRequest
+        :type body: :class:`huaweicloudsdkres.v1.UpdateResDatastructRequestBodyBody`
+        """
         
         
 
@@ -70,7 +81,7 @@ class UpdateResDatastructRequest:
         内容类型，取值为application/json。
 
         :param content_type: The content_type of this UpdateResDatastructRequest.
-        :type: str
+        :type content_type: str
         """
         self._content_type = content_type
 
@@ -92,7 +103,7 @@ class UpdateResDatastructRequest:
         数据源id。
 
         :param datasource_id: The datasource_id of this UpdateResDatastructRequest.
-        :type: str
+        :type datasource_id: str
         """
         self._datasource_id = datasource_id
 
@@ -114,7 +125,7 @@ class UpdateResDatastructRequest:
         工作空间id。
 
         :param workspace_id: The workspace_id of this UpdateResDatastructRequest.
-        :type: str
+        :type workspace_id: str
         """
         self._workspace_id = workspace_id
 
@@ -124,7 +135,7 @@ class UpdateResDatastructRequest:
 
 
         :return: The body of this UpdateResDatastructRequest.
-        :rtype: UpdateResDatastructRequestBodyBody
+        :rtype: :class:`huaweicloudsdkres.v1.UpdateResDatastructRequestBodyBody`
         """
         return self._body
 
@@ -134,7 +145,7 @@ class UpdateResDatastructRequest:
 
 
         :param body: The body of this UpdateResDatastructRequest.
-        :type: UpdateResDatastructRequestBodyBody
+        :type body: :class:`huaweicloudsdkres.v1.UpdateResDatastructRequestBodyBody`
         """
         self._body = body
 

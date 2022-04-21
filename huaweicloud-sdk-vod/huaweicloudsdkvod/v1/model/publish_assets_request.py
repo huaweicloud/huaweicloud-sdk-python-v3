@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PublishAssetsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class PublishAssetsRequest:
     }
 
     def __init__(self, body=None):
-        """PublishAssetsRequest - a model defined in huaweicloud sdk"""
+        """PublishAssetsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the PublishAssetsRequest
+        :type body: :class:`huaweicloudsdkvod.v1.PublishAssetReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class PublishAssetsRequest:
 
 
         :return: The body of this PublishAssetsRequest.
-        :rtype: PublishAssetReq
+        :rtype: :class:`huaweicloudsdkvod.v1.PublishAssetReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class PublishAssetsRequest:
 
 
         :param body: The body of this PublishAssetsRequest.
-        :type: PublishAssetReq
+        :type body: :class:`huaweicloudsdkvod.v1.PublishAssetReq`
         """
         self._body = body
 

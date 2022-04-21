@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateDictionary:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class CreateDictionary:
     }
 
     def __init__(self, name=None, remark=None, code=None, order=None, extend_one=None, extend_two=None, parent_code=None):
-        """CreateDictionary - a model defined in huaweicloud sdk"""
+        """CreateDictionary
+
+        The model defined in huaweicloud sdk
+
+        :param name: 字典名称 - 字符集：中文、英文字母、数字、下划线和空格 - 约束：实例下唯一
+        :type name: str
+        :param remark: 字典描述
+        :type remark: str
+        :param code: 字典编码 - 字符集：英文字母、数字、下划线和空格 - 约束：实例下唯一
+        :type code: str
+        :param order: 字典排序，值越小顺序越靠前
+        :type order: int
+        :param extend_one: 字典扩展字段1 - 字符集：中文、英文字母、数字、下划线和空格
+        :type extend_one: str
+        :param extend_two: 字典扩展字段2 - 字符集：中文、英文字母、数字、下划线和空格
+        :type extend_two: str
+        :param parent_code: 父字典编码,为空时代表自身就是最顶级字典
+        :type parent_code: str
+        """
         
         
 
@@ -86,7 +103,7 @@ class CreateDictionary:
         字典名称 - 字符集：中文、英文字母、数字、下划线和空格 - 约束：实例下唯一
 
         :param name: The name of this CreateDictionary.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -108,7 +125,7 @@ class CreateDictionary:
         字典描述
 
         :param remark: The remark of this CreateDictionary.
-        :type: str
+        :type remark: str
         """
         self._remark = remark
 
@@ -130,7 +147,7 @@ class CreateDictionary:
         字典编码 - 字符集：英文字母、数字、下划线和空格 - 约束：实例下唯一
 
         :param code: The code of this CreateDictionary.
-        :type: str
+        :type code: str
         """
         self._code = code
 
@@ -152,7 +169,7 @@ class CreateDictionary:
         字典排序，值越小顺序越靠前
 
         :param order: The order of this CreateDictionary.
-        :type: int
+        :type order: int
         """
         self._order = order
 
@@ -174,7 +191,7 @@ class CreateDictionary:
         字典扩展字段1 - 字符集：中文、英文字母、数字、下划线和空格
 
         :param extend_one: The extend_one of this CreateDictionary.
-        :type: str
+        :type extend_one: str
         """
         self._extend_one = extend_one
 
@@ -196,7 +213,7 @@ class CreateDictionary:
         字典扩展字段2 - 字符集：中文、英文字母、数字、下划线和空格
 
         :param extend_two: The extend_two of this CreateDictionary.
-        :type: str
+        :type extend_two: str
         """
         self._extend_two = extend_two
 
@@ -218,7 +235,7 @@ class CreateDictionary:
         父字典编码,为空时代表自身就是最顶级字典
 
         :param parent_code: The parent_code of this CreateDictionary.
-        :type: str
+        :type parent_code: str
         """
         self._parent_code = parent_code
 

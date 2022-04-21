@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDomainItemLocationDetailsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ShowDomainItemLocationDetailsRequest:
     }
 
     def __init__(self, enterprise_project_id=None, start_time=None, end_time=None, domain_name=None, stat_type=None, region=None, isp=None):
-        """ShowDomainItemLocationDetailsRequest - a model defined in huaweicloud sdk"""
+        """ShowDomainItemLocationDetailsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param enterprise_project_id: 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子账号调用接口时，该参数必传。
+        :type enterprise_project_id: str
+        :param start_time: 查询开始时间戳，必须设为5分钟整时刻点
+        :type start_time: int
+        :param end_time: 查询结束时间戳，必须设为5分钟整时刻点
+        :type end_time: int
+        :param domain_name: 域名列表，多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com，all表示查询名下全部域名
+        :type domain_name: str
+        :param stat_type: 指标类型列表 网络资源消耗：bw（带宽），flux（流量），ipv6_bw(ipv6带宽)，ipv6_flux(ipv6流量), https_bw(https带宽)，https_flux(https流量) 访问情况：req_num（请求总数），hit_num（请求命中次数），req_time(请求时长) HTTP状态码（组合指标）：status_code_2xx(状态码2xx)，status_code_3xx(状态码3xx)，status_code_4xx(状态码4xx)，status_code_5xx(状态码5xx)
+        :type stat_type: str
+        :param region: 区域列表，以逗号分隔，all表示查询全部区域
+        :type region: str
+        :param isp: 运营商列表，以逗号分隔，all表示查询全部运营商
+        :type isp: str
+        """
         
         
 
@@ -82,7 +99,7 @@ class ShowDomainItemLocationDetailsRequest:
         当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子账号调用接口时，该参数必传。
 
         :param enterprise_project_id: The enterprise_project_id of this ShowDomainItemLocationDetailsRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -104,7 +121,7 @@ class ShowDomainItemLocationDetailsRequest:
         查询开始时间戳，必须设为5分钟整时刻点
 
         :param start_time: The start_time of this ShowDomainItemLocationDetailsRequest.
-        :type: int
+        :type start_time: int
         """
         self._start_time = start_time
 
@@ -126,7 +143,7 @@ class ShowDomainItemLocationDetailsRequest:
         查询结束时间戳，必须设为5分钟整时刻点
 
         :param end_time: The end_time of this ShowDomainItemLocationDetailsRequest.
-        :type: int
+        :type end_time: int
         """
         self._end_time = end_time
 
@@ -148,7 +165,7 @@ class ShowDomainItemLocationDetailsRequest:
         域名列表，多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com，all表示查询名下全部域名
 
         :param domain_name: The domain_name of this ShowDomainItemLocationDetailsRequest.
-        :type: str
+        :type domain_name: str
         """
         self._domain_name = domain_name
 
@@ -170,7 +187,7 @@ class ShowDomainItemLocationDetailsRequest:
         指标类型列表 网络资源消耗：bw（带宽），flux（流量），ipv6_bw(ipv6带宽)，ipv6_flux(ipv6流量), https_bw(https带宽)，https_flux(https流量) 访问情况：req_num（请求总数），hit_num（请求命中次数），req_time(请求时长) HTTP状态码（组合指标）：status_code_2xx(状态码2xx)，status_code_3xx(状态码3xx)，status_code_4xx(状态码4xx)，status_code_5xx(状态码5xx)
 
         :param stat_type: The stat_type of this ShowDomainItemLocationDetailsRequest.
-        :type: str
+        :type stat_type: str
         """
         self._stat_type = stat_type
 
@@ -192,7 +209,7 @@ class ShowDomainItemLocationDetailsRequest:
         区域列表，以逗号分隔，all表示查询全部区域
 
         :param region: The region of this ShowDomainItemLocationDetailsRequest.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -214,7 +231,7 @@ class ShowDomainItemLocationDetailsRequest:
         运营商列表，以逗号分隔，all表示查询全部运营商
 
         :param isp: The isp of this ShowDomainItemLocationDetailsRequest.
-        :type: str
+        :type isp: str
         """
         self._isp = isp
 

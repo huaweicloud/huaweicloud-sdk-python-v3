@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InnodbLock:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class InnodbLock:
     }
 
     def __init__(self, lock_id=None, lock_trx_id=None, lock_mode=None, lock_type=None, lock_table=None, lock_index=None, lock_space=None, lock_page=None, lock_rec=None, lock_data=None):
-        """InnodbLock - a model defined in huaweicloud sdk"""
+        """InnodbLock
+
+        The model defined in huaweicloud sdk
+
+        :param lock_id: 锁ID
+        :type lock_id: str
+        :param lock_trx_id: 事务ID
+        :type lock_trx_id: str
+        :param lock_mode: 锁模式，取值为S[,GAP], X[,GAP], IS[,GAP], IX[,GAP], AUTO_INC, and UNKNOWN。
+        :type lock_mode: str
+        :param lock_type: 锁类型，取值为RECORD或TABLE。RECORD为行锁, TABLE为表锁
+        :type lock_type: str
+        :param lock_table: 加锁的表
+        :type lock_table: str
+        :param lock_index: 如果是lock_type&#x3D;&#39;RECORD&#39; 行级锁 ,为锁住的索引，如果是表锁为null
+        :type lock_index: str
+        :param lock_space: 如果是lock_type&#x3D;&#39;RECORD&#39; 行级锁 ,为锁住的索引，如果是表锁为null
+        :type lock_space: str
+        :param lock_page: 如果是lock_type&#x3D;&#39;RECORD&#39; 行级锁 ,为锁住的页号，如果是表锁为null
+        :type lock_page: str
+        :param lock_rec: 如果是lock_type&#x3D;&#39;RECORD&#39; 行级锁 ,为锁住的堆号，如果是表锁为null
+        :type lock_rec: str
+        :param lock_data: 事务锁住的主键值，若是表锁，则该值为null
+        :type lock_data: str
+        """
         
         
 
@@ -93,7 +116,7 @@ class InnodbLock:
         锁ID
 
         :param lock_id: The lock_id of this InnodbLock.
-        :type: str
+        :type lock_id: str
         """
         self._lock_id = lock_id
 
@@ -115,7 +138,7 @@ class InnodbLock:
         事务ID
 
         :param lock_trx_id: The lock_trx_id of this InnodbLock.
-        :type: str
+        :type lock_trx_id: str
         """
         self._lock_trx_id = lock_trx_id
 
@@ -137,7 +160,7 @@ class InnodbLock:
         锁模式，取值为S[,GAP], X[,GAP], IS[,GAP], IX[,GAP], AUTO_INC, and UNKNOWN。
 
         :param lock_mode: The lock_mode of this InnodbLock.
-        :type: str
+        :type lock_mode: str
         """
         self._lock_mode = lock_mode
 
@@ -159,7 +182,7 @@ class InnodbLock:
         锁类型，取值为RECORD或TABLE。RECORD为行锁, TABLE为表锁
 
         :param lock_type: The lock_type of this InnodbLock.
-        :type: str
+        :type lock_type: str
         """
         self._lock_type = lock_type
 
@@ -181,7 +204,7 @@ class InnodbLock:
         加锁的表
 
         :param lock_table: The lock_table of this InnodbLock.
-        :type: str
+        :type lock_table: str
         """
         self._lock_table = lock_table
 
@@ -203,7 +226,7 @@ class InnodbLock:
         如果是lock_type='RECORD' 行级锁 ,为锁住的索引，如果是表锁为null
 
         :param lock_index: The lock_index of this InnodbLock.
-        :type: str
+        :type lock_index: str
         """
         self._lock_index = lock_index
 
@@ -225,7 +248,7 @@ class InnodbLock:
         如果是lock_type='RECORD' 行级锁 ,为锁住的索引，如果是表锁为null
 
         :param lock_space: The lock_space of this InnodbLock.
-        :type: str
+        :type lock_space: str
         """
         self._lock_space = lock_space
 
@@ -247,7 +270,7 @@ class InnodbLock:
         如果是lock_type='RECORD' 行级锁 ,为锁住的页号，如果是表锁为null
 
         :param lock_page: The lock_page of this InnodbLock.
-        :type: str
+        :type lock_page: str
         """
         self._lock_page = lock_page
 
@@ -269,7 +292,7 @@ class InnodbLock:
         如果是lock_type='RECORD' 行级锁 ,为锁住的堆号，如果是表锁为null
 
         :param lock_rec: The lock_rec of this InnodbLock.
-        :type: str
+        :type lock_rec: str
         """
         self._lock_rec = lock_rec
 
@@ -291,7 +314,7 @@ class InnodbLock:
         事务锁住的主键值，若是表锁，则该值为null
 
         :param lock_data: The lock_data of this InnodbLock.
-        :type: str
+        :type lock_data: str
         """
         self._lock_data = lock_data
 

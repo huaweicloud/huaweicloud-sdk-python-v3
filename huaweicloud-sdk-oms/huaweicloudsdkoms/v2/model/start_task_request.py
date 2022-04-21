@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StartTaskRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class StartTaskRequest:
     }
 
     def __init__(self, task_id=None, body=None):
-        """StartTaskRequest - a model defined in huaweicloud sdk"""
+        """StartTaskRequest
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 迁移任务ID。
+        :type task_id: int
+        :param body: Body of the StartTaskRequest
+        :type body: :class:`huaweicloudsdkoms.v2.StartTaskReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class StartTaskRequest:
         迁移任务ID。
 
         :param task_id: The task_id of this StartTaskRequest.
-        :type: int
+        :type task_id: int
         """
         self._task_id = task_id
 
@@ -72,7 +79,7 @@ class StartTaskRequest:
 
 
         :return: The body of this StartTaskRequest.
-        :rtype: StartTaskReq
+        :rtype: :class:`huaweicloudsdkoms.v2.StartTaskReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class StartTaskRequest:
 
 
         :param body: The body of this StartTaskRequest.
-        :type: StartTaskReq
+        :type body: :class:`huaweicloudsdkoms.v2.StartTaskReq`
         """
         self._body = body
 

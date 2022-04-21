@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowSinkTaskDetailRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowSinkTaskDetailRequest:
     }
 
     def __init__(self, connector_id=None, task_id=None, topic_info=None):
-        """ShowSinkTaskDetailRequest - a model defined in huaweicloud sdk"""
+        """ShowSinkTaskDetailRequest
+
+        The model defined in huaweicloud sdk
+
+        :param connector_id: 实例转储ID。 请参考[实例生命周期][查询实例]接口返回的数据。
+        :type connector_id: str
+        :param task_id: 转储任务ID。
+        :type task_id: str
+        :param topic_info: 是否包含topic信息。默认是false。
+        :type topic_info: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class ShowSinkTaskDetailRequest:
         实例转储ID。 请参考[实例生命周期][查询实例]接口返回的数据。
 
         :param connector_id: The connector_id of this ShowSinkTaskDetailRequest.
-        :type: str
+        :type connector_id: str
         """
         self._connector_id = connector_id
 
@@ -88,7 +97,7 @@ class ShowSinkTaskDetailRequest:
         转储任务ID。
 
         :param task_id: The task_id of this ShowSinkTaskDetailRequest.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -110,7 +119,7 @@ class ShowSinkTaskDetailRequest:
         是否包含topic信息。默认是false。
 
         :param topic_info: The topic_info of this ShowSinkTaskDetailRequest.
-        :type: str
+        :type topic_info: str
         """
         self._topic_info = topic_info
 

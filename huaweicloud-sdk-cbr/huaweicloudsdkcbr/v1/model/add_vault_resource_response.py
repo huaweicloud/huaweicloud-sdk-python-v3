@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddVaultResourceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class AddVaultResourceResponse(SdkResponse):
     }
 
     def __init__(self, add_resource_ids=None):
-        """AddVaultResourceResponse - a model defined in huaweicloud sdk"""
+        """AddVaultResourceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param add_resource_ids: 已添加的资源ID列表
+        :type add_resource_ids: list[str]
+        """
         
         super(AddVaultResourceResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class AddVaultResourceResponse(SdkResponse):
         已添加的资源ID列表
 
         :param add_resource_ids: The add_resource_ids of this AddVaultResourceResponse.
-        :type: list[str]
+        :type add_resource_ids: list[str]
         """
         self._add_resource_ids = add_resource_ids
 

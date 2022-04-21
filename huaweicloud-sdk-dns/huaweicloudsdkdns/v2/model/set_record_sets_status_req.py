@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SetRecordSetsStatusReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class SetRecordSetsStatusReq:
     }
 
     def __init__(self, status=None):
-        """SetRecordSetsStatusReq - a model defined in huaweicloud sdk"""
+        """SetRecordSetsStatusReq
+
+        The model defined in huaweicloud sdk
+
+        :param status: 解析记录状态。  取值范围：  ENABLE：启用解析 DISABLE：暂停解析
+        :type status: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class SetRecordSetsStatusReq:
         解析记录状态。  取值范围：  ENABLE：启用解析 DISABLE：暂停解析
 
         :param status: The status of this SetRecordSetsStatusReq.
-        :type: str
+        :type status: str
         """
         self._status = status
 

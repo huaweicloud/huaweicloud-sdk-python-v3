@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowCertificateResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -70,7 +69,53 @@ class ShowCertificateResponse(SdkResponse):
     }
 
     def __init__(self, id=None, status=None, order_id=None, name=None, type=None, brand=None, push_support=None, revoke_reason=None, signature_algorithm=None, issue_time=None, not_before=None, not_after=None, validity_period=None, validation_method=None, domain_type=None, domain=None, sans=None, domain_count=None, wildcard_count=None, enterprise_project_id=None, authentification=None):
-        """ShowCertificateResponse - a model defined in huaweicloud sdk"""
+        """ShowCertificateResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 证书id。
+        :type id: str
+        :param status: 证书状态。取值如下： - PAID：证书已支付，待申请证书。 - ISSUED：证书已签发。 - CHECKING：证书申请审核中。 - CANCELCHECKING：取消证书申请审核中。 - UNPASSED：证书申请未通过。 - EXPIRED：证书已过期。 - REVOKING：证书吊销申请审核中。 - REVOKED：证书已吊销。 - UPLOAD：证书托管中。 - SUPPLEMENTCHECKING：多域名证书新增附加域名审核中。 - CANCELSUPPLEMENTING：取消新增附加域名审核中。
+        :type status: str
+        :param order_id: 订单id。
+        :type order_id: str
+        :param name: 证书名称。
+        :type name: str
+        :param type: 证书类型。取值如下： DV_SSL_CERT、DV_SSL_CERT_BASIC、EV_SSL_CERT、 EV_SSL_CERT_PRO、OV_SSL_CERT、OV_SSL_CERT_PRO。
+        :type type: str
+        :param brand: 证书品牌。取值如下： GLOBALSIGN、SYMANTEC、GEOTRUST、CFCA。
+        :type brand: str
+        :param push_support: 证书是否支持推送。
+        :type push_support: str
+        :param revoke_reason: 证书吊销原因。
+        :type revoke_reason: str
+        :param signature_algorithm: 签名算法。
+        :type signature_algorithm: str
+        :param issue_time: 证书签发时间，没有获取到有效值时为空。
+        :type issue_time: str
+        :param not_before: 证书生效时间，没有获取到有效值时为空。
+        :type not_before: str
+        :param not_after: 证书失效时间，没有获取到有效值时为空。
+        :type not_after: str
+        :param validity_period: 证书有效期，按月为单位。
+        :type validity_period: int
+        :param validation_method: 域名认证方式，取值如下：DNS、FILE、EMAIL。
+        :type validation_method: str
+        :param domain_type: 域名类型，取值如下： - SINGLE_DOMAIN：单域名 - WILDCARD：通配符 - MULTI_DOMAIN：多域名
+        :type domain_type: str
+        :param domain: 证书绑定域名。
+        :type domain: str
+        :param sans: 证书绑定的附加域名信息。
+        :type sans: str
+        :param domain_count: 证书可绑定域名个数。
+        :type domain_count: int
+        :param wildcard_count: 证书可绑定附加域名个数。
+        :type wildcard_count: int
+        :param enterprise_project_id: 企业项目ID，默认为“0”。 对于开通企业项目的用户，表示资源处于默认企业项目下。 对于未开通企业项目的用户，表示资源未处于企业项目下。
+        :type enterprise_project_id: str
+        :param authentification: 域名所有权认证信息，详情请参见Authentification字段数据结构说明。
+        :type authentification: list[:class:`huaweicloudsdkscm.v3.Authentification`]
+        """
         
         super(ShowCertificateResponse, self).__init__()
 
@@ -158,7 +203,7 @@ class ShowCertificateResponse(SdkResponse):
         证书id。
 
         :param id: The id of this ShowCertificateResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -180,7 +225,7 @@ class ShowCertificateResponse(SdkResponse):
         证书状态。取值如下： - PAID：证书已支付，待申请证书。 - ISSUED：证书已签发。 - CHECKING：证书申请审核中。 - CANCELCHECKING：取消证书申请审核中。 - UNPASSED：证书申请未通过。 - EXPIRED：证书已过期。 - REVOKING：证书吊销申请审核中。 - REVOKED：证书已吊销。 - UPLOAD：证书托管中。 - SUPPLEMENTCHECKING：多域名证书新增附加域名审核中。 - CANCELSUPPLEMENTING：取消新增附加域名审核中。
 
         :param status: The status of this ShowCertificateResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -202,7 +247,7 @@ class ShowCertificateResponse(SdkResponse):
         订单id。
 
         :param order_id: The order_id of this ShowCertificateResponse.
-        :type: str
+        :type order_id: str
         """
         self._order_id = order_id
 
@@ -224,7 +269,7 @@ class ShowCertificateResponse(SdkResponse):
         证书名称。
 
         :param name: The name of this ShowCertificateResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -246,7 +291,7 @@ class ShowCertificateResponse(SdkResponse):
         证书类型。取值如下： DV_SSL_CERT、DV_SSL_CERT_BASIC、EV_SSL_CERT、 EV_SSL_CERT_PRO、OV_SSL_CERT、OV_SSL_CERT_PRO。
 
         :param type: The type of this ShowCertificateResponse.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -268,7 +313,7 @@ class ShowCertificateResponse(SdkResponse):
         证书品牌。取值如下： GLOBALSIGN、SYMANTEC、GEOTRUST、CFCA。
 
         :param brand: The brand of this ShowCertificateResponse.
-        :type: str
+        :type brand: str
         """
         self._brand = brand
 
@@ -290,7 +335,7 @@ class ShowCertificateResponse(SdkResponse):
         证书是否支持推送。
 
         :param push_support: The push_support of this ShowCertificateResponse.
-        :type: str
+        :type push_support: str
         """
         self._push_support = push_support
 
@@ -312,7 +357,7 @@ class ShowCertificateResponse(SdkResponse):
         证书吊销原因。
 
         :param revoke_reason: The revoke_reason of this ShowCertificateResponse.
-        :type: str
+        :type revoke_reason: str
         """
         self._revoke_reason = revoke_reason
 
@@ -334,7 +379,7 @@ class ShowCertificateResponse(SdkResponse):
         签名算法。
 
         :param signature_algorithm: The signature_algorithm of this ShowCertificateResponse.
-        :type: str
+        :type signature_algorithm: str
         """
         self._signature_algorithm = signature_algorithm
 
@@ -356,7 +401,7 @@ class ShowCertificateResponse(SdkResponse):
         证书签发时间，没有获取到有效值时为空。
 
         :param issue_time: The issue_time of this ShowCertificateResponse.
-        :type: str
+        :type issue_time: str
         """
         self._issue_time = issue_time
 
@@ -378,7 +423,7 @@ class ShowCertificateResponse(SdkResponse):
         证书生效时间，没有获取到有效值时为空。
 
         :param not_before: The not_before of this ShowCertificateResponse.
-        :type: str
+        :type not_before: str
         """
         self._not_before = not_before
 
@@ -400,7 +445,7 @@ class ShowCertificateResponse(SdkResponse):
         证书失效时间，没有获取到有效值时为空。
 
         :param not_after: The not_after of this ShowCertificateResponse.
-        :type: str
+        :type not_after: str
         """
         self._not_after = not_after
 
@@ -422,7 +467,7 @@ class ShowCertificateResponse(SdkResponse):
         证书有效期，按月为单位。
 
         :param validity_period: The validity_period of this ShowCertificateResponse.
-        :type: int
+        :type validity_period: int
         """
         self._validity_period = validity_period
 
@@ -444,7 +489,7 @@ class ShowCertificateResponse(SdkResponse):
         域名认证方式，取值如下：DNS、FILE、EMAIL。
 
         :param validation_method: The validation_method of this ShowCertificateResponse.
-        :type: str
+        :type validation_method: str
         """
         self._validation_method = validation_method
 
@@ -466,7 +511,7 @@ class ShowCertificateResponse(SdkResponse):
         域名类型，取值如下： - SINGLE_DOMAIN：单域名 - WILDCARD：通配符 - MULTI_DOMAIN：多域名
 
         :param domain_type: The domain_type of this ShowCertificateResponse.
-        :type: str
+        :type domain_type: str
         """
         self._domain_type = domain_type
 
@@ -488,7 +533,7 @@ class ShowCertificateResponse(SdkResponse):
         证书绑定域名。
 
         :param domain: The domain of this ShowCertificateResponse.
-        :type: str
+        :type domain: str
         """
         self._domain = domain
 
@@ -510,7 +555,7 @@ class ShowCertificateResponse(SdkResponse):
         证书绑定的附加域名信息。
 
         :param sans: The sans of this ShowCertificateResponse.
-        :type: str
+        :type sans: str
         """
         self._sans = sans
 
@@ -532,7 +577,7 @@ class ShowCertificateResponse(SdkResponse):
         证书可绑定域名个数。
 
         :param domain_count: The domain_count of this ShowCertificateResponse.
-        :type: int
+        :type domain_count: int
         """
         self._domain_count = domain_count
 
@@ -554,7 +599,7 @@ class ShowCertificateResponse(SdkResponse):
         证书可绑定附加域名个数。
 
         :param wildcard_count: The wildcard_count of this ShowCertificateResponse.
-        :type: int
+        :type wildcard_count: int
         """
         self._wildcard_count = wildcard_count
 
@@ -576,7 +621,7 @@ class ShowCertificateResponse(SdkResponse):
         企业项目ID，默认为“0”。 对于开通企业项目的用户，表示资源处于默认企业项目下。 对于未开通企业项目的用户，表示资源未处于企业项目下。
 
         :param enterprise_project_id: The enterprise_project_id of this ShowCertificateResponse.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -587,7 +632,7 @@ class ShowCertificateResponse(SdkResponse):
         域名所有权认证信息，详情请参见Authentification字段数据结构说明。
 
         :return: The authentification of this ShowCertificateResponse.
-        :rtype: list[Authentification]
+        :rtype: list[:class:`huaweicloudsdkscm.v3.Authentification`]
         """
         return self._authentification
 
@@ -598,7 +643,7 @@ class ShowCertificateResponse(SdkResponse):
         域名所有权认证信息，详情请参见Authentification字段数据结构说明。
 
         :param authentification: The authentification of this ShowCertificateResponse.
-        :type: list[Authentification]
+        :type authentification: list[:class:`huaweicloudsdkscm.v3.Authentification`]
         """
         self._authentification = authentification
 

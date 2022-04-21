@@ -52,21 +52,17 @@ class FrsAsyncClient(Client):
         """添加人脸
 
         添加人脸到人脸库中。将单张图片中的人脸添加至人脸库中，支持添加最大人脸或所有人脸。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param AddFacesByBase64Request request
-        :return: AddFacesByBase64Response
+        :param request: Request instance for AddFacesByBase64
+        :type request: :class:`huaweicloudsdkfrs.v2.AddFacesByBase64Request`
+        :rtype: :class:`huaweicloudsdkfrs.v2.AddFacesByBase64Response`
         """
         return self.add_faces_by_base64_with_http_info(request)
 
     def add_faces_by_base64_with_http_info(self, request):
-        """添加人脸
-
-        添加人脸到人脸库中。将单张图片中的人脸添加至人脸库中，支持添加最大人脸或所有人脸。
-
-        :param AddFacesByBase64Request request
-        :return: AddFacesByBase64Response
-        """
-
         all_params = ['face_set_name', 'add_faces_base64_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -112,26 +108,21 @@ class FrsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def add_faces_by_file_async(self, request):
         """添加人脸
 
         添加人脸到人脸库中。将单张图片中的人脸添加至人脸库中，支持添加最大人脸或所有人脸。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param AddFacesByFileRequest request
-        :return: AddFacesByFileResponse
+        :param request: Request instance for AddFacesByFile
+        :type request: :class:`huaweicloudsdkfrs.v2.AddFacesByFileRequest`
+        :rtype: :class:`huaweicloudsdkfrs.v2.AddFacesByFileResponse`
         """
         return self.add_faces_by_file_with_http_info(request)
 
     def add_faces_by_file_with_http_info(self, request):
-        """添加人脸
-
-        添加人脸到人脸库中。将单张图片中的人脸添加至人脸库中，支持添加最大人脸或所有人脸。
-
-        :param AddFacesByFileRequest request
-        :return: AddFacesByFileResponse
-        """
-
         all_params = ['face_set_name', 'image_file', 'external_image_id', 'external_fields', 'single']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -185,26 +176,21 @@ class FrsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def add_faces_by_url_async(self, request):
         """添加人脸
 
         添加人脸到人脸库中。将单张图片中的人脸添加至人脸库中，支持添加最大人脸或所有人脸。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param AddFacesByUrlRequest request
-        :return: AddFacesByUrlResponse
+        :param request: Request instance for AddFacesByUrl
+        :type request: :class:`huaweicloudsdkfrs.v2.AddFacesByUrlRequest`
+        :rtype: :class:`huaweicloudsdkfrs.v2.AddFacesByUrlResponse`
         """
         return self.add_faces_by_url_with_http_info(request)
 
     def add_faces_by_url_with_http_info(self, request):
-        """添加人脸
-
-        添加人脸到人脸库中。将单张图片中的人脸添加至人脸库中，支持添加最大人脸或所有人脸。
-
-        :param AddFacesByUrlRequest request
-        :return: AddFacesByUrlResponse
-        """
-
         all_params = ['face_set_name', 'add_faces_url_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -250,26 +236,21 @@ class FrsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_delete_faces_async(self, request):
         """批量删除人脸
 
         自定义筛选条件，批量删除人脸库中的符合指定条件的多张人脸。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchDeleteFacesRequest request
-        :return: BatchDeleteFacesResponse
+        :param request: Request instance for BatchDeleteFaces
+        :type request: :class:`huaweicloudsdkfrs.v2.BatchDeleteFacesRequest`
+        :rtype: :class:`huaweicloudsdkfrs.v2.BatchDeleteFacesResponse`
         """
         return self.batch_delete_faces_with_http_info(request)
 
     def batch_delete_faces_with_http_info(self, request):
-        """批量删除人脸
-
-        自定义筛选条件，批量删除人脸库中的符合指定条件的多张人脸。
-
-        :param BatchDeleteFacesRequest request
-        :return: BatchDeleteFacesResponse
-        """
-
         all_params = ['face_set_name', 'delete_faces_batch_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -315,26 +296,21 @@ class FrsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def compare_face_by_base64_async(self, request):
         """人脸比对
 
         人脸比对是将两个人脸进行比对，来判断是否为同一个人，返回比对置信度。如果传入的图片中包含多个人脸，选取最大的人脸进行比对。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CompareFaceByBase64Request request
-        :return: CompareFaceByBase64Response
+        :param request: Request instance for CompareFaceByBase64
+        :type request: :class:`huaweicloudsdkfrs.v2.CompareFaceByBase64Request`
+        :rtype: :class:`huaweicloudsdkfrs.v2.CompareFaceByBase64Response`
         """
         return self.compare_face_by_base64_with_http_info(request)
 
     def compare_face_by_base64_with_http_info(self, request):
-        """人脸比对
-
-        人脸比对是将两个人脸进行比对，来判断是否为同一个人，返回比对置信度。如果传入的图片中包含多个人脸，选取最大的人脸进行比对。
-
-        :param CompareFaceByBase64Request request
-        :return: CompareFaceByBase64Response
-        """
-
         all_params = ['face_compare_base64_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -378,26 +354,21 @@ class FrsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def compare_face_by_file_async(self, request):
         """人脸比对
 
         人脸比对是将两个人脸进行比对，来判断是否为同一个人，返回比对置信度。如果传入的图片中包含多个人脸，选取最大的人脸进行比对。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CompareFaceByFileRequest request
-        :return: CompareFaceByFileResponse
+        :param request: Request instance for CompareFaceByFile
+        :type request: :class:`huaweicloudsdkfrs.v2.CompareFaceByFileRequest`
+        :rtype: :class:`huaweicloudsdkfrs.v2.CompareFaceByFileResponse`
         """
         return self.compare_face_by_file_with_http_info(request)
 
     def compare_face_by_file_with_http_info(self, request):
-        """人脸比对
-
-        人脸比对是将两个人脸进行比对，来判断是否为同一个人，返回比对置信度。如果传入的图片中包含多个人脸，选取最大的人脸进行比对。
-
-        :param CompareFaceByFileRequest request
-        :return: CompareFaceByFileResponse
-        """
-
         all_params = ['image1_file', 'image2_file']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -445,26 +416,21 @@ class FrsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def compare_face_by_url_async(self, request):
         """人脸比对
 
         人脸比对是将两个人脸进行比对，来判断是否为同一个人，返回比对置信度。如果传入的图片中包含多个人脸，选取最大的人脸进行比对。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CompareFaceByUrlRequest request
-        :return: CompareFaceByUrlResponse
+        :param request: Request instance for CompareFaceByUrl
+        :type request: :class:`huaweicloudsdkfrs.v2.CompareFaceByUrlRequest`
+        :rtype: :class:`huaweicloudsdkfrs.v2.CompareFaceByUrlResponse`
         """
         return self.compare_face_by_url_with_http_info(request)
 
     def compare_face_by_url_with_http_info(self, request):
-        """人脸比对
-
-        人脸比对是将两个人脸进行比对，来判断是否为同一个人，返回比对置信度。如果传入的图片中包含多个人脸，选取最大的人脸进行比对。
-
-        :param CompareFaceByUrlRequest request
-        :return: CompareFaceByUrlResponse
-        """
-
         all_params = ['face_compare_url_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -508,26 +474,21 @@ class FrsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_face_set_async(self, request):
         """创建人脸库
 
         创建用于存储人脸特征的人脸库。您最多可以创建10个人脸库，每个人脸库最大容量为10万个人脸特征。如有更大规格的需求请联系客服。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateFaceSetRequest request
-        :return: CreateFaceSetResponse
+        :param request: Request instance for CreateFaceSet
+        :type request: :class:`huaweicloudsdkfrs.v2.CreateFaceSetRequest`
+        :rtype: :class:`huaweicloudsdkfrs.v2.CreateFaceSetResponse`
         """
         return self.create_face_set_with_http_info(request)
 
     def create_face_set_with_http_info(self, request):
-        """创建人脸库
-
-        创建用于存储人脸特征的人脸库。您最多可以创建10个人脸库，每个人脸库最大容量为10万个人脸特征。如有更大规格的需求请联系客服。
-
-        :param CreateFaceSetRequest request
-        :return: CreateFaceSetResponse
-        """
-
         all_params = ['create_face_set_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -571,26 +532,21 @@ class FrsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_face_by_external_image_id_async(self, request):
         """删除人脸
 
         根据external_image_id删除人脸。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteFaceByExternalImageIdRequest request
-        :return: DeleteFaceByExternalImageIdResponse
+        :param request: Request instance for DeleteFaceByExternalImageId
+        :type request: :class:`huaweicloudsdkfrs.v2.DeleteFaceByExternalImageIdRequest`
+        :rtype: :class:`huaweicloudsdkfrs.v2.DeleteFaceByExternalImageIdResponse`
         """
         return self.delete_face_by_external_image_id_with_http_info(request)
 
     def delete_face_by_external_image_id_with_http_info(self, request):
-        """删除人脸
-
-        根据external_image_id删除人脸。
-
-        :param DeleteFaceByExternalImageIdRequest request
-        :return: DeleteFaceByExternalImageIdResponse
-        """
-
         all_params = ['face_set_name', 'external_image_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -636,26 +592,21 @@ class FrsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_face_by_face_id_async(self, request):
         """删除人脸
 
         根据face_id删除人脸。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteFaceByFaceIdRequest request
-        :return: DeleteFaceByFaceIdResponse
+        :param request: Request instance for DeleteFaceByFaceId
+        :type request: :class:`huaweicloudsdkfrs.v2.DeleteFaceByFaceIdRequest`
+        :rtype: :class:`huaweicloudsdkfrs.v2.DeleteFaceByFaceIdResponse`
         """
         return self.delete_face_by_face_id_with_http_info(request)
 
     def delete_face_by_face_id_with_http_info(self, request):
-        """删除人脸
-
-        根据face_id删除人脸。
-
-        :param DeleteFaceByFaceIdRequest request
-        :return: DeleteFaceByFaceIdResponse
-        """
-
         all_params = ['face_set_name', 'face_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -701,26 +652,21 @@ class FrsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_face_set_async(self, request):
         """删除人脸库
 
         删除人脸库以及其中所有的人脸。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteFaceSetRequest request
-        :return: DeleteFaceSetResponse
+        :param request: Request instance for DeleteFaceSet
+        :type request: :class:`huaweicloudsdkfrs.v2.DeleteFaceSetRequest`
+        :rtype: :class:`huaweicloudsdkfrs.v2.DeleteFaceSetResponse`
         """
         return self.delete_face_set_with_http_info(request)
 
     def delete_face_set_with_http_info(self, request):
-        """删除人脸库
-
-        删除人脸库以及其中所有的人脸。
-
-        :param DeleteFaceSetRequest request
-        :return: DeleteFaceSetResponse
-        """
-
         all_params = ['face_set_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -764,26 +710,21 @@ class FrsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def detect_face_by_base64_async(self, request):
         """人脸检测
 
         人脸检测是对输入图片进行人脸检测和分析，输出人脸在图像中的位置、人脸关键点位置和人脸关键属性。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DetectFaceByBase64Request request
-        :return: DetectFaceByBase64Response
+        :param request: Request instance for DetectFaceByBase64
+        :type request: :class:`huaweicloudsdkfrs.v2.DetectFaceByBase64Request`
+        :rtype: :class:`huaweicloudsdkfrs.v2.DetectFaceByBase64Response`
         """
         return self.detect_face_by_base64_with_http_info(request)
 
     def detect_face_by_base64_with_http_info(self, request):
-        """人脸检测
-
-        人脸检测是对输入图片进行人脸检测和分析，输出人脸在图像中的位置、人脸关键点位置和人脸关键属性。
-
-        :param DetectFaceByBase64Request request
-        :return: DetectFaceByBase64Response
-        """
-
         all_params = ['face_detect_base64_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -827,26 +768,21 @@ class FrsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def detect_face_by_file_async(self, request):
         """人脸检测
 
         人脸检测是对输入图片进行人脸检测和分析，输出人脸在图像中的位置、人脸关键点位置和人脸关键属性。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DetectFaceByFileRequest request
-        :return: DetectFaceByFileResponse
+        :param request: Request instance for DetectFaceByFile
+        :type request: :class:`huaweicloudsdkfrs.v2.DetectFaceByFileRequest`
+        :rtype: :class:`huaweicloudsdkfrs.v2.DetectFaceByFileResponse`
         """
         return self.detect_face_by_file_with_http_info(request)
 
     def detect_face_by_file_with_http_info(self, request):
-        """人脸检测
-
-        人脸检测是对输入图片进行人脸检测和分析，输出人脸在图像中的位置、人脸关键点位置和人脸关键属性。
-
-        :param DetectFaceByFileRequest request
-        :return: DetectFaceByFileResponse
-        """
-
         all_params = ['image_file', 'attributes']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -894,26 +830,21 @@ class FrsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def detect_face_by_url_async(self, request):
         """人脸检测
 
         人脸检测是对输入图片进行人脸检测和分析，输出人脸在图像中的位置、人脸关键点位置和人脸关键属性。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DetectFaceByUrlRequest request
-        :return: DetectFaceByUrlResponse
+        :param request: Request instance for DetectFaceByUrl
+        :type request: :class:`huaweicloudsdkfrs.v2.DetectFaceByUrlRequest`
+        :rtype: :class:`huaweicloudsdkfrs.v2.DetectFaceByUrlResponse`
         """
         return self.detect_face_by_url_with_http_info(request)
 
     def detect_face_by_url_with_http_info(self, request):
-        """人脸检测
-
-        人脸检测是对输入图片进行人脸检测和分析，输出人脸在图像中的位置、人脸关键点位置和人脸关键属性。
-
-        :param DetectFaceByUrlRequest request
-        :return: DetectFaceByUrlResponse
-        """
-
         all_params = ['face_detect_url_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -957,26 +888,21 @@ class FrsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def detect_live_by_base64_async(self, request):
         """动作活体检测
 
         动作活体检测是通过判断视频中的人物动作与传入动作列表是否一致来识别视频中人物是否为活体。如果有多张人脸出现，则选取最大的人脸进行判定。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DetectLiveByBase64Request request
-        :return: DetectLiveByBase64Response
+        :param request: Request instance for DetectLiveByBase64
+        :type request: :class:`huaweicloudsdkfrs.v2.DetectLiveByBase64Request`
+        :rtype: :class:`huaweicloudsdkfrs.v2.DetectLiveByBase64Response`
         """
         return self.detect_live_by_base64_with_http_info(request)
 
     def detect_live_by_base64_with_http_info(self, request):
-        """动作活体检测
-
-        动作活体检测是通过判断视频中的人物动作与传入动作列表是否一致来识别视频中人物是否为活体。如果有多张人脸出现，则选取最大的人脸进行判定。
-
-        :param DetectLiveByBase64Request request
-        :return: DetectLiveByBase64Response
-        """
-
         all_params = ['live_detect_base64_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1020,26 +946,21 @@ class FrsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def detect_live_by_file_async(self, request):
         """动作活体检测
 
         动作活体检测是通过判断视频中的人物动作与传入动作列表是否一致来识别视频中人物是否为活体。如果有多张人脸出现，则选取最大的人脸进行判定。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DetectLiveByFileRequest request
-        :return: DetectLiveByFileResponse
+        :param request: Request instance for DetectLiveByFile
+        :type request: :class:`huaweicloudsdkfrs.v2.DetectLiveByFileRequest`
+        :rtype: :class:`huaweicloudsdkfrs.v2.DetectLiveByFileResponse`
         """
         return self.detect_live_by_file_with_http_info(request)
 
     def detect_live_by_file_with_http_info(self, request):
-        """动作活体检测
-
-        动作活体检测是通过判断视频中的人物动作与传入动作列表是否一致来识别视频中人物是否为活体。如果有多张人脸出现，则选取最大的人脸进行判定。
-
-        :param DetectLiveByFileRequest request
-        :return: DetectLiveByFileResponse
-        """
-
         all_params = ['video_file', 'actions', 'action_time']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1089,26 +1010,21 @@ class FrsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def detect_live_by_url_async(self, request):
         """动作活体检测
 
         动作活体检测是通过判断视频中的人物动作与传入动作列表是否一致来识别视频中人物是否为活体。如果有多张人脸出现，则选取最大的人脸进行判定。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DetectLiveByUrlRequest request
-        :return: DetectLiveByUrlResponse
+        :param request: Request instance for DetectLiveByUrl
+        :type request: :class:`huaweicloudsdkfrs.v2.DetectLiveByUrlRequest`
+        :rtype: :class:`huaweicloudsdkfrs.v2.DetectLiveByUrlResponse`
         """
         return self.detect_live_by_url_with_http_info(request)
 
     def detect_live_by_url_with_http_info(self, request):
-        """动作活体检测
-
-        动作活体检测是通过判断视频中的人物动作与传入动作列表是否一致来识别视频中人物是否为活体。如果有多张人脸出现，则选取最大的人脸进行判定。
-
-        :param DetectLiveByUrlRequest request
-        :return: DetectLiveByUrlResponse
-        """
-
         all_params = ['live_detect_url_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1152,26 +1068,21 @@ class FrsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def detect_live_face_by_base64_async(self, request):
         """静默活体检测
 
         静默活体检测是基于人脸图片中可能存在的畸变、摩尔纹、反光、倒影、边框等信息，判断图片中的人脸是否来自于真人活体，有效抵御纸质翻拍照、电子翻拍照以及视频翻拍等各种攻击方式。静默活体检测支持单张图片，不支持多人脸图片。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DetectLiveFaceByBase64Request request
-        :return: DetectLiveFaceByBase64Response
+        :param request: Request instance for DetectLiveFaceByBase64
+        :type request: :class:`huaweicloudsdkfrs.v2.DetectLiveFaceByBase64Request`
+        :rtype: :class:`huaweicloudsdkfrs.v2.DetectLiveFaceByBase64Response`
         """
         return self.detect_live_face_by_base64_with_http_info(request)
 
     def detect_live_face_by_base64_with_http_info(self, request):
-        """静默活体检测
-
-        静默活体检测是基于人脸图片中可能存在的畸变、摩尔纹、反光、倒影、边框等信息，判断图片中的人脸是否来自于真人活体，有效抵御纸质翻拍照、电子翻拍照以及视频翻拍等各种攻击方式。静默活体检测支持单张图片，不支持多人脸图片。
-
-        :param DetectLiveFaceByBase64Request request
-        :return: DetectLiveFaceByBase64Response
-        """
-
         all_params = ['live_detect_face_base64_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1215,26 +1126,21 @@ class FrsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def detect_live_face_by_file_async(self, request):
         """静默活体检测
 
         静默活体检测是基于人脸图片中可能存在的畸变、摩尔纹、反光、倒影、边框等信息，判断图片中的人脸是否来自于真人活体，有效抵御纸质翻拍照、电子翻拍照以及视频翻拍等各种攻击方式。静默活体检测支持单张图片，不支持多人脸图片。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DetectLiveFaceByFileRequest request
-        :return: DetectLiveFaceByFileResponse
+        :param request: Request instance for DetectLiveFaceByFile
+        :type request: :class:`huaweicloudsdkfrs.v2.DetectLiveFaceByFileRequest`
+        :rtype: :class:`huaweicloudsdkfrs.v2.DetectLiveFaceByFileResponse`
         """
         return self.detect_live_face_by_file_with_http_info(request)
 
     def detect_live_face_by_file_with_http_info(self, request):
-        """静默活体检测
-
-        静默活体检测是基于人脸图片中可能存在的畸变、摩尔纹、反光、倒影、边框等信息，判断图片中的人脸是否来自于真人活体，有效抵御纸质翻拍照、电子翻拍照以及视频翻拍等各种攻击方式。静默活体检测支持单张图片，不支持多人脸图片。
-
-        :param DetectLiveFaceByFileRequest request
-        :return: DetectLiveFaceByFileResponse
-        """
-
         all_params = ['image_file']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1280,26 +1186,21 @@ class FrsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def detect_live_face_by_url_async(self, request):
         """静默活体检测
 
         静默活体检测是基于人脸图片中可能存在的畸变、摩尔纹、反光、倒影、边框等信息，判断图片中的人脸是否来自于真人活体，有效抵御纸质翻拍照、电子翻拍照以及视频翻拍等各种攻击方式。静默活体检测支持单张图片，不支持多人脸图片。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DetectLiveFaceByUrlRequest request
-        :return: DetectLiveFaceByUrlResponse
+        :param request: Request instance for DetectLiveFaceByUrl
+        :type request: :class:`huaweicloudsdkfrs.v2.DetectLiveFaceByUrlRequest`
+        :rtype: :class:`huaweicloudsdkfrs.v2.DetectLiveFaceByUrlResponse`
         """
         return self.detect_live_face_by_url_with_http_info(request)
 
     def detect_live_face_by_url_with_http_info(self, request):
-        """静默活体检测
-
-        静默活体检测是基于人脸图片中可能存在的畸变、摩尔纹、反光、倒影、边框等信息，判断图片中的人脸是否来自于真人活体，有效抵御纸质翻拍照、电子翻拍照以及视频翻拍等各种攻击方式。静默活体检测支持单张图片，不支持多人脸图片。
-
-        :param DetectLiveFaceByUrlRequest request
-        :return: DetectLiveFaceByUrlResponse
-        """
-
         all_params = ['live_detect_face_url_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1343,26 +1244,22 @@ class FrsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def search_face_by_base64_async(self, request):
         """人脸搜索
 
-        人脸搜索是指在已有的人脸库中，查询与目标人脸相似的一张或者多张人脸，并返回相应的置信度。 支持传入图片或者faceID进行人脸搜索，如果传入的是多张人脸图片，选取图片中检测到的最大尺寸人脸作为检索的输入。
+        人脸搜索是指在已有的人脸库中，查询与目标人脸相似的一张或者多张人脸，并返回相应的置信度。
+        支持传入图片或者faceID进行人脸搜索，如果传入的是多张人脸图片，选取图片中检测到的最大尺寸人脸作为检索的输入。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param SearchFaceByBase64Request request
-        :return: SearchFaceByBase64Response
+        :param request: Request instance for SearchFaceByBase64
+        :type request: :class:`huaweicloudsdkfrs.v2.SearchFaceByBase64Request`
+        :rtype: :class:`huaweicloudsdkfrs.v2.SearchFaceByBase64Response`
         """
         return self.search_face_by_base64_with_http_info(request)
 
     def search_face_by_base64_with_http_info(self, request):
-        """人脸搜索
-
-        人脸搜索是指在已有的人脸库中，查询与目标人脸相似的一张或者多张人脸，并返回相应的置信度。 支持传入图片或者faceID进行人脸搜索，如果传入的是多张人脸图片，选取图片中检测到的最大尺寸人脸作为检索的输入。
-
-        :param SearchFaceByBase64Request request
-        :return: SearchFaceByBase64Response
-        """
-
         all_params = ['face_set_name', 'face_search_base64_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1408,26 +1305,22 @@ class FrsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def search_face_by_face_id_async(self, request):
         """人脸搜索
 
-        人脸搜索是指在已有的人脸库中，查询与目标人脸相似的一张或者多张人脸，并返回相应的置信度。 支持传入图片或者faceID进行人脸搜索，如果传入的是多张人脸图片，选取图片中检测到的最大尺寸人脸作为检索的输入。
+        人脸搜索是指在已有的人脸库中，查询与目标人脸相似的一张或者多张人脸，并返回相应的置信度。
+        支持传入图片或者faceID进行人脸搜索，如果传入的是多张人脸图片，选取图片中检测到的最大尺寸人脸作为检索的输入。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param SearchFaceByFaceIdRequest request
-        :return: SearchFaceByFaceIdResponse
+        :param request: Request instance for SearchFaceByFaceId
+        :type request: :class:`huaweicloudsdkfrs.v2.SearchFaceByFaceIdRequest`
+        :rtype: :class:`huaweicloudsdkfrs.v2.SearchFaceByFaceIdResponse`
         """
         return self.search_face_by_face_id_with_http_info(request)
 
     def search_face_by_face_id_with_http_info(self, request):
-        """人脸搜索
-
-        人脸搜索是指在已有的人脸库中，查询与目标人脸相似的一张或者多张人脸，并返回相应的置信度。 支持传入图片或者faceID进行人脸搜索，如果传入的是多张人脸图片，选取图片中检测到的最大尺寸人脸作为检索的输入。
-
-        :param SearchFaceByFaceIdRequest request
-        :return: SearchFaceByFaceIdResponse
-        """
-
         all_params = ['face_set_name', 'face_search_face_id_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1473,26 +1366,22 @@ class FrsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def search_face_by_file_async(self, request):
         """人脸搜索
 
-        人脸搜索是指在已有的人脸库中，查询与目标人脸相似的一张或者多张人脸，并返回相应的置信度。 支持传入图片或者faceID进行人脸搜索，如果传入的是多张人脸图片，选取图片中检测到的最大尺寸人脸作为检索的输入。
+        人脸搜索是指在已有的人脸库中，查询与目标人脸相似的一张或者多张人脸，并返回相应的置信度。
+        支持传入图片或者faceID进行人脸搜索，如果传入的是多张人脸图片，选取图片中检测到的最大尺寸人脸作为检索的输入。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param SearchFaceByFileRequest request
-        :return: SearchFaceByFileResponse
+        :param request: Request instance for SearchFaceByFile
+        :type request: :class:`huaweicloudsdkfrs.v2.SearchFaceByFileRequest`
+        :rtype: :class:`huaweicloudsdkfrs.v2.SearchFaceByFileResponse`
         """
         return self.search_face_by_file_with_http_info(request)
 
     def search_face_by_file_with_http_info(self, request):
-        """人脸搜索
-
-        人脸搜索是指在已有的人脸库中，查询与目标人脸相似的一张或者多张人脸，并返回相应的置信度。 支持传入图片或者faceID进行人脸搜索，如果传入的是多张人脸图片，选取图片中检测到的最大尺寸人脸作为检索的输入。
-
-        :param SearchFaceByFileRequest request
-        :return: SearchFaceByFileResponse
-        """
-
         all_params = ['face_set_name', 'image_file', 'top_n', 'threshold', 'sort', 'filter', 'return_fields']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1550,26 +1439,22 @@ class FrsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def search_face_by_url_async(self, request):
         """人脸搜索
 
-        人脸搜索是指在已有的人脸库中，查询与目标人脸相似的一张或者多张人脸，并返回相应的置信度。 支持传入图片或者faceID进行人脸搜索，如果传入的是多张人脸图片，选取图片中检测到的最大尺寸人脸作为检索的输入。
+        人脸搜索是指在已有的人脸库中，查询与目标人脸相似的一张或者多张人脸，并返回相应的置信度。
+        支持传入图片或者faceID进行人脸搜索，如果传入的是多张人脸图片，选取图片中检测到的最大尺寸人脸作为检索的输入。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param SearchFaceByUrlRequest request
-        :return: SearchFaceByUrlResponse
+        :param request: Request instance for SearchFaceByUrl
+        :type request: :class:`huaweicloudsdkfrs.v2.SearchFaceByUrlRequest`
+        :rtype: :class:`huaweicloudsdkfrs.v2.SearchFaceByUrlResponse`
         """
         return self.search_face_by_url_with_http_info(request)
 
     def search_face_by_url_with_http_info(self, request):
-        """人脸搜索
-
-        人脸搜索是指在已有的人脸库中，查询与目标人脸相似的一张或者多张人脸，并返回相应的置信度。 支持传入图片或者faceID进行人脸搜索，如果传入的是多张人脸图片，选取图片中检测到的最大尺寸人脸作为检索的输入。
-
-        :param SearchFaceByUrlRequest request
-        :return: SearchFaceByUrlResponse
-        """
-
         all_params = ['face_set_name', 'face_search_url_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1615,26 +1500,21 @@ class FrsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_all_face_sets_async(self, request):
         """查询所有人脸库
 
         查询当前用户所有人脸库的状态信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowAllFaceSetsRequest request
-        :return: ShowAllFaceSetsResponse
+        :param request: Request instance for ShowAllFaceSets
+        :type request: :class:`huaweicloudsdkfrs.v2.ShowAllFaceSetsRequest`
+        :rtype: :class:`huaweicloudsdkfrs.v2.ShowAllFaceSetsResponse`
         """
         return self.show_all_face_sets_with_http_info(request)
 
     def show_all_face_sets_with_http_info(self, request):
-        """查询所有人脸库
-
-        查询当前用户所有人脸库的状态信息。
-
-        :param ShowAllFaceSetsRequest request
-        :return: ShowAllFaceSetsResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1676,26 +1556,21 @@ class FrsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_face_set_async(self, request):
         """查询人脸库
 
         查询人脸库当前的状态。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowFaceSetRequest request
-        :return: ShowFaceSetResponse
+        :param request: Request instance for ShowFaceSet
+        :type request: :class:`huaweicloudsdkfrs.v2.ShowFaceSetRequest`
+        :rtype: :class:`huaweicloudsdkfrs.v2.ShowFaceSetResponse`
         """
         return self.show_face_set_with_http_info(request)
 
     def show_face_set_with_http_info(self, request):
-        """查询人脸库
-
-        查询人脸库当前的状态。
-
-        :param ShowFaceSetRequest request
-        :return: ShowFaceSetResponse
-        """
-
         all_params = ['face_set_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1739,26 +1614,21 @@ class FrsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_faces_by_face_id_async(self, request):
         """查询人脸
 
         查询指定人脸库中人脸信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowFacesByFaceIdRequest request
-        :return: ShowFacesByFaceIdResponse
+        :param request: Request instance for ShowFacesByFaceId
+        :type request: :class:`huaweicloudsdkfrs.v2.ShowFacesByFaceIdRequest`
+        :rtype: :class:`huaweicloudsdkfrs.v2.ShowFacesByFaceIdResponse`
         """
         return self.show_faces_by_face_id_with_http_info(request)
 
     def show_faces_by_face_id_with_http_info(self, request):
-        """查询人脸
-
-        查询指定人脸库中人脸信息。
-
-        :param ShowFacesByFaceIdRequest request
-        :return: ShowFacesByFaceIdResponse
-        """
-
         all_params = ['face_set_name', 'face_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1804,26 +1674,21 @@ class FrsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_faces_by_limit_async(self, request):
         """查询人脸
 
         查询指定人脸库中人脸信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowFacesByLimitRequest request
-        :return: ShowFacesByLimitResponse
+        :param request: Request instance for ShowFacesByLimit
+        :type request: :class:`huaweicloudsdkfrs.v2.ShowFacesByLimitRequest`
+        :rtype: :class:`huaweicloudsdkfrs.v2.ShowFacesByLimitResponse`
         """
         return self.show_faces_by_limit_with_http_info(request)
 
     def show_faces_by_limit_with_http_info(self, request):
-        """查询人脸
-
-        查询指定人脸库中人脸信息。
-
-        :param ShowFacesByLimitRequest request
-        :return: ShowFacesByLimitResponse
-        """
-
         all_params = ['face_set_name', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1871,26 +1736,21 @@ class FrsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_face_async(self, request):
         """更新人脸
 
         根据人脸ID（face_id）更新单张人脸信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateFaceRequest request
-        :return: UpdateFaceResponse
+        :param request: Request instance for UpdateFace
+        :type request: :class:`huaweicloudsdkfrs.v2.UpdateFaceRequest`
+        :rtype: :class:`huaweicloudsdkfrs.v2.UpdateFaceResponse`
         """
         return self.update_face_with_http_info(request)
 
     def update_face_with_http_info(self, request):
-        """更新人脸
-
-        根据人脸ID（face_id）更新单张人脸信息。
-
-        :param UpdateFaceRequest request
-        :return: UpdateFaceResponse
-        """
-
         all_params = ['face_set_name', 'update_face_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1935,7 +1795,6 @@ class FrsAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Scene:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class Scene:
     }
 
     def __init__(self, category=None, type=None, scene_name=None, scene_id=None, datasource_id=None, status=None, created_at=None, update_at=None, workspace_id=None, service_type=None):
-        """Scene - a model defined in huaweicloud sdk"""
+        """Scene
+
+        The model defined in huaweicloud sdk
+
+        :param category: 类型。
+        :type category: str
+        :param type: 场景类型。
+        :type type: str
+        :param scene_name: 场景名称。
+        :type scene_name: str
+        :param scene_id: 场景id。
+        :type scene_id: str
+        :param datasource_id: 数据源id。
+        :type datasource_id: str
+        :param status: 状态。
+        :type status: str
+        :param created_at: 创建时间。
+        :type created_at: int
+        :param update_at: 更新时间。
+        :type update_at: int
+        :param workspace_id: 工作空间id。
+        :type workspace_id: str
+        :param service_type: 服务类型。
+        :type service_type: str
+        """
         
         
 
@@ -94,7 +117,7 @@ class Scene:
         类型。
 
         :param category: The category of this Scene.
-        :type: str
+        :type category: str
         """
         self._category = category
 
@@ -116,7 +139,7 @@ class Scene:
         场景类型。
 
         :param type: The type of this Scene.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -138,7 +161,7 @@ class Scene:
         场景名称。
 
         :param scene_name: The scene_name of this Scene.
-        :type: str
+        :type scene_name: str
         """
         self._scene_name = scene_name
 
@@ -160,7 +183,7 @@ class Scene:
         场景id。
 
         :param scene_id: The scene_id of this Scene.
-        :type: str
+        :type scene_id: str
         """
         self._scene_id = scene_id
 
@@ -182,7 +205,7 @@ class Scene:
         数据源id。
 
         :param datasource_id: The datasource_id of this Scene.
-        :type: str
+        :type datasource_id: str
         """
         self._datasource_id = datasource_id
 
@@ -204,7 +227,7 @@ class Scene:
         状态。
 
         :param status: The status of this Scene.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -226,7 +249,7 @@ class Scene:
         创建时间。
 
         :param created_at: The created_at of this Scene.
-        :type: int
+        :type created_at: int
         """
         self._created_at = created_at
 
@@ -248,7 +271,7 @@ class Scene:
         更新时间。
 
         :param update_at: The update_at of this Scene.
-        :type: int
+        :type update_at: int
         """
         self._update_at = update_at
 
@@ -270,7 +293,7 @@ class Scene:
         工作空间id。
 
         :param workspace_id: The workspace_id of this Scene.
-        :type: str
+        :type workspace_id: str
         """
         self._workspace_id = workspace_id
 
@@ -292,7 +315,7 @@ class Scene:
         服务类型。
 
         :param service_type: The service_type of this Scene.
-        :type: str
+        :type service_type: str
         """
         self._service_type = service_type
 

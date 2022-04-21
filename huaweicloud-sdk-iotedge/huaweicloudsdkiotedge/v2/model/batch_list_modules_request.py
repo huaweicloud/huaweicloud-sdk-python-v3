@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchListModulesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class BatchListModulesRequest:
     }
 
     def __init__(self, edge_node_id=None, offset=None, limit=None, app_type=None, function_type=None):
-        """BatchListModulesRequest - a model defined in huaweicloud sdk"""
+        """BatchListModulesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param edge_node_id: 边缘节点ID
+        :type edge_node_id: str
+        :param offset: 查询的起始位置，取值范围为非负整数，默认为0
+        :type offset: int
+        :param limit: 每页记录数，默认值为10，取值区间为1-1000
+        :type limit: int
+        :param app_type: 应用类型
+        :type app_type: str
+        :param function_type: 功能类型
+        :type function_type: str
+        """
         
         
 
@@ -77,7 +90,7 @@ class BatchListModulesRequest:
         边缘节点ID
 
         :param edge_node_id: The edge_node_id of this BatchListModulesRequest.
-        :type: str
+        :type edge_node_id: str
         """
         self._edge_node_id = edge_node_id
 
@@ -99,7 +112,7 @@ class BatchListModulesRequest:
         查询的起始位置，取值范围为非负整数，默认为0
 
         :param offset: The offset of this BatchListModulesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -121,7 +134,7 @@ class BatchListModulesRequest:
         每页记录数，默认值为10，取值区间为1-1000
 
         :param limit: The limit of this BatchListModulesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -143,7 +156,7 @@ class BatchListModulesRequest:
         应用类型
 
         :param app_type: The app_type of this BatchListModulesRequest.
-        :type: str
+        :type app_type: str
         """
         self._app_type = app_type
 
@@ -165,7 +178,7 @@ class BatchListModulesRequest:
         功能类型
 
         :param function_type: The function_type of this BatchListModulesRequest.
-        :type: str
+        :type function_type: str
         """
         self._function_type = function_type
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowBaremetalServerVolumeInfoRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowBaremetalServerVolumeInfoRequest:
     }
 
     def __init__(self, server_id=None):
-        """ShowBaremetalServerVolumeInfoRequest - a model defined in huaweicloud sdk"""
+        """ShowBaremetalServerVolumeInfoRequest
+
+        The model defined in huaweicloud sdk
+
+        :param server_id: 裸金属服务器ID。可以从裸金属服务器控制台查询，或者通过调用7.3.4-查询裸金属服务器列表（OpenStack原生）API获取。
+        :type server_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowBaremetalServerVolumeInfoRequest:
         裸金属服务器ID。可以从裸金属服务器控制台查询，或者通过调用7.3.4-查询裸金属服务器列表（OpenStack原生）API获取。
 
         :param server_id: The server_id of this ShowBaremetalServerVolumeInfoRequest.
-        :type: str
+        :type server_id: str
         """
         self._server_id = server_id
 

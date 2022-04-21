@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateSinkTaskQuotaRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateSinkTaskQuotaRequest:
     }
 
     def __init__(self, connector_id=None, body=None):
-        """UpdateSinkTaskQuotaRequest - a model defined in huaweicloud sdk"""
+        """UpdateSinkTaskQuotaRequest
+
+        The model defined in huaweicloud sdk
+
+        :param connector_id: 实例转储ID。 请参考[实例生命周期][查询实例]接口返回的数据。
+        :type connector_id: str
+        :param body: Body of the UpdateSinkTaskQuotaRequest
+        :type body: :class:`huaweicloudsdkkafka.v2.UpdateSinkTaskQuotaReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateSinkTaskQuotaRequest:
         实例转储ID。 请参考[实例生命周期][查询实例]接口返回的数据。
 
         :param connector_id: The connector_id of this UpdateSinkTaskQuotaRequest.
-        :type: str
+        :type connector_id: str
         """
         self._connector_id = connector_id
 
@@ -72,7 +79,7 @@ class UpdateSinkTaskQuotaRequest:
 
 
         :return: The body of this UpdateSinkTaskQuotaRequest.
-        :rtype: UpdateSinkTaskQuotaReq
+        :rtype: :class:`huaweicloudsdkkafka.v2.UpdateSinkTaskQuotaReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateSinkTaskQuotaRequest:
 
 
         :param body: The body of this UpdateSinkTaskQuotaRequest.
-        :type: UpdateSinkTaskQuotaReq
+        :type body: :class:`huaweicloudsdkkafka.v2.UpdateSinkTaskQuotaReq`
         """
         self._body = body
 

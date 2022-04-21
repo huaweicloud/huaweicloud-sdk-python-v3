@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EncryptDatakeyRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class EncryptDatakeyRequest:
     }
 
     def __init__(self, body=None):
-        """EncryptDatakeyRequest - a model defined in huaweicloud sdk"""
+        """EncryptDatakeyRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the EncryptDatakeyRequest
+        :type body: :class:`huaweicloudsdkkms.v2.EncryptDatakeyRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class EncryptDatakeyRequest:
 
 
         :return: The body of this EncryptDatakeyRequest.
-        :rtype: EncryptDatakeyRequestBody
+        :rtype: :class:`huaweicloudsdkkms.v2.EncryptDatakeyRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class EncryptDatakeyRequest:
 
 
         :param body: The body of this EncryptDatakeyRequest.
-        :type: EncryptDatakeyRequestBody
+        :type body: :class:`huaweicloudsdkkms.v2.EncryptDatakeyRequestBody`
         """
         self._body = body
 

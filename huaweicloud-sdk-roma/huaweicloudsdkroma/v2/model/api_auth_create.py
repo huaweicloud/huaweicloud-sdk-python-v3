@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApiAuthCreate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ApiAuthCreate:
     }
 
     def __init__(self, env_id=None, app_ids=None, api_ids=None, auth_tunnel=None, auth_whitelist=None, auth_blacklist=None, visit_params=None):
-        """ApiAuthCreate - a model defined in huaweicloud sdk"""
+        """ApiAuthCreate
+
+        The model defined in huaweicloud sdk
+
+        :param env_id: 需要授权的环境编号
+        :type env_id: str
+        :param app_ids: APP的编号列表
+        :type app_ids: list[str]
+        :param api_ids: API的编号列表。
+        :type api_ids: list[str]
+        :param auth_tunnel: 授权通道类型： - GREEN：绿色通道 - NORMAL：非绿色通道  实例开启green_tunnel特性时可以开启绿色通道，此字段不填默认为不使用绿色通道
+        :type auth_tunnel: str
+        :param auth_whitelist: 绿色通道授权白名单。  允许白名单中的IP不使用认证信息访问，auth_tunnel &#x3D; GREEN时生效
+        :type auth_whitelist: list[str]
+        :param auth_blacklist: 绿色通道授权黑名单。  auth_tunnel &#x3D; GREEN时生效
+        :type auth_blacklist: list[str]
+        :param visit_params: 访问参数列表。
+        :type visit_params: list[:class:`huaweicloudsdkroma.v2.ApiAuthVisitParam`]
+        """
         
         
 
@@ -85,7 +102,7 @@ class ApiAuthCreate:
         需要授权的环境编号
 
         :param env_id: The env_id of this ApiAuthCreate.
-        :type: str
+        :type env_id: str
         """
         self._env_id = env_id
 
@@ -107,7 +124,7 @@ class ApiAuthCreate:
         APP的编号列表
 
         :param app_ids: The app_ids of this ApiAuthCreate.
-        :type: list[str]
+        :type app_ids: list[str]
         """
         self._app_ids = app_ids
 
@@ -129,7 +146,7 @@ class ApiAuthCreate:
         API的编号列表。
 
         :param api_ids: The api_ids of this ApiAuthCreate.
-        :type: list[str]
+        :type api_ids: list[str]
         """
         self._api_ids = api_ids
 
@@ -151,7 +168,7 @@ class ApiAuthCreate:
         授权通道类型： - GREEN：绿色通道 - NORMAL：非绿色通道  实例开启green_tunnel特性时可以开启绿色通道，此字段不填默认为不使用绿色通道
 
         :param auth_tunnel: The auth_tunnel of this ApiAuthCreate.
-        :type: str
+        :type auth_tunnel: str
         """
         self._auth_tunnel = auth_tunnel
 
@@ -173,7 +190,7 @@ class ApiAuthCreate:
         绿色通道授权白名单。  允许白名单中的IP不使用认证信息访问，auth_tunnel = GREEN时生效
 
         :param auth_whitelist: The auth_whitelist of this ApiAuthCreate.
-        :type: list[str]
+        :type auth_whitelist: list[str]
         """
         self._auth_whitelist = auth_whitelist
 
@@ -195,7 +212,7 @@ class ApiAuthCreate:
         绿色通道授权黑名单。  auth_tunnel = GREEN时生效
 
         :param auth_blacklist: The auth_blacklist of this ApiAuthCreate.
-        :type: list[str]
+        :type auth_blacklist: list[str]
         """
         self._auth_blacklist = auth_blacklist
 
@@ -206,7 +223,7 @@ class ApiAuthCreate:
         访问参数列表。
 
         :return: The visit_params of this ApiAuthCreate.
-        :rtype: list[ApiAuthVisitParam]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.ApiAuthVisitParam`]
         """
         return self._visit_params
 
@@ -217,7 +234,7 @@ class ApiAuthCreate:
         访问参数列表。
 
         :param visit_params: The visit_params of this ApiAuthCreate.
-        :type: list[ApiAuthVisitParam]
+        :type visit_params: list[:class:`huaweicloudsdkroma.v2.ApiAuthVisitParam`]
         """
         self._visit_params = visit_params
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PropertyValue:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class PropertyValue:
     }
 
     def __init__(self, property_name=None, value=None, timestamp=None):
-        """PropertyValue - a model defined in huaweicloud sdk"""
+        """PropertyValue
+
+        The model defined in huaweicloud sdk
+
+        :param property_name: 属性名称
+        :type property_name: str
+        :param value: 属性值
+        :type value: object
+        :param timestamp: 属性值最后更新时间
+        :type timestamp: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class PropertyValue:
         属性名称
 
         :param property_name: The property_name of this PropertyValue.
-        :type: str
+        :type property_name: str
         """
         self._property_name = property_name
 
@@ -90,7 +99,7 @@ class PropertyValue:
         属性值
 
         :param value: The value of this PropertyValue.
-        :type: object
+        :type value: object
         """
         self._value = value
 
@@ -112,7 +121,7 @@ class PropertyValue:
         属性值最后更新时间
 
         :param timestamp: The timestamp of this PropertyValue.
-        :type: str
+        :type timestamp: str
         """
         self._timestamp = timestamp
 

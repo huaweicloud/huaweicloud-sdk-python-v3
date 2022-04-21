@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QuerySessionResponse:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class QuerySessionResponse:
     }
 
     def __init__(self, id=None, active=None, operation=None, type=None, cost_time=None, plan_summary=None, host=None, client=None, description=None, namespace=None):
-        """QuerySessionResponse - a model defined in huaweicloud sdk"""
+        """QuerySessionResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 会话ID。
+        :type id: str
+        :param active: 当前会话是否活跃。 取值为“true”，表示活跃。 取值为“false”，表示不活跃。
+        :type active: bool
+        :param operation: 操作。
+        :type operation: str
+        :param type: 操作类型。
+        :type type: str
+        :param cost_time: 运行时间，单位为 ms。
+        :type cost_time: str
+        :param plan_summary: 执行计划描述。
+        :type plan_summary: str
+        :param host: 主机。
+        :type host: str
+        :param client: 客户端地址。
+        :type client: str
+        :param description: 连接描述。
+        :type description: str
+        :param namespace: 命名空间。
+        :type namespace: str
+        """
         
         
 
@@ -93,7 +116,7 @@ class QuerySessionResponse:
         会话ID。
 
         :param id: The id of this QuerySessionResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -115,7 +138,7 @@ class QuerySessionResponse:
         当前会话是否活跃。 取值为“true”，表示活跃。 取值为“false”，表示不活跃。
 
         :param active: The active of this QuerySessionResponse.
-        :type: bool
+        :type active: bool
         """
         self._active = active
 
@@ -137,7 +160,7 @@ class QuerySessionResponse:
         操作。
 
         :param operation: The operation of this QuerySessionResponse.
-        :type: str
+        :type operation: str
         """
         self._operation = operation
 
@@ -159,7 +182,7 @@ class QuerySessionResponse:
         操作类型。
 
         :param type: The type of this QuerySessionResponse.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -181,7 +204,7 @@ class QuerySessionResponse:
         运行时间，单位为 ms。
 
         :param cost_time: The cost_time of this QuerySessionResponse.
-        :type: str
+        :type cost_time: str
         """
         self._cost_time = cost_time
 
@@ -203,7 +226,7 @@ class QuerySessionResponse:
         执行计划描述。
 
         :param plan_summary: The plan_summary of this QuerySessionResponse.
-        :type: str
+        :type plan_summary: str
         """
         self._plan_summary = plan_summary
 
@@ -225,7 +248,7 @@ class QuerySessionResponse:
         主机。
 
         :param host: The host of this QuerySessionResponse.
-        :type: str
+        :type host: str
         """
         self._host = host
 
@@ -247,7 +270,7 @@ class QuerySessionResponse:
         客户端地址。
 
         :param client: The client of this QuerySessionResponse.
-        :type: str
+        :type client: str
         """
         self._client = client
 
@@ -269,7 +292,7 @@ class QuerySessionResponse:
         连接描述。
 
         :param description: The description of this QuerySessionResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -291,7 +314,7 @@ class QuerySessionResponse:
         命名空间。
 
         :param namespace: The namespace of this QuerySessionResponse.
-        :type: str
+        :type namespace: str
         """
         self._namespace = namespace
 

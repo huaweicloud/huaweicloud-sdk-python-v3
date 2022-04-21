@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowCommitsByRepoIdRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class ShowCommitsByRepoIdRequest:
     }
 
     def __init__(self, author=None, begin_date=None, end_date=None, message=None, page_index=None, page_size=None, path=None, ref_name=None, repository_id=None, stat_format=None):
-        """ShowCommitsByRepoIdRequest - a model defined in huaweicloud sdk"""
+        """ShowCommitsByRepoIdRequest
+
+        The model defined in huaweicloud sdk
+
+        :param author: 提交作者
+        :type author: str
+        :param begin_date: 起始提交日期，格式为yyyy-MM-dd
+        :type begin_date: str
+        :param end_date: 终止提交日期，格式为yyyy-MM-dd
+        :type end_date: str
+        :param message: 提交信息
+        :type message: str
+        :param page_index: 分页索引
+        :type page_index: int
+        :param page_size: 每页数据量
+        :type page_size: int
+        :param path: 文件路径
+        :type path: str
+        :param ref_name: 分支或标签名，支持SHA格式
+        :type ref_name: str
+        :param repository_id: 仓库主键id
+        :type repository_id: int
+        :param stat_format: 提交的文件变更详情信息（不包含diff）
+        :type stat_format: str
+        """
         
         
 
@@ -101,7 +124,7 @@ class ShowCommitsByRepoIdRequest:
         提交作者
 
         :param author: The author of this ShowCommitsByRepoIdRequest.
-        :type: str
+        :type author: str
         """
         self._author = author
 
@@ -123,7 +146,7 @@ class ShowCommitsByRepoIdRequest:
         起始提交日期，格式为yyyy-MM-dd
 
         :param begin_date: The begin_date of this ShowCommitsByRepoIdRequest.
-        :type: str
+        :type begin_date: str
         """
         self._begin_date = begin_date
 
@@ -145,7 +168,7 @@ class ShowCommitsByRepoIdRequest:
         终止提交日期，格式为yyyy-MM-dd
 
         :param end_date: The end_date of this ShowCommitsByRepoIdRequest.
-        :type: str
+        :type end_date: str
         """
         self._end_date = end_date
 
@@ -167,7 +190,7 @@ class ShowCommitsByRepoIdRequest:
         提交信息
 
         :param message: The message of this ShowCommitsByRepoIdRequest.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -189,7 +212,7 @@ class ShowCommitsByRepoIdRequest:
         分页索引
 
         :param page_index: The page_index of this ShowCommitsByRepoIdRequest.
-        :type: int
+        :type page_index: int
         """
         self._page_index = page_index
 
@@ -211,7 +234,7 @@ class ShowCommitsByRepoIdRequest:
         每页数据量
 
         :param page_size: The page_size of this ShowCommitsByRepoIdRequest.
-        :type: int
+        :type page_size: int
         """
         self._page_size = page_size
 
@@ -233,7 +256,7 @@ class ShowCommitsByRepoIdRequest:
         文件路径
 
         :param path: The path of this ShowCommitsByRepoIdRequest.
-        :type: str
+        :type path: str
         """
         self._path = path
 
@@ -255,7 +278,7 @@ class ShowCommitsByRepoIdRequest:
         分支或标签名，支持SHA格式
 
         :param ref_name: The ref_name of this ShowCommitsByRepoIdRequest.
-        :type: str
+        :type ref_name: str
         """
         self._ref_name = ref_name
 
@@ -277,7 +300,7 @@ class ShowCommitsByRepoIdRequest:
         仓库主键id
 
         :param repository_id: The repository_id of this ShowCommitsByRepoIdRequest.
-        :type: int
+        :type repository_id: int
         """
         self._repository_id = repository_id
 
@@ -299,7 +322,7 @@ class ShowCommitsByRepoIdRequest:
         提交的文件变更详情信息（不包含diff）
 
         :param stat_format: The stat_format of this ShowCommitsByRepoIdRequest.
-        :type: str
+        :type stat_format: str
         """
         self._stat_format = stat_format
 

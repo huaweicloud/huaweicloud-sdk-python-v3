@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ConfirmConsumptionMessagesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ConfirmConsumptionMessagesRequest:
     }
 
     def __init__(self, queue_id=None, consumer_group_id=None, body=None):
-        """ConfirmConsumptionMessagesRequest - a model defined in huaweicloud sdk"""
+        """ConfirmConsumptionMessagesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param queue_id: 队列ID。
+        :type queue_id: str
+        :param consumer_group_id: 消费组ID。
+        :type consumer_group_id: str
+        :param body: Body of the ConfirmConsumptionMessagesRequest
+        :type body: :class:`huaweicloudsdkdms.v2.ConfirmConsumptionMessagesReq`
+        """
         
         
 
@@ -66,7 +75,7 @@ class ConfirmConsumptionMessagesRequest:
         队列ID。
 
         :param queue_id: The queue_id of this ConfirmConsumptionMessagesRequest.
-        :type: str
+        :type queue_id: str
         """
         self._queue_id = queue_id
 
@@ -88,7 +97,7 @@ class ConfirmConsumptionMessagesRequest:
         消费组ID。
 
         :param consumer_group_id: The consumer_group_id of this ConfirmConsumptionMessagesRequest.
-        :type: str
+        :type consumer_group_id: str
         """
         self._consumer_group_id = consumer_group_id
 
@@ -98,7 +107,7 @@ class ConfirmConsumptionMessagesRequest:
 
 
         :return: The body of this ConfirmConsumptionMessagesRequest.
-        :rtype: ConfirmConsumptionMessagesReq
+        :rtype: :class:`huaweicloudsdkdms.v2.ConfirmConsumptionMessagesReq`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class ConfirmConsumptionMessagesRequest:
 
 
         :param body: The body of this ConfirmConsumptionMessagesRequest.
-        :type: ConfirmConsumptionMessagesReq
+        :type body: :class:`huaweicloudsdkdms.v2.ConfirmConsumptionMessagesReq`
         """
         self._body = body
 

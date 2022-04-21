@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateInstanceReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateInstanceReq:
     }
 
     def __init__(self, instance=None, extend_param=None):
-        """CreateInstanceReq - a model defined in huaweicloud sdk"""
+        """CreateInstanceReq
+
+        The model defined in huaweicloud sdk
+
+        :param instance: 
+        :type instance: :class:`huaweicloudsdkddm.v1.CreateInstanceDetail`
+        :param extend_param: 
+        :type extend_param: :class:`huaweicloudsdkddm.v1.CreateInstanceExtendParam`
+        """
         
         
 
@@ -50,7 +57,7 @@ class CreateInstanceReq:
 
 
         :return: The instance of this CreateInstanceReq.
-        :rtype: CreateInstanceDetail
+        :rtype: :class:`huaweicloudsdkddm.v1.CreateInstanceDetail`
         """
         return self._instance
 
@@ -60,7 +67,7 @@ class CreateInstanceReq:
 
 
         :param instance: The instance of this CreateInstanceReq.
-        :type: CreateInstanceDetail
+        :type instance: :class:`huaweicloudsdkddm.v1.CreateInstanceDetail`
         """
         self._instance = instance
 
@@ -70,7 +77,7 @@ class CreateInstanceReq:
 
 
         :return: The extend_param of this CreateInstanceReq.
-        :rtype: CreateInstanceExtendParam
+        :rtype: :class:`huaweicloudsdkddm.v1.CreateInstanceExtendParam`
         """
         return self._extend_param
 
@@ -80,7 +87,7 @@ class CreateInstanceReq:
 
 
         :param extend_param: The extend_param of this CreateInstanceReq.
-        :type: CreateInstanceExtendParam
+        :type extend_param: :class:`huaweicloudsdkddm.v1.CreateInstanceExtendParam`
         """
         self._extend_param = extend_param
 

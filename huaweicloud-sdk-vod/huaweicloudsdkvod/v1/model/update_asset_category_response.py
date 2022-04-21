@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateAssetCategoryResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class UpdateAssetCategoryResponse(SdkResponse):
     }
 
     def __init__(self, name=None, parent_id=None, id=None, level=None, project_id=None):
-        """UpdateAssetCategoryResponse - a model defined in huaweicloud sdk"""
+        """UpdateAssetCategoryResponse
+
+        The model defined in huaweicloud sdk
+
+        :param name: 媒资分类名称。
+        :type name: str
+        :param parent_id: 父分类ID。 一级分类父ID为0。
+        :type parent_id: int
+        :param id: 媒资分类ID。
+        :type id: int
+        :param level: 媒资分类层级。  取值如下： - 1：一级分类层级。 - 2：二级分类层级。 - 3：三级分类层级。
+        :type level: int
+        :param project_id: 项目ID。
+        :type project_id: str
+        """
         
         super(UpdateAssetCategoryResponse, self).__init__()
 
@@ -78,7 +91,7 @@ class UpdateAssetCategoryResponse(SdkResponse):
         媒资分类名称。
 
         :param name: The name of this UpdateAssetCategoryResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -100,7 +113,7 @@ class UpdateAssetCategoryResponse(SdkResponse):
         父分类ID。 一级分类父ID为0。
 
         :param parent_id: The parent_id of this UpdateAssetCategoryResponse.
-        :type: int
+        :type parent_id: int
         """
         self._parent_id = parent_id
 
@@ -122,7 +135,7 @@ class UpdateAssetCategoryResponse(SdkResponse):
         媒资分类ID。
 
         :param id: The id of this UpdateAssetCategoryResponse.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -144,7 +157,7 @@ class UpdateAssetCategoryResponse(SdkResponse):
         媒资分类层级。  取值如下： - 1：一级分类层级。 - 2：二级分类层级。 - 3：三级分类层级。
 
         :param level: The level of this UpdateAssetCategoryResponse.
-        :type: int
+        :type level: int
         """
         self._level = level
 
@@ -166,7 +179,7 @@ class UpdateAssetCategoryResponse(SdkResponse):
         项目ID。
 
         :param project_id: The project_id of this UpdateAssetCategoryResponse.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 

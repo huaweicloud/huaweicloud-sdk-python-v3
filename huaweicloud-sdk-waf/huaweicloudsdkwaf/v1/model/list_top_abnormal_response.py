@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTopAbnormalResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListTopAbnormalResponse(SdkResponse):
     }
 
     def __init__(self, total=None, items=None):
-        """ListTopAbnormalResponse - a model defined in huaweicloud sdk"""
+        """ListTopAbnormalResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 攻击类型种类
+        :type total: int
+        :param items: CountItem详细信息
+        :type items: list[:class:`huaweicloudsdkwaf.v1.UrlCountItem`]
+        """
         
         super(ListTopAbnormalResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListTopAbnormalResponse(SdkResponse):
         攻击类型种类
 
         :param total: The total of this ListTopAbnormalResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -74,7 +81,7 @@ class ListTopAbnormalResponse(SdkResponse):
         CountItem详细信息
 
         :return: The items of this ListTopAbnormalResponse.
-        :rtype: list[UrlCountItem]
+        :rtype: list[:class:`huaweicloudsdkwaf.v1.UrlCountItem`]
         """
         return self._items
 
@@ -85,7 +92,7 @@ class ListTopAbnormalResponse(SdkResponse):
         CountItem详细信息
 
         :param items: The items of this ListTopAbnormalResponse.
-        :type: list[UrlCountItem]
+        :type items: list[:class:`huaweicloudsdkwaf.v1.UrlCountItem`]
         """
         self._items = items
 

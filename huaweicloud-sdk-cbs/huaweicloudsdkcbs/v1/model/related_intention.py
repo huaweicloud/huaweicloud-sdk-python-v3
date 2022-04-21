@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RelatedIntention:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RelatedIntention:
     }
 
     def __init__(self, intention=None, confidence=None):
-        """RelatedIntention - a model defined in huaweicloud sdk"""
+        """RelatedIntention
+
+        The model defined in huaweicloud sdk
+
+        :param intention: 意图名称。
+        :type intention: str
+        :param confidence: 意图置信度。
+        :type confidence: float
+        """
         
         
 
@@ -62,7 +69,7 @@ class RelatedIntention:
         意图名称。
 
         :param intention: The intention of this RelatedIntention.
-        :type: str
+        :type intention: str
         """
         self._intention = intention
 
@@ -84,7 +91,7 @@ class RelatedIntention:
         意图置信度。
 
         :param confidence: The confidence of this RelatedIntention.
-        :type: float
+        :type confidence: float
         """
         self._confidence = confidence
 

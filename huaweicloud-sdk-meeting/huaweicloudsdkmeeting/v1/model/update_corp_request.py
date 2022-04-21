@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateCorpRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UpdateCorpRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, id=None, body=None):
-        """UpdateCorpRequest - a model defined in huaweicloud sdk"""
+        """UpdateCorpRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        :type x_request_id: str
+        :param accept_language: 语言参数，默认为中文zh-CN, 英文为en-US
+        :type accept_language: str
+        :param id: 企业id
+        :type id: str
+        :param body: Body of the UpdateCorpRequest
+        :type body: :class:`huaweicloudsdkmeeting.v1.ModCorpDTO`
+        """
         
         
 
@@ -72,7 +83,7 @@ class UpdateCorpRequest:
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
 
         :param x_request_id: The x_request_id of this UpdateCorpRequest.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 
@@ -94,7 +105,7 @@ class UpdateCorpRequest:
         语言参数，默认为中文zh-CN, 英文为en-US
 
         :param accept_language: The accept_language of this UpdateCorpRequest.
-        :type: str
+        :type accept_language: str
         """
         self._accept_language = accept_language
 
@@ -116,7 +127,7 @@ class UpdateCorpRequest:
         企业id
 
         :param id: The id of this UpdateCorpRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -126,7 +137,7 @@ class UpdateCorpRequest:
 
 
         :return: The body of this UpdateCorpRequest.
-        :rtype: ModCorpDTO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.ModCorpDTO`
         """
         return self._body
 
@@ -136,7 +147,7 @@ class UpdateCorpRequest:
 
 
         :param body: The body of this UpdateCorpRequest.
-        :type: ModCorpDTO
+        :type body: :class:`huaweicloudsdkmeeting.v1.ModCorpDTO`
         """
         self._body = body
 

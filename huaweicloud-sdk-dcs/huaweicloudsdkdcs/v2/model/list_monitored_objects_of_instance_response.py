@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListMonitoredObjectsOfInstanceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ListMonitoredObjectsOfInstanceResponse(SdkResponse):
     }
 
     def __init__(self, router=None, children=None, instances=None, dcs_cluster_redis_node=None, dcs_cluster_proxy_node=None, dcs_cluster_proxy2_node=None, total=None):
-        """ListMonitoredObjectsOfInstanceResponse - a model defined in huaweicloud sdk"""
+        """ListMonitoredObjectsOfInstanceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param router: 当前查询维度路由。如果是主维度，则数组中是自身ID。
+        :type router: list[str]
+        :param children: 当前查询维度子维度对象列表。当前只有维度为dcs_instance_id时才有值。 - Proxy集群有两个子维度，分别为dcs_cluster_redis_node和dcs_cluster_proxy_node。 - Cluster集群有一个子维度 dcs_cluster_proxy_node。 
+        :type children: list[:class:`huaweicloudsdkdcs.v2.DimChild`]
+        :param instances: 当前查询维度监控对象列表。
+        :type instances: list[:class:`huaweicloudsdkdcs.v2.InstancesMonitoredObject`]
+        :param dcs_cluster_redis_node: Proxy集群或Cluster集群时才存在，表示集群数据节点维度的监控对象列表。字段名称与children的子维度对象名称相同。
+        :type dcs_cluster_redis_node: list[:class:`huaweicloudsdkdcs.v2.ClusterRedisNodeMonitoredObject`]
+        :param dcs_cluster_proxy_node: Proxy集群时才存在，表示集群Proxy节点维度的监控对象列表。字段名称与children的子维度对象名称相同。
+        :type dcs_cluster_proxy_node: list[:class:`huaweicloudsdkdcs.v2.ProxyNodeMonitoredObject`]
+        :param dcs_cluster_proxy2_node: Redis 4.0和5.0的Proxy集群时才存在，表示集群Proxy节点维度的监控对象列表。字段名称与children的子维度对象名称相同。 
+        :type dcs_cluster_proxy2_node: list[:class:`huaweicloudsdkdcs.v2.Proxy2NodeMonitoredObject`]
+        :param total: 主维度监控对象的总数。
+        :type total: int
+        """
         
         super(ListMonitoredObjectsOfInstanceResponse, self).__init__()
 
@@ -88,7 +105,7 @@ class ListMonitoredObjectsOfInstanceResponse(SdkResponse):
         当前查询维度路由。如果是主维度，则数组中是自身ID。
 
         :param router: The router of this ListMonitoredObjectsOfInstanceResponse.
-        :type: list[str]
+        :type router: list[str]
         """
         self._router = router
 
@@ -99,7 +116,7 @@ class ListMonitoredObjectsOfInstanceResponse(SdkResponse):
         当前查询维度子维度对象列表。当前只有维度为dcs_instance_id时才有值。 - Proxy集群有两个子维度，分别为dcs_cluster_redis_node和dcs_cluster_proxy_node。 - Cluster集群有一个子维度 dcs_cluster_proxy_node。 
 
         :return: The children of this ListMonitoredObjectsOfInstanceResponse.
-        :rtype: list[DimChild]
+        :rtype: list[:class:`huaweicloudsdkdcs.v2.DimChild`]
         """
         return self._children
 
@@ -110,7 +127,7 @@ class ListMonitoredObjectsOfInstanceResponse(SdkResponse):
         当前查询维度子维度对象列表。当前只有维度为dcs_instance_id时才有值。 - Proxy集群有两个子维度，分别为dcs_cluster_redis_node和dcs_cluster_proxy_node。 - Cluster集群有一个子维度 dcs_cluster_proxy_node。 
 
         :param children: The children of this ListMonitoredObjectsOfInstanceResponse.
-        :type: list[DimChild]
+        :type children: list[:class:`huaweicloudsdkdcs.v2.DimChild`]
         """
         self._children = children
 
@@ -121,7 +138,7 @@ class ListMonitoredObjectsOfInstanceResponse(SdkResponse):
         当前查询维度监控对象列表。
 
         :return: The instances of this ListMonitoredObjectsOfInstanceResponse.
-        :rtype: list[InstancesMonitoredObject]
+        :rtype: list[:class:`huaweicloudsdkdcs.v2.InstancesMonitoredObject`]
         """
         return self._instances
 
@@ -132,7 +149,7 @@ class ListMonitoredObjectsOfInstanceResponse(SdkResponse):
         当前查询维度监控对象列表。
 
         :param instances: The instances of this ListMonitoredObjectsOfInstanceResponse.
-        :type: list[InstancesMonitoredObject]
+        :type instances: list[:class:`huaweicloudsdkdcs.v2.InstancesMonitoredObject`]
         """
         self._instances = instances
 
@@ -143,7 +160,7 @@ class ListMonitoredObjectsOfInstanceResponse(SdkResponse):
         Proxy集群或Cluster集群时才存在，表示集群数据节点维度的监控对象列表。字段名称与children的子维度对象名称相同。
 
         :return: The dcs_cluster_redis_node of this ListMonitoredObjectsOfInstanceResponse.
-        :rtype: list[ClusterRedisNodeMonitoredObject]
+        :rtype: list[:class:`huaweicloudsdkdcs.v2.ClusterRedisNodeMonitoredObject`]
         """
         return self._dcs_cluster_redis_node
 
@@ -154,7 +171,7 @@ class ListMonitoredObjectsOfInstanceResponse(SdkResponse):
         Proxy集群或Cluster集群时才存在，表示集群数据节点维度的监控对象列表。字段名称与children的子维度对象名称相同。
 
         :param dcs_cluster_redis_node: The dcs_cluster_redis_node of this ListMonitoredObjectsOfInstanceResponse.
-        :type: list[ClusterRedisNodeMonitoredObject]
+        :type dcs_cluster_redis_node: list[:class:`huaweicloudsdkdcs.v2.ClusterRedisNodeMonitoredObject`]
         """
         self._dcs_cluster_redis_node = dcs_cluster_redis_node
 
@@ -165,7 +182,7 @@ class ListMonitoredObjectsOfInstanceResponse(SdkResponse):
         Proxy集群时才存在，表示集群Proxy节点维度的监控对象列表。字段名称与children的子维度对象名称相同。
 
         :return: The dcs_cluster_proxy_node of this ListMonitoredObjectsOfInstanceResponse.
-        :rtype: list[ProxyNodeMonitoredObject]
+        :rtype: list[:class:`huaweicloudsdkdcs.v2.ProxyNodeMonitoredObject`]
         """
         return self._dcs_cluster_proxy_node
 
@@ -176,7 +193,7 @@ class ListMonitoredObjectsOfInstanceResponse(SdkResponse):
         Proxy集群时才存在，表示集群Proxy节点维度的监控对象列表。字段名称与children的子维度对象名称相同。
 
         :param dcs_cluster_proxy_node: The dcs_cluster_proxy_node of this ListMonitoredObjectsOfInstanceResponse.
-        :type: list[ProxyNodeMonitoredObject]
+        :type dcs_cluster_proxy_node: list[:class:`huaweicloudsdkdcs.v2.ProxyNodeMonitoredObject`]
         """
         self._dcs_cluster_proxy_node = dcs_cluster_proxy_node
 
@@ -187,7 +204,7 @@ class ListMonitoredObjectsOfInstanceResponse(SdkResponse):
         Redis 4.0和5.0的Proxy集群时才存在，表示集群Proxy节点维度的监控对象列表。字段名称与children的子维度对象名称相同。 
 
         :return: The dcs_cluster_proxy2_node of this ListMonitoredObjectsOfInstanceResponse.
-        :rtype: list[Proxy2NodeMonitoredObject]
+        :rtype: list[:class:`huaweicloudsdkdcs.v2.Proxy2NodeMonitoredObject`]
         """
         return self._dcs_cluster_proxy2_node
 
@@ -198,7 +215,7 @@ class ListMonitoredObjectsOfInstanceResponse(SdkResponse):
         Redis 4.0和5.0的Proxy集群时才存在，表示集群Proxy节点维度的监控对象列表。字段名称与children的子维度对象名称相同。 
 
         :param dcs_cluster_proxy2_node: The dcs_cluster_proxy2_node of this ListMonitoredObjectsOfInstanceResponse.
-        :type: list[Proxy2NodeMonitoredObject]
+        :type dcs_cluster_proxy2_node: list[:class:`huaweicloudsdkdcs.v2.Proxy2NodeMonitoredObject`]
         """
         self._dcs_cluster_proxy2_node = dcs_cluster_proxy2_node
 
@@ -220,7 +237,7 @@ class ListMonitoredObjectsOfInstanceResponse(SdkResponse):
         主维度监控对象的总数。
 
         :param total: The total of this ListMonitoredObjectsOfInstanceResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 

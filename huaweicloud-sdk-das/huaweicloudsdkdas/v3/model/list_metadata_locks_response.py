@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListMetadataLocksResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListMetadataLocksResponse(SdkResponse):
     }
 
     def __init__(self, metadata_locks=None, count=None):
-        """ListMetadataLocksResponse - a model defined in huaweicloud sdk"""
+        """ListMetadataLocksResponse
+
+        The model defined in huaweicloud sdk
+
+        :param metadata_locks: 元数据锁列表
+        :type metadata_locks: list[:class:`huaweicloudsdkdas.v3.MetadataLock`]
+        :param count: 元数据锁数量
+        :type count: int
+        """
         
         super(ListMetadataLocksResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListMetadataLocksResponse(SdkResponse):
         元数据锁列表
 
         :return: The metadata_locks of this ListMetadataLocksResponse.
-        :rtype: list[MetadataLock]
+        :rtype: list[:class:`huaweicloudsdkdas.v3.MetadataLock`]
         """
         return self._metadata_locks
 
@@ -63,7 +70,7 @@ class ListMetadataLocksResponse(SdkResponse):
         元数据锁列表
 
         :param metadata_locks: The metadata_locks of this ListMetadataLocksResponse.
-        :type: list[MetadataLock]
+        :type metadata_locks: list[:class:`huaweicloudsdkdas.v3.MetadataLock`]
         """
         self._metadata_locks = metadata_locks
 
@@ -85,7 +92,7 @@ class ListMetadataLocksResponse(SdkResponse):
         元数据锁数量
 
         :param count: The count of this ListMetadataLocksResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

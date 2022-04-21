@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InstanceRestoreInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class InstanceRestoreInfo:
     }
 
     def __init__(self, backup_id=None, restore_id=None, backup_name=None, updated_at=None, restore_remark=None, created_at=None, progress=None, error_code=None, restore_name=None, backup_remark=None, status=None):
-        """InstanceRestoreInfo - a model defined in huaweicloud sdk"""
+        """InstanceRestoreInfo
+
+        The model defined in huaweicloud sdk
+
+        :param backup_id: 备份记录ID。
+        :type backup_id: str
+        :param restore_id: 恢复记录ID。
+        :type restore_id: str
+        :param backup_name: 备份记录名称。
+        :type backup_name: str
+        :param updated_at: 恢复完成时间。
+        :type updated_at: str
+        :param restore_remark: 恢复备注信息。
+        :type restore_remark: str
+        :param created_at: 恢复任务创建时间。
+        :type created_at: str
+        :param progress: 恢复进度。
+        :type progress: str
+        :param error_code: 恢复失败后错误码 * &#x60;dcs.08.0001&#x60; - 启动备份恢复工具失败。 * &#x60;dcs.08.0002&#x60; - 执行超时。 * &#x60;dcs.08.0003&#x60; - 删除桶失败。 * &#x60;dcs.08.0004&#x60; - 获取ak/sk 失败。 * &#x60;dcs.08.0005&#x60; - 创建桶失败。 * &#x60;dcs.08.0006&#x60; - 查询备份数据大小失败。 * &#x60;dcs.08.0007&#x60; - 恢复时同步数据失败。 * &#x60;dcs.08.0008&#x60; - 自动备份任务未运行，实例正在运行其他任务。 
+        :type error_code: str
+        :param restore_name: 恢复记录名称。
+        :type restore_name: str
+        :param backup_remark: 备份备注信息。
+        :type backup_remark: str
+        :param status: 恢复状态。 - waiting：等待中 - restoring：恢复中 - succeed：恢复成功 - failed：恢复失败 
+        :type status: str
+        """
         
         
 
@@ -108,7 +133,7 @@ class InstanceRestoreInfo:
         备份记录ID。
 
         :param backup_id: The backup_id of this InstanceRestoreInfo.
-        :type: str
+        :type backup_id: str
         """
         self._backup_id = backup_id
 
@@ -130,7 +155,7 @@ class InstanceRestoreInfo:
         恢复记录ID。
 
         :param restore_id: The restore_id of this InstanceRestoreInfo.
-        :type: str
+        :type restore_id: str
         """
         self._restore_id = restore_id
 
@@ -152,7 +177,7 @@ class InstanceRestoreInfo:
         备份记录名称。
 
         :param backup_name: The backup_name of this InstanceRestoreInfo.
-        :type: str
+        :type backup_name: str
         """
         self._backup_name = backup_name
 
@@ -174,7 +199,7 @@ class InstanceRestoreInfo:
         恢复完成时间。
 
         :param updated_at: The updated_at of this InstanceRestoreInfo.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 
@@ -196,7 +221,7 @@ class InstanceRestoreInfo:
         恢复备注信息。
 
         :param restore_remark: The restore_remark of this InstanceRestoreInfo.
-        :type: str
+        :type restore_remark: str
         """
         self._restore_remark = restore_remark
 
@@ -218,7 +243,7 @@ class InstanceRestoreInfo:
         恢复任务创建时间。
 
         :param created_at: The created_at of this InstanceRestoreInfo.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -240,7 +265,7 @@ class InstanceRestoreInfo:
         恢复进度。
 
         :param progress: The progress of this InstanceRestoreInfo.
-        :type: str
+        :type progress: str
         """
         self._progress = progress
 
@@ -262,7 +287,7 @@ class InstanceRestoreInfo:
         恢复失败后错误码 * `dcs.08.0001` - 启动备份恢复工具失败。 * `dcs.08.0002` - 执行超时。 * `dcs.08.0003` - 删除桶失败。 * `dcs.08.0004` - 获取ak/sk 失败。 * `dcs.08.0005` - 创建桶失败。 * `dcs.08.0006` - 查询备份数据大小失败。 * `dcs.08.0007` - 恢复时同步数据失败。 * `dcs.08.0008` - 自动备份任务未运行，实例正在运行其他任务。 
 
         :param error_code: The error_code of this InstanceRestoreInfo.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -284,7 +309,7 @@ class InstanceRestoreInfo:
         恢复记录名称。
 
         :param restore_name: The restore_name of this InstanceRestoreInfo.
-        :type: str
+        :type restore_name: str
         """
         self._restore_name = restore_name
 
@@ -306,7 +331,7 @@ class InstanceRestoreInfo:
         备份备注信息。
 
         :param backup_remark: The backup_remark of this InstanceRestoreInfo.
-        :type: str
+        :type backup_remark: str
         """
         self._backup_remark = backup_remark
 
@@ -328,7 +353,7 @@ class InstanceRestoreInfo:
         恢复状态。 - waiting：等待中 - restoring：恢复中 - succeed：恢复成功 - failed：恢复失败 
 
         :param status: The status of this InstanceRestoreInfo.
-        :type: str
+        :type status: str
         """
         self._status = status
 

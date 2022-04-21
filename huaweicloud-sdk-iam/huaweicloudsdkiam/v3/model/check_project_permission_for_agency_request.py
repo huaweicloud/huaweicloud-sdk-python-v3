@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CheckProjectPermissionForAgencyRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CheckProjectPermissionForAgencyRequest:
     }
 
     def __init__(self, project_id=None, agency_id=None, role_id=None):
-        """CheckProjectPermissionForAgencyRequest - a model defined in huaweicloud sdk"""
+        """CheckProjectPermissionForAgencyRequest
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: 委托方的项目ID，获取方式请参见：[获取项目名称、项目ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
+        :type project_id: str
+        :param agency_id: 委托ID，获取方式请参见：[获取委托名、委托ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
+        :type agency_id: str
+        :param role_id: 权限ID，获取方式请参见：[获取权限名、权限ID](https://support.huaweicloud.com/api-iam/iam_10_0001.html)。
+        :type role_id: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class CheckProjectPermissionForAgencyRequest:
         委托方的项目ID，获取方式请参见：[获取项目名称、项目ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param project_id: The project_id of this CheckProjectPermissionForAgencyRequest.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -87,7 +96,7 @@ class CheckProjectPermissionForAgencyRequest:
         委托ID，获取方式请参见：[获取委托名、委托ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param agency_id: The agency_id of this CheckProjectPermissionForAgencyRequest.
-        :type: str
+        :type agency_id: str
         """
         self._agency_id = agency_id
 
@@ -109,7 +118,7 @@ class CheckProjectPermissionForAgencyRequest:
         权限ID，获取方式请参见：[获取权限名、权限ID](https://support.huaweicloud.com/api-iam/iam_10_0001.html)。
 
         :param role_id: The role_id of this CheckProjectPermissionForAgencyRequest.
-        :type: str
+        :type role_id: str
         """
         self._role_id = role_id
 

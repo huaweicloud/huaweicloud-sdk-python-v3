@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListServicePublicDetailsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListServicePublicDetailsRequest:
     }
 
     def __init__(self, limit=None, offset=None, endpoint_service_name=None, id=None, sort_key=None, sort_dir=None):
-        """ListServicePublicDetailsRequest - a model defined in huaweicloud sdk"""
+        """ListServicePublicDetailsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 查询返回公共的终端节点服务数量限制，即每页返回的个数。 取值范围：0~1000，取值一般为10，20或者50，默认为10。
+        :type limit: int
+        :param offset: 偏移量。 偏移量为一个大于0小于终端节点服务总个数的整数，表示从偏移量后面的终端节点服务开始查询。
+        :type offset: int
+        :param endpoint_service_name: 公共终端节点服务的名称，支持大小写以及模糊匹配。
+        :type endpoint_service_name: str
+        :param id: 公共终端节点服务的ID，唯一标识。
+        :type id: str
+        :param sort_key: 查询结果中终端节点服务列表的排序字段，取值为： ● create_at：终端节点服务的创建时间 ● update_at：终端节点服务的更新时间 默认值为create_at。
+        :type sort_key: str
+        :param sort_dir: 查询结果中终端节点服务列表的排序方式，取值为： ● desc：降序排序 ● asc：升序排序 默认值为desc。
+        :type sort_dir: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class ListServicePublicDetailsRequest:
         查询返回公共的终端节点服务数量限制，即每页返回的个数。 取值范围：0~1000，取值一般为10，20或者50，默认为10。
 
         :param limit: The limit of this ListServicePublicDetailsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -105,7 +120,7 @@ class ListServicePublicDetailsRequest:
         偏移量。 偏移量为一个大于0小于终端节点服务总个数的整数，表示从偏移量后面的终端节点服务开始查询。
 
         :param offset: The offset of this ListServicePublicDetailsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -127,7 +142,7 @@ class ListServicePublicDetailsRequest:
         公共终端节点服务的名称，支持大小写以及模糊匹配。
 
         :param endpoint_service_name: The endpoint_service_name of this ListServicePublicDetailsRequest.
-        :type: str
+        :type endpoint_service_name: str
         """
         self._endpoint_service_name = endpoint_service_name
 
@@ -149,7 +164,7 @@ class ListServicePublicDetailsRequest:
         公共终端节点服务的ID，唯一标识。
 
         :param id: The id of this ListServicePublicDetailsRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -171,7 +186,7 @@ class ListServicePublicDetailsRequest:
         查询结果中终端节点服务列表的排序字段，取值为： ● create_at：终端节点服务的创建时间 ● update_at：终端节点服务的更新时间 默认值为create_at。
 
         :param sort_key: The sort_key of this ListServicePublicDetailsRequest.
-        :type: str
+        :type sort_key: str
         """
         self._sort_key = sort_key
 
@@ -193,7 +208,7 @@ class ListServicePublicDetailsRequest:
         查询结果中终端节点服务列表的排序方式，取值为： ● desc：降序排序 ● asc：升序排序 默认值为desc。
 
         :param sort_dir: The sort_dir of this ListServicePublicDetailsRequest.
-        :type: str
+        :type sort_dir: str
         """
         self._sort_dir = sort_dir
 

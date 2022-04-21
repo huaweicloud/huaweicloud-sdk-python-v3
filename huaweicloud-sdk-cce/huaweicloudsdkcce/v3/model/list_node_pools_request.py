@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListNodePoolsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListNodePoolsRequest:
     }
 
     def __init__(self, cluster_id=None, show_default_node_pool=None):
-        """ListNodePoolsRequest - a model defined in huaweicloud sdk"""
+        """ListNodePoolsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 集群 ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
+        :type cluster_id: str
+        :param show_default_node_pool: 是否展示默认节点池。默认不展示，指定为“true”时展示默认节点池。
+        :type show_default_node_pool: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ListNodePoolsRequest:
         集群 ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
         :param cluster_id: The cluster_id of this ListNodePoolsRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -84,7 +91,7 @@ class ListNodePoolsRequest:
         是否展示默认节点池。默认不展示，指定为“true”时展示默认节点池。
 
         :param show_default_node_pool: The show_default_node_pool of this ListNodePoolsRequest.
-        :type: str
+        :type show_default_node_pool: str
         """
         self._show_default_node_pool = show_default_node_pool
 

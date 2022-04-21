@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PwdPasswordUserDomain:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class PwdPasswordUserDomain:
     }
 
     def __init__(self, name=None):
-        """PwdPasswordUserDomain - a model defined in huaweicloud sdk"""
+        """PwdPasswordUserDomain
+
+        The model defined in huaweicloud sdk
+
+        :param name: IAM用户所属账号名，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
+        :type name: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class PwdPasswordUserDomain:
         IAM用户所属账号名，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param name: The name of this PwdPasswordUserDomain.
-        :type: str
+        :type name: str
         """
         self._name = name
 

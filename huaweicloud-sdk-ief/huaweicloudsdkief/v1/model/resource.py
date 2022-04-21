@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Resource:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class Resource:
     }
 
     def __init__(self, resource_id=None, tags=None, resource_name=None):
-        """Resource - a model defined in huaweicloud sdk"""
+        """Resource
+
+        The model defined in huaweicloud sdk
+
+        :param resource_id: 资源ID
+        :type resource_id: str
+        :param tags: 标签列表，没有标签默认为空数组
+        :type tags: list[:class:`huaweicloudsdkief.v1.ResourceTag`]
+        :param resource_name: 资源名称，资源没有名称时默认为空字符串。
+        :type resource_name: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class Resource:
         资源ID
 
         :param resource_id: The resource_id of this Resource.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -76,7 +85,7 @@ class Resource:
         标签列表，没有标签默认为空数组
 
         :return: The tags of this Resource.
-        :rtype: list[ResourceTag]
+        :rtype: list[:class:`huaweicloudsdkief.v1.ResourceTag`]
         """
         return self._tags
 
@@ -87,7 +96,7 @@ class Resource:
         标签列表，没有标签默认为空数组
 
         :param tags: The tags of this Resource.
-        :type: list[ResourceTag]
+        :type tags: list[:class:`huaweicloudsdkief.v1.ResourceTag`]
         """
         self._tags = tags
 
@@ -109,7 +118,7 @@ class Resource:
         资源名称，资源没有名称时默认为空字符串。
 
         :param resource_name: The resource_name of this Resource.
-        :type: str
+        :type resource_name: str
         """
         self._resource_name = resource_name
 

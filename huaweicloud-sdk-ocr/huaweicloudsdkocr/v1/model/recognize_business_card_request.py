@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RecognizeBusinessCardRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RecognizeBusinessCardRequest:
     }
 
     def __init__(self, body=None):
-        """RecognizeBusinessCardRequest - a model defined in huaweicloud sdk"""
+        """RecognizeBusinessCardRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the RecognizeBusinessCardRequest
+        :type body: :class:`huaweicloudsdkocr.v1.BusinessCardRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class RecognizeBusinessCardRequest:
 
 
         :return: The body of this RecognizeBusinessCardRequest.
-        :rtype: BusinessCardRequestBody
+        :rtype: :class:`huaweicloudsdkocr.v1.BusinessCardRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class RecognizeBusinessCardRequest:
 
 
         :param body: The body of this RecognizeBusinessCardRequest.
-        :type: BusinessCardRequestBody
+        :type body: :class:`huaweicloudsdkocr.v1.BusinessCardRequestBody`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateBandwidthRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateBandwidthRequest:
     }
 
     def __init__(self, bandwidth_id=None, body=None):
-        """UpdateBandwidthRequest - a model defined in huaweicloud sdk"""
+        """UpdateBandwidthRequest
+
+        The model defined in huaweicloud sdk
+
+        :param bandwidth_id: 带宽唯一标识
+        :type bandwidth_id: str
+        :param body: Body of the UpdateBandwidthRequest
+        :type body: :class:`huaweicloudsdkeip.v2.UpdateBandwidthRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateBandwidthRequest:
         带宽唯一标识
 
         :param bandwidth_id: The bandwidth_id of this UpdateBandwidthRequest.
-        :type: str
+        :type bandwidth_id: str
         """
         self._bandwidth_id = bandwidth_id
 
@@ -72,7 +79,7 @@ class UpdateBandwidthRequest:
 
 
         :return: The body of this UpdateBandwidthRequest.
-        :rtype: UpdateBandwidthRequestBody
+        :rtype: :class:`huaweicloudsdkeip.v2.UpdateBandwidthRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateBandwidthRequest:
 
 
         :param body: The body of this UpdateBandwidthRequest.
-        :type: UpdateBandwidthRequestBody
+        :type body: :class:`huaweicloudsdkeip.v2.UpdateBandwidthRequestBody`
         """
         self._body = body
 

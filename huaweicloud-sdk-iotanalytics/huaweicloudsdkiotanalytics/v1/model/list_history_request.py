@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListHistoryRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListHistoryRequest:
     }
 
     def __init__(self, data_store_id=None, body=None):
-        """ListHistoryRequest - a model defined in huaweicloud sdk"""
+        """ListHistoryRequest
+
+        The model defined in huaweicloud sdk
+
+        :param data_store_id: 存储ID
+        :type data_store_id: str
+        :param body: Body of the ListHistoryRequest
+        :type body: :class:`huaweicloudsdkiotanalytics.v1.GetHistoryRequest`
+        """
         
         
 
@@ -62,7 +69,7 @@ class ListHistoryRequest:
         存储ID
 
         :param data_store_id: The data_store_id of this ListHistoryRequest.
-        :type: str
+        :type data_store_id: str
         """
         self._data_store_id = data_store_id
 
@@ -72,7 +79,7 @@ class ListHistoryRequest:
 
 
         :return: The body of this ListHistoryRequest.
-        :rtype: GetHistoryRequest
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.GetHistoryRequest`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class ListHistoryRequest:
 
 
         :param body: The body of this ListHistoryRequest.
-        :type: GetHistoryRequest
+        :type body: :class:`huaweicloudsdkiotanalytics.v1.GetHistoryRequest`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowIkThesaurusResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class ShowIkThesaurusResponse(SdkResponse):
     }
 
     def __init__(self, status=None, bucket=None, main_obj=None, stop_obj=None, synonym_obj=None, update_time=None, update_details=None, cluster_id=None, operate_status=None, id=None):
-        """ShowIkThesaurusResponse - a model defined in huaweicloud sdk"""
+        """ShowIkThesaurusResponse
+
+        The model defined in huaweicloud sdk
+
+        :param status: 加载状态。  - Loaded表示加载成功。 - Loading表示正在加载中。 - Failed表示加载失败。
+        :type status: str
+        :param bucket: 存放词库文件的OBS桶。
+        :type bucket: str
+        :param main_obj: 主词库文件对象。
+        :type main_obj: str
+        :param stop_obj: 停词词库文件对象。
+        :type stop_obj: str
+        :param synonym_obj: 同义词词库文件对象。
+        :type synonym_obj: str
+        :param update_time: 词库最近更新时间。
+        :type update_time: str
+        :param update_details: 更新详情。
+        :type update_details: str
+        :param cluster_id: 指定配置自定义词库的集群ID。
+        :type cluster_id: str
+        :param operate_status: 操作状态。
+        :type operate_status: str
+        :param id: 词库的ID。
+        :type id: str
+        """
         
         super(ShowIkThesaurusResponse, self).__init__()
 
@@ -103,7 +126,7 @@ class ShowIkThesaurusResponse(SdkResponse):
         加载状态。  - Loaded表示加载成功。 - Loading表示正在加载中。 - Failed表示加载失败。
 
         :param status: The status of this ShowIkThesaurusResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -125,7 +148,7 @@ class ShowIkThesaurusResponse(SdkResponse):
         存放词库文件的OBS桶。
 
         :param bucket: The bucket of this ShowIkThesaurusResponse.
-        :type: str
+        :type bucket: str
         """
         self._bucket = bucket
 
@@ -147,7 +170,7 @@ class ShowIkThesaurusResponse(SdkResponse):
         主词库文件对象。
 
         :param main_obj: The main_obj of this ShowIkThesaurusResponse.
-        :type: str
+        :type main_obj: str
         """
         self._main_obj = main_obj
 
@@ -169,7 +192,7 @@ class ShowIkThesaurusResponse(SdkResponse):
         停词词库文件对象。
 
         :param stop_obj: The stop_obj of this ShowIkThesaurusResponse.
-        :type: str
+        :type stop_obj: str
         """
         self._stop_obj = stop_obj
 
@@ -191,7 +214,7 @@ class ShowIkThesaurusResponse(SdkResponse):
         同义词词库文件对象。
 
         :param synonym_obj: The synonym_obj of this ShowIkThesaurusResponse.
-        :type: str
+        :type synonym_obj: str
         """
         self._synonym_obj = synonym_obj
 
@@ -213,7 +236,7 @@ class ShowIkThesaurusResponse(SdkResponse):
         词库最近更新时间。
 
         :param update_time: The update_time of this ShowIkThesaurusResponse.
-        :type: str
+        :type update_time: str
         """
         self._update_time = update_time
 
@@ -235,7 +258,7 @@ class ShowIkThesaurusResponse(SdkResponse):
         更新详情。
 
         :param update_details: The update_details of this ShowIkThesaurusResponse.
-        :type: str
+        :type update_details: str
         """
         self._update_details = update_details
 
@@ -257,7 +280,7 @@ class ShowIkThesaurusResponse(SdkResponse):
         指定配置自定义词库的集群ID。
 
         :param cluster_id: The cluster_id of this ShowIkThesaurusResponse.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -279,7 +302,7 @@ class ShowIkThesaurusResponse(SdkResponse):
         操作状态。
 
         :param operate_status: The operate_status of this ShowIkThesaurusResponse.
-        :type: str
+        :type operate_status: str
         """
         self._operate_status = operate_status
 
@@ -301,7 +324,7 @@ class ShowIkThesaurusResponse(SdkResponse):
         词库的ID。
 
         :param id: The id of this ShowIkThesaurusResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 

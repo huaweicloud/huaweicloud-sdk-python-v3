@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListProtectedInstancesByTagsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListProtectedInstancesByTagsResponse(SdkResponse):
     }
 
     def __init__(self, resources=None, total_count=None):
-        """ListProtectedInstancesByTagsResponse - a model defined in huaweicloud sdk"""
+        """ListProtectedInstancesByTagsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param resources: 返回的保护实例列表。
+        :type resources: list[:class:`huaweicloudsdksdrs.v1.ResourceParams`]
+        :param total_count: 总记录数。该值不受过滤条件的影响。
+        :type total_count: int
+        """
         
         super(ListProtectedInstancesByTagsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListProtectedInstancesByTagsResponse(SdkResponse):
         返回的保护实例列表。
 
         :return: The resources of this ListProtectedInstancesByTagsResponse.
-        :rtype: list[ResourceParams]
+        :rtype: list[:class:`huaweicloudsdksdrs.v1.ResourceParams`]
         """
         return self._resources
 
@@ -63,7 +70,7 @@ class ListProtectedInstancesByTagsResponse(SdkResponse):
         返回的保护实例列表。
 
         :param resources: The resources of this ListProtectedInstancesByTagsResponse.
-        :type: list[ResourceParams]
+        :type resources: list[:class:`huaweicloudsdksdrs.v1.ResourceParams`]
         """
         self._resources = resources
 
@@ -85,7 +92,7 @@ class ListProtectedInstancesByTagsResponse(SdkResponse):
         总记录数。该值不受过滤条件的影响。
 
         :param total_count: The total_count of this ListProtectedInstancesByTagsResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 

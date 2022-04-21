@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PublishDeptResponseDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class PublishDeptResponseDTO:
     }
 
     def __init__(self, dept_code=None, dept_name=None):
-        """PublishDeptResponseDTO - a model defined in huaweicloud sdk"""
+        """PublishDeptResponseDTO
+
+        The model defined in huaweicloud sdk
+
+        :param dept_code: 部门编码
+        :type dept_code: str
+        :param dept_name: 部门名称
+        :type dept_name: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class PublishDeptResponseDTO:
         部门编码
 
         :param dept_code: The dept_code of this PublishDeptResponseDTO.
-        :type: str
+        :type dept_code: str
         """
         self._dept_code = dept_code
 
@@ -85,7 +92,7 @@ class PublishDeptResponseDTO:
         部门名称
 
         :param dept_name: The dept_name of this PublishDeptResponseDTO.
-        :type: str
+        :type dept_name: str
         """
         self._dept_name = dept_name
 

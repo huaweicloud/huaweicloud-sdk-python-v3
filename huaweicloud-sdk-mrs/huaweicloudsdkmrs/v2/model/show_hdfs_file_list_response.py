@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowHdfsFileListResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowHdfsFileListResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, files=None):
-        """ShowHdfsFileListResponse - a model defined in huaweicloud sdk"""
+        """ShowHdfsFileListResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total_count: 文件总数，与分页无关。
+        :type total_count: int
+        :param files: 文件列表。
+        :type files: list[:class:`huaweicloudsdkmrs.v2.FileStatusV2`]
+        """
         
         super(ShowHdfsFileListResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ShowHdfsFileListResponse(SdkResponse):
         文件总数，与分页无关。
 
         :param total_count: The total_count of this ShowHdfsFileListResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 
@@ -74,7 +81,7 @@ class ShowHdfsFileListResponse(SdkResponse):
         文件列表。
 
         :return: The files of this ShowHdfsFileListResponse.
-        :rtype: list[FileStatusV2]
+        :rtype: list[:class:`huaweicloudsdkmrs.v2.FileStatusV2`]
         """
         return self._files
 
@@ -85,7 +92,7 @@ class ShowHdfsFileListResponse(SdkResponse):
         文件列表。
 
         :param files: The files of this ShowHdfsFileListResponse.
-        :type: list[FileStatusV2]
+        :type files: list[:class:`huaweicloudsdkmrs.v2.FileStatusV2`]
         """
         self._files = files
 

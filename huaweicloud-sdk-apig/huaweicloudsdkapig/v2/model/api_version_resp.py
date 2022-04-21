@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApiVersionResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ApiVersionResp:
     }
 
     def __init__(self, version_id=None, version_no=None, api_id=None, env_id=None, env_name=None, remark=None, publish_time=None, status=None):
-        """ApiVersionResp - a model defined in huaweicloud sdk"""
+        """ApiVersionResp
+
+        The model defined in huaweicloud sdk
+
+        :param version_id: API历史版本的ID
+        :type version_id: str
+        :param version_no: API的版本号
+        :type version_no: str
+        :param api_id: API编号
+        :type api_id: str
+        :param env_id: 发布的环境编号
+        :type env_id: str
+        :param env_name: 发布的环境名称
+        :type env_name: str
+        :param remark: 发布描述
+        :type remark: str
+        :param publish_time: 发布时间
+        :type publish_time: datetime
+        :param status: 版本状态 - 1：当前生效中的版本 - 2：未生效的版本
+        :type status: int
+        """
         
         
 
@@ -93,7 +112,7 @@ class ApiVersionResp:
         API历史版本的ID
 
         :param version_id: The version_id of this ApiVersionResp.
-        :type: str
+        :type version_id: str
         """
         self._version_id = version_id
 
@@ -115,7 +134,7 @@ class ApiVersionResp:
         API的版本号
 
         :param version_no: The version_no of this ApiVersionResp.
-        :type: str
+        :type version_no: str
         """
         self._version_no = version_no
 
@@ -137,7 +156,7 @@ class ApiVersionResp:
         API编号
 
         :param api_id: The api_id of this ApiVersionResp.
-        :type: str
+        :type api_id: str
         """
         self._api_id = api_id
 
@@ -159,7 +178,7 @@ class ApiVersionResp:
         发布的环境编号
 
         :param env_id: The env_id of this ApiVersionResp.
-        :type: str
+        :type env_id: str
         """
         self._env_id = env_id
 
@@ -181,7 +200,7 @@ class ApiVersionResp:
         发布的环境名称
 
         :param env_name: The env_name of this ApiVersionResp.
-        :type: str
+        :type env_name: str
         """
         self._env_name = env_name
 
@@ -203,7 +222,7 @@ class ApiVersionResp:
         发布描述
 
         :param remark: The remark of this ApiVersionResp.
-        :type: str
+        :type remark: str
         """
         self._remark = remark
 
@@ -225,7 +244,7 @@ class ApiVersionResp:
         发布时间
 
         :param publish_time: The publish_time of this ApiVersionResp.
-        :type: datetime
+        :type publish_time: datetime
         """
         self._publish_time = publish_time
 
@@ -247,7 +266,7 @@ class ApiVersionResp:
         版本状态 - 1：当前生效中的版本 - 2：未生效的版本
 
         :param status: The status of this ApiVersionResp.
-        :type: int
+        :type status: int
         """
         self._status = status
 

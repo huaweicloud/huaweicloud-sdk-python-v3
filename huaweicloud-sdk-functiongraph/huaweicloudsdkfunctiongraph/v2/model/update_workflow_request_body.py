@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateWorkflowRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class UpdateWorkflowRequestBody:
     }
 
     def __init__(self, name=None, description=None, triggers=None, start=None, functions=None, states=None, constants=None, retries=None, enterprise_project_id=None):
-        """UpdateWorkflowRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateWorkflowRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param name: 流程定义名称
+        :type name: str
+        :param description: 流程定义描述
+        :type description: str
+        :param triggers: 触发器列表
+        :type triggers: list[:class:`huaweicloudsdkfunctiongraph.v2.Trigger`]
+        :param start: 流程开始节点ID
+        :type start: str
+        :param functions: 函数清单
+        :type functions: list[:class:`huaweicloudsdkfunctiongraph.v2.Function`]
+        :param states: 工作流节点清单，定义参考SleepState和OperationState
+        :type states: list[:class:`huaweicloudsdkfunctiongraph.v2.OperationState`]
+        :param constants: 工作流中的常量
+        :type constants: object
+        :param retries: 重试策略清单
+        :type retries: list[:class:`huaweicloudsdkfunctiongraph.v2.Retry`]
+        :param enterprise_project_id: 企业项目ID，在企业用户创建函数时必填。
+        :type enterprise_project_id: str
+        """
         
         
 
@@ -98,7 +119,7 @@ class UpdateWorkflowRequestBody:
         流程定义名称
 
         :param name: The name of this UpdateWorkflowRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -120,7 +141,7 @@ class UpdateWorkflowRequestBody:
         流程定义描述
 
         :param description: The description of this UpdateWorkflowRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -131,7 +152,7 @@ class UpdateWorkflowRequestBody:
         触发器列表
 
         :return: The triggers of this UpdateWorkflowRequestBody.
-        :rtype: list[Trigger]
+        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.Trigger`]
         """
         return self._triggers
 
@@ -142,7 +163,7 @@ class UpdateWorkflowRequestBody:
         触发器列表
 
         :param triggers: The triggers of this UpdateWorkflowRequestBody.
-        :type: list[Trigger]
+        :type triggers: list[:class:`huaweicloudsdkfunctiongraph.v2.Trigger`]
         """
         self._triggers = triggers
 
@@ -164,7 +185,7 @@ class UpdateWorkflowRequestBody:
         流程开始节点ID
 
         :param start: The start of this UpdateWorkflowRequestBody.
-        :type: str
+        :type start: str
         """
         self._start = start
 
@@ -175,7 +196,7 @@ class UpdateWorkflowRequestBody:
         函数清单
 
         :return: The functions of this UpdateWorkflowRequestBody.
-        :rtype: list[Function]
+        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.Function`]
         """
         return self._functions
 
@@ -186,7 +207,7 @@ class UpdateWorkflowRequestBody:
         函数清单
 
         :param functions: The functions of this UpdateWorkflowRequestBody.
-        :type: list[Function]
+        :type functions: list[:class:`huaweicloudsdkfunctiongraph.v2.Function`]
         """
         self._functions = functions
 
@@ -197,7 +218,7 @@ class UpdateWorkflowRequestBody:
         工作流节点清单，定义参考SleepState和OperationState
 
         :return: The states of this UpdateWorkflowRequestBody.
-        :rtype: list[OperationState]
+        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.OperationState`]
         """
         return self._states
 
@@ -208,7 +229,7 @@ class UpdateWorkflowRequestBody:
         工作流节点清单，定义参考SleepState和OperationState
 
         :param states: The states of this UpdateWorkflowRequestBody.
-        :type: list[OperationState]
+        :type states: list[:class:`huaweicloudsdkfunctiongraph.v2.OperationState`]
         """
         self._states = states
 
@@ -230,7 +251,7 @@ class UpdateWorkflowRequestBody:
         工作流中的常量
 
         :param constants: The constants of this UpdateWorkflowRequestBody.
-        :type: object
+        :type constants: object
         """
         self._constants = constants
 
@@ -241,7 +262,7 @@ class UpdateWorkflowRequestBody:
         重试策略清单
 
         :return: The retries of this UpdateWorkflowRequestBody.
-        :rtype: list[Retry]
+        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.Retry`]
         """
         return self._retries
 
@@ -252,7 +273,7 @@ class UpdateWorkflowRequestBody:
         重试策略清单
 
         :param retries: The retries of this UpdateWorkflowRequestBody.
-        :type: list[Retry]
+        :type retries: list[:class:`huaweicloudsdkfunctiongraph.v2.Retry`]
         """
         self._retries = retries
 
@@ -274,7 +295,7 @@ class UpdateWorkflowRequestBody:
         企业项目ID，在企业用户创建函数时必填。
 
         :param enterprise_project_id: The enterprise_project_id of this UpdateWorkflowRequestBody.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 

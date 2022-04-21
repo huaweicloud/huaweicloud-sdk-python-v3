@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListConfigMapsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListConfigMapsResponse(SdkResponse):
     }
 
     def __init__(self, configmaps=None, count=None):
-        """ListConfigMapsResponse - a model defined in huaweicloud sdk"""
+        """ListConfigMapsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param configmaps: 配置项
+        :type configmaps: list[:class:`huaweicloudsdkief.v1.ConfigMapResp`]
+        :param count: 满足条件的个数
+        :type count: int
+        """
         
         super(ListConfigMapsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListConfigMapsResponse(SdkResponse):
         配置项
 
         :return: The configmaps of this ListConfigMapsResponse.
-        :rtype: list[ConfigMapResp]
+        :rtype: list[:class:`huaweicloudsdkief.v1.ConfigMapResp`]
         """
         return self._configmaps
 
@@ -63,7 +70,7 @@ class ListConfigMapsResponse(SdkResponse):
         配置项
 
         :param configmaps: The configmaps of this ListConfigMapsResponse.
-        :type: list[ConfigMapResp]
+        :type configmaps: list[:class:`huaweicloudsdkief.v1.ConfigMapResp`]
         """
         self._configmaps = configmaps
 
@@ -85,7 +92,7 @@ class ListConfigMapsResponse(SdkResponse):
         满足条件的个数
 
         :param count: The count of this ListConfigMapsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SetBackupPolicyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class SetBackupPolicyResponse(SdkResponse):
     }
 
     def __init__(self):
-        """SetBackupPolicyResponse - a model defined in huaweicloud sdk"""
+        """SetBackupPolicyResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(SetBackupPolicyResponse, self).__init__()
         self.discriminator = None

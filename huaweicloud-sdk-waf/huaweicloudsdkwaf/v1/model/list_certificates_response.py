@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCertificatesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListCertificatesResponse(SdkResponse):
     }
 
     def __init__(self, items=None, total=None):
-        """ListCertificatesResponse - a model defined in huaweicloud sdk"""
+        """ListCertificatesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param items: 证书列表
+        :type items: list[:class:`huaweicloudsdkwaf.v1.CertificateBody`]
+        :param total: 证书总数
+        :type total: int
+        """
         
         super(ListCertificatesResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListCertificatesResponse(SdkResponse):
         证书列表
 
         :return: The items of this ListCertificatesResponse.
-        :rtype: list[CertificateBody]
+        :rtype: list[:class:`huaweicloudsdkwaf.v1.CertificateBody`]
         """
         return self._items
 
@@ -63,7 +70,7 @@ class ListCertificatesResponse(SdkResponse):
         证书列表
 
         :param items: The items of this ListCertificatesResponse.
-        :type: list[CertificateBody]
+        :type items: list[:class:`huaweicloudsdkwaf.v1.CertificateBody`]
         """
         self._items = items
 
@@ -85,7 +92,7 @@ class ListCertificatesResponse(SdkResponse):
         证书总数
 
         :param total: The total of this ListCertificatesResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 

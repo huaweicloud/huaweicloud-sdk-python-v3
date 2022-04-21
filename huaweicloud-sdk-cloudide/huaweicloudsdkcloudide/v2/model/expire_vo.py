@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExpireVo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ExpireVo:
     }
 
     def __init__(self, expiration=None, instance_id=None, interval=None):
-        """ExpireVo - a model defined in huaweicloud sdk"""
+        """ExpireVo
+
+        The model defined in huaweicloud sdk
+
+        :param expiration: 过期时间。UNIX时间戳，单位毫秒。eg:1635905480465
+        :type expiration: int
+        :param instance_id: CloudIDE实例id
+        :type instance_id: str
+        :param interval: CloudIDE实例自动休眠时长，单位‘分钟’
+        :type interval: int
+        """
         
         
 
@@ -68,7 +77,7 @@ class ExpireVo:
         过期时间。UNIX时间戳，单位毫秒。eg:1635905480465
 
         :param expiration: The expiration of this ExpireVo.
-        :type: int
+        :type expiration: int
         """
         self._expiration = expiration
 
@@ -90,7 +99,7 @@ class ExpireVo:
         CloudIDE实例id
 
         :param instance_id: The instance_id of this ExpireVo.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -112,7 +121,7 @@ class ExpireVo:
         CloudIDE实例自动休眠时长，单位‘分钟’
 
         :param interval: The interval of this ExpireVo.
-        :type: int
+        :type interval: int
         """
         self._interval = interval
 

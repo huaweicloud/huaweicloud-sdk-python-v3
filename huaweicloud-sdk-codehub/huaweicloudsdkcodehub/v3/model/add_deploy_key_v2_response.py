@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddDeployKeyV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class AddDeployKeyV2Response(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """AddDeployKeyV2Response - a model defined in huaweicloud sdk"""
+        """AddDeployKeyV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param error: 
+        :type error: :class:`huaweicloudsdkcodehub.v3.Error`
+        :param result: 
+        :type result: :class:`huaweicloudsdkcodehub.v3.Key`
+        :param status: 响应状态
+        :type status: str
+        """
         
         super(AddDeployKeyV2Response, self).__init__()
 
@@ -56,7 +65,7 @@ class AddDeployKeyV2Response(SdkResponse):
 
 
         :return: The error of this AddDeployKeyV2Response.
-        :rtype: Error
+        :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
         """
         return self._error
 
@@ -66,7 +75,7 @@ class AddDeployKeyV2Response(SdkResponse):
 
 
         :param error: The error of this AddDeployKeyV2Response.
-        :type: Error
+        :type error: :class:`huaweicloudsdkcodehub.v3.Error`
         """
         self._error = error
 
@@ -76,7 +85,7 @@ class AddDeployKeyV2Response(SdkResponse):
 
 
         :return: The result of this AddDeployKeyV2Response.
-        :rtype: Key
+        :rtype: :class:`huaweicloudsdkcodehub.v3.Key`
         """
         return self._result
 
@@ -86,7 +95,7 @@ class AddDeployKeyV2Response(SdkResponse):
 
 
         :param result: The result of this AddDeployKeyV2Response.
-        :type: Key
+        :type result: :class:`huaweicloudsdkcodehub.v3.Key`
         """
         self._result = result
 
@@ -108,7 +117,7 @@ class AddDeployKeyV2Response(SdkResponse):
         响应状态
 
         :param status: The status of this AddDeployKeyV2Response.
-        :type: str
+        :type status: str
         """
         self._status = status
 

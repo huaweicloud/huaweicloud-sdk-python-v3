@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PersonalityInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class PersonalityInfo:
     }
 
     def __init__(self, path=None, content=None):
-        """PersonalityInfo - a model defined in huaweicloud sdk"""
+        """PersonalityInfo
+
+        The model defined in huaweicloud sdk
+
+        :param path: 注入文件路径信息。Linux系统请输入注入文件保存路径，例如 “/etc/foo.txt”。Windows系统注入文件自动保存在C盘根目录，只需要输入保存文件名，例如 “foo”，文件名只能包含字母（a~zA~Z）和数字（0~9）。
+        :type path: str
+        :param content: 注入文件内容。该值应指定为注入文件的内容进行base64格式编码后的信息。
+        :type content: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class PersonalityInfo:
         注入文件路径信息。Linux系统请输入注入文件保存路径，例如 “/etc/foo.txt”。Windows系统注入文件自动保存在C盘根目录，只需要输入保存文件名，例如 “foo”，文件名只能包含字母（a~zA~Z）和数字（0~9）。
 
         :param path: The path of this PersonalityInfo.
-        :type: str
+        :type path: str
         """
         self._path = path
 
@@ -83,7 +90,7 @@ class PersonalityInfo:
         注入文件内容。该值应指定为注入文件的内容进行base64格式编码后的信息。
 
         :param content: The content of this PersonalityInfo.
-        :type: str
+        :type content: str
         """
         self._content = content
 

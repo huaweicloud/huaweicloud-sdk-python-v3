@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeploymentHostInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class DeploymentHostInfo:
     }
 
     def __init__(self, group_id=None, host_name=None, ip=None, port=None, os=None, as_proxy=None, proxy_host_id=None, authorization=None, install_icagent=None):
-        """DeploymentHostInfo - a model defined in huaweicloud sdk"""
+        """DeploymentHostInfo
+
+        The model defined in huaweicloud sdk
+
+        :param group_id: 主机组id
+        :type group_id: str
+        :param host_name: 主机名称
+        :type host_name: str
+        :param ip: IP，请输入弹性ip格式：161.17.101.12
+        :type ip: str
+        :param port: ssh端口，如：22
+        :type port: int
+        :param os: 操作系统：windows|linux，需要和主机组保持一致
+        :type os: str
+        :param as_proxy: 是否为代理机
+        :type as_proxy: bool
+        :param proxy_host_id: 代理机id
+        :type proxy_host_id: str
+        :param authorization: 
+        :type authorization: :class:`huaweicloudsdkclouddeploy.v2.DeploymentHostAuthorizationBody`
+        :param install_icagent: 免费启用应用运维服务（AOM），提供指标监控、日志查询、告警功能（自动安装数据采集器 ICAgent，仅支持华为云linux主机）
+        :type install_icagent: bool
+        """
         
         
 
@@ -91,7 +112,7 @@ class DeploymentHostInfo:
         主机组id
 
         :param group_id: The group_id of this DeploymentHostInfo.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -113,7 +134,7 @@ class DeploymentHostInfo:
         主机名称
 
         :param host_name: The host_name of this DeploymentHostInfo.
-        :type: str
+        :type host_name: str
         """
         self._host_name = host_name
 
@@ -135,7 +156,7 @@ class DeploymentHostInfo:
         IP，请输入弹性ip格式：161.17.101.12
 
         :param ip: The ip of this DeploymentHostInfo.
-        :type: str
+        :type ip: str
         """
         self._ip = ip
 
@@ -157,7 +178,7 @@ class DeploymentHostInfo:
         ssh端口，如：22
 
         :param port: The port of this DeploymentHostInfo.
-        :type: int
+        :type port: int
         """
         self._port = port
 
@@ -179,7 +200,7 @@ class DeploymentHostInfo:
         操作系统：windows|linux，需要和主机组保持一致
 
         :param os: The os of this DeploymentHostInfo.
-        :type: str
+        :type os: str
         """
         self._os = os
 
@@ -201,7 +222,7 @@ class DeploymentHostInfo:
         是否为代理机
 
         :param as_proxy: The as_proxy of this DeploymentHostInfo.
-        :type: bool
+        :type as_proxy: bool
         """
         self._as_proxy = as_proxy
 
@@ -223,7 +244,7 @@ class DeploymentHostInfo:
         代理机id
 
         :param proxy_host_id: The proxy_host_id of this DeploymentHostInfo.
-        :type: str
+        :type proxy_host_id: str
         """
         self._proxy_host_id = proxy_host_id
 
@@ -233,7 +254,7 @@ class DeploymentHostInfo:
 
 
         :return: The authorization of this DeploymentHostInfo.
-        :rtype: DeploymentHostAuthorizationBody
+        :rtype: :class:`huaweicloudsdkclouddeploy.v2.DeploymentHostAuthorizationBody`
         """
         return self._authorization
 
@@ -243,7 +264,7 @@ class DeploymentHostInfo:
 
 
         :param authorization: The authorization of this DeploymentHostInfo.
-        :type: DeploymentHostAuthorizationBody
+        :type authorization: :class:`huaweicloudsdkclouddeploy.v2.DeploymentHostAuthorizationBody`
         """
         self._authorization = authorization
 
@@ -265,7 +286,7 @@ class DeploymentHostInfo:
         免费启用应用运维服务（AOM），提供指标监控、日志查询、告警功能（自动安装数据采集器 ICAgent，仅支持华为云linux主机）
 
         :param install_icagent: The install_icagent of this DeploymentHostInfo.
-        :type: bool
+        :type install_icagent: bool
         """
         self._install_icagent = install_icagent
 

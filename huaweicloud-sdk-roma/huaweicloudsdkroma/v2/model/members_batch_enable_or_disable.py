@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MembersBatchEnableOrDisable:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class MembersBatchEnableOrDisable:
     }
 
     def __init__(self, member_ids=None):
-        """MembersBatchEnableOrDisable - a model defined in huaweicloud sdk"""
+        """MembersBatchEnableOrDisable
+
+        The model defined in huaweicloud sdk
+
+        :param member_ids: 后端服务器编号列表。
+        :type member_ids: list[str]
+        """
         
         
 
@@ -58,7 +63,7 @@ class MembersBatchEnableOrDisable:
         后端服务器编号列表。
 
         :param member_ids: The member_ids of this MembersBatchEnableOrDisable.
-        :type: list[str]
+        :type member_ids: list[str]
         """
         self._member_ids = member_ids
 

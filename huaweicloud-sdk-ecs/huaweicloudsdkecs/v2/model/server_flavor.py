@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ServerFlavor:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ServerFlavor:
     }
 
     def __init__(self, id=None, name=None, disk=None, vcpus=None, ram=None):
-        """ServerFlavor - a model defined in huaweicloud sdk"""
+        """ServerFlavor
+
+        The model defined in huaweicloud sdk
+
+        :param id: 弹性云服务器规格ID。
+        :type id: str
+        :param name: 弹性云服务器规格名称。
+        :type name: str
+        :param disk: 该云服务器规格对应要求系统盘大小，0为不限制。此字段在本系统中无效。
+        :type disk: str
+        :param vcpus: 该云服务器规格对应的CPU核数。
+        :type vcpus: str
+        :param ram: 该云服务器规格对应的内存大小，单位为MB。
+        :type ram: str
+        """
         
         
 
@@ -73,7 +86,7 @@ class ServerFlavor:
         弹性云服务器规格ID。
 
         :param id: The id of this ServerFlavor.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -95,7 +108,7 @@ class ServerFlavor:
         弹性云服务器规格名称。
 
         :param name: The name of this ServerFlavor.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -117,7 +130,7 @@ class ServerFlavor:
         该云服务器规格对应要求系统盘大小，0为不限制。此字段在本系统中无效。
 
         :param disk: The disk of this ServerFlavor.
-        :type: str
+        :type disk: str
         """
         self._disk = disk
 
@@ -139,7 +152,7 @@ class ServerFlavor:
         该云服务器规格对应的CPU核数。
 
         :param vcpus: The vcpus of this ServerFlavor.
-        :type: str
+        :type vcpus: str
         """
         self._vcpus = vcpus
 
@@ -161,7 +174,7 @@ class ServerFlavor:
         该云服务器规格对应的内存大小，单位为MB。
 
         :param ram: The ram of this ServerFlavor.
-        :type: str
+        :type ram: str
         """
         self._ram = ram
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OrderLineItemV3:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class OrderLineItemV3:
     }
 
     def __init__(self, order_line_item_ids=None, discount_mode=None, discount_amount=None, discount_ratio=None):
-        """OrderLineItemV3 - a model defined in huaweicloud sdk"""
+        """OrderLineItemV3
+
+        The model defined in huaweicloud sdk
+
+        :param order_line_item_ids: 可使用相同折扣的订单项合并后的订单项ID列表。 相同产品、相同规格（对于线性产品）、相同最终价格（例如，严选产品改价）的订单项将进行合并。
+        :type order_line_item_ids: list[str]
+        :param discount_mode: 订单可用折扣的模式 。 0：折扣1：一口价2：满减
+        :type discount_mode: int
+        :param discount_amount: 订单可用的折扣金额（即减免金额）。
+        :type discount_amount: float
+        :param discount_ratio: 订单可用的折扣比例。
+        :type discount_ratio: float
+        """
         
         
 
@@ -69,7 +80,7 @@ class OrderLineItemV3:
         可使用相同折扣的订单项合并后的订单项ID列表。 相同产品、相同规格（对于线性产品）、相同最终价格（例如，严选产品改价）的订单项将进行合并。
 
         :param order_line_item_ids: The order_line_item_ids of this OrderLineItemV3.
-        :type: list[str]
+        :type order_line_item_ids: list[str]
         """
         self._order_line_item_ids = order_line_item_ids
 
@@ -91,7 +102,7 @@ class OrderLineItemV3:
         订单可用折扣的模式 。 0：折扣1：一口价2：满减
 
         :param discount_mode: The discount_mode of this OrderLineItemV3.
-        :type: int
+        :type discount_mode: int
         """
         self._discount_mode = discount_mode
 
@@ -113,7 +124,7 @@ class OrderLineItemV3:
         订单可用的折扣金额（即减免金额）。
 
         :param discount_amount: The discount_amount of this OrderLineItemV3.
-        :type: float
+        :type discount_amount: float
         """
         self._discount_amount = discount_amount
 
@@ -135,7 +146,7 @@ class OrderLineItemV3:
         订单可用的折扣比例。
 
         :param discount_ratio: The discount_ratio of this OrderLineItemV3.
-        :type: float
+        :type discount_ratio: float
         """
         self._discount_ratio = discount_ratio
 

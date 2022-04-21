@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Volume:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class Volume:
     }
 
     def __init__(self, id=None, status=None, size=None, availability_zone=None, attachments=None, name=None, description=None, volume_type=None, bootable=None, encrypted=None, multiattach=None, metadata=None):
-        """Volume - a model defined in huaweicloud sdk"""
+        """Volume
+
+        The model defined in huaweicloud sdk
+
+        :param id: 硬盘ID。
+        :type id: str
+        :param status: 磁盘状态。
+        :type status: str
+        :param size: 磁盘大小。
+        :type size: int
+        :param availability_zone: 硬盘所属的AZ信息。
+        :type availability_zone: str
+        :param attachments: 硬盘的挂载信息。
+        :type attachments: list[:class:`huaweicloudsdkiec.v1.Attachment`]
+        :param name: 磁盘名称。
+        :type name: str
+        :param description: 描述。
+        :type description: str
+        :param volume_type: 磁盘类型。
+        :type volume_type: str
+        :param bootable: 显示这个卷是否可启动。
+        :type bootable: str
+        :param encrypted: 显示该卷是否已被加密。
+        :type encrypted: bool
+        :param multiattach: 磁盘是否多挂载。
+        :type multiattach: bool
+        :param metadata: 硬盘的元数据。
+        :type metadata: dict(str, str)
+        """
         
         
 
@@ -112,7 +139,7 @@ class Volume:
         硬盘ID。
 
         :param id: The id of this Volume.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -134,7 +161,7 @@ class Volume:
         磁盘状态。
 
         :param status: The status of this Volume.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -156,7 +183,7 @@ class Volume:
         磁盘大小。
 
         :param size: The size of this Volume.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -178,7 +205,7 @@ class Volume:
         硬盘所属的AZ信息。
 
         :param availability_zone: The availability_zone of this Volume.
-        :type: str
+        :type availability_zone: str
         """
         self._availability_zone = availability_zone
 
@@ -189,7 +216,7 @@ class Volume:
         硬盘的挂载信息。
 
         :return: The attachments of this Volume.
-        :rtype: list[Attachment]
+        :rtype: list[:class:`huaweicloudsdkiec.v1.Attachment`]
         """
         return self._attachments
 
@@ -200,7 +227,7 @@ class Volume:
         硬盘的挂载信息。
 
         :param attachments: The attachments of this Volume.
-        :type: list[Attachment]
+        :type attachments: list[:class:`huaweicloudsdkiec.v1.Attachment`]
         """
         self._attachments = attachments
 
@@ -222,7 +249,7 @@ class Volume:
         磁盘名称。
 
         :param name: The name of this Volume.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -244,7 +271,7 @@ class Volume:
         描述。
 
         :param description: The description of this Volume.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -266,7 +293,7 @@ class Volume:
         磁盘类型。
 
         :param volume_type: The volume_type of this Volume.
-        :type: str
+        :type volume_type: str
         """
         self._volume_type = volume_type
 
@@ -288,7 +315,7 @@ class Volume:
         显示这个卷是否可启动。
 
         :param bootable: The bootable of this Volume.
-        :type: str
+        :type bootable: str
         """
         self._bootable = bootable
 
@@ -310,7 +337,7 @@ class Volume:
         显示该卷是否已被加密。
 
         :param encrypted: The encrypted of this Volume.
-        :type: bool
+        :type encrypted: bool
         """
         self._encrypted = encrypted
 
@@ -332,7 +359,7 @@ class Volume:
         磁盘是否多挂载。
 
         :param multiattach: The multiattach of this Volume.
-        :type: bool
+        :type multiattach: bool
         """
         self._multiattach = multiattach
 
@@ -354,7 +381,7 @@ class Volume:
         硬盘的元数据。
 
         :param metadata: The metadata of this Volume.
-        :type: dict(str, str)
+        :type metadata: dict(str, str)
         """
         self._metadata = metadata
 

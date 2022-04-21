@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ImageModerationResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ImageModerationResult:
     }
 
     def __init__(self, suggestion=None, category_suggestions=None):
-        """ImageModerationResult - a model defined in huaweicloud sdk"""
+        """ImageModerationResult
+
+        The model defined in huaweicloud sdk
+
+        :param suggestion: 审核情况
+        :type suggestion: str
+        :param category_suggestions: 
+        :type category_suggestions: :class:`huaweicloudsdkmeeting.v1.CategorySuggestions`
+        """
         
         
 
@@ -63,7 +70,7 @@ class ImageModerationResult:
         审核情况
 
         :param suggestion: The suggestion of this ImageModerationResult.
-        :type: str
+        :type suggestion: str
         """
         self._suggestion = suggestion
 
@@ -73,7 +80,7 @@ class ImageModerationResult:
 
 
         :return: The category_suggestions of this ImageModerationResult.
-        :rtype: CategorySuggestions
+        :rtype: :class:`huaweicloudsdkmeeting.v1.CategorySuggestions`
         """
         return self._category_suggestions
 
@@ -83,7 +90,7 @@ class ImageModerationResult:
 
 
         :param category_suggestions: The category_suggestions of this ImageModerationResult.
-        :type: CategorySuggestions
+        :type category_suggestions: :class:`huaweicloudsdkmeeting.v1.CategorySuggestions`
         """
         self._category_suggestions = category_suggestions
 

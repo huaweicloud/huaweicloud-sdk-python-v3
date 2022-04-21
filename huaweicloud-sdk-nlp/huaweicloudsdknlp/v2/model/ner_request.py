@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NerRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class NerRequest:
     }
 
     def __init__(self, text=None, lang=None):
-        """NerRequest - a model defined in huaweicloud sdk"""
+        """NerRequest
+
+        The model defined in huaweicloud sdk
+
+        :param text: 待分析文本，中文长度为1~512，英文和西班牙文长度为1~2000，文本编码为UTF-8。
+        :type text: str
+        :param lang: 支持的文本语言类型，目前支持中文（zh）,英文（en）,和西班牙文（es），默认为中文。
+        :type lang: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class NerRequest:
         待分析文本，中文长度为1~512，英文和西班牙文长度为1~2000，文本编码为UTF-8。
 
         :param text: The text of this NerRequest.
-        :type: str
+        :type text: str
         """
         self._text = text
 
@@ -84,7 +91,7 @@ class NerRequest:
         支持的文本语言类型，目前支持中文（zh）,英文（en）,和西班牙文（es），默认为中文。
 
         :param lang: The lang of this NerRequest.
-        :type: str
+        :type lang: str
         """
         self._lang = lang
 

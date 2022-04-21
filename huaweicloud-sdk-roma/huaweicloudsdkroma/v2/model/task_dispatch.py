@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TaskDispatch:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class TaskDispatch:
     }
 
     def __init__(self, start_datetime=None, period=None, dispatch_interval=None, remark=None, use_quartz_cron=None, cron=None):
-        """TaskDispatch - a model defined in huaweicloud sdk"""
+        """TaskDispatch
+
+        The model defined in huaweicloud sdk
+
+        :param start_datetime: 调度计划的执行开始时间
+        :type start_datetime: int
+        :param period: 调度计划执行周期的时间单位，当使用cron表达式时，为空 - MIN (分钟) - HOUR (小时) - DAY (日) - WEEK (周) - MON (月)
+        :type period: str
+        :param dispatch_interval: 调度计划的执行间隔时间周期
+        :type dispatch_interval: int
+        :param remark: 调度计划的备注信息
+        :type remark: str
+        :param use_quartz_cron: 调度计划是否使用cron表达式，允许如下值： - true (使用cron表达式) - false (不使用cron表达式)
+        :type use_quartz_cron: bool
+        :param cron: 调度计划的cron表达式
+        :type cron: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class TaskDispatch:
         调度计划的执行开始时间
 
         :param start_datetime: The start_datetime of this TaskDispatch.
-        :type: int
+        :type start_datetime: int
         """
         self._start_datetime = start_datetime
 
@@ -105,7 +120,7 @@ class TaskDispatch:
         调度计划执行周期的时间单位，当使用cron表达式时，为空 - MIN (分钟) - HOUR (小时) - DAY (日) - WEEK (周) - MON (月)
 
         :param period: The period of this TaskDispatch.
-        :type: str
+        :type period: str
         """
         self._period = period
 
@@ -127,7 +142,7 @@ class TaskDispatch:
         调度计划的执行间隔时间周期
 
         :param dispatch_interval: The dispatch_interval of this TaskDispatch.
-        :type: int
+        :type dispatch_interval: int
         """
         self._dispatch_interval = dispatch_interval
 
@@ -149,7 +164,7 @@ class TaskDispatch:
         调度计划的备注信息
 
         :param remark: The remark of this TaskDispatch.
-        :type: str
+        :type remark: str
         """
         self._remark = remark
 
@@ -171,7 +186,7 @@ class TaskDispatch:
         调度计划是否使用cron表达式，允许如下值： - true (使用cron表达式) - false (不使用cron表达式)
 
         :param use_quartz_cron: The use_quartz_cron of this TaskDispatch.
-        :type: bool
+        :type use_quartz_cron: bool
         """
         self._use_quartz_cron = use_quartz_cron
 
@@ -193,7 +208,7 @@ class TaskDispatch:
         调度计划的cron表达式
 
         :param cron: The cron of this TaskDispatch.
-        :type: str
+        :type cron: str
         """
         self._cron = cron
 

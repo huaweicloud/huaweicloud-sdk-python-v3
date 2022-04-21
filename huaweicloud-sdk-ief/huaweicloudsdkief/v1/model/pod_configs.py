@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PodConfigs:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class PodConfigs:
     }
 
     def __init__(self, host_network=None, host_pid=None, migration=None, restart_policy=None, toleration_seconds=None):
-        """PodConfigs - a model defined in huaweicloud sdk"""
+        """PodConfigs
+
+        The model defined in huaweicloud sdk
+
+        :param host_network: 应用实例是否启用主机网络，不启用则使用端口映射,默认值false
+        :type host_network: bool
+        :param host_pid: 应用实例是否与主机共PID命名空间,默认值false
+        :type host_pid: bool
+        :param migration: 应用实例故障是否迁移,指定节点组部署时必选，默认值false
+        :type migration: bool
+        :param restart_policy: 应用实例重启策略,可选值Always、OnFailure、Never
+        :type restart_policy: str
+        :param toleration_seconds: 应用实例故障容忍时间,容忍时间到达后迁移应用实例，只在指定节点组部署时生效
+        :type toleration_seconds: int
+        """
         
         
 
@@ -76,7 +89,7 @@ class PodConfigs:
         应用实例是否启用主机网络，不启用则使用端口映射,默认值false
 
         :param host_network: The host_network of this PodConfigs.
-        :type: bool
+        :type host_network: bool
         """
         self._host_network = host_network
 
@@ -98,7 +111,7 @@ class PodConfigs:
         应用实例是否与主机共PID命名空间,默认值false
 
         :param host_pid: The host_pid of this PodConfigs.
-        :type: bool
+        :type host_pid: bool
         """
         self._host_pid = host_pid
 
@@ -120,7 +133,7 @@ class PodConfigs:
         应用实例故障是否迁移,指定节点组部署时必选，默认值false
 
         :param migration: The migration of this PodConfigs.
-        :type: bool
+        :type migration: bool
         """
         self._migration = migration
 
@@ -142,7 +155,7 @@ class PodConfigs:
         应用实例重启策略,可选值Always、OnFailure、Never
 
         :param restart_policy: The restart_policy of this PodConfigs.
-        :type: str
+        :type restart_policy: str
         """
         self._restart_policy = restart_policy
 
@@ -164,7 +177,7 @@ class PodConfigs:
         应用实例故障容忍时间,容忍时间到达后迁移应用实例，只在指定节点组部署时生效
 
         :param toleration_seconds: The toleration_seconds of this PodConfigs.
-        :type: int
+        :type toleration_seconds: int
         """
         self._toleration_seconds = toleration_seconds
 

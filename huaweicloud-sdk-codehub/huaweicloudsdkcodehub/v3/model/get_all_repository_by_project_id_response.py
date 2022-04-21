@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GetAllRepositoryByProjectIdResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class GetAllRepositoryByProjectIdResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """GetAllRepositoryByProjectIdResponse - a model defined in huaweicloud sdk"""
+        """GetAllRepositoryByProjectIdResponse
+
+        The model defined in huaweicloud sdk
+
+        :param error: 
+        :type error: :class:`huaweicloudsdkcodehub.v3.Error`
+        :param result: 
+        :type result: :class:`huaweicloudsdkcodehub.v3.RepoListInfo`
+        :param status: 响应状态
+        :type status: str
+        """
         
         super(GetAllRepositoryByProjectIdResponse, self).__init__()
 
@@ -56,7 +65,7 @@ class GetAllRepositoryByProjectIdResponse(SdkResponse):
 
 
         :return: The error of this GetAllRepositoryByProjectIdResponse.
-        :rtype: Error
+        :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
         """
         return self._error
 
@@ -66,7 +75,7 @@ class GetAllRepositoryByProjectIdResponse(SdkResponse):
 
 
         :param error: The error of this GetAllRepositoryByProjectIdResponse.
-        :type: Error
+        :type error: :class:`huaweicloudsdkcodehub.v3.Error`
         """
         self._error = error
 
@@ -76,7 +85,7 @@ class GetAllRepositoryByProjectIdResponse(SdkResponse):
 
 
         :return: The result of this GetAllRepositoryByProjectIdResponse.
-        :rtype: RepoListInfo
+        :rtype: :class:`huaweicloudsdkcodehub.v3.RepoListInfo`
         """
         return self._result
 
@@ -86,7 +95,7 @@ class GetAllRepositoryByProjectIdResponse(SdkResponse):
 
 
         :param result: The result of this GetAllRepositoryByProjectIdResponse.
-        :type: RepoListInfo
+        :type result: :class:`huaweicloudsdkcodehub.v3.RepoListInfo`
         """
         self._result = result
 
@@ -108,7 +117,7 @@ class GetAllRepositoryByProjectIdResponse(SdkResponse):
         响应状态
 
         :param status: The status of this GetAllRepositoryByProjectIdResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 

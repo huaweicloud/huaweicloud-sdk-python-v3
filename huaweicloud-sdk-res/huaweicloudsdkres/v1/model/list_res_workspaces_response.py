@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListResWorkspacesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListResWorkspacesResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, workspaces=None, message=None, error_code=None):
-        """ListResWorkspacesResponse - a model defined in huaweicloud sdk"""
+        """ListResWorkspacesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param is_success: 是否成功。
+        :type is_success: bool
+        :param workspaces: 工作空间列表。
+        :type workspaces: list[:class:`huaweicloudsdkres.v1.Workspaces`]
+        :param message: 返回消息（请求成功时，不返回此字段）。
+        :type message: str
+        :param error_code: 错误码（请求成功时，不返回此字段）。
+        :type error_code: str
+        """
         
         super(ListResWorkspacesResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class ListResWorkspacesResponse(SdkResponse):
         是否成功。
 
         :param is_success: The is_success of this ListResWorkspacesResponse.
-        :type: bool
+        :type is_success: bool
         """
         self._is_success = is_success
 
@@ -84,7 +95,7 @@ class ListResWorkspacesResponse(SdkResponse):
         工作空间列表。
 
         :return: The workspaces of this ListResWorkspacesResponse.
-        :rtype: list[Workspaces]
+        :rtype: list[:class:`huaweicloudsdkres.v1.Workspaces`]
         """
         return self._workspaces
 
@@ -95,7 +106,7 @@ class ListResWorkspacesResponse(SdkResponse):
         工作空间列表。
 
         :param workspaces: The workspaces of this ListResWorkspacesResponse.
-        :type: list[Workspaces]
+        :type workspaces: list[:class:`huaweicloudsdkres.v1.Workspaces`]
         """
         self._workspaces = workspaces
 
@@ -117,7 +128,7 @@ class ListResWorkspacesResponse(SdkResponse):
         返回消息（请求成功时，不返回此字段）。
 
         :param message: The message of this ListResWorkspacesResponse.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -139,7 +150,7 @@ class ListResWorkspacesResponse(SdkResponse):
         错误码（请求成功时，不返回此字段）。
 
         :param error_code: The error_code of this ListResWorkspacesResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 

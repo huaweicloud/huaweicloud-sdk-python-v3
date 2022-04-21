@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestMixedPictureBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class RestMixedPictureBody:
     }
 
     def __init__(self, manual_set=None, image_type=None, subscriber_in_pics=None, switch_time=None):
-        """RestMixedPictureBody - a model defined in huaweicloud sdk"""
+        """RestMixedPictureBody
+
+        The model defined in huaweicloud sdk
+
+        :param manual_set: 是否为手工设置多画面。 - 0: 系统自动多画面。 - 1: 手工设置多画面。
+        :type manual_set: int
+        :param image_type: 多画面数目。手工设置多画面时有效。 - Single: 单画面。 - Two: 二画面。 - Three: 三画面。 - Four: 四画面。 - Six: 六画面。 - Nine: 九画面。 - Sixteen: 十六画面。
+        :type image_type: str
+        :param subscriber_in_pics: 子画面列表（手工设置多画面时必填）。
+        :type subscriber_in_pics: list[:class:`huaweicloudsdkmeeting.v1.SubscriberInPic`]
+        :param switch_time: 表示轮询间隔。单位：秒。 当同一个子画面中包含有多个与会者时，此参数有效。
+        :type switch_time: int
+        """
         
         
 
@@ -72,7 +83,7 @@ class RestMixedPictureBody:
         是否为手工设置多画面。 - 0: 系统自动多画面。 - 1: 手工设置多画面。
 
         :param manual_set: The manual_set of this RestMixedPictureBody.
-        :type: int
+        :type manual_set: int
         """
         self._manual_set = manual_set
 
@@ -94,7 +105,7 @@ class RestMixedPictureBody:
         多画面数目。手工设置多画面时有效。 - Single: 单画面。 - Two: 二画面。 - Three: 三画面。 - Four: 四画面。 - Six: 六画面。 - Nine: 九画面。 - Sixteen: 十六画面。
 
         :param image_type: The image_type of this RestMixedPictureBody.
-        :type: str
+        :type image_type: str
         """
         self._image_type = image_type
 
@@ -105,7 +116,7 @@ class RestMixedPictureBody:
         子画面列表（手工设置多画面时必填）。
 
         :return: The subscriber_in_pics of this RestMixedPictureBody.
-        :rtype: list[SubscriberInPic]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.SubscriberInPic`]
         """
         return self._subscriber_in_pics
 
@@ -116,7 +127,7 @@ class RestMixedPictureBody:
         子画面列表（手工设置多画面时必填）。
 
         :param subscriber_in_pics: The subscriber_in_pics of this RestMixedPictureBody.
-        :type: list[SubscriberInPic]
+        :type subscriber_in_pics: list[:class:`huaweicloudsdkmeeting.v1.SubscriberInPic`]
         """
         self._subscriber_in_pics = subscriber_in_pics
 
@@ -138,7 +149,7 @@ class RestMixedPictureBody:
         表示轮询间隔。单位：秒。 当同一个子画面中包含有多个与会者时，此参数有效。
 
         :param switch_time: The switch_time of this RestMixedPictureBody.
-        :type: int
+        :type switch_time: int
         """
         self._switch_time = switch_time
 

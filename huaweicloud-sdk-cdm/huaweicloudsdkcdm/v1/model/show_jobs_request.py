@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowJobsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ShowJobsRequest:
     }
 
     def __init__(self, cluster_id=None, job_name=None, filter=None, page_no=None, page_size=None, job_type=None):
-        """ShowJobsRequest - a model defined in huaweicloud sdk"""
+        """ShowJobsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 集群ID
+        :type cluster_id: str
+        :param job_name: 查询多个作业用all,查询单个作业输入作业名
+        :type job_name: str
+        :param filter: 当“job_name”为“all”时，此参数用于模糊过滤作业
+        :type filter: str
+        :param page_no: 指定作业页号
+        :type page_no: int
+        :param page_size: 每页作业数，值在10-100之间
+        :type page_size: int
+        :param job_type: 作业类型: - jobType&#x3D;NORMAL_JOB：表示查询表/文件迁移的作业。 - jobType&#x3D;BATCH_JOB：表示查询整库迁移的作业。 - jobType&#x3D;SCENARIO_JOB：表示查询场景迁移的作业。 - 不指定该参数时，默认只查询表/文件迁移的作业。
+        :type job_type: str
+        """
         
         
 
@@ -81,7 +96,7 @@ class ShowJobsRequest:
         集群ID
 
         :param cluster_id: The cluster_id of this ShowJobsRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -103,7 +118,7 @@ class ShowJobsRequest:
         查询多个作业用all,查询单个作业输入作业名
 
         :param job_name: The job_name of this ShowJobsRequest.
-        :type: str
+        :type job_name: str
         """
         self._job_name = job_name
 
@@ -125,7 +140,7 @@ class ShowJobsRequest:
         当“job_name”为“all”时，此参数用于模糊过滤作业
 
         :param filter: The filter of this ShowJobsRequest.
-        :type: str
+        :type filter: str
         """
         self._filter = filter
 
@@ -147,7 +162,7 @@ class ShowJobsRequest:
         指定作业页号
 
         :param page_no: The page_no of this ShowJobsRequest.
-        :type: int
+        :type page_no: int
         """
         self._page_no = page_no
 
@@ -169,7 +184,7 @@ class ShowJobsRequest:
         每页作业数，值在10-100之间
 
         :param page_size: The page_size of this ShowJobsRequest.
-        :type: int
+        :type page_size: int
         """
         self._page_size = page_size
 
@@ -191,7 +206,7 @@ class ShowJobsRequest:
         作业类型: - jobType=NORMAL_JOB：表示查询表/文件迁移的作业。 - jobType=BATCH_JOB：表示查询整库迁移的作业。 - jobType=SCENARIO_JOB：表示查询场景迁移的作业。 - 不指定该参数时，默认只查询表/文件迁移的作业。
 
         :param job_type: The job_type of this ShowJobsRequest.
-        :type: str
+        :type job_type: str
         """
         self._job_type = job_type
 

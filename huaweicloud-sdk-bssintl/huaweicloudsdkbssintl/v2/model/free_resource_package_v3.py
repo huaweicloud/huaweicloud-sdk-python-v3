@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class FreeResourcePackageV3:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -60,7 +59,43 @@ class FreeResourcePackageV3:
     }
 
     def __init__(self, order_instance_id=None, order_id=None, product_id=None, product_name=None, enterprise_project_id=None, enterprise_project_scope=None, effective_time=None, expire_time=None, status=None, service_type_code=None, service_type_name=None, region_code=None, source_type=None, bundle_type=None, quota_reuse_mode=None, free_resources=None):
-        """FreeResourcePackageV3 - a model defined in huaweicloud sdk"""
+        """FreeResourcePackageV3
+
+        The model defined in huaweicloud sdk
+
+        :param order_instance_id: 订购资源包产品后，系统生成的ID，是这个资源包列表的标识字段。
+        :type order_instance_id: str
+        :param order_id: 订单ID，如果source_type为“1：软开云赠送”，该字段为空。
+        :type order_id: str
+        :param product_id: 产品ID，即资源包ID。
+        :type product_id: str
+        :param product_name: 产品名称，即资源包名称。
+        :type product_name: str
+        :param enterprise_project_id: 企业项目ID。
+        :type enterprise_project_id: str
+        :param enterprise_project_scope: 企业项目应用范围： 0：应用所有1：应用到具体企业项目
+        :type enterprise_project_scope: int
+        :param effective_time: 生效时间，购买资源包的时间，格式UTC。
+        :type effective_time: str
+        :param expire_time: 失效时间，资源包到期时间，格式UTC。
+        :type expire_time: str
+        :param status: 状态： 0：未生效1：生效中2：已用完3：已失效4：已退订
+        :type status: int
+        :param service_type_code: 云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。
+        :type service_type_code: str
+        :param service_type_name: 云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
+        :type service_type_name: str
+        :param region_code: 云服务区编码，例如：“ap-southeast-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
+        :type region_code: str
+        :param source_type: 资源包的来源类型： 0：订单1：软开云赠送
+        :type source_type: int
+        :param bundle_type: 套餐绑定类型： ATOMIC_PKG：原子套餐BUNDLE_PKG：组合套餐
+        :type bundle_type: str
+        :param quota_reuse_mode: 使用模式。 1：可重置表示购买的资源包能够按照一定的周期恢复使用量。例如购买一个1年的按需资源包，使用量是40G，可重置，重置周期为1个月，表示1年内每个月会给予40G的使用量。 2：不可重置表示购买的资源包的使用量不会恢复。例如购买一个1年的按需资源包，使用量是40G，不可重置，表示1年内一共给予40G的使用量。
+        :type quota_reuse_mode: int
+        :param free_resources: 资源套餐内的资源项信息（资源项ID级的详情），具体参见表3。
+        :type free_resources: list[:class:`huaweicloudsdkbssintl.v2.FreeResourceV3`]
+        """
         
         
 
@@ -133,7 +168,7 @@ class FreeResourcePackageV3:
         订购资源包产品后，系统生成的ID，是这个资源包列表的标识字段。
 
         :param order_instance_id: The order_instance_id of this FreeResourcePackageV3.
-        :type: str
+        :type order_instance_id: str
         """
         self._order_instance_id = order_instance_id
 
@@ -155,7 +190,7 @@ class FreeResourcePackageV3:
         订单ID，如果source_type为“1：软开云赠送”，该字段为空。
 
         :param order_id: The order_id of this FreeResourcePackageV3.
-        :type: str
+        :type order_id: str
         """
         self._order_id = order_id
 
@@ -177,7 +212,7 @@ class FreeResourcePackageV3:
         产品ID，即资源包ID。
 
         :param product_id: The product_id of this FreeResourcePackageV3.
-        :type: str
+        :type product_id: str
         """
         self._product_id = product_id
 
@@ -199,7 +234,7 @@ class FreeResourcePackageV3:
         产品名称，即资源包名称。
 
         :param product_name: The product_name of this FreeResourcePackageV3.
-        :type: str
+        :type product_name: str
         """
         self._product_name = product_name
 
@@ -221,7 +256,7 @@ class FreeResourcePackageV3:
         企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this FreeResourcePackageV3.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -243,7 +278,7 @@ class FreeResourcePackageV3:
         企业项目应用范围： 0：应用所有1：应用到具体企业项目
 
         :param enterprise_project_scope: The enterprise_project_scope of this FreeResourcePackageV3.
-        :type: int
+        :type enterprise_project_scope: int
         """
         self._enterprise_project_scope = enterprise_project_scope
 
@@ -265,7 +300,7 @@ class FreeResourcePackageV3:
         生效时间，购买资源包的时间，格式UTC。
 
         :param effective_time: The effective_time of this FreeResourcePackageV3.
-        :type: str
+        :type effective_time: str
         """
         self._effective_time = effective_time
 
@@ -287,7 +322,7 @@ class FreeResourcePackageV3:
         失效时间，资源包到期时间，格式UTC。
 
         :param expire_time: The expire_time of this FreeResourcePackageV3.
-        :type: str
+        :type expire_time: str
         """
         self._expire_time = expire_time
 
@@ -309,7 +344,7 @@ class FreeResourcePackageV3:
         状态： 0：未生效1：生效中2：已用完3：已失效4：已退订
 
         :param status: The status of this FreeResourcePackageV3.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -331,7 +366,7 @@ class FreeResourcePackageV3:
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。
 
         :param service_type_code: The service_type_code of this FreeResourcePackageV3.
-        :type: str
+        :type service_type_code: str
         """
         self._service_type_code = service_type_code
 
@@ -353,7 +388,7 @@ class FreeResourcePackageV3:
         云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
 
         :param service_type_name: The service_type_name of this FreeResourcePackageV3.
-        :type: str
+        :type service_type_name: str
         """
         self._service_type_name = service_type_name
 
@@ -375,7 +410,7 @@ class FreeResourcePackageV3:
         云服务区编码，例如：“ap-southeast-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
         :param region_code: The region_code of this FreeResourcePackageV3.
-        :type: str
+        :type region_code: str
         """
         self._region_code = region_code
 
@@ -397,7 +432,7 @@ class FreeResourcePackageV3:
         资源包的来源类型： 0：订单1：软开云赠送
 
         :param source_type: The source_type of this FreeResourcePackageV3.
-        :type: int
+        :type source_type: int
         """
         self._source_type = source_type
 
@@ -419,7 +454,7 @@ class FreeResourcePackageV3:
         套餐绑定类型： ATOMIC_PKG：原子套餐BUNDLE_PKG：组合套餐
 
         :param bundle_type: The bundle_type of this FreeResourcePackageV3.
-        :type: str
+        :type bundle_type: str
         """
         self._bundle_type = bundle_type
 
@@ -441,7 +476,7 @@ class FreeResourcePackageV3:
         使用模式。 1：可重置表示购买的资源包能够按照一定的周期恢复使用量。例如购买一个1年的按需资源包，使用量是40G，可重置，重置周期为1个月，表示1年内每个月会给予40G的使用量。 2：不可重置表示购买的资源包的使用量不会恢复。例如购买一个1年的按需资源包，使用量是40G，不可重置，表示1年内一共给予40G的使用量。
 
         :param quota_reuse_mode: The quota_reuse_mode of this FreeResourcePackageV3.
-        :type: int
+        :type quota_reuse_mode: int
         """
         self._quota_reuse_mode = quota_reuse_mode
 
@@ -452,7 +487,7 @@ class FreeResourcePackageV3:
         资源套餐内的资源项信息（资源项ID级的详情），具体参见表3。
 
         :return: The free_resources of this FreeResourcePackageV3.
-        :rtype: list[FreeResourceV3]
+        :rtype: list[:class:`huaweicloudsdkbssintl.v2.FreeResourceV3`]
         """
         return self._free_resources
 
@@ -463,7 +498,7 @@ class FreeResourcePackageV3:
         资源套餐内的资源项信息（资源项ID级的详情），具体参见表3。
 
         :param free_resources: The free_resources of this FreeResourcePackageV3.
-        :type: list[FreeResourceV3]
+        :type free_resources: list[:class:`huaweicloudsdkbssintl.v2.FreeResourceV3`]
         """
         self._free_resources = free_resources
 

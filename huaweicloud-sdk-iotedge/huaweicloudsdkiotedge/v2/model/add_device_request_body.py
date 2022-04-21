@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddDeviceRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class AddDeviceRequestBody:
     }
 
     def __init__(self, node_id=None, device_name=None, product_id=None, auth_info=None, description=None, gateway_id=None, space_id=None, extension_info=None, config=None):
-        """AddDeviceRequestBody - a model defined in huaweicloud sdk"""
+        """AddDeviceRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param node_id: 设备标识码，通常使用IMEI、MAC地址或Serial No作为node_id。（注意:NB设备由于模组烧录信息后无法配置，所以NB设备会校验node_id全局唯一。）
+        :type node_id: str
+        :param device_name: 设备名称。
+        :type device_name: str
+        :param product_id: 设备关联的产品ID，用于唯一标识一个产品模型，在管理门户导入产品模型后由平台分配获得。
+        :type product_id: str
+        :param auth_info: 
+        :type auth_info: :class:`huaweicloudsdkiotedge.v2.EdgeDeviceAuthInfo`
+        :param description: 设备的描述信息。
+        :type description: str
+        :param gateway_id: 父设备ID，用于标识设备所属的父设备。携带该参数时，表示在该父设备下创建一个子设备，这个子设备不与平台直连，此时必须保证这个父设备在平台已存在，创建成功后子设备的gateway_id等于该参数值；不携带该参数时，表示创建一个和平台直连的设备，创建成功后设备的device_id和gateway_id一致。
+        :type gateway_id: str
+        :param space_id: 资源空间Id。此参数为非必选参数，用于兼容平台老用户存在多应用的场景。存在多应用的用户需要使用该接口时，必须携带该参数指定注册的设备归属到哪个应用下，否则接口会提示错误。如果用户存在多应用，同时又不想携带该参数，可以联系华为技术支持对用户数据做应用合并。
+        :type space_id: str
+        :param extension_info: 设备扩展信息。用户可以自定义任何想要的扩展信息，如果在创建设备时为子设备指定该字段，将会通过MQTT接口“平台通知网关子设备新增“将该信息通知给网关。字段值大小上限为1K。
+        :type extension_info: object
+        :param config: 设备初始配置。用户使用该字段可以为设备指定初始配置，指定后将会根据service_id和desired设置的属性值与产品中对应属性的默认值比对，如果不同，则将以设置的属性值为准写入到设备配置中。
+        :type config: object
+        """
         
         
 
@@ -96,7 +117,7 @@ class AddDeviceRequestBody:
         设备标识码，通常使用IMEI、MAC地址或Serial No作为node_id。（注意:NB设备由于模组烧录信息后无法配置，所以NB设备会校验node_id全局唯一。）
 
         :param node_id: The node_id of this AddDeviceRequestBody.
-        :type: str
+        :type node_id: str
         """
         self._node_id = node_id
 
@@ -118,7 +139,7 @@ class AddDeviceRequestBody:
         设备名称。
 
         :param device_name: The device_name of this AddDeviceRequestBody.
-        :type: str
+        :type device_name: str
         """
         self._device_name = device_name
 
@@ -140,7 +161,7 @@ class AddDeviceRequestBody:
         设备关联的产品ID，用于唯一标识一个产品模型，在管理门户导入产品模型后由平台分配获得。
 
         :param product_id: The product_id of this AddDeviceRequestBody.
-        :type: str
+        :type product_id: str
         """
         self._product_id = product_id
 
@@ -150,7 +171,7 @@ class AddDeviceRequestBody:
 
 
         :return: The auth_info of this AddDeviceRequestBody.
-        :rtype: EdgeDeviceAuthInfo
+        :rtype: :class:`huaweicloudsdkiotedge.v2.EdgeDeviceAuthInfo`
         """
         return self._auth_info
 
@@ -160,7 +181,7 @@ class AddDeviceRequestBody:
 
 
         :param auth_info: The auth_info of this AddDeviceRequestBody.
-        :type: EdgeDeviceAuthInfo
+        :type auth_info: :class:`huaweicloudsdkiotedge.v2.EdgeDeviceAuthInfo`
         """
         self._auth_info = auth_info
 
@@ -182,7 +203,7 @@ class AddDeviceRequestBody:
         设备的描述信息。
 
         :param description: The description of this AddDeviceRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -204,7 +225,7 @@ class AddDeviceRequestBody:
         父设备ID，用于标识设备所属的父设备。携带该参数时，表示在该父设备下创建一个子设备，这个子设备不与平台直连，此时必须保证这个父设备在平台已存在，创建成功后子设备的gateway_id等于该参数值；不携带该参数时，表示创建一个和平台直连的设备，创建成功后设备的device_id和gateway_id一致。
 
         :param gateway_id: The gateway_id of this AddDeviceRequestBody.
-        :type: str
+        :type gateway_id: str
         """
         self._gateway_id = gateway_id
 
@@ -226,7 +247,7 @@ class AddDeviceRequestBody:
         资源空间Id。此参数为非必选参数，用于兼容平台老用户存在多应用的场景。存在多应用的用户需要使用该接口时，必须携带该参数指定注册的设备归属到哪个应用下，否则接口会提示错误。如果用户存在多应用，同时又不想携带该参数，可以联系华为技术支持对用户数据做应用合并。
 
         :param space_id: The space_id of this AddDeviceRequestBody.
-        :type: str
+        :type space_id: str
         """
         self._space_id = space_id
 
@@ -248,7 +269,7 @@ class AddDeviceRequestBody:
         设备扩展信息。用户可以自定义任何想要的扩展信息，如果在创建设备时为子设备指定该字段，将会通过MQTT接口“平台通知网关子设备新增“将该信息通知给网关。字段值大小上限为1K。
 
         :param extension_info: The extension_info of this AddDeviceRequestBody.
-        :type: object
+        :type extension_info: object
         """
         self._extension_info = extension_info
 
@@ -270,7 +291,7 @@ class AddDeviceRequestBody:
         设备初始配置。用户使用该字段可以为设备指定初始配置，指定后将会根据service_id和desired设置的属性值与产品中对应属性的默认值比对，如果不同，则将以设置的属性值为准写入到设备配置中。
 
         :param config: The config of this AddDeviceRequestBody.
-        :type: object
+        :type config: object
         """
         self._config = config
 

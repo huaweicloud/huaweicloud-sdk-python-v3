@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCloudConnectionRoutesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListCloudConnectionRoutesResponse(SdkResponse):
     }
 
     def __init__(self, cloud_connection_routes=None, page_info=None, request_id=None):
-        """ListCloudConnectionRoutesResponse - a model defined in huaweicloud sdk"""
+        """ListCloudConnectionRoutesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param cloud_connection_routes: 云连接路由实例列表。
+        :type cloud_connection_routes: list[:class:`huaweicloudsdkcc.v3.CloudConnectionRoute`]
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkcc.v3.PageInfo`
+        :param request_id: 请求ID。
+        :type request_id: str
+        """
         
         super(ListCloudConnectionRoutesResponse, self).__init__()
 
@@ -57,7 +66,7 @@ class ListCloudConnectionRoutesResponse(SdkResponse):
         云连接路由实例列表。
 
         :return: The cloud_connection_routes of this ListCloudConnectionRoutesResponse.
-        :rtype: list[CloudConnectionRoute]
+        :rtype: list[:class:`huaweicloudsdkcc.v3.CloudConnectionRoute`]
         """
         return self._cloud_connection_routes
 
@@ -68,7 +77,7 @@ class ListCloudConnectionRoutesResponse(SdkResponse):
         云连接路由实例列表。
 
         :param cloud_connection_routes: The cloud_connection_routes of this ListCloudConnectionRoutesResponse.
-        :type: list[CloudConnectionRoute]
+        :type cloud_connection_routes: list[:class:`huaweicloudsdkcc.v3.CloudConnectionRoute`]
         """
         self._cloud_connection_routes = cloud_connection_routes
 
@@ -78,7 +87,7 @@ class ListCloudConnectionRoutesResponse(SdkResponse):
 
 
         :return: The page_info of this ListCloudConnectionRoutesResponse.
-        :rtype: PageInfo
+        :rtype: :class:`huaweicloudsdkcc.v3.PageInfo`
         """
         return self._page_info
 
@@ -88,7 +97,7 @@ class ListCloudConnectionRoutesResponse(SdkResponse):
 
 
         :param page_info: The page_info of this ListCloudConnectionRoutesResponse.
-        :type: PageInfo
+        :type page_info: :class:`huaweicloudsdkcc.v3.PageInfo`
         """
         self._page_info = page_info
 
@@ -110,7 +119,7 @@ class ListCloudConnectionRoutesResponse(SdkResponse):
         请求ID。
 
         :param request_id: The request_id of this ListCloudConnectionRoutesResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 

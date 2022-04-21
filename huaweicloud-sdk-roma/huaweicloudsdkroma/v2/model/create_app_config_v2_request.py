@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateAppConfigV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateAppConfigV2Request:
     }
 
     def __init__(self, instance_id=None, app_id=None, body=None):
-        """CreateAppConfigV2Request - a model defined in huaweicloud sdk"""
+        """CreateAppConfigV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param app_id: 应用编号
+        :type app_id: str
+        :param body: Body of the CreateAppConfigV2Request
+        :type body: :class:`huaweicloudsdkroma.v2.AppConfigCreateRequestV2`
+        """
         
         
 
@@ -66,7 +75,7 @@ class CreateAppConfigV2Request:
         实例ID
 
         :param instance_id: The instance_id of this CreateAppConfigV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -88,7 +97,7 @@ class CreateAppConfigV2Request:
         应用编号
 
         :param app_id: The app_id of this CreateAppConfigV2Request.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -98,7 +107,7 @@ class CreateAppConfigV2Request:
 
 
         :return: The body of this CreateAppConfigV2Request.
-        :rtype: AppConfigCreateRequestV2
+        :rtype: :class:`huaweicloudsdkroma.v2.AppConfigCreateRequestV2`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class CreateAppConfigV2Request:
 
 
         :param body: The body of this CreateAppConfigV2Request.
-        :type: AppConfigCreateRequestV2
+        :type body: :class:`huaweicloudsdkroma.v2.AppConfigCreateRequestV2`
         """
         self._body = body
 

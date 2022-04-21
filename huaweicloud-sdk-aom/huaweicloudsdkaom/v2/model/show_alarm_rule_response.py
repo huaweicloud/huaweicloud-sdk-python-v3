@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowAlarmRuleResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowAlarmRuleResponse(SdkResponse):
     }
 
     def __init__(self, meta_data=None, thresholds=None):
-        """ShowAlarmRuleResponse - a model defined in huaweicloud sdk"""
+        """ShowAlarmRuleResponse
+
+        The model defined in huaweicloud sdk
+
+        :param meta_data: 
+        :type meta_data: :class:`huaweicloudsdkaom.v2.MetaData`
+        :param thresholds: 阈值规则列表。
+        :type thresholds: list[:class:`huaweicloudsdkaom.v2.QueryAlarmResult`]
+        """
         
         super(ShowAlarmRuleResponse, self).__init__()
 
@@ -51,7 +58,7 @@ class ShowAlarmRuleResponse(SdkResponse):
 
 
         :return: The meta_data of this ShowAlarmRuleResponse.
-        :rtype: MetaData
+        :rtype: :class:`huaweicloudsdkaom.v2.MetaData`
         """
         return self._meta_data
 
@@ -61,7 +68,7 @@ class ShowAlarmRuleResponse(SdkResponse):
 
 
         :param meta_data: The meta_data of this ShowAlarmRuleResponse.
-        :type: MetaData
+        :type meta_data: :class:`huaweicloudsdkaom.v2.MetaData`
         """
         self._meta_data = meta_data
 
@@ -72,7 +79,7 @@ class ShowAlarmRuleResponse(SdkResponse):
         阈值规则列表。
 
         :return: The thresholds of this ShowAlarmRuleResponse.
-        :rtype: list[QueryAlarmResult]
+        :rtype: list[:class:`huaweicloudsdkaom.v2.QueryAlarmResult`]
         """
         return self._thresholds
 
@@ -83,7 +90,7 @@ class ShowAlarmRuleResponse(SdkResponse):
         阈值规则列表。
 
         :param thresholds: The thresholds of this ShowAlarmRuleResponse.
-        :type: list[QueryAlarmResult]
+        :type thresholds: list[:class:`huaweicloudsdkaom.v2.QueryAlarmResult`]
         """
         self._thresholds = thresholds
 

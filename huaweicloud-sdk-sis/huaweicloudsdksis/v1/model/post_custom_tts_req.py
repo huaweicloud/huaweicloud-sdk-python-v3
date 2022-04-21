@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PostCustomTTSReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class PostCustomTTSReq:
     }
 
     def __init__(self, text=None, config=None):
-        """PostCustomTTSReq - a model defined in huaweicloud sdk"""
+        """PostCustomTTSReq
+
+        The model defined in huaweicloud sdk
+
+        :param text: 待合成的文本，文本长度限制小于500字符。
+        :type text: str
+        :param config: 
+        :type config: :class:`huaweicloudsdksis.v1.TtsConfig`
+        """
         
         
 
@@ -62,7 +69,7 @@ class PostCustomTTSReq:
         待合成的文本，文本长度限制小于500字符。
 
         :param text: The text of this PostCustomTTSReq.
-        :type: str
+        :type text: str
         """
         self._text = text
 
@@ -72,7 +79,7 @@ class PostCustomTTSReq:
 
 
         :return: The config of this PostCustomTTSReq.
-        :rtype: TtsConfig
+        :rtype: :class:`huaweicloudsdksis.v1.TtsConfig`
         """
         return self._config
 
@@ -82,7 +89,7 @@ class PostCustomTTSReq:
 
 
         :param config: The config of this PostCustomTTSReq.
-        :type: TtsConfig
+        :type config: :class:`huaweicloudsdksis.v1.TtsConfig`
         """
         self._config = config
 

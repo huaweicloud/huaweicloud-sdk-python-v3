@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListMessageTemplatesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListMessageTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, message_template_count=None, message_templates=None):
-        """ListMessageTemplatesResponse - a model defined in huaweicloud sdk"""
+        """ListMessageTemplatesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param request_id: 请求的唯一标识ID。
+        :type request_id: str
+        :param message_template_count: 返回的模板个数。
+        :type message_template_count: int
+        :param message_templates: Message_template结构体数组。
+        :type message_templates: list[:class:`huaweicloudsdksmn.v2.MessageTemplate`]
+        """
         
         super(ListMessageTemplatesResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListMessageTemplatesResponse(SdkResponse):
         请求的唯一标识ID。
 
         :param request_id: The request_id of this ListMessageTemplatesResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 
@@ -90,7 +99,7 @@ class ListMessageTemplatesResponse(SdkResponse):
         返回的模板个数。
 
         :param message_template_count: The message_template_count of this ListMessageTemplatesResponse.
-        :type: int
+        :type message_template_count: int
         """
         self._message_template_count = message_template_count
 
@@ -101,7 +110,7 @@ class ListMessageTemplatesResponse(SdkResponse):
         Message_template结构体数组。
 
         :return: The message_templates of this ListMessageTemplatesResponse.
-        :rtype: list[MessageTemplate]
+        :rtype: list[:class:`huaweicloudsdksmn.v2.MessageTemplate`]
         """
         return self._message_templates
 
@@ -112,7 +121,7 @@ class ListMessageTemplatesResponse(SdkResponse):
         Message_template结构体数组。
 
         :param message_templates: The message_templates of this ListMessageTemplatesResponse.
-        :type: list[MessageTemplate]
+        :type message_templates: list[:class:`huaweicloudsdksmn.v2.MessageTemplate`]
         """
         self._message_templates = message_templates
 

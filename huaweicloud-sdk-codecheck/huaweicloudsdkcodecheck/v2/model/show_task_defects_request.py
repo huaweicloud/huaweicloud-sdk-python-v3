@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowTaskDefectsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ShowTaskDefectsRequest:
     }
 
     def __init__(self, task_id=None, offset=None, limit=None, status_ids=None, severity=None):
-        """ShowTaskDefectsRequest - a model defined in huaweicloud sdk"""
+        """ShowTaskDefectsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 任务ID
+        :type task_id: str
+        :param offset: 分页索引，偏移量
+        :type offset: int
+        :param limit: 每页显示的数量,每页最多显示100条
+        :type limit: int
+        :param status_ids: 问题状态筛选
+        :type status_ids: str
+        :param severity: 严重级别，0致命，1严重，2一般，3提示
+        :type severity: str
+        """
         
         
 
@@ -77,7 +90,7 @@ class ShowTaskDefectsRequest:
         任务ID
 
         :param task_id: The task_id of this ShowTaskDefectsRequest.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -99,7 +112,7 @@ class ShowTaskDefectsRequest:
         分页索引，偏移量
 
         :param offset: The offset of this ShowTaskDefectsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -121,7 +134,7 @@ class ShowTaskDefectsRequest:
         每页显示的数量,每页最多显示100条
 
         :param limit: The limit of this ShowTaskDefectsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -143,7 +156,7 @@ class ShowTaskDefectsRequest:
         问题状态筛选
 
         :param status_ids: The status_ids of this ShowTaskDefectsRequest.
-        :type: str
+        :type status_ids: str
         """
         self._status_ids = status_ids
 
@@ -165,7 +178,7 @@ class ShowTaskDefectsRequest:
         严重级别，0致命，1严重，2一般，3提示
 
         :param severity: The severity of this ShowTaskDefectsRequest.
-        :type: str
+        :type severity: str
         """
         self._severity = severity
 

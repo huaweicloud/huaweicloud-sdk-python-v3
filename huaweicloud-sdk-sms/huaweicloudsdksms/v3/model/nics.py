@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Nics:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class Nics:
     }
 
     def __init__(self, id=None, name=None, cidr=None, ip=None):
-        """Nics - a model defined in huaweicloud sdk"""
+        """Nics
+
+        The model defined in huaweicloud sdk
+
+        :param id: 子网ID，如果是自动创建，使用\&quot;autoCreate\&quot;
+        :type id: str
+        :param name: 子网名称
+        :type name: str
+        :param cidr: 子网网关/掩码
+        :type cidr: str
+        :param ip: 虚拟机IP地址，如果没有这个字段，自动分配IP
+        :type ip: str
+        """
         
         
 
@@ -70,7 +81,7 @@ class Nics:
         子网ID，如果是自动创建，使用\"autoCreate\"
 
         :param id: The id of this Nics.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -92,7 +103,7 @@ class Nics:
         子网名称
 
         :param name: The name of this Nics.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -114,7 +125,7 @@ class Nics:
         子网网关/掩码
 
         :param cidr: The cidr of this Nics.
-        :type: str
+        :type cidr: str
         """
         self._cidr = cidr
 
@@ -136,7 +147,7 @@ class Nics:
         虚拟机IP地址，如果没有这个字段，自动分配IP
 
         :param ip: The ip of this Nics.
-        :type: str
+        :type ip: str
         """
         self._ip = ip
 

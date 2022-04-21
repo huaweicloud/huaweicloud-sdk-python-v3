@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InstanceSpaceInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class InstanceSpaceInfo:
     }
 
     def __init__(self, total_size=None, used_size=None, data_size=None, log_size=None, avg_daily_growth=None, last_result_time=None):
-        """InstanceSpaceInfo - a model defined in huaweicloud sdk"""
+        """InstanceSpaceInfo
+
+        The model defined in huaweicloud sdk
+
+        :param total_size: 实例总空间，以字节为单位。GaussDB(for MySQL)不会返回总空间
+        :type total_size: int
+        :param used_size: 已使用空间，以字节为单位
+        :type used_size: int
+        :param data_size: 数据空间，以字节为单位
+        :type data_size: int
+        :param log_size: 日志空间，以字节为单位
+        :type log_size: int
+        :param avg_daily_growth: 近七日的数据平均日增长量，以字节为单位
+        :type avg_daily_growth: int
+        :param last_result_time: 最后一次分析的结果时间，毫秒单位时间戳
+        :type last_result_time: int
+        """
         
         
 
@@ -83,7 +98,7 @@ class InstanceSpaceInfo:
         实例总空间，以字节为单位。GaussDB(for MySQL)不会返回总空间
 
         :param total_size: The total_size of this InstanceSpaceInfo.
-        :type: int
+        :type total_size: int
         """
         self._total_size = total_size
 
@@ -105,7 +120,7 @@ class InstanceSpaceInfo:
         已使用空间，以字节为单位
 
         :param used_size: The used_size of this InstanceSpaceInfo.
-        :type: int
+        :type used_size: int
         """
         self._used_size = used_size
 
@@ -127,7 +142,7 @@ class InstanceSpaceInfo:
         数据空间，以字节为单位
 
         :param data_size: The data_size of this InstanceSpaceInfo.
-        :type: int
+        :type data_size: int
         """
         self._data_size = data_size
 
@@ -149,7 +164,7 @@ class InstanceSpaceInfo:
         日志空间，以字节为单位
 
         :param log_size: The log_size of this InstanceSpaceInfo.
-        :type: int
+        :type log_size: int
         """
         self._log_size = log_size
 
@@ -171,7 +186,7 @@ class InstanceSpaceInfo:
         近七日的数据平均日增长量，以字节为单位
 
         :param avg_daily_growth: The avg_daily_growth of this InstanceSpaceInfo.
-        :type: int
+        :type avg_daily_growth: int
         """
         self._avg_daily_growth = avg_daily_growth
 
@@ -193,7 +208,7 @@ class InstanceSpaceInfo:
         最后一次分析的结果时间，毫秒单位时间戳
 
         :param last_result_time: The last_result_time of this InstanceSpaceInfo.
-        :type: int
+        :type last_result_time: int
         """
         self._last_result_time = last_result_time
 

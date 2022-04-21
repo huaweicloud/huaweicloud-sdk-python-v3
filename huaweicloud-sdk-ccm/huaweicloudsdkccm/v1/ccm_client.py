@@ -52,21 +52,17 @@ class CcmClient(Client):
         """申请证书
 
         申请证书。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateCertificateRequest request
-        :return: CreateCertificateResponse
+        :param request: Request instance for CreateCertificate
+        :type request: :class:`huaweicloudsdkccm.v1.CreateCertificateRequest`
+        :rtype: :class:`huaweicloudsdkccm.v1.CreateCertificateResponse`
         """
         return self.create_certificate_with_http_info(request)
 
     def create_certificate_with_http_info(self, request):
-        """申请证书
-
-        申请证书。
-
-        :param CreateCertificateRequest request
-        :return: CreateCertificateResponse
-        """
-
         all_params = ['create_certificate_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -110,26 +106,22 @@ class CcmClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_certificate_authority_obs_agency(self, request):
         """创建委托
 
-        用户给PCA创建OBS委托授权，用于访问OBS桶，更新吊销列表。 > 用户所使用账号token需要具备安全管理员（secu_admin）权限。
+        用户给PCA创建OBS委托授权，用于访问OBS桶，更新吊销列表。
+        &gt; 用户所使用账号token需要具备安全管理员（secu_admin）权限。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateCertificateAuthorityObsAgencyRequest request
-        :return: CreateCertificateAuthorityObsAgencyResponse
+        :param request: Request instance for CreateCertificateAuthorityObsAgency
+        :type request: :class:`huaweicloudsdkccm.v1.CreateCertificateAuthorityObsAgencyRequest`
+        :rtype: :class:`huaweicloudsdkccm.v1.CreateCertificateAuthorityObsAgencyResponse`
         """
         return self.create_certificate_authority_obs_agency_with_http_info(request)
 
     def create_certificate_authority_obs_agency_with_http_info(self, request):
-        """创建委托
-
-        用户给PCA创建OBS委托授权，用于访问OBS桶，更新吊销列表。 > 用户所使用账号token需要具备安全管理员（secu_admin）权限。
-
-        :param CreateCertificateAuthorityObsAgencyRequest request
-        :return: CreateCertificateAuthorityObsAgencyResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -171,26 +163,40 @@ class CcmClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_certificate_by_csr(self, request):
         """通过CSR签发证书
 
-        通过CSR签发证书。功能约束如下： - 1、当前默认参数如下：   - （1）CA 默认参数：       - **keyUsage**: digitalSignature, keyCertSign, cRLSign，优先采用CSR中的参数；       - **SignatureHashAlgorithm**: SHA384；       - **PathLength**：0 （可自定义）。   - （2）私有证书：       - **keyUsage**: digitalSignature keyAgreement，优先采用CSR中的参数；       - **SignatureHashAlgorithm**: SHA384； - 2、当传入的type为**INTERMEDIATE_CA**时，创建出的从属CA证书，有以下限制：   - （1）不占用CA配额。在查询CA列表时，不会返回该证书；   - （2）只支持通过以下两个接口获取其信息：       - GET /v1/private-certificate-authorities/{ca_id} 获取证书详情       - POST /v1/private-certificate-authorities/{ca_id}/export 导出证书   - （3）本接口返回的**certificate_id**即代表从属CA的**ca_id**；   - （4）无法用于签发证书，密钥在用户侧。 - 3、当type为**ENTITY_CERT**时，创建出的私有证书，有以下特点：   - （1）占用私有证书配额。在查询私有证书列表时，会返回该证书；   - （2）除了导出时不包含密钥信息（密钥在用户端），其余用法与其它私有证书一致。 > 注：需要使用“\\r\\n”或“\\n”代替换行符，将CSR转换成一串字符，可参考示例请求。注：目前，证书的组织信息、公钥算法以及公钥内容等均来自CSR文件，暂不支持API传入。
+        通过CSR签发证书。功能约束如下：
+        - 1、当前默认参数如下：
+          - （1）CA 默认参数：
+              - **keyUsage**: digitalSignature, keyCertSign, cRLSign，优先采用CSR中的参数；
+              - **SignatureHashAlgorithm**: SHA384；
+              - **PathLength**：0 （可自定义）。
+          - （2）私有证书：
+              - **keyUsage**: digitalSignature keyAgreement，优先采用CSR中的参数；
+              - **SignatureHashAlgorithm**: SHA384；
+        - 2、当传入的type为**INTERMEDIATE_CA**时，创建出的从属CA证书，有以下限制：
+          - （1）不占用CA配额。在查询CA列表时，不会返回该证书；
+          - （2）只支持通过以下两个接口获取其信息：
+              - GET /v1/private-certificate-authorities/{ca_id} 获取证书详情
+              - POST /v1/private-certificate-authorities/{ca_id}/export 导出证书
+          - （3）本接口返回的**certificate_id**即代表从属CA的**ca_id**；
+          - （4）无法用于签发证书，密钥在用户侧。
+        - 3、当type为**ENTITY_CERT**时，创建出的私有证书，有以下特点：
+          - （1）占用私有证书配额。在查询私有证书列表时，会返回该证书；
+          - （2）除了导出时不包含密钥信息（密钥在用户端），其余用法与其它私有证书一致。
+        &gt; 注：需要使用“\\r\\n”或“\\n”代替换行符，将CSR转换成一串字符，可参考示例请求。注：目前，证书的组织信息、公钥算法以及公钥内容等均来自CSR文件，暂不支持API传入。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateCertificateByCsrRequest request
-        :return: CreateCertificateByCsrResponse
+        :param request: Request instance for CreateCertificateByCsr
+        :type request: :class:`huaweicloudsdkccm.v1.CreateCertificateByCsrRequest`
+        :rtype: :class:`huaweicloudsdkccm.v1.CreateCertificateByCsrResponse`
         """
         return self.create_certificate_by_csr_with_http_info(request)
 
     def create_certificate_by_csr_with_http_info(self, request):
-        """通过CSR签发证书
-
-        通过CSR签发证书。功能约束如下： - 1、当前默认参数如下：   - （1）CA 默认参数：       - **keyUsage**: digitalSignature, keyCertSign, cRLSign，优先采用CSR中的参数；       - **SignatureHashAlgorithm**: SHA384；       - **PathLength**：0 （可自定义）。   - （2）私有证书：       - **keyUsage**: digitalSignature keyAgreement，优先采用CSR中的参数；       - **SignatureHashAlgorithm**: SHA384； - 2、当传入的type为**INTERMEDIATE_CA**时，创建出的从属CA证书，有以下限制：   - （1）不占用CA配额。在查询CA列表时，不会返回该证书；   - （2）只支持通过以下两个接口获取其信息：       - GET /v1/private-certificate-authorities/{ca_id} 获取证书详情       - POST /v1/private-certificate-authorities/{ca_id}/export 导出证书   - （3）本接口返回的**certificate_id**即代表从属CA的**ca_id**；   - （4）无法用于签发证书，密钥在用户侧。 - 3、当type为**ENTITY_CERT**时，创建出的私有证书，有以下特点：   - （1）占用私有证书配额。在查询私有证书列表时，会返回该证书；   - （2）除了导出时不包含密钥信息（密钥在用户端），其余用法与其它私有证书一致。 > 注：需要使用“\\r\\n”或“\\n”代替换行符，将CSR转换成一串字符，可参考示例请求。注：目前，证书的组织信息、公钥算法以及公钥内容等均来自CSR文件，暂不支持API传入。
-
-        :param CreateCertificateByCsrRequest request
-        :return: CreateCertificateByCsrResponse
-        """
-
         all_params = ['create_certificate_by_csr_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -234,26 +240,21 @@ class CcmClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_certificate(self, request):
         """删除证书
 
         删除证书。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteCertificateRequest request
-        :return: DeleteCertificateResponse
+        :param request: Request instance for DeleteCertificate
+        :type request: :class:`huaweicloudsdkccm.v1.DeleteCertificateRequest`
+        :rtype: :class:`huaweicloudsdkccm.v1.DeleteCertificateResponse`
         """
         return self.delete_certificate_with_http_info(request)
 
     def delete_certificate_with_http_info(self, request):
-        """删除证书
-
-        删除证书。
-
-        :param DeleteCertificateRequest request
-        :return: DeleteCertificateResponse
-        """
-
         all_params = ['certificate_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -297,26 +298,35 @@ class CcmClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def export_certificate(self, request):
         """导出证书
 
-        导出证书。   - 选择是否压缩时，分以下两种情况：    - is_compressed为true时，返回文件压缩包，命名为：证书名称_type字段小写字母.zip，如”test_apache.zip“。       - type = \"**APACHE**\"时，压缩包中包含三个文件：**server.key**（密钥文件，内容为PEM格式）、**chain.crt**（证书链，内容为PEM格式）、**server.crt**（证书，内容为PEM格式）；       - type = \"**IIS**\"时，压缩包中包含两个文件：**keystorePass.txt**（keystore口令）、**server.pfx**（PFX证书，证书与证书链包含在同一个文件）；       - type = \"**NGINX**\"时，压缩包中包含两个文件：**server.key**（密钥文件，内容为PEM格式）、**server.crt**（内容为PEM格式，证书与证书链包含在同一个文件）；       - type = \"**TOMCAT**\"时，压缩包中包含两个文件：**keystorePass.txt**（keystore口令）、**server.jks**（JKX证书，证书与证书链包含在同一个文件）；       - type = \"**OTHER**\"时，压缩包中包含三个文件：**server.key**（密钥文件，内容为PEM格式）、**chain.pem**（证书链）、**server.pem**（证书）。   - is_compressed为false时，返回json格式，返回的具体参数如下：       - type = \"**APACHE**\"或\"**NGINX**\"或\"**OTHER**\"时，返回参数如下：         - **certificate**（证书内容，PEM格式）；         - **certificate_chain**（证书链，PEM格式）；         - **private_key**（证书私钥，PEM格式）；       - type = \"**IIS**\"或\"**TOMCAT**\"时，暂时未定义。 > 只有当证书状态为“已签发”时，可进行导出操作。
+        导出证书。
+          - 选择是否压缩时，分以下两种情况：
+           - is_compressed为true时，返回文件压缩包，命名为：证书名称_type字段小写字母.zip，如”test_apache.zip“。
+              - type &#x3D; \&quot;**APACHE**\&quot;时，压缩包中包含三个文件：**server.key**（密钥文件，内容为PEM格式）、**chain.crt**（证书链，内容为PEM格式）、**server.crt**（证书，内容为PEM格式）；
+              - type &#x3D; \&quot;**IIS**\&quot;时，压缩包中包含两个文件：**keystorePass.txt**（keystore口令）、**server.pfx**（PFX证书，证书与证书链包含在同一个文件）；
+              - type &#x3D; \&quot;**NGINX**\&quot;时，压缩包中包含两个文件：**server.key**（密钥文件，内容为PEM格式）、**server.crt**（内容为PEM格式，证书与证书链包含在同一个文件）；
+              - type &#x3D; \&quot;**TOMCAT**\&quot;时，压缩包中包含两个文件：**keystorePass.txt**（keystore口令）、**server.jks**（JKX证书，证书与证书链包含在同一个文件）；
+              - type &#x3D; \&quot;**OTHER**\&quot;时，压缩包中包含三个文件：**server.key**（密钥文件，内容为PEM格式）、**chain.pem**（证书链）、**server.pem**（证书）。
+          - is_compressed为false时，返回json格式，返回的具体参数如下：
+              - type &#x3D; \&quot;**APACHE**\&quot;或\&quot;**NGINX**\&quot;或\&quot;**OTHER**\&quot;时，返回参数如下：
+                - **certificate**（证书内容，PEM格式）；
+                - **certificate_chain**（证书链，PEM格式）；
+                - **private_key**（证书私钥，PEM格式）；
+              - type &#x3D; \&quot;**IIS**\&quot;或\&quot;**TOMCAT**\&quot;时，暂时未定义。
+        &gt; 只有当证书状态为“已签发”时，可进行导出操作。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ExportCertificateRequest request
-        :return: ExportCertificateResponse
+        :param request: Request instance for ExportCertificate
+        :type request: :class:`huaweicloudsdkccm.v1.ExportCertificateRequest`
+        :rtype: :class:`huaweicloudsdkccm.v1.ExportCertificateResponse`
         """
         return self.export_certificate_with_http_info(request)
 
     def export_certificate_with_http_info(self, request):
-        """导出证书
-
-        导出证书。   - 选择是否压缩时，分以下两种情况：    - is_compressed为true时，返回文件压缩包，命名为：证书名称_type字段小写字母.zip，如”test_apache.zip“。       - type = \"**APACHE**\"时，压缩包中包含三个文件：**server.key**（密钥文件，内容为PEM格式）、**chain.crt**（证书链，内容为PEM格式）、**server.crt**（证书，内容为PEM格式）；       - type = \"**IIS**\"时，压缩包中包含两个文件：**keystorePass.txt**（keystore口令）、**server.pfx**（PFX证书，证书与证书链包含在同一个文件）；       - type = \"**NGINX**\"时，压缩包中包含两个文件：**server.key**（密钥文件，内容为PEM格式）、**server.crt**（内容为PEM格式，证书与证书链包含在同一个文件）；       - type = \"**TOMCAT**\"时，压缩包中包含两个文件：**keystorePass.txt**（keystore口令）、**server.jks**（JKX证书，证书与证书链包含在同一个文件）；       - type = \"**OTHER**\"时，压缩包中包含三个文件：**server.key**（密钥文件，内容为PEM格式）、**chain.pem**（证书链）、**server.pem**（证书）。   - is_compressed为false时，返回json格式，返回的具体参数如下：       - type = \"**APACHE**\"或\"**NGINX**\"或\"**OTHER**\"时，返回参数如下：         - **certificate**（证书内容，PEM格式）；         - **certificate_chain**（证书链，PEM格式）；         - **private_key**（证书私钥，PEM格式）；       - type = \"**IIS**\"或\"**TOMCAT**\"时，暂时未定义。 > 只有当证书状态为“已签发”时，可进行导出操作。
-
-        :param ExportCertificateRequest request
-        :return: ExportCertificateResponse
-        """
-
         all_params = ['certificate_id', 'export_certificate_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -362,26 +372,21 @@ class CcmClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_certificate(self, request):
         """查询私有证书列表
 
         查询私有证书列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListCertificateRequest request
-        :return: ListCertificateResponse
+        :param request: Request instance for ListCertificate
+        :type request: :class:`huaweicloudsdkccm.v1.ListCertificateRequest`
+        :rtype: :class:`huaweicloudsdkccm.v1.ListCertificateResponse`
         """
         return self.list_certificate_with_http_info(request)
 
     def list_certificate_with_http_info(self, request):
-        """查询私有证书列表
-
-        查询私有证书列表。
-
-        :param ListCertificateRequest request
-        :return: ListCertificateResponse
-        """
-
         all_params = ['limit', 'name', 'offset', 'status', 'sort_key', 'sort_dir']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -435,26 +440,22 @@ class CcmClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_certificate_authority_obs_bucket(self, request):
         """查询OBS桶列表
 
-        查询OBS桶列表。 > 只有用户创建了委托授权，方可使用此接口。创建委托授权参见本文档：**证书吊销处理>创建委托**。
+        查询OBS桶列表。
+        &gt; 只有用户创建了委托授权，方可使用此接口。创建委托授权参见本文档：**证书吊销处理&gt;创建委托**。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListCertificateAuthorityObsBucketRequest request
-        :return: ListCertificateAuthorityObsBucketResponse
+        :param request: Request instance for ListCertificateAuthorityObsBucket
+        :type request: :class:`huaweicloudsdkccm.v1.ListCertificateAuthorityObsBucketRequest`
+        :rtype: :class:`huaweicloudsdkccm.v1.ListCertificateAuthorityObsBucketResponse`
         """
         return self.list_certificate_authority_obs_bucket_with_http_info(request)
 
     def list_certificate_authority_obs_bucket_with_http_info(self, request):
-        """查询OBS桶列表
-
-        查询OBS桶列表。 > 只有用户创建了委托授权，方可使用此接口。创建委托授权参见本文档：**证书吊销处理>创建委托**。
-
-        :param ListCertificateAuthorityObsBucketRequest request
-        :return: ListCertificateAuthorityObsBucketResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -496,26 +497,21 @@ class CcmClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def parse_certificate_signing_request(self, request):
         """解析CSR
 
         解析CSR。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ParseCertificateSigningRequestRequest request
-        :return: ParseCertificateSigningRequestResponse
+        :param request: Request instance for ParseCertificateSigningRequest
+        :type request: :class:`huaweicloudsdkccm.v1.ParseCertificateSigningRequestRequest`
+        :rtype: :class:`huaweicloudsdkccm.v1.ParseCertificateSigningRequestResponse`
         """
         return self.parse_certificate_signing_request_with_http_info(request)
 
     def parse_certificate_signing_request_with_http_info(self, request):
-        """解析CSR
-
-        解析CSR。
-
-        :param ParseCertificateSigningRequestRequest request
-        :return: ParseCertificateSigningRequestResponse
-        """
-
         all_params = ['parse_certificate_signing_request_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -559,26 +555,22 @@ class CcmClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def revoke_certificate(self, request):
         """吊销证书
 
-        吊销证书。 > 注：当不想填写吊销理由时，请求body体请置为\"**{}**\"，否则将会报错。
+        吊销证书。
+        &gt; 注：当不想填写吊销理由时，请求body体请置为\&quot;**{}**\&quot;，否则将会报错。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param RevokeCertificateRequest request
-        :return: RevokeCertificateResponse
+        :param request: Request instance for RevokeCertificate
+        :type request: :class:`huaweicloudsdkccm.v1.RevokeCertificateRequest`
+        :rtype: :class:`huaweicloudsdkccm.v1.RevokeCertificateResponse`
         """
         return self.revoke_certificate_with_http_info(request)
 
     def revoke_certificate_with_http_info(self, request):
-        """吊销证书
-
-        吊销证书。 > 注：当不想填写吊销理由时，请求body体请置为\"**{}**\"，否则将会报错。
-
-        :param RevokeCertificateRequest request
-        :return: RevokeCertificateResponse
-        """
-
         all_params = ['certificate_id', 'revoke_certificate_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -624,26 +616,21 @@ class CcmClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_certificate(self, request):
         """查询证书详情
 
         查询证书详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowCertificateRequest request
-        :return: ShowCertificateResponse
+        :param request: Request instance for ShowCertificate
+        :type request: :class:`huaweicloudsdkccm.v1.ShowCertificateRequest`
+        :rtype: :class:`huaweicloudsdkccm.v1.ShowCertificateResponse`
         """
         return self.show_certificate_with_http_info(request)
 
     def show_certificate_with_http_info(self, request):
-        """查询证书详情
-
-        查询证书详情。
-
-        :param ShowCertificateRequest request
-        :return: ShowCertificateResponse
-        """
-
         all_params = ['certificate_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -687,26 +674,22 @@ class CcmClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_certificate_authority_obs_agency(self, request):
         """查看是否具有委托权限
 
-        查看是否具有委托权限。 > 用户所使用账号token需要具备安全管理员（secu_admin）权限。
+        查看是否具有委托权限。
+        &gt; 用户所使用账号token需要具备安全管理员（secu_admin）权限。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowCertificateAuthorityObsAgencyRequest request
-        :return: ShowCertificateAuthorityObsAgencyResponse
+        :param request: Request instance for ShowCertificateAuthorityObsAgency
+        :type request: :class:`huaweicloudsdkccm.v1.ShowCertificateAuthorityObsAgencyRequest`
+        :rtype: :class:`huaweicloudsdkccm.v1.ShowCertificateAuthorityObsAgencyResponse`
         """
         return self.show_certificate_authority_obs_agency_with_http_info(request)
 
     def show_certificate_authority_obs_agency_with_http_info(self, request):
-        """查看是否具有委托权限
-
-        查看是否具有委托权限。 > 用户所使用账号token需要具备安全管理员（secu_admin）权限。
-
-        :param ShowCertificateAuthorityObsAgencyRequest request
-        :return: ShowCertificateAuthorityObsAgencyResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -748,26 +731,21 @@ class CcmClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_certificate_quota(self, request):
         """查询私有证书配额
 
         查询私有证书配额。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowCertificateQuotaRequest request
-        :return: ShowCertificateQuotaResponse
+        :param request: Request instance for ShowCertificateQuota
+        :type request: :class:`huaweicloudsdkccm.v1.ShowCertificateQuotaRequest`
+        :rtype: :class:`huaweicloudsdkccm.v1.ShowCertificateQuotaResponse`
         """
         return self.show_certificate_quota_with_http_info(request)
 
     def show_certificate_quota_with_http_info(self, request):
-        """查询私有证书配额
-
-        查询私有证书配额。
-
-        :param ShowCertificateQuotaRequest request
-        :return: ShowCertificateQuotaResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -809,26 +787,24 @@ class CcmClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_certificate_authority(self, request):
         """创建CA
 
-        创建CA，分以下三种情况： - 创建根CA，根据参数介绍中，填写必选值； - 创建从属CA，并需要直接激活该证书，根据参数介绍中，填写必选值； - 创建从属CA，不需要直接激活该证书，请求body中只需要缺少此三个参数之一即可：issuer_id、signature_algorithm、validity。
+        创建CA，分以下三种情况：
+        - 创建根CA，根据参数介绍中，填写必选值；
+        - 创建从属CA，并需要直接激活该证书，根据参数介绍中，填写必选值；
+        - 创建从属CA，不需要直接激活该证书，请求body中只需要缺少此三个参数之一即可：issuer_id、signature_algorithm、validity。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateCertificateAuthorityRequest request
-        :return: CreateCertificateAuthorityResponse
+        :param request: Request instance for CreateCertificateAuthority
+        :type request: :class:`huaweicloudsdkccm.v1.CreateCertificateAuthorityRequest`
+        :rtype: :class:`huaweicloudsdkccm.v1.CreateCertificateAuthorityResponse`
         """
         return self.create_certificate_authority_with_http_info(request)
 
     def create_certificate_authority_with_http_info(self, request):
-        """创建CA
-
-        创建CA，分以下三种情况： - 创建根CA，根据参数介绍中，填写必选值； - 创建从属CA，并需要直接激活该证书，根据参数介绍中，填写必选值； - 创建从属CA，不需要直接激活该证书，请求body中只需要缺少此三个参数之一即可：issuer_id、signature_algorithm、validity。
-
-        :param CreateCertificateAuthorityRequest request
-        :return: CreateCertificateAuthorityResponse
-        """
-
         all_params = ['create_certificate_authority_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -872,26 +848,22 @@ class CcmClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_certificate_authority(self, request):
         """删除CA
 
-        计划删除CA。计划多少天后删除CA证书，可设置7天～30天内删除。 > 只有当证书状态为”待激活“或”已禁用“状态时，才可删除。”待激活“状态下，将会立即删除证书，不支持延迟删除。
+        计划删除CA。计划多少天后删除CA证书，可设置7天～30天内删除。
+        &gt; 只有当证书状态为”待激活“或”已禁用“状态时，才可删除。”待激活“状态下，将会立即删除证书，不支持延迟删除。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteCertificateAuthorityRequest request
-        :return: DeleteCertificateAuthorityResponse
+        :param request: Request instance for DeleteCertificateAuthority
+        :type request: :class:`huaweicloudsdkccm.v1.DeleteCertificateAuthorityRequest`
+        :rtype: :class:`huaweicloudsdkccm.v1.DeleteCertificateAuthorityResponse`
         """
         return self.delete_certificate_authority_with_http_info(request)
 
     def delete_certificate_authority_with_http_info(self, request):
-        """删除CA
-
-        计划删除CA。计划多少天后删除CA证书，可设置7天～30天内删除。 > 只有当证书状态为”待激活“或”已禁用“状态时，才可删除。”待激活“状态下，将会立即删除证书，不支持延迟删除。
-
-        :param DeleteCertificateAuthorityRequest request
-        :return: DeleteCertificateAuthorityResponse
-        """
-
         all_params = ['ca_id', 'pending_days']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -937,26 +909,22 @@ class CcmClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def disable_certificate_authority(self, request):
         """禁用CA
 
-        禁用CA。 > 只有当证书处于\"已激活\"或\"已过期\"状态时，可进行禁用操作。
+        禁用CA。
+        &gt; 只有当证书处于\&quot;已激活\&quot;或\&quot;已过期\&quot;状态时，可进行禁用操作。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DisableCertificateAuthorityRequest request
-        :return: DisableCertificateAuthorityResponse
+        :param request: Request instance for DisableCertificateAuthority
+        :type request: :class:`huaweicloudsdkccm.v1.DisableCertificateAuthorityRequest`
+        :rtype: :class:`huaweicloudsdkccm.v1.DisableCertificateAuthorityResponse`
         """
         return self.disable_certificate_authority_with_http_info(request)
 
     def disable_certificate_authority_with_http_info(self, request):
-        """禁用CA
-
-        禁用CA。 > 只有当证书处于\"已激活\"或\"已过期\"状态时，可进行禁用操作。
-
-        :param DisableCertificateAuthorityRequest request
-        :return: DisableCertificateAuthorityResponse
-        """
-
         all_params = ['ca_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1000,26 +968,22 @@ class CcmClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def enable_certificate_authority(self, request):
         """启用CA
 
-        启用CA。 > 注：只有当证书处于\"已禁用\"状态时，可进行启用操作。
+        启用CA。
+        &gt; 注：只有当证书处于\&quot;已禁用\&quot;状态时，可进行启用操作。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param EnableCertificateAuthorityRequest request
-        :return: EnableCertificateAuthorityResponse
+        :param request: Request instance for EnableCertificateAuthority
+        :type request: :class:`huaweicloudsdkccm.v1.EnableCertificateAuthorityRequest`
+        :rtype: :class:`huaweicloudsdkccm.v1.EnableCertificateAuthorityResponse`
         """
         return self.enable_certificate_authority_with_http_info(request)
 
     def enable_certificate_authority_with_http_info(self, request):
-        """启用CA
-
-        启用CA。 > 注：只有当证书处于\"已禁用\"状态时，可进行启用操作。
-
-        :param EnableCertificateAuthorityRequest request
-        :return: EnableCertificateAuthorityResponse
-        """
-
         all_params = ['ca_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1063,26 +1027,22 @@ class CcmClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def export_certificate_authority_certificate(self, request):
         """导出CA证书
 
-        导出CA证书。 > 注：只有当证书处于\"已激活\"或\"已过期\"时，可进行导出操作。
+        导出CA证书。
+        &gt; 注：只有当证书处于\&quot;已激活\&quot;或\&quot;已过期\&quot;时，可进行导出操作。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ExportCertificateAuthorityCertificateRequest request
-        :return: ExportCertificateAuthorityCertificateResponse
+        :param request: Request instance for ExportCertificateAuthorityCertificate
+        :type request: :class:`huaweicloudsdkccm.v1.ExportCertificateAuthorityCertificateRequest`
+        :rtype: :class:`huaweicloudsdkccm.v1.ExportCertificateAuthorityCertificateResponse`
         """
         return self.export_certificate_authority_certificate_with_http_info(request)
 
     def export_certificate_authority_certificate_with_http_info(self, request):
-        """导出CA证书
-
-        导出CA证书。 > 注：只有当证书处于\"已激活\"或\"已过期\"时，可进行导出操作。
-
-        :param ExportCertificateAuthorityCertificateRequest request
-        :return: ExportCertificateAuthorityCertificateResponse
-        """
-
         all_params = ['ca_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1126,26 +1086,22 @@ class CcmClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def export_certificate_authority_csr(self, request):
         """导出CA的证书签名请求（CSR）
 
-        导出CA的证书签名请求。 > 只有当CA处于\"待激活\"状态时，可导出证书签名请求。
+        导出CA的证书签名请求。
+        &gt; 只有当CA处于\&quot;待激活\&quot;状态时，可导出证书签名请求。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ExportCertificateAuthorityCsrRequest request
-        :return: ExportCertificateAuthorityCsrResponse
+        :param request: Request instance for ExportCertificateAuthorityCsr
+        :type request: :class:`huaweicloudsdkccm.v1.ExportCertificateAuthorityCsrRequest`
+        :rtype: :class:`huaweicloudsdkccm.v1.ExportCertificateAuthorityCsrResponse`
         """
         return self.export_certificate_authority_csr_with_http_info(request)
 
     def export_certificate_authority_csr_with_http_info(self, request):
-        """导出CA的证书签名请求（CSR）
-
-        导出CA的证书签名请求。 > 只有当CA处于\"待激活\"状态时，可导出证书签名请求。
-
-        :param ExportCertificateAuthorityCsrRequest request
-        :return: ExportCertificateAuthorityCsrResponse
-        """
-
         all_params = ['ca_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1189,26 +1145,26 @@ class CcmClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def import_certificate_authority_certificate(self, request):
         """导入CA证书
 
-        导入CA证书，使用本接口需要满足以下条件：   - （1）证书为“待激活”状态的从属CA；   - （2）导入的证书体必须满足以下条件：     - a、该证书被签发时的证书签名请求必须是从PCA系统中导出；     - b、其证书链虽然允许不上传，但后期若想要导出完整的证书链，应导入完整的证书链；     - c、证书体与证书链必须为PEM编码。
+        导入CA证书，使用本接口需要满足以下条件：
+          - （1）证书为“待激活”状态的从属CA；
+          - （2）导入的证书体必须满足以下条件：
+            - a、该证书被签发时的证书签名请求必须是从PCA系统中导出；
+            - b、其证书链虽然允许不上传，但后期若想要导出完整的证书链，应导入完整的证书链；
+            - c、证书体与证书链必须为PEM编码。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ImportCertificateAuthorityCertificateRequest request
-        :return: ImportCertificateAuthorityCertificateResponse
+        :param request: Request instance for ImportCertificateAuthorityCertificate
+        :type request: :class:`huaweicloudsdkccm.v1.ImportCertificateAuthorityCertificateRequest`
+        :rtype: :class:`huaweicloudsdkccm.v1.ImportCertificateAuthorityCertificateResponse`
         """
         return self.import_certificate_authority_certificate_with_http_info(request)
 
     def import_certificate_authority_certificate_with_http_info(self, request):
-        """导入CA证书
-
-        导入CA证书，使用本接口需要满足以下条件：   - （1）证书为“待激活”状态的从属CA；   - （2）导入的证书体必须满足以下条件：     - a、该证书被签发时的证书签名请求必须是从PCA系统中导出；     - b、其证书链虽然允许不上传，但后期若想要导出完整的证书链，应导入完整的证书链；     - c、证书体与证书链必须为PEM编码。
-
-        :param ImportCertificateAuthorityCertificateRequest request
-        :return: ImportCertificateAuthorityCertificateResponse
-        """
-
         all_params = ['ca_id', 'import_certificate_authority_certificate_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1254,26 +1210,22 @@ class CcmClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def issue_certificate_authority_certificate(self, request):
         """激活CA
 
-        激活CA。 > 只有当证书处于\"待激活\"状态时，可进行激活操作。
+        激活CA。
+        &gt; 只有当证书处于\&quot;待激活\&quot;状态时，可进行激活操作。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param IssueCertificateAuthorityCertificateRequest request
-        :return: IssueCertificateAuthorityCertificateResponse
+        :param request: Request instance for IssueCertificateAuthorityCertificate
+        :type request: :class:`huaweicloudsdkccm.v1.IssueCertificateAuthorityCertificateRequest`
+        :rtype: :class:`huaweicloudsdkccm.v1.IssueCertificateAuthorityCertificateResponse`
         """
         return self.issue_certificate_authority_certificate_with_http_info(request)
 
     def issue_certificate_authority_certificate_with_http_info(self, request):
-        """激活CA
-
-        激活CA。 > 只有当证书处于\"待激活\"状态时，可进行激活操作。
-
-        :param IssueCertificateAuthorityCertificateRequest request
-        :return: IssueCertificateAuthorityCertificateResponse
-        """
-
         all_params = ['ca_id', 'issue_certificate_authority_certificate_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1319,26 +1271,21 @@ class CcmClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_certificate_authority(self, request):
         """查询CA列表
 
         查询CA列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListCertificateAuthorityRequest request
-        :return: ListCertificateAuthorityResponse
+        :param request: Request instance for ListCertificateAuthority
+        :type request: :class:`huaweicloudsdkccm.v1.ListCertificateAuthorityRequest`
+        :rtype: :class:`huaweicloudsdkccm.v1.ListCertificateAuthorityResponse`
         """
         return self.list_certificate_authority_with_http_info(request)
 
     def list_certificate_authority_with_http_info(self, request):
-        """查询CA列表
-
-        查询CA列表。
-
-        :param ListCertificateAuthorityRequest request
-        :return: ListCertificateAuthorityResponse
-        """
-
         all_params = ['limit', 'name', 'offset', 'status', 'type', 'sort_key', 'sort_dir']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1394,26 +1341,22 @@ class CcmClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def restore_certificate_authority(self, request):
         """恢复CA
 
-        恢复CA，将处于“计划删除”状态的CA证书，重新恢复为“已禁用”状态。 > 注：只有处于“计划删除”状态的CA证书，才可进行恢复操作。
+        恢复CA，将处于“计划删除”状态的CA证书，重新恢复为“已禁用”状态。
+        &gt; 注：只有处于“计划删除”状态的CA证书，才可进行恢复操作。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param RestoreCertificateAuthorityRequest request
-        :return: RestoreCertificateAuthorityResponse
+        :param request: Request instance for RestoreCertificateAuthority
+        :type request: :class:`huaweicloudsdkccm.v1.RestoreCertificateAuthorityRequest`
+        :rtype: :class:`huaweicloudsdkccm.v1.RestoreCertificateAuthorityResponse`
         """
         return self.restore_certificate_authority_with_http_info(request)
 
     def restore_certificate_authority_with_http_info(self, request):
-        """恢复CA
-
-        恢复CA，将处于“计划删除”状态的CA证书，重新恢复为“已禁用”状态。 > 注：只有处于“计划删除”状态的CA证书，才可进行恢复操作。
-
-        :param RestoreCertificateAuthorityRequest request
-        :return: RestoreCertificateAuthorityResponse
-        """
-
         all_params = ['ca_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1457,26 +1400,21 @@ class CcmClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_certificate_authority(self, request):
         """查询CA详情
 
         查询CA详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowCertificateAuthorityRequest request
-        :return: ShowCertificateAuthorityResponse
+        :param request: Request instance for ShowCertificateAuthority
+        :type request: :class:`huaweicloudsdkccm.v1.ShowCertificateAuthorityRequest`
+        :rtype: :class:`huaweicloudsdkccm.v1.ShowCertificateAuthorityResponse`
         """
         return self.show_certificate_authority_with_http_info(request)
 
     def show_certificate_authority_with_http_info(self, request):
-        """查询CA详情
-
-        查询CA详情。
-
-        :param ShowCertificateAuthorityRequest request
-        :return: ShowCertificateAuthorityResponse
-        """
-
         all_params = ['ca_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1520,26 +1458,21 @@ class CcmClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_certificate_authority_quota(self, request):
         """查询CA配额
 
         查询CA证书配额。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowCertificateAuthorityQuotaRequest request
-        :return: ShowCertificateAuthorityQuotaResponse
+        :param request: Request instance for ShowCertificateAuthorityQuota
+        :type request: :class:`huaweicloudsdkccm.v1.ShowCertificateAuthorityQuotaRequest`
+        :rtype: :class:`huaweicloudsdkccm.v1.ShowCertificateAuthorityQuotaResponse`
         """
         return self.show_certificate_authority_quota_with_http_info(request)
 
     def show_certificate_authority_quota_with_http_info(self, request):
-        """查询CA配额
-
-        查询CA证书配额。
-
-        :param ShowCertificateAuthorityQuotaRequest request
-        :return: ShowCertificateAuthorityQuotaResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1580,7 +1513,6 @@ class CcmClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

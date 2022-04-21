@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestorePtrRecordRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class RestorePtrRecordRequest:
     }
 
     def __init__(self, region=None, floatingip_id=None, body=None):
-        """RestorePtrRecordRequest - a model defined in huaweicloud sdk"""
+        """RestorePtrRecordRequest
+
+        The model defined in huaweicloud sdk
+
+        :param region: 
+        :type region: str
+        :param floatingip_id: 
+        :type floatingip_id: str
+        :param body: Body of the RestorePtrRecordRequest
+        :type body: :class:`huaweicloudsdkdns.v2.RestorePtrReq`
+        """
         
         
 
@@ -64,7 +73,7 @@ class RestorePtrRecordRequest:
 
 
         :param region: The region of this RestorePtrRecordRequest.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -84,7 +93,7 @@ class RestorePtrRecordRequest:
 
 
         :param floatingip_id: The floatingip_id of this RestorePtrRecordRequest.
-        :type: str
+        :type floatingip_id: str
         """
         self._floatingip_id = floatingip_id
 
@@ -94,7 +103,7 @@ class RestorePtrRecordRequest:
 
 
         :return: The body of this RestorePtrRecordRequest.
-        :rtype: RestorePtrReq
+        :rtype: :class:`huaweicloudsdkdns.v2.RestorePtrReq`
         """
         return self._body
 
@@ -104,7 +113,7 @@ class RestorePtrRecordRequest:
 
 
         :param body: The body of this RestorePtrRecordRequest.
-        :type: RestorePtrReq
+        :type body: :class:`huaweicloudsdkdns.v2.RestorePtrReq`
         """
         self._body = body
 

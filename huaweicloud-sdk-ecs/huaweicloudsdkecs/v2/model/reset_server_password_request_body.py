@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResetServerPasswordRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ResetServerPasswordRequestBody:
     }
 
     def __init__(self, reset_password=None):
-        """ResetServerPasswordRequestBody - a model defined in huaweicloud sdk"""
+        """ResetServerPasswordRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param reset_password: 
+        :type reset_password: :class:`huaweicloudsdkecs.v2.ResetServerPasswordOption`
+        """
         
         
 
@@ -45,7 +50,7 @@ class ResetServerPasswordRequestBody:
 
 
         :return: The reset_password of this ResetServerPasswordRequestBody.
-        :rtype: ResetServerPasswordOption
+        :rtype: :class:`huaweicloudsdkecs.v2.ResetServerPasswordOption`
         """
         return self._reset_password
 
@@ -55,7 +60,7 @@ class ResetServerPasswordRequestBody:
 
 
         :param reset_password: The reset_password of this ResetServerPasswordRequestBody.
-        :type: ResetServerPasswordOption
+        :type reset_password: :class:`huaweicloudsdkecs.v2.ResetServerPasswordOption`
         """
         self._reset_password = reset_password
 

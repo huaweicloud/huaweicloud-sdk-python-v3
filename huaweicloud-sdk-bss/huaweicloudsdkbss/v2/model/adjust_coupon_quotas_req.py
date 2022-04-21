@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AdjustCouponQuotasReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class AdjustCouponQuotasReq:
     }
 
     def __init__(self, quota_id=None, indirect_partner_ids=None, quota_amount=None):
-        """AdjustCouponQuotasReq - a model defined in huaweicloud sdk"""
+        """AdjustCouponQuotasReq
+
+        The model defined in huaweicloud sdk
+
+        :param quota_id: 华为云伙伴能力中心发放的代金券额度的ID。获取方法请参见查询优惠券额度。
+        :type quota_id: str
+        :param indirect_partner_ids: 精英服务商ID列表。
+        :type indirect_partner_ids: list[str]
+        :param quota_amount: 华为云伙伴能力中心向精英服务商发放的代金券额度值。 单位：元。取值大于0且精确到小数点后2位。
+        :type quota_amount: float
+        """
         
         
 
@@ -65,7 +74,7 @@ class AdjustCouponQuotasReq:
         华为云伙伴能力中心发放的代金券额度的ID。获取方法请参见查询优惠券额度。
 
         :param quota_id: The quota_id of this AdjustCouponQuotasReq.
-        :type: str
+        :type quota_id: str
         """
         self._quota_id = quota_id
 
@@ -87,7 +96,7 @@ class AdjustCouponQuotasReq:
         精英服务商ID列表。
 
         :param indirect_partner_ids: The indirect_partner_ids of this AdjustCouponQuotasReq.
-        :type: list[str]
+        :type indirect_partner_ids: list[str]
         """
         self._indirect_partner_ids = indirect_partner_ids
 
@@ -109,7 +118,7 @@ class AdjustCouponQuotasReq:
         华为云伙伴能力中心向精英服务商发放的代金券额度值。 单位：元。取值大于0且精确到小数点后2位。
 
         :param quota_amount: The quota_amount of this AdjustCouponQuotasReq.
-        :type: float
+        :type quota_amount: float
         """
         self._quota_amount = quota_amount
 

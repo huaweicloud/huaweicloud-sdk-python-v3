@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CloudConnection:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class CloudConnection:
     }
 
     def __init__(self, id=None, name=None, description=None, domain_id=None, enterprise_project_id=None, status=None, admin_state_up=None, created_at=None, updated_at=None, used_scene=None, network_instance_number=None, bandwidth_package_number=None, inter_region_bandwidth_number=None):
-        """CloudConnection - a model defined in huaweicloud sdk"""
+        """CloudConnection
+
+        The model defined in huaweicloud sdk
+
+        :param id: 云连接实例的ID。
+        :type id: str
+        :param name: 云连接实例的名字。
+        :type name: str
+        :param description: 云连接实例的描述。
+        :type description: str
+        :param domain_id: 帐号ID。
+        :type domain_id: str
+        :param enterprise_project_id: 云连接实例的企业项目ID。
+        :type enterprise_project_id: str
+        :param status: 云连接实例的状态。ACTIVE：表示状态可用。
+        :type status: str
+        :param admin_state_up: 云连接实例的管理状态。
+        :type admin_state_up: bool
+        :param created_at: 云连接实例的创建时间。
+        :type created_at: datetime
+        :param updated_at: 云连接实例的更新时间。
+        :type updated_at: datetime
+        :param used_scene: 云连接使用场景。|- VPC：虚拟私有云。 ER：虚拟路由器。
+        :type used_scene: str
+        :param network_instance_number: 云连接实例关联网络实例的个数。
+        :type network_instance_number: int
+        :param bandwidth_package_number: 云连接实例关联带宽包的个数。
+        :type bandwidth_package_number: int
+        :param inter_region_bandwidth_number: 云连接实例关联域间带宽的个数。
+        :type inter_region_bandwidth_number: int
+        """
         
         
 
@@ -118,7 +147,7 @@ class CloudConnection:
         云连接实例的ID。
 
         :param id: The id of this CloudConnection.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -140,7 +169,7 @@ class CloudConnection:
         云连接实例的名字。
 
         :param name: The name of this CloudConnection.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -162,7 +191,7 @@ class CloudConnection:
         云连接实例的描述。
 
         :param description: The description of this CloudConnection.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -184,7 +213,7 @@ class CloudConnection:
         帐号ID。
 
         :param domain_id: The domain_id of this CloudConnection.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -206,7 +235,7 @@ class CloudConnection:
         云连接实例的企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this CloudConnection.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -228,7 +257,7 @@ class CloudConnection:
         云连接实例的状态。ACTIVE：表示状态可用。
 
         :param status: The status of this CloudConnection.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -250,7 +279,7 @@ class CloudConnection:
         云连接实例的管理状态。
 
         :param admin_state_up: The admin_state_up of this CloudConnection.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 
@@ -272,7 +301,7 @@ class CloudConnection:
         云连接实例的创建时间。
 
         :param created_at: The created_at of this CloudConnection.
-        :type: datetime
+        :type created_at: datetime
         """
         self._created_at = created_at
 
@@ -294,7 +323,7 @@ class CloudConnection:
         云连接实例的更新时间。
 
         :param updated_at: The updated_at of this CloudConnection.
-        :type: datetime
+        :type updated_at: datetime
         """
         self._updated_at = updated_at
 
@@ -316,7 +345,7 @@ class CloudConnection:
         云连接使用场景。|- VPC：虚拟私有云。 ER：虚拟路由器。
 
         :param used_scene: The used_scene of this CloudConnection.
-        :type: str
+        :type used_scene: str
         """
         self._used_scene = used_scene
 
@@ -338,7 +367,7 @@ class CloudConnection:
         云连接实例关联网络实例的个数。
 
         :param network_instance_number: The network_instance_number of this CloudConnection.
-        :type: int
+        :type network_instance_number: int
         """
         self._network_instance_number = network_instance_number
 
@@ -360,7 +389,7 @@ class CloudConnection:
         云连接实例关联带宽包的个数。
 
         :param bandwidth_package_number: The bandwidth_package_number of this CloudConnection.
-        :type: int
+        :type bandwidth_package_number: int
         """
         self._bandwidth_package_number = bandwidth_package_number
 
@@ -382,7 +411,7 @@ class CloudConnection:
         云连接实例关联域间带宽的个数。
 
         :param inter_region_bandwidth_number: The inter_region_bandwidth_number of this CloudConnection.
-        :type: int
+        :type inter_region_bandwidth_number: int
         """
         self._inter_region_bandwidth_number = inter_region_bandwidth_number
 

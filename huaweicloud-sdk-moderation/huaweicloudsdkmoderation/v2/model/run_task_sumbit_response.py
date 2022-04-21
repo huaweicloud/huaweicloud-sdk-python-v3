@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunTaskSumbitResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RunTaskSumbitResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """RunTaskSumbitResponse - a model defined in huaweicloud sdk"""
+        """RunTaskSumbitResponse
+
+        The model defined in huaweicloud sdk
+
+        :param result: 
+        :type result: :class:`huaweicloudsdkmoderation.v2.TaskSumbitResponseResult`
+        """
         
         super(RunTaskSumbitResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class RunTaskSumbitResponse(SdkResponse):
 
 
         :return: The result of this RunTaskSumbitResponse.
-        :rtype: TaskSumbitResponseResult
+        :rtype: :class:`huaweicloudsdkmoderation.v2.TaskSumbitResponseResult`
         """
         return self._result
 
@@ -56,7 +61,7 @@ class RunTaskSumbitResponse(SdkResponse):
 
 
         :param result: The result of this RunTaskSumbitResponse.
-        :type: TaskSumbitResponseResult
+        :type result: :class:`huaweicloudsdkmoderation.v2.TaskSumbitResponseResult`
         """
         self._result = result
 

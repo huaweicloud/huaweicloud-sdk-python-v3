@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Privateip:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class Privateip:
     }
 
     def __init__(self, status=None, id=None, subnet_id=None, tenant_id=None, device_owner=None, ip_address=None):
-        """Privateip - a model defined in huaweicloud sdk"""
+        """Privateip
+
+        The model defined in huaweicloud sdk
+
+        :param status: 私有IP的状态  - ACTIVE：活动的  - DOWN：不可用
+        :type status: str
+        :param id: 私有IP ID
+        :type id: str
+        :param subnet_id: 分配IP的子网标识
+        :type subnet_id: str
+        :param tenant_id: 项目ID
+        :type tenant_id: str
+        :param device_owner: 私有IP的使用者，空表示未使用 取值范围：network:dhcp，network:router_interface_distributed，compute:xxx(xxx对应具体的az名称，例如compute:aa-bb-cc表示是被aa-bb-cc上的虚拟机使用) 约束：此处的取值范围只是本服务支持的类型，其他类型未做标注
+        :type device_owner: str
+        :param ip_address: 申请到的私有IP
+        :type ip_address: str
+        """
         
         
 
@@ -77,7 +92,7 @@ class Privateip:
         私有IP的状态  - ACTIVE：活动的  - DOWN：不可用
 
         :param status: The status of this Privateip.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -99,7 +114,7 @@ class Privateip:
         私有IP ID
 
         :param id: The id of this Privateip.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -121,7 +136,7 @@ class Privateip:
         分配IP的子网标识
 
         :param subnet_id: The subnet_id of this Privateip.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -143,7 +158,7 @@ class Privateip:
         项目ID
 
         :param tenant_id: The tenant_id of this Privateip.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 
@@ -165,7 +180,7 @@ class Privateip:
         私有IP的使用者，空表示未使用 取值范围：network:dhcp，network:router_interface_distributed，compute:xxx(xxx对应具体的az名称，例如compute:aa-bb-cc表示是被aa-bb-cc上的虚拟机使用) 约束：此处的取值范围只是本服务支持的类型，其他类型未做标注
 
         :param device_owner: The device_owner of this Privateip.
-        :type: str
+        :type device_owner: str
         """
         self._device_owner = device_owner
 
@@ -187,7 +202,7 @@ class Privateip:
         申请到的私有IP
 
         :param ip_address: The ip_address of this Privateip.
-        :type: str
+        :type ip_address: str
         """
         self._ip_address = ip_address
 

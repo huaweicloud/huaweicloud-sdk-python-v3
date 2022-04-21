@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ChangeFailoverStrategyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class ChangeFailoverStrategyResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ChangeFailoverStrategyResponse - a model defined in huaweicloud sdk"""
+        """ChangeFailoverStrategyResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(ChangeFailoverStrategyResponse, self).__init__()
         self.discriminator = None

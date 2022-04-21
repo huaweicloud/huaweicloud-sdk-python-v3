@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Operations:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class Operations:
     }
 
     def __init__(self, service_type=None, resource_type=None, trace_names=None):
-        """Operations - a model defined in huaweicloud sdk"""
+        """Operations
+
+        The model defined in huaweicloud sdk
+
+        :param service_type: 标识云服务类型。必须为已对接CTS的云服务的英文缩写，且服务类型一般为大写字母。 已对接的云服务列表参见《云审计服务用户指南》“支持的服务”章节。
+        :type service_type: str
+        :param resource_type: 标识资源类型。
+        :type resource_type: str
+        :param trace_names: 标识事件名称。
+        :type trace_names: list[str]
+        """
         
         
 
@@ -65,7 +74,7 @@ class Operations:
         标识云服务类型。必须为已对接CTS的云服务的英文缩写，且服务类型一般为大写字母。 已对接的云服务列表参见《云审计服务用户指南》“支持的服务”章节。
 
         :param service_type: The service_type of this Operations.
-        :type: str
+        :type service_type: str
         """
         self._service_type = service_type
 
@@ -87,7 +96,7 @@ class Operations:
         标识资源类型。
 
         :param resource_type: The resource_type of this Operations.
-        :type: str
+        :type resource_type: str
         """
         self._resource_type = resource_type
 
@@ -109,7 +118,7 @@ class Operations:
         标识事件名称。
 
         :param trace_names: The trace_names of this Operations.
-        :type: list[str]
+        :type trace_names: list[str]
         """
         self._trace_names = trace_names
 

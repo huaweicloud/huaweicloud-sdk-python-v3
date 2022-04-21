@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GetIdTokenIdScopeBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class GetIdTokenIdScopeBody:
     }
 
     def __init__(self, domain=None, project=None):
-        """GetIdTokenIdScopeBody - a model defined in huaweicloud sdk"""
+        """GetIdTokenIdScopeBody
+
+        The model defined in huaweicloud sdk
+
+        :param domain: 
+        :type domain: :class:`huaweicloudsdkiam.v3.GetIdTokenScopeDomainOrProjectBody`
+        :param project: 
+        :type project: :class:`huaweicloudsdkiam.v3.GetIdTokenScopeDomainOrProjectBody`
+        """
         
         
 
@@ -51,7 +58,7 @@ class GetIdTokenIdScopeBody:
 
 
         :return: The domain of this GetIdTokenIdScopeBody.
-        :rtype: GetIdTokenScopeDomainOrProjectBody
+        :rtype: :class:`huaweicloudsdkiam.v3.GetIdTokenScopeDomainOrProjectBody`
         """
         return self._domain
 
@@ -61,7 +68,7 @@ class GetIdTokenIdScopeBody:
 
 
         :param domain: The domain of this GetIdTokenIdScopeBody.
-        :type: GetIdTokenScopeDomainOrProjectBody
+        :type domain: :class:`huaweicloudsdkiam.v3.GetIdTokenScopeDomainOrProjectBody`
         """
         self._domain = domain
 
@@ -71,7 +78,7 @@ class GetIdTokenIdScopeBody:
 
 
         :return: The project of this GetIdTokenIdScopeBody.
-        :rtype: GetIdTokenScopeDomainOrProjectBody
+        :rtype: :class:`huaweicloudsdkiam.v3.GetIdTokenScopeDomainOrProjectBody`
         """
         return self._project
 
@@ -81,7 +88,7 @@ class GetIdTokenIdScopeBody:
 
 
         :param project: The project of this GetIdTokenIdScopeBody.
-        :type: GetIdTokenScopeDomainOrProjectBody
+        :type project: :class:`huaweicloudsdkiam.v3.GetIdTokenScopeDomainOrProjectBody`
         """
         self._project = project
 

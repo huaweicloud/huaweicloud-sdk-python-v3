@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListActiveOrHistoryAlarmsRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ListActiveOrHistoryAlarmsRequestBody:
     }
 
     def __init__(self, step=None, whether_custom_field=None, start_time=None, end_time=None, time_range=None, search=None, alarm_level_ids=None, sort=None):
-        """ListActiveOrHistoryAlarmsRequestBody - a model defined in huaweicloud sdk"""
+        """ListActiveOrHistoryAlarmsRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param step: 关键字检索条件
+        :type step: int
+        :param whether_custom_field: 是否自定义查询时间段
+        :type whether_custom_field: bool
+        :param start_time: 自定义时间段开始时间(时间戳)
+        :type start_time: int
+        :param end_time: 自定义时间段结束时间(时间戳)
+        :type end_time: int
+        :param time_range: 非自定义时间段时间范围(单位为分钟)
+        :type time_range: str
+        :param search: 关键字检索条件
+        :type search: str
+        :param alarm_level_ids: 告警级别(\&quot;Critical\&quot;,\&quot;Major\&quot;,\&quot;Minor\&quot;,\&quot;Info\&quot;)
+        :type alarm_level_ids: list[str]
+        :param sort: 
+        :type sort: :class:`huaweicloudsdklts.v2.Sort`
+        """
         
         
 
@@ -92,7 +111,7 @@ class ListActiveOrHistoryAlarmsRequestBody:
         关键字检索条件
 
         :param step: The step of this ListActiveOrHistoryAlarmsRequestBody.
-        :type: int
+        :type step: int
         """
         self._step = step
 
@@ -114,7 +133,7 @@ class ListActiveOrHistoryAlarmsRequestBody:
         是否自定义查询时间段
 
         :param whether_custom_field: The whether_custom_field of this ListActiveOrHistoryAlarmsRequestBody.
-        :type: bool
+        :type whether_custom_field: bool
         """
         self._whether_custom_field = whether_custom_field
 
@@ -136,7 +155,7 @@ class ListActiveOrHistoryAlarmsRequestBody:
         自定义时间段开始时间(时间戳)
 
         :param start_time: The start_time of this ListActiveOrHistoryAlarmsRequestBody.
-        :type: int
+        :type start_time: int
         """
         self._start_time = start_time
 
@@ -158,7 +177,7 @@ class ListActiveOrHistoryAlarmsRequestBody:
         自定义时间段结束时间(时间戳)
 
         :param end_time: The end_time of this ListActiveOrHistoryAlarmsRequestBody.
-        :type: int
+        :type end_time: int
         """
         self._end_time = end_time
 
@@ -180,7 +199,7 @@ class ListActiveOrHistoryAlarmsRequestBody:
         非自定义时间段时间范围(单位为分钟)
 
         :param time_range: The time_range of this ListActiveOrHistoryAlarmsRequestBody.
-        :type: str
+        :type time_range: str
         """
         self._time_range = time_range
 
@@ -202,7 +221,7 @@ class ListActiveOrHistoryAlarmsRequestBody:
         关键字检索条件
 
         :param search: The search of this ListActiveOrHistoryAlarmsRequestBody.
-        :type: str
+        :type search: str
         """
         self._search = search
 
@@ -224,7 +243,7 @@ class ListActiveOrHistoryAlarmsRequestBody:
         告警级别(\"Critical\",\"Major\",\"Minor\",\"Info\")
 
         :param alarm_level_ids: The alarm_level_ids of this ListActiveOrHistoryAlarmsRequestBody.
-        :type: list[str]
+        :type alarm_level_ids: list[str]
         """
         self._alarm_level_ids = alarm_level_ids
 
@@ -234,7 +253,7 @@ class ListActiveOrHistoryAlarmsRequestBody:
 
 
         :return: The sort of this ListActiveOrHistoryAlarmsRequestBody.
-        :rtype: Sort
+        :rtype: :class:`huaweicloudsdklts.v2.Sort`
         """
         return self._sort
 
@@ -244,7 +263,7 @@ class ListActiveOrHistoryAlarmsRequestBody:
 
 
         :param sort: The sort of this ListActiveOrHistoryAlarmsRequestBody.
-        :type: Sort
+        :type sort: :class:`huaweicloudsdklts.v2.Sort`
         """
         self._sort = sort
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowFacesByFaceIdResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowFacesByFaceIdResponse(SdkResponse):
     }
 
     def __init__(self, face_set_id=None, face_set_name=None, faces=None):
-        """ShowFacesByFaceIdResponse - a model defined in huaweicloud sdk"""
+        """ShowFacesByFaceIdResponse
+
+        The model defined in huaweicloud sdk
+
+        :param face_set_id: 人脸库ID，随机生成的包含八个字符的字符串。 调用失败时无此字段。
+        :type face_set_id: str
+        :param face_set_name: 人脸库名称。 调用失败时无此字段。
+        :type face_set_name: str
+        :param faces: 人脸库当中的人脸结构，详见[FaceSetFace](https://support.huaweicloud.com/api-face/face_02_0018.html)。 调用失败时无此字段。
+        :type faces: list[:class:`huaweicloudsdkfrs.v2.FaceSetFace`]
+        """
         
         super(ShowFacesByFaceIdResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ShowFacesByFaceIdResponse(SdkResponse):
         人脸库ID，随机生成的包含八个字符的字符串。 调用失败时无此字段。
 
         :param face_set_id: The face_set_id of this ShowFacesByFaceIdResponse.
-        :type: str
+        :type face_set_id: str
         """
         self._face_set_id = face_set_id
 
@@ -90,7 +99,7 @@ class ShowFacesByFaceIdResponse(SdkResponse):
         人脸库名称。 调用失败时无此字段。
 
         :param face_set_name: The face_set_name of this ShowFacesByFaceIdResponse.
-        :type: str
+        :type face_set_name: str
         """
         self._face_set_name = face_set_name
 
@@ -101,7 +110,7 @@ class ShowFacesByFaceIdResponse(SdkResponse):
         人脸库当中的人脸结构，详见[FaceSetFace](https://support.huaweicloud.com/api-face/face_02_0018.html)。 调用失败时无此字段。
 
         :return: The faces of this ShowFacesByFaceIdResponse.
-        :rtype: list[FaceSetFace]
+        :rtype: list[:class:`huaweicloudsdkfrs.v2.FaceSetFace`]
         """
         return self._faces
 
@@ -112,7 +121,7 @@ class ShowFacesByFaceIdResponse(SdkResponse):
         人脸库当中的人脸结构，详见[FaceSetFace](https://support.huaweicloud.com/api-face/face_02_0018.html)。 调用失败时无此字段。
 
         :param faces: The faces of this ShowFacesByFaceIdResponse.
-        :type: list[FaceSetFace]
+        :type faces: list[:class:`huaweicloudsdkfrs.v2.FaceSetFace`]
         """
         self._faces = faces
 

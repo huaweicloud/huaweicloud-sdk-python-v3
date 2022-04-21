@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListDedicatedResourcesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListDedicatedResourcesRequest:
     }
 
     def __init__(self, offset=None, limit=None):
-        """ListDedicatedResourcesRequest - a model defined in huaweicloud sdk"""
+        """ListDedicatedResourcesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param offset: 索引位置偏移量。   - 索引位置偏移量，表示从指定project ID下最新的专属资源创建时间开始，按时间的先后顺序偏移offset条数据后查询对应的专属资源信息。   - 取值大于或等于0。   - 不传该参数时，查询偏移量默认为0，表示从最新的创建时间对应的专属资源开始查询。
+        :type offset: int
+        :param limit: 查询专属资源个数上限值。   - 取值范围：1~100。不传该参数时，默认查询前100条实例信息。
+        :type limit: int
+        """
         
         
 
@@ -63,7 +70,7 @@ class ListDedicatedResourcesRequest:
         索引位置偏移量。   - 索引位置偏移量，表示从指定project ID下最新的专属资源创建时间开始，按时间的先后顺序偏移offset条数据后查询对应的专属资源信息。   - 取值大于或等于0。   - 不传该参数时，查询偏移量默认为0，表示从最新的创建时间对应的专属资源开始查询。
 
         :param offset: The offset of this ListDedicatedResourcesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -85,7 +92,7 @@ class ListDedicatedResourcesRequest:
         查询专属资源个数上限值。   - 取值范围：1~100。不传该参数时，默认查询前100条实例信息。
 
         :param limit: The limit of this ListDedicatedResourcesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

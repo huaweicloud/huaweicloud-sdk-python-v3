@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ClusterLogRecord:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class ClusterLogRecord:
     }
 
     def __init__(self, id=None, cluster_id=None, create_at=None, log_path=None, status=None, finished_at=None, job_types=None, failed_msg=None, job_id=None):
-        """ClusterLogRecord - a model defined in huaweicloud sdk"""
+        """ClusterLogRecord
+
+        The model defined in huaweicloud sdk
+
+        :param id: 日志任务ID，通过系统uuid生成。
+        :type id: str
+        :param cluster_id: 集群ID。
+        :type cluster_id: str
+        :param create_at: 创建时间。
+        :type create_at: str
+        :param log_path: 备份路径。
+        :type log_path: str
+        :param status: 任务状态。
+        :type status: str
+        :param finished_at: 结束时间。
+        :type finished_at: int
+        :param job_types: 任务类型。
+        :type job_types: str
+        :param failed_msg: 错误信息。
+        :type failed_msg: str
+        :param job_id: 任务ID。
+        :type job_id: str
+        """
         
         
 
@@ -98,7 +119,7 @@ class ClusterLogRecord:
         日志任务ID，通过系统uuid生成。
 
         :param id: The id of this ClusterLogRecord.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -120,7 +141,7 @@ class ClusterLogRecord:
         集群ID。
 
         :param cluster_id: The cluster_id of this ClusterLogRecord.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -142,7 +163,7 @@ class ClusterLogRecord:
         创建时间。
 
         :param create_at: The create_at of this ClusterLogRecord.
-        :type: str
+        :type create_at: str
         """
         self._create_at = create_at
 
@@ -164,7 +185,7 @@ class ClusterLogRecord:
         备份路径。
 
         :param log_path: The log_path of this ClusterLogRecord.
-        :type: str
+        :type log_path: str
         """
         self._log_path = log_path
 
@@ -186,7 +207,7 @@ class ClusterLogRecord:
         任务状态。
 
         :param status: The status of this ClusterLogRecord.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -208,7 +229,7 @@ class ClusterLogRecord:
         结束时间。
 
         :param finished_at: The finished_at of this ClusterLogRecord.
-        :type: int
+        :type finished_at: int
         """
         self._finished_at = finished_at
 
@@ -230,7 +251,7 @@ class ClusterLogRecord:
         任务类型。
 
         :param job_types: The job_types of this ClusterLogRecord.
-        :type: str
+        :type job_types: str
         """
         self._job_types = job_types
 
@@ -252,7 +273,7 @@ class ClusterLogRecord:
         错误信息。
 
         :param failed_msg: The failed_msg of this ClusterLogRecord.
-        :type: str
+        :type failed_msg: str
         """
         self._failed_msg = failed_msg
 
@@ -274,7 +295,7 @@ class ClusterLogRecord:
         任务ID。
 
         :param job_id: The job_id of this ClusterLogRecord.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 

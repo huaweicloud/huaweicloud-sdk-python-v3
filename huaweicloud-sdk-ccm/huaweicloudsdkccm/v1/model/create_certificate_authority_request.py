@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateCertificateAuthorityRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateCertificateAuthorityRequest:
     }
 
     def __init__(self, body=None):
-        """CreateCertificateAuthorityRequest - a model defined in huaweicloud sdk"""
+        """CreateCertificateAuthorityRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateCertificateAuthorityRequest
+        :type body: :class:`huaweicloudsdkccm.v1.CreateCertificateAuthorityRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateCertificateAuthorityRequest:
 
 
         :return: The body of this CreateCertificateAuthorityRequest.
-        :rtype: CreateCertificateAuthorityRequestBody
+        :rtype: :class:`huaweicloudsdkccm.v1.CreateCertificateAuthorityRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateCertificateAuthorityRequest:
 
 
         :param body: The body of this CreateCertificateAuthorityRequest.
-        :type: CreateCertificateAuthorityRequestBody
+        :type body: :class:`huaweicloudsdkccm.v1.CreateCertificateAuthorityRequestBody`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchListMetricDataRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class BatchListMetricDataRequestBody:
     }
 
     def __init__(self, metrics=None, period=None, filter=None, _from=None, to=None):
-        """BatchListMetricDataRequestBody - a model defined in huaweicloud sdk"""
+        """BatchListMetricDataRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param metrics: 指标数据。数组长度最大500
+        :type metrics: list[:class:`huaweicloudsdkces.v1.MetricInfo`]
+        :param period: 指标监控数据的聚合粒度，取值范围：1，300，1200，3600，14400，86400；1为监控资源的实时数据；300为聚合5分钟粒度数据，表示5分钟一个数据点；1200为聚合20分钟粒度数据，表示20分钟一个数据点；3600为聚合1小时粒度数据，表示1小时一个数据点；14400为聚合4小时粒度数据，表示4小时一个数据点；86400为聚合1天粒度数据，表示1天一个数据点；聚合解释可查看：“[聚合含义](https://support.huaweicloud.com/ces_faq/ces_faq_0009.html)”。
+        :type period: str
+        :param filter: 数据聚合方式。  支持的值为max, min, average, sum, variance；max为最大值，min为最小值，average为平均值，sum为和，variance为方差值。
+        :type filter: str
+        :param _from: 查询数据起始时间，UNIX时间戳，单位毫秒。建议from的值相对于当前时间向前偏移至少1个周期。由于聚合运算的过程是将一个聚合周期范围内的数据点聚合到周期起始边界上，如果将from和to的范围设置在聚合周期内，会因为聚合未完成而造成查询数据为空，所以建议from参数相对于当前时间向前偏移至少1个周期。以5分钟聚合周期为例：假设当前时间点为10:35，10:30~10:35之间的原始数据会被聚合到10:30这个点上，所以查询5分钟数据点时from参数应为10:30或之前。 说明： 云监控会根据所选择的聚合粒度向前取整from参数；如：1607146998177
+        :type _from: int
+        :param to: 查询数据截止时间UNIX时间戳，单位毫秒。from必须小于to；如：1607150598177。
+        :type to: int
+        """
         
         
 
@@ -62,7 +75,7 @@ class BatchListMetricDataRequestBody:
         指标数据。数组长度最大500
 
         :return: The metrics of this BatchListMetricDataRequestBody.
-        :rtype: list[MetricInfo]
+        :rtype: list[:class:`huaweicloudsdkces.v1.MetricInfo`]
         """
         return self._metrics
 
@@ -73,7 +86,7 @@ class BatchListMetricDataRequestBody:
         指标数据。数组长度最大500
 
         :param metrics: The metrics of this BatchListMetricDataRequestBody.
-        :type: list[MetricInfo]
+        :type metrics: list[:class:`huaweicloudsdkces.v1.MetricInfo`]
         """
         self._metrics = metrics
 
@@ -95,7 +108,7 @@ class BatchListMetricDataRequestBody:
         指标监控数据的聚合粒度，取值范围：1，300，1200，3600，14400，86400；1为监控资源的实时数据；300为聚合5分钟粒度数据，表示5分钟一个数据点；1200为聚合20分钟粒度数据，表示20分钟一个数据点；3600为聚合1小时粒度数据，表示1小时一个数据点；14400为聚合4小时粒度数据，表示4小时一个数据点；86400为聚合1天粒度数据，表示1天一个数据点；聚合解释可查看：“[聚合含义](https://support.huaweicloud.com/ces_faq/ces_faq_0009.html)”。
 
         :param period: The period of this BatchListMetricDataRequestBody.
-        :type: str
+        :type period: str
         """
         self._period = period
 
@@ -117,7 +130,7 @@ class BatchListMetricDataRequestBody:
         数据聚合方式。  支持的值为max, min, average, sum, variance；max为最大值，min为最小值，average为平均值，sum为和，variance为方差值。
 
         :param filter: The filter of this BatchListMetricDataRequestBody.
-        :type: str
+        :type filter: str
         """
         self._filter = filter
 
@@ -139,7 +152,7 @@ class BatchListMetricDataRequestBody:
         查询数据起始时间，UNIX时间戳，单位毫秒。建议from的值相对于当前时间向前偏移至少1个周期。由于聚合运算的过程是将一个聚合周期范围内的数据点聚合到周期起始边界上，如果将from和to的范围设置在聚合周期内，会因为聚合未完成而造成查询数据为空，所以建议from参数相对于当前时间向前偏移至少1个周期。以5分钟聚合周期为例：假设当前时间点为10:35，10:30~10:35之间的原始数据会被聚合到10:30这个点上，所以查询5分钟数据点时from参数应为10:30或之前。 说明： 云监控会根据所选择的聚合粒度向前取整from参数；如：1607146998177
 
         :param _from: The _from of this BatchListMetricDataRequestBody.
-        :type: int
+        :type _from: int
         """
         self.__from = _from
 
@@ -161,7 +174,7 @@ class BatchListMetricDataRequestBody:
         查询数据截止时间UNIX时间戳，单位毫秒。from必须小于to；如：1607150598177。
 
         :param to: The to of this BatchListMetricDataRequestBody.
-        :type: int
+        :type to: int
         """
         self._to = to
 

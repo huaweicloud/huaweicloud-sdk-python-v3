@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class JobInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class JobInfo:
     }
 
     def __init__(self, id=None, name=None, status=None, description=None, create_time=None, engine_type=None, net_type=None, billing_tag=None, job_direction=None, db_use_type=None, task_type=None, children=None, node_new_framework=None):
-        """JobInfo - a model defined in huaweicloud sdk"""
+        """JobInfo
+
+        The model defined in huaweicloud sdk
+
+        :param id: 任务id
+        :type id: str
+        :param name: 任务名称
+        :type name: str
+        :param status: 任务状态
+        :type status: str
+        :param description: 任务描述
+        :type description: str
+        :param create_time: 任务创建时间
+        :type create_time: str
+        :param engine_type: 引擎类型
+        :type engine_type: str
+        :param net_type: 网络类型
+        :type net_type: str
+        :param billing_tag: 计费字段
+        :type billing_tag: bool
+        :param job_direction: 迁移方向
+        :type job_direction: str
+        :param db_use_type: 迁移场景
+        :type db_use_type: str
+        :param task_type: 迁移模式
+        :type task_type: str
+        :param children: 子任务信息体
+        :type children: list[:class:`huaweicloudsdkdrs.v3.ChildrenJobInfo`]
+        :param node_new_framework: 是否新框架
+        :type node_new_framework: bool
+        """
         
         
 
@@ -106,7 +135,7 @@ class JobInfo:
         任务id
 
         :param id: The id of this JobInfo.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -128,7 +157,7 @@ class JobInfo:
         任务名称
 
         :param name: The name of this JobInfo.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -150,7 +179,7 @@ class JobInfo:
         任务状态
 
         :param status: The status of this JobInfo.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -172,7 +201,7 @@ class JobInfo:
         任务描述
 
         :param description: The description of this JobInfo.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -194,7 +223,7 @@ class JobInfo:
         任务创建时间
 
         :param create_time: The create_time of this JobInfo.
-        :type: str
+        :type create_time: str
         """
         self._create_time = create_time
 
@@ -216,7 +245,7 @@ class JobInfo:
         引擎类型
 
         :param engine_type: The engine_type of this JobInfo.
-        :type: str
+        :type engine_type: str
         """
         self._engine_type = engine_type
 
@@ -238,7 +267,7 @@ class JobInfo:
         网络类型
 
         :param net_type: The net_type of this JobInfo.
-        :type: str
+        :type net_type: str
         """
         self._net_type = net_type
 
@@ -260,7 +289,7 @@ class JobInfo:
         计费字段
 
         :param billing_tag: The billing_tag of this JobInfo.
-        :type: bool
+        :type billing_tag: bool
         """
         self._billing_tag = billing_tag
 
@@ -282,7 +311,7 @@ class JobInfo:
         迁移方向
 
         :param job_direction: The job_direction of this JobInfo.
-        :type: str
+        :type job_direction: str
         """
         self._job_direction = job_direction
 
@@ -304,7 +333,7 @@ class JobInfo:
         迁移场景
 
         :param db_use_type: The db_use_type of this JobInfo.
-        :type: str
+        :type db_use_type: str
         """
         self._db_use_type = db_use_type
 
@@ -326,7 +355,7 @@ class JobInfo:
         迁移模式
 
         :param task_type: The task_type of this JobInfo.
-        :type: str
+        :type task_type: str
         """
         self._task_type = task_type
 
@@ -337,7 +366,7 @@ class JobInfo:
         子任务信息体
 
         :return: The children of this JobInfo.
-        :rtype: list[ChildrenJobInfo]
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.ChildrenJobInfo`]
         """
         return self._children
 
@@ -348,7 +377,7 @@ class JobInfo:
         子任务信息体
 
         :param children: The children of this JobInfo.
-        :type: list[ChildrenJobInfo]
+        :type children: list[:class:`huaweicloudsdkdrs.v3.ChildrenJobInfo`]
         """
         self._children = children
 
@@ -370,7 +399,7 @@ class JobInfo:
         是否新框架
 
         :param node_new_framework: The node_new_framework of this JobInfo.
-        :type: bool
+        :type node_new_framework: bool
         """
         self._node_new_framework = node_new_framework
 

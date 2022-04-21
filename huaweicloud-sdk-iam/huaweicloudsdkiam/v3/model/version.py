@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Version:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class Version:
     }
 
     def __init__(self, status=None, updated=None, links=None, id=None, media_types=None):
-        """Version - a model defined in huaweicloud sdk"""
+        """Version
+
+        The model defined in huaweicloud sdk
+
+        :param status: 版本状态。
+        :type status: str
+        :param updated: 最后更新时间。
+        :type updated: str
+        :param links: 版本的资源链接信息。
+        :type links: list[:class:`huaweicloudsdkiam.v3.VersionLinks`]
+        :param id: 版本号，如v3.6。
+        :type id: str
+        :param media_types: 支持的消息格式。
+        :type media_types: list[:class:`huaweicloudsdkiam.v3.VersionMediatypes`]
+        """
         
         
 
@@ -73,7 +86,7 @@ class Version:
         版本状态。
 
         :param status: The status of this Version.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -95,7 +108,7 @@ class Version:
         最后更新时间。
 
         :param updated: The updated of this Version.
-        :type: str
+        :type updated: str
         """
         self._updated = updated
 
@@ -106,7 +119,7 @@ class Version:
         版本的资源链接信息。
 
         :return: The links of this Version.
-        :rtype: list[VersionLinks]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.VersionLinks`]
         """
         return self._links
 
@@ -117,7 +130,7 @@ class Version:
         版本的资源链接信息。
 
         :param links: The links of this Version.
-        :type: list[VersionLinks]
+        :type links: list[:class:`huaweicloudsdkiam.v3.VersionLinks`]
         """
         self._links = links
 
@@ -139,7 +152,7 @@ class Version:
         版本号，如v3.6。
 
         :param id: The id of this Version.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -150,7 +163,7 @@ class Version:
         支持的消息格式。
 
         :return: The media_types of this Version.
-        :rtype: list[VersionMediatypes]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.VersionMediatypes`]
         """
         return self._media_types
 
@@ -161,7 +174,7 @@ class Version:
         支持的消息格式。
 
         :param media_types: The media_types of this Version.
-        :type: list[VersionMediatypes]
+        :type media_types: list[:class:`huaweicloudsdkiam.v3.VersionMediatypes`]
         """
         self._media_types = media_types
 

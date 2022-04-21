@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestoreTableInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RestoreTableInfo:
     }
 
     def __init__(self, old_name=None, new_name=None):
-        """RestoreTableInfo - a model defined in huaweicloud sdk"""
+        """RestoreTableInfo
+
+        The model defined in huaweicloud sdk
+
+        :param old_name: 旧表名
+        :type old_name: str
+        :param new_name: 新表名
+        :type new_name: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class RestoreTableInfo:
         旧表名
 
         :param old_name: The old_name of this RestoreTableInfo.
-        :type: str
+        :type old_name: str
         """
         self._old_name = old_name
 
@@ -83,7 +90,7 @@ class RestoreTableInfo:
         新表名
 
         :param new_name: The new_name of this RestoreTableInfo.
-        :type: str
+        :type new_name: str
         """
         self._new_name = new_name
 

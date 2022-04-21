@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResourceDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ResourceDTO:
     }
 
     def __init__(self, resource_id=None):
-        """ResourceDTO - a model defined in huaweicloud sdk"""
+        """ResourceDTO
+
+        The model defined in huaweicloud sdk
+
+        :param resource_id: 资源id。例如，要查询的资源类型为device，那么对应的资源id就是device_id。
+        :type resource_id: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class ResourceDTO:
         资源id。例如，要查询的资源类型为device，那么对应的资源id就是device_id。
 
         :param resource_id: The resource_id of this ResourceDTO.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MetaData:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class MetaData:
     }
 
     def __init__(self, size=None, duration_ms=None, duration=None, format=None, bitrate=None, video=None, audio=None):
-        """MetaData - a model defined in huaweicloud sdk"""
+        """MetaData
+
+        The model defined in huaweicloud sdk
+
+        :param size: 文件大小。 
+        :type size: int
+        :param duration_ms: 视频时长，带小数位显示。单位：秒。 
+        :type duration_ms: float
+        :param duration: 视频时长。单位：秒。 
+        :type duration: int
+        :param format: 文件封装格式。 
+        :type format: str
+        :param bitrate: 总码率。单位：bit/秒 
+        :type bitrate: int
+        :param video: 视频流元数据。 
+        :type video: list[:class:`huaweicloudsdkmpc.v1.VideoInfo`]
+        :param audio: 音频流元数据。 
+        :type audio: list[:class:`huaweicloudsdkmpc.v1.AudioInfo`]
+        """
         
         
 
@@ -88,7 +105,7 @@ class MetaData:
         文件大小。 
 
         :param size: The size of this MetaData.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -110,7 +127,7 @@ class MetaData:
         视频时长，带小数位显示。单位：秒。 
 
         :param duration_ms: The duration_ms of this MetaData.
-        :type: float
+        :type duration_ms: float
         """
         self._duration_ms = duration_ms
 
@@ -132,7 +149,7 @@ class MetaData:
         视频时长。单位：秒。 
 
         :param duration: The duration of this MetaData.
-        :type: int
+        :type duration: int
         """
         self._duration = duration
 
@@ -154,7 +171,7 @@ class MetaData:
         文件封装格式。 
 
         :param format: The format of this MetaData.
-        :type: str
+        :type format: str
         """
         self._format = format
 
@@ -176,7 +193,7 @@ class MetaData:
         总码率。单位：bit/秒 
 
         :param bitrate: The bitrate of this MetaData.
-        :type: int
+        :type bitrate: int
         """
         self._bitrate = bitrate
 
@@ -187,7 +204,7 @@ class MetaData:
         视频流元数据。 
 
         :return: The video of this MetaData.
-        :rtype: list[VideoInfo]
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.VideoInfo`]
         """
         return self._video
 
@@ -198,7 +215,7 @@ class MetaData:
         视频流元数据。 
 
         :param video: The video of this MetaData.
-        :type: list[VideoInfo]
+        :type video: list[:class:`huaweicloudsdkmpc.v1.VideoInfo`]
         """
         self._video = video
 
@@ -209,7 +226,7 @@ class MetaData:
         音频流元数据。 
 
         :return: The audio of this MetaData.
-        :rtype: list[AudioInfo]
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.AudioInfo`]
         """
         return self._audio
 
@@ -220,7 +237,7 @@ class MetaData:
         音频流元数据。 
 
         :param audio: The audio of this MetaData.
-        :type: list[AudioInfo]
+        :type audio: list[:class:`huaweicloudsdkmpc.v1.AudioInfo`]
         """
         self._audio = audio
 

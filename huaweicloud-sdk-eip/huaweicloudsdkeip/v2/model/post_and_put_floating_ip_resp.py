@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PostAndPutFloatingIpResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class PostAndPutFloatingIpResp:
     }
 
     def __init__(self, fixed_ip_address=None, floating_ip_address=None, floating_network_id=None, id=None, port_id=None, router_id=None, status=None, tenant_id=None, dns_name=None, dns_domain=None):
-        """PostAndPutFloatingIpResp - a model defined in huaweicloud sdk"""
+        """PostAndPutFloatingIpResp
+
+        The model defined in huaweicloud sdk
+
+        :param fixed_ip_address: 关联端口的私有IP地址。
+        :type fixed_ip_address: str
+        :param floating_ip_address: 浮动IP地址。
+        :type floating_ip_address: str
+        :param floating_network_id: 外部网络的id。只能使用固定的外网，外部网络的信息请通过GET /v2.0/networks?router:external&#x3D;True或GET /v2.0/networks?name&#x3D;{floating_network}或neutron net-external-list方式查询。
+        :type floating_network_id: str
+        :param id: 浮动IP地址的id。
+        :type id: str
+        :param port_id: 端口id。
+        :type port_id: str
+        :param router_id: 所属路由器id。
+        :type router_id: str
+        :param status: 网络状态，可以为ACTIVE， DOWN或ERROR。  DOWN：未绑定  ACTIVE：绑定  ERROR：异常
+        :type status: str
+        :param tenant_id: 项目id。
+        :type tenant_id: str
+        :param dns_name: DNS名称(目前仅广州局点支持)
+        :type dns_name: str
+        :param dns_domain: DNS域地址(目前仅广州局点支持)
+        :type dns_domain: str
+        """
         
         
 
@@ -103,7 +126,7 @@ class PostAndPutFloatingIpResp:
         关联端口的私有IP地址。
 
         :param fixed_ip_address: The fixed_ip_address of this PostAndPutFloatingIpResp.
-        :type: str
+        :type fixed_ip_address: str
         """
         self._fixed_ip_address = fixed_ip_address
 
@@ -125,7 +148,7 @@ class PostAndPutFloatingIpResp:
         浮动IP地址。
 
         :param floating_ip_address: The floating_ip_address of this PostAndPutFloatingIpResp.
-        :type: str
+        :type floating_ip_address: str
         """
         self._floating_ip_address = floating_ip_address
 
@@ -147,7 +170,7 @@ class PostAndPutFloatingIpResp:
         外部网络的id。只能使用固定的外网，外部网络的信息请通过GET /v2.0/networks?router:external=True或GET /v2.0/networks?name={floating_network}或neutron net-external-list方式查询。
 
         :param floating_network_id: The floating_network_id of this PostAndPutFloatingIpResp.
-        :type: str
+        :type floating_network_id: str
         """
         self._floating_network_id = floating_network_id
 
@@ -169,7 +192,7 @@ class PostAndPutFloatingIpResp:
         浮动IP地址的id。
 
         :param id: The id of this PostAndPutFloatingIpResp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -191,7 +214,7 @@ class PostAndPutFloatingIpResp:
         端口id。
 
         :param port_id: The port_id of this PostAndPutFloatingIpResp.
-        :type: str
+        :type port_id: str
         """
         self._port_id = port_id
 
@@ -213,7 +236,7 @@ class PostAndPutFloatingIpResp:
         所属路由器id。
 
         :param router_id: The router_id of this PostAndPutFloatingIpResp.
-        :type: str
+        :type router_id: str
         """
         self._router_id = router_id
 
@@ -235,7 +258,7 @@ class PostAndPutFloatingIpResp:
         网络状态，可以为ACTIVE， DOWN或ERROR。  DOWN：未绑定  ACTIVE：绑定  ERROR：异常
 
         :param status: The status of this PostAndPutFloatingIpResp.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -257,7 +280,7 @@ class PostAndPutFloatingIpResp:
         项目id。
 
         :param tenant_id: The tenant_id of this PostAndPutFloatingIpResp.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 
@@ -279,7 +302,7 @@ class PostAndPutFloatingIpResp:
         DNS名称(目前仅广州局点支持)
 
         :param dns_name: The dns_name of this PostAndPutFloatingIpResp.
-        :type: str
+        :type dns_name: str
         """
         self._dns_name = dns_name
 
@@ -301,7 +324,7 @@ class PostAndPutFloatingIpResp:
         DNS域地址(目前仅广州局点支持)
 
         :param dns_domain: The dns_domain of this PostAndPutFloatingIpResp.
-        :type: str
+        :type dns_domain: str
         """
         self._dns_domain = dns_domain
 

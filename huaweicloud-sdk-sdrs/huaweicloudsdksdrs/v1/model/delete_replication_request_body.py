@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteReplicationRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteReplicationRequestBody:
     }
 
     def __init__(self, replication=None):
-        """DeleteReplicationRequestBody - a model defined in huaweicloud sdk"""
+        """DeleteReplicationRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param replication: 
+        :type replication: :class:`huaweicloudsdksdrs.v1.DeleteReplicationRequestParams`
+        """
         
         
 
@@ -45,7 +50,7 @@ class DeleteReplicationRequestBody:
 
 
         :return: The replication of this DeleteReplicationRequestBody.
-        :rtype: DeleteReplicationRequestParams
+        :rtype: :class:`huaweicloudsdksdrs.v1.DeleteReplicationRequestParams`
         """
         return self._replication
 
@@ -55,7 +60,7 @@ class DeleteReplicationRequestBody:
 
 
         :param replication: The replication of this DeleteReplicationRequestBody.
-        :type: DeleteReplicationRequestParams
+        :type replication: :class:`huaweicloudsdksdrs.v1.DeleteReplicationRequestParams`
         """
         self._replication = replication
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowSinkTaskDetailRespPartitions:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ShowSinkTaskDetailRespPartitions:
     }
 
     def __init__(self, partition_id=None, status=None, last_transfer_offset=None, log_end_offset=None, lag=None):
-        """ShowSinkTaskDetailRespPartitions - a model defined in huaweicloud sdk"""
+        """ShowSinkTaskDetailRespPartitions
+
+        The model defined in huaweicloud sdk
+
+        :param partition_id: 分区ID。
+        :type partition_id: str
+        :param status: 运行状态。
+        :type status: str
+        :param last_transfer_offset: 已转储的消息偏移量。
+        :type last_transfer_offset: str
+        :param log_end_offset: 消息偏移量。
+        :type log_end_offset: str
+        :param lag: 积压的消息数。
+        :type lag: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class ShowSinkTaskDetailRespPartitions:
         分区ID。
 
         :param partition_id: The partition_id of this ShowSinkTaskDetailRespPartitions.
-        :type: str
+        :type partition_id: str
         """
         self._partition_id = partition_id
 
@@ -100,7 +113,7 @@ class ShowSinkTaskDetailRespPartitions:
         运行状态。
 
         :param status: The status of this ShowSinkTaskDetailRespPartitions.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -122,7 +135,7 @@ class ShowSinkTaskDetailRespPartitions:
         已转储的消息偏移量。
 
         :param last_transfer_offset: The last_transfer_offset of this ShowSinkTaskDetailRespPartitions.
-        :type: str
+        :type last_transfer_offset: str
         """
         self._last_transfer_offset = last_transfer_offset
 
@@ -144,7 +157,7 @@ class ShowSinkTaskDetailRespPartitions:
         消息偏移量。
 
         :param log_end_offset: The log_end_offset of this ShowSinkTaskDetailRespPartitions.
-        :type: str
+        :type log_end_offset: str
         """
         self._log_end_offset = log_end_offset
 
@@ -166,7 +179,7 @@ class ShowSinkTaskDetailRespPartitions:
         积压的消息数。
 
         :param lag: The lag of this ShowSinkTaskDetailRespPartitions.
-        :type: str
+        :type lag: str
         """
         self._lag = lag
 

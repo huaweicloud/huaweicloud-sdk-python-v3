@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Network:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class Network:
     }
 
     def __init__(self, direction=None, protocol=None, src_ip=None, src_port=None, src_domain=None, src_geo=None, destc_ip=None, dest_port=None, dest_domain=None, dest_geo=None):
-        """Network - a model defined in huaweicloud sdk"""
+        """Network
+
+        The model defined in huaweicloud sdk
+
+        :param direction: 方向，取值范围：IN、OUT。
+        :type direction: str
+        :param protocol: 协议。
+        :type protocol: str
+        :param src_ip: 源IP地址。
+        :type src_ip: str
+        :param src_port: 源端口，0–65535。
+        :type src_port: int
+        :param src_domain: 源域名，最大128个字符。
+        :type src_domain: str
+        :param src_geo: 
+        :type src_geo: :class:`huaweicloudsdksa.v1.Geo`
+        :param destc_ip: 目标IP地址。
+        :type destc_ip: str
+        :param dest_port: 目标端口，0–65535。
+        :type dest_port: int
+        :param dest_domain: 目标域名，最大128个字符。
+        :type dest_domain: str
+        :param dest_geo: 
+        :type dest_geo: :class:`huaweicloudsdksa.v1.Geo`
+        """
         
         
 
@@ -103,7 +126,7 @@ class Network:
         方向，取值范围：IN、OUT。
 
         :param direction: The direction of this Network.
-        :type: str
+        :type direction: str
         """
         self._direction = direction
 
@@ -125,7 +148,7 @@ class Network:
         协议。
 
         :param protocol: The protocol of this Network.
-        :type: str
+        :type protocol: str
         """
         self._protocol = protocol
 
@@ -147,7 +170,7 @@ class Network:
         源IP地址。
 
         :param src_ip: The src_ip of this Network.
-        :type: str
+        :type src_ip: str
         """
         self._src_ip = src_ip
 
@@ -169,7 +192,7 @@ class Network:
         源端口，0–65535。
 
         :param src_port: The src_port of this Network.
-        :type: int
+        :type src_port: int
         """
         self._src_port = src_port
 
@@ -191,7 +214,7 @@ class Network:
         源域名，最大128个字符。
 
         :param src_domain: The src_domain of this Network.
-        :type: str
+        :type src_domain: str
         """
         self._src_domain = src_domain
 
@@ -201,7 +224,7 @@ class Network:
 
 
         :return: The src_geo of this Network.
-        :rtype: Geo
+        :rtype: :class:`huaweicloudsdksa.v1.Geo`
         """
         return self._src_geo
 
@@ -211,7 +234,7 @@ class Network:
 
 
         :param src_geo: The src_geo of this Network.
-        :type: Geo
+        :type src_geo: :class:`huaweicloudsdksa.v1.Geo`
         """
         self._src_geo = src_geo
 
@@ -233,7 +256,7 @@ class Network:
         目标IP地址。
 
         :param destc_ip: The destc_ip of this Network.
-        :type: str
+        :type destc_ip: str
         """
         self._destc_ip = destc_ip
 
@@ -255,7 +278,7 @@ class Network:
         目标端口，0–65535。
 
         :param dest_port: The dest_port of this Network.
-        :type: int
+        :type dest_port: int
         """
         self._dest_port = dest_port
 
@@ -277,7 +300,7 @@ class Network:
         目标域名，最大128个字符。
 
         :param dest_domain: The dest_domain of this Network.
-        :type: str
+        :type dest_domain: str
         """
         self._dest_domain = dest_domain
 
@@ -287,7 +310,7 @@ class Network:
 
 
         :return: The dest_geo of this Network.
-        :rtype: Geo
+        :rtype: :class:`huaweicloudsdksa.v1.Geo`
         """
         return self._dest_geo
 
@@ -297,7 +320,7 @@ class Network:
 
 
         :param dest_geo: The dest_geo of this Network.
-        :type: Geo
+        :type dest_geo: :class:`huaweicloudsdksa.v1.Geo`
         """
         self._dest_geo = dest_geo
 

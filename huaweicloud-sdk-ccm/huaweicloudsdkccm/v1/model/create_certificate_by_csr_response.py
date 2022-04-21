@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateCertificateByCsrResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateCertificateByCsrResponse(SdkResponse):
     }
 
     def __init__(self, certificate_id=None):
-        """CreateCertificateByCsrResponse - a model defined in huaweicloud sdk"""
+        """CreateCertificateByCsrResponse
+
+        The model defined in huaweicloud sdk
+
+        :param certificate_id: 当前签发的证书ID。
+        :type certificate_id: str
+        """
         
         super(CreateCertificateByCsrResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class CreateCertificateByCsrResponse(SdkResponse):
         当前签发的证书ID。
 
         :param certificate_id: The certificate_id of this CreateCertificateByCsrResponse.
-        :type: str
+        :type certificate_id: str
         """
         self._certificate_id = certificate_id
 

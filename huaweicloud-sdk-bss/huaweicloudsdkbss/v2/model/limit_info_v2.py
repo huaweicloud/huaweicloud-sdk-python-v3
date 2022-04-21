@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LimitInfoV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class LimitInfoV2:
     }
 
     def __init__(self, use_limiti_info_id=None, limit_key=None, value1=None, value2=None, value_unit=None, limit_type=None, promotion_plan_id=None):
-        """LimitInfoV2 - a model defined in huaweicloud sdk"""
+        """LimitInfoV2
+
+        The model defined in huaweicloud sdk
+
+        :param use_limiti_info_id: 使用限制ID，主键。
+        :type use_limiti_info_id: str
+        :param limit_key: 折扣限制，key的取值请参考表5。
+        :type limit_key: str
+        :param value1: value1。
+        :type value1: str
+        :param value2: value2。
+        :type value2: str
+        :param value_unit: value单位。
+        :type value_unit: str
+        :param limit_type: 限制类型。
+        :type limit_type: str
+        :param promotion_plan_id: 促销计划ID。
+        :type promotion_plan_id: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class LimitInfoV2:
         使用限制ID，主键。
 
         :param use_limiti_info_id: The use_limiti_info_id of this LimitInfoV2.
-        :type: str
+        :type use_limiti_info_id: str
         """
         self._use_limiti_info_id = use_limiti_info_id
 
@@ -110,7 +127,7 @@ class LimitInfoV2:
         折扣限制，key的取值请参考表5。
 
         :param limit_key: The limit_key of this LimitInfoV2.
-        :type: str
+        :type limit_key: str
         """
         self._limit_key = limit_key
 
@@ -132,7 +149,7 @@ class LimitInfoV2:
         value1。
 
         :param value1: The value1 of this LimitInfoV2.
-        :type: str
+        :type value1: str
         """
         self._value1 = value1
 
@@ -154,7 +171,7 @@ class LimitInfoV2:
         value2。
 
         :param value2: The value2 of this LimitInfoV2.
-        :type: str
+        :type value2: str
         """
         self._value2 = value2
 
@@ -176,7 +193,7 @@ class LimitInfoV2:
         value单位。
 
         :param value_unit: The value_unit of this LimitInfoV2.
-        :type: str
+        :type value_unit: str
         """
         self._value_unit = value_unit
 
@@ -198,7 +215,7 @@ class LimitInfoV2:
         限制类型。
 
         :param limit_type: The limit_type of this LimitInfoV2.
-        :type: str
+        :type limit_type: str
         """
         self._limit_type = limit_type
 
@@ -220,7 +237,7 @@ class LimitInfoV2:
         促销计划ID。
 
         :param promotion_plan_id: The promotion_plan_id of this LimitInfoV2.
-        :type: str
+        :type promotion_plan_id: str
         """
         self._promotion_plan_id = promotion_plan_id
 

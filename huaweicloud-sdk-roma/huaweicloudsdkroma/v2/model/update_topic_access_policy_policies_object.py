@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateTopicAccessPolicyPoliciesObject:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class UpdateTopicAccessPolicyPoliciesObject:
     }
 
     def __init__(self, app_id=None, app_name=None, access_policy=None, owner=None, tag=None):
-        """UpdateTopicAccessPolicyPoliciesObject - a model defined in huaweicloud sdk"""
+        """UpdateTopicAccessPolicyPoliciesObject
+
+        The model defined in huaweicloud sdk
+
+        :param app_id: 集成应用key。
+        :type app_id: str
+        :param app_name: 应用名称。
+        :type app_name: str
+        :param access_policy: 权限类型。   - all：发布+订阅   - pub：发布   - sub：订阅
+        :type access_policy: str
+        :param owner: 是否为创建topic时所选择的应用。  默认为false。
+        :type owner: bool
+        :param tag: 权限类型对应的标签。  当权限类型是all时，发布和订阅的标签用符号“&amp;”隔开。  当有多个标签时，标签用符号“||”隔开。
+        :type tag: str
+        """
         
         
 
@@ -75,7 +88,7 @@ class UpdateTopicAccessPolicyPoliciesObject:
         集成应用key。
 
         :param app_id: The app_id of this UpdateTopicAccessPolicyPoliciesObject.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -97,7 +110,7 @@ class UpdateTopicAccessPolicyPoliciesObject:
         应用名称。
 
         :param app_name: The app_name of this UpdateTopicAccessPolicyPoliciesObject.
-        :type: str
+        :type app_name: str
         """
         self._app_name = app_name
 
@@ -119,7 +132,7 @@ class UpdateTopicAccessPolicyPoliciesObject:
         权限类型。   - all：发布+订阅   - pub：发布   - sub：订阅
 
         :param access_policy: The access_policy of this UpdateTopicAccessPolicyPoliciesObject.
-        :type: str
+        :type access_policy: str
         """
         self._access_policy = access_policy
 
@@ -141,7 +154,7 @@ class UpdateTopicAccessPolicyPoliciesObject:
         是否为创建topic时所选择的应用。  默认为false。
 
         :param owner: The owner of this UpdateTopicAccessPolicyPoliciesObject.
-        :type: bool
+        :type owner: bool
         """
         self._owner = owner
 
@@ -163,7 +176,7 @@ class UpdateTopicAccessPolicyPoliciesObject:
         权限类型对应的标签。  当权限类型是all时，发布和订阅的标签用符号“&”隔开。  当有多个标签时，标签用符号“||”隔开。
 
         :param tag: The tag of this UpdateTopicAccessPolicyPoliciesObject.
-        :type: str
+        :type tag: str
         """
         self._tag = tag
 

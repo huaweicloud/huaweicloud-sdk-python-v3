@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ChangeEnterpriseRealnameAuthsReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class ChangeEnterpriseRealnameAuthsReq:
     }
 
     def __init__(self, customer_id=None, identify_type=None, certificate_type=None, verified_file_url=None, corp_name=None, verified_number=None, reg_country=None, reg_address=None, change_type=None, xaccount_type=None, enterprise_person=None):
-        """ChangeEnterpriseRealnameAuthsReq - a model defined in huaweicloud sdk"""
+        """ChangeEnterpriseRealnameAuthsReq
+
+        The model defined in huaweicloud sdk
+
+        :param customer_id: 客户账号ID。您可以调用查询客户列表接口获取customer_id。
+        :type customer_id: str
+        :param identify_type: 认证方案： 1：单位证件扫描
+        :type identify_type: int
+        :param certificate_type: 单位证件类型： 0：企业营业执照 1：事业单位法人证书 2：社会团体法人登记证书 3：行政执法主体资格证 4：组织机构代码证 99：其他
+        :type certificate_type: int
+        :param verified_file_url: 单位证件认证时证件附件的文件URL。 附件地址必须按照顺序填写，先填写单位证件的附件，如果存在单位人员信息，再填写单位人员的身份证附件。 单位证件顺序为： 第1张单位证件照正面， 第2张单位证件照反面， 个人证件顺序为： 第1张个人证件的人像面 第2张个人证件的国徽面 假设不存在法人的情况下，第1张上传的是单位证件正面扫描件abc.023，第2张上传的是单位证件反面扫描件def004，那么上传顺序需要是： abc023 def004 的顺序填写URL（文件名称区分大小写） 证件附件目前仅仅支持jpg、jpeg、bmp、png、gif、pdf格式，单个文件最大不超过10M。 这个URL是相对URL，不需要包含桶名和download目录，只要包含download目录下的子目录和对应文件名称即可。举例如下： 如果上传的证件附件在桶中的位置是： https://bucketname.obs.Endpoint.myhuaweicloud.com/download/abc023.jpg，该字段填写abc023.jpg； 如果上传的证件附件在桶中的位置是： https://bucketname.obs.Endpoint.myhuaweicloud.com/download/test/abc023.jpg，该字段填写test/abc023.jpg。
+        :type verified_file_url: list[str]
+        :param corp_name: 单位名称。 不能全是数字、特殊字符、空格。
+        :type corp_name: str
+        :param verified_number: 单位证件号码。
+        :type verified_number: str
+        :param reg_country: 实名认证填写的注册国家。国家的两位字母简码。 例如：注册国家为“中国”请填写“CN”。
+        :type reg_country: str
+        :param reg_address: 实名认证企业注册地址。
+        :type reg_address: str
+        :param change_type: 变更类型： 1：个人变企业
+        :type change_type: int
+        :param xaccount_type: 华为分给合作伙伴的平台标识。 该标识的具体值由华为分配。获取方法请参见如何获取xaccountType的取值。
+        :type xaccount_type: str
+        :param enterprise_person: 
+        :type enterprise_person: :class:`huaweicloudsdkbssintl.v2.EnterprisePersonNew`
+        """
         
         
 
@@ -101,7 +126,7 @@ class ChangeEnterpriseRealnameAuthsReq:
         客户账号ID。您可以调用查询客户列表接口获取customer_id。
 
         :param customer_id: The customer_id of this ChangeEnterpriseRealnameAuthsReq.
-        :type: str
+        :type customer_id: str
         """
         self._customer_id = customer_id
 
@@ -123,7 +148,7 @@ class ChangeEnterpriseRealnameAuthsReq:
         认证方案： 1：单位证件扫描
 
         :param identify_type: The identify_type of this ChangeEnterpriseRealnameAuthsReq.
-        :type: int
+        :type identify_type: int
         """
         self._identify_type = identify_type
 
@@ -145,7 +170,7 @@ class ChangeEnterpriseRealnameAuthsReq:
         单位证件类型： 0：企业营业执照 1：事业单位法人证书 2：社会团体法人登记证书 3：行政执法主体资格证 4：组织机构代码证 99：其他
 
         :param certificate_type: The certificate_type of this ChangeEnterpriseRealnameAuthsReq.
-        :type: int
+        :type certificate_type: int
         """
         self._certificate_type = certificate_type
 
@@ -167,7 +192,7 @@ class ChangeEnterpriseRealnameAuthsReq:
         单位证件认证时证件附件的文件URL。 附件地址必须按照顺序填写，先填写单位证件的附件，如果存在单位人员信息，再填写单位人员的身份证附件。 单位证件顺序为： 第1张单位证件照正面， 第2张单位证件照反面， 个人证件顺序为： 第1张个人证件的人像面 第2张个人证件的国徽面 假设不存在法人的情况下，第1张上传的是单位证件正面扫描件abc.023，第2张上传的是单位证件反面扫描件def004，那么上传顺序需要是： abc023 def004 的顺序填写URL（文件名称区分大小写） 证件附件目前仅仅支持jpg、jpeg、bmp、png、gif、pdf格式，单个文件最大不超过10M。 这个URL是相对URL，不需要包含桶名和download目录，只要包含download目录下的子目录和对应文件名称即可。举例如下： 如果上传的证件附件在桶中的位置是： https://bucketname.obs.Endpoint.myhuaweicloud.com/download/abc023.jpg，该字段填写abc023.jpg； 如果上传的证件附件在桶中的位置是： https://bucketname.obs.Endpoint.myhuaweicloud.com/download/test/abc023.jpg，该字段填写test/abc023.jpg。
 
         :param verified_file_url: The verified_file_url of this ChangeEnterpriseRealnameAuthsReq.
-        :type: list[str]
+        :type verified_file_url: list[str]
         """
         self._verified_file_url = verified_file_url
 
@@ -189,7 +214,7 @@ class ChangeEnterpriseRealnameAuthsReq:
         单位名称。 不能全是数字、特殊字符、空格。
 
         :param corp_name: The corp_name of this ChangeEnterpriseRealnameAuthsReq.
-        :type: str
+        :type corp_name: str
         """
         self._corp_name = corp_name
 
@@ -211,7 +236,7 @@ class ChangeEnterpriseRealnameAuthsReq:
         单位证件号码。
 
         :param verified_number: The verified_number of this ChangeEnterpriseRealnameAuthsReq.
-        :type: str
+        :type verified_number: str
         """
         self._verified_number = verified_number
 
@@ -233,7 +258,7 @@ class ChangeEnterpriseRealnameAuthsReq:
         实名认证填写的注册国家。国家的两位字母简码。 例如：注册国家为“中国”请填写“CN”。
 
         :param reg_country: The reg_country of this ChangeEnterpriseRealnameAuthsReq.
-        :type: str
+        :type reg_country: str
         """
         self._reg_country = reg_country
 
@@ -255,7 +280,7 @@ class ChangeEnterpriseRealnameAuthsReq:
         实名认证企业注册地址。
 
         :param reg_address: The reg_address of this ChangeEnterpriseRealnameAuthsReq.
-        :type: str
+        :type reg_address: str
         """
         self._reg_address = reg_address
 
@@ -277,7 +302,7 @@ class ChangeEnterpriseRealnameAuthsReq:
         变更类型： 1：个人变企业
 
         :param change_type: The change_type of this ChangeEnterpriseRealnameAuthsReq.
-        :type: int
+        :type change_type: int
         """
         self._change_type = change_type
 
@@ -299,7 +324,7 @@ class ChangeEnterpriseRealnameAuthsReq:
         华为分给合作伙伴的平台标识。 该标识的具体值由华为分配。获取方法请参见如何获取xaccountType的取值。
 
         :param xaccount_type: The xaccount_type of this ChangeEnterpriseRealnameAuthsReq.
-        :type: str
+        :type xaccount_type: str
         """
         self._xaccount_type = xaccount_type
 
@@ -309,7 +334,7 @@ class ChangeEnterpriseRealnameAuthsReq:
 
 
         :return: The enterprise_person of this ChangeEnterpriseRealnameAuthsReq.
-        :rtype: EnterprisePersonNew
+        :rtype: :class:`huaweicloudsdkbssintl.v2.EnterprisePersonNew`
         """
         return self._enterprise_person
 
@@ -319,7 +344,7 @@ class ChangeEnterpriseRealnameAuthsReq:
 
 
         :param enterprise_person: The enterprise_person of this ChangeEnterpriseRealnameAuthsReq.
-        :type: EnterprisePersonNew
+        :type enterprise_person: :class:`huaweicloudsdkbssintl.v2.EnterprisePersonNew`
         """
         self._enterprise_person = enterprise_person
 

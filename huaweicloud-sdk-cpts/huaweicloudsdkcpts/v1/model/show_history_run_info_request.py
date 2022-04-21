@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowHistoryRunInfoRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowHistoryRunInfoRequest:
     }
 
     def __init__(self, task_id=None):
-        """ShowHistoryRunInfoRequest - a model defined in huaweicloud sdk"""
+        """ShowHistoryRunInfoRequest
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 任务id
+        :type task_id: int
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowHistoryRunInfoRequest:
         任务id
 
         :param task_id: The task_id of this ShowHistoryRunInfoRequest.
-        :type: int
+        :type task_id: int
         """
         self._task_id = task_id
 

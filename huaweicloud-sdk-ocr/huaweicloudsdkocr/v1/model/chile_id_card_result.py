@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ChileIdCardResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class ChileIdCardResult:
     }
 
     def __init__(self, surname=None, given_name=None, nationality=None, sex=None, birth=None, issue_date=None, expiry_date=None, document_number=None, number=None, confidence=None):
-        """ChileIdCardResult - a model defined in huaweicloud sdk"""
+        """ChileIdCardResult
+
+        The model defined in huaweicloud sdk
+
+        :param surname: 姓氏。 
+        :type surname: list[str]
+        :param given_name: 名。 
+        :type given_name: str
+        :param nationality: 国籍。 
+        :type nationality: str
+        :param sex: 性别。 
+        :type sex: str
+        :param birth: 出生日。 
+        :type birth: str
+        :param issue_date: 发行日。 
+        :type issue_date: str
+        :param expiry_date: 有效期。 
+        :type expiry_date: str
+        :param document_number: 文档编号。 
+        :type document_number: str
+        :param number: 身份证号。 
+        :type number: str
+        :param confidence: 
+        :type confidence: :class:`huaweicloudsdkocr.v1.ChileIdCardConfidence`
+        """
         
         
 
@@ -103,7 +126,7 @@ class ChileIdCardResult:
         姓氏。 
 
         :param surname: The surname of this ChileIdCardResult.
-        :type: list[str]
+        :type surname: list[str]
         """
         self._surname = surname
 
@@ -125,7 +148,7 @@ class ChileIdCardResult:
         名。 
 
         :param given_name: The given_name of this ChileIdCardResult.
-        :type: str
+        :type given_name: str
         """
         self._given_name = given_name
 
@@ -147,7 +170,7 @@ class ChileIdCardResult:
         国籍。 
 
         :param nationality: The nationality of this ChileIdCardResult.
-        :type: str
+        :type nationality: str
         """
         self._nationality = nationality
 
@@ -169,7 +192,7 @@ class ChileIdCardResult:
         性别。 
 
         :param sex: The sex of this ChileIdCardResult.
-        :type: str
+        :type sex: str
         """
         self._sex = sex
 
@@ -191,7 +214,7 @@ class ChileIdCardResult:
         出生日。 
 
         :param birth: The birth of this ChileIdCardResult.
-        :type: str
+        :type birth: str
         """
         self._birth = birth
 
@@ -213,7 +236,7 @@ class ChileIdCardResult:
         发行日。 
 
         :param issue_date: The issue_date of this ChileIdCardResult.
-        :type: str
+        :type issue_date: str
         """
         self._issue_date = issue_date
 
@@ -235,7 +258,7 @@ class ChileIdCardResult:
         有效期。 
 
         :param expiry_date: The expiry_date of this ChileIdCardResult.
-        :type: str
+        :type expiry_date: str
         """
         self._expiry_date = expiry_date
 
@@ -257,7 +280,7 @@ class ChileIdCardResult:
         文档编号。 
 
         :param document_number: The document_number of this ChileIdCardResult.
-        :type: str
+        :type document_number: str
         """
         self._document_number = document_number
 
@@ -279,7 +302,7 @@ class ChileIdCardResult:
         身份证号。 
 
         :param number: The number of this ChileIdCardResult.
-        :type: str
+        :type number: str
         """
         self._number = number
 
@@ -289,7 +312,7 @@ class ChileIdCardResult:
 
 
         :return: The confidence of this ChileIdCardResult.
-        :rtype: ChileIdCardConfidence
+        :rtype: :class:`huaweicloudsdkocr.v1.ChileIdCardConfidence`
         """
         return self._confidence
 
@@ -299,7 +322,7 @@ class ChileIdCardResult:
 
 
         :param confidence: The confidence of this ChileIdCardResult.
-        :type: ChileIdCardConfidence
+        :type confidence: :class:`huaweicloudsdkocr.v1.ChileIdCardConfidence`
         """
         self._confidence = confidence
 

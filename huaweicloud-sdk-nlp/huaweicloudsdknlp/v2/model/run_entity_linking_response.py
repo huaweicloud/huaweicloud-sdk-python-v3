@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunEntityLinkingResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RunEntityLinkingResponse(SdkResponse):
     }
 
     def __init__(self, entities=None):
-        """RunEntityLinkingResponse - a model defined in huaweicloud sdk"""
+        """RunEntityLinkingResponse
+
+        The model defined in huaweicloud sdk
+
+        :param entities: 识别出的实体列表
+        :type entities: list[:class:`huaweicloudsdknlp.v2.LinkedEntity`]
+        """
         
         super(RunEntityLinkingResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class RunEntityLinkingResponse(SdkResponse):
         识别出的实体列表
 
         :return: The entities of this RunEntityLinkingResponse.
-        :rtype: list[LinkedEntity]
+        :rtype: list[:class:`huaweicloudsdknlp.v2.LinkedEntity`]
         """
         return self._entities
 
@@ -58,7 +63,7 @@ class RunEntityLinkingResponse(SdkResponse):
         识别出的实体列表
 
         :param entities: The entities of this RunEntityLinkingResponse.
-        :type: list[LinkedEntity]
+        :type entities: list[:class:`huaweicloudsdknlp.v2.LinkedEntity`]
         """
         self._entities = entities
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ModResourceDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ModResourceDTO:
     }
 
     def __init__(self, id=None, type=None, expire_date=None, is_disabled=None):
-        """ModResourceDTO - a model defined in huaweicloud sdk"""
+        """ModResourceDTO
+
+        The model defined in huaweicloud sdk
+
+        :param id: 资源标识
+        :type id: str
+        :param type: 资源类型，企业内ID和TYPE唯一标识一个资源项，若只传资源ID可能会修改多个资源的信息. - VMR        - 云会议室 - CONF_CALL  - 会议并发数 - HARD_1080P - 1080P硬终端 - HARD_720P  - 720P硬终端 - SOFT       - 软终端用户数 - ROOM       - 大屏软终端 - LIVE       - 直播推流 - RECORD     - 录播空间 - HARD_THIRD_PARTY - 第三方硬终端账号 - HUAWEI_VISION -智慧屏
+        :type type: str
+        :param expire_date: 到期时间
+        :type expire_date: int
+        :param is_disabled: 资源是否被停用
+        :type is_disabled: bool
+        """
         
         
 
@@ -72,7 +83,7 @@ class ModResourceDTO:
         资源标识
 
         :param id: The id of this ModResourceDTO.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -94,7 +105,7 @@ class ModResourceDTO:
         资源类型，企业内ID和TYPE唯一标识一个资源项，若只传资源ID可能会修改多个资源的信息. - VMR        - 云会议室 - CONF_CALL  - 会议并发数 - HARD_1080P - 1080P硬终端 - HARD_720P  - 720P硬终端 - SOFT       - 软终端用户数 - ROOM       - 大屏软终端 - LIVE       - 直播推流 - RECORD     - 录播空间 - HARD_THIRD_PARTY - 第三方硬终端账号 - HUAWEI_VISION -智慧屏
 
         :param type: The type of this ModResourceDTO.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -116,7 +127,7 @@ class ModResourceDTO:
         到期时间
 
         :param expire_date: The expire_date of this ModResourceDTO.
-        :type: int
+        :type expire_date: int
         """
         self._expire_date = expire_date
 
@@ -138,7 +149,7 @@ class ModResourceDTO:
         资源是否被停用
 
         :param is_disabled: The is_disabled of this ModResourceDTO.
-        :type: bool
+        :type is_disabled: bool
         """
         self._is_disabled = is_disabled
 

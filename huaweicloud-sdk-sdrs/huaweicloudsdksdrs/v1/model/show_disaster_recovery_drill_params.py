@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDisasterRecoveryDrillParams:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ShowDisasterRecoveryDrillParams:
     }
 
     def __init__(self, id=None, name=None, status=None, drill_vpc_id=None, created_at=None, updated_at=None, server_group_id=None, drill_servers=None):
-        """ShowDisasterRecoveryDrillParams - a model defined in huaweicloud sdk"""
+        """ShowDisasterRecoveryDrillParams
+
+        The model defined in huaweicloud sdk
+
+        :param id: 容灾演练的ID。
+        :type id: str
+        :param name: 容灾演练的名称。
+        :type name: str
+        :param status: 容灾演练的状态。
+        :type status: str
+        :param drill_vpc_id: 演练虚拟私有云id。
+        :type drill_vpc_id: str
+        :param created_at: 创建时间。默认格式为：\&quot;yyyy-MM-dd HH:mm:ss.SSS\&quot;，例：\&quot;2019-04-01 12:00:00.000\&quot;。
+        :type created_at: str
+        :param updated_at: 更新时间。默认格式为：\&quot;yyyy-MM-dd HH:mm:ss.SSS\&quot;，例：\&quot;2019-04-01 12:00:00.000\&quot;。
+        :type updated_at: str
+        :param server_group_id: 保护组的ID。
+        :type server_group_id: str
+        :param drill_servers: 演练云服务器列表。
+        :type drill_servers: list[:class:`huaweicloudsdksdrs.v1.DrillServerParams`]
+        """
         
         
 
@@ -85,7 +104,7 @@ class ShowDisasterRecoveryDrillParams:
         容灾演练的ID。
 
         :param id: The id of this ShowDisasterRecoveryDrillParams.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -107,7 +126,7 @@ class ShowDisasterRecoveryDrillParams:
         容灾演练的名称。
 
         :param name: The name of this ShowDisasterRecoveryDrillParams.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -129,7 +148,7 @@ class ShowDisasterRecoveryDrillParams:
         容灾演练的状态。
 
         :param status: The status of this ShowDisasterRecoveryDrillParams.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -151,7 +170,7 @@ class ShowDisasterRecoveryDrillParams:
         演练虚拟私有云id。
 
         :param drill_vpc_id: The drill_vpc_id of this ShowDisasterRecoveryDrillParams.
-        :type: str
+        :type drill_vpc_id: str
         """
         self._drill_vpc_id = drill_vpc_id
 
@@ -173,7 +192,7 @@ class ShowDisasterRecoveryDrillParams:
         创建时间。默认格式为：\"yyyy-MM-dd HH:mm:ss.SSS\"，例：\"2019-04-01 12:00:00.000\"。
 
         :param created_at: The created_at of this ShowDisasterRecoveryDrillParams.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -195,7 +214,7 @@ class ShowDisasterRecoveryDrillParams:
         更新时间。默认格式为：\"yyyy-MM-dd HH:mm:ss.SSS\"，例：\"2019-04-01 12:00:00.000\"。
 
         :param updated_at: The updated_at of this ShowDisasterRecoveryDrillParams.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 
@@ -217,7 +236,7 @@ class ShowDisasterRecoveryDrillParams:
         保护组的ID。
 
         :param server_group_id: The server_group_id of this ShowDisasterRecoveryDrillParams.
-        :type: str
+        :type server_group_id: str
         """
         self._server_group_id = server_group_id
 
@@ -228,7 +247,7 @@ class ShowDisasterRecoveryDrillParams:
         演练云服务器列表。
 
         :return: The drill_servers of this ShowDisasterRecoveryDrillParams.
-        :rtype: list[DrillServerParams]
+        :rtype: list[:class:`huaweicloudsdksdrs.v1.DrillServerParams`]
         """
         return self._drill_servers
 
@@ -239,7 +258,7 @@ class ShowDisasterRecoveryDrillParams:
         演练云服务器列表。
 
         :param drill_servers: The drill_servers of this ShowDisasterRecoveryDrillParams.
-        :type: list[DrillServerParams]
+        :type drill_servers: list[:class:`huaweicloudsdksdrs.v1.DrillServerParams`]
         """
         self._drill_servers = drill_servers
 

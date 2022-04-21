@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RespFlavor:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RespFlavor:
     }
 
     def __init__(self, id=None):
-        """RespFlavor - a model defined in huaweicloud sdk"""
+        """RespFlavor
+
+        The model defined in huaweicloud sdk
+
+        :param id: 弹性云服务器规格ID。
+        :type id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class RespFlavor:
         弹性云服务器规格ID。
 
         :param id: The id of this RespFlavor.
-        :type: str
+        :type id: str
         """
         self._id = id
 

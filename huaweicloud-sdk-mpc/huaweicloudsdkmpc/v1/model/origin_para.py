@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OriginPara:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class OriginPara:
     }
 
     def __init__(self, duration=None, duration_ms=None, file_format=None, video=None, audio=None):
-        """OriginPara - a model defined in huaweicloud sdk"""
+        """OriginPara
+
+        The model defined in huaweicloud sdk
+
+        :param duration: 片源时长，单位：秒
+        :type duration: int
+        :param duration_ms: 片源时长，单位：毫秒
+        :type duration_ms: int
+        :param file_format: 文件格式 
+        :type file_format: str
+        :param video: 
+        :type video: :class:`huaweicloudsdkmpc.v1.VideoInfo`
+        :param audio: 
+        :type audio: :class:`huaweicloudsdkmpc.v1.AudioInfo`
+        """
         
         
 
@@ -78,7 +91,7 @@ class OriginPara:
         片源时长，单位：秒
 
         :param duration: The duration of this OriginPara.
-        :type: int
+        :type duration: int
         """
         self._duration = duration
 
@@ -100,7 +113,7 @@ class OriginPara:
         片源时长，单位：毫秒
 
         :param duration_ms: The duration_ms of this OriginPara.
-        :type: int
+        :type duration_ms: int
         """
         self._duration_ms = duration_ms
 
@@ -122,7 +135,7 @@ class OriginPara:
         文件格式 
 
         :param file_format: The file_format of this OriginPara.
-        :type: str
+        :type file_format: str
         """
         self._file_format = file_format
 
@@ -132,7 +145,7 @@ class OriginPara:
 
 
         :return: The video of this OriginPara.
-        :rtype: VideoInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.VideoInfo`
         """
         return self._video
 
@@ -142,7 +155,7 @@ class OriginPara:
 
 
         :param video: The video of this OriginPara.
-        :type: VideoInfo
+        :type video: :class:`huaweicloudsdkmpc.v1.VideoInfo`
         """
         self._video = video
 
@@ -152,7 +165,7 @@ class OriginPara:
 
 
         :return: The audio of this OriginPara.
-        :rtype: AudioInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.AudioInfo`
         """
         return self._audio
 
@@ -162,7 +175,7 @@ class OriginPara:
 
 
         :param audio: The audio of this OriginPara.
-        :type: AudioInfo
+        :type audio: :class:`huaweicloudsdkmpc.v1.AudioInfo`
         """
         self._audio = audio
 

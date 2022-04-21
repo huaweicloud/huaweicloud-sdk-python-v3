@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListLoadbalancerTagsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListLoadbalancerTagsResponse(SdkResponse):
     }
 
     def __init__(self, tags=None):
-        """ListLoadbalancerTagsResponse - a model defined in huaweicloud sdk"""
+        """ListLoadbalancerTagsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param tags: 标签列表
+        :type tags: list[:class:`huaweicloudsdkelb.v2.ListTag`]
+        """
         
         super(ListLoadbalancerTagsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListLoadbalancerTagsResponse(SdkResponse):
         标签列表
 
         :return: The tags of this ListLoadbalancerTagsResponse.
-        :rtype: list[ListTag]
+        :rtype: list[:class:`huaweicloudsdkelb.v2.ListTag`]
         """
         return self._tags
 
@@ -58,7 +63,7 @@ class ListLoadbalancerTagsResponse(SdkResponse):
         标签列表
 
         :param tags: The tags of this ListLoadbalancerTagsResponse.
-        :type: list[ListTag]
+        :type tags: list[:class:`huaweicloudsdkelb.v2.ListTag`]
         """
         self._tags = tags
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StatisticParticipateDataItem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class StatisticParticipateDataItem:
     }
 
     def __init__(self, time=None, conf_user_name=None, conf_user_account=None, conf_user_dept_name=None, conf_user_count=None, conf_user_duration=None, conf_hard_terminal_name=None, conf_hard_terminal_model=None, conf_hard_terminal_user_id=None, conf_hard_terminal_count=None, conf_hard_terminal_duration=None, device_type=None, device_version=None, device_attendance_count=None):
-        """StatisticParticipateDataItem - a model defined in huaweicloud sdk"""
+        """StatisticParticipateDataItem
+
+        The model defined in huaweicloud sdk
+
+        :param time: 日期/月份。
+        :type time: str
+        :param conf_user_name: 与会用户名称。 category &#x3D; user_participate_info时有效。
+        :type conf_user_name: str
+        :param conf_user_account: 与会用户账户。 category &#x3D; user_participate_info时有效。
+        :type conf_user_account: str
+        :param conf_user_dept_name: 与会用户所属部门。 category &#x3D; user_participate_info时有效。
+        :type conf_user_dept_name: str
+        :param conf_user_count: 用户与会数。 category &#x3D; user_participate_info时有效。
+        :type conf_user_count: str
+        :param conf_user_duration: 用户与会时长(秒)。 category &#x3D; user_participate_info时有效。
+        :type conf_user_duration: str
+        :param conf_hard_terminal_name: 与会硬件终端名称。 category &#x3D; hard_terminal_participate_info时有效。
+        :type conf_hard_terminal_name: str
+        :param conf_hard_terminal_model: 与会硬件终端型号。 category &#x3D; hard_terminal_participate_info时有效。
+        :type conf_hard_terminal_model: str
+        :param conf_hard_terminal_user_id: 与会硬件终端的用户ID。 category &#x3D; hard_terminal_participate_info时有效。
+        :type conf_hard_terminal_user_id: str
+        :param conf_hard_terminal_count: 硬件终端与会数。 category &#x3D; hard_terminal_participate_info时有效。
+        :type conf_hard_terminal_count: str
+        :param conf_hard_terminal_duration: 硬件终端与会时长(秒)。 category &#x3D; hard_terminal_participate_info时有效。
+        :type conf_hard_terminal_duration: str
+        :param device_type: 与会设备类型。 category &#x3D; participant_type_info时有效。
+        :type device_type: str
+        :param device_version: 与会设备版本。 category &#x3D; participant_type_info时有效。
+        :type device_version: str
+        :param device_attendance_count: 设备与会数。 category &#x3D; participant_type_info时有效。
+        :type device_attendance_count: str
+        """
         
         
 
@@ -123,7 +154,7 @@ class StatisticParticipateDataItem:
         日期/月份。
 
         :param time: The time of this StatisticParticipateDataItem.
-        :type: str
+        :type time: str
         """
         self._time = time
 
@@ -145,7 +176,7 @@ class StatisticParticipateDataItem:
         与会用户名称。 category = user_participate_info时有效。
 
         :param conf_user_name: The conf_user_name of this StatisticParticipateDataItem.
-        :type: str
+        :type conf_user_name: str
         """
         self._conf_user_name = conf_user_name
 
@@ -167,7 +198,7 @@ class StatisticParticipateDataItem:
         与会用户账户。 category = user_participate_info时有效。
 
         :param conf_user_account: The conf_user_account of this StatisticParticipateDataItem.
-        :type: str
+        :type conf_user_account: str
         """
         self._conf_user_account = conf_user_account
 
@@ -189,7 +220,7 @@ class StatisticParticipateDataItem:
         与会用户所属部门。 category = user_participate_info时有效。
 
         :param conf_user_dept_name: The conf_user_dept_name of this StatisticParticipateDataItem.
-        :type: str
+        :type conf_user_dept_name: str
         """
         self._conf_user_dept_name = conf_user_dept_name
 
@@ -211,7 +242,7 @@ class StatisticParticipateDataItem:
         用户与会数。 category = user_participate_info时有效。
 
         :param conf_user_count: The conf_user_count of this StatisticParticipateDataItem.
-        :type: str
+        :type conf_user_count: str
         """
         self._conf_user_count = conf_user_count
 
@@ -233,7 +264,7 @@ class StatisticParticipateDataItem:
         用户与会时长(秒)。 category = user_participate_info时有效。
 
         :param conf_user_duration: The conf_user_duration of this StatisticParticipateDataItem.
-        :type: str
+        :type conf_user_duration: str
         """
         self._conf_user_duration = conf_user_duration
 
@@ -255,7 +286,7 @@ class StatisticParticipateDataItem:
         与会硬件终端名称。 category = hard_terminal_participate_info时有效。
 
         :param conf_hard_terminal_name: The conf_hard_terminal_name of this StatisticParticipateDataItem.
-        :type: str
+        :type conf_hard_terminal_name: str
         """
         self._conf_hard_terminal_name = conf_hard_terminal_name
 
@@ -277,7 +308,7 @@ class StatisticParticipateDataItem:
         与会硬件终端型号。 category = hard_terminal_participate_info时有效。
 
         :param conf_hard_terminal_model: The conf_hard_terminal_model of this StatisticParticipateDataItem.
-        :type: str
+        :type conf_hard_terminal_model: str
         """
         self._conf_hard_terminal_model = conf_hard_terminal_model
 
@@ -299,7 +330,7 @@ class StatisticParticipateDataItem:
         与会硬件终端的用户ID。 category = hard_terminal_participate_info时有效。
 
         :param conf_hard_terminal_user_id: The conf_hard_terminal_user_id of this StatisticParticipateDataItem.
-        :type: str
+        :type conf_hard_terminal_user_id: str
         """
         self._conf_hard_terminal_user_id = conf_hard_terminal_user_id
 
@@ -321,7 +352,7 @@ class StatisticParticipateDataItem:
         硬件终端与会数。 category = hard_terminal_participate_info时有效。
 
         :param conf_hard_terminal_count: The conf_hard_terminal_count of this StatisticParticipateDataItem.
-        :type: str
+        :type conf_hard_terminal_count: str
         """
         self._conf_hard_terminal_count = conf_hard_terminal_count
 
@@ -343,7 +374,7 @@ class StatisticParticipateDataItem:
         硬件终端与会时长(秒)。 category = hard_terminal_participate_info时有效。
 
         :param conf_hard_terminal_duration: The conf_hard_terminal_duration of this StatisticParticipateDataItem.
-        :type: str
+        :type conf_hard_terminal_duration: str
         """
         self._conf_hard_terminal_duration = conf_hard_terminal_duration
 
@@ -365,7 +396,7 @@ class StatisticParticipateDataItem:
         与会设备类型。 category = participant_type_info时有效。
 
         :param device_type: The device_type of this StatisticParticipateDataItem.
-        :type: str
+        :type device_type: str
         """
         self._device_type = device_type
 
@@ -387,7 +418,7 @@ class StatisticParticipateDataItem:
         与会设备版本。 category = participant_type_info时有效。
 
         :param device_version: The device_version of this StatisticParticipateDataItem.
-        :type: str
+        :type device_version: str
         """
         self._device_version = device_version
 
@@ -409,7 +440,7 @@ class StatisticParticipateDataItem:
         设备与会数。 category = participant_type_info时有效。
 
         :param device_attendance_count: The device_attendance_count of this StatisticParticipateDataItem.
-        :type: str
+        :type device_attendance_count: str
         """
         self._device_attendance_count = device_attendance_count
 

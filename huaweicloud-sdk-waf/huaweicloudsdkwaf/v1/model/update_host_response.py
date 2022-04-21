@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateHostResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -72,7 +71,55 @@ class UpdateHostResponse(SdkResponse):
     }
 
     def __init__(self, id=None, policyid=None, hostname=None, domainid=None, access_code=None, protocol=None, server=None, certificateid=None, certificatename=None, proxy=None, locked=None, protect_status=None, access_status=None, timestamp=None, tls=None, cipher=None, enterprise_project_id=None, block_page=None, web_tag=None, flag=None, exclusive_ip=None, description=None):
-        """UpdateHostResponse - a model defined in huaweicloud sdk"""
+        """UpdateHostResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 域名id
+        :type id: str
+        :param policyid: 策略id
+        :type policyid: str
+        :param hostname: 创建的云模式防护域名
+        :type hostname: str
+        :param domainid: 账户id
+        :type domainid: str
+        :param access_code: cname前缀
+        :type access_code: str
+        :param protocol: 后端协议类型
+        :type protocol: str
+        :param server: 源站信息
+        :type server: list[:class:`huaweicloudsdkwaf.v1.CloudWafServer`]
+        :param certificateid: 证书id，通过查询证书列表接口（ListCertificates）接口获取证书id
+        :type certificateid: str
+        :param certificatename: 证书名，通过查询证书列表接口（ListCertificates）接口获取证书id
+        :type certificatename: str
+        :param proxy: 是否开启了代理
+        :type proxy: bool
+        :param locked: 锁定状态,默认为0
+        :type locked: int
+        :param protect_status: 域名防护状态：  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
+        :type protect_status: int
+        :param access_status: 接入状态
+        :type access_status: int
+        :param timestamp: 创建防护域名的时间
+        :type timestamp: int
+        :param tls: ssl协议版本
+        :type tls: str
+        :param cipher: 加密套件（cipher_1，cipher_2，cipher_3，cipher_4，cipher_default）：  cipher_1： 加密算法为ECDHE-ECDSA-AES256-GCM-SHA384:HIGH:!MEDIUM:!LOW:!aNULL:!eNULL:!DES:!MD5:!PSK:!RC4:!kRSA:!SRP:!3DES:!DSS:!EXP:!CAMELLIA:@STRENGTH   cipher_2：加密算法为EECDH+AESGCM:EDH+AESGCM    cipher_3：加密算法为ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH    cipher_4：加密算法为ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!EDH    cipher_default： 加密算法为ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH:!AESGCM
+        :type cipher: str
+        :param enterprise_project_id: 企业项目ID
+        :type enterprise_project_id: str
+        :param block_page: 
+        :type block_page: :class:`huaweicloudsdkwaf.v1.BlockPage`
+        :param web_tag: 域名名称
+        :type web_tag: bool
+        :param flag: 
+        :type flag: :class:`huaweicloudsdkwaf.v1.Flag`
+        :param exclusive_ip: 是否使用独享ip
+        :type exclusive_ip: bool
+        :param description: 域名描述
+        :type description: str
+        """
         
         super(UpdateHostResponse, self).__init__()
 
@@ -163,7 +210,7 @@ class UpdateHostResponse(SdkResponse):
         域名id
 
         :param id: The id of this UpdateHostResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -185,7 +232,7 @@ class UpdateHostResponse(SdkResponse):
         策略id
 
         :param policyid: The policyid of this UpdateHostResponse.
-        :type: str
+        :type policyid: str
         """
         self._policyid = policyid
 
@@ -207,7 +254,7 @@ class UpdateHostResponse(SdkResponse):
         创建的云模式防护域名
 
         :param hostname: The hostname of this UpdateHostResponse.
-        :type: str
+        :type hostname: str
         """
         self._hostname = hostname
 
@@ -229,7 +276,7 @@ class UpdateHostResponse(SdkResponse):
         账户id
 
         :param domainid: The domainid of this UpdateHostResponse.
-        :type: str
+        :type domainid: str
         """
         self._domainid = domainid
 
@@ -251,7 +298,7 @@ class UpdateHostResponse(SdkResponse):
         cname前缀
 
         :param access_code: The access_code of this UpdateHostResponse.
-        :type: str
+        :type access_code: str
         """
         self._access_code = access_code
 
@@ -273,7 +320,7 @@ class UpdateHostResponse(SdkResponse):
         后端协议类型
 
         :param protocol: The protocol of this UpdateHostResponse.
-        :type: str
+        :type protocol: str
         """
         self._protocol = protocol
 
@@ -284,7 +331,7 @@ class UpdateHostResponse(SdkResponse):
         源站信息
 
         :return: The server of this UpdateHostResponse.
-        :rtype: list[CloudWafServer]
+        :rtype: list[:class:`huaweicloudsdkwaf.v1.CloudWafServer`]
         """
         return self._server
 
@@ -295,7 +342,7 @@ class UpdateHostResponse(SdkResponse):
         源站信息
 
         :param server: The server of this UpdateHostResponse.
-        :type: list[CloudWafServer]
+        :type server: list[:class:`huaweicloudsdkwaf.v1.CloudWafServer`]
         """
         self._server = server
 
@@ -317,7 +364,7 @@ class UpdateHostResponse(SdkResponse):
         证书id，通过查询证书列表接口（ListCertificates）接口获取证书id
 
         :param certificateid: The certificateid of this UpdateHostResponse.
-        :type: str
+        :type certificateid: str
         """
         self._certificateid = certificateid
 
@@ -339,7 +386,7 @@ class UpdateHostResponse(SdkResponse):
         证书名，通过查询证书列表接口（ListCertificates）接口获取证书id
 
         :param certificatename: The certificatename of this UpdateHostResponse.
-        :type: str
+        :type certificatename: str
         """
         self._certificatename = certificatename
 
@@ -361,7 +408,7 @@ class UpdateHostResponse(SdkResponse):
         是否开启了代理
 
         :param proxy: The proxy of this UpdateHostResponse.
-        :type: bool
+        :type proxy: bool
         """
         self._proxy = proxy
 
@@ -383,7 +430,7 @@ class UpdateHostResponse(SdkResponse):
         锁定状态,默认为0
 
         :param locked: The locked of this UpdateHostResponse.
-        :type: int
+        :type locked: int
         """
         self._locked = locked
 
@@ -405,7 +452,7 @@ class UpdateHostResponse(SdkResponse):
         域名防护状态：  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
 
         :param protect_status: The protect_status of this UpdateHostResponse.
-        :type: int
+        :type protect_status: int
         """
         self._protect_status = protect_status
 
@@ -427,7 +474,7 @@ class UpdateHostResponse(SdkResponse):
         接入状态
 
         :param access_status: The access_status of this UpdateHostResponse.
-        :type: int
+        :type access_status: int
         """
         self._access_status = access_status
 
@@ -449,7 +496,7 @@ class UpdateHostResponse(SdkResponse):
         创建防护域名的时间
 
         :param timestamp: The timestamp of this UpdateHostResponse.
-        :type: int
+        :type timestamp: int
         """
         self._timestamp = timestamp
 
@@ -471,7 +518,7 @@ class UpdateHostResponse(SdkResponse):
         ssl协议版本
 
         :param tls: The tls of this UpdateHostResponse.
-        :type: str
+        :type tls: str
         """
         self._tls = tls
 
@@ -493,7 +540,7 @@ class UpdateHostResponse(SdkResponse):
         加密套件（cipher_1，cipher_2，cipher_3，cipher_4，cipher_default）：  cipher_1： 加密算法为ECDHE-ECDSA-AES256-GCM-SHA384:HIGH:!MEDIUM:!LOW:!aNULL:!eNULL:!DES:!MD5:!PSK:!RC4:!kRSA:!SRP:!3DES:!DSS:!EXP:!CAMELLIA:@STRENGTH   cipher_2：加密算法为EECDH+AESGCM:EDH+AESGCM    cipher_3：加密算法为ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH    cipher_4：加密算法为ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!EDH    cipher_default： 加密算法为ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH:!AESGCM
 
         :param cipher: The cipher of this UpdateHostResponse.
-        :type: str
+        :type cipher: str
         """
         self._cipher = cipher
 
@@ -515,7 +562,7 @@ class UpdateHostResponse(SdkResponse):
         企业项目ID
 
         :param enterprise_project_id: The enterprise_project_id of this UpdateHostResponse.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -525,7 +572,7 @@ class UpdateHostResponse(SdkResponse):
 
 
         :return: The block_page of this UpdateHostResponse.
-        :rtype: BlockPage
+        :rtype: :class:`huaweicloudsdkwaf.v1.BlockPage`
         """
         return self._block_page
 
@@ -535,7 +582,7 @@ class UpdateHostResponse(SdkResponse):
 
 
         :param block_page: The block_page of this UpdateHostResponse.
-        :type: BlockPage
+        :type block_page: :class:`huaweicloudsdkwaf.v1.BlockPage`
         """
         self._block_page = block_page
 
@@ -557,7 +604,7 @@ class UpdateHostResponse(SdkResponse):
         域名名称
 
         :param web_tag: The web_tag of this UpdateHostResponse.
-        :type: bool
+        :type web_tag: bool
         """
         self._web_tag = web_tag
 
@@ -567,7 +614,7 @@ class UpdateHostResponse(SdkResponse):
 
 
         :return: The flag of this UpdateHostResponse.
-        :rtype: Flag
+        :rtype: :class:`huaweicloudsdkwaf.v1.Flag`
         """
         return self._flag
 
@@ -577,7 +624,7 @@ class UpdateHostResponse(SdkResponse):
 
 
         :param flag: The flag of this UpdateHostResponse.
-        :type: Flag
+        :type flag: :class:`huaweicloudsdkwaf.v1.Flag`
         """
         self._flag = flag
 
@@ -599,7 +646,7 @@ class UpdateHostResponse(SdkResponse):
         是否使用独享ip
 
         :param exclusive_ip: The exclusive_ip of this UpdateHostResponse.
-        :type: bool
+        :type exclusive_ip: bool
         """
         self._exclusive_ip = exclusive_ip
 
@@ -621,7 +668,7 @@ class UpdateHostResponse(SdkResponse):
         域名描述
 
         :param description: The description of this UpdateHostResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 

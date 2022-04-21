@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Datastore:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class Datastore:
     }
 
     def __init__(self, type=None, version=None):
-        """Datastore - a model defined in huaweicloud sdk"""
+        """Datastore
+
+        The model defined in huaweicloud sdk
+
+        :param type: 类型，一般为cdm。
+        :type type: str
+        :param version: 集群版本。
+        :type version: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class Datastore:
         类型，一般为cdm。
 
         :param type: The type of this Datastore.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -85,7 +92,7 @@ class Datastore:
         集群版本。
 
         :param version: The version of this Datastore.
-        :type: str
+        :type version: str
         """
         self._version = version
 

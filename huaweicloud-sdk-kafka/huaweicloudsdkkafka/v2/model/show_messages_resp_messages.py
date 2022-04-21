@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowMessagesRespMessages:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ShowMessagesRespMessages:
     }
 
     def __init__(self, topic=None, partition=None, message_offset=None, size=None, timestamp=None):
-        """ShowMessagesRespMessages - a model defined in huaweicloud sdk"""
+        """ShowMessagesRespMessages
+
+        The model defined in huaweicloud sdk
+
+        :param topic: topic名称。
+        :type topic: str
+        :param partition: 分区编号。
+        :type partition: int
+        :param message_offset: 消息编号。
+        :type message_offset: int
+        :param size: 消息大小，单位字节。
+        :type size: int
+        :param timestamp: 生产消息的时间。 格式为Unix时间戳。单位为毫秒。
+        :type timestamp: int
+        """
         
         
 
@@ -78,7 +91,7 @@ class ShowMessagesRespMessages:
         topic名称。
 
         :param topic: The topic of this ShowMessagesRespMessages.
-        :type: str
+        :type topic: str
         """
         self._topic = topic
 
@@ -100,7 +113,7 @@ class ShowMessagesRespMessages:
         分区编号。
 
         :param partition: The partition of this ShowMessagesRespMessages.
-        :type: int
+        :type partition: int
         """
         self._partition = partition
 
@@ -122,7 +135,7 @@ class ShowMessagesRespMessages:
         消息编号。
 
         :param message_offset: The message_offset of this ShowMessagesRespMessages.
-        :type: int
+        :type message_offset: int
         """
         self._message_offset = message_offset
 
@@ -144,7 +157,7 @@ class ShowMessagesRespMessages:
         消息大小，单位字节。
 
         :param size: The size of this ShowMessagesRespMessages.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -166,7 +179,7 @@ class ShowMessagesRespMessages:
         生产消息的时间。 格式为Unix时间戳。单位为毫秒。
 
         :param timestamp: The timestamp of this ShowMessagesRespMessages.
-        :type: int
+        :type timestamp: int
         """
         self._timestamp = timestamp
 

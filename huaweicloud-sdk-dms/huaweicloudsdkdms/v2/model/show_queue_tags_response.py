@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowQueueTagsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowQueueTagsResponse(SdkResponse):
     }
 
     def __init__(self, tags=None):
-        """ShowQueueTagsResponse - a model defined in huaweicloud sdk"""
+        """ShowQueueTagsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param tags: 标签列表
+        :type tags: list[:class:`huaweicloudsdkdms.v2.BatchCreateOrDeleteTagReqTags`]
+        """
         
         super(ShowQueueTagsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ShowQueueTagsResponse(SdkResponse):
         标签列表
 
         :return: The tags of this ShowQueueTagsResponse.
-        :rtype: list[BatchCreateOrDeleteTagReqTags]
+        :rtype: list[:class:`huaweicloudsdkdms.v2.BatchCreateOrDeleteTagReqTags`]
         """
         return self._tags
 
@@ -58,7 +63,7 @@ class ShowQueueTagsResponse(SdkResponse):
         标签列表
 
         :param tags: The tags of this ShowQueueTagsResponse.
-        :type: list[BatchCreateOrDeleteTagReqTags]
+        :type tags: list[:class:`huaweicloudsdkdms.v2.BatchCreateOrDeleteTagReqTags`]
         """
         self._tags = tags
 

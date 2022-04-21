@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchTagActionAddRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchTagActionAddRequestBody:
     }
 
     def __init__(self, action=None, tags=None):
-        """BatchTagActionAddRequestBody - a model defined in huaweicloud sdk"""
+        """BatchTagActionAddRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param action: 操作标识（区分大小写）：创建时为“create”。
+        :type action: str
+        :param tags: 标签列表。单个实例总标签数上限10个。
+        :type tags: list[:class:`huaweicloudsdkrds.v3.TagWithKeyValue`]
+        """
         
         
 
@@ -61,7 +68,7 @@ class BatchTagActionAddRequestBody:
         操作标识（区分大小写）：创建时为“create”。
 
         :param action: The action of this BatchTagActionAddRequestBody.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -72,7 +79,7 @@ class BatchTagActionAddRequestBody:
         标签列表。单个实例总标签数上限10个。
 
         :return: The tags of this BatchTagActionAddRequestBody.
-        :rtype: list[TagWithKeyValue]
+        :rtype: list[:class:`huaweicloudsdkrds.v3.TagWithKeyValue`]
         """
         return self._tags
 
@@ -83,7 +90,7 @@ class BatchTagActionAddRequestBody:
         标签列表。单个实例总标签数上限10个。
 
         :param tags: The tags of this BatchTagActionAddRequestBody.
-        :type: list[TagWithKeyValue]
+        :type tags: list[:class:`huaweicloudsdkrds.v3.TagWithKeyValue`]
         """
         self._tags = tags
 

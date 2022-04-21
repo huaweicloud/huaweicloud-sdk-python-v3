@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateL7RuleOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class UpdateL7RuleOption:
     }
 
     def __init__(self, admin_state_up=None, compare_type=None, invert=None, key=None, value=None, conditions=None):
-        """UpdateL7RuleOption - a model defined in huaweicloud sdk"""
+        """UpdateL7RuleOption
+
+        The model defined in huaweicloud sdk
+
+        :param admin_state_up: 转发规则的管理状态，默认为true。  不支持该字段，请勿使用。
+        :type admin_state_up: bool
+        :param compare_type: 转发规则的匹配方式。取值; - type为HOST_NAME时，可以为EQUAL_TO。 - type为PATH时，可以为Perl类型的REGEX， STARTS_WITH，EQUAL_TO。 转发规则的匹配方式。  - type为HOST_NAME时仅支持EQUAL_TO，支持通配符*。 - type为PATH时可以为Perl类型的REGEX，STARTS_WITH，EQUAL_TO。 - type为METHOD、SOURCE_IP时，仅支持EQUAL_TO。 - type为HEADER、QUERY_STRING，仅支持EQUAL_TO，支持通配符*、？。
+        :type compare_type: str
+        :param invert: 是否反向匹配。取值：true、false。  不支持该字段，请勿使用。
+        :type invert: bool
+        :param key: 匹配项的名称，比如转发规则匹配类型是请求头匹配，则key表示请求头参数的名称。  不支持该字段，请勿使用。
+        :type key: str
+        :param value: 匹配项的值，比如转发规则匹配类型是域名匹配，则value表示域名的值。仅当conditions空时该字段生效。  当type为HOST_NAME时，字符串只能包含英文字母、数字、\&quot;-\&quot;、\&quot;.\&quot;或\&quot;*\&quot;，必须以字母、数字或\&quot;*\&quot;开头。  若域名中包含\&quot;*\&quot;，则\&quot;*\&quot;只能出现在开头且必须以*.开始。当*开头时表示通配0~任一个字符。  当type为PATH时，当转发规则的compare_type为STARTS_WITH、EQUAL_TO时，字符串只能包含英文字母、数字、_~&#39;;@^-%#&amp;$.*+?,&#x3D;!:|/()[]{}，且必须以\&quot;/\&quot;开头。  当type为METHOD、SOURCE_IP、HEADER,QUERY_STRING时，该字段无意义，使用conditions来指定key/value。
+        :type value: str
+        :param conditions: 转发规则的匹配条件。当监听器的高级转发策略功能（enhance_l7policy_enable）开启后才会生效。 配置了conditions后，字段key、字段value的值无意义。 若指定了conditions，该rule的条件数为conditions列表长度。 列表中key必须相同，value不允许重复。 [ 不支持该字段，请勿使用。](tag:dt,dt_test)
+        :type conditions: list[:class:`huaweicloudsdkelb.v3.UpdateRuleCondition`]
+        """
         
         
 
@@ -83,7 +98,7 @@ class UpdateL7RuleOption:
         转发规则的管理状态，默认为true。  不支持该字段，请勿使用。
 
         :param admin_state_up: The admin_state_up of this UpdateL7RuleOption.
-        :type: bool
+        :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
 
@@ -105,7 +120,7 @@ class UpdateL7RuleOption:
         转发规则的匹配方式。取值; - type为HOST_NAME时，可以为EQUAL_TO。 - type为PATH时，可以为Perl类型的REGEX， STARTS_WITH，EQUAL_TO。 转发规则的匹配方式。  - type为HOST_NAME时仅支持EQUAL_TO，支持通配符*。 - type为PATH时可以为Perl类型的REGEX，STARTS_WITH，EQUAL_TO。 - type为METHOD、SOURCE_IP时，仅支持EQUAL_TO。 - type为HEADER、QUERY_STRING，仅支持EQUAL_TO，支持通配符*、？。
 
         :param compare_type: The compare_type of this UpdateL7RuleOption.
-        :type: str
+        :type compare_type: str
         """
         self._compare_type = compare_type
 
@@ -127,7 +142,7 @@ class UpdateL7RuleOption:
         是否反向匹配。取值：true、false。  不支持该字段，请勿使用。
 
         :param invert: The invert of this UpdateL7RuleOption.
-        :type: bool
+        :type invert: bool
         """
         self._invert = invert
 
@@ -149,7 +164,7 @@ class UpdateL7RuleOption:
         匹配项的名称，比如转发规则匹配类型是请求头匹配，则key表示请求头参数的名称。  不支持该字段，请勿使用。
 
         :param key: The key of this UpdateL7RuleOption.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -171,7 +186,7 @@ class UpdateL7RuleOption:
         匹配项的值，比如转发规则匹配类型是域名匹配，则value表示域名的值。仅当conditions空时该字段生效。  当type为HOST_NAME时，字符串只能包含英文字母、数字、\"-\"、\".\"或\"*\"，必须以字母、数字或\"*\"开头。  若域名中包含\"*\"，则\"*\"只能出现在开头且必须以*.开始。当*开头时表示通配0~任一个字符。  当type为PATH时，当转发规则的compare_type为STARTS_WITH、EQUAL_TO时，字符串只能包含英文字母、数字、_~';@^-%#&$.*+?,=!:|/()[]{}，且必须以\"/\"开头。  当type为METHOD、SOURCE_IP、HEADER,QUERY_STRING时，该字段无意义，使用conditions来指定key/value。
 
         :param value: The value of this UpdateL7RuleOption.
-        :type: str
+        :type value: str
         """
         self._value = value
 
@@ -182,7 +197,7 @@ class UpdateL7RuleOption:
         转发规则的匹配条件。当监听器的高级转发策略功能（enhance_l7policy_enable）开启后才会生效。 配置了conditions后，字段key、字段value的值无意义。 若指定了conditions，该rule的条件数为conditions列表长度。 列表中key必须相同，value不允许重复。 [ 不支持该字段，请勿使用。](tag:dt,dt_test)
 
         :return: The conditions of this UpdateL7RuleOption.
-        :rtype: list[UpdateRuleCondition]
+        :rtype: list[:class:`huaweicloudsdkelb.v3.UpdateRuleCondition`]
         """
         return self._conditions
 
@@ -193,7 +208,7 @@ class UpdateL7RuleOption:
         转发规则的匹配条件。当监听器的高级转发策略功能（enhance_l7policy_enable）开启后才会生效。 配置了conditions后，字段key、字段value的值无意义。 若指定了conditions，该rule的条件数为conditions列表长度。 列表中key必须相同，value不允许重复。 [ 不支持该字段，请勿使用。](tag:dt,dt_test)
 
         :param conditions: The conditions of this UpdateL7RuleOption.
-        :type: list[UpdateRuleCondition]
+        :type conditions: list[:class:`huaweicloudsdkelb.v3.UpdateRuleCondition`]
         """
         self._conditions = conditions
 

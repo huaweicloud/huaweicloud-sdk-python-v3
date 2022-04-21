@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddDeviceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AddDeviceResponse(SdkResponse):
     }
 
     def __init__(self, device_id=None, password=None):
-        """AddDeviceResponse - a model defined in huaweicloud sdk"""
+        """AddDeviceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param device_id: 设备ID
+        :type device_id: str
+        :param password: 设备密钥，认证类型使用密钥认证接入(SECRET)可填写该字段。注意：NB设备密钥由于协议特殊性，只支持十六进制密钥接入；修改设备、查询设备及查询设备列表接口不返回该参数。
+        :type password: str
+        """
         
         super(AddDeviceResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class AddDeviceResponse(SdkResponse):
         设备ID
 
         :param device_id: The device_id of this AddDeviceResponse.
-        :type: str
+        :type device_id: str
         """
         self._device_id = device_id
 
@@ -85,7 +92,7 @@ class AddDeviceResponse(SdkResponse):
         设备密钥，认证类型使用密钥认证接入(SECRET)可填写该字段。注意：NB设备密钥由于协议特殊性，只支持十六进制密钥接入；修改设备、查询设备及查询设备列表接口不返回该参数。
 
         :param password: The password of this AddDeviceResponse.
-        :type: str
+        :type password: str
         """
         self._password = password
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShadowValue:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShadowValue:
     }
 
     def __init__(self, property_name=None, property_value=None, property_updated_date=None):
-        """ShadowValue - a model defined in huaweicloud sdk"""
+        """ShadowValue
+
+        The model defined in huaweicloud sdk
+
+        :param property_name: 属性名称
+        :type property_name: str
+        :param property_value: 属性最后一次上报值
+        :type property_value: str
+        :param property_updated_date: 属性最后一次上报时间，格式timestamp(ms)，使用UTC时区
+        :type property_updated_date: int
+        """
         
         
 
@@ -68,7 +77,7 @@ class ShadowValue:
         属性名称
 
         :param property_name: The property_name of this ShadowValue.
-        :type: str
+        :type property_name: str
         """
         self._property_name = property_name
 
@@ -90,7 +99,7 @@ class ShadowValue:
         属性最后一次上报值
 
         :param property_value: The property_value of this ShadowValue.
-        :type: str
+        :type property_value: str
         """
         self._property_value = property_value
 
@@ -112,7 +121,7 @@ class ShadowValue:
         属性最后一次上报时间，格式timestamp(ms)，使用UTC时区
 
         :param property_updated_date: The property_updated_date of this ShadowValue.
-        :type: int
+        :type property_updated_date: int
         """
         self._property_updated_date = property_updated_date
 

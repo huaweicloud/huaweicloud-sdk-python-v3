@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListResOnlineServiceDetailsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListResOnlineServiceDetailsRequest:
     }
 
     def __init__(self, content_type=None, workspace_id=None, resource_id=None, category=None):
-        """ListResOnlineServiceDetailsRequest - a model defined in huaweicloud sdk"""
+        """ListResOnlineServiceDetailsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param content_type: 内容类型，取值为application/json。
+        :type content_type: str
+        :param workspace_id: 工作空间id。
+        :type workspace_id: str
+        :param resource_id: 资源id。
+        :type resource_id: str
+        :param category: 服务类别： - SERVICE，在线服务
+        :type category: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class ListResOnlineServiceDetailsRequest:
         内容类型，取值为application/json。
 
         :param content_type: The content_type of this ListResOnlineServiceDetailsRequest.
-        :type: str
+        :type content_type: str
         """
         self._content_type = content_type
 
@@ -91,7 +102,7 @@ class ListResOnlineServiceDetailsRequest:
         工作空间id。
 
         :param workspace_id: The workspace_id of this ListResOnlineServiceDetailsRequest.
-        :type: str
+        :type workspace_id: str
         """
         self._workspace_id = workspace_id
 
@@ -113,7 +124,7 @@ class ListResOnlineServiceDetailsRequest:
         资源id。
 
         :param resource_id: The resource_id of this ListResOnlineServiceDetailsRequest.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -135,7 +146,7 @@ class ListResOnlineServiceDetailsRequest:
         服务类别： - SERVICE，在线服务
 
         :param category: The category of this ListResOnlineServiceDetailsRequest.
-        :type: str
+        :type category: str
         """
         self._category = category
 

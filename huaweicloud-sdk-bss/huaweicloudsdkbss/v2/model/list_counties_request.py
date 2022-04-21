@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCountiesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListCountiesRequest:
     }
 
     def __init__(self, x_language=None, city_code=None, offset=None, limit=None):
-        """ListCountiesRequest - a model defined in huaweicloud sdk"""
+        """ListCountiesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言。zh_CN：中文en_us：英文缺省为zh_CN。
+        :type x_language: str
+        :param city_code: 城市的编码。
+        :type city_code: str
+        :param offset: 偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset &#x3D; 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
+        :type offset: int
+        :param limit: 每次查询的数量，最大1000。
+        :type limit: int
+        """
         
         
 
@@ -72,7 +83,7 @@ class ListCountiesRequest:
         语言。zh_CN：中文en_us：英文缺省为zh_CN。
 
         :param x_language: The x_language of this ListCountiesRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -94,7 +105,7 @@ class ListCountiesRequest:
         城市的编码。
 
         :param city_code: The city_code of this ListCountiesRequest.
-        :type: str
+        :type city_code: str
         """
         self._city_code = city_code
 
@@ -116,7 +127,7 @@ class ListCountiesRequest:
         偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
         :param offset: The offset of this ListCountiesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -138,7 +149,7 @@ class ListCountiesRequest:
         每次查询的数量，最大1000。
 
         :param limit: The limit of this ListCountiesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

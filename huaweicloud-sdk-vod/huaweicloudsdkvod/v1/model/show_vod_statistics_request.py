@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowVodStatisticsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowVodStatisticsRequest:
     }
 
     def __init__(self, start_time=None, end_time=None, interval=None):
-        """ShowVodStatisticsRequest - a model defined in huaweicloud sdk"""
+        """ShowVodStatisticsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param start_time: 起始时间，格式为yyyymmddhhmmss。
+        :type start_time: str
+        :param end_time: 结束时间，格式为yyyymmddhhmmss。 - “start_time”、“end_time”均不存在时，“start_time”取当天零点，“end_time”取当前时间。 - “start_time”不存在、“end_time”存在，请求非法。 - “start_time”存在、“end_time”不存在，“end_time”取当前时间。 - 只能查询最近三个月内的数据，且时间跨度不能超过31天。 - 起始时间和结束时间会自动规整，起始时间规整为指定时间所在的整点时刻，结束时间规整为指定时间所在时间的下一小时整点时刻。
+        :type end_time: str
+        :param interval: 查询粒度间隔。  取值如下： - 时间跨度1天：1小时、4小时、8小时，分别对应3600秒、14400秒和28800秒。 - 时间跨度2~7天：1小时、4小时、8小时、1天，分别对应3600秒、14400秒、28800秒和86400秒。 - 时间跨度8~31天：4小时、8小时、1天，分别对应14400秒、28800秒和86400秒。  单位：秒。  若不设置，默认取对应时间跨度的最小间隔。
+        :type interval: int
+        """
         
         
 
@@ -68,7 +77,7 @@ class ShowVodStatisticsRequest:
         起始时间，格式为yyyymmddhhmmss。
 
         :param start_time: The start_time of this ShowVodStatisticsRequest.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -90,7 +99,7 @@ class ShowVodStatisticsRequest:
         结束时间，格式为yyyymmddhhmmss。 - “start_time”、“end_time”均不存在时，“start_time”取当天零点，“end_time”取当前时间。 - “start_time”不存在、“end_time”存在，请求非法。 - “start_time”存在、“end_time”不存在，“end_time”取当前时间。 - 只能查询最近三个月内的数据，且时间跨度不能超过31天。 - 起始时间和结束时间会自动规整，起始时间规整为指定时间所在的整点时刻，结束时间规整为指定时间所在时间的下一小时整点时刻。
 
         :param end_time: The end_time of this ShowVodStatisticsRequest.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -112,7 +121,7 @@ class ShowVodStatisticsRequest:
         查询粒度间隔。  取值如下： - 时间跨度1天：1小时、4小时、8小时，分别对应3600秒、14400秒和28800秒。 - 时间跨度2~7天：1小时、4小时、8小时、1天，分别对应3600秒、14400秒、28800秒和86400秒。 - 时间跨度8~31天：4小时、8小时、1天，分别对应14400秒、28800秒和86400秒。  单位：秒。  若不设置，默认取对应时间跨度的最小间隔。
 
         :param interval: The interval of this ShowVodStatisticsRequest.
-        :type: int
+        :type interval: int
         """
         self._interval = interval
 

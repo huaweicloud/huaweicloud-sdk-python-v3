@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ScalingPolicyExecuteLogList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -58,7 +57,41 @@ class ScalingPolicyExecuteLogList:
     }
 
     def __init__(self, status=None, failed_reason=None, execute_type=None, execute_time=None, id=None, tenant_id=None, scaling_policy_id=None, scaling_resource_type=None, scaling_resource_id=None, old_value=None, desire_value=None, limit_value=None, type=None, job_records=None, meta_data=None):
-        """ScalingPolicyExecuteLogList - a model defined in huaweicloud sdk"""
+        """ScalingPolicyExecuteLogList
+
+        The model defined in huaweicloud sdk
+
+        :param status: 策略执行状态：SUCCESS：成功。FAIL：失败。EXECUTING：执行中
+        :type status: str
+        :param failed_reason: 策略执行失败原因。
+        :type failed_reason: str
+        :param execute_type: 策略执行类型：SCHEDULE：自动触发（定时）。RECURRENCE：自动触发（周期）。ALARM：自动警告（告警）。MANUAL：手动触发
+        :type execute_type: str
+        :param execute_time: 策略执行时间，遵循UTC时间。
+        :type execute_time: str
+        :param id: 策略执行日志ID。
+        :type id: str
+        :param tenant_id: 租户id。
+        :type tenant_id: str
+        :param scaling_policy_id: 伸缩策略ID。
+        :type scaling_policy_id: str
+        :param scaling_resource_type: 伸缩资源类型：伸缩组：SCALING_GROUP 带宽：BANDWIDTH
+        :type scaling_resource_type: str
+        :param scaling_resource_id: 伸缩资源ID。
+        :type scaling_resource_id: str
+        :param old_value: 伸缩原始值。
+        :type old_value: str
+        :param desire_value: 伸缩目标值。
+        :type desire_value: str
+        :param limit_value: 操作限制。当scaling_resource_type为BANDWIDTH时，且operation不为SET时，limit_value生效，单位为Mbit/s。此时，当operation为ADD时，limit_value表示最高带宽限制；当operation为REDUCE时，limit_value表示最低带宽限制。
+        :type limit_value: str
+        :param type: 策略执行任务类型。ADD：添加。REMOVE：减少。SET：设置为
+        :type type: str
+        :param job_records: 策略执行动作包含的具体任务
+        :type job_records: list[:class:`huaweicloudsdkas.v1.JobRecords`]
+        :param meta_data: 
+        :type meta_data: :class:`huaweicloudsdkas.v1.EipMetaData`
+        """
         
         
 
@@ -128,7 +161,7 @@ class ScalingPolicyExecuteLogList:
         策略执行状态：SUCCESS：成功。FAIL：失败。EXECUTING：执行中
 
         :param status: The status of this ScalingPolicyExecuteLogList.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -150,7 +183,7 @@ class ScalingPolicyExecuteLogList:
         策略执行失败原因。
 
         :param failed_reason: The failed_reason of this ScalingPolicyExecuteLogList.
-        :type: str
+        :type failed_reason: str
         """
         self._failed_reason = failed_reason
 
@@ -172,7 +205,7 @@ class ScalingPolicyExecuteLogList:
         策略执行类型：SCHEDULE：自动触发（定时）。RECURRENCE：自动触发（周期）。ALARM：自动警告（告警）。MANUAL：手动触发
 
         :param execute_type: The execute_type of this ScalingPolicyExecuteLogList.
-        :type: str
+        :type execute_type: str
         """
         self._execute_type = execute_type
 
@@ -194,7 +227,7 @@ class ScalingPolicyExecuteLogList:
         策略执行时间，遵循UTC时间。
 
         :param execute_time: The execute_time of this ScalingPolicyExecuteLogList.
-        :type: str
+        :type execute_time: str
         """
         self._execute_time = execute_time
 
@@ -216,7 +249,7 @@ class ScalingPolicyExecuteLogList:
         策略执行日志ID。
 
         :param id: The id of this ScalingPolicyExecuteLogList.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -238,7 +271,7 @@ class ScalingPolicyExecuteLogList:
         租户id。
 
         :param tenant_id: The tenant_id of this ScalingPolicyExecuteLogList.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 
@@ -260,7 +293,7 @@ class ScalingPolicyExecuteLogList:
         伸缩策略ID。
 
         :param scaling_policy_id: The scaling_policy_id of this ScalingPolicyExecuteLogList.
-        :type: str
+        :type scaling_policy_id: str
         """
         self._scaling_policy_id = scaling_policy_id
 
@@ -282,7 +315,7 @@ class ScalingPolicyExecuteLogList:
         伸缩资源类型：伸缩组：SCALING_GROUP 带宽：BANDWIDTH
 
         :param scaling_resource_type: The scaling_resource_type of this ScalingPolicyExecuteLogList.
-        :type: str
+        :type scaling_resource_type: str
         """
         self._scaling_resource_type = scaling_resource_type
 
@@ -304,7 +337,7 @@ class ScalingPolicyExecuteLogList:
         伸缩资源ID。
 
         :param scaling_resource_id: The scaling_resource_id of this ScalingPolicyExecuteLogList.
-        :type: str
+        :type scaling_resource_id: str
         """
         self._scaling_resource_id = scaling_resource_id
 
@@ -326,7 +359,7 @@ class ScalingPolicyExecuteLogList:
         伸缩原始值。
 
         :param old_value: The old_value of this ScalingPolicyExecuteLogList.
-        :type: str
+        :type old_value: str
         """
         self._old_value = old_value
 
@@ -348,7 +381,7 @@ class ScalingPolicyExecuteLogList:
         伸缩目标值。
 
         :param desire_value: The desire_value of this ScalingPolicyExecuteLogList.
-        :type: str
+        :type desire_value: str
         """
         self._desire_value = desire_value
 
@@ -370,7 +403,7 @@ class ScalingPolicyExecuteLogList:
         操作限制。当scaling_resource_type为BANDWIDTH时，且operation不为SET时，limit_value生效，单位为Mbit/s。此时，当operation为ADD时，limit_value表示最高带宽限制；当operation为REDUCE时，limit_value表示最低带宽限制。
 
         :param limit_value: The limit_value of this ScalingPolicyExecuteLogList.
-        :type: str
+        :type limit_value: str
         """
         self._limit_value = limit_value
 
@@ -392,7 +425,7 @@ class ScalingPolicyExecuteLogList:
         策略执行任务类型。ADD：添加。REMOVE：减少。SET：设置为
 
         :param type: The type of this ScalingPolicyExecuteLogList.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -403,7 +436,7 @@ class ScalingPolicyExecuteLogList:
         策略执行动作包含的具体任务
 
         :return: The job_records of this ScalingPolicyExecuteLogList.
-        :rtype: list[JobRecords]
+        :rtype: list[:class:`huaweicloudsdkas.v1.JobRecords`]
         """
         return self._job_records
 
@@ -414,7 +447,7 @@ class ScalingPolicyExecuteLogList:
         策略执行动作包含的具体任务
 
         :param job_records: The job_records of this ScalingPolicyExecuteLogList.
-        :type: list[JobRecords]
+        :type job_records: list[:class:`huaweicloudsdkas.v1.JobRecords`]
         """
         self._job_records = job_records
 
@@ -424,7 +457,7 @@ class ScalingPolicyExecuteLogList:
 
 
         :return: The meta_data of this ScalingPolicyExecuteLogList.
-        :rtype: EipMetaData
+        :rtype: :class:`huaweicloudsdkas.v1.EipMetaData`
         """
         return self._meta_data
 
@@ -434,7 +467,7 @@ class ScalingPolicyExecuteLogList:
 
 
         :param meta_data: The meta_data of this ScalingPolicyExecuteLogList.
-        :type: EipMetaData
+        :type meta_data: :class:`huaweicloudsdkas.v1.EipMetaData`
         """
         self._meta_data = meta_data
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateConfigurationDatastoreOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateConfigurationDatastoreOption:
     }
 
     def __init__(self, type=None, version=None, mode=None):
-        """CreateConfigurationDatastoreOption - a model defined in huaweicloud sdk"""
+        """CreateConfigurationDatastoreOption
+
+        The model defined in huaweicloud sdk
+
+        :param type: 数据库类型。 - GaussDB(for Cassandra)实例取值为“cassandra”。 - GaussDB(for Mongo)实例取值为\&quot;mongodb\&quot;。 - GaussDB(for Influx)实例取值为\&quot;influxdb\&quot;。
+        :type type: str
+        :param version: 数据库版本。 - GaussDB(for Cassandra)实例支持3.11版本，取值为“3.11”。 - GaussDB(for Mongo)实例支持3.4、4.0版本，取值为\&quot;3.4\&quot;或\&quot;4.0\&quot;。 - GaussDB(for Influx)实例支持1.7版本，取值\&quot;1.7\&quot;。
+        :type version: str
+        :param mode: 数据库部署模式，GaussDB(for Mongo)该参数必选。 - GaussDB(for Mongo) 集群实例取值为\&quot;Sharding\&quot;。 - GaussDB(for Mongo) 副本集实例取值为\&quot;ReplicaSet\&quot;。
+        :type mode: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class CreateConfigurationDatastoreOption:
         数据库类型。 - GaussDB(for Cassandra)实例取值为“cassandra”。 - GaussDB(for Mongo)实例取值为\"mongodb\"。 - GaussDB(for Influx)实例取值为\"influxdb\"。
 
         :param type: The type of this CreateConfigurationDatastoreOption.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -88,7 +97,7 @@ class CreateConfigurationDatastoreOption:
         数据库版本。 - GaussDB(for Cassandra)实例支持3.11版本，取值为“3.11”。 - GaussDB(for Mongo)实例支持3.4、4.0版本，取值为\"3.4\"或\"4.0\"。 - GaussDB(for Influx)实例支持1.7版本，取值\"1.7\"。
 
         :param version: The version of this CreateConfigurationDatastoreOption.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -110,7 +119,7 @@ class CreateConfigurationDatastoreOption:
         数据库部署模式，GaussDB(for Mongo)该参数必选。 - GaussDB(for Mongo) 集群实例取值为\"Sharding\"。 - GaussDB(for Mongo) 副本集实例取值为\"ReplicaSet\"。
 
         :param mode: The mode of this CreateConfigurationDatastoreOption.
-        :type: str
+        :type mode: str
         """
         self._mode = mode
 

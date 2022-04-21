@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ServerExtendVolumeAttachment:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ServerExtendVolumeAttachment:
     }
 
     def __init__(self, id=None, delete_on_termination=None, boot_index=None, device=None):
-        """ServerExtendVolumeAttachment - a model defined in huaweicloud sdk"""
+        """ServerExtendVolumeAttachment
+
+        The model defined in huaweicloud sdk
+
+        :param id: 磁盘ID，格式为UUID。
+        :type id: str
+        :param delete_on_termination: 删弹性云服务器时是否一并删除该磁盘。  - true：是 - false：否 微版本2.3及以上版本支持。
+        :type delete_on_termination: str
+        :param boot_index: 启动标识，“0”代表启动盘，“-1“代表非启动盘。
+        :type boot_index: str
+        :param device: 云硬盘挂载盘符，即磁盘挂载点。
+        :type device: str
+        """
         
         
 
@@ -70,7 +81,7 @@ class ServerExtendVolumeAttachment:
         磁盘ID，格式为UUID。
 
         :param id: The id of this ServerExtendVolumeAttachment.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -92,7 +103,7 @@ class ServerExtendVolumeAttachment:
         删弹性云服务器时是否一并删除该磁盘。  - true：是 - false：否 微版本2.3及以上版本支持。
 
         :param delete_on_termination: The delete_on_termination of this ServerExtendVolumeAttachment.
-        :type: str
+        :type delete_on_termination: str
         """
         self._delete_on_termination = delete_on_termination
 
@@ -114,7 +125,7 @@ class ServerExtendVolumeAttachment:
         启动标识，“0”代表启动盘，“-1“代表非启动盘。
 
         :param boot_index: The boot_index of this ServerExtendVolumeAttachment.
-        :type: str
+        :type boot_index: str
         """
         self._boot_index = boot_index
 
@@ -136,7 +147,7 @@ class ServerExtendVolumeAttachment:
         云硬盘挂载盘符，即磁盘挂载点。
 
         :param device: The device of this ServerExtendVolumeAttachment.
-        :type: str
+        :type device: str
         """
         self._device = device
 

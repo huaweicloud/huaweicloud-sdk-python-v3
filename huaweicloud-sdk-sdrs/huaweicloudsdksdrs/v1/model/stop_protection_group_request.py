@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StopProtectionGroupRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class StopProtectionGroupRequest:
     }
 
     def __init__(self, server_group_id=None, body=None):
-        """StopProtectionGroupRequest - a model defined in huaweicloud sdk"""
+        """StopProtectionGroupRequest
+
+        The model defined in huaweicloud sdk
+
+        :param server_group_id: 保护组的ID。
+        :type server_group_id: str
+        :param body: Body of the StopProtectionGroupRequest
+        :type body: :class:`huaweicloudsdksdrs.v1.StopProtectionGroupRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class StopProtectionGroupRequest:
         保护组的ID。
 
         :param server_group_id: The server_group_id of this StopProtectionGroupRequest.
-        :type: str
+        :type server_group_id: str
         """
         self._server_group_id = server_group_id
 
@@ -72,7 +79,7 @@ class StopProtectionGroupRequest:
 
 
         :return: The body of this StopProtectionGroupRequest.
-        :rtype: StopProtectionGroupRequestBody
+        :rtype: :class:`huaweicloudsdksdrs.v1.StopProtectionGroupRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class StopProtectionGroupRequest:
 
 
         :param body: The body of this StopProtectionGroupRequest.
-        :type: StopProtectionGroupRequestBody
+        :type body: :class:`huaweicloudsdksdrs.v1.StopProtectionGroupRequestBody`
         """
         self._body = body
 

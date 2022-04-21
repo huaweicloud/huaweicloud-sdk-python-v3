@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DiagnosisDimension:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class DiagnosisDimension:
     }
 
     def __init__(self, name=None, abnormal_num=None, failed_num=None, diagnosis_item_list=None):
-        """DiagnosisDimension - a model defined in huaweicloud sdk"""
+        """DiagnosisDimension
+
+        The model defined in huaweicloud sdk
+
+        :param name: 诊断维度名称
+        :type name: str
+        :param abnormal_num: 诊断结果为异常的诊断项总数
+        :type abnormal_num: int
+        :param failed_num: 诊断失败的诊断项总数
+        :type failed_num: int
+        :param diagnosis_item_list: 诊断项列表
+        :type diagnosis_item_list: list[:class:`huaweicloudsdkdcs.v2.DiagnosisItem`]
+        """
         
         
 
@@ -69,7 +80,7 @@ class DiagnosisDimension:
         诊断维度名称
 
         :param name: The name of this DiagnosisDimension.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -91,7 +102,7 @@ class DiagnosisDimension:
         诊断结果为异常的诊断项总数
 
         :param abnormal_num: The abnormal_num of this DiagnosisDimension.
-        :type: int
+        :type abnormal_num: int
         """
         self._abnormal_num = abnormal_num
 
@@ -113,7 +124,7 @@ class DiagnosisDimension:
         诊断失败的诊断项总数
 
         :param failed_num: The failed_num of this DiagnosisDimension.
-        :type: int
+        :type failed_num: int
         """
         self._failed_num = failed_num
 
@@ -124,7 +135,7 @@ class DiagnosisDimension:
         诊断项列表
 
         :return: The diagnosis_item_list of this DiagnosisDimension.
-        :rtype: list[DiagnosisItem]
+        :rtype: list[:class:`huaweicloudsdkdcs.v2.DiagnosisItem`]
         """
         return self._diagnosis_item_list
 
@@ -135,7 +146,7 @@ class DiagnosisDimension:
         诊断项列表
 
         :param diagnosis_item_list: The diagnosis_item_list of this DiagnosisDimension.
-        :type: list[DiagnosisItem]
+        :type diagnosis_item_list: list[:class:`huaweicloudsdkdcs.v2.DiagnosisItem`]
         """
         self._diagnosis_item_list = diagnosis_item_list
 

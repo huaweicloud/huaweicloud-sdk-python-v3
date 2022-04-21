@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneListUsersResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class KeystoneListUsersResponse(SdkResponse):
     }
 
     def __init__(self, links=None, users=None):
-        """KeystoneListUsersResponse - a model defined in huaweicloud sdk"""
+        """KeystoneListUsersResponse
+
+        The model defined in huaweicloud sdk
+
+        :param links: 
+        :type links: :class:`huaweicloudsdkiam.v3.Links`
+        :param users: IAM用户信息列表。
+        :type users: list[:class:`huaweicloudsdkiam.v3.KeystoneListUsersResult`]
+        """
         
         super(KeystoneListUsersResponse, self).__init__()
 
@@ -51,7 +58,7 @@ class KeystoneListUsersResponse(SdkResponse):
 
 
         :return: The links of this KeystoneListUsersResponse.
-        :rtype: Links
+        :rtype: :class:`huaweicloudsdkiam.v3.Links`
         """
         return self._links
 
@@ -61,7 +68,7 @@ class KeystoneListUsersResponse(SdkResponse):
 
 
         :param links: The links of this KeystoneListUsersResponse.
-        :type: Links
+        :type links: :class:`huaweicloudsdkiam.v3.Links`
         """
         self._links = links
 
@@ -72,7 +79,7 @@ class KeystoneListUsersResponse(SdkResponse):
         IAM用户信息列表。
 
         :return: The users of this KeystoneListUsersResponse.
-        :rtype: list[KeystoneListUsersResult]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.KeystoneListUsersResult`]
         """
         return self._users
 
@@ -83,7 +90,7 @@ class KeystoneListUsersResponse(SdkResponse):
         IAM用户信息列表。
 
         :param users: The users of this KeystoneListUsersResponse.
-        :type: list[KeystoneListUsersResult]
+        :type users: list[:class:`huaweicloudsdkiam.v3.KeystoneListUsersResult`]
         """
         self._users = users
 
